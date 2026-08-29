@@ -1,0 +1,208 @@
+{
+  "schema": "por-derecho.concurso36-unitary-prosecutorial-theory.v1",
+  "generated": "2026-08-29",
+  "baseline_main_sha": "f7978cf932ffb943f1c70190cb69950bf71ef35e",
+  "scope": "Criminal-led, non-fragmented forensic theory-of-case crosswalk for Sun Park / LPB / Concurso 36/2012. It is an investigative and prosecutorial analysis, not a finding of criminal liability.",
+  "controlling_rule": {
+    "es": "La unidad de análisis no es una persona, una finca o un procedimiento aislado. Es la cadena completa: titular y capacidad → acto u omisión → autoridad invocada → conocimiento/aviso → efecto sobre activo, crédito o unidad productiva → beneficio o desplazamiento de valor → respuesta judicial/administrativa → vida financiera o comercial posterior → elemento penal aún por probar.",
+    "en": "The unit of analysis is not one person, finca or proceeding in isolation. It is the whole chain: holder and capacity → act or omission → claimed authority → notice/knowledge → effect on asset, claim or productive unit → benefit or value displacement → judicial/administrative response → later financial or commercial life → criminal element still to prove."
+  },
+  "evidence_tiers": [
+    {"id":"E1","label_es":"Hecho primario verificado","label_en":"Primary verified fact","rule":"Signed court/LAJ instrument, authenticated filing/receipt, registry/deed, audited account or equivalent controlled primary source."},
+    {"id":"E2","label_es":"Fuente contemporánea directa","label_en":"Direct contemporaneous source","rule":"Contemporaneous email, witness account, meeting note or business record; proves what was reported or recorded, subject to authenticity and competence."},
+    {"id":"E3","label_es":"Alegación de parte","label_en":"Party allegation","rule":"Proves that the allegation/request was made, not the truth of every proposition asserted."},
+    {"id":"E4","label_es":"Inferencia probatoria","label_en":"Evidence-based inference","rule":"Inference from converging facts; must display counter-explanations and missing mens rea/causation proof."},
+    {"id":"E5","label_es":"Hipótesis penal","label_en":"Criminal hypothesis","rule":"Potential legal characterisation only. Offence, perpetrator, intent, causation, participation and temporal law must be proved independently."}
+  ],
+  "repository_audit": {
+    "located_discovery_denominator": ">600 indexed candidate rows in the historical docket-wide discovery register",
+    "canonical_promoted_subset": "The promoted canonical register is smaller and cannot be called the complete certified court file.",
+    "certified_docket": false,
+    "p0_open_families": 9,
+    "p1_open_families": 2,
+    "material_finding_es": "El repositorio ya contiene líneas penales potentes pero actor-específicas —administración de hecho, habilitación del AC, convergencia CAM, 7 junio, RICPE, cadena acreedora, calificación y respuesta judicial—. El principal defecto de arquitectura era que esas líneas podían leerse separadamente y con denominadores distintos. Esta capa las obliga a compartir un mismo perímetro, cronología y estándar de prueba.",
+    "material_finding_en": "The repository already contains strong but actor-specific criminal lines—de facto administration, alleged IA enablement, CAM convergence, 7 June, RICPE, lender chain, classification proceedings and judicial response. The main architectural defect was that those lines could be read separately and with different denominators. This layer forces them onto one perimeter, chronology and proof standard."
+  },
+  "unitary_thesis": {
+    "attributed_to": "Gil Marer / Aweswell position, tested against the controlled corpus",
+    "criminal_finding": false,
+    "es": "La hipótesis unitaria es que un complejo hotelero de titularidad fragmentada y una posición crediticia sobre activos LPB adquirieron múltiples vidas simultáneas y sucesivas —masa concursal, garantía/NPL, umbral de licitación, palanca de control material, activo de proyecto, propuesta a inversores, objeto de adjudicación, sustrato RIC, financiación participativa, incentivo público y hotel operativo— y que determinadas decisiones privadas e institucionales pudieron permitir que control y valor se desplazaran antes de que todos los puentes de título, autoridad y derechos de terceros estuvieran cerrados. La secuencia documenta razones serias para investigar; no demuestra por sí sola acuerdo criminal, falsedad consciente, prevaricación, organización criminal ni causalidad penal.",
+    "en": "The unitary hypothesis is that a mixed-title hotel complex and a credit position over LPB assets acquired multiple simultaneous and successive lives—insolvency estate, mortgage/NPL collateral, bid threshold, material-control leverage, development asset, investor proposition, adjudication object, RIC substrate, participating-loan finance, public incentive and operating hotel—and that private and institutional decisions may have allowed control and value to shift before every title, authority and third-party-rights bridge was closed. The sequence gives serious grounds for investigation; it does not by itself prove criminal agreement, knowing falsity, judicial wrongdoing, organised crime or criminal causation."
+  },
+  "fixed_perimeter": {
+    "ricpe_20jul2021_262_fincas": {
+      "cam_owned": 54,
+      "lpb_components": 190,
+      "lpb_breakdown": "159 apartments + 28 commercial units + 1 reception + 2 pools/solaria",
+      "third_party_fincas": 18,
+      "rule": "The LPB insolvency proceeding did not by itself convert CAM-owned or third-party property into the LPB estate. Matkator and other non-LPB rights require their own title/consent/authority analysis."
+    }
+  },
+  "prosecutorial_stages": [
+    {
+      "id":"S1","period":"2008–2011","title_es":"Fragmentación estructural y maquinaria Comunidad/deuda/voto","title_en":"Structural fragmentation and Community/debt/vote machinery","status":"MIXED_E1_E3_E4",
+      "documented":"Sun Park operated physically as one hospitality complex over separately titled fincas. Community governance, charges, voting and the later claimant perimeter require finca- and date-specific reconstruction.",
+      "prosecutorial_question":"Were later debt, voting, authority or document chains based on valid title, amounts and powers, or did any specific false/invalid document knowingly become an instrument for later control?",
+      "counterweight":"Invalid or disputed community governance does not by itself establish criminal falsification or a common plan."
+    },
+    {
+      "id":"S2","period":"2012–2017","title_es":"Concurso limitado de LPB y separación hotel/masa","title_en":"LPB-only insolvency and separation of hotel from estate","status":"E1",
+      "documented":"Concurso 36/2012 concerned LPB. The physical hotel included LPB and non-LPB property and operating rights.",
+      "prosecutorial_question":"For every later act, what part belonged to LPB and what required independent authority outside the insolvency?",
+      "counterweight":"The insolvency court and Insolvency Administrator had substantial lawful powers over LPB assets; the issue is perimeter, not absence of jurisdiction."
+    },
+    {
+      "id":"S3","period":"2017–Feb 2018","title_es":"Entrada CAM por crédito y fincas concretas","title_en":"CAM enters through credit and specific units","status":"E1_E4",
+      "documented":"The controlled record places PH122→CAM secured-credit succession in October 2017 and judicial recognition in February 2018, while CAM also held specific separate units.",
+      "prosecutorial_question":"Did creditor status, separate-unit title or Community participation become treated as a practical entitlement to control a wider hotel perimeter before adjudication?",
+      "counterweight":"A secured creditor may lawfully protect collateral and participate in liquidation; creditor influence is not de facto administration by itself."
+    },
+    {
+      "id":"S4","period":"Apr–4 Jun 2018","title_es":"Plan, aclaraciones, oposición y respuesta judicial adversa","title_en":"Plan, clarification filings, opposition and adverse judicial response","status":"E1",
+      "documented":"16 April plan approval was followed by LPB/Aweswell clarification activity and a 4 June 2018 signed order adverse to requests concerning prior AC credit calculation and proposed pre-offer review/due diligence conditions.",
+      "prosecutorial_question":"What exact rights did the plan/order confer, and which later physical or commercial acts went beyond them?",
+      "counterweight":"This is not an omission: on material issues the court acted adversely. The legal correctness of that act and any criminal element are distinct questions."
+    },
+    {
+      "id":"S5","period":"7 Jun 2018","title_es":"Ruptura de control material","title_en":"Material-control rupture","status":"E1_E2_E3",
+      "documented":"Contemporaneous evidence and later witness material record forced/material access, locks/security and exclusion. No judicial order granting CAM possession of the whole complex, eviction authority or universal key/operational control has been identified in the controlled corpus.",
+      "prosecutorial_question":"Who ordered, executed, funded, authorised, exceeded, adopted or ratified each act; over which fincas/spaces; under what right; with what knowledge and purpose?",
+      "counterweight":"The Insolvency Administrator described a narrower security/maintenance/access authority and denied authorising the principal takeover. A lawful limited mandate may have been exceeded without common intent."
+    },
+    {
+      "id":"S6","period":"Jun–Jul 2018","title_es":"Protección, salida financiada y pérdida de continuidad","title_en":"Protection, funded exit and continuity loss","status":"E1_E2_E3_E4",
+      "documented":"The record contains ONA/Clubotel, Stoneweg/VSO, Ben Oldman and Lagune/Elaia routes of differing legal/closing status, a reported 13 June meeting route, and a 26 June protective suspension for identified fincas. July photographs document physical condition but not causation.",
+      "prosecutorial_question":"Did the control rupture materially frustrate a financeable exit, investor diligence, productive-unit continuity or estate preservation; and which conditions were actually within Aweswell, court, AC or lender control?",
+      "counterweight":"No route is treated as unconditional cash, inevitable closing or guaranteed rescue. Lender/board/credit conditions remained separate."
+    },
+    {
+      "id":"S7","period":"2018–2020","title_es":"Masa activa, unidad productiva y vidas del crédito","title_en":"Active estate, productive unit and lives of the claim","status":"E1_E3_E4",
+      "documented":"The same economic position must be reconciled across recognised insolvency credit, external mortgage enforcement, Bankia→SAREB→PH122→CAM transfers, bid/adjudication mechanics and later recovery/title.",
+      "prosecutorial_question":"Was any amount, right, payment, credit or enforcement effect duplicated, inflated, simulated or used outside its proper procedural/accounting function?",
+      "counterweight":"Different figures in different instruments can legitimately measure different functions and dates; they cannot be added or called false without a single reproducible ledger."
+    },
+    {
+      "id":"S8","period":"11 Nov 2020–Jul 2021","title_es":"Vida inversora antes del puente final de título","title_en":"Investor life before final title bridge","status":"E1_E2_E4",
+      "documented":"The 11 November 2020 RICPE webinar presented Sun Park as a 220-apartment, €12m four-star conversion within CAM's three renovation projects and contained broader statements that the three complexes had been bought with own funds and were free of mortgages. On 20 July 2021 RICPE certified a 262-finca mixed-title perimeter, said CAM owned only 54, and described the Sun Park investment as preliminary/conditional because LPB assets had not yet been acquired; CAM filed that certificate on 21 July.",
+      "prosecutorial_question":"Who received which title/security information before each investor-facing representation, and was any material representation knowingly false, incomplete or later corrected?",
+      "counterweight":"The 2021 certification is an important corrective/narrowing document. Divergence in presentation is an investigation point, not by itself proof of investor fraud."
+    },
+    {
+      "id":"S9","period":"Feb–Oct 2021","title_es":"Aviso formal al Juzgado y conocimiento institucional","title_en":"Formal court notice and institutional knowledge","status":"E1",
+      "documented":"The controlled chain records Aweswell/LPB material concerning RICPE/title/estate protection, July service/party responses and later delivery of filings to the judge.",
+      "prosecutorial_question":"What documentary package was actually before each decision-maker, what did each actor know, and what protective/reconciliation measure followed?",
+      "counterweight":"Institutional receipt does not prove personal reading of every annex or acceptance of its allegations."
+    },
+    {
+      "id":"S10","period":"15 Oct 2021","title_es":"Contradicción judicial primaria","title_en":"Primary judicial contradiction","status":"E1",
+      "documented":"Two signed orders issued the same day contain incompatible descriptions of the May 2021 bidding event: one says the auction had been held and the properties awarded to the best bidder; another says the bidding event had not even taken place and was not an auction but a flexible appearance for successive bids.",
+      "prosecutorial_question":"Was the inconsistency clerical, immaterial, legally cured, or material to defence rights, finality, adjudication or later title; who knew and how was it corrected?",
+      "counterweight":"A textual contradiction does not itself prove a knowingly unjust ruling, purpose or criminal judicial intent."
+    },
+    {
+      "id":"S11","period":"Jan–Apr 2022","title_es":"De aviso y contradicción a testimonios, escritura e inscripción","title_en":"From notice and contradiction to certified copies, deed and registration","status":"E1_E4",
+      "documented":"The controlled judicial chain records January treatment of documentary issues, February testimonios/deed and April registration/challenges. Exact primary pairing and service/finality remain partly open.",
+      "prosecutorial_question":"What was the precise legal bridge from provisional/contested adjudication to deed and registration, and were all conditions, third-party rights and corrections reconciled before implementation?",
+      "counterweight":"A later deed/registration is legally significant and cannot be treated as nonexistent; any challenge must identify the specific antecedent defect and legal consequence."
+    },
+    {
+      "id":"S12","period":"2022–2023","title_es":"Conversión a proyecto operativo, RIC e incentivo público","title_en":"Conversion into operating project, RIC and public incentive","status":"E1_E4",
+      "documented":"The public dossier records two RIC-linked series and participating loans to HNT totalling €6,573,703.10 in audited accounts, a referenced suitability declaration, and a €3,440,914.20 regional incentive over €11,469,714 approved investment. It also records a declared CAM–HNT–RICPE conflict procedure.",
+      "prosecutorial_question":"What title, litigation, third-party-rights, financing and due-diligence package was supplied to RICPE, its control functions, AEAT/Government and the incentive authority at each decision point?",
+      "counterweight":"Investment, suitability, financing, conflict disclosure and grant are not evidence that investors or public officials knew of or joined any alleged wrongdoing. Payment of the full grant is not assumed."
+    },
+    {
+      "id":"S13","period":"2019–2026","title_es":"Calificación, denuncias y posible inversión de roles","title_en":"Classification proceedings, complaints and alleged role inversion","status":"E1_E3_E4",
+      "documented":"The repository preserves the adverse 2019 fiscal position, 2023 first-instance classification judgment and ongoing/pending appeal chain alongside earlier and later complaints against AC/CAM and institutional actors.",
+      "prosecutorial_question":"Did any actor knowingly use incomplete or false propositions to reverse victim/offender roles, suppress contrary evidence or retaliate, or are the adverse outcomes explainable by ordinary merits/procedural disagreement?",
+      "counterweight":"The classification judgment is a real adverse judicial outcome and must remain visible. Appeal, disagreement or prior whistleblowing does not prove retaliation or criminal misuse."
+    },
+    {
+      "id":"S14","period":"present","title_es":"Beneficio, irreversibilidad y contabilidad final","title_en":"Benefit, irreversibility and final accounting","status":"OPEN_P0",
+      "documented":"Later operation and value are visible, but the final AC report denominator, 15th liquidation report, final accounts/rendición, conclusion and full bank/property reconciliation remain incomplete.",
+      "prosecutorial_question":"Who ultimately received property, debt recovery, income, financing, subsidy, avoided costs or project value; what corresponding loss belongs to LPB, Matkator, CEXP, Pink or others; and is any gain causally linked to an unlawful act?",
+      "counterweight":"Later benefit is not proof of earlier criminal purpose. Restitution/damages and criminal profit require separate legal and accounting tests."
+    }
+  ],
+  "criminal_hypothesis_tests": [
+    {
+      "id":"H1","label_es":"Coacción / realización arbitraria del propio derecho","label_en":"Coercion / arbitrary enforcement of one's own right","candidate_articles":"CP arts. 172 and 455, subject to date-specific law and facts","trigger":"Force/intimidation/force on things used outside lawful channels to obtain access/control or realise a claimed right.","must_prove":"actor, order, victim, space/finca, force/intimidation, absence/excess of legal route, intent and causation","not_enough":"creditor status, disputed civil right, presence at the site or a limited security mandate alone"},
+    {
+      "id":"H2","label_es":"Administración desleal / abuso de facultades patrimoniales","label_en":"Disloyal administration / abuse of patrimonial powers","candidate_articles":"CP art. 252, where the relevant entrusted patrimony/duty exists","trigger":"A person with legal/authority/contractual patrimonial powers exceeds them and causes loss.","must_prove":"source and scope of administration power, breach/excess, loss, causation, actor-specific mental element","not_enough":"influence, creditor leverage, negligence or third-party property not entrusted to the actor"},
+    {
+      "id":"H3","label_es":"Insolvencia punible / daño a masa","label_en":"Insolvency offences / estate impairment","candidate_articles":"CP arts. 259–261 and historically applicable provisions","trigger":"Concealment, damage/destruction, unjustified disposition, fictitious credit/accounting or other conduct within statutory insolvency conditions.","must_prove":"applicable temporal offence, debtor/participant status, specific asset/credit/accounting act, intent or statutory negligence, prejudice/risk and causal connection","not_enough":"low recovery, failed rescue, deterioration photographs, adverse liquidation decision or later profitable redevelopment alone"},
+    {
+      "id":"H4","label_es":"Falsedad documental / societaria y uso consciente","label_en":"Document/corporate falsity and knowing use","candidate_articles":"CP arts. 290, 292 and relevant falsity provisions, depending document/person/date","trigger":"A specific minute, power, attendance, vote, debt certificate, accounting record or procedural document is alleged materially false and knowingly used.","must_prove":"exact document class, false alteration/simulation, author, materiality, intent and knowing use","not_enough":"invalid resolution, mistaken arithmetic, disputed legal interpretation or later inconsistency"},
+    {
+      "id":"H5","label_es":"Estafa / estafa procesal o de inversión","label_en":"Fraud / procedural or investment fraud","candidate_articles":"CP arts. 248–250 as applicable at the relevant date","trigger":"Material deception allegedly induces disposition/decision causing loss and gain, including any legally qualifying procedural mechanism.","must_prove":"specific deceptive representation/omission, knowledge, material reliance/inducement, disposition/decision, loss, gain and causal link","not_enough":"marketing optimism, incomplete due diligence, litigation position or a representation later narrowed/corrected"},
+    {
+      "id":"H6","label_es":"Administración de hecho / participación funcional","label_en":"De facto administration / functional participation","candidate_articles":"Corporate/insolvency/criminal consequences depend on the specific substantive offence; de facto status is an evidentiary role, not a standalone crime","trigger":"Actual exercise of management functions or habitual direction of formal managers.","must_prove":"actor-specific management acts, duration, decision power, instructions/obedience and connection to the alleged substantive offence","not_enough":"family/corporate connection, unit ownership, board overlap, creditor influence or later office"},
+    {
+      "id":"H7","label_es":"Prevaricación, negativa o retardo judicial","label_en":"Judicial wrongdoing, refusal or malicious delay","candidate_articles":"CP arts. 446–449; commission by omission requires separate legal basis and elements","trigger":"A knowingly unjust ruling, manifestly unjust ruling through gross negligence/ignorance, unlawful refusal to judge or malicious delay for illegitimate purpose.","must_prove":"exact ruling/refusal/delay, objective injustice or statutory element, knowledge/gross negligence/purpose, applicable law and causal relevance","not_enough":"adverse ruling, contradiction, delay, evidential rejection, appellate reversal or failure to grant requested protection alone"},
+    {
+      "id":"H8","label_es":"Organización/grupo o empresa criminal continuada","label_en":"Criminal organisation/group or continuing enterprise theory","candidate_articles":"CP arts. 570 bis/ter only if statutory elements are independently established","trigger":"Stable/coordinated structure or group alleged to divide functions across time.","must_prove":"membership, structure/coordination, criminal purpose, continuity and actor-specific contribution","not_enough":"functional convergence, family relationship, professional overlap, repeated benefit or a common chronology"}
+  ],
+  "parallel_lives": [
+    {"object":"LPB 159 apartments","lives":["LPB estate/title","mortgage collateral","privileged-credit enforcement substrate","liquidation/bid object","material-control/operational component","RICPE contemplated project input before final title","adjudicated/deeded/registered asset","redeveloped hotel value"]},
+    {"object":"LPB 28 commercial units + reception + 2 pools/solaria","lives":["LPB estate property","separate direct-sale/€400,000 mechanics","whole-hotel control/use component","project-development input","final accounting/restitution object"]},
+    {"object":"CAM 54 units","lives":["CAM separate property","Community/voting/project capacity","part of mixed physical hotel","not a legal bridge to LPB/third-party units","project equity/value component"]},
+    {"object":"18 third-party fincas / non-LPB rights","lives":["extraconcursal title","physically embedded hotel component","possible common-area/operational exposure","not absorbed by LPB insolvency","title/consent/use/damage ledger required"]},
+    {"object":"secured credit / mortgage claim","lives":["bank-originated loan/collateral","Bankia enforcement/accounting","SAREB asset","PH122 NPL/assignment","CAM privileged insolvency claim","bid/adjudication consideration or set-off mechanism","credit-to-control-to-title allegation"]},
+    {"object":"hotel productive unit","lives":["operating business/platform","bookings/data/contracts/staff/goodwill","asset-preservation value","funded-exit/better-offer value","post-control continuity/deterioration question","later MYND operating platform"]},
+    {"object":"Sun Park project representation","lives":["2020 investor-facing project","2021 corrected/conditional mixed-title certification","court-filed documentary issue","2021–22 capital/title bridge","2022–23 RIC finance and regional incentive","later operating and reputational/institutional reliance"]}
+  ],
+  "judicial_balance": {
+    "adverse_or_contrary_nodes": ["4 Jun 2018 adverse response on credit calculation/bid condition","13 Jan 2021 denial of Aweswell estate-protection request","15 Oct 2021 adverse rulings with internal textual contradiction","28 Sep 2023 materially adverse classification judgment"],
+    "favourable_or_protective_counterweights": ["26 Jun 2018 suspension for identified fincas","23 Jul 2019 partial LPB appellate success","24 Oct 2019 refusal to convalidate 28 Nov 2018 deed / renewed competitive route","12 May 2020 favourable Aweswell act against AC nullity route","8 Jul 2021 detailed AC-reporting requirement and responsibility warning","2022 correction/nullity/review nodes that must remain paired with adverse acts"],
+    "rule":"A prosecution-led presentation must preserve exculpatory/favourable judicial acts. Selective omission would weaken the theory and make intent impossible to assess fairly."
+  },
+  "downstream_reliance_boundary": {
+    "documented":"RICPE project promotion, later corrected/conditional perimeter, audited RIC materialisation/participating loans, declared conflict procedure, suitability reference, regional incentive and later hotel operation.",
+    "not_inferred":"knowledge, complicity, criminal intent or wrongdoing by investors, advisers, CNMV, AEAT, Government, incentive authority, hotel operator or other downstream actors merely because they were exposed to or relied on the project.",
+    "investigative_test":"For each downstream decision obtain the information pack received, title/encumbrance statement, litigation disclosure, due diligence, conflict analysis, corrections, conditions, disbursement/payment records and any later review/recovery action."
+  },
+  "highest_leverage_gaps": [
+    "Official signed/electronic chronological docket denominator and row-by-row source reconciliation for the >600 indexed discovery rows.",
+    "Exact Concurso 36/2012 takeover/preservation filing/receipt after 7 June 2018, if one existed.",
+    "Formal funded-conclusion/better-offer filing following the 13 June 2018 meeting, if one existed.",
+    "CEXP receivable/recovery filing, if one existed.",
+    "Underlying quarterly AC report filed as 5367/2022 and independent identification of the 15th quarterly liquidation report.",
+    "Complete AC report ordinal/date/annex/service ledger plus bank reconciliation.",
+    "Final accounts/rendición → objections → approval/refusal → service → finality → conclusion → implementation.",
+    "Complete October 2021 / January 2022 testimonios, correction, service, challenge and finality family.",
+    "Complete property-by-property title/consent/use/works/income ledger for Matkator and other non-LPB fincas.",
+    "Single principal-interest-payment-pledge-assignment-enforcement-adjudication-recovery ledger for the lender/NPL chain.",
+    "Route-specific funded-exit condition matrix showing what was satisfied, waived, blocked or controlled by Aweswell, court, AC, lender or third party.",
+    "RICPE/CAM/HNT due diligence and Unit of Control material; complete RIC/AEAT suitability files; GC/836/P06 incentive file; final bank flows and grant-payment/recovery status.",
+    "Current merits endpoints and finality for RPL 2523/2025 and other live appeals.",
+    "Sealed receipt for 4 March 2025 ES06-01 or permanent classification as filing not proved."
+  ],
+  "prosecutorial_production_requests": [
+    "Court/LAJ certified export of every Section 5/6 act, filing, attachment, service event and appeal/finality marker.",
+    "Native Community minutes, convocations, powers, vote/title denominator, security contract, locksmith/key/access logs and invoices for May–July 2018.",
+    "Native AC emails/authorisations/meeting records, exact first-notice chronology, measures to recover access/control, inventory/inspection records and all quarterly/final accounts.",
+    "Complete bid/offering room: publication logs, bidders, offers, deposits, due diligence access, communications and reasons for acceptance/rejection.",
+    "All funded-exit route originals and closing-condition evidence, with lender-side approval records kept distinct from sponsor-side performance.",
+    "Registry/deed/notarial chain finca by finca, including testimonios, conditions, consideration, €400,000 mechanics and later segregation to HNT.",
+    "RICPE board/committee/Unit of Control records, conflict file, investor materials, corrections and title/litigation disclosures for Sun Park/HNT.",
+    "AEAT/Government RIC suitability material, incentive application and control file, eligible-cost/payment evidence and funding-source reconciliation.",
+    "Operating records needed to measure productive-unit continuity and later benefit: reservations, merchant accounts, revenue, operator agreements, staffing, utilities, licences, works and opening records.",
+    "One forensic damages ledger allocating every claimed loss/gain to the legally correct claimant without double recovery."
+  ],
+  "public_routes": {
+    "es":"/por-derecho/es/concurso-36-2012-analisis-penal-forense-unitario/",
+    "en":"/por-derecho/en/insolvency-36-2012-unitary-criminal-forensic-analysis/"
+  },
+  "source_routes": [
+    "/es/control-acreedor-cam-administracion-hecho-omision-judicial/",
+    "/es/concurso-36-2012-escritos-tratamiento-sobreextension/",
+    "/es/ric-private-equity-sun-park/",
+    "/es/comunidad-instrumentalizacion/actas-2011-2022/",
+    "/es/reclamacion-caixabank-valencia/",
+    "/es/calificacion-concurso-36-2012-vidas-paralelas/"
+  ],
+  "legal_reference_control": {
+    "boe_consolidated_code":"https://www.boe.es/buscar/doc.php?id=BOE-A-1995-25444",
+    "rule":"Article numbers are investigative navigation only. Each alleged act must be tested under the criminal law in force on its date, including any more-favourable retroactive rule."
+  }
+}
