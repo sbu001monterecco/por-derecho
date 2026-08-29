@@ -1,0 +1,42 @@
+name: Validate Concurso 36/2012 P0 material gap closure
+
+on:
+  pull_request:
+    paths:
+      - 'CONCURSO36_CONTINUE_HERE.md'
+      - 'archive/CONCURSO36_P0_MATERIAL_GAP_CLOSURE_MAP_29AUG2026.md'
+      - 'assets/data/concurso36-p0-material-gap-closure-20260829-v1.json'
+      - 'scripts/validate_concurso36_p0_material_gap_closure.py'
+      - '.github/workflows/validate-concurso36-p0-material-gap-closure.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'CONCURSO36_CONTINUE_HERE.md'
+      - 'archive/CONCURSO36_P0_MATERIAL_GAP_CLOSURE_MAP_29AUG2026.md'
+      - 'assets/data/concurso36-p0-material-gap-closure-20260829-v1.json'
+      - 'scripts/validate_concurso36_p0_material_gap_closure.py'
+      - '.github/workflows/validate-concurso36-p0-material-gap-closure.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: concurso36-p0-material-gap-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: '3.12'
+      - name: Validate material gap control
+        run: |
+          python -B -m py_compile scripts/validate_concurso36_p0_material_gap_closure.py
+          python -B scripts/validate_concurso36_p0_material_gap_closure.py
