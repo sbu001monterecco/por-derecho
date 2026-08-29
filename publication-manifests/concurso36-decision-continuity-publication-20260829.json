@@ -3,6 +3,7 @@
   "owner": "Por Derecho / Project Sun Rock",
   "control_date": "2026-08-29",
   "state": "PUBLICATION_BRANCH_READY",
+  "current_state": "PREPARED_PENDING_MERGE",
   "subject": "Concurso 36/2012 — public judicial and LAJ decision-continuity control",
   "controlled_sources": [
     "archive/CONCURSO_36_2012_DOCKET_WIDE_DISCOVERY_PROMOTION_REGISTER_17AUG2026.md",
@@ -11,8 +12,12 @@
     "assets/data/concurso36-judicial-acts-v1.json"
   ],
   "expected_routes": {
-    "en": "en/concurso36-decision-continuity/index.html",
-    "es": "es/concurso36-continuidad-decisiones/index.html",
+    "en": [
+      "en/concurso36-decision-continuity/index.html"
+    ],
+    "es": [
+      "es/concurso36-continuidad-decisiones/index.html"
+    ],
     "sitemap": "sitemap-concurso36-decision-continuity.xml"
   },
   "publication_rules": [

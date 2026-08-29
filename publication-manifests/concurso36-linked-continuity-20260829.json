@@ -4,11 +4,34 @@
   "control_id": "PD-C36-LINKED-CONTINUITY-20260829-01",
   "owner": "Por Derecho / Project Sun Rock",
   "created_at": "2026-08-29T00:00:00Z",
-  "current_state": "PREPARED_PENDING_MERGE",
-  "status": "continuity_reconciled__publication_pending",
+  "current_state": "DEPLOYED",
+  "status": "merged_deployed__exact_route_readback_pending",
+  "publication_origin": "https://sbu001monterecco.github.io/por-derecho/",
   "base_sha_at_start": "a7b56adcf5d2656050fb516aad4b4402ea36ef94",
   "branch": "codex/concurso36-linked-continuity-20260829",
+  "continuity_truth_repair_branch": "fix/concurso36-continuity-truth-20260829",
+  "current_main_rule": "Resolve refs/heads/main afresh at runtime. Never substitute the immutable release SHA for mutable current main.",
+  "last_observed_main_before_truth_repair": "0b0423820942cb95f7a98e8d6fc519f6a9482a04",
   "purpose": "Publish a canonical restart point, exact duplicate-intake reconciliation, preserved P0/P1 evidence gates and a controlled current-main/transplant queue for linked Por Derecho workstreams, without promoting new evidence.",
+  "release_lineage": {
+    "pull_request_number": 1190,
+    "pull_request_url": "https://github.com/sbu001monterecco/por-derecho/pull/1190",
+    "release_sha": "0b0423820942cb95f7a98e8d6fc519f6a9482a04",
+    "merged_at": "2026-08-29T04:16:57Z",
+    "pages_run_id": 33233442563,
+    "pages_run_number": 1262,
+    "pages_conclusion": "success"
+  },
+  "state_control": {
+    "CURRENT_MAIN": "RESOLVE_AT_RUNTIME",
+    "RELEASE_SHA": "0b0423820942cb95f7a98e8d6fc519f6a9482a04",
+    "SCOPED_VALIDATION": "PASS_RELEASE__REPAIR_CI_PENDING",
+    "GLOBAL_INTEGRITY": "REPAIR_CI_PENDING",
+    "PAGES_DEPLOYMENT": "PASS_RELEASE_RUN_33233442563",
+    "EXACT_ROUTE_READBACK": "PENDING_REPAIR_DEPLOYMENT",
+    "EVIDENCE_CLOSURE": "OPEN_P0_9_P1_2",
+    "DELETION_SAFE": "NO"
+  },
   "source_equivalence": {
     "exact_git_blob_match": true,
     "files": [
@@ -50,7 +73,10 @@
     "publication-manifests/concurso36-linked-continuity-20260829.json",
     "docs/deletion-audits/2026-08-29-concurso36-linked-continuity.md",
     "scripts/validate_concurso36_linked_continuity.py",
-    ".github/workflows/validate-concurso36-linked-continuity.yml"
+    "scripts/verify_concurso36_linked_continuity_live.py",
+    "scripts/production_smoke_check.py",
+    ".github/workflows/validate-concurso36-linked-continuity.yml",
+    ".github/workflows/verify-concurso36-linked-continuity-live.yml"
   ],
   "controlled_result": {
     "new_evidence_promoted": false,
@@ -94,14 +120,33 @@
     "authority_contact": false
   },
   "validation": {
-    "status": "LOCAL_PASS__CI_PENDING",
+    "status": "PASS_RELEASE__REPAIR_CI_PENDING",
     "commands": [
       "python -B scripts/validate_concurso36_linked_continuity.py"
+    ],
+    "evidence": [
+      {
+        "workflow": "Validate Concurso 36/2012 linked continuity",
+        "run_id": 33233443036,
+        "conclusion": "success",
+        "sha": "0b0423820942cb95f7a98e8d6fc519f6a9482a04"
+      }
     ]
   },
-  "pull_request": null,
-  "merge_sha": null,
-  "deployment_evidence": null,
+  "pull_request": {
+    "number": 1190,
+    "url": "https://github.com/sbu001monterecco/por-derecho/pull/1190",
+    "state": "merged"
+  },
+  "merge_sha": "0b0423820942cb95f7a98e8d6fc519f6a9482a04",
+  "deployment_evidence": {
+    "provider": "GitHub Pages",
+    "workflow": "pages build and deployment",
+    "run_id": 33233442563,
+    "run_number": 1262,
+    "conclusion": "success",
+    "sha": "0b0423820942cb95f7a98e8d6fc519f6a9482a04"
+  },
   "live_verification_evidence": null,
   "deletion_record": "docs/deletion-audits/2026-08-29-concurso36-linked-continuity.md"
 }
