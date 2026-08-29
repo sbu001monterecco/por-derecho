@@ -1,0 +1,210 @@
+{
+  "schema": "por-derecho.concurso36-p0-material-gap-closure.v1",
+  "control_date": "2026-08-29",
+  "baseline_main_sha": "5f53e58c28a22f5aab7280c82a31b34fb940f5d1",
+  "purpose": "Refine the existing nine P0 evidence families to source-level closure states without reducing the open-family denominator before each pre-existing closure test is satisfied.",
+  "p0_open_family_count": 9,
+  "p1_open_family_count": 2,
+  "new_allegation_promoted": false,
+  "external_action_authorized": false,
+  "status_enum": [
+    "OPEN_UNLOCATED",
+    "PRIMARY_LOCATED_PENDING_PROMOTION",
+    "PARTIAL_FAMILY_LOCATED",
+    "DISCOVERY_DENOMINATOR_LOCATED__CERTIFIED_OPEN",
+    "PARTIAL_PROCEDURAL_CHAIN_LOCATED__MERITS_OPEN",
+    "OPEN_UNLOCATED_POST_LIQUIDATION",
+    "CLOSED"
+  ],
+  "closure_rule": "A located subnode does not close a P0 family. CLOSED is permitted only when the family closure test in the controlled missing-evidence register is satisfied.",
+  "families": [
+    {
+      "id": "CERTIFIED-DENOMINATOR",
+      "status": "DISCOVERY_DENOMINATOR_LOCATED__CERTIFIED_OPEN",
+      "priority": 2,
+      "located_nodes": [
+        "historical chronological workbook discovery spine",
+        "controlled docket-wide discovery promotion register"
+      ],
+      "remaining_nodes": [
+        "official signed/electronic court or LAJ chronological denominator for every section and incident from 2014 through conclusion",
+        "row-by-row source reconciliation"
+      ]
+    },
+    {
+      "id": "ORIGINALS-2014-2016",
+      "status": "OPEN_UNLOCATED",
+      "priority": 7,
+      "located_nodes": [],
+      "remaining_nodes": [
+        "signed 29 April 2014 act",
+        "2015 acts",
+        "signed 1 April 2016 act",
+        "signed 1 June 2016 act",
+        "definitive-text chain"
+      ]
+    },
+    {
+      "id": "BARE-REFERENCES",
+      "status": "OPEN_UNLOCATED",
+      "priority": 8,
+      "located_nodes": [
+        "identifiers 204/14, 677/14, 2418/14 and 5599/2015"
+      ],
+      "remaining_nodes": [
+        "authenticated underlying instruments",
+        "complete procedural families"
+      ]
+    },
+    {
+      "id": "REPORTED-JUDICIAL-ACTS",
+      "status": "PARTIAL_FAMILY_LOCATED",
+      "priority": 6,
+      "located_nodes": [
+        "controlled promoted and derivative decision nodes with favourable/neutral acts retained"
+      ],
+      "remaining_nodes": [
+        "signed originals and complete families C36-E004, E031, E034, E045, E056, E060, E062 and E063"
+      ]
+    },
+    {
+      "id": "OCTOBER-2021-CHAIN",
+      "status": "PARTIAL_FAMILY_LOCATED",
+      "priority": 3,
+      "located_nodes": [
+        "primary AC report dated 25 October 2021",
+        "signed LAJ Diligencia de Ordenacion dated 27 October 2021 recording filing 7425/2021 and transfer",
+        "connected-source candidates for filing 7336/2021",
+        "connected-source candidates for requests 7416/7417"
+      ],
+      "remaining_nodes": [
+        "promote and verify 7336/2021",
+        "promote and verify 7416/7417",
+        "issued testimonios",
+        "annex completeness",
+        "service",
+        "challenges",
+        "decisions",
+        "finality"
+      ]
+    },
+    {
+      "id": "AC-REPORT-SERIES",
+      "status": "PARTIAL_FAMILY_LOCATED",
+      "priority": 1,
+      "located_nodes": [
+        "20 September 2018 quarterly report",
+        "located 4th quarterly report",
+        "located 6th quarterly report",
+        "25 October 2021 quarterly report / filing 7425/2021",
+        "27 July 2022 LAJ receipt of filing 5367/2022",
+        "2 November 2022 quarterly report",
+        "March 2023 report family",
+        "20 June 2023 quarterly report / June 2023 receipt family",
+        "28 September 2023 report / October 2023 receipt family",
+        "11 January 2024 / registration 105/2024 family",
+        "17 September 2024 / registration 4675/2024 family",
+        "24 November 2025 / 27 November 2025 / registration 7294/2025 family"
+      ],
+      "remaining_nodes": [
+        "15th quarterly liquidation report",
+        "pair underlying report to 5367/2022 receipt",
+        "complete ordinal/date/registration/receipt/annex matrix",
+        "every missing report and annex",
+        "ledger and bank reconciliation",
+        "final accounts"
+      ]
+    },
+    {
+      "id": "REVIEW-2022-2023",
+      "status": "PARTIAL_FAMILY_LOCATED",
+      "priority": 4,
+      "located_nodes": [
+        "primary Auto 74/2023 dated 6 March 2023 in RQE 375/2022",
+        "official Tribunal Constitucional providencia dated 23 October 2023 in amparo 2811/2023",
+        "RQE 379/2022 finality/return-to-origin candidate"
+      ],
+      "remaining_nodes": [
+        "signed 9 March 2022 act",
+        "signed 16 June 2022 act",
+        "signed 20 June 2022 act",
+        "signed 13 July 2022 act",
+        "complete RQE 375/2022 filing/service/finality family",
+        "complete RQE 379/2022 filing/service/finality family",
+        "canonical promotion of official primary copies"
+      ]
+    },
+    {
+      "id": "CURRENT-APPEALS",
+      "status": "PARTIAL_PROCEDURAL_CHAIN_LOCATED__MERITS_OPEN",
+      "priority": 5,
+      "located_nodes": [
+        "procedural nodes for RPL 2523/2025",
+        "procedural nodes for combined RPL 3304/2025 and RPL 3319/2025",
+        "procedural nodes for RPL 421/2026"
+      ],
+      "remaining_nodes": [
+        "merits decision RPL 2523/2025",
+        "merits decision combined RPL 3304/2025 and RPL 3319/2025",
+        "merits decision RPL 421/2026",
+        "service",
+        "clarification or review if any",
+        "finality",
+        "implementation"
+      ],
+      "last_targeted_connected_source_sweep": "2026-08-29",
+      "merits_endpoint_located_in_that_sweep": false
+    },
+    {
+      "id": "FINAL-STAGE",
+      "status": "OPEN_UNLOCATED_POST_LIQUIDATION",
+      "priority": 1,
+      "located_nodes": [
+        "primary 2 November 2022 AC report states assets had been liquidated in the terms of the 15th quarterly liquidation report",
+        "primary 20 June 2023 AC report repeats completed-liquidation reference to the 15th report",
+        "primary 24 November 2025 AC report repeats completed-liquidation reference, records EUR 2,098 treasury held in the court account, no pending credits against the estate, and reserve for completion/conclusion expenses"
+      ],
+      "remaining_nodes": [
+        "15th quarterly liquidation report",
+        "any later AC report",
+        "final accounts or rendicion",
+        "transfer",
+        "objections",
+        "approval or refusal",
+        "service",
+        "finality",
+        "conclusion order",
+        "implementation and accounting"
+      ]
+    }
+  ],
+  "highest_leverage_targets": [
+    {
+      "rank": 1,
+      "target": "15th quarterly liquidation report plus complete AC report denominator",
+      "reason": "Later primary reports repeatedly identify the 15th report as the operative description of completed asset liquidation; recovery narrows both AC-REPORT-SERIES and FINAL-STAGE."
+    },
+    {
+      "rank": 2,
+      "target": "final accounts and conclusion chain",
+      "reason": "Primary late reports indicate liquidation completion and no pending credits against the estate, making the remaining post-liquidation chain a finite set of identifiable nodes."
+    },
+    {
+      "rank": 3,
+      "target": "October 2021 filing/receipt/testimonio/report family",
+      "reason": "Report 7425/2021 and its signed LAJ receipt are already primary-located, allowing the remaining gap to be reduced to specific companion nodes."
+    },
+    {
+      "rank": 4,
+      "target": "RQE 375/2022, RQE 379/2022 and TC 2811/2023 primary promotion",
+      "reason": "Primary endpoint documents are already located; promotion can close named subnodes immediately."
+    },
+    {
+      "rank": 5,
+      "target": "candidate docket denominator reconciliation",
+      "reason": "Turns a broad certified-index gap into an exact source delta while preserving the requirement for an official denominator."
+    }
+  ],
+  "public_wording": "Nine P0 evidence families remain open. Primary-source recovery has materially narrowed several of them: the October 2021 chain, the AC-report series and the 2022-2023 review family now contain located primary nodes, while current appeals have located procedural nodes but no merits endpoint yet located. No family is treated as closed until its pre-existing closure test is satisfied.",
+  "privacy_rule": "Do not publish private mailbox identifiers, contact data, counsel advice or derivative allegations as evidence. Promote primary court, LAJ or AC instruments only after source verification, privacy review and canonical hashing."
+}
