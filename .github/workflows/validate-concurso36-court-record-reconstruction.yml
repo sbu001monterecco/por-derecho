@@ -20,11 +20,16 @@ on:
       - 'en/insolvency-36-2012-court-record/**'
       - 'CHATGPT_START_HERE_CONCURSO36_COURT_RECORD.md'
       - 'publication-manifests/concurso36-court-record-reconstruction-20260829.json'
+
+permissions:
+  contents: read
+
 jobs:
   validate:
     runs-on: ubuntu-latest
+    timeout-minutes: 5
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v4
       - name: Validate registry, appellate supplement and continuity controls
         run: |
           python - <<'PY'
