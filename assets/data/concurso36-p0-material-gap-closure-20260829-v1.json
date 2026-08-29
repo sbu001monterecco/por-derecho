@@ -97,6 +97,10 @@
         "located 4th quarterly report",
         "located 6th quarterly report",
         "25 October 2021 quarterly report / filing 7425/2021",
+        "25 January 2022 quarterly report",
+        "25 April 2022 quarterly report",
+        "25 April 2022 liquidation-operations list or annex",
+        "28 April 2022 LAJ/court receipt chain for filing 3016/2022",
         "27 July 2022 LAJ receipt of filing 5367/2022",
         "2 November 2022 quarterly report",
         "March 2023 report family",
@@ -182,7 +186,7 @@
     {
       "rank": 1,
       "target": "15th quarterly liquidation report plus complete AC report denominator",
-      "reason": "Later primary reports repeatedly identify the 15th report as the operative description of completed asset liquidation; recovery narrows both AC-REPORT-SERIES and FINAL-STAGE."
+      "reason": "Later primary reports repeatedly identify the 15th report as the operative description of completed asset liquidation; January and April 2022 primary anchors materially tighten the sequence without proving any ordinal; recovery narrows both AC-REPORT-SERIES and FINAL-STAGE."
     },
     {
       "rank": 2,
