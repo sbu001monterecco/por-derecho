@@ -163,3 +163,11 @@ Interpret that instruction subject to this governance file: the continuation is 
 ## Non-authorisation boundary
 
 This governance file authorises repository analysis and controlled publication workflow only. It does not itself authorise an email, court filing, authority contact, witness contact, service, demand, accusation to a third party or other external communication.
+
+## Mandatory controlling-conclusions supplement — no orphaning
+
+Every continuation must also read and apply `CONCURSO36_CONTROLLING_CONCLUSIONS_29AUG2026.md` and its machine overlay `assets/data/concurso36-controlling-conclusions-supplement-20260829.json` **before** relying on an older generated continuity dataset, validator, timeline or public page.
+
+The supplement is controlling wherever an older source-derived presentation conflicts with the corrected architecture for: **20-Jan-2017 modification; 8-Feb-2018 creditor succession; 4-Jun-2018 liquidation/payoff bridge; the five-column credit ontology; AC knowledge by 8-Jun; adviser instruction/draft/filing tension; Mercantil's 11-Jun response existence with missing content; convenio presentation; historical Article 176 numbering; loan-by-loan reconciliation; authority-before-arithmetic; and the actor-specific criminal/prosecutorial test.**
+
+A future primary source may change a factual premise, but such a change must be made through an explicit dated correction record. It must never happen through silent regression to superseded wording.
