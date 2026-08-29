@@ -1,0 +1,40 @@
+name: Validate Concurso 36/2012 unitary prosecutorial layer
+
+on:
+  pull_request:
+    paths:
+      - 'assets/data/concurso36-unitary-prosecutorial-theory-20260829.json'
+      - 'assets/concurso36-unitary-prosecutorial.js'
+      - 'es/concurso-36-2012/**'
+      - 'en/insolvency-36-2012/**'
+      - 'es/concurso-36-2012-analisis-penal-forense-unitario/**'
+      - 'en/insolvency-36-2012-unitary-criminal-forensic-analysis/**'
+      - 'publication-manifests/concurso36-unitary-prosecutorial-20260829.json'
+      - 'scripts/validate_concurso36_unitary_prosecutorial.py'
+      - '.github/workflows/validate-concurso36-unitary-prosecutorial.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'assets/data/concurso36-unitary-prosecutorial-theory-20260829.json'
+      - 'assets/concurso36-unitary-prosecutorial.js'
+      - 'es/concurso-36-2012/**'
+      - 'en/insolvency-36-2012/**'
+      - 'es/concurso-36-2012-analisis-penal-forense-unitario/**'
+      - 'en/insolvency-36-2012-unitary-criminal-forensic-analysis/**'
+      - 'publication-manifests/concurso36-unitary-prosecutorial-20260829.json'
+      - 'scripts/validate_concurso36_unitary_prosecutorial.py'
+      - '.github/workflows/validate-concurso36-unitary-prosecutorial.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate unitary prosecutorial publication
+        run: python scripts/validate_concurso36_unitary_prosecutorial.py
