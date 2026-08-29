@@ -1,7 +1,32 @@
 {
+  "schema": "por-derecho.publication-manifest.v1",
+  "publication_id": "eg-745-2026-continuity-20260829",
+  "title": "E.G. 745/2026 continuity control",
+  "current_state": "DEPLOYED",
+  "owner": "Por Derecho / Project Sun Rock",
   "dossier": "E.G. 745/2026",
   "control_date": "2026-08-29",
   "repository": "sbu001monterecco/por-derecho",
+  "expected_routes": {
+    "es": [
+      "es/fiscalia-inspeccion-exp-gub-745-2026/index.html",
+      "es/fiscalia-inspeccion-exp-gub-745-2026/paquete-respuesta-29-agosto-2026.html",
+      "es/fiscalia-inspeccion-exp-gub-745-2026/diario-actuaciones-29-agosto-2026.html"
+    ],
+    "en": [
+      "en/public-prosecution-inspection-exp-gub-745-2026/index.html",
+      "en/public-prosecution-inspection-exp-gub-745-2026/response-package-29-august-2026.html",
+      "en/public-prosecution-inspection-exp-gub-745-2026/action-diary-29-august-2026.html"
+    ]
+  },
+  "expected_source_files": [
+    "archive/EG_745_2026_CONTINUITY_29AUG2026.md",
+    "archive/EG_745_2026_CONTINUITY_CLOSEOUT_29AUG2026.md",
+    "archive/DEPLOYMENT_LOG_EG745_20260829.md",
+    "evidence/fiscalia/2026/EG_745_2026_ACTION_DIARY_29AUG2026.md",
+    "evidence/fiscalia/2026/EG_745_2026_COUNTER_ACTION_MATRIX_29AUG2026.md",
+    "FISCALIA_INSPECCION_EG_745_2026_DIGITISATION_APPEAL_PACKAGE_29AUG2026.md"
+  ],
   "authoritative_source": {
     "notification_date": "2026-08-26",
     "filename": "OFICIO Y DECRETO EXP. 745-26.pdf",
@@ -96,5 +121,19 @@
     "evidence/fiscalia/2026/EG_745_2026_ACTION_DIARY_29AUG2026.md",
     "evidence/fiscalia/2026/EG_745_2026_COUNTER_ACTION_MATRIX_29AUG2026.md",
     "FISCALIA_INSPECCION_EG_745_2026_DIGITISATION_APPEAL_PACKAGE_29AUG2026.md"
-  ]
+  ],
+  "validation": {
+    "status": "RECORDED_RELEASE_CONTROLS",
+    "evidence": [
+      "Four recorded release phases each reached a successful GitHub Pages deployment."
+    ]
+  },
+  "merge_sha": "1094477c9b32ba2e5064a33f513d546942c6056b",
+  "deployment_evidence": {
+    "provider": "GitHub Pages",
+    "run_id": 33231622327,
+    "run_number": 1258,
+    "conclusion": "success",
+    "sha": "1094477c9b32ba2e5064a33f513d546942c6056b"
+  }
 }
