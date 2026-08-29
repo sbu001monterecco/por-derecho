@@ -1,0 +1,48 @@
+name: Validate Concurso 36/2012 court-record reconstruction
+on:
+  pull_request:
+    paths:
+      - 'assets/data/concurso36-court-record-reconstruction-v1.json'
+      - 'assets/concurso36-court-record-reconstruction.js'
+      - 'es/concurso-36-2012-registro-procesal/**'
+      - 'en/insolvency-36-2012-court-record/**'
+      - 'CHATGPT_START_HERE_CONCURSO36_COURT_RECORD.md'
+      - 'publication-manifests/concurso36-court-record-reconstruction-20260829.json'
+      - '.github/workflows/validate-concurso36-court-record-reconstruction.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'assets/data/concurso36-court-record-reconstruction-v1.json'
+      - 'assets/concurso36-court-record-reconstruction.js'
+      - 'es/concurso-36-2012-registro-procesal/**'
+      - 'en/insolvency-36-2012-court-record/**'
+      - 'CHATGPT_START_HERE_CONCURSO36_COURT_RECORD.md'
+      - 'publication-manifests/concurso36-court-record-reconstruction-20260829.json'
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate registry and continuity controls
+        run: |
+          python - <<'PY'
+          import json, pathlib
+          root=pathlib.Path('.')
+          reg=json.loads((root/'assets/data/concurso36-court-record-reconstruction-v1.json').read_text())
+          man=json.loads((root/'publication-manifests/concurso36-court-record-reconstruction-20260829.json').read_text())
+          assert reg['status'].startswith('CONTROLLED RECONSTRUCTION')
+          assert 'RESPONSE_NOT_LOCATED' in reg['response_taxonomy']
+          fam=reg['verified_families'][0]
+          assert fam['family_id']=='C36-FAM-2022-APPEAL-QUEJA-TESTIMONIOS'
+          assert len(fam['records']) >= 10
+          blob=json.dumps(reg,ensure_ascii=False)
+          for needle in ['202210473582179','1202210474270428','202210476786626','1202210481753993','1202210482293471','A05003250-35127ecbb3101ef0a562bb848041650980940581']:
+              assert needle in blob, needle
+          for path in ['CHATGPT_START_HERE_CONCURSO36_COURT_RECORD.md','assets/concurso36-court-record-reconstruction.js','es/concurso-36-2012-registro-procesal/index.html','en/insolvency-36-2012-court-record/index.html']:
+              assert (root/path).exists(), path
+          handoff=(root/'CHATGPT_START_HERE_CONCURSO36_COURT_RECORD.md').read_text()
+          for phrase in ['filing -> verified receipt -> court/LAJ act -> service -> review/appeal -> finality -> implementation','Do not block the reconstruction','Recommended short prompt for a new thread']:
+              assert phrase in handoff, phrase
+          assert man['primary_registry']=='assets/data/concurso36-court-record-reconstruction-v1.json'
+          print('court-record reconstruction controls OK')
+          PY
