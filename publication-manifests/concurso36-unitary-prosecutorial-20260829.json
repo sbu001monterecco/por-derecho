@@ -1,0 +1,61 @@
+{
+  "manifest_version": "1.0",
+  "publication_id": "concurso36-unitary-prosecutorial-20260829",
+  "generated": "2026-08-29",
+  "baseline_main_sha": "f7978cf932ffb943f1c70190cb69950bf71ef35e",
+  "branch": "codex/concurso36-unitary-prosecutorial-20260829",
+  "purpose": "Create one evidence-graded, criminal-led forensic and prosecutorial spine across the existing Concurso 36/2012 specialist pages without replacing their source corpora.",
+  "public_routes": [
+    "/es/concurso-36-2012/",
+    "/en/insolvency-36-2012/",
+    "/es/concurso-36-2012-analisis-penal-forense-unitario/",
+    "/en/insolvency-36-2012-unitary-criminal-forensic-analysis/"
+  ],
+  "machine_readable": [
+    "assets/data/concurso36-unitary-prosecutorial-theory-20260829.json"
+  ],
+  "renderers": [
+    "assets/concurso36-unitary-prosecutorial.js"
+  ],
+  "continuity_records": [
+    "archive/CONCURSO36_UNITARY_PROSECUTORIAL_FORENSIC_CLOSEOUT_29AUG2026.md"
+  ],
+  "expected_controls": {
+    "evidence_tiers": 5,
+    "prosecutorial_stages": 14,
+    "criminal_hypothesis_tests": 8,
+    "p0_open_families": 9,
+    "p1_open_families": 2,
+    "certified_docket": false,
+    "criminal_finding": false,
+    "fixed_ricpe_perimeter_total": 262,
+    "cam_owned": 54,
+    "lpb_components": 190,
+    "third_party_fincas": 18
+  },
+  "mandatory_boundaries": [
+    "No criminal guilt or intent is presented as adjudicated fact.",
+    "No-response-located is not treated as proof that no response existed.",
+    "Adverse judicial acts and favourable/protective counterweights must both remain visible.",
+    "Downstream investors, advisers, regulators, authorities and operators are not attributed knowledge or complicity merely from exposure to the project.",
+    "The >600-row historical discovery inventory is not represented as the certified court docket.",
+    "RICPE 2020/2021 perimeter divergence is a reconciliation checkpoint, not a fraud finding.",
+    "The 15 October 2021 contradiction is a verified textual contradiction; its legal/criminal significance remains to be proved."
+  ],
+  "specialist_sources_to_read_together": [
+    "es/control-acreedor-cam-administracion-hecho-omision-judicial/index.html",
+    "en/cam-creditor-control-shadow-administration-judicial-omission/index.html",
+    "es/concurso-36-2012-escritos-tratamiento-sobreextension/index.html",
+    "en/insolvency-36-2012-filings-court-treatment-overreach/index.html",
+    "es/ric-private-equity-sun-park/index.html",
+    "en/ric-private-equity-sun-park/index.html",
+    "es/comunidad-instrumentalizacion/actas-2011-2022/index.html",
+    "es/reclamacion-caixabank-valencia/index.html",
+    "en/caixabank-valencia-claim/index.html",
+    "es/calificacion-concurso-36-2012-vidas-paralelas/index.html",
+    "en/insolvency-classification-parallel-lives/index.html",
+    "es/concurso-36-2012-autos-resoluciones/index.html",
+    "en/insolvency-36-2012-orders-decisions/index.html"
+  ],
+  "supersession_note": "PR #1196 must not be merged over this layer. Its unique discovery-denominator and P0/P1 controls are migrated here; after this publication is safely merged, #1196 may be closed as superseded with its history preserved."
+}
