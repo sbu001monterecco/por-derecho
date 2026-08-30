@@ -1,7 +1,7 @@
 {
   "schema": "por-derecho.operational-truth.current-state.v2",
   "record_type": "CURRENT_STATE_CONTRACT_WITH_LAST_OBSERVATION",
-  "control_date": "2026-08-26",
+  "control_date": "2026-08-30",
   "purpose": "Authoritative routing for repository, deployment and rollback state. Specialist case, evidence, procedural and reader-facing facts remain authoritative in their own controlled state files.",
   "authority": {
     "current_repository_truth": "Resolve refs/heads/main dynamically through GitHub or local git at execution time.",
@@ -29,29 +29,27 @@
   "repository_observation": {
     "repository": "sbu001monterecco/por-derecho",
     "ref": "refs/heads/main",
-    "sha": "77e2ba300af45a953947160af63283a64512e876",
-    "tree_sha": "4f0ac26c5548ae44c68933306c68165cbb6c973e",
-    "commit_time": "2026-08-26T07:28:56Z",
-    "observed_at": "2026-08-26T07:32:47Z",
-    "status": "BASELINE_OBSERVED_BEFORE_OPERATIONAL_TRUTH_CHANGE",
-    "observation_phase": "POST_MERGE_MAIN_AND_DEPLOYMENT_OBSERVED",
-    "legacy_status_compatibility": "The status value is retained temporarily for mission-critical validator compatibility; observation_phase carries the accurate lifecycle state.",
+    "sha": "a3e628708b9ce8a9a4509acf4e64aa20e7fa76d9",
+    "tree_sha": "9045eac8697d099b8ed3c1c464a941a2a830fdd6",
+    "commit_time": "2026-08-30T10:20:16Z",
+    "observed_at": "2026-08-30T12:00:29Z",
+    "status": "CURRENT_MAIN_OBSERVED_DURING_30AUG_UNITARY_AUDIT",
+    "observation_phase": "POST_MERGE_MAIN_AND_PAGES_BUILD_OBSERVED",
+    "legacy_status_compatibility": "This 30-Aug-2026 observation replaces the stale 26-Aug operational baseline. A later merge may place main one or more commits ahead; runtime resolution remains controlling.",
     "relationship_rule": "The observed SHA must remain an ancestor of the checked-out commit. A live runtime report supersedes this last observation."
   },
   "deployment_observation": {
     "status_file": "ops/PRODUCTION_STATUS.json",
-    "last_observed_served_sha": "77e2ba300af45a953947160af63283a64512e876",
-    "last_observed_pages_run_id": 32942972472,
-    "last_observed_at": "2026-08-26T07:32:47Z",
-    "verification_level": "LIVE_VERIFIED_FOR_SERVED_SHA",
-    "last_exact_route_verification_run_id": 32942975508,
-    "last_exact_route_verification_run_number": 4,
-    "last_exact_route_verification_job_id": 98097657687,
-    "last_exact_route_verified_at": "2026-08-26T07:29:55Z"
+    "last_observed_served_sha": "a3e628708b9ce8a9a4509acf4e64aa20e7fa76d9",
+    "last_observed_pages_run_id": 33306234549,
+    "last_observed_at": "2026-08-30T12:00:29Z",
+    "verification_level": "PAGES_BUILD_SUCCESS_WITH_TARGETED_PUBLIC_ROUTE_READBACK",
+    "last_exact_route_content_verification": "NOT_REPERFORMED_IN_THIS_OPERATIONAL_REFRESH",
+    "note": "GitHub Pages recorded success for the exact observed main SHA. Targeted public pages were read during the audit, but no new exact-byte full-route verification is claimed by this refresh."
   },
   "repository_inventory_observation": {
-    "open_pull_requests": 36,
-    "observed_at": "2026-08-26T05:50:53Z",
+    "open_pull_requests": 34,
+    "observed_at": "2026-08-30T12:00:29Z",
     "source": "GitHub search API: repo:sbu001monterecco/por-derecho is:pr is:open",
     "meaning": "Observation only; always re-query before triage or merge decisions."
   },
@@ -98,6 +96,11 @@
     "repository_preservation_contract": "ops/REPOSITORY_PRESERVATION_CONTRACT.json"
   },
   "current_priority_sources": [
+    "CONCURSO36_UNITARY_CRIMINAL_FIRST_GOVERNANCE.md",
+    "CONCURSO36_CONTROLLING_CONCLUSIONS_29AUG2026.md",
+    "CHATGPT_START_HERE_CONCURSO36_COURT_RECORD.md",
+    "archive/FTI_MEETING_POINT_CLUB_SEI_STOCK_ENTITLEMENT_CONTINUITY_30AUG2026.md",
+    "docs/deletion-audits/2026-08-30-unitary-criminal-first-repository-website-open-pr-continuity.md",
     "PRIORITY_ACTIONS_START_HERE.md",
     "ops/CURRENT_UNITARY_STATE.json",
     "archive/prompts/CARET_SHORTHAND_AND_CAEPR_DISAMBIGUATION_PROMPT_27AUG2026.md",
