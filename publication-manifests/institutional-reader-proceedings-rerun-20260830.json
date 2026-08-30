@@ -2,12 +2,13 @@
   "publication_id": "PD-SP-INSTITUTIONAL-PROCEEDINGS-RERUN-20260830-01",
   "owner": "Por Derecho / Project Sun Rock",
   "control_date": "2026-08-30",
-  "current_state": "PR_OPEN",
-  "state": "PR_OPEN",
+  "current_state": "DEPLOYED",
+  "state": "DEPLOYED",
   "purpose": "Rerun the unitary reverse-engineered proceedings audit, correct the Valencia canonical identity to existing row VAL-CIV-001, and propagate exact reader-facing corrections through the bilingual proceedings map and public master-register pages.",
   "base_sha": "b20853ceb1aa87ff1d05456606ee2e7673a2d2bb",
   "head_branch": "unitary-rerun-thread-audit-20260830",
   "pull_request": 1225,
+  "merge_sha": "dc6c48825aabf8fde1fbba333c4332918d85cd98",
   "expected_routes": {
     "en": [
       "en/proceedings-map/index.html",
@@ -23,14 +24,42 @@
     "proceeding": "ORD 1859/2023-9",
     "nig": "46250-42-1-2023-0049579",
     "hearing": "2027-01-28T10:00:00+01:00",
-    "correction_type": "existing-row field consolidation; no duplicate Master ID"
+    "correction_type": "existing-row field consolidation; no duplicate Master ID",
+    "remaining_technical_gap": "physical consolidation of stale raw VAL-CIV-001 CSV fields; correction overlay remains controlling until that rewrite"
+  },
+  "validation": {
+    "pr_head": "8d05009efee76b20431d90d99a16fd3c5525aab9",
+    "evidence": [
+      "PR #1225 final head 8d05009efee76b20431d90d99a16fd3c5525aab9: all required checks completed successfully",
+      "Audit proceedings interconnectivity map run 33325373630: success",
+      "Audit master proceedings publication run 33325373628: success",
+      "Publication integrity gate run 33325373671: success",
+      "Validate Valencia hearing chronology run 33325373620: success",
+      "Audit private-source, statement and OSINT governance run 33325373625: success",
+      "Validate audience experience run 33325373602: success",
+      "Validate Calificacion criminal-misuse thesis run 33325373603: success",
+      "Off-GitHub Preservation Snapshot run 33325373666: success"
+    ]
+  },
+  "deployment_evidence": {
+    "pages_run": 33325482872,
+    "pages_run_number": 1293,
+    "pages_build_version": "dc6c48825aabf8fde1fbba333c4332918d85cd98",
+    "pages_artifact_id": 9736098264,
+    "pages_artifact_digest": "sha256:d71a55ef5c3ff55a9e8b6770d95ff89d302294fe0efc8cd1deeab64a5be13030",
+    "deployment_result": "success",
+    "deployed_artifact_route_presence_verified": true,
+    "deployed_artifact_content_verified": true,
+    "verification_note": "The exact GitHub Pages artifact for merge dc6c48825aabf8fde1fbba333c4332918d85cd98 was unpacked and inspected. All four expected EN/ES routes contain the VAL-CIV-001 / ORD 1859/2023-9 correction; both proceedings maps also contain the exact 2523 / 3304+3319 / 421 appellate references and institutional-completeness safeguards. Direct live-HTTP readback of those four target routes could not be established in this environment because the browsing/network layer blocked direct route fetches; no contradictory live content was returned."
   },
   "verification": {
     "pr_created": true,
-    "ci_green": false,
-    "merged": false,
-    "main_readback": false,
-    "pages_deployed": false,
+    "ci_green": true,
+    "merged": true,
+    "main_readback": true,
+    "pages_deployed": true,
+    "deployed_artifact_routes_verified": true,
     "public_readback": false
-  }
+  },
+  "publication_boundary": "DEPLOYED is proven. LIVE_VERIFIED is intentionally not claimed for the four target routes because independent direct live-HTTP readback was unavailable in this environment."
 }
