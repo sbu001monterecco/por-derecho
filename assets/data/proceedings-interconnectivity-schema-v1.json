@@ -1,0 +1,87 @@
+{
+  "schema_version": "1.1.0",
+  "control_date": "2026-08-30",
+  "status": "ACTIVE_DERIVED_GRAPH_CONTROL",
+  "canonical_node_source": "archive/PROCEEDINGS_MASTER_REGISTER.csv",
+  "governance": ".github/governance/UNITARY_PROCEEDINGS_INTERCONNECTIVITY_MAP_PROTOCOL_30AUG2026.md",
+  "public_routes": {
+    "en": "/en/proceedings-map/",
+    "es": "/es/mapa-procedimientos/"
+  },
+  "principles": {
+    "single_master": true,
+    "distinct_proceedings_remain_distinct": true,
+    "direct_and_contextual_connections_must_be_distinguished": true,
+    "reverse_navigation_from_explicit_forward_edges_is_permitted": true,
+    "common_context_does_not_prove_joinder_or_liability": true,
+    "shared_asset_control_credit_harm_continuum_must_be_tested": true,
+    "fragmentation_atomisation_is_an_audit_question_not_a_presumed_fact": true,
+    "public_projection_excludes_explicit_internal_private_rows": true
+  },
+  "node_fields": [
+    "Master_ID",
+    "Legacy_ID",
+    "Record_Type",
+    "Is_Proceeding",
+    "Proceeding_Class",
+    "Stream",
+    "Geography",
+    "Origin_Organ",
+    "Current_Custodian",
+    "Reference",
+    "Secondary_Reference",
+    "NIG",
+    "Date_or_Period",
+    "Connection",
+    "Object_or_Purpose",
+    "Status",
+    "Latest_Known_Event",
+    "Appeal_or_Review",
+    "Parent_Master_ID",
+    "Linked_Proceedings",
+    "Source_Status",
+    "Open_Reference_Gap",
+    "Public_Treatment"
+  ],
+  "direct_edge_types": {
+    "PARENT_CHILD": "Explicit Parent_Master_ID relationship; reverse child discovery may be derived.",
+    "LINKED_PROCEEDING": "Explicit canonical Master ID found in Linked_Proceedings.",
+    "APPEAL_REVIEW_ID_LINK": "Canonical Master ID explicitly present in Appeal_or_Review.",
+    "SPECIALIST_SOURCE_EDGE": "Future source-controlled relationship admitted through a specialist register and keyed to canonical Master IDs."
+  },
+  "context_lenses": {
+    "STREAM": "Same recorded procedural track; navigation context only.",
+    "CONNECTION": "Same exact non-empty recorded Connection value; context only unless separately supported as a procedural edge.",
+    "GEOGRAPHY": "Same recorded geography; navigation context only.",
+    "CHRONOLOGY": "Temporal proximity/order derived from Date_or_Period; not causation.",
+    "EVIDENCE_EVENT_ASSET_ACTOR": "Only when independently source-controlled in the relevant evidence/event/asset/identity register.",
+    "SHARED_ASSET_CONTROL_CREDIT_HARM_CONTINUUM": "Use where independent sources show that legally separate proceedings concern the same hotel/asset, control, exploitation, secured credit, estate value, productive unit, enforcement, income, title or alleged harm continuum. This is a material relevance lens, not joinder or liability.",
+    "FRAGMENTATION_ATOMISATION_AUDIT": "Use to test whether compartmentalised treatment prevented a material cross-proceeding fact, filing, asset effect, criminal-harm allegation or evidential contradiction from being acknowledged elsewhere. It is an investigative/audit proposition requiring source- and actor-specific proof, not a presumed institutional motive."
+  },
+  "required_views": [
+    "TRACK_MAP",
+    "CHRONOLOGY_JOURNEY",
+    "TRACE_ONE_PROCEEDING",
+    "REVERSE_TRACE",
+    "WHY_CONNECTED",
+    "CONVERGENCE_CLUSTER",
+    "FRAGMENTATION_AUDIT"
+  ],
+  "edge_statuses": [
+    "DOCUMENTED_OR_EXPLICIT_REGISTER_RELATION",
+    "REVERSE_DERIVED_FROM_EXPLICIT_RELATION",
+    "CONTEXT_ONLY",
+    "SOURCE_REPORTED_PENDING_PRIMARY_COMPLETION",
+    "ATTRIBUTED",
+    "HYPOTHESIS_OR_OPEN"
+  ],
+  "completion_metrics": [
+    "NODE_COVERAGE",
+    "DIRECT_EDGE_COVERAGE",
+    "CONTEXT_COVERAGE",
+    "CONVERGENCE_COVERAGE",
+    "FRAGMENTATION_AUDIT_COVERAGE",
+    "ORPHAN_GAP_COUNT",
+    "LIVE_COVERAGE"
+  ]
+}
