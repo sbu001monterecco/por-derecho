@@ -2,7 +2,7 @@
 
 **Date:** 30 August 2026
 **Branch:** `codex/3205-2014-primary-evidence-replacement`
-**Superseding base:** `0307015ef99ae0560a6a3f12c99afb966bc82e7a`
+**Superseding base:** `710e4bc0c85a05a693f29dc2ed64ce6f1f5e64b8`
 **Publication state:** authorised for the normal publication chain; live verification pending
 
 ## Scope
