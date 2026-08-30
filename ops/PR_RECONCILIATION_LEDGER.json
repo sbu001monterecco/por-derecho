@@ -1,9 +1,9 @@
 {
   "schema": "por-derecho.pr-reconciliation-ledger.v1",
-  "control_id": "PD-PR-RECONCILIATION-20260825-01",
-  "observed_at": "2026-08-25T23:56:35Z",
-  "open_pull_request_count": 36,
-  "coverage_state": "KEY_WORKSTREAMS_CLASSIFIED_FULL_BACKFILL_OPEN",
+  "control_id": "PD-PR-RECONCILIATION-20260830-01",
+  "observed_at": "2026-08-30T12:00:29Z",
+  "open_pull_request_count": 34,
+  "coverage_state": "CURRENT_P0_CLASSIFIED_FULL_BACKFILL_OPEN",
   "governing_rule": "Do not merge stale or overlapping PRs wholesale. Rebuild or extract unique validated deltas on current main, preserve current controls, rerun current validation and close or supersede explicitly.",
   "states": [
     "REBUILD_ON_CURRENT_MAIN",
@@ -17,9 +17,73 @@
   ],
   "priority_entries": [
     {
+      "pr": 1212,
+      "title": "Concurso 36/2012: liquidation-plan, judge/LAJ and Luis López filing audit",
+      "state": "REBUILD_ON_CURRENT_MAIN",
+      "priority": "P0",
+      "reason": "Contains the highest-value presently unmerged substantive delta: a source-controlled May-2021 liquidation-plan compliance/access-to-review controversy, separate judge/LAJ matrix, Luis Miguel López filing/remedy inventory and bilingual public surfaces. Its dedicated validator passed on the stale head, but inherited publication-integrity, primary-autos, adjudication/bidder and live-readback checks failed. Do not merge the old branch wholesale or bypass those gates.",
+      "unique_delta": [
+        "Plan term -> judge act -> LAJ act -> objection -> response -> review -> finality -> implementation -> patrimonial effect matrix",
+        "Actor-specific criminal/prosecutorial allegation and intent-evidence boundary",
+        "Located/positively identifiable Luis Miguel López filing and remedy inventory with LexNET/hash anchors",
+        "Correction against presenting former counsel as simply passive",
+        "Bilingual judge/LAJ plan-compliance and Luis López filing pages"
+      ]
+    },
+    {
+      "pr": 576,
+      "title": "Correct PP1041 withdrawal attribution and publish authority dossier",
+      "state": "REBUILD_ON_CURRENT_MAIN",
+      "priority": "P0",
+      "reason": "Material authority/authenticity/benefit investigation. Reconcile the withdrawal filed in LPB's name with signer/filer, LexNET chain, Article 51.2 authority, client/AC instruction, court treatment, information lost and alleged beneficiary before any finality-based conclusion. Preserve criminal allegations as allegations requiring actor-specific proof."
+    },
+    {
+      "pr": 804,
+      "title": "Publish redacted 21 April 2016 Sun Park email evidence",
+      "state": "HOLD_PENDING_EVIDENCE",
+      "priority": "P1",
+      "reason": "Native-message and attachment-binding/hash gaps remain. Rebuild the useful redacted derivative only after current-main source, privacy and provenance reconciliation; do not merge stale site-loader changes."
+    },
+    {
+      "pr": 701,
+      "title": "Archive full texts for Controls 21, 22 and 24",
+      "state": "HOLD_PENDING_EVIDENCE",
+      "priority": "P1",
+      "reason": "High-sensitivity public source publication. Reconcile exact filed versions, page ranges, receipts, privacy/public-interest basis and redactions before any current-main transplant."
+    },
+    {
+      "pr": 685,
+      "title": "Add Montelanza 2008 governance-origin reconstruction",
+      "state": "REBUILD_ON_CURRENT_MAIN",
+      "priority": "P1",
+      "reason": "The 2008 operating/sale baseline remains a strategically important authority, title, exploitation and governance-origin source. Rebuild only the source-graded unique package against current main."
+    },
+    {
+      "pr": 771,
+      "title": "Add 262-finca journey explorer",
+      "state": "REBUILD_ON_CURRENT_MAIN",
+      "priority": "P1",
+      "reason": "Strategically important for property-by-property title/control/harm/public-funding reconciliation, but the branch is stale and must be rebuilt against current identity, ACTA and recovery denominators."
+    },
+    {
+      "pr": 196,
+      "title": "Ingest Matkator DP 552→DP 711, ETJ 163 and estate-preservation source set",
+      "state": "EXTRACT_UNIQUE_DELTA",
+      "priority": "P1",
+      "reason": "Preserve Matkator's extraconcursal source and proceeding deltas while avoiding duplicate propagation already present in later controls. Reconcile jointly with PR #211."
+    },
+    {
+      "pr": 211,
+      "title": "Propagate Matkator DP 552→711 into global knowledge registers",
+      "state": "EXTRACT_UNIQUE_DELTA",
+      "priority": "P1",
+      "reason": "Treat as the propagation companion to PR #196. Build one current-main Matkator package and close the duplicate lineage after readback."
+    },
+    {
       "pr": 1016,
       "title": "Map the non-LPB/Matkator owner and court-party perimeter",
       "state": "REBUILD_ON_CURRENT_MAIN",
+      "priority": "P2",
       "reason": "Contains valuable AP 89/2014, Montelanza/Molina, Celia Guillén, Manuel Molina Climent and Acosta Matos family/business deltas, but its base predates current main and identity allocations must not collide.",
       "unique_delta": [
         "Seven JV 1260/2011 claimant-owners and eighteen-bungalow AP 89/2014 core",
@@ -34,61 +98,43 @@
       "pr": 1036,
       "title": "Rebuild operational truth into current, deployment and rollback layers",
       "state": "EXTRACT_UNIQUE_DELTA",
-      "reason": "The verified unitary specialist state from PRs #1031 and #1038 now controls. Preserve only unique operational-truth generator, release-ledger, history-directory and compatibility-validator improvements after comparison with current main; do not overwrite the LIVE_VERIFIED unitary state or duplicate the structured verifier fix."
+      "priority": "P2",
+      "reason": "The verified unitary specialist state now controls. Preserve only unique generator, release-ledger, history-directory and compatibility-validator improvements after comparison with current main."
     },
     {
       "pr": 1033,
       "title": "Finalize SAFE_TO_DELETE certification for prescription recovery thread",
       "state": "READY_AFTER_REBASE",
-      "reason": "Closeout-only delta after PR #1032; compare against current main and preserve only the final certification if still unique."
+      "priority": "P2",
+      "reason": "Closeout-only delta after PR #1032; preserve only the final certification if still unique, preferably through the narrow current-main transplant already represented by PR #1047."
+    },
+    {
+      "pr": 1047,
+      "title": "Transplant final prescription-recovery deletion certification onto current main",
+      "state": "READY_AFTER_REBASE",
+      "priority": "P2",
+      "reason": "Continuity-only transplant. Reconcile against current main; if still unique, merge the narrow certification and close/supersede #1033."
     },
     {
       "pr": 937,
       "title": "Verify Laborý/CATRUDE live routes and extend scheduled audit",
       "state": "VERIFICATION_ONLY",
+      "priority": "P2",
       "reason": "Read-only specialist live verification; merge only if still unique and compatible with current verification architecture."
-    },
-    {
-      "pr": 804,
-      "title": "Publish redacted 21 April 2016 Sun Park email evidence",
-      "state": "HOLD_PENDING_EVIDENCE",
-      "reason": "Native-message and attachment-binding gaps remain; preserve useful redacted derivative and limits without merging stale site-loader changes."
-    },
-    {
-      "pr": 771,
-      "title": "Add 262-finca journey explorer",
-      "state": "EXTRACT_UNIQUE_DELTA",
-      "reason": "The finca framework is strategically important, but the branch is stale and must be rebuilt against the canonical identity and recovery denominators."
     },
     {
       "pr": 769,
       "title": "Orion Rental 2024 disclosure and CNMV audit",
       "state": "EXTRACT_UNIQUE_DELTA",
-      "reason": "Preserve the disclosure analysis and source limits; reimplement only deltas not already absorbed by later Orion/RICPE controls."
+      "priority": "P2",
+      "reason": "Preserve only disclosure analysis and source limits not already absorbed by later Orion/RICPE controls."
     },
     {
       "pr": 749,
       "title": "Publish Concurso 36/2012 primary-auto redigest",
       "state": "EXTRACT_UNIQUE_DELTA",
-      "reason": "Primary-order denominator and judicial-spine work remain valuable; do not merge a stale whole-site package."
-    },
-    {
-      "pr": 685,
-      "title": "Add Montelanza 2008 governance-origin reconstruction",
-      "state": "EXTRACT_UNIQUE_DELTA",
-      "reason": "The 2008 operating/sale baseline is central to the owner-network and recovery denominator; rebuild the source package on current main."
-    },
-    {
-      "pr": 576,
-      "title": "Correct PP1041 withdrawal attribution and publish authority dossier",
-      "state": "EXTRACT_UNIQUE_DELTA",
-      "reason": "The authority/authenticity/benefit correction is material and should be reconciled with current DP 1041 and AC controls rather than merged wholesale."
-    },
-    {
-      "pr": 196,
-      "title": "Ingest Matkator DP 552→DP 711, ETJ 163 and estate-preservation source set",
-      "state": "EXTRACT_UNIQUE_DELTA",
-      "reason": "Preserve Matkator's extraconcursal source and proceeding deltas while avoiding duplicate propagation already present in later controls."
+      "priority": "P2",
+      "reason": "Much of the primary-order denominator/judicial-spine work has since been published. Compare source objects one by one and transplant only genuinely unique material; do not merge the stale whole-site package."
     }
   ],
   "integrated_recent_work": [
@@ -121,12 +167,20 @@
       "merge_sha": "4088f7ffff80df788137ce91328b11fe3de6b563",
       "status": "MERGED_VERIFICATION_FIX",
       "note": "Structured state-JSON verification replaced the whitespace-sensitive false-negative assertion; main run 32912919872 passed."
+    },
+    {
+      "pr": 1218,
+      "merge_sha": "a3e628708b9ce8a9a4509acf4e64aa20e7fa76d9",
+      "status": "MERGED_AND_PAGES_BUILD_SUCCESS",
+      "note": "FTI/Meeting Point Club SEI stock-use continuity is on main. The controlling rule is entitlement before scale; balance-sheet, security, inventory, revenue or solvency effects still require underlying records and actor-specific proof."
     }
   ],
   "backfill_actions": [
-    "Enumerate every remaining open PR and assign one controlled state.",
+    "Enumerate every remaining open PR and assign one controlled state before any bulk cleanup claim.",
     "Record base SHA, head SHA, mergeability, draft status, unique files, overlapping current-main paths and superseding release.",
     "Close or supersede branches with no unique validated delta.",
-    "Do not use open-PR count as a measure of completed or live work."
+    "Do not use open-PR count as a measure of completed or live work.",
+    "Do not merge PR #1212 wholesale: rebuild its unique delta on a fresh current-main branch and require current integrity gates to pass.",
+    "Keep PP1041 authority/authenticity/benefit as the next P0 substantive track after the #1212 rebuild."
   ]
 }
