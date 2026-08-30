@@ -52,3 +52,4 @@ Sitemap: https://sbu001monterecco.github.io/por-derecho/sitemap-open-evidence-di
 Sitemap: https://sbu001monterecco.github.io/por-derecho/sitemap-pink-aeat.xml
 Sitemap: https://sbu001monterecco.github.io/por-derecho/sitemap-acosta-matos-family.xml
 Sitemap: https://sbu001monterecco.github.io/por-derecho/sitemap-concurso36-controlling-conclusions.xml
+Sitemap: https://sbu001monterecco.github.io/por-derecho/sitemap-canary-ric-public-debt.xml

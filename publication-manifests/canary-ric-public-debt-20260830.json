@@ -1,0 +1,54 @@
+{
+  "publication_id": "PD-CANARY-RIC-PUBLIC-DEBT-20260830-01",
+  "owner": "Por Derecho / Project Sun Rock",
+  "control_date": "2026-08-30",
+  "current_state": "PREPARED_PENDING_MERGE",
+  "state": "PREPARED_PENDING_MERGE_AND_LIVE_READBACK",
+  "source_base_sha": "27fd8dc0cc8b7690c5485171dc76ac9dbf71ffee",
+  "purpose": "Publish one bilingual, non-fragmented explanation of Canary RIC-eligible public debt, its relationship to RICPE and the exact proved, open and excluded Acosta Matos connections.",
+  "reader_facing_material_update": false,
+  "material_update_reason": "This release integrates official public issue facts and a produced Treasury source package into the existing RIC/RICPE architecture without changing a legal allegation, proceeding status or attributed liability conclusion.",
+  "source_corpus": {
+    "files": 8,
+    "pages": 734,
+    "binary_publication": "EXCLUDED_PRIVATE_SOURCE_BINARIES",
+    "structured_control": "assets/data/canary-ric-public-debt-v1.json"
+  },
+  "expected_routes": {
+    "es": ["es/deuda-publica-ric-canarias/index.html"],
+    "en": ["en/canary-ric-public-debt/index.html"]
+  },
+  "supporting_files": [
+    "archive/CANARY_PUBLIC_DEBT_RIC_UNITARY_CONTROL_30AUG2026.md",
+    "CURRENT_REVERSE_ENGINEERED_DIGEST.md",
+    "archive/MISSING_EVIDENCE_REGISTER.md",
+    "archive/CORRECTION_REGISTER.md",
+    "archive/CONTINUOUS_MAINTENANCE_MATRIX.md",
+    "docs/deletion-audits/2026-08-30-canary-ric-public-debt.md",
+    "scripts/validate_canary_ric_public_debt.py",
+    "sitemap-canary-ric-public-debt.xml"
+  ],
+  "reciprocal_route_families": [
+    "home",
+    "Acosta Matos perimeter",
+    "RICPE / Sun Park",
+    "RICPE Series F/G idoneidad",
+    "RICPE to HNT to GC/836/P06",
+    "same hotel / multiple financial lives",
+    "regional incentives"
+  ],
+  "controlling_conclusion": "Not zero connection and not the same money: public debt and RICPE are parallel RIC materialisation routes; the direct Acosta destination link is RICPE to HNT; no public-bond allocation to HNT is established.",
+  "non_inference_rules": [
+    "Same RIC policy ecosystem does not mean the same issuer, beneficiary, project or money.",
+    "The 2024 and 2025 public issues cannot be the original source of the 2022 and 2023 HNT loans.",
+    "Dissociated subscriber data neither proves nor excludes an Acosta Matos subscriber.",
+    "Shared financial providers or infrastructure do not establish a shared transaction or responsibility.",
+    "No double funding, preferential treatment, diversion or criminality is established."
+  ],
+  "validation": {
+    "local": "PASS",
+    "pull_request_checks": "PENDING",
+    "pages": "PENDING",
+    "live_readback": "PENDING"
+  }
+}

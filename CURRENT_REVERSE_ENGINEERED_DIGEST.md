@@ -109,7 +109,21 @@ The CAM→HNT segregation, RICPE/investment perimeter and MYND operation create 
 
 **Bridge to prove:** segregation project/deed/schedules → exact assets, rights, liabilities and litigation transferred → operator mandate → financing/public-support representations → income and current benefit.
 
-### 3.8 Current proceedings and recovery
+### 3.8 2024–2025 public RIC debt — parallel policy route, no proved HNT money flow
+
+The 734-page Treasury production adds a public comparator to the private RICPE/HNT lane. The Canary Government allocated EUR 250 million of RIC-eligible bonds in 2024 and 2025 against EUR 1.139779 billion of demand. The Government raises this money to finance qualifying public investment while offering taxpayers a public security capable of materialising RIC; it does not raise the proceeds to finance RICPE.
+
+This produces one unitary but non-merging architecture:
+
+- public RIC debt: subscriber → Autonomous Community bond → qualifying public investment;
+- private RICPE: investor/RIC allocation → Series F/G → HNT / MYND Yaiza; and
+- regional support: GC/836/P06 → published award → HNT project.
+
+The connection to Acosta Matos is therefore not zero: the routes share the statutory RIC policy system, and the direct destination-side link is the documented RICPE→HNT financing. But the money is not shown to be the same. No public-bond-to-HNT allocation is located, and the 2024/2025 issues post-date the December-2022 and June-2023 HNT loans, excluding them as the original source of those loans. Subscriber and beneficial-owner matching remains open because the produced records are dissociated. Shared financial infrastructure or providers do not establish a shared transaction.
+
+**Bridge to prove or exclude:** public-issue subscriber/allocation register → lawful NIF/beneficial-owner match → RIC origin/capacity → later funds flow, if any. A subscriber coincidence would open that inquiry; it would not itself prove overlap, preference or wrongdoing.
+
+### 3.9 Current proceedings and recovery
 
 The current recovery architecture is multi-claimant and multi-route:
 

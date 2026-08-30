@@ -84,7 +84,7 @@ PROCEEDING_ID = "PD-SP-R-0020"
 INSTITUTION_ID = "PD-SP-I-0023"
 MASTER_ID = "LZ-JUD-042"
 REFERENCE = "3205/2014"
-BASE_REVISION = "27fd8dc0cc8b7690c5485171dc76ac9dbf71ffee"
+BASE_REVISION = "cc4945ec7da9f52f9035bb17b21f366d39f65201"
 COURT_SOURCE_ID = "PD-SP-SRC-DP3205-2014-COURT-SUMMONS-20140919"
 COMPLAINT_SOURCE_ID = "PD-SP-SRC-DP3205-2014-POLICE-COMPLAINT-20140903"
 SUMMARY_SOURCE_ID = "PD-SP-SRC-DP3205-2014-SUMMARY-20181120"
@@ -1056,7 +1056,7 @@ for sitemap in SITEMAPS:
 
 # Missing-evidence and counsel/procurador gaps remain explicit and finite.
 missing = read_text(MISSING)
-includes(missing, "| ME-108 |", relative(MISSING))
+includes(missing, "| ME-111 |", relative(MISSING))
 includes(missing, "Complete primary court, authority, participant, representation and outcome file for 3205/2014", relative(MISSING))
 includes(missing, MISSING_APPEND.name, relative(MISSING))
 
