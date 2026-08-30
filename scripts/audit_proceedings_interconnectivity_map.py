@@ -9,6 +9,7 @@ required = [
     ROOT / "archive/PROCEEDINGS_ANTI_FRAGMENTATION_CONVERGENCE_RULE_30AUG2026.md",
     ROOT / "archive/INSTITUTIONAL_READER_UNITARY_PROCEEDINGS_RULE_30AUG2026.md",
     ROOT / "archive/CAIXABANK_VALENCIA_01859_2023_REGISTRATION_GAP_30AUG2026.md",
+    ROOT / "archive/PROCEEDINGS_MASTER_REGISTER_VALENCIA_1859_2023_OVERLAY_30AUG2026.md",
     ROOT / "assets/data/proceedings-interconnectivity-schema-v1.json",
     ROOT / "assets/proceedings-interconnectivity-map-20260830.js",
     ROOT / "assets/proceedings-interconnectivity-map-20260830.css",
@@ -29,14 +30,19 @@ if not errors:
     es = (ROOT / "es/mapa-procedimientos/index.html").read_text(encoding="utf-8")
     en_master = (ROOT / "en/master-proceedings-register/index.html").read_text(encoding="utf-8")
     es_master = (ROOT / "es/registro-maestro-procedimientos/index.html").read_text(encoding="utf-8")
+    csv_text = (ROOT / "archive/PROCEEDINGS_MASTER_REGISTER.csv").read_text(encoding="utf-8")
     js = (ROOT / "assets/proceedings-interconnectivity-map-20260830.js").read_text(encoding="utf-8")
     gov = (ROOT / ".github/governance/UNITARY_PROCEEDINGS_INTERCONNECTIVITY_MAP_PROTOCOL_30AUG2026.md").read_text(encoding="utf-8")
     anti = (ROOT / "archive/PROCEEDINGS_ANTI_FRAGMENTATION_CONVERGENCE_RULE_30AUG2026.md").read_text(encoding="utf-8")
     institutional = (ROOT / "archive/INSTITUTIONAL_READER_UNITARY_PROCEEDINGS_RULE_30AUG2026.md").read_text(encoding="utf-8")
     valencia_gap = (ROOT / "archive/CAIXABANK_VALENCIA_01859_2023_REGISTRATION_GAP_30AUG2026.md").read_text(encoding="utf-8")
+    valencia_overlay = (ROOT / "archive/PROCEEDINGS_MASTER_REGISTER_VALENCIA_1859_2023_OVERLAY_30AUG2026.md").read_text(encoding="utf-8")
     schema = json.loads((ROOT / "assets/data/proceedings-interconnectivity-schema-v1.json").read_text(encoding="utf-8"))
 
     appellate_refs = ["RPL 2523/2025", "RPL 3304/2025", "RPL 3319/2025", "RPL 421/2026"]
+    valencia_exact = ["VAL-CIV-001", "ORD 1859/2023-9", "46250-42-1-2023-0049579", "28 January 2027", "10:00"]
+    valencia_exact_es = ["VAL-CIV-001", "ORD 1859/2023-9", "46250-42-1-2023-0049579", "28 de enero de 2027", "10:00"]
+
     checks = {
         "en language alternate": "../../es/mapa-procedimientos/" in en,
         "es language alternate": "../../en/proceedings-map/" in es,
@@ -63,8 +69,10 @@ if not errors:
         "institutional formal-procedure boundary": "not a substitute for a filing" in institutional,
         "institutional three-object correction": all(ref in institutional for ref in appellate_refs),
         "institutional fees correction": "Do not describe `RPL 3319/2025` as the fees appeal" in institutional,
-        "valencia exact gap identity": "01859/2023" in valencia_gap and "Juzgado de Primera Instancia nº 27 de Valencia" in valencia_gap,
-        "valencia non-conflation": "do not assign `01859/2023` to `ES-VAL-CIV-048`" in valencia_gap,
+        "canonical Valencia row exists": "VAL-CIV-001" in csv_text and "JPI nº 27 Valencia" in csv_text and "Procedimiento 1859/2023" in csv_text,
+        "Valencia correction binds existing row": "canonical identity is `VAL-CIV-001`" in valencia_gap,
+        "Valencia no duplicate ID": "do not create a second master row" in valencia_gap.lower() and "Do **not** create a second Valencia row" in valencia_overlay,
+        "Valencia overlay corrects existing row": "correction overlay" in valencia_overlay.lower() and "VAL-CIV-001" in valencia_overlay,
         "en appellate refs": all(ref in en for ref in appellate_refs),
         "es appellate refs": all(ref in es for ref in appellate_refs),
         "en institutional test": "Institutional completeness test" in en and "No conclusion is requested here" in en,
@@ -73,6 +81,10 @@ if not errors:
         "es formal route warning": "no es un escrito procesal" in es,
         "en not-located discipline": "NOT LOCATED is not DID NOT EXIST" in en,
         "es not-located discipline": "NO LOCALIZADO no equivale a NO EXISTIÓ" in es,
+        "en exact Valencia public correction": all(token in en for token in valencia_exact),
+        "es exact Valencia public correction": all(token in es for token in valencia_exact_es),
+        "en master Valencia correction notice": "valencia-val-civ-001-correction" in en_master and "ORD 1859/2023-9" in en_master,
+        "es master Valencia correction notice": "correccion-valencia-val-civ-001" in es_master and "ORD 1859/2023-9" in es_master,
         "schema canonical source": schema.get("canonical_node_source") == "archive/PROCEEDINGS_MASTER_REGISTER.csv",
         "schema reverse navigation": schema.get("principles", {}).get("reverse_navigation_from_explicit_forward_edges_is_permitted") is True,
         "schema shared continuum": schema.get("principles", {}).get("shared_asset_control_credit_harm_continuum_must_be_tested") is True,
@@ -97,4 +109,5 @@ print("- reverse trace, chronology and public-treatment safeguards present")
 print("- shared asset/control/credit/harm convergence and fragmentation audit are hardwired")
 print("- institutional-reader completeness test present in both languages")
 print("- Audiencia appellate objects locked as 2523 / 3304+3319 / 421")
-print("- CaixaBank Valencia 01859/2023 kept as an explicit non-conflated registration gap")
+print("- Valencia canonical identity locked to existing VAL-CIV-001; duplicate-case creation prohibited")
+print("- exact Valencia court/NIG/hearing correction visible on map and master-register reader pages")
