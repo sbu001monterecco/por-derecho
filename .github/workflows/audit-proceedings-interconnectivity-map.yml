@@ -5,7 +5,9 @@ on:
     paths:
       - 'archive/PROCEEDINGS_MASTER_REGISTER.csv'
       - '.github/governance/UNITARY_PROCEEDINGS_INTERCONNECTIVITY_MAP_PROTOCOL_30AUG2026.md'
+      - '.github/governance/A_SCAN_360_CASE_PRISM_AND_READER_LENS_PROTOCOL_30AUG2026.md'
       - 'assets/data/proceedings-interconnectivity-schema-v1.json'
+      - 'assets/data/proceedings-case-prism-v1.json'
       - 'assets/proceedings-interconnectivity-map-20260830.js'
       - 'assets/proceedings-interconnectivity-map-20260830.css'
       - 'en/proceedings-map/index.html'
@@ -13,14 +15,18 @@ on:
       - 'en/master-proceedings-register/index.html'
       - 'es/registro-maestro-procedimientos/index.html'
       - 'scripts/audit_proceedings_interconnectivity_map.py'
+      - 'scripts/smoke_proceedings_case_prism.mjs'
       - '.github/workflows/audit-proceedings-interconnectivity-map.yml'
       - 'publication-manifests/proceedings-interconnectivity-map-20260830.json'
+      - 'publication-manifests/ascan-360-case-prism-20260830.json'
   push:
     branches: [main]
     paths:
       - 'archive/PROCEEDINGS_MASTER_REGISTER.csv'
       - '.github/governance/UNITARY_PROCEEDINGS_INTERCONNECTIVITY_MAP_PROTOCOL_30AUG2026.md'
+      - '.github/governance/A_SCAN_360_CASE_PRISM_AND_READER_LENS_PROTOCOL_30AUG2026.md'
       - 'assets/data/proceedings-interconnectivity-schema-v1.json'
+      - 'assets/data/proceedings-case-prism-v1.json'
       - 'assets/proceedings-interconnectivity-map-20260830.js'
       - 'assets/proceedings-interconnectivity-map-20260830.css'
       - 'en/proceedings-map/index.html'
@@ -28,8 +34,10 @@ on:
       - 'en/master-proceedings-register/index.html'
       - 'es/registro-maestro-procedimientos/index.html'
       - 'scripts/audit_proceedings_interconnectivity_map.py'
+      - 'scripts/smoke_proceedings_case_prism.mjs'
       - '.github/workflows/audit-proceedings-interconnectivity-map.yml'
       - 'publication-manifests/proceedings-interconnectivity-map-20260830.json'
+      - 'publication-manifests/ascan-360-case-prism-20260830.json'
 
 permissions:
   contents: read
@@ -37,7 +45,7 @@ permissions:
 jobs:
   proceedings-interconnectivity-map:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 20
     steps:
       - name: Check out repository
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
@@ -45,5 +53,33 @@ jobs:
         uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
         with:
           python-version: '3.12'
+      - name: Set up Node
+        uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020
+        with:
+          node-version: '22'
       - name: Audit proceedings map invariants
         run: python scripts/audit_proceedings_interconnectivity_map.py
+      - name: Validate proceedings renderer JavaScript syntax
+        run: |
+          node --check assets/proceedings-interconnectivity-map-20260830.js
+          node --check scripts/smoke_proceedings_case_prism.mjs
+      - name: Install Playwright Chromium
+        run: |
+          npm install --no-save playwright@1.50.1
+          npx playwright install --with-deps chromium
+      - name: Serve static site at production subpath
+        run: |
+          mkdir -p /tmp/psr-proceedings-site/por-derecho
+          cp -a . /tmp/psr-proceedings-site/por-derecho/
+          cd /tmp/psr-proceedings-site
+          python3 -m http.server 8000 --bind 127.0.0.1 > /tmp/psr-proceedings-http.log 2>&1 &
+          for i in $(seq 1 30); do
+            if curl -fsS http://127.0.0.1:8000/por-derecho/en/proceedings-map/ >/dev/null; then exit 0; fi
+            sleep 1
+          done
+          cat /tmp/psr-proceedings-http.log
+          exit 1
+      - name: Render and interact with Case Prism views
+        env:
+          PSR_BASE_URL: http://127.0.0.1:8000/por-derecho
+        run: node scripts/smoke_proceedings_case_prism.mjs
