@@ -155,7 +155,7 @@
     "operational_identity_registry": "PASS",
     "counsel_procurador_governance": "PASS_WITH_DENOMINATOR_INCOMPLETE",
     "repository_preservation": "PASS",
-    "publication_integrity": "PASS_101_MANIFESTS_66_CHANGED_FILES_INSPECTED_BASE_TO_COMMITTED_HEAD",
+    "publication_integrity": "PASS_101_MANIFESTS_67_CHANGED_FILES_INSPECTED_BASE_TO_COMMITTED_HEAD",
     "ci_integration_repairs": "PASS_INSTITUTIONAL_ROUTE_SNAPSHOTS_REFRESHED_DECISION_CONTINUITY_USES_CURRENT_V2_PRIMARY_DATE_CONTROLS_PUSH_LIVE_VERIFIER_USES_CURRENT_CARET_IDENTITY_DENOMINATORS_AND_PLAYA_READBACK_ASSERTS_CURRENT_TREASURY_LOADER_CHAIN",
     "audience_experience": "PASS",
     "private_source_statement_osint_governance": "PASS",

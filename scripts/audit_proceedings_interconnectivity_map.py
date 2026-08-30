@@ -147,6 +147,7 @@ if not errors:
     public_projection = json.loads(read("assets/data/proceedings-master-public-v1.json"))
     interlinkability = json.loads(read("assets/data/proceedings-interlinkability-v1.json"))
     treasury_control = json.loads(read("assets/data/treasury-transparency-7-2026-v1.json"))
+    treasury_manifest = json.loads(read("publication-manifests/treasury-transparency-7-2026-20260830.json"))
     lifecycle = json.loads(read("publication-manifests/all-proceedings-interlinkability-20260830.json"))
     counsel_gaps = json.loads(read("assets/data/counsel-procurador-gap-register-v1.json"))
     gc_548_manifest = json.loads(read("publication-manifests/gc-548-2023-plaza2-t1-caret-20260830.json"))
@@ -446,6 +447,15 @@ if not errors:
         if cluster.get("context_type") == "SOURCE_CONTROLLED_CORRIDOR"
     }
     require(actual_source_corridors == expected_source_corridors == {"T7-COR-001": {"NAT-TES-001", "LZ-TRA-028"}}, "source-controlled Treasury corridor mismatch")
+    treasury_migration = treasury_manifest.get("projection_migration", {})
+    require(
+        treasury_migration.get("target") == "assets/data/proceedings-interlinkability-v1.json"
+        and treasury_migration.get("dependent_targets") == ["assets/data/proceedings-master-public-v1.json", "assets/data/proceedings-case-prism-v1.json"]
+        and treasury_migration.get("state") == "PR_OPEN"
+        and treasury_migration.get("pull_request") == 1235
+        and "not LIVE_VERIFIED" in treasury_migration.get("qualification", ""),
+        "Treasury PR #1247 live evidence is not separated from the PR #1235 interlinkability migration",
+    )
     for cluster in context_clusters:
         cid = cluster.get("id", "<missing context ID>")
         context_type = cluster.get("context_type")
@@ -818,6 +828,9 @@ if not errors:
     require(schema.get("specialist_context_sources") == ["assets/data/treasury-transparency-7-2026-v1.json"], "schema specialist context source registry mismatch")
     require(required_views <= set(schema.get("required_views", [])), "schema required views missing")
     require(required_views <= set(schema.get("implemented_public_views", {})), "schema runtime mappings missing")
+    implemented_views = schema.get("implemented_public_views", {})
+    require("26 source-controlled material clusters" in implemented_views.get("CONVERGENCE_CLUSTER", "") and "1 source-controlled corridor" in implemented_views.get("CONVERGENCE_CLUSTER", ""), "schema convergence-view denominator or corridor disclosure is stale")
+    require("59 proceedings remain explicit Case Prism content gaps" in implemented_views.get("FRAGMENTATION_AUDIT", ""), "schema fragmentation-view content-gap denominator is stale")
     require(set(schema.get("case_prism_cell_statuses", [])) == statuses, "schema relationship vocabulary mismatch")
     require(schema.get("implementation_contract", {}).get("bilingual_evidence_status_catalog_required") is True, "schema bilingual evidence-status requirement missing")
     require(schema.get("implementation_contract", {}).get("independent_case_prism_generation_seed_required") is True, "schema independent generation-seed requirement missing")
@@ -924,7 +937,7 @@ if not errors:
     require("parseCsv" not in js, "renderer still carries client-side canonical CSV parsing")
     require("fallbackEdges" not in js, "renderer can infer a direct edge for a non-exact/unclassified node")
     require("if (cluster.context_type === 'CASE_PRISM_PROPOSITION')" in js and "linkedPrismPropIds.add(propositionId)" in js, "renderer does not bound a Case Prism cluster to its own proposition")
-    require("else if (cluster.context_type === 'RECORDED_CONNECTION')" in js, "renderer does not keep recorded-Connection reconnection separate")
+    require("['RECORDED_CONNECTION', 'SOURCE_CONTROLLED_CORRIDOR'].includes(cluster.context_type)" in js, "renderer does not reconnect both recorded Connections and source-controlled corridors")
     require("return cell.status === 'DIRECT' && cell.master_ids.some((id) => reconnectIds.has(id));" in js, "renderer lets a one-hop neighbour's contextual coordinate expand the isolation result")
     require("#trace-proceeding=${encodeURIComponent(r.Master_ID)}" in master_js, "Master Register lacks exact-ID trace links")
     require("#record-$1" in master_js and "linkMasterReferences(relation)" in master_js, "Master Register relations are not reciprocal row links")

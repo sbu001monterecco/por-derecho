@@ -58,7 +58,7 @@
     directReconnection: 'Relaciones procesales directas para reconectar', contextReconnection: 'Puentes contextuales controlados para reconectar', unresolvedReconnection: 'Estado no resuelto / cobertura pendiente',
     noDirectSelected: 'No hay relación procesal directa codificada por ID canónico para este procedimiento.', noContextSelected: 'No hay puente contextual controlado con otro nodo público en los campos actuales.',
     directBoundary: 'Solo se muestran relaciones expresamente codificadas como padre/origen, enlace de procedimiento, recurso/revisión o enlace documentado por una fuente especializada controlada.',
-    contextBoundary: 'Estos puentes proceden de valores canónicos coincidentes. Ayudan a localizar contexto; no acreditan identidad de procedimiento, acumulación, conocimiento, causalidad, ilicitud ni responsabilidad. Para evitar expansión transitiva, los miembros de una proposición no se siguen hacia otras proposiciones; un ID relacionado solo abre otra proposición mediante una coordenada DIRECTA.',
+    contextBoundary: 'Estos puentes proceden de valores Connection canónicos coincidentes, corredores expresamente controlados por una fuente o pertenencia a una proposición del Prisma. Ayudan a localizar contexto; no acreditan identidad de procedimiento, acumulación, conocimiento, causalidad, ilicitud ni responsabilidad. Para evitar expansión transitiva, los miembros de una proposición no se siguen hacia otras proposiciones; un ID relacionado solo abre otra proposición mediante una coordenada DIRECTA.',
     prismCoordinate: 'Coordenada del Prisma', noPrismCoordinate: 'Sin coordenada del Prisma', selectedFileStatus: 'Estado respecto del expediente seleccionado',
     relationCount: 'relaciones', bridgeCount: 'puentes', nextSource: 'Siguiente fuente necesaria', classification: 'Clasificación controlada', provenance: 'Procedencia', limitations: 'Límites',
     interlinkUnavailable: 'El registro controlado de interconectividad no está disponible para este procedimiento. No se infiere una clasificación por ausencia.',
@@ -106,7 +106,7 @@
     directReconnection: 'Direct procedural relationships for reconnection', contextReconnection: 'Controlled context bridges for reconnection', unresolvedReconnection: 'Unresolved state / coverage pending',
     noDirectSelected: 'No direct procedural relationship is encoded by canonical ID for this proceeding.', noContextSelected: 'No controlled context bridge to another public node is available in the current fields.',
     directBoundary: 'Only relationships expressly encoded as parent/origin, linked proceeding, appeal/review or documented by a controlled specialist source are shown.',
-    contextBoundary: 'These bridges come from matching canonical values. They help locate context; they do not establish the same proceeding, joinder, knowledge, causation, wrongdoing or liability. To prevent transitive expansion, proposition co-members are not followed into other propositions; a related ID surfaces another proposition only through a DIRECT coordinate.',
+    contextBoundary: 'These bridges come from matching canonical Connection values, corridors expressly controlled by a source, or Case Prism proposition membership. They help locate context; they do not establish the same proceeding, joinder, knowledge, causation, wrongdoing or liability. To prevent transitive expansion, proposition co-members are not followed into other propositions; a related ID surfaces another proposition only through a DIRECT coordinate.',
     prismCoordinate: 'Case Prism coordinate', noPrismCoordinate: 'No Case Prism coordinate', selectedFileStatus: 'Status relative to selected file',
     relationCount: 'relationships', bridgeCount: 'bridges', nextSource: 'Next source needed', classification: 'Controlled classification', provenance: 'Provenance', limitations: 'Limitations',
     interlinkUnavailable: 'The controlled interlinkability register is unavailable for this proceeding. No classification is inferred from absence.',
@@ -398,7 +398,7 @@
         if (cluster.context_type === 'CASE_PRISM_PROPOSITION') {
           const propositionId = norm(cluster.source && cluster.source.record_id);
           if (propositionId) linkedPrismPropIds.add(propositionId);
-        } else if (cluster.context_type === 'RECORDED_CONNECTION') {
+        } else if (['RECORDED_CONNECTION', 'SOURCE_CONTROLLED_CORRIDOR'].includes(cluster.context_type)) {
           (cluster.member_master_ids || []).forEach((id) => reconnectIds.add(id));
         }
       });

@@ -38,6 +38,8 @@ for path in required:
 data = json.loads(DATA.read_text(encoding="utf-8"))
 if data.get("control_id") != CONTROL_ID:
     fail("wrong control ID")
+if data.get("status") != "LIVE_VERIFIED":
+    fail("Treasury transparency control must remain live verified")
 record = data.get("canonical_administrative_record", {})
 if record.get("master_id") != "NAT-TES-001" or record.get("organ") != "Dirección General del Tesoro y Política Financiera":
     fail("canonical administrative identity or organ drift")
@@ -153,5 +155,39 @@ if manifest.get("publication_id") != CONTROL_ID:
     fail("manifest/control ID mismatch")
 if manifest.get("source_corpus", {}).get("binary_publication") != "EXCLUDED_PRIVATE_SOURCE_BINARIES":
     fail("private-source binary exclusion missing")
+if manifest.get("current_state") != "LIVE_VERIFIED":
+    fail("publication manifest must remain live verified")
+publication = manifest.get("content_publication", {})
+if publication.get("pull_request") != 1247 or publication.get("merge_sha") != "5939ed3badad20193a4aba05ca62047d6bc6ff89":
+    fail("content publication PR or merge evidence drift")
+if publication.get("pages_run", {}).get("id") != 33341536674 or publication.get("pages_run", {}).get("status") != "COMPLETED_SUCCESS":
+    fail("exact Pages deployment evidence drift")
+migration = manifest.get("projection_migration", {})
+if (
+    migration.get("target") != "assets/data/proceedings-interlinkability-v1.json"
+    or migration.get("dependent_targets") != [
+        "assets/data/proceedings-master-public-v1.json",
+        "assets/data/proceedings-case-prism-v1.json",
+    ]
+    or migration.get("state") != "PR_OPEN"
+    or migration.get("pull_request") != 1235
+):
+    fail("PR #1235 Treasury interlinkability migration boundary is missing or stale")
+if "not LIVE_VERIFIED" not in migration.get("qualification", ""):
+    fail("PR #1247 live evidence is not kept separate from the PR #1235 projection migration")
+evidence = data.get("publication_evidence", {})
+if evidence.get("merge_sha") != publication.get("merge_sha") or evidence.get("pages", {}).get("run_id") != 33341536674:
+    fail("structured publication evidence is not aligned")
+if evidence.get("live_readback", {}).get("exact_resource_matches") != "13/13" or evidence.get("live_readback", {}).get("human_readable_routes_http_200") != "8/8":
+    fail("live-readback denominator drift")
+if len(evidence.get("live_readback", {}).get("resource_sha256", {})) != 13:
+    fail("live-readback hash ledger must retain 13 public resources")
+for rel, token in [
+    ("archive/DEPLOYMENT_LOG.md", "33341536674 / #1312"),
+    ("docs/deletion-audits/2026-08-30-treasury-transparency-7-2026.md", "LIVE VERIFIED"),
+    ("archive/CORRECTION_REGISTER.md", "LIVE VERIFIED"),
+]:
+    if token not in (ROOT / rel).read_text(encoding="utf-8"):
+        fail(f"live publication closeout missing from {rel}")
 
 print("Treasury transparency 7/2026 validation passed: official capacity, 8-file / 734-page review, one Colabora delivery event, direct-routing/context separation, privacy, bilingual discovery and canonical proceedings correction OK.")

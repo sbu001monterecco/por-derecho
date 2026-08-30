@@ -32,8 +32,8 @@ readback or deletion-safe closeout. The controlling lifecycle record is
 - The isolation algorithm is bounded. It does not traverse every proposition of
   every proposition co-member. It admits the selected proceeding's own
   non-`DIRECT` coordinates, its own controlled proposition clusters and one-hop
-  direct/recorded-connection neighbours only where the neighbour coordinate is
-  `DIRECT`.
+  direct/recorded-connection/source-controlled-corridor neighbours only where
+  the neighbour coordinate is `DIRECT`.
 - `GC-APP-007` / `PD-SP-R-0013` is retained as an immutable aggregate
   removal-appeal family reference, not a third exact appeal. The exact rolls
   remain `GC-APP-005` / RPL 3304/2025 and `GC-APP-006` / RPL 3319/2025.
