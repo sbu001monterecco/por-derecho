@@ -65,6 +65,7 @@
     "complete actor-to-action control for exactly 17 public people and three protected role-only references across nine multi-track classifications",
     "continuous-integration enforcement of temporal-layer separation, finite actor/action coverage, evidence status, limiting propositions and bilingual interlinks"
     ,"supersession-aware repair of the pre-existing Concurso 36 complete-record CI date rule so the 8 February Auto date and 15 February notification/custody layer remain separate"
+    ,"deterministic post-7-June reciprocal-route regeneration after current-main reconciliation, preserving both DP 3205 and Canary RIC sections without duplicate or displaced navigation"
   ],
   "expected_source_files": [
     ".github/governance/COMMUNITY_CLAIMED_OFFICE_CRIMINAL_FIRST_AUTHORITY_PROTOCOL_30AUG2026.md",
@@ -166,6 +167,7 @@
     "en/pamalexsha-servicios-integrales-sl/index.html",
     "en/pamanil-sl/index.html",
     "en/santa-lucia-real-estate-sl/index.html",
+    "en/same-hotel-multiple-financial-lives/index.html",
     "en/shaila-maria-cogolludo-ramos/index.html",
     "es/alvaro-campanario-hernandez/index.html",
     "es/antonio-cogolludo-rojas/index.html",
@@ -179,6 +181,7 @@
     "es/pamalexsha-servicios-integrales-sl/index.html",
     "es/pamanil-sl/index.html",
     "es/santa-lucia-real-estate-sl/index.html",
+    "es/mismo-hotel-multiples-vidas-financieras/index.html",
     "es/shaila-maria-cogolludo-ramos/index.html"
   ],
   "publication_boundaries": [

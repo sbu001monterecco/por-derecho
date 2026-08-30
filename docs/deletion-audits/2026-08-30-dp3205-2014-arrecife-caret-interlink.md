@@ -66,6 +66,11 @@ primary reinspection and generated critical-reader pages correctly separate the 
 bounded automation repair now requires both layers and forbids their merger; it does
 not change the underlying pages or add a DP 3205 attribution.
 
+After current main advanced through PR #1232, the deterministic post-7-June reciprocal
+route builder exposed a placement drift on the Acosta-perimeter and same-hotel pages.
+The builder was rerun so the DP 3205, Canary RIC and reciprocal-junction sections all
+remain present once, in generated order, in both languages.
+
 ## Source and privacy boundary
 
 - The summons is an official procedural notice; it establishes a scheduled hearing, not that the hearing occurred or how the case ended.
