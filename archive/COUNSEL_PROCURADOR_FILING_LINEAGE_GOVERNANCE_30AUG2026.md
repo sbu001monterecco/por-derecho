@@ -1,6 +1,6 @@
 # Counsel / Procurador Filing-Lineage Governance — 30 Aug 2026
 
-Status: **CONTROLLING ADDITIVE GOVERNANCE FOR FUTURE COUNSEL / FILING DIGESTS — OPERATIONAL GATE INSTALLED**
+Status: **CONTROLLING ADDITIVE GOVERNANCE FOR FUTURE COUNSEL / FILING DIGESTS — OPERATIONAL GATE INSTALLED — PRIMARY-SOURCE RECONCILIATION STARTED**
 
 This control corrects the professional perimeter and requires all future proceedings work to distinguish the user's/project-side current and former counsel from opposing, dissident, external and otherwise non-project-side professionals. Appearance in the same proceeding is never enough to classify a lawyer as part of the project-side counsel perimeter.
 
@@ -25,11 +25,13 @@ The following classifications override any earlier wording that could imply thes
 
 Do not delete their existing evidential/professional relationships. Correct only the perimeter classification and preserve provenance and prior source-led chronology.
 
-## 3. Our former-lawyers register — required addition
+## 3. Our former-lawyers register — Cristo identity resolved with provenance
 
-Add **Cristro Suarez Pimentel** to the **OUR COUNSEL PERIMETER — FORMER LAWYERS** register.
+The source-reconciled canonical identity is **Cristo Ayose Suárez Pimentel**. Add and retain him in the **OUR COUNSEL PERIMETER — FORMER LAWYERS** register.
 
-The spelling above is preserved exactly as supplied in the 30-Aug-2026 instruction. Before expanding biographical, firm, colegio, proceeding or filing details, verify the exact professional name/spelling against primary documents and record any correction transparently rather than silently replacing the supplied form.
+The original 30-Aug-2026 user-supplied spelling **“Cristro Suarez Pimentel”** must remain preserved as an alias/provenance string and must not be silently erased. A 29-Jun-2017 professional correspondence source uses the canonical spelling **Cristo Ayose Suárez Pimentel**. 2026 ICATF correspondence also uses that name and asserts colegiado 4968; independent colegio verification remains a separate evidential task.
+
+Canonical-name resolution does not complete his historic representation or filing denominator. Those remain to be reconstructed proceeding by proceeding from primary material.
 
 ## 4. Juan Tomás Parrilla Suárez — independence rule
 
@@ -42,21 +44,21 @@ Maintain separate nodes for:
 - Juan Tomás Parrilla Suárez as an individual professional; and
 - Garrigues as a firm / separate professional-services entity.
 
-## 5. Javier + Estefanía — working-pair rule
+## 5. Javier Sixto Seijas + Estefanía Sixto Seijas — working-pair rule
 
-Treat **Javier** and his partner **Estefanía** as a working professional pair/team where the primary record supports their joint work.
+The current professional identities are now source-reconciled as **Javier Sixto Seijas** and **Estefanía Sixto Seijas**.
 
-At the same time, retain separate individual identities and separate filing attribution. Do not collapse one person's acts, knowledge, signature, advice or filing into the other person's merely because they work together.
+Primary procedural material in RPL 3304/2025 identifies **Javier Sixto Seijas, ICAM colegiado 99.513**, acting as lawyer on the located LPB and Aweswell filings. Current professional correspondence independently establishes the full name **Estefanía Sixto Seijas** and supports the working-pair/team relationship.
 
-Future source scan must resolve and lock:
+Treat Javier and Estefanía as a working professional pair/team where the primary record supports their joint work. At the same time, retain separate individual identities and separate filing attribution. Do not collapse one person's acts, knowledge, signature, advice or filing into the other person's merely because they work together.
 
-- Javier's complete canonical professional identity;
-- Estefanía's complete canonical professional identity;
-- their firm/practice relationship;
-- dated client/capacity;
-- each pleading or filing actually signed, drafted or presented by each;
-- each procurador/a paired with them per proceeding and period;
-- substitutions, handovers and changes of representation.
+The present source state therefore distinguishes:
+
+- **Javier Sixto Seijas** — canonical identity and two RPL 3304/2025 filing lineages source-verified;
+- **Estefanía Sixto Seijas** — canonical identity/team relationship source-located, but no individual filed pleading is promoted merely by association with Javier;
+- their firm/practice relationship — to be stated only to the extent supported by dated sources;
+- each procurador/a pairing — proceeding- and period-specific;
+- substitutions, handovers and changes of representation — to be separately evidenced.
 
 ## 6. Dedicated filing register — every lawyer
 
@@ -65,6 +67,13 @@ Every lawyer in either register must have a dedicated chronological filing regis
 **LAWYER → SIDE/PERIMETER → CLIENT/PARTY → PROCURADOR/A → PROCEEDING → PIEZA/INCIDENTE → FILING → DATE/TIME → POSITION/RELIEF → EVIDENCE → COURT/LAJ RESPONSE → RESULT → APPEAL/FOLLOW-UP → CURRENT STATUS.**
 
 Do not treat a biography, CV, email appearance or court-document mention as a substitute for this filing lineage.
+
+The first source-promoted filing lineages are two RPL 3304/2025 submissions attributed to Javier Sixto Seijas:
+
+1. **LPB / RPL 3304/2025** — pleading dated 23-Jul-2026; LexNET presentation on 24-Jul-2026 at 11:47:35; procuradora **María del Pilar García Coello**; AP Las Palmas, Sección Cuarta.
+2. **Aweswell / RPL 3304/2025** — pleading dated 24-Jul-2026; corresponding LexNET receipt located; procuradora source-normalised as **María Luisa Díaz Vecino**, while the pleading uses the shorter form **María Díaz Vecino**; AP Las Palmas, Sección Cuarta. Exact normalized presentation time remains an open source-normalisation field and is not to be guessed.
+
+These two entries are a verified minimum, not the filing denominator.
 
 ## 7. Procurador/a register — mandatory and separate
 
@@ -84,6 +93,14 @@ For each procurador/a record:
 - source and confidence status.
 
 A lawyer and procurador/a are never presumed to be a permanent pair. Map the pairing per party, proceeding and period.
+
+The first source-promoted verified minimum is:
+
+- **María del Pilar García Coello** — LPB / RPL 3304/2025 / paired with Javier Sixto Seijas for the located 23–24 Jul 2026 pleading/receipt sequence; LexNET identifies Colegio de Procuradores de Las Palmas and professional identifier [159].
+- **María Luisa Díaz Vecino** — Aweswell / RPL 3304/2025 / paired with Javier Sixto Seijas for the located 24 Jul 2026 pleading/receipt sequence; LexNET identifies Colegio de Procuradores de Tenerife and professional identifier [318]. Preserve **María Díaz Vecino** as the shorter source form used in the pleading.
+- **Adriana Hernández Díaz** — Matkator / ETJ 163/2020 / primary LexNET source located for 10 Jul 2026. Do not infer a lawyer pairing or underlying authority instrument until a direct source establishes it.
+
+This is a **verified minimum of three**, not a complete procurador denominator.
 
 ## 8. Timeline and interlinking rule
 
@@ -115,6 +132,8 @@ For our counsel perimeter, keep four propositions separate:
 
 Where an instruction exists but a corresponding filing has not been located, record the gap as **instruction located / corresponding filed act not yet located**. Do not infer professional failure merely from an incomplete corpus.
 
+Likewise, a filed pleading or LexNET presentation does not by itself prove the underlying poder/apud-acta/personación instrument. Keep stated representation, filing presentation and authority evidence as separate source classes until each is located.
+
 ## 10. Future-thread completion gate
 
 For every new proceeding, filing, judicial decision, lawyer email or professional-representation discovery, future threads must ask and update:
@@ -139,23 +158,23 @@ A professional relationship, firm relationship, common proceeding, professional 
 
 Preserve documented facts, attributed allegations, inference, contrary evidence and unresolved proof as separate evidential classes.
 
-## 12. Immediate controlled seed state
+## 12. Current controlled seed state
 
-| Professional | Controlled classification | Immediate rule |
+| Professional | Controlled classification | Current rule/status |
 |---|---|---|
 | Juan Carlos Roque Prieto | External/opposing/dissident-side | Never label as our lawyer; map actual client/role by source |
 | Esteban Noriega | External/opposing/dissident-side | Never label as our lawyer; map actual client/role by source |
 | Álvaro Campanario | External/opposing/dissident-side | Never label as our lawyer; map actual client/role by source |
-| Cristro Suarez Pimentel | Our perimeter — former lawyer | Add to former-lawyers register; verify exact spelling/identity from primary source |
+| Cristo Ayose Suárez Pimentel | Our perimeter — former lawyer | Canonical name source-resolved; preserve “Cristro Suarez Pimentel” alias; historic filing denominator open |
 | Juan Tomás Parrilla Suárez | Individual professional; independent from Garrigues | No Garrigues fusion absent specific dated primary-source proof |
-| Javier | Our counsel working pair with Estefanía, subject to dated source attribution | Preserve separate individual filing attribution |
-| Estefanía | Our counsel working pair with Javier, subject to dated source attribution | Resolve full identity and preserve separate individual filing attribution |
+| Javier Sixto Seijas | Our counsel; working pair with Estefanía | ICAM 99.513 source-verified; two RPL 3304/2025 filings promoted; preserve separate individual attribution |
+| Estefanía Sixto Seijas | Our counsel; working pair with Javier | Full identity source-located; no filing attribution by association |
 
-This seed table is not the denominator of all lawyers. The complete denominator must be derived by scanning the full connected proceeding/document/email corpus.
+This table is not the denominator of all lawyers. The complete denominator must be derived by scanning the full connected proceeding/document/email corpus.
 
 ## 13. Operational implementation — controlling paths
 
-The following controls are now the canonical implementation layer and must be maintained together:
+The following controls are the canonical implementation layer and must be maintained together:
 
 - `assets/data/counsel-procurador-perimeter-register-v1.json` — controlled side/perimeter seed and anti-misclassification rules;
 - `assets/data/counsel-filing-register-v1.json` — dedicated per-professional chronological filing registers and filing-lineage schema;
@@ -165,10 +184,25 @@ The following controls are now the canonical implementation layer and must be ma
 - `scripts/audit_counsel_procurador_governance.py` — deterministic drift/deletion validator; and
 - `.github/workflows/audit-counsel-procurador-governance.yml` — CI gate on relevant pull requests and pushes to `main`.
 
-The initialized filing and procurador registers deliberately do **not** claim denominator completeness. Empty filing arrays and the current empty procurador list are placeholders for source-led population, not negative evidence.
+The filing and procurador registers deliberately do **not** claim denominator completeness. Source population has started, but unpopulated professional filing arrays are not negative evidence.
 
 Any future corpus-ingestion pass that discovers a lawyer, procurador/a, poder/personación, filing, notification, court/LAJ response, appeal or representation change must update the relevant operational register or create an explicit gap before the pass is called complete.
 
-## 14. Continuity statement
+## 14. Publication boundary
 
-**Counsel/procurador filing-lineage governance is persistent. Future work must keep our current/former counsel separate from external/opposing/dissident-side professionals; maintain individual filing registers; identify and interlink every procurador/a; and connect professional representation to the procedural timeline without transferring roles by association.**
+The repository is public and GitHub Pages deploys repository-controlled public assets, but **repository inclusion, direct static serving and navigated editorial publication are distinct states**.
+
+The counsel/procurador master knowledge layer is not automatically promoted to a dedicated public aggregate professional page, navigation entry or sitemap merely because the control files exist. The master proceedings protocol remains controlling on public treatment. If a public-facing page uses these professional facts, it must apply the same source, attribution, privacy, procedural-status and no-association safeguards.
+
+Therefore future continuity reports must state separately:
+
+1. whether the source-controlled file is committed to `main`;
+2. whether the relevant Pages deployment succeeded and the direct static resource can be read back;
+3. whether there is a dedicated navigated website page; and
+4. whether the evidential denominator is complete.
+
+Never use the word **published** without making clear which of those states has actually been verified.
+
+## 15. Continuity statement
+
+**Counsel/procurador filing-lineage governance is persistent. Future work must keep our current/former counsel separate from external/opposing/dissident-side professionals; maintain individual filing registers; identify and interlink every procurador/a; and connect professional representation to the procedural timeline without transferring roles by association. The source-reconciled minimum now includes Cristo Ayose Suárez Pimentel, Javier Sixto Seijas, Estefanía Sixto Seijas, María del Pilar García Coello, María Luisa Díaz Vecino and Adriana Hernández Díaz, while the complete professional, filing, procurador and authority denominators remain expressly open.**
