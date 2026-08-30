@@ -57,10 +57,13 @@
       "filings": []
     },
     {
-      "display_name": "Cristro Suarez Pimentel",
+      "display_name": "Cristo Ayose Suárez Pimentel",
+      "aliases": [
+        "Cristro Suarez Pimentel"
+      ],
       "side_perimeter": "our_former_counsel",
       "our_perimeter": true,
-      "register_status": "initialized_name_and_filing_population_require_primary_source_verification",
+      "register_status": "canonical_identity_resolved_historic_filing_population_required",
       "filings": []
     },
     {
@@ -72,21 +75,89 @@
       "filings": []
     },
     {
-      "display_name": "Javier",
+      "display_name": "Javier Sixto Seijas",
+      "aliases": [
+        "Javier",
+        "Javier Sixto"
+      ],
       "side_perimeter": "our_counsel",
       "our_perimeter": true,
       "working_relationship": "professional_pair_with_Estefania",
-      "identity_status": "complete_canonical_identity_requires_primary_source_verification",
-      "register_status": "initialized_primary_source_population_required",
-      "filings": []
+      "identity_status": "primary_procedural_source_verified_ICAM_99513",
+      "register_status": "source_population_started_denominator_not_complete",
+      "filings": [
+        {
+          "filing_id": "RPL-3304-2025-LPB-20260724-AC-REPOSICION-ALEGACIONES",
+          "lawyer": "Javier Sixto Seijas",
+          "side_perimeter": "our_counsel",
+          "client_party": "LUCHY PLAYA BLANCA, S.L.U.",
+          "procurador": "María del Pilar García Coello",
+          "procurador_status": "identified_in_signed_pleading_and_lexnet_receipt",
+          "authority_personacion_status": "pleading_states_representation_accredited_in_proceeding_underlying_poder_apud_acta_not_yet_separately_located",
+          "proceeding_id": "RPL 3304/2025",
+          "pieza_incidente": "recurso_de_apelacion_reposicion_AC",
+          "court_body": "Audiencia Provincial de Las Palmas, Sección Cuarta",
+          "filing_date": "2026-07-23",
+          "presentation_datetime": "2026-07-24 11:47:35",
+          "filing_title": "Alegaciones al recurso de reposición de la Administración Concursal",
+          "document_ref": "ES07 - 11 - Alegaciones R_Reposicion AC - LPB.pdf",
+          "position_relief": "LPB submissions opposing/treating the AC reposición and addressing supervening loss of interest, as stated in the located pleading; full merits crosswalk remains source-led.",
+          "evidence_refs": [
+            "ES07 - 11 - Alegaciones R_Reposicion AC - LPB.pdf",
+            "2025_0003304_RPL_1202610902298119_20260724104735(1).pdf",
+            "NIG 3501647120120000351"
+          ],
+          "court_laj_response_ref": null,
+          "court_laj_response_status": "not_yet_linked_in_this_register",
+          "result": "open_not_determined_by_this_source_pair",
+          "appeal_followup_ref": null,
+          "appeal_followup_status": "pending_reverse_link_from_later_court_record",
+          "timeline_event_ref": "RPL3304-2025-20260724-LPB-LEXNET",
+          "source_confidence": "high_primary_procedural_source",
+          "verification_status": "filed_lexnet_receipt_verified"
+        },
+        {
+          "filing_id": "RPL-3304-2025-AWESWELL-20260724-AC-REPOSICION-ALEGACIONES",
+          "lawyer": "Javier Sixto Seijas",
+          "side_perimeter": "our_counsel",
+          "client_party": "AWESWELL LIMITED",
+          "procurador": "María Luisa Díaz Vecino",
+          "procurador_status": "pleading_name_variant_Maria_Diaz_Vecino_lexnet_canonical_professional_listing_Maria_Luisa_Diaz_Vecino_318",
+          "authority_personacion_status": "pleading_asserts_procurador_representation_underlying_poder_apud_acta_not_yet_separately_located",
+          "proceeding_id": "RPL 3304/2025",
+          "pieza_incidente": "recurso_de_apelacion_reposicion_AC",
+          "court_body": "Audiencia Provincial de Las Palmas, Sección Cuarta",
+          "filing_date": "2026-07-24",
+          "presentation_datetime": null,
+          "filing_title": "Alegaciones al recurso de reposición de la Administración Concursal",
+          "document_ref": "ES07 - 11 - Alegaciones R_Reposicion AC - AW.pdf",
+          "position_relief": "Aweswell submissions in RPL 3304/2025 concerning the AC reposición; exact normalized presentation time and downstream judicial treatment remain to be linked from the source record.",
+          "evidence_refs": [
+            "ES07 - 11 - Alegaciones R_Reposicion AC - AW.pdf",
+            "2025_0003304_RPL_120261090229678120260724114535_000_RESUMEN.pdf"
+          ],
+          "court_laj_response_ref": null,
+          "court_laj_response_status": "not_yet_linked_in_this_register",
+          "result": "open_not_determined_by_this_source_pair",
+          "appeal_followup_ref": null,
+          "appeal_followup_status": "pending_reverse_link_from_later_court_record",
+          "timeline_event_ref": "RPL3304-2025-20260724-AWESWELL-LEXNET",
+          "source_confidence": "high_primary_procedural_source",
+          "verification_status": "filed_lexnet_receipt_verified_presentation_time_normalization_open"
+        }
+      ]
     },
     {
-      "display_name": "Estefanía",
+      "display_name": "Estefanía Sixto Seijas",
+      "aliases": [
+        "Estefanía",
+        "Estefania Sixto Seijas"
+      ],
       "side_perimeter": "our_counsel",
       "our_perimeter": true,
       "working_relationship": "professional_pair_with_Javier",
-      "identity_status": "complete_canonical_identity_requires_primary_source_verification",
-      "register_status": "initialized_primary_source_population_required",
+      "identity_status": "current_correspondence_source_verified_individual_filing_attribution_open",
+      "register_status": "identity_resolved_no_individual_filed_pleading_promoted_without_source_attribution",
       "filings": []
     }
   ],
@@ -94,6 +165,7 @@
     "complete_lawyer_denominator": false,
     "complete_filing_denominator": false,
     "complete_procurador_denominator": false,
-    "reason": "The seed governance has been initialized; full primary-source corpus ingestion and reconciliation remains required before denominator completeness can be claimed."
+    "verified_filing_count_in_this_register": 2,
+    "reason": "Source population has begun with two verified RPL 3304/2025 filings attributed to Javier Sixto Seijas. Full primary-source corpus ingestion and reconciliation remains required before any denominator-completeness claim."
   }
 }

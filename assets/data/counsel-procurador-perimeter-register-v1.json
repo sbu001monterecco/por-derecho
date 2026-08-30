@@ -30,10 +30,14 @@
       "verification": "role_client_dates_to_be_derived_from_primary_sources"
     },
     {
-      "display_name": "Cristro Suarez Pimentel",
+      "display_name": "Cristo Ayose Suárez Pimentel",
+      "aliases": [
+        "Cristro Suarez Pimentel"
+      ],
       "classification": "our_former_counsel",
       "our_perimeter": true,
-      "name_status": "user_supplied_spelling_pending_primary_source_verification"
+      "identity_status": "canonical_name_source_verified_alias_preserved",
+      "source_note": "Canonical spelling located in 29-Jun-2017 correspondence from the professional; 2026 ICATF correspondence also identifies Cristo Ayose Suárez Pimentel and asserts colegiado 4968. The user-supplied form remains preserved as an alias/provenance string; independent colegio verification remains open."
     },
     {
       "display_name": "Juan Tomás Parrilla Suárez",
@@ -42,18 +46,30 @@
       "firm_rule": "do_not_fuse_with_Garrigues_absent_specific_dated_primary_source"
     },
     {
-      "display_name": "Javier",
+      "display_name": "Javier Sixto Seijas",
+      "aliases": [
+        "Javier",
+        "Javier Sixto"
+      ],
       "classification": "our_counsel",
       "our_perimeter": true,
       "working_relationship": "professional_pair_with_Estefania",
-      "identity_status": "resolve_complete_canonical_identity_from_primary_sources"
+      "identity_status": "primary_procedural_source_verified",
+      "professional_detail": {
+        "college": "Ilustre Colegio de la Abogacía de Madrid",
+        "colegiado": "99.513"
+      }
     },
     {
-      "display_name": "Estefanía",
+      "display_name": "Estefanía Sixto Seijas",
+      "aliases": [
+        "Estefanía",
+        "Estefania Sixto Seijas"
+      ],
       "classification": "our_counsel",
       "our_perimeter": true,
       "working_relationship": "professional_pair_with_Javier",
-      "identity_status": "resolve_complete_canonical_identity_from_primary_sources"
+      "identity_status": "current_correspondence_source_verified_individual_filing_attribution_open"
     }
   ],
   "required_linkage": [

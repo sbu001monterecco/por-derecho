@@ -58,9 +58,11 @@ def main() -> int:
         if row.get("our_perimeter") is not False or row.get("classification") != "external_opposing_dissident_side":
             fail(f"perimeter drift: {name} must remain external/opposing/dissident-side", errors)
 
-    cristro = professionals.get("Cristro Suarez Pimentel")
-    if not cristro or cristro.get("our_perimeter") is not True or cristro.get("classification") != "our_former_counsel":
-        fail("Cristro Suarez Pimentel must remain in our former-counsel seed register pending name verification", errors)
+    cristo = professionals.get("Cristo Ayose Suárez Pimentel")
+    if not cristo or cristo.get("our_perimeter") is not True or cristo.get("classification") != "our_former_counsel":
+        fail("Cristo Ayose Suárez Pimentel must remain in our former-counsel register", errors)
+    if cristo and "Cristro Suarez Pimentel" not in cristo.get("aliases", []):
+        fail("user-supplied Cristo alias/provenance spelling must remain preserved", errors)
 
     parrilla = professionals.get("Juan Tomás Parrilla Suárez")
     if not parrilla or "independent_from_garrigues" not in parrilla.get("classification", ""):
@@ -68,12 +70,14 @@ def main() -> int:
     if parrilla and "do_not_fuse_with_Garrigues" not in parrilla.get("firm_rule", ""):
         fail("Juan Tomás Parrilla Suárez firm anti-fusion rule is missing", errors)
 
-    javier = professionals.get("Javier")
-    estefania = professionals.get("Estefanía")
+    javier = professionals.get("Javier Sixto Seijas")
+    estefania = professionals.get("Estefanía Sixto Seijas")
     if not javier or javier.get("working_relationship") != "professional_pair_with_Estefania":
-        fail("Javier-to-Estefanía working-pair control is missing", errors)
+        fail("Javier Sixto Seijas-to-Estefanía working-pair control is missing", errors)
+    if javier and javier.get("professional_detail", {}).get("colegiado") != "99.513":
+        fail("Javier Sixto Seijas ICAM 99.513 primary-source identity control is missing", errors)
     if not estefania or estefania.get("working_relationship") != "professional_pair_with_Javier":
-        fail("Estefanía-to-Javier working-pair control is missing", errors)
+        fail("Estefanía Sixto Seijas-to-Javier working-pair control is missing", errors)
 
     if GATE_MARKER not in protocol_text:
         fail("proceedings protocol does not contain the mandatory counsel/procurador governance gate marker", errors)
@@ -85,6 +89,17 @@ def main() -> int:
     ):
         if required_phrase not in governance_text:
             fail(f"governance markdown missing required section: {required_phrase}", errors)
+
+    for canonical in (
+        "Cristo Ayose Suárez Pimentel",
+        "Javier Sixto Seijas",
+        "Estefanía Sixto Seijas",
+        "María del Pilar García Coello",
+        "María Luisa Díaz Vecino",
+        "Adriana Hernández Díaz",
+    ):
+        if canonical not in governance_text:
+            fail(f"governance markdown missing source-reconciled identity: {canonical}", errors)
 
     if filings.get("status") != "initialized_not_complete_denominator":
         fail("counsel filing register must state initialized_not_complete_denominator", errors)
@@ -108,18 +123,59 @@ def main() -> int:
         if name not in filing_professionals:
             fail(f"no dedicated initialized filing register for seed professional: {name}", errors)
 
+    javier_filings = filing_professionals.get("Javier Sixto Seijas", {}).get("filings", [])
+    required_filing_ids = {
+        "RPL-3304-2025-LPB-20260724-AC-REPOSICION-ALEGACIONES",
+        "RPL-3304-2025-AWESWELL-20260724-AC-REPOSICION-ALEGACIONES",
+    }
+    located_filing_ids = {row.get("filing_id") for row in javier_filings}
+    if not required_filing_ids.issubset(located_filing_ids):
+        fail("the two source-verified Javier Sixto Seijas RPL 3304/2025 filings must remain promoted", errors)
+    for row in javier_filings:
+        missing = [field for field in filings.get("required_filing_fields", []) if field not in row]
+        if missing:
+            fail(f"filing {row.get('filing_id')} missing required fields: {', '.join(missing)}", errors)
+        if row.get("lawyer") != "Javier Sixto Seijas":
+            fail(f"filing attribution drift for {row.get('filing_id')}", errors)
+
     if procuradores.get("status") != "initialized_denominator_not_yet_established":
         fail("procurador register must explicitly state that the denominator is not yet established", errors)
     if procuradores.get("denominator_status", {}).get("complete") is not False:
         fail("procurador denominator must remain false until verified", errors)
 
+    proc_rows = {p.get("canonical_name"): p for p in procuradores.get("procuradores", [])}
+    required_procuradores = {
+        "María del Pilar García Coello",
+        "María Luisa Díaz Vecino",
+        "Adriana Hernández Díaz",
+    }
+    missing_procuradores = sorted(required_procuradores - set(proc_rows))
+    if missing_procuradores:
+        fail(f"verified procuradoras missing from master register: {', '.join(missing_procuradores)}", errors)
+    if procuradores.get("denominator_status", {}).get("known_count") != len(proc_rows):
+        fail("procurador known_count must equal promoted source-verified rows", errors)
+    for name, row in proc_rows.items():
+        missing = [field for field in procuradores.get("required_fields", []) if field not in row]
+        if missing:
+            fail(f"procurador {name} missing required fields: {', '.join(missing)}", errors)
+
     allowed_gap_statuses = set(gaps.get("allowed_statuses", []))
+    gap_rows = {g.get("gap_id"): g for g in gaps.get("gaps", [])}
     for gap in gaps.get("gaps", []):
         if gap.get("status") not in allowed_gap_statuses:
             fail(f"invalid gap status for {gap.get('gap_id')}", errors)
         for field in ("gap_id", "gap_type", "what_missing", "why_it_matters", "next_retrieval_route", "status"):
             if field not in gap:
                 fail(f"gap {gap.get('gap_id')} missing field {field}", errors)
+    if gap_rows.get("CP-GAP-001", {}).get("status") != "RESOLVED_VERIFIED":
+        fail("Cristo canonical identity gap must remain resolved with provenance preserved", errors)
+    if gap_rows.get("CP-GAP-002", {}).get("status") != "RESOLVED_VERIFIED":
+        fail("Javier canonical identity gap must remain resolved from primary procedural sources", errors)
+    if gap_rows.get("CP-GAP-003", {}).get("status") != "SOURCE_LOCATED_REVIEW_PENDING":
+        fail("Estefanía identity/file-attribution gap must remain source-located but filing-attribution controlled", errors)
+    for open_gap in ("CP-GAP-004", "CP-GAP-005", "CP-GAP-006", "CP-GAP-007"):
+        if gap_rows.get(open_gap, {}).get("status") != "OPEN":
+            fail(f"{open_gap} must remain open until its evidential denominator/authority issue is resolved", errors)
 
     if errors:
         print("Counsel/procurador governance audit FAILED")
@@ -128,9 +184,10 @@ def main() -> int:
         return 1
 
     print("Counsel/procurador governance audit PASSED")
-    print(f"Seed professionals checked: {len(professionals)}")
-    print(f"Dedicated filing registers initialized: {len(filing_professionals)}")
-    print(f"Verified procuradores currently promoted: {len(procuradores.get('procuradores', []))}")
+    print(f"Controlled professionals checked: {len(professionals)}")
+    print(f"Dedicated filing registers: {len(filing_professionals)}")
+    print(f"Source-verified Javier filings promoted: {len(javier_filings)}")
+    print(f"Verified procuradoras currently promoted: {len(proc_rows)}")
     print(f"Open/controlled gaps: {len(gaps.get('gaps', []))}")
     print("Denominator completeness remains explicitly false pending full primary-source reconciliation.")
     return 0
