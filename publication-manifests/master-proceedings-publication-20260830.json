@@ -2,11 +2,11 @@
   "publication_id": "PD-SP-MASTER-PROCEEDINGS-20260830-01",
   "owner": "Por Derecho / Project Sun Rock",
   "control_date": "2026-08-30",
-  "current_state": "PREPARED_PENDING_MERGE",
-  "state": "PREPARED_PENDING_MERGE",
+  "current_state": "DEPLOYED",
+  "state": "DEPLOYED",
   "schema": "por-derecho-master-proceedings-publication-v1",
   "purpose": "Publish a controlled bilingual Master Proceedings Register as the procedural spine for the multitrack storyline/timeline, while preserving legally distinct tracks, source status, open gaps and counsel/procurador lineage.",
-  "merge_sha": null,
+  "merge_sha": "f9658b29d53a9d0e73dcaf7292ff1eb3188547cf",
   "canonical_source": "archive/PROCEEDINGS_MASTER_REGISTER.csv",
   "expected_routes": {
     "es": [
@@ -25,6 +25,25 @@
     "scripts/audit_master_proceedings_publication.py",
     ".github/workflows/audit-master-proceedings-publication.yml"
   ],
+  "validation": {
+    "evidence": [
+      "PR #1216 dedicated Audit master proceedings publication: success on head 279df7d6b31e6ce6358c9494879aaeca2d204171",
+      "PR #1216 Publication integrity gate: success on head 279df7d6b31e6ce6358c9494879aaeca2d204171",
+      "PR #1216 counsel/procurador governance audit: success on head 279df7d6b31e6ce6358c9494879aaeca2d204171",
+      "Post-merge Audit master proceedings publication run 33302038741: success on f9658b29d53a9d0e73dcaf7292ff1eb3188547cf",
+      "Post-merge Publication integrity gate run 33302038740: success on f9658b29d53a9d0e73dcaf7292ff1eb3188547cf"
+    ]
+  },
+  "deployment_evidence": {
+    "pages_run": 33302037830,
+    "pages_run_number": 1285,
+    "pages_build_version": "f9658b29d53a9d0e73dcaf7292ff1eb3188547cf",
+    "pages_artifact_id": 9729252117,
+    "pages_artifact_digest": "sha256:4bfe77e3791593d4d0929338d94526b8c939a8e79219ab761c0a3beba83d13bb",
+    "deployment_result": "success",
+    "deployed_artifact_route_presence_verified": true,
+    "verification_note": "The exact GitHub Pages artifact deployed for the merge was inspected and contains both bilingual route files, the runtime/CSS, canonical CSV, governance and manifest. Search-index discovery is not used as a deployment precondition."
+  },
   "governance": [
     "archive/PROCEEDINGS_MASTER_REGISTER_PROTOCOL.md",
     "archive/MASTER_PROCEEDINGS_PUBLICATION_GOVERNANCE_30AUG2026.md",
@@ -82,9 +101,11 @@
   ],
   "continuity_rule": "Future proceedings threads must maintain the canonical CSV, public projection, explicit internal/private visible exclusions, source/open-gap states, parent-child and appeal/referral relationships, counsel/procurador lineage, and two-way links with the storyline/timeline.",
   "publication_closeout": {
-    "pull_request": null,
-    "merge_sha": null,
-    "pages_run": null,
-    "routes_verified": false
+    "pull_request": 1216,
+    "merge_sha": "f9658b29d53a9d0e73dcaf7292ff1eb3188547cf",
+    "pages_run": 33302037830,
+    "pages_artifact_id": 9729252117,
+    "deployed_artifact_routes_verified": true,
+    "live_http_readback": "not_independently_completed_in_this_closeout; deployment success plus exact artifact route presence verified"
   }
 }
