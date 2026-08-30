@@ -1,0 +1,53 @@
+{
+  "publication_id": "PD-SP-GC-548-2023-CARET-20260830-01",
+  "owner": "Por Derecho / Project Sun Rock",
+  "control_date": "2026-08-30",
+  "current_state": "PREPARED_PENDING_MERGE",
+  "state": "PREPARED_PENDING_MERGE",
+  "schema": "por-derecho-caret-reference-publication-v1",
+  "purpose": "Register and publicly interlink the unresolved 548/2023 Las Palmas de Gran Canaria reference without manufacturing a case identity or direct nexus.",
+  "canonical_candidate_key": "GC-REF-031",
+  "identity_state": "CARET_PENDING",
+  "merge_sha": null,
+  "canonical_source": "archive/PROCEEDINGS_MASTER_REGISTER.csv",
+  "control_record": "archive/GC_548_2023_PLAZA2_T1_CARET_CONTINUITY_CONTROL_30AUG2026.md",
+  "missing_evidence_id": "ME-111",
+  "expected_routes": {
+    "es": [
+      "es/registro-maestro-procedimientos/index.html",
+      "es/mapa-procedimientos/index.html"
+    ],
+    "en": [
+      "en/master-proceedings-register/index.html",
+      "en/proceedings-map/index.html"
+    ]
+  },
+  "expected_source_files": [
+    "archive/PROCEEDINGS_MASTER_REGISTER.csv",
+    "archive/MISSING_EVIDENCE_REGISTER.md",
+    "archive/GC_548_2023_PLAZA2_T1_CARET_CONTINUITY_CONTROL_30AUG2026.md",
+    "scripts/audit_proceedings_interconnectivity_map.py"
+  ],
+  "public_projection": {
+    "source": "canonical_csv_runtime_projection",
+    "public_treatment": "PUBLIC_SUMMARY_WITH_IDENTITY_GAP",
+    "qualification": "The public row is an unresolved user-supplied judicial-reference lead, not a verified proceeding identity, finding or established relationship."
+  },
+  "interlinking": {
+    "master_register_to_map": true,
+    "map_to_master_register": true,
+    "bilingual_projection": true,
+    "direct_proceeding_edges": [],
+    "navigation_context": [
+      "Gran Canaria"
+    ]
+  },
+  "publication_closeout": {
+    "pull_request": null,
+    "merge_sha": null,
+    "pages_run": null,
+    "live_routes_verified": false,
+    "canonical_row_live_verified": false
+  },
+  "continuity_rule": "Recover and update GC-REF-031 and ME-111 together; do not create a parallel 548/2023 identity, infer a direct edge, or delete the candidate if a later source resolves it as an alias or duplicate."
+}
