@@ -1,0 +1,75 @@
+{
+  "schema": "por-derecho-counsel-procurador-perimeter-register-v1",
+  "as_of": "2026-08-30",
+  "status": "seed_control_not_complete_denominator",
+  "governance": "archive/COUNSEL_PROCURADOR_FILING_LINEAGE_GOVERNANCE_30AUG2026.md",
+  "rules": {
+    "separate_our_and_external_counsel": true,
+    "do_not_infer_perimeter_from_same_proceeding": true,
+    "lawyer_procurador_pairing_is_period_and_proceeding_specific": true,
+    "preserve_individual_filing_attribution": true,
+    "instruction_advice_filing_decision_are_separate": true
+  },
+  "professionals": [
+    {
+      "display_name": "Juan Carlos Roque Prieto",
+      "classification": "external_opposing_dissident_side",
+      "our_perimeter": false,
+      "verification": "role_client_dates_to_be_derived_from_primary_sources"
+    },
+    {
+      "display_name": "Esteban Noriega",
+      "classification": "external_opposing_dissident_side",
+      "our_perimeter": false,
+      "verification": "role_client_dates_to_be_derived_from_primary_sources"
+    },
+    {
+      "display_name": "Álvaro Campanario",
+      "classification": "external_opposing_dissident_side",
+      "our_perimeter": false,
+      "verification": "role_client_dates_to_be_derived_from_primary_sources"
+    },
+    {
+      "display_name": "Cristro Suarez Pimentel",
+      "classification": "our_former_counsel",
+      "our_perimeter": true,
+      "name_status": "user_supplied_spelling_pending_primary_source_verification"
+    },
+    {
+      "display_name": "Juan Tomás Parrilla Suárez",
+      "classification": "individual_professional_independent_from_garrigues",
+      "our_perimeter": true,
+      "firm_rule": "do_not_fuse_with_Garrigues_absent_specific_dated_primary_source"
+    },
+    {
+      "display_name": "Javier",
+      "classification": "our_counsel",
+      "our_perimeter": true,
+      "working_relationship": "professional_pair_with_Estefania",
+      "identity_status": "resolve_complete_canonical_identity_from_primary_sources"
+    },
+    {
+      "display_name": "Estefanía",
+      "classification": "our_counsel",
+      "our_perimeter": true,
+      "working_relationship": "professional_pair_with_Javier",
+      "identity_status": "resolve_complete_canonical_identity_from_primary_sources"
+    }
+  ],
+  "required_linkage": [
+    "lawyer",
+    "side_perimeter",
+    "client_party",
+    "procurador",
+    "proceeding",
+    "pieza_incidente",
+    "filing",
+    "filing_datetime",
+    "relief_position",
+    "evidence",
+    "court_laj_response",
+    "result",
+    "appeal_followup",
+    "current_status"
+  ]
+}
