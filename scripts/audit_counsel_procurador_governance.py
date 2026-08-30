@@ -173,9 +173,11 @@ def main() -> int:
         fail("Javier canonical identity gap must remain resolved from primary procedural sources", errors)
     if gap_rows.get("CP-GAP-003", {}).get("status") != "SOURCE_LOCATED_REVIEW_PENDING":
         fail("Estefanía identity/file-attribution gap must remain source-located but filing-attribution controlled", errors)
-    for open_gap in ("CP-GAP-004", "CP-GAP-005", "CP-GAP-006", "CP-GAP-007"):
+    for open_gap in ("CP-GAP-004", "CP-GAP-005", "CP-GAP-006", "CP-GAP-007", "CP-GAP-008", "CP-GAP-009", "CP-GAP-010"):
         if gap_rows.get(open_gap, {}).get("status") != "OPEN":
             fail(f"{open_gap} must remain open until its evidential denominator/authority issue is resolved", errors)
+    if gap_rows.get("CP-GAP-010", {}).get("proceeding_id") != "LZ-REF-044 / 1304/2014":
+        fail("CP-GAP-010 must remain attached to the unresolved Arrecife 1304/2014 reference", errors)
 
     if errors:
         print("Counsel/procurador governance audit FAILED")

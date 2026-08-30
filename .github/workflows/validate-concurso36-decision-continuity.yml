@@ -31,8 +31,10 @@ on:
       - 'scripts/build_concurso36_decision_continuity_report.py'
       - 'scripts/build_concurso36_decision_continuity_workbook.mjs'
       - 'scripts/validate_concurso36_complete_record.py'
+      - 'scripts/validate_concurso36_complete_record_v2.py'
       - 'scripts/validate_concurso36_decision_continuity.py'
       - 'scripts/validate_concurso36_primary_autos_redigest.py'
+      - 'scripts/validate_concurso36_primary_autos_redigest_v2.py'
       - 'scripts/validate_concurso_autos_publication.py'
       - 'sitemap.xml'
       - 'sitemap-concurso36-court-orders.xml'
@@ -70,8 +72,10 @@ on:
       - 'scripts/build_concurso36_decision_continuity_report.py'
       - 'scripts/build_concurso36_decision_continuity_workbook.mjs'
       - 'scripts/validate_concurso36_complete_record.py'
+      - 'scripts/validate_concurso36_complete_record_v2.py'
       - 'scripts/validate_concurso36_decision_continuity.py'
       - 'scripts/validate_concurso36_primary_autos_redigest.py'
+      - 'scripts/validate_concurso36_primary_autos_redigest_v2.py'
       - 'scripts/validate_concurso_autos_publication.py'
       - 'sitemap.xml'
       - 'sitemap-concurso36-court-orders.xml'
@@ -109,8 +113,10 @@ jobs:
           scripts/build_concurso_autos_fulltext.py
           scripts/build_concurso_autos_pages.py
           scripts/validate_concurso36_complete_record.py
+          scripts/validate_concurso36_complete_record_v2.py
           scripts/validate_concurso_autos_publication.py
           scripts/validate_concurso36_primary_autos_redigest.py
+          scripts/validate_concurso36_primary_autos_redigest_v2.py
           scripts/validate_concurso36_decision_continuity.py
       - name: Check continuity workbook builder syntax
         run: node --check scripts/build_concurso36_decision_continuity_workbook.mjs
@@ -119,8 +125,8 @@ jobs:
       - name: Require deterministic generated pages
         run: git diff --exit-code -- es/concurso-36-2012-autos-resoluciones/index.html en/insolvency-36-2012-orders-decisions/index.html
       - name: Re-verify canonical whole-record source
-        run: python -B scripts/validate_concurso36_complete_record.py
+        run: python -B scripts/validate_concurso36_complete_record_v2.py
       - name: Re-verify controlling primary-orders date and effect rules
-        run: python -B scripts/validate_concurso36_primary_autos_redigest.py
+        run: python -B scripts/validate_concurso36_primary_autos_redigest_v2.py
       - name: Validate continuity counts, chronology, privacy and lifecycle
         run: python -B scripts/validate_concurso36_decision_continuity.py
