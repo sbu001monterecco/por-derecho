@@ -1,0 +1,49 @@
+name: Audit proceedings interconnectivity map
+
+on:
+  pull_request:
+    paths:
+      - 'archive/PROCEEDINGS_MASTER_REGISTER.csv'
+      - '.github/governance/UNITARY_PROCEEDINGS_INTERCONNECTIVITY_MAP_PROTOCOL_30AUG2026.md'
+      - 'assets/data/proceedings-interconnectivity-schema-v1.json'
+      - 'assets/proceedings-interconnectivity-map-20260830.js'
+      - 'assets/proceedings-interconnectivity-map-20260830.css'
+      - 'en/proceedings-map/index.html'
+      - 'es/mapa-procedimientos/index.html'
+      - 'en/master-proceedings-register/index.html'
+      - 'es/registro-maestro-procedimientos/index.html'
+      - 'scripts/audit_proceedings_interconnectivity_map.py'
+      - '.github/workflows/audit-proceedings-interconnectivity-map.yml'
+      - 'publication-manifests/proceedings-interconnectivity-map-20260830.json'
+  push:
+    branches: [main]
+    paths:
+      - 'archive/PROCEEDINGS_MASTER_REGISTER.csv'
+      - '.github/governance/UNITARY_PROCEEDINGS_INTERCONNECTIVITY_MAP_PROTOCOL_30AUG2026.md'
+      - 'assets/data/proceedings-interconnectivity-schema-v1.json'
+      - 'assets/proceedings-interconnectivity-map-20260830.js'
+      - 'assets/proceedings-interconnectivity-map-20260830.css'
+      - 'en/proceedings-map/index.html'
+      - 'es/mapa-procedimientos/index.html'
+      - 'en/master-proceedings-register/index.html'
+      - 'es/registro-maestro-procedimientos/index.html'
+      - 'scripts/audit_proceedings_interconnectivity_map.py'
+      - '.github/workflows/audit-proceedings-interconnectivity-map.yml'
+      - 'publication-manifests/proceedings-interconnectivity-map-20260830.json'
+
+permissions:
+  contents: read
+
+jobs:
+  proceedings-interconnectivity-map:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+      - name: Set up Python
+        uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
+        with:
+          python-version: '3.12'
+      - name: Audit proceedings map invariants
+        run: python scripts/audit_proceedings_interconnectivity_map.py
