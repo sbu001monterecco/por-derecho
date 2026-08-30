@@ -105,6 +105,15 @@ The public projection must preserve the `UNVERIFIED`/`OPEN_REFERENCE` status and
 the open identity gap. Publication makes the lead discoverable; it does not
 convert it into a judicial finding or an established case nexus.
 
+Deployment closeout: PR #1236 merged reviewed head `42ae5a71…` as
+`0307015ef99ae0560a6a3f12c99afb966bc82e7a`. GitHub Pages run `33338753328`
+/ #1301 completed successfully on that exact merge. A later cache-busted
+readback returned HTTP 200 and exact merged bytes for the canonical CSV and all
+four bilingual register/map route files; the live CSV field audit confirmed the
+open identity status and empty direct-edge fields. This upgrades only the
+publication lifecycle to `LIVE_VERIFIED`; `CARET_PENDING`, `ME-111` and every
+substantive source gap remain open.
+
 Future source recovery must update `GC-REF-031`, `ME-111`, the master row and
 every material public projection together. If the source proves a duplicate,
 the candidate must be retained as an alias/provenance record and redirected to
