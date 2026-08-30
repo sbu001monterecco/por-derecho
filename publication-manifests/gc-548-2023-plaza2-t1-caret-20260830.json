@@ -2,13 +2,15 @@
   "publication_id": "PD-SP-GC-548-2023-CARET-20260830-01",
   "owner": "Por Derecho / Project Sun Rock",
   "control_date": "2026-08-30",
-  "current_state": "PREPARED_PENDING_MERGE",
-  "state": "PREPARED_PENDING_MERGE",
+  "current_state": "LIVE_VERIFIED",
+  "state": "LIVE_VERIFIED_WITH_IDENTITY_GAP",
   "schema": "por-derecho-caret-reference-publication-v1",
   "purpose": "Register and publicly interlink the unresolved 548/2023 Las Palmas de Gran Canaria reference without manufacturing a case identity or direct nexus.",
   "canonical_candidate_key": "GC-REF-031",
   "identity_state": "CARET_PENDING",
-  "merge_sha": null,
+  "reviewed_head_sha": "42ae5a71f4984d991e12c08f9513e2a928545348",
+  "merge_sha": "0307015ef99ae0560a6a3f12c99afb966bc82e7a",
+  "tree_sha": "afce636b9dd7e0bad10e32499e53f8b2f8ff1df3",
   "canonical_source": "archive/PROCEEDINGS_MASTER_REGISTER.csv",
   "control_record": "archive/GC_548_2023_PLAZA2_T1_CARET_CONTINUITY_CONTROL_30AUG2026.md",
   "missing_evidence_id": "ME-111",
@@ -42,12 +44,51 @@
       "Gran Canaria"
     ]
   },
+  "validation": {
+    "local": "PASS",
+    "pull_request": "18_SUCCESS_1_INHERITED_UNRELATED_FAILURE",
+    "post_merge_control": "MASTER_REGISTER_MAP_AND_PUBLICATION_INTEGRITY_SUCCESS",
+    "evidence": [
+      "PR #1236 validated exact reviewed head 42ae5a71f4984d991e12c08f9513e2a928545348 with 18 successful workflows.",
+      "The sole PR-head failure was the inherited Concurso 36/2012 8-Feb/15-Feb creditor-date contradiction on two unchanged pages.",
+      "Post-merge Audit master proceedings publication run 33338753880, Audit proceedings interconnectivity map run 33338753801 and Publication integrity gate run 33338753852 completed successfully on exact merge 0307015ef99ae0560a6a3f12c99afb966bc82e7a.",
+      "Two post-merge live-only checks started before Pages completed and failed their early readback; their validation jobs passed, and the later five-resource exact readback supersedes that deployment race."
+    ]
+  },
+  "deployment_evidence": {
+    "pages_run_id": 33338753328,
+    "pages_run_number": 1301,
+    "pages_status": "completed_success",
+    "pages_completed_at": "2026-08-30T22:18:30Z",
+    "deployed_merge_sha": "0307015ef99ae0560a6a3f12c99afb966bc82e7a",
+    "exact_source_byte_matches": 5
+  },
+  "live_urls": [
+    "https://sbu001monterecco.github.io/por-derecho/archive/PROCEEDINGS_MASTER_REGISTER.csv",
+    "https://sbu001monterecco.github.io/por-derecho/en/master-proceedings-register/",
+    "https://sbu001monterecco.github.io/por-derecho/es/registro-maestro-procedimientos/",
+    "https://sbu001monterecco.github.io/por-derecho/en/proceedings-map/",
+    "https://sbu001monterecco.github.io/por-derecho/es/mapa-procedimientos/"
+  ],
+  "live_verification_evidence": {
+    "status": "PASS",
+    "verified_at": "2026-08-30T22:19:58Z",
+    "method": "Cache-busted HTTPS fetch and exact byte comparison against merge 0307015ef99ae0560a6a3f12c99afb966bc82e7a, followed by CSV field assertions.",
+    "result": "5/5 resources returned HTTP 200 and matched the merged source bytes; the live CSV contains 104 canonical rows and GC-REF-031 preserves UNVERIFIED, OPEN_REFERENCE, PUBLIC_SUMMARY_WITH_IDENTITY_GAP and empty parent/appeal/linked-proceeding fields.",
+    "sha256": {
+      "archive/PROCEEDINGS_MASTER_REGISTER.csv": "75b294c69fc7ea856d4c5de4c665f3d35d40b56356a2f64100be3bc965ab3d31",
+      "en/master-proceedings-register/index.html": "66534df26d76ae2083fc6bdd6bbbba97f7f4c4dbd08d83c13fe443f7dd5ce3e1",
+      "es/registro-maestro-procedimientos/index.html": "04a8211c793a94233cb7dd5bb97cb6bd7e108f1f72db9dfcc5d95257f1f6f5bc",
+      "en/proceedings-map/index.html": "56ad9dfa11e11990056472ab6aaff8c09d3c727b36a11aefbfb05d5bc1b953ed",
+      "es/mapa-procedimientos/index.html": "9ea6a1cb3a6ff1518733e498c9063d4376e940cdf994351d92e26f895b4eba84"
+    }
+  },
   "publication_closeout": {
-    "pull_request": null,
-    "merge_sha": null,
-    "pages_run": null,
-    "live_routes_verified": false,
-    "canonical_row_live_verified": false
+    "pull_request": 1236,
+    "merge_sha": "0307015ef99ae0560a6a3f12c99afb966bc82e7a",
+    "pages_run": 33338753328,
+    "live_routes_verified": true,
+    "canonical_row_live_verified": true
   },
   "continuity_rule": "Recover and update GC-REF-031 and ME-111 together; do not create a parallel 548/2023 identity, infer a direct edge, or delete the candidate if a later source resolves it as an alias or duplicate."
 }
