@@ -99,7 +99,7 @@ A proceeding with no direct canonical edge may be genuinely independent or may e
 
 ## Continuity / deletion safety
 
-The original map was merged and deployed through PR #1221. The initial Case Prism was merged and deployed through PR #1227. The corrective v2 reader contract is separately `PREPARED_PENDING_MERGE` on `audit/ascan-360-case-prism-20260830` and must not inherit the earlier live status.
+The original map was merged and deployed through PR #1221. The initial Case Prism was merged and deployed through PR #1227. The corrective v2 reader contract is separately `PR_OPEN` in PR #1228 on `audit/ascan-360-case-prism-20260830` and must not inherit the earlier live status.
 
 After the corrective PR is merged and independently read back live, the originating execution context can be deleted without losing the map architecture, prompt, anti-fragmentation rule, schemas, public routes or relationship boundaries because those are repository-controlled. This does not authorise deletion of native evidence, private custody sources, backups or other retention-controlled material.
 

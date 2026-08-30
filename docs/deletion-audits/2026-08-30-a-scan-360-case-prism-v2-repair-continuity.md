@@ -1,8 +1,10 @@
 # A-SCAN 360 / CASE PRISM V2 REPAIR — CONTINUITY CONTROL
 
 **Date:** 30 August 2026
-**State:** `PREPARED_PENDING_MERGE`
+**State:** `PR_OPEN`
 **Branch:** `audit/ascan-360-case-prism-20260830`
+**Pull request:** [#1228](https://github.com/sbu001monterecco/por-derecho/pull/1228)
+**Initial implementation head/tree:** `0ed308f68b39354f30ae6a9b98eb6bf0eda1c4bf` / `4d440b27f6cb689ee365c22171bd7d85baf5a790`
 **Requested control baseline:** `3473d8c399d990b45ad58dd9a2aa8f8caf0d6814`
 **Actual base main:** `aac741320cd9541ecaae564db89188cb941dd645`
 
@@ -80,6 +82,6 @@ The browser smoke must verify EN and ES hash activation, six semantic tabs, keyb
 
 ## Completion boundary
 
-This record currently proves source preparation and local non-browser validation only. It does not prove PR review, CI browser rendering, merge, Pages deployment, live HTTP readback or deletion-safe continuity.
+This record currently proves source preparation, local non-browser validation and creation of PR #1228 with the exact implementation tree. It does not prove CI browser rendering, merge, Pages deployment, live HTTP readback or deletion-safe continuity.
 
 Before closeout, update this file and `publication-manifests/ascan-360-case-prism-v2-repair-20260830.json` with the exact PR, validated head SHA, merge SHA, relevant CI runs, Pages run and independent no-cache live-byte readback. Do not inherit those states from the original map or initial Case Prism releases.

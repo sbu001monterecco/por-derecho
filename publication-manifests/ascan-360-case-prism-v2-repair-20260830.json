@@ -4,12 +4,16 @@
   "publication_id": "PD-SP-AScan360-CASE-PRISM-V2-REPAIR-20260830-01",
   "owner": "Por Derecho / Project Sun Rock",
   "control_date": "2026-08-30",
-  "current_state": "PREPARED_PENDING_MERGE",
-  "state": "PREPARED_PENDING_MERGE",
+  "current_state": "PR_OPEN",
+  "state": "PR_OPEN",
   "purpose": "Close the reader-visible convergence and fragmentation implementation gap with a complete decision-dependency matrix, stable swimlane, exact-proceeding isolation and nine audience lenses, while consolidating two controlling correction overlays and preserving evidential boundaries.",
   "requested_control_baseline_sha": "3473d8c399d990b45ad58dd9a2aa8f8caf0d6814",
   "actual_base_main_sha": "aac741320cd9541ecaae564db89188cb941dd645",
   "head_branch": "audit/ascan-360-case-prism-20260830",
+  "pull_request": 1228,
+  "pull_request_url": "https://github.com/sbu001monterecco/por-derecho/pull/1228",
+  "initial_implementation_head_sha": "0ed308f68b39354f30ae6a9b98eb6bf0eda1c4bf",
+  "implementation_tree_sha": "4d440b27f6cb689ee365c22171bd7d85baf5a790",
   "expected_routes": {
     "en": [
       "en/index.html",
@@ -110,17 +114,17 @@
   ],
   "local_validation": {
     "case_prism_structural_audit": "passed: 102/101, 18x12=216, zero unexplained coordinates, exact isolation, nine lenses",
-    "repository_preservation": "passed: 4306 tracked files and 645 bilingual HTML pages",
+    "repository_preservation": "passed: 4309 tracked files and 645 bilingual HTML pages",
     "audience_experience": "passed: 645 pages, 10501 internal links and 2213 public files",
     "master_proceedings_publication": "passed: 102 canonical rows",
     "counsel_procurador_governance": "passed with denominator explicitly incomplete and seven registered gaps",
     "javascript_syntax": "passed",
     "git_diff_check": "passed",
-    "publication_integrity": "pending committed SHA comparison"
+    "publication_integrity": "passed: 93 manifests and the exact 35-file origin/main...HEAD denominator"
   },
   "verification": {
     "source_prepared": true,
-    "pull_request_created": false,
+    "pull_request_created": true,
     "ci_green": false,
     "merged": false,
     "main_readback": false,
@@ -128,5 +132,5 @@
     "live_http_readback": false,
     "deletion_safe": false
   },
-  "publication_boundary": "PREPARED_PENDING_MERGE proves source preparation and local non-browser validation only. It does not inherit the live status of PR #1221 or PR #1227 and must not be described as merged, deployed, live-verified or deletion-safe."
+  "publication_boundary": "PR_OPEN proves that PR #1228 carries the exact implementation tree and that local non-browser validation passed. It does not inherit the live status of PR #1221 or PR #1227 and must not be described as CI-green, merged, deployed, live-verified or deletion-safe."
 }
