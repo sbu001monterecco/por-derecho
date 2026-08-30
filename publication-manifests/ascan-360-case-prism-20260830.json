@@ -1,12 +1,16 @@
 {
+  "schema": "por-derecho.publication-manifest.v1",
+  "manifest_version": "1.1.0",
   "publication_id": "PD-SP-AScan360-CASE-PRISM-20260830-01",
   "owner": "Por Derecho / Project Sun Rock",
   "control_date": "2026-08-30",
-  "current_state": "PR_OPEN",
-  "state": "PR_OPEN",
-  "purpose": "Implement the A-SCAN 360 Case Prism, parallel-lanes, isolation-test and reader-lens views on the bilingual Proceedings Interconnectivity Map, closing the gap between governance/schema requirements and the actual public renderer.",
+  "current_state": "LIVE_VERIFIED",
+  "state": "LIVE_VERIFIED",
+  "purpose": "Preserve the lifecycle of the initial bilingual Case Prism implementation delivered through PR #1227.",
   "base_sha": "3473d8c399d990b45ad58dd9a2aa8f8caf0d6814",
   "head_branch": "ascan-360-case-prism-20260830",
+  "pull_request": 1227,
+  "merge_sha": "aac741320cd9541ecaae564db89188cb941dd645",
   "expected_routes": {
     "en": ["en/proceedings-map/index.html"],
     "es": ["es/mapa-procedimientos/index.html"]
@@ -18,13 +22,51 @@
     "assets/proceedings-interconnectivity-map-20260830.css",
     ".github/governance/A_SCAN_360_CASE_PRISM_AND_READER_LENS_PROTOCOL_30AUG2026.md",
     "scripts/audit_proceedings_interconnectivity_map.py",
+    "scripts/smoke_proceedings_case_prism.mjs",
     "docs/deletion-audits/2026-08-30-a-scan-360-case-prism-continuity.md"
   ],
+  "validation": {
+    "case_prism_smoke_run_id": 33326964479,
+    "audience_validation_run_id": 33326964466,
+    "pages_run_id": 33326963894,
+    "result": "success",
+    "evidence": [
+      "PR #1227 merged as aac741320cd9541ecaae564db89188cb941dd645 after all required checks succeeded.",
+      "Case Prism browser/audit run 33326964479 succeeded.",
+      "Audience validation run 33326964466 succeeded.",
+      "Pages deployment run 33326963894 succeeded."
+    ]
+  },
+  "deployment_evidence": {
+    "workflow": "pages build and deployment",
+    "pages_run_id": 33326963894,
+    "head_sha": "aac741320cd9541ecaae564db89188cb941dd645",
+    "status": "completed",
+    "conclusion": "success"
+  },
   "verification": {
-    "ci_green": false,
-    "merged": false,
-    "main_readback": false,
-    "pages_deployed": false,
-    "public_readback": false
+    "ci_green": true,
+    "merged": true,
+    "main_readback": true,
+    "pages_deployed": true,
+    "public_readback": true
+  },
+  "live_urls": [
+    "https://sbu001monterecco.github.io/por-derecho/en/proceedings-map/",
+    "https://sbu001monterecco.github.io/por-derecho/es/mapa-procedimientos/"
+  ],
+  "live_verification_evidence": {
+    "result": "passed",
+    "method": "bounded HTTP 200 and exact-byte comparison against merged main",
+    "verified_merge_sha": "aac741320cd9541ecaae564db89188cb941dd645",
+    "routes": [
+      "https://sbu001monterecco.github.io/por-derecho/en/proceedings-map/",
+      "https://sbu001monterecco.github.io/por-derecho/es/mapa-procedimientos/"
+    ]
+  },
+  "supersession": {
+    "state": "SUPERSEDED_BY_ADDITIVE_V2_REPAIR",
+    "manifest": "publication-manifests/ascan-360-case-prism-v2-repair-20260830.json",
+    "boundary": "The v1 lifecycle remains live-verified historical evidence. It does not establish merge, deployment or live status for the v2 repair."
   }
 }

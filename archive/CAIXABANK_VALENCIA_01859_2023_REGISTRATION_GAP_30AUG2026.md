@@ -1,7 +1,7 @@
 # CAIXABANK / VALENCIA ORD 1859/2023-9 — MASTER-REGISTER RECONCILIATION CONTROL
 
 **Date:** 30 August 2026  
-**Status:** exact proceeding identity/status VERIFIED; existing canonical row `VAL-CIV-001` requires field consolidation  
+**Status:** SOURCE-TREE CONSOLIDATION COMPLETE — public/main closure effective when the corrective commit merges and deploys
 **Durable correction key:** `GAP-VAL-CAIXABANK-01859-2023`
 
 ## 1. Exact controlled identity — verified
@@ -32,11 +32,11 @@ The exact court and proceeding number establish that `VAL-CIV-001` is the alread
 
 There is **no basis to create a second Valencia master identity** for the same proceeding merely because the existing row is incomplete.
 
-## 3. What remains a gap
+## 3. Canonical consolidation completed; source-completion gaps remain
 
-The remaining defect is **field completeness / canonical consolidation**, not registration or identity.
+The prior **field-completeness / canonical-consolidation defect** is closed. On 30 August 2026, the canonical `VAL-CIV-001` row was physically updated without creating a duplicate identity.
 
-`VAL-CIV-001` must be treated as having these controlling corrected fields until the physical CSV row is consolidated:
+`VAL-CIV-001` now contains these controlling corrected fields:
 
 - `Proceeding_Class`: `DIRECT`
 - `Stream`: `Civil / banking / financial products`
@@ -50,20 +50,20 @@ The remaining defect is **field completeness / canonical consolidation**, not re
 - `Latest_Known_Event`: `Signed court diligence dated 6 Nov 2025 relisted hearing for 28 Jan 2027 at 10:00`
 - `Source_Status`: `VERIFIED_PRIMARY_DERIVED_PUBLIC_CONTROL`
 - `Repo_Canonical_Source`: `en/caixabank-valencia-claim/index.html` / `es/reclamacion-caixabank-valencia/index.html`
-- `Open_Reference_Gap`: `Physical CSV field consolidation; native/certified completion remains separately tracked in the Valencia dossier`
+- `Open_Reference_Gap`: `Native/certified file completeness, pleadings, merits disposition, service and finality remain tracked in the Valencia dossier`
 - `Public_Treatment`: `PUBLIC_CONTROLLED`
 
 Operational status:
 
-**PARTIALLY VERIFIED / REPAIR CONTROL ACTIVE — canonical identity is `VAL-CIV-001`; source-level identity, NIG, court and hearing are verified; the physical CSV fields remain stale until consolidated.**
+**VERIFIED / CANONICALLY CONSOLIDATED — canonical identity is `VAL-CIV-001`; source-level identity, NIG, court and hearing are verified. Native/certified file completeness, pleadings, merits disposition, service and finality remain separate open-source questions.**
 
-## 4. Controlling correction overlay
+## 4. Retired correction overlay
 
-Until the physical CSV row is safely consolidated, apply:
+The correction was governed during consolidation by:
 
 `archive/PROCEEDINGS_MASTER_REGISTER_VALENCIA_1859_2023_OVERLAY_30AUG2026.md`
 
-That file is now a **correction overlay for existing row `VAL-CIV-001`**, not a missing-row/new-ID overlay.
+That file is now **retired as a controlling layer** and preserved as the provenance trail for the correction of existing row `VAL-CIV-001`. It was never a basis for a missing-row/new-ID duplicate.
 
 ## 5. Unitary convergence — verified as a material analytical bridge
 
@@ -79,7 +79,7 @@ The public dossier itself cross-reconciles the banking claim with:
 
 Public-safe wording:
 
-> **Separate Valencia proceeding; directly relevant to the historic banking/financial-product package, enforcement chronology and the underlying economic history that intersects with Concurso 36/2012 and the hotel assets. Canonical identity: `VAL-CIV-001`; physical CSV field consolidation remains open.**
+> **Separate Valencia proceeding; directly relevant to the historic banking/financial-product package, enforcement chronology and the underlying economic history that intersects with Concurso 36/2012 and the hotel assets. Canonical identity: `VAL-CIV-001`; canonical field consolidation is complete.**
 
 This does **not** mean the Valencia court has adopted Por Derecho's insolvency, criminal, causation or liability allegations.
 
@@ -89,14 +89,14 @@ Separate professional correspondence may show additional strategic recognition o
 
 ## 7. Non-duplication rule
 
-Until the physical CSV row is consolidated:
+After physical CSV consolidation:
 
 - do not create a second master row for `ORD 1859/2023-9`;
 - preserve `VAL-CIV-001` as the canonical identity;
 - preserve this correction key and the overlay as the provenance trail;
-- do not claim the current raw CSV fields are fully current; and
-- use the controlling correction overlay whenever repository-wide proceedings analysis is performed.
+- use the canonical CSV fields for repository-wide proceedings analysis; and
+- retain this control and the retired overlay as the durable provenance trail.
 
 ## 8. Closure condition
 
-This reconciliation control closes when the physical `VAL-CIV-001` CSV row is updated with the verified fields above, the public Master Proceedings Register and Proceedings Interconnectivity Map are checked for propagation, and the overlay records retirement without loss of provenance.
+**Source-tree consolidation completed 30 August 2026.** The corrective branch's physical `VAL-CIV-001` CSV row contains the verified fields above; local Master Proceedings Register and Proceedings Interconnectivity Map audits pass; and the overlay records retirement without loss of provenance. Public/main closure becomes effective only when this corrective commit merges and deploys. Closure of this reconciliation control does not close the separately stated native/certified-file, pleadings, merits, service or finality gaps.

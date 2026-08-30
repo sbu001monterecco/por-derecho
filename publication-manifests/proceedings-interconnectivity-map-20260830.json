@@ -1,17 +1,19 @@
 {
+  "schema": "por-derecho.publication-manifest.v1",
   "publication_id": "PD-SP-PROCEEDINGS-INTERCONNECTIVITY-20260830-01",
   "owner": "Por Derecho / Project Sun Rock",
   "control_date": "2026-08-30",
-  "current_state": "PR_OPEN",
-  "state": "PR_OPEN",
-  "manifest_version": "1.0.0",
+  "current_state": "DEPLOYED",
+  "state": "DEPLOYED",
+  "manifest_version": "1.1.0",
   "title": "Proceedings Interconnectivity Map",
-  "purpose": "Provide a bilingual, unitary, non-fragmented map of legally distinct proceedings and their documented procedural or contextual interconnections without collapsing them into one case.",
+  "purpose": "Preserve the lifecycle of the original bilingual map of legally distinct proceedings and their controlled procedural or contextual interconnections.",
   "canonical_node_source": "archive/PROCEEDINGS_MASTER_REGISTER.csv",
   "governance": ".github/governance/UNITARY_PROCEEDINGS_INTERCONNECTIVITY_MAP_PROTOCOL_30AUG2026.md",
   "anti_fragmentation_governance": "archive/PROCEEDINGS_ANTI_FRAGMENTATION_CONVERGENCE_RULE_30AUG2026.md",
-  "schema": "assets/data/proceedings-interconnectivity-schema-v1.json",
-  "merge_sha": null,
+  "renderer_schema": "assets/data/proceedings-interconnectivity-schema-v1.json",
+  "pull_request": 1221,
+  "merge_sha": "012adfb794ae652372c595fa1038331f7889dc20",
   "expected_routes": {
     "es": ["es/mapa-procedimientos/index.html"],
     "en": ["en/proceedings-map/index.html"]
@@ -28,9 +30,17 @@
     "docs/deletion-audits/2026-08-30-unitary-proceedings-interconnectivity-map-continuity.md"
   ],
   "public_routes": ["/en/proceedings-map/", "/es/mapa-procedimientos/"],
-  "public_assets": ["/assets/proceedings-interconnectivity-map-20260830.js", "/assets/proceedings-interconnectivity-map-20260830.css"],
-  "backlinks": ["/en/master-proceedings-register/", "/es/registro-maestro-procedimientos/"],
-  "reader_modes": ["TRACK_MAP", "CHRONOLOGY_JOURNEY", "TRACE_ONE_PROCEEDING", "REVERSE_TRACE", "WHY_CONNECTED"],
+  "public_assets": [
+    "/assets/proceedings-interconnectivity-map-20260830.js",
+    "/assets/proceedings-interconnectivity-map-20260830.css"
+  ],
+  "reader_modes": [
+    "TRACK_MAP",
+    "CHRONOLOGY_JOURNEY",
+    "TRACE_ONE_PROCEEDING",
+    "REVERSE_TRACE",
+    "WHY_CONNECTED"
+  ],
   "evidential_boundaries": [
     "DIRECT_PROCEDURAL_EDGE_IS_NOT_CONTEXTUAL_BRIDGE",
     "PROCEDURAL_SEPARATENESS_IS_NOT_FACTUAL_EVIDENTIAL_PATRIMONIAL_OR_CAUSATION_INDEPENDENCE",
@@ -39,18 +49,37 @@
     "MAP_IS_NAVIGATION_NOT_A_MERITS_FINDING"
   ],
   "validation": {
+    "map_audit_run_id": 33323055344,
+    "publication_integrity_run_id": 33323055394,
+    "pages_run_id": 33323054588,
+    "pages_run_number": 1289,
+    "result": "success",
     "evidence": [
-      "PR #1221 dedicated proceedings interconnectivity audit passed on the initial implementation head before the anti-fragmentation supplement",
-      "PR #1221 master proceedings publication audit passed on the initial implementation head before the anti-fragmentation supplement"
+      "PR #1221 merged as 012adfb794ae652372c595fa1038331f7889dc20 after the dedicated map audit and publication-integrity checks succeeded.",
+      "Map audit run 33323055344 and publication-integrity run 33323055394 succeeded.",
+      "Pages deployment run 33323054588 succeeded."
     ]
+  },
+  "deployment_evidence": {
+    "workflow": "pages build and deployment",
+    "pages_run_id": 33323054588,
+    "pages_run_number": 1289,
+    "head_sha": "012adfb794ae652372c595fa1038331f7889dc20",
+    "status": "completed",
+    "conclusion": "success"
   },
   "verification": {
     "source_files_created": true,
     "canonical_csv_reused_not_duplicated": true,
     "ci_audit_added": true,
-    "pull_request": 1221,
-    "pr_merged": false,
-    "pages_deployment_success": false,
+    "pr_merged": true,
+    "pages_deployment_success": true,
     "live_routes_verified": false
+  },
+  "supersession": {
+    "state": "SUPERSEDED_BY_CASE_PRISM_CONTROLS",
+    "initial_case_prism_manifest": "publication-manifests/ascan-360-case-prism-20260830.json",
+    "v2_repair_manifest": "publication-manifests/ascan-360-case-prism-v2-repair-20260830.json",
+    "boundary": "Historical map deployment remains verified; later Case Prism controls have independent lifecycles."
   }
 }

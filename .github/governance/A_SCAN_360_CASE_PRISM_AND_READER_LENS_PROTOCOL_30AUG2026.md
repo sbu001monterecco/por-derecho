@@ -34,7 +34,7 @@ A separate docket number must not terminate the factual trace. A shared asset/ac
 
 The repository already required `CONVERGENCE_CLUSTER` and `FRAGMENTATION_AUDIT` views. Before this control, the public proceedings renderer primarily exposed track, chronology and single-proceeding trace views. That mismatch is an implementation gap.
 
-The Case Prism closes that gap by giving each controlled proposition a row and each legal/institutional lane a column. Every non-empty cell must state one of the following:
+The Case Prism closes that gap by giving each controlled proposition a row and each legal/institutional lane a column. Every coordinate must be explicit; an unexplained blank or dash is prohibited. Each coordinate must state one relationship status:
 
 - `DIRECT` — direct within the controlled lane;
 - `CONTEXT` — materially relevant cross-reading context only;
@@ -42,7 +42,11 @@ The Case Prism closes that gap by giving each controlled proposition a row and e
 - `NOT_LOCATED` — relevant treatment not located in the controlled corpus; or
 - `OUTSIDE` — outside that lane.
 
-A cell must also carry a plain-language reason and relevant canonical Master IDs where appropriate.
+A cell must independently state how the selected file treats the proposition: directly in file, expressly acknowledged, relied upon, contradicted/adversely treated, materially relevant context, not raised/not located, outside procedural scope or unresolved. Relationship and treatment are different axes.
+
+A cell must also carry a bilingual plain-language reason, evidence status, decision dependency, counsel/procurador lineage status and relevant canonical Master IDs where appropriate. Each proposition must expose its attribution class, strongest contrary record, controlled public source path, source needed, competent organ and consequences if confirmed or refuted.
+
+Every canonical evidence-status token displayed to a reader must have an English and Spanish label. The renderer may preserve the canonical token for auditability, but it must not substitute that token for the reader-facing bilingual explanation.
 
 ## 4. Case Prism is not a joinder engine
 
@@ -59,7 +63,7 @@ Formal notice, filing, admission, transmission and procedural usability remain s
 
 ## 5. Parallel-proceedings lane view
 
-The same controlled propositions must also be readable in approximate chronological order with each legal lane labelled independently.
+The same controlled propositions must also be readable in approximate chronological order with each legal lane rendered as a stable independent column. Event cards with wrapping lane tags do not satisfy this requirement.
 
 The purpose is to make two propositions visible at the same time:
 
@@ -73,13 +77,13 @@ Chronological adjacency is not causation.
 
 ## 6. Isolation test / fragmentation audit
 
-For each selected lane, the public renderer must distinguish:
+For each selected exact canonical proceeding, the public renderer must distinguish:
 
 ### Visible inside the selected lane
-Only propositions marked `DIRECT` for that lane.
+Only propositions marked `DIRECT` for that lane and keyed to the selected exact proceeding.
 
 ### Material context outside the selected lane
-Only propositions expressly curated as `CONTEXT`, `OPEN` or `NOT_LOCATED` for that lane.
+Controlled propositions visible elsewhere but not directly keyed to the selected exact proceeding. The interface must visibly suppress/fade the wider corpus and provide an immediate full-corpus restore.
 
 The isolation view is methodological. It does not prove that an organ knew, should have known, should admit, should investigate or should decide external material.
 
@@ -92,10 +96,13 @@ For each proceeding/laned object the underlying audit question is:
 The public Case Prism may offer reader lenses including:
 
 - Court / magistrate;
+- Audiencia Provincial;
 - Ministerio Fiscal;
 - CGPJ / judicial supervision;
 - regulator / public authority; and
-- journalist / researcher.
+- journalist / researcher;
+- affected owner / creditor; and
+- professional / funder.
 
 A reader lens may change:
 
@@ -127,6 +134,7 @@ The Case Prism currently includes the controlled public-safe lanes needed to mak
 - Ministerio Fiscal;
 - CGPJ / LAJ supervision; and
 - historical possession/exploitation.
+- administrative / RIC / Regional Incentives / ERDF and other controlled public-money routes.
 
 This is a controlled priority denominator, not a claim that every repository proceeding belongs in every Case Prism row.
 
@@ -143,6 +151,15 @@ The public Case Prism is intentionally finite. Its current propositions cover:
 - historical possession/exploitation genealogy;
 - Meeting Point / FTI contextual restructuring with the Sun Park bridge still open; and
 - judicial-supervision treatment versus merits competence.
+- Community authority;
+- debt/voting denominator;
+- pre-7 June 2018 funded exit;
+- 2020 project promotion;
+- the July-2021 `54 / 190 / 18` title record;
+- 2022 adjudication/deed/registration;
+- productive-unit, income and value consequences;
+- AC conduct versus remuneration; and
+- RIC / incentives / ERDF programme dependencies.
 
 New propositions require source/status review before admission to the public Case Prism.
 

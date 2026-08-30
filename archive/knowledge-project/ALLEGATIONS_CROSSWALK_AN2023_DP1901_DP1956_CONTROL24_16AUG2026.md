@@ -41,7 +41,7 @@ Apply `archive/CORRECTION_REGISTER.md` before reuse.
 | AN appeal | Sala Penal AN, Rollo 120/2024, Auto 119/2024 | Appeal against inadmission | Dismissed 8 Mar 2024 | VERIFIED PROCEDURAL |
 | Supreme Court | Casación 1867/2024 | Attempted cassation against AN order | Not admitted | VERIFIED PROCEDURAL |
 | Control 21 | DP 1901/2026, NIG 3501643220260016977 | Narrower private-actor evidence/document/title/control track | 12 Jul 2026 providencia gave MF 5 days on admission; later signed act not yet located | VERIFIED TO THAT POINT / LATER STATUS OPEN |
-| Control 22 | DP 1956/2026, NIG 3501643220260016826 | AC conduct / estate duty / accounting track | Provisional archive and reform/subsidiary appeal reported; signed archive/appeal chain still to complete | REPORTED / PRIMARY COMPLETION PENDING |
+| Control 22 | DP 1956/2026, NIG 3501643220260016826 | AC conduct / estate duty / accounting track | Provisional dismissal / sobreseimiento provisional recorded on 21 July 2026; no filed reform/subsidiary appeal is currently established in the controlled corpus; signed dismissal order and current status/finality certification remain to complete | VERIFIED PROCEDURAL STATUS / PRIMARY ORDER COMPLETION PENDING |
 | Control 24 | internal locator only | Judicial acts/supervision / possible criminal relevance | Filed 18 Jun 2026 via TSJ route; no verified official criminal case number in controlled corpus | FILED PACKAGE VERIFIED / OFFICIAL TREATMENT OPEN |
 | EG49/2026 | FGE Unidad Delitos contra Administración Pública | Request to trace/review 2019 fiscal position | Refused/archived on competence/function grounds 3 Jun; repeat added and archived 8 Jun | VERIFIED PROCEDURAL |
 
