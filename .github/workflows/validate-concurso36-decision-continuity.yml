@@ -16,6 +16,7 @@ on:
       - 'assets/data/caepr-caret-unitary-digest-v1.json'
       - 'assets/data/concurso36-autos-fulltext-v1.json'
       - 'assets/data/concurso36-complete-record-v1.json'
+      - 'assets/data/concurso36-what-court-ordered-v2.json'
       - 'assets/data/concurso36-court-file-v1.json'
       - 'assets/data/concurso36-decision-continuity-2014-2026-v1.json'
       - 'assets/data/concurso36-decision-continuity-2014-2026-v1.xlsx'
@@ -31,14 +32,18 @@ on:
       - 'scripts/build_concurso36_decision_continuity_report.py'
       - 'scripts/build_concurso36_decision_continuity_workbook.mjs'
       - 'scripts/validate_concurso36_complete_record.py'
+      - 'scripts/validate_concurso36_complete_record_v2.py'
       - 'scripts/validate_concurso36_decision_continuity.py'
       - 'scripts/validate_concurso36_primary_autos_redigest.py'
+      - 'scripts/validate_concurso36_primary_autos_redigest_v2.py'
       - 'scripts/validate_concurso_autos_publication.py'
       - 'sitemap.xml'
       - 'sitemap-concurso36-court-orders.xml'
       - 'evidence/insolvency-36-2012/concurso-autos/full-text/**'
       - 'es/concurso-36-2012-autos-resoluciones/**'
       - 'en/insolvency-36-2012-orders-decisions/**'
+      - 'es/concurso-36-2012-que-ordeno-el-juzgado/**'
+      - 'en/concurso-36-2012-what-the-court-ordered/**'
   push:
     branches: [main]
     paths:
@@ -55,6 +60,7 @@ on:
       - 'assets/data/caepr-caret-unitary-digest-v1.json'
       - 'assets/data/concurso36-autos-fulltext-v1.json'
       - 'assets/data/concurso36-complete-record-v1.json'
+      - 'assets/data/concurso36-what-court-ordered-v2.json'
       - 'assets/data/concurso36-court-file-v1.json'
       - 'assets/data/concurso36-decision-continuity-2014-2026-v1.json'
       - 'assets/data/concurso36-decision-continuity-2014-2026-v1.xlsx'
@@ -70,14 +76,18 @@ on:
       - 'scripts/build_concurso36_decision_continuity_report.py'
       - 'scripts/build_concurso36_decision_continuity_workbook.mjs'
       - 'scripts/validate_concurso36_complete_record.py'
+      - 'scripts/validate_concurso36_complete_record_v2.py'
       - 'scripts/validate_concurso36_decision_continuity.py'
       - 'scripts/validate_concurso36_primary_autos_redigest.py'
+      - 'scripts/validate_concurso36_primary_autos_redigest_v2.py'
       - 'scripts/validate_concurso_autos_publication.py'
       - 'sitemap.xml'
       - 'sitemap-concurso36-court-orders.xml'
       - 'evidence/insolvency-36-2012/concurso-autos/full-text/**'
       - 'es/concurso-36-2012-autos-resoluciones/**'
       - 'en/insolvency-36-2012-orders-decisions/**'
+      - 'es/concurso-36-2012-que-ordeno-el-juzgado/**'
+      - 'en/concurso-36-2012-what-the-court-ordered/**'
   workflow_dispatch:
 
 permissions:
@@ -109,8 +119,10 @@ jobs:
           scripts/build_concurso_autos_fulltext.py
           scripts/build_concurso_autos_pages.py
           scripts/validate_concurso36_complete_record.py
+          scripts/validate_concurso36_complete_record_v2.py
           scripts/validate_concurso_autos_publication.py
           scripts/validate_concurso36_primary_autos_redigest.py
+          scripts/validate_concurso36_primary_autos_redigest_v2.py
           scripts/validate_concurso36_decision_continuity.py
       - name: Check continuity workbook builder syntax
         run: node --check scripts/build_concurso36_decision_continuity_workbook.mjs
@@ -119,8 +131,8 @@ jobs:
       - name: Require deterministic generated pages
         run: git diff --exit-code -- es/concurso-36-2012-autos-resoluciones/index.html en/insolvency-36-2012-orders-decisions/index.html
       - name: Re-verify canonical whole-record source
-        run: python -B scripts/validate_concurso36_complete_record.py
+        run: python -B scripts/validate_concurso36_complete_record_v2.py
       - name: Re-verify controlling primary-orders date and effect rules
-        run: python -B scripts/validate_concurso36_primary_autos_redigest.py
+        run: python -B scripts/validate_concurso36_primary_autos_redigest_v2.py
       - name: Validate continuity counts, chronology, privacy and lifecycle
         run: python -B scripts/validate_concurso36_decision_continuity.py

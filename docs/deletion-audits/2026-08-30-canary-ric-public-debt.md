@@ -3,7 +3,7 @@
 **Control:** `PD-CANARY-RIC-PUBLIC-DEBT-20260830-01`
 
 **Date:** 30 August 2026
-**Repository state at preparation:** pending reviewed merge, Pages deployment and exact live readback
+**Repository state:** live-verified via PR #1232, merge `cc4945ec7da9f52f9035bb17b21f366d39f65201`, Pages run `33337650561` / #1298 and four exact no-cache public readbacks
 
 ## Preserved reasoning
 
@@ -24,7 +24,7 @@ The controlled package records the eight-file / 734-page denominator, per-file p
 
 ## Deletion-safety verdict
 
-**Website/repository reasoning:** `PENDING LIVE VERIFICATION` at preparation. It becomes reconstructible after the reviewed merge, successful Pages deployment and exact public-byte readback are recorded in the publication manifest and deployment log.
+**Website/repository reasoning:** `DELETION-SAFE / LIVE-VERIFIED` for reconstruction of this publication. The reviewed tree, control memo, structured facts, registers, validator, public pages and deployment evidence preserve the reasoning without reliance on the originating chat.
 
 **Underlying sources:** `NOT SAFE TO DELETE FROM PRIVATE CUSTODY`. The uploaded PDFs are deliberately excluded from the public repository. A repository closeout does not authorise deletion of source binaries, lawful custody records or the ability to re-query the original production. Hashes authenticate a later comparison; they do not recreate the source bytes.
 

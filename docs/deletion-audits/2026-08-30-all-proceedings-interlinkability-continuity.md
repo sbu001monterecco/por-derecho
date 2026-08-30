@@ -2,11 +2,11 @@
 
 ## Current lifecycle state
 
-`PREPARED_PENDING_MERGE` on branch
+`PR_OPEN` in pull request **#1235** on branch
 `codex/all-proceedings-interlinkability-20260830`, based on
-`cc4945ec7da9f52f9035bb17b21f366d39f65201`.
+`9190db0050a90682be06135214e6ae0947bb3bee`.
 
-This record does **not** certify a pull request, CI, merge, deployment, live HTTP
+This record certifies the exact remote source tree and open pull request. It does **not** certify green CI, merge, deployment, live HTTP
 readback or deletion-safe closeout. The controlling lifecycle record is
 `publication-manifests/all-proceedings-interlinkability-20260830.json`.
 
@@ -103,7 +103,11 @@ python3 scripts/validate_operational_identity_registry.py
 python3 scripts/validate_repository_preservation.py
 python3 scripts/validate_publication_integrity.py
 python3 scripts/validate_audience_experience.py
-python3 scripts/validate_private_source_statement_osint_governance.py --base cc4945ec7da9f52f9035bb17b21f366d39f65201
+python3 scripts/validate_private_source_statement_osint_governance.py --base 9190db0050a90682be06135214e6ae0947bb3bee
+python3 scripts/validate_alberto_meeting_point_first_hop_caret.py
+python3 scripts/validate_concurso36_complete_record_v2.py
+python3 scripts/validate_concurso36_primary_autos_redigest_v2.py
+python3 scripts/validate_concurso36_decision_continuity.py
 node --check assets/master-proceedings-publication-20260830.js
 node --check assets/proceedings-interconnectivity-map-20260830.js
 node --check assets/site.js
@@ -118,6 +122,13 @@ assertion multiplicity and the bounded disappearing-proposition sets. It was not
 run in this container because the local Playwright dependency was not installed;
 browser availability was therefore not reached. The workflow installs Playwright
 and Chromium and must run the smoke before merge.
+
+The PR integration pass also refreshed the two controlled institutional-route
+snapshots and replaced obsolete v1 date assertions in the decision-continuity
+workflow with the existing v2 primary reinspection controls. The push-only
+AM357 live verifier now asserts the current 31/31 specialist, 61/130 first-hop,
+21/24 unitary and 226-ID registry denominators while preserving its immutable
+204-ID historical deployment snapshot.
 
 ## Steps required before a deletion-safe closeout
 
@@ -136,5 +147,5 @@ and Chromium and must run the smoke before merge.
    clean renderer readback does not close that separate question.
 7. Preserve the `24/84` decision-dependency content gap until additional
    proposition coordinates are source-supported and reviewed.
-8. Only after those steps may the lifecycle state advance beyond
-   `PREPARED_PENDING_MERGE` or deletion-safe continuity be claimed.
+8. Only after those steps may the lifecycle state advance beyond `PR_OPEN` or
+   deletion-safe continuity be claimed.

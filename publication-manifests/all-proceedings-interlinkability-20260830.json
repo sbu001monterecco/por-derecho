@@ -4,10 +4,10 @@
   "publication_id": "PD-SP-ALL-PROCEEDINGS-INTERLINKABILITY-20260830-01",
   "owner": "Por Derecho / Project Sun Rock",
   "control_date": "2026-08-30",
-  "current_state": "PREPARED_PENDING_MERGE",
-  "state": "PREPARED_PENDING_MERGE",
+  "current_state": "PR_OPEN",
+  "state": "PR_OPEN",
   "purpose": "Make every controlled public proceeding traceable and every public exact proceeding selectable for a source-bounded isolation and reconnection test, without inventing joinder, shared merits, knowledge or responsibility.",
-  "source_base_sha": "cc4945ec7da9f52f9035bb17b21f366d39f65201",
+  "source_base_sha": "9190db0050a90682be06135214e6ae0947bb3bee",
   "head_branch": "codex/all-proceedings-interlinkability-20260830",
   "expected_routes": {
     "en": [
@@ -50,6 +50,7 @@
     "assets/data/proceedings-case-prism-v1.json",
     "assets/data/proceedings-interconnectivity-schema-v1.json",
     "assets/data/matter-identity-registry-v1.proceedings.json",
+    "assets/data/caepr-caret-alberto-meeting-point-first-hop-v1.json",
     "assets/master-proceedings-publication-20260830.js",
     "assets/site.js",
     "assets/proceedings-interconnectivity-map-20260830.js",
@@ -63,6 +64,8 @@
     "scripts/validate_operational_identity_registry.py",
     ".github/workflows/audit-master-proceedings-publication.yml",
     ".github/workflows/audit-proceedings-interconnectivity-map.yml",
+    ".github/workflows/alberto-meeting-point-cross-proceeding.yml",
+    ".github/workflows/validate-concurso36-decision-continuity.yml",
     "publication-manifests/all-proceedings-interlinkability-20260830.json",
     "docs/deletion-audits/2026-08-30-all-proceedings-interlinkability-continuity.md"
   ],
@@ -123,7 +126,8 @@
     "operational_identity_registry": "PASS",
     "counsel_procurador_governance": "PASS_WITH_DENOMINATOR_INCOMPLETE",
     "repository_preservation": "PASS",
-    "publication_integrity": "PASS_94_MANIFESTS_46_CHANGED_FILES_INSPECTED_BASE_TO_COMMITTED_HEAD",
+    "publication_integrity": "PASS_95_MANIFESTS_49_CHANGED_FILES_INSPECTED_BASE_TO_COMMITTED_HEAD",
+    "ci_integration_repairs": "PASS_INSTITUTIONAL_ROUTE_SNAPSHOTS_REFRESHED_DECISION_CONTINUITY_USES_CURRENT_V2_PRIMARY_DATE_CONTROLS_AND_PUSH_LIVE_VERIFIER_USES_CURRENT_CARET_IDENTITY_DENOMINATORS",
     "audience_experience": "PASS",
     "private_source_statement_osint_governance": "PASS",
     "python_and_javascript_syntax": "PASS",
@@ -137,11 +141,11 @@
     "Every exact ID routes between the Master Register and renderer, but a complete exact-ID-to-proceeding-dossier/source-page denominator has not been established and is not inferred.",
     "Counsel/procurador lineage remains denominator-incomplete under its specialist control.",
     "The public renderer no longer fetches the operational CSV, but this does not prove that the tracked CSV is unavailable through the repository or Pages artifact.",
-    "No pull request, merge, deployment or independent live HTTP readback has been performed for this implementation.",
+    "Pull request #1235 is open; CI is not yet green and no merge, deployment or independent live HTTP readback has been completed.",
     "The expanded browser smoke is encoded in CI but was not executed locally because the Playwright dependency was not installed; Chromium availability was not reached."
   ],
   "publication_closeout": {
-    "pull_request": null,
+    "pull_request": 1235,
     "merge_sha": null,
     "deployment_run": null,
     "live_http_readback": null
@@ -150,7 +154,7 @@
     "source_prepared": true,
     "local_static_and_structural_gates_passed": true,
     "browser_smoke_executed": false,
-    "pull_request_created": false,
+    "pull_request_created": true,
     "ci_green": false,
     "merged": false,
     "pages_deployed": false,
@@ -158,5 +162,5 @@
     "deletion_safe": false
   },
   "continuity_record": "docs/deletion-audits/2026-08-30-all-proceedings-interlinkability-continuity.md",
-  "publication_boundary": "PREPARED_PENDING_MERGE proves only the current repository implementation and reproducible local static checks. It does not prove deployment, live behaviour, full Case Prism content coverage, privacy of the tracked operational CSV, any allegation or any legal conclusion."
+  "publication_boundary": "PR_OPEN proves the exact remote source tree and reproducible local static checks only. It does not prove CI completion, merge, deployment, live behaviour, full Case Prism content coverage, privacy of the tracked operational CSV, any allegation or any legal conclusion."
 }
