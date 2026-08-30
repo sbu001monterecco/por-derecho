@@ -1,0 +1,29 @@
+{
+  "publication_id": "PD-SP-INSTITUTIONAL-PROCEEDINGS-RERUN-20260830-01",
+  "control_date": "2026-08-30",
+  "state": "BRANCH_READY",
+  "purpose": "Rerun the unitary reverse-engineered proceedings audit, correct the Valencia canonical identity to existing row VAL-CIV-001, and propagate exact reader-facing corrections through the bilingual proceedings map and public master-register pages.",
+  "base_sha": "b20853ceb1aa87ff1d05456606ee2e7673a2d2bb",
+  "head_branch": "unitary-rerun-thread-audit-20260830",
+  "expected_routes": [
+    "en/proceedings-map/index.html",
+    "es/mapa-procedimientos/index.html",
+    "en/master-proceedings-register/index.html",
+    "es/registro-maestro-procedimientos/index.html"
+  ],
+  "canonical_correction": {
+    "master_id": "VAL-CIV-001",
+    "proceeding": "ORD 1859/2023-9",
+    "nig": "46250-42-1-2023-0049579",
+    "hearing": "2027-01-28T10:00:00+01:00",
+    "correction_type": "existing-row field consolidation; no duplicate Master ID"
+  },
+  "verification": {
+    "pr_created": false,
+    "ci_green": false,
+    "merged": false,
+    "main_readback": false,
+    "pages_deployed": false,
+    "public_readback": false
+  }
+}
