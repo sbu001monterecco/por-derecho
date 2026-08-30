@@ -8,12 +8,16 @@
   "base_sha": "b20853ceb1aa87ff1d05456606ee2e7673a2d2bb",
   "head_branch": "unitary-rerun-thread-audit-20260830",
   "pull_request": 1225,
-  "expected_routes": [
-    "en/proceedings-map/index.html",
-    "es/mapa-procedimientos/index.html",
-    "en/master-proceedings-register/index.html",
-    "es/registro-maestro-procedimientos/index.html"
-  ],
+  "expected_routes": {
+    "en": [
+      "en/proceedings-map/index.html",
+      "en/master-proceedings-register/index.html"
+    ],
+    "es": [
+      "es/mapa-procedimientos/index.html",
+      "es/registro-maestro-procedimientos/index.html"
+    ]
+  },
   "canonical_correction": {
     "master_id": "VAL-CIV-001",
     "proceeding": "ORD 1859/2023-9",
