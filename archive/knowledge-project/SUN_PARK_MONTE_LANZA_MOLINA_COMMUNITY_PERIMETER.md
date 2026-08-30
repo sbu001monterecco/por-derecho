@@ -81,8 +81,8 @@ This is a representation fact for the meeting. It does not prove a single common
 
 ### 2011 governance facts
 
-- AAS was President by 2 Feb 2011.
-- FMMM was Community Administrator by 22 Jun 2011.
+- The controlled source records AAS as elected/acting President by 2 Feb 2011; Gil disputes the legitimacy of that office and every act-specific authority proposition remains open.
+- The controlled source records FMMM in Community Administrator functions by 22 Jun 2011; Gil disputes the legitimacy of that appointment/mandate and each act remains separately auditable.
 - Montelanza was already an owner/entity in the Community record.
 - The source shows multiple separate owners and representatives. Do not treat all Molina-named people as one person, company or faction.
 

@@ -33,6 +33,7 @@
 .pd-proceedings-page .pd-register-tools{display:flex;justify-content:space-between;gap:.8rem;align-items:center;margin:1rem 0;flex-wrap:wrap}
 .pd-proceedings-page .pd-register-tools button{border:1px solid #243b44;background:#243b44;color:#fff;border-radius:999px;padding:.62rem .85rem;font-weight:800;cursor:pointer}
 .pd-proceedings-page .pd-register-table-wrap{overflow:auto;background:#fff;border:1px solid #dedbd2;border-radius:18px}
+.pd-proceedings-page .pd-register-table-wrap tr:target{outline:3px solid #cf8f2e;outline-offset:-3px;background:#fff8df}
 .pd-proceedings-page table{width:100%;border-collapse:collapse;min-width:1150px;font-size:.85rem}
 .pd-proceedings-page th{position:sticky;top:0;background:#e9e6de;text-align:left;padding:.75rem;border-bottom:1px solid #cbc7bd;z-index:2}
 .pd-proceedings-page td{vertical-align:top;padding:.78rem;border-bottom:1px solid #ece9e1;line-height:1.45}

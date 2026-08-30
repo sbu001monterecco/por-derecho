@@ -11,7 +11,7 @@
 
 - **Lock:** `LOCKED_CANONICAL`
 - **Canonical expansion:** `AAS = Asunción Aizpurúa Sánchez`
-- **Minimum date:** President of the Comunidad by **2 February 2011**
+- **Minimum source date:** recorded/elected as Community president by **2 February 2011**; lawful office and act-specific authority remain disputed
 - **22 June 2011:** represented Roque Prieto, S.L. and multiple owners in the Community meeting record.
 - **Proceeding connection:** Community/Roque Prieto side in P.O. 562/2014.
 - **Do not use:** `Azuiprua`, `Aizprua`, or another guessed expansion.

@@ -151,6 +151,17 @@ def source_link(source: dict, source_id: str, lang: str, label: str | None = Non
     return f'<a href="{esc(url)}"{attrs}>{esc(text)}</a>'
 
 
+def identity_label(node: dict) -> str:
+    """Render a caret only when the node resolves to a confirmed registry person."""
+    name = esc(node["canonical_name"])
+    if node.get("identity_resolution") != "CARET_CONFIRMED":
+        return name
+    return (
+        f'<span data-caepr-id="{esc(node["registry_id"])}" '
+        f'data-caret-state="CARET_CONFIRMED">{name}<sup>^</sup></span>'
+    )
+
+
 def render_page(data: dict, node: dict, lang: str) -> str:
     t = TEXT[lang]
     other = "en" if lang == "es" else "es"
@@ -160,6 +171,9 @@ def render_page(data: dict, node: dict, lang: str) -> str:
     es_url = f"{BASE_URL}/es/{node['routes']['es']}/"
     en_url = f"{BASE_URL}/en/{node['routes']['en']}/"
     title = local(node["headline"], lang)
+    title_html = esc(title)
+    if title.startswith(node["canonical_name"]):
+        title_html = identity_label(node) + esc(title[len(node["canonical_name"]):])
     lead = local(node["lead"], lang)
     description = lead if len(lead) <= 158 else lead[:155].rsplit(" ", 1)[0] + "…"
     nodes_by_id = {entry["id"]: entry for entry in data["nodes"]}
@@ -196,7 +210,7 @@ def render_page(data: dict, node: dict, lang: str) -> str:
         )
         relation_rows.append(
             '<tr>'
-            f'<td><a href="{esc(other_href)}">{esc(other_node["canonical_name"])}</a></td>'
+            f'<td><a href="{esc(other_href)}">{identity_label(other_node)}</a></td>'
             f'<td>{esc(edge["period"])}</td>'
             f'<td><span class="cpn-pill" data-status="{esc(edge["status"])}">{esc(t["class_labels"][edge["status"]])}</span></td>'
             f'<td>{esc(local(edge["proposition"], lang))}<small><strong>{esc(t["limit"])}:</strong> {esc(local(edge["limit"], lang))} · {citations}</small></td>'
@@ -227,11 +241,12 @@ def render_page(data: dict, node: dict, lang: str) -> str:
         current = ' aria-current="page"' if entry["id"] == node["id"] else ""
         network_links.append(
             f'<a class="cpn-network-link" href="../{esc(entry["routes"][lang])}/"{current}>'
-            f'<strong>{esc(entry["canonical_name"])}</strong>'
+            f'<strong>{identity_label(entry)}</strong>'
             f'<span>{esc(t[entry["kind"]])}</span></a>'
         )
     core_links = "".join(f'<a class="button" href="{esc(href)}">{esc(label)}</a>' for href, label in t["core_links"])
     aliases = " · ".join(esc(alias) for alias in node["aliases"])
+    review_note = local(node["review_note"], lang) if node.get("review_note") else t["updated"]
 
     return f'''<!doctype html>
 <html lang="{lang}">
@@ -266,7 +281,7 @@ def render_page(data: dict, node: dict, lang: str) -> str:
     <div class="shell cpn-record">
       <nav class="cpn-breadcrumbs" aria-label="Breadcrumb"><a href="../">{esc(t["home_label"])}</a><span aria-hidden="true">/</span><a href="../{'actores-partes-abogados-representantes' if lang == 'es' else 'actors-parties-lawyers-representatives'}/">{esc(t["archive"])}</a><span aria-hidden="true">/</span><span>{esc(t["record"])}</span></nav>
       <p class="eyebrow">{esc(local(node["kicker"], lang))}</p>
-      <h1>{esc(title)}</h1>
+      <h1>{title_html}</h1>
       <p class="lead">{esc(lead)}</p>
       <p class="cpn-aliases"><strong>{'Variantes de búsqueda' if lang == 'es' else 'Search variants'}:</strong> {aliases}. {'No sustituyen la identidad canónica.' if lang == 'es' else 'They do not replace the canonical identity.'}</p>
       <div class="cpn-status-grid" aria-label="{'Carriles de estado probatorio' if lang == 'es' else 'Evidence-status lanes'}">{''.join(lanes)}</div>
@@ -297,7 +312,7 @@ def render_page(data: dict, node: dict, lang: str) -> str:
   </section>
 
   <section class="cpn-section">
-    <div class="shell cpn-record"><p class="eyebrow">{esc(t["sources_kicker"])}</p><h2>{esc(t["sources_title"])}</h2><p class="cpn-intro">{esc(t["sources_intro"])}</p><div class="cpn-source-grid">{''.join(source_cards)}</div><p class="cpn-source-note">{esc(t["updated"])}</p></div>
+    <div class="shell cpn-record"><p class="eyebrow">{esc(t["sources_kicker"])}</p><h2>{esc(t["sources_title"])}</h2><p class="cpn-intro">{esc(t["sources_intro"])}</p><div class="cpn-source-grid">{''.join(source_cards)}</div><p class="cpn-source-note">{esc(review_note)}</p></div>
   </section>
 
   <section class="cpn-section cpn-alt">
@@ -329,6 +344,8 @@ def validate_data(data: dict) -> None:
             if source_id not in sources:
                 raise ValueError(f"edge references unknown source: {source_id}")
     for node in nodes:
+        if node.get("identity_resolution") == "CARET_CONFIRMED" and not node.get("registry_id"):
+            raise ValueError(f"{node['id']} is CARET_CONFIRMED without a registry_id")
         for required in ("verified", "attributed", "open"):
             if required not in node["lanes"]:
                 raise ValueError(f"{node['id']} missing {required} lane")

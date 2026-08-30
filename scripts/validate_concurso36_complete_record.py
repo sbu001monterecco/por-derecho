@@ -1211,20 +1211,28 @@ def check_route_pages(failures: list[str]) -> None:
             require(stale not in text,
                     f"{route} retains superseded missing-signed-decision wording: {stale!r}", failures)
 
-    # The disputed alternate reconstruction must not escape into the analytical
-    # critical readers.  Source transcriptions elsewhere may quote a party's
-    # historical wording and are therefore deliberately outside this scan.
-    disputed_date_patterns = (
-        r"\b8 February 2018\b",
-        r"\b8-Feb-2018\b",
-        r"\b08/02/2018\b",
-        r"\b8 de febrero de 2018\b",
-    )
-    for route in CRITICAL_READER_ROUTES:
-        raw = page_text.get(route, ("", "", []))[0]
-        for pattern in disputed_date_patterns:
-            require(re.search(pattern, raw, flags=re.IGNORECASE) is None,
-                    f"{route} republishes the superseded creditor-date layer: {pattern}", failures)
+    # The 29-Aug-2026 direct primary reinspection supersedes the older rule that
+    # treated 15 February as the date of the creditor-substitution order.  The
+    # critical readers must now preserve both temporal layers without merging
+    # them: 8 February is the date stated in the body of the Auto; 15 February
+    # is the visible notification/custody layer on the located copy.
+    critical_date_markers = {
+        CRITICAL_READER_ROUTES[0]: (
+            "8 de febrero de 2018",
+            "NOTIFICADO 15/02/2018",
+            "notificación/custodia",
+        ),
+        CRITICAL_READER_ROUTES[1]: (
+            "8 February 2018",
+            "NOTIFICADO 15/02/2018",
+            "notification/custody",
+        ),
+    }
+    for route, markers in critical_date_markers.items():
+        raw = page_text.get(route, ("", "", []))[1]
+        for marker in markers:
+            require(marker.lower() in raw.lower(),
+                    f"{route} missing supersession-aware creditor-date marker {marker!r}", failures)
 
     for route, (_, _, links) in page_text.items():
         check_local_links(ROOT / route / "index.html", links, failures)

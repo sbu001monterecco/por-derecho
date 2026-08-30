@@ -9,6 +9,20 @@
     en: new URL('en/master-proceedings-register/', repoBase).href,
     es: new URL('es/registro-maestro-procedimientos/', repoBase).href
   };
+  const detailRoutes = {
+    'LZ-JUD-003': {
+      en: new URL('en/arrecife-1103-2018-procedural-lineage/', repoBase).href,
+      es: new URL('es/arrecife-1103-2018-cadena-procesal/', repoBase).href
+    },
+    'LZ-APP-004': {
+      en: new URL('en/arrecife-1103-2018-procedural-lineage/', repoBase).href,
+      es: new URL('es/arrecife-1103-2018-cadena-procesal/', repoBase).href
+    },
+    'LZ-JUD-043': {
+      en: new URL('en/dp-3205-2014-arrecife/', repoBase).href,
+      es: new URL('es/dp-3205-2014-arrecife/', repoBase).href
+    }
+  };
   const mapRoutes = {
     en: new URL('en/proceedings-map/', repoBase).href,
     es: new URL('es/mapa-procedimientos/', repoBase).href
@@ -19,8 +33,8 @@
     if (document.querySelector('link[data-master-proceedings-css]')) return;
     const link = document.createElement('link');
     link.rel = 'stylesheet';
-    link.href = new URL('master-proceedings-publication-20260830.css?v=20260830a', assetBase).href;
-    link.setAttribute('data-master-proceedings-css', '20260830a');
+    link.href = new URL('master-proceedings-publication-20260830.css?v=20260830b', assetBase).href;
+    link.setAttribute('data-master-proceedings-css', '20260830b');
     document.head.appendChild(link);
   };
 
@@ -56,6 +70,7 @@
   }[ch]));
 
   const norm = (value) => String(value || '').trim();
+  const linkMasterReferences = (value) => esc(value).replace(/\b([A-Z]{2,4}(?:-[A-Z0-9]+){2,})\b/g, '<a href="#record-$1">$1</a>');
 
   const initRegister = async () => {
     const root = document.querySelector('[data-master-proceedings-page]');
@@ -66,13 +81,15 @@
       visible: 'registros visibles', export: 'Exportar vista filtrada CSV', all: 'Todos',
       search: 'Buscar referencia, órgano, objeto, estado…', stream: 'Vía', state: 'Tipo de registro', source: 'Estado de fuente',
       id: 'ID', type: 'Clase / vía', organ: 'Órgano / custodio', ref: 'Referencia', period: 'Periodo', connection: 'Conexión / objeto', status: 'Estado / último evento', links: 'Relaciones', proof: 'Fuente / brecha',
-      noRows: 'No hay filas que coincidan con los filtros actuales.', trace: 'Abrir trazabilidad exacta', isolation: 'Prueba de aislamiento'
+      noRows: 'No hay filas que coincidan con los filtros actuales.', trace: 'Abrir trazabilidad exacta', isolation: 'Prueba de aislamiento', dossier: 'Abrir expediente',
+      nonExactRelation: 'Sólo navegación/contexto; no es un vínculo procesal establecido'
     } : {
       loading: 'Loading the controlled public projection…', error: 'The master register could not be loaded.',
       visible: 'visible records', export: 'Export filtered view CSV', all: 'All',
       search: 'Search reference, organ, object, status…', stream: 'Track', state: 'Record state', source: 'Source status',
       id: 'ID', type: 'Class / track', organ: 'Organ / custodian', ref: 'Reference', period: 'Period', connection: 'Connection / object', status: 'Status / latest event', links: 'Relationships', proof: 'Source / gap',
-      noRows: 'No rows match the current filters.', trace: 'Open exact trace', isolation: 'Isolation test'
+      noRows: 'No rows match the current filters.', trace: 'Open exact trace', isolation: 'Isolation test', dossier: 'Open dossier',
+      nonExactRelation: 'Navigation/context only; not an established procedural edge'
     };
 
     const loading = root.querySelector('[data-register-loading]');
@@ -150,21 +167,29 @@
           const isolationLink = isExactProceeding
             ? `<br><a href="${esc(isolationHref)}" data-isolation-master-id="${esc(r.Master_ID)}">${esc(copy.isolation)}</a>`
             : '';
-          const relation = [r.Parent_Master_ID ? `${lang === 'es' ? 'Padre' : 'Parent'}: ${r.Parent_Master_ID}` : '', r.Linked_Proceedings, r.Appeal_or_Review].filter(Boolean).join(' · ');
+          const recordedRelation = [r.Parent_Master_ID ? `${lang === 'es' ? 'Padre' : 'Parent'}: ${r.Parent_Master_ID}` : '', r.Linked_Proceedings, r.Appeal_or_Review].filter(Boolean).join(' · ');
+          const relation = recordedRelation && !isExactProceeding
+            ? `${recordedRelation} · ${copy.nonExactRelation}`
+            : recordedRelation;
           const statusText = [r.Status, r.Latest_Known_Event].filter(Boolean).join(' — ');
           const proofText = [r.Source_Status, r.Open_Reference_Gap].filter(Boolean).join(' — ');
           const organText = [r.Origin_Organ, r.Current_Custodian && r.Current_Custodian !== r.Origin_Organ ? `${lang === 'es' ? 'Ahora' : 'Now'}: ${r.Current_Custodian}` : ''].filter(Boolean).join(' · ');
           const refText = [r.Reference, r.Secondary_Reference, r.NIG ? `NIG ${r.NIG}` : ''].filter(Boolean).join(' · ');
           const typeText = [r.Record_Type, r.Proceeding_Class, r.Stream].filter(Boolean).join(' · ');
           const connectionText = [r.Connection, r.Object_or_Purpose].filter(Boolean).join(' — ');
+          const detailUrl = detailRoutes[r.Master_ID] && detailRoutes[r.Master_ID][lang];
+          const detailLink = detailUrl
+            ? `<br><a class="pd-detail" href="${esc(detailUrl)}" aria-label="${esc(`${copy.dossier}: ${r.Master_ID}`)}">${esc(copy.dossier)} ↗</a>`
+            : '';
           return `<tr id="record-${esc(r.Master_ID)}" data-master-id="${esc(r.Master_ID)}">
-            <td><a class="pd-ref" href="${esc(traceHref)}" aria-label="${esc(`${copy.trace}: ${r.Master_ID}`)}">${esc(r.Master_ID)}</a><br><span class="pd-chip" data-state="${esc(stateValue)}">${esc(stateValue)}</span>${isolationLink}</td>
-            <td>${esc(typeText)}</td><td>${esc(organText)}</td><td>${esc(refText)}</td><td>${esc(r.Date_or_Period)}</td><td>${esc(connectionText)}</td><td>${esc(statusText)}</td><td>${esc(relation)}</td><td><span class="pd-muted">${esc(r.Source_Status)}</span>${r.Open_Reference_Gap ? `<br><span class="pd-gap">${esc(r.Open_Reference_Gap)}</span>` : ''}</td>
+            <td><span id="case-${esc(r.Master_ID)}" aria-hidden="true"></span><a class="pd-ref" href="${esc(traceHref)}" aria-label="${esc(`${copy.trace}: ${r.Master_ID}`)}">${esc(r.Master_ID)}</a><br><span class="pd-chip" data-state="${esc(stateValue)}">${esc(stateValue)}</span>${isolationLink}${detailLink}</td>
+            <td>${esc(typeText)}</td><td>${esc(organText)}</td><td>${esc(refText)}</td><td>${esc(r.Date_or_Period)}</td><td>${esc(connectionText)}</td><td>${esc(statusText)}</td><td>${linkMasterReferences(relation)}</td><td><span class="pd-muted">${esc(r.Source_Status)}</span>${r.Open_Reference_Gap ? `<br><span class="pd-gap">${esc(r.Open_Reference_Gap)}</span>` : ''}</td>
           </tr>`;
         }).join('');
-        if (!deepLinkApplied && window.location.hash.startsWith('#record-')) {
+        if (!deepLinkApplied && (window.location.hash.startsWith('#record-') || window.location.hash.startsWith('#case-'))) {
           let requested = '';
-          try { requested = decodeURIComponent(window.location.hash.slice('#record-'.length)); } catch (_) { requested = ''; }
+          const prefix = window.location.hash.startsWith('#record-') ? '#record-' : '#case-';
+          try { requested = decodeURIComponent(window.location.hash.slice(prefix.length)); } catch (_) { requested = ''; }
           const target = requested ? document.getElementById(`record-${requested}`) : null;
           if (target) {
             target.setAttribute('tabindex', '-1');

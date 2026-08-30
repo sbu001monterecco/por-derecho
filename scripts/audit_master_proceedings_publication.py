@@ -51,6 +51,22 @@ def main() -> int:
     site = SITE.read_text(encoding="utf-8")
     projection_text = PROJECTION.read_text(encoding="utf-8")
     projection = json.loads(projection_text)
+    manifest = json.loads(MANIFEST.read_text(encoding="utf-8"))
+
+    if manifest.get("public_projection", {}).get("source") != "canonical_csv_runtime_projection":
+        errors.append("historical deployed Master Register projection source changed")
+    migration = manifest.get("projection_migration", {})
+    if not (
+        migration.get("target") == "assets/data/proceedings-master-public-v1.json"
+        and migration.get("derivation") == "DETERMINISTIC_ALLOWLIST_FROM_CANONICAL_REGISTER"
+        and migration.get("state") == "PR_OPEN"
+        and migration.get("pull_request") == 1235
+        and set(migration.get("expected_source_files", [])) == {
+            "assets/data/proceedings-master-public-v1.json",
+            "scripts/build_public_proceedings_projection.py",
+        }
+    ):
+        errors.append("allowlisted Master Register projection migration is not separately lifecycle-controlled")
 
     for path, text in ((PROTOCOL, protocol), (GOVERNANCE, governance), (SITE, site)):
         if MARKER not in text:
@@ -90,6 +106,12 @@ def main() -> int:
         "Open_Reference_Gap",
         "Parent_Master_ID",
         "Linked_Proceedings",
+        "linkMasterReferences",
+        "#record-$1",
+        "LZ-JUD-003",
+        "LZ-APP-004",
+        "arrecife-1103-2018-procedural-lineage",
+        "arrecife-1103-2018-cadena-procesal",
     )
     for phrase in required_js_phrases:
         if phrase not in js:
@@ -187,10 +209,10 @@ def main() -> int:
     isolation_destination_ids = {record["Master_ID"] for record in exact_public_records}
     if len(trace_destination_ids) != len(public_records) or trace_destination_ids != set(public_ids):
         errors.append("not every public record receives one exact trace destination")
-    if len(exact_public_records) != 84 or len(isolation_destination_ids) != 84:
-        errors.append("exact public isolation-link denominator must be 84/84")
-    if len(non_exact_public_records) != 17:
-        errors.append("FALSE/UNVERIFIED public isolation-ineligibility denominator must be 17")
+    if len(exact_public_records) != 85 or len(isolation_destination_ids) != 85:
+        errors.append("exact public isolation-link denominator must be 85/85")
+    if len(non_exact_public_records) != 21:
+        errors.append("FALSE/UNVERIFIED public isolation-ineligibility denominator must be 21")
 
     if not rows:
         errors.append("master CSV contains no rows")

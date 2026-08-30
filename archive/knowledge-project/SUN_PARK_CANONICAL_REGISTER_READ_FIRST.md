@@ -23,7 +23,7 @@ This is a living register, but it is not a loose notebook. Changes require evide
 ## Immediate corrections now controlling
 
 1. **Asunción Aizpurúa Sánchez = AAS — `LOCKED_CANONICAL`.**
-2. **Asunción Aizpurúa Sánchez was President of the Comunidad by 2 February 2011 — `LOCKED_MINIMUM_DATE`.**
+2. **A controlled source records Asunción Aizpurúa Sánchez as elected/acting President of the Comunidad by 2 February 2011 — `LOCKED_MINIMUM_DATE`; this does not establish lawful office or act-specific authority.**
 3. **Francisco Mario Matos Matas was Administrator of the Comunidad by 22 June 2011 — `LOCKED_MINIMUM_DATE`.**
 4. **Shaila María Cogolludo Ramos was acting in the Pamanil / Community communications perimeter by 8 April 2014 — `LOCKED_MINIMUM_DATE`.**
 5. **Antonio Cogolludo Rojas was acting in the Sun Park Community / Pamanil perimeter by 10 April 2014, representing Cristina Molina Petit — `LOCKED_MINIMUM_DATE`.**

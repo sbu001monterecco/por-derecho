@@ -600,20 +600,20 @@ jobs:
 
           registry = json.loads(body('/assets/data/matter-identity-registry-v1.json'))
           assert registry['counts'] == {
-              'total': 226,
+              'total': 230,
               'PERSON': 95,
               'ORGANISATION': 79,
               'STRUCTURE': 11,
-              'INSTITUTION': 22,
-              'PROCEEDING': 19,
+              'INSTITUTION': 23,
+              'PROCEEDING': 22,
           }
           for route, language_marker in (
-              ('/es/registro-identidad-materia/', 'Los <strong>226 IDs</strong>'),
-              ('/en/matter-identity-registry/', 'The <strong>226 IDs</strong>'),
+              ('/es/registro-identidad-materia/', 'Los <strong>230 IDs</strong>'),
+              ('/en/matter-identity-registry/', 'The <strong>230 IDs</strong>'),
           ):
               registry_body = body(route)
-              assert 'data-static-registry-counts="226-95-79-11-22-19"' in registry_body
-              assert 'data-registry-stat="TOTAL">226' in registry_body
+              assert 'data-static-registry-counts="230-95-79-11-23-22"' in registry_body
+              assert 'data-registry-stat="TOTAL">230' in registry_body
               assert language_marker in registry_body
 
           # The specialist manifest records its own exact historical release at
@@ -739,6 +739,6 @@ jobs:
               'specialist_caret': '31/31',
               'first_hop_caret': '61/130',
               'unitary_caret': '21/24',
-              'identity_source_current': 226,
+              'identity_source_current': 230,
               'specialist_historical_identity_snapshot': 204,
           }, sort_keys=True))

@@ -30,11 +30,11 @@ MASTER = ROOT / "archive/PROCEEDINGS_MASTER_REGISTER.csv"
 PRISM = ROOT / "assets/data/proceedings-case-prism-v1.json"
 TARGET = ROOT / "assets/data/proceedings-interlinkability-v1.json"
 
-EXPECTED_PUBLIC_RECORDS = 101
-EXPECTED_CANONICAL_EXACT_PROCEEDINGS = 85
-EXPECTED_PUBLIC_EXACT_PROCEEDINGS = 84
+EXPECTED_PUBLIC_RECORDS = 106
+EXPECTED_CANONICAL_EXACT_PROCEEDINGS = 86
+EXPECTED_PUBLIC_EXACT_PROCEEDINGS = 85
 EXPECTED_PRIVATE_EXACT_PROCEEDINGS = 1
-EXPECTED_CASE_PRISM_EXACT_COVERED = 24
+EXPECTED_CASE_PRISM_EXACT_COVERED = 25
 
 DIRECT_TYPE_PRIORITY = {
     "PARENT_CHILD": 0,
@@ -44,6 +44,7 @@ DIRECT_TYPE_PRIORITY = {
 
 DIRECT_SOURCE_VERIFIED_STATUSES = {
     "VERIFIED_PRIMARY",
+    "VERIFIED_PRIMARY_COPY",
     "VERIFIED_PROCEDURAL",
 }
 
@@ -94,6 +95,7 @@ GAP_ES = {
     "LZ-JUD-002": "Expediente certificado, resolución final firmada, notificación y firmeza.",
     "LZ-JUD-003": "Denuncia completa, declaraciones del testigo y del AC, auto de archivo y notificaciones.",
     "LZ-JUD-005": "Juzgado y referencia exactos, título ejecutivo, partes, escritura de dación, cuenta de satisfacción y resolución firmada de terminación.",
+    "LZ-JUD-043": "Expediente certificado y puente entre rótulos; prueba médica y objetiva del incidente; autoridad, acceso, huésped y agencia en la fecha; vista, resolución, recurso y firmeza.",
     "LZ-PRO-029": "Número oficial del expediente, custodio, preservación o traslado y resolución final.",
     "LZ-TRA-027": "Expediente de cumplimiento, documentos aportados y seguimiento.",
     "LZ-TRA-028": "Referencia asignada, admisión, expediente y resolución final.",
@@ -708,11 +710,14 @@ def build() -> dict[str, Any]:
             item["id"],
         ),
     )
+    exact_id_set = set(exact_ids)
     case_prism_exact_ids = {
         master_id
-        for cluster in context_clusters
-        if cluster["context_type"] == "CASE_PRISM_PROPOSITION"
-        for master_id in cluster["member_master_ids"]
+        for proposition in prism.get("propositions", [])
+        for cell in proposition.get("cells", {}).values()
+        if cell.get("status") != "OUTSIDE"
+        for master_id in cell.get("master_ids", [])
+        if master_id in exact_id_set
     }
     if len(case_prism_exact_ids) != EXPECTED_CASE_PRISM_EXACT_COVERED:
         raise ValueError(
@@ -876,13 +881,13 @@ def build() -> dict[str, Any]:
             "case_prism_exact_proceeding_covered_count": len(case_prism_exact_ids),
             "case_prism_exact_proceeding_uncovered_count": len(exact_rows)
             - len(case_prism_exact_ids),
-            "decision_dependency_exact_coverage": "GAP_24_OF_84",
+            "decision_dependency_exact_coverage": "GAP_25_OF_85",
             "bilingual_specific_next_source_count": bilingual_specific_next_source_count,
             "bilingual_specific_next_source_coverage": (
                 f"VERIFIED_{bilingual_specific_next_source_count}_OF_{len(exact_rows)}"
             ),
             "exact_proceeding_full_finite_test_count": 0,
-            "exact_proceeding_full_finite_test_coverage": "GAP_0_OF_84",
+            "exact_proceeding_full_finite_test_coverage": "GAP_0_OF_85",
             "classification_counts": {
                 token: classification_counts.get(token, 0)
                 for token in (

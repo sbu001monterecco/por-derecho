@@ -110,12 +110,12 @@
     }
   },
   "identity_registry": {
-    "total": 226,
+    "total": 231,
     "PERSON": 95,
     "ORGANISATION": 79,
     "STRUCTURE": 11,
-    "INSTITUTION": 22,
-    "PROCEEDING": 19,
+    "INSTITUTION": 23,
+    "PROCEEDING": 23,
     "archive_backfill": "OPEN",
     "candidate_state": "LOCAL_SOURCE_STATIC_CANDIDATE_NOT_YET_LIVE_VERIFIED",
     "last_live_verified_counts": {
@@ -191,12 +191,12 @@
         "INSTITUTIONAL_PUBLIC_FUNDS"
       ],
       "human_matrix": "archive/ALBERTO_MEETING_POINT_357_MULTIDIRECTIONAL_CRIMINAL_FIRST_MATRIX_27AUG2026.md",
-    "machine_matrix": "assets/data/alberto-meeting-point-357-multidirectional-evidence-v1.json",
-    "caret_control": "assets/data/caepr-caret-alberto-meeting-point-357-v1.json",
-    "first_hop_caret_control": "assets/data/caepr-caret-alberto-meeting-point-first-hop-v1.json",
+      "machine_matrix": "assets/data/alberto-meeting-point-357-multidirectional-evidence-v1.json",
+      "caret_control": "assets/data/caepr-caret-alberto-meeting-point-357-v1.json",
+      "first_hop_caret_control": "assets/data/caepr-caret-alberto-meeting-point-first-hop-v1.json",
       "publication_manifest": "publication-manifests/alberto-meeting-point-multidirectional-criminal-first-20260827.json",
       "caret_scope_type": "SEPARATE_SPECIALIST_EXHAUSTIVE_CENSUS",
-    "caret_scope": {
+      "caret_scope": {
         "confirmed": 31,
         "pending": 0,
         "suspended": 0,
@@ -204,14 +204,14 @@
         "occurrence_rows": 32,
         "confirmed_occurrence_rows": 32,
         "verdict": "ALL_IS_VERIFIED_FOR_STATED_SCOPE"
-    },
-    "first_hop_caret_scope": {
+      },
+      "first_hop_caret_scope": {
         "confirmed": 61,
         "pending": 69,
-      "suspended": 0,
-      "denominator": 130,
-      "verdict": "FULL_FIRST_HOP_CENSUS_PARTIAL_NOT_ALL_IS"
-    },
+        "suspended": 0,
+        "denominator": 130,
+        "verdict": "FULL_FIRST_HOP_CENSUS_PARTIAL_NOT_ALL_IS"
+      },
       "unitary_caret_scope_unchanged": false,
       "public_routes": {
         "es": "/es/alberto-lopez-villarrubia-meeting-point-357-masa-activa/",

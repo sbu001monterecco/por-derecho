@@ -1932,5 +1932,47 @@
       "bonos RIC Canarias",
       "materialización pública"
     ]
+  },
+  {
+    "lang": "en",
+    "path": "en/dp-3205-2014-arrecife/",
+    "title": "3205/2014^ · Arrecife — primary-source access and authority test",
+    "type": "proceeding",
+    "summary": "Controlled bilingual record of 3205/2014 before historic Arrecife Investigating Court No. 1: complaint and summons located, with source-label bridge, authority, corroboration and outcome open.",
+    "tags": [
+      "DP 3205/2014",
+      "Arrecife Investigating Court No. 1",
+      "Community authority",
+      "Juicio de faltas and later DP labels",
+      "access and key incident",
+      "outcome open"
+    ],
+    "aliases": [
+      "Proceeding 4",
+      "Arrecife Plaza 1 T1",
+      "LZ-JUD-043",
+      "PD-SP-R-0021"
+    ]
+  },
+  {
+    "lang": "es",
+    "path": "es/dp-3205-2014-arrecife/",
+    "title": "3205/2014^ · Arrecife — fuentes primarias, acceso y prueba de autoridad",
+    "type": "proceeding",
+    "summary": "Ficha bilingüe controlada de 3205/2014 ante el histórico Juzgado de Instrucción nº 1 de Arrecife: denuncia y citación localizadas, con puente de etiquetas, autoridad, corroboración y resultado abiertos.",
+    "tags": [
+      "DP 3205/2014",
+      "Juzgado de Instrucción nº 1 de Arrecife",
+      "autoridad de la Comunidad",
+      "Juicio de faltas y posterior DP",
+      "incidente de acceso y llave",
+      "resultado abierto"
+    ],
+    "aliases": [
+      "Procedimiento 4",
+      "Arrecife Plaza 1 T1",
+      "LZ-JUD-043",
+      "PD-SP-R-0021"
+    ]
   }
 ]

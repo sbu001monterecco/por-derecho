@@ -63,13 +63,13 @@
     {"id": "calificacion", "en": "Calificación · RPL 2523/2025", "es": "Calificación · RPL 2523/2025", "master_ids": ["GC-CAL-002", "GC-APP-004"]},
     {"id": "removal", "en": "AC removal · RPL 3304+3319/2025", "es": "Separación AC · RPL 3304+3319/2025", "master_ids": ["GC-APP-005", "GC-APP-006", "GC-APP-007"]},
     {"id": "fees", "en": "AC fees · RPL 421/2026", "es": "Honorarios AC · RPL 421/2026", "master_ids": ["GC-CIV-027", "GC-APP-028"]},
-    {"id": "arrecife", "en": "Arrecife · control / mortgage / title", "es": "Arrecife · control / hipoteca / título", "master_ids": ["LZ-JUD-003", "LZ-APP-004", "LZ-JUD-005"]},
+    {"id": "arrecife", "en": "Arrecife · control / mortgage / title", "es": "Arrecife · control / hipoteca / título", "master_ids": ["LZ-JUD-042", "LZ-JUD-003", "LZ-APP-004", "LZ-JUD-005"]},
     {"id": "valencia", "en": "Valencia · CaixaBank", "es": "Valencia · CaixaBank", "master_ids": ["VAL-CIV-001"]},
     {"id": "meetingpoint", "en": "Meeting Point / FTI", "es": "Meeting Point / FTI", "master_ids": ["GC-CONT-025"]},
     {"id": "tenerife", "en": "Tenerife · Matkator / Cuatrecasas", "es": "Tenerife · Matkator / Cuatrecasas", "master_ids": ["TF-CIV-001", "TF-CIV-002", "TF-CRI-003"]},
     {"id": "fiscalia", "en": "Ministerio Fiscal", "es": "Ministerio Fiscal", "master_ids": ["GC-FIS-013", "GC-FIS-016", "GC-FIS-017", "GC-FIS-018"]},
     {"id": "supervision", "en": "CGPJ / LAJ supervision", "es": "Supervisión CGPJ / LAJ", "master_ids": ["GC-GOV-019", "GC-GOV-020", "GC-LAJ-021"]},
-    {"id": "historical", "en": "Historical possession / exploitation", "es": "Posesión / explotación histórica", "master_ids": ["LZ-JUD-001", "LZ-JUD-FAM-006"]}
+    {"id": "historical", "en": "Historical possession / exploitation", "es": "Posesión / explotación histórica", "master_ids": ["LZ-JUD-001", "LZ-JUD-FAM-006", "LZ-REF-042"]}
   ],
   "propositions": [
     {
@@ -124,7 +124,7 @@
       "source_status": "SOURCE_SUPPORTED_WITH_PERIMETER_LIMITS",
       "audience_priority": {"all": 2, "court": 3, "fiscal": 2, "supervision": 3, "authority": 4, "research": 2},
       "cells": {
-        "arrecife": {"status": "DIRECT", "note_en": "DP 1132/2018 and Auto 804/2018 directly form the criminal/appellate access-control route; the outcome is adverse and the full primary file remains incomplete.", "note_es": "DP 1132/2018 y Auto 804/2018 forman directamente la vía penal/apelativa de acceso-control; el resultado es adverso y el expediente primario completo sigue incompleto.", "master_ids": ["LZ-JUD-003", "LZ-APP-004"]},
+        "arrecife": {"status": "DIRECT", "note_en": "DI 1103/2018-00 → DP 1132/2018 and Rollo 1010/2018 / Auto 804/2018 directly form the criminal/appellate access-control route; the outcome is adverse and the court-certified complete files remain open.", "note_es": "DI 1103/2018-00 → DP 1132/2018 y Rollo 1010/2018 / Auto 804/2018 forman directamente la vía penal/apelativa de acceso-control; el resultado es adverso y los expedientes completos certificados siguen abiertos.", "master_ids": ["LZ-JUD-003", "LZ-APP-004"]},
         "concurso": {"status": "CONTEXT", "note_en": "The event is tested for estate, productive-unit and control consequences; this cell does not assert a particular judicial finding within the concurso.", "note_es": "El evento se contrasta por consecuencias sobre masa, unidad productiva y control; esta celda no afirma una conclusión judicial concreta dentro del concurso.", "master_ids": ["GC-JUD-001"]},
         "calificacion": {"status": "OPEN", "note_en": "The project argues material relevance, but appellate use depends on the actual transmitted/admitted record.", "note_es": "El proyecto sostiene relevancia material, pero su uso apelativo depende del expediente realmente transmitido/admitido.", "master_ids": ["GC-APP-004"]},
         "removal": {"status": "CONTEXT", "note_en": "The removal route is cross-read against disputed administration and consequences, without treating the access case as the same proceeding.", "note_es": "La vía de separación se contrasta con la administración discutida y sus consecuencias, sin tratar el expediente de acceso como el mismo procedimiento.", "master_ids": ["GC-APP-005", "GC-APP-006"]},

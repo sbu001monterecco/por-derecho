@@ -150,9 +150,11 @@
     },
     {
       "id": "arrecife",
-      "en": "Arrecife · control / mortgage / title",
-      "es": "Arrecife · control / hipoteca / título",
+      "en": "Arrecife · authority / control / mortgage / title",
+      "es": "Arrecife · autoridad / control / hipoteca / título",
       "master_ids": [
+        "LZ-JUD-042",
+        "LZ-JUD-043",
         "LZ-JUD-003",
         "LZ-APP-004",
         "LZ-JUD-005"
@@ -211,7 +213,8 @@
       "es": "Posesión / explotación histórica",
       "master_ids": [
         "LZ-JUD-001",
-        "LZ-JUD-FAM-006"
+        "LZ-JUD-FAM-006",
+        "LZ-REF-042"
       ]
     },
     {
@@ -956,6 +959,210 @@
       ]
     },
     {
+      "id": "P19",
+      "cells": {
+        "concurso": {
+          "status": "OUTSIDE",
+          "treatment": "OUTSIDE_PROCEDURAL_SCOPE",
+          "evidence_status": "PRIMARY_COMPLAINT_AND_OFFICIAL_SUMMONS_LOCATED_OUTCOME_OPEN",
+          "note_en": "No decision dependency is asserted between P19 and this lane in the controlled public projection.",
+          "note_es": "No se afirma dependencia decisoria entre P19 y esta vía en la proyección pública controlada.",
+          "decision_en": "No decision dependency is asserted for this coordinate.",
+          "decision_es": "No se afirma dependencia decisoria para esta coordenada.",
+          "master_ids": [],
+          "representation_lineage_status": "NOT_APPLICABLE_TO_THIS_COORDINATE",
+          "representation_gap_ids": []
+        },
+        "calificacion": {
+          "status": "OUTSIDE",
+          "treatment": "OUTSIDE_PROCEDURAL_SCOPE",
+          "evidence_status": "PRIMARY_COMPLAINT_AND_OFFICIAL_SUMMONS_LOCATED_OUTCOME_OPEN",
+          "note_en": "No decision dependency is asserted between P19 and this lane in the controlled public projection.",
+          "note_es": "No se afirma dependencia decisoria entre P19 y esta vía en la proyección pública controlada.",
+          "decision_en": "No decision dependency is asserted for this coordinate.",
+          "decision_es": "No se afirma dependencia decisoria para esta coordenada.",
+          "master_ids": [],
+          "representation_lineage_status": "NOT_APPLICABLE_TO_THIS_COORDINATE",
+          "representation_gap_ids": []
+        },
+        "removal": {
+          "status": "OUTSIDE",
+          "treatment": "OUTSIDE_PROCEDURAL_SCOPE",
+          "evidence_status": "PRIMARY_COMPLAINT_AND_OFFICIAL_SUMMONS_LOCATED_OUTCOME_OPEN",
+          "note_en": "No decision dependency is asserted between P19 and this lane in the controlled public projection.",
+          "note_es": "No se afirma dependencia decisoria entre P19 y esta vía en la proyección pública controlada.",
+          "decision_en": "No decision dependency is asserted for this coordinate.",
+          "decision_es": "No se afirma dependencia decisoria para esta coordenada.",
+          "master_ids": [],
+          "representation_lineage_status": "NOT_APPLICABLE_TO_THIS_COORDINATE",
+          "representation_gap_ids": []
+        },
+        "fees": {
+          "status": "OUTSIDE",
+          "treatment": "OUTSIDE_PROCEDURAL_SCOPE",
+          "evidence_status": "PRIMARY_COMPLAINT_AND_OFFICIAL_SUMMONS_LOCATED_OUTCOME_OPEN",
+          "note_en": "No decision dependency is asserted between P19 and this lane in the controlled public projection.",
+          "note_es": "No se afirma dependencia decisoria entre P19 y esta vía en la proyección pública controlada.",
+          "decision_en": "No decision dependency is asserted for this coordinate.",
+          "decision_es": "No se afirma dependencia decisoria para esta coordenada.",
+          "master_ids": [],
+          "representation_lineage_status": "NOT_APPLICABLE_TO_THIS_COORDINATE",
+          "representation_gap_ids": []
+        },
+        "arrecife": {
+          "status": "DIRECT",
+          "treatment": "DIRECTLY_IN_FILE",
+          "evidence_status": "PRIMARY_COMPLAINT_AND_OFFICIAL_SUMMONS_LOCATED_OUTCOME_OPEN",
+          "note_en": "LZ-JUD-043 has a contemporaneous complaint and official summons. The summons says Juicio de faltas; a later summary says DP. One complainant and one affected party are recorded, the complaint attributes no direct physical act to Gil, and authority, corroboration, hearing occurrence and outcome remain open. This cell creates no procedural relationship or Concurso 36/2012 bridge.",
+          "note_es": "LZ-JUD-043 cuenta con denuncia contemporánea y citación oficial. La citación dice Juicio de faltas; un resumen posterior dice DP. Constan una denunciante y un perjudicado, la denuncia no atribuye acto físico directo a Gil y siguen abiertos autoridad, corroboración, celebración de la vista y resultado. Esta celda no crea relación procesal ni puente con el Concurso 36/2012.",
+          "decision_en": "Authority for the reported entry and inspection, actor-specific conduct and capacity, injury corroboration, and the hearing and outcome within 3205/2014.",
+          "decision_es": "Autoridad para la entrada e inspección comunicadas, conducta y capacidad específicas de cada actor, corroboración de lesiones y celebración y resultado dentro de 3205/2014.",
+          "master_ids": [
+            "LZ-JUD-043"
+          ],
+          "representation_lineage_status": "PROCEEDING_SPECIFIC_DENOMINATOR_OPEN",
+          "representation_gap_ids": [
+            "CP-GAP-008"
+          ]
+        },
+        "valencia": {
+          "status": "OUTSIDE",
+          "treatment": "OUTSIDE_PROCEDURAL_SCOPE",
+          "evidence_status": "PRIMARY_COMPLAINT_AND_OFFICIAL_SUMMONS_LOCATED_OUTCOME_OPEN",
+          "note_en": "No decision dependency is asserted between P19 and this lane in the controlled public projection.",
+          "note_es": "No se afirma dependencia decisoria entre P19 y esta vía en la proyección pública controlada.",
+          "decision_en": "No decision dependency is asserted for this coordinate.",
+          "decision_es": "No se afirma dependencia decisoria para esta coordenada.",
+          "master_ids": [],
+          "representation_lineage_status": "NOT_APPLICABLE_TO_THIS_COORDINATE",
+          "representation_gap_ids": []
+        },
+        "meetingpoint": {
+          "status": "OUTSIDE",
+          "treatment": "OUTSIDE_PROCEDURAL_SCOPE",
+          "evidence_status": "PRIMARY_COMPLAINT_AND_OFFICIAL_SUMMONS_LOCATED_OUTCOME_OPEN",
+          "note_en": "No decision dependency is asserted between P19 and this lane in the controlled public projection.",
+          "note_es": "No se afirma dependencia decisoria entre P19 y esta vía en la proyección pública controlada.",
+          "decision_en": "No decision dependency is asserted for this coordinate.",
+          "decision_es": "No se afirma dependencia decisoria para esta coordenada.",
+          "master_ids": [],
+          "representation_lineage_status": "NOT_APPLICABLE_TO_THIS_COORDINATE",
+          "representation_gap_ids": []
+        },
+        "tenerife": {
+          "status": "OUTSIDE",
+          "treatment": "OUTSIDE_PROCEDURAL_SCOPE",
+          "evidence_status": "PRIMARY_COMPLAINT_AND_OFFICIAL_SUMMONS_LOCATED_OUTCOME_OPEN",
+          "note_en": "No decision dependency is asserted between P19 and this lane in the controlled public projection.",
+          "note_es": "No se afirma dependencia decisoria entre P19 y esta vía en la proyección pública controlada.",
+          "decision_en": "No decision dependency is asserted for this coordinate.",
+          "decision_es": "No se afirma dependencia decisoria para esta coordenada.",
+          "master_ids": [],
+          "representation_lineage_status": "NOT_APPLICABLE_TO_THIS_COORDINATE",
+          "representation_gap_ids": []
+        },
+        "fiscalia": {
+          "status": "OUTSIDE",
+          "treatment": "OUTSIDE_PROCEDURAL_SCOPE",
+          "evidence_status": "PRIMARY_COMPLAINT_AND_OFFICIAL_SUMMONS_LOCATED_OUTCOME_OPEN",
+          "note_en": "No decision dependency is asserted between P19 and this lane in the controlled public projection.",
+          "note_es": "No se afirma dependencia decisoria entre P19 y esta vía en la proyección pública controlada.",
+          "decision_en": "No decision dependency is asserted for this coordinate.",
+          "decision_es": "No se afirma dependencia decisoria para esta coordenada.",
+          "master_ids": [],
+          "representation_lineage_status": "NOT_APPLICABLE_TO_THIS_COORDINATE",
+          "representation_gap_ids": []
+        },
+        "supervision": {
+          "status": "OUTSIDE",
+          "treatment": "OUTSIDE_PROCEDURAL_SCOPE",
+          "evidence_status": "PRIMARY_COMPLAINT_AND_OFFICIAL_SUMMONS_LOCATED_OUTCOME_OPEN",
+          "note_en": "No decision dependency is asserted between P19 and this lane in the controlled public projection.",
+          "note_es": "No se afirma dependencia decisoria entre P19 y esta vía en la proyección pública controlada.",
+          "decision_en": "No decision dependency is asserted for this coordinate.",
+          "decision_es": "No se afirma dependencia decisoria para esta coordenada.",
+          "master_ids": [],
+          "representation_lineage_status": "NOT_APPLICABLE_TO_THIS_COORDINATE",
+          "representation_gap_ids": []
+        },
+        "historical": {
+          "status": "OUTSIDE",
+          "treatment": "OUTSIDE_PROCEDURAL_SCOPE",
+          "evidence_status": "PRIMARY_COMPLAINT_AND_OFFICIAL_SUMMONS_LOCATED_OUTCOME_OPEN",
+          "note_en": "No decision dependency is asserted between P19 and this lane in the controlled public projection.",
+          "note_es": "No se afirma dependencia decisoria entre P19 y esta vía en la proyección pública controlada.",
+          "decision_en": "No decision dependency is asserted for this coordinate.",
+          "decision_es": "No se afirma dependencia decisoria para esta coordenada.",
+          "master_ids": [],
+          "representation_lineage_status": "NOT_APPLICABLE_TO_THIS_COORDINATE",
+          "representation_gap_ids": []
+        },
+        "publicmoney": {
+          "status": "OUTSIDE",
+          "treatment": "OUTSIDE_PROCEDURAL_SCOPE",
+          "evidence_status": "PRIMARY_COMPLAINT_AND_OFFICIAL_SUMMONS_LOCATED_OUTCOME_OPEN",
+          "note_en": "No decision dependency is asserted between P19 and this lane in the controlled public projection.",
+          "note_es": "No se afirma dependencia decisoria entre P19 y esta vía en la proyección pública controlada.",
+          "decision_en": "No decision dependency is asserted for this coordinate.",
+          "decision_es": "No se afirma dependencia decisoria para esta coordenada.",
+          "master_ids": [],
+          "representation_lineage_status": "NOT_APPLICABLE_TO_THIS_COORDINATE",
+          "representation_gap_ids": []
+        }
+      },
+      "sort": 2014.0,
+      "period_en": "2014",
+      "period_es": "2014",
+      "title_en": "3205/2014 is an access, key and Community-authority verification event, not a procedural bridge",
+      "title_es": "3205/2014 es un evento de verificación de acceso, llave y autoridad comunitaria, no un puente procesal",
+      "question_en": "What authority supported the reported entry and inspection, what happened in the key dispute, and what do the complaint, summons and missing outcome permit the reader to conclude?",
+      "question_es": "¿Qué autoridad sustentó la entrada e inspección comunicadas, qué ocurrió en la disputa por la llave y qué permiten concluir la denuncia, la citación y el resultado ausente?",
+      "source_status": "PRIMARY_COMPLAINT_AND_OFFICIAL_SUMMONS_LOCATED_OUTCOME_OPEN",
+      "attribution": "PARTY_SUBMISSION_AND_PROCEDURAL_RECORD",
+      "contrary_record": {
+        "en": "The complaint records attributed allegations and the summons records a procedural step; neither proves the incident, injury, agency, guilt or outcome. A contrary account exists, while decisive corroboration and the outcome remain unlocated.",
+        "es": "La denuncia registra alegaciones atribuidas y la citación registra un acto procesal; ninguna prueba el incidente, la lesión, la agencia, la culpabilidad ni el resultado. Existe un relato contrario, mientras siguen sin localizarse la corroboración decisiva y el resultado."
+      },
+      "decision_dependency": {
+        "en": "Authority for the reported entry and inspection, actor-specific conduct and capacity, injury corroboration, and the hearing and outcome within 3205/2014.",
+        "es": "Autoridad para la entrada e inspección comunicadas, conducta y capacidad específicas de cada actor, corroboración de lesiones y celebración y resultado dentro de 3205/2014."
+      },
+      "actionability": {
+        "source_needed": {
+          "en": "Certified docket, hearing, decision and finality records; contemporaneous medical, independent-witness and CCTV evidence; and actor-specific role, instruction and authority records.",
+          "es": "Expediente certificado, acta de vista, resolución y firmeza; prueba médica contemporánea, testigo independiente y CCTV; y registros de función, instrucción y autoridad específicos de cada actor."
+        },
+        "competent_organ": {
+          "en": "The historic file custodian and the competent deciding organ for each distinct issue.",
+          "es": "El custodio del expediente histórico y el órgano decisor competente para cada cuestión distinta."
+        },
+        "if_confirmed": {
+          "en": "The event can be characterised act by act inside its own file without extension to another proceeding.",
+          "es": "El evento puede caracterizarse acto por acto dentro de su propio expediente sin extenderlo a otro procedimiento."
+        },
+        "if_refuted": {
+          "en": "Unsupported authority, agency, injury or cross-file propositions must be narrowed or removed.",
+          "es": "Deben limitarse o retirarse las proposiciones no respaldadas de autoridad, agencia, lesión o conexión entre expedientes."
+        }
+      },
+      "source_ids": [
+        "SRC-DP3205",
+        "SRC-MASTER",
+        "SRC-COMMUNITY"
+      ],
+      "audience_priority": {
+        "all": 4,
+        "court": 2,
+        "appellate": 190,
+        "fiscal": 1,
+        "supervision": 5,
+        "authority": 0,
+        "research": 9,
+        "owner": 3,
+        "professional": 8
+      }
+    },
+    {
       "id": "P02",
       "sort": 2017,
       "title_en": "Secured credit, enforcement and title form a shared asset-history question",
@@ -1603,8 +1810,8 @@
       "period_es": "7 de junio de 2018",
       "attribution": "MIXED_DOCUMENTED_AND_PARTY_ALLEGATION",
       "contrary_record": {
-        "en": "The located criminal route ended in provisional archive and Auto 804/2018; the AC/CEXP record contains a contrary position, and the main witness did not place José Daniel Acosta Matos on site.",
-        "es": "La vía penal localizada terminó en sobreseimiento provisional y Auto 804/2018; el registro AC/CEXP contiene una posición contraria y el testigo principal no situó a José Daniel Acosta Matos en el lugar."
+        "en": "The located DI 1103/2018-00 → DP 1132/2018 → Rollo 1010/2018 / Auto 804/2018 route ended in provisional archive confirmed on appeal; the AC/CEXP record contains a contrary position, and the main witness did not place José Daniel Acosta Matos on site.",
+        "es": "La vía localizada DI 1103/2018-00 → DP 1132/2018 → Rollo 1010/2018 / Auto 804/2018 terminó en sobreseimiento provisional confirmado en apelación; el registro AC/CEXP contiene una posición contraria y el testigo principal no situó a José Daniel Acosta Matos en el lugar."
       },
       "decision_dependency": {
         "en": "Whether the event was lawful access, material control, or neither, and what estate/productive-unit consequences followed.",
@@ -1612,8 +1819,8 @@
       },
       "actionability": {
         "source_needed": {
-          "en": "Complete DP 1132/2018 and appeal file, witness record, authority instruments and contemporaneous access/operation evidence.",
-          "es": "Expediente completo DP 1132/2018 y recurso, testimonio, instrumentos de autoridad y pruebas contemporáneas de acceso/explotación."
+          "en": "Court-certified complete DP 1132/2018 and Rollo 1010/2018 files, witness record, authority instruments and contemporaneous access/operation evidence.",
+          "es": "Expedientes completos certificados de DP 1132/2018 y Rollo 1010/2018, testimonio, instrumentos de autoridad y pruebas contemporáneas de acceso/explotación."
         },
         "competent_organ": {
           "en": "The competent criminal/civil/insolvency organ for each distinct issue.",
@@ -4484,6 +4691,13 @@
       "href_en": "en/justice-institutional-record/",
       "href_es": "es/justicia-registro-institucional/",
       "evidence_status": "PUBLIC_CONTROLLED_INSTITUTIONAL_RECORD"
+    },
+    "SRC-DP3205": {
+      "label_en": "3205/2014 Arrecife controlled record",
+      "label_es": "Registro controlado 3205/2014 Arrecife",
+      "href_en": "en/dp-3205-2014-arrecife/",
+      "href_es": "es/dp-3205-2014-arrecife/",
+      "evidence_status": "PRIMARY_COMPLAINT_AND_OFFICIAL_SUMMONS_LOCATED_OUTCOME_OPEN"
     }
   },
   "evidence_statuses": {
@@ -4522,6 +4736,10 @@
     "PARTLY_DOCUMENTED_AUTHORITY_CHAIN_INCOMPLETE": {
       "en": "Partly Documented Authority Chain Incomplete",
       "es": "Cadena de autoridad parcialmente documentada e incompleta"
+    },
+    "PRIMARY_COMPLAINT_AND_OFFICIAL_SUMMONS_LOCATED_OUTCOME_OPEN": {
+      "en": "Primary Complaint And Official Summons Located Outcome Open",
+      "es": "Denuncia primaria y citación oficial localizadas; resultado abierto"
     },
     "PUBLIC_CONTEXTUAL_PROCEEDING_DOSSIER": {
       "en": "Public Contextual Proceeding Dossier",
@@ -4677,10 +4895,10 @@
     }
   },
   "coverage": {
-    "proposition_count": 18,
+    "proposition_count": 19,
     "lane_count": 12,
-    "coordinate_count": 216,
-    "explicit_coordinate_count": 216,
+    "coordinate_count": 228,
+    "explicit_coordinate_count": 228,
     "unexplained_coordinate_count": 0,
     "counsel_procurador_denominator": "GAP",
     "counsel_procurador_gap_ids": [

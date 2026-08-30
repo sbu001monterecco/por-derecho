@@ -1,0 +1,157 @@
+{
+  "publication_id": "PD-SP-ARRECIFE-1103-2018-CARET-20260830-01",
+  "owner": "Por Derecho / Project Sun Rock",
+  "control_date": "2026-08-30",
+  "current_state": "LIVE_VERIFIED",
+  "state": "MERGED_DEPLOYED_AND_EXACT_READBACK_VERIFIED",
+  "merge_sha": "ea62df4d0476a210623536cfdb735bf9c7136ab7",
+  "purpose": "Repair and publish the canonical, bidirectional procedural lineage from Diligencias Indeterminadas 1103/2018-00 through DP 1132/2018 and Rollo 1010/2018 / Auto 804/2018 without converting identity into merits.",
+  "source_lifecycle": {
+    "pull_request": 1240,
+    "pr_head_sha": "770a76f386126791dc2ed40078394cdb233fa8ec",
+    "merge_sha": "ea62df4d0476a210623536cfdb735bf9c7136ab7",
+    "merged_at": "2026-08-30T22:58:32Z",
+    "pages_deployment": "LIVE_VERIFIED_PAGES_RUN_33340554512",
+    "live_readback": "LIVE_VERIFIED_12_OF_12_ROUTES_AND_CONTROLLED_DATA"
+  },
+  "canonical_ids": {
+    "caepr": "PD-SP-R-0023",
+    "master_register": ["LZ-JUD-003", "LZ-APP-004"]
+  },
+  "expected_routes": {
+    "en": [
+      "en/arrecife-1103-2018-procedural-lineage/index.html",
+      "en/sun-park-takeover-7-june-2018/index.html",
+      "en/master-proceedings-register/index.html",
+      "en/proceedings-map/index.html",
+      "en/matter-identity-registry/index.html",
+      "en/insolvency-36-2012-arrecife-mercantile-bridge/index.html"
+    ],
+    "es": [
+      "es/arrecife-1103-2018-cadena-procesal/index.html",
+      "es/toma-control-sun-park-7-junio-2018/index.html",
+      "es/registro-maestro-procedimientos/index.html",
+      "es/mapa-procedimientos/index.html",
+      "es/registro-identidad-materia/index.html",
+      "es/concurso-36-2012-puente-arrecife-mercantil/index.html"
+    ]
+  },
+  "implementation": [
+    "archive/PROCEEDINGS_MASTER_REGISTER.csv",
+    "assets/data/matter-identity-registry-v1.proceedings.json",
+    "assets/data/matter-identity-registry-v1.json",
+    "assets/data/matter-identity-operational-control-v1.json",
+    "assets/data/caepr-caret-alberto-meeting-point-first-hop-v1.json",
+    "assets/master-proceedings-publication-20260830.js",
+    "archive/ARRECIFE_1103_1132_1010_804_CARET_INTERLINK_CONTROL_30AUG2026.md",
+    "archive/CORRECTION_REGISTER.md",
+    "archive/MISSING_EVIDENCE_REGISTER.md",
+    "archive/MISSING_EVIDENCE_REGISTER_OPERATOR_CONTROL_DP1132_DI248_NONCONVALIDATION_APPEND_17AUG2026.md",
+    "archive/SUN_PARK_GAP_CLOSURE_SCAN_DP1132_DI248_NONCONVALIDATION_17AUG2026.md",
+    "archive/SUN_PARK_2011_2019_OPERATOR_CONTROL_DP1132_DI248_NONCONVALIDATION_TEN_SOURCE_SUPPLEMENT_17AUG2026.md",
+    "archive/PROCEEDINGS_CASE_PRISM_V1_SEED_30AUG2026.json",
+    "assets/data/proceedings-case-prism-v1.json",
+    "assets/master-proceedings-publication-20260830.css",
+    "assets/site.js",
+    "en/arrecife-1103-2018-procedural-lineage/index.html",
+    "es/arrecife-1103-2018-cadena-procesal/index.html",
+    "en/sun-park-takeover-7-june-2018/index.html",
+    "es/toma-control-sun-park-7-junio-2018/index.html",
+    "en/master-proceedings-register/index.html",
+    "es/registro-maestro-procedimientos/index.html",
+    "en/insolvency-36-2012-arrecife-mercantile-bridge/index.html",
+    "es/concurso-36-2012-puente-arrecife-mercantil/index.html",
+    "en/matter-identity-registry/index.html",
+    "es/registro-identidad-materia/index.html",
+    "ops/CURRENT_STATE.json",
+    "ops/CURRENT_UNITARY_STATE.json",
+    "ops/CURRENT_REVERSE_ENGINEERED_DIGEST.json",
+    "CURRENT_REVERSE_ENGINEERED_DIGEST.md",
+    "scripts/build_proceedings_case_prism_v2.py",
+    "scripts/validate_alberto_meeting_point_cross_proceeding.py",
+    "scripts/validate_current_reverse_engineered_digest.py",
+    "scripts/validate_dp3205_2014_publication.py",
+    "scripts/validate_legal_professional_register.py",
+    "scripts/validate_post7june_2022_deliberate_exclusion.py",
+    "scripts/validate_unitary_control_plane.py",
+    "scripts/audit_arrecife_1103_caret_interlink.py",
+    ".github/workflows/audit-arrecife-1103-caret-interlink.yml"
+  ],
+  "privacy": "No private source locators, contact data or identity of the protected on-site witness are published.",
+  "caret_boundary": "Caret confirms canonical proceeding identity only; it does not prove conduct, knowledge, title, liability, merits or outcome correctness.",
+  "validation": {
+    "evidence": [
+      "PR #1240 Arrecife audit run 33340445464: success on reviewed head 770a76f386126791dc2ed40078394cdb233fa8ec",
+      "PR #1240 identity run 33340445514: success on reviewed head 770a76f386126791dc2ed40078394cdb233fa8ec",
+      "PR #1240 unitary-control run 33340445518: success on reviewed head 770a76f386126791dc2ed40078394cdb233fa8ec",
+      "PR #1240 digest run 33340445487: success on reviewed head 770a76f386126791dc2ed40078394cdb233fa8ec",
+      "PR #1240 legal-professional run 33340445476: success on reviewed head 770a76f386126791dc2ed40078394cdb233fa8ec",
+      "PR #1240 Master Register run 33340445471: success on reviewed head 770a76f386126791dc2ed40078394cdb233fa8ec",
+      "PR #1240 proceedings-map run 33340445515: success on reviewed head 770a76f386126791dc2ed40078394cdb233fa8ec",
+      "PR #1240 publication-integrity run 33340445502: success on reviewed head 770a76f386126791dc2ed40078394cdb233fa8ec",
+      "PR #1240 audience run 33340445460: success on reviewed head 770a76f386126791dc2ed40078394cdb233fa8ec",
+      "PR #1240 preservation run 33340445505: success on reviewed head 770a76f386126791dc2ed40078394cdb233fa8ec",
+      "PR #1240 merged to main as ea62df4d0476a210623536cfdb735bf9c7136ab7",
+      "GitHub Pages run 33340554512 completed successfully on exact merge ea62df4d0476a210623536cfdb735bf9c7136ab7; artifact 9740428270 digest sha256:0ae654e131c78b7ee78515ffae1c531e867823b534186e82936445096b7c489f",
+      "Independent readback passed 12/12 expected routes, identity 231/23, and the 107-row Master reciprocal lineage. Run 33340555229 is retained as a transient pre-deploy-lag failure, not green CI."
+    ]
+  },
+  "projection_migration": {
+    "target": "assets/data/proceedings-master-public-v1.json",
+    "derivation": "DETERMINISTIC_ALLOWLIST_FROM_CANONICAL_REGISTER",
+    "state": "PR_OPEN",
+    "pull_request": 1235,
+    "expected_source_files": [
+      "assets/data/proceedings-master-public-v1.json",
+      "scripts/build_public_proceedings_projection.py"
+    ],
+    "qualification": "PR #1240 source-package and merge evidence is distinct. PR #1235 migrates the Master Register browser surface to the deterministic allowlisted public derivative; this migration is not LIVE_VERIFIED until PR #1235 merges, deploys and passes independent readback."
+  },
+  "verification": {
+    "repository": "verified",
+    "pull_request": 1240,
+    "reviewed_head_sha": "770a76f386126791dc2ed40078394cdb233fa8ec",
+    "reviewed_tree_sha": "456ec7e58459af7857de323402fbced09f827237",
+    "merge_sha": "ea62df4d0476a210623536cfdb735bf9c7136ab7",
+    "pages_deployment": "pages-build-deployment #1309 / run 33340554512 completed",
+    "live_verified_at": "2026-08-30T23:07:21Z",
+    "live_readback": "PASS — 12/12 expected bilingual routes; 4/4 carets per dedicated route; NIG/outcome/boundary text; reciprocal Master row anchors/backlinks; live 231-identity explorer and PD-SP-R-0023 profile route"
+  },
+  "deployment_evidence": {
+    "provider": "GitHub Pages",
+    "run_id": 33340554512,
+    "run_number": 1309,
+    "conclusion": "success",
+    "deployed_head_sha": "ea62df4d0476a210623536cfdb735bf9c7136ab7",
+    "artifact_id": 9740428270,
+    "artifact_digest": "sha256:0ae654e131c78b7ee78515ffae1c531e867823b534186e82936445096b7c489f"
+  },
+  "live_urls": [
+    "https://sbu001monterecco.github.io/por-derecho/en/arrecife-1103-2018-procedural-lineage/",
+    "https://sbu001monterecco.github.io/por-derecho/en/sun-park-takeover-7-june-2018/",
+    "https://sbu001monterecco.github.io/por-derecho/en/master-proceedings-register/",
+    "https://sbu001monterecco.github.io/por-derecho/en/proceedings-map/",
+    "https://sbu001monterecco.github.io/por-derecho/en/matter-identity-registry/",
+    "https://sbu001monterecco.github.io/por-derecho/en/insolvency-36-2012-arrecife-mercantile-bridge/",
+    "https://sbu001monterecco.github.io/por-derecho/es/arrecife-1103-2018-cadena-procesal/",
+    "https://sbu001monterecco.github.io/por-derecho/es/toma-control-sun-park-7-junio-2018/",
+    "https://sbu001monterecco.github.io/por-derecho/es/registro-maestro-procedimientos/",
+    "https://sbu001monterecco.github.io/por-derecho/es/mapa-procedimientos/",
+    "https://sbu001monterecco.github.io/por-derecho/es/registro-identidad-materia/",
+    "https://sbu001monterecco.github.io/por-derecho/es/concurso-36-2012-puente-arrecife-mercantil/"
+  ],
+  "live_verification_evidence": {
+    "status": "PASS",
+    "verified_at": "2026-08-30T23:07:21Z",
+    "source_merge_sha": "ea62df4d0476a210623536cfdb735bf9c7136ab7",
+    "pages_run_id": 33340554512,
+    "pages_run_number": 1309,
+    "route_result": "12/12 expected bilingual routes HTTP 200",
+    "dedicated_route_result": "2/2 bilingual routes live; 4/4 controlled carets on each",
+    "semantic_result": "NIG, procedural roles, adverse outcome, no-further-appeal wording and identity/merits boundary present",
+    "interlink_result": "8/8 English context links, reciprocal dossier link, legacy #case Master anchors/backlinks and live PD-SP-R-0023 explorer route verified",
+    "identity_result": "231 canonical identities / 23 proceedings; PD-SP-R-0023 present",
+    "master_result": "107 rows; LZ-JUD-003 and LZ-APP-004 reciprocal lineage, shared NIG and VERIFIED_PRIMARY_COPY status present",
+    "qualification": "This proves the PR #1240 source package on its then-live runtime. It does not prove PR #1235's separate allowlisted projection migration."
+  }
+}

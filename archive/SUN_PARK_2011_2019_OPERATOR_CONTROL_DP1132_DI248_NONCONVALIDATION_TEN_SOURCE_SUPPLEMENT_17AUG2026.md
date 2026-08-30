@@ -477,14 +477,14 @@ No single one of those variables may be used as a proxy for all others.
 
 | Node | Source now held | What is proved | What remains open |
 |---|---|---|---|
-| 23-Apr complaint intake | TS-07 | Court records receipt/date and allegations | Native complaint, annexes, filing receipt. |
-| 2-May Auto | TS-07 | Official DP number/NIG and procedural processing | Complete native order if more than supplied page. |
+| 23-Apr complaint intake | TS-07 + 30-Aug reviewed complaint copy | Court records receipt/date and allegations; reviewed copy materially narrows the complaint-content gap | Court-certified native complaint, complete annexes, filing receipt and representation instruments. |
+| 2-May Auto | TS-07 + 30-Aug reviewed judicial copy | Official origin DI 1103/2018-00, DP number, NIG and procedural processing | Court-certified complete docket copy and service. |
 | 18-Jul Auto | TS-08 secondary reference | Existence/content described by party | Signed Auto. |
 | 19-Jul Auto | TS-08 secondary reference | Existence/content described by party | Signed Auto. |
 | 31-Jul AC statement | TS-06 secondary quotation | Pleading records what complainant says AC testified | Native recording/transcript/minute. |
 | 1-Aug providencia | TS-08 | Official roster/referral to Fiscalía | Fiscalía's responsive report. |
 | 2/3-Aug oppositions | TS-08 | Exact pleadings + LexNET identifiers | Opposing reform appeals and full attachments. |
-| 20-Aug provisional dismissal | TS-06 secondary reference | Later pleading says it occurred and was appealed | Signed dismissal order, appeal and appellate outcome. |
+| 20-Aug provisional dismissal | TS-06 + reviewed AP Auto 804/2018 | AP Auto verifies the dismissal date, Rollo 1010/2018, shared NIG, rejection of both appeals, confirmation and finality wording | Certified 20-Aug order, full appeal/opposition/Fiscalía/service package and certified complete roll. |
 
 ### DP 1132 safeguard
 

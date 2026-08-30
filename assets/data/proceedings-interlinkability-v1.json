@@ -100,9 +100,10 @@
       "MAD-AN-CRI-004",
       "ESP-TS-001",
       "VAL-CIV-001",
-      "TF-CIV-006"
+      "TF-CIV-006",
+      "LZ-JUD-043"
     ],
-    "expected_count": 84,
+    "expected_count": 85,
     "excluded_aggregate_reference_ids": [
       "GC-APP-007"
     ]
@@ -541,15 +542,26 @@
         "record_master_id": "LZ-APP-004",
         "field": "Parent_Master_ID",
         "value_token": "LZ-JUD-003",
-        "evidence_status": "VERIFIED_PROCEDURAL"
+        "evidence_status": "VERIFIED_PRIMARY_COPY"
       },
       "source_assertions": [
         {
           "source_id": "PROCEEDINGS_MASTER_REGISTER",
           "source_record_master_id": "LZ-APP-004",
+          "field": "Linked_Proceedings",
+          "value_token": "LZ-JUD-003",
+          "evidence_status": "VERIFIED_PRIMARY_COPY",
+          "assertion_relationship_type": "LINKED_PROCEEDING",
+          "assertion_direction": "FORWARD",
+          "assertion_from_master_id": "LZ-APP-004",
+          "assertion_to_master_id": "LZ-JUD-003"
+        },
+        {
+          "source_id": "PROCEEDINGS_MASTER_REGISTER",
+          "source_record_master_id": "LZ-APP-004",
           "field": "Parent_Master_ID",
           "value_token": "LZ-JUD-003",
-          "evidence_status": "VERIFIED_PROCEDURAL",
+          "evidence_status": "VERIFIED_PRIMARY_COPY",
           "assertion_relationship_type": "PARENT_CHILD",
           "assertion_direction": "FORWARD",
           "assertion_from_master_id": "LZ-JUD-003",
@@ -560,7 +572,7 @@
           "source_record_master_id": "LZ-JUD-003",
           "field": "Linked_Proceedings",
           "value_token": "LZ-APP-004",
-          "evidence_status": "VERIFIED_PROCEDURAL",
+          "evidence_status": "VERIFIED_PRIMARY_COPY",
           "assertion_relationship_type": "LINKED_PROCEEDING",
           "assertion_direction": "FORWARD",
           "assertion_from_master_id": "LZ-JUD-003",
@@ -570,7 +582,7 @@
       "limitations_en": "Reverse navigation may be derived from this recorded field. The edge does not establish joinder, notice, admissibility, knowledge, agreement, wrongdoing or liability.",
       "limitations_es": "Puede derivarse navegación inversa de este campo registrado. El enlace no acredita acumulación, conocimiento formal, admisibilidad, conocimiento personal, acuerdo, ilicitud ni responsabilidad.",
       "public_safe": true,
-      "supporting_assertion_count": 2
+      "supporting_assertion_count": 3
     },
     {
       "id": "REL-PARENT_CHILD-LZ-TRA-027-LZ-TRA-032",
@@ -2981,9 +2993,9 @@
       "why_es": "Al menos una relación directa está respaldada por un campo canónico expreso Parent_Master_ID, Linked_Proceedings o Appeal_or_Review.",
       "limitations_en": "This disposition controls navigation only. It does not prove joinder, receipt, admissibility, knowledge, agreement, causation, wrongdoing or liability.",
       "limitations_es": "Esta clasificación controla solo la navegación. No prueba acumulación, recepción, admisibilidad, conocimiento, acuerdo, causalidad, ilicitud ni responsabilidad.",
-      "next_source_needed_en": "Complete complaint, witness/AC testimony, archive order and notifications",
+      "next_source_needed_en": "Court-certified complete docket, service record, full annex set and audiovisual masters",
       "next_source_needed_es": "Denuncia completa, declaraciones del testigo y del AC, auto de archivo y notificaciones.",
-      "source_status": "VERIFIED_PROCEDURAL",
+      "source_status": "VERIFIED_PRIMARY_COPY",
       "basis": {
         "kind": "DIRECT_RELATIONSHIP_MEMBERSHIP",
         "relationship_ids": [
@@ -3004,9 +3016,9 @@
       "why_es": "Al menos una relación directa está respaldada por un campo canónico expreso Parent_Master_ID, Linked_Proceedings o Appeal_or_Review.",
       "limitations_en": "This disposition controls navigation only. It does not prove joinder, receipt, admissibility, knowledge, agreement, causation, wrongdoing or liability.",
       "limitations_es": "Esta clasificación controla solo la navegación. No prueba acumulación, recepción, admisibilidad, conocimiento, acuerdo, causalidad, ilicitud ni responsabilidad.",
-      "next_source_needed_en": "Exact roll, signed Auto, panel, appeal grounds, Fiscalía position, finality",
+      "next_source_needed_en": "Court-certified complete roll, appeal/opposition filings, Fiscalía position and service record",
       "next_source_needed_es": "Rollo exacto, auto firmado, composición de la Sala, motivos del recurso, posición de Fiscalía y firmeza.",
-      "source_status": "VERIFIED_PROCEDURAL",
+      "source_status": "VERIFIED_PRIMARY_COPY",
       "basis": {
         "kind": "DIRECT_RELATIONSHIP_MEMBERSHIP",
         "relationship_ids": [
@@ -4745,39 +4757,59 @@
         "field": "Open_Reference_Gap",
         "evidence_status": "VERIFIED_PRIMARY_COPY"
       }
+    },
+    {
+      "master_id": "LZ-JUD-043",
+      "primary_classification": "EXPLICIT_RELATIONSHIP_GAP",
+      "relationship_ids": [],
+      "context_cluster_ids": [],
+      "why_en": "No direct edge or admitted controlled contextual cluster is currently materialised. The row's open primary-source requirement is carried as an explicit relationship gap.",
+      "why_es": "Actualmente no se materializa ningún enlace directo ni grupo contextual controlado admitido. La necesidad de fuente primaria abierta de la fila se mantiene como laguna relacional expresa.",
+      "limitations_en": "This disposition controls navigation only. It does not prove joinder, receipt, admissibility, knowledge, agreement, causation, wrongdoing or liability.",
+      "limitations_es": "Esta clasificación controla solo la navegación. No prueba acumulación, recepción, admisibilidad, conocimiento, acuerdo, causalidad, ilicitud ni responsabilidad.",
+      "next_source_needed_en": "Certified docket and label bridge; medical and objective incident evidence; incident-date authority/access/guest/agency; hearing, disposition, appeal and finality",
+      "next_source_needed_es": "Expediente certificado y puente entre rótulos; prueba médica y objetiva del incidente; autoridad, acceso, huésped y agencia en la fecha; vista, resolución, recurso y firmeza.",
+      "source_status": "PRIMARY_COMPLAINT_AND_OFFICIAL_SUMMONS_LOCATED_OUTCOME_OPEN",
+      "basis": {
+        "kind": "MASTER_REGISTER_FIELD",
+        "source_id": "PROCEEDINGS_MASTER_REGISTER",
+        "record_master_id": "LZ-JUD-043",
+        "field": "Open_Reference_Gap",
+        "evidence_status": "PRIMARY_COMPLAINT_AND_OFFICIAL_SUMMONS_LOCATED_OUTCOME_OPEN"
+      }
     }
   ],
   "coverage": {
-    "public_record_count": 101,
-    "canonical_exact_proceeding_count": 85,
-    "public_exact_proceeding_count": 84,
+    "public_record_count": 106,
+    "canonical_exact_proceeding_count": 86,
+    "public_exact_proceeding_count": 85,
     "private_exact_excluded_count": 1,
     "private_exact_excluded_disposition_counts": {
       "EXPLICIT_RELATIONSHIP_GAP": 1
     },
-    "node_disposition_count": 84,
+    "node_disposition_count": 85,
     "direct_relationship_count": 16,
     "direct_relationship_source_verified_pair_count": 15,
     "direct_relationship_source_reported_pending_pair_count": 1,
-    "direct_source_assertion_count": 19,
-    "direct_source_verified_assertion_count": 18,
+    "direct_source_assertion_count": 20,
+    "direct_source_verified_assertion_count": 19,
     "direct_source_reported_pending_assertion_count": 1,
     "context_cluster_count": 25,
     "recorded_connection_cluster_count": 7,
     "recorded_stream_cluster_count": 0,
     "case_prism_proposition_cluster_count": 18,
-    "case_prism_exact_proceeding_covered_count": 24,
+    "case_prism_exact_proceeding_covered_count": 25,
     "case_prism_exact_proceeding_uncovered_count": 60,
-    "decision_dependency_exact_coverage": "GAP_24_OF_84",
-    "bilingual_specific_next_source_count": 84,
-    "bilingual_specific_next_source_coverage": "VERIFIED_84_OF_84",
+    "decision_dependency_exact_coverage": "GAP_25_OF_85",
+    "bilingual_specific_next_source_count": 85,
+    "bilingual_specific_next_source_coverage": "VERIFIED_85_OF_85",
     "exact_proceeding_full_finite_test_count": 0,
-    "exact_proceeding_full_finite_test_coverage": "GAP_0_OF_84",
+    "exact_proceeding_full_finite_test_coverage": "GAP_0_OF_85",
     "classification_counts": {
       "DIRECT_PROCEDURAL_EDGE": 25,
       "CONTROLLED_CONTEXTUAL_BRIDGE": 39,
       "INDEPENDENT_TRACK": 0,
-      "EXPLICIT_RELATIONSHIP_GAP": 20
+      "EXPLICIT_RELATIONSHIP_GAP": 21
     },
     "unexplained_exact_proceeding_count": 0,
     "geography_only_bridge_count": 0

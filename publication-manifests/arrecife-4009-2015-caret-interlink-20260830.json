@@ -1,0 +1,108 @@
+{
+  "schema": "por-derecho-caret-interlink-publication-v1",
+  "publication_id": "PD-SP-ARRECIFE-4009-2015-20260830-01",
+  "control_date": "2026-08-30",
+  "owner": "Por Derecho / Project Sun Rock",
+  "current_state": "LIVE_VERIFIED",
+  "state": "MERGED_DEPLOYED_AND_EXACT_READBACK_VERIFIED",
+  "purpose": "Durably register Arrecife reference 4009/2015, make it contextually discoverable without inventing a direct procedural relationship, and preserve every source and representation gap required before caret confirmation.",
+  "canonical_ids": {
+    "master_register_id": "LZ-REF-042",
+    "caepr_id": "PD-SP-R-0022",
+    "identity_state": "CARET_PENDING_EXACT_ORGAN_AND_CERTIFIED_DOCKET"
+  },
+  "expected_source_files": [
+    "archive/PROCEEDINGS_MASTER_REGISTER.csv",
+    "assets/data/matter-identity-registry-v1.json",
+    "assets/data/matter-identity-registry-v1.proceedings.json",
+    "assets/data/matter-identity-operational-control-v1.json",
+    "assets/data/proceedings-case-prism-v1.json",
+    "assets/data/counsel-procurador-gap-register-v1.json",
+    "archive/MISSING_EVIDENCE_REGISTER.md",
+    "archive/ARRECIFE_4009_2015_CARET_INTERLINK_CONTROL_30AUG2026.md"
+  ],
+  "expected_routes": {
+    "en": [
+      "en/master-proceedings-register/index.html",
+      "en/proceedings-map/index.html"
+    ],
+    "es": [
+      "es/registro-maestro-procedimientos/index.html",
+      "es/mapa-procedimientos/index.html"
+    ]
+  },
+  "interlinking": {
+    "master_register_projection": true,
+    "caepr_resolution": "pending",
+    "case_prism_lane": "historical",
+    "direct_procedural_edges": [],
+    "boundary": "Historical Arrecife contextual placement only; no parent/child, appeal, accumulation, referral, party, actor, merits or liability relation is inferred."
+  },
+  "projection_migration": {
+    "target": "assets/data/proceedings-master-public-v1.json",
+    "state": "PR_OPEN",
+    "pull_request": 1235,
+    "qualification": "The LIVE_VERIFIED evidence above covers the 4009/2015 source package and then-live register/map surfaces. PR #1235 separately migrates those browser surfaces to the deterministic allowlisted derivative; that migration is not LIVE_VERIFIED until its own merge, deployment and readback."
+  },
+  "open_items": [
+    "ME-113",
+    "CP-GAP-009"
+  ],
+  "caret_result": {
+    "denominator": 1,
+    "confirmed": 0,
+    "pending": 1,
+    "coverage_percentage": 0,
+    "status": "PARTIAL_NOT_ALL_IS_CARET"
+  },
+  "validation": {
+    "evidence": "Dedicated Arrecife, identity, unitary-control, proceedings-map, master-register, counsel/procurador, publication-integrity and preservation controls passed against the reviewed source package."
+  },
+  "merge_sha": "2741dc72a05887c4bc55106b6dd69b296fc05fd1",
+  "deployment_evidence": "GitHub Pages run 33339777965 / #1306 completed successfully on the exact merge SHA.",
+  "live_urls": [
+    "https://sbu001monterecco.github.io/por-derecho/es/registro-identidad-materia/",
+    "https://sbu001monterecco.github.io/por-derecho/en/matter-identity-registry/",
+    "https://sbu001monterecco.github.io/por-derecho/es/registro-maestro-procedimientos/",
+    "https://sbu001monterecco.github.io/por-derecho/en/master-proceedings-register/",
+    "https://sbu001monterecco.github.io/por-derecho/es/mapa-procedimientos/",
+    "https://sbu001monterecco.github.io/por-derecho/en/proceedings-map/"
+  ],
+  "live_verification_evidence": {
+    "status": "PASS",
+    "verified_at": "2026-08-30T22:43:00Z",
+    "source_merge_sha": "2741dc72a05887c4bc55106b6dd69b296fc05fd1",
+    "pages_run_id": 33339777965,
+    "pages_run_number": 1306,
+    "resource_result": "7/7 HTTP 200 and exact merged-byte equality",
+    "route_result": "6/6 bilingual routes HTTP 200"
+  },
+  "deployment": {
+    "pull_request": 1237,
+    "reviewed_head_sha": "027effcd00ae58c320e6ee1ea51d35d7da181d31",
+    "merge_sha": "2741dc72a05887c4bc55106b6dd69b296fc05fd1",
+    "merge_tree": "cbad475e838f3f0d53dd7fc02304e007bf37949b",
+    "pages_run": 33339777965,
+    "pages_run_number": 1306,
+    "pages_status": "COMPLETED_SUCCESS_EXACT_MERGE_SHA",
+    "live_readback": "VERIFIED_7_OF_7_EXACT_BYTES_AND_6_OF_6_ROUTE_HTTP_200",
+    "source_sha256": {
+      "archive/PROCEEDINGS_MASTER_REGISTER.csv": "1efac79123354776f2cb5361f564c94ce28dbf3bad74d638752ea007b95bfb4a",
+      "assets/data/matter-identity-registry-v1.proceedings.json": "d13a5fcab8643b3c277772dd879f25a995525e4e4dcbbf5860fd6f9e01b2a4d9",
+      "assets/data/matter-identity-registry-v1.json": "4db53fe3e6a10d6f7e6f79e136dbcc1b80790edb9e03f772c3b1bb2f28ce571c",
+      "assets/data/matter-identity-operational-control-v1.json": "11bf98c4def7e033bfaad703f71db34147e844898fa2337370578bc8991cd381",
+      "assets/data/counsel-procurador-gap-register-v1.json": "7e03cfba4f2f435b32e8964ed300dd945b9253fbc4d67b2e72c1f9d884bb90cf",
+      "publication-manifests/arrecife-4009-2015-caret-interlink-20260830.json": "d25b06358547ce3a1b7ae038cd58f24e89b190c52fbf8594f2a33e36ab56c9b8",
+      "archive/ARRECIFE_4009_2015_CARET_INTERLINK_CONTROL_30AUG2026.md": "9278d27c2628bc77534f552e2b5812d030a9a1e03fb833370c98767900ea8750"
+    },
+    "verified_routes": [
+      "es/registro-identidad-materia/",
+      "en/matter-identity-registry/",
+      "es/registro-maestro-procedimientos/",
+      "en/master-proceedings-register/",
+      "es/mapa-procedimientos/",
+      "en/proceedings-map/"
+    ],
+    "verification_note": "Live verification establishes publication only. It does not confirm the caret, exact organ, certified docket or a direct procedural relationship."
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "schema": "por-derecho.unresolved-proceeding-interlink-manifest.v1",
+  "publication_id": "PD-SP-ARRECIFE-1304-2014-20260830-01",
+  "owner": "Por Derecho / Project Sun Rock",
+  "control_date": "2026-08-30",
+  "current_state": "DELETION_SAFE",
+  "state": "DELETION_SAFE_LIVE_VERIFIED_WITH_OPEN_IDENTITY_EVIDENCE",
+  "controlling_pr": 1238,
+  "reviewed_head_sha": "3d1d956cb9c8ee587cfc2efadc3ce4815f916edd",
+  "merge_sha": "308b26a3779730d33a858e8d4df539801a7aa3e1",
+  "purpose": "Preserve and expose the user-supplied Arrecife reference 1304/2014 without manufacturing a proceeding identity, caret or direct procedural relationship.",
+  "canonical_key": "LZ-REF-044",
+  "canonical_source": "archive/PROCEEDINGS_MASTER_REGISTER.csv",
+  "identity_state": "UNRESOLVED_PRIMARY_SOURCE_NOT_LOCATED",
+  "caret_state": "WITHHELD",
+  "direct_edge_state": "NONE_SOURCE_ESTABLISHED",
+  "contextual_bridge_state": "PUBLIC_SEARCH_AND_CHRONOLOGY_FOR_ARRECIFE_2014; TRACE_CONTEXT_BY_SAME_LANZAROTE_GEOGRAPHY_ONLY",
+  "projection_migration": {
+    "target": "assets/data/proceedings-master-public-v1.json",
+    "derivation": "DETERMINISTIC_ALLOWLIST_FROM_CANONICAL_REGISTER",
+    "state": "PR_OPEN",
+    "pull_request": 1235,
+    "expected_source_files": [
+      "assets/data/proceedings-master-public-v1.json",
+      "scripts/build_public_proceedings_projection.py"
+    ],
+    "qualification": "The LIVE_VERIFIED evidence in this manifest covers the PR #1238 source package and then-live register/map surfaces. PR #1235 separately migrates those browser surfaces to the deterministic allowlisted public derivative; this migration is not LIVE_VERIFIED until its own merge, deployment and independent readback. Geography remains taxonomy/navigation and does not create a material context cluster in that derivative."
+  },
+  "expected_routes": {
+    "en": ["en/master-proceedings-register/index.html", "en/proceedings-map/index.html"],
+    "es": ["es/registro-maestro-procedimientos/index.html", "es/mapa-procedimientos/index.html"]
+  },
+  "expected_source_files": [
+    "archive/PROCEEDINGS_MASTER_REGISTER.csv",
+    "archive/ARRECIFE_1304_2014_IDENTITY_AND_INTERLINK_GAP_30AUG2026.md",
+    "archive/MISSING_EVIDENCE_REGISTER.md",
+    "assets/data/counsel-procurador-gap-register-v1.json",
+    "scripts/audit_proceedings_interconnectivity_map.py",
+    "scripts/audit_counsel_procurador_governance.py",
+    ".github/workflows/audit-proceedings-interconnectivity-map.yml",
+    "docs/deletion-audits/2026-08-30-arrecife-1304-2014-identity-interlink-continuity.md"
+  ],
+  "collision_controls": [
+    "DP 332/2014",
+    "DP 3017/2014",
+    "DP 168/2015",
+    "Juicio de faltas 3205/2014",
+    "P.O. 562/2014",
+    "Arrecife 4009/2015 / LZ-REF-042"
+  ],
+  "validation": {
+    "status": "CI_PASSED_AND_LIVE_VERIFIED",
+    "pull_request": 1238,
+    "validated_head_sha": "3d1d956cb9c8ee587cfc2efadc3ce4815f916edd",
+    "merge_sha": "308b26a3779730d33a858e8d4df539801a7aa3e1",
+    "pull_request_result": "22/22 completed success",
+    "expected_canonical_rows": 107,
+    "expected_controlled_public_rows": 106,
+    "expected_caret_count": 0,
+    "expected_direct_edge_count": 0,
+    "evidence": "PR #1238 completed 22/22 GitHub Actions runs successfully at reviewed head 3d1d956cb9c8ee587cfc2efadc3ce4815f916edd; Pages run 33340356015 / #1308 completed successfully on exact merge 308b26a3779730d33a858e8d4df539801a7aa3e1; cache-busted live readback matched 7/7 merged resources.",
+    "local_evidence": [
+      "Proceedings interconnectivity map audit passed with 107 canonical rows and 106 controlled public rows after collision-safe reconciliation with Arrecife 4009/2015 at LZ-REF-042, DP 974/2023 at LZ-JUD-042 and 3205/2014 at LZ-JUD-043.",
+      "Master proceedings publication, counsel/procurador governance, Case Prism build, repository preservation, publication integrity, audience experience and private-source governance checks passed.",
+      "Runtime-source simulation confirmed LZ-REF-044 is public-eligible UNVERIFIED, has zero non-empty direct-edge fields, is absent from Case Prism and has same-geography context only."
+    ]
+  },
+  "deployment_evidence": {
+    "provider": "GitHub Pages",
+    "run_id": 33340356015,
+    "run_number": 1308,
+    "conclusion": "success",
+    "deployed_head_sha": "308b26a3779730d33a858e8d4df539801a7aa3e1",
+    "completed_at": "2026-08-30T22:54:36Z"
+  },
+  "live_urls": [
+    "https://sbu001monterecco.github.io/por-derecho/en/master-proceedings-register/",
+    "https://sbu001monterecco.github.io/por-derecho/es/registro-maestro-procedimientos/",
+    "https://sbu001monterecco.github.io/por-derecho/en/proceedings-map/",
+    "https://sbu001monterecco.github.io/por-derecho/es/mapa-procedimientos/",
+    "https://sbu001monterecco.github.io/por-derecho/archive/PROCEEDINGS_MASTER_REGISTER.csv",
+    "https://sbu001monterecco.github.io/por-derecho/assets/data/counsel-procurador-gap-register-v1.json",
+    "https://sbu001monterecco.github.io/por-derecho/publication-manifests/arrecife-1304-2014-identity-interlink-20260830.json"
+  ],
+  "live_verification_evidence": {
+    "verified_at": "2026-08-30T22:56:00Z",
+    "method": "Cache-busted HTTP 200 retrieval, SHA-256 comparison with the merged source, and structured CSV audit",
+    "result": "7/7 LIVE_RESOURCES_EXACT_SHA256_MATCH",
+    "canonical_counts": "107 rows / 106 controlled public rows / 107 unique Master_ID values",
+    "identity_result": "4009/2015 occurs once as LZ-REF-042; 1304/2014 occurs once as LZ-REF-044",
+    "boundary_result": "LZ-REF-044 is UNRESOLVED_REFERENCE / UNVERIFIED / REGISTERED_ONLY with empty parent, appeal and linked-proceeding fields, no CAEPR caret and no Case Prism proposition edge"
+  },
+  "deletion_record": {
+    "status": "DELETION_SAFE_WITH_OPEN_IDENTITY_EVIDENCE",
+    "continuity_source": "docs/deletion-audits/2026-08-30-arrecife-1304-2014-identity-interlink-continuity.md",
+    "open_evidence_preserved": true,
+    "communication_performed": false,
+    "filing_performed": false
+  },
+  "continuity_rule": "Do not promote LZ-REF-044 to a proceeding, add a CAEPR caret or create a direct procedural edge until a signed/certified primary source resolves the exact identity and relationship. Preserve the user-supplied expression as alias provenance if later corrected."
+}

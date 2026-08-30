@@ -1,6 +1,6 @@
 {
   "schema": "por-derecho.criminal-first-evidence-graph.v1",
-  "control_date": "2026-08-25",
+  "control_date": "2026-08-30",
   "status": "investigative_control_not_criminal_finding",
   "governing_rule": "Every edge must retain its evidentiary lane; sequence, association and benefit do not by themselves prove criminal intent or concert.",
   "lanes": {
@@ -22,7 +22,9 @@
     {"id":"N09","date":"2018-06-07","label":"Access / security / material-control event","lane":"verified","href_es":"/por-derecho/es/toma-control-sun-park-7-junio-2018/","href_en":"/por-derecho/en/sun-park-takeover-7-june-2018/"},
     {"id":"N10","date":"2018+","label":"CAM / Acosta Matos capacity convergence","lane":"inference","href_es":"/por-derecho/es/comunidad-instrumentalizacion/","href_en":"/por-derecho/en/community-instrumentalisation/"},
     {"id":"N11","date":"2021-2026","label":"Liquidation / calificación / current proceedings","lane":"verified","href_es":"/por-derecho/es/fiscalia-dip-2-2026/","href_en":"/por-derecho/en/fiscalia-dip-2-2026/"},
-    {"id":"N12","date":"open","label":"Campanario ↔ Rodríguez-Batllori friendship / appointment coordination","lane":"open","href_es":"/por-derecho/es/alvaro-campanario-prieto-puente-lopez-noriega/","href_en":"/por-derecho/en/alvaro-campanario-prieto-puente-lopez-noriega/"}
+    {"id":"N12","date":"open","label":"Campanario ↔ Rodríguez-Batllori friendship / appointment coordination","lane":"open","href_es":"/por-derecho/es/alvaro-campanario-prieto-puente-lopez-noriega/","href_en":"/por-derecho/en/alvaro-campanario-prieto-puente-lopez-noriega/"},
+    {"id":"N13","date":"2014","label":"3205/2014: claimed-office access/key event plus contemporaneous counter-allegation","lane":"attributed","href_es":"/por-derecho/es/dp-3205-2014-arrecife/","href_en":"/por-derecho/en/dp-3205-2014-arrecife/"},
+    {"id":"N14","date":"2026-06-25","label":"NEXUS 36 / DP 1901 five-person private-actor complaint perimeter","lane":"verified","href_es":"/por-derecho/es/dp-1901-2026/","href_en":"/por-derecho/en/dp-1901-2026/"}
   ],
   "edges": [
     {"from":"N01","to":"N02","lane":"verified","proposition":"Campanario appears in the pre-concurso Sun Park owner/legal perimeter; exact native 27-Apr-2009 email/attachments remain a priority acquisition."},
@@ -36,7 +38,10 @@
     {"from":"N09","to":"N10","lane":"verified","proposition":"Later CAM/Acosta Matos capacities and material-control consequences must be dated individually; later convergence is not proof of a 2011 agreement."},
     {"from":"N10","to":"N11","lane":"inference","proposition":"Test the attributed 'truth inversion' theory proposition-by-proposition in calificación and current proceedings, preserving adverse evidence."},
     {"from":"N02","to":"N12","lane":"attributed","proposition":"A declarant attributes personal friendship/connection; no independent evidence currently establishes friendship, appointment intervention, coordination, handover, plan or motive."},
-    {"from":"N12","to":"N06","lane":"open","proposition":"Appointment/reparto, disclosures, common-case history, correspondence and professional-network evidence are finite targets capable of confirming or refuting the alleged relationship."}
+    {"from":"N12","to":"N06","lane":"open","proposition":"Appointment/reparto, disclosures, common-case history, correspondence and professional-network evidence are finite targets capable of confirming or refuting the alleged relationship."},
+    {"from":"N04","to":"N13","lane":"attributed","proposition":"The primary complaint records claimed Community titles, entry, unit inspection and a key dispute. Gil's 7-Oct-2014 email proves a contemporaneous no-office/forced-entry/account-inversion counter-allegation existed. Neither source proves valid authority, incident truth, false complaint, crime, guilt or outcome."},
+    {"from":"N13","to":"N09","lane":"inference","proposition":"Gil treats the 2014 event as a mid-chain seed/corroborative lead in the alleged 2011 to 7-June-2018 continuity. It may test method, claimed authority and account consistency; it does not prove a common plan, CAM direction in 2014 or the 2018 command chain."},
+    {"from":"N10","to":"N14","lane":"verified","proposition":"NEXUS 36 names JDAM, LPAM, FMMM, ACR and SCR as the five-person private-actor perimeter. Aizpurúa is not a sixth person; Gil presently identifies her as a material historical witness and possible future additional party subject to evidence and procedural rights."}
   ],
   "priority_evidence": [
     "Native 27-Apr-2009 Campanario email with headers and attachments",

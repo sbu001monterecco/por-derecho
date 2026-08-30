@@ -104,14 +104,18 @@ try {
   if (!projectionResponse.ok()) throw new Error(`public proceedings projection failed with ${projectionResponse.status()}`);
   const projection = await projectionResponse.json();
   const publicRecords = Array.isArray(projection.records) ? projection.records : [];
-  if (publicRecords.length !== 101) throw new Error(`expected 101 controlled public records, found ${publicRecords.length}`);
+  if (publicRecords.length !== 106) throw new Error(`expected 106 controlled public records, found ${publicRecords.length}`);
   const exactRecords = publicRecords.filter((record) => String(record.Is_Proceeding || '').trim().toUpperCase() === 'TRUE');
   const exactIds = exactRecords.map((record) => record.Master_ID);
-  if (exactIds.length !== 84) throw new Error(`expected 84 exact public proceedings after aggregate-family repair, found ${exactIds.length}`);
+  if (exactIds.length !== 85) throw new Error(`expected 85 exact public proceedings after aggregate-family repair, found ${exactIds.length}`);
   if (exactRecords.some((record) => /FAMILY|AGGREGATE/i.test(`${record.Record_Type || ''} ${record.Proceeding_Class || ''}`))) {
     throw new Error('public exact-proceeding denominator admits an aggregate/family object');
   }
   if (exactIds.includes('GC-APP-007')) throw new Error('aggregate removal-appeal family is still admitted as an exact proceeding');
+  for (const traceOnlyId of ['GC-REF-031', 'LZ-JUD-042', 'LZ-REF-042', 'LZ-REF-044']) {
+    if (!publicRecords.some((record) => record.Master_ID === traceOnlyId)) throw new Error(`${traceOnlyId}: public trace record missing`);
+    if (exactIds.includes(traceOnlyId)) throw new Error(`${traceOnlyId}: source-pending record admitted to exact isolation`);
+  }
 
   const interlinkResponse = await dataContext.request.get(`${base}/assets/data/proceedings-interlinkability-v1.json`);
   if (!interlinkResponse.ok()) throw new Error(`interlinkability registry failed with ${interlinkResponse.status()}`);
@@ -121,16 +125,33 @@ try {
   const dispositionById = new Map(dispositions.map((item) => [item.master_id, item]));
   const relationshipById = new Map((interlinks.relationships || []).map((item) => [item.id, item]));
   const clusterById = new Map((interlinks.context_clusters || []).map((item) => [item.id, item]));
+  const dp3205Disposition = dispositionById.get('LZ-JUD-043');
+  if (!dp3205Disposition
+      || dp3205Disposition.primary_classification !== 'EXPLICIT_RELATIONSHIP_GAP'
+      || (dp3205Disposition.relationship_ids || []).length
+      || (dp3205Disposition.context_cluster_ids || []).length) {
+    throw new Error('LZ-JUD-043 must have one edge-free explicit relationship-gap disposition');
+  }
+  if ((interlinks.relationships || []).some((item) => item.from_master_id === 'LZ-JUD-043' || item.to_master_id === 'LZ-JUD-043')) {
+    throw new Error('LZ-JUD-043 was promoted into a direct relationship');
+  }
+  if ((interlinks.context_clusters || []).some((item) => (item.member_master_ids || []).includes('LZ-JUD-043'))) {
+    throw new Error('LZ-JUD-043 singleton coordinate was promoted into a context cluster');
+  }
+  if (clusterById.has('CTX-PRISM-P19')) throw new Error('singleton P19 was materialised as a context cluster');
   const prismResponse = await dataContext.request.get(`${base}/assets/data/proceedings-case-prism-v1.json`);
   if (!prismResponse.ok()) throw new Error(`Case Prism data failed with ${prismResponse.status()}`);
   const prismData = await prismResponse.json();
+  const p19 = (prismData.propositions || []).find((item) => item.id === 'P19');
+  const p19Members = new Set(Object.values(p19?.cells || {}).flatMap((cell) => cell.status === 'OUTSIDE' ? [] : (cell.master_ids || [])));
+  if (p19Members.size !== 1 || !p19Members.has('LZ-JUD-043')) throw new Error('P19 must remain a singleton LZ-JUD-043 coordinate');
   const exactIdSet = new Set(exactIds);
   const prismCoveredIds = new Set((prismData.propositions || []).flatMap((prop) =>
     Object.values(prop.cells || {}).flatMap((cell) =>
       cell.status === 'OUTSIDE' ? [] : (cell.master_ids || []).filter((id) => exactIdSet.has(id))
     )
   ));
-  if (prismCoveredIds.size !== 24 || exactIds.length - prismCoveredIds.size !== 60) {
+  if (prismCoveredIds.size !== 25 || exactIds.length - prismCoveredIds.size !== 60) {
     throw new Error(`Case Prism exact-file content denominator mismatch (${prismCoveredIds.size}/${exactIds.length})`);
   }
   const expectedIsolationById = new Map(exactIds.map((masterId) => [
@@ -179,11 +200,11 @@ try {
     const matrixRows = await page.locator('.pdim-prism-table tbody tr').count();
     const matrixCells = await page.locator('.pdim-prism-cell').count();
     const laneHeaders = await page.locator('.pdim-prism-table thead th').count();
-    if (matrixRows !== 18 || matrixCells !== 216 || laneHeaders !== 13) {
+    if (matrixRows !== 19 || matrixCells !== 228 || laneHeaders !== 13) {
       throw new Error(`${route.lang}: matrix denominator mismatch (${matrixRows} rows, ${matrixCells} cells, ${laneHeaders - 1} lanes)`);
     }
     if (await page.locator('.pdim-prism-dash').count()) throw new Error(`${route.lang}: unexplained matrix dash rendered`);
-    if (await page.locator('.pdim-prism-cell small').count() !== 216) throw new Error(`${route.lang}: file-treatment labels missing`);
+    if (await page.locator('.pdim-prism-cell small').count() !== 228) throw new Error(`${route.lang}: file-treatment labels missing`);
     const firstEvidenceLabel = await page.locator('.pdim-prism-table tbody th small').first().innerText();
     if (!firstEvidenceLabel || firstEvidenceLabel.includes('_')) throw new Error(`${route.lang}: reader-facing evidence status was not localised`);
 
@@ -222,9 +243,9 @@ try {
     await prismTab.focus();
     await prismTab.press('ArrowRight');
     await page.waitForSelector('[role="tab"][data-view="lanes"][aria-selected="true"]');
-    if (await page.locator('.pdim-swimlane tbody tr').count() !== 18) throw new Error(`${route.lang}: swimlane event denominator mismatch`);
+    if (await page.locator('.pdim-swimlane tbody tr').count() !== 19) throw new Error(`${route.lang}: swimlane event denominator mismatch`);
     if (await page.locator('[data-lane-heading]').count() !== 12) throw new Error(`${route.lang}: stable lane headings missing`);
-    if (await page.locator('.pdim-swim-cell').count() !== 216) throw new Error(`${route.lang}: swimlane coordinate denominator mismatch`);
+    if (await page.locator('.pdim-swim-cell').count() !== 228) throw new Error(`${route.lang}: swimlane coordinate denominator mismatch`);
 
     await page.locator('[role="tab"][data-view="isolation"]').click();
     await page.waitForSelector('[data-isolation-id]');
@@ -236,12 +257,12 @@ try {
       const expectedStatus = prismCoveredIds.has(masterId) ? 'covered' : 'unresolved';
       if (status !== expectedStatus) throw new Error(`${route.lang}/${masterId}: Case Prism coverage label is ${status}, expected ${expectedStatus}`);
     }
-    if (renderedCoverage.filter(([, status]) => status === 'covered').length !== 24 || renderedCoverage.filter(([, status]) => status === 'unresolved').length !== 60) {
-      throw new Error(`${route.lang}: visible Case Prism content coverage must remain 24 covered / 60 unresolved`);
+    if (renderedCoverage.filter(([, status]) => status === 'covered').length !== 25 || renderedCoverage.filter(([, status]) => status === 'unresolved').length !== 60) {
+      throw new Error(`${route.lang}: visible Case Prism content coverage must remain 25 covered / 60 unresolved`);
     }
     if (await isolation.locator('option[value="GC-APP-007"]').count()) throw new Error(`${route.lang}: aggregate removal-appeal family admitted to isolation`);
     const coverageText = await page.locator('[data-isolation-coverage]').innerText();
-    if (!coverageText.includes(`24/${exactIds.length}`) || !coverageText.includes('60')) throw new Error(`${route.lang}: finite 24/84 Case Prism content denominator is not visible`);
+    if (!coverageText.includes(`25/${exactIds.length}`) || !coverageText.includes('60')) throw new Error(`${route.lang}: finite 25/85 Case Prism content denominator is not visible`);
     const fullCorpusLabels = await page.locator('.pdim-isolation-map button[aria-label]').evaluateAll((elements) => elements.map((element) => element.getAttribute('aria-label') || ''));
     if (fullCorpusLabels.some((label) => label.includes(route.outsideSelected))) throw new Error(`${route.lang}: full-corpus cells are announced as outside a selected file`);
     if (await isolation.locator('option[value="GC-APP-004"]').count() !== 1) throw new Error(`${route.lang}: exact RPL 2523 option missing`);
@@ -381,10 +402,11 @@ try {
       await assertDeepLinkVisible(deepLinkPage, hash, `${route.lang}: direct ${hash}`);
       await deepLinkPage.close();
     }
-
     const parameterizedCases = [
       { hash: '#trace-proceeding=GC-APP-004', view: 'trace', select: '[data-trace-select]', panel: '[data-trace-panel]', id: 'GC-APP-004' },
       { hash: '#isolation-test=GC-FIS-017', view: 'isolation', select: '[data-isolation-id]', panel: '[data-isolation-reconnection]', id: 'GC-FIS-017' },
+      { hash: '#trace-proceeding=LZ-JUD-043', view: 'trace', select: '[data-trace-select]', panel: '[data-trace-panel]', id: 'LZ-JUD-043', dossier: true },
+      { hash: '#isolation-test=LZ-JUD-043', view: 'isolation', select: '[data-isolation-id]', panel: '[data-isolation-reconnection]', id: 'LZ-JUD-043' },
       { hash: '#trace-proceeding=GC-APP-007', view: 'trace', select: '[data-trace-select]', panel: '[data-trace-panel]', id: 'GC-APP-007', notExact: true },
     ];
     for (const coldCase of parameterizedCases) {
@@ -398,6 +420,11 @@ try {
       const coldIdentity = await coldPage.locator(coldCase.panel).innerText();
       if (!coldIdentity.includes(coldCase.id) || !(await coldPage.locator(coldCase.panel).isVisible())) {
         throw new Error(`${route.lang}: cold load did not expose the visible identity ${coldCase.id}`);
+      }
+      if (coldCase.dossier) {
+        const expectedDossier = new URL(`${base}/${route.lang === 'es' ? 'es/dp-3205-2014-arrecife/' : 'en/dp-3205-2014-arrecife/'}`).href;
+        const dossierHref = await coldPage.locator(`${coldCase.panel} a.pdim-detail-link`).first().getAttribute('href');
+        if (new URL(dossierHref || '', `${base}/`).href !== expectedDossier) throw new Error(`${route.lang}/LZ-JUD-043: map dossier link mismatch`);
       }
       if (coldCase.notExact) {
         const boundary = coldPage.locator('[data-trace-panel] [data-classification="NOT_EXACT_PROCEEDING_RECORD"]');
@@ -436,7 +463,7 @@ try {
     await masterPage.waitForSelector('tr[data-master-id]');
     const renderedMasterIds = await masterPage.locator('tr[data-master-id]').evaluateAll((rows) => rows.map((row) => row.dataset.masterId));
     assertSameValues(renderedMasterIds, publicRecords.map((record) => record.Master_ID), `${route.lang}: Master Register public denominator`);
-    if (renderedMasterIds.length !== 101) throw new Error(`${route.lang}: Master Register must render 101 controlled public rows`);
+    if (renderedMasterIds.length !== 106) throw new Error(`${route.lang}: Master Register must render 106 controlled public rows`);
     const masterTraceLinks = await masterPage.locator('tr[data-master-id]').evaluateAll((rows) => rows.map((row) => ({
       masterId: row.dataset.masterId,
       href: row.querySelector('a.pd-ref')?.href || '',
@@ -444,6 +471,27 @@ try {
     for (const { masterId, href } of masterTraceLinks) {
       const expectedHref = new URL(`${base}${route.path}#trace-proceeding=${encodeURIComponent(masterId)}`).href;
       if (href !== expectedHref) throw new Error(`${route.lang}/${masterId}: Master row trace target mismatch (${href || 'missing'})`);
+    }
+    const traceOnlyRelationText = await masterPage.locator('tr[data-master-id="LZ-JUD-042"] td').nth(7).innerText();
+    if (!traceOnlyRelationText.toLowerCase().includes(route.lang === 'es' ? 'sólo navegación/contexto' : 'navigation/context only')) {
+      throw new Error(`${route.lang}/LZ-JUD-042: linked reference IDs lack the non-exact navigation-only qualification`);
+    }
+    const expectedDossier = new URL(`${base}/${route.lang === 'es' ? 'es/dp-3205-2014-arrecife/' : 'en/dp-3205-2014-arrecife/'}`).href;
+    const masterDossierLink = masterPage.locator('tr[data-master-id="LZ-JUD-043"] a.pd-detail');
+    const masterDossierHref = await masterDossierLink.getAttribute('href');
+    if (new URL(masterDossierHref || '', `${base}/`).href !== expectedDossier) throw new Error(`${route.lang}/LZ-JUD-043: Master dossier link mismatch`);
+    const expectedLineageDossier = new URL(`${base}/${route.lang === 'es' ? 'es/arrecife-1103-2018-cadena-procesal/' : 'en/arrecife-1103-2018-procedural-lineage/'}`).href;
+    for (const lineageId of ['LZ-JUD-003', 'LZ-APP-004']) {
+      const lineageHref = await masterPage.locator(`tr[data-master-id="${lineageId}"] a.pd-detail`).getAttribute('href');
+      if (new URL(lineageHref || '', `${base}/`).href !== expectedLineageDossier) {
+        throw new Error(`${route.lang}/${lineageId}: Arrecife lineage dossier link mismatch`);
+      }
+    }
+    if (await masterPage.locator('tr[data-master-id="LZ-JUD-003"] td').nth(7).locator('a[href="#record-LZ-APP-004"]').count() !== 1) {
+      throw new Error(`${route.lang}/LZ-JUD-003: reciprocal appeal row link missing`);
+    }
+    if (await masterPage.locator('tr[data-master-id="LZ-APP-004"] td').nth(7).locator('a[href="#record-LZ-JUD-003"]').count() !== 1) {
+      throw new Error(`${route.lang}/LZ-APP-004: reciprocal origin row link missing`);
     }
     const masterIsolationLinks = await masterPage.locator('[data-isolation-master-id]').evaluateAll((links) => links.map((link) => ({
       masterId: link.dataset.isolationMasterId,
@@ -453,6 +501,17 @@ try {
     for (const { masterId, href } of masterIsolationLinks) {
       const expectedHref = new URL(`${base}${route.path}#isolation-test=${encodeURIComponent(masterId)}`).href;
       if (href !== expectedHref) throw new Error(`${route.lang}/${masterId}: Master row isolation target mismatch (${href || 'missing'})`);
+    }
+    const [masterDossierResponse] = await Promise.all([
+      masterPage.waitForNavigation({ waitUntil: 'networkidle' }),
+      masterDossierLink.click(),
+    ]);
+    if (!masterDossierResponse?.ok() || masterPage.url() !== expectedDossier) {
+      throw new Error(`${route.lang}/LZ-JUD-043: Master dossier navigation failed (${masterDossierResponse?.status() || 'no response'})`);
+    }
+    await masterPage.waitForSelector('main h1');
+    if (!(await masterPage.locator('main h1').innerText()).includes('3205/2014')) {
+      throw new Error(`${route.lang}/LZ-JUD-043: Master dossier navigation reached the wrong record`);
     }
     await masterPage.close();
 
@@ -465,7 +524,14 @@ try {
     await assertFocusedAndVisible(coldMaster, 'tr#record-GC-APP-004[data-master-id="GC-APP-004"]', `${route.lang}: Master exact-row cold load`);
     await coldMaster.close();
 
-    console.log(`${route.lang}: 216-cell Case Prism / swimlane / exact isolation / trace / mobile smoke PASS`);
+    const legacyMaster = await browser.newPage({ viewport: { width: 1280, height: 900 } });
+    const legacyMasterResponse = await legacyMaster.goto(`${base}${masterPath}#case-LZ-JUD-003`, { waitUntil: 'networkidle' });
+    if (!legacyMasterResponse?.ok()) throw new Error(`${route.lang}: legacy Master row link failed with ${legacyMasterResponse?.status()}`);
+    await legacyMaster.waitForSelector('tr#record-LZ-JUD-003[data-master-id="LZ-JUD-003"]');
+    await assertFocusedAndVisible(legacyMaster, 'tr#record-LZ-JUD-003[data-master-id="LZ-JUD-003"]', `${route.lang}: legacy Master row compatibility`);
+    await legacyMaster.close();
+
+    console.log(`${route.lang}: 228-cell Case Prism / swimlane / exact isolation / trace / mobile smoke PASS`);
   }
 } finally {
   await browser.close();

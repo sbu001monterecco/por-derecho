@@ -162,8 +162,18 @@
         "professional_institutional_caret": "assets/data/caepr-caret-fti-meeting-point-professional-institutional-v1.json"
       },
       "caret_scopes": {
-        "continuity_spine": {"confirmed":39,"pending":26,"suspended":0,"denominator":65},
-        "professional_institutional": {"confirmed":43,"pending":58,"suspended":0,"denominator":101},
+        "continuity_spine": {
+          "confirmed": 39,
+          "pending": 26,
+          "suspended": 0,
+          "denominator": 65
+        },
+        "professional_institutional": {
+          "confirmed": 43,
+          "pending": 58,
+          "suspended": 0,
+          "denominator": 101
+        },
         "identity_only": true,
         "scopes_remain_separate": true
       },
@@ -222,11 +232,25 @@
   ],
   "identity_registry": {
     "registry_id": "PD-SP-IDENTITY-REGISTRY-001",
-    "control_date": "2026-08-28",
-    "counts": {"total":226,"PERSON":95,"ORGANISATION":79,"STRUCTURE":11,"INSTITUTION":22,"PROCEEDING":19},
+    "control_date": "2026-08-30",
+    "counts": {
+      "total": 231,
+      "PERSON": 95,
+      "ORGANISATION": 79,
+      "STRUCTURE": 11,
+      "INSTITUTION": 23,
+      "PROCEEDING": 23
+    },
     "archive_backfill": "OPEN",
     "static_page_parity": "LOCAL_SOURCE_STATIC_CANDIDATE_NOT_YET_LIVE_VERIFIED",
-    "last_live_verified_counts": {"total":204,"PERSON":87,"ORGANISATION":71,"STRUCTURE":10,"INSTITUTION":18,"PROCEEDING":18},
+    "last_live_verified_counts": {
+      "total": 204,
+      "PERSON": 87,
+      "ORGANISATION": 71,
+      "STRUCTURE": 10,
+      "INSTITUTION": 18,
+      "PROCEEDING": 18
+    },
     "candidate_control": "PD-ALV-MP357-CARET-20260827-01",
     "candidate_controls": [
       "PD-ALV-MP357-CARET-20260827-01",
@@ -235,21 +259,52 @@
       "PD-FTI-MP-PROF-INST-CARET-20260827-01"
     ],
     "separate_caret_scopes": {
-      "unitary": {"confirmed":21,"pending":3,"denominator":24},
-      "specialist_six_surface": {"confirmed":31,"pending":0,"denominator":31,"occurrence_rows":32,"confirmed_occurrence_rows":32},
-      "specialist_first_hop": {"confirmed":61,"pending":69,"denominator":130},
-      "fti_continuity_spine": {"confirmed":39,"pending":26,"denominator":65},
-      "fti_professional_institutional": {"confirmed":43,"pending":58,"denominator":101}
+      "unitary": {
+        "confirmed": 21,
+        "pending": 3,
+        "denominator": 24
+      },
+      "specialist_six_surface": {
+        "confirmed": 31,
+        "pending": 0,
+        "denominator": 31,
+        "occurrence_rows": 32,
+        "confirmed_occurrence_rows": 32
+      },
+      "specialist_first_hop": {
+        "confirmed": 61,
+        "pending": 69,
+        "denominator": 130
+      },
+      "fti_continuity_spine": {
+        "confirmed": 39,
+        "pending": 26,
+        "denominator": 65
+      },
+      "fti_professional_institutional": {
+        "confirmed": 43,
+        "pending": 58,
+        "denominator": 101
+      }
     },
-    "governing_boundary": "Identity resolves identity only; it does not transfer knowledge, intention, control, benefit, responsibility or liability."
+    "governing_boundary": "Identity resolves identity only; it does not transfer knowledge, intention, control, benefit, responsibility or liability.",
+    "total": 231,
+    "INSTITUTION": 23,
+    "PROCEEDING": 23
   },
   "material_updates": {
     "canonical_source": "assets/data/material-updates-v1.json",
     "latest_material_date": "2026-08-28",
     "repository_latest_material_date": "2026-08-28",
     "last_live_verified_material_date": "2026-08-28",
-    "languages": ["es","en"],
-    "public_routes": ["/es/actualizaciones/","/en/updates/"],
+    "languages": [
+      "es",
+      "en"
+    ],
+    "public_routes": [
+      "/es/actualizaciones/",
+      "/en/updates/"
+    ],
     "public_parity": "2026-08-28_LIVE_VERIFIED",
     "latest_live_verified_publication": {
       "control_id": "PD-SP-AEAT-PINK-DILIGENCE-20260828-01",
@@ -290,16 +345,46 @@
     "rule": "Do not merge stale PRs wholesale. Rebuild or extract unique validated deltas on current main, rerun current controls and close or supersede explicitly."
   },
   "canonical_routes": {
-    "home": ["/es/","/en/"],
-    "updates": ["/es/actualizaciones/","/en/updates/"],
-    "unitary_evidence_map": ["/es/mapa-probatorio-penal-unitario/","/en/unitary-criminal-evidence-map/"],
-    "unitary_reverse_engineering": ["/es/ingenieria-inversa-criminal-unitaria/","/en/unitary-criminal-reverse-engineering/"],
-    "unitary_criminal_engineering": ["/es/ingenieria-forense-criminal-sun-park/","/en/sun-park-criminal-engineering-investigation/"],
-    "unitary_record": ["/es/registro-unitario/","/en/unitary-record/"],
-    "identity": ["/es/registro-identidad-materia/","/en/matter-identity-registry/"],
-    "calificacion": ["/es/calificacion-rpl-2523-mapa-prueba/","/en/calificacion-rpl2523-evidence-map/"],
-    "recovery": ["/es/objetivos-recuperacion-restitucion/","/en/recovery-restitution-objectives/"],
-    "prescription_recovery": ["/es/prescripcion-caducidad-danos-medidas-cautelares/","/en/limitation-damages-interim-relief-recovery/"]
+    "home": [
+      "/es/",
+      "/en/"
+    ],
+    "updates": [
+      "/es/actualizaciones/",
+      "/en/updates/"
+    ],
+    "unitary_evidence_map": [
+      "/es/mapa-probatorio-penal-unitario/",
+      "/en/unitary-criminal-evidence-map/"
+    ],
+    "unitary_reverse_engineering": [
+      "/es/ingenieria-inversa-criminal-unitaria/",
+      "/en/unitary-criminal-reverse-engineering/"
+    ],
+    "unitary_criminal_engineering": [
+      "/es/ingenieria-forense-criminal-sun-park/",
+      "/en/sun-park-criminal-engineering-investigation/"
+    ],
+    "unitary_record": [
+      "/es/registro-unitario/",
+      "/en/unitary-record/"
+    ],
+    "identity": [
+      "/es/registro-identidad-materia/",
+      "/en/matter-identity-registry/"
+    ],
+    "calificacion": [
+      "/es/calificacion-rpl-2523-mapa-prueba/",
+      "/en/calificacion-rpl2523-evidence-map/"
+    ],
+    "recovery": [
+      "/es/objetivos-recuperacion-restitucion/",
+      "/en/recovery-restitution-objectives/"
+    ],
+    "prescription_recovery": [
+      "/es/prescripcion-caducidad-danos-medidas-cautelares/",
+      "/en/limitation-damages-interim-relief-recovery/"
+    ]
   },
   "superseded_snapshots": {
     "PD-UNITARY-STATE-20260825-01": "The 25-Aug-2026 specialist release remains preserved as the immediately preceding live-verified control; the 26-Aug-2026 control now governs the unitary-enterprise material.",

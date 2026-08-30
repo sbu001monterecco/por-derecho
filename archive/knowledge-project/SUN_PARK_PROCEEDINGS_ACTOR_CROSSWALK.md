@@ -1,7 +1,9 @@
 # Sun Park proceedings ↔ actors ↔ entities crosswalk
 
-**Control date:** 19 August 2026  
+**Control date:** 30 August 2026
 **Status:** canonical proceeding index; open captions/numbers remain explicit evidence gaps
+
+`^` confirms only reconciliation to an immutable CAEPR identity; it does not confirm any role, authority, allegation, act, liability, procedural status, outcome or finality.
 
 ## PR001 — Concurso voluntario 36/2012 — Luchy Playa Blanca, S.L.U.
 
@@ -125,6 +127,23 @@
 - **Parties:** relevant creditor/debtor/cessionary parties to use exact file caption
 - **Lock:** `PROVISIONAL`
 - **Sources:** S12
+
+## PR013 — 3205/2014^ · Arrecife — Community-capacity access/key incident
+
+- **Court:** Juzgado de Instrucción nº 1 de Arrecife^ (historical organ; corresponding current organ: Sección de Instrucción del Tribunal de Instancia de Arrecife — plaza nº 1^)
+- **Dates and labels:** primary complaint 3 September 2014; court summons issued in September and oral hearing scheduled for October; summons label `Juicio de faltas 3205/2014`; later 20 November 2018 summary label `DP 3205/2014`; exact label bridge and outcome open
+- **Issue:** The primary complaint records an alleged physical altercation during a disputed entry, owners' apartment inspection and key incident. It is a Community-authority, access, possession and act-allocation verification event; truth, lawful authority, causation and outcome remain unproved.
+- **Complainant / capacity:** one source-reported president, candidate bridge to `PD-SP-P-0004`; she said she attended as president to carry out unspecified work. The primary source strengthens but does not silently merge the identity bridge.
+- **Affected party / capacity:** one source-reported administrator, candidate bridge to `PD-SP-P-0009`; he is recorded as affected party, not a second formal complainant. His shortened primary source form remains controlled.
+- **Reported respondents:** Gil Marer^, whom the complaint does not place at the incident or accuse of a physical act; one fully anonymised second respondent to whom the complainant attributes the alleged physical conduct after he reportedly identified himself as a tourist
+- **Community identity:** Generic source description only; the exact legal person is unresolved and must not be merged by assumption with the Owners' Community, CEXP or another Community structure.
+- **Lawyers / procuradores:** Not closed by the located summons; do not infer representation, personation or filing authority.
+- **Representatives / office-holders:** Claimed titles and historical appointment evidence do not establish a date-effective appointment, mandate, work order, owner consent, access right, funding or institutional action.
+- **Canonical links:** `LZ-JUD-043`; `PD-SP-R-0021`; organ `PD-SP-I-0023`
+- **Lock:** `LOCKED_CANONICAL` for proceeding/organ identity only; participant/capacity and Community-identity bridges remain open
+- **Sources:** contemporaneous court summons; contemporaneous police-recorded complaint; later `PD-SP-SRC-DP3205-2014-SUMMARY-20181120`; later forwards/copies establish preservation only and are not independent corroboration
+- **Control record:** `archive/DP3205_2014_ARRECIFE_SOURCE_TRANSLATION_AUTHORITY_ALLEGATIONS_CONTROL_30AUG2026.md`
+- **Control note:** The official summons establishes identity, roles and a scheduled hearing, not hearing occurrence or result. The complaint establishes the contemporaneous allegation, not its truth. It attributes no presence, instruction, agency or physical act to Gil. Reported tourist status is not accommodation or employment proof. No false complaint, harassment, unauthorized Community action, agreement, shadow administration, wrongdoing, liability or formal link to another proceeding is established.
 
 ## Anti-fragmentation rule
 

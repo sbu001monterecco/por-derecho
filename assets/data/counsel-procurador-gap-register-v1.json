@@ -103,6 +103,45 @@
       "search_performed": "Pleading and receipt pairs reconciled; separate authority instrument not promoted in this pass.",
       "next_retrieval_route": "Scan RPL 3304/2025 and originating proceeding records for poder/apud-acta/personación evidence and link it bidirectionally.",
       "status": "OPEN"
+    },
+    {
+      "gap_id": "CP-GAP-008",
+      "gap_type": "complete_counsel_procurador_personacion_filing_lineage",
+      "professional": null,
+      "proceeding_id": "3205/2014",
+      "what_missing": "A primary complaint and court summons are located, but they do not close the lawyers, procuradores, represented party, authority/personation instrument, later filing, hearing representation, appeal or outcome.",
+      "why_it_matters": "The complaint and summons establish procedural activity but not who acted professionally for each participant, under what authority, what later material was filed or how the court disposed of the matter.",
+      "existence_evidence_ref": "PD-SP-SRC-DP3205-2014-COURT-SUMMONS-20140919; PD-SP-SRC-DP3205-2014-POLICE-COMPLAINT-20140903",
+      "likely_source": "certified court docket, signed pleadings, filing receipts, powers, apud acta, personation, notifications, hearing record and judicial or court-office acts",
+      "search_performed": "Exact-reference and participant searches located the complaint, summons and later summary lineage, but no professional representation chain, hearing record or outcome.",
+      "next_retrieval_route": "Obtain the certified 3205/2014 file and reconstruct each party's lawyer, procurador, authority, filing, hearing and response chain.",
+      "status": "OPEN"
+    },
+    {
+      "gap_id": "CP-GAP-009",
+      "gap_type": "complete_counsel_procurador_personacion_filing_lineage",
+      "professional": null,
+      "proceeding_id": "LZ-REF-042 / Arrecife 4009/2015",
+      "what_missing": "Complete lawyer, procurador, party, authority/personación, filing, service, response and outcome lineage; even the exact proceeding class and organ remain unverified.",
+      "why_it_matters": "No representation or professional relationship may be inferred from nearby Arrecife/Sun Park proceedings or from the bare number alone.",
+      "existence_evidence_ref": "Gil Marer continuity instruction dated 30-Aug-2026; registered as unresolved candidate LZ-REF-042 / PD-SP-R-0022",
+      "likely_source": "certified court docket, signed pleadings, filing receipts, powers, apud acta, personation, notifications and judicial or court-office acts",
+      "search_performed": "Exact and variant searches across current repository text/PDFs, connected Gmail, Google Drive, ChatGPT Library and public web located no primary 4009/2015 Arrecife source.",
+      "next_retrieval_route": "Search counsel/procurador archives and obtain a certified Arrecife docket or any signed source bearing 4009/2015; reconcile before adding professional or direct-procedural edges.",
+      "status": "OPEN"
+    },
+    {
+      "gap_id": "CP-GAP-010",
+      "gap_type": "proceeding_identity_and_representation_lineage",
+      "professional": null,
+      "proceeding_id": "LZ-REF-044 / 1304/2014",
+      "what_missing": "The exact Arrecife court/organ, procedural class, parties and proceeding file are unverified; no lawyer, procurador/a, personación, authority instrument or filing lineage can therefore be attributed.",
+      "why_it_matters": "Representation must not be inherited from a nearby Arrecife proceeding or inferred from a bare reference.",
+      "existence_evidence_ref": "User-supplied reference 1304/2014; no primary procedural source located in the finite 30-Aug-2026 scan",
+      "likely_source": "signed/certified court act, cédula, docket index, native filing, LexNET receipt, poder, apud acta or personación record",
+      "search_performed": "Exact-reference variants checked across the current repository and history, connected Drive/mail/Library sources and the native bilingual proceedings matrix; no exact identity source located.",
+      "next_retrieval_route": "Resolve the proceeding identity first, then scan the complete file for lawyer-by-lawyer and procurador-by-procurador representation, filing, response and appeal lineage.",
+      "status": "OPEN"
     }
   ]
 }
