@@ -35,13 +35,16 @@ jobs:
           assert len(d['items']) >= 19, len(d['items'])
           text=open(p,encoding='utf-8').read()
           for marker in [
-              '1202010372434856','1202010372438581','202210466939566',
-              '1202210466939566','202210473582179','1202310547846140',
+              '1202010372434856','1202010372438581',
+              '202110423274258','1202110423274258','5805c9283f2358fa849e2d726f3e1e2719f7ba2e07483388b0db40d71bfbef78',
+              '202210466939566','1202210466939566','202210473582179','1202310547846140',
               '202310547846140','094fbdbd52840f52f76afcad5ea55fee8c9a844c16205381cf9ea3984d29a0d4',
               'ec5d4c0f17b61891418d2070a39b93acd00ea129e936fa753f449cb424080312'
           ]:
               assert marker in text, marker
           assert 'not a certified complete docket denominator' in d['completeness_boundary'].lower()
+          assert 'FILED/LIKELY FILED' not in text
+          assert any(i['id']=='C36-LML-0012' and i['status']=='SOURCE COPY LOCATED — FORMAL FILING RECEIPT NOT YET RECONCILED' for i in d['items'])
           PY
       - name: Validate allegation and finding boundaries
         run: |
