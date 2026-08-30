@@ -2,9 +2,13 @@
   "publication_id": "PD-CANARY-RIC-PUBLIC-DEBT-20260830-01",
   "owner": "Por Derecho / Project Sun Rock",
   "control_date": "2026-08-30",
-  "current_state": "PREPARED_PENDING_MERGE",
-  "state": "PREPARED_PENDING_MERGE_AND_LIVE_READBACK",
+  "current_state": "LIVE_VERIFIED",
+  "state": "DELETION_SAFE_FOR_PUBLICATION_REASONING_WITH_PRIVATE_SOURCE_CUSTODY_RETAINED",
   "source_base_sha": "27fd8dc0cc8b7690c5485171dc76ac9dbf71ffee",
+  "pull_request": 1232,
+  "reviewed_head_sha": "f4784b43ff5ed87daadb6706d15b9d1f6aa0846a",
+  "merge_sha": "cc4945ec7da9f52f9035bb17b21f366d39f65201",
+  "tree_sha": "3769e0a9f530d87b0008588d7fcc15330f1d433f",
   "purpose": "Publish one bilingual, non-fragmented explanation of Canary RIC-eligible public debt, its relationship to RICPE and the exact proved, open and excluded Acosta Matos connections.",
   "reader_facing_material_update": false,
   "material_update_reason": "This release integrates official public issue facts and a produced Treasury source package into the existing RIC/RICPE architecture without changing a legal allegation, proceeding status or attributed liability conclusion.",
@@ -47,8 +51,47 @@
   ],
   "validation": {
     "local": "PASS",
-    "pull_request_checks": "PENDING",
-    "pages": "PENDING",
-    "live_readback": "PENDING"
+    "pull_request_checks": "49_SUCCESS_1_SKIPPED_1_INHERITED_UNRELATED_FAILURE",
+    "pages": "PASS_EXACT_MERGE_SHA_RUN_33337650561_NUMBER_1298",
+    "live_readback": "PASS_4_OF_4_HTTP_200_EXACT_SHA256",
+    "evidence": [
+      "Dedicated Canary RIC validator passed the eight-file / 734-page denominator, issue arithmetic, bilingual parity, reciprocal routes, discovery, registers and privacy boundaries.",
+      "Repository preservation, publication integrity, audience experience, current digest, unitary control-plane, mission-critical, RICPE continuity and privacy controls passed locally.",
+      "PR #1232 completed with 49 successful workflows, one conditional skip and one inherited unrelated decision-continuity failure on unchanged pages.",
+      "Pages run 33337650561 / #1298 deployed exact merge cc4945ec7da9f52f9035bb17b21f366d39f65201 successfully.",
+      "Four no-cache production resources returned HTTP 200 and were byte-identical to the reviewed merge."
+    ]
+  },
+  "live_urls": [
+    "https://sbu001monterecco.github.io/por-derecho/es/deuda-publica-ric-canarias/",
+    "https://sbu001monterecco.github.io/por-derecho/en/canary-ric-public-debt/",
+    "https://sbu001monterecco.github.io/por-derecho/assets/data/canary-ric-public-debt-v1.json",
+    "https://sbu001monterecco.github.io/por-derecho/sitemap-canary-ric-public-debt.xml"
+  ],
+  "live_verification_evidence": {
+    "status": "PASS",
+    "verified_at": "2026-08-30T21:56:22Z",
+    "pull_request": 1232,
+    "validated_head": "f4784b43ff5ed87daadb6706d15b9d1f6aa0846a",
+    "merge_sha": "cc4945ec7da9f52f9035bb17b21f366d39f65201",
+    "tree_sha": "3769e0a9f530d87b0008588d7fcc15330f1d433f",
+    "pages_run_id": 33337650561,
+    "pages_run_number": 1298,
+    "verified_url_count": 4,
+    "method": "No-cache HTTPS fetch and SHA-256 comparison against the exact merged local source.",
+    "result": "4/4 HTTP 200 and byte-identical; no mismatch."
+  },
+  "deployment_evidence": {
+    "pages_run_id": 33337650561,
+    "pages_run_number": 1298,
+    "pages_completed_at": "2026-08-30T21:55:21Z",
+    "verified_resources_at_initial_content_merge": [
+      {"path": "es/deuda-publica-ric-canarias/index.html", "sha256": "842e972435a82a0025780e3dcd9b4b514c62226931c4de94b6c71c4c1092e432"},
+      {"path": "en/canary-ric-public-debt/index.html", "sha256": "e4b59dfd74cf92d59eba7a09e94f296def2bfbbe613273bd3fc8ef8c30085515"},
+      {"path": "assets/data/canary-ric-public-debt-v1.json", "sha256": "cd94c3b8a786e9f096cde231aaccd777af844c3fde21a0b7e9292e83c7a98817"},
+      {"path": "sitemap-canary-ric-public-debt.xml", "sha256": "1153442584c6c836cf2e40afe48d08c16096d32a51f5d1bb889c1bd3da909bb3"}
+    ],
+    "ci_boundary": "The single PR-head failure was the pre-existing Concurso 36/2012 decision-continuity contradiction on two unchanged pages; the dedicated publication, digest, audience, integrity, privacy and preservation checks passed.",
+    "closeout_note": "The LIVE_VERIFIED status promotion is a later control-only commit. Its deployment is verified separately after merge; it does not alter the bilingual page or sitemap bytes recorded above."
   }
 }

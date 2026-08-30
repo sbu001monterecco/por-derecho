@@ -2,7 +2,7 @@
 
 **Date:** 30 August 2026
 **Branch:** `codex/3205-2014-primary-evidence-replacement`
-**Superseding base:** `cc4945ec7da9f52f9035bb17b21f366d39f65201`
+**Superseding base:** `0307015ef99ae0560a6a3f12c99afb966bc82e7a`
 **Publication state:** authorised for the normal publication chain; live verification pending
 
 ## Scope
@@ -90,14 +90,14 @@ A regulatory document bears a 27 August internal date but was officially receive
 
 ## Canonical controls
 
-- proceeding: `PD-SP-R-0020` / `LZ-JUD-042`;
+- proceeding: `PD-SP-R-0021` / `LZ-JUD-043`;
 - institution: `PD-SP-I-0023`;
 - controlled source set: official summons, police-recorded complaint and later adviser summary under the public source IDs in the machine-readable record;
 - corrections: `CR-142`–`CR-149` (with `CR-143` superseding `CR-142`);
 - identity pair: `PD-SP-P-0004` ↔ `PD-SP-P-0009`;
 - finite interlink census: `PD-SP-CAEPR-DP3205-AM-001`;
 - convergence graph: `PD-SP-GRAPH-AMFC-002`;
-- missing evidence: `ME-111` and `ME-DP3205-01`–`17`;
+- missing evidence: `ME-112` and `ME-DP3205-01`–`17`;
 - counsel/procurador gap: `CP-GAP-008`;
 - bilingual routes: `/en/dp-3205-2014-arrecife/` and `/es/dp-3205-2014-arrecife/`.
 

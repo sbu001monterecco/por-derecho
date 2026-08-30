@@ -154,6 +154,7 @@
       "es": "Arrecife · autoridad / control / hipoteca / título",
       "master_ids": [
         "LZ-JUD-042",
+        "LZ-JUD-043",
         "LZ-JUD-003",
         "LZ-APP-004",
         "LZ-JUD-005"
@@ -1011,12 +1012,12 @@
           "status": "DIRECT",
           "treatment": "DIRECTLY_IN_FILE",
           "evidence_status": "PRIMARY_COMPLAINT_AND_OFFICIAL_SUMMONS_LOCATED_OUTCOME_OPEN",
-          "note_en": "LZ-JUD-042 has a contemporaneous complaint and official summons. The summons says Juicio de faltas; a later summary says DP. One complainant and one affected party are recorded, the complaint attributes no direct physical act to Gil, and authority, corroboration, hearing occurrence and outcome remain open. This cell creates no procedural relationship or Concurso 36/2012 bridge.",
-          "note_es": "LZ-JUD-042 cuenta con denuncia contemporánea y citación oficial. La citación dice Juicio de faltas; un resumen posterior dice DP. Constan una denunciante y un perjudicado, la denuncia no atribuye acto físico directo a Gil y siguen abiertos autoridad, corroboración, celebración de la vista y resultado. Esta celda no crea relación procesal ni puente con el Concurso 36/2012.",
+          "note_en": "LZ-JUD-043 has a contemporaneous complaint and official summons. The summons says Juicio de faltas; a later summary says DP. One complainant and one affected party are recorded, the complaint attributes no direct physical act to Gil, and authority, corroboration, hearing occurrence and outcome remain open. This cell creates no procedural relationship or Concurso 36/2012 bridge.",
+          "note_es": "LZ-JUD-043 cuenta con denuncia contemporánea y citación oficial. La citación dice Juicio de faltas; un resumen posterior dice DP. Constan una denunciante y un perjudicado, la denuncia no atribuye acto físico directo a Gil y siguen abiertos autoridad, corroboración, celebración de la vista y resultado. Esta celda no crea relación procesal ni puente con el Concurso 36/2012.",
           "decision_en": "Authority for the reported entry and inspection, actor-specific conduct and capacity, injury corroboration, and the hearing and outcome within 3205/2014.",
           "decision_es": "Autoridad para la entrada e inspección comunicadas, conducta y capacidad específicas de cada actor, corroboración de lesiones y celebración y resultado dentro de 3205/2014.",
           "master_ids": [
-            "LZ-JUD-042"
+            "LZ-JUD-043"
           ],
           "representation_lineage_status": "PROCEEDING_SPECIFIC_DENOMINATOR_OPEN",
           "representation_gap_ids": [

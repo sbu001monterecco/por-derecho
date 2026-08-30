@@ -10,7 +10,7 @@
   const lang = (document.documentElement.lang || 'en').toLowerCase().startsWith('es') ? 'es' : 'en';
   const registerRoute = new URL(lang === 'es' ? 'es/registro-maestro-procedimientos/' : 'en/master-proceedings-register/', repoBase).href;
   const detailRoutes = {
-    'LZ-JUD-042': {
+    'LZ-JUD-043': {
       en: new URL('en/dp-3205-2014-arrecife/', repoBase).href,
       es: new URL('es/dp-3205-2014-arrecife/', repoBase).href
     }

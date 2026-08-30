@@ -4,7 +4,7 @@
 
 **Date:** 30 August 2026
 
-**State:** `REPOSITORY_CONTROLLED_PENDING_PUBLICATION`
+**State:** `LIVE_VERIFIED` via PR #1232, merge `cc4945ec7da9f52f9035bb17b21f366d39f65201`, Pages run `33337650561` / #1298 and 4/4 exact no-cache public readbacks.
 **Public routes:** `/es/deuda-publica-ric-canarias/` and `/en/canary-ric-public-debt/`
 
 ## 1. Controlling conclusion
@@ -169,4 +169,6 @@ The first viewport must state both propositions together: `not zero connection` 
 
 ## 12. Continuity state
 
-At preparation, public routes and cross-links are repository changes pending merge, Pages deployment and exact live readback. This control is deletion-safe for reasoning only after the machine record, source hashes, missing-evidence/correction entries and implementation state are committed. It is not live-publication verified until the manifest and deployment log record exact evidence.
+The public routes and cross-links are live-verified. PR #1232 merged reviewed head `f4784b43ff5ed87daadb6706d15b9d1f6aa0846a` as `cc4945ec7da9f52f9035bb17b21f366d39f65201`, with shared tree `3769e0a9f530d87b0008588d7fcc15330f1d433f`. Pages run `33337650561` / #1298 completed successfully on that exact merge. No-cache readback returned HTTP 200 and exact source bytes for both bilingual pages, the structured JSON and dedicated sitemap.
+
+This makes the website/repository reasoning reconstructible. It does not authorise deletion of the eight private source binaries or close ME-108–110; source custody and the ability to re-query the staged production remain necessary.

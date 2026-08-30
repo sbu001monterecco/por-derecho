@@ -10,12 +10,12 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "assets" / "data"
 EXPECTED = {
-    "total": 228,
+    "total": 229,
     "PERSON": 95,
     "ORGANISATION": 79,
     "STRUCTURE": 11,
     "INSTITUTION": 23,
-    "PROCEEDING": 20,
+    "PROCEEDING": 21,
 }
 LAST_LIVE_IDENTITY_COUNTS = {
     "total": 204,
@@ -89,12 +89,12 @@ def main() -> int:
         es_identity = require_markers(
             ROOT / "es/registro-identidad-materia/index.html",
             [
-                'content="Registro operativo de 228 IDs inmutables',
-                'data-static-registry-counts="228-95-79-11-23-20"',
-                'data-registry-stat="TOTAL">228',
+                'content="Registro operativo de 229 IDs inmutables',
+                'data-static-registry-counts="229-95-79-11-23-21"',
+                'data-registry-stat="TOTAL">229',
                 'data-registry-stat="PERSON">95',
                 'data-registry-stat="ORGANISATION">79',
-                '"name":"Total","value":228',
+                '"name":"Total","value":229',
                 '../../ops/CURRENT_UNITARY_STATE.json',
             ],
             ['Los 159 IDs', 'data-registry-stat="TOTAL">159', '159 identidades canónicas'],
@@ -102,12 +102,12 @@ def main() -> int:
         en_identity = require_markers(
             ROOT / "en/matter-identity-registry/index.html",
             [
-                'content="Operational Por Derecho register of 228 immutable IDs',
-                'data-static-registry-counts="228-95-79-11-23-20"',
-                'data-registry-stat="TOTAL">228',
+                'content="Operational Por Derecho register of 229 immutable IDs',
+                'data-static-registry-counts="229-95-79-11-23-21"',
+                'data-registry-stat="TOTAL">229',
                 'data-registry-stat="PERSON">95',
                 'data-registry-stat="ORGANISATION">79',
-                '"name":"Total","value":228',
+                '"name":"Total","value":229',
                 '../../ops/CURRENT_UNITARY_STATE.json',
             ],
             ['The 159 IDs', 'data-registry-stat="TOTAL">159', '159 canonical identities'],
@@ -377,7 +377,7 @@ def main() -> int:
     print("UNITARY CONTROL PLANE: PASS")
     print(" - specialist status: LIVE_VERIFIED")
     print(" - operational repository/deployment state remains separate")
-    print(" - source/static identity denominator: 228 / 95 / 79 / 11 / 23 / 20")
+    print(" - source/static identity denominator: 229 / 95 / 79 / 11 / 23 / 21")
     print(" - latest live-verified identity snapshot: 204 / 87 / 71 / 10 / 18 / 18")
     print(" - promoted 26-Aug unitary snapshot remains 194 / 86 / 66 / 10 / 15 / 17")
     print(f" - repository latest material date: {repository_latest}")

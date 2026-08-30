@@ -139,7 +139,7 @@
 - **Community identity:** Generic source description only; the exact legal person is unresolved and must not be merged by assumption with the Owners' Community, CEXP or another Community structure.
 - **Lawyers / procuradores:** Not closed by the located summons; do not infer representation, personation or filing authority.
 - **Representatives / office-holders:** Claimed titles and historical appointment evidence do not establish a date-effective appointment, mandate, work order, owner consent, access right, funding or institutional action.
-- **Canonical links:** `LZ-JUD-042`; `PD-SP-R-0020`; organ `PD-SP-I-0023`
+- **Canonical links:** `LZ-JUD-043`; `PD-SP-R-0021`; organ `PD-SP-I-0023`
 - **Lock:** `LOCKED_CANONICAL` for proceeding/organ identity only; participant/capacity and Community-identity bridges remain open
 - **Sources:** contemporaneous court summons; contemporaneous police-recorded complaint; later `PD-SP-SRC-DP3205-2014-SUMMARY-20181120`; later forwards/copies establish preservation only and are not independent corroboration
 - **Control record:** `archive/DP3205_2014_ARRECIFE_SOURCE_TRANSLATION_AUTHORITY_ALLEGATIONS_CONTROL_30AUG2026.md`

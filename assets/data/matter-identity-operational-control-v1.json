@@ -146,6 +146,13 @@
       "state": "OPEN",
       "question_es": "Obtener el índice, órgano, resolución de incoación/exhibición, acta de exhibición y cierre certificados de Diligencias Preliminares 459/2024.",
       "question_en": "Obtain the certified court, docket, opening/exhibition order, exhibition record and closure for Preliminary Proceedings 459/2024."
+    },
+    {
+      "id": "PD-SP-R-0020",
+      "priority": "P0",
+      "state": "OPEN",
+      "question_es": "Obtener el órgano exacto, NIG, índice certificado, partes/capacidades, objeto, escritos, representación/personación, resoluciones, estado, recursos/firmeza y puentes documentales de DP 974/2023 de Arrecife.",
+      "question_en": "Obtain the exact court, NIG, certified docket, parties/capacities, object, filings, representation/appearance, orders, status, appeal/finality and document bridges for Arrecife DP 974/2023."
     }
   ],
   "distinction_controls": [

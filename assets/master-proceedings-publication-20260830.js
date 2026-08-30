@@ -10,7 +10,7 @@
     es: new URL('es/registro-maestro-procedimientos/', repoBase).href
   };
   const detailRoutes = {
-    'LZ-JUD-042': {
+    'LZ-JUD-043': {
       en: new URL('en/dp-3205-2014-arrecife/', repoBase).href,
       es: new URL('es/dp-3205-2014-arrecife/', repoBase).href
     }

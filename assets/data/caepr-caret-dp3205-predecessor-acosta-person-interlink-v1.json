@@ -39,9 +39,9 @@
   ],
   "reciprocal_interlinks": [
     {"from":"PD-SP-P-0004","to":"PD-SP-P-0009","basis":"2011 Community co-occurrence and DP 3205/2014 joint naming","limit":"No lawful office, agreement, shared knowledge, guilt or liability follows."},
-    {"from":"PD-SP-P-0004","to":"PD-SP-R-0020","basis":"named complainant in the located primary complaint","limit":"Complaint status and alleged office remain explicit."},
-    {"from":"PD-SP-P-0009","to":"PD-SP-R-0020","basis":"named affected party in the located primary complaint","limit":"Complaint status and alleged office remain explicit."},
-    {"from":"PD-SP-R-0020","to":"PD-SP-S-0006","basis":"attributed predecessor-to-Acosta-Matos continuity hypothesis","limit":"No 2014 direction by CAM, knowledge transfer or continuous common plan is established."}
+    {"from":"PD-SP-P-0004","to":"PD-SP-R-0021","basis":"named complainant in the located primary complaint","limit":"Complaint status and alleged office remain explicit."},
+    {"from":"PD-SP-P-0009","to":"PD-SP-R-0021","basis":"named affected party in the located primary complaint","limit":"Complaint status and alleged office remain explicit."},
+    {"from":"PD-SP-R-0021","to":"PD-SP-S-0006","basis":"attributed predecessor-to-Acosta-Matos continuity hypothesis","limit":"No 2014 direction by CAM, knowledge transfer or continuous common plan is established."}
   ],
   "publication_routes": {
     "proceeding":{"es":"/es/dp-3205-2014-arrecife/","en":"/en/dp-3205-2014-arrecife/"},

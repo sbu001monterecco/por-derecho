@@ -16,6 +16,8 @@ REQUIRED = [
     "archive/INSTITUTIONAL_READER_UNITARY_PROCEEDINGS_RULE_30AUG2026.md",
     "archive/CAIXABANK_VALENCIA_01859_2023_REGISTRATION_GAP_30AUG2026.md",
     "archive/PROCEEDINGS_MASTER_REGISTER_VALENCIA_1859_2023_OVERLAY_30AUG2026.md",
+    "archive/GC_548_2023_PLAZA2_T1_CARET_CONTINUITY_CONTROL_30AUG2026.md",
+    "archive/MISSING_EVIDENCE_REGISTER.md",
     "archive/PROCEEDINGS_CASE_PRISM_V1_SEED_30AUG2026.json",
     "archive/knowledge-project/DP1956_STATUS_REOPENING_CORRECTION_18AUG2026.md",
     "archive/PROCEEDINGS_MASTER_REGISTER.csv",
@@ -30,6 +32,7 @@ REQUIRED = [
     "en/public-authority-unitary-case-reconstruction/index.html",
     "es/reconstruccion-unitaria-autoridades-publicas/index.html",
     "scripts/build_proceedings_case_prism_v2.py",
+    "publication-manifests/gc-548-2023-plaza2-t1-caret-20260830.json",
 ]
 errors: list[str] = []
 
@@ -58,20 +61,23 @@ if not errors:
     institutional = read("archive/INSTITUTIONAL_READER_UNITARY_PROCEEDINGS_RULE_30AUG2026.md")
     val_gap = read("archive/CAIXABANK_VALENCIA_01859_2023_REGISTRATION_GAP_30AUG2026.md")
     val_overlay = read("archive/PROCEEDINGS_MASTER_REGISTER_VALENCIA_1859_2023_OVERLAY_30AUG2026.md")
+    gc_548_control = read("archive/GC_548_2023_PLAZA2_T1_CARET_CONTINUITY_CONTROL_30AUG2026.md")
+    missing_evidence = read("archive/MISSING_EVIDENCE_REGISTER.md")
     dp_control = read("archive/knowledge-project/DP1956_STATUS_REOPENING_CORRECTION_18AUG2026.md")
     builder = read("scripts/build_proceedings_case_prism_v2.py")
     workflow = read(".github/workflows/audit-proceedings-interconnectivity-map.yml")
     schema = json.loads(read("assets/data/proceedings-interconnectivity-schema-v1.json"))
     prism = json.loads(read("assets/data/proceedings-case-prism-v1.json"))
     counsel_gaps = json.loads(read("assets/data/counsel-procurador-gap-register-v1.json"))
+    gc_548_manifest = json.loads(read("publication-manifests/gc-548-2023-plaza2-t1-caret-20260830.json"))
     with (ROOT / "archive/PROCEEDINGS_MASTER_REGISTER.csv").open(encoding="utf-8", newline="") as handle:
         rows = list(csv.DictReader(handle))
     ids = [row["Master_ID"].strip() for row in rows]
     by_id = {row["Master_ID"].strip(): row for row in rows}
     public_rows = [row for row in rows if not any(token in row["Public_Treatment"].upper() for token in ("INTERNAL_ONLY", "PRIVATE", "NOT_SITE_AGGREGATED"))]
-    require(len(rows) == 103, f"canonical denominator: expected 103, found {len(rows)}")
+    require(len(rows) == 105, f"canonical denominator: expected 105, found {len(rows)}")
     require(len(ids) == len(set(ids)), "duplicate canonical Master_ID")
-    require(len(public_rows) == 102, f"public denominator: expected 102, found {len(public_rows)}")
+    require(len(public_rows) == 104, f"public denominator: expected 104, found {len(public_rows)}")
 
     # Corrections must be consolidated into the runtime source, not left as overlays.
     val = by_id.get("VAL-CIV-001", {})
@@ -103,6 +109,24 @@ if not errors:
     require("A draft challenge is not a filed act" in dp.get("Notes", ""), "GC-CRI-009 draft/filed boundary missing")
     require("No filed reform/subsidiary appeal" in dp_control, "DP1956 provenance correction lost")
     require(by_id.get("GC-APP-004", {}).get("Parent_Master_ID") == "GC-CAL-002", "RPL 2523 parent must be GC-CAL-002")
+
+    # User-command caret registration: retain the lead without manufacturing identity or edges.
+    gc_548 = by_id.get("GC-REF-031", {})
+    expected_gc_548 = {
+        "Record_Type": "UNRESOLVED_REFERENCE", "Is_Proceeding": "UNVERIFIED",
+        "Proceeding_Class": "DIRECT", "Geography": "Gran Canaria",
+        "Reference": "548/2023", "Secondary_Reference": "User-supplied locator: Plaza 2 · T1",
+        "Source_Status": "OPEN_REFERENCE", "Public_Treatment": "PUBLIC_SUMMARY_WITH_IDENTITY_GAP",
+        "Repo_Canonical_Source": "archive/GC_548_2023_PLAZA2_T1_CARET_CONTINUITY_CONTROL_30AUG2026.md",
+    }
+    for field, value in expected_gc_548.items():
+        require(gc_548.get(field) == value, f"GC-REF-031 {field} continuity changed")
+    require(not any(gc_548.get(field, "").strip() for field in ("Parent_Master_ID", "Appeal_or_Review", "Linked_Proceedings")), "GC-REF-031 must not carry an unsupported direct edge")
+    require("ME-111" in missing_evidence and "GC-REF-031" in missing_evidence, "GC-REF-031 missing-evidence bridge absent")
+    require("CARET_PENDING" in gc_548_control and "No source presently establishes" in gc_548_control, "GC-REF-031 identity/link boundary absent")
+    require(gc_548_manifest.get("canonical_candidate_key") == "GC-REF-031", "GC-REF-031 manifest key changed")
+    require(gc_548_manifest.get("identity_state") == "CARET_PENDING", "GC-REF-031 manifest identity state changed")
+    require(gc_548_manifest.get("interlinking", {}).get("direct_proceeding_edges") == [], "GC-REF-031 manifest invents a direct edge")
 
     # Parent relationships must resolve and be acyclic.
     parents = {row["Master_ID"]: row["Parent_Master_ID"].strip() for row in rows if row["Parent_Master_ID"].strip()}
@@ -238,9 +262,12 @@ if not errors:
         "archive/INSTITUTIONAL_READER_UNITARY_PROCEEDINGS_RULE_30AUG2026.md",
         "archive/CAIXABANK_VALENCIA_01859_2023_REGISTRATION_GAP_30AUG2026.md",
         "archive/PROCEEDINGS_MASTER_REGISTER_VALENCIA_1859_2023_OVERLAY_30AUG2026.md",
+        "archive/GC_548_2023_PLAZA2_T1_CARET_CONTINUITY_CONTROL_30AUG2026.md",
+        "archive/MISSING_EVIDENCE_REGISTER.md",
         "archive/PROCEEDINGS_CASE_PRISM_V1_SEED_30AUG2026.json",
         "assets/data/caepr-caret-alberto-meeting-point-first-hop-v1.json",
         "scripts/build_proceedings_case_prism_v2.py", "assets/data/counsel-procurador-gap-register-v1.json",
+        "publication-manifests/gc-548-2023-plaza2-t1-caret-20260830.json",
     ]:
         require(path in workflow, f"workflow filter missing dependency: {path}")
 
@@ -251,7 +278,7 @@ if errors:
     raise SystemExit(1)
 
 print("PROCEEDINGS INTERCONNECTIVITY MAP AUDIT: PASS")
-print("- canonical denominator: 103 rows / 102 controlled public rows")
+print("- canonical denominator: 105 rows / 104 controlled public rows")
 print("- overlays consolidated and parent graph acyclic")
 print("- Case Prism: 19 propositions x 12 lanes = 228 explicit coordinates / 0 unexplained")
 print("- relationship and file-treatment axes independently validated")

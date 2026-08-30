@@ -80,11 +80,11 @@ REVERSE_LINK_PAGES = (
     ROOT / "es/indice-web/index.html",
 )
 
-PROCEEDING_ID = "PD-SP-R-0020"
+PROCEEDING_ID = "PD-SP-R-0021"
 INSTITUTION_ID = "PD-SP-I-0023"
-MASTER_ID = "LZ-JUD-042"
+MASTER_ID = "LZ-JUD-043"
 REFERENCE = "3205/2014"
-BASE_REVISION = "cc4945ec7da9f52f9035bb17b21f366d39f65201"
+BASE_REVISION = "0307015ef99ae0560a6a3f12c99afb966bc82e7a"
 COURT_SOURCE_ID = "PD-SP-SRC-DP3205-2014-COURT-SUMMONS-20140919"
 COMPLAINT_SOURCE_ID = "PD-SP-SRC-DP3205-2014-POLICE-COMPLAINT-20140903"
 SUMMARY_SOURCE_ID = "PD-SP-SRC-DP3205-2014-SUMMARY-20181120"
@@ -100,12 +100,12 @@ ES_ROUTE = "/es/dp-3205-2014-arrecife/"
 EN_ROUTE = "/en/dp-3205-2014-arrecife/"
 PUBLIC_BASE = "https://sbu001monterecco.github.io/por-derecho"
 EXPECTED_COUNTS = {
-    "total": 228,
+    "total": 229,
     "PERSON": 95,
     "ORGANISATION": 79,
     "STRUCTURE": 11,
     "INSTITUTION": 23,
-    "PROCEEDING": 20,
+    "PROCEEDING": 21,
 }
 
 failures: list[str] = []
@@ -783,7 +783,7 @@ if MASTER.is_file():
     except (OSError, UnicodeError, csv.Error) as exc:
         require(False, f"cannot parse {relative(MASTER)}: {exc}")
 master_matches = [row for row in master_rows if row.get("Master_ID") == MASTER_ID]
-require(len(master_matches) == 1, "Master Register must contain exactly one LZ-JUD-042 row")
+require(len(master_matches) == 1, "Master Register must contain exactly one LZ-JUD-043 row")
 master_row = master_matches[0] if master_matches else {}
 for field, expected in {
     "Reference": REFERENCE,
@@ -812,13 +812,13 @@ lanes = prism.get("lanes", []) if isinstance(prism, dict) else []
 arrecife_lanes = [lane for lane in lanes if isinstance(lane, dict) and lane.get("id") == "arrecife"]
 require(len(arrecife_lanes) == 1, "prism must contain exactly one Arrecife lane")
 if arrecife_lanes:
-    require(MASTER_ID in arrecife_lanes[0].get("master_ids", []), "Arrecife lane lacks LZ-JUD-042")
+    require(MASTER_ID in arrecife_lanes[0].get("master_ids", []), "Arrecife lane lacks LZ-JUD-043")
 lane_locations = [
     str(lane.get("id"))
     for lane in lanes
     if isinstance(lane, dict) and MASTER_ID in lane.get("master_ids", [])
 ]
-require(lane_locations == ["arrecife"], "LZ-JUD-042 appears in a prism lane other than Arrecife")
+require(lane_locations == ["arrecife"], "LZ-JUD-043 appears in a prism lane other than Arrecife")
 
 prism_propositions = prism.get("propositions", []) if isinstance(prism, dict) else []
 p19_matches = [item for item in prism_propositions if isinstance(item, dict) and item.get("id") == "P19"]
@@ -863,7 +863,7 @@ for item in prism_propositions:
     for lane_id, cell in item.get("cells", {}).items():
         if isinstance(cell, dict) and MASTER_ID in cell.get("master_ids", []):
             master_id_locations.append((str(item.get("id")), str(lane_id)))
-require(master_id_locations == [("P19", "arrecife")], "LZ-JUD-042 appears outside the isolated P19 Arrecife cell")
+require(master_id_locations == [("P19", "arrecife")], "LZ-JUD-043 appears outside the isolated P19 Arrecife cell")
 
 
 # The archive control preserves full translation, source lineage and limitations.
@@ -1056,7 +1056,7 @@ for sitemap in SITEMAPS:
 
 # Missing-evidence and counsel/procurador gaps remain explicit and finite.
 missing = read_text(MISSING)
-includes(missing, "| ME-111 |", relative(MISSING))
+includes(missing, "| ME-112 |", relative(MISSING))
 includes(missing, "Complete primary court, authority, participant, representation and outcome file for 3205/2014", relative(MISSING))
 includes(missing, MISSING_APPEND.name, relative(MISSING))
 
@@ -1217,7 +1217,7 @@ for marker in (
 
 # The federated registry denominator must agree with the static bilingual presentation.
 registry = read_json(REGISTRY)
-require(registry.get("counts") == EXPECTED_COUNTS, "canonical registry counts are not 228/95/79/11/23/20")
+require(registry.get("counts") == EXPECTED_COUNTS, "canonical registry counts are not 229/95/79/11/23/21")
 parts = registry.get("parts", []) if isinstance(registry, dict) else []
 part_index = {item.get("path"): item for item in parts if isinstance(item, dict)}
 for path_name, expected_type in (
@@ -1244,12 +1244,12 @@ for part in parts:
     require(len(records) == part.get("count"), f"registry part {part['path']} declared count is stale")
     actual_total += len(records)
     actual_counts[str(part.get("type"))] += len(records)
-require(actual_total == EXPECTED_COUNTS["total"], "federated registry actual total is not 228")
+require(actual_total == EXPECTED_COUNTS["total"], "federated registry actual total is not 229")
 for record_type in ("PERSON", "ORGANISATION", "STRUCTURE", "INSTITUTION", "PROCEEDING"):
     require(actual_counts[record_type] == EXPECTED_COUNTS[record_type], f"federated registry actual {record_type} count is stale")
 
 for page in (REGISTRY_EN, REGISTRY_ES):
-    includes(read_text(page), 'data-static-registry-counts="228-95-79-11-23-20"', relative(page))
+    includes(read_text(page), 'data-static-registry-counts="229-95-79-11-23-21"', relative(page))
 
 registry_en = read_text(REGISTRY_EN)
 registry_es = read_text(REGISTRY_ES)

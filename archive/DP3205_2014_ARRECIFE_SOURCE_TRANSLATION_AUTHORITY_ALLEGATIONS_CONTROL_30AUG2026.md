@@ -2,7 +2,7 @@
 
 Control date: 30 August 2026
 Revision: 3 — adds the contemporaneous/retrospective actor-action continuity control
-Canonical proceeding: PD-SP-R-0020 / LZ-JUD-042
+Canonical proceeding: PD-SP-R-0021 / LZ-JUD-043
 Historic organ: PD-SP-I-0023
 
 **Controlling supplement:** read `.github/governance/COMMUNITY_CLAIMED_OFFICE_CRIMINAL_FIRST_AUTHORITY_PROTOCOL_30AUG2026.md` and Declaration 019. Every use of president/administrator below is a source-reported or claimed capacity, not recognition of lawful office, legitimacy, mandate, work authority or access rights.
@@ -121,7 +121,7 @@ No located source proves joinder, transformation, inhibition, appeal or another 
 
 Bounded authorised searches across the accessible connected Gmail, Drive and repository sources located the police complaint, court summons, later summary lineage and contextual accounts described above. They did not locate the certified docket, a procedural order reconciling the `Juicio de faltas` and `DP` labels, medical evidence, a neutral eyewitness statement, the second respondent's statement, the referenced manager account or recording, CCTV, complete police attendance material, the hearing record, judgment or dismissal, appeal, or certificate of finality. This is a result for the accessible searched corpus, not a claim that every possible source or the official court archive was searched; absence from it does not prove that an official record does not exist.
 
-The remaining recovery set is maintained in `archive/MISSING_EVIDENCE_REGISTER_DP3205_2014_APPEND_30AUG2026.md`, `ME-111` and `CP-GAP-008`.
+The remaining recovery set is maintained in `archive/MISSING_EVIDENCE_REGISTER_DP3205_2014_APPEND_30AUG2026.md`, `ME-112` and `CP-GAP-008`.
 
 ## 11. Gil Marer's direct criminal allegation and the contemporaneous counter-record
 

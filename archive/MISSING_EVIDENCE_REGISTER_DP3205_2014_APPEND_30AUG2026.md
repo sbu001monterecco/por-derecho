@@ -1,7 +1,7 @@
 # 3205/2014 Arrecife — missing-evidence register addendum
 
 Control date: 30 August 2026
-Canonical proceeding: LZ-JUD-042 / PD-SP-R-0020
+Canonical proceeding: LZ-JUD-043 / PD-SP-R-0021
 Status: primary complaint and summons located; authority, corroboration and outcome remain open; no adverse inference from absence
 
 | ID | Object | Current controlled result | Remaining recovery route |
