@@ -2,11 +2,11 @@
   "publication_id": "PD-SP-INSTITUTIONAL-PROCEEDINGS-20260830-01",
   "owner": "Por Derecho / Project Sun Rock",
   "control_date": "2026-08-30",
-  "current_state": "PR_OPEN",
-  "state": "PR_OPEN",
+  "current_state": "DEPLOYED",
+  "state": "DEPLOYED",
   "purpose": "Strengthen the bilingual Proceedings Interconnectivity Map for institutional readers by exposing materially connected proceedings, exact Audiencia appellate identities and the formal boundary between legal separateness and unitary evidential/patrimonial analysis.",
   "pull_request": 1222,
-  "merge_sha": null,
+  "merge_sha": "af931e2707ad33ac673e9317b471d04cd4b32b3a",
   "expected_routes": {
     "es": [
       "es/mapa-procedimientos/index.html"
@@ -47,11 +47,40 @@
     "private counsel strategy is not automatically published",
     "NOT LOCATED is not DID NOT EXIST"
   ],
+  "validation": {
+    "evidence": [
+      "PR #1222 Audit proceedings interconnectivity map run 33323855431: success",
+      "PR #1222 Publication integrity gate run 33323855417: success",
+      "PR #1222 Validate audience experience run 33323855460: success including bilingual desktop/mobile render",
+      "PR #1222 Validate Valencia hearing chronology run 33323855441: success",
+      "PR #1222 Audit private-source, statement and OSINT governance run 33323855454: success",
+      "PR #1222 Validate Calificacion criminal-misuse thesis run 33323855486: success including rendered first-read placements"
+    ]
+  },
+  "deployment_evidence": {
+    "pages_run": 33323958792,
+    "pages_run_number": 1290,
+    "pages_build_version": "af931e2707ad33ac673e9317b471d04cd4b32b3a",
+    "pages_artifact_id": 9735687605,
+    "pages_artifact_digest": "sha256:b976379f7f4624a5cde9548ac736d30ddc89399a2a9189cd023dfbbd8ff54fb6",
+    "deployment_result": "success",
+    "deployed_artifact_route_presence_verified": true,
+    "verification_note": "The exact GitHub Pages artifact for merge af931e2707ad33ac673e9317b471d04cd4b32b3a was inspected. Both bilingual proceedings-map route files contain the institutional-completeness section, RPL 421/2026, Valencia 01859/2023 and the NOT LOCATED != DID NOT EXIST safeguard. Independent direct live-HTTP content readback was not established in this closeout."
+  },
   "verification": {
-    "pr_open": true,
-    "ci_green": false,
-    "merged": false,
-    "pages_deployed": false,
+    "pr_open": false,
+    "ci_green": true,
+    "merged": true,
+    "pages_deployed": true,
+    "deployed_artifact_routes_verified": true,
     "live_routes_verified": false
+  },
+  "publication_closeout": {
+    "pull_request": 1222,
+    "merge_sha": "af931e2707ad33ac673e9317b471d04cd4b32b3a",
+    "pages_run": 33323958792,
+    "pages_artifact_id": 9735687605,
+    "deployed_artifact_routes_verified": true,
+    "live_http_readback": "not independently established in this closeout; exact deployment and deployed-artifact route content are verified"
   }
 }
