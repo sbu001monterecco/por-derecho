@@ -1,30 +1,34 @@
 {
-  "manifest_version": "1.0.0",
+  "publication_id": "PD-SP-PROCEEDINGS-INTERCONNECTIVITY-20260830-01",
+  "owner": "Por Derecho / Project Sun Rock",
   "control_date": "2026-08-30",
-  "status": "SOURCE_READY_PR_PENDING",
+  "current_state": "PR_OPEN",
+  "state": "PR_OPEN",
+  "manifest_version": "1.0.0",
   "title": "Proceedings Interconnectivity Map",
+  "purpose": "Provide a bilingual, unitary, non-fragmented map of legally distinct proceedings and their documented procedural or contextual interconnections without collapsing them into one case.",
   "canonical_node_source": "archive/PROCEEDINGS_MASTER_REGISTER.csv",
   "governance": ".github/governance/UNITARY_PROCEEDINGS_INTERCONNECTIVITY_MAP_PROTOCOL_30AUG2026.md",
   "schema": "assets/data/proceedings-interconnectivity-schema-v1.json",
-  "public_routes": [
-    "/en/proceedings-map/",
-    "/es/mapa-procedimientos/"
+  "merge_sha": null,
+  "expected_routes": {
+    "es": ["es/mapa-procedimientos/index.html"],
+    "en": ["en/proceedings-map/index.html"]
+  },
+  "expected_source_files": [
+    "archive/PROCEEDINGS_MASTER_REGISTER.csv",
+    ".github/governance/UNITARY_PROCEEDINGS_INTERCONNECTIVITY_MAP_PROTOCOL_30AUG2026.md",
+    "assets/data/proceedings-interconnectivity-schema-v1.json",
+    "assets/proceedings-interconnectivity-map-20260830.js",
+    "assets/proceedings-interconnectivity-map-20260830.css",
+    "scripts/audit_proceedings_interconnectivity_map.py",
+    ".github/workflows/audit-proceedings-interconnectivity-map.yml",
+    "docs/deletion-audits/2026-08-30-unitary-proceedings-interconnectivity-map-continuity.md"
   ],
-  "public_assets": [
-    "/assets/proceedings-interconnectivity-map-20260830.js",
-    "/assets/proceedings-interconnectivity-map-20260830.css"
-  ],
-  "backlinks": [
-    "/en/master-proceedings-register/",
-    "/es/registro-maestro-procedimientos/"
-  ],
-  "reader_modes": [
-    "TRACK_MAP",
-    "CHRONOLOGY_JOURNEY",
-    "TRACE_ONE_PROCEEDING",
-    "REVERSE_TRACE",
-    "WHY_CONNECTED"
-  ],
+  "public_routes": ["/en/proceedings-map/", "/es/mapa-procedimientos/"],
+  "public_assets": ["/assets/proceedings-interconnectivity-map-20260830.js", "/assets/proceedings-interconnectivity-map-20260830.css"],
+  "backlinks": ["/en/master-proceedings-register/", "/es/registro-maestro-procedimientos/"],
+  "reader_modes": ["TRACK_MAP", "CHRONOLOGY_JOURNEY", "TRACE_ONE_PROCEEDING", "REVERSE_TRACE", "WHY_CONNECTED"],
   "evidential_boundaries": [
     "DIRECT_PROCEDURAL_EDGE_IS_NOT_CONTEXTUAL_BRIDGE",
     "CONTEXT_DOES_NOT_PROVE_JOINDER_COORDINATION_KNOWLEDGE_WRONGDOING_OR_LIABILITY",
@@ -35,6 +39,7 @@
     "source_files_created": true,
     "canonical_csv_reused_not_duplicated": true,
     "ci_audit_added": true,
+    "pull_request": 1221,
     "pr_merged": false,
     "pages_deployment_success": false,
     "live_routes_verified": false
