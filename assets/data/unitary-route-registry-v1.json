@@ -1894,5 +1894,45 @@
       "análisis penal separación honorarios AC",
       "distinción DP 1901 DP 1956"
     ]
+  },
+  {
+    "lang": "en",
+    "path": "en/dp-3205-2014-arrecife/",
+    "title": "DP 3205/2014^ — Arrecife identity, translation and authority test",
+    "type": "proceeding",
+    "summary": "Controlled bilingual record of DP 3205/2014 before historic Arrecife Investigating Court No. 1: proceeding identity confirmed, while the complaint, authority, merits and outcome remain open.",
+    "tags": [
+      "DP 3205/2014",
+      "Arrecife Investigating Court No. 1",
+      "Community authority",
+      "historical minor injury classification",
+      "open court file"
+    ],
+    "aliases": [
+      "Proceeding 4",
+      "Arrecife Plaza 1 T1",
+      "LZ-JUD-042",
+      "PD-SP-R-0020"
+    ]
+  },
+  {
+    "lang": "es",
+    "path": "es/dp-3205-2014-arrecife/",
+    "title": "DP 3205/2014^ — identidad, traducción y prueba de autoridad en Arrecife",
+    "type": "proceeding",
+    "summary": "Ficha bilingüe controlada de las DP 3205/2014 ante el histórico Juzgado de Instrucción nº 1 de Arrecife: identidad procesal confirmada, con denuncia, autoridad, fondo y resultado abiertos.",
+    "tags": [
+      "DP 3205/2014",
+      "Juzgado de Instrucción nº 1 de Arrecife",
+      "autoridad de la Comunidad",
+      "falta de lesiones histórica",
+      "expediente judicial abierto"
+    ],
+    "aliases": [
+      "Procedimiento 4",
+      "Arrecife Plaza 1 T1",
+      "LZ-JUD-042",
+      "PD-SP-R-0020"
+    ]
   }
 ]

@@ -1,0 +1,30 @@
+{
+  "schema": "por-derecho.matter-identity-registry.part.v1",
+  "registry_id": "PD-SP-IDENTITY-REGISTRY-001",
+  "type": "INSTITUTION",
+  "records": [
+    {
+      "id": "PD-SP-I-0023",
+      "type": "INSTITUTION",
+      "name": "Juzgado de Instrucción nº 1 de Arrecife / Sección de Instrucción del Tribunal de Instancia de Arrecife — plaza nº 1",
+      "aliases": [
+        "Juzgado de Instrucción número 1 de Arrecife",
+        "JI nº 1 Arrecife",
+        "Sección de Instrucción del Tribunal de Instancia de Arrecife. Plaza nº 1",
+        "Arrecife Plaza 1 TI",
+        "Arrecife Plaza 1 T1"
+      ],
+      "routes": {
+        "es": "/es/dp-3205-2014-arrecife/#organo",
+        "en": "/en/dp-3205-2014-arrecife/#court"
+      },
+      "identity_resolution": "CARET_CONFIRMED",
+      "identity_sources": [
+        "20-Nov-2018 legal-adviser proceeding summary for the historic court name",
+        "Gobierno de Canarias 2026 DIR3 judicial-organ list for the current Section/position name"
+      ],
+      "date_boundary": "Historic Juzgado de Instrucción nº 1 name for DP 3205/2014; from 31-Dec-2025 the corresponding organ is identified as plaza nº 1 of the Arrecife Court of Instance Investigation Section.",
+      "identity_boundary": "Organ identity and nomenclature continuity only. It does not establish the case docket, present custodian, assigned judge, merits, joinder, status or outcome."
+    }
+  ]
+}

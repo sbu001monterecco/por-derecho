@@ -1,7 +1,7 @@
 {
   "control_id": "CONCURSO36-COMMUNITY-AUTHORITY-MATRIX-20260829",
   "title": "Concurso 36/2012 — Comunidad authority / capacity / standing / personación matrix",
-  "cutoff": "2026-08-29",
+  "cutoff": "2026-08-30",
   "status": "controlled_working_matrix",
   "governance": {
     "rule": "AUTHORITY BEFORE ARITHMETIC",
@@ -30,6 +30,27 @@
       "patrimonial_effect": "Potential effects on LPB, the estate, hotel access/operation, expenditure, income and third-party property require incident-level proof.",
       "evidence_status": "PARTLY DOCUMENTED / AUTHORITY CHAIN INCOMPLETE",
       "criminal_legal_issue": "Working allegation: possible unauthorized or misleading use of Community identity/authority. Requires proof of actor, authority, representation, deception/knowledge where relevant, reliance, effect and prejudice."
+    },
+    {
+      "actor_entity": "DP 3205/2014 — source-reported Community-capacity complainants (incident-specific authority-verification pair)",
+      "natural_persons": [
+        "Source-reported president — contextual candidate PD-SP-P-0004 (Asunción Aizpurúa Sánchez); NOT MERGED pending the primary complaint/caption and exact identity bridge",
+        "Source-reported administrator — contextual candidate PD-SP-P-0009 (Francisco Mario Matos Matas); source short form remains separate pending the primary complaint/caption and exact identity bridge"
+      ],
+      "claimed_role": "Two natural persons reported in a 20-Nov-2018 legal-adviser summary as complainants in DP 3205/2014 and described respectively as Community president and administrator.",
+      "legal_form": "Natural persons; whether either acted personally or for an exactly identified Community legal person is unresolved.",
+      "authority_relied_upon": "The summary reports Community titles but supplies no date-effective appointment, resolution, mandate, power, funding authority or exact Community legal person.",
+      "formally_personated_in_36_2012": "NO CONCURSO 36/2012 PERSONACIÓN INFERENCE PERMITTED. DP 3205/2014 is separate, and no primary source located in this control establishes either person's personación in Concurso 36/2012 from this incident.",
+      "document_establishing_standing": "NOT LOCATED: original complaint/caption, appointment minutes or certificate, mandate, power, funding authority or personation instrument.",
+      "acts_attributed": [
+        "source-reported making of a complaint in DP 3205/2014",
+        "source-reported use of Community president and administrator descriptions"
+      ],
+      "court_ac_treatment": "The primary DP 3205/2014 file and its court treatment have NOT BEEN LOCATED; no insolvency-administration or Concurso treatment is inferred.",
+      "procedural_effect": "A separate Arrecife criminal proceeding is source-reported; filing, acceptance, personation, investigation, disposition, appeal and finality remain unresolved.",
+      "patrimonial_effect": "NOT ESTABLISHED; no patrimonial effect is inferred from the summary.",
+      "evidence_status": "DATED SECONDARY LEGAL-ADVISER SUMMARY / PRIMARY FILE, IDENTITY BRIDGES, AUTHORITY, MERITS AND OUTCOME OPEN",
+      "criminal_legal_issue": "Authority-verification question only. The row does not prove the alleged injury, falsity, abuse of process, harassment, unauthorized Community action, agreement, shadow administration, wrongdoing or liability; an ordinary personal complaint with titles used descriptively remains a live non-culpable explanation."
     },
     {
       "actor_entity": "Pamanil, S.L.",
@@ -175,6 +196,8 @@
     "assets/data/community-professional-corporate-network-v1.json",
     "assets/data/ac-private-actor-de-facto-administration-v1.json",
     "assets/data/criminal-first-shadow-administration-allegation-v1.json",
+    "archive/DP3205_2014_ARRECIFE_SOURCE_TRANSLATION_AUTHORITY_ALLEGATIONS_CONTROL_30AUG2026.md",
+    "assets/data/dp3205-2014-arrecife-v1.json",
     "en/community-instrumentalisation/index.html",
     "en/de-facto-administration-community-ac/index.html"
   ]

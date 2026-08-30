@@ -419,6 +419,18 @@
       },
       "url": "../../archive/CAMPANARIO_PRIETO_NORIEGA_COMMUNITY_CORPORATE_UNITARY_SCAN_25AUG2026.md"
     },
+    "INTDP3205": {
+      "class": "internal",
+      "title": {
+        "es": "DP 3205/2014 · resumen secundario y control de autoridad",
+        "en": "DP 3205/2014 · secondary summary and authority control"
+      },
+      "description": {
+        "es": "Un resumen jurídico de 20-Nov-2018 identifica el procedimiento y atribuye cargos comunitarios. Las grafías son puentes candidatos no fusionados; la fuente no prueba identidad exacta, autoridad, fondo, abuso ni resultado.",
+        "en": "A 20-Nov-2018 legal summary identifies the proceeding and attributes Community titles. The spellings are unmerged candidate bridges; the source proves neither exact identity, authority, merits, abuse nor outcome."
+      },
+      "url": "../dp-3205-2014-arrecife/"
+    },
     "DECL011": {
       "class": "attributed",
       "title": {
@@ -694,6 +706,7 @@
       "canonical_name": "Francisco Mario Matos Matas",
       "routes": {"es": "francisco-mario-matos-matas", "en": "francisco-mario-matos-matas"},
       "aliases": ["FMMM", "Francisco Mario Matos Mata"],
+      "review_note": {"es": "Revisión pública de fuentes: 30 de agosto de 2026.", "en": "Public source review: 30 August 2026."},
       "kicker": {"es": "ADMINISTRACIÓN COMUNITARIA · PAMANIL · IDENTIDAD ABIERTA", "en": "COMMUNITY ADMINISTRATION · PAMANIL · OPEN IDENTITY ISSUE"},
       "headline": {"es": "Francisco Mario Matos Matas: función comunitaria y cautela MATA/MATAS", "en": "Francisco Mario Matos Matas: Community role and the MATA/MATAS caveat"},
       "lead": {"es": "El registro interno lo identifica en funciones de administración de la Comunidad/Pamanil desde 2011 y como firmante en 2014. Los asientos BORME de 2024 son ortográficamente inconsistentes: MATA en la hoja GC61036 y MATAS en actos posteriores. La continuidad hace plausible una errata, pero sólo DNI o historial registral certificado puede cerrar el puente; la identidad más corta Francisco Matos Matas permanece separada.", "en": "The internal register identifies him in Community/Pamanil administration functions from 2011 and as a signatory in 2014. The 2024 BORME filings are orthographically inconsistent: MATA on sheet GC61036 and MATAS in later acts. Continuity makes a publication error plausible, but only a national ID or certified Registry history can close the bridge; the shorter identity Francisco Matos Matas remains separate."},
@@ -705,12 +718,13 @@
       "timeline": [
         {"date": "22 JUN 2011", "status": "internal", "title": {"es": "Administración Comunidad/Pamanil", "en": "Community/Pamanil administration"}, "body": {"es": "El registro canónico fija esta fecha mínima para funciones de administración comunitaria y Pamanil. La capacidad de cada acto exige su documento subyacente.", "en": "The canonical register fixes this minimum date for Community and Pamanil administration functions. Capacity for each act requires its underlying document."}, "sources": ["INTACTORS", "INTCOMMUNICATIONS"]},
         {"date": "8 APR 2014", "status": "internal", "title": {"es": "Comunicación firmada", "en": "Signed communication"}, "body": {"es": "Una comunicación a comuneros aparece firmada en el perímetro Pamanil por FMMM y Shaila, por instrucciones de la presidenta.", "en": "A communication to owners appears signed within the Pamanil perimeter by FMMM and Shaila, on the president's instructions."}, "sources": ["INTCOMMUNICATIONS"]},
+        {"date": "20 NOV 2018", "status": "internal", "title": {"es": "DP 3205/2014 · puente candidato", "en": "DP 3205/2014 · candidate bridge"}, "body": {"es": "Un resumen secundario usa una grafía más corta y la describe como administrador en relación con una denuncia. La coincidencia no fusiona identidades ni prueba nombramiento, autoridad, fondo, abuso o resultado.", "en": "A secondary summary uses a shorter spelling and describes the person as administrator in connection with a complaint. The match does not merge identities or prove appointment, authority, merits, abuse or outcome."}, "sources": ["INTDP3205"]},
         {"date": "1 MAR 2024", "status": "official", "title": {"es": "Grafía oficial MATA", "en": "Official MATA spelling"}, "body": {"es": "Un acto en la hoja GC61036 imprime Francisco Mario Matos Mata. Es un dato de control de identidad, no una resolución definitiva del conflicto ortográfico.", "en": "An act on sheet GC61036 prints Francisco Mario Matos Mata. This is an identity-control datum, not a definitive resolution of the spelling conflict."}, "sources": ["BORMEFMMMMATA2024"]},
         {"date": "2024", "status": "official", "title": {"es": "Actos posteriores con MATAS", "en": "Later MATAS acts"}, "body": {"es": "BORME lo registra con MATAS como consejero de ORION RENTAL SOCIMI y entre los apoderados de AGM CANARY ASSET MANAGEMENT. Esos cargos posteriores no prueban hechos Sun Park anteriores.", "en": "BORME records him with MATAS as an ORION RENTAL SOCIMI director and among AGM CANARY ASSET MANAGEMENT power-holders. Those later offices do not prove earlier Sun Park facts."}, "sources": ["BORMEFMMMORION2024", "BORMEFMMMAM2024"]}
       ],
       "corrections": {"es": ["Francisco Mario Matos Matas es la identidad canónica del proyecto; MATA/MATAS sigue abierto hasta obtener DNI o historial registral certificado.", "No se equipara con la identidad publicada más corta Francisco Matos Matas sin un puente independiente.", "La asociación societaria de 2024 no prueba coordinación, conocimiento delictivo, beneficio ni propósito histórico en Sun Park."], "en": ["Francisco Mario Matos Matas is the project-canonical identity; MATA/MATAS remains open until a national ID or certified Registry history is obtained.", "He is not equated with the shorter published identity Francisco Matos Matas without an independent bridge.", "The 2024 corporate association does not prove coordination, criminal knowledge, benefit or historic purpose at Sun Park."]},
       "questions": {"es": ["¿Qué DNI o certificación registral cierra la divergencia MATA/MATAS?", "¿Qué poderes y contratos definieron su función en Comunidad y Pamanil?", "¿Qué documento probaría una sucesión o encargo de Pamalexsha, en vez de mera continuidad funcional?"], "en": ["Which national ID or Registry certificate closes the MATA/MATAS divergence?", "Which powers and contracts defined his Community and Pamanil function?", "Which document would prove a Pamalexsha succession or retainer rather than merely functional continuity?"]},
-      "source_ids": ["BORMEFMMMMATA2024", "BORMEFMMMORION2024", "BORMEFMMMAM2024", "INTACTORS", "INTCOMMUNICATIONS", "INTFIVEACTOR", "DECL011"]
+      "source_ids": ["BORMEFMMMMATA2024", "BORMEFMMMORION2024", "BORMEFMMMAM2024", "INTACTORS", "INTCOMMUNICATIONS", "INTFIVEACTOR", "INTDP3205", "DECL011"]
     },
     {
       "id": "rodriguez_batllori",
@@ -741,6 +755,7 @@
       "canonical_name": "Asunción Aizpurúa Sánchez",
       "routes": {"es": "asuncion-aizpurua-sanchez", "en": "asuncion-aizpurua-sanchez"},
       "aliases": ["AAS", "Asunción Aizpurúa"],
+      "review_note": {"es": "Revisión pública de fuentes: 30 de agosto de 2026.", "en": "Public source review: 30 August 2026."},
       "official_gap": {"es": "No se ha cerrado un puente oficial de identidad; las coincidencias BOC de nombre parecido quedan descartadas.", "en": "No official identity bridge has been closed; similar-name BOC matches are rejected."},
       "kicker": {"es": "PRESIDENCIA COMUNITARIA · REPRESENTACIÓN · IDENTIDAD CONTROLADA", "en": "COMMUNITY PRESIDENCY · REPRESENTATION · CONTROLLED IDENTITY"},
       "headline": {"es": "Asunción Aizpurúa Sánchez: presidencia y representación según las actas Sun Park", "en": "Asunción Aizpurúa Sánchez: presidency and representation in the Sun Park minutes"},
@@ -753,11 +768,12 @@
       "timeline": [
         {"date": "2 FEB 2011", "status": "internal", "title": {"es": "Nombramiento y elección en junta", "en": "Meeting appointment and election"}, "body": {"es": "El control del acta registra que fue designada para presidir la reunión y después elegida presidenta representando a Roque Prieto; Campanario actuó como secretario de esa junta.", "en": "The minutes control records that she was appointed to chair the meeting and then elected president while representing Roque Prieto; Campanario served as secretary of that meeting."}, "sources": ["INTJV1260"]},
         {"date": "22 JUN 2011", "status": "internal", "title": {"es": "Presidenta en la junta", "en": "President at the meeting"}, "body": {"es": "El acta la identifica como presidenta en una reunión que trató deuda, voto, Pamanil, mantenimiento y litigación. El cargo no decide por sí solo la validez jurídica de los acuerdos.", "en": "The minutes identify her as president at a meeting addressing debt, voting, Pamanil, maintenance and litigation. The office does not itself determine the legal validity of the resolutions."}, "sources": ["INTJV1260", "INTPERIMETER"]},
-        {"date": "2014–2015", "status": "internal", "title": {"es": "Representaciones posteriores", "en": "Later representations"}, "body": {"es": "Los controles registran representación por Prieto de AAS/Roque Prieto en 2014 y representaciones concretas ejercidas por AAS en 2015. Cada mandato se mantiene separado.", "en": "Controls record Prieto representing AAS/Roque Prieto in 2014 and specific representations exercised by AAS in 2015. Each mandate remains separate."}, "sources": ["INTPERIMETER"]}
+        {"date": "2014–2015", "status": "internal", "title": {"es": "Representaciones posteriores", "en": "Later representations"}, "body": {"es": "Los controles registran representación por Prieto de AAS/Roque Prieto en 2014 y representaciones concretas ejercidas por AAS en 2015. Cada mandato se mantiene separado.", "en": "Controls record Prieto representing AAS/Roque Prieto in 2014 and specific representations exercised by AAS in 2015. Each mandate remains separate."}, "sources": ["INTPERIMETER"]},
+        {"date": "20 NOV 2018", "status": "internal", "title": {"es": "DP 3205/2014 · puente candidato", "en": "DP 3205/2014 · candidate bridge"}, "body": {"es": "Un resumen secundario usa una variante nominal y la describe como presidenta en relación con una denuncia. La coincidencia no fusiona identidades ni prueba nombramiento, autoridad, fondo, abuso o resultado.", "en": "A secondary summary uses a name variant and describes the person as president in connection with a complaint. The match does not merge identities or prove appointment, authority, merits, abuse or outcome."}, "sources": ["INTDP3205"]}
       ],
       "corrections": {"es": ["La identidad canónica del expediente es Asunción Aizpurúa Sánchez.", "La coincidencia BOC María Asunción Aizpurúa Sánchez se rechaza como puente: nombre y región no bastan.", "Presidencia, representación y cada voto son capacidades separadas; ninguna prueba por sí sola culpabilidad o acuerdo ilícito."], "en": ["The file's canonical identity is Asunción Aizpurúa Sánchez.", "The BOC match María Asunción Aizpurúa Sánchez is rejected as a bridge: name and region are insufficient.", "Presidency, representation and each vote are separate capacities; none itself proves guilt or an unlawful agreement."]},
       "questions": {"es": ["¿Qué poder y título sustentaron la representación de Roque Prieto el 2-Feb-2011?", "¿Qué texto íntegro y quórum acompañaron cada acuerdo?", "¿Qué documentos cierran cada representación posterior sin enlazar homónimos?"], "en": ["Which power and title supported representation of Roque Prieto on 2-Feb-2011?", "Which complete text and quorum accompanied each resolution?", "Which documents close each later representation without linking namesakes?"]},
-      "source_ids": ["INTJV1260", "INTPERIMETER", "INTACTORS", "INTUNITARYSCAN"]
+      "source_ids": ["INTJV1260", "INTPERIMETER", "INTACTORS", "INTUNITARYSCAN", "INTDP3205"]
     },
     {
       "id": "montelanza",

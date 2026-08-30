@@ -1,7 +1,9 @@
 # Sun Park proceedings ↔ actors ↔ entities crosswalk
 
-**Control date:** 19 August 2026  
+**Control date:** 30 August 2026
 **Status:** canonical proceeding index; open captions/numbers remain explicit evidence gaps
+
+`^` confirms only reconciliation to an immutable CAEPR identity; it does not confirm any role, authority, allegation, act, liability, procedural status, outcome or finality.
 
 ## PR001 — Concurso voluntario 36/2012 — Luchy Playa Blanca, S.L.U.
 
@@ -125,6 +127,22 @@
 - **Parties:** relevant creditor/debtor/cessionary parties to use exact file caption
 - **Lock:** `PROVISIONAL`
 - **Sources:** S12
+
+## PR013 — Diligencias Previas 3205/2014^ — reported Community-capacity complaint
+
+- **Court:** Juzgado de Instrucción nº 1 de Arrecife^ (historical organ; corresponding current organ: Sección de Instrucción del Tribunal de Instancia de Arrecife — plaza nº 1^)
+- **Dates:** 2014; identified in a legal-adviser status summary dated 20 November 2018; present status and outcome not located
+- **Issue:** The summary reports a complaint concerning what it calls a historical `falta de lesiones`. It is relevant only as a Community-authority verification event within Gil Marer's attributed wider allegations; the alleged incident, injury, merits, authority and outcome remain unproved.
+- **Reported complainants / capacities:** Two source-reported persons described respectively as president and administrator of “the Community”; their source name forms are unmerged candidate bridges to `PD-SP-P-0004` and `PD-SP-P-0009`, not established occurrence matches.
+- **Reported respondents:** Gil Marer^; one second reported respondent whose full name remains withheld pending person-specific publication authority and primary-caption identification
+- **Community identity:** Generic source description only; the exact legal person is unresolved and must not be merged by assumption with the Owners' Community, CEXP or another Community structure.
+- **Lawyers / procuradores:** Not identified in the located source; do not infer that the summary author advised, represented, signed or filed for any participant.
+- **Representatives / office-holders:** The source-reported titles do not establish appointment, mandate, funding, institutional action or personación.
+- **Canonical links:** `LZ-JUD-042`; `PD-SP-R-0020`; organ `PD-SP-I-0023`
+- **Lock:** `LOCKED_CANONICAL` for proceeding/organ identity only; participant/capacity and Community-identity bridges remain open
+- **Sources:** `PD-SP-SRC-DP3205-2014-SUMMARY-20181120` — one 20 Nov 2018 legal-adviser status-summary lineage; later forwards/copies establish preservation only and are not independent corroboration
+- **Control record:** `archive/DP3205_2014_ARRECIFE_SOURCE_TRANSLATION_AUTHORITY_ALLEGATIONS_CONTROL_30AUG2026.md`
+- **Control note:** The located summary establishes only its report of the reference, historic organ, described capacities, respondent count and historical `falta` characterization. It does not establish the incident or injury, truth/falsity, valid authority, personal versus institutional action, abuse, harassment, agreement/coordination, shadow administration, wrongdoing, liability, result/finality or a formal relationship with another proceeding.
 
 ## Anti-fragmentation rule
 

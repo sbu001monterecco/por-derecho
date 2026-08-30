@@ -1,0 +1,71 @@
+{
+  "schema": "por-derecho.dp3205-2014-arrecife.v1",
+  "control_id": "PD-SP-DP3205-2014-20260830-01",
+  "control_date": "2026-08-30",
+  "status": "AMBER_IDENTIFIED_MERITS_AUTHORITY_OUTCOME_OPEN",
+  "identity": {
+    "registry_id": "PD-SP-R-0020",
+    "master_id": "LZ-JUD-042",
+    "reference": "DP 3205/2014",
+    "organ_id": "PD-SP-I-0023",
+    "historic_organ": "Juzgado de Instrucción nº 1 de Arrecife",
+    "current_successor_name": "Sección de Instrucción del Tribunal de Instancia de Arrecife — plaza nº 1",
+    "caret_scope": "Exact proceeding and organ identity only"
+  },
+  "source_lineage": {
+    "source_id": "PD-SP-SRC-DP3205-2014-SUMMARY-20181120",
+    "source_class": "DATED_SECONDARY_LEGAL_ADVISER_STATUS_SUMMARY",
+    "source_date": "2018-11-20",
+    "preservation": "Later forwards and duplicate document copies preserve the same source lineage; they are not independent corroboration.",
+    "privacy": "No email address, message identifier, subject line, recipient list, private URL, raw mailbox body or newly discovered private-candidate full name is published."
+  },
+  "reported_propositions": [
+    {"id": "DP3205-P01", "state": "SOURCE_REPORTED", "proposition": "A legal-adviser summary identifies DP 3205/2014 before Juzgado de Instrucción nº 1 de Arrecife."},
+    {"id": "DP3205-P02", "state": "SOURCE_REPORTED_IDENTITY_BRIDGES_OPEN", "proposition": "The summary attributes a complaint to two persons described as Community president and administrator; the source forms are only candidate bridges to the existing Asunción Aizpurúa Sánchez and Francisco Mario Matos Matas records."},
+    {"id": "DP3205-P03", "state": "SOURCE_REPORTED_PRIMARY_FILE_OPEN", "proposition": "The summary says the complaint was directed against Gil Marer and a second reported respondent concerning a historical falta de lesiones."},
+    {"id": "DP3205-P04", "state": "SOURCE_REPORTED", "proposition": "The author stated that no further information was held."}
+  ],
+  "participants": [
+    {"public_label": "Source-reported president", "candidate_registry_id": "PD-SP-P-0004", "capacity_reported": "presidenta de la comunidad", "bridge_state": "CONTEXTUAL_CANDIDATE_NOT_MERGED_PENDING_PRIMARY_CAPTION"},
+    {"public_label": "Source-reported administrator", "candidate_registry_id": "PD-SP-P-0009", "capacity_reported": "administrador de la comunidad", "bridge_state": "SHORT_FORM_REMAINS_SEPARATE_PENDING_PRIMARY_CAPTION"},
+    {"public_label": "Gil Marer", "registry_id": "PD-SP-P-0001", "capacity_reported": "reported respondent", "bridge_state": "CANONICAL_NAME_MATCH"},
+    {"public_label": "Second reported respondent", "private_candidate": true, "capacity_reported": "reported respondent", "bridge_state": "PUBLIC_FULL_NAME_WITHHELD_PENDING_PERSON_SPECIFIC_AUTHORIZATION_AND_PRIMARY_IDENTITY"}
+  ],
+  "allegations_context": {
+    "safe_use": "Authority-verification event in the wider attributed Community-instrumentalisation theory.",
+    "does_not_establish": [
+      "the exact legal person meant by the Community description",
+      "valid appointment or authority of either reported complainant",
+      "institutional rather than personal action",
+      "the alleged incident or injury",
+      "truth, falsity, justification or abuse of the complaint",
+      "knowledge, intent, agreement, harassment, procedural fraud or shadow administration",
+      "responsibility of either reported respondent",
+      "joinder or another formal relationship to any other proceeding",
+      "procedural outcome or finality"
+    ],
+    "reasonable_alternative": "An ordinary personal complaint after a reported altercation, with Community titles used descriptively rather than as proof of institutional action, remains a live non-culpable explanation."
+  },
+  "recovery_objects": [
+    "certified docket, NIG and cover sheet",
+    "original complaint and annexes",
+    "incident report, witness material and medical evidence",
+    "party declarations, summonses and procedural orders",
+    "appointment minutes, certificates, mandates, powers and personation records effective on the complaint date",
+    "lawyer and procurador identity, authority and filing lineage",
+    "archive, continuation, transformation, trial or dismissal decision",
+    "appeal record and certificate of finality"
+  ],
+  "formal_relationships": {
+    "linked_proceedings": [],
+    "rule": "Keep DP 3205/2014 legally distinct unless a primary source proves joinder, transformation, inhibition, appeal or another formal relationship."
+  },
+  "routes": {
+    "es": "/es/dp-3205-2014-arrecife/",
+    "en": "/en/dp-3205-2014-arrecife/",
+    "master_es": "/es/registro-maestro-procedimientos/",
+    "master_en": "/en/master-proceedings-register/",
+    "map_es": "/es/mapa-procedimientos/",
+    "map_en": "/en/proceedings-map/"
+  }
+}

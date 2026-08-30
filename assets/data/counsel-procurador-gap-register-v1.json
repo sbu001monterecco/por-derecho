@@ -103,6 +103,19 @@
       "search_performed": "Pleading and receipt pairs reconciled; separate authority instrument not promoted in this pass.",
       "next_retrieval_route": "Scan RPL 3304/2025 and originating proceeding records for poder/apud-acta/personación evidence and link it bidirectionally.",
       "status": "OPEN"
+    },
+    {
+      "gap_id": "CP-GAP-008",
+      "gap_type": "complete_counsel_procurador_personacion_filing_lineage",
+      "professional": null,
+      "proceeding_id": "DP 3205/2014",
+      "what_missing": "No primary source presently identifies the lawyers, procuradores, represented party, authority/personación instrument, originating complaint filing, court/LAJ response, later filing, appeal or outcome in DP 3205/2014.",
+      "why_it_matters": "A secondary status summary identifies the proceeding and reported parties but cannot establish who acted procedurally, under what authority, what was filed or how the court treated it.",
+      "existence_evidence_ref": "PD-SP-SRC-DP3205-2014-SUMMARY-20181120",
+      "likely_source": "certified court docket, original complaint, signed pleadings, LexNET receipts, poderes, apud acta, personación, notifications and judicial/LAJ acts",
+      "search_performed": "Exact-reference and participant-name searches across the authorised email/file corpus located the same status-summary lineage but no primary filing, court notice or outcome record.",
+      "next_retrieval_route": "Request or locate the certified DP 3205/2014 court file and reverse-engineer each party's lawyer/procurador/authority/filing/response chain.",
+      "status": "OPEN"
     }
   ]
 }

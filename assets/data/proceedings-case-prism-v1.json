@@ -63,7 +63,7 @@
     {"id": "calificacion", "en": "Calificación · RPL 2523/2025", "es": "Calificación · RPL 2523/2025", "master_ids": ["GC-CAL-002", "GC-APP-004"]},
     {"id": "removal", "en": "AC removal · RPL 3304+3319/2025", "es": "Separación AC · RPL 3304+3319/2025", "master_ids": ["GC-APP-005", "GC-APP-006", "GC-APP-007"]},
     {"id": "fees", "en": "AC fees · RPL 421/2026", "es": "Honorarios AC · RPL 421/2026", "master_ids": ["GC-CIV-027", "GC-APP-028"]},
-    {"id": "arrecife", "en": "Arrecife · control / mortgage / title", "es": "Arrecife · control / hipoteca / título", "master_ids": ["LZ-JUD-003", "LZ-APP-004", "LZ-JUD-005"]},
+    {"id": "arrecife", "en": "Arrecife · authority / control / mortgage / title", "es": "Arrecife · autoridad / control / hipoteca / título", "master_ids": ["LZ-JUD-042", "LZ-JUD-003", "LZ-APP-004", "LZ-JUD-005"]},
     {"id": "valencia", "en": "Valencia · CaixaBank", "es": "Valencia · CaixaBank", "master_ids": ["VAL-CIV-001"]},
     {"id": "meetingpoint", "en": "Meeting Point / FTI", "es": "Meeting Point / FTI", "master_ids": ["GC-CONT-025"]},
     {"id": "tenerife", "en": "Tenerife · Matkator / Cuatrecasas", "es": "Tenerife · Matkator / Cuatrecasas", "master_ids": ["TF-CIV-001", "TF-CIV-002", "TF-CRI-003"]},
@@ -230,6 +230,20 @@
         "calificacion": {"status": "CONTEXT", "note_en": "Any relevance is supervisory/institutional; RPL 2523/2025 remains governed by its own procedural record.", "note_es": "Cualquier relevancia es supervisora/institucional; RPL 2523/2025 sigue regido por su propio expediente procesal.", "master_ids": ["GC-APP-004"]},
         "removal": {"status": "CONTEXT", "note_en": "The removal appeals remain separate merits proceedings notwithstanding institutional-supervision overlap.", "note_es": "Los recursos de separación siguen siendo procedimientos de fondo separados pese al solapamiento de supervisión institucional.", "master_ids": ["GC-APP-005", "GC-APP-006"]},
         "fees": {"status": "CONTEXT", "note_en": "RPL 421/2026 remains a separate civil appellate route.", "note_es": "RPL 421/2026 sigue siendo una vía apelativa civil separada.", "master_ids": ["GC-APP-028"]}
+      }
+    },
+    {
+      "id": "P10",
+      "sort": 2014,
+      "period": "2014",
+      "title_en": "DP 3205/2014 is a Community-authority verification event, not a procedural bridge",
+      "title_es": "DP 3205/2014 es un evento de verificación de autoridad comunitaria, no un puente procesal",
+      "question_en": "What exact identities and personal or institutional capacities supported the source-reported complaint, and what does the primary court file establish about the alleged incident and outcome?",
+      "question_es": "¿Qué identidades exactas y capacidades personales o institucionales sustentaron la denuncia referida por la fuente y qué acredita el expediente judicial primario sobre el incidente alegado y el resultado?",
+      "source_status": "SECONDARY_DATED_LEGAL_ADVISER_SUMMARY_PRIMARY_FILE_PENDING",
+      "audience_priority": {"all": 4, "court": 2, "fiscal": 1, "supervision": 5, "authority": 0, "research": 9},
+      "cells": {
+        "arrecife": {"status": "DIRECT", "note_en": "LZ-JUD-042 identifies DP 3205/2014 and the historical Arrecife investigating court from one legal-adviser summary lineage. The complaint, participant-capacity bridges, alleged incident, court treatment and outcome remain open. This cell creates no procedural relationship or Concurso 36/2012 bridge.", "note_es": "LZ-JUD-042 identifica DP 3205/2014 y el juzgado de instrucción histórico de Arrecife a partir de una única cadena de resumen jurídico. La denuncia, los puentes de identidad/capacidad de los participantes, el incidente alegado, el tratamiento judicial y el resultado siguen abiertos. Esta celda no crea relación procesal ni puente con el Concurso 36/2012.", "master_ids": ["LZ-JUD-042"]}
       }
     }
   ]

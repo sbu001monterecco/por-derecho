@@ -1,0 +1,23 @@
+{
+  "schema": "por-derecho.matter-identity-registry.part.v1",
+  "registry_id": "PD-SP-IDENTITY-REGISTRY-001",
+  "type": "PROCEEDING",
+  "records": [
+    {
+      "id": "PD-SP-R-0020",
+      "type": "PROCEEDING",
+      "name": "Diligencias Previas 3205/2014 — Juzgado de Instrucción nº 1 de Arrecife",
+      "aliases": ["DP 3205/2014", "D.P. 3205/2014", "Procedimiento 4 — DP 3205/2014"],
+      "routes": {
+        "es": "/es/dp-3205-2014-arrecife/",
+        "en": "/en/dp-3205-2014-arrecife/"
+      },
+      "identity_resolution": "CARET_CONFIRMED",
+      "master_register_id": "LZ-JUD-042",
+      "competent_organ": "PD-SP-I-0023",
+      "procedural_state": "IDENTIFIED_OUTCOME_NOT_LOCATED",
+      "identity_sources": ["PD-SP-SRC-DP3205-2014-SUMMARY-20181120"],
+      "identity_boundary": "The caret confirms only the exact proceeding reference and historic organ reported in the controlled source. It does not authenticate the underlying complaint, establish any alleged injury, validate Community authority, identify every participant, prove a formal relationship to another proceeding or establish status, result or finality."
+    }
+  ]
+}

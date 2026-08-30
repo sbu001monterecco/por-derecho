@@ -1,0 +1,57 @@
+{
+  "publication_id": "PD-SP-DP3205-2014-20260830-01",
+  "owner": "Por Derecho / Project Sun Rock",
+  "control_date": "2026-08-30",
+  "current_state": "PREPARED_PENDING_MERGE",
+  "state": "PREPARED_PENDING_MERGE",
+  "purpose": "Publish a complete bilingual, privacy-safe translation and evidence-controlled analysis of DP 3205/2014, register its exact proceeding and court identities, and interlink it without merging persons, legal entities or proceedings.",
+  "base_sha": "aac741320cd9541ecaae564db89188cb941dd645",
+  "head_branch": "codex/dp3205-2014-caret-interlink",
+  "expected_routes": {
+    "en": [
+      "en/dp-3205-2014-arrecife/index.html"
+    ],
+    "es": [
+      "es/dp-3205-2014-arrecife/index.html"
+    ]
+  },
+  "canonical_ids": {
+    "master_proceeding": "LZ-JUD-042",
+    "identity_proceeding": "PD-SP-R-0020",
+    "identity_institution": "PD-SP-I-0023",
+    "source": "PD-SP-SRC-DP3205-2014-SUMMARY-20181120",
+    "counsel_gap": "CP-GAP-008",
+    "missing_evidence": "ME-108 / ME-DP3205-01..08",
+    "correction": "CR-139"
+  },
+  "expected_source_files": [
+    "archive/DP3205_2014_ARRECIFE_SOURCE_TRANSLATION_AUTHORITY_ALLEGATIONS_CONTROL_30AUG2026.md",
+    "archive/MISSING_EVIDENCE_REGISTER_DP3205_2014_APPEND_30AUG2026.md",
+    "assets/data/dp3205-2014-arrecife-v1.json",
+    "assets/data/matter-identity-registry-v1.dp3205-institutions.json",
+    "assets/data/matter-identity-registry-v1.dp3205-proceedings.json",
+    "archive/PROCEEDINGS_MASTER_REGISTER.csv",
+    "assets/data/proceedings-case-prism-v1.json",
+    "assets/data/concurso36-community-authority-matrix-20260829.json",
+    "scripts/validate_dp3205_2014_publication.py",
+    ".github/workflows/validate-dp3205-2014-publication.yml",
+    "docs/deletion-audits/2026-08-30-dp3205-2014-arrecife-caret-interlink.md"
+  ],
+  "publication_boundaries": [
+    "The caret confirms only the exact proceeding reference and historic organ identity.",
+    "The 2014 organ is not retroactively renamed; the current successor designation is separately date-controlled from 31 December 2025.",
+    "The recovered source is a secondary legal-adviser summary; repeated copies are one lineage, not independent corroboration.",
+    "The source complainant spellings remain unmerged candidate identity bridges.",
+    "The newly discovered second respondent remains publicly anonymised pending person-specific authorization and primary identity evidence.",
+    "No complaint merit, Community authority, injury, abuse, wrongdoing, responsibility, procedural relationship, outcome or finality is established.",
+    "No email, contact, filing, service or third-party communication is authorised."
+  ],
+  "verification": {
+    "local_validation": true,
+    "ci_green": false,
+    "merged": false,
+    "main_readback": false,
+    "pages_deployed": false,
+    "public_readback": false
+  }
+}

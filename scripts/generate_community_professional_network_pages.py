@@ -232,6 +232,7 @@ def render_page(data: dict, node: dict, lang: str) -> str:
         )
     core_links = "".join(f'<a class="button" href="{esc(href)}">{esc(label)}</a>' for href, label in t["core_links"])
     aliases = " · ".join(esc(alias) for alias in node["aliases"])
+    review_note = local(node["review_note"], lang) if node.get("review_note") else t["updated"]
 
     return f'''<!doctype html>
 <html lang="{lang}">
@@ -297,7 +298,7 @@ def render_page(data: dict, node: dict, lang: str) -> str:
   </section>
 
   <section class="cpn-section">
-    <div class="shell cpn-record"><p class="eyebrow">{esc(t["sources_kicker"])}</p><h2>{esc(t["sources_title"])}</h2><p class="cpn-intro">{esc(t["sources_intro"])}</p><div class="cpn-source-grid">{''.join(source_cards)}</div><p class="cpn-source-note">{esc(t["updated"])}</p></div>
+    <div class="shell cpn-record"><p class="eyebrow">{esc(t["sources_kicker"])}</p><h2>{esc(t["sources_title"])}</h2><p class="cpn-intro">{esc(t["sources_intro"])}</p><div class="cpn-source-grid">{''.join(source_cards)}</div><p class="cpn-source-note">{esc(review_note)}</p></div>
   </section>
 
   <section class="cpn-section cpn-alt">

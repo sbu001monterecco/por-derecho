@@ -1,6 +1,6 @@
 {
   "schema": "por-derecho.criminal-first-shadow-administration-allegation.v1",
-  "control_date": "2026-08-25",
+  "control_date": "2026-08-30",
   "source": "archive/declarations/012_GIL_MAXIMAL_ATTRIBUTED_CRIMINAL_CAUSATION_SHADOW_ADMINISTRATION_2011_TO_PRESENT_20260825.md",
   "status": "attributed_party_position",
   "core_allegation": "Gil Marer alleges a 2011-originating private-actor mechanism that evolved from Community governance/litigation control into practical influence or control over LPB-related assets and decisions inside and outside Concurso 36/2012, allegedly enabled by acts and omissions of the court-appointed insolvency administrator.",
@@ -20,7 +20,8 @@
     {"id":"n2018","label":"2018 access / control / funded-exit sequence","lane":"documented_events_causation_open"},
     {"id":"ncam","label":"CAM / Acosta Matos convergence","lane":"documented_capacities_causal_meaning_open"},
     {"id":"njudge","label":"Possible court deception / incomplete picture","lane":"open_requires_exact_representation_and_reliance"},
-    {"id":"ncurrent","label":"Calificación / current criminal-institutional tracks","lane":"official_and_attributed"}
+    {"id":"ncurrent","label":"Calificación / current criminal-institutional tracks","lane":"official_and_attributed"},
+    {"id":"ndp3205","label":"DP 3205/2014 reported Community-capacity complaint","lane":"reported_procedural_event_authority_merits_outcome_open"}
   ],
   "edges": [
     {"from":"n2011a","to":"n2011b","grade":"investigative_causation_not_presumed"},
@@ -32,7 +33,9 @@
     {"from":"n2018","to":"ncam","grade":"capacity_convergence_documented_intent_open"},
     {"from":"nprivate","to":"njudge","grade":"possible_deception_open"},
     {"from":"nac","to":"njudge","grade":"possible_omission_or_adoption_open"},
-    {"from":"ncam","to":"ncurrent","grade":"later_consequence_not_backward_proof"}
+    {"from":"ncam","to":"ncurrent","grade":"later_consequence_not_backward_proof"},
+    {"from":"n2011b","to":"ndp3205","grade":"later_reported_authority_event_not_proof_of_valid_capacity_or_common_plan"},
+    {"from":"ndp3205","to":"nprivate","grade":"contextual_only_not_proof_of_shadow_administration_harassment_false_accusation_or_abuse"}
   ],
   "mandatory_boundaries": [
     "Shadow or de facto administration is an attributed functional allegation unless legally adjudicated.",
