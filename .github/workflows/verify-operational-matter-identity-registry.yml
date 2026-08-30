@@ -106,7 +106,7 @@ jobs:
               ('/es/registro-identidad-materia/', ['PD-SP-IDENTITY-OPS-001', 'Una identidad. Un ID. Una cadena operativa.', 'data-queue-list="p0"']),
               ('/en/matter-identity-registry/', ['PD-SP-IDENTITY-OPS-001', 'One identity. One ID. One operational chain.', 'data-queue-list="p0"']),
               ('/assets/data/matter-identity-operational-control-v1.json', ['PD-SP-ID-ACT-0001', 'PD-SP-ID-ACT-0009', 'PD-SP-O-0008']),
-              ('/assets/data/matter-identity-registry-v1.json', ['PD-SP-IDENTITY-REGISTRY-001', f'"total":{expected_total}']),
+              ('/assets/data/matter-identity-registry-v1.json', ['PD-SP-IDENTITY-REGISTRY-001']),
               ('/assets/matter-identity-registry.js', ['buildOperationalRecords', 'P0_ROUTE_COVERAGE', 'exportRecords']),
               ('/assets/matter-identity-registry.css', ['.id-workbench', '.id-dialog', '.id-action-grid']),
               ('/sitemap-matter-identity-operational.xml', ['registro-identidad-materia', 'matter-identity-registry']),
@@ -129,6 +129,10 @@ jobs:
                   try:
                       body = fetch(url)
                       missing = [marker for marker in markers if marker not in body]
+                      if route == '/assets/data/matter-identity-registry-v1.json':
+                          live_total = int(json.loads(body)['counts']['total'])
+                          if live_total != expected_total:
+                              missing.append(f'parsed counts.total={expected_total}')
                       if not missing:
                           print(f'LIVE VERIFIED {url} :: {len(body)} bytes :: {len(markers)} markers')
                           break
