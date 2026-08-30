@@ -67,8 +67,8 @@ try {
     if (await audience.locator('option').count() !== 9) throw new Error(`${route.lang}: audience denominator is not nine`);
     await audience.selectOption('fiscal');
     await page.waitForSelector('.pdim-prism-table tbody tr:first-child');
-    const firstFiscal = await page.locator('.pdim-prism-table tbody tr:first-child th').innerText();
-    if (!firstFiscal.includes('P05')) throw new Error(`${route.lang}: Fiscalía lens did not reprioritise the institutional-memory row`);
+    const firstFiscal = await page.locator('.pdim-prism-table tbody tr:first-child .pdim-prism-cell').first().getAttribute('data-prism-prop');
+    if (firstFiscal !== 'P05') throw new Error(`${route.lang}: Fiscalía lens did not reprioritise the institutional-memory row`);
 
     await page.locator('.pdim-prism-cell').first().click();
     const detail = page.locator('[data-prism-detail]');
