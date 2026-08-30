@@ -23,6 +23,7 @@ This protocol supplements, and does not displace:
 
 - `archive/PROCEEDINGS_MASTER_REGISTER_PROTOCOL.md`;
 - `archive/MASTER_PROCEEDINGS_PUBLICATION_GOVERNANCE_30AUG2026.md`;
+- `archive/PROCEEDINGS_FULL_IDENTITY_STORYING_GOVERNANCE_30AUG2026.md`;
 - the counsel/procurador filing-lineage governance;
 - the CAEPR / `^` registration-and-interlink audit; and
 - source, correction, chronology, publication and privacy controls.
@@ -68,6 +69,10 @@ cross-file context.
 A contextual bridge is **not** a procedural edge and must be labelled as such. Common actors, a common hotel, family/employment/corporate proximity, chronological adjacency or common documents do not establish coordination, knowledge, wrongdoing, liability, joinder or identity of proceedings.
 
 ## 4. Required node identity
+
+<!-- PROCEEDINGS_FULL_IDENTITY_STORYING_GATE -->
+
+The mandatory full-identity/storying schema controls every node and linked narrative. The compact map view need not display every field at once, but each available field must be preserved in the canonical or linked proceeding record and reachable from the node; every unavailable applicable field must be an explicit gap.
 
 Every proceeding/file node shown by the map must retain, where populated and public-safe:
 

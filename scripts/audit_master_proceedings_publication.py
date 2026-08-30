@@ -22,6 +22,8 @@ PROJECTION = ROOT / "assets/data/proceedings-master-public-v1.json"
 BUILDER = ROOT / "scripts/build_public_proceedings_projection.py"
 PROTOCOL = ROOT / "archive/PROCEEDINGS_MASTER_REGISTER_PROTOCOL.md"
 GOVERNANCE = ROOT / "archive/MASTER_PROCEEDINGS_PUBLICATION_GOVERNANCE_30AUG2026.md"
+STORYING = ROOT / "archive/PROCEEDINGS_FULL_IDENTITY_STORYING_GOVERNANCE_30AUG2026.md"
+INTERCONNECTIVITY = ROOT / ".github/governance/UNITARY_PROCEEDINGS_INTERCONNECTIVITY_MAP_PROTOCOL_30AUG2026.md"
 EN = ROOT / "en/master-proceedings-register/index.html"
 ES = ROOT / "es/registro-maestro-procedimientos/index.html"
 JS = ROOT / "assets/master-proceedings-publication-20260830.js"
@@ -29,6 +31,7 @@ CSS = ROOT / "assets/master-proceedings-publication-20260830.css"
 SITE = ROOT / "assets/site.js"
 MANIFEST = ROOT / "publication-manifests/master-proceedings-publication-20260830.json"
 MARKER = "MASTER_PROCEEDINGS_PUBLICATION_GATE"
+STORYING_MARKER = "PROCEEDINGS_FULL_IDENTITY_STORYING_GATE"
 
 
 def main() -> int:
@@ -45,6 +48,8 @@ def main() -> int:
 
     protocol = PROTOCOL.read_text(encoding="utf-8")
     governance = GOVERNANCE.read_text(encoding="utf-8")
+    storying = STORYING.read_text(encoding="utf-8")
+    interconnectivity = INTERCONNECTIVITY.read_text(encoding="utf-8")
     en = EN.read_text(encoding="utf-8")
     es = ES.read_text(encoding="utf-8")
     js = JS.read_text(encoding="utf-8")
@@ -71,6 +76,24 @@ def main() -> int:
     for path, text in ((PROTOCOL, protocol), (GOVERNANCE, governance), (SITE, site)):
         if MARKER not in text:
             errors.append(f"{path.relative_to(ROOT)} missing {MARKER}")
+
+    for path, text in ((PROTOCOL, protocol), (STORYING, storying), (INTERCONNECTIVITY, interconnectivity)):
+        if STORYING_MARKER not in text:
+            errors.append(f"{path.relative_to(ROOT)} missing {STORYING_MARKER}")
+
+    for phrase in (
+        "decision number",
+        "NIG",
+        "exact organ/section",
+        "what was not decided",
+        "explicit evidenced gap",
+        "Rollo 1010/2018",
+        "Auto 804/2018",
+        "3500443220180003508",
+        "Audiencia Provincial de Las Palmas — Sección Segunda",
+    ):
+        if phrase not in storying:
+            errors.append(f"full-identity/storying governance missing control phrase: {phrase}")
 
     for path, text, route, alternate in (
         (EN, en, "/en/master-proceedings-register/", "/es/registro-maestro-procedimientos/"),

@@ -142,6 +142,19 @@
       "search_performed": "Exact-reference variants checked across the current repository and history, connected Drive/mail/Library sources and the native bilingual proceedings matrix; no exact identity source located.",
       "next_retrieval_route": "Resolve the proceeding identity first, then scan the complete file for lawyer-by-lawyer and procurador-by-procurador representation, filing, response and appeal lineage.",
       "status": "OPEN"
+    },
+    {
+      "gap_id": "CP-GAP-011",
+      "gap_type": "Rollo_1010_2018_filing_authority_and_Matkator_personacion",
+      "professional": null,
+      "proceeding_id": "Rollo 1010/2018",
+      "what_missing": "Complete appeal submissions, Fiscalía position, all poder/apud-acta/personación instruments and Matkator's exact lawyer/procurador pairing. The decision body describes a Gil/Matkator appeal, while Matkator is not separately listed in the located appellate cover table.",
+      "why_it_matters": "A cover appearance cannot be expanded into proof of every filing or authority instrument, and Matkator's representation cannot be inferred from Gil Marer's pairing.",
+      "existence_evidence_ref": "archive/ROLLO_1010_2018_AUTO_804_CARET_INTERLINK_CONTROL_30AUG2026.md",
+      "likely_source": "certified appeal roll, signed appeal submissions, Fiscalía pleading, poderes, apud acta, personación, service and notification records",
+      "search_performed": "Located appellate copy resolves the listed party/lawyer/procurador cover pairings and the decision body identifies the appellant group; the missing underlying instruments were not located in the reviewed set.",
+      "next_retrieval_route": "Obtain the certified complete Rollo 1010/2018 and DP 1132/2018 court-native files and reconcile each party to its filed acts and authority instrument.",
+      "status": "OPEN"
     }
   ]
 }

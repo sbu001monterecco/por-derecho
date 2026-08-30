@@ -5,6 +5,7 @@
 **Updated:** 30 August 2026  
 **Canonical table:** `archive/PROCEEDINGS_MASTER_REGISTER.csv`  
 **Public publication governance:** `archive/MASTER_PROCEEDINGS_PUBLICATION_GOVERNANCE_30AUG2026.md`
+**Full-identity/storying governance:** `archive/PROCEEDINGS_FULL_IDENTITY_STORYING_GOVERNANCE_30AUG2026.md`
 
 ## Purpose
 
@@ -69,6 +70,13 @@ Do not leave absent representation data as silent blanks. Use an explicit verifi
 A proceeding or professional-lineage refresh may not be described as **complete**, **fully reconciled** or **denominator-complete** until the lawyer, side/perimeter, client/party, procurador status, authority/personación, filing, court/LAJ response, appeal/follow-up and timeline linkage have each been populated or explicitly carried as an evidenced gap.
 
 The CI control `scripts/audit_counsel_procurador_governance.py` is the deletion/drift gate for these invariants. Do not bypass it by silently renaming, merging or removing the controlled professional records.
+
+<!-- PROCEEDINGS_FULL_IDENTITY_STORYING_GATE -->
+## Full-identity and storying gate — mandatory
+
+Every new or materially changed proceeding must apply `archive/PROCEEDINGS_FULL_IDENTITY_STORYING_GOVERNANCE_30AUG2026.md`. Capture every available official reference, separate decision number, NIG, exact organ/section, dates, panel/signatories, parties and roles, professional/personación lineage, parent/appeal chain, material events, disposition, legal-effect limits, sources, contradictions and gaps.
+
+The Master CSV holds the compact canonical identity. Rich detail belongs in linked proceeding-specific, CAEPR, professional, evidence, Case Prism and public-story controls using the same stable Master ID. Available information must not be replaced with a generic label or silent blank; unavailable information must be gap-logged. Material public-safe proceedings must explain what happened, what was decided, what was not decided, why the file is relevant and where its sources and connected routes sit.
 
 ## Controlling correction overlays
 
@@ -187,7 +195,7 @@ Known gaps remain gaps. Candidate references such as historical accumulated proc
 
 For a normal refresh:
 
-1. Read `CHATGPT_START_HERE.md`, this protocol, `archive/MASTER_PROCEEDINGS_PUBLICATION_GOVERNANCE_30AUG2026.md`, the master CSV, `CORRECTION_REGISTER.md` and `MISSING_EVIDENCE_REGISTER.md`.
+1. Read `CHATGPT_START_HERE.md`, this protocol, `archive/MASTER_PROCEEDINGS_PUBLICATION_GOVERNANCE_30AUG2026.md`, `archive/PROCEEDINGS_FULL_IDENTITY_STORYING_GOVERNANCE_30AUG2026.md`, the master CSV, `CORRECTION_REGISTER.md` and `MISSING_EVIDENCE_REGISTER.md`.
 2. Read `archive/COUNSEL_PROCURADOR_FILING_LINEAGE_GOVERNANCE_30AUG2026.md` and the four linked counsel/procurador data registers before attributing any lawyer, procurador, filing or professional relationship.
 3. Read any controlling correction overlay for the affected row before reusing the CSV text.
 4. Read the specialist register/ledger for the affected track.
@@ -198,7 +206,8 @@ For a normal refresh:
 9. Prefer opening the native court/institutional document before changing `Source_Status`, `Status`, `Current_Custodian`, `Is_Proceeding` or professional attribution.
 10. Search for evidence that contradicts, narrows or supersedes the current row as well as evidence that supports it.
 11. Deduplicate and link parent/child files rather than creating parallel descriptions of the same proceeding.
-12. Update the CSV and propagate:
+12. Apply the full-identity/storying schema: capture every available reference, decision number, NIG, exact organ/section, date, decision-maker, party/professional role, lineage, event, outcome, limitation and source; gap-log every unavailable applicable field.
+13. Update the CSV and propagate:
    - material factual corrections → `archive/CORRECTION_REGISTER.md` or a controlling correction overlay where safe full-file rewriting is not available;
    - unresolved primary-source needs → `archive/MISSING_EVIDENCE_REGISTER.md`;
    - counsel/procurador attribution and unresolved lineage → the dedicated counsel/procurador registers and gap register;
@@ -214,7 +223,7 @@ For a normal refresh:
 
 ## Reusable maintenance prompt
 
-> **Run the Por Derecho proceedings-maintenance scan.** Start from current `main`, `archive/PROCEEDINGS_MASTER_REGISTER_PROTOCOL.md`, `archive/MASTER_PROCEEDINGS_PUBLICATION_GOVERNANCE_30AUG2026.md` and `archive/PROCEEDINGS_MASTER_REGISTER.csv`, then apply any controlling correction overlays identified by the protocol. Apply the mandatory counsel/procurador filing-lineage governance and update the dedicated professional filing, procurador and gap registers. Scan the current public-site source/data, Gmail, Google Drive and File Library for any court, Fiscalía, government, regulator, professional-body, ombudsman, police, tax, transparency, public-funds or compliance proceeding/file/reference that is new or has changed. Verify against primary institutional originals where possible. Treat REGAGE receipts, notifications, output numbers, internal “Control” labels, draft appeals and technical references as supporting references unless evidence shows an assigned/filed proceeding. Deduplicate by organ + legal file + reference, preserve parent/child appeal and incident relationships, and never merge distinct proceedings merely because they concern Sun Park or the same actors. For every material act establish or gap-log PARTY → LAWYER → SIDE/PERIMETER → PROCURADOR/A → AUTHORITY/PERSONACIÓN → PROCEEDING/PIEZA → FILING → COURT/LAJ RESPONSE → APPEAL/FOLLOW-UP → TIMELINE. Update the master register’s reference, NIG, source status, latest known state, current custodian, linked proceedings and reference gaps. Preserve explicit private/internal rows outside the public aggregate; otherwise maintain the bilingual public register as the procedural spine and propagate material relationship changes into the multitrack storyline/timeline. Propagate material corrections to `CORRECTION_REGISTER.md` and primary-source gaps to `MISSING_EVIDENCE_REGISTER.md`. Use a branch and PR for repository changes, run both proceedings/publication and counsel/procurador audits, and finish by confirming publication and deletion-safety.
+> **Run the Por Derecho proceedings-maintenance scan.** Start from current `main`, `archive/PROCEEDINGS_MASTER_REGISTER_PROTOCOL.md`, `archive/MASTER_PROCEEDINGS_PUBLICATION_GOVERNANCE_30AUG2026.md`, `archive/PROCEEDINGS_FULL_IDENTITY_STORYING_GOVERNANCE_30AUG2026.md` and `archive/PROCEEDINGS_MASTER_REGISTER.csv`, then apply any controlling correction overlays identified by the protocol. Apply the mandatory counsel/procurador filing-lineage governance and update the dedicated professional filing, procurador and gap registers. Scan the current public-site source/data, Gmail, Google Drive and File Library for any court, Fiscalía, government, regulator, professional-body, ombudsman, police, tax, transparency, public-funds or compliance proceeding/file/reference that is new or has changed. Verify against primary institutional originals where possible. For every proceeding capture each available official reference, distinct decision number, NIG, exact organ/section, date, panel/signatory, party and role, professional/personación lineage, procedural parent/child chain, event, disposition, legal-effect limit and source; every unavailable applicable field must be an explicit gap. Treat REGAGE receipts, notifications, output numbers, internal “Control” labels, draft appeals and technical references as supporting references unless evidence shows an assigned/filed proceeding. Deduplicate by organ + legal file + reference, preserve parent/child appeal and incident relationships, and never merge distinct proceedings merely because they concern Sun Park or the same actors. For every material act establish or gap-log PARTY → LAWYER → SIDE/PERIMETER → PROCURADOR/A → AUTHORITY/PERSONACIÓN → PROCEEDING/PIEZA → FILING → COURT/LAJ RESPONSE → APPEAL/FOLLOW-UP → TIMELINE. Maintain a concise bilingual story for each material public-safe proceeding explaining what happened, what was and was not decided, wider relevance, sources and gaps. Preserve explicit private/internal rows outside the public aggregate. Propagate material corrections to `CORRECTION_REGISTER.md` and primary-source gaps to `MISSING_EVIDENCE_REGISTER.md`. Use a branch and PR for repository changes, run the proceedings/publication and counsel/procurador audits, and finish by confirming publication and deletion-safety.
 
 ## Suggested recurring review
 

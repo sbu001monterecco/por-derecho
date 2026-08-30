@@ -21,7 +21,9 @@
     'LZ-JUD-043': {
       en: new URL('en/dp-3205-2014-arrecife/', repoBase).href,
       es: new URL('es/dp-3205-2014-arrecife/', repoBase).href
-    }
+    },
+    'LZ-JUD-003': { en: new URL('en/rollo-1010-2018-order-804-2018/', repoBase).href, es: new URL('es/rollo-1010-2018-auto-804-2018/', repoBase).href },
+    'LZ-APP-004': { en: new URL('en/rollo-1010-2018-order-804-2018/', repoBase).href, es: new URL('es/rollo-1010-2018-auto-804-2018/', repoBase).href }
   };
   const mapRoutes = {
     en: new URL('en/proceedings-map/', repoBase).href,

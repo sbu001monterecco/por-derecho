@@ -129,15 +129,15 @@
       "node_id": "AM357-N03",
       "language": "es",
       "route": "/es/toma-control-sun-park-7-junio-2018/",
-      "normalized_main_sha256": "f72e098fb97e4ca0b56875e2027c60dfad8fda2472626f617ce1e637322b456d",
-      "normalized_characters": 55072
+      "normalized_main_sha256": "f411ce0bffe99729357949014c19b4ff24ad0e2f42385372d850565376d68939",
+      "normalized_characters": 55351
     },
     {
       "node_id": "AM357-N03",
       "language": "en",
       "route": "/en/sun-park-takeover-7-june-2018/",
-      "normalized_main_sha256": "731e5664a59843d0ba808e938328c630fc23f2470ea94a76d4bcacb01fdbfe3b",
-      "normalized_characters": 52540
+      "normalized_main_sha256": "5670d92b9cf0fb53c227e0ffcf9331141b9a3671177a15e2862f95fe860a9957",
+      "normalized_characters": 52770
     },
     {
       "node_id": "AM357-N04",
@@ -1374,7 +1374,7 @@
         "language": "en",
         "route": "/en/sun-park-takeover-7-june-2018/",
         "normalized_literal": "Order 804/2018",
-        "normalized_occurrence_count": 4
+        "normalized_occurrence_count": 5
       }
     },
     {
