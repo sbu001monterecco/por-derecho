@@ -52,25 +52,33 @@ For the fees/remuneration track ask: can remuneration be treated as wholly detac
 
 These are cross-reading questions. They are not findings that one appeal controls another, not a request for procedural joinder and not proof of misconduct.
 
-## 4. CaixaBank / Valencia — exact identity and convergence boundary
+## 4. CaixaBank / Valencia — exact identity verified; master registration remains open
 
-Connected correspondence establishes a distinct live litigation identity that is not presently reconciled into the canonical Proceedings Master Register:
+The source-controlled public CaixaBank/Valencia dossier records the live proceeding from a signed court diligence dated 6 November 2025 as:
 
-- **Proceeding:** `01859/2023`;
+- **parties:** Aweswell Limited v CAIXABANK, S.A.;
+- **proceeding:** Ordinary Proceeding `[ORD] 1859/2023-9`;
 - **court:** Juzgado de Primera Instancia nº 27 de Valencia;
-- **parties/perimeter as identified in the connected record:** Aweswell / CaixaBank;
-- **subject description in contemporaneous correspondence:** Valencia swap / financial-package dispute;
-- **hearing status located in correspondence:** a hearing expected in November 2025 was postponed into January 2027.
+- **N.I.G.:** `46250-42-1-2023-0049579`;
+- **current hearing:** **28 January 2027 at 10:00**; and
+- **status:** pending and contested; no merits judgment or adjudicated recovery located in the controlled public record.
 
-This matter must not be silently equated with the existing generic Valencia master row `ES-VAL-CIV-048` unless a primary source proves they are the same proceeding. Current treatment is therefore a **REGISTER GAP / SOURCE-RECONCILIATION OBJECT**, controlled separately at:
+The signed diligence relisted a hearing that had been set for 6 November 2025 at 10:00. The exact identity, NIG and current hearing are therefore **verified at the controlled source level**.
 
-`archive/CAIXABANK_VALENCIA_01859_2023_REGISTRATION_GAP_30AUG2026.md`
+What remains unresolved is the canonical Proceedings Master Register row. The current CSV does not expose this exact proceeding in the located inventory. It must not be silently equated with generic row `ES-VAL-CIV-048`.
 
-The convergence is nevertheless material. The connected record contains contemporaneous professional correspondence treating the Valencia litigation and the concursal-administration/separation position as procedurally consequential to one another. That private strategy must not be published automatically. Public treatment should instead state the source-safe proposition:
+Controlling gap and overlay:
 
-> **Separate Valencia proceeding; materially connected to the financing / financial-product package and the underlying hotel/insolvency asset history. Exact master-register reconciliation remains open.**
+- `archive/CAIXABANK_VALENCIA_01859_2023_REGISTRATION_GAP_30AUG2026.md`
+- `archive/PROCEEDINGS_MASTER_REGISTER_VALENCIA_1859_2023_OVERLAY_30AUG2026.md`
 
-Do not state a precise January 2027 day unless a primary court notice is located.
+The public dossier itself establishes the material convergence by tracing the banking/financial-product package through Bankia enforcement, Arrecife Mortgage Enforcement 90/2012, Concurso 36/2012, the later mortgage-asset lane, the Administrador Concursal witness-origin chronology and calificación/recovery analysis.
+
+Public treatment should therefore state:
+
+> **Separate Valencia proceeding; directly relevant to the historic banking/financial-product package, enforcement chronology and the underlying economic history that intersects with Concurso 36/2012 and the hotel assets. Canonical master-register insertion remains open.**
+
+This does not mean the Valencia court has adopted Por Derecho's wider insolvency, criminal, causation or liability allegations.
 
 ## 5. Other mandatory convergence corridors
 
@@ -144,7 +152,7 @@ The map must remain a navigation layer, not a merits adjudication.
 
 ## 9. Continuity / future-thread rule
 
-Future work materially changing any of the current Audiencia appeals, Valencia 01859/2023, Arrecife mortgage enforcement, Meeting Point/FTI, Cuatrecasas/Matkator, Ministerio Fiscal response chronology or historical possession/exploitation chain must assess:
+Future work materially changing any of the current Audiencia appeals, Valencia ORD 1859/2023-9, Arrecife mortgage enforcement, Meeting Point/FTI, Cuatrecasas/Matkator, Ministerio Fiscal response chronology or historical possession/exploitation chain must assess:
 
 1. standalone procedural identity;
 2. canonical/master-register registration status;
