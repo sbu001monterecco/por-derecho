@@ -6,6 +6,7 @@
   const assetBase = new URL('.', script.src);
   const repoBase = new URL('../', assetBase);
   const csvUrl = new URL('archive/PROCEEDINGS_MASTER_REGISTER.csv', repoBase).href;
+  const prismUrl = new URL('assets/data/proceedings-case-prism-v1.json', repoBase).href;
   const lang = (document.documentElement.lang || 'en').toLowerCase().startsWith('es') ? 'es' : 'en';
   const registerRoute = new URL(lang === 'es' ? 'es/registro-maestro-procedimientos/' : 'en/master-proceedings-register/', repoBase).href;
 
@@ -14,6 +15,7 @@
     error: 'No se pudo construir el mapa de procedimientos.',
     allTracks: 'Todas las vías', search: 'Buscar ID, referencia, órgano, objeto o estado…',
     map: 'Mapa por vías', chronology: 'Cronología', trace: 'Trazar un procedimiento',
+    prism: 'Prisma del caso', lanes: 'Vías paralelas', isolation: 'Prueba de aislamiento',
     records: 'nodos públicos', tracks: 'vías', direct: 'relaciones procesales explícitas', gaps: 'nodos con brecha abierta',
     directTitle: 'Relaciones procesales directas', incoming: 'Entrantes / hacia este nodo', outgoing: 'Salientes / desde este nodo',
     contextTitle: 'Puentes de contexto', sameTrack: 'Misma vía', sameConnection: 'Misma conexión registrada', sameGeo: 'Misma geografía',
@@ -29,12 +31,21 @@
     sameGeoWhy: 'Ambos nodos comparten la misma geografía registrada. Es contexto de navegación únicamente.',
     approximate: 'Orden aproximado por el primer año reconocible en Date_or_Period; no implica causalidad.',
     openRegister: 'Abrir Registro Maestro', traceThis: 'Trazar', empty: 'No hay nodos que coincidan con los filtros.',
-    publicBoundary: 'Esta visualización es una proyección pública del mismo CSV canónico. No convierte referencias en procedimientos ni conexiones contextuales en hechos jurídicos.'
+    publicBoundary: 'Esta visualización es una proyección pública del mismo CSV canónico. No convierte referencias en procedimientos ni conexiones contextuales en hechos jurídicos.',
+    audience: 'Lente del lector', proposition: 'Proposición / hecho a contrastar', status: 'Estado', period: 'Periodo',
+    matrixLead: 'Una misma proposición, leída horizontalmente a través de procedimientos jurídicamente separados.',
+    lanesLead: 'Orden cronológico de las proposiciones controladas y las vías en las que aparecen de forma directa, contextual o abierta.',
+    isolationLead: 'Selecciona una vía. La primera columna muestra lo que esa vía contiene directamente; la segunda muestra contexto material controlado que no aparece como contenido directo de esa vía.',
+    chooseLane: 'Seleccionar vía', visibleAlone: 'Visible en la vía seleccionada', disappears: 'Contexto material fuera de la vía seleccionada',
+    noVisible: 'No hay una proposición de este prisma marcada como directa en esta vía.', noOutside: 'No hay contexto adicional marcado para esta vía en el prisma controlado.',
+    detail: 'Detalle de la dependencia', masterIds: 'IDs canónicos relacionados', openTrace: 'Abrir traza',
+    formalBoundary: 'La prueba de aislamiento es metodológica. No demuestra que el órgano recibiera, debiera admitir o debiera valorar el material externo.'
   } : {
     loading: 'Building the map from the canonical register…',
     error: 'The proceedings map could not be built.',
     allTracks: 'All tracks', search: 'Search ID, reference, organ, object or status…',
     map: 'Track map', chronology: 'Chronology', trace: 'Trace one proceeding',
+    prism: 'Case Prism', lanes: 'Parallel lanes', isolation: 'Isolation test',
     records: 'public nodes', tracks: 'tracks', direct: 'explicit procedural relations', gaps: 'nodes with an open gap',
     directTitle: 'Direct procedural relationships', incoming: 'Incoming / toward this node', outgoing: 'Outgoing / from this node',
     contextTitle: 'Context bridges', sameTrack: 'Same track', sameConnection: 'Same recorded connection', sameGeo: 'Same geography',
@@ -50,12 +61,21 @@
     sameGeoWhy: 'Both nodes share the same recorded geography. This is navigation context only.',
     approximate: 'Approximate order by the first recognisable year in Date_or_Period; it does not imply causation.',
     openRegister: 'Open Master Register', traceThis: 'Trace', empty: 'No nodes match the current filters.',
-    publicBoundary: 'This visualisation is a public projection of the same canonical CSV. It does not turn references into proceedings or contextual connections into legal facts.'
+    publicBoundary: 'This visualisation is a public projection of the same canonical CSV. It does not turn references into proceedings or contextual connections into legal facts.',
+    audience: 'Reader lens', proposition: 'Proposition / fact to test', status: 'Status', period: 'Period',
+    matrixLead: 'One proposition, read horizontally across legally separate proceedings.',
+    lanesLead: 'Chronological order of the controlled propositions and the lanes in which they appear as direct, contextual or open.',
+    isolationLead: 'Select one lane. The first column shows what that lane contains directly; the second shows controlled material context that is not direct content of that lane.',
+    chooseLane: 'Select lane', visibleAlone: 'Visible in the selected lane', disappears: 'Material context outside the selected lane',
+    noVisible: 'No proposition in this prism is marked direct in this lane.', noOutside: 'No additional contextual proposition is marked for this lane in the controlled prism.',
+    detail: 'Dependency detail', masterIds: 'Related canonical IDs', openTrace: 'Open trace',
+    formalBoundary: 'The isolation test is methodological. It does not prove that the organ received, should admit or should assess the external material.'
   };
 
   const esc = (v) => String(v || '').replace(/[&<>"']/g, (c) => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   const norm = (v) => String(v || '').trim();
   const key = (v) => norm(v).toLowerCase();
+  const localized = (obj, base) => obj ? (obj[`${base}_${lang}`] || obj[lang] || obj[base] || obj.en || obj.es || '') : '';
 
   function parseCsv(text) {
     const table = []; let row = []; let field = ''; let quoted = false;
@@ -162,7 +182,7 @@
     holder.scrollIntoView({behavior:'smooth', block:'start'});
   }
 
-  function renderMap(root, rows, byId, edges, filters) {
+  function renderMap(root, rows, filters) {
     const body = root.querySelector('[data-view-body]');
     const q = key(filters.search.value); const track = filters.track.value;
     const filtered = rows.filter((r) => {
@@ -182,20 +202,108 @@
     body.innerHTML = `<p class="pdim-note">${copy.approximate}</p><ol class="pdim-chronology">${filtered.map((r) => `<li><time>${esc(r.Date_or_Period || '—')}</time>${card(r)}</li>`).join('')}</ol>`;
   }
 
+  const laneLabel = (lane) => localized(lane, '') || lane.id;
+  const propTitle = (prop) => localized(prop, 'title') || prop.id;
+  const propQuestion = (prop) => localized(prop, 'question');
+  const cellNote = (cell) => localized(cell, 'note');
+
+  function sortedProps(prism, audience) {
+    return prism.propositions.slice().sort((a, b) => {
+      const ap = a.audience_priority && Number.isFinite(a.audience_priority[audience]) ? a.audience_priority[audience] : 999;
+      const bp = b.audience_priority && Number.isFinite(b.audience_priority[audience]) ? b.audience_priority[audience] : 999;
+      return ap - bp || Number(a.sort || 9999) - Number(b.sort || 9999) || a.id.localeCompare(b.id);
+    });
+  }
+
+  function statusLabel(prism, status) {
+    const meta = prism.statuses && prism.statuses[status];
+    return localized(meta, '') || status;
+  }
+
+  function renderPrismDetail(root, prism, propId, laneId) {
+    const prop = prism.propositions.find((p) => p.id === propId);
+    const lane = prism.lanes.find((l) => l.id === laneId);
+    if (!prop || !lane) return;
+    const cell = prop.cells && prop.cells[laneId];
+    const holder = root.querySelector('[data-prism-detail]');
+    if (!holder) return;
+    const ids = cell && Array.isArray(cell.master_ids) ? cell.master_ids : [];
+    holder.innerHTML = `
+      <div class="pdim-prism-detail-head"><div><span class="pdim-id">${esc(prop.id)} · ${esc(prop.period || '')}</span><h3>${esc(propTitle(prop))}</h3></div><span class="pdim-prism-status" data-prism-status="${esc(cell ? cell.status : 'OUTSIDE')}">${esc(statusLabel(prism, cell ? cell.status : 'OUTSIDE'))}</span></div>
+      <p><strong>${esc(laneLabel(lane))}</strong> — ${esc(cell ? cellNote(cell) : (lang === 'es' ? 'No hay una relación específica codificada para esta proposición y esta vía.' : 'No specific relationship is encoded for this proposition and lane.'))}</p>
+      <p class="pdim-sub"><strong>${copy.why}:</strong> ${esc(propQuestion(prop))}</p>
+      <p class="pdim-sub"><strong>${copy.source}:</strong> ${esc(prop.source_status || '—')}</p>
+      ${ids.length ? `<div class="pdim-prism-id-list"><strong>${copy.masterIds}</strong>${ids.map((id) => `<button type="button" data-trace-id="${esc(id)}">${esc(id)} · ${copy.openTrace}</button>`).join('')}</div>` : ''}`;
+  }
+
+  function audienceControl(prism, state) {
+    return `<label class="pdim-prism-audience">${copy.audience}<select data-prism-audience>${prism.audience_lenses.map((a) => `<option value="${esc(a.id)}"${a.id === state.audience ? ' selected' : ''}>${esc(localized(a, ''))}</option>`).join('')}</select></label>`;
+  }
+
+  function audienceQuestion(prism, state) {
+    const lens = prism.audience_lenses.find((a) => a.id === state.audience) || prism.audience_lenses[0];
+    return localized(lens, 'question');
+  }
+
+  function renderPrism(root, prism, state) {
+    const body = root.querySelector('[data-view-body]');
+    const props = sortedProps(prism, state.audience);
+    body.innerHTML = `
+      <section class="pdim-prism-head"><div><p class="pdim-note">${esc(copy.matrixLead)}</p><p><strong>${esc(audienceQuestion(prism, state))}</strong></p></div>${audienceControl(prism, state)}</section>
+      <div class="pdim-prism-table-wrap"><table class="pdim-prism-table"><thead><tr><th>${copy.proposition}</th>${prism.lanes.map((lane) => `<th>${esc(laneLabel(lane))}</th>`).join('')}</tr></thead><tbody>${props.map((prop) => `<tr><th scope="row"><span>${esc(prop.period || '')}</span><strong>${esc(propTitle(prop))}</strong><small>${esc(prop.source_status || '')}</small></th>${prism.lanes.map((lane) => { const cell = prop.cells && prop.cells[lane.id]; return `<td>${cell ? `<button type="button" class="pdim-prism-cell" data-prism-status="${esc(cell.status)}" data-prism-prop="${esc(prop.id)}" data-prism-lane="${esc(lane.id)}"><span>${esc(statusLabel(prism, cell.status))}</span></button>` : '<span class="pdim-prism-dash">—</span>'}</td>`; }).join('')}</tr>`).join('')}</tbody></table></div>
+      <div class="pdim-prism-legend">${Object.entries(prism.statuses).map(([status, meta]) => `<span data-prism-status="${esc(status)}"><b></b>${esc(localized(meta, ''))}</span>`).join('')}</div>
+      <div class="pdim-prism-detail" data-prism-detail><p>${esc(localized(prism.boundary, ''))}</p></div>`;
+  }
+
+  function renderParallelLanes(root, prism, state) {
+    const body = root.querySelector('[data-view-body]');
+    const props = prism.propositions.slice().sort((a,b) => Number(a.sort || 9999) - Number(b.sort || 9999));
+    body.innerHTML = `
+      <section class="pdim-prism-head"><div><p class="pdim-note">${esc(copy.lanesLead)}</p><p><strong>${esc(audienceQuestion(prism, state))}</strong></p></div>${audienceControl(prism, state)}</section>
+      <div class="pdim-lane-timeline">${props.map((prop) => `<article class="pdim-lane-event"><div class="pdim-lane-time"><span>${esc(prop.period || '')}</span><strong>${esc(prop.id)}</strong></div><div class="pdim-lane-event-main"><h3>${esc(propTitle(prop))}</h3><p>${esc(propQuestion(prop))}</p><div class="pdim-lane-chips">${prism.lanes.map((lane) => { const cell = prop.cells && prop.cells[lane.id]; if (!cell) return ''; return `<button type="button" data-prism-status="${esc(cell.status)}" data-prism-prop="${esc(prop.id)}" data-prism-lane="${esc(lane.id)}"><strong>${esc(laneLabel(lane))}</strong><span>${esc(statusLabel(prism, cell.status))}</span></button>`; }).join('')}</div></div></article>`).join('')}</div>
+      <div class="pdim-prism-detail" data-prism-detail><p>${esc(localized(prism.boundary, ''))}</p></div>`;
+  }
+
+  function renderIsolation(root, prism, state) {
+    const body = root.querySelector('[data-view-body]');
+    if (!state.isolationLane || !prism.lanes.some((l) => l.id === state.isolationLane)) state.isolationLane = prism.lanes[0].id;
+    const lane = prism.lanes.find((l) => l.id === state.isolationLane);
+    const direct = [];
+    const outside = [];
+    prism.propositions.forEach((prop) => {
+      const cell = prop.cells && prop.cells[lane.id];
+      if (!cell) return;
+      if (cell.status === 'DIRECT') direct.push({prop, cell});
+      else if (['CONTEXT','OPEN','NOT_LOCATED'].includes(cell.status)) outside.push({prop, cell});
+    });
+    const item = ({prop, cell}) => `<li><button type="button" data-prism-prop="${esc(prop.id)}" data-prism-lane="${esc(lane.id)}"><span class="pdim-prism-status" data-prism-status="${esc(cell.status)}">${esc(statusLabel(prism, cell.status))}</span><strong>${esc(propTitle(prop))}</strong></button><p>${esc(cellNote(cell))}</p></li>`;
+    body.innerHTML = `
+      <section class="pdim-isolation-head"><div><p class="pdim-note">${esc(copy.isolationLead)}</p><p class="pdim-warning">${esc(copy.formalBoundary)}</p></div><label>${copy.chooseLane}<select data-isolation-lane>${prism.lanes.map((l) => `<option value="${esc(l.id)}"${l.id === lane.id ? ' selected' : ''}>${esc(laneLabel(l))}</option>`).join('')}</select></label></section>
+      <div class="pdim-isolation-grid"><section><h2>${copy.visibleAlone}</h2><ul>${direct.length ? direct.map(item).join('') : `<li class="pdim-none">${copy.noVisible}</li>`}</ul></section><section><h2>${copy.disappears}</h2><ul>${outside.length ? outside.map(item).join('') : `<li class="pdim-none">${copy.noOutside}</li>`}</ul></section></div>
+      <div class="pdim-prism-detail" data-prism-detail><p>${esc(localized(prism.boundary, ''))}</p></div>`;
+  }
+
   async function init() {
     const root = document.querySelector('[data-proceedings-map]'); if (!root) return;
     try {
-      const res = await fetch(csvUrl, {cache:'no-store'}); if (!res.ok) throw new Error(`HTTP ${res.status}`);
-      const all = parseCsv(await res.text()); const rows = all.filter(isPublic);
+      const [csvRes, prismRes] = await Promise.all([
+        fetch(csvUrl, {cache:'no-store'}),
+        fetch(prismUrl, {cache:'no-store'}).catch(() => null)
+      ]);
+      if (!csvRes.ok) throw new Error(`HTTP ${csvRes.status}`);
+      const all = parseCsv(await csvRes.text()); const rows = all.filter(isPublic);
       const byId = new Map(rows.map((r) => [norm(r.Master_ID), r]));
       const edges = buildEdges(rows, byId);
       const tracks = Array.from(new Set(rows.map((r) => norm(r.Stream)).filter(Boolean))).sort((a,b)=>a.localeCompare(b));
       const gaps = rows.filter((r) => norm(r.Open_Reference_Gap)).length;
+      let prism = null;
+      if (prismRes && prismRes.ok) prism = await prismRes.json();
+      const state = { audience: 'all', isolationLane: prism && prism.lanes.length ? prism.lanes[0].id : '' };
 
       root.innerHTML = `
         <div class="pdim-stats"><div><strong>${rows.length}</strong><span>${copy.records}</span></div><div><strong>${tracks.length}</strong><span>${copy.tracks}</span></div><div><strong>${edges.length}</strong><span>${copy.direct}</span></div><div><strong>${gaps}</strong><span>${copy.gaps}</span></div></div>
         <div class="pdim-controls"><label>${lang==='es'?'Buscar':'Search'}<input type="search" data-map-search placeholder="${esc(copy.search)}"></label><label>${lang==='es'?'Vía':'Track'}<select data-map-track><option value="">${copy.allTracks}</option>${tracks.map((t)=>`<option>${esc(t)}</option>`).join('')}</select></label></div>
-        <div class="pdim-tabs" role="tablist"><button type="button" data-view="map" aria-selected="true">${copy.map}</button><button type="button" data-view="chronology" aria-selected="false">${copy.chronology}</button><button type="button" data-view="trace" aria-selected="false">${copy.trace}</button></div>
+        <div class="pdim-tabs" role="tablist"><button type="button" data-view="map" aria-selected="true">${copy.map}</button><button type="button" data-view="chronology" aria-selected="false">${copy.chronology}</button><button type="button" data-view="trace" aria-selected="false">${copy.trace}</button>${prism ? `<button type="button" data-view="prism" aria-selected="false">${copy.prism}</button><button type="button" data-view="lanes" aria-selected="false">${copy.lanes}</button><button type="button" data-view="isolation" aria-selected="false">${copy.isolation}</button>` : ''}</div>
         <div data-view-body></div>
         <section class="pdim-trace-panel" data-trace-panel aria-live="polite"></section>
         <footer class="pdim-footer"><p>${copy.publicBoundary}</p><a href="${esc(registerRoute)}">${copy.openRegister} →</a></footer>`;
@@ -203,16 +311,30 @@
       const filters = { search: root.querySelector('[data-map-search]'), track: root.querySelector('[data-map-track]') };
       let view = 'map';
       const draw = () => {
+        const tracePanel = root.querySelector('[data-trace-panel]');
+        if (view !== 'trace' && tracePanel) tracePanel.innerHTML = '';
         if (view === 'chronology') renderChronology(root, rows, filters);
         else if (view === 'trace') {
           const body = root.querySelector('[data-view-body]');
           body.innerHTML = `<div class="pdim-picker"><label>${copy.trace}<select data-trace-select><option value="">—</option>${rows.slice().sort((a,b)=>labelFor(a).localeCompare(labelFor(b))).map((r)=>`<option value="${esc(r.Master_ID)}">${esc(r.Master_ID)} · ${esc(labelFor(r))}</option>`).join('')}</select></label></div>`;
-        } else renderMap(root, rows, byId, edges, filters);
+        } else if (view === 'prism' && prism) renderPrism(root, prism, state);
+        else if (view === 'lanes' && prism) renderParallelLanes(root, prism, state);
+        else if (view === 'isolation' && prism) renderIsolation(root, prism, state);
+        else renderMap(root, rows, filters);
       };
       filters.search.addEventListener('input', draw); filters.track.addEventListener('input', draw);
       root.querySelectorAll('[data-view]').forEach((b) => b.addEventListener('click', () => { view = b.dataset.view; root.querySelectorAll('[data-view]').forEach((x)=>x.setAttribute('aria-selected', x===b?'true':'false')); draw(); }));
-      root.addEventListener('click', (ev) => { const b = ev.target.closest('[data-trace-id]'); if (b) renderTrace(root, b.dataset.traceId, rows, byId, edges); });
-      root.addEventListener('change', (ev) => { if (ev.target.matches('[data-trace-select]') && ev.target.value) renderTrace(root, ev.target.value, rows, byId, edges); });
+      root.addEventListener('click', (ev) => {
+        const traceButton = ev.target.closest('[data-trace-id]');
+        if (traceButton) { renderTrace(root, traceButton.dataset.traceId, rows, byId, edges); return; }
+        const prismButton = ev.target.closest('[data-prism-prop][data-prism-lane]');
+        if (prismButton && prism) renderPrismDetail(root, prism, prismButton.dataset.prismProp, prismButton.dataset.prismLane);
+      });
+      root.addEventListener('change', (ev) => {
+        if (ev.target.matches('[data-trace-select]') && ev.target.value) renderTrace(root, ev.target.value, rows, byId, edges);
+        if (ev.target.matches('[data-prism-audience]')) { state.audience = ev.target.value || 'all'; draw(); }
+        if (ev.target.matches('[data-isolation-lane]')) { state.isolationLane = ev.target.value; draw(); }
+      });
       draw();
     } catch (err) {
       root.innerHTML = `<div class="pdim-error"><strong>${copy.error}</strong><p>${esc(err.message || err)}</p></div>`;
