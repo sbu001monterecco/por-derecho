@@ -2,7 +2,7 @@
   "schema": "por-derecho.treasury-transparency-7-2026.v1",
   "control_id": "PD-TREASURY-TRANSPARENCY-7-2026-20260830-01",
   "control_date": "2026-08-30",
-  "status": "PREPARED_FOR_PUBLICATION",
+  "status": "LIVE_VERIFIED",
   "canonical_administrative_record": {
     "master_id": "NAT-TES-001",
     "id_boundary": "Legacy stable ID retained; this is a Canary Islands administrative file, not a national proceeding.",
@@ -107,5 +107,37 @@
     "private_source_binaries": "EXCLUDED",
     "credentials_and_access_mechanics": "EXCLUDED",
     "personal_profile_created": false
+  },
+  "publication_evidence": {
+    "content_pull_request": 1247,
+    "reviewed_head_sha": "f94aa19741077c3c2fae0078baa50ad5d03535e2",
+    "merge_sha": "5939ed3badad20193a4aba05ca62047d6bc6ff89",
+    "merge_tree_sha": "86bb8588cf130dc5f2bd6904b7f868a4db7cbbfb",
+    "pages": {
+      "run_id": 33341536674,
+      "run_number": 1312,
+      "status": "COMPLETED_SUCCESS",
+      "completed_at": "2026-08-30T23:22:12Z"
+    },
+    "live_readback": {
+      "status": "PASS",
+      "exact_resource_matches": "13/13",
+      "human_readable_routes_http_200": "8/8",
+      "resource_sha256": {
+        "es_treasury": "3c34d14b06a56272d8946d4d974ca9c6dc8652e85742ef58ffb92a5d5764422d",
+        "en_treasury": "a2c306f31a8de4b74ad61320aa94095ea2a7d23448444a04b717c02a0af9dfd9",
+        "es_public_debt": "b938e5f23656cf68f8280b790d62a2bef3f0b5cb4df85775a7c60f9025019cf3",
+        "en_public_debt": "ca403c28fbccf793bbd05760381e7de6a461b2cb8b03063a70247a1efe31abab",
+        "es_ricpe_documentary_accountability": "64ada7c16f3edbb7cd6672819406b0c431b28b8e395fb3394862fddc22f6777f",
+        "en_ricpe_documentary_accountability": "af5854962ac593f31909adad9e21061968ed56db24e1e0224bc2e8647c500f0b",
+        "es_institutional_records": "13e3a8871497f6eac8daa43d44a1a38242db777eeb93905aa7774edb9b02fb2e",
+        "en_institutional_records": "97659d575fce149e1e804234a577833df9243fc4e18458a30a623956fb8571bc",
+        "treasury_data": "ae5200e95fb1e2b1d4dcba24e757ed884903f0701ca84c362e2a6a56fbb72992",
+        "unitary_route_registry": "9aebc11f29254649a5c8be6f911445ec60e6ae93cd38f526c4a692e19708bc28",
+        "proceedings_master_register": "6441ffeb304fc4d1210ed1d94d6ae1b36c9434a7115a084bdab2545c577b9741",
+        "dedicated_sitemap": "9ab1908ab4397ad9a5d137186d266dc5687314256c17bf995a083fb64ffb98e9",
+        "robots": "eba43ab9e71cb61321eba0b38afb6dae0d52a2c20def69d16ef9989709171476"
+      }
+    }
   }
 }

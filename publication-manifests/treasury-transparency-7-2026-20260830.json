@@ -2,7 +2,7 @@
   "publication_id": "PD-TREASURY-TRANSPARENCY-7-2026-20260830-01",
   "owner": "Por Derecho / Project Sun Rock",
   "control_date": "2026-08-30",
-  "current_state": "PREPARED_PENDING_MERGE",
+  "current_state": "LIVE_VERIFIED",
   "state": "DELETION_SAFE_WITH_OPEN_STAGED_PRODUCTION_AND_PRIVATE_SOURCE_CUSTODY_RETAINED",
   "source_base_sha": "259d055299d8508b7d89963b4b5d8ceecf4a50a1",
   "purpose": "Correct and publish the Treasury transparency 7/2026 procedural record after review of the signed implementation act, the Colabora delivery event and the first eight-file / 734-page production tranche.",
@@ -50,10 +50,58 @@
     "The access production does not establish a public-bond allocation to HNT or an Acosta Matos subscriber bridge.",
     "Treasury 7/2026, Resolution 28/2026 and Law 2/2023 routing remain separate files and acts."
   ],
+  "content_publication": {
+    "pull_request": 1247,
+    "reviewed_head_sha": "f94aa19741077c3c2fae0078baa50ad5d03535e2",
+    "merge_sha": "5939ed3badad20193a4aba05ca62047d6bc6ff89",
+    "tree_sha": "86bb8588cf130dc5f2bd6904b7f868a4db7cbbfb",
+    "pages_run": {
+      "id": 33341536674,
+      "number": 1312,
+      "url": "https://github.com/sbu001monterecco/por-derecho/actions/runs/33341536674",
+      "status": "COMPLETED_SUCCESS",
+      "completed_at": "2026-08-30T23:22:12Z"
+    },
+    "live_urls": {
+      "es": "https://sbu001monterecco.github.io/por-derecho/es/tesoro-transparencia-7-2026-28agosto/",
+      "en": "https://sbu001monterecco.github.io/por-derecho/en/treasury-transparency-7-2026-28-august/",
+      "data": "https://sbu001monterecco.github.io/por-derecho/assets/data/treasury-transparency-7-2026-v1.json",
+      "sitemap": "https://sbu001monterecco.github.io/por-derecho/sitemap-treasury-transparency-7-2026.xml"
+    }
+  },
+  "merge_sha": "5939ed3badad20193a4aba05ca62047d6bc6ff89",
+  "deployment_evidence": {
+    "workflow": "pages-build-deployment",
+    "run_id": 33341536674,
+    "run_number": 1312,
+    "status": "COMPLETED_SUCCESS",
+    "source_merge_sha": "5939ed3badad20193a4aba05ca62047d6bc6ff89",
+    "completed_at": "2026-08-30T23:22:12Z"
+  },
+  "live_urls": [
+    "https://sbu001monterecco.github.io/por-derecho/es/tesoro-transparencia-7-2026-28agosto/",
+    "https://sbu001monterecco.github.io/por-derecho/en/treasury-transparency-7-2026-28-august/",
+    "https://sbu001monterecco.github.io/por-derecho/assets/data/treasury-transparency-7-2026-v1.json",
+    "https://sbu001monterecco.github.io/por-derecho/sitemap-treasury-transparency-7-2026.xml"
+  ],
+  "live_verification_evidence": {
+    "status": "PASS",
+    "source_merge_sha": "5939ed3badad20193a4aba05ca62047d6bc6ff89",
+    "exact_resource_matches": "13/13",
+    "human_readable_routes_http_200": "8/8",
+    "method": "Cache-busted HTTP readback with SHA-256 comparison to the exact merge tree"
+  },
   "validation": {
-    "local": "PENDING",
-    "pull_request_checks": "PENDING",
-    "pages": "PENDING",
-    "live_readback": "PENDING"
+    "local": "PASS",
+    "pull_request_checks": "48_SUCCESS_1_CONDITIONAL_SKIP_0_FAILURE",
+    "pages": "EXACT_MERGE_RUN_33341536674_COMPLETED_SUCCESS",
+    "live_readback": "PASS_13_OF_13_EXACT_RESOURCE_MATCHES_AND_8_OF_8_ROUTES_HTTP_200",
+    "exact_merge_workflow_boundary": "56 completed runs: 49 success and 7 failures in inherited live monitors over unchanged or stale specialist controls; no publication-specific gate failed and no all-green claim is made.",
+    "evidence": [
+      "Treasury-specific, Canary public-debt, Master Proceedings, preservation, publication-integrity, audience, privacy, digest, unitary-control and interconnectivity validations passed locally.",
+      "PR #1247 completed with 48 successful runs, one conditional skip and no failures.",
+      "Pages run 33341536674 / #1312 completed successfully on the exact merge SHA.",
+      "Post-Pages cache-busted readback matched 13 of 13 changed public resources exactly and returned HTTP 200 for 8 of 8 affected human-readable routes."
+    ]
   }
 }

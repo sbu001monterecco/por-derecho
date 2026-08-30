@@ -8,6 +8,8 @@
 
 **Public routes:** `/es/tesoro-transparencia-7-2026-28agosto/` and `/en/treasury-transparency-7-2026-28-august/`
 
+**Publication evidence:** content PR [#1247](https://github.com/sbu001monterecco/por-derecho/pull/1247), merge `5939ed3badad20193a4aba05ca62047d6bc6ff89`, Pages run [33341536674 / #1312](https://github.com/sbu001monterecco/por-derecho/actions/runs/33341536674) completed/success; live readback passed 13/13 exact public-resource matches and 8/8 affected routes with HTTP 200.
+
 This record supersedes the earlier provisional wording that the notified act and shared file still awaited review. The signed implementation act and the first eight-file, 734-page production tranche have now been reviewed. The later production expressly promised under Resolution 154/2026 remains open under `ME-110`.
 
 ## 1. Controlling procedural position
