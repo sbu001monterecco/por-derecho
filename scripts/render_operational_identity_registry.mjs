@@ -78,11 +78,11 @@ try {
         if (!(value > 0)) throw new Error(`${url}: ${queue} queue is empty`);
         queueCounts[queue] = value;
       }
-      if (queueCounts.unresolved !== 15) throw new Error(`${url}: expected 15 unresolved identities, found ${queueCounts.unresolved}`);
+      if (queueCounts.unresolved !== 16) throw new Error(`${url}: expected 16 unresolved identities, found ${queueCounts.unresolved}`);
 
       await page.locator('[data-operational-filter="UNRESOLVED"]').click();
       const unresolvedRows = await page.locator('tbody[data-registry-body] tr[data-identity-id]').count();
-      if (unresolvedRows !== 15) throw new Error(`${url}: unresolved filter rendered ${unresolvedRows}, expected 15`);
+      if (unresolvedRows !== 16) throw new Error(`${url}: unresolved filter rendered ${unresolvedRows}, expected 16`);
 
       await page.locator('[data-operational-filter="P0"]').click();
       const p0Rows = await page.locator('tbody[data-registry-body] tr[data-identity-id]').count();
