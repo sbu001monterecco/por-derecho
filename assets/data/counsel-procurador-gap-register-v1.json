@@ -13,41 +13,44 @@
     {
       "gap_id": "CP-GAP-001",
       "gap_type": "professional_identity_spelling",
-      "professional": "Cristro Suarez Pimentel",
+      "professional": "Cristo Ayose Suárez Pimentel",
+      "aliases": [
+        "Cristro Suarez Pimentel"
+      ],
       "proceeding_id": null,
-      "what_missing": "Primary-source confirmation of the exact canonical professional name/spelling and dated representation details.",
-      "why_it_matters": "The user-supplied spelling must be preserved without silently normalising or attaching another person's record; the former-counsel filing register must be source-accurate.",
-      "existence_evidence_ref": "user_instruction_2026-08-30",
-      "likely_source": "signed pleadings, engagement correspondence, LexNET material, court notifications, invoices or poderes",
-      "search_performed": "Seed governance reconciliation only; complete primary-document corpus scan not yet completed.",
-      "next_retrieval_route": "Search connected proceedings, Gmail, Google Drive, File Library and repository by spelling variants and contextual client/proceeding references.",
-      "status": "OPEN"
+      "what_missing": "Canonical-name gap is resolved. Historic proceeding-by-proceeding representation, filing lineage and independent colegio verification remain to be populated separately.",
+      "why_it_matters": "The user-supplied spelling must remain preserved as provenance while the source-backed canonical identity is used prospectively.",
+      "existence_evidence_ref": "29-Jun-2017 correspondence from Cristo Ayose Suárez Pimentel; 2026 ICATF correspondence asserting colegiado 4968",
+      "likely_source": "signed pleadings, engagement correspondence, LexNET material, court notifications, invoices, poderes and colegio records",
+      "search_performed": "Exact-name Gmail reconciliation located source-backed canonical spelling; user-supplied form preserved as alias.",
+      "next_retrieval_route": "Populate historic filing/representation lineage and independently verify professional-college detail where material.",
+      "status": "RESOLVED_VERIFIED"
     },
     {
       "gap_id": "CP-GAP-002",
       "gap_type": "professional_identity",
-      "professional": "Javier",
-      "proceeding_id": null,
-      "what_missing": "Primary-source lock of complete canonical identity, firm/practice relationship, dated client capacity and filing attribution.",
+      "professional": "Javier Sixto Seijas",
+      "proceeding_id": "RPL 3304/2025",
+      "what_missing": "Canonical identity is resolved from primary procedural material. Complete proceeding-wide filing denominator and all dated client capacities remain open beyond the two promoted RPL filings.",
       "why_it_matters": "Javier's acts must remain individually attributable even where he works as a professional pair with Estefanía.",
-      "existence_evidence_ref": "user_instruction_2026-08-30",
+      "existence_evidence_ref": "ES07 - 11 - Alegaciones R_Reposicion AC - LPB.pdf; ES07 - 11 - Alegaciones R_Reposicion AC - AW.pdf",
       "likely_source": "signed pleadings, correspondence, LexNET, engagement material and court notifications",
-      "search_performed": "Repository name search did not return a usable primary-source record in this implementation pass.",
-      "next_retrieval_route": "Search connected mail/file/document corpus and exact proceeding filings.",
-      "status": "OPEN"
+      "search_performed": "Primary pleading and LexNET reconciliation identifies Javier Sixto Seijas, ICAM colegiado 99.513, and two RPL 3304/2025 filing lineages.",
+      "next_retrieval_route": "Continue lawyer-by-lawyer reverse engineering across all connected proceedings and decisions.",
+      "status": "RESOLVED_VERIFIED"
     },
     {
       "gap_id": "CP-GAP-003",
-      "gap_type": "professional_identity",
-      "professional": "Estefanía",
+      "gap_type": "professional_identity_and_individual_filing_attribution",
+      "professional": "Estefanía Sixto Seijas",
       "proceeding_id": null,
-      "what_missing": "Primary-source lock of complete canonical identity, firm/practice relationship, dated client capacity and filing attribution.",
-      "why_it_matters": "Estefanía's acts must remain individually attributable even where she works as a professional pair with Javier.",
-      "existence_evidence_ref": "user_instruction_2026-08-30",
-      "likely_source": "signed pleadings, correspondence, LexNET, engagement material and court notifications",
-      "search_performed": "Repository name search did not return a usable primary-source record in this implementation pass.",
-      "next_retrieval_route": "Search connected mail/file/document corpus and exact proceeding filings.",
-      "status": "OPEN"
+      "what_missing": "Full name is resolved from current professional correspondence, but individual signed/filed pleading attribution, professional-college detail and proceeding-period personación remain unpromoted pending primary procedural proof.",
+      "why_it_matters": "Estefanía's acts must remain individually attributable and must not inherit Javier's filings merely from their working relationship.",
+      "existence_evidence_ref": "current Javier Sixto / Estefanía Sixto Seijas professional correspondence",
+      "likely_source": "signed pleadings, LexNET, engagement material, court notifications, poderes and personación documents",
+      "search_performed": "Current correspondence establishes the full name and team relationship; no individual filing has been promoted without direct attribution.",
+      "next_retrieval_route": "Search exact proceeding filings, signatures, LexNET receipts and personación documents for Estefanía Sixto Seijas.",
+      "status": "SOURCE_LOCATED_REVIEW_PENDING"
     },
     {
       "gap_id": "CP-GAP-004",
@@ -58,7 +61,7 @@
       "why_it_matters": "A filing-lineage register cannot be treated as complete while procurador representation is silently absent.",
       "existence_evidence_ref": "governance_requirement_2026-08-30",
       "likely_source": "pleadings, LexNET receipts, poderes, apud acta, notifications and judicial/LAJ acts",
-      "search_performed": "Master register initialized; no completeness claim made.",
+      "search_performed": "Three procuradoras are now promoted from primary procedural material: María del Pilar García Coello, María Luisa Díaz Vecino and Adriana Hernández Díaz. This is a verified minimum, not a denominator.",
       "next_retrieval_route": "Proceeding-by-proceeding source scan beginning with Concurso 36/2012 and its piezas/incidentes, then connected appeals and ancillary proceedings.",
       "status": "OPEN"
     },
@@ -68,11 +71,37 @@
       "professional": null,
       "proceeding_id": "ALL_CONNECTED_PROCEEDINGS",
       "what_missing": "Complete source-verified filing denominator linked lawyer-by-lawyer to procurador, party, authority, court/LAJ response, appeal and timeline.",
-      "why_it_matters": "The initialized seed professionals are not the complete denominator and empty filing arrays must never be read as proof that no filings exist.",
+      "why_it_matters": "Two verified RPL filings do not establish the complete lawyer or filing denominator and empty arrays must never be read as proof that no filings exist.",
       "existence_evidence_ref": "governance_requirement_2026-08-30",
       "likely_source": "repository, judicial corpus, LexNET, Gmail, Google Drive, File Library and court/institutional originals",
-      "search_performed": "Governance and schema installation pass only; complete corpus ingestion remains open.",
+      "search_performed": "Two Javier Sixto Seijas RPL 3304/2025 filing lineages have been promoted; global corpus ingestion remains open.",
       "next_retrieval_route": "Reverse-engineer each located decision to its input filings and build professional-specific chronological registers.",
+      "status": "OPEN"
+    },
+    {
+      "gap_id": "CP-GAP-006",
+      "gap_type": "procurador_lawyer_pairing_and_authority",
+      "professional": "Adriana Hernández Díaz",
+      "proceeding_id": "ETJ 163/2020",
+      "what_missing": "The located LexNET source establishes procuradora identity, Matkator party and proceeding, but this pass does not promote a lawyer pairing or underlying poder/personación/apud-acta instrument without direct source proof.",
+      "why_it_matters": "Representation lineage must not infer a lawyer-procuradora pairing or authority instrument merely from contextual knowledge.",
+      "existence_evidence_ref": "2020_0000163_ETJ_120261089839210420260710130302_000_RESUMEN.pdf",
+      "likely_source": "signed pleading, LexNET full receipt, poder, apud acta, personación, notification or court act",
+      "search_performed": "Primary LexNET summary reviewed; identity/party/proceeding promoted, pairing held open.",
+      "next_retrieval_route": "Locate the corresponding signed filing and representation instrument for ETJ 163/2020.",
+      "status": "OPEN"
+    },
+    {
+      "gap_id": "CP-GAP-007",
+      "gap_type": "authority_personacion_instruments",
+      "professional": null,
+      "proceeding_id": "RPL 3304/2025",
+      "what_missing": "Underlying poder, apud acta or personación instruments for the promoted RPL procuradora representations have not yet been separately linked, even though the located pleadings state/manifest representation and LexNET receipts establish presentation.",
+      "why_it_matters": "Filing presentation and stated representation should remain distinct from independent proof of the underlying authority instrument.",
+      "existence_evidence_ref": "RPL 3304/2025 LPB and Aweswell pleading/receipt pairs",
+      "likely_source": "poder, apud acta, personación, court acceptance, LexNET case file or judicial notification",
+      "search_performed": "Pleading and receipt pairs reconciled; separate authority instrument not promoted in this pass.",
+      "next_retrieval_route": "Scan RPL 3304/2025 and originating proceeding records for poder/apud-acta/personación evidence and link it bidirectionally.",
       "status": "OPEN"
     }
   ]
