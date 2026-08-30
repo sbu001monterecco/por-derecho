@@ -1,6 +1,6 @@
 # Counsel / Procurador Filing-Lineage Governance — 30 Aug 2026
 
-Status: **CONTROLLING ADDITIVE GOVERNANCE FOR FUTURE COUNSEL / FILING DIGESTS**
+Status: **CONTROLLING ADDITIVE GOVERNANCE FOR FUTURE COUNSEL / FILING DIGESTS — OPERATIONAL GATE INSTALLED**
 
 This control corrects the professional perimeter and requires all future proceedings work to distinguish the user's/project-side current and former counsel from opposing, dissident, external and otherwise non-project-side professionals. Appearance in the same proceeding is never enough to classify a lawyer as part of the project-side counsel perimeter.
 
@@ -153,6 +153,22 @@ Preserve documented facts, attributed allegations, inference, contrary evidence 
 
 This seed table is not the denominator of all lawyers. The complete denominator must be derived by scanning the full connected proceeding/document/email corpus.
 
-## 13. Continuity statement
+## 13. Operational implementation — controlling paths
+
+The following controls are now the canonical implementation layer and must be maintained together:
+
+- `assets/data/counsel-procurador-perimeter-register-v1.json` — controlled side/perimeter seed and anti-misclassification rules;
+- `assets/data/counsel-filing-register-v1.json` — dedicated per-professional chronological filing registers and filing-lineage schema;
+- `assets/data/procurador-master-register-v1.json` — master procurador/procuradora register;
+- `assets/data/counsel-procurador-gap-register-v1.json` — unresolved identity, denominator, authority, filing and representation gaps;
+- `archive/PROCEEDINGS_MASTER_REGISTER_PROTOCOL.md` — mandatory repository-wide proceedings router containing the `COUNSEL_PROCURADOR_GOVERNANCE_GATE`;
+- `scripts/audit_counsel_procurador_governance.py` — deterministic drift/deletion validator; and
+- `.github/workflows/audit-counsel-procurador-governance.yml` — CI gate on relevant pull requests and pushes to `main`.
+
+The initialized filing and procurador registers deliberately do **not** claim denominator completeness. Empty filing arrays and the current empty procurador list are placeholders for source-led population, not negative evidence.
+
+Any future corpus-ingestion pass that discovers a lawyer, procurador/a, poder/personación, filing, notification, court/LAJ response, appeal or representation change must update the relevant operational register or create an explicit gap before the pass is called complete.
+
+## 14. Continuity statement
 
 **Counsel/procurador filing-lineage governance is persistent. Future work must keep our current/former counsel separate from external/opposing/dissident-side professionals; maintain individual filing registers; identify and interlink every procurador/a; and connect professional representation to the procedural timeline without transferring roles by association.**

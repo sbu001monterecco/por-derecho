@@ -1,0 +1,79 @@
+{
+  "schema": "por-derecho-counsel-procurador-gap-register-v1",
+  "as_of": "2026-08-30",
+  "status": "active",
+  "governance": "archive/COUNSEL_PROCURADOR_FILING_LINEAGE_GOVERNANCE_30AUG2026.md",
+  "allowed_statuses": [
+    "OPEN",
+    "SOURCE_LOCATED_REVIEW_PENDING",
+    "RESOLVED_VERIFIED",
+    "SUPERSEDED_WITH_PROVENANCE"
+  ],
+  "gaps": [
+    {
+      "gap_id": "CP-GAP-001",
+      "gap_type": "professional_identity_spelling",
+      "professional": "Cristro Suarez Pimentel",
+      "proceeding_id": null,
+      "what_missing": "Primary-source confirmation of the exact canonical professional name/spelling and dated representation details.",
+      "why_it_matters": "The user-supplied spelling must be preserved without silently normalising or attaching another person's record; the former-counsel filing register must be source-accurate.",
+      "existence_evidence_ref": "user_instruction_2026-08-30",
+      "likely_source": "signed pleadings, engagement correspondence, LexNET material, court notifications, invoices or poderes",
+      "search_performed": "Seed governance reconciliation only; complete primary-document corpus scan not yet completed.",
+      "next_retrieval_route": "Search connected proceedings, Gmail, Google Drive, File Library and repository by spelling variants and contextual client/proceeding references.",
+      "status": "OPEN"
+    },
+    {
+      "gap_id": "CP-GAP-002",
+      "gap_type": "professional_identity",
+      "professional": "Javier",
+      "proceeding_id": null,
+      "what_missing": "Primary-source lock of complete canonical identity, firm/practice relationship, dated client capacity and filing attribution.",
+      "why_it_matters": "Javier's acts must remain individually attributable even where he works as a professional pair with Estefanía.",
+      "existence_evidence_ref": "user_instruction_2026-08-30",
+      "likely_source": "signed pleadings, correspondence, LexNET, engagement material and court notifications",
+      "search_performed": "Repository name search did not return a usable primary-source record in this implementation pass.",
+      "next_retrieval_route": "Search connected mail/file/document corpus and exact proceeding filings.",
+      "status": "OPEN"
+    },
+    {
+      "gap_id": "CP-GAP-003",
+      "gap_type": "professional_identity",
+      "professional": "Estefanía",
+      "proceeding_id": null,
+      "what_missing": "Primary-source lock of complete canonical identity, firm/practice relationship, dated client capacity and filing attribution.",
+      "why_it_matters": "Estefanía's acts must remain individually attributable even where she works as a professional pair with Javier.",
+      "existence_evidence_ref": "user_instruction_2026-08-30",
+      "likely_source": "signed pleadings, correspondence, LexNET, engagement material and court notifications",
+      "search_performed": "Repository name search did not return a usable primary-source record in this implementation pass.",
+      "next_retrieval_route": "Search connected mail/file/document corpus and exact proceeding filings.",
+      "status": "OPEN"
+    },
+    {
+      "gap_id": "CP-GAP-004",
+      "gap_type": "procurador_denominator",
+      "professional": null,
+      "proceeding_id": "ALL_CONNECTED_PROCEEDINGS",
+      "what_missing": "Complete source-verified denominator of every procurador/procuradora, their party, paired lawyer, authority/personación and proceeding-period lineage.",
+      "why_it_matters": "A filing-lineage register cannot be treated as complete while procurador representation is silently absent.",
+      "existence_evidence_ref": "governance_requirement_2026-08-30",
+      "likely_source": "pleadings, LexNET receipts, poderes, apud acta, notifications and judicial/LAJ acts",
+      "search_performed": "Master register initialized; no completeness claim made.",
+      "next_retrieval_route": "Proceeding-by-proceeding source scan beginning with Concurso 36/2012 and its piezas/incidentes, then connected appeals and ancillary proceedings.",
+      "status": "OPEN"
+    },
+    {
+      "gap_id": "CP-GAP-005",
+      "gap_type": "filing_denominator",
+      "professional": null,
+      "proceeding_id": "ALL_CONNECTED_PROCEEDINGS",
+      "what_missing": "Complete source-verified filing denominator linked lawyer-by-lawyer to procurador, party, authority, court/LAJ response, appeal and timeline.",
+      "why_it_matters": "The initialized seed professionals are not the complete denominator and empty filing arrays must never be read as proof that no filings exist.",
+      "existence_evidence_ref": "governance_requirement_2026-08-30",
+      "likely_source": "repository, judicial corpus, LexNET, Gmail, Google Drive, File Library and court/institutional originals",
+      "search_performed": "Governance and schema installation pass only; complete corpus ingestion remains open.",
+      "next_retrieval_route": "Reverse-engineer each located decision to its input filings and build professional-specific chronological registers.",
+      "status": "OPEN"
+    }
+  ]
+}

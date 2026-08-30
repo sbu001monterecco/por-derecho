@@ -1,0 +1,35 @@
+{
+  "schema": "por-derecho-procurador-master-register-v1",
+  "as_of": "2026-08-30",
+  "status": "initialized_denominator_not_yet_established",
+  "governance": "archive/COUNSEL_PROCURADOR_FILING_LINEAGE_GOVERNANCE_30AUG2026.md",
+  "filing_register": "assets/data/counsel-filing-register-v1.json",
+  "gap_register": "assets/data/counsel-procurador-gap-register-v1.json",
+  "population_rule": "Identify every procurador/procuradora from primary procedural material and pair them by represented party, lawyer, proceeding and period. Never infer a permanent lawyer-procurador pairing.",
+  "required_fields": [
+    "procurador_id",
+    "canonical_name",
+    "name_source_ref",
+    "colegio_professional_detail",
+    "represented_party",
+    "lawyer_pairings",
+    "proceeding_id",
+    "pieza_incidente",
+    "first_located_appearance",
+    "last_located_appearance",
+    "personacion_poder_apud_acta_refs",
+    "filing_refs",
+    "notification_refs",
+    "substitution_termination_refs",
+    "timeline_event_refs",
+    "source_confidence",
+    "verification_status"
+  ],
+  "procuradores": [],
+  "denominator_status": {
+    "complete": false,
+    "known_count": 0,
+    "meaning_of_zero": "No procurador name is promoted into this register until recovered and verified from the procedural corpus. Zero here is not evidence that no procuradores acted.",
+    "next_action": "Scan pleadings, LexNET receipts, poderes, apud acta, notifications, autos, providencias, diligencias, decretos and appeals across every connected proceeding."
+  }
+}

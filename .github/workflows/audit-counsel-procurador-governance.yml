@@ -1,0 +1,41 @@
+name: Audit counsel/procurador governance
+
+on:
+  pull_request:
+    paths:
+      - 'archive/COUNSEL_PROCURADOR_FILING_LINEAGE_GOVERNANCE_30AUG2026.md'
+      - 'archive/PROCEEDINGS_MASTER_REGISTER_PROTOCOL.md'
+      - 'assets/data/counsel-procurador-perimeter-register-v1.json'
+      - 'assets/data/counsel-filing-register-v1.json'
+      - 'assets/data/procurador-master-register-v1.json'
+      - 'assets/data/counsel-procurador-gap-register-v1.json'
+      - 'scripts/audit_counsel_procurador_governance.py'
+      - '.github/workflows/audit-counsel-procurador-governance.yml'
+  push:
+    branches:
+      - main
+    paths:
+      - 'archive/COUNSEL_PROCURADOR_FILING_LINEAGE_GOVERNANCE_30AUG2026.md'
+      - 'archive/PROCEEDINGS_MASTER_REGISTER_PROTOCOL.md'
+      - 'assets/data/counsel-procurador-perimeter-register-v1.json'
+      - 'assets/data/counsel-filing-register-v1.json'
+      - 'assets/data/procurador-master-register-v1.json'
+      - 'assets/data/counsel-procurador-gap-register-v1.json'
+      - 'scripts/audit_counsel_procurador_governance.py'
+      - '.github/workflows/audit-counsel-procurador-governance.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  counsel-procurador-governance:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Run governance audit
+        run: python scripts/audit_counsel_procurador_governance.py

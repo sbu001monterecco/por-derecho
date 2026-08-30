@@ -1,0 +1,99 @@
+{
+  "schema": "por-derecho-counsel-filing-register-v1",
+  "as_of": "2026-08-30",
+  "status": "initialized_not_complete_denominator",
+  "governance": "archive/COUNSEL_PROCURADOR_FILING_LINEAGE_GOVERNANCE_30AUG2026.md",
+  "proceedings_protocol": "archive/PROCEEDINGS_MASTER_REGISTER_PROTOCOL.md",
+  "perimeter_control": "assets/data/counsel-procurador-perimeter-register-v1.json",
+  "procurador_register": "assets/data/procurador-master-register-v1.json",
+  "gap_register": "assets/data/counsel-procurador-gap-register-v1.json",
+  "completion_rule": "A proceeding or professional filing digest is not complete until party, lawyer, perimeter, procurador status, authority/personacion status, proceeding/pieza, filing, court/LAJ response, appeal/follow-up and timeline linkage are populated or explicitly recorded as evidenced gaps.",
+  "required_filing_fields": [
+    "filing_id",
+    "lawyer",
+    "side_perimeter",
+    "client_party",
+    "procurador",
+    "procurador_status",
+    "authority_personacion_status",
+    "proceeding_id",
+    "pieza_incidente",
+    "court_body",
+    "filing_date",
+    "presentation_datetime",
+    "filing_title",
+    "document_ref",
+    "position_relief",
+    "evidence_refs",
+    "court_laj_response_ref",
+    "court_laj_response_status",
+    "result",
+    "appeal_followup_ref",
+    "appeal_followup_status",
+    "timeline_event_ref",
+    "source_confidence",
+    "verification_status"
+  ],
+  "professional_registers": [
+    {
+      "display_name": "Juan Carlos Roque Prieto",
+      "side_perimeter": "external_opposing_dissident_side",
+      "our_perimeter": false,
+      "register_status": "initialized_primary_source_population_required",
+      "filings": []
+    },
+    {
+      "display_name": "Esteban Noriega",
+      "side_perimeter": "external_opposing_dissident_side",
+      "our_perimeter": false,
+      "register_status": "initialized_primary_source_population_required",
+      "filings": []
+    },
+    {
+      "display_name": "Álvaro Campanario",
+      "side_perimeter": "external_opposing_dissident_side",
+      "our_perimeter": false,
+      "register_status": "initialized_primary_source_population_required",
+      "filings": []
+    },
+    {
+      "display_name": "Cristro Suarez Pimentel",
+      "side_perimeter": "our_former_counsel",
+      "our_perimeter": true,
+      "register_status": "initialized_name_and_filing_population_require_primary_source_verification",
+      "filings": []
+    },
+    {
+      "display_name": "Juan Tomás Parrilla Suárez",
+      "side_perimeter": "our_counsel_individual_professional",
+      "our_perimeter": true,
+      "firm_attribution_rule": "independent_from_Garrigues_no_fusion_absent_specific_dated_primary_source",
+      "register_status": "initialized_primary_source_population_required",
+      "filings": []
+    },
+    {
+      "display_name": "Javier",
+      "side_perimeter": "our_counsel",
+      "our_perimeter": true,
+      "working_relationship": "professional_pair_with_Estefania",
+      "identity_status": "complete_canonical_identity_requires_primary_source_verification",
+      "register_status": "initialized_primary_source_population_required",
+      "filings": []
+    },
+    {
+      "display_name": "Estefanía",
+      "side_perimeter": "our_counsel",
+      "our_perimeter": true,
+      "working_relationship": "professional_pair_with_Javier",
+      "identity_status": "complete_canonical_identity_requires_primary_source_verification",
+      "register_status": "initialized_primary_source_population_required",
+      "filings": []
+    }
+  ],
+  "global_scan_status": {
+    "complete_lawyer_denominator": false,
+    "complete_filing_denominator": false,
+    "complete_procurador_denominator": false,
+    "reason": "The seed governance has been initialized; full primary-source corpus ingestion and reconciliation remains required before denominator completeness can be claimed."
+  }
+}
