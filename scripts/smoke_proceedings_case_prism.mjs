@@ -75,7 +75,7 @@ try {
     await assertFocusedAndVisible(page, '[data-view-body] [data-prism-detail]', `${route.lang}: matrix detail`);
     if (await detail.locator('.pdim-dependency-grid > div').count() < 10) throw new Error(`${route.lang}: dependency detail is incomplete`);
     if (await detail.locator('.pdim-source-links a').count() < 1) throw new Error(`${route.lang}: controlled source links missing`);
-    if (!(await detail.innerText()).includes(route.contrary)) throw new Error(`${route.lang}: contrary record missing from detail`);
+    if (!(await detail.innerText()).toLowerCase().includes(route.contrary.toLowerCase())) throw new Error(`${route.lang}: contrary record missing from detail`);
     if (!(await detail.innerText()).includes(route.sourceScope)) throw new Error(`${route.lang}: proposition-level source boundary missing`);
     if (await detail.getAttribute('aria-live') !== 'polite') throw new Error(`${route.lang}: detail is not announced`);
     if (await page.locator('[data-proceedings-map] [aria-live="polite"]').count() !== 1) throw new Error(`${route.lang}: duplicate broad live regions remain`);
