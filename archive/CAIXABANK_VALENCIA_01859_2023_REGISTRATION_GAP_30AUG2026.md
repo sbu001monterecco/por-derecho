@@ -1,8 +1,8 @@
-# CAIXABANK / VALENCIA ORD 1859/2023-9 — MASTER-REGISTER GAP CONTROL
+# CAIXABANK / VALENCIA ORD 1859/2023-9 — MASTER-REGISTER RECONCILIATION CONTROL
 
 **Date:** 30 August 2026  
-**Status:** exact proceeding identity/status VERIFIED; canonical Proceedings Master Register row still missing  
-**Durable gap key:** `GAP-VAL-CAIXABANK-01859-2023`
+**Status:** exact proceeding identity/status VERIFIED; existing canonical row `VAL-CIV-001` requires field consolidation  
+**Durable correction key:** `GAP-VAL-CAIXABANK-01859-2023`
 
 ## 1. Exact controlled identity — verified
 
@@ -15,41 +15,57 @@ The repository's source-controlled public CaixaBank/Valencia dossier records, fr
 - **current hearing:** **28 January 2027 at 10:00**;
 - **status:** pending and contested; no merits judgment or adjudicated recovery located in the controlled public record.
 
-The same dossier records that the hearing originally listed for 6 November 2025 at 10:00 did not proceed after the opposing expert reported a cancelled flight the evening before, and that the signed 6 November 2025 diligence relisted it for 28 January 2027 at 10:00.
+Canonical public sources:
 
-Canonical public source:
+- `en/caixabank-valencia-claim/index.html`
+- `es/reclamacion-caixabank-valencia/index.html`
 
-`en/caixabank-valencia-claim/index.html`
+The earlier correspondence-only formulation (`01859/2023`, January 2027 day not primary-confirmed) is superseded for identity and scheduling by the signed-diligence-derived controlled record.
 
-Spanish counterpart:
+## 2. Rerun correction — the proceeding was already registered
 
-`es/reclamacion-caixabank-valencia/index.html`
+A 30 August 2026 unitary rerun of the complete canonical CSV located this existing row:
 
-The earlier correspondence-only formulation (`01859/2023`, January 2027 day not yet primary-confirmed) is superseded for identity and scheduling by this signed-diligence-derived controlled record.
+`VAL-CIV-001,,JUDICIAL_PROCEEDING,TRUE,CONTEXTUAL,Civil,Valencia,JPI nº 27 Valencia,JPI nº 27 Valencia,Procedimiento 1859/2023,...`
 
-## 2. What remains a gap
+The exact court and proceeding number establish that `VAL-CIV-001` is the already-existing master identity for this litigation. Therefore the earlier statement that the CSV contained no row for the Valencia proceeding was incorrect and is superseded.
 
-The remaining defect is **registration**, not identity.
+There is **no basis to create a second Valencia master identity** for the same proceeding merely because the existing row is incomplete.
 
-The canonical `archive/PROCEEDINGS_MASTER_REGISTER.csv` does not presently expose a row for this exact `ORD 1859/2023-9 / JPI nº27 Valencia / NIG 46250-42-1-2023-0049579 / Aweswell–CaixaBank` proceeding in the located master inventory.
+## 3. What remains a gap
 
-The existing generic Valencia row `ES-VAL-CIV-048` is described differently and must **not** be silently treated as the same proceeding.
+The remaining defect is **field completeness / canonical consolidation**, not registration or identity.
+
+`VAL-CIV-001` must be treated as having these controlling corrected fields until the physical CSV row is consolidated:
+
+- `Proceeding_Class`: `DIRECT`
+- `Stream`: `Civil / banking / financial products`
+- `Reference`: `ORD 1859/2023-9`
+- `Secondary_Reference`: `Aweswell Limited v CAIXABANK, S.A.`
+- `NIG`: `46250-42-1-2023-0049579`
+- `Date_or_Period`: `2023–2027`
+- `Connection`: `historic banking / financial-product package; Bankia enforcement; Arrecife Mortgage Enforcement 90/2012; Concurso 36/2012; hotel-asset economic history`
+- `Object_or_Purpose`: `Nullity/restitution and subsidiary damages concerning the mortgage/floor/swap/refinancing/pledge/account/enforcement package, as described in the controlled public dossier`
+- `Status`: `Pending and contested`
+- `Latest_Known_Event`: `Signed court diligence dated 6 Nov 2025 relisted hearing for 28 Jan 2027 at 10:00`
+- `Source_Status`: `VERIFIED_PRIMARY_DERIVED_PUBLIC_CONTROL`
+- `Repo_Canonical_Source`: `en/caixabank-valencia-claim/index.html` / `es/reclamacion-caixabank-valencia/index.html`
+- `Open_Reference_Gap`: `Physical CSV field consolidation; native/certified completion remains separately tracked in the Valencia dossier`
+- `Public_Treatment`: `PUBLIC_CONTROLLED`
 
 Operational status:
 
-**PARTIALLY VERIFIED / GAP FOUND — exact proceeding identity, NIG, court and hearing are verified; canonical master-row registration remains unresolved.**
+**PARTIALLY VERIFIED / REPAIR CONTROL ACTIVE — canonical identity is `VAL-CIV-001`; source-level identity, NIG, court and hearing are verified; the physical CSV fields remain stale until consolidated.**
 
-## 3. Controlling master-row overlay pending safe CSV insertion
+## 4. Controlling correction overlay
 
-Until the canonical CSV is safely rewritten, apply:
+Until the physical CSV row is safely consolidated, apply:
 
 `archive/PROCEEDINGS_MASTER_REGISTER_VALENCIA_1859_2023_OVERLAY_30AUG2026.md`
 
-That overlay supplies the exact source-controlled identity and prevents the missing CSV row from causing future threads or public interconnectivity work to lose the proceeding.
+That file is now a **correction overlay for existing row `VAL-CIV-001`**, not a missing-row/new-ID overlay.
 
-The overlay is not permission to reuse an occupied Master ID or to invent a parent/child relation. A new permanent Master ID must be allocated under the Proceedings Master Register protocol when the CSV is physically updated.
-
-## 4. Unitary convergence — verified as a material analytical bridge
+## 5. Unitary convergence — verified as a material analytical bridge
 
 The public dossier itself cross-reconciles the banking claim with:
 
@@ -61,26 +77,26 @@ The public dossier itself cross-reconciles the banking claim with:
 - the Administrador Concursal witness-origin chronology; and
 - calificación/recovery analysis.
 
-The public-safe bridge is therefore stronger than a generic contextual similarity:
+Public-safe wording:
 
-> **Separate Valencia proceeding; directly relevant to the historic banking/financial-product package, enforcement chronology and the underlying economic history that intersects with Concurso 36/2012 and the hotel assets.**
+> **Separate Valencia proceeding; directly relevant to the historic banking/financial-product package, enforcement chronology and the underlying economic history that intersects with Concurso 36/2012 and the hotel assets. Canonical identity: `VAL-CIV-001`; physical CSV field consolidation remains open.**
 
 This does **not** mean the Valencia court has adopted Por Derecho's insolvency, criminal, causation or liability allegations.
 
-## 5. Private-source boundary
+## 6. Private-source boundary
 
 Separate professional correspondence may show additional strategic recognition of the Valencia–concursal relationship. Private or privileged strategy is not needed to establish the public bridge and must not be automatically published.
 
-## 6. Non-conflation rule
+## 7. Non-duplication rule
 
-Until the master CSV is physically reconciled:
+Until the physical CSV row is consolidated:
 
-- do not assign `ORD 1859/2023-9` to `ES-VAL-CIV-048`;
-- do not renumber or overwrite `ES-VAL-CIV-048`;
-- do not claim the canonical Proceedings Master Register is denominator-complete for Valencia;
-- preserve `GAP-VAL-CAIXABANK-01859-2023`; and
-- use the controlling overlay whenever repository-wide proceedings analysis is performed.
+- do not create a second master row for `ORD 1859/2023-9`;
+- preserve `VAL-CIV-001` as the canonical identity;
+- preserve this correction key and the overlay as the provenance trail;
+- do not claim the current raw CSV fields are fully current; and
+- use the controlling correction overlay whenever repository-wide proceedings analysis is performed.
 
-## 7. Closure condition
+## 8. Closure condition
 
-The remaining gap closes only when an exact canonical master row is committed with a unique Master ID, the public register/map propagation is verified, and the overlay records that its temporary control has been retired without loss of provenance.
+This reconciliation control closes when the physical `VAL-CIV-001` CSV row is updated with the verified fields above, the public Master Proceedings Register and Proceedings Interconnectivity Map are checked for propagation, and the overlay records retirement without loss of provenance.

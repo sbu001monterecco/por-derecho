@@ -52,7 +52,7 @@ For the fees/remuneration track ask: can remuneration be treated as wholly detac
 
 These are cross-reading questions. They are not findings that one appeal controls another, not a request for procedural joinder and not proof of misconduct.
 
-## 4. CaixaBank / Valencia — exact identity verified; master registration remains open
+## 4. CaixaBank / Valencia — exact identity verified; canonical row `VAL-CIV-001`
 
 The source-controlled public CaixaBank/Valencia dossier records the live proceeding from a signed court diligence dated 6 November 2025 as:
 
@@ -63,20 +63,20 @@ The source-controlled public CaixaBank/Valencia dossier records the live proceed
 - **current hearing:** **28 January 2027 at 10:00**; and
 - **status:** pending and contested; no merits judgment or adjudicated recovery located in the controlled public record.
 
-The signed diligence relisted a hearing that had been set for 6 November 2025 at 10:00. The exact identity, NIG and current hearing are therefore **verified at the controlled source level**.
+A unitary rerun of the complete canonical CSV on 30 August 2026 located the already-existing master row `VAL-CIV-001`, which records the same court and `Procedimiento 1859/2023`. The exact court/reference match establishes that this is the same litigation. The earlier inference that the Master Register lacked the proceeding entirely is superseded.
 
-What remains unresolved is the canonical Proceedings Master Register row. The current CSV does not expose this exact proceeding in the located inventory. It must not be silently equated with generic row `ES-VAL-CIV-048`.
-
-Controlling gap and overlay:
+What remains open is **physical field consolidation**, not identity or registration. Until the raw CSV row is consolidated, read `VAL-CIV-001` together with:
 
 - `archive/CAIXABANK_VALENCIA_01859_2023_REGISTRATION_GAP_30AUG2026.md`
 - `archive/PROCEEDINGS_MASTER_REGISTER_VALENCIA_1859_2023_OVERLAY_30AUG2026.md`
+
+The correction overlay supplies the complete reference, parties, NIG, hearing, public treatment and materially relevant banking/insolvency connection. No second Valencia Master ID is to be created.
 
 The public dossier itself establishes the material convergence by tracing the banking/financial-product package through Bankia enforcement, Arrecife Mortgage Enforcement 90/2012, Concurso 36/2012, the later mortgage-asset lane, the Administrador Concursal witness-origin chronology and calificación/recovery analysis.
 
 Public treatment should therefore state:
 
-> **Separate Valencia proceeding; directly relevant to the historic banking/financial-product package, enforcement chronology and the underlying economic history that intersects with Concurso 36/2012 and the hotel assets. Canonical master-register insertion remains open.**
+> **Separate Valencia proceeding; directly relevant to the historic banking/financial-product package, enforcement chronology and the underlying economic history that intersects with Concurso 36/2012 and the hotel assets. Canonical identity: `VAL-CIV-001`; physical CSV field consolidation remains open.**
 
 This does not mean the Valencia court has adopted Por Derecho's wider insolvency, criminal, causation or liability allegations.
 
@@ -152,7 +152,7 @@ The map must remain a navigation layer, not a merits adjudication.
 
 ## 9. Continuity / future-thread rule
 
-Future work materially changing any of the current Audiencia appeals, Valencia ORD 1859/2023-9, Arrecife mortgage enforcement, Meeting Point/FTI, Cuatrecasas/Matkator, Ministerio Fiscal response chronology or historical possession/exploitation chain must assess:
+Future work materially changing any of the current Audiencia appeals, Valencia `VAL-CIV-001 / ORD 1859/2023-9`, Arrecife mortgage enforcement, Meeting Point/FTI, Cuatrecasas/Matkator, Ministerio Fiscal response chronology or historical possession/exploitation chain must assess:
 
 1. standalone procedural identity;
 2. canonical/master-register registration status;

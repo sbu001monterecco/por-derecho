@@ -1,17 +1,24 @@
-# PROCEEDINGS MASTER REGISTER — VALENCIA ORD 1859/2023-9 OVERLAY
+# PROCEEDINGS MASTER REGISTER — VALENCIA `VAL-CIV-001` CORRECTION OVERLAY
 
 **Date:** 30 August 2026  
-**Status:** controlling additive new-row overlay pending safe canonical CSV insertion  
-**Gap key:** `GAP-VAL-CAIXABANK-01859-2023`
+**Status:** controlling additive correction overlay pending physical CSV field consolidation  
+**Correction key:** `GAP-VAL-CAIXABANK-01859-2023`
 
 ## Purpose
 
-The canonical `archive/PROCEEDINGS_MASTER_REGISTER.csv` currently lacks the exact Aweswell Limited v CAIXABANK, S.A. Valencia proceeding identified in the source-controlled public dossier. Until a safe full-CSV rewrite allocates a permanent unused Master ID, this overlay must be read together with the master register.
+A unitary rerun of the canonical `archive/PROCEEDINGS_MASTER_REGISTER.csv` located the already-existing Valencia master identity:
 
-This is a **missing-row overlay**, not a correction that merges the proceeding into an existing row.
+`VAL-CIV-001` — `JPI nº 27 Valencia` — `Procedimiento 1859/2023`.
 
-## Exact proceeding identity
+That is the same litigation now source-controlled as **Aweswell Limited v CAIXABANK, S.A., ORD 1859/2023-9, NIG 46250-42-1-2023-0049579**.
 
+The earlier characterization of this file as a **missing-row/new-ID overlay** is superseded. No second master identity is to be created.
+
+This overlay corrects and enriches the existing `VAL-CIV-001` row until a safe full-CSV rewrite consolidates the fields physically.
+
+## Controlling corrected fields for `VAL-CIV-001`
+
+- `Master_ID`: `VAL-CIV-001`
 - `Is_Proceeding`: `TRUE`
 - `Record_Type`: `JUDICIAL_PROCEEDING`
 - `Proceeding_Class`: `DIRECT`
@@ -23,31 +30,30 @@ This is a **missing-row overlay**, not a correction that merges the proceeding i
 - `Secondary_Reference`: `Aweswell Limited v CAIXABANK, S.A.`
 - `NIG`: `46250-42-1-2023-0049579`
 - `Date_or_Period`: `2023–2027`
-- `Connection`: `historic banking / financial-product package; Bankia enforcement; Concurso 36/2012; hotel-asset economic history`
+- `Connection`: `historic banking / financial-product package; Bankia enforcement; Arrecife Mortgage Enforcement 90/2012; Concurso 36/2012; hotel-asset economic history`
 - `Object_or_Purpose`: `Nullity/restitution and subsidiary damages concerning the mortgage/floor/swap/refinancing/pledge/account/enforcement package, as described in the controlled public dossier`
 - `Status`: `Pending and contested`
 - `Latest_Known_Event`: `Signed court diligence dated 6 Nov 2025 relisted hearing for 28 Jan 2027 at 10:00`
 - `Source_Status`: `VERIFIED_PRIMARY_DERIVED_PUBLIC_CONTROL`
 - `Repo_Canonical_Source`: `en/caixabank-valencia-claim/index.html` / `es/reclamacion-caixabank-valencia/index.html`
-- `Open_Reference_Gap`: `Permanent unused Master_ID and physical canonical CSV insertion; native/certified completion remains separately tracked in the Valencia dossier`
+- `Open_Reference_Gap`: `Physical CSV field consolidation; native/certified completion remains separately tracked in the Valencia dossier`
 - `Public_Treatment`: `PUBLIC_CONTROLLED`
+- `Last_Scan_Date`: `2026-08-30`
 
-## Master ID rule
+## Why the identity match is admitted
 
-Do **not** invent or reuse a Master ID in this overlay. Before physical insertion:
+The raw CSV already identifies `VAL-CIV-001` with the same court (`JPI nº 27 Valencia`) and the same proceeding number (`1859/2023`). The later signed-diligence-derived record supplies the complete class suffix, parties, NIG and current hearing. This is a field-completion correction to one proceeding, not a same-name inference between different proceedings.
 
-1. inspect the complete current CSV denominator;
-2. identify the next valid unused identity under the controlling Proceedings Master Register protocol;
-3. preserve this gap key and overlay path in the new row's provenance/notes or correction trail; and
-4. confirm no collision with `ES-VAL-CIV-048` or another Valencia record.
+## No-duplication rule
 
-## Non-conflation
-
-`ORD 1859/2023-9` is **not admitted as the same proceeding as `ES-VAL-CIV-048`**. Their descriptions differ. A later primary source can establish a relationship only through a transparent correction; similarity of territory or banking subject matter is insufficient.
+- Do **not** create a second Valencia row for `ORD 1859/2023-9`.
+- Do **not** allocate a new Master ID.
+- Preserve `VAL-CIV-001` as the canonical identity.
+- Preserve the prior gap/overlay history as a correction trail showing why the earlier missing-row inference was withdrawn.
 
 ## Convergence links to preserve
 
-This proceeding must remain discoverable from the wider graph through source-graded bridges to:
+`VAL-CIV-001` must remain discoverable through source-graded analytical bridges to:
 
 - the original Caja Insular / La Caja de Canarias → BFA → Bankia → CaixaBank banking/product lane;
 - Arrecife Mortgage Enforcement 90/2012;
@@ -60,4 +66,4 @@ These are material convergence relationships, not a finding that the separate pr
 
 ## Retirement condition
 
-This overlay remains controlling until an exact row is inserted into `archive/PROCEEDINGS_MASTER_REGISTER.csv`, the public Master Proceedings Register and Proceedings Interconnectivity Map are checked for propagation, and a provenance-preserving closeout records the overlay as retired.
+This overlay remains controlling until the physical `VAL-CIV-001` row in `archive/PROCEEDINGS_MASTER_REGISTER.csv` is consolidated, the public Master Proceedings Register and Proceedings Interconnectivity Map are checked for propagation, and a provenance-preserving closeout records this overlay as retired.
