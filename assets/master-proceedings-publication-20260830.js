@@ -167,7 +167,13 @@
           const isolationLink = isExactProceeding
             ? `<br><a href="${esc(isolationHref)}" data-isolation-master-id="${esc(r.Master_ID)}">${esc(copy.isolation)}</a>`
             : '';
-          const recordedRelation = [r.Parent_Master_ID ? `${lang === 'es' ? 'Padre' : 'Parent'}: ${r.Parent_Master_ID}` : '', r.Linked_Proceedings, r.Appeal_or_Review].filter(Boolean).join(' · ');
+          const parentMasterId = norm(r.Parent_Master_ID);
+          const linkedProceedings = norm(r.Linked_Proceedings)
+            .split(';')
+            .map((value) => value.trim())
+            .filter((value, index, values) => value && value !== parentMasterId && values.indexOf(value) === index)
+            .join('; ');
+          const recordedRelation = [parentMasterId ? `${lang === 'es' ? 'Padre' : 'Parent'}: ${parentMasterId}` : '', linkedProceedings, r.Appeal_or_Review].filter(Boolean).join(' · ');
           const relation = recordedRelation && !isExactProceeding
             ? `${recordedRelation} · ${copy.nonExactRelation}`
             : recordedRelation;
