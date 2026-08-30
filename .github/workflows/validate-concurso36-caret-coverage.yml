@@ -1,0 +1,124 @@
+name: Validate Concurso36 caret incident coverage
+
+on:
+  pull_request:
+    paths:
+      - 'assets/concurso36-caret-incident-overlay-20260829.js'
+      - 'assets/site.js'
+      - 'en/insolvency-36-2012-court-record/**'
+      - 'es/concurso-36-2012-registro-procesal/**'
+      - 'en/insolvency-36-2012-arrecife-mercantile-bridge/**'
+      - 'es/concurso-36-2012-puente-arrecife-mercantil/**'
+      - 'en/insolvency-36-2012-continuity-governance-7-june/**'
+      - 'es/concurso-36-2012-continuidad-gobernanza-7-junio/**'
+      - 'en/insolvency-36-2012-piece-7-garrigues/**'
+      - 'es/concurso-36-2012-pieza-7-garrigues/**'
+      - 'en/insolvency-36-2012-piece-8-monterecco-contract/**'
+      - 'es/concurso-36-2012-pieza-8-contrato-monterecco/**'
+      - 'en/insolvency-36-2012-community-authority/**'
+      - 'es/concurso-36-2012-autoridad-comunidad/**'
+      - '.github/workflows/validate-concurso36-caret-coverage.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'assets/concurso36-caret-incident-overlay-20260829.js'
+      - 'assets/site.js'
+      - 'en/insolvency-36-2012-court-record/**'
+      - 'es/concurso-36-2012-registro-procesal/**'
+      - 'en/insolvency-36-2012-arrecife-mercantile-bridge/**'
+      - 'es/concurso-36-2012-puente-arrecife-mercantil/**'
+      - 'en/insolvency-36-2012-continuity-governance-7-june/**'
+      - 'es/concurso-36-2012-continuidad-gobernanza-7-junio/**'
+      - 'en/insolvency-36-2012-piece-7-garrigues/**'
+      - 'es/concurso-36-2012-pieza-7-garrigues/**'
+      - 'en/insolvency-36-2012-piece-8-monterecco-contract/**'
+      - 'es/concurso-36-2012-pieza-8-contrato-monterecco/**'
+      - 'en/insolvency-36-2012-community-authority/**'
+      - 'es/concurso-36-2012-autoridad-comunidad/**'
+      - '.github/workflows/validate-concurso36-caret-coverage.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
+        with:
+          node-version: '22'
+      - name: Syntax-check shared incident overlay
+        run: node --check assets/concurso36-caret-incident-overlay-20260829.js
+      - name: Validate court, Arrecife, continuity and Piece caret coverage
+        run: |
+          python3 - <<'PY'
+          import re
+          from pathlib import Path
+
+          overlay = Path('assets/concurso36-caret-incident-overlay-20260829.js').read_text(encoding='utf-8')
+          site = Path('assets/site.js').read_text(encoding='utf-8')
+          required_overlay = (
+              "[data-c36-court-record]",
+              ".timeline .incident",
+              "#notice-grid .track",
+              "#convenio-grid .track",
+              "#creditor-grid .track",
+              "#counsel-grid .track",
+              "bridgeMetaEn",
+              "bridgeMetaEs",
+              "^ ALL ACTORS/PARTIES",
+              "^ CLAIMED AUTHORITY",
+              "^ PROCEDURAL STATUS",
+              "^ WHAT THE RECORD PROVES",
+              "^ WHAT IS ALLEGED",
+              "^ CRIMINAL / FORENSIC SIGNIFICANCE",
+              "^ CONTRARY EVIDENCE",
+              "^ MISSING EVIDENCE",
+              "^ CROSS-LINKS",
+              "NOT LOCATED",
+          )
+          for marker in required_overlay:
+              assert marker in overlay, f'caret overlay missing {marker!r}'
+
+          assert 'concurso36-caret-incident-overlay-20260829.js' in site, 'site loader does not load caret overlay'
+
+          bridge_pages = (
+              Path('en/insolvency-36-2012-arrecife-mercantile-bridge/index.html'),
+              Path('es/concurso-36-2012-puente-arrecife-mercantil/index.html'),
+          )
+          for page in bridge_pages:
+              text = page.read_text(encoding='utf-8')
+              count = len(re.findall(r'class="incident(?:\s|\")', text))
+              assert count == 8, f'{page}: expected 8 separately rendered incidents, found {count}'
+              assert 'DP 1132/2018' in text
+              assert 'CONTENT MISSING' in text or 'CONTENIDO FALTANTE' in text or '[CONTENT MISSING]' in text
+
+          pieces = (
+              Path('en/insolvency-36-2012-piece-7-garrigues/index.html'),
+              Path('en/insolvency-36-2012-piece-8-monterecco-contract/index.html'),
+              Path('es/concurso-36-2012-pieza-7-garrigues/index.html'),
+              Path('es/concurso-36-2012-pieza-8-contrato-monterecco/index.html'),
+          )
+          for page in pieces:
+              text = page.read_text(encoding='utf-8')
+              assert '^ INCIDENT' in text or '^ INCIDENTE' in text, f'{page}: incident caret missing'
+              assert '^ ALL ACTORS/PARTIES' in text or '^ TODAS LAS PARTES' in text, f'{page}: parties caret missing'
+              assert 'NOT LOCATED' in text or 'NO LOCALIZ' in text, f'{page}: evidence-gap boundary missing'
+
+          authority = Path('en/insolvency-36-2012-community-authority/index.html').read_text(encoding='utf-8')
+          for marker in (
+              '8 FEBRUARY 2018',
+              'NOT CHANGE THE AMOUNT',
+              'THIS IS NOT AN ARITHMETIC QUESTION',
+              '^ FORMAL PERSONACIÓN IN CONCURSO 36/2012',
+              '^ CRIMINAL / PROSECUTORIAL RELEVANCE',
+              '^ CONTRARY OR INNOCENT EXPLANATION',
+          ):
+              assert marker in authority, f'authority page missing {marker!r}'
+
+          print('Concurso36 caret coverage OK: court-record nodes, eight Arrecife incidents, continuity event tracks and Piece 7/8 controls are protected.')
+          PY
