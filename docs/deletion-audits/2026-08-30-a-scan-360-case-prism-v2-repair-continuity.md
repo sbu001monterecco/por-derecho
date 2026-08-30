@@ -53,6 +53,8 @@ The homepage now offers an early neutral institutional-clean-room route before t
 
 The renderer adds semantic tabs and panels, arrow/Home/End keyboard operation, focus and live-region handling, visible non-colour status labels, responsive sticky columns, reduced-motion handling and a visible degraded state if Case Prism data fails.
 
+Because the institutional-page navigation is additive visible `<main>` content, its pre-existing first-hop rendered-provenance snapshots are refreshed to the new exact normalized lengths and hashes; the underlying 130-object identity census and 61/69 status split do not change.
+
 ## Validation contract
 
 The structural audit must verify:

@@ -21,6 +21,7 @@ REQUIRED = [
     "archive/PROCEEDINGS_MASTER_REGISTER.csv",
     "assets/data/proceedings-interconnectivity-schema-v1.json",
     "assets/data/proceedings-case-prism-v1.json",
+    "assets/data/caepr-caret-alberto-meeting-point-first-hop-v1.json",
     "assets/data/counsel-procurador-gap-register-v1.json",
     "assets/proceedings-interconnectivity-map-20260830.js",
     "assets/proceedings-interconnectivity-map-20260830.css",
@@ -238,6 +239,7 @@ if not errors:
         "archive/CAIXABANK_VALENCIA_01859_2023_REGISTRATION_GAP_30AUG2026.md",
         "archive/PROCEEDINGS_MASTER_REGISTER_VALENCIA_1859_2023_OVERLAY_30AUG2026.md",
         "archive/PROCEEDINGS_CASE_PRISM_V1_SEED_30AUG2026.json",
+        "assets/data/caepr-caret-alberto-meeting-point-first-hop-v1.json",
         "scripts/build_proceedings_case_prism_v2.py", "assets/data/counsel-procurador-gap-register-v1.json",
     ]:
         require(path in workflow, f"workflow filter missing dependency: {path}")

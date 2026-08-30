@@ -44,6 +44,7 @@
     "archive/knowledge-project/ALLEGATIONS_CROSSWALK_AN2023_DP1901_DP1956_CONTROL24_16AUG2026.md",
     "archive/knowledge-project/DP1956_STATUS_REOPENING_CORRECTION_18AUG2026.md",
     "assets/data/proceedings-case-prism-v1.json",
+    "assets/data/caepr-caret-alberto-meeting-point-first-hop-v1.json",
     "assets/data/proceedings-interconnectivity-schema-v1.json",
     "assets/proceedings-interconnectivity-map-20260830.css",
     "assets/proceedings-interconnectivity-map-20260830.js",
@@ -114,13 +115,13 @@
   ],
   "local_validation": {
     "case_prism_structural_audit": "passed: 102/101, 18x12=216, zero unexplained coordinates, exact isolation, nine lenses",
-    "repository_preservation": "passed: 4309 tracked files and 645 bilingual HTML pages",
+    "repository_preservation": "passed: 4310 tracked files and 645 bilingual HTML pages",
     "audience_experience": "passed: 645 pages, 10501 internal links and 2213 public files",
     "master_proceedings_publication": "passed: 102 canonical rows",
     "counsel_procurador_governance": "passed with denominator explicitly incomplete and seven registered gaps",
     "javascript_syntax": "passed",
     "git_diff_check": "passed",
-    "publication_integrity": "passed: 93 manifests and the exact 35-file origin/main...HEAD denominator"
+    "publication_integrity": "passed: 93 manifests and the exact 36-file origin/main...HEAD denominator"
   },
   "verification": {
     "source_prepared": true,
