@@ -1,0 +1,80 @@
+{
+  "publication_id": "PD-SP-ARRECIFE-1103-2018-CARET-20260830-01",
+  "owner": "Por Derecho / Project Sun Rock",
+  "control_date": "2026-08-30",
+  "current_state": "PREPARED_PENDING_MERGE",
+  "state": "PREPARED_PENDING_MERGE",
+  "purpose": "Repair and publish the canonical, bidirectional procedural lineage from Diligencias Indeterminadas 1103/2018-00 through DP 1132/2018 and Rollo 1010/2018 / Auto 804/2018 without converting identity into merits.",
+  "canonical_ids": {
+    "caepr": "PD-SP-R-0023",
+    "master_register": ["LZ-JUD-003", "LZ-APP-004"]
+  },
+  "expected_routes": {
+    "en": [
+      "en/arrecife-1103-2018-procedural-lineage/index.html",
+      "en/sun-park-takeover-7-june-2018/index.html",
+      "en/master-proceedings-register/index.html",
+      "en/proceedings-map/index.html",
+      "en/matter-identity-registry/index.html",
+      "en/insolvency-36-2012-arrecife-mercantile-bridge/index.html"
+    ],
+    "es": [
+      "es/arrecife-1103-2018-cadena-procesal/index.html",
+      "es/toma-control-sun-park-7-junio-2018/index.html",
+      "es/registro-maestro-procedimientos/index.html",
+      "es/mapa-procedimientos/index.html",
+      "es/registro-identidad-materia/index.html",
+      "es/concurso-36-2012-puente-arrecife-mercantil/index.html"
+    ]
+  },
+  "implementation": [
+    "archive/PROCEEDINGS_MASTER_REGISTER.csv",
+    "assets/data/matter-identity-registry-v1.proceedings.json",
+    "assets/data/matter-identity-registry-v1.json",
+    "assets/data/matter-identity-operational-control-v1.json",
+    "assets/data/caepr-caret-alberto-meeting-point-first-hop-v1.json",
+    "assets/master-proceedings-publication-20260830.js",
+    "archive/ARRECIFE_1103_1132_1010_804_CARET_INTERLINK_CONTROL_30AUG2026.md",
+    "archive/CORRECTION_REGISTER.md",
+    "archive/MISSING_EVIDENCE_REGISTER.md",
+    "archive/MISSING_EVIDENCE_REGISTER_OPERATOR_CONTROL_DP1132_DI248_NONCONVALIDATION_APPEND_17AUG2026.md",
+    "archive/SUN_PARK_GAP_CLOSURE_SCAN_DP1132_DI248_NONCONVALIDATION_17AUG2026.md",
+    "archive/SUN_PARK_2011_2019_OPERATOR_CONTROL_DP1132_DI248_NONCONVALIDATION_TEN_SOURCE_SUPPLEMENT_17AUG2026.md",
+    "archive/PROCEEDINGS_CASE_PRISM_V1_SEED_30AUG2026.json",
+    "assets/data/proceedings-case-prism-v1.json",
+    "assets/master-proceedings-publication-20260830.css",
+    "assets/site.js",
+    "en/arrecife-1103-2018-procedural-lineage/index.html",
+    "es/arrecife-1103-2018-cadena-procesal/index.html",
+    "en/sun-park-takeover-7-june-2018/index.html",
+    "es/toma-control-sun-park-7-junio-2018/index.html",
+    "en/master-proceedings-register/index.html",
+    "es/registro-maestro-procedimientos/index.html",
+    "en/insolvency-36-2012-arrecife-mercantile-bridge/index.html",
+    "es/concurso-36-2012-puente-arrecife-mercantil/index.html",
+    "en/matter-identity-registry/index.html",
+    "es/registro-identidad-materia/index.html",
+    "ops/CURRENT_STATE.json",
+    "ops/CURRENT_UNITARY_STATE.json",
+    "ops/CURRENT_REVERSE_ENGINEERED_DIGEST.json",
+    "CURRENT_REVERSE_ENGINEERED_DIGEST.md",
+    "scripts/build_proceedings_case_prism_v2.py",
+    "scripts/validate_alberto_meeting_point_cross_proceeding.py",
+    "scripts/validate_current_reverse_engineered_digest.py",
+    "scripts/validate_dp3205_2014_publication.py",
+    "scripts/validate_legal_professional_register.py",
+    "scripts/validate_post7june_2022_deliberate_exclusion.py",
+    "scripts/validate_unitary_control_plane.py",
+    "scripts/audit_arrecife_1103_caret_interlink.py",
+    ".github/workflows/audit-arrecife-1103-caret-interlink.yml"
+  ],
+  "privacy": "No private source locators, contact data or identity of the protected on-site witness are published.",
+  "caret_boundary": "Caret confirms canonical proceeding identity only; it does not prove conduct, knowledge, title, liability, merits or outcome correctness.",
+  "verification": {
+    "repository": "pending",
+    "pull_request": "pending",
+    "merge_sha": "pending",
+    "pages_deployment": "pending",
+    "live_readback": "pending"
+  }
+}

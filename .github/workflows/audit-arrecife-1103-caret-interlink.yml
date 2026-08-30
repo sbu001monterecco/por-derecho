@@ -1,0 +1,52 @@
+name: Audit Arrecife 1103 caret interlink
+
+on:
+  pull_request:
+    paths:
+      - 'archive/PROCEEDINGS_MASTER_REGISTER.csv'
+      - 'archive/ARRECIFE_1103_1132_1010_804_CARET_INTERLINK_CONTROL_30AUG2026.md'
+      - 'archive/CORRECTION_REGISTER.md'
+      - 'archive/MISSING_EVIDENCE_REGISTER.md'
+      - 'assets/data/matter-identity-registry-v1.proceedings.json'
+      - 'assets/data/matter-identity-registry-v1.json'
+      - 'assets/data/matter-identity-operational-control-v1.json'
+      - 'assets/data/caepr-caret-alberto-meeting-point-first-hop-v1.json'
+      - 'assets/master-proceedings-publication-20260830.js'
+      - 'en/arrecife-1103-2018-procedural-lineage/index.html'
+      - 'en/sun-park-takeover-7-june-2018/index.html'
+      - 'es/arrecife-1103-2018-cadena-procesal/index.html'
+      - 'es/toma-control-sun-park-7-junio-2018/index.html'
+      - 'scripts/audit_arrecife_1103_caret_interlink.py'
+      - '.github/workflows/audit-arrecife-1103-caret-interlink.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'archive/PROCEEDINGS_MASTER_REGISTER.csv'
+      - 'archive/ARRECIFE_1103_1132_1010_804_CARET_INTERLINK_CONTROL_30AUG2026.md'
+      - 'archive/CORRECTION_REGISTER.md'
+      - 'archive/MISSING_EVIDENCE_REGISTER.md'
+      - 'assets/data/matter-identity-registry-v1.proceedings.json'
+      - 'assets/data/matter-identity-registry-v1.json'
+      - 'assets/data/matter-identity-operational-control-v1.json'
+      - 'assets/data/caepr-caret-alberto-meeting-point-first-hop-v1.json'
+      - 'assets/master-proceedings-publication-20260830.js'
+      - 'en/arrecife-1103-2018-procedural-lineage/index.html'
+      - 'en/sun-park-takeover-7-june-2018/index.html'
+      - 'es/arrecife-1103-2018-cadena-procesal/index.html'
+      - 'es/toma-control-sun-park-7-junio-2018/index.html'
+      - 'scripts/audit_arrecife_1103_caret_interlink.py'
+      - '.github/workflows/audit-arrecife-1103-caret-interlink.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: '3.12'
+      - run: python3 scripts/audit_arrecife_1103_caret_interlink.py

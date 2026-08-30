@@ -2,7 +2,7 @@
   "schema": "por-derecho.matter-identity-operational-control.v1",
   "control_id": "PD-SP-IDENTITY-OPS-001",
   "registry_id": "PD-SP-IDENTITY-REGISTRY-001",
-  "control_date": "2026-08-26",
+  "control_date": "2026-08-30",
   "status": "PUBLIC_OPERATIONAL_CONTROL",
   "tracker_issue": "https://github.com/sbu001monterecco/por-derecho/issues/995",
   "linked_controls": {
@@ -137,6 +137,12 @@
       "state": "CORRECTION_PROPAGATED",
       "question_es": "Mantener DP 1901/2026 como vía privada/CAM separada; no fusionarla con separación, honorarios, DP 1956/2026 ni la referencia diaria 22.",
       "question_en": "Keep DP 1901/2026 as the separate private-actor/CAM lane; do not merge it with removal, remuneration, DP 1956/2026 or daily intake reference 22."
+    },
+    {
+      "id": "PD-SP-R-0023",
+      "state": "CORRECTION_PROPAGATED",
+      "question_es": "Mantener DI 1103/2018-00 como origen de DP 1132/2018 y separar Rollo 1010/2018 de Auto 804/2018, preservando NIG, relación directa y límite de fondo.",
+      "question_en": "Keep DI 1103/2018-00 as the origin of DP 1132/2018 and distinguish Rollo 1010/2018 from Order 804/2018 while preserving the shared NIG, direct lineage and merits boundary."
     }
   ],
   "proceeding_identity_queue": [
