@@ -1,0 +1,132 @@
+{
+  "schema": "por-derecho.publication-manifest.v1",
+  "manifest_version": "1.0.0",
+  "publication_id": "PD-SP-AScan360-CASE-PRISM-V2-REPAIR-20260830-01",
+  "owner": "Por Derecho / Project Sun Rock",
+  "control_date": "2026-08-30",
+  "current_state": "PREPARED_PENDING_MERGE",
+  "state": "PREPARED_PENDING_MERGE",
+  "purpose": "Close the reader-visible convergence and fragmentation implementation gap with a complete decision-dependency matrix, stable swimlane, exact-proceeding isolation and nine audience lenses, while consolidating two controlling correction overlays and preserving evidential boundaries.",
+  "requested_control_baseline_sha": "3473d8c399d990b45ad58dd9a2aa8f8caf0d6814",
+  "actual_base_main_sha": "aac741320cd9541ecaae564db89188cb941dd645",
+  "head_branch": "audit/ascan-360-case-prism-20260830",
+  "expected_routes": {
+    "en": [
+      "en/index.html",
+      "en/proceedings-map/index.html",
+      "en/master-proceedings-register/index.html",
+      "en/public-authority-unitary-case-reconstruction/index.html",
+      "en/calificacion-rpl-2523-evidence-map/index.html",
+      "en/insolvency-36-2012-administrator-removal-fees/index.html",
+      "en/fiscalia-dip-2-2026/index.html"
+    ],
+    "es": [
+      "es/index.html",
+      "es/mapa-procedimientos/index.html",
+      "es/registro-maestro-procedimientos/index.html",
+      "es/reconstruccion-unitaria-autoridades-publicas/index.html",
+      "es/calificacion-rpl-2523-mapa-prueba/index.html",
+      "es/concurso-36-2012-separacion-ac-honorarios/index.html",
+      "es/fiscalia-dip-2-2026/index.html"
+    ]
+  },
+  "expected_source_files": [
+    ".github/governance/A_SCAN_360_CASE_PRISM_AND_READER_LENS_PROTOCOL_30AUG2026.md",
+    ".github/workflows/audit-proceedings-interconnectivity-map.yml",
+    "archive/CAIXABANK_VALENCIA_01859_2023_REGISTRATION_GAP_30AUG2026.md",
+    "archive/PROCEEDINGS_MASTER_REGISTER.csv",
+    "archive/PROCEEDINGS_MASTER_REGISTER_VALENCIA_1859_2023_OVERLAY_30AUG2026.md",
+    "archive/PROCEEDINGS_CASE_PRISM_V1_SEED_30AUG2026.json",
+    "archive/knowledge-project/ALLEGATIONS_CROSSWALK_AN2023_DP1901_DP1956_CONTROL24_16AUG2026.md",
+    "archive/knowledge-project/DP1956_STATUS_REOPENING_CORRECTION_18AUG2026.md",
+    "assets/data/proceedings-case-prism-v1.json",
+    "assets/data/proceedings-interconnectivity-schema-v1.json",
+    "assets/proceedings-interconnectivity-map-20260830.css",
+    "assets/proceedings-interconnectivity-map-20260830.js",
+    "en/index.html",
+    "en/proceedings-map/index.html",
+    "en/master-proceedings-register/index.html",
+    "en/public-authority-unitary-case-reconstruction/index.html",
+    "en/calificacion-rpl-2523-evidence-map/index.html",
+    "en/insolvency-36-2012-administrator-removal-fees/index.html",
+    "en/fiscalia-dip-2-2026/index.html",
+    "es/index.html",
+    "es/mapa-procedimientos/index.html",
+    "es/registro-maestro-procedimientos/index.html",
+    "es/reconstruccion-unitaria-autoridades-publicas/index.html",
+    "es/calificacion-rpl-2523-mapa-prueba/index.html",
+    "es/concurso-36-2012-separacion-ac-honorarios/index.html",
+    "es/fiscalia-dip-2-2026/index.html",
+    "scripts/build_proceedings_case_prism_v2.py",
+    "scripts/audit_proceedings_interconnectivity_map.py",
+    "scripts/smoke_proceedings_case_prism.mjs",
+    "publication-manifests/ascan-360-case-prism-20260830.json",
+    "publication-manifests/proceedings-interconnectivity-map-20260830.json",
+    "publication-manifests/ascan-360-case-prism-v2-repair-20260830.json",
+    "docs/deletion-audits/2026-08-30-a-scan-360-case-prism-continuity.md",
+    "docs/deletion-audits/2026-08-30-a-scan-360-case-prism-v2-repair-continuity.md",
+    "docs/deletion-audits/2026-08-30-unitary-proceedings-interconnectivity-map-continuity.md"
+  ],
+  "implementation_denominator": {
+    "canonical_proceedings": 102,
+    "public_projection": 101,
+    "material_propositions": 18,
+    "legally_distinct_lanes": 12,
+    "explicit_matrix_coordinates": 216,
+    "unexplained_matrix_coordinates": 0,
+    "audience_lenses": 9,
+    "changed_public_routes": 14
+  },
+  "controlled_views": {
+    "decision_dependency_matrix": "IMPLEMENTED_IN_SOURCE",
+    "convergence_cluster": "IMPLEMENTED_IN_SOURCE",
+    "parallel_proceedings_swimlane": "IMPLEMENTED_IN_SOURCE",
+    "fragmentation_audit": "IMPLEMENTED_IN_SOURCE",
+    "exact_proceeding_isolation": "IMPLEMENTED_IN_SOURCE",
+    "audience_lens": "IMPLEMENTED_IN_SOURCE"
+  },
+  "canonical_repairs": {
+    "VAL-CIV-001": "Physical field consolidation prepared without creating a duplicate identity; overlay retained as provenance.",
+    "GC-CRI-009": "Provisional dismissal and no established filed reform/subsidiary appeal prepared for canonical publication.",
+    "GC-APP-004": "Parent corrected to appealed judgment GC-CAL-002.",
+    "LZ_parent_graph": "LZ-CIV-040 / LZ-CIV-041 parent cycle removed.",
+    "GC-APP-007": "Not used as an exact proceeding in the Case Prism; exact removal rolls remain GC-APP-005 and GC-APP-006."
+  },
+  "evidential_boundaries": [
+    "SAME_EVENT_IS_NOT_SAME_PROCEEDING",
+    "DIFFERENT_PROCEEDING_IS_NOT_FACTUAL_ISOLATION",
+    "DIRECT_PROCEDURAL_EDGE_IS_NOT_CONTEXTUAL_BRIDGE",
+    "RELATIONSHIP_STATUS_IS_NOT_FILE_TREATMENT_STATUS",
+    "CONTEXT_DOES_NOT_PROVE_JOINDER_COORDINATION_KNOWLEDGE_WRONGDOING_OR_LIABILITY",
+    "NOT_LOCATED_DOES_NOT_MEAN_DID_NOT_EXIST",
+    "LENS_PRIORITY_DOES_NOT_CHANGE_FACT_OR_SOURCE_STATUS",
+    "MAP_IS_NAVIGATION_NOT_A_MERITS_FINDING"
+  ],
+  "known_open_gaps": [
+    "Counsel/procurador lineage is controlled but denominator-incomplete; CP-GAP-004 and CP-GAP-005 are exposed in active coordinates.",
+    "Native/certified Valencia file completeness, pleadings, merits disposition, service and finality remain open.",
+    "The signed DP 1956 provisional-dismissal order and current status/finality certification remain primary-source targets.",
+    "Browser rendering has not been executed locally because the available runtime lacks a browser binary; PR CI must run the Playwright smoke."
+  ],
+  "local_validation": {
+    "case_prism_structural_audit": "passed: 102/101, 18x12=216, zero unexplained coordinates, exact isolation, nine lenses",
+    "repository_preservation": "passed: 4306 tracked files and 645 bilingual HTML pages",
+    "audience_experience": "passed: 645 pages, 10501 internal links and 2213 public files",
+    "master_proceedings_publication": "passed: 102 canonical rows",
+    "counsel_procurador_governance": "passed with denominator explicitly incomplete and seven registered gaps",
+    "javascript_syntax": "passed",
+    "git_diff_check": "passed",
+    "publication_integrity": "pending committed SHA comparison"
+  },
+  "verification": {
+    "source_prepared": true,
+    "pull_request_created": false,
+    "ci_green": false,
+    "merged": false,
+    "main_readback": false,
+    "pages_deployed": false,
+    "live_http_readback": false,
+    "deletion_safe": false
+  },
+  "publication_boundary": "PREPARED_PENDING_MERGE proves source preparation and local non-browser validation only. It does not inherit the live status of PR #1221 or PR #1227 and must not be described as merged, deployed, live-verified or deletion-safe."
+}

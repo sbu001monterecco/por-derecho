@@ -6,38 +6,84 @@ on:
       - 'archive/PROCEEDINGS_MASTER_REGISTER.csv'
       - '.github/governance/UNITARY_PROCEEDINGS_INTERCONNECTIVITY_MAP_PROTOCOL_30AUG2026.md'
       - '.github/governance/A_SCAN_360_CASE_PRISM_AND_READER_LENS_PROTOCOL_30AUG2026.md'
+      - 'archive/PROCEEDINGS_ANTI_FRAGMENTATION_CONVERGENCE_RULE_30AUG2026.md'
+      - 'archive/INSTITUTIONAL_READER_UNITARY_PROCEEDINGS_RULE_30AUG2026.md'
+      - 'archive/CAIXABANK_VALENCIA_01859_2023_REGISTRATION_GAP_30AUG2026.md'
+      - 'archive/PROCEEDINGS_MASTER_REGISTER_VALENCIA_1859_2023_OVERLAY_30AUG2026.md'
+      - 'archive/PROCEEDINGS_CASE_PRISM_V1_SEED_30AUG2026.json'
+      - 'archive/knowledge-project/ALLEGATIONS_CROSSWALK_AN2023_DP1901_DP1956_CONTROL24_16AUG2026.md'
+      - 'archive/knowledge-project/DP1956_STATUS_REOPENING_CORRECTION_18AUG2026.md'
       - 'assets/data/proceedings-interconnectivity-schema-v1.json'
       - 'assets/data/proceedings-case-prism-v1.json'
+      - 'assets/data/counsel-procurador-gap-register-v1.json'
       - 'assets/proceedings-interconnectivity-map-20260830.js'
       - 'assets/proceedings-interconnectivity-map-20260830.css'
       - 'en/proceedings-map/index.html'
       - 'es/mapa-procedimientos/index.html'
       - 'en/master-proceedings-register/index.html'
       - 'es/registro-maestro-procedimientos/index.html'
+      - 'en/index.html'
+      - 'es/index.html'
+      - 'en/public-authority-unitary-case-reconstruction/index.html'
+      - 'es/reconstruccion-unitaria-autoridades-publicas/index.html'
+      - 'en/calificacion-rpl-2523-evidence-map/index.html'
+      - 'es/calificacion-rpl-2523-mapa-prueba/index.html'
+      - 'en/insolvency-36-2012-administrator-removal-fees/index.html'
+      - 'es/concurso-36-2012-separacion-ac-honorarios/index.html'
+      - 'en/fiscalia-dip-2-2026/index.html'
+      - 'es/fiscalia-dip-2-2026/index.html'
       - 'scripts/audit_proceedings_interconnectivity_map.py'
+      - 'scripts/build_proceedings_case_prism_v2.py'
       - 'scripts/smoke_proceedings_case_prism.mjs'
       - '.github/workflows/audit-proceedings-interconnectivity-map.yml'
       - 'publication-manifests/proceedings-interconnectivity-map-20260830.json'
       - 'publication-manifests/ascan-360-case-prism-20260830.json'
+      - 'publication-manifests/ascan-360-case-prism-v2-repair-20260830.json'
+      - 'docs/deletion-audits/2026-08-30-a-scan-360-case-prism-continuity.md'
+      - 'docs/deletion-audits/2026-08-30-a-scan-360-case-prism-v2-repair-continuity.md'
+      - 'docs/deletion-audits/2026-08-30-unitary-proceedings-interconnectivity-map-continuity.md'
   push:
     branches: [main]
     paths:
       - 'archive/PROCEEDINGS_MASTER_REGISTER.csv'
       - '.github/governance/UNITARY_PROCEEDINGS_INTERCONNECTIVITY_MAP_PROTOCOL_30AUG2026.md'
       - '.github/governance/A_SCAN_360_CASE_PRISM_AND_READER_LENS_PROTOCOL_30AUG2026.md'
+      - 'archive/PROCEEDINGS_ANTI_FRAGMENTATION_CONVERGENCE_RULE_30AUG2026.md'
+      - 'archive/INSTITUTIONAL_READER_UNITARY_PROCEEDINGS_RULE_30AUG2026.md'
+      - 'archive/CAIXABANK_VALENCIA_01859_2023_REGISTRATION_GAP_30AUG2026.md'
+      - 'archive/PROCEEDINGS_MASTER_REGISTER_VALENCIA_1859_2023_OVERLAY_30AUG2026.md'
+      - 'archive/PROCEEDINGS_CASE_PRISM_V1_SEED_30AUG2026.json'
+      - 'archive/knowledge-project/ALLEGATIONS_CROSSWALK_AN2023_DP1901_DP1956_CONTROL24_16AUG2026.md'
+      - 'archive/knowledge-project/DP1956_STATUS_REOPENING_CORRECTION_18AUG2026.md'
       - 'assets/data/proceedings-interconnectivity-schema-v1.json'
       - 'assets/data/proceedings-case-prism-v1.json'
+      - 'assets/data/counsel-procurador-gap-register-v1.json'
       - 'assets/proceedings-interconnectivity-map-20260830.js'
       - 'assets/proceedings-interconnectivity-map-20260830.css'
       - 'en/proceedings-map/index.html'
       - 'es/mapa-procedimientos/index.html'
       - 'en/master-proceedings-register/index.html'
       - 'es/registro-maestro-procedimientos/index.html'
+      - 'en/index.html'
+      - 'es/index.html'
+      - 'en/public-authority-unitary-case-reconstruction/index.html'
+      - 'es/reconstruccion-unitaria-autoridades-publicas/index.html'
+      - 'en/calificacion-rpl-2523-evidence-map/index.html'
+      - 'es/calificacion-rpl-2523-mapa-prueba/index.html'
+      - 'en/insolvency-36-2012-administrator-removal-fees/index.html'
+      - 'es/concurso-36-2012-separacion-ac-honorarios/index.html'
+      - 'en/fiscalia-dip-2-2026/index.html'
+      - 'es/fiscalia-dip-2-2026/index.html'
       - 'scripts/audit_proceedings_interconnectivity_map.py'
+      - 'scripts/build_proceedings_case_prism_v2.py'
       - 'scripts/smoke_proceedings_case_prism.mjs'
       - '.github/workflows/audit-proceedings-interconnectivity-map.yml'
       - 'publication-manifests/proceedings-interconnectivity-map-20260830.json'
       - 'publication-manifests/ascan-360-case-prism-20260830.json'
+      - 'publication-manifests/ascan-360-case-prism-v2-repair-20260830.json'
+      - 'docs/deletion-audits/2026-08-30-a-scan-360-case-prism-continuity.md'
+      - 'docs/deletion-audits/2026-08-30-a-scan-360-case-prism-v2-repair-continuity.md'
+      - 'docs/deletion-audits/2026-08-30-unitary-proceedings-interconnectivity-map-continuity.md'
 
 permissions:
   contents: read
@@ -57,8 +103,14 @@ jobs:
         uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020
         with:
           node-version: '22'
+      - name: Check generated Case Prism projection
+        run: python scripts/build_proceedings_case_prism_v2.py --check
       - name: Audit proceedings map invariants
         run: python scripts/audit_proceedings_interconnectivity_map.py
+      - name: Audit canonical publication and representation gaps
+        run: |
+          python scripts/audit_master_proceedings_publication.py
+          python scripts/audit_counsel_procurador_governance.py
       - name: Validate proceedings renderer JavaScript syntax
         run: |
           node --check assets/proceedings-interconnectivity-map-20260830.js

@@ -1,7 +1,7 @@
 # PROCEEDINGS MASTER REGISTER — VALENCIA `VAL-CIV-001` CORRECTION OVERLAY
 
 **Date:** 30 August 2026  
-**Status:** controlling additive correction overlay pending physical CSV field consolidation  
+**Status:** RETIRED IN CORRECTIVE SOURCE TREE — public/main retirement effective on merge and deployment; retained as provenance
 **Correction key:** `GAP-VAL-CAIXABANK-01859-2023`
 
 ## Purpose
@@ -14,7 +14,7 @@ That is the same litigation now source-controlled as **Aweswell Limited v CAIXAB
 
 The earlier characterization of this file as a **missing-row/new-ID overlay** is superseded. No second master identity is to be created.
 
-This overlay corrects and enriches the existing `VAL-CIV-001` row until a safe full-CSV rewrite consolidates the fields physically.
+This overlay controlled the correction and enrichment of the existing `VAL-CIV-001` row until those fields were physically consolidated in the canonical CSV on 30 August 2026. It now remains as the provenance trail for that correction.
 
 ## Controlling corrected fields for `VAL-CIV-001`
 
@@ -36,7 +36,7 @@ This overlay corrects and enriches the existing `VAL-CIV-001` row until a safe f
 - `Latest_Known_Event`: `Signed court diligence dated 6 Nov 2025 relisted hearing for 28 Jan 2027 at 10:00`
 - `Source_Status`: `VERIFIED_PRIMARY_DERIVED_PUBLIC_CONTROL`
 - `Repo_Canonical_Source`: `en/caixabank-valencia-claim/index.html` / `es/reclamacion-caixabank-valencia/index.html`
-- `Open_Reference_Gap`: `Physical CSV field consolidation; native/certified completion remains separately tracked in the Valencia dossier`
+- `Open_Reference_Gap`: `Native/certified file completeness, pleadings, merits disposition, service and finality remain tracked in the Valencia dossier`
 - `Public_Treatment`: `PUBLIC_CONTROLLED`
 - `Last_Scan_Date`: `2026-08-30`
 
@@ -66,4 +66,4 @@ These are material convergence relationships, not a finding that the separate pr
 
 ## Retirement condition
 
-This overlay remains controlling until the physical `VAL-CIV-001` row in `archive/PROCEEDINGS_MASTER_REGISTER.csv` is consolidated, the public Master Proceedings Register and Proceedings Interconnectivity Map are checked for propagation, and a provenance-preserving closeout records this overlay as retired.
+**Source-tree consolidation completed 30 August 2026.** The corrective branch's physical `VAL-CIV-001` row in `archive/PROCEEDINGS_MASTER_REGISTER.csv` contains the corrected identity, parties, NIG, object, status and public-source fields. Local Master Proceedings Register and Proceedings Interconnectivity Map audits pass after consolidation. This overlay becomes retired in public/main only when the corrective commit merges and deploys; it remains preserved permanently as the correction history. The separate native/certified-file and merits/finality gaps remain open in the Valencia dossier.

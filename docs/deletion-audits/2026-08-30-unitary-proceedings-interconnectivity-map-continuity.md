@@ -58,9 +58,13 @@ The bilingual public map supports:
 - single-proceeding trace;
 - reverse trace from a child/current file to its recorded origin;
 - incoming/outgoing relationship discovery; and
-- a plain-language `Why connected?` explanation for each relationship class.
+- a plain-language `Why connected?` explanation for each relationship class;
+- an 18-by-12 decision-dependency matrix with every coordinate explicit;
+- a stable parallel-proceedings swimlane;
+- exact-proceeding isolation with outside context faded and immediate full-corpus restore; and
+- nine institutional audience lenses over one unchanged evidence base.
 
-The map remains a navigation surface. Underlying material propositions require the appropriate source.
+The map remains a navigation surface. Underlying material propositions require the appropriate source. Relationship status, in-file treatment and evidence status remain independent; visual prominence cannot upgrade any of them.
 
 ## Internal digest contract
 
@@ -95,6 +99,8 @@ A proceeding with no direct canonical edge may be genuinely independent or may e
 
 ## Continuity / deletion safety
 
-After merge and live verification, the originating chat can be deleted without losing the map architecture, prompt, anti-fragmentation rule, schemas, public routes or relationship boundaries because those are repository-controlled. This does not authorise deletion of native evidence, private custody sources, backups or other retention-controlled material.
+The original map was merged and deployed through PR #1221. The initial Case Prism was merged and deployed through PR #1227. The corrective v2 reader contract is separately `PREPARED_PENDING_MERGE` on `audit/ascan-360-case-prism-20260830` and must not inherit the earlier live status.
 
-Before claiming final live/deletion-safe status for this implementation, verify the PR merge commit, CI audit, Pages deployment for that exact descendant main and the two public routes/assets.
+After the corrective PR is merged and independently read back live, the originating execution context can be deleted without losing the map architecture, prompt, anti-fragmentation rule, schemas, public routes or relationship boundaries because those are repository-controlled. This does not authorise deletion of native evidence, private custody sources, backups or other retention-controlled material.
+
+Before claiming final live/deletion-safe status for this implementation, verify the PR merge commit, CI audit, Pages deployment for that exact descendant main, all 14 declared changed routes and the public Case Prism assets.

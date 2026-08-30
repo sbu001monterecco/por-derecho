@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.2.0",
+  "schema_version": "1.4.0",
   "control_date": "2026-08-30",
   "status": "ACTIVE_DERIVED_GRAPH_AND_CASE_PRISM_CONTROL",
   "canonical_node_source": "archive/PROCEEDINGS_MASTER_REGISTER.csv",
@@ -70,6 +70,41 @@
     "NOT_LOCATED",
     "OUTSIDE"
   ],
+  "case_prism_treatment_statuses": [
+    "DIRECTLY_IN_FILE",
+    "EXPRESSLY_ACKNOWLEDGED",
+    "RELIED_UPON",
+    "CONTRADICTED",
+    "MATERIALLY_RELEVANT_CONTEXT",
+    "NOT_RAISED_OR_NOT_LOCATED",
+    "OUTSIDE_PROCEDURAL_SCOPE",
+    "STATUS_UNRESOLVED"
+  ],
+  "case_prism_required_cell_fields": [
+    "status",
+    "treatment",
+    "evidence_status",
+    "note_en",
+    "note_es",
+    "decision_en",
+    "decision_es",
+    "master_ids",
+    "representation_lineage_status",
+    "representation_gap_ids"
+  ],
+  "case_prism_required_proposition_fields": [
+    "question_en",
+    "question_es",
+    "source_status",
+    "attribution",
+    "contrary_record",
+    "decision_dependency",
+    "actionability.source_needed",
+    "actionability.competent_organ",
+    "actionability.if_confirmed",
+    "actionability.if_refuted",
+    "source_ids"
+  ],
   "required_views": [
     "TRACK_MAP",
     "CHRONOLOGY_JOURNEY",
@@ -89,12 +124,25 @@
     "TRACE_ONE_PROCEEDING": "renderer tab trace",
     "REVERSE_TRACE": "trace panel derives incoming relationships from explicit forward edges",
     "WHY_CONNECTED": "trace and Case Prism detail panels",
-    "CONVERGENCE_CLUSTER": "renderer tab prism",
-    "FRAGMENTATION_AUDIT": "renderer tab isolation",
-    "DECISION_DEPENDENCY_MATRIX": "renderer tab prism",
-    "PARALLEL_PROCEEDINGS_LANES": "renderer tab lanes",
-    "ISOLATION_TEST": "renderer tab isolation",
-    "AUDIENCE_LENS": "reader-lens selector in prism and lanes"
+    "CONVERGENCE_CLUSTER": "Case Prism renders every proposition across the complete controlled lane denominator",
+    "FRAGMENTATION_AUDIT": "exact-proceeding isolation fades all material outside the selected file and restores the full corpus",
+    "DECISION_DEPENDENCY_MATRIX": "18 x 12 explicit matrix with relationship, file treatment, sources, contrary record and consequences",
+    "PARALLEL_PROCEEDINGS_LANES": "stable chronological swimlane table with one independent column per lane",
+    "ISOLATION_TEST": "exact canonical proceeding selector, visible/disappearing comparison and full-corpus restore",
+    "AUDIENCE_LENS": "nine reader lenses reprioritise questions without changing cells, sources or status"
+  },
+  "implementation_contract": {
+    "proposition_denominator": 18,
+    "lane_denominator": 12,
+    "explicit_coordinate_denominator": 216,
+    "unexplained_coordinate_denominator": 0,
+    "exact_proceeding_isolation_required": true,
+    "full_corpus_restore_required": true,
+    "stable_lane_columns_required": true,
+    "bilingual_period_and_source_routes_required": true,
+    "bilingual_evidence_status_catalog_required": true,
+    "independent_case_prism_generation_seed_required": true,
+    "counsel_procurador_denominator_may_not_be_inferred_complete": true
   },
   "edge_statuses": [
     "DOCUMENTED_OR_EXPLICIT_REGISTER_RELATION",
