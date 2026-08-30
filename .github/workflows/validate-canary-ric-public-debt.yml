@@ -1,0 +1,50 @@
+name: Validate Canary RIC public debt
+
+on:
+  pull_request:
+    paths:
+      - "es/deuda-publica-ric-canarias/**"
+      - "en/canary-ric-public-debt/**"
+      - "assets/data/canary-ric-public-debt-v1.json"
+      - "assets/data/unitary-route-registry-v1.json"
+      - "archive/CANARY_PUBLIC_DEBT_RIC_UNITARY_CONTROL_30AUG2026.md"
+      - "archive/MISSING_EVIDENCE_REGISTER.md"
+      - "archive/CORRECTION_REGISTER.md"
+      - "archive/CONTINUOUS_MAINTENANCE_MATRIX.md"
+      - "CURRENT_REVERSE_ENGINEERED_DIGEST.md"
+      - "publication-manifests/canary-ric-public-debt-20260830.json"
+      - "sitemap-canary-ric-public-debt.xml"
+      - "robots.txt"
+      - "scripts/validate_canary_ric_public_debt.py"
+      - ".github/workflows/validate-canary-ric-public-debt.yml"
+  push:
+    branches: [main]
+    paths:
+      - "es/deuda-publica-ric-canarias/**"
+      - "en/canary-ric-public-debt/**"
+      - "assets/data/canary-ric-public-debt-v1.json"
+      - "assets/data/unitary-route-registry-v1.json"
+      - "archive/CANARY_PUBLIC_DEBT_RIC_UNITARY_CONTROL_30AUG2026.md"
+      - "archive/MISSING_EVIDENCE_REGISTER.md"
+      - "archive/CORRECTION_REGISTER.md"
+      - "archive/CONTINUOUS_MAINTENANCE_MATRIX.md"
+      - "CURRENT_REVERSE_ENGINEERED_DIGEST.md"
+      - "publication-manifests/canary-ric-public-debt-20260830.json"
+      - "sitemap-canary-ric-public-debt.xml"
+      - "robots.txt"
+      - "scripts/validate_canary_ric_public_debt.py"
+      - ".github/workflows/validate-canary-ric-public-debt.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
+        with:
+          python-version: "3.12"
+      - run: python scripts/validate_canary_ric_public_debt.py
