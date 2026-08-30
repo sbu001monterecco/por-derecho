@@ -1,0 +1,50 @@
+{
+  "schema": "por-derecho.unresolved-proceeding-interlink-manifest.v1",
+  "publication_id": "PD-SP-ARRECIFE-1304-2014-20260830-01",
+  "owner": "Por Derecho / Project Sun Rock",
+  "control_date": "2026-08-30",
+  "current_state": "PREPARED_PENDING_MERGE",
+  "state": "PREPARED_PENDING_MERGE",
+  "purpose": "Preserve and expose the user-supplied Arrecife reference 1304/2014 without manufacturing a proceeding identity, caret or direct procedural relationship.",
+  "canonical_key": "LZ-REF-044",
+  "canonical_source": "archive/PROCEEDINGS_MASTER_REGISTER.csv",
+  "identity_state": "UNRESOLVED_PRIMARY_SOURCE_NOT_LOCATED",
+  "caret_state": "WITHHELD",
+  "direct_edge_state": "NONE_SOURCE_ESTABLISHED",
+  "contextual_bridge_state": "PUBLIC_SEARCH_AND_CHRONOLOGY_FOR_ARRECIFE_2014; TRACE_CONTEXT_BY_SAME_LANZAROTE_GEOGRAPHY_ONLY",
+  "expected_routes": {
+    "en": ["en/master-proceedings-register/index.html", "en/proceedings-map/index.html"],
+    "es": ["es/registro-maestro-procedimientos/index.html", "es/mapa-procedimientos/index.html"]
+  },
+  "expected_source_files": [
+    "archive/PROCEEDINGS_MASTER_REGISTER.csv",
+    "archive/ARRECIFE_1304_2014_IDENTITY_AND_INTERLINK_GAP_30AUG2026.md",
+    "archive/MISSING_EVIDENCE_REGISTER.md",
+    "assets/data/counsel-procurador-gap-register-v1.json",
+    "scripts/audit_proceedings_interconnectivity_map.py",
+    "scripts/audit_counsel_procurador_governance.py",
+    ".github/workflows/audit-proceedings-interconnectivity-map.yml",
+    "docs/deletion-audits/2026-08-30-arrecife-1304-2014-identity-interlink-continuity.md"
+  ],
+  "collision_controls": [
+    "DP 332/2014",
+    "DP 3017/2014",
+    "DP 168/2015",
+    "Juicio de faltas 3205/2014",
+    "P.O. 562/2014"
+  ],
+  "validation": {
+    "status": "LOCAL_VALIDATION_PASSED_CI_PENDING",
+    "expected_canonical_rows": 107,
+    "expected_controlled_public_rows": 106,
+    "expected_caret_count": 0,
+    "expected_direct_edge_count": 0,
+    "local_evidence": [
+      "Proceedings interconnectivity map audit passed with 107 canonical rows and 106 controlled public rows after collision-safe reconciliation with Arrecife 4009/2015 at LZ-REF-042, DP 974/2023 at LZ-JUD-042 and 3205/2014 at LZ-JUD-043.",
+      "Master proceedings publication, counsel/procurador governance, Case Prism build, repository preservation, publication integrity, audience experience and private-source governance checks passed.",
+      "Runtime-source simulation confirmed LZ-REF-044 is public-eligible UNVERIFIED, has zero non-empty direct-edge fields, is absent from Case Prism and has same-geography context only."
+    ]
+  },
+  "deployment_evidence": null,
+  "continuity_rule": "Do not promote LZ-REF-044 to a proceeding, add a CAEPR caret or create a direct procedural edge until a signed/certified primary source resolves the exact identity and relationship. Preserve the user-supplied expression as alias provenance if later corrected."
+}

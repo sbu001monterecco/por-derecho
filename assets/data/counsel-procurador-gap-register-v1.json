@@ -129,6 +129,19 @@
       "search_performed": "Exact and variant searches across current repository text/PDFs, connected Gmail, Google Drive, ChatGPT Library and public web located no primary 4009/2015 Arrecife source.",
       "next_retrieval_route": "Search counsel/procurador archives and obtain a certified Arrecife docket or any signed source bearing 4009/2015; reconcile before adding professional or direct-procedural edges.",
       "status": "OPEN"
+    },
+    {
+      "gap_id": "CP-GAP-010",
+      "gap_type": "proceeding_identity_and_representation_lineage",
+      "professional": null,
+      "proceeding_id": "LZ-REF-044 / 1304/2014",
+      "what_missing": "The exact Arrecife court/organ, procedural class, parties and proceeding file are unverified; no lawyer, procurador/a, personación, authority instrument or filing lineage can therefore be attributed.",
+      "why_it_matters": "Representation must not be inherited from a nearby Arrecife proceeding or inferred from a bare reference.",
+      "existence_evidence_ref": "User-supplied reference 1304/2014; no primary procedural source located in the finite 30-Aug-2026 scan",
+      "likely_source": "signed/certified court act, cédula, docket index, native filing, LexNET receipt, poder, apud acta or personación record",
+      "search_performed": "Exact-reference variants checked across the current repository and history, connected Drive/mail/Library sources and the native bilingual proceedings matrix; no exact identity source located.",
+      "next_retrieval_route": "Resolve the proceeding identity first, then scan the complete file for lawyer-by-lawyer and procurador-by-procurador representation, filing, response and appeal lineage.",
+      "status": "OPEN"
     }
   ]
 }

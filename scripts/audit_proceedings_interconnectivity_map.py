@@ -17,10 +17,11 @@ REQUIRED = [
     "archive/CAIXABANK_VALENCIA_01859_2023_REGISTRATION_GAP_30AUG2026.md",
     "archive/PROCEEDINGS_MASTER_REGISTER_VALENCIA_1859_2023_OVERLAY_30AUG2026.md",
     "archive/GC_548_2023_PLAZA2_T1_CARET_CONTINUITY_CONTROL_30AUG2026.md",
-    "archive/MISSING_EVIDENCE_REGISTER.md",
+    "archive/ARRECIFE_1304_2014_IDENTITY_AND_INTERLINK_GAP_30AUG2026.md",
     "archive/PROCEEDINGS_CASE_PRISM_V1_SEED_30AUG2026.json",
     "archive/knowledge-project/DP1956_STATUS_REOPENING_CORRECTION_18AUG2026.md",
     "archive/PROCEEDINGS_MASTER_REGISTER.csv",
+    "archive/MISSING_EVIDENCE_REGISTER.md",
     "assets/data/proceedings-interconnectivity-schema-v1.json",
     "assets/data/proceedings-case-prism-v1.json",
     "assets/data/caepr-caret-alberto-meeting-point-first-hop-v1.json",
@@ -33,6 +34,8 @@ REQUIRED = [
     "es/reconstruccion-unitaria-autoridades-publicas/index.html",
     "scripts/build_proceedings_case_prism_v2.py",
     "publication-manifests/gc-548-2023-plaza2-t1-caret-20260830.json",
+    "publication-manifests/arrecife-1304-2014-identity-interlink-20260830.json",
+    "docs/deletion-audits/2026-08-30-arrecife-1304-2014-identity-interlink-continuity.md",
 ]
 errors: list[str] = []
 
@@ -75,9 +78,23 @@ if not errors:
     ids = [row["Master_ID"].strip() for row in rows]
     by_id = {row["Master_ID"].strip(): row for row in rows}
     public_rows = [row for row in rows if not any(token in row["Public_Treatment"].upper() for token in ("INTERNAL_ONLY", "PRIVATE", "NOT_SITE_AGGREGATED"))]
-    require(len(rows) == 106, f"canonical denominator: expected 106, found {len(rows)}")
+    require(len(rows) == 107, f"canonical denominator: expected 107, found {len(rows)}")
     require(len(ids) == len(set(ids)), "duplicate canonical Master_ID")
-    require(len(public_rows) == 105, f"public denominator: expected 105, found {len(public_rows)}")
+    require(len(public_rows) == 106, f"public denominator: expected 106, found {len(public_rows)}")
+
+    # A bare user-supplied reference stays discoverable without receiving a caret
+    # or a manufactured direct procedural edge.
+    arrecife_1304 = by_id.get("LZ-REF-044", {})
+    require(arrecife_1304.get("Record_Type") == "UNRESOLVED_REFERENCE", "LZ-REF-044 must remain an unresolved-reference object")
+    require(arrecife_1304.get("Is_Proceeding") == "UNVERIFIED", "LZ-REF-044 must not receive a proceeding caret without primary identity proof")
+    require(arrecife_1304.get("Reference") == "1304/2014", "LZ-REF-044 reference drift")
+    require(arrecife_1304.get("Proceeding_Class") == "REGISTERED_ONLY", "LZ-REF-044 class must remain registered-only")
+    require(arrecife_1304.get("Parent_Master_ID") == "" and arrecife_1304.get("Linked_Proceedings") == "" and arrecife_1304.get("Appeal_or_Review") == "", "LZ-REF-044 contains an unsupported direct procedural edge")
+    require(arrecife_1304.get("Source_Status") == "USER_SUPPLIED_REFERENCE_PRIMARY_NOT_LOCATED", "LZ-REF-044 source boundary drift")
+    require(arrecife_1304.get("Public_Treatment") == "PUBLIC_SUMMARY_WITH_IDENTITY_GAP", "LZ-REF-044 public identity-gap treatment missing")
+    require("Signed/certified court source" in arrecife_1304.get("Open_Reference_Gap", ""), "LZ-REF-044 finite source request missing")
+    require("No CAEPR proceeding admission or caret" in arrecife_1304.get("Notes", ""), "LZ-REF-044 caret-withholding control missing")
+    require("| ME-114 |" in missing_evidence and "`1304/2014`" in missing_evidence, "LZ-REF-044 missing-evidence control ME-114 missing")
 
     # Corrections must be consolidated into the runtime source, not left as overlays.
     val = by_id.get("VAL-CIV-001", {})
@@ -263,11 +280,14 @@ if not errors:
         "archive/CAIXABANK_VALENCIA_01859_2023_REGISTRATION_GAP_30AUG2026.md",
         "archive/PROCEEDINGS_MASTER_REGISTER_VALENCIA_1859_2023_OVERLAY_30AUG2026.md",
         "archive/GC_548_2023_PLAZA2_T1_CARET_CONTINUITY_CONTROL_30AUG2026.md",
+        "archive/ARRECIFE_1304_2014_IDENTITY_AND_INTERLINK_GAP_30AUG2026.md",
         "archive/MISSING_EVIDENCE_REGISTER.md",
         "archive/PROCEEDINGS_CASE_PRISM_V1_SEED_30AUG2026.json",
         "assets/data/caepr-caret-alberto-meeting-point-first-hop-v1.json",
         "scripts/build_proceedings_case_prism_v2.py", "assets/data/counsel-procurador-gap-register-v1.json",
         "publication-manifests/gc-548-2023-plaza2-t1-caret-20260830.json",
+        "publication-manifests/arrecife-1304-2014-identity-interlink-20260830.json",
+        "docs/deletion-audits/2026-08-30-arrecife-1304-2014-identity-interlink-continuity.md",
     ]:
         require(path in workflow, f"workflow filter missing dependency: {path}")
 
@@ -278,7 +298,7 @@ if errors:
     raise SystemExit(1)
 
 print("PROCEEDINGS INTERCONNECTIVITY MAP AUDIT: PASS")
-print("- canonical denominator: 106 rows / 105 controlled public rows")
+print("- canonical denominator: 107 rows / 106 controlled public rows")
 print("- overlays consolidated and parent graph acyclic")
 print("- Case Prism: 19 propositions x 12 lanes = 228 explicit coordinates / 0 unexplained")
 print("- relationship and file-treatment axes independently validated")

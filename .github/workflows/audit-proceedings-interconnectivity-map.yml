@@ -4,6 +4,7 @@ on:
   pull_request:
     paths:
       - 'archive/PROCEEDINGS_MASTER_REGISTER.csv'
+      - 'archive/MISSING_EVIDENCE_REGISTER.md'
       - '.github/governance/UNITARY_PROCEEDINGS_INTERCONNECTIVITY_MAP_PROTOCOL_30AUG2026.md'
       - '.github/governance/A_SCAN_360_CASE_PRISM_AND_READER_LENS_PROTOCOL_30AUG2026.md'
       - 'archive/PROCEEDINGS_ANTI_FRAGMENTATION_CONVERGENCE_RULE_30AUG2026.md'
@@ -11,7 +12,7 @@ on:
       - 'archive/CAIXABANK_VALENCIA_01859_2023_REGISTRATION_GAP_30AUG2026.md'
       - 'archive/PROCEEDINGS_MASTER_REGISTER_VALENCIA_1859_2023_OVERLAY_30AUG2026.md'
       - 'archive/GC_548_2023_PLAZA2_T1_CARET_CONTINUITY_CONTROL_30AUG2026.md'
-      - 'archive/MISSING_EVIDENCE_REGISTER.md'
+      - 'archive/ARRECIFE_1304_2014_IDENTITY_AND_INTERLINK_GAP_30AUG2026.md'
       - 'archive/PROCEEDINGS_CASE_PRISM_V1_SEED_30AUG2026.json'
       - 'archive/knowledge-project/ALLEGATIONS_CROSSWALK_AN2023_DP1901_DP1956_CONTROL24_16AUG2026.md'
       - 'archive/knowledge-project/DP1956_STATUS_REOPENING_CORRECTION_18AUG2026.md'
@@ -43,13 +44,16 @@ on:
       - 'publication-manifests/ascan-360-case-prism-20260830.json'
       - 'publication-manifests/ascan-360-case-prism-v2-repair-20260830.json'
       - 'publication-manifests/gc-548-2023-plaza2-t1-caret-20260830.json'
+      - 'publication-manifests/arrecife-1304-2014-identity-interlink-20260830.json'
       - 'docs/deletion-audits/2026-08-30-a-scan-360-case-prism-continuity.md'
       - 'docs/deletion-audits/2026-08-30-a-scan-360-case-prism-v2-repair-continuity.md'
       - 'docs/deletion-audits/2026-08-30-unitary-proceedings-interconnectivity-map-continuity.md'
+      - 'docs/deletion-audits/2026-08-30-arrecife-1304-2014-identity-interlink-continuity.md'
   push:
     branches: [main]
     paths:
       - 'archive/PROCEEDINGS_MASTER_REGISTER.csv'
+      - 'archive/MISSING_EVIDENCE_REGISTER.md'
       - '.github/governance/UNITARY_PROCEEDINGS_INTERCONNECTIVITY_MAP_PROTOCOL_30AUG2026.md'
       - '.github/governance/A_SCAN_360_CASE_PRISM_AND_READER_LENS_PROTOCOL_30AUG2026.md'
       - 'archive/PROCEEDINGS_ANTI_FRAGMENTATION_CONVERGENCE_RULE_30AUG2026.md'
@@ -57,7 +61,7 @@ on:
       - 'archive/CAIXABANK_VALENCIA_01859_2023_REGISTRATION_GAP_30AUG2026.md'
       - 'archive/PROCEEDINGS_MASTER_REGISTER_VALENCIA_1859_2023_OVERLAY_30AUG2026.md'
       - 'archive/GC_548_2023_PLAZA2_T1_CARET_CONTINUITY_CONTROL_30AUG2026.md'
-      - 'archive/MISSING_EVIDENCE_REGISTER.md'
+      - 'archive/ARRECIFE_1304_2014_IDENTITY_AND_INTERLINK_GAP_30AUG2026.md'
       - 'archive/PROCEEDINGS_CASE_PRISM_V1_SEED_30AUG2026.json'
       - 'archive/knowledge-project/ALLEGATIONS_CROSSWALK_AN2023_DP1901_DP1956_CONTROL24_16AUG2026.md'
       - 'archive/knowledge-project/DP1956_STATUS_REOPENING_CORRECTION_18AUG2026.md'
@@ -89,9 +93,11 @@ on:
       - 'publication-manifests/ascan-360-case-prism-20260830.json'
       - 'publication-manifests/ascan-360-case-prism-v2-repair-20260830.json'
       - 'publication-manifests/gc-548-2023-plaza2-t1-caret-20260830.json'
+      - 'publication-manifests/arrecife-1304-2014-identity-interlink-20260830.json'
       - 'docs/deletion-audits/2026-08-30-a-scan-360-case-prism-continuity.md'
       - 'docs/deletion-audits/2026-08-30-a-scan-360-case-prism-v2-repair-continuity.md'
       - 'docs/deletion-audits/2026-08-30-unitary-proceedings-interconnectivity-map-continuity.md'
+      - 'docs/deletion-audits/2026-08-30-arrecife-1304-2014-identity-interlink-continuity.md'
 
 permissions:
   contents: read
