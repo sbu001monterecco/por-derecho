@@ -1,0 +1,59 @@
+{
+  "publication_id": "PD-TREASURY-TRANSPARENCY-7-2026-20260830-01",
+  "owner": "Por Derecho / Project Sun Rock",
+  "control_date": "2026-08-30",
+  "current_state": "PREPARED_PENDING_MERGE",
+  "state": "DELETION_SAFE_WITH_OPEN_STAGED_PRODUCTION_AND_PRIVATE_SOURCE_CUSTODY_RETAINED",
+  "source_base_sha": "259d055299d8508b7d89963b4b5d8ceecf4a50a1",
+  "purpose": "Correct and publish the Treasury transparency 7/2026 procedural record after review of the signed implementation act, the Colabora delivery event and the first eight-file / 734-page production tranche.",
+  "reader_facing_material_update": true,
+  "material_update_reason": "The earlier dedicated pages incorrectly retained a provisional not-yet-reviewed boundary and the internal proceedings summary attributed Resolution 154/2026 to the wrong organ.",
+  "expected_routes": {
+    "es": ["es/tesoro-transparencia-7-2026-28agosto/index.html"],
+    "en": ["en/treasury-transparency-7-2026-28-august/index.html"],
+    "data": ["assets/data/treasury-transparency-7-2026-v1.json"],
+    "discovery": ["sitemap-treasury-transparency-7-2026.xml"]
+  },
+  "canonical_records": [
+    "archive/TESORO_TRANSPARENCIA_7_2026_CONTINUITY_AUDIT_28AUG2026.md",
+    "archive/PROCEEDINGS_MASTER_REGISTER.csv#NAT-TES-001",
+    "archive/MISSING_EVIDENCE_REGISTER.md#ME-110",
+    "archive/CORRECTION_REGISTER.md#CR-151"
+  ],
+  "source_corpus": {
+    "signed_act_pages": 3,
+    "first_tranche_files": 8,
+    "first_tranche_pages": 734,
+    "binary_publication": "EXCLUDED_PRIVATE_SOURCE_BINARIES",
+    "later_staged_production": "OPEN_UNDER_ME_110"
+  },
+  "official_capacity": {
+    "name": "María Teresa Bosch Llinares",
+    "office": "Directora General del Tesoro y Política Financiera",
+    "publication_basis": "Named signer in a reviewed official act",
+    "boundary": "No personal profile and no attribution outside source-supported official acts"
+  },
+  "privacy_exclusions": [
+    "password and security codes",
+    "access and acceptance links",
+    "recipient address and unnecessary personal identifiers",
+    "raw email",
+    "provider message and thread IDs",
+    "exact private transport timestamps",
+    "signature image",
+    "private source binaries"
+  ],
+  "non_inference_rules": [
+    "Repeated automated transmissions are not separate substantive decisions.",
+    "Official-capacity signature does not establish personal responsibility outside the signed act.",
+    "First-tranche review does not establish completion of later staged production.",
+    "The access production does not establish a public-bond allocation to HNT or an Acosta Matos subscriber bridge.",
+    "Treasury 7/2026, Resolution 28/2026 and Law 2/2023 routing remain separate files and acts."
+  ],
+  "validation": {
+    "local": "PENDING",
+    "pull_request_checks": "PENDING",
+    "pages": "PENDING",
+    "live_readback": "PENDING"
+  }
+}
