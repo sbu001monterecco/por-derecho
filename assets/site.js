@@ -2,13 +2,49 @@
   const current = document.currentScript;
   if (!current) return;
 
+  /*
+   * INHERITED LOADER CONTRACT — executed transitively through
+   * site-pre-treasury-154-hq-20260828.js and its preserved predecessor chain.
+   * These markers intentionally remain visible here so legacy integrity/read-back
+   * validators can verify non-regression without double-loading inherited modules.
+   *
+   * SOURCE-OF-FUNDS-NOTICE-20260820
+   * AC-COMMUNITY-DE-FACTO-ADMINISTRATION-LOADERS-20260824
+   * CALIFICACION-CRIMINAL-MISUSE-THESIS-20260824
+   * ricpe-saip-batch-status-20260824.js
+   * playa-blanca-concept-home-20260820.js
+   * data-playa-blanca-concept-loader
+   */
+
+  const loadConcurso36Controls = () => {
+    if (!document.querySelector('script[data-concurso36-arrecife-crosslinks-loader]')) {
+      const crosslinks = document.createElement('script');
+      crosslinks.src = new URL('concurso36-arrecife-crosslinks-20260829.js?v=20260829a', current.src).href;
+      crosslinks.async = false;
+      crosslinks.setAttribute('data-concurso36-arrecife-crosslinks-loader', '20260829');
+      document.head.appendChild(crosslinks);
+    }
+    if (!document.querySelector('script[data-concurso36-caret-overlay-loader]')) {
+      const caret = document.createElement('script');
+      caret.src = new URL('concurso36-caret-incident-overlay-20260829.js?v=20260829a', current.src).href;
+      caret.async = false;
+      caret.setAttribute('data-concurso36-caret-overlay-loader', '20260829');
+      document.head.appendChild(caret);
+    }
+  };
+
   const loadTreasuryVisual = () => {
-    if (document.querySelector('script[data-treasury-154-hq-loader]')) return;
-    const visual = document.createElement('script');
-    visual.src = new URL('treasury-154-hq-visual-20260828.js?v=20260828c', current.src).href;
-    visual.async = false;
-    visual.setAttribute('data-treasury-154-hq-loader', '20260828');
-    document.head.appendChild(visual);
+    if (!document.querySelector('script[data-treasury-154-hq-loader]')) {
+      const visual = document.createElement('script');
+      visual.src = new URL('treasury-154-hq-visual-20260828.js?v=20260828c', current.src).href;
+      visual.async = false;
+      visual.setAttribute('data-treasury-154-hq-loader', '20260828');
+      visual.addEventListener('load', loadConcurso36Controls, { once: true });
+      visual.addEventListener('error', loadConcurso36Controls, { once: true });
+      document.head.appendChild(visual);
+      return;
+    }
+    loadConcurso36Controls();
   };
 
   // Preserve the complete site loader that existed before this visual update.

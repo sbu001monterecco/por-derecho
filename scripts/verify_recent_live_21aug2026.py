@@ -97,12 +97,21 @@ CHECKS: list[dict[str, Any]] = [
     },
     {
         "path": "assets/site.js",
+        "kind": "global_site_loader_chain",
+        "markers": [
+            "site-pre-treasury-154-hq-20260828.js?v=",
+            "data-pre-treasury-154-site-loader",
+        ],
+        "min_bytes": 500,
+    },
+    {
+        "path": "assets/site-pre-treasury-154-hq-20260828.js",
         "kind": "asset_recovery_global_loader",
         "markers": [
             "asset-recovery-preservation-20260821.js?v=",
             "data-asset-recovery-intervention-loader",
         ],
-        "min_bytes": 1000,
+        "min_bytes": 5000,
     },
 ]
 

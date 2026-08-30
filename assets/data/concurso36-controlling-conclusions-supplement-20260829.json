@@ -1,0 +1,165 @@
+{
+  "schema": "por-derecho.concurso36.controlling-conclusions-supplement.v1",
+  "date": "2026-08-29",
+  "status": "MANDATORY_NO_REGRESSION_OVERLAY",
+  "supersedes_conflicting_fields_in": [
+    "assets/data/concurso36-continuity-governance-20260829.json",
+    "older timelines, validators, generated datasets and handoffs"
+  ],
+  "canonical_governance": [
+    "CONCURSO36_UNITARY_CRIMINAL_FIRST_GOVERNANCE.md",
+    "CHATGPT_START_HERE_CONCURSO36_DUAL_LENS_GOVERNANCE.md",
+    "CONCURSO36_CONTROLLING_CONCLUSIONS_29AUG2026.md"
+  ],
+  "credit_ontology": {
+    "columns": [
+      "recognition",
+      "accrual",
+      "liquidation_payment",
+      "adjudication_setoff",
+      "modification"
+    ],
+    "rule": "Numerical continuity is not procedural authority. A later number is not a definitive-text amendment without the complete statutory modification bridge."
+  },
+  "definitive_text": {
+    "community_comparator": {
+      "date": "2017-01-20",
+      "classification": "GENUINE_DEFINITIVE_TEXT_MODIFICATION",
+      "meaning": "Formal machinery existed and was used to modify the definitive texts."
+    },
+    "cam_succession": {
+      "order_date": "2018-02-08",
+      "judge_signature_date": "2018-02-09",
+      "laj_signature_date": "2018-02-14",
+      "classification": "CREDITOR_SUCCESSION_WITHOUT_AMOUNT_CHANGE",
+      "visual_rule": "CHANGE OF CREDITOR ≠ CHANGE OF CREDIT",
+      "source_rule": "NOT CHANGE THE AMOUNT",
+      "recognized_components_eur": [
+        8194877.88,
+        857373.81
+      ],
+      "recognized_total_eur": 9052251.69
+    },
+    "june_liquidation_bridge": {
+      "date": "2018-06-04",
+      "classification": "LIQUIDATION_PLAN_CLARIFICATION_IMPLEMENTATION_NOT_DEMONSTRATED_FINAL_TEXT_AMENDMENT",
+      "certificate_date": "2018-05-17",
+      "components_eur": [
+        11887314.33,
+        1278518.03
+      ],
+      "total_eur": 13165832.36
+    },
+    "later_setoff_reference_eur": 13168082.02,
+    "unresolved_question": "Did approximately €13.166m lawfully operate only as the secured payoff/liquidation/bid amount while the definitive recognized credit remained approximately €9.052m, or was a further statutory modification of the definitive texts required for some part of that increase?",
+    "later_formal_amount_increase_bridge_status": "NOT_LOCATED_IN_CONTROLLED_CORPUS_NOT_PROVED_NONEXISTENT",
+    "permanent_gate": "No change to the texto definitivo is to be recorded unless the repository identifies the application, statutory gateway, contradictory procedure where required, judicial resolution ordering the modification, exact before/after entry, date of finality and resulting corrected inventory or creditor list."
+  },
+  "notice_and_protection": {
+    "ac_knowledge": {
+      "date": "2018-06-08",
+      "status": "ACTUAL_KNOWLEDGE_SUPPORTED_NOT_GENUINELY_OPEN",
+      "source_summary": "Juan Tomás Parrilla records ‘He llamado a Borja…’ and relays Borja's account.",
+      "remaining_question": "What Borja subsequently reported, verified, sought to protect, instructed, filed, accounted for and communicated.",
+      "takeover_specific_ac_mercantile_filing": "NOT_LOCATED"
+    },
+    "counsel_ledger": {
+      "date": "2018-06-13",
+      "sequence": [
+        "client_written_instruction",
+        "counsel_agrees_mercantile_should_be_informed",
+        "protective_escrito_drafted",
+        "tactical_timing_discussion",
+        "formal_filing_receipt_not_located"
+      ],
+      "interpretation": "Documented instruction/performance tension requiring explanation; not proof of criminal motive or intentional non-filing."
+    },
+    "arrecife_exhorto": {
+      "exhorto_date": "2018-05-02",
+      "mercantile_response_exists": true,
+      "arrecife_receipt_date": "2018-06-11",
+      "joined_by_arrecife_auto_date": "2018-06-13",
+      "proceeding": "DP 1132/2018",
+      "response_content": "MISSING",
+      "annexes": "MISSING",
+      "banner": "WE KNOW A RESPONSE EXISTED. WE DO NOT YET HAVE ITS CONTENT.",
+      "non_inference_rule": "A reply to the pre-7-June exhorto must not be presumed to address the 7-June events."
+    }
+  },
+  "convenio": {
+    "filed": true,
+    "lexnet_date": "2017-04-27",
+    "prohibited_legacy_statement": "LPB entered liquidation because it failed to present a convenio.",
+    "open_bridge": "Official/certified 28-Jun-2017 Junta record and complete Insolvency Administrator evaluation."
+  },
+  "article_176": {
+    "june_2018_historical_reference": "FORMER_LEY_CONCURSAL_ART_176",
+    "later_mapping": "TRLC_ART_465_6",
+    "rule": "Do not use later TRLC numbering as if it governed a June-2018 event."
+  },
+  "lender_track": {
+    "entity_chain": [
+      "Bankia",
+      "SAREB",
+      "Promontoria Holding 122 / Cerberus / Haya",
+      "Construcciones Acosta Matos"
+    ],
+    "loan_by_loan_required": true,
+    "loans": [
+      {
+        "loan": 1,
+        "recognized_comparator_eur": 8194877.88,
+        "june_2018_certificate_eur": 11887314.33
+      },
+      {
+        "loan": 2,
+        "recognized_comparator_eur": 857373.81,
+        "june_2018_certificate_eur": 1278518.03
+      }
+    ],
+    "required_components": [
+      "principal",
+      "contractual_interest",
+      "default_interest",
+      "mortgage_security_limit",
+      "enforcement_costs",
+      "exact_calculation_date",
+      "documentary_source",
+      "procedural_use",
+      "credit_ontology_column"
+    ]
+  },
+  "criminal_first_actor_test": [
+    "knowledge",
+    "historical_legal_duty_power",
+    "act_omission",
+    "stated_legal_basis",
+    "consistency_with_earlier_decisions",
+    "alleged_arbitrariness_deception",
+    "procedural_effect",
+    "patrimonial_effect",
+    "beneficiary_harm",
+    "evidence_bearing_on_intent",
+    "contrary_evidence",
+    "criminal_law_elements",
+    "adjudicative_status"
+  ],
+  "p0": [
+    "Actual 11-Jun-2018 Mercantile Court nº1 response to Arrecife and all annexes/content",
+    "Takeover-specific Concurso 36/2012 LexNET filing/receipt and judicial treatment, if filed",
+    "Any AC-authored takeover-specific report/filing or affirmative evidence of what he did instead",
+    "Official/certified 28-Jun-2017 Junta record and complete AC evaluation",
+    "Complete before/after/finality/corrected-list records for 20-Jan-2017 and 8-Feb-2018 definitive-text proceedings",
+    "Loan-by-loan €9.052m → €13.165832m → approximately €13.168082m reconciliation across the five credit columns",
+    "Adviser instruction → draft → timing decision → filing receipt → court-treatment chains",
+    "Certified electronic chronological index / official relation of procedural acts / equivalent per-piece export"
+  ],
+  "public_visuals": [
+    "CHANGE OF CREDITOR ≠ CHANGE OF CREDIT",
+    "8 FEBRUARY 2018 — NOT CHANGE THE AMOUNT",
+    "RECOGNITION → ACCRUAL → LIQUIDATION/PAYMENT → ADJUDICATION/SET-OFF → MODIFICATION",
+    "WE KNOW A RESPONSE EXISTED. WE DO NOT YET HAVE ITS CONTENT.",
+    "CLIENT INSTRUCTION → COUNSEL AGREES → DRAFT → TIMING DISCUSSION → FORMAL FILING RECEIPT NOT LOCATED",
+    "AC KNOWLEDGE BY 8 JUN → SUBSEQUENT PROTECTION/REPORTING/FILING/ACCOUNTING ACTION TO RECONSTRUCT"
+  ]
+}

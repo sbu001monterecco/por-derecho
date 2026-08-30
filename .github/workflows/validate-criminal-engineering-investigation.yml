@@ -12,6 +12,9 @@ on:
       - 'es/implementacion-registral-finca-por-finca/**'
       - 'en/land-registry-implementation-property-by-property/**'
       - 'assets/site.js'
+      - 'assets/site-pre-treasury-154-hq-20260828.js'
+      - 'assets/site-pre-intervencion-highlight-20260820.js'
+      - 'assets/site-pre-intervencion-highlight-before-eg95-20260823.js'
       - 'assets/case-information-architecture-20260819.js'
       - 'assets/criminal-engineering-investigation-20260819.js'
       - 'assets/reverse-engineering-360-20260819.js'
@@ -40,6 +43,9 @@ on:
       - 'es/implementacion-registral-finca-por-finca/**'
       - 'en/land-registry-implementation-property-by-property/**'
       - 'assets/site.js'
+      - 'assets/site-pre-treasury-154-hq-20260828.js'
+      - 'assets/site-pre-intervencion-highlight-20260820.js'
+      - 'assets/site-pre-intervencion-highlight-before-eg95-20260823.js'
       - 'assets/case-information-architecture-20260819.js'
       - 'assets/criminal-engineering-investigation-20260819.js'
       - 'assets/reverse-engineering-360-20260819.js'
@@ -78,6 +84,9 @@ jobs:
       - name: Syntax, JSON, sitemap and unitary audit
         run: |
           node --check assets/site.js
+          node --check assets/site-pre-treasury-154-hq-20260828.js
+          node --check assets/site-pre-intervencion-highlight-20260820.js
+          node --check assets/site-pre-intervencion-highlight-before-eg95-20260823.js
           node --check assets/case-information-architecture-20260819.js
           node --check assets/criminal-engineering-investigation-20260819.js
           node --check assets/reverse-engineering-360-20260819.js
@@ -110,7 +119,10 @@ jobs:
           PY
           grep -q 'sitemap-criminal-engineering.xml' robots.txt
           grep -q 'sitemap-case-governance.xml' robots.txt
-          grep -q 'case-information-architecture-20260819.js' assets/site.js
+          grep -q 'site-pre-treasury-154-hq-20260828.js' assets/site.js
+          grep -q 'site-pre-intervencion-highlight-20260820.js' assets/site-pre-treasury-154-hq-20260828.js
+          grep -q 'site-pre-intervencion-highlight-before-eg95-20260823.js' assets/site-pre-intervencion-highlight-20260820.js
+          grep -q 'case-information-architecture-20260819.js' assets/site-pre-intervencion-highlight-before-eg95-20260823.js
           mkdir -p artifacts/criminal-engineering-investigation
           python3 scripts/audit_criminal_engineering_repository.py > artifacts/criminal-engineering-investigation/repository-audit.json
           cat artifacts/criminal-engineering-investigation/repository-audit.json

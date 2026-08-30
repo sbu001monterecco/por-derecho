@@ -2,7 +2,22 @@
 
 **Date:** 29 August 2026  
 **Status:** mandatory companion governance for every legal/procedural review of Concurso 36/2012  
-**Machine control:** `assets/data/concurso36-procedural-taxonomy-judicial-ac-dual-lens-20260829.json`
+**Machine control:** `assets/data/concurso36-procedural-taxonomy-judicial-ac-dual-lens-20260829.json`  
+**Mandatory no-regression supplement:** `CONCURSO36_CONTROLLING_CONCLUSIONS_29AUG2026.md`  
+**Machine no-regression overlay:** `assets/data/concurso36-controlling-conclusions-supplement-20260829.json`
+
+## Mandatory read order
+
+Before relying on any older generated continuity dataset, validator, timeline or public page, read:
+
+1. `CONCURSO36_UNITARY_CRIMINAL_FIRST_GOVERNANCE.md`;
+2. this dual-lens file;
+3. `CONCURSO36_CONTROLLING_CONCLUSIONS_29AUG2026.md`;
+4. `assets/data/concurso36-controlling-conclusions-supplement-20260829.json`;
+5. the procedural-taxonomy machine control named above; and
+6. `CHATGPT_START_HERE_CONCURSO36_COURT_RECORD.md` for the current court-record/P0 denominator.
+
+Where an older generated object conflicts with the controlling conclusions, the supplement governs until a later dated primary-source correction record expressly supersedes it.
 
 ## Purpose
 
@@ -58,6 +73,22 @@ After classification, test without a presumption of benign regularity:
 13. subjective element where a criminal hypothesis requires it.
 
 For judicial prevaricación, CP art. 446 requires more than a wrong/adverse ruling: the investigation must address an unjust resolution and knowledge (`a sabiendas`).
+
+## Locked controlling corrections — apply before arithmetic
+
+The following are no-regression controls and are developed fully in `CONCURSO36_CONTROLLING_CONCLUSIONS_29AUG2026.md`:
+
+- **20 January 2017** is a genuine definitive-text modification comparator showing formal statutory machinery existed and was used.
+- **8 February 2018** changes creditor identity, not the recorded fixed amount: **CHANGE OF CREDITOR ≠ CHANGE OF CREDIT**; the primary rule is “not change the amount”. The recognized special-privilege comparator is **€8,194,877.88 + €857,373.81 = €9,052,251.69**.
+- **4 June 2018** is a liquidation-plan clarification/implementation bridge using **€11,887,314.33 + €1,278,518.03 = €13,165,832.36** for the operative liquidation/payoff/bid calculation; it is not itself a demonstrated statutory modification of the definitive texts.
+- Amounts must be kept in five separate columns: **recognition → accrual → liquidation/payment → adjudication/set-off → modification**. Numerical continuity is not procedural authority.
+- The correct unresolved amount question is whether approximately €13.166m operated lawfully only as payoff/liquidation arithmetic while recognized credit remained approximately €9.052m, or whether a further statutory final-text modification was required. A complete later amount-increase bridge is **NOT LOCATED**, not proved never to have existed.
+- IA knowledge of the 7-June allegations is supported by the **8-June “He llamado a Borja…”** record; the remaining question is what the IA then verified, protected, reported, filed and accounted for.
+- On **13 June**, counsel accepted that Mercantile should be informed and a protective pleading had been drafted; the canonical ledger ends **FORMAL FILING RECEIPT NOT LOCATED**. That is an instruction/performance tension, not proof of criminal motive.
+- Mercantile Court nº1 **did respond** to the 2-May Arrecife exhorto; Arrecife records receipt on **11 June** and the **13-June Auto** joins it into DP 1132/2018. Mandatory banner: **WE KNOW A RESPONSE EXISTED. WE DO NOT YET HAVE ITS CONTENT.** The pre-7-June response must not be presumed to address the 7-June event.
+- The **27-April-2017 LexNET** establishes that the convenio was presented. Do not say liquidation occurred because LPB failed to present one. The official/certified 28-June Junta record and complete IA evaluation remain open.
+- For June 2018 use historical **former Ley Concursal Article 176**; TRLC Article 465.6 is later numbering/mapping and must not be used anachronistically.
+- The lender track is continuous entity-by-entity but must be audited loan-by-loan, separating principal, contractual/default interest, security ceilings, enforcement costs, calculation dates and procedural use.
 
 ## 4 June 2018 — locked procedural position
 
@@ -130,8 +161,8 @@ Maintain a separate complaint-history lane. The connected corpus includes CGPJ D
 
 ## Improved autonomous continuation prompt
 
-> Continue the autonomous Concurso 36/2012 fact-and-truth reconstruction under the mandatory dual-lens protocol in `assets/data/concurso36-procedural-taxonomy-judicial-ac-dual-lens-20260829.json`. For every material act, first classify it under the historical procedural law (`incidente concursal`, definitive-text modification, liquidation-plan act, clarification/correction/completion, appeal/review, calificación, ordinary section filing/report, realisation/adjudication, testimony/finality or implementation). Then independently test the judge, Insolvency Administrator and relevant private actors against the existing cumulative multi-act allegations of non-neutrality, bias/asymmetry, institutional shielding/neutralisation, abuse/overreach of concursal powers, de facto/shadow control of LPB assets and potential judicial prevaricación — without treating an adverse outcome as a crime and without presuming unexplained official conduct benign. Preserve the Gil Marer/Aweswell position that the 4-June-2018 Auto was a liquidation-plan clarification, not an `incidente concursal`, and has not been shown to lawfully amend the definitive texts or convert CAM's approximately €9.052m definitive-text special-privilege amount into a lawful approximately €13.166m definitive creditor-list amount or liquidation-payoff/set-off basis. Reconcile former LC arts. 59, 97-97ter and 192-196, LEC 214-215, LOPJ 267 and CP 446 against each primary act. Require actor-specific knowledge, legal departure, procedural route, asymmetry, beneficiary/harm, causal implementation, repetition/pattern, subjective element and contrary/corrective evidence. Link CGPJ/prosecutorial complaint history as allegation context, not proof. Never call a material act an `incidente concursal` unless the primary docket/claim/admission or statute establishes that route. Never record a definitive-text change without the full modification gate. Close each source family end-to-end and keep the repository/site deletion-safe and publication-controlled.
+> Continue Concurso 36/2012 under `CONCURSO36_UNITARY_CRIMINAL_FIRST_GOVERNANCE.md`, this dual-lens protocol, `CONCURSO36_CONTROLLING_CONCLUSIONS_29AUG2026.md`, the machine no-regression overlay and `CHATGPT_START_HERE_CONCURSO36_COURT_RECORD.md`. For every material act, first classify it under the historical procedural law, then run the actor-specific criminal/prosecutorial test. Keep **recognition → accrual → liquidation/payment → adjudication/set-off → modification** separate; preserve **CHANGE OF CREDITOR ≠ CHANGE OF CREDIT**; treat 20-Jan-2017 as the genuine final-text comparator, 8-Feb-2018 as creditor succession without amount change, and 4-Jun-2018 as a liquidation-plan clarification/implementation bridge to €13,165,832.36 rather than a demonstrated final-text amendment. Recover the complete later amount-increase bridge if it exists; otherwise keep it NOT LOCATED. Preserve IA knowledge by 8-Jun, the counsel instruction→draft→receipt-not-located chain, the 27-Apr-2017 convenio filing, historical LC Art.176 numbering, and the Mercantile response to Arrecife as known to exist but missing in content. Keep the dedicated Arrecife↔Mercantile page and the existing continuity/court-record pages mutually linked. Treat authority before arithmetic as mandatory for every Community occurrence, keep Pieza 7 and Pieza 8 separately controlled, reconcile the lender track loan-by-loan, close the P0 primary-source families, repair rather than bypass CI failures, publish only through PR/CI/merge/Pages verification, and leave a dated deletion-safe closeout. Do not turn serious allegations into adjudicated criminal findings without competent judicial authority.
 
 ## Deletion-safe rule
 
-Future threads must recover this governance from the repository. Do not depend on the originating chat for the declared position, taxonomy or 4 June comparator.
+Future threads must recover this governance from the repository. Do not depend on the originating chat for the declared position, taxonomy, 4 June comparator, five-column credit model, Arrecife response rule, IA/counsel knowledge chains or P0 queue.
