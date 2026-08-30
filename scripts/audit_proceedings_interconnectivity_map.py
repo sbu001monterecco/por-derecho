@@ -45,8 +45,16 @@ if not errors:
         "chronology view": "renderChronology" in js,
         "governance beginning end": "beginning → end" in gov and "end → beginning" in gov,
         "governance direct context split": "DIRECT PROCEDURAL EDGE" in gov and "CONTEXTUAL BRIDGE" in gov,
+        "shared continuum hardwired": "Shared-continuum / anti-fragmentation convergence rule" in gov and "shared asset/control/credit/harm continuum" in gov,
+        "three appeals convergence": "three Audiencia Provincial appeals" in gov and "calificación appeal" in gov and "fee challenge" in gov,
+        "fragmentation audit": "Fragmentation / atomisation audit" in gov and "Who, if anyone, obtained a documented procedural or patrimonial benefit" in gov,
+        "fiscal unitary audit": "Ministerio Fiscal unitary-recognition audit" in gov,
+        "historical current lineage": "Historical-to-current lineage rule" in gov,
         "schema canonical source": schema.get("canonical_node_source") == "archive/PROCEEDINGS_MASTER_REGISTER.csv",
         "schema reverse navigation": schema.get("principles", {}).get("reverse_navigation_from_explicit_forward_edges_is_permitted") is True,
+        "schema shared continuum": schema.get("principles", {}).get("shared_asset_control_credit_harm_continuum_must_be_tested") is True,
+        "schema fragmentation audit": "FRAGMENTATION_ATOMISATION_AUDIT" in schema.get("context_lenses", {}),
+        "schema convergence view": "CONVERGENCE_CLUSTER" in schema.get("required_views", []),
     }
     for label, ok in checks.items():
         if not ok:
@@ -63,3 +71,4 @@ print("- canonical node source preserved")
 print("- EN/ES routes and master-register backlinks present")
 print("- explicit procedural edges separated from contextual lenses")
 print("- reverse trace, chronology and public-treatment safeguards present")
+print("- shared asset/control/credit/harm convergence and fragmentation audit are hardwired")
