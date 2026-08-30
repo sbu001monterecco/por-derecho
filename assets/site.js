@@ -14,7 +14,17 @@
    * ricpe-saip-batch-status-20260824.js
    * playa-blanca-concept-home-20260820.js
    * data-playa-blanca-concept-loader
+   * MASTER_PROCEEDINGS_PUBLICATION_GATE_20260830
    */
+
+  const loadMasterProceedingsPublication = () => {
+    if (document.querySelector('script[data-master-proceedings-publication-loader]')) return;
+    const proceedings = document.createElement('script');
+    proceedings.src = new URL('master-proceedings-publication-20260830.js?v=20260830a', current.src).href;
+    proceedings.async = false;
+    proceedings.setAttribute('data-master-proceedings-publication-loader', '20260830a');
+    document.head.appendChild(proceedings);
+  };
 
   const loadConcurso36Controls = () => {
     if (!document.querySelector('script[data-concurso36-arrecife-crosslinks-loader]')) {
@@ -31,6 +41,7 @@
       caret.setAttribute('data-concurso36-caret-overlay-loader', '20260829');
       document.head.appendChild(caret);
     }
+    loadMasterProceedingsPublication();
   };
 
   const loadTreasuryVisual = () => {

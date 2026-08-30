@@ -1,0 +1,90 @@
+{
+  "publication_id": "PD-SP-MASTER-PROCEEDINGS-20260830-01",
+  "owner": "Por Derecho / Project Sun Rock",
+  "control_date": "2026-08-30",
+  "current_state": "PREPARED_PENDING_MERGE",
+  "state": "PREPARED_PENDING_MERGE",
+  "schema": "por-derecho-master-proceedings-publication-v1",
+  "purpose": "Publish a controlled bilingual Master Proceedings Register as the procedural spine for the multitrack storyline/timeline, while preserving legally distinct tracks, source status, open gaps and counsel/procurador lineage.",
+  "merge_sha": null,
+  "canonical_source": "archive/PROCEEDINGS_MASTER_REGISTER.csv",
+  "expected_routes": {
+    "es": [
+      "es/registro-maestro-procedimientos/index.html"
+    ],
+    "en": [
+      "en/master-proceedings-register/index.html"
+    ]
+  },
+  "expected_source_files": [
+    "archive/PROCEEDINGS_MASTER_REGISTER.csv",
+    "archive/PROCEEDINGS_MASTER_REGISTER_PROTOCOL.md",
+    "archive/MASTER_PROCEEDINGS_PUBLICATION_GOVERNANCE_30AUG2026.md",
+    "assets/master-proceedings-publication-20260830.js",
+    "assets/master-proceedings-publication-20260830.css",
+    "scripts/audit_master_proceedings_publication.py",
+    ".github/workflows/audit-master-proceedings-publication.yml"
+  ],
+  "governance": [
+    "archive/PROCEEDINGS_MASTER_REGISTER_PROTOCOL.md",
+    "archive/MASTER_PROCEEDINGS_PUBLICATION_GOVERNANCE_30AUG2026.md",
+    "archive/COUNSEL_PROCURADOR_FILING_LINEAGE_GOVERNANCE_30AUG2026.md"
+  ],
+  "public_projection": {
+    "source": "canonical_csv_runtime_projection",
+    "qualification": "The visible aggregate is a restricted rendering of selected fields from the canonical public-repository CSV; it is not a separate merits register and does not make an index row a finding, admission or prosecution.",
+    "exclude_public_treatment_contains": [
+      "INTERNAL_ONLY",
+      "PRIVATE",
+      "NOT_SITE_AGGREGATED"
+    ],
+    "not_rendered_by_default": [
+      "Notes",
+      "Primary_Source_Anchor",
+      "private strategy",
+      "privileged legal advice",
+      "personal contact details"
+    ],
+    "must_preserve": [
+      "Is_Proceeding TRUE/FALSE/UNVERIFIED",
+      "Record_Type",
+      "Proceeding_Class",
+      "Stream",
+      "Origin_Organ",
+      "Current_Custodian",
+      "Reference",
+      "Date_or_Period",
+      "Connection",
+      "Object_or_Purpose",
+      "Status",
+      "Latest_Known_Event",
+      "Appeal_or_Review",
+      "Parent_Master_ID",
+      "Linked_Proceedings",
+      "Source_Status",
+      "Open_Reference_Gap"
+    ]
+  },
+  "interlinking": {
+    "sitewide_navigation": true,
+    "recovery_timeline_callout": true,
+    "bilingual_reciprocal_links": true,
+    "purpose": "procedural_spine_for_multitrack_storyline_timeline"
+  },
+  "implementation": [
+    "en/master-proceedings-register/index.html",
+    "es/registro-maestro-procedimientos/index.html",
+    "assets/master-proceedings-publication-20260830.js",
+    "assets/master-proceedings-publication-20260830.css",
+    "assets/site.js",
+    "scripts/audit_master_proceedings_publication.py",
+    ".github/workflows/audit-master-proceedings-publication.yml"
+  ],
+  "continuity_rule": "Future proceedings threads must maintain the canonical CSV, public projection, explicit internal/private visible exclusions, source/open-gap states, parent-child and appeal/referral relationships, counsel/procurador lineage, and two-way links with the storyline/timeline.",
+  "publication_closeout": {
+    "pull_request": null,
+    "merge_sha": null,
+    "pages_run": null,
+    "routes_verified": false
+  }
+}
