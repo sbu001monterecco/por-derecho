@@ -16,6 +16,16 @@
    * data-playa-blanca-concept-loader
    */
 
+  const loadPlanCounselCrosslinks = () => {
+    if (!document.querySelector('script[data-concurso36-plan-counsel-crosslinks-loader]')) {
+      const planCounsel = document.createElement('script');
+      planCounsel.src = new URL('concurso36-liquidation-plan-counsel-crosslinks-20260830.js?v=20260830a', current.src).href;
+      planCounsel.async = false;
+      planCounsel.setAttribute('data-concurso36-plan-counsel-crosslinks-loader', '20260830');
+      document.head.appendChild(planCounsel);
+    }
+  };
+
   const loadConcurso36Controls = () => {
     if (!document.querySelector('script[data-concurso36-arrecife-crosslinks-loader]')) {
       const crosslinks = document.createElement('script');
@@ -31,6 +41,7 @@
       caret.setAttribute('data-concurso36-caret-overlay-loader', '20260829');
       document.head.appendChild(caret);
     }
+    loadPlanCounselCrosslinks();
   };
 
   const loadTreasuryVisual = () => {
