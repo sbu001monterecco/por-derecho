@@ -1,71 +1,86 @@
-# CAIXABANK / VALENCIA 01859/2023 — REGISTRATION GAP CONTROL
+# CAIXABANK / VALENCIA ORD 1859/2023-9 — MASTER-REGISTER GAP CONTROL
 
 **Date:** 30 August 2026  
-**Status:** controlling source-reconciliation / Proceedings Master Register gap  
+**Status:** exact proceeding identity/status VERIFIED; canonical Proceedings Master Register row still missing  
 **Durable gap key:** `GAP-VAL-CAIXABANK-01859-2023`
 
-## 1. Located identity
+## 1. Exact controlled identity — verified
 
-Connected Gmail correspondence reviewed on 30 August 2026 identifies a distinct proceeding as:
+The repository's source-controlled public CaixaBank/Valencia dossier records, from a signed court diligence dated 6 November 2025:
 
-- `Procedimiento 01859/2023`;
-- `Juzgado de Primera Instancia nº 27 de Valencia`;
-- Aweswell / CaixaBank perimeter;
-- described in contemporaneous correspondence as the Valencia swap / financial-package litigation.
+- **Parties:** Aweswell Limited v CAIXABANK, S.A.;
+- **proceeding:** Ordinary Proceeding `[ORD] 1859/2023-9`;
+- **court:** Juzgado de Primera Instancia nº 27 de Valencia;
+- **N.I.G.:** `46250-42-1-2023-0049579`;
+- **current hearing:** **28 January 2027 at 10:00**;
+- **status:** pending and contested; no merits judgment or adjudicated recovery located in the controlled public record.
 
-A 1 April 2026 correspondence subject line records: `Procedimiento 01859/2023 Awswell-Caixabank (JPI.27 Valencia)` and refers to a hearing first expected in November 2025 and postponed into January 2027.
+The same dossier records that the hearing originally listed for 6 November 2025 at 10:00 did not proceed after the opposing expert reported a cancelled flight the evening before, and that the signed 6 November 2025 diligence relisted it for 28 January 2027 at 10:00.
 
-Separate contemporaneous professional correspondence of 7 November 2025 also describes the Valencia hearing as suspended into January 2027 and treats the then-pending Administrador Concursal separation route as materially consequential to the Valencia litigation. That correspondence may contain privileged/private strategy and is **not automatically public-source material**.
+Canonical public source:
 
-## 2. Current master-register defect
+`en/caixabank-valencia-claim/index.html`
 
-The current canonical `archive/PROCEEDINGS_MASTER_REGISTER.csv` does not visibly register this exact `01859/2023 / JPI nº27 Valencia / Aweswell–CaixaBank` identity in the located row set.
+Spanish counterpart:
 
-The existing generic Valencia row `ES-VAL-CIV-048` is described differently and must **not** be silently treated as the same proceeding. No merge, alias or `same_as` relationship is admitted until a primary court source establishes identity.
+`es/reclamacion-caixabank-valencia/index.html`
+
+The earlier correspondence-only formulation (`01859/2023`, January 2027 day not yet primary-confirmed) is superseded for identity and scheduling by this signed-diligence-derived controlled record.
+
+## 2. What remains a gap
+
+The remaining defect is **registration**, not identity.
+
+The canonical `archive/PROCEEDINGS_MASTER_REGISTER.csv` does not presently expose a row for this exact `ORD 1859/2023-9 / JPI nº27 Valencia / NIG 46250-42-1-2023-0049579 / Aweswell–CaixaBank` proceeding in the located master inventory.
+
+The existing generic Valencia row `ES-VAL-CIV-048` is described differently and must **not** be silently treated as the same proceeding.
 
 Operational status:
 
-**GAP FOUND — exact proceeding identity is source-located in connected correspondence but not yet reconciled into the canonical Proceedings Master Register.**
+**PARTIALLY VERIFIED / GAP FOUND — exact proceeding identity, NIG, court and hearing are verified; canonical master-row registration remains unresolved.**
 
-## 3. Required primary completion
+## 3. Controlling master-row overlay pending safe CSV insertion
 
-Recover, if available:
+Until the canonical CSV is safely rewritten, apply:
 
-- originating claim/demand and court-stamped filing;
-- court admission/order identifying the parties and proceeding class;
-- NIG;
-- exact procedural class/reference format used by JPI nº27 Valencia;
-- latest scheduling order / notice confirming the current hearing date;
-- any judgment/order affecting standing, suspension or merits; and
-- public-safe source sufficient to support the public register row without exposing privileged/private advice.
+`archive/PROCEEDINGS_MASTER_REGISTER_VALENCIA_1859_2023_OVERLAY_30AUG2026.md`
 
-Do **not** state a precise January 2027 day until supported by the primary court notice.
+That overlay supplies the exact source-controlled identity and prevents the missing CSV row from causing future threads or public interconnectivity work to lose the proceeding.
 
-## 4. Convergence treatment pending canonical registration
+The overlay is not permission to reuse an occupied Master ID or to invent a parent/child relation. A new permanent Master ID must be allocated under the Proceedings Master Register protocol when the CSV is physically updated.
 
-Even while master-row reconciliation remains open, the proceeding must not disappear from unitary analysis. Its source-safe convergence is:
+## 4. Unitary convergence — verified as a material analytical bridge
 
-- financing / financial-product package;
-- relationship to the debt/security history relevant to the hotel/group perimeter;
-- alleged patrimonial consequences advanced by the project; and
-- documented contemporaneous professional recognition that the concursal-administration/separation position could materially affect the Valencia litigation.
+The public dossier itself cross-reconciles the banking claim with:
 
-The last point is internal provenance for the existence/materiality of the bridge; privileged strategy is not to be publicly reproduced merely to prove the connection.
+- the 2008–2010 financing / swap / floor / second-facility / pledge package;
+- Bankia enforcement;
+- Arrecife Mortgage Enforcement 90/2012;
+- Insolvency / Concurso 36/2012;
+- the later Bankia → SAREB → PH122 → CAM mortgage-asset lane;
+- the Administrador Concursal witness-origin chronology; and
+- calificación/recovery analysis.
 
-Public-safe wording:
+The public-safe bridge is therefore stronger than a generic contextual similarity:
 
-> **Separate Valencia proceeding; materially connected to the financing / financial-product package and the underlying hotel/insolvency asset history. Exact master-register reconciliation remains open.**
+> **Separate Valencia proceeding; directly relevant to the historic banking/financial-product package, enforcement chronology and the underlying economic history that intersects with Concurso 36/2012 and the hotel assets.**
 
-## 5. Non-conflation rule
+This does **not** mean the Valencia court has adopted Por Derecho's insolvency, criminal, causation or liability allegations.
 
-Until primary reconciliation is complete:
+## 5. Private-source boundary
 
-- do not assign `01859/2023` to `ES-VAL-CIV-048`;
+Separate professional correspondence may show additional strategic recognition of the Valencia–concursal relationship. Private or privileged strategy is not needed to establish the public bridge and must not be automatically published.
+
+## 6. Non-conflation rule
+
+Until the master CSV is physically reconciled:
+
+- do not assign `ORD 1859/2023-9` to `ES-VAL-CIV-048`;
 - do not renumber or overwrite `ES-VAL-CIV-048`;
-- do not create a false claim that the master register is denominator-complete for Valencia;
-- do not expose private counsel communications in the public projection; and
-- preserve this durable gap key so a later thread can recover the exact unresolved object independently of ChatGPT memory.
+- do not claim the canonical Proceedings Master Register is denominator-complete for Valencia;
+- preserve `GAP-VAL-CAIXABANK-01859-2023`; and
+- use the controlling overlay whenever repository-wide proceedings analysis is performed.
 
-## 6. Closure condition
+## 7. Closure condition
 
-This gap may be closed only when an exact canonical master row (or a transparently documented same-as reconciliation) is committed, source status is populated, public treatment is decided, and the Proceedings Interconnectivity Map/public register are checked for correct propagation.
+The remaining gap closes only when an exact canonical master row is committed with a unique Master ID, the public register/map propagation is verified, and the overlay records that its temporary control has been retired without loss of provenance.
