@@ -222,6 +222,34 @@ def validate_registry() -> tuple[dict[str, Any], dict[str, dict[str, Any]]]:
                 f"Asymmetric not_same_as control: {record_id} -> {other}",
             )
 
+        if record.get("record_kind") == "PROCEEDING_FAMILY_REFERENCE":
+            require(
+                record.get("is_exact_proceeding") is False,
+                f"{record_id} proceeding-family reference must not be an exact proceeding",
+            )
+            require(
+                record.get("identity_resolution") == "CANONICAL",
+                f"{record_id} proceeding-family reference must use canonical-reference resolution",
+            )
+            require(
+                record.get("caret_eligibility")
+                == "NOT_ELIGIBLE_AGGREGATE_FAMILY_REFERENCE",
+                f"{record_id} aggregate proceeding-family reference must not be caret-eligible",
+            )
+            exact_ids = record.get("exact_proceeding_ids")
+            require(
+                isinstance(exact_ids, list) and len(exact_ids) >= 2,
+                f"{record_id} proceeding-family reference must identify its exact proceedings",
+            )
+            for exact_id in exact_ids:
+                require(
+                    exact_id in records
+                    and records[exact_id].get("type") == "PROCEEDING"
+                    and records[exact_id].get("record_kind")
+                    != "PROCEEDING_FAMILY_REFERENCE",
+                    f"{record_id} contains invalid exact proceeding ID {exact_id!r}",
+                )
+
     coverage = index.get("coverage")
     require(isinstance(coverage, dict), "Registry coverage must be an object")
     required_names = coverage.get("required_names")
@@ -283,8 +311,10 @@ def validate_action_matrix(
                     )
                 elif field == "proceedings":
                     require(
-                        records[record_id].get("type") == "PROCEEDING",
-                        f"{action_id}.proceedings contains non-proceeding ID {record_id}",
+                        records[record_id].get("type") == "PROCEEDING"
+                        and records[record_id].get("record_kind")
+                        != "PROCEEDING_FAMILY_REFERENCE",
+                        f"{action_id}.proceedings contains non-exact proceeding ID {record_id}",
                     )
 
     require(
@@ -427,8 +457,10 @@ def validate_operational_control(records: dict[str, dict[str, Any]]) -> dict[str
         record_id = item.get("id", "")
         require(record_id in records, f"Proceeding identity queue references unknown ID {record_id}")
         require(
-            records[record_id].get("type") == "PROCEEDING",
-            f"Proceeding identity queue contains non-proceeding ID {record_id}",
+            records[record_id].get("type") == "PROCEEDING"
+            and records[record_id].get("record_kind")
+            != "PROCEEDING_FAMILY_REFERENCE",
+            f"Proceeding identity queue contains non-exact proceeding ID {record_id}",
         )
         require(record_id not in proceeding_queue_ids, f"Duplicate proceeding queue ID {record_id}")
         require(

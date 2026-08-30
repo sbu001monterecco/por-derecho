@@ -9,7 +9,11 @@
     en: new URL('en/master-proceedings-register/', repoBase).href,
     es: new URL('es/registro-maestro-procedimientos/', repoBase).href
   };
-  const csvUrl = new URL('archive/PROCEEDINGS_MASTER_REGISTER.csv', repoBase).href;
+  const mapRoutes = {
+    en: new URL('en/proceedings-map/', repoBase).href,
+    es: new URL('es/mapa-procedimientos/', repoBase).href
+  };
+  const projectionUrl = new URL('assets/data/proceedings-master-public-v1.json', repoBase).href;
 
   const addCss = () => {
     if (document.querySelector('link[data-master-proceedings-css]')) return;
@@ -47,57 +51,6 @@
     }
   };
 
-  const parseCsv = (text) => {
-    const rows = [];
-    let row = [];
-    let field = '';
-    let quoted = false;
-    for (let i = 0; i < text.length; i += 1) {
-      const ch = text[i];
-      if (quoted) {
-        if (ch === '"' && text[i + 1] === '"') {
-          field += '"';
-          i += 1;
-        } else if (ch === '"') {
-          quoted = false;
-        } else {
-          field += ch;
-        }
-      } else if (ch === '"') {
-        quoted = true;
-      } else if (ch === ',') {
-        row.push(field);
-        field = '';
-      } else if (ch === '\n') {
-        row.push(field.replace(/\r$/, ''));
-        rows.push(row);
-        row = [];
-        field = '';
-      } else {
-        field += ch;
-      }
-    }
-    if (field.length || row.length) {
-      row.push(field.replace(/\r$/, ''));
-      rows.push(row);
-    }
-    if (!rows.length) return [];
-    const headers = rows.shift();
-    return rows.filter((r) => r.some((v) => v.trim() !== '')).map((r) => {
-      const obj = {};
-      headers.forEach((h, idx) => { obj[h] = r[idx] || ''; });
-      return obj;
-    });
-  };
-
-  const isPublicRow = (row) => {
-    const treatment = (row.Public_Treatment || '').toUpperCase();
-    if (treatment.includes('INTERNAL_ONLY')) return false;
-    if (treatment.includes('PRIVATE')) return false;
-    if (treatment.includes('NOT_SITE_AGGREGATED')) return false;
-    return true;
-  };
-
   const esc = (value) => String(value || '').replace(/[&<>"']/g, (ch) => ({
     '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'
   }[ch]));
@@ -109,27 +62,27 @@
     if (!root) return;
 
     const copy = lang === 'es' ? {
-      loading: 'Cargando el registro canónico…', error: 'No se pudo cargar el registro maestro.',
+      loading: 'Cargando la proyección pública controlada…', error: 'No se pudo cargar el registro maestro.',
       visible: 'registros visibles', export: 'Exportar vista filtrada CSV', all: 'Todos',
       search: 'Buscar referencia, órgano, objeto, estado…', stream: 'Vía', state: 'Tipo de registro', source: 'Estado de fuente',
       id: 'ID', type: 'Clase / vía', organ: 'Órgano / custodio', ref: 'Referencia', period: 'Periodo', connection: 'Conexión / objeto', status: 'Estado / último evento', links: 'Relaciones', proof: 'Fuente / brecha',
-      noRows: 'No hay filas que coincidan con los filtros actuales.'
+      noRows: 'No hay filas que coincidan con los filtros actuales.', trace: 'Abrir trazabilidad exacta', isolation: 'Prueba de aislamiento'
     } : {
-      loading: 'Loading the canonical register…', error: 'The master register could not be loaded.',
+      loading: 'Loading the controlled public projection…', error: 'The master register could not be loaded.',
       visible: 'visible records', export: 'Export filtered view CSV', all: 'All',
       search: 'Search reference, organ, object, status…', stream: 'Track', state: 'Record state', source: 'Source status',
       id: 'ID', type: 'Class / track', organ: 'Organ / custodian', ref: 'Reference', period: 'Period', connection: 'Connection / object', status: 'Status / latest event', links: 'Relationships', proof: 'Source / gap',
-      noRows: 'No rows match the current filters.'
+      noRows: 'No rows match the current filters.', trace: 'Open exact trace', isolation: 'Isolation test'
     };
 
     const loading = root.querySelector('[data-register-loading]');
     try {
-      const response = await fetch(csvUrl, { cache: 'no-store' });
+      const response = await fetch(projectionUrl, { cache: 'no-store' });
       if (!response.ok) throw new Error('HTTP ' + response.status);
-      const text = await response.text();
-      const allRows = parseCsv(text);
-      const rows = allRows.filter(isPublicRow);
-      const excluded = allRows.length - rows.length;
+      const payload = await response.json();
+      if (!payload || !Array.isArray(payload.records)) throw new Error('Invalid public projection');
+      const rows = payload.records;
+      const excluded = Number(payload.excluded_record_count || 0);
 
       const getSet = (key) => Array.from(new Set(rows.map((r) => norm(r[key])).filter(Boolean))).sort((a, b) => a.localeCompare(b));
       const streamValues = getSet('Stream');
@@ -160,6 +113,7 @@
       const count = root.querySelector('[data-visible-count]');
       const stats = root.querySelector('[data-register-stats]');
       let visible = [];
+      let deepLinkApplied = false;
 
       const renderStats = () => {
         const distinctProceedings = rows.filter((r) => norm(r.Is_Proceeding).toUpperCase() === 'TRUE').length;
@@ -190,6 +144,12 @@
         }
         body.innerHTML = visible.map((r) => {
           const stateValue = norm(r.Is_Proceeding).toUpperCase() || 'UNVERIFIED';
+          const traceHref = `${mapRoutes[lang]}#trace-proceeding=${encodeURIComponent(r.Master_ID)}`;
+          const isExactProceeding = stateValue === 'TRUE';
+          const isolationHref = `${mapRoutes[lang]}#isolation-test=${encodeURIComponent(r.Master_ID)}`;
+          const isolationLink = isExactProceeding
+            ? `<br><a href="${esc(isolationHref)}" data-isolation-master-id="${esc(r.Master_ID)}">${esc(copy.isolation)}</a>`
+            : '';
           const relation = [r.Parent_Master_ID ? `${lang === 'es' ? 'Padre' : 'Parent'}: ${r.Parent_Master_ID}` : '', r.Linked_Proceedings, r.Appeal_or_Review].filter(Boolean).join(' · ');
           const statusText = [r.Status, r.Latest_Known_Event].filter(Boolean).join(' — ');
           const proofText = [r.Source_Status, r.Open_Reference_Gap].filter(Boolean).join(' — ');
@@ -197,11 +157,24 @@
           const refText = [r.Reference, r.Secondary_Reference, r.NIG ? `NIG ${r.NIG}` : ''].filter(Boolean).join(' · ');
           const typeText = [r.Record_Type, r.Proceeding_Class, r.Stream].filter(Boolean).join(' · ');
           const connectionText = [r.Connection, r.Object_or_Purpose].filter(Boolean).join(' — ');
-          return `<tr>
-            <td><span class="pd-ref">${esc(r.Master_ID)}</span><br><span class="pd-chip" data-state="${esc(stateValue)}">${esc(stateValue)}</span></td>
+          return `<tr id="record-${esc(r.Master_ID)}" data-master-id="${esc(r.Master_ID)}">
+            <td><a class="pd-ref" href="${esc(traceHref)}" aria-label="${esc(`${copy.trace}: ${r.Master_ID}`)}">${esc(r.Master_ID)}</a><br><span class="pd-chip" data-state="${esc(stateValue)}">${esc(stateValue)}</span>${isolationLink}</td>
             <td>${esc(typeText)}</td><td>${esc(organText)}</td><td>${esc(refText)}</td><td>${esc(r.Date_or_Period)}</td><td>${esc(connectionText)}</td><td>${esc(statusText)}</td><td>${esc(relation)}</td><td><span class="pd-muted">${esc(r.Source_Status)}</span>${r.Open_Reference_Gap ? `<br><span class="pd-gap">${esc(r.Open_Reference_Gap)}</span>` : ''}</td>
           </tr>`;
         }).join('');
+        if (!deepLinkApplied && window.location.hash.startsWith('#record-')) {
+          let requested = '';
+          try { requested = decodeURIComponent(window.location.hash.slice('#record-'.length)); } catch (_) { requested = ''; }
+          const target = requested ? document.getElementById(`record-${requested}`) : null;
+          if (target) {
+            target.setAttribute('tabindex', '-1');
+            window.requestAnimationFrame(() => {
+              target.focus({ preventScroll: true });
+              target.scrollIntoView({ block: 'center' });
+            });
+          }
+          deepLinkApplied = true;
+        }
       };
 
       [search, stream, state, source].forEach((control) => control.addEventListener('input', render));

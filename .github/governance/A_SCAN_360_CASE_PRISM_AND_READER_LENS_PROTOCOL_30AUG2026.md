@@ -83,7 +83,16 @@ For each selected exact canonical proceeding, the public renderer must distingui
 Only propositions marked `DIRECT` for that lane and keyed to the selected exact proceeding.
 
 ### Material context outside the selected lane
-Controlled propositions visible elsewhere but not directly keyed to the selected exact proceeding. The interface must visibly suppress/fade the wider corpus and provide an immediate full-corpus restore.
+Controlled propositions visible elsewhere and tied to the selected exact
+proceeding through its own non-`DIRECT` coordinate or through a source-controlled
+direct relationship / contextual cluster. The interface must not treat every
+proposition in the wider corpus as material merely because the selected file has
+one Case Prism coordinate. It must visibly suppress/fade the wider corpus and
+provide an immediate full-corpus restore.
+
+Same stream, geography, institution or chronological proximity is browse
+taxonomy only. Without an additional controlled connection it cannot populate
+the material-context or disappearing-proposition list.
 
 The isolation view is methodological. It does not prove that an organ knew, should have known, should admit, should investigate or should decide external material.
 

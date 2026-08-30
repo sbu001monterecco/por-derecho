@@ -5,8 +5,9 @@
   if (!script) return;
   const assetBase = new URL('.', script.src);
   const repoBase = new URL('../', assetBase);
-  const csvUrl = new URL('archive/PROCEEDINGS_MASTER_REGISTER.csv', repoBase).href;
+  const registerDataUrl = new URL('assets/data/proceedings-master-public-v1.json', repoBase).href;
   const prismUrl = new URL('assets/data/proceedings-case-prism-v1.json', repoBase).href;
+  const interlinkUrl = new URL('assets/data/proceedings-interlinkability-v1.json', repoBase).href;
   const lang = (document.documentElement.lang || 'en').toLowerCase().startsWith('es') ? 'es' : 'en';
   const registerRoute = new URL(lang === 'es' ? 'es/registro-maestro-procedimientos/' : 'en/master-proceedings-register/', repoBase).href;
 
@@ -14,29 +15,23 @@
     loading: 'Construyendo el mapa desde el registro canónico…',
     error: 'No se pudo construir el mapa de procedimientos.',
     allTracks: 'Todas las vías', search: 'Buscar ID, referencia, órgano, objeto o estado…',
-    map: 'Mapa por vías', chronology: 'Cronología', trace: 'Trazar un procedimiento',
+    map: 'Mapa por vías', chronology: 'Cronología', trace: 'Trazar un procedimiento / registro',
     prism: 'Prisma del caso', lanes: 'Vías paralelas', isolation: 'Prueba de aislamiento',
-    records: 'nodos públicos', tracks: 'vías', direct: 'relaciones procesales explícitas', gaps: 'nodos con brecha abierta',
-    directTitle: 'Relaciones procesales directas', incoming: 'Entrantes / hacia este nodo', outgoing: 'Salientes / desde este nodo',
-    contextTitle: 'Puentes de contexto', sameTrack: 'Misma vía', sameConnection: 'Misma conexión registrada', sameGeo: 'Misma geografía',
-    why: 'Por qué están conectados', noDirect: 'No hay otra relación procesal directa codificada con ID canónico en los campos públicos actuales.',
+    records: 'nodos públicos', tracks: 'vías', direct: 'pares directos controlados', gaps: 'nodos con brecha abierta',
+    directTitle: 'Relaciones procesales directas',
+    contextTitle: 'Puentes de contexto controlados',
+    why: 'Por qué están conectados', noDirect: 'No hay relación procesal directa admitida en el registro controlado para este objeto.',
     noContext: 'No hay otro puente contextual exacto en la proyección actual.',
     contextWarning: 'Contexto no significa mismo procedimiento, acumulación, coordinación, conocimiento, ilicitud ni responsabilidad.',
-    source: 'Fuente/estado', gap: 'Brecha abierta', now: 'Ahora', parent: 'Padre', child: 'Hijo', linked: 'Enlace explícito', review: 'Recurso/revisión',
-    directWhyParent: 'El registro canónico identifica expresamente este procedimiento como padre/origen del otro.',
-    directWhyLinked: 'El campo de procedimientos enlazados contiene expresamente el ID canónico del otro nodo.',
-    directWhyReview: 'El campo de recurso/revisión contiene expresamente el ID canónico del otro nodo.',
-    sameTrackWhy: 'Ambos nodos comparten la misma vía/stream registrada. Es una lente de navegación, no una relación procesal.',
-    sameConnectionWhy: 'Ambos nodos tienen exactamente el mismo valor no vacío en Connection. Es contexto registrado, no una conclusión de acumulación o causalidad.',
-    sameGeoWhy: 'Ambos nodos comparten la misma geografía registrada. Es contexto de navegación únicamente.',
+    source: 'Fuente/estado', gap: 'Brecha abierta', now: 'Ahora',
     approximate: 'Orden aproximado por el primer año reconocible en Date_or_Period; no implica causalidad.',
-    openRegister: 'Abrir Registro Maestro', traceThis: 'Trazar', empty: 'No hay nodos que coincidan con los filtros.',
-    publicBoundary: 'Esta visualización es una proyección pública del mismo CSV canónico. No convierte referencias en procedimientos ni conexiones contextuales en hechos jurídicos.',
+    openRegister: 'Abrir Registro Maestro', openRegisterRecord: 'Abrir este registro canónico', traceThis: 'Trazar registro', empty: 'No hay nodos que coincidan con los filtros.',
+    publicBoundary: 'Esta visualización usa una proyección pública minimizada del registro canónico. No convierte referencias en procedimientos ni conexiones contextuales en hechos jurídicos.',
     audience: 'Lente del lector', proposition: 'Proposición / hecho a contrastar', status: 'Relación', treatment: 'Tratamiento en el expediente', period: 'Periodo',
     matrixLead: 'Una misma proposición, leída horizontalmente a través de procedimientos jurídicamente separados.',
     lanesLead: 'Orden cronológico de las proposiciones controladas y las vías en las que aparecen de forma directa, contextual o abierta.',
-    isolationLead: 'Selecciona un procedimiento exacto. El modo aislado conserva solo lo directamente presente en ese expediente y atenúa el resto del corpus; la restauración permite comparar de inmediato.',
-    chooseLane: 'Seleccionar procedimiento', visibleAlone: 'Permanece visible en el expediente seleccionado', disappears: 'Contexto material que desaparece al leerlo solo',
+    isolationLead: 'Selecciona cualquier procedimiento exacto de la proyección pública. El modo aislado conserva únicamente el tratamiento del Prisma codificado como directamente presente en ese expediente; la reconexión muestra por separado las relaciones procesales expresas, los puentes contextuales controlados y las brechas no resueltas.',
+    chooseLane: 'Seleccionar procedimiento exacto', visibleAlone: 'Permanece visible en el expediente seleccionado', disappears: 'Contexto material que desaparece al leerlo solo',
     noVisible: 'Ninguna proposición del prisma está marcada como directamente presente en este procedimiento exacto.', noOutside: 'No se identifica contexto material adicional en el prisma controlado.',
     detail: 'Detalle de la dependencia', masterIds: 'IDs canónicos relacionados', openTrace: 'Abrir traza',
     formalBoundary: 'La prueba de aislamiento es metodológica. No demuestra que el órgano recibiera, debiera admitir o debiera valorar el material externo.',
@@ -48,34 +43,43 @@
     representation: 'Linaje de abogado/procurador', prismConnections: 'Dependencias del Prisma para este ID', noPrismConnections: 'No hay dependencia del Prisma codificada para este ID.',
     prismUnavailable: 'La capa del Prisma no está disponible. El mapa canónico sigue accesible, pero las vistas de convergencia y aislamiento no pueden verificarse en esta carga.',
     laneSource: 'Otros estados registrados de vía/expediente', priority: 'Prioridad para esta lente', matrixCaption: 'Matriz de dependencia decisoria por proposición y vía jurídica separada',
-    swimCaption: 'Cronología en vías paralelas; cada columna sigue siendo un expediente o carril institucional separado'
+    swimCaption: 'Cronología en vías paralelas; cada columna sigue siendo un expediente o carril institucional separado',
+    exactProceedings: 'procedimientos exactos públicos', prismCovered: 'con coordenadas expresas en el Prisma', prismNotCovered: 'sin coordenada actual en el Prisma',
+    coverageBoundary: 'El selector incluye todos los registros públicos marcados canónicamente como procedimientos. La cobertura del Prisma es un denominador finito y distinto: la ausencia de coordenada significa cobertura no desarrollada o no localizada, no ausencia de relación fáctica.',
+    coveredGroup: 'Procedimientos con coordenadas en el Prisma', uncoveredGroup: 'Otros procedimientos exactos — sin coordenada en el Prisma',
+    selectedCoverage: 'Cobertura del procedimiento seleccionado', prismCoveredSelected: 'Este procedimiento tiene tratamiento proposicional expreso en el Prisma controlado.',
+    noPrismCoverageSelected: 'No hay tratamiento proposicional del Prisma codificado para este procedimiento exacto. No se infiere ninguna celda: el expediente sigue siendo trazable mediante sus campos canónicos y las brechas permanecen expresas.',
+    directReconnection: 'Relaciones procesales directas para reconectar', contextReconnection: 'Puentes contextuales controlados para reconectar', unresolvedReconnection: 'Estado no resuelto / cobertura pendiente',
+    noDirectSelected: 'No hay relación procesal directa codificada por ID canónico para este procedimiento.', noContextSelected: 'No hay puente contextual controlado con otro nodo público en los campos actuales.',
+    directBoundary: 'Solo se muestran relaciones expresamente codificadas como padre/origen, enlace de procedimiento, recurso/revisión o enlace documentado por una fuente especializada controlada.',
+    contextBoundary: 'Estos puentes proceden de valores canónicos coincidentes. Ayudan a localizar contexto; no acreditan identidad de procedimiento, acumulación, conocimiento, causalidad, ilicitud ni responsabilidad. Para evitar expansión transitiva, los miembros de una proposición no se siguen hacia otras proposiciones; un ID relacionado solo abre otra proposición mediante una coordenada DIRECTA.',
+    prismCoordinate: 'Coordenada del Prisma', noPrismCoordinate: 'Sin coordenada del Prisma', selectedFileStatus: 'Estado respecto del expediente seleccionado',
+    relationCount: 'relaciones', bridgeCount: 'puentes', nextSource: 'Siguiente fuente necesaria', classification: 'Clasificación controlada', provenance: 'Procedencia', limitations: 'Límites',
+    interlinkUnavailable: 'El registro controlado de interconectividad no está disponible para este procedimiento. No se infiere una clasificación por ausencia.',
+    notExactClassification: 'Registro público — no es un procedimiento exacto', notExactTrace: 'Este objeto público puede trazarse como registro, pero no está marcado como procedimiento exacto. No se infiere ninguna clasificación, relación procesal directa ni puente contextual.',
+    sourceAssertions: 'Afirmaciones de fuente', sourceAssertion: 'afirmación',
+    directVerified: 'pares con fuente verificada', directPending: 'par con fuente primaria pendiente'
   } : {
     loading: 'Building the map from the canonical register…',
     error: 'The proceedings map could not be built.',
     allTracks: 'All tracks', search: 'Search ID, reference, organ, object or status…',
-    map: 'Track map', chronology: 'Chronology', trace: 'Trace one proceeding',
+    map: 'Track map', chronology: 'Chronology', trace: 'Trace one proceeding / record',
     prism: 'Case Prism', lanes: 'Parallel lanes', isolation: 'Isolation test',
-    records: 'public nodes', tracks: 'tracks', direct: 'explicit procedural relations', gaps: 'nodes with an open gap',
-    directTitle: 'Direct procedural relationships', incoming: 'Incoming / toward this node', outgoing: 'Outgoing / from this node',
-    contextTitle: 'Context bridges', sameTrack: 'Same track', sameConnection: 'Same recorded connection', sameGeo: 'Same geography',
-    why: 'Why connected?', noDirect: 'No other direct procedural relationship encoded with a canonical ID is currently exposed by the public fields.',
+    records: 'public nodes', tracks: 'tracks', direct: 'controlled direct pairs', gaps: 'nodes with an open gap',
+    directTitle: 'Direct procedural relationships',
+    contextTitle: 'Controlled context bridges',
+    why: 'Why connected?', noDirect: 'No direct procedural relationship is admitted in the controlled registry for this object.',
     noContext: 'No other exact contextual bridge is available in the current projection.',
     contextWarning: 'Context does not mean the same proceeding, joinder, coordination, knowledge, wrongdoing or liability.',
-    source: 'Source/status', gap: 'Open gap', now: 'Now', parent: 'Parent', child: 'Child', linked: 'Explicit link', review: 'Appeal/review',
-    directWhyParent: 'The canonical register expressly records one proceeding as the parent/origin of the other.',
-    directWhyLinked: 'The linked-proceedings field expressly contains the other node’s canonical ID.',
-    directWhyReview: 'The appeal/review field expressly contains the other node’s canonical ID.',
-    sameTrackWhy: 'Both nodes share the same recorded stream/track. This is a navigation lens, not a procedural relationship.',
-    sameConnectionWhy: 'Both nodes have exactly the same non-empty Connection value. This is recorded context, not a finding of joinder or causation.',
-    sameGeoWhy: 'Both nodes share the same recorded geography. This is navigation context only.',
+    source: 'Source/status', gap: 'Open gap', now: 'Now',
     approximate: 'Approximate order by the first recognisable year in Date_or_Period; it does not imply causation.',
-    openRegister: 'Open Master Register', traceThis: 'Trace', empty: 'No nodes match the current filters.',
-    publicBoundary: 'This visualisation is a public projection of the same canonical CSV. It does not turn references into proceedings or contextual connections into legal facts.',
+    openRegister: 'Open Master Register', openRegisterRecord: 'Open this canonical record', traceThis: 'Trace record', empty: 'No nodes match the current filters.',
+    publicBoundary: 'This visualisation uses a minimised public projection of the canonical register. It does not turn references into proceedings or contextual connections into legal facts.',
     audience: 'Reader lens', proposition: 'Proposition / fact to test', status: 'Relationship', treatment: 'Treatment in file', period: 'Period',
     matrixLead: 'One proposition, read horizontally across legally separate proceedings.',
     lanesLead: 'Chronological order of the controlled propositions and the lanes in which they appear as direct, contextual or open.',
-    isolationLead: 'Select one exact proceeding. Isolated mode keeps only what is directly present in that file and fades the wider corpus; restore it for an immediate comparison.',
-    chooseLane: 'Select proceeding', visibleAlone: 'Remains visible in the selected file', disappears: 'Material context that disappears when read alone',
+    isolationLead: 'Select any exact proceeding in the public projection. Isolated mode keeps only Case Prism treatment encoded as directly present in that file; reconnection separately shows express procedural relationships, controlled contextual bridges and unresolved gaps.',
+    chooseLane: 'Select exact proceeding', visibleAlone: 'Remains visible in the selected file', disappears: 'Material context that disappears when read alone',
     noVisible: 'No proposition in this prism is marked as directly present in this exact proceeding.', noOutside: 'No additional material context is identified in the controlled prism.',
     detail: 'Dependency detail', masterIds: 'Related canonical IDs', openTrace: 'Open trace',
     formalBoundary: 'The isolation test is methodological. It does not prove that the organ received, should admit or should assess the external material.',
@@ -87,46 +91,28 @@
     representation: 'Counsel/procurador lineage', prismConnections: 'Case Prism dependencies for this ID', noPrismConnections: 'No Case Prism dependency is encoded for this ID.',
     prismUnavailable: 'The Case Prism layer is unavailable. The canonical map remains accessible, but convergence and isolation views cannot be verified in this load.',
     laneSource: 'Other recorded lane/file statuses', priority: 'Priority for this lens', matrixCaption: 'Decision-dependency matrix by proposition and legally separate lane',
-    swimCaption: 'Parallel-lane chronology; every column remains a separate proceeding or institutional lane'
+    swimCaption: 'Parallel-lane chronology; every column remains a separate proceeding or institutional lane',
+    exactProceedings: 'exact public proceedings', prismCovered: 'with express Case Prism coordinates', prismNotCovered: 'without a current Case Prism coordinate',
+    coverageBoundary: 'The selector includes every public record canonically marked as a proceeding. Case Prism coverage is a separate finite denominator: no coordinate means coverage is undeveloped or not located, not that no factual relationship exists.',
+    coveredGroup: 'Proceedings with Case Prism coordinates', uncoveredGroup: 'Other exact proceedings — no Case Prism coordinate',
+    selectedCoverage: 'Selected-proceeding coverage', prismCoveredSelected: 'This proceeding has express proposition treatment in the controlled Case Prism.',
+    noPrismCoverageSelected: 'No Case Prism proposition treatment is encoded for this exact proceeding. No cell is inferred: the file remains traceable through its canonical fields and every gap stays explicit.',
+    directReconnection: 'Direct procedural relationships for reconnection', contextReconnection: 'Controlled context bridges for reconnection', unresolvedReconnection: 'Unresolved state / coverage pending',
+    noDirectSelected: 'No direct procedural relationship is encoded by canonical ID for this proceeding.', noContextSelected: 'No controlled context bridge to another public node is available in the current fields.',
+    directBoundary: 'Only relationships expressly encoded as parent/origin, linked proceeding, appeal/review or documented by a controlled specialist source are shown.',
+    contextBoundary: 'These bridges come from matching canonical values. They help locate context; they do not establish the same proceeding, joinder, knowledge, causation, wrongdoing or liability. To prevent transitive expansion, proposition co-members are not followed into other propositions; a related ID surfaces another proposition only through a DIRECT coordinate.',
+    prismCoordinate: 'Case Prism coordinate', noPrismCoordinate: 'No Case Prism coordinate', selectedFileStatus: 'Status relative to selected file',
+    relationCount: 'relationships', bridgeCount: 'bridges', nextSource: 'Next source needed', classification: 'Controlled classification', provenance: 'Provenance', limitations: 'Limitations',
+    interlinkUnavailable: 'The controlled interlinkability register is unavailable for this proceeding. No classification is inferred from absence.',
+    notExactClassification: 'Public record — not an exact proceeding', notExactTrace: 'This public object remains traceable as a record, but it is not marked as an exact proceeding. No classification, direct procedural relationship or contextual bridge is inferred.',
+    sourceAssertions: 'Source assertions', sourceAssertion: 'assertion',
+    directVerified: 'source-verified pairs', directPending: 'source-reported primary-pending pair'
   };
 
   const esc = (v) => String(v || '').replace(/[&<>"']/g, (c) => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   const norm = (v) => String(v || '').trim();
   const key = (v) => norm(v).toLowerCase();
   const localized = (obj, base) => obj ? (obj[`${base}_${lang}`] || obj[lang] || obj[base] || obj.en || obj.es || '') : '';
-
-  function parseCsv(text) {
-    const table = []; let row = []; let field = ''; let quoted = false;
-    for (let i = 0; i < text.length; i += 1) {
-      const ch = text[i];
-      if (quoted) {
-        if (ch === '"' && text[i + 1] === '"') { field += '"'; i += 1; }
-        else if (ch === '"') quoted = false;
-        else field += ch;
-      } else if (ch === '"') quoted = true;
-      else if (ch === ',') { row.push(field); field = ''; }
-      else if (ch === '\n') { row.push(field.replace(/\r$/, '')); table.push(row); row = []; field = ''; }
-      else field += ch;
-    }
-    if (field.length || row.length) { row.push(field.replace(/\r$/, '')); table.push(row); }
-    if (!table.length) return [];
-    const headers = table.shift();
-    return table.filter((r) => r.some((v) => norm(v))).map((r) => {
-      const out = {}; headers.forEach((h, i) => { out[h] = r[i] || ''; }); return out;
-    });
-  }
-
-  const isPublic = (r) => {
-    const t = norm(r.Public_Treatment).toUpperCase();
-    return !(t.includes('INTERNAL_ONLY') || t.includes('PRIVATE') || t.includes('NOT_SITE_AGGREGATED'));
-  };
-
-  const idsIn = (value, byId) => {
-    const found = [];
-    const text = String(value || '');
-    byId.forEach((_r, id) => { if (text.includes(id)) found.push(id); });
-    return found;
-  };
 
   const firstYear = (value) => {
     const m = String(value || '').match(/\b(19|20)\d{2}\b/);
@@ -146,60 +132,73 @@
       ${traceButton ? `<button type="button" data-trace-id="${esc(r.Master_ID)}">${copy.traceThis} →</button>` : ''}
     </article>`;
 
-  function buildEdges(rows, byId) {
-    const edges = []; const seen = new Set();
-    const add = (from, to, type, why, derived = false) => {
-      if (!byId.has(from) || !byId.has(to) || from === to) return;
-      const sig = [from, to, type].join('|'); if (seen.has(sig)) return; seen.add(sig);
-      edges.push({ from, to, type, why, derived });
-    };
-    rows.forEach((r) => {
-      const id = norm(r.Master_ID);
-      const parent = norm(r.Parent_Master_ID);
-      if (parent && byId.has(parent)) add(parent, id, 'PARENT_CHILD', copy.directWhyParent, false);
-      idsIn(r.Linked_Proceedings, byId).forEach((other) => add(id, other, 'LINKED', copy.directWhyLinked, false));
-      idsIn(r.Appeal_or_Review, byId).forEach((other) => add(id, other, 'REVIEW', copy.directWhyReview, false));
-    });
-    const priority = {PARENT_CHILD: 0, REVIEW: 1, LINKED: 2};
-    const byPair = new Map();
-    edges.forEach((edge) => {
-      const pair = [edge.from, edge.to].sort().join('|');
-      const current = byPair.get(pair);
-      if (!current || priority[edge.type] < priority[current.type]) byPair.set(pair, edge);
-    });
-    return Array.from(byPair.values());
+  function prismMatchesForId(prism, selected) {
+    if (!prism) return [];
+    return prism.propositions.flatMap((prop) => prism.lanes.flatMap((lane) => {
+      const cell = prop.cells && prop.cells[lane.id];
+      return cell && cell.status !== 'OUTSIDE' && Array.isArray(cell.master_ids) && cell.master_ids.includes(selected)
+        ? [{prop, lane, cell}] : [];
+    }));
   }
 
-  function relationshipLabel(edge, selected) {
-    if (edge.type === 'PARENT_CHILD') return edge.from === selected ? copy.child : copy.parent;
-    if (edge.type === 'REVIEW') return copy.review;
-    return copy.linked;
+  const isExactProceeding = (record) => norm(record && record.Is_Proceeding).toUpperCase() === 'TRUE';
+
+  function catalogLabel(catalog, token) {
+    const meta = catalog && catalog[token];
+    return localized(meta, 'label') || localized(meta, '') || humanToken(token);
   }
 
-  function renderTrace(root, selected, rows, byId, edges, prism) {
+  function provenanceLabel(source) {
+    if (!source) return '—';
+    const direction = source.assertion_from_master_id || source.assertion_to_master_id
+      ? `${norm(source.assertion_from_master_id) || '?'} → ${norm(source.assertion_to_master_id) || '?'}`
+      : '';
+    return [
+      source.kind,
+      source.source_id,
+      source.path,
+      source.record_id,
+      source.record_master_id || source.source_record_master_id,
+      source.field_or_record_id,
+      source.field,
+      source.value_token,
+      source.assertion_relationship_type,
+      source.assertion_direction,
+      direction,
+      source.anchor,
+      source.evidence_status
+    ].map(norm).filter(Boolean).join(' · ') || '—';
+  }
+
+  function provenanceHtml(item) {
+    const assertions = Array.isArray(item && item.source_assertions) && item.source_assertions.length
+      ? item.source_assertions
+      : (item && item.source ? [item.source] : []);
+    if (!assertions.length) return '';
+    const count = assertions.length;
+    const countLabel = count > 1 ? ` (${count} ${copy.sourceAssertions.toLowerCase()})` : ` (${count} ${copy.sourceAssertion})`;
+    return `<div class="pdim-provenance" data-source-assertions data-assertion-count="${count}"><strong>${esc(copy.provenance)}${esc(countLabel)}</strong><ul>${assertions.map((source) => `<li>${esc(provenanceLabel(source))}</li>`).join('')}</ul></div>`;
+  }
+
+  function renderTrace(root, selected, byId, prism, interlinks) {
     const r = byId.get(selected); if (!r) return;
-    const direct = edges.filter((e) => e.from === selected || e.to === selected);
-    const directHtml = direct.length ? direct.map((e) => {
-      const otherId = e.from === selected ? e.to : e.from; const other = byId.get(otherId);
-      return `<li><button type="button" data-trace-id="${esc(otherId)}"><strong>${esc(relationshipLabel(e, selected))}</strong> · ${esc(otherId)} · ${esc(labelFor(other))}</button><p>${esc(e.why)}</p></li>`;
+    const disposition = interlinks && (interlinks.node_dispositions || []).find((entry) => entry.master_id === selected);
+    const relationshipById = new Map(((interlinks && interlinks.relationships) || []).map((relationship) => [relationship.id, relationship]));
+    const clusterById = new Map(((interlinks && interlinks.context_clusters) || []).map((cluster) => [cluster.id, cluster]));
+    const registryRelationships = disposition ? (disposition.relationship_ids || []).map((id) => relationshipById.get(id)).filter(Boolean) : [];
+    const directHtml = registryRelationships.length ? registryRelationships.map((relationship) => {
+      const otherId = relationship.from_master_id === selected ? relationship.to_master_id : relationship.from_master_id;
+      const other = byId.get(otherId);
+      return `<li data-interlink-disposition data-classification="DIRECT_PROCEDURAL_EDGE"><button type="button" data-trace-id="${esc(otherId)}"><strong>${esc(catalogLabel(interlinks.relationship_type_catalog, relationship.relationship_type))}</strong> · ${esc(otherId)} · ${esc(other ? labelFor(other) : otherId)}</button><p>${esc(localized(relationship, 'why'))}</p>${localized(relationship, 'limitations') ? `<small><strong>${esc(copy.limitations)}:</strong> ${esc(localized(relationship, 'limitations'))}</small>` : ''}${provenanceHtml(relationship)}</li>`;
     }).join('') : `<li class="pdim-none">${copy.noDirect}</li>`;
 
-    const contexts = [];
-    const addContext = (type, reason, other) => contexts.push({type, reason, other});
-    rows.forEach((o) => {
-      if (o.Master_ID === selected) return;
-      if (norm(r.Stream) && key(r.Stream) === key(o.Stream)) addContext(copy.sameTrack, copy.sameTrackWhy, o);
-      if (norm(r.Connection) && key(r.Connection) === key(o.Connection)) addContext(copy.sameConnection, copy.sameConnectionWhy, o);
-      if (norm(r.Geography) && key(r.Geography) === key(o.Geography)) addContext(copy.sameGeo, copy.sameGeoWhy, o);
-    });
-    const uniq = new Map(); contexts.forEach((c) => { const s = `${c.type}|${c.other.Master_ID}`; if (!uniq.has(s)) uniq.set(s, c); });
-    const contextHtml = uniq.size ? Array.from(uniq.values()).slice(0, 36).map((c) => `<li><button type="button" data-trace-id="${esc(c.other.Master_ID)}"><strong>${esc(c.type)}</strong> · ${esc(c.other.Master_ID)} · ${esc(labelFor(c.other))}</button><p>${esc(c.reason)}</p></li>`).join('') : `<li class="pdim-none">${copy.noContext}</li>`;
+    const contexts = disposition ? (disposition.context_cluster_ids || []).map((id) => clusterById.get(id)).filter(Boolean) : [];
+    const contextHtml = contexts.length ? contexts.map((cluster) => {
+      const members = (cluster.member_master_ids || []).filter((id) => id !== selected && byId.has(id));
+      return `<li data-interlink-disposition data-classification="CONTROLLED_CONTEXTUAL_BRIDGE"><strong>${esc(localized(cluster, 'label') || catalogLabel(interlinks.context_type_catalog, cluster.context_type))}</strong><p>${esc(localized(cluster, 'why'))}</p><div class="pdim-context-members">${members.map((id) => `<button type="button" data-trace-id="${esc(id)}">${esc(id)} · ${esc(labelFor(byId.get(id)))}</button>`).join('')}</div>${localized(cluster, 'limitations') ? `<small><strong>${esc(copy.limitations)}:</strong> ${esc(localized(cluster, 'limitations'))}</small>` : ''}${provenanceHtml(cluster)}</li>`;
+    }).join('') : `<li class="pdim-none">${copy.noContext}</li>`;
 
-    const prismMatches = prism ? prism.propositions.flatMap((prop) => prism.lanes.flatMap((lane) => {
-      const cell = prop.cells && prop.cells[lane.id];
-      return cell && Array.isArray(cell.master_ids) && cell.master_ids.includes(selected) && cell.status !== 'OUTSIDE'
-        ? [{prop, lane, cell}] : [];
-    })) : [];
+    const prismMatches = prismMatchesForId(prism, selected);
     const prismHtml = prismMatches.length ? prismMatches.map(({prop, lane, cell}) => `
       <li><button type="button" data-prism-prop="${esc(prop.id)}" data-prism-lane="${esc(lane.id)}"><strong>${esc(prop.id)} · ${esc(propTitle(prop))}</strong><span>${esc(laneLabel(lane))} · ${esc(statusLabel(prism, cell.status))} · ${esc(treatmentLabel(prism, cell.treatment))}</span></button></li>`).join('')
       : `<li class="pdim-none">${copy.noPrismConnections}</li>`;
@@ -212,6 +211,8 @@
       <div class="pdim-trace-identity">${card(r, false)}
         <dl><div><dt>${copy.source}</dt><dd>${esc(r.Source_Status || '—')}</dd></div><div><dt>${copy.gap}</dt><dd>${esc(r.Open_Reference_Gap || '—')}</dd></div><div><dt>${copy.now}</dt><dd>${esc([r.Current_Custodian, r.Status, r.Latest_Known_Event].filter(Boolean).join(' — ') || '—')}</dd></div></dl>
       </div>
+      <p class="pdim-record-backlink"><a href="${esc(`${registerRoute}#record-${encodeURIComponent(selected)}`)}">${esc(copy.openRegisterRecord)} · ${esc(selected)} →</a></p>
+      ${disposition ? `<section class="pdim-trace-disposition" data-interlink-disposition data-classification="${esc(disposition.primary_classification)}"><h2>${esc(copy.classification)}: ${esc(catalogLabel(interlinks.classification_catalog, disposition.primary_classification))}</h2><p>${esc(localized(disposition, 'why'))}</p>${localized(disposition, 'limitations') ? `<small><strong>${esc(copy.limitations)}:</strong> ${esc(localized(disposition, 'limitations'))}</small>` : ''}${localized(disposition, 'next_source_needed') ? `<small><strong>${esc(copy.nextSource)}:</strong> ${esc(localized(disposition, 'next_source_needed'))}</small>` : ''}</section>` : isExactProceeding(r) ? `<section class="pdim-trace-disposition" data-interlink-disposition data-classification="REGISTRY_NOT_AVAILABLE"><h2>${esc(copy.unresolvedReconnection)}</h2><p>${esc(copy.interlinkUnavailable)}</p></section>` : `<section class="pdim-trace-disposition" data-interlink-disposition data-classification="NOT_EXACT_PROCEEDING_RECORD"><h2>${esc(copy.classification)}: ${esc(copy.notExactClassification)}</h2><p>${esc(copy.notExactTrace)}</p></section>`}
       <div class="pdim-rel-grid">
         <section><h2>${copy.directTitle}</h2><ul class="pdim-rel-list">${directHtml}</ul></section>
         <section><h2>${copy.contextTitle}</h2><p class="pdim-warning">${copy.contextWarning}</p><ul class="pdim-rel-list">${contextHtml}</ul></section>
@@ -357,28 +358,95 @@
       <div class="pdim-prism-detail" data-prism-detail aria-live="polite" tabindex="-1"><p>${esc(localized(prism.boundary, ''))}</p></div>`;
   }
 
-  function renderIsolation(root, prism, state, byId) {
+  function renderIsolation(root, prism, interlinks, state, byId, rows) {
     const body = root.querySelector('[data-view-body]');
-    const options = prism.lanes.flatMap((lane) => lane.master_ids.map((id) => ({lane, id, record: byId.get(id)}))).filter((item) => item.record && norm(item.record.Is_Proceeding).toUpperCase() === 'TRUE');
+    const options = rows.filter(isExactProceeding).map((record) => ({
+      id: record.Master_ID,
+      record,
+      matches: prismMatchesForId(prism, record.Master_ID)
+    })).sort((a, b) => labelFor(a.record).localeCompare(labelFor(b.record)) || a.id.localeCompare(b.id));
+    const coveredOptions = options.filter((item) => item.matches.length);
+    const uncoveredOptions = options.filter((item) => !item.matches.length);
     if (!state.isolationId || (state.isolationId !== '__FULL__' && !options.some((item) => item.id === state.isolationId))) state.isolationId = '__FULL__';
     const selected = options.find((item) => item.id === state.isolationId) || null;
+    const relationshipById = new Map((interlinks.relationships || []).map((relationship) => [relationship.id, relationship]));
+    const clusterById = new Map((interlinks.context_clusters || []).map((cluster) => [cluster.id, cluster]));
+    const disposition = selected ? (interlinks.node_dispositions || []).find((entry) => entry.master_id === selected.id) : null;
+    const selectedRelationships = disposition ? (disposition.relationship_ids || []).map((id) => relationshipById.get(id)).filter(Boolean) : [];
+    const selectedClusters = disposition ? (disposition.context_cluster_ids || []).map((id) => clusterById.get(id)).filter(Boolean) : [];
+    const reconnectIds = new Set();
+    const linkedPrismPropIds = new Set();
+    if (selected) {
+      selectedRelationships.forEach((relationship) => {
+        reconnectIds.add(relationship.from_master_id);
+        reconnectIds.add(relationship.to_master_id);
+      });
+      selectedClusters.forEach((cluster) => {
+        if (cluster.context_type === 'CASE_PRISM_PROPOSITION') {
+          const propositionId = norm(cluster.source && cluster.source.record_id);
+          if (propositionId) linkedPrismPropIds.add(propositionId);
+        } else if (cluster.context_type === 'RECORDED_CONNECTION') {
+          (cluster.member_master_ids || []).forEach((id) => reconnectIds.add(id));
+        }
+      });
+      reconnectIds.delete(selected.id);
+    }
     const props = sortedProps(prism, state.audience);
     const direct = [];
     const outside = [];
     if (selected) props.forEach((prop) => {
-      const selectedCell = prop.cells[selected.lane.id];
-      const remains = selectedCell.status === 'DIRECT' && selectedCell.master_ids.includes(selected.id);
+      const exactMatches = prism.lanes.map((lane) => ({lane, cell: prop.cells[lane.id]})).filter(({cell}) => cell.status !== 'OUTSIDE' && Array.isArray(cell.master_ids) && cell.master_ids.includes(selected.id));
+      exactMatches.filter(({cell}) => cell.status === 'DIRECT').forEach(({lane, cell}) => direct.push({prop, cell, lane}));
       const sourceLanes = prism.lanes.filter((lane) => {
         const cell = prop.cells[lane.id];
-        return cell.status !== 'OUTSIDE' && !(lane.id === selected.lane.id && cell.status === 'DIRECT' && cell.master_ids.includes(selected.id));
+        if (cell.status === 'OUTSIDE' || (cell.status === 'DIRECT' && Array.isArray(cell.master_ids) && cell.master_ids.includes(selected.id))) return false;
+        if (linkedPrismPropIds.has(prop.id)) return true;
+        if (!Array.isArray(cell.master_ids)) return false;
+        if (cell.master_ids.includes(selected.id)) return true;
+        return cell.status === 'DIRECT' && cell.master_ids.some((id) => reconnectIds.has(id));
       });
-      if (remains) direct.push({prop, cell:selectedCell, lane:selected.lane});
-      else if (sourceLanes.length) outside.push({prop, cell:selectedCell, lane:selected.lane, sourceLanes});
+      if (sourceLanes.length) {
+        const lane = sourceLanes[0];
+        outside.push({prop, cell: prop.cells[lane.id], lane, sourceLanes});
+      }
     });
     const item = ({prop, cell, lane, sourceLanes=[]}) => `<li><button type="button" data-prism-prop="${esc(prop.id)}" data-prism-lane="${esc(lane.id)}"><span class="pdim-prism-status" data-prism-status="${esc(cell.status)}">${esc(statusLabel(prism, cell.status))}</span><strong>${esc(propTitle(prop))}</strong></button><p>${esc(cellNote(cell))}</p>${sourceLanes.length ? `<small><strong>${copy.laneSource}:</strong> ${esc(sourceLanes.map((sourceLane) => `${laneLabel(sourceLane)} — ${statusLabel(prism, prop.cells[sourceLane.id].status)}`).join(' · '))}</small>` : ''}</li>`;
-    const mini = `<div class="pdim-isolation-map" data-isolation-mode="${selected ? 'isolated' : 'full'}"><table><caption>${selected ? `${copy.isolatedMode}: ${selected.id}` : copy.fullCorpus}</caption><thead><tr><th scope="col">${copy.proposition}</th>${prism.lanes.map((lane) => `<th scope="col">${esc(laneLabel(lane))}</th>`).join('')}</tr></thead><tbody>${props.map((prop) => `<tr><th scope="row">${esc(prop.id)} · ${esc(propTitle(prop))}</th>${prism.lanes.map((lane) => { const cell = prop.cells[lane.id]; const active = !selected || (lane.id === selected.lane.id && cell.status === 'DIRECT' && cell.master_ids.includes(selected.id)); const selectionState = !selected ? '' : (active ? copy.insideSelected : copy.outsideSelected); const accessibleState = selectionState ? ` · ${selectionState}` : ''; const suppression = selected && !active ? ' disabled aria-disabled="true" tabindex="-1"' : ''; return `<td class="${active ? '' : 'is-suppressed'}"><button type="button"${suppression} aria-label="${esc(`${statusLabel(prism, cell.status)}${accessibleState}`)}" data-prism-status="${esc(cell.status)}" data-prism-prop="${esc(prop.id)}" data-prism-lane="${esc(lane.id)}"><span>${esc(statusLabel(prism, cell.status))}</span>${selected ? `<small>${esc(selectionState)}</small>` : ''}</button></td>`; }).join('')}</tr>`).join('')}</tbody></table></div>`;
+    const mini = `<div class="pdim-isolation-map" data-isolation-mode="${selected ? 'isolated' : 'full'}"><table><caption>${selected ? `${copy.isolatedMode}: ${selected.id}` : copy.fullCorpus}</caption><thead><tr><th scope="col">${copy.proposition}</th>${prism.lanes.map((lane) => `<th scope="col">${esc(laneLabel(lane))}</th>`).join('')}</tr></thead><tbody>${props.map((prop) => `<tr><th scope="row">${esc(prop.id)} · ${esc(propTitle(prop))}</th>${prism.lanes.map((lane) => { const cell = prop.cells[lane.id]; const active = !selected || (cell.status === 'DIRECT' && Array.isArray(cell.master_ids) && cell.master_ids.includes(selected.id)); const selectionState = !selected ? '' : (active ? copy.insideSelected : copy.outsideSelected); const accessibleState = selectionState ? ` · ${selectionState}` : ''; const suppression = selected && !active ? ' disabled aria-disabled="true" tabindex="-1"' : ''; return `<td class="${active ? '' : 'is-suppressed'}"><button type="button"${suppression} aria-label="${esc(`${statusLabel(prism, cell.status)}${accessibleState}`)}" data-prism-status="${esc(cell.status)}" data-prism-prop="${esc(prop.id)}" data-prism-lane="${esc(lane.id)}"><span>${esc(statusLabel(prism, cell.status))}</span>${selected ? `<small>${esc(selectionState)}</small>` : ''}</button></td>`; }).join('')}</tr>`).join('')}</tbody></table></div>`;
+    const option = (entry) => `<option value="${esc(entry.id)}" data-prism-coverage="${entry.matches.length ? 'covered' : 'unresolved'}"${selected && entry.id === selected.id ? ' selected' : ''}>${esc(entry.id)} · ${esc(labelFor(entry.record))}${entry.matches.length ? '' : ` · ${copy.noPrismCoordinate}`}</option>`;
+    const optionGroups = `${coveredOptions.length ? `<optgroup label="${esc(`${copy.coveredGroup} (${coveredOptions.length})`)}">${coveredOptions.map(option).join('')}</optgroup>` : ''}${uncoveredOptions.length ? `<optgroup label="${esc(`${copy.uncoveredGroup} (${uncoveredOptions.length})`)}">${uncoveredOptions.map(option).join('')}</optgroup>` : ''}`;
+    let reconnection = '';
+    if (selected) {
+      const directHtml = selectedRelationships.length ? selectedRelationships.map((relationship) => {
+        const otherId = relationship.from_master_id === selected.id ? relationship.to_master_id : relationship.from_master_id;
+        const other = byId.get(otherId);
+        const limitations = localized(relationship, 'limitations');
+        return `<li data-interlink-disposition data-classification="DIRECT_PROCEDURAL_EDGE"><button type="button" data-trace-id="${esc(otherId)}"><strong>${esc(catalogLabel(interlinks.relationship_type_catalog, relationship.relationship_type))}</strong> · ${esc(otherId)} · ${esc(other ? labelFor(other) : otherId)}</button><p>${esc(localized(relationship, 'why'))}</p>${limitations ? `<small><strong>${esc(copy.limitations)}:</strong> ${esc(limitations)}</small>` : ''}${provenanceHtml(relationship)}</li>`;
+      }).join('') : `<li class="pdim-none">${esc(copy.noDirectSelected)}</li>`;
+      const contextLinkCount = selectedClusters.reduce((total, cluster) => total + (cluster.member_master_ids || []).filter((id) => id !== selected.id && byId.has(id)).length, 0);
+      const contextHtml = selectedClusters.length ? selectedClusters.map((cluster) => {
+        const members = (cluster.member_master_ids || []).filter((id) => id !== selected.id && byId.has(id));
+        const limitations = localized(cluster, 'limitations');
+        return `<li data-interlink-disposition data-classification="CONTROLLED_CONTEXTUAL_BRIDGE"><strong>${esc(localized(cluster, 'label') || catalogLabel(interlinks.context_type_catalog, cluster.context_type))}</strong><p>${esc(localized(cluster, 'why'))}</p><div class="pdim-context-members">${members.map((id) => `<button type="button" data-trace-id="${esc(id)}">${esc(id)} · ${esc(labelFor(byId.get(id)))}</button>`).join('')}</div>${limitations ? `<small><strong>${esc(copy.limitations)}:</strong> ${esc(limitations)}</small>` : ''}${provenanceHtml(cluster)}</li>`;
+      }).join('') : `<li class="pdim-none">${esc(copy.noContextSelected)}</li>`;
+      const unresolved = [];
+      if (!selected.matches.length) unresolved.push(`<li data-interlink-disposition data-classification="NO_PRISM_COVERAGE"><strong>${esc(copy.noPrismCoordinate)}</strong><p>${esc(copy.noPrismCoverageSelected)}</p></li>`);
+      if (disposition) {
+        const classification = disposition.primary_classification;
+        unresolved.push(`<li data-interlink-disposition data-classification="${esc(classification)}"><strong>${esc(copy.classification)}: ${esc(catalogLabel(interlinks.classification_catalog, classification))}</strong><p>${esc(localized(disposition, 'why'))}</p>${localized(disposition, 'limitations') ? `<small><strong>${esc(copy.limitations)}:</strong> ${esc(localized(disposition, 'limitations'))}</small>` : ''}${localized(disposition, 'next_source_needed') ? `<small><strong>${esc(copy.nextSource)}:</strong> ${esc(localized(disposition, 'next_source_needed'))}</small>` : ''}${norm(disposition.source_status) ? `<small><strong>${esc(copy.source)}:</strong> ${esc(disposition.source_status)}</small>` : ''}</li>`);
+      } else unresolved.push(`<li data-interlink-disposition data-classification="REGISTRY_NOT_AVAILABLE"><strong>${esc(copy.unresolvedReconnection)}</strong><p>${esc(copy.interlinkUnavailable)}</p></li>`);
+      if (selected.matches.length) unresolved.push(`<li class="pdim-none"><strong>${esc(copy.selectedCoverage)}</strong><p>${esc(copy.prismCoveredSelected)}</p></li>`);
+      reconnection = `<section class="pdim-reconnection" data-isolation-reconnection aria-label="${esc(copy.selectedCoverage)}">
+        <div class="pdim-reconnection-identity">${card(selected.record, false)}<div><p><strong>${esc(copy.selectedCoverage)}:</strong> ${esc(selected.matches.length ? copy.prismCoordinate : copy.noPrismCoordinate)}</p><a class="pdim-record-link" href="${esc(`${registerRoute}#record-${encodeURIComponent(selected.id)}`)}">${esc(copy.openRegisterRecord)} →</a></div></div>
+        <div class="pdim-reconnection-grid">
+          <section data-isolation-direct><h2>${esc(copy.directReconnection)} <small>${selectedRelationships.length} ${esc(copy.relationCount)}</small></h2><p class="pdim-boundary-note">${esc(copy.directBoundary)}</p><ul class="pdim-rel-list">${directHtml}</ul></section>
+          <section data-isolation-context><h2>${esc(copy.contextReconnection)} <small>${contextLinkCount} ${esc(copy.bridgeCount)}</small></h2><p class="pdim-warning">${esc(copy.contextBoundary)}</p><ul class="pdim-rel-list">${contextHtml}</ul></section>
+          <section data-isolation-unresolved><h2>${esc(copy.unresolvedReconnection)}</h2><ul class="pdim-rel-list">${unresolved.join('')}</ul></section>
+        </div>
+      </section>`;
+    }
     body.innerHTML = `
-      <section class="pdim-isolation-head"><div><p class="pdim-note">${esc(copy.isolationLead)}</p><p><strong>${esc(audienceQuestion(prism, state))}</strong></p><p class="pdim-warning">${esc(copy.formalBoundary)}</p></div><div class="pdim-isolation-controls">${audienceControl(prism, state)}<label>${copy.chooseLane}<select data-isolation-id><option value="__FULL__"${selected ? '' : ' selected'}>${copy.fullCorpus}</option>${options.map((item) => `<option value="${esc(item.id)}"${selected && item.id === selected.id ? ' selected' : ''}>${esc(item.id)} · ${esc(labelFor(item.record))}</option>`).join('')}</select></label><button type="button" data-isolation-restore ${selected ? '' : 'disabled'}>${copy.restore}</button></div></section>
+      <section class="pdim-isolation-head"><div><p class="pdim-note">${esc(copy.isolationLead)}</p><p><strong>${esc(audienceQuestion(prism, state))}</strong></p><p class="pdim-warning">${esc(copy.formalBoundary)}</p><div class="pdim-isolation-coverage" data-isolation-coverage><strong>${coveredOptions.length}/${options.length}</strong><span>${esc(copy.prismCovered)}</span><small>${options.length} ${esc(copy.exactProceedings)} · ${uncoveredOptions.length} ${esc(copy.prismNotCovered)}</small><p>${esc(copy.coverageBoundary)}</p></div></div><div class="pdim-isolation-controls">${audienceControl(prism, state)}<label>${copy.chooseLane}<select data-isolation-id><option value="__FULL__"${selected ? '' : ' selected'}>${copy.fullCorpus}</option>${optionGroups}</select></label><button type="button" data-isolation-restore ${selected ? '' : 'disabled'}>${copy.restore}</button></div></section>
+      ${reconnection}
       ${mini}
       <div class="pdim-isolation-grid"><section><h2>${selected ? copy.visibleAlone : copy.fullCorpus}</h2><ul>${selected ? (direct.length ? direct.map(item).join('') : `<li class="pdim-none">${copy.noVisible}</li>`) : `<li><strong>${props.length} ${copy.proposition.toLowerCase()}</strong><p>${esc(localized(prism.boundary, ''))}</p></li>`}</ul></section><section><h2>${copy.disappears}</h2><ul>${selected ? (outside.length ? outside.map(item).join('') : `<li class="pdim-none">${copy.noOutside}</li>`) : `<li class="pdim-none">${copy.noOutside}</li>`}</ul></section></div>
       <div class="pdim-prism-detail" data-prism-detail aria-live="polite" tabindex="-1"><p>${esc(localized(prism.boundary, ''))}</p></div>`;
@@ -387,14 +455,16 @@
   async function init() {
     const root = document.querySelector('[data-proceedings-map]'); if (!root) return;
     try {
-      const [csvRes, prismRes] = await Promise.all([
-        fetch(csvUrl, {cache:'no-store'}),
-        fetch(prismUrl, {cache:'no-store'}).catch(() => null)
+      const [registerRes, prismRes, interlinkRes] = await Promise.all([
+        fetch(registerDataUrl, {cache:'no-store'}),
+        fetch(prismUrl, {cache:'no-store'}).catch(() => null),
+        fetch(interlinkUrl, {cache:'no-store'}).catch(() => null)
       ]);
-      if (!csvRes.ok) throw new Error(`HTTP ${csvRes.status}`);
-      const all = parseCsv(await csvRes.text()); const rows = all.filter(isPublic);
+      if (!registerRes.ok) throw new Error(`HTTP ${registerRes.status}`);
+      const registerPayload = await registerRes.json();
+      const rows = Array.isArray(registerPayload && registerPayload.records) ? registerPayload.records : [];
+      if (!rows.length || rows.some((record) => !norm(record.Master_ID))) throw new Error('invalid public proceedings projection');
       const byId = new Map(rows.map((r) => [norm(r.Master_ID), r]));
-      const edges = buildEdges(rows, byId);
       const tracks = Array.from(new Set(rows.map((r) => norm(r.Stream)).filter(Boolean))).sort((a,b)=>a.localeCompare(b));
       const gaps = rows.filter((r) => norm(r.Open_Reference_Gap)).length;
       let prism = null; let prismFailure = '';
@@ -406,16 +476,57 @@
           prism = candidate;
         } catch (err) { prismFailure = err.message || String(err); }
       } else prismFailure = prismRes ? `HTTP ${prismRes.status}` : 'fetch failed';
-      const state = { audience: 'all', isolationId: '__FULL__' };
-      const hashToView = {'#map':'map', '#mapa':'map', '#case-prism':'prism', '#parallel-lanes':'lanes', '#isolation-test':'isolation'};
-      const viewToHash = {prism:'#case-prism', lanes:'#parallel-lanes', isolation:'#isolation-test'};
-      let view = hashToView[window.location.hash] && prism ? hashToView[window.location.hash] : 'map';
+      let interlinks = null; let interlinkFailure = '';
+      if (interlinkRes && interlinkRes.ok) {
+        try {
+          const candidate = await interlinkRes.json();
+          if (!Array.isArray(candidate.relationships) || !Array.isArray(candidate.context_clusters) || !Array.isArray(candidate.node_dispositions)) throw new Error('incomplete interlinkability registry');
+          interlinks = candidate;
+        } catch (err) { interlinkFailure = err.message || String(err); }
+      } else interlinkFailure = interlinkRes ? `HTTP ${interlinkRes.status}` : 'fetch failed';
+      const exactIds = new Set(rows.filter(isExactProceeding).map((record) => record.Master_ID));
+      if (interlinks) {
+        const dispositionIds = new Set(interlinks.node_dispositions.map((entry) => entry.master_id));
+        const missing = Array.from(exactIds).filter((id) => !dispositionIds.has(id));
+        const unexpected = Array.from(dispositionIds).filter((id) => !exactIds.has(id));
+        if (missing.length || unexpected.length) {
+          interlinkFailure = `interlinkability denominator mismatch (${missing.length} missing; ${unexpected.length} unexpected)`;
+          interlinks = null;
+        }
+      }
+      const decodeHashId = (value) => { try { return decodeURIComponent(value || ''); } catch (_err) { return ''; } };
+      const readHash = () => {
+        const raw = window.location.hash || '';
+        if (raw.startsWith('#trace-proceeding=')) {
+          const id = decodeHashId(raw.slice('#trace-proceeding='.length));
+          return {view:'trace', id:byId.has(id) ? id : ''};
+        }
+        if (raw.startsWith('#isolation-test=')) {
+          const id = decodeHashId(raw.slice('#isolation-test='.length));
+          if (exactIds.has(id)) return {view:'isolation', id};
+          if (byId.has(id)) return {view:'trace', id, canonicalize:true};
+          return {view:'map', id:'', canonicalize:true};
+        }
+        const mapped = {'#map':'map', '#mapa':'map', '#trace-proceeding':'trace', '#case-prism':'prism', '#parallel-lanes':'lanes', '#isolation-test':'isolation'}[raw];
+        return {view:mapped || 'map', id:''};
+      };
+      const initialHash = readHash();
+      const state = { audience: 'all', isolationId: initialHash.view === 'isolation' && initialHash.id ? initialHash.id : '__FULL__', traceId: initialHash.view === 'trace' ? initialHash.id : '' };
+      const viewToHash = {trace:'#trace-proceeding', prism:'#case-prism', lanes:'#parallel-lanes', isolation:'#isolation-test'};
+      let view = initialHash.view;
+      if (!prism && ['prism','lanes','isolation'].includes(view)) view = 'map';
+      if (!interlinks && view === 'isolation') view = 'map';
+      const directCoverage = interlinks && interlinks.coverage ? interlinks.coverage : {};
+      const directGrade = interlinks
+        ? `<small>${esc(directCoverage.direct_relationship_source_verified_pair_count)} ${esc(copy.directVerified)} · ${esc(directCoverage.direct_relationship_source_reported_pending_pair_count)} ${esc(copy.directPending)}</small>`
+        : '';
 
       root.innerHTML = `
-        <div class="pdim-stats"><div><strong>${rows.length}</strong><span>${copy.records}</span></div><div><strong>${tracks.length}</strong><span>${copy.tracks}</span></div><div><strong>${edges.length}</strong><span>${copy.direct}</span></div><div><strong>${gaps}</strong><span>${copy.gaps}</span></div></div>
+        <div class="pdim-stats"><div><strong>${rows.length}</strong><span>${copy.records}</span></div><div><strong>${tracks.length}</strong><span>${copy.tracks}</span></div><div><strong>${interlinks ? interlinks.relationships.length : '—'}</strong><span>${copy.direct}${directGrade}</span></div><div><strong>${gaps}</strong><span>${copy.gaps}</span></div></div>
         <div class="pdim-controls"><label>${lang==='es'?'Buscar':'Search'}<input type="search" data-map-search placeholder="${esc(copy.search)}"></label><label>${lang==='es'?'Vía':'Track'}<select data-map-track><option value="">${copy.allTracks}</option>${tracks.map((t)=>`<option>${esc(t)}</option>`).join('')}</select></label></div>
-        <div class="pdim-tabs" role="tablist" aria-label="${esc(lang === 'es' ? 'Vistas del mapa de procedimientos' : 'Proceedings map views')}"><button id="pdim-tab-map" role="tab" aria-controls="pdim-view-panel" type="button" data-view="map">${copy.map}</button><button id="pdim-tab-chronology" role="tab" aria-controls="pdim-view-panel" type="button" data-view="chronology">${copy.chronology}</button><button id="pdim-tab-trace" role="tab" aria-controls="pdim-view-panel" type="button" data-view="trace">${copy.trace}</button><button id="pdim-tab-prism" role="tab" aria-controls="pdim-view-panel" type="button" data-view="prism" ${prism ? '' : 'disabled aria-disabled="true"'}>${copy.prism}</button><button id="pdim-tab-lanes" role="tab" aria-controls="pdim-view-panel" type="button" data-view="lanes" ${prism ? '' : 'disabled aria-disabled="true"'}>${copy.lanes}</button><button id="pdim-tab-isolation" role="tab" aria-controls="pdim-view-panel" type="button" data-view="isolation" ${prism ? '' : 'disabled aria-disabled="true"'}>${copy.isolation}</button></div>
+        <div class="pdim-tabs" role="tablist" aria-label="${esc(lang === 'es' ? 'Vistas del mapa de procedimientos' : 'Proceedings map views')}"><button id="pdim-tab-map" role="tab" aria-controls="pdim-view-panel" type="button" data-view="map">${copy.map}</button><button id="pdim-tab-chronology" role="tab" aria-controls="pdim-view-panel" type="button" data-view="chronology">${copy.chronology}</button><button id="pdim-tab-trace" role="tab" aria-controls="pdim-view-panel" type="button" data-view="trace">${copy.trace}</button><button id="pdim-tab-prism" role="tab" aria-controls="pdim-view-panel" type="button" data-view="prism" ${prism ? '' : 'disabled aria-disabled="true"'}>${copy.prism}</button><button id="pdim-tab-lanes" role="tab" aria-controls="pdim-view-panel" type="button" data-view="lanes" ${prism ? '' : 'disabled aria-disabled="true"'}>${copy.lanes}</button><button id="pdim-tab-isolation" role="tab" aria-controls="pdim-view-panel" type="button" data-view="isolation" ${prism && interlinks ? '' : 'disabled aria-disabled="true"'}>${copy.isolation}</button></div>
         ${prism ? '' : `<div class="pdim-prism-unavailable" role="status"><strong>${esc(copy.prismUnavailable)}</strong><small>${esc(prismFailure)}</small></div>`}
+        ${interlinks ? '' : `<div class="pdim-prism-unavailable" role="status"><strong>${esc(copy.interlinkUnavailable)}</strong><small>${esc(interlinkFailure)}</small></div>`}
         <div id="pdim-view-panel" role="tabpanel" tabindex="-1" data-view-body></div>
         <section class="pdim-trace-panel" data-trace-panel></section>
         <footer class="pdim-footer"><p>${copy.publicBoundary}</p><a href="${esc(registerRoute)}">${copy.openRegister} →</a></footer>`;
@@ -427,10 +538,11 @@
         if (view === 'chronology') renderChronology(root, rows, filters);
         else if (view === 'trace') {
           const body = root.querySelector('[data-view-body]');
-          body.innerHTML = `<div class="pdim-picker"><label>${copy.trace}<select data-trace-select><option value="">—</option>${rows.slice().sort((a,b)=>labelFor(a).localeCompare(labelFor(b))).map((r)=>`<option value="${esc(r.Master_ID)}">${esc(r.Master_ID)} · ${esc(labelFor(r))}</option>`).join('')}</select></label></div>`;
+          body.innerHTML = `<div class="pdim-picker"><label>${copy.trace}<select data-trace-select><option value="">—</option>${rows.slice().sort((a,b)=>labelFor(a).localeCompare(labelFor(b))).map((r)=>`<option value="${esc(r.Master_ID)}"${state.traceId === r.Master_ID ? ' selected' : ''}>${esc(r.Master_ID)} · ${esc(labelFor(r))}</option>`).join('')}</select></label></div>`;
+          if (state.traceId && byId.has(state.traceId)) renderTrace(root, state.traceId, byId, prism, interlinks);
         } else if (view === 'prism' && prism) renderPrism(root, prism, state);
         else if (view === 'lanes' && prism) renderParallelLanes(root, prism, state);
-        else if (view === 'isolation' && prism) renderIsolation(root, prism, state, byId);
+        else if (view === 'isolation' && prism && interlinks) renderIsolation(root, prism, interlinks, state, byId, rows);
         else renderMap(root, rows, filters);
         if (focusSelector) window.requestAnimationFrame(() => root.querySelector(focusSelector)?.focus({preventScroll:true}));
       };
@@ -447,15 +559,21 @@
         button.setAttribute('tabindex', selected ? '0' : '-1');
         if (selected) root.querySelector('[data-view-body]')?.setAttribute('aria-labelledby', button.id);
       });
+      const activeHash = () => {
+        if (view === 'trace' && state.traceId && byId.has(state.traceId)) return `#trace-proceeding=${encodeURIComponent(state.traceId)}`;
+        if (view === 'isolation' && state.isolationId !== '__FULL__' && exactIds.has(state.isolationId)) return `#isolation-test=${encodeURIComponent(state.isolationId)}`;
+        return viewToHash[view] || '';
+      };
+      const replaceActiveHash = () => {
+        const hash = activeHash();
+        window.history.replaceState(null, '', hash || (window.location.pathname + window.location.search));
+      };
       const activateView = (next, updateHash = true, reveal = false) => {
         if (!next || (!prism && ['prism','lanes','isolation'].includes(next))) return;
+        if (next === 'isolation' && !interlinks) return;
         view = next; setTabState(); draw();
         if (reveal) revealActivePanel();
-        if (updateHash) {
-          const hash = viewToHash[view] || `${window.location.pathname}${window.location.search}`;
-          if (viewToHash[view]) window.history.replaceState(null, '', hash);
-          else window.history.replaceState(null, '', window.location.pathname + window.location.search);
-        }
+        if (updateHash) replaceActiveHash();
       };
       filters.search.addEventListener('input', () => draw()); filters.track.addEventListener('input', () => draw());
       root.querySelectorAll('[data-view]').forEach((button) => button.addEventListener('click', () => activateView(button.dataset.view)));
@@ -469,9 +587,9 @@
       });
       root.addEventListener('click', (ev) => {
         const traceButton = ev.target.closest('[data-trace-id]');
-        if (traceButton) { renderTrace(root, traceButton.dataset.traceId, rows, byId, edges, prism); return; }
+        if (traceButton && byId.has(traceButton.dataset.traceId)) { state.traceId = traceButton.dataset.traceId; activateView('trace'); return; }
         const restoreButton = ev.target.closest('[data-isolation-restore]');
-        if (restoreButton) { state.isolationId = '__FULL__'; draw('[data-isolation-id]'); return; }
+        if (restoreButton) { state.isolationId = '__FULL__'; draw('[data-isolation-id]'); replaceActiveHash(); return; }
         const prismButton = ev.target.closest('[data-prism-prop][data-prism-lane]');
         if (prismButton && prism) {
           const detailScope = prismButton.closest('[data-trace-panel], [data-view-body]') || root;
@@ -479,16 +597,20 @@
         }
       });
       root.addEventListener('change', (ev) => {
-        if (ev.target.matches('[data-trace-select]') && ev.target.value) renderTrace(root, ev.target.value, rows, byId, edges, prism);
+        if (ev.target.matches('[data-trace-select]') && ev.target.value && byId.has(ev.target.value)) { state.traceId = ev.target.value; renderTrace(root, state.traceId, byId, prism, interlinks); replaceActiveHash(); }
         if (ev.target.matches('[data-prism-audience]')) { state.audience = ev.target.value || 'all'; draw('[data-prism-audience]'); }
-        if (ev.target.matches('[data-isolation-id]')) { state.isolationId = ev.target.value || '__FULL__'; draw('[data-isolation-id]'); }
+        if (ev.target.matches('[data-isolation-id]')) { state.isolationId = exactIds.has(ev.target.value) ? ev.target.value : '__FULL__'; draw('[data-isolation-id]'); replaceActiveHash(); }
       });
       window.addEventListener('hashchange', () => {
-        const mapped = hashToView[window.location.hash];
-        activateView(mapped || 'map', false, Boolean(mapped));
+        const parsed = readHash();
+        state.traceId = parsed.view === 'trace' ? parsed.id : state.traceId;
+        state.isolationId = parsed.view === 'isolation' && parsed.id ? parsed.id : '__FULL__';
+        activateView(parsed.view, false, true);
+        if (parsed.canonicalize) replaceActiveHash();
       });
       setTabState(); draw();
-      if (hashToView[window.location.hash]) revealActivePanel();
+      if (initialHash.canonicalize) replaceActiveHash();
+      if (initialHash.view !== 'map' || ['#map','#mapa'].includes(window.location.hash)) revealActivePanel();
     } catch (err) {
       root.innerHTML = `<div class="pdim-error"><strong>${copy.error}</strong><p>${esc(err.message || err)}</p></div>`;
     }

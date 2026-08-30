@@ -53,13 +53,17 @@ The public renderer may derive reverse navigation from an explicit forward relat
 
 ### B. CONTEXTUAL BRIDGE / LENS
 
-A contextual bridge helps readers understand why legally separate files sit in the same story. Examples include:
+A contextual bridge helps readers understand why legally separate files sit in the same story. Material reconnection may use:
 
-- same procedural track/stream;
 - same expressly recorded `Connection` value;
-- same geography or institution;
-- same chronology period;
 - shared source-controlled evidence/event/asset/transaction/actor relationship where independently registered.
+
+Stream, geography, institution and chronology remain useful **taxonomy / browse
+lenses**. They may group, filter or order nodes, but they must not by themselves
+enter the material-reconnection denominator or cause a proposition to be shown
+as context that disappears in isolation. A same-stream, same-place or same-date
+match needs a separate controlled connection before it becomes material
+cross-file context.
 
 A contextual bridge is **not** a procedural edge and must be labelled as such. Common actors, a common hotel, family/employment/corporate proximity, chronological adjacency or common documents do not establish coordination, knowledge, wrongdoing, liability, joinder or identity of proceedings.
 
@@ -113,7 +117,10 @@ Selecting one node should show:
 - upstream parent/origin relations;
 - downstream children/appeals/follow-ups captured by explicit data;
 - reverse-discovered incoming relations;
-- contextual lenses such as same track / same recorded connection / geography;
+- controlled contextual bridges supported by the same exact recorded
+  `Connection` value or a separately source-controlled proposition;
+- stream, geography and chronology only as visibly non-material browse
+  taxonomy;
 - open gaps; and
 - a plain-language **Why connected?** explanation for every listed relationship class.
 

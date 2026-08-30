@@ -20,9 +20,9 @@
   const loadMasterProceedingsPublication = () => {
     if (document.querySelector('script[data-master-proceedings-publication-loader]')) return;
     const proceedings = document.createElement('script');
-    proceedings.src = new URL('master-proceedings-publication-20260830.js?v=20260830a', current.src).href;
+    proceedings.src = new URL('master-proceedings-publication-20260830.js?v=20260830c', current.src).href;
     proceedings.async = false;
-    proceedings.setAttribute('data-master-proceedings-publication-loader', '20260830a');
+    proceedings.setAttribute('data-master-proceedings-publication-loader', '20260830c');
     document.head.appendChild(proceedings);
   };
 
