@@ -76,6 +76,6 @@ The Master Register runtime links both Arrecife rows back to the bilingual 7-Jun
 - `DIRECT PROCEDURAL LINKS`: **VERIFIED / BIDIRECTIONAL**
 - `CONTEXT LINKS`: **VERIFIED WITH LEGAL-SEPARATION WARNINGS**
 - `PRIMARY EVIDENCE COMPLETENESS`: **PARTIAL**
-- `PUBLIC EXPLANATION`: **REPAIRED IN SOURCE; LIVE VERIFICATION REQUIRED AFTER MERGE**
+- `PUBLIC EXPLANATION`: **LIVE VERIFIED** — PR #1240 / merge `ea62df4d0476a210623536cfdb735bf9c7136ab7` / Pages #1309; both dedicated language routes, four carets per route, reciprocal Master links, the dossier bridge and live CAEPR explorer row were read back on 30-Aug-2026
 
 This record deliberately preserves source gaps. It does not convert procedural identity into a merits conclusion.

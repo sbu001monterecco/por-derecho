@@ -2,8 +2,8 @@
   "publication_id": "PD-SP-ARRECIFE-1103-2018-CARET-20260830-01",
   "owner": "Por Derecho / Project Sun Rock",
   "control_date": "2026-08-30",
-  "current_state": "PREPARED_PENDING_MERGE",
-  "state": "PREPARED_PENDING_MERGE",
+  "current_state": "LIVE_VERIFIED",
+  "state": "MERGED_DEPLOYED_AND_LIVE_READBACK_VERIFIED",
   "purpose": "Repair and publish the canonical, bidirectional procedural lineage from Diligencias Indeterminadas 1103/2018-00 through DP 1132/2018 and Rollo 1010/2018 / Auto 804/2018 without converting identity into merits.",
   "canonical_ids": {
     "caepr": "PD-SP-R-0023",
@@ -70,11 +70,38 @@
   ],
   "privacy": "No private source locators, contact data or identity of the protected on-site witness are published.",
   "caret_boundary": "Caret confirms canonical proceeding identity only; it does not prove conduct, knowledge, title, liability, merits or outcome correctness.",
+  "validation": {
+    "evidence": "Mission-critical, Arrecife-specific, identity, Master Register, proceedings-map, publication-integrity and preservation controls passed against the reviewed source package."
+  },
+  "merge_sha": "ea62df4d0476a210623536cfdb735bf9c7136ab7",
+  "deployment_evidence": "GitHub Pages pages-build-deployment #1309 completed and the exact merged routes were read back in the live browser.",
+  "live_urls": [
+    "https://sbu001monterecco.github.io/por-derecho/en/arrecife-1103-2018-procedural-lineage/",
+    "https://sbu001monterecco.github.io/por-derecho/es/arrecife-1103-2018-cadena-procesal/",
+    "https://sbu001monterecco.github.io/por-derecho/en/sun-park-takeover-7-june-2018/#procedural-chain-1103-1132-1010-804",
+    "https://sbu001monterecco.github.io/por-derecho/es/toma-control-sun-park-7-junio-2018/#cadena-procesal-1103-1132-1010-804",
+    "https://sbu001monterecco.github.io/por-derecho/en/master-proceedings-register/#case-LZ-JUD-003",
+    "https://sbu001monterecco.github.io/por-derecho/es/registro-maestro-procedimientos/#case-LZ-JUD-003",
+    "https://sbu001monterecco.github.io/por-derecho/en/matter-identity-registry/",
+    "https://sbu001monterecco.github.io/por-derecho/es/registro-identidad-materia/"
+  ],
+  "live_verification_evidence": {
+    "status": "PASS",
+    "verified_at": "2026-08-30T23:07:21Z",
+    "source_merge_sha": "ea62df4d0476a210623536cfdb735bf9c7136ab7",
+    "pages_run_number": 1309,
+    "dedicated_route_result": "2/2 bilingual routes live; 4/4 controlled carets on each",
+    "semantic_result": "NIG, procedural roles, adverse outcome, no-further-appeal wording and identity/merits boundary present",
+    "interlink_result": "8/8 English context links, reciprocal dossier link, both Master row anchors/backlinks and live PD-SP-R-0023 explorer route verified"
+  },
   "verification": {
-    "repository": "pending",
-    "pull_request": "pending",
-    "merge_sha": "pending",
-    "pages_deployment": "pending",
-    "live_readback": "pending"
+    "repository": "mission-critical, Arrecife-specific, identity, Master Register, proceedings-map, publication-integrity and preservation controls passed",
+    "pull_request": 1240,
+    "reviewed_head_sha": "770a76f386126791dc2ed40078394cdb233fa8ec",
+    "reviewed_tree_sha": "456ec7e58459af7857de323402fbced09f827237",
+    "merge_sha": "ea62df4d0476a210623536cfdb735bf9c7136ab7",
+    "pages_deployment": "pages-build-deployment #1309 completed",
+    "live_verified_at": "2026-08-30T23:07:21Z",
+    "live_readback": "PASS — 2/2 dedicated language routes; 4/4 carets per route; NIG/outcome/boundary text; 8/8 EN context links; reciprocal Master row anchors/backlinks; live 231-identity explorer and PD-SP-R-0023 profile route"
   }
 }
