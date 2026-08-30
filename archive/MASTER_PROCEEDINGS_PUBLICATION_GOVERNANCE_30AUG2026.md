@@ -19,7 +19,7 @@ The canonical operational source remains:
 
 `archive/PROCEEDINGS_MASTER_REGISTER.csv`
 
-The public page is a **controlled projection**, not a second competing master. It may read the canonical CSV and render only the fields suitable for public procedural navigation.
+The public page is a **controlled projection**, not a second competing master. A deterministic repository builder reads the canonical CSV and emits `assets/data/proceedings-master-public-v1.json`. Browser code must read only that allowlisted derivative; it must never download the operational CSV and attempt to create the publication boundary client-side.
 
 The public projection must preserve, at minimum where populated:
 
@@ -132,7 +132,9 @@ Maintain together:
 - `es/registro-maestro-procedimientos/index.html`
 - `assets/master-proceedings-publication-20260830.js`
 - `assets/master-proceedings-publication-20260830.css`
+- `assets/data/proceedings-master-public-v1.json`
 - `assets/site.js`
+- `scripts/build_public_proceedings_projection.py`
 - `scripts/audit_master_proceedings_publication.py`
 - `.github/workflows/audit-master-proceedings-publication.yml`
 - `publication-manifests/master-proceedings-publication-20260830.json`

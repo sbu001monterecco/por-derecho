@@ -82,7 +82,7 @@ jobs:
                   'kind': 'site_loader_sentinel',
                   'path': 'assets/site.js',
                   'markers': [
-                      'site-pre-intervencion-highlight-20260820.js',
+                      'site-pre-treasury-154-hq-20260828.js',
                       'playa-blanca-concept-home-20260820.js',
                   ],
               },

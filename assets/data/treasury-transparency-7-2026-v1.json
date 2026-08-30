@@ -78,6 +78,24 @@
     "Vice-Ministry file 12/2026-0710092416 and Resolution 28/2026",
     "REGAGE26e00065752755 and the separate Law 2/2023 routing chain"
   ],
+  "proceedings_context_corridors": [
+    {
+      "id": "T7-COR-001",
+      "context_type": "SOURCE_CONTROLLED_CORRIDOR",
+      "member_master_ids": [
+        "NAT-TES-001",
+        "LZ-TRA-028"
+      ],
+      "label_en": "Treasury 7/2026 and the separate Resolution 28/2026 transparency track",
+      "label_es": "Tesoro 7/2026 y la vía separada de transparencia de la Resolución 28/2026",
+      "why_en": "The reviewed Treasury control expressly identifies two separate transparency files whose documentary context may be cross-read without merging their organs, references, objects or legal effects.",
+      "why_es": "El control revisado de Tesoro identifica expresamente dos expedientes de transparencia separados cuyo contexto documental puede leerse conjuntamente sin fusionar órganos, referencias, objetos ni efectos jurídicos.",
+      "limitations_en": "This is contextual navigation only. It establishes no appeal, referral, parent/child lineage, joinder, notice, shared merits, knowledge, wrongdoing or liability.",
+      "limitations_es": "Es solo navegación contextual. No acredita recurso, remisión, filiación procesal, acumulación, conocimiento formal, fondo común, conocimiento personal, ilicitud ni responsabilidad.",
+      "evidence_status": "VERIFIED_PRIMARY_WITH_FILE_SEPARATION",
+      "public_safe": true
+    }
+  ],
   "findings": [
     {
       "id": "T7-F-001",

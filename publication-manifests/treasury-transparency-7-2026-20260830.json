@@ -69,6 +69,16 @@
       "sitemap": "https://sbu001monterecco.github.io/por-derecho/sitemap-treasury-transparency-7-2026.xml"
     }
   },
+  "projection_migration": {
+    "target": "assets/data/proceedings-interlinkability-v1.json",
+    "dependent_targets": [
+      "assets/data/proceedings-master-public-v1.json",
+      "assets/data/proceedings-case-prism-v1.json"
+    ],
+    "state": "PR_OPEN",
+    "pull_request": 1235,
+    "qualification": "The LIVE_VERIFIED evidence for PR #1247 certifies its earlier source snapshot. PR #1235 separately limits NAT-TES-001 direct routing to X-WB-005 and represents LZ-TRA-028 and NAT-AID-001 only through controlled contextual structures. That interlinkability migration is not LIVE_VERIFIED until PR #1235 merges, deploys and passes independent readback."
+  },
   "merge_sha": "5939ed3badad20193a4aba05ca62047d6bc6ff89",
   "deployment_evidence": {
     "workflow": "pages-build-deployment",

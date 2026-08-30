@@ -51,7 +51,7 @@
   ],
   "public_projection": {
     "source": "canonical_csv_runtime_projection",
-    "qualification": "The visible aggregate is a restricted rendering of selected fields from the canonical public-repository CSV; it is not a separate merits register and does not make an index row a finding, admission or prosecution.",
+    "qualification": "Historical DEPLOYED evidence for PR #1216 covers the then-live canonical-CSV runtime projection. The visible aggregate was a restricted rendering of selected fields from the canonical public-repository CSV; it was not a separate merits register and did not make an index row a finding, admission or prosecution.",
     "exclude_public_treatment_contains": [
       "INTERNAL_ONLY",
       "PRIVATE",
@@ -83,6 +83,17 @@
       "Source_Status",
       "Open_Reference_Gap"
     ]
+  },
+  "projection_migration": {
+    "target": "assets/data/proceedings-master-public-v1.json",
+    "derivation": "DETERMINISTIC_ALLOWLIST_FROM_CANONICAL_REGISTER",
+    "state": "PR_OPEN",
+    "pull_request": 1235,
+    "expected_source_files": [
+      "assets/data/proceedings-master-public-v1.json",
+      "scripts/build_public_proceedings_projection.py"
+    ],
+    "qualification": "PR #1235 replaces browser-side operational-CSV filtering with a deterministic allowlisted public derivative. This migration is not LIVE_VERIFIED until that PR merges, deploys and passes independent readback."
   },
   "interlinking": {
     "sitewide_navigation": true,

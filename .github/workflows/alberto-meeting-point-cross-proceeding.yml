@@ -468,17 +468,19 @@ jobs:
           unitary = candidate['scope_separation']['unitary_caret_scope']
           assert specialist == {
               'control_id': 'PD-ALV-MP357-CARET-20260827-01',
-              'confirmed': 25,
-              'pending': 7,
-              'denominator': 32,
-              'verdict': 'FULL_CENSUS_PARTIAL_NOT_ALL_IS',
+              'confirmed': 31,
+              'pending': 0,
+              'denominator': 31,
+              'occurrence_rows': 32,
+              'confirmed_occurrence_rows': 32,
+              'verdict': 'ALL_IS_VERIFIED_FOR_STATED_SCOPE',
           }
           assert unitary == {
               'control_id': 'PD-UNITARY-REDIGEST-20260827-01',
-              'confirmed': 19,
-              'pending': 5,
+              'confirmed': 21,
+              'pending': 3,
               'denominator': 24,
-              'changed_by_this_module': False,
+              'changed_by_this_module': True,
           }
 
           manifest = json.loads(body(manifest_route))
@@ -501,8 +503,8 @@ jobs:
           assert manifest['control_id'] == 'PD-ALV-MP357-MULTI-20260827-01'
           assert manifest['first_hop_caret_scope'] == {
               'control_id': 'PD-ALV-MP357-FIRST-HOP-CARET-20260827-01',
-              'confirmed': 56,
-              'pending': 74,
+              'confirmed': 61,
+              'pending': 69,
               'suspended': 0,
               'denominator': 130,
               'verdict': 'FULL_FIRST_HOP_CENSUS_PARTIAL_NOT_ALL_IS',
@@ -545,9 +547,9 @@ jobs:
               hub_body = body(hub)
               for marker in (
                   'PD-ALV-MP357-MULTI-20260827-01',
-                  '25/32',
-                  '56/130',
-                  '19/24',
+                  '31/31',
+                  '61/130',
+                  '21/24',
               ):
                   assert marker in hub_body, f'{hub}: missing {marker}'
               hub_document = document(hub)
@@ -562,54 +564,56 @@ jobs:
 
           caret = json.loads(body('/assets/data/caepr-caret-alberto-meeting-point-357-v1.json'))
           assert caret['control_id'] == 'PD-ALV-MP357-CARET-20260827-01'
-          assert caret['counts']['eligible'] == 32
-          assert caret['counts']['confirmed'] == 25
-          assert caret['counts']['pending'] == 7
-          assert caret['verdict'] == 'FULL CENSUS COMPLETE; 25/32 CARET_CONFIRMED; 7 CARET_PENDING; PARTIAL — NOT ALL IS^'
+          assert caret['counts']['eligible'] == 31
+          assert caret['counts']['occurrence_rows'] == 32
+          assert caret['counts']['confirmed'] == 31
+          assert caret['counts']['confirmed_occurrence_rows'] == 32
+          assert caret['counts']['pending'] == 0
+          assert caret['verdict'] == 'ALL IS^ — VERIFIED FOR THE STATED SIX-SURFACE SCOPE; 31/31 UNIQUE IDENTITIES AND 32/32 OCCURRENCE ROWS CARET_CONFIRMED; 0 PENDING'
           assert caret['unitary_scope_reference'] == {
               'control_id': 'PD-UNITARY-REDIGEST-20260827-01',
-              'confirmed': 19,
-              'pending': 5,
+              'confirmed': 21,
+              'pending': 3,
               'denominator': 24,
-              'changed_by_this_module': False,
+              'changed_by_this_module': True,
           }
 
           assert first_hop_path in candidate_paths
           first_hop = json.loads(body('/assets/data/caepr-caret-alberto-meeting-point-first-hop-v1.json'))
           assert first_hop['control_id'] == 'PD-ALV-MP357-FIRST-HOP-CARET-20260827-01'
           assert first_hop['counts']['eligible'] == 130
-          assert first_hop['counts']['confirmed'] == 56
-          assert first_hop['counts']['pending'] == 74
+          assert first_hop['counts']['confirmed'] == 61
+          assert first_hop['counts']['pending'] == 69
           assert first_hop['counts']['suspended'] == 0
           assert len(first_hop['records']) == 130
-          assert sum(record['state'] == 'CARET_CONFIRMED' for record in first_hop['records']) == 56
-          assert sum(record['state'] == 'CARET_PENDING' for record in first_hop['records']) == 74
+          assert sum(record['state'] == 'CARET_CONFIRMED' for record in first_hop['records']) == 61
+          assert sum(record['state'] == 'CARET_PENDING' for record in first_hop['records']) == 69
           assert all(record.get('next_source_needed') for record in first_hop['records'] if record['state'] == 'CARET_PENDING')
-          assert first_hop['verdict'] == 'FULL FIRST-HOP CENSUS COMPLETE; 56/130 CARET_CONFIRMED; 74 CARET_PENDING; 0 CARET_SUSPENDED; PARTIAL — NOT ALL IS^'
+          assert first_hop['verdict'] == 'FULL FIRST-HOP CENSUS COMPLETE; 61/130 CARET_CONFIRMED; 69 CARET_PENDING; 0 CARET_SUSPENDED; PARTIAL — NOT ALL IS^'
 
           unitary_caret = json.loads(body('/assets/data/caepr-caret-unitary-digest-v1.json'))
           assert unitary_caret['control_id'] == 'PD-CAEPR-CARET-UNITARY-DIGEST-20260826-01'
           assert unitary_caret['result']['denominator'] == 24
-          assert unitary_caret['result']['confirmed'] == 19
-          assert unitary_caret['result']['pending'] == 5
-          assert unitary_caret['result']['coverage_fraction'] == '19/24'
+          assert unitary_caret['result']['confirmed'] == 21
+          assert unitary_caret['result']['pending'] == 3
+          assert unitary_caret['result']['coverage_fraction'] == '21/24'
 
           registry = json.loads(body('/assets/data/matter-identity-registry-v1.json'))
           assert registry['counts'] == {
-              'total': 214,
-              'PERSON': 94,
-              'ORGANISATION': 74,
-              'STRUCTURE': 10,
-              'INSTITUTION': 18,
-              'PROCEEDING': 18,
+              'total': 230,
+              'PERSON': 95,
+              'ORGANISATION': 79,
+              'STRUCTURE': 11,
+              'INSTITUTION': 23,
+              'PROCEEDING': 22,
           }
           for route, language_marker in (
-              ('/es/registro-identidad-materia/', 'Los <strong>214 IDs</strong>'),
-              ('/en/matter-identity-registry/', 'The <strong>214 IDs</strong>'),
+              ('/es/registro-identidad-materia/', 'Los <strong>230 IDs</strong>'),
+              ('/en/matter-identity-registry/', 'The <strong>230 IDs</strong>'),
           ):
               registry_body = body(route)
-              assert 'data-static-registry-counts="214-94-74-10-18-18"' in registry_body
-              assert 'data-registry-stat="TOTAL">214' in registry_body
+              assert 'data-static-registry-counts="230-95-79-11-23-22"' in registry_body
+              assert 'data-registry-stat="TOTAL">230' in registry_body
               assert language_marker in registry_body
 
           # The specialist manifest records its own exact historical release at
@@ -696,7 +700,7 @@ jobs:
 
           current_digest = body('/CURRENT_REVERSE_ENGINEERED_DIGEST.md')
           assert 'PD-ALV-MP357-MULTI-20260827-01' in current_digest
-          assert '25/32' in current_digest
+          assert '31/31' in current_digest
           current_digest_control = json.loads(body('/ops/CURRENT_REVERSE_ENGINEERED_DIGEST.json'))
           assert current_digest_control['control_id'] == 'PD-UNITARY-REDIGEST-20260827-01'
           modules = {
@@ -705,15 +709,17 @@ jobs:
           }
           assert 'PD-ALV-MP357-MULTI-20260827-01' in modules
           assert modules['PD-ALV-MP357-MULTI-20260827-01']['caret_scope'] == {
-              'confirmed': 25,
-              'pending': 7,
+              'confirmed': 31,
+              'pending': 0,
               'suspended': 0,
-              'denominator': 32,
-              'verdict': 'FULL_CENSUS_PARTIAL_NOT_ALL_IS',
+              'denominator': 31,
+              'occurrence_rows': 32,
+              'confirmed_occurrence_rows': 32,
+              'verdict': 'ALL_IS_VERIFIED_FOR_STATED_SCOPE',
           }
           assert modules['PD-ALV-MP357-MULTI-20260827-01']['first_hop_caret_scope'] == {
-              'confirmed': 56,
-              'pending': 74,
+              'confirmed': 61,
+              'pending': 69,
               'suspended': 0,
               'denominator': 130,
               'verdict': 'FULL_FIRST_HOP_CENSUS_PARTIAL_NOT_ALL_IS',
@@ -730,9 +736,9 @@ jobs:
               'supporting_hub_links': len(supporting_hub_edges),
               'graph_edges': len(expected_topology),
               'first_hop_control_included': first_hop_path in candidate_paths,
-              'specialist_caret': '25/32',
-              'first_hop_caret': '56/130',
-              'unitary_caret': '19/24',
-              'identity_source_current': 214,
+              'specialist_caret': '31/31',
+              'first_hop_caret': '61/130',
+              'unitary_caret': '21/24',
+              'identity_source_current': 230,
               'specialist_historical_identity_snapshot': 204,
           }, sort_keys=True))

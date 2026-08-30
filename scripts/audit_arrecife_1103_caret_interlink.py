@@ -87,6 +87,16 @@ require("ME-115" in (ROOT / "archive/MISSING_EVIDENCE_REGISTER.md").read_text(en
 
 manifest = json.loads((ROOT / "publication-manifests/arrecife-1103-2018-caret-interlink-20260830.json").read_text(encoding="utf-8"))
 require(manifest.get("publication_id") == "PD-SP-ARRECIFE-1103-2018-CARET-20260830-01", "publication manifest identity drift")
+require(manifest.get("current_state") == "LIVE_VERIFIED" and manifest.get("state") == "MERGED_DEPLOYED_AND_EXACT_READBACK_VERIFIED", "source lifecycle does not preserve exact live verification")
+source_lifecycle = manifest.get("source_lifecycle", {})
+require(source_lifecycle.get("pull_request") == 1240 and source_lifecycle.get("pr_head_sha") == "770a76f386126791dc2ed40078394cdb233fa8ec", "source PR lifecycle evidence drift")
+require(source_lifecycle.get("merge_sha") == "ea62df4d0476a210623536cfdb735bf9c7136ab7", "source merge evidence drift")
+require(source_lifecycle.get("pages_deployment") == "LIVE_VERIFIED_PAGES_RUN_33340554512" and source_lifecycle.get("live_readback") == "LIVE_VERIFIED_12_OF_12_ROUTES_AND_CONTROLLED_DATA", "source deployment/readback evidence drift")
+migration = manifest.get("projection_migration", {})
+require(migration.get("target") == "assets/data/proceedings-master-public-v1.json" and migration.get("state") == "PR_OPEN" and migration.get("pull_request") == 1235, "allowlisted projection migration is not separately controlled")
+live_evidence = manifest.get("live_verification_evidence", {})
+require(live_evidence.get("status") == "PASS" and live_evidence.get("pages_run_id") == 33340554512, "source live verification evidence missing")
+require(live_evidence.get("source_merge_sha") == "ea62df4d0476a210623536cfdb735bf9c7136ab7", "source live verification head drift")
 
 if errors:
     print("ARRECIFE 1103 CARET / INTERLINK AUDIT: FAIL")

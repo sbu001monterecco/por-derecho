@@ -30,8 +30,14 @@ type without a primary institutional source.
   `Is_Proceeding=UNVERIFIED`, `Source_Status=OPEN_REFERENCE` and
   `Public_Treatment=PUBLIC_SUMMARY_WITH_IDENTITY_GAP`;
 - `archive/MISSING_EVIDENCE_REGISTER.md` as `ME-111`; and
-- the bilingual public Master Proceedings Register and Proceedings Map through
-  their existing canonical-CSV runtime projection.
+- the bilingual public Master Proceedings Register and Proceedings Map.
+
+PR #1236's historical `LIVE_VERIFIED` evidence covers the canonical-CSV runtime
+projection that was then deployed. PR #1235 separately migrates those browser
+surfaces to the deterministic allowlisted derivative
+`assets/data/proceedings-master-public-v1.json`. That migration remains
+`PR_OPEN` until its own merge, deployment and live readback; it does not alter
+the source-pending identity boundary.
 
 The same canonical row drives the English and Spanish public register and map.
 This gives reciprocal discovery between the register and map without creating

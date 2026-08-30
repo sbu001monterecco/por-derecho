@@ -2,7 +2,7 @@
   "schema_version": "1.0.0",
   "control_date": "2026-08-30",
   "status": "PUBLIC_DERIVED_CASE_PRISM",
-  "canonical_node_source": "archive/PROCEEDINGS_MASTER_REGISTER.csv",
+  "canonical_node_source_id": "PROCEEDINGS_MASTER_REGISTER",
   "boundary": {
     "en": "This is a navigation and cross-record verification layer. A cell marked contextual or open does not prove joinder, notice, admissibility, coordination, wrongdoing or liability. Material relied upon in a live proceeding must reach the competent organ by the lawful procedural route.",
     "es": "Esta es una capa de navegación y verificación entre expedientes. Una celda marcada como contexto o abierta no prueba acumulación, conocimiento, admisibilidad, coordinación, ilicitud ni responsabilidad. Todo material que deba valorarse en un procedimiento vivo debe llegar al órgano competente por la vía procesal legalmente adecuada."

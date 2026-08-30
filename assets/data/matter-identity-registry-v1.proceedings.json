@@ -125,7 +125,9 @@
     {
       "id": "PD-SP-R-0013",
       "type": "PROCEEDING",
-      "name": "RPL 3304/2025 + RPL 3319/2025 — combined removal-appeal family",
+      "record_kind": "PROCEEDING_FAMILY_REFERENCE",
+      "is_exact_proceeding": false,
+      "name": "RPL 3304/2025 + RPL 3319/2025 — combined removal-appeal family reference",
       "aliases": [
         "combined removal appeals",
         "apelaciones de separación acumuladas"
@@ -134,8 +136,18 @@
         "es": "/es/concurso-36-2012-autos-resoluciones/#R30",
         "en": "/en/insolvency-36-2012-orders-decisions/#R30"
       },
-      "identity_resolution": "CARET_CONFIRMED",
-      "procedural_state": "AUTO_223_2026_ACCUMULATION_ONLY"
+      "identity_resolution": "CANONICAL",
+      "caret_eligibility": "NOT_ELIGIBLE_AGGREGATE_FAMILY_REFERENCE",
+      "procedural_state": "AUTO_223_2026_ACCUMULATION_ONLY",
+      "exact_proceeding_ids": [
+        "PD-SP-R-0011",
+        "PD-SP-R-0012"
+      ],
+      "master_register_ids": [
+        "GC-APP-005",
+        "GC-APP-006"
+      ],
+      "identity_boundary": "Immutable aggregate continuity reference to the source-proved accumulation relationship only; not a third appeal, not an exact proceeding and not a merger of parties, grounds, usable records or procedural effects."
     },
     {
       "id": "PD-SP-R-0014",

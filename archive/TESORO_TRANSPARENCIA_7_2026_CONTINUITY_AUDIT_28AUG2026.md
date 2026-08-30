@@ -55,6 +55,8 @@ Do not merge:
 
 Canonical rule: **separate legal lanes; interconnected evidence; no file-number or organ collapse.**
 
+Interlink classification is equally bounded. `NAT-TES-001` records a direct routing lineage only to `X-WB-005`, because the same `REGAGE26e00065752755` filing is part of the documented Law 2/2023 transfer/routing chain. `LZ-TRA-028` remains a source-controlled contextual corridor for the separate Resolution 28/2026 transparency challenge. `NAT-AID-001` / GC/836/P06 remains public-money context through the Case Prism programme-dependency test. Neither contextual route is a direct procedural edge, appeal, parent/child relationship or joinder.
+
 ## 5. What the reviewed material proves
 
 The primary record establishes:

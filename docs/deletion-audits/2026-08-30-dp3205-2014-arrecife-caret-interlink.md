@@ -3,7 +3,7 @@
 **Date:** 30 August 2026
 **Branch:** `codex/3205-2014-primary-evidence-replacement`
 **Superseding base:** `710e4bc0c85a05a693f29dc2ed64ce6f1f5e64b8`
-**Publication state:** authorised for the normal publication chain; live verification pending
+**Publication state:** merged through PR #1231 as `fc618fbeac8983cdd27e5b7dee2bb19a1585a525`; Pages/live verification pending
 
 ## Scope
 

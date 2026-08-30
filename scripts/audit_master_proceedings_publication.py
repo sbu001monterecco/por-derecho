@@ -4,11 +4,22 @@
 from __future__ import annotations
 
 import csv
+import hashlib
+import json
 import sys
 from pathlib import Path
 
+from build_public_proceedings_projection import (
+    EXCLUDED_TREATMENTS,
+    FIELD_ALLOWLIST,
+    PRIVATE_SOURCE_FIELDS,
+    PUBLIC_TREATMENTS,
+)
+
 ROOT = Path(__file__).resolve().parents[1]
 CSV = ROOT / "archive/PROCEEDINGS_MASTER_REGISTER.csv"
+PROJECTION = ROOT / "assets/data/proceedings-master-public-v1.json"
+BUILDER = ROOT / "scripts/build_public_proceedings_projection.py"
 PROTOCOL = ROOT / "archive/PROCEEDINGS_MASTER_REGISTER_PROTOCOL.md"
 GOVERNANCE = ROOT / "archive/MASTER_PROCEEDINGS_PUBLICATION_GOVERNANCE_30AUG2026.md"
 EN = ROOT / "en/master-proceedings-register/index.html"
@@ -22,7 +33,7 @@ MARKER = "MASTER_PROCEEDINGS_PUBLICATION_GATE"
 
 def main() -> int:
     errors: list[str] = []
-    required = [CSV, PROTOCOL, GOVERNANCE, EN, ES, JS, CSS, SITE, MANIFEST]
+    required = [CSV, PROJECTION, BUILDER, PROTOCOL, GOVERNANCE, EN, ES, JS, CSS, SITE, MANIFEST]
     for path in required:
         if not path.exists():
             errors.append(f"missing required publication control: {path.relative_to(ROOT)}")
@@ -38,6 +49,24 @@ def main() -> int:
     es = ES.read_text(encoding="utf-8")
     js = JS.read_text(encoding="utf-8")
     site = SITE.read_text(encoding="utf-8")
+    projection_text = PROJECTION.read_text(encoding="utf-8")
+    projection = json.loads(projection_text)
+    manifest = json.loads(MANIFEST.read_text(encoding="utf-8"))
+
+    if manifest.get("public_projection", {}).get("source") != "canonical_csv_runtime_projection":
+        errors.append("historical deployed Master Register projection source changed")
+    migration = manifest.get("projection_migration", {})
+    if not (
+        migration.get("target") == "assets/data/proceedings-master-public-v1.json"
+        and migration.get("derivation") == "DETERMINISTIC_ALLOWLIST_FROM_CANONICAL_REGISTER"
+        and migration.get("state") == "PR_OPEN"
+        and migration.get("pull_request") == 1235
+        and set(migration.get("expected_source_files", [])) == {
+            "assets/data/proceedings-master-public-v1.json",
+            "scripts/build_public_proceedings_projection.py",
+        }
+    ):
+        errors.append("allowlisted Master Register projection migration is not separately lifecycle-controlled")
 
     for path, text in ((PROTOCOL, protocol), (GOVERNANCE, governance), (SITE, site)):
         if MARKER not in text:
@@ -53,23 +82,58 @@ def main() -> int:
             errors.append(f"{path.relative_to(ROOT)} missing canonical/reciprocal route linkage")
         if "TRUE" not in text or "FALSE" not in text or "UNVERIFIED" not in text:
             errors.append(f"{path.relative_to(ROOT)} must explain TRUE/FALSE/UNVERIFIED")
+        if "assets/data/proceedings-master-public-v1.json" not in text:
+            errors.append(f"{path.relative_to(ROOT)} does not identify the public-safe derivative")
+        if "archive/PROCEEDINGS_MASTER_REGISTER.csv" in text:
+            errors.append(f"{path.relative_to(ROOT)} prints the non-browser operational path")
+        if "assets/site.js?v=20260830c" not in text:
+            errors.append(f"{path.relative_to(ROOT)} does not cache-bust the repaired runtime loader")
 
     required_js_phrases = (
-        "PROCEEDINGS_MASTER_REGISTER.csv",
-        "INTERNAL_ONLY",
-        "NOT_SITE_AGGREGATED",
+        "assets/data/proceedings-master-public-v1.json",
+        "#trace-proceeding=",
+        "#isolation-test=",
+        "#record-",
+        "encodeURIComponent(r.Master_ID)",
+        "data-master-id",
+        "data-isolation-master-id",
+        "isExactProceeding = stateValue === 'TRUE'",
+        "const isolationLink = isExactProceeding",
+        "isolation: 'Isolation test'",
+        "isolation: 'Prueba de aislamiento'",
         "data-master-proceedings-nav",
         "data-master-proceedings-timeline-link",
         "Open_Reference_Gap",
         "Parent_Master_ID",
         "Linked_Proceedings",
+        "linkMasterReferences",
+        "#record-$1",
+        "LZ-JUD-003",
+        "LZ-APP-004",
+        "arrecife-1103-2018-procedural-lineage",
+        "arrecife-1103-2018-cadena-procesal",
     )
     for phrase in required_js_phrases:
         if phrase not in js:
             errors.append(f"public projection runtime missing control phrase: {phrase}")
 
+    for forbidden in (
+        "archive/PROCEEDINGS_MASTER_REGISTER.csv",
+        "parseCsv",
+        "isPublicRow",
+        "Primary_Source_Anchor",
+        "Repo_Canonical_Source",
+        "Notes",
+    ):
+        if forbidden in js:
+            errors.append(f"public runtime retains forbidden canonical/private token: {forbidden}")
+
     if "master-proceedings-publication-20260830.js" not in site:
         errors.append("assets/site.js does not load the master proceedings public runtime")
+    if "master-proceedings-publication-20260830.js?v=20260830c" not in site:
+        errors.append("assets/site.js does not cache-bust the repaired public runtime")
+    if "data-master-proceedings-publication-loader', '20260830c'" not in site:
+        errors.append("assets/site.js public-runtime loader marker is stale")
 
     required_columns = {
         "Master_ID", "Record_Type", "Is_Proceeding", "Proceeding_Class", "Stream",
@@ -85,6 +149,70 @@ def main() -> int:
         if missing:
             errors.append("master CSV missing public-spine columns: " + ", ".join(missing))
         rows = list(reader)
+
+    observed_treatments = {(row.get("Public_Treatment") or "").strip() for row in rows}
+    governed_treatments = set(PUBLIC_TREATMENTS) | set(EXCLUDED_TREATMENTS)
+    unknown_treatments = sorted(observed_treatments - governed_treatments)
+    if unknown_treatments:
+        errors.append("canonical CSV contains unreviewed public treatments")
+
+    expected_public = [
+        {field: row.get(field, "") or "" for field in FIELD_ALLOWLIST}
+        for row in rows
+        if (row.get("Public_Treatment") or "").strip() in PUBLIC_TREATMENTS
+    ]
+    expected_excluded = [
+        row for row in rows
+        if (row.get("Public_Treatment") or "").strip() in EXCLUDED_TREATMENTS
+    ]
+    public_records = projection.get("records", [])
+    if projection.get("schema_version") != "1.0.0":
+        errors.append("public proceedings projection schema version changed")
+    if projection.get("canonical_source_id") != "PROCEEDINGS_MASTER_REGISTER":
+        errors.append("public proceedings projection canonical source identity changed")
+    if projection.get("derivation") != "DETERMINISTIC_ALLOWLIST":
+        errors.append("public proceedings projection derivation control changed")
+    if projection.get("canonical_source_sha256") != hashlib.sha256(CSV.read_bytes()).hexdigest():
+        errors.append("public proceedings projection canonical source hash is stale")
+    if projection.get("field_allowlist") != list(FIELD_ALLOWLIST):
+        errors.append("public proceedings projection field allowlist changed")
+    if projection.get("source_record_count") != len(rows):
+        errors.append("public proceedings projection source denominator mismatch")
+    if projection.get("public_record_count") != len(expected_public):
+        errors.append("public proceedings projection public denominator mismatch")
+    if projection.get("excluded_record_count") != len(expected_excluded):
+        errors.append("public proceedings projection excluded denominator mismatch")
+    if public_records != expected_public:
+        errors.append("public proceedings projection does not exactly match the governed allowlisted rows")
+    if not isinstance(public_records, list) or any(
+        not isinstance(record, dict) or set(record) != set(FIELD_ALLOWLIST)
+        for record in public_records
+    ):
+        errors.append("public proceedings projection contains missing or non-allowlisted record fields")
+    public_ids = [record.get("Master_ID") for record in public_records if isinstance(record, dict)]
+    expected_ids = [record["Master_ID"] for record in expected_public]
+    if public_ids != expected_ids or len(public_ids) != len(set(public_ids)):
+        errors.append("public proceedings projection does not preserve unique eligible Master_ID values")
+    for private_field in PRIVATE_SOURCE_FIELDS:
+        if f'"{private_field}"' in projection_text:
+            errors.append(f"public proceedings projection exposes forbidden field: {private_field}")
+
+    exact_public_records = [
+        record for record in public_records
+        if isinstance(record, dict) and (record.get("Is_Proceeding") or "").strip().upper() == "TRUE"
+    ]
+    non_exact_public_records = [
+        record for record in public_records
+        if isinstance(record, dict) and (record.get("Is_Proceeding") or "").strip().upper() != "TRUE"
+    ]
+    trace_destination_ids = {record["Master_ID"] for record in public_records if isinstance(record, dict)}
+    isolation_destination_ids = {record["Master_ID"] for record in exact_public_records}
+    if len(trace_destination_ids) != len(public_records) or trace_destination_ids != set(public_ids):
+        errors.append("not every public record receives one exact trace destination")
+    if len(exact_public_records) != 85 or len(isolation_destination_ids) != 85:
+        errors.append("exact public isolation-link denominator must be 85/85")
+    if len(non_exact_public_records) != 21:
+        errors.append("FALSE/UNVERIFIED public isolation-ineligibility denominator must be 21")
 
     if not rows:
         errors.append("master CSV contains no rows")
@@ -106,12 +234,17 @@ def main() -> int:
             print(f"ERROR: {error}")
         return 1
 
-    print("MASTER PROCEEDINGS PUBLICATION AUDIT: PASSED")
+    print("MASTER PROCEEDINGS PUBLIC RUNTIME AUDIT: PASSED (ADDITIVE STAGE)")
     print(f"Canonical rows: {len(rows)}")
     print(f"TRUE proceedings/files: {true_count}")
     print(f"UNVERIFIED candidates: {unverified_count}")
     print(f"Legacy public-treatment rows eligible for controlled projection: {legacy_count}")
-    print("Bilingual routes, sitewide navigation/timeline interlinking, public-field boundaries and continuity governance verified.")
+    print(f"Public-safe projection: {len(public_records)} records; {len(expected_excluded)} excluded")
+    print(f"Exact trace destinations: {len(trace_destination_ids)}/{len(public_records)} public records")
+    print(f"Static isolation eligibility: {len(isolation_destination_ids)}/{len(exact_public_records)} TRUE records eligible; {len(non_exact_public_records)}/{len(non_exact_public_records)} FALSE/UNVERIFIED records ineligible")
+    print("Browser-rendered isolation-link enforcement must be verified by the dedicated Playwright smoke; this static audit does not infer it.")
+    print("Runtime allowlisted projection, bilingual routes, exact-trace/isolation links and navigation/timeline interlinking verified.")
+    print("PUBLICATION BOUNDARY GAP: current-tree/Pages unpublishing of the canonical operational source is not verified by this audit.")
     return 0
 
 

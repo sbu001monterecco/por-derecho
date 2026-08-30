@@ -1103,10 +1103,12 @@ require(manifest.get("publication_id") == "PD-SP-DP3205-2014-20260830-05", "mani
 require(manifest.get("supersedes") == "PD-SP-DP3205-2014-20260830-04", "manifest does not identify the superseded control")
 require(manifest.get("base_revision") == BASE_REVISION, "manifest base revision is stale or incorrect")
 require(
-    manifest.get("current_state") == "PREPARED_PENDING_MERGE"
-    and manifest.get("state") == "PREPARED_PENDING_MERGE",
-    "manifest must record the authorised publication state",
+    manifest.get("current_state") == "MERGED"
+    and manifest.get("state") == "MERGED",
+    "manifest must record the merged publication state",
 )
+require(manifest.get("merge_sha") == "fc618fbeac8983cdd27e5b7dee2bb19a1585a525", "manifest DP 3205 merge SHA is missing or stale")
+require(len(manifest.get("validation", {}).get("evidence", [])) >= 4, "manifest lacks bounded PR/CI/merge evidence")
 require(
     manifest.get("publication_gate") == "EXPRESS_USER_PUBLICATION_AUTHORITY_30AUG2026",
     "manifest does not record the express publication gate",
@@ -1147,8 +1149,14 @@ if isinstance(manifest_files, list):
         require(required_path in manifest_files, f"manifest omits required superseding source: {required_path}")
 verification = manifest.get("verification", {})
 require(verification.get("local_validation") is True, "manifest does not record successful local validation")
-for remote_state in ("ci_green", "merged", "main_readback", "pages_deployed", "public_readback"):
-    require(verification.get(remote_state) is False, f"manifest overclaims remote state: {remote_state}")
+for remote_state, expected in {
+    "ci_green": False,
+    "merged": True,
+    "main_readback": True,
+    "pages_deployed": False,
+    "public_readback": False,
+}.items():
+    require(verification.get(remote_state) is expected, f"manifest remote state mismatch: {remote_state}")
 scope_changes = manifest.get("material_scope_changes", [])
 for marker in (
     "primary incident narrative",

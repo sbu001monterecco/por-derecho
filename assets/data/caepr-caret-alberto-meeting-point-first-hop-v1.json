@@ -213,15 +213,15 @@
       "node_id": "AM357-N09",
       "language": "es",
       "route": "/es/reconstruccion-unitaria-autoridades-publicas/",
-      "normalized_main_sha256": "09f082e0db270117fd2e85fd8b0ee4303f88ddfffb73f1ff811aa4731902010d",
-      "normalized_characters": 15119
+      "normalized_main_sha256": "e8509b61264ea0568238bc765b6108b89a840f588e9d8ea2a4ac8aae69151293",
+      "normalized_characters": 15206
     },
     {
       "node_id": "AM357-N09",
       "language": "en",
       "route": "/en/public-authority-unitary-case-reconstruction/",
-      "normalized_main_sha256": "fe2155d94b9fe9beb5cd286eaf0c406fc77ec259e8d9bbe8278510bfb1586046",
-      "normalized_characters": 14649
+      "normalized_main_sha256": "ffcd13b3ca6824865e70f35dad301fb725598fbdd5e567cf4a6157d57aee4a86",
+      "normalized_characters": 14720
     }
   ],
   "record_provenance": [

@@ -33,7 +33,13 @@
   "public_projection": {
     "source": "canonical_csv_runtime_projection",
     "public_treatment": "PUBLIC_SUMMARY_WITH_IDENTITY_GAP",
-    "qualification": "The public row is an unresolved user-supplied judicial-reference lead, not a verified proceeding identity, finding or established relationship."
+    "qualification": "Historical LIVE_VERIFIED evidence for PR #1236 covers the then-live canonical-CSV runtime projection. The public row is an unresolved user-supplied judicial-reference lead, not a verified proceeding identity, finding or established relationship."
+  },
+  "projection_migration": {
+    "target": "assets/data/proceedings-master-public-v1.json",
+    "state": "PR_OPEN",
+    "pull_request": 1235,
+    "qualification": "PR #1235 replaces browser-side operational-CSV filtering with a deterministic allowlisted public derivative. This migration is not LIVE_VERIFIED until that PR merges, deploys and passes independent readback."
   },
   "interlinking": {
     "master_register_to_map": true,

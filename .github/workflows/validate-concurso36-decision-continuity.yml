@@ -16,6 +16,7 @@ on:
       - 'assets/data/caepr-caret-unitary-digest-v1.json'
       - 'assets/data/concurso36-autos-fulltext-v1.json'
       - 'assets/data/concurso36-complete-record-v1.json'
+      - 'assets/data/concurso36-what-court-ordered-v2.json'
       - 'assets/data/concurso36-court-file-v1.json'
       - 'assets/data/concurso36-decision-continuity-2014-2026-v1.json'
       - 'assets/data/concurso36-decision-continuity-2014-2026-v1.xlsx'
@@ -41,6 +42,8 @@ on:
       - 'evidence/insolvency-36-2012/concurso-autos/full-text/**'
       - 'es/concurso-36-2012-autos-resoluciones/**'
       - 'en/insolvency-36-2012-orders-decisions/**'
+      - 'es/concurso-36-2012-que-ordeno-el-juzgado/**'
+      - 'en/concurso-36-2012-what-the-court-ordered/**'
   push:
     branches: [main]
     paths:
@@ -57,6 +60,7 @@ on:
       - 'assets/data/caepr-caret-unitary-digest-v1.json'
       - 'assets/data/concurso36-autos-fulltext-v1.json'
       - 'assets/data/concurso36-complete-record-v1.json'
+      - 'assets/data/concurso36-what-court-ordered-v2.json'
       - 'assets/data/concurso36-court-file-v1.json'
       - 'assets/data/concurso36-decision-continuity-2014-2026-v1.json'
       - 'assets/data/concurso36-decision-continuity-2014-2026-v1.xlsx'
@@ -82,6 +86,8 @@ on:
       - 'evidence/insolvency-36-2012/concurso-autos/full-text/**'
       - 'es/concurso-36-2012-autos-resoluciones/**'
       - 'en/insolvency-36-2012-orders-decisions/**'
+      - 'es/concurso-36-2012-que-ordeno-el-juzgado/**'
+      - 'en/concurso-36-2012-what-the-court-ordered/**'
   workflow_dispatch:
 
 permissions:

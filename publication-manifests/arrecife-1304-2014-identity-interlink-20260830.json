@@ -15,6 +15,17 @@
   "caret_state": "WITHHELD",
   "direct_edge_state": "NONE_SOURCE_ESTABLISHED",
   "contextual_bridge_state": "PUBLIC_SEARCH_AND_CHRONOLOGY_FOR_ARRECIFE_2014; TRACE_CONTEXT_BY_SAME_LANZAROTE_GEOGRAPHY_ONLY",
+  "projection_migration": {
+    "target": "assets/data/proceedings-master-public-v1.json",
+    "derivation": "DETERMINISTIC_ALLOWLIST_FROM_CANONICAL_REGISTER",
+    "state": "PR_OPEN",
+    "pull_request": 1235,
+    "expected_source_files": [
+      "assets/data/proceedings-master-public-v1.json",
+      "scripts/build_public_proceedings_projection.py"
+    ],
+    "qualification": "The LIVE_VERIFIED evidence in this manifest covers the PR #1238 source package and then-live register/map surfaces. PR #1235 separately migrates those browser surfaces to the deterministic allowlisted public derivative; this migration is not LIVE_VERIFIED until its own merge, deployment and independent readback. Geography remains taxonomy/navigation and does not create a material context cluster in that derivative."
+  },
   "expected_routes": {
     "en": ["en/master-proceedings-register/index.html", "en/proceedings-map/index.html"],
     "es": ["es/registro-maestro-procedimientos/index.html", "es/mapa-procedimientos/index.html"]

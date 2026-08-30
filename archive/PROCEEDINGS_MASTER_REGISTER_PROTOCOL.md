@@ -24,7 +24,7 @@ The operational objective remains that a fresh working thread can identify the o
 
 Read `archive/MASTER_PROCEEDINGS_PUBLICATION_GOVERNANCE_30AUG2026.md` before changing publication treatment, public routes, field projection, sitewide interlinking or the meaning of inclusion in the public register.
 
-The public pages read the canonical CSV and render a restricted public projection. They must not automatically render internal notes, private source anchors, privileged legal advice, personal contact details or rows explicitly classified as internal/private.
+The deterministic builder reads the canonical CSV and emits the restricted, allowlisted browser asset `assets/data/proceedings-master-public-v1.json`. Public pages must read that derivative, never download the operational CSV and filter it in the browser. The derivative must not contain internal notes, private source anchors, repository locators, privileged legal advice, personal contact details or rows explicitly classified as internal/private.
 
 The historic value `INTERNAL_KNOWLEDGE_REGISTER_NOT_AUTO_PUBLISHED` is a legacy non-automatic-publication label and no longer blocks inclusion in the user-authorised aggregate public projection. `INTERNAL_ONLY_NOT_SITE_AGGREGATED` and other unambiguous internal/private treatments remain excluded unless separately reclassified through a source/privacy-aware review.
 
@@ -100,6 +100,16 @@ Use `Is_Proceeding` as follows:
 - `FALSE` — useful reference, registration, output, technical identifier or transmission family, but not a separate proceeding.
 - `UNVERIFIED` — the corpus contains a plausible proceeding/file reference, but the primary source needed to establish its exact identity or status has not yet been recovered.
 
+An aggregate or family reference does not become a separate proceeding merely
+because each constituent proceeding is verified. Preserve a source-supported
+family or accumulation object with `Is_Proceeding=FALSE`, link every exact
+constituent through `Linked_Proceedings`, and use an expressly non-proceeding
+record/classification. For the AC-removal appellate family, `GC-APP-007` is the
+aggregate continuity reference only; the exact proceedings are `GC-APP-005`
+(`RPL 3304/2025`) and `GC-APP-006` (`RPL 3319/2025`). Accumulation does not
+create a third appeal and does not merge the parties, grounds, usable record or
+procedural effects of the two exact rolls.
+
 `Record_Type`, `Proceeding_Class` and `Source_Status` must be read together. The public register must display these distinctions prominently enough that aggregation cannot be mistaken for adjudication or admission.
 
 ## Source discipline
@@ -169,7 +179,7 @@ On 18 August 2026, a controlled status correction was added for `GC-CRI-009 / DP
 
 On 30 August 2026, the counsel/procurador filing-lineage gate was made mandatory for all future proceedings maintenance. The professional and procurador registers remain explicitly incomplete until primary-source reconciliation establishes the full denominator.
 
-Also on 30 August 2026, the Master Proceedings Register became a **controlled bilingual public procedural spine**. Its public pages are interlinked into the sitewide navigation and the recovery timeline through `assets/master-proceedings-publication-20260830.js`; the canonical CSV remains the source of truth and explicitly internal/private rows remain outside the public projection.
+Also on 30 August 2026, the Master Proceedings Register became a **controlled bilingual public procedural spine**. Its public pages are interlinked into the sitewide navigation and the recovery timeline through `assets/master-proceedings-publication-20260830.js`; the canonical CSV remains the source of truth, while the browser reads only the deterministic allowlisted derivative and explicitly internal/private rows remain outside the public projection.
 
 Known gaps remain gaps. Candidate references such as historical accumulated proceedings, incomplete appellate rolls, destination Fiscalía references and some output/registration numbers are not upgraded to verified proceedings merely to make the table or public page look complete.
 
@@ -196,8 +206,8 @@ For a normal refresh:
    - public treatment classification where a row must be withheld or newly released; and
    - timeline/storyline context where a material procedural relationship changes the public narrative.
 13. Reverse-engineer each material judicial/LAJ decision back to its input filing(s), professional attribution and authority/personación where the sources permit; link any appeal/follow-up and master timeline event.
-14. Confirm that the public projection automatically reflects public-eligible CSV changes without exposing excluded internal/private rows or private fields.
-15. Run `python scripts/audit_counsel_procurador_governance.py` and `python scripts/audit_master_proceedings_publication.py` before describing continuity as reconciled.
+14. Rebuild the allowlisted public projection and confirm that it reflects every public-eligible CSV change without exposing excluded internal/private rows or private fields.
+15. Run `python scripts/build_public_proceedings_projection.py --check`, `python scripts/audit_counsel_procurador_governance.py` and `python scripts/audit_master_proceedings_publication.py` before describing continuity as reconciled.
 16. Use branch → diff/review → PR → merge for substantive repository changes.
 17. Maintain the bilingual public aggregate register and its sitewide timeline/navigation interlinks; do not silently remove or de-promote them.
 18. Apply the universal thread-deletion continuity gate before finishing.
@@ -218,4 +228,4 @@ The bilingual public register is now part of this protocol's mandatory continuit
 
 The counsel/procurador filing-lineage gate remains part of the same mandatory architecture. Future proceedings work must not silently omit professional perimeter, procurador, authority/personación, filing-response or appeal/timeline lineage merely because those fields have not yet been populated.
 
-The master is deletion-safe only when material new references, corrections, professional attribution decisions, relationship decisions, public-treatment decisions and open source gaps have been incorporated in the canonical controls and the public register continues to render from those controls without regression.
+The master is deletion-safe only when material new references, corrections, professional attribution decisions, relationship decisions, public-treatment decisions and open source gaps have been incorporated in the canonical controls, regenerated into the allowlisted public derivative and rendered without regression.

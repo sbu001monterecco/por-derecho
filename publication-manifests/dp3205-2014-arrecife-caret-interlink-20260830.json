@@ -3,8 +3,8 @@
   "supersedes": "PD-SP-DP3205-2014-20260830-04",
   "owner": "Por Derecho / Project Sun Rock",
   "control_date": "2026-08-30",
-  "current_state": "PREPARED_PENDING_MERGE",
-  "state": "PREPARED_PENDING_MERGE",
+  "current_state": "MERGED",
+  "state": "MERGED",
   "publication_gate": "EXPRESS_USER_PUBLICATION_AUTHORITY_30AUG2026",
   "attribution_confirmation": "The user expressly confirmed that Gail in the originating voice-to-text was a transcription error for Gil Marer.",
   "publication_authority": "Gil Marer expressly authorised the continuity audit, governance and automation updates, contemporaneous/retrospective interlinking and normal commit, push, pull-request, merge and Pages publication chain in the authenticated thread on 30 August 2026. The authority does not extend to email, contact, filing, service or other third-party communication.",
@@ -12,6 +12,15 @@
   "purpose": "Publish a bilingual, privacy-minimized primary-source and criminal-first claimed-office derivative for 3205/2014 Arrecife; preserve separate contemporaneous and retrospective ledgers; link each finite-scope actor to an action/omission and evidential limit across applicable tracks; preserve the Juicio de faltas and later DP source labels; correct participant roles; analyze the access/key incident; preserve the 2011 to 7 June 2018 to DP 1901 continuity allegation with actor-specific limits; and keep authority, merits, formal relationships and outcome open.",
   "base_revision": "710e4bc0c85a05a693f29dc2ed64ce6f1f5e64b8",
   "head_branch": "codex/3205-2014-primary-evidence-replacement",
+  "merge_sha": "fc618fbeac8983cdd27e5b7dee2bb19a1585a525",
+  "validation": {
+    "evidence": [
+      "PR #1231 specialist DP 3205 validation run 33339098800: success on reviewed head 4f2c5b338f556342e97a34441dbcffed398e3f9b",
+      "PR #1231 interconnectivity audit run 33339098652: success on reviewed head 4f2c5b338f556342e97a34441dbcffed398e3f9b",
+      "PR #1231 publication-integrity run 33339098843: success on reviewed head 4f2c5b338f556342e97a34441dbcffed398e3f9b",
+      "PR #1231 merged to main as fc618fbeac8983cdd27e5b7dee2bb19a1585a525; current-main ancestry verified"
+    ]
+  },
   "external_mutation_authorized": true,
   "expected_routes": {
     "en": ["en/dp-3205-2014-arrecife/index.html"],
@@ -209,8 +218,8 @@
   "verification": {
     "local_validation": true,
     "ci_green": false,
-    "merged": false,
-    "main_readback": false,
+    "merged": true,
+    "main_readback": true,
     "pages_deployed": false,
     "public_readback": false
   }

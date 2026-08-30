@@ -121,8 +121,20 @@ if row.get("Origin_Organ") != "Dirección General del Tesoro y Política Financi
     fail("NAT-TES-001 organ or source status not corrected")
 if "7/2026" not in row.get("Reference", "") or "734 pages" not in row.get("Latest_Known_Event", ""):
     fail("NAT-TES-001 does not expose the corrected reference and reviewed denominator")
+if row.get("Linked_Proceedings") != "X-WB-005":
+    fail("NAT-TES-001 must keep only the documented X-WB-005 routing lineage as a direct link")
 if "Gmail " in row.get("Primary_Source_Anchor", ""):
     fail("NAT-TES-001 retains a provider-native private source anchor")
+
+corridors = data.get("proceedings_context_corridors", [])
+if len(corridors) != 1:
+    fail("Treasury control must expose exactly one source-controlled contextual corridor")
+else:
+    corridor = corridors[0]
+    if corridor.get("id") != "T7-COR-001" or set(corridor.get("member_master_ids", [])) != {"NAT-TES-001", "LZ-TRA-028"}:
+        fail("Treasury contextual corridor identity or membership drift")
+    if corridor.get("context_type") != "SOURCE_CONTROLLED_CORRIDOR" or corridor.get("public_safe") is not True:
+        fail("Treasury contextual corridor lacks its controlled public classification")
 
 internal = (ROOT / "archive/MASTER_PROCEEDINGS_REGISTER_INTERNAL_20AUG2026.md").read_text(encoding="utf-8")
 if "ADM-CAN-002 | Dirección General del Tesoro y Política Financiera" not in internal:
@@ -150,6 +162,19 @@ if publication.get("pull_request") != 1247 or publication.get("merge_sha") != "5
     fail("content publication PR or merge evidence drift")
 if publication.get("pages_run", {}).get("id") != 33341536674 or publication.get("pages_run", {}).get("status") != "COMPLETED_SUCCESS":
     fail("exact Pages deployment evidence drift")
+migration = manifest.get("projection_migration", {})
+if (
+    migration.get("target") != "assets/data/proceedings-interlinkability-v1.json"
+    or migration.get("dependent_targets") != [
+        "assets/data/proceedings-master-public-v1.json",
+        "assets/data/proceedings-case-prism-v1.json",
+    ]
+    or migration.get("state") != "PR_OPEN"
+    or migration.get("pull_request") != 1235
+):
+    fail("PR #1235 Treasury interlinkability migration boundary is missing or stale")
+if "not LIVE_VERIFIED" not in migration.get("qualification", ""):
+    fail("PR #1247 live evidence is not kept separate from the PR #1235 projection migration")
 evidence = data.get("publication_evidence", {})
 if evidence.get("merge_sha") != publication.get("merge_sha") or evidence.get("pages", {}).get("run_id") != 33341536674:
     fail("structured publication evidence is not aligned")
@@ -165,4 +190,4 @@ for rel, token in [
     if token not in (ROOT / rel).read_text(encoding="utf-8"):
         fail(f"live publication closeout missing from {rel}")
 
-print("Treasury transparency 7/2026 validation passed: official capacity, 8-file / 734-page review, one Colabora delivery event, file separation, privacy, bilingual discovery and canonical proceedings correction OK.")
+print("Treasury transparency 7/2026 validation passed: official capacity, 8-file / 734-page review, one Colabora delivery event, direct-routing/context separation, privacy, bilingual discovery and canonical proceedings correction OK.")

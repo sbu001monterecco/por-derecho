@@ -38,6 +38,12 @@
     "direct_procedural_edges": [],
     "boundary": "Historical Arrecife contextual placement only; no parent/child, appeal, accumulation, referral, party, actor, merits or liability relation is inferred."
   },
+  "projection_migration": {
+    "target": "assets/data/proceedings-master-public-v1.json",
+    "state": "PR_OPEN",
+    "pull_request": 1235,
+    "qualification": "The LIVE_VERIFIED evidence above covers the 4009/2015 source package and then-live register/map surfaces. PR #1235 separately migrates those browser surfaces to the deterministic allowlisted derivative; that migration is not LIVE_VERIFIED until its own merge, deployment and readback."
+  },
   "open_items": [
     "ME-113",
     "CP-GAP-009"

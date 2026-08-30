@@ -10,7 +10,9 @@ on:
       - 'es/registro-maestro-procedimientos/index.html'
       - 'assets/master-proceedings-publication-20260830.js'
       - 'assets/master-proceedings-publication-20260830.css'
+      - 'assets/data/proceedings-master-public-v1.json'
       - 'assets/site.js'
+      - 'scripts/build_public_proceedings_projection.py'
       - 'scripts/audit_master_proceedings_publication.py'
       - 'publication-manifests/master-proceedings-publication-20260830.json'
       - '.github/workflows/audit-master-proceedings-publication.yml'
@@ -25,7 +27,9 @@ on:
       - 'es/registro-maestro-procedimientos/index.html'
       - 'assets/master-proceedings-publication-20260830.js'
       - 'assets/master-proceedings-publication-20260830.css'
+      - 'assets/data/proceedings-master-public-v1.json'
       - 'assets/site.js'
+      - 'scripts/build_public_proceedings_projection.py'
       - 'scripts/audit_master_proceedings_publication.py'
       - 'publication-manifests/master-proceedings-publication-20260830.json'
       - '.github/workflows/audit-master-proceedings-publication.yml'
@@ -45,4 +49,6 @@ jobs:
         with:
           python-version: '3.12'
       - name: Audit public procedural spine
-        run: python scripts/audit_master_proceedings_publication.py
+        run: |
+          python scripts/build_public_proceedings_projection.py --check
+          python scripts/audit_master_proceedings_publication.py
