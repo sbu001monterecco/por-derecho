@@ -33,7 +33,7 @@ LANES = [
     {"id": "tenerife", "en": "Tenerife · separate Matkator / Cuatrecasas files", "es": "Tenerife · expedientes separados Matkator / Cuatrecasas", "master_ids": ["TF-CIV-001", "TF-CIV-002", "TF-CRI-003"]},
     {"id": "fiscalia", "en": "Ministerio Fiscal · selected controlled files", "es": "Ministerio Fiscal · expedientes controlados seleccionados", "master_ids": ["GC-FIS-013", "GC-FIS-016", "GC-FIS-017", "GC-FIS-018"]},
     {"id": "supervision", "en": "CGPJ supervision / LAJ registrations", "es": "Supervisión CGPJ / registros LAJ", "master_ids": ["GC-GOV-019", "GC-GOV-020", "GC-LAJ-021"]},
-    {"id": "historical", "en": "Historical possession / exploitation", "es": "Posesión / explotación histórica", "master_ids": ["LZ-JUD-001", "LZ-JUD-FAM-006"]},
+    {"id": "historical", "en": "Historical possession / exploitation", "es": "Posesión / explotación histórica", "master_ids": ["LZ-JUD-001", "LZ-JUD-FAM-006", "LZ-REF-042"]},
     {"id": "publicmoney", "en": "Administrative / public-money routes", "es": "Vías administrativas / fondos públicos", "master_ids": ["NAT-AID-001", "X-REG-001", "X-TAX-002"]},
 ]
 

@@ -130,16 +130,17 @@
       "Hotel Project Tenerife, S.L.",
       "AC Hotel Tenerife",
       "Laura Aguiar Acosta",
-      "DP 974/2023 — Arrecife"
+      "DP 974/2023 — Arrecife",
+      "Arrecife reference 4009/2015 — exact proceeding identity pending"
     ]
   },
   "counts": {
-    "total": 229,
+    "total": 230,
     "PERSON": 95,
     "ORGANISATION": 79,
     "STRUCTURE": 11,
     "INSTITUTION": 23,
-    "PROCEEDING": 21
+    "PROCEEDING": 22
   },
   "parts": [
     {
@@ -175,7 +176,7 @@
     {
       "path": "matter-identity-registry-v1.proceedings.json",
       "type": "PROCEEDING",
-      "count": 20
+      "count": 21
     },
     {
       "path": "matter-identity-registry-v1.dp3205-institutions.json",

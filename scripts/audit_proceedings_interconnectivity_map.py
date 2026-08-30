@@ -75,9 +75,9 @@ if not errors:
     ids = [row["Master_ID"].strip() for row in rows]
     by_id = {row["Master_ID"].strip(): row for row in rows}
     public_rows = [row for row in rows if not any(token in row["Public_Treatment"].upper() for token in ("INTERNAL_ONLY", "PRIVATE", "NOT_SITE_AGGREGATED"))]
-    require(len(rows) == 105, f"canonical denominator: expected 105, found {len(rows)}")
+    require(len(rows) == 106, f"canonical denominator: expected 106, found {len(rows)}")
     require(len(ids) == len(set(ids)), "duplicate canonical Master_ID")
-    require(len(public_rows) == 104, f"public denominator: expected 104, found {len(public_rows)}")
+    require(len(public_rows) == 105, f"public denominator: expected 105, found {len(public_rows)}")
 
     # Corrections must be consolidated into the runtime source, not left as overlays.
     val = by_id.get("VAL-CIV-001", {})
@@ -278,7 +278,7 @@ if errors:
     raise SystemExit(1)
 
 print("PROCEEDINGS INTERCONNECTIVITY MAP AUDIT: PASS")
-print("- canonical denominator: 105 rows / 104 controlled public rows")
+print("- canonical denominator: 106 rows / 105 controlled public rows")
 print("- overlays consolidated and parent graph acyclic")
 print("- Case Prism: 19 propositions x 12 lanes = 228 explicit coordinates / 0 unexplained")
 print("- relationship and file-treatment axes independently validated")

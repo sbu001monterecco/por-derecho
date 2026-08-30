@@ -234,12 +234,12 @@
     "registry_id": "PD-SP-IDENTITY-REGISTRY-001",
     "control_date": "2026-08-30",
     "counts": {
-      "total": 229,
+      "total": 230,
       "PERSON": 95,
       "ORGANISATION": 79,
       "STRUCTURE": 11,
       "INSTITUTION": 23,
-      "PROCEEDING": 21
+      "PROCEEDING": 22
     },
     "archive_backfill": "OPEN",
     "static_page_parity": "LOCAL_SOURCE_STATIC_CANDIDATE_NOT_YET_LIVE_VERIFIED",
@@ -288,9 +288,9 @@
       }
     },
     "governing_boundary": "Identity resolves identity only; it does not transfer knowledge, intention, control, benefit, responsibility or liability.",
-    "total": 229,
+    "total": 230,
     "INSTITUTION": 23,
-    "PROCEEDING": 21
+    "PROCEEDING": 22
   },
   "material_updates": {
     "canonical_source": "assets/data/material-updates-v1.json",

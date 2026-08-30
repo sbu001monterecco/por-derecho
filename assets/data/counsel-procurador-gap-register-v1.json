@@ -116,6 +116,19 @@
       "search_performed": "Exact-reference and participant searches located the complaint, summons and later summary lineage, but no professional representation chain, hearing record or outcome.",
       "next_retrieval_route": "Obtain the certified 3205/2014 file and reconstruct each party's lawyer, procurador, authority, filing, hearing and response chain.",
       "status": "OPEN"
+    },
+    {
+      "gap_id": "CP-GAP-009",
+      "gap_type": "complete_counsel_procurador_personacion_filing_lineage",
+      "professional": null,
+      "proceeding_id": "LZ-REF-042 / Arrecife 4009/2015",
+      "what_missing": "Complete lawyer, procurador, party, authority/personación, filing, service, response and outcome lineage; even the exact proceeding class and organ remain unverified.",
+      "why_it_matters": "No representation or professional relationship may be inferred from nearby Arrecife/Sun Park proceedings or from the bare number alone.",
+      "existence_evidence_ref": "Gil Marer continuity instruction dated 30-Aug-2026; registered as unresolved candidate LZ-REF-042 / PD-SP-R-0022",
+      "likely_source": "certified court docket, signed pleadings, filing receipts, powers, apud acta, personation, notifications and judicial or court-office acts",
+      "search_performed": "Exact and variant searches across current repository text/PDFs, connected Gmail, Google Drive, ChatGPT Library and public web located no primary 4009/2015 Arrecife source.",
+      "next_retrieval_route": "Search counsel/procurador archives and obtain a certified Arrecife docket or any signed source bearing 4009/2015; reconcile before adding professional or direct-procedural edges.",
+      "status": "OPEN"
     }
   ]
 }

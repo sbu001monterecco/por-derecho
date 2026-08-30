@@ -1,0 +1,57 @@
+{
+  "schema": "por-derecho-caret-interlink-publication-v1",
+  "publication_id": "PD-SP-ARRECIFE-4009-2015-20260830-01",
+  "control_date": "2026-08-30",
+  "owner": "Por Derecho / Project Sun Rock",
+  "current_state": "PREPARED_PENDING_MERGE",
+  "state": "SOURCE_PREPARED_NOT_YET_MERGED_OR_DEPLOYED",
+  "purpose": "Durably register Arrecife reference 4009/2015, make it contextually discoverable without inventing a direct procedural relationship, and preserve every source and representation gap required before caret confirmation.",
+  "canonical_ids": {
+    "master_register_id": "LZ-REF-042",
+    "caepr_id": "PD-SP-R-0022",
+    "identity_state": "CARET_PENDING_EXACT_ORGAN_AND_CERTIFIED_DOCKET"
+  },
+  "expected_source_files": [
+    "archive/PROCEEDINGS_MASTER_REGISTER.csv",
+    "assets/data/matter-identity-registry-v1.json",
+    "assets/data/matter-identity-registry-v1.proceedings.json",
+    "assets/data/matter-identity-operational-control-v1.json",
+    "assets/data/proceedings-case-prism-v1.json",
+    "assets/data/counsel-procurador-gap-register-v1.json",
+    "archive/MISSING_EVIDENCE_REGISTER.md",
+    "archive/ARRECIFE_4009_2015_CARET_INTERLINK_CONTROL_30AUG2026.md"
+  ],
+  "expected_routes": {
+    "en": [
+      "en/master-proceedings-register/index.html",
+      "en/proceedings-map/index.html"
+    ],
+    "es": [
+      "es/registro-maestro-procedimientos/index.html",
+      "es/mapa-procedimientos/index.html"
+    ]
+  },
+  "interlinking": {
+    "master_register_projection": true,
+    "caepr_resolution": "pending",
+    "case_prism_lane": "historical",
+    "direct_procedural_edges": [],
+    "boundary": "Historical Arrecife contextual placement only; no parent/child, appeal, accumulation, referral, party, actor, merits or liability relation is inferred."
+  },
+  "open_items": [
+    "ME-113",
+    "CP-GAP-009"
+  ],
+  "caret_result": {
+    "denominator": 1,
+    "confirmed": 0,
+    "pending": 1,
+    "coverage_percentage": 0,
+    "status": "PARTIAL_NOT_ALL_IS_CARET"
+  },
+  "deployment": {
+    "merge_sha": null,
+    "pages_run": null,
+    "live_readback": "PENDING"
+  }
+}
