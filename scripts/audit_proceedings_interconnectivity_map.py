@@ -75,9 +75,9 @@ if not errors:
     ids = [row["Master_ID"].strip() for row in rows]
     by_id = {row["Master_ID"].strip(): row for row in rows}
     public_rows = [row for row in rows if not any(token in row["Public_Treatment"].upper() for token in ("INTERNAL_ONLY", "PRIVATE", "NOT_SITE_AGGREGATED"))]
-    require(len(rows) == 104, f"canonical denominator: expected 104, found {len(rows)}")
+    require(len(rows) == 105, f"canonical denominator: expected 105, found {len(rows)}")
     require(len(ids) == len(set(ids)), "duplicate canonical Master_ID")
-    require(len(public_rows) == 103, f"public denominator: expected 103, found {len(public_rows)}")
+    require(len(public_rows) == 104, f"public denominator: expected 104, found {len(public_rows)}")
 
     # Corrections must be consolidated into the runtime source, not left as overlays.
     val = by_id.get("VAL-CIV-001", {})
@@ -156,7 +156,7 @@ if not errors:
     require(prism.get("schema_version") == "2.0.0", "Case Prism schema must be 2.0.0")
     require(prism.get("canonical_node_source") == "archive/PROCEEDINGS_MASTER_REGISTER.csv", "Case Prism canonical source changed")
     require(len(lane_ids) == len(lane_set) == 12 and lane_set == expected_lanes, "Case Prism lane denominator changed")
-    require(prop_ids == {f"P{i:02d}" for i in range(1, 19)}, "Case Prism proposition denominator must be P01-P18")
+    require(prop_ids == {f"P{i:02d}" for i in range(1, 20)}, "Case Prism proposition denominator must be P01-P19")
     require(audience_ids == expected_audiences, "Case Prism audience denominator changed")
     require(set(prism.get("statuses", {})) == statuses, "relationship vocabulary mismatch")
     require(set(prism.get("treatments", {})) == treatments, "treatment vocabulary mismatch")
@@ -197,11 +197,11 @@ if not errors:
             require(set(cell.get("representation_gap_ids", [])) <= known_gap_ids, f"{pid}/{lane_id} unknown representation gap")
 
     relation_counts, treatment_counts = Counter(c["status"] for c in cells), Counter(c["treatment"] for c in cells)
-    require(len(cells) == len(lanes) * len(props) == 216, f"expected 216 coordinates, found {len(cells)}")
+    require(len(cells) == len(lanes) * len(props) == 228, f"expected 228 coordinates, found {len(cells)}")
     require(set(relation_counts) == statuses, "every relationship status must be used")
     require(treatment_counts["CONTRADICTED"] >= 1, "adverse/contrary treatment not represented")
     coverage = prism.get("coverage", {})
-    require(coverage.get("explicit_coordinate_count") == 216 and coverage.get("unexplained_coordinate_count") == 0, "coverage denominator mismatch")
+    require(coverage.get("explicit_coordinate_count") == 228 and coverage.get("unexplained_coordinate_count") == 0, "coverage denominator mismatch")
     require(coverage.get("counsel_procurador_denominator") == "GAP", "counsel/procurador incompleteness not explicit")
     for source_id, source in source_catalog.items():
         for language in ("en", "es"):
@@ -278,9 +278,9 @@ if errors:
     raise SystemExit(1)
 
 print("PROCEEDINGS INTERCONNECTIVITY MAP AUDIT: PASS")
-print("- canonical denominator: 104 rows / 103 controlled public rows")
+print("- canonical denominator: 105 rows / 104 controlled public rows")
 print("- overlays consolidated and parent graph acyclic")
-print("- Case Prism: 18 propositions x 12 lanes = 216 explicit coordinates / 0 unexplained")
+print("- Case Prism: 19 propositions x 12 lanes = 228 explicit coordinates / 0 unexplained")
 print("- relationship and file-treatment axes independently validated")
 print("- source, contrary record, decision dependency and finite actionability validated")
 print("- exact-file isolation, full-corpus restore and stable parallel lanes validated")

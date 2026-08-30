@@ -126,15 +126,15 @@
     "WHY_CONNECTED": "trace and Case Prism detail panels",
     "CONVERGENCE_CLUSTER": "Case Prism renders every proposition across the complete controlled lane denominator",
     "FRAGMENTATION_AUDIT": "exact-proceeding isolation fades all material outside the selected file and restores the full corpus",
-    "DECISION_DEPENDENCY_MATRIX": "18 x 12 explicit matrix with relationship, file treatment, sources, contrary record and consequences",
+    "DECISION_DEPENDENCY_MATRIX": "19 x 12 explicit matrix with relationship, file treatment, sources, contrary record and consequences",
     "PARALLEL_PROCEEDINGS_LANES": "stable chronological swimlane table with one independent column per lane",
     "ISOLATION_TEST": "exact canonical proceeding selector, visible/disappearing comparison and full-corpus restore",
     "AUDIENCE_LENS": "nine reader lenses reprioritise questions without changing cells, sources or status"
   },
   "implementation_contract": {
-    "proposition_denominator": 18,
+    "proposition_denominator": 19,
     "lane_denominator": 12,
-    "explicit_coordinate_denominator": 216,
+    "explicit_coordinate_denominator": 228,
     "unexplained_coordinate_denominator": 0,
     "exact_proceeding_isolation_required": true,
     "full_corpus_restore_required": true,

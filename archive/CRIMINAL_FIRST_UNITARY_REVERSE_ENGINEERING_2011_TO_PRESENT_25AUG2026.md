@@ -4,6 +4,16 @@
 **Status:** CANONICAL INVESTIGATIVE CONTROL — ALLEGATIONS, EVIDENCE GRADES AND OPEN QUESTIONS KEPT SEPARATE  
 **Scope:** 2008–2010 context → 2-Feb-2011 governance/litigation intervention → 22-Jun-2011 debt/vote/authority mechanism → JV 1260/2011 / AP 89/2014 → Concurso 36/2012 → 2016 knowledge checkpoint → 2018 funded-exit / access / material-control sequence → CAM/Acosta Matos convergence → calificación and current criminal/institutional tracks.
 
+## 30 August 2026 claimed-office / DP 3205 continuity addendum
+
+Apply `.github/governance/COMMUNITY_CLAIMED_OFFICE_CRIMINAL_FIRST_AUTHORITY_PROTOCOL_30AUG2026.md` and Declaration 019. A document's use of `president` or `administrator` proves only that the source used or recorded the title. It does not establish lawful office, term, appointment, mandate, work authority or access rights.
+
+Gil Marer directly alleges that Asunción Aizpurúa Sánchez and Francisco Mario Matos Matas had no legitimate Community office or work mandate for the 3 September 2014 event and that their holding out of Community authority formed part of the criminal 2011-originating hijacking/capture he alleges. The primary complaint records the claimed capacities, entry, unit inspection and key dispute. A 7 October 2014 email proves that Gil/Patricia contemporaneously alleged no office, forced entry, aggression against the manager and inversion through the later complaint; it does not prove those allegations true. A 30 April 2018 party summary repeats the contested-office/debt/vote theory weeks before the 7 June 2018 material-control event.
+
+DP 3205/2014 is therefore a **mid-chain corroborative lead** capable of testing method, knowledge, repeated use of claimed office and later account consistency. It does not prove the 7 June 2018 command chain, a common criminal plan, CAM direction in 2014, formal connexity or guilt. The correct later date is **7 June 2018**, not 7 July.
+
+The NEXUS 36 / DP 1901/2026 five-person private-actor frame remains JDAM, LPAM, FMMM, ACR and SCR. Aizpurúa is not a sixth person in that frame. Gil presently identifies her as a material historical witness and potential future additional party; any reclassification requires objective actor-specific indications and full procedural rights.
+
 ## 26 August 2026 controlling addendum
 
 **`ALG-ENT-018` now controls:** Gil Marer and Aweswell allege one continuing economic-criminal enterprise, advanced through successive adoption and divided functions. It is an attributed factual/prosecutorial theory, not a judicial finding. Reverse engineering must remain unitary forwards and backwards, while proof remains actor-, period-, act/omission- and offence-specific.

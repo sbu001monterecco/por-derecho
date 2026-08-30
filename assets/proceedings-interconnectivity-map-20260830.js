@@ -9,6 +9,12 @@
   const prismUrl = new URL('assets/data/proceedings-case-prism-v1.json', repoBase).href;
   const lang = (document.documentElement.lang || 'en').toLowerCase().startsWith('es') ? 'es' : 'en';
   const registerRoute = new URL(lang === 'es' ? 'es/registro-maestro-procedimientos/' : 'en/master-proceedings-register/', repoBase).href;
+  const detailRoutes = {
+    'LZ-JUD-043': {
+      en: new URL('en/dp-3205-2014-arrecife/', repoBase).href,
+      es: new URL('es/dp-3205-2014-arrecife/', repoBase).href
+    }
+  };
 
   const copy = lang === 'es' ? {
     loading: 'Construyendo el mapa desde el registro canónico…',
@@ -136,14 +142,21 @@
   const labelFor = (r) => norm(r.Reference) || norm(r.Secondary_Reference) || norm(r.Master_ID);
   const subtitleFor = (r) => [norm(r.Proceeding_Class), norm(r.Stream)].filter(Boolean).join(' · ');
 
+  const detailUrlFor = (id) => detailRoutes[id] && detailRoutes[id][lang];
+  const detailAnchor = (r, text, className = '') => {
+    const url = detailUrlFor(r.Master_ID);
+    return url ? `<a${className ? ` class="${className}"` : ''} href="${esc(url)}">${esc(text)}</a>` : esc(text);
+  };
+
   const card = (r, traceButton = true) => `
     <article class="pdim-node" data-node-id="${esc(r.Master_ID)}">
-      <div class="pdim-node-head"><span class="pdim-id">${esc(r.Master_ID)}</span><span class="pdim-state" data-state="${esc(norm(r.Is_Proceeding).toUpperCase() || 'UNVERIFIED')}">${esc(norm(r.Is_Proceeding).toUpperCase() || 'UNVERIFIED')}</span></div>
-      <h3>${esc(labelFor(r))}</h3>
+      <div class="pdim-node-head"><span class="pdim-id">${detailAnchor(r, r.Master_ID)}</span><span class="pdim-state" data-state="${esc(norm(r.Is_Proceeding).toUpperCase() || 'UNVERIFIED')}">${esc(norm(r.Is_Proceeding).toUpperCase() || 'UNVERIFIED')}</span></div>
+      <h3>${detailAnchor(r, labelFor(r))}</h3>
       <p class="pdim-sub">${esc(subtitleFor(r))}</p>
       <p>${esc([r.Connection, r.Object_or_Purpose].filter(Boolean).join(' — '))}</p>
       <div class="pdim-node-meta"><span>${esc(r.Date_or_Period)}</span><span>${esc(r.Origin_Organ)}</span></div>
       ${traceButton ? `<button type="button" data-trace-id="${esc(r.Master_ID)}">${copy.traceThis} →</button>` : ''}
+      ${detailUrlFor(r.Master_ID) ? `<a class="pdim-detail-link" href="${esc(detailUrlFor(r.Master_ID))}">${lang === 'es' ? 'Abrir ficha bilingüe' : 'Open bilingual record'} ↗</a>` : ''}
     </article>`;
 
   function buildEdges(rows, byId) {
@@ -318,7 +331,7 @@
         <div><dt>${copy.representation}</dt><dd><code>${esc(cell.representation_lineage_status || '—')}</code>${gaps.length ? ` · ${esc(gaps.join(', '))}` : ''}</dd></div>
       </dl>
       ${sources ? `<section class="pdim-source-links"><h4>${copy.sourceLinks}</h4><p>${esc(copy.sourceScope)}</p><ul>${sources}</ul></section>` : ''}
-      ${ids.length ? `<div class="pdim-prism-id-list"><strong>${copy.masterIds}</strong>${ids.map((id) => `<button type="button" data-trace-id="${esc(id)}">${esc(id)} · ${copy.openTrace}</button>`).join('')}</div>` : ''}`;
+      ${ids.length ? `<div class="pdim-prism-id-list"><strong>${copy.masterIds}</strong>${ids.map((id) => `<button type="button" data-trace-id="${esc(id)}">${esc(id)} · ${copy.openTrace}</button>${detailUrlFor(id) ? `<a class="pdim-detail-link" href="${esc(detailUrlFor(id))}">${lang === 'es' ? 'Ficha' : 'Record'} ↗</a>` : ''}`).join('')}</div>` : ''}`;
     holder.focus({preventScroll:true});
     const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     holder.scrollIntoView({behavior: reduced ? 'auto' : 'smooth', block:'start'});

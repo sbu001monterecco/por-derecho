@@ -74,11 +74,11 @@ try {
     const matrixRows = await page.locator('.pdim-prism-table tbody tr').count();
     const matrixCells = await page.locator('.pdim-prism-cell').count();
     const laneHeaders = await page.locator('.pdim-prism-table thead th').count();
-    if (matrixRows !== 18 || matrixCells !== 216 || laneHeaders !== 13) {
+    if (matrixRows !== 19 || matrixCells !== 228 || laneHeaders !== 13) {
       throw new Error(`${route.lang}: matrix denominator mismatch (${matrixRows} rows, ${matrixCells} cells, ${laneHeaders - 1} lanes)`);
     }
     if (await page.locator('.pdim-prism-dash').count()) throw new Error(`${route.lang}: unexplained matrix dash rendered`);
-    if (await page.locator('.pdim-prism-cell small').count() !== 216) throw new Error(`${route.lang}: file-treatment labels missing`);
+    if (await page.locator('.pdim-prism-cell small').count() !== 228) throw new Error(`${route.lang}: file-treatment labels missing`);
     const firstEvidenceLabel = await page.locator('.pdim-prism-table tbody th small').first().innerText();
     if (!firstEvidenceLabel || firstEvidenceLabel.includes('_')) throw new Error(`${route.lang}: reader-facing evidence status was not localised`);
 
@@ -117,9 +117,9 @@ try {
     await prismTab.focus();
     await prismTab.press('ArrowRight');
     await page.waitForSelector('[role="tab"][data-view="lanes"][aria-selected="true"]');
-    if (await page.locator('.pdim-swimlane tbody tr').count() !== 18) throw new Error(`${route.lang}: swimlane event denominator mismatch`);
+    if (await page.locator('.pdim-swimlane tbody tr').count() !== 19) throw new Error(`${route.lang}: swimlane event denominator mismatch`);
     if (await page.locator('[data-lane-heading]').count() !== 12) throw new Error(`${route.lang}: stable lane headings missing`);
-    if (await page.locator('.pdim-swim-cell').count() !== 216) throw new Error(`${route.lang}: swimlane coordinate denominator mismatch`);
+    if (await page.locator('.pdim-swim-cell').count() !== 228) throw new Error(`${route.lang}: swimlane coordinate denominator mismatch`);
 
     await page.locator('[role="tab"][data-view="isolation"]').click();
     await page.waitForSelector('[data-isolation-id]');
@@ -166,7 +166,7 @@ try {
       await assertDeepLinkVisible(deepLinkPage, hash, `${route.lang}: direct ${hash}`);
       await deepLinkPage.close();
     }
-    console.log(`${route.lang}: 216-cell Case Prism / swimlane / exact isolation / trace / mobile smoke PASS`);
+    console.log(`${route.lang}: 228-cell Case Prism / swimlane / exact isolation / trace / mobile smoke PASS`);
   }
 } finally {
   await browser.close();

@@ -103,6 +103,19 @@
       "search_performed": "Pleading and receipt pairs reconciled; separate authority instrument not promoted in this pass.",
       "next_retrieval_route": "Scan RPL 3304/2025 and originating proceeding records for poder/apud-acta/personación evidence and link it bidirectionally.",
       "status": "OPEN"
+    },
+    {
+      "gap_id": "CP-GAP-008",
+      "gap_type": "complete_counsel_procurador_personacion_filing_lineage",
+      "professional": null,
+      "proceeding_id": "3205/2014",
+      "what_missing": "A primary complaint and court summons are located, but they do not close the lawyers, procuradores, represented party, authority/personation instrument, later filing, hearing representation, appeal or outcome.",
+      "why_it_matters": "The complaint and summons establish procedural activity but not who acted professionally for each participant, under what authority, what later material was filed or how the court disposed of the matter.",
+      "existence_evidence_ref": "PD-SP-SRC-DP3205-2014-COURT-SUMMONS-20140919; PD-SP-SRC-DP3205-2014-POLICE-COMPLAINT-20140903",
+      "likely_source": "certified court docket, signed pleadings, filing receipts, powers, apud acta, personation, notifications, hearing record and judicial or court-office acts",
+      "search_performed": "Exact-reference and participant searches located the complaint, summons and later summary lineage, but no professional representation chain, hearing record or outcome.",
+      "next_retrieval_route": "Obtain the certified 3205/2014 file and reconstruct each party's lawyer, procurador, authority, filing, hearing and response chain.",
+      "status": "OPEN"
     }
   ]
 }
