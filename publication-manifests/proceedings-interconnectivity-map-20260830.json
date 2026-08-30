@@ -1,0 +1,42 @@
+{
+  "manifest_version": "1.0.0",
+  "control_date": "2026-08-30",
+  "status": "SOURCE_READY_PR_PENDING",
+  "title": "Proceedings Interconnectivity Map",
+  "canonical_node_source": "archive/PROCEEDINGS_MASTER_REGISTER.csv",
+  "governance": ".github/governance/UNITARY_PROCEEDINGS_INTERCONNECTIVITY_MAP_PROTOCOL_30AUG2026.md",
+  "schema": "assets/data/proceedings-interconnectivity-schema-v1.json",
+  "public_routes": [
+    "/en/proceedings-map/",
+    "/es/mapa-procedimientos/"
+  ],
+  "public_assets": [
+    "/assets/proceedings-interconnectivity-map-20260830.js",
+    "/assets/proceedings-interconnectivity-map-20260830.css"
+  ],
+  "backlinks": [
+    "/en/master-proceedings-register/",
+    "/es/registro-maestro-procedimientos/"
+  ],
+  "reader_modes": [
+    "TRACK_MAP",
+    "CHRONOLOGY_JOURNEY",
+    "TRACE_ONE_PROCEEDING",
+    "REVERSE_TRACE",
+    "WHY_CONNECTED"
+  ],
+  "evidential_boundaries": [
+    "DIRECT_PROCEDURAL_EDGE_IS_NOT_CONTEXTUAL_BRIDGE",
+    "CONTEXT_DOES_NOT_PROVE_JOINDER_COORDINATION_KNOWLEDGE_WRONGDOING_OR_LIABILITY",
+    "PUBLIC_PROJECTION_DOES_NOT_UPGRADE_TRUE_FALSE_UNVERIFIED_OR_SOURCE_STATUS",
+    "MAP_IS_NAVIGATION_NOT_A_MERITS_FINDING"
+  ],
+  "verification": {
+    "source_files_created": true,
+    "canonical_csv_reused_not_duplicated": true,
+    "ci_audit_added": true,
+    "pr_merged": false,
+    "pages_deployment_success": false,
+    "live_routes_verified": false
+  }
+}
