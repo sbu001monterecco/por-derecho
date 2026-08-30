@@ -95,7 +95,7 @@ jobs:
               count = len(re.findall(r'class="incident(?:\s|\")', text))
               assert count == 8, f'{page}: expected 8 separately rendered incidents, found {count}'
               assert 'DP 1132/2018' in text
-              assert 'CONTENT MISSING' in text or 'CONTENIDO FALTANTE' in text or '[CONTENT MISSING]' in text
+              assert any(marker in text for marker in ('[CONTENT MISSING]', 'CONTENT MISSING', '[CONTENIDO NO LOCALIZADO]', 'CONTENIDO NO LOCALIZADO')), f'{page}: missing-content legend not preserved'
 
           pieces = (
               Path('en/insolvency-36-2012-piece-7-garrigues/index.html'),
