@@ -27,7 +27,7 @@ LANES = [
     {"id": "calificacion", "en": "Calificación · RPL 2523/2025", "es": "Calificación · RPL 2523/2025", "master_ids": ["GC-CAL-002", "GC-APP-004"]},
     {"id": "removal", "en": "AC removal · RPL 3304 + 3319/2025", "es": "Separación AC · RPL 3304 + 3319/2025", "master_ids": ["GC-APP-005", "GC-APP-006"]},
     {"id": "fees", "en": "AC remuneration · RPL 421/2026", "es": "Remuneración AC · RPL 421/2026", "master_ids": ["GC-CIV-027", "GC-APP-028"]},
-    {"id": "arrecife", "en": "Arrecife · control / mortgage / title", "es": "Arrecife · control / hipoteca / título", "master_ids": ["LZ-JUD-003", "LZ-APP-004", "LZ-JUD-005"]},
+    {"id": "arrecife", "en": "Arrecife · authority / control / mortgage / title", "es": "Arrecife · autoridad / control / hipoteca / título", "master_ids": ["LZ-JUD-042", "LZ-JUD-003", "LZ-APP-004", "LZ-JUD-005"]},
     {"id": "valencia", "en": "Valencia · CaixaBank", "es": "Valencia · CaixaBank", "master_ids": ["VAL-CIV-001"]},
     {"id": "meetingpoint", "en": "Meeting Point 357/2024 · FTI bridge open", "es": "Meeting Point 357/2024 · puente FTI abierto", "master_ids": ["GC-CONT-025"]},
     {"id": "tenerife", "en": "Tenerife · separate Matkator / Cuatrecasas files", "es": "Tenerife · expedientes separados Matkator / Cuatrecasas", "master_ids": ["TF-CIV-001", "TF-CIV-002", "TF-CRI-003"]},
@@ -165,6 +165,13 @@ SOURCES = {
         "href_es": "es/justicia-registro-institucional/",
         "evidence_status": "PUBLIC_CONTROLLED_INSTITUTIONAL_RECORD",
     },
+    "SRC-DP3205": {
+        "label_en": "3205/2014 Arrecife controlled record",
+        "label_es": "Registro controlado 3205/2014 Arrecife",
+        "href_en": "en/dp-3205-2014-arrecife/",
+        "href_es": "es/dp-3205-2014-arrecife/",
+        "evidence_status": "PRIMARY_COMPLAINT_AND_OFFICIAL_SUMMONS_LOCATED_OUTCOME_OPEN",
+    },
 }
 
 
@@ -178,6 +185,7 @@ EVIDENCE_STATUS_ES = {
     "MULTIPLE_VERIFIED_AND_OPEN_FISCALIA_FILES": "Múltiples expedientes de Fiscalía verificados y abiertos",
     "OPEN_UNIT_LEVEL_RECONCILIATION": "Conciliación por unidad abierta",
     "PARTLY_DOCUMENTED_AUTHORITY_CHAIN_INCOMPLETE": "Cadena de autoridad parcialmente documentada e incompleta",
+    "PRIMARY_COMPLAINT_AND_OFFICIAL_SUMMONS_LOCATED_OUTCOME_OPEN": "Denuncia primaria y citación oficial localizadas; resultado abierto",
     "PUBLIC_CONTEXTUAL_PROCEEDING_DOSSIER": "Expediente procesal público contextual",
     "PUBLIC_CONTROLLED_AUTHORITY_MATRIX": "Matriz pública controlada de autoridad",
     "PUBLIC_CONTROLLED_CHRONOLOGY": "Cronología pública controlada",
@@ -401,12 +409,22 @@ RICH = {
         "actionability": action("Complete applications, resolutions, eligible-cost schedules, payment/certification/control files, title declarations and source-and-use ledger.", "Solicitudes, resoluciones, anexos de coste elegible, expedientes de pago/certificación/control, declaraciones de título y mayor de origen/uso.", "The granting/controlling authority, AEAT/CNMV where competent, audit bodies and any judicial organ for a distinct legal issue.", "La autoridad concedente/controladora, AEAT/CNMV según competencia, órganos de auditoría y cualquier órgano judicial para una cuestión distinta."),
         "if_confirmed": "", "source_ids": ["SRC-INCENTIVES", "SRC-FUNDS", "SRC-RICPE"],
     },
+    "P19": {
+        "sort": 2014.0, "period_en": "2014", "period_es": "2014",
+        "title_en": "3205/2014 is an access, key and Community-authority verification event, not a procedural bridge", "title_es": "3205/2014 es un evento de verificación de acceso, llave y autoridad comunitaria, no un puente procesal",
+        "question_en": "What authority supported the reported entry and inspection, what happened in the key dispute, and what do the complaint, summons and missing outcome permit the reader to conclude?", "question_es": "¿Qué autoridad sustentó la entrada e inspección comunicadas, qué ocurrió en la disputa por la llave y qué permiten concluir la denuncia, la citación y el resultado ausente?",
+        "source_status": "PRIMARY_COMPLAINT_AND_OFFICIAL_SUMMONS_LOCATED_OUTCOME_OPEN", "attribution": "PARTY_SUBMISSION_AND_PROCEDURAL_RECORD",
+        "contrary_record": bi("The complaint records attributed allegations and the summons records a procedural step; neither proves the incident, injury, agency, guilt or outcome. A contrary account exists, while decisive corroboration and the outcome remain unlocated.", "La denuncia registra alegaciones atribuidas y la citación registra un acto procesal; ninguna prueba el incidente, la lesión, la agencia, la culpabilidad ni el resultado. Existe un relato contrario, mientras siguen sin localizarse la corroboración decisiva y el resultado."),
+        "decision_dependency": bi("Authority for the reported entry and inspection, actor-specific conduct and capacity, injury corroboration, and the hearing and outcome within 3205/2014.", "Autoridad para la entrada e inspección comunicadas, conducta y capacidad específicas de cada actor, corroboración de lesiones y celebración y resultado dentro de 3205/2014."),
+        "actionability": action("Certified docket, hearing, decision and finality records; contemporaneous medical, independent-witness and CCTV evidence; and actor-specific role, instruction and authority records.", "Expediente certificado, acta de vista, resolución y firmeza; prueba médica contemporánea, testigo independiente y CCTV; y registros de función, instrucción y autoridad específicos de cada actor.", "The historic file custodian and the competent deciding organ for each distinct issue.", "El custodio del expediente histórico y el órgano decisor competente para cada cuestión distinta.", "The event can be characterised act by act inside its own file without extension to another proceeding.", "El evento puede caracterizarse acto por acto dentro de su propio expediente sin extenderlo a otro procedimiento.", "Unsupported authority, agency, injury or cross-file propositions must be narrowed or removed.", "Deben limitarse o retirarse las proposiciones no respaldadas de autoridad, agencia, lesión o conexión entre expedientes."),
+        "source_ids": ["SRC-DP3205", "SRC-MASTER", "SRC-COMMUNITY"],
+    },
 }
 
 
 # New rows use source-led, finite propositions. Existing rows retain their titles,
 # questions and curated cells, but receive the same actionability contract.
-NEW_PROP_IDS = ["P10", "P11", "P12", "P13", "P14", "P15", "P16", "P17", "P18"]
+NEW_PROP_IDS = ["P10", "P11", "P12", "P13", "P14", "P15", "P16", "P17", "P18", "P19"]
 
 
 CELL_OVERRIDES = {
@@ -501,6 +519,17 @@ CELL_OVERRIDES = {
         "fiscalia": {"status": "OPEN", "master_ids": ["GC-FIS-018"]},
         "supervision": {"status": "CONTEXT", "master_ids": ["GC-GOV-019"]},
         "publicmoney": {"status": "DIRECT", "master_ids": ["NAT-AID-001"]},
+    },
+    "P19": {
+        "arrecife": {
+            "status": "DIRECT",
+            "treatment": "DIRECTLY_IN_FILE",
+            "master_ids": ["LZ-JUD-042"],
+            "note_en": "LZ-JUD-042 has a contemporaneous complaint and official summons. The summons says Juicio de faltas; a later summary says DP. One complainant and one affected party are recorded, the complaint attributes no direct physical act to Gil, and authority, corroboration, hearing occurrence and outcome remain open. This cell creates no procedural relationship or Concurso 36/2012 bridge.",
+            "note_es": "LZ-JUD-042 cuenta con denuncia contemporánea y citación oficial. La citación dice Juicio de faltas; un resumen posterior dice DP. Constan una denunciante y un perjudicado, la denuncia no atribuye acto físico directo a Gil y siguen abiertos autoridad, corroboración, celebración de la vista y resultado. Esta celda no crea relación procesal ni puente con el Concurso 36/2012.",
+            "representation_lineage_status": "PROCEEDING_SPECIFIC_DENOMINATOR_OPEN",
+            "representation_gap_ids": ["CP-GAP-008"],
+        },
     },
 }
 
@@ -618,6 +647,7 @@ def build() -> dict:
     existing["P15"]["audience_priority"].update({"owner": 3, "court": 5})
     existing["P16"]["audience_priority"].update({"owner": 4, "authority": 3})
     existing["P18"]["audience_priority"].update({"authority": 0, "professional": 2})
+    existing["P19"]["audience_priority"].update({"all": 4, "court": 2, "appellate": 190, "fiscal": 1, "supervision": 5, "authority": 0, "research": 9, "owner": 3, "professional": 8})
 
     lane_by_id = {lane["id"]: lane for lane in LANES}
     for prop in existing.values():
@@ -648,8 +678,14 @@ def build() -> dict:
                     baseline["note_en"], baseline["note_es"] = note["en"], note["es"]
                 baseline["decision_en"] = prop["decision_dependency"]["en"]
                 baseline["decision_es"] = prop["decision_dependency"]["es"]
-                baseline["representation_lineage_status"] = "GLOBAL_DENOMINATOR_OPEN" if status != "OUTSIDE" else "NOT_APPLICABLE_TO_THIS_COORDINATE"
-                baseline["representation_gap_ids"] = ["CP-GAP-004", "CP-GAP-005"] if status != "OUTSIDE" else []
+                baseline["representation_lineage_status"] = override.get(
+                    "representation_lineage_status",
+                    "GLOBAL_DENOMINATOR_OPEN" if status != "OUTSIDE" else "NOT_APPLICABLE_TO_THIS_COORDINATE",
+                )
+                baseline["representation_gap_ids"] = override.get(
+                    "representation_gap_ids",
+                    ["CP-GAP-004", "CP-GAP-005"] if status != "OUTSIDE" else [],
+                )
                 cell = baseline
             explicit[lane["id"]] = cell
         prop["cells"] = explicit

@@ -222,8 +222,8 @@
   ],
   "identity_registry": {
     "registry_id": "PD-SP-IDENTITY-REGISTRY-001",
-    "control_date": "2026-08-28",
-    "counts": {"total":226,"PERSON":95,"ORGANISATION":79,"STRUCTURE":11,"INSTITUTION":22,"PROCEEDING":19},
+    "control_date": "2026-08-30",
+    "counts": {"total":228,"PERSON":95,"ORGANISATION":79,"STRUCTURE":11,"INSTITUTION":23,"PROCEEDING":20},
     "archive_backfill": "OPEN",
     "static_page_parity": "LOCAL_SOURCE_STATIC_CANDIDATE_NOT_YET_LIVE_VERIFIED",
     "last_live_verified_counts": {"total":204,"PERSON":87,"ORGANISATION":71,"STRUCTURE":10,"INSTITUTION":18,"PROCEEDING":18},

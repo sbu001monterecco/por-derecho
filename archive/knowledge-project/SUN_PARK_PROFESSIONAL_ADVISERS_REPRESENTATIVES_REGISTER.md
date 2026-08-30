@@ -70,8 +70,8 @@ This does not make Cristo the author of every PwC/AC proposition. Attribute his 
 
 | Name | Sourced capacity | Date/source control |
 |---|---|---|
-| Asunción Aizpurúa Sánchez | Community President; represented Roque Prieto and multiple owners | by 2 Feb 2011 / S1 |
-| Francisco Mario Matos Matas | Community Administrator; later Pamanil administrator/signatory | 22 Jun 2011 / S1; 2014 / S2 |
+| Asunción Aizpurúa Sánchez | Source-reported/claimed Community President; represented Roque Prieto and multiple owners; lawful office and act-specific authority disputed | by 2 Feb 2011 / S1 |
+| Francisco Mario Matos Matas | Source-reported/claimed Community Administrator; later Pamanil administrator/signatory; lawful appointment and act-specific mandate disputed | 22 Jun 2011 / S1; 2014 / S2 |
 | Shaila María Cogolludo Ramos | Pamanil/Community communication signatory | 8 Apr 2014 / S2 |
 | Antonio Cogolludo Rojas | Represented Cristina Molina Petit | 10 Apr 2014 / S3; 19 Nov 2015 / S4 |
 | Juan Carlos Prieto Puente | AAS/Roque Prieto representative; lawyer | 10 Apr 2014 / S3 |

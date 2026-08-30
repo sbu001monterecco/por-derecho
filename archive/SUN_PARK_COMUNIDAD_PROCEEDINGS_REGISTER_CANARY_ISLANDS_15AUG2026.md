@@ -1,7 +1,7 @@
 # SUN PARK / COMUNIDAD PROCEEDINGS REGISTER — CANARY ISLANDS
 
 **Lanzarote · Gran Canaria · Tenerife**  
-Repository/website scan cut-off: **15 August 2026**
+Initial repository/website scan cut-off: **15 August 2026**; additive DP 3205/2014 control update: **30 August 2026**
 
 ## Purpose and completeness rule
 
@@ -38,6 +38,8 @@ Source status:
 - `OPEN_REFERENCE`
 - `CONTEXT_ONLY`
 
+`^` confirms only reconciliation to an immutable CAEPR identity; it does not confirm any role, authority, allegation, act, liability, procedural status, outcome or finality.
+
 ---
 
 # I. LANZAROTE
@@ -53,6 +55,7 @@ Source status:
 | `LZ-JUD-005` | **Arrecife mortgage enforcement / dación branch** — exact court and number pending | DIRECT / civil enforcement | Mortgage credit, creditor identity, dación, cancellation, satisfaction and later title chain | Repository records termination on **18 Aug 2023** after dación/cancellation/satisfaction | Termination does not automatically validate every antecedent act or extinguish all restoration/damages claims | Exact court/reference; enforcement title; parties; dación deed; satisfaction account; signed termination resolution |
 | `LZ-JUD-FAM-006` | **Community/CEXP/unit-by-unit civil proceeding family** — exact inventory incomplete | DIRECT / civil | Site describes multiple historical unit, possession, access, debt and Community disputes and a “sentencias varias Cdad Prop Lanzarote” source family | Family is documented; individual proceeding map incomplete | A collection title or later summary does not establish each court, party, finca or holding | Extract every case number, court, party, finca, decision, appeal and finality from originals |
 | `LZ-FIS-007` | **GUB 86/2026** — Fiscalía AN → Fiscalía de Área de Arrecife–Lanzarote–Puerto del Rosario | DIRECT / Fiscalía referral | Territorial referral of the current Sun Park communication | Referral documented; destination reference, assigned fiscal and outcome not located | Referral is not a merits decision, admission or investigation result | Native referral, complete transmitted package, territorial number, fiscal, diligences and decision |
+| `LZ-JUD-042` | **3205/2014^** — **Juzgado de Instrucción nº 1 de Arrecife^** (historical organ; corresponding current organ: Sección de Instrucción del Tribunal de Instancia de Arrecife — plaza nº 1^) | DIRECT / criminal / access and Community-authority verification | A contemporaneous complaint records one complainant described as Community president and one affected party described as administrator, an asserted work purpose, disputed entry, owners' apartment inspection, key dispute and alleged physical contact by a fully anonymised second respondent after reported self-identification as a tourist. The complaint attributes no presence, instruction, agency or physical act to Gil Marer^. A court summons says `Juicio de faltas 3205/2014`; the later summary says `DP 3205/2014` | `PRIMARY_COMPLAINT_AND_OFFICIAL_SUMMONS_LOCATED_OUTCOME_OPEN`; an oral hearing was scheduled, while authority, corroboration, hearing occurrence, disposition, appeal and finality remain unresolved | Does not establish incident truth, injury causation, lawful or unlawful access, guest/worker/agent capacity, valid appointment/mandate, false complaint, abuse, harassment, coordination, shadow administration, guilt/liability, outcome/finality or a formal relationship with another proceeding | Certified docket and label bridge; complaint annexes/filing chain; identity/capacity; Community mandate/work/access/key records; medical, police, witness and objective evidence; counsel/personation; hearing, disposition, appeal and finality |
 
 ## B. Tourism, municipal and transparency files
 
@@ -94,6 +97,8 @@ The strongest currently incomplete Lanzarote bridge is:
 `Community/CEXP authority and unit history → 2018 access/control → DP 1132/Auto 804 → Concurso/AC testimony → 2022 tourism/municipal/project files → present title/operation`.
 
 Each arrow remains a separate proposition requiring a document-transfer and asset/right bridge.
+
+3205/2014^ is a separate 2014 access/key and authority-verification event supported by a primary complaint and summons. Contextual relevance to Community, regulatory, prosecutorial or hotel history does not prove joinder, transformation, inhibition, appeal, common purpose or any other formal or culpability-bearing relationship with another proceeding.
 
 ---
 

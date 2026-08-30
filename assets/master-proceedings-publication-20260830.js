@@ -9,6 +9,12 @@
     en: new URL('en/master-proceedings-register/', repoBase).href,
     es: new URL('es/registro-maestro-procedimientos/', repoBase).href
   };
+  const detailRoutes = {
+    'LZ-JUD-042': {
+      en: new URL('en/dp-3205-2014-arrecife/', repoBase).href,
+      es: new URL('es/dp-3205-2014-arrecife/', repoBase).href
+    }
+  };
   const csvUrl = new URL('archive/PROCEEDINGS_MASTER_REGISTER.csv', repoBase).href;
 
   const addCss = () => {
@@ -197,8 +203,12 @@
           const refText = [r.Reference, r.Secondary_Reference, r.NIG ? `NIG ${r.NIG}` : ''].filter(Boolean).join(' · ');
           const typeText = [r.Record_Type, r.Proceeding_Class, r.Stream].filter(Boolean).join(' · ');
           const connectionText = [r.Connection, r.Object_or_Purpose].filter(Boolean).join(' — ');
+          const detailUrl = detailRoutes[r.Master_ID] && detailRoutes[r.Master_ID][lang];
+          const idHtml = detailUrl
+            ? `<a class="pd-ref" href="${esc(detailUrl)}" aria-label="${esc(`${r.Master_ID} · ${refText || r.Reference || ''}`)}">${esc(r.Master_ID)} ↗</a>`
+            : `<span class="pd-ref">${esc(r.Master_ID)}</span>`;
           return `<tr>
-            <td><span class="pd-ref">${esc(r.Master_ID)}</span><br><span class="pd-chip" data-state="${esc(stateValue)}">${esc(stateValue)}</span></td>
+            <td>${idHtml}<br><span class="pd-chip" data-state="${esc(stateValue)}">${esc(stateValue)}</span></td>
             <td>${esc(typeText)}</td><td>${esc(organText)}</td><td>${esc(refText)}</td><td>${esc(r.Date_or_Period)}</td><td>${esc(connectionText)}</td><td>${esc(statusText)}</td><td>${esc(relation)}</td><td><span class="pd-muted">${esc(r.Source_Status)}</span>${r.Open_Reference_Gap ? `<br><span class="pd-gap">${esc(r.Open_Reference_Gap)}</span>` : ''}</td>
           </tr>`;
         }).join('');

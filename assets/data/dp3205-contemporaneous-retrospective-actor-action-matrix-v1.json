@@ -1,0 +1,178 @@
+{
+  "schema": "por-derecho.dp3205-actor-action-matrix.v1",
+  "control_id": "PD-SP-DP3205-ACTOR-ACTION-001",
+  "control_date": "2026-08-30",
+  "speaker_attribution": "Gil Marer expressly adopts the retrospective criminal-first position recorded here. Institutional, third-party and contemporaneous source accounts remain separately attributed.",
+  "purpose": "Link every person in the finite DP 3205/predecessor-to-Acosta-Matos scope to a sourced act, omission or express no-located-act statement without rewriting contemporaneous evidence through hindsight.",
+  "temporal_ledgers": {
+    "CONTEMPORANEOUS": "What a dated source recorded, attributed and disputed at the time.",
+    "RETROSPECTIVE": "Later evidence and Gil Marer's present reconstruction of continuity, consequence and criminal/prosecutorial significance.",
+    "rule": "The ledgers are reciprocally linked but never silently merged. Retrospective significance is not inserted into the historic source; historic source status does not erase later corroborative significance."
+  },
+  "evidence_states": [
+    "OFFICIAL_OR_REGISTERED_FACT",
+    "CONTEMPORANEOUS_PRIMARY_ALLEGATION",
+    "CONTEMPORANEOUS_COUNTERALLEGATION",
+    "INTERNAL_CONTROLLED_RECORD",
+    "GIL_RETROSPECTIVE_CRIMINAL_ALLEGATION",
+    "ATTRIBUTED_CONTINUITY_INFERENCE",
+    "NO_LOCATED_ACT_IN_DP3205"
+  ],
+  "track_definitions": {
+    "COMMUNITY_AUTHORITY": "Community organ, office, notice, vote, appointment and mandate",
+    "HOTEL_TRADE": "Hotel operation, guest/resident community and trading stability",
+    "ACCESS_POSSESSION": "Access, inspection, keys, possession, security and physical conduct",
+    "COMPLAINT_PROCEDURE": "Complaint, litigation, procedural use, outcome and evidence custody",
+    "INSOLVENCY": "Insolvency estate, unit of production and judicial-adjacent reliance",
+    "PROPERTY_FINANCE": "Property, title, creditor, corporate and financing continuity",
+    "CRIMINAL_PROSECUTORIAL": "Gil's actor-specific criminal allegation and the proof of knowledge, intent, causation and contribution it requires",
+    "REGULATORY_PUBLIC_SUPPORT": "Regulatory, fiscal, RIC/public-support and public-funds consequence lane",
+    "WITNESS_CUSTODY": "Witness, records-custody, contrary and exculpatory evidence"
+  },
+  "non_transfer_rule": "No co-appearance, family description, corporate office, professional relationship, network edge or chronological succession transfers conduct, knowledge, intent, guilt or liability.",
+  "criminal_attribution_rule": "Gil alleges that the private-actor authority mechanism was criminal, not merely civil or innocuous, and contributed to later harm. This is a direct party allegation and investigative lens, not an adjudicated finding.",
+  "people": [
+    {
+      "registry_id": "PD-SP-P-0001",
+      "canonical_name": "Gil Marer",
+      "classification": "respondent / contemporaneous counter-account source / present declarant",
+      "tracks": ["COMPLAINT_PROCEDURE", "CRIMINAL_PROSECUTORIAL", "WITNESS_CUSTODY"],
+      "actions": [
+        {"date":"3 Sep 2014","temporal_layer":"CONTEMPORANEOUS","evidence_status":"CONTEMPORANEOUS_PRIMARY_ALLEGATION","capacity":"court-cited respondent","action_or_omission":"The complaint attributes no presence, instruction, agency or physical act to Gil.","source_refs":["PD-SP-SRC-DP3205-2014-POLICE-COMPLAINT-20140903"],"limit_open_proof":"The basis for his inclusion, any instruction or agency and the procedural outcome remain open."},
+        {"date":"7 Oct 2014 / 30 Aug 2026","temporal_layer":"CONTEMPORANEOUS_AND_RETROSPECTIVE","evidence_status":"CONTEMPORANEOUS_COUNTERALLEGATION_AND_GIL_RETROSPECTIVE_CRIMINAL_ALLEGATION","capacity":"counter-account source and present declarant","action_or_omission":"Preserved the no-office/forced-entry/account-inversion counter-allegation and now expressly alleges that the private-actor mechanism was criminal, not merely civil or innocuous, and contributed to later harm.","source_refs":["PD-SP-SRC-DP3205-2014-COUNTERACCOUNT-20141007","archive/declarations/019_GIL_DP3205_CLAIMED_AUTHORITY_GUEST_CONTEXT_CONTINUITY_20260830.md"],"limit_open_proof":"The source proves attribution and timing, not truth, offence, causation or another actor's knowledge."}
+      ]
+    },
+    {
+      "registry_id": "PD-SP-P-0002",
+      "canonical_name": "Patricia Domínguez",
+      "classification": "contemporaneous correspondent / preservation lane",
+      "tracks": ["COMPLAINT_PROCEDURE", "WITNESS_CUSTODY"],
+      "actions": [{"date":"7 Oct 2014","temporal_layer":"CONTEMPORANEOUS","evidence_status":"CONTEMPORANEOUS_COUNTERALLEGATION","capacity":"named correspondence/preservation participant","action_or_omission":"Appears in the contemporaneous preservation context for the no-office and forced-entry counter-account.","source_refs":["PD-SP-SRC-DP3205-2014-COUNTERACCOUNT-20141007"],"limit_open_proof":"No physical incident act, instruction, shared intent or liability is attributed from correspondence or relationship."}]
+    },
+    {
+      "registry_id": "PD-SP-P-0003",
+      "canonical_name": "Álvaro Campanario Hernández",
+      "classification": "origin professional / Community-governance perimeter",
+      "tracks": ["COMMUNITY_AUTHORITY", "COMPLAINT_PROCEDURE", "CRIMINAL_PROSECUTORIAL"],
+      "actions": [{"date":"2 Feb 2011","temporal_layer":"CONTEMPORANEOUS","evidence_status":"INTERNAL_CONTROLLED_RECORD","capacity":"meeting secretary recorded by the minutes","action_or_omission":"Served as secretary at the meeting chaired by Aizpurúa in the disputed authority sequence.","source_refs":["SP-ACTA-2011-02-02","archive/JV1260_AP89_UNITARY_REVERSE_ENGINEERING_CAM_CONTINUITY_17AUG2026.md"],"limit_open_proof":"No DP 3205 incident act, direct CAM mandate, criminal knowledge or liability follows from the meeting role."}]
+    },
+    {
+      "registry_id": "PD-SP-P-0004",
+      "canonical_name": "Asunción Aizpurúa Sánchez",
+      "classification": "claimed president / DP 3205 complainant / material-witness and possible-future-party lane",
+      "tracks": ["COMMUNITY_AUTHORITY", "HOTEL_TRADE", "ACCESS_POSSESSION", "COMPLAINT_PROCEDURE", "CRIMINAL_PROSECUTORIAL"],
+      "actions": [
+        {"date":"2 Feb–22 Jun 2011","temporal_layer":"CONTEMPORANEOUS","evidence_status":"INTERNAL_CONTROLLED_RECORD","capacity":"source-reported chair/president representing Roque Prieto","action_or_omission":"Chaired the February meeting, was recorded as elected president and later presided over the June meeting.","source_refs":["SP-ACTA-2011-02-02","SP-ACTA-2011-06-22"],"limit_open_proof":"Identity is confirmed; lawful office, title qualification, notice, vote, term and mandate remain separately disputed."},
+        {"date":"3 Sep 2014","temporal_layer":"CONTEMPORANEOUS","evidence_status":"CONTEMPORANEOUS_PRIMARY_ALLEGATION","capacity":"complainant invoking claimed Community presidency","action_or_omission":"Reported attending for unspecified Community work, obtaining entry, refusing to leave while seeking police mediation, inspecting owners' apartments, handling a key and making the complaint account.","source_refs":["PD-SP-SRC-DP3205-2014-POLICE-COMPLAINT-20140903"],"limit_open_proof":"The complaint proves the account was made, not lawful authority, truth, first physical act, false complaint, knowledge, intent or liability."},
+        {"date":"2011→2014→2018+","temporal_layer":"RETROSPECTIVE","evidence_status":"GIL_RETROSPECTIVE_CRIMINAL_ALLEGATION","capacity":"historically material actor; not one of the present DP 1901 five","action_or_omission":"Gil alleges that her claimed office and 2014 conduct formed part of the criminal capture/holding-out mechanism and were a non-innocuous predecessor to later instability and control.","source_refs":["archive/declarations/019_GIL_DP3205_CLAIMED_AUTHORITY_GUEST_CONTEXT_CONTINUITY_20260830.md","assets/data/acosta-matos-functional-convergence-map-v2.json"],"limit_open_proof":"No direct CAM mandate, continuous common plan, later benefit or criminal liability is established; any reclassification requires actor-specific proof and full rights."}
+      ]
+    },
+    {
+      "registry_id": "PD-SP-P-0005",
+      "canonical_name": "Juan Carlos Prieto Puente",
+      "classification": "external/adverse-side professional representation relay",
+      "tracks": ["COMMUNITY_AUTHORITY", "COMPLAINT_PROCEDURE", "CRIMINAL_PROSECUTORIAL"],
+      "actions": [{"date":"2014–2015","temporal_layer":"CONTEMPORANEOUS","evidence_status":"INTERNAL_CONTROLLED_RECORD","capacity":"lawyer recorded representing Aizpurúa / Roque Prieto","action_or_omission":"Appears in the professional representation and Community-side continuity lane after the disputed 2011 sequence.","source_refs":["archive/knowledge-project/SUN_PARK_MONTE_LANZA_MOLINA_COMMUNITY_PERIMETER.md"],"limit_open_proof":"No act in the 3-Sep incident, universal retainer, direct CAM instruction, knowledge, intent or liability is established."}]
+    },
+    {
+      "registry_id": "PD-SP-P-0006",
+      "canonical_name": "Esteban López Noriega",
+      "classification": "external/adverse-side professional representation relay",
+      "tracks": ["COMMUNITY_AUTHORITY", "COMPLAINT_PROCEDURE", "CRIMINAL_PROSECUTORIAL"],
+      "actions": [{"date":"2011–2022","temporal_layer":"CONTEMPORANEOUS_AND_RETROSPECTIVE","evidence_status":"INTERNAL_CONTROLLED_RECORD","capacity":"Community-side lawyer / Prieto professional-company partner","action_or_omission":"Appears in the professional relay and later Community-side legal chronology.","source_refs":["archive/CAMPANARIO_PRIETO_NORIEGA_COMMUNITY_CORPORATE_UNITARY_SCAN_25AUG2026.md"],"limit_open_proof":"No DP 3205 incident act or direct Acosta/CAM mandate, instruction, knowledge, intent or liability is located."}]
+    },
+    {
+      "registry_id": "PD-SP-P-0007",
+      "canonical_name": "Antonio Cogolludo Rojas",
+      "classification": "later Community/corporate relay / present DP 1901 five",
+      "tracks": ["COMMUNITY_AUTHORITY", "ACCESS_POSSESSION", "PROPERTY_FINANCE", "CRIMINAL_PROSECUTORIAL"],
+      "actions": [{"date":"2013–2018","temporal_layer":"RETROSPECTIVE","evidence_status":"OFFICIAL_OR_REGISTERED_FACT_AND_ATTRIBUTED_CONTINUITY_INFERENCE","capacity":"corporate office-holder and later source-reported Community/security actor","action_or_omission":"Official records establish Pamalexsha/Noalpa offices; controlled later sources place him in the Community presidency/security/access lane.","source_refs":["BORME-A-2013-196-35","BORME-A-2018-3-35","assets/data/acosta-matos-functional-convergence-map-v2.json"],"limit_open_proof":"No 3-Sep-2014 act is located; each Community office, security instruction, knowledge, intent and DP 1901 allegation requires actor-specific proof."}]
+    },
+    {
+      "registry_id": "PD-SP-P-0008",
+      "canonical_name": "Shaila María Cogolludo Ramos",
+      "classification": "Community/corporate relay / present DP 1901 five",
+      "tracks": ["COMMUNITY_AUTHORITY", "PROPERTY_FINANCE", "CRIMINAL_PROSECUTORIAL"],
+      "actions": [{"date":"8 Apr 2014 / 2021–2026","temporal_layer":"CONTEMPORANEOUS_AND_RETROSPECTIVE","evidence_status":"INTERNAL_CONTROLLED_RECORD_AND_OFFICIAL_OR_REGISTERED_FACT","capacity":"Community/Pamanil communication signatory; later company power-holder","action_or_omission":"Appears with FMMM on a Community communication and later in registered Noalpa/Pamalexsha powers.","source_refs":["archive/SUN_PARK_COMMUNITY_PAMANIL_COMMUNICATIONS_DIGITISATION_REGISTER_22AUG2026.md","BORME-A-2022-3-35","BORME-A-2026-140-35"],"limit_open_proof":"No 3-Sep incident act is located; later powers cannot be backdated and association does not prove coordination, knowledge, intent or liability."}]
+    },
+    {
+      "registry_id": "PD-SP-P-0009",
+      "canonical_name": "Francisco Mario Matos Matas",
+      "classification": "claimed administrator / DP 3205 affected party / present DP 1901 five",
+      "tracks": ["COMMUNITY_AUTHORITY", "HOTEL_TRADE", "ACCESS_POSSESSION", "COMPLAINT_PROCEDURE", "PROPERTY_FINANCE", "CRIMINAL_PROSECUTORIAL"],
+      "actions": [
+        {"date":"22 Jun 2011 onward","temporal_layer":"CONTEMPORANEOUS","evidence_status":"INTERNAL_CONTROLLED_RECORD","capacity":"source-reported Community/Pamanil administrator","action_or_omission":"Appears in the administration and Community communications lane.","source_refs":["SP-ACTA-2011-06-22","archive/SUN_PARK_COMMUNITY_PAMANIL_COMMUNICATIONS_DIGITISATION_REGISTER_22AUG2026.md"],"limit_open_proof":"Canonical MATAS identity is confirmed; lawful appointment, contract, mandate and each act remain separately disputed."},
+        {"date":"3 Sep 2014","temporal_layer":"CONTEMPORANEOUS","evidence_status":"CONTEMPORANEOUS_PRIMARY_ALLEGATION","capacity":"affected party invoking claimed administrator capacity","action_or_omission":"Reported attending for Community work and intervening in the key confrontation; the complaint attributes a thumb injury and push to him.","source_refs":["PD-SP-SRC-DP3205-2014-POLICE-COMPLAINT-20140903"],"limit_open_proof":"The account is not a medical finding and proves neither lawful office, causation, first physical act, truth, knowledge, intent nor liability."},
+        {"date":"2011→2014→2018+","temporal_layer":"RETROSPECTIVE","evidence_status":"GIL_RETROSPECTIVE_CRIMINAL_ALLEGATION","capacity":"continuous administration bridge alleged by Gil; present DP 1901 five","action_or_omission":"Gil alleges that FMMM's claimed authority, records/debt/vote functions and 2014 incident formed a continuous private-actor mechanism later used within the Acosta Matos perimeter.","source_refs":["archive/declarations/019_GIL_DP3205_CLAIMED_AUTHORITY_GUEST_CONTEXT_CONTINUITY_20260830.md","assets/data/acosta-matos-functional-convergence-map-v2.json"],"limit_open_proof":"Continuity of appearance does not prove a continuous agreement, CAM direction in 2014, knowledge transfer, guilt or liability."}
+      ]
+    },
+    {
+      "registry_id": "PD-SP-P-0010",
+      "canonical_name": "Francisco de Borja Rodríguez-Batllori Laffitte",
+      "classification": "separate judicial-adjacent Insolvency Administrator lane",
+      "tracks": ["INSOLVENCY", "COMPLAINT_PROCEDURE", "CRIMINAL_PROSECUTORIAL", "WITNESS_CUSTODY"],
+      "actions": [{"date":"2012 onward / 2016–2018 continuity focus","temporal_layer":"RETROSPECTIVE","evidence_status":"ATTRIBUTED_CONTINUITY_INFERENCE","capacity":"court-appointed Insolvency Administrator; not a private actor","action_or_omission":"Gil alleges later insolvency adoption, reliance, authorisation, omission or failure to investigate concerning the Community authority/access machinery.","source_refs":["archive/AC_PRIVATE_ACTOR_DE_FACTO_ADMINISTRATION_COMMUNITY_DEBT_TEXTOS_FORENSIC_CONTROL_20AUG2026.md","assets/data/acosta-matos-functional-convergence-map-v2.json"],"limit_open_proof":"No act in DP 3205 is located. Deception, negligence, actual knowledge and deliberate concert must remain separate; no private-actor identity or liability transfers."}]
+    },
+    {
+      "registry_id": "PD-SP-P-0011",
+      "canonical_name": "José Daniel Acosta Matos",
+      "classification": "later Acosta Matos/CAM axis / present DP 1901 five",
+      "tracks": ["COMMUNITY_AUTHORITY", "ACCESS_POSSESSION", "PROPERTY_FINANCE", "CRIMINAL_PROSECUTORIAL", "REGULATORY_PUBLIC_SUPPORT"],
+      "actions": [{"date":"2017–2018 onward","temporal_layer":"RETROSPECTIVE","evidence_status":"OFFICIAL_OR_REGISTERED_FACT_AND_ATTRIBUTED_CONTINUITY_INFERENCE","capacity":"later CAM/corporate/project axis","action_or_omission":"Later records and Gil's account place him in CAM creditor/title, instruction, Community and project continuity.","source_refs":["assets/data/acosta-matos-functional-convergence-map-v2.json","archive/CAM_2017_2018_DIRECT_INSTRUCTION_LENDER_POSSESSION_SHADOW_ADMINISTRATION_JUDICIAL_OMISSION_LEAD_23AUG2026.md"],"limit_open_proof":"No 2014 presence or direction is established; each later act, authority, knowledge, intent, benefit and liability remains separate."}]
+    },
+    {
+      "registry_id": "PD-SP-P-0012",
+      "canonical_name": "Laura Patricia Acosta Matos",
+      "classification": "later Acosta Matos/CAM axis / present DP 1901 five",
+      "tracks": ["COMMUNITY_AUTHORITY", "ACCESS_POSSESSION", "PROPERTY_FINANCE", "CRIMINAL_PROSECUTORIAL", "REGULATORY_PUBLIC_SUPPORT"],
+      "actions": [{"date":"2018 onward","temporal_layer":"RETROSPECTIVE","evidence_status":"ATTRIBUTED_CONTINUITY_INFERENCE","capacity":"later CAM/project and attributed instruction lane","action_or_omission":"Appears in the later Acosta Matos/CAM perimeter and Gil's actor-specific takeover/instruction allegations.","source_refs":["assets/data/acosta-matos-functional-convergence-map-v2.json","archive/declarations/013_GIL_ATTRIBUTED_FUNCTIONAL_CONVERGENCE_INTO_ACOSTA_MATOS_PERIMETER_20260825.md"],"limit_open_proof":"No 2014 presence or direction is established; identity and family/company proximity do not prove an act, knowledge, intent or liability."}]
+    },
+    {
+      "registry_id": "PD-SP-P-0013",
+      "canonical_name": "Gerardo Nicanor Acosta Armas",
+      "classification": "historical identity-separation control",
+      "tracks": ["WITNESS_CUSTODY"],
+      "actions": [{"date":"current control","temporal_layer":"RETROSPECTIVE","evidence_status":"NO_LOCATED_ACT_IN_DP3205","capacity":"separate person record","action_or_omission":"No DP 3205 or predecessor-to-CAM act is attributed in this controlled scope; the record prevents merger with Gerardo Zacarías Acosta Matos.","source_refs":["assets/data/matter-identity-registry-v1.people.json"],"limit_open_proof":"Name proximity is not evidence of relationship, participation, knowledge or liability."}]
+    },
+    {
+      "registry_id": "PD-SP-P-0088",
+      "canonical_name": "Fernando Aguiar Acosta",
+      "classification": "bounded witness / records-custody lane",
+      "tracks": ["PROPERTY_FINANCE", "REGULATORY_PUBLIC_SUPPORT", "WITNESS_CUSTODY"],
+      "actions": [{"date":"2023–2026","temporal_layer":"RETROSPECTIVE","evidence_status":"OFFICIAL_OR_REGISTERED_FACT","capacity":"public-profile professional sequence","action_or_omission":"Publicly reports Grupo Acosta Matos → RIC Private Equity → Belagua/ACHM → Colliers roles, creating a bounded records-custody inquiry route.","source_refs":["assets/data/caepr-caret-irea-ricpe-colliers-continuity-v1.json"],"limit_open_proof":"No DP 3205 act, family relationship, Sun Park knowledge, information transfer, coordination, wrongdoing or liability is established."}]
+    },
+    {
+      "registry_id": "PD-SP-P-0093",
+      "canonical_name": "Javier Acosta Matos",
+      "classification": "later Acosta Matos corporate/meeting perimeter",
+      "tracks": ["COMMUNITY_AUTHORITY", "PROPERTY_FINANCE", "WITNESS_CUSTODY"],
+      "actions": [{"date":"2020–2022","temporal_layer":"RETROSPECTIVE","evidence_status":"OFFICIAL_OR_REGISTERED_FACT","capacity":"later corporate and meeting-perimeter record","action_or_omission":"Appears in later Acosta Matos corporate offices and the controlled 4-Feb-2022 meeting representation context.","source_refs":["BORME-A-2020-157-35","BORME-A-2021-156-35","SP-ACTA-2022-02-04"],"limit_open_proof":"No 2014 act, knowledge transfer, meeting power, vote, intent or liability is established from identity or later office."}]
+    },
+    {
+      "registry_id": "PD-SP-P-0094",
+      "canonical_name": "Gerardo Zacarías Acosta Matos",
+      "classification": "later Acosta Matos corporate / attributed image perimeter",
+      "tracks": ["PROPERTY_FINANCE", "WITNESS_CUSTODY"],
+      "actions": [{"date":"2009 / 2020–2021 / later attributed image","temporal_layer":"RETROSPECTIVE","evidence_status":"OFFICIAL_OR_REGISTERED_FACT_AND_ATTRIBUTED_CONTINUITY_INFERENCE","capacity":"corporate office-holder and person attributed by Gil in a perimeter image","action_or_omission":"Official records establish corporate offices; Gil separately attributes a position in the Acosta Matos plans image.","source_refs":["BORME-A-2009-32-35","BORME-A-2020-157-35","BORME-A-2021-156-35"],"limit_open_proof":"He is not Gerardo Nicanor Acosta Armas. No DP 3205 act, image-based knowledge, intent, participation or liability is established."}]
+    },
+    {
+      "registry_id": "PD-SP-P-0095",
+      "canonical_name": "Laura Aguiar Acosta",
+      "classification": "bounded witness / records-custody lane",
+      "tracks": ["HOTEL_TRADE", "PROPERTY_FINANCE", "REGULATORY_PUBLIC_SUPPORT", "WITNESS_CUSTODY"],
+      "actions": [{"date":"Jul–Aug 2024","temporal_layer":"RETROSPECTIVE","evidence_status":"OFFICIAL_OR_REGISTERED_FACT","capacity":"public-profile Canarian Hospitality placement","action_or_omission":"Her public résumé names work involving controllers of Sun Park, currently marketed as MYND Yaiza, Radisson Blu Lanzarote and legal-department hotel processes.","source_refs":["assets/data/caepr-caret-irea-ricpe-colliers-continuity-v1.json"],"limit_open_proof":"No DP 3205 act, direct RICPE employment, family relationship, legacy knowledge, information transfer, wrongdoing or liability is established."}]
+    }
+  ],
+  "protected_role_actions": [
+    {"role_id":"DP3205-PRIVATE-01","public_label":"anonymised second respondent","date":"3 Sep 2014","temporal_layer":"CONTEMPORANEOUS","evidence_status":"CONTEMPORANEOUS_PRIMARY_ALLEGATION","tracks":["HOTEL_TRADE","ACCESS_POSSESSION","COMPLAINT_PROCEDURE","WITNESS_CUSTODY"],"action_or_omission":"The complaint attributes the key-related physical contact to this person after reported self-identification as a tourist.","source_refs":["PD-SP-SRC-DP3205-2014-POLICE-COMPLAINT-20140903"],"limit_open_proof":"Identity remains withheld; guest/occupant/worker/agent capacity, first act, defence, injury causation and outcome are open."},
+    {"role_id":"DP3205-PRIVATE-02","public_label":"complainant's husband","date":"3 Sep 2014","temporal_layer":"CONTEMPORANEOUS","evidence_status":"CONTEMPORANEOUS_PRIMARY_ALLEGATION","tracks":["COMPLAINT_PROCEDURE","WITNESS_CUSTODY"],"action_or_omission":"The complaint says he witnessed surrounding events and prior conflict but not the alleged assault itself.","source_refs":["PD-SP-SRC-DP3205-2014-POLICE-COMPLAINT-20140903"],"limit_open_proof":"His statement, exact observations and any property/access role remain unlocated."},
+    {"role_id":"DP3205-PRIVATE-03","public_label":"hotel manager","date":"2–7 Oct 2014 counter-account","temporal_layer":"CONTEMPORANEOUS","evidence_status":"CONTEMPORANEOUS_COUNTERALLEGATION","tracks":["HOTEL_TRADE","ACCESS_POSSESSION","COMPLAINT_PROCEDURE","WITNESS_CUSTODY"],"action_or_omission":"A forwarded counter-account alleged aggression against the manager and referred to a statement/recording.","source_refs":["PD-SP-SRC-DP3205-2014-COUNTERACCOUNT-20141007"],"limit_open_proof":"The underlying statement and recording are not authenticated or published; truth, exact act, speaker and outcome remain open."}
+  ],
+  "coverage": {"public_people":17,"protected_role_only":3,"action_control":"EVERY_RECORD_HAS_ACTION_OR_EXPRESS_NO_LOCATED_ACT","verdict":"COMPLETE_FOR_STATED_FINITE_SCOPE"},
+  "routes": {
+    "proceeding_en":"/en/dp-3205-2014-arrecife/#actor-action-matrix",
+    "proceeding_es":"/es/dp-3205-2014-arrecife/#matriz-actor-accion",
+    "perimeter_en":"/en/acosta-matos-perimeter/#dp3205-predecessor-apparatus",
+    "perimeter_es":"/es/acosta-matos-perimetro/#dp3205-aparato-predecesor"
+  }
+}

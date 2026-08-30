@@ -18,6 +18,7 @@ ROOT = Path(__file__).resolve().parents[2]
 GOVERNANCE_ALLOWLIST = {
     ".github/CODEOWNERS",
     ".github/governance/AGENT_PUBLISHING_COMPATIBILITY.md",
+    ".github/governance/COMMUNITY_CLAIMED_OFFICE_CRIMINAL_FIRST_AUTHORITY_PROTOCOL_30AUG2026.md",
     ".github/governance/TRANSACTION_DEVELOPMENT_SEPARATION_AND_PUBLICATION_PROTOCOL.md",
     ".github/governance/records/TXD-PN-20260825-01.md",
     ".github/governance/validate_agent_governance_compatibility.py",

@@ -20,6 +20,7 @@ ROOT = Path(__file__).resolve().parents[1]
 MANIFEST_DIR = ROOT / "publication-manifests"
 ORDER = [
     "DRAFT",
+    "PREPARED_PENDING_RENEWED_SCOPE_APPROVAL",
     "PREPARED_PENDING_MERGE",
     "REMOTE_SOURCE",
     "PR_OPEN",
@@ -307,6 +308,12 @@ def validate_manifest(path: Path, data: dict, errors: list[str]) -> None:
         if not data.get("recovery_requirements"):
             fail(f"{rel}: BLOCKED_RECOVERY requires recovery_requirements", errors)
         return
+
+    if state == "PREPARED_PENDING_RENEWED_SCOPE_APPROVAL":
+        if data.get("publication_gate") != "RENEWED_SCOPE_APPROVAL_REQUIRED":
+            fail(f"{rel}: renewed-scope hold requires an explicit publication gate", errors)
+        if data.get("external_mutation_authorized") is not False:
+            fail(f"{rel}: renewed-scope hold must keep external mutation unauthorised", errors)
 
     rank = ORDER.index(state)
     if rank >= ORDER.index("REMOTE_SOURCE"):

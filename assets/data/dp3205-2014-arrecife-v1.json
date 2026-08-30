@@ -1,0 +1,280 @@
+{
+  "schema": "por-derecho.dp3205-2014-arrecife.v1",
+  "record_revision": 5,
+  "control_id": "PD-SP-DP3205-2014-20260830-05",
+  "control_date": "2026-08-30",
+  "status": "AMBER_PRIMARY_COMPLAINT_AND_SUMMONS_LOCATED_AUTHORITY_MERITS_OUTCOME_OPEN",
+  "identity": {
+    "registry_id": "PD-SP-R-0020",
+    "master_id": "LZ-JUD-042",
+    "reference": "3205/2014",
+    "source_labels": [
+      "Juicio de faltas 3205/2014 — contemporaneous court summons",
+      "DP 3205/2014 — later legal-adviser summary"
+    ],
+    "procedural_label_bridge": "OPEN_PENDING_CERTIFIED_DOCKET",
+    "organ_id": "PD-SP-I-0023",
+    "historic_organ": "Juzgado de Instrucción nº 1 de Arrecife",
+    "current_successor_name": "Sección de Instrucción del Tribunal de Instancia de Arrecife — plaza nº 1",
+    "caret_scope": "Case number and historic organ identity only"
+  },
+  "sources": [
+    {
+      "source_id": "PD-SP-SRC-DP3205-2014-COURT-SUMMONS-20140919",
+      "source_class": "CONTEMPORANEOUS_OFFICIAL_PROCEDURAL_NOTICE_LOCATED_COPY",
+      "public_use": "Case identity, court, source caption, participant roles and scheduled hearing only"
+    },
+    {
+      "source_id": "PD-SP-SRC-DP3205-2014-POLICE-COMPLAINT-20140903",
+      "source_class": "CONTEMPORANEOUS_POLICE_RECORDED_PARTICIPANT_ALLEGATION_LOCATED_COPY",
+      "public_use": "Attributed incident, access, capacity and act-allocation account only"
+    },
+    {
+      "source_id": "PD-SP-SRC-DP3205-2014-SUMMARY-20181120",
+      "source_class": "DATED_SECONDARY_LEGAL_ADVISER_STATUS_SUMMARY",
+      "public_use": "Later DP label and preservation lineage only"
+    },
+    {
+      "source_id": "PD-SP-SRC-DP3205-2014-COUNTERACCOUNT-20141007",
+      "source_class": "CONTEMPORANEOUS_PARTY_EMAIL_TO_LEGAL_ADVISERS",
+      "public_use": "Proof that the no-office, forced-entry, manager-aggression and account-inversion counter-allegation was preserved contemporaneously; not proof that it was true"
+    },
+    {
+      "source_id": "PD-SP-SRC-SUNPARK-50PLUS-COMMUNITY-2013-2014",
+      "source_class": "CONTEMPORANEOUS_HOTEL_COMMUNITY_AND_PROMOTIONAL_COMMUNICATIONS",
+      "public_use": "Active-retirement/guest-and-resident community context in privacy-minimised form; private prior-relationship detail is excluded, and no incident-date lodging, employment, marketing appointment, agency or instruction is proved"
+    },
+    {
+      "source_id": "PD-SP-SRC-COMMUNITY-SUMMARY-20180430",
+      "source_class": "CONTEMPORANEOUS_PRE_7JUNE_PARTY_SUMMARY",
+      "public_use": "Proof that the contested-office, FMMM-appointment and debt/vote allegations were recorded before 7 June 2018; not proof that they were true"
+    },
+    {
+      "source_id": "PD-SP-SRC-NEXUS36-COMPLAINT-20260625",
+      "source_class": "FILED_PARTY_CRIMINAL_COMPLAINT_ARCHITECTURE",
+      "public_use": "Exact five-person accused/denounced perimeter and three-mechanism investigative theory; not admission, guilt or a basis to add a sixth person"
+    },
+    {
+      "source_id": "PD-SP-SRC-GIL-DP3205-RETROSPECTIVE-20260830",
+      "source_class": "GIL_CURRENT_PROPOSITION_SPECIFIC_ADOPTION",
+      "public_use": "Gil Marer's express adoption of the retrospective criminal-first position; not a contemporaneous source, joint statement, finding of truth or adjudicated criminal conclusion"
+    }
+  ],
+  "privacy": "No raw message, source filename or locator, personal or document identifier, address, telephone number, signature, exact unit or room number, accommodation-ledger detail, or private respondent identity or name variant is published.",
+  "reported_propositions": [
+    {
+      "id": "DP3205-P01",
+      "state": "OFFICIAL_PROCEDURAL_SOURCE",
+      "proposition": "A contemporaneous summons identifies case 3205/2014 before Arrecife Investigating Court No. 1 and captions it as a Juicio de faltas; a later summary calls the same number DP 3205/2014."
+    },
+    {
+      "id": "DP3205-P02",
+      "state": "OFFICIAL_PROCEDURAL_SOURCE_OUTCOME_OPEN",
+      "proposition": "The summons scheduled an October 2014 oral hearing concerning a historical minor-injury offence; occurrence and outcome are not located."
+    },
+    {
+      "id": "DP3205-P03",
+      "state": "PRIMARY_PARTICIPANT_ALLEGATION",
+      "proposition": "The police complaint records one complainant described as Community president and one affected party described as administrator."
+    },
+    {
+      "id": "DP3205-P04",
+      "state": "PRIMARY_PARTICIPANT_ALLEGATION",
+      "proposition": "The complainant said they attended in their claimed Community capacities to perform unspecified work, obtained entry after an access problem, refused a request to leave while seeking police mediation, inspected owners' apartments and became involved in a key dispute."
+    },
+    {
+      "id": "DP3205-P05",
+      "state": "PRIMARY_PARTICIPANT_ALLEGATION",
+      "proposition": "The complainant attributed physical contact to a man who said he was a tourist and said the administrator was injured when he intervened."
+    },
+    {
+      "id": "DP3205-P06",
+      "state": "PRIMARY_SOURCE_LIMIT",
+      "proposition": "The complaint says the complainant's husband did not witness the alleged assault itself and that police arrived afterwards; it does not establish that nobody else witnessed it."
+    },
+    {
+      "id": "DP3205-P07",
+      "state": "PRIMARY_SOURCE_NEGATIVE",
+      "proposition": "The complaint attributes no presence, instruction, agency or physical act to Gil Marer; the complainant said only that the alleged actor might be related to him."
+    },
+    {
+      "id": "DP3205-P08",
+      "state": "INCIDENT_DATE_CAPACITY_UNVERIFIED",
+      "proposition": "Reported self-identification as a tourist is not guest-registration, employment or agency proof."
+    },
+    {
+      "id": "DP3205-P09",
+      "state": "CONTEXTUAL_NOT_FORMALLY_LINKED",
+      "proposition": "Later participant accounts and contemporaneous Community, regulatory and prosecutorial records provide context but are not formally linked to this proceeding."
+    },
+    {
+      "id": "DP3205-P10",
+      "state": "OUTCOME_OPEN",
+      "proposition": "No hearing record, judgment, dismissal, appeal or finality record was located."
+    },
+    {
+      "id": "DP3205-P11",
+      "state": "GIL_DIRECT_CRIMINAL_ALLEGATION_NOT_ADJUDICATED",
+      "proposition": "Gil Marer alleges that the source-reported president and administrator held no legitimate office or work mandate and that their holding out of Community authority formed part of a criminal 2011-originating hijacking/capture."
+    },
+    {
+      "id": "DP3205-P12",
+      "state": "CONTEMPORANEOUS_COUNTERALLEGATION_DOCUMENTED_TRUTH_OPEN",
+      "proposition": "A 7 October 2014 email proves the counter-allegation existed contemporaneously; it does not prove no office, forced entry, aggression, false complaint, intent or criminal liability."
+    },
+    {
+      "id": "DP3205-P13",
+      "state": "PRIVACY_MINIMISED_CAPACITY_CLARIFICATION",
+      "proposition": "Gil supplied private identity, prior-relationship and capacity details that remain outside Git to avoid an indirect identity bridge. Publicly, the 50+ guest/resident community setting supplies an ordinary reason for guest presence, while guest status, acquaintance or voluntary assistance proves no employment, marketing appointment, security responsibility, agency, instruction or concert."
+    },
+    {
+      "id": "DP3205-P14",
+      "state": "ATTRIBUTED_CONTINUITY_HYPOTHESIS_WITH_LIMIT",
+      "proposition": "The 2014 event may be used as a mid-chain corroborative lead in the alleged 2011 to 7 June 2018 continuity; it does not prove a common plan, CAM direction in 2014, later-actor knowledge, formal joinder or the 2018 command chain."
+    },
+    {
+      "id": "DP3205-P15",
+      "state": "DP1901_PERIMETER_CONTROL",
+      "proposition": "FMMM is one of the five people named in NEXUS 36 / DP 1901/2026; Aizpurúa is not one of those five and is presently classified by Gil as a material historical witness and possible future additional party, subject to evidence and full procedural rights."
+    },
+    {
+      "id": "DP3205-P16",
+      "state": "GIL_RETROSPECTIVE_CRIMINAL_ATTRIBUTION_NOT_ADJUDICATED",
+      "proposition": "Gil Marer expressly alleges that the disputed private-actor authority mechanism was criminal, not merely civil or innocuous, and contributed to later hotel, Community/CEXP and Acosta Matos-perimeter harm; this present attribution does not rewrite the contemporaneous source record or prove any offence, knowledge, intent, causation or liability."
+    },
+    {
+      "id": "DP3205-P17",
+      "state": "FINITE_ACTOR_ACTION_MULTI_TRACK_CONTROL",
+      "proposition": "The controlled matrix links all 17 public people and three protected role-only records to a dated sourced action, omission or express no-located-act statement across relevant tracks, with actor-specific limits and no transfer of responsibility by association."
+    }
+  ],
+  "participants": [
+    {
+      "public_label": "Source-reported president / complainant",
+      "registry_id": "PD-SP-P-0004",
+      "capacity_reported": "complainant and claimed Community president",
+      "bridge_state": "CARET_CONFIRMED_IDENTITY_ONLY_REPORTED_OFFICE_AND_AUTHORITY_OPEN",
+      "search_variants": ["Asunción Asperua", "Asuncion Asperua"]
+    },
+    {
+      "public_label": "Source-reported administrator / affected party",
+      "registry_id": "PD-SP-P-0009",
+      "capacity_reported": "affected party and claimed Community administrator",
+      "bridge_state": "CARET_CONFIRMED_CANONICAL_MATAS_IDENTITY_ONLY_REPORTED_OFFICE_AND_AUTHORITY_OPEN",
+      "source_literal_boundary": "The isolated Francisco Mario Matos Mata occurrence remains unresolved and receives no separate caret."
+    },
+    {
+      "public_label": "Gil Marer",
+      "registry_id": "PD-SP-P-0001",
+      "capacity_reported": "court-cited respondent",
+      "bridge_state": "CANONICAL_NAME_MATCH_NO_DIRECT_PHYSICAL_ACT_ALLEGED_IN_COMPLAINT"
+    },
+    {
+      "public_label": "Second reported respondent",
+      "private_candidate": true,
+      "capacity_reported": "court-cited respondent and alleged physical actor",
+      "bridge_state": "ROLE_ONLY_IDENTITY_AND_INCIDENT_DATE_CAPACITY_WITHHELD"
+    }
+  ],
+  "incident_account": {
+    "date": "2014-09-03",
+    "place": "hotel complex in Playa Blanca",
+    "reported_sequence": "claimed Community work and attempted access; entry; refusal to leave while police mediation was requested; owners' apartment inspection; key dispute; alleged physical contact",
+    "police_observation": "Police arrived after the events; the complaint does not describe an officer witnessing physical contact.",
+    "neutral_witness": "Not located for the alleged assault itself"
+  },
+  "attendance_reasons": {
+    "contemporaneous_claim": "Claimed Community president and administrator attending to carry out unspecified work.",
+    "later_candidate_account": "Access to property belonging to relatives of the reported president's husband; not formally linked to this proceeding.",
+    "regulatory_context": "A regulatory complaint bears an earlier internal date but was officially received after the incident, so it does not prove pre-incident filing, receipt or action."
+  },
+  "guest_status": {
+    "reported": "The complainant said the alleged actor identified himself as a tourist.",
+    "private_clarification": "Gil supplied identity, prior-relationship and capacity detail that is not reproduced in Git because the combination could create an indirect identity bridge.",
+    "contextual_support": "Contemporaneous communications describe a 50+ active-retirement, guest-and-resident community setting; this establishes operating context, not the private person's incident capacity.",
+    "not_proved": "Incident-date booking, accommodation registration, employment, marketing appointment, agency and instruction are not established by the public control.",
+    "non_inference": "Guest status, acquaintance or voluntary assistance would not itself prove employment, marketing appointment, agency, security responsibility, instruction or coordination."
+  },
+  "authority_claim_control": {
+    "source_title_rule": "President and administrator are source-reported or claimed capacities only; neither title establishes lawful office, term, mandate, work order, access or legitimacy.",
+    "gil_allegation": "Gil Marer directly alleges no legitimate office or work mandate and criminal hijacking/capture and holding out of Community authority from 2011.",
+    "contemporaneous_counterrecord": "The 7 October 2014 email proves the timing and content of the counter-allegation, not its truth.",
+    "required_test": "legal person -> owner/title -> convening -> notice -> quorum/vote -> appointment/term -> mandate -> act -> asset/right -> later reliance -> consequence"
+  },
+  "continuity_control": {
+    "sequence": ["2008 seller/exploitation split", "2011 governance and debt/vote authority break", "2014 DP3205 access/unit/key event and contemporaneous counter-allegation", "2016 knowledge checkpoint", "2018 pre-takeover contested-authority summary", "2018-06-07 material-control event", "later Acosta Matos convergence", "2026 NEXUS 36 / DP 1901"],
+    "permitted_use": "Mid-chain corroborative lead for method, claimed authority, knowledge opportunity and account consistency.",
+    "prohibited_inference": "No automatic proof of a common criminal agreement, 2014 CAM direction, 7 June command, later knowledge transfer, formal connexity or guilt.",
+    "date_correction": "The controlled event is 7 June 2018; 7 July 2018 in the originating dictation is a speech slip."
+  },
+  "dp1901_person_control": {
+    "five_named_people": ["José Daniel Acosta Matos", "Laura Patricia Acosta Matos", "Francisco Mario Matos Matas", "Antonio Cogolludo Rojas", "Shaila María Cogolludo Ramos"],
+    "asuncion_aizpurua_sanchez": "Not one of the five; Gil presently classifies her as a material historical witness and possible future additional party.",
+    "reclassification_rule": "Requires objective indications of her own act, knowledge, intent and contribution, a procedurally lawful decision and full defence rights."
+  },
+  "allegations_context": {
+    "safe_use": "Authority, access, possession, key-control and act-allocation verification event in the wider attributed Community-instrumentalisation theory.",
+    "does_not_establish": [
+      "the exact legal person meant by the Community description",
+      "valid incident-date appointment, mandate, work order or access authority",
+      "institutional rather than personal action",
+      "the truth, falsity or legal characterization of the alleged physical contact",
+      "medical causation or a neutral eyewitness account",
+      "incident-date guest, worker, agent or security capacity",
+      "presence, instruction, agency or a physical act by Gil Marer",
+      "knowledge, intent, agreement, harassment, procedural fraud or shadow administration",
+      "responsibility, self-defence or civil or criminal liability of any participant",
+      "joinder or another formal relationship to any other proceeding",
+      "hearing occurrence, procedural outcome or finality"
+    ],
+    "reasonable_alternatives": [
+      "a genuine Community or owner-access attempt under disputed authority",
+      "a personal or family-property access visit with titles used descriptively",
+      "an unauthorized or excessive entry into an operating hotel",
+      "a mutual or defensive confrontation over a key",
+      "independent intervention by a guest or occupant"
+    ]
+  },
+  "formal_relationships": {
+    "linked_proceedings": [],
+    "contextual_records": [
+      "separate 2014 Community-governance record",
+      "separate 2014 regulatory complaint received after the incident",
+      "separate Fiscalía 39/2014 archive",
+      "later participant accounts not formally linked to 3205/2014"
+    ],
+    "rule": "Keep 3205/2014 legally distinct unless a primary source proves joinder, transformation, inhibition, appeal or another formal relationship."
+  },
+  "recovery_objects": [
+    "certified docket and procedural-label bridge",
+    "certified complaint incorporation and annexes",
+    "medical, police attendance, neutral witness and objective incident evidence",
+    "incident-date Community authority, work order, owner consent and access/key records",
+    "incident-date accommodation, employment, agency and instruction evidence",
+    "second-respondent and manager statements and referenced recording",
+    "hearing record, judgment or dismissal, appeal and certificate of finality"
+  ],
+  "person_interlink_control": {
+    "census": "assets/data/caepr-caret-dp3205-predecessor-acosta-person-interlink-v1.json",
+    "convergence_graph": "assets/data/acosta-matos-functional-convergence-map-v2.json",
+    "direct_identity_pair": ["PD-SP-P-0004", "PD-SP-P-0009"],
+    "exact_dp1901_five": ["PD-SP-P-0007", "PD-SP-P-0008", "PD-SP-P-0009", "PD-SP-P-0011", "PD-SP-P-0012"],
+    "non_transfer_rule": "Identity and relationship edges do not establish office, authority, conduct, knowledge, agreement, guilt or liability."
+  },
+  "actor_action_control": {
+    "matrix": "assets/data/dp3205-contemporaneous-retrospective-actor-action-matrix-v1.json",
+    "temporal_rule": "Keep the contemporaneous and retrospective ledgers reciprocally linked but never merged.",
+    "public_people": 17,
+    "protected_role_only": 3,
+    "coverage_rule": "Every record requires a dated sourced action/omission or an express no-located-act statement, relevant tracks, limiting evidence and open proof.",
+    "criminal_attribution": "Gil alleges criminal private-actor conduct and non-innocuous downstream consequence; the repository records that allegation at full strength without adjudicating it."
+  },
+  "routes": {
+    "es": "/es/dp-3205-2014-arrecife/",
+    "en": "/en/dp-3205-2014-arrecife/",
+    "master_es": "/es/registro-maestro-procedimientos/",
+    "master_en": "/en/master-proceedings-register/",
+    "map_es": "/es/mapa-procedimientos/",
+    "map_en": "/en/proceedings-map/"
+  }
+}

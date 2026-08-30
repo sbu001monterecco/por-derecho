@@ -1,0 +1,51 @@
+{
+  "schema": "por-derecho.caepr-person-interlink.v1",
+  "control_id": "PD-SP-CAEPR-DP3205-AM-001",
+  "control_date": "2026-08-30",
+  "scope": "Finite public-person census for DP 3205/2014 and the alleged 2011 predecessor-to-Acosta-Matos continuity perimeter",
+  "caret_rule": "A printed caret confirms only that the displayed canonical person resolves to the stated immutable registry ID. It does not confirm office, authority, representation, conduct, knowledge, agreement, guilt or liability.",
+  "non_transfer_rule": "No relationship, co-appearance, family description, corporate office, professional proximity or temporal succession transfers conduct, knowledge, intent or liability between records.",
+  "exact_dp1901_five": ["PD-SP-P-0007", "PD-SP-P-0008", "PD-SP-P-0009", "PD-SP-P-0011", "PD-SP-P-0012"],
+  "scope_boundaries": [
+    "Asunción Aizpurúa Sánchez is a material witness / potential future demanded-party lane, not a sixth member of the present DP 1901 five.",
+    "Francisco de Borja Rodríguez-Batllori Laffitte remains in the separate insolvency-institution lane.",
+    "Fernando Aguiar Acosta and Laura Aguiar Acosta remain bounded witness/professional-context lanes.",
+    "The two Gerardo records are different people: PD-SP-P-0013 is not PD-SP-P-0094.",
+    "Protected role-only persons are not named or caret-marked."
+  ],
+  "people": [
+    {"registry_id":"PD-SP-P-0001","canonical_name":"Gil Marer","lane":"declarant / contemporaneous counter-account","caret_state":"REGISTERED_IDENTITY_INLINE_CARET_NOT_ASSERTED_IN_THIS_SCOPE","routes":{"es":"/es/dp-3205-2014-arrecife/","en":"/en/dp-3205-2014-arrecife/"}},
+    {"registry_id":"PD-SP-P-0002","canonical_name":"Patricia Domínguez","lane":"named correspondent / Community context","caret_state":"REGISTERED_IDENTITY_INLINE_CARET_NOT_ASSERTED_IN_THIS_SCOPE","routes":{"es":"/es/dp-3205-2014-arrecife/","en":"/en/dp-3205-2014-arrecife/"}},
+    {"registry_id":"PD-SP-P-0003","canonical_name":"Álvaro Campanario Hernández","lane":"origin professional / Community perimeter","caret_state":"REGISTERED_IDENTITY_INLINE_CARET_NOT_ASSERTED_IN_THIS_SCOPE","routes":{"es":"/es/alvaro-campanario-hernandez/","en":"/en/alvaro-campanario-hernandez/"}},
+    {"registry_id":"PD-SP-P-0004","canonical_name":"Asunción Aizpurúa Sánchez","search_variants":["Asunción Asperua","Asuncion Asperua"],"lane":"2011 claimed-president / DP 3205 named complainant / material-witness continuity","caret_state":"CARET_CONFIRMED","routes":{"es":"/es/asuncion-aizpurua-sanchez/","en":"/en/asuncion-aizpurua-sanchez/"},"boundary":"Identity only; the caret does not validate the reported presidency or any alleged act."},
+    {"registry_id":"PD-SP-P-0005","canonical_name":"Juan Carlos Prieto Puente","lane":"professional-representation relay","caret_state":"REGISTERED_IDENTITY_INLINE_CARET_NOT_ASSERTED_IN_THIS_SCOPE","routes":{"es":"/es/juan-carlos-prieto-puente/","en":"/en/juan-carlos-prieto-puente/"}},
+    {"registry_id":"PD-SP-P-0006","canonical_name":"Esteban López Noriega","lane":"professional-representation relay","caret_state":"REGISTERED_IDENTITY_INLINE_CARET_NOT_ASSERTED_IN_THIS_SCOPE","routes":{"es":"/es/esteban-lopez-noriega/","en":"/en/esteban-lopez-noriega/"}},
+    {"registry_id":"PD-SP-P-0007","canonical_name":"Antonio Cogolludo Rojas","lane":"Community / corporate relay; present DP 1901 five","caret_state":"CARET_CONFIRMED","dp1901_five":true,"routes":{"es":"/es/antonio-cogolludo-rojas/","en":"/en/antonio-cogolludo-rojas/"}},
+    {"registry_id":"PD-SP-P-0008","canonical_name":"Shaila María Cogolludo Ramos","lane":"Community / corporate relay; present DP 1901 five","caret_state":"CARET_CONFIRMED","dp1901_five":true,"routes":{"es":"/es/shaila-maria-cogolludo-ramos/","en":"/en/shaila-maria-cogolludo-ramos/"}},
+    {"registry_id":"PD-SP-P-0009","canonical_name":"Francisco Mario Matos Matas","search_variants":["FMMM","Francisco Mario Matos Mata"],"lane":"2011 claimed-administrator / DP 3205 named affected party; present DP 1901 five","caret_state":"CARET_CONFIRMED","dp1901_five":true,"routes":{"es":"/es/francisco-mario-matos-matas/","en":"/en/francisco-mario-matos-matas/"},"boundary":"Canonical MATAS identity confirmed; the isolated MATA source-literal remains unresolved and receives no separate caret."},
+    {"registry_id":"PD-SP-P-0010","canonical_name":"Francisco de Borja Rodríguez-Batllori Laffitte","lane":"separate insolvency-institution interface","caret_state":"REGISTERED_IDENTITY_INLINE_CARET_NOT_ASSERTED_IN_THIS_SCOPE","routes":{"es":"/es/francisco-de-borja-rodriguez-batllori-laffitte/","en":"/en/francisco-de-borja-rodriguez-batllori-laffitte/"}},
+    {"registry_id":"PD-SP-P-0011","canonical_name":"José Daniel Acosta Matos","lane":"Acosta Matos perimeter; present DP 1901 five","caret_state":"CARET_CONFIRMED","dp1901_five":true,"routes":{"es":"/es/toma-control-sun-park-7-junio-2018/","en":"/en/sun-park-takeover-7-june-2018/"}},
+    {"registry_id":"PD-SP-P-0012","canonical_name":"Laura Patricia Acosta Matos","lane":"Acosta Matos perimeter; present DP 1901 five","caret_state":"CARET_CONFIRMED","dp1901_five":true,"routes":{"es":"/es/toma-control-sun-park-7-junio-2018/","en":"/en/sun-park-takeover-7-june-2018/"}},
+    {"registry_id":"PD-SP-P-0013","canonical_name":"Gerardo Nicanor Acosta Armas","lane":"historical person record; identity separated from Gerardo Zacarías","caret_state":"REGISTERED_IDENTITY_INLINE_CARET_NOT_ASSERTED_IN_THIS_SCOPE","not_same_as":["PD-SP-P-0094"],"routes":{"es":"/es/acosta-matos-perimetro/","en":"/en/acosta-matos-perimeter/"}},
+    {"registry_id":"PD-SP-P-0088","canonical_name":"Fernando Aguiar Acosta","lane":"bounded witness / professional-context lane","caret_state":"CARET_CONFIRMED","routes":{"es":"/es/acosta-matos-perimetro/#testigo-fernando-aguiar-acosta","en":"/en/acosta-matos-perimeter/#witness-fernando-aguiar-acosta"}},
+    {"registry_id":"PD-SP-P-0093","canonical_name":"Javier Acosta Matos","lane":"Acosta Matos corporate / meeting perimeter","caret_state":"CARET_CONFIRMED","routes":{"es":"/es/toma-control-sun-park-7-junio-2018/","en":"/en/sun-park-takeover-7-june-2018/"}},
+    {"registry_id":"PD-SP-P-0094","canonical_name":"Gerardo Zacarías Acosta Matos","lane":"Acosta Matos corporate / attributed image perimeter","caret_state":"CARET_CONFIRMED","not_same_as":["PD-SP-P-0013"],"routes":{"es":"/es/toma-control-sun-park-7-junio-2018/","en":"/en/sun-park-takeover-7-june-2018/"}},
+    {"registry_id":"PD-SP-P-0095","canonical_name":"Laura Aguiar Acosta","lane":"bounded witness / professional-context lane","caret_state":"CARET_CONFIRMED","routes":{"es":"/es/acosta-matos-perimetro/#testigo-laura-aguiar-acosta","en":"/en/acosta-matos-perimeter/#witness-laura-aguiar-acosta"}}
+  ],
+  "protected_role_only": [
+    {"role_id":"DP3205-PRIVATE-01","label":"anonymised second respondent","caret_state":"PROHIBITED_NO_PUBLIC_IDENTITY"},
+    {"role_id":"DP3205-PRIVATE-02","label":"complainant's husband","caret_state":"PROHIBITED_NO_PUBLIC_IDENTITY"},
+    {"role_id":"DP3205-PRIVATE-03","label":"hotel manager","caret_state":"PROHIBITED_NO_PUBLIC_IDENTITY"}
+  ],
+  "reciprocal_interlinks": [
+    {"from":"PD-SP-P-0004","to":"PD-SP-P-0009","basis":"2011 Community co-occurrence and DP 3205/2014 joint naming","limit":"No lawful office, agreement, shared knowledge, guilt or liability follows."},
+    {"from":"PD-SP-P-0004","to":"PD-SP-R-0020","basis":"named complainant in the located primary complaint","limit":"Complaint status and alleged office remain explicit."},
+    {"from":"PD-SP-P-0009","to":"PD-SP-R-0020","basis":"named affected party in the located primary complaint","limit":"Complaint status and alleged office remain explicit."},
+    {"from":"PD-SP-R-0020","to":"PD-SP-S-0006","basis":"attributed predecessor-to-Acosta-Matos continuity hypothesis","limit":"No 2014 direction by CAM, knowledge transfer or continuous common plan is established."}
+  ],
+  "publication_routes": {
+    "proceeding":{"es":"/es/dp-3205-2014-arrecife/","en":"/en/dp-3205-2014-arrecife/"},
+    "perimeter":{"es":"/es/acosta-matos-perimetro/","en":"/en/acosta-matos-perimeter/"},
+    "graph":"/assets/data/acosta-matos-functional-convergence-map-v2.json"
+  }
+}
