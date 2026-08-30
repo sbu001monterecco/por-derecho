@@ -1,0 +1,57 @@
+{
+  "publication_id": "PD-SP-INSTITUTIONAL-PROCEEDINGS-20260830-01",
+  "owner": "Por Derecho / Project Sun Rock",
+  "control_date": "2026-08-30",
+  "current_state": "PR_OPEN",
+  "state": "PR_OPEN",
+  "purpose": "Strengthen the bilingual Proceedings Interconnectivity Map for institutional readers by exposing materially connected proceedings, exact Audiencia appellate identities and the formal boundary between legal separateness and unitary evidential/patrimonial analysis.",
+  "pull_request": 1222,
+  "merge_sha": null,
+  "expected_routes": {
+    "es": [
+      "es/mapa-procedimientos/index.html"
+    ],
+    "en": [
+      "en/proceedings-map/index.html"
+    ]
+  },
+  "expected_source_files": [
+    "archive/INSTITUTIONAL_READER_UNITARY_PROCEEDINGS_RULE_30AUG2026.md",
+    "archive/CAIXABANK_VALENCIA_01859_2023_REGISTRATION_GAP_30AUG2026.md",
+    "docs/deletion-audits/2026-08-30-institutional-reader-proceedings-continuity.md",
+    "scripts/audit_proceedings_interconnectivity_map.py",
+    "en/proceedings-map/index.html",
+    "es/mapa-procedimientos/index.html"
+  ],
+  "governance": [
+    ".github/governance/UNITARY_PROCEEDINGS_INTERCONNECTIVITY_MAP_PROTOCOL_30AUG2026.md",
+    "archive/PROCEEDINGS_ANTI_FRAGMENTATION_CONVERGENCE_RULE_30AUG2026.md",
+    "archive/INSTITUTIONAL_READER_UNITARY_PROCEEDINGS_RULE_30AUG2026.md"
+  ],
+  "exact_appellate_objects": {
+    "calificacion": "RPL 2523/2025",
+    "ac_separation_removal": "RPL 3304/2025 with RPL 3319/2025 accumulated/linked",
+    "ac_fees_remuneration": "RPL 421/2026"
+  },
+  "open_registration_gap": {
+    "key": "GAP-VAL-CAIXABANK-01859-2023",
+    "proceeding": "01859/2023",
+    "court": "Juzgado de Primera Instancia nº 27 de Valencia",
+    "master_register_reconciled": false,
+    "must_not_be_silently_equated_with": "ES-VAL-CIV-048"
+  },
+  "public_boundaries": [
+    "separate proceedings are not presented as one legal case",
+    "contextual convergence is not proof of joinder coordination concealment wrongdoing or liability",
+    "the website is not an extra-record filing appeal complaint or personacion",
+    "private counsel strategy is not automatically published",
+    "NOT LOCATED is not DID NOT EXIST"
+  ],
+  "verification": {
+    "pr_open": true,
+    "ci_green": false,
+    "merged": false,
+    "pages_deployed": false,
+    "live_routes_verified": false
+  }
+}

@@ -6,6 +6,9 @@ ROOT = Path(__file__).resolve().parents[1]
 
 required = [
     ROOT / ".github/governance/UNITARY_PROCEEDINGS_INTERCONNECTIVITY_MAP_PROTOCOL_30AUG2026.md",
+    ROOT / "archive/PROCEEDINGS_ANTI_FRAGMENTATION_CONVERGENCE_RULE_30AUG2026.md",
+    ROOT / "archive/INSTITUTIONAL_READER_UNITARY_PROCEEDINGS_RULE_30AUG2026.md",
+    ROOT / "archive/CAIXABANK_VALENCIA_01859_2023_REGISTRATION_GAP_30AUG2026.md",
     ROOT / "assets/data/proceedings-interconnectivity-schema-v1.json",
     ROOT / "assets/proceedings-interconnectivity-map-20260830.js",
     ROOT / "assets/proceedings-interconnectivity-map-20260830.css",
@@ -28,8 +31,12 @@ if not errors:
     es_master = (ROOT / "es/registro-maestro-procedimientos/index.html").read_text(encoding="utf-8")
     js = (ROOT / "assets/proceedings-interconnectivity-map-20260830.js").read_text(encoding="utf-8")
     gov = (ROOT / ".github/governance/UNITARY_PROCEEDINGS_INTERCONNECTIVITY_MAP_PROTOCOL_30AUG2026.md").read_text(encoding="utf-8")
+    anti = (ROOT / "archive/PROCEEDINGS_ANTI_FRAGMENTATION_CONVERGENCE_RULE_30AUG2026.md").read_text(encoding="utf-8")
+    institutional = (ROOT / "archive/INSTITUTIONAL_READER_UNITARY_PROCEEDINGS_RULE_30AUG2026.md").read_text(encoding="utf-8")
+    valencia_gap = (ROOT / "archive/CAIXABANK_VALENCIA_01859_2023_REGISTRATION_GAP_30AUG2026.md").read_text(encoding="utf-8")
     schema = json.loads((ROOT / "assets/data/proceedings-interconnectivity-schema-v1.json").read_text(encoding="utf-8"))
 
+    appellate_refs = ["RPL 2523/2025", "RPL 3304/2025", "RPL 3319/2025", "RPL 421/2026"]
     checks = {
         "en language alternate": "../../es/mapa-procedimientos/" in en,
         "es language alternate": "../../en/proceedings-map/" in es,
@@ -50,6 +57,22 @@ if not errors:
         "fragmentation audit": "Fragmentation / atomisation audit" in gov and "Who, if anyone, obtained a documented procedural or patrimonial benefit" in gov,
         "fiscal unitary audit": "Ministerio Fiscal unitary-recognition audit" in gov,
         "historical current lineage": "Historical-to-current lineage rule" in gov,
+        "anti-fragmentation core": "procedural separateness" in anti.lower() and "patrimonial" in anti.lower(),
+        "institutional completeness rule": "Institutional completeness test" in institutional,
+        "institutional no predetermined outcome": "predetermined" in institutional,
+        "institutional formal-procedure boundary": "not a substitute for a filing" in institutional,
+        "institutional three-object correction": all(ref in institutional for ref in appellate_refs),
+        "institutional fees correction": "Do not describe `RPL 3319/2025` as the fees appeal" in institutional,
+        "valencia exact gap identity": "01859/2023" in valencia_gap and "Juzgado de Primera Instancia nº 27 de Valencia" in valencia_gap,
+        "valencia non-conflation": "do not assign `01859/2023` to `ES-VAL-CIV-048`" in valencia_gap,
+        "en appellate refs": all(ref in en for ref in appellate_refs),
+        "es appellate refs": all(ref in es for ref in appellate_refs),
+        "en institutional test": "Institutional completeness test" in en and "No conclusion is requested here" in en,
+        "es institutional test": "Prueba de integridad institucional" in es and "No se solicita aquí una conclusión" in es,
+        "en formal route warning": "not an extra-record filing" in en,
+        "es formal route warning": "no es un escrito procesal" in es,
+        "en not-located discipline": "NOT LOCATED is not DID NOT EXIST" in en,
+        "es not-located discipline": "NO LOCALIZADO no equivale a NO EXISTIÓ" in es,
         "schema canonical source": schema.get("canonical_node_source") == "archive/PROCEEDINGS_MASTER_REGISTER.csv",
         "schema reverse navigation": schema.get("principles", {}).get("reverse_navigation_from_explicit_forward_edges_is_permitted") is True,
         "schema shared continuum": schema.get("principles", {}).get("shared_asset_control_credit_harm_continuum_must_be_tested") is True,
@@ -72,3 +95,6 @@ print("- EN/ES routes and master-register backlinks present")
 print("- explicit procedural edges separated from contextual lenses")
 print("- reverse trace, chronology and public-treatment safeguards present")
 print("- shared asset/control/credit/harm convergence and fragmentation audit are hardwired")
+print("- institutional-reader completeness test present in both languages")
+print("- Audiencia appellate objects locked as 2523 / 3304+3319 / 421")
+print("- CaixaBank Valencia 01859/2023 kept as an explicit non-conflated registration gap")
