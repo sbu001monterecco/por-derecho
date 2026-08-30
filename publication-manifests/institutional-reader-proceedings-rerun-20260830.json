@@ -29,7 +29,8 @@
   },
   "validation": {
     "pr_head": "8d05009efee76b20431d90d99a16fd3c5525aab9",
-    "checks": [
+    "evidence": [
+      "PR #1225 final head 8d05009efee76b20431d90d99a16fd3c5525aab9: all required checks completed successfully",
       "Audit proceedings interconnectivity map run 33325373630: success",
       "Audit master proceedings publication run 33325373628: success",
       "Publication integrity gate run 33325373671: success",
