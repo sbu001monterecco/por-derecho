@@ -127,12 +127,39 @@
       ],
       "source_confidence": "high_identity_party_proceeding_primary_lexnet_source",
       "verification_status": "procuradora_identity_party_and_proceeding_verified_lawyer_pairing_and_authority_instrument_open"
+    },
+    {
+      "procurador_id": "PROC-ANDRES-CASTELLANO-RIVERO", "canonical_name": "Andrés Castellano Rivero",
+      "name_source_ref": "archive/ROLLO_1010_2018_AUTO_804_CARET_INTERLINK_CONTROL_30AUG2026.md", "colegio_professional_detail": "not yet independently verified",
+      "represented_party": ["Gil Marer", "AWESWELL LIMITED", "Comunidad de Explotación Playa Blanca"],
+      "lawyer_pairings": [{"lawyer":"Juan Daniel Fajardo Expósito","proceeding_id":"Rollo 1010/2018","period_evidence":"located appellate cover"},{"lawyer":"Cristo Ayose Suárez Pimentel","proceeding_id":"Rollo 1010/2018","period_evidence":"located appellate cover"}],
+      "proceeding_id": ["Rollo 1010/2018"], "pieza_incidente": ["criminal_appeal"], "first_located_appearance": "2018-11-13", "last_located_appearance": "2018-11-13",
+      "personacion_poder_apud_acta_refs": [], "filing_refs": [], "notification_refs": [], "substitution_termination_refs": [], "timeline_event_refs": ["LZ-APP-004-20181113-AUTO-804"],
+      "source_confidence": "high_named_appellate_cover", "verification_status": "identity_party_and_lawyer_pairings_on_cover_verified_authority_and_filings_open"
+    },
+    {
+      "procurador_id": "PROC-JOSE-ANGEL-RODRIGUEZ-GIL", "canonical_name": "José Ángel Rodríguez Gil",
+      "name_source_ref": "archive/ROLLO_1010_2018_AUTO_804_CARET_INTERLINK_CONTROL_30AUG2026.md", "colegio_professional_detail": "not yet independently verified",
+      "represented_party": ["Constructora Acosta Matos", "Laura Patricia Acosta Matos", "José Daniel Acosta Matos"],
+      "lawyer_pairings": [{"lawyer":"Ignacio Manuel Martín Marrero","proceeding_id":"Rollo 1010/2018","period_evidence":"located appellate cover"}],
+      "proceeding_id": ["Rollo 1010/2018"], "pieza_incidente": ["criminal_appeal"], "first_located_appearance": "2018-11-13", "last_located_appearance": "2018-11-13",
+      "personacion_poder_apud_acta_refs": [], "filing_refs": [], "notification_refs": [], "substitution_termination_refs": [], "timeline_event_refs": ["LZ-APP-004-20181113-AUTO-804"],
+      "source_confidence": "high_named_appellate_cover", "verification_status": "identity_party_and_lawyer_pairing_on_cover_verified_authority_and_filings_open"
+    },
+    {
+      "procurador_id": "PROC-SOLEDAD-TELLO-CHECA", "canonical_name": "Soledad Tello Checa",
+      "name_source_ref": "archive/ROLLO_1010_2018_AUTO_804_CARET_INTERLINK_CONTROL_30AUG2026.md", "colegio_professional_detail": "not yet independently verified",
+      "represented_party": ["Antonio Cogolludo Rojas", "Shaila María Cogolludo Ramos"],
+      "lawyer_pairings": [{"lawyer":"Juan Carlos Prieto Puente","proceeding_id":"Rollo 1010/2018","period_evidence":"located appellate cover"}],
+      "proceeding_id": ["Rollo 1010/2018"], "pieza_incidente": ["criminal_appeal"], "first_located_appearance": "2018-11-13", "last_located_appearance": "2018-11-13",
+      "personacion_poder_apud_acta_refs": [], "filing_refs": [], "notification_refs": [], "substitution_termination_refs": [], "timeline_event_refs": ["LZ-APP-004-20181113-AUTO-804"],
+      "source_confidence": "high_named_appellate_cover", "verification_status": "identity_party_and_lawyer_pairing_on_cover_verified_authority_and_filings_open"
     }
   ],
   "denominator_status": {
     "complete": false,
-    "known_count": 3,
-    "meaning_of_known_count": "Three procuradoras have now been promoted from located primary procedural material. This is a verified minimum, not the complete denominator.",
+    "known_count": 6,
+    "meaning_of_known_count": "Six procuradores/procuradoras have now been promoted from located primary procedural material. This is a verified minimum, not the complete denominator.",
     "next_action": "Continue scanning pleadings, LexNET receipts, poderes, apud acta, notifications, autos, providencias, diligencias, decretos and appeals across every connected proceeding, beginning with Concurso 36/2012 and its piezas/incidentes."
   }
 }

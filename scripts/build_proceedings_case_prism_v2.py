@@ -440,7 +440,7 @@ CELL_OVERRIDES = {
         "arrecife": {"status": "OPEN", "treatment": "STATUS_UNRESOLVED", "master_ids": ["LZ-JUD-005"], "note_en": "The generic Arrecife mortgage/dación/title row is relevant, but the exact EH 90/2012 identity, organ and complete primary file remain open.", "note_es": "La fila genérica hipotecaria/dación/título de Arrecife es relevante, pero siguen abiertos la identidad exacta EH 90/2012, el órgano y el expediente primario completo."},
     },
     "P03": {
-        "arrecife": {"status": "DIRECT", "treatment": "CONTRADICTED", "master_ids": ["LZ-JUD-003", "LZ-APP-004"], "note_en": "The event was directly examined in the located criminal route, which records provisional archive and Auto 804/2018; this is adverse treatment, not confirmation of the allegation.", "note_es": "El evento fue examinado directamente en la vía penal localizada, que registra sobreseimiento provisional y Auto 804/2018; es tratamiento adverso, no confirmación de la alegación."},
+        "arrecife": {"status": "DIRECT", "treatment": "CONTRADICTED", "master_ids": ["LZ-JUD-003", "LZ-APP-004"], "note_en": "The event was directly examined in DI 1103/2018-00 → DP 1132/2018 and Rollo 1010/2018 / Auto 804/2018 before AP Las Palmas Section Two; the confirmed provisional dismissal is adverse treatment, not confirmation of the allegation.", "note_es": "El evento fue examinado directamente en DI 1103/2018-00 → DP 1132/2018 y Rollo 1010/2018 / Auto 804/2018 ante la Sección Segunda de la AP de Las Palmas; el sobreseimiento provisional confirmado es tratamiento adverso, no confirmación de la alegación."},
     },
     "P05": {
         "calificacion": {"master_ids": ["GC-APP-004"]},

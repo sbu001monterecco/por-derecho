@@ -132,15 +132,24 @@
       "Laura Aguiar Acosta",
       "DP 974/2023 — Arrecife",
       "Arrecife reference 4009/2015 — exact proceeding identity pending",
+      "José Luis Goizueta Adame",
+      "Nicolás Acosta González",
+      "María del Pilar Verástegui Hernández",
+      "Ignacio Manuel Martín Marrero",
+      "José Ángel Rodríguez Gil",
+      "Soledad Tello Checa",
+      "Andrés Castellano Rivero",
+      "Juzgado de Instrucción nº 2 de Arrecife",
+      "Audiencia Provincial de Las Palmas — Sección Segunda",
       "Arrecife 1103/2018 → DP 1132/2018 → Rollo 1010/2018 / Auto 804/2018"
     ]
   },
   "counts": {
-    "total": 231,
-    "PERSON": 95,
+    "total": 240,
+    "PERSON": 102,
     "ORGANISATION": 79,
     "STRUCTURE": 11,
-    "INSTITUTION": 23,
+    "INSTITUTION": 25,
     "PROCEEDING": 23
   },
   "parts": [
@@ -152,7 +161,7 @@
     {
       "path": "matter-identity-registry-v1.professional-people.json",
       "type": "PERSON",
-      "count": 20
+      "count": 27
     },
     {
       "path": "matter-identity-registry-v1.organisations.json",
@@ -172,7 +181,7 @@
     {
       "path": "matter-identity-registry-v1.institutions.json",
       "type": "INSTITUTION",
-      "count": 22
+      "count": 24
     },
     {
       "path": "matter-identity-registry-v1.proceedings.json",

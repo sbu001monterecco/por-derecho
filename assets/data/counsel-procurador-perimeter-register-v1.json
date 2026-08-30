@@ -70,6 +70,21 @@
       "our_perimeter": true,
       "working_relationship": "professional_pair_with_Javier",
       "identity_status": "current_correspondence_source_verified_individual_filing_attribution_open"
+    },
+    {
+      "display_name": "Juan Daniel Fajardo Expósito", "classification": "external_or_party_specific_counsel", "our_perimeter": false,
+      "identity_status": "Rollo_1010_2018_appellate_cover_verified", "period_specific_clients": ["Gil Marer"],
+      "boundary": "Appearance on the located appellate cover only; filing and authority denominator remain open"
+    },
+    {
+      "display_name": "Ignacio Manuel Martín Marrero", "classification": "external_or_party_specific_counsel", "our_perimeter": false,
+      "identity_status": "Rollo_1010_2018_appellate_cover_verified", "period_specific_clients": ["Constructora Acosta Matos", "Laura Patricia Acosta Matos", "José Daniel Acosta Matos"],
+      "boundary": "Appearance on the located appellate cover only; filing and authority denominator remain open"
+    },
+    {
+      "display_name": "Juan Carlos Prieto Puente", "classification": "external_opposing_dissident_side", "our_perimeter": false,
+      "identity_status": "Rollo_1010_2018_appellate_cover_verified", "period_specific_clients": ["Antonio Cogolludo Rojas", "Shaila María Cogolludo Ramos"],
+      "boundary": "Do not conflate with the separate legacy string Juan Carlos Roque Prieto; appearance on this cover does not transfer other roles"
     }
   ],
   "required_linkage": [

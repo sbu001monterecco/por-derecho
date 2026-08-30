@@ -46,7 +46,7 @@ for alias in ("Diligencias Indeterminadas 1103/2018-00", "DP 1132/2018", "Rollo 
 require("does not prove" in family.get("identity_boundary", ""), "CAEPR merits boundary missing")
 identity_index = json.loads((ROOT / "assets/data/matter-identity-registry-v1.json").read_text(encoding="utf-8"))
 require(identity_index.get("counts", {}).get("PROCEEDING") == 23, "CAEPR proceeding denominator not advanced to 23")
-require(identity_index.get("counts", {}).get("total") == 231, "CAEPR total denominator not advanced to 231")
+require(identity_index.get("counts", {}).get("total") == 240, "CAEPR total denominator not advanced to 240")
 ops = json.loads((ROOT / "assets/data/matter-identity-operational-control-v1.json").read_text(encoding="utf-8"))
 require(any(item.get("id") == "PD-SP-R-0023" for item in ops.get("proceeding_identity_corrections", [])), "CAEPR operational correction missing")
 

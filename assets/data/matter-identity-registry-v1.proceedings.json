@@ -299,6 +299,10 @@
         "es": "/es/arrecife-1103-2018-cadena-procesal/",
         "en": "/en/arrecife-1103-2018-procedural-lineage/"
       },
+      "detail_routes": {
+        "es": "/es/rollo-1010-2018-auto-804-2018/",
+        "en": "/en/rollo-1010-2018-order-804-2018/"
+      },
       "identity_resolution": "CARET_CONFIRMED",
       "master_register_ids": [
         "LZ-JUD-003",
@@ -307,6 +311,27 @@
       "competent_organs": [
         "Juzgado de Instrucción nº 2 de Arrecife (antiguo Juzgado Mixto nº 7)",
         "Audiencia Provincial de Las Palmas, Sección Segunda"
+      ],
+      "nig": "3500443220180003508",
+      "proceeding_nodes": [
+        {
+          "master_register_id": "LZ-JUD-003",
+          "reference": "DP 1132/2018",
+          "origin_reference": "Diligencias Indeterminadas 1103/2018-00",
+          "competent_organ": "PD-SP-I-0024",
+          "decision_date": "2018-08-20",
+          "procedural_state": "PROVISIONALLY_DISMISSED",
+          "child_master_register_id": "LZ-APP-004"
+        },
+        {
+          "master_register_id": "LZ-APP-004",
+          "reference": "Rollo 1010/2018",
+          "decision_reference": "Auto 804/2018",
+          "competent_organ": "PD-SP-I-0025",
+          "decision_date": "2018-11-13",
+          "procedural_state": "APPEALS_DISMISSED_PROVISIONAL_DISMISSAL_CONFIRMED_NO_FURTHER_APPEAL_STATED",
+          "parent_master_register_id": "LZ-JUD-003"
+        }
       ],
       "procedural_state": "PROVISIONAL_DISMISSAL_CONFIRMED_ON_FINAL_APPEAL_ORDER",
       "identity_sources": [
