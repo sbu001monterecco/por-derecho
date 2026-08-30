@@ -1,0 +1,111 @@
+{
+  "schema": "por-derecho.treasury-transparency-7-2026.v1",
+  "control_id": "PD-TREASURY-TRANSPARENCY-7-2026-20260830-01",
+  "control_date": "2026-08-30",
+  "status": "PREPARED_FOR_PUBLICATION",
+  "canonical_administrative_record": {
+    "master_id": "NAT-TES-001",
+    "id_boundary": "Legacy stable ID retained; this is a Canary Islands administrative file, not a national proceeding.",
+    "organ": "Dirección General del Tesoro y Política Financiera",
+    "reference": "Access-to-public-information file 7/2026",
+    "resolution": "Resolution 154/2026",
+    "delivery_resource": "Expediente 7-2026-0316134247 Gil Marer"
+  },
+  "public_routes": {
+    "es": "/es/tesoro-transparencia-7-2026-28agosto/",
+    "en": "/en/treasury-transparency-7-2026-28-august/"
+  },
+  "official_capacity": {
+    "name": "María Teresa Bosch Llinares",
+    "office": "Directora General del Tesoro y Política Financiera",
+    "source_scope": "Named signer of the 28 August 2026 implementation act; official-capacity attribution only.",
+    "identity_boundary": "This record does not establish knowledge, conduct or responsibility outside the source-supported official acts."
+  },
+  "procedural_events": [
+    {
+      "date": "2026-06-16",
+      "event": "Resolution 154/2026 recognised partial access, subject where appropriate to data dissociation.",
+      "evidence_status": "VERIFIED_PRIMARY"
+    },
+    {
+      "date": "2026-08-28",
+      "event": "A signed Treasury act moved the already-recognised access into implementation through Colabora.",
+      "evidence_status": "VERIFIED_PRIMARY"
+    },
+    {
+      "date": "2026-08-28",
+      "event": "The first production tranche made available contracting and 2022-2025 borrowing/debt records.",
+      "evidence_status": "VERIFIED_PRIMARY"
+    }
+  ],
+  "signed_implementation_act": {
+    "source_id": "PD-SP-SRC-TREASURY-T7-2026-DELIVERY-20260828",
+    "pages": 3,
+    "sha256": "6f21dffe62759de498830db28c571685a7afefadee4dbea20d17014a6dfe6187",
+    "signed_date": "2026-08-28",
+    "signer": "María Teresa Bosch Llinares",
+    "signer_capacity": "Directora General del Tesoro y Política Financiera",
+    "binary_publication": "NOT_REPUBLISHED"
+  },
+  "current_production_tranche": {
+    "files": 8,
+    "pages": 734,
+    "review_status": "REVIEWED",
+    "content": "Signed delivery act, contracting material, and 2022-2025 borrowing/debt files including the 2024 and 2025 public RIC issue files.",
+    "canonical_denominator": "/assets/data/canary-ric-public-debt-v1.json",
+    "remaining_production": "OPEN_UNDER_ME_110"
+  },
+  "transport": {
+    "service": "Gobierno de Canarias Colabora",
+    "classification": "AUTOMATED_DELIVERY_MECHANISM",
+    "share_transmissions": 2,
+    "paired_password_transmissions": 2,
+    "event_count": 1,
+    "interpretation": "Rapid paired transmissions are treated as retransmissions within one delivery event absent evidence of a separate substantive act.",
+    "excluded_public_metadata": [
+      "password",
+      "access link",
+      "recipient address",
+      "raw email",
+      "provider message or thread IDs",
+      "exact transport timestamps",
+      "acceptance token",
+      "security code"
+    ]
+  },
+  "file_separation": [
+    "Treasury access file 7/2026 and Resolution 154/2026",
+    "Vice-Ministry file 12/2026-0710092416 and Resolution 28/2026",
+    "REGAGE26e00065752755 and the separate Law 2/2023 routing chain"
+  ],
+  "findings": [
+    {
+      "id": "T7-F-001",
+      "status": "VERIFIED_FACT",
+      "proposition": "Partial access was recognised and moved into material implementation through Colabora on 28 August 2026."
+    },
+    {
+      "id": "T7-F-002",
+      "status": "VERIFIED_FACT",
+      "proposition": "The reviewed first tranche contains eight files and 734 pages."
+    },
+    {
+      "id": "T7-O-001",
+      "status": "OPEN",
+      "proposition": "Remaining documents promised for successive delivery under Resolution 154/2026 have not yet been controlled as a complete denominator."
+    }
+  ],
+  "non_inference_rules": [
+    "Notification, access recognition and delivery do not establish agreement with the project's allegations.",
+    "Repeated automated transmissions are not separate resolutions or separate substantive productions.",
+    "Official-capacity signature does not establish personal knowledge or responsibility outside the signed act.",
+    "First-tranche review does not establish completeness of the staged production.",
+    "The production does not prove a public-bond allocation to HNT or an Acosta Matos subscriber bridge."
+  ],
+  "privacy": {
+    "public_name_basis": "Signed official act and official capacity",
+    "private_source_binaries": "EXCLUDED",
+    "credentials_and_access_mechanics": "EXCLUDED",
+    "personal_profile_created": false
+  }
+}
