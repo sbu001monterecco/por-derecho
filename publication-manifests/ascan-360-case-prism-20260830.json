@@ -1,0 +1,30 @@
+{
+  "publication_id": "PD-SP-AScan360-CASE-PRISM-20260830-01",
+  "owner": "Por Derecho / Project Sun Rock",
+  "control_date": "2026-08-30",
+  "current_state": "PR_OPEN",
+  "state": "PR_OPEN",
+  "purpose": "Implement the A-SCAN 360 Case Prism, parallel-lanes, isolation-test and reader-lens views on the bilingual Proceedings Interconnectivity Map, closing the gap between governance/schema requirements and the actual public renderer.",
+  "base_sha": "3473d8c399d990b45ad58dd9a2aa8f8caf0d6814",
+  "head_branch": "ascan-360-case-prism-20260830",
+  "expected_routes": {
+    "en": ["en/proceedings-map/index.html"],
+    "es": ["es/mapa-procedimientos/index.html"]
+  },
+  "expected_source_files": [
+    "assets/data/proceedings-case-prism-v1.json",
+    "assets/data/proceedings-interconnectivity-schema-v1.json",
+    "assets/proceedings-interconnectivity-map-20260830.js",
+    "assets/proceedings-interconnectivity-map-20260830.css",
+    ".github/governance/A_SCAN_360_CASE_PRISM_AND_READER_LENS_PROTOCOL_30AUG2026.md",
+    "scripts/audit_proceedings_interconnectivity_map.py",
+    "docs/deletion-audits/2026-08-30-a-scan-360-case-prism-continuity.md"
+  ],
+  "verification": {
+    "ci_green": false,
+    "merged": false,
+    "main_readback": false,
+    "pages_deployed": false,
+    "public_readback": false
+  }
+}

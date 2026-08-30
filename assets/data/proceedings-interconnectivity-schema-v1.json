@@ -1,9 +1,11 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "1.2.0",
   "control_date": "2026-08-30",
-  "status": "ACTIVE_DERIVED_GRAPH_CONTROL",
+  "status": "ACTIVE_DERIVED_GRAPH_AND_CASE_PRISM_CONTROL",
   "canonical_node_source": "archive/PROCEEDINGS_MASTER_REGISTER.csv",
+  "case_prism_source": "assets/data/proceedings-case-prism-v1.json",
   "governance": ".github/governance/UNITARY_PROCEEDINGS_INTERCONNECTIVITY_MAP_PROTOCOL_30AUG2026.md",
+  "supplemental_governance": ".github/governance/A_SCAN_360_CASE_PRISM_AND_READER_LENS_PROTOCOL_30AUG2026.md",
   "public_routes": {
     "en": "/en/proceedings-map/",
     "es": "/es/mapa-procedimientos/"
@@ -16,7 +18,10 @@
     "common_context_does_not_prove_joinder_or_liability": true,
     "shared_asset_control_credit_harm_continuum_must_be_tested": true,
     "fragmentation_atomisation_is_an_audit_question_not_a_presumed_fact": true,
-    "public_projection_excludes_explicit_internal_private_rows": true
+    "public_projection_excludes_explicit_internal_private_rows": true,
+    "reader_lens_changes_priority_not_facts": true,
+    "isolation_test_does_not_prove_notice_admissibility_or_duty": true,
+    "case_prism_cells_require_explicit_status_and_plain_language_reason": true
   },
   "node_fields": [
     "Master_ID",
@@ -58,6 +63,13 @@
     "SHARED_ASSET_CONTROL_CREDIT_HARM_CONTINUUM": "Use where independent sources show that legally separate proceedings concern the same hotel/asset, control, exploitation, secured credit, estate value, productive unit, enforcement, income, title or alleged harm continuum. This is a material relevance lens, not joinder or liability.",
     "FRAGMENTATION_ATOMISATION_AUDIT": "Use to test whether compartmentalised treatment prevented a material cross-proceeding fact, filing, asset effect, criminal-harm allegation or evidential contradiction from being acknowledged elsewhere. It is an investigative/audit proposition requiring source- and actor-specific proof, not a presumed institutional motive."
   },
+  "case_prism_cell_statuses": [
+    "DIRECT",
+    "CONTEXT",
+    "OPEN",
+    "NOT_LOCATED",
+    "OUTSIDE"
+  ],
   "required_views": [
     "TRACK_MAP",
     "CHRONOLOGY_JOURNEY",
@@ -65,8 +77,25 @@
     "REVERSE_TRACE",
     "WHY_CONNECTED",
     "CONVERGENCE_CLUSTER",
-    "FRAGMENTATION_AUDIT"
+    "FRAGMENTATION_AUDIT",
+    "DECISION_DEPENDENCY_MATRIX",
+    "PARALLEL_PROCEEDINGS_LANES",
+    "ISOLATION_TEST",
+    "AUDIENCE_LENS"
   ],
+  "implemented_public_views": {
+    "TRACK_MAP": "renderer tab map",
+    "CHRONOLOGY_JOURNEY": "renderer tab chronology",
+    "TRACE_ONE_PROCEEDING": "renderer tab trace",
+    "REVERSE_TRACE": "trace panel derives incoming relationships from explicit forward edges",
+    "WHY_CONNECTED": "trace and Case Prism detail panels",
+    "CONVERGENCE_CLUSTER": "renderer tab prism",
+    "FRAGMENTATION_AUDIT": "renderer tab isolation",
+    "DECISION_DEPENDENCY_MATRIX": "renderer tab prism",
+    "PARALLEL_PROCEEDINGS_LANES": "renderer tab lanes",
+    "ISOLATION_TEST": "renderer tab isolation",
+    "AUDIENCE_LENS": "reader-lens selector in prism and lanes"
+  },
   "edge_statuses": [
     "DOCUMENTED_OR_EXPLICIT_REGISTER_RELATION",
     "REVERSE_DERIVED_FROM_EXPLICIT_RELATION",
@@ -81,6 +110,8 @@
     "CONTEXT_COVERAGE",
     "CONVERGENCE_COVERAGE",
     "FRAGMENTATION_AUDIT_COVERAGE",
+    "CASE_PRISM_PROPOSITION_COVERAGE",
+    "AUDIENCE_LENS_COVERAGE",
     "ORPHAN_GAP_COUNT",
     "LIVE_COVERAGE"
   ]
