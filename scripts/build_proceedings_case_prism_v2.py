@@ -27,7 +27,7 @@ LANES = [
     {"id": "calificacion", "en": "Calificación · RPL 2523/2025", "es": "Calificación · RPL 2523/2025", "master_ids": ["GC-CAL-002", "GC-APP-004"]},
     {"id": "removal", "en": "AC removal · RPL 3304 + 3319/2025", "es": "Separación AC · RPL 3304 + 3319/2025", "master_ids": ["GC-APP-005", "GC-APP-006"]},
     {"id": "fees", "en": "AC remuneration · RPL 421/2026", "es": "Remuneración AC · RPL 421/2026", "master_ids": ["GC-CIV-027", "GC-APP-028"]},
-    {"id": "arrecife", "en": "Arrecife · control / mortgage / title", "es": "Arrecife · control / hipoteca / título", "master_ids": ["LZ-JUD-003", "LZ-APP-004", "LZ-JUD-005"]},
+    {"id": "arrecife", "en": "Arrecife · control / mortgage / title", "es": "Arrecife · control / hipoteca / título", "master_ids": ["LZ-JUD-042", "LZ-JUD-003", "LZ-APP-004", "LZ-JUD-005"]},
     {"id": "valencia", "en": "Valencia · CaixaBank", "es": "Valencia · CaixaBank", "master_ids": ["VAL-CIV-001"]},
     {"id": "meetingpoint", "en": "Meeting Point 357/2024 · FTI bridge open", "es": "Meeting Point 357/2024 · puente FTI abierto", "master_ids": ["GC-CONT-025"]},
     {"id": "tenerife", "en": "Tenerife · separate Matkator / Cuatrecasas files", "es": "Tenerife · expedientes separados Matkator / Cuatrecasas", "master_ids": ["TF-CIV-001", "TF-CIV-002", "TF-CRI-003"]},
