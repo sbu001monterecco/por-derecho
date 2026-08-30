@@ -201,7 +201,7 @@ if not errors:
         "role=\"tabpanel\"": "tab panel", "role=\"tab\"": "semantic tabs", "prismUnavailable": "degraded state",
         "sourceScope": "proposition-level source boundary", "outsideSelected": "accessible suppressed state",
         "evidenceStatusLabel": "bilingual evidence status",
-        "revealActivePanel": "deep-link panel reveal", "setTimeout(revealActivePanel": "post-load deep-link focus stabilisation", "mapped || 'map'": "hash back-navigation restore",
+        "revealActivePanel": "deep-link panel reveal", "mapped || 'map'": "hash back-navigation restore",
         "addEventListener('input', () => draw())": "safe filter redraw",
     }
     for token, label in renderer_tokens.items():

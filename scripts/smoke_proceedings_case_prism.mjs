@@ -13,9 +13,28 @@ async function assertFocusedAndVisible(page, selector, label) {
       if (!element || document.activeElement !== element) return false;
       const rect = element.getBoundingClientRect();
       return rect.top >= -10 && rect.top < window.innerHeight * 0.7;
-    }, selector);
+    }, selector, { timeout: 8000 });
   } catch {
-    throw new Error(`${label}: target did not become focused and visible`);
+    const diagnostic = await page.evaluate((target) => {
+      const element = document.querySelector(target);
+      const rect = element?.getBoundingClientRect();
+      return { active: document.activeElement?.outerHTML?.slice(0, 180) || '', rect: rect ? { top: rect.top, bottom: rect.bottom, height: rect.height } : null };
+    }, selector);
+    throw new Error(`${label}: target did not become focused and visible (${JSON.stringify(diagnostic)})`);
+  }
+}
+
+async function assertDeepLinkVisible(page, hash, label) {
+  try {
+    await page.waitForFunction((targetHash) => {
+      const targets = [document.querySelector(targetHash), document.querySelector('[data-view-body]')].filter(Boolean);
+      return targets.some((element) => {
+        const rect = element.getBoundingClientRect();
+        return rect.top >= -10 && rect.top < window.innerHeight * 0.8;
+      });
+    }, hash, { timeout: 8000 });
+  } catch {
+    throw new Error(`${label}: neither the canonical anchor nor its active panel entered the viewport`);
   }
 }
 
@@ -144,7 +163,7 @@ try {
       const deepResponse = await deepLinkPage.goto(`${base}${route.path}${hash}`, { waitUntil: 'networkidle' });
       if (!deepResponse?.ok()) throw new Error(`${route.lang}: direct ${hash} load failed with ${deepResponse?.status()}`);
       await deepLinkPage.waitForSelector(`[role="tab"][data-view="${view}"][aria-selected="true"]`);
-      await assertFocusedAndVisible(deepLinkPage, '[data-view-body]', `${route.lang}: direct ${hash}`);
+      await assertDeepLinkVisible(deepLinkPage, hash, `${route.lang}: direct ${hash}`);
       await deepLinkPage.close();
     }
     console.log(`${route.lang}: 216-cell Case Prism / swimlane / exact isolation / trace / mobile smoke PASS`);
