@@ -1,0 +1,205 @@
+{
+  "schema": "por-derecho.canary-ric-public-debt.v1",
+  "control_id": "PD-CANARY-RIC-PUBLIC-DEBT-20260830-01",
+  "control_date": "2026-08-30",
+  "status": "REPOSITORY_CONTROLLED_PENDING_PUBLICATION",
+  "public_routes": {
+    "es": "/es/deuda-publica-ric-canarias/",
+    "en": "/en/canary-ric-public-debt/"
+  },
+  "controlling_conclusion": {
+    "es": "No es conexión cero y no es el mismo dinero: la deuda pública y RICPE son vías paralelas de materialización RIC; el vínculo directo con Acosta Matos está en RICPE hacia HNT, no en una asignación probada de los bonos públicos.",
+    "en": "The connection is not zero and the money is not the same: public debt and RICPE are parallel RIC materialisation routes; the direct Acosta Matos link is RICPE to HNT, not a proved allocation of public-bond proceeds."
+  },
+  "reviewed_corpus": {
+    "files": 8,
+    "pages": 734,
+    "source_class": "ACCESS_PRODUCTION_FOLLOWING_TREASURY_RESOLUTION_154_2026_WITH_DISSOCIATION_AND_STAGED_DELIVERY",
+    "binary_publication": "NOT_REPUBLISHED",
+    "items": [
+      {
+        "title": "Escrito puesta a disposicion I firmado.pdf",
+        "pages": 3,
+        "sha256": "6f21dffe62759de498830db28c571685a7afefadee4dbea20d17014a6dfe6187"
+      },
+      {
+        "title": "OPERACIONES 2025.pdf",
+        "pages": 110,
+        "sha256": "056cbc067689b680d45026e148e4535fecbecb74545ed3d9a782ebbdb76cc98b"
+      },
+      {
+        "title": "EMISIÓN RIC 2025.pdf",
+        "pages": 36,
+        "sha256": "89b294c91abe60d30ca73bc7f6a33bbeaf43595358d98d70811c55de70847030"
+      },
+      {
+        "title": "OPERACIONES 2024.pdf",
+        "pages": 129,
+        "sha256": "775d227b8403dfc5be9d0aca61af9436f05809f51c6c2b075b3436be7db19353"
+      },
+      {
+        "title": "EMISIÓN RIC 2024.pdf",
+        "pages": 49,
+        "sha256": "43bd233abdfea9413c6c7fcc41758bb5987dccbe4b78918719bca7606f1f1341"
+      },
+      {
+        "title": "OPERACIONES 2023.pdf",
+        "pages": 117,
+        "sha256": "f559bfb2d8d811caa287c373dbf65005d60f07a4575f48feccd45cbda30c1004"
+      },
+      {
+        "title": "OPERACIONES 2022-1.pdf",
+        "pages": 114,
+        "sha256": "19efcbd1e95a53161e8e19243d471c3240b45bdb8199818f4a52c28d39818571"
+      },
+      {
+        "title": "Contratos.pdf",
+        "pages": 176,
+        "sha256": "d69bbb797f7da157f5687ec9850d0eb206d924613e20f3bf33ff5d2487c614a8"
+      }
+    ]
+  },
+  "issues": [
+    {
+      "year": 2024,
+      "isin": "ES0000093478",
+      "amount_offered_eur": 150000000,
+      "amount_requested_eur": 581999000,
+      "demand_multiple": 3.8799933333,
+      "coupon_percent": 0.5,
+      "issue_date": "2024-11-28",
+      "maturity_date": "2029-11-28",
+      "initial_minimum_allocation_eur": 100000,
+      "minimum_subscription_eur": 1000,
+      "public_result": "https://www.gobiernodecanarias.org/boc/2024/231/3816.html",
+      "public_order": "https://www.gobiernodecanarias.org/boc/2024/215/3523.html"
+    },
+    {
+      "year": 2025,
+      "isin": "ES0000093494",
+      "amount_offered_eur": 100000000,
+      "amount_requested_eur": 557780000,
+      "demand_multiple": 5.5778,
+      "coupon_percent": 0.2,
+      "issue_date": "2025-12-04",
+      "maturity_date": "2030-12-04",
+      "initial_minimum_allocation_eur": 80000,
+      "minimum_subscription_eur": 1000,
+      "maximum_per_subscriber_eur": 6000000,
+      "public_result": "https://www.gobiernodecanarias.org/boc/2025/235/4021.html",
+      "public_order": "https://www.gobiernodecanarias.org/boc/2025/224/3808.html",
+      "open_reconciliation": "The published Order states an EUR 80,000 initial minimum allocation; an operational draw/proration record refers to EUR 100,000. Version, authority, communication and actual application remain to be reconciled."
+    }
+  ],
+  "aggregate": {
+    "amount_offered_eur": 250000000,
+    "amount_requested_eur": 1139779000,
+    "demand_multiple": 4.559116,
+    "excess_demand_eur": 889779000
+  },
+  "three_lanes": [
+    {
+      "lane": "PUBLIC_RIC_DEBT",
+      "flow": [
+        "subscriber",
+        "Canary Autonomous Community bond",
+        "eligible public investment"
+      ],
+      "beneficiary": "Canary Autonomous Community public budget",
+      "acosta_connection": "UNPROVED_SUBSCRIBER_OR_BENEFICIAL_OWNER_BRIDGE"
+    },
+    {
+      "lane": "PRIVATE_RICPE",
+      "flow": [
+        "investor / RIC allocation",
+        "RICPE Series F and G",
+        "participating loans",
+        "Hotel New Trend / MYND Yaiza"
+      ],
+      "amount_eur_reconstructed_audited_accounts": 6573703.10,
+      "amount_eur_prospectus_components": 6570713.56,
+      "reconciliation_difference_eur": 2989.54,
+      "acosta_connection": "DIRECT_DESTINATION_SIDE_CONNECTION_DOCUMENTED"
+    },
+    {
+      "lane": "REGIONAL_INCENTIVE",
+      "flow": [
+        "GC/836/P06",
+        "published award",
+        "Hotel New Trend / MYND Yaiza"
+      ],
+      "project_investment_eur": 11469714,
+      "published_award_eur": 3440914.20,
+      "jobs": 60,
+      "boundary": "AWARD_DOES_NOT_BY_ITSELF_PROVE_FINAL_PAYMENT_COMPLIANCE_OR_OVERLAP"
+    }
+  ],
+  "institutional_roles": [
+    {
+      "actor": "Canary Treasury and Financial Policy Directorate-General",
+      "role": "issuer-side debt procedure and access-production custodian",
+      "boundary": "not the RICPE investment manager"
+    },
+    {
+      "actor": "AFI",
+      "role": "technical coordinator of the public RIC issues",
+      "boundary": "no RICPE/HNT role established in this corpus"
+    },
+    {
+      "actor": "Banco de España / IBERCLEAR / AIAF",
+      "role": "issue, payment, registration, settlement and market infrastructure",
+      "boundary": "infrastructure role is not a beneficiary-side flow"
+    },
+    {
+      "actor": "Cecabank",
+      "role": "appears in the ordinary-debt invitation universe; separate RICPE sources identify it as depositary",
+      "boundary": "shared-provider overlap does not establish a shared transaction or money flow"
+    }
+  ],
+  "findings": [
+    {
+      "id": "RICD-F-001",
+      "status": "VERIFIED_FACT",
+      "proposition": "The 2024 and 2025 RIC-eligible public issues allocated EUR 250 million against EUR 1.139779 billion of demand."
+    },
+    {
+      "id": "RICD-F-002",
+      "status": "VERIFIED_FACT",
+      "proposition": "The public issues finance qualifying public investment and are legally separate from RICPE Series F/G financing to HNT."
+    },
+    {
+      "id": "RICD-F-003",
+      "status": "VERIFIED_FACT",
+      "proposition": "The 2024 and 2025 bonds post-date the December 2022 and June 2023 HNT loans and therefore cannot be their original source."
+    },
+    {
+      "id": "RICD-I-001",
+      "status": "EVIDENCE_BASED_INFERENCE",
+      "proposition": "The public debt route is a market-capacity and institutional-process comparator for the private RICPE route within one RIC policy ecosystem."
+    },
+    {
+      "id": "RICD-O-001",
+      "status": "OPEN",
+      "proposition": "Whether an Acosta Matos person or entity subscribed to either public issue cannot be determined from the dissociated production."
+    }
+  ],
+  "open_evidence": [
+    "complete subscriber and allocation register with lawful NIF and beneficial-owner matching",
+    "RICPE Series F/G subscriber register and subscription documents",
+    "tax-origin and materialisation records under competent confidentiality controls",
+    "RICPE to HNT contracts, drawdowns and bank trail",
+    "HNT source-and-use ledger by invoice, work, employment and period",
+    "complete Decree 224/2022 and AEAT suitability file",
+    "complete GC/836/P06 eligibility, other-aid, payment, employment and closure file",
+    "2025 EUR 80,000 versus EUR 100,000 minimum-allocation reconciliation",
+    "remaining staged production promised under Resolution 154/2026"
+  ],
+  "publication_boundaries": [
+    "same RIC policy ecosystem does not mean same issuer, beneficiary, project or money",
+    "oversubscription does not identify RIC tax use or beneficial ownership",
+    "dissociation does not prove absence or presence of an Acosta Matos subscriber",
+    "shared advisers, custodians or market infrastructure do not prove a shared transaction",
+    "no public-bond-to-HNT allocation or diversion is established",
+    "no double funding, preferential treatment or criminality is established"
+  ]
+}

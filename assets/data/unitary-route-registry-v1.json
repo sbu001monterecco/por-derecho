@@ -1894,5 +1894,43 @@
       "análisis penal separación honorarios AC",
       "distinción DP 1901 DP 1956"
     ]
+  },
+  {
+    "lang": "en",
+    "path": "en/canary-ric-public-debt/",
+    "title": "Canary RIC public debt — connection to RICPE and Acosta Matos",
+    "type": "finance",
+    "summary": "Why the Canary Government raises RIC-eligible public debt, how it differs from RICPE, and which Acosta Matos connections are proved, open or excluded.",
+    "tags": [
+      "RIC public debt",
+      "Canary Treasury",
+      "RICPE",
+      "Acosta Matos"
+    ],
+    "aliases": [
+      "ES0000093478",
+      "ES0000093494",
+      "Canary RIC bonds",
+      "public materialisation"
+    ]
+  },
+  {
+    "lang": "es",
+    "path": "es/deuda-publica-ric-canarias/",
+    "title": "Deuda pública RIC de Canarias — conexión con RICPE y Acosta Matos",
+    "type": "finance",
+    "summary": "Por qué el Gobierno de Canarias capta deuda apta para la RIC, cómo se distingue de RICPE y qué conexiones Acosta Matos están probadas, abiertas o excluidas.",
+    "tags": [
+      "deuda pública RIC",
+      "Tesoro canario",
+      "RICPE",
+      "Acosta Matos"
+    ],
+    "aliases": [
+      "ES0000093478",
+      "ES0000093494",
+      "bonos RIC Canarias",
+      "materialización pública"
+    ]
   }
 ]
