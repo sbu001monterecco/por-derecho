@@ -9,6 +9,7 @@
   "purpose": "Provide a bilingual, unitary, non-fragmented map of legally distinct proceedings and their documented procedural or contextual interconnections without collapsing them into one case.",
   "canonical_node_source": "archive/PROCEEDINGS_MASTER_REGISTER.csv",
   "governance": ".github/governance/UNITARY_PROCEEDINGS_INTERCONNECTIVITY_MAP_PROTOCOL_30AUG2026.md",
+  "anti_fragmentation_governance": "archive/PROCEEDINGS_ANTI_FRAGMENTATION_CONVERGENCE_RULE_30AUG2026.md",
   "schema": "assets/data/proceedings-interconnectivity-schema-v1.json",
   "merge_sha": null,
   "expected_routes": {
@@ -18,6 +19,7 @@
   "expected_source_files": [
     "archive/PROCEEDINGS_MASTER_REGISTER.csv",
     ".github/governance/UNITARY_PROCEEDINGS_INTERCONNECTIVITY_MAP_PROTOCOL_30AUG2026.md",
+    "archive/PROCEEDINGS_ANTI_FRAGMENTATION_CONVERGENCE_RULE_30AUG2026.md",
     "assets/data/proceedings-interconnectivity-schema-v1.json",
     "assets/proceedings-interconnectivity-map-20260830.js",
     "assets/proceedings-interconnectivity-map-20260830.css",
@@ -31,10 +33,17 @@
   "reader_modes": ["TRACK_MAP", "CHRONOLOGY_JOURNEY", "TRACE_ONE_PROCEEDING", "REVERSE_TRACE", "WHY_CONNECTED"],
   "evidential_boundaries": [
     "DIRECT_PROCEDURAL_EDGE_IS_NOT_CONTEXTUAL_BRIDGE",
+    "PROCEDURAL_SEPARATENESS_IS_NOT_FACTUAL_EVIDENTIAL_PATRIMONIAL_OR_CAUSATION_INDEPENDENCE",
     "CONTEXT_DOES_NOT_PROVE_JOINDER_COORDINATION_KNOWLEDGE_WRONGDOING_OR_LIABILITY",
     "PUBLIC_PROJECTION_DOES_NOT_UPGRADE_TRUE_FALSE_UNVERIFIED_OR_SOURCE_STATUS",
     "MAP_IS_NAVIGATION_NOT_A_MERITS_FINDING"
   ],
+  "validation": {
+    "evidence": [
+      "PR #1221 dedicated proceedings interconnectivity audit passed on the initial implementation head before the anti-fragmentation supplement",
+      "PR #1221 master proceedings publication audit passed on the initial implementation head before the anti-fragmentation supplement"
+    ]
+  },
   "verification": {
     "source_files_created": true,
     "canonical_csv_reused_not_duplicated": true,
