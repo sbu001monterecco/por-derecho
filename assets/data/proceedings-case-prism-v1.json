@@ -1,0 +1,236 @@
+{
+  "schema_version": "1.0.0",
+  "control_date": "2026-08-30",
+  "status": "PUBLIC_DERIVED_CASE_PRISM",
+  "canonical_node_source": "archive/PROCEEDINGS_MASTER_REGISTER.csv",
+  "boundary": {
+    "en": "This is a navigation and cross-record verification layer. A cell marked contextual or open does not prove joinder, notice, admissibility, coordination, wrongdoing or liability. Material relied upon in a live proceeding must reach the competent organ by the lawful procedural route.",
+    "es": "Esta es una capa de navegación y verificación entre expedientes. Una celda marcada como contexto o abierta no prueba acumulación, conocimiento, admisibilidad, coordinación, ilicitud ni responsabilidad. Todo material que deba valorarse en un procedimiento vivo debe llegar al órgano competente por la vía procesal legalmente adecuada."
+  },
+  "statuses": {
+    "DIRECT": {"en": "Direct in lane", "es": "Directo en la vía"},
+    "CONTEXT": {"en": "Material context", "es": "Contexto material"},
+    "OPEN": {"en": "Bridge to test", "es": "Puente por comprobar"},
+    "NOT_LOCATED": {"en": "Treatment not located", "es": "Tratamiento no localizado"},
+    "OUTSIDE": {"en": "Outside this lane", "es": "Fuera de esta vía"}
+  },
+  "audience_lenses": [
+    {
+      "id": "all",
+      "en": "All readers",
+      "es": "Todos los lectores",
+      "question_en": "Which factual dependencies cross legally separate files, and what is the source status of each connection?",
+      "question_es": "¿Qué dependencias fácticas cruzan expedientes jurídicamente separados y cuál es el estado de fuente de cada conexión?"
+    },
+    {
+      "id": "court",
+      "en": "Court / magistrate",
+      "es": "Órgano judicial / magistratura",
+      "question_en": "What materially connected record should be tested before treating the isolated file as factually complete?",
+      "question_es": "¿Qué expediente materialmente conectado debe contrastarse antes de tratar el expediente aislado como fácticamente completo?"
+    },
+    {
+      "id": "fiscal",
+      "en": "Ministerio Fiscal",
+      "es": "Ministerio Fiscal",
+      "question_en": "What overlapping allegations, evidence or asset consequences appear across prosecutorial and judicial files, and what cross-file treatment is actually located?",
+      "question_es": "¿Qué alegaciones, pruebas o consecuencias patrimoniales coinciden entre expedientes fiscales y judiciales y qué tratamiento entre expedientes se ha localizado realmente?"
+    },
+    {
+      "id": "supervision",
+      "en": "CGPJ / judicial supervision",
+      "es": "CGPJ / supervisión judicial",
+      "question_en": "Does the supervisory record reveal whether the institutional response considered the wider procedural and evidential dependencies?",
+      "question_es": "¿Permite el expediente supervisor comprobar si la respuesta institucional consideró las dependencias procesales y probatorias más amplias?"
+    },
+    {
+      "id": "authority",
+      "en": "Regulator / public authority",
+      "es": "Regulador / autoridad pública",
+      "question_en": "Which finite factual proposition lies within this authority's competence, and which other files share the same factual dependency?",
+      "question_es": "¿Qué proposición fáctica concreta entra en la competencia de esta autoridad y qué otros expedientes comparten la misma dependencia fáctica?"
+    },
+    {
+      "id": "research",
+      "en": "Journalist / researcher",
+      "es": "Periodista / investigador",
+      "question_en": "Which propositions are documented, contextual, contested or still open, and where can the reader trace them back to a canonical proceeding?",
+      "question_es": "¿Qué proposiciones están documentadas, son contextuales, controvertidas o siguen abiertas y cómo puede el lector volver al procedimiento canónico?"
+    }
+  ],
+  "lanes": [
+    {"id": "concurso", "en": "Concurso 36/2012", "es": "Concurso 36/2012", "master_ids": ["GC-JUD-001"]},
+    {"id": "calificacion", "en": "Calificación · RPL 2523/2025", "es": "Calificación · RPL 2523/2025", "master_ids": ["GC-CAL-002", "GC-APP-004"]},
+    {"id": "removal", "en": "AC removal · RPL 3304+3319/2025", "es": "Separación AC · RPL 3304+3319/2025", "master_ids": ["GC-APP-005", "GC-APP-006", "GC-APP-007"]},
+    {"id": "fees", "en": "AC fees · RPL 421/2026", "es": "Honorarios AC · RPL 421/2026", "master_ids": ["GC-CIV-027", "GC-APP-028"]},
+    {"id": "arrecife", "en": "Arrecife · control / mortgage / title", "es": "Arrecife · control / hipoteca / título", "master_ids": ["LZ-JUD-003", "LZ-APP-004", "LZ-JUD-005"]},
+    {"id": "valencia", "en": "Valencia · CaixaBank", "es": "Valencia · CaixaBank", "master_ids": ["VAL-CIV-001"]},
+    {"id": "meetingpoint", "en": "Meeting Point / FTI", "es": "Meeting Point / FTI", "master_ids": ["GC-CONT-025"]},
+    {"id": "tenerife", "en": "Tenerife · Matkator / Cuatrecasas", "es": "Tenerife · Matkator / Cuatrecasas", "master_ids": ["TF-CIV-001", "TF-CIV-002", "TF-CRI-003"]},
+    {"id": "fiscalia", "en": "Ministerio Fiscal", "es": "Ministerio Fiscal", "master_ids": ["GC-FIS-013", "GC-FIS-016", "GC-FIS-017", "GC-FIS-018"]},
+    {"id": "supervision", "en": "CGPJ / LAJ supervision", "es": "Supervisión CGPJ / LAJ", "master_ids": ["GC-GOV-019", "GC-GOV-020", "GC-LAJ-021"]},
+    {"id": "historical", "en": "Historical possession / exploitation", "es": "Posesión / explotación histórica", "master_ids": ["LZ-JUD-001", "LZ-JUD-FAM-006"]}
+  ],
+  "propositions": [
+    {
+      "id": "P01",
+      "sort": 2012,
+      "period": "2012-present",
+      "title_en": "Concurso 36/2012 is the central insolvency spine",
+      "title_es": "Concurso 36/2012 es la columna concursal central",
+      "question_en": "Which later decisions, appeals and asset consequences depend on the same insolvency estate and administration?",
+      "question_es": "¿Qué decisiones, recursos y consecuencias patrimoniales posteriores dependen de la misma masa y administración concursal?",
+      "source_status": "VERIFIED_PROCEDURAL",
+      "audience_priority": {"all": 1, "court": 1, "fiscal": 4, "supervision": 2, "authority": 3, "research": 1},
+      "cells": {
+        "concurso": {"status": "DIRECT", "note_en": "Canonical core proceeding GC-JUD-001.", "note_es": "Procedimiento núcleo canónico GC-JUD-001.", "master_ids": ["GC-JUD-001"]},
+        "calificacion": {"status": "DIRECT", "note_en": "Calificación and its appeal arise from Concurso 36/2012.", "note_es": "La calificación y su recurso nacen del Concurso 36/2012.", "master_ids": ["GC-CAL-002", "GC-APP-004"]},
+        "removal": {"status": "DIRECT", "note_en": "The removal appeals concern the insolvency administration in the same concurso.", "note_es": "Los recursos de separación conciernen a la administración concursal del mismo concurso.", "master_ids": ["GC-APP-005", "GC-APP-006"]},
+        "fees": {"status": "DIRECT", "note_en": "The remuneration claim and appeal concern sums sought for return to the insolvency estate.", "note_es": "La reclamación y el recurso sobre remuneración se refieren a cantidades reclamadas para su reintegro a la masa.", "master_ids": ["GC-CIV-027", "GC-APP-028"]},
+        "arrecife": {"status": "CONTEXT", "note_en": "Separate enforcement/title routes must be cross-checked for estate, secured-credit and title effects.", "note_es": "Las vías separadas de ejecución/título deben contrastarse por sus efectos sobre masa, crédito garantizado y título.", "master_ids": ["LZ-JUD-005"]},
+        "valencia": {"status": "CONTEXT", "note_en": "The separate banking claim concerns the historic financing package intersecting with the insolvency history.", "note_es": "La reclamación bancaria separada afecta al paquete histórico de financiación que se cruza con la historia concursal.", "master_ids": ["VAL-CIV-001"]},
+        "meetingpoint": {"status": "OPEN", "note_en": "Operator/restructuring relevance is contextual and any actual Sun Park transaction bridge remains to be source-completed.", "note_es": "La relevancia operador/restructuración es contextual y cualquier puente transaccional real con Sun Park sigue pendiente de completar por fuente.", "master_ids": ["GC-CONT-025"]},
+        "tenerife": {"status": "CONTEXT", "note_en": "Matkator remains a separate legal person; the wider analysis tests professional-work, enforcement and alleged patrimonial bridges.", "note_es": "Matkator sigue siendo persona jurídica separada; el análisis amplio contrasta trabajo profesional, ejecución y puentes patrimoniales alegados.", "master_ids": ["TF-CIV-001", "TF-CIV-002"]},
+        "fiscalia": {"status": "CONTEXT", "note_en": "Fiscalía files are separate but include overlapping concurso-related allegations and chronology.", "note_es": "Los expedientes de Fiscalía son separados pero incluyen alegaciones y cronología solapadas relacionadas con el concurso.", "master_ids": ["GC-FIS-013", "GC-FIS-017"]},
+        "supervision": {"status": "CONTEXT", "note_en": "Judicial-governance and LAJ routes concern the institutional handling of the concurso record, without becoming merits appeals.", "note_es": "Las vías de gobierno judicial y LAJ se refieren al tratamiento institucional del expediente concursal sin convertirse en recursos de fondo.", "master_ids": ["GC-GOV-019", "GC-GOV-020", "GC-LAJ-021"]},
+        "historical": {"status": "CONTEXT", "note_en": "Historical possession/exploitation litigation forms part of the hotel-control genealogy to be tested against the concurso record.", "note_es": "Los litigios históricos de posesión/explotación forman parte de la genealogía de control del hotel que debe contrastarse con el concurso.", "master_ids": ["LZ-JUD-001"]}
+      }
+    },
+    {
+      "id": "P02",
+      "sort": 2017,
+      "period": "2017-2018",
+      "title_en": "Secured credit, enforcement and title form a shared asset-history question",
+      "title_es": "Crédito garantizado, ejecución y título forman una cuestión común de historia patrimonial",
+      "question_en": "How did the same financing/security history appear in the concurso, Arrecife enforcement and the later Valencia banking claim?",
+      "question_es": "¿Cómo aparece la misma historia de financiación/garantía en el concurso, la ejecución de Arrecife y la posterior reclamación bancaria de Valencia?",
+      "source_status": "MIXED_VERIFIED_AND_CONTEXTUAL",
+      "audience_priority": {"all": 3, "court": 4, "fiscal": 6, "supervision": 6, "authority": 5, "research": 3},
+      "cells": {
+        "concurso": {"status": "CONTEXT", "note_en": "Credit, liquidation and title are recorded within the core insolvency connection fields.", "note_es": "Crédito, liquidación y título figuran en los campos de conexión del concurso núcleo.", "master_ids": ["GC-JUD-001"]},
+        "arrecife": {"status": "DIRECT", "note_en": "The Arrecife mortgage/dación/title branch directly concerns enforcement, satisfaction and title.", "note_es": "La rama hipotecaria/dación/título de Arrecife trata directamente ejecución, satisfacción y título.", "master_ids": ["LZ-JUD-005"]},
+        "valencia": {"status": "DIRECT", "note_en": "VAL-CIV-001 is the separate Aweswell–CaixaBank banking/financial-products claim; the public correction identifies ORD 1859/2023-9 and its current hearing.", "note_es": "VAL-CIV-001 es la reclamación separada Aweswell–CaixaBank sobre banca/productos financieros; la corrección pública identifica ORD 1859/2023-9 y su vista actual.", "master_ids": ["VAL-CIV-001"]},
+        "calificacion": {"status": "OPEN", "note_en": "Any appellate relevance must come from the procedurally usable calificación record, not from this public visualization.", "note_es": "Cualquier relevancia para la apelación debe derivar del expediente procesalmente utilizable de calificación, no de esta visualización pública.", "master_ids": ["GC-APP-004"]}
+      }
+    },
+    {
+      "id": "P03",
+      "sort": 2018,
+      "period": "7 June 2018",
+      "title_en": "Access and material-control event must be distinguished from later legal title",
+      "title_es": "El evento de acceso y control material debe distinguirse del título jurídico posterior",
+      "question_en": "Which files address the 2018 access/control event, and which later routes only encounter its consequences or context?",
+      "question_es": "¿Qué expedientes tratan el evento de acceso/control de 2018 y cuáles solo encuentran posteriormente sus consecuencias o contexto?",
+      "source_status": "SOURCE_SUPPORTED_WITH_PERIMETER_LIMITS",
+      "audience_priority": {"all": 2, "court": 3, "fiscal": 2, "supervision": 3, "authority": 4, "research": 2},
+      "cells": {
+        "arrecife": {"status": "DIRECT", "note_en": "DP 1132/2018 and Auto 804/2018 directly form the criminal/appellate access-control route; the outcome is adverse and the full primary file remains incomplete.", "note_es": "DP 1132/2018 y Auto 804/2018 forman directamente la vía penal/apelativa de acceso-control; el resultado es adverso y el expediente primario completo sigue incompleto.", "master_ids": ["LZ-JUD-003", "LZ-APP-004"]},
+        "concurso": {"status": "CONTEXT", "note_en": "The event is tested for estate, productive-unit and control consequences; this cell does not assert a particular judicial finding within the concurso.", "note_es": "El evento se contrasta por consecuencias sobre masa, unidad productiva y control; esta celda no afirma una conclusión judicial concreta dentro del concurso.", "master_ids": ["GC-JUD-001"]},
+        "calificacion": {"status": "OPEN", "note_en": "The project argues material relevance, but appellate use depends on the actual transmitted/admitted record.", "note_es": "El proyecto sostiene relevancia material, pero su uso apelativo depende del expediente realmente transmitido/admitido.", "master_ids": ["GC-APP-004"]},
+        "removal": {"status": "CONTEXT", "note_en": "The removal route is cross-read against disputed administration and consequences, without treating the access case as the same proceeding.", "note_es": "La vía de separación se contrasta con la administración discutida y sus consecuencias, sin tratar el expediente de acceso como el mismo procedimiento.", "master_ids": ["GC-APP-005", "GC-APP-006"]},
+        "fiscalia": {"status": "CONTEXT", "note_en": "Fiscalía chronology includes complaints concerning AC/CAM and requested diligences; actor-specific knowledge and treatment must remain source-led.", "note_es": "La cronología de Fiscalía incluye denuncias relativas a AC/CAM y diligencias solicitadas; conocimiento y tratamiento por actor deben seguir siendo guiados por fuente.", "master_ids": ["GC-FIS-013"]}
+      }
+    },
+    {
+      "id": "P04",
+      "sort": 2018.5,
+      "period": "2018-present",
+      "title_en": "The three Audiencia appellate objects share an insolvency-administration dependency",
+      "title_es": "Los tres objetos apelativos de la Audiencia comparten una dependencia de administración concursal",
+      "question_en": "What common facts concerning the insolvency administration recur across calificación, removal and remuneration without making them one appeal?",
+      "question_es": "¿Qué hechos comunes sobre la administración concursal reaparecen en calificación, separación y remuneración sin convertirlos en un único recurso?",
+      "source_status": "VERIFIED_PROCEDURAL_PLUS_CROSS_READING_RULE",
+      "audience_priority": {"all": 0, "court": 0, "fiscal": 3, "supervision": 1, "authority": 2, "research": 0},
+      "cells": {
+        "concurso": {"status": "DIRECT", "note_en": "All three appellate objects arise from the same Concurso 36/2012 administration.", "note_es": "Los tres objetos apelativos nacen de la misma administración del Concurso 36/2012.", "master_ids": ["GC-JUD-001"]},
+        "calificacion": {"status": "DIRECT", "note_en": "RPL 2523/2025 is the calificación appellate lane.", "note_es": "RPL 2523/2025 es la vía apelativa de calificación.", "master_ids": ["GC-APP-004"]},
+        "removal": {"status": "DIRECT", "note_en": "RPL 3304/2025 and accumulated/linked RPL 3319/2025 are the AC separation/removal lane.", "note_es": "RPL 3304/2025 y RPL 3319/2025 acumulado/vinculado forman la vía de separación/remoción del AC.", "master_ids": ["GC-APP-005", "GC-APP-006"]},
+        "fees": {"status": "DIRECT", "note_en": "RPL 421/2026 is the remuneration/standing appeal from Sentencia 4/2026.", "note_es": "RPL 421/2026 es el recurso sobre remuneración/legitimación frente a Sentencia 4/2026.", "master_ids": ["GC-APP-028"]},
+        "supervision": {"status": "CONTEXT", "note_en": "Supervisory routes can test institutional handling but do not adjudicate the merits of these appeals.", "note_es": "Las vías supervisoras pueden examinar el tratamiento institucional pero no resuelven el fondo de estos recursos.", "master_ids": ["GC-GOV-019", "GC-GOV-020"]}
+      }
+    },
+    {
+      "id": "P05",
+      "sort": 2019,
+      "period": "2018-2026",
+      "title_en": "Ministerio Fiscal responses should be readable as one institutional-response chronology",
+      "title_es": "Las respuestas del Ministerio Fiscal deben poder leerse como una cronología institucional única",
+      "question_en": "What did each office/file receive, refer, narrow or decide, and where is cross-file relevance expressly acknowledged or not located?",
+      "question_es": "¿Qué recibió, remitió, acotó o decidió cada oficina/expediente y dónde se reconoce expresamente la relevancia entre expedientes o no se ha localizado?",
+      "source_status": "MULTIPLE_VERIFIED_AND_OPEN_FISCALIA_FILES",
+      "audience_priority": {"all": 5, "court": 6, "fiscal": 0, "supervision": 4, "authority": 6, "research": 5},
+      "cells": {
+        "fiscalia": {"status": "DIRECT", "note_en": "DI 248/2018, DI 22/2026, DIP 2/2026 and EG 49/2026 remain separate controlled files/refs within the institutional chronology.", "note_es": "DI 248/2018, DI 22/2026, DIP 2/2026 y EG 49/2026 siguen siendo expedientes/referencias separados dentro de la cronología institucional.", "master_ids": ["GC-FIS-013", "GC-FIS-016", "GC-FIS-017", "GC-FIS-018"]},
+        "concurso": {"status": "CONTEXT", "note_en": "The Fiscalía chronology includes concurso-related conduct and allegations; each file's actual received corpus must be proved separately.", "note_es": "La cronología de Fiscalía incluye conductas y alegaciones relacionadas con el concurso; el corpus realmente recibido por cada expediente debe probarse por separado.", "master_ids": ["GC-JUD-001"]},
+        "calificacion": {"status": "CONTEXT", "note_en": "The calificación evidence map identifies a Fiscal opinion and DI 248 circularity question, while preserving separate procedural use and source gaps.", "note_es": "El mapa de prueba de calificación identifica un dictamen Fiscal y una cuestión de circularidad con DI 248, preservando el uso procesal separado y las brechas de fuente.", "master_ids": ["GC-APP-004", "GC-FIS-013"]},
+        "supervision": {"status": "OPEN", "note_en": "Whether supervisory review considered the complete prosecutorial chronology remains a finite record question.", "note_es": "Si la supervisión consideró la cronología fiscal completa sigue siendo una cuestión documental concreta.", "master_ids": ["GC-GOV-019", "GC-GOV-020"]}
+      }
+    },
+    {
+      "id": "P06",
+      "sort": 2019.5,
+      "period": "2019-present",
+      "title_en": "Matkator / Cuatrecasas enforcement is separate but may share professional-work and alleged-harm context",
+      "title_es": "La ejecución Matkator / Cuatrecasas es separada pero puede compartir contexto de trabajo profesional y daño alegado",
+      "question_en": "Which links are direct within the Tenerife chain and which are only contextual bridges back to Sun Park / the concurso?",
+      "question_es": "¿Qué vínculos son directos dentro de la cadena de Tenerife y cuáles son solo puentes contextuales hacia Sun Park / el concurso?",
+      "source_status": "VERIFIED_PROCEDURAL_WITH_OPEN_BRIDGES",
+      "audience_priority": {"all": 7, "court": 8, "fiscal": 7, "supervision": 8, "authority": 8, "research": 7},
+      "cells": {
+        "tenerife": {"status": "DIRECT", "note_en": "Juicio Cambiario 1048/2019, ETJ 163/2020 and DP 748/2026 are the Tenerife chain identified in the Master Register.", "note_es": "Juicio Cambiario 1048/2019, ETJ 163/2020 y DP 748/2026 forman la cadena de Tenerife identificada en el Registro Maestro.", "master_ids": ["TF-CIV-001", "TF-CIV-002", "TF-CRI-003"]},
+        "concurso": {"status": "CONTEXT", "note_en": "Any Sun Park/concurso bridge must preserve Matkator's separate legal personality and identify the exact professional-work, asset/right or alleged-harm connection.", "note_es": "Cualquier puente con Sun Park/concurso debe preservar la personalidad jurídica separada de Matkator e identificar el trabajo profesional, activo/derecho o conexión de daño alegado exacta.", "master_ids": ["GC-JUD-001"]},
+        "fiscalia": {"status": "OPEN", "note_en": "Any prosecutorial cross-file relevance must be shown by the material actually received or referred, not assumed from topic overlap.", "note_es": "Cualquier relevancia fiscal entre expedientes debe mostrarse por el material realmente recibido o remitido, no presumirse por coincidencia temática.", "master_ids": ["GC-FIS-018"]}
+      }
+    },
+    {
+      "id": "P07",
+      "sort": 2021,
+      "period": "historical to present",
+      "title_en": "Historical possession and exploitation litigation is part of the control genealogy, not proof of later wrongdoing",
+      "title_es": "Los litigios históricos de posesión y explotación forman parte de la genealogía de control, no prueban ilicitud posterior",
+      "question_en": "What party, capacity, possession or exploitation changes are documented, and what was or was not carried forward into later files?",
+      "question_es": "¿Qué cambios de parte, capacidad, posesión o explotación están documentados y qué se trasladó o no a expedientes posteriores?",
+      "source_status": "HISTORICAL_PRIMARY_COMPLETION_PENDING",
+      "audience_priority": {"all": 8, "court": 7, "fiscal": 8, "supervision": 7, "authority": 7, "research": 6},
+      "cells": {
+        "historical": {"status": "DIRECT", "note_en": "AP 89/2014 and the broader Community/CEXP/unit civil family are recorded historical control/possession routes; case-by-case primary completion remains open.", "note_es": "AP 89/2014 y la familia civil más amplia Comunidad/CEXP/unidades son vías históricas de control/posesión registradas; la completitud primaria caso por caso sigue abierta.", "master_ids": ["LZ-JUD-001", "LZ-JUD-FAM-006"]},
+        "arrecife": {"status": "CONTEXT", "note_en": "Later access/control and enforcement routes should preserve the historical legal-person and possession lineage rather than merge it by narrative convenience.", "note_es": "Las posteriores vías de acceso/control y ejecución deben preservar la genealogía de personas jurídicas y posesión sin fusionarla por conveniencia narrativa.", "master_ids": ["LZ-JUD-003", "LZ-JUD-005"]},
+        "concurso": {"status": "CONTEXT", "note_en": "The unitary audit asks what historical control/exploitation facts were reflected, omitted or unresolved in the concurso; this is a question, not a finding of concealment.", "note_es": "La auditoría unitaria pregunta qué hechos históricos de control/explotación quedaron reflejados, omitidos o no resueltos en el concurso; es una pregunta, no una conclusión de ocultación.", "master_ids": ["GC-JUD-001"]}
+      }
+    },
+    {
+      "id": "P08",
+      "sort": 2024,
+      "period": "2024-2025",
+      "title_en": "Meeting Point / FTI is a downstream operator/restructuring context with an unfinished Sun Park bridge",
+      "title_es": "Meeting Point / FTI es un contexto posterior de operador/restructuración con un puente Sun Park aún incompleto",
+      "question_en": "Which operator, stock, exploitation, solvency/liquidity or public-money propositions are actually source-backed, and which remain project contentions?",
+      "question_es": "¿Qué proposiciones sobre operador, stock, explotación, solvencia/liquidez o fondos públicos están realmente respaldadas por fuente y cuáles siguen siendo posiciones del proyecto?",
+      "source_status": "VERIFIED_CONTEXTUAL_PROCEEDING_WITH_OPEN_TRANSACTION_BRIDGE",
+      "audience_priority": {"all": 6, "court": 9, "fiscal": 5, "supervision": 9, "authority": 1, "research": 4},
+      "cells": {
+        "meetingpoint": {"status": "DIRECT", "note_en": "GC-CONT-025 records the three-debtor Meeting Point 357/2024 restructuring/pre-insolvency context as contextual only.", "note_es": "GC-CONT-025 registra el contexto preconcursal/restructuración de tres deudores Meeting Point 357/2024 como exclusivamente contextual.", "master_ids": ["GC-CONT-025"]},
+        "concurso": {"status": "OPEN", "note_en": "The actual Sun Park transaction/operator bridge remains to be completed from primary sources before any stronger inter-proceeding proposition is made.", "note_es": "El puente transaccional/operador real con Sun Park debe completarse con fuentes primarias antes de formular una proposición más fuerte entre procedimientos.", "master_ids": ["GC-JUD-001"]},
+        "fiscalia": {"status": "OPEN", "note_en": "Any criminal or public-money relevance requires a specific source and actor/office receipt trail; topic proximity is insufficient.", "note_es": "Cualquier relevancia penal o de fondos públicos exige una fuente específica y trazabilidad de recepción por actor/oficina; la proximidad temática no basta.", "master_ids": ["GC-FIS-018"]}
+      }
+    },
+    {
+      "id": "P09",
+      "sort": 2026,
+      "period": "2026",
+      "title_en": "Supervisory files test institutional handling, not the merits of the underlying proceedings",
+      "title_es": "Los expedientes supervisores examinan el tratamiento institucional, no el fondo de los procedimientos subyacentes",
+      "question_en": "What wider procedural/evidential dependencies were actually before the supervisory body, and what remains outside its merits competence?",
+      "question_es": "¿Qué dependencias procesales/probatorias más amplias estuvieron realmente ante el órgano supervisor y qué queda fuera de su competencia sobre el fondo?",
+      "source_status": "VERIFIED_PROCEDURAL_WITH_OPEN_RECORD_COMPLETION",
+      "audience_priority": {"all": 9, "court": 5, "fiscal": 9, "supervision": 0, "authority": 9, "research": 8},
+      "cells": {
+        "supervision": {"status": "DIRECT", "note_en": "DI 169/2026, Recurso de alzada 286/2026 and the LAJ registration corpus are distinct supervisory/registration objects.", "note_es": "DI 169/2026, Recurso de alzada 286/2026 y el corpus de registros LAJ son objetos supervisores/registrales distintos.", "master_ids": ["GC-GOV-019", "GC-GOV-020", "GC-LAJ-021"]},
+        "concurso": {"status": "CONTEXT", "note_en": "The supervisory objects concern institutional handling connected to Concurso 36/2012, but do not replace judicial remedies or decide merits.", "note_es": "Los objetos supervisores se refieren al tratamiento institucional conectado con Concurso 36/2012, pero no sustituyen recursos judiciales ni deciden el fondo.", "master_ids": ["GC-JUD-001"]},
+        "calificacion": {"status": "CONTEXT", "note_en": "Any relevance is supervisory/institutional; RPL 2523/2025 remains governed by its own procedural record.", "note_es": "Cualquier relevancia es supervisora/institucional; RPL 2523/2025 sigue regido por su propio expediente procesal.", "master_ids": ["GC-APP-004"]},
+        "removal": {"status": "CONTEXT", "note_en": "The removal appeals remain separate merits proceedings notwithstanding institutional-supervision overlap.", "note_es": "Los recursos de separación siguen siendo procedimientos de fondo separados pese al solapamiento de supervisión institucional.", "master_ids": ["GC-APP-005", "GC-APP-006"]},
+        "fees": {"status": "CONTEXT", "note_en": "RPL 421/2026 remains a separate civil appellate route.", "note_es": "RPL 421/2026 sigue siendo una vía apelativa civil separada.", "master_ids": ["GC-APP-028"]}
+      }
+    }
+  ]
+}
