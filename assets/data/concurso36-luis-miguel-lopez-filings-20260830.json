@@ -13,6 +13,7 @@
     "disposition": "FILED — SUBSEQUENT COURT DISPOSITION CONFIRMS",
     "counsel": "FILED — CONTEMPORANEOUS COUNSEL CONFIRMATION",
     "later_recital": "FILED — LATER FILED PLEADING RECITES PRIOR FILING",
+    "source_copy": "SOURCE COPY LOCATED — FORMAL FILING RECEIPT NOT YET RECONCILED",
     "draft": "DRAFT/INTENDED — FILING NOT YET PROVED",
     "outside": "OUTSIDE MERCANTILE — DERIVATIVE AP/TC REMEDY"
   },
@@ -139,12 +140,16 @@
       "date": "2021-07-05",
       "forum": "Juzgado de lo Mercantil nº1 Las Palmas",
       "proceeding": "Concurso 36/2012",
+      "section": "Sección 5 / Pieza 5",
       "title": "Escrito de Alegaciones — publicidad / CAM-RIC market material",
-      "status": "FILED — LEXNET RECEIPT LOCATED",
+      "status": "FILED — LEXNET/COURT RECEIPT LOCATED",
       "source_file": "Escrito de Alegaciones publicidad.pdf",
+      "sent_lexnet_id": "202110423274258",
+      "ack_lexnet_id": "1202110423274258",
+      "sha256": "5805c9283f2358fa849e2d726f3e1e2719f7ba2e07483388b0db40d71bfbef78",
       "issues": ["market/publicity interference", "possible deterrence of bidders/finance", "request AC report", "request no transfer/deed pending challenges", "request auction with plan safeguards", "civil/criminal action reservation"],
       "plan_relevance": "Links public-market conduct to the requested reopening/protection of the plan-governed sale process.",
-      "gap": "Record exact LexNET ID/hash into next source-expansion pass."
+      "gap": "Court/AC response and downstream treatment remain to be reconciled against the certified docket."
     },
     {
       "id": "C36-LML-0011",
@@ -164,11 +169,11 @@
       "forum": "Juzgado de lo Mercantil nº1 Las Palmas",
       "proceeding": "Concurso 36/2012",
       "title": "Escrito de Alegaciones — aportación de documento/hecho nuevo",
-      "status": "FILED/LIKELY FILED — SOURCE COPY LOCATED; RECEIPT TO RECONCILE",
+      "status": "SOURCE COPY LOCATED — FORMAL FILING RECEIPT NOT YET RECONCILED",
       "source_file": "Escrito de Alegaciones aportacion documento.pdf",
       "issues": ["new evidence", "effect on liquidation authorisation/subasta", "possible rescission/review", "request to reconvene with plan safeguards"],
-      "plan_relevance": "Further attempt to reopen/review the challenged sale mechanics.",
-      "gap": "Locate exact LexNET receipt or court recital confirming filing."
+      "plan_relevance": "Potential further attempt to reopen/review the challenged sale mechanics; filing status remains to be proved.",
+      "gap": "Locate exact LexNET receipt or court recital confirming filing before classifying this item as filed."
     },
     {
       "id": "C36-LML-0013",
