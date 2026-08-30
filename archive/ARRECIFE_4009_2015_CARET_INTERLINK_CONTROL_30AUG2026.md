@@ -2,7 +2,7 @@
 
 **Control date:** 30 August 2026
 
-**Status:** `PARTIAL — REGISTERED / CARET_PENDING / PRIMARY IDENTITY OPEN`
+**Status:** `LIVE VERIFIED — REGISTERED / CARET_PENDING / PRIMARY IDENTITY OPEN`
 
 **Master ID:** `LZ-REF-042`
 
@@ -88,6 +88,14 @@ Caret confirmation and direct interlinks require a primary package establishing,
 **Exception:** `PD-SP-R-0022 / LZ-REF-042` — exact organ and certified primary docket/source absent.
 
 Therefore the truthful result is **PARTIAL — NOT ALL IS^**. The reference must render without a caret until `ME-113` and `CP-GAP-009` are resolved from primary evidence.
+
+## Publication verification
+
+PR [#1237](https://github.com/sbu001monterecco/por-derecho/pull/1237) merged as `2741dc72a05887c4bc55106b6dd69b296fc05fd1` (tree `cbad475e838f3f0d53dd7fc02304e007bf37949b`; reviewed head `027effcd00ae58c320e6ee1ea51d35d7da181d31`). Pages run [33339777965 / #1306](https://github.com/sbu001monterecco/por-derecho/actions/runs/33339777965) completed successfully on that exact merge SHA.
+
+Cache-busted public readback returned HTTP 200 and exact merged-byte equality for all seven controlled resources: Master Register `1efac79123354776f2cb5361f564c94ce28dbf3bad74d638752ea007b95bfb4a`; proceedings identities `d13a5fcab8643b3c277772dd879f25a995525e4e4dcbbf5860fd6f9e01b2a4d9`; identity registry `4db53fe3e6a10d6f7e6f79e136dbcc1b80790edb9e03f772c3b1bb2f28ce571c`; operational identity control `11bf98c4def7e033bfaad703f71db34147e844898fa2337370578bc8991cd381`; counsel/procurador gaps `7e03cfba4f2f435b32e8964ed300dd945b9253fbc4d67b2e72c1f9d884bb90cf`; publication manifest `d25b06358547ce3a1b7ae038cd58f24e89b190c52fbf8594f2a33e36ab56c9b8`; and this control `9278d27c2628bc77534f552e2b5812d030a9a1e03fb833370c98767900ea8750`. Both language versions of the identity registry, Master Register and proceedings map also returned HTTP 200.
+
+Publication verification changes no evidence classification: the package is live, while the proceeding identity and caret remain pending.
 
 ## Continuity rule
 
