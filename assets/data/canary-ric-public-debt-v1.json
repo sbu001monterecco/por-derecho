@@ -2,7 +2,7 @@
   "schema": "por-derecho.canary-ric-public-debt.v1",
   "control_id": "PD-CANARY-RIC-PUBLIC-DEBT-20260830-01",
   "control_date": "2026-08-30",
-  "status": "REPOSITORY_CONTROLLED_PENDING_PUBLICATION",
+  "status": "LIVE_VERIFIED",
   "public_routes": {
     "es": "/es/deuda-publica-ric-canarias/",
     "en": "/en/canary-ric-public-debt/"
