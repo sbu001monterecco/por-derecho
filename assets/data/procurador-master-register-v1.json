@@ -25,11 +25,114 @@
     "source_confidence",
     "verification_status"
   ],
-  "procuradores": [],
+  "procuradores": [
+    {
+      "procurador_id": "PROC-MARIA-DEL-PILAR-GARCIA-COELLO",
+      "canonical_name": "María del Pilar García Coello",
+      "name_source_ref": "2025_0003304_RPL_1202610902298119_20260724104735(1).pdf",
+      "colegio_professional_detail": "Ilustre Colegio de Procuradores de Las Palmas; LexNET professional identifier [159]",
+      "represented_party": [
+        "LUCHY PLAYA BLANCA, S.L.U."
+      ],
+      "lawyer_pairings": [
+        {
+          "lawyer": "Javier Sixto Seijas",
+          "proceeding_id": "RPL 3304/2025",
+          "period_evidence": "2026-07-23 to 2026-07-24 located pleading/receipt pair"
+        }
+      ],
+      "proceeding_id": [
+        "RPL 3304/2025"
+      ],
+      "pieza_incidente": [
+        "recurso_de_apelacion_reposicion_AC"
+      ],
+      "first_located_appearance": "2026-07-23",
+      "last_located_appearance": "2026-07-24 11:47:35",
+      "personacion_poder_apud_acta_refs": [],
+      "filing_refs": [
+        "RPL-3304-2025-LPB-20260724-AC-REPOSICION-ALEGACIONES"
+      ],
+      "notification_refs": [],
+      "substitution_termination_refs": [],
+      "timeline_event_refs": [
+        "RPL3304-2025-20260724-LPB-LEXNET"
+      ],
+      "source_confidence": "high_primary_procedural_source",
+      "verification_status": "identity_party_proceeding_and_presentation_verified_underlying_authority_instrument_open"
+    },
+    {
+      "procurador_id": "PROC-MARIA-LUISA-DIAZ-VECINO",
+      "canonical_name": "María Luisa Díaz Vecino",
+      "aliases": [
+        "María Díaz Vecino"
+      ],
+      "name_source_ref": "2025_0003304_RPL_120261090229678120260724114535_000_RESUMEN.pdf",
+      "colegio_professional_detail": "Colegio de Procuradores de Tenerife; LexNET professional identifier [318]",
+      "represented_party": [
+        "AWESWELL LIMITED"
+      ],
+      "lawyer_pairings": [
+        {
+          "lawyer": "Javier Sixto Seijas",
+          "proceeding_id": "RPL 3304/2025",
+          "period_evidence": "2026-07-24 located pleading/receipt pair"
+        }
+      ],
+      "proceeding_id": [
+        "RPL 3304/2025"
+      ],
+      "pieza_incidente": [
+        "recurso_de_apelacion_reposicion_AC"
+      ],
+      "first_located_appearance": "2026-07-24",
+      "last_located_appearance": "2026-07-24",
+      "personacion_poder_apud_acta_refs": [],
+      "filing_refs": [
+        "RPL-3304-2025-AWESWELL-20260724-AC-REPOSICION-ALEGACIONES"
+      ],
+      "notification_refs": [],
+      "substitution_termination_refs": [],
+      "timeline_event_refs": [
+        "RPL3304-2025-20260724-AWESWELL-LEXNET"
+      ],
+      "source_confidence": "high_primary_procedural_source",
+      "verification_status": "identity_party_proceeding_and_lexnet_presentation_verified_exact_time_normalization_and_underlying_authority_instrument_open"
+    },
+    {
+      "procurador_id": "PROC-ADRIANA-HERNANDEZ-DIAZ",
+      "canonical_name": "Adriana Hernández Díaz",
+      "name_source_ref": "2020_0000163_ETJ_120261089839210420260710130302_000_RESUMEN.pdf",
+      "colegio_professional_detail": "primary LexNET receipt located; exact normalized colegio/professional-number field retained for follow-on source normalization",
+      "represented_party": [
+        "MATKATOR, S.L."
+      ],
+      "lawyer_pairings": [],
+      "proceeding_id": [
+        "ETJ 163/2020"
+      ],
+      "pieza_incidente": [
+        "ejecucion"
+      ],
+      "first_located_appearance": "2026-07-10",
+      "last_located_appearance": "2026-07-10",
+      "personacion_poder_apud_acta_refs": [],
+      "filing_refs": [
+        "2020_0000163_ETJ_120261089839210420260710130302_000_RESUMEN.pdf"
+      ],
+      "notification_refs": [],
+      "substitution_termination_refs": [],
+      "timeline_event_refs": [
+        "ETJ163-2020-20260710-LEXNET"
+      ],
+      "source_confidence": "high_identity_party_proceeding_primary_lexnet_source",
+      "verification_status": "procuradora_identity_party_and_proceeding_verified_lawyer_pairing_and_authority_instrument_open"
+    }
+  ],
   "denominator_status": {
     "complete": false,
-    "known_count": 0,
-    "meaning_of_zero": "No procurador name is promoted into this register until recovered and verified from the procedural corpus. Zero here is not evidence that no procuradores acted.",
-    "next_action": "Scan pleadings, LexNET receipts, poderes, apud acta, notifications, autos, providencias, diligencias, decretos and appeals across every connected proceeding."
+    "known_count": 3,
+    "meaning_of_known_count": "Three procuradoras have now been promoted from located primary procedural material. This is a verified minimum, not the complete denominator.",
+    "next_action": "Continue scanning pleadings, LexNET receipts, poderes, apud acta, notifications, autos, providencias, diligencias, decretos and appeals across every connected proceeding, beginning with Concurso 36/2012 and its piezas/incidentes."
   }
 }
