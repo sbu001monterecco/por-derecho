@@ -100,12 +100,12 @@ ES_ROUTE = "/es/dp-3205-2014-arrecife/"
 EN_ROUTE = "/en/dp-3205-2014-arrecife/"
 PUBLIC_BASE = "https://sbu001monterecco.github.io/por-derecho"
 EXPECTED_COUNTS = {
-    "total": 230,
+    "total": 231,
     "PERSON": 95,
     "ORGANISATION": 79,
     "STRUCTURE": 11,
     "INSTITUTION": 23,
-    "PROCEEDING": 22,
+    "PROCEEDING": 23,
 }
 
 failures: list[str] = []
@@ -1217,7 +1217,7 @@ for marker in (
 
 # The federated registry denominator must agree with the static bilingual presentation.
 registry = read_json(REGISTRY)
-require(registry.get("counts") == EXPECTED_COUNTS, "canonical registry counts are not 230/95/79/11/23/22")
+require(registry.get("counts") == EXPECTED_COUNTS, "canonical registry counts are not 231/95/79/11/23/23")
 parts = registry.get("parts", []) if isinstance(registry, dict) else []
 part_index = {item.get("path"): item for item in parts if isinstance(item, dict)}
 for path_name, expected_type in (
@@ -1244,12 +1244,12 @@ for part in parts:
     require(len(records) == part.get("count"), f"registry part {part['path']} declared count is stale")
     actual_total += len(records)
     actual_counts[str(part.get("type"))] += len(records)
-require(actual_total == EXPECTED_COUNTS["total"], "federated registry actual total is not 230")
+require(actual_total == EXPECTED_COUNTS["total"], "federated registry actual total is not 231")
 for record_type in ("PERSON", "ORGANISATION", "STRUCTURE", "INSTITUTION", "PROCEEDING"):
     require(actual_counts[record_type] == EXPECTED_COUNTS[record_type], f"federated registry actual {record_type} count is stale")
 
 for page in (REGISTRY_EN, REGISTRY_ES):
-    includes(read_text(page), 'data-static-registry-counts="230-95-79-11-23-22"', relative(page))
+    includes(read_text(page), 'data-static-registry-counts="231-95-79-11-23-23"', relative(page))
 
 registry_en = read_text(REGISTRY_EN)
 registry_es = read_text(REGISTRY_ES)

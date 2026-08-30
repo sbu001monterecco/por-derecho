@@ -1810,8 +1810,8 @@
       "period_es": "7 de junio de 2018",
       "attribution": "MIXED_DOCUMENTED_AND_PARTY_ALLEGATION",
       "contrary_record": {
-        "en": "The located criminal route ended in provisional archive and Auto 804/2018; the AC/CEXP record contains a contrary position, and the main witness did not place José Daniel Acosta Matos on site.",
-        "es": "La vía penal localizada terminó en sobreseimiento provisional y Auto 804/2018; el registro AC/CEXP contiene una posición contraria y el testigo principal no situó a José Daniel Acosta Matos en el lugar."
+        "en": "The located DI 1103/2018-00 → DP 1132/2018 → Rollo 1010/2018 / Auto 804/2018 route ended in provisional archive confirmed on appeal; the AC/CEXP record contains a contrary position, and the main witness did not place José Daniel Acosta Matos on site.",
+        "es": "La vía localizada DI 1103/2018-00 → DP 1132/2018 → Rollo 1010/2018 / Auto 804/2018 terminó en sobreseimiento provisional confirmado en apelación; el registro AC/CEXP contiene una posición contraria y el testigo principal no situó a José Daniel Acosta Matos en el lugar."
       },
       "decision_dependency": {
         "en": "Whether the event was lawful access, material control, or neither, and what estate/productive-unit consequences followed.",
@@ -1819,8 +1819,8 @@
       },
       "actionability": {
         "source_needed": {
-          "en": "Complete DP 1132/2018 and appeal file, witness record, authority instruments and contemporaneous access/operation evidence.",
-          "es": "Expediente completo DP 1132/2018 y recurso, testimonio, instrumentos de autoridad y pruebas contemporáneas de acceso/explotación."
+          "en": "Court-certified complete DP 1132/2018 and Rollo 1010/2018 files, witness record, authority instruments and contemporaneous access/operation evidence.",
+          "es": "Expedientes completos certificados de DP 1132/2018 y Rollo 1010/2018, testimonio, instrumentos de autoridad y pruebas contemporáneas de acceso/explotación."
         },
         "competent_organ": {
           "en": "The competent criminal/civil/insolvency organ for each distinct issue.",

@@ -10,6 +10,14 @@
     es: new URL('es/registro-maestro-procedimientos/', repoBase).href
   };
   const detailRoutes = {
+    'LZ-JUD-003': {
+      en: new URL('en/arrecife-1103-2018-procedural-lineage/', repoBase).href,
+      es: new URL('es/arrecife-1103-2018-cadena-procesal/', repoBase).href
+    },
+    'LZ-APP-004': {
+      en: new URL('en/arrecife-1103-2018-procedural-lineage/', repoBase).href,
+      es: new URL('es/arrecife-1103-2018-cadena-procesal/', repoBase).href
+    },
     'LZ-JUD-043': {
       en: new URL('en/dp-3205-2014-arrecife/', repoBase).href,
       es: new URL('es/dp-3205-2014-arrecife/', repoBase).href
@@ -21,8 +29,8 @@
     if (document.querySelector('link[data-master-proceedings-css]')) return;
     const link = document.createElement('link');
     link.rel = 'stylesheet';
-    link.href = new URL('master-proceedings-publication-20260830.css?v=20260830a', assetBase).href;
-    link.setAttribute('data-master-proceedings-css', '20260830a');
+    link.href = new URL('master-proceedings-publication-20260830.css?v=20260830b', assetBase).href;
+    link.setAttribute('data-master-proceedings-css', '20260830b');
     document.head.appendChild(link);
   };
 
@@ -109,6 +117,7 @@
   }[ch]));
 
   const norm = (value) => String(value || '').trim();
+  const linkMasterReferences = (value) => esc(value).replace(/\b([A-Z]{2,4}(?:-[A-Z0-9]+){2,})\b/g, '<a href="#case-$1">$1</a>');
 
   const initRegister = async () => {
     const root = document.querySelector('[data-master-proceedings-page]');
@@ -207,11 +216,15 @@
           const idHtml = detailUrl
             ? `<a class="pd-ref" href="${esc(detailUrl)}" aria-label="${esc(`${r.Master_ID} · ${refText || r.Reference || ''}`)}">${esc(r.Master_ID)} ↗</a>`
             : `<span class="pd-ref">${esc(r.Master_ID)}</span>`;
-          return `<tr>
+          return `<tr id="case-${esc(r.Master_ID)}" data-master-id="${esc(r.Master_ID)}">
             <td>${idHtml}<br><span class="pd-chip" data-state="${esc(stateValue)}">${esc(stateValue)}</span></td>
-            <td>${esc(typeText)}</td><td>${esc(organText)}</td><td>${esc(refText)}</td><td>${esc(r.Date_or_Period)}</td><td>${esc(connectionText)}</td><td>${esc(statusText)}</td><td>${esc(relation)}</td><td><span class="pd-muted">${esc(r.Source_Status)}</span>${r.Open_Reference_Gap ? `<br><span class="pd-gap">${esc(r.Open_Reference_Gap)}</span>` : ''}</td>
+            <td>${esc(typeText)}</td><td>${esc(organText)}</td><td>${esc(refText)}</td><td>${esc(r.Date_or_Period)}</td><td>${esc(connectionText)}</td><td>${esc(statusText)}</td><td>${linkMasterReferences(relation)}</td><td><span class="pd-muted">${esc(r.Source_Status)}</span>${r.Open_Reference_Gap ? `<br><span class="pd-gap">${esc(r.Open_Reference_Gap)}</span>` : ''}</td>
           </tr>`;
         }).join('');
+        if (location.hash.startsWith('#case-')) {
+          const target = document.getElementById(decodeURIComponent(location.hash.slice(1)));
+          if (target) target.scrollIntoView({ block: 'center' });
+        }
       };
 
       [search, stream, state, source].forEach((control) => control.addEventListener('input', render));

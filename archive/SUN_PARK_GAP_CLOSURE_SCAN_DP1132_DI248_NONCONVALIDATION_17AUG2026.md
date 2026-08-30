@@ -32,11 +32,11 @@ Where this scan conflicts with an older shorthand, the stronger current source a
 | `ME-OC-04` 2008 exploitation transfer/meeting chain | later judicial/party sources refer to it; no new authenticated primary transfer package | **PARTIAL / OPEN** |
 | `ME-OC-05` Monterecco Sun Park → Pink Canary corporate change | no native Registro/BORME/certificate located in finite Drive/Files search | **OPEN** |
 | `ME-OC-07` Pink/CEXP/LPB transition | native AC testimony 31-Jul-2018 located; conflicts with Sep-2018 complainant account | **PARTIALLY CLOSED / CONFLICTING SOURCES** |
-| `ME-OC-08` original DP 1132 complaint | not isolated | **OPEN** |
+| `ME-OC-08` original DP 1132 complaint | 30-Aug review located a complaint copy and verified the 2-May judicial origin chain: DI 1103/2018-00 → DP 1132/2018, NIG 3500443220180003508; certified native package/annexes remain open | **PARTIALLY CLOSED** |
 | `ME-OC-09` 18/19-Jul-2018 DP 1132 Autos | exact downstream locators recovered; standalone signed binaries not isolated | **PARTIAL** |
 | `ME-OC-10` AC statement 31-Jul-2018 | native Gmail attachment located and fingerprinted | **CLOSED** |
 | `ME-OC-11` Fiscalía report following 1-Aug reforms | routing event verified; signed report not located | **OPEN** |
-| `ME-OC-12` 20-Aug dismissal + appeal/finality | later controlled record identifies AP Auto 804/2018, Rollo 1010/2018, 13-Nov-2018; isolated signed acts not recovered | **PARTIAL** |
+| `ME-OC-12` 20-Aug dismissal + appeal/finality | 30-Aug review verified a primary-copy Auto 804/2018: Rollo 1010/2018, Sección Segunda, 13-Nov-2018, panel, both appeals dismissed, 20-Aug provisional dismissal confirmed and no further appeal; certified first-instance/complete-roll package remains open | **PARTIALLY CLOSED / APPELLATE IDENTITY AND OUTCOME VERIFIED** |
 | `ME-OC-13` 26-Feb audio + 27-Feb security email | not recovered in this pass | **OPEN** |
 | `ME-OC-14` native digitally signed DI 248 archive decree/docket anomaly | scanned official decree controlled; native signed file not located | **PARTIAL** |
 | `ME-OC-15` Article 773 reiteration after DI 248 archive | no direct later reiteration located in finite scan | **OPEN** |
@@ -306,7 +306,7 @@ The 1-Aug providencia and LexNET package now give exact retrieval pivots to the 
 
 Later controlled records identify a provisional dismissal/archive followed by AP Las Palmas Sección Segunda **Auto 804/2018, Rollo 1010/2018, 13-Nov-2018**, dismissing the appeals and confirming the archive position.
 
-Until isolated primary copies of the 20-Aug lower-court act and AP Auto 804 are recovered, keep this at **PARTIAL** rather than primary-closed.
+A reviewed primary copy of AP Auto 804 is now controlled. It verifies the roll, section, panel, date, originating DP/NIG, operative result and finality wording. The gap remains **PARTIAL**, rather than court-certified complete, because the signed/certified 20-Aug lower-court act, service chain and complete transmitted appeal record have not been obtained.
 
 Do not describe a provisional archive or appellate confirmation as a criminal acquittal after trial.
 
