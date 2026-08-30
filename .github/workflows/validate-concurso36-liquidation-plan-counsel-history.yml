@@ -1,0 +1,83 @@
+name: Validate Concurso36 liquidation-plan and counsel history
+
+on:
+  push:
+    branches: [ main, 'forensics/**' ]
+  pull_request:
+    paths:
+      - 'CONCURSO36_LIQUIDATION_PLAN_JUDGE_LAJ_COUNSEL_GOVERNANCE_30AUG2026.md'
+      - 'assets/data/concurso36-liquidation-plan-judge-laj-compliance-20260830.json'
+      - 'assets/data/concurso36-luis-miguel-lopez-filings-20260830.json'
+      - 'assets/concurso36-liquidation-plan-counsel-crosslinks-20260830.js'
+      - 'assets/site.js'
+      - 'en/insolvency-36-2012-liquidation-plan-judge-laj-audit/index.html'
+      - 'es/concurso-36-2012-auditoria-plan-liquidacion-juez-laj/index.html'
+      - 'en/insolvency-36-2012-luis-miguel-lopez-filings/index.html'
+      - 'es/concurso-36-2012-escritos-luis-miguel-lopez/index.html'
+      - 'sitemap-concurso36-controlling-conclusions.xml'
+      - '.github/workflows/validate-concurso36-liquidation-plan-counsel-history.yml'
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Parse controlled JSON
+        run: |
+          python -m json.tool assets/data/concurso36-liquidation-plan-judge-laj-compliance-20260830.json >/dev/null
+          python -m json.tool assets/data/concurso36-luis-miguel-lopez-filings-20260830.json >/dev/null
+      - name: Validate filing denominator and source anchors
+        run: |
+          python - <<'PY'
+          import json
+          p='assets/data/concurso36-luis-miguel-lopez-filings-20260830.json'
+          d=json.load(open(p,encoding='utf-8'))
+          assert len(d['items']) >= 19, len(d['items'])
+          text=open(p,encoding='utf-8').read()
+          for marker in [
+              '1202010372434856','1202010372438581','202210466939566',
+              '1202210466939566','202210473582179','1202310547846140',
+              '202310547846140','094fbdbd52840f52f76afcad5ea55fee8c9a844c16205381cf9ea3984d29a0d4',
+              'ec5d4c0f17b61891418d2070a39b93acd00ea129e936fa753f449cb424080312'
+          ]:
+              assert marker in text, marker
+          assert 'not a certified complete docket denominator' in d['completeness_boundary'].lower()
+          PY
+      - name: Validate allegation and finding boundaries
+        run: |
+          grep -Fq 'plan-compliance controversy' CONCURSO36_LIQUIDATION_PLAN_JUDGE_LAJ_COUNSEL_GOVERNANCE_30AUG2026.md
+          grep -Fq 'deliberate judicial or LAJ cover-up or criminal intent' CONCURSO36_LIQUIDATION_PLAN_JUDGE_LAJ_COUNSEL_GOVERNANCE_30AUG2026.md
+          grep -Fq 'Prior-counsel shortcomings remain a legitimate audit object' CONCURSO36_LIQUIDATION_PLAN_JUDGE_LAJ_COUNSEL_GOVERNANCE_30AUG2026.md
+          grep -Fq 'No public page should imply that current counsel automatically adopts every Por Derecho allegation' en/insolvency-36-2012-luis-miguel-lopez-filings/index.html
+          grep -Fq 'No demuestra por sí solo un “encubrimiento” deliberado' es/concurso-36-2012-auditoria-plan-liquidacion-juez-laj/index.html
+          grep -Fq 'NOT LOCATED remains different from DID NOT EXIST' en/insolvency-36-2012-liquidation-plan-judge-laj-audit/index.html
+          grep -Fq 'NO LOCALIZADO no equivale a NO EXISTIÓ' es/concurso-36-2012-auditoria-plan-liquidacion-juez-laj/index.html
+      - name: Validate judge and LAJ separation matrix
+        run: |
+          python - <<'PY'
+          import json
+          d=json.load(open('assets/data/concurso36-liquidation-plan-judge-laj-compliance-20260830.json',encoding='utf-8'))
+          assert len(d['events']) >= 13
+          for e in d['events']:
+              for k in ['plan_term','judge_act','laj_act','minimum_proposition','allegation','intent_evidence','innocent_explanation','gap']:
+                  assert k in e and e[k] is not None, (e['id'],k)
+          assert 'not established' in d['governance']['criminal_allegation'].lower()
+          PY
+      - name: Validate public routes and crosslinks
+        run: |
+          test -f en/insolvency-36-2012-liquidation-plan-judge-laj-audit/index.html
+          test -f es/concurso-36-2012-auditoria-plan-liquidacion-juez-laj/index.html
+          test -f en/insolvency-36-2012-luis-miguel-lopez-filings/index.html
+          test -f es/concurso-36-2012-escritos-luis-miguel-lopez/index.html
+          node --check assets/concurso36-liquidation-plan-counsel-crosslinks-20260830.js
+          node --check assets/site.js
+          grep -Fq 'data-concurso36-plan-counsel-crosslinks-loader' assets/site.js
+          grep -Fq 'insolvency-36-2012-liquidation-plan-judge-laj-audit' sitemap-concurso36-controlling-conclusions.xml
+          grep -Fq 'concurso-36-2012-auditoria-plan-liquidacion-juez-laj' sitemap-concurso36-controlling-conclusions.xml
+          grep -Fq 'insolvency-36-2012-luis-miguel-lopez-filings' sitemap-concurso36-controlling-conclusions.xml
+          grep -Fq 'concurso-36-2012-escritos-luis-miguel-lopez' sitemap-concurso36-controlling-conclusions.xml
+      - name: Preserve inherited loader contracts
+        run: |
+          for marker in SOURCE-OF-FUNDS-NOTICE-20260820 AC-COMMUNITY-DE-FACTO-ADMINISTRATION-LOADERS-20260824 CALIFICACION-CRIMINAL-MISUSE-THESIS-20260824 ricpe-saip-batch-status-20260824.js playa-blanca-concept-home-20260820.js data-playa-blanca-concept-loader; do
+            grep -Fq "$marker" assets/site.js || { echo "Missing inherited marker: $marker"; exit 1; }
+          done
