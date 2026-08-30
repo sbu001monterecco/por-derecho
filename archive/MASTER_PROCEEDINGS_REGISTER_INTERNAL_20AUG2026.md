@@ -87,9 +87,9 @@ The existing Lanzarote administrative inventory remains incorporated by referenc
 | ID | Organ / reference | Track | Current controlled status | Notes |
 |---|---|---|---|---|
 | ADM-CAN-001 | Intervención General — outputs **184368/2026**, **497011/2026** and later 2026 response chain | INTERNAL CONTROL | Multiple formal responses and follow-ups | Do not treat each output number as a separate merits proceeding unless institution assigns separate expediente |
-| ADM-CAN-002 | Viceconsejería de Hacienda / transparency — **Resolución 154/2026** chain | ADMIN / ACCESS | Partial-access / follow-up route | Maintain underlying access file and subsequent challenge references |
+| ADM-CAN-002 | Dirección General del Tesoro y Política Financiera — **Transparencia 7/2026 · Resolución 154/2026 · Colabora 7-2026-0316134247** | ADMIN / ACCESS | Partial access recognised; 28-Aug implementation act and first 8-file / 734-page tranche reviewed; later staged production open | Canonical CSV record `NAT-TES-001`; direct routing lineage only to `X-WB-005`; Resolution 28/2026 and GC/836/P06 remain source-controlled contextual lanes |
 | ADM-CAN-003 | Viceconsejería de Hacienda — **Resolución 28/2026** challenge | ADMIN / ACCESS | Appeal/reclamation filed Aug 2026 | Capture assigned Comisionado reference when received |
-| ADM-NAT-004 | Dirección General del Tesoro — **Reg. 1128746** + later REGAGE submissions | ADMIN / SUPERVISION | Response/subsanation route | Treat registrations as procedural acts, not separate proceedings |
+| ADM-NAT-004 | Legacy registration-only alias — **Reg. 1128746** + later REGAGE submissions | ADMIN / REGISTERED_ONLY | Supporting acts linked to `ADM-CAN-002`; not a separate assigned file | Preserve legacy ID for continuity; the `NAT` label is not a national classification and registrations remain procedural acts |
 
 ## E. Tax / regulatory / antifraud
 

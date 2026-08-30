@@ -29,12 +29,15 @@ ROOT = Path(__file__).resolve().parents[1]
 MASTER = ROOT / "archive/PROCEEDINGS_MASTER_REGISTER.csv"
 PRISM = ROOT / "assets/data/proceedings-case-prism-v1.json"
 TARGET = ROOT / "assets/data/proceedings-interlinkability-v1.json"
+CONTEXT_SOURCE_FILES = (
+    ROOT / "assets/data/treasury-transparency-7-2026-v1.json",
+)
 
 EXPECTED_PUBLIC_RECORDS = 106
 EXPECTED_CANONICAL_EXACT_PROCEEDINGS = 86
 EXPECTED_PUBLIC_EXACT_PROCEEDINGS = 85
 EXPECTED_PRIVATE_EXACT_PROCEEDINGS = 1
-EXPECTED_CASE_PRISM_EXACT_COVERED = 25
+EXPECTED_CASE_PRISM_EXACT_COVERED = 26
 
 DIRECT_TYPE_PRIORITY = {
     "PARENT_CHILD": 0,
@@ -125,7 +128,7 @@ GAP_ES = {
     "NAT-AID-001": "Órgano competente exacto, solicitud, beneficiario, costes elegibles e historial de concesión, aprobación, pago y reintegro.",
     "NAT-CNMV-001": "Material completo presentado y examinado, y resolución actual, sujeto al secreto supervisor.",
     "NAT-CNMV-002": "Material completo presentado y examinado, y resolución actual, sujeto al secreto supervisor.",
-    "NAT-TES-001": "Expediente asignado, responsable, remisiones, examen y acto final.",
+    "NAT-TES-001": "Producción restante de la Resolución 154/2026 bajo ME-110; siguen abiertas bajo ME-108/109 la identidad de suscriptores y las reglas de asignación.",
     "TF-CIV-001": "Demanda completa, título, oposición, resoluciones, firmeza y nexo con la ejecución.",
     "TF-CIV-002": "Expediente completo, documentos de remate o adjudicación y estado actual de la ejecución y del título.",
     "TF-CIV-006": "Índice certificado, demanda, contestación, anexos, vistas, costas y recurso o firmeza.",
@@ -481,6 +484,68 @@ def prism_context_clusters(
     return clusters
 
 
+def source_controlled_context_clusters(
+    exact_rows: list[dict[str, str]],
+) -> list[dict[str, Any]]:
+    """Materialise explicit contextual corridors from specialist source controls."""
+    by_id = {row["Master_ID"]: row for row in exact_rows}
+    clusters: list[dict[str, Any]] = []
+    seen_ids: set[str] = set()
+    for path in CONTEXT_SOURCE_FILES:
+        payload = json.loads(path.read_text(encoding="utf-8"))
+        relative_path = path.relative_to(ROOT).as_posix()
+        for corridor in payload.get("proceedings_context_corridors", []):
+            record_id = corridor.get("id", "").strip()
+            cluster_id = f"CTX-SOURCE-{record_id}"
+            member_ids = corridor.get("member_master_ids", [])
+            if not record_id or cluster_id in seen_ids:
+                raise ValueError(f"duplicate or missing source-controlled corridor ID in {relative_path}")
+            if corridor.get("context_type") != "SOURCE_CONTROLLED_CORRIDOR":
+                raise ValueError(f"{record_id} has an unsupported specialist context type")
+            if len(member_ids) < 2 or len(member_ids) != len(set(member_ids)):
+                raise ValueError(f"{record_id} requires at least two unique exact members")
+            if any(master_id not in by_id for master_id in member_ids):
+                raise ValueError(f"{record_id} names a non-exact or unavailable member")
+            required_text = (
+                "label_en", "label_es", "why_en", "why_es",
+                "limitations_en", "limitations_es", "evidence_status",
+            )
+            if any(not corridor.get(field) for field in required_text):
+                raise ValueError(f"{record_id} lacks bilingual source-controlled corridor fields")
+            if corridor.get("public_safe") is not True:
+                raise ValueError(f"{record_id} is not explicitly public-safe")
+            seen_ids.add(cluster_id)
+            clusters.append(
+                {
+                    "id": cluster_id,
+                    "context_type": "SOURCE_CONTROLLED_CORRIDOR",
+                    "label_en": corridor["label_en"],
+                    "label_es": corridor["label_es"],
+                    "member_master_ids": member_ids,
+                    "why_en": corridor["why_en"],
+                    "why_es": corridor["why_es"],
+                    "source": {
+                        "kind": "SPECIALIST_SOURCE_CONTEXT_CORRIDOR",
+                        "path": relative_path,
+                        "field": "proceedings_context_corridors[]",
+                        "record_id": record_id,
+                        "evidence_status": corridor["evidence_status"],
+                        "member_provenance": [
+                            {
+                                "master_id": master_id,
+                                "evidence_status": by_id[master_id].get("Source_Status", ""),
+                            }
+                            for master_id in member_ids
+                        ],
+                    },
+                    "limitations_en": corridor["limitations_en"],
+                    "limitations_es": corridor["limitations_es"],
+                    "public_safe": True,
+                }
+            )
+    return clusters
+
+
 def node_dispositions(
     exact_rows: list[dict[str, str]],
     relationships: list[dict[str, Any]],
@@ -503,7 +568,8 @@ def node_dispositions(
 
     context_priority = {
         "RECORDED_CONNECTION": 0,
-        "CASE_PRISM_PROPOSITION": 1,
+        "SOURCE_CONTROLLED_CORRIDOR": 1,
+        "CASE_PRISM_PROPOSITION": 2,
     }
     dispositions: list[dict[str, Any]] = []
     for row in exact_rows:
@@ -698,6 +764,7 @@ def build() -> dict[str, Any]:
         master_context_clusters(
             exact_rows, "Connection", "RECORDED_CONNECTION", "CTX-CONNECTION"
         )
+        + source_controlled_context_clusters(exact_rows)
         + prism_context_clusters(exact_ids, prism)
     )
     context_clusters = sorted(
@@ -705,7 +772,8 @@ def build() -> dict[str, Any]:
         key=lambda item: (
             {
                 "RECORDED_CONNECTION": 0,
-                "CASE_PRISM_PROPOSITION": 1,
+                "SOURCE_CONTROLLED_CORRIDOR": 1,
+                "CASE_PRISM_PROPOSITION": 2,
             }[item["context_type"]],
             item["id"],
         ),
@@ -742,6 +810,7 @@ def build() -> dict[str, Any]:
             "RECORDED_CONNECTION",
             "CTX-CONNECTION",
         )
+        + source_controlled_context_clusters(canonical_exact_rows)
         + prism_context_clusters(
             [row["Master_ID"] for row in canonical_exact_rows], prism
         )
@@ -843,6 +912,10 @@ def build() -> dict[str, Any]:
                 "en": "Same Case Prism proposition",
                 "es": "Misma proposición del Prisma del caso",
             },
+            "SOURCE_CONTROLLED_CORRIDOR": {
+                "en": "Source-controlled contextual corridor",
+                "es": "Corredor contextual controlado por fuente",
+            },
         },
         "relationships": relationships,
         "context_clusters": context_clusters,
@@ -878,10 +951,14 @@ def build() -> dict[str, Any]:
                 cluster["context_type"] == "CASE_PRISM_PROPOSITION"
                 for cluster in context_clusters
             ),
+            "source_controlled_corridor_count": sum(
+                cluster["context_type"] == "SOURCE_CONTROLLED_CORRIDOR"
+                for cluster in context_clusters
+            ),
             "case_prism_exact_proceeding_covered_count": len(case_prism_exact_ids),
             "case_prism_exact_proceeding_uncovered_count": len(exact_rows)
             - len(case_prism_exact_ids),
-            "decision_dependency_exact_coverage": "GAP_25_OF_85",
+            "decision_dependency_exact_coverage": "GAP_26_OF_85",
             "bilingual_specific_next_source_count": bilingual_specific_next_source_count,
             "bilingual_specific_next_source_coverage": (
                 f"VERIFIED_{bilingual_specific_next_source_count}_OF_{len(exact_rows)}"

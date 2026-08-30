@@ -34,7 +34,7 @@ LANES = [
     {"id": "fiscalia", "en": "Ministerio Fiscal · selected controlled files", "es": "Ministerio Fiscal · expedientes controlados seleccionados", "master_ids": ["GC-FIS-013", "GC-FIS-016", "GC-FIS-017", "GC-FIS-018"]},
     {"id": "supervision", "en": "CGPJ supervision / LAJ registrations", "es": "Supervisión CGPJ / registros LAJ", "master_ids": ["GC-GOV-019", "GC-GOV-020", "GC-LAJ-021"]},
     {"id": "historical", "en": "Historical possession / exploitation", "es": "Posesión / explotación histórica", "master_ids": ["LZ-JUD-001", "LZ-JUD-FAM-006", "LZ-REF-042"]},
-    {"id": "publicmoney", "en": "Administrative / public-money routes", "es": "Vías administrativas / fondos públicos", "master_ids": ["NAT-AID-001", "X-REG-001", "X-TAX-002"]},
+    {"id": "publicmoney", "en": "Administrative / public-money routes", "es": "Vías administrativas / fondos públicos", "master_ids": ["NAT-AID-001", "NAT-TES-001", "X-REG-001", "X-TAX-002"]},
 ]
 
 
@@ -137,6 +137,13 @@ SOURCES = {
         "href_es": "es/incentivos-regionales-gc836-p06/",
         "evidence_status": "PUBLIC_PRIMARY_DERIVED_CONTROL",
     },
+    "SRC-TREASURY": {
+        "label_en": "Treasury transparency 7/2026 delivery control",
+        "label_es": "Control de entrega de transparencia Tesoro 7/2026",
+        "href_en": "en/treasury-transparency-7-2026-28-august/",
+        "href_es": "es/tesoro-transparencia-7-2026-28agosto/",
+        "evidence_status": "VERIFIED_PRIMARY_WITH_STAGED_PRODUCTION_OPEN",
+    },
     "SRC-FUNDS": {
         "label_en": "RIC / EU / incentives institutionalisation chain",
         "label_es": "Cadena de institucionalización RIC / UE / incentivos",
@@ -209,6 +216,7 @@ EVIDENCE_STATUS_ES = {
     "VERIFIED_PROCEDURAL_PLUS_CROSS_READING_RULE": "Procesal verificado más regla de lectura cruzada",
     "VERIFIED_PROCEDURAL_WITH_OPEN_BRIDGES": "Procesal verificado con puentes abiertos",
     "VERIFIED_PROCEDURAL_WITH_OPEN_RECORD_COMPLETION": "Procesal verificado con expediente pendiente de completar",
+    "VERIFIED_PRIMARY_WITH_STAGED_PRODUCTION_OPEN": "Fuente primaria verificada; producción escalonada restante abierta",
     "VERIFIED_WITH_LIMITATION_FINCA_RECONCILIATION_OPEN": "Verificado con limitación; conciliación por finca abierta",
     "VERIFIED_WITH_LIMITATION_NATIVE_BINDING_OPEN": "Verificado con limitación; vinculación nativa abierta",
 }
@@ -407,7 +415,7 @@ RICH = {
         "contrary_record": bi("The published award and ERDF identification do not prove payment, overlap, misuse, fraud or criminal causation; each programme may have independently valid controls.", "La concesión publicada y la identificación FEDER no prueban pago, solapamiento, uso indebido, fraude ni causalidad penal; cada programa puede tener controles válidos independientes."),
         "decision_dependency": bi("Eligibility, payment/certification, title/availability reliance, double-funding risk and any recovery consequence.", "Elegibilidad, pago/certificación, confianza en título/disponibilidad, riesgo de doble financiación y eventual reintegro."),
         "actionability": action("Complete applications, resolutions, eligible-cost schedules, payment/certification/control files, title declarations and source-and-use ledger.", "Solicitudes, resoluciones, anexos de coste elegible, expedientes de pago/certificación/control, declaraciones de título y mayor de origen/uso.", "The granting/controlling authority, AEAT/CNMV where competent, audit bodies and any judicial organ for a distinct legal issue.", "La autoridad concedente/controladora, AEAT/CNMV según competencia, órganos de auditoría y cualquier órgano judicial para una cuestión distinta."),
-        "if_confirmed": "", "source_ids": ["SRC-INCENTIVES", "SRC-FUNDS", "SRC-RICPE"],
+        "if_confirmed": "", "source_ids": ["SRC-INCENTIVES", "SRC-TREASURY", "SRC-FUNDS", "SRC-RICPE"],
     },
     "P19": {
         "sort": 2014.0, "period_en": "2014", "period_es": "2014",
@@ -518,7 +526,12 @@ CELL_OVERRIDES = {
         "meetingpoint": {"status": "OPEN", "master_ids": ["GC-CONT-025"]},
         "fiscalia": {"status": "OPEN", "master_ids": ["GC-FIS-018"]},
         "supervision": {"status": "CONTEXT", "master_ids": ["GC-GOV-019"]},
-        "publicmoney": {"status": "DIRECT", "master_ids": ["NAT-AID-001"]},
+        "publicmoney": {
+            "status": "DIRECT",
+            "master_ids": ["NAT-AID-001", "NAT-TES-001"],
+            "note_en": "NAT-TES-001 controls the first Treasury 7/2026 tranche, including 2024–2025 public RIC issue material; NAT-AID-001 remains the separate GC/836/P06 programme file. Their shared programme-dependency question is contextual across files and does not create procedural lineage.",
+            "note_es": "NAT-TES-001 controla la primera entrega de Tesoro 7/2026, incluido material de emisiones públicas RIC 2024–2025; NAT-AID-001 sigue siendo el expediente separado del programa GC/836/P06. La cuestión compartida de dependencia del programa es contextual entre expedientes y no crea filiación procesal.",
+        },
     },
     "P19": {
         "arrecife": {

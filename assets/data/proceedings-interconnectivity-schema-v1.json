@@ -6,6 +6,9 @@
   "public_node_projection": "assets/data/proceedings-master-public-v1.json",
   "exact_interlinkability_source": "assets/data/proceedings-interlinkability-v1.json",
   "case_prism_source": "assets/data/proceedings-case-prism-v1.json",
+  "specialist_context_sources": [
+    "assets/data/treasury-transparency-7-2026-v1.json"
+  ],
   "governance": ".github/governance/UNITARY_PROCEEDINGS_INTERCONNECTIVITY_MAP_PROTOCOL_30AUG2026.md",
   "supplemental_governance": ".github/governance/A_SCAN_360_CASE_PRISM_AND_READER_LENS_PROTOCOL_30AUG2026.md",
   "public_routes": {
@@ -61,6 +64,7 @@
   "context_lenses": {
     "STREAM": "Same recorded procedural track; browse/filter taxonomy only and never sufficient for material reconnection.",
     "CONNECTION": "Same exact non-empty recorded Connection value; context only unless separately supported as a procedural edge.",
+    "SOURCE_CONTROLLED_CORRIDOR": "A specialist source control explicitly identifies materially relevant but legally separate proceedings; context only, never a procedural edge by itself.",
     "GEOGRAPHY": "Same recorded geography; browse/filter taxonomy only and never sufficient for material reconnection.",
     "CHRONOLOGY": "Temporal proximity/order derived from Date_or_Period; browse/order taxonomy only, not material dependency or causation.",
     "EVIDENCE_EVENT_ASSET_ACTOR": "Only when independently source-controlled in the relevant evidence/event/asset/identity register.",
@@ -141,15 +145,16 @@
     "public_exact_proceeding_denominator": 85,
     "private_exact_proceeding_excluded_denominator": 1,
     "public_exact_disposition_denominator": 85,
-    "exact_direct_relationship_pair_denominator": 16,
-    "exact_direct_relationship_source_verified_pair_denominator": 15,
+    "exact_direct_relationship_pair_denominator": 17,
+    "exact_direct_relationship_source_verified_pair_denominator": 16,
     "exact_direct_relationship_source_reported_pending_pair_denominator": 1,
-    "exact_direct_source_assertion_denominator": 20,
-    "exact_direct_source_verified_assertion_denominator": 19,
+    "exact_direct_source_assertion_denominator": 21,
+    "exact_direct_source_verified_assertion_denominator": 20,
     "exact_direct_source_reported_pending_assertion_denominator": 1,
-    "material_context_cluster_denominator": 25,
+    "material_context_cluster_denominator": 26,
     "material_context_types": [
       "RECORDED_CONNECTION",
+      "SOURCE_CONTROLLED_CORRIDOR",
       "CASE_PRISM_PROPOSITION"
     ],
     "taxonomy_only_context_types": [
@@ -157,17 +162,17 @@
       "GEOGRAPHY",
       "CHRONOLOGY"
     ],
-    "case_prism_exact_proceeding_covered_denominator": 25,
-    "case_prism_exact_proceeding_uncovered_denominator": 60,
+    "case_prism_exact_proceeding_covered_denominator": 26,
+    "case_prism_exact_proceeding_uncovered_denominator": 59,
     "bilingual_specific_next_source_denominator": 85,
     "bilingual_specific_next_source_coverage_status": "VERIFIED_85_OF_85",
     "exact_proceeding_full_finite_test_coverage_status": "GAP_0_OF_85",
-    "decision_dependency_exact_coverage_status": "GAP_25_OF_85",
+    "decision_dependency_exact_coverage_status": "GAP_26_OF_85",
     "cell_treatment_source_coverage_status": "GAP_PROPOSITION_LEVEL_SOURCES_ONLY",
     "actor_specific_knowledge_receipt_trace_status": "GAP_NOT_MODELLED",
     "exact_id_to_dossier_source_route_coverage_status": "GAP_DENOMINATOR_NOT_ESTABLISHED",
     "fragmentation_selector_coverage_status": "VERIFIED_85_OF_85",
-    "fragmentation_content_coverage_status": "GAP_25_OF_85_WITH_CASE_PRISM_COORDINATE",
+    "fragmentation_content_coverage_status": "GAP_26_OF_85_WITH_CASE_PRISM_COORDINATE",
     "proposition_denominator": 19,
     "lane_denominator": 12,
     "explicit_coordinate_denominator": 228,

@@ -29,7 +29,7 @@ function expectedIsolationSets(selectedId, prism, interlinks) {
     if (!(cluster.member_master_ids || []).includes(selectedId)) continue;
     if (cluster.context_type === 'CASE_PRISM_PROPOSITION') {
       if (cluster.source?.record_id) linkedPrismPropIds.add(cluster.source.record_id);
-    } else if (cluster.context_type === 'RECORDED_CONNECTION') {
+    } else if (['RECORDED_CONNECTION', 'SOURCE_CONTROLLED_CORRIDOR'].includes(cluster.context_type)) {
       for (const masterId of cluster.member_master_ids || []) reconnectIds.add(masterId);
     } else {
       throw new Error(`${selectedId}: taxonomy-only or unsupported context entered isolation (${cluster.context_type})`);
@@ -125,6 +125,30 @@ try {
   const dispositionById = new Map(dispositions.map((item) => [item.master_id, item]));
   const relationshipById = new Map((interlinks.relationships || []).map((item) => [item.id, item]));
   const clusterById = new Map((interlinks.context_clusters || []).map((item) => [item.id, item]));
+  const treasuryRelationship = relationshipById.get('REL-LINKED_PROCEEDING-NAT-TES-001-X-WB-005');
+  if (!treasuryRelationship
+      || treasuryRelationship.from_master_id !== 'NAT-TES-001'
+      || treasuryRelationship.to_master_id !== 'X-WB-005'
+      || treasuryRelationship.relationship_class !== 'DIRECT_PROCEDURAL_EDGE') {
+    throw new Error('Treasury 7/2026 to World Bank direct routing lineage is missing or misclassified');
+  }
+  if ((interlinks.relationships || []).some((item) =>
+    [item.from_master_id, item.to_master_id].includes('NAT-TES-001')
+      && [item.from_master_id, item.to_master_id].some((id) => ['LZ-TRA-028', 'NAT-AID-001'].includes(id)))) {
+    throw new Error('Treasury contextual tracks were promoted into direct procedural edges');
+  }
+  const treasuryContext = clusterById.get('CTX-SOURCE-T7-COR-001');
+  if (!treasuryContext
+      || treasuryContext.context_type !== 'SOURCE_CONTROLLED_CORRIDOR'
+      || treasuryContext.source?.record_id !== 'T7-COR-001') {
+    throw new Error('Treasury/Resolution 28 source-controlled corridor is missing');
+  }
+  assertSameValues(treasuryContext.member_master_ids || [], ['NAT-TES-001', 'LZ-TRA-028'], 'Treasury/Resolution 28 contextual corridor');
+  const publicMoneyContext = clusterById.get('CTX-PRISM-P18');
+  if (!publicMoneyContext
+      || !['NAT-TES-001', 'NAT-AID-001'].every((id) => (publicMoneyContext.member_master_ids || []).includes(id))) {
+    throw new Error('Treasury and aid-programme context is missing from Case Prism proposition P18');
+  }
   const dp3205Disposition = dispositionById.get('LZ-JUD-043');
   if (!dp3205Disposition
       || dp3205Disposition.primary_classification !== 'EXPLICIT_RELATIONSHIP_GAP'
@@ -151,7 +175,7 @@ try {
       cell.status === 'OUTSIDE' ? [] : (cell.master_ids || []).filter((id) => exactIdSet.has(id))
     )
   ));
-  if (prismCoveredIds.size !== 25 || exactIds.length - prismCoveredIds.size !== 60) {
+  if (prismCoveredIds.size !== 26 || exactIds.length - prismCoveredIds.size !== 59) {
     throw new Error(`Case Prism exact-file content denominator mismatch (${prismCoveredIds.size}/${exactIds.length})`);
   }
   const expectedIsolationById = new Map(exactIds.map((masterId) => [
@@ -257,12 +281,12 @@ try {
       const expectedStatus = prismCoveredIds.has(masterId) ? 'covered' : 'unresolved';
       if (status !== expectedStatus) throw new Error(`${route.lang}/${masterId}: Case Prism coverage label is ${status}, expected ${expectedStatus}`);
     }
-    if (renderedCoverage.filter(([, status]) => status === 'covered').length !== 25 || renderedCoverage.filter(([, status]) => status === 'unresolved').length !== 60) {
-      throw new Error(`${route.lang}: visible Case Prism content coverage must remain 25 covered / 60 unresolved`);
+    if (renderedCoverage.filter(([, status]) => status === 'covered').length !== 26 || renderedCoverage.filter(([, status]) => status === 'unresolved').length !== 59) {
+      throw new Error(`${route.lang}: visible Case Prism content coverage must remain 26 covered / 59 unresolved`);
     }
     if (await isolation.locator('option[value="GC-APP-007"]').count()) throw new Error(`${route.lang}: aggregate removal-appeal family admitted to isolation`);
     const coverageText = await page.locator('[data-isolation-coverage]').innerText();
-    if (!coverageText.includes(`25/${exactIds.length}`) || !coverageText.includes('60')) throw new Error(`${route.lang}: finite 25/85 Case Prism content denominator is not visible`);
+    if (!coverageText.includes(`26/${exactIds.length}`) || !coverageText.includes('59')) throw new Error(`${route.lang}: finite 26/85 Case Prism content denominator is not visible`);
     const fullCorpusLabels = await page.locator('.pdim-isolation-map button[aria-label]').evaluateAll((elements) => elements.map((element) => element.getAttribute('aria-label') || ''));
     if (fullCorpusLabels.some((label) => label.includes(route.outsideSelected))) throw new Error(`${route.lang}: full-corpus cells are announced as outside a selected file`);
     if (await isolation.locator('option[value="GC-APP-004"]').count() !== 1) throw new Error(`${route.lang}: exact RPL 2523 option missing`);

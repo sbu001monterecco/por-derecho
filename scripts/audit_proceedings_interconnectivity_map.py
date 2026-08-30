@@ -22,6 +22,7 @@ REQUIRED = [
     "archive/DP3205_2014_ARRECIFE_SOURCE_TRANSLATION_AUTHORITY_ALLEGATIONS_CONTROL_30AUG2026.md",
     "archive/ARRECIFE_4009_2015_CARET_INTERLINK_CONTROL_30AUG2026.md",
     "archive/ARRECIFE_1103_1132_1010_804_CARET_INTERLINK_CONTROL_30AUG2026.md",
+    "archive/TESORO_TRANSPARENCIA_7_2026_CONTINUITY_AUDIT_28AUG2026.md",
     "archive/MISSING_EVIDENCE_REGISTER.md",
     "archive/PROCEEDINGS_CASE_PRISM_V1_SEED_30AUG2026.json",
     "archive/knowledge-project/DP1956_STATUS_REOPENING_CORRECTION_18AUG2026.md",
@@ -33,6 +34,7 @@ REQUIRED = [
     "assets/data/caepr-caret-alberto-meeting-point-first-hop-v1.json",
     "assets/data/counsel-procurador-gap-register-v1.json",
     "assets/data/dp3205-2014-arrecife-v1.json",
+    "assets/data/treasury-transparency-7-2026-v1.json",
     "assets/proceedings-interconnectivity-map-20260830.js",
     "assets/proceedings-interconnectivity-map-20260830.css",
     "assets/master-proceedings-publication-20260830.js",
@@ -66,6 +68,7 @@ REQUIRED = [
     "publication-manifests/dp3205-2014-arrecife-caret-interlink-20260830.json",
     "publication-manifests/arrecife-4009-2015-caret-interlink-20260830.json",
     "publication-manifests/arrecife-1103-2018-caret-interlink-20260830.json",
+    "publication-manifests/treasury-transparency-7-2026-20260830.json",
     "scripts/audit_arrecife_1103_caret_interlink.py",
     ".github/workflows/audit-arrecife-1103-caret-interlink.yml",
     "scripts/build_public_proceedings_projection.py",
@@ -143,6 +146,7 @@ if not errors:
     prism = json.loads(read("assets/data/proceedings-case-prism-v1.json"))
     public_projection = json.loads(read("assets/data/proceedings-master-public-v1.json"))
     interlinkability = json.loads(read("assets/data/proceedings-interlinkability-v1.json"))
+    treasury_control = json.loads(read("assets/data/treasury-transparency-7-2026-v1.json"))
     lifecycle = json.loads(read("publication-manifests/all-proceedings-interlinkability-20260830.json"))
     counsel_gaps = json.loads(read("assets/data/counsel-procurador-gap-register-v1.json"))
     gc_548_manifest = json.loads(read("publication-manifests/gc-548-2023-plaza2-t1-caret-20260830.json"))
@@ -283,6 +287,19 @@ if not errors:
     }
     require(len(actual_direct_pairs) == len(relationships), "multiple direct relationships silently compete for one exact-proceeding pair")
     require(actual_direct_pairs == expected_direct_pairs, "controlled direct-edge registry omits or invents an exact canonical relationship pair")
+    expected_treasury_pair = tuple(sorted(("NAT-TES-001", "X-WB-005")))
+    contextual_only_treasury_pairs = {
+        tuple(sorted(("NAT-TES-001", related_id)))
+        for related_id in ("LZ-TRA-028", "NAT-AID-001")
+    }
+    require(
+        expected_treasury_pair in expected_direct_pairs,
+        "Treasury 7/2026 documented X-WB-005 routing lineage is missing",
+    )
+    require(
+        not (contextual_only_treasury_pairs & expected_direct_pairs),
+        "Treasury 7/2026 contextual lanes were promoted into direct procedural pairs",
+    )
     direct_field_by_type = {
         "PARENT_CHILD": "Parent_Master_ID",
         "LINKED_PROCEEDING": "Linked_Proceedings",
@@ -348,7 +365,7 @@ if not errors:
                 == {from_id, to_id},
                 f"{rid} contains a source assertion for a different pair",
             )
-    require(len(expected_source_assertions) == 20, f"expected 20 canonical direct assertions, found {len(expected_source_assertions)}")
+    require(len(expected_source_assertions) == 21, f"expected 21 canonical direct assertions, found {len(expected_source_assertions)}")
     require(
         Counter(actual_source_assertions) == Counter(expected_source_assertions),
         "direct relationship source assertions do not exactly preserve the canonical-field assertion multiset",
@@ -370,19 +387,19 @@ if not errors:
         len(actual_source_assertions) - source_verified_assertion_count
     )
     require(
-        (source_verified_pair_count, source_reported_pending_pair_count) == (15, 1),
-        "direct-pair source grades must remain explicit at 15 verified / 1 reported-primary-pending",
+        (source_verified_pair_count, source_reported_pending_pair_count) == (16, 1),
+        "direct-pair source grades must remain explicit at 16 verified / 1 reported-primary-pending",
     )
     require(
-        (source_verified_assertion_count, source_reported_pending_assertion_count) == (19, 1),
-        "direct-assertion source grades must remain explicit at 19 verified / 1 reported-primary-pending",
+        (source_verified_assertion_count, source_reported_pending_assertion_count) == (20, 1),
+        "direct-assertion source grades must remain explicit at 20 verified / 1 reported-primary-pending",
     )
 
     context_clusters = interlinkability.get("context_clusters", [])
     context_ids = [cluster.get("id") for cluster in context_clusters]
     context_by_id = {cluster.get("id"): cluster for cluster in context_clusters}
     require(len(context_ids) == len(set(context_ids)), "duplicate context-cluster ID")
-    permitted_context_types = {"RECORDED_CONNECTION", "CASE_PRISM_PROPOSITION"}
+    permitted_context_types = {"RECORDED_CONNECTION", "SOURCE_CONTROLLED_CORRIDOR", "CASE_PRISM_PROPOSITION"}
     require(set(interlinkability.get("context_type_catalog", {})) == permitted_context_types, "context catalog admits a taxonomy-only or unknown bridge")
     prism_prop_by_id = {prop.get("id"): prop for prop in prism.get("propositions", [])}
     expected_connection_groups: dict[str, set[str]] = {}
@@ -419,6 +436,16 @@ if not errors:
         if cluster.get("context_type") == "CASE_PRISM_PROPOSITION"
     }
     require(actual_prism_groups == expected_prism_groups, "Case Prism context clusters omit or invent a proposition-member group")
+    expected_source_corridors = {
+        corridor.get("id"): set(corridor.get("member_master_ids", []))
+        for corridor in treasury_control.get("proceedings_context_corridors", [])
+    }
+    actual_source_corridors = {
+        cluster.get("source", {}).get("record_id"): set(cluster.get("member_master_ids", []))
+        for cluster in context_clusters
+        if cluster.get("context_type") == "SOURCE_CONTROLLED_CORRIDOR"
+    }
+    require(actual_source_corridors == expected_source_corridors == {"T7-COR-001": {"NAT-TES-001", "LZ-TRA-028"}}, "source-controlled Treasury corridor mismatch")
     for cluster in context_clusters:
         cid = cluster.get("id", "<missing context ID>")
         context_type = cluster.get("context_type")
@@ -438,7 +465,7 @@ if not errors:
             require(all(public_by_id[mid].get(expected_field) == source.get("value") for mid in members), f"{cid} invents a canonical-field grouping")
             require({item.get("master_id") for item in source.get("member_provenance", [])} == set(members), f"{cid} member provenance mismatch")
             require("joinder" in limitations_en and "acumul" in limitations_es, f"{cid} lacks bilingual anti-joinder limits")
-        else:
+        elif context_type == "CASE_PRISM_PROPOSITION":
             prop_id = source.get("record_id")
             prop = prism_prop_by_id.get(prop_id, {})
             admitted_members = {
@@ -452,6 +479,16 @@ if not errors:
             require(source.get("path") == "assets/data/proceedings-case-prism-v1.json" and prop_id in prism_prop_by_id, f"{cid} references an unknown Case Prism proposition")
             require(set(members) == admitted_members, f"{cid} membership does not match its Case Prism proposition")
             require("do not prove receipt or treatment" in limitations_en and "no prueban recepción ni tratamiento" in limitations_es, f"{cid} does not preserve the proposition/file-treatment boundary")
+        else:
+            record_id = source.get("record_id")
+            corridor = next(
+                (item for item in treasury_control.get("proceedings_context_corridors", []) if item.get("id") == record_id),
+                {},
+            )
+            require(source.get("kind") == "SPECIALIST_SOURCE_CONTEXT_CORRIDOR", f"{cid} lacks specialist-source corridor provenance")
+            require(source.get("path") == "assets/data/treasury-transparency-7-2026-v1.json" and corridor, f"{cid} references an unknown specialist context corridor")
+            require(set(members) == set(corridor.get("member_master_ids", [])), f"{cid} membership diverges from its specialist source control")
+            require("no appeal" in limitations_en and "no acredita recurso" in limitations_es, f"{cid} does not preserve the direct/context boundary")
 
     dispositions = interlinkability.get("node_dispositions", [])
     disposition_ids = [disposition.get("master_id") for disposition in dispositions]
@@ -524,14 +561,15 @@ if not errors:
     require(interlink_coverage.get("direct_relationship_count") == len(relationships), "direct relationship coverage count mismatch")
     require(interlink_coverage.get("direct_relationship_source_verified_pair_count") == source_verified_pair_count, "source-verified direct-pair coverage mismatch")
     require(interlink_coverage.get("direct_relationship_source_reported_pending_pair_count") == source_reported_pending_pair_count, "source-reported-pending direct-pair coverage mismatch")
-    require(interlink_coverage.get("direct_source_assertion_count") == len(actual_source_assertions) == 20, "direct source-assertion coverage mismatch")
+    require(interlink_coverage.get("direct_source_assertion_count") == len(actual_source_assertions) == 21, "direct source-assertion coverage mismatch")
     require(interlink_coverage.get("direct_source_verified_assertion_count") == source_verified_assertion_count, "source-verified direct-assertion coverage mismatch")
     require(interlink_coverage.get("direct_source_reported_pending_assertion_count") == source_reported_pending_assertion_count, "source-reported-pending direct-assertion coverage mismatch")
     require(interlink_coverage.get("context_cluster_count") == len(context_clusters), "context-cluster coverage count mismatch")
+    require(interlink_coverage.get("source_controlled_corridor_count") == 1, "source-controlled corridor denominator mismatch")
     require(interlink_coverage.get("recorded_stream_cluster_count") == 0, "same-stream taxonomy was promoted into material reconnection context")
-    require(interlink_coverage.get("case_prism_exact_proceeding_covered_count") == len(case_prism_exact_ids) == 25, "Case Prism exact-proceeding covered denominator mismatch")
-    require(interlink_coverage.get("case_prism_exact_proceeding_uncovered_count") == len(exact_public_ids - case_prism_exact_ids) == 60, "Case Prism exact-proceeding uncovered denominator mismatch")
-    require(interlink_coverage.get("decision_dependency_exact_coverage") == "GAP_25_OF_85", "decision-dependency exact coverage is overstated")
+    require(interlink_coverage.get("case_prism_exact_proceeding_covered_count") == len(case_prism_exact_ids) == 26, "Case Prism exact-proceeding covered denominator mismatch")
+    require(interlink_coverage.get("case_prism_exact_proceeding_uncovered_count") == len(exact_public_ids - case_prism_exact_ids) == 59, "Case Prism exact-proceeding uncovered denominator mismatch")
+    require(interlink_coverage.get("decision_dependency_exact_coverage") == "GAP_26_OF_85", "decision-dependency exact coverage is overstated")
     require(interlink_coverage.get("bilingual_specific_next_source_count") == 85, "bilingual next-source denominator is not 85/85")
     require(interlink_coverage.get("bilingual_specific_next_source_coverage") == "VERIFIED_85_OF_85", "bilingual specific next-source coverage is not verified 85/85")
     require(interlink_coverage.get("exact_proceeding_full_finite_test_count") == 0, "exact-proceeding disposition actionability count is overstated")
@@ -728,7 +766,7 @@ if not errors:
         if mid in exact_public_ids
     }
     prism_exact_uncovered_ids = exact_public_ids - prism_exact_covered_ids
-    require(len(prism_exact_covered_ids) == 25 and len(prism_exact_uncovered_ids) == 60, "Case Prism exact-file content denominator must remain explicit at 25/85 covered and 60/85 uncovered")
+    require(len(prism_exact_covered_ids) == 26 and len(prism_exact_uncovered_ids) == 59, "Case Prism exact-file content denominator must remain explicit at 26/85 covered and 59/85 uncovered")
 
     prop_fields = {"id", "sort", "period_en", "period_es", "title_en", "title_es", "question_en", "question_es", "source_status", "attribution", "contrary_record", "decision_dependency", "actionability", "source_ids", "audience_priority", "cells"}
     cell_fields = {"status", "treatment", "evidence_status", "note_en", "note_es", "decision_en", "decision_es", "master_ids", "representation_lineage_status", "representation_gap_ids"}
@@ -777,6 +815,7 @@ if not errors:
     required_views = {"CONVERGENCE_CLUSTER", "FRAGMENTATION_AUDIT", "DECISION_DEPENDENCY_MATRIX", "PARALLEL_PROCEEDINGS_LANES", "ISOLATION_TEST", "AUDIENCE_LENS"}
     require(schema.get("schema_version") == "1.5.0", "interconnectivity schema must be 1.5.0")
     require(schema.get("canonical_node_source_id") == "PROCEEDINGS_MASTER_REGISTER", "schema canonical source identity changed")
+    require(schema.get("specialist_context_sources") == ["assets/data/treasury-transparency-7-2026-v1.json"], "schema specialist context source registry mismatch")
     require(required_views <= set(schema.get("required_views", [])), "schema required views missing")
     require(required_views <= set(schema.get("implemented_public_views", {})), "schema runtime mappings missing")
     require(set(schema.get("case_prism_cell_statuses", [])) == statuses, "schema relationship vocabulary mismatch")
@@ -798,12 +837,12 @@ if not errors:
         "material_context_cluster_denominator": len(context_clusters),
         "case_prism_exact_proceeding_covered_denominator": len(prism_exact_covered_ids),
         "case_prism_exact_proceeding_uncovered_denominator": len(prism_exact_uncovered_ids),
-        "decision_dependency_exact_coverage_status": "GAP_25_OF_85",
+        "decision_dependency_exact_coverage_status": "GAP_26_OF_85",
         "cell_treatment_source_coverage_status": "GAP_PROPOSITION_LEVEL_SOURCES_ONLY",
         "actor_specific_knowledge_receipt_trace_status": "GAP_NOT_MODELLED",
         "exact_id_to_dossier_source_route_coverage_status": "GAP_DENOMINATOR_NOT_ESTABLISHED",
         "fragmentation_selector_coverage_status": "VERIFIED_85_OF_85",
-        "fragmentation_content_coverage_status": "GAP_25_OF_85_WITH_CASE_PRISM_COORDINATE",
+        "fragmentation_content_coverage_status": "GAP_26_OF_85_WITH_CASE_PRISM_COORDINATE",
         "bilingual_specific_next_source_denominator": 85,
         "bilingual_specific_next_source_coverage_status": "VERIFIED_85_OF_85",
         "exact_proceeding_full_finite_test_coverage_status": "GAP_0_OF_85",
@@ -813,7 +852,7 @@ if not errors:
     }
     for field, expected in exact_contract.items():
         require(implementation_contract.get(field) == expected, f"schema implementation contract mismatch: {field}")
-    require(implementation_contract.get("material_context_types") == ["RECORDED_CONNECTION", "CASE_PRISM_PROPOSITION"], "schema material context types changed")
+    require(implementation_contract.get("material_context_types") == ["RECORDED_CONNECTION", "SOURCE_CONTROLLED_CORRIDOR", "CASE_PRISM_PROPOSITION"], "schema material context types changed")
     require(implementation_contract.get("taxonomy_only_context_types") == ["STREAM", "GEOGRAPHY", "CHRONOLOGY"], "schema taxonomy-only context boundary changed")
 
     lifecycle_denominator = lifecycle.get("implementation_denominator", {})
@@ -821,8 +860,13 @@ if not errors:
     require(lifecycle.get("current_state") in {"PREPARED_PENDING_MERGE", "PR_OPEN", "CI_GREEN", "MERGED", "DEPLOYED", "LIVE_VERIFIED", "DELETION_SAFE"}, "interlinkability lifecycle state is invalid")
     require(lifecycle_denominator.get("public_records_traceable") == 106, "lifecycle public trace denominator mismatch")
     require(lifecycle_denominator.get("public_exact_proceedings") == 85 and lifecycle_denominator.get("public_exact_dispositions") == 85, "lifecycle exact interlink denominator mismatch")
-    require(lifecycle_denominator.get("direct_procedural_pairs_source_verified") == 15 and lifecycle_denominator.get("direct_procedural_pairs_source_reported_primary_pending") == 1, "lifecycle direct-pair evidence grades are incomplete")
-    require(lifecycle_completion.get("decision_dependency_coverage") == "GAP_25_OF_85", "lifecycle overstates decision-dependency coverage")
+    require(lifecycle_denominator.get("direct_procedural_pairs") == len(relationships) == 17, "lifecycle direct-pair denominator mismatch")
+    require(lifecycle_denominator.get("direct_procedural_pairs_source_verified") == 16 and lifecycle_denominator.get("direct_procedural_pairs_source_reported_primary_pending") == 1, "lifecycle direct-pair evidence grades are incomplete")
+    require(lifecycle_denominator.get("direct_source_assertions") == len(actual_source_assertions) == 21, "lifecycle direct-assertion denominator mismatch")
+    require(lifecycle_denominator.get("direct_source_assertions_verified") == 20 and lifecycle_denominator.get("direct_source_assertions_source_reported_primary_pending") == 1, "lifecycle direct-assertion evidence grades are incomplete")
+    require(lifecycle_denominator.get("controlled_material_context_clusters") == len(context_clusters) == 26 and lifecycle_denominator.get("source_controlled_context_corridors") == 1, "lifecycle material-context denominator mismatch")
+    require(lifecycle_completion.get("decision_dependency_coverage") == "GAP_26_OF_85", "lifecycle overstates decision-dependency coverage")
+    require(lifecycle_completion.get("contextual_convergence_edges") == "VERIFIED_26_CONTROLLED_CLUSTERS_INCLUDING_1_SOURCE_CONTROLLED_CORRIDOR", "lifecycle contextual-convergence denominator mismatch")
     require(lifecycle_completion.get("cell_treatment_source_coverage") == "GAP_PROPOSITION_LEVEL_SOURCES_ONLY", "lifecycle overstates cell-level source coverage")
     require(lifecycle_completion.get("actor_specific_knowledge_receipt_trace") == "GAP_NOT_MODELLED", "lifecycle overstates actor-specific knowledge/receipt tracing")
     require(lifecycle_completion.get("exact_id_to_dossier_source_route_coverage") == "GAP_DENOMINATOR_NOT_ESTABLISHED", "lifecycle overstates exact-ID dossier/source routing")
@@ -832,11 +876,14 @@ if not errors:
         "archive/DP3205_2014_ARRECIFE_SOURCE_TRANSLATION_AUTHORITY_ALLEGATIONS_CONTROL_30AUG2026.md",
         "archive/ARRECIFE_4009_2015_CARET_INTERLINK_CONTROL_30AUG2026.md",
         "archive/ARRECIFE_1103_1132_1010_804_CARET_INTERLINK_CONTROL_30AUG2026.md",
+        "archive/TESORO_TRANSPARENCIA_7_2026_CONTINUITY_AUDIT_28AUG2026.md",
         "publication-manifests/master-proceedings-publication-20260830.json",
         "publication-manifests/gc-548-2023-plaza2-t1-caret-20260830.json",
         "publication-manifests/dp3205-2014-arrecife-caret-interlink-20260830.json",
         "publication-manifests/arrecife-4009-2015-caret-interlink-20260830.json",
         "publication-manifests/arrecife-1103-2018-caret-interlink-20260830.json",
+        "publication-manifests/treasury-transparency-7-2026-20260830.json",
+        "assets/data/treasury-transparency-7-2026-v1.json",
         "scripts/audit_arrecife_1103_caret_interlink.py",
         ".github/workflows/audit-arrecife-1103-caret-interlink.yml",
         "en/arrecife-1103-2018-procedural-lineage/index.html",
@@ -972,7 +1019,7 @@ print("- exact proceedings: 86 canonical / 85 public / 1 private exact record ex
 print("- interlinkability: 85/85 public exact proceedings classified / 0 unexplained")
 print(f"- controlled reconnection: {len(relationships)} exact pairs ({source_verified_pair_count} source-verified / {source_reported_pending_pair_count} source-reported pending) / {len(actual_source_assertions)} canonical assertions ({source_verified_assertion_count} verified / {source_reported_pending_assertion_count} pending) / {len(context_clusters)} material context clusters")
 print("- structural exact selector/reconnection: VERIFIED 85/85; full-corpus restore available")
-print("- decision-dependency / fragmentation content coverage: GAP — 25/85 exact proceedings covered; 60 without Case Prism coordinate")
+print("- decision-dependency / fragmentation content coverage: GAP — 26/85 exact proceedings covered; 59 without Case Prism coordinate")
 print("- Stream, Geography and Chronology remain taxonomy/navigation only")
 print("- aggregate appeal-family reference retained but excluded from exact selection")
 print("- overlays consolidated and parent graph acyclic")
@@ -981,7 +1028,7 @@ print("- relationship and file-treatment vocabularies structurally validated; ce
 print("- cell-treatment source coverage: GAP — source routes are proposition-level; actor-specific knowledge/receipt trace: GAP — not modelled")
 print("- exact-ID to proceeding-specific dossier/source-route coverage: GAP — denominator not established")
 print("- proposition-level source routes, contrary record, decision dependency and finite actionability fields validated")
-print("- stable parallel lanes and structural isolation mechanics validated; content remains GAP 25/85")
+print("- stable parallel lanes and structural isolation mechanics validated; content remains GAP 26/85")
 print("- nine audience lenses and bilingual source routes validated")
 print("- bilingual specific next-source coverage: VERIFIED 85/85; full exact-proceeding finite-test objects: GAP 0/85")
 print("- EN/ES institutional feeders expose exact trace and isolation deep links")

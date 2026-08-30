@@ -15,6 +15,7 @@ on:
       - 'archive/DP3205_2014_ARRECIFE_SOURCE_TRANSLATION_AUTHORITY_ALLEGATIONS_CONTROL_30AUG2026.md'
       - 'archive/ARRECIFE_4009_2015_CARET_INTERLINK_CONTROL_30AUG2026.md'
       - 'archive/ARRECIFE_1103_1132_1010_804_CARET_INTERLINK_CONTROL_30AUG2026.md'
+      - 'archive/TESORO_TRANSPARENCIA_7_2026_CONTINUITY_AUDIT_28AUG2026.md'
       - 'archive/MISSING_EVIDENCE_REGISTER.md'
       - 'archive/PROCEEDINGS_CASE_PRISM_V1_SEED_30AUG2026.json'
       - 'archive/knowledge-project/ALLEGATIONS_CROSSWALK_AN2023_DP1901_DP1956_CONTROL24_16AUG2026.md'
@@ -26,6 +27,7 @@ on:
       - 'assets/data/caepr-caret-alberto-meeting-point-first-hop-v1.json'
       - 'assets/data/counsel-procurador-gap-register-v1.json'
       - 'assets/data/dp3205-2014-arrecife-v1.json'
+      - 'assets/data/treasury-transparency-7-2026-v1.json'
       - 'scripts/audit_arrecife_1103_caret_interlink.py'
       - '.github/workflows/audit-arrecife-1103-caret-interlink.yml'
       - 'assets/proceedings-interconnectivity-map-20260830.js'
@@ -90,6 +92,7 @@ on:
       - 'scripts/build_proceedings_interlinkability_v1.py'
       - 'scripts/smoke_proceedings_case_prism.mjs'
       - 'scripts/validate_dp3205_2014_publication.py'
+      - 'scripts/validate_treasury_transparency_7_2026.py'
       - '.github/workflows/validate-dp3205-2014-publication.yml'
       - '.github/workflows/audit-proceedings-interconnectivity-map.yml'
       - 'publication-manifests/proceedings-interconnectivity-map-20260830.json'
@@ -102,6 +105,7 @@ on:
       - 'publication-manifests/arrecife-4009-2015-caret-interlink-20260830.json'
       - 'publication-manifests/arrecife-1103-2018-caret-interlink-20260830.json'
       - 'publication-manifests/all-proceedings-interlinkability-20260830.json'
+      - 'publication-manifests/treasury-transparency-7-2026-20260830.json'
       - 'docs/deletion-audits/2026-08-30-a-scan-360-case-prism-continuity.md'
       - 'docs/deletion-audits/2026-08-30-a-scan-360-case-prism-v2-repair-continuity.md'
       - 'docs/deletion-audits/2026-08-30-unitary-proceedings-interconnectivity-map-continuity.md'
@@ -123,6 +127,7 @@ on:
       - 'archive/DP3205_2014_ARRECIFE_SOURCE_TRANSLATION_AUTHORITY_ALLEGATIONS_CONTROL_30AUG2026.md'
       - 'archive/ARRECIFE_4009_2015_CARET_INTERLINK_CONTROL_30AUG2026.md'
       - 'archive/ARRECIFE_1103_1132_1010_804_CARET_INTERLINK_CONTROL_30AUG2026.md'
+      - 'archive/TESORO_TRANSPARENCIA_7_2026_CONTINUITY_AUDIT_28AUG2026.md'
       - 'archive/MISSING_EVIDENCE_REGISTER.md'
       - 'archive/PROCEEDINGS_CASE_PRISM_V1_SEED_30AUG2026.json'
       - 'archive/knowledge-project/ALLEGATIONS_CROSSWALK_AN2023_DP1901_DP1956_CONTROL24_16AUG2026.md'
@@ -134,6 +139,7 @@ on:
       - 'assets/data/caepr-caret-alberto-meeting-point-first-hop-v1.json'
       - 'assets/data/counsel-procurador-gap-register-v1.json'
       - 'assets/data/dp3205-2014-arrecife-v1.json'
+      - 'assets/data/treasury-transparency-7-2026-v1.json'
       - 'scripts/audit_arrecife_1103_caret_interlink.py'
       - '.github/workflows/audit-arrecife-1103-caret-interlink.yml'
       - 'assets/proceedings-interconnectivity-map-20260830.js'
@@ -198,6 +204,7 @@ on:
       - 'scripts/build_proceedings_interlinkability_v1.py'
       - 'scripts/smoke_proceedings_case_prism.mjs'
       - 'scripts/validate_dp3205_2014_publication.py'
+      - 'scripts/validate_treasury_transparency_7_2026.py'
       - '.github/workflows/validate-dp3205-2014-publication.yml'
       - '.github/workflows/audit-proceedings-interconnectivity-map.yml'
       - 'publication-manifests/proceedings-interconnectivity-map-20260830.json'
@@ -210,6 +217,7 @@ on:
       - 'publication-manifests/arrecife-4009-2015-caret-interlink-20260830.json'
       - 'publication-manifests/arrecife-1103-2018-caret-interlink-20260830.json'
       - 'publication-manifests/all-proceedings-interlinkability-20260830.json'
+      - 'publication-manifests/treasury-transparency-7-2026-20260830.json'
       - 'docs/deletion-audits/2026-08-30-a-scan-360-case-prism-continuity.md'
       - 'docs/deletion-audits/2026-08-30-a-scan-360-case-prism-v2-repair-continuity.md'
       - 'docs/deletion-audits/2026-08-30-unitary-proceedings-interconnectivity-map-continuity.md'
@@ -241,6 +249,8 @@ jobs:
         run: python scripts/build_proceedings_case_prism_v2.py --check
       - name: Check generated proceedings interlinkability projection
         run: python3 scripts/build_proceedings_interlinkability_v1.py --check
+      - name: Validate Treasury direct-routing and contextual-corridor boundary
+        run: python3 scripts/validate_treasury_transparency_7_2026.py
       - name: Audit proceedings map invariants
         run: python scripts/audit_proceedings_interconnectivity_map.py
       - name: Audit canonical publication and representation gaps

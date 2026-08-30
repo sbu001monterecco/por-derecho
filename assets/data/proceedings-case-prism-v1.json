@@ -223,6 +223,7 @@
       "es": "Vías administrativas / fondos públicos",
       "master_ids": [
         "NAT-AID-001",
+        "NAT-TES-001",
         "X-REG-001",
         "X-TAX-002"
       ]
@@ -3822,12 +3823,13 @@
           "status": "DIRECT",
           "treatment": "DIRECTLY_IN_FILE",
           "evidence_status": "PUBLIC_FUNDING_LAYER_VERIFIED_DEPENDENCY_AND_USE_OPEN",
-          "note_en": "The proposition is directly present in the controlled lane; the treatment label states no more than the located record.",
-          "note_es": "La proposición está directamente presente en la vía controlada; la etiqueta de tratamiento no afirma más que el registro localizado.",
+          "note_en": "NAT-TES-001 controls the first Treasury 7/2026 tranche, including 2024–2025 public RIC issue material; NAT-AID-001 remains the separate GC/836/P06 programme file. Their shared programme-dependency question is contextual across files and does not create procedural lineage.",
+          "note_es": "NAT-TES-001 controla la primera entrega de Tesoro 7/2026, incluido material de emisiones públicas RIC 2024–2025; NAT-AID-001 sigue siendo el expediente separado del programa GC/836/P06. La cuestión compartida de dependencia del programa es contextual entre expedientes y no crea filiación procesal.",
           "decision_en": "Eligibility, payment/certification, title/availability reliance, double-funding risk and any recovery consequence.",
           "decision_es": "Elegibilidad, pago/certificación, confianza en título/disponibilidad, riesgo de doble financiación y eventual reintegro.",
           "master_ids": [
-            "NAT-AID-001"
+            "NAT-AID-001",
+            "NAT-TES-001"
           ],
           "representation_lineage_status": "GLOBAL_DENOMINATOR_OPEN",
           "representation_gap_ids": [
@@ -3873,6 +3875,7 @@
       },
       "source_ids": [
         "SRC-INCENTIVES",
+        "SRC-TREASURY",
         "SRC-FUNDS",
         "SRC-RICPE"
       ],
@@ -4664,6 +4667,13 @@
       "href_es": "es/incentivos-regionales-gc836-p06/",
       "evidence_status": "PUBLIC_PRIMARY_DERIVED_CONTROL"
     },
+    "SRC-TREASURY": {
+      "label_en": "Treasury transparency 7/2026 delivery control",
+      "label_es": "Control de entrega de transparencia Tesoro 7/2026",
+      "href_en": "en/treasury-transparency-7-2026-28-august/",
+      "href_es": "es/tesoro-transparencia-7-2026-28agosto/",
+      "evidence_status": "VERIFIED_PRIMARY_WITH_STAGED_PRODUCTION_OPEN"
+    },
     "SRC-FUNDS": {
       "label_en": "RIC / EU / incentives institutionalisation chain",
       "label_es": "Cadena de institucionalización RIC / UE / incentivos",
@@ -4832,6 +4842,10 @@
     "VERIFIED_PROCEDURAL_WITH_OPEN_RECORD_COMPLETION": {
       "en": "Verified Procedural With Open Record Completion",
       "es": "Procesal verificado con expediente pendiente de completar"
+    },
+    "VERIFIED_PRIMARY_WITH_STAGED_PRODUCTION_OPEN": {
+      "en": "Verified Primary With Staged Production Open",
+      "es": "Fuente primaria verificada; producción escalonada restante abierta"
     },
     "VERIFIED_WITH_LIMITATION_FINCA_RECONCILIATION_OPEN": {
       "en": "Verified With Limitation Finca Reconciliation Open",

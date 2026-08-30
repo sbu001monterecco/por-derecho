@@ -4,7 +4,7 @@
 
 `PR_OPEN` in pull request **#1235** on branch
 `codex/all-proceedings-interlinkability-20260830`, based on
-`259d055299d8508b7d89963b4b5d8ceecf4a50a1`.
+`5939ed3badad20193a4aba05ca62047d6bc6ff89`.
 
 This record identifies the controlled branch, source base and open pull request; the reviewed remote head/tree is pinned independently in the PR before merge. It does **not** certify green CI, merge, deployment, live HTTP
 readback or deletion-safe closeout. The controlling lifecycle record is
@@ -21,13 +21,13 @@ readback or deletion-safe closeout. The controlling lifecycle record is
 - The 85 exact public proceedings have one deterministic disposition each:
   direct procedural edge, controlled contextual bridge, explicit relationship
   gap or independent track.
-- Direct edges are limited to 16 exact proceeding pairs supported by 20
-  preserved canonical field assertions. Fifteen pairs / 19 assertions carry a
+- Direct edges are limited to 17 exact proceeding pairs supported by 21
+  preserved canonical field assertions. Sixteen pairs / 20 assertions carry a
   verified source status; one pair / one assertion remains
   `CORPUS_REPORTED_PRIMARY_PENDING`. A pair may retain more than one source
   assertion.
-- Material context is limited to seven exact `Connection` groups and 18 Case
-  Prism proposition groups. Stream, geography and chronology remain browse
+- Material context is limited to seven exact `Connection` groups, one specialist
+  source-controlled corridor and 18 Case Prism proposition groups. Stream, geography and chronology remain browse
   taxonomy and cannot create material reconnection by themselves.
 - The isolation algorithm is bounded. It does not traverse every proposition of
   every proposition co-member. It admits the selected proceeding's own
@@ -37,6 +37,11 @@ readback or deletion-safe closeout. The controlling lifecycle record is
 - `GC-APP-007` / `PD-SP-R-0013` is retained as an immutable aggregate
   removal-appeal family reference, not a third exact appeal. The exact rolls
   remain `GC-APP-005` / RPL 3304/2025 and `GC-APP-006` / RPL 3319/2025.
+- `NAT-TES-001` has one documented direct routing lineage, to `X-WB-005` through
+  the same REGAGE filing. The separate `LZ-TRA-028` transparency challenge is a
+  specialist source-controlled contextual corridor; `NAT-AID-001` remains
+  programme-specific public-money context through Case Prism P18. Neither
+  contextual route is promoted into a direct procedural edge.
 - Every public exact proceeding has a specific English and Spanish finite-source
   request. These questions do not upgrade source status or imply joinder,
   receipt, admissibility, knowledge, wrongdoing or liability.
@@ -51,16 +56,16 @@ readback or deletion-safe closeout. The controlling lifecycle record is
 | Public exact proceedings | 85 |
 | Exact private-source row excluded from public derivatives | 1 |
 | Public exact dispositions | 85 / 85 |
-| Direct pairs / source assertions | 16 / 20 |
-| Source-verified direct pairs / pending direct pairs | 15 / 1 |
-| Controlled material context clusters | 25 |
-| Exact proceedings with Case Prism coordinates | 25 / 85 |
-| Exact proceedings without Case Prism coordinates | 60 / 85 |
+| Direct pairs / source assertions | 17 / 21 |
+| Source-verified direct pairs / pending direct pairs | 16 / 1 |
+| Controlled material context clusters | 26 |
+| Exact proceedings with Case Prism coordinates | 26 / 85 |
+| Exact proceedings without Case Prism coordinates | 59 / 85 |
 | Specific bilingual next-source requests | 85 / 85 |
 
 Structural interlinkability is therefore complete for the present exact public
 denominator. Decision-dependency and fragmentation **content** coverage is not:
-it remains `GAP_25_OF_85`. The 85 specific bilingual next-source requests are
+it remains `GAP_26_OF_85`. The 85 specific bilingual next-source requests are
 not full finite actionability tests: exact-proceeding dispositions still lack a
 complete question / competent organ / related proceedings / confirmed and
 refuted consequence object, so that separate coverage is `GAP_0_OF_85`.
@@ -103,7 +108,7 @@ python3 scripts/validate_operational_identity_registry.py
 python3 scripts/validate_repository_preservation.py
 python3 scripts/validate_publication_integrity.py
 python3 scripts/validate_audience_experience.py
-python3 scripts/validate_private_source_statement_osint_governance.py --base 259d055299d8508b7d89963b4b5d8ceecf4a50a1
+python3 scripts/validate_private_source_statement_osint_governance.py --base 5939ed3badad20193a4aba05ca62047d6bc6ff89
 python3 scripts/validate_alberto_meeting_point_first_hop_caret.py
 python3 scripts/validate_concurso36_complete_record_v2.py
 python3 scripts/validate_concurso36_primary_autos_redigest_v2.py
@@ -147,7 +152,7 @@ waiting for an obsolete direct `site-pre-intervencion` marker in `site.js`.
    exact trace/isolation fragments.
 6. Resolve or formally accept the operational-CSV publication-boundary gap. A
    clean renderer readback does not close that separate question.
-7. Preserve the `25/85` decision-dependency content gap until additional
+7. Preserve the `26/85` decision-dependency content gap until additional
    proposition coordinates are source-supported and reviewed.
 8. Only after those steps may the lifecycle state advance beyond `PR_OPEN` or
    deletion-safe continuity be claimed.

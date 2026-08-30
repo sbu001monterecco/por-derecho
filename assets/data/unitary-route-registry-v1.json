@@ -1974,5 +1974,43 @@
       "LZ-JUD-043",
       "PD-SP-R-0021"
     ]
+  },
+  {
+    "lang": "en",
+    "path": "en/treasury-transparency-7-2026-28-august/",
+    "title": "Canary Treasury transparency 7/2026 — Resolution 154/2026 delivery",
+    "type": "institutional-record",
+    "summary": "Verified official-capacity record of the signed implementation act, Colabora transport and reviewed first production tranche of 8 files and 734 pages; later staged production remains open.",
+    "tags": [
+      "Canary Treasury",
+      "transparency 7/2026",
+      "Resolution 154/2026",
+      "Colabora",
+      "María Teresa Bosch Llinares"
+    ],
+    "aliases": [
+      "7-2026-0316134247",
+      "Treasury access production",
+      "NAT-TES-001"
+    ]
+  },
+  {
+    "lang": "es",
+    "path": "es/tesoro-transparencia-7-2026-28agosto/",
+    "title": "Tesoro Canarias · transparencia 7/2026 — entrega de la Resolución 154/2026",
+    "type": "institutional-record",
+    "summary": "Registro verificado de capacidad oficial sobre el acto firmado, el transporte Colabora y la primera entrega revisada de 8 archivos y 734 páginas; la producción posterior sigue abierta.",
+    "tags": [
+      "Tesoro de Canarias",
+      "transparencia 7/2026",
+      "Resolución 154/2026",
+      "Colabora",
+      "María Teresa Bosch Llinares"
+    ],
+    "aliases": [
+      "7-2026-0316134247",
+      "producción de acceso Tesoro",
+      "NAT-TES-001"
+    ]
   }
 ]
