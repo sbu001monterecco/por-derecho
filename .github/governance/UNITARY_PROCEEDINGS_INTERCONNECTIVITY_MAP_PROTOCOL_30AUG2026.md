@@ -184,3 +184,63 @@ A node with no direct edge is not automatically erroneous; it may be an independ
 ## 11. Continuity rule
 
 Future proceedings work that adds or materially changes a proceeding, relationship, appeal/referral, status, evidence bridge or public route must assess both the Master Register and the Proceedings Interconnectivity Map. The map is reconstructable from durable repository state; no future thread should need the originating ChatGPT conversation to understand its architecture, evidential boundaries or reverse-trace requirement.
+
+## 12. Shared-continuum / anti-fragmentation convergence rule
+
+The repository must not confuse **legal separateness** with **factual, patrimonial or evidential isolation**. Where multiple proceedings touch the same Sun Park hotel/underlying assets, exploitation/control, secured credit, productive unit, insolvency estate, income, title, possession, enforcement, professional conduct or alleged harm, every unitary digest must test whether those files belong to a **shared asset/control/credit/harm continuum**.
+
+That test is mandatory even where no court has formally joined, accumulated or recognised the files as connected. Absence of formal joinder is not evidence of factual irrelevance. Equally, a shared continuum is not proof of coordination, conspiracy, criminality or liability.
+
+### 12.1 Current priority convergence cluster
+
+Future scans must expressly test and, where sources permit, interlink the following as a high-priority convergence cluster rather than presenting them as hermetically sealed files:
+
+- the three current Audiencia Provincial de Las Palmas appellate tracks identified by the project as concerning: **(i)** the calificación appeal, **(ii)** the challenge/removal/separation of the Administrador Concursal, and **(iii)** the Administrador Concursal fee challenge;
+- the Valencia CaixaBank litigation insofar as it concerns the financing/mortgage/financial-product package tied to the hotel and the credit history feeding into or affected by Concurso 36/2012;
+- Meeting Point / FTI pre-concurso or insolvency-related proceedings in Las Palmas insofar as sources establish use, marketing, exploitation, available stock, benefit, solvency/liquidity representation, public-funds exposure or other direct relevance to Sun Park / Club SEI / Lava Verde;
+- the Arrecife mortgage-enforcement/dación/title chain insofar as it concerns the same secured credit, hotel assets, title or patrimonial effects that intersect with the concurso;
+- the Cuatrecasas cambiario / enforcement / La Laguna / Matkator procedural chain insofar as the claim, execution target, advice, security, hotel-related assets or resulting harm connect it to the broader Sun Park/concurso record;
+- Fiscalía files and responses across territorial or institutional offices insofar as they receive overlapping allegations/evidence concerning intra-concursal and extra-concursal criminal harm, asset/control loss, procedural conduct or enabling acts;
+- historical Montelanza/Molina minority proceedings in Arrecife and their appellate treatment, including the exploitation/possession/desahucio chain and any substitution/change of demanded party from CEXP/Community-related entities to Monterecco/Pink, where verified from primary procedural records; and
+- any later successor/private-actor, creditor, Community, AC, judge, operator or professional conduct that relies on, inherits, contradicts, benefits from, or procedurally reacts to those earlier proceedings.
+
+The exact court references, parties, statuses and current custodians must remain source-led. User-supplied descriptions are continuity instructions and investigative propositions until independently reconciled to the Master Register and primary documents.
+
+### 12.2 The three Audiencia Provincial appeals — unitary treatment rule
+
+The three Audiencia Provincial appeals must never be analysed as unrelated solely because each has a different procedural object. The digest must test the common factual and causal spine, including where applicable:
+
+**Concurso 36/2012 → conduct/decisions of the AC and court → estate/productive-unit/credit treatment → calificación narrative → challenge to AC continuation/separation → challenge to AC remuneration → appellate review and consequences.**
+
+For each of the three appeals, identify what facts, actors, filings, decisions, omissions, estate effects, control events, evidence and legal propositions recur across the other two. Maintain a convergence matrix showing **shared fact / proceeding A treatment / proceeding B treatment / proceeding C treatment / contradiction or omission / source status / appellate relevance**.
+
+The project’s position that atomising those appeals can obscure a common causal and evidential picture must be preserved as an attributed litigation/forensic contention, not silently converted into an established finding about judicial motive or intent.
+
+### 12.3 Fragmentation / atomisation audit
+
+For every material proceeding, ask:
+
+1. What material fact, asset effect, credit event, control event, filing, allegation or evidence exists elsewhere in the corpus that this proceeding should at least be tested against?
+2. Was that cross-proceeding relevance acknowledged, rejected, not raised, not located, or left unresolved?
+3. Did compartmentalised treatment produce a different factual premise in another file?
+4. Did one file treat a party/entity/asset/credit/Community/operator relationship differently from another?
+5. Did fragmentation affect standing, debtor identity, authority, title, possession, estate value, productive-unit continuity, solvency/creditor treatment, criminal-harm analysis, damages or appellate review?
+6. Who, if anyone, obtained a documented procedural or patrimonial benefit from the separation of the narratives?
+7. Is that benefit a neutral consequence, contested project inference, or supported actor-specific evidence of knowing use or enablement?
+8. What source would be needed to move the proposition from hypothesis → attributed contention → documented fact?
+
+Never write “hidden”, “ignored”, “enabled”, “misused”, “benefited”, “atomised deliberately” or equivalent as an established fact merely because the files were treated separately. Preserve the project’s allegation, identify the alleged beneficiary/enabler, and test it against primary sources, contrary evidence and actor-specific knowledge/intent.
+
+### 12.4 Historical-to-current lineage rule
+
+Earlier possession, exploitation, desahucio, mortgage, cambiario, enforcement, tax, tourism, Community and criminal files must be reverse-traced into the concurso and forward-traced into later control, adjudication, operator, creditor, AC, judicial, Fiscalía and appellate consequences wherever the evidence supports the chain.
+
+A change of party name, successor, assignment, renaming, creditor transfer, operator change or procedural substitution must never break the graph. Preserve lineage explicitly as **same legal person renamed**, **successor/assignee**, **different legal person**, **procedural substitution**, or **unresolved**; never merge by narrative convenience.
+
+### 12.5 Ministerio Fiscal unitary-recognition audit
+
+Where multiple Fiscalía offices/files received overlapping allegations or evidence, maintain a matrix of **office/file → material allegations/evidence received → related proceedings/assets → referral/response → whether cross-file relevance was acknowledged → open gap**. The project’s contention that no single unitary acknowledgement of the full intra- and extra-concursal harm emerged must be tested as a corpus-wide proposition and must not be upgraded beyond the located record.
+
+### 12.6 Governing anti-fragmentation sentence
+
+> **Keep the proceedings legally distinct, but never analytically isolated where the evidence shows a shared asset, credit, control, exploitation, estate, transaction, actor, event or harm continuum. Fragmentation itself is an audit object: test what was separated, what should have been cross-recognised, who benefited, what was lost or obscured, and what actor-specific evidence supports any allegation of knowing atomisation or enablement.**
