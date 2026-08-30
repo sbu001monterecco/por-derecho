@@ -99,8 +99,8 @@ A proceeding with no direct canonical edge may be genuinely independent or may e
 
 ## Continuity / deletion safety
 
-The original map was merged and deployed through PR #1221. The initial Case Prism was merged and deployed through PR #1227. The corrective v2 reader contract is separately `PR_OPEN` in PR #1228 on `audit/ascan-360-case-prism-20260830` and must not inherit the earlier live status.
+The original map was merged and deployed through PR #1221. The initial Case Prism was merged and deployed through PR #1227. The corrective v2 reader contract has its own independently verified lifecycle: PR #1228 final head `62154f63c8ccb319a4f11d8c325af0a7d5e3b38e` merged as `ad4cd3a4472004602f529db58843caf36073fa8a`; the dedicated Case Prism audit succeeded in run 33330927083; Pages deployment succeeded in run 33330926551; and all 14 declared changed routes plus six public Case Prism/control assets matched the merged source byte for byte on no-cache live HTTP readback.
 
-After the corrective PR is merged and independently read back live, the originating execution context can be deleted without losing the map architecture, prompt, anti-fragmentation rule, schemas, public routes or relationship boundaries because those are repository-controlled. This does not authorise deletion of native evidence, private custody sources, backups or other retention-controlled material.
+The map and corrective reader contract are therefore `DELETION_SAFE_WITH_OPEN_EVIDENCE`: the originating execution context can be deleted without losing the architecture, controlling prompt, anti-fragmentation rule, schemas, public routes, validation evidence or relationship boundaries because those are repository-controlled. The exact 20-path ledger is preserved in `publication-manifests/ascan-360-case-prism-v2-repair-20260830.json` and `docs/deletion-audits/2026-08-30-a-scan-360-case-prism-v2-repair-continuity.md`.
 
-Before claiming final live/deletion-safe status for this implementation, verify the PR merge commit, CI audit, Pages deployment for that exact descendant main, all 14 declared changed routes and the public Case Prism assets.
+This status does not authorise deletion of native evidence, private custody sources, backups or other retention-controlled material, and it does not close the expressly preserved counsel/procurador, Valencia or DP 1956 evidence gaps.

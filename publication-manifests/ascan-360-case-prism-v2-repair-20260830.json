@@ -1,11 +1,11 @@
 {
   "schema": "por-derecho.publication-manifest.v1",
-  "manifest_version": "1.0.0",
+  "manifest_version": "1.1.0",
   "publication_id": "PD-SP-AScan360-CASE-PRISM-V2-REPAIR-20260830-01",
   "owner": "Por Derecho / Project Sun Rock",
   "control_date": "2026-08-30",
-  "current_state": "PR_OPEN",
-  "state": "PR_OPEN",
+  "current_state": "DELETION_SAFE",
+  "state": "DELETION_SAFE",
   "purpose": "Close the reader-visible convergence and fragmentation implementation gap with a complete decision-dependency matrix, stable swimlane, exact-proceeding isolation and nine audience lenses, while consolidating two controlling correction overlays and preserving evidential boundaries.",
   "requested_control_baseline_sha": "3473d8c399d990b45ad58dd9a2aa8f8caf0d6814",
   "actual_base_main_sha": "aac741320cd9541ecaae564db89188cb941dd645",
@@ -13,7 +13,9 @@
   "pull_request": 1228,
   "pull_request_url": "https://github.com/sbu001monterecco/por-derecho/pull/1228",
   "initial_implementation_head_sha": "0ed308f68b39354f30ae6a9b98eb6bf0eda1c4bf",
-  "implementation_tree_sha": "4d440b27f6cb689ee365c22171bd7d85baf5a790",
+  "final_pr_head_sha": "62154f63c8ccb319a4f11d8c325af0a7d5e3b38e",
+  "implementation_tree_sha": "ac36225aeb6b8dd67ffe3f5c6a1296f37d0aae5d",
+  "merge_sha": "ad4cd3a4472004602f529db58843caf36073fa8a",
   "expected_routes": {
     "en": [
       "en/index.html",
@@ -83,16 +85,16 @@
     "changed_public_routes": 14
   },
   "controlled_views": {
-    "decision_dependency_matrix": "IMPLEMENTED_IN_SOURCE",
-    "convergence_cluster": "IMPLEMENTED_IN_SOURCE",
-    "parallel_proceedings_swimlane": "IMPLEMENTED_IN_SOURCE",
-    "fragmentation_audit": "IMPLEMENTED_IN_SOURCE",
-    "exact_proceeding_isolation": "IMPLEMENTED_IN_SOURCE",
-    "audience_lens": "IMPLEMENTED_IN_SOURCE"
+    "decision_dependency_matrix": "LIVE_VERIFIED",
+    "convergence_cluster": "LIVE_VERIFIED",
+    "parallel_proceedings_swimlane": "LIVE_VERIFIED",
+    "fragmentation_audit": "LIVE_VERIFIED",
+    "exact_proceeding_isolation": "LIVE_VERIFIED",
+    "audience_lens": "LIVE_VERIFIED"
   },
   "canonical_repairs": {
-    "VAL-CIV-001": "Physical field consolidation prepared without creating a duplicate identity; overlay retained as provenance.",
-    "GC-CRI-009": "Provisional dismissal and no established filed reform/subsidiary appeal prepared for canonical publication.",
+    "VAL-CIV-001": "Physical field consolidation is merged and deployed without creating a duplicate identity; overlay is retained as provenance.",
+    "GC-CRI-009": "The merged and deployed register records provisional dismissal and no established filed reform/subsidiary appeal.",
     "GC-APP-004": "Parent corrected to appealed judgment GC-CAL-002.",
     "LZ_parent_graph": "LZ-CIV-040 / LZ-CIV-041 parent cycle removed.",
     "GC-APP-007": "Not used as an exact proceeding in the Case Prism; exact removal rolls remain GC-APP-005 and GC-APP-006."
@@ -110,8 +112,7 @@
   "known_open_gaps": [
     "Counsel/procurador lineage is controlled but denominator-incomplete; CP-GAP-004 and CP-GAP-005 are exposed in active coordinates.",
     "Native/certified Valencia file completeness, pleadings, merits disposition, service and finality remain open.",
-    "The signed DP 1956 provisional-dismissal order and current status/finality certification remain primary-source targets.",
-    "Browser rendering has not been executed locally because the available runtime lacks a browser binary; PR CI must run the Playwright smoke."
+    "The signed DP 1956 provisional-dismissal order and current status/finality certification remain primary-source targets."
   ],
   "local_validation": {
     "case_prism_structural_audit": "passed: 102/101, 18x12=216, zero unexplained coordinates, exact isolation, nine lenses",
@@ -123,15 +124,95 @@
     "git_diff_check": "passed",
     "publication_integrity": "passed: 93 manifests and the exact 36-file origin/main...HEAD denominator"
   },
+  "validation": {
+    "final_pr_head_sha": "62154f63c8ccb319a4f11d8c325af0a7d5e3b38e",
+    "final_pr_head_tree_sha": "ac36225aeb6b8dd67ffe3f5c6a1296f37d0aae5d",
+    "pr_workflow_runs": {
+      "count": 29,
+      "result": "success"
+    },
+    "post_merge_case_prism_audit": {
+      "run_id": 33330927083,
+      "run_number": 32,
+      "head_sha": "ad4cd3a4472004602f529db58843caf36073fa8a",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    "post_merge_publication_integrity_run_id": 33330927131,
+    "post_merge_audience_experience_run_id": 33330927116,
+    "result": "success",
+    "evidence": [
+      "PR #1228 final head 62154f63c8ccb319a4f11d8c325af0a7d5e3b38e passed all 29 workflow runs before merge.",
+      "PR #1228 merged as ad4cd3a4472004602f529db58843caf36073fa8a with implementation tree ac36225aeb6b8dd67ffe3f5c6a1296f37d0aae5d.",
+      "Post-merge Case Prism audit run 33330927083, publication-integrity run 33330927131 and audience-experience run 33330927116 succeeded.",
+      "Pages deployment run 33330926551 succeeded for the exact merge SHA before independent no-cache live readback."
+    ]
+  },
+  "deployment_evidence": {
+    "workflow": "pages build and deployment",
+    "pages_run_id": 33330926551,
+    "pages_run_number": 1296,
+    "head_sha": "ad4cd3a4472004602f529db58843caf36073fa8a",
+    "status": "completed",
+    "conclusion": "success"
+  },
+  "live_urls": [
+    "https://sbu001monterecco.github.io/por-derecho/en/proceedings-map/#case-prism",
+    "https://sbu001monterecco.github.io/por-derecho/es/mapa-procedimientos/#case-prism"
+  ],
+  "live_verification_evidence": {
+    "result": "20_OF_20_EXACT_BYTES_MATCHED",
+    "verified_at": "2026-08-30T19:33:39Z",
+    "method": "No-cache public HTTP readback with exact byte and SHA-256 comparison against merge ad4cd3a4472004602f529db58843caf36073fa8a.",
+    "verified_merge_sha": "ad4cd3a4472004602f529db58843caf36073fa8a",
+    "paths": [
+      {"path": "en/index.html", "bytes": 226864, "sha256": "61d6d3544c1968cf7a4cdccf57c711cf3735dcffd0276cb814e51226a6843174"},
+      {"path": "en/proceedings-map/index.html", "bytes": 15402, "sha256": "56ad9dfa11e11990056472ab6aaff8c09d3c727b36a11aefbfb05d5bc1b953ed"},
+      {"path": "en/master-proceedings-register/index.html", "bytes": 7899, "sha256": "66534df26d76ae2083fc6bdd6bbbba97f7f4c4dbd08d83c13fe443f7dd5ce3e1"},
+      {"path": "en/public-authority-unitary-case-reconstruction/index.html", "bytes": 27688, "sha256": "adeeccfece2b2decc18b038b930c370c192b34c53299e4f76bd8c9e577c9e144"},
+      {"path": "en/calificacion-rpl-2523-evidence-map/index.html", "bytes": 12632, "sha256": "eb8f6eb525afa81ae3ee4ed4ed764f6fc5a89fd2c25fa42ad00fbac7849fcf17"},
+      {"path": "en/insolvency-36-2012-administrator-removal-fees/index.html", "bytes": 20912, "sha256": "75d09763f0baf99db9277c8bed2cf6632783576706c8a9b9ea71938d778dc31c"},
+      {"path": "en/fiscalia-dip-2-2026/index.html", "bytes": 60211, "sha256": "08ce4f7561b23474068e0247d7d6d41ff38edeabfaa025691f1c35e547208b3e"},
+      {"path": "es/index.html", "bytes": 235970, "sha256": "6828591d3b1b24d2951d2349bff183cc308b4474f117ff561456011e7aa00dab"},
+      {"path": "es/mapa-procedimientos/index.html", "bytes": 16555, "sha256": "9ea6a1cb3a6ff1518733e498c9063d4376e940cdf994351d92e26f895b4eba84"},
+      {"path": "es/registro-maestro-procedimientos/index.html", "bytes": 8522, "sha256": "04a8211c793a94233cb7dd5bb97cb6bd7e108f1f72db9dfcc5d95257f1f6f5bc"},
+      {"path": "es/reconstruccion-unitaria-autoridades-publicas/index.html", "bytes": 28607, "sha256": "3e4c18094485bbdaefe9644d595856e734f39540b819cd36b1534293f9a16ec3"},
+      {"path": "es/calificacion-rpl-2523-mapa-prueba/index.html", "bytes": 13204, "sha256": "940c5f7021a18d0e1644b3bc0acd1795451cc51e5f445826d33e0408c91746b3"},
+      {"path": "es/concurso-36-2012-separacion-ac-honorarios/index.html", "bytes": 21555, "sha256": "f0d6571bdce1c7de0111419af6516bc3dadad3eb810720b3728d30490cd38cbc"},
+      {"path": "es/fiscalia-dip-2-2026/index.html", "bytes": 60961, "sha256": "ded449bff08bcb2b8e241236b409700f387c204c324ee13266246fbef1126932"},
+      {"path": "assets/data/proceedings-case-prism-v1.json", "bytes": 266588, "sha256": "c092f81e69aa1552f1dba0078d8d49a213fc1e0389da08fd33a5df0fcdbaaa41"},
+      {"path": "assets/data/proceedings-interconnectivity-schema-v1.json", "bytes": 6879, "sha256": "9a32750198102ece00d1c82fc3a06f4c258e651b0a1117a7e947abbda58eaf31"},
+      {"path": "assets/proceedings-interconnectivity-map-20260830.js", "bytes": 44248, "sha256": "b24e7accb141f34a65615bffa4d97d0fc02a905184e4f05041ebe24cc975cad5"},
+      {"path": "assets/proceedings-interconnectivity-map-20260830.css", "bytes": 18568, "sha256": "9d18e8ec4692d19a36484c43afced42288d64863736df1763dacae756a7ed552"},
+      {"path": "archive/PROCEEDINGS_MASTER_REGISTER.csv", "bytes": 61440, "sha256": "b46301ef2b145698de3d7e24f0be4e69370807f54e6cd8fa09b4cb4b841e0afc"},
+      {"path": "archive/PROCEEDINGS_CASE_PRISM_V1_SEED_30AUG2026.json", "bytes": 28313, "sha256": "1de9bcddec0765377daa643670dacec66f6b5284ef4386310a972ef593c3dba8"}
+    ],
+    "boundary": "Exact publication verification proves the served implementation bytes and lifecycle only; it is not proof of any allegation, legal conclusion or open-source proposition."
+  },
   "verification": {
     "source_prepared": true,
     "pull_request_created": true,
-    "ci_green": false,
-    "merged": false,
-    "main_readback": false,
-    "pages_deployed": false,
-    "live_http_readback": false,
-    "deletion_safe": false
+    "ci_green": true,
+    "merged": true,
+    "main_readback": true,
+    "pages_deployed": true,
+    "live_http_readback": true,
+    "deletion_safe": true
   },
-  "publication_boundary": "PR_OPEN proves that PR #1228 carries the exact implementation tree and that local non-browser validation passed. It does not inherit the live status of PR #1221 or PR #1227 and must not be described as CI-green, merged, deployed, live-verified or deletion-safe."
+  "deletion_record": {
+    "status": "DELETION_SAFE_WITH_OPEN_EVIDENCE",
+    "continuity_documents": [
+      "docs/deletion-audits/2026-08-30-a-scan-360-case-prism-v2-repair-continuity.md",
+      "docs/deletion-audits/2026-08-30-unitary-proceedings-interconnectivity-map-continuity.md"
+    ],
+    "open_evidence_preserved": true,
+    "chat_required_for_future_work": false,
+    "scope": "The implementation decisions, exact source, validation, merge, deployment, readback ledger and restart boundaries are repository-controlled.",
+    "exclusions": [
+      "Native evidence and private custody sources remain subject to their own retention controls.",
+      "Backups and independent disaster recovery are not certified by this publication closeout.",
+      "The three known open evidence gaps remain open."
+    ]
+  },
+  "publication_boundary": "DELETION_SAFE_WITH_OPEN_EVIDENCE records PR #1228 as CI-green, merged, deployed and independently live-verified at 20 of 20 exact public paths. It proves implementation and continuity, not the merits of any allegation or completion of the preserved evidence gaps."
 }
