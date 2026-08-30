@@ -4,7 +4,7 @@
 
 **Date:** 30 August 2026
 
-**Repository state:** prepared for branch validation and publication
+**Repository state:** live verified through content PR [#1247](https://github.com/sbu001monterecco/por-derecho/pull/1247), merge `5939ed3badad20193a4aba05ca62047d6bc6ff89` and Pages run [33341536674 / #1312](https://github.com/sbu001monterecco/por-derecho/actions/runs/33341536674)
 
 ## Preserved correction
 
@@ -30,6 +30,8 @@ The automated Colabora sequence is represented as one delivery event comprising 
 
 ## Deletion-safety verdict
 
-**DELETION-SAFE WITH OPEN EVIDENCE.** Repository reasoning and implementation state will be recoverable after reviewed merge and live deployment verification. `ME-110` remains open for later staged production. Private source binaries and access mechanics are deliberately excluded and are not safe to delete merely because the publication is controlled.
+**DELETION-SAFE WITH OPEN EVIDENCE / LIVE VERIFIED.** The reviewed merge was deployed by the exact-SHA Pages build. Cache-busted readback matched all 13 changed public resources byte-for-byte to the merge tree, and all eight affected human-readable routes returned HTTP 200. Repository reasoning and implementation state are recoverable from the public and canonical controls. `ME-110` remains open for later staged production. Private source binaries and access mechanics are deliberately excluded and are not safe to delete merely because the publication is controlled.
+
+The publication PR suite completed with 48 successes and one conditional skip. On the merge SHA, 49 of 56 workflows succeeded; seven inherited live monitors failed on unchanged or stale specialist expectations. Those failures are recorded as an explicit boundary and are not represented as publication-gate failures or as an all-green suite.
 
 No email reply, filing, institutional contact or other external communication was authorised or performed by this publication task.
