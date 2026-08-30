@@ -7,12 +7,16 @@ const routes = [
 ];
 
 async function assertFocusedAndVisible(page, selector, label) {
-  await page.waitForFunction((target) => document.activeElement?.matches(target), selector);
-  const visible = await page.locator(selector).evaluate((element) => {
-    const rect = element.getBoundingClientRect();
-    return rect.top >= -10 && rect.top < window.innerHeight * 0.7;
-  });
-  if (!visible) throw new Error(`${label}: focused target is outside the first viewport`);
+  try {
+    await page.waitForFunction((target) => {
+      const element = document.querySelector(target);
+      if (!element || document.activeElement !== element) return false;
+      const rect = element.getBoundingClientRect();
+      return rect.top >= -10 && rect.top < window.innerHeight * 0.7;
+    }, selector);
+  } catch {
+    throw new Error(`${label}: target did not become focused and visible`);
+  }
 }
 
 const browser = await chromium.launch({ headless: true });
