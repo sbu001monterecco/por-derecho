@@ -64,6 +64,7 @@
     "Gil Marer's present criminal-not-merely-civil-and-not-innocuous attribution preserved as an allegation and not an adjudicated finding",
     "complete actor-to-action control for exactly 17 public people and three protected role-only references across nine multi-track classifications",
     "continuous-integration enforcement of temporal-layer separation, finite actor/action coverage, evidence status, limiting propositions and bilingual interlinks"
+    ,"supersession-aware repair of the pre-existing Concurso 36 complete-record CI date rule so the 8 February Auto date and 15 February notification/custody layer remain separate"
   ],
   "expected_source_files": [
     ".github/governance/COMMUNITY_CLAIMED_OFFICE_CRIMINAL_FIRST_AUTHORITY_PROTOCOL_30AUG2026.md",
@@ -136,6 +137,7 @@
     "scripts/smoke_proceedings_case_prism.mjs",
     "scripts/validate_alberto_meeting_point_cross_proceeding.py",
     "scripts/validate_current_reverse_engineered_digest.py",
+    "scripts/validate_concurso36_complete_record.py",
     "scripts/validate_dp3205_2014_publication.py",
     "scripts/validate_legal_professional_register.py",
     "scripts/validate_post7june_2022_deliberate_exclusion.py",

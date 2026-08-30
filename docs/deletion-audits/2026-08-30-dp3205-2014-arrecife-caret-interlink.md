@@ -59,6 +59,13 @@ temporal-ledger separation, action coverage, protected-role coverage and recipro
 bilingual links. Gil expressly authorised the governance/automation change and the
 normal publication chain in the current authenticated thread on 30 August 2026.
 
+The PR also exposed a pre-existing contradictory Concurso 36 complete-record CI rule:
+the validator still prohibited the 8 February 2018 date even though the 29 August
+primary reinspection and generated critical-reader pages correctly separate the Auto's
+8 February body date from the copy's 15 February notification/custody layer. The
+bounded automation repair now requires both layers and forbids their merger; it does
+not change the underlying pages or add a DP 3205 attribution.
+
 ## Source and privacy boundary
 
 - The summons is an official procedural notice; it establishes a scheduled hearing, not that the hearing occurred or how the case ended.

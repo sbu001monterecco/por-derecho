@@ -1124,7 +1124,7 @@ for marker in (
 manifest_files = manifest.get("expected_source_files", [])
 require(isinstance(manifest_files, list), "manifest expected_source_files must be an array")
 if isinstance(manifest_files, list):
-    require(len(manifest_files) == 112, "manifest must inventory all 112 changed publication paths")
+    require(len(manifest_files) == 113, "manifest must inventory all 113 changed publication paths")
     require(len(set(manifest_files)) == len(manifest_files), "manifest source inventory contains duplicates")
     for manifest_path in manifest_files:
         require(isinstance(manifest_path, str) and (ROOT / manifest_path).is_file(), f"manifest source file is missing: {manifest_path}")
