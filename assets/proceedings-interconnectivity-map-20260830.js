@@ -488,7 +488,10 @@
         activateView(mapped || 'map', false, Boolean(mapped));
       });
       setTabState(); draw();
-      if (hashToView[window.location.hash]) revealActivePanel();
+      if (hashToView[window.location.hash]) {
+        revealActivePanel();
+        window.setTimeout(revealActivePanel, 150);
+      }
     } catch (err) {
       root.innerHTML = `<div class="pdim-error"><strong>${copy.error}</strong><p>${esc(err.message || err)}</p></div>`;
     }

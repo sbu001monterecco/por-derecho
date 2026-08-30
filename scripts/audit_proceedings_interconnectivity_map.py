@@ -201,7 +201,7 @@ if not errors:
         "role=\"tabpanel\"": "tab panel", "role=\"tab\"": "semantic tabs", "prismUnavailable": "degraded state",
         "sourceScope": "proposition-level source boundary", "outsideSelected": "accessible suppressed state",
         "evidenceStatusLabel": "bilingual evidence status",
-        "revealActivePanel": "deep-link panel reveal", "mapped || 'map'": "hash back-navigation restore",
+        "revealActivePanel": "deep-link panel reveal", "setTimeout(revealActivePanel": "post-load deep-link focus stabilisation", "mapped || 'map'": "hash back-navigation restore",
         "addEventListener('input', () => draw())": "safe filter redraw",
     }
     for token, label in renderer_tokens.items():
@@ -221,7 +221,7 @@ if not errors:
     require("mapa-procedimientos" in es_clean and "registro-maestro-procedimientos" in es_clean, "ES clean room lacks map/register links")
     require("#case-prism" in en and "#case-prism" in es, "Case Prism CTA fragment missing")
     require(all(f'id="{anchor}"' in en and f'id="{anchor}"' in es for anchor in ("parallel-lanes", "isolation-test")), "deep-link anchors missing")
-    require(all(f"proceedings-interconnectivity-map-20260830.{ext}?v=20260830c" in en and f"proceedings-interconnectivity-map-20260830.{ext}?v=20260830c" in es for ext in ("js", "css")), "Case Prism asset cache version not advanced")
+    require(all(f"proceedings-interconnectivity-map-20260830.{ext}?v=20260830d" in en and f"proceedings-interconnectivity-map-20260830.{ext}?v=20260830d" in es for ext in ("js", "css")), "Case Prism asset cache version not advanced")
 
     refs = ["RPL 2523/2025", "RPL 3304/2025", "RPL 3319/2025", "RPL 421/2026"]
     require(all(ref in institutional for ref in refs), "three-appellate-object correction missing")
