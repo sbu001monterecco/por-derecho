@@ -1,29 +1,37 @@
 {
   "schema": "por-derecho.operational-truth.production-status.v2",
   "record_type": "OBSERVED_GITHUB_PAGES_DEPLOYMENT",
-  "observed_at": "2026-08-26T07:32:47Z",
+  "observed_at": "2026-08-30T12:00:29Z",
   "production_repository": "sbu001monterecco/por-derecho",
   "production_branch": "main",
   "public_host": "https://sbu001monterecco.github.io/por-derecho/",
-  "served_sha": "77e2ba300af45a953947160af63283a64512e876",
-  "source_tree_sha": "4f0ac26c5548ae44c68933306c68165cbb6c973e",
+  "served_sha": "a3e628708b9ce8a9a4509acf4e64aa20e7fa76d9",
+  "source_tree_sha": "9045eac8697d099b8ed3c1c464a941a2a830fdd6",
   "deployment": {
     "platform": "GitHub Pages",
     "workflow_name": "pages build and deployment",
     "workflow_path": "dynamic/pages/pages-build-deployment",
-    "workflow_run_id": 32942972472,
-    "run_number": 1128,
+    "workflow_run_id": 33306234549,
+    "run_number": 1287,
     "event": "dynamic",
     "status": "completed",
     "conclusion": "success",
-    "created_at": "2026-08-26T07:28:59Z",
-    "completed_at": "2026-08-26T07:29:45Z"
+    "created_at": "2026-08-30T10:20:19Z",
+    "completed_at": "2026-08-30T10:21:06Z"
   },
   "verification": {
-    "state": "LIVE_VERIFIED",
-    "current_exact_route_content_verification": "LIVE_VERIFIED_FOR_SERVED_SHA",
+    "state": "PAGES_BUILD_SUCCESS_WITH_TARGETED_PUBLIC_ROUTE_READBACK",
+    "current_exact_route_content_verification": "NOT_REPERFORMED_IN_THIS_OPERATIONAL_REFRESH",
+    "targeted_readback": {
+      "observed_at": "2026-08-30T12:00:29Z",
+      "scope": [
+        "English public-authority unitary case reconstruction remained publicly readable with the integrated criminal/investigative and parallel civil/concursal boundary",
+        "Spanish 7 June 2018 takeover route remained publicly readable with the LPB-versus-whole-hotel perimeter and criminal-procedural framing"
+      ],
+      "limit": "This targeted readback is not an exact-byte, complete-route or cache-independent verification of every public surface."
+    },
     "latest_live_verified_specialist_release": {
-      "state": "LIVE_VERIFIED",
+      "state": "HISTORICAL_LIVE_VERIFIED",
       "control_id": "PD-UNITARY-STATE-20260826-01",
       "source_publication_sha": "77e2ba300af45a953947160af63283a64512e876",
       "source_tree_sha": "4f0ac26c5548ae44c68933306c68165cbb6c973e",
@@ -41,9 +49,9 @@
         "CURRENT_UNITARY_STATE.json and the 26 August publication manifest parse and expose the promoted control",
         "The public position addendum and private-analysis prompt routes are readable without publishing Patricia mailbox identifiers, provider IDs, hashes, exact manifest counts or private content"
       ],
-      "limits": "Publication verification proves only the recorded deployment and public-route markers; it is not proof of the attributed enterprise allegation, any person's guilt, Penal Code articles 570 bis or 570 ter, an original pact, or evidential support from the Phase-A manifest."
+      "limits": "Historical exact-route verification remains valid for that SHA. It does not prove that the later 30-Aug main SHA is byte-identical on every route and it does not prove any attributed allegation or person's guilt."
     },
-    "meaning": "GitHub recorded a successful Pages build for the served SHA, and the dedicated specialist verifier recorded exact public-route readback for the same SHA. These publication facts do not prove the attributed allegation or any legal or evidential conclusion."
+    "meaning": "GitHub recorded a successful Pages build for the exact 30-Aug observed main SHA. Targeted public routes were readable during the audit. The most recent exact-route specialist verification retained here is historical and is not silently promoted to the later SHA."
   },
   "specialist_state_routing": {
     "unitary_case_and_evidence_state": "ops/CURRENT_UNITARY_STATE.json",
