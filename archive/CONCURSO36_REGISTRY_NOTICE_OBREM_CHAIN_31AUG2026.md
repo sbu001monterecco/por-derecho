@@ -75,3 +75,15 @@ Error plus correction is insufficient for judicial prevaricación. The proof que
 - **What changed:** the 28-Dec package, 4-Jan delivery, 9-Jan Registrar response, 9-Jan qualification and later reported result are now one registered family; prior wording that the action/original/result were wholly pending is superseded.
 - **Must not be overstated:** no automatic personal notice before 9-Jan; no Registry collaboration finding; no blanket suspension; no automatic illegality/nullity; no criminal guilt; no proven common plan; no completed finca-by-finca or money/accounting reconciliation.
 - **Website consumers:** bilingual dedicated Registry/`ob rem` page, court-record control room, 2018 estate-protection page, AC, judge, Cuatrecasas, DP 748 and RIC/private-equity cross-links.
+
+## Publication closeout
+
+PR #1287 merged as `323dad7c079a551249a18f924d19669f72b58513`. The exact merge's Pages build succeeded and its deploy was superseded by the next cumulative current-main deployment, run `33446723239` at `fcea60ca338ebd53eb5fc07539f59ab357997e05`; the latter's build, report-build-status and deploy jobs all completed successfully. The PR #1287 merge is an ancestor of that deployed head.
+
+Post-deployment downloads were compared byte-for-byte with deployed `main`:
+
+- Spanish page SHA-256: `5477f052c0f4453f4a2f793af40845a55d9b5ee662bca2c5a700c1c3e7b3bb4c`;
+- English page SHA-256: `f8149b54368eb66f2dde59481fb4924a80acf228b4e4b05572be194960f3589f`;
+- machine supplement SHA-256: `2f58bc426ce151d2146da46d729b8e761d07bf2eb869c4c0f16c630ba783f774`.
+
+Repository continuity and public deployment are therefore `DELETION_SAFE`. Native evidential custody and the substantive open production items remain open exactly as stated above.

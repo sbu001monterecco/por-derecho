@@ -1,12 +1,35 @@
 {
   "schema": "por-derecho.publication-manifest.concurso36-registry-notice-obrem.v1",
   "publication_id": "concurso36-registry-notice-obrem-20260831",
-  "current_state": "PREPARED_PENDING_MERGE",
+  "current_state": "DELETION_SAFE",
   "owner": "sbu001monterecco",
   "generated": "2026-08-31",
   "purpose": "Publish the controlled bilingual 2018–2019 Registry notice, ob rem and non-convalidation reconstruction and register it as an eight-node family in the Concurso 36/2012 control room.",
-  "merge_sha": null,
-  "deployment_run_id": null,
+  "merge_sha": "323dad7c079a551249a18f924d19669f72b58513",
+  "deployment_run_id": 33446723239,
+  "validation": {
+    "evidence": [
+      "PR #1287 dedicated Registry notice chain run 33445204396: success",
+      "PR #1287 publication integrity run 33445204351: success",
+      "PR #1287 court-record reconstruction run 33445204461: success",
+      "Local repository preservation, audience experience, linked continuity, unitary prosecutorial, decision continuity, primary-Autos, bidder-anonymisation, visual-asset, Cuatrecasas DP748 and Sun Park 2018 protection controls: pass"
+    ]
+  },
+  "deployment_evidence": "PR #1287 merged as 323dad7c079a551249a18f924d19669f72b58513. That merge's Pages build succeeded; its deploy was superseded by cumulative current-main deployment run 33446723239 for fcea60ca338ebd53eb5fc07539f59ab357997e05, where build job 99667376829, report-build-status job 99667772862 and deploy job 99667772886 all completed successfully. PR #1287 is an ancestor of the deployed head.",
+  "live_urls": [
+    "https://sbu001monterecco.github.io/por-derecho/es/concurso-36-2012-aviso-registro-ob-rem/",
+    "https://sbu001monterecco.github.io/por-derecho/en/insolvency-36-2012-registry-ob-rem-notice/",
+    "https://sbu001monterecco.github.io/por-derecho/assets/data/concurso36-court-record-reconstruction-registry-notice-20260831.json"
+  ],
+  "live_verification_evidence": "After successful cumulative Pages run 33446723239, all three live endpoints returned HTTP 200 and their downloaded bytes matched deployed current main by SHA-256 at 2026-08-31T22:43:03Z.",
+  "deletion_record": "archive/CONCURSO36_REGISTRY_NOTICE_OBREM_CHAIN_31AUG2026.md",
+  "live_verification": {
+    "verified_at_utc": "2026-08-31T22:43:03Z",
+    "es_sha256": "5477f052c0f4453f4a2f793af40845a55d9b5ee662bca2c5a700c1c3e7b3bb4c",
+    "en_sha256": "f8149b54368eb66f2dde59481fb4924a80acf228b4e4b05572be194960f3589f",
+    "data_sha256": "2f58bc426ce151d2146da46d729b8e761d07bf2eb869c4c0f16c630ba783f774",
+    "method": "Live GitHub Pages bytes downloaded after successful cumulative deployment and compared byte-for-byte by SHA-256 with the same three paths at deployed current main."
+  },
   "expected_routes": {
     "es": ["es/concurso-36-2012-aviso-registro-ob-rem/index.html"],
     "en": ["en/insolvency-36-2012-registry-ob-rem-notice/index.html"]
@@ -25,5 +48,12 @@
     "The Cuatrecasas Registry intervention is affirmative protective conduct and defeats a total-abandonment formulation.",
     "No common criminal plan, procedural fraud, punishable insolvency offence or judicial prevaricación is established."
   ],
-  "publication_closeout": null
+  "publication_closeout": {
+    "pull_request": 1287,
+    "merge_sha": "323dad7c079a551249a18f924d19669f72b58513",
+    "deployed_main_sha": "fcea60ca338ebd53eb5fc07539f59ab357997e05",
+    "pages_run_id": 33446723239,
+    "live_verified": true,
+    "deletion_safe": true
+  }
 }
