@@ -2,7 +2,7 @@
   "schema": "por-derecho.publication-manifest.v1",
   "publication_id": "ministerio-fiscal-adverse-party-full-notice-20260831",
   "title": "Ministerio Fiscal adverse-party posture, full notice, E.G. 745 parallel response and Ricardo de Mosteyrín actor page",
-  "current_state": "PREPARED_PENDING_MERGE",
+  "current_state": "LIVE_VERIFIED",
   "owner": "Gil Marer / Por Derecho",
   "control_date": "2026-08-31",
   "repository": "sbu001monterecco/por-derecho",
@@ -31,6 +31,7 @@
     "assets/data/ministerio-fiscal-adverse-party-full-notice-v1.json",
     "assets/data/ricardo-de-mosteyrin-sampalo-v1.json",
     "assets/data/matter-identity-registry-v1.people.json",
+    "docs/deletion-audits/2026-08-31-ministerio-fiscal-adverse-party-full-notice-continuity.md",
     "archive/CORRECTION_REGISTER_CALIFICACION_ALERTADOR_RETALIATION_ADDENDUM_23AUG2026.md",
     "archive/MISSING_EVIDENCE_REGISTER_CALIFICACION_ALERTADOR_RETALIATION_ADDENDUM_23AUG2026.md"
   ],
@@ -45,13 +46,78 @@
   },
   "release": {
     "branch": "codex/fiscalia-full-notice-20260831",
-    "pull_request": null,
-    "reviewed_head_sha": null,
-    "merge_sha": null,
-    "pages_run": null
+    "pull_request": 1285,
+    "reviewed_head_sha": "389916e9605b21c06493bc31f7e7c0c3ce5e5e21",
+    "merge_sha": "fcea60ca338ebd53eb5fc07539f59ab357997e05",
+    "pages_run": 33446723239,
+    "pages_run_number": 1347
+  },
+  "validation": {
+    "evidence": [
+      "PR #1285 reviewed head 389916e9605b21c06493bc31f7e7c0c3ce5e5e21 passed the dedicated Ministerio Fiscal, Calificacion, publication-integrity, identity, audience, repository-preservation and OSINT controls before merge.",
+      "The final reviewed tree was reconciled additively against then-current main without force-push and preserved unrelated upstream controls.",
+      "GitHub Pages run 33446723239 for exact merge fcea60ca338ebd53eb5fc07539f59ab357997e05 completed build, report and deploy successfully.",
+      "No-cache readback returned HTTP 200 and exact merge-tree bytes for 22/22 changed ES/EN HTML routes plus both homepages."
+    ]
+  },
+  "merge_sha": "fcea60ca338ebd53eb5fc07539f59ab357997e05",
+  "deployment_evidence": {
+    "workflow": "pages build and deployment",
+    "pages_run_id": 33446723239,
+    "pages_run_number": 1347,
+    "url": "https://github.com/sbu001monterecco/por-derecho/actions/runs/33446723239",
+    "head_sha": "fcea60ca338ebd53eb5fc07539f59ab357997e05",
+    "head_tree": "bfec06aa753df325edc857b47aaa0c41fcabae1d",
+    "status": "completed",
+    "conclusion": "success",
+    "verified_at_utc": "2026-08-31T22:44:25Z"
+  },
+  "live_urls": [
+    "https://sbu001monterecco.github.io/por-derecho/es/ministerio-fiscal-aviso-expreso-dano-patrimonial/",
+    "https://sbu001monterecco.github.io/por-derecho/en/public-prosecution-full-notice-patrimonial-harm/",
+    "https://sbu001monterecco.github.io/por-derecho/es/ricardo-de-mosteyrin-sampalo/",
+    "https://sbu001monterecco.github.io/por-derecho/en/ricardo-de-mosteyrin-sampalo/",
+    "https://sbu001monterecco.github.io/por-derecho/es/tesis-uso-criminal-procedimiento-calificacion/",
+    "https://sbu001monterecco.github.io/por-derecho/en/insolvency-classification-criminal-misuse-thesis/",
+    "https://sbu001monterecco.github.io/por-derecho/es/dp-1901-2026/",
+    "https://sbu001monterecco.github.io/por-derecho/en/dp-1901-2026/",
+    "https://sbu001monterecco.github.io/por-derecho/es/fiscalia-inspeccion-exp-gub-745-2026/",
+    "https://sbu001monterecco.github.io/por-derecho/en/public-prosecution-inspection-exp-gub-745-2026/",
+    "https://sbu001monterecco.github.io/por-derecho/es/fiscalia-inspeccion-exp-gub-745-2026/persecucion-abierta-transparencia-31-agosto-2026.html",
+    "https://sbu001monterecco.github.io/por-derecho/en/public-prosecution-inspection-exp-gub-745-2026/open-prosecution-transparency-31-august-2026.html"
+  ],
+  "live_verification_evidence": {
+    "state": "LIVE_BYTES_VERIFIED",
+    "verified_at_utc": "2026-08-31T22:44:25Z",
+    "source_publication_sha": "fcea60ca338ebd53eb5fc07539f59ab357997e05",
+    "source_tree_sha": "bfec06aa753df325edc857b47aaa0c41fcabae1d",
+    "verified_html_count": 22,
+    "http_200_for_all": true,
+    "byte_identical_for_all": true,
+    "boundary": "This verifies public publication only; it does not establish formal service, institutional receipt, personal access, substantive answer or acceptance of the allegations."
   },
   "live_verification": {
-    "status": "PENDING",
-    "routes": {}
+    "status": "LIVE_BYTES_VERIFIED",
+    "verified_at_utc": "2026-08-31T22:44:25Z",
+    "merge_tree_sha": "bfec06aa753df325edc857b47aaa0c41fcabae1d",
+    "html_readback": "22/22 changed ES/EN HTML routes plus both homepages returned HTTP 200 and were byte-identical to the exact merge tree",
+    "critical_routes": {
+      "es/ministerio-fiscal-aviso-expreso-dano-patrimonial/index.html": {
+        "bytes": 14963,
+        "sha256": "6d94ef601a31c6f59108ba2f56e3ca5b4e185cd7a3b9d69fcd9a4830cdcef107"
+      },
+      "en/public-prosecution-full-notice-patrimonial-harm/index.html": {
+        "bytes": 14527,
+        "sha256": "ae111e1727fc4f47aceaab8011ca8eb6dd6a7f8618cf69db57ceb100918c839f"
+      },
+      "es/ricardo-de-mosteyrin-sampalo/index.html": {
+        "bytes": 10481,
+        "sha256": "90bfc45560b187ec3ecacee8127af070cb2ffec23ac4d4b0a8a0b9b6503edb44"
+      },
+      "en/ricardo-de-mosteyrin-sampalo/index.html": {
+        "bytes": 10266,
+        "sha256": "296783d8f18dd37fbd697b333e52b2673168cb4947a8f3ff5c7732cece437e25"
+      }
+    }
   }
 }

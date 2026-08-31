@@ -24,7 +24,7 @@
   },
   "notice_states": {
     "position_adopted": true,
-    "publicly_published": false,
+    "publicly_published": true,
     "prepared_for_delivery": false,
     "registered_or_served_by_this_release": false,
     "institutionally_received_from_this_release": false,
