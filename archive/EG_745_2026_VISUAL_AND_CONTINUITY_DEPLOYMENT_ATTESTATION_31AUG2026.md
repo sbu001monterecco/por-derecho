@@ -32,7 +32,7 @@ substituted for the reviewed release.
 
 ## Byte-identical live readback
 
-The repository-native gate carried by PR #1275 independently retrieved every
+The repository-native gate introduced through draft PR #1275 and carried unchanged by PR #1276 independently retrieved every
 Pages-visible path changed by PR #1274, with nonce/cache-busting, and compared
 the response bytes with the exact target Git tree.
 
@@ -110,7 +110,7 @@ The earlier pre-merge controls remain immutable historical checkpoints:
 - `EG_745_2026_VISUAL_PUBLICATION_SUPERSEDING_PREMERGE_CONTROL_31AUG2026.md`
 
 This attestation proves PR #1274 only. At authoring it makes **no claim** that
-the PR #1275 commit carrying this file is itself public. PR #1275's eventual
+the PR #1276 commit carrying this file is itself public. PR #1276's eventual
 merge, exact-SHA Pages deployment and live readback must be proved separately
 after they occur.
 

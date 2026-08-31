@@ -8,7 +8,7 @@
   "target_deployment_gate": "CLOSED_VERIFIED",
   "attested_release": "PR #1274 only",
   "attestation_artifact_publication_claim": "NONE",
-  "top_level_current_state_meaning": "The lifecycle of this PR #1275-carried attestation is distinct from the already verified PR #1274 target release.",
+  "top_level_current_state_meaning": "The lifecycle of this final PR #1276-carried attestation is distinct from the already verified PR #1274 target release.",
   "target_release": {
     "pull_request": 1274,
     "pull_request_url": "https://github.com/sbu001monterecco/por-derecho/pull/1274",
@@ -360,12 +360,14 @@
     "archive/EG_745_2026_VISUAL_PUBLICATION_CONTINUITY_AUDIT_31AUG2026.md",
     "archive/EG_745_2026_VISUAL_PUBLICATION_SUPERSEDING_PREMERGE_CONTROL_31AUG2026.md"
   ],
-  "scope_limit": "PR #1275's eventual merge, Pages deployment and live readback must be proved separately after they occur and are not projected into this attestation.",
+  "scope_limit": "PR #1276's eventual merge, Pages deployment and live readback must be proved separately after they occur and are not projected into this attestation.",
   "publication_id": "eg-745-2026-visual-deployment-attestation-20260831",
   "current_state": "PREPARED_PENDING_MERGE",
   "owner": "Por Derecho / Project Sun Rock",
   "expected_routes": {
     "es": [],
     "en": []
-  }
+  },
+  "final_carrier_pull_request": 1276,
+  "superseded_draft_pull_request": 1275
 }
