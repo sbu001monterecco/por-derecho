@@ -2,8 +2,8 @@
   "schema": "por-derecho.publication-manifest.v1",
   "publication_id": "community-actas-criminal-first-90-second-summary-20260831",
   "control_date": "2026-08-31",
-  "current_state": "DRAFT",
-  "state": "DRAFT",
+  "current_state": "LIVE_VERIFIED",
+  "state": "LIVE_VERIFIED",
   "owner": "Por Derecho / Project Sun Rock",
   "purpose": "Publish a bilingual plain-language 90-second, unitary and criminal-prosecutorial-first executive layer on the canonical 2011-2022 ACTA chronology, while preserving civil/horizontal-property, insolvency, title, operator, contrary-record and actor-specific proof controls.",
   "source_base": "e313c13bf46464015a72025dcd9264e61ec33107",
@@ -23,6 +23,14 @@
     "es": "https://sbu001monterecco.github.io/por-derecho/es/comunidad-instrumentalizacion/actas-2011-2022/#resumen-penal-90",
     "en": "https://sbu001monterecco.github.io/por-derecho/en/community-instrumentalisation/minutes-2011-2022/#criminal-summary-90"
   },
+  "live_urls": [
+    "https://sbu001monterecco.github.io/por-derecho/es/comunidad-instrumentalizacion/actas-2011-2022/#resumen-penal-90",
+    "https://sbu001monterecco.github.io/por-derecho/en/community-instrumentalisation/minutes-2011-2022/#criminal-summary-90",
+    "https://sbu001monterecco.github.io/por-derecho/es/comunidad-instrumentalizacion/",
+    "https://sbu001monterecco.github.io/por-derecho/en/community-instrumentalisation/",
+    "https://sbu001monterecco.github.io/por-derecho/es/hipotesis-criminal-unitaria-2011-presente/",
+    "https://sbu001monterecco.github.io/por-derecho/en/unitary-criminal-hypothesis-2011-present/"
+  ],
   "live_markers": {
     "es": "id=\"resumen-penal-90\"",
     "en": "id=\"criminal-summary-90\""
@@ -69,11 +77,54 @@
     "90-second layer to the RIC/title/funding dossier and decisive missing-evidence register"
   ],
   "validation": {
-    "status": "PENDING",
-    "evidence": []
+    "status": "PASS",
+    "evidence": [
+      "PR #1288 exact reviewed head 3252a518e2074c58425688ab3ef62d5df3676711: 20/20 pull-request workflows completed successfully.",
+      "Reviewed tree e7e7a662d9969159e6246eba234760f6e7c99bb1 was created from current main e313c13bf46464015a72025dcd9264e61ec33107 and merged without conflict with then-current main 77a3d30b8cf5d6a13d3a527caafa8972e058d5f8.",
+      "Repository preservation, publication integrity, audience experience, ACTA lineage, unitary criminal, AC/CAM, professional-network, control-plane, private-source and proceedings-interconnectivity gates passed."
+    ]
   },
-  "merge_sha": null,
-  "deployment_evidence": [],
-  "live_verification_evidence": null,
+  "release": {
+    "pull_request": 1288,
+    "pull_request_url": "https://github.com/sbu001monterecco/por-derecho/pull/1288",
+    "reviewed_head_sha": "3252a518e2074c58425688ab3ef62d5df3676711",
+    "reviewed_tree_sha": "e7e7a662d9969159e6246eba234760f6e7c99bb1",
+    "merge_method": "merge",
+    "merge_parent_current_main_sha": "77a3d30b8cf5d6a13d3a527caafa8972e058d5f8",
+    "merge_sha": "8cb83f50abc0c67d121b89d499ba91f931d5b24c",
+    "merge_tree_sha": "ab6e51dde9367255426b155e9d0e304928d520d6",
+    "merged_at_utc": "2026-08-31T23:03:09Z"
+  },
+  "merge_sha": "8cb83f50abc0c67d121b89d499ba91f931d5b24c",
+  "deployment_evidence": {
+    "pages_run_id": 33448997990,
+    "pages_run_number": 1333,
+    "url": "https://github.com/sbu001monterecco/por-derecho/actions/runs/33448997990",
+    "head_sha": "8cb83f50abc0c67d121b89d499ba91f931d5b24c",
+    "status": "completed",
+    "conclusion": "success",
+    "jobs": {
+      "build": "success",
+      "report_build_status": "success",
+      "deploy": "success"
+    }
+  },
+  "live_verification_evidence": {
+    "verified_at_utc": "2026-08-31T23:08:09Z",
+    "state": "LIVE_BYTES_VERIFIED",
+    "target_sha": "8cb83f50abc0c67d121b89d499ba91f931d5b24c",
+    "target_tree_sha": "ab6e51dde9367255426b155e9d0e304928d520d6",
+    "verified_public_file_count": 6,
+    "expected_public_file_count": 6,
+    "failure_count": 0,
+    "sha256": {
+      "es/comunidad-instrumentalizacion/actas-2011-2022/index.html": "ab76427869015f52cf2d9609e3998b9b26de5eaffe92fd3a60661616974360aa",
+      "en/community-instrumentalisation/minutes-2011-2022/index.html": "f2f10344d589d41ae91cecac6c9c0c1adc17129b3178b1bbe41be979a2fe317a",
+      "es/comunidad-instrumentalizacion/index.html": "53ec0d291f19a8cfa543152f21de055c2b6b5784dcaece1ea8e3f08fefae2f5c",
+      "en/community-instrumentalisation/index.html": "5ce313674e092de0fa1447dcf1a8ab45c90753674563b62c1e672555c6d279c2",
+      "es/hipotesis-criminal-unitaria-2011-presente/index.html": "608dc6f3cde0e9c94651c9701a44307f7d18239e3c6b97f5b751d0078a3d1a0a",
+      "en/unitary-criminal-hypothesis-2011-present/index.html": "2e41fc3b65ebc13e6fbbb855bd4776c87051464b7fa775b867cab6188680cd72"
+    }
+  },
   "deletion_record": null
 }
