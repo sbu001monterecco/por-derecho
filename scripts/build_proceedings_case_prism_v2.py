@@ -31,7 +31,7 @@ LANES = [
     {"id": "valencia", "en": "Valencia · CaixaBank", "es": "Valencia · CaixaBank", "master_ids": ["VAL-CIV-001"]},
     {"id": "meetingpoint", "en": "Meeting Point 357/2024 · FTI bridge open", "es": "Meeting Point 357/2024 · puente FTI abierto", "master_ids": ["GC-CONT-025"]},
     {"id": "tenerife", "en": "Tenerife · separate Matkator / Cuatrecasas files", "es": "Tenerife · expedientes separados Matkator / Cuatrecasas", "master_ids": ["TF-CIV-001", "TF-CIV-002", "TF-CRI-003"]},
-    {"id": "fiscalia", "en": "Ministerio Fiscal · selected controlled files", "es": "Ministerio Fiscal · expedientes controlados seleccionados", "master_ids": ["GC-FIS-013", "GC-FIS-016", "GC-FIS-017", "GC-FIS-018"]},
+    {"id": "fiscalia", "en": "Ministerio Fiscal · 21 exact + 3 unresolved", "es": "Ministerio Fiscal · 21 exactos + 3 no resueltos", "master_ids": ["LZ-FIS-007", "GC-FIS-011", "GC-FIS-012", "GC-FIS-013", "GC-FIS-014", "GC-FIS-015", "GC-FIS-016", "GC-FIS-017", "GC-FIS-018", "LZ-FIS-036", "LZ-FIS-045", "TF-FIS-007", "GC-FIS-032", "TF-FIS-008", "GC-FIS-033", "NAT-FIS-004", "GC-FIS-034", "NAT-FIS-005", "GC-FIS-035", "NAT-FIS-006", "NAT-FIS-007", "TF-FIS-009", "TF-FIS-010", "UNK-FIS-001"]},
     {"id": "supervision", "en": "CGPJ supervision / LAJ registrations", "es": "Supervisión CGPJ / registros LAJ", "master_ids": ["GC-GOV-019", "GC-GOV-020", "GC-LAJ-021"]},
     {"id": "historical", "en": "Historical possession / exploitation", "es": "Posesión / explotación histórica", "master_ids": ["LZ-JUD-001", "LZ-JUD-FAM-006", "LZ-REF-042"]},
     {"id": "publicmoney", "en": "Administrative / public-money routes", "es": "Vías administrativas / fondos públicos", "master_ids": ["NAT-AID-001", "NAT-TES-001", "X-REG-001", "X-TAX-002"]},
@@ -96,10 +96,10 @@ SOURCES = {
         "evidence_status": "PUBLIC_CONTROLLED_PROCEDURAL_DOSSIER",
     },
     "SRC-FISCALIA": {
-        "label_en": "Fiscalía DIP 2/2026 public dossier",
-        "label_es": "Expediente público Fiscalía DIP 2/2026",
-        "href_en": "en/fiscalia-dip-2-2026/",
-        "href_es": "es/fiscalia-dip-2-2026/",
+        "label_en": "Fiscalía communications/proceedings register",
+        "label_es": "Registro de comunicaciones/procedimientos de Fiscalía",
+        "href_en": "en/public-prosecution-communications-proceedings/",
+        "href_es": "es/fiscalia-comunicaciones-procedimientos/",
         "evidence_status": "PUBLIC_CONTROLLED_INSTITUTIONAL_DOSSIER",
     },
     "SRC-MEETING": {
@@ -444,7 +444,7 @@ CELL_OVERRIDES = {
     },
     "P05": {
         "calificacion": {"master_ids": ["GC-APP-004"]},
-        "fiscalia": {"note_en": "Selected controlled subset: DI 248/2018, DI 22/2026, DIP 2/2026 and EG 49/2026. This is not the complete cross-office denominator.", "note_es": "Selección controlada: DI 248/2018, DI 22/2026, DIP 2/2026 y EG 49/2026. No es el denominador completo entre oficinas."},
+        "fiscalia": {"note_en": "Complete current public denominator: 21 exact Fiscalía files plus three controlled unresolved references. References do not merge files or prove cross-file examination.", "note_es": "Denominador público actual completo: 21 expedientes exactos de Fiscalía y tres referencias no resueltas controladas. Las referencias no fusionan expedientes ni prueban examen entre ellos.", "master_ids": ["LZ-FIS-007", "GC-FIS-011", "GC-FIS-012", "GC-FIS-013", "GC-FIS-014", "GC-FIS-015", "GC-FIS-016", "GC-FIS-017", "GC-FIS-018", "LZ-FIS-036", "LZ-FIS-045", "TF-FIS-007", "GC-FIS-032", "TF-FIS-008", "GC-FIS-033", "NAT-FIS-004", "GC-FIS-034", "NAT-FIS-005", "GC-FIS-035", "NAT-FIS-006", "NAT-FIS-007", "TF-FIS-009", "TF-FIS-010", "UNK-FIS-001"]},
     },
     "P06": {
         "tenerife": {"note_en": "Juicio Cambiario 1048/2019, ETJ 163/2020 and DP 748/2026 are separately registered files; no parent/continuation edge is asserted.", "note_es": "Juicio Cambiario 1048/2019, ETJ 163/2020 y DP 748/2026 son expedientes registrados por separado; no se afirma relación padre/continuación."},
