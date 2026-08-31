@@ -45,7 +45,7 @@ Times below are UTC as recorded by Gmail.
 | 1 | Fiscalía de Área de Arrecife–Lanzarote–Puerto del Rosario | `Exp. Gub. 86/2026 — aportación sobrevenida, módulo aforado separado y preservación PwC/Grant Thornton/RSM` | 21:44:59 | `1a021226e704a80c` | Sent; receiving reference and substantive response pending |
 | 2 | Fiscalía Provincial de Las Palmas / DI 22/2026 | `DI 22/2026 / REGAGE26e00070237051 — módulo aforado separado, fuentes profesionales y coordinación con Arrecife` | 21:48:10 | `1a0212557d961158` | Controlling version sent; custody/association response pending |
 | 3 | Fiscalía Superior de Canarias | `EG 112/2026 — precisión sobre aforamiento, objeto separado y fuentes sobrevenidas` | 21:50:36 | `1a02127902fee3ed` | Clarification decree dated 23 Aug and notified 25 Aug located; closure maintained; newer civil/mercantile matters attributed territorially to Provincial Las Palmas |
-| 4 | Inspección Fiscal, through central FGE channels | `A la atención de la Fiscal de Sala Jefa de la Inspección Fiscal — aforamiento, trazabilidad y fuentes profesionales Sun Park` | 21:54:11 | `1a0212ad91efcb1b` | Sent; registration and transfer to Inspection pending |
+| 4 | Inspección Fiscal, through central FGE channels | `A la atención de la Fiscal de Sala Jefa de la Inspección Fiscal — aforamiento, trazabilidad y fuentes profesionales Sun Park` | 21:54:11 | `1a0212ad91efcb1b` | Central receipt acknowledged by FGE Technical Secretariat on 21 Aug; transfer to Inspection, E.G. 745 association and consideration remain unproved |
 | 5 | Fiscalía General del Estado | `A la Fiscal General del Estado — coordinación central, módulo aforado y expansión profesional/económica Sun Park` | 21:56:16 | `1a0212cc23ebd938` | Sent; central association/coordination response pending |
 | 6 | Secretaría Técnica FGE | `ST 553/2026 / ST 104/2025 — módulo aforado, expansión profesional y solicitud de asociación técnica` | 21:58:16 | `1a0212e97d54d59d` | Sent; technical association and destination response pending |
 | 7 | Fiscal de Sala Coordinador de Delitos Económicos | `A la atención del Fiscal de Sala Coordinador de Delitos Económicos — Sun Park: matriz económica, módulo aforado y fuentes profesionales` | 22:00:21 | `1a021308172c6a7a` | Sent through central channels; functional transfer/reference pending |
@@ -131,6 +131,12 @@ As of the original 20 August control:
 - the RSM ethics review remains subject to its previously stated later response window.
 
 Silence or an open response period is not evidence of refusal, non-cooperation or culpability.
+
+### Material routing checkpoint located 21 August 2026 — Inspection-directed communication
+
+The FGE Technical Secretariat acknowledged receipt of the 20-August communication addressed to the Fiscal de Sala Jefa de la Inspección Fiscal and stated that it would be submitted to the corresponding management as soon as possible. The communication expressly identified `REGAGE26e00070235775` and requested transfer, association, traceability and preservation.
+
+This checkpoint proves central receipt and the stated prospective management only. It does not prove transfer to Inspection, association with E.G. 745/2026, allocation, incorporation into the corpus later examined, or a merits assessment. Those items remain finite production and routing questions.
 
 ### Material update located 25 August 2026 - Fiscalía Superior
 
