@@ -49,7 +49,7 @@ ROUTES: dict[str, dict[str, Any]] = {
             'data-publication-control="cuatrecasas-critical-gaps-20260831"',
             "CG-011",
             "CG-012",
-            "OPEN DIRECTIONAL BRIDGE",
+            "La Laguna → Las Palmas directional bridge",
             'href="../books/four-green-houses-one-red-hotel/"',
         ],
     },
