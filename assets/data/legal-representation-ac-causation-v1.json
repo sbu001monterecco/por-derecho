@@ -95,10 +95,10 @@
       "acWorkstreamImpact": "C3",
       "exitCausation": "MIXED_NOT_REDUCED_TO_SINGLE_CAUSE",
       "documentedAlternativeCause": "Formal 26 May 2020 renunciation correspondence expressly attributes inability to continue to non-payment of fees for more than two years.",
-      "acSpecificFinding": "The 2018/Q1-2019 proformas and 2019 correspondence document a broad finance/insolvency protection programme and IA-facing work across the liquidation plan, information, standing, sales/Registry, Acosta Matos/Community, ONA, financing, security and exit. April 2019 correspondence also records entity-specific mandate limits and conditioned responses when Gil/LPB required classification and CAM/IA protection.",
+      "acSpecificFinding": "The 2018/Q1-2019 proformas and 2019 correspondence document a broad finance/insolvency protection programme and IA-facing work across the liquidation plan, information, standing, sales/Registry, Acosta Matos/Community, ONA, financing, security and exit. The controlled 28-Dec-2018 notice, ten-attachment bundle, 4-Jan-2019 burofax delivery and 9-Jan follow-up are affirmative Registry-protection acts. The Registrar gave a reasoned standing/qualification-scope response and the 9-Jan qualification identified an ob rem obstacle for fincas 8536, 8653 and 8654. April 2019 correspondence also records entity-specific mandate limits and conditioned responses when Gil/LPB required classification and CAM/IA protection.",
       "clientPosition": "Gil/Patricia allege that the firm and its partners did not fully deploy the protective architecture billed for and that IA conduct materially affected its efficacy. This is not an adjudicated professional-negligence finding.",
-      "counterEvidence": "Cuatrecasas obtained favourable October 2019 orders, including rejection of the IA exclusion request, then granted venia promptly and assisted the successor handover.",
-      "openQuestion": "Map each billed protective task to the client/entity, IA event, requested response, professional boundary, result and loss alleged; obtain the complete engagement and invoice/payment file."
+      "counterEvidence": "Cuatrecasas performed a documented protective Registry intervention and follow-up, obtained favourable October 2019 orders including rejection of the IA exclusion request, then granted venia promptly and assisted the successor handover. These facts defeat any total-inactivity or total-abandonment formulation.",
+      "openQuestion": "Map each billed protective task to the client/entity, IA event, requested response, professional boundary, result and loss alleged; obtain the complete engagement and invoice/payment file; reconcile advice and follow-through after the Registrar response, qualification and 24-Oct nonconvalidation; keep later La Laguna fee enforcement as a separate title/representation/reliance/loss chain."
     },
     {
       "professional": "Cristo Ayose Suárez Pimentel",
@@ -174,6 +174,15 @@
     }
   ],
   "materialEvents": [
+    {
+      "id": "LRAC-EVT-2018-2019-REGISTRY-NOTICE",
+      "dateWindow": "2018-12-28/2019-03-20",
+      "actors": ["Cuatrecasas", "Owner-side clients", "Tías Property Registry"],
+      "event": "Cuatrecasas sent a ten-document Registry notice on 28 December; the burofax was delivered to the Registry on 4 January 2019 at 11:58; a 9 January follow-up, reasoned Registrar response and ob rem qualification followed; later correspondence reported 28 registered properties and three not registered.",
+      "effect": "Establishes an affirmative protective act and a finite knowledge/follow-through benchmark. It also rebuts an ignored-notice narrative because the Registrar answered and the qualification identified a real obstacle.",
+      "exitLink": "PROTECTIVE_COUNTEREVIDENCE_AND_LATER_DUTY_BENCHMARK_NOT_EXIT_CAUSATION",
+      "strongestDefence": "The Registrar considered the sender outside Article 6 Mortgage Act standing and qualification operates on the presented title and Registry entries; Cuatrecasas acted protectively and cannot control Registry or court decisions. Certified finca-by-finca results and the firm's complete mandate/advice/handover record remain open."
+    },
     {
       "id": "LRAC-EVT-2018-2019-001",
       "dateWindow": "2018-06-26/2019-10-24",
