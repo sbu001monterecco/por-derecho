@@ -1,7 +1,7 @@
 # Canary RIC Treasury document room — continuity control
 
 **Control:** `PD-CANARY-RIC-PUBLIC-DEBT-DOCROOM-20260831-01`
-**State:** `PREPARED_PENDING_MERGE`
+**State:** `LIVE_VERIFIED`
 **Parent:** `PD-CANARY-RIC-PUBLIC-DEBT-20260830-01`
 
 ## Controlled corpus
@@ -29,4 +29,8 @@ Native sources remain in protected custody. The public derivatives are not origi
 
 ## Deletion verdict
 
-The thread is **reconstructible but not source-deletion-safe** once exact reviewed merge, Pages deployment and no-cache public readback are recorded. Until then its publication state remains local. Even after live verification, native custody and the still-open later production must be retained.
+The thread's publication reasoning is **deletion-safe and repository-reconstructible**. PR #1258 reviewed head `0a78ab47c9054b753c26d7e7e6e7f7fd2d994deb` passed 27 checks with three conditional skips and zero failures; it was squash-merged as `0d57f47efadb17ec9c5faea94343bebb7d3ffad4`. GitHub Pages run `33376295139` / #1325 deployed that exact merge successfully.
+
+No-cache live readback verified five route/runtime files, all nine transport manifests, the first and last chunk of every transport, exact reconstruction of the access act and two-page sharing exhibit, all eight transcript hashes and all 734 page-index entries. The local clean-checkout validator reconstructed and verified all nine PDFs byte-for-byte, including page and privacy controls.
+
+This verdict applies to thread continuity and public-release reasoning only. Native custody, private locator data, restoration credentials and the still-open later Resolution 154/2026 production must be retained; their deletion is not authorised.

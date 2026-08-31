@@ -3,7 +3,8 @@
   "owner": "Por Derecho / Project Sun Rock",
   "parent_publication_id": "PD-CANARY-RIC-PUBLIC-DEBT-20260830-01",
   "control_date": "2026-08-31",
-  "current_state": "PREPARED_PENDING_MERGE",
+  "current_state": "LIVE_VERIFIED",
+  "merge_sha": "0d57f47efadb17ec9c5faea94343bebb7d3ffad4",
   "purpose": "Publish a complete public-safe searchable representation of the eight-file 734-page Treasury production and integrate its 2022 planning and AFI financing-cost findings into the unitary RIC analysis.",
   "source_denominator": {"files": 8, "pages": 734},
   "public_derivatives": {"pdfs": 8, "derivative_pages": 742, "transcripts": 8, "indexed_source_pages": 734},
@@ -18,11 +19,58 @@
   "page_index": "evidence/canary-ric-public-debt/2026-08-28-production/page-index-v1.json",
   "validation": {
     "local": "PASS_8_OF_8_PDFS_734_OF_734_SOURCE_PAGES_742_DERIVATIVE_PAGES_HASH_PRIVACY_ROUTE_AND_CONTINUITY_GATES",
-    "pull_request": null,
-    "reviewed_head_sha": null,
-    "merge_sha": null,
-    "pages_run": null,
-    "live_readback": "PENDING"
+    "pull_request": 1258,
+    "reviewed_head_sha": "0a78ab47c9054b753c26d7e7e6e7f7fd2d994deb",
+    "merge_sha": "0d57f47efadb17ec9c5faea94343bebb7d3ffad4",
+    "pages_run": {
+      "id": 33376295139,
+      "number": 1325,
+      "conclusion": "success",
+      "deployed_merge_sha": "0d57f47efadb17ec9c5faea94343bebb7d3ffad4"
+    },
+    "pull_request_checks": "27_SUCCESS_3_SKIPPED_ZERO_FAILURES",
+    "live_readback": {
+      "state": "PASS",
+      "verified_at": "2026-08-31T09:30:09Z",
+      "routes_byte_identical": 5,
+      "transport_manifests": "9_OF_9",
+      "transport_edge_chunks": "18_OF_18_SEMANTICALLY_IDENTICAL",
+      "single_chunk_pdf_reconstructions": "2_OF_2_EXACT_SIZE_AND_SHA256",
+      "transcripts": "8_OF_8_EXACT_SHA256",
+      "indexed_source_pages": "734_OF_734",
+      "full_local_reconstruction": "9_OF_9_PDFS_EXACT_SIZE_SHA256_AND_PAGE_CONTROL"
+    },
+    "evidence": [
+      "PR #1258 reviewed head passed 27 checks, three conditional skips and zero failures.",
+      "Dedicated validation reconstructed all eight public derivatives and the sharing exhibit with exact size and SHA-256, and validated 734/734 source pages, 742 derivative pages, transcripts, privacy and bilingual routes.",
+      "Repository preservation, publication integrity, mission-critical and unitary control-plane gates passed for the closeout."
+    ]
   },
-  "deletion_verdict": "THREAD_RECONSTRUCTIBLE_AFTER_LIVE_VERIFICATION;_NATIVE_SOURCE_DELETION_NOT_AUTHORISED"
+  "deployment_evidence": {
+    "pages_run_id": 33376295139,
+    "pages_run_number": 1325,
+    "source_merge_sha": "0d57f47efadb17ec9c5faea94343bebb7d3ffad4",
+    "status": "completed",
+    "conclusion": "success",
+    "completed_at": "2026-08-31T09:10:50Z"
+  },
+  "live_verification_evidence": {
+    "status": "PASS",
+    "verified_at": "2026-08-31T09:30:09Z",
+    "method": "No-cache HTTPS readback against the exact Pages deployment, plus complete clean-checkout reconstruction validation.",
+    "routes_runtime_byte_identical": "5_OF_5",
+    "transport_manifests": "9_OF_9",
+    "transport_edge_chunks": "18_OF_18_SEMANTICALLY_IDENTICAL",
+    "single_chunk_pdf_reconstructions": "2_OF_2_EXACT_SIZE_AND_SHA256",
+    "transcripts": "8_OF_8_EXACT_SHA256",
+    "indexed_source_pages": "734_OF_734",
+    "full_local_reconstruction": "9_OF_9_PDFS_EXACT_SIZE_SHA256_AND_PAGE_CONTROL"
+  },
+  "live_urls": [
+    "https://sbu001monterecco.github.io/por-derecho/es/evidencia/tesoro-deuda-ric-2022-2025-documentos/",
+    "https://sbu001monterecco.github.io/por-derecho/en/evidence/treasury-ric-debt-2022-2025-documents/",
+    "https://sbu001monterecco.github.io/por-derecho/es/evidencia/tesoro-deuda-ric-2022-2025-documentos/visor-pdf.html?doc=exhibit-access",
+    "https://sbu001monterecco.github.io/por-derecho/es/evidencia/tesoro-deuda-ric-2022-2025-documentos/visor-pdf.html?doc=puesta-disposicion"
+  ],
+  "deletion_verdict": "THREAD_REASONING_DELETION_SAFE_AND_REPOSITORY_RECONSTRUCTIBLE;_NATIVE_SOURCE_DELETION_NOT_AUTHORISED"
 }
