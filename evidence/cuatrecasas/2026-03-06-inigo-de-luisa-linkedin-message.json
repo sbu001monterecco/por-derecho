@@ -1,0 +1,24 @@
+{
+  "record_id": "CUATRECASAS-LINKEDIN-20260306-INIGO-DE-LUISA",
+  "record_type": "preserved_direct_communication",
+  "date": "2026-03-06",
+  "channel": "LinkedIn messaging",
+  "sender_displayed": "Inigo de Luisa Maiz",
+  "time_displayed": "12:13 PM",
+  "message_verbatim": "Just received notice from the Madrid bar that you requested disciplinary action against me which has been adequately dismissed. This is an unloyal and unlawful move against a Friend Who help you tireless with all efforts. You are not a Friend and deserve the worst. Do not ever contact me and be sure I would Advise Everyone about the kind of person you are.",
+  "preservation": {
+    "primary_capture": "ANNEX-01_20260306_LinkedIn_Message_From_Inigo_de_Luisa.jpg",
+    "subsequent_status_capture": "ANNEX-02_20260306_LinkedIn_Conversation_Status_Changed.jpg",
+    "same_day_preservation_email_subject": "Preservation of communication – message from Mr. Íñigo de Luisa Maíz",
+    "same_day_preservation_email_timestamp_utc": "2026-03-06T12:56:00Z",
+    "same_day_preservation_statement": "Shortly after sending the message, Mr. de Luisa appears to have deleted it. I had, however, taken a screenshot prior to its deletion.",
+    "later_archive_email_subject": "Inigo de luisa maiz - Cuatrecasas voicemail/whatsapp and linkedin",
+    "later_archive_email_date": "2026-06-20"
+  },
+  "publication_boundary": "The message is reproduced verbatim from the retained screenshot. The deletion point is stated only in the qualified form used in the contemporaneous preservation email ('appears to have deleted it'). The later LinkedIn conversation-status screenshot is preserved as corroborating status evidence but is not treated on its own as conclusive proof of deletion. No inference of civil, criminal or disciplinary liability is made from the message alone.",
+  "public_page_targets": [
+    "/en/cuatrecasas-sun-park/",
+    "/es/cuatrecasas-sun-park/"
+  ],
+  "created_for_publication": "2026-08-31"
+}
