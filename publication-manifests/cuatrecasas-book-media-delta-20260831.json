@@ -1,0 +1,93 @@
+{
+  "schema": "por-derecho.publication-manifest.v1",
+  "publication_id": "cuatrecasas-book-media-delta-20260831",
+  "control_id": "PD-4C-BOOK-DELTA-20260831-01",
+  "control_date": "2026-08-31",
+  "current_state": "PREPARED_PENDING_MERGE",
+  "status": "prepared_pending_merge",
+  "owner": "Por Derecho / Project Sun Rock",
+  "repository": "sbu001monterecco/por-derecho",
+  "source_main_sha": "950b64f9bd61f21bcff7bd76cfc409eebd3bca88",
+  "merge_sha": null,
+  "purpose": "Connect the controlled Cuatrecasas professional-accountability record to the bilingual public architecture for 4 Green Houses, One Red Hotel; add finite fee-recovery, procedural-fraud and La Laguna-to-Las Palmas proof gates; and establish a privilege-safe incremental legal-team delta rule without publishing private source material.",
+  "expected_routes": {
+    "es": [
+      "es/libros/four-green-houses-one-red-hotel/index.html",
+      "es/cuatrecasas-brechas-criticas/index.html"
+    ],
+    "en": [
+      "en/books/four-green-houses-one-red-hotel/index.html",
+      "en/cuatrecasas-critical-gaps/index.html"
+    ]
+  },
+  "expected_source_files": [
+    "prompts/CUATRECASAS_BOOK_MEDIA_DELTA_AGENT_31AUG2026.md",
+    "assets/data/cuatrecasas-book-media-delta-v1.json",
+    "archive/CUATRECASAS_BOOK_MEDIA_DELTA_IMPLEMENTATION_31AUG2026.md"
+  ],
+  "repository_assets": [
+    "en/books/four-green-houses-one-red-hotel/index.html",
+    "es/libros/four-green-houses-one-red-hotel/index.html",
+    "en/cuatrecasas-critical-gaps/index.html",
+    "es/cuatrecasas-brechas-criticas/index.html",
+    "prompts/CUATRECASAS_BOOK_MEDIA_DELTA_AGENT_31AUG2026.md",
+    "assets/data/cuatrecasas-book-media-delta-v1.json",
+    "archive/CUATRECASAS_BOOK_MEDIA_DELTA_IMPLEMENTATION_31AUG2026.md",
+    "publication-manifests/cuatrecasas-book-media-delta-20260831.json"
+  ],
+  "public_markers": [
+    "book-4gh1rh-professional-inversion-20260831",
+    "cuatrecasas-critical-gaps-20260831",
+    "CG-011",
+    "CG-012",
+    "OPEN DIRECTIONAL BRIDGE"
+  ],
+  "claim_controls": {
+    "professional_inversion": "DOCUMENTED NARRATIVE QUESTION — NOT A FINDING OF WRONGDOING",
+    "acts_omissions_silence_enablement": "ATTRIBUTED CLIENT-SIDE ALLEGATIONS REQUIRING DUTY, KNOWLEDGE, CAUSATION AND LOSS",
+    "fee_recovery": "UNDERLYING ENTITLEMENT AND DEBTOR CHAIN REMAIN TO BE RECONSTRUCTED FROM PRIMARY RECORDS",
+    "procedural_fraud": "LEGAL HYPOTHESIS — ELEMENTS NOT ADJUDICATED",
+    "la_laguna_las_palmas": "OPEN DIRECTIONAL BRIDGE — TRANSMISSION, RELIANCE AND PURPOSE NOT YET PROVED"
+  },
+  "private_delta_control": {
+    "aggregate_role_channels_searched": 4,
+    "new_private_draft_packages": 1,
+    "new_presentation_proofs": 0,
+    "new_signed_judicial_decisions": 0,
+    "public_fact_change": false,
+    "private_locators_in_repository": false
+  },
+  "publication_boundaries": [
+    "The public pages do not allege that Cuatrecasas joined the Acosta Matos perimeter, shared a criminal plan or intentionally influenced Concurso 36/2012.",
+    "A complaint, criminal-procedural hypothesis, professional-conduct appeal, adverse order or private draft is not a finding.",
+    "A common asset or cross-proceeding reference is not intentional instrumentalisation unless the originating act, transmission, recipient, reliance, effect and purpose are separately evidenced.",
+    "Disputed fees or deficient performance do not by themselves establish procedural fraud.",
+    "Private lawyer and procurador identities, addresses, message subjects, provider identifiers, advice, drafts and live strategy remain excluded from the public repository.",
+    "Repository publication authority does not authorise email, filing, third-party contact, financial commitments or account changes."
+  ],
+  "validation_required": [
+    "bilingual route parity",
+    "book and gap publication-control markers",
+    "CG-011 and CG-012 visibility",
+    "canonical internal-link existence",
+    "JSON syntax",
+    "repository preservation",
+    "publication integrity",
+    "audience experience",
+    "private-source and privilege boundary",
+    "post-merge Pages deployment and live readback"
+  ],
+  "publication_closeout": {
+    "pull_request": null,
+    "merge_sha": null,
+    "pages_run_id": null,
+    "live_verified_at": null
+  },
+  "authority": {
+    "repository_and_website_publication": "AUTHORISED_BY_CURRENT_USER_INSTRUCTION",
+    "emails_or_external_messages": "NOT_AUTHORISED",
+    "court_or_third_party_filings": "NOT_AUTHORISED",
+    "private_source_publication": "NOT_AUTHORISED"
+  },
+  "next_gate": "Open PR from the current branch, pass CI, merge, deploy the exact merge SHA, verify the four live routes and then promote this manifest only to the evidence actually earned."
+}
