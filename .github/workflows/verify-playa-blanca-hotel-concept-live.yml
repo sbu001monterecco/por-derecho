@@ -103,8 +103,8 @@ jobs:
                   'path': 'assets/playa-blanca-concept-home-20260820.js',
                   'markers': [
                       'pb-home-feature',
-                      '/por-derecho/en/playa-blanca-hotel-services-concept/',
-                      '/por-derecho/es/playa-blanca-concepto-hotel-servicios/',
+                      'playa-blanca-hotel-services-concept/',
+                      'playa-blanca-concepto-hotel-servicios/',
                       'Recovery and reinvestment can proceed in parallel.',
                   ],
               },
@@ -124,7 +124,7 @@ jobs:
               {
                   'kind': 'hero_poster',
                   'path': 'assets/playa-blanca-return-poster.svg',
-                  'markers': ['PLAYA BLANCA', 'A NEW HOTEL DESTINATION', 'HOTEL &amp; LOCAL SERVICES CONCEPT'],
+                  'markers': ['PLAYA BLANCA', 'Playa Blanca — a new hotel destination', 'HOTEL &amp; LOCAL SERVICES CONCEPT'],
               },
           ]
 

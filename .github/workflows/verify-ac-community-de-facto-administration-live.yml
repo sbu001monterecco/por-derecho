@@ -14,6 +14,7 @@ on:
       - 'assets/audience-experience-order-20260823.js'
       - 'assets/ricpe-identity-correction-20260815.js'
       - 'assets/site-base-20260819.js'
+      - 'assets/site-pre-treasury-154-hq-20260828.js'
       - 'assets/site-pre-intervencion-highlight-before-eg95-20260823.js'
       - 'assets/site-pre-intervencion-highlight-20260820.js'
       - 'assets/data/ac-de-facto-knowing-facilitation-visibility-v1.json'
@@ -84,30 +85,37 @@ jobs:
           python3 - <<'PY'
           import json, os, time, urllib.request
           base = 'https://sbu001monterecco.github.io/por-derecho'
-          suffix = f"source={os.environ['SOURCE_SHA'][:12]}&run={os.environ['RUN_ID']}"
+          source_sha = os.environ['SOURCE_SHA']
+          run_id = os.environ['RUN_ID']
           targets = {
-            'es': (f'{base}/es/administracion-de-hecho-comunidad-ac/?{suffix}', ['data-ac-community-shadow-control-page="20260824"','718.663,24','1.145.798,29']),
-            'en': (f'{base}/en/de-facto-administration-community-ac/?{suffix}', ['data-ac-community-shadow-control-page="20260824"','718,663.24','1,145,798.29']),
-            'home_es': (f'{base}/es/?{suffix}', ['data-pd-five-ac="20260824b"','data-five-actor-front-page-lock="express-authorization-required"','data-key-direct-route-presentation="front-page"','data-private-actor-card="05"','data-institution-card="administrator"','data-institution-card="judge"','data-linkage-row','Laura Patricia Acosta Matos']),
-            'home_en': (f'{base}/en/?{suffix}', ['data-pd-five-ac="20260824b"','data-five-actor-front-page-lock="express-authorization-required"','data-key-direct-route-presentation="front-page"','data-private-actor-card="05"','data-institution-card="administrator"','data-institution-card="judge"','data-linkage-row','Laura Patricia Acosta Matos']),
-            'base_module': (f'{base}/assets/ac-community-de-facto-administration-20260820.js?{suffix}', ['data-ac-dfa-update','data-ac-dfa-crosslink']),
-            'visibility_module': (f'{base}/assets/ac-de-facto-knowing-facilitation-visibility-20260820.js?{suffix}', ['Cinco administradores en la sombra alegados y una habilitación institucional activa','Five alleged shadow administrators and active institutional enablement','paquete de garantías','security package','data-ac-dfa-allegation-visibility','data-ac-dfa-impact-chain','data-ac-dfa-route-relevance']),
-            'stability_module': (f'{base}/assets/ac-de-facto-knowing-facilitation-stability-20260820.js?{suffix}', ['panel.dataset.acDfaUpdate','panel.dataset.acDfaCrosslink','panels.slice(1).forEach(removePanel)','data.acDfaVisibilityStability']),
-            'five_actor_module': (f'{base}/assets/homepage-actor-family-pwc-note-20260819.js?{suffix}', ["section.dataset.pdFiveAc = '20260824b'","section.dataset.fiveActorFrontPageLock = 'express-authorization-required'",'isCanonical','isCourt','data-private-actor-card','data-institution-card','data-linkage-row','pd:five-actor-visual-ready']),
-            'five_actor_css': (f'{base}/assets/five-actor-accountability-20260824.css?{suffix}', ['.pd-five-ac__cards','.pd-five-ac__institutional-grid','.pd-five-ac__linkage-row']),
-            'audience_order': (f'{base}/assets/audience-experience-order-20260823.js?{suffix}', ["deduplicate('section[data-pd-five-ac]')",'audienceProtectedFiveActorVisual','fiveActorVisualVisible','pd:five-actor-visual-ready']),
-            'loader': (f'{base}/assets/site.js?{suffix}', ['ac-community-de-facto-administration-20260820.js?v=20260824a','ac-de-facto-knowing-facilitation-visibility-20260820.js?v=20260824a','data-ac-de-facto-knowing-facilitation-visibility-loader','ac-de-facto-knowing-facilitation-stability-20260820.js?v=20260824a','data-ac-de-facto-knowing-facilitation-stability-loader','audience-experience-order-20260823.js?v=20260824b']),
-            'preservation_contract': (f'{base}/ops/REPOSITORY_PRESERVATION_CONTRACT.json?{suffix}', ['POR-DERECHO-REPOSITORY-CONTINUITY-20260824','a4f8c461058216ed3ec0182896fca2c4bc3c8d9e','express-authorization-required']),
-            'stewardship_rules': (f'{base}/AGENTS.md?{suffix}', ['Por Derecho repository stewardship rules','Start from the actual source of truth','Laura Patricia Acosta Matos']),
-            'sitemap': (f'{base}/sitemap-ac-community-de-facto-administration.xml?{suffix}', ['/por-derecho/es/administracion-de-hecho-comunidad-ac/','/por-derecho/en/de-facto-administration-community-ac/']),
-            'robots': (f'{base}/robots.txt?{suffix}', ['sitemap-ac-community-de-facto-administration.xml'])
+            'es': (f'{base}/es/administracion-de-hecho-comunidad-ac/', ['data-ac-community-shadow-control-page="20260824"','718.663,24','1.145.798,29']),
+            'en': (f'{base}/en/de-facto-administration-community-ac/', ['data-ac-community-shadow-control-page="20260824"','718,663.24','1,145,798.29']),
+            'home_es': (f'{base}/es/', ['data-pd-five-ac="20260824b"','data-five-actor-front-page-lock="express-authorization-required"','data-key-direct-route-presentation="front-page"','data-private-actor-card="05"','data-institution-card="administrator"','data-institution-card="judge"','data-linkage-row','Laura Patricia Acosta Matos']),
+            'home_en': (f'{base}/en/', ['data-pd-five-ac="20260824b"','data-five-actor-front-page-lock="express-authorization-required"','data-key-direct-route-presentation="front-page"','data-private-actor-card="05"','data-institution-card="administrator"','data-institution-card="judge"','data-linkage-row','Laura Patricia Acosta Matos']),
+            'base_module': (f'{base}/assets/ac-community-de-facto-administration-20260820.js', ['data-ac-dfa-update','data-ac-dfa-crosslink']),
+            'visibility_module': (f'{base}/assets/ac-de-facto-knowing-facilitation-visibility-20260820.js', ['Cinco administradores en la sombra alegados y una habilitación institucional activa','Five alleged shadow administrators and active institutional enablement','paquete de garantías','security package','data-ac-dfa-allegation-visibility','data-ac-dfa-impact-chain','data-ac-dfa-route-relevance']),
+            'stability_module': (f'{base}/assets/ac-de-facto-knowing-facilitation-stability-20260820.js', ['panel.dataset.acDfaUpdate','panel.dataset.acDfaCrosslink','panels.slice(1).forEach(removePanel)','data.acDfaVisibilityStability']),
+            'five_actor_module': (f'{base}/assets/homepage-actor-family-pwc-note-20260819.js', ["section.dataset.pdFiveAc = '20260824b'","section.dataset.fiveActorFrontPageLock = 'express-authorization-required'",'isCanonical','isCourt','data-private-actor-card','data-institution-card','data-linkage-row','pd:five-actor-visual-ready']),
+            'five_actor_css': (f'{base}/assets/five-actor-accountability-20260824.css', ['.pd-five-ac__cards','.pd-five-ac__institutional-grid','.pd-five-ac__linkage-row']),
+            'audience_order': (f'{base}/assets/audience-experience-order-20260823.js', ["deduplicate('section[data-pd-five-ac]')",'audienceProtectedFiveActorVisual','fiveActorVisualVisible','pd:five-actor-visual-ready']),
+            'loader_root': (f'{base}/assets/site.js', ['site-pre-treasury-154-hq-20260828.js?v=20260828a','data-pre-treasury-154-site-loader']),
+            'loader_modules': (f'{base}/assets/site-pre-treasury-154-hq-20260828.js', ['ac-community-de-facto-administration-20260820.js?v=20260824a','ac-de-facto-knowing-facilitation-visibility-20260820.js?v=20260824a','data-ac-de-facto-knowing-facilitation-visibility-loader','ac-de-facto-knowing-facilitation-stability-20260820.js?v=20260824a','data-ac-de-facto-knowing-facilitation-stability-loader','audience-experience-order-20260823.js?v=20260824b']),
+            'preservation_contract': (f'{base}/ops/REPOSITORY_PRESERVATION_CONTRACT.json', ['POR-DERECHO-REPOSITORY-CONTINUITY-20260824','a4f8c461058216ed3ec0182896fca2c4bc3c8d9e','express-authorization-required']),
+            'stewardship_rules': (f'{base}/AGENTS.md', ['Por Derecho repository stewardship rules','Start from the actual source of truth','Laura Patricia Acosta Matos']),
+            'sitemap': (f'{base}/sitemap-ac-community-de-facto-administration.xml', ['/por-derecho/es/administracion-de-hecho-comunidad-ac/','/por-derecho/en/de-facto-administration-community-ac/']),
+            'robots': (f'{base}/robots.txt', ['sitemap-ac-community-de-facto-administration.xml'])
           }
           last = {}
           for attempt in range(1,31):
             checks, details = {}, {}
+            cache_buster = (
+              f'source={source_sha[:12]}&run={run_id}'
+              f'&attempt={attempt}&nonce={time.time_ns()}'
+            )
             for name,(url,markers) in targets.items():
               try:
-                req=urllib.request.Request(url,headers={'User-Agent':'Por-Derecho-live-verifier/3.1','Cache-Control':'no-cache','Pragma':'no-cache'})
+                request_url = f'{url}?{cache_buster}'
+                req=urllib.request.Request(request_url,headers={'User-Agent':'Por-Derecho-live-verifier/3.1','Cache-Control':'no-cache','Pragma':'no-cache'})
                 with urllib.request.urlopen(req,timeout=25) as response:
                   body=response.read().decode('utf-8','replace')
                   checks[f'{name}_http']=response.status==200
@@ -115,7 +123,7 @@ jobs:
                   details[name]={'status':response.status,'bytes':len(body.encode('utf-8')),'markers':{m:m in body for m in markers}}
               except Exception as exc:
                 checks[f'{name}_http']=False; checks[f'{name}_markers']=False; details[name]={'error':repr(exc)}
-            last={'attempt':attempt,'source_sha':os.environ['SOURCE_SHA'],'run_id':os.environ['RUN_ID'],'checks':checks,'details':details}
+            last={'attempt':attempt,'source_sha':source_sha,'run_id':run_id,'checks':checks,'details':details}
             print(json.dumps(last,ensure_ascii=False,indent=2))
             if all(checks.values()):
               with open('/tmp/ac-dfa-source.json','w') as f: json.dump({'status':'SOURCE_LIVE_VERIFIED',**last},f,indent=2)

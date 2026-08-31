@@ -7,6 +7,12 @@
 **Originating Inspection registration:** `REGAGE26e00070235775`, presented/registered 2 August 2026  
 **Receipt SHA-256:** `33f7b47418062a0bc4993f424e459af18fa2d334acc8bafc4c2e40750f171f97`
 
+> **Visual-publication correction:** the earlier Base64 facsimile control is
+> superseded. The deterministic replacement PDF/PNG/WebP set is
+> **`PREPARED_PENDING_MERGE`** and must not be called `LIVE` until exact-SHA
+> Pages deployment and byte-identical public readback. See
+> `archive/EG_745_2026_VISUAL_PUBLICATION_SUPERSEDING_PREMERGE_CONTROL_31AUG2026.md`.
+
 ## What “prosecute this matter in the open” means here
 
 Por Derecho does **not** purport to exercise the State's criminal-prosecution function and does not declare any person guilty. The phrase is used here in the ordinary sense of **pursuing the evidential, review, preservation and accountability case publicly and continuously**: publish the primary record, publish what is being requested, publish what has and has not been filed, publish responses and non-responses as procedural facts, publish evidential gaps, and publish corrections without erasing prior states.
@@ -72,12 +78,15 @@ The exact SHA-512 printed on `REGAGE26e00070235775` for the registered attachmen
 
 ## Supporting evidence — public paths
 
-### Official Decree / visual control
+### Official Decree / replacement visual control
 
-- Spanish public visual facsimile: `es/fiscalia-inspeccion-exp-gub-745-2026/facsimil-visual-31-agosto-2026.html`
-- English public visual facsimile: `en/public-prosecution-inspection-exp-gub-745-2026/visual-facsimile-31-august-2026.html`
+- Spanish prepared visual route: `es/fiscalia-inspeccion-exp-gub-745-2026/facsimil-visual-31-agosto-2026.html`
+- English prepared visual route: `en/public-prosecution-inspection-exp-gub-745-2026/visual-facsimile-31-august-2026.html`
+- Replacement visual status: **`PREPARED_PENDING_MERGE` — NOT VERIFIED LIVE**
 - Native source SHA-256: `1e09c8eb3bce26e28dc5f22e5d6ebad3f458212cf8d85f5920e869fa42554abe`
-- Public preview-image SHA-256: page 1 `9dea73c05bd91226745c8801147c6fac20b30d7d30480f22c8e0ece9ea9536d3`; page 2 `4ed65b0e324ea0ec6dcedaf97ed178aa97aacaf76c877bbdb25058ccdd234969`; page 3 `62271b227f79a44879971bef77be20fc5f760257e81aac31cec56b0094c10c2e`.
+- Prepared redacted PDF SHA-256: `a59007fa5db61d2b48b587c208f9cafedabe967e88dac4df223b2ef384595088`
+- Prepared WebP SHA-256: page 1 `ac5ccc51d85d6bfc7933a924465c5ef493206453e822fce2b367433975dee41a`; page 2 `5173cd8420ed9f6b6e1b26f3ad86025d89c82cbc69d4936b0d287f17717ae06a`; page 3 `ae3f518bb5732396e5d19fdcd3ee45450d2ee104e9bf7f7594af3493115bfaa8`.
+- Inherited Base64 page-3 correction: actual `b73a712a27c737dd8e22bf462c6e1cce095d05f8d12a3b93b1d0c763f84b528b`; the earlier displayed `62271b...` value is superseded.
 
 ### Controlled text / provenance
 

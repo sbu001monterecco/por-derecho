@@ -1,5 +1,12 @@
 # E.G. 745/2026 — visual-publication continuity audit — 31 August 2026
 
+> **Superseding pre-merge addendum:** the seven prepared derivative files whose
+> hashes are preserved below were not recoverable. A new deterministic,
+> raster-first replacement set has been created from the same hash-verified
+> native source and is controlled by
+> `EG_745_2026_VISUAL_PUBLICATION_SUPERSEDING_PREMERGE_CONTROL_31AUG2026.md`.
+> Its state remains **`PREPARED_PENDING_MERGE`**, not `LIVE`.
+
 ## Purpose
 
 This record fixes the exact state of the E.G. 745/2026 digitisation and visual-publication work so that an unfinished binary transfer cannot later be mistaken for a completed public release.
@@ -35,6 +42,7 @@ Web-optimised derivatives were also prepared for eventual publication:
 - page 3 WebP SHA-256: `9a2d4dee2b7d5e85d8a0a9fce84b25a6d3ff1d85112d926613a6170e80e4db99`.
 
 These hashes describe prepared derivatives only. They are not publication proof.
+They are also not the hashes of the superseding deterministic replacement set.
 
 ## Abandoned transfer branch — do not treat as publication
 

@@ -13,6 +13,7 @@ on:
       - 'es/implementacion-registral-finca-por-finca/**'
       - 'en/land-registry-implementation-property-by-property/**'
       - 'assets/site.js'
+      - 'assets/site-pre-treasury-154-hq-20260828.js'
       - 'assets/site-pre-intervencion-highlight-20260820.js'
       - 'assets/site-pre-intervencion-highlight-before-eg95-20260823.js'
       - 'assets/case-information-architecture-20260819.js'
@@ -70,6 +71,9 @@ jobs:
               'case_module': (f'{base}/assets/case-information-architecture-20260819.js?{query}', [
                   'data-case-context-gateway', 'case-issue-register', 'LIVE_VERIFIED =']),
               'outer_loader': (f'{base}/assets/site.js?{query}', [
+                  'site-pre-treasury-154-hq-20260828.js?v=20260828a',
+                  'data-pre-treasury-154-site-loader']),
+              'pre_treasury_loader': (f'{base}/assets/site-pre-treasury-154-hq-20260828.js?{query}', [
                   'site-pre-intervencion-highlight-20260820.js?v=20260824e',
                   'data-pre-intervencion-site-loader']),
               'case_loader_wrapper': (f'{base}/assets/site-pre-intervencion-highlight-20260820.js?{query}', [
@@ -98,8 +102,10 @@ jobs:
                   '/por-derecho/es/correcciones-control-versiones/', '/por-derecho/en/notarial-implementation-protocol-457/', '/por-derecho/es/implementacion-registral-finca-por-finca/']),
           }
 
-          def fetch(url):
-              request = urllib.request.Request(url, headers={
+          def fetch(url, attempt):
+              separator = '&' if '?' in url else '?'
+              cache_busted_url = f'{url}{separator}attempt={attempt}&nonce={time.time_ns()}'
+              request = urllib.request.Request(cache_busted_url, headers={
                   'User-Agent': 'Por-Derecho-case-architecture-live-verifier/1.0',
                   'Cache-Control': 'no-cache',
                   'Pragma': 'no-cache',
@@ -112,7 +118,7 @@ jobs:
               checks, details = {}, {}
               for name, (url, markers) in targets.items():
                   try:
-                      status, body = fetch(url)
+                      status, body = fetch(url, attempt)
                       marker_checks = {marker: marker in body for marker in markers}
                       checks[f'{name}_http_200'] = status == 200
                       checks[f'{name}_markers'] = all(marker_checks.values())

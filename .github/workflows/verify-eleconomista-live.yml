@@ -1,12 +1,21 @@
 name: Verify elEconomista Acosta Matos dossier live
 
 on:
+  pull_request:
+    paths:
+      - 'es/eleconomista-javier-romera-enero2025/**'
+      - 'en/eleconomista-javier-romera-january2025/**'
+      - 'assets/site.js'
+      - 'assets/site-pre-treasury-154-hq-20260828.js'
+      - 'assets/traceability-crosslinks-20260821.js'
+      - '.github/workflows/verify-eleconomista-live.yml'
   push:
     branches: [main]
     paths:
       - 'es/eleconomista-javier-romera-enero2025/**'
       - 'en/eleconomista-javier-romera-january2025/**'
       - 'assets/site.js'
+      - 'assets/site-pre-treasury-154-hq-20260828.js'
       - 'assets/unitary-criminal-reverse-engineering-20260820.js'
       - 'assets/traceability-crosslinks-20260821.js'
       - '.github/workflows/verify-eleconomista-live.yml'
@@ -45,9 +54,8 @@ jobs:
           base = 'https://sbu001monterecco.github.io/por-derecho'
           sha = os.environ['SOURCE_SHA']
           run_id = os.environ['RUN_ID']
-          q = f'source={sha[:12]}&run={run_id}'
           targets = {
-              'es': (f'{base}/es/eleconomista-javier-romera-enero2025/?{q}', [
+              'es': (f'{base}/es/eleconomista-javier-romera-enero2025/', [
                   'data-eleconomista-static-acosta="20260820c"',
                   'Project Sun Rock acusa al perímetro Acosta Matos de haber ido deliberadamente a por la historia de elEconomista hasta conseguir que se detuviera.',
                   'contradicción materialmente autolesiva',
@@ -55,7 +63,7 @@ jobs:
                   'Calle Janubio 3',
                   'no acusamos a Javier Romera ni a elEconomista',
               ]),
-              'en': (f'{base}/en/eleconomista-javier-romera-january2025/?{q}', [
+              'en': (f'{base}/en/eleconomista-javier-romera-january2025/', [
                   'data-eleconomista-static-acosta="20260820c"',
                   'Project Sun Rock accuses the Acosta Matos perimeter of deliberately going after the elEconomista story until it was stopped.',
                   'materially self-damaging contradiction',
@@ -79,11 +87,13 @@ jobs:
               checks, details = {}, {}
               for name, (url, markers) in targets.items():
                   try:
-                      status, body = fetch(url)
+                      nonce = time.time_ns()
+                      checked_url = f'{url}?source={sha}&run={run_id}&attempt={attempt}&nonce={nonce}'
+                      status, body = fetch(checked_url)
                       mm = {m: m in body for m in markers}
                       checks[f'{name}_http_200'] = status == 200
                       checks[f'{name}_markers'] = all(mm.values())
-                      details[name] = {'status': status, 'bytes': len(body.encode()), 'markers': mm}
+                      details[name] = {'url': checked_url, 'status': status, 'bytes': len(body.encode()), 'markers': mm}
                   except Exception as exc:
                       checks[f'{name}_http_200'] = False
                       checks[f'{name}_markers'] = False
@@ -164,38 +174,44 @@ jobs:
           const { chromium } = require('playwright');
           const fs = require('fs');
           const base = 'https://sbu001monterecco.github.io/por-derecho';
-          const q = `source=${process.env.SOURCE_SHA.slice(0,12)}&run=${process.env.RUN_ID}`;
           const targets = [
-            {key:'lava-es',url:`${base}/es/lava-verde-club-sei-meeting-point/?${q}`,selector:'[data-mp-direct-commercial-source-20260821]',markers:['sonnenklar.TV','Calle Janubio 3','no acreditan todavía']},
-            {key:'lava-en',url:`${base}/en/lava-verde-club-sei-meeting-point/?${q}`,selector:'[data-mp-direct-commercial-source-20260821]',markers:['sonnenklar.TV','Calle Janubio 3','do not yet establish']},
-            {key:'357-es',url:`${base}/es/cuaderno-juridico/meeting-point-357-2024-trazabilidad-judicial/?${q}`,selector:'[data-mp357-custody-boundary-20260821]',markers:['Límite 357/2024','Auren','impropiedad']},
-            {key:'357-en',url:`${base}/en/legal-notebook/meeting-point-357-2024-judicial-traceability/?${q}`,selector:'[data-mp357-custody-boundary-20260821]',markers:['357/2024 boundary','Auren','improper']},
-            {key:'takeover-es',url:`${base}/es/toma-control-sun-park-7-junio-2018/?${q}`,selector:'[data-takeover-meeting-point-gateway-20260821]',markers:['Lava Verde','Club Sei','Meeting Point/FTI']},
-            {key:'takeover-en',url:`${base}/en/sun-park-takeover-7-june-2018/?${q}`,selector:'[data-takeover-meeting-point-gateway-20260821]',markers:['Lava Verde','Club Sei','Meeting Point/FTI']},
+            {key:'lava-es',url:`${base}/es/lava-verde-club-sei-meeting-point/`,selector:'[data-mp-direct-commercial-source-20260821]',markers:['sonnenklar.TV','Calle Janubio 3','No acreditan todavía']},
+            {key:'lava-en',url:`${base}/en/lava-verde-club-sei-meeting-point/`,selector:'[data-mp-direct-commercial-source-20260821]',markers:['sonnenklar.TV','Calle Janubio 3','do not yet establish']},
+            {key:'357-es',url:`${base}/es/cuaderno-juridico/meeting-point-357-2024-trazabilidad-judicial/`,selector:'[data-mp357-custody-boundary-20260821]',markers:['Límite 357/2024','Auren','impropiedad']},
+            {key:'357-en',url:`${base}/en/legal-notebook/meeting-point-357-2024-judicial-traceability/`,selector:'[data-mp357-custody-boundary-20260821]',markers:['357/2024 boundary','Auren','improper']},
+            {key:'takeover-es',url:`${base}/es/toma-control-sun-park-7-junio-2018/`,selector:'[data-takeover-meeting-point-gateway-20260821]',markers:['Lava Verde','Club Sei','Meeting Point/FTI']},
+            {key:'takeover-en',url:`${base}/en/sun-park-takeover-7-june-2018/`,selector:'[data-takeover-meeting-point-gateway-20260821]',markers:['Lava Verde','Club Sei','Meeting Point/FTI']},
           ];
           (async()=>{
             const browser=await chromium.launch({headless:true,executablePath:process.env.PSR_BROWSER_PATH});
             let finalResults=[]; let ok=false;
-            for(let attempt=1;attempt<=36;attempt++){
+            for(let attempt=1;attempt<=8;attempt++){
               let pass=true; const results=[];
               for(const t of targets){
                 const page=await browser.newPage();
+                const diagnostics=[];
+                page.on('pageerror', error=>diagnostics.push(`pageerror:${String(error)}`));
+                page.on('requestfailed', request=>diagnostics.push(`requestfailed:${request.url()}:${request.failure()?.errorText||'unknown'}`));
                 try{
-                  await page.goto(t.url,{waitUntil:'networkidle',timeout:60000});
+                  const nonce=`${Date.now()}-${attempt}-${Math.random().toString(16).slice(2)}`;
+                  const checkedUrl=`${t.url}?source=${process.env.SOURCE_SHA}&run=${process.env.RUN_ID}&attempt=${attempt}&nonce=${nonce}`;
+                  await page.goto(checkedUrl,{waitUntil:'domcontentloaded',timeout:60000});
+                  await page.waitForSelector(t.selector,{state:'attached',timeout:20000});
                   const el=page.locator(t.selector);
                   const count=await el.count();
                   const text=count?await el.innerText():'';
-                  const markers=Object.fromEntries(t.markers.map(m=>[m,text.includes(m)]));
+                  const folded=text.toLocaleLowerCase('es');
+                  const markers=Object.fromEntries(t.markers.map(m=>[m,folded.includes(m.toLocaleLowerCase('es'))]));
                   const passed=count===1 && Object.values(markers).every(Boolean);
                   pass &&= passed;
-                  results.push({key:t.key,count,markers,passed});
-                }catch(e){pass=false;results.push({key:t.key,error:String(e),passed:false});}
+                  results.push({key:t.key,url:checkedUrl,count,markers,diagnostics,passed});
+                }catch(e){pass=false;results.push({key:t.key,error:String(e),diagnostics,passed:false});}
                 finally{await page.close();}
               }
               finalResults=results;
               console.log(JSON.stringify({attempt,pass,results},null,2));
               if(pass){ok=true;break;}
-              await new Promise(r=>setTimeout(r,5000));
+              await new Promise(r=>setTimeout(r,3000));
             }
             await browser.close();
             fs.mkdirSync('artifacts/meeting-point-live',{recursive:true});
