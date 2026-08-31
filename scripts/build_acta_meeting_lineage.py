@@ -30,6 +30,22 @@ from acta_event_actor_routes import (
     actor_route_gaps_for_event,
     actor_routes_for_event,
 )
+from acta_owner_role_matrix import (
+    OWNER_ROLE_MATRIX,
+    PRE_2008_CONTROL,
+    PRINCIPAL_LINEAGES,
+    validate_owner_role_matrix,
+)
+from acta_lph_lifecycle_control import (
+    CANONICAL_REFERENCE_RULE,
+    CRITICAL_LPH_TIMELINE,
+    CROSS_TRACK_MODEL,
+    HISTORICAL_LPH_VERSIONS,
+    LPH_GATES,
+    STAGE_TO_GATE,
+    STATUS as LPH_STATUS,
+    validate_lph_control,
+)
 
 
 REPO = Path(__file__).resolve().parents[1]
@@ -37,6 +53,8 @@ INDEX = REPO / "evidence/community/actas/public-index.json"
 LINEAGE = REPO / "evidence/community/actas/meeting-lineage-index-v1.json"
 CONTINUITY = REPO / "evidence/community/actas/event-family-continuity-v1.json"
 BASE_URL = "https://sbu001monterecco.github.io/por-derecho"
+LPH_ROUTE_ES = "es/comunidad-instrumentalizacion/sala-documental-actas/control-lph-ciclo-juntas/"
+LPH_ROUTE_EN = "en/community-instrumentalisation/acta-document-room/meeting-lifecycle-lph-control/"
 
 
 EVENTS = [
@@ -608,6 +626,237 @@ def lineage_fact_grid(event: dict, locale: str) -> str:
     ) + "</div>"
 
 
+def owner_role_controls(event: dict, locale: str) -> str:
+    """Render the distinct ACTA-production roles for Owners' Community events."""
+    role_control = event.get("owner_acta_role_attribution")
+    if not role_control:
+        return ""
+    es = locale == "es"
+    lineage = PRINCIPAL_LINEAGES[role_control["principal_lineage"]]
+    labels = (
+        ("Quién llamó / convocó", "Who called / convened", "caller"),
+        ("Quién presidió o gestionó", "Who chaired or managed", "meeting_management"),
+        ("Quién redactó, autorizó o dio fe", "Who drafted, authorised or attested", "acta_authorship"),
+        ("Quién custodió o hizo circular", "Who kept or circulated", "custody_circulation"),
+    )
+    cards = []
+    for label_es, label_en, key in labels:
+        role = role_control[key]
+        cards.append(
+            f'<article data-role-status="{h(role["status"])}"><span>{h(label_es if es else label_en)}</span>'
+            f'<strong>{h(role[locale])}</strong><small>{h(role["status"])}</small></article>'
+        )
+    return (
+        f'<section class="acta-owner-role-control" id="funciones-produccion-acta" '
+        f'data-principal-lineage="{h(role_control["principal_lineage"])}" '
+        f'data-lineage-phase="{h(role_control["phase_code"])}">'
+        f'<header><p class="kicker">{"Autoría y control documental" if es else "Authorship and documentary control"}</p>'
+        f'<h2>{"Convocar, presidir, redactar y custodiar no son la misma función." if es else "Calling, chairing, drafting and custody are not the same function."}</h2>'
+        f'<div class="acta-principal-lineage" data-principal-lineage="{h(role_control["principal_lineage"])}">'
+        f'<strong>{h(lineage["label_es" if es else "label_en"])}</strong>'
+        f'<span>{h(role_control["phase_code"])} · {h(lineage["definition_es" if es else "definition_en"])}</span></div></header>'
+        f'<div class="acta-owner-role-grid">{"".join(cards)}</div>'
+        f'<p class="source-note"><strong>{"Regla" if es else "Rule"}:</strong> '
+        f'{"Asistencia, representación, financiación, beneficio posterior o firma no convierten por sí solos a una persona en convocante, presidente, autor o custodio." if es else "Attendance, representation, finance, later benefit or signature does not by itself make a person the convener, chair, author or custodian."}</p></section>'
+    )
+
+
+def lph_event_controls(
+    event: dict,
+    locale: str,
+    anchor_map: dict[str, dict[str, str]],
+) -> str:
+    """Render the event-specific five-gate LPH evidence assessment."""
+    control = event.get("lph_lifecycle_control")
+    if not control:
+        return ""
+    es = locale == "es"
+    gate_cards = []
+    for gate_id, definition in LPH_GATES.items():
+        gate = control["gates"][gate_id]
+        status = LPH_STATUS[gate["status"]]
+        evidence_links = []
+        for evidence_id in gate["evidence_ids"]:
+            target = anchor_map[evidence_id]
+            evidence_links.append(
+                f'<a href="{h(target["href"])}"><code>{h(evidence_id)}</code></a>'
+            )
+        evidence = " · ".join(evidence_links) or (
+            "Fuente autónoma no localizada" if es else "Standalone source unlocated"
+        )
+        gate_cards.append(
+            f'<article data-lph-status="{h(gate["status"])}">'
+            f'<header><span class="lph-gate-code">{h(gate_id)}</span>'
+            f'<strong>{h(definition["label_es" if es else "label_en"])}</strong>'
+            f'<b class="lph-status-code">{h(status["code"])}</b></header>'
+            f'<p>{h(gate["es" if es else "en"])}</p>'
+            f'<small>{h(definition["articles"])} · {h(status["label_es" if es else "label_en"])}</small>'
+            f'<div class="lph-evidence-links">{evidence}</div></article>'
+        )
+    page_route = LPH_ROUTE_ES if es else LPH_ROUTE_EN
+    version = HISTORICAL_LPH_VERSIONS[control["version"]]
+    return (
+        f'<section class="acta-lph-event-control" id="control-lph-ciclo">'
+        f'<div class="section-head"><div><p class="kicker">'
+        f'{"Control histórico LPH" if es else "Historical LPH control"}</p>'
+        f'<h2>{"Cinco puertas: convocatoria → servicio → voto → ACTA → circulación." if es else "Five gates: call → service → vote → minutes → circulation."}</h2></div>'
+        f'<p>{h(control["summary_es" if es else "summary_en"])}</p></div>'
+        f'<div class="lph-event-gates">{"".join(gate_cards)}</div>'
+        f'<p class="source-note"><strong>{"Redacción histórica" if es else "Historical text"}:</strong> '
+        f'{h(version["label_es" if es else "label_en"])} '
+        f'<a href="{h(version["boe_url"])}" target="_blank" rel="noopener">BOE →</a></p>'
+        f'<p><a class="button secondary" href="{h(root_href(page_route))}">'
+        f'{"Abrir visualización completa y registro canónico" if es else "Open complete visualisation and canonical register"} →</a></p></section>'
+    )
+
+
+def lph_control_page(
+    locale: str,
+    events: list[dict],
+    anchor_map: dict[str, dict[str, str]],
+) -> str:
+    """Build the dedicated bilingual LPH lifecycle and canonical-evidence page."""
+    es = locale == "es"
+    route = LPH_ROUTE_ES if es else LPH_ROUTE_EN
+    other_route = LPH_ROUTE_EN if es else LPH_ROUTE_ES
+    canonical = f"{BASE_URL}/{route}"
+    other_url = f"{BASE_URL}/{other_route}"
+    room = "es/comunidad-instrumentalizacion/sala-documental-actas/" if es else "en/community-instrumentalisation/acta-document-room/"
+    chronology = "es/comunidad-instrumentalizacion/actas-2011-2022/" if es else "en/community-instrumentalisation/minutes-2011-2022/"
+    lang_label = "English" if es else "Español"
+
+    flow = []
+    for gate_id, gate in LPH_GATES.items():
+        flow.append(
+            f'<article><span class="lph-gate-code">{h(gate_id)}</span>'
+            f'<h2>{h(gate["label_es" if es else "label_en"])}</h2>'
+            f'<p>{h(gate["question_es" if es else "question_en"])}</p>'
+            f'<small>{h(gate["articles"])}</small></article>'
+        )
+
+    status_legend = []
+    for key, status in LPH_STATUS.items():
+        status_legend.append(
+            f'<article data-lph-status="{h(key)}"><b>{h(status["code"])}</b>'
+            f'<strong>{h(status["label_es" if es else "label_en"])}</strong>'
+            f'<span>{h(status["boundary_es" if es else "boundary_en"])}</span></article>'
+        )
+
+    timeline_rows = []
+    event_by_id = {event["id"]: event for event in events}
+    for event_id, control in CRITICAL_LPH_TIMELINE.items():
+        event = event_by_id[event_id]
+        event_target = anchor_map[event_id]
+        cells = []
+        for gate_id in LPH_GATES:
+            gate = control["gates"][gate_id]
+            status = LPH_STATUS[gate["status"]]
+            evidence_links = []
+            for evidence_id in gate["evidence_ids"]:
+                target = anchor_map[evidence_id]
+                evidence_links.append(
+                    f'<a href="{h(target["href"])}"><code>{h(evidence_id)}</code></a>'
+                )
+            evidence = " ".join(evidence_links) or "—"
+            cells.append(
+                f'<td data-lph-status="{h(gate["status"])}">'
+                f'<span class="lph-status-code">{h(status["code"])}</span>'
+                f'<strong>{h(status["label_es" if es else "label_en"])}</strong>'
+                f'<p>{h(gate["es" if es else "en"])}</p>'
+                f'<div class="lph-evidence-links">{evidence}</div></td>'
+            )
+        timeline_rows.append(
+            f'<tr data-lineage-phase="{h(control["lineage_phase"])}">'
+            f'<th scope="row"><a href="{h(event_target["href"])}">{h(event["date"])}<br>{h(title_for(event, locale))}</a>'
+            f'<span class="acta-phase-code">{h(control["lineage_phase"])}</span>'
+            f'<p>{h(control["summary_es" if es else "summary_en"])}</p></th>{"".join(cells)}</tr>'
+        )
+
+    documents: dict[str, dict] = {}
+    for event in events:
+        for document in event.get("documents", []):
+            stable_id = document["stable_id"]
+            existing = documents.get(stable_id)
+            if existing and existing["stable_bilingual_page"] != document["stable_bilingual_page"]:
+                raise RuntimeError(f"Canonical reference drift for {stable_id}")
+            documents[stable_id] = document
+    ledger_rows = []
+    for stable_id, document in sorted(
+        documents.items(),
+        key=lambda item: (str(item[1].get("documented_date_or_range", "")), item[0]),
+    ):
+        target = anchor_map[stable_id]
+        stage = document.get("relationship_stage", "meeting_record")
+        gate_code = STAGE_TO_GATE.get(stage, "—")
+        issues = display_value(document.get("unresolved_evidential_issues"), locale)
+        ledger_rows.append(
+            f'<tr data-lifecycle-stage="{h(stage)}"><th scope="row">'
+            f'<a href="{h(target["href"])}"><code>{h(stable_id)}</code></a></th>'
+            f'<td>{h(display_value(document.get("documented_date_or_range"), locale))}</td>'
+            f'<td>{h(gate_code)} · {h(stage)}</td>'
+            f'<td>{h(display_value(document.get("document_type"), locale))}</td>'
+            f'<td>{h(display_value(document.get("source_provenance_status"), locale))}</td>'
+            f'<td>{h(issues)}</td></tr>'
+        )
+
+    version_cards = []
+    for key, version in HISTORICAL_LPH_VERSIONS.items():
+        version_cards.append(
+            f'<article><code>{h(key)}</code><p>{h(version["label_es" if es else "label_en"])}</p>'
+            f'<a href="{h(version["boe_url"])}" target="_blank" rel="noopener">BOE →</a></article>'
+        )
+
+    cross_grade_legend = []
+    for grade_id, grade in CROSS_TRACK_MODEL["grades"].items():
+        cross_grade_legend.append(
+            f'<span data-cross-grade="{h(grade_id)}"><b>{h(grade["code"])}</b> '
+            f'{h(grade["label_es" if es else "label_en"])}</span>'
+        )
+    cross_spine = []
+    for node in CROSS_TRACK_MODEL["spine"]:
+        links = " ".join(
+            f'<a href="{h(anchor_map[evidence_id]["href"])}"><code>{h(evidence_id)}</code></a>'
+            for evidence_id in node["evidence_ids"]
+        )
+        cross_spine.append(
+            f'<article data-cross-grade="{h(node["grade"])}"><b>'
+            f'{h(CROSS_TRACK_MODEL["grades"][node["grade"]]["code"])}</b>'
+            f'<strong>{h(node["label_es" if es else "label_en"])}</strong>'
+            f'<div>{links}</div></article>'
+        )
+    cross_tracks = []
+    for track in CROSS_TRACK_MODEL["tracks"]:
+        track_route = track["route_es" if es else "route_en"]
+        grade = CROSS_TRACK_MODEL["grades"][track["grade"]]
+        cross_tracks.append(
+            f'<article data-cross-grade="{h(track["grade"])}"><header><b>{h(grade["code"])}</b>'
+            f'<h3>{h(track["label_es" if es else "label_en"])}</h3></header>'
+            f'<p>{h(track["basis_es" if es else "basis_en"])}</p>'
+            f'<a href="{h(root_href(track_route))}">{"Abrir pista probatoria" if es else "Open evidence track"} →</a></article>'
+        )
+
+    boundary = (
+        "El rojo identifica una preocupación facial o un incumplimiento alegado que debe probarse; no declara nulidad ni delito. La falta de convocatoria, servicio, poder, audio, libro o anexo en el repositorio no prueba que nunca existiera."
+        if es else
+        "Red identifies a facial concern or alleged non-compliance that must be proved; it does not declare invalidity or crime. Absence of a notice, service record, proxy, audio, book or annex from the repository does not prove it never existed."
+    )
+    return f'''<!doctype html>
+<html lang="{locale}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>{"Control LPH del ciclo de juntas Sun Park" if es else "Sun Park meeting-lifecycle LPH control"}</title>
+<meta name="description" content="{h('Visualización bilingüe de convocatoria, servicio, voto, ACTA, circulación y referencias canónicas de la Comunidad Sun Park.' if es else 'Bilingual visualisation of notice, service, voting, minutes, circulation and canonical evidence references for the Sun Park Owners’ Community.')}">
+<link rel="canonical" href="{h(canonical)}"><link rel="alternate" hreflang="{locale}" href="{h(canonical)}"><link rel="alternate" hreflang="{'en' if es else 'es'}" href="{h(other_url)}"><link rel="alternate" hreflang="x-default" href="{h(BASE_URL + '/' + LPH_ROUTE_ES)}">
+<link rel="stylesheet" href="../../../../assets/styles.css"><link rel="stylesheet" href="../../../../assets/acta-document-room-20260822.css"><script src="../../../../assets/site.js" defer></script></head>
+<body class="dossier-page acta-lph-control-page"><a class="skip-link" href="#visualizacion-lph">{"Saltar al control" if es else "Skip to control"}</a>
+<header class="site-header"><div class="shell header-inner"><a class="brand" href="{h(root_href(room))}"><span class="brand-mark">SR</span><span class="brand-copy"><strong>Project Sun Rock</strong><small>{"Control LPH" if es else "LPH control"}</small></span></a><button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav"><span></span><span></span><span></span><span class="sr-only">{"Abrir navegación" if es else "Open navigation"}</span></button><nav class="main-nav" id="main-nav"><a href="{h(root_href(room))}">{"Sala ACTAS" if es else "ACTA room"}</a><a href="{h(root_href(chronology))}">{"Cronología" if es else "Chronology"}</a><a href="#matriz-historica">{"Matriz" if es else "Matrix"}</a><a href="#registro-canonico">{"Registro canónico" if es else "Canonical register"}</a><a class="language-link" href="{h(root_href(other_route))}">{lang_label}</a></nav></div></header>
+<main><section class="acta-event-hero"><div class="shell acta-event-hero-grid"><div><p class="eyebrow">LPH · ACTA · Sun Park · 2011–2022</p><h1>{"Convocar no es notificar; votar no es validar; redactar no es comunicar." if es else "Calling is not service; voting is not validation; drafting is not circulation."}</h1><p class="lead">{"Control visual de cinco puertas y registro canónico de cada pieza localizada o pendiente." if es else "Five-gate visual control and canonical register of every located or pending item."}</p></div><aside class="acta-room-rule"><strong>{"Límite jurídico" if es else "Legal boundary"}</strong><span>{h(boundary)}</span></aside></div></section>
+<section class="section" id="visualizacion-lph"><div class="shell"><div class="section-head"><div><p class="kicker">{"Ciclo completo" if es else "Complete lifecycle"}</p><h2>{"Cinco puertas LPH que deben probarse por reunión." if es else "Five LPH gates to prove for each meeting."}</h2></div><p>{h(CANONICAL_REFERENCE_RULE[locale])}</p></div><div class="lph-gate-flow">{"".join(flow)}</div><div class="lph-status-legend">{"".join(status_legend)}</div></div></section>
+<section class="section alt" id="matriz-historica"><div class="shell"><div class="section-head"><div><p class="kicker">C1 → C2</p><h2>{"Montelanza/Molina 2011 → FMMM/Pamanil → giro Acosta Matos/CAM 2018 → 2022." if es else "Montelanza/Molina 2011 → FMMM/Pamanil → Acosta Matos/CAM turn in 2018 → 2022."}</h2></div><p>{"Es la secuencia atribuida por Gil enlazada a hechos documentales; no fusiona personas o entidades ni prueba concierto, sucesión jurídica, delito o culpabilidad." if es else "This is Gil’s attributed sequence linked to documentary facts; it does not merge people or entities or prove agreement, legal succession, crime or guilt."}</p></div><div class="lph-matrix-wrap"><table class="lph-timeline-matrix"><thead><tr><th>{"Fecha / fase" if es else "Date / phase"}</th>{''.join(f'<th>{h(gate_id)} · {h(gate["label_es" if es else "label_en"])}</th>' for gate_id, gate in LPH_GATES.items())}</tr></thead><tbody>{"".join(timeline_rows)}</tbody></table></div></div></section>
+<section class="section acta-criminal-interconnect" id="interconexion-criminal-alegada"><div class="shell"><div class="section-head"><div><p class="kicker">{"Hipótesis criminal atribuida · prueba multidireccional" if es else "Attributed criminal hypothesis · multidirectional proof"}</p><h2>{"De la autoridad comunitaria al proyecto, las obras, el capital, las ayudas y los permisos." if es else "From Community authority to project, works, capital, aid and permissions."}</h2></div><p>{h(CROSS_TRACK_MODEL["boundary_es" if es else "boundary_en"])}</p></div><div class="cross-grade-legend">{"".join(cross_grade_legend)}</div><div class="cross-track-map"><div class="cross-track-spine">{"".join(cross_spine)}</div><div class="cross-track-hub"><strong>{"PUERTA DE DEPENDENCIA A PROBAR" if es else "RELIANCE GATE TO PROVE"}</strong><span>{"¿Qué ACTA, certificado, título, poder, presupuesto, factura o representación se entregó, verificó, adoptó o reutilizó?" if es else "Which minutes, certificate, title, proxy, budget, invoice or representation was supplied, checked, adopted or reused?"}</span></div><div class="cross-track-branches">{"".join(cross_tracks)}</div></div><aside class="acta-criminal-boundary"><strong>{"Regla D" if es else "D rule"}:</strong> {"D-MIXED/D-OPEN es un estado de prueba, no un grupo criminal. Sólo un acto individualizado y probado puede mover una pieza D a una hipótesis actor-específica." if es else "D-MIXED/D-OPEN is an evidence status, not a criminal group. Only an individualised, proved act can move a D item into an actor-specific hypothesis."}</aside></div></section>
+<section class="section" id="versiones-lph"><div class="shell"><div class="section-head"><div><p class="kicker">{"Derecho histórico" if es else "Historical law"}</p><h2>{"La fecha de la junta determina la redacción LPH a comprobar." if es else "The meeting date determines the LPH text to check."}</h2></div><p>{"El texto consolidado del BOE es informativo; para una conclusión jurídica debe comprobarse cada artículo y publicación oficial vigente en la fecha." if es else "The BOE consolidated text is informative; a legal conclusion requires checking each article and official publication in force on the date."}</p></div><div class="lph-version-grid">{"".join(version_cards)}</div></div></section>
+<section class="section alt" id="registro-canonico"><div class="shell"><div class="section-head"><div><p class="kicker">122 / 122</p><h2>{"Registro canónico de ACTAS, convocatorias, comunicaciones y usos." if es else "Canonical register of minutes, notices, communications and uses."}</h2></div><p>{"Cada ID enlaza a su entrada bilingüe estable y fragmento. Los registros de hueco quedan visibles como no localizados o referencia solamente." if es else "Every ID links to its stable bilingual entry and fragment. Gap records remain visible as unlocated or reference-only."}</p></div><div class="lph-ledger-wrap"><table class="lph-canonical-ledger"><thead><tr><th>{"Referencia canónica" if es else "Canonical reference"}</th><th>{"Fecha" if es else "Date"}</th><th>{"Puerta / fase" if es else "Gate / stage"}</th><th>{"Tipo" if es else "Type"}</th><th>{"Procedencia" if es else "Provenance"}</th><th>{"Abierto" if es else "Open"}</th></tr></thead><tbody>{"".join(ledger_rows)}</tbody></table></div></div></section></main>
+<aside class="disclaimer"><div class="shell"><p><strong>{"Aviso" if es else "Notice"}:</strong> {h(boundary)}</p></div></aside><footer class="site-footer"><div class="shell"><p>Project Sun Rock · {"control LPH y referencias canónicas" if es else "LPH control and canonical references"} · 31 August 2026</p></div></footer></body></html>'''
+
+
 def capacity_sequence_controls(event: dict, locale: str) -> str:
     """Surface mandate-level capacity and attributed-sequence controls."""
     es = locale == "es"
@@ -1111,6 +1360,8 @@ def event_page(
     analysis = special_analysis(event, locale)
     lineage_facts = lineage_fact_grid(event, locale)
     capacity_sequence = capacity_sequence_controls(event, locale)
+    owner_roles = owner_role_controls(event, locale)
+    lph_control = lph_event_controls(event, locale, anchor_map)
     chain = document_chain(event, locale, anchor_map)
     audit = continuity_table(event, locale)
     actors = actor_links(event, locale)
@@ -1143,10 +1394,10 @@ def event_page(
 <meta name="description" content="{h(meta_description)}">
 <link rel="canonical" href="{h(canonical)}"><link rel="alternate" hreflang="{locale}" href="{h(canonical)}"><link rel="alternate" hreflang="{'en' if es else 'es'}" href="{h(other_url)}"><link rel="alternate" hreflang="x-default" href="{h(BASE_URL + '/' + event['detail_page_es'].removesuffix('index.html'))}">
 <link rel="stylesheet" href="../../../../assets/styles.css"><link rel="stylesheet" href="../../../../assets/acta-document-room-20260822.css">{omni_stylesheet}<script src="../../../../assets/site.js" defer></script></head>
-<body class="dossier-page acta-event-page" data-perimeter="{h(event['perimeter'])}" data-primary-lane="{h(primary_lane)}" data-patricia-capacity="{h(event['patricia_dominguez_capacity']['status_code'])}" data-adverse-sequence-stage="{h(event['adverse_sequence_stage']['stage_code'])}"><a class="skip-link" href="#ficha">{"Saltar a la ficha" if es else "Skip to record"}</a>
-<header class="site-header"><div class="shell header-inner"><a class="brand" href="{h(root_href(room))}"><span class="brand-mark">SR</span><span class="brand-copy"><strong>Project Sun Rock</strong><small>{"Sala ACTAS" if es else "ACTA room"}</small></span></a><button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav"><span></span><span></span><span></span><span class="sr-only">{"Abrir navegación" if es else "Open navigation"}</span></button><nav class="main-nav" id="main-nav"><a href="{h(root_href(room))}">{"Todas las reuniones" if es else "All meetings"}</a><a href="{h(root_href(chronology))}">{"Cronología" if es else "Chronology"}</a><a href="#cadena-documental">{"Cadena" if es else "Chain"}</a><a href="#texto-ocr">{"Texto / estado" if es else "Text / status"}</a>{source_nav}<a class="language-link" href="{h(root_href(detail_other))}">{lang_label}</a></nav></div></header>
+<body class="dossier-page acta-event-page" data-perimeter="{h(event['perimeter'])}" data-primary-lane="{h(primary_lane)}" data-principal-lineage="{h(event.get('owner_acta_role_attribution', {}).get('principal_lineage', primary_lane))}" data-lineage-phase="{h(event.get('owner_acta_role_attribution', {}).get('phase_code', perimeter_code))}" data-patricia-capacity="{h(event['patricia_dominguez_capacity']['status_code'])}" data-adverse-sequence-stage="{h(event['adverse_sequence_stage']['stage_code'])}"><a class="skip-link" href="#ficha">{"Saltar a la ficha" if es else "Skip to record"}</a>
+<header class="site-header"><div class="shell header-inner"><a class="brand" href="{h(root_href(room))}"><span class="brand-mark">SR</span><span class="brand-copy"><strong>Project Sun Rock</strong><small>{"Sala ACTAS" if es else "ACTA room"}</small></span></a><button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav"><span></span><span></span><span></span><span class="sr-only">{"Abrir navegación" if es else "Open navigation"}</span></button><nav class="main-nav" id="main-nav"><a href="{h(root_href(room))}">{"Todas las reuniones" if es else "All meetings"}</a><a href="{h(root_href(chronology))}">{"Cronología" if es else "Chronology"}</a><a href="{h(root_href(LPH_ROUTE_ES if es else LPH_ROUTE_EN))}">{"Control LPH" if es else "LPH control"}</a><a href="#cadena-documental">{"Cadena" if es else "Chain"}</a><a href="#texto-ocr">{"Texto / estado" if es else "Text / status"}</a>{source_nav}<a class="language-link" href="{h(root_href(detail_other))}">{lang_label}</a></nav></div></header>
 <main><section class="acta-event-hero"><div class="shell acta-event-hero-grid"><div><p class="eyebrow">{h(event['id'])} · {h(event['date'])}</p><h1>{h(title)}</h1><p class="lead">{h(event['phase_es' if es else 'phase_en'])}</p><div class="acta-perimeter-ribbon" data-perimeter="{h(event['perimeter'])}" data-primary-lane="{h(primary_lane)}"><strong><span class="acta-perimeter-code">{h(perimeter_code)}</span> {h(classification)}</strong><span>{h(definition)}</span></div></div><aside class="acta-room-rule"><strong>{"Regla de atribución" if es else "Attribution rule"}</strong><span>{"El color distingue carriles documentales. No acredita por sí solo convocatoria, validez, actuación conjunta, fraude o culpabilidad." if es else "Colour distinguishes documentary lanes. It does not itself prove convocation, validity, joint conduct, fraud or guilt."}</span></aside></div></section>
-<section class="section" id="ficha"><div class="shell acta-event-narrow"><div class="acta-fact-grid"><article><span>{"Órgano / tipo" if es else "Body / type"}</span><strong>{h(event.get('body', '—'))} · {h(event.get('record_type', '—'))}</strong></article><article><span>{"Estado de atribución" if es else "Attribution status"}</span><strong>{h(event['attribution_status'])} · {h(event['confidence'])}</strong></article></div>{lineage_facts}{capacity_sequence}<article class="acta-convener"><h2>{"Quién convocó o generó el registro" if es else "Who called or generated the record"}</h2><p>{h(event['convener_es' if es else 'convener_en'])}</p></article><article class="acta-basis"><h2>{"Base de la clasificación" if es else "Classification basis"}</h2><p>{h(event['basis_es' if es else 'basis_en'])}</p></article><div class="actions">{''.join(actions)}</div><p class="source-note"><strong>{"Límite" if es else "Boundary"}:</strong> {h(notes)}</p></div></section>
+<section class="section" id="ficha"><div class="shell acta-event-narrow"><div class="acta-fact-grid"><article><span>{"Órgano / tipo" if es else "Body / type"}</span><strong>{h(event.get('body', '—'))} · {h(event.get('record_type', '—'))}</strong></article><article><span>{"Estado de atribución" if es else "Attribution status"}</span><strong>{h(event['attribution_status'])} · {h(event['confidence'])}</strong></article></div>{lineage_facts}{capacity_sequence}{owner_roles}{lph_control}<article class="acta-convener"><h2>{"Quién convocó o generó el registro" if es else "Who called or generated the record"}</h2><p>{h(event['convener_es' if es else 'convener_en'])}</p></article><article class="acta-basis"><h2>{"Base de la clasificación" if es else "Classification basis"}</h2><p>{h(event['basis_es' if es else 'basis_en'])}</p></article><div class="actions">{''.join(actions)}</div><p class="source-note"><strong>{"Límite" if es else "Boundary"}:</strong> {h(notes)}</p></div></section>
 {chain}{audit}{analysis}{text_section}{gallery}{actors}
 <section class="section" id="interlinks"><div class="shell acta-event-narrow"><div class="section-head"><div><p class="kicker">{"Continuidad" if es else "Continuity"}</p><h2>{"Registros relacionados y navegación temporal." if es else "Related records and chronological navigation."}</h2></div></div><ul class="acta-related">{''.join(related)}</ul><nav class="acta-prev-next" aria-label="{"ACTAS anterior y siguiente" if es else "Previous and next ACTA"}">{''.join(nav_links)}</nav><p><a href="{h(root_href(room))}">← {"Volver a la sala documental completa" if es else "Return to the complete document room"}</a></p></div></section></main>
 <aside class="disclaimer"><div class="shell"><p><strong>{"Aviso" if es else "Notice"}:</strong> {"La publicación acredita el contenido de una copia localizada, no la verdad, validez, ejecución ni intención delictiva. Las alineaciones adversas son atribuciones de Gil Marer salvo que se indique un hecho documental concreto." if es else "Publication establishes what a located copy records, not truth, validity, implementation or criminal intent. Adverse alignment is attributed to Gil Marer unless a specific documentary fact is stated."}</p></div></aside>
@@ -1173,6 +1424,19 @@ def update_sitemap(events: list[dict]) -> None:
                 f"    <xhtml:link rel=\"alternate\" hreflang=\"x-default\" href=\"{es_url}\"/>\n"
                 "  </url>"
             )
+    lph_es = f"{BASE_URL}/{LPH_ROUTE_ES}"
+    lph_en = f"{BASE_URL}/{LPH_ROUTE_EN}"
+    for url in (lph_es, lph_en):
+        if f"<loc>{url}</loc>" in text:
+            continue
+        additions.append(
+            "  <url>\n"
+            f"    <loc>{url}</loc><lastmod>2026-08-31</lastmod>\n"
+            f"    <xhtml:link rel=\"alternate\" hreflang=\"es\" href=\"{lph_es}\"/>\n"
+            f"    <xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"{lph_en}\"/>\n"
+            f"    <xhtml:link rel=\"alternate\" hreflang=\"x-default\" href=\"{lph_es}\"/>\n"
+            "  </url>"
+        )
     if additions:
         text = text.replace("</urlset>", "\n" + "\n".join(additions) + "\n</urlset>")
         path.write_text(text, encoding="utf-8")
@@ -1214,6 +1478,76 @@ def update_chronology(events: list[dict], locale: str) -> None:
     path.write_text(text, encoding="utf-8")
 
 
+def update_owner_role_room(events: list[dict], locale: str) -> None:
+    """Inject a bilingual, source-controlled role matrix into the ACTA room."""
+    es = locale == "es"
+    path = REPO / (
+        "es/comunidad-instrumentalizacion/sala-documental-actas/index.html"
+        if es else "en/community-instrumentalisation/acta-document-room/index.html"
+    )
+    text = path.read_text(encoding="utf-8")
+    owner_events = [event for event in events if event.get("owner_acta_role_attribution")]
+    legend = []
+    for code in ("A", "B", "C", "D"):
+        item = PRINCIPAL_LINEAGES[code]
+        legend.append(
+            f'<article class="acta-principal-lineage" data-principal-lineage="{code}">'
+            f'<strong>{h(item["label_es" if es else "label_en"])}</strong>'
+            f'<span>{h(item["definition_es" if es else "definition_en"])}</span></article>'
+        )
+    rows = []
+    for event in owner_events:
+        role = event["owner_acta_role_attribution"]
+        route = event["detail_page_es" if es else "detail_page_en"]
+        cells = []
+        for key in ("caller", "meeting_management", "acta_authorship", "custody_circulation"):
+            item = role[key]
+            cells.append(
+                f'<td data-role-status="{h(item["status"])}">{h(item[locale])}'
+                f'<small>{h(item["status"])}</small></td>'
+            )
+        rows.append(
+            f'<tr data-principal-lineage="{h(role["principal_lineage"])}" '
+            f'data-lineage-phase="{h(role["phase_code"])}">'
+            f'<th scope="row"><a href="{h("../../../" + route)}">{h(event["date"])}<br>{h(title_for(event, locale))}</a>'
+            f'<span class="acta-phase-code">{h(role["phase_code"])}</span></th>{"".join(cells)}</tr>'
+        )
+    pre = PRE_2008_CONTROL[locale]
+    block = (
+        '<!-- ACTA-OWNER-ROLE-MATRIX:START -->'
+        f'<section class="acta-owner-role-overview" id="autoria-control-actas">'
+        f'<div class="section-head"><div><p class="kicker">{"Comunidad de Propietarios Sun Park" if es else "Sun Park Owners’ Community"}</p>'
+        f'<h2>{"Quién convocó, presidió, redactó y custodió cada ACTA." if es else "Who called, chaired, authored and kept each ACTA."}</h2></div>'
+        f'<p>{"Tres linajes históricos y un estado probatorio. El color nunca sustituye la función escrita ni la fuente." if es else "Three historical lineages and one evidence status. Colour never replaces the written role or source."}</p></div>'
+        f'<div class="acta-principal-legend">{"".join(legend)}</div>'
+        f'<p class="acta-room-boundary"><strong>{"Antes de 2008" if es else "Before 2008"}:</strong> {h(pre)}</p>'
+        f'<div class="acta-role-table-wrap"><table class="acta-role-table"><thead><tr>'
+        f'<th>{"Fecha / linaje" if es else "Date / lineage"}</th>'
+        f'<th>{"Llamó / convocó" if es else "Called / convened"}</th>'
+        f'<th>{"Presidió / gestionó" if es else "Chaired / managed"}</th>'
+        f'<th>{"Redactó / autorizó / dio fe" if es else "Drafted / authorised / attested"}</th>'
+        f'<th>{"Custodió / circuló" if es else "Kept / circulated"}</th>'
+        f'</tr></thead><tbody>{"".join(rows)}</tbody></table></div>'
+        f'<p class="source-note"><strong>{"Límite de la flecha C1 → C2" if es else "C1 → C2 arrow boundary"}:</strong> '
+        f'{"expresa la reconstrucción atribuida por Gil y la continuidad de funciones documentadas. No prueba transformación societaria, sucesión jurídica, mando común, concierto ni culpabilidad." if es else "it records Gil’s attributed reconstruction and continuity of documented functions. It does not prove corporate transformation, legal succession, common command, agreement or guilt."}</p>'
+        f'<p class="acta-lph-room-link"><a class="button" href="{h("../../../" + (LPH_ROUTE_ES if es else LPH_ROUTE_EN))}">'
+        f'{"Abrir control LPH: convocatoria, servicio, voto, ACTA y circulación" if es else "Open LPH control: call, service, vote, minutes and circulation"} →</a></p></section>'
+        '<!-- ACTA-OWNER-ROLE-MATRIX:END -->'
+    )
+    pattern = re.compile(
+        r'<!-- ACTA-OWNER-ROLE-MATRIX:START -->.*?<!-- ACTA-OWNER-ROLE-MATRIX:END -->',
+        re.S,
+    )
+    if pattern.search(text):
+        text = pattern.sub(block, text)
+    else:
+        marker = '<div class="acta-room-controls"'
+        if marker not in text:
+            raise RuntimeError(f"ACTA room insertion marker missing: {path}")
+        text = text.replace(marker, block + "\n\n        " + marker, 1)
+    path.write_text(text, encoding="utf-8")
+
+
 def main() -> None:
     public = json.loads(INDEX.read_text(encoding="utf-8"))
     continuity = json.loads(CONTINUITY.read_text(encoding="utf-8"))
@@ -1224,6 +1558,12 @@ def main() -> None:
     if localization_errors:
         raise RuntimeError("\n".join(localization_errors))
     validate_controlled_event_ids([event["id"] for event in EVENTS])
+    owner_role_event_ids = [event["id"] for event in EVENTS if event["id"] in OWNER_ROLE_MATRIX]
+    validate_owner_role_matrix(owner_role_event_ids)
+    document_ids = {document["stable_id"] for document in continuity_documents}
+    if len(document_ids) != len(continuity_documents):
+        raise RuntimeError("Continuity register document IDs are not unique")
+    validate_lph_control(document_ids)
     merged: list[dict] = []
     for order, configured in enumerate(EVENTS, 1):
         event = dict(public_by_id.get(configured["id"], {}))
@@ -1251,6 +1591,8 @@ def main() -> None:
         event["primary_lane"] = PERIMETERS[event["perimeter"]]["primary_lane"]
         event["actor_entity_routes"] = actor_routes_for_event(configured["id"])
         event["actor_entity_route_gaps"] = actor_route_gaps_for_event(configured["id"])
+        if configured["id"] in OWNER_ROLE_MATRIX:
+            event["owner_acta_role_attribution"] = OWNER_ROLE_MATRIX[configured["id"]]
         event["order"] = order
         event["detail_page_es"] = f"es/comunidad-instrumentalizacion/sala-documental-actas/{event['slug']}/index.html"
         event["detail_page_en"] = f"en/community-instrumentalisation/acta-document-room/{event['slug']}/index.html"
@@ -1279,6 +1621,22 @@ def main() -> None:
                 locale: current_appearance[locale] for locale in ("es", "en")
             }
             document["current_appearance_fragment"] = current_appearance["fragment"]
+            document["lph_gate_codes"] = STAGE_TO_GATE.get(
+                document.get("relationship_stage"),
+                "—",
+            )
+            document["canonical_reference"] = {
+                "stable_id": stable_id,
+                "es": stable_pages["es"],
+                "en": stable_pages["en"],
+                "reference_status": (
+                    "unlocated-or-reference-only"
+                    if "unlocated" in str(document.get("source_provenance_status", "")).lower()
+                    or document.get("relationship_stage") == "later_reliance"
+                    and document.get("record_class") == "missing-source-continuity-record"
+                    else "stable-evidence-record"
+                ),
+            }
             document["no_standalone_page_reason"] = document.get("no_page_reason") or {
                 "es": (
                     "La entrada canónica o la aparición secundaria enlazada evita duplicar una ruta "
@@ -1294,28 +1652,54 @@ def main() -> None:
             event["documents"].append(document)
         event["notes_es"] = configured.get("notes_es") or event.get("source_variant_note_es") or event.get("notes_es", "")
         event["notes_en"] = configured.get("notes_en") or event.get("source_variant_note_en") or event.get("notes_en", "")
+        if configured["id"] in CRITICAL_LPH_TIMELINE:
+            event["lph_lifecycle_control"] = CRITICAL_LPH_TIMELINE[configured["id"]]
         merged.append(event)
 
     payload = {
         "schema_version": "2.0",
-        "generated": "2026-08-28",
+        "generated": "2026-08-31",
         "scope": f"Preserved and extended {len(merged)}-event ACTA/meeting core with document-level pre-ACTA, ACTA, annex, circulation, implementation and reliance records; separate convener, body, attributed perimeter, public/private state, unresolved issues, public-artifact links and bilingual event entries.",
         "classification_boundary": "Perimeter colour is an editorial/documentary attribution. It is not proof of validity, joint action, criminality or guilt.",
         "completeness_boundary": continuity["completeness_boundary"],
         "continuity_source": CONTINUITY.relative_to(REPO).as_posix(),
         "controlled_event_family_count": len(merged),
         "source_communication_document_count": len(continuity_documents),
+        "canonical_evidence_reference_count": len(document_ids),
+        "canonical_evidence_reference_rule": CANONICAL_REFERENCE_RULE,
+        "lph_lifecycle_gate_definitions": LPH_GATES,
+        "lph_lifecycle_status_definitions": LPH_STATUS,
+        "historical_lph_versions": HISTORICAL_LPH_VERSIONS,
+        "critical_lph_timeline_event_count": len(CRITICAL_LPH_TIMELINE),
+        "lph_control_routes": {"es": LPH_ROUTE_ES, "en": LPH_ROUTE_EN},
+        "cross_track_criminal_hypothesis_model": CROSS_TRACK_MODEL,
         "primary_lane_counts": {
             lane: sum(event["primary_lane"] == lane for event in merged)
             for lane in ("A", "B", "C", "D")
         },
         "perimeters": PERIMETERS,
+        "principal_owner_acta_lineages": PRINCIPAL_LINEAGES,
+        "pre_2008_owner_acta_control": PRE_2008_CONTROL,
+        "owner_acta_role_matrix_event_count": len(owner_role_event_ids),
+        "owner_acta_role_matrix_boundary": (
+            "Caller, chair/manager, secretary/administrator, material ACTA author/attestor, "
+            "custodian/circulator and later user are separate roles. Presence, representation, "
+            "signature, finance or later benefit does not merge them. A/B/C is a date-specific "
+            "documentary lineage; D is an evidence status, not a fourth ownership perimeter."
+        ),
         "adverse_sequence_model": ADVERSE_SEQUENCE_MODEL,
         "events": merged,
     }
     LINEAGE.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
     anchor_maps = {locale: stable_anchor_map(merged, locale) for locale in ("es", "en")}
+    for locale, route in (("es", LPH_ROUTE_ES), ("en", LPH_ROUTE_EN)):
+        target = REPO / route / "index.html"
+        target.parent.mkdir(parents=True, exist_ok=True)
+        target.write_text(
+            lph_control_page(locale, merged, anchor_maps[locale]),
+            encoding="utf-8",
+        )
     for index, event in enumerate(merged):
         for locale, key in (("es", "detail_page_es"), ("en", "detail_page_en")):
             target = REPO / event[key]
@@ -1326,6 +1710,8 @@ def main() -> None:
             )
     update_chronology(merged, "es")
     update_chronology(merged, "en")
+    update_owner_role_room(merged, "es")
+    update_owner_role_room(merged, "en")
     update_sitemap(merged)
     print(f"Built {len(merged)} lineage events, {len(merged) * 2} pages and {LINEAGE.relative_to(REPO)}")
 

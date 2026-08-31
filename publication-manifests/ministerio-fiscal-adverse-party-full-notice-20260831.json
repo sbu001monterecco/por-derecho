@@ -6,7 +6,7 @@
   "owner": "Gil Marer / Por Derecho",
   "control_date": "2026-08-31",
   "repository": "sbu001monterecco/por-derecho",
-  "base_main_sha": "7cdb356d5f2b6180027719c1aa80ac8b22f77435",
+  "base_main_sha": "b505c7a81756205bfdecc1ead12ee7b9762dc1e7",
   "expected_routes": {
     "es": [
       "es/ministerio-fiscal-aviso-expreso-dano-patrimonial/index.html",
