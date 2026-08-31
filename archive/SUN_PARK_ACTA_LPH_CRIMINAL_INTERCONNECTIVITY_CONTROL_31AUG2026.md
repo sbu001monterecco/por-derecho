@@ -1,8 +1,8 @@
 # Sun Park ACTA lifecycle, LPH and criminal-interconnectivity control — 31 August 2026
 
-**Status:** PREPARED LOCALLY; NOT PUSHED, MERGED, DEPLOYED OR LIVE  
-**Current-main base:** `b8d3276a65cf8dbb1e92fa905fbcfd3dafbbcd63`
-**Preceding local ACTA role commit after rebase:** `2a380917`
+**Status:** PUBLICATION AUTHORISED 31 AUGUST 2026; RELEASE TRACKED IN PR #1284. MERGE, DEPLOYMENT AND LIVE STATUS MUST BE TAKEN FROM GITHUB AND EXACT LIVE READBACK, NOT SELF-ATTESTED BY THIS RECORD.
+**Current-main base:** `fe8326840604a591e971d2f0a224ccd594e40b04`
+**Preceding local ACTA role commit after rebase:** `477f3fa2`
 **Scope:** Community meeting lifecycle, canonical evidence references, historical LPH testing, C1→C2 alleged criminal mechanism and downstream institutional tracks.
 
 ## Result
