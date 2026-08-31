@@ -532,7 +532,11 @@ try {
     for (const relatedId of row.related_master_ids) {
       if (!publicRecords.some((recordItem) => recordItem.Master_ID === relatedId)) throw new Error(`${row.master_id}: unknown related Master ID ${relatedId}`);
     }
-    assertSameValues([...row.related_direct_master_ids, ...row.related_context_master_ids], row.related_master_ids, `${row.master_id}: separated direct/context related IDs`);
+    assertSameValues(
+      [...new Set([...row.related_direct_master_ids, ...row.related_context_master_ids])],
+      row.related_master_ids,
+      `${row.master_id}: deduplicated union of separated direct/context related IDs`,
+    );
     for (const evidenceItem of row.material_allegations_evidence) {
       if (!evidenceItem.kind || !evidenceItem.attribution) throw new Error(`${row.master_id}: material/evidence summary lacks kind or attribution`);
       requireBilingual({en: evidenceItem.text_en, es: evidenceItem.text_es}, `${row.master_id}: material/evidence summary`);
