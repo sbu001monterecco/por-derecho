@@ -6,7 +6,15 @@
 
 **Branch:** `codex/cuatrecasas-clause-email-audit-publish-20260831`
 
-**Initial state:** `REMOTE_SOURCE` after push; merge and deployment remain gated
+**Initial publication state:** `REMOTE_SOURCE` after push
+
+**Final state:** `LIVE_VERIFIED`
+
+**Pull request:** [#1295](https://github.com/sbu001monterecco/por-derecho/pull/1295)
+
+**Reviewed head:** `99261032c152c6f1bb9eadc61ef1f2867a322f2a`
+
+**Merge SHA:** `8d0b45672cac23d1e1a55ae7c8687d1e4cb495a7`
 
 ## Authority and objective
 
@@ -116,3 +124,25 @@ This control authorises strong evidence-based publication. It does not authorise
 harassment, follower mobilisation, contact with the named individual or an
 unsupported accusation of illegality, retaliation, defamation or firm-wide
 misconduct.
+
+## Live-verification closeout
+
+The exact merge SHA completed all 43 post-merge workflows successfully. GitHub
+Pages run [33450442928](https://github.com/sbu001monterecco/por-derecho/actions/runs/33450442928)
+completed successfully on that SHA.
+
+At `2026-08-31T23:29:32Z`, cache-busted readback returned HTTP 200 and exact
+merge-source SHA-256 equality for all four controlled live resources: the EN and
+ES pages, the dynamic record module and the minimized public JSON. The respective
+hashes are `edd6195c…`, `29504ccc…`, `e59d1136…` and `8f7d8d75…`.
+
+Cloud-browser verification rendered both anchored panels at
+`#inigo-linkedin-20260306`. Each language showed the verbatim message, 12 clause
+rows, 9 minimized email-context rows, 5 documentary questions, the limitation
+correction and the adverse `ICAM 1487/26` outcome. No page-origin console error
+was observed. The manifest contains the full hashes and render counts.
+
+The publication is therefore `LIVE_VERIFIED`, not a deletion-safety finding and
+not authority for LinkedIn platform posting, email, direct contact, tagging or
+follower mobilisation. The next controlled update must preserve any later CCACM
+outcome and give evidenced correction or counter-record equal prominence.
