@@ -2,11 +2,30 @@
   "schema": "por-derecho.publication-manifest.v1",
   "publication_id": "eg-745-2026-open-transparency-20260831",
   "title": "E.G. 745/2026 open transparency publication",
-  "current_state": "PR_OPEN",
+  "current_state": "DEPLOYED",
   "owner": "Por Derecho / Project Sun Rock",
   "dossier": "E.G. 745/2026",
   "control_date": "2026-08-31",
   "repository": "sbu001monterecco/por-derecho",
+  "merge_sha": "950b64f9bd61f21bcff7bd76cfc409eebd3bca88",
+  "validation": {
+    "evidence": [
+      "PR #1256 head e37c4cd52a2d998725e7d0a81f2731576c0a6309 — Publication integrity gate run 33372076811 / #2461 completed success",
+      "PR #1256 final-head proceedings interconnectivity audit completed success after Case Prism, isolation-test and Master Proceedings Register links were restored",
+      "PR #1256 final-head audience, criminal-misuse thesis, privacy and source-governance checks completed success before merge"
+    ]
+  },
+  "deployment_evidence": {
+    "pages_run_id": 33372315356,
+    "pages_run_number": 1319,
+    "head_sha": "950b64f9bd61f21bcff7bd76cfc409eebd3bca88",
+    "status": "completed",
+    "conclusion": "success",
+    "build_job": "99425976568 completed success",
+    "deploy_job": "99426065303 completed success",
+    "deploy_step": "Deploy to GitHub Pages completed success at 2026-08-31T08:19:25Z",
+    "control": "exact-SHA GitHub Pages deployment proof for PR #1256 merge"
+  },
   "expected_routes": {
     "es": [
       "es/fiscalia-inspeccion-exp-gub-745-2026/index.html",
@@ -41,8 +60,10 @@
     "base_main_sha": "44178e023d33f3804d3a6e5369b8fc138e0e05b9",
     "predecessor_pull_request": 1255,
     "predecessor_merge_sha": "44178e023d33f3804d3a6e5369b8fc138e0e05b9",
-    "merge_sha": null,
-    "pages_run": null
+    "merge_sha": "950b64f9bd61f21bcff7bd76cfc409eebd3bca88",
+    "pages_run": 33372315356,
+    "pages_run_number": 1319,
+    "pages_conclusion": "success"
   },
   "authoritative_source": {
     "filename": "OFICIO Y DECRETO EXP. 745-26.pdf",
@@ -61,7 +82,7 @@
     "named_proceedings": ["DI 248/2018", "DI 113/2022", "DI 22/2026", "DIP 2/2026", "EG 49/2026", "DP 1901/2026"]
   },
   "public_visual": {
-    "status": "PUBLISHED_BY_PREDECESSOR_RELEASE",
+    "status": "PUBLISHED",
     "privacy_control": "page 1 recipient personal email masked; native Spanish source controls",
     "preview_sha256": {
       "page_1": "9dea73c05bd91226745c8801147c6fac20b30d7d30480f22c8e0ece9ea9536d3",
@@ -105,5 +126,5 @@
     "record merits-route election"
   ],
   "evidential_boundary": "Archive, adverse decisions, source-to-Decree tension, sequence or unanswered requests do not by themselves establish bad faith, obstruction, coordination, prevarication or criminality.",
-  "deployment_closeout_required": true
+  "deployment_closeout_required": false
 }
