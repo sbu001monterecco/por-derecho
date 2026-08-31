@@ -1,0 +1,177 @@
+{
+  "schema": "por-derecho.cuatrecasas-book-media-delta.v1",
+  "control_id": "PD-4C-BOOK-DELTA-20260831-01",
+  "control_date": "2026-08-31",
+  "status": "PREPARED_PENDING_MERGE",
+  "repository": "sbu001monterecco/por-derecho",
+  "initial_task_main_sha": "950b64f9bd61f21bcff7bd76cfc409eebd3bca88",
+  "reconciled_main_sha": "80793dbba490b44a2ad25af836f201517000f5bc",
+  "book": {
+    "title": "4 Green Houses, One Red Hotel",
+    "canonical_role": "public entry point to a private document-led manuscript",
+    "evidential_spine": [
+      "mandate",
+      "knowledge",
+      "advice",
+      "affirmative act or omission",
+      "communication or silence",
+      "handover",
+      "fee-recovery inversion",
+      "La Laguna effect",
+      "proved or unproved Las Palmas transmission",
+      "causation",
+      "loss",
+      "strongest defence",
+      "remedy"
+    ],
+    "central_inversion": "Former adviser within the rescue, finance, insolvency and asset-protection perimeter later became claimant and executant against an entity and property within the same physical hotel reality.",
+    "finding_boundary": "The inversion is a documentary and professional-accountability question, not a finding of negligence, conflict, procedural fraud, collusion or criminal intent."
+  },
+  "public_routes": {
+    "es": [
+      "es/libros/four-green-houses-one-red-hotel/index.html",
+      "es/cuatrecasas-brechas-criticas/index.html"
+    ],
+    "en": [
+      "en/books/four-green-houses-one-red-hotel/index.html",
+      "en/cuatrecasas-critical-gaps/index.html"
+    ]
+  },
+  "canonical_cross_links": {
+    "professional_lifecycle": {
+      "es": "es/cuatrecasas-sun-park/index.html",
+      "en": "en/cuatrecasas-sun-park/index.html"
+    },
+    "dp748_etj_civil": {
+      "es": "es/cuatrecasas-dp748-accion-civil/index.html",
+      "en": "en/cuatrecasas-dp748-civil-action/index.html"
+    },
+    "critical_gaps": {
+      "es": "es/cuatrecasas-brechas-criticas/index.html",
+      "en": "en/cuatrecasas-critical-gaps/index.html"
+    },
+    "professional_conduct": {
+      "es": "es/cuatrecasas-icam-ccacm-2026/index.html",
+      "en": "en/cuatrecasas-icam-ccacm-2026/index.html"
+    },
+    "concurso_decisions": {
+      "es": "es/concurso-36-2012-autos-resoluciones/index.html",
+      "en": "en/insolvency-36-2012-orders-decisions/index.html"
+    },
+    "master_proceedings": {
+      "es": "es/registro-maestro-procedimientos/index.html",
+      "en": "en/master-proceedings-register/index.html"
+    }
+  },
+  "new_gap_controls": [
+    {
+      "id": "CG-011",
+      "title_en": "La Laguna to Las Palmas directional bridge",
+      "title_es": "Puente direccional La Laguna a Las Palmas",
+      "status": "OPEN",
+      "closure_test": "Identify the exact originating act, transmission mechanism, Las Palmas recipient, actual reliance, patrimonial effect, beneficiary, counterfactual and separate evidence of purpose if intentional instrumentalisation is alleged."
+    },
+    {
+      "id": "CG-012",
+      "title_en": "Legal-team delta and filing-status completeness",
+      "title_es": "Delta del equipo jurídico y completitud del estado de presentación",
+      "status": "ACTIVE_PRIVATE_CONTROL",
+      "closure_test": "Maintain role-based incremental review and preserve draft, approved draft, signed filing, presentation proof, court-served version and resulting act as separate states."
+    }
+  ],
+  "private_delta_aggregate": {
+    "search_window_start": "2026-08-27",
+    "role_channels_searched": 4,
+    "new_private_draft_packages_located": 1,
+    "new_presentation_proofs_located": 0,
+    "new_signed_judicial_decisions_located": 0,
+    "public_status_change_authorised": false,
+    "public_fact_effect": "No new Cuatrecasas fact was established by the private draft package.",
+    "privacy_boundary": "Private sender identities, addresses, provider IDs, message subjects, attachment IDs and draft text are excluded from this public control."
+  },
+  "fee_instrument_chain": [
+    "client",
+    "instructor",
+    "beneficiary",
+    "invoice",
+    "expected payer",
+    "actual payer",
+    "promissory note",
+    "judicial debtor",
+    "judicial title",
+    "asset",
+    "adjudication",
+    "possible cession",
+    "final beneficiary"
+  ],
+  "procedural_fraud_test": {
+    "status": "LEGAL_HYPOTHESIS",
+    "required_elements": [
+      "exact deception or legally material omission",
+      "knowledge",
+      "fraudulent intent",
+      "causal judicial error",
+      "prejudicial patrimonial resolution or disposition",
+      "loss",
+      "improper benefit"
+    ],
+    "limiting_rule": "Disputed billing, deficient performance, silence, an adverse order or later benefit does not alone establish procedural fraud."
+  },
+  "directional_bridge_gates": [
+    "exact La Laguna act",
+    "date and primary source",
+    "author, signatory, instructor and approver",
+    "prior knowledge from the mandate",
+    "immediate La Laguna effect",
+    "exact transmission mechanism into Concurso 36/2012",
+    "Las Palmas recipient or decision-maker",
+    "actual reliance or procedural effect",
+    "beneficiary and affected legal person",
+    "foreseeability",
+    "separate proof of purpose or intent",
+    "counterfactual and ordinary-enforcement explanation"
+  ],
+  "directional_bridge_current_status": "OPEN DIRECTIONAL BRIDGE — EFFECT NOT YET PROVED",
+  "media_release_tracks": [
+    {
+      "order": 1,
+      "title": "Professional lifecycle",
+      "status": "PUBLIC_ARCHITECTURE_READY"
+    },
+    {
+      "order": 2,
+      "title": "Matkator adviser-to-executant inversion",
+      "status": "PUBLIC_ARCHITECTURE_READY"
+    },
+    {
+      "order": 3,
+      "title": "Fee, debtor and instrument chain",
+      "status": "HOLD_FOR_PRIMARY_COMPLETION"
+    },
+    {
+      "order": 4,
+      "title": "La Laguna to Las Palmas directional map",
+      "status": "PUBLIC_OPEN_GAP_READY"
+    },
+    {
+      "order": 5,
+      "title": "Institutional answer tracker",
+      "status": "READY_AFTER_FINITE_RIGHT_OF_REPLY_PROTOCOL"
+    }
+  ],
+  "publication_rules": [
+    "Every material adverse proposition requires a source, status label, strongest defence, missing proof, correction route and right-of-reply status.",
+    "A non-response may be described only as a non-response to finite questions by a stated date; it is not an admission.",
+    "Private counsel or procurador material is not a public source unless independently filed, made public or separately authorised.",
+    "Common subject matter or the same hotel does not establish intentional cross-proceeding instrumentalisation.",
+    "A complaint, investigation or professional-conduct appeal is not a finding."
+  ],
+  "public_markers": [
+    "book-4gh1rh-professional-inversion-20260831",
+    "cuatrecasas-critical-gaps-20260831",
+    "CG-011",
+    "CG-012",
+    "OPEN DIRECTIONAL BRIDGE"
+  ],
+  "next_public_gate": "Merge, CI, Pages deployment and live bilingual readback of the four changed routes without disclosing private source material."
+}
