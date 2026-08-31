@@ -1,4 +1,10 @@
 {
+  "schema": "por-derecho.publication-manifest.v1",
+  "publication_id": "eg-745-2026-open-transparency-20260831",
+  "title": "E.G. 745/2026 open transparency publication",
+  "current_state": "PUBLICATION_CANDIDATE",
+  "owner": "Por Derecho / Project Sun Rock",
+  "dossier": "E.G. 745/2026",
   "manifest_version": "1.0",
   "control_date": "2026-08-31",
   "repository": "sbu001monterecco/por-derecho",
@@ -9,7 +15,7 @@
     "status": "PUBLICATION_CANDIDATE",
     "predecessor_pr": 1255,
     "predecessor_merge_sha": "44178e023d33f3804d3a6e5369b8fc138e0e05b9",
-    "release_pr": null,
+    "release_pr": 1256,
     "release_merge_sha": null,
     "pages_run": null
   },
