@@ -63,8 +63,9 @@
     "filename": "REQUERIMIENTO_URGENTE_MF_EXTRACONCURSAL_31JUL2026_FINAL_FIRMADO.pdf",
     "drive_status": "located",
     "sha256_from_existing_control_record": "4f94669e40a4cd14ca48da32b67edd9b4fa65cea3e3096dcb9f8170dfa901dc4",
-    "identity_with_registered_attachment": "not_yet_byte_verified",
-    "control_instruction": "Do not describe the signed master and the exact registered attachment as byte-identical until verified."
+    "sha512_recomputed_2026_08_31": "352677fed18bd52659b87e68f40ba9793e1844fcc160caca50cab345ddfd06f709afbbbaaa8912458cb067d6df74d309db7c235429302171b51f7ca327bab635",
+    "identity_with_registered_attachment": "byte_verified_identical_by_sha512_2026_08_31",
+    "control_instruction": "The recomputed SHA-512 of the located signed master exactly matches the attachment SHA-512 printed on REGAGE26e00070235775. This proves binary identity of those two controlled copies; it does not prove that the later reposicion was filed."
   },
   "public_derivatives": {
     "spanish_transcription": "evidence/fiscalia/2026/2026-08-26_FGE_INSPECCION_EG_745_2026_NOTIFICATION_DECREE_TRANSCRIPTION.md",

@@ -42,7 +42,7 @@ The official Decree's adverse outcome, silence, sequence or non-production does 
 | ID | Classification | Issue | Controlled basis | Next action |
 |---|---|---|---|---|
 | EG745-R01 | **SOURCE-PROVED DISCREPANCY / ROUTING QUESTION** | The Inspection registration is fixed on 2 August, while the Decree refers to an email received on 3 August. | REG-AGE receipt vs Decree wording. | Obtain internal routing/remission record reconciling the two paths. Do not infer alteration or suppression from the date difference alone. |
-| EG745-R02 | **UNRESOLVED EVIDENTIAL QUESTION** | The exact bytes of the 2 August registered attachment have not yet been fixed in the controlled audit. | Official receipt identifies the registered item; related 31 July signed master exists. | Obtain exact registered binary and verify hash/content. Do not call the 31 July master byte-identical until verified. |
+| EG745-R02 | **CLOSED SOURCE-IDENTITY CONTROL — 31 AUG 2026** | The receipt's SHA-512 for the 2 August registered attachment exactly matches the SHA-512 recomputed from the located signed 31 July master. | `REGAGE26e00070235775`: `352677fed18bd52659b87e68f40ba9793e1844fcc160caca50cab345ddfd06f709afbbbaaa8912458cb067d6df74d309db7c235429302171b51f7ca327bab635`; same recomputed digest for the located master. | Treat the two controlled binaries as byte-identical. This closes source identity only and is not proof that the later reposición was filed. |
 | EG745-R03 | **UNRESOLVED EVIDENTIAL QUESTION** | The complete E.G. 745 administrative file and certified/controlled index have not been produced in the located corpus. | Open action/gap matrix. | Request file/index and record response/receipt. |
 | EG745-R04 | **UNRESOLVED EVIDENTIAL QUESTION** | The official internal decision chain — receipt, reparto/allocation, examiner, report, approval, signature, archive and remissions — is not fixed in the public/controlled corpus. | Institution-held actor/routing records requested. | Seek actor-by-actor functional record; do not infer identity or intent. |
 
@@ -61,17 +61,31 @@ These are **not established legal errors**. They are questions for the reposici�
 
 These are our controls unless and until evidence establishes institutional responsibility:
 
-1. Exact 2 August registered attachment bytes are not yet fixed locally/native in the controlled audit.
+1. **CLOSED 31 AUG 2026:** exact source identity of the 2 August registered attachment is fixed by the receipt/master SHA-512 match.
 2. Legally effective notification mechanics/date remain to be verified for final deadline computation.
 3. Merits-route election remains open between optional reposición and direct Supreme Court contentious review.
 4. The direct contentious deadline remains counsel-verify.
 5. Historical assertions in the July 31 long-form report must be annexed proposition-by-proposition only after their underlying source inventory is verified.
 6. Every earlier Fiscalía registration cited in the wider source should be reconciled to its individual receipt before being used as annex proof.
+7. **PROJECT-SIDE CONTROL GAP IDENTIFIED 31 AUG 2026:** the public-safe RedSARA transcript bundle contains two excess Base64 characters. A tested in-memory repair matches the already-declared compressed and uncompressed sizes and SHA-256 values, but private-source governance prohibits editing encoded evidence payloads in public Git. Use a governed custody/replacement route; this is repository source-continuity drift, not an institutional error.
 
-## F. Public strategy
+## F. Wider-record additions from the controlled continuation pass
+
+| ID | Classification | Issue | Controlled basis | Required treatment |
+|---|---|---|---|---|
+| MF-W01 | **SOURCE-PROVED DISCREPANCY / REVIEW QUESTION** | The 12 March 2019 Fiscal opinion literally refers to insolvency aggravated by intent or fault of the insolvency administrator while seeking adverse consequences against other named persons. | Signed 12-Mar-2019 opinion; controlled DI 248 contradiction ledger. | Preserve the literal tension and obtain the source/analysis record showing how it was understood; do not infer knowing misuse. |
+| MF-W02 | **SOURCE-PROVED INSTITUTIONAL CROSS-REFERENCE** | The 7 May 2019 DI 248 archive expressly invokes the Ministerio Fiscal's already-adopted adverse calificación position concerning the complainant. | Signed DI 248 archive; distinct signatories are source-controlled. | Test institutional anchoring with the complete DI file; do not attribute personal coordination between signatories. |
+| MF-W03 | **UNRESOLVED EVIDENTIAL QUESTION** | DI 113/2022 is fixed by a registered 12-Feb-2026 information/copy request and NIG, but its reported archive is not yet fixed by a primary act. | `REGAGE26e00015106249`; NIG `3501670220220003722`. | Obtain the native file and signed archive act; keep merits/status `OPEN_REFERENCE`. |
+| MF-W04 | **SOURCE-PROVED DISCREPANCY / POST-CORRECTION GAP** | DIP 2's appeal-status premise was challenged by a registered correction identifying judicial acts concerning RPL 3319/2025. | Signed 6-Mar decree plus 11-Mar `REGAGE26e00026303869`. | Produce incorporation, examiner, reconsideration and outcome records; do not infer deliberate falsehood or a required result. |
+| MF-W05 | **OMISSION REQUIRING EXPLANATION OR PRODUCTION** | The controlled EG 49 decrees do not expose a merits re-audit of the literal 2019 contradiction or the complete material before the decision-maker. | Signed 3-Jun and 8/9-Jun decrees, hash-controlled. | Obtain the complete file/index, source inventory and referrals; do not infer personal knowledge from institutional possession alone. |
+| MF-W06 | **UNRESOLVED EVIDENTIAL QUESTION** | DP 1901/2026 has a primary 12-Jul judicial transfer to Fiscalía, but no signed Fiscal report or later judicial act is located. | NIG `3501643220260016977`; primary providencia. | Obtain report, author/reparto/visado, transmitted corpus, docket and later act; absence from the current corpus is not proof of non-existence. |
+
+## G. Public strategy
 
 The public strategy is to make each contested proposition testable:
 
 **source → official characterization → identified discrepancy/omission → production request or review ground → filing receipt → institutional response → unresolved gap/correction**.
 
 Do not publish a non-response as obstruction. Publish it only as the procedural fact that a defined request was filed on a defined date and no response has yet been located as of a defined control date.
+
+The controlling wider-record digest and current action matrix are in `evidence/fiscalia/2026/MINISTERIO_FISCAL_WIDER_MATTER_EG745_UNITARY_EVIDENCE_ACTION_DIGEST_31AUG2026.md`.

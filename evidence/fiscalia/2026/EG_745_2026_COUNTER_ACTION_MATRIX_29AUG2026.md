@@ -1,11 +1,11 @@
 # E.G. 745/2026 — counter-action architecture
 
-**Control date:** 29 August 2026  
+**Control date:** 29 August 2026; action-state update 31 August 2026
 **Purpose:** keep remedies procedurally distinct while preserving a unitary evidential dossier. Publication records positions and requested remedies; it does not convert allegations into findings.
 
 | Track | Object | Present state | Evidential threshold / dependency | Interaction control |
 |---|---|---|---|---|
-| CA-01 | Recurso potestativo de reposición | **Drafted; not verified filed** | Official Decree; REGAGE26e00070235775; exact effective-notification date; final annex/source identity | Alternative initial merits route to direct contentious review. If filed, apply statutory interaction before contentious filing. |
+| CA-01 | Recurso potestativo de reposición | **Drafted; not verified filed** | Official Decree; REGAGE26e00070235775; exact effective-notification date; final annex approval. Registered-source identity is now closed by SHA-512 match. | Alternative initial merits route to direct contentious review. If filed, apply statutory interaction before contentious filing. |
 | CA-02 | Complete expediente / controlled or certified index / copies | Drafted protective request | Proof of interested-party status as applicable; precise production scope | Separate from merits. Do **not** treat as suspending review deadlines. |
 | CA-03 | Preservation | Drafted protective request | Finite source list: institutional email/headers/attachments, routing/allocation, GEISER/RedSARA/other applicable traces, decision material | Preservation request does not establish prior loss, destruction, alteration or concealment. |
 | CA-04 | Official identification of relevant fiscales / decision-makers | Outstanding production request architecture | Actor-by-actor functional acts and official routing/decision records | Gil Marer's identification/allegation remains distinct from official confirmation. Sequence is not coordination evidence. |
@@ -51,3 +51,7 @@ As of the fresh 29 August 2026 mailbox control, there is **no reliable evidence 
 **PREPARED / OUTSTANDING — NOT YET VERIFIED AS FILED**
 
 This status may be upgraded only by an actual sent communication, REG-AGE receipt, judicial receipt or equivalent filing confirmation.
+
+The filing-proof control was re-run on 31 August 2026 across targeted sent mail and REG-AGE/Drive candidates. It again found no qualifying reposición or receipt, so the lock remains unchanged. Separately, the registered source attachment and the signed 31-July master are now verified byte-identical by exact SHA-512 match; that closure does not upgrade CA-01.
+
+Current wider-record priorities and rank are controlled by `evidence/fiscalia/2026/MINISTERIO_FISCAL_WIDER_MATTER_EG745_UNITARY_EVIDENCE_ACTION_DIGEST_31AUG2026.md`.

@@ -23,7 +23,7 @@ The governing labels remain:
 
 ## Current filing-status lock — 31 August 2026
 
-A fresh Gmail sent-mail control on 31 August 2026 found **no post-notification sent E.G. 745/2026 reposición, no REG-AGE filing receipt and no equivalent proof that the merits response has been filed**. Therefore the controlling status remains:
+A fresh Gmail sent-mail and REG-AGE/Drive proof control on 31 August 2026 found **no post-notification sent E.G. 745/2026 reposición, no REG-AGE filing receipt and no equivalent proof that the merits response has been filed**. Therefore the controlling status remains:
 
 > **RECURSO POTESTATIVO DE REPOSICIÓN — PREPARED / OUTSTANDING — NOT YET VERIFIED AS FILED**
 
@@ -39,7 +39,7 @@ A repository draft, a public webpage or another proceeding's communication is no
 | OT-04 | Request native/searchable/verifiable Decree and signature/production metadata | **DRAFT PREPARED** | received rasterised PDF + native hash | receipt + native/verifiable file or institutional explanation |
 | OT-05 | Preservation request for institutional email, headers, attachments, routing/allocation, GEISER/RedSARA and decision trace | **DRAFT PREPARED** | protective request + finite preservation scope | receipt / preservation acknowledgement if issued |
 | OT-06 | Request official actor-by-actor functional identification | **OUTSTANDING PRODUCTION REQUEST ARCHITECTURE** | originating request 5 + six named proceedings | official role/routing record or reasoned refusal |
-| OT-07 | Fix exact bytes of the 2 August registered attachment and compare to the 31 July signed master | **OPEN / CRITICAL** | official REG-AGE receipt + related signed master | verified hash/content comparison record |
+| OT-07 | Fix exact bytes of the 2 August registered attachment and compare to the 31 July signed master | **CLOSED / VERIFIED 31 AUG 2026** | receipt SHA-512 exactly matches SHA-512 recomputed from the located signed master | digest + updated metadata/register; source identity only, not reposición filing proof |
 | OT-08 | Supreme Court preservation/preparation bundle | **PREPARATION ONLY** | Decree + notice + registry source + review matrix | counsel control note; filing receipt only if later filed |
 | OT-09 | Source-to-Decree correction / clarification matrix | **DRAFT ARCHITECTURE** | registered source vs Decree | receipt + response/correction if filed |
 | OT-10 | Distinct superior-FGE / disciplinary / criminal / patrimonial route triage | **TRIAGE ONLY** | counter-action matrix | route-specific legal basis, actor-specific evidence and separate docket/receipt |
@@ -65,6 +65,10 @@ Because the Decree itself invokes Article 66, the response asks for an express e
 ### UNRESOLVED EVIDENTIAL QUESTIONS
 
 The public case continues to ask: what exact material did Inspection examine; what internal routing reconciles the 2 August REG-AGE source with the Decree's reference to an email received on 3 August; what official file/index exists; what native signed/searchable decision exists; and who performed the relevant institutional acts. None of those open questions is converted into proof of bad faith, coordination, obstruction or criminality merely because an answer is outstanding.
+
+### CLOSED SOURCE-IDENTITY QUESTION
+
+The exact SHA-512 printed on `REGAGE26e00070235775` for the registered attachment equals the digest recomputed from the located signed 31-July master: `352677fed18bd52659b87e68f40ba9793e1844fcc160caca50cab345ddfd06f709afbbbaaa8912458cb067d6df74d309db7c235429302171b51f7ca327bab635`. The binaries may now be described as byte-identical. The closure does not prove that the later reposición was filed.
 
 ## Supporting evidence — public paths
 
@@ -101,6 +105,8 @@ The public case continues to ask: what exact material did Inspection examine; wh
 
 The wider material is contextual and evidential. It does not by itself prove coordination, shared intent or criminal responsibility.
 
+- Unitary evidence-to-action digest: `evidence/fiscalia/2026/MINISTERIO_FISCAL_WIDER_MATTER_EG745_UNITARY_EVIDENCE_ACTION_DIGEST_31AUG2026.md`
+
 ## Transparency commitments
 
 1. Publish every material official response affecting E.G. 745/2026 with date and provenance.
@@ -113,10 +119,10 @@ The wider material is contextual and evidential. It does not by itself prove coo
 
 ## Immediate next closure gates
 
-1. Fix exact 2 August registered attachment bytes and hash comparison.
-2. Confirm effective notification mechanics/date.
-3. Record the merits-route election.
-4. If reposición is elected and substantively approved, file **ASAP** and preserve the exact filing receipt.
-5. File the separate access/native-copy/preservation request through the authorised route and publish its receipt/status once it exists.
+1. Confirm effective notification mechanics/date.
+2. Record the merits-route election.
+3. If reposición is elected and substantively approved, file **ASAP** and preserve the exact filing receipt.
+4. File the separate access/native-copy/preservation request through the authorised route and publish its receipt/status once it exists.
+5. Obtain the signed Fiscal report and later judicial act in DP 1901/2026 and complete the six named Fiscalía files.
 
 Until those events occur, the public record must say exactly what is ready, what is being pursued and what is not yet filed.
