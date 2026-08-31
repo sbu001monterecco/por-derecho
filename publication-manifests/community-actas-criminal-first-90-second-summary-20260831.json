@@ -1,0 +1,79 @@
+{
+  "schema": "por-derecho.publication-manifest.v1",
+  "publication_id": "community-actas-criminal-first-90-second-summary-20260831",
+  "control_date": "2026-08-31",
+  "current_state": "DRAFT",
+  "state": "DRAFT",
+  "owner": "Por Derecho / Project Sun Rock",
+  "purpose": "Publish a bilingual plain-language 90-second, unitary and criminal-prosecutorial-first executive layer on the canonical 2011-2022 ACTA chronology, while preserving civil/horizontal-property, insolvency, title, operator, contrary-record and actor-specific proof controls.",
+  "source_base": "e313c13bf46464015a72025dcd9264e61ec33107",
+  "expected_routes": {
+    "es": [
+      "es/comunidad-instrumentalizacion/actas-2011-2022/index.html",
+      "es/comunidad-instrumentalizacion/index.html",
+      "es/hipotesis-criminal-unitaria-2011-presente/index.html"
+    ],
+    "en": [
+      "en/community-instrumentalisation/minutes-2011-2022/index.html",
+      "en/community-instrumentalisation/index.html",
+      "en/unitary-criminal-hypothesis-2011-present/index.html"
+    ]
+  },
+  "canonical_live_urls": {
+    "es": "https://sbu001monterecco.github.io/por-derecho/es/comunidad-instrumentalizacion/actas-2011-2022/#resumen-penal-90",
+    "en": "https://sbu001monterecco.github.io/por-derecho/en/community-instrumentalisation/minutes-2011-2022/#criminal-summary-90"
+  },
+  "live_markers": {
+    "es": "id=\"resumen-penal-90\"",
+    "en": "id=\"criminal-summary-90\""
+  },
+  "analysis_order": [
+    "criminal_prosecutorial_investigative_forensic_first",
+    "horizontal_property_and_civil",
+    "insolvency",
+    "title_property_registry",
+    "hotel_operation_tourism",
+    "funding_and_economic_effect"
+  ],
+  "actor_separation": {
+    "private_actors": [
+      "Francisco Mario Matos Matas",
+      "Antonio Cogolludo Rojas",
+      "Shaila María Cogolludo Ramos",
+      "José Daniel Acosta Matos",
+      "Laura Patricia Acosta Matos"
+    ],
+    "insolvency_administrator": "Francisco de Borja Rodríguez-Batllori Laffitte",
+    "judge": "Alberto López Villarrubia",
+    "rule": "Act, capacity, duty, knowledge, purpose, reliance, effect and benefit/harm remain actor-specific; chronology, association or later benefit does not transfer culpability."
+  },
+  "controlling_boundaries": [
+    "The central mechanism is an attributed investigative hypothesis, not an adjudicated criminal finding.",
+    "Horizontal-property invalidity or irregularity does not by itself establish crime; formal civil or insolvency validity does not automatically exclude separate criminal relevance.",
+    "The incoming 2012 management team acknowledges that its early Community/maintenance-type charging method was incorrect; that mistake does not validate later contested authority and is not hidden.",
+    "The 1-Feb-2012 CEXP-Monterecco communication, AP 89/2014, AP 804/2018, the 26-Jun-2018 suspension, 24-Oct-2019 non-validation and 24-Feb-2021 reasoned decision remain visible counter-records.",
+    "The ONA-centred exit was developed; Gil Marer/Aweswell attribute its failure entirely to the 7-Jun-2018 material-control event and lack of effective judicial protection, while final facility, drawdown and the condition-performance ledger remain open.",
+    "20-Jan-2017 is a genuine definitive-text modification comparator; 8-Feb-2018 changes creditor identity, not the recognised credit; 4-Jun-2018 supplies a liquidation/payment calculation bridge, not a demonstrated definitive-text amendment.",
+    "The Mercantile Court response to the pre-7-Jun Arrecife request existed and was received on 11-Jun-2018; its content and annexes remain missing and are not reconstructed by inference.",
+    "Not located in the controlled corpus is not proof that a document or act did not exist.",
+    "Later title, works, finance or public support do not by themselves prove an earlier offence or a later actor's complicity.",
+    "No criminal judgment establishing the alleged plan or these actors' guilt has been located."
+  ],
+  "interlinks": [
+    "Community dossier to 90-second anchors",
+    "unitary criminal map to 90-second anchors",
+    "90-second layer to the ACTA document room",
+    "90-second layer to the 7-Jun-2018 material-control dossier",
+    "90-second layer to the ONA exit dossier",
+    "90-second layer to the Insolvency Administrator and judicial matrices",
+    "90-second layer to the RIC/title/funding dossier and decisive missing-evidence register"
+  ],
+  "validation": {
+    "status": "PENDING",
+    "evidence": []
+  },
+  "merge_sha": null,
+  "deployment_evidence": [],
+  "live_verification_evidence": null,
+  "deletion_record": null
+}
