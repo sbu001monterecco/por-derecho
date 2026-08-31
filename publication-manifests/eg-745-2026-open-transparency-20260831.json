@@ -2,21 +2,46 @@
   "schema": "por-derecho.publication-manifest.v1",
   "publication_id": "eg-745-2026-open-transparency-20260831",
   "title": "E.G. 745/2026 open transparency publication",
-  "current_state": "PUBLICATION_CANDIDATE",
+  "current_state": "PR_OPEN",
   "owner": "Por Derecho / Project Sun Rock",
   "dossier": "E.G. 745/2026",
-  "manifest_version": "1.0",
   "control_date": "2026-08-31",
   "repository": "sbu001monterecco/por-derecho",
+  "expected_routes": {
+    "es": [
+      "es/fiscalia-inspeccion-exp-gub-745-2026/index.html",
+      "es/fiscalia-inspeccion-exp-gub-745-2026/facsimil-visual-31-agosto-2026.html",
+      "es/fiscalia-inspeccion-exp-gub-745-2026/paquete-respuesta-29-agosto-2026.html",
+      "es/fiscalia-inspeccion-exp-gub-745-2026/persecucion-abierta-transparencia-31-agosto-2026.html",
+      "es/fiscalia-inspeccion-exp-gub-745-2026/diario-actuaciones-29-agosto-2026.html"
+    ],
+    "en": [
+      "en/public-prosecution-inspection-exp-gub-745-2026/index.html",
+      "en/public-prosecution-inspection-exp-gub-745-2026/visual-facsimile-31-august-2026.html",
+      "en/public-prosecution-inspection-exp-gub-745-2026/response-package-29-august-2026.html",
+      "en/public-prosecution-inspection-exp-gub-745-2026/open-prosecution-transparency-31-august-2026.html",
+      "en/public-prosecution-inspection-exp-gub-745-2026/action-diary-29-august-2026.html"
+    ]
+  },
+  "expected_source_files": [
+    "evidence/fiscalia/2026/EG_745_2026_OPEN_TRANSPARENCY_LEDGER_31AUG2026.md",
+    "archive/EG_745_2026_OPEN_TRANSPARENCY_RELEASE_31AUG2026.md",
+    "evidence/fiscalia/2026/2026-08-26_FGE_INSPECCION_EG_745_2026_NOTIFICATION_DECREE_TRANSCRIPTION.md",
+    "evidence/fiscalia/2026/2026-08-26_FGE_INSPECCION_EG_745_2026_ENGLISH_TRANSLATION.md",
+    "evidence/fiscalia/2026/2026-08-26_FGE_INSPECCION_EG_745_2026_METADATA.json",
+    "evidence/fiscalia/2026/FGE_INSPECCION_EG_745_2026_ANNEX_EVIDENCE_GAP_MATRIX_29AUG2026.md",
+    "evidence/fiscalia/2026/EG_745_2026_ACTION_DIARY_29AUG2026.md",
+    "evidence/fiscalia/2026/EG_745_2026_COUNTER_ACTION_MATRIX_29AUG2026.md",
+    "drafts/fiscalia/2026-08-29_RECURSO_POTESTATIVO_REPOSICION_EG_745_2026_DRAFT.md",
+    "drafts/fiscalia/2026-08-29_EG_745_2026_PROTECTIVE_ACCESS_PRESERVATION_REQUEST_DRAFT.md"
+  ],
   "release": {
-    "name": "E.G. 745/2026 open transparency publication",
-    "base_main_sha": "44178e023d33f3804d3a6e5369b8fc138e0e05b9",
     "branch": "eg745-open-transparency-20260831",
-    "status": "PUBLICATION_CANDIDATE",
-    "predecessor_pr": 1255,
+    "pull_request": 1256,
+    "base_main_sha": "44178e023d33f3804d3a6e5369b8fc138e0e05b9",
+    "predecessor_pull_request": 1255,
     "predecessor_merge_sha": "44178e023d33f3804d3a6e5369b8fc138e0e05b9",
-    "release_pr": 1256,
-    "release_merge_sha": null,
+    "merge_sha": null,
     "pages_run": null
   },
   "authoritative_source": {
@@ -33,30 +58,20 @@
     "registered": "2026-08-02T23:31:58",
     "receipt_sha256": "33f7b47418062a0bc4993f424e459af18fa2d334acc8bafc4c2e40750f171f97",
     "numbered_requests": 12,
-    "named_proceedings": [
-      "DI 248/2018",
-      "DI 113/2022",
-      "DI 22/2026",
-      "DIP 2/2026",
-      "EG 49/2026",
-      "DP 1901/2026"
-    ]
+    "named_proceedings": ["DI 248/2018", "DI 113/2022", "DI 22/2026", "DIP 2/2026", "EG 49/2026", "DP 1901/2026"]
   },
   "public_visual": {
     "status": "PUBLISHED_BY_PREDECESSOR_RELEASE",
-    "privacy_control": "page 1 recipient personal email masked; institutional source content otherwise preserved in the controlled visual derivative",
+    "privacy_control": "page 1 recipient personal email masked; native Spanish source controls",
     "preview_sha256": {
       "page_1": "9dea73c05bd91226745c8801147c6fac20b30d7d30480f22c8e0ece9ea9536d3",
       "page_2": "4ed65b0e324ea0ec6dcedaf97ed178aa97aacaf76c877bbdb25058ccdd234969",
       "page_3": "62271b227f79a44879971bef77be20fc5f760257e81aac31cec56b0094c10c2e"
-    },
-    "spanish_route": "es/fiscalia-inspeccion-exp-gub-745-2026/facsimil-visual-31-agosto-2026.html",
-    "english_route": "en/public-prosecution-inspection-exp-gub-745-2026/visual-facsimile-31-august-2026.html"
+    }
   },
   "translation": {
     "english_complete_inline": true,
-    "route": "en/public-prosecution-inspection-exp-gub-745-2026/response-package-29-august-2026.html#full-text",
-    "control": "convenience translation; Spanish native source and controlled Spanish transcription prevail"
+    "control": "convenience translation; Spanish native source and controlled transcription prevail"
   },
   "filing_status": {
     "control_date": "2026-08-31",
@@ -68,19 +83,10 @@
     "reconsideration_working_backstop": "2026-09-28",
     "qualification": "subject to verification of legally effective notification date/mechanics and any applicable special rule",
     "direct_contentious": "COUNSEL VERIFY BEFORE FILING",
-    "asap_rule": "file as soon as substantively ready; formal deadlines are backstops, not target dates",
-    "protective_requests_suspend_merits_deadline": false
+    "protective_requests_suspend_merits_deadline": false,
+    "asap_rule": "file as soon as substantively ready; formal deadlines are backstops, not target dates"
   },
   "open_transparency_definition": "Publicly pursue the evidential, review, preservation and accountability case; Por Derecho does not exercise the State criminal-prosecution function and does not declare guilt.",
-  "public_status_labels": [
-    "PRIMARY-SOURCE FACT",
-    "PROCEDURAL FACT",
-    "OUR ALLEGATION",
-    "LEGAL ARGUMENT / REVIEW GROUND",
-    "INFERENCE / HYPOTHESIS",
-    "UNRESOLVED EVIDENTIAL QUESTION",
-    "INDEPENDENT DETERMINATION REQUIRED"
-  ],
   "actions_disclosed": [
     {"id": "OT-01", "action": "merits route election", "status": "OPEN / CRITICAL"},
     {"id": "OT-02", "action": "reconsideration if elected", "status": "PREPARED / OUTSTANDING — NOT VERIFIED FILED"},
@@ -97,25 +103,6 @@
     "fix exact 2 August registered attachment bytes and compare with official receipt / 31 July related master without assuming byte identity",
     "confirm legally effective notification mechanics/date",
     "record merits-route election"
-  ],
-  "new_public_pages": [
-    "es/fiscalia-inspeccion-exp-gub-745-2026/persecucion-abierta-transparencia-31-agosto-2026.html",
-    "en/public-prosecution-inspection-exp-gub-745-2026/open-prosecution-transparency-31-august-2026.html"
-  ],
-  "new_controlled_records": [
-    "evidence/fiscalia/2026/EG_745_2026_OPEN_TRANSPARENCY_LEDGER_31AUG2026.md",
-    "archive/EG_745_2026_OPEN_TRANSPARENCY_RELEASE_31AUG2026.md",
-    "publication-manifests/eg-745-2026-open-transparency-20260831.json"
-  ],
-  "updated_public_pages": [
-    "es/fiscalia-inspeccion-exp-gub-745-2026/index.html",
-    "en/public-prosecution-inspection-exp-gub-745-2026/index.html",
-    "es/fiscalia-inspeccion-exp-gub-745-2026/facsimil-visual-31-agosto-2026.html",
-    "en/public-prosecution-inspection-exp-gub-745-2026/visual-facsimile-31-august-2026.html",
-    "es/fiscalia-inspeccion-exp-gub-745-2026/paquete-respuesta-29-agosto-2026.html",
-    "en/public-prosecution-inspection-exp-gub-745-2026/response-package-29-august-2026.html",
-    "es/fiscalia-inspeccion-exp-gub-745-2026/diario-actuaciones-29-agosto-2026.html",
-    "en/public-prosecution-inspection-exp-gub-745-2026/action-diary-29-august-2026.html"
   ],
   "evidential_boundary": "Archive, adverse decisions, source-to-Decree tension, sequence or unanswered requests do not by themselves establish bad faith, obstruction, coordination, prevarication or criminality.",
   "deployment_closeout_required": true
