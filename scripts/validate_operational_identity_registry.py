@@ -472,7 +472,9 @@ def validate_operational_control(records: dict[str, dict[str, Any]]) -> dict[str
     pending_proceeding_ids = {
         record_id
         for record_id, record in records.items()
-        if record.get("identity_resolution") not in {None, "CANONICAL", "CARET_CONFIRMED"}
+        if record.get("type") == "PROCEEDING"
+        and record.get("record_kind") != "PROCEEDING_FAMILY_REFERENCE"
+        and record.get("identity_resolution") not in {None, "CANONICAL", "CARET_CONFIRMED"}
     }
     require(
         proceeding_queue_ids == pending_proceeding_ids,
