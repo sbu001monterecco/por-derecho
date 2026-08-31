@@ -21,6 +21,10 @@
     'LZ-JUD-043': {
       en: new URL('en/dp-3205-2014-arrecife/', repoBase).href,
       es: new URL('es/dp-3205-2014-arrecife/', repoBase).href
+    },
+    'NAT-FIS-004': {
+      en: new URL('en/public-prosecution-inspection-exp-gub-745-2026/', repoBase).href,
+      es: new URL('es/fiscalia-inspeccion-exp-gub-745-2026/', repoBase).href
     }
   };
   const decisionDetailRoutes = {

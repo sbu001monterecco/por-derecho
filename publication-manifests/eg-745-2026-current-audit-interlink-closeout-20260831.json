@@ -1,0 +1,96 @@
+{
+  "publication_id": "eg-745-2026-current-audit-interlink-closeout-20260831",
+  "current_state": "PREPARED_PENDING_MERGE",
+  "owner": "Por Derecho / Project Sun Rock",
+  "as_of": "2026-08-31",
+  "preparation_base_sha": "b5a37e4e4aba587d24ae8861bc89ba81b087f659",
+  "merge_sha": null,
+  "canonical_proceeding": {
+    "master_id": "NAT-FIS-004",
+    "reference": "E.G. 745/2026",
+    "registration_rule": "Maintain one existing proceeding; update its event/status after verified filing and create no new proceeding unless a competent authority assigns a distinct official reference."
+  },
+  "prior_live_baseline": {
+    "main_sha": "a54c74b204d6f7596d3da9e41af569c08c676736",
+    "pages_run_id": 33417046220,
+    "eg745_live_readback_run_id": 33417047485,
+    "scope": "Evidence only for the pre-correction public baseline; it does not attest this prepared corrective release."
+  },
+  "expected_routes": {
+    "es": [
+      "es/fiscalia-inspeccion-exp-gub-745-2026/index.html",
+      "es/fiscalia-inspeccion-exp-gub-745-2026/paquete-respuesta-29-agosto-2026.html",
+      "es/fiscalia-inspeccion-exp-gub-745-2026/diario-actuaciones-29-agosto-2026.html",
+      "es/fiscalia-inspeccion-exp-gub-745-2026/persecucion-abierta-transparencia-31-agosto-2026.html",
+      "es/fiscalia-inspeccion-exp-gub-745-2026/continuidad-errores-omisiones-31-agosto-2026.html",
+      "es/fiscalia-inspeccion-exp-gub-745-2026/facsimil-visual-31-agosto-2026.html"
+    ],
+    "en": [
+      "en/public-prosecution-inspection-exp-gub-745-2026/index.html",
+      "en/public-prosecution-inspection-exp-gub-745-2026/response-package-29-august-2026.html",
+      "en/public-prosecution-inspection-exp-gub-745-2026/action-diary-29-august-2026.html",
+      "en/public-prosecution-inspection-exp-gub-745-2026/open-prosecution-transparency-31-august-2026.html",
+      "en/public-prosecution-inspection-exp-gub-745-2026/continuity-errors-omissions-31-august-2026.html",
+      "en/public-prosecution-inspection-exp-gub-745-2026/visual-facsimile-31-august-2026.html"
+    ]
+  },
+  "expected_source_files": [
+    "publication-manifests/eg-745-2026-current-audit-interlink-closeout-20260831.json",
+    "archive/EG_745_2026_CURRENT_AUDIT_INTERLINK_CLOSEOUT_31AUG2026.md",
+    "archive/CONTINUOUS_MAINTENANCE_MATRIX.md",
+    "assets/master-proceedings-publication-20260830.js",
+    "assets/site.js",
+    "scripts/audit_master_proceedings_publication.py",
+    "es/registro-maestro-procedimientos/index.html",
+    "en/master-proceedings-register/index.html",
+    "es/fiscalia-inspeccion-exp-gub-745-2026/index.html",
+    "en/public-prosecution-inspection-exp-gub-745-2026/index.html",
+    "es/fiscalia-inspeccion-exp-gub-745-2026/continuidad-errores-omisiones-31-agosto-2026.html",
+    "en/public-prosecution-inspection-exp-gub-745-2026/continuity-errors-omissions-31-august-2026.html",
+    "sitemap-fiscalia-exp-gub-745.xml",
+    "sitemap.xml"
+  ],
+  "public_correction_source_basis": {
+    "controls": [
+      "archive/CORRECTION_REGISTER.md#CR-154",
+      "archive/CORRECTION_REGISTER.md#CR-155",
+      "archive/MISSING_EVIDENCE_REGISTER.md#ME-118",
+      "archive/MISSING_EVIDENCE_REGISTER.md#ME-119"
+    ],
+    "private_candidate_package_used_as_public_source": false
+  },
+  "public_safe_scope": [
+    "reciprocal Master-register dossier route and exact record anchors",
+    "DI 113/2022 and DI 22/2026 source-state corrections with open gaps preserved",
+    "continuity-page stylesheet and canonical language metadata repair",
+    "bilingual sitemap completion",
+    "current maintenance and publication-state closeout"
+  ],
+  "private_package_boundary": {
+    "audit_status": "AUDITED_IN_RESTRICTED_CUSTODY",
+    "principal_signature_status": "UNSIGNED",
+    "filing_status": "NOT_VERIFIED_AS_FILED",
+    "official_receipt_status": "NOT_VERIFIED",
+    "public_material": "NONE_FROM_PRIVATE_CANDIDATE_PACKAGE",
+    "excluded_from_public_record": [
+      "private files",
+      "private hashes",
+      "personal data",
+      "signature material",
+      "covering communications",
+      "legal strategy"
+    ]
+  },
+  "evidential_boundaries": [
+    "Cross-linking is navigation and traceability, not joinder or proof of receipt, examination, knowledge, reliance or coordination.",
+    "Located signed decisions do not establish file completeness or source-by-source examination.",
+    "An unsigned private candidate, repository draft, public page or audit statement is not filing evidence."
+  ],
+  "publication_closeout": {
+    "pull_request": null,
+    "merge_sha": null,
+    "pages_run_id": null,
+    "live_readback_run_id": null,
+    "next_state_gate": "Remote source, PR, CI, merge, exact-SHA Pages deployment and no-cache live readback must be observed in sequence."
+  }
+}
