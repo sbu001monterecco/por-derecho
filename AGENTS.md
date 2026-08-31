@@ -421,3 +421,31 @@ The required result format is: **scope; unique-reference denominator; `^` count;
 coverage percentage; exceptions with reason and next source needed**. A truthful
 partial result is `PARTIAL — NOT ALL IS^`; complete confirmation is permitted
 only when the exception count is zero. Never add carets merely to reach 100%.
+
+## 10. Community meeting lifecycle and canonical evidence
+
+For every Sun Park Owners' Community meeting/ACTA task, read and apply
+`.github/governance/COMMUNITY_MEETING_LIFECYCLE_CANONICAL_EVIDENCE_PROTOCOL_31AUG2026.md`.
+
+- Treat authority/call, notice/service, attendance/debt/vote, ACTA production,
+  and post-meeting circulation/objection/use as five separate evidential gates.
+- Give every located item or material missing-source obligation one immutable
+  stable evidence ID and one bilingual canonical URL/fragment. A gap ID records
+  the search obligation and never fabricates a source.
+- Apply the article-by-article LPH version in force on the meeting date. Use
+  `facial-concern`, `contested`, `located-open`, `unlocated`, `reference-only`
+  or `not-applicable`; do not convert those controls into an unproved finding
+  of compliance, nullity, falsity, criminality or guilt.
+- Keep ACTA, notice, agenda, proxy, annex, objection, email, audio, circulation,
+  implementation and later reliance records distinct even if bundled in one
+  carrier. Keep callers, chairs, secretaries, authors, custodians, circulators
+  and later users distinct.
+- The attributed C1 → C2 sequence may be visualised only with the actor/entity,
+  legal-succession, common-command, agreement, intent and guilt boundaries
+  stated visibly.
+- For RIC/RICPE, refurbishment/HNT/MYND, regional-incentive, FEDER/EU-funds,
+  Yaiza, Cabildo or SAIP links, classify the connector as direct documentary,
+  attributed criminal hypothesis, reliance open or institutional notice. Do not
+  state downstream reliance on an ACTA without the document-specific
+  transmission, citation, authority schedule, verification or adoption record.
+  `D-MIXED`/`D-OPEN` is an evidential status, never a criminal actor perimeter.

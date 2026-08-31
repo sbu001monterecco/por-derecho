@@ -78,6 +78,21 @@ const roomCases = [
   },
 ];
 
+const lphCases = [
+  {
+    name: 'es-lph-lifecycle',
+    route: '/es/comunidad-instrumentalizacion/sala-documental-actas/control-lph-ciclo-juntas/',
+    kind: 'lph',
+    locale: 'es',
+  },
+  {
+    name: 'en-lph-lifecycle',
+    route: '/en/community-instrumentalisation/acta-document-room/meeting-lifecycle-lph-control/',
+    kind: 'lph',
+    locale: 'en',
+  },
+];
+
 const eventCases = manifest.events.flatMap(event => ['es', 'en'].map(locale => ({
   name: `${locale}-${event.slug || event.id.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`,
   route: publicRoute(event[`detail_page_${locale}`], event.id, locale),
@@ -93,7 +108,7 @@ if (eventCases.length !== expectedEventCount * 2 || new Set(eventCases.map(item 
   throw new Error(`expected ${expectedEventCount * 2} unique bilingual event routes; found ${eventCases.length}`);
 }
 
-const cases = [...roomCases, ...eventCases];
+const cases = [...roomCases, ...lphCases, ...eventCases];
 const viewports = {
   desktop: { width: 1440, height: 1000 },
   mobile: { width: 390, height: 844 },
@@ -216,6 +231,19 @@ try {
             bodyPerimeter: body.dataset.perimeter || null,
           };
         }, { perimeterDefinitions: expectedPerimeters })
+        : testCase.kind === 'lph'
+        ? await page.evaluate(() => ({
+          title: document.title,
+          lang: document.documentElement.lang,
+          gateCodes: [...new Set([...document.querySelectorAll('.lph-gate-flow .lph-gate-code')].map(node => node.textContent.trim()))],
+          statuses: [...new Set([...document.querySelectorAll('[data-lph-status]')].map(node => node.dataset.lphStatus))],
+          crossGrades: [...new Set([...document.querySelectorAll('[data-cross-grade]')].map(node => node.dataset.crossGrade))],
+          canonicalRows: document.querySelectorAll('.lph-canonical-ledger tbody tr').length,
+          criticalRows: document.querySelectorAll('.lph-timeline-matrix tbody tr').length,
+          evidenceLinks: document.querySelectorAll('.lph-canonical-ledger tbody a[href*="#"]').length,
+          hasCriminalBoundary: Boolean(document.querySelector('#interconexion-criminal-alegada .acta-criminal-boundary')),
+          overflow: document.documentElement.scrollWidth - document.documentElement.clientWidth,
+        }))
         : await page.evaluate(({ expected, expectedCode, full, expectedId }) => {
           const body = document.body;
           const ribbon = document.querySelector('.acta-event-hero .acta-perimeter-ribbon');
@@ -270,6 +298,14 @@ try {
             if (!display.visible) errors.push(`${perimeter.key} code/label is not visibly rendered`);
           }
         }
+      } else if (testCase.kind === 'lph') {
+        if (JSON.stringify(metrics.gateCodes) !== JSON.stringify(['G1', 'G2', 'G3', 'G4', 'G5'])) errors.push(`unexpected gate codes ${metrics.gateCodes.join(',')}`);
+        if (metrics.statuses.length !== 6) errors.push(`LPH status count ${metrics.statuses.length} != 6`);
+        if (metrics.crossGrades.length !== 4) errors.push(`cross-track grade count ${metrics.crossGrades.length} != 4`);
+        if (metrics.canonicalRows !== 122) errors.push(`canonical evidence rows ${metrics.canonicalRows} != 122`);
+        if (metrics.criticalRows !== 9) errors.push(`critical LPH rows ${metrics.criticalRows} != 9`);
+        if (metrics.evidenceLinks !== 122) errors.push(`canonical evidence links ${metrics.evidenceLinks} != 122`);
+        if (!metrics.hasCriminalBoundary) errors.push('missing visible D-status/criminal-attribution boundary');
       } else {
         if (metrics.bodyPerimeter !== testCase.perimeter) errors.push(`perimeter ${metrics.bodyPerimeter} != ${testCase.perimeter}`);
         if (!metrics.ribbon) errors.push('missing perimeter ribbon');
@@ -313,6 +349,7 @@ fs.writeFileSync(path.join(out, 'result.json'), JSON.stringify({
   controlledEvents: expectedEventCount,
   bilingualEventRoutes: eventCases.length,
   roomRoutes: roomCases.length,
+  lphRoutes: lphCases.length,
   colours: Object.fromEntries(canonicalColours),
   results,
 }, null, 2));
