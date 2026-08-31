@@ -97,7 +97,7 @@ jobs:
 
       - name: Save next public-source fingerprint state
         if: github.event_name != 'pull_request' && always()
-        uses: actions/cache/save@0400d5f644dc74513175e3cd8d07132dd4860809 # v4.2.4
+        uses: actions/cache/save@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
         with:
           path: |
             artifacts/fti-meeting-point-asset-transaction-monitor/state.json
