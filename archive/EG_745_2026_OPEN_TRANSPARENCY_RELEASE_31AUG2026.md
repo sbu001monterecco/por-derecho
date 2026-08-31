@@ -6,7 +6,10 @@
 > `EG_745_2026_VISUAL_PUBLICATION_CONTINUITY_AUDIT_31AUG2026.md` and the
 > deterministic replacement control
 > `EG_745_2026_VISUAL_PUBLICATION_SUPERSEDING_PREMERGE_CONTROL_31AUG2026.md`.
-> Replacement visual status: **`PREPARED_PENDING_MERGE` — NOT VERIFIED LIVE**.
+> At the replacement pre-merge checkpoint, the status was
+> **`PREPARED_PENDING_MERGE` — NOT VERIFIED LIVE**. The successor state is
+> **`LIVE_VERIFIED`**, proved in
+> `EG_745_2026_VISUAL_AND_CONTINUITY_DEPLOYMENT_ATTESTATION_31AUG2026.md`.
 
 ## Release purpose
 

@@ -1,11 +1,12 @@
 # E.G. 745/2026 — public visual facsimile control — 31 August 2026
 
-> **SUPERSEDED BASE64 PREVIEW CONTROL.** The direct-asset, deterministic
-> raster-first replacement is controlled by
-> `archive/EG_745_2026_VISUAL_PUBLICATION_SUPERSEDING_PREMERGE_CONTROL_31AUG2026.md`
-> and remains **`PREPARED_PENDING_MERGE`** until exact-SHA Pages deployment and
-> byte-identical live readback. The material below preserves the earlier viewer
-> lineage and its correction; it is not current publication proof.
+> **SUPERSEDED BASE64 PREVIEW CONTROL; REPLACEMENT LIVE-VERIFIED.** The
+> direct-asset, deterministic raster-first replacement is **`LIVE_VERIFIED`**.
+> PR #1274 merged as `6dc04a8a35c4a096631ca1852ec5fbee96c4965f` (tree `05b59b3f8ea073150022ff2815f4e45f2b88ce95`); Pages run
+> `33411821984` deployed that exact SHA; PR #1275 readback run `33413265941`
+> matched all 32 changed public files byte-for-byte. The durable, version-controlled control is
+> `archive/EG_745_2026_VISUAL_AND_CONTINUITY_DEPLOYMENT_ATTESTATION_31AUG2026.md`.
+> The material below preserves the earlier viewer lineage and its correction.
 
 ## Native source
 

@@ -7,11 +7,12 @@
 **Originating Inspection registration:** `REGAGE26e00070235775`, presented/registered 2 August 2026  
 **Receipt SHA-256:** `33f7b47418062a0bc4993f424e459af18fa2d334acc8bafc4c2e40750f171f97`
 
-> **Visual-publication correction:** the earlier Base64 facsimile control is
-> superseded. The deterministic replacement PDF/PNG/WebP set is
-> **`PREPARED_PENDING_MERGE`** and must not be called `LIVE` until exact-SHA
-> Pages deployment and byte-identical public readback. See
-> `archive/EG_745_2026_VISUAL_PUBLICATION_SUPERSEDING_PREMERGE_CONTROL_31AUG2026.md`.
+> **Visual-publication correction and closure:** the earlier Base64 facsimile
+> control is superseded. The deterministic replacement PDF/PNG/WebP set is
+> **`LIVE_VERIFIED`**. PR #1274 merged as `6dc04a8a35c4a096631ca1852ec5fbee96c4965f` (tree
+> `05b59b3f8ea073150022ff2815f4e45f2b88ce95`); Pages run `33411821984` deployed that exact SHA; PR #1275
+> readback run `33413265941` matched all 32 changed public files byte-for-byte.
+> See `archive/EG_745_2026_VISUAL_AND_CONTINUITY_DEPLOYMENT_ATTESTATION_31AUG2026.md`.
 
 ## What “prosecute this matter in the open” means here
 
@@ -80,12 +81,13 @@ The exact SHA-512 printed on `REGAGE26e00070235775` for the registered attachmen
 
 ### Official Decree / replacement visual control
 
-- Spanish prepared visual route: `es/fiscalia-inspeccion-exp-gub-745-2026/facsimil-visual-31-agosto-2026.html`
-- English prepared visual route: `en/public-prosecution-inspection-exp-gub-745-2026/visual-facsimile-31-august-2026.html`
-- Replacement visual status: **`PREPARED_PENDING_MERGE` — NOT VERIFIED LIVE**
+- Spanish live-verified visual route: `es/fiscalia-inspeccion-exp-gub-745-2026/facsimil-visual-31-agosto-2026.html`
+- English live-verified visual route: `en/public-prosecution-inspection-exp-gub-745-2026/visual-facsimile-31-august-2026.html`
+- Replacement visual status: **`LIVE_VERIFIED` — exact-SHA Pages deployment and 32/32 byte-identical public readback**
 - Native source SHA-256: `1e09c8eb3bce26e28dc5f22e5d6ebad3f458212cf8d85f5920e869fa42554abe`
-- Prepared redacted PDF SHA-256: `a59007fa5db61d2b48b587c208f9cafedabe967e88dac4df223b2ef384595088`
-- Prepared WebP SHA-256: page 1 `ac5ccc51d85d6bfc7933a924465c5ef493206453e822fce2b367433975dee41a`; page 2 `5173cd8420ed9f6b6e1b26f3ad86025d89c82cbc69d4936b0d287f17717ae06a`; page 3 `ae3f518bb5732396e5d19fdcd3ee45450d2ee104e9bf7f7594af3493115bfaa8`.
+- Live-verified redacted PDF SHA-256: `a59007fa5db61d2b48b587c208f9cafedabe967e88dac4df223b2ef384595088`
+- Live-verified WebP SHA-256: page 1 `ac5ccc51d85d6bfc7933a924465c5ef493206453e822fce2b367433975dee41a`; page 2 `5173cd8420ed9f6b6e1b26f3ad86025d89c82cbc69d4936b0d287f17717ae06a`; page 3 `ae3f518bb5732396e5d19fdcd3ee45450d2ee104e9bf7f7594af3493115bfaa8`.
+- Deployment attestation: `archive/EG_745_2026_VISUAL_AND_CONTINUITY_DEPLOYMENT_ATTESTATION_31AUG2026.md`.
 - Inherited Base64 page-3 correction: actual `b73a712a27c737dd8e22bf462c6e1cce095d05f8d12a3b93b1d0c763f84b528b`; the earlier displayed `62271b...` value is superseded.
 
 ### Controlled text / provenance
