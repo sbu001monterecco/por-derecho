@@ -2,10 +2,14 @@
   "schema": "por-derecho.cuatrecasas-book-media-delta.v1",
   "control_id": "PD-4C-BOOK-DELTA-20260831-01",
   "control_date": "2026-08-31",
-  "status": "PREPARED_PENDING_MERGE",
+  "status": "LIVE_VERIFIED",
   "repository": "sbu001monterecco/por-derecho",
   "initial_task_main_sha": "950b64f9bd61f21bcff7bd76cfc409eebd3bca88",
   "reconciled_main_sha": "80793dbba490b44a2ad25af836f201517000f5bc",
+  "publication_merge_sha": "4938164da577b27ad63bb731d74013ee90979727",
+  "pages_run_id": 33374111565,
+  "live_verification_run_id": 33374892490,
+  "live_verified_at": "2026-08-31T08:52:10Z",
   "book": {
     "title": "4 Green Houses, One Red Hotel",
     "canonical_role": "public entry point to a private document-led manuscript",
@@ -136,12 +140,12 @@
     {
       "order": 1,
       "title": "Professional lifecycle",
-      "status": "PUBLIC_ARCHITECTURE_READY"
+      "status": "PUBLIC_ARCHITECTURE_LIVE"
     },
     {
       "order": 2,
       "title": "Matkator adviser-to-executant inversion",
-      "status": "PUBLIC_ARCHITECTURE_READY"
+      "status": "PUBLIC_ARCHITECTURE_LIVE"
     },
     {
       "order": 3,
@@ -151,7 +155,7 @@
     {
       "order": 4,
       "title": "La Laguna to Las Palmas directional map",
-      "status": "PUBLIC_OPEN_GAP_READY"
+      "status": "PUBLIC_OPEN_GAP_LIVE"
     },
     {
       "order": 5,
@@ -166,12 +170,22 @@
     "Common subject matter or the same hotel does not establish intentional cross-proceeding instrumentalisation.",
     "A complaint, investigation or professional-conduct appeal is not a finding."
   ],
+  "live_verification": {
+    "method": "External GitHub-hosted HTTPS GET with cache-busting and exact marker checks",
+    "workflow_run_id": 33374892490,
+    "job_id": 99434055793,
+    "artifact_id": 9751478683,
+    "artifact_sha256": "ae7a0dc43ddfc2c771979a914b6015536e3f77bceac623c1ce79d6b08dea7b1b",
+    "all_routes_http_200": true,
+    "all_required_markers_present": true,
+    "verified_routes": 4
+  },
   "public_markers": [
     "book-4gh1rh-professional-inversion-20260831",
     "cuatrecasas-critical-gaps-20260831",
     "CG-011",
     "CG-012",
-    "OPEN DIRECTIONAL BRIDGE"
+    "La Laguna → Las Palmas directional bridge"
   ],
-  "next_public_gate": "Merge, CI, Pages deployment and live bilingual readback of the four changed routes without disclosing private source material."
+  "next_public_gate": "Maintain the live architecture through incremental source-controlled updates; CG-011 remains open until transmission, reliance and any alleged purpose are proved from primary records."
 }
