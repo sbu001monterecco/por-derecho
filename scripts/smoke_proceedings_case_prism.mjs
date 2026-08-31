@@ -909,7 +909,7 @@ try {
     if (await isolation.locator('option[value="GC-APP-007"]').count()) throw new Error(`${route.lang}: aggregate removal-appeal family admitted to isolation`);
     const coverageText = await page.locator('[data-isolation-coverage]').innerText();
     if (!coverageText.includes(`26/${exactIds.length}`) || !coverageText.includes('71')) throw new Error(`${route.lang}: finite 26/97 Case Prism content denominator is not visible`);
-    const finiteCoverage = page.locator('[data-finite-test-coverage]');
+    const finiteCoverage = page.locator('.pdim-finite-coverage[data-finite-test-coverage]');
     if (await finiteCoverage.count() !== 1
         || await finiteCoverage.getAttribute('data-audit-count') !== '97'
         || await finiteCoverage.getAttribute('data-positive-evidence-count') !== '9') {
