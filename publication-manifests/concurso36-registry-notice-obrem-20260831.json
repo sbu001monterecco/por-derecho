@@ -1,0 +1,29 @@
+{
+  "schema": "por-derecho.publication-manifest.concurso36-registry-notice-obrem.v1",
+  "publication_id": "concurso36-registry-notice-obrem-20260831",
+  "current_state": "PREPARED_PENDING_MERGE",
+  "owner": "sbu001monterecco",
+  "generated": "2026-08-31",
+  "purpose": "Publish the controlled bilingual 2018–2019 Registry notice, ob rem and non-convalidation reconstruction and register it as an eight-node family in the Concurso 36/2012 control room.",
+  "merge_sha": null,
+  "deployment_run_id": null,
+  "expected_routes": {
+    "es": ["es/concurso-36-2012-aviso-registro-ob-rem/index.html"],
+    "en": ["en/insolvency-36-2012-registry-ob-rem-notice/index.html"]
+  },
+  "expected_source_files": [
+    "assets/data/concurso36-court-record-reconstruction-registry-notice-20260831.json",
+    "archive/CONCURSO36_REGISTRY_NOTICE_OBREM_CHAIN_31AUG2026.md",
+    "scripts/validate_concurso36_registry_notice_chain.py"
+  ],
+  "controlled_node_count_after_merge": 45,
+  "mandatory_boundaries": [
+    "The 26-Jun-2018 Auto was operative within its express partial scope; later judicially characterised error does not by itself establish voidness or crime.",
+    "The 24-Oct-2019 Auto refused convalidation and is corrective counterevidence, not proof that every title, money, possession and Registry consequence was reversed.",
+    "Burofax delivery on 4-Jan-2019 proves institutional receipt, not automatic personal reading by every officer.",
+    "The Registrar gave a reasoned adverse response and the Registry identified an ob rem obstacle; silence/collaboration must not be claimed.",
+    "The Cuatrecasas Registry intervention is affirmative protective conduct and defeats a total-abandonment formulation.",
+    "No common criminal plan, procedural fraud, punishable insolvency offence or judicial prevaricación is established."
+  ],
+  "publication_closeout": null
+}
