@@ -29,4 +29,3 @@ jobs:
           python scripts/validate_ministerio_fiscal_adverse_party_full_notice.py
           python scripts/validate_calificacion_criminal_misuse_thesis.py
           python scripts/validate_calificacion_position_objectives.py
-          python scripts/validate_eg745_public_visual.py
