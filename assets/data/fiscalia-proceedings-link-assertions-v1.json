@@ -1,0 +1,206 @@
+{
+  "schema_version": "1.0.0",
+  "control_date": "2026-08-31",
+  "status": "SOURCE_CONTROLLED_SPECIALIST_LINK_ASSERTIONS",
+  "purpose": "Specialist assertions used to derive the public Ministerio Fiscal communications-to-proceedings projection from the canonical communications and proceedings registers. This file is not a competing communications or proceedings register.",
+  "boundaries": {
+    "en": "A link records only the proposition stated by its relationship type and cited sources. Registration is not delivery beyond the receipt, receipt is not examination, chronology is not causation, and institutional possession is not personal knowledge, agreement, intent, wrongdoing or liability.",
+    "es": "Un enlace registra únicamente la proposición indicada por su tipo de relación y fuentes citadas. Registro no equivale a entrega más allá del justificante, recepción no equivale a examen, cronología no equivale a causalidad y posesión institucional no equivale a conocimiento personal, acuerdo, intención, ilicitud o responsabilidad."
+  },
+  "reference_overrides": {
+    "Concurso 36/2012": "GC-JUD-001",
+    "NIG 3501670220260000369": "GC-FIS-016",
+    "DP 1041/2017": "GC-CIV-003",
+    "DP 91/2023": "MAD-AN-CRI-003",
+    "DP 748/2026": "TF-CRI-003",
+    "E.G. 745/2026 wider Ministerio Fiscal submission family": "NAT-FIS-004",
+    "EG 352/2025 / REGAGE26e00070236245": "GC-FIS-015"
+  },
+  "event_event_edges": [
+    {
+      "from_event_id": "PD-SP-EVT-0078",
+      "to_event_id": "PD-SP-EVT-0079",
+      "relationship_type": "DECISION_NOTIFIED_BY",
+      "source_event_ids": ["PD-SP-EVT-0078", "PD-SP-EVT-0079"]
+    },
+    {
+      "from_event_id": "PD-SP-EVT-0080",
+      "to_event_id": "PD-SP-EVT-0112",
+      "relationship_type": "DECISION_NOTIFIED_BY",
+      "source_event_ids": ["PD-SP-EVT-0080", "PD-SP-EVT-0112"]
+    },
+    {
+      "from_event_id": "PD-SP-EVT-0081",
+      "to_event_id": "PD-SP-EVT-0113",
+      "relationship_type": "DECISION_NOTIFIED_BY",
+      "source_event_ids": ["PD-SP-EVT-0081", "PD-SP-EVT-0113"]
+    },
+    {
+      "from_event_id": "PD-SP-EVT-0083",
+      "to_event_id": "PD-SP-EVT-0086",
+      "relationship_type": "FILING_DECIDED_BY",
+      "source_event_ids": ["PD-SP-EVT-0083", "PD-SP-EVT-0086"]
+    },
+    {
+      "from_event_id": "PD-SP-EVT-0084",
+      "to_event_id": "PD-SP-EVT-0085",
+      "relationship_type": "COMMUNICATION_ACKNOWLEDGED_BY",
+      "source_event_ids": ["PD-SP-EVT-0084", "PD-SP-EVT-0085"]
+    },
+    {
+      "from_event_id": "PD-SP-EVT-0086",
+      "to_event_id": "PD-SP-EVT-0118",
+      "relationship_type": "DECISION_NOTIFIED_BY",
+      "source_event_ids": ["PD-SP-EVT-0086", "PD-SP-EVT-0118"]
+    },
+    {
+      "from_event_id": "PD-SP-EVT-0088",
+      "to_event_id": "PD-SP-EVT-0089",
+      "relationship_type": "DECISION_NOTIFIED_BY",
+      "source_event_ids": ["PD-SP-EVT-0088", "PD-SP-EVT-0089"]
+    },
+    {
+      "from_event_id": "PD-SP-EVT-0101",
+      "to_event_id": "PD-SP-EVT-0102",
+      "relationship_type": "DECISION_NOTIFIED_BY",
+      "source_event_ids": ["PD-SP-EVT-0101", "PD-SP-EVT-0102"]
+    },
+    {
+      "from_event_id": "PD-SP-EVT-0103",
+      "to_event_id": "PD-SP-EVT-0104",
+      "relationship_type": "DECISION_CONTAINS_ROUTING_ACT",
+      "source_event_ids": ["PD-SP-EVT-0103", "PD-SP-EVT-0104"]
+    },
+    {
+      "from_event_id": "PD-SP-EVT-0104",
+      "to_event_id": "PD-SP-EVT-0105",
+      "relationship_type": "ROUTING_ACT_NOTIFIED_BY",
+      "source_event_ids": ["PD-SP-EVT-0104", "PD-SP-EVT-0105"]
+    },
+    {
+      "from_event_id": "PD-SP-EVT-0106",
+      "to_event_id": "PD-SP-EVT-0107",
+      "relationship_type": "ACT_NOTIFIED_BY",
+      "source_event_ids": ["PD-SP-EVT-0106", "PD-SP-EVT-0107"]
+    },
+    {
+      "from_event_id": "PD-SP-EVT-0108",
+      "to_event_id": "PD-SP-EVT-0109",
+      "relationship_type": "ACT_NOTIFIED_BY",
+      "source_event_ids": ["PD-SP-EVT-0108", "PD-SP-EVT-0109"]
+    },
+    {
+      "from_event_id": "PD-SP-EVT-0110",
+      "to_event_id": "PD-SP-EVT-0111",
+      "relationship_type": "DECISION_NOTIFIED_BY",
+      "source_event_ids": ["PD-SP-EVT-0110", "PD-SP-EVT-0111"]
+    },
+    {
+      "from_event_id": "PD-SP-EVT-0123",
+      "to_event_id": "PD-SP-EVT-0124",
+      "relationship_type": "ROUTING_ACT_NOTIFIED_BY",
+      "source_event_ids": ["PD-SP-EVT-0123", "PD-SP-EVT-0124"]
+    },
+    {
+      "from_event_id": "PD-SP-EVT-0125",
+      "to_event_id": "PD-SP-EVT-0126",
+      "relationship_type": "DECISION_CLARIFIED_OR_MAINTAINED_BY",
+      "source_event_ids": ["PD-SP-EVT-0125", "PD-SP-EVT-0126"]
+    },
+    {
+      "from_event_id": "PD-SP-EVT-0126",
+      "to_event_id": "PD-SP-EVT-0127",
+      "relationship_type": "DECISION_NOTIFIED_BY",
+      "source_event_ids": ["PD-SP-EVT-0126", "PD-SP-EVT-0127"]
+    },
+    {
+      "from_event_id": "PD-SP-EVT-0128",
+      "to_event_id": "PD-SP-EVT-0129",
+      "relationship_type": "DECISION_NOTIFIED_BY",
+      "source_event_ids": ["PD-SP-EVT-0128", "PD-SP-EVT-0129"]
+    }
+  ],
+  "priority_chains": [
+    {
+      "chain_id": "MF-CHAIN-01-FIRST-FRAME",
+      "period": "2013-2021",
+      "title_en": "DI 273/2013 first prosecution frame and DP 332/2014",
+      "title_es": "Primer encuadre fiscal DI 273/2013 y DP 332/2014",
+      "master_ids": ["GC-FIS-011", "LZ-JUD-002"],
+      "relationship_status": "DOCUMENTED_LINEAGE_PRIMARY_CLOSURE_PENDING",
+      "source_ids": ["archive/HANDOVER_MF_FISCALIA_FIRST_FRAME_JUSTICE_MAP_15AUG2026.md"]
+    },
+    {
+      "chain_id": "MF-CHAIN-02-DI248-CALIFICACION",
+      "period": "2018-2026",
+      "title_en": "DI 248/2018, the 2019 archive, calificacion and appellate review",
+      "title_es": "DI 248/2018, archivo de 2019, calificación y revisión apelativa",
+      "master_ids": ["GC-FIS-013", "GC-JUD-001", "GC-CAL-002", "GC-APP-004"],
+      "relationship_status": "MIXED_DIRECT_AND_CONTEXTUAL_DO_NOT_MERGE",
+      "source_ids": ["archive/CALIFICACION_FISCALIA_2012_2019_2026_SOURCE_BUNDLE_RETRIEVAL_GATE_16AUG2026.md", "assets/data/fiscalia-response-correspondence.json"]
+    },
+    {
+      "chain_id": "MF-CHAIN-03-DI113-DP668",
+      "period": "2021-2026",
+      "title_en": "DP 668/2021, DI 113/2022 and later copy decision",
+      "title_es": "DP 668/2021, DI 113/2022 y decisión posterior de copia",
+      "master_ids": ["LZ-JUD-046", "GC-FIS-014"],
+      "relationship_status": "DOCUMENTED_CROSS_REFERENCE_COMPLETE_FILE_OPEN",
+      "source_ids": ["assets/data/fiscalia-response-correspondence.json"]
+    },
+    {
+      "chain_id": "MF-CHAIN-04-DI22-ABSORPTION",
+      "period": "2026",
+      "title_en": "DI 22/2026 archive-maintenance and later incorporation sequence",
+      "title_es": "DI 22/2026: mantenimiento del archivo e incorporaciones posteriores",
+      "master_ids": ["GC-FIS-016", "TF-FIS-007", "GC-FIS-015"],
+      "relationship_status": "DOCUMENTED_ARCHIVED_CONTAINER_ABSORPTION",
+      "source_ids": ["assets/data/fiscalia-response-correspondence.json"]
+    },
+    {
+      "chain_id": "MF-CHAIN-05-DIP2-DP1901",
+      "period": "2026",
+      "title_en": "DIP 2/2026, correction treatment and DP 1901/2026 report request",
+      "title_es": "DIP 2/2026, tratamiento de la corrección y petición de informe en DP 1901/2026",
+      "master_ids": ["GC-FIS-017", "GC-CRI-008", "GC-FIS-033"],
+      "relationship_status": "DOCUMENTED_COURT_TO_FISCALIA_REQUEST_REPORT_MISSING",
+      "source_ids": ["assets/data/fiscalia-response-correspondence.json", "evidence/fiscalia/2026/MINISTERIO_FISCAL_WIDER_MATTER_EG745_UNITARY_EVIDENCE_ACTION_DIGEST_31AUG2026.md"]
+    },
+    {
+      "chain_id": "MF-CHAIN-06-CENTRAL-SUPERVISION",
+      "period": "2026",
+      "title_en": "EG 49/2026, EG 112/2026 and E.G. 745/2026 review sequence",
+      "title_es": "Secuencia de revisión EG 49/2026, EG 112/2026 y E.G. 745/2026",
+      "master_ids": ["GC-FIS-018", "GC-FIS-033", "NAT-FIS-004"],
+      "relationship_status": "SEPARATE_REVIEW_FILES_WITH_DOCUMENTED_REFERENCES",
+      "source_ids": ["assets/data/fiscalia-response-correspondence.json"]
+    },
+    {
+      "chain_id": "MF-CHAIN-07-EG86-ARRECIFE",
+      "period": "2026",
+      "title_en": "E.G. 86/2026 national-to-Arrecife referral",
+      "title_es": "Remisión nacional a Arrecife en E.G. 86/2026",
+      "master_ids": ["LZ-FIS-007"],
+      "relationship_status": "ROUTING_DOCUMENTED_DESTINATION_REFERENCE_OPEN",
+      "source_ids": ["assets/data/fiscalia-response-correspondence.json"]
+    },
+    {
+      "chain_id": "MF-CHAIN-08-EG95-TENERIFE",
+      "period": "2026",
+      "title_en": "E.G. 95/2026 and the Tenerife judicialisation/parallel-files reasoning",
+      "title_es": "E.G. 95/2026 y el razonamiento de judicialización/expedientes paralelos en Tenerife",
+      "master_ids": ["TF-FIS-008", "TF-CRI-003", "TF-CIV-001", "TF-CIV-002", "TF-FIS-007"],
+      "relationship_status": "DOCUMENTED_DECISION_WITH_REFERENCED_PROCEEDINGS",
+      "source_ids": ["assets/data/fiscalia-tenerife-eg95-20260823.json"]
+    },
+    {
+      "chain_id": "MF-CHAIN-09-IN-PROCEEDING-FISCAL",
+      "period": "2019-2026",
+      "title_en": "Fiscal position inside Concurso 36/2012, the 2023 hearing and RPL 2523/2025",
+      "title_es": "Posición fiscal dentro del Concurso 36/2012, vista de 2023 y RPL 2523/2025",
+      "master_ids": ["GC-JUD-001", "GC-CAL-002", "GC-APP-004"],
+      "relationship_status": "IN_PROCEEDING_SPINE_SOURCE_COMPLETION_OPEN",
+      "source_ids": ["archive/CALIFICACION_CANONICAL_AC_FISCAL_JUDGMENT_PERSON_MATRIX_17AUG2026.md", "archive/CALIFICACION_VISTA_DOCUMENT_CROSS_REFERENCE.md"]
+    }
+  ]
+}

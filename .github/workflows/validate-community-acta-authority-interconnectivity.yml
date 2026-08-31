@@ -1,0 +1,75 @@
+name: Validate Community ACTA and authority interconnectivity
+
+on:
+  pull_request:
+    paths:
+      - 'evidence/community/actas/**'
+      - 'assets/data/proceedings-master-public-v1.json'
+      - 'assets/data/proceedings-case-prism-v1.json'
+      - 'assets/data/sun-park-post-7june-2018-2022-continuing-harm-v1.json'
+      - 'assets/data/community-acta-authority-*.json'
+      - 'archive/judicial-intelligence/decisions.jsonl'
+      - 'assets/community-acta-authority-interconnectivity-20260831.*'
+      - 'assets/acta-authority-interlink-20260831.js'
+      - 'assets/master-proceedings-publication-20260830.js'
+      - 'assets/proceedings-interconnectivity-map-20260830.js'
+      - 'assets/site.js'
+      - 'en/community-actas-public-authorities/**'
+      - 'es/actas-comunidad-autoridades-publicas/**'
+      - 'scripts/build_community_acta_authority_interconnectivity.py'
+      - 'scripts/validate_community_acta_authority_interconnectivity.py'
+      - 'scripts/test_build_community_acta_authority_interconnectivity.py'
+      - 'scripts/smoke_community_acta_authority_interconnectivity.mjs'
+      - '.github/workflows/validate-community-acta-authority-interconnectivity.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'assets/data/community-acta-authority-interconnectivity-v1.json'
+      - 'scripts/validate_community_acta_authority_interconnectivity.py'
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate deterministic graph and source boundaries
+        run: |
+          python scripts/build_community_acta_authority_interconnectivity.py --check
+          python scripts/validate_community_acta_authority_interconnectivity.py
+          python -m unittest -v scripts/test_build_community_acta_authority_interconnectivity.py
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Validate JavaScript syntax
+        run: |
+          node --check assets/community-acta-authority-interconnectivity-20260831.js
+          node --check assets/acta-authority-interlink-20260831.js
+          node --check assets/master-proceedings-publication-20260830.js
+          node --check assets/proceedings-interconnectivity-map-20260830.js
+          node --check scripts/smoke_community_acta_authority_interconnectivity.mjs
+      - name: Install Playwright Chromium
+        run: |
+          npm install --no-save playwright@1.50.1
+          npx playwright install --with-deps chromium
+      - name: Serve repository at production subpath
+        run: |
+          mkdir -p /tmp/psr-community-site/por-derecho
+          cp -a . /tmp/psr-community-site/por-derecho/
+          cd /tmp/psr-community-site
+          python3 -m http.server 8000 --bind 127.0.0.1 >/tmp/psr-community-http.log 2>&1 &
+          for i in $(seq 1 30); do
+            if curl -fsS http://127.0.0.1:8000/por-derecho/en/community-actas-public-authorities/ >/dev/null; then exit 0; fi
+            sleep 1
+          done
+          cat /tmp/psr-community-http.log
+          exit 1
+      - name: Verify bilingual deep links and reciprocal routes
+        env:
+          PSR_BASE_URL: http://127.0.0.1:8000/por-derecho
+        run: node scripts/smoke_community_acta_authority_interconnectivity.mjs

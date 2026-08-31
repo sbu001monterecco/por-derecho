@@ -8,6 +8,8 @@
   const registerDataUrl = new URL('assets/data/proceedings-master-public-v1.json', repoBase).href;
   const prismUrl = new URL('assets/data/proceedings-case-prism-v1.json', repoBase).href;
   const interlinkUrl = new URL('assets/data/proceedings-interlinkability-v1.json', repoBase).href;
+  const fiscaliaInterconnectivityUrl = new URL('assets/data/fiscalia-proceedings-interconnectivity-v1.json', repoBase).href;
+  const communityAuthorityInterconnectivityUrl = new URL('assets/data/community-acta-authority-interconnectivity-v1.json', repoBase).href;
   const lang = (document.documentElement.lang || 'en').toLowerCase().startsWith('es') ? 'es' : 'en';
   const registerRoute = new URL(lang === 'es' ? 'es/registro-maestro-procedimientos/' : 'en/master-proceedings-register/', repoBase).href;
   const detailRoutes = {
@@ -88,7 +90,7 @@
     officeFile: 'Oficina / expediente', receivedProfile: 'Recibido / estado del perfil', responseTreatment: 'Respuesta / tratamiento', canonicalSourceStatus: 'Estado canónico de fuente', responseProfileStatus: 'Estado del perfil de respuesta', exactnessStatus: 'Condición de procedimiento', recordType: 'Tipo de registro',
     crossFileAcknowledgement: 'Reconocimiento entre expedientes', unansweredGap: 'Sin respuesta / fuente pendiente',
     noUnitaryAcknowledgement: 'No se ha localizado un reconocimiento unitario en el corpus controlado.', fiscaliaMatrixUnavailable: 'La matriz transversal de Fiscalía no está disponible en esta carga.',
-    requestedMaterial: 'Solicitado', originOffice: 'Oficina de origen', currentCustodian: 'Custodio actual', datePeriod: 'Fecha / periodo', materialEvidence: 'Alegaciones / material / prueba descritos', materialReceivedInventory: 'Inventario de material recibido', noMaterialItemised: 'No hay material recibido individualizado en esta fila controlada.', materialInventoryGap: 'Brecha del inventario de material', directRelatedProceedings: 'Procedimientos relacionados directamente', contextRelatedProceedings: 'Contexto relacionado — no es enlace procesal', noDirectMatrixRelated: 'No hay otro procedimiento directo individualizado en esta fila.', noContextMatrixRelated: 'No hay otro contexto relacionado individualizado en esta fila.', relatedProceedingsStatus: 'Estado de procedimientos relacionados', relatedAssets: 'Activos relacionados', noRelatedAssets: 'No hay activo separado individualizado en esta fila.', relatedAssetsGap: 'Brecha de activos relacionados', transmissionStatus: 'Estado de transmisión', materialStatus: 'Estado del material recibido', relatedAssetsStatus: 'Estado de activos relacionados', referralStatus: 'Estado de remisión', whatWasReferred: 'Qué fue remitido', registrationStatus: 'Estado de registro', fileIncorporationStatus: 'Estado de incorporación al expediente', recipientAttributionStatus: 'Estado de atribución del destinatario', examinationStatus: 'Estado de examen', whatWasExamined: 'Qué fue efectivamente examinado', decisionUseStatus: 'Estado de uso en decisión', unitaryAcknowledgementStatus: 'Estado de reconocimiento unitario', strongestContrary: 'Explicación contraria más fuerte', rowBoundary: 'Límite de atribución de la fila', sourceProfiles: 'Perfiles fuente', axisBasis: 'Base y límite del grado', basisKind: 'Tipo de base', basisStatement: 'Base controlada', basisSource: 'Procedencia de la base', controlledLimit: 'Límite controlado', controlledEpisodes: 'episodios de respuesta controlados en total', filterScope: 'La búsqueda y el filtro de vía se aplican únicamente al mapa por vías y a la cronología.'
+    requestedMaterial: 'Solicitado', originOffice: 'Oficina de origen', currentCustodian: 'Custodio actual', datePeriod: 'Fecha / periodo', materialEvidence: 'Alegaciones / material / prueba descritos', materialReceivedInventory: 'Inventario de material recibido', noMaterialItemised: 'No hay material recibido individualizado en esta fila controlada.', materialInventoryGap: 'Brecha del inventario de material', directRelatedProceedings: 'Procedimientos relacionados directamente', contextRelatedProceedings: 'Contexto relacionado — no es enlace procesal', noDirectMatrixRelated: 'No hay otro procedimiento directo individualizado en esta fila.', noContextMatrixRelated: 'No hay otro contexto relacionado individualizado en esta fila.', relatedProceedingsStatus: 'Estado de procedimientos relacionados', relatedAssets: 'Activos relacionados', noRelatedAssets: 'No hay activo separado individualizado en esta fila.', relatedAssetsGap: 'Brecha de activos relacionados', transmissionStatus: 'Estado de transmisión', materialStatus: 'Estado del material recibido', relatedAssetsStatus: 'Estado de activos relacionados', referralStatus: 'Estado de remisión', whatWasReferred: 'Qué fue remitido', registrationStatus: 'Estado de registro', fileIncorporationStatus: 'Estado de incorporación al expediente', recipientAttributionStatus: 'Estado de atribución del destinatario', examinationStatus: 'Estado de examen', whatWasExamined: 'Qué fue efectivamente examinado', decisionUseStatus: 'Estado de uso en decisión', unitaryAcknowledgementStatus: 'Estado de reconocimiento unitario', strongestContrary: 'Explicación contraria más fuerte', rowBoundary: 'Límite de atribución de la fila', sourceProfiles: 'Perfiles fuente', axisBasis: 'Base y límite del grado', basisKind: 'Tipo de base', basisStatement: 'Base controlada', basisSource: 'Procedencia de la base', controlledLimit: 'Límite controlado', controlledEpisodes: 'episodios de respuesta controlados en total', filterScope: 'La búsqueda y el filtro de vía se aplican únicamente al mapa por vías y a la cronología.', fiscaliaCommunications: 'Abrir comunicaciones y respuestas de Fiscalía'
   } : {
     loading: 'Building the map from the canonical register…',
     error: 'The proceedings map could not be built.',
@@ -160,8 +162,10 @@
     officeFile: 'Office / file', receivedProfile: 'Received / profile state', responseTreatment: 'Response / treatment', canonicalSourceStatus: 'Canonical source status', responseProfileStatus: 'Response-profile status', exactnessStatus: 'Proceeding status', recordType: 'Record type',
     crossFileAcknowledgement: 'Cross-file acknowledgement', unansweredGap: 'Unanswered / source gap',
     noUnitaryAcknowledgement: 'No unitary acknowledgement has been located in the controlled corpus.', fiscaliaMatrixUnavailable: 'The Fiscalía cross-office matrix is unavailable in this load.',
-    requestedMaterial: 'Requested', originOffice: 'Origin office', currentCustodian: 'Current custodian', datePeriod: 'Date / period', materialEvidence: 'Described allegations / material / evidence', materialReceivedInventory: 'Received-material inventory', noMaterialItemised: 'No received material is itemised in this controlled row.', materialInventoryGap: 'Material-inventory gap', directRelatedProceedings: 'Directly related proceedings', contextRelatedProceedings: 'Related context — not a procedural edge', noDirectMatrixRelated: 'No other direct proceeding is itemised in this row.', noContextMatrixRelated: 'No other related context is itemised in this row.', relatedProceedingsStatus: 'Related-proceedings status', relatedAssets: 'Related assets', noRelatedAssets: 'No separate asset is itemised in this row.', relatedAssetsGap: 'Related-assets gap', transmissionStatus: 'Transmission status', materialStatus: 'Material-received status', relatedAssetsStatus: 'Related-assets status', referralStatus: 'Referral status', whatWasReferred: 'What was referred', registrationStatus: 'Registration status', fileIncorporationStatus: 'File-incorporation status', recipientAttributionStatus: 'Recipient-attribution status', examinationStatus: 'Examination status', whatWasExamined: 'What was actually examined', decisionUseStatus: 'Decision-use status', unitaryAcknowledgementStatus: 'Unitary-acknowledgement status', strongestContrary: 'Strongest contrary explanation', rowBoundary: 'Row attribution boundary', sourceProfiles: 'Source profiles', axisBasis: 'Grade basis and limitation', basisKind: 'Basis kind', basisStatement: 'Controlled basis', basisSource: 'Basis provenance', controlledLimit: 'Controlled limitation', controlledEpisodes: 'controlled response episodes total', filterScope: 'Search and track filters apply only to the track map and chronology.'
+    requestedMaterial: 'Requested', originOffice: 'Origin office', currentCustodian: 'Current custodian', datePeriod: 'Date / period', materialEvidence: 'Described allegations / material / evidence', materialReceivedInventory: 'Received-material inventory', noMaterialItemised: 'No received material is itemised in this controlled row.', materialInventoryGap: 'Material-inventory gap', directRelatedProceedings: 'Directly related proceedings', contextRelatedProceedings: 'Related context — not a procedural edge', noDirectMatrixRelated: 'No other direct proceeding is itemised in this row.', noContextMatrixRelated: 'No other related context is itemised in this row.', relatedProceedingsStatus: 'Related-proceedings status', relatedAssets: 'Related assets', noRelatedAssets: 'No separate asset is itemised in this row.', relatedAssetsGap: 'Related-assets gap', transmissionStatus: 'Transmission status', materialStatus: 'Material-received status', relatedAssetsStatus: 'Related-assets status', referralStatus: 'Referral status', whatWasReferred: 'What was referred', registrationStatus: 'Registration status', fileIncorporationStatus: 'File-incorporation status', recipientAttributionStatus: 'Recipient-attribution status', examinationStatus: 'Examination status', whatWasExamined: 'What was actually examined', decisionUseStatus: 'Decision-use status', unitaryAcknowledgementStatus: 'Unitary-acknowledgement status', strongestContrary: 'Strongest contrary explanation', rowBoundary: 'Row attribution boundary', sourceProfiles: 'Source profiles', axisBasis: 'Grade basis and limitation', basisKind: 'Basis kind', basisStatement: 'Controlled basis', basisSource: 'Basis provenance', controlledLimit: 'Controlled limitation', controlledEpisodes: 'controlled response episodes total', filterScope: 'Search and track filters apply only to the track map and chronology.', fiscaliaCommunications: 'Open Fiscalía communications and responses'
   };
+
+  copy.communityAuthority = lang === 'es' ? 'Abrir ACTAs y expedientes públicos' : 'Open ACTAs and public-authority files';
 
   const esc = (v) => String(v || '').replace(/[&<>"']/g, (c) => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   const norm = (v) => String(v || '').trim();
@@ -653,7 +657,7 @@
     return `<section class="pdim-fiscalia-matrix" data-fiscalia-office-file-matrix data-row-count="${rows.length}" data-exact-count="${exactCount}" data-unverified-count="${unresolvedCount}" data-profiled-count="${profileCount}" data-response-episode-count="${totalEpisodes}"><header><div><p class="pdim-finite-kicker">P05 · ${esc(copy.fiscaliaMatrix)}</p><h3>${esc(copy.fiscaliaMatrix)}</h3></div><div class="pdim-fiscalia-counts"><strong>${rows.length}</strong><span>${esc(copy.fiscaliaRows)}</span><b>${exactCount} ${esc(copy.fiscaliaExactRows)}</b><b>${unresolvedCount} ${esc(copy.fiscaliaUnresolvedRows)}</b><b>${profileCount} ${esc(copy.fiscaliaProfiled)}</b><b>${totalEpisodes} ${esc(copy.controlledEpisodes)}</b></div></header><p class="pdim-warning"><strong>NOT_LOCATED:</strong> ${esc(copy.noUnitaryAcknowledgement)}</p><p class="pdim-finite-rule">${esc(copy.fiscaliaModelBoundary)}</p><div class="pdim-fiscalia-rows">${rowHtml}</div></section>`;
   }
 
-  function renderTrace(root, selected, byId, prism, interlinks) {
+  function renderTrace(root, selected, byId, prism, interlinks, fiscaliaByMasterId, communityAuthorityByMasterId) {
     const r = byId.get(selected); if (!r) return;
     const disposition = interlinks && (interlinks.node_dispositions || []).find((entry) => entry.master_id === selected);
     const relationshipById = new Map(((interlinks && interlinks.relationships) || []).map((relationship) => [relationship.id, relationship]));
@@ -678,6 +682,10 @@
     const fileFiniteTest = isExactProceeding(r) ? finiteTestPanel(disposition, r, byId, interlinks) : '';
 
     const holder = root.querySelector('[data-trace-panel]');
+    const fiscaliaConnection = fiscaliaByMasterId && fiscaliaByMasterId[selected];
+    const fiscaliaHref = new URL(lang === 'es' ? 'es/fiscalia-comunicaciones-procedimientos/' : 'en/public-prosecution-communications-proceedings/', repoBase).href;
+    const communityAuthorityConnection = communityAuthorityByMasterId && communityAuthorityByMasterId[selected];
+    const communityAuthorityHref = new URL(lang === 'es' ? 'es/actas-comunidad-autoridades-publicas/' : 'en/community-actas-public-authorities/', repoBase).href;
     holder.setAttribute('tabindex', '-1');
     holder.setAttribute('aria-labelledby', 'pdim-trace-result-title');
     holder.innerHTML = `
@@ -687,6 +695,8 @@
       </div>
       <p class="pdim-record-backlink"><a href="${esc(`${registerRoute}#record-${encodeURIComponent(selected)}`)}">${esc(copy.openRegisterRecord)} · ${esc(selected)} →</a></p>
       ${fileFiniteTest}
+      ${fiscaliaConnection ? `<p class="pdim-record-backlink"><a data-fiscalia-master-id="${esc(selected)}" href="${esc(fiscaliaHref)}#file=${encodeURIComponent(selected)}">${esc(copy.fiscaliaCommunications)} · ${esc(fiscaliaConnection.event_count)} →</a></p>` : ''}
+      ${communityAuthorityConnection ? `<p class="pdim-record-backlink"><a data-community-authority-master-id="${esc(selected)}" href="${esc(communityAuthorityHref)}#authority=${encodeURIComponent(selected)}">${esc(copy.communityAuthority)} →</a></p>` : ''}
       ${disposition ? `<section class="pdim-trace-disposition" data-interlink-disposition data-classification="${esc(disposition.primary_classification)}"><h2>${esc(copy.classification)}: ${esc(catalogLabel(interlinks.classification_catalog, disposition.primary_classification))}</h2><p>${esc(localized(disposition, 'why'))}</p>${localized(disposition, 'limitations') ? `<small><strong>${esc(copy.limitations)}:</strong> ${esc(localized(disposition, 'limitations'))}</small>` : ''}${localized(disposition, 'next_source_needed') ? `<small><strong>${esc(copy.nextSource)}:</strong> ${esc(localized(disposition, 'next_source_needed'))}</small>` : ''}</section>` : isExactProceeding(r) ? `<section class="pdim-trace-disposition" data-interlink-disposition data-classification="REGISTRY_NOT_AVAILABLE"><h2>${esc(copy.unresolvedReconnection)}</h2><p>${esc(copy.interlinkUnavailable)}</p></section>` : `<section class="pdim-trace-disposition" data-interlink-disposition data-classification="NOT_EXACT_PROCEEDING_RECORD"><h2>${esc(copy.classification)}: ${esc(copy.notExactClassification)}</h2><p>${esc(copy.notExactTrace)}</p></section>`}
       <div class="pdim-rel-grid">
         <section><h2>${copy.directTitle}</h2><ul class="pdim-rel-list">${directHtml}</ul></section>
@@ -940,10 +950,12 @@
   async function init() {
     const root = document.querySelector('[data-proceedings-map]'); if (!root) return;
     try {
-      const [registerRes, prismRes, interlinkRes] = await Promise.all([
+      const [registerRes, prismRes, interlinkRes, fiscaliaRes, communityAuthorityRes] = await Promise.all([
         fetch(registerDataUrl, {cache:'no-store'}),
         fetch(prismUrl, {cache:'no-store'}).catch(() => null),
-        fetch(interlinkUrl, {cache:'no-store'}).catch(() => null)
+        fetch(interlinkUrl, {cache:'no-store'}).catch(() => null),
+        fetch(fiscaliaInterconnectivityUrl, {cache:'no-store'}).catch(() => null),
+        fetch(communityAuthorityInterconnectivityUrl, {cache:'no-store'}).catch(() => null)
       ]);
       if (!registerRes.ok) throw new Error(`HTTP ${registerRes.status}`);
       const registerPayload = await registerRes.json();
@@ -969,6 +981,20 @@
           interlinks = candidate;
         } catch (err) { interlinkFailure = err.message || String(err); }
       } else interlinkFailure = interlinkRes ? `HTTP ${interlinkRes.status}` : 'fetch failed';
+      let fiscaliaByMasterId = {};
+      if (fiscaliaRes && fiscaliaRes.ok) {
+        try {
+          const fiscaliaPayload = await fiscaliaRes.json();
+          fiscaliaByMasterId = fiscaliaPayload.by_master_id || {};
+        } catch (_err) { fiscaliaByMasterId = {}; }
+      }
+      let communityAuthorityByMasterId = {};
+      if (communityAuthorityRes && communityAuthorityRes.ok) {
+        try {
+          const communityAuthorityPayload = await communityAuthorityRes.json();
+          communityAuthorityByMasterId = communityAuthorityPayload.by_master_id || {};
+        } catch (_err) { communityAuthorityByMasterId = {}; }
+      }
       const exactIds = new Set(rows.filter(isExactProceeding).map((record) => record.Master_ID));
       if (interlinks) {
         const dispositionIds = new Set(interlinks.node_dispositions.map((entry) => entry.master_id));
@@ -1029,7 +1055,7 @@
         else if (view === 'trace') {
           const body = root.querySelector('[data-view-body]');
           body.innerHTML = `<div class="pdim-picker"><label>${copy.trace}<select data-trace-select><option value="">—</option>${rows.slice().sort((a,b)=>labelFor(a).localeCompare(labelFor(b))).map((r)=>`<option value="${esc(r.Master_ID)}"${state.traceId === r.Master_ID ? ' selected' : ''}>${esc(r.Master_ID)} · ${esc(labelFor(r))}</option>`).join('')}</select></label></div>`;
-          if (state.traceId && byId.has(state.traceId)) renderTrace(root, state.traceId, byId, prism, interlinks);
+          if (state.traceId && byId.has(state.traceId)) renderTrace(root, state.traceId, byId, prism, interlinks, fiscaliaByMasterId, communityAuthorityByMasterId);
         } else if (view === 'prism' && prism) renderPrism(root, prism, state);
         else if (view === 'lanes' && prism) renderParallelLanes(root, prism, state);
         else if (view === 'isolation' && prism && interlinks) renderIsolation(root, prism, interlinks, state, byId, rows);
@@ -1087,7 +1113,7 @@
         }
       });
       root.addEventListener('change', (ev) => {
-        if (ev.target.matches('[data-trace-select]') && ev.target.value && byId.has(ev.target.value)) { state.traceId = ev.target.value; renderTrace(root, state.traceId, byId, prism, interlinks); replaceActiveHash(); }
+        if (ev.target.matches('[data-trace-select]') && ev.target.value && byId.has(ev.target.value)) { state.traceId = ev.target.value; renderTrace(root, state.traceId, byId, prism, interlinks, fiscaliaByMasterId, communityAuthorityByMasterId); replaceActiveHash(); }
         if (ev.target.matches('[data-prism-audience]')) { state.audience = ev.target.value || 'all'; draw('[data-prism-audience]'); }
         if (ev.target.matches('[data-isolation-id]')) { state.isolationId = exactIds.has(ev.target.value) ? ev.target.value : '__FULL__'; draw('[data-isolation-id]'); replaceActiveHash(); }
       });

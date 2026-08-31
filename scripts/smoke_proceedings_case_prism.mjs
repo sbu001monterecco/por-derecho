@@ -683,7 +683,7 @@ try {
       cell.status === 'OUTSIDE' ? [] : (cell.master_ids || []).filter((id) => exactIdSet.has(id))
     )
   ));
-  if (prismCoveredIds.size !== 26 || exactIds.length - prismCoveredIds.size !== 71) {
+  if (prismCoveredIds.size !== 43 || exactIds.length - prismCoveredIds.size !== 54) {
     throw new Error(`Case Prism exact-file content denominator mismatch (${prismCoveredIds.size}/${exactIds.length})`);
   }
   const expectedIsolationById = new Map(exactIds.map((masterId) => [
