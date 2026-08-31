@@ -103,6 +103,14 @@ The release does **not** infer bad faith, obstruction, prevarication, coordinati
 4. If reposición is elected and approved, file ASAP and preserve exact filed bytes + receipt + timestamp.
 5. File the distinct access/native-copy/preservation request through the authorised route and publish receipt/status only once proof exists.
 
-## Deployment closeout
+## Deployment closeout — completed
 
-The PR number, merge SHA and exact-sha Pages deployment result are intentionally left for the post-merge deployment closeout record. Until those are fixed, this document is the release-content record, not deployment proof.
+- Publication PR: **#1256** — `Publish E.G. 745/2026 open transparency and live action record`.
+- Final PR head: `e37c4cd52a2d998725e7d0a81f2731576c0a6309`.
+- Publication-integrity gate on the final PR head: Actions run **33372076811 / #2461**, completed **success**. The final-head proceedings-interconnectivity, audience-experience, criminal-misuse, privacy and source-governance controls also completed successfully before merge.
+- PR #1256 merged to `main` at exact merge SHA **`950b64f9bd61f21bcff7bd76cfc409eebd3bca88`**.
+- Exact-SHA GitHub Pages run: **33372315356 / #1319**, head SHA `950b64f9bd61f21bcff7bd76cfc409eebd3bca88`, completed **success** on 31 August 2026.
+- Pages build job **99425976568**: success.
+- Pages deploy job **99426065303**: success; `Deploy to GitHub Pages` completed at **2026-08-31T08:19:25Z**.
+
+This is the controlled deployment proof for the open-transparency release. It proves that GitHub Pages successfully deployed the exact PR #1256 merge SHA. It does not change the separate filing-status lock: the reposición remains prepared/outstanding and is not verified as filed.
