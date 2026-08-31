@@ -58,6 +58,15 @@
     loadConcurso36Controls();
   };
 
+  const loadCuatrecasasLinkedInRecord = () => {
+    if (document.querySelector('script[data-cuatrecasas-inigo-linkedin-loader]')) return;
+    const linkedInRecord = document.createElement('script');
+    linkedInRecord.src = new URL('cuatrecasas-inigo-linkedin-record-20260831.js?v=20260831a', current.src).href;
+    linkedInRecord.async = false;
+    linkedInRecord.setAttribute('data-cuatrecasas-inigo-linkedin-loader', '20260831a');
+    document.head.appendChild(linkedInRecord);
+  };
+
   // Preserve the complete site loader that existed before this visual update.
   const prior = document.createElement('script');
   prior.src = new URL('site-pre-treasury-154-hq-20260828.js?v=20260828a', current.src).href;
@@ -66,4 +75,8 @@
   prior.addEventListener('load', loadTreasuryVisual, { once: true });
   prior.addEventListener('error', loadTreasuryVisual, { once: true });
   document.head.appendChild(prior);
+
+  // Documentary Cuatrecasas/LinkedIn insert. The asset self-limits to the
+  // bilingual Cuatrecasas Sun Park pages and is idempotent on repeated loads.
+  loadCuatrecasasLinkedInRecord();
 })();
