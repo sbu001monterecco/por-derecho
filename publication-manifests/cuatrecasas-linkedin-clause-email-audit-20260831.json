@@ -1,0 +1,125 @@
+{
+  "schema": "por-derecho.publication-manifest.v1",
+  "publication_id": "cuatrecasas-linkedin-clause-email-audit-20260831",
+  "control_id": "PD-CUATRE-LINKEDIN-20260306-CLAUSE-EMAIL-02",
+  "control_date": "2026-08-31",
+  "current_state": "REMOTE_SOURCE",
+  "status": "prepared_for_review",
+  "owner": "Por Derecho / Project Sun Rock",
+  "repository": "sbu001monterecco/por-derecho",
+  "initial_task_main_sha": "e282ecafb5ce4b4590089d3ea1db70a3d6d95116",
+  "publication_branch_base_sha": "d26d592950d6297220ef4f3bc6d9abd895953dad",
+  "branch": "codex/cuatrecasas-clause-email-audit-publish-20260831",
+  "merge_sha": null,
+  "purpose": "Publish one bilingual, non-fragmented audit of every clause in the preserved 6-March-2026 LinkedIn message, the three controlling institutional records and nine minimized email-context groups, while applying maximum evidence-based pressure through five finite documentary questions.",
+  "expected_routes": {
+    "es": [
+      "es/cuatrecasas-sun-park/index.html"
+    ],
+    "en": [
+      "en/cuatrecasas-sun-park/index.html"
+    ]
+  },
+  "expected_source_files": [
+    "assets/cuatrecasas-inigo-linkedin-record-20260831.js",
+    "assets/site.js",
+    "en/cuatrecasas-sun-park/index.html",
+    "es/cuatrecasas-sun-park/index.html",
+    "evidence/cuatrecasas/2026-03-06-inigo-de-luisa-linkedin-message.json",
+    "scripts/validate_cuatrecasas_linkedin_interlink.py",
+    ".github/workflows/validate-cuatrecasas-linkedin-interlink.yml",
+    "archive/CUATRECASAS_LINKEDIN_CLAUSE_EMAIL_AUDIT_CONTROL_31AUG2026.md",
+    "publication-manifests/cuatrecasas-linkedin-clause-email-audit-20260831.json"
+  ],
+  "repository_assets": [
+    "assets/cuatrecasas-inigo-linkedin-record-20260831.js",
+    "assets/site.js",
+    "en/cuatrecasas-sun-park/index.html",
+    "es/cuatrecasas-sun-park/index.html",
+    "evidence/cuatrecasas/2026-03-06-inigo-de-luisa-linkedin-message.json",
+    "scripts/validate_cuatrecasas_linkedin_interlink.py",
+    ".github/workflows/validate-cuatrecasas-linkedin-interlink.yml",
+    "archive/CUATRECASAS_LINKEDIN_CLAUSE_EMAIL_AUDIT_CONTROL_31AUG2026.md",
+    "publication-manifests/cuatrecasas-linkedin-clause-email-audit-20260831.json"
+  ],
+  "public_markers": [
+    "data-governance-revision=20260831c",
+    "A procedural archive does not answer the professional record",
+    "Un archivo procesal no responde al expediente profesional",
+    "Every statement, in context",
+    "Cada afirmación, en su contexto"
+  ],
+  "email_scan": {
+    "scope": "Targeted connected-mailbox review across 2014-2026 professional, withdrawal, collection, ETJ, ICAM/CCACM and preservation lanes",
+    "completeness_claim": false,
+    "public_groups": 9,
+    "full_email_bodies_public": false,
+    "private_subjects_public": false,
+    "addresses_public": false,
+    "provider_identifiers_public": false,
+    "attachments_public": false
+  },
+  "claim_controls": {
+    "message": "DOCUMENTED DISPLAYED COMMUNICATION",
+    "authorship": "NOT PROVIDER-CERTIFIED BY THE SCREENSHOTS ALONE",
+    "icam_434": "LIMITATION ARCHIVE — NOT MERITS CLEARANCE",
+    "icam_1487": "ADVERSE PRIVATE/PERSONAL AND COMPETENCE OUTCOME REPORTED",
+    "ccacm_193": "UNDER STUDY AS OF 2026-08-27 — DATE-LIMITED",
+    "emails": "ATTRIBUTED MINIMIZED CONTEXT — NOT COMPLETE MAILBOX OR INDEPENDENT ADJUDICATION",
+    "venia": "EXPRESSLY GRANTED — OBSTRUCTION CLAIM EXCLUDED",
+    "august_right_of_reply": "DELIVERY FAILED — NO SILENCE INFERENCE",
+    "later_platform_state": "CAUSE UNRESOLVED — NO PROVED DELETION OR BLOCKING",
+    "dissemination": "NOT ESTABLISHED",
+    "firm_responsibility": "REQUIRES SEPARATE INDIVIDUAL / PARTNER / FIRM PROOF"
+  },
+  "publication_boundaries": [
+    "No raw screenshot, full email, subject, address, provider identifier, attachment, portal code or private storage locator is published.",
+    "Substantial work, fee pressure, venia, withdrawal and collection are stated as contrary and limiting evidence.",
+    "No funding route is described as closed or drawn without primary proof.",
+    "LPB, Aweswell and Matkator remain separate entities requiring workstream-specific client and debtor mapping.",
+    "The message is not treated as a firm-authorized act, proved threat, proved dissemination, defamation finding or professional misconduct finding.",
+    "The publication does not authorize contact, tagging, follower mobilization, email, messaging, filing or institutional supplementation."
+  ],
+  "authority": {
+    "repository_and_website_publication": "AUTHORISED_BY_CURRENT_USER_INSTRUCTION",
+    "email_scan": "AUTHORISED_READ_ONLY",
+    "raw_screenshot_publication": "NOT_AUTHORISED",
+    "full_email_publication": "NOT_AUTHORISED_BY_THIS_CONTROL",
+    "linkedin_platform_posting": "NOT_AVAILABLE_OR_EXECUTED",
+    "emails_or_external_messages": "NOT_AUTHORISED",
+    "court_or_institutional_filings": "NOT_AUTHORISED",
+    "direct_contact": "HOLD_NOT_AUTHORISED"
+  },
+  "validation": {
+    "status": "PENDING_CI",
+    "evidence": []
+  },
+  "deployment_evidence": null,
+  "live_urls": [
+    "https://sbu001monterecco.github.io/por-derecho/en/cuatrecasas-sun-park/#inigo-linkedin-20260306",
+    "https://sbu001monterecco.github.io/por-derecho/es/cuatrecasas-sun-park/#inigo-linkedin-20260306",
+    "https://sbu001monterecco.github.io/por-derecho/assets/cuatrecasas-inigo-linkedin-record-20260831.js",
+    "https://sbu001monterecco.github.io/por-derecho/evidence/cuatrecasas/2026-03-06-inigo-de-luisa-linkedin-message.json"
+  ],
+  "live_markers": {
+    "https://sbu001monterecco.github.io/por-derecho/en/cuatrecasas-sun-park/#inigo-linkedin-20260306": [
+      "Cuatrecasas and Sun Park: position after the unitary reverse-engineering review."
+    ],
+    "https://sbu001monterecco.github.io/por-derecho/es/cuatrecasas-sun-park/#inigo-linkedin-20260306": [
+      "Cuatrecasas y Sun Park: posición tras la revisión unitaria de ingeniería inversa."
+    ],
+    "https://sbu001monterecco.github.io/por-derecho/assets/cuatrecasas-inigo-linkedin-record-20260831.js": [
+      "data-governance-revision",
+      "20260831c",
+      "Every statement, in context",
+      "Cada afirmación, en su contexto"
+    ],
+    "https://sbu001monterecco.github.io/por-derecho/evidence/cuatrecasas/2026-03-06-inigo-de-luisa-linkedin-message.json": [
+      "\"governance_revision\": \"2026-08-31c\"",
+      "\"targeted_email_context\""
+    ]
+  },
+  "live_verification_evidence": null,
+  "deletion_record": null,
+  "next_gate": "Refresh from current main, run all local controls, push, open PR, require green CI, merge, verify Pages bytes and browser-render both anchored panels before promoting this manifest."
+}
