@@ -64,14 +64,22 @@ def main() -> int:
     if not (
         migration.get("target") == "assets/data/proceedings-master-public-v1.json"
         and migration.get("derivation") == "DETERMINISTIC_ALLOWLIST_FROM_CANONICAL_REGISTER"
-        and migration.get("state") == "PR_OPEN"
+        and migration.get("state") == "LIVE_VERIFIED"
         and migration.get("pull_request") == 1235
+        and migration.get("reviewed_head_sha") == "40ccc3c699bcc1147a9ac65a52e93fec240633ce"
+        and migration.get("reviewed_tree_sha") == "c64ae7547fed024ad0e82397f09fc5f61e2f5da7"
+        and migration.get("merge_sha") == "e13652bb8b3f51dd050c431a58e2bd70b83f5676"
+        and migration.get("merge_tree_sha") == "c64ae7547fed024ad0e82397f09fc5f61e2f5da7"
+        and migration.get("pages_run_id") == 33342771113
+        and migration.get("pages_run_number") == 1314
+        and migration.get("live_readback") == "PASS_16_OF_16_INTENDED_CRITICAL_RESOURCES"
+        and migration.get("controlling_manifest") == "publication-manifests/all-proceedings-interlinkability-20260830.json"
         and set(migration.get("expected_source_files", [])) == {
             "assets/data/proceedings-master-public-v1.json",
             "scripts/build_public_proceedings_projection.py",
         }
     ):
-        errors.append("allowlisted Master Register projection migration is not separately lifecycle-controlled")
+        errors.append("allowlisted Master Register projection migration lacks exact LIVE_VERIFIED #1235 evidence")
 
     for path, text in ((PROTOCOL, protocol), (GOVERNANCE, governance), (SITE, site)):
         if MARKER not in text:

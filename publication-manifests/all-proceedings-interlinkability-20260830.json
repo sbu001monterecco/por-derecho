@@ -4,8 +4,8 @@
   "publication_id": "PD-SP-ALL-PROCEEDINGS-INTERLINKABILITY-20260830-01",
   "owner": "Por Derecho / Project Sun Rock",
   "control_date": "2026-08-30",
-  "current_state": "PR_OPEN",
-  "state": "PR_OPEN",
+  "current_state": "LIVE_VERIFIED",
+  "state": "LIVE_VERIFIED_WITH_ACCEPTED_PUBLICATION_BOUNDARY_GAP",
   "purpose": "Make every controlled public proceeding traceable and every public exact proceeding selectable for a source-bounded isolation and reconnection test, without inventing joinder, shared merits, knowledge or responsibility.",
   "source_base_sha": "5939ed3badad20193a4aba05ca62047d6bc6ff89",
   "head_branch": "codex/all-proceedings-interlinkability-20260830",
@@ -93,6 +93,7 @@
     "publication-manifests/arrecife-1103-2018-caret-interlink-20260830.json",
     "publication-manifests/treasury-transparency-7-2026-20260830.json",
     "publication-manifests/all-proceedings-interlinkability-20260830.json",
+    "archive/DEPLOYMENT_LOG.md",
     "docs/deletion-audits/2026-08-30-dp3205-2014-arrecife-caret-interlink.md",
     "docs/deletion-audits/2026-08-30-arrecife-1304-2014-identity-interlink-continuity.md",
     "docs/deletion-audits/2026-08-30-all-proceedings-interlinkability-continuity.md"
@@ -118,7 +119,7 @@
     "audience_lenses": 9
   },
   "completion_denominator": {
-    "repository_source": "VERIFIED_LOCAL",
+    "repository_source": "VERIFIED_EXACT_REVIEWED_HEAD_AND_TREE",
     "canonical_registration": "VERIFIED",
     "direct_procedural_edges": "GAP_16_SOURCE_VERIFIED_PAIRS_1_CORPUS_REPORTED_PRIMARY_PENDING;_17_PAIRS_21_ASSERTIONS_STRUCTURALLY_CONTROLLED",
     "contextual_convergence_edges": "VERIFIED_26_CONTROLLED_CLUSTERS_INCLUDING_1_SOURCE_CONTROLLED_CORRIDOR",
@@ -131,10 +132,10 @@
     "audience_lens_coverage": "VERIFIED_9_LENSES_SHARED_EVIDENCE_BASE",
     "bilingual_specific_next_source_coverage": "VERIFIED_85_OF_85",
     "exact_proceeding_full_finite_test_coverage": "GAP_0_OF_85_AT_DISPOSITION_LEVEL",
-    "deployment": "NOT_PERFORMED",
-    "live_http_readback": "NOT_VERIFIED",
-    "tracked_operational_source_unpublishing": "GAP_NOT_VERIFIED",
-    "deletion_safe_continuity": "GAP_PENDING_REVIEW_MERGE_DEPLOYMENT_AND_READBACK"
+    "deployment": "VERIFIED_PAGES_RUN_33342771113_ON_EXACT_MERGE",
+    "live_http_readback": "VERIFIED_16_INTENDED_CRITICAL_RESOURCES_PLUS_1_SEPARATE_BOUNDARY_OBSERVATION",
+    "tracked_operational_source_unpublishing": "GAP_ACCEPTED_PUBLICLY_ACCESSIBLE",
+    "deletion_safe_continuity": "GAP_ACCEPTED_OPERATIONAL_CSV_PUBLICATION_BOUNDARY"
   },
   "evidential_boundaries": [
     "SAME_EVENT_IS_NOT_SAME_PROCEEDING",
@@ -161,7 +162,7 @@
     "private_source_statement_osint_governance": "PASS",
     "python_and_javascript_syntax": "PASS",
     "git_diff_check": "PASS",
-    "browser_smoke": "NOT_EXECUTED_LOCALLY_PLAYWRIGHT_DEPENDENCY_NOT_INSTALLED_CI_WORKFLOW_INSTALLS_PLAYWRIGHT_AND_CHROMIUM"
+    "browser_smoke": "PASS_CI_RUN_33342564713_AND_INDEPENDENT_BILINGUAL_LIVE_INTERACTION"
   },
   "known_open_gaps": [
     "Only 26 of 85 public exact proceedings currently have an express Case Prism proposition coordinate; 59 remain content gaps even though all 85 are structurally selectable and reconnectable.",
@@ -169,27 +170,107 @@
     "The current public data does not model actor-specific knowledge or receipt, so WHO KNEW remains an evidential gap rather than an inferred chain step.",
     "Every exact ID routes between the Master Register and renderer, but a complete exact-ID-to-proceeding-dossier/source-page denominator has not been established and is not inferred.",
     "Counsel/procurador lineage remains denominator-incomplete under its specialist control.",
-    "The public renderer no longer fetches the operational CSV, but this does not prove that the tracked CSV is unavailable through the repository or Pages artifact.",
-    "Pull request #1235 is open; CI is not yet green and no merge, deployment or independent live HTTP readback has been completed.",
-    "The expanded browser smoke is encoded in CI but was not executed locally because the Playwright dependency was not installed; Chromium availability was not reached."
+    "The public renderer no longer fetches the operational CSV, but archive/PROCEEDINGS_MASTER_REGISTER.csv remains directly HTTP-accessible from the Pages artifact. The user expressly accepted that unresolved publication-boundary gap for this release; it prevents a DELETION_SAFE claim.",
+    "The 16-resource exact readback is a critical-resource denominator, not a claim that all 24 declared human routes were individually byte-compared. The bilingual map, Master Register and institutional clean-room controls were independently exercised in the live browser."
   ],
+  "validation": {
+    "local": "PASS",
+    "pull_request_checks": "49_SUCCESS_1_INTENDED_SKIP_0_ADVERSE",
+    "browser_workflow": "RUN_33342564713_COMPLETED_SUCCESS",
+    "pages": "EXACT_MERGE_RUN_33342771113_COMPLETED_SUCCESS",
+    "live_readback": "PASS_16_OF_16_INTENDED_CRITICAL_RESOURCES_PLUS_1_OF_1_SEPARATE_BOUNDARY_OBSERVATION",
+    "evidence": [
+      "PR #1235 reviewed head 40ccc3c699bcc1147a9ac65a52e93fec240633ce and reviewed tree c64ae7547fed024ad0e82397f09fc5f61e2f5da7 were pinned before merge.",
+      "The exact PR head completed 49 successful workflow runs, one intended conditional skip and no adverse conclusion; corrected Chromium workflow run 33342564713 completed successfully.",
+      "Normal merge commit e13652bb8b3f51dd050c431a58e2bd70b83f5676 has merge tree c64ae7547fed024ad0e82397f09fc5f61e2f5da7, exactly equal to the reviewed PR tree.",
+      "GitHub Pages run 33342771113 / #1314 completed build, deploy and report successfully on the exact merge SHA.",
+      "Post-Pages cache-busted HTTP readback matched 16 of 16 intended critical resources to the exact merge tree; archive/PROCEEDINGS_MASTER_REGISTER.csv was observed separately as one accepted unresolved boundary exposure.",
+      "Independent live browser interaction exercised English and Spanish Case Prism, isolation/reconnection, audience lens, Master reciprocal links and institutional clean-room routes with zero page-origin console errors.",
+      "Later PRs #1243 and #1249 advanced main through 43c4046a8f76fd50e26ce0db58cac6bd62ac4e7f and Pages run 33343638194 / #1316; current live readback preserves the interlink registry, Case Prism and proceedings-map renderer and passes the same denominators."
+    ]
+  },
+  "merge_sha": "e13652bb8b3f51dd050c431a58e2bd70b83f5676",
+  "deployment_evidence": {
+    "provider": "GitHub Pages",
+    "run_id": 33342771113,
+    "run_number": 1314,
+    "status": "COMPLETED_SUCCESS",
+    "source_merge_sha": "e13652bb8b3f51dd050c431a58e2bd70b83f5676",
+    "build_job": 99341280670,
+    "deploy_job": 99341326154,
+    "report_job": 99341326250
+  },
+  "live_urls": [
+    "https://sbu001monterecco.github.io/por-derecho/en/proceedings-map/",
+    "https://sbu001monterecco.github.io/por-derecho/es/mapa-procedimientos/",
+    "https://sbu001monterecco.github.io/por-derecho/en/master-proceedings-register/",
+    "https://sbu001monterecco.github.io/por-derecho/es/registro-maestro-procedimientos/",
+    "https://sbu001monterecco.github.io/por-derecho/en/public-authority-unitary-case-reconstruction/",
+    "https://sbu001monterecco.github.io/por-derecho/es/reconstruccion-unitaria-autoridades-publicas/",
+    "https://sbu001monterecco.github.io/por-derecho/assets/data/proceedings-interlinkability-v1.json"
+  ],
+  "live_verification_evidence": {
+    "status": "PASS_WITH_ACCEPTED_BOUNDARY_GAP",
+    "verified_at": "2026-08-31T00:06:57Z",
+    "source_merge_sha": "e13652bb8b3f51dd050c431a58e2bd70b83f5676",
+    "reviewed_head_sha": "40ccc3c699bcc1147a9ac65a52e93fec240633ce",
+    "reviewed_tree_sha": "c64ae7547fed024ad0e82397f09fc5f61e2f5da7",
+    "merge_tree_sha": "c64ae7547fed024ad0e82397f09fc5f61e2f5da7",
+    "intended_critical_resource_matches": "16/16",
+    "separate_boundary_observations": "1/1",
+    "total_observations": "17/17",
+    "method": "Cache-busted HTTP 200 and SHA-256 comparison to the exact merge tree, followed by bilingual live browser interaction",
+    "interactive_result": "106/106 Master rows traceable; 85/85 exact isolation targets; 26/85 Case Prism content coverage; 59 explicit gaps; 17 direct pairs; 26 context clusters; 9 audience lenses; zero page-origin console errors"
+  },
+  "accepted_publication_boundary_gap": {
+    "status": "UNRESOLVED_ACCEPTED_FOR_THIS_RELEASE",
+    "resource": "archive/PROCEEDINGS_MASTER_REGISTER.csv",
+    "observed_http_status": 200,
+    "release_tree_sha256": "267b37574a8cfb96af258d0dfdbd694d506a9c03572b42f3fb1c10376516d294",
+    "forward_main_sha256": "74334fd2f3b4ba6a12361b87e61b31859c9693b75b2b8dbcea4a3606c94ba457",
+    "qualification": "The browser renderers use only the deterministic allowlisted public derivative. Direct HTTP accessibility of the tracked operational CSV remains a publication-boundary gap expressly accepted by the user for this release. It is recorded separately and is not included in live_urls or live_markers, so continued exposure is not made an invariant.",
+    "deletion_safe": false
+  },
+  "forward_main_verification": {
+    "status": "PASS_LEGITIMATE_FORWARD_MAIN_NOT_REGRESSION",
+    "head_sha": "43c4046a8f76fd50e26ce0db58cac6bd62ac4e7f",
+    "source_pull_requests": [
+      1243,
+      1249
+    ],
+    "pages_run_id": 33343638194,
+    "pages_run_number": 1316,
+    "pages_status": "COMPLETED_SUCCESS",
+    "qualification": "PRs #1243 and #1249 postdate and descend directly from the #1235 merge. They add the exact Rollo 1010/2018 identity story and preserve canonical-lineage links while adding separate Order 804/2018 decision-detail links. The public Master projection changed from #1235 only in its canonical-source digest; its 106 records remain semantically identical. The public interlinkability registry and proceedings-map renderer remain byte-identical to #1235.",
+    "current_live_hashes": {
+      "assets/data/proceedings-master-public-v1.json": "b871bd60d545e3ceaa02ddf36e6582f037f8891511e5d05fc29e080e8355db00",
+      "assets/data/proceedings-interlinkability-v1.json": "183c0354d86e83e4f1cfc264c156a777cea54eb28ddb5d0a5c97870a87cff53e",
+      "assets/data/proceedings-case-prism-v1.json": "47cba8690f5e407de1c5641a18a80fcd3a4f9f9fdebc07cf661ee654f217876e",
+      "assets/master-proceedings-publication-20260830.js": "fb03489e8c1ae9779cc78cca9d4c15f65451ee1524338829d48a536278478246",
+      "assets/proceedings-interconnectivity-map-20260830.js": "b4f152df51c7e7f91f90597aa16cbd2b752dc820310dfe76d0c36c908d75c64d"
+    }
+  },
   "publication_closeout": {
     "pull_request": 1235,
-    "merge_sha": null,
-    "deployment_run": null,
-    "live_http_readback": null
+    "reviewed_head_sha": "40ccc3c699bcc1147a9ac65a52e93fec240633ce",
+    "reviewed_tree_sha": "c64ae7547fed024ad0e82397f09fc5f61e2f5da7",
+    "merge_sha": "e13652bb8b3f51dd050c431a58e2bd70b83f5676",
+    "merge_tree_sha": "c64ae7547fed024ad0e82397f09fc5f61e2f5da7",
+    "deployment_run": 33342771113,
+    "deployment_run_number": 1314,
+    "live_http_readback": "PASS_16_INTENDED_CRITICAL_RESOURCES_PLUS_1_SEPARATE_ACCEPTED_BOUNDARY_OBSERVATION"
   },
   "verification": {
     "source_prepared": true,
     "local_static_and_structural_gates_passed": true,
-    "browser_smoke_executed": false,
+    "browser_smoke_executed": true,
     "pull_request_created": true,
-    "ci_green": false,
-    "merged": false,
-    "pages_deployed": false,
-    "live_http_readback": false,
+    "ci_green": true,
+    "merged": true,
+    "pages_deployed": true,
+    "live_http_readback": true,
     "deletion_safe": false
   },
   "continuity_record": "docs/deletion-audits/2026-08-30-all-proceedings-interlinkability-continuity.md",
-  "publication_boundary": "PR_OPEN identifies the controlled branch and source base and records reproducible local static checks. The reviewed remote head/tree must be pinned independently in the pull request before merge. This state does not prove CI completion, merge, deployment, live behaviour, full Case Prism content coverage, privacy of the tracked operational CSV, any allegation or any legal conclusion."
+  "publication_boundary": "LIVE_VERIFIED proves the exact reviewed PR #1235 tree, its CI result, merge, Pages deployment, bounded critical-resource readback and bilingual interactive behaviour. It does not prove complete Case Prism content coverage, actor-specific knowledge, receipt, admissibility, any allegation or any legal conclusion. It is not DELETION_SAFE because the tracked operational CSV remains publicly HTTP-accessible; that gap is expressly accepted and separately recorded, not converted into an intended public surface."
 }

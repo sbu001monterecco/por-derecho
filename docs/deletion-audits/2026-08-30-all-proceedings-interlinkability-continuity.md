@@ -2,13 +2,34 @@
 
 ## Current lifecycle state
 
-`PR_OPEN` in pull request **#1235** on branch
-`codex/all-proceedings-interlinkability-20260830`, based on
-`5939ed3badad20193a4aba05ca62047d6bc6ff89`.
+`LIVE_VERIFIED_WITH_ACCEPTED_PUBLICATION_BOUNDARY_GAP` for pull request
+**#1235**.
 
-This record identifies the controlled branch, source base and open pull request; the reviewed remote head/tree is pinned independently in the PR before merge. It does **not** certify green CI, merge, deployment, live HTTP
-readback or deletion-safe closeout. The controlling lifecycle record is
+- reviewed head: `40ccc3c699bcc1147a9ac65a52e93fec240633ce`;
+- reviewed tree: `c64ae7547fed024ad0e82397f09fc5f61e2f5da7`;
+- normal merge: `e13652bb8b3f51dd050c431a58e2bd70b83f5676`;
+- merge tree: `c64ae7547fed024ad0e82397f09fc5f61e2f5da7` — exact reviewed-tree equality;
+- exact-head CI: 49 success, one intended conditional skip, zero adverse;
+- corrected Chromium/browser workflow: run `33342564713`, success;
+- GitHub Pages: run `33342771113` / #1314, completed successfully on the
+  exact merge; and
+- independent readback: 16/16 intended critical public resources matched the
+  merge tree, plus one separately recorded operational-CSV boundary
+  observation.
+
+This is not `DELETION_SAFE`. The user expressly accepted the pre-existing
+direct HTTP exposure of the tracked operational CSV as an unresolved
+publication-boundary gap for this release. The controlling lifecycle record is
 `publication-manifests/all-proceedings-interlinkability-20260830.json`.
+
+After #1235, PRs #1243 and #1249 advanced `main` through
+`43c4046a8f76fd50e26ce0db58cac6bd62ac4e7f`; Pages run `33343638194` / #1316
+succeeded. Those forward deployments add the exact Rollo 1010/2018 identity
+story and preserve canonical-lineage links while adding separate Order 804/2018
+decision-detail links. They do not remove the interlink registry, Case Prism or
+proceedings-map renderer. The current live Master projection preserves all 106
+records and differs from #1235 only in the canonical-source digest following a
+semantically identical CSV reserialization.
 
 ## What is controlled in the repository
 
@@ -86,10 +107,15 @@ closed source path.
 ## Publication and privacy boundary
 
 The allowlisted derivative is a runtime minimisation control. It does not make a
-tracked source private. The repository and its Pages configuration must be
-examined separately before anyone states that
-`archive/PROCEEDINGS_MASTER_REGISTER.csv` is unavailable from the public
-repository or deployed artifact. Current-tree unpublishing is **not verified**.
+tracked source private. Cache-busted readback found
+`archive/PROCEEDINGS_MASTER_REGISTER.csv` directly HTTP-accessible: SHA-256
+`267b37574a8cfb96af258d0dfdbd694d506a9c03572b42f3fb1c10376516d294`
+on the #1235 release tree and
+`74334fd2f3b4ba6a12361b87e61b31859c9693b75b2b8dbcea4a3606c94ba457`
+on the current forward main. This exposure is **unresolved and expressly
+accepted for this release**. It is recorded separately from intended live URLs
+so continuing exposure is not made a validation invariant.
+
 No source should be removed, rewritten or relocated without approved private
 custody, provenance preservation and a reviewed publication-boundary migration.
 
@@ -120,13 +146,16 @@ node --check scripts/smoke_proceedings_case_prism.mjs
 git diff --check
 ```
 
-The Playwright smoke is intentionally broader than the static audit: it covers
+The browser smoke is intentionally broader than the static audit: it covers
 all 85 exact proceedings in both languages, all 106 trace routes, the 85/21
 exact/non-exact Master Register split, stable cold-load fragments, source
 assertion multiplicity and the bounded disappearing-proposition sets. It was not
-run in this container because the local Playwright dependency was not installed;
-browser availability was therefore not reached. The workflow installs Playwright
-and Chromium and must run the smoke before merge.
+run by the local static command set, but the corrected CI Chromium workflow
+`33342564713` completed successfully before merge. Independent post-deployment
+browser interaction then exercised English and Spanish Case Prism, isolation,
+Treasury direct/context separation, reciprocal Master links and both
+institutional clean-room routes. No page-origin console errors were observed;
+browser-extension metadata noise was excluded from that result.
 
 The PR integration pass also refreshed the two controlled institutional-route
 snapshots and replaced obsolete v1 date assertions in the decision-continuity
@@ -137,22 +166,17 @@ AM357 live verifier now asserts the current 31/31 specialist, 61/130 first-hop,
 the current `site-pre-treasury-154-hq-20260828.js` predecessor entry rather than
 waiting for an obsolete direct `site-pre-intervencion` marker in `site.js`.
 
-## Steps required before a deletion-safe closeout
+## Remaining conditions before deletion safety
 
-1. Review the complete branch diff, with particular attention to evidentiary
-   status, private-source exclusion and the aggregate appeal-family correction.
-2. Open a pull request and run every required workflow, including the expanded
-   Playwright smoke.
-3. Do not merge if any generated-asset check, exact-denominator check,
-   preservation gate, publication-integrity gate or browser assertion fails.
-4. Merge only the reviewed tree, then record the PR, merge SHA and successful
-   workflow run IDs in the publication manifest.
-5. Verify the deployed artifact and perform no-cache live HTTP readback of both
-   map routes, both Master Register routes, both new JSON assets and representative
-   exact trace/isolation fragments.
-6. Resolve or formally accept the operational-CSV publication-boundary gap. A
-   clean renderer readback does not close that separate question.
-7. Preserve the `26/85` decision-dependency content gap until additional
-   proposition coordinates are source-supported and reviewed.
-8. Only after those steps may the lifecycle state advance beyond `PR_OPEN` or
-   deletion-safe continuity be claimed.
+The PR, CI, exact-tree merge, Pages deployment and bounded live readback gates
+are complete. Deletion safety remains unavailable until the operational-CSV
+publication boundary is resolved through approved private custody, provenance
+preservation and a reviewed migration, followed by a negative live readback.
+The user's acceptance authorises this release despite that gap; it does not turn
+the gap into intended publication or close it.
+
+The `26/85` decision-dependency content gap, `59/85` uncovered exact files,
+proposition-level source limitation, actor-specific knowledge/receipt gap,
+exact-ID dossier denominator gap and `0/85` disposition-level finite-test gap
+also remain explicit. They do not negate structural interlinkability, and none
+may be silently upgraded by visual prominence or repetition.
