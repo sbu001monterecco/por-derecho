@@ -710,9 +710,9 @@ try {
     if (await tabs.count() !== 6) throw new Error(`${route.lang}: expected six semantic tabs`);
     if (await page.locator('[data-proceedings-map="20260831a"]').count() !== 1) throw new Error(`${route.lang}: live renderer marker is not 20260831a`);
     const staticPrismText = await page.locator('#case-prism').innerText();
-    if (!staticPrismText.includes('26') || !staticPrismText.includes('71') || !staticPrismText.includes(route.headlineFinite)
+    if (!staticPrismText.includes('43') || !staticPrismText.includes('54') || !staticPrismText.includes(route.headlineFinite)
         || staticPrismText.includes(route.headlineForbidden)) {
-      throw new Error(`${route.lang}: static Case Prism introduction overclaims the 26/97 shared-proposition denominator`);
+      throw new Error(`${route.lang}: static Case Prism introduction misstates the 43/97 shared-proposition denominator`);
     }
     if (await page.locator('a[href="#isolation-test"]').count() < 1) throw new Error(`${route.lang}: exact-file finite-test CTA missing`);
     await assertFilterScope(page, true, route, 'map');
@@ -903,12 +903,12 @@ try {
       const expectedStatus = prismCoveredIds.has(masterId) ? 'covered' : 'unresolved';
       if (status !== expectedStatus) throw new Error(`${route.lang}/${masterId}: Case Prism coverage label is ${status}, expected ${expectedStatus}`);
     }
-    if (renderedCoverage.filter(([, status]) => status === 'covered').length !== 26 || renderedCoverage.filter(([, status]) => status === 'unresolved').length !== 71) {
-      throw new Error(`${route.lang}: visible Case Prism content coverage must remain 26 covered / 71 unresolved`);
+    if (renderedCoverage.filter(([, status]) => status === 'covered').length !== 43 || renderedCoverage.filter(([, status]) => status === 'unresolved').length !== 54) {
+      throw new Error(`${route.lang}: visible Case Prism content coverage must remain 43 covered / 54 unresolved`);
     }
     if (await isolation.locator('option[value="GC-APP-007"]').count()) throw new Error(`${route.lang}: aggregate removal-appeal family admitted to isolation`);
     const coverageText = await page.locator('[data-isolation-coverage]').innerText();
-    if (!coverageText.includes(`26/${exactIds.length}`) || !coverageText.includes('71')) throw new Error(`${route.lang}: finite 26/97 Case Prism content denominator is not visible`);
+    if (!coverageText.includes(`43/${exactIds.length}`) || !coverageText.includes('54')) throw new Error(`${route.lang}: finite 43/97 Case Prism content denominator is not visible`);
     const finiteCoverage = page.locator('.pdim-finite-coverage[data-finite-test-coverage]');
     if (await finiteCoverage.count() !== 1
         || await finiteCoverage.getAttribute('data-audit-count') !== '97'
