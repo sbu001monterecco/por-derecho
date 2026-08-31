@@ -1,6 +1,3 @@
-Warning: truncated output (original token count: 40056)
-Total output lines: 2763
-
 #!/usr/bin/env python3
 """Structural/evidential audit for the proceedings map and Case Prism."""
 
@@ -1461,7 +1458,9 @@ if not errors:
         if source_profile_ids:
             profiled_matrix_ids.add(master_id)
         require(
-            matrix_row.…56 tokens truncated…ian")
+            matrix_row.get("reference") == canonical_row.get("Reference")
+            and matrix_row.get("origin_office") == canonical_row.get("Origin_Organ")
+            and matrix_row.get("current_custodian") == canonical_row.get("Current_Custodian")
             and matrix_row.get("is_proceeding") == canonical_row.get("Is_Proceeding")
             and matrix_row.get("record_type") == canonical_row.get("Record_Type")
             and matrix_row.get("source_status") == canonical_row.get("Source_Status"),
