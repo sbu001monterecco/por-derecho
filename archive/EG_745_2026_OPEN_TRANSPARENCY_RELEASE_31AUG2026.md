@@ -1,5 +1,13 @@
 # E.G. 745/2026 — open-transparency publication release — 31 August 2026
 
+> **Historical release with later visual correction.** The open-transparency
+> release and its text routes remain deployed. Its earlier claim that the
+> three-page scanned visual was fully closed is superseded by
+> `EG_745_2026_VISUAL_PUBLICATION_CONTINUITY_AUDIT_31AUG2026.md` and the
+> deterministic replacement control
+> `EG_745_2026_VISUAL_PUBLICATION_SUPERSEDING_PREMERGE_CONTROL_31AUG2026.md`.
+> Replacement visual status: **`PREPARED_PENDING_MERGE` — NOT VERIFIED LIVE**.
+
 ## Release purpose
 
 This release makes the E.G. 745/2026 public dossier internally consistent after publication of the three-page official visual facsimile and adopts a controlled **open-transparency** strategy for the matter.
@@ -25,7 +33,11 @@ This release makes the E.G. 745/2026 public dossier internally consistent after 
 - Public visual-preview SHA-256:
   - P1 `9dea73c05bd91226745c8801147c6fac20b30d7d30480f22c8e0ece9ea9536d3`
   - P2 `4ed65b0e324ea0ec6dcedaf97ed178aa97aacaf76c877bbdb25058ccdd234969`
-  - P3 `62271b227f79a44879971bef77be20fc5f760257e81aac31cec56b0094c10c2e`
+  - P3 actual reconstructed chunk bytes `b73a712a27c737dd8e22bf462c6e1cce095d05f8d12a3b93b1d0c763f84b528b`
+
+The P3 value previously displayed by the viewer was `62271b...`; it did not
+match the preserved chunks and is superseded by the actual value above. Neither
+old preview hash set is the deterministic replacement set.
 
 The native Spanish source controls over the visual derivative, transcription and English translation.
 

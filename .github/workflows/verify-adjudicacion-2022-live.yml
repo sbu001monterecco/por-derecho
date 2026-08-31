@@ -10,6 +10,7 @@ on:
       - 'en/corrections-version-control/index.html'
       - 'assets/adjudicacion-provenance-cross-site-20260819.js'
       - 'assets/site.js'
+      - 'assets/site-pre-treasury-154-hq-20260828.js'
       - 'assets/site-pre-intervencion-highlight-20260820.js'
       - 'assets/site-pre-intervencion-highlight-before-eg95-20260823.js'
       - 'scripts/render_adjudicacion_provenance.mjs'
@@ -20,6 +21,7 @@ on:
   workflow_dispatch:
 
 permissions:
+  actions: read
   contents: read
   statuses: write
 
@@ -30,7 +32,7 @@ concurrency:
 jobs:
   verify-live:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 25
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
@@ -38,6 +40,100 @@ jobs:
       - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
         with:
           node-version: '22'
+
+      - name: Attest successful Pages deployment for the exact pushed SHA
+        id: verify_pages
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+          EXPECTED_SHA: ${{ github.sha }}
+          REPOSITORY: ${{ github.repository }}
+        shell: python
+        run: |
+          import json
+          import os
+          import time
+          import urllib.request
+
+          repository = os.environ["REPOSITORY"]
+          expected_sha = os.environ["EXPECTED_SHA"]
+          token = os.environ["GH_TOKEN"]
+          api = (
+              f"https://api.github.com/repos/{repository}/actions/runs"
+              f"?head_sha={expected_sha}&per_page=100"
+          )
+          last_seen = []
+          for attempt in range(1, 49):
+              request = urllib.request.Request(
+                  api,
+                  headers={
+                      "Accept": "application/vnd.github+json",
+                      "Authorization": f"Bearer {token}",
+                      "X-GitHub-Api-Version": "2022-11-28",
+                      "User-Agent": "Por-Derecho-adjudicacion-pages-attestation/1.0",
+                  },
+              )
+              with urllib.request.urlopen(request, timeout=25) as response:
+                  payload = json.load(response)
+              candidates = [
+                  run for run in payload.get("workflow_runs", [])
+                  if run.get("name") == "pages build and deployment"
+                  and run.get("path") == "dynamic/pages/pages-build-deployment"
+                  and run.get("head_sha") == expected_sha
+              ]
+              last_seen = [
+                  {
+                      "id": run.get("id"),
+                      "head_sha": run.get("head_sha"),
+                      "status": run.get("status"),
+                      "conclusion": run.get("conclusion"),
+                      "html_url": run.get("html_url"),
+                  }
+                  for run in candidates
+              ]
+              successful = next(
+                  (
+                      run for run in candidates
+                      if run.get("status") == "completed"
+                      and run.get("conclusion") == "success"
+                  ),
+                  None,
+              )
+              if successful:
+                  evidence = {
+                      "state": "EXACT_PAGES_RUN_ATTESTED",
+                      "expected_sha": expected_sha,
+                      "pages_run_id": successful.get("id"),
+                      "pages_run_number": successful.get("run_number"),
+                      "pages_head_sha": successful.get("head_sha"),
+                      "pages_url": successful.get("html_url"),
+                      "attempt": attempt,
+                  }
+                  with open(
+                      "/tmp/adjudicacion-2022-pages-attestation.json",
+                      "w",
+                      encoding="utf-8",
+                  ) as handle:
+                      json.dump(evidence, handle, ensure_ascii=False, indent=2)
+                  print(json.dumps(evidence, sort_keys=True))
+                  raise SystemExit(0)
+              print(f"Pages attestation attempt {attempt}/48: pending", flush=True)
+              if attempt < 48:
+                  time.sleep(10)
+
+          evidence = {
+              "state": "EXACT_PAGES_RUN_NOT_ATTESTED",
+              "expected_sha": expected_sha,
+              "last_seen": last_seen,
+          }
+          with open(
+              "/tmp/adjudicacion-2022-pages-attestation.json",
+              "w",
+              encoding="utf-8",
+          ) as handle:
+              json.dump(evidence, handle, ensure_ascii=False, indent=2)
+          print(json.dumps(evidence, sort_keys=True))
+          raise SystemExit(1)
 
       - name: Poll current public GitHub Pages source routes and assets
         id: verify_raw
@@ -47,18 +143,27 @@ jobs:
           RUN_ID: ${{ github.run_id }}
         run: |
           python3 - <<'PY'
+          import hashlib
           import json
           import os
+          import subprocess
           import time
           import urllib.request
+          from pathlib import Path
+          from urllib.parse import urlencode
 
           base = "https://sbu001monterecco.github.io/por-derecho"
           source_sha = os.environ["SOURCE_SHA"]
           run_id = os.environ["RUN_ID"]
-          cache_bust = f"source={source_sha[:12]}&run={run_id}"
+          checkout_sha = subprocess.check_output(
+              ["git", "rev-parse", "HEAD"], text=True
+          ).strip()
+          if checkout_sha != source_sha:
+              raise SystemExit(f"checkout/source SHA mismatch: {checkout_sha} != {source_sha}")
           targets = {
               "es": {
-                  "url": f"{base}/es/adjudicacion-2022-reconstruccion-documental/?{cache_bust}",
+                  "url": f"{base}/es/adjudicacion-2022-reconstruccion-documental/",
+                  "path": "es/adjudicacion-2022-reconstruccion-documental/index.html",
                   "markers": [
                       "Fuente notarial primaria recuperada",
                       "escritura n.º 457",
@@ -70,7 +175,8 @@ jobs:
                   ],
               },
               "en": {
-                  "url": f"{base}/en/2022-adjudication-documentary-reconstruction/?{cache_bust}",
+                  "url": f"{base}/en/2022-adjudication-documentary-reconstruction/",
+                  "path": "en/2022-adjudication-documentary-reconstruction/index.html",
                   "markers": [
                       "Primary notarial source recovered",
                       "deed no. 457",
@@ -82,7 +188,8 @@ jobs:
                   ],
               },
               "module": {
-                  "url": f"{base}/assets/adjudicacion-provenance-cross-site-20260819.js?{cache_bust}",
+                  "url": f"{base}/assets/adjudicacion-provenance-cross-site-20260819.js",
+                  "path": "assets/adjudicacion-provenance-cross-site-20260819.js",
                   "markers": [
                       "Control de versiones, fuentes y uso previo",
                       "Version, source and prior-use control",
@@ -95,28 +202,40 @@ jobs:
                   ],
               },
               "outer_loader": {
-                  "url": f"{base}/assets/site.js?{cache_bust}",
+                  "url": f"{base}/assets/site.js",
+                  "path": "assets/site.js",
+                  "markers": [
+                      "site-pre-treasury-154-hq-20260828.js?v=20260828a",
+                      "data-pre-treasury-154-site-loader",
+                  ],
+              },
+              "treasury_wrapper": {
+                  "url": f"{base}/assets/site-pre-treasury-154-hq-20260828.js",
+                  "path": "assets/site-pre-treasury-154-hq-20260828.js",
                   "markers": [
                       "site-pre-intervencion-highlight-20260820.js?v=20260824e",
                       "data-pre-intervencion-site-loader",
                   ],
               },
               "loader_wrapper": {
-                  "url": f"{base}/assets/site-pre-intervencion-highlight-20260820.js?{cache_bust}",
+                  "url": f"{base}/assets/site-pre-intervencion-highlight-20260820.js",
+                  "path": "assets/site-pre-intervencion-highlight-20260820.js",
                   "markers": [
                       "site-pre-intervencion-highlight-before-eg95-20260823.js?v=20260824e",
                       "data-pre-fiscalia-eg95-pre-intervencion-loader",
                   ],
               },
               "adjudicacion_loader": {
-                  "url": f"{base}/assets/site-pre-intervencion-highlight-before-eg95-20260823.js?{cache_bust}",
+                  "url": f"{base}/assets/site-pre-intervencion-highlight-before-eg95-20260823.js",
+                  "path": "assets/site-pre-intervencion-highlight-before-eg95-20260823.js",
                   "markers": [
                       "adjudicacion-provenance-cross-site-20260819.js?v=20260820a",
                       "data-adjudicacion-provenance-loader",
                   ],
               },
               "sitemap": {
-                  "url": f"{base}/sitemap-adjudicacion-2022.xml?{cache_bust}",
+                  "url": f"{base}/sitemap-adjudicacion-2022.xml",
+                  "path": "sitemap-adjudicacion-2022.xml",
                   "markers": [
                       "/por-derecho/es/adjudicacion-2022-reconstruccion-documental/",
                       "/por-derecho/en/2022-adjudication-documentary-reconstruction/",
@@ -124,36 +243,63 @@ jobs:
               },
           }
 
+          for target in targets.values():
+              source_bytes = Path(target["path"]).read_bytes()
+              target["expected_bytes"] = len(source_bytes)
+              target["expected_sha256"] = hashlib.sha256(source_bytes).hexdigest()
+
           def fetch(url: str):
               req = urllib.request.Request(
                   url,
                   headers={
-                      "User-Agent": "Por-Derecho-adjudicacion-live-verifier/4.0",
-                      "Cache-Control": "no-cache",
+                      "User-Agent": "Por-Derecho-adjudicacion-live-verifier/4.1",
+                      "Cache-Control": "no-cache, no-store, max-age=0",
                       "Pragma": "no-cache",
                   },
               )
               with urllib.request.urlopen(req, timeout=25) as response:
-                  return response.status, response.read().decode("utf-8", "replace")
+                  return response.status, dict(response.headers), response.read()
 
           last = {}
-          for attempt in range(1, 61):
+          max_attempts = 120
+          for attempt in range(1, max_attempts + 1):
               checks = {}
               details = {}
+              live_urls = {}
               for name, target in targets.items():
+                  query = urlencode({
+                      "source_sha": source_sha,
+                      "run_id": run_id,
+                      "attempt": attempt,
+                      "nonce": time.time_ns(),
+                  })
+                  live_url = f'{target["url"]}?{query}'
+                  live_urls[name] = live_url
                   try:
-                      status, body = fetch(target["url"])
-                      marker_checks = {marker: marker in body for marker in target["markers"]}
+                      status, headers, body = fetch(live_url)
+                      text = body.decode("utf-8", "replace")
+                      marker_checks = {marker: marker in text for marker in target["markers"]}
+                      observed_sha256 = hashlib.sha256(body).hexdigest()
                       checks[f"{name}_http_200"] = status == 200
                       checks[f"{name}_markers"] = all(marker_checks.values())
+                      checks[f"{name}_exact_source"] = (
+                          observed_sha256 == target["expected_sha256"]
+                      )
                       details[name] = {
                           "status": status,
-                          "bytes": len(body.encode("utf-8")),
+                          "bytes": len(body),
+                          "expected_bytes": target["expected_bytes"],
+                          "sha256": observed_sha256,
+                          "expected_sha256": target["expected_sha256"],
+                          "exact_source_match": checks[f"{name}_exact_source"],
+                          "etag": headers.get("ETag"),
+                          "last_modified": headers.get("Last-Modified"),
                           "markers": marker_checks,
                       }
                   except Exception as exc:
                       checks[f"{name}_http_200"] = False
                       checks[f"{name}_markers"] = False
+                      checks[f"{name}_exact_source"] = False
                       details[name] = {"error": repr(exc)}
 
               last = {
@@ -162,15 +308,26 @@ jobs:
                   "run_id": run_id,
                   "checks": checks,
                   "details": details,
-                  "urls": {name: target["url"] for name, target in targets.items()},
+                  "urls": live_urls,
               }
-              print(json.dumps(last, ensure_ascii=False, indent=2))
               if all(checks.values()):
                   evidence = {"status": "SOURCE_LIVE_VERIFIED", **last}
                   with open("/tmp/adjudicacion-2022-live-source.json", "w", encoding="utf-8") as handle:
                       json.dump(evidence, handle, ensure_ascii=False, indent=2)
+                  print(json.dumps(evidence, ensure_ascii=False, indent=2))
                   raise SystemExit(0)
-              time.sleep(5)
+              print(json.dumps({
+                  "status": "WAITING_FOR_EXACT_SOURCE_SHA",
+                  "attempt": attempt,
+                  "max_attempts": max_attempts,
+                  "source_sha": source_sha,
+                  "failed_checks": [key for key, passed in checks.items() if not passed],
+                  "observed_sha256": {
+                      name: details[name].get("sha256") for name in details
+                  },
+              }, ensure_ascii=False))
+              if attempt < max_attempts:
+                  time.sleep(5)
 
           evidence = {"status": "SOURCE_NOT_VERIFIED", **last}
           with open("/tmp/adjudicacion-2022-live-source.json", "w", encoding="utf-8") as handle:
@@ -223,6 +380,7 @@ jobs:
       - name: Show live-verification evidence
         if: always()
         run: |
+          cat /tmp/adjudicacion-2022-pages-attestation.json || true
           cat /tmp/adjudicacion-2022-live-source.json || true
           cat artifacts/adjudicacion-provenance-live/result.json || true
 
@@ -230,6 +388,7 @@ jobs:
         if: always()
         env:
           GH_TOKEN: ${{ github.token }}
+          PAGES_OUTCOME: ${{ steps.verify_pages.outcome }}
           RAW_OUTCOME: ${{ steps.verify_raw.outcome }}
           ANON_OUTCOME: ${{ steps.verify_anonymisation.outcome }}
           DOM_OUTCOME: ${{ steps.verify_dom.outcome }}
@@ -245,7 +404,8 @@ jobs:
           sha = os.environ["SOURCE_SHA"]
           run_id = os.environ["RUN_ID"]
           success = (
-              os.environ["RAW_OUTCOME"] == "success"
+              os.environ["PAGES_OUTCOME"] == "success"
+              and os.environ["RAW_OUTCOME"] == "success"
               and os.environ["ANON_OUTCOME"] == "success"
               and os.environ["DOM_OUTCOME"] == "success"
           )
@@ -276,5 +436,5 @@ jobs:
           PY
 
       - name: Fail when public-edge verification did not succeed
-        if: steps.verify_raw.outcome != 'success' || steps.verify_anonymisation.outcome != 'success' || steps.verify_dom.outcome != 'success'
+        if: steps.verify_pages.outcome != 'success' || steps.verify_raw.outcome != 'success' || steps.verify_anonymisation.outcome != 'success' || steps.verify_dom.outcome != 'success'
         run: exit 1

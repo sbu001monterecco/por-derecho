@@ -1,0 +1,63 @@
+name: Validate E.G. 745 public visual
+
+on:
+  pull_request:
+    paths:
+      - "archive/EG_745_2026_VISUAL_PUBLICATION_CONTINUITY_AUDIT_31AUG2026.md"
+      - "archive/EG_745_2026_VISUAL_PUBLICATION_SUPERSEDING_PREMERGE_CONTROL_31AUG2026.md"
+      - "archive/EG_745_2026_OPEN_TRANSPARENCY_RELEASE_31AUG2026.md"
+      - "evidence/fiscalia/2026/EG_745_2026_OPEN_TRANSPARENCY_LEDGER_31AUG2026.md"
+      - "evidence/fiscalia/2026/EG_745_2026_PUBLIC_VISUAL_FACSIMILE_CONTROL_31AUG2026.md"
+      - "evidence/fiscalia/2026/eg745-visual-assets/**"
+      - "es/fiscalia-inspeccion-exp-gub-745-2026/**"
+      - "en/public-prosecution-inspection-exp-gub-745-2026/**"
+      - "publication-manifests/eg-745-2026-open-transparency-20260831.json"
+      - "publication-manifests/eg-745-2026-visual-publication-20260831.json"
+      - "scripts/build_eg745_public_visual.py"
+      - "scripts/validate_eg745_public_visual.py"
+      - "sitemap-fiscalia-exp-gub-745.xml"
+      - "sitemap.xml"
+      - ".github/workflows/validate-eg745-public-visual.yml"
+  push:
+    branches: [main]
+    paths:
+      - "archive/EG_745_2026_VISUAL_PUBLICATION_CONTINUITY_AUDIT_31AUG2026.md"
+      - "archive/EG_745_2026_VISUAL_PUBLICATION_SUPERSEDING_PREMERGE_CONTROL_31AUG2026.md"
+      - "archive/EG_745_2026_OPEN_TRANSPARENCY_RELEASE_31AUG2026.md"
+      - "evidence/fiscalia/2026/EG_745_2026_OPEN_TRANSPARENCY_LEDGER_31AUG2026.md"
+      - "evidence/fiscalia/2026/EG_745_2026_PUBLIC_VISUAL_FACSIMILE_CONTROL_31AUG2026.md"
+      - "evidence/fiscalia/2026/eg745-visual-assets/**"
+      - "es/fiscalia-inspeccion-exp-gub-745-2026/**"
+      - "en/public-prosecution-inspection-exp-gub-745-2026/**"
+      - "publication-manifests/eg-745-2026-open-transparency-20260831.json"
+      - "publication-manifests/eg-745-2026-visual-publication-20260831.json"
+      - "scripts/build_eg745_public_visual.py"
+      - "scripts/validate_eg745_public_visual.py"
+      - "sitemap-fiscalia-exp-gub-745.xml"
+      - "sitemap.xml"
+      - ".github/workflows/validate-eg745-public-visual.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: false
+
+      - name: Set up Python
+        uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
+        with:
+          python-version: "3.12"
+
+      - name: Install visual-validation dependencies
+        run: python -m pip install --disable-pip-version-check Pillow==11.3.0 PyMuPDF==1.26.4
+
+      - name: Validate hashes, privacy controls, raster-only PDF and bilingual routes
+        run: python scripts/validate_eg745_public_visual.py

@@ -70,6 +70,7 @@ jobs:
           import json
           import os
           import time
+          import urllib.parse
           import urllib.request
 
           base = "https://sbu001monterecco.github.io/por-derecho"
@@ -126,9 +127,18 @@ jobs:
               "site_loader": (
                   f"{base}/assets/site.js",
                   [
+                      "site-pre-treasury-154-hq-20260828.js?v=20260828a",
+                      "data-pre-treasury-154-site-loader",
+                  ],
+              ),
+              "pre_treasury_historical_loader": (
+                  f"{base}/assets/site-pre-treasury-154-hq-20260828.js",
+                  [
+                      "site-pre-intervencion-highlight-20260820.js?v=20260824e",
                       "PROSECUTION-PUBLIC-ENTRY-20260824",
                       "prosecution-public-entry-20260821.js?v=20260824a",
                       "AUDIENCE-EXPERIENCE-ORDER-AND-DEDUPLICATION-20260823",
+                      "audience-experience-order-20260823.js?v=20260824b",
                   ],
               ),
               "first_read_module": (
@@ -183,10 +193,11 @@ jobs:
                   ],
               )
 
-          def fetch(url: str, attempt: int) -> tuple[int, str]:
+          def fetch(url: str, cache_nonce: str) -> tuple[int, str]:
               separator = "&" if "?" in url else "?"
+              query = urllib.parse.urlencode({"pr830live": cache_nonce})
               request = urllib.request.Request(
-                  f"{url}{separator}pr830live={int(time.time())}-{attempt}",
+                  f"{url}{separator}{query}",
                   headers={
                       "User-Agent": "Por-Derecho-PR830-live-verifier/2.0",
                       "Cache-Control": "no-cache",
@@ -201,9 +212,10 @@ jobs:
           for attempt in range(1, 31):
               checks: dict[str, bool] = {}
               details: dict[str, dict] = {}
+              attempt_nonce = f"{os.environ['VERIFY_TRIGGER_SHA'][:12]}-{time.time_ns()}-{attempt}"
               for name, (url, markers) in targets.items():
                   try:
-                      status, body = fetch(url, attempt)
+                      status, body = fetch(url, f"{attempt_nonce}-{name}")
                       marker_results = {marker: marker in body for marker in markers}
                       checks[name] = status == 200 and all(marker_results.values())
                       details[name] = {
@@ -216,7 +228,12 @@ jobs:
                       checks[name] = False
                       details[name] = {"url": url, "error": repr(exc)}
 
-              latest = {"attempt": attempt, "checks": checks, "details": details}
+              latest = {
+                  "attempt": attempt,
+                  "cache_nonce": attempt_nonce,
+                  "checks": checks,
+                  "details": details,
+              }
               print(json.dumps(latest, ensure_ascii=False, indent=2))
               if all(checks.values()):
                   passed = True

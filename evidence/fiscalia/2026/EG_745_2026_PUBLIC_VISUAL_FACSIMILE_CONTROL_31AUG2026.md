@@ -1,5 +1,12 @@
 # E.G. 745/2026 — public visual facsimile control — 31 August 2026
 
+> **SUPERSEDED BASE64 PREVIEW CONTROL.** The direct-asset, deterministic
+> raster-first replacement is controlled by
+> `archive/EG_745_2026_VISUAL_PUBLICATION_SUPERSEDING_PREMERGE_CONTROL_31AUG2026.md`
+> and remains **`PREPARED_PENDING_MERGE`** until exact-SHA Pages deployment and
+> byte-identical live readback. The material below preserves the earlier viewer
+> lineage and its correction; it is not current publication proof.
+
 ## Native source
 
 - File: `OFICIO Y DECRETO EXP. 745-26.pdf`
@@ -9,7 +16,7 @@
 - Source: Fiscalía General del Estado — Inspección Fiscal notification email dated 26 August 2026.
 - The native PDF controls over every derivative, transcription and translation.
 
-## Public visual derivative
+## Earlier Base64 visual derivative — superseded
 
 The public viewer reconstructs real rendered page images from the notified PDF. It is not a recreation or typeset substitute. On page 1 only the recipient's personal email address is masked for the public copy. The official headings, institutional text, dates, signatures and Decree content remain visible. Pages 2 and 3 require no visual redaction.
 
@@ -17,9 +24,17 @@ Public-preview SHA-256:
 
 - Page 1 WebP: `9dea73c05bd91226745c8801147c6fac20b30d7d30480f22c8e0ece9ea9536d3`
 - Page 2 WebP: `4ed65b0e324ea0ec6dcedaf97ed178aa97aacaf76c877bbdb25058ccdd234969`
-- Page 3 WebP: `62271b227f79a44879971bef77be20fc5f760257e81aac31cec56b0094c10c2e`
+- Page 3 WebP, actual reconstructed bytes: `b73a712a27c737dd8e22bf462c6e1cce095d05f8d12a3b93b1d0c763f84b528b`
 
-The preview images are encoded as controlled Base64 chunks under `evidence/fiscalia/2026/eg745-visual-assets/` and reconstructed client-side by the bilingual viewer pages. This transport method is used because the available GitHub write connector does not expose direct binary file upload. The image content remains the rendered source derivative and is not generated or simulated.
+The earlier pages displayed
+`62271b227f79a44879971bef77be20fc5f760257e81aac31cec56b0094c10c2e`
+for page 3. That value does not match the three preserved page-3 chunks and is
+superseded by the actual reconstructed hash above.
+
+The earlier preview images remain preserved as controlled Base64 chunks under
+`evidence/fiscalia/2026/eg745-visual-assets/`. The bilingual viewer pages no
+longer reconstruct those chunks; they reference the superseding WebP/PNG files
+directly and offer a raster-only public PDF.
 
 ## Public routes
 

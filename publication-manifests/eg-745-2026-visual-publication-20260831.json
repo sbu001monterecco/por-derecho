@@ -1,0 +1,102 @@
+{
+  "schema": "por-derecho.publication-manifest.v1",
+  "publication_id": "eg-745-2026-visual-publication-20260831",
+  "title": "E.G. 745/2026 privacy-controlled scanned visual publication",
+  "current_state": "PREPARED_PENDING_MERGE",
+  "owner": "Por Derecho / Project Sun Rock",
+  "dossier": "E.G. 745/2026",
+  "control_date": "2026-08-31",
+  "repository": "sbu001monterecco/por-derecho",
+  "base_main_sha": "4df51da33391c41869470ed539ad31fc4157fbfd",
+  "expected_routes": {
+    "es": [
+      "es/fiscalia-inspeccion-exp-gub-745-2026/facsimil-visual-31-agosto-2026.html"
+    ],
+    "en": [
+      "en/public-prosecution-inspection-exp-gub-745-2026/visual-facsimile-31-august-2026.html"
+    ]
+  },
+  "expected_source_files": [
+    "archive/EG_745_2026_VISUAL_PUBLICATION_CONTINUITY_AUDIT_31AUG2026.md",
+    "archive/EG_745_2026_VISUAL_PUBLICATION_SUPERSEDING_PREMERGE_CONTROL_31AUG2026.md",
+    "evidence/fiscalia/2026/EG_745_2026_PUBLIC_VISUAL_FACSIMILE_CONTROL_31AUG2026.md",
+    "evidence/fiscalia/2026/eg745-visual-assets/eg745-public-visual-sha256.json",
+    "scripts/build_eg745_public_visual.py",
+    "scripts/validate_eg745_public_visual.py",
+    "sitemap-fiscalia-exp-gub-745.xml",
+    "sitemap.xml"
+  ],
+  "authoritative_source": {
+    "filename": "OFICIO Y DECRETO EXP. 745-26.pdf",
+    "pages": 3,
+    "bytes": 1111997,
+    "sha256": "1e09c8eb3bce26e28dc5f22e5d6ebad3f458212cf8d85f5920e869fa42554abe",
+    "public": false,
+    "control": "Native unredacted source remains private and controls every derivative."
+  },
+  "privacy_control": {
+    "method": "raster-first deterministic rebuild",
+    "page_1": "recipient personal email only replaced by an opaque pixel rectangle",
+    "page_1_pixel_rectangle_pillow_inclusive": [232, 474, 625, 535],
+    "page_1_pixel_box_half_open": [232, 474, 626, 536],
+    "pages_2_3": "no visual redaction required",
+    "public_pdf_ocr_layer": false,
+    "public_pdf_removable_overlay": false,
+    "institutional_content_preserved": true
+  },
+  "expected_assets": [
+    {
+      "path": "evidence/fiscalia/2026/eg745-visual-assets/oficio-decreto-eg-745-2026-public-redacted.pdf",
+      "bytes": 1956595,
+      "sha256": "a59007fa5db61d2b48b587c208f9cafedabe967e88dac4df223b2ef384595088"
+    },
+    {
+      "path": "evidence/fiscalia/2026/eg745-visual-assets/page-1-public-redacted.png",
+      "bytes": 2101003,
+      "sha256": "049ec3fd208f3ff9955ebf8fcfd851ac88f9a62320a6cfa164268605c850b38d"
+    },
+    {
+      "path": "evidence/fiscalia/2026/eg745-visual-assets/page-2-public.png",
+      "bytes": 3631113,
+      "sha256": "d3f28f59c7f000d57505f747ff870636d66f307fe57ea3aa9683091bcc2a3ca2"
+    },
+    {
+      "path": "evidence/fiscalia/2026/eg745-visual-assets/page-3-public.png",
+      "bytes": 1826249,
+      "sha256": "36f2b0e344abfe9dd9b7c6b46b4228ab4323ded7787a0170ee6d3e9f069be11a"
+    },
+    {
+      "path": "evidence/fiscalia/2026/eg745-visual-assets/page-1-public-redacted.webp",
+      "bytes": 171420,
+      "sha256": "ac5ccc51d85d6bfc7933a924465c5ef493206453e822fce2b367433975dee41a"
+    },
+    {
+      "path": "evidence/fiscalia/2026/eg745-visual-assets/page-2-public.webp",
+      "bytes": 353186,
+      "sha256": "5173cd8420ed9f6b6e1b26f3ad86025d89c82cbc69d4936b0d287f17717ae06a"
+    },
+    {
+      "path": "evidence/fiscalia/2026/eg745-visual-assets/page-3-public.webp",
+      "bytes": 180032,
+      "sha256": "ae3f518bb5732396e5d19fdcd3ee45450d2ee104e9bf7f7594af3493115bfaa8"
+    }
+  ],
+  "supersession": {
+    "unavailable_prepared_hash_set": "archive/EG_745_2026_VISUAL_PUBLICATION_CONTINUITY_AUDIT_31AUG2026.md",
+    "inherited_page_3_claimed_sha256": "62271b227f79a44879971bef77be20fc5f760257e81aac31cec56b0094c10c2e",
+    "inherited_page_3_actual_sha256": "b73a712a27c737dd8e22bf462c6e1cce095d05f8d12a3b93b1d0c763f84b528b",
+    "replacement_viewer_transport": "direct WebP with PNG fallback; no Base64 reconstruction"
+  },
+  "deployment_gate": {
+    "status": "OUTSTANDING",
+    "required": [
+      "reviewed PR head and tree",
+      "merge SHA on main",
+      "successful exact-merge-SHA GitHub Pages deployment",
+      "HTTP 200 for both viewers and all seven derivatives",
+      "byte-identical live SHA-256 for every derivative"
+    ]
+  },
+  "filing_status_boundary": "Visual publication does not change the PREPARED / NOT FILED status of any reconsideration.",
+  "evidential_boundary": "Publication and institutional chronology do not by themselves prove coordination, obstruction, prevarication, capture, criminality or personal liability."
+}

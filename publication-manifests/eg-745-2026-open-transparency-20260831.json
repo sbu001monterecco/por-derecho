@@ -82,13 +82,15 @@
     "named_proceedings": ["DI 248/2018", "DI 113/2022", "DI 22/2026", "DIP 2/2026", "EG 49/2026", "DP 1901/2026"]
   },
   "public_visual": {
-    "status": "PUBLISHED",
-    "privacy_control": "page 1 recipient personal email masked; native Spanish source controls",
+    "status": "SUPERSEDED_BY_PREPARED_REPLACEMENT_NOT_VERIFIED_LIVE",
+    "privacy_control": "page 1 recipient personal email masked; native Spanish source controls; deterministic replacement is PREPARED_PENDING_MERGE",
     "preview_sha256": {
       "page_1": "9dea73c05bd91226745c8801147c6fac20b30d7d30480f22c8e0ece9ea9536d3",
       "page_2": "4ed65b0e324ea0ec6dcedaf97ed178aa97aacaf76c877bbdb25058ccdd234969",
-      "page_3": "62271b227f79a44879971bef77be20fc5f760257e81aac31cec56b0094c10c2e"
-    }
+      "page_3": "b73a712a27c737dd8e22bf462c6e1cce095d05f8d12a3b93b1d0c763f84b528b",
+      "page_3_previously_displayed_incorrect": "62271b227f79a44879971bef77be20fc5f760257e81aac31cec56b0094c10c2e"
+    },
+    "replacement_manifest": "publication-manifests/eg-745-2026-visual-publication-20260831.json"
   },
   "translation": {
     "english_complete_inline": true,
