@@ -1,0 +1,43 @@
+name: Validate Cuatrecasas LinkedIn evidence interlink
+
+on:
+  pull_request:
+    paths:
+      - "assets/cuatrecasas-inigo-linkedin-record-20260831.js"
+      - "assets/site.js"
+      - "evidence/cuatrecasas/2026-03-06-inigo-de-luisa-linkedin-message.json"
+      - "en/cuatrecasas-sun-park/index.html"
+      - "es/cuatrecasas-sun-park/index.html"
+      - "en/cuatrecasas-icam-ccacm-2026/index.html"
+      - "es/cuatrecasas-icam-ccacm-2026/index.html"
+      - "scripts/validate_cuatrecasas_linkedin_interlink.py"
+      - "publication-manifests/cuatrecasas-linkedin-evidence-interlink-20260831.json"
+      - ".github/workflows/validate-cuatrecasas-linkedin-interlink.yml"
+  push:
+    branches: [main]
+    paths:
+      - "assets/cuatrecasas-inigo-linkedin-record-20260831.js"
+      - "assets/site.js"
+      - "evidence/cuatrecasas/2026-03-06-inigo-de-luisa-linkedin-message.json"
+      - "en/cuatrecasas-sun-park/index.html"
+      - "es/cuatrecasas-sun-park/index.html"
+      - "en/cuatrecasas-icam-ccacm-2026/index.html"
+      - "es/cuatrecasas-icam-ccacm-2026/index.html"
+      - "scripts/validate_cuatrecasas_linkedin_interlink.py"
+      - "publication-manifests/cuatrecasas-linkedin-evidence-interlink-20260831.json"
+      - ".github/workflows/validate-cuatrecasas-linkedin-interlink.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: "3.12"
+      - name: Validate private-boundary and reciprocal interlinks
+        run: python3 scripts/validate_cuatrecasas_linkedin_interlink.py
