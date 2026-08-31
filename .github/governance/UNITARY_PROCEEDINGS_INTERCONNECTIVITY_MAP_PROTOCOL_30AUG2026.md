@@ -308,6 +308,36 @@ identifies the person, material/act, time and evidential scope. Neither field ma
 be inherited from an institution, colleague, family member, professional firm,
 common asset, chronology, signature, routing act or downstream benefit.
 
+### Public renderer parity is a hard implementation denominator
+
+Declaring or generating the nine-axis model is not sufficient. Every exact-file
+finite-test panel exposed through both trace and isolation must render, in the
+controlled order, all nine institutional grades: transmission, material
+received, referral, registration, file incorporation, recipient attribution,
+substantive examination, decision use and cross-file acknowledgement. Each
+rendered grade must expose its raw controlled status, bilingual basis, bilingual
+limitation and controlled source/source-gap provenance. Colour, a summary token
+or the separate Fiscalía matrix cannot substitute for those fields.
+
+An exact-file panel may be labelled `AUDITED` only when the canonical status
+location exists, the status equals its basis status, both languages are present,
+the limitation is present and the source carries its controlled kind and record
+ID. A missing or mismatched axis must fail closed as `INCOMPLETE` and reduce the
+audited denominator. The six core statuses remain stored in
+`institutional_axes`; material received and referral use their independent basis
+grades; cross-file acknowledgement remains a separate root status. Flexible
+legacy aliases may be displayed for diagnosis but may not qualify a panel as
+audited.
+
+Actor receipt, actor knowledge and actor-source availability must be rendered as
+three independent values outside the nine-axis institutional grid. A located
+source, actor identifier or profile must never become personal receipt or
+knowledge without an explicit actor-specific grade. The public renderer,
+generated contract, schema requirements, specialist audit, exhaustive bilingual
+browser check and live page must therefore be tested as separate lifecycle
+layers. A green schema or data build does not establish renderer or live-page
+completion.
+
 For Ministerio Fiscal, maintain a 24-row office/file matrix keyed to the public
 Master Register: 21 exact file rows and three unresolved-reference rows.
 Event-to-file links require a reviewed relation such as a
@@ -336,10 +366,26 @@ being filled from another office/file or from raw reference equality.
 
 Navigation coverage is 97 / 97 through the Master Register, exact trace and
 isolation fragments. Dedicated bilingual narrative-dossier coverage remains a
-separate positive count and may be partial. Likewise, the finite-test layer does
-not expand the shared Case Prism proposition matrix: that matrix remains 26 / 97
-exact proceedings covered and 71 no-coordinate gaps until new proposition
-membership is source-reviewed.
+separate positive count and may be partial. The public Case Prism must also
+render an exact-file Decision-Dependency Register derived from the 97 controlled
+finite tests. It is complete only when all 97 entries expose the finite question,
+source needed/current status, strongest contrary explanation, competent-organ
+candidate/status, decision dependency, confirmed/refuted consequences and
+Master/trace/isolation navigation. This 97 / 97 record-level denominator does
+not expand the shared Case Prism proposition matrix: that matrix currently
+remains 43 / 97 exact proceedings covered and 54 no-coordinate gaps until new
+proposition membership is source-reviewed. Both denominators must be displayed
+and tested independently.
+
+For first-read institutional access, the bilingual homepages, Proceedings Map,
+Master Register, Calificación routes, insolvency-administrator routes, Fiscalía
+routes and material proceeding-specific dossiers must provide a direct path to
+the neutral institutional reconstruction and Case Prism. Where a page has one or
+more already controlled exact Master IDs, it must also expose the corresponding
+Master row, trace and isolation routes. A page spanning several files may use
+generic Master/Prism navigation; it must not manufacture a single-file mapping.
+Every such navigation block must state that navigation does not establish
+joinder, receipt, admissibility, knowledge, reliance, wrongdoing or merits.
 
 The two direct relationship pairs still graded source-reported/pending primary
 completion, the counsel/procurador denominators, source-not-located fields and

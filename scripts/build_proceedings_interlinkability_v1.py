@@ -2351,6 +2351,31 @@ def build() -> dict[str, Any]:
                 "substantive_examination_status",
                 "decision_use_status",
             ],
+            "public_renderer_axis_ids": [
+                "transmission_status",
+                "material_received_status",
+                "referral_status",
+                "registration_status",
+                "file_incorporation_status",
+                "recipient_attribution_status",
+                "substantive_examination_status",
+                "decision_use_status",
+                "cross_file_acknowledgement_status",
+            ],
+            "public_renderer_axis_provenance_requirement": (
+                "FAIL_CLOSED_STATUS_BILINGUAL_BASIS_LIMITATION_AND_SOURCE"
+            ),
+            "public_renderer_axis_status_locations": {
+                "transmission_status": "receipt_knowledge.institutional_axes",
+                "material_received_status": "receipt_knowledge.institutional_axis_basis.status",
+                "referral_status": "receipt_knowledge.institutional_axis_basis.status",
+                "registration_status": "receipt_knowledge.institutional_axes",
+                "file_incorporation_status": "receipt_knowledge.institutional_axes",
+                "recipient_attribution_status": "receipt_knowledge.institutional_axes",
+                "substantive_examination_status": "receipt_knowledge.institutional_axes",
+                "decision_use_status": "receipt_knowledge.institutional_axes",
+                "cross_file_acknowledgement_status": "receipt_knowledge.root",
+            },
             "cross_file_acknowledgement_is_separate": True,
             "institutional_axis_basis_required": True,
             "positive_axis_source_field_rule": "EXACT_EPISODE_FIELD_MUST_SUPPORT_AXIS_GRADE",
@@ -2369,14 +2394,16 @@ def build() -> dict[str, Any]:
             ),
             "raw_matter_reference_join": "PROHIBITED",
             "boundary_en": (
-                "Institutional transmission, registration, incorporation, recipient attribution, "
-                "examination and decision-use are independent axes. No institutional grade "
-                "establishes personal receipt or knowledge."
+                "Institutional transmission, material received, referral, registration, "
+                "incorporation, recipient attribution, examination, decision-use and cross-file "
+                "acknowledgement are independent grades. No institutional grade establishes "
+                "personal receipt or knowledge."
             ),
             "boundary_es": (
-                "La transmisión, registro, incorporación, atribución al destinatario, examen y "
-                "uso decisorio institucionales son ejes independientes. Ningún grado institucional "
-                "acredita recepción ni conocimiento personal."
+                "La transmisión, el material recibido, la remisión, el registro, la incorporación, "
+                "la atribución al destinatario, el examen, el uso decisorio y el reconocimiento "
+                "entre expedientes son grados institucionales independientes. Ningún grado "
+                "institucional acredita recepción ni conocimiento personal."
             ),
         },
         "fiscalia_office_file_matrix_contract": {
@@ -2448,9 +2475,15 @@ def build() -> dict[str, Any]:
             "case_prism_exact_proceeding_uncovered_count": len(exact_rows)
             - len(case_prism_exact_ids),
             "decision_dependency_exact_coverage": (
-                f"GAP_{len(case_prism_exact_ids)}_OF_{len(exact_rows)}"
+                f"VERIFIED_{finite_test_count}_OF_{len(exact_rows)}"
             ),
             "decision_dependency_exact_coverage_scope": (
+                "PUBLIC_EXACT_FILE_FINITE_TEST_REGISTER"
+            ),
+            "shared_case_prism_proposition_membership_coverage": (
+                f"GAP_{len(case_prism_exact_ids)}_OF_{len(exact_rows)}"
+            ),
+            "shared_case_prism_proposition_membership_scope": (
                 "SHARED_CASE_PRISM_PROPOSITION_MEMBERSHIP_ONLY"
             ),
             "exact_file_decision_dependency_actionability_count": finite_test_count,

@@ -72,7 +72,7 @@
     finiteUnavailable: 'No hay una prueba finita completa modelada para este procedimiento exacto. No se infiere ninguna conclusión de esa ausencia.',
     finiteIncomplete: 'Modelo de prueba finita incompleto', finiteReady: 'Prueba finita auditada',
     auditCoverage: 'Cobertura de auditoría', positiveEvidence: 'Prueba positiva separada',
-    positiveEvidenceCount: 'expedientes con algún estado positivo expresamente codificado de recepción/tratamiento o evidencia específica de actor',
+    positiveEvidenceCount: 'expedientes con algún grado institucional positivo de recepción/tratamiento; la evidencia específica de actor se cuenta por separado',
     finiteQuestion: 'Pregunta finita', currentSourceStatus: 'Estado actual de la fuente', proceduralAvailability: 'Disponibilidad procesal',
     institutionalReceipt: 'Recepción y tratamiento institucional', actorKnowledge: 'Evidencia de conocimiento específica de actor',
     institutionalBoundary: 'RECIBIDO ≠ INCORPORADO AL EXPEDIENTE ≠ EXAMINADO ≠ UTILIZADO EN UNA DECISIÓN.',
@@ -90,7 +90,7 @@
     officeFile: 'Oficina / expediente', receivedProfile: 'Recibido / estado del perfil', responseTreatment: 'Respuesta / tratamiento', canonicalSourceStatus: 'Estado canónico de fuente', responseProfileStatus: 'Estado del perfil de respuesta', exactnessStatus: 'Condición de procedimiento', recordType: 'Tipo de registro',
     crossFileAcknowledgement: 'Reconocimiento entre expedientes', unansweredGap: 'Sin respuesta / fuente pendiente',
     noUnitaryAcknowledgement: 'No se ha localizado un reconocimiento unitario en el corpus controlado.', fiscaliaMatrixUnavailable: 'La matriz transversal de Fiscalía no está disponible en esta carga.',
-    requestedMaterial: 'Solicitado', originOffice: 'Oficina de origen', currentCustodian: 'Custodio actual', datePeriod: 'Fecha / periodo', materialEvidence: 'Alegaciones / material / prueba descritos', materialReceivedInventory: 'Inventario de material recibido', noMaterialItemised: 'No hay material recibido individualizado en esta fila controlada.', materialInventoryGap: 'Brecha del inventario de material', directRelatedProceedings: 'Procedimientos relacionados directamente', contextRelatedProceedings: 'Contexto relacionado — no es enlace procesal', noDirectMatrixRelated: 'No hay otro procedimiento directo individualizado en esta fila.', noContextMatrixRelated: 'No hay otro contexto relacionado individualizado en esta fila.', relatedProceedingsStatus: 'Estado de procedimientos relacionados', relatedAssets: 'Activos relacionados', noRelatedAssets: 'No hay activo separado individualizado en esta fila.', relatedAssetsGap: 'Brecha de activos relacionados', transmissionStatus: 'Estado de transmisión', materialStatus: 'Estado del material recibido', relatedAssetsStatus: 'Estado de activos relacionados', referralStatus: 'Estado de remisión', whatWasReferred: 'Qué fue remitido', registrationStatus: 'Estado de registro', fileIncorporationStatus: 'Estado de incorporación al expediente', recipientAttributionStatus: 'Estado de atribución del destinatario', examinationStatus: 'Estado de examen', whatWasExamined: 'Qué fue efectivamente examinado', decisionUseStatus: 'Estado de uso en decisión', unitaryAcknowledgementStatus: 'Estado de reconocimiento unitario', strongestContrary: 'Explicación contraria más fuerte', rowBoundary: 'Límite de atribución de la fila', sourceProfiles: 'Perfiles fuente', axisBasis: 'Base y límite del grado', basisKind: 'Tipo de base', basisStatement: 'Base controlada', basisSource: 'Procedencia de la base', controlledLimit: 'Límite controlado', controlledEpisodes: 'episodios de respuesta controlados en total', filterScope: 'La búsqueda y el filtro de vía se aplican únicamente al mapa por vías y a la cronología.', fiscaliaCommunications: 'Abrir comunicaciones y respuestas de Fiscalía'
+    requestedMaterial: 'Solicitado', originOffice: 'Oficina de origen', currentCustodian: 'Custodio actual', datePeriod: 'Fecha / periodo', materialEvidence: 'Alegaciones / material / prueba descritos', materialReceivedInventory: 'Inventario de material recibido', noMaterialItemised: 'No hay material recibido individualizado en esta fila controlada.', materialInventoryGap: 'Brecha del inventario de material', directRelatedProceedings: 'Procedimientos relacionados directamente', contextRelatedProceedings: 'Contexto relacionado — no es enlace procesal', noDirectMatrixRelated: 'No hay otro procedimiento directo individualizado en esta fila.', noContextMatrixRelated: 'No hay otro contexto relacionado individualizado en esta fila.', relatedProceedingsStatus: 'Estado de procedimientos relacionados', relatedAssets: 'Activos relacionados', noRelatedAssets: 'No hay activo separado individualizado en esta fila.', relatedAssetsGap: 'Brecha de activos relacionados', transmissionStatus: 'Estado de transmisión', materialStatus: 'Estado del material recibido', relatedAssetsStatus: 'Estado de activos relacionados', referralStatus: 'Estado de remisión', whatWasReferred: 'Qué fue remitido', registrationStatus: 'Estado de registro', fileIncorporationStatus: 'Estado de incorporación al expediente', recipientAttributionStatus: 'Estado de atribución del destinatario', examinationStatus: 'Estado de examen', whatWasExamined: 'Qué fue efectivamente examinado', decisionUseStatus: 'Estado de uso en decisión', unitaryAcknowledgementStatus: 'Estado de reconocimiento unitario', strongestContrary: 'Explicación contraria más fuerte', rowBoundary: 'Límite de atribución de la fila', sourceProfiles: 'Perfiles fuente', axisBasis: 'Base y límite del grado', basisKind: 'Tipo de base', basisStatement: 'Base controlada', basisSource: 'Procedencia de la base', controlledLimit: 'Límite controlado', controlledEpisodes: 'episodios de respuesta controlados en total', filterScope: 'La búsqueda y el filtro de vía se aplican únicamente al mapa por vías y a la cronología.', fiscaliaCommunications: 'Abrir comunicaciones y respuestas de Fiscalía', exactDecisionRegister: 'Registro de dependencia decisoria por expediente', exactDecisionRegisterLead: 'Los 97 procedimientos exactos tienen una pregunta finita, fuente necesaria, explicación contraria, órgano competente, dependencia decisoria y consecuencias controladas.', exactDecisionRegisterBoundary: 'Este registro no inventa pertenencia a una proposición compartida. La cobertura de la matriz común se mide por separado.', sharedPropositionCoverage: 'cobertura de proposiciones compartidas', openIsolation: 'Abrir prueba de aislamiento'
   } : {
     loading: 'Building the map from the canonical register…',
     error: 'The proceedings map could not be built.',
@@ -144,7 +144,7 @@
     finiteUnavailable: 'No complete finite test is modelled for this exact proceeding. No conclusion is inferred from that absence.',
     finiteIncomplete: 'Incomplete finite-test model', finiteReady: 'Finite test audited',
     auditCoverage: 'Audit coverage', positiveEvidence: 'Separate positive evidence',
-    positiveEvidenceCount: 'files with at least one expressly encoded positive receipt/treatment status or actor-specific evidence status',
+    positiveEvidenceCount: 'files with at least one positive institutional receipt/treatment grade; actor-specific evidence is counted separately',
     finiteQuestion: 'Finite question', currentSourceStatus: 'Current source status', proceduralAvailability: 'Procedural availability',
     institutionalReceipt: 'Institutional receipt and treatment', actorKnowledge: 'Actor-specific knowledge evidence',
     institutionalBoundary: 'RECEIVED ≠ INCORPORATED IN FILE ≠ EXAMINED ≠ USED IN A DECISION.',
@@ -162,7 +162,7 @@
     officeFile: 'Office / file', receivedProfile: 'Received / profile state', responseTreatment: 'Response / treatment', canonicalSourceStatus: 'Canonical source status', responseProfileStatus: 'Response-profile status', exactnessStatus: 'Proceeding status', recordType: 'Record type',
     crossFileAcknowledgement: 'Cross-file acknowledgement', unansweredGap: 'Unanswered / source gap',
     noUnitaryAcknowledgement: 'No unitary acknowledgement has been located in the controlled corpus.', fiscaliaMatrixUnavailable: 'The Fiscalía cross-office matrix is unavailable in this load.',
-    requestedMaterial: 'Requested', originOffice: 'Origin office', currentCustodian: 'Current custodian', datePeriod: 'Date / period', materialEvidence: 'Described allegations / material / evidence', materialReceivedInventory: 'Received-material inventory', noMaterialItemised: 'No received material is itemised in this controlled row.', materialInventoryGap: 'Material-inventory gap', directRelatedProceedings: 'Directly related proceedings', contextRelatedProceedings: 'Related context — not a procedural edge', noDirectMatrixRelated: 'No other direct proceeding is itemised in this row.', noContextMatrixRelated: 'No other related context is itemised in this row.', relatedProceedingsStatus: 'Related-proceedings status', relatedAssets: 'Related assets', noRelatedAssets: 'No separate asset is itemised in this row.', relatedAssetsGap: 'Related-assets gap', transmissionStatus: 'Transmission status', materialStatus: 'Material-received status', relatedAssetsStatus: 'Related-assets status', referralStatus: 'Referral status', whatWasReferred: 'What was referred', registrationStatus: 'Registration status', fileIncorporationStatus: 'File-incorporation status', recipientAttributionStatus: 'Recipient-attribution status', examinationStatus: 'Examination status', whatWasExamined: 'What was actually examined', decisionUseStatus: 'Decision-use status', unitaryAcknowledgementStatus: 'Unitary-acknowledgement status', strongestContrary: 'Strongest contrary explanation', rowBoundary: 'Row attribution boundary', sourceProfiles: 'Source profiles', axisBasis: 'Grade basis and limitation', basisKind: 'Basis kind', basisStatement: 'Controlled basis', basisSource: 'Basis provenance', controlledLimit: 'Controlled limitation', controlledEpisodes: 'controlled response episodes total', filterScope: 'Search and track filters apply only to the track map and chronology.', fiscaliaCommunications: 'Open Fiscalía communications and responses'
+    requestedMaterial: 'Requested', originOffice: 'Origin office', currentCustodian: 'Current custodian', datePeriod: 'Date / period', materialEvidence: 'Described allegations / material / evidence', materialReceivedInventory: 'Received-material inventory', noMaterialItemised: 'No received material is itemised in this controlled row.', materialInventoryGap: 'Material-inventory gap', directRelatedProceedings: 'Directly related proceedings', contextRelatedProceedings: 'Related context — not a procedural edge', noDirectMatrixRelated: 'No other direct proceeding is itemised in this row.', noContextMatrixRelated: 'No other related context is itemised in this row.', relatedProceedingsStatus: 'Related-proceedings status', relatedAssets: 'Related assets', noRelatedAssets: 'No separate asset is itemised in this row.', relatedAssetsGap: 'Related-assets gap', transmissionStatus: 'Transmission status', materialStatus: 'Material-received status', relatedAssetsStatus: 'Related-assets status', referralStatus: 'Referral status', whatWasReferred: 'What was referred', registrationStatus: 'Registration status', fileIncorporationStatus: 'File-incorporation status', recipientAttributionStatus: 'Recipient-attribution status', examinationStatus: 'Examination status', whatWasExamined: 'What was actually examined', decisionUseStatus: 'Decision-use status', unitaryAcknowledgementStatus: 'Unitary-acknowledgement status', strongestContrary: 'Strongest contrary explanation', rowBoundary: 'Row attribution boundary', sourceProfiles: 'Source profiles', axisBasis: 'Grade basis and limitation', basisKind: 'Basis kind', basisStatement: 'Controlled basis', basisSource: 'Basis provenance', controlledLimit: 'Controlled limitation', controlledEpisodes: 'controlled response episodes total', filterScope: 'Search and track filters apply only to the track map and chronology.', fiscaliaCommunications: 'Open Fiscalía communications and responses', exactDecisionRegister: 'Exact-file decision-dependency register', exactDecisionRegisterLead: 'All 97 exact proceedings carry a controlled finite question, source need, contrary explanation, competent organ, decision dependency and consequences.', exactDecisionRegisterBoundary: 'This register does not invent membership in a shared proposition. Shared-matrix coverage is measured separately.', sharedPropositionCoverage: 'shared-proposition coverage', openIsolation: 'Open isolation test'
   };
 
   copy.communityAuthority = lang === 'es' ? 'Abrir ACTAs y expedientes públicos' : 'Open ACTAs and public-authority files';
@@ -305,25 +305,72 @@
   }
 
   const finiteAxisDefinitions = [
-    {key:'transmission', label:'transmission', aliases:['transmission_status','transmission']},
-    {key:'registration', label:'registration', aliases:['registration_status','registration','receipt_status']},
-    {key:'file-incorporation', label:'fileIncorporation', aliases:['file_incorporation_status','file_incorporation','incorporation_status']},
-    {key:'recipient-attribution', label:'recipientAttribution', aliases:['recipient_attribution_status','recipient_attribution','recipient_status']},
-    {key:'examination', label:'substantiveExamination', aliases:['substantive_examination_status','substantive_examination','examination_status']},
-    {key:'decision-use', label:'decisionUse', aliases:['decision_use_status','decision_use','treatment_status']}
+    {key:'transmission', label:'transmission', dataKey:'transmission_status', canonicalLocation:'institutional_axes', aliases:['transmission_status','transmission']},
+    {key:'material-received', label:'materialStatus', dataKey:'material_received_status', canonicalLocation:'basis_status', aliases:['material_received_status','material_received','received_material_status']},
+    {key:'referral', label:'referralStatus', dataKey:'referral_status', canonicalLocation:'basis_status', aliases:['referral_status','referral']},
+    {key:'registration', label:'registration', dataKey:'registration_status', canonicalLocation:'institutional_axes', aliases:['registration_status','registration','receipt_status']},
+    {key:'file-incorporation', label:'fileIncorporation', dataKey:'file_incorporation_status', canonicalLocation:'institutional_axes', aliases:['file_incorporation_status','file_incorporation','incorporation_status']},
+    {key:'recipient-attribution', label:'recipientAttribution', dataKey:'recipient_attribution_status', canonicalLocation:'institutional_axes', aliases:['recipient_attribution_status','recipient_attribution','recipient_status']},
+    {key:'examination', label:'substantiveExamination', dataKey:'substantive_examination_status', canonicalLocation:'institutional_axes', aliases:['substantive_examination_status','substantive_examination','examination_status']},
+    {key:'decision-use', label:'decisionUse', dataKey:'decision_use_status', canonicalLocation:'institutional_axes', aliases:['decision_use_status','decision_use','treatment_status']},
+    {key:'cross-file-acknowledgement', label:'crossFileAcknowledgement', dataKey:'cross_file_acknowledgement_status', canonicalLocation:'receipt_root', aliases:['cross_file_acknowledgement_status','cross_file_acknowledgement']}
   ];
 
   function finiteAxisValue(institutional, aliases) {
     for (const alias of aliases) {
       if (institutional && Object.prototype.hasOwnProperty.call(institutional, alias)) return institutional[alias];
       if (institutional && institutional.axes && Object.prototype.hasOwnProperty.call(institutional.axes, alias)) return institutional.axes[alias];
+      if (institutional && institutional.institutional_axes && Object.prototype.hasOwnProperty.call(institutional.institutional_axes, alias)) return institutional.institutional_axes[alias];
     }
     return '';
   }
 
-  function finiteActorStatus(actor, root) {
-    return finiteToken(actor && (actor.status || actor.audit_status || actor.evidence_status || actor.source_status))
-      || finiteToken(root && (root.actor_specific_status || root.personal_knowledge_status));
+  function finiteAxisModel(receipt, axis) {
+    const basis = receipt && receipt.root && receipt.root.institutional_axis_basis
+      ? receipt.root.institutional_axis_basis[axis.dataKey] : null;
+    const root = receipt && receipt.root;
+    let canonicalValue = '';
+    if (axis.canonicalLocation === 'institutional_axes'
+        && root && root.institutional_axes
+        && Object.prototype.hasOwnProperty.call(root.institutional_axes, axis.dataKey)) {
+      canonicalValue = root.institutional_axes[axis.dataKey];
+    } else if (axis.canonicalLocation === 'basis_status'
+        && basis && Object.prototype.hasOwnProperty.call(basis, 'status')) {
+      canonicalValue = basis.status;
+    } else if (axis.canonicalLocation === 'receipt_root'
+        && root && Object.prototype.hasOwnProperty.call(root, axis.dataKey)) {
+      canonicalValue = root[axis.dataKey];
+    }
+    const value = canonicalValue
+      || finiteAxisValue(receipt && receipt.institutional, axis.aliases)
+      || finiteAxisValue(receipt && receipt.root, axis.aliases)
+      || basis && basis.status
+      || '';
+    return {value, token:finiteToken(value), basis, canonicalStatusPresent:Boolean(finiteToken(canonicalValue))};
+  }
+
+  function finiteAxisComplete(receipt, axis) {
+    const model = finiteAxisModel(receipt, axis);
+    const basis = model.basis;
+    return Boolean(
+      model.token
+      && model.canonicalStatusPresent
+      && basis
+      && finiteToken(basis.status) === model.token
+      && norm(basis.basis_kind)
+      && norm(basis.basis_en)
+      && norm(basis.basis_es)
+      && norm(basis.limitation_en)
+      && norm(basis.limitation_es)
+      && basis.source
+      && norm(basis.source.kind)
+      && norm(basis.source.record_id)
+      && provenanceLabel(basis.source) !== '—'
+    );
+  }
+
+  function finiteActorSourceStatus(actor) {
+    return finiteToken(actor && actor.source_status);
   }
 
   function finiteTestComplete(disposition) {
@@ -334,7 +381,7 @@
     const related = test.related_proceedings || {};
     const navigation = test.navigation || {};
     const actor = receipt && receipt.actor || {};
-    const hasSixAxes = receipt && finiteAxisDefinitions.every((axis) => finiteToken(finiteAxisValue(receipt.institutional, axis.aliases)));
+    const hasNineAxisProvenance = receipt && finiteAxisDefinitions.every((axis) => finiteAxisComplete(receipt, axis));
     return Boolean(
       norm(test.id)
       && norm(test.family_template_id)
@@ -355,11 +402,12 @@
       && finiteText(test, 'if_confirmed')
       && finiteText(test, 'if_refuted')
       && receipt
-      && hasSixAxes
-      && norm(receipt.root.cross_file_acknowledgement_status)
+      && hasNineAxisProvenance
       && norm(actor.receipt_status)
       && norm(actor.knowledge_status)
       && norm(actor.source_status)
+      && norm(actor.boundary_en)
+      && norm(actor.boundary_es)
       && Array.isArray(related.direct_master_ids)
       && Array.isArray(related.context_master_ids)
       && Array.isArray(related.context_cluster_ids)
@@ -375,8 +423,7 @@
     const test = disposition && disposition.finite_test;
     const receipt = finiteReceiptModel(test, disposition);
     if (!receipt) return false;
-    const values = finiteAxisDefinitions.map((axis) => finiteToken(finiteAxisValue(receipt.institutional, axis.aliases)));
-    values.push(finiteActorStatus(receipt.actor, receipt.root));
+    const values = finiteAxisDefinitions.map((axis) => finiteAxisModel(receipt, axis).token);
     const negative = /(?:^|_)(?:NO|NOT|NONE|UNAVAILABLE|UNRESOLVED|OPEN|PENDING)(?:_|$)/;
     const positive = /(?:DOCUMENTED|LOCATED|VERIFIED|ACKNOWLEDG|EXPRESS|RELIED|INCORPORAT|RECEIV|EXAMIN|DECISION_USE)/;
     return values.some((token) => token && !negative.test(token) && positive.test(token));
@@ -452,11 +499,22 @@
   function finiteReceiptHtml(test, interlinks, disposition = null) {
     const receipt = finiteReceiptModel(test, disposition);
     if (!receipt) return `<section class="pdim-finite-receipt" data-institutional-receipt-treatment data-model-status="UNAVAILABLE"><h3>${esc(copy.institutionalReceipt)}</h3><p class="pdim-warning">${esc(copy.finiteUnavailable)}</p></section>`;
+    const finiteId = (norm(test && test.id) || 'FINITE').replace(/[^A-Za-z0-9_-]/g, '-');
     const axes = finiteAxisDefinitions.map((axis) => {
-      const value = finiteAxisValue(receipt.institutional, axis.aliases);
-      const token = finiteToken(value) || 'STATUS_NOT_MODELLED';
+      const model = finiteAxisModel(receipt, axis);
+      const value = model.value;
+      const token = model.token || 'STATUS_NOT_MODELLED';
+      const basis = model.basis || {};
+      const basisStatus = finiteToken(basis.status) || 'STATUS_NOT_MODELLED';
+      const basisKind = norm(basis.basis_kind) || 'BASIS_NOT_MODELLED';
+      const basisText = finiteText(basis, 'basis');
+      const limitation = finiteText(basis, 'limitation', 'limitations');
+      const source = basis.source || null;
       const dataName = `data-${axis.key}-status`;
-      return `<div data-receipt-axis="${esc(axis.key)}" ${dataName}="${esc(token)}"><dt>${esc(copy[axis.label])}</dt><dd><span>${esc(finiteTokenLabel(interlinks, token, value))}</span><code>${esc(token)}</code></dd></div>`;
+      const disclosureId = `pdim-receipt-${finiteId}-${axis.key}`;
+      const disclosureContentId = `${disclosureId}-content`;
+      const disclosureName = `${copy.axisBasis} · ${copy[axis.label]}`;
+      return `<div data-receipt-axis="${esc(axis.key)}" ${dataName}="${esc(token)}" data-axis-status="${esc(token)}" data-axis-basis-status="${esc(basisStatus)}" data-axis-basis-kind="${esc(basisKind)}"><dt>${esc(copy[axis.label])}</dt><dd><span>${esc(finiteTokenLabel(interlinks, token, value))}</span><code>${esc(token)}</code><details id="${esc(disclosureId)}" class="pdim-axis-basis" data-receipt-axis-basis="${esc(axis.key)}"><summary aria-controls="${esc(disclosureContentId)}">${esc(disclosureName)}</summary><dl id="${esc(disclosureContentId)}"><div><dt>${esc(copy.basisKind)}</dt><dd data-receipt-axis-basis-kind-value><code>${esc(basisKind)}</code></dd></div><div><dt>${esc(copy.basisStatement)}</dt><dd data-receipt-axis-basis-statement>${esc(basisText || '—')}</dd></div><div><dt>${esc(copy.controlledLimit)}</dt><dd data-receipt-axis-limitation>${esc(limitation || '—')}</dd></div><div><dt>${esc(copy.basisSource)}</dt><dd data-receipt-axis-source-provenance><code>${esc(provenanceLabel(source))}</code></dd></div></dl></details></dd></div>`;
     }).join('');
     const events = receipt.institutional && (receipt.institutional.events || receipt.institutional.event_refs || receipt.institutional.receipt_events)
       || receipt.root.events || receipt.root.event_refs || [];
@@ -469,10 +527,9 @@
       const doesNot = finiteText(item, 'does_not_prove', 'limitations');
       return `<li data-receipt-event="${esc(id)}"><strong>${esc(copy.receiptEvent)} · ${esc(id)}</strong><span>${esc([norm(item.date || item.event_date), title].filter(Boolean).join(' · '))}</span>${proves ? `<p><b>${esc(copy.proves)}:</b> ${esc(proves)}</p>` : ''}${doesNot ? `<p><b>${esc(copy.doesNotProve)}:</b> ${esc(doesNot)}</p>` : ''}</li>`;
     }).join('')}</ol>` : `<p class="pdim-finite-empty">${esc(copy.noReceiptEvents)}</p>`;
-    const crossFileStatus = finiteToken(receipt.root.cross_file_acknowledgement_status) || 'STATUS_NOT_MODELLED';
     const receiptLimit = finiteText(receipt.root, 'limitations');
     const actor = receipt.actor || {};
-    const actorStatus = finiteActorStatus(actor, receipt.root) || 'NO_ACTOR_SPECIFIC_SOURCE_LOCATED';
+    const actorStatus = finiteActorSourceStatus(actor) || 'NO_ACTOR_SPECIFIC_SOURCE_LOCATED';
     const actorReceiptStatus = finiteToken(actor.receipt_status) || 'NOT_ESTABLISHED';
     const actorKnowledgeStatus = finiteToken(actor.knowledge_status) || 'NOT_ESTABLISHED';
     const profiles = actor.profiles || actor.profile_refs || actor.assessments || actor.actors || actor.actor_ids || receipt.root.actor_profiles || [];
@@ -480,7 +537,7 @@
     const actorHtml = profileList.length ? `<ul class="pdim-actor-profiles">${profileList.map((profile) => {
       const item = typeof profile === 'string' ? {profile_id:profile} : profile;
       const id = norm(item.actor_id || item.profile_id || item.id) || 'ACTOR';
-      const status = finiteToken(item.status || item.knowledge_status || item.evidence_status) || actorStatus;
+      const status = finiteToken(item.knowledge_status) || 'NOT_ESTABLISHED';
       const capacity = finiteText(item, 'capacity', 'role');
       const proves = finiteText(item, 'proves', 'knowledge_scope', 'proof_scope');
       const doesNot = finiteText(item, 'does_not_prove', 'limitations');
@@ -489,7 +546,7 @@
     const actorSpecificBoundary = finiteText(actor, 'boundary', 'limitations');
     return `<section class="pdim-finite-receipt" data-institutional-receipt-treatment>
       <h3>${esc(copy.institutionalReceipt)}</h3><p class="pdim-finite-rule">${esc(copy.institutionalBoundary)}</p>
-      <dl class="pdim-receipt-axes">${axes}</dl><div class="pdim-finite-token" data-cross-file-acknowledgement-status="${esc(crossFileStatus)}"><strong>${esc(copy.crossFileAcknowledgement)}</strong><span>${esc(finiteTokenLabel(interlinks, crossFileStatus, receipt.root))}</span><code>${esc(crossFileStatus)}</code></div>${eventsHtml}${receiptLimit ? `<p class="pdim-finite-rule">${esc(receiptLimit)}</p>` : ''}
+      <dl class="pdim-receipt-axes">${axes}</dl>${eventsHtml}${receiptLimit ? `<p class="pdim-finite-rule">${esc(receiptLimit)}</p>` : ''}
       <section class="pdim-finite-actors" data-actor-specific-knowledge data-personal-knowledge-status="${esc(actorKnowledgeStatus)}" data-actor-receipt-status="${esc(actorReceiptStatus)}" data-actor-source-status="${esc(actorStatus)}"><h3>${esc(copy.actorKnowledge)}</h3><p class="pdim-warning">${esc(copy.actorBoundary)}</p>${actorSpecificBoundary ? `<p class="pdim-finite-rule">${esc(actorSpecificBoundary)}</p>` : ''}<div class="pdim-actor-status-grid"><div class="pdim-finite-token"><strong>${esc(copy.actorReceiptStatus)}</strong><span>${esc(finiteTokenLabel(interlinks, actorReceiptStatus, actor.receipt_status))}</span><code>${esc(actorReceiptStatus)}</code></div><div class="pdim-finite-token"><strong>${esc(copy.actorKnowledgeStatus)}</strong><span>${esc(finiteTokenLabel(interlinks, actorKnowledgeStatus, actor.knowledge_status))}</span><code>${esc(actorKnowledgeStatus)}</code></div><div class="pdim-finite-token"><strong>${esc(copy.actorSourceStatus)}</strong><span>${esc(finiteTokenLabel(interlinks, actorStatus, actor))}</span><code>${esc(actorStatus)}</code></div></div>${actorHtml}</section>
     </section>`;
   }
@@ -563,7 +620,7 @@
         ? `<li><button type="button" data-trace-id="${esc(id)}">${esc(id)} · ${esc(labelFor(byId.get(id)))}</button></li>`
         : `<li><code>${esc(id)}</code></li>`).join('')}</ul>`;
     };
-    const axisHtml = (row, axisKey, label) => {
+    const axisHtml = (row, rowId, axisKey, label) => {
       const value = row[axisKey];
       const status = finiteToken(value) || 'STATUS_NOT_MODELLED';
       const basis = row.institutional_axis_basis && row.institutional_axis_basis[axisKey] || {};
@@ -572,7 +629,9 @@
       const basisText = finiteText(basis, 'basis') || '—';
       const limitation = finiteText(basis, 'limitation', 'limitations') || '—';
       const source = basis.source || {};
-      return `<div class="pdim-fiscalia-axis" data-fiscalia-axis="${esc(axisKey)}" data-axis-status="${esc(status)}" data-axis-basis-status="${esc(basisStatus)}" data-axis-basis-kind="${esc(basisKind)}"><dt>${esc(label)}</dt><dd><span>${esc(finiteTokenLabel(interlinks, status, value))}</span> <code>${esc(status)}</code><details class="pdim-axis-basis" data-fiscalia-axis-basis="${esc(axisKey)}"><summary>${esc(copy.axisBasis)}</summary><dl><div><dt>${esc(copy.basisKind)}</dt><dd><code>${esc(basisKind)}</code></dd></div><div><dt>${esc(copy.basisStatement)}</dt><dd>${esc(basisText)}</dd></div><div><dt>${esc(copy.controlledLimit)}</dt><dd>${esc(limitation)}</dd></div><div><dt>${esc(copy.basisSource)}</dt><dd><code>${esc(provenanceLabel(source))}</code></dd></div></dl></details></dd></div>`;
+      const axisId = `pdim-fiscalia-${(norm(rowId) || 'ROW').replace(/[^A-Za-z0-9_-]/g, '-')}-${axisKey}`;
+      const axisContentId = `${axisId}-content`;
+      return `<div class="pdim-fiscalia-axis" data-fiscalia-axis="${esc(axisKey)}" data-axis-status="${esc(status)}" data-axis-basis-status="${esc(basisStatus)}" data-axis-basis-kind="${esc(basisKind)}"><dt>${esc(label)}</dt><dd><span>${esc(finiteTokenLabel(interlinks, status, value))}</span> <code>${esc(status)}</code><details id="${esc(axisId)}" class="pdim-axis-basis" data-fiscalia-axis-basis="${esc(axisKey)}"><summary aria-controls="${esc(axisContentId)}">${esc(`${copy.axisBasis} · ${label}`)}</summary><dl id="${esc(axisContentId)}"><div><dt>${esc(copy.basisKind)}</dt><dd><code>${esc(basisKind)}</code></dd></div><div><dt>${esc(copy.basisStatement)}</dt><dd>${esc(basisText)}</dd></div><div><dt>${esc(copy.controlledLimit)}</dt><dd>${esc(limitation)}</dd></div><div><dt>${esc(copy.basisSource)}</dt><dd><code>${esc(provenanceLabel(source))}</code></dd></div></dl></details></dd></div>`;
     };
 
     const rowHtml = rows.map((row, index) => {
@@ -623,7 +682,7 @@
         ['substantive_examination_status', copy.examinationStatus],
         ['decision_use_status', copy.decisionUseStatus],
         ['cross_file_acknowledgement_status', copy.crossFileAcknowledgement]
-      ].map(([axisKey, label]) => axisHtml(row, axisKey, label)).join('');
+      ].map(([axisKey, label]) => axisHtml(row, rowId, axisKey, label)).join('');
       return `<details class="pdim-fiscalia-row" data-fiscalia-row="${esc(rowId)}" data-master-id="${esc(masterId)}" data-is-proceeding="${esc(isProceeding)}" data-record-type="${esc(recordType)}" data-canonical-source-status="${esc(canonicalSourceStatus)}" data-profile-status="${esc(profileStatus)}" data-related-proceedings-status="${esc(relatedProceedingsStatus)}" data-related-assets-status="${esc(relatedAssetsStatus)}" data-unitary-acknowledgement-status="${esc(unitary)}"><summary><span>${esc(office)}</span>${identity}<span class="pdim-fiscalia-summary-status"><code>${esc(isProceeding)}</code><code>${esc(canonicalSourceStatus)}</code><code>${esc(profileStatus)}</code></span></summary><dl>
         <div><dt>${esc(copy.officeFile)}</dt><dd>${traceIdentity}</dd></div>
         <div><dt>${esc(copy.originOffice)}</dt><dd>${esc(office)}</dd></div>
@@ -806,9 +865,15 @@
       ${sources ? `<section class="pdim-source-links"><h4>${copy.sourceLinks}</h4><p>${esc(copy.sourceScope)}</p><ul>${sources}</ul></section>` : ''}
       ${ids.length ? `<div class="pdim-prism-id-list"><strong>${copy.masterIds}</strong>${ids.map((id) => `<button type="button" data-trace-id="${esc(id)}">${esc(id)} · ${copy.openTrace}</button>${detailUrlFor(id) ? `<a class="pdim-detail-link" href="${esc(detailUrlFor(id))}">${lang === 'es' ? 'Ficha' : 'Record'} ↗</a>` : ''}`).join('')}</div>` : ''}
       ${prop.id === 'P05' ? fiscaliaMatrixHtml(interlinks, byId) : ''}`;
+    // Keep the selected decision cell and its full evidential detail as one
+    // immediate reader action.  A synchronous alignment is required here:
+    // the detail can exceed one viewport (notably the 24-row Fiscalía matrix),
+    // and deferred smooth scrolling can leave a correctly focused result
+    // thousands of pixels below the visible matrix.
+    // `auto` would inherit the site's global `html { scroll-behavior:smooth }`
+    // and remain deferred; `instant` deliberately overrides that rule.
+    holder.scrollIntoView({behavior:'instant', block:'start', inline:'nearest'});
     holder.focus({preventScroll:true});
-    const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    holder.scrollIntoView({behavior: reduced ? 'auto' : 'smooth', block:'start'});
   }
 
   function audienceControl(prism, state) {
@@ -824,14 +889,35 @@
     return localized(audienceLens(prism, state), 'source_path');
   }
 
-  function renderPrism(root, prism, state) {
+  function exactDecisionDependencyRegisterHtml(interlinks, byId) {
+    const dispositions = ((interlinks && interlinks.node_dispositions) || [])
+      .filter((entry) => entry && byId.has(entry.master_id) && isExactProceeding(byId.get(entry.master_id)))
+      .sort((a, b) => labelFor(byId.get(a.master_id)).localeCompare(labelFor(byId.get(b.master_id))) || a.master_id.localeCompare(b.master_id));
+    const auditedCount = dispositions.filter(finiteTestComplete).length;
+    const sharedCount = Number(interlinks && interlinks.coverage && interlinks.coverage.case_prism_exact_proceeding_covered_count || 0);
+    const entries = dispositions.map((disposition) => {
+      const masterId = disposition.master_id;
+      const record = byId.get(masterId);
+      const test = disposition.finite_test || {};
+      const complete = finiteTestComplete(disposition);
+      const status = complete ? 'AUDITED' : 'INCOMPLETE';
+      const organ = finiteOrgan(test);
+      const sourceStatus = norm(test.current_source_status || test.source_status) || 'STATUS_NOT_MODELLED';
+      const related = finiteRelatedEntries(test, disposition, interlinks, masterId, byId);
+      return `<li><details class="pdim-exact-decision-entry" data-exact-decision-entry data-master-id="${esc(masterId)}" data-model-status="${status}"><summary><span><strong>${esc(masterId)} · ${esc(labelFor(record))}</strong><small>${esc(finiteText(test, 'question', 'finite_question') || copy.finiteUnavailable)}</small></span><code>${status}</code></summary><dl class="pdim-dependency-grid"><div><dt>${esc(copy.decisionDepends)}</dt><dd data-exact-decision-dependency>${esc(finiteText(test, 'decision_dependency') || '—')}</dd></div><div><dt>${esc(copy.sourceNeeded)}</dt><dd data-exact-source-needed>${esc(finiteText(test, 'source_needed', 'source_requirement') || '—')}<code>${esc(sourceStatus)}</code></dd></div><div><dt>${esc(copy.contrary)}</dt><dd data-exact-contrary>${esc(finiteText(test, 'contrary', 'strongest_contrary', 'strongest_contrary_or_innocent_explanation') || '—')}</dd></div><div><dt>${esc(copy.competentOrgan)}</dt><dd data-exact-competent-organ>${esc(organ.candidate || '—')}<code>${esc(organ.status || 'STATUS_NOT_MODELLED')}</code></dd></div><div><dt>${esc(copy.ifConfirmed)}</dt><dd data-exact-if-confirmed>${esc(finiteText(test, 'if_confirmed') || '—')}</dd></div><div><dt>${esc(copy.ifRefuted)}</dt><dd data-exact-if-refuted>${esc(finiteText(test, 'if_refuted') || '—')}</dd></div><div><dt>${esc(copy.directRelated)}</dt><dd><code>${related.direct.length}</code></dd></div><div><dt>${esc(copy.contextRelated)}</dt><dd><code>${related.context.length}</code></dd></div></dl><div class="pdim-exact-decision-actions"><button type="button" data-trace-id="${esc(masterId)}">${esc(copy.openTrace)}</button><a href="#isolation-test=${encodeURIComponent(masterId)}">${esc(copy.openIsolation)}</a><a href="${esc(`${registerRoute}#record-${encodeURIComponent(masterId)}`)}">${esc(copy.openRegisterRecord)}</a></div></details></li>`;
+    }).join('');
+    return `<section class="pdim-exact-decision-register" data-exact-decision-register data-exact-count="${dispositions.length}" data-audited-count="${auditedCount}" data-shared-proposition-count="${sharedCount}"><header><div><p class="pdim-finite-kicker">${esc(copy.exactDecisionRegister)}</p><h2>${auditedCount}/${dispositions.length}</h2><p>${esc(copy.exactDecisionRegisterLead)}</p><p class="pdim-warning">${esc(copy.exactDecisionRegisterBoundary)}</p></div><div class="pdim-finite-model-status" data-model-status="${auditedCount === dispositions.length ? 'AUDITED' : 'INCOMPLETE'}"><span>${sharedCount}/${dispositions.length} ${esc(copy.sharedPropositionCoverage)}</span><code>${auditedCount === dispositions.length ? 'AUDITED' : 'INCOMPLETE'}</code></div></header><ol>${entries}</ol></section>`;
+  }
+
+  function renderPrism(root, prism, state, interlinks, byId) {
     const body = root.querySelector('[data-view-body]');
     const props = sortedProps(prism, state.audience);
     body.innerHTML = `
       <section class="pdim-prism-head"><div><p class="pdim-note">${esc(copy.matrixLead)}</p><p><strong>${esc(audienceQuestion(prism, state))}</strong></p><p>${esc(audiencePath(prism, state))}</p></div>${audienceControl(prism, state)}</section>
       <div class="pdim-prism-table-wrap"><table class="pdim-prism-table"><caption>${esc(copy.matrixCaption)}</caption><thead><tr><th scope="col">${copy.proposition}</th>${prism.lanes.map((lane) => `<th scope="col">${esc(laneLabel(lane))}</th>`).join('')}</tr></thead><tbody>${props.map((prop) => `<tr><th scope="row"><span>${esc(propPeriod(prop))}</span><strong>${esc(propTitle(prop))}</strong><small>${esc(evidenceStatusLabel(prism, prop.source_status || ''))}</small></th>${prism.lanes.map((lane) => { const cell = prop.cells[lane.id]; const aria = `${propTitle(prop)} · ${laneLabel(lane)} · ${statusLabel(prism, cell.status)} · ${treatmentLabel(prism, cell.treatment)}`; return `<td><button type="button" class="pdim-prism-cell" aria-label="${esc(aria)}" data-prism-status="${esc(cell.status)}" data-prism-prop="${esc(prop.id)}" data-prism-lane="${esc(lane.id)}"><span>${esc(statusLabel(prism, cell.status))}</span><small>${esc(treatmentLabel(prism, cell.treatment))}</small></button></td>`; }).join('')}</tr>`).join('')}</tbody></table></div>
       <div class="pdim-prism-legend">${Object.entries(prism.statuses).map(([status, meta]) => `<span data-prism-status="${esc(status)}"><b></b>${esc(localized(meta, ''))}</span>`).join('')}</div>
-      <div class="pdim-prism-detail" data-prism-detail aria-live="polite" tabindex="-1"><p>${esc(localized(prism.boundary, ''))}</p></div>`;
+      <div class="pdim-prism-detail" data-prism-detail aria-live="polite" tabindex="-1"><p>${esc(localized(prism.boundary, ''))}</p></div>
+      ${interlinks ? exactDecisionDependencyRegisterHtml(interlinks, byId) : ''}`;
   }
 
   function renderParallelLanes(root, prism, state) {
@@ -929,7 +1015,7 @@
       } else unresolved.push(`<li data-interlink-disposition data-classification="REGISTRY_NOT_AVAILABLE"><strong>${esc(copy.unresolvedReconnection)}</strong><p>${esc(copy.interlinkUnavailable)}</p></li>`);
       if (selected.matches.length) unresolved.push(`<li class="pdim-none"><strong>${esc(copy.selectedCoverage)}</strong><p>${esc(copy.prismCoveredSelected)}</p></li>`);
       const fileFiniteTest = finiteTestPanel(disposition, selected.record, byId, interlinks);
-      reconnection = `<section class="pdim-reconnection" data-isolation-reconnection aria-label="${esc(copy.selectedCoverage)}">
+      reconnection = `<section class="pdim-reconnection" data-isolation-reconnection aria-label="${esc(copy.selectedCoverage)}" aria-live="polite" aria-atomic="false">
         <div class="pdim-reconnection-identity">${card(selected.record, false)}<div><p><strong>${esc(copy.selectedCoverage)}:</strong> ${esc(selected.matches.length ? copy.prismCoordinate : copy.noPrismCoordinate)}</p><a class="pdim-record-link" href="${esc(`${registerRoute}#record-${encodeURIComponent(selected.id)}`)}">${esc(copy.openRegisterRecord)} →</a></div></div>
         ${fileFiniteTest}
         <div class="pdim-reconnection-grid">
@@ -944,7 +1030,7 @@
       ${reconnection}
       ${mini}
       <div class="pdim-isolation-grid"><section><h2>${selected ? copy.visibleAlone : copy.fullCorpus}</h2><ul>${selected ? (direct.length ? direct.map(item).join('') : `<li class="pdim-none">${copy.noVisible}</li>`) : `<li><strong>${props.length} ${copy.proposition.toLowerCase()}</strong><p>${esc(localized(prism.boundary, ''))}</p></li>`}</ul></section><section><h2>${copy.disappears}</h2><ul>${selected ? (outside.length ? outside.map(item).join('') : `<li class="pdim-none">${copy.noOutside}</li>`) : `<li class="pdim-none">${copy.noOutside}</li>`}</ul></section></div>
-      <div class="pdim-prism-detail" data-prism-detail aria-live="polite" tabindex="-1"><p>${esc(localized(prism.boundary, ''))}</p></div>`;
+      <div class="pdim-prism-detail" data-prism-detail tabindex="-1"><p>${esc(localized(prism.boundary, ''))}</p></div>`;
   }
 
   async function init() {
@@ -1056,7 +1142,7 @@
           const body = root.querySelector('[data-view-body]');
           body.innerHTML = `<div class="pdim-picker"><label>${copy.trace}<select data-trace-select><option value="">—</option>${rows.slice().sort((a,b)=>labelFor(a).localeCompare(labelFor(b))).map((r)=>`<option value="${esc(r.Master_ID)}"${state.traceId === r.Master_ID ? ' selected' : ''}>${esc(r.Master_ID)} · ${esc(labelFor(r))}</option>`).join('')}</select></label></div>`;
           if (state.traceId && byId.has(state.traceId)) renderTrace(root, state.traceId, byId, prism, interlinks, fiscaliaByMasterId, communityAuthorityByMasterId);
-        } else if (view === 'prism' && prism) renderPrism(root, prism, state);
+        } else if (view === 'prism' && prism) renderPrism(root, prism, state, interlinks, byId);
         else if (view === 'lanes' && prism) renderParallelLanes(root, prism, state);
         else if (view === 'isolation' && prism && interlinks) renderIsolation(root, prism, interlinks, state, byId, rows);
         else renderMap(root, rows, filters);

@@ -79,6 +79,83 @@ REQUIRED = [
     "publication-manifests/case-prism-substantive-gap-closure-20260831.json",
     "docs/deletion-audits/2026-08-31-case-prism-substantive-gap-closure-continuity.md",
 ]
+
+# The institutional-reader audit is intentionally an identified-route
+# denominator, not a claim that every historical narrative page has a single
+# proceeding mapping.  Exact routes use only existing controlled Master IDs;
+# multi-file pages remain generic to avoid fabricating a docket connection.
+INSTITUTIONAL_MULTI_FILE_ROUTES = (
+    "en/cgpj-public-prosecution-routing-update-20-august-2026/index.html",
+    "en/credit-classification-control-art-93-97-310/index.html",
+    "en/insolvency-administrator-credit-to-title-gatekeeper/index.html",
+    "en/insolvency-administrator-loyalty-breakpoint/index.html",
+    "en/insolvency-administrator-security-request-sun-park-27-february-2018/index.html",
+    "en/insolvency-classification-parallel-lives/hearing-evidence-witnesses/index.html",
+    "en/insolvency-classification-parallel-lives/hearing-evidence-witnesses/verification-requests/index.html",
+    "en/insolvency-classification-parallel-lives/prior-judicial-knowledge-rescue/index.html",
+    "en/ona-hotels-insolvency-exit-36-2012/carlos-sanz-insolvency-administrator/index.html",
+    "en/open-letter-public-prosecution-service/addressees.html",
+    "en/open-letter-public-prosecution-service/index.html",
+    "en/prosecutorial-professional-evidence-pwc-grant-thornton-rsm/index.html",
+    "es/actualizacion-cgpj-fiscalia-20-agosto-2026/index.html",
+    "es/administrador-concursal-puerta-credito-titulo/index.html",
+    "es/administrador-concursal-punto-quiebre-lealtad/index.html",
+    "es/calificacion-concurso-36-2012-vidas-paralelas/conocimiento-previo-rescate/index.html",
+    "es/calificacion-concurso-36-2012-vidas-paralelas/vista-prueba-testigos/index.html",
+    "es/calificacion-concurso-36-2012-vidas-paralelas/vista-prueba-testigos/solicitudes-verificacion/index.html",
+    "es/carta-abierta-ministerio-fiscal/destinatarios.html",
+    "es/carta-abierta-ministerio-fiscal/index.html",
+    "es/control-clasificacion-credito-art-93-97-310/index.html",
+    "es/fiscalia-evidencia-profesional-pwc-grant-thornton-rsm/index.html",
+    "es/ona-hotels-salida-concurso-36-2012/carlos-sanz-administrador-concursal/index.html",
+    "es/solicitud-seguridad-administracion-concursal-sun-park-27-febrero-2018/index.html",
+)
+INSTITUTIONAL_EXACT_ROUTE_IDS = {
+    "en/fiscalia-tenerife-eg95-2026/index.html": ("TF-FIS-008",),
+    "en/insolvency-classification-criminal-misuse-thesis/index.html": ("GC-APP-004",),
+    "en/prosecution-di273-2013-complaint-gil-patricia/index.html": ("GC-FIS-011",),
+    "en/public-prosecution-745-parallel-actions/index.html": ("NAT-FIS-004",),
+    "en/public-prosecution-inspection-exp-gub-745-2026/action-diary-29-august-2026.html": ("NAT-FIS-004",),
+    "en/public-prosecution-inspection-exp-gub-745-2026/continuity-errors-omissions-31-august-2026.html": ("NAT-FIS-004",),
+    "en/public-prosecution-inspection-exp-gub-745-2026/index.html": ("NAT-FIS-004",),
+    "en/public-prosecution-inspection-exp-gub-745-2026/open-prosecution-transparency-31-august-2026.html": ("NAT-FIS-004",),
+    "en/public-prosecution-inspection-exp-gub-745-2026/response-package-29-august-2026.html": ("NAT-FIS-004",),
+    "en/public-prosecution-inspection-exp-gub-745-2026/visual-facsimile-31-august-2026.html": ("NAT-FIS-004",),
+    "es/fiscalia-745-acciones-paralelas/index.html": ("NAT-FIS-004",),
+    "es/fiscalia-di273-2013-querella-gil-patricia/index.html": ("GC-FIS-011",),
+    "es/fiscalia-inspeccion-exp-gub-745-2026/continuidad-errores-omisiones-31-agosto-2026.html": ("NAT-FIS-004",),
+    "es/fiscalia-inspeccion-exp-gub-745-2026/diario-actuaciones-29-agosto-2026.html": ("NAT-FIS-004",),
+    "es/fiscalia-inspeccion-exp-gub-745-2026/facsimil-visual-31-agosto-2026.html": ("NAT-FIS-004",),
+    "es/fiscalia-inspeccion-exp-gub-745-2026/index.html": ("NAT-FIS-004",),
+    "es/fiscalia-inspeccion-exp-gub-745-2026/paquete-respuesta-29-agosto-2026.html": ("NAT-FIS-004",),
+    "es/fiscalia-inspeccion-exp-gub-745-2026/persecucion-abierta-transparencia-31-agosto-2026.html": ("NAT-FIS-004",),
+    "es/fiscalia-tenerife-dp748/index.html": ("TF-CRI-003",),
+    "es/fiscalia-tenerife-eg95-2026/index.html": ("TF-FIS-008",),
+    "es/tesis-uso-criminal-procedimiento-calificacion/index.html": ("GC-APP-004",),
+}
+MATERIAL_DOSSIER_ROUTE_IDS = {
+    "en/arrecife-1103-2018-procedural-lineage/index.html": ("LZ-JUD-003", "LZ-APP-004"),
+    "es/arrecife-1103-2018-cadena-procesal/index.html": ("LZ-JUD-003", "LZ-APP-004"),
+    "en/dp-3205-2014-arrecife/index.html": ("LZ-JUD-043",),
+    "es/dp-3205-2014-arrecife/index.html": ("LZ-JUD-043",),
+    "en/rollo-1010-2018-order-804-2018/index.html": ("LZ-JUD-003", "LZ-APP-004"),
+    "es/rollo-1010-2018-auto-804-2018/index.html": ("LZ-JUD-003", "LZ-APP-004"),
+}
+INSTITUTIONAL_WORKFLOW_PATTERNS = (
+    "en/cgpj-public-prosecution-*/**", "en/credit-classification-control-*/**",
+    "en/fiscalia-*/**", "en/insolvency-administrator-*/**",
+    "en/insolvency-classification-*/**", "en/ona-hotels-insolvency-exit-36-2012/**",
+    "en/open-letter-public-prosecution-service/**", "en/prosecution-di273-2013-complaint-gil-patricia/**",
+    "en/prosecutorial-professional-evidence-*/**", "en/public-prosecution-*/**",
+    "es/actualizacion-cgpj-fiscalia-*/**", "es/administrador-concursal-*/**",
+    "es/calificacion-concurso-36-2012-vidas-paralelas/**", "es/carta-abierta-ministerio-fiscal/**",
+    "es/control-clasificacion-credito-*/**", "es/fiscalia-*/**",
+    "es/ona-hotels-salida-concurso-36-2012/**", "es/solicitud-seguridad-administracion-concursal-*/**",
+    "es/tesis-uso-criminal-procedimiento-calificacion/**",
+)
+REQUIRED.extend(INSTITUTIONAL_MULTI_FILE_ROUTES)
+REQUIRED.extend(INSTITUTIONAL_EXACT_ROUTE_IDS)
+REQUIRED.extend(MATERIAL_DOSSIER_ROUTE_IDS)
 errors: list[str] = []
 
 # Current canonical/public denominators after the 31-August Ministerio Fiscal
@@ -134,11 +211,29 @@ INSTITUTIONAL_RECEIPT_AXES = {
     "substantive_examination_status",
     "decision_use_status",
 }
-FISCALIA_MATRIX_AXES = INSTITUTIONAL_RECEIPT_AXES | {
+PUBLIC_RENDERER_RECEIPT_AXES = [
+    "transmission_status",
     "material_received_status",
     "referral_status",
+    "registration_status",
+    "file_incorporation_status",
+    "recipient_attribution_status",
+    "substantive_examination_status",
+    "decision_use_status",
     "cross_file_acknowledgement_status",
+]
+PUBLIC_RENDERER_AXIS_STATUS_LOCATIONS = {
+    "transmission_status": "receipt_knowledge.institutional_axes",
+    "material_received_status": "receipt_knowledge.institutional_axis_basis.status",
+    "referral_status": "receipt_knowledge.institutional_axis_basis.status",
+    "registration_status": "receipt_knowledge.institutional_axes",
+    "file_incorporation_status": "receipt_knowledge.institutional_axes",
+    "recipient_attribution_status": "receipt_knowledge.institutional_axes",
+    "substantive_examination_status": "receipt_knowledge.institutional_axes",
+    "decision_use_status": "receipt_knowledge.institutional_axes",
+    "cross_file_acknowledgement_status": "receipt_knowledge.root",
 }
+FISCALIA_MATRIX_AXES = set(PUBLIC_RENDERER_RECEIPT_AXES)
 EXPECTED_FISCALIA_MATRIX_REFERRAL_STATUS = {
     "LZ-FIS-007": "ROUTING_DOCUMENTED",
 }
@@ -554,6 +649,12 @@ if not errors:
     require(
         set(receipt_contract.get("institutional_axis_ids", []))
         == INSTITUTIONAL_RECEIPT_AXES
+        and receipt_contract.get("public_renderer_axis_ids")
+        == PUBLIC_RENDERER_RECEIPT_AXES
+        and receipt_contract.get("public_renderer_axis_status_locations")
+        == PUBLIC_RENDERER_AXIS_STATUS_LOCATIONS
+        and receipt_contract.get("public_renderer_axis_provenance_requirement")
+        == "FAIL_CLOSED_STATUS_BILINGUAL_BASIS_LIMITATION_AND_SOURCE"
         and receipt_contract.get("cross_file_acknowledgement_is_separate") is True
         and receipt_contract.get("institutional_axis_basis_required") is True
         and receipt_contract.get("positive_axis_source_field_rule")
@@ -572,7 +673,18 @@ if not errors:
         and receipt_contract.get("raw_matter_reference_join") == "PROHIBITED"
         and receipt_contract.get("boundary_en")
         and receipt_contract.get("boundary_es"),
-        "receipt/knowledge contract does not keep the six institutional axes and actor evidence separate",
+        "receipt/knowledge contract does not keep the six core axes, nine-axis public renderer and actor evidence separate",
+    )
+    require(
+        all(
+            token in receipt_contract.get("boundary_en", "")
+            for token in ("material received", "referral", "cross-file acknowledgement")
+        )
+        and all(
+            token in receipt_contract.get("boundary_es", "")
+            for token in ("material recibido", "remisión", "reconocimiento entre expedientes")
+        ),
+        "receipt/knowledge contract boundary does not enumerate all nine public institutional grades",
     )
     fiscalia_matrix_contract = interlinkability.get(
         "fiscalia_office_file_matrix_contract", {}
@@ -1657,13 +1769,23 @@ if not errors:
     )
     require(
         interlink_coverage.get("decision_dependency_exact_coverage")
-        == f"GAP_{CURRENT_CASE_PRISM_EXACT_COVERED}_OF_{CURRENT_PUBLIC_EXACT}",
-        "shared-proposition decision-dependency coverage is overstated",
+        == f"VERIFIED_{CURRENT_PUBLIC_EXACT}_OF_{CURRENT_PUBLIC_EXACT}",
+        "exact-file decision-dependency register coverage is incomplete",
     )
     require(
         interlink_coverage.get("decision_dependency_exact_coverage_scope")
+        == "PUBLIC_EXACT_FILE_FINITE_TEST_REGISTER",
+        "exact-file decision-dependency coverage has the wrong public scope",
+    )
+    require(
+        interlink_coverage.get("shared_case_prism_proposition_membership_coverage")
+        == f"GAP_{CURRENT_CASE_PRISM_EXACT_COVERED}_OF_{CURRENT_PUBLIC_EXACT}",
+        "shared-proposition membership gap is overstated or concealed",
+    )
+    require(
+        interlink_coverage.get("shared_case_prism_proposition_membership_scope")
         == "SHARED_CASE_PRISM_PROPOSITION_MEMBERSHIP_ONLY",
-        "shared Case Prism membership is conflated with exact-file actionability",
+        "shared proposition membership is conflated with exact-file actionability",
     )
     require(
         interlink_coverage.get("finite_test_family_counts")
@@ -2124,16 +2246,20 @@ if not errors:
         "case_prism_exact_proceeding_covered_denominator": len(prism_exact_covered_ids),
         "case_prism_exact_proceeding_uncovered_denominator": len(prism_exact_uncovered_ids),
         "decision_dependency_exact_coverage_status": (
+            f"VERIFIED_{CURRENT_PUBLIC_EXACT}_OF_{CURRENT_PUBLIC_EXACT}"
+        ),
+        "decision_dependency_exact_coverage_scope": "PUBLIC_EXACT_FILE_FINITE_TEST_REGISTER",
+        "shared_case_prism_proposition_membership_coverage_status": (
             f"GAP_{CURRENT_CASE_PRISM_EXACT_COVERED}_OF_{CURRENT_PUBLIC_EXACT}"
         ),
-        "decision_dependency_exact_coverage_scope": "SHARED_PROPOSITION_MATRIX_ONLY",
+        "shared_case_prism_proposition_membership_coverage_scope": "SHARED_PROPOSITION_MATRIX_ONLY",
         "cell_treatment_source_coverage_status": "GAP_PROPOSITION_LEVEL_SOURCES_ONLY",
         "fragmentation_selector_coverage_status": (
             f"VERIFIED_{CURRENT_PUBLIC_EXACT}_OF_{CURRENT_PUBLIC_EXACT}"
         ),
         "fragmentation_content_coverage_status": (
-            f"GAP_{CURRENT_CASE_PRISM_EXACT_COVERED}_OF_{CURRENT_PUBLIC_EXACT}"
-            "_WITH_CASE_PRISM_COORDINATE"
+            f"VERIFIED_{CURRENT_PUBLIC_EXACT}_OF_{CURRENT_PUBLIC_EXACT}"
+            "_EXACT_FILE_ISOLATION_AUDIT"
         ),
         "bilingual_specific_next_source_denominator": CURRENT_PUBLIC_EXACT,
         "bilingual_specific_next_source_coverage_status": (
@@ -2557,11 +2683,39 @@ if not errors:
         "data-institutional-receipt-treatment": "institutional receipt/treatment surface",
         "data-receipt-axis": "independent institutional axes",
         "data-${axis.key}-status": "per-axis status token",
+        "data-axis-status": "per-axis rendered status",
+        "data-axis-basis-status": "per-axis basis status",
+        "data-axis-basis-kind": "per-axis basis kind",
+        "data-receipt-axis-basis": "per-axis bilingual basis disclosure",
+        "data-receipt-axis-basis-kind-value": "per-axis basis-kind value",
+        "data-receipt-axis-basis-statement": "per-axis localized basis statement",
+        "data-receipt-axis-limitation": "per-axis localized limitation",
+        "data-receipt-axis-source-provenance": "per-axis source provenance value",
+        "const disclosureName = `${copy.axisBasis} · ${copy[axis.label]}`": "axis-specific finite disclosure name",
+        "aria-controls=\"${esc(disclosureContentId)}\"": "axis-scoped finite disclosure control",
+        "aria-live=\"polite\" aria-atomic=\"false\"": "selected-isolation live announcement",
+        "institutional_axis_basis": "nine-axis basis/provenance source",
+        "finiteAxisComplete": "nine-axis runtime completeness gate",
+        "canonicalLocation:'institutional_axes'": "six-core canonical status location",
+        "canonicalLocation:'basis_status'": "material/referral canonical status location",
+        "canonicalLocation:'receipt_root'": "cross-file canonical status location",
+        "model.canonicalStatusPresent": "canonical-location fail-closed gate",
+        "hasNineAxisProvenance": "nine-axis fail-closed finite-test status",
+        "finiteToken(basis.status) === model.token": "axis grade and basis-status equality",
+        "basis.basis_en": "English axis basis requirement",
+        "basis.basis_es": "Spanish axis basis requirement",
+        "basis.limitation_en": "English axis limitation requirement",
+        "basis.limitation_es": "Spanish axis limitation requirement",
+        "norm(basis.source.kind)": "axis provenance kind requirement",
+        "norm(basis.source.record_id)": "axis provenance record-ID requirement",
+        "provenanceLabel(source)": "per-axis source provenance",
         "data-receipt-event": "source-controlled institutional event",
         "data-actor-specific-knowledge": "separate actor-specific evidence surface",
         "data-personal-knowledge-status": "personal-knowledge evidence status",
+        "data-actor-receipt-status": "actor-specific receipt status",
         "data-actor-source-status": "actor-specific source status",
         "data-actor-profile": "actor/source profile",
+        "finiteToken(item.knowledge_status) || 'NOT_ESTABLISHED'": "fail-closed actor-profile knowledge status",
         "data-fiscalia-office-file-matrix": "Fiscalía cross-office/file matrix",
         "data-row-count": "Fiscalía matrix row denominator",
         "data-profiled-count": "Fiscalía matrix profiled-row denominator",
@@ -2569,13 +2723,21 @@ if not errors:
     }
     for token, label in renderer_tokens.items():
         require(token in js, f"renderer missing {label}")
+    require(
+        "finiteToken(item.knowledge_status || item.status" not in js
+        and "finiteToken(item.knowledge_status || item.evidence_status" not in js,
+        "generic actor profile/source status can still be relabelled as personal knowledge",
+    )
     for axis_key in (
         "transmission",
+        "material-received",
+        "referral",
         "registration",
         "file-incorporation",
         "recipient-attribution",
         "examination",
         "decision-use",
+        "cross-file-acknowledgement",
     ):
         require(
             f"key:'{axis_key}'" in js,
@@ -2587,6 +2749,33 @@ if not errors:
     require("toUpperCase() === 'TRUE'" in js, "exact isolation admits unverified objects")
     require("archive/PROCEEDINGS_MASTER_REGISTER.csv" not in js, "renderer still downloads the operational canonical CSV")
     require("parseCsv" not in js, "renderer still carries client-side canonical CSV parsing")
+    require(
+        "return finiteToken(actor && actor.source_status);" in js
+        and "norm(actor.boundary_en)" in js
+        and "norm(actor.boundary_es)" in js,
+        "renderer does not fail closed on the exact actor source token and bilingual actor boundary",
+    )
+    require(
+        "values.push(finiteActor" not in js,
+        "actor-specific source status can inflate the institutional positive-evidence denominator",
+    )
+    require(
+        "item.evidence_status) || actorStatus" not in js,
+        "actor profile can inherit source availability as personal knowledge",
+    )
+    require(
+        "<summary>${esc(copy.axisBasis)}</summary>" not in js,
+        "institutional-axis disclosures still use nine indistinguishable accessible names",
+    )
+    require(
+        all(token in js for token in (
+            "data-exact-decision-register",
+            "data-exact-decision-entry",
+            "data-exact-decision-dependency",
+            "data-shared-proposition-count",
+        )),
+        "public exact-file Decision-Dependency Register is incomplete",
+    )
     require("fallbackEdges" not in js, "renderer can infer a direct edge for a non-exact/unclassified node")
     require("if (cluster.context_type === 'CASE_PRISM_PROPOSITION')" in js and "linkedPrismPropIds.add(propositionId)" in js, "renderer does not bound a Case Prism cluster to its own proposition")
     require("['RECORDED_CONNECTION', 'SOURCE_CONTROLLED_CORRIDOR'].includes(cluster.context_type)" in js, "renderer does not reconnect both recorded Connections and source-controlled corridors")
@@ -2597,7 +2786,7 @@ if not errors:
     require('id="record-${esc(r.Master_ID)}"' in master_js, "Master Register lacks stable exact-ID row anchors")
     require("archive/PROCEEDINGS_MASTER_REGISTER.csv" not in master_js and "assets/data/proceedings-master-public-v1.json" in master_js, "Master Register still consumes the operational canonical CSV")
     require('role="tabpanel" aria-live=' not in js and 'data-proceedings-map="20260830" aria-live=' not in en + es, "nested broad live regions remain")
-    require(all(token in css for token in (".pdim-swimlane", ".pdim-isolation-map", ".pdim-dependency-grid", ":focus-visible", "prefers-reduced-motion")), "Prism CSS/accessibility contract incomplete")
+    require(all(token in css for token in (".pdim-swimlane", ".pdim-isolation-map", ".pdim-dependency-grid", ".pdim-exact-decision-register", ".pdim-exact-decision-entry>summary{min-height:44px", ":focus-visible", "prefers-reduced-motion", ".pdim-axis-basis summary{min-height:44px}", ".pdim-axis-basis code{white-space:normal;overflow-wrap:anywhere;word-break:break-word}")), "Prism CSS/accessibility contract incomplete")
     require("json.loads(SEED.read_text" in builder and "json.loads(TARGET.read_text" not in builder, "Case Prism builder is not independent of its generated target")
     require("archive/PROCEEDINGS_CASE_PRISM_V1_SEED_30AUG2026.json" in builder, "Case Prism builder seed path missing")
     require(all(field not in js for field in ("Primary_Source_Anchor", "Repo_Canonical_Source", "Notes")), "renderer exposes non-public raw source fields")
@@ -2617,9 +2806,99 @@ if not errors:
         require("#case-prism" in page and "#isolation-test" in page, f"{label} lacks Case Prism/isolation navigation")
         require("master-proceedings-register" in page or "registro-maestro-procedimientos" in page, f"{label} lacks Master Register navigation")
         require("public-authority-unitary-case-reconstruction" in page or "reconstruccion-unitaria-autoridades-publicas" in page, f"{label} lacks institutional clean-room navigation")
+
+    # The identified material-route denominator is deliberately governed as a
+    # closed set.  A route may either identify one controlled public record or
+    # remain explicitly multi-file; it may not acquire a docket merely because
+    # it sits beside a related narrative.
+    def institutional_navigation_blocks(page: str, marker: str) -> list[str]:
+        return [
+            match.group(0)
+            for match in re.finditer(
+                rf'<(section|div|p)[^>]*{re.escape(marker)}[^>]*>.*?</\1>',
+                page,
+                flags=re.IGNORECASE | re.DOTALL,
+            )
+        ]
+
+    def expected_route_tokens(path: str) -> tuple[str, str, str]:
+        if path.startswith("es/"):
+            return (
+                "reconstruccion-unitaria-autoridades-publicas",
+                "mapa-procedimientos/#case-prism",
+                "registro-maestro-procedimientos",
+            )
+        return (
+            "public-authority-unitary-case-reconstruction",
+            "proceedings-map/#case-prism",
+            "master-proceedings-register",
+        )
+
+    for path in INSTITUTIONAL_MULTI_FILE_ROUTES:
+        page = read(path)
+        blocks = institutional_navigation_blocks(page, 'data-institutional-navigation="material-route"')
+        require(len(blocks) == 1, f"{path} must have exactly one material-route navigation block")
+        if len(blocks) != 1:
+            continue
+        block = blocks[0]
+        clean, prism, master = expected_route_tokens(path)
+        require('data-navigation-scope="multi-file"' in block, f"{path} must remain explicitly multi-file")
+        require(all(token in block for token in (clean, prism, master)), f"{path} lacks neutral clean-room/Prism/Master navigation")
+        require('data-master-ids=' not in block, f"{path} invents a Master-ID mapping for a multi-file route")
+        require(
+            '#record-' not in block and '#trace-proceeding=' not in block and '#isolation-test=' not in block,
+            f"{path} invents exact Master/trace/isolation navigation for a multi-file route",
+        )
+
+    for path, expected_ids in INSTITUTIONAL_EXACT_ROUTE_IDS.items():
+        page = read(path)
+        blocks = institutional_navigation_blocks(page, 'data-institutional-navigation="material-route"')
+        require(len(blocks) == 1, f"{path} must have exactly one material-route navigation block")
+        if len(blocks) != 1:
+            continue
+        block = blocks[0]
+        clean, prism, master = expected_route_tokens(path)
+        expected_value = " ".join(expected_ids)
+        require('data-navigation-scope="exact-proceeding"' in block, f"{path} must declare exact-proceeding scope")
+        require(f'data-master-ids="{expected_value}"' in block, f"{path} has an unapproved exact Master-ID mapping")
+        require(set(expected_ids) <= exact_public_ids, f"{path} maps outside the public exact denominator")
+        require(all(token in block for token in (clean, prism, master)), f"{path} lacks neutral clean-room/Prism/Master navigation")
+        record_ids = set(re.findall(r'#record-([A-Z0-9-]+)', block))
+        trace_ids = set(re.findall(r'#trace-proceeding=([A-Z0-9-]+)', block))
+        isolation_ids = set(re.findall(r'#isolation-test=([A-Z0-9-]+)', block))
+        require(record_ids == set(expected_ids), f"{path} has unapproved Master row anchors: {sorted(record_ids)}")
+        require(trace_ids == set(expected_ids), f"{path} has unapproved trace anchors: {sorted(trace_ids)}")
+        require(isolation_ids == set(expected_ids), f"{path} has unapproved isolation anchors: {sorted(isolation_ids)}")
+        for master_id in expected_ids:
+            require(f'#record-{master_id}' in block, f"{path} lacks Master row anchor for {master_id}")
+            require(f'#trace-proceeding={master_id}' in block, f"{path} lacks exact trace link for {master_id}")
+            require(f'#isolation-test={master_id}' in block, f"{path} lacks exact isolation link for {master_id}")
+
+    for path, expected_ids in MATERIAL_DOSSIER_ROUTE_IDS.items():
+        page = read(path)
+        blocks = institutional_navigation_blocks(page, 'data-institutional-navigation="material-dossier"')
+        require(len(blocks) == 1, f"{path} must have exactly one material-dossier navigation block")
+        if len(blocks) != 1:
+            continue
+        block = blocks[0]
+        clean, prism, master = expected_route_tokens(path)
+        expected_value = " ".join(expected_ids)
+        require(f'data-master-ids="{expected_value}"' in block, f"{path} has an unapproved material-dossier Master-ID mapping")
+        require(set(expected_ids) <= exact_public_ids, f"{path} maps outside the public exact denominator")
+        require(all(token in block for token in (clean, prism, master)), f"{path} lacks neutral clean-room/Prism/Master navigation")
+        record_ids = set(re.findall(r'#record-([A-Z0-9-]+)', block))
+        trace_ids = set(re.findall(r'#trace-proceeding=([A-Z0-9-]+)', block))
+        isolation_ids = set(re.findall(r'#isolation-test=([A-Z0-9-]+)', block))
+        require(record_ids == set(expected_ids), f"{path} has unapproved material-dossier Master row anchors: {sorted(record_ids)}")
+        require(trace_ids == set(expected_ids), f"{path} has unapproved material-dossier trace anchors: {sorted(trace_ids)}")
+        require(isolation_ids == set(expected_ids), f"{path} has unapproved material-dossier isolation anchors: {sorted(isolation_ids)}")
+        for master_id in expected_ids:
+            require(f'#record-{master_id}' in block, f"{path} lacks Master row anchor for {master_id}")
+            require(f'#trace-proceeding={master_id}' in block, f"{path} lacks exact trace link for {master_id}")
+            require(f'#isolation-test={master_id}' in block, f"{path} lacks exact isolation link for {master_id}")
     require("#case-prism" in en and "#case-prism" in es, "Case Prism CTA fragment missing")
     require(all(f'id="{anchor}"' in en and f'id="{anchor}"' in es for anchor in ("parallel-lanes", "isolation-test")), "deep-link anchors missing")
-    require(all(f"proceedings-interconnectivity-map-20260830.{ext}?v=20260831d" in en and f"proceedings-interconnectivity-map-20260830.{ext}?v=20260831d" in es for ext in ("js", "css")), "Case Prism asset cache version not advanced to 20260831d")
+    require(all(f"proceedings-interconnectivity-map-20260830.{ext}?v=20260831e" in en and f"proceedings-interconnectivity-map-20260830.{ext}?v=20260831e" in es for ext in ("js", "css")), "Case Prism asset cache version not advanced to 20260831e")
 
     refs = ["RPL 2523/2025", "RPL 3304/2025", "RPL 3319/2025", "RPL 421/2026"]
     require(all(ref in institutional for ref in refs), "three-appellate-object correction missing")
@@ -2627,9 +2906,15 @@ if not errors:
     require("beginning → end" in gov and "end → beginning" in gov, "bidirectional governance missing")
     require("DIRECT PROCEDURAL EDGE" in gov and "CONTEXTUAL BRIDGE" in gov, "direct/context split missing")
     require("Fragmentation / atomisation audit" in gov, "fragmentation governance missing")
+    require("Public renderer parity is a hard implementation denominator" in gov, "public renderer parity governance missing")
+    require(all(token in gov for token in ("AUDITED", "INCOMPLETE", "For first-read institutional access")), "renderer-parity or first-read governance controls missing")
     require(all(word in ascan for word in ("Architecture", "Authority", "Attribution", "Audience", "Actionability")), "A-SCAN governance incomplete")
     require("does not prove that an organ knew" in ascan, "isolation boundary missing")
     require("procedural separateness" in anti.lower() and "patrimonial" in anti.lower(), "anti-fragmentation rule incomplete")
+    for pattern in INSTITUTIONAL_WORKFLOW_PATTERNS:
+        require(workflow.count(f"'{pattern}'") == 2, f"workflow must cover institutional route pattern on pull request and main push: {pattern}")
+    for path in MATERIAL_DOSSIER_ROUTE_IDS:
+        require(workflow.count(f"'{path}'") == 2, f"workflow must cover material dossier route on pull request and main push: {path}")
 
     for path in [
         "archive/PROCEEDINGS_ANTI_FRAGMENTATION_CONVERGENCE_RULE_30AUG2026.md",
@@ -2674,6 +2959,32 @@ if not errors:
     require("python3 scripts/build_proceedings_interlinkability_v1.py --check" in workflow, "workflow does not rebuild-check exact-proceeding interlinkability")
     smoke = read("scripts/smoke_proceedings_case_prism.mjs")
     require("#isolation-test=GC-APP-007" in smoke and "hashchange aggregate isolation" in smoke, "browser smoke does not reject/canonicalise aggregate isolation deep links")
+    for token, label in {
+        "delete entire axis basis": "whole-axis-basis deletion mutation",
+        "remove core canonical axis status": "core canonical-status deletion mutation",
+        "remove cross-file root status": "cross-file canonical-status deletion mutation",
+        "mismatch axis basis status": "axis-status mismatch mutation",
+        "remove axis basis kind": "basis-kind mutation",
+        "remove English axis basis": "English basis mutation",
+        "remove Spanish axis basis": "Spanish basis mutation",
+        "remove English axis limitation": "English limitation mutation",
+        "remove Spanish axis limitation": "Spanish limitation mutation",
+        "remove axis source kind": "source-kind mutation",
+        "remove axis source record ID": "source-record-ID mutation",
+        "remove actor receipt token": "actor-receipt mutation",
+        "remove actor knowledge token": "actor-knowledge mutation",
+        "remove actor source token": "actor-source mutation",
+        "remove English actor boundary": "English actor-boundary mutation",
+        "remove Spanish actor boundary": "Spanish actor-boundary mutation",
+        "MUTATION-ACTOR-WITHOUT-KNOWLEDGE-STATUS": "actor-profile/source-separation mutation",
+        "document.documentElement.scrollWidth": "390px open-disclosure document-overflow check",
+        "summaryMinHeight < 44": "44px institutional-axis disclosure target check",
+        "provenanceOverflowWrap": "mobile provenance wrapping check",
+        "document.activeElement?.matches('[data-isolation-id]')": "isolation-select focus-preservation check",
+        "summary.press('Enter')": "native disclosure Enter-key check",
+        "summary.press('Space')": "native disclosure Space-key check",
+    }.items():
+        require(token in smoke, f"browser smoke missing {label}")
 
 if errors:
     print("PROCEEDINGS INTERCONNECTIVITY MAP AUDIT: FAIL")
@@ -2700,7 +3011,11 @@ print(
     f"{CURRENT_PUBLIC_EXACT}/{CURRENT_PUBLIC_EXACT}; full-corpus restore available"
 )
 print(
-    "- decision-dependency / fragmentation content coverage: GAP — "
+    "- exact-file decision-dependency / fragmentation audit coverage: VERIFIED "
+    f"{CURRENT_PUBLIC_EXACT}/{CURRENT_PUBLIC_EXACT} through the public finite-test register and isolation controls"
+)
+print(
+    "- shared Case Prism proposition membership: GAP — "
     f"{CURRENT_CASE_PRISM_EXACT_COVERED}/{CURRENT_PUBLIC_EXACT} exact proceedings "
     f"covered; {CURRENT_CASE_PRISM_EXACT_UNCOVERED} without Case Prism coordinate"
 )

@@ -7,29 +7,72 @@ const routes = [
     outsideSelected: 'Outside the selected file', antiJoinder: 'joinder', nextSource: 'Next source needed', notExact: 'not an exact proceeding',
     auditBoundary: 'Audit coverage means', positiveEvidence: 'Separate positive evidence', receiptBoundary: 'RECEIVED ≠ INCORPORATED IN FILE ≠ EXAMINED ≠ USED IN A DECISION',
     actorBoundary: 'Institutional receipt does not by itself prove', noUnitaryAcknowledgement: 'No unitary acknowledgement has been located in the controlled corpus.', headlineFinite: '97 of 97', headlineForbidden: 'Every materially connected file',
+    basisDisclosure: 'Grade basis and limitation',
   },
   {
     lang: 'es', path: '/es/mapa-procedimientos/', contrary: 'Explicación / registro contrario', sourceScope: 'ruta de auditoría de la proposición',
     outsideSelected: 'Fuera del expediente seleccionado', antiJoinder: 'acumulación', nextSource: 'Siguiente fuente necesaria', notExact: 'no es un procedimiento exacto',
     auditBoundary: 'La cobertura de auditoría significa', positiveEvidence: 'Prueba positiva separada', receiptBoundary: 'RECIBIDO ≠ INCORPORADO AL EXPEDIENTE ≠ EXAMINADO ≠ UTILIZADO EN UNA DECISIÓN',
     actorBoundary: 'La recepción institucional no prueba por sí sola', noUnitaryAcknowledgement: 'No se ha localizado un reconocimiento unitario en el corpus controlado.', headlineFinite: '97 de 97', headlineForbidden: 'Todos los expedientes materialmente conectados',
+    basisDisclosure: 'Base y límite del grado',
   },
 ];
 
 const receiptAxisAttributes = [
   ['transmission', 'data-transmission-status', 'transmission_status'],
+  ['material-received', 'data-material-received-status', 'material_received_status'],
+  ['referral', 'data-referral-status', 'referral_status'],
   ['registration', 'data-registration-status', 'registration_status'],
   ['file-incorporation', 'data-file-incorporation-status', 'file_incorporation_status'],
   ['recipient-attribution', 'data-recipient-attribution-status', 'recipient_attribution_status'],
   ['examination', 'data-examination-status', 'substantive_examination_status'],
   ['decision-use', 'data-decision-use-status', 'decision_use_status'],
+  ['cross-file-acknowledgement', 'data-cross-file-acknowledgement-status', 'cross_file_acknowledgement_status'],
 ];
 
-const fiscaliaAxisFields = [
-  'transmission_status', 'material_received_status', 'referral_status', 'registration_status',
+const coreReceiptAxisFields = [
+  'transmission_status', 'registration_status',
   'file_incorporation_status', 'recipient_attribution_status', 'substantive_examination_status',
-  'decision_use_status', 'cross_file_acknowledgement_status',
+  'decision_use_status',
 ];
+
+const fiscaliaAxisFields = receiptAxisAttributes.map(([, , dataKey]) => dataKey);
+const rendererAxisStatusLocations = {
+  transmission_status: 'receipt_knowledge.institutional_axes',
+  material_received_status: 'receipt_knowledge.institutional_axis_basis.status',
+  referral_status: 'receipt_knowledge.institutional_axis_basis.status',
+  registration_status: 'receipt_knowledge.institutional_axes',
+  file_incorporation_status: 'receipt_knowledge.institutional_axes',
+  recipient_attribution_status: 'receipt_knowledge.institutional_axes',
+  substantive_examination_status: 'receipt_knowledge.institutional_axes',
+  decision_use_status: 'receipt_knowledge.institutional_axes',
+  cross_file_acknowledgement_status: 'receipt_knowledge.root',
+};
+
+function receiptAxisStatus(receipt, axisKey) {
+  if (axisKey === 'cross_file_acknowledgement_status') return receipt?.cross_file_acknowledgement_status || '';
+  return receipt?.institutional_axes?.[axisKey]
+    || receipt?.institutional_axis_basis?.[axisKey]?.status
+    || '';
+}
+
+function receiptAxisBasis(receipt, axisKey) {
+  return receipt?.institutional_axis_basis?.[axisKey] || null;
+}
+
+function sourceProvenanceStrings(source) {
+  return Object.values(source || {}).filter((value) => typeof value === 'string' && value);
+}
+
+function assertNineAxisData(receipt, masterId) {
+  assertSameValues(Object.keys(receipt.institutional_axes || {}), coreReceiptAxisFields, `${masterId}: six core institutional receipt axes`);
+  assertSameValues(Object.keys(receipt.institutional_axis_basis || {}), fiscaliaAxisFields, `${masterId}: nine institutional axis bases`);
+  for (const axisKey of fiscaliaAxisFields) {
+    const status = receiptAxisStatus(receipt, axisKey);
+    if (!status) throw new Error(`${masterId}: ${axisKey} has no controlled status`);
+    requireAxisBasis(receiptAxisBasis(receipt, axisKey), status, `${masterId}: ${axisKey}`);
+  }
+}
 
 const representativeFiniteIds = {
   directAndContext: 'LZ-TRA-027',
@@ -169,22 +212,7 @@ function assertFiniteTestData(masterId, disposition, interlinks) {
 
   const receipt = test.receipt_knowledge;
   if (!receipt?.classification || !receipt.institutional_axes || !receipt.actor_specific) throw new Error(`${masterId}: receipt/knowledge classification missing`);
-  const axisKeys = receiptAxisAttributes.map(([, , dataKey]) => dataKey);
-  assertSameValues(Object.keys(receipt.institutional_axes), axisKeys, `${masterId}: six institutional receipt axes`);
-  for (const axisKey of axisKeys) {
-    if (!receipt.institutional_axes[axisKey]) throw new Error(`${masterId}: ${axisKey} has no controlled status`);
-  }
-  assertSameValues(Object.keys(receipt.institutional_axis_basis || {}), fiscaliaAxisFields, `${masterId}: nine institutional axis bases`);
-  for (const axisKey of fiscaliaAxisFields) {
-    const status = axisKey === 'material_received_status'
-      ? receipt.institutional_axis_basis[axisKey]?.status
-      : axisKey === 'referral_status'
-        ? receipt.institutional_axis_basis[axisKey]?.status
-        : axisKey === 'cross_file_acknowledgement_status'
-          ? receipt.cross_file_acknowledgement_status
-          : receipt.institutional_axes[axisKey];
-    requireAxisBasis(receipt.institutional_axis_basis[axisKey], status, `${masterId}: ${axisKey}`);
-  }
+  assertNineAxisData(receipt, masterId);
   if (!receipt.actor_specific.receipt_status || !receipt.actor_specific.knowledge_status || !receipt.actor_specific.source_status) {
     throw new Error(`${masterId}: actor-specific receipt/knowledge boundary is incomplete`);
   }
@@ -194,7 +222,7 @@ function assertFiniteTestData(masterId, disposition, interlinks) {
   requireBilingual({en: receipt.actor_specific.boundary_en, es: receipt.actor_specific.boundary_es}, `${masterId}: actor-specific boundary`);
   requireBilingual({en: receipt.limitations_en, es: receipt.limitations_es}, `${masterId}: institutional receipt limitation`);
   return {
-    receiptPositive: Object.values(receipt.institutional_axes).some(isPositiveReceiptStatus),
+    receiptPositive: fiscaliaAxisFields.map((axisKey) => receiptAxisStatus(receipt, axisKey)).some(isPositiveReceiptStatus),
     actorPositive: isPositiveReceiptStatus(receipt.actor_specific.source_status),
   };
 }
@@ -222,14 +250,93 @@ async function assertFinitePanel(page, rootSelector, masterId, route, dispositio
   const actorReceiptStatus = await panel.locator('[data-actor-specific-knowledge]').getAttribute('data-actor-receipt-status');
   const actorSourceStatus = await panel.locator('[data-actor-specific-knowledge]').getAttribute('data-actor-source-status');
   const crossFileStatus = await panel.locator('[data-cross-file-acknowledgement-status]').getAttribute('data-cross-file-acknowledgement-status');
+  const receipt = disposition.finite_test.receipt_knowledge;
+  const actor = receipt.actor_specific;
   if (!sourceStatus || !organStatus || !actorStatus || !actorReceiptStatus || !actorSourceStatus || !crossFileStatus) {
     throw new Error(`${route.lang}/${masterId}: finite panel data-status fields are incomplete`);
   }
-  for (const [axis, attribute] of receiptAxisAttributes) {
+  if (actorStatus !== actor.knowledge_status
+      || actorReceiptStatus !== actor.receipt_status
+      || actorSourceStatus !== actor.source_status) {
+    throw new Error(`${route.lang}/${masterId}: actor receipt, knowledge and source statuses were collapsed or substituted`);
+  }
+  const actorSurfaceText = await panel.locator('[data-actor-specific-knowledge]').innerText();
+  if (!actorSurfaceText.includes(actor[`boundary_${route.lang}`])) {
+    throw new Error(`${route.lang}/${masterId}: actor-specific bilingual boundary is not rendered`);
+  }
+  const disclosureIds = [];
+  const disclosureNames = [];
+  const normalizeDisclosureText = (value) => (value || '').replace(/\s+/g, ' ').trim();
+  for (const [axis, attribute, axisKey] of receiptAxisAttributes) {
     const element = panel.locator(`[data-receipt-axis="${axis}"]`);
-    if (await element.count() !== 1 || !(await element.getAttribute(attribute))) {
-      throw new Error(`${route.lang}/${masterId}: receipt axis ${axis}/${attribute} missing`);
+    const basis = receiptAxisBasis(receipt, axisKey);
+    const expectedStatus = receiptAxisStatus(receipt, axisKey);
+    if (await element.count() !== 1
+        || await element.getAttribute(attribute) !== expectedStatus
+        || await element.getAttribute('data-axis-status') !== expectedStatus
+        || await element.getAttribute('data-axis-basis-status') !== basis?.status
+        || await element.getAttribute('data-axis-basis-kind') !== basis?.basis_kind) {
+      throw new Error(`${route.lang}/${masterId}: receipt axis ${axis}/${attribute} status or basis attributes diverge`);
     }
+    const basisPanel = element.locator(`[data-receipt-axis-basis="${axis}"]`);
+    if (await basisPanel.count() !== 1) {
+      throw new Error(`${route.lang}/${masterId}: receipt axis ${axis} omits its basis disclosure`);
+    }
+    if (await basisPanel.evaluate((element) => element.tagName) !== 'DETAILS') {
+      throw new Error(`${route.lang}/${masterId}: receipt axis ${axis} disclosure is not a native details control`);
+    }
+    const summary = basisPanel.locator(':scope > summary');
+    const content = basisPanel.locator(':scope > dl');
+    const disclosureId = await basisPanel.getAttribute('id');
+    const disclosureControl = await summary.getAttribute('aria-controls');
+    const disclosureContentId = await content.getAttribute('id');
+    const axisLabel = normalizeDisclosureText(await element.locator(':scope > dt').textContent());
+    const disclosureName = normalizeDisclosureText(await summary.textContent());
+    const summaryCount = await summary.count();
+    const contentCount = await content.count();
+    const expectedDisclosureName = `${route.basisDisclosure} · ${axisLabel}`;
+    if (summaryCount !== 1 || contentCount !== 1 || !disclosureId
+        || disclosureControl !== `${disclosureId}-content` || disclosureContentId !== disclosureControl
+        || disclosureName !== expectedDisclosureName) {
+      throw new Error(`${route.lang}/${masterId}: receipt axis ${axis} lacks a unique axis-scoped disclosure name/control (${JSON.stringify({disclosureId, summaryCount, contentCount, disclosureControl, disclosureContentId, disclosureName, expectedDisclosureName})})`);
+    }
+    disclosureIds.push(disclosureId);
+    disclosureNames.push(disclosureName);
+    if (masterId === representativeFiniteIds.fiscaliaProfile && rootSelector === '[data-isolation-reconnection]') {
+      await summary.focus();
+      if (!await summary.evaluate((element) => document.activeElement === element)) {
+        throw new Error(`${route.lang}/${masterId}: receipt axis ${axis} summary is not keyboard focusable`);
+      }
+      await summary.press('Enter');
+      if (!await basisPanel.evaluate((element) => element.open)) {
+        throw new Error(`${route.lang}/${masterId}: receipt axis ${axis} did not open with Enter`);
+      }
+      await summary.press('Space');
+      if (await basisPanel.evaluate((element) => element.open)) {
+        throw new Error(`${route.lang}/${masterId}: receipt axis ${axis} did not close with Space`);
+      }
+    }
+    const kindValue = basisPanel.locator('[data-receipt-axis-basis-kind-value]');
+    const statement = basisPanel.locator('[data-receipt-axis-basis-statement]');
+    const limitation = basisPanel.locator('[data-receipt-axis-limitation]');
+    const provenance = basisPanel.locator('[data-receipt-axis-source-provenance]');
+    if (await kindValue.count() !== 1 || normalizeDisclosureText(await kindValue.textContent()) !== basis?.basis_kind
+        || await statement.count() !== 1 || normalizeDisclosureText(await statement.textContent()) !== normalizeDisclosureText(basis?.[`basis_${route.lang}`])
+        || await limitation.count() !== 1 || normalizeDisclosureText(await limitation.textContent()) !== normalizeDisclosureText(basis?.[`limitation_${route.lang}`])
+        || await provenance.count() !== 1) {
+      throw new Error(`${route.lang}/${masterId}: receipt axis ${axis} omits its exact localized basis or limitation fields`);
+    }
+    const provenanceText = await provenance.textContent();
+    for (const expected of sourceProvenanceStrings(basis?.source)) {
+      if (!provenanceText.includes(expected)) {
+        throw new Error(`${route.lang}/${masterId}: receipt axis ${axis} omits source provenance ${expected}`);
+      }
+    }
+  }
+  if (disclosureIds.length !== receiptAxisAttributes.length
+      || new Set(disclosureIds).size !== receiptAxisAttributes.length
+      || new Set(disclosureNames).size !== receiptAxisAttributes.length) {
+    throw new Error(`${route.lang}/${masterId}: nine receipt disclosures do not have unique axis-scoped IDs and names`);
   }
   const panelText = await panel.innerText();
   for (const boundary of [route.auditBoundary, route.receiptBoundary, route.actorBoundary]) {
@@ -329,6 +436,114 @@ async function assertDeepLinkVisible(page, hash, label) {
   }
 }
 
+async function assertActorSourceMutationDoesNotUpgradeKnowledge(browser, interlinks) {
+  const mutationId = 'CAN-OMB-001';
+  const mutated = structuredClone(interlinks);
+  const disposition = (mutated.node_dispositions || []).find((item) => item.master_id === mutationId);
+  const actor = disposition?.finite_test?.receipt_knowledge?.actor_specific;
+  if (!actor) throw new Error(`${mutationId}: actor-source mutation fixture is unavailable`);
+  actor.source_status = 'DOCUMENTED';
+  actor.receipt_status = 'NOT_ESTABLISHED';
+  actor.knowledge_status = 'NOT_ESTABLISHED';
+  actor.actor_ids = [{
+    actor_id: 'MUTATION-ACTOR-WITHOUT-KNOWLEDGE-STATUS',
+    status: 'DOCUMENTED',
+    evidence_status: 'DOCUMENTED',
+  }];
+
+  const page = await browser.newPage({ viewport: { width: 1280, height: 900 } });
+  const consoleErrors = [];
+  page.on('console', (message) => { if (message.type() === 'error') consoleErrors.push(message.text()); });
+  page.on('pageerror', (error) => consoleErrors.push(error.message));
+  await page.route('**/assets/data/proceedings-interlinkability-v1.json', (route) => route.fulfill({
+    status: 200,
+    contentType: 'application/json',
+    body: JSON.stringify(mutated),
+  }));
+  const response = await page.goto(`${base}/en/proceedings-map/#isolation-test=${mutationId}`, { waitUntil: 'networkidle' });
+  if (!response?.ok()) throw new Error(`actor-source mutation route failed with ${response?.status()}`);
+  await page.waitForSelector(`[data-isolation-reconnection] [data-finite-test-panel][data-master-id="${mutationId}"][data-finite-test-status="AUDITED"]`);
+  const finiteCoverage = page.locator('.pdim-finite-coverage[data-finite-test-coverage]');
+  if (await finiteCoverage.getAttribute('data-positive-evidence-count') !== '9') {
+    throw new Error('actor source DOCUMENTED incorrectly increased the institutional positive-evidence denominator');
+  }
+  const actorSurface = page.locator(`[data-finite-test-panel][data-master-id="${mutationId}"] [data-actor-specific-knowledge]`);
+  if (await actorSurface.getAttribute('data-actor-source-status') !== 'DOCUMENTED'
+      || await actorSurface.getAttribute('data-actor-receipt-status') !== 'NOT_ESTABLISHED'
+      || await actorSurface.getAttribute('data-personal-knowledge-status') !== 'NOT_ESTABLISHED') {
+    throw new Error('actor source, receipt and knowledge mutation statuses were collapsed');
+  }
+  const actorProfile = actorSurface.locator('[data-actor-profile="MUTATION-ACTOR-WITHOUT-KNOWLEDGE-STATUS"]');
+  if (await actorProfile.count() !== 1
+      || await actorProfile.getAttribute('data-personal-knowledge-status') !== 'NOT_ESTABLISHED') {
+    throw new Error('actor profile without an explicit knowledge grade inherited source availability as personal knowledge');
+  }
+  if (consoleErrors.length) throw new Error(`actor-source mutation console errors: ${consoleErrors.join(' | ')}`);
+  await page.close();
+}
+
+async function assertFiniteTestFailClosedMutations(browser, interlinks) {
+  const mutationId = 'CAN-OMB-001';
+  const mutations = [
+    ['delete entire axis basis', ({basisMap}) => { delete basisMap.transmission_status; }],
+    ['remove core canonical axis status', ({receipt}) => { delete receipt.institutional_axes.transmission_status; }],
+    ['remove cross-file root status', ({receipt}) => { delete receipt.cross_file_acknowledgement_status; }],
+    ['mismatch axis basis status', ({basis}) => { basis.status = basis.status === 'NOT_LOCATED' ? 'DOCUMENTED' : 'NOT_LOCATED'; }],
+    ['remove axis basis kind', ({basis}) => { delete basis.basis_kind; }],
+    ['remove English axis basis', ({basis}) => { delete basis.basis_en; }],
+    ['remove Spanish axis basis', ({basis}) => { delete basis.basis_es; }],
+    ['remove English axis limitation', ({basis}) => { delete basis.limitation_en; }],
+    ['remove Spanish axis limitation', ({basis}) => { delete basis.limitation_es; }],
+    ['remove axis source kind', ({source}) => { delete source.kind; }],
+    ['remove axis source record ID', ({source}) => { delete source.record_id; }],
+    ['remove actor receipt token', ({actor}) => { delete actor.receipt_status; }],
+    ['remove actor knowledge token', ({actor}) => { delete actor.knowledge_status; }],
+    ['remove actor source token', ({actor}) => { delete actor.source_status; }],
+    ['remove English actor boundary', ({actor}) => { delete actor.boundary_en; }],
+    ['remove Spanish actor boundary', ({actor}) => { delete actor.boundary_es; }],
+  ];
+  for (const [label, mutate] of mutations) {
+    const mutated = structuredClone(interlinks);
+    const disposition = (mutated.node_dispositions || []).find((item) => item.master_id === mutationId);
+    const receipt = disposition?.finite_test?.receipt_knowledge;
+    const basisMap = receipt?.institutional_axis_basis;
+    const basis = basisMap?.transmission_status;
+    const source = basis?.source;
+    const actor = receipt?.actor_specific;
+    if (!basisMap || !receipt?.institutional_axes?.transmission_status || !receipt?.cross_file_acknowledgement_status
+        || !basis?.basis_kind || !basis?.basis_en || !basis?.basis_es
+        || !basis?.limitation_en || !basis?.limitation_es || !source?.kind || !source?.record_id
+        || !actor?.receipt_status || !actor?.knowledge_status || !actor?.source_status
+        || !actor?.boundary_en || !actor?.boundary_es) {
+      throw new Error(`${mutationId}: fail-closed mutation fixture is incomplete`);
+    }
+    mutate({receipt, basisMap, basis, source, actor});
+
+    const page = await browser.newPage({ viewport: { width: 1280, height: 900 } });
+    const consoleErrors = [];
+    page.on('console', (message) => { if (message.type() === 'error') consoleErrors.push(message.text()); });
+    page.on('pageerror', (error) => consoleErrors.push(error.message));
+    await page.route('**/assets/data/proceedings-interlinkability-v1.json', (route) => route.fulfill({
+      status: 200,
+      contentType: 'application/json',
+      body: JSON.stringify(mutated),
+    }));
+    const response = await page.goto(`${base}/en/proceedings-map/#isolation-test=${mutationId}`, { waitUntil: 'networkidle' });
+    if (!response?.ok()) throw new Error(`${label} mutation route failed with ${response?.status()}`);
+    await page.waitForSelector(`[data-isolation-reconnection] [data-finite-test-panel][data-master-id="${mutationId}"][data-finite-test-status="INCOMPLETE"]`);
+    const finiteCoverage = page.locator('.pdim-finite-coverage[data-finite-test-coverage]');
+    if (await finiteCoverage.getAttribute('data-audit-count') !== '96') {
+      throw new Error(`${label} did not reduce the audited finite-test denominator to 96/97`);
+    }
+    const option = page.locator(`[data-isolation-id] option[value="${mutationId}"]`);
+    if (await option.getAttribute('data-finite-test-coverage') !== 'unavailable') {
+      throw new Error(`${label} remained publicly marked audited`);
+    }
+    if (consoleErrors.length) throw new Error(`${label} mutation console errors: ${consoleErrors.join(' | ')}`);
+    await page.close();
+  }
+}
+
 const browser = await chromium.launch({ headless: true });
 try {
   const dataContext = await browser.newContext();
@@ -381,10 +596,17 @@ try {
   requireBilingual({en: finiteContract.boundary_en, es: finiteContract.boundary_es}, 'finite-test contract boundary');
 
   const receiptContract = interlinks.receipt_knowledge_contract || {};
-  const receiptAxisKeys = receiptAxisAttributes.map(([, , dataKey]) => dataKey);
-  assertSameValues(receiptContract.institutional_axis_ids || [], receiptAxisKeys, 'receipt/knowledge six-axis contract');
+  assertSameValues(receiptContract.institutional_axis_ids || [], coreReceiptAxisFields, 'receipt/knowledge six-axis core contract');
+  assertSameValues(receiptContract.public_renderer_axis_ids || [], fiscaliaAxisFields, 'receipt/knowledge nine-axis public renderer contract');
+  assertSameValues(Object.keys(receiptContract.public_renderer_axis_status_locations || {}), fiscaliaAxisFields, 'receipt/knowledge nine-axis canonical status locations');
+  for (const [axisKey, location] of Object.entries(rendererAxisStatusLocations)) {
+    if (receiptContract.public_renderer_axis_status_locations?.[axisKey] !== location) {
+      throw new Error(`receipt/knowledge ${axisKey} canonical status location is not fail-closed`);
+    }
+  }
   if (receiptContract.cross_file_acknowledgement_is_separate !== true
       || receiptContract.institutional_axis_basis_required !== true
+      || receiptContract.public_renderer_axis_provenance_requirement !== 'FAIL_CLOSED_STATUS_BILINGUAL_BASIS_LIMITATION_AND_SOURCE'
       || receiptContract.positive_axis_source_field_rule !== 'EXACT_EPISODE_FIELD_MUST_SUPPORT_AXIS_GRADE'
       || !Array.isArray(receiptContract.institutional_axis_basis_fields)
       || receiptContract.actor_specific_status_is_separate !== true
@@ -396,6 +618,12 @@ try {
     'status', 'basis_kind', 'basis_en', 'basis_es', 'limitation_en', 'limitation_es', 'source',
   ], 'receipt/knowledge axis-basis fields');
   requireBilingual({en: receiptContract.boundary_en, es: receiptContract.boundary_es}, 'receipt/knowledge contract boundary');
+  for (const token of ['material received', 'referral', 'cross-file acknowledgement']) {
+    if (!receiptContract.boundary_en.includes(token)) throw new Error(`receipt/knowledge English boundary omits ${token}`);
+  }
+  for (const token of ['material recibido', 'remisión', 'reconocimiento entre expedientes']) {
+    if (!receiptContract.boundary_es.includes(token)) throw new Error(`receipt/knowledge Spanish boundary omits ${token}`);
+  }
   const receiptStatusCatalog = interlinks.receipt_knowledge_status_catalog || {};
   for (const [status, label] of Object.entries(receiptStatusCatalog)) requireBilingual(label, `receipt/knowledge status ${status}`);
 
@@ -408,7 +636,7 @@ try {
       throw new Error(`${masterId}: finite-test family ${disposition.finite_test.family_template_id} is not catalogued`);
     }
     const receipt = disposition.finite_test.receipt_knowledge;
-    for (const status of [...Object.values(receipt.institutional_axes), receipt.cross_file_acknowledgement_status,
+    for (const status of [...fiscaliaAxisFields.map((axisKey) => receiptAxisStatus(receipt, axisKey)),
       receipt.actor_specific.receipt_status, receipt.actor_specific.knowledge_status]) {
       if (!receiptStatusCatalog[status]) throw new Error(`${masterId}: receipt/knowledge status ${status} is not catalogued`);
     }
@@ -446,12 +674,8 @@ try {
   if (new Set(fiscaliaProfiles.map((profile) => profile.episode_id)).size !== 9) throw new Error('Fiscalía response episode IDs are not unique');
   for (const profile of fiscaliaProfiles) {
     if (!exactIdSet.has(profile.master_id)) throw new Error(`${profile.profile_id}: episode profile is not mapped to an exact public Master ID`);
-    assertSameValues(Object.keys(profile.institutional_axes || {}), receiptAxisKeys, `${profile.profile_id}: six institutional axes`);
-    assertSameValues(Object.keys(profile.institutional_axis_basis || {}), fiscaliaAxisFields, `${profile.profile_id}: nine institutional axis bases`);
-    for (const axisKey of fiscaliaAxisFields) {
-      requireAxisBasis(profile.institutional_axis_basis[axisKey], profile.institutional_axis_basis[axisKey].status, `${profile.profile_id}: ${axisKey}`);
-    }
-    for (const status of [...Object.values(profile.institutional_axes || {}), profile.cross_file_acknowledgement_status]) {
+    assertNineAxisData(profile, profile.profile_id);
+    for (const status of fiscaliaAxisFields.map((axisKey) => receiptAxisStatus(profile, axisKey))) {
       if (!receiptStatusCatalog[status]) throw new Error(`${profile.profile_id}: uncatalogued receipt/knowledge status ${status}`);
     }
     for (const pair of [
@@ -608,7 +832,10 @@ try {
     public_exact_proceeding_count: 97,
     case_prism_exact_proceeding_covered_count: 43,
     case_prism_exact_proceeding_uncovered_count: 54,
-    decision_dependency_exact_coverage: 'GAP_43_OF_97',
+    decision_dependency_exact_coverage: 'VERIFIED_97_OF_97',
+    decision_dependency_exact_coverage_scope: 'PUBLIC_EXACT_FILE_FINITE_TEST_REGISTER',
+    shared_case_prism_proposition_membership_coverage: 'GAP_43_OF_97',
+    shared_case_prism_proposition_membership_scope: 'SHARED_CASE_PRISM_PROPOSITION_MEMBERSHIP_ONLY',
     exact_file_decision_dependency_actionability_count: 97,
     exact_file_decision_dependency_actionability_coverage: 'VERIFIED_97_OF_97',
     exact_proceeding_full_finite_test_count: 97,
@@ -708,7 +935,7 @@ try {
 
     const tabs = page.locator('[role="tab"]');
     if (await tabs.count() !== 6) throw new Error(`${route.lang}: expected six semantic tabs`);
-    if (await page.locator('[data-proceedings-map="20260831a"]').count() !== 1) throw new Error(`${route.lang}: live renderer marker is not 20260831a`);
+    if (await page.locator('[data-proceedings-map="20260831e"]').count() !== 1) throw new Error(`${route.lang}: live renderer marker is not 20260831e`);
     const staticPrismText = await page.locator('#case-prism').innerText();
     if (!staticPrismText.includes('43') || !staticPrismText.includes('54') || !staticPrismText.includes(route.headlineFinite)
         || staticPrismText.includes(route.headlineForbidden)) {
@@ -757,6 +984,44 @@ try {
     if (await page.locator('.pdim-prism-cell small').count() !== 228) throw new Error(`${route.lang}: file-treatment labels missing`);
     const firstEvidenceLabel = await page.locator('.pdim-prism-table tbody th small').first().innerText();
     if (!firstEvidenceLabel || firstEvidenceLabel.includes('_')) throw new Error(`${route.lang}: reader-facing evidence status was not localised`);
+    const exactDecisionRegister = page.locator('[data-exact-decision-register]');
+    if (await exactDecisionRegister.count() !== 1
+        || await exactDecisionRegister.getAttribute('data-exact-count') !== String(exactIds.length)
+        || await exactDecisionRegister.getAttribute('data-audited-count') !== String(exactIds.length)
+        || await exactDecisionRegister.getAttribute('data-shared-proposition-count') !== '43') {
+      throw new Error(`${route.lang}: exact-file decision-dependency register does not distinguish 97/97 actionability from 43/97 shared-proposition membership`);
+    }
+    const detailIsAdjacentToMatrix = await page.evaluate(() => {
+      const matrix = document.querySelector('.pdim-prism-table-wrap');
+      const detail = document.querySelector('[data-view-body] [data-prism-detail]');
+      const register = document.querySelector('[data-exact-decision-register]');
+      if (!matrix || !detail || !register) return false;
+      return Boolean(matrix.compareDocumentPosition(detail) & Node.DOCUMENT_POSITION_FOLLOWING)
+        && Boolean(detail.compareDocumentPosition(register) & Node.DOCUMENT_POSITION_FOLLOWING);
+    });
+    if (!detailIsAdjacentToMatrix) throw new Error(`${route.lang}: matrix detail must precede the 97-file register so a selected cell is revealed immediately`);
+    if (await exactDecisionRegister.locator('[data-exact-decision-entry]').count() !== exactIds.length
+        || await exactDecisionRegister.locator('[data-exact-decision-entry][data-model-status="AUDITED"]').count() !== exactIds.length) {
+      throw new Error(`${route.lang}: exact-file decision-dependency register is not exhaustively audited`);
+    }
+    for (const masterId of exactIds) {
+      const entry = exactDecisionRegister.locator(`[data-exact-decision-entry][data-master-id="${masterId}"]`);
+      const test = dispositionById.get(masterId)?.finite_test;
+      if (await entry.count() !== 1 || !test) throw new Error(`${route.lang}/${masterId}: decision-dependency entry missing`);
+      const text = await entry.textContent();
+      for (const expected of [
+        bilingualValue(test.question, route.lang), bilingualValue(test.decision_dependency, route.lang),
+        bilingualValue(test.strongest_contrary_or_innocent_explanation, route.lang),
+        bilingualValue(test.if_confirmed, route.lang), bilingualValue(test.if_refuted, route.lang),
+      ]) {
+        if (!expected || !text.includes(expected)) throw new Error(`${route.lang}/${masterId}: decision-dependency register omits a controlled finite-test field`);
+      }
+      if (await entry.locator(`[data-trace-id="${masterId}"]`).count() !== 1
+          || await entry.locator(`a[href="#isolation-test=${masterId}"]`).count() !== 1
+          || await entry.locator(`a[href*="#record-${masterId}"]`).count() !== 1) {
+        throw new Error(`${route.lang}/${masterId}: decision-dependency register lacks trace/isolation/Master navigation`);
+      }
+    }
 
     const audience = page.locator('[data-prism-audience]');
     if (await audience.locator('option').count() !== 9) throw new Error(`${route.lang}: audience denominator is not nine`);
@@ -795,6 +1060,12 @@ try {
     for (const row of fiscaliaMatrix) {
       const rendered = fiscaliaMatrixView.locator(`[data-fiscalia-row][data-master-id="${row.master_id}"]`);
       if (await rendered.count() !== 1) throw new Error(`${route.lang}/${row.master_id}: Fiscalía row missing`);
+      // The matrix rows are native <details> controls and are collapsed on
+      // first render. Open the row before testing descendant accessible names:
+      // Playwright's innerText intentionally suppresses hidden descendants.
+      // This keeps the assertion about the real reader-visible control rather
+      // than mistaking the collapsed state for a missing axis label.
+      await rendered.evaluate((element) => { element.open = true; });
       const rowAttributes = {
         'data-is-proceeding': row.is_proceeding,
         'data-record-type': row.record_type,
@@ -851,12 +1122,35 @@ try {
       for (const axisKey of fiscaliaAxisFields) {
         const axis = rendered.locator(`[data-fiscalia-axis="${axisKey}"]`);
         const basis = row.institutional_axis_basis[axisKey];
+        const disclosure = axis.locator(`[data-fiscalia-axis-basis="${axisKey}"]`);
         if (await axis.count() !== 1
             || await axis.getAttribute('data-axis-status') !== row[axisKey]
             || await axis.getAttribute('data-axis-basis-status') !== basis.status
             || await axis.getAttribute('data-axis-basis-kind') !== basis.basis_kind
-            || await axis.locator(`[data-fiscalia-axis-basis="${axisKey}"]`).count() !== 1) {
+            || await disclosure.count() !== 1
+            || await disclosure.evaluate((element) => element.tagName) !== 'DETAILS') {
           throw new Error(`${route.lang}/${row.master_id}: ${axisKey} grade/basis attributes diverge`);
+        }
+        // Each axis basis is itself a nested native <details>. Open it while
+        // testing the reader-visible accessible name and controlled content;
+        // innerText correctly suppresses descendants of a collapsed details.
+        await disclosure.evaluate((element) => { element.open = true; });
+        const disclosureId = await disclosure.getAttribute('id');
+        const summary = disclosure.locator(':scope > summary');
+        const content = disclosure.locator(':scope > dl');
+        const normalizeText = (value) => (value || '').replace(/\s+/g, ' ').trim();
+        const axisLabel = normalizeText(await axis.locator(':scope > dt').textContent());
+        const disclosureName = normalizeText(await summary.textContent());
+        const summaryCount = await summary.count();
+        const contentCount = await content.count();
+        const disclosureControl = await summary.getAttribute('aria-controls');
+        const contentId = await content.getAttribute('id');
+        const expectedName = `${route.basisDisclosure} · ${axisLabel}`;
+        if (!disclosureId || summaryCount !== 1 || contentCount !== 1
+            || disclosureControl !== `${disclosureId}-content`
+            || contentId !== `${disclosureId}-content`
+            || disclosureName !== expectedName) {
+          throw new Error(`${route.lang}/${row.master_id}: ${axisKey} lacks an axis-scoped accessible disclosure name/control (${JSON.stringify({disclosureId, summaryCount, contentCount, disclosureControl, contentId, disclosureName, expectedName})})`);
         }
         const basisText = await axis.textContent();
         const sourceProvenanceValues = Object.values(basis.source || {}).filter((value) => typeof value === 'string' && value);
@@ -867,6 +1161,7 @@ try {
         ]) {
           if (!expected || !basisText.includes(expected)) throw new Error(`${route.lang}/${row.master_id}: ${axisKey} omits its basis, limitation or provenance`);
         }
+        await disclosure.evaluate((element) => { element.open = false; });
       }
     }
     const fiscaliaMatrixText = await fiscaliaMatrixView.innerText();
@@ -952,6 +1247,14 @@ try {
         const panel = document.querySelector('[data-isolation-reconnection]');
         return panel && panel.textContent.includes(selectedId);
       }, exactId);
+      await page.waitForFunction(() => document.activeElement?.matches('[data-isolation-id]'));
+      const isolationAnnouncement = page.locator('[data-isolation-reconnection][aria-live="polite"]');
+      if (await isolationAnnouncement.count() !== 1
+          || await isolationAnnouncement.getAttribute('aria-atomic') !== 'false'
+          || !(await isolationAnnouncement.innerText()).includes(exactId)
+          || !await isolation.evaluate((element) => document.activeElement === element)) {
+        throw new Error(`${route.lang}/${exactId}: selected isolation result is not politely announced while select focus is preserved`);
+      }
       if (await page.evaluate(() => location.hash) !== `#isolation-test=${encodeURIComponent(exactId)}`) {
         throw new Error(`${route.lang}/${exactId}: exact isolation did not produce a stable deep link`);
       }
@@ -1128,6 +1431,25 @@ try {
     await page.waitForSelector(`[data-trace-panel] [data-finite-test-panel][data-master-id="${representativeFiniteIds.fiscaliaProfile}"]`);
     await page.setViewportSize({ width: 390, height: 844 });
     const mobileFinitePanel = page.locator(`[data-trace-panel] [data-finite-test-panel][data-master-id="${representativeFiniteIds.fiscaliaProfile}"]`);
+    const mobileDisclosures = mobileFinitePanel.locator('details[data-receipt-axis-basis]');
+    if (await mobileDisclosures.count() !== receiptAxisAttributes.length) {
+      throw new Error(`${route.lang}: 390x844 finite-test panel does not expose all nine native disclosures`);
+    }
+    await mobileDisclosures.evaluateAll((details) => details.forEach((detail) => { detail.open = true; }));
+    const disclosureStyles = await mobileDisclosures.evaluateAll((details) => details.map((detail) => {
+      const summaryStyle = getComputedStyle(detail.querySelector('summary'));
+      const provenanceStyle = getComputedStyle(detail.querySelector('[data-receipt-axis-source-provenance] code'));
+      return {
+        summaryMinHeight: Number.parseFloat(summaryStyle.minHeight),
+        provenanceWhiteSpace: provenanceStyle.whiteSpace,
+        provenanceOverflowWrap: provenanceStyle.overflowWrap,
+      };
+    }));
+    if (disclosureStyles.some((style) => style.summaryMinHeight < 44
+        || style.provenanceWhiteSpace !== 'normal'
+        || !['anywhere', 'break-word'].includes(style.provenanceOverflowWrap))) {
+      throw new Error(`${route.lang}: nine disclosures do not retain 44px targets and wrapping provenance at 390px (${JSON.stringify(disclosureStyles)})`);
+    }
     const finiteOverflow = await mobileFinitePanel.evaluate((panel) => {
       const panelRect = panel.getBoundingClientRect();
       const offenders = [...panel.querySelectorAll('*')].filter((element) => {
@@ -1140,6 +1462,13 @@ try {
     });
     if (finiteOverflow.scrollWidth > finiteOverflow.clientWidth + 1 || finiteOverflow.offenders.length) {
       throw new Error(`${route.lang}: 390x844 finite-test panel overflows (${JSON.stringify(finiteOverflow)})`);
+    }
+    const documentOverflow = await page.evaluate(() => ({
+      clientWidth: document.documentElement.clientWidth,
+      scrollWidth: document.documentElement.scrollWidth,
+    }));
+    if (documentOverflow.scrollWidth > documentOverflow.clientWidth + 1) {
+      throw new Error(`${route.lang}: 390x844 page horizontally overflows with all nine disclosures open (${JSON.stringify(documentOverflow)})`);
     }
     if (await page.locator('[data-proceedings-map] [aria-live="polite"]').count() !== 1) {
       throw new Error(`${route.lang}: 390x844 finite-test trace does not retain exactly one polite live region`);
@@ -1292,6 +1621,10 @@ try {
 
     console.log(`${route.lang}: 228-cell Case Prism / swimlane / exact isolation / trace / mobile smoke PASS`);
   }
+  await assertActorSourceMutationDoesNotUpgradeKnowledge(browser, interlinks);
+  console.log('actor source/receipt/knowledge separation mutation PASS');
+  await assertFiniteTestFailClosedMutations(browser, interlinks);
+  console.log('finite-test 16-case fail-closed mutation matrix PASS');
 } finally {
   await browser.close();
 }
