@@ -21,12 +21,34 @@ The visual gives only a conceptual nod to the generic houses-to-hotel idea assoc
 
 No route, source, allegation, qualification, image or prior Cuatrecasas/LinkedIn publication is removed. The book-cover path is intentionally stable. Existing EN/ES book routes and Cuatrecasas routes are preserved.
 
+## Publication closeout
+
+- Publication PR: **#1268** — `Publish Four Green Houses cover and link Cuatrecasas record`.
+- Merge SHA: **`840ddd837f9e6232510f5e0098f1562d4f7795ff`**.
+- Exact-SHA GitHub Pages run: **33395894569 / #1331** — completed successfully.
+- PR publication-integrity gate: **33395641595** — success.
+- PR audience-experience gate: **33395641625** — success.
+- PR visual-asset identity gate: **33395641690** — success.
+- Published cover control: JPEG, **900 × 1125**, **221,210 bytes**, SHA-256 **`0476f4fab7e8fa15451d30d6badc81623781db3c3058edd09d3d788013062b34`**.
+
+## Permanent live-verification control
+
+The existing `scripts/validate_cuatrecasas_book_live.py` / `Validate Cuatrecasas book live publication` workflow is extended as the production-edge control for this release. From an external GitHub-hosted runner it checks, with cache-busting:
+
+1. the established EN/ES book routes;
+2. the established EN/ES Cuatrecasas critical-gap routes;
+3. the EN/ES Cuatrecasas Sun Park source pages and their `assets/site.js` dependency;
+4. the live `assets/site.js` loader markers;
+5. the live self-limiting Cuatrecasas/book insert and both language-specific book links;
+6. the exact live JPEG byte length and SHA-256.
+
+This is stronger than relying on an indexed crawler snapshot because the Cuatrecasas cover section is inserted client-side by JavaScript.
+
 ## Validation targets
 
 - repository preservation validator
 - publication integrity validator
 - audience experience validator
-- rendered Cuatrecasas EN/ES insert
-- book EN/ES cover read-back
+- visual asset identity validator
 - exact-sha Pages deployment
-- production HTTP checks for the two Cuatrecasas routes, two book routes and cover asset
+- external production HTTP checks for Cuatrecasas EN/ES, book EN/ES, critical gaps EN/ES, loader, insert and cover bytes
