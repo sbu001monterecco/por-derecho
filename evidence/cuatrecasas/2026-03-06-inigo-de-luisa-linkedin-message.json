@@ -57,6 +57,128 @@
       "Dissemination to a third person, retaliation, intimidation, defamation, professional misconduct, civil liability, criminality or firm-wide responsibility."
     ]
   },
+  "official_context": [
+    {
+      "date": "2026-03-06",
+      "record": "ICAM 434/26",
+      "documented_result": "Archive based on disciplinary limitation; the decision described its factual observations as merely dialectical and preserved other available avenues.",
+      "boundary": "This was not a merits exoneration. A same-day appeal later became CCACM 193/2026."
+    },
+    {
+      "date": "2026-07-01",
+      "record": "ICAM 1487/26",
+      "documented_result": "ICAM treated the LinkedIn exchange as private and personal, found no proof that it passed beyond the private sphere or caused harm, and treated it as outside its objective disciplinary competence. Territorially distinct court conduct was referred to Tenerife.",
+      "boundary": "This is an adverse institutional outcome and is reported as such. It does not authenticate authorship, establish firm authorization or approve the language."
+    },
+    {
+      "date": "2026-08-27",
+      "record": "CCACM status communication",
+      "documented_result": "CCACM said 193/2026 remained under study and that the appeal from ICAM 1487/26 had not yet been transmitted by ICAM.",
+      "boundary": "No later final resolution has been located in the reviewed record."
+    }
+  ],
+  "clause_audit": [
+    {
+      "text": "Just received notice from the Madrid bar",
+      "reading": "Statement by the displayed account that notice had been received.",
+      "boundary": "The capture is not the Bar notice and does not provider-authenticate the account, receipt time or content communicated."
+    },
+    {
+      "text": "you requested disciplinary action against me",
+      "reading": "A complaint requested professional examination of attributed conduct.",
+      "boundary": "A complaint is neither a sanction nor proof of misconduct."
+    },
+    {
+      "text": "which has been adequately dismissed",
+      "reading": "Adequately is the sender's evaluation; the located archive rested on limitation.",
+      "boundary": "The archive was not a merits clearance or finality proof; an appeal followed and remained under study on 27 August 2026."
+    },
+    {
+      "text": "an unloyal and unlawful move",
+      "reading": "A personal loyalty judgment and asserted legal conclusion.",
+      "boundary": "No located institutional or court ruling declares the complaint unlawful, abusive or malicious."
+    },
+    {
+      "text": "against a Friend Who help you tireless with all efforts",
+      "reading": "Friendship and substantial professional work may have coexisted.",
+      "boundary": "Friendship does not displace professional scrutiny; tireless and all efforts are personal characterizations, not proof of complete or adequate performance."
+    },
+    {
+      "text": "You are not a Friend",
+      "reading": "A personal relationship judgment.",
+      "boundary": "It answers no professional or evidential question."
+    },
+    {
+      "text": "deserve the worst",
+      "reading": "Hostile and retributive language.",
+      "boundary": "No specific act is identified; the record does not recast it as a violent threat, crime or proven professional breach."
+    },
+    {
+      "text": "Do not ever contact me",
+      "reading": "An unequivocal direct personal-contact boundary that must be respected.",
+      "boundary": "It does not extinguish lawful counsel, institutional or procedural routes, and this record does not invite contact."
+    },
+    {
+      "text": "I would Advise Everyone",
+      "reading": "An announced intention to influence an undefined audience.",
+      "boundary": "No actual third-party dissemination or campaign is established."
+    },
+    {
+      "text": "about the kind of person you are",
+      "reading": "A general character judgment rather than a record-specific answer.",
+      "boundary": "It is not presented as adjudicated defamation or a firm act without separate proof."
+    }
+  ],
+  "targeted_email_context": {
+    "scope_boundary": "Targeted review of the connected mailbox; not a completeness certificate for every Cuatrecasas system or archive. Full emails, subjects, addresses, provider identifiers, internal filenames and attachments remain nonpublic.",
+    "public_safe_findings": [
+      {
+        "date": "2014/2018",
+        "finding": "The Cuatrecasas mandate predated the sender's direct involvement; from 2018 his work entered an existing architecture and broadened beyond the entry proposal.",
+        "boundary": "The entire historical file cannot be attributed to one individual, and LPB, Aweswell and Matkator require workstream-specific client and debtor mapping."
+      },
+      {
+        "date": "2019-01-29",
+        "finding": "The sender described the firm as fully committed to defending the client's interests while quantifying outstanding fees and warning of pencils down.",
+        "boundary": "Documents a substantial mandate and fee pressure; it does not by itself prove negligence or a duty to work without payment."
+      },
+      {
+        "date": "2019-07-26/28",
+        "finding": "The sender separated punctual personal help from firm advice and circulated a detailed bridge-loan and rescue architecture.",
+        "boundary": "Documents coexisting personal and professional roles and integrated knowledge; not every personal act is attributable to the firm."
+      },
+      {
+        "date": "2019-10-07/30",
+        "finding": "The sender said firm work was suspended for fees, later welcomed successful outcomes and described the work as paying back before formal withdrawal.",
+        "boundary": "Documents work and results and supports the non-payment defence; the limited protection-and-handover question remains open."
+      },
+      {
+        "date": "2020-05-26/2020-06-03",
+        "finding": "Cuatrecasas expressly granted venia and offered immediate coordination; the sender described two years of work and a transition to collection.",
+        "boundary": "Venia obstruction is not supportable. Handover completeness and individual control of later enforcement remain unproved."
+      },
+      {
+        "date": "2021-03-08",
+        "finding": "A confidential CNMV/RICPE/Sun Park package was transmitted to the sender's firm address.",
+        "boundary": "Transmission does not prove reading, mandate acceptance, onward transmission or action."
+      },
+      {
+        "date": "2022-02-18",
+        "finding": "The sender communicated a EUR 441,463 demand comprising two principal blocks, interest and costs.",
+        "boundary": "A sender-quantified demand, not an independent adjudication or proof of double recovery."
+      },
+      {
+        "date": "2026-03-06",
+        "finding": "A preservation communication was sent to a firm data-protection channel; no ordinary reply was located in the reviewed thread, while automated compliance-portal notices exist without visible case content in Gmail.",
+        "boundary": "Sending does not establish receipt, readership, investigation, institutional silence or admission."
+      },
+      {
+        "date": "2026-08-24/27",
+        "finding": "A later reconciliation and right-of-reply invitation was not delivered to the attempted recipients because delivery bounced or expired.",
+        "boundary": "It cannot be described as a received invitation or ignored response opportunity."
+      }
+    ]
+  },
   "publication_boundary": "The message is reproduced verbatim from the retained screenshot as an already-published documentary text record. The two raw screenshot binaries remain private and are not published by this record. The deletion point is stated only in the qualified form used in the contemporaneous memorialisation ('appears to have deleted it'). The later LinkedIn interface-status screenshot is not treated on its own as conclusive proof of deletion or its cause. No inference of civil, criminal or disciplinary liability is made from the message alone.",
   "communication_governance": {
     "direct_contact": "HOLD_NOT_AUTHORISED",
@@ -70,5 +192,5 @@
     "/es/cuatrecasas-icam-ccacm-2026/"
   ],
   "created_for_publication": "2026-08-31",
-  "governance_revision": "2026-08-31b"
+  "governance_revision": "2026-08-31c"
 }

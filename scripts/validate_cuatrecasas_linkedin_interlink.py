@@ -38,6 +38,18 @@ def main() -> int:
         errors.append("canonical person must resolve to PD-SP-P-0049")
     if record.get("date_basis", {}).get("capture_display") != "TODAY":
         errors.append("screenshot-only date limitation is missing")
+    if record.get("governance_revision") != "2026-08-31c":
+        errors.append("evidence record is not on governance revision 2026-08-31c")
+
+    official_context = record.get("official_context")
+    if not isinstance(official_context, list) or len(official_context) != 3:
+        errors.append("official context must contain the three controlled procedural records")
+    clause_audit = record.get("clause_audit")
+    if not isinstance(clause_audit, list) or len(clause_audit) != 10:
+        errors.append("machine-readable clause audit must contain ten controlled proposition groups")
+    email_findings = record.get("targeted_email_context", {}).get("public_safe_findings")
+    if not isinstance(email_findings, list) or len(email_findings) != 9:
+        errors.append("targeted email context must contain nine minimized chronology groups")
 
     captures = record.get("preservation", {}).get("capture_records")
     expected_capture_ids = {
@@ -90,6 +102,17 @@ def main() -> int:
         "../cuatrecasas-icam-ccacm-2026/",
         "window.location.hash === '#inigo-linkedin-20260306'",
         "section.scrollIntoView",
+        "data-governance-revision', '20260831c'",
+        "A procedural archive does not answer the professional record",
+        "Un archivo procesal no responde al expediente profesional",
+        "Every statement, in context",
+        "Cada afirmación, en su contexto",
+        "No actual third-party dissemination or campaign has been proved.",
+        "No se ha probado difusión efectiva a terceros ni una campaña.",
+        "This prevents an obstruction-of-venia claim.",
+        "Impide afirmar obstrucción de la venia.",
+        "delivery bounced or expired",
+        "hubo rebotes y expiración",
     ):
         if marker not in panel:
             errors.append(f"panel marker missing: {marker}")
@@ -97,15 +120,17 @@ def main() -> int:
         errors.append("panel must not publish or reference the raw screenshots")
 
     loader = SITE_LOADER.read_text(encoding="utf-8")
-    if "cuatrecasas-inigo-linkedin-record-20260831.js?v=20260831b" not in loader:
+    if "cuatrecasas-inigo-linkedin-record-20260831.js?v=20260831c" not in loader:
         errors.append("site loader does not request the cache-busted panel revision")
-    if "data-cuatrecasas-inigo-linkedin-loader', '20260831b'" not in loader:
+    if "data-cuatrecasas-inigo-linkedin-loader', '20260831c'" not in loader:
         errors.append("site loader revision marker is missing")
 
     for lang, path in CUATRE_PAGES.items():
         body = path.read_text(encoding="utf-8")
-        if "../../assets/site.js?v=20260831b" not in body:
+        if "../../assets/site.js?v=20260831c" not in body:
             errors.append(f"{lang} Cuatrecasas page does not cache-bust the shared loader")
+        if "17 Sep / 18 Oct 2024" not in body and "17 sep / 18 oct 2024" not in body:
+            errors.append(f"{lang} Cuatrecasas page lacks the source-qualified 2024 ETJ dates")
         if f'../cuatrecasas-icam-ccacm-2026/' not in body:
             errors.append(f"{lang} Cuatrecasas page lacks the general ICAM/CCACM route")
 
@@ -126,8 +151,8 @@ def main() -> int:
 
     print(
         "CUATRECASAS LINKEDIN INTERLINK VALIDATION PASSED — "
-        "2 private capture IDs, 2 bilingual public panels, 2 reciprocal institutional links, "
-        "raw screenshots excluded"
+        "2 private capture IDs, 2 bilingual public panels, 10 controlled proposition groups, "
+        "9 minimized email chronology groups, 3 procedural records, raw screenshots excluded"
     )
     return 0
 

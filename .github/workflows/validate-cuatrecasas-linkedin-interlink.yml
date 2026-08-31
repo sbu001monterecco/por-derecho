@@ -11,7 +11,10 @@ on:
       - "en/cuatrecasas-icam-ccacm-2026/index.html"
       - "es/cuatrecasas-icam-ccacm-2026/index.html"
       - "scripts/validate_cuatrecasas_linkedin_interlink.py"
+      - "archive/CUATRECASAS_LINKEDIN_EVIDENCE_INTERLINK_CONTROL_31AUG2026.md"
+      - "archive/CUATRECASAS_LINKEDIN_CLAUSE_EMAIL_AUDIT_CONTROL_31AUG2026.md"
       - "publication-manifests/cuatrecasas-linkedin-evidence-interlink-20260831.json"
+      - "publication-manifests/cuatrecasas-linkedin-clause-email-audit-20260831.json"
       - ".github/workflows/validate-cuatrecasas-linkedin-interlink.yml"
   push:
     branches: [main]
@@ -24,7 +27,10 @@ on:
       - "en/cuatrecasas-icam-ccacm-2026/index.html"
       - "es/cuatrecasas-icam-ccacm-2026/index.html"
       - "scripts/validate_cuatrecasas_linkedin_interlink.py"
+      - "archive/CUATRECASAS_LINKEDIN_EVIDENCE_INTERLINK_CONTROL_31AUG2026.md"
+      - "archive/CUATRECASAS_LINKEDIN_CLAUSE_EMAIL_AUDIT_CONTROL_31AUG2026.md"
       - "publication-manifests/cuatrecasas-linkedin-evidence-interlink-20260831.json"
+      - "publication-manifests/cuatrecasas-linkedin-clause-email-audit-20260831.json"
       - ".github/workflows/validate-cuatrecasas-linkedin-interlink.yml"
 
 permissions:

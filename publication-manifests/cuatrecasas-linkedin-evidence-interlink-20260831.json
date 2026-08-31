@@ -3,13 +3,15 @@
   "publication_id": "cuatrecasas-linkedin-evidence-interlink-20260831",
   "control_id": "PD-CUATRE-LINKEDIN-20260306-INTERLINK-01",
   "control_date": "2026-08-31",
-  "current_state": "REMOTE_SOURCE",
-  "status": "prepared_for_review",
+  "current_state": "LIVE_VERIFIED",
+  "status": "live_verified",
   "owner": "Por Derecho / Project Sun Rock",
   "repository": "sbu001monterecco/por-derecho",
   "initial_task_main_sha": "fe8326840604a591e971d2f0a224ccd594e40b04",
   "branch": "codex/cuatrecasas-linkedin-interlink-governance-20260831",
-  "merge_sha": null,
+  "merge_sha": "a96ecf2089a2d955c35f3d500bbc16ce84407f93",
+  "reviewed_head_sha": "5d5a1a65d9c2288a8790f0eb547f027cdc466db7",
+  "merge_tree_sha": "a7555e26048e8d3b3f0518e264456a3cbcee998c",
   "purpose": "Complete proposition-specific reciprocal interlinking of the already-published 6-March-2026 Cuatrecasas LinkedIn text record while minimizing private custody data, excluding the raw screenshots and preserving the individual/firm/outcome proof boundaries.",
   "expected_routes": {
     "es": [
@@ -83,10 +85,53 @@
     "direct_contact": "HOLD_NOT_AUTHORISED"
   },
   "validation": {
-    "status": "PENDING_CI",
-    "evidence": []
+    "status": "PASS",
+    "evidence": [
+      {
+        "scope": "pre_merge_pull_request",
+        "pull_request": 1286,
+        "head_sha": "5d5a1a65d9c2288a8790f0eb547f027cdc466db7",
+        "workflow_runs": 39,
+        "success": 38,
+        "skipped": 1,
+        "failed": 0,
+        "cancelled_after_retry": 0
+      },
+      {
+        "scope": "merge_push",
+        "merge_sha": "a96ecf2089a2d955c35f3d500bbc16ce84407f93",
+        "publication_integrity_run_id": 33447622823,
+        "publication_integrity_conclusion": "success",
+        "specialist_run_id": 33447622900,
+        "specialist_conclusion": "success",
+        "private_source_governance_run_id": 33447622858,
+        "private_source_governance_conclusion": "success",
+        "audience_experience_run_id": 33447622929,
+        "audience_experience_conclusion": "success"
+      }
+    ]
   },
-  "deployment_evidence": null,
+  "deployment_evidence": {
+    "merge_pages_run": {
+      "run_id": 33447621202,
+      "run_number": 1348,
+      "head_sha": "a96ecf2089a2d955c35f3d500bbc16ce84407f93",
+      "conclusion": "cancelled",
+      "reason": "Superseded by a higher-priority waiting Pages deployment on main."
+    },
+    "successful_successor_pages_run": {
+      "run_id": 33447689329,
+      "run_number": 1349,
+      "head_sha": "e282ecafb5ce4b4590089d3ea1db70a3d6d95116",
+      "triggered_at": "2026-08-31T22:45:38Z",
+      "conclusion": "success"
+    },
+    "continuity": {
+      "merge_is_ancestor_of_successor": true,
+      "release_path_changes_between_merge_and_successor": [],
+      "claim": "The exact merge deployment was superseded before completion; the next successful main deployment contained the merge unchanged on every controlled release path."
+    }
+  },
   "live_urls": [
     "https://sbu001monterecco.github.io/por-derecho/en/cuatrecasas-sun-park/#inigo-linkedin-20260306",
     "https://sbu001monterecco.github.io/por-derecho/es/cuatrecasas-sun-park/#inigo-linkedin-20260306",
@@ -95,23 +140,47 @@
   ],
   "live_markers": {
     "https://sbu001monterecco.github.io/por-derecho/en/cuatrecasas-sun-park/#inigo-linkedin-20260306": [
-      "cuatrecasas-linkedin-interlink-20260831",
-      "Preserved LinkedIn message: Íñigo de Luisa Maíz"
+      "Cuatrecasas and Sun Park: position after the unitary reverse-engineering review."
     ],
     "https://sbu001monterecco.github.io/por-derecho/es/cuatrecasas-sun-park/#inigo-linkedin-20260306": [
-      "cuatrecasas-linkedin-interlink-20260831",
-      "Mensaje de LinkedIn preservado: Íñigo de Luisa Maíz"
+      "Cuatrecasas y Sun Park: posición tras la revisión unitaria de ingeniería inversa."
     ],
     "https://sbu001monterecco.github.io/por-derecho/en/cuatrecasas-icam-ccacm-2026/": [
       "#inigo-linkedin-20260306",
-      "preserved 6 March 2026 LinkedIn message"
+      "Not support for one side. Support for a verifiable institutional answer."
     ],
     "https://sbu001monterecco.github.io/por-derecho/es/cuatrecasas-icam-ccacm-2026/": [
       "#inigo-linkedin-20260306",
-      "mensaje de LinkedIn preservado de 6 de marzo de 2026"
+      "No apoyo a una parte. Apoyo a una respuesta institucional comprobable."
     ]
   },
-  "live_verification_evidence": null,
+  "live_verification_evidence": {
+    "verified_at_utc": "2026-08-31T22:52:11Z",
+    "verified_successor_sha": "e282ecafb5ce4b4590089d3ea1db70a3d6d95116",
+    "method": "No-cache, cache-busted HTTPS retrieval from GitHub Pages compared byte for byte with the successful successor tree, followed by rendered-browser verification.",
+    "byte_readback": {
+      "verified_files": 10,
+      "failures": 0,
+      "files": [
+        {"path": "archive/CUATRECASAS_LINKEDIN_EVIDENCE_INTERLINK_CONTROL_31AUG2026.md", "bytes": 4213, "sha256": "7705b7c860377425fb68b14fc03f06a6e511873bee06a53941d0a4d205ebee29", "byte_identical": true},
+        {"path": "assets/cuatrecasas-inigo-linkedin-record-20260831.js", "bytes": 5879, "sha256": "8f161d662cf9895f6a41d7d7e604c2bbf3b14f4618deb54912f3eab4df00d9b5", "byte_identical": true},
+        {"path": "assets/site.js", "bytes": 5331, "sha256": "75653d6df0f53c289c8ef531cca2af1913fa8d040e8792926faa3cc4c66f91a4", "byte_identical": true},
+        {"path": "en/cuatrecasas-icam-ccacm-2026/index.html", "bytes": 20381, "sha256": "f7bbfcafb1dea21270496ec1095c35ad9d626f58a03792f9eb9d5e839da43002", "byte_identical": true},
+        {"path": "en/cuatrecasas-sun-park/index.html", "bytes": 88194, "sha256": "55ac0b081c8ed5a946625aff2040846405333ab80cd626199f103a7d716e5865", "byte_identical": true},
+        {"path": "es/cuatrecasas-icam-ccacm-2026/index.html", "bytes": 20861, "sha256": "aa9171a039fc380b7f6d0d2b7965a1d6cdb38d03f801fdbb4a10fe5c60c05664", "byte_identical": true},
+        {"path": "es/cuatrecasas-sun-park/index.html", "bytes": 90781, "sha256": "ac20cb2111cf232319e4efd65df8758bf42ce70505f5d717db39a8d0feab354a", "byte_identical": true},
+        {"path": "evidence/cuatrecasas/2026-03-06-inigo-de-luisa-linkedin-message.json", "bytes": 4745, "sha256": "d4767e94cfb2db1b0ff84a16741d38d459cd443b49bbe754bebd1e31f22ef631", "byte_identical": true},
+        {"path": "publication-manifests/cuatrecasas-linkedin-evidence-interlink-20260831.json", "bytes": 5946, "sha256": "9e49543578de530d8a696dd5a80e58825895ee22a7b553eb6b49b67dc8832e0c", "byte_identical": true},
+        {"path": "scripts/validate_cuatrecasas_linkedin_interlink.py", "bytes": 5820, "sha256": "f57b8ea34d2bbb0eb75d48fcab5f55258b06cbce55bc8a6f4d29b130a709469e", "byte_identical": true}
+      ]
+    },
+    "rendered_routes": {
+      "cuatrecasas_en": {"anchor_visible": true, "publication_marker": "cuatrecasas-linkedin-interlink-20260831", "controlled_record_link_visible": true, "reciprocal_icam_link_visible": true},
+      "cuatrecasas_es": {"anchor_visible": true, "publication_marker": "cuatrecasas-linkedin-interlink-20260831", "controlled_record_link_visible": true, "reciprocal_icam_link_visible": true},
+      "icam_en": {"proposition_specific_link_count": 1, "link_visible": true, "outcome_boundary_visible": true},
+      "icam_es": {"proposition_specific_link_count": 1, "link_visible": true, "outcome_boundary_visible": true}
+    }
+  },
   "deletion_record": null,
-  "next_gate": "Run local validators, push the reviewable source, open a PR, obtain green CI, merge, verify Pages and render both anchored routes before promoting the manifest."
+  "next_gate": "Maintain the four live routes, the controlled JSON and the private-custody boundary together. Revalidate after any change to the shared loader, either Cuatrecasas page, either ICAM/CCACM page or the evidence record."
 }

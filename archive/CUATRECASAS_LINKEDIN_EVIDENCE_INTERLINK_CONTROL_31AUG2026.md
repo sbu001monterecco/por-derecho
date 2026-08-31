@@ -5,6 +5,7 @@
 **Initial current-main SHA:** `fe8326840604a591e971d2f0a224ccd594e40b04`
 
 **Initial publication state:** `REMOTE_SOURCE`
+**Current publication state:** `LIVE_VERIFIED`
 **Scope:** minimized public-governance repair for the preserved 6-March-2026 LinkedIn message attributed to the account displaying `Inigo de Luisa Maiz`.
 
 ## Authority and exclusion
@@ -68,4 +69,14 @@ After an authorised merge:
 - render both anchored language routes in a browser; and
 - update this control and the publication manifest to the exact final action state.
 
-No `LIVE_VERIFIED` or `DELETION_SAFE` claim is made by this initial source record.
+## Live closeout
+
+- PR [#1286](https://github.com/sbu001monterecco/por-derecho/pull/1286) merged at `a96ecf2089a2d955c35f3d500bbc16ce84407f93` from reviewed head `5d5a1a65d9c2288a8790f0eb547f027cdc466db7`.
+- The final pre-merge matrix recorded 38 successful workflows and one expected live-only skip, with no failure or cancellation left after retry.
+- The merge-push publication-integrity, specialist Cuatrecasas interlink, private-source governance and audience-experience runs succeeded.
+- Pages run [#1348](https://github.com/sbu001monterecco/por-derecho/actions/runs/33447621202) for the exact merge SHA was cancelled because a higher-priority `main` deployment was waiting. This is recorded as supersession, not deployment success.
+- Pages run [#1349](https://github.com/sbu001monterecco/por-derecho/actions/runs/33447689329) succeeded for successor SHA `e282ecafb5ce4b4590089d3ea1db70a3d6d95116`. The merge is its ancestor, and none of the eleven controlled release paths changed between the merge and that successor.
+- Independent no-cache readback compared all ten Pages-visible release files with the successful successor tree: **10/10 byte-identical; zero failures**.
+- Browser verification confirmed both anchored language panels, their JSON and reciprocal ICAM/CCACM links, and exactly one visible evidence-specific return link plus the outcome boundary on each ICAM/CCACM route.
+
+The repair is therefore `LIVE_VERIFIED`. No `DELETION_SAFE` claim is made, no raw screenshot is public, and no communication, filing or institutional supplement was authorised or sent.
