@@ -1,0 +1,283 @@
+name: Verify E.G. 745 public visual live bytes
+
+on:
+  pull_request:
+    paths:
+      - '.github/workflows/verify-eg745-public-visual-live.yml'
+      - 'archive/EG_745_2026_VISUAL_AND_CONTINUITY_DEPLOYMENT_ATTESTATION_31AUG2026.md'
+      - 'archive/EG_745_2026_OPEN_TRANSPARENCY_RELEASE_31AUG2026.md'
+      - 'evidence/fiscalia/2026/EG_745_2026_OPEN_TRANSPARENCY_LEDGER_31AUG2026.md'
+      - 'evidence/fiscalia/2026/EG_745_2026_PUBLIC_VISUAL_FACSIMILE_CONTROL_31AUG2026.md'
+      - 'en/public-prosecution-inspection-exp-gub-745-2026/**'
+      - 'es/fiscalia-inspeccion-exp-gub-745-2026/**'
+      - 'publication-manifests/eg-745-2026-open-transparency-20260831.json'
+      - 'publication-manifests/eg-745-2026-visual-publication-20260831.json'
+      - 'publication-manifests/eg-745-2026-visual-deployment-attestation-20260831.json'
+      - 'scripts/validate_eg745_public_visual.py'
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/verify-eg745-public-visual-live.yml'
+      - 'archive/EG_745_2026_VISUAL_AND_CONTINUITY_DEPLOYMENT_ATTESTATION_31AUG2026.md'
+      - 'archive/EG_745_2026_OPEN_TRANSPARENCY_RELEASE_31AUG2026.md'
+      - 'evidence/fiscalia/2026/EG_745_2026_OPEN_TRANSPARENCY_LEDGER_31AUG2026.md'
+      - 'evidence/fiscalia/2026/EG_745_2026_PUBLIC_VISUAL_FACSIMILE_CONTROL_31AUG2026.md'
+      - 'en/public-prosecution-inspection-exp-gub-745-2026/**'
+      - 'es/fiscalia-inspeccion-exp-gub-745-2026/**'
+      - 'publication-manifests/eg-745-2026-open-transparency-20260831.json'
+      - 'publication-manifests/eg-745-2026-visual-publication-20260831.json'
+      - 'publication-manifests/eg-745-2026-visual-deployment-attestation-20260831.json'
+      - 'scripts/validate_eg745_public_visual.py'
+  workflow_dispatch:
+
+permissions:
+  actions: read
+  contents: read
+
+jobs:
+  exact-live-readback:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      TARGET_SHA: ${{ github.event_name == 'pull_request' && github.event.pull_request.base.sha || github.sha }}
+      PR1274_SHA: 6dc04a8a35c4a096631ca1852ec5fbee96c4965f
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - name: Check out full repository history
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+
+      - name: Wait for exact-SHA Pages and compare every changed public byte
+        env:
+          REPOSITORY: ${{ github.repository }}
+          RUN_ID: ${{ github.run_id }}
+          EVENT_NAME: ${{ github.event_name }}
+        run: |
+          python3 - <<'PY'
+          import concurrent.futures
+          import datetime as dt
+          import hashlib
+          import json
+          import os
+          import subprocess
+          import time
+          import urllib.parse
+          import urllib.request
+          from pathlib import Path
+
+          repository = os.environ["REPOSITORY"]
+          target_sha = os.environ["TARGET_SHA"]
+          pr1274_sha = os.environ["PR1274_SHA"]
+          token = os.environ["GH_TOKEN"]
+          run_id = os.environ["RUN_ID"]
+          event_name = os.environ["EVENT_NAME"]
+          base_url = "https://sbu001monterecco.github.io/por-derecho"
+
+          def api_json(url):
+              request = urllib.request.Request(
+                  url,
+                  headers={
+                      "Accept": "application/vnd.github+json",
+                      "Authorization": f"Bearer {token}",
+                      "X-GitHub-Api-Version": "2022-11-28",
+                      "User-Agent": "Por-Derecho-EG745-live-byte-verifier/1.0",
+                  },
+              )
+              with urllib.request.urlopen(request, timeout=30) as response:
+                  return json.load(response)
+
+          pages_run = None
+          actions_url = (
+              f"https://api.github.com/repos/{repository}/actions/runs"
+              f"?head_sha={target_sha}&per_page=100"
+          )
+          for attempt in range(1, 61):
+              payload = api_json(actions_url)
+              pages_run = next(
+                  (
+                      run
+                      for run in payload.get("workflow_runs", [])
+                      if run.get("name") == "pages build and deployment"
+                      and run.get("path") == "dynamic/pages/pages-build-deployment"
+                      and run.get("head_sha") == target_sha
+                      and run.get("status") == "completed"
+                      and run.get("conclusion") == "success"
+                  ),
+                  None,
+              )
+              if pages_run:
+                  break
+              print(f"Pages attempt {attempt}/60 pending for {target_sha}", flush=True)
+              if attempt < 60:
+                  time.sleep(10)
+          if not pages_run:
+              raise SystemExit(f"no successful exact-SHA Pages run for {target_sha}")
+
+          commit_type = subprocess.check_output(
+              ["git", "cat-file", "-t", target_sha], text=True
+          ).strip()
+          if commit_type != "commit":
+              raise SystemExit(f"target is not a commit: {target_sha}")
+          target_tree = subprocess.check_output(
+              ["git", "show", "-s", "--format=%T", target_sha], text=True
+          ).strip()
+          changed = subprocess.check_output(
+              ["git", "diff-tree", "--no-commit-id", "--name-only", "-r", target_sha],
+              text=True,
+          ).splitlines()
+          public_paths = sorted(path for path in changed if not path.startswith(".github/"))
+          if not public_paths:
+              raise SystemExit("target commit has no Pages-visible changed files")
+          if target_sha == pr1274_sha and len(public_paths) != 32:
+              raise SystemExit(
+                  f"PR1274 Pages-visible path count mismatch: {len(public_paths)} != 32"
+              )
+
+          critical_pr1274 = {
+              "en/public-prosecution-inspection-exp-gub-745-2026/visual-facsimile-31-august-2026.html",
+              "es/fiscalia-inspeccion-exp-gub-745-2026/facsimil-visual-31-agosto-2026.html",
+              "evidence/fiscalia/2026/eg745-visual-assets/oficio-decreto-eg-745-2026-public-redacted.pdf",
+              "evidence/fiscalia/2026/eg745-visual-assets/page-1-public-redacted.png",
+              "evidence/fiscalia/2026/eg745-visual-assets/page-1-public-redacted.webp",
+              "evidence/fiscalia/2026/eg745-visual-assets/page-2-public.png",
+              "evidence/fiscalia/2026/eg745-visual-assets/page-2-public.webp",
+              "evidence/fiscalia/2026/eg745-visual-assets/page-3-public.png",
+              "evidence/fiscalia/2026/eg745-visual-assets/page-3-public.webp",
+          }
+          if target_sha == pr1274_sha and not critical_pr1274.issubset(public_paths):
+              missing = sorted(critical_pr1274 - set(public_paths))
+              raise SystemExit(f"PR1274 critical paths missing from readback set: {missing}")
+
+          expected = {
+              path: subprocess.check_output(["git", "show", f"{target_sha}:{path}"])
+              for path in public_paths
+          }
+          verified = {}
+          last = {}
+
+          def fetch_one(path, attempt):
+              nonce = time.time_ns()
+              quoted = urllib.parse.quote(path, safe="/")
+              url = (
+                  f"{base_url}/{quoted}?source={target_sha}&run={run_id}"
+                  f"&attempt={attempt}&nonce={nonce}"
+              )
+              request = urllib.request.Request(
+                  url,
+                  headers={
+                      "Cache-Control": "no-cache",
+                      "Pragma": "no-cache",
+                      "User-Agent": "Por-Derecho-EG745-live-byte-verifier/1.0",
+                  },
+              )
+              try:
+                  with urllib.request.urlopen(request, timeout=35) as response:
+                      body = response.read()
+                      status = response.status
+                  return path, {
+                      "url": url,
+                      "http_status": status,
+                      "live_bytes": len(body),
+                      "live_sha256": hashlib.sha256(body).hexdigest(),
+                      "byte_identical": status == 200 and body == expected[path],
+                  }
+              except Exception as exc:
+                  return path, {"url": url, "error": repr(exc), "byte_identical": False}
+
+          pending = set(public_paths)
+          for attempt in range(1, 13):
+              with concurrent.futures.ThreadPoolExecutor(max_workers=8) as executor:
+                  batch = list(
+                      executor.map(lambda path: fetch_one(path, attempt), sorted(pending))
+                  )
+              for path, result in batch:
+                  last[path] = result
+                  if result["byte_identical"]:
+                      verified[path] = {
+                          "path": path,
+                          "bytes": len(expected[path]),
+                          "sha256": hashlib.sha256(expected[path]).hexdigest(),
+                          "http_status": result["http_status"],
+                          "byte_identical": True,
+                      }
+                      pending.discard(path)
+              print(
+                  json.dumps(
+                      {
+                          "attempt": attempt,
+                          "target_sha": target_sha,
+                          "verified": len(verified),
+                          "pending": sorted(pending),
+                      },
+                      sort_keys=True,
+                  ),
+                  flush=True,
+              )
+              if not pending:
+                  break
+              if attempt < 12:
+                  time.sleep(10)
+
+          report = {
+              "schema": "por-derecho.eg745-live-byte-readback.v1",
+              "state": "LIVE_BYTES_VERIFIED" if not pending else "LIVE_BYTES_NOT_VERIFIED",
+              "event": event_name,
+              "target_sha": target_sha,
+              "target_tree": target_tree,
+              "verified_at_utc": dt.datetime.now(dt.timezone.utc).isoformat(),
+              "pages_run": {
+                  "id": pages_run.get("id"),
+                  "run_number": pages_run.get("run_number"),
+                  "head_sha": pages_run.get("head_sha"),
+                  "status": pages_run.get("status"),
+                  "conclusion": pages_run.get("conclusion"),
+                  "html_url": pages_run.get("html_url"),
+                  "created_at": pages_run.get("created_at"),
+                  "updated_at": pages_run.get("updated_at"),
+              },
+              "pages_visible_changed_path_count": len(public_paths),
+              "files": [verified[path] for path in sorted(verified)],
+              "failures": [
+                  {"path": path, **last.get(path, {})} for path in sorted(pending)
+              ],
+          }
+          artifact = Path("artifacts/eg745-live-readback")
+          artifact.mkdir(parents=True, exist_ok=True)
+          report_path = artifact / f"{target_sha}-exact-live-readback.json"
+          report_path.write_text(
+              json.dumps(report, ensure_ascii=False, indent=2) + "\n",
+              encoding="utf-8",
+          )
+          summary = {
+              "state": report["state"],
+              "target_sha": target_sha,
+              "target_tree": target_tree,
+              "pages_run_id": report["pages_run"]["id"],
+              "pages_run_number": report["pages_run"]["run_number"],
+              "verified_files": len(verified),
+              "failures": len(pending),
+          }
+          print(json.dumps(summary, sort_keys=True))
+          with open(os.environ["GITHUB_STEP_SUMMARY"], "a", encoding="utf-8") as handle:
+              handle.write("## E.G. 745 exact live-byte readback\n\n")
+              handle.write(f"- State: `{report['state']}`\n")
+              handle.write(f"- Target SHA: `{target_sha}`\n")
+              handle.write(f"- Target tree: `{target_tree}`\n")
+              handle.write(f"- Exact Pages run: `{report['pages_run']['id']}`\n")
+              handle.write(f"- Byte-identical files: `{len(verified)}/{len(public_paths)}`\n")
+          if pending:
+              raise SystemExit(
+                  "live byte mismatches: " + ", ".join(sorted(pending))
+              )
+          PY
+
+      - name: Upload immutable readback evidence
+        if: always()
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: eg745-live-readback-${{ env.TARGET_SHA }}
+          path: artifacts/eg745-live-readback/
+          if-no-files-found: error
+          retention-days: 30
