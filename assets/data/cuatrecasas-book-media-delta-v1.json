@@ -4,7 +4,8 @@
   "control_date": "2026-08-31",
   "status": "PREPARED_PENDING_MERGE",
   "repository": "sbu001monterecco/por-derecho",
-  "source_main_sha": "950b64f9bd61f21bcff7bd76cfc409eebd3bca88",
+  "initial_task_main_sha": "950b64f9bd61f21bcff7bd76cfc409eebd3bca88",
+  "reconciled_main_sha": "80793dbba490b44a2ad25af836f201517000f5bc",
   "book": {
     "title": "4 Green Houses, One Red Hotel",
     "canonical_role": "public entry point to a private document-led manuscript",
