@@ -19,6 +19,8 @@ The same control produced one important source correction. The attachment regist
 
 The SHA-512 recomputed from the located signed 31-July master, `REQUERIMIENTO_URGENTE_MF_EXTRACONCURSAL_31JUL2026_FINAL_FIRMADO.pdf`, is exactly the same. The two controlled binaries are therefore **byte-identical**. This closes the project-side source-identity gap. It does **not** change the reposición filing status.
 
+A pagination-complete Gmail rescan of the last-month Ministerio Fiscal traffic located one additional primary correspondence checkpoint that was already published in the broader 20–21 August routing record but was omitted from this E.G. 745-focused chronology. On 20 August, a communication expressly addressed to the Fiscal de Sala Jefa de la Inspección Fiscal identified `REGAGE26e00070235775` and requested transfer, association, traceability and preservation. On 21 August, the FGE Technical Secretariat acknowledged receipt and stated that the communication would receive the corresponding management as soon as possible. This proves **central receipt of that communication only**. It does not prove transfer to Inspection, association with E.G. 745, allocation, incorporation into the material examined before the 26-August Decree or any merits assessment.
+
 A second project-side control identified two excess Base64 characters in the five-part RedSARA public-safe transcript. An in-memory repair test reconstructs the pre-existing expected controls: bzip2 `72,967` bytes / SHA-256 `45ab844382cfa9926863334e6925f7cbb7d8927e76edaaf41b562727b80fa6c7`, and transcript `710,529` bytes / SHA-256 `18a5d1687234e18d9293a3563d51118ea7b16fb5611adac9b8b428876d875df1`. The encoded evidence payload is not altered in public Git because the private-source governance gate prohibits adding or modifying encoded evidence payloads there. The reconstruction defect therefore remains an explicit project-side continuity gap pending a governed custody/replacement route.
 
 ## 2. Focused E.G. 745 source-to-decision chain
@@ -47,6 +49,7 @@ A second project-side control identified two excess Base64 characters in the fiv
 | 8/9 Jun 2026 | **EG 49/2026**, outgoing 230, SHA-256 `32a06dbf5745edc2e7ea6f9c88a22231d8238ce1e1a9faa5418db2eab253a383` | Renewed 4-Jun request was accumulated; decree states no new information and again declined/archive | Signed decision is controlled | No exposed merits re-audit of the literal 2019 contradiction or complete source inventory | Preserve review/production question; adverse repetition is not coordination evidence |
 | 12 Jul 2026 | **DP 1901/2026**, NIG `3501643220260016977`; primary providencia | Juzgado de Instrucción Plaza 6 gave Fiscalía five days to report on admission in connection with DIP 2/2026 | Judicial transfer is controlled | Signed Fiscal report, author, reparto, instructions, review/visado, exact corpus, court transmission and later judicial act | Highest-priority production target; absence from current Gmail/Drive/repository corpus is not proof the acts do not exist |
 | 2 Aug 2026 | **E.G. 745/2026**; `REGAGE26e00070235775` | Inspección filing names DI 248, DI 113, DI 22, DIP 2, EG 49 and DP 1901 and requests functional reconstruction/preservation/production | Filing receipt is controlled; exact attachment identity now closed by SHA-512 | Internal routing, examiner, corpus, file/index and request-by-request treatment | Merits challenge and separate production/preservation track remain distinct |
+| 20–21 Aug 2026 | **Central FGE route directed to Inspección**; direct Gmail correspondence | The 20-Aug communication expressly identified `REGAGE26e00070235775` and requested transfer to Inspection, association, traceability and preservation; the FGE Technical Secretariat acknowledged receipt on 21 Aug and stated that corresponding management would follow | Central receipt and the stated prospective management are controlled | Transfer to Inspection, E.G. 745 association, allocation, incorporation into the pre-decision corpus and consideration before the 26-Aug Decree | Request the internal routing/association record and identify whether the communication formed part of the E.G. 745 file; do not treat the acknowledgement as proof that it did |
 | 26 Aug 2026 | **E.G. 745/2026** decree/notice | Archive and review routes | Official act controlled by SHA-256 `1e09c8eb3bce26e28dc5f22e5d6ebad3f458212cf8d85f5920e869fa42554abe` | Native/searchable/verifiable act, signature metadata and complete administrative file | Preserve deadline; elect route with counsel; no filing-status upgrade without receipt |
 
 ## 4. Later calificación and appellate connections — only where bridged by sources
@@ -86,6 +89,7 @@ RPL 3319/2025, referenced by the DIP 2 correction, is not RPL 2523/2025. DP 1901
 - DIP 2 separate opening act and post-correction treatment.
 - EG 49 complete file, source inventory and referral record.
 - DP 1901 signed Fiscal report, internal routing/visado, transmitted corpus and later judicial act.
+- Internal destination, association and treatment of the 20/21-August centrally acknowledged Inspection-directed communication.
 - Certified 2023 hearing record and complete RPL 2523 roll.
 
 ## 6. Ranked gaps and action matrix
@@ -96,6 +100,7 @@ RPL 3319/2025, referenced by the DIP 2 correction, is not RPL 2523/2025. DP 1901
 | **CRITICAL** | File reposición if elected and authorised | PREPARED / NOT VERIFIED FILED | Approved final annex set, verified deadline, exact filing channel | Exact filed bytes, receipt and timestamp |
 | **CRITICAL** | Preserve deadline independently of access request | OPEN | Notification mechanics and applicable computation | Written calculation/control; no assumption that protective request suspends time |
 | **HIGH** | Obtain complete E.G. 745 file/index, native act and routing trace | DRAFT PREPARED | Authorised production/preservation filing | Receipt plus production or reasoned refusal |
+| **HIGH** | Reconcile the 20/21-Aug central acknowledgement with E.G. 745 | OUTSTANDING | Technical Secretariat routing/destination record; E.G. 745 association/index and examined-corpus record | Proof of destination and association, or an express statement that no association occurred |
 | **HIGH** | Obtain DP 1901 Fiscal report and later judicial act | OUTSTANDING | Court/Fiscalía file production using NIG | Certified report, docket/index, transmission and decision |
 | **HIGH** | Complete six named Fiscalía files | OUTSTANDING | File-specific requests using references/NIGs | Certified files/indices and source-specific comparison matrices |
 | **HIGH** | Fix DIP 2 correction treatment | OUTSTANDING | Incorporation/routing/reconsideration records for `REGAGE26e00026303869` | Official response or certified file trace |
@@ -109,7 +114,7 @@ RPL 3319/2025, referenced by the DIP 2 correction, is not RPL 2523/2025. DP 1901
 
 **Ready now:** source-controlled merits matrix; reposición draft; separate access/native-copy/preservation draft; exact registered-source attachment; proceedings-specific production requests; bilingual public correction.
 
-**Blocked on production:** complete E.G. 745 administrative file, institutional routing/decision chain, six-file source inventories, DP 1901 report/later decision, post-correction DIP 2 treatment, certified 2023 hearing record and complete RPL 2523 roll.
+**Blocked on production:** complete E.G. 745 administrative file, institutional routing/decision chain, destination/association/treatment of the 20/21-August centrally acknowledged Inspection-directed communication, six-file source inventories, DP 1901 report/later decision, post-correction DIP 2 treatment, certified 2023 hearing record and complete RPL 2523 roll.
 
 **Counsel control:** effective notification/date computation, route election, standing, direct-review deadline, final annex selection, filing authority and any route-specific escalation.
 
