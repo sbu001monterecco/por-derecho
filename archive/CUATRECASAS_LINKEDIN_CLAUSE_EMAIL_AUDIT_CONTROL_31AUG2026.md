@@ -2,9 +2,9 @@
 
 **Control date:** 31 August 2026
 
-**Final publication-branch base SHA:** `77a3d30b8cf5d6a13d3a527caafa8972e058d5f8`
+**Final publication-branch base SHA:** `8cb83f50abc0c67d121b89d499ba91f931d5b24c`
 
-**Branch:** `codex/cuatrecasas-clause-email-audit-final-20260831`
+**Branch:** `codex/cuatrecasas-clause-email-audit-publish-20260831`
 
 **Initial state:** `REMOTE_SOURCE` after push; merge and deployment remain gated
 
