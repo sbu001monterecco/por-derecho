@@ -93,7 +93,20 @@ require(source_lifecycle.get("pull_request") == 1240 and source_lifecycle.get("p
 require(source_lifecycle.get("merge_sha") == "ea62df4d0476a210623536cfdb735bf9c7136ab7", "source merge evidence drift")
 require(source_lifecycle.get("pages_deployment") == "LIVE_VERIFIED_PAGES_RUN_33340554512" and source_lifecycle.get("live_readback") == "LIVE_VERIFIED_12_OF_12_ROUTES_AND_CONTROLLED_DATA", "source deployment/readback evidence drift")
 migration = manifest.get("projection_migration", {})
-require(migration.get("target") == "assets/data/proceedings-master-public-v1.json" and migration.get("state") == "PR_OPEN" and migration.get("pull_request") == 1235, "allowlisted projection migration is not separately controlled")
+require(
+    migration.get("target") == "assets/data/proceedings-master-public-v1.json"
+    and migration.get("state") == "LIVE_VERIFIED"
+    and migration.get("pull_request") == 1235
+    and migration.get("reviewed_head_sha") == "40ccc3c699bcc1147a9ac65a52e93fec240633ce"
+    and migration.get("reviewed_tree_sha") == "c64ae7547fed024ad0e82397f09fc5f61e2f5da7"
+    and migration.get("merge_sha") == "e13652bb8b3f51dd050c431a58e2bd70b83f5676"
+    and migration.get("merge_tree_sha") == "c64ae7547fed024ad0e82397f09fc5f61e2f5da7"
+    and migration.get("pages_run_id") == 33342771113
+    and migration.get("pages_run_number") == 1314
+    and migration.get("live_readback") == "PASS_16_OF_16_INTENDED_CRITICAL_RESOURCES"
+    and migration.get("controlling_manifest") == "publication-manifests/all-proceedings-interlinkability-20260830.json",
+    "allowlisted projection migration lacks exact LIVE_VERIFIED #1235 evidence",
+)
 live_evidence = manifest.get("live_verification_evidence", {})
 require(live_evidence.get("status") == "PASS" and live_evidence.get("pages_run_id") == 33340554512, "source live verification evidence missing")
 require(live_evidence.get("source_merge_sha") == "ea62df4d0476a210623536cfdb735bf9c7136ab7", "source live verification head drift")

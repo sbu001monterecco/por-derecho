@@ -35,9 +35,12 @@ type without a primary institutional source.
 PR #1236's historical `LIVE_VERIFIED` evidence covers the canonical-CSV runtime
 projection that was then deployed. PR #1235 separately migrates those browser
 surfaces to the deterministic allowlisted derivative
-`assets/data/proceedings-master-public-v1.json`. That migration remains
-`PR_OPEN` until its own merge, deployment and live readback; it does not alter
-the source-pending identity boundary.
+`assets/data/proceedings-master-public-v1.json`. That migration is
+`LIVE_VERIFIED`: reviewed head `40ccc3c699bcc1147a9ac65a52e93fec240633ce`,
+reviewed/merge tree `c64ae7547fed024ad0e82397f09fc5f61e2f5da7`, merge
+`e13652bb8b3f51dd050c431a58e2bd70b83f5676`, Pages run `33342771113` / #1314
+and bounded live readback. It does not alter the source-pending identity
+boundary, create a caret or establish a direct/contextual proceeding edge.
 
 The same canonical row drives the English and Spanish public register and map.
 This gives reciprocal discovery between the register and map without creating

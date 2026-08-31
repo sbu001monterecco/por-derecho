@@ -84,6 +84,31 @@ def require(condition: bool, label: str) -> None:
         errors.append(label)
 
 
+def require_pr1235_live_migration(
+    migration: dict,
+    target: str,
+    label: str,
+    *,
+    dependent_targets: list[str] | None = None,
+) -> None:
+    require(migration.get("target") == target, f"{label} target changed")
+    if dependent_targets is not None:
+        require(migration.get("dependent_targets") == dependent_targets, f"{label} dependent targets changed")
+    require(migration.get("state") == "LIVE_VERIFIED", f"{label} is not LIVE_VERIFIED")
+    require(migration.get("pull_request") == 1235, f"{label} PR changed")
+    require(migration.get("reviewed_head_sha") == "40ccc3c699bcc1147a9ac65a52e93fec240633ce", f"{label} reviewed head changed")
+    require(migration.get("reviewed_tree_sha") == "c64ae7547fed024ad0e82397f09fc5f61e2f5da7", f"{label} reviewed tree changed")
+    require(migration.get("merge_sha") == "e13652bb8b3f51dd050c431a58e2bd70b83f5676", f"{label} merge SHA changed")
+    require(migration.get("merge_tree_sha") == "c64ae7547fed024ad0e82397f09fc5f61e2f5da7", f"{label} merge tree changed")
+    require(migration.get("pages_run_id") == 33342771113 and migration.get("pages_run_number") == 1314, f"{label} Pages evidence changed")
+    require(migration.get("live_readback") == "PASS_16_OF_16_INTENDED_CRITICAL_RESOURCES", f"{label} live readback changed")
+    require(
+        migration.get("controlling_manifest")
+        == "publication-manifests/all-proceedings-interlinkability-20260830.json",
+        f"{label} controlling manifest changed",
+    )
+
+
 def read(relative: str) -> str:
     return (ROOT / relative).read_text(encoding="utf-8")
 
@@ -193,7 +218,11 @@ if not errors:
     require("| ME-114 |" in missing_evidence and "`1304/2014`" in missing_evidence, "LZ-REF-044 missing-evidence control ME-114 missing")
     lz_1304_migration = lz_1304_manifest.get("projection_migration", {})
     require(lz_1304_manifest.get("current_state") == "DELETION_SAFE" and lz_1304_manifest.get("state") == "DELETION_SAFE_LIVE_VERIFIED_WITH_OPEN_IDENTITY_EVIDENCE", "LZ-REF-044 historical live/deletion-safe lifecycle changed")
-    require(lz_1304_migration.get("target") == "assets/data/proceedings-master-public-v1.json" and lz_1304_migration.get("state") == "PR_OPEN" and lz_1304_migration.get("pull_request") == 1235, "LZ-REF-044 allowlisted-projection migration is not separately controlled")
+    require_pr1235_live_migration(
+        lz_1304_migration,
+        "assets/data/proceedings-master-public-v1.json",
+        "LZ-REF-044 allowlisted-projection migration",
+    )
     public_field_allowlist = set(public_projection.get("field_allowlist", []))
     forbidden_public_fields = {
         "Primary_Source_Anchor", "Repo_Canonical_Source", "Notes",
@@ -448,13 +477,22 @@ if not errors:
     }
     require(actual_source_corridors == expected_source_corridors == {"T7-COR-001": {"NAT-TES-001", "LZ-TRA-028"}}, "source-controlled Treasury corridor mismatch")
     treasury_migration = treasury_manifest.get("projection_migration", {})
+    require_pr1235_live_migration(
+        treasury_migration,
+        "assets/data/proceedings-interlinkability-v1.json",
+        "Treasury PR #1235 interlinkability migration",
+        dependent_targets=[
+            "assets/data/proceedings-master-public-v1.json",
+            "assets/data/proceedings-case-prism-v1.json",
+        ],
+    )
     require(
-        treasury_migration.get("target") == "assets/data/proceedings-interlinkability-v1.json"
-        and treasury_migration.get("dependent_targets") == ["assets/data/proceedings-master-public-v1.json", "assets/data/proceedings-case-prism-v1.json"]
-        and treasury_migration.get("state") == "PR_OPEN"
-        and treasury_migration.get("pull_request") == 1235
-        and "not LIVE_VERIFIED" in treasury_migration.get("qualification", ""),
-        "Treasury PR #1247 live evidence is not separated from the PR #1235 interlinkability migration",
+        treasury_manifest.get("content_publication", {}).get("pull_request") == 1247
+        and treasury_manifest.get("content_publication", {}).get("merge_sha")
+        == "5939ed3badad20193a4aba05ca62047d6bc6ff89"
+        and treasury_migration.get("merge_sha")
+        == "e13652bb8b3f51dd050c431a58e2bd70b83f5676",
+        "Treasury PR #1247 source publication and PR #1235 projection migration are not kept distinct",
     )
     for cluster in context_clusters:
         cid = cluster.get("id", "<missing context ID>")
@@ -642,20 +680,21 @@ if not errors:
         "GC-REF-031 historical LIVE_VERIFIED projection source changed",
     )
     gc_548_migration = gc_548_manifest.get("projection_migration", {})
-    require(
-        gc_548_migration.get("target") == "assets/data/proceedings-master-public-v1.json"
-        and gc_548_migration.get("state") == "PR_OPEN"
-        and gc_548_migration.get("pull_request") == 1235,
-        "GC-REF-031 allowlisted-projection migration is not separately lifecycle-controlled",
+    require_pr1235_live_migration(
+        gc_548_migration,
+        "assets/data/proceedings-master-public-v1.json",
+        "GC-REF-031 allowlisted-projection migration",
     )
     require(gc_548_manifest.get("interlinking", {}).get("direct_proceeding_edges") == [], "GC-REF-031 manifest invents a direct edge")
     master_projection_migration = master_publication_manifest.get("projection_migration", {})
     require(
-        master_publication_manifest.get("public_projection", {}).get("source") == "canonical_csv_runtime_projection"
-        and master_projection_migration.get("target") == "assets/data/proceedings-master-public-v1.json"
-        and master_projection_migration.get("state") == "PR_OPEN"
-        and master_projection_migration.get("pull_request") == 1235,
-        "Master Register allowlisted-projection migration is not separately lifecycle-controlled",
+        master_publication_manifest.get("public_projection", {}).get("source") == "canonical_csv_runtime_projection",
+        "Master Register historical projection source changed",
+    )
+    require_pr1235_live_migration(
+        master_projection_migration,
+        "assets/data/proceedings-master-public-v1.json",
+        "Master Register allowlisted-projection migration",
     )
 
     lz_4009 = by_id.get("LZ-REF-042", {})
@@ -678,11 +717,10 @@ if not errors:
         "LZ-REF-042 live lifecycle or no-edge boundary changed",
     )
     lz_4009_migration = lz_4009_manifest.get("projection_migration", {})
-    require(
-        lz_4009_migration.get("target") == "assets/data/proceedings-master-public-v1.json"
-        and lz_4009_migration.get("state") == "PR_OPEN"
-        and lz_4009_migration.get("pull_request") == 1235,
-        "LZ-REF-042 allowlisted-projection migration is not separately lifecycle-controlled",
+    require_pr1235_live_migration(
+        lz_4009_migration,
+        "assets/data/proceedings-master-public-v1.json",
+        "LZ-REF-042 allowlisted-projection migration",
     )
     for trace_only_id in ("GC-REF-031", "LZ-JUD-042", "LZ-REF-042", "LZ-REF-044"):
         trace_only = public_by_id.get(trace_only_id, {})
@@ -870,7 +908,12 @@ if not errors:
 
     lifecycle_denominator = lifecycle.get("implementation_denominator", {})
     lifecycle_completion = lifecycle.get("completion_denominator", {})
-    require(lifecycle.get("current_state") in {"PREPARED_PENDING_MERGE", "PR_OPEN", "CI_GREEN", "MERGED", "DEPLOYED", "LIVE_VERIFIED", "DELETION_SAFE"}, "interlinkability lifecycle state is invalid")
+    require(lifecycle.get("current_state") == "LIVE_VERIFIED", "interlinkability lifecycle is not LIVE_VERIFIED")
+    require(lifecycle.get("state") == "LIVE_VERIFIED_WITH_ACCEPTED_PUBLICATION_BOUNDARY_GAP", "interlinkability qualified lifecycle state changed")
+    require(lifecycle.get("merge_sha") == "e13652bb8b3f51dd050c431a58e2bd70b83f5676", "interlinkability closeout merge SHA changed")
+    require(lifecycle.get("deployment_evidence", {}).get("run_id") == 33342771113, "interlinkability Pages evidence changed")
+    require(lifecycle.get("verification", {}).get("live_http_readback") is True, "interlinkability live readback is not recorded")
+    require(lifecycle.get("verification", {}).get("deletion_safe") is False, "interlinkability incorrectly claims deletion safety")
     require(lifecycle_denominator.get("public_records_traceable") == 106, "lifecycle public trace denominator mismatch")
     require(lifecycle_denominator.get("public_exact_proceedings") == 85 and lifecycle_denominator.get("public_exact_dispositions") == 85, "lifecycle exact interlink denominator mismatch")
     require(lifecycle_denominator.get("direct_procedural_pairs") == len(relationships) == 17, "lifecycle direct-pair denominator mismatch")
@@ -884,6 +927,14 @@ if not errors:
     require(lifecycle_completion.get("actor_specific_knowledge_receipt_trace") == "GAP_NOT_MODELLED", "lifecycle overstates actor-specific knowledge/receipt tracing")
     require(lifecycle_completion.get("exact_id_to_dossier_source_route_coverage") == "GAP_DENOMINATOR_NOT_ESTABLISHED", "lifecycle overstates exact-ID dossier/source routing")
     require(lifecycle_completion.get("exact_proceeding_full_finite_test_coverage") == "GAP_0_OF_85_AT_DISPOSITION_LEVEL", "lifecycle overstates exact-proceeding finite actionability")
+    require(lifecycle_completion.get("tracked_operational_source_unpublishing") == "GAP_ACCEPTED_PUBLICLY_ACCESSIBLE", "accepted operational-source exposure gap changed")
+    require(lifecycle_completion.get("deletion_safe_continuity") == "GAP_ACCEPTED_OPERATIONAL_CSV_PUBLICATION_BOUNDARY", "deletion-safe boundary changed")
+    boundary_gap = lifecycle.get("accepted_publication_boundary_gap", {})
+    require(boundary_gap.get("status") == "UNRESOLVED_ACCEPTED_FOR_THIS_RELEASE", "accepted publication-boundary gap state changed")
+    require(boundary_gap.get("resource") == "archive/PROCEEDINGS_MASTER_REGISTER.csv", "accepted publication-boundary resource changed")
+    require(boundary_gap.get("observed_http_status") == 200, "accepted publication-boundary HTTP observation changed")
+    require(boundary_gap.get("release_tree_sha256") == "267b37574a8cfb96af258d0dfdbd694d506a9c03572b42f3fb1c10376516d294", "accepted release-tree CSV hash changed")
+    require(boundary_gap.get("deletion_safe") is False, "accepted publication-boundary gap cannot be deletion-safe")
     recovery_companions = {
         "archive/GC_548_2023_PLAZA2_T1_CARET_CONTINUITY_CONTROL_30AUG2026.md",
         "archive/DP3205_2014_ARRECIFE_SOURCE_TRANSLATION_AUTHORITY_ALLEGATIONS_CONTROL_30AUG2026.md",

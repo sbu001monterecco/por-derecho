@@ -75,9 +75,17 @@
       "assets/data/proceedings-master-public-v1.json",
       "assets/data/proceedings-case-prism-v1.json"
     ],
-    "state": "PR_OPEN",
+    "state": "LIVE_VERIFIED",
     "pull_request": 1235,
-    "qualification": "The LIVE_VERIFIED evidence for PR #1247 certifies its earlier source snapshot. PR #1235 separately limits NAT-TES-001 direct routing to X-WB-005 and represents LZ-TRA-028 and NAT-AID-001 only through controlled contextual structures. That interlinkability migration is not LIVE_VERIFIED until PR #1235 merges, deploys and passes independent readback."
+    "reviewed_head_sha": "40ccc3c699bcc1147a9ac65a52e93fec240633ce",
+    "reviewed_tree_sha": "c64ae7547fed024ad0e82397f09fc5f61e2f5da7",
+    "merge_sha": "e13652bb8b3f51dd050c431a58e2bd70b83f5676",
+    "merge_tree_sha": "c64ae7547fed024ad0e82397f09fc5f61e2f5da7",
+    "pages_run_id": 33342771113,
+    "pages_run_number": 1314,
+    "live_readback": "PASS_16_OF_16_INTENDED_CRITICAL_RESOURCES",
+    "controlling_manifest": "publication-manifests/all-proceedings-interlinkability-20260830.json",
+    "qualification": "The LIVE_VERIFIED evidence for PR #1247 continues to certify its earlier Treasury source snapshot. PR #1235's separate interlinkability migration is now LIVE_VERIFIED by its exact reviewed tree, merge, Pages #1314, bounded readback and bilingual browser exercise: NAT-TES-001 routes directly only to X-WB-005, while LZ-TRA-028 and NAT-AID-001 appear only through controlled contextual structures."
   },
   "merge_sha": "5939ed3badad20193a4aba05ca62047d6bc6ff89",
   "deployment_evidence": {

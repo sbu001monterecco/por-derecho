@@ -169,11 +169,19 @@ if (
         "assets/data/proceedings-master-public-v1.json",
         "assets/data/proceedings-case-prism-v1.json",
     ]
-    or migration.get("state") != "PR_OPEN"
+    or migration.get("state") != "LIVE_VERIFIED"
     or migration.get("pull_request") != 1235
+    or migration.get("reviewed_head_sha") != "40ccc3c699bcc1147a9ac65a52e93fec240633ce"
+    or migration.get("reviewed_tree_sha") != "c64ae7547fed024ad0e82397f09fc5f61e2f5da7"
+    or migration.get("merge_sha") != "e13652bb8b3f51dd050c431a58e2bd70b83f5676"
+    or migration.get("merge_tree_sha") != "c64ae7547fed024ad0e82397f09fc5f61e2f5da7"
+    or migration.get("pages_run_id") != 33342771113
+    or migration.get("pages_run_number") != 1314
+    or migration.get("live_readback") != "PASS_16_OF_16_INTENDED_CRITICAL_RESOURCES"
+    or migration.get("controlling_manifest") != "publication-manifests/all-proceedings-interlinkability-20260830.json"
 ):
     fail("PR #1235 Treasury interlinkability migration boundary is missing or stale")
-if "not LIVE_VERIFIED" not in migration.get("qualification", ""):
+if publication.get("pull_request") != 1247 or publication.get("merge_sha") == migration.get("merge_sha"):
     fail("PR #1247 live evidence is not kept separate from the PR #1235 projection migration")
 evidence = data.get("publication_evidence", {})
 if evidence.get("merge_sha") != publication.get("merge_sha") or evidence.get("pages", {}).get("run_id") != 33341536674:

@@ -16,6 +16,7 @@ on:
       - 'en/sun-park-takeover-7-june-2018/index.html'
       - 'es/arrecife-1103-2018-cadena-procesal/index.html'
       - 'es/toma-control-sun-park-7-junio-2018/index.html'
+      - 'publication-manifests/arrecife-1103-2018-caret-interlink-20260830.json'
       - 'scripts/audit_arrecife_1103_caret_interlink.py'
       - '.github/workflows/audit-arrecife-1103-caret-interlink.yml'
   push:
@@ -34,6 +35,7 @@ on:
       - 'en/sun-park-takeover-7-june-2018/index.html'
       - 'es/arrecife-1103-2018-cadena-procesal/index.html'
       - 'es/toma-control-sun-park-7-junio-2018/index.html'
+      - 'publication-manifests/arrecife-1103-2018-caret-interlink-20260830.json'
       - 'scripts/audit_arrecife_1103_caret_interlink.py'
       - '.github/workflows/audit-arrecife-1103-caret-interlink.yml'
 

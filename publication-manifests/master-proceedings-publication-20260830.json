@@ -87,13 +87,21 @@
   "projection_migration": {
     "target": "assets/data/proceedings-master-public-v1.json",
     "derivation": "DETERMINISTIC_ALLOWLIST_FROM_CANONICAL_REGISTER",
-    "state": "PR_OPEN",
+    "state": "LIVE_VERIFIED",
     "pull_request": 1235,
+    "reviewed_head_sha": "40ccc3c699bcc1147a9ac65a52e93fec240633ce",
+    "reviewed_tree_sha": "c64ae7547fed024ad0e82397f09fc5f61e2f5da7",
+    "merge_sha": "e13652bb8b3f51dd050c431a58e2bd70b83f5676",
+    "merge_tree_sha": "c64ae7547fed024ad0e82397f09fc5f61e2f5da7",
+    "pages_run_id": 33342771113,
+    "pages_run_number": 1314,
+    "live_readback": "PASS_16_OF_16_INTENDED_CRITICAL_RESOURCES",
+    "controlling_manifest": "publication-manifests/all-proceedings-interlinkability-20260830.json",
     "expected_source_files": [
       "assets/data/proceedings-master-public-v1.json",
       "scripts/build_public_proceedings_projection.py"
     ],
-    "qualification": "PR #1235 replaces browser-side operational-CSV filtering with a deterministic allowlisted public derivative. This migration is not LIVE_VERIFIED until that PR merges, deploys and passes independent readback."
+    "qualification": "PR #1235 replaced browser-side operational-CSV filtering with the deterministic allowlisted public derivative and is LIVE_VERIFIED by its exact reviewed tree, merge, Pages #1314, bounded readback and bilingual browser exercise. Direct HTTP exposure of the tracked operational CSV remains the separately accepted unresolved publication-boundary gap recorded in the controlling manifest."
   },
   "interlinking": {
     "sitewide_navigation": true,
