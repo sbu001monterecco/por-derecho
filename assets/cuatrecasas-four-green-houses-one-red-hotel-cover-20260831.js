@@ -1,15 +1,33 @@
 (() => {
   const path = window.location.pathname.replace(/\/+$/, '/');
-  const isEn = path.endsWith('/en/cuatrecasas-sun-park/');
-  const isEs = path.endsWith('/es/cuatrecasas-sun-park/');
-  if (!isEn && !isEs) return;
+  const isCuatrecasasEn = path.endsWith('/en/cuatrecasas-sun-park/');
+  const isCuatrecasasEs = path.endsWith('/es/cuatrecasas-sun-park/');
+  const isBookEn = path.endsWith('/en/books/four-green-houses-one-red-hotel/');
+  const isBookEs = path.endsWith('/es/libros/four-green-houses-one-red-hotel/');
+  const versionedCover = 'four-green-houses-one-red-hotel-20260831.jpg';
+
+  // Cache-proof the visible book cover without rewriting the established book
+  // route or deleting the historical stable-path fallback in the HTML source.
+  if (isBookEn || isBookEs) {
+    const cover = document.querySelector('.book-cover img');
+    if (cover) {
+      cover.src = `../../../assets/book-covers/locked/${versionedCover}`;
+      cover.setAttribute('data-versioned-cover', '20260831');
+    }
+    const ogImage = document.querySelector('meta[property="og:image"]');
+    if (ogImage) {
+      ogImage.content = `https://sbu001monterecco.github.io/por-derecho/assets/book-covers/locked/${versionedCover}`;
+    }
+    return;
+  }
+
+  if (!isCuatrecasasEn && !isCuatrecasasEs) return;
   if (document.querySelector('[data-four-green-houses-cover-link]')) return;
 
-  const base = path.includes('/es/') ? '../' : '../';
-  const bookHref = isEn
+  const bookHref = isCuatrecasasEn
     ? '../books/four-green-houses-one-red-hotel/'
     : '../libros/four-green-houses-one-red-hotel/';
-  const imageHref = '../../assets/book-covers/locked/four-green-houses-one-red-hotel.jpg';
+  const imageHref = `../../assets/book-covers/locked/${versionedCover}`;
 
   const section = document.createElement('section');
   section.className = 'section alt';
@@ -17,20 +35,20 @@
   section.innerHTML = `
     <div class="shell record">
       <div style="display:grid;grid-template-columns:minmax(230px,.72fr) minmax(0,1.28fr);gap:clamp(1.2rem,4vw,2.4rem);align-items:center;background:#0f252c;color:#fff;border-radius:22px;padding:clamp(1rem,3vw,1.7rem);box-shadow:0 20px 48px rgba(15,37,44,.2)">
-        <a href="${bookHref}" aria-label="${isEn ? 'Open 4 Green Houses, One Red Hotel' : 'Abrir 4 Green Houses, One Red Hotel'}" style="display:block">
+        <a href="${bookHref}" aria-label="${isCuatrecasasEn ? 'Open 4 Green Houses, One Red Hotel' : 'Abrir 4 Green Houses, One Red Hotel'}" style="display:block">
           <img src="${imageHref}" alt="4 Green Houses, One Red Hotel" width="500" height="625" loading="lazy" style="display:block;width:100%;height:auto;border-radius:14px;box-shadow:0 14px 34px rgba(0,0,0,.35)">
         </a>
         <div>
-          <p class="eyeline" style="color:#f3d17a">${isEn ? 'BOOK · VISUAL METAPHOR · DOCUMENTARY RECORD' : 'LIBRO · METÁFORA VISUAL · REGISTRO DOCUMENTAL'}</p>
+          <p class="eyeline" style="color:#f3d17a">${isCuatrecasasEn ? 'BOOK · VISUAL METAPHOR · DOCUMENTARY RECORD' : 'LIBRO · METÁFORA VISUAL · REGISTRO DOCUMENTAL'}</p>
           <h2 style="color:#fff;margin:.25rem 0 .7rem">4 Green Houses, One Red Hotel</h2>
-          <p style="font-size:1.08rem;line-height:1.65;color:#e7eeee">${isEn
+          <p style="font-size:1.08rem;line-height:1.65;color:#e7eeee">${isCuatrecasasEn
             ? 'Four green houses surround one red hotel: an original visual metaphor for professional readiness, fragmented legal structures and one real hotel under legal and economic pressure. The artwork is a narrative device, not a finding of liability and not an assertion that any actor joined a common plan.'
             : 'Cuatro casas verdes rodean un hotel rojo: una metáfora visual original sobre preparación profesional, fragmentación jurídica y un hotel real sometido a presión jurídica y económica. La imagen es un recurso narrativo, no una declaración de responsabilidad ni una afirmación de que ningún actor se integró en un plan común.'}</p>
-          <p style="line-height:1.55;color:#cfdcdb">${isEn
+          <p style="line-height:1.55;color:#cfdcdb">${isCuatrecasasEn
             ? 'The book landing page connects the metaphor to the controlled record: mandate → knowledge → act or omission → communication → fee-enforcement inversion → causation, defence and remedy.'
             : 'La página del libro conecta la metáfora con el registro controlado: mandato → conocimiento → acción u omisión → comunicación → inversión por ejecución de honorarios → causalidad, defensa y remedio.'}</p>
-          <p><a class="button" href="${bookHref}" style="background:#f3d17a;color:#10262d">${isEn ? 'Open the book landing page →' : 'Abrir la página del libro →'}</a></p>
-          <p class="small" style="color:#cfdcdb;margin-bottom:0">${isEn
+          <p><a class="button" href="${bookHref}" style="background:#f3d17a;color:#10262d">${isCuatrecasasEn ? 'Open the book landing page →' : 'Abrir la página del libro →'}</a></p>
+          <p class="small" style="color:#cfdcdb;margin-bottom:0">${isCuatrecasasEn
             ? 'Independent editorial artwork. No Monopoly® logo, board, mascot, cards, typography or branded game pieces are used.'
             : 'Obra editorial independiente. No se utilizan el logotipo Monopoly®, el tablero, la mascota, las tarjetas, la tipografía ni las piezas de juego de marca.'}</p>
         </div>
