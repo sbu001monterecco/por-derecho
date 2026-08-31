@@ -2,7 +2,7 @@
 
 **Control date:** 31 August 2026
 
-**Final publication-branch base SHA:** `8cb83f50abc0c67d121b89d499ba91f931d5b24c`
+**Final publication-branch base SHA:** `d26d592950d6297220ef4f3bc6d9abd895953dad`
 
 **Branch:** `codex/cuatrecasas-clause-email-audit-publish-20260831`
 
