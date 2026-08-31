@@ -1,19 +1,25 @@
 {
   "schema": "por-derecho.caepr-caret-scope.v1",
   "control_id": "PD-CAEPR-CARET-UNITARY-DIGEST-20260826-01",
-  "control_date": "2026-08-28",
+  "control_date": "2026-08-31",
   "scope": "Immediately preceding unitary non-fragmented reverse-engineered digest and the distinct named eligible CAEPR objects on which it materially relied.",
   "protocol": ".github/governance/CAEPR_CARET_IDENTITY_AND_ALL_IS_VERIFICATION_PROTOCOL_26AUG2026.md",
   "registry_id": "PD-SP-IDENTITY-REGISTRY-001",
   "baseline_sha": "6f406db2c6c4eb6cf69fc3ce4e6fab0b3de7052a",
+  "correction_addendum": {
+    "date": "2026-08-31",
+    "supersedes_summary_arithmetic_only": "2026-08-28",
+    "reason": "The 28 August summary declared 21 confirmed although the current confirmed_objects array contains 20 distinct records. Admitting Clubotel La Dorada, S.L. as PD-SP-O-0075 resolves that legal person and its instrument-specific ONA-side role only; it does not resolve or collapse the distinct Ona Hotels / ONA commercial perimeter at PD-SP-O-0033.",
+    "historical_record_preserved_at": "archive/CAEPR_CARET_UNITARY_DIGEST_VERIFICATION_26AUG2026.md"
+  },
   "result": {
     "verdict": "PARTIAL_NOT_ALL_IS_CARET",
     "denominator": 24,
-    "confirmed": 21,
-    "pending": 3,
+    "confirmed": 20,
+    "pending": 4,
     "suspended": 0,
-    "coverage_fraction": "21/24",
-    "coverage_percent_exact": "87.5",
+    "coverage_fraction": "20/24",
+    "coverage_percent_exact": "83.33333333333333",
     "counts_by_type": {
       "PERSON": 1,
       "ORGANISATION": 17,
@@ -52,6 +58,14 @@
       "state":"CARET_PENDING",
       "reason":"The federated registry record still carries an exact-entity-open status even though ops/CANONICAL_ENTITY_NAMES.json records Matkator, S.L.U., NIF B76621689, sheet TF 52875 and a BORME source.",
       "next_step":"Reconcile PD-SP-O-0003 and the operational exact-identity queue to the canonical-name control, then rerun this scope."
+    },
+    {
+      "candidate":"Ona Hotels / ONA",
+      "existing_id":"PD-SP-O-0033",
+      "type":"ORGANISATION",
+      "state":"CARET_PENDING",
+      "reason":"PD-SP-O-0033 remains a controlled commercial-perimeter label whose exact legal entity is open. PD-SP-O-0075 resolves Clubotel La Dorada, S.L. and its instrument-specific ONA-side role for the signed 6 June 2018 operating instrument only; it does not resolve or collapse the distinct Ona Hotels / ONA perimeter or every ONA-labelled act.",
+      "next_step":"Identify the exact legal person for each ONA-labelled instrument or mandate and reconcile each to immutable CAEPR records while keeping Clubotel La Dorada, S.L. separate."
     },
     {
       "candidate":"PP 1041/2017",

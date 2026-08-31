@@ -6,6 +6,12 @@ const { chromium } = await import(process.env.PSR_PLAYWRIGHT_MODULE || 'playwrig
 const base = (process.env.PSR_BASE_URL || 'http://127.0.0.1:8000/por-derecho').replace(/\/$/, '');
 const out = process.env.PSR_SCREENSHOT_DIR || 'artifacts/acta-meeting-lineage';
 const browserPath = process.env.PSR_BROWSER_PATH || undefined;
+const transientHttpStatuses = new Set([502, 503, 504]);
+const loadAttempts = Number.parseInt(
+  process.env.PSR_LOAD_ATTEMPTS || (base.startsWith('https://') ? '3' : '1'),
+  10,
+);
+const retryDelayMs = Number.parseInt(process.env.PSR_RETRY_DELAY_MS || '1000', 10);
 const scriptDir = path.dirname(fileURLToPath(import.meta.url));
 const manifestPath = path.resolve(scriptDir, '../evidence/community/actas/meeting-lineage-index-v1.json');
 const manifest = JSON.parse(fs.readFileSync(manifestPath, 'utf8'));
@@ -104,11 +110,46 @@ try {
     for (const [device, viewport] of Object.entries(viewports)) {
       const page = await browser.newPage({ viewportSize: viewport });
       const errors = [];
-      page.on('pageerror', error => errors.push(`pageerror: ${error.message}`));
-      page.on('console', message => {
-        if (message.type() === 'error') errors.push(`console: ${message.text()}`);
+      const pageErrors = [];
+      const consoleErrors = [];
+      const transientResponses = [];
+      let loading = true;
+      page.on('pageerror', error => {
+        const message = `pageerror: ${error.message}`;
+        if (loading) pageErrors.push(message);
+        else errors.push(message);
       });
-      const response = await page.goto(`${base}${testCase.route}`, { waitUntil: 'networkidle' });
+      page.on('console', message => {
+        if (message.type() !== 'error') return;
+        const error = `console: ${message.text()}`;
+        if (loading) consoleErrors.push(error);
+        else errors.push(error);
+      });
+      page.on('response', response => {
+        if (transientHttpStatuses.has(response.status())) {
+          const error = `HTTP ${response.status()} ${response.url()}`;
+          if (loading) transientResponses.push(error);
+          else errors.push(error);
+        }
+      });
+
+      let response;
+      for (let attempt = 1; attempt <= loadAttempts; attempt += 1) {
+        loading = true;
+        pageErrors.length = 0;
+        consoleErrors.length = 0;
+        transientResponses.length = 0;
+        response = await page.goto(`${base}${testCase.route}`, { waitUntil: 'networkidle' });
+        const transientConsoleError = consoleErrors.some(error => /(?:status(?: code)?(?: of)?|HTTP)\s*(?:502|503|504)\b/i.test(error));
+        const retryableFailure = transientResponses.length > 0 || transientConsoleError;
+        if (!retryableFailure || attempt === loadAttempts) {
+          loading = false;
+          break;
+        }
+        await page.waitForTimeout(retryDelayMs * attempt);
+      }
+      loading = false;
+      errors.push(...pageErrors, ...consoleErrors, ...transientResponses);
       if (!response || !response.ok()) errors.push(`HTTP ${response?.status() || 'no response'}`);
 
       if (testCase.kind === 'room') {
