@@ -93,7 +93,9 @@ Focused Gmail/LexNET searches in this pass did **not** locate an identifiable Co
 
 #### 2018 Registry implementation checkpoint
 
-Cuatrecasas correspondence to the Tías Registry dated 28-Dec-2018 states counsel had learned that a deed concerning LPB free fincas 8508–8536, 8653 and 8654 had entered the Registry in Nov-2018; counsel refers to a later 12-Dec-2018 DIOR authorising sale and a reposición/cancellation/refusal route. Treat this as an **implementation checkpoint only** until the underlying deed, Registry entry, 12-Dec DIOR and LexNET receipts are controlled.
+The controlling family is now `C36-FAM-2018-2019-REGISTRY-NOTICE` in `assets/data/concurso36-court-record-reconstruction-registry-notice-20260831.json`. It registers the native 28-Dec-2018 Cuatrecasas notice and ten attachments, 3-Jan burofax admission, **4-Jan-2019 delivery to the Registry at 11:58**, 8-Jan status report, 9-Jan follow-up, reasoned Registrar response, controlled Registry qualification and later reported 28/3 result. The signed 24-Oct-2019 Auto independently controls the deed date/protocol/transaction, the existence and role of the 12-Dec DIOR, the AC convalidation request and refusal of convalidation. Remaining gaps are the best originals/certified copies and implementation: native/certified deed and payment package, original DIOR and AC filing, certified entries finca by finca, and post-nonconvalidation cancellation/restitution/money/possession/accounting bridge. Do not revert to wording that the notice original or all response/outcome evidence remains wholly pending.
+
+Read `archive/CONCURSO36_REGISTRY_NOTICE_OBREM_CHAIN_31AUG2026.md` for the source-bounded civil/concursal/Registry, criminal-investigative, professional-duty, causation, contrary-evidence and cross-thread handoff analysis.
 
 #### New orphan
 
@@ -106,7 +108,7 @@ Cuatrecasas correspondence to the Tías Registry dated 28-Dec-2018 states counse
 3. **Judge-signed final outcomes** after the 28-Jul-2022 placement of admitted direct revisions before the judge.
 4. Complete **21-Feb-2022 deed/testimonio/presentation/Registry bridge finca-by-finca**, including reconciliation of mortgage/credit entries and legal effect while review routes were pending.
 5. Exact formal **Concurso 36/2012 filing/receipt first notifying the 7-Jun-2018 physical-control/takeover event**, if one exists, plus response/service/review chain.
-6. Underlying **2018 free-finca deed/Registry entry, 12-Dec-2018 DIOR, reposición receipt and final result**.
+6. Best-original/certified **2018 deed/payment package, original 12-Dec-2018 DIOR, complete AC convalidation filing and challenge record, certified Registry entries finca by finca, and post-24-Oct-2019 cancellation/restitution/money/possession/accounting implementation**. Existence/date/purpose and the nonconvalidation outcome are already independently controlled; do not classify the whole family as missing.
 7. Complete **Feb-Oct-2021 protection/new-document/RICPE** chain through every later filing, response and operative consequence; keep the 29-Jul draft unfiled unless later receipt is found.
 8. Actual Concurso 36/2012 **filing/receipt and judicial treatment for ONA/Stoneweg/Varia/Elaia/other funded exits**.
 9. Principal document for AC quarterly-report registration **5367/2022** and its consequence.

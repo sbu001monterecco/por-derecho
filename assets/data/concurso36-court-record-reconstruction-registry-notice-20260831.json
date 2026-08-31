@@ -1,0 +1,135 @@
+{
+  "schema": "por-derecho.concurso36-court-record-reconstruction.registry-notice.v1",
+  "generated": "2026-08-31",
+  "status": "CONTROLLED PUBLIC-SAFE SUPPLEMENT — NOT A CERTIFIED COURT OR LAND-REGISTRY FILE",
+  "purpose": "Register the 28-Dec-2018 to Mar-2019 Tías Registry notice/response/qualification chain, the ten-document source bundle, and the legally distinct 26-Jun-2018 partial-suspension and 24-Oct-2019 non-convalidation decisions.",
+  "source_boundary": "Private email bodies, addresses, provider identifiers and unnecessary personal data are withheld. Opaque evidence IDs and hashes identify controlled working copies; they do not prove authorship, authenticity or truth by themselves.",
+  "additional_families": [
+    {
+      "family_id": "C36-FAM-2018-2019-REGISTRY-NOTICE",
+      "label_es": "2018–2019 · aviso al Registro, entrega, respuesta, calificación y no convalidación",
+      "label_en": "2018–2019 · Registry notice, delivery, response, qualification and non-convalidation",
+      "records": [
+        {
+          "id": "C36-REC-20181228-CUATRECASAS-REGISTRY-NOTICE",
+          "date": "2018-12-28",
+          "record_class": "party_filing",
+          "party": "Cuatrecasas on behalf of the owner-side client",
+          "title": "Direct notice to the Tías Property Registry with ten-document liquidation/suspension bundle",
+          "operative_effect": "Warned that a deed concerning LPB fincas 8508–8536, 8653 and 8654 had been presented and requested refusal/cancellation treatment, relying on the liquidation-plan and appeal/suspension record.",
+          "response_taxonomy": "PROTECTIVE_RESPONSE",
+          "verification": "Native private correspondence and ten PDF attachments directly controlled; public-safe hashes recorded below",
+          "proof_limit": "This is a protective act and a knowledge benchmark. It does not prove that every remedy was available, correctly framed, sustained or exhausted, and it is not a Land Registry presentation entry or judicial filing."
+        },
+        {
+          "id": "C36-REC-20190103-BUROFAX-ADMISSION",
+          "date": "2019-01-03",
+          "record_class": "party_filing",
+          "party": "Owner-side sender",
+          "title": "Burofax admitted for delivery to the Property Registrar",
+          "operative_effect": "Postal custody record marks the Registry notice package as admitted on 3 January 2019.",
+          "response_taxonomy": "PROCEDURAL_ONLY_DISPOSITION",
+          "verification": "Correos delivery-certificate derivative directly reviewed",
+          "proof_limit": "Admission is distinct from delivery and from personal reading by the Registrar."
+        },
+        {
+          "id": "C36-REC-20190104-BUROFAX-DELIVERED",
+          "date": "2019-01-04",
+          "record_class": "registry_record",
+          "issuer": "Correos / Registro de la Propiedad de Tías",
+          "title": "Burofax delivered to the Property Registrar at 11:58",
+          "operative_effect": "The controlled delivery proof records delivery to the Registry on 4 January 2019 at 11:58.",
+          "response_taxonomy": "PROTECTIVE_RESPONSE",
+          "verification": "One-page Correos delivery proof directly reviewed",
+          "proof_limit": "Proves institutional delivery, not which individual first read every enclosure. Independent native-vault preservation/hash and a Registry-stamped copy remain superior custody targets."
+        },
+        {
+          "id": "C36-REC-20190108-REGISTRY-STATUS-CALL",
+          "date": "2019-01-08",
+          "record_class": "registry_record",
+          "issuer": "Owner-side contemporaneous communication record",
+          "title": "Status call records internal handling and expected signature",
+          "operative_effect": "A contemporaneous report states that a Registry staff contact identified only as 'Don Antonio' was away and that the matter was expected to be signed the next day.",
+          "response_taxonomy": "PROCEDURAL_ONLY_DISPOSITION",
+          "verification": "Contemporaneous private correspondence controlled",
+          "proof_limit": "The staff contact's full identity and role are unresolved. He must not be conflated with Antonio Cogolludo or with Registrar Francisco Javier Nieto González."
+        },
+        {
+          "id": "C36-REC-20190109-CUATRECASAS-REGISTRY-FOLLOWUP",
+          "date": "2019-01-09",
+          "record_class": "party_filing",
+          "party": "Cuatrecasas on behalf of the owner-side client",
+          "title": "Follow-up notice sends additional Fiscalía material",
+          "operative_effect": "The owner-side legal team supplemented the Registry notice package with additional complaint material.",
+          "response_taxonomy": "PROTECTIVE_RESPONSE",
+          "verification": "Native private correspondence directly controlled",
+          "proof_limit": "Transmission of a complaint proves notice of allegations, not their truth or their proper determination by the Registrar."
+        },
+        {
+          "id": "C36-REC-20190109-REGISTRAR-RESPONSE",
+          "date": "2019-01-09",
+          "record_class": "registry_record",
+          "issuer": "Francisco Javier Nieto González, Property Registrar",
+          "title": "Registrar confirms internal receipt and gives a standing/qualification response",
+          "operative_effect": "The Registrar stated that Registry staff had passed him the email and written documents; he considered the complainant outside the standing categories of Article 6 of the Mortgage Act, directed the allegations to the insolvency court, and explained that qualification operates from the properly presented title and Registry entries and would not be disclosed to that non-presenting third party.",
+          "response_taxonomy": "ADVERSE_SUBSTANTIVE_RESPONSE",
+          "verification": "Native private response directly controlled",
+          "proof_limit": "This is affirmative counterevidence against a claim that the Registry simply ignored the notice or proves collaboration. It does not decide whether the qualification was substantively correct or whether another procedural route was available."
+        },
+        {
+          "id": "C36-REC-20190109-REGISTRY-QUALIFICATION-2018-DEED",
+          "date": "2019-01-09",
+          "record_class": "registry_record",
+          "issuer": "Registro de la Propiedad de Tías",
+          "title": "Registry qualification identifies an ob rem obstacle and suspends partial registration",
+          "operative_effect": "The controlled copy identifies an ob rem obstacle affecting fincas 8536, 8653 and 8654 and records partial suspension of registration.",
+          "response_taxonomy": "PARTIAL_RESPONSE",
+          "verification": "Private-custody copy of the qualification directly reviewed",
+          "proof_limit": "A certified current/historical finca-by-finca Registry package remains required to establish the exact entries, dates, cancellations and downstream legal effect against third parties."
+        },
+        {
+          "id": "C36-REC-20190320-REGISTRY-RESULT-REPORT",
+          "date": "2019-03-20",
+          "record_class": "registry_record",
+          "issuer": "Owner-side later correspondence",
+          "title": "Later report distinguishes twenty-eight registered fincas and three not registered",
+          "operative_effect": "Later correspondence reports that twenty-eight fincas had been registered and that fincas 8536, 8653 and 8654 had not.",
+          "response_taxonomy": "IMPLEMENTATION_OR_ACCOUNTING_CHAIN_OPEN",
+          "verification": "Contemporaneous private correspondence directly controlled",
+          "proof_limit": "Reported result only. Certified entries, presentation journal, withdrawal/correction acts and the complete post-24-Oct-2019 Registry bridge remain open."
+        }
+      ],
+      "open_points": [
+        "Obtain certified presentation-journal and historical Registry entries for all thirty-one listed fincas, including every inscription, suspension, cancellation, withdrawal and later title.",
+        "Preserve the native burofax and delivery proof in the private evidence vault with a stable evidence ID and SHA-256; the public record currently establishes the reviewed delivery fact but does not claim completed vault custody.",
+        "Recover the original 12-Dec-2018 Diligencia de Ordenación and the complete 20-Mar-2019 AC convalidation request, notwithstanding their independent corroboration in the signed 24-Oct-2019 Auto.",
+        "Reconcile consideration, bank movement, accounting, restitution/set-off, possession and physical condition after non-convalidation and before the 2021 re-tender/2022 title.",
+        "Resolve the attachment anomaly: the CAM Annex II copy lists finca 8579 and omits 8519, while the later plan/deed perimeter uses the contiguous 8508–8536 sequence; also explain the contemporaneous reference to 'four fincas'."
+      ]
+    }
+  ],
+  "attachment_evidence_bundle": [
+    {"evidence_id":"EVID-2018-REG-NOTICE-ATT-01","description":"LPB reposición against the liquidation-plan approval treatment","pages":4,"sha256":"be2580c8f112992e09afacb820a848ab4a22a18fb98fe7fb0bc942dfc31c2870"},
+    {"evidence_id":"EVID-2018-REG-NOTICE-ATT-02","description":"Insolvency Administrator report","pages":2,"sha256":"69bee623d50d63245a0b0d2012f91c1c1d669aa0d6cc002d8880eb47b2c4ab26"},
+    {"evidence_id":"EVID-2018-REG-NOTICE-ATT-03","description":"CAM offer / Annex II copy","pages":13,"sha256":"c4b1a374d57e391a18ab30f3ee68a12289d6a649f42fb8eba8bf6ff0a4f5ee0a","integrity_note":"Copy lists finca 8579 and omits 8519; do not silently harmonise."},
+    {"evidence_id":"EVID-2018-REG-NOTICE-ATT-04","description":"Insolvency Administrator liquidation plan","pages":16,"sha256":"aa255f3d4660815bc8019df05e4e534778e3b6a3ccf8b4a3a46d83ab30151d39"},
+    {"evidence_id":"EVID-2018-REG-NOTICE-ATT-05","description":"4-Jun-2018 clarification-order package","pages":4,"sha256":"3967fc7030ce045f5b5d7ef698229023e9e1cd8b6e2df58c41382775e075d557","integrity_note":"The source filename suggested 16 April; the reviewed content includes the 4 June order."},
+    {"evidence_id":"EVID-2018-REG-NOTICE-ATT-06","description":"16-Apr-2018 liquidation-plan approval package","pages":8,"sha256":"2f0d6e97e81ade3a5c3c104fdc248e342a479a0440e6371525765c8a3c4a1b50"},
+    {"evidence_id":"EVID-2018-REG-NOTICE-ATT-07","description":"Property Registry notes bundle","pages":18,"sha256":"4bb344b12c3fdb5f931352af9e5a191830136e5df8bfe27caf539f111bfe886f"},
+    {"evidence_id":"EVID-2018-REG-NOTICE-ATT-08","description":"Aweswell reposición","pages":13,"sha256":"60ad417a2fb4c6cbb3335d2b85e35f0547efbc08e0d3f9ffdf621499a852ed29"},
+    {"evidence_id":"EVID-2018-REG-NOTICE-ATT-09","description":"LPB appeal requesting broader suspension","pages":18,"sha256":"60922c8436d1f7cb0bf616e97c256372a33a4c385af16cb20e1f0d99c267c842"},
+    {"evidence_id":"EVID-2018-REG-NOTICE-ATT-10","description":"26-Jun-2018 partial-suspension Auto","pages":2,"sha256":"4f23ad7e30191b1d32c8708851729f42151c3b095476255d5fe1a5fc43509099"}
+  ],
+  "legal_assessment": {
+    "civil_concursal_registry": "On the current record the 26-Jun-2018 Auto used the then-available Article 197.6 LC mechanism and was operative within its express scope; nothing located establishes that it was void. Its wording suspended only the listed mortgaged-finca realisation lane and left other estate liquidation unchanged. That literal scope gave the AC a non-frivolous implementation defence, but did not itself amend the approved unitary architecture, cancel ob rem links or supply prior judicial authorisation for the separate 28-Nov deed. The signed 24-Oct-2019 Auto is the controlling corrective decision: it characterised the partial approach as erroneous in light of the unitary plan, found the separate transaction lacked prior judicial authorisation, set aside the 12-Dec LAJ direction and refused convalidation.",
+    "criminal_investigative": "Error, an adverse ruling or later correction does not establish procedural fraud, judicial prevaricación or a punishable-insolvency offence. A procedural-fraud hypothesis requires a specified deception or manipulation, the recipient court, actual judicial error, an economically prejudicial resolution and actor-specific causation. Because the deed preceded the 12-Dec LAJ direction, that direction cannot have caused execution of the already signed deed. Any criminal hypothesis must identify another causal representation/use chain. The phrase 'estafa concursal' is retained only as party shorthand, not as a standalone adjudicated offence.",
+    "professional_duty": "The 28-Dec notice, 4-Jan delivery and 9-Jan follow-up are affirmative protective acts and defeat a total-abandonment formulation against Cuatrecasas. They also create a finite knowledge/follow-through benchmark: mandate, advice, standing analysis, judicial/Registry steps, response to the qualification, restitution/accounting work, client warnings, limitation advice, file handover and later fee enforcement must be tested separately. A fee-enforcement procedural-fraud theory requires the exact allegedly deceptive representation/title, judicial reliance, resulting decision and patrimonial loss; no common plan with CAM, the AC or the judge is established by this chain.",
+    "contrary_exculpatory": [
+      "The 26-Jun Auto expressly permitted liquidation of other estate assets to continue.",
+      "The Registrar gave a reasoned standing and qualification-scope response rather than remaining silent.",
+      "Cuatrecasas performed a documented protective Registry intervention and follow-up.",
+      "The 24-Oct-2019 Auto corrected the earlier procedural state and refused convalidation.",
+      "No controlled source presently proves a coordinated plan, knowing judicial injustice or criminal intent by any actor."
+    ]
+  }
+}
