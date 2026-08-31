@@ -1,0 +1,2710 @@
+{
+  "schema_version": "1.0.0",
+  "generated": "2026-08-31",
+  "status": "PUBLIC_SAFE_DERIVED_INTERCONNECTIVITY_PROJECTION",
+  "title_en": "Community ACTAs, the 2022 parallel track and public-authority files",
+  "title_es": "ACTAs comunitarias, vía paralela de 2022 y expedientes de autoridades públicas",
+  "scope_en": "A controlled bridge among all public ACTA/minutes packages, the 4 February 2022 Community event, the separate 2021-2022 adjudication/deed sequence and the current finite set of public administrative, regulatory, tax, public-aid, supervisory, registration, ombudsman and professional-discipline records in the Master Proceedings Register.",
+  "scope_es": "Puente controlado entre todos los paquetes públicos de ACTA/minutas, el evento comunitario de 4 de febrero de 2022, la secuencia separada de adjudicación/escritura de 2021-2022 y el conjunto finito actual de registros públicos administrativos, regulatorios, tributarios, de ayudas, supervisión, registro, defensoría y disciplina profesional del Registro Maestro de Procedimientos.",
+  "global_boundary_en": "Temporal proximity and shared subject matter justify targeted production and comparison only. They do not prove that the Community meeting caused the adjudication, that the adjudication caused the meeting, that any authority received or relied on the ACTA, or that any person agreed, knew, intended, offended or incurred liability.",
+  "global_boundary_es": "La proximidad temporal y la materia compartida solo justifican producción y comparación dirigidas. No prueban que la junta causara la adjudicación, que la adjudicación causara la junta, que autoridad alguna recibiera o utilizara el ACTA, ni que persona alguna acordara, conociera, pretendiera, delinquiera o incurriera en responsabilidad.",
+  "sources": [
+    {
+      "path": "evidence/community/actas/public-index.json",
+      "sha256": "56382624b8e9eeb5e1a77fb7e2874ab0ae5f8f037af0a2afd28eb2b37053d543"
+    },
+    {
+      "path": "assets/data/proceedings-master-public-v1.json",
+      "sha256": "17aa8f8c3d59a833df95092019877d301b8b7cdd7878a1fa7b3aa978c7666fe9"
+    },
+    {
+      "path": "assets/data/proceedings-case-prism-v1.json",
+      "sha256": "8268665437a78ab12bfbd23725176d814d7f37c748ece07ed5f12518a5319a7a"
+    },
+    {
+      "path": "archive/judicial-intelligence/decisions.jsonl",
+      "sha256": "3625415e1c3b50e82a8a7aad8b540347ddbaab778afe19cee976025f6a997e60"
+    },
+    {
+      "path": "assets/data/sun-park-post-7june-2018-2022-continuing-harm-v1.json",
+      "sha256": "46e33cadca395020b16bb657b84b9322479bb24f7d38fc324da03d195a4599e4"
+    },
+    {
+      "path": "assets/data/community-acta-authority-link-assertions-v1.json",
+      "sha256": "46013ac60a19ee892c2ee1964603d6823ead7f70420277d60b8660458acc8cc6"
+    }
+  ],
+  "coverage": {
+    "public_acta_packages": 20,
+    "public_authority_files": 49,
+    "authority_groups": 6,
+    "evidentiary_axes": 7,
+    "community_2022_milestones": 3,
+    "adjudication_and_deed_milestones": 6,
+    "verified_primary_authority_files": 33,
+    "verified_procedural_authority_files": 8,
+    "open_or_primary_pending_authority_files": 8
+  },
+  "actas": [
+    {
+      "id": "SP-ACTA-2008-04-29",
+      "date": "2008-04-29",
+      "title_en": "Extraordinary General Meeting of Owners - 29 April 2008",
+      "title_es": "Junta General Extraordinaria de Propietarios - 29 abril 2008",
+      "body": "Propietarios / capa de formación de CEXP",
+      "meeting_type": "extraordinary",
+      "status": "located-package-digitised-public",
+      "source_document_id": "SP-SRC-ACTA-2008-04-29-B",
+      "source_pages": 5,
+      "manual_source_line_verification": false,
+      "route_en": "en/community-instrumentalisation/acta-document-room/2008-04-29/",
+      "route_es": "es/comunidad-instrumentalizacion/sala-documental-actas/2008-04-29/",
+      "manifest": "evidence/community/actas/2008-04-29/manifest.json",
+      "limitations_en": "Five-page copy; the final notarial sheet and nominal lists are withheld for privacy. OCR is not certified line by line.",
+      "limitations_es": "Copia de cinco páginas; la hoja notarial final y las listas nominales se reservan por privacidad. El OCR no está certificado línea por línea.",
+      "proposition_links": [
+        {
+          "proposition_id": "P10",
+          "relationship_type": "COMMUNITY_AUTHORITY_SOURCE_FAMILY",
+          "boundary_en": "The ACTA package is a source for event-specific authority analysis, not proof of validity, service, complete attendance or later use.",
+          "boundary_es": "El paquete de ACTA es fuente para analizar la autoridad de cada evento, no prueba de validez, notificación, asistencia completa ni uso posterior."
+        }
+      ]
+    },
+    {
+      "id": "SP-ACTA-2008-07-15",
+      "date": "2008-07-15",
+      "title_en": "Extraordinary General Meeting of the Owners' Community - 15 July 2008",
+      "title_es": "Junta General Extraordinaria de la Comunidad - 15 julio 2008",
+      "body": "Comunidad de Propietarios",
+      "meeting_type": "extraordinary",
+      "status": "located-package-digitised-public",
+      "source_document_id": "SP-SRC-ACTA-2008-07-15",
+      "source_pages": 9,
+      "manual_source_line_verification": false,
+      "route_en": "en/community-instrumentalisation/acta-document-room/2008-07-15/",
+      "route_es": "es/comunidad-instrumentalizacion/sala-documental-actas/2008-07-15/",
+      "manifest": "evidence/community/actas/2008-07-15/manifest.json",
+      "limitations_en": "Nine-page copy recovered from a later transmission; the six-page variant is partial. OCR is not certified line by line.",
+      "limitations_es": "Copia de nueve páginas recuperada de una transmisión posterior; la variante de seis páginas es parcial. El OCR no está certificado línea por línea.",
+      "proposition_links": [
+        {
+          "proposition_id": "P10",
+          "relationship_type": "COMMUNITY_AUTHORITY_SOURCE_FAMILY",
+          "boundary_en": "The ACTA package is a source for event-specific authority analysis, not proof of validity, service, complete attendance or later use.",
+          "boundary_es": "El paquete de ACTA es fuente para analizar la autoridad de cada evento, no prueba de validez, notificación, asistencia completa ni uso posterior."
+        }
+      ]
+    },
+    {
+      "id": "SP-ACTA-2008-07-15-CEXP",
+      "date": "2008-07-15",
+      "title_en": "15 July 2008 · 17:00 universal CEXP meeting",
+      "title_es": "15 julio 2008 · reunión universal CEXP de las 17:00",
+      "body": "CEXP",
+      "meeting_type": "universal",
+      "status": "located-package-digitised-public",
+      "source_document_id": "SP-SRC-ACTA-2008-07-15-CEXP-17H",
+      "source_pages": 6,
+      "manual_source_line_verification": false,
+      "route_en": "en/community-instrumentalisation/acta-document-room/2008-07-15-cexp/",
+      "route_es": "es/comunidad-instrumentalizacion/sala-documental-actas/2008-07-15-cexp/",
+      "manifest": "evidence/community/actas/2008-07-15-cexp/manifest.json",
+      "limitations_en": "Distinct six-page CEXP source for the 17:00 universal meeting. It is not conflated with the 12:00 Owners' Community meeting. Public image and text remain fully redacted by default until page-by-page privacy review is complete. OCR is not certified line by line.",
+      "limitations_es": "Fuente CEXP distinta de seis páginas para la reunión universal de las 17:00. No se confunde con la junta de la Comunidad de Propietarios de las 12:00. La imagen y el texto públicos quedan íntegramente redactados por defecto hasta completar la revisión de privacidad página por página. El OCR no está certificado línea por línea.",
+      "proposition_links": [
+        {
+          "proposition_id": "P10",
+          "relationship_type": "COMMUNITY_AUTHORITY_SOURCE_FAMILY",
+          "boundary_en": "The ACTA package is a source for event-specific authority analysis, not proof of validity, service, complete attendance or later use.",
+          "boundary_es": "El paquete de ACTA es fuente para analizar la autoridad de cada evento, no prueba de validez, notificación, asistencia completa ni uso posterior."
+        }
+      ]
+    },
+    {
+      "id": "SP-ACTA-2008-07-25",
+      "date": "2008-07-25",
+      "title_en": "Extraordinary General Meeting of the Owners' Community - 25 July 2008",
+      "title_es": "Junta General Extraordinaria de la Comunidad - 25 julio 2008",
+      "body": "Comunidad de Propietarios",
+      "meeting_type": "extraordinary",
+      "status": "located-package-digitised-public",
+      "source_document_id": "SP-SRC-ACTA-2008-07-25",
+      "source_pages": 4,
+      "manual_source_line_verification": false,
+      "route_en": "en/community-instrumentalisation/acta-document-room/2008-07-25/",
+      "route_es": "es/comunidad-instrumentalizacion/sala-documental-actas/2008-07-25/",
+      "manifest": "evidence/community/actas/2008-07-25/manifest.json",
+      "limitations_en": "Four-page copy; the three-page variant is partial. OCR is not certified line by line.",
+      "limitations_es": "Copia de cuatro páginas; la variante de tres páginas es parcial. El OCR no está certificado línea por línea.",
+      "proposition_links": [
+        {
+          "proposition_id": "P10",
+          "relationship_type": "COMMUNITY_AUTHORITY_SOURCE_FAMILY",
+          "boundary_en": "The ACTA package is a source for event-specific authority analysis, not proof of validity, service, complete attendance or later use.",
+          "boundary_es": "El paquete de ACTA es fuente para analizar la autoridad de cada evento, no prueba de validez, notificación, asistencia completa ni uso posterior."
+        }
+      ]
+    },
+    {
+      "id": "SP-ACTA-2008-12-17",
+      "date": "2008-12-17",
+      "title_en": "Extraordinary General Meeting of the Owners' Community - 17 December 2008",
+      "title_es": "Junta General Extraordinaria de la Comunidad - 17 diciembre 2008",
+      "body": "Comunidad de Propietarios",
+      "meeting_type": "extraordinary",
+      "status": "located-package-digitised-public",
+      "source_document_id": "SP-SRC-ACTA-2008-12-17",
+      "source_pages": 10,
+      "manual_source_line_verification": false,
+      "route_en": "en/community-instrumentalisation/acta-document-room/2008-12-17/",
+      "route_es": "es/comunidad-instrumentalizacion/sala-documental-actas/2008-12-17/",
+      "manifest": "evidence/community/actas/2008-12-17/manifest.json",
+      "limitations_en": "Located copy; not the diligenced minutes book or a certified copy. OCR is not certified line by line.",
+      "limitations_es": "Copia localizada; no es el libro diligenciado ni una copia certificada. El OCR no está certificado línea por línea.",
+      "proposition_links": [
+        {
+          "proposition_id": "P10",
+          "relationship_type": "COMMUNITY_AUTHORITY_SOURCE_FAMILY",
+          "boundary_en": "The ACTA package is a source for event-specific authority analysis, not proof of validity, service, complete attendance or later use.",
+          "boundary_es": "El paquete de ACTA es fuente para analizar la autoridad de cada evento, no prueba de validez, notificación, asistencia completa ni uso posterior."
+        }
+      ]
+    },
+    {
+      "id": "SP-ACTA-2009-05-28",
+      "date": "2009-05-28",
+      "title_en": "Ordinary General Meeting of the Owners' Community - 28 May 2009",
+      "title_es": "Junta General Ordinaria de la Comunidad - 28 mayo 2009",
+      "body": "Comunidad de Propietarios",
+      "meeting_type": "ordinary",
+      "status": "located-package-digitised-public",
+      "source_document_id": "SP-SRC-ACTA-2009-05-28",
+      "source_pages": 13,
+      "manual_source_line_verification": false,
+      "route_en": "en/community-instrumentalisation/acta-document-room/2009-05-28/",
+      "route_es": "es/comunidad-instrumentalizacion/sala-documental-actas/2009-05-28/",
+      "manifest": "evidence/community/actas/2009-05-28/manifest.json",
+      "limitations_en": "Located copy; not the diligenced minutes book or a certified copy. OCR is not certified line by line.",
+      "limitations_es": "Copia localizada; no es el libro diligenciado ni una copia certificada. El OCR no está certificado línea por línea.",
+      "proposition_links": [
+        {
+          "proposition_id": "P10",
+          "relationship_type": "COMMUNITY_AUTHORITY_SOURCE_FAMILY",
+          "boundary_en": "The ACTA package is a source for event-specific authority analysis, not proof of validity, service, complete attendance or later use.",
+          "boundary_es": "El paquete de ACTA es fuente para analizar la autoridad de cada evento, no prueba de validez, notificación, asistencia completa ni uso posterior."
+        }
+      ]
+    },
+    {
+      "id": "SP-ACTA-2011-02-02",
+      "date": "2011-02-02",
+      "title_en": "Ordinary General Meeting of the Owners' Community - 2 February 2011",
+      "title_es": "Junta General Ordinaria de la Comunidad - 2 febrero 2011",
+      "body": "Comunidad de Propietarios",
+      "meeting_type": "ordinary",
+      "status": "located-package-digitised-public",
+      "source_document_id": "SP-SRC-ACTA-2011-02-02-A",
+      "source_pages": 6,
+      "manual_source_line_verification": false,
+      "route_en": "en/community-instrumentalisation/acta-document-room/2011-02-02/",
+      "route_es": "es/comunidad-instrumentalizacion/sala-documental-actas/2011-02-02/",
+      "manifest": "evidence/community/actas/2011-02-02/manifest.json",
+      "limitations_en": "The coherent six-page sequence is used; two other variants remain identified. OCR is not certified line by line.",
+      "limitations_es": "Se adopta la copia de seis páginas con secuencia coherente; otras dos variantes quedan identificadas. El OCR no está certificado línea por línea.",
+      "proposition_links": [
+        {
+          "proposition_id": "P10",
+          "relationship_type": "COMMUNITY_AUTHORITY_SOURCE_FAMILY",
+          "boundary_en": "The ACTA package is a source for event-specific authority analysis, not proof of validity, service, complete attendance or later use.",
+          "boundary_es": "El paquete de ACTA es fuente para analizar la autoridad de cada evento, no prueba de validez, notificación, asistencia completa ni uso posterior."
+        }
+      ]
+    },
+    {
+      "id": "SP-ACTA-2011-06-22",
+      "date": "2011-06-22",
+      "title_en": "Extraordinary General Meeting of the Owners' Community - 22 June 2011",
+      "title_es": "Junta General Extraordinaria de la Comunidad - 22 junio 2011",
+      "body": "Comunidad de Propietarios",
+      "meeting_type": "extraordinary",
+      "status": "located-package-digitised-public",
+      "source_document_id": "SP-SRC-ACTA-2011-06-22-B",
+      "source_pages": 16,
+      "manual_source_line_verification": false,
+      "route_en": "en/community-instrumentalisation/acta-document-room/2011-06-22/",
+      "route_es": "es/comunidad-instrumentalizacion/sala-documental-actas/2011-06-22/",
+      "manifest": "evidence/community/actas/2011-06-22/manifest.json",
+      "limitations_en": "Located copy; not the diligenced minutes book or a certified copy. OCR is not certified line by line.",
+      "limitations_es": "Copia localizada; no es el libro diligenciado ni una copia certificada. El OCR no está certificado línea por línea.",
+      "proposition_links": [
+        {
+          "proposition_id": "P10",
+          "relationship_type": "COMMUNITY_AUTHORITY_SOURCE_FAMILY",
+          "boundary_en": "The ACTA package is a source for event-specific authority analysis, not proof of validity, service, complete attendance or later use.",
+          "boundary_es": "El paquete de ACTA es fuente para analizar la autoridad de cada evento, no prueba de validez, notificación, asistencia completa ni uso posterior."
+        }
+      ]
+    },
+    {
+      "id": "SP-ACTA-2012-08-10",
+      "date": "2012-08-10",
+      "title_en": "Minutes - 2012-08-10",
+      "title_es": "ACTA - 2012-08-10",
+      "body": "Comunidad de Propietarios",
+      "meeting_type": "ordinary",
+      "status": "located-package-digitised-public",
+      "source_document_id": "SP-SRC-ACTA-2012-08-10",
+      "source_pages": 4,
+      "manual_source_line_verification": false,
+      "route_en": "en/community-instrumentalisation/acta-document-room/2012-08-10/",
+      "route_es": "es/comunidad-instrumentalizacion/sala-documental-actas/2012-08-10/",
+      "manifest": "evidence/community/actas/2012-08-10/manifest.json",
+      "limitations_en": "Four-page DOCX minutes located in three email chains. They state that no resolution was put to a vote; the president's statement and announced objection annex remain unlocated. OCR is not certified line by line.",
+      "limitations_es": "ACTA DOCX de cuatro páginas localizada en tres cadenas de correo. Consigna que no se sometió ningún acuerdo a votación; siguen sin localizarse el escrito del presidente y la objeción anunciados como anexos. El OCR no está certificado línea por línea.",
+      "proposition_links": [
+        {
+          "proposition_id": "P10",
+          "relationship_type": "COMMUNITY_AUTHORITY_SOURCE_FAMILY",
+          "boundary_en": "The ACTA package is a source for event-specific authority analysis, not proof of validity, service, complete attendance or later use.",
+          "boundary_es": "El paquete de ACTA es fuente para analizar la autoridad de cada evento, no prueba de validez, notificación, asistencia completa ni uso posterior."
+        }
+      ]
+    },
+    {
+      "id": "SP-ACTA-2014-04-10",
+      "date": "2014-04-10",
+      "title_en": "10 April 2014 · competing LPB/Gil meeting",
+      "title_es": "10 abril 2014 · junta competidora LPB/Gil",
+      "body": "Comunidad de Propietarios",
+      "meeting_type": "ordinary",
+      "status": "located-package-digitised-public",
+      "source_document_id": "SP-SRC-ACTA-2014-04-10",
+      "source_pages": 155,
+      "manual_source_line_verification": false,
+      "route_en": "en/community-instrumentalisation/acta-document-room/2014-04-10/",
+      "route_es": "es/comunidad-instrumentalizacion/sala-documental-actas/2014-04-10/",
+      "manifest": "evidence/community/actas/2014-04-10/manifest.json",
+      "limitations_en": "The 155-page 422B notarial package comprises 54 pages/28 folios of the ACTA DE PRESENCIA, 100 incorporated pages and a simple-copy certification. It includes notice, proxies, attendance/voting, objections, debt, the 2012 president's statement, circulation/withholding, 2012 minutes, accounts and budget. The 2012 objection writing and complete typed version remain open. Authenticity, original circulation and validity are not established; every public page is fully redacted. OCR is not certified line by line.",
+      "limitations_es": "Paquete notarial 422B de 155 páginas: 54 páginas/28 folios del ACTA DE PRESENCIA, 100 páginas incorporadas y certificación de copia simple. Incluye aviso, poderes, asistencia/voto, objeciones, deuda, la declaración presidencial de 2012, circulación/retención, ACTA de 2012, cuentas y presupuesto. La objeción escrita de 2012 y la variante mecanografiada completa siguen abiertas. La autenticidad, circulación original y validez no se establecen; todas las páginas públicas quedan íntegramente redactadas. El OCR no está certificado línea por línea.",
+      "proposition_links": [
+        {
+          "proposition_id": "P10",
+          "relationship_type": "COMMUNITY_AUTHORITY_SOURCE_FAMILY",
+          "boundary_en": "The ACTA package is a source for event-specific authority analysis, not proof of validity, service, complete attendance or later use.",
+          "boundary_es": "El paquete de ACTA es fuente para analizar la autoridad de cada evento, no prueba de validez, notificación, asistencia completa ni uso posterior."
+        }
+      ]
+    },
+    {
+      "id": "SP-ACTA-2014-08-28-CEXP",
+      "date": "2014-08-28",
+      "title_en": "General Meeting of the Exploitation Community - 28 August 2014",
+      "title_es": "Junta General de la Comunidad de Explotación - 28 agosto 2014",
+      "body": "CEXP",
+      "meeting_type": "extraordinary",
+      "status": "located-package-digitised-public",
+      "source_document_id": "SP-SRC-ACTA-2014-08-28-CEXP-PUBLIC-CONTROL",
+      "source_pages": 3,
+      "manual_source_line_verification": false,
+      "route_en": "en/community-instrumentalisation/acta-document-room/2014-08-28-cexp/",
+      "route_es": "es/comunidad-instrumentalizacion/sala-documental-actas/2014-08-28-cexp/",
+      "manifest": "evidence/community/actas/2014-08-28-cexp/manifest.json",
+      "limitations_en": "Three-page CEXP instrument; the 104,006-byte public control, 90,821-byte conversion and registered 90,821-byte Drive export are distinct binaries. It is not Owners' Community minutes. OCR is not certified line by line.",
+      "limitations_es": "Instrumento CEXP de tres páginas; el control público de 104.006 bytes, la conversión de 90.821 bytes y el export Drive registrado de 90.821 bytes son binarios distintos. No es un acta de la Comunidad de Propietarios. El OCR no está certificado línea por línea.",
+      "proposition_links": [
+        {
+          "proposition_id": "P10",
+          "relationship_type": "COMMUNITY_AUTHORITY_SOURCE_FAMILY",
+          "boundary_en": "The ACTA package is a source for event-specific authority analysis, not proof of validity, service, complete attendance or later use.",
+          "boundary_es": "El paquete de ACTA es fuente para analizar la autoridad de cada evento, no prueba de validez, notificación, asistencia completa ni uso posterior."
+        }
+      ]
+    },
+    {
+      "id": "SP-ACTA-2014-08-28-CP",
+      "date": "2014-08-28",
+      "title_en": "Extraordinary General Meeting of the Owners' Community - 28 August 2014",
+      "title_es": "Junta General Extraordinaria de la Comunidad de Propietarios - 28 agosto 2014",
+      "body": "Comunidad de Propietarios",
+      "meeting_type": "extraordinary",
+      "status": "located-package-digitised-public",
+      "source_document_id": "SP-SRC-ACTA-2014-08-28-COM",
+      "source_pages": 21,
+      "manual_source_line_verification": false,
+      "route_en": "en/community-instrumentalisation/acta-document-room/2014-08-28-cp/",
+      "route_es": "es/comunidad-instrumentalizacion/sala-documental-actas/2014-08-28-cp/",
+      "manifest": "evidence/community/actas/2014-08-28-cp/manifest.json",
+      "limitations_en": "Located copy; not the diligenced minutes book or a certified copy. OCR is not certified line by line.",
+      "limitations_es": "Copia localizada; no es el libro diligenciado ni una copia certificada. El OCR no está certificado línea por línea.",
+      "proposition_links": [
+        {
+          "proposition_id": "P10",
+          "relationship_type": "COMMUNITY_AUTHORITY_SOURCE_FAMILY",
+          "boundary_en": "The ACTA package is a source for event-specific authority analysis, not proof of validity, service, complete attendance or later use.",
+          "boundary_es": "El paquete de ACTA es fuente para analizar la autoridad de cada evento, no prueba de validez, notificación, asistencia completa ni uso posterior."
+        }
+      ]
+    },
+    {
+      "id": "SP-ACTA-2015-11-19",
+      "date": "2015-11-19",
+      "title_en": "Extraordinary General Meeting of the Owners' Community - 19 November 2015",
+      "title_es": "Junta General Extraordinaria de la Comunidad - 19 noviembre 2015",
+      "body": "Comunidad de Propietarios",
+      "meeting_type": "extraordinary",
+      "status": "located-package-digitised-public",
+      "source_document_id": "SP-SRC-ACTA-2015-11-19-C",
+      "source_pages": 38,
+      "manual_source_line_verification": false,
+      "route_en": "en/community-instrumentalisation/acta-document-room/2015-11-19/",
+      "route_es": "es/comunidad-instrumentalizacion/sala-documental-actas/2015-11-19/",
+      "manifest": "evidence/community/actas/2015-11-19/manifest.json",
+      "limitations_en": "Located copy; not the diligenced minutes book or a certified copy. OCR is not certified line by line.",
+      "limitations_es": "Copia localizada; no es el libro diligenciado ni una copia certificada. El OCR no está certificado línea por línea.",
+      "proposition_links": [
+        {
+          "proposition_id": "P10",
+          "relationship_type": "COMMUNITY_AUTHORITY_SOURCE_FAMILY",
+          "boundary_en": "The ACTA package is a source for event-specific authority analysis, not proof of validity, service, complete attendance or later use.",
+          "boundary_es": "El paquete de ACTA es fuente para analizar la autoridad de cada evento, no prueba de validez, notificación, asistencia completa ni uso posterior."
+        }
+      ]
+    },
+    {
+      "id": "SP-ACTA-2016-04-26",
+      "date": "2016-04-26",
+      "title_en": "Ordinary General Meeting of the Owners' Community - 26 April 2016",
+      "title_es": "Junta General Ordinaria de la Comunidad - 26 abril 2016",
+      "body": "Comunidad de Propietarios",
+      "meeting_type": "ordinary",
+      "status": "located-package-digitised-public",
+      "source_document_id": "SP-SRC-ACTA-2016-04-26-A",
+      "source_pages": 77,
+      "manual_source_line_verification": false,
+      "route_en": "en/community-instrumentalisation/acta-document-room/2016-04-26/",
+      "route_es": "es/comunidad-instrumentalizacion/sala-documental-actas/2016-04-26/",
+      "manifest": "evidence/community/actas/2016-04-26/manifest.json",
+      "limitations_en": "The controlling family contains 77 pages. Its two binaries are visually and textually equivalent; the 24-, 47- and 50-page packages are partial. Pages 14-77 are annexes wholly withheld in the public copy. OCR is not certified line by line.",
+      "limitations_es": "La familia controlante contiene 77 páginas. Sus dos binarios son visual y textualmente equivalentes; los paquetes de 24, 47 y 50 páginas son parciales. Las páginas 14-77 son anexos reservados íntegramente en la copia pública. El OCR no está certificado línea por línea.",
+      "proposition_links": [
+        {
+          "proposition_id": "P10",
+          "relationship_type": "COMMUNITY_AUTHORITY_SOURCE_FAMILY",
+          "boundary_en": "The ACTA package is a source for event-specific authority analysis, not proof of validity, service, complete attendance or later use.",
+          "boundary_es": "El paquete de ACTA es fuente para analizar la autoridad de cada evento, no prueba de validez, notificación, asistencia completa ni uso posterior."
+        }
+      ]
+    },
+    {
+      "id": "SP-ACTA-2017-04-07-CEXP",
+      "date": "2017-04-07",
+      "title_en": "General Meeting of the Exploitation Community - 7 April 2017",
+      "title_es": "Junta General de la Comunidad de Explotación - 7 abril 2017",
+      "body": "CEXP",
+      "meeting_type": "extraordinary",
+      "status": "located-package-digitised-public",
+      "source_document_id": "SP-SRC-ACTA-2017-04-07-CEXP-PUBLIC-CONTROL",
+      "source_pages": 2,
+      "manual_source_line_verification": false,
+      "route_en": "en/community-instrumentalisation/acta-document-room/2017-04-07-cexp/",
+      "route_es": "es/comunidad-instrumentalizacion/sala-documental-actas/2017-04-07-cexp/",
+      "manifest": "evidence/community/actas/2017-04-07-cexp/manifest.json",
+      "limitations_en": "The public control and registered Drive export are each 84,535 bytes but have different SHA-256 values; they remain separate binaries. OCR is not certified line by line.",
+      "limitations_es": "El control público y el export Drive registrado tienen 84.535 bytes, pero SHA-256 distintos; se conservan como binarios separados. El OCR no está certificado línea por línea.",
+      "proposition_links": [
+        {
+          "proposition_id": "P10",
+          "relationship_type": "COMMUNITY_AUTHORITY_SOURCE_FAMILY",
+          "boundary_en": "The ACTA package is a source for event-specific authority analysis, not proof of validity, service, complete attendance or later use.",
+          "boundary_es": "El paquete de ACTA es fuente para analizar la autoridad de cada evento, no prueba de validez, notificación, asistencia completa ni uso posterior."
+        }
+      ]
+    },
+    {
+      "id": "SP-ACTA-2017-06-12",
+      "date": "2017-06-12",
+      "title_en": "Ordinary General Meeting of the Owners' Community - 12 June 2017",
+      "title_es": "Junta General Ordinaria de la Comunidad - 12 junio 2017",
+      "body": "Comunidad de Propietarios",
+      "meeting_type": "ordinary",
+      "status": "located-package-digitised-public",
+      "source_document_id": "SP-SRC-ACTA-2017-06-12",
+      "source_pages": 13,
+      "manual_source_line_verification": false,
+      "route_en": "en/community-instrumentalisation/acta-document-room/2017-06-12/",
+      "route_es": "es/comunidad-instrumentalizacion/sala-documental-actas/2017-06-12/",
+      "manifest": "evidence/community/actas/2017-06-12/manifest.json",
+      "limitations_en": "Located copy; not the diligenced minutes book or a certified copy. OCR is not certified line by line.",
+      "limitations_es": "Copia localizada; no es el libro diligenciado ni una copia certificada. El OCR no está certificado línea por línea.",
+      "proposition_links": [
+        {
+          "proposition_id": "P10",
+          "relationship_type": "COMMUNITY_AUTHORITY_SOURCE_FAMILY",
+          "boundary_en": "The ACTA package is a source for event-specific authority analysis, not proof of validity, service, complete attendance or later use.",
+          "boundary_es": "El paquete de ACTA es fuente para analizar la autoridad de cada evento, no prueba de validez, notificación, asistencia completa ni uso posterior."
+        }
+      ]
+    },
+    {
+      "id": "SP-ACTA-2018-05-18",
+      "date": "2018-05-18",
+      "title_en": "Ordinary General Meeting of the Owners' Community - 18 May 2018",
+      "title_es": "Junta General Ordinaria de la Comunidad - 18 mayo 2018",
+      "body": "Comunidad de Propietarios",
+      "meeting_type": "ordinary",
+      "status": "located-package-digitised-public",
+      "source_document_id": "SP-SRC-ACTA-2018-05-18-B",
+      "source_pages": 9,
+      "manual_source_line_verification": false,
+      "route_en": "en/community-instrumentalisation/acta-document-room/2018-05-18/",
+      "route_es": "es/comunidad-instrumentalizacion/sala-documental-actas/2018-05-18/",
+      "manifest": "evidence/community/actas/2018-05-18/manifest.json",
+      "limitations_en": "Nine-page control recovered and controlled from ACTAS.zip; authenticity remains open. The second nine-page copy and two partial eight-page variants retain separate IDs, byte counts and SHA-256 values. OCR is not certified line by line.",
+      "limitations_es": "Control de nueve páginas recuperado y controlado desde ACTAS.zip; la autenticidad permanece abierta. La segunda copia de nueve páginas y las dos variantes parciales de ocho páginas conservan IDs, tamaños y SHA-256 separados. El OCR no está certificado línea por línea.",
+      "proposition_links": [
+        {
+          "proposition_id": "P10",
+          "relationship_type": "COMMUNITY_AUTHORITY_SOURCE_FAMILY",
+          "boundary_en": "The ACTA package is a source for event-specific authority analysis, not proof of validity, service, complete attendance or later use.",
+          "boundary_es": "El paquete de ACTA es fuente para analizar la autoridad de cada evento, no prueba de validez, notificación, asistencia completa ni uso posterior."
+        }
+      ]
+    },
+    {
+      "id": "SP-ACTA-2018-07-05",
+      "date": "2018-07-05",
+      "title_en": "Minutes - 2018-07-05",
+      "title_es": "ACTA - 2018-07-05",
+      "body": "Comunidad de Propietarios",
+      "meeting_type": "extraordinary",
+      "status": "located-package-digitised-public",
+      "source_document_id": "SP-SRC-ACTA-2018-07-05",
+      "source_pages": 9,
+      "manual_source_line_verification": false,
+      "route_en": "en/community-instrumentalisation/acta-document-room/2018-07-05/",
+      "route_es": "es/comunidad-instrumentalizacion/sala-documental-actas/2018-07-05/",
+      "manifest": "evidence/community/actas/2018-07-05/manifest.json",
+      "limitations_en": "Exact nine-page copy recovered from ACTAS.zip; the second binary renders identically. OCR is not certified line by line.",
+      "limitations_es": "Copia exacta de nueve páginas recuperada de ACTAS.zip; el segundo binario renderiza idénticamente. El OCR no está certificado línea por línea.",
+      "proposition_links": [
+        {
+          "proposition_id": "P10",
+          "relationship_type": "COMMUNITY_AUTHORITY_SOURCE_FAMILY",
+          "boundary_en": "The ACTA package is a source for event-specific authority analysis, not proof of validity, service, complete attendance or later use.",
+          "boundary_es": "El paquete de ACTA es fuente para analizar la autoridad de cada evento, no prueba de validez, notificación, asistencia completa ni uso posterior."
+        }
+      ]
+    },
+    {
+      "id": "SP-ACTA-2022-02-04",
+      "date": "2022-02-04",
+      "title_en": "Extraordinary General Meeting of the Owners' Community - 4 February 2022",
+      "title_es": "Junta General Extraordinaria de la Comunidad - 4 febrero 2022",
+      "body": "Comunidad de Propietarios",
+      "meeting_type": "extraordinary",
+      "status": "located-package-digitised-public",
+      "source_document_id": "SP-SRC-ACTA-2022-02-04",
+      "source_pages": 7,
+      "manual_source_line_verification": false,
+      "route_en": "en/community-instrumentalisation/acta-document-room/2022-02-04/",
+      "route_es": "es/comunidad-instrumentalizacion/sala-documental-actas/2022-02-04/",
+      "manifest": "evidence/community/actas/2022-02-04/manifest.json",
+      "limitations_en": "Located copy; not the diligenced minutes book or a certified copy. OCR is not certified line by line.",
+      "limitations_es": "Copia localizada; no es el libro diligenciado ni una copia certificada. El OCR no está certificado línea por línea.",
+      "proposition_links": [
+        {
+          "proposition_id": "P10",
+          "relationship_type": "COMMUNITY_AUTHORITY_SOURCE_FAMILY",
+          "boundary_en": "The ACTA package is a source for event-specific authority analysis, not proof of validity, service, complete attendance or later use.",
+          "boundary_es": "El paquete de ACTA es fuente para analizar la autoridad de cada evento, no prueba de validez, notificación, asistencia completa ni uso posterior."
+        }
+      ]
+    },
+    {
+      "id": "SP-MEETING-2022-03-11-RICPE",
+      "date": "2022-03-11",
+      "title_en": "11 March 2022 · scheduled RICPE extraordinary shareholders' meeting",
+      "title_es": "11 marzo 2022 · junta extraordinaria de accionistas RICPE convocada",
+      "body": "corporate",
+      "meeting_type": "scheduled-corporate-meeting",
+      "status": "located-package-digitised-public",
+      "source_document_id": "SP-SRC-NOTICE-RICPE-2022-02-11-5P",
+      "source_pages": 5,
+      "manual_source_line_verification": false,
+      "route_en": "en/community-instrumentalisation/acta-document-room/2022-03-11-ricpe/",
+      "route_es": "es/comunidad-instrumentalizacion/sala-documental-actas/2022-03-11-ricpe/",
+      "manifest": "evidence/community/actas/2022-03-11-ricpe-shareholder-notice/manifest.json",
+      "limitations_en": "The received five-page document is dated 11 February 2022 and attributes to the Board of RIC Private Equity Investment Partners, S.C.R., S.A., through its secretary, a proposed first call on 11 March and second call on 12 March. It records notice and agenda wording but does not prove authorship, actual issuance, service or recipient knowledge. This is not minutes: occurrence, quorum, votes and outcome are unproved. The reference to a 29 December 2021 shareholder resolution is a later recital; its primary records remain unlocated. OCR is not certified line by line.",
+      "limitations_es": "El documento recibido de cinco páginas está fechado el 11 de febrero de 2022 y atribuye al Consejo de RIC Private Equity Investment Partners, S.C.R., S.A., por medio de su secretario, una convocatoria propuesta para primera convocatoria el 11 de marzo y segunda el 12 de marzo. Registra texto de convocatoria y orden del día, pero no prueba autoría, emisión efectiva, servicio o conocimiento del destinatario. No es un ACTA: la celebración, el cuórum, las votaciones y el resultado no están probados. La mención de un acuerdo de accionistas de 29 de diciembre de 2021 es una referencia posterior; sus registros primarios siguen sin localizarse. El OCR no está certificado línea por línea.",
+      "proposition_links": [
+        {
+          "proposition_id": "P10",
+          "relationship_type": "COMMUNITY_AUTHORITY_SOURCE_FAMILY",
+          "boundary_en": "The ACTA package is a source for event-specific authority analysis, not proof of validity, service, complete attendance or later use.",
+          "boundary_es": "El paquete de ACTA es fuente para analizar la autoridad de cada evento, no prueba de validez, notificación, asistencia completa ni uso posterior."
+        }
+      ]
+    }
+  ],
+  "authority_groups": [
+    {
+      "id": "LOCAL_TOURISM_WORKS",
+      "label_en": "Yaiza, Cabildo and tourism/works",
+      "label_es": "Yaiza, Cabildo y turismo/obras",
+      "axis_ids": [
+        "AX-AUTHORITY",
+        "AX-TITLE-BENEFIT"
+      ],
+      "record_count": 21,
+      "boundary_en": "Shared subject matter can justify a dependency test; it does not prove that any file received or relied on the 2022 ACTA.",
+      "boundary_es": "La materia compartida puede justificar una prueba de dependencia; no demuestra que expediente alguno recibiera o utilizara el ACTA de 2022."
+    },
+    {
+      "id": "PUBLIC_FUNDS_INTERNAL_CONTROL",
+      "label_en": "Public funds, European-funds routing and internal control",
+      "label_es": "Fondos públicos, circuito de fondos europeos y control interno",
+      "axis_ids": [
+        "AX-FUNDING",
+        "AX-TITLE-BENEFIT",
+        "AX-AUTHORITY"
+      ],
+      "record_count": 5,
+      "boundary_en": "Programme identity, grant, audit and routing records remain legally separate; no payment, overlap, misuse, false certification or recovery is inferred.",
+      "boundary_es": "La identidad de programa y los registros de concesión, auditoría y remisión siguen separados; no se infiere pago, solapamiento, uso indebido, certificación falsa ni reintegro."
+    },
+    {
+      "id": "MARKET_TAX_SUPERVISION",
+      "label_en": "CNMV, AEAT and market/tax supervision",
+      "label_es": "CNMV, AEAT y supervisión de mercado/tributaria",
+      "axis_ids": [
+        "AX-FUNDING",
+        "AX-TITLE-BENEFIT"
+      ],
+      "record_count": 7,
+      "boundary_en": "A supervisory or tax file tests only its own object, receipt and competence; it does not determine the merits of the Community or insolvency tracks.",
+      "boundary_es": "Un expediente supervisor o tributario examina solo su propio objeto, recepción y competencia; no decide el fondo de las vías comunitaria o concursal."
+    },
+    {
+      "id": "TRANSPARENCY_OMBUDSMAN",
+      "label_en": "Transparency and Ombudsman",
+      "label_es": "Transparencia y Diputado del Común",
+      "axis_ids": [
+        "AX-AUTHORITY"
+      ],
+      "record_count": 4,
+      "boundary_en": "Access, transparency and ombudsman treatment do not establish the truth of the underlying allegations.",
+      "boundary_es": "La tramitación de acceso, transparencia o defensoría no acredita la veracidad de las alegaciones subyacentes."
+    },
+    {
+      "id": "JUDICIAL_POLICE_SUPERVISION",
+      "label_en": "Judicial-governance and police registration/supervision",
+      "label_es": "Registro/supervisión de gobierno judicial y policial",
+      "axis_ids": [
+        "AX-AUTHORITY",
+        "AX-NOTICE-LPB"
+      ],
+      "record_count": 4,
+      "boundary_en": "Registration or supervisory possession is not file incorporation, examination, personal knowledge, agreement, wrongdoing or liability.",
+      "boundary_es": "La posesión registral o supervisora no equivale a incorporación, examen, conocimiento personal, acuerdo, ilicitud ni responsabilidad."
+    },
+    {
+      "id": "PROFESSIONAL_OVERSIGHT",
+      "label_en": "Professional public-law oversight",
+      "label_es": "Supervisión profesional de derecho público",
+      "axis_ids": [
+        "AX-AUTHORITY"
+      ],
+      "record_count": 8,
+      "boundary_en": "Professional-discipline files remain separate from judicial, prosecutorial, Community and public-funds merits.",
+      "boundary_es": "Los expedientes disciplinarios profesionales permanecen separados del fondo judicial, fiscal, comunitario y de fondos públicos."
+    }
+  ],
+  "authority_files": [
+    {
+      "master_id": "CAN-OMB-001",
+      "record_type": "OMBUDSMAN_FILE",
+      "stream": "Ombudsman",
+      "organ": "Diputado del Común",
+      "current_custodian": "Diputado del Común",
+      "reference": "Q26/574",
+      "period": "2026",
+      "connection": "Institutional complaint/review perimeter",
+      "object": "Ombudsman complaint",
+      "status": "No-admission notified 19 Jun 2026; file closed; reconsideration sent 23 Jun 2026",
+      "source_status": "VERIFIED_PRIMARY",
+      "open_reference_gap": "Treatment/result of reconsideration",
+      "group_id": "TRANSPARENCY_OMBUDSMAN",
+      "axis_ids": [
+        "AX-AUTHORITY"
+      ],
+      "proposition_links": [],
+      "relationship_strength": "DEPENDENCY_TEST_ONLY",
+      "boundary_en": "Access, transparency and ombudsman treatment do not establish the truth of the underlying allegations.",
+      "boundary_es": "La tramitación de acceso, transparencia o defensoría no acredita la veracidad de las alegaciones subyacentes."
+    },
+    {
+      "master_id": "GC-GOV-019",
+      "record_type": "GOVERNANCE_SUPERVISION",
+      "stream": "Judicial governance",
+      "organ": "CGPJ",
+      "current_custodian": "CGPJ",
+      "reference": "DI 169/2026",
+      "period": "2026",
+      "connection": "Complaint concerning Sección Mercantil Plaza 1",
+      "object": "Judicial-governance complaint",
+      "status": "Archived; 10 Jul 2026 decision maintained archive",
+      "source_status": "VERIFIED_PRIMARY",
+      "open_reference_gap": "Complete administrative record and material examined",
+      "group_id": "JUDICIAL_POLICE_SUPERVISION",
+      "axis_ids": [
+        "AX-AUTHORITY",
+        "AX-NOTICE-LPB"
+      ],
+      "proposition_links": [
+        {
+          "proposition_id": "P10",
+          "title_en": "Community authority must be proved act by act",
+          "title_es": "La autoridad comunitaria debe probarse acto por acto",
+          "lane_id": "supervision",
+          "status": "NOT_LOCATED",
+          "treatment": "NOT_RAISED_OR_NOT_LOCATED"
+        },
+        {
+          "proposition_id": "P01",
+          "title_en": "Concurso 36/2012 is the central insolvency spine",
+          "title_es": "Concurso 36/2012 es la columna concursal central",
+          "lane_id": "supervision",
+          "status": "CONTEXT",
+          "treatment": "MATERIALLY_RELEVANT_CONTEXT"
+        },
+        {
+          "proposition_id": "P04",
+          "title_en": "The three Audiencia appellate objects share an insolvency-administration dependency",
+          "title_es": "Los tres objetos apelativos de la Audiencia comparten una dependencia de administración concursal",
+          "lane_id": "supervision",
+          "status": "CONTEXT",
+          "treatment": "MATERIALLY_RELEVANT_CONTEXT"
+        },
+        {
+          "proposition_id": "P05",
+          "title_en": "Ministerio Fiscal responses should be readable as one institutional-response chronology",
+          "title_es": "Las respuestas del Ministerio Fiscal deben poder leerse como una cronología institucional única",
+          "lane_id": "supervision",
+          "status": "OPEN",
+          "treatment": "STATUS_UNRESOLVED"
+        },
+        {
+          "proposition_id": "P18",
+          "title_en": "RIC, incentives and ERDF require programme-by-programme dependency tests",
+          "title_es": "RIC, incentivos y FEDER requieren pruebas de dependencia programa por programa",
+          "lane_id": "supervision",
+          "status": "CONTEXT",
+          "treatment": "MATERIALLY_RELEVANT_CONTEXT"
+        },
+        {
+          "proposition_id": "P17",
+          "title_en": "AC conduct and remuneration are different appellate questions",
+          "title_es": "Conducta y remuneración del AC son cuestiones apelativas distintas",
+          "lane_id": "supervision",
+          "status": "CONTEXT",
+          "treatment": "MATERIALLY_RELEVANT_CONTEXT"
+        },
+        {
+          "proposition_id": "P09",
+          "title_en": "Supervisory files test institutional handling, not the merits of the underlying proceedings",
+          "title_es": "Los expedientes supervisores examinan el tratamiento institucional, no el fondo de los procedimientos subyacentes",
+          "lane_id": "supervision",
+          "status": "DIRECT",
+          "treatment": "DIRECTLY_IN_FILE"
+        }
+      ],
+      "relationship_strength": "DEPENDENCY_TEST_ONLY",
+      "boundary_en": "Registration or supervisory possession is not file incorporation, examination, personal knowledge, agreement, wrongdoing or liability.",
+      "boundary_es": "La posesión registral o supervisora no equivale a incorporación, examen, conocimiento personal, acuerdo, ilicitud ni responsabilidad."
+    },
+    {
+      "master_id": "GC-GOV-020",
+      "record_type": "GOVERNANCE_SUPERVISION",
+      "stream": "Judicial governance appeal",
+      "organ": "CGPJ",
+      "current_custodian": "CGPJ",
+      "reference": "Recurso de alzada 286/2026",
+      "period": "2026",
+      "connection": "Review of CGPJ treatment",
+      "object": "Administrative appeal",
+      "status": "Processing recorded; final/current decision missing",
+      "source_status": "VERIFIED_PROCEDURAL",
+      "open_reference_gap": "Complete appeal record, reports and final decision",
+      "group_id": "JUDICIAL_POLICE_SUPERVISION",
+      "axis_ids": [
+        "AX-AUTHORITY",
+        "AX-NOTICE-LPB"
+      ],
+      "proposition_links": [
+        {
+          "proposition_id": "P10",
+          "title_en": "Community authority must be proved act by act",
+          "title_es": "La autoridad comunitaria debe probarse acto por acto",
+          "lane_id": "supervision",
+          "status": "NOT_LOCATED",
+          "treatment": "NOT_RAISED_OR_NOT_LOCATED"
+        },
+        {
+          "proposition_id": "P01",
+          "title_en": "Concurso 36/2012 is the central insolvency spine",
+          "title_es": "Concurso 36/2012 es la columna concursal central",
+          "lane_id": "supervision",
+          "status": "CONTEXT",
+          "treatment": "MATERIALLY_RELEVANT_CONTEXT"
+        },
+        {
+          "proposition_id": "P04",
+          "title_en": "The three Audiencia appellate objects share an insolvency-administration dependency",
+          "title_es": "Los tres objetos apelativos de la Audiencia comparten una dependencia de administración concursal",
+          "lane_id": "supervision",
+          "status": "CONTEXT",
+          "treatment": "MATERIALLY_RELEVANT_CONTEXT"
+        },
+        {
+          "proposition_id": "P05",
+          "title_en": "Ministerio Fiscal responses should be readable as one institutional-response chronology",
+          "title_es": "Las respuestas del Ministerio Fiscal deben poder leerse como una cronología institucional única",
+          "lane_id": "supervision",
+          "status": "OPEN",
+          "treatment": "STATUS_UNRESOLVED"
+        },
+        {
+          "proposition_id": "P17",
+          "title_en": "AC conduct and remuneration are different appellate questions",
+          "title_es": "Conducta y remuneración del AC son cuestiones apelativas distintas",
+          "lane_id": "supervision",
+          "status": "CONTEXT",
+          "treatment": "MATERIALLY_RELEVANT_CONTEXT"
+        },
+        {
+          "proposition_id": "P09",
+          "title_en": "Supervisory files test institutional handling, not the merits of the underlying proceedings",
+          "title_es": "Los expedientes supervisores examinan el tratamiento institucional, no el fondo de los procedimientos subyacentes",
+          "lane_id": "supervision",
+          "status": "DIRECT",
+          "treatment": "DIRECTLY_IN_FILE"
+        }
+      ],
+      "relationship_strength": "DEPENDENCY_TEST_ONLY",
+      "boundary_en": "Registration or supervisory possession is not file incorporation, examination, personal knowledge, agreement, wrongdoing or liability.",
+      "boundary_es": "La posesión registral o supervisora no equivale a incorporación, examen, conocimiento personal, acuerdo, ilicitud ni responsabilidad."
+    },
+    {
+      "master_id": "GC-LAJ-021",
+      "record_type": "REGISTRATION_ONLY",
+      "stream": "LAJ / court-office supervision",
+      "organ": "TSJ Secretaría de Gobierno / Coordinación Provincial / national justice-service office",
+      "current_custodian": "Same offices",
+      "reference": "REGAGE26e00073341191; REGAGE26e00073341382; REGAGE26e00073341477",
+      "period": "15/08/2026",
+      "connection": "LAJ supervisory corpus",
+      "object": "Three registrations of same corpus",
+      "status": "Registered; no three separate investigations established",
+      "source_status": "VERIFIED_PROCEDURAL",
+      "open_reference_gap": "Acknowledgements, referrals, preservation/report requests and any assigned file",
+      "group_id": "JUDICIAL_POLICE_SUPERVISION",
+      "axis_ids": [
+        "AX-AUTHORITY",
+        "AX-NOTICE-LPB"
+      ],
+      "proposition_links": [
+        {
+          "proposition_id": "P01",
+          "title_en": "Concurso 36/2012 is the central insolvency spine",
+          "title_es": "Concurso 36/2012 es la columna concursal central",
+          "lane_id": "supervision",
+          "status": "CONTEXT",
+          "treatment": "MATERIALLY_RELEVANT_CONTEXT"
+        }
+      ],
+      "relationship_strength": "DEPENDENCY_TEST_ONLY",
+      "boundary_en": "Registration or supervisory possession is not file incorporation, examination, personal knowledge, agreement, wrongdoing or liability.",
+      "boundary_es": "La posesión registral o supervisora no equivale a incorporación, examen, conocimiento personal, acuerdo, ilicitud ni responsabilidad."
+    },
+    {
+      "master_id": "GC-POL-024",
+      "record_type": "REGISTRATION_ONLY",
+      "stream": "Police / Guardia Civil",
+      "organ": "Policía Nacional / Guardia Civil",
+      "current_custodian": "Allocation unknown",
+      "reference": "Jan 2026 registrations",
+      "period": "2026",
+      "connection": "Sun Park reports",
+      "object": "Registered submissions pending assigned case",
+      "status": "No assigned diligencias/atestado located",
+      "source_status": "VERIFIED_PROCEDURAL",
+      "open_reference_gap": "Internal allocation/reference, unit, atestado/report, referral or closure",
+      "group_id": "JUDICIAL_POLICE_SUPERVISION",
+      "axis_ids": [
+        "AX-AUTHORITY",
+        "AX-NOTICE-LPB"
+      ],
+      "proposition_links": [],
+      "relationship_strength": "DEPENDENCY_TEST_ONLY",
+      "boundary_en": "Registration or supervisory possession is not file incorporation, examination, personal knowledge, agreement, wrongdoing or liability.",
+      "boundary_es": "La posesión registral o supervisora no equivale a incorporación, examen, conocimiento personal, acuerdo, ilicitud ni responsabilidad."
+    },
+    {
+      "master_id": "GC-PRO-022",
+      "record_type": "PROFESSIONAL_DISCIPLINE",
+      "stream": "Professional discipline",
+      "organ": "ICALPA",
+      "current_custodian": "ICALPA",
+      "reference": "DIP 79/2026",
+      "period": "2026",
+      "connection": "CAM-side professional presentation",
+      "object": "Preliminary deontological file",
+      "status": "Preliminary file; expansion filed 10 Jun 2026",
+      "source_status": "VERIFIED_PRIMARY",
+      "open_reference_gap": "Complete official file, response, evidence and final decision",
+      "group_id": "PROFESSIONAL_OVERSIGHT",
+      "axis_ids": [
+        "AX-AUTHORITY"
+      ],
+      "proposition_links": [],
+      "relationship_strength": "DEPENDENCY_TEST_ONLY",
+      "boundary_en": "Professional-discipline files remain separate from judicial, prosecutorial, Community and public-funds merits.",
+      "boundary_es": "Los expedientes disciplinarios profesionales permanecen separados del fondo judicial, fiscal, comunitario y de fondos públicos."
+    },
+    {
+      "master_id": "GC-PRO-023",
+      "record_type": "PROFESSIONAL_DISCIPLINE",
+      "stream": "Professional discipline",
+      "organ": "ICALPA",
+      "current_custodian": "ICALPA",
+      "reference": "DIP 80/2026",
+      "period": "2026",
+      "connection": "AC-side professional treatment",
+      "object": "Separate preliminary deontological file",
+      "status": "Preliminary file; expansion filed 10 Jun 2026",
+      "source_status": "VERIFIED_PRIMARY",
+      "open_reference_gap": "Complete official file, response, evidence and final decision",
+      "group_id": "PROFESSIONAL_OVERSIGHT",
+      "axis_ids": [
+        "AX-AUTHORITY"
+      ],
+      "proposition_links": [],
+      "relationship_strength": "DEPENDENCY_TEST_ONLY",
+      "boundary_en": "Professional-discipline files remain separate from judicial, prosecutorial, Community and public-funds merits.",
+      "boundary_es": "Los expedientes disciplinarios profesionales permanecen separados del fondo judicial, fiscal, comunitario y de fondos públicos."
+    },
+    {
+      "master_id": "LZ-CAB-011",
+      "record_type": "ADMINISTRATIVE_FILE",
+      "stream": "Administrative / professional",
+      "organ": "Cabildo de Lanzarote",
+      "current_custodian": "Cabildo de Lanzarote",
+      "reference": "498/2020",
+      "period": "2020",
+      "connection": "Sun Park / operator / title / works / transparency perimeter",
+      "object": "Tourism/operator history",
+      "status": "File reference located",
+      "source_status": "OPEN_REFERENCE",
+      "open_reference_gap": "Complete index and authenticated file",
+      "group_id": "LOCAL_TOURISM_WORKS",
+      "axis_ids": [
+        "AX-AUTHORITY",
+        "AX-TITLE-BENEFIT"
+      ],
+      "proposition_links": [],
+      "relationship_strength": "DEPENDENCY_TEST_ONLY",
+      "boundary_en": "Shared subject matter can justify a dependency test; it does not prove that any file received or relied on the 2022 ACTA.",
+      "boundary_es": "La materia compartida puede justificar una prueba de dependencia; no demuestra que expediente alguno recibiera o utilizara el ACTA de 2022."
+    },
+    {
+      "master_id": "LZ-CAB-012",
+      "record_type": "ADMINISTRATIVE_FILE",
+      "stream": "Administrative / professional",
+      "organ": "Cabildo de Lanzarote",
+      "current_custodian": "Cabildo de Lanzarote",
+      "reference": "547/2020",
+      "period": "2020",
+      "connection": "Sun Park / operator / title / works / transparency perimeter",
+      "object": "Tourism/operator history",
+      "status": "File reference located",
+      "source_status": "OPEN_REFERENCE",
+      "open_reference_gap": "Complete index and authenticated file",
+      "group_id": "LOCAL_TOURISM_WORKS",
+      "axis_ids": [
+        "AX-AUTHORITY",
+        "AX-TITLE-BENEFIT"
+      ],
+      "proposition_links": [],
+      "relationship_strength": "DEPENDENCY_TEST_ONLY",
+      "boundary_en": "Shared subject matter can justify a dependency test; it does not prove that any file received or relied on the 2022 ACTA.",
+      "boundary_es": "La materia compartida puede justificar una prueba de dependencia; no demuestra que expediente alguno recibiera o utilizara el ACTA de 2022."
+    },
+    {
+      "master_id": "LZ-CAB-013",
+      "record_type": "ADMINISTRATIVE_FILE",
+      "stream": "Administrative / professional",
+      "organ": "Cabildo de Lanzarote",
+      "current_custodian": "Cabildo de Lanzarote",
+      "reference": "21219/2021",
+      "period": "2021",
+      "connection": "Sun Park / operator / title / works / transparency perimeter",
+      "object": "Tourism/operator history",
+      "status": "File reference located",
+      "source_status": "OPEN_REFERENCE",
+      "open_reference_gap": "Complete index and authenticated file",
+      "group_id": "LOCAL_TOURISM_WORKS",
+      "axis_ids": [
+        "AX-AUTHORITY",
+        "AX-TITLE-BENEFIT"
+      ],
+      "proposition_links": [],
+      "relationship_strength": "DEPENDENCY_TEST_ONLY",
+      "boundary_en": "Shared subject matter can justify a dependency test; it does not prove that any file received or relied on the 2022 ACTA.",
+      "boundary_es": "La materia compartida puede justificar una prueba de dependencia; no demuestra que expediente alguno recibiera o utilizara el ACTA de 2022."
+    },
+    {
+      "master_id": "LZ-CAB-019",
+      "record_type": "ADMINISTRATIVE_FILE",
+      "stream": "Administrative / professional",
+      "organ": "Cabildo de Lanzarote",
+      "current_custodian": "Cabildo de Lanzarote",
+      "reference": "3671/2022",
+      "period": "2022",
+      "connection": "Sun Park / operator / title / works / transparency perimeter",
+      "object": "Tourism/operator perimeter; totalidad de las unidades alojativas",
+      "status": "Priority file",
+      "source_status": "VERIFIED_PRIMARY",
+      "open_reference_gap": "Complete file, declarant, authority, unit list, title, checks and final act",
+      "group_id": "LOCAL_TOURISM_WORKS",
+      "axis_ids": [
+        "AX-AUTHORITY",
+        "AX-TITLE-BENEFIT"
+      ],
+      "proposition_links": [],
+      "relationship_strength": "DEPENDENCY_TEST_ONLY",
+      "boundary_en": "Shared subject matter can justify a dependency test; it does not prove that any file received or relied on the 2022 ACTA.",
+      "boundary_es": "La materia compartida puede justificar una prueba de dependencia; no demuestra que expediente alguno recibiera o utilizara el ACTA de 2022."
+    },
+    {
+      "master_id": "LZ-CAB-020",
+      "record_type": "ADMINISTRATIVE_FILE",
+      "stream": "Administrative / professional",
+      "organ": "Cabildo de Lanzarote",
+      "current_custodian": "Cabildo de Lanzarote",
+      "reference": "2984/2023",
+      "period": "2023-2026",
+      "connection": "Sun Park / operator / title / works / transparency perimeter",
+      "object": "Tourism file",
+      "status": "Reported pending 13 Mar 2026",
+      "source_status": "VERIFIED_PRIMARY",
+      "open_reference_gap": "Current index/status and final act",
+      "group_id": "LOCAL_TOURISM_WORKS",
+      "axis_ids": [
+        "AX-AUTHORITY",
+        "AX-TITLE-BENEFIT"
+      ],
+      "proposition_links": [],
+      "relationship_strength": "DEPENDENCY_TEST_ONLY",
+      "boundary_en": "Shared subject matter can justify a dependency test; it does not prove that any file received or relied on the 2022 ACTA.",
+      "boundary_es": "La materia compartida puede justificar una prueba de dependencia; no demuestra que expediente alguno recibiera o utilizara el ACTA de 2022."
+    },
+    {
+      "master_id": "LZ-CAB-021",
+      "record_type": "ADMINISTRATIVE_FILE",
+      "stream": "Administrative / professional",
+      "organ": "Cabildo de Lanzarote",
+      "current_custodian": "Cabildo de Lanzarote",
+      "reference": "17070/2023",
+      "period": "2023",
+      "connection": "Sun Park / operator / title / works / transparency perimeter",
+      "object": "Tourism file",
+      "status": "Identified in Resolution 2026-2735",
+      "source_status": "VERIFIED_PRIMARY",
+      "open_reference_gap": "Complete index, object, parties and final act",
+      "group_id": "LOCAL_TOURISM_WORKS",
+      "axis_ids": [
+        "AX-AUTHORITY",
+        "AX-TITLE-BENEFIT"
+      ],
+      "proposition_links": [],
+      "relationship_strength": "DEPENDENCY_TEST_ONLY",
+      "boundary_en": "Shared subject matter can justify a dependency test; it does not prove that any file received or relied on the 2022 ACTA.",
+      "boundary_es": "La materia compartida puede justificar una prueba de dependencia; no demuestra que expediente alguno recibiera o utilizara el ACTA de 2022."
+    },
+    {
+      "master_id": "LZ-CAB-022",
+      "record_type": "ADMINISTRATIVE_FILE",
+      "stream": "Administrative / professional",
+      "organ": "Cabildo de Lanzarote",
+      "current_custodian": "Cabildo de Lanzarote",
+      "reference": "19995/2023",
+      "period": "2023",
+      "connection": "Sun Park / operator / title / works / transparency perimeter",
+      "object": "Tourism file",
+      "status": "Identified in Resolution 2026-2735",
+      "source_status": "VERIFIED_PRIMARY",
+      "open_reference_gap": "Complete index, object, parties and final act",
+      "group_id": "LOCAL_TOURISM_WORKS",
+      "axis_ids": [
+        "AX-AUTHORITY",
+        "AX-TITLE-BENEFIT"
+      ],
+      "proposition_links": [],
+      "relationship_strength": "DEPENDENCY_TEST_ONLY",
+      "boundary_en": "Shared subject matter can justify a dependency test; it does not prove that any file received or relied on the 2022 ACTA.",
+      "boundary_es": "La materia compartida puede justificar una prueba de dependencia; no demuestra que expediente alguno recibiera o utilizara el ACTA de 2022."
+    },
+    {
+      "master_id": "LZ-CAB-023",
+      "record_type": "ADMINISTRATIVE_FILE",
+      "stream": "Administrative / professional",
+      "organ": "Cabildo de Lanzarote",
+      "current_custodian": "Cabildo de Lanzarote",
+      "reference": "7206/2024",
+      "period": "2024-2026",
+      "connection": "Sun Park / operator / title / works / transparency perimeter",
+      "object": "Tourism file",
+      "status": "Reported pending 13 Mar 2026",
+      "source_status": "VERIFIED_PRIMARY",
+      "open_reference_gap": "Current status and final act",
+      "group_id": "LOCAL_TOURISM_WORKS",
+      "axis_ids": [
+        "AX-AUTHORITY",
+        "AX-TITLE-BENEFIT"
+      ],
+      "proposition_links": [],
+      "relationship_strength": "DEPENDENCY_TEST_ONLY",
+      "boundary_en": "Shared subject matter can justify a dependency test; it does not prove that any file received or relied on the 2022 ACTA.",
+      "boundary_es": "La materia compartida puede justificar una prueba de dependencia; no demuestra que expediente alguno recibiera o utilizara el ACTA de 2022."
+    },
+    {
+      "master_id": "LZ-CAB-024",
+      "record_type": "ADMINISTRATIVE_FILE",
+      "stream": "Administrative / professional",
+      "organ": "Cabildo de Lanzarote",
+      "current_custodian": "Cabildo de Lanzarote",
+      "reference": "4887/2025",
+      "period": "2025",
+      "connection": "Sun Park / operator / title / works / transparency perimeter",
+      "object": "Tourism file",
+      "status": "Reference identified",
+      "source_status": "VERIFIED_PRIMARY",
+      "open_reference_gap": "Complete index, object, parties and final act",
+      "group_id": "LOCAL_TOURISM_WORKS",
+      "axis_ids": [
+        "AX-AUTHORITY",
+        "AX-TITLE-BENEFIT"
+      ],
+      "proposition_links": [],
+      "relationship_strength": "DEPENDENCY_TEST_ONLY",
+      "boundary_en": "Shared subject matter can justify a dependency test; it does not prove that any file received or relied on the 2022 ACTA.",
+      "boundary_es": "La materia compartida puede justificar una prueba de dependencia; no demuestra que expediente alguno recibiera o utilizara el ACTA de 2022."
+    },
+    {
+      "master_id": "LZ-CAB-025",
+      "record_type": "ADMINISTRATIVE_FILE",
+      "stream": "Administrative / professional",
+      "organ": "Cabildo de Lanzarote",
+      "current_custodian": "Cabildo de Lanzarote",
+      "reference": "614/2026",
+      "period": "2026",
+      "connection": "Sun Park / operator / title / works / transparency perimeter",
+      "object": "Access / production across tourism files",
+      "status": "Resolution 2026-2735 identified",
+      "source_status": "VERIFIED_PRIMARY",
+      "open_reference_gap": "Execution of access, authenticated production and later response",
+      "group_id": "LOCAL_TOURISM_WORKS",
+      "axis_ids": [
+        "AX-AUTHORITY",
+        "AX-TITLE-BENEFIT"
+      ],
+      "proposition_links": [],
+      "relationship_strength": "DEPENDENCY_TEST_ONLY",
+      "boundary_en": "Shared subject matter can justify a dependency test; it does not prove that any file received or relied on the 2022 ACTA.",
+      "boundary_es": "La materia compartida puede justificar una prueba de dependencia; no demuestra que expediente alguno recibiera o utilizara el ACTA de 2022."
+    },
+    {
+      "master_id": "LZ-PRO-029",
+      "record_type": "PROFESSIONAL_DISCIPLINE",
+      "stream": "Administrative / professional",
+      "organ": "Colegio Oficial de Arquitectos de Lanzarote",
+      "current_custodian": "Colegio Oficial de Arquitectos de Lanzarote",
+      "reference": "RE 26/008230",
+      "period": "2026",
+      "connection": "Sun Park / operator / title / works / transparency perimeter",
+      "object": "Professional preservation/deontological request",
+      "status": "Registered 14 Jul 2026",
+      "source_status": "VERIFIED_PROCEDURAL",
+      "open_reference_gap": "Official file number, custodian, preservation/transfer and final decision",
+      "group_id": "PROFESSIONAL_OVERSIGHT",
+      "axis_ids": [
+        "AX-AUTHORITY"
+      ],
+      "proposition_links": [],
+      "relationship_strength": "DEPENDENCY_TEST_ONLY",
+      "boundary_en": "Professional-discipline files remain separate from judicial, prosecutorial, Community and public-funds merits.",
+      "boundary_es": "Los expedientes disciplinarios profesionales permanecen separados del fondo judicial, fiscal, comunitario y de fondos públicos."
+    },
+    {
+      "master_id": "LZ-TRA-027",
+      "record_type": "TRANSPARENCY_CLAIM",
+      "stream": "Administrative / professional",
+      "organ": "Comisionado de Transparencia de Canarias",
+      "current_custodian": "Comisionado de Transparencia de Canarias",
+      "reference": "R2026000054",
+      "period": "2026",
+      "connection": "Sun Park / operator / title / works / transparency perimeter",
+      "object": "Access against Yaiza",
+      "status": "Partially upheld; indexes ordered",
+      "source_status": "VERIFIED_PRIMARY",
+      "open_reference_gap": "Compliance record, documents produced and follow-up",
+      "group_id": "TRANSPARENCY_OMBUDSMAN",
+      "axis_ids": [
+        "AX-AUTHORITY"
+      ],
+      "proposition_links": [],
+      "relationship_strength": "DEPENDENCY_TEST_ONLY",
+      "boundary_en": "Access, transparency and ombudsman treatment do not establish the truth of the underlying allegations.",
+      "boundary_es": "La tramitación de acceso, transparencia o defensoría no acredita la veracidad de las alegaciones subyacentes."
+    },
+    {
+      "master_id": "LZ-TRA-028",
+      "record_type": "TRANSPARENCY_CLAIM",
+      "stream": "Administrative / professional",
+      "organ": "Comisionado de Transparencia de Canarias",
+      "current_custodian": "Comisionado de Transparencia de Canarias",
+      "reference": "Challenge re Resolution 28/2026",
+      "period": "2026",
+      "connection": "Sun Park / operator / title / works / transparency perimeter",
+      "object": "Separate transparency challenge",
+      "status": "Filed 11 Aug 2026; assigned ref pending",
+      "source_status": "VERIFIED_PROCEDURAL",
+      "open_reference_gap": "Assigned reference, admission, record and final decision",
+      "group_id": "TRANSPARENCY_OMBUDSMAN",
+      "axis_ids": [
+        "AX-AUTHORITY"
+      ],
+      "proposition_links": [],
+      "relationship_strength": "DEPENDENCY_TEST_ONLY",
+      "boundary_en": "Access, transparency and ombudsman treatment do not establish the truth of the underlying allegations.",
+      "boundary_es": "La tramitación de acceso, transparencia o defensoría no acredita la veracidad de las alegaciones subyacentes."
+    },
+    {
+      "master_id": "LZ-TRA-032",
+      "record_type": "TRANSPARENCY_CLAIM",
+      "stream": "Transparency",
+      "organ": "Comisionado de Transparencia de Canarias",
+      "current_custodian": "Comisionado de Transparencia de Canarias",
+      "reference": "Claim filed 06/08/2026 re Yaiza Resolución 2026-2",
+      "period": "2026",
+      "connection": "Follow-up to frustration/compliance of transparency access",
+      "object": "Transparency complaint concerning Yaiza Resolution 2026-2",
+      "status": "Filed 6 Aug 2026; assigned Comisionado ref not located",
+      "source_status": "VERIFIED_PROCEDURAL",
+      "open_reference_gap": "Assigned Comisionado reference, admission, response and final decision",
+      "group_id": "TRANSPARENCY_OMBUDSMAN",
+      "axis_ids": [
+        "AX-AUTHORITY"
+      ],
+      "proposition_links": [],
+      "relationship_strength": "DEPENDENCY_TEST_ONLY",
+      "boundary_en": "Access, transparency and ombudsman treatment do not establish the truth of the underlying allegations.",
+      "boundary_es": "La tramitación de acceso, transparencia o defensoría no acredita la veracidad de las alegaciones subyacentes."
+    },
+    {
+      "master_id": "LZ-TUR-008",
+      "record_type": "INSPECTION_ACT",
+      "stream": "Tourism",
+      "organ": "Tourism authority",
+      "current_custodian": "Tourism authority",
+      "reference": "Inspection Act 027951/2012",
+      "period": "2012",
+      "connection": "Sun Park / operator / title / works / transparency perimeter",
+      "object": "Tourism/operator inspection",
+      "status": "Located in operator-history work",
+      "source_status": "CORPUS_REPORTED_PRIMARY_PENDING",
+      "open_reference_gap": "Certified act, annexes, inspected entity/capacity and follow-up",
+      "group_id": "LOCAL_TOURISM_WORKS",
+      "axis_ids": [
+        "AX-AUTHORITY",
+        "AX-TITLE-BENEFIT"
+      ],
+      "proposition_links": [],
+      "relationship_strength": "DEPENDENCY_TEST_ONLY",
+      "boundary_en": "Shared subject matter can justify a dependency test; it does not prove that any file received or relied on the 2022 ACTA.",
+      "boundary_es": "La materia compartida puede justificar una prueba de dependencia; no demuestra que expediente alguno recibiera o utilizara el ACTA de 2022."
+    },
+    {
+      "master_id": "LZ-TUR-009",
+      "record_type": "ADMINISTRATIVE_FILE",
+      "stream": "Tourism",
+      "organ": "Cabildo de Lanzarote",
+      "current_custodian": "Cabildo de Lanzarote",
+      "reference": "GE-014212/2014",
+      "period": "2014",
+      "connection": "Sun Park / operator / title / works / transparency perimeter",
+      "object": "Tourism filing concerning Owners' Community",
+      "status": "Filing located; outcome not verified",
+      "source_status": "CORPUS_REPORTED_PRIMARY_PENDING",
+      "open_reference_gap": "Decision/entry caused by filing or negative certification",
+      "group_id": "LOCAL_TOURISM_WORKS",
+      "axis_ids": [
+        "AX-AUTHORITY",
+        "AX-TITLE-BENEFIT"
+      ],
+      "proposition_links": [],
+      "relationship_strength": "DEPENDENCY_TEST_ONLY",
+      "boundary_en": "Shared subject matter can justify a dependency test; it does not prove that any file received or relied on the 2022 ACTA.",
+      "boundary_es": "La materia compartida puede justificar una prueba de dependencia; no demuestra que expediente alguno recibiera o utilizara el ACTA de 2022."
+    },
+    {
+      "master_id": "LZ-TUR-010",
+      "record_type": "INSPECTION_ACT",
+      "stream": "Tourism",
+      "organ": "Tourism authority",
+      "current_custodian": "Tourism authority",
+      "reference": "Inspection Act 35328/2016",
+      "period": "2016",
+      "connection": "Sun Park / operator / title / works / transparency perimeter",
+      "object": "Tourism/operator inspection",
+      "status": "Located in operator-history work",
+      "source_status": "CORPUS_REPORTED_PRIMARY_PENDING",
+      "open_reference_gap": "Certified act, annexes, entity/capacity, units and follow-up",
+      "group_id": "LOCAL_TOURISM_WORKS",
+      "axis_ids": [
+        "AX-AUTHORITY",
+        "AX-TITLE-BENEFIT"
+      ],
+      "proposition_links": [],
+      "relationship_strength": "DEPENDENCY_TEST_ONLY",
+      "boundary_en": "Shared subject matter can justify a dependency test; it does not prove that any file received or relied on the 2022 ACTA.",
+      "boundary_es": "La materia compartida puede justificar una prueba de dependencia; no demuestra que expediente alguno recibiera o utilizara el ACTA de 2022."
+    },
+    {
+      "master_id": "LZ-YAI-014",
+      "record_type": "ADMINISTRATIVE_FILE",
+      "stream": "Administrative / professional",
+      "organ": "Ayuntamiento de Yaiza",
+      "current_custodian": "Ayuntamiento de Yaiza",
+      "reference": "1748/2022",
+      "period": "2022",
+      "connection": "Sun Park / operator / title / works / transparency perimeter",
+      "object": "Works / municipal documentation",
+      "status": "Municipal material located",
+      "source_status": "VERIFIED_PRIMARY",
+      "open_reference_gap": "Full index, applications, powers, title/consent, plans, reports and final acts",
+      "group_id": "LOCAL_TOURISM_WORKS",
+      "axis_ids": [
+        "AX-AUTHORITY",
+        "AX-TITLE-BENEFIT"
+      ],
+      "proposition_links": [],
+      "relationship_strength": "DEPENDENCY_TEST_ONLY",
+      "boundary_en": "Shared subject matter can justify a dependency test; it does not prove that any file received or relied on the 2022 ACTA.",
+      "boundary_es": "La materia compartida puede justificar una prueba de dependencia; no demuestra que expediente alguno recibiera o utilizara el ACTA de 2022."
+    },
+    {
+      "master_id": "LZ-YAI-015",
+      "record_type": "ADMINISTRATIVE_FILE",
+      "stream": "Administrative / professional",
+      "organ": "Ayuntamiento de Yaiza",
+      "current_custodian": "Ayuntamiento de Yaiza",
+      "reference": "7043/2022",
+      "period": "2022",
+      "connection": "Sun Park / operator / title / works / transparency perimeter",
+      "object": "Transparency/index production perimeter",
+      "status": "Reference located",
+      "source_status": "VERIFIED_PRIMARY",
+      "open_reference_gap": "Complete index and authenticated source documents",
+      "group_id": "LOCAL_TOURISM_WORKS",
+      "axis_ids": [
+        "AX-AUTHORITY",
+        "AX-TITLE-BENEFIT"
+      ],
+      "proposition_links": [],
+      "relationship_strength": "DEPENDENCY_TEST_ONLY",
+      "boundary_en": "Shared subject matter can justify a dependency test; it does not prove that any file received or relied on the 2022 ACTA.",
+      "boundary_es": "La materia compartida puede justificar una prueba de dependencia; no demuestra que expediente alguno recibiera o utilizara el ACTA de 2022."
+    },
+    {
+      "master_id": "LZ-YAI-016",
+      "record_type": "ADMINISTRATIVE_FILE",
+      "stream": "Administrative / professional",
+      "organ": "Ayuntamiento de Yaiza",
+      "current_custodian": "Ayuntamiento de Yaiza",
+      "reference": "7059/2022",
+      "period": "2022",
+      "connection": "Sun Park / operator / title / works / transparency perimeter",
+      "object": "Transparency/index production perimeter",
+      "status": "Reference located",
+      "source_status": "VERIFIED_PRIMARY",
+      "open_reference_gap": "Complete index and authenticated source documents",
+      "group_id": "LOCAL_TOURISM_WORKS",
+      "axis_ids": [
+        "AX-AUTHORITY",
+        "AX-TITLE-BENEFIT"
+      ],
+      "proposition_links": [],
+      "relationship_strength": "DEPENDENCY_TEST_ONLY",
+      "boundary_en": "Shared subject matter can justify a dependency test; it does not prove that any file received or relied on the 2022 ACTA.",
+      "boundary_es": "La materia compartida puede justificar una prueba de dependencia; no demuestra que expediente alguno recibiera o utilizara el ACTA de 2022."
+    },
+    {
+      "master_id": "LZ-YAI-017",
+      "record_type": "ADMINISTRATIVE_FILE",
+      "stream": "Administrative / professional",
+      "organ": "Ayuntamiento de Yaiza",
+      "current_custodian": "Ayuntamiento de Yaiza",
+      "reference": "10356/2022",
+      "period": "2022",
+      "connection": "Sun Park / operator / title / works / transparency perimeter",
+      "object": "Transparency/index production perimeter",
+      "status": "Reference located",
+      "source_status": "VERIFIED_PRIMARY",
+      "open_reference_gap": "Complete index and authenticated source documents",
+      "group_id": "LOCAL_TOURISM_WORKS",
+      "axis_ids": [
+        "AX-AUTHORITY",
+        "AX-TITLE-BENEFIT"
+      ],
+      "proposition_links": [],
+      "relationship_strength": "DEPENDENCY_TEST_ONLY",
+      "boundary_en": "Shared subject matter can justify a dependency test; it does not prove that any file received or relied on the 2022 ACTA.",
+      "boundary_es": "La materia compartida puede justificar una prueba de dependencia; no demuestra que expediente alguno recibiera o utilizara el ACTA de 2022."
+    },
+    {
+      "master_id": "LZ-YAI-018",
+      "record_type": "ADMINISTRATIVE_FILE",
+      "stream": "Administrative / professional",
+      "organ": "Ayuntamiento de Yaiza",
+      "current_custodian": "Ayuntamiento de Yaiza",
+      "reference": "5854/2022",
+      "period": "2022",
+      "connection": "Sun Park / operator / title / works / transparency perimeter",
+      "object": "Municipal operator/title/unit retrieval",
+      "status": "Reference located",
+      "source_status": "OPEN_REFERENCE",
+      "open_reference_gap": "Complete index and authenticated source documents",
+      "group_id": "LOCAL_TOURISM_WORKS",
+      "axis_ids": [
+        "AX-AUTHORITY",
+        "AX-TITLE-BENEFIT"
+      ],
+      "proposition_links": [],
+      "relationship_strength": "DEPENDENCY_TEST_ONLY",
+      "boundary_en": "Shared subject matter can justify a dependency test; it does not prove that any file received or relied on the 2022 ACTA.",
+      "boundary_es": "La materia compartida puede justificar una prueba de dependencia; no demuestra que expediente alguno recibiera o utilizara el ACTA de 2022."
+    },
+    {
+      "master_id": "LZ-YAI-026",
+      "record_type": "ADMINISTRATIVE_FILE",
+      "stream": "Administrative / professional",
+      "organ": "Ayuntamiento de Yaiza",
+      "current_custodian": "Ayuntamiento de Yaiza",
+      "reference": "5891/2026",
+      "period": "2026",
+      "connection": "Sun Park / operator / title / works / transparency perimeter",
+      "object": "Municipal traceability",
+      "status": "Relevant file identified",
+      "source_status": "VERIFIED_PRIMARY",
+      "open_reference_gap": "Index, object, filing chain, title/unit documents and current status",
+      "group_id": "LOCAL_TOURISM_WORKS",
+      "axis_ids": [
+        "AX-AUTHORITY",
+        "AX-TITLE-BENEFIT"
+      ],
+      "proposition_links": [],
+      "relationship_strength": "DEPENDENCY_TEST_ONLY",
+      "boundary_en": "Shared subject matter can justify a dependency test; it does not prove that any file received or relied on the 2022 ACTA.",
+      "boundary_es": "La materia compartida puede justificar una prueba de dependencia; no demuestra que expediente alguno recibiera o utilizara el ACTA de 2022."
+    },
+    {
+      "master_id": "LZ-YAI-031",
+      "record_type": "ADMINISTRATIVE_FILE",
+      "stream": "Municipal archive access",
+      "organ": "Ayuntamiento de Yaiza",
+      "current_custodian": "Ayuntamiento de Yaiza",
+      "reference": "7066/2026",
+      "period": "2026",
+      "connection": "Municipal archive/source access",
+      "object": "Consulta de Fondos del Archivo",
+      "status": "Official notification 5 Aug 2026",
+      "source_status": "VERIFIED_PRIMARY",
+      "open_reference_gap": "Complete expediente/index and any production/final act",
+      "group_id": "LOCAL_TOURISM_WORKS",
+      "axis_ids": [
+        "AX-AUTHORITY",
+        "AX-TITLE-BENEFIT"
+      ],
+      "proposition_links": [],
+      "relationship_strength": "DEPENDENCY_TEST_ONLY",
+      "boundary_en": "Shared subject matter can justify a dependency test; it does not prove that any file received or relied on the 2022 ACTA.",
+      "boundary_es": "La materia compartida puede justificar una prueba de dependencia; no demuestra que expediente alguno recibiera o utilizara el ACTA de 2022."
+    },
+    {
+      "master_id": "LZ-YAI-037",
+      "record_type": "ADMINISTRATIVE_FILE",
+      "stream": "Municipal / transparency",
+      "organ": "Ayuntamiento de Yaiza",
+      "current_custodian": "Ayuntamiento de Yaiza",
+      "reference": "3224/2026",
+      "period": "2026",
+      "connection": "Municipal certification / SAIP chain",
+      "object": "Municipal file referenced in later transparency complaint",
+      "status": "Reference established through controlled filing/attachment; official Yaiza original to reopen",
+      "source_status": "CORPUS_REPORTED_PRIMARY_PENDING",
+      "open_reference_gap": "Official Yaiza expediente original, index, object and final/current status",
+      "group_id": "LOCAL_TOURISM_WORKS",
+      "axis_ids": [
+        "AX-AUTHORITY",
+        "AX-TITLE-BENEFIT"
+      ],
+      "proposition_links": [],
+      "relationship_strength": "DEPENDENCY_TEST_ONLY",
+      "boundary_en": "Shared subject matter can justify a dependency test; it does not prove that any file received or relied on the 2022 ACTA.",
+      "boundary_es": "La materia compartida puede justificar una prueba de dependencia; no demuestra que expediente alguno recibiera o utilizara el ACTA de 2022."
+    },
+    {
+      "master_id": "MAD-CCACM-002",
+      "record_type": "PROFESSIONAL_DISCIPLINE",
+      "stream": "Professional review / appeal",
+      "organ": "Consejo de Colegios de Abogados de la Comunidad de Madrid",
+      "current_custodian": "CCACM",
+      "reference": "Exp. 193/2026",
+      "period": "2026",
+      "connection": "Professional-conduct review linked to ICAM 434/26",
+      "object": "CCACM file",
+      "status": "Exact reference located",
+      "source_status": "VERIFIED_PRIMARY",
+      "open_reference_gap": "Complete record, procedural relationship to ICAM file and final decision",
+      "group_id": "PROFESSIONAL_OVERSIGHT",
+      "axis_ids": [
+        "AX-AUTHORITY"
+      ],
+      "proposition_links": [],
+      "relationship_strength": "DEPENDENCY_TEST_ONLY",
+      "boundary_en": "Professional-discipline files remain separate from judicial, prosecutorial, Community and public-funds merits.",
+      "boundary_es": "Los expedientes disciplinarios profesionales permanecen separados del fondo judicial, fiscal, comunitario y de fondos públicos."
+    },
+    {
+      "master_id": "MAD-ICAM-001",
+      "record_type": "PROFESSIONAL_DISCIPLINE",
+      "stream": "Professional discipline",
+      "organ": "ICAM",
+      "current_custodian": "ICAM",
+      "reference": "Expediente Preliminar 434/26",
+      "period": "2026",
+      "connection": "Professional-conduct perimeter",
+      "object": "ICAM preliminary disciplinary/deontological file",
+      "status": "Exact reference located",
+      "source_status": "VERIFIED_PRIMARY",
+      "open_reference_gap": "Complete official file, respondent/scope, current status and final decision",
+      "group_id": "PROFESSIONAL_OVERSIGHT",
+      "axis_ids": [
+        "AX-AUTHORITY"
+      ],
+      "proposition_links": [],
+      "relationship_strength": "DEPENDENCY_TEST_ONLY",
+      "boundary_en": "Professional-discipline files remain separate from judicial, prosecutorial, Community and public-funds merits.",
+      "boundary_es": "Los expedientes disciplinarios profesionales permanecen separados del fondo judicial, fiscal, comunitario y de fondos públicos."
+    },
+    {
+      "master_id": "MAD-ICAM-003",
+      "record_type": "PROFESSIONAL_DISCIPLINE",
+      "stream": "Professional discipline",
+      "organ": "ICAM",
+      "current_custodian": "ICAM",
+      "reference": "Expediente 1487/26",
+      "period": "2026",
+      "connection": "Professional-conduct perimeter",
+      "object": "ICAM disciplinary/deontological file",
+      "status": "Archived; recurso de alzada filed 6 Jul 2026; assigned appeal ref not located",
+      "source_status": "VERIFIED_PRIMARY",
+      "open_reference_gap": "Archive decision, appeal registration/assigned reference and final review",
+      "group_id": "PROFESSIONAL_OVERSIGHT",
+      "axis_ids": [
+        "AX-AUTHORITY"
+      ],
+      "proposition_links": [],
+      "relationship_strength": "DEPENDENCY_TEST_ONLY",
+      "boundary_en": "Professional-discipline files remain separate from judicial, prosecutorial, Community and public-funds merits.",
+      "boundary_es": "Los expedientes disciplinarios profesionales permanecen separados del fondo judicial, fiscal, comunitario y de fondos públicos."
+    },
+    {
+      "master_id": "MAD-ICAM-004",
+      "record_type": "PROFESSIONAL_DISCIPLINE",
+      "stream": "Professional discipline",
+      "organ": "ICAM",
+      "current_custodian": "ICAM",
+      "reference": "Expediente 493/26",
+      "period": "2026",
+      "connection": "Professional-conduct perimeter",
+      "object": "ICAM file",
+      "status": "Archivo de actuaciones notified 5 May 2026",
+      "source_status": "VERIFIED_PRIMARY",
+      "open_reference_gap": "Complete file and any appeal/review",
+      "group_id": "PROFESSIONAL_OVERSIGHT",
+      "axis_ids": [
+        "AX-AUTHORITY"
+      ],
+      "proposition_links": [],
+      "relationship_strength": "DEPENDENCY_TEST_ONLY",
+      "boundary_en": "Professional-discipline files remain separate from judicial, prosecutorial, Community and public-funds merits.",
+      "boundary_es": "Los expedientes disciplinarios profesionales permanecen separados del fondo judicial, fiscal, comunitario y de fondos públicos."
+    },
+    {
+      "master_id": "MAD-ICAM-005",
+      "record_type": "PROFESSIONAL_DISCIPLINE",
+      "stream": "Professional discipline",
+      "organ": "ICAM",
+      "current_custodian": "ICAM",
+      "reference": "Expediente 1566/26",
+      "period": "2026",
+      "connection": "Professional-conduct perimeter",
+      "object": "ICAM file incorporating incoming deontological complaint material",
+      "status": "ICAM email 5 Jul 2026 confirms incorporation into file",
+      "source_status": "VERIFIED_PRIMARY",
+      "open_reference_gap": "Exact respondent/scope, procedural status and final decision",
+      "group_id": "PROFESSIONAL_OVERSIGHT",
+      "axis_ids": [
+        "AX-AUTHORITY"
+      ],
+      "proposition_links": [],
+      "relationship_strength": "DEPENDENCY_TEST_ONLY",
+      "boundary_en": "Professional-discipline files remain separate from judicial, prosecutorial, Community and public-funds merits.",
+      "boundary_es": "Los expedientes disciplinarios profesionales permanecen separados del fondo judicial, fiscal, comunitario y de fondos públicos."
+    },
+    {
+      "master_id": "NAT-AEAT-001",
+      "record_type": "TAX_FILE",
+      "stream": "AEAT collection",
+      "organ": "AEAT",
+      "current_custodian": "AEAT",
+      "reference": "CO000952499",
+      "period": "2025-2026",
+      "connection": "Pink Canary Services collection/recaudación",
+      "object": "AEAT collection/tax file linked to AN PO 496/2026",
+      "status": "Exact AEAT reference located",
+      "source_status": "VERIFIED_PRIMARY",
+      "open_reference_gap": "Complete administrative file, challenged acts and current collection status",
+      "group_id": "MARKET_TAX_SUPERVISION",
+      "axis_ids": [
+        "AX-FUNDING",
+        "AX-TITLE-BENEFIT"
+      ],
+      "proposition_links": [],
+      "relationship_strength": "DEPENDENCY_TEST_ONLY",
+      "boundary_en": "A supervisory or tax file tests only its own object, receipt and competence; it does not determine the merits of the Community or insolvency tracks.",
+      "boundary_es": "Un expediente supervisor o tributario examina solo su propio objeto, recepción y competencia; no decide el fondo de las vías comunitaria o concursal."
+    },
+    {
+      "master_id": "NAT-AEAT-002",
+      "record_type": "TAX_FILE",
+      "stream": "AEAT sanction",
+      "organ": "AEAT",
+      "current_custodian": "AEAT",
+      "reference": "A5179591986",
+      "period": "2025-2026",
+      "connection": "Pink Canary Services tax/sanction perimeter",
+      "object": "AEAT sanction file",
+      "status": "Exact reference located",
+      "source_status": "VERIFIED_PRIMARY",
+      "open_reference_gap": "Complete sanction file, challenged act, appeal/review status and relationship to PO 496/2026",
+      "group_id": "MARKET_TAX_SUPERVISION",
+      "axis_ids": [
+        "AX-FUNDING",
+        "AX-TITLE-BENEFIT"
+      ],
+      "proposition_links": [],
+      "relationship_strength": "DEPENDENCY_TEST_ONLY",
+      "boundary_en": "A supervisory or tax file tests only its own object, receipt and competence; it does not determine the merits of the Community or insolvency tracks.",
+      "boundary_es": "Un expediente supervisor o tributario examina solo su propio objeto, recepción y competencia; no decide el fondo de las vías comunitaria o concursal."
+    },
+    {
+      "master_id": "NAT-AEAT-COM-003",
+      "record_type": "UNASSIGNED_COMMUNICATION",
+      "stream": "AEAT / ONIF complaint",
+      "organ": "AEAT / ONIF",
+      "current_custodian": "Assignment unknown",
+      "reference": "Tax complaint filed 07/07/2026",
+      "period": "2026",
+      "connection": "Sun Park / MYND Yaiza tax perimeter",
+      "object": "Registered tax complaint; not yet an assigned proceeding",
+      "status": "Filed; assigned expediente not located",
+      "source_status": "VERIFIED_PROCEDURAL",
+      "open_reference_gap": "Assigned AEAT/ONIF expediente, unit and outcome",
+      "group_id": "MARKET_TAX_SUPERVISION",
+      "axis_ids": [
+        "AX-FUNDING",
+        "AX-TITLE-BENEFIT"
+      ],
+      "proposition_links": [],
+      "relationship_strength": "DEPENDENCY_TEST_ONLY",
+      "boundary_en": "A supervisory or tax file tests only its own object, receipt and competence; it does not determine the merits of the Community or insolvency tracks.",
+      "boundary_es": "Un expediente supervisor o tributario examina solo su propio objeto, recepción y competencia; no decide el fondo de las vías comunitaria o concursal."
+    },
+    {
+      "master_id": "NAT-AID-001",
+      "record_type": "PUBLIC_AID_FILE",
+      "stream": "Regional incentives / public aid",
+      "organ": "Public-aid / regional-incentive administration — exact custodian to verify",
+      "current_custodian": "Exact custodian to verify",
+      "reference": "GC/836/P06",
+      "period": "project file",
+      "connection": "MYND Yaiza / regional incentives / public-funds perimeter",
+      "object": "Regional incentives/public-aid project file",
+      "status": "Reference located in controlled source corpus",
+      "source_status": "VERIFIED_PRIMARY",
+      "open_reference_gap": "Exact competent organ, application, beneficiary, eligible costs, grant/approval/payment/recovery history",
+      "group_id": "PUBLIC_FUNDS_INTERNAL_CONTROL",
+      "axis_ids": [
+        "AX-FUNDING",
+        "AX-TITLE-BENEFIT",
+        "AX-AUTHORITY"
+      ],
+      "proposition_links": [
+        {
+          "proposition_id": "P16",
+          "title_en": "Productive-unit, income and value consequences require accounting",
+          "title_es": "Las consecuencias sobre unidad productiva, ingresos y valor requieren contabilidad",
+          "lane_id": "publicmoney",
+          "status": "OPEN",
+          "treatment": "STATUS_UNRESOLVED"
+        },
+        {
+          "proposition_id": "P15",
+          "title_en": "Adjudication, deed and registration must remain date-specific",
+          "title_es": "Adjudicación, escritura y registro deben mantenerse específicos por fecha",
+          "lane_id": "publicmoney",
+          "status": "CONTEXT",
+          "treatment": "MATERIALLY_RELEVANT_CONTEXT"
+        },
+        {
+          "proposition_id": "P18",
+          "title_en": "RIC, incentives and ERDF require programme-by-programme dependency tests",
+          "title_es": "RIC, incentivos y FEDER requieren pruebas de dependencia programa por programa",
+          "lane_id": "publicmoney",
+          "status": "DIRECT",
+          "treatment": "DIRECTLY_IN_FILE"
+        }
+      ],
+      "relationship_strength": "DEPENDENCY_TEST_ONLY",
+      "boundary_en": "Programme identity, grant, audit and routing records remain legally separate; no payment, overlap, misuse, false certification or recovery is inferred.",
+      "boundary_es": "La identidad de programa y los registros de concesión, auditoría y remisión siguen separados; no se infiere pago, solapamiento, uso indebido, certificación falsa ni reintegro."
+    },
+    {
+      "master_id": "NAT-CNMV-001",
+      "record_type": "REGULATORY_FILE",
+      "stream": "CNMV",
+      "organ": "CNMV",
+      "current_custodian": "CNMV",
+      "reference": "2024136159",
+      "period": "2024-2026",
+      "connection": "RICPE / Orion / investor-supervision perimeter",
+      "object": "CNMV consultation/supervisory reference",
+      "status": "Reference confirmed in controlled CNMV correspondence",
+      "source_status": "VERIFIED_PRIMARY",
+      "open_reference_gap": "Complete material lodged/considered and current disposition subject to supervisory secrecy",
+      "group_id": "MARKET_TAX_SUPERVISION",
+      "axis_ids": [
+        "AX-FUNDING",
+        "AX-TITLE-BENEFIT"
+      ],
+      "proposition_links": [],
+      "relationship_strength": "DEPENDENCY_TEST_ONLY",
+      "boundary_en": "A supervisory or tax file tests only its own object, receipt and competence; it does not determine the merits of the Community or insolvency tracks.",
+      "boundary_es": "Un expediente supervisor o tributario examina solo su propio objeto, recepción y competencia; no decide el fondo de las vías comunitaria o concursal."
+    },
+    {
+      "master_id": "NAT-CNMV-002",
+      "record_type": "REGULATORY_FILE",
+      "stream": "CNMV",
+      "organ": "CNMV",
+      "current_custodian": "CNMV",
+      "reference": "2024174266",
+      "period": "2024-2026",
+      "connection": "RICPE / Orion / investor-supervision perimeter",
+      "object": "Separate CNMV consultation/supervisory reference",
+      "status": "Reference confirmed in controlled CNMV correspondence",
+      "source_status": "VERIFIED_PRIMARY",
+      "open_reference_gap": "Complete material lodged/considered and current disposition subject to supervisory secrecy",
+      "group_id": "MARKET_TAX_SUPERVISION",
+      "axis_ids": [
+        "AX-FUNDING",
+        "AX-TITLE-BENEFIT"
+      ],
+      "proposition_links": [],
+      "relationship_strength": "DEPENDENCY_TEST_ONLY",
+      "boundary_en": "A supervisory or tax file tests only its own object, receipt and competence; it does not determine the merits of the Community or insolvency tracks.",
+      "boundary_es": "Un expediente supervisor o tributario examina solo su propio objeto, recepción y competencia; no decide el fondo de las vías comunitaria o concursal."
+    },
+    {
+      "master_id": "NAT-TES-001",
+      "record_type": "ADMINISTRATIVE_FILE",
+      "stream": "Treasury / transparency",
+      "organ": "Dirección General del Tesoro y Política Financiera",
+      "current_custodian": "Dirección General del Tesoro y Política Financiera",
+      "reference": "Access-to-public-information file 7/2026",
+      "period": "2026-03 to 2026-08-28",
+      "connection": "Sun Park public-finance / Treasury access-production chain",
+      "object": "Treasury access decision and staged documentary production",
+      "status": "Partial access recognised; first staged delivery implemented and reviewed; remaining production open",
+      "source_status": "VERIFIED_PRIMARY",
+      "open_reference_gap": "Remaining staged Resolution 154/2026 production under ME-110; subscriber identity and allocation-rule gaps remain ME-108/109",
+      "group_id": "PUBLIC_FUNDS_INTERNAL_CONTROL",
+      "axis_ids": [
+        "AX-FUNDING",
+        "AX-TITLE-BENEFIT",
+        "AX-AUTHORITY"
+      ],
+      "proposition_links": [
+        {
+          "proposition_id": "P18",
+          "title_en": "RIC, incentives and ERDF require programme-by-programme dependency tests",
+          "title_es": "RIC, incentivos y FEDER requieren pruebas de dependencia programa por programa",
+          "lane_id": "publicmoney",
+          "status": "DIRECT",
+          "treatment": "DIRECTLY_IN_FILE"
+        }
+      ],
+      "relationship_strength": "DEPENDENCY_TEST_ONLY",
+      "boundary_en": "Programme identity, grant, audit and routing records remain legally separate; no payment, overlap, misuse, false certification or recovery is inferred.",
+      "boundary_es": "La identidad de programa y los registros de concesión, auditoría y remisión siguen separados; no se infiere pago, solapamiento, uso indebido, certificación falsa ni reintegro."
+    },
+    {
+      "master_id": "X-EU-003",
+      "record_type": "PUBLIC_AID_FILE",
+      "stream": "SNCA / antifraud",
+      "organ": "SNCA",
+      "current_custodian": "SNCA",
+      "reference": "141-2026-IRR02",
+      "period": "2026",
+      "connection": "Public-funds / EU coordination perimeter",
+      "object": "Antifraud/public-funds coordination file",
+      "status": "File/reference and general channel response identified",
+      "source_status": "VERIFIED_PRIMARY",
+      "open_reference_gap": "Concrete EU nexus/action, transfers and final treatment",
+      "group_id": "PUBLIC_FUNDS_INTERNAL_CONTROL",
+      "axis_ids": [
+        "AX-FUNDING",
+        "AX-TITLE-BENEFIT",
+        "AX-AUTHORITY"
+      ],
+      "proposition_links": [],
+      "relationship_strength": "DEPENDENCY_TEST_ONLY",
+      "boundary_en": "Programme identity, grant, audit and routing records remain legally separate; no payment, overlap, misuse, false certification or recovery is inferred.",
+      "boundary_es": "La identidad de programa y los registros de concesión, auditoría y remisión siguen separados; no se infiere pago, solapamiento, uso indebido, certificación falsa ni reintegro."
+    },
+    {
+      "master_id": "X-INT-004",
+      "record_type": "SUPPORTING_ACT",
+      "stream": "Intervención General",
+      "organ": "Intervención General de Canarias",
+      "current_custodian": "Intervención General de Canarias",
+      "reference": "184368/2026; 497011/2026",
+      "period": "2026",
+      "connection": "Regional internal control/routing",
+      "object": "Output/routing references; not established as separate merits proceedings",
+      "status": "Examination/routing within stated competence documented",
+      "source_status": "VERIFIED_PRIMARY",
+      "open_reference_gap": "Underlying file/custody if distinct from output references",
+      "group_id": "PUBLIC_FUNDS_INTERNAL_CONTROL",
+      "axis_ids": [
+        "AX-FUNDING",
+        "AX-TITLE-BENEFIT",
+        "AX-AUTHORITY"
+      ],
+      "proposition_links": [],
+      "relationship_strength": "DEPENDENCY_TEST_ONLY",
+      "boundary_en": "Programme identity, grant, audit and routing records remain legally separate; no payment, overlap, misuse, false certification or recovery is inferred.",
+      "boundary_es": "La identidad de programa y los registros de concesión, auditoría y remisión siguen separados; no se infiere pago, solapamiento, uso indebido, certificación falsa ni reintegro."
+    },
+    {
+      "master_id": "X-REG-001",
+      "record_type": "REGULATORY_FILE",
+      "stream": "CNMV",
+      "organ": "CNMV",
+      "current_custodian": "CNMV",
+      "reference": "ED/36/2021",
+      "period": "2021-2026",
+      "connection": "RICPE / supervisory notice and activity",
+      "object": "CNMV supervisory/consultation history",
+      "status": "Supervisory activity documented; no public merits result/project approval established",
+      "source_status": "VERIFIED_PRIMARY",
+      "open_reference_gap": "Complete native supervisory corpus where legally obtainable",
+      "group_id": "MARKET_TAX_SUPERVISION",
+      "axis_ids": [
+        "AX-FUNDING",
+        "AX-TITLE-BENEFIT"
+      ],
+      "proposition_links": [
+        {
+          "proposition_id": "P13",
+          "title_en": "The 2020 project promotion is an attributed representation",
+          "title_es": "La promoción del proyecto de 2020 es una manifestación atribuida",
+          "lane_id": "publicmoney",
+          "status": "CONTEXT",
+          "treatment": "MATERIALLY_RELEVANT_CONTEXT"
+        },
+        {
+          "proposition_id": "P14",
+          "title_en": "The 54 / 190 / 18 ownership record is a knowledge checkpoint",
+          "title_es": "El registro de titularidad 54 / 190 / 18 es un punto de conocimiento",
+          "lane_id": "publicmoney",
+          "status": "CONTEXT",
+          "treatment": "MATERIALLY_RELEVANT_CONTEXT"
+        }
+      ],
+      "relationship_strength": "DEPENDENCY_TEST_ONLY",
+      "boundary_en": "A supervisory or tax file tests only its own object, receipt and competence; it does not determine the merits of the Community or insolvency tracks.",
+      "boundary_es": "Un expediente supervisor o tributario examina solo su propio objeto, recepción y competencia; no decide el fondo de las vías comunitaria o concursal."
+    },
+    {
+      "master_id": "X-TAX-002",
+      "record_type": "TAX_FILE",
+      "stream": "AEAT",
+      "organ": "AEAT",
+      "current_custodian": "AEAT",
+      "reference": "AEAT complaint 13/01/2021 and later registrations",
+      "period": "2021-",
+      "connection": "Sun Park / tax perimeter",
+      "object": "Tax complaint/traceability",
+      "status": "Receipt/traceability documented; merits protected by tax secrecy",
+      "source_status": "VERIFIED_PROCEDURAL",
+      "open_reference_gap": "Assigned tax file/result if lawfully disclosable",
+      "group_id": "MARKET_TAX_SUPERVISION",
+      "axis_ids": [
+        "AX-FUNDING",
+        "AX-TITLE-BENEFIT"
+      ],
+      "proposition_links": [],
+      "relationship_strength": "DEPENDENCY_TEST_ONLY",
+      "boundary_en": "A supervisory or tax file tests only its own object, receipt and competence; it does not determine the merits of the Community or insolvency tracks.",
+      "boundary_es": "Un expediente supervisor o tributario examina solo su propio objeto, recepción y competencia; no decide el fondo de las vías comunitaria o concursal."
+    },
+    {
+      "master_id": "X-WB-005",
+      "record_type": "ADMINISTRATIVE_FILE",
+      "stream": "Law 2/2023 routing",
+      "organ": "Government routing chain",
+      "current_custodian": "Modernización y Calidad / current handler to verify",
+      "reference": "REGAGE26e00065752755",
+      "period": "2026",
+      "connection": "Whistleblower/Law 2/2023 institutional routing",
+      "object": "Formal transfer and handling",
+      "status": "Transfer documented; handler/preservation/merits treatment pending",
+      "source_status": "VERIFIED_PRIMARY",
+      "open_reference_gap": "Assigned handler/file, preservation and substantive treatment",
+      "group_id": "PUBLIC_FUNDS_INTERNAL_CONTROL",
+      "axis_ids": [
+        "AX-FUNDING",
+        "AX-TITLE-BENEFIT",
+        "AX-AUTHORITY"
+      ],
+      "proposition_links": [],
+      "relationship_strength": "DEPENDENCY_TEST_ONLY",
+      "boundary_en": "Programme identity, grant, audit and routing records remain legally separate; no payment, overlap, misuse, false certification or recovery is inferred.",
+      "boundary_es": "La identidad de programa y los registros de concesión, auditoría y remisión siguen separados; no se infiere pago, solapamiento, uso indebido, certificación falsa ni reintegro."
+    }
+  ],
+  "by_master_id": {
+    "CAN-OMB-001": {
+      "group_id": "TRANSPARENCY_OMBUDSMAN",
+      "axis_ids": [
+        "AX-AUTHORITY"
+      ],
+      "proposition_ids": [],
+      "relationship_strength": "DEPENDENCY_TEST_ONLY",
+      "boundary_en": "This reciprocal link exposes the applicable evidence questions; it does not prove ACTA delivery, receipt, examination, reliance, knowledge or merits.",
+      "boundary_es": "Este enlace recíproco expone las preguntas probatorias aplicables; no prueba entrega, recepción, examen, utilización, conocimiento ni fondo del ACTA."
+    },
+    "GC-GOV-019": {
+      "group_id": "JUDICIAL_POLICE_SUPERVISION",
+      "axis_ids": [
+        "AX-AUTHORITY",
+        "AX-NOTICE-LPB"
+      ],
+      "proposition_ids": [
+        "P01",
+        "P04",
+        "P05",
+        "P09",
+        "P10",
+        "P17",
+        "P18"
+      ],
+      "relationship_strength": "DEPENDENCY_TEST_ONLY",
+      "boundary_en": "This reciprocal link exposes the applicable evidence questions; it does not prove ACTA delivery, receipt, examination, reliance, knowledge or merits.",
+      "boundary_es": "Este enlace recíproco expone las preguntas probatorias aplicables; no prueba entrega, recepción, examen, utilización, conocimiento ni fondo del ACTA."
+    },
+    "GC-GOV-020": {
+      "group_id": "JUDICIAL_POLICE_SUPERVISION",
+      "axis_ids": [
+        "AX-AUTHORITY",
+        "AX-NOTICE-LPB"
+      ],
+      "proposition_ids": [
+        "P01",
+        "P04",
+        "P05",
+        "P09",
+        "P10",
+        "P17"
+      ],
+      "relationship_strength": "DEPENDENCY_TEST_ONLY",
+      "boundary_en": "This reciprocal link exposes the applicable evidence questions; it does not prove ACTA delivery, receipt, examination, reliance, knowledge or merits.",
+      "boundary_es": "Este enlace recíproco expone las preguntas probatorias aplicables; no prueba entrega, recepción, examen, utilización, conocimiento ni fondo del ACTA."
+    },
+    "GC-LAJ-021": {
+      "group_id": "JUDICIAL_POLICE_SUPERVISION",
+      "axis_ids": [
+        "AX-AUTHORITY",
+        "AX-NOTICE-LPB"
+      ],
+      "proposition_ids": [
+        "P01"
+      ],
+      "relationship_strength": "DEPENDENCY_TEST_ONLY",
+      "boundary_en": "This reciprocal link exposes the applicable evidence questions; it does not prove ACTA delivery, receipt, examination, reliance, knowledge or merits.",
+      "boundary_es": "Este enlace recíproco expone las preguntas probatorias aplicables; no prueba entrega, recepción, examen, utilización, conocimiento ni fondo del ACTA."
+    },
+    "GC-POL-024": {
+      "group_id": "JUDICIAL_POLICE_SUPERVISION",
+      "axis_ids": [
+        "AX-AUTHORITY",
+        "AX-NOTICE-LPB"
+      ],
+      "proposition_ids": [],
+      "relationship_strength": "DEPENDENCY_TEST_ONLY",
+      "boundary_en": "This reciprocal link exposes the applicable evidence questions; it does not prove ACTA delivery, receipt, examination, reliance, knowledge or merits.",
+      "boundary_es": "Este enlace recíproco expone las preguntas probatorias aplicables; no prueba entrega, recepción, examen, utilización, conocimiento ni fondo del ACTA."
+    },
+    "GC-PRO-022": {
+      "group_id": "PROFESSIONAL_OVERSIGHT",
+      "axis_ids": [
+        "AX-AUTHORITY"
+      ],
+      "proposition_ids": [],
+      "relationship_strength": "DEPENDENCY_TEST_ONLY",
+      "boundary_en": "This reciprocal link exposes the applicable evidence questions; it does not prove ACTA delivery, receipt, examination, reliance, knowledge or merits.",
+      "boundary_es": "Este enlace recíproco expone las preguntas probatorias aplicables; no prueba entrega, recepción, examen, utilización, conocimiento ni fondo del ACTA."
+    },
+    "GC-PRO-023": {
+      "group_id": "PROFESSIONAL_OVERSIGHT",
+      "axis_ids": [
+        "AX-AUTHORITY"
+      ],
+      "proposition_ids": [],
+      "relationship_strength": "DEPENDENCY_TEST_ONLY",
+      "boundary_en": "This reciprocal link exposes the applicable evidence questions; it does not prove ACTA delivery, receipt, examination, reliance, knowledge or merits.",
+      "boundary_es": "Este enlace recíproco expone las preguntas probatorias aplicables; no prueba entrega, recepción, examen, utilización, conocimiento ni fondo del ACTA."
+    },
+    "LZ-CAB-011": {
+      "group_id": "LOCAL_TOURISM_WORKS",
+      "axis_ids": [
+        "AX-AUTHORITY",
+        "AX-TITLE-BENEFIT"
+      ],
+      "proposition_ids": [],
+      "relationship_strength": "DEPENDENCY_TEST_ONLY",
+      "boundary_en": "This reciprocal link exposes the applicable evidence questions; it does not prove ACTA delivery, receipt, examination, reliance, knowledge or merits.",
+      "boundary_es": "Este enlace recíproco expone las preguntas probatorias aplicables; no prueba entrega, recepción, examen, utilización, conocimiento ni fondo del ACTA."
+    },
+    "LZ-CAB-012": {
+      "group_id": "LOCAL_TOURISM_WORKS",
+      "axis_ids": [
+        "AX-AUTHORITY",
+        "AX-TITLE-BENEFIT"
+      ],
+      "proposition_ids": [],
+      "relationship_strength": "DEPENDENCY_TEST_ONLY",
+      "boundary_en": "This reciprocal link exposes the applicable evidence questions; it does not prove ACTA delivery, receipt, examination, reliance, knowledge or merits.",
+      "boundary_es": "Este enlace recíproco expone las preguntas probatorias aplicables; no prueba entrega, recepción, examen, utilización, conocimiento ni fondo del ACTA."
+    },
+    "LZ-CAB-013": {
+      "group_id": "LOCAL_TOURISM_WORKS",
+      "axis_ids": [
+        "AX-AUTHORITY",
+        "AX-TITLE-BENEFIT"
+      ],
+      "proposition_ids": [],
+      "relationship_strength": "DEPENDENCY_TEST_ONLY",
+      "boundary_en": "This reciprocal link exposes the applicable evidence questions; it does not prove ACTA delivery, receipt, examination, reliance, knowledge or merits.",
+      "boundary_es": "Este enlace recíproco expone las preguntas probatorias aplicables; no prueba entrega, recepción, examen, utilización, conocimiento ni fondo del ACTA."
+    },
+    "LZ-CAB-019": {
+      "group_id": "LOCAL_TOURISM_WORKS",
+      "axis_ids": [
+        "AX-AUTHORITY",
+        "AX-TITLE-BENEFIT"
+      ],
+      "proposition_ids": [],
+      "relationship_strength": "DEPENDENCY_TEST_ONLY",
+      "boundary_en": "This reciprocal link exposes the applicable evidence questions; it does not prove ACTA delivery, receipt, examination, reliance, knowledge or merits.",
+      "boundary_es": "Este enlace recíproco expone las preguntas probatorias aplicables; no prueba entrega, recepción, examen, utilización, conocimiento ni fondo del ACTA."
+    },
+    "LZ-CAB-020": {
+      "group_id": "LOCAL_TOURISM_WORKS",
+      "axis_ids": [
+        "AX-AUTHORITY",
+        "AX-TITLE-BENEFIT"
+      ],
+      "proposition_ids": [],
+      "relationship_strength": "DEPENDENCY_TEST_ONLY",
+      "boundary_en": "This reciprocal link exposes the applicable evidence questions; it does not prove ACTA delivery, receipt, examination, reliance, knowledge or merits.",
+      "boundary_es": "Este enlace recíproco expone las preguntas probatorias aplicables; no prueba entrega, recepción, examen, utilización, conocimiento ni fondo del ACTA."
+    },
+    "LZ-CAB-021": {
+      "group_id": "LOCAL_TOURISM_WORKS",
+      "axis_ids": [
+        "AX-AUTHORITY",
+        "AX-TITLE-BENEFIT"
+      ],
+      "proposition_ids": [],
+      "relationship_strength": "DEPENDENCY_TEST_ONLY",
+      "boundary_en": "This reciprocal link exposes the applicable evidence questions; it does not prove ACTA delivery, receipt, examination, reliance, knowledge or merits.",
+      "boundary_es": "Este enlace recíproco expone las preguntas probatorias aplicables; no prueba entrega, recepción, examen, utilización, conocimiento ni fondo del ACTA."
+    },
+    "LZ-CAB-022": {
+      "group_id": "LOCAL_TOURISM_WORKS",
+      "axis_ids": [
+        "AX-AUTHORITY",
+        "AX-TITLE-BENEFIT"
+      ],
+      "proposition_ids": [],
+      "relationship_strength": "DEPENDENCY_TEST_ONLY",
+      "boundary_en": "This reciprocal link exposes the applicable evidence questions; it does not prove ACTA delivery, receipt, examination, reliance, knowledge or merits.",
+      "boundary_es": "Este enlace recíproco expone las preguntas probatorias aplicables; no prueba entrega, recepción, examen, utilización, conocimiento ni fondo del ACTA."
+    },
+    "LZ-CAB-023": {
+      "group_id": "LOCAL_TOURISM_WORKS",
+      "axis_ids": [
+        "AX-AUTHORITY",
+        "AX-TITLE-BENEFIT"
+      ],
+      "proposition_ids": [],
+      "relationship_strength": "DEPENDENCY_TEST_ONLY",
+      "boundary_en": "This reciprocal link exposes the applicable evidence questions; it does not prove ACTA delivery, receipt, examination, reliance, knowledge or merits.",
+      "boundary_es": "Este enlace recíproco expone las preguntas probatorias aplicables; no prueba entrega, recepción, examen, utilización, conocimiento ni fondo del ACTA."
+    },
+    "LZ-CAB-024": {
+      "group_id": "LOCAL_TOURISM_WORKS",
+      "axis_ids": [
+        "AX-AUTHORITY",
+        "AX-TITLE-BENEFIT"
+      ],
+      "proposition_ids": [],
+      "relationship_strength": "DEPENDENCY_TEST_ONLY",
+      "boundary_en": "This reciprocal link exposes the applicable evidence questions; it does not prove ACTA delivery, receipt, examination, reliance, knowledge or merits.",
+      "boundary_es": "Este enlace recíproco expone las preguntas probatorias aplicables; no prueba entrega, recepción, examen, utilización, conocimiento ni fondo del ACTA."
+    },
+    "LZ-CAB-025": {
+      "group_id": "LOCAL_TOURISM_WORKS",
+      "axis_ids": [
+        "AX-AUTHORITY",
+        "AX-TITLE-BENEFIT"
+      ],
+      "proposition_ids": [],
+      "relationship_strength": "DEPENDENCY_TEST_ONLY",
+      "boundary_en": "This reciprocal link exposes the applicable evidence questions; it does not prove ACTA delivery, receipt, examination, reliance, knowledge or merits.",
+      "boundary_es": "Este enlace recíproco expone las preguntas probatorias aplicables; no prueba entrega, recepción, examen, utilización, conocimiento ni fondo del ACTA."
+    },
+    "LZ-PRO-029": {
+      "group_id": "PROFESSIONAL_OVERSIGHT",
+      "axis_ids": [
+        "AX-AUTHORITY"
+      ],
+      "proposition_ids": [],
+      "relationship_strength": "DEPENDENCY_TEST_ONLY",
+      "boundary_en": "This reciprocal link exposes the applicable evidence questions; it does not prove ACTA delivery, receipt, examination, reliance, knowledge or merits.",
+      "boundary_es": "Este enlace recíproco expone las preguntas probatorias aplicables; no prueba entrega, recepción, examen, utilización, conocimiento ni fondo del ACTA."
+    },
+    "LZ-TRA-027": {
+      "group_id": "TRANSPARENCY_OMBUDSMAN",
+      "axis_ids": [
+        "AX-AUTHORITY"
+      ],
+      "proposition_ids": [],
+      "relationship_strength": "DEPENDENCY_TEST_ONLY",
+      "boundary_en": "This reciprocal link exposes the applicable evidence questions; it does not prove ACTA delivery, receipt, examination, reliance, knowledge or merits.",
+      "boundary_es": "Este enlace recíproco expone las preguntas probatorias aplicables; no prueba entrega, recepción, examen, utilización, conocimiento ni fondo del ACTA."
+    },
+    "LZ-TRA-028": {
+      "group_id": "TRANSPARENCY_OMBUDSMAN",
+      "axis_ids": [
+        "AX-AUTHORITY"
+      ],
+      "proposition_ids": [],
+      "relationship_strength": "DEPENDENCY_TEST_ONLY",
+      "boundary_en": "This reciprocal link exposes the applicable evidence questions; it does not prove ACTA delivery, receipt, examination, reliance, knowledge or merits.",
+      "boundary_es": "Este enlace recíproco expone las preguntas probatorias aplicables; no prueba entrega, recepción, examen, utilización, conocimiento ni fondo del ACTA."
+    },
+    "LZ-TRA-032": {
+      "group_id": "TRANSPARENCY_OMBUDSMAN",
+      "axis_ids": [
+        "AX-AUTHORITY"
+      ],
+      "proposition_ids": [],
+      "relationship_strength": "DEPENDENCY_TEST_ONLY",
+      "boundary_en": "This reciprocal link exposes the applicable evidence questions; it does not prove ACTA delivery, receipt, examination, reliance, knowledge or merits.",
+      "boundary_es": "Este enlace recíproco expone las preguntas probatorias aplicables; no prueba entrega, recepción, examen, utilización, conocimiento ni fondo del ACTA."
+    },
+    "LZ-TUR-008": {
+      "group_id": "LOCAL_TOURISM_WORKS",
+      "axis_ids": [
+        "AX-AUTHORITY",
+        "AX-TITLE-BENEFIT"
+      ],
+      "proposition_ids": [],
+      "relationship_strength": "DEPENDENCY_TEST_ONLY",
+      "boundary_en": "This reciprocal link exposes the applicable evidence questions; it does not prove ACTA delivery, receipt, examination, reliance, knowledge or merits.",
+      "boundary_es": "Este enlace recíproco expone las preguntas probatorias aplicables; no prueba entrega, recepción, examen, utilización, conocimiento ni fondo del ACTA."
+    },
+    "LZ-TUR-009": {
+      "group_id": "LOCAL_TOURISM_WORKS",
+      "axis_ids": [
+        "AX-AUTHORITY",
+        "AX-TITLE-BENEFIT"
+      ],
+      "proposition_ids": [],
+      "relationship_strength": "DEPENDENCY_TEST_ONLY",
+      "boundary_en": "This reciprocal link exposes the applicable evidence questions; it does not prove ACTA delivery, receipt, examination, reliance, knowledge or merits.",
+      "boundary_es": "Este enlace recíproco expone las preguntas probatorias aplicables; no prueba entrega, recepción, examen, utilización, conocimiento ni fondo del ACTA."
+    },
+    "LZ-TUR-010": {
+      "group_id": "LOCAL_TOURISM_WORKS",
+      "axis_ids": [
+        "AX-AUTHORITY",
+        "AX-TITLE-BENEFIT"
+      ],
+      "proposition_ids": [],
+      "relationship_strength": "DEPENDENCY_TEST_ONLY",
+      "boundary_en": "This reciprocal link exposes the applicable evidence questions; it does not prove ACTA delivery, receipt, examination, reliance, knowledge or merits.",
+      "boundary_es": "Este enlace recíproco expone las preguntas probatorias aplicables; no prueba entrega, recepción, examen, utilización, conocimiento ni fondo del ACTA."
+    },
+    "LZ-YAI-014": {
+      "group_id": "LOCAL_TOURISM_WORKS",
+      "axis_ids": [
+        "AX-AUTHORITY",
+        "AX-TITLE-BENEFIT"
+      ],
+      "proposition_ids": [],
+      "relationship_strength": "DEPENDENCY_TEST_ONLY",
+      "boundary_en": "This reciprocal link exposes the applicable evidence questions; it does not prove ACTA delivery, receipt, examination, reliance, knowledge or merits.",
+      "boundary_es": "Este enlace recíproco expone las preguntas probatorias aplicables; no prueba entrega, recepción, examen, utilización, conocimiento ni fondo del ACTA."
+    },
+    "LZ-YAI-015": {
+      "group_id": "LOCAL_TOURISM_WORKS",
+      "axis_ids": [
+        "AX-AUTHORITY",
+        "AX-TITLE-BENEFIT"
+      ],
+      "proposition_ids": [],
+      "relationship_strength": "DEPENDENCY_TEST_ONLY",
+      "boundary_en": "This reciprocal link exposes the applicable evidence questions; it does not prove ACTA delivery, receipt, examination, reliance, knowledge or merits.",
+      "boundary_es": "Este enlace recíproco expone las preguntas probatorias aplicables; no prueba entrega, recepción, examen, utilización, conocimiento ni fondo del ACTA."
+    },
+    "LZ-YAI-016": {
+      "group_id": "LOCAL_TOURISM_WORKS",
+      "axis_ids": [
+        "AX-AUTHORITY",
+        "AX-TITLE-BENEFIT"
+      ],
+      "proposition_ids": [],
+      "relationship_strength": "DEPENDENCY_TEST_ONLY",
+      "boundary_en": "This reciprocal link exposes the applicable evidence questions; it does not prove ACTA delivery, receipt, examination, reliance, knowledge or merits.",
+      "boundary_es": "Este enlace recíproco expone las preguntas probatorias aplicables; no prueba entrega, recepción, examen, utilización, conocimiento ni fondo del ACTA."
+    },
+    "LZ-YAI-017": {
+      "group_id": "LOCAL_TOURISM_WORKS",
+      "axis_ids": [
+        "AX-AUTHORITY",
+        "AX-TITLE-BENEFIT"
+      ],
+      "proposition_ids": [],
+      "relationship_strength": "DEPENDENCY_TEST_ONLY",
+      "boundary_en": "This reciprocal link exposes the applicable evidence questions; it does not prove ACTA delivery, receipt, examination, reliance, knowledge or merits.",
+      "boundary_es": "Este enlace recíproco expone las preguntas probatorias aplicables; no prueba entrega, recepción, examen, utilización, conocimiento ni fondo del ACTA."
+    },
+    "LZ-YAI-018": {
+      "group_id": "LOCAL_TOURISM_WORKS",
+      "axis_ids": [
+        "AX-AUTHORITY",
+        "AX-TITLE-BENEFIT"
+      ],
+      "proposition_ids": [],
+      "relationship_strength": "DEPENDENCY_TEST_ONLY",
+      "boundary_en": "This reciprocal link exposes the applicable evidence questions; it does not prove ACTA delivery, receipt, examination, reliance, knowledge or merits.",
+      "boundary_es": "Este enlace recíproco expone las preguntas probatorias aplicables; no prueba entrega, recepción, examen, utilización, conocimiento ni fondo del ACTA."
+    },
+    "LZ-YAI-026": {
+      "group_id": "LOCAL_TOURISM_WORKS",
+      "axis_ids": [
+        "AX-AUTHORITY",
+        "AX-TITLE-BENEFIT"
+      ],
+      "proposition_ids": [],
+      "relationship_strength": "DEPENDENCY_TEST_ONLY",
+      "boundary_en": "This reciprocal link exposes the applicable evidence questions; it does not prove ACTA delivery, receipt, examination, reliance, knowledge or merits.",
+      "boundary_es": "Este enlace recíproco expone las preguntas probatorias aplicables; no prueba entrega, recepción, examen, utilización, conocimiento ni fondo del ACTA."
+    },
+    "LZ-YAI-031": {
+      "group_id": "LOCAL_TOURISM_WORKS",
+      "axis_ids": [
+        "AX-AUTHORITY",
+        "AX-TITLE-BENEFIT"
+      ],
+      "proposition_ids": [],
+      "relationship_strength": "DEPENDENCY_TEST_ONLY",
+      "boundary_en": "This reciprocal link exposes the applicable evidence questions; it does not prove ACTA delivery, receipt, examination, reliance, knowledge or merits.",
+      "boundary_es": "Este enlace recíproco expone las preguntas probatorias aplicables; no prueba entrega, recepción, examen, utilización, conocimiento ni fondo del ACTA."
+    },
+    "LZ-YAI-037": {
+      "group_id": "LOCAL_TOURISM_WORKS",
+      "axis_ids": [
+        "AX-AUTHORITY",
+        "AX-TITLE-BENEFIT"
+      ],
+      "proposition_ids": [],
+      "relationship_strength": "DEPENDENCY_TEST_ONLY",
+      "boundary_en": "This reciprocal link exposes the applicable evidence questions; it does not prove ACTA delivery, receipt, examination, reliance, knowledge or merits.",
+      "boundary_es": "Este enlace recíproco expone las preguntas probatorias aplicables; no prueba entrega, recepción, examen, utilización, conocimiento ni fondo del ACTA."
+    },
+    "MAD-CCACM-002": {
+      "group_id": "PROFESSIONAL_OVERSIGHT",
+      "axis_ids": [
+        "AX-AUTHORITY"
+      ],
+      "proposition_ids": [],
+      "relationship_strength": "DEPENDENCY_TEST_ONLY",
+      "boundary_en": "This reciprocal link exposes the applicable evidence questions; it does not prove ACTA delivery, receipt, examination, reliance, knowledge or merits.",
+      "boundary_es": "Este enlace recíproco expone las preguntas probatorias aplicables; no prueba entrega, recepción, examen, utilización, conocimiento ni fondo del ACTA."
+    },
+    "MAD-ICAM-001": {
+      "group_id": "PROFESSIONAL_OVERSIGHT",
+      "axis_ids": [
+        "AX-AUTHORITY"
+      ],
+      "proposition_ids": [],
+      "relationship_strength": "DEPENDENCY_TEST_ONLY",
+      "boundary_en": "This reciprocal link exposes the applicable evidence questions; it does not prove ACTA delivery, receipt, examination, reliance, knowledge or merits.",
+      "boundary_es": "Este enlace recíproco expone las preguntas probatorias aplicables; no prueba entrega, recepción, examen, utilización, conocimiento ni fondo del ACTA."
+    },
+    "MAD-ICAM-003": {
+      "group_id": "PROFESSIONAL_OVERSIGHT",
+      "axis_ids": [
+        "AX-AUTHORITY"
+      ],
+      "proposition_ids": [],
+      "relationship_strength": "DEPENDENCY_TEST_ONLY",
+      "boundary_en": "This reciprocal link exposes the applicable evidence questions; it does not prove ACTA delivery, receipt, examination, reliance, knowledge or merits.",
+      "boundary_es": "Este enlace recíproco expone las preguntas probatorias aplicables; no prueba entrega, recepción, examen, utilización, conocimiento ni fondo del ACTA."
+    },
+    "MAD-ICAM-004": {
+      "group_id": "PROFESSIONAL_OVERSIGHT",
+      "axis_ids": [
+        "AX-AUTHORITY"
+      ],
+      "proposition_ids": [],
+      "relationship_strength": "DEPENDENCY_TEST_ONLY",
+      "boundary_en": "This reciprocal link exposes the applicable evidence questions; it does not prove ACTA delivery, receipt, examination, reliance, knowledge or merits.",
+      "boundary_es": "Este enlace recíproco expone las preguntas probatorias aplicables; no prueba entrega, recepción, examen, utilización, conocimiento ni fondo del ACTA."
+    },
+    "MAD-ICAM-005": {
+      "group_id": "PROFESSIONAL_OVERSIGHT",
+      "axis_ids": [
+        "AX-AUTHORITY"
+      ],
+      "proposition_ids": [],
+      "relationship_strength": "DEPENDENCY_TEST_ONLY",
+      "boundary_en": "This reciprocal link exposes the applicable evidence questions; it does not prove ACTA delivery, receipt, examination, reliance, knowledge or merits.",
+      "boundary_es": "Este enlace recíproco expone las preguntas probatorias aplicables; no prueba entrega, recepción, examen, utilización, conocimiento ni fondo del ACTA."
+    },
+    "NAT-AEAT-001": {
+      "group_id": "MARKET_TAX_SUPERVISION",
+      "axis_ids": [
+        "AX-FUNDING",
+        "AX-TITLE-BENEFIT"
+      ],
+      "proposition_ids": [],
+      "relationship_strength": "DEPENDENCY_TEST_ONLY",
+      "boundary_en": "This reciprocal link exposes the applicable evidence questions; it does not prove ACTA delivery, receipt, examination, reliance, knowledge or merits.",
+      "boundary_es": "Este enlace recíproco expone las preguntas probatorias aplicables; no prueba entrega, recepción, examen, utilización, conocimiento ni fondo del ACTA."
+    },
+    "NAT-AEAT-002": {
+      "group_id": "MARKET_TAX_SUPERVISION",
+      "axis_ids": [
+        "AX-FUNDING",
+        "AX-TITLE-BENEFIT"
+      ],
+      "proposition_ids": [],
+      "relationship_strength": "DEPENDENCY_TEST_ONLY",
+      "boundary_en": "This reciprocal link exposes the applicable evidence questions; it does not prove ACTA delivery, receipt, examination, reliance, knowledge or merits.",
+      "boundary_es": "Este enlace recíproco expone las preguntas probatorias aplicables; no prueba entrega, recepción, examen, utilización, conocimiento ni fondo del ACTA."
+    },
+    "NAT-AEAT-COM-003": {
+      "group_id": "MARKET_TAX_SUPERVISION",
+      "axis_ids": [
+        "AX-FUNDING",
+        "AX-TITLE-BENEFIT"
+      ],
+      "proposition_ids": [],
+      "relationship_strength": "DEPENDENCY_TEST_ONLY",
+      "boundary_en": "This reciprocal link exposes the applicable evidence questions; it does not prove ACTA delivery, receipt, examination, reliance, knowledge or merits.",
+      "boundary_es": "Este enlace recíproco expone las preguntas probatorias aplicables; no prueba entrega, recepción, examen, utilización, conocimiento ni fondo del ACTA."
+    },
+    "NAT-AID-001": {
+      "group_id": "PUBLIC_FUNDS_INTERNAL_CONTROL",
+      "axis_ids": [
+        "AX-FUNDING",
+        "AX-TITLE-BENEFIT",
+        "AX-AUTHORITY"
+      ],
+      "proposition_ids": [
+        "P15",
+        "P16",
+        "P18"
+      ],
+      "relationship_strength": "DEPENDENCY_TEST_ONLY",
+      "boundary_en": "This reciprocal link exposes the applicable evidence questions; it does not prove ACTA delivery, receipt, examination, reliance, knowledge or merits.",
+      "boundary_es": "Este enlace recíproco expone las preguntas probatorias aplicables; no prueba entrega, recepción, examen, utilización, conocimiento ni fondo del ACTA."
+    },
+    "NAT-CNMV-001": {
+      "group_id": "MARKET_TAX_SUPERVISION",
+      "axis_ids": [
+        "AX-FUNDING",
+        "AX-TITLE-BENEFIT"
+      ],
+      "proposition_ids": [],
+      "relationship_strength": "DEPENDENCY_TEST_ONLY",
+      "boundary_en": "This reciprocal link exposes the applicable evidence questions; it does not prove ACTA delivery, receipt, examination, reliance, knowledge or merits.",
+      "boundary_es": "Este enlace recíproco expone las preguntas probatorias aplicables; no prueba entrega, recepción, examen, utilización, conocimiento ni fondo del ACTA."
+    },
+    "NAT-CNMV-002": {
+      "group_id": "MARKET_TAX_SUPERVISION",
+      "axis_ids": [
+        "AX-FUNDING",
+        "AX-TITLE-BENEFIT"
+      ],
+      "proposition_ids": [],
+      "relationship_strength": "DEPENDENCY_TEST_ONLY",
+      "boundary_en": "This reciprocal link exposes the applicable evidence questions; it does not prove ACTA delivery, receipt, examination, reliance, knowledge or merits.",
+      "boundary_es": "Este enlace recíproco expone las preguntas probatorias aplicables; no prueba entrega, recepción, examen, utilización, conocimiento ni fondo del ACTA."
+    },
+    "NAT-TES-001": {
+      "group_id": "PUBLIC_FUNDS_INTERNAL_CONTROL",
+      "axis_ids": [
+        "AX-FUNDING",
+        "AX-TITLE-BENEFIT",
+        "AX-AUTHORITY"
+      ],
+      "proposition_ids": [
+        "P18"
+      ],
+      "relationship_strength": "DEPENDENCY_TEST_ONLY",
+      "boundary_en": "This reciprocal link exposes the applicable evidence questions; it does not prove ACTA delivery, receipt, examination, reliance, knowledge or merits.",
+      "boundary_es": "Este enlace recíproco expone las preguntas probatorias aplicables; no prueba entrega, recepción, examen, utilización, conocimiento ni fondo del ACTA."
+    },
+    "X-EU-003": {
+      "group_id": "PUBLIC_FUNDS_INTERNAL_CONTROL",
+      "axis_ids": [
+        "AX-FUNDING",
+        "AX-TITLE-BENEFIT",
+        "AX-AUTHORITY"
+      ],
+      "proposition_ids": [],
+      "relationship_strength": "DEPENDENCY_TEST_ONLY",
+      "boundary_en": "This reciprocal link exposes the applicable evidence questions; it does not prove ACTA delivery, receipt, examination, reliance, knowledge or merits.",
+      "boundary_es": "Este enlace recíproco expone las preguntas probatorias aplicables; no prueba entrega, recepción, examen, utilización, conocimiento ni fondo del ACTA."
+    },
+    "X-INT-004": {
+      "group_id": "PUBLIC_FUNDS_INTERNAL_CONTROL",
+      "axis_ids": [
+        "AX-FUNDING",
+        "AX-TITLE-BENEFIT",
+        "AX-AUTHORITY"
+      ],
+      "proposition_ids": [],
+      "relationship_strength": "DEPENDENCY_TEST_ONLY",
+      "boundary_en": "This reciprocal link exposes the applicable evidence questions; it does not prove ACTA delivery, receipt, examination, reliance, knowledge or merits.",
+      "boundary_es": "Este enlace recíproco expone las preguntas probatorias aplicables; no prueba entrega, recepción, examen, utilización, conocimiento ni fondo del ACTA."
+    },
+    "X-REG-001": {
+      "group_id": "MARKET_TAX_SUPERVISION",
+      "axis_ids": [
+        "AX-FUNDING",
+        "AX-TITLE-BENEFIT"
+      ],
+      "proposition_ids": [
+        "P13",
+        "P14"
+      ],
+      "relationship_strength": "DEPENDENCY_TEST_ONLY",
+      "boundary_en": "This reciprocal link exposes the applicable evidence questions; it does not prove ACTA delivery, receipt, examination, reliance, knowledge or merits.",
+      "boundary_es": "Este enlace recíproco expone las preguntas probatorias aplicables; no prueba entrega, recepción, examen, utilización, conocimiento ni fondo del ACTA."
+    },
+    "X-TAX-002": {
+      "group_id": "MARKET_TAX_SUPERVISION",
+      "axis_ids": [
+        "AX-FUNDING",
+        "AX-TITLE-BENEFIT"
+      ],
+      "proposition_ids": [],
+      "relationship_strength": "DEPENDENCY_TEST_ONLY",
+      "boundary_en": "This reciprocal link exposes the applicable evidence questions; it does not prove ACTA delivery, receipt, examination, reliance, knowledge or merits.",
+      "boundary_es": "Este enlace recíproco expone las preguntas probatorias aplicables; no prueba entrega, recepción, examen, utilización, conocimiento ni fondo del ACTA."
+    },
+    "X-WB-005": {
+      "group_id": "PUBLIC_FUNDS_INTERNAL_CONTROL",
+      "axis_ids": [
+        "AX-FUNDING",
+        "AX-TITLE-BENEFIT",
+        "AX-AUTHORITY"
+      ],
+      "proposition_ids": [],
+      "relationship_strength": "DEPENDENCY_TEST_ONLY",
+      "boundary_en": "This reciprocal link exposes the applicable evidence questions; it does not prove ACTA delivery, receipt, examination, reliance, knowledge or merits.",
+      "boundary_es": "Este enlace recíproco expone las preguntas probatorias aplicables; no prueba entrega, recepción, examen, utilización, conocimiento ni fondo del ACTA."
+    }
+  },
+  "parallel_2022": {
+    "relationship_type": "TEMPORAL_AND_SUBJECT_MATTER_COMPARISON_ONLY",
+    "days_from_acta_to_deed": 17,
+    "community_track": [
+      {
+        "id": "SP-ACTA-2022-02-04-ATTENDANCE",
+        "date": "2022-02-04",
+        "kind_en": "Recorded attendance and voting frame",
+        "kind_es": "Marco consignado de asistencia y votación",
+        "safe_en": "The located copy records 20.993% present or represented and unanimity among those present for the stated resolutions.",
+        "safe_es": "La copia localizada consigna 20,993 % presente o representado y unanimidad entre los presentes para los acuerdos indicados.",
+        "not_established_en": "It does not establish the complete owner/title denominator, lawful notice, proxies, vote qualification, validity, a controlled minority or criminal agreement.",
+        "not_established_es": "No acredita el denominador completo de propietarios/título, convocatoria válida, poderes, habilitación de voto, validez, minoría controlada ni acuerdo criminal.",
+        "source_anchor": "evidence/community/actas/2022-02-04/transcript-es.md"
+      },
+      {
+        "id": "SP-ACTA-2022-02-04-DEBT",
+        "date": "2022-02-04",
+        "kind_en": "Debt approval and collection authority recorded",
+        "kind_es": "Aprobación de deuda y autorización de cobro consignadas",
+        "safe_en": "The ACTA records that balances were explained, approved unanimously among attendees and that the president was authorised to claim them.",
+        "safe_es": "El ACTA consigna que los saldos fueron explicados, aprobados por unanimidad de asistentes y que se autorizó al presidente para reclamarlos.",
+        "not_established_en": "Accuracy, enforceability, notice, certification, payment, fabrication, false documentation, author, knowledge, intent and single satisfaction are not established.",
+        "not_established_es": "No están acreditados exactitud, exigibilidad, notificación, certificación, pago, fabricación, falsedad documental, autoría, conocimiento, intención ni satisfacción única.",
+        "source_anchor": "evidence/community/actas/2022-02-04/transcript-es.md"
+      },
+      {
+        "id": "SP-ACTA-2022-02-04-PROJECT",
+        "date": "2022-02-04",
+        "kind_en": "Sole CAM project, licences and unitary operation recorded",
+        "kind_es": "Único proyecto CAM, licencias y unidad de explotación consignados",
+        "safe_en": "The ACTA records only the CAM works project as submitted, approves it among attendees, authorises public permissions and a Cabildo request for all units/places and unitary tourism operation, and records a CAM-funded four-star conversion proposal.",
+        "safe_es": "El ACTA consigna como presentado solo el proyecto de obras de CAM, lo aprueba entre asistentes, autoriza permisos públicos y solicitud al Cabildo para todas las unidades/plazas y explotación turística unitaria, y registra una propuesta de conversión a cuatro estrellas a coste de CAM.",
+        "not_established_en": "Community competence over every private unit, lawful cost allocation, title, implementation, public-authority receipt, approval, funding, benefit capture, causal coordination or criminality is not established.",
+        "not_established_es": "No están acreditados competencia comunitaria sobre cada finca privada, imputación lícita de costes, título, ejecución, recepción/aprobación por autoridad, financiación, captura de beneficio, coordinación causal ni delito.",
+        "source_anchor": "evidence/community/actas/2022-02-04/transcript-es.md"
+      }
+    ],
+    "adjudication_track": [
+      {
+        "id": "C36-E044",
+        "date": "2021-05-18",
+        "kind_en": "Auto 164/2021",
+        "kind_es": "Auto 164/2021",
+        "source_status": "VERIFIED_PRIMARY",
+        "safe_en": "Definitively approved CAM's proposal after recording the third-party bidder's nonappearance and failure to lodge the required bond.",
+        "safe_es": "Aprobó definitivamente la propuesta de CAM tras consignar la incomparecencia y falta de depósito de la garantía por el tercer licitador.",
+        "not_established_en": "The approval did not itself complete finality, lawful debt calculation, deed execution, costs, court reporting, cancellations, Registry implementation, accounting or any claim over Matkator or third-party assets.",
+        "not_established_es": "No completó por sí solo firmeza, cálculo lícito de deuda, escritura, costes, comunicación al juzgado, cancelaciones, Registro, contabilidad ni pretensión alguna sobre activos de Matkator o terceros.",
+        "source_anchor": "archive/judicial-intelligence/decisions.jsonl"
+      },
+      {
+        "id": "C36-E046",
+        "date": "2021-10-15",
+        "kind_en": "Auto",
+        "kind_es": "Auto",
+        "source_status": "VERIFIED_PRIMARY",
+        "safe_en": "Dismissed the LPB/Aweswell challenges and confirmed the 18 May approval, describing the process as an improvement-of-offer route rather than a formal auction.",
+        "safe_es": "Desestimó las impugnaciones de LPB/Aweswell y confirmó la aprobación de 18 de mayo, describiendo un procedimiento de mejora de oferta y no una subasta formal.",
+        "not_established_en": "Did not itself prove performance, final debt, deed execution, title registration, cancellation, accounting or surplus.",
+        "not_established_es": "No probó por sí solo cumplimiento, deuda final, escritura, inscripción, cancelación, contabilidad ni remanente.",
+        "source_anchor": "archive/judicial-intelligence/decisions.jsonl"
+      },
+      {
+        "id": "C36-E047",
+        "date": "2021-10-15",
+        "kind_en": "Auto",
+        "kind_es": "Auto",
+        "source_status": "VERIFIED_PRIMARY",
+        "safe_en": "Dismissed the challenges to the 12 May providencia as moot while using auction/adjudication terminology later clarified by a separate 26 January Auto.",
+        "safe_es": "Desestimó por pérdida sobrevenida de objeto las impugnaciones a la providencia de 12 de mayo, con terminología de subasta/adjudicación aclarada después.",
+        "not_established_en": "Shared date with the other 15 October Auto does not merge the instruments; this act did not enlarge asset scope or prove later performance.",
+        "not_established_es": "La fecha compartida con el otro Auto de 15 de octubre no fusiona instrumentos; este acto no amplió activos ni probó cumplimiento posterior.",
+        "source_anchor": "archive/judicial-intelligence/decisions.jsonl"
+      },
+      {
+        "id": "C36-E050",
+        "date": "2022-01-26",
+        "kind_en": "Auto aclaratorio",
+        "kind_es": "Auto aclaratorio",
+        "source_status": "VERIFIED_PRIMARY",
+        "safe_en": "Clarified the 15 October ruling concerning the 12 May providencia by stating that the event was a better-offer licitation appearance, not an auction.",
+        "safe_es": "Aclaró que el evento relativo a la providencia de 12 de mayo fue una comparecencia de licitación para mejora de oferta, no una subasta.",
+        "not_established_en": "Clarification only: it did not make the original approval, a new award, a conveyance, a consideration decision, an asset-scope enlargement or a surplus calculation.",
+        "not_established_es": "Fue solo aclaración: no hizo la aprobación original, una nueva adjudicación, transmisión, decisión sobre contraprestación, ampliación de activos ni cálculo de remanente.",
+        "source_anchor": "archive/judicial-intelligence/decisions.jsonl"
+      },
+      {
+        "id": "C36-E051",
+        "date": "2022-01-26",
+        "kind_en": "Auto aclaratorio",
+        "kind_es": "Auto aclaratorio",
+        "source_status": "VERIFIED_PRIMARY",
+        "safe_en": "Clarified and completed the other 15 October ruling and recorded that July 2021 ownership publicity had been put before the court but was considered irrelevant to realisation of the identified fincas.",
+        "safe_es": "Aclaró y completó el otro Auto de 15 de octubre y consignó que la publicidad dominical de julio de 2021 fue planteada pero considerada irrelevante para realizar las fincas identificadas.",
+        "not_established_en": "Clarification only: the recital is not a whole-hotel title finding, a new award, a conveyance, a debt determination or a surplus decision.",
+        "not_established_es": "Fue solo aclaración: la mención no es un pronunciamiento de título sobre todo el hotel, nueva adjudicación, transmisión, determinación de deuda ni decisión sobre remanente.",
+        "source_anchor": "archive/judicial-intelligence/decisions.jsonl"
+      },
+      {
+        "id": "C36-E055",
+        "date": "2022-02-21",
+        "kind_en": "Public deed no. 457",
+        "kind_es": "Escritura pública n.º 457",
+        "safe_en": "The located 76-page deed conveys the described LPB mortgaged-property perimeter to CAM and states EUR 13,168,082.02 as debt serving as consideration for the dación.",
+        "safe_es": "La escritura localizada de 76 páginas transmite a CAM el perímetro descrito de fincas hipotecadas de LPB y expresa 13.168.082,02 EUR como deuda que sirve de contraprestación de la dación.",
+        "not_established_en": "It does not by itself prove the final lawful debt, the separate EUR 400,000 line, any Matkator/third-party title, court-return, cancellations, finca-by-finca Registry implementation, final accounting or surplus.",
+        "not_established_es": "No prueba por sí sola la deuda lícita final, la línea separada de 400.000 EUR, título alguno de Matkator/terceros, devolución al juzgado, cancelaciones, ejecución registral finca por finca, contabilidad final ni remanente.",
+        "source_anchor": "assets/data/concurso36-judicial-acts-v1.json",
+        "source_status": "VERIFIED_PRIMARY"
+      }
+    ],
+    "shared_proposition_ids": [
+      "P10",
+      "P11",
+      "P14",
+      "P15",
+      "P18"
+    ],
+    "boundary_en": "The ACTA was recorded 17 days before deed 457. Date and shared asset/project subject matter permit comparison and source production; they do not prove causal use, coordination, notice, knowledge, intent or wrongdoing.",
+    "boundary_es": "El ACTA se consignó 17 días antes de la escritura 457. La fecha y la materia compartida de activos/proyecto permiten comparación y producción de fuentes; no prueban uso causal, coordinación, notificación, conocimiento, intención ni ilicitud."
+  },
+  "evidentiary_axes": [
+    {
+      "id": "AX-NOTICE-LPB",
+      "label_en": "LPB notice, attendance and ACTA receipt",
+      "label_es": "Convocatoria, asistencia y recepción del ACTA por LPB",
+      "state": "ATTRIBUTED_NON_RECEIPT_NATIVE_SERVICE_CHAIN_OPEN",
+      "supported_en": "Gil Marer states that his relevant perimeter received no invitation or pre-meeting knowledge and obtained the ACTA only afterward through an indirect Thompson-family forwarding route.",
+      "supported_es": "Gil Marer declara que su perímetro relevante no recibió convocatoria ni conoció previamente la reunión y obtuvo el ACTA solo después mediante reenvío indirecto de la familia Thompson.",
+      "not_established_en": "The lawful recipient, statutory address, owner-list version, dispatch, delivery/return/fallback, direct closed-ACTA communication, exact actual-knowledge time, deliberate concealment and actor-specific intent are not established.",
+      "not_established_es": "No están acreditados el destinatario legal, domicilio estatutario, versión de la lista, envío, entrega/devolución/supletorio, comunicación directa del ACTA cerrada, momento exacto de conocimiento, ocultación deliberada ni intención individual.",
+      "next_source_en": "Native call and service package; unredacted attendance/proxy register; native Thompson forwarding message, upstream distribution and attachment-hash bridge.",
+      "next_source_es": "Convocatoria y paquete nativo de notificación; registro íntegro de asistentes/poderes; reenvío nativo de Thompson, distribución previa y puente de hash del adjunto.",
+      "contrary_en": "A correct insolvency/LPH recipient may have been served through a route not present in the public package; the redacted attendee list cannot exclude an LPB proxy.",
+      "contrary_es": "El destinatario concursal/LPH correcto pudo ser notificado por una vía no presente en el paquete público; la lista redactada no permite excluir un poder de LPB."
+    },
+    {
+      "id": "AX-NOTICE-MATKATOR",
+      "label_en": "Matkator notice and extraconcursal perimeter",
+      "label_es": "Convocatoria de Matkator y perímetro extraconcursal",
+      "state": "NO_PUBLIC_SERVICE_CHAIN_LOCATED",
+      "supported_en": "Matkator is a separate extraconcursal owner perimeter and none of the three company representations retained on the public ACTA page is Matkator.",
+      "supported_es": "Matkator constituye un perímetro propietario extraconcursal separado y ninguna de las tres representaciones societarias conservadas en la página pública del ACTA es Matkator.",
+      "not_established_en": "The public redaction cannot exclude a proxy; non-service, debt, levy, authority, challenge, work, use, title effect and deliberate exclusion are not established.",
+      "not_established_es": "La redacción pública no permite excluir un poder; no están acreditados falta de notificación, deuda, derrama, autoridad, impugnación, obra, uso, efecto dominical ni exclusión deliberada.",
+      "next_source_en": "Matkator unit/title schedule and independent LPH notice, proxy, vote, debt, ACTA-delivery, challenge and implementation ledger.",
+      "next_source_es": "Relación de fincas/título de Matkator y mayor independiente de convocatoria LPH, poder, voto, deuda, entrega del ACTA, impugnación y ejecución.",
+      "contrary_en": "Matkator may have been lawfully served or represented through material withheld for privacy or not yet controlled.",
+      "contrary_es": "Matkator pudo ser notificada o representada válidamente mediante material reservado por privacidad o aún no controlado."
+    },
+    {
+      "id": "AX-VOTING-CONTROL",
+      "label_en": "20.993%, attendee unanimity and the ‘majority owner’ recital",
+      "label_es": "20,993 %, unanimidad de asistentes y mención de «propietario mayoritario»",
+      "state": "DOCUMENTARY_TENSION_DENOMINATOR_OPEN",
+      "supported_en": "The located copy records 20.993% present or represented, attendee unanimity and describes CAM as the principal interested majority owner before deed 457.",
+      "supported_es": "La copia localizada consigna 20,993 % presente o representado, unanimidad de asistentes y describe a CAM como principal interesado y propietario mayoritario antes de la escritura 457.",
+      "not_established_en": "A ‘controlled minority’, invalid quorum/majority, complete owner denominator, title date, vote qualification, proxy, abstention, conflict, coercion or criminal agreement is not established.",
+      "not_established_es": "No están acreditados una «minoría controlada», quórum/mayoría inválidos, denominador completo de propietarios, fecha de título, habilitación de voto, poder, abstención, conflicto, coacción ni acuerdo criminal.",
+      "next_source_en": "Diligenced original, first/second-call basis, owner/title/coefficient denominator, debt-vote exclusions, powers, proxies, abstentions and item-by-item voting sheet.",
+      "next_source_es": "Original diligenciado, base de primera/segunda convocatoria, denominador de propietarios/título/coeficientes, exclusiones deuda-voto, poderes, abstenciones y hoja de votación por punto.",
+      "contrary_en": "A second-call meeting can proceed without a first-call quorum and the applicable majority depends on the legal character of each resolution.",
+      "contrary_es": "Una junta en segunda convocatoria puede celebrarse sin el quórum de primera y la mayoría aplicable depende de la naturaleza jurídica de cada acuerdo."
+    },
+    {
+      "id": "AX-DEBT-COST",
+      "label_en": "Debt-fabrication allegation and cost-allocation test",
+      "label_es": "Alegación de fabricación de deuda y prueba de imputación de costes",
+      "state": "PARTY_ALLEGATION_ROOT_OF_DEBT_NOT_ESTABLISHED",
+      "supported_en": "The ACTA records that balances were explained and approved unanimously among attendees, authorises claims, and the controlled annex reading attributes debt and most of the works levy to LPB.",
+      "supported_es": "El ACTA consigna que los saldos fueron explicados y aprobados por unanimidad de asistentes, autoriza reclamaciones y la lectura controlada del anexo atribuye a LPB deuda y la mayor parte de la derrama.",
+      "not_established_en": "Fabrication, enforceability, single satisfaction, correct debtor/unit, accrual period, notification, certificate, payment, double recovery, false document, author, knowledge or intent is not established.",
+      "not_established_es": "No están acreditados fabricación, exigibilidad, satisfacción única, deudor/finca correctos, periodo de devengo, notificación, certificado, pago, doble cobro, falsedad documental, autoría, conocimiento ni intención.",
+      "next_source_en": "Unit-by-unit opening balance, invoices, payments, resolutions, service, certificates, claims, recoveries, write-offs and final Community/insolvency ledger.",
+      "next_source_es": "Saldo inicial finca por finca, facturas, pagos, acuerdos, notificación, certificados, reclamaciones, cobros, bajas y mayor final comunitario/concursal.",
+      "contrary_en": "Valid necessary common works and valid Community debt may lawfully be allocated by coefficient while CAM pays only incremental four-star upgrades.",
+      "contrary_es": "Obras comunes necesarias y deuda comunitaria válidas pueden imputarse lícitamente por coeficiente mientras CAM paga solo las mejoras incrementales de cuatro estrellas."
+    },
+    {
+      "id": "AX-TITLE-BENEFIT",
+      "label_en": "Ownership, adjudication, asset perimeter and benefit",
+      "label_es": "Propiedad, adjudicación, perímetro de activos y beneficio",
+      "state": "DATE_SPECIFIC_TRANSITIONS_DOCUMENTED_CAUSATION_OPEN",
+      "supported_en": "The judicial record documents CAM's definitive approval in May 2021, later rulings/clarifications and deed 457 on 21 February 2022 for the described LPB mortgaged-property perimeter.",
+      "supported_es": "El registro judicial documenta la aprobación definitiva de CAM en mayo de 2021, resoluciones/aclaraciones posteriores y la escritura 457 de 21 de febrero de 2022 para el perímetro descrito de fincas hipotecadas de LPB.",
+      "not_established_en": "An unlawful removal of ownership or hotel benefits, whole-hotel title, Matkator/third-party transfer, final debt, cancellation, accounting, income capture, surplus, conspiracy or causal use of the ACTA is not established.",
+      "not_established_es": "No están acreditados despojo ilícito de propiedad o beneficios hoteleros, título de todo el hotel, transmisión de Matkator/terceros, deuda final, cancelación, contabilidad, captura de ingresos, remanente, conspiración ni uso causal del ACTA.",
+      "next_source_en": "Finca-by-finca order/deed/Registry/cancellation chain; five-day court return; final accounts; CAM-to-HNT segregation; use, income and distribution ledger.",
+      "next_source_es": "Cadena auto/escritura/Registro/cancelación finca por finca; devolución al juzgado en cinco días; cuentas finales; segregación CAM-HNT; mayor de uso, ingresos y distribuciones.",
+      "contrary_en": "A secured creditor can lawfully obtain assets through a court-approved dación, and later title or operation can have an innocent commercial explanation.",
+      "contrary_es": "Un acreedor garantizado puede adquirir lícitamente activos mediante dación aprobada judicialmente, y el título u operación posterior puede tener explicación comercial lícita."
+    },
+    {
+      "id": "AX-FUNDING",
+      "label_en": "RIC, regional incentives, ERDF and source/use",
+      "label_es": "RIC, incentivos regionales, FEDER y origen/uso",
+      "state": "PROGRAMME_BY_PROGRAMME_DEPENDENCY_OPEN",
+      "supported_en": "The repository identifies separate Community levy, RICPE/RIC, regional-incentive, ERDF and operating tracks and public-authority records relevant to their control.",
+      "supported_es": "El repositorio identifica vías separadas de derrama comunitaria, RICPE/RIC, incentivos regionales, FEDER y explotación, y registros de autoridades relevantes para su control.",
+      "not_established_en": "Grant payment, cost overlap, double funding, false application/certification, misuse, public loss, criminality or recovery is not established by headline amounts or file existence.",
+      "not_established_es": "El pago de ayuda, solapamiento de costes, doble financiación, solicitud/certificación falsa, uso indebido, perjuicio público, delito o reintegro no se acreditan por importes globales o existencia de expedientes.",
+      "next_source_en": "Programme-specific application, decision, eligible-cost, payment, invoice, job, title/availability, source/use, control, audit and recovery files.",
+      "next_source_es": "Expedientes por programa de solicitud, resolución, coste elegible, pago, factura, empleo, título/disponibilidad, origen/uso, control, auditoría y reintegro.",
+      "contrary_en": "Blended private, tax-reserve and public finance can be lawful where programme conditions, disclosures, costs and controls are satisfied.",
+      "contrary_es": "La financiación combinada privada, de reserva fiscal y pública puede ser lícita si se cumplen condiciones, declaraciones, costes y controles de cada programa."
+    },
+    {
+      "id": "AX-AUTHORITY",
+      "label_en": "Public-authority file receipt, treatment and competence",
+      "label_es": "Recepción, tratamiento y competencia del expediente público",
+      "state": "FILE_BY_FILE_RECEIPT_AND_USE_MUST_BE_PROVED",
+      "supported_en": "The Master Register identifies the public file, organ, reference, period, status and open source gap shown for each authority record.",
+      "supported_es": "El Registro Maestro identifica el expediente público, órgano, referencia, periodo, estado y brecha de fuente mostrados para cada registro de autoridad.",
+      "not_established_en": "A thematic edge does not prove delivery of the ACTA, incorporation, examination, reliance, institutional agreement, personal knowledge, intent, wrongdoing or liability.",
+      "not_established_es": "Un enlace temático no prueba entrega del ACTA, incorporación, examen, utilización, acuerdo institucional, conocimiento personal, intención, ilicitud ni responsabilidad.",
+      "next_source_en": "For every file: signed submission and annex index, receipt, routing, incorporation, examination, response/decision, service/finality and named-recipient evidence where legally relevant.",
+      "next_source_es": "Para cada expediente: escrito firmado e índice de anexos, recepción, remisión, incorporación, examen, respuesta/resolución, notificación/firmeza y prueba de destinatario individual cuando sea jurídicamente relevante.",
+      "contrary_en": "The authority may lack competence, may have received only a narrow object, or may have lawfully routed or closed the file without deciding the underlying merits.",
+      "contrary_es": "La autoridad puede carecer de competencia, haber recibido solo un objeto limitado o haber remitido/cerrado lícitamente sin decidir el fondo subyacente."
+    }
+  ],
+  "attributed_allegation": {
+    "status": "SERIOUS_FALSIFIABLE_PARTY_ALLEGATION_NOT_ESTABLISHED",
+    "en": "The relevant LPB/Matkator/Aweswell-side interests were intentionally kept unaware of the meeting until after it was held, no direct Community ACTA communication was received, and indirect Thompson forwarding occurred only afterward, allegedly preventing attendance, voting, timely dissent, evidence preservation and resistance to implementation.",
+    "es": "Gil Marer y Aweswell alegan que intereses relevantes de LPB/Matkator/Aweswell fueron mantenidos intencionadamente sin conocimiento de la reunión hasta después de celebrarse, impidiendo supuestamente asistencia, voto, disenso, preservación y resistencia a su ejecución.",
+    "boundary_en": "SERIOUS_FALSIFIABLE_PARTY_ALLEGATION_NOT_ESTABLISHED. The public package does not establish lawful-recipient non-service, a false ACTA, fabricated debt, unlawful title removal, causation, actor-specific intent or criminality.",
+    "boundary_es": "ALEGACIÓN SERIA Y FALSABLE DE PARTE NO ACREDITADA. El paquete público no acredita falta de notificación al destinatario legal, ACTA falsa, deuda fabricada, despojo ilícito de título, causalidad, intención individual ni delito."
+  },
+  "reading_rules": [
+    "ACTA_COPY_IS_NOT_DILIGENCED_OR_CERTIFIED_ORIGINAL",
+    "ATTENDEE_UNANIMITY_IS_NOT_UNANIMITY_OF_ALL_OWNERS",
+    "REGISTRATION_IS_NOT_DELIVERY_OR_EXAMINATION",
+    "INSTITUTIONAL_POSSESSION_IS_NOT_PERSONAL_KNOWLEDGE",
+    "TEMPORAL_PROXIMITY_IS_NOT_CAUSATION",
+    "ADJUDICATION_IS_NOT_FINCA_BY_FINCA_IMPLEMENTATION_OR_FINAL_ACCOUNTING",
+    "PUBLIC_AUTHORITY_FILE_EXISTENCE_IS_NOT_MERITS_CONFIRMATION",
+    "ALLEGATION_IS_NOT_FINDING"
+  ]
+}

@@ -606,9 +606,9 @@ try {
   const coverage = interlinks.coverage || {};
   const requiredCoverage = {
     public_exact_proceeding_count: 97,
-    case_prism_exact_proceeding_covered_count: 26,
-    case_prism_exact_proceeding_uncovered_count: 71,
-    decision_dependency_exact_coverage: 'GAP_26_OF_97',
+    case_prism_exact_proceeding_covered_count: 43,
+    case_prism_exact_proceeding_uncovered_count: 54,
+    decision_dependency_exact_coverage: 'GAP_43_OF_97',
     exact_file_decision_dependency_actionability_count: 97,
     exact_file_decision_dependency_actionability_coverage: 'VERIFIED_97_OF_97',
     exact_proceeding_full_finite_test_count: 97,
@@ -683,7 +683,7 @@ try {
       cell.status === 'OUTSIDE' ? [] : (cell.master_ids || []).filter((id) => exactIdSet.has(id))
     )
   ));
-  if (prismCoveredIds.size !== 26 || exactIds.length - prismCoveredIds.size !== 71) {
+  if (prismCoveredIds.size !== 43 || exactIds.length - prismCoveredIds.size !== 54) {
     throw new Error(`Case Prism exact-file content denominator mismatch (${prismCoveredIds.size}/${exactIds.length})`);
   }
   const expectedIsolationById = new Map(exactIds.map((masterId) => [
@@ -710,9 +710,9 @@ try {
     if (await tabs.count() !== 6) throw new Error(`${route.lang}: expected six semantic tabs`);
     if (await page.locator('[data-proceedings-map="20260831a"]').count() !== 1) throw new Error(`${route.lang}: live renderer marker is not 20260831a`);
     const staticPrismText = await page.locator('#case-prism').innerText();
-    if (!staticPrismText.includes('26') || !staticPrismText.includes('71') || !staticPrismText.includes(route.headlineFinite)
+    if (!staticPrismText.includes('43') || !staticPrismText.includes('54') || !staticPrismText.includes(route.headlineFinite)
         || staticPrismText.includes(route.headlineForbidden)) {
-      throw new Error(`${route.lang}: static Case Prism introduction overclaims the 26/97 shared-proposition denominator`);
+      throw new Error(`${route.lang}: static Case Prism introduction misstates the 43/97 shared-proposition denominator`);
     }
     if (await page.locator('a[href="#isolation-test"]').count() < 1) throw new Error(`${route.lang}: exact-file finite-test CTA missing`);
     await assertFilterScope(page, true, route, 'map');
@@ -903,12 +903,12 @@ try {
       const expectedStatus = prismCoveredIds.has(masterId) ? 'covered' : 'unresolved';
       if (status !== expectedStatus) throw new Error(`${route.lang}/${masterId}: Case Prism coverage label is ${status}, expected ${expectedStatus}`);
     }
-    if (renderedCoverage.filter(([, status]) => status === 'covered').length !== 26 || renderedCoverage.filter(([, status]) => status === 'unresolved').length !== 71) {
-      throw new Error(`${route.lang}: visible Case Prism content coverage must remain 26 covered / 71 unresolved`);
+    if (renderedCoverage.filter(([, status]) => status === 'covered').length !== 43 || renderedCoverage.filter(([, status]) => status === 'unresolved').length !== 54) {
+      throw new Error(`${route.lang}: visible Case Prism content coverage must remain 43 covered / 54 unresolved`);
     }
     if (await isolation.locator('option[value="GC-APP-007"]').count()) throw new Error(`${route.lang}: aggregate removal-appeal family admitted to isolation`);
     const coverageText = await page.locator('[data-isolation-coverage]').innerText();
-    if (!coverageText.includes(`26/${exactIds.length}`) || !coverageText.includes('71')) throw new Error(`${route.lang}: finite 26/97 Case Prism content denominator is not visible`);
+    if (!coverageText.includes(`43/${exactIds.length}`) || !coverageText.includes('54')) throw new Error(`${route.lang}: finite 43/97 Case Prism content denominator is not visible`);
     const finiteCoverage = page.locator('.pdim-finite-coverage[data-finite-test-coverage]');
     if (await finiteCoverage.count() !== 1
         || await finiteCoverage.getAttribute('data-audit-count') !== '97'
@@ -1097,7 +1097,7 @@ try {
           throw new Error(`${route.lang}/${exactId}: Fiscalía trace promoted institutional handling into personal knowledge`);
         }
       }
-      const masterHref = await page.locator('[data-trace-panel] .pdim-record-backlink a').getAttribute('href');
+      const masterHref = await page.locator(`[data-trace-panel] [data-master-register-id="${exactId}"]`).getAttribute('href');
       if (!masterHref || !masterHref.endsWith(`#record-${encodeURIComponent(exactId)}`)) {
         throw new Error(`${route.lang}/${exactId}: trace lacks its reciprocal Master Register row link`);
       }

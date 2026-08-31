@@ -23,9 +23,9 @@
   const loadMasterProceedingsPublication = () => {
     if (document.querySelector('script[data-master-proceedings-publication-loader]')) return;
     const proceedings = document.createElement('script');
-    proceedings.src = new URL('master-proceedings-publication-20260830.js?v=20260831a', current.src).href;
+    proceedings.src = new URL('master-proceedings-publication-20260830.js?v=20260831e', current.src).href;
     proceedings.async = false;
-    proceedings.setAttribute('data-master-proceedings-publication-loader', '20260831a');
+    proceedings.setAttribute('data-master-proceedings-publication-loader', '20260831e');
     document.head.appendChild(proceedings);
   };
 
@@ -79,6 +79,15 @@
     document.head.appendChild(bookCover);
   };
 
+  const loadActaAuthorityInterlink = () => {
+    if (document.querySelector('script[data-acta-authority-interlink-loader]')) return;
+    const interlink = document.createElement('script');
+    interlink.src = new URL('acta-authority-interlink-20260831.js?v=20260831a', current.src).href;
+    interlink.async = false;
+    interlink.setAttribute('data-acta-authority-interlink-loader', '20260831a');
+    document.head.appendChild(interlink);
+  };
+
   // Preserve the complete site loader that existed before this visual update.
   const prior = document.createElement('script');
   prior.src = new URL('site-pre-treasury-154-hq-20260828.js?v=20260828a', current.src).href;
@@ -95,4 +104,8 @@
   // Four Green Houses / One Red Hotel visual. The asset self-limits to the
   // bilingual Cuatrecasas Sun Park pages and links to the existing book route.
   loadCuatrecasasBookCover();
+
+  // Reciprocal navigation from every ACTA room and the 2022 adjudication
+  // reconstruction into the controlled ACTA/authority interconnectivity view.
+  loadActaAuthorityInterlink();
 })();

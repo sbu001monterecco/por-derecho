@@ -1,0 +1,190 @@
+{
+  "schema_version": "1.0.0",
+  "status": "SOURCE_CONTROLLED_PUBLIC_SAFE_ASSERTIONS",
+  "scope_en": "A controlled bridge among all public ACTA/minutes packages, the 4 February 2022 Community event, the separate 2021-2022 adjudication/deed sequence and the current finite set of public administrative, regulatory, tax, public-aid, supervisory, registration, ombudsman and professional-discipline records in the Master Proceedings Register.",
+  "scope_es": "Puente controlado entre todos los paquetes públicos de ACTA/minutas, el evento comunitario de 4 de febrero de 2022, la secuencia separada de adjudicación/escritura de 2021-2022 y el conjunto finito actual de registros públicos administrativos, regulatorios, tributarios, de ayudas, supervisión, registro, defensoría y disciplina profesional del Registro Maestro de Procedimientos.",
+  "authority_record_types": [
+    "ADMINISTRATIVE_FILE",
+    "GOVERNANCE_SUPERVISION",
+    "INSPECTION_ACT",
+    "OMBUDSMAN_FILE",
+    "PROFESSIONAL_DISCIPLINE",
+    "PUBLIC_AID_FILE",
+    "REGISTRATION_ONLY",
+    "REGULATORY_FILE",
+    "SUPPORTING_ACT",
+    "TAX_FILE",
+    "TRANSPARENCY_CLAIM",
+    "UNASSIGNED_COMMUNICATION"
+  ],
+  "authority_groups": [
+    {
+      "id": "LOCAL_TOURISM_WORKS",
+      "label_en": "Yaiza, Cabildo and tourism/works",
+      "label_es": "Yaiza, Cabildo y turismo/obras",
+      "prefixes": ["LZ-TUR-", "LZ-CAB-", "LZ-YAI-"],
+      "axis_ids": ["AX-AUTHORITY", "AX-TITLE-BENEFIT"],
+      "boundary_en": "Shared subject matter can justify a dependency test; it does not prove that any file received or relied on the 2022 ACTA.",
+      "boundary_es": "La materia compartida puede justificar una prueba de dependencia; no demuestra que expediente alguno recibiera o utilizara el ACTA de 2022."
+    },
+    {
+      "id": "PUBLIC_FUNDS_INTERNAL_CONTROL",
+      "label_en": "Public funds, European-funds routing and internal control",
+      "label_es": "Fondos públicos, circuito de fondos europeos y control interno",
+      "prefixes": ["X-EU-", "X-INT-", "X-WB-", "NAT-AID-", "NAT-TES-"],
+      "axis_ids": ["AX-FUNDING", "AX-TITLE-BENEFIT", "AX-AUTHORITY"],
+      "boundary_en": "Programme identity, grant, audit and routing records remain legally separate; no payment, overlap, misuse, false certification or recovery is inferred.",
+      "boundary_es": "La identidad de programa y los registros de concesión, auditoría y remisión siguen separados; no se infiere pago, solapamiento, uso indebido, certificación falsa ni reintegro."
+    },
+    {
+      "id": "MARKET_TAX_SUPERVISION",
+      "label_en": "CNMV, AEAT and market/tax supervision",
+      "label_es": "CNMV, AEAT y supervisión de mercado/tributaria",
+      "prefixes": ["X-REG-", "NAT-CNMV-", "X-TAX-", "NAT-AEAT-"],
+      "axis_ids": ["AX-FUNDING", "AX-TITLE-BENEFIT"],
+      "boundary_en": "A supervisory or tax file tests only its own object, receipt and competence; it does not determine the merits of the Community or insolvency tracks.",
+      "boundary_es": "Un expediente supervisor o tributario examina solo su propio objeto, recepción y competencia; no decide el fondo de las vías comunitaria o concursal."
+    },
+    {
+      "id": "TRANSPARENCY_OMBUDSMAN",
+      "label_en": "Transparency and Ombudsman",
+      "label_es": "Transparencia y Diputado del Común",
+      "prefixes": ["LZ-TRA-", "CAN-OMB-"],
+      "axis_ids": ["AX-AUTHORITY"],
+      "boundary_en": "Access, transparency and ombudsman treatment do not establish the truth of the underlying allegations.",
+      "boundary_es": "La tramitación de acceso, transparencia o defensoría no acredita la veracidad de las alegaciones subyacentes."
+    },
+    {
+      "id": "JUDICIAL_POLICE_SUPERVISION",
+      "label_en": "Judicial-governance and police registration/supervision",
+      "label_es": "Registro/supervisión de gobierno judicial y policial",
+      "prefixes": ["GC-GOV-", "GC-LAJ-", "GC-POL-"],
+      "axis_ids": ["AX-AUTHORITY", "AX-NOTICE-LPB"],
+      "boundary_en": "Registration or supervisory possession is not file incorporation, examination, personal knowledge, agreement, wrongdoing or liability.",
+      "boundary_es": "La posesión registral o supervisora no equivale a incorporación, examen, conocimiento personal, acuerdo, ilicitud ni responsabilidad."
+    },
+    {
+      "id": "PROFESSIONAL_OVERSIGHT",
+      "label_en": "Professional public-law oversight",
+      "label_es": "Supervisión profesional de derecho público",
+      "prefixes": ["LZ-PRO-", "GC-PRO-", "MAD-ICAM-", "MAD-CCACM-"],
+      "axis_ids": ["AX-AUTHORITY"],
+      "boundary_en": "Professional-discipline files remain separate from judicial, prosecutorial, Community and public-funds merits.",
+      "boundary_es": "Los expedientes disciplinarios profesionales permanecen separados del fondo judicial, fiscal, comunitario y de fondos públicos."
+    }
+  ],
+  "adjudication_decision_ids": ["C36-E044", "C36-E046", "C36-E047", "C36-E050", "C36-E051"],
+  "deed_milestone": {
+    "id": "C36-E055",
+    "date": "2022-02-21",
+    "kind_en": "Public deed no. 457",
+    "kind_es": "Escritura pública n.º 457",
+    "safe_en": "The located 76-page deed conveys the described LPB mortgaged-property perimeter to CAM and states EUR 13,168,082.02 as debt serving as consideration for the dación.",
+    "safe_es": "La escritura localizada de 76 páginas transmite a CAM el perímetro descrito de fincas hipotecadas de LPB y expresa 13.168.082,02 EUR como deuda que sirve de contraprestación de la dación.",
+    "not_established_en": "It does not by itself prove the final lawful debt, the separate EUR 400,000 line, any Matkator/third-party title, court-return, cancellations, finca-by-finca Registry implementation, final accounting or surplus.",
+    "not_established_es": "No prueba por sí sola la deuda lícita final, la línea separada de 400.000 EUR, título alguno de Matkator/terceros, devolución al juzgado, cancelaciones, ejecución registral finca por finca, contabilidad final ni remanente.",
+    "source_anchor": "assets/data/concurso36-judicial-acts-v1.json"
+  },
+  "evidentiary_axes": [
+    {
+      "id": "AX-NOTICE-LPB",
+      "label_en": "LPB notice, attendance and ACTA receipt",
+      "label_es": "Convocatoria, asistencia y recepción del ACTA por LPB",
+      "state": "ATTRIBUTED_NON_RECEIPT_NATIVE_SERVICE_CHAIN_OPEN",
+      "supported_en": "Gil Marer states that his relevant perimeter received no invitation or pre-meeting knowledge and obtained the ACTA only afterward through an indirect Thompson-family forwarding route.",
+      "supported_es": "Gil Marer declara que su perímetro relevante no recibió convocatoria ni conoció previamente la reunión y obtuvo el ACTA solo después mediante reenvío indirecto de la familia Thompson.",
+      "not_established_en": "The lawful recipient, statutory address, owner-list version, dispatch, delivery/return/fallback, direct closed-ACTA communication, exact actual-knowledge time, deliberate concealment and actor-specific intent are not established.",
+      "not_established_es": "No están acreditados el destinatario legal, domicilio estatutario, versión de la lista, envío, entrega/devolución/supletorio, comunicación directa del ACTA cerrada, momento exacto de conocimiento, ocultación deliberada ni intención individual.",
+      "next_source_en": "Native call and service package; unredacted attendance/proxy register; native Thompson forwarding message, upstream distribution and attachment-hash bridge.",
+      "next_source_es": "Convocatoria y paquete nativo de notificación; registro íntegro de asistentes/poderes; reenvío nativo de Thompson, distribución previa y puente de hash del adjunto.",
+      "contrary_en": "A correct insolvency/LPH recipient may have been served through a route not present in the public package; the redacted attendee list cannot exclude an LPB proxy.",
+      "contrary_es": "El destinatario concursal/LPH correcto pudo ser notificado por una vía no presente en el paquete público; la lista redactada no permite excluir un poder de LPB."
+    },
+    {
+      "id": "AX-NOTICE-MATKATOR",
+      "label_en": "Matkator notice and extraconcursal perimeter",
+      "label_es": "Convocatoria de Matkator y perímetro extraconcursal",
+      "state": "NO_PUBLIC_SERVICE_CHAIN_LOCATED",
+      "supported_en": "Matkator is a separate extraconcursal owner perimeter and none of the three company representations retained on the public ACTA page is Matkator.",
+      "supported_es": "Matkator constituye un perímetro propietario extraconcursal separado y ninguna de las tres representaciones societarias conservadas en la página pública del ACTA es Matkator.",
+      "not_established_en": "The public redaction cannot exclude a proxy; non-service, debt, levy, authority, challenge, work, use, title effect and deliberate exclusion are not established.",
+      "not_established_es": "La redacción pública no permite excluir un poder; no están acreditados falta de notificación, deuda, derrama, autoridad, impugnación, obra, uso, efecto dominical ni exclusión deliberada.",
+      "next_source_en": "Matkator unit/title schedule and independent LPH notice, proxy, vote, debt, ACTA-delivery, challenge and implementation ledger.",
+      "next_source_es": "Relación de fincas/título de Matkator y mayor independiente de convocatoria LPH, poder, voto, deuda, entrega del ACTA, impugnación y ejecución.",
+      "contrary_en": "Matkator may have been lawfully served or represented through material withheld for privacy or not yet controlled.",
+      "contrary_es": "Matkator pudo ser notificada o representada válidamente mediante material reservado por privacidad o aún no controlado."
+    },
+    {
+      "id": "AX-VOTING-CONTROL",
+      "label_en": "20.993%, attendee unanimity and the ‘majority owner’ recital",
+      "label_es": "20,993 %, unanimidad de asistentes y mención de «propietario mayoritario»",
+      "state": "DOCUMENTARY_TENSION_DENOMINATOR_OPEN",
+      "supported_en": "The located copy records 20.993% present or represented, attendee unanimity and describes CAM as the principal interested majority owner before deed 457.",
+      "supported_es": "La copia localizada consigna 20,993 % presente o representado, unanimidad de asistentes y describe a CAM como principal interesado y propietario mayoritario antes de la escritura 457.",
+      "not_established_en": "A ‘controlled minority’, invalid quorum/majority, complete owner denominator, title date, vote qualification, proxy, abstention, conflict, coercion or criminal agreement is not established.",
+      "not_established_es": "No están acreditados una «minoría controlada», quórum/mayoría inválidos, denominador completo de propietarios, fecha de título, habilitación de voto, poder, abstención, conflicto, coacción ni acuerdo criminal.",
+      "next_source_en": "Diligenced original, first/second-call basis, owner/title/coefficient denominator, debt-vote exclusions, powers, proxies, abstentions and item-by-item voting sheet.",
+      "next_source_es": "Original diligenciado, base de primera/segunda convocatoria, denominador de propietarios/título/coeficientes, exclusiones deuda-voto, poderes, abstenciones y hoja de votación por punto.",
+      "contrary_en": "A second-call meeting can proceed without a first-call quorum and the applicable majority depends on the legal character of each resolution.",
+      "contrary_es": "Una junta en segunda convocatoria puede celebrarse sin el quórum de primera y la mayoría aplicable depende de la naturaleza jurídica de cada acuerdo."
+    },
+    {
+      "id": "AX-DEBT-COST",
+      "label_en": "Debt-fabrication allegation and cost-allocation test",
+      "label_es": "Alegación de fabricación de deuda y prueba de imputación de costes",
+      "state": "PARTY_ALLEGATION_ROOT_OF_DEBT_NOT_ESTABLISHED",
+      "supported_en": "The ACTA records that balances were explained and approved unanimously among attendees, authorises claims, and the controlled annex reading attributes debt and most of the works levy to LPB.",
+      "supported_es": "El ACTA consigna que los saldos fueron explicados y aprobados por unanimidad de asistentes, autoriza reclamaciones y la lectura controlada del anexo atribuye a LPB deuda y la mayor parte de la derrama.",
+      "not_established_en": "Fabrication, enforceability, single satisfaction, correct debtor/unit, accrual period, notification, certificate, payment, double recovery, false document, author, knowledge or intent is not established.",
+      "not_established_es": "No están acreditados fabricación, exigibilidad, satisfacción única, deudor/finca correctos, periodo de devengo, notificación, certificado, pago, doble cobro, falsedad documental, autoría, conocimiento ni intención.",
+      "next_source_en": "Unit-by-unit opening balance, invoices, payments, resolutions, service, certificates, claims, recoveries, write-offs and final Community/insolvency ledger.",
+      "next_source_es": "Saldo inicial finca por finca, facturas, pagos, acuerdos, notificación, certificados, reclamaciones, cobros, bajas y mayor final comunitario/concursal.",
+      "contrary_en": "Valid necessary common works and valid Community debt may lawfully be allocated by coefficient while CAM pays only incremental four-star upgrades.",
+      "contrary_es": "Obras comunes necesarias y deuda comunitaria válidas pueden imputarse lícitamente por coeficiente mientras CAM paga solo las mejoras incrementales de cuatro estrellas."
+    },
+    {
+      "id": "AX-TITLE-BENEFIT",
+      "label_en": "Ownership, adjudication, asset perimeter and benefit",
+      "label_es": "Propiedad, adjudicación, perímetro de activos y beneficio",
+      "state": "DATE_SPECIFIC_TRANSITIONS_DOCUMENTED_CAUSATION_OPEN",
+      "supported_en": "The judicial record documents CAM's definitive approval in May 2021, later rulings/clarifications and deed 457 on 21 February 2022 for the described LPB mortgaged-property perimeter.",
+      "supported_es": "El registro judicial documenta la aprobación definitiva de CAM en mayo de 2021, resoluciones/aclaraciones posteriores y la escritura 457 de 21 de febrero de 2022 para el perímetro descrito de fincas hipotecadas de LPB.",
+      "not_established_en": "An unlawful removal of ownership or hotel benefits, whole-hotel title, Matkator/third-party transfer, final debt, cancellation, accounting, income capture, surplus, conspiracy or causal use of the ACTA is not established.",
+      "not_established_es": "No están acreditados despojo ilícito de propiedad o beneficios hoteleros, título de todo el hotel, transmisión de Matkator/terceros, deuda final, cancelación, contabilidad, captura de ingresos, remanente, conspiración ni uso causal del ACTA.",
+      "next_source_en": "Finca-by-finca order/deed/Registry/cancellation chain; five-day court return; final accounts; CAM-to-HNT segregation; use, income and distribution ledger.",
+      "next_source_es": "Cadena auto/escritura/Registro/cancelación finca por finca; devolución al juzgado en cinco días; cuentas finales; segregación CAM-HNT; mayor de uso, ingresos y distribuciones.",
+      "contrary_en": "A secured creditor can lawfully obtain assets through a court-approved dación, and later title or operation can have an innocent commercial explanation.",
+      "contrary_es": "Un acreedor garantizado puede adquirir lícitamente activos mediante dación aprobada judicialmente, y el título u operación posterior puede tener explicación comercial lícita."
+    },
+    {
+      "id": "AX-FUNDING",
+      "label_en": "RIC, regional incentives, ERDF and source/use",
+      "label_es": "RIC, incentivos regionales, FEDER y origen/uso",
+      "state": "PROGRAMME_BY_PROGRAMME_DEPENDENCY_OPEN",
+      "supported_en": "The repository identifies separate Community levy, RICPE/RIC, regional-incentive, ERDF and operating tracks and public-authority records relevant to their control.",
+      "supported_es": "El repositorio identifica vías separadas de derrama comunitaria, RICPE/RIC, incentivos regionales, FEDER y explotación, y registros de autoridades relevantes para su control.",
+      "not_established_en": "Grant payment, cost overlap, double funding, false application/certification, misuse, public loss, criminality or recovery is not established by headline amounts or file existence.",
+      "not_established_es": "El pago de ayuda, solapamiento de costes, doble financiación, solicitud/certificación falsa, uso indebido, perjuicio público, delito o reintegro no se acreditan por importes globales o existencia de expedientes.",
+      "next_source_en": "Programme-specific application, decision, eligible-cost, payment, invoice, job, title/availability, source/use, control, audit and recovery files.",
+      "next_source_es": "Expedientes por programa de solicitud, resolución, coste elegible, pago, factura, empleo, título/disponibilidad, origen/uso, control, auditoría y reintegro.",
+      "contrary_en": "Blended private, tax-reserve and public finance can be lawful where programme conditions, disclosures, costs and controls are satisfied.",
+      "contrary_es": "La financiación combinada privada, de reserva fiscal y pública puede ser lícita si se cumplen condiciones, declaraciones, costes y controles de cada programa."
+    },
+    {
+      "id": "AX-AUTHORITY",
+      "label_en": "Public-authority file receipt, treatment and competence",
+      "label_es": "Recepción, tratamiento y competencia del expediente público",
+      "state": "FILE_BY_FILE_RECEIPT_AND_USE_MUST_BE_PROVED",
+      "supported_en": "The Master Register identifies the public file, organ, reference, period, status and open source gap shown for each authority record.",
+      "supported_es": "El Registro Maestro identifica el expediente público, órgano, referencia, periodo, estado y brecha de fuente mostrados para cada registro de autoridad.",
+      "not_established_en": "A thematic edge does not prove delivery of the ACTA, incorporation, examination, reliance, institutional agreement, personal knowledge, intent, wrongdoing or liability.",
+      "not_established_es": "Un enlace temático no prueba entrega del ACTA, incorporación, examen, utilización, acuerdo institucional, conocimiento personal, intención, ilicitud ni responsabilidad.",
+      "next_source_en": "For every file: signed submission and annex index, receipt, routing, incorporation, examination, response/decision, service/finality and named-recipient evidence where legally relevant.",
+      "next_source_es": "Para cada expediente: escrito firmado e índice de anexos, recepción, remisión, incorporación, examen, respuesta/resolución, notificación/firmeza y prueba de destinatario individual cuando sea jurídicamente relevante.",
+      "contrary_en": "The authority may lack competence, may have received only a narrow object, or may have lawfully routed or closed the file without deciding the underlying merits.",
+      "contrary_es": "La autoridad puede carecer de competencia, haber recibido solo un objeto limitado o haber remitido/cerrado lícitamente sin decidir el fondo subyacente."
+    }
+  ],
+  "global_boundary_en": "Temporal proximity and shared subject matter justify targeted production and comparison only. They do not prove that the Community meeting caused the adjudication, that the adjudication caused the meeting, that any authority received or relied on the ACTA, or that any person agreed, knew, intended, offended or incurred liability.",
+  "global_boundary_es": "La proximidad temporal y la materia compartida solo justifican producción y comparación dirigidas. No prueban que la junta causara la adjudicación, que la adjudicación causara la junta, que autoridad alguna recibiera o utilizara el ACTA, ni que persona alguna acordara, conociera, pretendiera, delinquiera o incurriera en responsabilidad."
+}
