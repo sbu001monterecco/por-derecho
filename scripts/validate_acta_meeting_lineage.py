@@ -37,6 +37,7 @@ from acta_event_actor_routes import (
     actor_route_gaps_for_event,
     actor_routes_for_event,
 )
+from acta_owner_role_matrix import OWNER_ROLE_MATRIX, PRE_2008_CONTROL, PRINCIPAL_LINEAGES
 
 
 REPO = Path(__file__).resolve().parents[1]
@@ -974,6 +975,12 @@ def validate_index(
         errors.append("lineage index: source_communication_document_count does not match continuity documents")
     if index.get("adverse_sequence_model") != ADVERSE_SEQUENCE_MODEL:
         errors.append("lineage index: adverse_sequence_model differs from deterministic control")
+    if index.get("principal_owner_acta_lineages") != PRINCIPAL_LINEAGES:
+        errors.append("lineage index: principal Owners' ACTA lineages differ from deterministic control")
+    if index.get("pre_2008_owner_acta_control") != PRE_2008_CONTROL:
+        errors.append("lineage index: pre-2008 Owners' ACTA control differs from deterministic control")
+    if index.get("owner_acta_role_matrix_event_count") != len(OWNER_ROLE_MATRIX):
+        errors.append("lineage index: Owners' ACTA role-matrix count mismatch")
     c1 = index.get("perimeters", {}).get("adverse_montelanza_molina", {})
     for field in ("label_es", "label_en", "definition_es", "definition_en"):
         value = c1.get(field, "")
@@ -1049,6 +1056,12 @@ def validate_index(
             for field, expected_value in expected_annotation.items():
                 if event.get(field) != expected_value:
                     errors.append(f"{event_id}: {field} differs from deterministic control")
+        expected_owner_roles = OWNER_ROLE_MATRIX.get(event_id)
+        if expected_owner_roles is None:
+            if "owner_acta_role_attribution" in event:
+                errors.append(f"{event_id}: unexpected Owners' ACTA role attribution")
+        elif event.get("owner_acta_role_attribution") != expected_owner_roles:
+            errors.append(f"{event_id}: Owners' ACTA role attribution differs from deterministic control")
         try:
             expected_actor_routes = actor_routes_for_event(event_id)
         except KeyError as exc:
@@ -1209,6 +1222,13 @@ def validate_event_pages(events: list[dict], errors: list[str]) -> None:
                 errors.append(f"{route}: body perimeter machine value mismatch")
             if parser.body_attrs.get("data-primary-lane") != event["primary_lane"]:
                 errors.append(f"{route}: body primary-lane machine value mismatch")
+            owner_roles = event.get("owner_acta_role_attribution")
+            expected_principal = owner_roles["principal_lineage"] if owner_roles else event["primary_lane"]
+            expected_phase = owner_roles["phase_code"] if owner_roles else event["perimeter_code"]
+            if parser.body_attrs.get("data-principal-lineage") != expected_principal:
+                errors.append(f"{route}: body principal-lineage machine value mismatch")
+            if parser.body_attrs.get("data-lineage-phase") != expected_phase:
+                errors.append(f"{route}: body lineage-phase machine value mismatch")
             capacity = event["patricia_dominguez_capacity"]
             sequence = event["adverse_sequence_stage"]
             if parser.body_attrs.get("data-patricia-capacity") != capacity["status_code"]:
@@ -1255,6 +1275,22 @@ def validate_event_pages(events: list[dict], errors: list[str]) -> None:
             )
             if not identity_name or escape(identity_name, quote=True) not in source:
                 errors.append(f"{route}: missing Patricia/Laura identity distinction")
+            role_blocks = parser.by_class("acta-owner-role-control", "section")
+            if owner_roles:
+                if len(role_blocks) != 1:
+                    errors.append(f"{route}: Owners' ACTA role block missing or duplicated")
+                else:
+                    block = role_blocks[0]
+                    if block.get("data-principal-lineage") != owner_roles["principal_lineage"]:
+                        errors.append(f"{route}: role block principal-lineage mismatch")
+                    if block.get("data-lineage-phase") != owner_roles["phase_code"]:
+                        errors.append(f"{route}: role block phase mismatch")
+                for role_key in ("caller", "meeting_management", "acta_authorship", "custody_circulation"):
+                    value = owner_roles[role_key][locale]
+                    if escape(value, quote=True) not in source:
+                        errors.append(f"{route}: missing localized owner role {role_key}")
+            elif role_blocks:
+                errors.append(f"{route}: non-owner event renders an Owners' ACTA role block")
 
             expected_actor_routes = event.get("actor_entity_routes", [])
             actor_links = parser.by_class("acta-actor-entity-link", "a")
@@ -1579,6 +1615,18 @@ def validate_rooms_and_chronologies(events: list[dict], errors: list[str]) -> No
         )
         if stale_c1_label in source:
             errors.append(f"{room.relative_to(REPO)}: old Montelanza/Molina C1 label remains")
+        if source.count("ACTA-OWNER-ROLE-MATRIX:START") != 1 or source.count("ACTA-OWNER-ROLE-MATRIX:END") != 1:
+            errors.append(f"{room.relative_to(REPO)}: Owners' ACTA role-matrix block count invalid")
+        if source.count('class="acta-phase-code"') != len(OWNER_ROLE_MATRIX):
+            errors.append(
+                f"{room.relative_to(REPO)}: Owners' ACTA role rows "
+                f"{source.count('class=\"acta-phase-code\"')}/{len(OWNER_ROLE_MATRIX)}"
+            )
+        for code, lineage in PRINCIPAL_LINEAGES.items():
+            if lineage["label_es" if locale == "es" else "label_en"] not in source:
+                errors.append(f"{room.relative_to(REPO)}: missing principal lineage {code}")
+        if escape(PRE_2008_CONTROL[locale], quote=True) not in source:
+            errors.append(f"{room.relative_to(REPO)}: missing pre-2008 ACTA finding")
         errors.extend(link_errors(room))
 
     for locale, chronology in CHRONOLOGIES.items():
@@ -1646,6 +1694,11 @@ def validate_assets(errors: list[str]) -> None:
         ".acta-perimeter-code",
         ".acta-lane-badge",
         ".acta-lineage-facts",
+        ".acta-principal-legend",
+        ".acta-principal-lineage",
+        ".acta-owner-role-control",
+        ".acta-owner-role-grid",
+        ".acta-role-table",
         ".acta-document-card",
         ".acta-related-marker",
         ".acta-continuity-table",
