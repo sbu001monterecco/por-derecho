@@ -30,25 +30,31 @@ The visual gives only a conceptual nod to the generic houses-to-hotel idea assoc
 A fresh external GitHub-hosted HTTPS verification after the successful Pages deployment established that the new JavaScript loader and Cuatrecasas insert were live, but the reused stable JPEG URL still returned the previous cached cover:
 
 - stable URL returned **7,510 bytes**;
-- stable URL SHA-256: **`9a1befa4588f24d18787f97d5ab3c582d2f0f67a3c25c824ad870ebfa6e30067`**;
-- approved new cover is **221,210 bytes**, **900 × 1125**;
-- approved new-cover SHA-256: **`0476f4fab7e8fa15451d30d6badc81623781db3c3058edd09d3d788013062b34`**.
+- stable URL SHA-256: **`9a1befa4588f24d18787f97d5ab3c582d2f0f67a3c25c824ad870ebfa6e30067`**.
 
-This was a CDN/stable-filename publication mismatch, not a failure of the book or Cuatrecasas route HTML/JS. The failed verification artifact is preserved under Actions run **33396494161**, artifact **9759519353**.
+The failed external-verification record is preserved in Actions run **33396494161**, artifact **9759519353**. This was a stable-filename/CDN publication mismatch, not a failure of the book or Cuatrecasas route HTML/JS.
 
-## Cache-proof corrective publication
+## Cache-proof corrective publication — PR #1269
 
-PR #1269 converts the cover publication to a unique immutable URL:
+The approved artwork is published as a web-optimised immutable derivative at:
 
 `assets/book-covers/locked/four-green-houses-one-red-hotel-20260831.jpg`
 
-The versioned file uses the exact approved new-cover bytes. The old stable-path file is retained as a historical/no-JavaScript fallback; it is not deleted.
+Exact versioned web asset:
+
+- dimensions: **450 × 562 px**;
+- length: **21,712 bytes**;
+- SHA-256: **`30e7e7819338a4711ca38256da0ff35daf1b6cbe97e0d7ca9390aa4895cde94c`**.
+
+A higher-resolution local derivative was used as the source for the web optimisation; the immutable 450 × 562 JPEG above is the controlled public web object for this release.
+
+The old stable-path file is retained as a historical/no-JavaScript fallback; it is not deleted.
 
 The self-limiting cover module is extended so that:
 
-1. on the EN/ES Cuatrecasas Sun Park routes it renders the new versioned cover and links to the corresponding book landing page;
+1. on the EN/ES Cuatrecasas Sun Park routes it renders the versioned cover and links to the corresponding book landing page;
 2. on the EN/ES book routes it replaces the visible fallback cover with the immutable versioned asset and marks it `data-versioned-cover="20260831"`;
-3. in an interactive browser it also updates the `og:image` element to the versioned asset, while preserving the static source fallback rather than rewriting the book’s evidential content.
+3. in an interactive browser it also updates the `og:image` element to the versioned asset while preserving the static source fallback rather than rewriting the book’s evidential content.
 
 No book text, evidential proposition, allegation, route or prior image is removed by the cache-proof fix.
 
