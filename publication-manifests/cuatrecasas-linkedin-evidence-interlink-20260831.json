@@ -1,0 +1,117 @@
+{
+  "schema": "por-derecho.publication-manifest.v1",
+  "publication_id": "cuatrecasas-linkedin-evidence-interlink-20260831",
+  "control_id": "PD-CUATRE-LINKEDIN-20260306-INTERLINK-01",
+  "control_date": "2026-08-31",
+  "current_state": "REMOTE_SOURCE",
+  "status": "prepared_for_review",
+  "owner": "Por Derecho / Project Sun Rock",
+  "repository": "sbu001monterecco/por-derecho",
+  "initial_task_main_sha": "fe8326840604a591e971d2f0a224ccd594e40b04",
+  "branch": "codex/cuatrecasas-linkedin-interlink-governance-20260831",
+  "merge_sha": null,
+  "purpose": "Complete proposition-specific reciprocal interlinking of the already-published 6-March-2026 Cuatrecasas LinkedIn text record while minimizing private custody data, excluding the raw screenshots and preserving the individual/firm/outcome proof boundaries.",
+  "expected_routes": {
+    "es": [
+      "es/cuatrecasas-sun-park/index.html",
+      "es/cuatrecasas-icam-ccacm-2026/index.html"
+    ],
+    "en": [
+      "en/cuatrecasas-sun-park/index.html",
+      "en/cuatrecasas-icam-ccacm-2026/index.html"
+    ]
+  },
+  "expected_source_files": [
+    "assets/cuatrecasas-inigo-linkedin-record-20260831.js",
+    "assets/site.js",
+    "evidence/cuatrecasas/2026-03-06-inigo-de-luisa-linkedin-message.json",
+    "scripts/validate_cuatrecasas_linkedin_interlink.py",
+    ".github/workflows/validate-cuatrecasas-linkedin-interlink.yml",
+    "archive/CUATRECASAS_LINKEDIN_EVIDENCE_INTERLINK_CONTROL_31AUG2026.md",
+    "publication-manifests/cuatrecasas-linkedin-evidence-interlink-20260831.json"
+  ],
+  "repository_assets": [
+    "en/cuatrecasas-sun-park/index.html",
+    "es/cuatrecasas-sun-park/index.html",
+    "en/cuatrecasas-icam-ccacm-2026/index.html",
+    "es/cuatrecasas-icam-ccacm-2026/index.html",
+    "assets/cuatrecasas-inigo-linkedin-record-20260831.js",
+    "assets/site.js",
+    "evidence/cuatrecasas/2026-03-06-inigo-de-luisa-linkedin-message.json",
+    "scripts/validate_cuatrecasas_linkedin_interlink.py",
+    ".github/workflows/validate-cuatrecasas-linkedin-interlink.yml",
+    "archive/CUATRECASAS_LINKEDIN_EVIDENCE_INTERLINK_CONTROL_31AUG2026.md",
+    "publication-manifests/cuatrecasas-linkedin-evidence-interlink-20260831.json"
+  ],
+  "public_markers": [
+    "inigo-linkedin-20260306",
+    "cuatrecasas-linkedin-interlink-20260831",
+    "preserved 6 March 2026 LinkedIn message",
+    "mensaje de LinkedIn preservado de 6 de marzo de 2026"
+  ],
+  "evidence_custody": {
+    "private_capture_count": 2,
+    "public_capture_count": 0,
+    "public_status": "HASH_VERIFIED_PRIVATE_COPY",
+    "received_filenames_public": false,
+    "private_storage_locators_public": false,
+    "private_email_subjects_public": false,
+    "raw_screenshots_public": false
+  },
+  "claim_controls": {
+    "message": "DOCUMENTED DISPLAYED COMMUNICATION",
+    "sender_statements": "ATTRIBUTED STATEMENTS — NOT OFFICIAL OUTCOMES",
+    "authorship": "NOT PROVIDER-CERTIFIED BY THE SCREENSHOTS ALONE",
+    "date_timezone": "CONTROLLED CHRONOLOGY WITH SCREENSHOT-ONLY LIMITATION",
+    "later_platform_state": "DOCUMENTED INTERFACE STATE — CAUSE UNRESOLVED",
+    "professional_or_criminal_liability": "NOT ESTABLISHED BY THE MESSAGE ALONE",
+    "firm_responsibility": "REQUIRES SEPARATE INDIVIDUAL / PARTNER / FIRM PROOF"
+  },
+  "publication_boundaries": [
+    "The raw screenshot binaries remain private and are not added to Git or Pages.",
+    "The public JSON uses opaque custody IDs and excludes received filenames, storage locators and private email subjects.",
+    "The sender's dismissal statement is not presented as the Madrid Bar decision, a merits finding or finality proof.",
+    "The later LinkedIn interface state does not establish deletion, blocking, deactivation, moderation or another cause.",
+    "The message does not establish dissemination, retaliation, intimidation, defamation, professional misconduct, civil liability, criminality or firm-wide responsibility.",
+    "Repository publication does not authorise direct contact, email, messaging, filing or institutional supplementation."
+  ],
+  "authority": {
+    "repository_and_website_publication": "AUTHORISED_BY_CURRENT_USER_CONFIRMATION",
+    "raw_screenshot_publication": "NOT_AUTHORISED",
+    "emails_or_external_messages": "NOT_AUTHORISED",
+    "court_or_institutional_filings": "NOT_AUTHORISED",
+    "direct_contact": "HOLD_NOT_AUTHORISED"
+  },
+  "validation": {
+    "status": "PENDING_CI",
+    "evidence": []
+  },
+  "deployment_evidence": null,
+  "live_urls": [
+    "https://sbu001monterecco.github.io/por-derecho/en/cuatrecasas-sun-park/#inigo-linkedin-20260306",
+    "https://sbu001monterecco.github.io/por-derecho/es/cuatrecasas-sun-park/#inigo-linkedin-20260306",
+    "https://sbu001monterecco.github.io/por-derecho/en/cuatrecasas-icam-ccacm-2026/",
+    "https://sbu001monterecco.github.io/por-derecho/es/cuatrecasas-icam-ccacm-2026/"
+  ],
+  "live_markers": {
+    "https://sbu001monterecco.github.io/por-derecho/en/cuatrecasas-sun-park/#inigo-linkedin-20260306": [
+      "cuatrecasas-linkedin-interlink-20260831",
+      "Preserved LinkedIn message: Íñigo de Luisa Maíz"
+    ],
+    "https://sbu001monterecco.github.io/por-derecho/es/cuatrecasas-sun-park/#inigo-linkedin-20260306": [
+      "cuatrecasas-linkedin-interlink-20260831",
+      "Mensaje de LinkedIn preservado: Íñigo de Luisa Maíz"
+    ],
+    "https://sbu001monterecco.github.io/por-derecho/en/cuatrecasas-icam-ccacm-2026/": [
+      "#inigo-linkedin-20260306",
+      "preserved 6 March 2026 LinkedIn message"
+    ],
+    "https://sbu001monterecco.github.io/por-derecho/es/cuatrecasas-icam-ccacm-2026/": [
+      "#inigo-linkedin-20260306",
+      "mensaje de LinkedIn preservado de 6 de marzo de 2026"
+    ]
+  },
+  "live_verification_evidence": null,
+  "deletion_record": null,
+  "next_gate": "Run local validators, push the reviewable source, open a PR, obtain green CI, merge, verify Pages and render both anchored routes before promoting the manifest."
+}
