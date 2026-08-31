@@ -2,10 +2,11 @@
   "schema": "por-derecho.publication-manifest.v1",
   "publication_id": "ministerio-fiscal-wider-matter-eg745-20260831",
   "title": "Ministerio Fiscal wider matter — E.G. 745/2026 unitary evidence-to-action continuation",
-  "current_state": "PREPARED_PENDING_MERGE",
+  "current_state": "LIVE_VERIFIED",
   "owner": "Por Derecho / Project Sun Rock",
   "control_date": "2026-08-31",
   "repository": "sbu001monterecco/por-derecho",
+  "merge_sha": "355a072cac7f99e40de2665c881f20a66ac471c6",
   "expected_routes": {
     "es": [
       "es/fiscalia-inspeccion-exp-gub-745-2026/index.html",
@@ -24,15 +25,59 @@
     "evidence/fiscalia/2026/EG_745_2026_OPEN_TRANSPARENCY_LEDGER_31AUG2026.md",
     "evidence/fiscalia/2026/FGE_INSPECCION_EG_745_2026_ANNEX_EVIDENCE_GAP_MATRIX_29AUG2026.md",
     "evidence/fiscalia/2026/2026-08-26_FGE_INSPECCION_EG_745_2026_METADATA.json",
-    "archive/EG_745_2026_NEW_THREAD_CONTINUITY_AUDIT_31AUG2026.md"
+    "archive/EG_745_2026_NEW_THREAD_CONTINUITY_AUDIT_31AUG2026.md",
+    "archive/EG_745_2026_WIDER_MATTER_DEPLOYMENT_CLOSEOUT_31AUG2026.md"
   ],
   "release": {
     "branch": "codex/ministerio-fiscal-eg745-controlled-31aug2026",
     "base_main_sha": "ebcffa342732a4a58177ee0625ec0c9d6f501ed1",
-    "pull_request": null,
-    "merge_sha": null,
-    "pages_run": null
+    "pull_request": 1264,
+    "reviewed_head_sha": "02a16d0bfd1aedff42b867f0c40b077851bec201",
+    "reviewed_tree_sha": "a1e403acb72374f3864a2babc7f9837584357eec",
+    "merge_sha": "355a072cac7f99e40de2665c881f20a66ac471c6",
+    "pages_run": 33380207678,
+    "pages_run_number": 1327,
+    "pages_conclusion": "success"
   },
+  "validation": {
+    "pull_request_checks": "21_OF_21_SUCCESS_ZERO_FAILURES",
+    "remote_tree_control": "Final reviewed GitHub tree exactly matched the validated local tree before merge.",
+    "transport_correction": "An incomplete connector blob on the initial branch commit was detected from the implausible PR deletion count, replaced, hash/tree-verified and superseded before review/merge; final PR diff was 21 files, 514 additions and 64 deletions.",
+    "evidence": [
+      "PR #1264 final reviewed head 02a16d0bfd1aedff42b867f0c40b077851bec201 completed 21/21 workflows successfully with zero failures.",
+      "Final reviewed GitHub tree a1e403acb72374f3864a2babc7f9837584357eec exactly matched the locally validated tree.",
+      "Pages run 33380207678 / #1327 completed successfully for exact merge SHA 355a072cac7f99e40de2665c881f20a66ac471c6.",
+      "Six bilingual live routes returned HTTP 200 and were byte-identical to the merged files under no-cache readback."
+    ]
+  },
+  "deployment_evidence": {
+    "pages_run_id": 33380207678,
+    "pages_run_number": 1327,
+    "source_merge_sha": "355a072cac7f99e40de2665c881f20a66ac471c6",
+    "status": "completed",
+    "conclusion": "success",
+    "completed_at": "2026-08-31T09:59:17Z"
+  },
+  "live_verification_evidence": {
+    "status": "PASS_6_OF_6_HTTP_200_AND_BYTE_IDENTICAL",
+    "method": "Unique merge-SHA query parameter plus Cache-Control: no-cache and Pragma: no-cache; each response compared byte-for-byte with the merged local file.",
+    "routes": {
+      "es_index": {"bytes": 17303, "sha256": "06e8b11115273b622afe4855e771af64825eb073f77e28f281c3dfbef432169a"},
+      "en_index": {"bytes": 16257, "sha256": "b846487021601f60129a6061e2b1048c604f23a3cdee93a4a43e6994662a64a7"},
+      "es_unitary": {"bytes": 8843, "sha256": "f0d79371b0ab7c26321eb0aec8cf0a3723fcce855810a6b5119de915adfb3632"},
+      "en_unitary": {"bytes": 8413, "sha256": "875c8fe1c67a56afd1ea02b93e006fba3625861e1e28e255322306712042aacb"},
+      "es_transparency": {"bytes": 13662, "sha256": "47f48b9671957c0b58b2defb90ce34fd51c13f5b7a69937851a1b26cba719d12"},
+      "en_transparency": {"bytes": 12856, "sha256": "e58fd1d44fa8f0ff2fc1bffe92487748e663596cbb16a4fcbac2040e6c2f43c2"}
+    }
+  },
+  "live_urls": [
+    "https://sbu001monterecco.github.io/por-derecho/es/fiscalia-inspeccion-exp-gub-745-2026/",
+    "https://sbu001monterecco.github.io/por-derecho/en/public-prosecution-inspection-exp-gub-745-2026/",
+    "https://sbu001monterecco.github.io/por-derecho/es/fiscalia-inspeccion-exp-gub-745-2026/continuidad-errores-omisiones-31-agosto-2026.html",
+    "https://sbu001monterecco.github.io/por-derecho/en/public-prosecution-inspection-exp-gub-745-2026/continuity-errors-omissions-31-august-2026.html",
+    "https://sbu001monterecco.github.io/por-derecho/es/fiscalia-inspeccion-exp-gub-745-2026/persecucion-abierta-transparencia-31-agosto-2026.html",
+    "https://sbu001monterecco.github.io/por-derecho/en/public-prosecution-inspection-exp-gub-745-2026/open-prosecution-transparency-31-august-2026.html"
+  ],
   "filing_status": {
     "proof_control": "Fresh Gmail sent-mail and REG-AGE/Drive candidate review found no post-notification reconsideration or qualifying receipt.",
     "reconsideration": "PREPARED / OUTSTANDING — NOT YET VERIFIED AS FILED",
@@ -56,5 +101,5 @@
     "RPL 2523/2025"
   ],
   "evidential_boundary": "Adverse outcomes, silence, routing gaps, repeated contact and source-to-decision tensions do not by themselves establish coordination, obstruction, prevarication, bad faith, criminality or personal liability.",
-  "deployment_closeout_required": true
+  "deployment_closeout_required": false
 }
