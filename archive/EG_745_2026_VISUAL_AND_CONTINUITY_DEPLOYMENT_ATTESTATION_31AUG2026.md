@@ -58,7 +58,7 @@ depend on the artifact's retention period.
 - 2022 adjudication: `33411824359`
 - Playa Blanca: `33411824015`
 
-All completed successfully for the exact merge SHA.
+All completed successfully on the reviewed PR head or exact merge SHA, as identified.
 
 ## Asset and privacy control
 
