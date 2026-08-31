@@ -123,7 +123,7 @@ def main() -> int:
             errors.append(f"{path.relative_to(ROOT)} does not identify the public-safe derivative")
         if "archive/PROCEEDINGS_MASTER_REGISTER.csv" in text:
             errors.append(f"{path.relative_to(ROOT)} prints the non-browser operational path")
-        if "assets/site.js?v=20260831a" not in text:
+        if "assets/site.js?v=20260831e" not in text:
             errors.append(f"{path.relative_to(ROOT)} does not cache-bust the repaired runtime loader")
 
     required_js_phrases = (
@@ -170,9 +170,9 @@ def main() -> int:
 
     if "master-proceedings-publication-20260830.js" not in site:
         errors.append("assets/site.js does not load the master proceedings public runtime")
-    if "master-proceedings-publication-20260830.js?v=20260831a" not in site:
+    if "master-proceedings-publication-20260830.js?v=20260831e" not in site:
         errors.append("assets/site.js does not cache-bust the repaired public runtime")
-    if "data-master-proceedings-publication-loader', '20260831a'" not in site:
+    if "data-master-proceedings-publication-loader', '20260831e'" not in site:
         errors.append("assets/site.js public-runtime loader marker is stale")
 
     required_columns = {

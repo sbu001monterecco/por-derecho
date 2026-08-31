@@ -90,8 +90,8 @@ CURRENT_PUBLIC_RECORDS = 121
 CURRENT_CANONICAL_EXACT = 98
 CURRENT_PUBLIC_EXACT = 97
 CURRENT_PRIVATE_EXACT = 1
-CURRENT_CASE_PRISM_EXACT_COVERED = 26
-CURRENT_CASE_PRISM_EXACT_UNCOVERED = 71
+CURRENT_CASE_PRISM_EXACT_COVERED = 43
+CURRENT_CASE_PRISM_EXACT_UNCOVERED = 54
 CURRENT_DIRECT_PAIRS = 33
 CURRENT_VERIFIED_DIRECT_PAIRS = 31
 CURRENT_PENDING_DIRECT_PAIRS = 2
@@ -2333,8 +2333,11 @@ if not errors:
         "shared_case_prism_propositions": len(props),
         "parallel_lanes": len(lanes),
         "explicit_matrix_coordinates": len(cells),
-        "case_prism_exact_proceedings_with_shared_proposition_coordinate": CURRENT_CASE_PRISM_EXACT_COVERED,
-        "case_prism_exact_proceedings_without_shared_proposition_coordinate": CURRENT_CASE_PRISM_EXACT_UNCOVERED,
+        # Immutable baseline of the already-merged substantive-gap lifecycle.
+        # The later Fiscalía interconnectivity projection expands P05 without
+        # rewriting that historical publication manifest.
+        "case_prism_exact_proceedings_with_shared_proposition_coordinate": 26,
+        "case_prism_exact_proceedings_without_shared_proposition_coordinate": 71,
         "public_master_fiscalia_rows": CURRENT_FISCALIA_OFFICE_FILE_RECORDS,
         "public_master_fiscalia_exact_rows": CURRENT_FISCALIA_EXACT_RECORDS,
         "public_master_fiscalia_unverified_reference_rows": CURRENT_FISCALIA_UNRESOLVED_RECORDS,
@@ -2344,7 +2347,7 @@ if not errors:
     }
     require(
         all(current_baseline.get(field) == value for field, value in expected_current_baseline.items()),
-        "current substantive-gap manifest baseline denominator is incomplete or stale",
+        "historical substantive-gap manifest baseline denominator is incomplete or stale",
     )
     current_targets = current_lifecycle.get("target_structural_coverage", {})
     require(
@@ -2616,7 +2619,7 @@ if not errors:
         require("public-authority-unitary-case-reconstruction" in page or "reconstruccion-unitaria-autoridades-publicas" in page, f"{label} lacks institutional clean-room navigation")
     require("#case-prism" in en and "#case-prism" in es, "Case Prism CTA fragment missing")
     require(all(f'id="{anchor}"' in en and f'id="{anchor}"' in es for anchor in ("parallel-lanes", "isolation-test")), "deep-link anchors missing")
-    require(all(f"proceedings-interconnectivity-map-20260830.{ext}?v=20260831a" in en and f"proceedings-interconnectivity-map-20260830.{ext}?v=20260831a" in es for ext in ("js", "css")), "Case Prism asset cache version not advanced to 20260831a")
+    require(all(f"proceedings-interconnectivity-map-20260830.{ext}?v=20260831d" in en and f"proceedings-interconnectivity-map-20260830.{ext}?v=20260831d" in es for ext in ("js", "css")), "Case Prism asset cache version not advanced to 20260831d")
 
     refs = ["RPL 2523/2025", "RPL 3304/2025", "RPL 3319/2025", "RPL 421/2026"]
     require(all(ref in institutional for ref in refs), "three-appellate-object correction missing")

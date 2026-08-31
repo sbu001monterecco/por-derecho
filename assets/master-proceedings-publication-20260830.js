@@ -36,6 +36,8 @@
     es: new URL('es/mapa-procedimientos/', repoBase).href
   };
   const projectionUrl = new URL('assets/data/proceedings-master-public-v1.json', repoBase).href;
+  const fiscaliaProjectionUrl = new URL('assets/data/fiscalia-proceedings-interconnectivity-v1.json', repoBase).href;
+  const communityAuthorityProjectionUrl = new URL('assets/data/community-acta-authority-interconnectivity-v1.json', repoBase).href;
 
   const addCss = () => {
     if (document.querySelector('link[data-master-proceedings-css]')) return;
@@ -90,22 +92,30 @@
       search: 'Buscar referencia, órgano, objeto, estado…', stream: 'Vía', state: 'Tipo de registro', source: 'Estado de fuente',
       id: 'ID', type: 'Clase / vía', organ: 'Órgano / custodio', ref: 'Referencia', period: 'Periodo', connection: 'Conexión / objeto', status: 'Estado / último evento', links: 'Relaciones', proof: 'Fuente / brecha',
       noRows: 'No hay filas que coincidan con los filtros actuales.', trace: 'Abrir trazabilidad exacta', isolation: 'Prueba de aislamiento', dossier: 'Abrir expediente', decisionDetail: 'Detalle de Auto 804/2018',
-      nonExactRelation: 'Sólo navegación/contexto; no es un vínculo procesal establecido'
+      nonExactRelation: 'Sólo navegación/contexto; no es un vínculo procesal establecido', fiscalia: 'Comunicaciones Fiscalía', communityAuthority: 'ACTAs / autoridades'
     } : {
       loading: 'Loading the controlled public projection…', error: 'The master register could not be loaded.',
       visible: 'visible records', export: 'Export filtered view CSV', all: 'All',
       search: 'Search reference, organ, object, status…', stream: 'Track', state: 'Record state', source: 'Source status',
       id: 'ID', type: 'Class / track', organ: 'Organ / custodian', ref: 'Reference', period: 'Period', connection: 'Connection / object', status: 'Status / latest event', links: 'Relationships', proof: 'Source / gap',
       noRows: 'No rows match the current filters.', trace: 'Open exact trace', isolation: 'Isolation test', dossier: 'Open dossier', decisionDetail: 'Order 804/2018 detail',
-      nonExactRelation: 'Navigation/context only; not an established procedural edge'
+      nonExactRelation: 'Navigation/context only; not an established procedural edge', fiscalia: 'Fiscalía communications', communityAuthority: 'ACTAs / authorities'
     };
 
     const loading = root.querySelector('[data-register-loading]');
     try {
-      const response = await fetch(projectionUrl, { cache: 'no-store' });
-      if (!response.ok) throw new Error('HTTP ' + response.status);
+      const [response, fiscaliaResponse, communityAuthorityResponse] = await Promise.all([
+        fetch(projectionUrl, { cache: 'no-store' }),
+        fetch(fiscaliaProjectionUrl, { cache: 'no-store' }),
+        fetch(communityAuthorityProjectionUrl, { cache: 'no-store' })
+      ]);
+      if (!response.ok || !fiscaliaResponse.ok || !communityAuthorityResponse.ok) throw new Error('HTTP ' + response.status + '/' + fiscaliaResponse.status + '/' + communityAuthorityResponse.status);
       const payload = await response.json();
+      const fiscaliaPayload = await fiscaliaResponse.json();
+      const communityAuthorityPayload = await communityAuthorityResponse.json();
       if (!payload || !Array.isArray(payload.records)) throw new Error('Invalid public projection');
+      const fiscaliaByMasterId = fiscaliaPayload && fiscaliaPayload.by_master_id ? fiscaliaPayload.by_master_id : {};
+      const communityAuthorityByMasterId = communityAuthorityPayload && communityAuthorityPayload.by_master_id ? communityAuthorityPayload.by_master_id : {};
       const rows = payload.records;
       const excluded = Number(payload.excluded_record_count || 0);
 
@@ -199,8 +209,16 @@
           const decisionDetailLink = decisionDetailUrl
             ? `<br><a class="pd-decision-detail" href="${esc(decisionDetailUrl)}" aria-label="${esc(`${copy.decisionDetail}: ${r.Master_ID}`)}">${esc(copy.decisionDetail)} ↗</a>`
             : '';
+          const fiscaliaConnection = fiscaliaByMasterId[r.Master_ID];
+          const fiscaliaLink = fiscaliaConnection
+            ? `<br><a class="pd-fiscalia-detail" data-fiscalia-master-id="${esc(r.Master_ID)}" href="${esc(new URL((lang === 'es' ? 'es/fiscalia-comunicaciones-procedimientos/' : 'en/public-prosecution-communications-proceedings/'), repoBase).href)}#file=${encodeURIComponent(r.Master_ID)}">${esc(copy.fiscalia)} (${esc(fiscaliaConnection.event_count)}) ↗</a>`
+            : '';
+          const communityAuthorityConnection = communityAuthorityByMasterId[r.Master_ID];
+          const communityAuthorityLink = communityAuthorityConnection
+            ? `<br><a class="pd-community-authority-detail" data-community-authority-master-id="${esc(r.Master_ID)}" href="${esc(new URL((lang === 'es' ? 'es/actas-comunidad-autoridades-publicas/' : 'en/community-actas-public-authorities/'), repoBase).href)}#authority=${encodeURIComponent(r.Master_ID)}">${esc(copy.communityAuthority)} ↗</a>`
+            : '';
           return `<tr id="record-${esc(r.Master_ID)}" data-master-id="${esc(r.Master_ID)}">
-            <td><span id="case-${esc(r.Master_ID)}" aria-hidden="true"></span><a class="pd-ref" href="${esc(traceHref)}" aria-label="${esc(`${copy.trace}: ${r.Master_ID}`)}">${esc(r.Master_ID)}</a><br><span class="pd-chip" data-state="${esc(stateValue)}">${esc(stateValue)}</span>${isolationLink}${detailLink}${decisionDetailLink}</td>
+            <td><span id="case-${esc(r.Master_ID)}" aria-hidden="true"></span><a class="pd-ref" href="${esc(traceHref)}" aria-label="${esc(`${copy.trace}: ${r.Master_ID}`)}">${esc(r.Master_ID)}</a><br><span class="pd-chip" data-state="${esc(stateValue)}">${esc(stateValue)}</span>${isolationLink}${detailLink}${decisionDetailLink}${fiscaliaLink}${communityAuthorityLink}</td>
             <td>${esc(typeText)}</td><td>${esc(organText)}</td><td>${esc(refText)}</td><td>${esc(r.Date_or_Period)}</td><td>${esc(connectionText)}</td><td>${esc(statusText)}</td><td>${linkMasterReferences(relation)}</td><td><span class="pd-muted">${esc(r.Source_Status)}</span>${r.Open_Reference_Gap ? `<br><span class="pd-gap">${esc(r.Open_Reference_Gap)}</span>` : ''}</td>
           </tr>`;
         }).join('');
