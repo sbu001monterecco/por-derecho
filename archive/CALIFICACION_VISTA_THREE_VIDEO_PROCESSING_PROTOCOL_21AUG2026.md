@@ -19,9 +19,11 @@ The absence of a local STT model is a **processing dependency**, not authority t
 
 Process, in order:
 
-1. `J. Mercantil 1 (Palmas de Gran Canaria (Las))_0000036_2012_VIDEO_01.mkv`
-2. `J. Mercantil 1 (Palmas de Gran Canaria (Las))_0000036_2012_VIDEO_02.mkv`
-3. `J. Mercantil 1 (Palmas de Gran Canaria (Las))_0000036_2012_VIDEO_03.mkv`
+1. private source component `VIDEO_01`;
+2. private source component `VIDEO_02`;
+3. private source component `VIDEO_03`.
+
+Exact private source filenames are withheld from public Git; the component hashes in the source manifest are the public integrity anchors.
 
 Canonical sequence:
 

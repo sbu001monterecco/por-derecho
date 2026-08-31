@@ -6,7 +6,7 @@
 
 ## 1. Why this record exists
 
-The thread reverse-engineered the current Por Derecho repository/site, rescanned the actual SENT Gmail record to PwC, Grant Thornton, RSM and multiple Ministerio Fiscal functions, reconsidered whether the CGPJ should receive a broad professional/economic theory, and then executed a deliberately narrower three-email CGPJ sequence.
+The thread reverse-engineered the current Por Derecho repository/site, rescanned the actual sent private-mailbox record to PwC, Grant Thornton, RSM and multiple Ministerio Fiscal functions, reconsidered whether the CGPJ should receive a broad professional/economic theory, and then executed a deliberately narrower three-email CGPJ sequence.
 
 The durable conclusion is:
 
@@ -46,8 +46,8 @@ Controlled audiovisual window:
 
 Two source-controlled Spanish visual indexes were repeatedly attached:
 
-1. `pwc-five-actors-plus-ac-2016-knowledge-checkpoint-ES.png`
-2. `san-telmo-ricpe-sun-park-stamp-v1-ES.png`
+1. `VISUAL-SOURCE-INDEX-A`
+2. `VISUAL-SOURCE-INDEX-B`
 
 Public repository-renderable counterparts already exist under:
 
@@ -78,11 +78,11 @@ On 20 August, personalised follow-ups were actually sent across the correspondin
 
 ### Audiencia Nacional follow-up
 
-**Gmail message ID:** `1a02144f5c6c1ffe`
+**Public dispatch reference:** `MF-DSP-20260820-09`
 
 **Recipient:** `fiscalia.an@fiscal.es`
 
-**Subject:** `Exp. Gub. 86/2026 — trazabilidad de la remisión a Arrecife; Pink/AEAT y fuentes profesionales sobrevenidas`
+**Subject category:** Exp. Gub. 86/2026 referral traceability and later professional-source supplement
 
 The message distinguished three tracks that must not be collapsed:
 
@@ -96,7 +96,7 @@ It also separated material that was already in the 2 August package from genuine
 
 ### Anticorrupción procedural response
 
-**Gmail message ID:** `1a02132a13eda543`
+**Public dispatch reference:** `MF-DSP-20260820-08-R1`
 
 Anticorrupción acknowledged receipt of the late communication but stated that it was **pending admission** and that, to give course to a written/telematic complaint, it must satisfy the cited electronic-signature requirements.
 
@@ -150,11 +150,11 @@ All three emails reused the two source-controlled attachments and included the w
 
 ### Email 1 — Sección de Recursos
 
-**Gmail message ID:** `1a0215034795e9fa`
+**Public dispatch reference:** `CGPJ-DSP-20260820-01`
 
 **To:** `recursos@cgpj.es`
 
-**Subject:** `ALZADA 286/2026 / DI 169/2026 — integridad del expediente, trazabilidad CGPJ–TSJ y fuentes sobrevenidas antes de resolver`
+**Subject category:** Alzada 286/2026 / DI 169/2026 file-integrity, CGPJ–TSJ traceability and later-source request
 
 Purpose:
 
@@ -167,11 +167,11 @@ Operational note: a first attempted threaded send failed at payload construction
 
 ### Email 2 — Secretaría General
 
-**Gmail message ID:** `1a02151e50499880`
+**Public dispatch reference:** `CGPJ-DSP-20260820-02`
 
 **To:** `secretaria.general@cgpj.es`
 
-**Subject:** `CGPJ — Alzada 286/2026 / DI 169/2026 — solicitud de asociación y traslado funcional a Comisión Permanente / Servicio de Inspección`
+**Subject category:** Alzada 286/2026 / DI 169/2026 association and functional-routing request
 
 Purpose:
 
@@ -182,11 +182,11 @@ Purpose:
 
 ### Email 3 — general institutional routing checkpoint
 
-**Gmail message ID:** `1a021539ba82e48a`
+**Public dispatch reference:** `CGPJ-DSP-20260820-03`
 
 **To:** `informacion@cgpj.es`
 
-**Subject:** `CGPJ — DI 169/2026 / Alzada 286/2026 — constancia de comunicaciones a Recursos y Secretaría General y solicitud de cauce institucional`
+**Subject category:** DI 169/2026 / Alzada 286/2026 institutional-routing checkpoint
 
 Purpose:
 
@@ -228,7 +228,7 @@ The public record must **not** state, absent new primary proof:
 4. Cure the Anticorrupción electronic-signature/formalisation point through the appropriate signed/formal route before treating the late email as procedurally complete.
 5. Identify Arrecife's receiving reference / responsible fiscal for Exp. Gub. 86/2026 and the 20 August supplement.
 6. Keep PwC / Grant Thornton response windows and RSM September review window separate from judicial/fiscal procedural deadlines.
-7. Re-query Gmail before claiming any reply or silence after this control date.
+7. Re-query the private mailbox before claiming any reply or silence after this control date.
 
 ## 9. Public update created by this close-out
 

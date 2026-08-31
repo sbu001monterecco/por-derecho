@@ -2,8 +2,8 @@
 ## DIP 20/2026 — controlled record, Spanish transcription and English translation
 
 **Notification email date:** 30 January 2026  
-**Email subject:** `DIP 20/2026`  
-**Gmail message ID of preserved forwarded copy:** `19c0ea97375d8866`  
+**Email subject category:** official DIP 20/2026 procedural notice (exact private-mailbox subject withheld)<br>
+**Public source reference for preserved forwarded copy:** `MF-DIP20-MSG-01`<br>
 **Procedure:** Diligencias de Investigación Penal / pre-procedural investigation no. `0000020/2026`  
 **NIG:** `3803870220260000387`
 
@@ -11,21 +11,21 @@
 
 ### Decree
 
-- Source Gmail filename: `document - 2026-01-30T111156.445.pdf`
+- Private-mailbox source category: decree PDF (exact filename withheld)
 - Native bytes: `142760`
 - SHA-256: `efd4eee1d4c9f4bddf2d5ca1f0c413f18bbb83ad19d2535b554cdb2f66ffb501`
-- Private Drive archive filename: `2026-01-27__FISCALIA_TENERIFE__DIP20_2026__DECRETO_NATIVE.pdf`
-- Private Drive file ID: `1lUORfH_H-dSNtLUPjGqJkMoIhTXiXvHu`
+- Private-archive source category: native decree PDF (exact filename withheld)
+- Public source reference: `MF-DIP20-SRC-DECR-01`
 
 ### Notice / covering official communication
 
-- Source Gmail filename: `document - 2026-01-30T111243.132.pdf`
+- Private-mailbox source category: covering official communication PDF (exact filename withheld)
 - Native bytes: `141639`
 - SHA-256: `be32d01f32bce0f7ce6f9957f9034ffb6b97502938f5aea1178973abf835e989`
-- Private Drive archive filename: `2026-01-27__FISCALIA_TENERIFE__DIP20_2026__OFICIO_NATIVE.pdf`
-- Private Drive file ID: `1TfpfMXvJw7NYjDP1lSiDB7dvvLVf2q9S`
+- Private-archive source category: native covering official communication PDF (exact filename withheld)
+- Public source reference: `MF-DIP20-SRC-OFF-02`
 
-**Control note:** The native Spanish PDFs control. The transcription below preserves apparent source errors, including `16 de enero de 206` and `SUNK PARK`, without silently correcting them. The English translation identifies those apparent errors. The native files are kept private pending a separate publication and personal-data decision.
+**Control note:** The native Spanish PDFs control. The transcription below preserves apparent source errors, including `16 de enero de 206` and `SUNK PARK`, without silently correcting them. The English translation identifies those apparent errors. In this current-tree derivative, exact provider identifiers, private filenames, the exact mailbox subject and the complainant's personal email address are omitted or replaced by public control references. The native files are kept private pending a separate publication and personal-data decision.
 
 ---
 
@@ -135,7 +135,7 @@ Así lo acuerda y firma, en Santa Cruz de Tenerife
 **JOSE LUIS SÁNCHEZ - JÁUREGUI ALCAIDE**
 
 DON GIL MARER  
-Correo electrónico: gilmarer@gmail.com
+Correo electrónico: [DATO DE CONTACTO PERSONAL OMITIDO EN LA VERSIÓN PÚBLICA]
 
 ## Full English translation
 
@@ -163,7 +163,7 @@ So ordered and signed in Santa Cruz de Tenerife.
 **JOSÉ LUIS SÁNCHEZ-JÁUREGUI ALCAIDE**
 
 MR GIL MARER  
-Email: gilmarer@gmail.com
+Email: [PERSONAL CONTACT DETAIL OMITTED FROM PUBLIC VERSION]
 
 ---
 

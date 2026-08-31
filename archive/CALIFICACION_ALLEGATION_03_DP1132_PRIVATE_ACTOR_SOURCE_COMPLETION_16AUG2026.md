@@ -10,8 +10,10 @@ This memo upgrades the Community/private-actor/Administrador Concursal part of A
 
 Two preserved court-record families were re-opened on 16 August 2026:
 
-1. `DECLARACION ADMINISTRADOR CONCURSAL ARRECIFE.pdf` — AC witness declaration, **31 July 2018**;
-2. `declaraciones investigados y testigo ARRECIFE COACCIONES.pdf` / duplicates including `20. Declaraciones Investigados Procedimiento Coacciones Toma de Posesion Forzosa 20JUL18.pdf` — **20 July 2018** declarations of Francisco Mario Matos Matas, Shaila Cogolludo Ramos, José Daniel Acosta Matos, Laura Isabel Acosta Matos and Antonio Cogolludo Rojas.
+1. preserved AC witness declaration, **31 July 2018** (`MF-CAL-FORCE-SRC-03`);
+2. preserved **20 July 2018** declarations of Francisco Mario Matos Matas, Shaila Cogolludo Ramos, José Daniel Acosta Matos, Laura Isabel Acosta Matos and Antonio Cogolludo Rojas (`MF-CAL-FORCE-SRC-02`).
+
+Exact private court-scan filenames and provider locators are withheld from public Git; the controlled source references above resolve through the private custody mapping.
 
 The records are readable preserved court scans/copies. Certified court-native reproduction remains desirable, particularly for evidential use outside the repository.
 

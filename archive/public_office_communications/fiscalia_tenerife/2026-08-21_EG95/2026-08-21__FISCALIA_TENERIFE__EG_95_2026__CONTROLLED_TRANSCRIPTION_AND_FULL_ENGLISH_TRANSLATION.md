@@ -3,12 +3,12 @@
 ### Controlled Spanish transcription and full English translation
 
 **Source email date:** 21 August 2026  
-**Source email subject:** `Fiscalia Tenerife: Notificación Decreto (21/08/2026)`  
-**Attached source document:** `01. Decreto de incoación y archivo (21.08.2026).pdf`  
+**Source email subject category:** official EG 95/2026 decree notification (exact private-mailbox subject withheld)<br>
+**Attached source category/reference:** opening-and-archive decree PDF / `MF-EG95-SRC-DECR-01` (exact private filename withheld)<br>
 **Document length:** 1 page  
 **SHA-256 of source PDF:** `926a1351a488661d9d5359cd8ae0951c49d6967f65a17368be61c12fc8290128`
 
-**Source-control note:** The Spanish original controls. The English text below is a complete, faithful working translation. “DIP” is retained and explained as *Diligencias de Investigación Penal* (prosecutorial criminal-investigation proceedings). “Expediente gubernativo” is rendered as an administrative/governance file and is not treated as a criminal investigation.
+**Source-control note:** The Spanish original controls. The English text below is a complete, faithful working translation. The exact private-mailbox subject and private attachment filename are withheld from the current tree; the source date, public reference and SHA-256 preserve continuity. “DIP” is retained and explained as *Diligencias de Investigación Penal* (prosecutorial criminal-investigation proceedings). “Expediente gubernativo” is rendered as an administrative/governance file and is not treated as a criminal investigation.
 
 ---
 

@@ -32,6 +32,12 @@ SITE = ROOT / "assets/site.js"
 MANIFEST = ROOT / "publication-manifests/master-proceedings-publication-20260830.json"
 MARKER = "MASTER_PROCEEDINGS_PUBLICATION_GATE"
 STORYING_MARKER = "PROCEEDINGS_FULL_IDENTITY_STORYING_GATE"
+EXPECTED_CANONICAL_RECORDS = 122
+EXPECTED_PUBLIC_RECORDS = 121
+EXPECTED_CANONICAL_EXACT_PROCEEDINGS = 98
+EXPECTED_PUBLIC_EXACT_PROCEEDINGS = 97
+EXPECTED_PRIVATE_EXACT_PROCEEDINGS = 1
+EXPECTED_PUBLIC_NON_EXACT_RECORDS = 24
 
 
 def main() -> int:
@@ -238,12 +244,49 @@ def main() -> int:
     ]
     trace_destination_ids = {record["Master_ID"] for record in public_records if isinstance(record, dict)}
     isolation_destination_ids = {record["Master_ID"] for record in exact_public_records}
+    canonical_exact_records = [
+        row for row in rows
+        if (row.get("Is_Proceeding") or "").strip().upper() == "TRUE"
+    ]
+    excluded_exact_records = [
+        row for row in expected_excluded
+        if (row.get("Is_Proceeding") or "").strip().upper() == "TRUE"
+    ]
+    if len(rows) != EXPECTED_CANONICAL_RECORDS:
+        errors.append(
+            "canonical record denominator must be "
+            f"{EXPECTED_CANONICAL_RECORDS}, found {len(rows)}"
+        )
+    if len(public_records) != EXPECTED_PUBLIC_RECORDS:
+        errors.append(
+            "public record denominator must be "
+            f"{EXPECTED_PUBLIC_RECORDS}, found {len(public_records)}"
+        )
+    if len(canonical_exact_records) != EXPECTED_CANONICAL_EXACT_PROCEEDINGS:
+        errors.append(
+            "canonical exact-proceeding denominator must be "
+            f"{EXPECTED_CANONICAL_EXACT_PROCEEDINGS}, found {len(canonical_exact_records)}"
+        )
+    if len(excluded_exact_records) != EXPECTED_PRIVATE_EXACT_PROCEEDINGS:
+        errors.append(
+            "private exact-proceeding exclusion denominator must be "
+            f"{EXPECTED_PRIVATE_EXACT_PROCEEDINGS}, found {len(excluded_exact_records)}"
+        )
     if len(trace_destination_ids) != len(public_records) or trace_destination_ids != set(public_ids):
         errors.append("not every public record receives one exact trace destination")
-    if len(exact_public_records) != 85 or len(isolation_destination_ids) != 85:
-        errors.append("exact public isolation-link denominator must be 85/85")
-    if len(non_exact_public_records) != 21:
-        errors.append("FALSE/UNVERIFIED public isolation-ineligibility denominator must be 21")
+    if (
+        len(exact_public_records) != EXPECTED_PUBLIC_EXACT_PROCEEDINGS
+        or len(isolation_destination_ids) != EXPECTED_PUBLIC_EXACT_PROCEEDINGS
+    ):
+        errors.append(
+            "exact public isolation-link denominator must be "
+            f"{EXPECTED_PUBLIC_EXACT_PROCEEDINGS}/{EXPECTED_PUBLIC_EXACT_PROCEEDINGS}"
+        )
+    if len(non_exact_public_records) != EXPECTED_PUBLIC_NON_EXACT_RECORDS:
+        errors.append(
+            "FALSE/UNVERIFIED public isolation-ineligibility denominator must be "
+            f"{EXPECTED_PUBLIC_NON_EXACT_RECORDS}"
+        )
 
     if not rows:
         errors.append("master CSV contains no rows")

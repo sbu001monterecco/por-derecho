@@ -7,12 +7,12 @@
 
 | Annex | Source | Date | Proposition / use | Location status | Public status | Filing status |
 |---|---|---:|---|---|---|---|
-| A-1 | `OFICIO Y DECRETO EXP. 745-26.pdf` | 26/08/2026 | challenged act; archive; stated reasons; review routes | native source preserved from notification email | native private; controlled transcription public | READY, subject to privacy handling |
-| A-2 | notification email `NOTIFICACIÓN OFICIO Y DECRETO EXP. GUB. 745/2026` | 26/08/2026 | receipt date/channel and attachment provenance | located in Gmail | metadata only | READY; preserve headers if available |
-| A-3 | `REGAGE26e00070235775.pdf` | 02/08/2026 | exact Inspection-specific registration; substantive `Expone`; 12 numbered requests; registered attachment hash | located in Gmail and Drive | native receipt should be redacted if published | READY |
-| A-4 | `REQUERIMIENTO_URGENTE_MF_DANO_PATRIMONIAL_EXTRACONCURSAL_02AGO2026.pdf` | 02/08/2026 | exact attachment registered under A-3 | receipt fixes filename and SHA-512; the digest matches the located A-5 binary | private source; propositions may be cited only through controlled derivatives | **VERIFIED BY SHA-512 IDENTITY WITH A-5 — 31 AUG 2026** |
-| A-5 | `REQUERIMIENTO_URGENTE_MF_EXTRACONCURSAL_31JUL2026_FINAL_FIRMADO.pdf` | 31/07/2026 | signed source master; structured scope and factual chronology | located in Drive; SHA-512 recomputed | private source; propositions may be cited in controlled derivative | READY; byte-identical to A-4 by exact receipt/master SHA-512 match |
-| A-6 | `Informe_Longform_Fiscalia_Las_Palmas_Canarias_2018_31JUL2026_v2.pdf` | 31/07/2026 | deeper Fiscalía chronology / prior-knowledge synthesis | located in Drive | assess/redact before any publication | SUPPORTING; verify propositions used |
+| A-1 | E.G. 745/2026 notice and decree (exact private filename withheld) | 26/08/2026 | challenged act; archive; stated reasons; review routes | native source preserved from notification email | native private; controlled transcription public | READY, subject to privacy handling |
+| A-2 | E.G. 745/2026 notification email (exact private subject and mailbox locator withheld) | 26/08/2026 | receipt date/channel and attachment provenance | located in private mailbox custody | metadata only | READY; preserve headers if available |
+| A-3 | official receipt `REGAGE26e00070235775` (exact private filename and provider locators withheld) | 02/08/2026 | exact Inspection-specific registration; substantive `Expone`; 12 numbered requests; registered attachment hash | located in private custody | native receipt should be redacted if published | READY |
+| A-4 | registered 2-Aug-2026 urgent-requirement attachment (exact private filename withheld) | 02/08/2026 | exact attachment registered under A-3 | receipt fixes the attachment identity and SHA-512; the digest matches the located A-5 binary | private source; propositions may be cited only through controlled derivatives | **VERIFIED BY SHA-512 IDENTITY WITH A-5 — 31 AUG 2026** |
+| A-5 | signed 31-Jul-2026 urgent-requirement source master (exact private filename and Drive locator withheld) | 31/07/2026 | signed source master; structured scope and factual chronology | located in private custody; SHA-512 recomputed | private source; propositions may be cited in controlled derivative | READY; byte-identical to A-4 by exact receipt/master SHA-512 match |
+| A-6 | 31-Jul-2026 Las Palmas/Canarias Fiscalía long-form report (exact private filename and Drive locator withheld) | 31/07/2026 | deeper Fiscalía chronology / prior-knowledge synthesis | located in private custody | assess/redact before any publication | SUPPORTING; verify propositions used |
 | A-7 | controlled Spanish transcription of A-1 | 29/08/2026 derivative | searchable source-to-text control | repository | public | READY |
 | A-8 | controlled English translation of A-1 | 29/08/2026 derivative | bilingual review and website use | repository | public | READY |
 
@@ -42,9 +42,9 @@ The exact REG-AGE receipt names the following proceedings as objects for preserv
 
 The present review does not rely on rewriting the entire 2012–2026 history. It preserves a narrower evidential proposition: the August 2026 submission asserted repeated prior institutional notice and requested that Inspección verify the actual institutional corpus. The following source families are located and should be used only proposition-by-proposition after verification:
 
-1. `Informe_Longform_Fiscalia_Las_Palmas_Canarias_2018_31JUL2026_v2.pdf` — long-form Fiscalía history located in Drive.
-2. `Comunicacion_Urgente_Ministerio_Fiscal_31JUL2026_v2.pdf` — contemporaneous escalation source located in Drive.
-3. `HANDOVER_MF_FISCALIA_FIRST_FRAME_JUSTICE_MAP_15AUG2026` — later coordination/handover record located in Drive.
+1. A-6 — long-form Fiscalía history located in private custody; exact private filename and Drive locator withheld.
+2. Contemporaneous 31-Jul-2026 escalation source — private source reference `MF-EG745-SRC-ESC-01`; exact private filename and Drive locator withheld.
+3. Later first-frame coordination/handover record — private source reference `MF-EG745-SRC-HANDOVER-01`; exact private filename and Drive locator withheld.
 4. REG-AGE receipts from the 2/3 August multi-recipient filing architecture, including `REGAGE26e00070235399`, `...235775`, `...236067`, `...236245`, `...236543`, `...236749`, and `...237051`.
 5. The source filing itself lists earlier formal notices and registrations, including January–June 2026 entries. Those registration facts should be verified against receipts before being used as annexed proof.
 

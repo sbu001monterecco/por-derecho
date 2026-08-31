@@ -110,12 +110,12 @@
     }
   },
   "identity_registry": {
-    "total": 240,
-    "PERSON": 102,
+    "total": 282,
+    "PERSON": 113,
     "ORGANISATION": 79,
     "STRUCTURE": 11,
-    "INSTITUTION": 25,
-    "PROCEEDING": 23,
+    "INSTITUTION": 36,
+    "PROCEEDING": 43,
     "archive_backfill": "OPEN",
     "candidate_state": "LOCAL_SOURCE_STATIC_CANDIDATE_NOT_YET_LIVE_VERIFIED",
     "last_live_verified_counts": {

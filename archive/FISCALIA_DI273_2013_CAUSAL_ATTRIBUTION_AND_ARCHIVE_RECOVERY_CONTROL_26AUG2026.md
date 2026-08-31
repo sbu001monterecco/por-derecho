@@ -88,8 +88,8 @@ The previous `metadata_only_not_opened` status is superseded for two archive fam
 
 | Alias | Archive | Bytes | SHA-256 | Recovery result |
 |---|---|---:|---|---|
-| `GMAIL-ZIP-002` | `Fiscalía.zip` | 21,153,250 | `dc7fb8c5cf988fef46a6c0130a7c8d505b312a50f561b0f6f5d2e03664a46079` | recovered, safely extracted, recursive nested ZIP reviewed and filenames/hashes inventoried |
-| `GMAIL-ZIP-005` | `Ampliación Fiscalía.zip` | 22,692,319 | `03aa4f5869f1aab416c53e08ac1bf32d46a2caddf12ae237efa608d48f358abb` | recovered, safely extracted and contents inventoried; substantive 2019 enlargement and annex family identified |
+| `GMAIL-ZIP-002` | exact private archive filename withheld | 21,153,250 | `dc7fb8c5cf988fef46a6c0130a7c8d505b312a50f561b0f6f5d2e03664a46079` | recovered, safely extracted, recursive nested ZIP reviewed and filenames/hashes inventoried |
+| `GMAIL-ZIP-005` | exact private archive filename withheld | 22,692,319 | `03aa4f5869f1aab416c53e08ac1bf32d46a2caddf12ae237efa608d48f358abb` | recovered, safely extracted and contents inventoried; substantive 2019 enlargement and annex family identified |
 
 No raw archive, mailbox identifier, private email or unredacted annex is published in Git. Recovery does not mean every allegation inside the archives is verified.
 

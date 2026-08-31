@@ -40,8 +40,8 @@ This digest is downstream of `CALIFICACION_VISTA_CANONICAL_TRANSCRIPT.md`. Each 
 
 Priority comparison targets after transcription:
 
-- `Calificación JT - documento cinco (pericial de Espejo valor razonable LPB).pdf`;
-- `Pericial - Nota Económica derechos contra la CEXP 11JUN2018.pdf` and controlled aliases;
+- reasonable-value expert-report source `MF-CAL-VISTA-SRC-02`;
+- CEXP economic-note source `MF-CAL-VISTA-SRC-03` and controlled aliases;
 - CEXP/Comunidad amounts €472,500, €518,908.69 and €737,338.85;
 - AC report treatment;
 - Sentencia 163/2023 distinction between broad causal theory and narrower document/collaboration finding.

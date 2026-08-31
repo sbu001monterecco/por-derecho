@@ -10,15 +10,15 @@
 
 Treat the hearing as one evidential object split across:
 
-1. `J. Mercantil 1 (Palmas de Gran Canaria (Las))_0000036_2012_VIDEO_01.mkv`
-2. `J. Mercantil 1 (Palmas de Gran Canaria (Las))_0000036_2012_VIDEO_02.mkv`
-3. `J. Mercantil 1 (Palmas de Gran Canaria (Las))_0000036_2012_VIDEO_03.mkv`
+1. private component `VIDEO_01`;
+2. private component `VIDEO_02`;
+3. private component `VIDEO_03`.
 
 All three private source components are now located and technically fingerprinted. The binaries themselves are not uploaded to the public repository.
 
 ## 2. VIDEO_02 verified technical intake
 
-Filename: `J. Mercantil 1 (Palmas de Gran Canaria (Las))_0000036_2012_VIDEO_02.mkv`  
+Private component: `VIDEO_02` (exact source filename withheld)
 SHA-256: `fee31a75c78184e09c07fa4d489028a902233cc340a63faa88a1cd6b94b0f57e`  
 Size: **231,434,953 bytes**  
 Duration: **1916.989500 seconds ≈ 31m56.99s**  
@@ -29,7 +29,7 @@ Sampled visual states show the remote label **`JONATHAN SIMO MORALES`** near the
 
 ## 3. VIDEO_03 verified technical intake
 
-Filename: `J. Mercantil 1 (Palmas de Gran Canaria (Las))_0000036_2012_VIDEO_03.mkv`  
+Private component: `VIDEO_03` (exact source filename withheld)
 SHA-256: `8bc5a27768bf61ee520ebcd97f308bdb5f5ed594175cfa032ee98fa7093cdd07`  
 Size: **192,947,423 bytes**  
 Duration: **1500.267375 seconds ≈ 25m00.27s**  
@@ -71,7 +71,7 @@ Receipt of private copies does not establish certified provenance, completeness 
 ## 7. Evidential controls
 
 ### VERIFIED
-- VIDEO_02 and VIDEO_03 filenames, hashes, sizes, durations, codecs and visible source clocks;
+- VIDEO_02 and VIDEO_03 component identities, hashes, sizes, durations, codecs and visible source clocks;
 - specified interface labels in sampled frames;
 - technical/visual VIDEO_01→02 continuity strongly supported.
 

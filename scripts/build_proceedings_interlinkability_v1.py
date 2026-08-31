@@ -33,9 +33,9 @@ CONTEXT_SOURCE_FILES = (
     ROOT / "assets/data/treasury-transparency-7-2026-v1.json",
 )
 
-EXPECTED_PUBLIC_RECORDS = 106
-EXPECTED_CANONICAL_EXACT_PROCEEDINGS = 86
-EXPECTED_PUBLIC_EXACT_PROCEEDINGS = 85
+EXPECTED_PUBLIC_RECORDS = 121
+EXPECTED_CANONICAL_EXACT_PROCEEDINGS = 98
+EXPECTED_PUBLIC_EXACT_PROCEEDINGS = 97
 EXPECTED_PRIVATE_EXACT_PROCEEDINGS = 1
 EXPECTED_CASE_PRISM_EXACT_COVERED = 26
 
@@ -137,6 +137,18 @@ GAP_ES = {
     "X-EU-003": "Nexo o actuación concreta de la UE, transferencias y tratamiento final.",
     "X-REG-001": "Corpus supervisor nativo completo cuando pueda obtenerse legalmente.",
     "X-WB-005": "Responsable y expediente asignados, preservación y tratamiento sustantivo.",
+    "LZ-FIS-045": "Expediente certificado completo; fiscal investigador; diligencias practicadas e inventario de fuentes; y cualquier reiteración judicial posterior o su destino.",
+    "TF-FIS-007": "Referencia de recepción, corpus trasladado completo, fiscal asignado y tratamiento diferenciado en Las Palmas.",
+    "GC-FIS-032": "Expediente e índice completos; destinos receptores exactos y acuses; material puesto ante el decisor; y tratamiento territorial posterior.",
+    "TF-FIS-008": "Resolución judicial de 16 de julio citada por el decreto; identidades y ámbitos nativos de DIP 7/2026 y DIP 12/2026; prueba de incorporación a DP 748; y tratamiento individual de cada solicitud.",
+    "GC-FIS-033": "Expediente e índice completos; decreto original de 20 de agosto; corpus exacto examinado; y tratamiento del traslado o asociación por la Fiscalía Provincial de Las Palmas.",
+    "NAT-FIS-004": "Expediente e índice completos; trazabilidad del 2 y 3 de agosto; tratamiento solicitud por solicitud; inventario de examen de los seis expedientes; registro de preservación y remisión; acto nativo verificable; y cadena de actores.",
+    "LZ-JUD-046": "Expediente certificado y puente de reparto; autos nativos; NIG; denuncia completa e índice de anexos; recepción o informe del Ministerio Fiscal; notificación y firmeza.",
+    "GC-FIS-034": "Expediente e índice completos; acto nativo firmado de incoación; cualquier disposición posterior, incluida la referencia comunicada de 28 de febrero; NIG; firmante; y material examinado.",
+    "NAT-FIS-005": "Expediente e índice completos; objeto; acto subyacente, si existe; traslado o asignación; NIG; firmante; y resultado.",
+    "GC-FIS-035": "Acto subyacente; objeto; expediente e índice completos; disposición; NIG; firmante; material examinado; y cualquier traslado o tratamiento posterior.",
+    "NAT-FIS-006": "Expediente e índice completos; objeto; traslado o asociación interna; funcionario asignado; NIG; identidad del firmante; y actuación o resultado posterior.",
+    "NAT-FIS-007": "Expediente e índice completos; objeto; traslado o asociación interna; funcionario asignado; NIG; identidad del firmante; y actuación o resultado posterior.",
 }
 
 
@@ -835,7 +847,7 @@ def build() -> dict[str, Any]:
 
     data = {
         "schema_version": "1.0.0",
-        "control_date": "2026-08-30",
+        "control_date": "2026-08-31",
         "status": "PUBLIC_DERIVED_EXACT_PROCEEDING_INTERLINKABILITY_CONTROL",
         "canonical_node_source_id": "PROCEEDINGS_MASTER_REGISTER",
         "public_node_projection": "assets/data/proceedings-master-public-v1.json",
@@ -958,13 +970,17 @@ def build() -> dict[str, Any]:
             "case_prism_exact_proceeding_covered_count": len(case_prism_exact_ids),
             "case_prism_exact_proceeding_uncovered_count": len(exact_rows)
             - len(case_prism_exact_ids),
-            "decision_dependency_exact_coverage": "GAP_26_OF_85",
+            "decision_dependency_exact_coverage": (
+                f"GAP_{len(case_prism_exact_ids)}_OF_{len(exact_rows)}"
+            ),
             "bilingual_specific_next_source_count": bilingual_specific_next_source_count,
             "bilingual_specific_next_source_coverage": (
                 f"VERIFIED_{bilingual_specific_next_source_count}_OF_{len(exact_rows)}"
             ),
             "exact_proceeding_full_finite_test_count": 0,
-            "exact_proceeding_full_finite_test_coverage": "GAP_0_OF_85",
+            "exact_proceeding_full_finite_test_coverage": (
+                f"GAP_0_OF_{len(exact_rows)}"
+            ),
             "classification_counts": {
                 token: classification_counts.get(token, 0)
                 for token in (

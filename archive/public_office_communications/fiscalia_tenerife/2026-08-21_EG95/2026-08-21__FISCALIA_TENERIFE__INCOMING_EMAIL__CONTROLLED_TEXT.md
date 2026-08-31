@@ -1,14 +1,14 @@
 # Fiscalía Provincial de Santa Cruz de Tenerife
-## Incoming notification email — controlled text
+## Incoming notification email — public-safe controlled text
 
 **Date received:** 21 August 2026, 12:08:45  
 **From:** Fiscalía de Tenerife `<fis.tenerife@justiciaencanarias.org>`  
-**To:** SBU001 Monterecco `<sbu001@monterecco.com>`  
-**Gmail message ID:** `1a024394e1f6889c`  
-**Subject:** `Fiscalia Tenerife: Notificación Decreto (21/08/2026)`  
-**Attachment:** `01. Decreto de incoación y archivo (21.08.2026).pdf` — 72,605 bytes
+**To:** SBU001 Monterecco `[PERSONAL EMAIL OMITTED]`<br>
+**Public source reference:** `MF-EG95-MSG-IN-01`<br>
+**Subject category:** official EG 95/2026 decree notification (exact private-mailbox subject withheld)<br>
+**Attachment category:** opening-and-archive decree PDF (exact filename withheld) — 72,605 bytes
 
-**Source-control note:** This is the controlled plain-text body returned from Gmail. The Gmail message and attached PDF remain the controlling electronic records.
+**Source-control note:** This is the public-safe controlled plain-text body returned from the private mailbox. The native message and attached PDF remain the controlling electronic records. The recipient's personal email, provider identifier, exact subject and private attachment filename are withheld from the current tree.
 
 ---
 

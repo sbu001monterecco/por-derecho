@@ -14,11 +14,11 @@ The governing rule remains:
 
 ## 2. Exact source identity / alias control
 
-| Current upload | SHA-256 | Canonical source ID | Treatment |
+| Current upload (public-safe description) | SHA-256 | Canonical source ID | Treatment |
 |---|---|---|---|
-| `FISCALÍA PROVINCIAL DE LAS PALMAS 13 Jan 2026.PDF` | `d42051eea0ff28bc230ef58315333729a84454b8376b23ad7bbc5db35e3a77a4` | `CF-01` | Exact match to the already-ingested 13-Jan-2026 judicial-supervision/prevaricación complaint. |
-| `DENUNCIA_AUTONOMA_SUN_PARK_Instrumentalizacion_Unidades_2026-01-24 (2).PDF` | `d3274bde90b2e40ef15f0cc4d96ee0d8715c4bf657559be709108df1850c774e` | `CF-02` | Exact match to the already-ingested 24-Jan-2026 unit/Community instrumentalisation complaint. |
-| `AMPLIACION_DENUNCIA_INSTRUMENTALIZACION_250126 (3).PDF` | `577b251e66d78d8f19ebb96b3deb96864e6a4401837cc67af8acbd25aa7affe8` | `CF-03` | Exact binary alias of the previously ingested `(2).PDF` version. The `(3)` suffix does **not** create a new independent source or corroboration event. |
+| 13-Jan-2026 judicial-supervision complaint (exact private filename withheld) | `d42051eea0ff28bc230ef58315333729a84454b8376b23ad7bbc5db35e3a77a4` | `CF-01` | Exact match to the already-ingested source. |
+| 24-Jan-2026 unit/Community instrumentalisation complaint (exact private filename withheld) | `d3274bde90b2e40ef15f0cc4d96ee0d8715c4bf657559be709108df1850c774e` | `CF-02` | Exact match to the already-ingested source. |
+| 25-Jan-2026 instrumentalisation expansion (exact private filename withheld) | `577b251e66d78d8f19ebb96b3deb96864e6a4401837cc67af8acbd25aa7affe8` | `CF-03` | Exact binary alias of the previously ingested copy. A copy suffix does **not** create a new independent source or corroboration event. |
 
 ### Deduplication rule
 

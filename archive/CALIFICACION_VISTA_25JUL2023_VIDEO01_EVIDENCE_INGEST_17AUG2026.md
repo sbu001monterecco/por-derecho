@@ -8,7 +8,7 @@
 
 ## 1. Exact source and integrity
 
-Filename: `J. Mercantil 1 (Palmas de Gran Canaria (Las))_0000036_2012_VIDEO_01.mkv`  
+Private component: `VIDEO_01` (exact source filename withheld)
 Size: **448,937,678 bytes**  
 Duration: **3600.614 seconds (60:00.614)**  
 SHA-256: `63a08742ae6925cb347fe25ceb2c6a78e0625a4aa7ec1df71b6b8602f4eb7d4f`  

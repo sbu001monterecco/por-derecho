@@ -104,10 +104,10 @@ try {
   if (!projectionResponse.ok()) throw new Error(`public proceedings projection failed with ${projectionResponse.status()}`);
   const projection = await projectionResponse.json();
   const publicRecords = Array.isArray(projection.records) ? projection.records : [];
-  if (publicRecords.length !== 106) throw new Error(`expected 106 controlled public records, found ${publicRecords.length}`);
+  if (publicRecords.length !== 121) throw new Error(`expected 121 controlled public records, found ${publicRecords.length}`);
   const exactRecords = publicRecords.filter((record) => String(record.Is_Proceeding || '').trim().toUpperCase() === 'TRUE');
   const exactIds = exactRecords.map((record) => record.Master_ID);
-  if (exactIds.length !== 85) throw new Error(`expected 85 exact public proceedings after aggregate-family repair, found ${exactIds.length}`);
+  if (exactIds.length !== 97) throw new Error(`expected 97 exact public proceedings after aggregate-family repair, found ${exactIds.length}`);
   if (exactRecords.some((record) => /FAMILY|AGGREGATE/i.test(`${record.Record_Type || ''} ${record.Proceeding_Class || ''}`))) {
     throw new Error('public exact-proceeding denominator admits an aggregate/family object');
   }
@@ -175,7 +175,7 @@ try {
       cell.status === 'OUTSIDE' ? [] : (cell.master_ids || []).filter((id) => exactIdSet.has(id))
     )
   ));
-  if (prismCoveredIds.size !== 26 || exactIds.length - prismCoveredIds.size !== 59) {
+  if (prismCoveredIds.size !== 26 || exactIds.length - prismCoveredIds.size !== 71) {
     throw new Error(`Case Prism exact-file content denominator mismatch (${prismCoveredIds.size}/${exactIds.length})`);
   }
   const expectedIsolationById = new Map(exactIds.map((masterId) => [
@@ -281,12 +281,12 @@ try {
       const expectedStatus = prismCoveredIds.has(masterId) ? 'covered' : 'unresolved';
       if (status !== expectedStatus) throw new Error(`${route.lang}/${masterId}: Case Prism coverage label is ${status}, expected ${expectedStatus}`);
     }
-    if (renderedCoverage.filter(([, status]) => status === 'covered').length !== 26 || renderedCoverage.filter(([, status]) => status === 'unresolved').length !== 59) {
-      throw new Error(`${route.lang}: visible Case Prism content coverage must remain 26 covered / 59 unresolved`);
+    if (renderedCoverage.filter(([, status]) => status === 'covered').length !== 26 || renderedCoverage.filter(([, status]) => status === 'unresolved').length !== 71) {
+      throw new Error(`${route.lang}: visible Case Prism content coverage must remain 26 covered / 71 unresolved`);
     }
     if (await isolation.locator('option[value="GC-APP-007"]').count()) throw new Error(`${route.lang}: aggregate removal-appeal family admitted to isolation`);
     const coverageText = await page.locator('[data-isolation-coverage]').innerText();
-    if (!coverageText.includes(`26/${exactIds.length}`) || !coverageText.includes('59')) throw new Error(`${route.lang}: finite 26/85 Case Prism content denominator is not visible`);
+    if (!coverageText.includes(`26/${exactIds.length}`) || !coverageText.includes('71')) throw new Error(`${route.lang}: finite 26/97 Case Prism content denominator is not visible`);
     const fullCorpusLabels = await page.locator('.pdim-isolation-map button[aria-label]').evaluateAll((elements) => elements.map((element) => element.getAttribute('aria-label') || ''));
     if (fullCorpusLabels.some((label) => label.includes(route.outsideSelected))) throw new Error(`${route.lang}: full-corpus cells are announced as outside a selected file`);
     if (await isolation.locator('option[value="GC-APP-004"]').count() !== 1) throw new Error(`${route.lang}: exact RPL 2523 option missing`);
@@ -487,7 +487,7 @@ try {
     await masterPage.waitForSelector('tr[data-master-id]');
     const renderedMasterIds = await masterPage.locator('tr[data-master-id]').evaluateAll((rows) => rows.map((row) => row.dataset.masterId));
     assertSameValues(renderedMasterIds, publicRecords.map((record) => record.Master_ID), `${route.lang}: Master Register public denominator`);
-    if (renderedMasterIds.length !== 106) throw new Error(`${route.lang}: Master Register must render 106 controlled public rows`);
+    if (renderedMasterIds.length !== 121) throw new Error(`${route.lang}: Master Register must render 121 controlled public rows`);
     const masterTraceLinks = await masterPage.locator('tr[data-master-id]').evaluateAll((rows) => rows.map((row) => ({
       masterId: row.dataset.masterId,
       href: row.querySelector('a.pd-ref')?.href || '',

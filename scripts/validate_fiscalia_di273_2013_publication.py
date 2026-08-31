@@ -27,17 +27,14 @@ SITEMAPS = (ROOT / "sitemap.xml",)
 
 EXPECTED_PDF_HASH = "5515b4cbedafc7c419f401769926ba1349553eb99abf87df7702354e972462c2"
 NATIVE_HASH = "6531e1cd3677ddcfa600345c38fe69e463b0418b1025f27f0ee231a0817e697e"
-FORBIDDEN = (
-    "Y2231410X",
-    "800291405",
-    "45.449.955T",
-    "45449955T",
-    "ANGjdJ",
-    "14860f88a3ee4150",
-    "148423b1a61dc6bd",
-    "17887636c71891a0",
-    "18bfc5edd4d74d3c",
+PRIVATE_TYPE_PATTERNS = (
+    ("Spanish identity document", re.compile(r"\b(?:[XYZ]\d{7}[A-Z]|\d{2}\.?\d{3}\.?\d{3}[A-Z])\b", re.IGNORECASE)),
+    ("provider message identifier", re.compile(r"\b[0-9a-f]{16}\b", re.IGNORECASE)),
 )
+PRIVATE_SUBSTRING_DIGESTS = {
+    6: {"ec325051a55bdefca1621f3e5933a6bb9f6908f95b3a00904201367834ee8b59"},
+    9: {"281895b5e777f7b4e0dbf60d1a9b19a6614fa5c4ec12a29d457dc42ac72aef53"},
+}
 
 failures: list[str] = []
 
@@ -50,6 +47,18 @@ def require(condition: bool, message: str) -> None:
 def text(path: Path) -> str:
     require(path.is_file(), f"missing file: {path.relative_to(ROOT)}")
     return path.read_text(encoding="utf-8") if path.is_file() else ""
+
+
+def contains_private_substring(value: str) -> bool:
+    """Match protected short values by digest without committing them verbatim."""
+
+    folded = value.casefold()
+    for width, digests in PRIVATE_SUBSTRING_DIGESTS.items():
+        for start in range(0, max(0, len(folded) - width + 1)):
+            candidate = folded[start : start + width]
+            if hashlib.sha256(candidate.encode("utf-8")).hexdigest() in digests:
+                return True
+    return False
 
 
 for path in (ES, EN, PDF, README, CONTROL, AUDIT, JUSTICE, REGISTER, *SITEMAPS):
@@ -70,8 +79,9 @@ control = text(CONTROL)
 audit = text(AUDIT)
 combined_public = "\n".join((es, en, readme, control, audit))
 
-for forbidden in FORBIDDEN:
-    require(forbidden.casefold() not in combined_public.casefold(), f"private/provider literal published: {forbidden}")
+for label, pattern in PRIVATE_TYPE_PATTERNS:
+    require(pattern.search(combined_public) is None, f"private {label} published")
+require(not contains_private_substring(combined_public), "digest-matched private/provider value published")
 
 for page, markers in {
     ES: (
@@ -125,7 +135,7 @@ for marker in (
 
 if JUSTICE.is_file():
     data = json.loads(JUSTICE.read_text(encoding="utf-8"))
-    require(data["meta"]["updated"] == "2026-08-26", "justice map update date not advanced")
+    require(data["meta"]["updated"] == "2026-08-31", "justice map update date not advanced")
     people = {item["id"]: item for item in data["people"]}
     proceedings = {item["id"]: item for item in data["proceedings"]}
     require("tomas-fernandez-de-paiz" in people, "justice map missing fiscal signatory")

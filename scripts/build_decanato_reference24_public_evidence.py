@@ -12,8 +12,11 @@ principal pleading.
 from __future__ import annotations
 
 import argparse
+import hashlib
 import io
 import re
+import unicodedata
+from collections import defaultdict
 from pathlib import Path
 
 import fitz
@@ -21,22 +24,64 @@ from PIL import Image, ImageDraw, ImageFont
 
 
 OMISSION = "[DATO PERSONAL OMITIDO]"
-PRIVATE_LITERALS = (
-    "Y2231410X",
-    "sbu001@monterecco.com",
-    "Calle Pozo Cabildo",
-    "San Cristóbal de La Laguna",
-    "Santa Cruz de Tenerife",
-    "C.P. 38208",
+MAX_PRIVATE_TOKENS = 6
+PRIVATE_FRAGMENT_DIGESTS = frozenset(
+    {
+        # SHA-256 of NFKC-normalised, case-folded, whitespace-collapsed values.
+        # Exact protected values remain in private custody, not in public Git.
+        "687f7a60c5888ebcff14e00ef774a582f8e475f6b44dcde4cb5c6933cdc1a647",
+        "aa26fac745489ff204ceb6e5cbfa1f7c5576adc1363daeb4f7d89ac8ab4bdc9d",
+        "e596c24fb2f2ec006712447315fecbbabaeb1e499d07beec3f71af67993655a1",
+        "1358ea8f1cac94c9b432611e7aecda6a4876e378b0a3ddf7e093ac49e1d3c275",
+        "42f6abceedade486d9bdf45130becc4a8061160e87e5a02f960eb1c1c34b6038",
+        "8f6faa76c7306cf0c68e54f738d18770b1f5eb1fa9d3b7da90e0d3b87ed37e0d",
+    }
 )
-PRIVATE_PATTERNS = (
-    r"Y2231410X",
-    r"sbu001@monterecco\.com",
-    r"Calle Pozo Cabildo",
-    r"San Cristóbal de La Laguna",
-    r"Santa Cruz de Tenerife",
-    r"C\.P\. 38208",
+PRIVATE_TYPE_PATTERNS = (
+    re.compile(r"\b(?:[XYZ]\d{7}[A-Z]|\d{8}[A-Z])\b", re.IGNORECASE),
+    re.compile(r"\b[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}\b", re.IGNORECASE),
 )
+TOKEN_RE = re.compile(r"\S+")
+EDGE_PUNCTUATION = " \t\r\n,;:()[]{}<>\"'“”‘’"
+
+
+def normalise_private_candidate(value: str) -> str:
+    parts = (
+        part.strip(EDGE_PUNCTUATION)
+        for part in unicodedata.normalize("NFKC", value).casefold().split()
+    )
+    return " ".join(part for part in parts if part)
+
+
+def private_candidate_digest(value: str) -> str:
+    return hashlib.sha256(normalise_private_candidate(value).encode("utf-8")).hexdigest()
+
+
+def private_text_spans(text: str) -> list[tuple[int, int]]:
+    """Locate protected values without storing them verbatim in public Git."""
+
+    spans = [match.span() for pattern in PRIVATE_TYPE_PATTERNS for match in pattern.finditer(text)]
+    tokens = list(TOKEN_RE.finditer(text))
+    for start in range(len(tokens)):
+        for width in range(1, min(MAX_PRIVATE_TOKENS, len(tokens) - start) + 1):
+            end = start + width - 1
+            candidate = text[tokens[start].start() : tokens[end].end()]
+            if private_candidate_digest(candidate) in PRIVATE_FRAGMENT_DIGESTS:
+                spans.append((tokens[start].start(), tokens[end].end()))
+
+    merged: list[tuple[int, int]] = []
+    for start, end in sorted(spans):
+        if merged and start <= merged[-1][1]:
+            merged[-1] = (merged[-1][0], max(merged[-1][1], end))
+        else:
+            merged.append((start, end))
+    return merged
+
+
+def scrub_private_text(text: str) -> str:
+    for start, end in reversed(private_text_spans(text)):
+        text = text[:start] + OMISSION + text[end:]
+    return text
 
 
 def add_redaction(page: fitz.Page, rect: fitz.Rect) -> None:
@@ -44,11 +89,36 @@ def add_redaction(page: fitz.Page, rect: fitz.Rect) -> None:
     page.add_redact_annot(rect, fill=(1, 1, 1), cross_out=False)
 
 
-def redact_search_hits(page: fitz.Page, needles: tuple[str, ...]) -> None:
-    for needle in needles:
-        for hit in page.search_for(needle):
-            expanded = fitz.Rect(hit.x0 - 2, hit.y0 - 1, hit.x1 + 2, hit.y1 + 1)
-            add_redaction(page, expanded)
+def redact_private_hits(page: fitz.Page) -> None:
+    """Redact typed PII and digest-matched address fragments from one PDF page."""
+
+    words_by_line: dict[tuple[int, int], list[tuple[float, float, float, float, str]]] = defaultdict(list)
+    for word in page.get_text("words", sort=True):
+        x0, y0, x1, y1, value, block, line, _word_number = word
+        words_by_line[(int(block), int(line))].append((x0, y0, x1, y1, str(value)))
+
+    rectangles: set[tuple[float, float, float, float]] = set()
+    for words in words_by_line.values():
+        for x0, y0, x1, y1, value in words:
+            if any(pattern.search(value) for pattern in PRIVATE_TYPE_PATTERNS):
+                rectangles.add((x0, y0, x1, y1))
+        for start in range(len(words)):
+            for width in range(1, min(MAX_PRIVATE_TOKENS, len(words) - start) + 1):
+                selected = words[start : start + width]
+                candidate = " ".join(word[4] for word in selected)
+                if private_candidate_digest(candidate) not in PRIVATE_FRAGMENT_DIGESTS:
+                    continue
+                rectangles.add(
+                    (
+                        min(word[0] for word in selected),
+                        min(word[1] for word in selected),
+                        max(word[2] for word in selected),
+                        max(word[3] for word in selected),
+                    )
+                )
+
+    for x0, y0, x1, y1 in rectangles:
+        add_redaction(page, fitz.Rect(x0 - 2, y0 - 1, x1 + 2, y1 + 1))
 
 
 def redact_signature_block(page: fitz.Page, rect: tuple[float, float, float, float]) -> None:
@@ -148,7 +218,7 @@ def build_complaint(package: Path, receipt: Path, output_path: Path) -> None:
 
     # Output page 0 is the photographed receipt. Source pages 1–30 are 1–30.
     for output_page in range(1, output.page_count):
-        redact_search_hits(output[output_page], PRIVATE_LITERALS)
+        redact_private_hits(output[output_page])
 
     # The native source contains visual digital-signature blocks that extend
     # beyond their searchable text. Remove each entire block by coordinate.
@@ -175,7 +245,7 @@ def build_ampliacion(source_path: Path, receipt: Path, output_path: Path) -> Non
     source.close()
 
     for output_page in range(1, output.page_count):
-        redact_search_hits(output[output_page], (r"Y2231410X",))
+        redact_private_hits(output[output_page])
     for page in output:
         page.apply_redactions(images=fitz.PDF_REDACT_IMAGE_REMOVE_UNLESS_INVISIBLE)
     scrub_document(output, "Ampliación de la denuncia — 25 de junio de 2026 — copia pública")
@@ -193,8 +263,7 @@ def page_text(page: fitz.Page) -> str:
 
 def safe_source_text(page: fitz.Page, signature_page: bool = False) -> str:
     text = page_text(page)
-    for literal in PRIVATE_LITERALS:
-        text = re.sub(re.escape(literal), OMISSION, text, flags=re.IGNORECASE)
+    text = scrub_private_text(text)
     if signature_page:
         text = re.sub(
             r"(?s)(En Las Palmas de Gran Canaria, a 17 de junio de 2026\.)\s+.*$",
@@ -242,9 +311,8 @@ def assert_public_safe(paths: list[Path]) -> None:
         with fitz.open(path) as document:
             extracted.extend(page.get_text("text") for page in document)
     combined = "\n".join(extracted)
-    for pattern in PRIVATE_PATTERNS:
-        if re.search(pattern, combined, flags=re.IGNORECASE):
-            raise RuntimeError(f"Private pattern remains in public PDFs: {pattern}")
+    if private_text_spans(combined):
+        raise RuntimeError("Protected identity, contact or address data remains in public PDFs")
 
 
 def main() -> None:

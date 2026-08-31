@@ -1,0 +1,384 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://por-derecho.org/schemas/institutional-communications.schema.json",
+  "title": "Por Derecho public-safe institutional communications register",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "register_id",
+    "control_date",
+    "scope",
+    "denominator_control",
+    "source_controls",
+    "private_locator_boundary",
+    "id_namespace_authority",
+    "id_allocation",
+    "events",
+    "unresolved_batches",
+    "continuity_rules"
+  ],
+  "properties": {
+    "schema": {
+      "const": "por-derecho.institutional-communications-register.v1"
+    },
+    "register_id": {
+      "const": "PD-SP-INSTITUTIONAL-COMMUNICATIONS-001"
+    },
+    "control_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "scope": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["institution", "focus_case", "purpose", "interpretive_boundary"],
+      "properties": {
+        "institution": {"type": "string", "minLength": 1},
+        "focus_case": {"type": "string", "minLength": 1},
+        "purpose": {"type": "string", "minLength": 1},
+        "interpretive_boundary": {"type": "string", "minLength": 1}
+      }
+    },
+    "denominator_control": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "wider_regage_records_reported",
+        "reported_received",
+        "reported_rejected",
+        "detailed_baseline_receipt_rows_expected",
+        "detailed_baseline_receipt_rows_registered",
+        "metadata_only_records_reported",
+        "metadata_only_representation",
+        "arithmetic_check",
+        "private_manifest_rows",
+        "private_manifest_baseline_receipt_rows",
+        "private_manifest_mailbox_event_rows",
+        "mailbox_outbound_email_rows",
+        "mailbox_inbound_email_rows",
+        "mailbox_self_archive_rows",
+        "mailbox_draft_rows",
+        "mailbox_route_not_publicly_attested_rows",
+        "curated_source_proved_events",
+        "mailbox_transport_events",
+        "event_rows_total"
+      ],
+      "properties": {
+        "wider_regage_records_reported": {"const": 97},
+        "reported_received": {"const": 90},
+        "reported_rejected": {"const": 7},
+        "detailed_baseline_receipt_rows_expected": {"const": 75},
+        "detailed_baseline_receipt_rows_registered": {"const": 75},
+        "metadata_only_records_reported": {"const": 22},
+        "metadata_only_representation": {"const": "ONE_UNRESOLVED_BATCH_NOT_22_SYNTHETIC_EVENTS"},
+        "arithmetic_check": {"type": "string", "minLength": 1},
+        "private_manifest_rows": {"const": 231},
+        "private_manifest_baseline_receipt_rows": {"const": 75},
+        "private_manifest_mailbox_event_rows": {"const": 156},
+        "mailbox_outbound_email_rows": {"const": 42},
+        "mailbox_inbound_email_rows": {"const": 101},
+        "mailbox_self_archive_rows": {"const": 10},
+        "mailbox_draft_rows": {"const": 3},
+        "mailbox_route_not_publicly_attested_rows": {"const": 81},
+        "curated_source_proved_events": {"type": "integer", "minimum": 0},
+        "mailbox_transport_events": {"const": 156},
+        "event_rows_total": {"type": "integer", "minimum": 75}
+      }
+    },
+    "source_controls": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "detailed_index",
+        "detailed_index_sha256",
+        "controlling_154_page_pdf_sha256",
+        "public_safe_transcript_sha256",
+        "detailed_row_count",
+        "annex_listing_count",
+        "mailbox_index",
+        "mailbox_index_sha256",
+        "mailbox_event_row_count",
+        "private_custody_manifest_sha256",
+        "private_custody_manifest_row_count"
+      ],
+      "properties": {
+        "detailed_index": {"type": "string", "minLength": 1},
+        "detailed_index_sha256": {"$ref": "#/$defs/sha256"},
+        "controlling_154_page_pdf_sha256": {"$ref": "#/$defs/sha256"},
+        "public_safe_transcript_sha256": {"$ref": "#/$defs/sha256"},
+        "detailed_row_count": {"const": 75},
+        "annex_listing_count": {"const": 126},
+        "mailbox_index": {"const": "assets/data/institutional-communications-mailbox-index-v1.json"},
+        "mailbox_index_sha256": {"$ref": "#/$defs/sha256"},
+        "mailbox_event_row_count": {"const": 156},
+        "private_custody_manifest_sha256": {"const": "bdd12a8fa62b5058525e1c37053fb7899ac24a60d12ff48ab8b74bda617cd6f6"},
+        "private_custody_manifest_row_count": {"const": 231}
+      }
+    },
+    "private_locator_boundary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "public_register_contains", "public_register_excludes", "reconciliation_order", "custody_rule", "custody_manifest"],
+      "properties": {
+        "status": {"const": "ENFORCED"},
+        "public_register_contains": {"$ref": "#/$defs/nonEmptyStrings"},
+        "public_register_excludes": {"$ref": "#/$defs/nonEmptyStrings"},
+        "reconciliation_order": {"$ref": "#/$defs/nonEmptyStrings"},
+        "custody_rule": {"type": "string", "minLength": 1},
+        "custody_manifest": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["custody_reference", "status", "manifest_sha256", "manifest_row_count", "provider_or_storage_identifier_published"],
+          "properties": {
+            "custody_reference": {"const": "PD-SP-CUST-0001"},
+            "status": {"const": "PERSISTED_PRIVATE_CUSTODY"},
+            "manifest_sha256": {"const": "bdd12a8fa62b5058525e1c37053fb7899ac24a60d12ff48ab8b74bda617cd6f6"},
+            "manifest_row_count": {"const": 231},
+            "provider_or_storage_identifier_published": {"const": false}
+          }
+        }
+      }
+    },
+    "id_namespace_authority": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["policy_path", "extension", "declared_pattern", "status"],
+      "properties": {
+        "policy_path": {"const": ".github/evidence-intelligence/id-extension-policy.json"},
+        "extension": {"const": "EVENT"},
+        "declared_pattern": {"const": "^PD-SP-EVT-[0-9]{4}$"},
+        "status": {"const": "DECLARED_IN_EXISTING_POLICY_AND_VALIDATED"}
+      }
+    },
+    "id_allocation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["pattern", "baseline_rule", "extension_rule", "mailbox_rule"],
+      "properties": {
+        "pattern": {"const": "PD-SP-EVT-####"},
+        "baseline_rule": {"type": "string", "minLength": 1},
+        "extension_rule": {"type": "string", "minLength": 1},
+        "mailbox_rule": {"type": "string", "minLength": 1}
+      }
+    },
+    "events": {
+      "type": "array",
+      "minItems": 75,
+      "items": {"$ref": "#/$defs/event"}
+    },
+    "unresolved_batches": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"$ref": "#/$defs/unresolvedBatch"}
+    },
+    "continuity_rules": {"$ref": "#/$defs/nonEmptyStrings"}
+  },
+  "$defs": {
+    "sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "nonEmptyStrings": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"type": "string", "minLength": 1}
+    },
+    "sourceIntegrity": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "repository_anchor"],
+      "properties": {
+        "status": {"type": "string", "minLength": 1},
+        "repository_anchor": {"type": "string", "minLength": 1},
+        "sha256": {"$ref": "#/$defs/sha256"},
+        "controlling_source_pdf_sha256": {"$ref": "#/$defs/sha256"}
+      }
+    },
+    "evidenceState": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "transmission",
+        "registration",
+        "filing",
+        "destination",
+        "delivery",
+        "internal_association",
+        "substantive_examination",
+        "merits"
+      ],
+      "properties": {
+        "transmission": {"type": "string", "minLength": 1},
+        "registration": {"type": "string", "minLength": 1},
+        "filing": {"type": "string", "minLength": 1},
+        "destination": {"type": "string", "minLength": 1},
+        "delivery": {"type": "string", "minLength": 1},
+        "internal_association": {"type": "string", "minLength": 1},
+        "substantive_examination": {"type": "string", "minLength": 1},
+        "merits": {"type": "string", "minLength": 1}
+      }
+    },
+    "event": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "event_id",
+        "cohort",
+        "layer",
+        "source_key",
+        "record_type",
+        "event_date",
+        "direction",
+        "channel",
+        "institution_id",
+        "office",
+        "official_reference",
+        "matter_references",
+        "source_integrity",
+        "evidence_state",
+        "proves",
+        "does_not_prove"
+      ],
+      "properties": {
+        "event_id": {"type": "string", "pattern": "^PD-SP-EVT-[0-9]{4}$"},
+        "cohort": {"enum": ["BASELINE_REDSARA_ANEXO4_75", "CURATED_SOURCE_PROVED_EVENT", "MAILBOX_TRANSPORT_SOURCE_PROVED"]},
+        "layer": {"enum": ["TRANSPORT", "FORMAL_REGISTRATION", "OFFICIAL_ACT_OR_CORRESPONDENCE"]},
+        "source_key": {"type": "string", "minLength": 1},
+        "record_type": {
+          "enum": [
+            "REGISTRATION_RECEIPT",
+            "OFFICIAL_DECISION",
+            "OFFICIAL_NOTIFICATION",
+            "OFFICIAL_ROUTING_ACT",
+            "OFFICIAL_ACT_UNCLASSIFIED",
+            "OUTBOUND_COMMUNICATION",
+            "INSTITUTIONAL_ACKNOWLEDGEMENT",
+            "EMAIL_TRANSPORT",
+            "EMAIL_DRAFT",
+            "SELF_ARCHIVE_CONTROL"
+          ]
+        },
+        "event_date": {"type": "string", "format": "date"},
+        "event_timestamp": {"type": "string", "minLength": 19},
+        "presented_local": {"type": "string", "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}$"},
+        "source_timezone": {"type": "string", "minLength": 1},
+        "direction": {
+          "enum": ["OUTBOUND_TO_INSTITUTION", "INBOUND_FROM_INSTITUTION", "INSTITUTION_TO_INSTITUTION", "SELF_ARCHIVE_CONTROL", "NON_SENT_DRAFT"]
+        },
+        "channel": {"type": "string", "minLength": 1},
+        "institution_id": {"type": "string", "pattern": "^PD-SP-I-[0-9]{4}$"},
+        "office": {"type": "string", "minLength": 1},
+        "recipient_dir3": {"type": "string", "pattern": "^[A-ZJ][A-Z0-9]{8}$"},
+        "official_reference": {"type": "string", "minLength": 1},
+        "subject_category": {
+          "enum": [
+            "INFORMATION_OR_COPY_REQUEST",
+            "TRACEABILITY_OR_CERTIFICATION_REQUEST",
+            "PRESERVATION_OR_CUSTODY_REQUEST",
+            "CRIMINAL_NOTICE_OR_AMPLIFICATION",
+            "EVIDENCE_OR_DOCUMENT_CONTRIBUTION",
+            "REVIEW_OR_INVESTIGATIVE_IMPULSE",
+            "ROUTING_OR_REMITTAL",
+            "INSTITUTIONAL_COMMUNICATION",
+            "OTHER_FORMAL_REGISTRATION_LABEL",
+            "INSTITUTIONAL_ACKNOWLEDGEMENT",
+            "OFFICIAL_ACT_OR_NOTICE",
+            "FORMAL_REGISTRATION_OR_RECEIPT",
+            "OTHER_INSTITUTIONAL_COMMUNICATION"
+          ]
+        },
+        "subject_digest_sha256": {"$ref": "#/$defs/sha256"},
+        "subject_label_status": {"const": "FORMAL_REGISTRATION_LABEL_IN_CANONICAL_SOURCE_NOT_REPEATED_HERE"},
+        "public_summary": {"type": "string", "minLength": 1},
+        "public_match_key": {"type": "string", "pattern": "^MF-MAIL-[A-Z0-9-]{1,80}$"},
+        "transport_state": {
+          "enum": ["SENT_EMAIL_LOCATED", "RECEIVED_EMAIL_LOCATED", "SELF_ARCHIVE_CONTROL_NOT_AN_INSTITUTIONAL_SEND", "DRAFT_NOT_SENT"]
+        },
+        "route_proof_state": {"type": "string", "minLength": 1},
+        "subject_text_published": {"const": false},
+        "attachment_count": {"type": "integer", "minimum": 0},
+        "attachment_count_basis": {"type": "string", "minLength": 1},
+        "source_pages": {"type": "string", "pattern": "^[0-9]+-[0-9]+$"},
+        "annex_count": {"type": "integer", "minimum": 0},
+        "matter_references": {
+          "type": "array",
+          "items": {"type": "string", "minLength": 1},
+          "uniqueItems": true
+        },
+        "source_integrity": {"$ref": "#/$defs/sourceIntegrity"},
+        "attribution_state": {
+          "enum": [
+            "SOURCE_PROVED_SIGNATORY",
+            "INSTITUTION_ONLY_SIGNATURE_PENDING",
+            "INSTITUTIONAL_NOTICE_NO_PERSONAL_SIGNATORY_ASSERTED",
+            "NO_PERSON_ATTRIBUTED_IN_PUBLIC_REGISTER"
+          ]
+        },
+        "signatory_person_id": {"type": "string", "pattern": "^PD-SP-P-[0-9]{4}$"},
+        "signatory_person_label": {"type": "string", "minLength": 1},
+        "linked_transport_event_ids": {
+          "type": "array",
+          "items": {"type": "string", "pattern": "^PD-SP-EVT-[0-9]{4}$"},
+          "uniqueItems": true
+        },
+        "transport_link_state": {"type": "string", "minLength": 1},
+        "proof_level": {"type": "string", "minLength": 1},
+        "event_sequence": {"type": "string", "minLength": 1},
+        "evidence_state": {"$ref": "#/$defs/evidenceState"},
+        "proves": {"$ref": "#/$defs/nonEmptyStrings"},
+        "does_not_prove": {"$ref": "#/$defs/nonEmptyStrings"}
+      },
+      "allOf": [
+        {
+          "if": {"properties": {"cohort": {"const": "BASELINE_REDSARA_ANEXO4_75"}}},
+          "then": {
+            "required": ["presented_local", "source_timezone", "recipient_dir3", "subject_category", "subject_digest_sha256", "subject_label_status", "source_pages", "annex_count"]
+          }
+        },
+        {
+          "if": {"properties": {"cohort": {"const": "CURATED_SOURCE_PROVED_EVENT"}}},
+          "then": {"required": ["public_summary", "attribution_state", "linked_transport_event_ids", "transport_link_state", "proof_level"]}
+        },
+        {
+          "if": {"properties": {"cohort": {"const": "MAILBOX_TRANSPORT_SOURCE_PROVED"}}},
+          "then": {
+            "required": ["event_timestamp", "public_match_key", "transport_state", "route_proof_state", "subject_category", "subject_digest_sha256", "subject_text_published", "attachment_count", "attachment_count_basis", "public_summary", "attribution_state", "linked_transport_event_ids", "transport_link_state", "proof_level"]
+          }
+        },
+        {
+          "if": {"properties": {"attribution_state": {"const": "SOURCE_PROVED_SIGNATORY"}}},
+          "then": {"required": ["signatory_person_id", "signatory_person_label"]}
+        }
+      ]
+    },
+    "unresolvedBatch": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "batch_id",
+        "description",
+        "record_count",
+        "aggregate_received_count",
+        "aggregate_rejected_count",
+        "individual_identity_status",
+        "individual_status_allocation",
+        "synthetic_event_rows_created",
+        "resolution_gate",
+        "source_anchor"
+      ],
+      "properties": {
+        "batch_id": {"type": "string", "pattern": "^MF-UNRESOLVED-BATCH-[0-9]{3}$"},
+        "description": {"type": "string", "minLength": 1},
+        "record_count": {"type": "integer", "minimum": 1},
+        "aggregate_received_count": {"type": "integer", "minimum": 0},
+        "aggregate_rejected_count": {"type": "integer", "minimum": 0},
+        "individual_identity_status": {"type": "string", "minLength": 1},
+        "individual_status_allocation": {"type": "string", "minLength": 1},
+        "synthetic_event_rows_created": {"const": 0},
+        "resolution_gate": {"type": "string", "minLength": 1},
+        "source_anchor": {"type": "string", "minLength": 1}
+      }
+    }
+  }
+}

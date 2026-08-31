@@ -1,13 +1,13 @@
 # Fiscalía Provincial de Santa Cruz de Tenerife
-## Outgoing email — controlled text
+## Outgoing email — public-safe controlled text
 
 **Date sent:** 21 August 2026, 00:14:59  
-**From:** SBU001 Monterecco `<sbu001@monterecco.com>`  
+**From:** SBU001 Monterecco `[PERSONAL EMAIL OMITTED]`<br>
 **To:** Fiscalía Provincial de Santa Cruz de Tenerife `<fis.tenerife@justiciaencanarias.org>`  
-**Gmail message ID:** `1a021abc315951c7`  
-**Subject:** `DP 748/2026 · ETJ 163/2020 · Matkator / Cuatrecasas — aportación sobrevenida, diligencias finitas y continuidad con denuncia previa`
+**Public source reference:** `MF-EG95-MSG-OUT-01`<br>
+**Subject category:** DP 748/2026 / ETJ 163/2020 finite-measures and prior-record continuity supplement (exact private-mailbox subject withheld)
 
-**Source-control note:** This is the controlled plain-text body returned from the sent Gmail message. The Gmail source and native attachments remain the controlling electronic records.
+**Source-control note:** This is the public-safe controlled plain-text body returned from the sent private-mailbox message. The native message and attachments remain the controlling electronic records. The sender's personal email, provider identifier, exact subject and private attachment filenames are withheld from the current tree.
 
 ---
 
@@ -81,8 +81,8 @@ Sin perjuicio del criterio del Ministerio Fiscal, considero especialmente útile
 
 Adjunto dos gráficos de trazabilidad ya utilizados en otras comunicaciones institucionales:
 
-— san-telmo-ricpe-sun-park-stamp-v1-ES.png  
-— pwc-five-actors-plus-ac-2016-knowledge-checkpoint-ES.png
+— `VISUAL-SOURCE-INDEX-B`<br>
+— `VISUAL-SOURCE-INDEX-A`
 
 Se aportan únicamente como índices visuales para localizar fuentes y relaciones documentales. No sustituyen a los documentos primarios ni prueban por sí mismos coordinación, transmisión de información, responsabilidad profesional o responsabilidad penal.
 
@@ -116,4 +116,4 @@ Atentamente,
 
 Gil Marer  
 Aweswell Limited  
-`sbu001@monterecco.com`
+`[DATO DE CONTACTO PERSONAL OMITIDO]`

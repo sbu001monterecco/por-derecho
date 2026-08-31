@@ -57,17 +57,17 @@ Where this scan conflicts with an older shorthand, the stronger current source a
 
 Hashes below are working SHA-256 fingerprints of the exact connector-fetched binaries reviewed in this pass. They identify the reviewed copy; they do not prove authorship, truth or filing unless the document itself supplies that status.
 
-| Stable scan ID | Source | Connector locator | Size | SHA-256 | Class / use |
+| Stable scan ID | Source | Public-safe custody reference | Size | SHA-256 | Class / use |
 |---|---|---|---:|---|---|
-| `GC-01` | `Escritura cancelación ob-rem y venta de locales P.1760-19 28NOV2018.pdf` | Drive `1Qs3RGMBAdc6lpfkNcyx-AuRVGqJQowC7` | 17,445,555 | `1ab0fca1692eb202dd0b439a165e56785550d7bc320c947d5953a32f0fc8c9c5` | Class 1/3 mixed court filing + notarial deed package |
-| `GC-02` | `18. Informe Trimestral 4 AC - pagina 6 venta de locales 20DIC2018.pdf` | Drive `1YKfYMfO-UkK1nX1KqFwAzZ80ShH8sfay` | 366,944 | `55c43dea3c9f5e0ee0e506e840257963a9759f6942f04cf04dce9452a9664a0d` | Class 2/official concursal professional filing; receipt/application evidence |
-| `GC-03` | signed 18-May-2021 Auto, `APROBACION DEFINITIVA...18MAY2021` | Drive `1SpJkBz23fl-Z6yKbbsIhixsKPrQNXqAc` | 300,264 | `093092dd10764ef995d9a2851d4b4e5c8911d245a212927d1db4bdfcc326abf7` | Class 1 judicial act |
-| `GC-04` | signed 15-Oct-2021 Auto resolving reposiciones against 18-May | Drive `1gB3Q737pIX3tD62VituvM8I67zKjvJ2k` | 536,725 | `1961b8c30889fc93dabc355762cb28fcffc6982761eab51dc80bee5947be48ca` | Class 1 judicial act |
-| `GC-05` | LAJ Diligencia 27-Oct-2021 re AC quarterly report 7425/2021 | Drive `1F7LgdXaNt0bOJrEskrfnHFv4PyHKvEjm` | 887,970 | `607555b13c2e815395ec3064adc270d70919057ebb82950b3673066910655543` | Class 1 LAJ act |
-| `GC-06` | AP Las Palmas Sentencia 89/2014, Rollo 793/2012, JV 1260/2011 appeal | Drive `1hnZxJUl4jwDCsaM59cAH775YGJCT4fCM` | 191,406 | `1bce9ad6111645393ee2f23915b7df05a9a879181f2c19fad83f6b3e8989c1ec` | Class 1 adverse judicial merits source; earlier `16/2014` / `570/2012` description corrected |
-| `GC-07` | `DECLARACION ADMINISTRADOR CONCURSAL.pdf`, 31-Jul-2018 DP 1132 | Gmail message `164f19a593ef3016` attachment | 6,067,519 | `37db481420e0c4fb5ed2b30b4a5b093ca0f03dbee6c4b47998194fdeae8b2447` | Class 1 court act / sworn or recorded procedural statement |
-| `GC-08` | Fiscalía Calificación report 12-Mar-2019 | Drive `1ybK3F0oS9xRtMC7uFRAk0Zl8qr-nhxEN` | 183,598 | `e3e53d1d07bc50d488fc7aedbc37d247a9e78162132e9b35325748bd78267045` | Class 1 prosecutor filing |
-| `GC-09` | preliminary-proceedings order re Promontoria→CAM deed | Drive `1kQw_zRH9Ot7jMonYYDg8ZKEnUgMD1-np` | 85,490 | `79488f287b30fc770f33c260c87e9574e623709abbbd3def44c3286b70daac47` | Class 1 judicial disclosure order |
+| `GC-01` | AC filing and Protocol 2.150 deed package, 28-Nov-2018 | `MF-GAP-SRC-GC01` | 17,445,555 | `1ab0fca1692eb202dd0b439a165e56785550d7bc320c947d5953a32f0fc8c9c5` | Class 1/3 mixed court filing + notarial deed package |
+| `GC-02` | AC fourth quarterly liquidation report, 20-Dec-2018 | `MF-GAP-SRC-GC02` | 366,944 | `55c43dea3c9f5e0ee0e506e840257963a9759f6942f04cf04dce9452a9664a0d` | Class 2/official concursal professional filing; receipt/application evidence |
+| `GC-03` | signed 18-May-2021 Auto | `MF-GAP-SRC-GC03` | 300,264 | `093092dd10764ef995d9a2851d4b4e5c8911d245a212927d1db4bdfcc326abf7` | Class 1 judicial act |
+| `GC-04` | signed 15-Oct-2021 Auto resolving reposiciones against 18-May | `MF-GAP-SRC-GC04` | 536,725 | `1961b8c30889fc93dabc355762cb28fcffc6982761eab51dc80bee5947be48ca` | Class 1 judicial act |
+| `GC-05` | LAJ Diligencia 27-Oct-2021 re AC quarterly report 7425/2021 | `MF-GAP-SRC-GC05` | 887,970 | `607555b13c2e815395ec3064adc270d70919057ebb82950b3673066910655543` | Class 1 LAJ act |
+| `GC-06` | AP Las Palmas Sentencia 89/2014, Rollo 793/2012, JV 1260/2011 appeal | `MF-GAP-SRC-GC06` | 191,406 | `1bce9ad6111645393ee2f23915b7df05a9a879181f2c19fad83f6b3e8989c1ec` | Class 1 adverse judicial merits source; earlier `16/2014` / `570/2012` description corrected |
+| `GC-07` | AC declaration in DP 1132, 31-Jul-2018 | `MF-GAP-SRC-GC07` | 6,067,519 | `37db481420e0c4fb5ed2b30b4a5b093ca0f03dbee6c4b47998194fdeae8b2447` | Class 1 court act / sworn or recorded procedural statement |
+| `GC-08` | Fiscalía Calificación report, 12-Mar-2019 | `MF-GAP-SRC-GC08` | 183,598 | `e3e53d1d07bc50d488fc7aedbc37d247a9e78162132e9b35325748bd78267045` | Class 1 prosecutor filing |
+| `GC-09` | preliminary-proceedings order re Promontoria→CAM deed | `MF-GAP-SRC-GC09` | 85,490 | `79488f287b30fc770f33c260c87e9574e623709abbbd3def44c3286b70daac47` | Class 1 judicial disclosure order |
 | `GC-10` | DI 248 Fiscalía archive scan | connected file/library working copy | 2,229,667 | `5400f0f8dbc91d85e08b9dbf1f39def84277ddb4f4d5bd9f063643c2d60a6b28` | official scanned source; native signature/docket copy still preferred |
 | `GC-11` | DP 1132 Auto 2-May-2018 | connected file/library working copy | 87,293 | `f6f68210af9ef9d79b26c7cd380bd3e0e23f823320710affdb8fc38caba2e2e4` | Class 1 judicial procedural anchor |
 | `GC-12` | DP 1132 1-Aug-2018 package | connected file/library working copy | 785,297 | `f4119b361949004cfa9558ef5817f61c9954495fb6eb2dc5fcc359fcb1ffc104` | Class 1/3 mixed procedural package |

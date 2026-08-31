@@ -6,9 +6,9 @@ This compact source index exists so the exact current procedural status of the a
 
 | Date | Source | What it establishes |
 |---|---|---|
-| 16-Sep-2025 | Gmail `1995278022ce027a`, Javier Sixto, `[MARER, GIL] Solicitud información Calificación: AP` | calificación file located in the Audiencia Provincial; information request filed; attachment naming includes `2025_0002523_RPL` |
-| 15-Oct-2025 | Gmail `199e6fa989419f60`, Javier Sixto | expressly identifies `SECCION CUARTA DE LA AUDIENCIA PROVINCIAL - RECURSO DE APELACIÓN - 2523/2025` |
-| 13-May-2026 | Gmail `19e20833780604d3`, Javier Sixto | states providencia fixed deliberation and judgment for **4-Jun-2026** |
+| 16-Sep-2025 | Private Javier Sixto email, `MF-CAL-AP-SRC-01`; exact subject, filename and mailbox locator withheld | calificación file located in the Audiencia Provincial; information request filed; the controlled attachment label includes the official reference `2025_0002523_RPL` |
+| 15-Oct-2025 | Private Javier Sixto email, `MF-CAL-AP-SRC-02`; exact mailbox locator withheld | expressly identifies `SECCION CUARTA DE LA AUDIENCIA PROVINCIAL - RECURSO DE APELACIÓN - 2523/2025` |
+| 13-May-2026 | Private Javier Sixto email, `MF-CAL-AP-SRC-03`; exact mailbox locator withheld | states providencia fixed deliberation and judgment for **4-Jun-2026** |
 | 16-Aug-2026 search cut-off | targeted Gmail searches for `2523/2025` + judgment/resolution/fallo terms and post-May Sixto correspondence | no appellate judgment or terminating resolution for RPL 2523/2025 located in the controlled mailbox |
 
 ## Current controlled status

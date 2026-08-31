@@ -9,7 +9,7 @@
 | LPB/Gil/PINK opposition pleadings | controlled source family | distinguish pleaded defence from live proof/testimony |
 | Sentencia 163/2023 | verified primary source | map accepted/rejected/narrowed findings to actual Vista record |
 | Gil/PINK appeal materials | Drive/repository source family; includes nullity/effective-defence challenge relating to 25-Jul-2023 Vista | identify omitted/contested evidence and appellate significance |
-| David Espejo expert-report family | Drive: `Calificación JT - documento cinco (pericial de Espejo valor razonable LPB).pdf`, `Pericial - Nota Económica derechos contra la CEXP 11JUN2018.pdf` and aliases | compare exact expert testimony with written methodology/figures |
+| David Espejo expert-report family | controlled expert-report sources `MF-CAL-VISTA-SRC-02` and `MF-CAL-VISTA-SRC-03`, plus source-family aliases | compare exact expert testimony with written methodology/figures |
 | Jonathan Simó 2012/2016 accounting reports | repository/Drive source family recovered 17-Aug-2026 | compare actual 2023 recollection/testimony with contemporaneous professional work |
 | 10-Jun-2016 PwC / Simó / Cristo recorded meeting | canonical separate evidence family; date corrected from later 11-Jun derivative labels to 10-Jun based on contemporaneous source chain | compare only after both passages are accurately transcribed; no contradiction by expectation |
 | `TESTIGOS Y PREGUNTAS CALIFICACION` | pre-hearing preparation/question source | witness-order/role lead only; never substitute prepared questions for testimony |

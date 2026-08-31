@@ -99,15 +99,6 @@ CURRENT_ORGAN = "Sección de Instrucción del Tribunal de Instancia de Arrecife 
 ES_ROUTE = "/es/dp-3205-2014-arrecife/"
 EN_ROUTE = "/en/dp-3205-2014-arrecife/"
 PUBLIC_BASE = "https://sbu001monterecco.github.io/por-derecho"
-EXPECTED_COUNTS = {
-    "total": 240,
-    "PERSON": 102,
-    "ORGANISATION": 79,
-    "STRUCTURE": 11,
-    "INSTITUTION": 25,
-    "PROCEEDING": 23,
-}
-
 failures: list[str] = []
 
 
@@ -1223,9 +1214,17 @@ for marker in (
     includes(deletion_audit, marker, relative(DELETION_AUDIT))
 
 
-# The federated registry denominator must agree with the static bilingual presentation.
+# The current federated registry, bilingual registry pages and current unitary
+# state must reconcile exactly to the declared append-only part counts.  The
+# DP 3205 publication's dated release evidence remains controlled separately by
+# its immutable manifest, deletion audit and exact publication hashes above.
 registry = read_json(REGISTRY)
-require(registry.get("counts") == EXPECTED_COUNTS, "canonical registry counts are not 240/95/79/11/23/23")
+registry_counts = registry.get("counts", {}) if isinstance(registry, dict) else {}
+registry_types = ("PERSON", "ORGANISATION", "STRUCTURE", "INSTITUTION", "PROCEEDING")
+require(
+    set(registry_counts) == {"total", *registry_types},
+    "canonical registry count schema is incomplete or contains an unexpected class",
+)
 parts = registry.get("parts", []) if isinstance(registry, dict) else []
 part_index = {item.get("path"): item for item in parts if isinstance(item, dict)}
 for path_name, expected_type in (
@@ -1252,19 +1251,28 @@ for part in parts:
     require(len(records) == part.get("count"), f"registry part {part['path']} declared count is stale")
     actual_total += len(records)
     actual_counts[str(part.get("type"))] += len(records)
-require(actual_total == EXPECTED_COUNTS["total"], "federated registry actual total is not 240")
-for record_type in ("PERSON", "ORGANISATION", "STRUCTURE", "INSTITUTION", "PROCEEDING"):
-    require(actual_counts[record_type] == EXPECTED_COUNTS[record_type], f"federated registry actual {record_type} count is stale")
+require(
+    actual_total == registry_counts.get("total"),
+    "federated registry actual total does not match the canonical declared total",
+)
+for record_type in registry_types:
+    require(
+        actual_counts[record_type] == registry_counts.get(record_type),
+        f"federated registry actual {record_type} count does not match its canonical declaration",
+    )
 
+current_marker = "-".join(str(registry_counts[key]) for key in ("total", *registry_types))
 for page in (REGISTRY_EN, REGISTRY_ES):
-    includes(read_text(page), 'data-static-registry-counts="240-102-79-11-25-23"', relative(page))
+    includes(read_text(page), f'data-static-registry-counts="{current_marker}"', relative(page))
 
 registry_en = read_text(REGISTRY_EN)
 registry_es = read_text(REGISTRY_ES)
-includes(registry_en, '"dateModified":"2026-08-30"', relative(REGISTRY_EN))
-includes(registry_en, "30 AUGUST 2026", relative(REGISTRY_EN))
-includes(registry_es, '"dateModified":"2026-08-30"', relative(REGISTRY_ES))
-includes(registry_es, "30 AGOSTO 2026", relative(REGISTRY_ES))
+registry_control_date = registry.get("control_date") if isinstance(registry, dict) else None
+require(registry_control_date == "2026-08-31", "canonical current registry control date is stale")
+includes(registry_en, f'"dateModified":"{registry_control_date}"', relative(REGISTRY_EN))
+includes(registry_en, "31 AUGUST 2026", relative(REGISTRY_EN))
+includes(registry_es, f'"dateModified":"{registry_control_date}"', relative(REGISTRY_ES))
+includes(registry_es, "31 AGOSTO 2026", relative(REGISTRY_ES))
 
 current_unitary_state = read_json(CURRENT_UNITARY_STATE)
 identity_registry_state = (
@@ -1273,12 +1281,12 @@ identity_registry_state = (
     else {}
 )
 require(
-    identity_registry_state.get("control_date") == "2026-08-30",
-    "CURRENT_UNITARY_STATE identity-registry control date is stale",
+    identity_registry_state.get("control_date") == registry_control_date,
+    "CURRENT_UNITARY_STATE identity-registry control date diverges from the canonical registry",
 )
 require(
-    identity_registry_state.get("counts") == EXPECTED_COUNTS,
-    "CURRENT_UNITARY_STATE identity-registry counts are inconsistent",
+    identity_registry_state.get("counts") == registry_counts,
+    "CURRENT_UNITARY_STATE identity-registry counts diverge from the canonical registry",
 )
 
 

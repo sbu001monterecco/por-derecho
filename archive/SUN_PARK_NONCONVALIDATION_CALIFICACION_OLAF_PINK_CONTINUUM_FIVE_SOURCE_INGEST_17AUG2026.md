@@ -42,15 +42,15 @@ Where a stronger signed/certified primary source or later correction conflicts w
 
 | ID | Supplied source | Pages | SHA-256 of supplied PDF | Evidential status / controlling use |
 |---|---|---:|---|---|
-| FS-01 | `ESCRITO DE AMPLIACION DE DENUNCIA PENAL (PCS) 27ENE2026.pdf` | 4 | `1166c02609bc82c6f28e3b1092db41a054eb504d2924776a05efd7d408b60cf6` | **PARTY CRIMINAL PLEADING.** Proves the pleaded continuum/Pink contradiction and requests for investigation; does not prove the alleged criminal design, estafa procesal, continuity for limitation purposes or actor intent. |
-| FS-02 | `05_ANEXO_TRAZABILIDAD_NO_CONVALIDACION_LICITACION_2018_2021(1).pdf` | 30 | `d16d07fd259ac6da86b7a9177d9f77ea416e9f301fad6faa4e04d9d3e7aa53d3` | **PARTY-AUTHORED EVIDENTIAL ANNEX CONTAINING PRIMARY RECORDS.** The annex's framing is not itself a finding; the reproduced signed court/registry records are stronger primary anchors. **Custody warning:** this supplied/backup binary is not the exact file fingerprinted on the 28-Jul-2026 REGAGE receipt; see §3. |
-| FS-03 | `1. OLAF y Ministerio Justicia - Comunicacion de alerta pertinente a alegaciones de fraude y corrupcion 7ENE2025.pdf` | 7 | `10627995f9afc51e5d84985253124a350da0ff51e9ff5e0f3b32d4e1e1c9d06a` | **PARTY ALERT / NOTICE TO INSTITUTIONS.** Proves that the alleged multiple-funding/public-funds theory had been articulated by 7-Jan-2025. It does not prove asset-specific use of FTI/Meeting Point rescue funds, double payment, subsidy fraud, laundering or criminal intent. |
-| FS-04 | `16. Escrito Oposición Informe Calificación GM - 06JUN2019.pdf` | 64 | `886c43942d0435e65dfc2042430b75a4ca4a47dca29bf9ecd2cb69a5afbb1255` | **PARTY CALIFICACIÓN OPPOSITION.** Corresponds in title/date/page structure and substantive architecture to canonical source P3, `27. Demanda Oposición Calificación GM - 06JUN2019.pdf`, but is **not byte-identical** to the controlled Drive binary; do not count the two PDFs as independent corroboration. |
-| FS-05 | `20190116 Denuncia y Oposicion Plan Liquidacion Incumplimiento.pdf` | 9 | `fde56be1cb8d95adac76162ca210de457d95cc6c69fb449c5745ad7fc122bb0c` | **CONTEMPORANEOUS PARTY PLEADING / COURT-FACING NOTICE.** High value for what was expressly objected to in Jan-2019 and why; not proof that every allegation about possession, concealment, nullity or criminal significance was true. |
+| FS-01 | 27-Jan-2026 criminal-complaint expansion (exact private filename withheld) | 4 | `1166c02609bc82c6f28e3b1092db41a054eb504d2924776a05efd7d408b60cf6` | **PARTY CRIMINAL PLEADING.** Proves the pleaded continuum/Pink contradiction and requests for investigation; does not prove the alleged criminal design, estafa procesal, continuity for limitation purposes or actor intent. |
+| FS-02 | 2018–2021 non-convalidation/licitación traceability annex, backup copy (exact private filename withheld) | 30 | `d16d07fd259ac6da86b7a9177d9f77ea416e9f301fad6faa4e04d9d3e7aa53d3` | **PARTY-AUTHORED EVIDENTIAL ANNEX CONTAINING PRIMARY RECORDS.** The annex's framing is not itself a finding; the reproduced signed court/registry records are stronger primary anchors. **Custody warning:** this supplied/backup binary is not the exact file fingerprinted on the 28-Jul-2026 REGAGE receipt; see §3. |
+| FS-03 | 7-Jan-2025 OLAF/Justice alert (exact private filename withheld) | 7 | `10627995f9afc51e5d84985253124a350da0ff51e9ff5e0f3b32d4e1e1c9d06a` | **PARTY ALERT / NOTICE TO INSTITUTIONS.** Proves that the alleged multiple-funding/public-funds theory had been articulated by 7-Jan-2025. It does not prove asset-specific use of FTI/Meeting Point rescue funds, double payment, subsidy fraud, laundering or criminal intent. |
+| FS-04 | 6-Jun-2019 Gil calificación opposition, alternate copy (exact private filename withheld) | 64 | `886c43942d0435e65dfc2042430b75a4ca4a47dca29bf9ecd2cb69a5afbb1255` | **PARTY CALIFICACIÓN OPPOSITION.** Corresponds in date/page structure and substantive architecture to canonical source `MF-CAL-SRC-P3`, but is **not byte-identical** to the controlled Drive binary; do not count the two PDFs as independent corroboration. |
+| FS-05 | 16-Jan-2019 liquidation-plan objection (exact private filename withheld) | 9 | `fde56be1cb8d95adac76162ca210de457d95cc6c69fb449c5745ad7fc122bb0c` | **CONTEMPORANEOUS PARTY PLEADING / COURT-FACING NOTICE.** High value for what was expressly objected to in Jan-2019 and why; not proof that every allegation about possession, concealment, nullity or criminal significance was true. |
 
 ### Canonical P3 comparison
 
-The current Drive source `27. Demanda Oposición Calificación GM - 06JUN2019.pdf` is 64 pages and has SHA-256:
+The current controlled Drive source `MF-CAL-SRC-P3` is 64 pages and has SHA-256:
 
 `f442b6856ee73e2413d1877127456638eb5bbd4b577eb884621bb034802a9815`
 
@@ -64,7 +64,7 @@ This is the highest-value source-integrity finding from the 17-Aug ingest.
 
 The official presentation receipt for `REGAGE26e00069061338` records five files and fingerprints the fifth as:
 
-`05_ANEXO_TRAZABILIDAD_NO_CONVALIDACION_LICITACION_2018_2021.pdf`
+the exact fifth-file label (withheld from public Git)
 
 using **SHA-512**:
 
@@ -78,7 +78,7 @@ Those fingerprints **do not match**.
 
 Connected-source chronology explains why this is plausible rather than anomalous:
 
-- 19:53–20:31 local time: the backup thread contained `05_ANEXO...2018_2021(1).pdf`, 4,785,767 bytes;
+- 19:53–20:31 local time: the backup thread contained the FS-02 copy, 4,785,767 bytes;
 - 21:31: a later self-email says **`fixed annex`** and attaches a substantially enlarged consolidated annex PDF;
 - 23:42:54–23:42:57: the official REGAGE receipt records the final five-file presentation and the distinct SHA-512 fingerprint above;
 - 22:44 local email backup records `Filed` with the official REGAGE receipt.
@@ -86,7 +86,7 @@ Connected-source chronology explains why this is plausible rather than anomalous
 ### Controlling custody conclusion
 
 **VERIFIED:** the 28-Jul package was filed and the receipt identifies a fifth traceability annex by name and SHA-512.  
-**VERIFIED:** the supplied FS-02 is the same binary as the earlier backup/Drive copy bearing `(1)` in its filename.  
+**VERIFIED:** the supplied FS-02 is the same binary as the earlier backup/Drive copy carrying a copy suffix in its private filename.
 **VERIFIED:** FS-02 is **not byte-identical to the fifth file fingerprinted on the official filing receipt**.  
 **OPEN:** the exact final filed fifth PDF binary is not presently recovered in this ingest.  
 **DO NOT:** cite FS-02's hash as the filed-file hash, or treat any wording difference between FS-02 and an unrecovered final binary as proved until the final binary is recovered and diffed.

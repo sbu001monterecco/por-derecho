@@ -15,6 +15,7 @@ Read first:
 7. `FISCALIA_INSPECCION_EG_745_2026_DIGITISATION_APPEAL_PACKAGE_29AUG2026.md`;
 8. the E.G. 745 transcription, English translation, metadata, annex/evidence-gap matrix, action diary, counter-action matrix, reposición draft and protective access/preservation draft;
 9. the current Ministerio Fiscal institutional clean-room pages, RPL 2523 evidence maps, calificación-use thesis, Master Proceedings Register and Case Prism/isolated-proceeding controls.
+10. `evidence/fiscalia/2026/MF_MAILBOX_REGAGE_CONTROL_31AUG2026.md`, `assets/data/institutional-communications-register-v1.json`, `assets/data/institutional-communications-mailbox-index-v1.json`, `evidence/fiscalia/2026/MF_SOURCE_ARTIFACT_REGISTER_31AUG2026.csv` and `ops/INSTITUTIONAL_COMMUNICATIONS_SCAN_CHECKPOINT.json`.
 
 Then reconcile the actual current `main` SHA and latest Pages deployment before making any publication-state claim.
 
@@ -40,7 +41,9 @@ Treat the following as controlling source facts unless contradicted by newer pri
 - expressly named proceedings: DI 248/2018, DI 113/2022, DI 22/2026, DIP 2/2026, EG 49/2026 and DP 1901/2026;
 - request that Inspection reconstruct actor-by-actor functional attribution from institution-held records.
 
-Do not assume byte identity between the exact 2 August registered attachment and the related 31 July signed master until exact bytes are obtained and verified.
+Preserve the completed source-identity closure: the receipt SHA-512 and recomputed SHA-512 for the signed 31-July master match exactly, so those controlled binaries are byte-identical. This does not prove that the later reposición was filed.
+
+Also preserve the corrected primary-source state: the signed DI 113/2022 8-Feb-2023 archive and 23-Feb-2026 copy decision are located; the signed DI 22/2026 11-Feb archive and 13/16/19-Feb and 2/3-Mar decision sequence are located. Remaining gaps concern file completeness, source/diligence inventories, remittal proof, later personal attribution and treatment—not the existence of those acts.
 
 ## 4. Build a complete mistake / omission / misclassification analysis
 
@@ -95,11 +98,17 @@ Do **not** infer coordination, common intent, criminality, prevarication or obst
 
 ## 6. Reverse-engineer the institutional knowledge chain
 
-Create a date-stamped matrix showing, for each material point:
+Maintain the date-stamped matrix showing, for each material point:
 
 **date → source delivered → office/unit → proceeding → known recipient/routing → material proposition → decision/action → later reuse/omission → evidential consequence**.
 
 The purpose is to identify what the institution demonstrably knew or had been sent at each date, without attributing personal knowledge to an individual merely because the institution possessed a document.
+
+Do not rebuild the mailbox denominator from scratch in every thread. Read the completed scan checkpoint, query only its seven-day overlap-to-present window, require pagination completion before advancing it, and reconcile by stable public communication/artifact IDs against the private locator manifest. A changed office/query scope triggers a bounded baseline for that scope only. Keep transport, formal registration, file association and merits response as separate states.
+
+The controlled baseline is **296 public event rows**: 75 detailed REG-AGE receipts, all 156 located mailbox transports and 65 separate source-proved receipt/act/notice/correspondence events. The mailbox split is 101 inbound, 42 outbound, ten self-archive and three draft events. The access-controlled private locator manifest contains 231 rows and is persisted outside public Git under opaque custody reference `PD-SP-CUST-0001`, fixed by aggregate SHA-256 `bdd12a8fa62b5058525e1c37053fb7899ac24a60d12ff48ab8b74bda617cd6f6`. Provider/storage locators must never be copied into public Git.
+
+The public denominator remains **75 independently enumerated registrations plus 22 aggregate-only items** from the later reported total of 97. Do not claim 97/97 independent registration until the 22 source rows are recovered.
 
 ## 7. Action architecture
 
@@ -127,7 +136,7 @@ Keep separate tracks for:
 4. native/verifiable Decree;
 5. preservation;
 6. actor-by-actor functional routing identification;
-7. exact 2 August source-byte fixing;
+7. preservation of the closed exact 2 August source-byte identity;
 8. source-to-Decree correction/clarification;
 9. Supreme Court preparation;
 10. superior-FGE/supervisory route;
@@ -140,7 +149,7 @@ Keep separate tracks for:
 
 Do not let the wider investigation obscure these immediate E.G. 745 gates:
 
-1. exact 2 August registered attachment identity;
+1. exact 2 August registered attachment identity — **CLOSED by SHA-512 match; preserve the closure**;
 2. legally effective notification mechanics/date;
 3. merits-route election.
 

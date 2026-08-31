@@ -1,0 +1,51 @@
+name: Validate institutional communications continuity
+
+on:
+  pull_request:
+    paths:
+      - 'assets/data/institutional-communications-register-v1.json'
+      - 'assets/data/institutional-communications-mailbox-index-v1.json'
+      - 'ops/INSTITUTIONAL_COMMUNICATIONS_SCAN_CHECKPOINT.json'
+      - 'archive/evidence/mf-redsara-anexo4/MF_REDSARA_REGISTRATION_INDEX_SHORT.csv'
+      - 'assets/data/matter-identity-registry-v1.people.json'
+      - '.github/evidence-intelligence/id-extension-policy.json'
+      - '.github/evidence-intelligence/schemas/institutional-communications.schema.json'
+      - 'scripts/reconcile_institutional_communications.py'
+      - 'scripts/build_public_mailbox_event_index.py'
+      - 'scripts/validate_institutional_communications.py'
+      - 'scripts/test_reconcile_institutional_communications.py'
+      - '.github/workflows/validate-institutional-communications.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'assets/data/institutional-communications-register-v1.json'
+      - 'assets/data/institutional-communications-mailbox-index-v1.json'
+      - 'ops/INSTITUTIONAL_COMMUNICATIONS_SCAN_CHECKPOINT.json'
+      - 'archive/evidence/mf-redsara-anexo4/MF_REDSARA_REGISTRATION_INDEX_SHORT.csv'
+      - 'assets/data/matter-identity-registry-v1.people.json'
+      - '.github/evidence-intelligence/id-extension-policy.json'
+      - '.github/evidence-intelligence/schemas/institutional-communications.schema.json'
+      - 'scripts/reconcile_institutional_communications.py'
+      - 'scripts/build_public_mailbox_event_index.py'
+      - 'scripts/validate_institutional_communications.py'
+      - 'scripts/test_reconcile_institutional_communications.py'
+      - '.github/workflows/validate-institutional-communications.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v4
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v5
+        with:
+          python-version: '3.12'
+      - name: Check deterministic reconciliation
+        run: python scripts/reconcile_institutional_communications.py --check
+      - name: Validate register, checkpoint, IDs and privacy boundary
+        run: python scripts/validate_institutional_communications.py
+      - name: Run reconciliation regression tests
+        run: python -m unittest -v scripts/test_reconcile_institutional_communications.py

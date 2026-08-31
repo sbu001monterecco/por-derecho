@@ -45,8 +45,22 @@ for alias in ("Diligencias Indeterminadas 1103/2018-00", "DP 1132/2018", "Rollo 
     require(alias in aliases, f"CAEPR alias missing: {alias}")
 require("does not prove" in family.get("identity_boundary", ""), "CAEPR merits boundary missing")
 identity_index = json.loads((ROOT / "assets/data/matter-identity-registry-v1.json").read_text(encoding="utf-8"))
-require(identity_index.get("counts", {}).get("PROCEEDING") == 23, "CAEPR proceeding denominator not advanced to 23")
-require(identity_index.get("counts", {}).get("total") == 240, "CAEPR total denominator not advanced to 240")
+declared_counts = identity_index.get("counts", {})
+actual_total = 0
+actual_proceedings = 0
+for part in identity_index.get("parts", []):
+    part_path = ROOT / "assets/data" / str(part.get("path", ""))
+    require(part_path.is_file(), f"CAEPR part missing: {part.get('path')}")
+    if not part_path.is_file():
+        continue
+    part_data = json.loads(part_path.read_text(encoding="utf-8"))
+    records = part_data.get("records", [])
+    require(len(records) == part.get("count"), f"CAEPR part count stale: {part.get('path')}")
+    actual_total += len(records)
+    if part.get("type") == "PROCEEDING":
+        actual_proceedings += len(records)
+require(declared_counts.get("PROCEEDING") == actual_proceedings, "CAEPR proceeding denominator does not reconcile to proceeding parts")
+require(declared_counts.get("total") == actual_total, "CAEPR total denominator does not reconcile to all parts")
 ops = json.loads((ROOT / "assets/data/matter-identity-operational-control-v1.json").read_text(encoding="utf-8"))
 require(any(item.get("id") == "PD-SP-R-0023" for item in ops.get("proceeding_identity_corrections", [])), "CAEPR operational correction missing")
 

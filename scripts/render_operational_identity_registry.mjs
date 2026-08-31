@@ -11,6 +11,28 @@ await fs.mkdir(outputDir, { recursive: true });
 const registryIndex = JSON.parse(await fs.readFile('assets/data/matter-identity-registry-v1.json', 'utf8'));
 const expectedTotal = Number(registryIndex?.counts?.total);
 if (!(expectedTotal > 0)) throw new Error('Canonical registry does not expose a positive counts.total');
+const registryParts = Array.isArray(registryIndex?.parts) ? registryIndex.parts : [];
+if (!registryParts.length) throw new Error('Canonical registry does not expose its part manifest');
+const registryRecords = (
+  await Promise.all(
+    registryParts.map(async part => {
+      const shard = JSON.parse(await fs.readFile(path.join('assets/data', part.path), 'utf8'));
+      if (!Array.isArray(shard.records)) throw new Error(`Registry shard ${part.path} has no records array`);
+      if (shard.records.length !== Number(part.count)) {
+        throw new Error(`Registry shard ${part.path} declares ${part.count} records but contains ${shard.records.length}`);
+      }
+      return shard.records;
+    })
+  )
+).flat();
+if (registryRecords.length !== expectedTotal) {
+  throw new Error(`Registry shards contain ${registryRecords.length} identities, expected ${expectedTotal}`);
+}
+const expectedUnresolved = registryRecords.filter(record => {
+  const resolutionKey = record.identity_resolution || record.status || 'CANONICAL';
+  return !['CANONICAL', 'CARET_CONFIRMED'].includes(resolutionKey);
+}).length;
+if (!(expectedUnresolved > 0)) throw new Error('Canonical registry exposes no unresolved identity records');
 
 const cases = [
   {
@@ -78,11 +100,15 @@ try {
         if (!(value > 0)) throw new Error(`${url}: ${queue} queue is empty`);
         queueCounts[queue] = value;
       }
-      if (queueCounts.unresolved !== 17) throw new Error(`${url}: expected 17 unresolved identities, found ${queueCounts.unresolved}`);
+      if (queueCounts.unresolved !== expectedUnresolved) {
+        throw new Error(`${url}: expected ${expectedUnresolved} unresolved identities, found ${queueCounts.unresolved}`);
+      }
 
       await page.locator('[data-operational-filter="UNRESOLVED"]').click();
       const unresolvedRows = await page.locator('tbody[data-registry-body] tr[data-identity-id]').count();
-      if (unresolvedRows !== 17) throw new Error(`${url}: unresolved filter rendered ${unresolvedRows}, expected 17`);
+      if (unresolvedRows !== expectedUnresolved) {
+        throw new Error(`${url}: unresolved filter rendered ${unresolvedRows}, expected ${expectedUnresolved}`);
+      }
 
       await page.locator('[data-operational-filter="P0"]').click();
       const p0Rows = await page.locator('tbody[data-registry-body] tr[data-identity-id]').count();

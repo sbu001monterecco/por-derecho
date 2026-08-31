@@ -54,9 +54,9 @@ The 2016 reports and recorded meeting are especially valuable because they pre-d
 
 The March–April 2019 evidence-preparation chain is unusually important because it documents active assembly of the underlying accounting/delivery record for the Calificación defence:
 
-- **19-Mar-2019:** Aweswell sends Cuatrecasas a reconstructed 2012 AC-delivery package, including `Docs entregados AC 2012.zip` and material identifying what had been supplied.
+- **19-Mar-2019:** Aweswell sends Cuatrecasas a reconstructed 2012 AC-delivery package (`SP-PRV-LCTR-GM-1D872A71CCF3705286D6`) and material identifying what had been supplied; the exact private attachment filename is withheld.
 - **15-Apr-2019:** Aweswell sends Juan Tomás Parrilla the response to the AC Calificación report and says the supporting documentation will follow through Dropbox.
-- **22-Apr-2019:** `Documentación soporte - también copiada en dropbox` attaches, among other items, `Emails Req Docs AC.zip`, `Emails Contabilidad .zip`, July-2012 LPB document-transmission emails, a document expressly titled `Gmail - Relación de Documentos Solicitados - Concurso LPB - Libros contables.pdf`, `Gmail - Documentación de Luchy - libros contables 15Feb2012.pdf`, `CERTIFICADO LITERAL CUENTAS.pdf` and other accounting/banking material.
+- **22-Apr-2019:** the controlled supporting-document transmission attaches, among other items, two email-export bundles, July-2012 LPB document-transmission emails, two accounting-book transmission records, a literal-accounts certificate and other accounting/banking material. Exact private subject and attachment filenames are withheld.
 - Juan Tomás Parrilla then circulates near-final opposition packs with numbered exhibits.
 
 This is direct evidence that the defence did not rely only on retrospective oral assertion: it attempted to reconstruct and exhibit the accounting/document-transmission trail itself.
@@ -130,12 +130,14 @@ The report criticises the low valuation used in the liquidation/CAM-offer contex
 
 A particularly valuable native Gmail source is David Espejo’s **21-Nov-2018 `Relación de documentos realizados`** email, which identifies the latest versions of a broader work family and attaches:
 
-- `Nota Económica derechos contra la CEXP Def.1.pdf`;
-- `Análisis valoración del Complejo en el ámbito del plan de liquidación del Concurso 2.pdf`;
-- `Nota Económica Def 2.pdf`;
-- `Análisis de razonabilidad de deuda Def 14.pdf`;
-- `Vinculación Swap Cobertura vs Financiación Caja de Canarias Sun Park - Draft 3.pdf`;
-- additional comparative/investment material (`Eurosic&Clubotel - Informe Completo.pdf`).
+- CEXP economic-note working version;
+- complex-valuation / liquidation-plan analysis;
+- later economic-note working version;
+- debt-reasonableness analysis;
+- swap/financing linkage working paper; and
+- additional comparative/investment material.
+
+Exact private filenames for this source family are withheld; the public-safe custody anchors are `MF-CAL-VISTA-SRC-02` and `MF-CAL-VISTA-SRC-03`.
 
 This contemporaneous inventory demonstrates a continuing forensic/economic engagement covering **Community debt, CEXP rights, liquidation valuation, financing/swap issues and wider project economics**.
 
@@ -172,7 +174,7 @@ On **23-Apr-2019**, Juan Tomás Parrilla writes:
 
 > `He sustituido los dos informes de David Espejo por los firmados.`
 
-He attaches the integrated opposition and numbered exhibit files, including `documento cinco.pdf` and related economic material.
+He attaches the integrated opposition and numbered exhibit files, including the controlled expert-report exhibit and related economic material; the exact private filename is withheld.
 
 This is important because it proves more than mere report existence: **signed Espejo work was deliberately incorporated into the defence evidence package**.
 
@@ -363,7 +365,7 @@ Use primary emails and signed/final reports only. Do not quote 2023 witness test
 - `16-Jul-2012` Borja → Gil/Rafael Franco, cc Jonathan Simó (`SP-PRV-LCTR-GM-2EA10C112045123E1C3F` in current connected retrieval family).
 - `18-Jul-2012` Gil → CLS/Jonathan re AC/auditor supervision (`SP-PRV-LCTR-GM-1F566C1DDABAB790B882`).
 - `11-Dec-2012` `Documentación Sun Park` → Borja, cc Jonathan (`SP-PRV-LCTR-GM-48E46BC8AD15335897D7`).
-- `19-Mar-2019` Aweswell → Cuatrecasas, document-request / `Docs entregados AC 2012.zip` (`SP-PRV-LCTR-GM-1D872A71CCF3705286D6`).
+- `19-Mar-2019` Aweswell → Cuatrecasas, reconstructed AC-delivery package (`SP-PRV-LCTR-GM-1D872A71CCF3705286D6`; exact private filename withheld).
 - `22-Apr-2019` `Documentación soporte - también copiada en dropbox` (`SP-PRV-LCTR-GM-7F9E6338D33250AA4D1B`).
 - `23-Apr-2019` Parrilla: two Espejo reports replaced with signed versions (`SP-PRV-LCTR-GM-2118818281DDBD94055B`).
 - `21-Nov-2018` David Espejo `Relación de documentos realizados` (`SP-PRV-LCTR-GM-9E523B11E03A40FC8977`).
@@ -373,11 +375,11 @@ Use primary emails and signed/final reports only. Do not quote 2023 witness test
 
 ### Google Drive
 
-- `Análisis de la razonabilidad y sentido económico-financiero de la deuda...` source family (`SP-PRV-LCTR-GD-45163FFF04F26A11B545`).
+- debt-reasonableness source family (`SP-PRV-LCTR-GD-45163FFF04F26A11B545`; exact private filename withheld).
 - `Nota Económica` 16-May-2018 (`SP-PRV-LCTR-GD-DD2502BF424FA524F625`).
-- `Razonabilidad de la Valoración del Complejo y el Plan de Liquidación...` 10-May-2018 draft source (`1h__7bAFKihxBw-I2ik3M1Z6NRCeOQXR4`).
-- 2019 opposition source family: `Demanda Oposición Calificación GM - 06JUN2019.pdf`, `JRI - Escrito oposición informe calificación - 06JUN2019.pdf` and Google Docs drafting/final variants.
-- `20231012 Apelacion calificacion GIL.docx` source family.
+- complex-valuation / liquidation-plan 10-May-2018 draft source `MF-CAL-VISTA-SRC-02` (exact private Drive locator and filename withheld).
+- 2019 opposition source family `MF-CAL-SRC-P3`, including private drafting/final variants.
+- Gil appeal source family `MF-CAL-VISTA-SRC-01`.
 - `TESTIGOS Y PREGUNTAS CALIFICACION` — preparation source only, not testimony.
 
 ## 17. Controlling final formulation

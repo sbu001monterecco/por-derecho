@@ -15,11 +15,11 @@ The three source binaries remain private and are not uploaded to the public repo
 
 ## 1. Exact components and fingerprints
 
-| Component | Exact filename | SHA-256 | Size | Duration | Visible court-clock range |
+| Component | Public-safe source label | SHA-256 | Size | Duration | Visible court-clock range |
 |---|---|---|---:|---:|---|
-| VIDEO_01 | `J. Mercantil 1 (Palmas de Gran Canaria (Las))_0000036_2012_VIDEO_01.mkv` | `63a08742ae6925cb347fe25ceb2c6a78e0625a4aa7ec1df71b6b8602f4eb7d4f` | 448,937,678 bytes | 3600.614 s = 60:00.614 | approx. 09:46:53 → 10:46:53 |
-| VIDEO_02 | `J. Mercantil 1 (Palmas de Gran Canaria (Las))_0000036_2012_VIDEO_02.mkv` | `fee31a75c78184e09c07fa4d489028a902233cc340a63faa88a1cd6b94b0f57e` | 231,434,953 bytes | 1916.9895 s = 31:56.99 | approx. 10:46:55 → 11:18:50 |
-| VIDEO_03 | `J. Mercantil 1 (Palmas de Gran Canaria (Las))_0000036_2012_VIDEO_03.mkv` | `8bc5a27768bf61ee520ebcd97f308bdb5f5ed594175cfa032ee98fa7093cdd07` | 192,947,423 bytes | 1500.267375 s = 25:00.27 | approx. 11:58:22 → 12:23:21 |
+| VIDEO_01 | private component 01 (exact filename withheld) | `63a08742ae6925cb347fe25ceb2c6a78e0625a4aa7ec1df71b6b8602f4eb7d4f` | 448,937,678 bytes | 3600.614 s = 60:00.614 | approx. 09:46:53 → 10:46:53 |
+| VIDEO_02 | private component 02 (exact filename withheld) | `fee31a75c78184e09c07fa4d489028a902233cc340a63faa88a1cd6b94b0f57e` | 231,434,953 bytes | 1916.9895 s = 31:56.99 | approx. 10:46:55 → 11:18:50 |
+| VIDEO_03 | private component 03 (exact filename withheld) | `8bc5a27768bf61ee520ebcd97f308bdb5f5ed594175cfa032ee98fa7093cdd07` | 192,947,423 bytes | 1500.267375 s = 25:00.27 | approx. 11:58:22 → 12:23:21 |
 
 All three containers carry H.264 video and AAC audio. VIDEO_01 was independently fingerprinted in two ChatGPT processing threads and the SHA-256, size and duration match exactly.
 

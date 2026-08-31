@@ -24,26 +24,26 @@ Therefore the public Calificación/extraconcursal-force module is not merely an 
 
 ## 2. Evidence custody work actually performed after deployment
 
-Three high-value Google Drive source PDFs were located by exact source-system file ID, raw-exported/materialised in the current execution environment and hashed with SHA-256.
+Three high-value private-custody source PDFs were located, raw-exported/materialised in the current execution environment and hashed with SHA-256. Their provider-native identifiers remain outside public Git.
 
 ### SP18-001
 
-- `7. ACTA CP 18MAY2018 - ENTREGA DE POSESION ACTIVOS LPB.pdf`
-- Drive ID: `19Z0l4iqvtbKl1htIwy2DYy16fOS0sq1D`
+- 18-May-2018 Community meeting minute / LPB-asset possession source (`MF-CAL-FORCE-SRC-01`; exact private filename withheld)
+- public-safe custody reference: `MF-CAL-FORCE-SRC-01`
 - size: `3,164,526 bytes`
 - SHA-256: `a903182722f729e62c009f138af6945be2525021ddfbdbf0809f03331f135d95`
 
 ### SP18-002
 
-- `7. Declaraciones INVESTIGADOS P.1132-2018 COACCIONES - 20JUL2018.pdf`
-- Drive ID: `1KMxa6wIuCjltVuJDaikzUgmA3AM1xjlE`
+- 20-Jul-2018 investigated-person/witness declarations (`MF-CAL-FORCE-SRC-02`; exact private filename withheld)
+- public-safe custody reference: `MF-CAL-FORCE-SRC-02`
 - size: `1,048,931 bytes`
 - SHA-256: `e26bbe7dc1824653431b481f2090ff4bec18d0fea342b2a493b280a40a1f6d64`
 
 ### SP18-003
 
-- `8. Declaracion AC P.1132-2018 COACCIONES - 31JUL2018.pdf`
-- Drive ID: `1zuRaqKwz0TqKSIZh_J9flr6XpcJrOaR-`
+- 31-Jul-2018 AC declaration (`MF-CAL-FORCE-SRC-03`; exact private filename withheld)
+- public-safe custody reference: `MF-CAL-FORCE-SRC-03`
 - size: `3,231,749 bytes`
 - SHA-256: `aaee8e67550dca65d098b5e3f70937598a3e67c51b557a8370ccc667c76040d4`
 
@@ -55,7 +55,7 @@ Canonical custody file:
 
 A user-deliverable ZIP was created containing all three exported PDFs plus a plaintext hash manifest.
 
-- bundle: `SUN_PARK_2018_CONTROL_EVIDENCE_BUNDLE_16AUG2026.zip`
+- bundle: controlled 2018 evidence package (exact private bundle filename withheld)
 - bundle SHA-256: `d8ca4ec7de149db561a59c5da44806657cfb198b90ac9cf7a67b9e40adba8295`
 - plaintext manifest: `SUN_PARK_2018_EVIDENCE_HASH_MANIFEST.txt`
 - manifest SHA-256: `ac512899f02d08fc914ad026e40d1ef3976113fc4e8165e2a9f5971832fc9444`
@@ -68,7 +68,7 @@ Canonical bundle record:
 
 The project may now say:
 
-- exact Drive source IDs are preserved;
+- exact Drive source IDs are preserved only in controlled private custody and are deliberately withheld from public Git;
 - raw/source-system copies of these three files were actually exported in this session;
 - byte sizes were checked;
 - SHA-256 integrity anchors were actually calculated and durably recorded in the repository;
