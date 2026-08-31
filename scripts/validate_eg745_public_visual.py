@@ -133,6 +133,10 @@ def validate_deployment_attestation() -> None:
     attestation = json.loads(DEPLOYMENT_ATTESTATION.read_text(encoding="utf-8"))
 
     require(
+        attestation["current_state"] == "PREPARED_PENDING_MERGE",
+        "attestation manifest must preserve its pre-merge carrier state",
+    )
+    require(
         attestation["attestation_artifact_state_at_creation"] == "PREPARED_PENDING_MERGE",
         "attestation artifact must preserve its non-self-attesting creation state",
     )

@@ -360,5 +360,12 @@
     "archive/EG_745_2026_VISUAL_PUBLICATION_CONTINUITY_AUDIT_31AUG2026.md",
     "archive/EG_745_2026_VISUAL_PUBLICATION_SUPERSEDING_PREMERGE_CONTROL_31AUG2026.md"
   ],
-  "scope_limit": "PR #1275's eventual merge, Pages deployment and live readback must be proved separately after they occur and are not projected into this attestation."
+  "scope_limit": "PR #1275's eventual merge, Pages deployment and live readback must be proved separately after they occur and are not projected into this attestation.",
+  "publication_id": "eg-745-2026-visual-deployment-attestation-20260831",
+  "current_state": "PREPARED_PENDING_MERGE",
+  "owner": "Por Derecho / Project Sun Rock",
+  "expected_routes": {
+    "es": [],
+    "en": []
+  }
 }
