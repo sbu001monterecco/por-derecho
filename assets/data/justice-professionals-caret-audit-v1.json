@@ -1,0 +1,121 @@
+{
+  "schema": "por-derecho.justice-professionals-caret-audit.v1",
+  "control_id": "PD-SP-JUSTICE-PROFESSIONALS-CARET-20260831-01",
+  "control_date": "2026-08-31",
+  "status": "PARTIAL_NOT_ALL_IS_CARET",
+  "scope": "Named Ministerio Fiscal or Fiscalía members, judges, magistrates, LAJs and notaries appearing in the controlled Public Prosecution, E.G. 745/2026, Classification, DP 1901/2026, Concurso 36/2012 judicial and notarial source surfaces; plus exact named Property Registry personnel if any",
+  "scope_boundary": "Finite source census, not a claim that every complete official docket has been obtained. Verbatim source transcriptions are not modified; caret presentation belongs to attribution and index layers.",
+  "counts": {
+    "named_people": 48,
+    "confirmed": 45,
+    "pending": 3,
+    "suspended": 0,
+    "coverage_percent": 93.75,
+    "property_registry_named_people": 0,
+    "by_role": {
+      "MINISTERIO_FISCAL": {"named": 17, "confirmed": 17, "pending": 0},
+      "JUDGE_OR_MAGISTRATE": {"named": 15, "confirmed": 15, "pending": 0},
+      "LAJ": {"named": 8, "confirmed": 8, "pending": 0},
+      "NOTARY": {"named": 8, "confirmed": 5, "pending": 3},
+      "PROPERTY_REGISTRY_PERSON": {"named": 0, "confirmed": 0, "pending": 0}
+    }
+  },
+  "verdict": "PARTIAL — NOT ALL IS^: 45/48 named people CARET_CONFIRMED; 3 notarial source literals CARET_PENDING; no exact Property Registry person is named in the reviewed corpus",
+  "invariants": [
+    "A caret confirms canonical identity only.",
+    "A caret does not prove office on a date, authorship of an unlinked act, participation, knowledge, intention, coordination, legal correctness, wrongdoing, liability or outcome.",
+    "Office leadership does not transfer authorship or knowledge of every institutional act.",
+    "A panel roster does not establish the final deciding formation in a different proceeding.",
+    "Notarial authorisation does not establish the truth of every party statement, judicial approval, economic performance or Registry effect.",
+    "A generic Registrar, Registry or Registry staff literal is not a named person and receives no person caret.",
+    "Pending literals retain their exact source spelling and receive no caret until the source threshold is met."
+  ],
+  "source_surfaces": [
+    "assets/data/justice-map.json",
+    "es/carta-abierta-ministerio-fiscal/destinatarios.html",
+    "en/open-letter-public-prosecution-service/addressees.html",
+    "es/fiscalia-inspeccion-exp-gub-745-2026/index.html",
+    "en/public-prosecution-inspection-exp-gub-745-2026/index.html",
+    "es/calificacion-concurso-36-2012-vidas-paralelas/index.html",
+    "en/insolvency-classification-parallel-lives/index.html",
+    "es/calificacion-rpl-2523-mapa-prueba/index.html",
+    "en/calificacion-rpl-2523-evidence-map/index.html",
+    "es/dp-1901-2026/index.html",
+    "en/dp-1901-2026/index.html",
+    "es/concurso-36-2012-autos-resoluciones/index.html",
+    "en/insolvency-36-2012-orders-decisions/index.html",
+    "archive/CONCURSO_36_2012_JUDICIAL_LAJ_ACTS_MASTER_REGISTER_17AUG2026.md",
+    "archive/knowledge-project/SUN_PARK_CANONICAL_ACTOR_REGISTER.md",
+    "archive/concurso36-primary-autos-21aug2026/FORENSIC_SCAN_CRITICAL_AUTOS_CONCURSO_36_2012_21AUG2026.md"
+  ],
+  "roles": {
+    "MINISTERIO_FISCAL": [
+      {"caepr_id":"PD-SP-P-0114","name":"Tomás Fernández de Páiz","state":"CARET_CONFIRMED"},
+      {"caepr_id":"PD-SP-P-0058","name":"Ricardo de Mosteyrín Sampalo","state":"CARET_CONFIRMED"},
+      {"caepr_id":"PD-SP-P-0104","name":"Elena Herrera Rodríguez","state":"CARET_CONFIRMED"},
+      {"caepr_id":"PD-SP-P-0103","name":"Beatriz Sánchez Carreras","state":"CARET_CONFIRMED"},
+      {"caepr_id":"PD-SP-P-0105","name":"Ramona Muñoz Casas","state":"CARET_CONFIRMED"},
+      {"caepr_id":"PD-SP-P-0106","name":"Jaime Serrano-Jover González","state":"CARET_CONFIRMED"},
+      {"caepr_id":"PD-SP-P-0107","name":"José Luis Sánchez-Jáuregui y Alcaide","state":"CARET_CONFIRMED"},
+      {"caepr_id":"PD-SP-P-0108","name":"María José Osuna Cerezo","state":"CARET_CONFIRMED"},
+      {"caepr_id":"PD-SP-P-0109","name":"Emilio Jesús Sánchez Ulled","state":"CARET_CONFIRMED"},
+      {"caepr_id":"PD-SP-P-0110","name":"Juan Manuel González-Casanova Ruiz","state":"CARET_CONFIRMED"},
+      {"caepr_id":"PD-SP-P-0111","name":"Ernesto Vieira Morante","state":"CARET_CONFIRMED"},
+      {"caepr_id":"PD-SP-P-0112","name":"Olalla Vázquez Moraga","state":"CARET_CONFIRMED"},
+      {"caepr_id":"PD-SP-P-0113","name":"Vicente Máximo Garrido García","state":"CARET_CONFIRMED"},
+      {"caepr_id":"PD-SP-P-0115","name":"María Yolanda López Gómez","state":"CARET_CONFIRMED"},
+      {"caepr_id":"PD-SP-P-0116","name":"Teresa Peramato Martín","state":"CARET_CONFIRMED"},
+      {"caepr_id":"PD-SP-P-0117","name":"Alejandro Luzón Cánovas","state":"CARET_CONFIRMED"},
+      {"caepr_id":"PD-SP-P-0118","name":"Jesús Alonso Cristóbal","state":"CARET_CONFIRMED"}
+    ],
+    "JUDGE_OR_MAGISTRATE": [
+      {"caepr_id":"PD-SP-P-0057","name":"Alberto López Villarrubia","state":"CARET_CONFIRMED"},
+      {"caepr_id":"PD-SP-P-0087","name":"Guillermo Fernández García","state":"CARET_CONFIRMED"},
+      {"caepr_id":"PD-SP-P-0096","name":"José Luis Goizueta Adame","state":"CARET_CONFIRMED"},
+      {"caepr_id":"PD-SP-P-0097","name":"Nicolás Acosta González","state":"CARET_CONFIRMED"},
+      {"caepr_id":"PD-SP-P-0098","name":"María del Pilar Verástegui Hernández","state":"CARET_CONFIRMED"},
+      {"caepr_id":"PD-SP-P-0119","name":"Luis Francisco Galván Mesa","state":"CARET_CONFIRMED"},
+      {"caepr_id":"PD-SP-P-0124","name":"Juan Avello Formoso","state":"CARET_CONFIRMED"},
+      {"caepr_id":"PD-SP-P-0129","name":"Jesús Ángel Suárez Ramos","state":"CARET_CONFIRMED"},
+      {"caepr_id":"PD-SP-P-0130","name":"María Elena Corral Losada","state":"CARET_CONFIRMED"},
+      {"caepr_id":"PD-SP-P-0131","name":"Tomás González Marcos","state":"CARET_CONFIRMED"},
+      {"caepr_id":"PD-SP-P-0132","name":"Cosme Antonio López Rodríguez","state":"CARET_CONFIRMED"},
+      {"caepr_id":"PD-SP-P-0133","name":"Guzmán Eliseo Savirón Díez","state":"CARET_CONFIRMED"},
+      {"caepr_id":"PD-SP-P-0134","name":"María del Carmen Izquierdo Moreno","state":"CARET_CONFIRMED"},
+      {"caepr_id":"PD-SP-P-0135","name":"Juan José Cobo Plana","state":"CARET_CONFIRMED"},
+      {"caepr_id":"PD-SP-P-0136","name":"Margarita Hidalgo Bilbao","state":"CARET_CONFIRMED"}
+    ],
+    "LAJ": [
+      {"caepr_id":"PD-SP-P-0120","name":"Águeda Reyes Almeida","state":"CARET_CONFIRMED"},
+      {"caepr_id":"PD-SP-P-0121","name":"Eduardo José Rebollo Sanz","state":"CARET_CONFIRMED"},
+      {"caepr_id":"PD-SP-P-0122","name":"María Teresa Oliver Guerra","state":"CARET_CONFIRMED"},
+      {"caepr_id":"PD-SP-P-0123","name":"Carlos Víctor Rubio Faure","state":"CARET_CONFIRMED"},
+      {"caepr_id":"PD-SP-P-0125","name":"Román García-Varela Iglesias","state":"CARET_CONFIRMED"},
+      {"caepr_id":"PD-SP-P-0126","name":"María Victoria Henríquez Santana","state":"CARET_CONFIRMED"},
+      {"caepr_id":"PD-SP-P-0127","name":"Francisco Javier Labella Ribes","state":"CARET_CONFIRMED"},
+      {"caepr_id":"PD-SP-P-0128","name":"Amelia Villarreal Sancho","state":"CARET_CONFIRMED"}
+    ],
+    "NOTARY": [
+      {"caepr_id":"PD-SP-P-0137","name":"Javier Jiménez Cerrajería","state":"CARET_CONFIRMED"},
+      {"caepr_id":"PD-SP-P-0138","name":"Carmen Martínez Socias","state":"CARET_PENDING","missing_source":"Primary 23 May 2008 LPB incorporation deed or official notarial record"},
+      {"caepr_id":"PD-SP-P-0139","name":"Nicolás Quintana Plasencia","state":"CARET_PENDING","missing_source":"Primary 3 January 2012 deed or official notarial record"},
+      {"caepr_id":"PD-SP-P-0140","name":"Alfonso Cavallé Cruz","state":"CARET_CONFIRMED"},
+      {"caepr_id":"PD-SP-P-0141","name":"Ana Fernández-Tresguerres García","state":"CARET_CONFIRMED"},
+      {"caepr_id":"PD-SP-P-0142","name":"Manuel Guzmán Ramos","state":"CARET_CONFIRMED"},
+      {"caepr_id":"PD-SP-P-0143","name":"Pedro Eugenio Botella Torres","state":"CARET_PENDING","missing_source":"Primary protocol 1,377 dated 27 May 2010 or official notarial record"},
+      {"caepr_id":"PD-SP-P-0144","name":"José del Cerro Peñalver","state":"CARET_CONFIRMED"}
+    ],
+    "PROPERTY_REGISTRY_PERSON": []
+  },
+  "property_registry_control": {
+    "named_institution": "Registro de la Propiedad de Tías",
+    "exact_named_people": [],
+    "generic_literals": ["Registrador", "Registro de la Propiedad", "personal del Registro"],
+    "result": "NO_EXACT_PERSON_NAME_LOCATED_IN_REVIEWED_CORPUS",
+    "upgrade_rule": "Require exact name, dated capacity, act and primary source before creating a person identity or publishing a caret."
+  },
+  "public_routes": {
+    "es": "/es/registro-identidad-profesionales-justicia/",
+    "en": "/en/justice-professionals-identity-register/"
+  }
+}
