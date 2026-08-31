@@ -693,7 +693,7 @@
       <div class="pdim-trace-identity">${card(r, false)}
         <dl><div><dt>${copy.source}</dt><dd>${esc(r.Source_Status || '—')}</dd></div><div><dt>${copy.gap}</dt><dd>${esc(r.Open_Reference_Gap || '—')}</dd></div><div><dt>${copy.now}</dt><dd>${esc([r.Current_Custodian, r.Status, r.Latest_Known_Event].filter(Boolean).join(' — ') || '—')}</dd></div></dl>
       </div>
-      <p class="pdim-record-backlink"><a href="${esc(`${registerRoute}#record-${encodeURIComponent(selected)}`)}">${esc(copy.openRegisterRecord)} · ${esc(selected)} →</a></p>
+      <p class="pdim-record-backlink"><a data-master-register-id="${esc(selected)}" href="${esc(`${registerRoute}#record-${encodeURIComponent(selected)}`)}">${esc(copy.openRegisterRecord)} · ${esc(selected)} →</a></p>
       ${fileFiniteTest}
       ${fiscaliaConnection ? `<p class="pdim-record-backlink"><a data-fiscalia-master-id="${esc(selected)}" href="${esc(fiscaliaHref)}#file=${encodeURIComponent(selected)}">${esc(copy.fiscaliaCommunications)} · ${esc(fiscaliaConnection.event_count)} →</a></p>` : ''}
       ${communityAuthorityConnection ? `<p class="pdim-record-backlink"><a data-community-authority-master-id="${esc(selected)}" href="${esc(communityAuthorityHref)}#authority=${encodeURIComponent(selected)}">${esc(copy.communityAuthority)} →</a></p>` : ''}

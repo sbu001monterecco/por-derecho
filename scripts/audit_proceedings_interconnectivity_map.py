@@ -1,3 +1,6 @@
+Warning: truncated output (original token count: 40056)
+Total output lines: 2763
+
 #!/usr/bin/env python3
 """Structural/evidential audit for the proceedings map and Case Prism."""
 
@@ -1458,9 +1461,7 @@ if not errors:
         if source_profile_ids:
             profiled_matrix_ids.add(master_id)
         require(
-            matrix_row.get("reference") == canonical_row.get("Reference")
-            and matrix_row.get("origin_office") == canonical_row.get("Origin_Organ")
-            and matrix_row.get("current_custodian") == canonical_row.get("Current_Custodian")
+            matrix_row.…56 tokens truncated…ian")
             and matrix_row.get("is_proceeding") == canonical_row.get("Is_Proceeding")
             and matrix_row.get("record_type") == canonical_row.get("Record_Type")
             and matrix_row.get("source_status") == canonical_row.get("Source_Status"),
@@ -2619,7 +2620,7 @@ if not errors:
         require("public-authority-unitary-case-reconstruction" in page or "reconstruccion-unitaria-autoridades-publicas" in page, f"{label} lacks institutional clean-room navigation")
     require("#case-prism" in en and "#case-prism" in es, "Case Prism CTA fragment missing")
     require(all(f'id="{anchor}"' in en and f'id="{anchor}"' in es for anchor in ("parallel-lanes", "isolation-test")), "deep-link anchors missing")
-    require(all(f"proceedings-interconnectivity-map-20260830.{ext}?v=20260831c" in en and f"proceedings-interconnectivity-map-20260830.{ext}?v=20260831c" in es for ext in ("js", "css")), "Case Prism asset cache version not advanced to 20260831c")
+    require(all(f"proceedings-interconnectivity-map-20260830.{ext}?v=20260831d" in en and f"proceedings-interconnectivity-map-20260830.{ext}?v=20260831d" in es for ext in ("js", "css")), "Case Prism asset cache version not advanced to 20260831d")
 
     refs = ["RPL 2523/2025", "RPL 3304/2025", "RPL 3319/2025", "RPL 421/2026"]
     require(all(ref in institutional for ref in refs), "three-appellate-object correction missing")

@@ -1097,7 +1097,7 @@ try {
           throw new Error(`${route.lang}/${exactId}: Fiscalía trace promoted institutional handling into personal knowledge`);
         }
       }
-      const masterHref = await page.locator('[data-trace-panel] .pdim-record-backlink a').getAttribute('href');
+      const masterHref = await page.locator(`[data-trace-panel] [data-master-register-id="${exactId}"]`).getAttribute('href');
       if (!masterHref || !masterHref.endsWith(`#record-${encodeURIComponent(exactId)}`)) {
         throw new Error(`${route.lang}/${exactId}: trace lacks its reciprocal Master Register row link`);
       }
