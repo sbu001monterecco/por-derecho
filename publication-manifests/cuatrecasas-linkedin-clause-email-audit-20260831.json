@@ -3,14 +3,14 @@
   "publication_id": "cuatrecasas-linkedin-clause-email-audit-20260831",
   "control_id": "PD-CUATRE-LINKEDIN-20260306-CLAUSE-EMAIL-02",
   "control_date": "2026-08-31",
-  "current_state": "REMOTE_SOURCE",
-  "status": "prepared_for_review",
+  "current_state": "LIVE_VERIFIED",
+  "status": "published_live_verified",
   "owner": "Por Derecho / Project Sun Rock",
   "repository": "sbu001monterecco/por-derecho",
   "initial_task_main_sha": "e282ecafb5ce4b4590089d3ea1db70a3d6d95116",
   "publication_branch_base_sha": "d26d592950d6297220ef4f3bc6d9abd895953dad",
   "branch": "codex/cuatrecasas-clause-email-audit-publish-20260831",
-  "merge_sha": null,
+  "merge_sha": "8d0b45672cac23d1e1a55ae7c8687d1e4cb495a7",
   "purpose": "Publish one bilingual, non-fragmented audit of every clause in the preserved 6-March-2026 LinkedIn message, the three controlling institutional records and nine minimized email-context groups, while applying maximum evidence-based pressure through five finite documentary questions.",
   "expected_routes": {
     "es": [
@@ -91,10 +91,28 @@
     "direct_contact": "HOLD_NOT_AUTHORISED"
   },
   "validation": {
-    "status": "PENDING_CI",
-    "evidence": []
+    "status": "PASSED",
+    "evidence": [
+      {
+        "scope": "reviewed_pull_request_head",
+        "sha": "99261032c152c6f1bb9eadc61ef1f2867a322f2a",
+        "result": "37 applicable workflows completed successfully, 1 conditional workflow skipped and 0 workflows failed"
+      },
+      {
+        "scope": "exact_merge_on_main",
+        "sha": "8d0b45672cac23d1e1a55ae7c8687d1e4cb495a7",
+        "result": "43 of 43 post-merge workflows completed successfully"
+      }
+    ]
   },
-  "deployment_evidence": null,
+  "deployment_evidence": {
+    "verified_at": "2026-08-31T23:29:32Z",
+    "merge_sha": "8d0b45672cac23d1e1a55ae7c8687d1e4cb495a7",
+    "pages_workflow_run_id": 33450442928,
+    "pages_workflow_run_url": "https://github.com/sbu001monterecco/por-derecho/actions/runs/33450442928",
+    "status": "completed",
+    "conclusion": "success"
+  },
   "live_urls": [
     "https://sbu001monterecco.github.io/por-derecho/en/cuatrecasas-sun-park/#inigo-linkedin-20260306",
     "https://sbu001monterecco.github.io/por-derecho/es/cuatrecasas-sun-park/#inigo-linkedin-20260306",
@@ -119,7 +137,52 @@
       "\"targeted_email_context\""
     ]
   },
-  "live_verification_evidence": null,
+  "live_verification_evidence": {
+    "verified_at": "2026-08-31T23:29:32Z",
+    "http_status": "4 of 4 controlled resources returned HTTP 200",
+    "last_modified": "Mon, 31 Aug 2026 23:24:51 GMT",
+    "live_bytes": {
+      "en/cuatrecasas-sun-park/index.html": 88296,
+      "es/cuatrecasas-sun-park/index.html": 90900,
+      "assets/cuatrecasas-inigo-linkedin-record-20260831.js": 26801,
+      "evidence/cuatrecasas/2026-03-06-inigo-de-luisa-linkedin-message.json": 12059
+    },
+    "source_live_sha256_parity": {
+      "en/cuatrecasas-sun-park/index.html": "edd6195c3a4c81a31ece307365b3fae9c4e1fa7d2182e6a173d37304b5124d82",
+      "es/cuatrecasas-sun-park/index.html": "29504ccc39c24a06d2cdfcae7e73df85024fc8d141f36df5f0bc7367a0630e20",
+      "assets/cuatrecasas-inigo-linkedin-record-20260831.js": "e59d113686778f75bbf0655bac3e3caf407f7d9f9a8b90c76a814d12e6b6550d",
+      "evidence/cuatrecasas/2026-03-06-inigo-de-luisa-linkedin-message.json": "8f7d8d75af0fbe4fe9124fedf0411307c6730ca0028ebdd5960d4e0ef7b03ca3"
+    },
+    "browser_render": {
+      "en": {
+        "anchor": "#inigo-linkedin-20260306",
+        "visible": true,
+        "record_sections": 1,
+        "clause_rows": 12,
+        "email_rows": 9,
+        "ruling_cards": 2,
+        "document_questions": 5,
+        "governance_revision": "20260831c",
+        "message_present": true,
+        "limitation_correction_present": true,
+        "adverse_icam_1487_outcome_present": true
+      },
+      "es": {
+        "anchor": "#inigo-linkedin-20260306",
+        "visible": true,
+        "record_sections": 1,
+        "clause_rows": 12,
+        "email_rows": 9,
+        "ruling_cards": 2,
+        "document_questions": 5,
+        "governance_revision": "20260831c",
+        "message_present": true,
+        "limitation_correction_present": true,
+        "adverse_icam_1487_outcome_present": true
+      },
+      "page_origin_console_errors": 0
+    }
+  },
   "deletion_record": null,
-  "next_gate": "Refresh from current main, run all local controls, push, open PR, require green CI, merge, verify Pages bytes and browser-render both anchored panels before promoting this manifest."
+  "next_gate": "Maintain the date-limited CCACM status and give any evidenced correction, counter-record or later institutional outcome equal prominence through the controlled update workflow."
 }
