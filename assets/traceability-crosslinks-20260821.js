@@ -108,9 +108,9 @@
   const takeoverEs = path.endsWith('/es/toma-control-sun-park-7-junio-2018/');
   const takeoverEn = path.endsWith('/en/sun-park-takeover-7-june-2018/');
 
-  if ((lavaEs || lavaEn || mp357Es || mp357En) && !document.querySelector('[data-mp-direct-commercial-source-20260821]')) {
+  if ((lavaEs || lavaEn || mp357Es || mp357En) && !document.querySelector('[data-mp-direct-commercial-source-20260821], [data-mp-direct-commercial-source20260821]')) {
     const panel = document.createElement('aside');
-    panel.dataset.mpDirectCommercialSource20260821 = 'true';
+    panel.setAttribute('data-mp-direct-commercial-source-20260821', 'true');
     panel.style.cssText = 'margin:1rem 0 1.4rem;padding:1rem 1.15rem;border-left:5px solid #315c7b;background:#f5f8fa;border-radius:12px;color:#172632;';
     panel.innerHTML = isEn
       ? `<strong>Direct-source upgrade · same location, independent commercial layer.</strong> A preserved Meeting Point Hotels corporate brochure describes <strong>Club Sei Lanzarote</strong> as a 315-room Playa Blanca hotel, while an archived <strong>sonnenklar.TV offer dated 27 January 2020 places Club Sei Lanzarote at Calle Janubio 3</strong>. Historical Sun Park material gives the same Calle Janubio 3 address. Together, these sources establish public presentation/distribution of the Sun Park location within the FTI/Meeting Point commercial ecosystem. They do <strong>not</strong> yet establish the exact contracting legal person, room-by-room authority, completed bookings, receipts, commissions or legality.`
@@ -125,9 +125,9 @@
     }
   }
 
-  if ((mp357Es || mp357En) && !document.querySelector('[data-mp357-custody-boundary-20260821]')) {
+  if ((mp357Es || mp357En) && !document.querySelector('[data-mp357-custody-boundary-20260821], [data-mp357-custody-boundary20260821]')) {
     const boundary = document.createElement('div');
-    boundary.dataset.mp357CustodyBoundary20260821 = 'true';
+    boundary.setAttribute('data-mp357-custody-boundary-20260821', 'true');
     boundary.className = 'editorial-rule';
     boundary.innerHTML = isEn
       ? `<strong>357/2024 boundary:</strong> signed Auto 97/2025 fixes the joint three-debtor chronology and Auren appointment. The same-address commercial evidence makes the proceeding a possible records-custody/disclosure node; it does not prove that Sun Park records entered any debtor schedule or Auren workfile, that either judge personally saw them, or that the earlier register attribution reflects anything improper.`
@@ -136,9 +136,9 @@
     if (sunPark) sunPark.append(boundary);
   }
 
-  if ((takeoverEs || takeoverEn) && !document.querySelector('[data-takeover-meeting-point-gateway-20260821]')) {
+  if ((takeoverEs || takeoverEn) && !document.querySelector('[data-takeover-meeting-point-gateway-20260821], [data-takeover-meeting-point-gateway20260821]')) {
     const gateway = document.createElement('div');
-    gateway.dataset.takeoverMeetingPointGateway20260821 = 'true';
+    gateway.setAttribute('data-takeover-meeting-point-gateway-20260821', 'true');
     gateway.style.cssText = 'margin:1.35rem 0;padding:1rem 1.15rem;border:1px solid rgba(20,35,45,.16);border-left:5px solid #315c7b;border-radius:12px;background:#fff;';
     const target = isEn
       ? `${base}en/lava-verde-club-sei-meeting-point/`
