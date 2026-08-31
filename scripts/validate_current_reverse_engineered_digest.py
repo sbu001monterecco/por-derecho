@@ -28,8 +28,8 @@ UNITARY_CARET = ROOT / "assets" / "data" / "caepr-caret-unitary-digest-v1.json"
 REGISTRY = ROOT / "assets" / "data" / "matter-identity-registry-v1.json"
 
 CURRENT_IDENTITY_COUNTS = {
-    "total": 282,
-    "PERSON": 113,
+    "total": 313,
+    "PERSON": 144,
     "ORGANISATION": 79,
     "STRUCTURE": 11,
     "INSTITUTION": 36,
@@ -584,7 +584,7 @@ if historical_manifest["current_state"] == "LIVE_VERIFIED":
 print("CURRENT REVERSE-ENGINEERED DIGEST: PASS")
 print(" - control:", state["control_id"])
 print(" - source base:", state["source_base"]["main_sha"])
-print(" - source/static identity denominator: 282 / 113 / 79 / 11 / 36 / 43")
+print(" - source/static identity denominator: 313 / 144 / 79 / 11 / 36 / 43")
 print(" - current live-verified identity snapshot: 204 / 87 / 71 / 10 / 18 / 18")
 print(" - caret scope: 20/24; 4 pending; old 24/24 package superseded")
 print(" - separate Magistrate López Villarrubia / Meeting Point scope: 31/31 unique and 32/32 rows; all-is for stated scope")

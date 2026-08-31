@@ -234,8 +234,8 @@
     "registry_id": "PD-SP-IDENTITY-REGISTRY-001",
     "control_date": "2026-08-31",
     "counts": {
-      "total": 282,
-      "PERSON": 113,
+      "total": 313,
+      "PERSON": 144,
       "ORGANISATION": 79,
       "STRUCTURE": 11,
       "INSTITUTION": 36,
@@ -288,7 +288,7 @@
       }
     },
     "governing_boundary": "Identity resolves identity only; it does not transfer knowledge, intention, control, benefit, responsibility or liability.",
-    "total": 282,
+    "total": 313,
     "INSTITUTION": 36,
     "PROCEEDING": 43
   },

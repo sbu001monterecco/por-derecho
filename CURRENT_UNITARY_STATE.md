@@ -156,18 +156,18 @@ The 27-August Magistrate López Villarrubia / Meeting Point specialist release
 admitted ten additional immutable records and was exactly read back at 204.
 The present local 31-August append-only register, including the later
 Ministerio Fiscal proceedings, person and institution backfill, produces a
-source/static denominator of 282. That 282-record state is **not yet
+source/static denominator of 313. That 313-record state is **not yet
 live-verified**. The 204- and earlier
 194-record snapshots remain historical deployment evidence.
 
 | Class | Count |
 |---|---:|
-| People | 113 |
+| People | 144 |
 | Organisations | 79 |
 | Structures | 11 |
 | Institutions | 36 |
 | Proceedings | 43 |
-| **Total** | **282** |
+| **Total** | **313** |
 
 These counts control in the local canonical JSON, both static public pages,
 metadata, JSON-LD and no-JavaScript fallbacks. They require later authorised

@@ -210,7 +210,7 @@ The complete certified Concurso 36/2012 file, current RPL 2523/2025 status, PP 1
 
 - The unitary record already uses the correct “read forward; test backward” method.
 - The criminal reverse-engineering page separates attributed theory from judicial finding and exposes contrary proof requirements.
-- The current repository source/static identity denominator is **282**: 113 people,
+- The current repository source/static identity denominator is **313**: 144 people,
   79 organisations, 11 structures, 36 institutions and 43 proceedings. Fetched
   origin/main `a9e394a893251ba393ae37ead58be82987666820` contains 210 objects; the
   204-record and earlier 194-record exact public readbacks remain historical deployment evidence. The
@@ -248,7 +248,7 @@ A previously prepared local 24/24 package was based on the earlier `16dd443...` 
 
 - the source-base registry was 194, the separately controlled Magistrate López Villarrubia / Meeting
   Point release advanced the then-live-verified registry to 204, fetched origin/main later reached
-  210, and the present repository source/static registry is 282; none of those states validates the stale package's assumptions;
+  210, and the present repository source/static registry is 313; none of those states validates the stale package's assumptions;
 - proceeding IDs `PD-SP-R-0011` through `PD-SP-R-0017` are now occupied;
 - Matkator remains a registry-state reconciliation exception;
 - Clubotel La Dorada is admitted at `PD-SP-O-0075` and resolves the instrument-specific ONA-side role without collapsing or resolving the wider ONA perimeter, which remains pending at `PD-SP-O-0033`;
@@ -390,7 +390,7 @@ Controls:
 5. Obtain the certified RPL 2523/2025 and complete Concurso 36/2012 denominators.
 6. Obtain the CEXP succession and 7-June authority records.
 7. Reconcile the separate 24-object CAEPR caret scope against the current
-   282-ID source/static registry; keep the Magistrate López Villarrubia / Meeting Point
+   313-ID source/static registry; keep the Magistrate López Villarrubia / Meeting Point
    specialist all-is scope separate from the three unitary pending objects.
 8. Reconcile/close stale PRs by verified delta, not wholesale merge.
 
