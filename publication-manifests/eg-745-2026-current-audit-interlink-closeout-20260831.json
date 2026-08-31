@@ -3,7 +3,7 @@
   "current_state": "PREPARED_PENDING_MERGE",
   "owner": "Por Derecho / Project Sun Rock",
   "as_of": "2026-08-31",
-  "preparation_base_sha": "b5a37e4e4aba587d24ae8861bc89ba81b087f659",
+  "preparation_base_sha": "1dd43590f6960695dd10fb47330c73b4ff1e82c2",
   "merge_sha": null,
   "canonical_proceeding": {
     "master_id": "NAT-FIS-004",
@@ -35,6 +35,7 @@
     ]
   },
   "expected_source_files": [
+    ".github/workflows/verify-eg745-public-visual-live.yml",
     "publication-manifests/eg-745-2026-current-audit-interlink-closeout-20260831.json",
     "archive/EG_745_2026_CURRENT_AUDIT_INTERLINK_CLOSEOUT_31AUG2026.md",
     "archive/CONTINUOUS_MAINTENANCE_MATRIX.md",
@@ -64,6 +65,7 @@
     "DI 113/2022 and DI 22/2026 source-state corrections with open gaps preserved",
     "continuity-page stylesheet and canonical language metadata repair",
     "bilingual sitemap completion",
+    "documented no-op handling for a deployed PR base with no Pages-visible files in its own commit",
     "current maintenance and publication-state closeout"
   ],
   "private_package_boundary": {

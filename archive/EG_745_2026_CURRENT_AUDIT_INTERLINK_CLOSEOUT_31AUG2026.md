@@ -16,6 +16,7 @@ No private filing file, hash, personal data, signature material, covering commun
 3. Repair the continuity pages' stylesheet and canonical/ES/EN/x-default metadata.
 4. Add the missing bilingual response-package, action-diary and open-transparency routes to the dedicated and root sitemaps.
 5. Maintain E.G. 745 as one existing Master-register proceeding. A later filing receipt updates the event/status of `NAT-FIS-004`; it does not create a new proceeding unless the competent authority assigns a distinct official reference.
+6. Treat a deployed pull-request base whose own commit has no Pages-visible changed files as a documented no-op in the live-byte workflow, while retaining mandatory exact-SHA readback for a merge push that changes public paths.
 
 The public DI 113/2022 and DI 22/2026 corrections derive exclusively from the pre-existing canonical controls CR-154, CR-155, ME-118 and ME-119. The private candidate package is not their publication source.
 

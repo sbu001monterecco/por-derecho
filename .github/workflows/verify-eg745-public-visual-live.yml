@@ -129,7 +129,44 @@ jobs:
           ).splitlines()
           public_paths = sorted(path for path in changed if not path.startswith(".github/"))
           if not public_paths:
-              raise SystemExit("target commit has no Pages-visible changed files")
+              artifact = Path("artifacts/eg745-live-readback")
+              artifact.mkdir(parents=True, exist_ok=True)
+              report = {
+                  "schema": "por-derecho.eg745-live-byte-readback.v1",
+                  "state": "NO_PAGES_VISIBLE_CHANGED_FILES",
+                  "event": event_name,
+                  "target_sha": target_sha,
+                  "target_tree": target_tree,
+                  "verified_at_utc": dt.datetime.now(dt.timezone.utc).isoformat(),
+                  "pages_run": {
+                      "id": pages_run.get("id"),
+                      "run_number": pages_run.get("run_number"),
+                      "head_sha": pages_run.get("head_sha"),
+                      "status": pages_run.get("status"),
+                      "conclusion": pages_run.get("conclusion"),
+                      "html_url": pages_run.get("html_url"),
+                  },
+                  "pages_visible_changed_path_count": 0,
+                  "files": [],
+                  "failures": [],
+                  "boundary": (
+                      "A deployed pull-request base with no Pages-visible files in its own commit "
+                      "is a documented no-op, not a live-byte mismatch. The merge push remains "
+                      "subject to exact-SHA readback when it changes public paths."
+                  ),
+              }
+              report_path = artifact / f"{target_sha}-exact-live-readback.json"
+              report_path.write_text(
+                  json.dumps(report, ensure_ascii=False, indent=2) + "\n",
+                  encoding="utf-8",
+              )
+              print(json.dumps({"state": report["state"], "target_sha": target_sha}))
+              with open(os.environ["GITHUB_STEP_SUMMARY"], "a", encoding="utf-8") as handle:
+                  handle.write("## E.G. 745 exact live-byte readback\n\n")
+                  handle.write(f"- State: `{report['state']}`\n")
+                  handle.write(f"- Target SHA: `{target_sha}`\n")
+                  handle.write("- Pages-visible changed files: `0` (documented no-op)\n")
+              raise SystemExit(0)
           if target_sha == pr1274_sha and len(public_paths) != 32:
               raise SystemExit(
                   f"PR1274 Pages-visible path count mismatch: {len(public_paths)} != 32"
