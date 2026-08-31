@@ -109,9 +109,11 @@ The CAM→HNT segregation, RICPE/investment perimeter and MYND operation create 
 
 **Bridge to prove:** segregation project/deed/schedules → exact assets, rights, liabilities and litigation transferred → operator mandate → financing/public-support representations → income and current benefit.
 
-### 3.8 2024–2025 public RIC debt — parallel policy route, no proved HNT money flow
+### 3.8 2022–2025 public RIC debt — planning, execution and no proved HNT money flow
 
-The 734-page Treasury production adds a public comparator to the private RICPE/HNT lane. The Canary Government allocated EUR 250 million of RIC-eligible bonds in 2024 and 2025 against EUR 1.139779 billion of demand. The Government raises this money to finance qualifying public investment while offering taxpayers a public security capable of materialising RIC; it does not raise the proceeds to finance RICPE.
+The fully digitised 734-page Treasury production adds a public comparator to the private RICPE/HNT lane. The 2022 borrowing-authorisation request contemplated loans, bonds and a possible RIC debt issue with indicative terms and Article 27.4.D.4 use; this tranche does not prove that possible issue was executed. The Canary Government later allocated EUR 250 million of documented RIC-eligible bonds in 2024 and 2025 against EUR 1.139779 billion of demand.
+
+The Government raises this money to finance qualifying public investment while offering taxpayers a public security capable of materialising RIC. The 2024 AFI contracting memorandum supplies the missing cost mechanism: the investor's financial-tax return can permit a lower coupon and ease the Community's financing burden. That does not mean the Government raises proceeds for RICPE.
 
 This produces one unitary but non-merging architecture:
 
@@ -119,7 +121,7 @@ This produces one unitary but non-merging architecture:
 - private RICPE: investor/RIC allocation → Series F/G → HNT / MYND Yaiza; and
 - regional support: GC/836/P06 → published award → HNT project.
 
-The connection to Acosta Matos is therefore not zero: the routes share the statutory RIC policy system, and the direct destination-side link is the documented RICPE→HNT financing. But the money is not shown to be the same. No public-bond-to-HNT allocation is located, and the 2024/2025 issues post-date the December-2022 and June-2023 HNT loans, excluding them as the original source of those loans. Subscriber and beneficial-owner matching remains open because the produced records are dissociated. Shared financial infrastructure or providers do not establish a shared transaction.
+The connection to Acosta Matos is therefore not zero: the routes share the statutory RIC policy system, and the direct destination-side link is the documented RICPE→HNT financing. But the money is not shown to be the same. No public-bond-to-HNT allocation is located, and the documented 2024/2025 issues post-date the December-2022 and June-2023 HNT loans, excluding them as the original source of those loans. No named Acosta, HNT, MYND or RICPE occurrence was located in the OCR-reviewed 734-page tranche; this bounded result is not proof of absence from other records. Subscriber and beneficial-owner matching remains open because the produced records are dissociated. Shared financial infrastructure or providers do not establish a shared transaction.
 
 **Bridge to prove or exclude:** public-issue subscriber/allocation register → lawful NIF/beneficial-owner match → RIC origin/capacity → later funds flow, if any. A subscriber coincidence would open that inquiry; it would not itself prove overlap, preference or wrongdoing.
 

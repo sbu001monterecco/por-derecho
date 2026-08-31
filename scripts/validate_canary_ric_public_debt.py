@@ -111,13 +111,13 @@ for route in ["es/deuda-publica-ric-canarias/", "en/canary-ric-public-debt/"]:
 
 ET.parse(SITEMAP)
 sitemap = SITEMAP.read_text(encoding="utf-8")
-if sitemap.count("<url>") != 2 or "hreflang=\"x-default\"" not in sitemap:
-    fail("sitemap must contain two bilingual URL records")
+if sitemap.count("<url>") != 4 or sitemap.count("hreflang=\"x-default\"") != 4:
+    fail("sitemap must contain four bilingual analysis/document-room URL records")
 if "sitemap-canary-ric-public-debt.xml" not in (ROOT / "robots.txt").read_text(encoding="utf-8"):
     fail("robots.txt does not expose the dedicated sitemap")
 
 digest = (ROOT / "CURRENT_REVERSE_ENGINEERED_DIGEST.md").read_text(encoding="utf-8")
-for token in ["2024–2025 public RIC debt", "not zero", "not shown to be the same"]:
+for token in ["2022–2025 public RIC debt", "not zero", "not shown to be the same", "lower coupon"]:
     if token not in digest:
         fail(f"unitary digest missing {token!r}")
 for rel, ids in [
