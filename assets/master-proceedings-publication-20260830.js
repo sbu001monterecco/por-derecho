@@ -21,7 +21,9 @@
     'LZ-JUD-043': {
       en: new URL('en/dp-3205-2014-arrecife/', repoBase).href,
       es: new URL('es/dp-3205-2014-arrecife/', repoBase).href
-    },
+    }
+  };
+  const decisionDetailRoutes = {
     'LZ-JUD-003': { en: new URL('en/rollo-1010-2018-order-804-2018/', repoBase).href, es: new URL('es/rollo-1010-2018-auto-804-2018/', repoBase).href },
     'LZ-APP-004': { en: new URL('en/rollo-1010-2018-order-804-2018/', repoBase).href, es: new URL('es/rollo-1010-2018-auto-804-2018/', repoBase).href }
   };
@@ -83,14 +85,14 @@
       visible: 'registros visibles', export: 'Exportar vista filtrada CSV', all: 'Todos',
       search: 'Buscar referencia, órgano, objeto, estado…', stream: 'Vía', state: 'Tipo de registro', source: 'Estado de fuente',
       id: 'ID', type: 'Clase / vía', organ: 'Órgano / custodio', ref: 'Referencia', period: 'Periodo', connection: 'Conexión / objeto', status: 'Estado / último evento', links: 'Relaciones', proof: 'Fuente / brecha',
-      noRows: 'No hay filas que coincidan con los filtros actuales.', trace: 'Abrir trazabilidad exacta', isolation: 'Prueba de aislamiento', dossier: 'Abrir expediente',
+      noRows: 'No hay filas que coincidan con los filtros actuales.', trace: 'Abrir trazabilidad exacta', isolation: 'Prueba de aislamiento', dossier: 'Abrir expediente', decisionDetail: 'Detalle de Auto 804/2018',
       nonExactRelation: 'Sólo navegación/contexto; no es un vínculo procesal establecido'
     } : {
       loading: 'Loading the controlled public projection…', error: 'The master register could not be loaded.',
       visible: 'visible records', export: 'Export filtered view CSV', all: 'All',
       search: 'Search reference, organ, object, status…', stream: 'Track', state: 'Record state', source: 'Source status',
       id: 'ID', type: 'Class / track', organ: 'Organ / custodian', ref: 'Reference', period: 'Period', connection: 'Connection / object', status: 'Status / latest event', links: 'Relationships', proof: 'Source / gap',
-      noRows: 'No rows match the current filters.', trace: 'Open exact trace', isolation: 'Isolation test', dossier: 'Open dossier',
+      noRows: 'No rows match the current filters.', trace: 'Open exact trace', isolation: 'Isolation test', dossier: 'Open dossier', decisionDetail: 'Order 804/2018 detail',
       nonExactRelation: 'Navigation/context only; not an established procedural edge'
     };
 
@@ -189,8 +191,12 @@
           const detailLink = detailUrl
             ? `<br><a class="pd-detail" href="${esc(detailUrl)}" aria-label="${esc(`${copy.dossier}: ${r.Master_ID}`)}">${esc(copy.dossier)} ↗</a>`
             : '';
+          const decisionDetailUrl = decisionDetailRoutes[r.Master_ID] && decisionDetailRoutes[r.Master_ID][lang];
+          const decisionDetailLink = decisionDetailUrl
+            ? `<br><a class="pd-decision-detail" href="${esc(decisionDetailUrl)}" aria-label="${esc(`${copy.decisionDetail}: ${r.Master_ID}`)}">${esc(copy.decisionDetail)} ↗</a>`
+            : '';
           return `<tr id="record-${esc(r.Master_ID)}" data-master-id="${esc(r.Master_ID)}">
-            <td><span id="case-${esc(r.Master_ID)}" aria-hidden="true"></span><a class="pd-ref" href="${esc(traceHref)}" aria-label="${esc(`${copy.trace}: ${r.Master_ID}`)}">${esc(r.Master_ID)}</a><br><span class="pd-chip" data-state="${esc(stateValue)}">${esc(stateValue)}</span>${isolationLink}${detailLink}</td>
+            <td><span id="case-${esc(r.Master_ID)}" aria-hidden="true"></span><a class="pd-ref" href="${esc(traceHref)}" aria-label="${esc(`${copy.trace}: ${r.Master_ID}`)}">${esc(r.Master_ID)}</a><br><span class="pd-chip" data-state="${esc(stateValue)}">${esc(stateValue)}</span>${isolationLink}${detailLink}${decisionDetailLink}</td>
             <td>${esc(typeText)}</td><td>${esc(organText)}</td><td>${esc(refText)}</td><td>${esc(r.Date_or_Period)}</td><td>${esc(connectionText)}</td><td>${esc(statusText)}</td><td>${linkMasterReferences(relation)}</td><td><span class="pd-muted">${esc(r.Source_Status)}</span>${r.Open_Reference_Gap ? `<br><span class="pd-gap">${esc(r.Open_Reference_Gap)}</span>` : ''}</td>
           </tr>`;
         }).join('');

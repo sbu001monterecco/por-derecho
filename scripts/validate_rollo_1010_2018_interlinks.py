@@ -62,6 +62,11 @@ for route, markers in route_markers.items():
     for marker in markers:
         require(marker in text, f"{route}: missing {marker}")
 
+runtime = (ROOT / "assets/master-proceedings-publication-20260830.js").read_text(encoding="utf-8")
+require("const decisionDetailRoutes" in runtime, "Master Register decision-detail route set missing")
+for marker in ("en/arrecife-1103-2018-procedural-lineage/", "en/rollo-1010-2018-order-804-2018/", "es/arrecife-1103-2018-cadena-procesal/", "es/rollo-1010-2018-auto-804-2018/"):
+    require(marker in runtime, f"Master Register dual route missing {marker}")
+
 sitemap = (ROOT / "sitemap.xml").read_text(encoding="utf-8")
 ET.fromstring(sitemap)
 for route in ("/es/rollo-1010-2018-auto-804-2018/", "/en/rollo-1010-2018-order-804-2018/"):
