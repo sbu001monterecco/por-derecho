@@ -1,0 +1,76 @@
+{
+  "schema": "por-derecho.justice-professionals-caret-publication.v1",
+  "publication_id": "PD-SP-RICARDO-JUSTICE-PROFESSIONALS-CARET-20260831-01",
+  "current_state": "PREPARED_PENDING_MERGE",
+  "owner": "Gil Marer / Por Derecho",
+  "control_date": "2026-08-31",
+  "repository": "sbu001monterecco/por-derecho",
+  "preparation_base_sha": "e313c13bf46464015a72025dcd9264e61ec33107",
+  "branch": "codex/ricardo-mosteyrin-justice-professionals-caret-20260831",
+  "merge_sha": null,
+  "expected_routes": {
+    "es": [
+      "es/ricardo-de-mosteyrin-sampalo/index.html",
+      "es/registro-identidad-profesionales-justicia/index.html",
+      "es/calificacion-concurso-36-2012-vidas-paralelas/index.html",
+      "es/calificacion-rpl-2523-mapa-prueba/index.html",
+      "es/dp-1901-2026/index.html",
+      "es/fiscalia-inspeccion-exp-gub-745-2026/index.html",
+      "es/implementacion-notarial-protocolo-457/index.html",
+      "es/implementacion-registral-finca-por-finca/index.html"
+    ],
+    "en": [
+      "en/ricardo-de-mosteyrin-sampalo/index.html",
+      "en/justice-professionals-identity-register/index.html",
+      "en/insolvency-classification-parallel-lives/index.html",
+      "en/calificacion-rpl-2523-evidence-map/index.html",
+      "en/dp-1901-2026/index.html",
+      "en/public-prosecution-inspection-exp-gub-745-2026/index.html",
+      "en/notarial-implementation-protocol-457/index.html",
+      "en/land-registry-implementation-property-by-property/index.html"
+    ]
+  },
+  "expected_source_files": [
+    ".github/governance/NAMED_JUSTICE_PROFESSIONAL_CARET_COVERAGE_PROTOCOL_31AUG2026.md",
+    "archive/RICARDO_MOSTEYRIN_JUSTICE_PROFESSIONALS_CARET_CONTINUITY_AUDIT_31AUG2026.md",
+    "archive/CONTINUOUS_MAINTENANCE_MATRIX.md",
+    "assets/data/justice-professionals-caret-audit-v1.json",
+    "assets/data/matter-identity-registry-v1.json",
+    "assets/data/matter-identity-registry-v1.people.json",
+    "assets/data/matter-identity-registry-v1.professional-people.json",
+    "assets/data/justice-map.json",
+    "scripts/validate_justice_professionals_caret.py",
+    "scripts/validate_operational_identity_registry.py",
+    "sitemap-caepr-caret.xml",
+    "sitemap-calificacion.xml",
+    "CHATGPT_START_HERE.md"
+  ],
+  "identity_scope": {
+    "named_people": 48,
+    "confirmed": 45,
+    "pending": 3,
+    "property_registry_named_people": 0,
+    "coverage_percent": 93.75,
+    "verdict": "PARTIAL_NOT_ALL_IS_CARET"
+  },
+  "pending_exact_names": [
+    "Carmen Martínez Socias",
+    "Nicolás Quintana Plasencia",
+    "Pedro Eugenio Botella Torres"
+  ],
+  "required_boundaries": [
+    "A caret confirms canonical identity only; it does not establish role on a date, act, knowledge, intention, coordination, legal correctness, responsibility or outcome.",
+    "Ricardo de Mosteyrín Sampalo is personally attributed only to the signed 12 March 2019 classification opinion and separately labelled direct identification at the 25 July 2023 hearing.",
+    "Cross-linking DP 1901/2026 and E.G. 745/2026 does not attribute a personal act in either route to Ricardo de Mosteyrín Sampalo.",
+    "Pending exact names remain without a caret until a sufficient primary identity source is linked.",
+    "A generic Property Registry office or function is not converted into a named person."
+  ],
+  "publication_closeout": {
+    "pull_request": null,
+    "reviewed_head_sha": null,
+    "merge_sha": null,
+    "pages_run_id": null,
+    "live_verification": null,
+    "next_state_gate": "Remote branch, pull request, CI, merge, exact-SHA Pages deployment and no-cache live readback must be observed in sequence."
+  }
+}
