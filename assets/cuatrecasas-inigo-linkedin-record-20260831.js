@@ -14,7 +14,8 @@
     provenanceTitle: 'Trazabilidad y límite probatorio',
     provenance: 'Un correo de preservación enviado el mismo día a Cuatrecasas dejó constancia de que, poco después de transmitirse, el Sr. de Luisa “appears to have deleted it” y de que la captura se había tomado antes. Una segunda captura conserva el cambio posterior del estado de la conversación. Esa segunda captura no se trata, por sí sola, como prueba concluyente del borrado.',
     boundary: 'Publicación documental: el mensaje se muestra como comunicación preservada. Su contenido no se presenta por sí solo como prueba de responsabilidad civil, penal o deontológica. La referencia al borrado se mantiene expresamente en la forma cualificada del registro contemporáneo.',
-    record: 'Ver registro controlado del repositorio →'
+    record: 'Ver registro controlado del repositorio →',
+    institutional: 'Abrir el expediente ICAM / CCACM →'
   } : {
     eyebrow: 'PRESERVED DOCUMENT · 6 MARCH 2026',
     title: 'Preserved LinkedIn message: Íñigo de Luisa Maíz',
@@ -22,24 +23,28 @@
     provenanceTitle: 'Provenance and evidential boundary',
     provenance: 'A same-day preservation email sent to Cuatrecasas recorded that, shortly after transmission, Mr de Luisa “appears to have deleted it” and that the screenshot had been taken beforehand. A second retained capture records the subsequent change in the LinkedIn conversation status. That second capture is not treated, by itself, as conclusive proof of deletion.',
     boundary: 'Documentary publication: the message is shown as a preserved communication. Its content is not presented, by itself, as proof of civil, criminal or disciplinary liability. The deletion point is deliberately retained only in the qualified form used in the contemporaneous record.',
-    record: 'Open controlled repository record →'
+    record: 'Open controlled repository record →',
+    institutional: 'Open the ICAM / CCACM record →'
   };
 
   const section = document.createElement('section');
   section.className = 'section cuatre-linkedin-record';
+  section.id = 'inigo-linkedin-20260306';
+  section.setAttribute('aria-labelledby', 'inigo-linkedin-20260306-title');
   section.setAttribute('data-cuatrecasas-inigo-linkedin-record', '20260306');
+  section.setAttribute('data-publication-marker', 'cuatrecasas-linkedin-interlink-20260831');
   section.innerHTML = `
     <div class="shell record">
       <div class="cuatre-linkedin-panel">
         <p class="eyeline">${copy.eyebrow}</p>
-        <h2>${copy.title}</h2>
+        <h2 id="inigo-linkedin-20260306-title">${copy.title}</h2>
         <p class="cuatre-linkedin-intro">${copy.intro}</p>
         <blockquote class="cuatre-linkedin-message"></blockquote>
         <div class="cuatre-linkedin-provenance">
           <strong>${copy.provenanceTitle}</strong>
           <p>${copy.provenance}</p>
           <p class="cuatre-linkedin-boundary">${copy.boundary}</p>
-          <p><a href="../../evidence/cuatrecasas/2026-03-06-inigo-de-luisa-linkedin-message.json">${copy.record}</a></p>
+          <p><a href="../../evidence/cuatrecasas/2026-03-06-inigo-de-luisa-linkedin-message.json">${copy.record}</a> · <a href="../cuatrecasas-icam-ccacm-2026/">${copy.institutional}</a></p>
         </div>
       </div>
     </div>`;
@@ -48,7 +53,7 @@
   const style = document.createElement('style');
   style.setAttribute('data-cuatrecasas-inigo-linkedin-record-style', '20260306');
   style.textContent = `
-    .cuatre-linkedin-record{background:#f4f1ea}
+    .cuatre-linkedin-record{background:#f4f1ea;scroll-margin-top:1.5rem}
     .cuatre-linkedin-panel{background:#fff;border:1px solid #d9dede;border-top:7px solid #13252d;border-radius:22px;padding:clamp(1.2rem,3vw,2rem);box-shadow:0 16px 40px rgba(16,38,45,.10)}
     .cuatre-linkedin-panel h2{max-width:900px;margin:.35rem 0 .8rem}
     .cuatre-linkedin-intro{max-width:960px;font-size:1.02rem;line-height:1.65}
@@ -62,4 +67,8 @@
   const hero = document.querySelector('main > .hero, main .hero');
   if (hero) hero.insertAdjacentElement('afterend', section);
   else document.querySelector('main')?.prepend(section);
+
+  if (window.location.hash === '#inigo-linkedin-20260306') {
+    window.requestAnimationFrame(() => section.scrollIntoView({ block: 'start' }));
+  }
 })();
