@@ -2,14 +2,13 @@
 
 ## Scope
 
-Add the newly generated original editorial artwork for **4 Green Houses, One Red Hotel** to the existing locked book-cover path and interlink the bilingual Cuatrecasas Sun Park pages to the existing bilingual book landing pages.
+Publish the original editorial artwork for **4 Green Houses, One Red Hotel** and interlink the bilingual Cuatrecasas Sun Park pages to the existing bilingual book landing pages.
 
 ## Publication design
 
-- Replace `assets/book-covers/locked/four-green-houses-one-red-hotel.jpg` in place so the existing book pages and existing `og:image` reference inherit the new cover without route churn.
-- Add `assets/cuatrecasas-four-green-houses-one-red-hotel-cover-20260831.js`, self-limited to `/en/cuatrecasas-sun-park/` and `/es/cuatrecasas-sun-park/`.
-- Extend `assets/site.js` additively to load the new self-limiting insert while preserving the 31-August Cuatrecasas LinkedIn record loader and inherited site-loader chain.
-- The Cuatrecasas insert links EN → `/en/books/four-green-houses-one-red-hotel/` and ES → `/es/libros/four-green-houses-one-red-hotel/`.
+- PR #1268 first replaced the established fallback path `assets/book-covers/locked/four-green-houses-one-red-hotel.jpg` and added the self-limiting Cuatrecasas/book loader.
+- The bilingual Cuatrecasas insert links EN → `/en/books/four-green-houses-one-red-hotel/` and ES → `/es/libros/four-green-houses-one-red-hotel/`.
+- `assets/site.js` remains the additive global loader and preserves the pre-existing Cuatrecasas LinkedIn record loader and inherited site-loader chain.
 
 ## Editorial and evidential boundary
 
@@ -17,38 +16,51 @@ The cover is an original visual metaphor. Four generic green architectural house
 
 The visual gives only a conceptual nod to the generic houses-to-hotel idea associated with property games. It does **not** use the Monopoly® logo, board, mascot, cards, branded typography or branded toy-piece design. No affiliation or endorsement is represented.
 
-## Preservation
-
-No route, source, allegation, qualification, image or prior Cuatrecasas/LinkedIn publication is removed. The book-cover path is intentionally stable. Existing EN/ES book routes and Cuatrecasas routes are preserved.
-
-## Publication closeout
+## First publication and exact-SHA deployment
 
 - Publication PR: **#1268** — `Publish Four Green Houses cover and link Cuatrecasas record`.
 - Merge SHA: **`840ddd837f9e6232510f5e0098f1562d4f7795ff`**.
-- Exact-SHA GitHub Pages run: **33395894569 / #1331** — completed successfully.
+- GitHub Pages run: **33395894569 / #1331** — completed successfully for that exact merge SHA.
 - PR publication-integrity gate: **33395641595** — success.
 - PR audience-experience gate: **33395641625** — success.
 - PR visual-asset identity gate: **33395641690** — success.
-- Published cover control: JPEG, **900 × 1125**, **221,210 bytes**, SHA-256 **`0476f4fab7e8fa15451d30d6badc81623781db3c3058edd09d3d788013062b34`**.
 
-## Permanent live-verification control
+## Production-edge cache finding
 
-The existing `scripts/validate_cuatrecasas_book_live.py` / `Validate Cuatrecasas book live publication` workflow is extended as the production-edge control for this release. From an external GitHub-hosted runner it checks, with cache-busting:
+A fresh external GitHub-hosted HTTPS verification after the successful Pages deployment established that the new JavaScript loader and Cuatrecasas insert were live, but the reused stable JPEG URL still returned the previous cached cover:
 
-1. the established EN/ES book routes;
-2. the established EN/ES Cuatrecasas critical-gap routes;
-3. the EN/ES Cuatrecasas Sun Park source pages and their `assets/site.js` dependency;
-4. the live `assets/site.js` loader markers;
-5. the live self-limiting Cuatrecasas/book insert and both language-specific book links;
-6. the exact live JPEG byte length and SHA-256.
+- stable URL returned **7,510 bytes**;
+- stable URL SHA-256: **`9a1befa4588f24d18787f97d5ab3c582d2f0f67a3c25c824ad870ebfa6e30067`**;
+- approved new cover is **221,210 bytes**, **900 × 1125**;
+- approved new-cover SHA-256: **`0476f4fab7e8fa15451d30d6badc81623781db3c3058edd09d3d788013062b34`**.
 
-This is stronger than relying on an indexed crawler snapshot because the Cuatrecasas cover section is inserted client-side by JavaScript.
+This was a CDN/stable-filename publication mismatch, not a failure of the book or Cuatrecasas route HTML/JS. The failed verification artifact is preserved under Actions run **33396494161**, artifact **9759519353**.
 
-## Validation targets
+## Cache-proof corrective publication
 
-- repository preservation validator
-- publication integrity validator
-- audience experience validator
-- visual asset identity validator
-- exact-sha Pages deployment
-- external production HTTP checks for Cuatrecasas EN/ES, book EN/ES, critical gaps EN/ES, loader, insert and cover bytes
+PR #1269 converts the cover publication to a unique immutable URL:
+
+`assets/book-covers/locked/four-green-houses-one-red-hotel-20260831.jpg`
+
+The versioned file uses the exact approved new-cover bytes. The old stable-path file is retained as a historical/no-JavaScript fallback; it is not deleted.
+
+The self-limiting cover module is extended so that:
+
+1. on the EN/ES Cuatrecasas Sun Park routes it renders the new versioned cover and links to the corresponding book landing page;
+2. on the EN/ES book routes it replaces the visible fallback cover with the immutable versioned asset and marks it `data-versioned-cover="20260831"`;
+3. in an interactive browser it also updates the `og:image` element to the versioned asset, while preserving the static source fallback rather than rewriting the book’s evidential content.
+
+No book text, evidential proposition, allegation, route or prior image is removed by the cache-proof fix.
+
+## Validation sequence
+
+After PR #1269 passes the normal repository gates and is merged, the permanent Cuatrecasas/book production-edge validator must be updated in a separate closeout PR to verify from an external GitHub runner:
+
+- EN/ES book routes;
+- EN/ES Cuatrecasas routes;
+- EN/ES critical-gap routes;
+- live `assets/site.js`;
+- live self-limiting cover insert;
+- the exact immutable JPEG URL, byte length and SHA-256.
+
+Only that external verification closes the publication as fully live-verified.
