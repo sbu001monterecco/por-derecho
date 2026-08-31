@@ -67,6 +67,15 @@
     document.head.appendChild(linkedInRecord);
   };
 
+  const loadCuatrecasasBookCover = () => {
+    if (document.querySelector('script[data-cuatrecasas-four-green-houses-loader]')) return;
+    const bookCover = document.createElement('script');
+    bookCover.src = new URL('cuatrecasas-four-green-houses-one-red-hotel-cover-20260831.js?v=20260831a', current.src).href;
+    bookCover.async = false;
+    bookCover.setAttribute('data-cuatrecasas-four-green-houses-loader', '20260831a');
+    document.head.appendChild(bookCover);
+  };
+
   // Preserve the complete site loader that existed before this visual update.
   const prior = document.createElement('script');
   prior.src = new URL('site-pre-treasury-154-hq-20260828.js?v=20260828a', current.src).href;
@@ -79,4 +88,8 @@
   // Documentary Cuatrecasas/LinkedIn insert. The asset self-limits to the
   // bilingual Cuatrecasas Sun Park pages and is idempotent on repeated loads.
   loadCuatrecasasLinkedInRecord();
+
+  // Four Green Houses / One Red Hotel visual. The asset self-limits to the
+  // bilingual Cuatrecasas Sun Park pages and links to the existing book route.
+  loadCuatrecasasBookCover();
 })();
