@@ -24,7 +24,7 @@ def main() -> int:
     required_es = [
         "tesis investigativa seria y basada en documentos",
         "Alegaciones del AC materialmente excesivas",
-        "Dictamen fiscal excepcionalmente severo",
+        "Dictamen fiscal grave + umbral penal alegado no más tarde de la vista",
         "Circularidad institucional en DI 248",
         "Adopción judicial selectiva",
         "Posible beneficio privado",
@@ -34,7 +34,7 @@ def main() -> int:
     required_en = [
         "serious, document-based investigative thesis",
         "Materially excessive Administrator allegations",
-        "Exceptionally severe Fiscal opinion",
+        "Grave Fiscal opinion + alleged threshold no later than the hearing",
         "Institutional circularity in DI 248",
         "Selected judicial adoption",
         "Possible private benefit",
@@ -52,16 +52,16 @@ def main() -> int:
         "es/calificacion-concurso-36-2012-vidas-paralelas/index.html": [
             "Gil Marer lo identifica directamente como el fiscal presente durante toda la vista",
             "Vista 2023 · dos capas",
-            "Atribución máxima desde la vista",
-            "posible represalia del artículo 36.2",
+            "Umbral alegado antes o, a más tardar, en la vista",
+            "posible participación consciente",
             "Declaración 015",
             "corroboración oficial individual pendiente",
         ],
         "en/insolvency-classification-parallel-lives/index.html": [
             "Gil Marer directly identifies him as the prosecutor present throughout",
             "2023 hearing · two layers",
-            "Maximum attribution from the hearing",
-            "possible retaliation under Article 36.2",
+            "Alleged threshold before or, at the latest, at the hearing",
+            "possible knowing participation",
             "Declaration 015",
             "individual official corroboration remains pending",
         ],

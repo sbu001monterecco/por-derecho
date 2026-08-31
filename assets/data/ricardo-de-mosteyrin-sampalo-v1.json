@@ -1,0 +1,59 @@
+{
+  "schema": "por-derecho.public-actor-record.v1",
+  "control_date": "2026-08-31",
+  "person": {
+    "canonical_name": "Ricardo de Mosteyrín Sampalo",
+    "registry_id": "PD-SP-P-0058",
+    "public_routes": {
+      "es": "/por-derecho/es/ricardo-de-mosteyrin-sampalo/",
+      "en": "/por-derecho/en/ricardo-de-mosteyrin-sampalo/"
+    }
+  },
+  "public_professional_academic_record": [
+    {
+      "date": "2016-11-30",
+      "fact": "Doctoral thesis defended at UNED: El blanqueo de capitales y el delito de fraude fiscal.",
+      "sources": [
+        "https://dialnet.unirioja.es/servlet/tesis?codigo=109395",
+        "https://e-spacio.uned.es/entities/publication/1a49666a-3354-4764-b78d-1d532250672f/full"
+      ]
+    },
+    {
+      "date": "2016",
+      "fact": "A published article identifies him as Fiscal de delitos económicos, Fiscalía Provincial de Las Palmas.",
+      "source": "https://dialnet.unirioja.es/descarga/articulo/6144605.pdf"
+    },
+    {
+      "date": "2026-08-31",
+      "fact": "The user-supplied Dialnet metric observation displayed five citations for the thesis.",
+      "source": "https://dialnet.unirioja.es/metricas/documentos/TES/109395",
+      "boundary": "Citation metrics are dynamic and establish no fact about the Sun Park/LPB matter."
+    }
+  ],
+  "matter_specific_record": [
+    {
+      "date": "2019-03-12",
+      "status": "DOCUMENTED_SIGNED_ACT",
+      "fact": "Signed the two-page Fiscal Calificación opinion seeking 15 years, damages and insolvency-deficit liability."
+    },
+    {
+      "date": "2023-07-25",
+      "status": "INSTITUTIONAL_ATTENDANCE_PLUS_DIRECT_IDENTIFICATION_OFFICIAL_INDIVIDUAL_CORROBORATION_OPEN",
+      "fact": "Judgment 163/2023 records Ministerio Fiscal attendance; Gil Marer directly identifies Ricardo de Mosteyrín Sampalo as present throughout the hearing."
+    },
+    {
+      "date": "2026-08-31",
+      "status": "ATTRIBUTED_ALLEGATION_NOT_ADJUDICATED_FINDING",
+      "fact": "Gil Marer and Aweswell Limited allege that the 2019 opinion was at minimum gravely reckless and may already have been criminal; that the criminal threshold had been crossed before or, at the latest, at the 2023 hearing; and that the Calificación was actively instrumentalised as an institutional shield."
+    }
+  ],
+  "knowledge_boundary": "Public specialist training and a date-specific professional title are relevant competence context. They do not prove receipt or reading of a particular filing, matter-specific knowledge, intent, coordination, wrongdoing, causation or criminal liability.",
+  "open_production": [
+    "complete source and review file behind the 12 March 2019 opinion",
+    "certified 25 July 2023 appearance/minutes and audiovisual record",
+    "Fiscalía allocation, substitution and attendance record",
+    "register 918/2021 service, access and treatment evidence",
+    "speaker-attributed transcript and exact final oral position",
+    "actor-specific explanation, correction or contrary evidence"
+  ]
+}

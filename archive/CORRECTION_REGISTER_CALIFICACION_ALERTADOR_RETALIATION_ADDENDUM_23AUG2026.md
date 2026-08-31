@@ -144,3 +144,27 @@ Use both layers and do not collapse them:
 The public site may state Gil's identification firmly as his direct evidence. It must not describe the identity as officially certified until the appearance list, Fiscalía allocation/substitution record or equivalent official source is produced. Presence does not itself prove review of register 918/2021, the exact oral position, causal retaliation, criminal intent or agreement.
 
 The 12-Mar-2019 opinion is the pre-reporting baseline. The maximum actor-specific allegation from the hearing onward is that any proved maintenance, adoption, reaffirmation, use or failure to correct after personal knowledge of the alert chain should be examined as alleged knowing instrumentalisation and possible Article 36.2 retaliation. That is Gil Marer's attributed allegation, not established liability. Article 38.4 remains conditional and rebuttable; any criminal characterisation requires separate offence elements and mental state.
+
+## CR-CAL-RET-020 — The alleged criminal threshold is before or, at the latest, at the 25-Jul-2023 hearing
+
+The final paragraph of CR-CAL-RET-019 is superseded only as to the timing and ceiling of Gil Marer's allegation. Gil's current position is that the 12-Mar-2019 Fiscal opinion was at minimum gravely reckless and may already have been criminal, and that Ricardo de Mosteyrín Sampalo had crossed the criminal threshold before or, at the latest, through the 25-Jul-2023 hearing. The later record does not create that threshold; it is used to test repeated notice, opportunity to correct, alleged maintenance or renewal of the shield and downstream harm.
+
+This correction strengthens the attributed allegation but does not close official hearing identity, personal knowledge, exact oral act, offence elements, causation or individual responsibility. Judgment 163/2023 proves institutional attendance, while Declaration 015 supplies Gil's first-hand personal identification; the certified appearance and audiovisual record remain open.
+
+## CR-CAL-RET-021 — Adverse-party posture is operational, not adjudicated collective guilt
+
+For preservation, notice, recovery and procedural-risk governance, Gil Marer and Aweswell Limited now treat Ministerio Fiscal/Fiscalía—especially the Canary Islands and Las Palmas offices—as an adverse institutional actor or counterparty in this matter. Do not continue to describe Fiscalía as a neutral recipient of the allegation.
+
+The posture does not itself establish collective or individual guilt, knowledge, intent, coordination, criminality, causation or liability. Every proposition remains actor-, act-, date-, source-, duty- and consequence-specific. Preserve exculpatory material, lawful explanations, contrary decisions and the right of reply with equal source discipline.
+
+## CR-CAL-RET-022 — Public full notice is not formal service, receipt or personal access
+
+The 31-Aug-2026 bilingual publication is express public notice of the adopted position. It must be tracked through separate states: `POSITION_ADOPTED`, `PUBLICLY_PUBLISHED`, `PREPARED_FOR_DELIVERY`, `REGISTERED_OR_SERVED`, `INSTITUTIONALLY_RECEIVED`, `PERSONALLY_ACCESSED` and `SUBSTANTIVELY_ANSWERED`.
+
+No state may be inferred from an earlier one. In particular, a live page does not prove a RedSARA or court filing, incorporation into an institutional file, allocation to a prosecutor, personal reading or a substantive answer. Record each advancement only from its own receipt, signed act, access trace or acknowledgment.
+
+## CR-CAL-RET-023 — The DP 1901/2026 warning is an enablement hypothesis, not a merged proceeding
+
+Gil expressly warns that any informed act or omission that suppresses, fragments, reclassifies, neutralises or leaves uninvestigated the actor-specific economic-crime allegations in DP 1901/2026 may actively enable the alleged scheme, protect its alleged beneficiaries and contribute to continuing patrimonial harm.
+
+Publish that warning as Gil's attributed causal and criminal hypothesis, not as a proved result. DP 1901/2026 remains separate from Calificación, DP 1956/2026, DIP 2/2026, RPL 2523/2025, Madrid DP 913/2025 and every judicial or disciplinary route. A connection exists only to the extent shown by a primary documentary bridge. The signed DP 1901 Fiscal report, author, complete source corpus and later judicial decision remain unlocated in the controlled record.

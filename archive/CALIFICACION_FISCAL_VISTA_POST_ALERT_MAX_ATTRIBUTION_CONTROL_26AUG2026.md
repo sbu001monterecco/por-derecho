@@ -1,5 +1,7 @@
 # Calificación — Fiscal at the 25 July 2023 hearing and maximum post-alert attribution
 
+> **31-Aug-2026 supersession note:** the adverse-party/full-notice control supersedes this dated record only where it placed the maximum actor-specific allegation at or after the hearing. Gil Marer's current allegation is that the 12-Mar-2019 opinion was at minimum gravely reckless and may already have been criminal, and that Ricardo de Mosteyrín Sampalo crossed the alleged criminal threshold before or, at the latest, through the 25-Jul-2023 hearing. Post-hearing events evidence notice, correction opportunities, alleged maintenance and downstream harm; they do not create the threshold. Official-identity, personal-knowledge, exact-act, causation, contrary-evidence and non-finding safeguards remain controlling.
+
 **Control date:** 26 August 2026
 **Status:** PUBLICATION CONTROL — PRE-MERGE
 **Scope:** Ricardo de Mosteyrín Sampalo; 12-Mar-2019 Fiscal opinion; 2020–2021 RICPE/CNMV/AEAT/register-918 notice chain; 25-Jul-2023 hearing; Judgment 163/2023; Law 2/2023 Article 36.2; bilingual Calificación, hearing, criminal-misuse and maximal-attribution routes.

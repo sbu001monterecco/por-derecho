@@ -1,11 +1,11 @@
 {
   "schema": "por-derecho.calificacion-criminal-misuse-thesis.v1",
-  "control_date": "2026-08-24",
+  "control_date": "2026-08-31",
   "proceeding": "Concurso 36/2012 · Sentencia 163/2023 · AP Las Palmas Section 4 · RPL 2523/2025",
   "status": "SERIOUS_DOCUMENT_BASED_INVESTIGATIVE_THESIS_NOT_ADJUDICATED_CRIMINAL_FACT",
   "position_and_objectives": {
     "es": {
-      "position": "Nuestra posición no es que toda resolución adversa sea delictiva. La secuencia documental exige investigar de forma independiente si la pieza de calificación fue utilizada para invertir la atribución de responsabilidad y desviar el escrutinio, incluida la severidad del dictamen fiscal de dos páginas, su motivación individual visible muy limitada y su defecto textual interno sobre la descripción del actor. No se pide a ninguna autoridad que acepte esa conclusión de antemano; se exige la producción capaz de confirmarla, limitarla o descartarla.",
+      "position": "Nuestra posición no es que toda resolución adversa sea delictiva. Gil sostiene que el dictamen fiscal de 2019 fue, como mínimo, gravemente imprudente y pudo ser ya delictivo; que, tras la cadena de alertas CNMV/AEAT/Concurso, el Fiscal había cruzado la línea penal antes o, a más tardar, en la vista de 25 de julio de 2023; y que la Calificación fue activamente instrumentalizada contra LPB, los afectados y Gil como alertador, proporcionando un escudo institucional al perímetro Acosta Matos/RICPE. Para preservación, aviso y recuperación, Ministerio Fiscal/Fiscalía se trata como actor institucional adverso. Es posición y alegación de Gil, no culpabilidad adjudicada.",
       "objectives": [
         "expediente completo y certificado",
         "resolución independiente y motivada de RPL 2523/2025",
@@ -17,7 +17,7 @@
       ]
     },
     "en": {
-      "position": "Our position is not that every adverse decision is criminal. The documentary sequence requires an independent investigation into whether the Calificación process was used to invert responsibility and divert scrutiny, including the severity of the two-page Fiscal opinion, its very limited visible individual reasoning and its facial actor-description defect. No institution is asked to accept that conclusion in advance; each is required to produce the records capable of proving, narrowing or disproving it.",
+      "position": "Our position is not that every adverse decision is criminal. Gil's position is that the 2019 Fiscal opinion was, at minimum, gravely reckless and may already have been criminal; that, after the CNMV/AEAT/insolvency-court alert chain, the Fiscal had crossed the criminal line before or, at the latest, at the 25 July 2023 hearing; and that the Calificación was actively instrumentalised against LPB, the affected persons and Gil as alertador, furnishing an institutional shield to the Acosta Matos/RICPE perimeter. For preservation, notice and recovery, Ministerio Fiscal/Fiscalía is treated as an adverse institutional actor. This is Gil's position and allegation, not adjudicated guilt.",
       "objectives": [
         "complete certified record",
         "independent and reasoned determination of RPL 2523/2025",
@@ -29,6 +29,19 @@
       ]
     },
     "controlling_hypothesis": "TRANSFER_OF_VALUE_PLUS_INVERSION_OF_RESPONSIBILITY_PLUS_DIVERSION_OF_SCRUTINY"
+  },
+  "fiscal_threshold_and_notice": {
+    "threshold_allegation": "BEFORE_OR_AT_LATEST_DURING_25_JULY_2023_HEARING",
+    "post_hearing_function": "CONTINUING_NOTICE_OPPORTUNITY_TO_CORRECT_AND_ALLEGED_MAINTENANCE_OF_SHIELD",
+    "operating_posture": "ADVERSE_INSTITUTIONAL_ACTOR_FOR_PRESERVATION_NOTICE_AND_RECOVERY",
+    "dp1901_warning": "Any informed act or omission that suppresses, fragments, reclassifies, neutralises or leaves uninvestigated the actor-specific economic-crime allegations in DP 1901/2026 may, in Gil Marer's allegation, actively enable the scheme and contribute to continuing patrimonial harm.",
+    "formal_service_by_publication": false,
+    "personal_knowledge_proved_by_publication": false,
+    "criminal_liability_adjudicated": false,
+    "public_routes": {
+      "es": "/por-derecho/es/ministerio-fiscal-aviso-expreso-dano-patrimonial/",
+      "en": "/por-derecho/en/public-prosecution-full-notice-patrimonial-harm/"
+    }
   },
   "appeal_status": {
     "court": "Audiencia Provincial de Las Palmas, Sección 4ª",

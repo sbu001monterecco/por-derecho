@@ -16,6 +16,20 @@
     "limit_es": "La inversión de roles no acredita por sí sola parcialidad, afinidad, collusión ni protección deliberada.",
     "limit_en": "The reversal of roles does not by itself establish bias, affinity, collusion or deliberate protection."
   },
+  "current_operating_posture": {
+    "effective_date": "2026-08-31",
+    "position_es": "Para preservación, aviso, recuperación y riesgo procesal, Gil Marer y Aweswell Limited tratan al Ministerio Fiscal/Fiscalía —especialmente Canarias/Las Palmas— como actor institucional adverso en este asunto. Alegan que el umbral penal se había cruzado antes o, a más tardar, en la vista de 25 julio 2023 y que la actuación posterior ha mantenido un escudo y contribuido al daño continuado.",
+    "position_en": "For preservation, notice, recovery and procedural-risk purposes, Gil Marer and Aweswell Limited treat Ministerio Fiscal/Fiscalía—especially the Canary Islands/Las Palmas offices—as an adverse institutional actor in this matter. They allege that the criminal threshold had been crossed before or, at the latest, at the 25 July 2023 hearing and that later conduct has maintained a shield and contributed to continuing harm.",
+    "status": "ATTRIBUTED_POSITION_NOT_ADJUDICATED_FINDING",
+    "dp1901_warning_es": "Cualquier acto u omisión informado que suprima, fragmente, reclasifique, neutralice o deje sin investigar las alegaciones actor-específicas de delitos económicos en DP 1901/2026 puede, según la alegación de Gil, habilitar activamente el esquema y contribuir al daño patrimonial continuado.",
+    "dp1901_warning_en": "Any informed act or omission that suppresses, fragments, reclassifies, neutralises or leaves uninvestigated the actor-specific economic-crime allegations in DP 1901/2026 may, in Gil's allegation, actively enable the scheme and contribute to continuing patrimonial harm.",
+    "delivery_boundary_es": "La publicación es aviso público de la posición; no prueba servicio formal, recepción en expediente, acceso personal ni respuesta sustantiva.",
+    "delivery_boundary_en": "Publication is public notice of the position; it does not prove formal service, receipt into a file, personal access or substantive response.",
+    "public_routes": {
+      "es": "/por-derecho/es/ministerio-fiscal-aviso-expreso-dano-patrimonial/",
+      "en": "/por-derecho/en/public-prosecution-full-notice-patrimonial-harm/"
+    }
+  },
   "episodes": [
     {
       "id": "first-frame-2013",
