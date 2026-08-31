@@ -479,8 +479,8 @@ jobs:
               for key in ('eligible', 'confirmed', 'pending', 'suspended')
           } == {
               'eligible': 101,
-              'confirmed': 40,
-              'pending': 61,
+              'confirmed': 43,
+              'pending': 58,
               'suspended': 0,
           }
 
@@ -582,7 +582,7 @@ jobs:
               'hubs': 3,
               'graph': '10/12',
               'spine_caret': '39/65',
-              'professional_caret': '40/101',
+              'professional_caret': '43/101',
               'actions': 31,
               'communication_authorized': False,
               'filing_authorized': False,

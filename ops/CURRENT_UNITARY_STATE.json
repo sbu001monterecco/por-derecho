@@ -260,8 +260,8 @@
     ],
     "separate_caret_scopes": {
       "unitary": {
-        "confirmed": 21,
-        "pending": 3,
+        "confirmed": 20,
+        "pending": 4,
         "denominator": 24
       },
       "specialist_six_surface": {

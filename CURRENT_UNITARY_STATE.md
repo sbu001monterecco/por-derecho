@@ -177,8 +177,11 @@ Archive backfill remains open. Identity resolves identity
 only; it does not transfer knowledge, intention, control, benefit,
 responsibility or liability.
 
-The identity counts do not merge three distinct caret scopes. The repository-
-wide unitary control remains 21/24; the six-surface Magistrate-Judge López
+The identity counts do not merge three distinct caret scopes. As corrected on
+31 August 2026, the repository-wide unitary control is 20/24 with four pending:
+Clubotel La Dorada, S.L. is exact at `PD-SP-O-0075` for the instrument-specific
+role, while the distinct Ona Hotels / ONA perimeter remains pending at
+`PD-SP-O-0033`. The six-surface Magistrate-Judge López
 Villarrubia / Meeting Point control is 31/31; and the full eighteen-route
 first-hop evidence corpus is 61/130. The unitary and first-hop scopes remain
 **PARTIAL — NOT ALL IS^**; the separately bounded six-surface identity census

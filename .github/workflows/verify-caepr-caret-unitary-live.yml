@@ -55,6 +55,8 @@ jobs:
                       'Matkator, S.L.U.',
                       'Ona Hotels / ONA',
                       'Clubotel La Dorada, S.L.',
+                      '20/24',
+                      'four explicit exceptions',
                       'PP 1041/2017',
                       'EH 90/2012',
                       '../matter-identity-registry/#PD-SP-O-0001',
@@ -73,6 +75,8 @@ jobs:
                       'Matkator, S.L.U.',
                       'Ona Hotels / ONA',
                       'Clubotel La Dorada, S.L.',
+                      '20/24',
+                      'cuatro excepciones expresas',
                       'PP 1041/2017',
                       'EH 90/2012',
                       '../registro-identidad-materia/#PD-SP-O-0001',
@@ -85,7 +89,7 @@ jobs:
               'PD-SP-O-0001','PD-SP-O-0002','PD-SP-O-0006','PD-SP-O-0004',
               'PD-SP-O-0029','PD-SP-O-0030','PD-SP-O-0021','PD-SP-O-0007',
               'PD-SP-O-0005','PD-SP-O-0018','PD-SP-O-0032','PD-SP-O-0050',
-              'PD-SP-O-0020','PD-SP-O-0042','PD-SP-P-0011','PD-SP-I-0002',
+              'PD-SP-O-0020','PD-SP-O-0042','PD-SP-O-0075','PD-SP-P-0011','PD-SP-I-0002',
               'PD-SP-R-0001','PD-SP-R-0002','PD-SP-R-0007',
           ]
 
@@ -154,17 +158,54 @@ jobs:
                   registry['error'] = repr(exc)
                   healthy = False
 
+              unitary = {'url': BASE + 'assets/data/caepr-caret-unitary-digest-v1.json'}
+              try:
+                  status, body, _ = get(unitary['url'] + f'?verify={attempt}')
+                  data = json.loads(body.decode('utf-8'))
+                  result = data.get('result', {})
+                  confirmed_ids = {item.get('id') for item in data.get('confirmed_objects', [])}
+                  exceptions = data.get('exceptions', [])
+                  pending_by_id = {item.get('existing_id'): item for item in exceptions}
+                  checks = {
+                      'status_200': status == 200,
+                      'control_date': data.get('control_date') == '2026-08-31',
+                      'denominator_24': result.get('denominator') == 24,
+                      'confirmed_20': result.get('confirmed') == 20,
+                      'pending_4': result.get('pending') == 4,
+                      'suspended_0': result.get('suspended') == 0,
+                      'coverage_20_24': result.get('coverage_fraction') == '20/24',
+                      'confirmed_array_20': len(data.get('confirmed_objects', [])) == 20,
+                      'pending_array_4': len(exceptions) == 4,
+                      'confirmed_ids_exact': confirmed_ids == set(CONFIRMED_IDS),
+                      'clubotel_exact': 'PD-SP-O-0075' in confirmed_ids,
+                      'ona_not_collapsed': 'PD-SP-O-0033' not in confirmed_ids,
+                      'ona_pending': pending_by_id.get('PD-SP-O-0033', {}).get('state') == 'CARET_PENDING',
+                  }
+                  unitary.update({
+                      'status': status,
+                      'bytes': len(body),
+                      'checks': checks,
+                      'confirmed_array_count': len(data.get('confirmed_objects', [])),
+                      'pending_array_count': len(exceptions),
+                  })
+                  if not all(checks.values()):
+                      healthy = False
+              except Exception as exc:
+                  unitary['error'] = repr(exc)
+                  healthy = False
+
               last = {
                   'checked_at': now(),
                   'github_sha': os.environ.get('GITHUB_SHA'),
                   'attempt': attempt,
                   'healthy': healthy,
                   'expected_denominator': 24,
-                  'expected_confirmed': 19,
-                  'expected_pending': 5,
+                  'expected_confirmed': 20,
+                  'expected_pending': 4,
                   'expected_verdict': 'PARTIAL — NOT ALL IS^',
                   'pages': pages,
                   'registry': registry,
+                  'unitary': unitary,
               }
               if healthy:
                   break

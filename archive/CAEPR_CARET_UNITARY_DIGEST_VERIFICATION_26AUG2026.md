@@ -1,5 +1,17 @@
 # CAEPR `^` verification — unitary digest scope
 
+> **Correction addendum — 31 August 2026.** The 28 August summary below
+> overcounted the confirmed numerator by one. Its machine enumeration contains
+> **20 distinct confirmed objects**, not 21. Admission of Clubotel La Dorada,
+> S.L. (`PD-SP-O-0075`) confirms that exact legal person and its
+> instrument-specific ONA-side role for the signed 6 June 2018 instrument; it
+> does **not** resolve or collapse the separate `Ona Hotels / ONA` commercial
+> perimeter (`PD-SP-O-0033`). The corrected current result is **20/24 confirmed,
+> four pending, 83.333333…% — PARTIAL, NOT ALL IS^**. The 26 and 28 August
+> blocks remain below as dated historical snapshots; this addendum supersedes
+> only the 28 August arithmetic and pending-queue summary. Current machine
+> control: `assets/data/caepr-caret-unitary-digest-v1.json`.
+
 > **Superseding rerun — 28 August 2026.** Clubotel La Dorada, S.L.
 > (`PD-SP-O-0075`) now resolves both the exact legal person and the
 > instrument-specific ONA-side role for the signed 6 June 2018 operating

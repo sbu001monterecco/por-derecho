@@ -17,6 +17,19 @@
   },
   "checkpoint_id": "PD-SP-MF-SCAN-CHECKPOINT-001",
   "control_date": "2026-08-31",
+  "incremental_refresh_2026_08_31": {
+    "already_indexed_in_scope_events": 7,
+    "excluded_automated_repository_notifications": 4,
+    "exclusion_reason": "Automated GitHub list notifications matched only because repository text mentioned Ministerio Fiscal; they are not communications to or from a public institution and are not added to the institutional register or native-source manifest.",
+    "filing_status_change": false,
+    "new_filing_proof": false,
+    "new_in_scope_institutional_events": 0,
+    "pagination_complete": true,
+    "performed_at_utc": "2026-08-31T14:12:58Z",
+    "provider_locators_or_exact_subjects_published": false,
+    "scope": "Control-day overlap query for Ministerio Fiscal, Fiscalia, E.G. 745/2026 and REG-AGE references after the pagination-complete last-month scan.",
+    "search_hits": 11
+  },
   "last_month_mail_control": {
     "covered_date_from": "2026-07-31",
     "covered_date_through": "2026-08-31",
