@@ -193,7 +193,10 @@ Before merge, the dedicated workflow must prove at least:
   examination or knowledge;
 - exact Master/trace/isolation routes for 97 / 97, with dedicated dossier routes
   counted separately;
-- proposition membership still 26 / 97 and 71 no-coordinate gaps;
+- exact-file Decision-Dependency Register coverage 97 / 97, derived from the
+  controlled finite tests and exposed with Master/trace/isolation navigation;
+- shared proposition membership separately preserved at 43 / 97 with 54
+  no-coordinate gaps, without invented membership;
 - 31 verified and two pending-primary direct pairs preserved;
 - counsel/procurador gaps preserved;
 - renderer syntax and an exhaustive bilingual browser smoke over all exact IDs;
@@ -228,3 +231,59 @@ required gates and remaining lifecycle no longer depend on the originating chat.
 The release itself is still prepared, not merged or live-verified. Publication
 closeout can establish only `LIVE_VERIFIED_WITH_ACCEPTED_PUBLICATION_BOUNDARY_GAP`;
 the release remains not `DELETION_SAFE` while the accepted CSV is public.
+
+## 9. Post-merge renderer-parity correction
+
+The preceding prepared-state paragraph is preserved as the state at which the
+initial package was authored. The initial implementation subsequently passed its
+exact-head checks, merged through PR `#1277` as
+`b5a37e4e4aba587d24ae8861bc89ba81b087f659`, deployed through the exact-merge
+Pages run and was verified on the bilingual live routes. A later independent
+denominator audit nevertheless identified a substantive public-renderer gap:
+the generic exact-file trace and isolation panels displayed only six of the nine
+controlled institutional grades and did not display each grade's basis,
+limitation and source provenance. The Fiscalía matrix rendered nine grades, but
+that separate view did not cure the exact-file renderer omission. The earlier
+green smoke encoded the same six-axis assumption and therefore did not detect
+the defect.
+
+The corrective release must therefore complete all of the following before a
+final lifecycle closeout:
+
+- render all nine institutional grades, in controlled order, for every audited
+  exact-file trace and isolation panel in English and Spanish;
+- display the raw grade, exact localized basis, localized limitation and complete
+  controlled source/source-gap provenance for each grade;
+- require canonical status locations and exact status-to-basis equality, failing
+  closed to `INCOMPLETE` on any missing or mismatched field;
+- keep actor receipt, actor knowledge and actor-source availability separate,
+  including for future actor-profile data;
+- mutation-test missing axes, mismatched status, missing language/limitation,
+  missing source identity and missing actor fields;
+- preserve accessible axis-specific disclosures, visible text independent of
+  colour, mobile wrapping and the selected isolation result announcement; and
+- extend direct neutral-room, Case Prism, Master, trace and isolation navigation
+  across the material Calificación, insolvency-administrator, Fiscalía and
+  proceeding-specific dossier routes without inventing a single-file mapping for
+  a multi-file page; and
+- expose all 97 exact-file decision dependencies publicly while preserving the
+  separate 43 / 97 shared-proposition matrix denominator and 54 source-review
+  gaps.
+
+This corrective implementation is additive and changes no allegation,
+relationship classification, source status or actor attribution. The earlier
+`1dd43590f6960695dd10fb47330c73b4ff1e82c2` reconciliation observation is a
+historical checkpoint only and must not be used as a current-main claim. Before
+publication, the branch must be reconciled to the then-current `origin/main`,
+including the subsequently published E.G. 745 audit/interlink repair and every
+other intervening change. The closeout must name that final base SHA, identify
+any conflict resolution and verify that no later route, evidence or continuity
+control was overwritten.
+
+The corrective PR, exact-head CI, merge SHA/tree, exact Pages run and live
+readback are deliberately not asserted here until they occur. A later closeout
+must append those exact values, reconcile the final tree, and promote the
+machine-readable manifest only on evidence. The operational CSV exposure remains
+an accepted unresolved publication-boundary gap and continues to block
+`DELETION_SAFE` even if the intended interlinking surface becomes
+`LIVE_VERIFIED`.
