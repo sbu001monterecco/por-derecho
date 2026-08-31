@@ -30,6 +30,10 @@
 | ME-CAL-RET-022 | Certified whole-file denominator for pleading completeness | A repository count cannot prove the official court-file denominator | Certified chronological docket/index for every section and incident; reconcile every official entry to the 127-record catalogue and create gap rows for unmatched acts | OPEN / percentage cannot be calculated |
 | ME-CAL-RET-023 | Exact live parity for the bilingual RICPE routes | A reachable page may still differ from the source frozen for legal and publication review | Reconcile the live and repository ES/EN `ric-private-equity-sun-park` files; identify the intended version; obtain an authorised deployment; rerun the 85-surface hash verifier and record the deployed SHA | CLOSED — 85/85 HTTP 200 and exact source parity at 2026-08-24T04:10:36Z; PR 903 / merge `91334adaa3c82c6b7d4505666188a2d7e98daddb` |
 | ME-CAL-RET-024 | Official identity, knowledge and exact acts of the Public Prosecutor at the 25-Jul-2023 hearing | Declaration 015 supplies direct first-hand identification and the Judgment supplies institutional attendance, but neither closes official identity, personal knowledge or the exact adverse act | Certified appearance/minutes; Fiscalía allocation/substitution/attendance record; complete judicial audiovisual master; speaker-attributed transcript and final submissions; register 918/2021 service/access/treatment record; 2019→2023 position comparison; independent-grounds evidence | OPEN — direct identification recorded; official and act-by-act corroboration highest priority |
+| ME-CAL-RET-025 | DP 1901/2026 Fiscal report, source corpus and later judicial status | The 12-Jul-2026 order proves a five-day admission-report transfer in connection with DIP 2/2026, not what Fiscalía received, reported or what the court later decided | Signed Fiscal report; identified author/capacity; exact transferred index and attachments; filing/service timestamps; later signed court act; notice, appeal and finality status | OPEN — highest priority for the active-enablement warning |
+| ME-CAL-RET-026 | Formal delivery, institutional receipt, personal access and answer to the 31-Aug-2026 full notice | Public posting does not establish any delivery or knowledge state beyond publication | Final recipient package; exact approval; RedSARA/court/acknowledged-email receipt; file reference and allocation; access or actor-specific acknowledgment; signed substantive response | OPEN — publication is tracked separately |
+| ME-CAL-RET-027 | Aweswell-perimeter continuing-harm and no-double-count ledger | A general patrimonial-harm allegation does not allocate ownership, causation or quantum among Aweswell, LPB, Matkator, Pink, Gil or other claimants | Claimant; legal right/asset; harmful act; date; responsible actor; causal mechanism; counterfactual; loss category; amount; mitigation; recovery route; overlap and double-recovery control | OPEN — no aggregate quantum authorised |
+| ME-CAL-RET-028 | Actor-specific institutional-shield and DP 1901 enablement matrix | Adverse institutional posture and temporal sequence do not prove an enabling mechanism, duty, knowledge, intent or benefit | For each office/person: exact act or omission; competence/duty; source receipt and personal knowledge; available lawful alternative; mechanism; counterfactual; downstream use; harm/benefit; lawful explanation; contrary evidence; response | OPEN / continuous |
 
 ## Closure sequence
 
@@ -42,6 +46,9 @@
 7. Close `018` and `019`: native media transmission and Madrid appellate status.
 8. Close `020`–`023`: public-text decisions, bidirectional links, certified docket denominator and exact live-version parity.
 9. Close `024` together with `003` and `008`: official Fiscal identity, personal knowledge and exact hearing acts.
+10. Close `025` before characterising the current DP 1901 Fiscalía position or judicial outcome.
+11. Advance `026` state by state; never infer service, receipt or personal access from publication.
+12. Build `027` and `028` before publishing claimant-level quantum or treating enablement and causation as proved.
 
 ## Completion scoring model
 

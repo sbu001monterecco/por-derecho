@@ -1,0 +1,57 @@
+{
+  "schema": "por-derecho.publication-manifest.v1",
+  "publication_id": "ministerio-fiscal-adverse-party-full-notice-20260831",
+  "title": "Ministerio Fiscal adverse-party posture, full notice, E.G. 745 parallel response and Ricardo de Mosteyrín actor page",
+  "current_state": "PREPARED_PENDING_MERGE",
+  "owner": "Gil Marer / Por Derecho",
+  "control_date": "2026-08-31",
+  "repository": "sbu001monterecco/por-derecho",
+  "base_main_sha": "b8d3276a65cf8dbb1e92fa905fbcfd3dafbbcd63",
+  "expected_routes": {
+    "es": [
+      "es/ministerio-fiscal-aviso-expreso-dano-patrimonial/index.html",
+      "es/ricardo-de-mosteyrin-sampalo/index.html",
+      "es/tesis-uso-criminal-procedimiento-calificacion/index.html",
+      "es/dp-1901-2026/index.html",
+      "es/fiscalia-inspeccion-exp-gub-745-2026/index.html",
+      "es/fiscalia-inspeccion-exp-gub-745-2026/persecucion-abierta-transparencia-31-agosto-2026.html"
+    ],
+    "en": [
+      "en/public-prosecution-full-notice-patrimonial-harm/index.html",
+      "en/ricardo-de-mosteyrin-sampalo/index.html",
+      "en/insolvency-classification-criminal-misuse-thesis/index.html",
+      "en/dp-1901-2026/index.html",
+      "en/public-prosecution-inspection-exp-gub-745-2026/index.html",
+      "en/public-prosecution-inspection-exp-gub-745-2026/open-prosecution-transparency-31-august-2026.html"
+    ]
+  },
+  "controls": [
+    ".github/governance/MINISTERIO_FISCAL_ADVERSE_PARTY_FULL_NOTICE_PROTOCOL_31AUG2026.md",
+    "archive/prompts/MINISTERIO_FISCAL_ADVERSE_PARTY_FULL_NOTICE_EXECUTION_PROMPT_31AUG2026.md",
+    "assets/data/ministerio-fiscal-adverse-party-full-notice-v1.json",
+    "assets/data/ricardo-de-mosteyrin-sampalo-v1.json",
+    "assets/data/matter-identity-registry-v1.people.json",
+    "archive/CORRECTION_REGISTER_CALIFICACION_ALERTADOR_RETALIATION_ADDENDUM_23AUG2026.md",
+    "archive/MISSING_EVIDENCE_REGISTER_CALIFICACION_ALERTADOR_RETALIATION_ADDENDUM_23AUG2026.md"
+  ],
+  "boundaries": {
+    "adverse_posture": "Operational posture for preservation, notice, recovery and procedural risk; not adjudicated institutional or collective guilt.",
+    "threshold": "Gil/Aweswell allege that the criminal threshold was crossed before or, at the latest, at the 25 July 2023 hearing; later acts are notice, correction-opportunity and alleged-maintenance evidence.",
+    "dp1901": "Active-enablement warning is an attributed hypothesis; DP 1901 remains separate and its signed Fiscal report and later order are unlocated in the controlled record.",
+    "eg745": "Parallel lanes do not merge proceedings. Reconsideration and access/preservation are prepared/outstanding and not verified filed.",
+    "person_page": "Public specialist background is competence context only and does not prove matter-specific knowledge, intent, coordination, wrongdoing, causation or guilt.",
+    "notice_state": "Public publication is not formal service, institutional receipt, personal access or substantive answer.",
+    "outbound": "No email, filing, complaint, service or authority contact is authorised or performed by this release."
+  },
+  "release": {
+    "branch": "codex/fiscalia-full-notice-20260831",
+    "pull_request": null,
+    "reviewed_head_sha": null,
+    "merge_sha": null,
+    "pages_run": null
+  },
+  "live_verification": {
+    "status": "PENDING",
+    "routes": {}
+  }
+}

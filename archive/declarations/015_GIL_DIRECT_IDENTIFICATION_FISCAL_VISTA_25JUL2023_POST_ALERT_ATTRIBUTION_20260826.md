@@ -1,5 +1,7 @@
 # DECLARATION 015 — GIL MARER DIRECT IDENTIFICATION OF THE PUBLIC PROSECUTOR AT THE 25 JULY 2023 HEARING
 
+> **31-Aug-2026 declarant correction:** this declaration remains the direct identification source, but its dated description of the criminal allegation as arising “from the hearing onward” is superseded. Gil's current position is that the 2019 opinion was at minimum gravely reckless and may already have been criminal, and that the criminal threshold had been crossed before or, at the latest, during the hearing. Later conduct is continuity, notice, opportunity-to-correct and alleged-maintenance evidence. The source limits on official identity, personal knowledge, exact acts, causation and liability remain unchanged.
+
 **Declarant:** Gil Marer
 **Date:** 26 August 2026
 **Source mode:** direct written confirmation supplied by the declarant in the current controlled thread and adopted here without substantive alteration

@@ -1,0 +1,32 @@
+name: Validate Ministerio Fiscal adverse-party full notice
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ministerio-fiscal-adverse-party-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: '3.12'
+      - name: Validate adverse posture, notice states, E.G. 745 lanes and actor page
+        run: |
+          python scripts/validate_ministerio_fiscal_adverse_party_full_notice.py
+          python scripts/validate_calificacion_criminal_misuse_thesis.py
+          python scripts/validate_calificacion_position_objectives.py
+          python scripts/validate_eg745_public_visual.py

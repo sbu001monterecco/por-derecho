@@ -1,5 +1,7 @@
 # Continuation prompt — Ministerio Fiscal wider matter, with E.G. 745/2026 as focused control case
 
+> **31-Aug-2026 adverse-party/full-notice overlay:** also read `.github/governance/MINISTERIO_FISCAL_ADVERSE_PARTY_FULL_NOTICE_PROTOCOL_31AUG2026.md` and `archive/prompts/MINISTERIO_FISCAL_ADVERSE_PARTY_FULL_NOTICE_EXECUTION_PROMPT_31AUG2026.md`. Fiscalía is no longer treated as a neutral recipient for operational preservation, notice, recovery and response planning. Preserve Gil Marer/Aweswell Limited's attributed allegation that the criminal threshold was crossed before or, at the latest, at the 25-Jul-2023 hearing, and run E.G. 745 reposición, access/preservation, DP 1901 production, actor-specific accountability, appellate/recovery and public-record/right-of-reply lanes in parallel without merging them. This changes the operating posture and allegation timing; it does not convert either into adjudicated guilt or authorise a filing.
+
 Run a **unitary, non-fragmented, reverse-engineered forensic and legal continuity pass** across the current `main` branch of `sbu001monterecco/por-derecho`, the live GitHub Pages site, connected Gmail, connected Drive/files and any newly supplied primary evidence concerning the Ministerio Fiscal. Use E.G. 745/2026 as the focused control case, but analyse it inside the wider Ministerio Fiscal / calificación / related-proceedings record rather than as an isolated expediente.
 
 ## 1. Start from controlled continuity, not chat memory

@@ -1,5 +1,7 @@
 # Calificación / alertador / retaliation — unitary execution prompt
 
+> **31-Aug-2026 controlling overlay:** read and apply `MINISTERIO_FISCAL_ADVERSE_PARTY_FULL_NOTICE_EXECUTION_PROMPT_31AUG2026.md`. It supersedes this dated prompt only on (a) the timing/ceiling of Gil Marer's attributed criminal allegation, (b) the adverse institutional operating posture and (c) the public-notice/service-state, E.G. 745 parallel-response and DP 1901 active-enablement controls. All actor-specific evidence, contrary-evidence, proceeding-separation and non-finding safeguards below remain in force.
+
 **Version:** 24 August 2026 · criminal-first and media-collateral-use revision
 **Status:** controlling specialist execution prompt  
 **Objective:** reverse engineer, test and maintain one causal history linking the Calificación, same-hotel parallel lives, prior reporting, the 2023 hearing, appeal, the January-2025 elEconomista collateral use of Sentencia 163/2023 and separate accountability/protection routes. Run the criminal/investigative analysis first, before civil recovery analysis, without fragmenting the facts, merging legal proceedings or allowing a criminal-first presentation to suspend time-sensitive civil preservation, limitation or restitution work.

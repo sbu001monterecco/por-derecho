@@ -1,0 +1,73 @@
+{
+  "schema": "por-derecho.ministerio-fiscal-adverse-party-full-notice.v1",
+  "control_date": "2026-08-31",
+  "owner": "Gil Marer / Por Derecho",
+  "operating_posture": "ADVERSE_INSTITUTIONAL_ACTOR_OR_COUNTERPARTY_FOR_PRESERVATION_NOTICE_AND_RECOVERY",
+  "formal_finding": false,
+  "position": {
+    "es": "Gil Marer y Aweswell Limited alegan que el dictamen fiscal de 12 de marzo de 2019 fue, como mínimo, gravemente imprudente y pudo ser ya delictivo; que Ricardo de Mosteyrín Sampalo había cruzado el umbral penal antes o, a más tardar, durante la vista de 25 de julio de 2023; y que la posición y actuación institucionales proporcionaron un escudo al perímetro Acosta Matos/RICPE y han causado o contribuido a un daño patrimonial, procesal y reputacional continuado. Es una alegación atribuida, no una declaración de culpabilidad.",
+    "en": "Gil Marer and Aweswell Limited allege that the 12 March 2019 Fiscal opinion was, at minimum, gravely reckless and may already have been criminal; that Ricardo de Mosteyrín Sampalo had crossed the criminal threshold before or, at the latest, during the 25 July 2023 hearing; and that the institutional position and conduct provided a shield to the Acosta Matos/RICPE perimeter and have caused or contributed to continuing patrimonial, procedural and reputational harm. This is an attributed allegation, not a finding of guilt."
+  },
+  "dp1901": {
+    "proceeding": "DP 1901/2026",
+    "nig": "3501643220260016977",
+    "documented": "A primary order dated 12 July 2026 transferred the admission question to Ministerio Fiscal for a five-day report, expressly in connection with DIP 2/2026.",
+    "open": [
+      "signed Fiscal report",
+      "authoring prosecutor",
+      "complete source corpus supplied",
+      "position adopted",
+      "later judicial order and current status"
+    ],
+    "warning_es": "Fiscalia queda expresamente advertida de la alegacion de Gil: cualquier acto u omision informado que suprima, fragmente, reclasifique, neutralice o deje sin investigar las alegaciones actor-especificas de delitos economicos de DP 1901/2026 puede habilitar activamente el esquema alegado, proteger a sus presuntos beneficiarios y contribuir al dano patrimonial continuado.",
+    "warning_en": "Fiscalia is expressly warned of Gil's allegation: any informed act or omission that suppresses, fragments, reclassifies, neutralises or leaves uninvestigated the actor-specific economic-crime allegations in DP 1901/2026 may actively enable the alleged scheme, protect its alleged beneficiaries and contribute to continuing patrimonial harm."
+  },
+  "notice_states": {
+    "position_adopted": true,
+    "publicly_published": false,
+    "prepared_for_delivery": false,
+    "registered_or_served_by_this_release": false,
+    "institutionally_received_from_this_release": false,
+    "personally_accessed": false,
+    "substantively_answered": false
+  },
+  "eg745_parallel_response": {
+    "reconsideration": "PREPARED_OUTSTANDING_NOT_VERIFIED_FILED",
+    "access_preservation": "DRAFT_PREPARED_NOT_VERIFIED_FILED",
+    "direct_contentious_route": "DEFERRED_PREFERENCE_DEADLINE_STANDING_AND_REPRESENTATION_COUNSEL_VERIFY",
+    "parallel_lanes": [
+      "E.G. 745 reconsideration",
+      "access and preservation",
+      "DP 1901 signed-report/source-corpus/later-order production",
+      "actor-specific accountability",
+      "RPL 2523 and claimant-specific recovery",
+      "public notice and right of reply"
+    ]
+  },
+  "evidence_boundaries": [
+    "Public publication is not proof of formal service, institutional receipt or personal access.",
+    "Institutional receipt of earlier submissions is not automatic personal knowledge by Ricardo de Mosteyrín or another prosecutor.",
+    "DP 1901/2026 remains separate from Calificacion, DP 1956/2026, DIP 2/2026, RPL 2523/2025, Madrid DP 913/2025 and judicial or disciplinary routes.",
+    "The signed DP 1901 prosecution report and later judicial decision are not located in the controlled public record.",
+    "The adverse first-instance Judgment 163/2023 and unresolved RPL 2523/2025 appeal remain visible.",
+    "No guilt, common design, personal coordination, active enablement, causation or criminal liability is presented as adjudicated fact."
+  ],
+  "required_links": {
+    "es": [
+      "/por-derecho/es/tesis-uso-criminal-procedimiento-calificacion/",
+      "/por-derecho/es/dp-1901-2026/",
+      "/por-derecho/es/fiscalia-inspeccion-exp-gub-745-2026/",
+      "/por-derecho/es/ricardo-de-mosteyrin-sampalo/",
+      "/por-derecho/es/carta-abierta-ministerio-fiscal/",
+      "/por-derecho/es/justicia-registro-institucional/"
+    ],
+    "en": [
+      "/por-derecho/en/insolvency-classification-criminal-misuse-thesis/",
+      "/por-derecho/en/dp-1901-2026/",
+      "/por-derecho/en/public-prosecution-inspection-exp-gub-745-2026/",
+      "/por-derecho/en/ricardo-de-mosteyrin-sampalo/",
+      "/por-derecho/en/open-letter-public-prosecution-service/",
+      "/por-derecho/en/justice-institutional-record/"
+    ]
+  }
+}
