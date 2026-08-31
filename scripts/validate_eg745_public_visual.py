@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate the prepared E.G. 745/2026 privacy-controlled visual release."""
+"""Validate the LIVE_VERIFIED E.G. 745/2026 privacy-controlled visual release."""
 
 from __future__ import annotations
 
@@ -17,6 +17,13 @@ ROOT = Path(__file__).resolve().parents[1]
 ASSET_DIR = ROOT / "evidence/fiscalia/2026/eg745-visual-assets"
 PUBLICATION_MANIFEST = (
     ROOT / "publication-manifests/eg-745-2026-visual-publication-20260831.json"
+)
+OPEN_TRANSPARENCY_MANIFEST = (
+    ROOT / "publication-manifests/eg-745-2026-open-transparency-20260831.json"
+)
+DEPLOYMENT_ATTESTATION = (
+    ROOT
+    / "publication-manifests/eg-745-2026-visual-deployment-attestation-20260831.json"
 )
 HASH_MANIFEST = ASSET_DIR / "eg745-public-visual-sha256.json"
 
@@ -85,8 +92,12 @@ def sha256(path: Path) -> str:
 def validate_hashes() -> None:
     manifest = json.loads(PUBLICATION_MANIFEST.read_text(encoding="utf-8"))
     require(
-        manifest["current_state"] == "PREPARED_PENDING_MERGE",
-        "visual publication must remain PREPARED_PENDING_MERGE before deployment",
+        manifest["current_state"] == "LIVE_VERIFIED",
+        "visual publication must be LIVE_VERIFIED after exact-SHA deployment",
+    )
+    require(
+        manifest["deployment_gate"]["status"] == "CLOSED_VERIFIED",
+        "visual deployment gate must be CLOSED_VERIFIED",
     )
     controls = json.loads(HASH_MANIFEST.read_text(encoding="utf-8"))
     require(controls["source"]["public"] is False, "native source must remain private")
@@ -114,6 +125,95 @@ def validate_hashes() -> None:
             controls["outputs"][local_name]["sha256"] == item["sha256"],
             f"hash-control mismatch: {local_name}",
         )
+
+
+def validate_deployment_attestation() -> None:
+    manifest = json.loads(PUBLICATION_MANIFEST.read_text(encoding="utf-8"))
+    open_manifest = json.loads(OPEN_TRANSPARENCY_MANIFEST.read_text(encoding="utf-8"))
+    attestation = json.loads(DEPLOYMENT_ATTESTATION.read_text(encoding="utf-8"))
+
+    require(
+        attestation["attestation_artifact_state_at_creation"] == "PREPARED_PENDING_MERGE",
+        "attestation artifact must preserve its non-self-attesting creation state",
+    )
+    require(
+        attestation["attested_release_state"] == "LIVE_VERIFIED",
+        "attested release state mismatch",
+    )
+    require(
+        attestation["target_deployment_gate"] == "CLOSED_VERIFIED",
+        "target deployment gate mismatch",
+    )
+    require(
+        attestation["attestation_artifact_publication_claim"] == "NONE",
+        "attestation must not self-attest publication",
+    )
+    release = attestation["target_release"]
+    require(
+        release["merge_sha"] == "6dc04a8a35c4a096631ca1852ec5fbee96c4965f",
+        "attested merge SHA mismatch",
+    )
+    require(
+        release["merge_tree_sha"] == "05b59b3f8ea073150022ff2815f4e45f2b88ce95",
+        "attested merge tree mismatch",
+    )
+    require(release["reviewed_tree_matches_merge_tree"] is True, "review/merge tree mismatch")
+    pages = attestation["exact_sha_pages"]
+    require(pages["run_id"] == 33411821984, "Pages run mismatch")
+    require(pages["run_number"] == 1336, "Pages run number mismatch")
+    require(pages["head_sha"] == release["merge_sha"], "Pages head/merge mismatch")
+    require(pages["conclusion"] == "success", "Pages deployment not successful")
+    readback = attestation["live_readback"]
+    require(readback["workflow_run_id"] == 33413265941, "readback run mismatch")
+    require(readback["target_sha"] == release["merge_sha"], "readback target mismatch")
+    require(readback["target_tree"] == release["merge_tree_sha"], "readback tree mismatch")
+    require(readback["state"] == "LIVE_BYTES_VERIFIED", "readback state mismatch")
+    require(readback["verified_public_file_count"] == 32, "readback count mismatch")
+    require(readback["expected_public_file_count"] == 32, "expected count mismatch")
+    require(readback["failure_count"] == 0, "readback failures present")
+    require(len(readback["durable_path_results"]) == 32, "durable path-result count mismatch")
+    require(
+        all(item["byte_identical_live"] for item in readback["durable_path_results"]),
+        "a durable path result is not byte-identical",
+    )
+    require(
+        readback["artifact"]["digest"]
+        == "sha256:3d0e853dca05fd8dd0d356ed6893e6653186b82da8b8ba1fbe3734444a60be39",
+        "readback artifact digest mismatch",
+    )
+    filing = attestation["filing_proof_control"]
+    require(filing["reconsideration"] == "PREPARED_NOT_VERIFIED_FILED", "filing boundary changed")
+    require(filing["new_filing_proof"] is False, "unexpected filing proof")
+    require(
+        filing["email_sent_by_this_continuation"] is False,
+        "this continuation unexpectedly sent email",
+    )
+    require(
+        filing["filing_made_by_this_continuation"] is False,
+        "this continuation unexpectedly made a filing",
+    )
+    require(
+        manifest["deployment_gate"]["attestation"]
+        == "publication-manifests/eg-745-2026-visual-deployment-attestation-20260831.json",
+        "publication-manifest attestation pointer mismatch",
+    )
+    require(
+        open_manifest["public_visual"]["status"] == "LIVE_VERIFIED_REPLACEMENT",
+        "open-transparency visual state mismatch",
+    )
+
+    expected_assets = {
+        item["path"].rsplit("/", 1)[-1]: item["sha256"]
+        for item in manifest["expected_assets"]
+    }
+    require(
+        attestation["asset_sha256"] == expected_assets,
+        "attestation/publication asset SHA-256 mismatch",
+    )
+    require(
+        open_manifest["public_visual"]["replacement_asset_sha256"] == expected_assets,
+        "open-transparency/publication asset SHA-256 mismatch",
+    )
 
 
 def validate_images() -> None:
@@ -175,14 +275,20 @@ def validate_viewers_and_status() -> None:
     required_assets = [PDF_FILE, *PNG_FILES, *WEBP_FILES]
     for viewer in VIEWERS:
         text = viewer.read_text(encoding="utf-8")
-        require("PREPARED_PENDING_MERGE" in text, f"missing pending status: {viewer}")
+        require("LIVE_VERIFIED" in text, f"missing live-verified status: {viewer}")
+        require("PREPARED_PENDING_MERGE" not in text, f"stale pending status: {viewer}")
         require(".b64" not in text, f"viewer still reconstructs Base64 assets: {viewer}")
         for filename in required_assets:
             require(filename in text, f"viewer does not reference {filename}: {viewer}")
     for page in STATUS_PAGES:
+        text = page.read_text(encoding="utf-8")
         require(
-            "PREPARED_PENDING_MERGE" in page.read_text(encoding="utf-8"),
-            f"status page does not carry pending visual state: {page}",
+            "LIVE_VERIFIED" in text,
+            f"status page does not carry live-verified visual state: {page}",
+        )
+        require(
+            "PREPARED_PENDING_MERGE" not in text,
+            f"status page retains stale pending visual state: {page}",
         )
     for sitemap in SITEMAPS:
         text = sitemap.read_text(encoding="utf-8")
@@ -203,13 +309,14 @@ def validate_inherited_page_3_correction() -> None:
 
 def main() -> None:
     validate_hashes()
+    validate_deployment_attestation()
     validate_images()
     validate_pdf()
     validate_viewers_and_status()
     validate_inherited_page_3_correction()
     print("E.G. 745 public visual validation: PASS")
     print("7 derivatives; 3 PNG; 3 WebP; 3-page raster-only PDF")
-    print("status: PREPARED_PENDING_MERGE")
+    print("status: LIVE_VERIFIED")
 
 
 if __name__ == "__main__":

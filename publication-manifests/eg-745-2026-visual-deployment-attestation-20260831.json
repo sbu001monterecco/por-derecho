@@ -1,0 +1,364 @@
+{
+  "schema": "por-derecho.eg745-visual-deployment-attestation.v1",
+  "attestation_id": "PD-SP-EG745-VISUAL-DEPLOYMENT-ATTESTATION-20260831-01",
+  "generated_at_utc": "2026-08-31T16:23:21Z",
+  "repository": "sbu001monterecco/por-derecho",
+  "attestation_artifact_state_at_creation": "PREPARED_PENDING_MERGE",
+  "attested_release_state": "LIVE_VERIFIED",
+  "target_deployment_gate": "CLOSED_VERIFIED",
+  "attested_release": "PR #1274 only",
+  "attestation_artifact_publication_claim": "NONE",
+  "top_level_current_state_meaning": "The lifecycle of this PR #1275-carried attestation is distinct from the already verified PR #1274 target release.",
+  "target_release": {
+    "pull_request": 1274,
+    "pull_request_url": "https://github.com/sbu001monterecco/por-derecho/pull/1274",
+    "title": "Publish E.G. 745 visual and close continuity controls",
+    "base_main_sha": "4df51da33391c41869470ed539ad31fc4157fbfd",
+    "reviewed_head_sha": "fd2c6d10375348d269867d06b464e55ead6b8643",
+    "reviewed_tree_sha": "05b59b3f8ea073150022ff2815f4e45f2b88ce95",
+    "merge_method": "squash",
+    "merge_sha": "6dc04a8a35c4a096631ca1852ec5fbee96c4965f",
+    "merge_tree_sha": "05b59b3f8ea073150022ff2815f4e45f2b88ce95",
+    "reviewed_tree_matches_merge_tree": true,
+    "first_parent_sha": "4df51da33391c41869470ed539ad31fc4157fbfd",
+    "parent_count": 1,
+    "merged_at_utc": "2026-08-31T16:02:08Z",
+    "commit_count_in_pull_request": 2,
+    "changed_path_count": 39,
+    "added_path_count": 15,
+    "modified_path_count": 24,
+    "removed_path_count": 0,
+    "additions": 1516,
+    "line_deletions": 114,
+    "pages_visible_changed_path_count": 32
+  },
+  "ci": {
+    "final_pull_request_head": {
+      "state": "SUCCESS",
+      "successful_runs": 38,
+      "total_runs": 38,
+      "failed": 0,
+      "skipped": 0,
+      "cancelled": 0,
+      "pending": 0
+    },
+    "exact_merge_sha": {
+      "state": "SUCCESS",
+      "successful_runs": 42,
+      "total_runs": 42,
+      "push_runs": 41,
+      "dynamic_pages_runs": 1,
+      "failed": 0
+    },
+    "visual_validator": {
+      "pull_request_run_id": 33411032280,
+      "merge_push_run_id": 33411824217
+    },
+    "repaired_stale_live_controls": [
+      {
+        "name": "AC Community",
+        "run_id": 33411824352
+      },
+      {
+        "name": "Criminal engineering",
+        "run_id": 33411824497
+      },
+      {
+        "name": "PR830",
+        "run_id": 33411824457
+      },
+      {
+        "name": "elEconomista",
+        "run_id": 33411824084
+      },
+      {
+        "name": "2022 adjudication",
+        "run_id": 33411824359
+      },
+      {
+        "name": "Playa Blanca",
+        "run_id": 33411824015
+      }
+    ]
+  },
+  "exact_sha_pages": {
+    "run_id": 33411821984,
+    "run_number": 1336,
+    "url": "https://github.com/sbu001monterecco/por-derecho/actions/runs/33411821984",
+    "workflow_name": "pages build and deployment",
+    "workflow_path": "dynamic/pages/pages-build-deployment",
+    "head_sha": "6dc04a8a35c4a096631ca1852ec5fbee96c4965f",
+    "status": "completed",
+    "conclusion": "success",
+    "created_at_utc": "2026-08-31T16:02:10Z",
+    "updated_at_utc": "2026-08-31T16:04:11Z"
+  },
+  "live_readback": {
+    "workflow_pull_request": 1275,
+    "workflow_run_id": 33413265941,
+    "workflow_run_url": "https://github.com/sbu001monterecco/por-derecho/actions/runs/33413265941",
+    "job_id": 99557742497,
+    "verifier_head_sha": "4e6c513cc111476f349fc7d347c722fd525ea18a",
+    "target_sha": "6dc04a8a35c4a096631ca1852ec5fbee96c4965f",
+    "target_tree": "05b59b3f8ea073150022ff2815f4e45f2b88ce95",
+    "state": "LIVE_BYTES_VERIFIED",
+    "successful_attempt": 1,
+    "verified_public_file_count": 32,
+    "expected_public_file_count": 32,
+    "failure_count": 0,
+    "durable_path_results": [
+      {
+        "byte_identical_live": true,
+        "bytes": 7882,
+        "git_blob_sha": "b62426ff24e4220ea66bdf95dbed6e0fd1e0afa2",
+        "path": "archive/EG_745_2026_OPEN_TRANSPARENCY_RELEASE_31AUG2026.md"
+      },
+      {
+        "byte_identical_live": true,
+        "bytes": 7958,
+        "git_blob_sha": "03a1cc81c774bdc9b1620873dc3d3b0523512762",
+        "path": "archive/EG_745_2026_UNITARY_REGISTER_DEPLOYMENT_ATTESTATION_31AUG2026.md"
+      },
+      {
+        "byte_identical_live": true,
+        "bytes": 4789,
+        "git_blob_sha": "9387ffa43a7a6a1f7c9211adaf3fb6099eb8b2a9",
+        "path": "archive/EG_745_2026_VISUAL_PUBLICATION_CONTINUITY_AUDIT_31AUG2026.md"
+      },
+      {
+        "byte_identical_live": true,
+        "bytes": 4491,
+        "git_blob_sha": "4aea0ca12e4a691d8c0aa7c0c398c7dec6091ce1",
+        "path": "archive/EG_745_2026_VISUAL_PUBLICATION_SUPERSEDING_PREMERGE_CONTROL_31AUG2026.md"
+      },
+      {
+        "byte_identical_live": true,
+        "bytes": 16181,
+        "git_blob_sha": "eaa8002146772a93f65d8517414d3d29d2188cdb",
+        "path": "assets/traceability-crosslinks-20260821.js"
+      },
+      {
+        "byte_identical_live": true,
+        "bytes": 7057,
+        "git_blob_sha": "924da34082445a20b549572ee5297f2650b3b2ab",
+        "path": "en/public-prosecution-inspection-exp-gub-745-2026/action-diary-29-august-2026.html"
+      },
+      {
+        "byte_identical_live": true,
+        "bytes": 16374,
+        "git_blob_sha": "f1247f7eb015bae6801175b2efe901c9ff2ea691",
+        "path": "en/public-prosecution-inspection-exp-gub-745-2026/index.html"
+      },
+      {
+        "byte_identical_live": true,
+        "bytes": 13002,
+        "git_blob_sha": "c8b136bcc264c33e709e7b0179f14c0c9057e6a7",
+        "path": "en/public-prosecution-inspection-exp-gub-745-2026/open-prosecution-transparency-31-august-2026.html"
+      },
+      {
+        "byte_identical_live": true,
+        "bytes": 14293,
+        "git_blob_sha": "65513365064ddcf2b020ef1804c917fbda7cace4",
+        "path": "en/public-prosecution-inspection-exp-gub-745-2026/response-package-29-august-2026.html"
+      },
+      {
+        "byte_identical_live": true,
+        "bytes": 6071,
+        "git_blob_sha": "d7575394039be82cb8899e0e22c1bf297a5131a3",
+        "path": "en/public-prosecution-inspection-exp-gub-745-2026/visual-facsimile-31-august-2026.html"
+      },
+      {
+        "byte_identical_live": true,
+        "bytes": 7494,
+        "git_blob_sha": "21734d2622982aec0b8652befd8f8c085842c470",
+        "path": "es/fiscalia-inspeccion-exp-gub-745-2026/diario-actuaciones-29-agosto-2026.html"
+      },
+      {
+        "byte_identical_live": true,
+        "bytes": 6172,
+        "git_blob_sha": "3b8656acc422814ac82d543d3be0ad6759fec58a",
+        "path": "es/fiscalia-inspeccion-exp-gub-745-2026/facsimil-visual-31-agosto-2026.html"
+      },
+      {
+        "byte_identical_live": true,
+        "bytes": 17446,
+        "git_blob_sha": "29d367d55634524ddd206b9ca9b57fd08b55ec13",
+        "path": "es/fiscalia-inspeccion-exp-gub-745-2026/index.html"
+      },
+      {
+        "byte_identical_live": true,
+        "bytes": 14630,
+        "git_blob_sha": "c00c39ab1347e83860c866e4ef1af4394421d640",
+        "path": "es/fiscalia-inspeccion-exp-gub-745-2026/paquete-respuesta-29-agosto-2026.html"
+      },
+      {
+        "byte_identical_live": true,
+        "bytes": 13824,
+        "git_blob_sha": "99e8c1c93d38e128156b3d49e1eb4f2cb02282f3",
+        "path": "es/fiscalia-inspeccion-exp-gub-745-2026/persecucion-abierta-transparencia-31-agosto-2026.html"
+      },
+      {
+        "byte_identical_live": true,
+        "bytes": 11396,
+        "git_blob_sha": "6d567fcbb96920c3e5cf7eb01bd7d8616ef5ee9b",
+        "path": "evidence/fiscalia/2026/EG_745_2026_OPEN_TRANSPARENCY_LEDGER_31AUG2026.md"
+      },
+      {
+        "byte_identical_live": true,
+        "bytes": 2543,
+        "git_blob_sha": "05192c01260a00ec1e27f81b5ab8c5df0694d4c5",
+        "path": "evidence/fiscalia/2026/EG_745_2026_PUBLIC_VISUAL_FACSIMILE_CONTROL_31AUG2026.md"
+      },
+      {
+        "byte_identical_live": true,
+        "bytes": 1607,
+        "git_blob_sha": "c2fa3655744be9bbb7bee7c6dbfb571b37f92bf3",
+        "path": "evidence/fiscalia/2026/eg745-visual-assets/eg745-public-visual-sha256.json"
+      },
+      {
+        "byte_identical_live": true,
+        "bytes": 1956595,
+        "git_blob_sha": "554e8fd474521c7f272a91efffc334e5e1a1b9b1",
+        "path": "evidence/fiscalia/2026/eg745-visual-assets/oficio-decreto-eg-745-2026-public-redacted.pdf"
+      },
+      {
+        "byte_identical_live": true,
+        "bytes": 2101003,
+        "git_blob_sha": "3c8b24591c7b7b5aa42df2d092d8e786bc1a7490",
+        "path": "evidence/fiscalia/2026/eg745-visual-assets/page-1-public-redacted.png"
+      },
+      {
+        "byte_identical_live": true,
+        "bytes": 171420,
+        "git_blob_sha": "52ad8671764569b66e2a250a0848126d502a13ff",
+        "path": "evidence/fiscalia/2026/eg745-visual-assets/page-1-public-redacted.webp"
+      },
+      {
+        "byte_identical_live": true,
+        "bytes": 3631113,
+        "git_blob_sha": "3b65a84f5b9486b2727ddf3536275b32faf4afa6",
+        "path": "evidence/fiscalia/2026/eg745-visual-assets/page-2-public.png"
+      },
+      {
+        "byte_identical_live": true,
+        "bytes": 353186,
+        "git_blob_sha": "0508eae0b2d4927696a857f3f6d7bc7859ecaab3",
+        "path": "evidence/fiscalia/2026/eg745-visual-assets/page-2-public.webp"
+      },
+      {
+        "byte_identical_live": true,
+        "bytes": 1826249,
+        "git_blob_sha": "8cb333d21802385464d3fc9b351fca3d764d9de5",
+        "path": "evidence/fiscalia/2026/eg745-visual-assets/page-3-public.png"
+      },
+      {
+        "byte_identical_live": true,
+        "bytes": 180032,
+        "git_blob_sha": "79dd5ca540ba87dcbd715a8dc8ac1854dbc8a4ef",
+        "path": "evidence/fiscalia/2026/eg745-visual-assets/page-3-public.webp"
+      },
+      {
+        "byte_identical_live": true,
+        "bytes": 8267,
+        "git_blob_sha": "526139d40b66d9d18b9ef0a8ba3538ba82bcd5f0",
+        "path": "publication-manifests/eg-745-2026-open-transparency-20260831.json"
+      },
+      {
+        "byte_identical_live": true,
+        "bytes": 4516,
+        "git_blob_sha": "2050d2e006b776f93f651d513a49b11f3f9a6ca3",
+        "path": "publication-manifests/eg-745-2026-visual-publication-20260831.json"
+      },
+      {
+        "byte_identical_live": true,
+        "bytes": 19387,
+        "git_blob_sha": "e53739b5b314f126c2442be395dc217170be1e0c",
+        "path": "publication-manifests/ministerio-fiscal-unitary-register-deployment-attestation-20260831.json"
+      },
+      {
+        "byte_identical_live": true,
+        "bytes": 7597,
+        "git_blob_sha": "8534a16b241f631ecff72539c89dc0357cb3d81e",
+        "path": "scripts/build_eg745_public_visual.py"
+      },
+      {
+        "byte_identical_live": true,
+        "bytes": 8877,
+        "git_blob_sha": "76eb548d8bd87ae4a27878ba2fe73c2007b8474e",
+        "path": "scripts/validate_eg745_public_visual.py"
+      },
+      {
+        "byte_identical_live": true,
+        "bytes": 5690,
+        "git_blob_sha": "f72ff6812ced2414cbc72617a3441d804acabfdc",
+        "path": "sitemap-fiscalia-exp-gub-745.xml"
+      },
+      {
+        "byte_identical_live": true,
+        "bytes": 118258,
+        "git_blob_sha": "9c109b09cea38f8cb649571ac34805597660b088",
+        "path": "sitemap.xml"
+      }
+    ],
+    "artifact": {
+      "id": 9765978753,
+      "name": "eg745-live-readback-6dc04a8a35c4a096631ca1852ec5fbee96c4965f",
+      "digest": "sha256:3d0e853dca05fd8dd0d356ed6893e6653186b82da8b8ba1fbe3734444a60be39",
+      "size_in_bytes": 2827,
+      "created_at_utc": "2026-08-31T16:17:41Z",
+      "expires_at_utc": "2026-09-30T16:17:41Z"
+    }
+  },
+  "authoritative_source": {
+    "filename": "OFICIO Y DECRETO EXP. 745-26.pdf",
+    "public": false,
+    "pages": 3,
+    "bytes": 1111997,
+    "sha256": "1e09c8eb3bce26e28dc5f22e5d6ebad3f458212cf8d85f5920e869fa42554abe",
+    "control": "The private native Spanish source controls every derivative, transcription and translation."
+  },
+  "privacy_control": {
+    "page_1": "Only the recipient's personal email is masked by an opaque raster rectangle.",
+    "pages_2_3": "No visual redaction; pixel-identical to the native render.",
+    "public_pdf": "Raster-only; no OCR/text layer, form, annotation, attachment or removable overlay.",
+    "institutional_content_preserved": true,
+    "mailbox_provider_identifiers_published": false,
+    "exact_private_subject_or_body_published": false,
+    "personal_email_published": false,
+    "private_storage_locator_published": false,
+    "native_custody_resolver_published": false
+  },
+  "asset_sha256": {
+    "oficio-decreto-eg-745-2026-public-redacted.pdf": "a59007fa5db61d2b48b587c208f9cafedabe967e88dac4df223b2ef384595088",
+    "page-1-public-redacted.png": "049ec3fd208f3ff9955ebf8fcfd851ac88f9a62320a6cfa164268605c850b38d",
+    "page-2-public.png": "d3f28f59c7f000d57505f747ff870636d66f307fe57ea3aa9683091bcc2a3ca2",
+    "page-3-public.png": "36f2b0e344abfe9dd9b7c6b46b4228ab4323ded7787a0170ee6d3e9f069be11a",
+    "page-1-public-redacted.webp": "ac5ccc51d85d6bfc7933a924465c5ef493206453e822fce2b367433975dee41a",
+    "page-2-public.webp": "5173cd8420ed9f6b6e1b26f3ad86025d89c82cbc69d4936b0d287f17717ae06a",
+    "page-3-public.webp": "ae3f518bb5732396e5d19fdcd3ee45450d2ee104e9bf7f7594af3493115bfaa8"
+  },
+  "inherited_page_3_correction": {
+    "previously_displayed_sha256": "62271b227f79a44879971bef77be20fc5f760257e81aac31cec56b0094c10c2e",
+    "actual_reconstructed_sha256": "b73a712a27c737dd8e22bf462c6e1cce095d05f8d12a3b93b1d0c763f84b528b",
+    "status": "SUPERSEDED_CORRECTED"
+  },
+  "filing_proof_control": {
+    "last_gmail_regage_refresh_utc": "2026-08-31T14:12:58Z",
+    "pagination_complete": true,
+    "hits": 11,
+    "already_indexed": 7,
+    "excluded_automated_github_notifications": 4,
+    "new_institutional_events": 0,
+    "new_filing_proof": false,
+    "reconsideration": "PREPARED_NOT_VERIFIED_FILED",
+    "status_change_rule": "Require an official receipt or equivalent primary filing proof.",
+    "email_sent_by_this_continuation": false,
+    "filing_made_by_this_continuation": false
+  },
+  "evidential_boundary": "Adverse outcomes, silence, routing gaps, repeated contact or functional benefit do not prove coordination, obstruction, capture, favouritism, prevarication, criminality, deliberate protection or personal liability without additional actor-specific primary evidence.",
+  "historical_controls": [
+    "archive/EG_745_2026_VISUAL_PUBLICATION_CONTINUITY_AUDIT_31AUG2026.md",
+    "archive/EG_745_2026_VISUAL_PUBLICATION_SUPERSEDING_PREMERGE_CONTROL_31AUG2026.md"
+  ],
+  "scope_limit": "PR #1275's eventual merge, Pages deployment and live readback must be proved separately after they occur and are not projected into this attestation."
+}
