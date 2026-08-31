@@ -1,0 +1,28 @@
+{
+  "publication_id": "PD-CANARY-RIC-PUBLIC-DEBT-DOCROOM-20260831-01",
+  "owner": "Por Derecho / Project Sun Rock",
+  "parent_publication_id": "PD-CANARY-RIC-PUBLIC-DEBT-20260830-01",
+  "control_date": "2026-08-31",
+  "current_state": "PREPARED_PENDING_MERGE",
+  "purpose": "Publish a complete public-safe searchable representation of the eight-file 734-page Treasury production and integrate its 2022 planning and AFI financing-cost findings into the unitary RIC analysis.",
+  "source_denominator": {"files": 8, "pages": 734},
+  "public_derivatives": {"pdfs": 8, "derivative_pages": 742, "transcripts": 8, "indexed_source_pages": 734},
+  "native_source_boundary": "PROTECTED_CUSTODY_RETAINED_NOT_PUBLIC_NOT_DELETION_AUTHORISED",
+  "ocr_boundary": "NOT_CERTIFIED_LINE_BY_LINE",
+  "expected_routes": {
+    "es": ["es/evidencia/tesoro-deuda-ric-2022-2025-documentos/index.html"],
+    "en": ["en/evidence/treasury-ric-debt-2022-2025-documents/index.html"]
+  },
+  "evidence_root": "evidence/canary-ric-public-debt/2026-08-28-production/",
+  "manifest": "evidence/canary-ric-public-debt/2026-08-28-production/manifest-v1.json",
+  "page_index": "evidence/canary-ric-public-debt/2026-08-28-production/page-index-v1.json",
+  "validation": {
+    "local": "PASS_8_OF_8_PDFS_734_OF_734_SOURCE_PAGES_742_DERIVATIVE_PAGES_HASH_PRIVACY_ROUTE_AND_CONTINUITY_GATES",
+    "pull_request": null,
+    "reviewed_head_sha": null,
+    "merge_sha": null,
+    "pages_run": null,
+    "live_readback": "PENDING"
+  },
+  "deletion_verdict": "THREAD_RECONSTRUCTIBLE_AFTER_LIVE_VERIFICATION;_NATIVE_SOURCE_DELETION_NOT_AUTHORISED"
+}

@@ -1,0 +1,13 @@
+{
+  "schema": "por-derecho.lossless-pdf-json-chunks.v1",
+  "source_pdf_filename": "puesta-disposicion-154-2026-publico-redactado-ocr.pdf",
+  "source_pdf_size_bytes": 239053,
+  "source_pdf_sha256": "bcbbf5f30918fbbb17b7ae5c7c5f12cd5066699c2f17190fd82ce68fe9e63458",
+  "encoding": "json-contained-base64-independent-binary-chunks",
+  "binary_chunk_bytes": 480000,
+  "chunk_count": 1,
+  "chunks": [
+    "pdf-chunks/puesta-disposicion-154-2026-publico-redactado-ocr.part-001.json"
+  ],
+  "reconstruction": "Decode each chunk independently in listed order and concatenate the resulting bytes."
+}

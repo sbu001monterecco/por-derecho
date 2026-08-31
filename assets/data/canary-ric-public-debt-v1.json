@@ -5,7 +5,9 @@
   "status": "LIVE_VERIFIED",
   "public_routes": {
     "es": "/es/deuda-publica-ric-canarias/",
-    "en": "/en/canary-ric-public-debt/"
+    "en": "/en/canary-ric-public-debt/",
+    "document_room_es": "/es/evidencia/tesoro-deuda-ric-2022-2025-documentos/",
+    "document_room_en": "/en/evidence/treasury-ric-debt-2022-2025-documents/"
   },
   "controlling_conclusion": {
     "es": "No es conexión cero y no es el mismo dinero: la deuda pública y RICPE son vías paralelas de materialización RIC; el vínculo directo con Acosta Matos está en RICPE hacia HNT, no en una asignación probada de los bonos públicos.",
@@ -15,7 +17,11 @@
     "files": 8,
     "pages": 734,
     "source_class": "ACCESS_PRODUCTION_FOLLOWING_TREASURY_RESOLUTION_154_2026_WITH_DISSOCIATION_AND_STAGED_DELIVERY",
-    "binary_publication": "NOT_REPUBLISHED",
+    "binary_publication": "EIGHT_PUBLIC_REDACTED_SEARCHABLE_DERIVATIVES;_NATIVE_FILES_RETAINED_IN_PROTECTED_CUSTODY",
+    "public_derivative_manifest": "/evidence/canary-ric-public-debt/2026-08-28-production/manifest-v1.json",
+    "public_page_index": "/evidence/canary-ric-public-debt/2026-08-28-production/page-index-v1.json",
+    "source_pages_digitized": 734,
+    "ocr_line_certified": false,
     "items": [
       {
         "title": "Escrito puesta a disposicion I firmado.pdf",
@@ -158,6 +164,11 @@
   ],
   "findings": [
     {
+      "id": "RICD-F-000",
+      "status": "VERIFIED_AUTHORIZATION_PLANNING_EXECUTION_NOT_ESTABLISHED",
+      "proposition": "The 2022 borrowing-authorisation request contemplated loans, bonds and a possible RIC debt issue with indicative terms and Article 27.4.D.4 use; this corpus does not establish issuance, subscription, settlement or allocation of that possible 2022 RIC issue."
+    },
+    {
       "id": "RICD-F-001",
       "status": "VERIFIED_FACT",
       "proposition": "The 2024 and 2025 RIC-eligible public issues allocated EUR 250 million against EUR 1.139779 billion of demand."
@@ -176,6 +187,16 @@
       "id": "RICD-I-001",
       "status": "EVIDENCE_BASED_INFERENCE",
       "proposition": "The public debt route is a market-capacity and institutional-process comparator for the private RICPE route within one RIC policy ecosystem."
+    },
+    {
+      "id": "RICD-F-004",
+      "status": "VERIFIED_FACT",
+      "proposition": "The 2024 AFI contracting memorandum states that the investor's financial-tax return can permit a lower coupon and ease the Canary Community's financing burden."
+    },
+    {
+      "id": "RICD-S-001",
+      "status": "CORPUS_SEARCH_RESULT_NOT_GLOBAL_ABSENCE_PROOF",
+      "proposition": "No named occurrence of Acosta, Hotel New Trend, MYND or RICPE was located in the OCR-reviewed 734-page production."
     },
     {
       "id": "RICD-O-001",

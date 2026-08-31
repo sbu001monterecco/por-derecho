@@ -2012,5 +2012,23 @@
       "producción de acceso Tesoro",
       "NAT-TES-001"
     ]
+  },
+  {
+    "lang": "es",
+    "path": "es/evidencia/tesoro-deuda-ric-2022-2025-documentos/",
+    "title": "Sala documental · Tesoro, deuda y RIC 2022–2025",
+    "type": "evidence-room",
+    "summary": "Ocho derivados OCR públicos redactados, 734 páginas fuente, transcripciones secuenciadas, omisiones, índice y hashes; custodia nativa protegida.",
+    "tags": ["Tesoro de Canarias", "deuda RIC", "734 páginas", "Resolución 154/2026", "OCR público redactado"],
+    "aliases": ["CAN-RIC-TREAS-001–008", "sala documental RIC 2022–2025"]
+  },
+  {
+    "lang": "en",
+    "path": "en/evidence/treasury-ric-debt-2022-2025-documents/",
+    "title": "Document room · Treasury, debt and RIC 2022–2025",
+    "type": "evidence-room",
+    "summary": "Eight public-redacted OCR derivatives, 734 source pages, page-sequenced transcripts, omission logs, index and hashes; protected native custody.",
+    "tags": ["Canary Treasury", "RIC debt", "734 pages", "Resolution 154/2026", "public-redacted OCR"],
+    "aliases": ["CAN-RIC-TREAS-001–008", "RIC 2022–2025 document room"]
   }
 ]

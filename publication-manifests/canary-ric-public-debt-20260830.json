@@ -16,7 +16,9 @@
     "files": 8,
     "pages": 734,
     "binary_publication": "EXCLUDED_PRIVATE_SOURCE_BINARIES",
-    "structured_control": "assets/data/canary-ric-public-debt-v1.json"
+    "structured_control": "assets/data/canary-ric-public-debt-v1.json",
+    "public_derivative_transport": "LOSSLESS_BASE64_CHUNKS_RECONSTRUCTED_CLIENT_SIDE",
+    "document_room_control": "evidence/canary-ric-public-debt/2026-08-28-production/manifest-v1.json"
   },
   "expected_routes": {
     "es": ["es/deuda-publica-ric-canarias/index.html"],

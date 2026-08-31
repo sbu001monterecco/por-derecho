@@ -15,3 +15,8 @@ CUATRECASAS_BILLING_ACCOUNT_AND_EXPLANATION_DRAFT_*.md
 .lawyer-work-product/
 private/legal-adviser/
 tmp/legal-adviser/
+
+# Public Canary Treasury PDFs are losslessly reconstructed from bounded Base64
+# chunks because the authenticated repository connector cannot upload binaries.
+/evidence/canary-ric-public-debt/2026-08-28-production/**/*.pdf
+/evidence/canary-ric-public-debt/2026-08-28-production/**/pdf-chunks/*.b64
