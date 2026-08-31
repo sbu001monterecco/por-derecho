@@ -41,6 +41,8 @@ The pagination-complete Gmail and REG-AGE filing-proof control covered 31 July t
 
 The controlling status is therefore **PREPARED / NOT FILED**. The principal eight-page reposición PDF is ready for signature and is privately controlled at SHA-256 `1e7dd495c3f4ab2650bd4b304e72e38f12a0bb6a2140a25569712635f2d1ec91`. A draft, an email copy, a repository page or public website publication is not filing proof. Filing status may change only on a new official receipt or equivalent primary source.
 
+A final pagination-complete control-day overlap refresh at 14:12:58 UTC returned eleven search hits. Seven were already indexed institutional events. Four were automated GitHub list notifications that matched only because repository text mentioned Ministerio Fiscal; they are not communications to or from a public institution and were not added to the institutional register or native-source manifest. The refresh added **zero** in-scope institutional events and located **no** new filing proof.
+
 ## 4. Annex completion and byte control
 
 The private A-1 through A-8 documentary annex set is complete. A-3 and A-4 are two evidential labels for one physical binary: the signed 31-July master and the file presented on 2 August have identical bytes, proved by the SHA-512 digest printed in the official receipt. A-8 contains the minimum eight signed DI 22/2026 decisions; covering notices and same-name forwarded duplicate candidates are not substituted for those decisions.
