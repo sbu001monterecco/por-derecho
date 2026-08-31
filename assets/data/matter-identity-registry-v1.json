@@ -1,7 +1,7 @@
 {
   "schema": "por-derecho.matter-identity-registry.v1",
   "registry_id": "PD-SP-IDENTITY-REGISTRY-001",
-  "control_date": "2026-08-30",
+  "control_date": "2026-08-31",
   "status": "CANONICAL_ACTOR_REGISTER_AND_AUTHORIZED_PROFESSIONAL_EXTENSION_ARCHIVE_BACKFILL_OPEN",
   "id_formats": {
     "PERSON": "PD-SP-P-####",
@@ -145,18 +145,18 @@
     ]
   },
   "counts": {
-    "total": 240,
-    "PERSON": 102,
+    "total": 282,
+    "PERSON": 113,
     "ORGANISATION": 79,
     "STRUCTURE": 11,
-    "INSTITUTION": 25,
-    "PROCEEDING": 23
+    "INSTITUTION": 36,
+    "PROCEEDING": 43
   },
   "parts": [
     {
       "path": "matter-identity-registry-v1.people.json",
       "type": "PERSON",
-      "count": 75
+      "count": 86
     },
     {
       "path": "matter-identity-registry-v1.professional-people.json",
@@ -181,12 +181,12 @@
     {
       "path": "matter-identity-registry-v1.institutions.json",
       "type": "INSTITUTION",
-      "count": 24
+      "count": 35
     },
     {
       "path": "matter-identity-registry-v1.proceedings.json",
       "type": "PROCEEDING",
-      "count": 22
+      "count": 42
     },
     {
       "path": "matter-identity-registry-v1.dp3205-institutions.json",

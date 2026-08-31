@@ -46,7 +46,7 @@
       ['Falsedad penal', 'NO ADJUDICADA', 'La calificación penal corresponde a los órganos competentes. Aquí se documenta la acusación y su base.']
     ],
     quote: '“La pregunta no es si Gil cumplió perfectamente cada requerimiento. La pregunta es si la Administración Concursal describió con verdad el historial de colaboración cuando lo utilizó para pedir una de las consecuencias personales y patrimoniales más severas del procedimiento.”',
-    source: 'Control interno: CALIFICACION_ALLEGATION_01_COLLABORATION_FALSEHOOD_LEDGER_16AUG2026.md. Fuente adicional reconsultada: Informe AC art. 75 de 15-01-2013 (Drive ID 15X-qFJIvM78oDE9CdsGjrvVKU5dv6iGc). La frase “cordiales y fluidas” citada en apelación sigue pendiente de recuperación en su fuente AC original y no se usa aquí como hecho verificado.'
+    source: 'Control interno: CALIFICACION_ALLEGATION_01_COLLABORATION_FALSEHOOD_LEDGER_16AUG2026.md. Fuente adicional reconsultada: Informe AC art. 75 de 15-01-2013 (referencia pública MF-CAL-SRC-A01-ART75; localizador privado omitido). La frase “cordiales y fluidas” citada en apelación sigue pendiente de recuperación en su fuente AC original y no se usa aquí como hecho verificado.'
   } : {
     eyebrow: 'DEEP AUDIT · ALLEGATION 01 · COLLABORATION',
     title: '“He did not cooperate”: when the AC’s own record contains the facts that contradict the global portrayal',
@@ -88,7 +88,7 @@
       ['Criminal falsehood', 'NOT ADJUDICATED', 'Criminal characterization belongs to the competent authorities. This page documents the allegation and its basis.']
     ],
     quote: '“The question is not whether Gil perfectly complied with every request. The question is whether the insolvency administrator truthfully described the cooperation record when using it to seek some of the most severe personal and patrimonial consequences available in the proceeding.”',
-    source: 'Internal control: CALIFICACION_ALLEGATION_01_COLLABORATION_FALSEHOOD_LEDGER_16AUG2026.md. Additional primary source re-queried: AC Article-75 report dated 15-Jan-2013 (Drive ID 15X-qFJIvM78oDE9CdsGjrvVKU5dv6iGc). The phrase “cordiales y fluidas” quoted in the appeal remains pending recovery in its original AC source and is not used here as a verified fact.'
+    source: 'Internal control: CALIFICACION_ALLEGATION_01_COLLABORATION_FALSEHOOD_LEDGER_16AUG2026.md. Additional primary source re-queried: AC Article-75 report dated 15-Jan-2013 (public reference MF-CAL-SRC-A01-ART75; private locator withheld). The phrase “cordiales y fluidas” quoted in the appeal remains pending recovery in its original AC source and is not used here as a verified fact.'
   };
 
   const esc = (s) => String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[c]));

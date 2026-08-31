@@ -13,7 +13,7 @@ That is an **ADVERSE FIRST-INSTANCE FACTUAL/JUDICIAL FINDING UNDER APPEAL**. The
 
 ### 1. Jonathan Simó / CLS — beginning-of-concurso accounting delivery
 
-Drive preserves `Calificación JT - documento seis (documentación y cuentas 2008-12 entregados).pdf` (Drive ID `1b1WAqgIDET23UOA0f6eWv1c-NzpgEQwu`). This is a calificación evidence file expressly labelled as documentation/accounts 2008–2012 delivered.
+Private custody preserves a calificación evidence file expressly labelled as documentation/accounts 2008–2012 delivered, public-safe reference `MF-CAL-SRC-A04-ACCOUNTS` (exact private filename and Drive locator withheld).
 
 The AC's own 11-Feb-2019 report independently records that LPB continued accounting in 2012 and that he received accounting journals and trial balances for 2008, 2009, 2010, 2011 and part of 2012.
 
@@ -21,7 +21,7 @@ The AC's own 11-Feb-2019 report independently records that LPB continued account
 
 A preserved June-2015 Jonathan Simó/CLS transmission concerning LPB corporate taxes lists, among its working files:
 
-- `DIARIO Luchy 2015.xlsx`;
+- a 2015 LPB accounting-journal workbook (exact private filename withheld);
 - corporate-tax files for 2011, 2012 and 2013; and
 - a 2014 tax/liquidation summary.
 
@@ -31,7 +31,7 @@ This is contemporaneous evidence that a Diario-level accounting file existed in 
 
 ### 3. CLS ↔ BDO professional accounting workflow
 
-Drive preserves `Gmail - Rw_ RE_ Revisión cuentas anuales LPB - auditores BDO - 3JUN2015.pdf` (Drive ID `1FkT6ECyOJ-Sa-L_T8M0vghye6XMhNZoO`). The preserved correspondence is from Jonathan Simó/CLS to a BDO professional and concerns review of LPB annual accounts.
+Private custody preserves correspondence from Jonathan Simó/CLS to a BDO professional concerning review of LPB annual accounts, public-safe reference `MF-CAL-SRC-A04-BDO-CORR` (exact private filename and Drive locator withheld).
 
 It demonstrates a live professional accounting-review channel between CLS and BDO during the concurso. It is inconsistent with any undifferentiated proposition that LPB had simply ceased keeping accounts.
 
@@ -39,9 +39,11 @@ It demonstrates a live professional accounting-review channel between CLS and BD
 
 Drive separately preserves:
 
-- `Gmail - Cuentas Anuales LPB 2012-2014.pdf` — Drive ID `12eHABFA8mq2pxZGFU7wP6Je6u5goCEGl`;
-- `BDOReportIntroPageMay2015 (1).pdf` — Drive ID `1X8r6pTFG5hbrIWAcTM5YXcDGw6Og1PPs` (duplicate also preserved);
-- the Google Doc `BDO Report Intro Page (May2015)` — Drive ID `1HrOYEFVby6oFqyWc_Wa6tebw9qeLuoZ6_JOvvkWhwSI`.
+- annual-accounts correspondence derivative — `MF-CAL-SRC-A04-ANNUAL-ACCOUNTS`;
+- BDO report-introduction PDF — `MF-CAL-SRC-A04-BDO-INTRO-PDF` (duplicate also preserved);
+- BDO report-introduction native document — `MF-CAL-SRC-A04-BDO-INTRO-NATIVE`.
+
+Exact private filenames and Drive locators for these artifacts are withheld from public Git.
 
 The existence of these records does not by itself prove which complete statutory books were formally legalised at the Mercantile Registry or exactly which BDO/CLS files were delivered to the AC on each date. It does prove that professional accounting preparation/review continued during the relevant period.
 
@@ -75,8 +77,8 @@ If the complete CLS/BDO/AC transmission trail proves that the relevant Diario wa
 
 Preferred Spanish:
 
-> **La sentencia afirma que el Libro Diario no fue facilitado a la AC. No adoptamos esa afirmación como hecho objetivo. Está recurrida y el archivo documental contemporáneo apunta en sentido contrario: Jonathan Simó/CLS mantenía contabilidad durante el concurso, en 2015 circulaba un archivo `DIARIO Luchy 2015.xlsx`, BDO preparaba/revisaba cuentas anuales de LPB y el propio expediente de calificación conserva documentación de diarios/cuentas previamente entregados. La cuestión es comprobable año por año y destinatario por destinatario.**
+> **La sentencia afirma que el Libro Diario no fue facilitado a la AC. No adoptamos esa afirmación como hecho objetivo. Está recurrida y el archivo documental contemporáneo apunta en sentido contrario: Jonathan Simó/CLS mantenía contabilidad durante el concurso, en 2015 circulaba un libro diario contable de LPB, BDO preparaba/revisaba cuentas anuales de LPB y el propio expediente de calificación conserva documentación de diarios/cuentas previamente entregados. La cuestión es comprobable año por año y destinatario por destinatario.**
 
 Preferred English:
 
-> **The judgment says the Daily Journal was not supplied to the AC. We do not adopt that statement as objective fact. It is appealed, and the contemporaneous record points materially the other way: Jonathan Simó/CLS was maintaining LPB accounting during the insolvency, a `DIARIO Luchy 2015.xlsx` file was in circulation in 2015, BDO was preparing/reviewing LPB annual accounts, and the classification evidence file preserves prior journal/accounting deliveries. The issue is capable of year-by-year and recipient-by-recipient verification.**
+> **The judgment says the Daily Journal was not supplied to the AC. We do not adopt that statement as objective fact. It is appealed, and the contemporaneous record points materially the other way: Jonathan Simó/CLS was maintaining LPB accounting during the insolvency, an LPB accounting-journal workbook was in circulation in 2015, BDO was preparing/reviewing LPB annual accounts, and the classification evidence file preserves prior journal/accounting deliveries. The issue is capable of year-by-year and recipient-by-recipient verification.**

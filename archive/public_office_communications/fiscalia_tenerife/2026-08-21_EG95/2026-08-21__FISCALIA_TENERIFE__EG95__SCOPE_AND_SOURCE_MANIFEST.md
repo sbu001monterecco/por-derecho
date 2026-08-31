@@ -33,48 +33,48 @@ This is a documented **scope/characterisation difference**. It supports a respec
 
 ## 3. Native-source custody
 
-The native sources remain in the connected Gmail account and private Google Drive archive. GitHub contains the full controlled text, translation, source metadata and cryptographic identifiers; it does not substitute for the native source.
+The native sources remain in the controlled private mailbox and private file archive. GitHub contains the controlled text, translation, public-safe source metadata and cryptographic identifiers; it does not substitute for the native source. Exact provider identifiers and private filenames are withheld from the current tree; the public references below are non-provider control labels and have no committed reverse map.
 
 ### EG 95/2026 Decree
 
-- Gmail attachment: `01. Decreto de incoación y archivo (21.08.2026).pdf`
-- Private Drive archive: `2026-08-21__FISCALIA_TENERIFE__EG_95_2026__NATIVE.pdf`
-- Drive file ID: `1RRDqvDdYYvqIAAjtLAT7xKVYDOza-6RI`
+- Private-mailbox source category: opening-and-archive decree PDF (exact filename withheld)
+- Private-archive source category: native EG 95/2026 decree PDF (exact filename withheld)
+- Public source reference: `MF-EG95-SRC-DECR-01`
 - Bytes: `72605`
 - SHA-256: `926a1351a488661d9d5359cd8ae0951c49d6967f65a17368be61c12fc8290128`
 
 ### Outgoing annex 1
 
-- Gmail filename: `pwc-five-actors-plus-ac-2016-knowledge-checkpoint-ES.png`
-- Private Drive archive: `2026-08-21__FISCALIA_TENERIFE__OUTGOING_ATTACHMENT_01__NATIVE.png`
-- Drive file ID: `1OjK_oeyjPcO-Zk8PKyJjrcbHD0K5_nr7`
+- Private-mailbox source category: visual source index A (exact filename withheld)
+- Private-archive source category: native outgoing annex A (exact filename withheld)
+- Public source reference: `MF-EG95-SRC-ANNEX-A`
 - Bytes: `489983`
 - SHA-256: `6b3dfac14865f8bd9cdaf6eda6b610ff67175a96761f9d5ab7a0819b935643bf`
 
 ### Outgoing annex 2
 
-- Gmail filename: `san-telmo-ricpe-sun-park-stamp-v1 (2).png`
-- Private Drive archive: `2026-08-21__FISCALIA_TENERIFE__OUTGOING_ATTACHMENT_02__NATIVE.png`
-- Drive file ID: `1Ny2SAGxTkShL_CRGyPQg0qZWTkIJf71i`
+- Private-mailbox source category: visual source index B (exact filename withheld)
+- Private-archive source category: native outgoing annex B (exact filename withheld)
+- Public source reference: `MF-EG95-SRC-ANNEX-B`
 - Bytes: `617049`
 - SHA-256: `2006db8fdd5684299bd166324ae749f1407f50c90485072ac34254bf73bb0c1f`
 
 ### DIP 20/2026 comparator
 
-- Decree private Drive ID: `1lUORfH_H-dSNtLUPjGqJkMoIhTXiXvHu`
+- Decree public source reference: `MF-DIP20-SRC-DECR-01`
 - Decree bytes: `142760`
 - Decree SHA-256: `efd4eee1d4c9f4bddf2d5ca1f0c413f18bbb83ad19d2535b554cdb2f66ffb501`
-- Official communication private Drive ID: `1TfpfMXvJw7NYjDP1lSiDB7dvvLVf2q9S`
+- Official communication public source reference: `MF-DIP20-SRC-OFF-02`
 - Official communication bytes: `141639`
 - Official communication SHA-256: `be32d01f32bce0f7ce6f9957f9034ffb6b97502938f5aea1178973abf835e989`
 
-## 4. Gmail records
+## 4. Private-mailbox records
 
-- Outgoing message ID: `1a021abc315951c7`
-- Incoming notification message ID: `1a024394e1f6889c`
-- DIP 20/2026 preserved message ID: `19c0ea97375d8866`
+- Outgoing public source reference: `MF-EG95-MSG-OUT-01`
+- Incoming notification public source reference: `MF-EG95-MSG-IN-01`
+- DIP 20/2026 preserved-copy public source reference: `MF-DIP20-MSG-01`
 
-Gmail remains controlling for full headers, MIME structure, delivery state and original attachments.
+The private mailbox remains controlling for full headers, MIME structure, delivery state and original attachments.
 
 ## 5. Repository records
 

@@ -14,14 +14,14 @@ The Information attempt must therefore not be described as a valid routing check
 
 ## 2. Source chain
 
-| Event | Gmail ID | Time | Controlled status |
+| Event | Public source reference | Time | Controlled status |
 |---|---|---:|---|
-| Appeals Section message | `1a0215034795e9fa` | 20 Aug 2026, 22:34:59 UTC | Sent. No delivery-failure notice located. Receipt/association/examination not proved. |
-| General Secretariat message | `1a02151e50499880` | 20 Aug 2026, 22:36:49 UTC | Sent. No delivery-failure notice located. Receipt/association/examination not proved. |
-| General Information attempt | `1a021539ba82e48a` | 20 Aug 2026, 22:38:42 UTC | Sent from Gmail, but later superseded for delivery status by the final failure notice below. |
-| Delivery Status Notification (Failure) | `1a021694242fc27b` | 20 Aug 2026, 23:02:21 UTC / 21 Aug 2026, 00:02:21 BST | Address not found or unable to receive mail; message not delivered. |
+| Appeals Section message | `CGPJ-DSP-20260820-01` | 20 Aug 2026, 22:34:59 UTC | Sent. No delivery-failure notice located. Receipt/association/examination not proved. |
+| General Secretariat message | `CGPJ-DSP-20260820-02` | 20 Aug 2026, 22:36:49 UTC | Sent. No delivery-failure notice located. Receipt/association/examination not proved. |
+| General Information attempt | `CGPJ-DSP-20260820-03` | 20 Aug 2026, 22:38:42 UTC | Sent from the private mailbox, but later superseded for delivery status by the final failure notice below. |
+| Delivery Status Notification (Failure) | `CGPJ-DSP-20260820-03-FAIL` | 20 Aug 2026, 23:02:21 UTC / 21 Aug 2026, 00:02:21 BST | Address not found or unable to receive mail; message not delivered. |
 
-The institutional recipient addresses remain preserved in the controlled Gmail record. The public website does not need to reproduce them to explain the correction.
+The institutional recipient addresses and exact provider locators remain preserved in the controlled private-mailbox record. The public website does not need to reproduce them to explain the correction.
 
 ## 3. Permitted public wording
 

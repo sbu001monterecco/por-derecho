@@ -1,0 +1,65 @@
+{
+  "aggregate_only_control": {
+    "reported_rows": 22,
+    "representation": "MF-UNRESOLVED-BATCH-001",
+    "synthetic_event_rows": 0
+  },
+  "baseline_import": {
+    "annex_listings": 126,
+    "expected_rows": 75,
+    "first_presented_local": "2025-12-15T20:53:36",
+    "imported_rows": 75,
+    "last_presented_local": "2026-02-26T22:35:27",
+    "source_exhausted": true,
+    "source_path": "archive/evidence/mf-redsara-anexo4/MF_REDSARA_REGISTRATION_INDEX_SHORT.csv",
+    "source_sha256": "784b45bb9ef9e5934d4b4dedc7068dfef90b6e19a10d55bfc1170933d097dcc3",
+    "unique_regage_references": 75
+  },
+  "checkpoint_id": "PD-SP-MF-SCAN-CHECKPOINT-001",
+  "control_date": "2026-08-31",
+  "last_month_mail_control": {
+    "covered_date_from": "2026-07-31",
+    "covered_date_through": "2026-08-31",
+    "pagination_complete": true,
+    "performed_date": "2026-08-31",
+    "provider_locators_published": false,
+    "result": "No post-notification E.G. 745/2026 reposicion, matching REG-AGE receipt or equivalent merits-filing proof located.",
+    "scope": "Ministerio Fiscal offices and controlled expediente/REGAGE references; Gmail plus REG-AGE filing-proof control.",
+    "source_anchor": "evidence/fiscalia/2026/MINISTERIO_FISCAL_WIDER_MATTER_EG745_UNITARY_EVIDENCE_ACTION_DIGEST_31AUG2026.md"
+  },
+  "mailbox_index": {
+    "draft_rows": 3,
+    "event_rows": 156,
+    "inbound_email_rows": 101,
+    "outbound_email_rows": 42,
+    "route_not_publicly_attested_rows": 81,
+    "self_archive_rows": 10,
+    "source_exhausted": true,
+    "source_path": "assets/data/institutional-communications-mailbox-index-v1.json",
+    "source_sha256": "d623d710aced7bf37417429afb75dcce43265c3ca0855fe7f1412f84193ff5b0"
+  },
+  "next_incremental_scan": {
+    "overlap_from_date": "2026-08-24",
+    "rule": "Scan an overlap window, reconcile exact official references first, then add only source-proved public-safe events; keep private provider IDs outside Git.",
+    "strictly_new_after_date": "2026-08-31"
+  },
+  "private_custody": {
+    "custody_reference": "PD-SP-CUST-0001",
+    "manifest_rows": 231,
+    "manifest_sha256": "bdd12a8fa62b5058525e1c37053fb7899ac24a60d12ff48ab8b74bda617cd6f6",
+    "provider_or_storage_identifier_published": false,
+    "status": "PERSISTED_PRIVATE_CUSTODY"
+  },
+  "register_path": "assets/data/institutional-communications-register-v1.json",
+  "register_sha256": "987a9ac370cf4425cc88ab9cfa3a42fc774e3af0862c42d65a8e8fd111cced30",
+  "schema": "por-derecho.institutional-communications-scan-checkpoint.v1",
+  "source_required_and_normalisation_gates": [
+    "22 later RedSARA/AGE records remain aggregate-only; no synthetic individual rows were created.",
+    "EG 58/2026 discrete official act remains source-required.",
+    "DP 1901/2026 signed Fiscal report and later judicial act remain source-required.",
+    "EG 6/2026 underlying act substantive digest remains pending.",
+    "Six August-family receipt rows await one-to-one public destination-label normalisation; no destination is guessed.",
+    "81 mailbox rows retain ROUTE_NOT_PUBLICLY_ATTESTED pending a primary bridge.",
+    "No post-notification E.G. 745/2026 reposicion receipt was located."
+  ]
+}

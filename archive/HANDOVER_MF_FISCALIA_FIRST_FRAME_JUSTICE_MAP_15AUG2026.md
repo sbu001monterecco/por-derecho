@@ -118,7 +118,7 @@ Every public node should identify what it establishes and what it does not estab
 ## Priority missing documents / bridges — updated 15 Aug 2026
 
 1. Primary disposition supporting the reported 2021 closure of DP 332/2014, its date, notice/finality record and exact reasoning; reconcile the later-pleaded 29 March date with contemporaneous reactivation/resumption communications.
-2. **Located in Google Drive:** `3. Pericial Renta Perito Fiscalia - 25ABR2019.pdf` (primary scanned PDF, approx. 5.7 MB). Its existence is verified; the substantive conclusion remains **UNRESOLVED pending complete visual page review** because the file has no usable text layer. Do not publish a conclusion from filename or secondary recollection.
+2. **Located in private custody:** Fiscal rent expert report, `MF-CAL-SRC-A03-EXPERT` (primary scanned PDF, approx. 5.7 MB; exact private filename and Drive locator withheld). Its existence is verified; the substantive conclusion remains **UNRESOLVED pending complete visual page review** because the file has no usable text layer. Do not publish a conclusion from a private filename or secondary recollection.
 3. Complete certified DP 332/2014 file and named-fiscal history.
 4. Complete certified DI 248/2018 file and actual diligences performed.
 5. Certified DP 1132/2018 including Borja testimony/audiovisual and production orders.

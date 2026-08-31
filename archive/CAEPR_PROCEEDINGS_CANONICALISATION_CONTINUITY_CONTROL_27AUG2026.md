@@ -34,20 +34,24 @@ Use **Luchy Playa Blanca, S.L.U. (LPB)** as the controlled first reference. `Luc
 ### DI 113/2022^
 
 - **Office:** Fiscalía Provincial de Las Palmas.
-- **Known milestone:** archive decree dated 8 February 2023.
-- **Further record:** later decree notified in February 2026.
-- **Open metadata:** exact full subject / linkage to later institutional files should remain source-controlled rather than inferred from chronology.
+- **NIG:** 3501670220220003722.
+- **Known milestone:** signed archive decree dated 8 February 2023; signed copy/information decision dated 23 February 2026 and official notice dated 25 February 2026.
+- **Attribution ceiling:** the located signed acts are attributable to Beatriz Sánchez Carreras; complete file/index, source inventory, diligences, remittal proof and the DP 668/2021 native court chain remain open.
+- **Boundary:** act identity and signatory do not prove the complaint's allegations, complete merits examination or the relationship to later files beyond a source-proved link.
 
 ### DI 22/2026^
 
 - **Office:** Fiscalía Provincial de Las Palmas.
-- **Status of identity:** office + reference resolved.
-- **Open metadata:** full formal subject and all parent/child links require native-source completion.
+- **NIG:** 3501670220260000369.
+- **Status of identity:** office, reference and February/March signed act sequence resolved.
+- **Known record:** 11 acts are independently event-registered, including two distinct acts on 11 February and two on 13 February; later June/July acts remain office-attributed where personal signature is not source-fixed.
+- **Open metadata:** complete file/index, annex-to-decision matrix, performed diligences, remittal receipts, later signatures and every parent/child link require native-source completion.
 
 ### DIP 2/2026^
 
 - **Class:** Diligencias de Investigación Penal 2/2026.
 - **Office:** Fiscalía Provincial de Las Palmas.
+- **NIG:** 3501670220260000245.
 - **Known record:** complaint filed 13 January 2026; archive decree dated 6 March 2026.
 - **Cross-link:** later judicial material in DP 1901/2026 refers to diligencias de investigación preprocesal 2/26.
 
@@ -61,7 +65,7 @@ Use **Luchy Playa Blanca, S.L.U. (LPB)** as the controlled first reference. `Luc
 
 - **Class:** Diligencias Previas 1901/2026.
 - **Court:** Plaza nº 6 del Tribunal de Instancia, Sección de Instrucción, Las Palmas de Gran Canaria.
-- **NIG:** 350164320260016977.
+- **NIG:** 3501643220260016977.
 - **Known judicial record:** 12 July 2026 providencia; five-day transfer to Fiscalía on admission; links to diligencias de investigación preprocesal 2/26.
 - **Boundary:** this is a criminal proceeding and must not be conflated with the AC-separation application inside Concurso 36/2012.
 
@@ -153,6 +157,14 @@ The continuity scan located native/counsel mail references sufficient to prevent
 - **ETJ 163/2020^** — La Laguna execution referenced in the Matkator/Cuatrecasas / DP 748/2026 corpus.
 
 These additions do not establish the merits or correctness of any tax assessment or judicial decision.
+
+## 31-August-2026 additive denominator closeout
+
+The current federated identity denominator is **282 objects**: 113 people, 79 organisations, 11 structures, 36 institutions and 43 proceedings/references. The Proceedings Master Register contains **122 canonical rows**, of which 98 meet the exact-identity publication threshold. The public projection contains **121 rows**: 97 exact identities and 24 deliberately non-exact trace-only references; one exact private record is excluded from the public projection.
+
+The focused Ministerio Fiscal continuity scope is independently preserved. To prevent known source references from becoming orphans, **DIP 7/2026**, **DIP 12/2026** and **EG 58/2026** have stable `CARET_PENDING` unresolved-reference objects (`PD-SP-R-0041` to `PD-SP-R-0043`). Those rows record only the source-bounded reference and recovery gate. They have no invented parties, merits, outcomes or procedural edges.
+
+Case Prism remains transparently incomplete: 26 of 97 exact public proceedings are covered and 71 explicit coverage gaps remain. Identity reconciliation, event registration and inter-proceeding proof are separate denominators.
 
 ## Retrieval / evidence rule for future threads
 

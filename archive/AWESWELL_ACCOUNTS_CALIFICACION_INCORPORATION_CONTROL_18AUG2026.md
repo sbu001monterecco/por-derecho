@@ -25,7 +25,7 @@ The request is deliberately more precise than asking the court simply to “acce
 
 ### 2.1 Officially filed Aweswell accounts
 
-Source: `Aweswell Limited filed accounts.pdf` — 69 pages.
+Source: officially filed Aweswell accounts — 69 pages (exact private filename withheld).
 
 The filed document records, among other matters:
 
@@ -51,7 +51,7 @@ The most direct source provisions are:
 
 ### 2.2 Board and PropCo1 accounting materials
 
-Source: `2 ANNEX Board Meetig Aweswell - Notes to PropCo1s_260510_220701.pdf` — 27 pages.
+Source: Aweswell Board / PropCo1 accounting annex — 27 pages (exact private filename withheld).
 
 The Board material dated 20 April 2026 records an intended accounting and procedural bridge:
 

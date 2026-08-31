@@ -8,9 +8,9 @@
 A fresh Project Sun Rock / Por Derecho thread must recover the following without relying on chat memory:
 
 1. The calificación appeal is in **Audiencia Provincial de Las Palmas, Sección Cuarta, RPL 2523/2025**.
-2. Gmail `1995278022ce027a` (16-Sep-2025, Javier Sixto) states that the calificación file was located in the Audiencia Provincial and identifies an attachment using `2025_0002523_RPL`.
-3. Gmail `199e6fa989419f60` (15-Oct-2025, Javier Sixto) expressly identifies `SECCION CUARTA DE LA AUDIENCIA PROVINCIAL - RECURSO DE APELACIÓN - 2523/2025`.
-4. Gmail `19e20833780604d3` (13-May-2026, Javier Sixto) states that deliberation and judgment were fixed for **4-Jun-2026**.
+2. Private Javier Sixto email `MF-CAL-AP-SRC-01` (16-Sep-2025; exact subject, filename and mailbox locator withheld) states that the calificación file was located in the Audiencia Provincial and identifies the official attachment reference `2025_0002523_RPL`.
+3. Private Javier Sixto email `MF-CAL-AP-SRC-02` (15-Oct-2025; exact mailbox locator withheld) expressly identifies `SECCION CUARTA DE LA AUDIENCIA PROVINCIAL - RECURSO DE APELACIÓN - 2523/2025`.
+4. Private Javier Sixto email `MF-CAL-AP-SRC-03` (13-May-2026; exact mailbox locator withheld) states that deliberation and judgment were fixed for **4-Jun-2026**.
 5. Targeted Gmail searches through 16-Aug-2026 located **no appellate judgment or terminating resolution for RPL 2523/2025**. Latest controlled status: awaiting appellate decision/notification. This status is superseded immediately by a later native/certified appellate ruling.
 6. Do not merge RPL 2523/2025 with later Sixto correspondence concerning RPL 3304/2025 or 3319/2025.
 7. The public opening is intentionally first-person and allegation-based. Strongest Judge formulation: Gil Marer accuses Alberto López Villarrubia of knowingly signing Sentencia 163/2023 with materially false factual/causal findings and alleges that the conduct amounts to judicial prevarication within Article 446 Código Penal. The site must not report a criminal conviction that does not exist.
@@ -31,7 +31,7 @@ A fresh Project Sun Rock / Por Derecho thread must recover the following without
 
 ## Custody gap
 
-The mailbox facts above are recoverable through connected Gmail and recorded by message ID, but this thread did not create a new native RFC822/hash custody package for the three appellate-status emails. Treat that as a custody enhancement opportunity, not as a deletion-continuity failure.
+The mailbox facts above are recoverable through controlled private custody and mapped there to provider-native records, but this thread did not create a new native RFC822/hash custody package for the three appellate-status emails. Provider IDs remain outside public Git. Treat that as a custody enhancement opportunity, not as a deletion-continuity failure.
 
 ## Conclusion
 

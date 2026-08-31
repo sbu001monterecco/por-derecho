@@ -8,11 +8,11 @@ This manifest supplements `archive/CALIFICACION_VISTA_25JUL2023_THREE_VIDEO_MAST
 
 ## Original source manifest
 
-| Component | Exact filename | Bytes | Duration | Video | Audio | SHA-256 |
+| Component | Public-safe source label | Bytes | Duration | Video | Audio | SHA-256 |
 |---|---|---:|---:|---|---|---|
-| VIDEO_01 | `J. Mercantil 1 (Palmas de Gran Canaria (Las))_0000036_2012_VIDEO_01.mkv` | 448,937,678 | 3600.614000 s | H.264 Main, 960×576, 25 fps, yuv420p | AAC-LC, mono, 44.1 kHz | `63a08742ae6925cb347fe25ceb2c6a78e0625a4aa7ec1df71b6b8602f4eb7d4f` |
-| VIDEO_02 | `J. Mercantil 1 (Palmas de Gran Canaria (Las))_0000036_2012_VIDEO_02.mkv` | 231,434,953 | 1916.989500 s | H.264 Main, 960×576, 25 fps, yuv420p | AAC-LC, mono, 44.1 kHz | `fee31a75c78184e09c07fa4d489028a902233cc340a63faa88a1cd6b94b0f57e` |
-| VIDEO_03 | `J. Mercantil 1 (Palmas de Gran Canaria (Las))_0000036_2012_VIDEO_03.mkv` | 192,947,423 | 1500.267375 s | H.264 Main, 960×576, 25 fps, yuv420p | AAC-LC, mono, 44.1 kHz | `8bc5a27768bf61ee520ebcd97f308bdb5f5ed594175cfa032ee98fa7093cdd07` |
+| VIDEO_01 | private component 01 (exact filename withheld) | 448,937,678 | 3600.614000 s | H.264 Main, 960×576, 25 fps, yuv420p | AAC-LC, mono, 44.1 kHz | `63a08742ae6925cb347fe25ceb2c6a78e0625a4aa7ec1df71b6b8602f4eb7d4f` |
+| VIDEO_02 | private component 02 (exact filename withheld) | 231,434,953 | 1916.989500 s | H.264 Main, 960×576, 25 fps, yuv420p | AAC-LC, mono, 44.1 kHz | `fee31a75c78184e09c07fa4d489028a902233cc340a63faa88a1cd6b94b0f57e` |
+| VIDEO_03 | private component 03 (exact filename withheld) | 192,947,423 | 1500.267375 s | H.264 Main, 960×576, 25 fps, yuv420p | AAC-LC, mono, 44.1 kHz | `8bc5a27768bf61ee520ebcd97f308bdb5f5ed594175cfa032ee98fa7093cdd07` |
 
 Container metadata on all three reports `encoder=libmatroska 1.3.0`. No reliable creation-time tag was exposed by ffprobe.
 

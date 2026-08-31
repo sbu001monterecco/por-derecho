@@ -47,14 +47,14 @@ The AC therefore did **not** have a source-consistent basis to portray the compa
 
 Gil's 2019 opposition reproduces June-2012 emails from accountant **Jonathan Simó Morales** copied to members of the AC team. The material identified in those emails includes:
 
-- `DIARIO 2008 LUCHY.pdf`
-- `DIARIO 2009 LUCHY.pdf`
-- `DIARIO 2010 LUCHY.pdf`
-- `DIARIO 2011 LUCHY.pdf`
-- `DIARIO 2012 LUCHY.XLS`
+- 2008 accounting journal;
+- 2009 accounting journal;
+- 2010 accounting journal;
+- 2011 accounting journal;
+- partial 2012 accounting journal; and
 - balances of sums and balances for 2008, 2009, 2010, 2011 and 2012.
 
-The AC's own report independently corroborates the essential point: journals and trial balances for 2008–2012 were received, with 2012 partial to June.
+The exact private attachment filenames are withheld. The AC's own report independently corroborates the essential point: journals and trial balances for 2008–2012 were received, with 2012 partial to June.
 
 ### Evidential limit
 

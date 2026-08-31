@@ -6,7 +6,7 @@ This file is the deletion-safe handoff for a new thread continuing action with t
 
 ## Current repository checkpoint
 
-At creation of this handoff, current `main` was `4938164da577b27ad63bb731d74013ee90979727`.
+At creation of this handoff, current `main` was `4938164da577b27ad63bb731d74013ee90979727`. The controlled continuation pass restarted from the later current `origin/main` `33c06f308eb13e2ce169ba5f2c92051f65f41b91`; both hashes are historical checkpoints, not a substitute for re-reading current `main`.
 
 The E.G. 745/2026 open-transparency publication was previously closed through:
 
@@ -117,5 +117,9 @@ Immediate merits gate 1 is now **CLOSED**: the SHA-512 printed on `REGAGE26e0007
 The wider DI 248/2018 → DI 113/2022 → DI 22/2026 → DIP 2/2026 → EG 49/2026 → DP 1901/2026 → E.G. 745/2026 chronology, the limited 2019/2023/RPL 2523 bridges, updated gaps and current action matrix are preserved in:
 
 - `evidence/fiscalia/2026/MINISTERIO_FISCAL_WIDER_MATTER_EG745_UNITARY_EVIDENCE_ACTION_DIGEST_31AUG2026.md`.
+
+The continuation pass corrected two material stale source classifications: DI 113's signed 8-Feb-2023 archive and 23-Feb-2026 copy decision are located; DI 22's signed 11-Feb archive and 13/16/19-Feb and 2/3-Mar decision sequence are located. The remaining gaps concern file completeness, source/diligence inventories, remittal proof and later-act attribution—not the existence of those decisions.
+
+It also fixed the communication denominator and the repeat-scan problem. The public register contains 296 independent event rows: 75 baseline RedSARA receipts, all 156 located mailbox transports and 65 separate source-proved acts/notices/correspondence events. The later RedSARA total of 97 still contains 22 aggregate-only items and must not be described as 97/97 independently registered. The private 231-row native custody/locator manifest is persisted outside public Git under opaque custody control, with aggregate SHA-256 `bdd12a8fa62b5058525e1c37053fb7899ac24a60d12ff48ab8b74bda617cd6f6`; provider identifiers remain unpublished. Future passes must use the append-only register and completed-scan checkpoint, scanning only the checkpoint overlap-to-present window unless scope changes or pagination failed.
 
 The public-safe RedSARA transcript bundle was also found to contain a two-character Base64 continuity drift. A tested in-memory repair matches the already-declared compressed and uncompressed hashes, but private-source governance blocks editing encoded evidence payloads in public Git. The governed custody/replacement action remains open. This is a project-side repository issue, not an error attributed to the Ministerio Fiscal.

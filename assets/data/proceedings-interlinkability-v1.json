@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "control_date": "2026-08-30",
+  "control_date": "2026-08-31",
   "status": "PUBLIC_DERIVED_EXACT_PROCEEDING_INTERLINKABILITY_CONTROL",
   "canonical_node_source_id": "PROCEEDINGS_MASTER_REGISTER",
   "public_node_projection": "assets/data/proceedings-master-public-v1.json",
@@ -101,9 +101,21 @@
       "ESP-TS-001",
       "VAL-CIV-001",
       "TF-CIV-006",
-      "LZ-JUD-043"
+      "LZ-JUD-043",
+      "LZ-FIS-045",
+      "TF-FIS-007",
+      "GC-FIS-032",
+      "TF-FIS-008",
+      "GC-FIS-033",
+      "NAT-FIS-004",
+      "LZ-JUD-046",
+      "GC-FIS-034",
+      "NAT-FIS-005",
+      "GC-FIS-035",
+      "NAT-FIS-006",
+      "NAT-FIS-007"
     ],
-    "expected_count": 85,
+    "expected_count": 97,
     "excluded_aggregate_reference_ids": [
       "GC-APP-007"
     ]
@@ -314,6 +326,249 @@
           "assertion_direction": "FORWARD",
           "assertion_from_master_id": "GC-CIV-027",
           "assertion_to_master_id": "GC-APP-028"
+        }
+      ],
+      "limitations_en": "Reverse navigation may be derived from this recorded field. The edge does not establish joinder, notice, admissibility, knowledge, agreement, wrongdoing or liability.",
+      "limitations_es": "Puede derivarse navegación inversa de este campo registrado. El enlace no acredita acumulación, conocimiento formal, admisibilidad, conocimiento personal, acuerdo, ilicitud ni responsabilidad.",
+      "public_safe": true,
+      "supporting_assertion_count": 2
+    },
+    {
+      "id": "REL-LINKED_PROCEEDING-GC-FIS-013-GC-CAL-002",
+      "from_master_id": "GC-FIS-013",
+      "to_master_id": "GC-CAL-002",
+      "relationship_class": "DIRECT_PROCEDURAL_EDGE",
+      "relationship_type": "LINKED_PROCEEDING",
+      "direction": "FORWARD",
+      "why_en": "GC-FIS-013 names GC-CAL-002 in Linked_Proceedings. The canonical link is preserved without inferring joinder or shared merits.",
+      "why_es": "GC-FIS-013 identifica GC-CAL-002 en Linked_Proceedings. Se conserva el enlace canónico sin inferir acumulación ni fondo común.",
+      "source": {
+        "kind": "MASTER_REGISTER_FIELD",
+        "source_id": "PROCEEDINGS_MASTER_REGISTER",
+        "record_master_id": "GC-FIS-013",
+        "field": "Linked_Proceedings",
+        "value_token": "GC-CAL-002",
+        "evidence_status": "VERIFIED_PRIMARY_COPY"
+      },
+      "source_assertions": [
+        {
+          "source_id": "PROCEEDINGS_MASTER_REGISTER",
+          "source_record_master_id": "GC-FIS-013",
+          "field": "Linked_Proceedings",
+          "value_token": "GC-CAL-002",
+          "evidence_status": "VERIFIED_PRIMARY_COPY",
+          "assertion_relationship_type": "LINKED_PROCEEDING",
+          "assertion_direction": "FORWARD",
+          "assertion_from_master_id": "GC-FIS-013",
+          "assertion_to_master_id": "GC-CAL-002"
+        }
+      ],
+      "limitations_en": "Reverse navigation may be derived from this recorded field. The edge does not establish joinder, notice, admissibility, knowledge, agreement, wrongdoing or liability.",
+      "limitations_es": "Puede derivarse navegación inversa de este campo registrado. El enlace no acredita acumulación, conocimiento formal, admisibilidad, conocimiento personal, acuerdo, ilicitud ni responsabilidad.",
+      "public_safe": true,
+      "supporting_assertion_count": 1
+    },
+    {
+      "id": "REL-LINKED_PROCEEDING-GC-FIS-014-LZ-JUD-046",
+      "from_master_id": "GC-FIS-014",
+      "to_master_id": "LZ-JUD-046",
+      "relationship_class": "DIRECT_PROCEDURAL_EDGE",
+      "relationship_type": "LINKED_PROCEEDING",
+      "direction": "FORWARD",
+      "why_en": "GC-FIS-014 names LZ-JUD-046 in Linked_Proceedings. The canonical link is preserved without inferring joinder or shared merits.",
+      "why_es": "GC-FIS-014 identifica LZ-JUD-046 en Linked_Proceedings. Se conserva el enlace canónico sin inferir acumulación ni fondo común.",
+      "source": {
+        "kind": "MASTER_REGISTER_FIELD",
+        "source_id": "PROCEEDINGS_MASTER_REGISTER",
+        "record_master_id": "GC-FIS-014",
+        "field": "Linked_Proceedings",
+        "value_token": "LZ-JUD-046",
+        "evidence_status": "VERIFIED_PRIMARY_COPY"
+      },
+      "source_assertions": [
+        {
+          "source_id": "PROCEEDINGS_MASTER_REGISTER",
+          "source_record_master_id": "GC-FIS-014",
+          "field": "Linked_Proceedings",
+          "value_token": "LZ-JUD-046",
+          "evidence_status": "VERIFIED_PRIMARY_COPY",
+          "assertion_relationship_type": "LINKED_PROCEEDING",
+          "assertion_direction": "FORWARD",
+          "assertion_from_master_id": "GC-FIS-014",
+          "assertion_to_master_id": "LZ-JUD-046"
+        },
+        {
+          "source_id": "PROCEEDINGS_MASTER_REGISTER",
+          "source_record_master_id": "LZ-JUD-046",
+          "field": "Linked_Proceedings",
+          "value_token": "GC-FIS-014",
+          "evidence_status": "CORPUS_REPORTED_PRIMARY_PENDING",
+          "assertion_relationship_type": "LINKED_PROCEEDING",
+          "assertion_direction": "FORWARD",
+          "assertion_from_master_id": "LZ-JUD-046",
+          "assertion_to_master_id": "GC-FIS-014"
+        }
+      ],
+      "limitations_en": "Reverse navigation may be derived from this recorded field. The edge does not establish joinder, notice, admissibility, knowledge, agreement, wrongdoing or liability.",
+      "limitations_es": "Puede derivarse navegación inversa de este campo registrado. El enlace no acredita acumulación, conocimiento formal, admisibilidad, conocimiento personal, acuerdo, ilicitud ni responsabilidad.",
+      "public_safe": true,
+      "supporting_assertion_count": 2
+    },
+    {
+      "id": "REL-LINKED_PROCEEDING-GC-FIS-016-GC-FIS-015",
+      "from_master_id": "GC-FIS-016",
+      "to_master_id": "GC-FIS-015",
+      "relationship_class": "DIRECT_PROCEDURAL_EDGE",
+      "relationship_type": "LINKED_PROCEEDING",
+      "direction": "FORWARD",
+      "why_en": "GC-FIS-016 names GC-FIS-015 in Linked_Proceedings. The canonical link is preserved without inferring joinder or shared merits.",
+      "why_es": "GC-FIS-016 identifica GC-FIS-015 en Linked_Proceedings. Se conserva el enlace canónico sin inferir acumulación ni fondo común.",
+      "source": {
+        "kind": "MASTER_REGISTER_FIELD",
+        "source_id": "PROCEEDINGS_MASTER_REGISTER",
+        "record_master_id": "GC-FIS-016",
+        "field": "Linked_Proceedings",
+        "value_token": "GC-FIS-015",
+        "evidence_status": "VERIFIED_PRIMARY_COPY"
+      },
+      "source_assertions": [
+        {
+          "source_id": "PROCEEDINGS_MASTER_REGISTER",
+          "source_record_master_id": "GC-FIS-016",
+          "field": "Linked_Proceedings",
+          "value_token": "GC-FIS-015",
+          "evidence_status": "VERIFIED_PRIMARY_COPY",
+          "assertion_relationship_type": "LINKED_PROCEEDING",
+          "assertion_direction": "FORWARD",
+          "assertion_from_master_id": "GC-FIS-016",
+          "assertion_to_master_id": "GC-FIS-015"
+        }
+      ],
+      "limitations_en": "Reverse navigation may be derived from this recorded field. The edge does not establish joinder, notice, admissibility, knowledge, agreement, wrongdoing or liability.",
+      "limitations_es": "Puede derivarse navegación inversa de este campo registrado. El enlace no acredita acumulación, conocimiento formal, admisibilidad, conocimiento personal, acuerdo, ilicitud ni responsabilidad.",
+      "public_safe": true,
+      "supporting_assertion_count": 1
+    },
+    {
+      "id": "REL-LINKED_PROCEEDING-GC-FIS-016-TF-FIS-007",
+      "from_master_id": "GC-FIS-016",
+      "to_master_id": "TF-FIS-007",
+      "relationship_class": "DIRECT_PROCEDURAL_EDGE",
+      "relationship_type": "LINKED_PROCEEDING",
+      "direction": "FORWARD",
+      "why_en": "GC-FIS-016 names TF-FIS-007 in Linked_Proceedings. The canonical link is preserved without inferring joinder or shared merits.",
+      "why_es": "GC-FIS-016 identifica TF-FIS-007 en Linked_Proceedings. Se conserva el enlace canónico sin inferir acumulación ni fondo común.",
+      "source": {
+        "kind": "MASTER_REGISTER_FIELD",
+        "source_id": "PROCEEDINGS_MASTER_REGISTER",
+        "record_master_id": "GC-FIS-016",
+        "field": "Linked_Proceedings",
+        "value_token": "TF-FIS-007",
+        "evidence_status": "VERIFIED_PRIMARY_COPY"
+      },
+      "source_assertions": [
+        {
+          "source_id": "PROCEEDINGS_MASTER_REGISTER",
+          "source_record_master_id": "GC-FIS-016",
+          "field": "Linked_Proceedings",
+          "value_token": "TF-FIS-007",
+          "evidence_status": "VERIFIED_PRIMARY_COPY",
+          "assertion_relationship_type": "LINKED_PROCEEDING",
+          "assertion_direction": "FORWARD",
+          "assertion_from_master_id": "GC-FIS-016",
+          "assertion_to_master_id": "TF-FIS-007"
+        },
+        {
+          "source_id": "PROCEEDINGS_MASTER_REGISTER",
+          "source_record_master_id": "TF-FIS-007",
+          "field": "Linked_Proceedings",
+          "value_token": "GC-FIS-016",
+          "evidence_status": "VERIFIED_PRIMARY",
+          "assertion_relationship_type": "LINKED_PROCEEDING",
+          "assertion_direction": "FORWARD",
+          "assertion_from_master_id": "TF-FIS-007",
+          "assertion_to_master_id": "GC-FIS-016"
+        }
+      ],
+      "limitations_en": "Reverse navigation may be derived from this recorded field. The edge does not establish joinder, notice, admissibility, knowledge, agreement, wrongdoing or liability.",
+      "limitations_es": "Puede derivarse navegación inversa de este campo registrado. El enlace no acredita acumulación, conocimiento formal, admisibilidad, conocimiento personal, acuerdo, ilicitud ni responsabilidad.",
+      "public_safe": true,
+      "supporting_assertion_count": 2
+    },
+    {
+      "id": "REL-LINKED_PROCEEDING-GC-FIS-017-GC-CRI-008",
+      "from_master_id": "GC-FIS-017",
+      "to_master_id": "GC-CRI-008",
+      "relationship_class": "DIRECT_PROCEDURAL_EDGE",
+      "relationship_type": "LINKED_PROCEEDING",
+      "direction": "FORWARD",
+      "why_en": "GC-FIS-017 names GC-CRI-008 in Linked_Proceedings. The canonical link is preserved without inferring joinder or shared merits.",
+      "why_es": "GC-FIS-017 identifica GC-CRI-008 en Linked_Proceedings. Se conserva el enlace canónico sin inferir acumulación ni fondo común.",
+      "source": {
+        "kind": "MASTER_REGISTER_FIELD",
+        "source_id": "PROCEEDINGS_MASTER_REGISTER",
+        "record_master_id": "GC-FIS-017",
+        "field": "Linked_Proceedings",
+        "value_token": "GC-CRI-008",
+        "evidence_status": "VERIFIED_PRIMARY"
+      },
+      "source_assertions": [
+        {
+          "source_id": "PROCEEDINGS_MASTER_REGISTER",
+          "source_record_master_id": "GC-FIS-017",
+          "field": "Linked_Proceedings",
+          "value_token": "GC-CRI-008",
+          "evidence_status": "VERIFIED_PRIMARY",
+          "assertion_relationship_type": "LINKED_PROCEEDING",
+          "assertion_direction": "FORWARD",
+          "assertion_from_master_id": "GC-FIS-017",
+          "assertion_to_master_id": "GC-CRI-008"
+        }
+      ],
+      "limitations_en": "Reverse navigation may be derived from this recorded field. The edge does not establish joinder, notice, admissibility, knowledge, agreement, wrongdoing or liability.",
+      "limitations_es": "Puede derivarse navegación inversa de este campo registrado. El enlace no acredita acumulación, conocimiento formal, admisibilidad, conocimiento personal, acuerdo, ilicitud ni responsabilidad.",
+      "public_safe": true,
+      "supporting_assertion_count": 1
+    },
+    {
+      "id": "REL-LINKED_PROCEEDING-GC-FIS-017-GC-FIS-033",
+      "from_master_id": "GC-FIS-017",
+      "to_master_id": "GC-FIS-033",
+      "relationship_class": "DIRECT_PROCEDURAL_EDGE",
+      "relationship_type": "LINKED_PROCEEDING",
+      "direction": "FORWARD",
+      "why_en": "GC-FIS-017 names GC-FIS-033 in Linked_Proceedings. The canonical link is preserved without inferring joinder or shared merits.",
+      "why_es": "GC-FIS-017 identifica GC-FIS-033 en Linked_Proceedings. Se conserva el enlace canónico sin inferir acumulación ni fondo común.",
+      "source": {
+        "kind": "MASTER_REGISTER_FIELD",
+        "source_id": "PROCEEDINGS_MASTER_REGISTER",
+        "record_master_id": "GC-FIS-017",
+        "field": "Linked_Proceedings",
+        "value_token": "GC-FIS-033",
+        "evidence_status": "VERIFIED_PRIMARY"
+      },
+      "source_assertions": [
+        {
+          "source_id": "PROCEEDINGS_MASTER_REGISTER",
+          "source_record_master_id": "GC-FIS-017",
+          "field": "Linked_Proceedings",
+          "value_token": "GC-FIS-033",
+          "evidence_status": "VERIFIED_PRIMARY",
+          "assertion_relationship_type": "LINKED_PROCEEDING",
+          "assertion_direction": "FORWARD",
+          "assertion_from_master_id": "GC-FIS-017",
+          "assertion_to_master_id": "GC-FIS-033"
+        },
+        {
+          "source_id": "PROCEEDINGS_MASTER_REGISTER",
+          "source_record_master_id": "GC-FIS-033",
+          "field": "Linked_Proceedings",
+          "value_token": "GC-FIS-017",
+          "evidence_status": "VERIFIED_PRIMARY",
+          "assertion_relationship_type": "LINKED_PROCEEDING",
+          "assertion_direction": "FORWARD",
+          "assertion_from_master_id": "GC-FIS-033",
+          "assertion_to_master_id": "GC-FIS-017"
         }
       ],
       "limitations_en": "Reverse navigation may be derived from this recorded field. The edge does not establish joinder, notice, admissibility, knowledge, agreement, wrongdoing or liability.",
@@ -764,6 +1019,216 @@
       "supporting_assertion_count": 1
     },
     {
+      "id": "REL-LINKED_PROCEEDING-NAT-FIS-004-GC-CRI-008",
+      "from_master_id": "NAT-FIS-004",
+      "to_master_id": "GC-CRI-008",
+      "relationship_class": "DIRECT_PROCEDURAL_EDGE",
+      "relationship_type": "LINKED_PROCEEDING",
+      "direction": "FORWARD",
+      "why_en": "NAT-FIS-004 names GC-CRI-008 in Linked_Proceedings. The canonical link is preserved without inferring joinder or shared merits.",
+      "why_es": "NAT-FIS-004 identifica GC-CRI-008 en Linked_Proceedings. Se conserva el enlace canónico sin inferir acumulación ni fondo común.",
+      "source": {
+        "kind": "MASTER_REGISTER_FIELD",
+        "source_id": "PROCEEDINGS_MASTER_REGISTER",
+        "record_master_id": "NAT-FIS-004",
+        "field": "Linked_Proceedings",
+        "value_token": "GC-CRI-008",
+        "evidence_status": "VERIFIED_PRIMARY"
+      },
+      "source_assertions": [
+        {
+          "source_id": "PROCEEDINGS_MASTER_REGISTER",
+          "source_record_master_id": "NAT-FIS-004",
+          "field": "Linked_Proceedings",
+          "value_token": "GC-CRI-008",
+          "evidence_status": "VERIFIED_PRIMARY",
+          "assertion_relationship_type": "LINKED_PROCEEDING",
+          "assertion_direction": "FORWARD",
+          "assertion_from_master_id": "NAT-FIS-004",
+          "assertion_to_master_id": "GC-CRI-008"
+        }
+      ],
+      "limitations_en": "Reverse navigation may be derived from this recorded field. The edge does not establish joinder, notice, admissibility, knowledge, agreement, wrongdoing or liability.",
+      "limitations_es": "Puede derivarse navegación inversa de este campo registrado. El enlace no acredita acumulación, conocimiento formal, admisibilidad, conocimiento personal, acuerdo, ilicitud ni responsabilidad.",
+      "public_safe": true,
+      "supporting_assertion_count": 1
+    },
+    {
+      "id": "REL-LINKED_PROCEEDING-NAT-FIS-004-GC-FIS-013",
+      "from_master_id": "NAT-FIS-004",
+      "to_master_id": "GC-FIS-013",
+      "relationship_class": "DIRECT_PROCEDURAL_EDGE",
+      "relationship_type": "LINKED_PROCEEDING",
+      "direction": "FORWARD",
+      "why_en": "NAT-FIS-004 names GC-FIS-013 in Linked_Proceedings. The canonical link is preserved without inferring joinder or shared merits.",
+      "why_es": "NAT-FIS-004 identifica GC-FIS-013 en Linked_Proceedings. Se conserva el enlace canónico sin inferir acumulación ni fondo común.",
+      "source": {
+        "kind": "MASTER_REGISTER_FIELD",
+        "source_id": "PROCEEDINGS_MASTER_REGISTER",
+        "record_master_id": "NAT-FIS-004",
+        "field": "Linked_Proceedings",
+        "value_token": "GC-FIS-013",
+        "evidence_status": "VERIFIED_PRIMARY"
+      },
+      "source_assertions": [
+        {
+          "source_id": "PROCEEDINGS_MASTER_REGISTER",
+          "source_record_master_id": "NAT-FIS-004",
+          "field": "Linked_Proceedings",
+          "value_token": "GC-FIS-013",
+          "evidence_status": "VERIFIED_PRIMARY",
+          "assertion_relationship_type": "LINKED_PROCEEDING",
+          "assertion_direction": "FORWARD",
+          "assertion_from_master_id": "NAT-FIS-004",
+          "assertion_to_master_id": "GC-FIS-013"
+        }
+      ],
+      "limitations_en": "Reverse navigation may be derived from this recorded field. The edge does not establish joinder, notice, admissibility, knowledge, agreement, wrongdoing or liability.",
+      "limitations_es": "Puede derivarse navegación inversa de este campo registrado. El enlace no acredita acumulación, conocimiento formal, admisibilidad, conocimiento personal, acuerdo, ilicitud ni responsabilidad.",
+      "public_safe": true,
+      "supporting_assertion_count": 1
+    },
+    {
+      "id": "REL-LINKED_PROCEEDING-NAT-FIS-004-GC-FIS-014",
+      "from_master_id": "NAT-FIS-004",
+      "to_master_id": "GC-FIS-014",
+      "relationship_class": "DIRECT_PROCEDURAL_EDGE",
+      "relationship_type": "LINKED_PROCEEDING",
+      "direction": "FORWARD",
+      "why_en": "NAT-FIS-004 names GC-FIS-014 in Linked_Proceedings. The canonical link is preserved without inferring joinder or shared merits.",
+      "why_es": "NAT-FIS-004 identifica GC-FIS-014 en Linked_Proceedings. Se conserva el enlace canónico sin inferir acumulación ni fondo común.",
+      "source": {
+        "kind": "MASTER_REGISTER_FIELD",
+        "source_id": "PROCEEDINGS_MASTER_REGISTER",
+        "record_master_id": "NAT-FIS-004",
+        "field": "Linked_Proceedings",
+        "value_token": "GC-FIS-014",
+        "evidence_status": "VERIFIED_PRIMARY"
+      },
+      "source_assertions": [
+        {
+          "source_id": "PROCEEDINGS_MASTER_REGISTER",
+          "source_record_master_id": "NAT-FIS-004",
+          "field": "Linked_Proceedings",
+          "value_token": "GC-FIS-014",
+          "evidence_status": "VERIFIED_PRIMARY",
+          "assertion_relationship_type": "LINKED_PROCEEDING",
+          "assertion_direction": "FORWARD",
+          "assertion_from_master_id": "NAT-FIS-004",
+          "assertion_to_master_id": "GC-FIS-014"
+        }
+      ],
+      "limitations_en": "Reverse navigation may be derived from this recorded field. The edge does not establish joinder, notice, admissibility, knowledge, agreement, wrongdoing or liability.",
+      "limitations_es": "Puede derivarse navegación inversa de este campo registrado. El enlace no acredita acumulación, conocimiento formal, admisibilidad, conocimiento personal, acuerdo, ilicitud ni responsabilidad.",
+      "public_safe": true,
+      "supporting_assertion_count": 1
+    },
+    {
+      "id": "REL-LINKED_PROCEEDING-NAT-FIS-004-GC-FIS-016",
+      "from_master_id": "NAT-FIS-004",
+      "to_master_id": "GC-FIS-016",
+      "relationship_class": "DIRECT_PROCEDURAL_EDGE",
+      "relationship_type": "LINKED_PROCEEDING",
+      "direction": "FORWARD",
+      "why_en": "NAT-FIS-004 names GC-FIS-016 in Linked_Proceedings. The canonical link is preserved without inferring joinder or shared merits.",
+      "why_es": "NAT-FIS-004 identifica GC-FIS-016 en Linked_Proceedings. Se conserva el enlace canónico sin inferir acumulación ni fondo común.",
+      "source": {
+        "kind": "MASTER_REGISTER_FIELD",
+        "source_id": "PROCEEDINGS_MASTER_REGISTER",
+        "record_master_id": "NAT-FIS-004",
+        "field": "Linked_Proceedings",
+        "value_token": "GC-FIS-016",
+        "evidence_status": "VERIFIED_PRIMARY"
+      },
+      "source_assertions": [
+        {
+          "source_id": "PROCEEDINGS_MASTER_REGISTER",
+          "source_record_master_id": "NAT-FIS-004",
+          "field": "Linked_Proceedings",
+          "value_token": "GC-FIS-016",
+          "evidence_status": "VERIFIED_PRIMARY",
+          "assertion_relationship_type": "LINKED_PROCEEDING",
+          "assertion_direction": "FORWARD",
+          "assertion_from_master_id": "NAT-FIS-004",
+          "assertion_to_master_id": "GC-FIS-016"
+        }
+      ],
+      "limitations_en": "Reverse navigation may be derived from this recorded field. The edge does not establish joinder, notice, admissibility, knowledge, agreement, wrongdoing or liability.",
+      "limitations_es": "Puede derivarse navegación inversa de este campo registrado. El enlace no acredita acumulación, conocimiento formal, admisibilidad, conocimiento personal, acuerdo, ilicitud ni responsabilidad.",
+      "public_safe": true,
+      "supporting_assertion_count": 1
+    },
+    {
+      "id": "REL-LINKED_PROCEEDING-NAT-FIS-004-GC-FIS-017",
+      "from_master_id": "NAT-FIS-004",
+      "to_master_id": "GC-FIS-017",
+      "relationship_class": "DIRECT_PROCEDURAL_EDGE",
+      "relationship_type": "LINKED_PROCEEDING",
+      "direction": "FORWARD",
+      "why_en": "NAT-FIS-004 names GC-FIS-017 in Linked_Proceedings. The canonical link is preserved without inferring joinder or shared merits.",
+      "why_es": "NAT-FIS-004 identifica GC-FIS-017 en Linked_Proceedings. Se conserva el enlace canónico sin inferir acumulación ni fondo común.",
+      "source": {
+        "kind": "MASTER_REGISTER_FIELD",
+        "source_id": "PROCEEDINGS_MASTER_REGISTER",
+        "record_master_id": "NAT-FIS-004",
+        "field": "Linked_Proceedings",
+        "value_token": "GC-FIS-017",
+        "evidence_status": "VERIFIED_PRIMARY"
+      },
+      "source_assertions": [
+        {
+          "source_id": "PROCEEDINGS_MASTER_REGISTER",
+          "source_record_master_id": "NAT-FIS-004",
+          "field": "Linked_Proceedings",
+          "value_token": "GC-FIS-017",
+          "evidence_status": "VERIFIED_PRIMARY",
+          "assertion_relationship_type": "LINKED_PROCEEDING",
+          "assertion_direction": "FORWARD",
+          "assertion_from_master_id": "NAT-FIS-004",
+          "assertion_to_master_id": "GC-FIS-017"
+        }
+      ],
+      "limitations_en": "Reverse navigation may be derived from this recorded field. The edge does not establish joinder, notice, admissibility, knowledge, agreement, wrongdoing or liability.",
+      "limitations_es": "Puede derivarse navegación inversa de este campo registrado. El enlace no acredita acumulación, conocimiento formal, admisibilidad, conocimiento personal, acuerdo, ilicitud ni responsabilidad.",
+      "public_safe": true,
+      "supporting_assertion_count": 1
+    },
+    {
+      "id": "REL-LINKED_PROCEEDING-NAT-FIS-004-GC-FIS-018",
+      "from_master_id": "NAT-FIS-004",
+      "to_master_id": "GC-FIS-018",
+      "relationship_class": "DIRECT_PROCEDURAL_EDGE",
+      "relationship_type": "LINKED_PROCEEDING",
+      "direction": "FORWARD",
+      "why_en": "NAT-FIS-004 names GC-FIS-018 in Linked_Proceedings. The canonical link is preserved without inferring joinder or shared merits.",
+      "why_es": "NAT-FIS-004 identifica GC-FIS-018 en Linked_Proceedings. Se conserva el enlace canónico sin inferir acumulación ni fondo común.",
+      "source": {
+        "kind": "MASTER_REGISTER_FIELD",
+        "source_id": "PROCEEDINGS_MASTER_REGISTER",
+        "record_master_id": "NAT-FIS-004",
+        "field": "Linked_Proceedings",
+        "value_token": "GC-FIS-018",
+        "evidence_status": "VERIFIED_PRIMARY"
+      },
+      "source_assertions": [
+        {
+          "source_id": "PROCEEDINGS_MASTER_REGISTER",
+          "source_record_master_id": "NAT-FIS-004",
+          "field": "Linked_Proceedings",
+          "value_token": "GC-FIS-018",
+          "evidence_status": "VERIFIED_PRIMARY",
+          "assertion_relationship_type": "LINKED_PROCEEDING",
+          "assertion_direction": "FORWARD",
+          "assertion_from_master_id": "NAT-FIS-004",
+          "assertion_to_master_id": "GC-FIS-018"
+        }
+      ],
+      "limitations_en": "Reverse navigation may be derived from this recorded field. The edge does not establish joinder, notice, admissibility, knowledge, agreement, wrongdoing or liability.",
+      "limitations_es": "Puede derivarse navegación inversa de este campo registrado. El enlace no acredita acumulación, conocimiento formal, admisibilidad, conocimiento personal, acuerdo, ilicitud ni responsabilidad.",
+      "public_safe": true,
+      "supporting_assertion_count": 1
+    },
+    {
       "id": "REL-LINKED_PROCEEDING-NAT-TES-001-X-WB-005",
       "from_master_id": "NAT-TES-001",
       "to_master_id": "X-WB-005",
@@ -791,6 +1256,146 @@
           "assertion_direction": "FORWARD",
           "assertion_from_master_id": "NAT-TES-001",
           "assertion_to_master_id": "X-WB-005"
+        }
+      ],
+      "limitations_en": "Reverse navigation may be derived from this recorded field. The edge does not establish joinder, notice, admissibility, knowledge, agreement, wrongdoing or liability.",
+      "limitations_es": "Puede derivarse navegación inversa de este campo registrado. El enlace no acredita acumulación, conocimiento formal, admisibilidad, conocimiento personal, acuerdo, ilicitud ni responsabilidad.",
+      "public_safe": true,
+      "supporting_assertion_count": 1
+    },
+    {
+      "id": "REL-LINKED_PROCEEDING-TF-FIS-008-TF-CIV-001",
+      "from_master_id": "TF-FIS-008",
+      "to_master_id": "TF-CIV-001",
+      "relationship_class": "DIRECT_PROCEDURAL_EDGE",
+      "relationship_type": "LINKED_PROCEEDING",
+      "direction": "FORWARD",
+      "why_en": "TF-FIS-008 names TF-CIV-001 in Linked_Proceedings. The canonical link is preserved without inferring joinder or shared merits.",
+      "why_es": "TF-FIS-008 identifica TF-CIV-001 en Linked_Proceedings. Se conserva el enlace canónico sin inferir acumulación ni fondo común.",
+      "source": {
+        "kind": "MASTER_REGISTER_FIELD",
+        "source_id": "PROCEEDINGS_MASTER_REGISTER",
+        "record_master_id": "TF-FIS-008",
+        "field": "Linked_Proceedings",
+        "value_token": "TF-CIV-001",
+        "evidence_status": "VERIFIED_PRIMARY"
+      },
+      "source_assertions": [
+        {
+          "source_id": "PROCEEDINGS_MASTER_REGISTER",
+          "source_record_master_id": "TF-FIS-008",
+          "field": "Linked_Proceedings",
+          "value_token": "TF-CIV-001",
+          "evidence_status": "VERIFIED_PRIMARY",
+          "assertion_relationship_type": "LINKED_PROCEEDING",
+          "assertion_direction": "FORWARD",
+          "assertion_from_master_id": "TF-FIS-008",
+          "assertion_to_master_id": "TF-CIV-001"
+        }
+      ],
+      "limitations_en": "Reverse navigation may be derived from this recorded field. The edge does not establish joinder, notice, admissibility, knowledge, agreement, wrongdoing or liability.",
+      "limitations_es": "Puede derivarse navegación inversa de este campo registrado. El enlace no acredita acumulación, conocimiento formal, admisibilidad, conocimiento personal, acuerdo, ilicitud ni responsabilidad.",
+      "public_safe": true,
+      "supporting_assertion_count": 1
+    },
+    {
+      "id": "REL-LINKED_PROCEEDING-TF-FIS-008-TF-CIV-002",
+      "from_master_id": "TF-FIS-008",
+      "to_master_id": "TF-CIV-002",
+      "relationship_class": "DIRECT_PROCEDURAL_EDGE",
+      "relationship_type": "LINKED_PROCEEDING",
+      "direction": "FORWARD",
+      "why_en": "TF-FIS-008 names TF-CIV-002 in Linked_Proceedings. The canonical link is preserved without inferring joinder or shared merits.",
+      "why_es": "TF-FIS-008 identifica TF-CIV-002 en Linked_Proceedings. Se conserva el enlace canónico sin inferir acumulación ni fondo común.",
+      "source": {
+        "kind": "MASTER_REGISTER_FIELD",
+        "source_id": "PROCEEDINGS_MASTER_REGISTER",
+        "record_master_id": "TF-FIS-008",
+        "field": "Linked_Proceedings",
+        "value_token": "TF-CIV-002",
+        "evidence_status": "VERIFIED_PRIMARY"
+      },
+      "source_assertions": [
+        {
+          "source_id": "PROCEEDINGS_MASTER_REGISTER",
+          "source_record_master_id": "TF-FIS-008",
+          "field": "Linked_Proceedings",
+          "value_token": "TF-CIV-002",
+          "evidence_status": "VERIFIED_PRIMARY",
+          "assertion_relationship_type": "LINKED_PROCEEDING",
+          "assertion_direction": "FORWARD",
+          "assertion_from_master_id": "TF-FIS-008",
+          "assertion_to_master_id": "TF-CIV-002"
+        }
+      ],
+      "limitations_en": "Reverse navigation may be derived from this recorded field. The edge does not establish joinder, notice, admissibility, knowledge, agreement, wrongdoing or liability.",
+      "limitations_es": "Puede derivarse navegación inversa de este campo registrado. El enlace no acredita acumulación, conocimiento formal, admisibilidad, conocimiento personal, acuerdo, ilicitud ni responsabilidad.",
+      "public_safe": true,
+      "supporting_assertion_count": 1
+    },
+    {
+      "id": "REL-LINKED_PROCEEDING-TF-FIS-008-TF-CRI-003",
+      "from_master_id": "TF-FIS-008",
+      "to_master_id": "TF-CRI-003",
+      "relationship_class": "DIRECT_PROCEDURAL_EDGE",
+      "relationship_type": "LINKED_PROCEEDING",
+      "direction": "FORWARD",
+      "why_en": "TF-FIS-008 names TF-CRI-003 in Linked_Proceedings. The canonical link is preserved without inferring joinder or shared merits.",
+      "why_es": "TF-FIS-008 identifica TF-CRI-003 en Linked_Proceedings. Se conserva el enlace canónico sin inferir acumulación ni fondo común.",
+      "source": {
+        "kind": "MASTER_REGISTER_FIELD",
+        "source_id": "PROCEEDINGS_MASTER_REGISTER",
+        "record_master_id": "TF-FIS-008",
+        "field": "Linked_Proceedings",
+        "value_token": "TF-CRI-003",
+        "evidence_status": "VERIFIED_PRIMARY"
+      },
+      "source_assertions": [
+        {
+          "source_id": "PROCEEDINGS_MASTER_REGISTER",
+          "source_record_master_id": "TF-FIS-008",
+          "field": "Linked_Proceedings",
+          "value_token": "TF-CRI-003",
+          "evidence_status": "VERIFIED_PRIMARY",
+          "assertion_relationship_type": "LINKED_PROCEEDING",
+          "assertion_direction": "FORWARD",
+          "assertion_from_master_id": "TF-FIS-008",
+          "assertion_to_master_id": "TF-CRI-003"
+        }
+      ],
+      "limitations_en": "Reverse navigation may be derived from this recorded field. The edge does not establish joinder, notice, admissibility, knowledge, agreement, wrongdoing or liability.",
+      "limitations_es": "Puede derivarse navegación inversa de este campo registrado. El enlace no acredita acumulación, conocimiento formal, admisibilidad, conocimiento personal, acuerdo, ilicitud ni responsabilidad.",
+      "public_safe": true,
+      "supporting_assertion_count": 1
+    },
+    {
+      "id": "REL-LINKED_PROCEEDING-TF-FIS-008-TF-FIS-007",
+      "from_master_id": "TF-FIS-008",
+      "to_master_id": "TF-FIS-007",
+      "relationship_class": "DIRECT_PROCEDURAL_EDGE",
+      "relationship_type": "LINKED_PROCEEDING",
+      "direction": "FORWARD",
+      "why_en": "TF-FIS-008 names TF-FIS-007 in Linked_Proceedings. The canonical link is preserved without inferring joinder or shared merits.",
+      "why_es": "TF-FIS-008 identifica TF-FIS-007 en Linked_Proceedings. Se conserva el enlace canónico sin inferir acumulación ni fondo común.",
+      "source": {
+        "kind": "MASTER_REGISTER_FIELD",
+        "source_id": "PROCEEDINGS_MASTER_REGISTER",
+        "record_master_id": "TF-FIS-008",
+        "field": "Linked_Proceedings",
+        "value_token": "TF-FIS-007",
+        "evidence_status": "VERIFIED_PRIMARY"
+      },
+      "source_assertions": [
+        {
+          "source_id": "PROCEEDINGS_MASTER_REGISTER",
+          "source_record_master_id": "TF-FIS-008",
+          "field": "Linked_Proceedings",
+          "value_token": "TF-FIS-007",
+          "evidence_status": "VERIFIED_PRIMARY",
+          "assertion_relationship_type": "LINKED_PROCEEDING",
+          "assertion_direction": "FORWARD",
+          "assertion_from_master_id": "TF-FIS-008",
+          "assertion_to_master_id": "TF-FIS-007"
         }
       ],
       "limitations_en": "Reverse navigation may be derived from this recorded field. The edge does not establish joinder, notice, admissibility, knowledge, agreement, wrongdoing or liability.",
@@ -3140,15 +3745,15 @@
       "why_es": "Actualmente no se materializa ningún enlace directo ni grupo contextual controlado admitido. La necesidad de fuente primaria abierta de la fila se mantiene como laguna relacional expresa.",
       "limitations_en": "This disposition controls navigation only. It does not prove joinder, receipt, admissibility, knowledge, agreement, causation, wrongdoing or liability.",
       "limitations_es": "Esta clasificación controla solo la navegación. No prueba acumulación, recepción, admisibilidad, conocimiento, acuerdo, causalidad, ilicitud ni responsabilidad.",
-      "next_source_needed_en": "Destination reference, assigned fiscal, diligences and decision",
+      "next_source_needed_en": "Destination reference, assigned fiscal, complete transmitted corpus, diligences and decision",
       "next_source_needed_es": "Referencia de destino, fiscal asignado, diligencias y resolución.",
-      "source_status": "VERIFIED_PROCEDURAL",
+      "source_status": "VERIFIED_PRIMARY_COPY",
       "basis": {
         "kind": "MASTER_REGISTER_FIELD",
         "source_id": "PROCEEDINGS_MASTER_REGISTER",
         "record_master_id": "LZ-FIS-007",
         "field": "Open_Reference_Gap",
-        "evidence_status": "VERIFIED_PROCEDURAL"
+        "evidence_status": "VERIFIED_PRIMARY_COPY"
       }
     },
     {
@@ -3622,6 +4227,7 @@
       "master_id": "GC-CAL-002",
       "primary_classification": "DIRECT_PROCEDURAL_EDGE",
       "relationship_ids": [
+        "REL-LINKED_PROCEEDING-GC-FIS-013-GC-CAL-002",
         "REL-PARENT_CHILD-GC-CAL-002-GC-APP-004",
         "REL-PARENT_CHILD-GC-JUD-001-GC-CAL-002"
       ],
@@ -3638,6 +4244,7 @@
       "basis": {
         "kind": "DIRECT_RELATIONSHIP_MEMBERSHIP",
         "relationship_ids": [
+          "REL-LINKED_PROCEEDING-GC-FIS-013-GC-CAL-002",
           "REL-PARENT_CHILD-GC-CAL-002-GC-APP-004",
           "REL-PARENT_CHILD-GC-JUD-001-GC-CAL-002"
         ]
@@ -3825,22 +4432,25 @@
     },
     {
       "master_id": "GC-CRI-008",
-      "primary_classification": "EXPLICIT_RELATIONSHIP_GAP",
-      "relationship_ids": [],
+      "primary_classification": "DIRECT_PROCEDURAL_EDGE",
+      "relationship_ids": [
+        "REL-LINKED_PROCEEDING-GC-FIS-017-GC-CRI-008",
+        "REL-LINKED_PROCEEDING-NAT-FIS-004-GC-CRI-008"
+      ],
       "context_cluster_ids": [],
-      "why_en": "No direct edge or admitted controlled contextual cluster is currently materialised. The row's open primary-source requirement is carried as an explicit relationship gap.",
-      "why_es": "Actualmente no se materializa ningún enlace directo ni grupo contextual controlado admitido. La necesidad de fuente primaria abierta de la fila se mantiene como laguna relacional expresa.",
+      "why_en": "At least one direct relationship is supported by an explicit canonical Parent_Master_ID, Linked_Proceedings or Appeal_or_Review field.",
+      "why_es": "Al menos una relación directa está respaldada por un campo canónico expreso Parent_Master_ID, Linked_Proceedings o Appeal_or_Review.",
       "limitations_en": "This disposition controls navigation only. It does not prove joinder, receipt, admissibility, knowledge, agreement, causation, wrongdoing or liability.",
       "limitations_es": "Esta clasificación controla solo la navegación. No prueba acumulación, recepción, admisibilidad, conocimiento, acuerdo, causalidad, ilicitud ni responsabilidad.",
       "next_source_needed_en": "Fiscal report, later order, docket and annex index",
       "next_source_needed_es": "Informe del Ministerio Fiscal, resolución posterior, expediente e índice de anexos.",
       "source_status": "VERIFIED_PRIMARY",
       "basis": {
-        "kind": "MASTER_REGISTER_FIELD",
-        "source_id": "PROCEEDINGS_MASTER_REGISTER",
-        "record_master_id": "GC-CRI-008",
-        "field": "Open_Reference_Gap",
-        "evidence_status": "VERIFIED_PRIMARY"
+        "kind": "DIRECT_RELATIONSHIP_MEMBERSHIP",
+        "relationship_ids": [
+          "REL-LINKED_PROCEEDING-GC-FIS-017-GC-CRI-008",
+          "REL-LINKED_PROCEEDING-NAT-FIS-004-GC-CRI-008"
+        ]
       }
     },
     {
@@ -3905,8 +4515,11 @@
     },
     {
       "master_id": "GC-FIS-013",
-      "primary_classification": "CONTROLLED_CONTEXTUAL_BRIDGE",
-      "relationship_ids": [],
+      "primary_classification": "DIRECT_PROCEDURAL_EDGE",
+      "relationship_ids": [
+        "REL-LINKED_PROCEEDING-GC-FIS-013-GC-CAL-002",
+        "REL-LINKED_PROCEEDING-NAT-FIS-004-GC-FIS-013"
+      ],
       "context_cluster_ids": [
         "CTX-PRISM-P01",
         "CTX-PRISM-P03",
@@ -3916,81 +4529,100 @@
         "CTX-PRISM-P12",
         "CTX-PRISM-P16"
       ],
-      "why_en": "No direct edge is asserted. The primary controlled bridge is CASE_PRISM_PROPOSITION; its limitations remain attached.",
-      "why_es": "No se afirma enlace directo. El puente controlado principal es CASE_PRISM_PROPOSITION; se mantienen sus limitaciones.",
+      "why_en": "At least one direct relationship is supported by an explicit canonical Parent_Master_ID, Linked_Proceedings or Appeal_or_Review field.",
+      "why_es": "Al menos una relación directa está respaldada por un campo canónico expreso Parent_Master_ID, Linked_Proceedings o Appeal_or_Review.",
       "limitations_en": "This disposition controls navigation only. It does not prove joinder, receipt, admissibility, knowledge, agreement, causation, wrongdoing or liability.",
       "limitations_es": "Esta clasificación controla solo la navegación. No prueba acumulación, recepción, admisibilidad, conocimiento, acuerdo, causalidad, ilicitud ni responsabilidad.",
-      "next_source_needed_en": "Complete certified file, requested-v-performed matrix and archive basis",
+      "next_source_needed_en": "Complete certified file, source inventory and requested-versus-performed diligence matrix",
       "next_source_needed_es": "Expediente certificado completo, matriz de lo solicitado frente a lo practicado y fundamento del archivo.",
-      "source_status": "VERIFIED_PROCEDURAL",
+      "source_status": "VERIFIED_PRIMARY_COPY",
       "basis": {
-        "kind": "CONTEXT_CLUSTER_MEMBERSHIP",
-        "primary_context_cluster_id": "CTX-PRISM-P01"
+        "kind": "DIRECT_RELATIONSHIP_MEMBERSHIP",
+        "relationship_ids": [
+          "REL-LINKED_PROCEEDING-GC-FIS-013-GC-CAL-002",
+          "REL-LINKED_PROCEEDING-NAT-FIS-004-GC-FIS-013"
+        ]
       }
     },
     {
       "master_id": "GC-FIS-014",
-      "primary_classification": "EXPLICIT_RELATIONSHIP_GAP",
-      "relationship_ids": [],
+      "primary_classification": "DIRECT_PROCEDURAL_EDGE",
+      "relationship_ids": [
+        "REL-LINKED_PROCEEDING-GC-FIS-014-LZ-JUD-046",
+        "REL-LINKED_PROCEEDING-NAT-FIS-004-GC-FIS-014"
+      ],
       "context_cluster_ids": [],
-      "why_en": "No direct edge or admitted controlled contextual cluster is currently materialised. The row's open primary-source requirement is carried as an explicit relationship gap.",
-      "why_es": "Actualmente no se materializa ningún enlace directo ni grupo contextual controlado admitido. La necesidad de fuente primaria abierta de la fila se mantiene como laguna relacional expresa.",
+      "why_en": "At least one direct relationship is supported by an explicit canonical Parent_Master_ID, Linked_Proceedings or Appeal_or_Review field.",
+      "why_es": "Al menos una relación directa está respaldada por un campo canónico expreso Parent_Master_ID, Linked_Proceedings o Appeal_or_Review.",
       "limitations_en": "This disposition controls navigation only. It does not prove joinder, receipt, admissibility, knowledge, agreement, causation, wrongdoing or liability.",
       "limitations_es": "Esta clasificación controla solo la navegación. No prueba acumulación, recepción, admisibilidad, conocimiento, acuerdo, causalidad, ilicitud ni responsabilidad.",
-      "next_source_needed_en": "Native file, archive act, object, material received and decision",
+      "next_source_needed_en": "Complete certified DI 113 file; performed-diligence/source inventory; native DP 616/2021 and DP 668/2021 orders and reparto bridge",
       "next_source_needed_es": "Expediente nativo, oficina, objeto, material recibido y resolución.",
-      "source_status": "OPEN_REFERENCE",
+      "source_status": "VERIFIED_PRIMARY_COPY",
       "basis": {
-        "kind": "MASTER_REGISTER_FIELD",
-        "source_id": "PROCEEDINGS_MASTER_REGISTER",
-        "record_master_id": "GC-FIS-014",
-        "field": "Open_Reference_Gap",
-        "evidence_status": "OPEN_REFERENCE"
+        "kind": "DIRECT_RELATIONSHIP_MEMBERSHIP",
+        "relationship_ids": [
+          "REL-LINKED_PROCEEDING-GC-FIS-014-LZ-JUD-046",
+          "REL-LINKED_PROCEEDING-NAT-FIS-004-GC-FIS-014"
+        ]
       }
     },
     {
       "master_id": "GC-FIS-015",
-      "primary_classification": "EXPLICIT_RELATIONSHIP_GAP",
-      "relationship_ids": [],
+      "primary_classification": "DIRECT_PROCEDURAL_EDGE",
+      "relationship_ids": [
+        "REL-LINKED_PROCEEDING-GC-FIS-016-GC-FIS-015"
+      ],
       "context_cluster_ids": [],
-      "why_en": "No direct edge or admitted controlled contextual cluster is currently materialised. The row's open primary-source requirement is carried as an explicit relationship gap.",
-      "why_es": "Actualmente no se materializa ningún enlace directo ni grupo contextual controlado admitido. La necesidad de fuente primaria abierta de la fila se mantiene como laguna relacional expresa.",
+      "why_en": "At least one direct relationship is supported by an explicit canonical Parent_Master_ID, Linked_Proceedings or Appeal_or_Review field.",
+      "why_es": "Al menos una relación directa está respaldada por un campo canónico expreso Parent_Master_ID, Linked_Proceedings o Appeal_or_Review.",
       "limitations_en": "This disposition controls navigation only. It does not prove joinder, receipt, admissibility, knowledge, agreement, causation, wrongdoing or liability.",
       "limitations_es": "Esta clasificación controla solo la navegación. No prueba acumulación, recepción, admisibilidad, conocimiento, acuerdo, causalidad, ilicitud ni responsabilidad.",
       "next_source_needed_en": "Native decision/referral, decision-maker, destination and outcome",
       "next_source_needed_es": "Resolución o remisión nativa, decisor, destino y resultado.",
       "source_status": "OPEN_REFERENCE",
       "basis": {
-        "kind": "MASTER_REGISTER_FIELD",
-        "source_id": "PROCEEDINGS_MASTER_REGISTER",
-        "record_master_id": "GC-FIS-015",
-        "field": "Open_Reference_Gap",
-        "evidence_status": "OPEN_REFERENCE"
+        "kind": "DIRECT_RELATIONSHIP_MEMBERSHIP",
+        "relationship_ids": [
+          "REL-LINKED_PROCEEDING-GC-FIS-016-GC-FIS-015"
+        ]
       }
     },
     {
       "master_id": "GC-FIS-016",
-      "primary_classification": "CONTROLLED_CONTEXTUAL_BRIDGE",
-      "relationship_ids": [],
+      "primary_classification": "DIRECT_PROCEDURAL_EDGE",
+      "relationship_ids": [
+        "REL-LINKED_PROCEEDING-GC-FIS-016-GC-FIS-015",
+        "REL-LINKED_PROCEEDING-GC-FIS-016-TF-FIS-007",
+        "REL-LINKED_PROCEEDING-NAT-FIS-004-GC-FIS-016"
+      ],
       "context_cluster_ids": [
         "CTX-PRISM-P05"
       ],
-      "why_en": "No direct edge is asserted. The primary controlled bridge is CASE_PRISM_PROPOSITION; its limitations remain attached.",
-      "why_es": "No se afirma enlace directo. El puente controlado principal es CASE_PRISM_PROPOSITION; se mantienen sus limitaciones.",
+      "why_en": "At least one direct relationship is supported by an explicit canonical Parent_Master_ID, Linked_Proceedings or Appeal_or_Review field.",
+      "why_es": "Al menos una relación directa está respaldada por un campo canónico expreso Parent_Master_ID, Linked_Proceedings o Appeal_or_Review.",
       "limitations_en": "This disposition controls navigation only. It does not prove joinder, receipt, admissibility, knowledge, agreement, causation, wrongdoing or liability.",
       "limitations_es": "Esta clasificación controla solo la navegación. No prueba acumulación, recepción, admisibilidad, conocimiento, acuerdo, causalidad, ilicitud ni responsabilidad.",
-      "next_source_needed_en": "Complete file, archive decree and treatment of later/new facts",
+      "next_source_needed_en": "Complete certified file/index; exact source corpus; actor-asset-date comparison; reparto/access/visado; individual treatment of later and materially distinct modules",
       "next_source_needed_es": "Expediente completo, decreto de archivo y tratamiento de hechos posteriores o nuevos.",
-      "source_status": "VERIFIED_PROCEDURAL",
+      "source_status": "VERIFIED_PRIMARY_COPY",
       "basis": {
-        "kind": "CONTEXT_CLUSTER_MEMBERSHIP",
-        "primary_context_cluster_id": "CTX-PRISM-P05"
+        "kind": "DIRECT_RELATIONSHIP_MEMBERSHIP",
+        "relationship_ids": [
+          "REL-LINKED_PROCEEDING-GC-FIS-016-GC-FIS-015",
+          "REL-LINKED_PROCEEDING-GC-FIS-016-TF-FIS-007",
+          "REL-LINKED_PROCEEDING-NAT-FIS-004-GC-FIS-016"
+        ]
       }
     },
     {
       "master_id": "GC-FIS-017",
-      "primary_classification": "CONTROLLED_CONTEXTUAL_BRIDGE",
-      "relationship_ids": [],
+      "primary_classification": "DIRECT_PROCEDURAL_EDGE",
+      "relationship_ids": [
+        "REL-LINKED_PROCEEDING-GC-FIS-017-GC-CRI-008",
+        "REL-LINKED_PROCEEDING-GC-FIS-017-GC-FIS-033",
+        "REL-LINKED_PROCEEDING-NAT-FIS-004-GC-FIS-017"
+      ],
       "context_cluster_ids": [
         "CTX-PRISM-P01",
         "CTX-PRISM-P05",
@@ -3999,22 +4631,28 @@
         "CTX-PRISM-P15",
         "CTX-PRISM-P17"
       ],
-      "why_en": "No direct edge is asserted. The primary controlled bridge is CASE_PRISM_PROPOSITION; its limitations remain attached.",
-      "why_es": "No se afirma enlace directo. El puente controlado principal es CASE_PRISM_PROPOSITION; se mantienen sus limitaciones.",
+      "why_en": "At least one direct relationship is supported by an explicit canonical Parent_Master_ID, Linked_Proceedings or Appeal_or_Review field.",
+      "why_es": "Al menos una relación directa está respaldada por un campo canónico expreso Parent_Master_ID, Linked_Proceedings o Appeal_or_Review.",
       "limitations_en": "This disposition controls navigation only. It does not prove joinder, receipt, admissibility, knowledge, agreement, causation, wrongdoing or liability.",
       "limitations_es": "Esta clasificación controla solo la navegación. No prueba acumulación, recepción, admisibilidad, conocimiento, acuerdo, causalidad, ilicitud ni responsabilidad.",
-      "next_source_needed_en": "Complete certified file, separate 11 Feb opening decree, post-correction treatment and transmission",
+      "next_source_needed_en": "Complete certified file, separate 11-Feb opening decree, incorporation/reconsideration after correction and transmission record",
       "next_source_needed_es": "Expediente certificado completo, decreto separado de incoación de 11 de febrero, tratamiento posterior a la corrección y remisión.",
       "source_status": "VERIFIED_PRIMARY",
       "basis": {
-        "kind": "CONTEXT_CLUSTER_MEMBERSHIP",
-        "primary_context_cluster_id": "CTX-PRISM-P01"
+        "kind": "DIRECT_RELATIONSHIP_MEMBERSHIP",
+        "relationship_ids": [
+          "REL-LINKED_PROCEEDING-GC-FIS-017-GC-CRI-008",
+          "REL-LINKED_PROCEEDING-GC-FIS-017-GC-FIS-033",
+          "REL-LINKED_PROCEEDING-NAT-FIS-004-GC-FIS-017"
+        ]
       }
     },
     {
       "master_id": "GC-FIS-018",
-      "primary_classification": "CONTROLLED_CONTEXTUAL_BRIDGE",
-      "relationship_ids": [],
+      "primary_classification": "DIRECT_PROCEDURAL_EDGE",
+      "relationship_ids": [
+        "REL-LINKED_PROCEEDING-NAT-FIS-004-GC-FIS-018"
+      ],
       "context_cluster_ids": [
         "CTX-PRISM-P05",
         "CTX-PRISM-P06",
@@ -4026,16 +4664,18 @@
         "CTX-PRISM-P17",
         "CTX-PRISM-P18"
       ],
-      "why_en": "No direct edge is asserted. The primary controlled bridge is CASE_PRISM_PROPOSITION; its limitations remain attached.",
-      "why_es": "No se afirma enlace directo. El puente controlado principal es CASE_PRISM_PROPOSITION; se mantienen sus limitaciones.",
+      "why_en": "At least one direct relationship is supported by an explicit canonical Parent_Master_ID, Linked_Proceedings or Appeal_or_Review field.",
+      "why_es": "Al menos una relación directa está respaldada por un campo canónico expreso Parent_Master_ID, Linked_Proceedings o Appeal_or_Review.",
       "limitations_en": "This disposition controls navigation only. It does not prove joinder, receipt, admissibility, knowledge, agreement, causation, wrongdoing or liability.",
       "limitations_es": "Esta clasificación controla solo la navegación. No prueba acumulación, recepción, admisibilidad, conocimiento, acuerdo, causalidad, ilicitud ni responsabilidad.",
-      "next_source_needed_en": "Native decision, material before decision-maker, referrals and later treatment",
+      "next_source_needed_en": "Complete file/index, exact material before decision-maker, referrals and treatment of the literal 2019 tension",
       "next_source_needed_es": "Resolución nativa, material puesto ante el decisor, remisiones y tratamiento posterior.",
-      "source_status": "VERIFIED_PROCEDURAL",
+      "source_status": "VERIFIED_PRIMARY",
       "basis": {
-        "kind": "CONTEXT_CLUSTER_MEMBERSHIP",
-        "primary_context_cluster_id": "CTX-PRISM-P05"
+        "kind": "DIRECT_RELATIONSHIP_MEMBERSHIP",
+        "relationship_ids": [
+          "REL-LINKED_PROCEEDING-NAT-FIS-004-GC-FIS-018"
+        ]
       }
     },
     {
@@ -4161,61 +4801,73 @@
     },
     {
       "master_id": "TF-CIV-001",
-      "primary_classification": "CONTROLLED_CONTEXTUAL_BRIDGE",
-      "relationship_ids": [],
+      "primary_classification": "DIRECT_PROCEDURAL_EDGE",
+      "relationship_ids": [
+        "REL-LINKED_PROCEEDING-TF-FIS-008-TF-CIV-001"
+      ],
       "context_cluster_ids": [
         "CTX-PRISM-P01",
         "CTX-PRISM-P06"
       ],
-      "why_en": "No direct edge is asserted. The primary controlled bridge is CASE_PRISM_PROPOSITION; its limitations remain attached.",
-      "why_es": "No se afirma enlace directo. El puente controlado principal es CASE_PRISM_PROPOSITION; se mantienen sus limitaciones.",
+      "why_en": "At least one direct relationship is supported by an explicit canonical Parent_Master_ID, Linked_Proceedings or Appeal_or_Review field.",
+      "why_es": "Al menos una relación directa está respaldada por un campo canónico expreso Parent_Master_ID, Linked_Proceedings o Appeal_or_Review.",
       "limitations_en": "This disposition controls navigation only. It does not prove joinder, receipt, admissibility, knowledge, agreement, causation, wrongdoing or liability.",
       "limitations_es": "Esta clasificación controla solo la navegación. No prueba acumulación, recepción, admisibilidad, conocimiento, acuerdo, causalidad, ilicitud ni responsabilidad.",
       "next_source_needed_en": "Complete claim, title, opposition, decisions, finality and enforcement bridge",
       "next_source_needed_es": "Demanda completa, título, oposición, resoluciones, firmeza y nexo con la ejecución.",
       "source_status": "VERIFIED_PROCEDURAL",
       "basis": {
-        "kind": "CONTEXT_CLUSTER_MEMBERSHIP",
-        "primary_context_cluster_id": "CTX-PRISM-P01"
+        "kind": "DIRECT_RELATIONSHIP_MEMBERSHIP",
+        "relationship_ids": [
+          "REL-LINKED_PROCEEDING-TF-FIS-008-TF-CIV-001"
+        ]
       }
     },
     {
       "master_id": "TF-CIV-002",
-      "primary_classification": "CONTROLLED_CONTEXTUAL_BRIDGE",
-      "relationship_ids": [],
+      "primary_classification": "DIRECT_PROCEDURAL_EDGE",
+      "relationship_ids": [
+        "REL-LINKED_PROCEEDING-TF-FIS-008-TF-CIV-002"
+      ],
       "context_cluster_ids": [
         "CTX-PRISM-P01",
         "CTX-PRISM-P06"
       ],
-      "why_en": "No direct edge is asserted. The primary controlled bridge is CASE_PRISM_PROPOSITION; its limitations remain attached.",
-      "why_es": "No se afirma enlace directo. El puente controlado principal es CASE_PRISM_PROPOSITION; se mantienen sus limitaciones.",
+      "why_en": "At least one direct relationship is supported by an explicit canonical Parent_Master_ID, Linked_Proceedings or Appeal_or_Review field.",
+      "why_es": "Al menos una relación directa está respaldada por un campo canónico expreso Parent_Master_ID, Linked_Proceedings o Appeal_or_Review.",
       "limitations_en": "This disposition controls navigation only. It does not prove joinder, receipt, admissibility, knowledge, agreement, causation, wrongdoing or liability.",
       "limitations_es": "Esta clasificación controla solo la navegación. No prueba acumulación, recepción, admisibilidad, conocimiento, acuerdo, causalidad, ilicitud ni responsabilidad.",
       "next_source_needed_en": "Full docket, remate/assignment documents and present enforcement/title status",
       "next_source_needed_es": "Expediente completo, documentos de remate o adjudicación y estado actual de la ejecución y del título.",
       "source_status": "VERIFIED_PROCEDURAL",
       "basis": {
-        "kind": "CONTEXT_CLUSTER_MEMBERSHIP",
-        "primary_context_cluster_id": "CTX-PRISM-P01"
+        "kind": "DIRECT_RELATIONSHIP_MEMBERSHIP",
+        "relationship_ids": [
+          "REL-LINKED_PROCEEDING-TF-FIS-008-TF-CIV-002"
+        ]
       }
     },
     {
       "master_id": "TF-CRI-003",
-      "primary_classification": "CONTROLLED_CONTEXTUAL_BRIDGE",
-      "relationship_ids": [],
+      "primary_classification": "DIRECT_PROCEDURAL_EDGE",
+      "relationship_ids": [
+        "REL-LINKED_PROCEEDING-TF-FIS-008-TF-CRI-003"
+      ],
       "context_cluster_ids": [
         "CTX-PRISM-P06"
       ],
-      "why_en": "No direct edge is asserted. The primary controlled bridge is CASE_PRISM_PROPOSITION; its limitations remain attached.",
-      "why_es": "No se afirma enlace directo. El puente controlado principal es CASE_PRISM_PROPOSITION; se mantienen sus limitaciones.",
+      "why_en": "At least one direct relationship is supported by an explicit canonical Parent_Master_ID, Linked_Proceedings or Appeal_or_Review field.",
+      "why_es": "Al menos una relación directa está respaldada por un campo canónico expreso Parent_Master_ID, Linked_Proceedings o Appeal_or_Review.",
       "limitations_en": "This disposition controls navigation only. It does not prove joinder, receipt, admissibility, knowledge, agreement, causation, wrongdoing or liability.",
       "limitations_es": "Esta clasificación controla solo la navegación. No prueba acumulación, recepción, admisibilidad, conocimiento, acuerdo, causalidad, ilicitud ni responsabilidad.",
       "next_source_needed_en": "Complete complaint, archive order, reform, Fiscalía report, appeal and current status",
       "next_source_needed_es": "Denuncia completa, auto de archivo, recurso de reforma, informe de Fiscalía, apelación y estado actual.",
       "source_status": "VERIFIED_PROCEDURAL",
       "basis": {
-        "kind": "CONTEXT_CLUSTER_MEMBERSHIP",
-        "primary_context_cluster_id": "CTX-PRISM-P06"
+        "kind": "DIRECT_RELATIONSHIP_MEMBERSHIP",
+        "relationship_ids": [
+          "REL-LINKED_PROCEEDING-TF-FIS-008-TF-CRI-003"
+        ]
       }
     },
     {
@@ -4865,40 +5517,303 @@
         "field": "Open_Reference_Gap",
         "evidence_status": "PRIMARY_COMPLAINT_AND_OFFICIAL_SUMMONS_LOCATED_OUTCOME_OPEN"
       }
+    },
+    {
+      "master_id": "LZ-FIS-045",
+      "primary_classification": "EXPLICIT_RELATIONSHIP_GAP",
+      "relationship_ids": [],
+      "context_cluster_ids": [],
+      "why_en": "No direct edge or admitted controlled contextual cluster is currently materialised. The row's open primary-source requirement is carried as an explicit relationship gap.",
+      "why_es": "Actualmente no se materializa ningún enlace directo ni grupo contextual controlado admitido. La necesidad de fuente primaria abierta de la fila se mantiene como laguna relacional expresa.",
+      "limitations_en": "This disposition controls navigation only. It does not prove joinder, receipt, admissibility, knowledge, agreement, causation, wrongdoing or liability.",
+      "limitations_es": "Esta clasificación controla solo la navegación. No prueba acumulación, recepción, admisibilidad, conocimiento, acuerdo, causalidad, ilicitud ni responsabilidad.",
+      "next_source_needed_en": "Complete certified file; investigating fiscal; performed diligences/source inventory; any later judicial reiteration or destination",
+      "next_source_needed_es": "Expediente certificado completo; fiscal investigador; diligencias practicadas e inventario de fuentes; y cualquier reiteración judicial posterior o su destino.",
+      "source_status": "VERIFIED_PRIMARY_COPY",
+      "basis": {
+        "kind": "MASTER_REGISTER_FIELD",
+        "source_id": "PROCEEDINGS_MASTER_REGISTER",
+        "record_master_id": "LZ-FIS-045",
+        "field": "Open_Reference_Gap",
+        "evidence_status": "VERIFIED_PRIMARY_COPY"
+      }
+    },
+    {
+      "master_id": "TF-FIS-007",
+      "primary_classification": "DIRECT_PROCEDURAL_EDGE",
+      "relationship_ids": [
+        "REL-LINKED_PROCEEDING-GC-FIS-016-TF-FIS-007",
+        "REL-LINKED_PROCEEDING-TF-FIS-008-TF-FIS-007"
+      ],
+      "context_cluster_ids": [],
+      "why_en": "At least one direct relationship is supported by an explicit canonical Parent_Master_ID, Linked_Proceedings or Appeal_or_Review field.",
+      "why_es": "Al menos una relación directa está respaldada por un campo canónico expreso Parent_Master_ID, Linked_Proceedings o Appeal_or_Review.",
+      "limitations_en": "This disposition controls navigation only. It does not prove joinder, receipt, admissibility, knowledge, agreement, causation, wrongdoing or liability.",
+      "limitations_es": "Esta clasificación controla solo la navegación. No prueba acumulación, recepción, admisibilidad, conocimiento, acuerdo, causalidad, ilicitud ni responsabilidad.",
+      "next_source_needed_en": "Receiving reference, complete transferred corpus, assigned fiscal and differentiated treatment in Las Palmas",
+      "next_source_needed_es": "Referencia de recepción, corpus trasladado completo, fiscal asignado y tratamiento diferenciado en Las Palmas.",
+      "source_status": "VERIFIED_PRIMARY",
+      "basis": {
+        "kind": "DIRECT_RELATIONSHIP_MEMBERSHIP",
+        "relationship_ids": [
+          "REL-LINKED_PROCEEDING-GC-FIS-016-TF-FIS-007",
+          "REL-LINKED_PROCEEDING-TF-FIS-008-TF-FIS-007"
+        ]
+      }
+    },
+    {
+      "master_id": "GC-FIS-032",
+      "primary_classification": "EXPLICIT_RELATIONSHIP_GAP",
+      "relationship_ids": [],
+      "context_cluster_ids": [],
+      "why_en": "No direct edge or admitted controlled contextual cluster is currently materialised. The row's open primary-source requirement is carried as an explicit relationship gap.",
+      "why_es": "Actualmente no se materializa ningún enlace directo ni grupo contextual controlado admitido. La necesidad de fuente primaria abierta de la fila se mantiene como laguna relacional expresa.",
+      "limitations_en": "This disposition controls navigation only. It does not prove joinder, receipt, admissibility, knowledge, agreement, causation, wrongdoing or liability.",
+      "limitations_es": "Esta clasificación controla solo la navegación. No prueba acumulación, recepción, admisibilidad, conocimiento, acuerdo, causalidad, ilicitud ni responsabilidad.",
+      "next_source_needed_en": "Complete file/index; exact receiving destinations and acknowledgements; material before decision-maker; later territorial treatment",
+      "next_source_needed_es": "Expediente e índice completos; destinos receptores exactos y acuses; material puesto ante el decisor; y tratamiento territorial posterior.",
+      "source_status": "VERIFIED_PRIMARY_COPY",
+      "basis": {
+        "kind": "MASTER_REGISTER_FIELD",
+        "source_id": "PROCEEDINGS_MASTER_REGISTER",
+        "record_master_id": "GC-FIS-032",
+        "field": "Open_Reference_Gap",
+        "evidence_status": "VERIFIED_PRIMARY_COPY"
+      }
+    },
+    {
+      "master_id": "TF-FIS-008",
+      "primary_classification": "DIRECT_PROCEDURAL_EDGE",
+      "relationship_ids": [
+        "REL-LINKED_PROCEEDING-TF-FIS-008-TF-CIV-001",
+        "REL-LINKED_PROCEEDING-TF-FIS-008-TF-CIV-002",
+        "REL-LINKED_PROCEEDING-TF-FIS-008-TF-CRI-003",
+        "REL-LINKED_PROCEEDING-TF-FIS-008-TF-FIS-007"
+      ],
+      "context_cluster_ids": [],
+      "why_en": "At least one direct relationship is supported by an explicit canonical Parent_Master_ID, Linked_Proceedings or Appeal_or_Review field.",
+      "why_es": "Al menos una relación directa está respaldada por un campo canónico expreso Parent_Master_ID, Linked_Proceedings o Appeal_or_Review.",
+      "limitations_en": "This disposition controls navigation only. It does not prove joinder, receipt, admissibility, knowledge, agreement, causation, wrongdoing or liability.",
+      "limitations_es": "Esta clasificación controla solo la navegación. No prueba acumulación, recepción, admisibilidad, conocimiento, acuerdo, causalidad, ilicitud ni responsabilidad.",
+      "next_source_needed_en": "Judicial decision of 16 Jul cited by decree; DIP 7/2026 and DIP 12/2026 native identities/scope; proof of incorporation into DP 748; individual request treatment",
+      "next_source_needed_es": "Resolución judicial de 16 de julio citada por el decreto; identidades y ámbitos nativos de DIP 7/2026 y DIP 12/2026; prueba de incorporación a DP 748; y tratamiento individual de cada solicitud.",
+      "source_status": "VERIFIED_PRIMARY",
+      "basis": {
+        "kind": "DIRECT_RELATIONSHIP_MEMBERSHIP",
+        "relationship_ids": [
+          "REL-LINKED_PROCEEDING-TF-FIS-008-TF-CIV-001",
+          "REL-LINKED_PROCEEDING-TF-FIS-008-TF-CIV-002",
+          "REL-LINKED_PROCEEDING-TF-FIS-008-TF-CRI-003",
+          "REL-LINKED_PROCEEDING-TF-FIS-008-TF-FIS-007"
+        ]
+      }
+    },
+    {
+      "master_id": "GC-FIS-033",
+      "primary_classification": "DIRECT_PROCEDURAL_EDGE",
+      "relationship_ids": [
+        "REL-LINKED_PROCEEDING-GC-FIS-017-GC-FIS-033"
+      ],
+      "context_cluster_ids": [],
+      "why_en": "At least one direct relationship is supported by an explicit canonical Parent_Master_ID, Linked_Proceedings or Appeal_or_Review field.",
+      "why_es": "Al menos una relación directa está respaldada por un campo canónico expreso Parent_Master_ID, Linked_Proceedings o Appeal_or_Review.",
+      "limitations_en": "This disposition controls navigation only. It does not prove joinder, receipt, admissibility, knowledge, agreement, causation, wrongdoing or liability.",
+      "limitations_es": "Esta clasificación controla solo la navegación. No prueba acumulación, recepción, admisibilidad, conocimiento, acuerdo, causalidad, ilicitud ni responsabilidad.",
+      "next_source_needed_en": "Complete file/index; original 20-Aug decree; exact examined corpus; transfer/association treatment by Provincial Las Palmas",
+      "next_source_needed_es": "Expediente e índice completos; decreto original de 20 de agosto; corpus exacto examinado; y tratamiento del traslado o asociación por la Fiscalía Provincial de Las Palmas.",
+      "source_status": "VERIFIED_PRIMARY",
+      "basis": {
+        "kind": "DIRECT_RELATIONSHIP_MEMBERSHIP",
+        "relationship_ids": [
+          "REL-LINKED_PROCEEDING-GC-FIS-017-GC-FIS-033"
+        ]
+      }
+    },
+    {
+      "master_id": "NAT-FIS-004",
+      "primary_classification": "DIRECT_PROCEDURAL_EDGE",
+      "relationship_ids": [
+        "REL-LINKED_PROCEEDING-NAT-FIS-004-GC-CRI-008",
+        "REL-LINKED_PROCEEDING-NAT-FIS-004-GC-FIS-013",
+        "REL-LINKED_PROCEEDING-NAT-FIS-004-GC-FIS-014",
+        "REL-LINKED_PROCEEDING-NAT-FIS-004-GC-FIS-016",
+        "REL-LINKED_PROCEEDING-NAT-FIS-004-GC-FIS-017",
+        "REL-LINKED_PROCEEDING-NAT-FIS-004-GC-FIS-018"
+      ],
+      "context_cluster_ids": [],
+      "why_en": "At least one direct relationship is supported by an explicit canonical Parent_Master_ID, Linked_Proceedings or Appeal_or_Review field.",
+      "why_es": "Al menos una relación directa está respaldada por un campo canónico expreso Parent_Master_ID, Linked_Proceedings o Appeal_or_Review.",
+      "limitations_en": "This disposition controls navigation only. It does not prove joinder, receipt, admissibility, knowledge, agreement, causation, wrongdoing or liability.",
+      "limitations_es": "Esta clasificación controla solo la navegación. No prueba acumulación, recepción, admisibilidad, conocimiento, acuerdo, causalidad, ilicitud ni responsabilidad.",
+      "next_source_needed_en": "Complete file/index; 2/3-Aug routing; request-by-request treatment; six-file examination inventory; preservation/remission record; native verifiable act; actor chain",
+      "next_source_needed_es": "Expediente e índice completos; trazabilidad del 2 y 3 de agosto; tratamiento solicitud por solicitud; inventario de examen de los seis expedientes; registro de preservación y remisión; acto nativo verificable; y cadena de actores.",
+      "source_status": "VERIFIED_PRIMARY",
+      "basis": {
+        "kind": "DIRECT_RELATIONSHIP_MEMBERSHIP",
+        "relationship_ids": [
+          "REL-LINKED_PROCEEDING-NAT-FIS-004-GC-CRI-008",
+          "REL-LINKED_PROCEEDING-NAT-FIS-004-GC-FIS-013",
+          "REL-LINKED_PROCEEDING-NAT-FIS-004-GC-FIS-014",
+          "REL-LINKED_PROCEEDING-NAT-FIS-004-GC-FIS-016",
+          "REL-LINKED_PROCEEDING-NAT-FIS-004-GC-FIS-017",
+          "REL-LINKED_PROCEEDING-NAT-FIS-004-GC-FIS-018"
+        ]
+      }
+    },
+    {
+      "master_id": "LZ-JUD-046",
+      "primary_classification": "DIRECT_PROCEDURAL_EDGE",
+      "relationship_ids": [
+        "REL-LINKED_PROCEEDING-GC-FIS-014-LZ-JUD-046"
+      ],
+      "context_cluster_ids": [],
+      "why_en": "At least one direct relationship is supported by an explicit canonical Parent_Master_ID, Linked_Proceedings or Appeal_or_Review field.",
+      "why_es": "Al menos una relación directa está respaldada por un campo canónico expreso Parent_Master_ID, Linked_Proceedings o Appeal_or_Review.",
+      "limitations_en": "This disposition controls navigation only. It does not prove joinder, receipt, admissibility, knowledge, agreement, causation, wrongdoing or liability.",
+      "limitations_es": "Esta clasificación controla solo la navegación. No prueba acumulación, recepción, admisibilidad, conocimiento, acuerdo, causalidad, ilicitud ni responsabilidad.",
+      "next_source_needed_en": "Certified docket and reparto bridge; native orders; NIG; full complaint/annex index; Ministerio Fiscal receipt/report; notice and finality",
+      "next_source_needed_es": "Expediente certificado y puente de reparto; autos nativos; NIG; denuncia completa e índice de anexos; recepción o informe del Ministerio Fiscal; notificación y firmeza.",
+      "source_status": "CORPUS_REPORTED_PRIMARY_PENDING",
+      "basis": {
+        "kind": "DIRECT_RELATIONSHIP_MEMBERSHIP",
+        "relationship_ids": [
+          "REL-LINKED_PROCEEDING-GC-FIS-014-LZ-JUD-046"
+        ]
+      }
+    },
+    {
+      "master_id": "GC-FIS-034",
+      "primary_classification": "EXPLICIT_RELATIONSHIP_GAP",
+      "relationship_ids": [],
+      "context_cluster_ids": [],
+      "why_en": "No direct edge or admitted controlled contextual cluster is currently materialised. The row's open primary-source requirement is carried as an explicit relationship gap.",
+      "why_es": "Actualmente no se materializa ningún enlace directo ni grupo contextual controlado admitido. La necesidad de fuente primaria abierta de la fila se mantiene como laguna relacional expresa.",
+      "limitations_en": "This disposition controls navigation only. It does not prove joinder, receipt, admissibility, knowledge, agreement, causation, wrongdoing or liability.",
+      "limitations_es": "Esta clasificación controla solo la navegación. No prueba acumulación, recepción, admisibilidad, conocimiento, acuerdo, causalidad, ilicitud ni responsabilidad.",
+      "next_source_needed_en": "Complete file/index; signed native opening act; any later disposition including the reported 28-Feb reference; NIG; signatory; material examined",
+      "next_source_needed_es": "Expediente e índice completos; acto nativo firmado de incoación; cualquier disposición posterior, incluida la referencia comunicada de 28 de febrero; NIG; firmante; y material examinado.",
+      "source_status": "VERIFIED_PRIMARY_COPY",
+      "basis": {
+        "kind": "MASTER_REGISTER_FIELD",
+        "source_id": "PROCEEDINGS_MASTER_REGISTER",
+        "record_master_id": "GC-FIS-034",
+        "field": "Open_Reference_Gap",
+        "evidence_status": "VERIFIED_PRIMARY_COPY"
+      }
+    },
+    {
+      "master_id": "NAT-FIS-005",
+      "primary_classification": "EXPLICIT_RELATIONSHIP_GAP",
+      "relationship_ids": [],
+      "context_cluster_ids": [],
+      "why_en": "No direct edge or admitted controlled contextual cluster is currently materialised. The row's open primary-source requirement is carried as an explicit relationship gap.",
+      "why_es": "Actualmente no se materializa ningún enlace directo ni grupo contextual controlado admitido. La necesidad de fuente primaria abierta de la fila se mantiene como laguna relacional expresa.",
+      "limitations_en": "This disposition controls navigation only. It does not prove joinder, receipt, admissibility, knowledge, agreement, causation, wrongdoing or liability.",
+      "limitations_es": "Esta clasificación controla solo la navegación. No prueba acumulación, recepción, admisibilidad, conocimiento, acuerdo, causalidad, ilicitud ni responsabilidad.",
+      "next_source_needed_en": "Complete file/index; object; underlying act if any; transfer/assignment; NIG; signatory; outcome",
+      "next_source_needed_es": "Expediente e índice completos; objeto; acto subyacente, si existe; traslado o asignación; NIG; firmante; y resultado.",
+      "source_status": "VERIFIED_PROCEDURAL",
+      "basis": {
+        "kind": "MASTER_REGISTER_FIELD",
+        "source_id": "PROCEEDINGS_MASTER_REGISTER",
+        "record_master_id": "NAT-FIS-005",
+        "field": "Open_Reference_Gap",
+        "evidence_status": "VERIFIED_PROCEDURAL"
+      }
+    },
+    {
+      "master_id": "GC-FIS-035",
+      "primary_classification": "EXPLICIT_RELATIONSHIP_GAP",
+      "relationship_ids": [],
+      "context_cluster_ids": [],
+      "why_en": "No direct edge or admitted controlled contextual cluster is currently materialised. The row's open primary-source requirement is carried as an explicit relationship gap.",
+      "why_es": "Actualmente no se materializa ningún enlace directo ni grupo contextual controlado admitido. La necesidad de fuente primaria abierta de la fila se mantiene como laguna relacional expresa.",
+      "limitations_en": "This disposition controls navigation only. It does not prove joinder, receipt, admissibility, knowledge, agreement, causation, wrongdoing or liability.",
+      "limitations_es": "Esta clasificación controla solo la navegación. No prueba acumulación, recepción, admisibilidad, conocimiento, acuerdo, causalidad, ilicitud ni responsabilidad.",
+      "next_source_needed_en": "Underlying act; object; full file/index; disposition; NIG; signatory; material examined; any transfer or later treatment",
+      "next_source_needed_es": "Acto subyacente; objeto; expediente e índice completos; disposición; NIG; firmante; material examinado; y cualquier traslado o tratamiento posterior.",
+      "source_status": "VERIFIED_PROCEDURAL",
+      "basis": {
+        "kind": "MASTER_REGISTER_FIELD",
+        "source_id": "PROCEEDINGS_MASTER_REGISTER",
+        "record_master_id": "GC-FIS-035",
+        "field": "Open_Reference_Gap",
+        "evidence_status": "VERIFIED_PROCEDURAL"
+      }
+    },
+    {
+      "master_id": "NAT-FIS-006",
+      "primary_classification": "EXPLICIT_RELATIONSHIP_GAP",
+      "relationship_ids": [],
+      "context_cluster_ids": [],
+      "why_en": "No direct edge or admitted controlled contextual cluster is currently materialised. The row's open primary-source requirement is carried as an explicit relationship gap.",
+      "why_es": "Actualmente no se materializa ningún enlace directo ni grupo contextual controlado admitido. La necesidad de fuente primaria abierta de la fila se mantiene como laguna relacional expresa.",
+      "limitations_en": "This disposition controls navigation only. It does not prove joinder, receipt, admissibility, knowledge, agreement, causation, wrongdoing or liability.",
+      "limitations_es": "Esta clasificación controla solo la navegación. No prueba acumulación, recepción, admisibilidad, conocimiento, acuerdo, causalidad, ilicitud ni responsabilidad.",
+      "next_source_needed_en": "Complete file/index; object; internal transfer/association; assigned officer; NIG; signatory identity; later action or outcome",
+      "next_source_needed_es": "Expediente e índice completos; objeto; traslado o asociación interna; funcionario asignado; NIG; identidad del firmante; y actuación o resultado posterior.",
+      "source_status": "VERIFIED_PRIMARY_COPY",
+      "basis": {
+        "kind": "MASTER_REGISTER_FIELD",
+        "source_id": "PROCEEDINGS_MASTER_REGISTER",
+        "record_master_id": "NAT-FIS-006",
+        "field": "Open_Reference_Gap",
+        "evidence_status": "VERIFIED_PRIMARY_COPY"
+      }
+    },
+    {
+      "master_id": "NAT-FIS-007",
+      "primary_classification": "EXPLICIT_RELATIONSHIP_GAP",
+      "relationship_ids": [],
+      "context_cluster_ids": [],
+      "why_en": "No direct edge or admitted controlled contextual cluster is currently materialised. The row's open primary-source requirement is carried as an explicit relationship gap.",
+      "why_es": "Actualmente no se materializa ningún enlace directo ni grupo contextual controlado admitido. La necesidad de fuente primaria abierta de la fila se mantiene como laguna relacional expresa.",
+      "limitations_en": "This disposition controls navigation only. It does not prove joinder, receipt, admissibility, knowledge, agreement, causation, wrongdoing or liability.",
+      "limitations_es": "Esta clasificación controla solo la navegación. No prueba acumulación, recepción, admisibilidad, conocimiento, acuerdo, causalidad, ilicitud ni responsabilidad.",
+      "next_source_needed_en": "Complete file/index; object; internal transfer/association; assigned officer; NIG; signatory identity; later action or outcome",
+      "next_source_needed_es": "Expediente e índice completos; objeto; traslado o asociación interna; funcionario asignado; NIG; identidad del firmante; y actuación o resultado posterior.",
+      "source_status": "VERIFIED_PROCEDURAL",
+      "basis": {
+        "kind": "MASTER_REGISTER_FIELD",
+        "source_id": "PROCEEDINGS_MASTER_REGISTER",
+        "record_master_id": "NAT-FIS-007",
+        "field": "Open_Reference_Gap",
+        "evidence_status": "VERIFIED_PROCEDURAL"
+      }
     }
   ],
   "coverage": {
-    "public_record_count": 106,
-    "canonical_exact_proceeding_count": 86,
-    "public_exact_proceeding_count": 85,
+    "public_record_count": 121,
+    "canonical_exact_proceeding_count": 98,
+    "public_exact_proceeding_count": 97,
     "private_exact_excluded_count": 1,
     "private_exact_excluded_disposition_counts": {
       "EXPLICIT_RELATIONSHIP_GAP": 1
     },
-    "node_disposition_count": 85,
-    "direct_relationship_count": 17,
-    "direct_relationship_source_verified_pair_count": 16,
-    "direct_relationship_source_reported_pending_pair_count": 1,
-    "direct_source_assertion_count": 21,
-    "direct_source_verified_assertion_count": 20,
-    "direct_source_reported_pending_assertion_count": 1,
+    "node_disposition_count": 97,
+    "direct_relationship_count": 33,
+    "direct_relationship_source_verified_pair_count": 31,
+    "direct_relationship_source_reported_pending_pair_count": 2,
+    "direct_source_assertion_count": 40,
+    "direct_source_verified_assertion_count": 38,
+    "direct_source_reported_pending_assertion_count": 2,
     "context_cluster_count": 26,
     "recorded_connection_cluster_count": 7,
     "recorded_stream_cluster_count": 0,
     "case_prism_proposition_cluster_count": 18,
     "source_controlled_corridor_count": 1,
     "case_prism_exact_proceeding_covered_count": 26,
-    "case_prism_exact_proceeding_uncovered_count": 59,
-    "decision_dependency_exact_coverage": "GAP_26_OF_85",
-    "bilingual_specific_next_source_count": 85,
-    "bilingual_specific_next_source_coverage": "VERIFIED_85_OF_85",
+    "case_prism_exact_proceeding_uncovered_count": 71,
+    "decision_dependency_exact_coverage": "GAP_26_OF_97",
+    "bilingual_specific_next_source_count": 97,
+    "bilingual_specific_next_source_coverage": "VERIFIED_97_OF_97",
     "exact_proceeding_full_finite_test_count": 0,
-    "exact_proceeding_full_finite_test_coverage": "GAP_0_OF_85",
+    "exact_proceeding_full_finite_test_coverage": "GAP_0_OF_97",
     "classification_counts": {
-      "DIRECT_PROCEDURAL_EDGE": 27,
-      "CONTROLLED_CONTEXTUAL_BRIDGE": 39,
+      "DIRECT_PROCEDURAL_EDGE": 42,
+      "CONTROLLED_CONTEXTUAL_BRIDGE": 32,
       "INDEPENDENT_TRACK": 0,
-      "EXPLICIT_RELATIONSHIP_GAP": 19
+      "EXPLICIT_RELATIONSHIP_GAP": 23
     },
     "unexplained_exact_proceeding_count": 0,
     "geography_only_bridge_count": 0

@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
 from __future__ import annotations
 
+import hashlib
 import json
 from pathlib import Path
+import re
 import sys
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -24,12 +26,30 @@ EXPECTED = [
     "REGAGE26e00075136953",
 ]
 PUBLIC_FILES = [DATA, ES, EN, OPS, MODULE]
-FORBIDDEN = ["Y2231410X", "Pozo Cabildo", "sbu001@monterecco.com"]
+PRIVATE_TYPE_PATTERNS = (
+    ("Spanish identity document", re.compile(r"\b(?:[XYZ]\d{7}[A-Z]|\d{8}[A-Z])\b", re.IGNORECASE)),
+    ("email address", re.compile(r"\b[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}\b", re.IGNORECASE)),
+)
+PRIVATE_TWO_WORD_PHRASE_DIGESTS = {
+    "e6e16c4f92c018a6844166b8ab7c274d7c2d763d152281c456b7e671e7cd9c0f"
+}
 
 
 def fail(message: str) -> None:
     print(f"ERROR: {message}", file=sys.stderr)
     raise SystemExit(1)
+
+
+def contains_private_phrase(value: str) -> bool:
+    """Match the protected street-name fragment without storing it in public Git."""
+
+    words = re.findall(r"\w+", value.casefold(), flags=re.UNICODE)
+    for start in range(len(words) - 1):
+        candidate = " ".join(words[start : start + 2])
+        digest = hashlib.sha256(candidate.encode("utf-8")).hexdigest()
+        if digest in PRIVATE_TWO_WORD_PHRASE_DIGESTS:
+            return True
+    return False
 
 
 for path in [DATA, ES, EN, OPS, MODULE, SITE]:
@@ -67,9 +87,11 @@ if "Do not infer the opening of a supervisory investigation" not in en:
 
 for path in PUBLIC_FILES:
     text = path.read_text(encoding="utf-8")
-    for term in FORBIDDEN:
-        if term in text:
-            fail(f"private term {term!r} found in {path.relative_to(ROOT)}")
+    for label, pattern in PRIVATE_TYPE_PATTERNS:
+        if pattern.search(text):
+            fail(f"private {label} found in {path.relative_to(ROOT)}")
+    if contains_private_phrase(text):
+        fail(f"digest-matched private street fragment found in {path.relative_to(ROOT)}")
 
 site = SITE.read_text(encoding="utf-8")
 if "ricpe-saip-batch-status-20260824.js" not in site:

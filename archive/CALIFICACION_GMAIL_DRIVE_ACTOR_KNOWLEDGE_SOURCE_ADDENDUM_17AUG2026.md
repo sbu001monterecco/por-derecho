@@ -36,17 +36,9 @@ Do not upgrade transmission into reading, institutional availability into person
 
 ### Connected source
 
-Gmail message dated **11 December 2012**, from **Gil Marer** to **Francisco de Borja Rodríguez-Batllori**, subject:
+Private message dated **11 December 2012**, from **Gil Marer** to **Francisco de Borja Rodríguez-Batllori**. The exact private subject and mailbox locator are withheld; `CAL-GM-01` is the public-safe source anchor.
 
-`Documentación Sun Park`
-
-The connected message identifies attachments including:
-
-- `diario2012.xls`;
-- `Movimiento Cuentas bancarias.pdf`;
-- `Listado deuda detallada.pdf`;
-- `conta_conceptos.pdf`;
-- and additional supporting litigation/documentary material.
+The connected message identifies attachments including a 2012 journal workbook, bank-movement material, a detailed-debt schedule, accounting-concept material and additional supporting litigation/documentary material. Exact private attachment filenames are withheld.
 
 ### Classification
 
@@ -78,9 +70,7 @@ The strongest defensible proposition is that the dispute concerned completeness,
 
 ### Connected source
 
-Original Gmail thread dated **30 January 2018**, subject:
-
-`Requerimiento`
+Original private thread dated **30 January 2018**. The exact private subject and mailbox locator are withheld; `CAL-GM-02` is the public-safe source anchor.
 
 The message records Gil's itemised response to the AC's requests, including statements that he had attempted to answer what was requested, was seeking the best way to cooperate, had no intention of obstructing the AC's work, and remained available for further requirements. It also identified material to be supplied separately by Jonathan and explained that LPB had no employees and therefore could not simply command operating staff as if they were LPB employees.
 
@@ -151,9 +141,7 @@ Do not publish it as proof that financing was completed, that conclusion was leg
 
 ### Connected source
 
-Gmail thread dated **2 February 2018**, subject:
-
-`Cuentas Anuales`
+Private thread dated **2 February 2018**. The exact private subject and mailbox locator are withheld; `CAL-GM-04` is the public-safe source anchor.
 
 The connected record identifies circulation of:
 
@@ -185,9 +173,7 @@ The source reinforces that accounting materials existed and circulated. It does 
 
 ### Connected source
 
-Gmail message dated **13 May 2026** from Javier Sixto, subject:
-
-`[AWESWELL] Procuradora + RPL 3304 + Calificación Concurso`
+Private message dated **13 May 2026** from Javier Sixto. The exact private subject and mailbox locator are withheld; `CAL-GM-05` is the public-safe source anchor.
 
 The message states that a providencia fixed **4 June 2026** for deliberation and judgment in the Calificación appeal and included the relevant attachment.
 
@@ -241,9 +227,7 @@ No public allegation should exceed the present source status.
 
 ### Connected source
 
-Google Drive file:
-
-`Fiscalía-Mercantil Sección Calificación - 12MAR2019.pdf`
+Private-custody file, public-safe source anchor `CAL-GD-01`; exact private filename and Drive locator withheld.
 
 The connected source identifies a two-page signed Fiscal opinion dated 12 March 2019. The source is already canonicalised in the AC/Fiscal radical-transparency ledger, including the signer and the document's broad adoption structure.
 

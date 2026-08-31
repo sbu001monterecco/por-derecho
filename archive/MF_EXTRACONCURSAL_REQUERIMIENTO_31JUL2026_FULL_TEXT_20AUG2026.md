@@ -1,6 +1,6 @@
 # Ministerio Fiscal — requerimiento urgente extraconcursal — full text preserved
 
-**Source file:** `REQUERIMIENTO_URGENTE_MF_EXTRACONCURSAL_31JUL2026_FINAL_PARA_FIRMA.docx`  
+**Source file:** privately retained signed-source DOCX (exact private filename withheld)<br>
 **Source date:** 31 July 2026  
 **Repository preservation date:** 20 August 2026  
 **Status:** full parsed text preserved from the source document. This is a source-preservation file, not a new allegation and not a substitute for the signed/registered original or RedSARA/REG-AGE receipt.
@@ -57,7 +57,7 @@ Se solicita que cada destino asigne referencia propia, conserve copia íntegra y
 
 ## COMPARECENCIA Y FUNDAMENTO FUNCIONAL
 
-D. GIL MARER, NIE Y2231410X, con domicilio a efectos de notificación en Calle Pozo Cabildo 34, 38208 San Cristóbal de La Laguna, correo electrónico sbu001@monterecco.com, actuando en nombre propio y poniendo en conocimiento hechos que afectan directamente a Aweswell Limited y Matkator, S.L., sin perjuicio de completar la acreditación societaria que resulte exigible para cada actuación, comparece y EXPONE:
+D. GIL MARER, con sus datos de identificación, domicilio de notificación y contacto personal conservados únicamente en la fuente privada firmada, actuando en nombre propio y poniendo en conocimiento hechos que afectan directamente a Aweswell Limited y Matkator, S.L., sin perjuicio de completar la acreditación societaria que resulte exigible para cada actuación, comparece y EXPONE:
 
 La presente comunicación se formula al amparo de la misión constitucional y estatutaria del Ministerio Fiscal de promover la acción de la justicia en defensa de la legalidad, los derechos de los ciudadanos y el interés público, y de sus facultades de investigación, coordinación, inspección, preservación e impulso conforme al artículo 124 de la Constitución, la Ley 50/1981 (EOMF) y el artículo 773 de la Ley de Enjuiciamiento Criminal. No se solicita una conclusión predeterminada, sino una actuación verificable y proporcionada.
 
@@ -252,5 +252,4 @@ La mera incorporación, fragmentación, devolución circular o invocación gené
 En San Cristóbal de La Laguna, a 31 de julio de 2026.
 
 Fdo.: D. Gil Marer  
-NIE Y2231410X  
-sbu001@monterecco.com
+[NIE Y DATOS DE CONTACTO PERSONAL OMITIDOS EN LA VERSIÓN PÚBLICA]

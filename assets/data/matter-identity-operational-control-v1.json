@@ -40,6 +40,10 @@
       "label_es": "Identidad procesal confirmada (^)",
       "label_en": "Confirmed proceeding identity (^)"
     },
+    "CARET_PENDING": {
+      "label_es": "Referencia procesal estable; identidad completa pendiente de fuente",
+      "label_en": "Stable proceeding reference; complete identity source pending"
+    },
     "CARET_PENDING_EXACT_ORGAN_AND_CERTIFIED_DOCKET": {
       "label_es": "Identidad procesal parcial; órgano e índice certificado pendientes",
       "label_en": "Partial proceeding identity; exact court and certified docket pending"
@@ -166,6 +170,27 @@
       "state": "OPEN",
       "question_es": "Obtener una fuente primaria firmada de la referencia 4009/2015 de Arrecife que establezca órgano exacto, clase, partes, NIG, objeto, escritos, resoluciones, recurso/firmeza y relación material o procesal con Sun Park y los demás expedientes; no fusionarla mientras tanto.",
       "question_en": "Obtain a signed primary source for Arrecife reference 4009/2015 establishing the exact organ, class, parties, NIG, object, filings, decisions, appeal/finality and material or procedural relationship to Sun Park and the other files; do not merge it meanwhile."
+    },
+    {
+      "id": "PD-SP-R-0041",
+      "priority": "P0",
+      "state": "OPEN",
+      "question_es": "Obtener las resoluciones nativas y el expediente de DIP 7/2026 para fijar órgano titular, clase, NIG, objeto, actos, firmantes, estado y relación —si existe— con EG 95/2026 u otros expedientes.",
+      "question_en": "Obtain the native acts and file for DIP 7/2026 to establish the owning office, class, NIG, subject, acts, signatories, status and any source-proved relationship to EG 95/2026 or other files."
+    },
+    {
+      "id": "PD-SP-R-0042",
+      "priority": "P0",
+      "state": "OPEN",
+      "question_es": "Obtener las resoluciones nativas y el expediente de DIP 12/2026 para fijar órgano titular, clase, NIG, objeto, actos, firmantes, estado y relación —si existe— con EG 95/2026 u otros expedientes.",
+      "question_en": "Obtain the native acts and file for DIP 12/2026 to establish the owning office, class, NIG, subject, acts, signatories, status and any source-proved relationship to EG 95/2026 or other files."
+    },
+    {
+      "id": "PD-SP-R-0043",
+      "priority": "P1",
+      "state": "OPEN",
+      "question_es": "Obtener una fuente institucional primaria de EG 58/2026 que establezca si es un expediente distinto y, en su caso, su órgano, clase, NIG, objeto, fechas, actos, firmantes, relaciones, estado y resultado.",
+      "question_en": "Obtain a primary institutional source for EG 58/2026 establishing whether it is a distinct file and, if so, its office, class, NIG, subject, dates, acts, signatories, relationships, status and outcome."
     }
   ],
   "distinction_controls": [

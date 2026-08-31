@@ -30,8 +30,8 @@ The thread requested a unitary scan and maximum attribution concerning the 2013 
 
 ## Recovered archives
 
-- `GMAIL-ZIP-002` / `Fiscalía.zip` — recovered, hash verified, safely extracted and recursively inventoried.
-- `GMAIL-ZIP-005` / `Ampliación Fiscalía.zip` — recovered, hash verified, safely extracted and inventoried.
+- `GMAIL-ZIP-002` / exact private archive filename withheld — recovered, hash verified, safely extracted and recursively inventoried.
+- `GMAIL-ZIP-005` / exact private archive filename withheld — recovered, hash verified, safely extracted and inventoried.
 
 Their native bytes and contents remain outside Git. Recovery closes an access gap; it does not validate allegations inside the archives.
 

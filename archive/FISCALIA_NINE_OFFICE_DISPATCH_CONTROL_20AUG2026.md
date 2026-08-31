@@ -6,7 +6,7 @@
 
 ## 1. Purpose
 
-This file is the canonical private repository control for the coordinated 20 August 2026 email wave to Ministerio Fiscal offices and functions.
+This file is the public-safe current-tree derivative of the private control for the coordinated 20 August 2026 email wave to Ministerio Fiscal offices and functions. Exact mailbox-provider identifiers, private subjects and private attachment filenames are withheld. The public references below are non-provider control labels and have no committed reverse map.
 
 The communications were not one mass email. Each destination received a distinct institutional purpose while preserving the same common evidence boundaries:
 
@@ -22,8 +22,8 @@ The communications were not one mass email. Each destination received a distinct
 
 Every controlling substantive communication carried exactly these two attachments:
 
-1. `pwc-five-actors-plus-ac-2016-knowledge-checkpoint-ES.png` — 489,983 bytes.
-2. `san-telmo-ricpe-sun-park-stamp-v1-ES.png` — 827,315 bytes.
+1. `VISUAL-SOURCE-INDEX-A` — 489,983 bytes.
+2. `VISUAL-SOURCE-INDEX-B` — 827,315 bytes.
 
 Every controlling substantive communication also included:
 
@@ -38,19 +38,19 @@ The images and link are source indexes, not independent findings.
 
 ## 3. Controlling dispatch ledger
 
-Times below are UTC as recorded by Gmail.
+Times below are UTC as recorded by the controlling private mailbox copy.
 
-| Order | Destination / function | Controlling subject | Sent UTC | Gmail message ID | Current status |
+| Order | Destination / function | Public-safe subject category | Sent UTC | Public dispatch reference | Current status |
 |---:|---|---|---|---|---|
-| 1 | Fiscalía de Área de Arrecife–Lanzarote–Puerto del Rosario | `Exp. Gub. 86/2026 — aportación sobrevenida, módulo aforado separado y preservación PwC/Grant Thornton/RSM` | 21:44:59 | `1a021226e704a80c` | Sent; receiving reference and substantive response pending |
-| 2 | Fiscalía Provincial de Las Palmas / DI 22/2026 | `DI 22/2026 / REGAGE26e00070237051 — módulo aforado separado, fuentes profesionales y coordinación con Arrecife` | 21:48:10 | `1a0212557d961158` | Controlling version sent; custody/association response pending |
-| 3 | Fiscalía Superior de Canarias | `EG 112/2026 — precisión sobre aforamiento, objeto separado y fuentes sobrevenidas` | 21:50:36 | `1a02127902fee3ed` | Clarification decree dated 23 Aug and notified 25 Aug located; closure maintained; newer civil/mercantile matters attributed territorially to Provincial Las Palmas |
-| 4 | Inspección Fiscal, through central FGE channels | `A la atención de la Fiscal de Sala Jefa de la Inspección Fiscal — aforamiento, trazabilidad y fuentes profesionales Sun Park` | 21:54:11 | `1a0212ad91efcb1b` | Central receipt acknowledged by FGE Technical Secretariat on 21 Aug; transfer to Inspection, E.G. 745 association and consideration remain unproved |
-| 5 | Fiscalía General del Estado | `A la Fiscal General del Estado — coordinación central, módulo aforado y expansión profesional/económica Sun Park` | 21:56:16 | `1a0212cc23ebd938` | Sent; central association/coordination response pending |
-| 6 | Secretaría Técnica FGE | `ST 553/2026 / ST 104/2025 — módulo aforado, expansión profesional y solicitud de asociación técnica` | 21:58:16 | `1a0212e97d54d59d` | Sent; technical association and destination response pending |
-| 7 | Fiscal de Sala Coordinador de Delitos Económicos | `A la atención del Fiscal de Sala Coordinador de Delitos Económicos — Sun Park: matriz económica, módulo aforado y fuentes profesionales` | 22:00:21 | `1a021308172c6a7a` | Sent through central channels; functional transfer/reference pending |
-| 8 | Fiscalía Especial Anticorrupción | `Exp. Gub. 352/2025 / REGAGE26e00070236245 — aportación sobrevenida, aforamiento separado y perímetro profesional/económico Sun Park` | 22:02:22 | `1a02132589f45aae` | Receipt acknowledged; pending admission until electronic-signature cure |
-| 9 | Fiscalía de la Audiencia Nacional | `Exp. Gub. 86/2026 — trazabilidad de la remisión a Arrecife; Pink/AEAT y fuentes profesionales sobrevenidas` | 22:22:42 | `1a02144f5c6c1ffe` | Sent; forwarding/association and delivery-proof response pending |
+| 1 | Fiscalía de Área de Arrecife–Lanzarote–Puerto del Rosario | Territorial preservation supplement | 21:44:59 | `MF-DSP-20260820-01` | Sent; receiving reference and substantive response pending |
+| 2 | Fiscalía Provincial de Las Palmas / DI 22/2026 | DI 22/2026 corpus and territorial-coordination supplement | 21:48:10 | `MF-DSP-20260820-02` | Controlling version sent; custody/association response pending |
+| 3 | Fiscalía Superior de Canarias | EG 112/2026 competence and routing clarification | 21:50:36 | `MF-DSP-20260820-03` | Clarification decree dated 23 Aug and notified 25 Aug located; closure maintained; newer civil/mercantile matters attributed territorially to Provincial Las Palmas |
+| 4 | Inspección Fiscal, through central FGE channels | Inspection routing, custody and source-preservation request | 21:54:11 | `MF-DSP-20260820-04` | Central receipt acknowledged by FGE Technical Secretariat on 21 Aug; transfer to Inspection, E.G. 745 association and consideration remain unproved |
+| 5 | Fiscalía General del Estado | Central coordination and separated-module request | 21:56:16 | `MF-DSP-20260820-05` | Sent; central association/coordination response pending |
+| 6 | Secretaría Técnica FGE | Technical association and separated-module request | 21:58:16 | `MF-DSP-20260820-06` | Sent; technical association and destination response pending |
+| 7 | Fiscal de Sala Coordinador de Delitos Económicos | Economic-matrix and specialist-coordination request | 22:00:21 | `MF-DSP-20260820-07` | Sent through central channels; functional transfer/reference pending |
+| 8 | Fiscalía Especial Anticorrupción | Specialist-competence and public-finance supplement | 22:02:22 | `MF-DSP-20260820-08` | Receipt acknowledged; pending admission until electronic-signature cure |
+| 9 | Fiscalía de la Audiencia Nacional | Referral-traceability and later-source supplement | 22:22:42 | `MF-DSP-20260820-09` | Sent; forwarding/association and delivery-proof response pending |
 
 ## 4. Version-control events
 
@@ -58,32 +58,32 @@ Times below are UTC as recorded by Gmail.
 
 A superseded Provincial version was also sent at 21:50:55 UTC:
 
-- message ID: `1a02127dfebb7422`.
+- public dispatch reference: `MF-DSP-20260820-02-S1`.
 
-The controlling version is `1a0212557d961158`, because it expressly records the completed Arrecife transmission and sender-side message identifier.
+The controlling version is `MF-DSP-20260820-02`, because it expressly records the completed Arrecife transmission and sender-side dispatch reference.
 
 A correction was sent at 21:51:33 UTC:
 
-- subject: `DI 22/2026 — aclaración de versión controlante de la aportación remitida hoy`;
-- message ID: `1a021286f6ecadab`.
+- subject category: controlling-version clarification;
+- public dispatch reference: `MF-DSP-20260820-02-C1`.
 
 ### Fiscalía Superior
 
 A superseded earlier draft was also sent at 21:50:45 UTC in the original notification thread:
 
-- subject: `Re: Exp.G. 112/2026`;
-- message ID: `1a02127b477b9ea9`.
+- subject category: reply in the pre-existing EG 112/2026 notification thread;
+- public dispatch reference: `MF-DSP-20260820-03-S1`.
 
-The controlling version is `1a02127902fee3ed`.
+The controlling version is `MF-DSP-20260820-03`.
 
 A correction was sent at 21:51:14 UTC:
 
-- subject: `EG 112/2026 — aclaración de versión controlante`;
-- message ID: `1a0212827222f2c5`.
+- subject category: controlling-version clarification;
+- public dispatch reference: `MF-DSP-20260820-03-C1`.
 
 An additional traceability notice recording the completed Arrecife and Provincial transmissions was sent at 21:51:55 UTC:
 
-- message ID: `1a02128c550c7c6b`.
+- public dispatch reference: `MF-DSP-20260820-03-T1`.
 
 ### Control rule
 
@@ -101,8 +101,8 @@ It required the complaint to be signed through an accepted electronic-signature 
 
 Incoming response:
 
-- message ID: `1a02132a13eda543`;
-- subject: `RE: Exp. Gub. 352/2025 / REGAGE26e00070236245 — aportación sobrevenida, aforamiento separado y perímetro profesional/económico Sun Park`.
+- public dispatch reference: `MF-DSP-20260820-08-R1`;
+- subject category: Anticorruption reply in the specialist-competence submission thread.
 
 Controlled status:
 
@@ -120,7 +120,7 @@ Do not describe Anticorruption as having rejected the merits.
 
 ## 6. Delivery and response scan
 
-A Gmail search located no delivery-status failure for the controlling institutional destinations.
+A private-mailbox delivery-status scan located no failure for the controlling institutional destinations.
 
 As of the original 20 August control:
 

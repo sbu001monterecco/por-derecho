@@ -30,7 +30,7 @@ Future threads should re-query these source systems by filename/subject when pro
 
 ### Source
 
-`SEGUNDO-PAGINA2 - Memoria Luchy Playa Blanca SL (1 de Junio 2012).pdf`
+LPB insolvency memorandum dated 1-Jun-2012 (exact private filename withheld).
 
 ### VERIFIED SOURCE CONTENT
 
@@ -89,12 +89,14 @@ Projected amounts in the plan must be labelled as projections if used publicly.
 
 A targeted Gmail scan of 2017 located a dense contemporaneous activity trail. Examples include:
 
-- **29 Nov–1 Dec 2017:** iterative business-plan work with David Dahan, including `2017.11.27 Business Plan - v2.0.pdf` / `2017.12.01 Business Plan - v2.0.pdf`;
+- **29 Nov–1 Dec 2017:** iterative business-plan work with David Dahan, including dated 27-Nov and 1-Dec versioned business plans;
 - **5–6 Dec 2017:** outreach supplying Sun Park/Summers Villages materials, operational-growth data, local rate comparisons and valuation material to potential finance/investment counterparties;
 - **6 Dec 2017:** correspondence with Santander UK contact concerning the wider Summers Villages/project dialogue;
-- **10 Dec 2017:** circulation of a `Project Summers_Bridge Loan Term Sheet_Distribution v1.pdf` described in the covering email as an EG RE term sheet, alongside business plan and valuation material;
-- **10 Dec 2017:** separate correspondence circulating `Heads of Terms Mid Counties coop Travel (MCT) & Hava Vida Travel and Tourism (HVTT)` / `HOT_HVTT_MCT.pdf` as an accommodation-marketing/operating proposition;
-- **12 Dec 2017:** `Operational Growth SPL 2012-17.xlsx` was actively analysed and circulated, including price, reservation and occupancy breakdown work;
+- **10 Dec 2017:** circulation of a bridge-loan term sheet described in the covering email as an EG RE term sheet, alongside business-plan and valuation material;
+- **10 Dec 2017:** separate correspondence circulating heads of terms between the identified travel operators as an accommodation-marketing/operating proposition;
+- **12 Dec 2017:** a 2012–2017 operational-growth workbook was actively analysed and circulated, including price, reservation and occupancy breakdown work;
+
+Exact private attachment filenames for these correspondence sources are withheld from public Git.
 - **26 Dec 2017:** an `Executive report on conclusion of insolvency` was circulated to external lawyers/advisers;
 - **31 Dec 2017:** post-site-visit correspondence from David Dahan concerning Sun Park.
 

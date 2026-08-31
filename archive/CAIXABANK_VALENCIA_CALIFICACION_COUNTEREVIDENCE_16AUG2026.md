@@ -62,7 +62,7 @@ However, a contemporaneous direct counsel report gives the more precise procedur
 
 > “Se admitió la testifical de Borja, a petición de Caixabank, a la cual nos adherimos.”
 
-Source: Gmail message ID `192de7e1c6b3837f`, subject `RE: Valencia y próxima videollamada`, 30-Oct-2024.
+Source: private Javier Sixto email dated 30-Oct-2024, public-safe source reference `CAL-VAL-SRC-01`; exact private subject and mailbox locator withheld.
 
 Accordingly, it is verified that:
 
@@ -182,7 +182,7 @@ The controlled proposition for future repository searches, institutional submiss
 
 Controlled source documents/correspondence read for this refresh:
 
-1. **Javier Sixto email, 30-Oct-2024**, Gmail ID `192de7e1c6b3837f`, `RE: Valencia y próxima videollamada` — contemporaneous report that Borja's testimony was admitted “a petición de Caixabank, a la cual nos adherimos”.
+1. **Javier Sixto email, 30-Oct-2024**, `CAL-VAL-SRC-01` (exact private subject and mailbox locator withheld) — contemporaneous report that Borja's testimony was admitted “a petición de Caixabank, a la cual nos adherimos”.
 2. **Diligencia de Ordenación, 6-Nov-2025**, ORD 1859/2023-9 — current controlled court/case naming and hearing relisted for 28-Jan-2027 at 10:00.
 3. **Citación de Francisco de Borja Rodríguez-Batllori Laffitte, issued 29-Oct-2024 for 6-Nov-2025**, ORD 1859/2023-9 — later procedural wording: witness proposed by claimant and defendant.
 4. **Citación judicial, 23-Apr-2024**, ORD 1859/2023-9 — same both-sides procedural proposition.

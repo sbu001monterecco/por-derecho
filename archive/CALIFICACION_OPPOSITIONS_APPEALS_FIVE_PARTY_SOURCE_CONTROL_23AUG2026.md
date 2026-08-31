@@ -12,18 +12,18 @@ The located judgment, repository and Gmail record support **three first-instance
 
 | Stage | Party interests | Instrument | Evidence status |
 |---|---|---|---|
-| Opposition | LPB | Separate opposition dated 23-Apr-2019 | Complete opposition source set and nine annexes now located; Sentencia 163/2023, AH 7; Gmail `16a4f71df3edd637` contains a 24-Apr-2019 LexNET receipt and first pleading page. Certified reconciliation linking the complete located set to the exact filed bundle/index remains open. |
-| Opposition | Gil Marer | Separate 64-page opposition dated 6-Jun-2019 and digitally signed 10-Jun-2019 | Sentencia, AH 6; Gmail drafting chain `16b28ec4068c45a7` through `16b2ddebf4a0832d`; final signed PDF in Gmail `17086182258dd3f3`. The pleading identifies Joaquín Ruiz de Infante Abella as directing counsel and carries his digital signature. |
-| Opposition | PINK + Patricia | One six-page joint opposition dated 23-Mar-2021 and filed 24-Mar-2021 | Gmail `178692fdd1c427e5`: LexNET Id `202110397349419`, sent 24-Mar-2021 at 15:41:33; principal-document SHA-256 `fd87b9818a84506723ec9ba26a72afe467a59e806d34b8316478bb9b449f24fe`; Sentencia, AH 8. |
+| Opposition | LPB | Separate opposition dated 23-Apr-2019 | Complete opposition source set and nine annexes now located; Sentencia 163/2023, AH 7; private source `MF-CAL-OPP-SRC-LPB-01` contains a 24-Apr-2019 LexNET receipt and first pleading page. Exact mailbox locator withheld. Certified reconciliation linking the complete located set to the exact filed bundle/index remains open. |
+| Opposition | Gil Marer | Separate 64-page opposition dated 6-Jun-2019 and digitally signed 10-Jun-2019 | Sentencia, AH 6; private drafting/final chain `MF-CAL-OPP-SRC-GIL-01` through `MF-CAL-OPP-SRC-GIL-03`. Exact private filenames and mailbox locators withheld. The pleading identifies Joaquín Ruiz de Infante Abella as directing counsel and carries his digital signature. |
+| Opposition | PINK + Patricia | One six-page joint opposition dated 23-Mar-2021 and filed 24-Mar-2021 | Private source `MF-CAL-OPP-SRC-PINK-01`: LexNET Id `202110397349419`, sent 24-Mar-2021 at 15:41:33; principal-document SHA-256 `fd87b9818a84506723ec9ba26a72afe467a59e806d34b8316478bb9b449f24fe`; Sentencia, AH 8. Exact mailbox locator withheld. |
 | Opposition | Aweswell | No instrument identified in this section | Aweswell is not listed as an affected person in Sentencia 163/2023. Do not import filings from other Concurso lanes. |
-| Appeal | Gil Marer | Separate appeal filed 30-Oct-2023 | Gmail `18b80d97aedc93aa` transmits the filed PDF; `18b84ded79ee88c3` returns deposit/filing summary. |
-| Appeal | PINK + Patricia | One joint 17-page appeal filed 30-Oct-2023 | Gmail `18b8197be95f6eab` identifies the modified version; `18b84eefc447d1e6` returns receipt and same-size 353,860-byte PDF on 31-Oct. |
+| Appeal | Gil Marer | Separate appeal filed 30-Oct-2023 | Private sources `MF-CAL-APP-SRC-GIL-01` and `MF-CAL-APP-SRC-GIL-02` establish transmission and the deposit/filing summary; exact private filenames and mailbox locators withheld. |
+| Appeal | PINK + Patricia | One joint 17-page appeal filed 30-Oct-2023 | Private sources `MF-CAL-APP-SRC-PINK-01` and `MF-CAL-APP-SRC-PINK-02` identify the modified version and return receipt and same-size 353,860-byte PDF on 31-Oct; exact private filenames and mailbox locators withheld. |
 | Appeal | LPB | Separate appeal reported filed 2-Nov-2023 | Counsel's email `18b90bb207d7ed8d`; later deposit requirement and payment `18bafc95904e1b28`. Actual filed appeal/receipt not yet located. |
 | Appeal | Aweswell | No appeal identified from Sentencia 163/2023 | Aweswell's RPL 3319/2025 and RPL 421/2026 concern AC-removal and fees/civil-liability lanes, not Calificación merits. |
 
 ## Four appellant interests are not four located appeal pleadings
 
-Gmail `18bb315b768312c7` (9-Nov-2023) says, informally, “los cuatro recursos de la calificación de LPB, GM, PINK y PDM.” The contemporaneous filing chain is more precise:
+Private email `MF-CAL-APP-SRC-SUMMARY-01` (9-Nov-2023; exact subject and mailbox locator withheld) says, informally, “los cuatro recursos de la calificación de LPB, GM, PINK y PDM.” The contemporaneous filing chain is more precise:
 
 - Gil: one appeal;
 - PINK and Patricia: one joint appeal;
@@ -37,8 +37,8 @@ The located records distinguish drafting history, counsel of record and later tr
 
 - José María Betancor Álamo / Alas Legal produced the 5–6-Jun-2019 drafting chain with Gil/Aweswell comments.
 - The final 64-page PDF identifies **Joaquín Ruiz de Infante Abella** as directing counsel and carries his digital signature dated 10-Jun-2019.
-- In Gmail `17086182258dd3f3` (27-Feb-2020), José María Betancor sent that final signed version and described it as the final opposition presented with the clients' agreement. Its SHA-256 is `f442b6856ee73e2413d1877127456638eb5bbd4b577eb884621bb034802a9815`.
-- A different 64-page PDF forwarded in Gmail `17085ebea4d8d163` identifies José María Betancor as directing counsel but is unsigned, retains an unfinished-document placeholder and has SHA-256 `7aee0912b15d4edff356b72b34a29a803e1c978c424b6268da19bc51db9ffa82`. Treat it as a separate draft/version, not as the controlling signed copy.
+- In private source `MF-CAL-OPP-SRC-GIL-03` (27-Feb-2020; exact mailbox locator withheld), José María Betancor sent that final signed version and described it as the final opposition presented with the clients' agreement. Its SHA-256 is `f442b6856ee73e2413d1877127456638eb5bbd4b577eb884621bb034802a9815`.
+- A different 64-page PDF in private source `MF-CAL-OPP-SRC-GIL-DRAFT-01` identifies José María Betancor as directing counsel but is unsigned, retains an unfinished-document placeholder and has SHA-256 `7aee0912b15d4edff356b72b34a29a803e1c978c424b6268da19bc51db9ffa82`. Exact private filename and mailbox locator withheld. Treat it as a separate draft/version, not as the controlling signed copy.
 
 Accordingly, do not reduce provenance to a single author: the evidence supports Alas Legal/Betancor drafting work and client revisions, with Joaquín as the named and signing directing counsel on the final located instrument.
 

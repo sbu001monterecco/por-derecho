@@ -30,15 +30,17 @@ Do not state or imply that Ricardo de Mosteyrín personally decided DI 248/2018.
 
 # 1. DI 248/2018 IS A DIRECT BRIDGE, NOT BACKGROUND CONTEXT
 
-## 17 October 2018 — role reversal
+## 12 September 2018 — originating complaint and role reversal
 
 `DOCUMENTED / chronology controlled`
 
-Gil Marer and Aweswell Limited became complainants against the AC and Construcciones Acosta Matos in DI 248/2018 while the earlier AC-originated criminal lane against Gil/Patricia remained active. This matters because the same actors occupied reversed procedural roles at the same time.
+Gil Marer and Aweswell Limited became complainants against the AC and Construcciones Acosta Matos in DI 248/2018 while the earlier AC-originated criminal lane against Gil/Patricia remained active. The originating complaint is dated 12 September 2018. This matters because the same actors occupied reversed procedural roles at the same time.
+
+The AC's separate 17 October 2018 request for testimonies is a later event within the file. It must not be used as the date of the originating complaint.
 
 ## January 2019 — expansion of DI 248
 
-Primary document: `9. P248-2018 Ampliacion fiscaliala AC 14ENE19.pdf` / Drive ID `19Fs8iq86flUyYSPH6VbbUxuCFlnCF-ka`.
+Primary document: DI 248/2018 expansion dated 14-Jan-2019; public-safe custody reference `MF-DI248-SRC-EXP-01` (exact private filename and Drive locator withheld).
 
 The expansion:
 
@@ -53,7 +55,7 @@ That last proposition is especially important to the later accusation of obstruc
 
 ## 12 March 2019 — Ministerio Fiscal classification opinion
 
-Primary document: `Fiscalía-Mercantil Sección Calificación - 12MAR2019.pdf` / Drive ID `1ybK3F0oS9xRtMC7uFRAk0Zl8qr-nhxEN`.
+Primary document: Ministerio Fiscal calificación opinion dated 12-Mar-2019; public-safe custody reference `MF-DI248-SRC-CAL-01` (exact private filename and Drive locator withheld).
 
 `DOCUMENTED`
 
@@ -71,7 +73,7 @@ but then identifies Gil Marer and Uri Omid — social administrators — as the 
 
 ## 7 May 2019 — DI 248 archive expressly invokes the classification against the complainant
 
-Primary document: `1.Decreto Archivo Fiscalia 248-2018 07MAY2019.pdf` / Drive ID `1ZzOJHOxn2hC_EWctNnblSJJKXVsi4IWk`.
+Primary document: DI 248/2018 archive decree dated 7-May-2019; public-safe custody reference `MF-DI248-SRC-ARCH-01` (exact private filename and Drive locator withheld).
 
 `DOCUMENTED`
 
@@ -95,7 +97,7 @@ Do **not** publish as established fact that Ricardo de Mosteyrín and Elena Herr
 
 # 2. WHAT THE 2023 JUDGMENT ITSELF REJECTED OR NARROWED
 
-Primary judgment: `EE-002-A__AUTO_CONCURSO_CULPOSO.pdf` / Drive ID `13bAFcI4vGec4-NI0n33XtG_RuHU3C4xo`.
+Primary judgment: Sentencia 163/2023 dated 28-Sep-2023; public-safe custody reference `MF-CAL-SRC-JUDGMENT-01` (exact private filename and Drive locator withheld).
 
 Control correction: despite the filename used in the January-2025 newsroom chain, the document is **Sentencia 163/2023 of 28 September 2023**, not an Auto. It concerns the classification of **LPB's** insolvency, not the whole mixed-ownership Sun Park complex. Appeals were filed.
 
@@ -114,7 +116,7 @@ Control correction: despite the filename used in the January-2025 newsroom chain
 
 # 3. THE REMAINING ADVERSE FINDINGS — AND THE SPECIFIC CONTRADICTIONS ON APPEAL
 
-Primary appeal located: `20231012 Apelacion calificacion GIL.docx` / Drive ID `1G4A5GulVlvV87-lsS4uZV3rd1Ds3-GfK`.
+Primary Gil appeal located; public-safe custody reference `MF-CAL-SRC-APPEAL-GIL-01` (exact private filename and Drive locator withheld).
 
 The appeal remains a party pleading unless and until the Audiencia Provincial determines it.
 

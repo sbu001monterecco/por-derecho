@@ -1,8 +1,8 @@
 # BORRADOR — RECURSO POTESTATIVO DE REPOSICIÓN
 
-**Expediente Gubernativo:** 745/2026 — Inspección Fiscal — Fiscalía General del Estado  
-**Acto impugnado:** Decreto de 26 de agosto de 2026  
-**Estado:** borrador de trabajo; revisar identidad, representación, canal de presentación y anexos antes de registrar  
+**Expediente Gubernativo:** 745/2026 — Inspección Fiscal — Fiscalía General del Estado
+**Acto impugnado:** Decreto de 26 de agosto de 2026
+**Estado:** listo para revisión/firma; **NO PRESENTADO / SIN JUSTIFICANTE DE PRESENTACIÓN LOCALIZADO**
 **Prioridad de plazo:** alta
 
 > Este borrador está deliberadamente formulado como impugnación administrativa, no como acusación de ilicitud personal. Distingue el contenido documental, la discrepancia jurídica y las cuestiones que se pide esclarecer.
@@ -86,6 +86,8 @@ El escrito no se limita a una afirmación abstracta. Entre otros extremos:
 - pide que se confirme o descarte, sin prejuzgar responsabilidad, la apariencia objetiva que se describe.
 
 Si la Inspección entiende que esos elementos no alcanzan el umbral de verosimilitud citado en el Decreto, se solicita que la resolución de reposición identifique **qué elementos fueron efectivamente examinados** y por qué las comprobaciones concretas propuestas no justifican siquiera una actuación inspectora preliminar, una subsanación, una preservación o una remisión diferenciada.
+
+La comprobación posterior de las fuentes institucionales demuestra además que el objeto no descansaba únicamente en referencias de parte. Están localizados, entre otros actos: el Decreto de archivo de DI 113/2022 de 8 de febrero de 2023, firmado por Beatriz Sánchez Carreras; su decisión de 23 de febrero de 2026 sobre información y copias; el Decreto de archivo de DI 22/2026 de 11 de febrero de 2026 y las decisiones firmadas de 13, 16 y 19 de febrero y de 2/3 de marzo sobre incorporación de material, mantenimiento del archivo y certificación. Esos actos no demuestran por sí solos infracción, trato de favor ni responsabilidad personal. Sí convierten en finitamente comprobable qué objetos fueron considerados idénticos, civil/concursales o judicializados, qué material fue incorporado a un expediente ya archivado y qué diligencias se practicaron antes y después de cada incorporación.
 
 ## SEXTA. El archivo de la investigación inspectora no resuelve necesariamente las peticiones autónomas de preservación, trazabilidad, acceso y remisión
 
@@ -175,17 +177,26 @@ Gil Marer
 |---|---|---|---|
 | A-1 | Oficio y Decreto E.G. 745/2026, 26/08/2026 | challenged act + appeal notice | native original preserved privately; public transcription controlled |
 | A-2 | REGAGE26e00070235775 | exact Inspection filing, 12 requests, timestamp, hash | located and verified |
-| A-3 | REQUERIMIENTO_URGENTE_MF_DANO_PATRIMONIAL_EXTRACONCURSAL_02AGO2026.pdf | full source filing | locate submission copy / signed source before filing |
-| A-4 | REQUERIMIENTO_URGENTE_MF_EXTRACONCURSAL_31JUL2026_FINAL_FIRMADO.pdf | signed source master | located in Drive; verify identity with registered attachment before annexing |
-| A-5 | controlled matrix of identified prior Fiscalía proceedings and registrations | demonstrates finite, traceable object | prepare from source register |
+| A-3 | PDF source filed on 2 August 2026 | full source filing | exact attachment identity verified by receipt SHA-512 |
+| A-4 | Signed 31-July source master | signed source master | **verified byte-identical to A-3 by exact SHA-512 match** |
+| A-5 | Controlled matrix of identified prior Fiscalía proceedings, signed decisions and registrations | demonstrates finite, traceable object | use the 31-August unitary digest and public-safe communication/artifact registers; remove private locators from the filed annex copy |
 | A-6 | proof of notification email, 26/08/2026 | deadline evidence | located in Gmail |
+| A-7 | DI 113/2022 signed decisions of 8-Feb-2023 and 23-Feb-2026 | fixes the archive decision, prior DP 668/2021 reference and copy-treatment record | located in the official 25-Feb-2026 notification; include only the necessary privacy-controlled copy |
+| A-8 | DI 22/2026 signed decision sequence, 11-Feb to 3-Mar-2026 | fixes archive, later incorporation and archive-maintenance sequence | located in official notifications; include a minimal indexed set, not every duplicate transmission |
 
 ## Counsel checks before filing
 
 - Confirm whether the signer files in his own name only or also for any entity; do not overstate representation.
 - Confirm legally effective notification date and final reposición deadline.
-- Compare registered attachment A-3 byte-for-byte with signed source A-4 before describing them as identical.
+- Preserve the completed SHA-512 comparison proving A-3 and A-4 byte-identical; do not confuse that source match with proof that this reposición was filed.
 - Confirm the correct filing channel for Inspección Fiscal and preserve electronic receipt.
 - Review the applicability of Articles 53, 66, 68, 88, 123 and 124 LPAC in this specific inspection/complaint context.
 - Preserve, but do not simultaneously file, a direct merits contentious appeal if reposición is chosen; Article 123.2 LPAC governs the interaction.
 - Do not allege destruction, bad faith, corruption or disciplinary/criminal liability unless supported by separate evidence and procedurally appropriate.
+
+## Filing sequence — operational control
+
+1. Sign and lodge the final PDF through REG-AGE/RedSARA or the other officially accepted electronic route for Inspección Fiscal.
+2. Preserve the exact filed PDF, annex set, timestamp and receipt before changing the status above.
+3. Reply to the 26-August notification thread with the same signed PDF and the receipt as a courtesy/traceability copy.
+4. A public open-letter URL may be added as supplementary context only. It is not a substitute for the signed appeal, annexes or filing receipt.

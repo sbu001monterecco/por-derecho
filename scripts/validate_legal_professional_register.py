@@ -5,6 +5,7 @@ from __future__ import annotations
 import json
 import re
 import sys
+from collections import Counter
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -78,6 +79,7 @@ def main() -> int:
             fail("missing controlling authorization reference")
 
         parts = []
+        part_counts = {}
         for descriptor in index.get("parts", []):
             path = DATA / descriptor["path"]
             if not path.is_file():
@@ -86,16 +88,27 @@ def main() -> int:
             records = payload.get("records", [])
             if len(records) != descriptor.get("count"):
                 fail(f"part count mismatch: {descriptor['path']}")
+            part_counts[descriptor["path"]] = len(records)
             parts.extend(records)
 
         identities = {r["id"]: r for r in parts}
         if len(identities) != len(parts):
             fail("duplicate immutable identity ID")
         counts = index.get("counts", {})
-        if counts.get("total") != 240 or counts.get("PERSON") != 102 or counts.get("ORGANISATION") != 79:
-            fail("canonical registry counts do not reflect professional extension")
-        if len(parts) != 240:
-            fail("canonical registry part total is not 240")
+        class_counts = Counter(record.get("type") for record in parts)
+        reconciled_counts = {
+            "total": len(parts),
+            **{
+                record_type: class_counts[record_type]
+                for record_type in ("PERSON", "ORGANISATION", "STRUCTURE", "INSTITUTION", "PROCEEDING")
+            },
+        }
+        if counts != reconciled_counts:
+            fail("canonical registry declarations do not reconcile to the federated identity parts")
+        if part_counts.get("matter-identity-registry-v1.professional-people.json") != 27:
+            fail("authorised professional-person identity extension is not the controlled 27-record part")
+        if part_counts.get("matter-identity-registry-v1.professional-organisations.json") != 7:
+            fail("authorised professional-organisation identity extension is not the controlled 7-record part")
 
         records = reg.get("records", [])
         if len(records) != 40:
@@ -209,7 +222,10 @@ def main() -> int:
             fail("explicitly excluded person appears in professional identity extension")
 
         print("LEGAL PROFESSIONAL REGISTER: PASS")
-        print(" - canonical identities: 240 (102 people; 79 organisations)")
+        print(
+            f" - canonical identities: {counts['total']} "
+            f"({counts['PERSON']} people; {counts['ORGANISATION']} organisations)"
+        )
         print(" - professional roster: 40")
         print(" - current lawyers: 3; former/review lawyers: 31")
         print(" - procuradores/as: 2 current + 4 former")

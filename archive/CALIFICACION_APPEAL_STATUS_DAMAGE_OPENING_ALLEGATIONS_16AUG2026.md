@@ -23,7 +23,7 @@ The central publication change is that the page should no longer describe the ap
 
 ### 16 September 2025
 
-Direct email from Javier Sixto, Gmail message `1995278022ce027a`, subject `[MARER, GIL] Solicitud información Calificación: AP`:
+Direct email from Javier Sixto dated 16-Sep-2025, public-safe custody reference `MF-CAL-AP-SRC-01` (exact private subject and mailbox locator withheld):
 
 - states that the file for the classification section had been located **in the Audiencia Provincial**;
 - states that a request for information was submitted in Gil Marer's name;
@@ -32,7 +32,7 @@ Direct email from Javier Sixto, Gmail message `1995278022ce027a`, subject `[MARE
 
 ### 15 October 2025
 
-Direct email from Javier Sixto, Gmail message `199e6fa989419f60`, expressly identifies:
+Direct email from Javier Sixto dated 15-Oct-2025, public-safe custody reference `MF-CAL-AP-SRC-02` (exact mailbox locator withheld), expressly identifies:
 
 > **SECCION CUARTA DE LA AUDIENCIA PROVINCIAL — RECURSO DE APELACIÓN 2523/2025**
 
@@ -40,7 +40,7 @@ The message forwards a Diligencia de Ordenación dated 14 October 2025 and notif
 
 ### 13 May 2026
 
-Direct email from Javier Sixto, Gmail message `19e20833780604d3`, under the heading `Calificación Concurso`, states:
+Direct email from Javier Sixto dated 13-May-2026, public-safe custody reference `MF-CAL-AP-SRC-03` (exact private subject and mailbox locator withheld), states:
 
 > `Os adjuntamos la providencia que fija el día de deliberación y fallo para el 4 de junio de 2026.`
 

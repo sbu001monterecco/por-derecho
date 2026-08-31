@@ -27,13 +27,13 @@ This does not itself prove misuse of confidential information or concertation; i
 ## Completed external actions
 ### Fiscalía Provincial de Santa Cruz de Tenerife
 Dedicated landing page: `/es/fiscalia-tenerife-dp748/`, commit `d4c9c7b7c1199b0e6c15a59a7fe6299b0bc394b5`.
-Supplemental email sent. Gmail message ID: `1a021abc315951c7`.
+Supplemental email sent. Public dispatch reference: `MF-EG95-MSG-OUT-01`.
 Two graphics + webinar used only as supporting/contextual indexes.
 
 Carlos Saavedra boundary: user personally recalls a historic Cuatrecasas professional connection, but this was not independently verified. If used, attribute explicitly as personal recollection pending verification; do not state as established employment history.
 
 ### SNCA / AFCOS — Exp. 141-2026-IRR02
-Focused email sent to `antifraude@igae.hacienda.gob.es`. Gmail message ID: `1a021b5631c10c6b`.
+Focused email sent to `antifraude@igae.hacienda.gob.es`. Public dispatch reference: `SNCA-DSP-20260821-01`.
 DP 748/La Laguna deliberately excluded. Focus: upstream Sun Park control/asset-conversion as antecedent to RIC/HNT/MYND/GC/836/P06/subsidy/public-funds structure.
 Core audit chain: `finca → obra → factura → pagador → financiación → ayuda pública → beneficiario`.
 Supporting package: two controlled graphics, RICPE webinar ~08:08, San Telmo/RICPE/Sun Park structured web reference.
@@ -42,14 +42,14 @@ Supporting package: two controlled graphics, RICPE webinar ~08:08, San Telmo/RIC
 CCACM appeal: Exp. 193/2026 from ICAM Preliminary File 434/26. Keep older appeal distinct from later autonomous 2024–2026 conduct; later acts do not automatically restart prescription for historical conduct.
 Later ICAM lane: objectively separable 2024–2026 ETJ/remate acts, transition adviser→creditor, client/debtor traceability, conflicts and remate beneficiary.
 Substantive and attachment-package emails sent to both. Gmail connector limitations required separate substantive and attachment messages.
-Recorded attachment-package IDs:
-- ICAM: `1a021c009ce49f6a`
-- CCACM: `1a021c03b92ad8b3`
+Recorded public attachment-package references:
+- ICAM: `PROF-ICAM-20260821-PKG-01`
+- CCACM: `PROF-CCACM-20260821-PKG-01`
 Both received the two controlled images, webinar and Cuatrecasas/Sun Park structured website reference.
 
 ## Controlled visual exhibits
-1. `san-telmo-ricpe-sun-park-stamp-v1 (2).png`
-2. `pwc-five-actors-plus-ac-2016-knowledge-checkpoint-ES.png`
+1. `VISUAL-SOURCE-INDEX-B`
+2. `VISUAL-SOURCE-INDEX-A`
 Standing rule: visual indexes / chronology aids only; not independent proof of coordination, guilt, information transfer, conflict or criminal/deontological liability.
 
 ## Next high-value action NOT completed

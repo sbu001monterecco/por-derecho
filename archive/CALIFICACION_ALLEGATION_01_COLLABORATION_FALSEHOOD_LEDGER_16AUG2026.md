@@ -3,7 +3,7 @@
 **Date:** 16 August 2026  
 **Proceeding:** Concurso ordinario 36/2012 — Luchy Playa Blanca, S.L.U.  
 **AC:** Francisco de Borja Rodríguez-Batllori Laffitte  
-**Primary adverse source:** `27. INFORME Calificación AC 11FEB2019.pdf` (47 pages)  
+**Primary adverse source:** AC calificación report dated 11-Feb-2019, `MF-CAL-SRC-A01-AC` (47 pages; exact private filename withheld)
 **Public routes:** `/es/calificacion-concurso-36-2012-vidas-paralelas/` and `/en/insolvency-classification-parallel-lives/`
 
 ## Status
@@ -36,10 +36,9 @@ This is materially broader than the proposition that particular requested docume
 
 # 2. What the AC's own earlier 2013 report already established
 
-Primary source now re-queried directly from connected Google Drive:
+Primary source now re-queried directly from private custody:
 
-- `0. INFORME AC (ART. 75 LC) 15ENE2013.pdf`
-- Drive ID: `15X-qFJIvM78oDE9CdsGjrvVKU5dv6iGc`
+- AC Article-75 report dated 15-Jan-2013, public-safe custody reference `MF-CAL-SRC-A01-ART75` (exact private filename and Drive locator withheld)
 - Title in document: `INFORME DE LA ADMINISTRACIÓN CONCURSAL (Art. 75...)`
 - Date: 15 January 2013.
 
