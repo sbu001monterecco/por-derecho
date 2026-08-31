@@ -110,8 +110,8 @@
     }
   },
   "identity_registry": {
-    "total": 282,
-    "PERSON": 113,
+    "total": 313,
+    "PERSON": 144,
     "ORGANISATION": 79,
     "STRUCTURE": 11,
     "INSTITUTION": 36,
