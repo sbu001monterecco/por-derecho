@@ -3,13 +3,13 @@
   "publication_id": "cuatrecasas-book-media-delta-20260831",
   "control_id": "PD-4C-BOOK-DELTA-20260831-01",
   "control_date": "2026-08-31",
-  "current_state": "PREPARED_PENDING_MERGE",
-  "status": "prepared_pending_merge",
+  "current_state": "LIVE_VERIFIED",
+  "status": "published",
   "owner": "Por Derecho / Project Sun Rock",
   "repository": "sbu001monterecco/por-derecho",
   "initial_task_main_sha": "950b64f9bd61f21bcff7bd76cfc409eebd3bca88",
   "source_main_sha": "80793dbba490b44a2ad25af836f201517000f5bc",
-  "merge_sha": null,
+  "merge_sha": "4938164da577b27ad63bb731d74013ee90979727",
   "purpose": "Connect the controlled Cuatrecasas professional-accountability record to the bilingual public architecture for 4 Green Houses, One Red Hotel; add finite fee-recovery, procedural-fraud and La Laguna-to-Las Palmas proof gates; and establish a privilege-safe incremental legal-team delta rule without publishing private source material.",
   "expected_routes": {
     "es": [
@@ -24,7 +24,9 @@
   "expected_source_files": [
     "prompts/CUATRECASAS_BOOK_MEDIA_DELTA_AGENT_31AUG2026.md",
     "assets/data/cuatrecasas-book-media-delta-v1.json",
-    "archive/CUATRECASAS_BOOK_MEDIA_DELTA_IMPLEMENTATION_31AUG2026.md"
+    "archive/CUATRECASAS_BOOK_MEDIA_DELTA_IMPLEMENTATION_31AUG2026.md",
+    "scripts/validate_cuatrecasas_book_live.py",
+    ".github/workflows/validate-cuatrecasas-book-live.yml"
   ],
   "repository_assets": [
     "en/books/four-green-houses-one-red-hotel/index.html",
@@ -34,6 +36,8 @@
     "prompts/CUATRECASAS_BOOK_MEDIA_DELTA_AGENT_31AUG2026.md",
     "assets/data/cuatrecasas-book-media-delta-v1.json",
     "archive/CUATRECASAS_BOOK_MEDIA_DELTA_IMPLEMENTATION_31AUG2026.md",
+    "scripts/validate_cuatrecasas_book_live.py",
+    ".github/workflows/validate-cuatrecasas-book-live.yml",
     "publication-manifests/cuatrecasas-book-media-delta-20260831.json"
   ],
   "public_markers": [
@@ -41,7 +45,7 @@
     "cuatrecasas-critical-gaps-20260831",
     "CG-011",
     "CG-012",
-    "OPEN DIRECTIONAL BRIDGE"
+    "La Laguna → Las Palmas directional bridge"
   ],
   "claim_controls": {
     "professional_inversion": "DOCUMENTED NARRATIVE QUESTION — NOT A FINDING OF WRONGDOING",
@@ -66,23 +70,91 @@
     "Private lawyer and procurador identities, addresses, message subjects, provider identifiers, advice, drafts and live strategy remain excluded from the public repository.",
     "Repository publication authority does not authorise email, filing, third-party contact, financial commitments or account changes."
   ],
-  "validation_required": [
-    "bilingual route parity",
-    "book and gap publication-control markers",
-    "CG-011 and CG-012 visibility",
-    "canonical internal-link existence",
-    "JSON syntax",
-    "repository preservation",
-    "publication integrity",
-    "audience experience",
-    "private-source and privilege boundary",
-    "post-merge Pages deployment and live readback"
+  "validation": {
+    "status": "GREEN",
+    "evidence": [
+      "PR #1259 substantive CI suite passed publication integrity, audience experience, Cuatrecasas-specific, privacy and insolvency controls.",
+      "Off-GitHub Preservation Snapshot run 33373795614 completed successfully for PR #1259.",
+      "Independent live-route workflow run 33374892490 completed successfully on PR #1261."
+    ]
+  },
+  "deployment_evidence": {
+    "pages_run_id": 33374111565,
+    "deployment_sha": "4938164da577b27ad63bb731d74013ee90979727",
+    "status": "success",
+    "environment_url": "https://sbu001monterecco.github.io/por-derecho/",
+    "pages_deployment_reported_at": "2026-08-31T08:42:28Z"
+  },
+  "live_urls": [
+    "https://sbu001monterecco.github.io/por-derecho/en/books/four-green-houses-one-red-hotel/",
+    "https://sbu001monterecco.github.io/por-derecho/es/libros/four-green-houses-one-red-hotel/",
+    "https://sbu001monterecco.github.io/por-derecho/en/cuatrecasas-critical-gaps/",
+    "https://sbu001monterecco.github.io/por-derecho/es/cuatrecasas-brechas-criticas/"
   ],
+  "live_markers": {
+    "https://sbu001monterecco.github.io/por-derecho/en/books/four-green-houses-one-red-hotel/": [
+      "book-4gh1rh-professional-inversion-20260831",
+      "The central inversion:",
+      "Maximum accountable pressure."
+    ],
+    "https://sbu001monterecco.github.io/por-derecho/es/libros/four-green-houses-one-red-hotel/": [
+      "book-4gh1rh-professional-inversion-20260831",
+      "La inversión central:",
+      "Máxima presión responsable."
+    ],
+    "https://sbu001monterecco.github.io/por-derecho/en/cuatrecasas-critical-gaps/": [
+      "cuatrecasas-critical-gaps-20260831",
+      "CG-011",
+      "CG-012",
+      "La Laguna → Las Palmas directional bridge"
+    ],
+    "https://sbu001monterecco.github.io/por-derecho/es/cuatrecasas-brechas-criticas/": [
+      "cuatrecasas-critical-gaps-20260831",
+      "CG-011",
+      "CG-012",
+      "Puente direccional La Laguna → Las Palmas"
+    ]
+  },
+  "live_verification_evidence": {
+    "method": "External GitHub-hosted HTTPS GET with cache-busting and exact marker checks",
+    "workflow_name": "Validate Cuatrecasas book live publication",
+    "workflow_run_id": 33374892490,
+    "job_id": 99434055793,
+    "artifact_id": 9751478683,
+    "artifact_sha256": "ae7a0dc43ddfc2c771979a914b6015536e3f77bceac623c1ce79d6b08dea7b1b",
+    "verified_at": "2026-08-31T08:52:10Z",
+    "all_routes_verified": true,
+    "route_results": {
+      "book_en": {
+        "http_status": 200,
+        "bytes": 16110,
+        "sha256": "d575fdb8971fda0394fc3ccbc1e49790ccadb2531a4e2d49f412da1c604f6bc7"
+      },
+      "book_es": {
+        "http_status": 200,
+        "bytes": 16974,
+        "sha256": "3eb96d65ceb6051cae07aac76c672d8a7516e77d7f6d61b333173341a64bc2de"
+      },
+      "gaps_en": {
+        "http_status": 200,
+        "bytes": 10725,
+        "sha256": "0efd41735806ae0319dc6fbe71c07e99a48c96e2674c1d2c5bcd7078b9b993d9"
+      },
+      "gaps_es": {
+        "http_status": 200,
+        "bytes": 11145,
+        "sha256": "263a1edb8e853a145574dfb6e8a6a26f09761df99540aa5214ac459dead80fbf"
+      }
+    }
+  },
   "publication_closeout": {
-    "pull_request": null,
-    "merge_sha": null,
-    "pages_run_id": null,
-    "live_verified_at": null
+    "publication_pull_request": 1259,
+    "closeout_pull_request": 1261,
+    "merge_sha": "4938164da577b27ad63bb731d74013ee90979727",
+    "pages_run_id": 33374111565,
+    "live_verification_run_id": 33374892490,
+    "live_verification_artifact_id": 9751478683,
+    "live_verified_at": "2026-08-31T08:52:10Z"
   },
   "authority": {
     "repository_and_website_publication": "AUTHORISED_BY_CURRENT_USER_INSTRUCTION",
@@ -90,5 +162,6 @@
     "court_or_third_party_filings": "NOT_AUTHORISED",
     "private_source_publication": "NOT_AUTHORISED"
   },
-  "next_gate": "Open PR from the current branch, pass CI, merge, deploy the exact merge SHA, verify the four live routes and then promote this manifest only to the evidence actually earned."
+  "last_confirmed_at": "2026-08-31T08:52:10Z",
+  "next_gate": "Merge PR #1261 after its full CI suite passes; retain CG-011 as open until transmission, reliance and any alleged purpose are proved from primary records."
 }
