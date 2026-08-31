@@ -39,7 +39,8 @@ try {
 
     await page.locator('[data-mf-files] [data-file="TF-FIS-009"]').click();
     await page.waitForSelector('[data-mf-files] [data-file="TF-FIS-009"][aria-current="true"]');
-    if (!(await detail.innerText()).includes(route.unresolved)) fail(`${route.lang}: unresolved identity state is hidden`);
+    const identityState = detail.locator('.pd-mf-detail-head .eyebrow');
+    if (!(await identityState.isVisible()) || !(await identityState.textContent()).includes(route.unresolved)) fail(`${route.lang}: unresolved identity state is hidden`);
     if (!(await detail.innerText()).includes(route.gap)) fail(`${route.lang}: unresolved source gate is hidden`);
 
     await page.locator('[data-mf-direction]').selectOption('INBOUND_FROM_INSTITUTION');
