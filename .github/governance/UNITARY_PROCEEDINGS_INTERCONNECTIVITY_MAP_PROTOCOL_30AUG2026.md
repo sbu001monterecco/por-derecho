@@ -256,3 +256,93 @@ Where multiple Fiscalía offices/files received overlapping allegations or evide
 ### 12.6 Governing anti-fragmentation sentence
 
 > **Keep the proceedings legally distinct, but never analytically isolated where the evidence shows a shared asset, credit, control, exploitation, estate, transaction, actor, event or harm continuum. Fragmentation itself is an audit object: test what was separated, what should have been cross-recognised, who benefited, what was lost or obscured, and what actor-specific evidence supports any allegation of knowing atomisation or enablement.**
+
+## 13. Current exact-proceeding closure contract
+
+The enforceable artifact pair is interconnectivity schema **1.7.0** and public
+interlinkability projection **1.1.0**. Exact-head CI must reject a stale version
+or a projection that satisfies only the earlier structural contract.
+
+The current public denominator is 97 exact proceedings/files. Each must have one
+and only one controlled disposition and one finite test. The finite test must
+state the question, source needed, current source status, recorded candidate
+organ/custodian and its evidential limit, controlled related proceedings,
+file-specific decision dependency, strongest contrary explanation, and distinct
+consequences if confirmed or refuted. It must expose both the canonical public
+record route and either a proceeding-specific public primary-source route or an
+explicit primary-source route gap. The finite question, decision dependency,
+strongest contrary explanation and both consequences must be bilingual and
+exact-file-specific. Repeated registry-maintenance, source-retrieval or
+record-correction boilerplate, even when prefixed with a different reference,
+does not count as a unique finite test. A family template may classify a file;
+it may not supply its substantive actionability fields.
+A recorded custodian/organ remains a candidate only. The model must not treat
+that candidate as legally competent, empowered or obliged to act. Confirmed or
+refuted consequences must be conditional on exact competence and a lawful
+procedural or institutional route.
+The strongest contrary explanation remains hypothetical and may not attribute
+an act to the recorded candidate without a primary source. Family taxonomy must
+use canonical record type before mixed Stream substrings: an administrative /
+professional perimeter is not a disciplinary file, judicial governance is not
+professional discipline, and civil professional liability remains civil.
+Membership of a relationship or context cluster is not proof that the material
+was received, admissible, examined or relied upon in the selected file.
+
+Every exact proceeding must also receive an institutional receipt/knowledge
+classification with provenance for nine independent axes: transmission,
+material received/inventory, referral, registration, file incorporation,
+recipient attribution, substantive examination, decision use and cross-file
+acknowledgement. Each axis requires its own status, bilingual basis, bilingual
+limitation and controlled source pointer or explicit source-not-located object.
+Each positive grade must reproduce the exact episode field that supports that
+axis; episode-and-axis overrides are mandatory when a global default would cite
+unrelated text.
+Transmission and referral must be graded independently; proof of sending,
+routing or presentation cannot be copied into referral, destination receipt,
+registration, incorporation or examination. Classification coverage and
+positive evidence are different denominators. An explicit `NOT_LOCATED`,
+`NO_PROOF_OF_AWARENESS`, unresolved or not-applicable state closes an audit slot
+without proving the underlying fact or its opposite. Actor-specific receipt and
+knowledge remain separate non-positive fields unless an actor-specific source
+identifies the person, material/act, time and evidential scope. Neither field may
+be inherited from an institution, colleague, family member, professional firm,
+common asset, chronology, signature, routing act or downstream benefit.
+
+For Ministerio Fiscal, maintain a 24-row office/file matrix keyed to the public
+Master Register: 21 exact file rows and three unresolved-reference rows.
+Event-to-file links require a reviewed relation such as a
+file-native act/notice, filing receipt/presentation, referral/routing, response,
+later submission reference or context only. A matching number or raw
+`matter_references` string is not by itself an institutional-memory edge. Nine
+current response episodes are source-controlled: eight profile matrix rows and
+one separate `DP 1901/2026` judicial-file profile. Absent episode coverage
+remains an express source gap. Each of the 24 rows must independently expose:
+
+- source-attributed material allegations/evidence;
+- material received and the missing item-level inventory;
+- direct proceedings and contextual proceedings as separate arrays/statuses;
+- related assets and an explicit asset gap;
+- transmission and referral as separate grades, plus what was referred;
+- registration, incorporation, recipient attribution and what was actually
+  examined;
+- institutional response and decision-use grade;
+- cross-file acknowledgement and unitary acknowledgement as separate states;
+- strongest contrary explanation; and
+- unanswered question/source gap.
+
+Each available institutional grade must be traceable to its own source, basis
+and limitation. A source-profile absence must remain an explicit gap rather than
+being filled from another office/file or from raw reference equality.
+
+Navigation coverage is 97 / 97 through the Master Register, exact trace and
+isolation fragments. Dedicated bilingual narrative-dossier coverage remains a
+separate positive count and may be partial. Likewise, the finite-test layer does
+not expand the shared Case Prism proposition matrix: that matrix remains 26 / 97
+exact proceedings covered and 71 no-coordinate gaps until new proposition
+membership is source-reviewed.
+
+The two direct relationship pairs still graded source-reported/pending primary
+completion, the counsel/procurador denominators, source-not-located fields and
+the accepted public accessibility of the tracked operational CSV remain open
+limitations. They may not be silently upgraded to obtain a global word such as
+“complete” or `DELETION_SAFE`.

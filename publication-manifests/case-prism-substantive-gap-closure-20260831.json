@@ -1,0 +1,226 @@
+{
+  "schema": "por-derecho.publication-manifest.v1",
+  "publication_id": "PD-SP-CASE-PRISM-EXACT-ACTIONABILITY-20260831-01",
+  "owner": "Por Derecho / Project Sun Rock",
+  "control_date": "2026-08-31",
+  "current_state": "PREPARED_PENDING_MERGE",
+  "state": "PREPARED_PENDING_MERGE_WITH_ACCEPTED_PUBLICATION_BOUNDARY_GAP",
+  "manifest_version": "1.0.0",
+  "title": "Case Prism exact-file actionability and institutional-memory closure",
+  "purpose": "Add one controlled finite test and one receipt/knowledge classification for every public exact proceeding while preserving the narrower shared-proposition matrix, evidence gaps and legal separateness.",
+  "source_base_sha": "a54c74b204d6f7596d3da9e41af569c08c676736",
+  "head_branch": "codex/close-case-prism-substantive-gaps-20260831",
+  "authorization": {
+    "status": "EXPRESSLY_AUTHORIZED_IN_CURRENT_THREAD",
+    "scope": "Implement, verify, publish and close the recorded Case Prism substantive implementation gaps through the normal PR, CI, merge, Pages and live-verification chain.",
+    "third_party_contact_authorized": false
+  },
+  "expected_routes": {
+    "es": [
+      "es/mapa-procedimientos/index.html",
+      "es/registro-maestro-procedimientos/index.html",
+      "es/reconstruccion-unitaria-autoridades-publicas/index.html"
+    ],
+    "en": [
+      "en/proceedings-map/index.html",
+      "en/master-proceedings-register/index.html",
+      "en/public-authority-unitary-case-reconstruction/index.html"
+    ]
+  },
+  "expected_source_files": [
+    "archive/PROCEEDINGS_MASTER_REGISTER.csv",
+    "assets/data/proceedings-master-public-v1.json",
+    "assets/data/proceedings-case-prism-v1.json",
+    "assets/data/proceedings-interlinkability-v1.json",
+    "assets/data/proceedings-interconnectivity-schema-v1.json",
+    "assets/data/fiscalia-response-correspondence.json",
+    "assets/data/counsel-procurador-gap-register-v1.json",
+    "assets/proceedings-interconnectivity-map-20260830.js",
+    "assets/proceedings-interconnectivity-map-20260830.css",
+    "assets/master-proceedings-publication-20260830.js",
+    "scripts/build_public_proceedings_projection.py",
+    "scripts/build_proceedings_case_prism_v2.py",
+    "scripts/build_proceedings_interlinkability_v1.py",
+    "scripts/audit_proceedings_interconnectivity_map.py",
+    "scripts/audit_master_proceedings_publication.py",
+    "scripts/audit_counsel_procurador_governance.py",
+    "scripts/smoke_proceedings_case_prism.mjs",
+    ".github/governance/UNITARY_PROCEEDINGS_INTERCONNECTIVITY_MAP_PROTOCOL_30AUG2026.md",
+    ".github/governance/A_SCAN_360_CASE_PRISM_AND_READER_LENS_PROTOCOL_30AUG2026.md",
+    ".github/workflows/audit-proceedings-interconnectivity-map.yml",
+    "publication-manifests/all-proceedings-interlinkability-20260830.json",
+    "publication-manifests/case-prism-substantive-gap-closure-20260831.json",
+    "docs/deletion-audits/2026-08-31-case-prism-substantive-gap-closure-continuity.md"
+  ],
+  "controlled_artifact_versions": {
+    "proceedings_interconnectivity_schema": "1.7.0",
+    "proceedings_interlinkability_projection": "1.1.0"
+  },
+  "baseline_denominator": {
+    "canonical_rows": 122,
+    "public_rows": 121,
+    "canonical_exact_proceedings": 98,
+    "public_exact_proceedings": 97,
+    "private_exact_excluded": 1,
+    "direct_relationship_pairs": 33,
+    "direct_relationship_pairs_source_verified": 31,
+    "direct_relationship_pairs_source_reported_primary_pending": 2,
+    "direct_source_assertions": 40,
+    "direct_source_assertions_verified": 38,
+    "direct_source_assertions_source_reported_primary_pending": 2,
+    "material_context_clusters": 26,
+    "shared_case_prism_propositions": 19,
+    "parallel_lanes": 12,
+    "explicit_matrix_coordinates": 228,
+    "case_prism_exact_proceedings_with_shared_proposition_coordinate": 26,
+    "case_prism_exact_proceedings_without_shared_proposition_coordinate": 71,
+    "public_master_fiscalia_rows": 24,
+    "public_master_fiscalia_exact_rows": 21,
+    "public_master_fiscalia_unverified_reference_rows": 3,
+    "source_controlled_fiscalia_response_episodes": 9,
+    "fiscalia_matrix_rows_with_episode_profiles": 8,
+    "judicial_file_episode_profiles_outside_fiscalia_matrix": 1
+  },
+  "target_structural_coverage": {
+    "public_exact_dispositions": "97_OF_97",
+    "exact_proceeding_full_finite_tests": "97_OF_97",
+    "exact_file_specific_unique_finite_test_fields": "97_OF_97",
+    "exact_file_decision_dependency_actionability": "97_OF_97",
+    "exact_file_actionability_content_contract": "UNIQUE_DECISION_DEPENDENCY_CONTRARY_CONFIRMED_REFUTED_AND_SOURCE_ROUTE_GAP",
+    "finite_test_family_taxonomy": "CANONICAL_RECORD_TYPE_PRECEDES_MIXED_STREAM_SUBSTRING",
+    "finite_test_family_counts": {
+      "ADMIN_AUTHORITY_TITLE_SOURCE": 26,
+      "CIVIL_FILE_DECISION": 19,
+      "CRIMINAL_FILE_DECISION": 11,
+      "FISCALIA_INSTITUTIONAL_MEMORY": 21,
+      "OMBUDSMAN_RECONSIDERATION": 1,
+      "PROFESSIONAL_SUPERVISION": 8,
+      "REGULATORY_PUBLIC_ROUTE": 7,
+      "TAX_CONTENTIOUS_CHAIN": 4
+    },
+    "institutional_receipt_knowledge_classifications": "97_OF_97",
+    "institutional_nine_axis_provenance": "97_OF_97_WITH_INDEPENDENT_STATUS_BASIS_LIMITATION_AND_SOURCE",
+    "master_trace_isolation_route_dispositions": "97_OF_97",
+    "fiscalia_office_file_matrix": "24_OF_24",
+    "fiscalia_office_file_matrix_composition": "21_EXACT_PLUS_3_UNRESOLVED_REFERENCES",
+    "fiscalia_office_file_matrix_profiled_rows": "8_OF_24",
+    "fiscalia_response_episodes": "9_OF_9_INCLUDING_8_MATRIX_ROWS_PLUS_1_JUDICIAL_FILE_PROFILE",
+    "shared_proposition_coordinate_coverage": "26_OF_97",
+    "shared_proposition_no_coordinate_gap": "71_OF_97",
+    "dedicated_narrative_dossier_coverage": "PARTIAL_SEPARATE_POSITIVE_COUNT"
+  },
+  "coverage_meaning": {
+    "finite_test": "A complete finite-test object must be exact-file-specific: unique decision dependency, strongest contrary explanation, confirmed/refuted consequences, canonical public-record route and an explicit primary-source route or route gap. A recorded custodian/organ is only a candidate and may not be treated as legally competent, empowered or obliged to act; any consequence remains conditional on exact competence and a lawful route. The contrary explanation remains hypothetical and attributes no act to the candidate without a primary source. Canonical record type precedes a mixed Stream substring when assigning the UI-only family. Generic registry-maintenance, source-retrieval or record-correction boilerplate cannot count. NOT_LOCATED remains permissible and structural coverage is not primary-source or merits completion.",
+    "receipt_knowledge": "Classification coverage and positive evidence are separate. Each of nine institutional axes—transmission, material received/inventory, referral, registration, file incorporation, recipient attribution, substantive examination, decision use and cross-file acknowledgement—requires its own status, bilingual basis, bilingual limitation and controlled source or source-gap object. Every positive grade must cite the exact episode field that supports that axis; episode-and-axis overrides are required where a global default would cite unrelated text. Transmission and referral are independent. Institutional handling cannot establish actor-specific receipt or knowledge.",
+    "actor_specific": "Actor-specific receipt and knowledge remain non-positive unless an actor-specific source identifies the person, material or act, time and permissible evidential scope.",
+    "fiscalia": "Twenty-four public Master Register rows—21 exact and three unresolved references—receive separate source-attributed material, received-inventory-gap, direct/context proceeding, related-asset-gap, referred, actually-examined, response, cross-file, unitary, contrary and unanswered dispositions. Only reviewed event-to-matter relationships may support the eight profiled matrix rows. A ninth response episode profiles the separate DP 1901/2026 judicial file outside the matrix.",
+    "routing": "Master Register, exact trace and isolation routes are required for every public exact ID. Dedicated narrative dossiers are a separately counted optional positive route.",
+    "case_prism": "The finite-test layer does not add the 71 no-coordinate proceedings to a shared proposition or lane."
+  },
+  "evidential_boundaries": [
+    "STRUCTURAL_AUDIT_COVERAGE_IS_NOT_EVIDENCE_COMPLETION",
+    "GENERIC_REGISTRY_MAINTENANCE_BOILERPLATE_IS_NOT_EXACT_FILE_ACTIONABILITY",
+    "DIRECT_PROCEDURAL_EDGE_IS_NOT_CONTEXTUAL_BRIDGE",
+    "RAW_MATTER_REFERENCE_IS_NOT_RECEIPT_OR_INCORPORATION",
+    "INSTITUTIONAL_RECEIPT_IS_NOT_PERSONAL_RECEIPT",
+    "PRESENTATION_IS_NOT_FILE_INCORPORATION",
+    "INCORPORATION_IS_NOT_SUBSTANTIVE_EXAMINATION",
+    "EXAMINATION_IS_NOT_RELIANCE_OR_DECISION_USE",
+    "TRANSMISSION_AND_REFERRAL_REQUIRE_INDEPENDENT_GRADES",
+    "EVERY_INSTITUTIONAL_AXIS_REQUIRES_ITS_OWN_STATUS_BASIS_LIMITATION_AND_SOURCE",
+    "ACTOR_SPECIFIC_RECEIPT_OR_KNOWLEDGE_REQUIRES_ACTOR_SPECIFIC_EVIDENCE",
+    "RELATIONSHIP_MEMBERSHIP_IS_NOT_FILE_TREATMENT",
+    "NO_PROOF_OF_KNOWLEDGE_IS_NOT_PROOF_OF_NO_KNOWLEDGE",
+    "MISSING_DOSSIER_ROUTE_MUST_NOT_BE_FABRICATED",
+    "NOT_LOCATED_DOES_NOT_MEAN_NONEXISTENT",
+    "NO_JOINDER_KNOWLEDGE_INTENT_COORDINATION_WRONGDOING_OR_LIABILITY_IS_INFERRED"
+  ],
+  "known_open_gaps": [
+    {
+      "id": "DIRECT-PRIMARY-001",
+      "status": "OPEN",
+      "description": "Two of 33 controlled direct relationship pairs remain source-reported/pending primary completion."
+    },
+    {
+      "id": "CASE-PRISM-COORDINATE-001",
+      "status": "OPEN",
+      "description": "The finite shared-proposition matrix covers 26 of 97 exact proceedings; 71 retain an explicit no-coordinate gap."
+    },
+    {
+      "id": "CELL-SOURCE-001",
+      "status": "OPEN",
+      "description": "Case Prism treatment sources remain controlled at proposition level rather than asserted as complete cell-specific source proof."
+    },
+    {
+      "id": "COUNSEL-PROCURADOR-001",
+      "status": "OPEN",
+      "description": "CP-GAP-004 and CP-GAP-005 preserve the unclosed global procurador and filing denominators."
+    },
+    {
+      "id": "DEDICATED-DOSSIER-001",
+      "status": "OPEN",
+      "description": "Dedicated bilingual narrative dossiers remain a partial positive subset; Master/trace/isolation navigation must not be relabelled as dedicated-dossier completeness."
+    },
+    {
+      "id": "PUBLICATION-BOUNDARY-CSV-001",
+      "status": "UNRESOLVED_ACCEPTED",
+      "description": "The tracked operational Master Register CSV remains publicly HTTP-accessible as a pre-existing accepted publication-boundary gap."
+    }
+  ],
+  "accepted_publication_boundary_gap": {
+    "status": "UNRESOLVED_ACCEPTED_FOR_THIS_RELEASE",
+    "resource": "archive/PROCEEDINGS_MASTER_REGISTER.csv",
+    "last_recorded_http_status": 200,
+    "current_source_base_sha256": "8caa65a0aaefa2b568be263869d7749b79fd8e7eb3b00ab568c7cabdc29bb801",
+    "post_deployment_http_and_hash_verification": "PENDING",
+    "intended_live_surface": false,
+    "included_in_live_urls": false,
+    "included_in_live_markers": false,
+    "deletion_safe": false,
+    "qualification": "The renderer must use only allowlisted public projections. Continued CSV exposure is observed separately and must not become an intended publication invariant."
+  },
+  "validation": {
+    "status": "PENDING_EXACT_HEAD_CI",
+    "evidence": [],
+    "required": [
+      "deterministic generated projections",
+      "schema 1.7.0 and interlinkability projection 1.1.0",
+      "exact set equality across 97 exact IDs, dispositions, finite tests, classifications and selectors",
+      "97/97 exact-file-specific unique finite-test field sets including decision dependency, contrary explanation, confirmed/refuted consequences, canonical public-record route and explicit primary-source route gap",
+      "record-type-first finite family taxonomy with 26 administrative, 19 civil, 11 criminal, 21 Fiscalia, one ombudsman, eight professional, seven regulatory and four tax/contentious files",
+      "hypothetical contrary explanations and competence-conditional consequences that attribute no act or duty to a recorded candidate",
+      "97/97 nine-axis provenance records with independent status, basis, limitation and source/source-gap; transmission and referral independently graded; actor-specific receipt/knowledge non-positive absent actor-specific evidence",
+      "episode-and-axis source-field support for every positive institutional grade",
+      "24/24 Fiscalia office/file matrix split into 21 exact plus three unresolved-reference rows, eight profiled matrix rows and one separate DP 1901/2026 response profile",
+      "24/24 Fiscalia rows with separate material allegations/evidence, received-inventory gap, direct/context proceedings, related assets/gap, referred, actually examined, response, cross-file, unitary, contrary and unanswered controls",
+      "31 verified plus two pending-primary direct pairs preserved",
+      "26/97 shared proposition coordinate boundary preserved",
+      "bilingual exhaustive browser interaction",
+      "publication integrity",
+      "repository preservation",
+      "audience experience"
+    ]
+  },
+  "pull_request": null,
+  "reviewed_head_sha": null,
+  "reviewed_tree_sha": null,
+  "merge_sha": null,
+  "deployment_evidence": null,
+  "live_urls": [],
+  "live_markers": {},
+  "live_verification_evidence": null,
+  "verification": {
+    "source_prepared": true,
+    "exact_head_ci_green": false,
+    "merged": false,
+    "pages_deployed": false,
+    "live_http_readback": false,
+    "live_browser_interaction": false,
+    "deletion_safe": false
+  },
+  "publication_closeout": {
+    "status": "PENDING",
+    "rule": "Populate only from exact PR/head/tree, merge, Pages and live-readback evidence. Preserve the accepted CSV observation separately."
+  },
+  "continuity_record": "docs/deletion-audits/2026-08-31-case-prism-substantive-gap-closure-continuity.md"
+}

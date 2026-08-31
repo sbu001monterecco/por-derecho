@@ -31,6 +31,7 @@ REQUIRED = [
     "assets/data/proceedings-case-prism-v1.json",
     "assets/data/proceedings-master-public-v1.json",
     "assets/data/proceedings-interlinkability-v1.json",
+    "assets/data/fiscalia-response-correspondence.json",
     "assets/data/caepr-caret-alberto-meeting-point-first-hop-v1.json",
     "assets/data/counsel-procurador-gap-register-v1.json",
     "assets/data/dp3205-2014-arrecife-v1.json",
@@ -75,6 +76,8 @@ REQUIRED = [
     "scripts/build_proceedings_interlinkability_v1.py",
     "publication-manifests/all-proceedings-interlinkability-20260830.json",
     "docs/deletion-audits/2026-08-30-all-proceedings-interlinkability-continuity.md",
+    "publication-manifests/case-prism-substantive-gap-closure-20260831.json",
+    "docs/deletion-audits/2026-08-31-case-prism-substantive-gap-closure-continuity.md",
 ]
 errors: list[str] = []
 
@@ -95,6 +98,86 @@ CURRENT_PENDING_DIRECT_PAIRS = 2
 CURRENT_DIRECT_ASSERTIONS = 40
 CURRENT_VERIFIED_DIRECT_ASSERTIONS = 38
 CURRENT_PENDING_DIRECT_ASSERTIONS = 2
+CURRENT_FISCALIA_OFFICE_FILE_RECORDS = 24
+CURRENT_FISCALIA_EXACT_RECORDS = 21
+CURRENT_FISCALIA_UNRESOLVED_RECORDS = 3
+CURRENT_FISCALIA_RESPONSE_EPISODES = 9
+CURRENT_FISCALIA_PROFILED_MATRIX_RECORDS = 8
+EXPECTED_FINITE_TEST_FAMILY_COUNTS = {
+    "ADMIN_AUTHORITY_TITLE_SOURCE": 26,
+    "CIVIL_FILE_DECISION": 19,
+    "CRIMINAL_FILE_DECISION": 11,
+    "FISCALIA_INSTITUTIONAL_MEMORY": 21,
+    "OMBUDSMAN_RECONSIDERATION": 1,
+    "PROFESSIONAL_SUPERVISION": 8,
+    "REGULATORY_PUBLIC_ROUTE": 7,
+    "TAX_CONTENTIOUS_CHAIN": 4,
+}
+
+EXPECTED_FISCALIA_EPISODE_MASTER_IDS = {
+    "first-frame-2013": "GC-FIS-011",
+    "di248-2018": "GC-FIS-013",
+    "di113-2022": "GC-FIS-014",
+    "di22-2026": "GC-FIS-016",
+    "dip2-2026": "GC-FIS-017",
+    "eg49-2026": "GC-FIS-018",
+    "dp1901-2026": "GC-CRI-008",
+    "eg745-2026": "NAT-FIS-004",
+    "gub86-2026": "LZ-FIS-007",
+}
+
+INSTITUTIONAL_RECEIPT_AXES = {
+    "transmission_status",
+    "registration_status",
+    "file_incorporation_status",
+    "recipient_attribution_status",
+    "substantive_examination_status",
+    "decision_use_status",
+}
+FISCALIA_MATRIX_AXES = INSTITUTIONAL_RECEIPT_AXES | {
+    "material_received_status",
+    "referral_status",
+    "cross_file_acknowledgement_status",
+}
+EXPECTED_FISCALIA_MATRIX_REFERRAL_STATUS = {
+    "LZ-FIS-007": "ROUTING_DOCUMENTED",
+}
+EXPECTED_FISCALIA_EPISODE_REFERRAL_STATUS = {
+    "dp1901-2026": "ROUTING_DOCUMENTED",
+    "gub86-2026": "ROUTING_DOCUMENTED",
+}
+EXPECTED_FISCALIA_EPISODE_MATERIAL_STATUS = {
+    "first-frame-2013": "PARTLY_DOCUMENTED",
+    "di248-2018": "PARTLY_DOCUMENTED",
+    "di113-2022": "PARTLY_DOCUMENTED",
+    "di22-2026": "PARTLY_DOCUMENTED",
+    "dip2-2026": "DOCUMENTED",
+    "eg49-2026": "PARTLY_DOCUMENTED",
+    "dp1901-2026": "NOT_LOCATED",
+    "eg745-2026": "DOCUMENTED",
+    "gub86-2026": "NOT_LOCATED",
+}
+EXPECTED_FISCALIA_AXIS_SOURCE_FIELDS = {
+    "transmission_status": "known",
+    "material_received_status": "known",
+    "referral_status": "known",
+    "registration_status": "known",
+    "file_incorporation_status": "response",
+    "recipient_attribution_status": "response",
+    "substantive_examination_status": "response",
+    "decision_use_status": "response",
+    "cross_file_acknowledgement_status": "known",
+}
+EXPECTED_FISCALIA_EPISODE_AXIS_SOURCE_FIELD_OVERRIDES = {
+    ("di22-2026", "recipient_attribution_status"): "known",
+    ("eg49-2026", "recipient_attribution_status"): "known",
+    ("dip2-2026", "substantive_examination_status"): "known",
+}
+EXPECTED_FISCALIA_AXIS_STATUS_PRECISION = {
+    ("eg745-2026", "recipient_attribution_status"): "NOT_LOCATED",
+    ("eg745-2026", "cross_file_acknowledgement_status"): "STATUS_UNRESOLVED",
+    ("gub86-2026", "material_received_status"): "NOT_LOCATED",
+}
 
 HISTORICAL_30AUG_PUBLIC_RECORDS = 106
 HISTORICAL_30AUG_PUBLIC_EXACT = 85
@@ -110,6 +193,77 @@ HISTORICAL_30AUG_CONTEXT_CLUSTERS = 26
 def require(condition: bool, label: str) -> None:
     if not condition:
         errors.append(label)
+
+
+def require_bilingual(value: object, label: str) -> None:
+    require(
+        isinstance(value, dict)
+        and bool(str(value.get("en", "")).strip())
+        and bool(str(value.get("es", "")).strip()),
+        f"{label} is not complete and bilingual",
+    )
+
+
+def actor_status_is_positive(status: str) -> bool:
+    """Treat only an affirmative, source-bearing actor grade as positive."""
+    token = str(status or "").strip().upper()
+    if not token:
+        return False
+    negative_markers = (
+        "NO_ACTOR_SPECIFIC",
+        "NOT_ESTABLISHED",
+        "NOT_LOCATED",
+        "NOT_MODELLED",
+        "UNAVAILABLE",
+        "UNRESOLVED",
+        "OPEN_",
+        "PENDING",
+    )
+    return not any(marker in token for marker in negative_markers)
+
+
+def expected_finite_test_family(row: dict[str, str]) -> str:
+    """Audit the UI family taxonomy independently of free-text substring order."""
+    stream = row.get("Stream", "").upper()
+    master_id = row.get("Master_ID", "")
+    record_type = row.get("Record_Type", "").upper()
+    if "OMBUDSMAN" in stream or master_id.startswith("CAN-OMB-"):
+        return "OMBUDSMAN_RECONSIDERATION"
+    if "FISCAL" in stream or "-FIS-" in master_id:
+        return "FISCALIA_INSTITUTIONAL_MEMORY"
+    if (
+        "AEAT" in stream
+        or master_id.startswith("NAT-AEAT-")
+        or master_id in {"MAD-AN-CONT-001", "MAD-AN-CONT-002"}
+    ):
+        return "TAX_CONTENTIOUS_CHAIN"
+    if any(
+        token in stream
+        for token in ("CNMV", "SNCA", "TREASURY", "PUBLIC AID", "LAW 2/2023")
+    ):
+        return "REGULATORY_PUBLIC_ROUTE"
+    if record_type == "PROFESSIONAL_DISCIPLINE":
+        return "PROFESSIONAL_SUPERVISION"
+    if record_type in {"ADMINISTRATIVE_FILE", "TRANSPARENCY_CLAIM"}:
+        return "ADMIN_AUTHORITY_TITLE_SOURCE"
+    if "CRIMINAL" in stream:
+        return "CRIMINAL_FILE_DECISION"
+    if "CIVIL" in stream or "INSOLVENCY" in stream:
+        return "CIVIL_FILE_DECISION"
+    if any(
+        token in stream
+        for token in (
+            "ADMINISTRATIVE",
+            "TOURISM",
+            "MUNICIPAL",
+            "TRANSPARENCY",
+            "JUDICIAL GOVERNANCE",
+        )
+    ):
+        return "ADMIN_AUTHORITY_TITLE_SOURCE"
+    if "PROFESSIONAL" in stream:
+        return "PROFESSIONAL_SUPERVISION"
+    return "GENERAL_EXACT_FILE_DECISION_TEST"
 
 
 def require_pr1235_live_migration(
@@ -199,14 +353,24 @@ if not errors:
     prism = json.loads(read("assets/data/proceedings-case-prism-v1.json"))
     public_projection = json.loads(read("assets/data/proceedings-master-public-v1.json"))
     interlinkability = json.loads(read("assets/data/proceedings-interlinkability-v1.json"))
+    require(
+        interlinkability.get("schema_version") == "1.1.0",
+        "interlinkability public asset schema must be 1.1.0",
+    )
+    fiscalia_responses = json.loads(read("assets/data/fiscalia-response-correspondence.json"))
     treasury_control = json.loads(read("assets/data/treasury-transparency-7-2026-v1.json"))
     treasury_manifest = json.loads(read("publication-manifests/treasury-transparency-7-2026-20260830.json"))
     lifecycle = json.loads(read("publication-manifests/all-proceedings-interlinkability-20260830.json"))
+    current_lifecycle = json.loads(read("publication-manifests/case-prism-substantive-gap-closure-20260831.json"))
+    current_continuity = read(
+        "docs/deletion-audits/2026-08-31-case-prism-substantive-gap-closure-continuity.md"
+    )
     counsel_gaps = json.loads(read("assets/data/counsel-procurador-gap-register-v1.json"))
     gc_548_manifest = json.loads(read("publication-manifests/gc-548-2023-plaza2-t1-caret-20260830.json"))
     lz_1304_manifest = json.loads(read("publication-manifests/arrecife-1304-2014-identity-interlink-20260830.json"))
     master_publication_manifest = json.loads(read("publication-manifests/master-proceedings-publication-20260830.json"))
     lz_4009_manifest = json.loads(read("publication-manifests/arrecife-4009-2015-caret-interlink-20260830.json"))
+    interlink_builder = read("scripts/build_proceedings_interlinkability_v1.py")
     with (ROOT / "archive/PROCEEDINGS_MASTER_REGISTER.csv").open(encoding="utf-8", newline="") as handle:
         rows = list(csv.DictReader(handle))
     ids = [row["Master_ID"].strip() for row in rows]
@@ -345,6 +509,89 @@ if not errors:
     for catalog_name in ("relationship_type_catalog", "context_type_catalog"):
         catalog = interlinkability.get(catalog_name, {})
         require(catalog and all(meta.get("en") and meta.get("es") for meta in catalog.values()), f"{catalog_name} is not bilingual")
+    finite_family_catalog = interlinkability.get("finite_test_family_catalog", {})
+    receipt_status_catalog = interlinkability.get("receipt_knowledge_status_catalog", {})
+    require(
+        finite_family_catalog
+        and all(meta.get("en") and meta.get("es") for meta in finite_family_catalog.values()),
+        "finite-test family catalog is absent or not bilingual",
+    )
+    require(
+        receipt_status_catalog
+        and all(meta.get("en") and meta.get("es") for meta in receipt_status_catalog.values()),
+        "receipt/knowledge status catalog is absent or not bilingual",
+    )
+    finite_contract = interlinkability.get("finite_test_contract", {})
+    require(
+        finite_contract.get("status") == "COMPLETE_FOR_PUBLIC_EXACT_DENOMINATOR"
+        and finite_contract.get("family_taxonomy_effect")
+        == "UI_ONLY_NO_EDGE_OR_CLUSTER_EFFECT"
+        and finite_contract.get("family_assignment_rule")
+        == "CANONICAL_RECORD_TYPE_BEFORE_MIXED_STREAM_SUBSTRING"
+        and finite_contract.get("recorded_candidate_authority_status")
+        == "NOT_COMPETENCE_OR_DUTY"
+        and finite_contract.get("boundary_en")
+        and finite_contract.get("boundary_es"),
+        "finite-test model contract is incomplete or can alter relationship truth",
+    )
+    require(
+        finite_contract.get("required_sequence")
+        == [
+            "QUESTION",
+            "SOURCE_NEEDED",
+            "CURRENT_SOURCE_STATUS",
+            "COMPETENT_ORGAN",
+            "RELATED_PROCEEDINGS",
+            "PROCEDURAL_AVAILABILITY",
+            "DECISION_DEPENDENCY",
+            "STRONGEST_CONTRARY_EXPLANATION",
+            "CONSEQUENCE_IF_CONFIRMED",
+            "CONSEQUENCE_IF_REFUTED",
+        ],
+        "finite-test actionability sequence is incomplete or reordered",
+    )
+    receipt_contract = interlinkability.get("receipt_knowledge_contract", {})
+    require(
+        set(receipt_contract.get("institutional_axis_ids", []))
+        == INSTITUTIONAL_RECEIPT_AXES
+        and receipt_contract.get("cross_file_acknowledgement_is_separate") is True
+        and receipt_contract.get("institutional_axis_basis_required") is True
+        and receipt_contract.get("positive_axis_source_field_rule")
+        == "EXACT_EPISODE_FIELD_MUST_SUPPORT_AXIS_GRADE"
+        and set(receipt_contract.get("institutional_axis_basis_fields", []))
+        == {
+            "status",
+            "basis_kind",
+            "basis_en",
+            "basis_es",
+            "limitation_en",
+            "limitation_es",
+            "source",
+        }
+        and receipt_contract.get("actor_specific_status_is_separate") is True
+        and receipt_contract.get("raw_matter_reference_join") == "PROHIBITED"
+        and receipt_contract.get("boundary_en")
+        and receipt_contract.get("boundary_es"),
+        "receipt/knowledge contract does not keep the six institutional axes and actor evidence separate",
+    )
+    fiscalia_matrix_contract = interlinkability.get(
+        "fiscalia_office_file_matrix_contract", {}
+    )
+    require(
+        fiscalia_matrix_contract.get("row_denominator")
+        == CURRENT_FISCALIA_OFFICE_FILE_RECORDS
+        and set(
+            fiscalia_matrix_contract.get("required_independent_status_axes", [])
+        )
+        == FISCALIA_MATRIX_AXES
+        and fiscalia_matrix_contract.get("referral_is_not_transmission") is True
+        and fiscalia_matrix_contract.get("direct_context_and_assets_are_separate")
+        is True
+        and fiscalia_matrix_contract.get("material_summary_is_not_received_inventory")
+        is True
+        and fiscalia_matrix_contract.get("axis_provenance_required") is True,
+        "Fiscalía matrix contract does not require the substantive independent columns",
+    )
 
     relationships = interlinkability.get("relationships", [])
     relationship_ids = [relationship.get("id") for relationship in relationships]
@@ -602,6 +849,46 @@ if not errors:
     disposition_ids = [disposition.get("master_id") for disposition in dispositions]
     require(len(disposition_ids) == len(set(disposition_ids)) and set(disposition_ids) == exact_public_ids, "every public exact proceeding must have exactly one controlled disposition")
     disposition_counts = Counter(disposition.get("primary_classification") for disposition in dispositions)
+    finite_family_by_master = {
+        disposition.get("master_id"): disposition.get("finite_test", {}).get(
+            "family_template_id"
+        )
+        for disposition in dispositions
+    }
+    require(
+        Counter(finite_family_by_master.values())
+        == Counter(EXPECTED_FINITE_TEST_FAMILY_COUNTS),
+        "finite-test family denominator no longer matches controlled record types/classes",
+    )
+    require(
+        finite_family_by_master.get("GC-CIV-027") == "CIVIL_FILE_DECISION"
+        and finite_family_by_master.get("LZ-CAB-011")
+        == "ADMIN_AUTHORITY_TITLE_SOURCE"
+        and finite_family_by_master.get("LZ-PRO-029")
+        == "PROFESSIONAL_SUPERVISION"
+        and finite_family_by_master.get("GC-GOV-019")
+        == "ADMIN_AUTHORITY_TITLE_SOURCE"
+        and finite_family_by_master.get("GC-GOV-020")
+        == "ADMIN_AUTHORITY_TITLE_SOURCE",
+        "finite-test family precedence misclassifies civil, administrative, professional or judicial-governance files",
+    )
+    finite_test_ids: list[str] = []
+    finite_specific_values = {
+        field: {"en": set(), "es": set()}
+        for field in (
+            "question",
+            "decision_dependency",
+            "contrary_explanation",
+            "if_confirmed",
+            "if_refuted",
+        )
+    }
+    finite_source_route_payloads: set[str] = set()
+    receipt_knowledge_classified_ids: set[str] = set()
+    actor_positive_ids: set[str] = set()
+    receipt_status_vocabulary = set(
+        interlinkability.get("receipt_knowledge_status_catalog", {})
+    )
     for disposition in dispositions:
         master_id = disposition.get("master_id", "<missing proceeding ID>")
         classification = disposition.get("primary_classification")
@@ -653,6 +940,664 @@ if not errors:
             require(public_by_id[master_id].get("Open_Reference_Gap"), f"{master_id} relationship gap has no recorded source gap")
         else:
             require(not direct_ids and not cluster_ids and disposition.get("basis", {}).get("kind") == "NO_ADMITTED_RELATION_OR_GAP", f"{master_id} independent track fabricates a connection")
+
+        # Exact-file actionability is a model-completeness denominator, not a
+        # merits or positive-evidence denominator.  Every field is derived from
+        # the same canonical row and the already audited one-hop registries.
+        raw_finite_test = disposition.get("finite_test", {})
+        finite_test = raw_finite_test if isinstance(raw_finite_test, dict) else {}
+        finite_id = finite_test.get("id")
+        finite_test_ids.append(finite_id)
+        require(isinstance(raw_finite_test, dict), f"{master_id} lacks a finite_test object")
+        require(finite_id == f"FT-{master_id}", f"{master_id} finite-test identity mismatch")
+        for field in (
+            "question",
+            "source_needed",
+            "procedural_availability",
+            "decision_dependency",
+            "contrary_explanation",
+            "if_confirmed",
+            "if_refuted",
+        ):
+            require_bilingual(finite_test.get(field), f"{master_id} finite_test.{field}")
+            if field in finite_specific_values:
+                finite_specific_values[field]["en"].add(
+                    finite_test.get(field, {}).get("en")
+                )
+                finite_specific_values[field]["es"].add(
+                    finite_test.get(field, {}).get("es")
+                )
+        canonical_row = public_by_id.get(master_id, {})
+        expected_family = expected_finite_test_family(canonical_row)
+        require(
+            finite_test.get("family_template_id") == expected_family
+            and finite_test.get("family_taxonomy_only") is True,
+            f"{master_id} finite-test family misclassifies its record type/class/stream",
+        )
+        require(
+            finite_test.get("current_source_status")
+            == canonical_row.get("Source_Status"),
+            f"{master_id} finite-test source status diverges from the canonical row",
+        )
+        require(
+            finite_test.get("source_needed", {}).get("en")
+            == canonical_row.get("Open_Reference_Gap"),
+            f"{master_id} finite-test English source request diverges from Open_Reference_Gap",
+        )
+        require(
+            finite_test.get("recorded_object")
+            == canonical_row.get("Object_or_Purpose"),
+            f"{master_id} finite-test recorded object diverges from the canonical row",
+        )
+        require(
+            finite_test.get("status")
+            and finite_test.get("family_template_id")
+            and finite_test.get("family_taxonomy_only") is True
+            and finite_test.get("attribution")
+            and finite_test.get("source_needed_status"),
+            f"{master_id} finite-test control metadata is incomplete",
+        )
+        require(
+            isinstance(finite_test.get("source_refs"), list)
+            and len(finite_test.get("source_refs")) == 2,
+            f"{master_id} finite-test source-route state is absent",
+        )
+        source_refs = finite_test.get("source_refs", [])
+        canonical_source_ref = next(
+            (
+                source
+                for source in source_refs
+                if source.get("kind") == "CANONICAL_PUBLIC_RECORD"
+            ),
+            {},
+        )
+        primary_route_gap = next(
+            (
+                source
+                for source in source_refs
+                if source.get("kind") == "PUBLIC_SOURCE_ROUTE_GAP"
+            ),
+            {},
+        )
+        require(
+            canonical_source_ref.get("source_id") == master_id
+            and canonical_source_ref.get("status")
+            == "CANONICAL_METADATA_ONLY_NOT_PRIMARY_SOURCE"
+            and canonical_source_ref.get("href_en")
+            == f"en/master-proceedings-register/#record-{master_id}"
+            and canonical_source_ref.get("href_es")
+            == f"es/registro-maestro-procedimientos/#record-{master_id}"
+            and canonical_source_ref.get("limitations_en")
+            and canonical_source_ref.get("limitations_es")
+            and primary_route_gap.get("status")
+            == "PUBLIC_SOURCE_ROUTE_NOT_ESTABLISHED",
+            f"{master_id} finite-test source routes conflate metadata with a primary file",
+        )
+        finite_source_route_payloads.add(
+            json.dumps(source_refs, ensure_ascii=False, sort_keys=True)
+        )
+        competent_organ = finite_test.get("competent_organ", {})
+        expected_organ = (
+            canonical_row.get("Current_Custodian", "").strip()
+            or canonical_row.get("Origin_Organ", "").strip()
+        )
+        expected_organ_basis = (
+            "Current_Custodian"
+            if canonical_row.get("Current_Custodian", "").strip()
+            else "Origin_Organ"
+        )
+        require(
+            competent_organ.get("recorded_candidate") == expected_organ
+            and competent_organ.get("basis_field") == expected_organ_basis
+            and competent_organ.get("status"),
+            f"{master_id} finite-test competent-organ derivation is incomplete or stale",
+        )
+
+        expected_direct_master_ids = sorted(
+            {
+                relationship_by_id[rid].get("to_master_id")
+                if relationship_by_id[rid].get("from_master_id") == master_id
+                else relationship_by_id[rid].get("from_master_id")
+                for rid in direct_ids
+            }
+        )
+        expected_context_master_ids = sorted(
+            {
+                related_id
+                for cid in cluster_ids
+                for related_id in context_by_id[cid].get("member_master_ids", [])
+                if related_id != master_id
+            }
+        )
+        finite_related = finite_test.get("related_proceedings", {})
+        require(
+            finite_related.get("direct_master_ids") == expected_direct_master_ids
+            and finite_related.get("direct") == expected_direct_master_ids,
+            f"{master_id} finite-test direct one-hop membership mismatch",
+        )
+        require(
+            finite_related.get("context_master_ids") == expected_context_master_ids
+            and finite_related.get("context") == expected_context_master_ids
+            and finite_related.get("context_cluster_ids") == cluster_ids,
+            f"{master_id} finite-test contextual one-hop membership mismatch",
+        )
+        require(
+            finite_related.get("treatment_status")
+            and isinstance(finite_related.get("connection_statuses"), list)
+            and bool(finite_related.get("connection_statuses")),
+            f"{master_id} finite-test relationship treatment state is incomplete",
+        )
+        require(
+            "is only the recorded custodian/organ candidate" in finite_test.get("decision_dependency", {}).get("en", "")
+            and "solo el candidato registrado como custodio/órgano" in finite_test.get("decision_dependency", {}).get("es", "")
+            and "strongest hypothetical innocent or contrary explanation could be" in finite_test.get("contrary_explanation", {}).get("en", "")
+            and "No act is attributed by this model to the recorded candidate" in finite_test.get("contrary_explanation", {}).get("en", "")
+            and "explicación inocente o contraria hipotética" in finite_test.get("contrary_explanation", {}).get("es", "")
+            and "Este modelo no atribuye actuación alguna al candidato registrado" in finite_test.get("contrary_explanation", {}).get("es", "")
+            and "is not treated as competent merely because" in finite_test.get("if_confirmed", {}).get("en", "")
+            and "no se considera competente por el mero hecho" in finite_test.get("if_confirmed", {}).get("es", "")
+            and "is not treated as competent or required to act" in finite_test.get("if_refuted", {}).get("en", "")
+            and "no considera competente ni obliga a actuar" in finite_test.get("if_refuted", {}).get("es", ""),
+            f"{master_id} finite-test consequence treats a recorded custodian as competent or obliged",
+        )
+
+        navigation = finite_test.get("navigation", {})
+        expected_navigation = {
+            "controlled_trace_fragment": f"#trace-proceeding={master_id}",
+            "controlled_isolation_fragment": f"#isolation-test={master_id}",
+            "master_register_route_en": f"en/master-proceedings-register/#record-{master_id}",
+            "master_register_route_es": f"es/registro-maestro-procedimientos/#record-{master_id}",
+            "controlled_trace_route_en": f"en/proceedings-map/#trace-proceeding={master_id}",
+            "controlled_trace_route_es": f"es/mapa-procedimientos/#trace-proceeding={master_id}",
+            "controlled_isolation_route_en": f"en/proceedings-map/#isolation-test={master_id}",
+            "controlled_isolation_route_es": f"es/mapa-procedimientos/#isolation-test={master_id}",
+            "controlled_navigation_status": "AVAILABLE",
+            "dedicated_narrative_dossier_status": "PARTIAL_NOT_INFERRED",
+        }
+        require(
+            all(navigation.get(field) == value for field, value in expected_navigation.items()),
+            f"{master_id} finite-test Master/trace/isolation navigation is incomplete or invents a dossier",
+        )
+
+        receipt_knowledge = finite_test.get("receipt_knowledge", {})
+        require(
+            receipt_knowledge.get("classification")
+            in {"SOURCE_BACKED_INSTITUTIONAL_TRACE", "EXPLICIT_SOURCE_NOT_LOCATED"},
+            f"{master_id} receipt/knowledge classification is absent or uncontrolled",
+        )
+        if receipt_knowledge.get("classification"):
+            receipt_knowledge_classified_ids.add(master_id)
+        institutional_axes = receipt_knowledge.get("institutional_axes", {})
+        require(
+            set(institutional_axes) == INSTITUTIONAL_RECEIPT_AXES
+            and all(str(value).strip() for value in institutional_axes.values()),
+            f"{master_id} does not carry six independent institutional receipt/treatment axes",
+        )
+        require(
+            set(institutional_axes.values()) <= receipt_status_vocabulary,
+            f"{master_id} carries an uncatalogued institutional receipt/treatment grade",
+        )
+        institutional_axis_basis = receipt_knowledge.get(
+            "institutional_axis_basis", {}
+        )
+        require(
+            set(institutional_axis_basis) == FISCALIA_MATRIX_AXES,
+            f"{master_id} lacks per-axis institutional provenance",
+        )
+        receipt_axis_statuses = {
+            **institutional_axes,
+            "cross_file_acknowledgement_status": receipt_knowledge.get(
+                "cross_file_acknowledgement_status"
+            ),
+        }
+        for axis, basis in institutional_axis_basis.items():
+            expected_status = receipt_axis_statuses.get(axis)
+            if axis in {"material_received_status", "referral_status"}:
+                expected_status = basis.get("status")
+            require(
+                basis.get("status") == expected_status
+                and basis.get("status") in receipt_status_vocabulary
+                and basis.get("basis_kind")
+                and basis.get("basis_en")
+                and basis.get("basis_es")
+                and basis.get("limitation_en")
+                and basis.get("limitation_es")
+                and isinstance(basis.get("source"), dict)
+                and bool(basis.get("source")),
+                f"{master_id} lacks a controlled basis/limitation for {axis}",
+            )
+        if receipt_knowledge.get("classification") == "EXPLICIT_SOURCE_NOT_LOCATED":
+            require(
+                set(institutional_axes.values()) == {"NOT_LOCATED"}
+                and receipt_knowledge.get("cross_file_acknowledgement_status")
+                == "NOT_LOCATED"
+                and all(
+                    basis.get("status") == "NOT_LOCATED"
+                    and basis.get("basis_kind") == "EXPLICIT_SOURCE_NOT_LOCATED"
+                    and basis.get("source", {}).get("kind")
+                    == "PUBLIC_SOURCE_NOT_LOCATED"
+                    for basis in institutional_axis_basis.values()
+                ),
+                f"{master_id} unprofiled institutional classification contains a positive or circular grade",
+            )
+        require(
+            receipt_knowledge.get("cross_file_acknowledgement_status")
+            and receipt_knowledge.get("limitations_en")
+            and receipt_knowledge.get("limitations_es"),
+            f"{master_id} receipt/knowledge boundary is incomplete",
+        )
+        actor_specific = receipt_knowledge.get("actor_specific", {})
+        actor_source_status = actor_specific.get("source_status", "")
+        require(
+            actor_source_status == "NO_ACTOR_SPECIFIC_SOURCE_LOCATED"
+            and actor_specific.get("receipt_status") == "NOT_ESTABLISHED"
+            and actor_specific.get("knowledge_status") == "NOT_ESTABLISHED"
+            and actor_specific.get("actor_ids") == [],
+            f"{master_id} actor-specific source/receipt/knowledge state is not separately classified",
+        )
+        if actor_status_is_positive(actor_source_status):
+            actor_positive_ids.add(master_id)
+            actor_source_refs = (
+                actor_specific.get("source_refs")
+                or actor_specific.get("source_ids")
+                or actor_specific.get("profile_ids")
+                or []
+            )
+            require(
+                bool(actor_specific.get("actor_ids")) and bool(actor_source_refs),
+                f"{master_id} asserts positive actor-specific evidence without an actor and source",
+            )
+
+    require(
+        len(finite_test_ids) == CURRENT_PUBLIC_EXACT
+        and len(set(finite_test_ids)) == CURRENT_PUBLIC_EXACT,
+        "finite-test identities do not cover the 97 exact public proceedings exactly once",
+    )
+    require(
+        receipt_knowledge_classified_ids == exact_public_ids,
+        "receipt/knowledge classifications do not cover all 97 exact public proceedings",
+    )
+    for field, languages in finite_specific_values.items():
+        require(
+            len(languages["en"]) == CURRENT_PUBLIC_EXACT
+            and len(languages["es"]) == CURRENT_PUBLIC_EXACT,
+            f"finite-test {field} is structural boilerplate rather than 97 file-specific tests",
+        )
+    require(
+        len(finite_source_route_payloads) == CURRENT_PUBLIC_EXACT,
+        "finite-test source routes are not exact-file specific",
+    )
+
+    # The reviewed episode set is an explicit source map.  It may not be
+    # reconstructed from free-text matter references or silently expanded.
+    source_episodes = fiscalia_responses.get("episodes", [])
+    source_episode_by_id = {episode.get("id"): episode for episode in source_episodes}
+    episode_profiles = interlinkability.get("fiscalia_response_episode_profiles", [])
+    episode_profile_ids = [profile.get("profile_id") for profile in episode_profiles]
+    actual_episode_mapping = {
+        profile.get("episode_id"): profile.get("master_id")
+        for profile in episode_profiles
+    }
+    require(
+        len(source_episodes) == CURRENT_FISCALIA_RESPONSE_EPISODES
+        and set(source_episode_by_id) == set(EXPECTED_FISCALIA_EPISODE_MASTER_IDS),
+        "controlled Fiscalía response source no longer contains exactly the nine reviewed episodes",
+    )
+    require(
+        len(episode_profiles) == CURRENT_FISCALIA_RESPONSE_EPISODES
+        and len(set(episode_profile_ids)) == CURRENT_FISCALIA_RESPONSE_EPISODES
+        and actual_episode_mapping == EXPECTED_FISCALIA_EPISODE_MASTER_IDS,
+        "Fiscalía response profiles do not exactly preserve the reviewed episode-to-Master map",
+    )
+    require(
+        actual_episode_mapping.get("dp1901-2026") == "GC-CRI-008",
+        "DP 1901/2026 episode is not explicitly mapped to GC-CRI-008",
+    )
+    for profile in episode_profiles:
+        episode_id = profile.get("episode_id")
+        master_id = profile.get("master_id")
+        source_episode = source_episode_by_id.get(episode_id, {})
+        require(master_id in exact_public_ids, f"{episode_id} profile maps outside the exact public denominator")
+        require(
+            profile.get("profile_id") == f"FISCALIA-RESPONSE-{episode_id}"
+            and profile.get("date") == source_episode.get("date")
+            and profile.get("source", {}).get("kind")
+            == "CONTROLLED_FISCALIA_RESPONSE_EPISODE"
+            and profile.get("source", {}).get("path")
+            == "assets/data/fiscalia-response-correspondence.json"
+            and profile.get("source", {}).get("field") == "episodes[]"
+            and profile.get("source", {}).get("record_id") == episode_id,
+            f"{episode_id} profile lacks exact controlled-source provenance",
+        )
+        for profile_field, source_field in (
+            ("title_en", "title_en"),
+            ("title_es", "title_es"),
+            ("source_authored_known_summary_en", "known_en"),
+            ("source_authored_known_summary_es", "known_es"),
+            ("source_authored_request_summary_en", "requested_en"),
+            ("source_authored_request_summary_es", "requested_es"),
+            ("institutional_response_en", "response_en"),
+            ("institutional_response_es", "response_es"),
+            ("open_question_en", "unresolved_en"),
+            ("open_question_es", "unresolved_es"),
+            ("later_event_en", "next_en"),
+            ("later_event_es", "next_es"),
+            ("contrary_or_limiting_record_en", "causation_en"),
+            ("contrary_or_limiting_record_es", "causation_es"),
+            ("causation_status", "causation_level"),
+        ):
+            require(
+                profile.get(profile_field) == source_episode.get(source_field),
+                f"{episode_id} profile {profile_field} diverges from its controlled source field",
+            )
+        require(
+            set(profile.get("institutional_axes", {})) == INSTITUTIONAL_RECEIPT_AXES
+            and all(
+                str(value).strip()
+                for value in profile.get("institutional_axes", {}).values()
+            )
+            and profile.get("cross_file_acknowledgement_status")
+            and profile.get("attribution_boundary"),
+            f"{episode_id} profile lacks the six-axis attribution boundary",
+        )
+        profile_axis_basis = profile.get("institutional_axis_basis", {})
+        require(
+            set(profile_axis_basis) == FISCALIA_MATRIX_AXES,
+            f"{episode_id} profile lacks nine independent axis bases",
+        )
+        exposed_profile_statuses = {
+            **profile.get("institutional_axes", {}),
+            "cross_file_acknowledgement_status": profile.get(
+                "cross_file_acknowledgement_status"
+            ),
+            "material_received_status": EXPECTED_FISCALIA_EPISODE_MATERIAL_STATUS.get(
+                episode_id
+            ),
+            "referral_status": EXPECTED_FISCALIA_EPISODE_REFERRAL_STATUS.get(
+                episode_id, "NOT_LOCATED"
+            ),
+        }
+        for axis, basis in profile_axis_basis.items():
+            expected_source_field = (
+                "unresolved"
+                if basis.get("status") in {"NOT_LOCATED", "STATUS_UNRESOLVED"}
+                else EXPECTED_FISCALIA_EPISODE_AXIS_SOURCE_FIELD_OVERRIDES.get(
+                    (episode_id, axis), EXPECTED_FISCALIA_AXIS_SOURCE_FIELDS[axis]
+                )
+            )
+            require(
+                basis.get("status") == exposed_profile_statuses[axis]
+                and basis.get("status") in receipt_status_vocabulary
+                and basis.get("basis_kind")
+                and basis.get("basis_en")
+                and basis.get("basis_es")
+                and basis.get("limitation_en")
+                and basis.get("limitation_es")
+                and basis.get("source", {}).get("record_id") == episode_id
+                and basis.get("source", {}).get("profile_id")
+                == profile.get("profile_id"),
+                f"{episode_id} {axis} grade lacks exact episode provenance",
+            )
+            require(
+                basis.get("source", {}).get("field")
+                == f"episodes[].{expected_source_field}_en/{expected_source_field}_es",
+                f"{episode_id} {axis} grade cites the wrong source episode field",
+            )
+            if (episode_id, axis) in EXPECTED_FISCALIA_AXIS_STATUS_PRECISION:
+                require(
+                    basis.get("status")
+                    == EXPECTED_FISCALIA_AXIS_STATUS_PRECISION[(episode_id, axis)],
+                    f"{episode_id} {axis} overstates the controlled source",
+                )
+            if basis.get("status") in {"NOT_LOCATED", "STATUS_UNRESOLVED"}:
+                require(
+                    source_episode.get("unresolved_en", "") in basis.get("basis_en", "")
+                    and source_episode.get("unresolved_es", "") in basis.get("basis_es", ""),
+                    f"{episode_id} {axis} gap basis does not state the controlled unresolved source",
+                )
+            else:
+                require(
+                    basis.get("basis_en")
+                    == source_episode.get(f"{expected_source_field}_en")
+                    and basis.get("basis_es")
+                    == source_episode.get(f"{expected_source_field}_es"),
+                    f"{episode_id} {axis} positive grade text does not equal its cited source field",
+                )
+        require(
+            "matter_references" not in profile,
+            f"{episode_id} profile exposes or joins a raw matter_references field",
+        )
+    profile_ids_by_master: dict[str, list[str]] = {}
+    for profile in episode_profiles:
+        profile_ids_by_master.setdefault(profile["master_id"], []).append(
+            profile["profile_id"]
+        )
+    disposition_by_master = {
+        disposition.get("master_id"): disposition for disposition in dispositions
+    }
+    for master_id in exact_public_ids:
+        receipt = (
+            disposition_by_master.get(master_id, {})
+            .get("finite_test", {})
+            .get("receipt_knowledge", {})
+        )
+        expected_profile_ids = sorted(profile_ids_by_master.get(master_id, []))
+        expected_classification = (
+            "SOURCE_BACKED_INSTITUTIONAL_TRACE"
+            if expected_profile_ids
+            else "EXPLICIT_SOURCE_NOT_LOCATED"
+        )
+        require(
+            sorted(receipt.get("source_profile_ids", [])) == expected_profile_ids
+            and receipt.get("classification") == expected_classification,
+            f"{master_id} receipt profile membership/classification diverges from the reviewed episode map",
+        )
+        event_profile_ids = sorted(
+            event.get("profile_id") for event in receipt.get("event_refs", [])
+        )
+        require(
+            event_profile_ids == expected_profile_ids,
+            f"{master_id} institutional event references diverge from reviewed profile membership",
+        )
+    require(
+        '.get("matter_references")' not in interlink_builder
+        and "['matter_references']" not in interlink_builder,
+        "interlinkability builder joins profiles from raw matter_references",
+    )
+
+    fiscalia_public_rows = [
+        row for row in public_rows if "FISCAL" in row.get("Stream", "").upper()
+    ]
+    fiscalia_public_ids = {row["Master_ID"] for row in fiscalia_public_rows}
+    fiscalia_exact_ids = {
+        row["Master_ID"]
+        for row in fiscalia_public_rows
+        if row.get("Is_Proceeding") == "TRUE"
+    }
+    fiscalia_unresolved_ids = fiscalia_public_ids - fiscalia_exact_ids
+    fiscalia_matrix = interlinkability.get("fiscalia_office_file_matrix", [])
+    fiscalia_matrix_ids = [row.get("master_id") for row in fiscalia_matrix]
+    require(
+        len(fiscalia_public_ids) == CURRENT_FISCALIA_OFFICE_FILE_RECORDS
+        and len(fiscalia_exact_ids) == CURRENT_FISCALIA_EXACT_RECORDS
+        and len(fiscalia_unresolved_ids) == CURRENT_FISCALIA_UNRESOLVED_RECORDS,
+        "canonical Fiscalía Stream denominator is not 24 rows / 21 exact / 3 unresolved",
+    )
+    require(
+        len(fiscalia_matrix_ids) == CURRENT_FISCALIA_OFFICE_FILE_RECORDS
+        and len(set(fiscalia_matrix_ids)) == CURRENT_FISCALIA_OFFICE_FILE_RECORDS
+        and set(fiscalia_matrix_ids) == fiscalia_public_ids,
+        "Fiscalía office/file matrix does not exactly equal every public Fiscalía Stream row",
+    )
+    require(
+        "GC-CRI-008" not in fiscalia_matrix_ids,
+        "DP 1901/2026 judicial file was incorrectly admitted to the 24-row Fiscalía Stream matrix",
+    )
+    profiled_matrix_ids: set[str] = set()
+    profile_id_set = set(episode_profile_ids)
+    profile_by_id = {
+        profile["profile_id"]: profile for profile in episode_profiles
+    }
+    expected_direct_by_master: dict[str, set[str]] = {}
+    for relationship in relationships:
+        left = relationship.get("from_master_id")
+        right = relationship.get("to_master_id")
+        expected_direct_by_master.setdefault(left, set()).add(right)
+        expected_direct_by_master.setdefault(right, set()).add(left)
+    expected_context_by_master: dict[str, set[str]] = {}
+    for cluster in context_clusters:
+        members = set(cluster.get("member_master_ids", []))
+        for member in members:
+            expected_context_by_master.setdefault(member, set()).update(
+                members - {member}
+            )
+    for matrix_row in fiscalia_matrix:
+        master_id = matrix_row.get("master_id")
+        canonical_row = public_by_id.get(master_id, {})
+        source_profile_ids = matrix_row.get("source_profile_ids", [])
+        if source_profile_ids:
+            profiled_matrix_ids.add(master_id)
+        require(
+            matrix_row.get("reference") == canonical_row.get("Reference")
+            and matrix_row.get("origin_office") == canonical_row.get("Origin_Organ")
+            and matrix_row.get("current_custodian") == canonical_row.get("Current_Custodian")
+            and matrix_row.get("is_proceeding") == canonical_row.get("Is_Proceeding")
+            and matrix_row.get("record_type") == canonical_row.get("Record_Type")
+            and matrix_row.get("source_status") == canonical_row.get("Source_Status"),
+            f"{master_id} Fiscalía matrix identity/source fields diverge from the public Master row",
+        )
+        require(
+            len(source_profile_ids) == len(set(source_profile_ids))
+            and set(source_profile_ids) <= profile_id_set,
+            f"{master_id} Fiscalía matrix cites an unknown or duplicate response profile",
+        )
+        expected_profile_status = (
+            "SOURCE_CONTROLLED_PROFILE" if source_profile_ids else "EXPLICIT_PROFILE_GAP"
+        )
+        require(
+            matrix_row.get("profile_status") == expected_profile_status,
+            f"{master_id} Fiscalía matrix profile/gap status is inconsistent",
+        )
+        for field in (
+            "received_or_known",
+            "requested",
+            "institutional_response",
+            "material_inventory_gap",
+            "related_assets_gap",
+            "what_was_referred",
+            "what_was_actually_examined",
+            "strongest_contrary",
+            "unanswered_or_source_gap",
+        ):
+            require_bilingual(matrix_row.get(field), f"{master_id} Fiscalía matrix {field}")
+        matrix_statuses = {
+            axis: matrix_row.get(axis) for axis in FISCALIA_MATRIX_AXES
+        }
+        require(
+            set(matrix_statuses.values()) <= receipt_status_vocabulary
+            and all(matrix_statuses.values())
+            and matrix_row.get("unitary_acknowledgement_status") == "NOT_LOCATED"
+            and matrix_row.get("boundary_en")
+            and matrix_row.get("boundary_es"),
+            f"{master_id} Fiscalía matrix lacks independent treatment/acknowledgement states",
+        )
+        expected_referral = EXPECTED_FISCALIA_MATRIX_REFERRAL_STATUS.get(
+            master_id, "NOT_LOCATED"
+        )
+        require(
+            matrix_row.get("referral_status") == expected_referral,
+            f"{master_id} Fiscalía referral status was inferred from transmission",
+        )
+        matrix_axis_basis = matrix_row.get("institutional_axis_basis", {})
+        require(
+            set(matrix_axis_basis) == FISCALIA_MATRIX_AXES,
+            f"{master_id} Fiscalía matrix lacks per-axis provenance",
+        )
+        for axis, basis in matrix_axis_basis.items():
+            require(
+                basis.get("status") == matrix_statuses[axis]
+                and basis.get("basis_kind")
+                and basis.get("basis_en")
+                and basis.get("basis_es")
+                and basis.get("limitation_en")
+                and basis.get("limitation_es")
+                and isinstance(basis.get("source"), dict)
+                and bool(basis.get("source")),
+                f"{master_id} Fiscalía matrix {axis} lacks source/basis/limitation",
+            )
+        if source_profile_ids:
+            require(
+                matrix_axis_basis
+                == profile_by_id[source_profile_ids[0]].get(
+                    "institutional_axis_basis", {}
+                ),
+                f"{master_id} Fiscalía matrix axis bases diverge from the controlled episode profile",
+            )
+        else:
+            require(
+                all(
+                    basis.get("status") == "NOT_LOCATED"
+                    and basis.get("basis_kind") == "EXPLICIT_SOURCE_NOT_LOCATED"
+                    and basis.get("source", {}).get("kind")
+                    == "PUBLIC_SOURCE_NOT_LOCATED"
+                    for basis in matrix_axis_basis.values()
+                ),
+                f"{master_id} unprofiled Fiscalía row contains a positive or circular institutional grade",
+            )
+        expected_matrix_direct = sorted(
+            expected_direct_by_master.get(master_id, set())
+        )
+        expected_matrix_context = sorted(
+            expected_context_by_master.get(master_id, set())
+        )
+        expected_matrix_related = sorted(
+            set(expected_matrix_direct) | set(expected_matrix_context)
+        )
+        require(
+            matrix_row.get("related_direct_master_ids") == expected_matrix_direct
+            and matrix_row.get("related_context_master_ids")
+            == expected_matrix_context
+            and matrix_row.get("related_master_ids") == expected_matrix_related,
+            f"{master_id} Fiscalía matrix direct/context membership mismatch",
+        )
+        require(
+            matrix_row.get("related_assets") == []
+            and matrix_row.get("related_assets_status") == "NOT_LOCATED"
+            and matrix_row.get("material_received") == [],
+            f"{master_id} Fiscalía matrix invents a received-material or asset inventory",
+        )
+        material_summaries = matrix_row.get("material_allegations_evidence", [])
+        require(
+            len(material_summaries) == (2 if source_profile_ids else 0)
+            and all(
+                item.get("kind")
+                and item.get("text_en")
+                and item.get("text_es")
+                and item.get("attribution")
+                for item in material_summaries
+            ),
+            f"{master_id} Fiscalía material allegations/evidence are absent or unattributed",
+        )
+        if source_profile_ids:
+            episode_ids = {
+                profile_by_id[profile_id]["episode_id"]
+                for profile_id in source_profile_ids
+            }
+            require(
+                len(episode_ids) == 1
+                and matrix_row.get("material_received_status")
+                == EXPECTED_FISCALIA_EPISODE_MATERIAL_STATUS[next(iter(episode_ids))],
+                f"{master_id} Fiscalía material-received grade is stale",
+            )
+        else:
+            require(
+                matrix_row.get("material_received_status") == "NOT_LOCATED",
+                f"{master_id} unprofiled Fiscalía row asserts received material",
+            )
+    require(
+        len(profiled_matrix_ids) == CURRENT_FISCALIA_PROFILED_MATRIX_RECORDS,
+        "Fiscalía matrix must contain exactly 8 source-profiled rows and 16 explicit gaps",
+    )
 
     interlink_coverage = interlinkability.get("coverage", {})
     case_prism_exact_ids = {
@@ -713,7 +1658,26 @@ if not errors:
     require(
         interlink_coverage.get("decision_dependency_exact_coverage")
         == f"GAP_{CURRENT_CASE_PRISM_EXACT_COVERED}_OF_{CURRENT_PUBLIC_EXACT}",
-        "decision-dependency exact coverage is overstated",
+        "shared-proposition decision-dependency coverage is overstated",
+    )
+    require(
+        interlink_coverage.get("decision_dependency_exact_coverage_scope")
+        == "SHARED_CASE_PRISM_PROPOSITION_MEMBERSHIP_ONLY",
+        "shared Case Prism membership is conflated with exact-file actionability",
+    )
+    require(
+        interlink_coverage.get("finite_test_family_counts")
+        == EXPECTED_FINITE_TEST_FAMILY_COUNTS,
+        "finite-test family coverage denominator is stale or misclassified",
+    )
+    require(
+        interlink_coverage.get("exact_file_decision_dependency_actionability_count")
+        == CURRENT_PUBLIC_EXACT
+        and interlink_coverage.get(
+            "exact_file_decision_dependency_actionability_coverage"
+        )
+        == f"VERIFIED_{CURRENT_PUBLIC_EXACT}_OF_{CURRENT_PUBLIC_EXACT}",
+        "exact-file decision-dependency actionability is not modelled 97/97",
     )
     require(
         interlink_coverage.get("bilingual_specific_next_source_count")
@@ -725,11 +1689,67 @@ if not errors:
         == f"VERIFIED_{CURRENT_PUBLIC_EXACT}_OF_{CURRENT_PUBLIC_EXACT}",
         "bilingual specific next-source coverage is incomplete",
     )
-    require(interlink_coverage.get("exact_proceeding_full_finite_test_count") == 0, "exact-proceeding disposition actionability count is overstated")
+    require(
+        interlink_coverage.get("exact_proceeding_full_finite_test_count")
+        == CURRENT_PUBLIC_EXACT,
+        "exact-proceeding finite-test count does not match the 97-file denominator",
+    )
     require(
         interlink_coverage.get("exact_proceeding_full_finite_test_coverage")
-        == f"GAP_0_OF_{CURRENT_PUBLIC_EXACT}",
-        "exact-proceeding full finite-test gap is not explicit",
+        == f"VERIFIED_{CURRENT_PUBLIC_EXACT}_OF_{CURRENT_PUBLIC_EXACT}",
+        "exact-proceeding full finite-test model is not complete 97/97",
+    )
+    require(
+        interlink_coverage.get("receipt_knowledge_classification_count")
+        == CURRENT_PUBLIC_EXACT
+        and interlink_coverage.get("receipt_knowledge_classification_coverage")
+        == f"VERIFIED_{CURRENT_PUBLIC_EXACT}_OF_{CURRENT_PUBLIC_EXACT}"
+        and interlink_coverage.get("receipt_knowledge_axis_provenance_count")
+        == CURRENT_PUBLIC_EXACT
+        and interlink_coverage.get("receipt_knowledge_axis_provenance_coverage")
+        == f"VERIFIED_{CURRENT_PUBLIC_EXACT}_OF_{CURRENT_PUBLIC_EXACT}"
+        and interlink_coverage.get("receipt_knowledge_positive_source_profile_count")
+        == CURRENT_FISCALIA_RESPONSE_EPISODES,
+        "receipt/knowledge model coverage or separate positive-profile count is stale",
+    )
+    require(
+        not actor_positive_ids,
+        "actor-specific positive evidence is asserted despite the current zero-source denominator",
+    )
+    require(
+        interlink_coverage.get("fiscalia_office_file_matrix_count")
+        == CURRENT_FISCALIA_OFFICE_FILE_RECORDS
+        and interlink_coverage.get("fiscalia_office_file_matrix_coverage")
+        == "VERIFIED_24_OF_24"
+        and interlink_coverage.get(
+            "fiscalia_office_file_matrix_substantive_column_count"
+        )
+        == CURRENT_FISCALIA_OFFICE_FILE_RECORDS
+        and interlink_coverage.get(
+            "fiscalia_office_file_matrix_substantive_column_coverage"
+        )
+        == "VERIFIED_24_OF_24"
+        and interlink_coverage.get("fiscalia_office_file_matrix_exact_count")
+        == CURRENT_FISCALIA_EXACT_RECORDS
+        and interlink_coverage.get("fiscalia_office_file_matrix_unverified_count")
+        == CURRENT_FISCALIA_UNRESOLVED_RECORDS
+        and interlink_coverage.get("fiscalia_response_episode_profile_count")
+        == CURRENT_FISCALIA_RESPONSE_EPISODES
+        and interlink_coverage.get(
+            "fiscalia_office_file_matrix_source_profiled_record_count"
+        )
+        == CURRENT_FISCALIA_PROFILED_MATRIX_RECORDS,
+        "Fiscalía matrix/profile coverage denominators are stale",
+    )
+    require(
+        interlink_coverage.get("controlled_trace_route_count")
+        == interlink_coverage.get("controlled_isolation_route_count")
+        == CURRENT_PUBLIC_EXACT
+        and interlink_coverage.get("controlled_navigation_coverage")
+        == f"VERIFIED_{CURRENT_PUBLIC_EXACT}_OF_{CURRENT_PUBLIC_EXACT}"
+        and interlink_coverage.get("dedicated_narrative_dossier_coverage")
+        == "PARTIAL_NOT_INFERRED",
+        "97/97 controlled navigation or the separate partial dossier boundary is stale",
     )
     require("bilingual_actionability" not in interlink_coverage, "next-source coverage is mislabeled as full bilingual actionability")
     require(interlink_coverage.get("classification_counts") == {token: disposition_counts.get(token, 0) for token in classifications}, "disposition classification coverage mismatch")
@@ -976,25 +1996,120 @@ if not errors:
             require(href and (ROOT / href / "index.html").is_file(), f"{source_id} {language} route unresolved: {href}")
 
     required_views = {"CONVERGENCE_CLUSTER", "FRAGMENTATION_AUDIT", "DECISION_DEPENDENCY_MATRIX", "PARALLEL_PROCEEDINGS_LANES", "ISOLATION_TEST", "AUDIENCE_LENS"}
-    require(schema.get("schema_version") == "1.5.0", "interconnectivity schema must be 1.5.0")
+    require(schema.get("schema_version") == "1.7.0", "interconnectivity schema must be 1.7.0")
     require(schema.get("control_date") == "2026-08-31", "interconnectivity schema control date is stale")
     require(schema.get("canonical_node_source_id") == "PROCEEDINGS_MASTER_REGISTER", "schema canonical source identity changed")
-    require(schema.get("specialist_context_sources") == ["assets/data/treasury-transparency-7-2026-v1.json"], "schema specialist context source registry mismatch")
+    require(
+        schema.get("specialist_context_sources")
+        == [
+            "assets/data/treasury-transparency-7-2026-v1.json",
+            "assets/data/fiscalia-response-correspondence.json",
+        ],
+        "schema specialist context/source registry mismatch",
+    )
     require(required_views <= set(schema.get("required_views", [])), "schema required views missing")
     require(required_views <= set(schema.get("implemented_public_views", {})), "schema runtime mappings missing")
     implemented_views = schema.get("implemented_public_views", {})
     require("26 source-controlled material clusters" in implemented_views.get("CONVERGENCE_CLUSTER", "") and "1 source-controlled corridor" in implemented_views.get("CONVERGENCE_CLUSTER", ""), "schema convergence-view denominator or corridor disclosure is stale")
     require(
-        f"{CURRENT_CASE_PRISM_EXACT_UNCOVERED} proceedings remain explicit Case Prism content gaps"
+        f"shared-proposition membership remains {CURRENT_CASE_PRISM_EXACT_COVERED} of {CURRENT_PUBLIC_EXACT}"
+        in implemented_views.get("FRAGMENTATION_AUDIT", "")
+        and f"{CURRENT_CASE_PRISM_EXACT_UNCOVERED} explicit no-coordinate gaps"
         in implemented_views.get("FRAGMENTATION_AUDIT", ""),
         "schema fragmentation-view content-gap denominator is stale",
     )
     require(set(schema.get("case_prism_cell_statuses", [])) == statuses, "schema relationship vocabulary mismatch")
+    schema_principles = schema.get("principles", {})
+    require(
+        schema_principles.get(
+            "finite_test_dependencies_contrary_records_and_consequences_are_file_specific"
+        )
+        is True
+        and schema_principles.get(
+            "recorded_custodian_or_organ_does_not_establish_competence_or_duty"
+        )
+        is True
+        and schema_principles.get(
+            "finite_test_family_uses_record_type_before_mixed_stream_substrings"
+        )
+        is True
+        and schema_principles.get(
+            "contrary_explanation_is_hypothetical_and_does_not_attribute_an_act_to_recorded_candidate"
+        )
+        is True
+        and schema_principles.get(
+            "every_institutional_axis_requires_source_basis_and_limitation"
+        )
+        is True
+        and schema_principles.get(
+            "every_positive_institutional_axis_cites_the_episode_field_that_supports_its_grade"
+        )
+        is True
+        and schema_principles.get("referral_is_independent_from_transmission")
+        is True
+        and schema_principles.get(
+            "fiscalia_material_related_files_related_assets_and_examined_corpus_are_separate"
+        )
+        is True,
+        "schema omits the substantive finite-test/Fiscalía separation rules",
+    )
+    required_matrix_fields = {
+        "master_id",
+        "reference",
+        "origin_office",
+        "current_custodian",
+        "date_or_period",
+        "is_proceeding",
+        "record_type",
+        "source_status",
+        "profile_status",
+        "received_or_known.en",
+        "received_or_known.es",
+        "material_allegations_evidence",
+        "material_received",
+        "material_received_status",
+        "material_inventory_gap.en",
+        "material_inventory_gap.es",
+        "related_direct_master_ids",
+        "related_context_master_ids",
+        "related_assets",
+        "related_assets_status",
+        "related_assets_gap.en",
+        "related_assets_gap.es",
+        "transmission_status",
+        "referral_status",
+        "what_was_referred.en",
+        "what_was_referred.es",
+        "registration_status",
+        "file_incorporation_status",
+        "recipient_attribution_status",
+        "substantive_examination_status",
+        "what_was_actually_examined.en",
+        "what_was_actually_examined.es",
+        "decision_use_status",
+        "institutional_response.en",
+        "institutional_response.es",
+        "cross_file_acknowledgement_status",
+        "unitary_acknowledgement_status",
+        "strongest_contrary.en",
+        "strongest_contrary.es",
+        "unanswered_or_source_gap.en",
+        "unanswered_or_source_gap.es",
+        "institutional_axis_basis",
+        "boundary_en",
+        "boundary_es",
+    }
+    require(
+        set(schema.get("fiscalia_office_file_matrix_required_fields", []))
+        == required_matrix_fields,
+        "schema Fiscalía substantive column contract is incomplete",
+    )
     require(schema.get("implementation_contract", {}).get("bilingual_evidence_status_catalog_required") is True, "schema bilingual evidence-status requirement missing")
     require(schema.get("implementation_contract", {}).get("independent_case_prism_generation_seed_required") is True, "schema independent generation-seed requirement missing")
     implementation_contract = schema.get("implementation_contract", {})
     exact_contract = {
         "public_record_trace_denominator": CURRENT_PUBLIC_RECORDS,
+        "exact_interlinkability_public_asset_schema_version": "1.1.0",
         "canonical_exact_proceeding_denominator": CURRENT_CANONICAL_EXACT,
         "public_exact_proceeding_denominator": CURRENT_PUBLIC_EXACT,
         "private_exact_proceeding_excluded_denominator": CURRENT_PRIVATE_EXACT,
@@ -1011,9 +2126,8 @@ if not errors:
         "decision_dependency_exact_coverage_status": (
             f"GAP_{CURRENT_CASE_PRISM_EXACT_COVERED}_OF_{CURRENT_PUBLIC_EXACT}"
         ),
+        "decision_dependency_exact_coverage_scope": "SHARED_PROPOSITION_MATRIX_ONLY",
         "cell_treatment_source_coverage_status": "GAP_PROPOSITION_LEVEL_SOURCES_ONLY",
-        "actor_specific_knowledge_receipt_trace_status": "GAP_NOT_MODELLED",
-        "exact_id_to_dossier_source_route_coverage_status": "GAP_DENOMINATOR_NOT_ESTABLISHED",
         "fragmentation_selector_coverage_status": (
             f"VERIFIED_{CURRENT_PUBLIC_EXACT}_OF_{CURRENT_PUBLIC_EXACT}"
         ),
@@ -1025,8 +2139,47 @@ if not errors:
         "bilingual_specific_next_source_coverage_status": (
             f"VERIFIED_{CURRENT_PUBLIC_EXACT}_OF_{CURRENT_PUBLIC_EXACT}"
         ),
+        "exact_proceeding_full_finite_test_denominator": CURRENT_PUBLIC_EXACT,
         "exact_proceeding_full_finite_test_coverage_status": (
-            f"GAP_0_OF_{CURRENT_PUBLIC_EXACT}"
+            f"VERIFIED_{CURRENT_PUBLIC_EXACT}_OF_{CURRENT_PUBLIC_EXACT}"
+        ),
+        "exact_file_decision_dependency_actionability_coverage_status": (
+            f"VERIFIED_{CURRENT_PUBLIC_EXACT}_OF_{CURRENT_PUBLIC_EXACT}"
+        ),
+        "recorded_candidate_authority_status": "NOT_COMPETENCE_OR_DUTY",
+        "finite_test_family_counts": EXPECTED_FINITE_TEST_FAMILY_COUNTS,
+        "receipt_knowledge_classification_denominator": CURRENT_PUBLIC_EXACT,
+        "receipt_knowledge_classification_coverage_status": (
+            f"VERIFIED_{CURRENT_PUBLIC_EXACT}_OF_{CURRENT_PUBLIC_EXACT}"
+            "_POSITIVE_EVIDENCE_SEPARATELY_COUNTED"
+        ),
+        "receipt_knowledge_axis_provenance_denominator": CURRENT_PUBLIC_EXACT,
+        "receipt_knowledge_axis_provenance_coverage_status": (
+            "VERIFIED_97_OF_97_WITH_STATUS_BASIS_LIMITATION_AND_SOURCE"
+        ),
+        "actor_specific_knowledge_receipt_trace_status": (
+            f"MODELLED_{CURRENT_PUBLIC_EXACT}_OF_{CURRENT_PUBLIC_EXACT}"
+            "_WITH_EXPLICIT_NOT_ESTABLISHED_STATES"
+        ),
+        "fiscalia_public_master_row_denominator": CURRENT_FISCALIA_OFFICE_FILE_RECORDS,
+        "fiscalia_exact_proceeding_row_denominator": CURRENT_FISCALIA_EXACT_RECORDS,
+        "fiscalia_unverified_reference_row_denominator": CURRENT_FISCALIA_UNRESOLVED_RECORDS,
+        "fiscalia_office_file_matrix_coverage_status": (
+            "VERIFIED_24_OF_24_WITH_INDEPENDENT_MATERIAL_DIRECT_CONTEXT_ASSET_"
+            "REFERRAL_EXAMINATION_RESPONSE_ACKNOWLEDGEMENT_CONTRARY_AND_GAP_COLUMNS"
+        ),
+        "fiscalia_referral_transmission_separation_status": "VERIFIED_INDEPENDENT_GRADES",
+        "fiscalia_axis_provenance_status": "VERIFIED_NINE_AXES_PER_PROFILE_OR_EXPLICIT_GAP",
+        "fiscalia_matrix_profiled_row_denominator": CURRENT_FISCALIA_PROFILED_MATRIX_RECORDS,
+        "fiscalia_matrix_profiled_row_coverage_status": "VERIFIED_8_PROFILED_16_EXPLICIT_GAPS",
+        "fiscalia_source_controlled_episode_profile_denominator": CURRENT_FISCALIA_RESPONSE_EPISODES,
+        "fiscalia_episode_profiles_outside_matrix_denominator": 1,
+        "fiscalia_episode_profile_outside_matrix_master_id": "GC-CRI-008",
+        "fiscalia_source_controlled_episode_profile_coverage_status": "VERIFIED_9_OF_9",
+        "exact_id_master_trace_isolation_route_coverage_status": "VERIFIED_97_OF_97",
+        "exact_id_to_dossier_source_route_coverage_status": (
+            "MASTER_TRACE_ISOLATION_VERIFIED_97_OF_97_"
+            "DEDICATED_NARRATIVE_DOSSIER_PARTIAL_UNCLAIMED"
         ),
         "stable_exact_trace_fragment": "#trace-proceeding=<Master_ID>",
         "stable_exact_isolation_fragment": "#isolation-test=<Master_ID>",
@@ -1036,6 +2189,12 @@ if not errors:
         require(implementation_contract.get(field) == expected, f"schema implementation contract mismatch: {field}")
     require(implementation_contract.get("material_context_types") == ["RECORDED_CONNECTION", "SOURCE_CONTROLLED_CORRIDOR", "CASE_PRISM_PROPOSITION"], "schema material context types changed")
     require(implementation_contract.get("taxonomy_only_context_types") == ["STREAM", "GEOGRAPHY", "CHRONOLOGY"], "schema taxonomy-only context boundary changed")
+    require(
+        implementation_contract.get("classification_completion_may_not_upgrade_positive_evidence") is True
+        and implementation_contract.get("finite_test_structural_boilerplate_may_not_count_as_file_specific_actionability") is True
+        and implementation_contract.get("dedicated_narrative_dossier_coverage_may_not_be_inferred_complete") is True,
+        "schema does not separate model completeness from positive evidence/dossier completion",
+    )
 
     lifecycle_denominator = lifecycle.get("implementation_denominator", {})
     lifecycle_completion = lifecycle.get("completion_denominator", {})
@@ -1131,6 +2290,227 @@ if not errors:
     }
     require(recovery_companions <= set(lifecycle.get("expected_source_files", [])), "lifecycle recovery set omits a proceeding companion control")
 
+    # The 30-August manifest above remains immutable live evidence.  This new
+    # release has its own lifecycle and is intentionally only prepared until
+    # exact-head CI, merge, Pages and live readback produce later evidence.
+    require(
+        current_lifecycle.get("schema") == "por-derecho.publication-manifest.v1"
+        and current_lifecycle.get("publication_id")
+        == "PD-SP-CASE-PRISM-EXACT-ACTIONABILITY-20260831-01"
+        and current_lifecycle.get("control_date") == "2026-08-31"
+        and current_lifecycle.get("source_base_sha")
+        == "a54c74b204d6f7596d3da9e41af569c08c676736",
+        "current substantive-gap lifecycle identity/source base is stale",
+    )
+    require(
+        current_lifecycle.get("controlled_artifact_versions")
+        == {
+            "proceedings_interconnectivity_schema": "1.7.0",
+            "proceedings_interlinkability_projection": "1.1.0",
+        },
+        "current substantive-gap lifecycle does not pin schema/data versions 1.7.0/1.1.0",
+    )
+    require(
+        current_lifecycle.get("current_state") == "PREPARED_PENDING_MERGE"
+        and current_lifecycle.get("state")
+        == "PREPARED_PENDING_MERGE_WITH_ACCEPTED_PUBLICATION_BOUNDARY_GAP",
+        "current substantive-gap lifecycle must remain PREPARED_PENDING_MERGE before publication",
+    )
+    current_baseline = current_lifecycle.get("baseline_denominator", {})
+    expected_current_baseline = {
+        "canonical_rows": CURRENT_CANONICAL_RECORDS,
+        "public_rows": CURRENT_PUBLIC_RECORDS,
+        "canonical_exact_proceedings": CURRENT_CANONICAL_EXACT,
+        "public_exact_proceedings": CURRENT_PUBLIC_EXACT,
+        "private_exact_excluded": CURRENT_PRIVATE_EXACT,
+        "direct_relationship_pairs": CURRENT_DIRECT_PAIRS,
+        "direct_relationship_pairs_source_verified": CURRENT_VERIFIED_DIRECT_PAIRS,
+        "direct_relationship_pairs_source_reported_primary_pending": CURRENT_PENDING_DIRECT_PAIRS,
+        "direct_source_assertions": CURRENT_DIRECT_ASSERTIONS,
+        "direct_source_assertions_verified": CURRENT_VERIFIED_DIRECT_ASSERTIONS,
+        "direct_source_assertions_source_reported_primary_pending": CURRENT_PENDING_DIRECT_ASSERTIONS,
+        "material_context_clusters": len(context_clusters),
+        "shared_case_prism_propositions": len(props),
+        "parallel_lanes": len(lanes),
+        "explicit_matrix_coordinates": len(cells),
+        "case_prism_exact_proceedings_with_shared_proposition_coordinate": CURRENT_CASE_PRISM_EXACT_COVERED,
+        "case_prism_exact_proceedings_without_shared_proposition_coordinate": CURRENT_CASE_PRISM_EXACT_UNCOVERED,
+        "public_master_fiscalia_rows": CURRENT_FISCALIA_OFFICE_FILE_RECORDS,
+        "public_master_fiscalia_exact_rows": CURRENT_FISCALIA_EXACT_RECORDS,
+        "public_master_fiscalia_unverified_reference_rows": CURRENT_FISCALIA_UNRESOLVED_RECORDS,
+        "source_controlled_fiscalia_response_episodes": CURRENT_FISCALIA_RESPONSE_EPISODES,
+        "fiscalia_matrix_rows_with_episode_profiles": CURRENT_FISCALIA_PROFILED_MATRIX_RECORDS,
+        "judicial_file_episode_profiles_outside_fiscalia_matrix": 1,
+    }
+    require(
+        all(current_baseline.get(field) == value for field, value in expected_current_baseline.items()),
+        "current substantive-gap manifest baseline denominator is incomplete or stale",
+    )
+    current_targets = current_lifecycle.get("target_structural_coverage", {})
+    require(
+        current_targets.get("public_exact_dispositions") == "97_OF_97"
+        and current_targets.get("exact_proceeding_full_finite_tests") == "97_OF_97"
+        and current_targets.get("exact_file_specific_unique_finite_test_fields")
+        == "97_OF_97"
+        and current_targets.get("exact_file_decision_dependency_actionability") == "97_OF_97"
+        and current_targets.get("exact_file_actionability_content_contract")
+        == "UNIQUE_DECISION_DEPENDENCY_CONTRARY_CONFIRMED_REFUTED_AND_SOURCE_ROUTE_GAP"
+        and current_targets.get("finite_test_family_taxonomy")
+        == "CANONICAL_RECORD_TYPE_PRECEDES_MIXED_STREAM_SUBSTRING"
+        and current_targets.get("finite_test_family_counts")
+        == EXPECTED_FINITE_TEST_FAMILY_COUNTS
+        and current_targets.get("institutional_receipt_knowledge_classifications") == "97_OF_97"
+        and current_targets.get("institutional_nine_axis_provenance")
+        == "97_OF_97_WITH_INDEPENDENT_STATUS_BASIS_LIMITATION_AND_SOURCE"
+        and current_targets.get("master_trace_isolation_route_dispositions") == "97_OF_97"
+        and current_targets.get("fiscalia_office_file_matrix") == "24_OF_24"
+        and current_targets.get("fiscalia_office_file_matrix_composition")
+        == "21_EXACT_PLUS_3_UNRESOLVED_REFERENCES"
+        and current_targets.get("fiscalia_office_file_matrix_profiled_rows") == "8_OF_24"
+        and current_targets.get("fiscalia_response_episodes")
+        == "9_OF_9_INCLUDING_8_MATRIX_ROWS_PLUS_1_JUDICIAL_FILE_PROFILE"
+        and current_targets.get("shared_proposition_coordinate_coverage") == "26_OF_97"
+        and current_targets.get("shared_proposition_no_coordinate_gap") == "71_OF_97"
+        and current_targets.get("dedicated_narrative_dossier_coverage")
+        == "PARTIAL_SEPARATE_POSITIVE_COUNT",
+        "current substantive-gap manifest conflates structural coverage with positive evidence",
+    )
+    current_meaning = current_lifecycle.get("coverage_meaning", {})
+    require(
+        all(
+            token in current_meaning.get("finite_test", "")
+            for token in (
+                "exact-file-specific",
+                "Generic registry-maintenance",
+                "canonical public-record route",
+                "primary-source route or route gap",
+                "only a candidate",
+                "may not be treated as legally competent, empowered or obliged to act",
+                "conditional on exact competence and a lawful route",
+                "contrary explanation remains hypothetical",
+                "Canonical record type precedes a mixed Stream substring",
+            )
+        )
+        and all(
+            token in current_meaning.get("receipt_knowledge", "")
+            for token in (
+                "nine institutional axes",
+                "status",
+                "basis",
+                "limitation",
+                "Transmission and referral are independent",
+                "exact episode field that supports that axis",
+                "episode-and-axis overrides",
+            )
+        )
+        and "non-positive" in current_meaning.get("actor_specific", "")
+        and all(
+            token in current_meaning.get("fiscalia", "")
+            for token in (
+                "Twenty-four",
+                "21 exact and three unresolved references",
+                "direct/context proceeding",
+                "related-asset-gap",
+                "actually-examined",
+            )
+        ),
+        "current substantive-gap manifest does not define the substantive coverage meaning",
+    )
+    current_boundaries = set(current_lifecycle.get("evidential_boundaries", []))
+    require(
+        {
+            "GENERIC_REGISTRY_MAINTENANCE_BOILERPLATE_IS_NOT_EXACT_FILE_ACTIONABILITY",
+            "TRANSMISSION_AND_REFERRAL_REQUIRE_INDEPENDENT_GRADES",
+            "EVERY_INSTITUTIONAL_AXIS_REQUIRES_ITS_OWN_STATUS_BASIS_LIMITATION_AND_SOURCE",
+            "ACTOR_SPECIFIC_RECEIPT_OR_KNOWLEDGE_REQUIRES_ACTOR_SPECIFIC_EVIDENCE",
+        }
+        <= current_boundaries,
+        "current substantive-gap manifest omits a required evidential boundary",
+    )
+    current_validation_required = set(
+        current_lifecycle.get("validation", {}).get("required", [])
+    )
+    require(
+        {
+            "schema 1.7.0 and interlinkability projection 1.1.0",
+            "97/97 exact-file-specific unique finite-test field sets including decision dependency, contrary explanation, confirmed/refuted consequences, canonical public-record route and explicit primary-source route gap",
+            "record-type-first finite family taxonomy with 26 administrative, 19 civil, 11 criminal, 21 Fiscalia, one ombudsman, eight professional, seven regulatory and four tax/contentious files",
+            "hypothetical contrary explanations and competence-conditional consequences that attribute no act or duty to a recorded candidate",
+            "97/97 nine-axis provenance records with independent status, basis, limitation and source/source-gap; transmission and referral independently graded; actor-specific receipt/knowledge non-positive absent actor-specific evidence",
+            "episode-and-axis source-field support for every positive institutional grade",
+            "24/24 Fiscalia rows with separate material allegations/evidence, received-inventory gap, direct/context proceedings, related assets/gap, referred, actually examined, response, cross-file, unitary, contrary and unanswered controls",
+        }
+        <= current_validation_required,
+        "current substantive-gap manifest validation list is not fail-closed on substantive coverage",
+    )
+    for token in (
+        "schema `1.7.0`",
+        "projection `1.1.0`",
+        "exact-file-specific decision dependency",
+        "97 / 97 nine-axis provenance",
+        "Transmission and referral remain independent",
+        "generic registry-maintenance boilerplate",
+        "No confirmed/refuted consequence may treat the recorded candidate as legally",
+        "contrary explanation remains hypothetical",
+        "Family assignment follows canonical record",
+        "Every positive institutional grade must cite the exact episode field",
+        "allegations/evidence",
+        "what was referred",
+        "examined, response",
+    ):
+        require(
+            token in current_continuity,
+            f"current substantive-gap continuity record omits control: {token}",
+        )
+    current_boundary_gap = current_lifecycle.get("accepted_publication_boundary_gap", {})
+    require(
+        current_boundary_gap.get("status") == "UNRESOLVED_ACCEPTED_FOR_THIS_RELEASE"
+        and current_boundary_gap.get("resource")
+        == "archive/PROCEEDINGS_MASTER_REGISTER.csv"
+        and current_boundary_gap.get("last_recorded_http_status") == 200
+        and current_boundary_gap.get("current_source_base_sha256")
+        == hashlib.sha256(
+            (ROOT / "archive/PROCEEDINGS_MASTER_REGISTER.csv").read_bytes()
+        ).hexdigest()
+        and current_boundary_gap.get("post_deployment_http_and_hash_verification")
+        == "PENDING"
+        and current_boundary_gap.get("intended_live_surface") is False
+        and current_boundary_gap.get("included_in_live_urls") is False
+        and current_boundary_gap.get("included_in_live_markers") is False
+        and current_boundary_gap.get("deletion_safe") is False,
+        "current accepted CSV publication-boundary observation is incomplete or stale",
+    )
+    require(
+        current_lifecycle.get("validation", {}).get("status")
+        == "PENDING_EXACT_HEAD_CI"
+        and current_lifecycle.get("pull_request") is None
+        and current_lifecycle.get("reviewed_head_sha") is None
+        and current_lifecycle.get("reviewed_tree_sha") is None
+        and current_lifecycle.get("merge_sha") is None
+        and current_lifecycle.get("deployment_evidence") is None
+        and current_lifecycle.get("live_urls") == []
+        and current_lifecycle.get("live_markers") == {},
+        "current lifecycle claims publication evidence before PR/CI/merge/deployment",
+    )
+    current_required_paths = {
+        "assets/data/proceedings-interlinkability-v1.json",
+        "assets/data/proceedings-interconnectivity-schema-v1.json",
+        "assets/data/fiscalia-response-correspondence.json",
+        "assets/proceedings-interconnectivity-map-20260830.js",
+        "scripts/build_proceedings_interlinkability_v1.py",
+        "scripts/audit_proceedings_interconnectivity_map.py",
+        "scripts/smoke_proceedings_case_prism.mjs",
+        "publication-manifests/all-proceedings-interlinkability-20260830.json",
+        "publication-manifests/case-prism-substantive-gap-closure-20260831.json",
+        "docs/deletion-audits/2026-08-31-case-prism-substantive-gap-closure-continuity.md",
+    }
+    require(
+        current_required_paths <= set(current_lifecycle.get("expected_source_files", []))
+        and current_lifecycle.get("continuity_record")
+        == "docs/deletion-audits/2026-08-31-case-prism-substantive-gap-closure-continuity.md",
+        "current lifecycle omits a substantive-gap source or continuity control",
+    )
+
     renderer_tokens = {
         "pdim-prism-table": "decision matrix", "pdim-swimlane": "stable swimlane", "data-lane-heading": "lane headings",
         "data-isolation-id": "exact-file isolation", "data-isolation-restore": "restore control", "sourceLinks": "source links",
@@ -1153,9 +2533,51 @@ if not errors:
         "direct_relationship_source_verified_pair_count": "direct-edge evidence-grade denominator",
         "if (initialHash.canonicalize) replaceActiveHash();": "cold-load invalid-isolation canonicalisation",
         "if (parsed.canonicalize) replaceActiveHash();": "hashchange invalid-isolation canonicalisation",
+        "data-finite-test-coverage": "finite-test audit/positive-evidence denominator",
+        "data-audit-count": "finite-test audit count",
+        "data-positive-evidence-count": "separate positive-evidence count",
+        "data-finite-test-panel": "per-file finite-test panel",
+        "data-finite-test-status": "finite-test model status",
+        "data-finite-question": "finite question",
+        "data-finite-source-status": "finite-test source status",
+        "data-finite-source-link": "finite-test public source link",
+        "data-finite-source-gap": "finite-test source-route gap",
+        "data-finite-contrary": "strongest contrary explanation",
+        "data-finite-competent-organ": "competent-organ candidate",
+        "data-competent-organ-status": "competent-organ source status",
+        "data-finite-decision-dependency": "exact-file decision dependency",
+        "data-finite-related": "finite-test related-file surface",
+        "data-finite-related-direct": "finite-test direct one-hop list",
+        "data-finite-related-context": "finite-test contextual one-hop list",
+        "data-finite-if-confirmed": "confirmed consequence",
+        "data-finite-if-refuted": "refuted consequence",
+        "data-institutional-receipt-treatment": "institutional receipt/treatment surface",
+        "data-receipt-axis": "independent institutional axes",
+        "data-${axis.key}-status": "per-axis status token",
+        "data-receipt-event": "source-controlled institutional event",
+        "data-actor-specific-knowledge": "separate actor-specific evidence surface",
+        "data-personal-knowledge-status": "personal-knowledge evidence status",
+        "data-actor-source-status": "actor-specific source status",
+        "data-actor-profile": "actor/source profile",
+        "data-fiscalia-office-file-matrix": "Fiscalía cross-office/file matrix",
+        "data-row-count": "Fiscalía matrix row denominator",
+        "data-profiled-count": "Fiscalía matrix profiled-row denominator",
+        "data-fiscalia-row": "Fiscalía office/file row",
     }
     for token, label in renderer_tokens.items():
         require(token in js, f"renderer missing {label}")
+    for axis_key in (
+        "transmission",
+        "registration",
+        "file-incorporation",
+        "recipient-attribution",
+        "examination",
+        "decision-use",
+    ):
+        require(
+            f"key:'{axis_key}'" in js,
+            f"renderer missing independent {axis_key} receipt-axis token",
+        )
     require("nonExactRelation" in master_js, "Master renderer lacks a non-exact relationship qualification")
     require("pdim-prism-dash" not in js, "renderer can emit unexplained dashes")
     require("data-isolation-lane" not in js, "aggregate-lane isolation remains")
@@ -1194,7 +2616,7 @@ if not errors:
         require("public-authority-unitary-case-reconstruction" in page or "reconstruccion-unitaria-autoridades-publicas" in page, f"{label} lacks institutional clean-room navigation")
     require("#case-prism" in en and "#case-prism" in es, "Case Prism CTA fragment missing")
     require(all(f'id="{anchor}"' in en and f'id="{anchor}"' in es for anchor in ("parallel-lanes", "isolation-test")), "deep-link anchors missing")
-    require(all(f"proceedings-interconnectivity-map-20260830.{ext}?v=20260830g" in en and f"proceedings-interconnectivity-map-20260830.{ext}?v=20260830g" in es for ext in ("js", "css")), "Case Prism asset cache version not advanced")
+    require(all(f"proceedings-interconnectivity-map-20260830.{ext}?v=20260831a" in en and f"proceedings-interconnectivity-map-20260830.{ext}?v=20260831a" in es for ext in ("js", "css")), "Case Prism asset cache version not advanced to 20260831a")
 
     refs = ["RPL 2523/2025", "RPL 3304/2025", "RPL 3319/2025", "RPL 421/2026"]
     require(all(ref in institutional for ref in refs), "three-appellate-object correction missing")
@@ -1240,6 +2662,9 @@ if not errors:
         "publication-manifests/all-proceedings-interlinkability-20260830.json",
         "docs/deletion-audits/2026-08-30-all-proceedings-interlinkability-continuity.md",
         "docs/deletion-audits/2026-08-30-dp3205-2014-arrecife-caret-interlink.md",
+        "assets/data/fiscalia-response-correspondence.json",
+        "publication-manifests/case-prism-substantive-gap-closure-20260831.json",
+        "docs/deletion-audits/2026-08-31-case-prism-substantive-gap-closure-continuity.md",
     ]:
         require(path in workflow, f"workflow filter missing dependency: {path}")
     require("python3 scripts/build_public_proceedings_projection.py --check" in workflow, "workflow does not rebuild-check the public proceedings projection")
@@ -1281,18 +2706,55 @@ print("- aggregate appeal-family reference retained but excluded from exact sele
 print("- overlays consolidated and parent graph acyclic")
 print("- Case Prism structure: 19 propositions x 12 lanes = 228 explicit coordinates / 0 structural blanks")
 print("- relationship and file-treatment vocabularies structurally validated; cell-level evidentiary completeness is not inferred")
-print("- cell-treatment source coverage: GAP — source routes are proposition-level; actor-specific knowledge/receipt trace: GAP — not modelled")
-print("- exact-ID to proceeding-specific dossier/source-route coverage: GAP — denominator not established")
+print(
+    "- exact-file actionability coverage: VERIFIED "
+    f"{CURRENT_PUBLIC_EXACT}/{CURRENT_PUBLIC_EXACT} file-specific questions, "
+    "decision dependencies, strongest contrary explanations, confirmed/refuted "
+    "consequences and canonical metadata routes; primary-source route gaps remain explicit"
+)
+print(
+    "- finite-test family taxonomy: VERIFIED record-type-first — "
+    "26 administrative / 19 civil / 11 criminal / 21 Fiscalía / 1 ombudsman / "
+    "8 professional / 7 regulatory / 4 tax-contentious"
+)
+print(
+    "- institutional classification provenance: VERIFIED "
+    f"{CURRENT_PUBLIC_EXACT}/{CURRENT_PUBLIC_EXACT} classifications with nine "
+    "independently graded axes, source basis and limitation; classification does not "
+    "mean positive evidence; every positive grade reproduces its supporting episode field"
+)
+print(
+    "- positive evidence/source coverage remains separate: "
+    f"{CURRENT_FISCALIA_RESPONSE_EPISODES}/{CURRENT_PUBLIC_EXACT} "
+    "source-controlled institutional profiles; "
+    f"{len(actor_positive_ids)}/{CURRENT_PUBLIC_EXACT} actor-specific positive profiles"
+)
+print(
+    "- Fiscalía institutional-memory matrix: VERIFIED "
+    f"{CURRENT_FISCALIA_OFFICE_FILE_RECORDS}/{CURRENT_FISCALIA_OFFICE_FILE_RECORDS} "
+    f"rows ({CURRENT_FISCALIA_EXACT_RECORDS} exact / "
+    f"{CURRENT_FISCALIA_UNRESOLVED_RECORDS} unresolved); "
+    f"{CURRENT_FISCALIA_PROFILED_MATRIX_RECORDS} matrix profiles / "
+    f"{CURRENT_FISCALIA_OFFICE_FILE_RECORDS - CURRENT_FISCALIA_PROFILED_MATRIX_RECORDS} "
+    "explicit profile gaps; 9 total response episodes include GC-CRI-008 outside the matrix"
+)
+print(
+    "- Fiscalía substantive columns: source-attributed material summaries, received-material "
+    "inventory gap, direct/context proceedings, asset gap, transmission, referral, actual "
+    "examination, response, cross-file/unitary status, contrary record and unanswered question "
+    "validated independently; transmission never substitutes for referral"
+)
 print("- proposition-level source routes, contrary record, decision dependency and finite actionability fields validated")
 print(
-    "- stable parallel lanes and structural isolation mechanics validated; content remains "
-    f"GAP {CURRENT_CASE_PRISM_EXACT_COVERED}/{CURRENT_PUBLIC_EXACT}"
+    "- Master/trace/isolation navigation: VERIFIED "
+    f"{CURRENT_PUBLIC_EXACT}/{CURRENT_PUBLIC_EXACT}; dedicated narrative dossier "
+    "coverage remains PARTIAL and is not inferred from navigation"
 )
 print("- nine audience lenses and bilingual source routes validated")
 print(
     "- bilingual specific next-source coverage: VERIFIED "
     f"{CURRENT_PUBLIC_EXACT}/{CURRENT_PUBLIC_EXACT}; full exact-proceeding "
-    f"finite-test objects: GAP 0/{CURRENT_PUBLIC_EXACT}"
+    f"finite-test objects: VERIFIED {CURRENT_PUBLIC_EXACT}/{CURRENT_PUBLIC_EXACT}"
 )
 print("- EN/ES institutional feeders expose exact trace and isolation deep links")
 print("- counsel/procurador denominator remains an explicit GAP")

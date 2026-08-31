@@ -197,6 +197,100 @@ Future A-SCAN 360 closeouts must separately report:
 - deployment; and
 - live readback.
 
-## 12. Governing sentence
+## 12. Exact-file actionability and institutional-memory coverage
+
+The proposition matrix and the exact-proceeding audit answer different
+questions and must keep separate denominators.
+
+The controlling implementation pair for this closure is
+`proceedings-interconnectivity-schema-v1.json` **1.7.0** and
+`proceedings-interlinkability-v1.json` **1.1.0**. A renderer, builder, audit or
+publication record that validates an older contract may not close the current
+denominator.
+
+- **Proposition membership** asks whether an exact proceeding has been admitted
+  to at least one non-`OUTSIDE` coordinate in the finite 19 × 12 shared
+  proposition matrix. The current controlled denominator remains **26 / 97**;
+  the other **71** exact proceedings must remain visible as no-coordinate gaps
+  unless a source-reviewed proposition and lane are admitted. A generic shared
+  asset, geography, office or chronology may not close that denominator.
+- **Exact-file actionability** asks whether every public exact proceeding has a
+  finite test. The controlled target is **97 / 97**. Each test must preserve the
+  exact ID and must contain file-specific, bilingual values for the finite
+  question, source needed, current source status, recorded candidate
+  organ/custodian and its limits, direct/context memberships, decision
+  dependency, strongest contrary explanation and consequences if confirmed or
+  refuted. It must also expose the canonical public-record route and an explicit
+  proceeding-specific public primary-source route or primary-source route gap.
+  A recorded custodian/organ is only a candidate: it may never be described as
+  legally competent, empowered or obliged to act by the model. Consequences
+  must refer conditionally to the legally competent organ and a lawful route.
+  The strongest contrary explanation must remain expressly hypothetical and
+  may not attribute an act to that recorded candidate without a primary source.
+  Family taxonomy must follow the canonical record type before a mixed Stream
+  substring: administrative/professional context is not professional discipline,
+  and civil professional liability remains a civil judicial file.
+  These content fields must be independently non-empty and the decision
+  dependency, contrary explanation and two consequences must be unique to the
+  exact file. A family template is taxonomy only: generic registry-maintenance,
+  source-retrieval or “correct the record” boilerplate cannot count as 97 / 97
+  actionability. Completion of the data structure is not completion of the
+  missing evidence.
+- **Institutional receipt and knowledge classification** asks whether every
+  exact-file test states what is and is not established across nine independent
+  institutional axes: transmission, material received/inventory, referral,
+  registration, file incorporation, recipient attribution, substantive
+  examination, decision use and cross-file acknowledgement. The controlled
+  target is **97 / 97 nine-axis provenance records**. Every axis must carry its
+  own controlled status, bilingual basis, bilingual limitation and exact source
+  pointer or explicit source-not-located object; one source or grade may not be
+  silently inherited by another axis. A positive grade must cite the exact
+  episode field that substantively supports that axis; an episode-specific field
+  is required where a global axis default would cite unrelated text. Transmission and referral are independent
+  grades: neither proves the other or destination receipt. Positive-evidence
+  counts remain separate. Actor-specific receipt and actor-specific knowledge
+  are additional, separate non-positive controls unless an actor-specific source
+  identifies the person, act/material, time and permissible scope. Institutional
+  receipt never proves personal receipt; presentation never proves file
+  incorporation; incorporation never proves substantive examination;
+  examination never proves reliance; and none of those states proves intent,
+  agreement, wrongdoing or liability.
+- **Ministerio Fiscal institutional memory** uses a separate current denominator
+  of **24 / 24 public Master Register Fiscalía rows**. Source-controlled episode
+  profiles may connect an office/file only through reviewed event-to-matter
+  relationships. Raw reference-string equality is not proof of receipt,
+  incorporation, examination or cross-file recognition. The current model
+  contains nine source-controlled response episodes: eight profile rows in the
+  24-row Fiscalía matrix and one `DP 1901/2026` judicial-file profile kept
+  outside that matrix. Remaining files and events must carry explicit
+  `NOT_LOCATED` or unresolved treatment rather than disappear. The 24-row
+  denominator must remain split into **21 exact file rows and three unresolved
+  references**, and the matrix must expose, separately and bilingually for every
+  row: source-attributed material allegations/evidence; material received plus
+  the item-level inventory gap; direct and contextual proceedings; related
+  assets plus the asset gap; what was referred; what was actually examined; the
+  institutional response; cross-file acknowledgement; unitary acknowledgement;
+  the strongest contrary explanation; and the unanswered/source gap. Empty
+  positive arrays plus an explicit gap are valid; collapsing these columns into
+  one narrative summary is not.
+- **Route coverage** is complete only as a controlled navigation disposition:
+  every one of the 97 public exact IDs must resolve to the Master Register, exact
+  trace and isolation state. A dedicated narrative dossier is a different,
+  separately counted route. A null or not-established dossier route must not be
+  replaced by an invented page or by a nearby proceeding's dossier.
+
+The exact-file layer must continue to report source-backed direct edges
+separately from source-reported relationships awaiting primary completion. It
+must also preserve the open counsel/procurador denominators and every
+`SOURCE_NOT_LOCATED` state. Those evidence gaps do not defeat structural audit
+coverage, but structural coverage must never be described as proof that the
+underlying evidence, knowledge, treatment or merits are complete.
+
+The tracked operational `archive/PROCEEDINGS_MASTER_REGISTER.csv` remains a
+separately recorded, accepted publication-boundary gap while it is reachable
+from the public host. It is not an intended renderer input or live invariant,
+and its exposure prevents a `DELETION_SAFE` claim for the interlinking release.
+
+## 13. Governing sentence
 
 > **Preserve every proceeding as the legally distinct object that it is, while enabling a conscientious reader to see on one screen which controlled facts, sources, assets and consequences cross those procedural boundaries. Make fragmentation visible without presuming wrongdoing, and make every visual status no stronger than the source that supports it.**
