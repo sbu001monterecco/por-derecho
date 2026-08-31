@@ -1,0 +1,60 @@
+{
+  "schema": "por-derecho.publication-manifest.v1",
+  "publication_id": "ministerio-fiscal-wider-matter-eg745-20260831",
+  "title": "Ministerio Fiscal wider matter — E.G. 745/2026 unitary evidence-to-action continuation",
+  "current_state": "PREPARED_PENDING_MERGE",
+  "owner": "Por Derecho / Project Sun Rock",
+  "control_date": "2026-08-31",
+  "repository": "sbu001monterecco/por-derecho",
+  "expected_routes": {
+    "es": [
+      "es/fiscalia-inspeccion-exp-gub-745-2026/index.html",
+      "es/fiscalia-inspeccion-exp-gub-745-2026/continuidad-errores-omisiones-31-agosto-2026.html",
+      "es/fiscalia-inspeccion-exp-gub-745-2026/persecucion-abierta-transparencia-31-agosto-2026.html"
+    ],
+    "en": [
+      "en/public-prosecution-inspection-exp-gub-745-2026/index.html",
+      "en/public-prosecution-inspection-exp-gub-745-2026/continuity-errors-omissions-31-august-2026.html",
+      "en/public-prosecution-inspection-exp-gub-745-2026/open-prosecution-transparency-31-august-2026.html"
+    ]
+  },
+  "expected_source_files": [
+    "evidence/fiscalia/2026/MINISTERIO_FISCAL_WIDER_MATTER_EG745_UNITARY_EVIDENCE_ACTION_DIGEST_31AUG2026.md",
+    "evidence/fiscalia/2026/EG_745_2026_ERROR_OMISSION_MISCLASSIFICATION_REGISTER_31AUG2026.md",
+    "evidence/fiscalia/2026/EG_745_2026_OPEN_TRANSPARENCY_LEDGER_31AUG2026.md",
+    "evidence/fiscalia/2026/FGE_INSPECCION_EG_745_2026_ANNEX_EVIDENCE_GAP_MATRIX_29AUG2026.md",
+    "evidence/fiscalia/2026/2026-08-26_FGE_INSPECCION_EG_745_2026_METADATA.json",
+    "archive/EG_745_2026_NEW_THREAD_CONTINUITY_AUDIT_31AUG2026.md"
+  ],
+  "release": {
+    "branch": "codex/ministerio-fiscal-eg745-controlled-31aug2026",
+    "base_main_sha": "ebcffa342732a4a58177ee0625ec0c9d6f501ed1",
+    "pull_request": null,
+    "merge_sha": null,
+    "pages_run": null
+  },
+  "filing_status": {
+    "proof_control": "Fresh Gmail sent-mail and REG-AGE/Drive candidate review found no post-notification reconsideration or qualifying receipt.",
+    "reconsideration": "PREPARED / OUTSTANDING — NOT YET VERIFIED AS FILED",
+    "upgrade_rule": "Only exact sent/REG-AGE/judicial/equivalent filing proof may upgrade status."
+  },
+  "source_identity": {
+    "status": "CLOSED_VERIFIED_2026_08_31",
+    "method": "The SHA-512 printed on REGAGE26e00070235775 exactly matches the digest recomputed from the located signed 31 July master.",
+    "sha512": "352677fed18bd52659b87e68f40ba9793e1844fcc160caca50cab345ddfd06f709afbbbaaa8912458cb067d6df74d309db7c235429302171b51f7ca327bab635",
+    "boundary": "Binary identity does not prove later reconsideration filing."
+  },
+  "wider_perimeter": [
+    "DI 248/2018",
+    "DI 113/2022",
+    "DI 22/2026",
+    "DIP 2/2026",
+    "EG 49/2026",
+    "DP 1901/2026",
+    "12 March 2019 Fiscal opinion",
+    "25 July 2023 hearing",
+    "RPL 2523/2025"
+  ],
+  "evidential_boundary": "Adverse outcomes, silence, routing gaps, repeated contact and source-to-decision tensions do not by themselves establish coordination, obstruction, prevarication, bad faith, criminality or personal liability.",
+  "deployment_closeout_required": true
+}

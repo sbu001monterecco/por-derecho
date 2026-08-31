@@ -107,3 +107,15 @@ Read in this order:
 The E.G. 745/2026 publication and action architecture is recoverable from the repository without the originating chat. The new-thread work should therefore begin from repository sources and current connected evidence, not from conversational memory.
 
 The continuity state is **READY FOR NEW THREAD**, subject to the filing-status and three immediate merits gates above.
+
+## Controlled continuation result — 31 August 2026
+
+The prescribed continuation pass was completed from the then-current `origin/main`. Fresh Gmail/REG-AGE/Drive control found no post-notification reposición or filing receipt, so the filing-status lock remains unchanged.
+
+Immediate merits gate 1 is now **CLOSED**: the SHA-512 printed on `REGAGE26e00070235775` exactly matches the digest recomputed from the located signed 31-July master. The controlled binaries are byte-identical. This is source identity, not later appeal filing proof.
+
+The wider DI 248/2018 → DI 113/2022 → DI 22/2026 → DIP 2/2026 → EG 49/2026 → DP 1901/2026 → E.G. 745/2026 chronology, the limited 2019/2023/RPL 2523 bridges, updated gaps and current action matrix are preserved in:
+
+- `evidence/fiscalia/2026/MINISTERIO_FISCAL_WIDER_MATTER_EG745_UNITARY_EVIDENCE_ACTION_DIGEST_31AUG2026.md`.
+
+The public-safe RedSARA transcript bundle was also found to contain a two-character Base64 continuity drift. A tested in-memory repair matches the already-declared compressed and uncompressed hashes, but private-source governance blocks editing encoded evidence payloads in public Git. The governed custody/replacement action remains open. This is a project-side repository issue, not an error attributed to the Ministerio Fiscal.

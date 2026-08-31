@@ -115,16 +115,22 @@
     {"id": "OT-04", "action": "native/searchable/verifiable Decree and metadata", "status": "DRAFT PREPARED"},
     {"id": "OT-05", "action": "preservation of institutional records and routing traces", "status": "DRAFT PREPARED"},
     {"id": "OT-06", "action": "official actor-by-actor functional identification", "status": "OUTSTANDING PRODUCTION ARCHITECTURE"},
-    {"id": "OT-07", "action": "fix exact 2 August registered attachment bytes", "status": "OPEN / CRITICAL"},
+    {"id": "OT-07", "action": "fix exact 2 August registered attachment bytes", "status": "CLOSED / VERIFIED 31 AUG 2026 — receipt/master SHA-512 exact match"},
     {"id": "OT-08", "action": "Supreme Court preservation/preparation bundle", "status": "PREPARATION ONLY"},
     {"id": "OT-09", "action": "source-to-Decree correction/clarification matrix", "status": "DRAFT ARCHITECTURE"},
     {"id": "OT-10", "action": "superior-FGE / disciplinary / criminal / patrimonial route triage", "status": "TRIAGE ONLY"}
   ],
   "critical_gates": [
-    "fix exact 2 August registered attachment bytes and compare with official receipt / 31 July related master without assuming byte identity",
     "confirm legally effective notification mechanics/date",
     "record merits-route election"
   ],
+  "source_identity_update": {
+    "control_date": "2026-08-31",
+    "status": "CLOSED_VERIFIED",
+    "sha512": "352677fed18bd52659b87e68f40ba9793e1844fcc160caca50cab345ddfd06f709afbbbaaa8912458cb067d6df74d309db7c235429302171b51f7ca327bab635",
+    "method": "digest printed on REGAGE26e00070235775 exactly matches the SHA-512 recomputed from the located signed 31 July master",
+    "boundary": "binary identity is not reconsideration filing proof"
+  },
   "evidential_boundary": "Archive, adverse decisions, source-to-Decree tension, sequence or unanswered requests do not by themselves establish bad faith, obstruction, coordination, prevarication or criminality.",
   "deployment_closeout_required": false
 }

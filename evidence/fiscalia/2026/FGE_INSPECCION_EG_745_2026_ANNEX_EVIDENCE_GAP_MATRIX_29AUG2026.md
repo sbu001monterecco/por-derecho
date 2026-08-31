@@ -1,6 +1,6 @@
 # FGE Inspección Fiscal — E.G. 745/2026 — annex, evidence and gap matrix
 
-**Control date:** 29 August 2026  
+**Control date:** 29 August 2026; source-identity and wider-record update 31 August 2026
 **Purpose:** connect each principal review proposition to a located source, identify what is safe to annex, and isolate what must still be obtained or verified before filing.
 
 ## A. Core annex matrix
@@ -10,8 +10,8 @@
 | A-1 | `OFICIO Y DECRETO EXP. 745-26.pdf` | 26/08/2026 | challenged act; archive; stated reasons; review routes | native source preserved from notification email | native private; controlled transcription public | READY, subject to privacy handling |
 | A-2 | notification email `NOTIFICACIÓN OFICIO Y DECRETO EXP. GUB. 745/2026` | 26/08/2026 | receipt date/channel and attachment provenance | located in Gmail | metadata only | READY; preserve headers if available |
 | A-3 | `REGAGE26e00070235775.pdf` | 02/08/2026 | exact Inspection-specific registration; substantive `Expone`; 12 numbered requests; registered attachment hash | located in Gmail and Drive | native receipt should be redacted if published | READY |
-| A-4 | `REQUERIMIENTO_URGENTE_MF_DANO_PATRIMONIAL_EXTRACONCURSAL_02AGO2026.pdf` | 02/08/2026 | exact attachment registered under A-3 | identified by official receipt and SHA-512 | not yet fixed as exact local/native file in this audit | **CRITICAL GAP: obtain exact registered bytes** |
-| A-5 | `REQUERIMIENTO_URGENTE_MF_EXTRACONCURSAL_31JUL2026_FINAL_FIRMADO.pdf` | 31/07/2026 | signed source master; structured scope and factual chronology | located in Drive | private source; propositions may be cited in controlled derivative | READY AS RELATED SOURCE, but do not call byte-identical to A-4 yet |
+| A-4 | `REQUERIMIENTO_URGENTE_MF_DANO_PATRIMONIAL_EXTRACONCURSAL_02AGO2026.pdf` | 02/08/2026 | exact attachment registered under A-3 | receipt fixes filename and SHA-512; the digest matches the located A-5 binary | private source; propositions may be cited only through controlled derivatives | **VERIFIED BY SHA-512 IDENTITY WITH A-5 — 31 AUG 2026** |
+| A-5 | `REQUERIMIENTO_URGENTE_MF_EXTRACONCURSAL_31JUL2026_FINAL_FIRMADO.pdf` | 31/07/2026 | signed source master; structured scope and factual chronology | located in Drive; SHA-512 recomputed | private source; propositions may be cited in controlled derivative | READY; byte-identical to A-4 by exact receipt/master SHA-512 match |
 | A-6 | `Informe_Longform_Fiscalia_Las_Palmas_Canarias_2018_31JUL2026_v2.pdf` | 31/07/2026 | deeper Fiscalía chronology / prior-knowledge synthesis | located in Drive | assess/redact before any publication | SUPPORTING; verify propositions used |
 | A-7 | controlled Spanish transcription of A-1 | 29/08/2026 derivative | searchable source-to-text control | repository | public | READY |
 | A-8 | controlled English translation of A-1 | 29/08/2026 derivative | bilingual review and website use | repository | public | READY |
@@ -52,22 +52,23 @@ The present review does not rely on rewriting the entire 2012–2026 history. It
 
 ### CRITICAL
 
-1. **Exact registered attachment bytes (A-4).** The official receipt identifies the filename and SHA-512, but this audit has not yet fixed the exact registered binary. Obtain it and verify its SHA-512 against the receipt.
-2. **Legally effective notification date.** Current evidence is the 26 August notification email. Preserve full headers and confirm whether that email constituted legally effective notification for deadline purposes.
-3. **Review-route election.** Reposición and direct merits contentious review are alternatives at this stage; counsel must choose before filing.
+1. **Legally effective notification date.** Current evidence is the 26 August notification email. Preserve full headers and confirm whether that email constituted legally effective notification for deadline purposes.
+2. **Review-route election.** Reposición and direct merits contentious review are alternatives at this stage; counsel must choose before filing.
+
+**Closed 31 August:** exact registered attachment identity (A-4/A-5), by exact SHA-512 match to the digest printed on the receipt.
 
 ### HIGH
 
-4. **Complete E.G. 745/2026 file/index.** Request the index, documents considered, internal routing and any remissions.
-5. **Email-versus-REG-AGE source path.** The Decree describes an email received on 3 August while the matching request is fixed by the 2 August REG-AGE receipt. Obtain the internal routing/remission evidence explaining the path into Inspección.
-6. **Native/verifiable Decree.** Request the original electronically signed/searchable document or signature-verification data.
-7. **DP 1901/2026 corpus.** Obtain report author, reparto, review/visado, exact source corpus and what was transmitted to the court.
+3. **Complete E.G. 745/2026 file/index.** Request the index, documents considered, internal routing and any remissions.
+4. **Email-versus-REG-AGE source path.** The Decree describes an email received on 3 August while the matching request is fixed by the 2 August REG-AGE receipt. Obtain the internal routing/remission evidence explaining the path into Inspección.
+5. **Native/verifiable Decree.** Request the original electronically signed/searchable document or signature-verification data.
+6. **DP 1901/2026 corpus.** Obtain report author, reparto, review/visado, exact source corpus and what was transmitted to the court.
 
 ### MEDIUM
 
-8. Verify the full source inventory behind the July 31 long-form report before relying on its historical assertions.
-9. Reconcile every prior Fiscalía registration cited in the signed source against its individual REG-AGE receipt.
-10. Establish whether any preservation or referral action has already been taken and obtain written confirmation.
+7. Verify the full source inventory behind the July 31 long-form report before relying on its historical assertions.
+8. Reconcile every prior Fiscalía registration cited in the signed source against its individual REG-AGE receipt.
+9. Establish whether any preservation or referral action has already been taken and obtain written confirmation.
 
 ## F. Filing rule
 
