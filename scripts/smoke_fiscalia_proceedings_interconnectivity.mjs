@@ -37,7 +37,7 @@ try {
     if (!(await detail.innerText()).includes(route.gap)) fail(`${route.lang}: next-source gap is not visible`);
     if (await detail.locator('[data-event-id]').count() < 1) fail(`${route.lang}: linked event chronology is empty`);
 
-    await page.evaluate(() => { location.hash = '#file=TF-FIS-009'; });
+    await page.locator('[data-mf-files] [data-file="TF-FIS-009"]').click();
     await page.waitForSelector('[data-mf-files] [data-file="TF-FIS-009"][aria-current="true"]');
     if (!(await detail.innerText()).includes(route.unresolved)) fail(`${route.lang}: unresolved identity state is hidden`);
     if (!(await detail.innerText()).includes(route.gap)) fail(`${route.lang}: unresolved source gate is hidden`);

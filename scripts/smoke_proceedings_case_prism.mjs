@@ -606,9 +606,9 @@ try {
   const coverage = interlinks.coverage || {};
   const requiredCoverage = {
     public_exact_proceeding_count: 97,
-    case_prism_exact_proceeding_covered_count: 26,
-    case_prism_exact_proceeding_uncovered_count: 71,
-    decision_dependency_exact_coverage: 'GAP_26_OF_97',
+    case_prism_exact_proceeding_covered_count: 43,
+    case_prism_exact_proceeding_uncovered_count: 54,
+    decision_dependency_exact_coverage: 'GAP_43_OF_97',
     exact_file_decision_dependency_actionability_count: 97,
     exact_file_decision_dependency_actionability_coverage: 'VERIFIED_97_OF_97',
     exact_proceeding_full_finite_test_count: 97,
