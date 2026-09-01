@@ -1,16 +1,39 @@
 # Active workspace continuity index
 
-**Current workspace:** `PD-WS-20260901-0005`
-**Current continuation pointer:** `PD-WCH-20260901-DP748-P0-001`
-**Status:** `DELETION_SAFE_WITH_OPEN_WORK`
+**Current workspace:** `PD-WS-20260901-0001`  
+**Current continuation pointer:** `PD-WCH-20260901-AMHP-3P-002`  
+**Status:** `DELETION_SAFE_CHECKPOINT_WITH_OPEN_IDENTITY_AND_PUBLICATION_WORK`
 
-**Implementation state:** DP 748/2026 P0 appeal/reopening package was reconciled against `main` `b0958077b71130fe808acaf1cc006185b6aa43fa`, passed 35/35 exact-head checks, merged through PR #1332 at `cc3d0985ae014282e8a1f7805e0193d15e673177`, deployed by Pages run `33547241129`, and core live JSON bytes matched source 3/3. It inherits the PR #1326 La Laguna identities at `273bb621de7db5473b1223fdbc080f9c733dd038`. Its provisional `0004` workspace ID was renumbered to `0005` because PR #1328 canonically occupied `0004` first. Governed lifecycle and the bounded post-deployment validator closeout are recorded in the detailed handoff.
-**Topic:** DP 748/2026 appeal, reopening and ETJ 163/2020 source mastery
+**Current checkpoint:** the Acosta Matos / Canarian Hospitality hotel-platform media workspace has been advanced to preserve the three-professional caricature work, exact portrait-file hashes, Borja/Eduardo/Enrique identity gaps, Grant Thornton / San Telmo-RSM / RICPE Gmail findings, the proposed `Caricatura y contraste documental` page, a source-controlled LinkedIn draft and the explicit **NO IMAGE GENERATION** hold for the checkpointing turn. The inspected baseline was `main` `0f523d86853730e242d8212e98250c01ee6013db`; a successor must re-fetch current `main` before allocating IDs or making changes.
+
 **Pointer semantics:** most recently checkpointed/default workspace; **not exclusive** and not a lock over concurrent workspaces.
 
 A ChatGPT thread is a temporary working surface. A `PD-WS-*` workspace is the durable continuity object. More than one substantive workspace may be active or preserved at the same time.
 
 ## Active and recently preserved workspaces
+
+### `PD-WS-20260901-0001` — Acosta Matos / Canarian Hospitality hotel-platform media package — current checkpoint
+
+Read in this order:
+
+1. `archive/handoffs/2026-09-01-amph-three-professionals-portrait-email-checkpoint.md`
+2. `archive/handoffs/2026-09-01-amph-three-professionals-portrait-email-checkpoint.json`
+3. `data/amph-three-professionals-identity-and-firm-reconciliation-20260901.json`
+4. `data/pd-dma-three-professionals-portrait-source-register-20260901.json`
+5. prior package handoff `archive/handoffs/2026-09-01-acosta-matos-hotel-platform-digital-media-workspace-handoff.md`
+6. current CAEPR / PD-DMA / satire / visual-priority controls named by those records.
+
+Current critical state:
+
+- **do not generate a new image until the user explicitly lifts the hold in the continuing thread**;
+- Francisco de Borja Rodríguez-Batllori Laffitte is `PD-SP-P-0010` but the inspected master record still required explicit `CARET_CONFIRMED` promotion;
+- Eduardo Sánchez Iglesias and Enrique Guerra Suárez are source-resolved CAEPR admission candidates; any provisional next IDs must be rechecked against current `main` before admission;
+- the three uploaded portrait source files are exact-byte hash locked under PD-DMA portrait carets; those are media-file identities, not person carets;
+- no Borja portrait was located on his current dedicated website page/repository search, so the uploaded portrait is the controlled source candidate;
+- direct Borja–Enrique Guerra relationship remains **NOT ESTABLISHED** in the controlled repository state;
+- current public-page working name is **Caricatura y contraste documental** / **Caricature & documentary contrast**; routes are planned, not created;
+- LinkedIn copy is prepared in the checkpoint but not externally posted;
+- no email or other external contact was sent by the checkpoint.
 
 ### `PD-WS-20260901-0005` — DP 748/2026 appeal/reopening
 
@@ -47,14 +70,18 @@ Read:
 1. `archive/handoffs/2026-09-01-authority-discovery-redsara-workspace-handoff.md`
 2. the canonical authority-discovery controls named there.
 
-### `PD-WS-20260901-0001` — Acosta Matos / Canarian Hospitality hotel-platform media package
-
-Read:
-
-1. `archive/handoffs/2026-09-01-acosta-matos-hotel-platform-digital-media-workspace-handoff.md`
-2. the canonical digital-media, satire and platform controls named there.
-
 The machine authority for the complete list and exact state is `data/workspace-register-v1.json`.
+
+## Continuity-event action-ledger rule
+
+Every substantive checkpoint/handoff must now apply:
+
+- `.github/governance/CONTINUITY_EVENT_REPOSITORY_DIGEST_ACTION_CHECKLIST_01SEP2026.md`
+- `ops/CONTINUITY_EVENT_REPOSITORY_DIGEST_ACTION_CHECKLIST_V1.json`
+
+The action ledger must enumerate repository/GitHub digest actions, connected-source scans, `^` registration/identity actions, interlinks, chronology/proceedings checks, publication/live checks, completed actions, open actions, do-not-infer boundaries and the successor bootstrap.
+
+This strengthens, rather than replaces, the broader CAEPR `^` protocol.
 
 ## Workspace selection rule for a new thread
 
@@ -68,10 +95,12 @@ A branch-local sequential ID is provisional. Before merge, re-read current `data
 
 ## Current private-vault boundary
 
-For `PD-WS-20260901-0003`, the owner-only/not-shared Google Drive vault structure and current validated private seed snapshot were re-read on 1 September 2026 under the aliases recorded in the handoff. The current seed is the canonical `0003` revision; the earlier public fingerprint is preserved as a superseded intermediate snapshot in the detailed handoff. Exact private locators are intentionally withheld from public Git. The Python runtime is not yet connected to that Drive folder as a live filesystem/API event sink, and no real historical ChatGPT export has been imported.
+For `PD-WS-20260901-0003`, the owner-only/not-shared Google Drive vault structure and current validated private seed snapshot remain under the aliases recorded in its handoff. Exact private locators are intentionally withheld from public Git. The Python runtime is not yet connected to that Drive folder as a live filesystem/API event sink, and no real historical ChatGPT export has been imported.
+
+For `PD-WS-20260901-0001`, the three current portrait binaries are not falsely represented as public-Git binary mirrors. Their exact hashes, byte sizes, dimensions, provenance and intended interlinks are preserved in the specialist source register. Raw Gmail content is summarized source-safely in the handoff; it is not copied wholesale into the public repository.
 
 ## New-thread bootstrap
 
-> Continue from repository continuity state, not prior chat memory. Read `CURRENT_WORKSPACE_HANDOFF.md`, select the correct `PD-WS-*` workspace by my explicit ID or substantive topic, then read its detailed handoff and named canonical controls. Reconcile current `main`, preserve all evidence/publication/privacy boundaries, and continue only from recorded open work plus my new instruction. Persist material state during the work under `PD-AWP-001`; reconcile concurrent IDs under `PD-CWR-001`.
+> Continue `PD-WS-20260901-0001` from repository continuity state, not prior chat memory. Read `CURRENT_WORKSPACE_HANDOFF.md`, then `archive/handoffs/2026-09-01-amph-three-professionals-portrait-email-checkpoint.md` and its machine companion, then the identity reconciliation and portrait register. Re-fetch current `main` before allocating IDs or changing anything. Apply `PD-CONT-DIGEST-001` and the CAEPR `^` protocol. First close the Borja/Eduardo/Enrique and exact-firm identity gaps and update portrait interlinks; then scan repository/GitHub plus authorised Gmail/Drive for Grant Thornton, San Telmo/RSM and RICPE mandates, clients, investor introductions, DD, conflicts and control decisions. Preserve direct Borja–Enrique as NOT ESTABLISHED. Do not generate the new image until I explicitly lift the no-image hold. When lifted, create a new PD-DMA derivative closer to visual concepts 1 and 2, build the bilingual `Caricatura y contraste documental` page and finalize the LinkedIn post from verified source/live state. Maximum pressure means maximum documentary specificity and accountability, not unsupported guilt by association.
 
 Older topic-specific deletion audits and handoffs remain historical controls. Updating the most-recent/default pointer does not invalidate or hide them.
