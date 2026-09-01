@@ -1,0 +1,47 @@
+{
+  "schema": "por-derecho.matter-identity-registry.part.v1",
+  "registry_id": "PD-SP-IDENTITY-REGISTRY-001",
+  "type": "ORGANISATION",
+  "control_date": "2026-09-01",
+  "records": [
+    {
+      "id": "PD-SP-O-0084",
+      "type": "ORGANISATION",
+      "name": "San Telmo Abogados y Economistas, S.L.P.",
+      "aliases": ["SanTelmo Abogados y Economistas", "San Telmo Abogados", "SanTelmo"],
+      "identity_resolution": "CARET_CONFIRMED",
+      "identity_sources": [
+        "BORME corporate record for SAN TELMO ABOGADOS Y ECONOMISTAS, SOCIEDAD LIMITADA PROFESIONAL, R.M. Las Palmas",
+        "Repository-controlled 30-Nov-2021 San Telmo / RICPE #UnCaféenSanTelmo source package"
+      ],
+      "capacity_boundary": "Exact legal-person identity only. Historic professional roles, clients, mandates, later RSM integration, knowledge, information transfer, coordination, intent, wrongdoing and liability are separate source-specific questions."
+    },
+    {
+      "id": "PD-SP-O-0085",
+      "type": "ORGANISATION",
+      "name": "RSM Spain Asesores Legales y Tributarios, S.L.P.",
+      "aliases": ["RSM Tax&Legal", "RSM Spain Legal & Tax"],
+      "identity_resolution": "CARET_CONFIRMED",
+      "tax_identifier": "B61900551",
+      "registry_sheet": "B 201052",
+      "identity_sources": [
+        "RSM Spain official legal notice identifying RSM Spain Asesores Legales y Tributarios, S.L.P., NIF B61900551, hoja B201052",
+        "BORME-A-2026-99-08 entry 252474 recording Eduardo Sánchez Iglesias among the professional partners / socios profesionales incorporated in the entity"
+      ],
+      "capacity_boundary": "Exact legal-person identity only. The broader RSM Spain professional perimeter remains a multi-entity network. This identity does not by itself establish the contracting entity for every San Telmo legacy matter, a Sun Park mandate, knowledge transfer, coordination, intent, wrongdoing or liability."
+    },
+    {
+      "id": "PD-SP-O-0086",
+      "type": "ORGANISATION",
+      "name": "Grant Thornton Canarias, S.L.",
+      "aliases": ["Grant Thornton Canarias"],
+      "identity_resolution": "CARET_CONFIRMED",
+      "registry_sheet": "GC 59943",
+      "identity_sources": [
+        "Grant Thornton Informe de Transparencia 2025 identifying Grant Thornton Canarias, S.L. and its business purpose/group relationship",
+        "BORME-A-2026-81-35 entries 207261-207262 for Grant Thornton Canarias, Sociedad Limitada, hoja GC 59943"
+      ],
+      "capacity_boundary": "Exact current Canary legal-person identity only. It does not establish that Francisco de Borja Rodríguez-Batllori Laffitte was employed by, a partner of, or represented by this entity. The March-April 2018 Grant Thornton correspondence must be read by exact sender, client and mandate; firm proximity does not transfer knowledge or responsibility."
+    }
+  ]
+}
