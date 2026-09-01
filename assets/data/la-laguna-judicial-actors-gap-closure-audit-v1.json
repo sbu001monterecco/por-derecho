@@ -1,0 +1,85 @@
+{
+  "schema": "por-derecho.la-laguna-judicial-actors-gap-closure-audit.v1",
+  "as_of": "2026-09-01",
+  "status": "REGISTER_DENOMINATOR_CLOSED_SOURCE_GAPS_EXPLICIT",
+  "scope": "La Laguna judge/magistrate and LAJ identity closure for DP 748/2026, Cambiario 1048/2019, ETJ 163/2020, PO 344/2013 and the unverified TF-APP-004 appeal/review placeholder, with Arrecife/Yaiza cooperation actors kept separate.",
+  "controls": {
+    "canonical_interlink": "assets/data/la-laguna-judicial-actors-canonical-interlink-control-v1.json",
+    "people_shard": "assets/data/matter-identity-registry-v1.la-laguna-judicial-people.json",
+    "institution_shard": "assets/data/matter-identity-registry-v1.la-laguna-judicial-institutions.json",
+    "dp748_interlink": "assets/data/dp748-2026-canonical-interlink-control-v1.json"
+  },
+  "closure_states": {
+    "source_identifiable_actor_denominator": "CLOSED_FOR_PRESENTLY_RECOVERED_PRIMARY_SOURCE_CORPUS",
+    "canonical_id_assignment": "CLOSED_FOR_SOURCE_IDENTIFIED_ACTORS",
+    "act_date_capacity_binding": "CLOSED_FOR_SOURCE_IDENTIFIED_ACTORS",
+    "auxiliary_jurisdiction_separation": "CLOSED",
+    "public_bilingual_surface": "CLOSED_BY_THIS_RELEASE",
+    "certified_complete_historical_court_denominator": "NOT_CLAIMED"
+  },
+  "search_pass": {
+    "controlled_primary_sources": [
+      "Recovered 83-page image-based court copy for Cambiario 1048/2019 and linked cooperation acts",
+      "Isolated signed/electronically signed Cambiario 1048/2019 and ETJ 163/2020 acts from 2024-2026",
+      "DP 748/2026 signed/electronic court acts and LexNET filing/notification controls",
+      "PO 344/2013 / Sentencia 41/2014 controlled judgment source"
+    ],
+    "connected_source_discovery": [
+      "Authorised Gmail source search by proceeding number, NIG, act number/date and procedural terms",
+      "Authorised Google Drive source search by proceeding number, NIG, act number/date and procedural terms"
+    ],
+    "official_public_index_search": [
+      "Targeted Poder Judicial / BOE indexed searches for the exact proceeding, NIG and judgment/act references"
+    ],
+    "boundary": "A completed finite search pass is not proof that a missing source does not exist. An actor is promoted only from a source sufficient to identify that person in the exact act/capacity relied on."
+  },
+  "gaps": [
+    {
+      "gap_id": "LL-JUD-GAP-001",
+      "priority": "P0",
+      "proceeding": "DP 748/2026",
+      "question": "Who signed the 24-Mar-2026 Auto 454/2026 provisionally dismissing/archiving DP 748/2026?",
+      "verified_minimum": [
+        "Later primary procedural material verifies the existence, date, number and provisional-dismissal effect of Auto 454/2026.",
+        "The 17-Apr-2026 reform + subsidiary appeal is source-verified as directed against that Auto.",
+        "The later notification/delivery lineage has been located sufficiently to verify that the order was communicated, without identifying its judicial signer."
+      ],
+      "not_proved": "The signed/authenticated original of Auto 454/2026 identifying the judicial signatory has not been located in the presently recovered corpus. Graciela Pérez-Valencia Díaz is not attributed to that act merely because she signs later DP 748/2026 acts.",
+      "search_state": "FINITE_SEARCH_PASS_COMPLETE_EVIDENTIARY_GAP_OPEN",
+      "closure_trigger": "Signed or authenticated electronic original of Auto 454/2026, or an equivalent primary court source that expressly identifies the judicial signatory of the 24-Mar-2026 act."
+    },
+    {
+      "gap_id": "LL-JUD-GAP-002",
+      "priority": "P1",
+      "proceeding": "PO 344/2013",
+      "question": "Which LAJ(s) signed or were identified on the material procedural acts in PO 344/2013?",
+      "verified_minimum": [
+        "Sentencia 41/2014 identifies María Mercedes Santana Rodríguez as the deciding judge.",
+        "The judgment records a 21-May-2013 decree admitting the claim and a 27-Jun-2013 diligencia de ordenación convening the preliminary hearing."
+      ],
+      "not_proved": "The presently recovered source does not name the LAJ for those acts or establish a proceeding-wide LAJ identity.",
+      "search_state": "FINITE_SEARCH_PASS_COMPLETE_EVIDENTIARY_GAP_OPEN",
+      "closure_trigger": "Certified/primary signed 21-May-2013 decree, 27-Jun-2013 diligencia, authenticated docket, or another primary PO 344/2013 act naming the relevant LAJ for the act and period."
+    },
+    {
+      "gap_id": "LL-JUD-GAP-003",
+      "priority": "P0",
+      "proceeding": "TF-APP-004 / DP 748/2026 appeal-review lane",
+      "question": "Has the subsidiary appeal been admitted/transmitted and, if so, which appellate organ, roll, judges/panel and LAJ are source-verified?",
+      "verified_minimum": [
+        "The 17-Apr-2026 filing expressly contains a subsidiary appeal.",
+        "The 16-Jul-2026 order states that it is not final and records an appeal route.",
+        "The 16-Jul order was communicated through the located 1-Sep-2026 LexNET lane."
+      ],
+      "not_proved": "No primary admission, transmission, appellate-roll or equivalent appellate source has been located in the reviewed corpus as of this audit. No Audiencia organ, panel, judge or LAJ is therefore populated.",
+      "search_state": "FINITE_SEARCH_PASS_COMPLETE_DEADLINE_SENSITIVE_EVIDENTIARY_GAP_OPEN",
+      "closure_trigger": "Primary court or Audiencia source identifying admission/transmission, appellate roll or equivalent processing and, separately, any named appellate judge/panel/LAJ."
+    }
+  ],
+  "next_source_requests": [
+    "Recover/authenticate the signed 24-Mar-2026 Auto 454/2026 from the court/LexNET source set.",
+    "Obtain the original/certified 21-May-2013 decree and 27-Jun-2013 diligencia or complete PO 344/2013 court file.",
+    "Check the DP 748/2026 court/LexNET lane for subsidiary-appeal admission, transmission and any Audiencia roll generated after the 1-Sep-2026 notification."
+  ],
+  "liability_boundary": "Identity registration and gap closure status establish source linkage only. They do not establish wrongdoing, intent, liability, agreement with a party or merits treatment."
+}
