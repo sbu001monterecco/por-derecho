@@ -3,13 +3,13 @@
   "register_id": "PD-DMA-PORTRAIT-SOURCES-20260901-001",
   "control_date": "2026-09-01",
   "family_id": "PD-DMA-FAM-AMHP-001",
-  "status": "HASH_LOCKED_SOURCE_PORTRAITS_REPOSITORY_BINARY_MIRROR_OPEN",
+  "status": "CARET_HASH_LOCKED_AND_CAEPR_INTERLINKED_REPOSITORY_BINARY_MIRROR_OPEN",
   "governance": [
     ".github/governance/DIGITAL_MEDIA_ASSET_CARET_IDENTITY_STANDARD_01SEP2026.md",
     ".github/governance/SATIRE_CARICATURE_SPOOF_PUBLICATION_STANDARD_ES_EN.md",
     ".github/governance/CAEPR_CARET_IDENTITY_AND_ALL_IS_VERIFICATION_PROTOCOL_26AUG2026.md"
   ],
-  "caret_boundary": "The terminal caret on PD-DMA portrait references verifies exact source-file byte identity only. It is not a CAEPR person caret, facial-identification result, endorsement, role finding, publication right or finding of conduct. Person identity must be separately established from documentary sources.",
+  "caret_boundary": "The terminal caret on PD-DMA portrait references verifies exact source-file byte identity only. It is not a CAEPR person caret, facial-identification result, endorsement, role finding, publication right or finding of conduct. Person identity is separately established from documentary sources.",
   "source_files": [
     {
       "reference": "PD-DMA-AMHP-PORTRAIT-0001^",
@@ -21,17 +21,22 @@
       "sha256": "a46afb994e6fa0fb309d43fff45b72923a75db39680abc01e10a0c13a52af7d6",
       "provenance": "User-supplied portrait in the 1-Sep-2026 hotel-platform workspace; filename/user context associates the file with Eduardo Sánchez. No facial-recognition inference is used.",
       "intended_person_name": "Eduardo Sánchez Iglesias",
+      "caepr_id": "PD-SP-P-0161",
+      "caepr_state": "CARET_CONFIRMED",
       "documentary_identity_sources": [
         "Controlled 30-Nov-2021 San Telmo / RICPE event transcript and repository correction chain (PRs #505, #506, #552, #557, #744)",
-        "RSM Spain public professional announcement naming Eduardo Sánchez Iglesias in the SanTelmo integration"
+        "RSM Spain public professional announcement naming Eduardo Sánchez Iglesias in the SanTelmo integration",
+        "BORME-A-2026-99-08 partner record for RSM Spain Asesores Legales y Tributarios, S.L.P."
       ],
-      "caepr_state_at_checkpoint": "PERSON_ID_ADMISSION_REQUIRED_BEFORE_NAME_CARET",
+      "firm_interlinks": ["PD-SP-O-0084", "PD-SP-O-0085"],
       "repository_binary_mirror": false,
-      "repository_binary_mirror_gap": "Exact uploaded binary is hash-locked in this register but is not represented as committed to the public repository.",
+      "repository_binary_mirror_gap": "Exact uploaded binary is hash-locked in this register but is not represented as committed to the public repository because the current GitHub text-write channel does not accept the binary directly.",
       "interlink_targets": [
+        "PD-SP-P-0161",
         "PD-DMA-FAM-AMHP-001",
         "San Telmo / RICPE 30-Nov-2021 evidence family",
-        "RSM Spain professional perimeter (PD-SP-O-0044)",
+        "PD-SP-O-0084",
+        "PD-SP-O-0085",
         "future caricature/documentary-contrast page"
       ]
     },
@@ -46,20 +51,24 @@
       "provenance": "User-supplied portrait in the 1-Sep-2026 hotel-platform workspace; filename/user context associates the file with Francisco de Borja Rodríguez-Batllori Laffitte. No facial-recognition inference is used.",
       "intended_person_name": "Francisco de Borja Rodríguez-Batllori Laffitte",
       "caepr_id": "PD-SP-P-0010",
+      "caepr_state": "CARET_CONFIRMED_VIA_RESOLUTION_OVERLAY_PD-SP-ID-RES-AMHP-3P-20260901",
       "documentary_identity_sources": [
         "BOE-B-2012-22189 — 6-Jun-2012 Concurso 36/2012 appointment",
         "BORME-A-2012-198-35 — Concurso 36/2012 entry",
         "controlled primary Concurso 36/2012 appointment record"
       ],
-      "caepr_state_at_checkpoint": "REGISTERED_IDENTITY_SOURCE_STRONG_MASTER_RECORD_STILL_LACKED_CARET_CONFIRMED_FIELD",
-      "website_portrait_search": "NOT_LOCATED_ON_CURRENT_DEDICATED_PAGE_OR_REPOSITORY_SEARCH_AT_2026-09-01_CHECKPOINT",
+      "website_portrait_search": "NO_REPOSITORY_HOSTED_PORTRAIT_LOCATED_ON_CURRENT_DEDICATED_PAGE_OR_FINITE_REPOSITORY_SEARCH; USER-SUPPLIED SOURCE USED INSTEAD",
       "website_route": "/es/francisco-de-borja-rodriguez-batllori-laffitte/",
+      "historical_professional_interlink": "PD-SP-O-0084",
+      "grant_thornton_affiliation_state": "NOT_ESTABLISHED_AS_EMPLOYMENT_OR_PARTNERSHIP; DO_NOT LABEL BORJA AS GRANT THORNTON WITHOUT A SEPARATE DATED SOURCE",
       "repository_binary_mirror": false,
-      "repository_binary_mirror_gap": "Exact uploaded binary is hash-locked in this register but is not represented as committed to the public repository.",
+      "repository_binary_mirror_gap": "Exact uploaded binary is hash-locked in this register but is not represented as committed to the public repository because the current GitHub text-write channel does not accept the binary directly.",
       "interlink_targets": [
         "PD-SP-P-0010",
         "Concurso 36/2012",
+        "PD-SP-O-0084",
         "San Telmo historical correspondence lane",
+        "Grant Thornton 2018 correspondence lane — relationship/mandate only, not Borja employment",
         "future caricature/documentary-contrast page"
       ]
     },
@@ -73,15 +82,18 @@
       "sha256": "55d524b046a39323b304fb7349ac6d29c8d4eb34ed2c8e8ed3a70819d4ad3772",
       "provenance": "User-supplied portrait in the 1-Sep-2026 hotel-platform workspace; filename/user context associates the file with Enrique Guerra. No facial-recognition inference is used.",
       "intended_person_name": "Enrique Guerra Suárez",
+      "caepr_id": "PD-SP-P-0162",
+      "caepr_state": "CARET_CONFIRMED",
       "documentary_identity_sources": [
         "RICPE certification dated 20-Jul-2021 / controlled attachment family",
         "RICPE public professional materials naming Enrique Guerra Suárez",
         "Controlled 30-Nov-2021 San Telmo / RICPE event and repository reconciliation (PRs #505, #506, #552, #744)"
       ],
-      "caepr_state_at_checkpoint": "PERSON_ID_ADMISSION_REQUIRED_BEFORE_NAME_CARET",
+      "firm_interlink": "PD-SP-O-0020",
       "repository_binary_mirror": false,
-      "repository_binary_mirror_gap": "Exact uploaded binary is hash-locked in this register but is not represented as committed to the public repository.",
+      "repository_binary_mirror_gap": "Exact uploaded binary is hash-locked in this register but is not represented as committed to the public repository because the current GitHub text-write channel does not accept the binary directly.",
       "interlink_targets": [
+        "PD-SP-P-0162",
         "RIC Private Equity Investment Partners SCR, S.A. (PD-SP-O-0020)",
         "RICPE certification 20-Jul-2021",
         "San Telmo / RICPE 30-Nov-2021 evidence family",
@@ -89,6 +101,7 @@
       ]
     }
   ],
-  "publication_rule": "Before any portrait is displayed in a new public graphic/page, resolve the intended person through CAEPR, verify the exact source/right/provenance boundary, assign the resulting derivative its own PD-DMA exact-file identity and preserve the visible satire/non-advertisement disclosure. A source portrait is not itself a publication derivative.",
-  "relationship_boundary": "A portrait placed beside a firm, event or financial role does not prove employment on every date, coordination, mandate, financing, knowledge, wrongdoing or shared responsibility. Every role/date edge must be separately sourced."
+  "publication_rule": "Before any portrait is displayed in a new public graphic/page, verify the exact source/right/provenance boundary, assign any edited/cropped publication derivative its own PD-DMA exact-file identity and preserve the visible satire/non-advertisement disclosure. A source portrait caret does not make an edited derivative the same file.",
+  "relationship_boundary": "A portrait placed beside a firm, event or financial role does not prove employment on every date, coordination, mandate, financing, knowledge, wrongdoing or shared responsibility. Every role/date edge must be separately sourced.",
+  "all_is_caret_scope": "For the three source portrait files and their intended person identities, the exact byte identities and person-ID interlinks are now controlled. Broad professional brands/perimeters remain distinct from exact legal persons."
 }
