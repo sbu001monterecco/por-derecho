@@ -1,0 +1,92 @@
+{
+  "schema": "por-derecho.workspace-handoff.v1",
+  "handoff_id": "PD-WCH-20260901-AMHP-3P-002",
+  "workspace_id": "PD-WS-20260901-0001",
+  "date": "2026-09-01",
+  "status": "DELETION_SAFE_CHECKPOINT_WITH_OPEN_IDENTITY_AND_PUBLICATION_WORK",
+  "baseline_main_sha": "0f523d86853730e242d8212e98250c01ee6013db",
+  "no_image_generation_hold": true,
+  "objective": "Preserve and continue the three-professional hotel-platform caricature work with exact portrait-file identity, CAEPR/firms reconciliation, Gmail source reconstruction, high-pressure documentary questions, a non-satire-named public page plan and final LinkedIn preparation.",
+  "controls": [
+    ".github/governance/CONTINUITY_EVENT_REPOSITORY_DIGEST_ACTION_CHECKLIST_01SEP2026.md",
+    ".github/governance/CAEPR_CARET_IDENTITY_AND_ALL_IS_VERIFICATION_PROTOCOL_26AUG2026.md",
+    ".github/governance/SATIRE_CARICATURE_SPOOF_PUBLICATION_STANDARD_ES_EN.md",
+    ".github/governance/DIGITAL_MEDIA_ASSET_CARET_IDENTITY_STANDARD_01SEP2026.md",
+    "data/pd-dma-amph-visual-priority-20260901.json"
+  ],
+  "portrait_register": "data/pd-dma-three-professionals-portrait-source-register-20260901.json",
+  "identity_reconciliation": "data/amph-three-professionals-identity-and-firm-reconciliation-20260901.json",
+  "human_handoff": "archive/handoffs/2026-09-01-amph-three-professionals-portrait-email-checkpoint.md",
+  "people_state": {
+    "Francisco de Borja Rodríguez-Batllori Laffitte": {
+      "caepr_id": "PD-SP-P-0010",
+      "state": "REGISTERED_MASTER_CARET_PROMOTION_OPEN"
+    },
+    "Eduardo Sánchez Iglesias": {
+      "provisional_id": "PD-SP-P-0161",
+      "state": "SOURCE_RESOLVED_MASTER_ADMISSION_OPEN"
+    },
+    "Enrique Guerra Suárez": {
+      "provisional_id": "PD-SP-P-0162",
+      "state": "SOURCE_RESOLVED_MASTER_ADMISSION_OPEN"
+    }
+  },
+  "portrait_sources": [
+    {
+      "reference": "PD-DMA-AMHP-PORTRAIT-0001^",
+      "sha256": "a46afb994e6fa0fb309d43fff45b72923a75db39680abc01e10a0c13a52af7d6",
+      "bytes": 27594,
+      "mirror": false
+    },
+    {
+      "reference": "PD-DMA-AMHP-PORTRAIT-0002^",
+      "sha256": "2fb1a49d1ed2011f390e44daa7770c18b31459bd25acc7b204b72eb315fba743",
+      "bytes": 7906,
+      "mirror": false
+    },
+    {
+      "reference": "PD-DMA-AMHP-PORTRAIT-0003^",
+      "sha256": "55d524b046a39323b304fb7349ac6d29c8d4eb34ed2c8e8ed3a70819d4ad3772",
+      "bytes": 21624,
+      "mirror": false
+    }
+  ],
+  "gmail_findings": {
+    "ricpe_direct_notice": "27-Aug-2026 sent message to info@ric.capital, relacioninversores@ric.capital and direcciongeneral@ric.capital; dpo@ric.capital CC produced a forwarding undeliverable. No inference of reading/agreement.",
+    "santelmo_rsm": "Controlled 30-Nov-2021 event and later institutional correspondence; Eduardo statement attribution and Enrique guest role remain separate; Sun Park-specific client allocation open.",
+    "borja_grant_thornton": "21-Apr-2016 email from brbatllori@despachosantelmo.com located. 22-Aug-2026 sent correspondence addressed in CC to Grant Thornton addresses including, in some sends, borja.rodriguez-batllori.ex@es.gt.com. This is not sufficient by itself for a current employment caption."
+  },
+  "public_page_plan": {
+    "es_title": "Caricatura y contraste documental",
+    "es_route": "/es/caricatura-contraste-documental/",
+    "en_title": "Caricature & documentary contrast",
+    "en_route": "/en/caricature-documentary-contrast/",
+    "state": "PLANNED_NOT_CREATED"
+  },
+  "publication_state": {
+    "new_image": "NOT_GENERATED_BY_USER_INSTRUCTION",
+    "new_page": "NOT_CREATED",
+    "linkedin": "DRAFT_PREPARED_NOT_POSTED",
+    "email": "NO_NEW_EMAIL_SENT"
+  },
+  "open_actions": [
+    "Re-fetch main and close CAEPR person identity gaps without ID collision",
+    "Resolve exact legal-person identities for San Telmo/RSM/Grant Thornton where required",
+    "Run canonical denominator/static parity validation after identity changes",
+    "Update portrait interlinks to final CAEPR IDs",
+    "Deep source-production scan for mandates, clients, investor introductions, conflicts, DD and RICPE board/control records",
+    "Generate a new derivative only after user explicitly lifts the no-image hold",
+    "Build bilingual Caricatura y contraste documental routes and verify live state",
+    "Finalize/post LinkedIn only after exact image/page/live verification and explicit external-posting authority"
+  ],
+  "do_not_infer": [
+    "PD-DMA caret equals CAEPR caret",
+    "GitHub existence automatically equals CARET_CONFIRMED",
+    "sent or CC equals read or agreed",
+    "email domain equals timeless employment",
+    "professional integration equals knowledge transfer",
+    "shared poster appearance equals common plan or responsibility",
+    "direct Borja-Enrique Guerra relationship; current controlled state is NOT ESTABLISHED"
+  ],
+  "next_thread_bootstrap": "Continue PD-WS-20260901-0001. Read CURRENT_WORKSPACE_HANDOFF.md, the human checkpoint, identity reconciliation, portrait register, current CAEPR/PD-DMA registers and PD-CONT-DIGEST-001. Re-fetch current main. Close identity/firms gaps, then scan repository/GitHub plus authorised Gmail/Drive for Grant Thornton, San Telmo/RSM and RICPE. Preserve the no-image hold until explicitly lifted."
+}
