@@ -1,0 +1,85 @@
+{
+  "schema": "por-derecho.workspace-handoff.v1",
+  "handoff_id": "PD-WCH-20260901-AWP-RUNTIME-001",
+  "workspace_id": "PD-WS-20260901-0002",
+  "date": "2026-09-01",
+  "status": "HANDOFF_READY_IMPLEMENTATION_PR_PENDING",
+  "repository": "sbu001monterecco/por-derecho",
+  "baseline_sha": "89e84ffd6656a37951565d769f5eee4214661e37",
+  "active_branch": "agent/workspace-persistence-runtime-20260901",
+  "objective": "Implement privacy-separated append-only workspace persistence, private ChatGPT export import, public-summary gating, tests and CI.",
+  "implemented_paths": [
+    "scripts/workspace_persistence.py",
+    "schemas/workspace-event-v1.schema.json",
+    "schemas/workspace-state-v1.schema.json",
+    "schemas/chatgpt-export-import-manifest-v1.schema.json",
+    "tests/test_workspace_persistence.py",
+    ".github/workflows/audit-workspace-persistence.yml",
+    "docs/WORKSPACE_PERSISTENCE_RUNBOOK.md",
+    "examples/workspace-checkpoint.example.json",
+    "ops/AUTOMATIC_WORKSPACE_PERSISTENCE_V1.json"
+  ],
+  "runtime_commands": [
+    "doctor",
+    "init",
+    "append",
+    "checkpoint",
+    "validate",
+    "import-chatgpt",
+    "public-summary",
+    "validate-repository"
+  ],
+  "local_test_state": {
+    "status": "PASS",
+    "tests": 5,
+    "areas": [
+      "init_append_checkpoint_validate",
+      "tamper_detection",
+      "public_summary_gate",
+      "private_chatgpt_export_import",
+      "public_repo_vault_refusal"
+    ]
+  },
+  "private_vault": {
+    "provider": "GOOGLE_DRIVE",
+    "root_alias": "Por Derecho Private Workspaces",
+    "workspace_alias": "PD-WS-20260901-0002 — Automatic Workspace Persistence Runtime",
+    "permission_state_at_creation": "OWNER_ONLY_SHARED_FALSE",
+    "exact_locator_publication": "WITHHELD_FROM_PUBLIC_REPOSITORY",
+    "filesystem_mount_state": "NOT_CONNECTED",
+    "raw_content_state": "EMPTY_FOLDER_STRUCTURE_ONLY",
+    "subfolders": [
+      "01 State and Handoffs",
+      "02 Event Logs",
+      "03 ChatGPT Exports",
+      "04 Artifacts and Attachments",
+      "05 Publication Manifests"
+    ]
+  },
+  "privacy_boundaries": [
+    "RAW_TRANSCRIPTS_PRIVATE_ONLY",
+    "CONNECTED_SOURCE_CONTENT_NOT_AUTO_PUBLISHED",
+    "PUBLIC_SUMMARY_EXPLICIT_APPROVAL_REQUIRED",
+    "PRIVATE_VAULT_REFUSED_INSIDE_PUBLIC_REPO",
+    "DRIVE_LOCATORS_NOT_STORED_PUBLICLY"
+  ],
+  "not_performed": [
+    "HISTORICAL_CHATGPT_EXPORT_REQUEST_OR_IMPORT",
+    "RAW_TRANSCRIPT_UPLOAD",
+    "OPENAI_API_KEY_CREATION_OR_REUSE",
+    "OPENAI_API_WORKBENCH_IMPLEMENTATION",
+    "DRIVE_FILESYSTEM_MOUNT_CONFIGURATION",
+    "EXTERNAL_COMMUNICATION_OR_SOCIAL_PUBLICATION"
+  ],
+  "open_work": [
+    "MERGE_RUNTIME_PR_AND_RECORD_EXACT_SHA",
+    "SELECT_OR_CONNECT_FILESYSTEM_PRIVATE_VAULT",
+    "INITIALISE_REAL_PD_WS_20260901_0002_EVENT_CHAIN",
+    "OPTIONAL_AUTHORISED_CHATGPT_EXPORT_IMPORT",
+    "HISTORICAL_THREAD_CLUSTERING_AND_RECONCILIATION",
+    "CREDENTIAL_GATED_REQUEST_PATH_WORKBENCH",
+    "SCHEDULED_PRIVATE_BACKUP"
+  ],
+  "next_thread_first_action": "Read current pointer and reconcile implementation branch/PR against current main before acting.",
+  "deletion_safety": "HANDOFF_READY_NOT_FINAL_UNTIL_MERGE_CLOSEOUT"
+}
