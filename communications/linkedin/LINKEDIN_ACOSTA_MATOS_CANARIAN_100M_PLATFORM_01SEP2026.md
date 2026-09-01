@@ -1,7 +1,8 @@
 # LinkedIn publication package — Canarian Hospitality “€100m platform” hook
 
 **Control date:** 1 September 2026  
-**Primary asset:** `PD-DMA-20260901-0003-ES^`  
+**Primary Spanish asset:** logical `PD-DMA-0001`; attach exact full-resolution `PD-DMA-0001-PNG^`.  
+**English companion:** logical `PD-DMA-0002`; attach exact full-resolution `PD-DMA-0002-PNG^`.  
 **Website route:** `https://sbu001monterecco.github.io/por-derecho/es/acosta-matos-plataforma-hotelera/`  
 **Status:** prepared draft; not posted by this repository action.
 
@@ -64,7 +65,7 @@ Preguntar es esencial. La imagen es una representación satírica, no publicidad
 
 1. Canarian Hospitality, página “Quiénes somos”: 12 hoteles, 2.500 habitaciones y más de 100 M€ en ventas en 2025.
 2. Cinco Días, 4 de febrero de 2026: declaraciones del CEO sobre 44 M€ en 2024, alrededor de 50 M€ en 2025 y previsión de 60 M€ en 2026.
-3. Registro de identidad digital del activo: `PD-DMA-20260901-0003-ES^`.
+3. Registro digital: activo lógico `PD-DMA-0001`; archivo publicado en web `PD-DMA-0001^`; PNG exacto de difusión `PD-DMA-0001-PNG^`.
 
 La página explica por qué “ventas hoteleras bajo gestión”, “facturación de la gestora”, propiedad, marca, capital y mandato son categorías distintas.
 
@@ -72,7 +73,7 @@ La página explica por qué “ventas hoteleras bajo gestión”, “facturació
 
 Infografía satírica vertical en negro, amarillo, blanco y rojo. El titular dice: “12 hoteles, 2.500 habitaciones, más de 100 millones de euros en ventas hoteleras”. Dos paneles comparan más de 100 millones de euros en ventas de hoteles bajo gestión durante 2025 con la facturación comunicada de la gestora: 44 millones en 2024, alrededor de 50 millones en 2025 y 60 millones previstos en 2026. En el centro aparece “No es lo mismo”. La parte inferior distingue propiedad, gestión, marca, capital, mandato y cobertura mediática, y formula preguntas sin presentar conclusiones.
 
-## Recommended English post for later use
+## Recommended English post
 
 **12 hotels. Approximately 2,500 rooms. More than €100 million in hotel sales in 2025.**
 
@@ -92,15 +93,17 @@ The visual is a satirical/caricature representation. It is not a real advertisem
 
 ## Publication sequencing
 
-1. Use only `PD-DMA-20260901-0003-ES^` for the first post. Do not attach concept versions 1 or 2.
-2. Confirm that the live route resolves before posting.
-3. Upload the full-resolution PNG from the controlled source, not a screenshot or messaging-app recompression.
-4. Paste the Spanish alt text into LinkedIn’s accessibility field.
-5. Put the source links in the first comment if the main post’s reach is prioritised; otherwise retain the dossier link in the body.
-6. Do not tag named professionals or imply endorsement/participation merely because a person, firm or brand appears elsewhere in the perimeter.
-7. Archive the final post URL, timestamp, exact text and uploaded-file hash as a later register event.
+1. For the first Spanish post, attach only `PD-DMA-0001-PNG^` (SHA-256 `3958fcd906b53c43f25f469573734cb3cf6851f6b92e9bf116557a094aa3d881`). Do not attach either legacy concept.
+2. For an English follow-up, use `PD-DMA-0002-PNG^` (SHA-256 `b0616f945d145080ad3053f5e5c08f3f1b7620d10e8ec24547043c895a6e039f`).
+3. `PD-DMA-0003-PNG^` and `PD-DMA-0004-PNG^` are approved corrected alternatives inspired by the earlier first and second visual directions.
+4. Confirm that the live route resolves before posting.
+5. Upload the controlled full-resolution PNG, not a screenshot or messaging-app recompression.
+6. Paste the accessibility alt text into LinkedIn’s accessibility field.
+7. Put source links in the first comment if reach is prioritised; otherwise retain the dossier link in the body.
+8. Do not tag named professionals or imply endorsement/participation merely because a person, firm or brand appears elsewhere in the perimeter.
+9. Archive the final post URL, timestamp, exact text and uploaded-file hash as a later register event.
 
-## Editorial risk checks completed in the copy
+## Editorial risk checks
 
 - Public figures are attributed to their sources.
 - The two financial measures are expressly not added.
