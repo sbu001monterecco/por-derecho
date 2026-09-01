@@ -2,13 +2,22 @@ __pycache__/
 *.py[cod]
 tmp/
 
+# Private workspace vaults and ChatGPT exports — never commit to the public repository.
+.workspace-vault/
+.pd-workspace-vault/
+private-workspaces/
+workspaces-private/
+conversations.json
+*.chatgpt-export.zip
+chatgpt-export*.zip
+
 # ACTA visual-review contact sheets are review derivatives, never publication assets.
 /artifacts/acta-source-contact-sheets/
 
 # Cuatrecasas private working artifacts — never publish from this repository.
-CUATRECASAS_TIMECARD_TRANSCRIPTION_WORKING_*.csv
-CUATRECASAS_DISBURSEMENT_TRANSCRIPTION_WORKING_*.csv
-CUATRECASAS_BILLING_ACCOUNT_AND_EXPLANATION_DRAFT_*.md
+CUATRECAS_TIMECARD_TRANSCRIPTION_WORKING_*.csv
+CUATRECAS_DISBURSEMENT_TRANSCRIPTION_WORKING_*.csv
+CUATRECAS_BILLING_ACCOUNT_AND_EXPLANATION_DRAFT_*.md
 
 # Legal-adviser intake / work product — quarantine outside Git; never publish.
 .private-legal/
