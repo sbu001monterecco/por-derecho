@@ -16,8 +16,10 @@
     "People, organisations, structures, institutions and proceedings never share an ID.",
     "A shared ID resolves identity only; it does not transfer knowledge, intent, control or liability.",
     "New controlled-surface identities require an ID before publication.",
-    "Legal professionals and procuradores belong in the separate Professionals and representatives perimeter; representation does not make them part of the claimant/ownership perimeter or an adverse private party."
+    "Legal professionals and procuradores belong in the separate Professionals and representatives perimeter; representation does not make them part of the claimant/ownership perimeter or an adverse private party.",
+    "For an existing immutable record whose historical typed part lacks an embedded caret state, matter-identity-caret-resolution-v1.json may supply the current presentation-marker resolution without creating a duplicate identity; a later material collision suspends that resolution pending review."
   ],
+  "caret_resolution_register": "matter-identity-caret-resolution-v1.json",
   "coverage": {
     "state": "COMPLETE_FOR_CURRENT_CANONICAL_ACTOR_REGISTER_V2_GRAPH_AND_AUTHORIZED_PROFESSIONAL_CENSUS",
     "archive_backfill": "OPEN",
@@ -61,6 +63,11 @@
       "Ricardo Molina Betancor",
       "Miguel Molina Betancor",
       "Francisco de Borja Rodríguez-Batllori Laffitte",
+      "Eduardo Sánchez Iglesias",
+      "Enrique Luis Guerra Suárez",
+      "San Telmo Abogados y Economistas, S.L.P.",
+      "RSM Spain Asesores Legales y Tributarios, S.L.P.",
+      "Grant Thornton Canarias, S.L.",
       "Carlos Caimi Vicente",
       "Celia Guillén Pérez",
       "Gervasio Manuel González García",
@@ -146,9 +153,9 @@
     ]
   },
   "counts": {
-    "total": 314,
-    "PERSON": 145,
-    "ORGANISATION": 79,
+    "total": 319,
+    "PERSON": 147,
+    "ORGANISATION": 82,
     "STRUCTURE": 11,
     "INSTITUTION": 36,
     "PROCEEDING": 43
@@ -170,6 +177,11 @@
       "count": 1
     },
     {
+      "path": "matter-identity-registry-v1.professional-network-20260901-people.json",
+      "type": "PERSON",
+      "count": 2
+    },
+    {
       "path": "matter-identity-registry-v1.organisations.json",
       "type": "ORGANISATION",
       "count": 72
@@ -178,6 +190,11 @@
       "path": "matter-identity-registry-v1.professional-organisations.json",
       "type": "ORGANISATION",
       "count": 7
+    },
+    {
+      "path": "matter-identity-registry-v1.professional-network-20260901-organisations.json",
+      "type": "ORGANISATION",
+      "count": 3
     },
     {
       "path": "matter-identity-registry-v1.structures.json",
