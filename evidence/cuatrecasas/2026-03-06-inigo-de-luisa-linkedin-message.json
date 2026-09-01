@@ -93,6 +93,48 @@
       "boundary": "No later final resolution has been located in the reviewed record."
     }
   ],
+  "firm_attribution_analysis": {
+    "controlled_classification": "Documented individual statement in a Cuatrecasas professional-engagement context; potentially relevant to partner capacity, firm knowledge and governance, but not presently proved to be an authorised, adopted or ratified Cuatrecasas corporate statement.",
+    "levels": [
+      {
+        "level": "PERSONAL_EXPRESSION",
+        "supported": "The two preserved captures display a first-person statement attributed to Iñigo de Luisa Maíz.",
+        "boundary": "The screenshots alone do not provider-certify authorship or establish deletion, dissemination, retaliation, misconduct or liability."
+      },
+      {
+        "level": "PARTNER_PROFESSIONAL_CONTEXT",
+        "supported": "The statement concerned a complaint arising from a substantial billed professional relationship; earlier correspondence sometimes used the firm's voice, invoked internal rules and addressed advocacy and collection.",
+        "boundary": "Professional context does not make every personal statement firm advice or prove that the sender instructed later ETJ acts."
+      },
+      {
+        "level": "FIRM_KNOWLEDGE_GOVERNANCE",
+        "supported": "A same-day preservation communication was sent to a firm data-protection channel, making receipt, preservation, escalation, conflicts, access and risk handling finite document-answerable questions.",
+        "boundary": "Sending does not prove receipt, readership, investigation, ratification, silence or institutional admission."
+      },
+      {
+        "level": "FIRM_ADOPTION_RESPONSIBILITY",
+        "supported": "Firm expression or responsibility could be established by proof of instruction, authorisation, adoption, ratification, use or directly imputable governance failure.",
+        "boundary": "Partner status and professional context alone do not convert the message into a corporate statement or prove firm-wide misconduct."
+      }
+    ]
+  },
+  "laguna_remate_connection": {
+    "proposition": "The message documents a reaction to professional scrutiny and supports finite questions about whether firm records connect historic knowledge, 2024-2026 ETJ decisions, the reservation of cession, recipient or beneficial owner, single satisfaction and the use or commercialisation of Matkator finca 8584 within the hotel.",
+    "attributed_hypothesis": "Gil Marer assesses an Acosta Matos-connected remate recipient or ultimate beneficiary as the leading concrete hypothesis and considers an unconnected beneficiary close to zero probability.",
+    "criminal_characterisation": "Gil asks the competent authorities to test a procedural-fraud hypothesis based on possible material deception or equivalent omission, knowledge and intent, causal judicial error, prejudicial patrimonial disposition, Matkator loss and improper benefit. Any insolvency or concursal dimension is secondary and requires a proved transmission, reliance or benefit bridge to LPB and Concurso 36/2012.",
+    "not_established": [
+      "The message does not prove procedural fraud, an insolvency offence, a completed adjudication or cession, the recipient's identity, shared intent, a firm plan or double recovery.",
+      "ETJ 163/2020, Matkator's property perimeter and LPB's Concurso 36/2012 remain legally distinct absent an actor-specific transmission, reliance, prejudice and benefit bridge.",
+      "No public record yet identifies the remate assignee, nominee, beneficial owner or Acosta Matos-connected recipient."
+    ],
+    "decisive_records": [
+      "Complete certified ETJ 163/2020 file and operative adjudication or cession result.",
+      "Instructions, conflict and secrecy analysis, team-access record and authorisation or ratification chain.",
+      "Cession instrument, KYC/AML, beneficial ownership, source of funds, consideration, side agreements, Registry entry, possession and later transfers.",
+      "Invoice-promissory-note-judgment-interest-cost-receipt-asset reconciliation establishing single satisfaction.",
+      "Hotel asset schedules, operator and finance contracts, revenue trail and ultimate-benefit accounting."
+    ]
+  },
   "clause_audit": [
     {
       "text": "Just received notice from the Madrid bar",
@@ -205,9 +247,11 @@
     "/en/cuatrecasas-sun-park/#inigo-linkedin-20260306",
     "/es/cuatrecasas-sun-park/#inigo-linkedin-20260306",
     "/en/cuatrecasas-icam-ccacm-2026/",
-    "/es/cuatrecasas-icam-ccacm-2026/"
+    "/es/cuatrecasas-icam-ccacm-2026/",
+    "/en/cuatrecasas-dp748-civil-action/#laguna-remate-ccacm-firm-expression-20260901",
+    "/es/cuatrecasas-dp748-accion-civil/#laguna-remate-ccacm-firm-expression-20260901"
   ],
   "created_for_publication": "2026-08-31",
   "image_publication_authorized": "2026-09-01",
-  "governance_revision": "2026-09-01a"
+  "governance_revision": "2026-09-01b"
 }

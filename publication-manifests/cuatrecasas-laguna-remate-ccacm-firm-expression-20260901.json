@@ -1,0 +1,75 @@
+{
+  "schema": "por-derecho.publication-manifest.v1",
+  "publication_id": "cuatrecasas-laguna-remate-ccacm-firm-expression-20260901",
+  "control_marker": "laguna-remate-ccacm-firm-expression-20260901",
+  "owner": "Gil Marer / Aweswell Limited / Matkator, S.L.U.",
+  "created_at": "2026-09-01T00:00:00Z",
+  "current_main_baseline": "73503faafeb9e2df2b6db601c3d9e574a70a3d23",
+  "current_state": "PREPARED_PENDING_MERGE",
+  "status": "prepared_pending_merge",
+  "branch": "codex/laguna-remate-cuatrecasas-ccacm-unitary-20260901",
+  "purpose": "Join the La Laguna ETJ/remate, Matkator asset, Acosta Matos-connected recipient, hotel consolidation/commercialisation, ICAM/CCACM and LinkedIn evidence tracks while preserving actor, entity, proceeding, criminal-element and firm-attribution boundaries.",
+  "expected_routes": {
+    "en": [
+      "en/cuatrecasas-dp748-civil-action/index.html",
+      "en/cuatrecasas-icam-ccacm-2026/index.html",
+      "en/cuatrecasas-sun-park/index.html"
+    ],
+    "es": [
+      "es/cuatrecasas-dp748-accion-civil/index.html",
+      "es/cuatrecasas-icam-ccacm-2026/index.html",
+      "es/cuatrecasas-sun-park/index.html"
+    ]
+  },
+  "expected_source_files": [
+    "assets/cuatrecasas-inigo-linkedin-record-20260831.js",
+    "assets/site.js",
+    "evidence/cuatrecasas/2026-03-06-inigo-de-luisa-linkedin-message.json",
+    "archive/CUATRECASAS_LA_LAGUNA_REMATE_CCACM_FIRM_EXPRESSION_CONTROL_01SEP2026.md",
+    "archive/MISSING_EVIDENCE_REGISTER_CUATRECASAS_LAGUNA_REMATE_FIRM_ATTRIBUTION_APPEND_01SEP2026.md",
+    "scripts/validate_cuatrecasas_dp748_civil_action.py",
+    "scripts/validate_cuatrecasas_linkedin_interlink.py"
+  ],
+  "claim_controls": {
+    "procedural_fraud": "GIL_MARER_ATTRIBUTED_HYPOTHESIS_NOT_FINDING",
+    "insolvency_concursal_characterisation": "SECONDARY_CONDITIONAL_BRIDGE_UNPROVED",
+    "matkator_lpb_identity": "SEPARATE_LEGAL_PERSONS",
+    "remate_cession": "RESERVATION_REPORTED_COMPLETION_UNPROVED",
+    "acosta_matos_recipient": "LEADING_ATTRIBUTED_PROBABILITY_ASSESSMENT_IDENTITY_UNPROVED",
+    "hotel_consolidation_commercialisation": "DIRECTED_BENEFIT_HYPOTHESIS_NOT_RECEIPT_PROOF",
+    "linkedin_message": "DOCUMENTED_DISPLAYED_INDIVIDUAL_STATEMENT",
+    "firm_expression": "PROFESSIONAL_CONTEXT_AND_GOVERNANCE_RELEVANCE_ADOPTION_UNPROVED",
+    "icam_434_26": "LIMITATION_ARCHIVE_NOT_MERITS_EXONERATION",
+    "icam_1487_26": "ADVERSE_PRIVATE_PERSONAL_OBJECTIVE_COMPETENCE_RESULT",
+    "ccacm_193_2026": "UNDER_STUDY_AS_OF_LATEST_LOCATED_2026_08_27_RECORD"
+  },
+  "authority": {
+    "local_analysis_and_validation": "AUTHORISED_BY_USER_RUN_INSTRUCTION",
+    "repository_push": "AUTHORISED_BY_CURRENT_USER_2026-09-01",
+    "pull_request": "AUTHORISED_BY_CURRENT_USER_2026-09-01",
+    "merge_and_website_publication": "AUTHORISED_BY_CURRENT_USER_2026-09-01",
+    "direct_contact": "HOLD_NOT_AUTHORISED",
+    "external_messages": "NOT_AUTHORISED",
+    "court_or_institutional_filings": "NOT_AUTHORISED"
+  },
+  "validation": {
+    "status": "PASSED_LOCAL",
+    "required": [
+      "python3 scripts/validate_cuatrecasas_dp748_civil_action.py",
+      "python3 scripts/validate_cuatrecasas_linkedin_interlink.py",
+      "python3 scripts/validate_repository_preservation.py",
+      "python3 scripts/validate_publication_integrity.py",
+      "python3 scripts/validate_audience_experience.py",
+      "python3 scripts/validate_private_source_statement_osint_governance.py --base origin/main",
+      "JSON parse, JavaScript syntax, git diff --check and reciprocal-anchor verification"
+    ],
+    "evidence": [
+      "Cuatrecasas DP748 / civil-action specialist validator passed.",
+      "Cuatrecasas LinkedIn specialist validator passed with two hash-verified public captures, four attribution levels and one controlled La Laguna bridge.",
+      "Repository-preservation, publication-integrity, audience-experience and private-source/voice/OSINT governance gates passed.",
+      "Changed JSON parsed, changed JavaScript passed syntax checks and git diff --check passed."
+    ],
+    "rendered_browser_status": "NOT_RUN_NO_LOCAL_CHROMIUM; static image dimensions, hashes, source presence and internal links passed specialist and repository gates"
+  },
+  "next_gate": "Run pull-request CI, merge only if green, verify exact GitHub Pages deployment and preserve the no-contact/no-message/no-filing boundary."
+}

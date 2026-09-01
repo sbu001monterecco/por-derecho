@@ -13,6 +13,7 @@ ROOT = Path(__file__).resolve().parents[1]
 MARKER = "cuatrecasas-dp748-civil-action-20260824"
 ACCOUNTABILITY_MARKER = "CUATRECASAS-INSTITUTIONAL-ACCOUNTABILITY-20260824"
 COMPARATOR_MARKER = "cuatrecasas-edgeworth-partial-overlap-20260824"
+UNITARY_REMATE_MARKER = "laguna-remate-ccacm-firm-expression-20260901"
 
 ROUTES = {
     "es/cuatrecasas-dp748-accion-civil/index.html": [
@@ -29,6 +30,13 @@ ROUTES = {
         "Un requerimiento institucional contestable mediante documentos",
         "registrará únicamente como <em>no contestado</em>",
         "Vías de responsabilidad con eje en España",
+        UNITARY_REMATE_MARKER,
+        "La caracterización penal que Gil pide comprobar",
+        "cuatro niveles de atribución",
+        "ETJ 163/2020 no prueba por sí sola delito concursal",
+        "manifestación individual documentada en contexto de encargo profesional de Cuatrecasas",
+        "../cuatrecasas-sun-park/#inigo-linkedin-20260306",
+        "../cuatrecasas-icam-ccacm-2026/#linkedin-firm-attribution-20260901",
     ],
     "en/cuatrecasas-dp748-civil-action/index.html": [
         MARKER,
@@ -44,6 +52,13 @@ ROUTES = {
         "A document-answerable institutional challenge",
         "recorded only as <em>unanswered</em>",
         "Spain-led accountability routes",
+        UNITARY_REMATE_MARKER,
+        "The criminal characterisation Gil asks the competent authorities to test",
+        "four attribution levels",
+        "ETJ 163/2020 does not by itself prove an insolvency offence",
+        "documented individual statement in a Cuatrecasas professional-engagement context",
+        "../cuatrecasas-sun-park/#inigo-linkedin-20260306",
+        "../cuatrecasas-icam-ccacm-2026/#linkedin-firm-attribution-20260901",
     ],
 }
 
@@ -304,6 +319,58 @@ for marker in required_shared:
     for rel, text in texts.items():
         if marker not in text:
             errors.append(f"{rel}: missing shared proposition {marker!r}")
+
+UNITARY_CONTROL = ROOT / "archive/CUATRECASAS_LA_LAGUNA_REMATE_CCACM_FIRM_EXPRESSION_CONTROL_01SEP2026.md"
+MISSING_APPEND = ROOT / "archive/MISSING_EVIDENCE_REGISTER_CUATRECASAS_LAGUNA_REMATE_FIRM_ATTRIBUTION_APPEND_01SEP2026.md"
+UNITARY_MANIFEST = ROOT / "publication-manifests/cuatrecasas-laguna-remate-ccacm-firm-expression-20260901.json"
+
+if not UNITARY_CONTROL.is_file():
+    errors.append("missing La Laguna/remate/firm-expression continuity control")
+else:
+    control_text = UNITARY_CONTROL.read_text(encoding="utf-8")
+    for marker in (
+        "PREPARED_PENDING_MERGE",
+        "possible **estafa procesal**",
+        "Any insolvency or **concursal** characterisation is secondary and conditional",
+        "leading concrete probability assessment",
+        "four attribution levels",
+        "not presently proved to be an authorised, adopted or ratified Cuatrecasas corporate statement",
+        "authorises push, pull request, merge and GitHub Pages publication",
+        "No direct contact with Iñigo de Luisa is authorised",
+    ):
+        if marker not in control_text:
+            errors.append(f"unitary continuity control missing {marker!r}")
+
+if not MISSING_APPEND.is_file():
+    errors.append("missing La Laguna/remate/firm-attribution evidence-gap append")
+else:
+    missing_text = MISSING_APPEND.read_text(encoding="utf-8")
+    for marker in (
+        "Complete ETJ 163/2020 docket",
+        "Remate recipient",
+        "Single satisfaction",
+        "Corporate adoption",
+        "Concursal bridge",
+        "Matkator and LPB remain distinct legal persons",
+    ):
+        if marker not in missing_text:
+            errors.append(f"missing-evidence append lacks {marker!r}")
+
+try:
+    unitary_manifest = json.loads(UNITARY_MANIFEST.read_text(encoding="utf-8"))
+except Exception as exc:
+    errors.append(f"invalid La Laguna/remate publication manifest: {exc}")
+else:
+    if unitary_manifest.get("control_marker") != UNITARY_REMATE_MARKER:
+        errors.append("La Laguna/remate publication manifest marker mismatch")
+    if unitary_manifest.get("current_state") != "PREPARED_PENDING_MERGE":
+        errors.append("La Laguna/remate manifest must remain PREPARED_PENDING_MERGE until live closeout")
+    authority = unitary_manifest.get("authority") or {}
+    for gate in ("repository_push", "pull_request", "merge_and_website_publication"):
+        if authority.get(gate) != "AUTHORISED_BY_CURRENT_USER_2026-09-01":
+            errors.append(f"La Laguna/remate manifest lacks current publication authority for {gate}")
+    if authority.get("direct_contact") != "HOLD_NOT_AUTHORISED":
+        errors.append("La Laguna/remate manifest must preserve the no-contact gate")
 
 for rel in (
     "sitemap.xml",

@@ -63,6 +63,18 @@
       ['6 mar 2026', 'Ese mismo día se envió una comunicación de preservación a un canal de protección de datos del despacho. No se localizó respuesta ordinaria en el hilo revisado; existen avisos automáticos de portal de cumplimiento sin contenido visible en Gmail.', 'El envío no acredita recepción, lectura, investigación, silencio institucional ni admisión.'],
       ['24–27 ago 2026', 'La invitación posterior de conciliación y derecho de respuesta no se entregó a los destinatarios ensayados: hubo rebotes y expiración.', 'No puede presentarse como invitación recibida ni como silencio de Cuatrecasas.']
     ],
+    attributionTitle: 'De expresión individual a expresión del despacho: cuatro niveles',
+    attributionIntro: 'La respuesta tiene relevancia institucional porque nació de una queja sobre un encargo profesional sustancial. Esa conexión permite preguntas de capacidad, conocimiento y gobernanza; no autoriza a saltar directamente a una admisión corporativa.',
+    attributionLevel: 'Nivel',
+    attributionSupport: 'Lo que sostiene el registro',
+    attributionLimit: 'Límite',
+    attributionRows: [
+      ['1 · Personal', 'Manifestación en primera persona atribuida a Íñigo de Luisa Maíz en las dos capturas preservadas.', 'No acredita por sí sola autoría certificada por proveedor, infracción, difusión, represalia o responsabilidad.'],
+      ['2 · Socio / contexto profesional', 'La queja deriva de relación profesional facturada; correos anteriores emplearon la voz del despacho, invocaron reglas internas y trataron defensa y cobro.', 'No convierte toda frase personal en consejo del despacho ni prueba que Íñigo instruyera las actuaciones ETJ.'],
+      ['3 · Conocimiento / gobernanza de firma', 'Ese día se envió preservación a un canal de la firma; recepción, conservación, escalado, conflicto, acceso y riesgo son preguntas documentales finitas.', 'Enviar no prueba recepción, investigación, ratificación, silencio institucional ni admisión.'],
+      ['4 · Adopción / responsabilidad de firma', 'La expresión sería imputable al despacho si se prueban instrucción, autorización, adopción, ratificación, uso o fallo directamente imputable de gobernanza.', 'Condición de socio y contexto profesional no bastan para una declaración corporativa ni responsabilidad colectiva.']
+    ],
+    lagunaBridge: 'Puente La Laguna: el mensaje no prueba estafa procesal, delito concursal ni identidad del cesionario del remate. Sí documenta una reacción a control profesional y abre preguntas sobre si los archivos de la firma conectan conocimiento histórico, decisiones ETJ 2024–2026, reserva de cesión, destinatario/UBO, satisfacción única y el uso o comercialización de la finca 8584 dentro del hotel. La hipótesis de destinatario conectado con Acosta Matos es la valoración principal atribuida de Gil; sigue sin probarse.',
     questionsTitle: 'Preguntas que Cuatrecasas puede cerrar con documentos',
     questions: [
       '¿Qué mapa de cliente, deudor e instrumento conectó las facturas de Aweswell/LPB con los pagarés de Matkator?',
@@ -76,6 +88,7 @@
     boundary: 'No se solicita contacto directo con Íñigo de Luisa. Cualquier corrección o respuesta verificable recibida por abogado, canal institucional o canal profesional autorizado se publicará con igual prominencia. La ausencia de respuesta no se tratará como admisión.',
     record: 'Abrir registro público controlado →',
     institutional: 'Abrir expediente ICAM / CCACM →',
+    laguna: 'Abrir análisis La Laguna / remate →',
     dossier: 'Volver al expediente unitario Cuatrecasas ↑'
   } : {
     eyebrow: 'UNITARY AUDIT · MESSAGE, EMAILS AND OFFICIAL RECORDS',
@@ -127,6 +140,18 @@
       ['6 Mar 2026', 'A preservation communication was sent that day to a firm data-protection channel. No ordinary reply was located in the reviewed thread; automated compliance-portal notices exist without visible case content in Gmail.', 'Sending does not establish receipt, readership, investigation, institutional silence or admission.'],
       ['24–27 Aug 2026', 'A later reconciliation and right-of-reply invitation was not delivered to the attempted recipients: delivery bounced or expired.', 'It cannot be presented as a received invitation or as Cuatrecasas silence.']
     ],
+    attributionTitle: 'From individual expression to firm expression: four levels',
+    attributionIntro: 'The response has institutional relevance because it arose from a complaint concerning a substantial professional engagement. That connection permits questions about capacity, knowledge and governance; it does not permit a direct leap to corporate admission.',
+    attributionLevel: 'Level',
+    attributionSupport: 'What the record supports',
+    attributionLimit: 'Boundary',
+    attributionRows: [
+      ['1 · Personal', 'First-person statement attributed to Iñigo de Luisa Maíz in the two preserved captures.', 'It does not by itself establish provider-certified authorship, misconduct, dissemination, retaliation or liability.'],
+      ['2 · Partner / professional context', 'The complaint arose from a billed professional relationship; earlier emails used the firm’s voice, invoked internal rules and addressed advocacy and collection.', 'It does not make every personal sentence firm advice or prove that Iñigo instructed the ETJ acts.'],
+      ['3 · Firm knowledge / governance', 'Preservation was sent to a firm channel that day; receipt, retention, escalation, conflict, access and risk handling are finite document questions.', 'Sending does not prove receipt, investigation, ratification, institutional silence or admission.'],
+      ['4 · Firm adoption / responsibility', 'The expression would become imputable to the firm upon proof of instruction, authorisation, adoption, ratification, use or directly imputable governance failure.', 'Partner status and professional context alone do not establish a corporate statement or collective responsibility.']
+    ],
+    lagunaBridge: 'La Laguna bridge: the message does not prove procedural fraud, an insolvency offence or the remate assignee’s identity. It does document a reaction to professional scrutiny and opens questions whether firm files connect historic knowledge, 2024–2026 ETJ choices, the assignment reservation, recipient/UBO, single satisfaction and use or commercialisation of finca 8584 within the hotel. A recipient connected to Acosta Matos is Gil’s leading attributed assessment; it remains unproved.',
     questionsTitle: 'Questions Cuatrecasas can close with documents',
     questions: [
       'What client, debtor and instrument map connected the Aweswell/LPB invoices to the Matkator promissory notes?',
@@ -140,6 +165,7 @@
     boundary: 'No direct contact with Íñigo de Luisa is sought. Any verifiable correction or response received through counsel, an institutional route or an authorized professional channel will be published with equal prominence. No absence of response will be treated as an admission.',
     record: 'Open controlled public record →',
     institutional: 'Open ICAM / CCACM record →',
+    laguna: 'Open La Laguna / remate analysis →',
     dossier: 'Return to unitary Cuatrecasas dossier ↑'
   };
 
@@ -147,6 +173,8 @@
     <tr><th scope="row">${escapeHTML(exact)}</th><td>${escapeHTML(reading)}</td><td>${escapeHTML(limit)}</td></tr>`).join('');
   const emailRows = copy.emails.map(([date, record, boundary]) => `
     <tr><th scope="row">${escapeHTML(date)}</th><td>${escapeHTML(record)}</td><td>${escapeHTML(boundary)}</td></tr>`).join('');
+  const attributionRows = copy.attributionRows.map(([level, support, limit]) => `
+    <tr><th scope="row">${escapeHTML(level)}</th><td>${escapeHTML(support)}</td><td>${escapeHTML(limit)}</td></tr>`).join('');
   const questionItems = copy.questions.map((question) => `<li>${escapeHTML(question)}</li>`).join('');
 
   const section = document.createElement('section');
@@ -156,7 +184,7 @@
   section.setAttribute('data-cuatrecasas-inigo-linkedin-record', '20260306');
   section.setAttribute('data-publication-marker', 'cuatrecasas-linkedin-interlink-20260831');
   section.setAttribute('data-image-publication-marker', 'cuatrecasas-linkedin-images-20260901');
-  section.setAttribute('data-governance-revision', '20260901a');
+  section.setAttribute('data-governance-revision', '20260901b');
   section.innerHTML = `
     <div class="shell record">
       <div class="cuatre-linkedin-panel">
@@ -186,19 +214,23 @@
         <h3 class="cuatre-linkedin-section-title">${escapeHTML(copy.emailTitle)}</h3>
         <p>${escapeHTML(copy.emailIntro)}</p>
         <div class="cuatre-linkedin-tablewrap"><table class="cuatre-linkedin-table cuatre-linkedin-email-table"><thead><tr><th>${escapeHTML(copy.date)}</th><th>${escapeHTML(copy.emailRecord)}</th><th>${escapeHTML(copy.emailBoundary)}</th></tr></thead><tbody>${emailRows}</tbody></table></div>
+        <h3 class="cuatre-linkedin-section-title">${escapeHTML(copy.attributionTitle)}</h3>
+        <p>${escapeHTML(copy.attributionIntro)}</p>
+        <div class="cuatre-linkedin-tablewrap"><table class="cuatre-linkedin-table"><thead><tr><th>${escapeHTML(copy.attributionLevel)}</th><th>${escapeHTML(copy.attributionSupport)}</th><th>${escapeHTML(copy.attributionLimit)}</th></tr></thead><tbody>${attributionRows}</tbody></table></div>
+        <p class="cuatre-linkedin-attribution-boundary">${escapeHTML(copy.lagunaBridge)}</p>
         <div class="cuatre-linkedin-questions"><h3>${escapeHTML(copy.questionsTitle)}</h3><ol>${questionItems}</ol></div>
         <div class="cuatre-linkedin-provenance">
           <strong>${escapeHTML(copy.provenanceTitle)}</strong>
           <p>${escapeHTML(copy.provenance)}</p>
           <p class="cuatre-linkedin-boundary">${escapeHTML(copy.boundary)}</p>
-          <p class="cuatre-linkedin-links"><a href="../../evidence/cuatrecasas/2026-03-06-inigo-de-luisa-linkedin-message.json">${escapeHTML(copy.record)}</a><span aria-hidden="true"> · </span><a href="../cuatrecasas-icam-ccacm-2026/">${escapeHTML(copy.institutional)}</a><span aria-hidden="true"> · </span><a href="#top">${escapeHTML(copy.dossier)}</a></p>
+          <p class="cuatre-linkedin-links"><a href="../../evidence/cuatrecasas/2026-03-06-inigo-de-luisa-linkedin-message.json">${escapeHTML(copy.record)}</a><span aria-hidden="true"> · </span><a href="../cuatrecasas-icam-ccacm-2026/#linkedin-firm-attribution-20260901">${escapeHTML(copy.institutional)}</a><span aria-hidden="true"> · </span><a href="${isEs ? '../cuatrecasas-dp748-accion-civil/' : '../cuatrecasas-dp748-civil-action/'}#laguna-remate-ccacm-firm-expression-20260901">${escapeHTML(copy.laguna)}</a><span aria-hidden="true"> · </span><a href="#top">${escapeHTML(copy.dossier)}</a></p>
         </div>
       </div>
     </div>`;
   section.querySelector('.cuatre-linkedin-message').textContent = message;
 
   const style = document.createElement('style');
-  style.setAttribute('data-cuatrecasas-inigo-linkedin-record-style', '20260901a');
+  style.setAttribute('data-cuatrecasas-inigo-linkedin-record-style', '20260901b');
   style.textContent = `
     .cuatre-linkedin-record{background:#f4f1ea;scroll-margin-top:1.5rem}
     .cuatre-linkedin-panel{background:#fff;border:1px solid #d9dede;border-top:7px solid #13252d;border-radius:22px;padding:clamp(1.2rem,3vw,2rem);box-shadow:0 16px 40px rgba(16,38,45,.10)}
@@ -225,6 +257,7 @@
     .cuatre-linkedin-table tbody th{width:23%;background:#f8faf9;color:#13252d}
     .cuatre-linkedin-table tbody tr:last-child th,.cuatre-linkedin-table tbody tr:last-child td{border-bottom:0}
     .cuatre-linkedin-email-table tbody th{width:13%;white-space:nowrap}
+    .cuatre-linkedin-attribution-boundary{background:#fffaf0;border-left:5px solid #a76c00;border-radius:12px;padding:1rem 1.15rem;line-height:1.6}
     .cuatre-linkedin-questions{margin:1.25rem 0;background:#13252d;color:#fff;border-radius:14px;padding:1.1rem 1.25rem}
     .cuatre-linkedin-questions h3{margin:.1rem 0 .65rem;color:#fff}
     .cuatre-linkedin-questions ol{margin:.4rem 0 .2rem;padding-left:1.35rem}
