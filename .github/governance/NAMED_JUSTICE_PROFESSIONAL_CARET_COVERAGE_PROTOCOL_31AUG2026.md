@@ -117,3 +117,13 @@ The 31-August-2026 execution records:
 - verdict `PARTIAL — NOT ALL IS^`.
 
 The absence of an exact Registry staff name means only that no such name was located in the stated corpus at the control date. It is not a claim that no identifiable person exists in the official records.
+
+## 10. Occurrence matrix and finite evidence-production queue
+
+The controlled person-to-context matrix and bounded production queue are published in [`assets/data/justice-professionals-evidence-production-queue-v1.json`](../../assets/data/justice-professionals-evidence-production-queue-v1.json) under control `PD-SP-JUSTICE-PROFESSIONALS-EVIDENCE-QUEUE-20260901-01`.
+
+The matrix must contain every person in the current 48-person census exactly once and must preserve role and caret-state parity with the census. Its context field may record only a dated sourced act, a source-defined capacity, an exact source literal, public-office identity without a proceeding act, or an expressly non-attributive continuity link. It cannot create an act attribution by association.
+
+The production queue is finite at nine open tasks. Each task must identify its canonical missing-evidence ID, current evidence, required primary source, lawful acquisition route, upgrade condition and non-proof boundary. A task closes only when its primary source is controlled and the resulting person/act/date/capacity is reconciled across CAEPR, the canonical missing-evidence register and any affected bilingual public surface.
+
+This queue is a continuity and evidence-control instrument. It authorises no filing, service, email, evidence request or third-party contact; each external act requires separate current authority.
