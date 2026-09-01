@@ -1,6 +1,6 @@
 {
   "schema": "por-derecho-procurador-master-register-v1",
-  "as_of": "2026-08-30",
+  "as_of": "2026-09-01",
   "status": "initialized_denominator_not_yet_established",
   "governance": "archive/COUNSEL_PROCURADOR_FILING_LINEAGE_GOVERNANCE_30AUG2026.md",
   "filing_register": "assets/data/counsel-filing-register-v1.json",
@@ -31,135 +31,128 @@
       "canonical_name": "María del Pilar García Coello",
       "name_source_ref": "2025_0003304_RPL_1202610902298119_20260724104735(1).pdf",
       "colegio_professional_detail": "Ilustre Colegio de Procuradores de Las Palmas; LexNET professional identifier [159]",
-      "represented_party": [
-        "LUCHY PLAYA BLANCA, S.L.U."
-      ],
-      "lawyer_pairings": [
-        {
-          "lawyer": "Javier Sixto Seijas",
-          "proceeding_id": "RPL 3304/2025",
-          "period_evidence": "2026-07-23 to 2026-07-24 located pleading/receipt pair"
-        }
-      ],
-      "proceeding_id": [
-        "RPL 3304/2025"
-      ],
-      "pieza_incidente": [
-        "recurso_de_apelacion_reposicion_AC"
-      ],
+      "represented_party": ["LUCHY PLAYA BLANCA, S.L.U."],
+      "lawyer_pairings": [{"lawyer": "Javier Sixto Seijas", "proceeding_id": "RPL 3304/2025", "period_evidence": "2026-07-23 to 2026-07-24 located pleading/receipt pair"}],
+      "proceeding_id": ["RPL 3304/2025"],
+      "pieza_incidente": ["recurso_de_apelacion_reposicion_AC"],
       "first_located_appearance": "2026-07-23",
       "last_located_appearance": "2026-07-24 11:47:35",
       "personacion_poder_apud_acta_refs": [],
-      "filing_refs": [
-        "RPL-3304-2025-LPB-20260724-AC-REPOSICION-ALEGACIONES"
-      ],
+      "filing_refs": ["RPL-3304-2025-LPB-20260724-AC-REPOSICION-ALEGACIONES"],
       "notification_refs": [],
       "substitution_termination_refs": [],
-      "timeline_event_refs": [
-        "RPL3304-2025-20260724-LPB-LEXNET"
-      ],
+      "timeline_event_refs": ["RPL3304-2025-20260724-LPB-LEXNET"],
       "source_confidence": "high_primary_procedural_source",
       "verification_status": "identity_party_proceeding_and_presentation_verified_underlying_authority_instrument_open"
     },
     {
       "procurador_id": "PROC-MARIA-LUISA-DIAZ-VECINO",
       "canonical_name": "María Luisa Díaz Vecino",
-      "aliases": [
-        "María Díaz Vecino"
-      ],
+      "aliases": ["María Díaz Vecino"],
       "name_source_ref": "2025_0003304_RPL_120261090229678120260724114535_000_RESUMEN.pdf",
       "colegio_professional_detail": "Colegio de Procuradores de Tenerife; LexNET professional identifier [318]",
-      "represented_party": [
-        "AWESWELL LIMITED"
-      ],
-      "lawyer_pairings": [
-        {
-          "lawyer": "Javier Sixto Seijas",
-          "proceeding_id": "RPL 3304/2025",
-          "period_evidence": "2026-07-24 located pleading/receipt pair"
-        }
-      ],
-      "proceeding_id": [
-        "RPL 3304/2025"
-      ],
-      "pieza_incidente": [
-        "recurso_de_apelacion_reposicion_AC"
-      ],
+      "represented_party": ["AWESWELL LIMITED"],
+      "lawyer_pairings": [{"lawyer": "Javier Sixto Seijas", "proceeding_id": "RPL 3304/2025", "period_evidence": "2026-07-24 located pleading/receipt pair"}],
+      "proceeding_id": ["RPL 3304/2025"],
+      "pieza_incidente": ["recurso_de_apelacion_reposicion_AC"],
       "first_located_appearance": "2026-07-24",
       "last_located_appearance": "2026-07-24",
       "personacion_poder_apud_acta_refs": [],
-      "filing_refs": [
-        "RPL-3304-2025-AWESWELL-20260724-AC-REPOSICION-ALEGACIONES"
-      ],
+      "filing_refs": ["RPL-3304-2025-AWESWELL-20260724-AC-REPOSICION-ALEGACIONES"],
       "notification_refs": [],
       "substitution_termination_refs": [],
-      "timeline_event_refs": [
-        "RPL3304-2025-20260724-AWESWELL-LEXNET"
-      ],
+      "timeline_event_refs": ["RPL3304-2025-20260724-AWESWELL-LEXNET"],
       "source_confidence": "high_primary_procedural_source",
       "verification_status": "identity_party_proceeding_and_lexnet_presentation_verified_exact_time_normalization_and_underlying_authority_instrument_open"
     },
     {
       "procurador_id": "PROC-ADRIANA-HERNANDEZ-DIAZ",
       "canonical_name": "Adriana Hernández Díaz",
-      "name_source_ref": "2020_0000163_ETJ_120261089839210420260710130302_000_RESUMEN.pdf",
-      "colegio_professional_detail": "primary LexNET receipt located; exact normalized colegio/professional-number field retained for follow-on source normalization",
-      "represented_party": [
-        "MATKATOR, S.L."
+      "caepr_id": "PD-SP-P-0067",
+      "name_source_ref": "ETJ 163/2020 primary LexNET control; DP 748/2026 primary procedural controls",
+      "colegio_professional_detail": "Ilustre Colegio de Procuradores de Santa Cruz de Tenerife; procuradora nº 346 verified in the 1-Sep-2026 DP 748/2026 LexNET communication",
+      "represented_party": ["MATKATOR, S.L.", "Gil Marer"],
+      "represented_party_refs": [
+        {"party": "MATKATOR, S.L.", "proceeding_id": "ETJ 163/2020", "status": "verified"},
+        {"party": "Gil Marer", "proceeding_id": "DP 748/2026", "status": "verified", "evidence": "DP748-SRC-20260417-LEXNET; DP748-SRC-20260626-LEXNET; DP748-SRC-20260716-AUTO; DP748-SRC-20260901-NOTIFICATION"}
       ],
-      "lawyer_pairings": [],
-      "proceeding_id": [
-        "ETJ 163/2020"
+      "lawyer_pairings": [
+        {"lawyer": "Carlos Llamas Sanz", "lawyer_caepr_id": "PD-SP-P-0146", "proceeding_id": "DP 748/2026", "period_evidence": "17-Apr-2026 through 1-Sep-2026 primary procedural sources", "status": "verified_proceeding_period_pairing"}
       ],
-      "pieza_incidente": [
-        "ejecucion"
-      ],
-      "first_located_appearance": "2026-07-10",
-      "last_located_appearance": "2026-07-10",
+      "proceeding_id": ["ETJ 163/2020", "DP 748/2026"],
+      "pieza_incidente": ["ejecucion", "recurso_de_reforma_y_subsidiario_de_apelacion", "sintesis_concrecion", "notification_of_16Jul_order"],
+      "first_located_appearance": "2026-04-17",
+      "last_located_appearance": "2026-09-01",
       "personacion_poder_apud_acta_refs": [],
-      "filing_refs": [
-        "2020_0000163_ETJ_120261089839210420260710130302_000_RESUMEN.pdf"
-      ],
-      "notification_refs": [],
+      "filing_refs": ["DP748-2026-GIL-20260417-REFORMA-SUB-APELACION", "DP748-2026-GIL-20260626-SINTESIS", "ETJ163-2020-20260710-LEXNET"],
+      "notification_refs": ["DP748-2026-20260901-NOTIFICATION"],
       "substitution_termination_refs": [],
-      "timeline_event_refs": [
-        "ETJ163-2020-20260710-LEXNET"
-      ],
-      "source_confidence": "high_identity_party_proceeding_primary_lexnet_source",
-      "verification_status": "procuradora_identity_party_and_proceeding_verified_lawyer_pairing_and_authority_instrument_open"
+      "timeline_event_refs": ["DP748-2026-20260417-REFORMA-SUB-APELACION", "DP748-2026-20260626-SINTESIS", "DP748-2026-20260716-ORDER", "DP748-2026-20260901-NOTIFICATION", "ETJ163-2020-20260710-LEXNET"],
+      "source_confidence": "high_primary_procedural_source",
+      "verification_status": "DP748_identity_party_lawyer_pairing_filings_and_notification_verified_underlying_authority_instrument_open_ETJ_lawyer_pairing_still_open"
     },
     {
-      "procurador_id": "PROC-ANDRES-CASTELLANO-RIVERO", "canonical_name": "Andrés Castellano Rivero",
-      "name_source_ref": "archive/ROLLO_1010_2018_AUTO_804_CARET_INTERLINK_CONTROL_30AUG2026.md", "colegio_professional_detail": "not yet independently verified",
+      "procurador_id": "PROC-ANDRES-CASTELLANO-RIVERO",
+      "canonical_name": "Andrés Castellano Rivero",
+      "name_source_ref": "archive/ROLLO_1010_2018_AUTO_804_CARET_INTERLINK_CONTROL_30AUG2026.md",
+      "colegio_professional_detail": "not yet independently verified",
       "represented_party": ["Gil Marer", "AWESWELL LIMITED", "Comunidad de Explotación Playa Blanca"],
       "lawyer_pairings": [{"lawyer":"Juan Daniel Fajardo Expósito","proceeding_id":"Rollo 1010/2018","period_evidence":"located appellate cover"},{"lawyer":"Cristo Ayose Suárez Pimentel","proceeding_id":"Rollo 1010/2018","period_evidence":"located appellate cover"}],
-      "proceeding_id": ["Rollo 1010/2018"], "pieza_incidente": ["criminal_appeal"], "first_located_appearance": "2018-11-13", "last_located_appearance": "2018-11-13",
-      "personacion_poder_apud_acta_refs": [], "filing_refs": [], "notification_refs": [], "substitution_termination_refs": [], "timeline_event_refs": ["LZ-APP-004-20181113-AUTO-804"],
-      "source_confidence": "high_named_appellate_cover", "verification_status": "identity_party_and_lawyer_pairings_on_cover_verified_authority_and_filings_open"
+      "proceeding_id": ["Rollo 1010/2018"],
+      "pieza_incidente": ["criminal_appeal"],
+      "first_located_appearance": "2018-11-13",
+      "last_located_appearance": "2018-11-13",
+      "personacion_poder_apud_acta_refs": [],
+      "filing_refs": [],
+      "notification_refs": [],
+      "substitution_termination_refs": [],
+      "timeline_event_refs": ["LZ-APP-004-20181113-AUTO-804"],
+      "source_confidence": "high_named_appellate_cover",
+      "verification_status": "identity_party_and_lawyer_pairings_on_cover_verified_authority_and_filings_open"
     },
     {
-      "procurador_id": "PROC-JOSE-ANGEL-RODRIGUEZ-GIL", "canonical_name": "José Ángel Rodríguez Gil",
-      "name_source_ref": "archive/ROLLO_1010_2018_AUTO_804_CARET_INTERLINK_CONTROL_30AUG2026.md", "colegio_professional_detail": "not yet independently verified",
+      "procurador_id": "PROC-JOSE-ANGEL-RODRIGUEZ-GIL",
+      "canonical_name": "José Ángel Rodríguez Gil",
+      "name_source_ref": "archive/ROLLO_1010_2018_AUTO_804_CARET_INTERLINK_CONTROL_30AUG2026.md",
+      "colegio_professional_detail": "not yet independently verified",
       "represented_party": ["Constructora Acosta Matos", "Laura Patricia Acosta Matos", "José Daniel Acosta Matos"],
       "lawyer_pairings": [{"lawyer":"Ignacio Manuel Martín Marrero","proceeding_id":"Rollo 1010/2018","period_evidence":"located appellate cover"}],
-      "proceeding_id": ["Rollo 1010/2018"], "pieza_incidente": ["criminal_appeal"], "first_located_appearance": "2018-11-13", "last_located_appearance": "2018-11-13",
-      "personacion_poder_apud_acta_refs": [], "filing_refs": [], "notification_refs": [], "substitution_termination_refs": [], "timeline_event_refs": ["LZ-APP-004-20181113-AUTO-804"],
-      "source_confidence": "high_named_appellate_cover", "verification_status": "identity_party_and_lawyer_pairing_on_cover_verified_authority_and_filings_open"
+      "proceeding_id": ["Rollo 1010/2018"],
+      "pieza_incidente": ["criminal_appeal"],
+      "first_located_appearance": "2018-11-13",
+      "last_located_appearance": "2018-11-13",
+      "personacion_poder_apud_acta_refs": [],
+      "filing_refs": [],
+      "notification_refs": [],
+      "substitution_termination_refs": [],
+      "timeline_event_refs": ["LZ-APP-004-20181113-AUTO-804"],
+      "source_confidence": "high_named_appellate_cover",
+      "verification_status": "identity_party_and_lawyer_pairing_on_cover_verified_authority_and_filings_open"
     },
     {
-      "procurador_id": "PROC-SOLEDAD-TELLO-CHECA", "canonical_name": "Soledad Tello Checa",
-      "name_source_ref": "archive/ROLLO_1010_2018_AUTO_804_CARET_INTERLINK_CONTROL_30AUG2026.md", "colegio_professional_detail": "not yet independently verified",
+      "procurador_id": "PROC-SOLEDAD-TELLO-CHECA",
+      "canonical_name": "Soledad Tello Checa",
+      "name_source_ref": "archive/ROLLO_1010_2018_AUTO_804_CARET_INTERLINK_CONTROL_30AUG2026.md",
+      "colegio_professional_detail": "not yet independently verified",
       "represented_party": ["Antonio Cogolludo Rojas", "Shaila María Cogolludo Ramos"],
       "lawyer_pairings": [{"lawyer":"Juan Carlos Prieto Puente","proceeding_id":"Rollo 1010/2018","period_evidence":"located appellate cover"}],
-      "proceeding_id": ["Rollo 1010/2018"], "pieza_incidente": ["criminal_appeal"], "first_located_appearance": "2018-11-13", "last_located_appearance": "2018-11-13",
-      "personacion_poder_apud_acta_refs": [], "filing_refs": [], "notification_refs": [], "substitution_termination_refs": [], "timeline_event_refs": ["LZ-APP-004-20181113-AUTO-804"],
-      "source_confidence": "high_named_appellate_cover", "verification_status": "identity_party_and_lawyer_pairing_on_cover_verified_authority_and_filings_open"
+      "proceeding_id": ["Rollo 1010/2018"],
+      "pieza_incidente": ["criminal_appeal"],
+      "first_located_appearance": "2018-11-13",
+      "last_located_appearance": "2018-11-13",
+      "personacion_poder_apud_acta_refs": [],
+      "filing_refs": [],
+      "notification_refs": [],
+      "substitution_termination_refs": [],
+      "timeline_event_refs": ["LZ-APP-004-20181113-AUTO-804"],
+      "source_confidence": "high_named_appellate_cover",
+      "verification_status": "identity_party_and_lawyer_pairing_on_cover_verified_authority_and_filings_open"
     }
   ],
   "denominator_status": {
     "complete": false,
     "known_count": 6,
-    "meaning_of_known_count": "Six procuradores/procuradoras have now been promoted from located primary procedural material. This is a verified minimum, not the complete denominator.",
-    "next_action": "Continue scanning pleadings, LexNET receipts, poderes, apud acta, notifications, autos, providencias, diligencias, decretos and appeals across every connected proceeding, beginning with Concurso 36/2012 and its piezas/incidentes."
+    "meaning_of_known_count": "Six procuradores/procuradoras have been promoted from located primary procedural material. DP 748/2026 adds verified proceeding-period linkage for the already-known Adriana Hernández Díaz; it does not increase the procurador denominator.",
+    "next_action": "Continue scanning connected proceedings; P0 reconcile the DP 748/2026 subsidiary-appeal processing and underlying authority instrument."
   }
 }
