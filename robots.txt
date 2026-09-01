@@ -54,3 +54,4 @@ Sitemap: https://sbu001monterecco.github.io/por-derecho/sitemap-acosta-matos-fam
 Sitemap: https://sbu001monterecco.github.io/por-derecho/sitemap-concurso36-controlling-conclusions.xml
 Sitemap: https://sbu001monterecco.github.io/por-derecho/sitemap-canary-ric-public-debt.xml
 Sitemap: https://sbu001monterecco.github.io/por-derecho/sitemap-treasury-transparency-7-2026.xml
+Sitemap: https://sbu001monterecco.github.io/por-derecho/sitemap-hotel-platform-media.xml

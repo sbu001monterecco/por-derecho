@@ -1,0 +1,225 @@
+{
+  "schema": "por-derecho.digital-media-asset-register.v1",
+  "register_id": "PD-DMA-REG-0001",
+  "control_date": "2026-09-01",
+  "status": "ACTIVE_CANONICAL_REGISTER",
+  "caret_semantics": "A terminal caret identifies one exact byte object whose SHA-256, byte length, MIME/format and dimensions where applicable are recorded. It does not validate factual content, publication status, ownership, endorsement, knowledge, intent or legal responsibility.",
+  "namespace_separation": "PD-DMA caret references identify digital/media files. They are separate from CAEPR person/entity identity carets and must not be conflated.",
+  "governance": ".github/governance/DIGITAL_MEDIA_ASSET_CARET_IDENTITY_STANDARD_01SEP2026.md",
+  "source_claims": [
+    {
+      "id": "SRC-CH-ABOUT-20260901",
+      "source_type": "COMPANY_SELF_DESCRIPTION",
+      "publisher": "Canarian Hospitality",
+      "claim": "The company states that in five years it progressed from launch/its first hotel in 2021 to 12 hotels, approximately 2,500 rooms and more than EUR 100m in sales in 2025.",
+      "url": "https://canarianhospitality.com/quienes-somos/"
+    },
+    {
+      "id": "SRC-CINCO-DIAS-20260204",
+      "source_type": "PRESS_REPORT_OF_EXECUTIVE_STATEMENT",
+      "publisher": "Cinco Días",
+      "claim": "The 4 February 2026 article reports CEO figures of EUR 44m for 2024, around EUR 50m for 2025 and a EUR 60m forecast for 2026 for the management company.",
+      "url": "https://cincodias.elpais.com/companias/2026-02-04/la-gestora-canarian-hospitality-firma-su-noveno-hotel-en-el-archipielago-y-el-tercero-con-radisson.html"
+    }
+  ],
+  "families": [
+    {
+      "family_id": "PD-DMA-FAM-AMHP-001",
+      "title": "Acosta Matos / Canarian Hospitality hotel-platform satire and public-interest explanation",
+      "scope": "Visual family distinguishing hotel sales under management, the manager's own turnover, ownership/equity, management/operation, brand, capital, RIC/RICPE, construction, mandates/advice and media visibility.",
+      "current_primary_es": "PD-DMA-0001",
+      "current_primary_en": "PD-DMA-0002",
+      "corrected_prior_style_variants": ["PD-DMA-0003", "PD-DMA-0004"],
+      "mandatory_boundary": "Managed-hotel sales and the management company's own reported turnover are different measures and must not be mechanically added. Platform proximity does not establish common ownership, shared knowledge or shared responsibility."
+    }
+  ],
+  "logical_assets": [
+    {
+      "reference": "PD-DMA-0001",
+      "family_id": "PD-DMA-FAM-AMHP-001",
+      "title": "12 hoteles · 2.500 habitaciones · +100 M€ — No es lo mismo",
+      "language": "es",
+      "edition": "PRIMARY_SPANISH_PUBLICATION",
+      "publication_status": "PUBLIC",
+      "web_file": "PD-DMA-0001^",
+      "outreach_png": "PD-DMA-0001-PNG^",
+      "sources": ["SRC-CH-ABOUT-20260901", "SRC-CINCO-DIAS-20260204"]
+    },
+    {
+      "reference": "PD-DMA-0002",
+      "family_id": "PD-DMA-FAM-AMHP-001",
+      "title": "12 hotels · 2,500 rooms · EUR 100m+ — Not the same thing",
+      "language": "en",
+      "edition": "PRIMARY_ENGLISH_PUBLICATION",
+      "publication_status": "PUBLIC",
+      "web_file": "PD-DMA-0002^",
+      "outreach_png": "PD-DMA-0002-PNG^",
+      "sources": ["SRC-CH-ABOUT-20260901", "SRC-CINCO-DIAS-20260204"]
+    },
+    {
+      "reference": "PD-DMA-0003",
+      "family_id": "PD-DMA-FAM-AMHP-001",
+      "title": "Catálogo satírico de la plataforma hotelera",
+      "language": "es",
+      "edition": "CORRECTED_PRIOR_STYLE_ONE",
+      "publication_status": "PUBLIC_VARIANT",
+      "web_file": "PD-DMA-0003^",
+      "outreach_png": "PD-DMA-0003-PNG^",
+      "sources": ["SRC-CH-ABOUT-20260901", "SRC-CINCO-DIAS-20260204"]
+    },
+    {
+      "reference": "PD-DMA-0004",
+      "family_id": "PD-DMA-FAM-AMHP-001",
+      "title": "Gran liquidación satírica del perímetro",
+      "language": "es",
+      "edition": "CORRECTED_PRIOR_STYLE_TWO",
+      "publication_status": "PUBLIC_VARIANT",
+      "web_file": "PD-DMA-0004^",
+      "outreach_png": "PD-DMA-0004-PNG^",
+      "sources": ["SRC-CH-ABOUT-20260901", "SRC-CINCO-DIAS-20260204"]
+    }
+  ],
+  "files": [
+    {
+      "reference": "PD-DMA-0001^",
+      "logical_asset": "PD-DMA-0001",
+      "role": "PUBLIC_WEB_VECTOR",
+      "repository_path": "assets/media/pd-dma-0001-es.svg",
+      "public_url": "/assets/media/pd-dma-0001-es.svg",
+      "mime": "image/svg+xml",
+      "viewbox_width": 1000,
+      "viewbox_height": 1250,
+      "bytes": 10401,
+      "sha256": "f0b301793227e217a0c594331291096de747592ee8748eaebc0778d1522f422b",
+      "repository_mirror": true,
+      "publication_status": "PUBLIC"
+    },
+    {
+      "reference": "PD-DMA-0001-PNG^",
+      "logical_asset": "PD-DMA-0001",
+      "role": "FULL_RESOLUTION_OUTREACH_MASTER",
+      "source_filename": "12_hotels_100m_not_the_same.png",
+      "mime": "image/png",
+      "width_px": 1122,
+      "height_px": 1402,
+      "bytes": 2229301,
+      "sha256": "3958fcd906b53c43f25f469573734cb3cf6851f6b92e9bf116557a094aa3d881",
+      "repository_mirror": false,
+      "repository_mirror_gap": "Hash-locked original is preserved outside the repository binary mirror; website serves PD-DMA-0001^.",
+      "intended_channels": ["LinkedIn", "email attachment", "archive"]
+    },
+    {
+      "reference": "PD-DMA-0002^",
+      "logical_asset": "PD-DMA-0002",
+      "role": "PUBLIC_WEB_VECTOR",
+      "repository_path": "assets/media/pd-dma-0002-en.svg",
+      "public_url": "/assets/media/pd-dma-0002-en.svg",
+      "mime": "image/svg+xml",
+      "viewbox_width": 1000,
+      "viewbox_height": 1250,
+      "bytes": 10334,
+      "sha256": "70ae7fcd9797c3f769553712416a7c1c034dad7457513dd12fefb847771abb49",
+      "repository_mirror": true,
+      "publication_status": "PUBLIC"
+    },
+    {
+      "reference": "PD-DMA-0002-PNG^",
+      "logical_asset": "PD-DMA-0002",
+      "role": "FULL_RESOLUTION_OUTREACH_MASTER",
+      "source_filename": "12_hotels_100m_not_the_same_EN.png",
+      "mime": "image/png",
+      "width_px": 1200,
+      "height_px": 1500,
+      "bytes": 239753,
+      "sha256": "b0616f945d145080ad3053f5e5c08f3f1b7620d10e8ec24547043c895a6e039f",
+      "repository_mirror": false,
+      "repository_mirror_gap": "Hash-locked original is preserved outside the repository binary mirror; website serves PD-DMA-0002^.",
+      "intended_channels": ["LinkedIn", "email attachment", "archive"]
+    },
+    {
+      "reference": "PD-DMA-0003^",
+      "logical_asset": "PD-DMA-0003",
+      "role": "PUBLIC_WEB_VECTOR",
+      "repository_path": "assets/media/pd-dma-0003-es.svg",
+      "public_url": "/assets/media/pd-dma-0003-es.svg",
+      "mime": "image/svg+xml",
+      "viewbox_width": 1000,
+      "viewbox_height": 1250,
+      "bytes": 13773,
+      "sha256": "6f2bcb6ed10b198871dcc60ea09e36b2a250b75d9959817d3e0191854f434f38",
+      "repository_mirror": true,
+      "publication_status": "PUBLIC_VARIANT"
+    },
+    {
+      "reference": "PD-DMA-0003-PNG^",
+      "logical_asset": "PD-DMA-0003",
+      "role": "FULL_RESOLUTION_OUTREACH_MASTER",
+      "source_filename": "plataforma_hotelera_catalogo_satirico_v1.png",
+      "mime": "image/png",
+      "width_px": 1200,
+      "height_px": 1500,
+      "bytes": 204794,
+      "sha256": "1bd492c1858bc911d14bbd046c5bb501947d4076c91472cdfe3f655927da113b",
+      "repository_mirror": false,
+      "repository_mirror_gap": "Hash-locked original is preserved outside the repository binary mirror; website serves PD-DMA-0003^."
+    },
+    {
+      "reference": "PD-DMA-0004^",
+      "logical_asset": "PD-DMA-0004",
+      "role": "PUBLIC_WEB_VECTOR",
+      "repository_path": "assets/media/pd-dma-0004-es.svg",
+      "public_url": "/assets/media/pd-dma-0004-es.svg",
+      "mime": "image/svg+xml",
+      "viewbox_width": 1000,
+      "viewbox_height": 1250,
+      "bytes": 12910,
+      "sha256": "204b048051026680fcbe68c764c4cfff9fe2569abf3ebfb73db2abec4996ad58",
+      "repository_mirror": true,
+      "publication_status": "PUBLIC_VARIANT"
+    },
+    {
+      "reference": "PD-DMA-0004-PNG^",
+      "logical_asset": "PD-DMA-0004",
+      "role": "FULL_RESOLUTION_OUTREACH_MASTER",
+      "source_filename": "perimetro_liquidacion_satirica_v2.png",
+      "mime": "image/png",
+      "width_px": 1200,
+      "height_px": 1500,
+      "bytes": 184214,
+      "sha256": "125d1b0b07e6fffd8734e84017d9f0cc529f6a8ef6a534af2439c3cf74305c5f",
+      "repository_mirror": false,
+      "repository_mirror_gap": "Hash-locked original is preserved outside the repository binary mirror; website serves PD-DMA-0004^."
+    },
+    {
+      "reference": "PD-DMA-LEGACY-0001-PNG^",
+      "role": "QUARANTINED_DESIGN_REFERENCE",
+      "source_filename": "a_large_high_contrast_poster_style_infographic.png",
+      "mime": "image/png",
+      "width_px": 1024,
+      "height_px": 1536,
+      "bytes": 2367806,
+      "sha256": "f62c18c633fd9a3ce48944cefa3e7a4c74dbf4a388bae64e5064505049e73e33",
+      "publication_status": "DO_NOT_PUBLISH_UNCHANGED",
+      "reason": "Earlier concept contains inherited hotel labels, portraits and apparent ownership/role implications that are not the canonical factual roster."
+    },
+    {
+      "reference": "PD-DMA-LEGACY-0002-PNG^",
+      "role": "QUARANTINED_DESIGN_REFERENCE",
+      "source_filename": "satirical_resort_clearance_poster.png",
+      "mime": "image/png",
+      "width_px": 1122,
+      "height_px": 1402,
+      "bytes": 2791925,
+      "sha256": "09da584fc4437d55c732191488d6054d8039ea86a81255577b81cbc12e6393aa",
+      "publication_status": "DO_NOT_PUBLISH_UNCHANGED",
+      "reason": "Earlier concept may guide visual rhythm but its inherited roster, portraits and named sales-team framing are not approved factual content."
+    }
+  ],
+  "public_routes": {
+    "family_es": "/es/acosta-matos-plataforma-hotelera/",
+    "family_en": "/en/acosta-matos-hotel-platform/",
+    "register_es": "/es/registro-activos-digitales/",
+    "register_en": "/en/digital-media-asset-register/"
+  },
+  "correction_rule": "A translation, crop, re-export, compression, text correction or redesign is a new exact file identity. Prior hashes remain preserved and are never silently reused."
+}
