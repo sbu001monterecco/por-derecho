@@ -1,6 +1,6 @@
 {
   "schema": "por-derecho-counsel-filing-register-v1",
-  "as_of": "2026-08-30",
+  "as_of": "2026-09-01",
   "status": "initialized_not_complete_denominator",
   "governance": "archive/COUNSEL_PROCURADOR_FILING_LINEAGE_GOVERNANCE_30AUG2026.md",
   "proceedings_protocol": "archive/PROCEEDINGS_MASTER_REGISTER_PROTOCOL.md",
@@ -58,9 +58,7 @@
     },
     {
       "display_name": "Cristo Ayose Suárez Pimentel",
-      "aliases": [
-        "Cristro Suarez Pimentel"
-      ],
+      "aliases": ["Cristro Suarez Pimentel"],
       "side_perimeter": "our_former_counsel",
       "our_perimeter": true,
       "register_status": "canonical_identity_resolved_historic_filing_population_required",
@@ -76,10 +74,7 @@
     },
     {
       "display_name": "Javier Sixto Seijas",
-      "aliases": [
-        "Javier",
-        "Javier Sixto"
-      ],
+      "aliases": ["Javier", "Javier Sixto"],
       "side_perimeter": "our_counsel",
       "our_perimeter": true,
       "working_relationship": "professional_pair_with_Estefania",
@@ -102,11 +97,7 @@
           "filing_title": "Alegaciones al recurso de reposición de la Administración Concursal",
           "document_ref": "ES07 - 11 - Alegaciones R_Reposicion AC - LPB.pdf",
           "position_relief": "LPB submissions opposing/treating the AC reposición and addressing supervening loss of interest, as stated in the located pleading; full merits crosswalk remains source-led.",
-          "evidence_refs": [
-            "ES07 - 11 - Alegaciones R_Reposicion AC - LPB.pdf",
-            "2025_0003304_RPL_1202610902298119_20260724104735(1).pdf",
-            "NIG 3501647120120000351"
-          ],
+          "evidence_refs": ["ES07 - 11 - Alegaciones R_Reposicion AC - LPB.pdf", "2025_0003304_RPL_1202610902298119_20260724104735(1).pdf", "NIG 3501647120120000351"],
           "court_laj_response_ref": null,
           "court_laj_response_status": "not_yet_linked_in_this_register",
           "result": "open_not_determined_by_this_source_pair",
@@ -132,10 +123,7 @@
           "filing_title": "Alegaciones al recurso de reposición de la Administración Concursal",
           "document_ref": "ES07 - 11 - Alegaciones R_Reposicion AC - AW.pdf",
           "position_relief": "Aweswell submissions in RPL 3304/2025 concerning the AC reposición; exact normalized presentation time and downstream judicial treatment remain to be linked from the source record.",
-          "evidence_refs": [
-            "ES07 - 11 - Alegaciones R_Reposicion AC - AW.pdf",
-            "2025_0003304_RPL_120261090229678120260724114535_000_RESUMEN.pdf"
-          ],
+          "evidence_refs": ["ES07 - 11 - Alegaciones R_Reposicion AC - AW.pdf", "2025_0003304_RPL_120261090229678120260724114535_000_RESUMEN.pdf"],
           "court_laj_response_ref": null,
           "court_laj_response_status": "not_yet_linked_in_this_register",
           "result": "open_not_determined_by_this_source_pair",
@@ -149,10 +137,7 @@
     },
     {
       "display_name": "Estefanía Sixto Seijas",
-      "aliases": [
-        "Estefanía",
-        "Estefania Sixto Seijas"
-      ],
+      "aliases": ["Estefanía", "Estefania Sixto Seijas"],
       "side_perimeter": "our_counsel",
       "our_perimeter": true,
       "working_relationship": "professional_pair_with_Javier",
@@ -161,26 +146,104 @@
       "filings": []
     },
     {
-      "display_name": "Juan Daniel Fajardo Expósito", "side_perimeter": "external_or_party_specific_counsel", "our_perimeter": false,
-      "register_status": "Rollo_1010_2018_cover_appearance_located_filings_and_authority_open",
-      "located_appearances": [{"proceeding_id":"Rollo 1010/2018","client_party":"Gil Marer","procurador":"Andrés Castellano Rivero","source_ref":"archive/ROLLO_1010_2018_AUTO_804_CARET_INTERLINK_CONTROL_30AUG2026.md"}], "filings": []
+      "display_name": "Carlos Llamas Sanz",
+      "caepr_id": "PD-SP-P-0146",
+      "side_perimeter": "our_counsel",
+      "our_perimeter": true,
+      "register_status": "DP748_primary_source_population_started_denominator_not_complete",
+      "located_appearances": [
+        {
+          "proceeding_id": "DP 748/2026",
+          "client_party": "Gil Marer",
+          "procurador": "Adriana Hernández Díaz",
+          "source_ref": "assets/data/dp748-2026-canonical-interlink-control-v1.json"
+        }
+      ],
+      "filings": [
+        {
+          "filing_id": "DP748-2026-GIL-20260417-REFORMA-SUB-APELACION",
+          "lawyer": "Carlos Llamas Sanz",
+          "side_perimeter": "our_counsel",
+          "client_party": "Gil Marer",
+          "procurador": "Adriana Hernández Díaz",
+          "procurador_status": "verified_primary_lexnet_source",
+          "authority_personacion_status": "representation is source-verified for the proceeding/period; underlying poder/apud-acta/personación instrument is not yet separately linked",
+          "proceeding_id": "DP 748/2026",
+          "pieza_incidente": "recurso_de_reforma_y_subsidiario_de_apelacion",
+          "court_body": "Plaza nº 4 del Tribunal de Instancia (Sección Instrucción) de San Cristóbal de La Laguna",
+          "filing_date": "2026-04-17",
+          "presentation_datetime": "2026-04-17 14:29:10",
+          "filing_title": "Recurso de reforma y subsidiario de apelación contra Auto 454/2026 de 24-Mar-2026",
+          "document_ref": "DP748-SRC-20260417-LEXNET",
+          "position_relief": "Challenge to the provisional dismissal/archive. Complete relief remains controlled by the signed filing and is not expanded from the filing-control source alone.",
+          "evidence_refs": ["DP748-SRC-20260417-LEXNET", "DP748-2026-20260324-AUTO454"],
+          "court_laj_response_ref": "DP748-2026-20260716-ORDER",
+          "court_laj_response_status": "16-Jul-2026 reform order located: partial uphold as to lack of reasoning; provisional dismissal maintained",
+          "result": "reforma_partially_upheld_reasoning_defect_archive_maintained",
+          "appeal_followup_ref": "TF-APP-004",
+          "appeal_followup_status": "OPEN_P0_subsidiary_appeal_filed_but_admission_transmission_or_appellate_roll_not_yet_verified",
+          "timeline_event_ref": "DP748-2026-20260417-REFORMA-SUB-APELACION",
+          "source_confidence": "high_primary_procedural_source",
+          "verification_status": "filed_lexnet_source_verified"
+        },
+        {
+          "filing_id": "DP748-2026-GIL-20260626-SINTESIS",
+          "lawyer": "Carlos Llamas Sanz",
+          "side_perimeter": "our_counsel",
+          "client_party": "Gil Marer",
+          "procurador": "Adriana Hernández Díaz",
+          "procurador_status": "verified_primary_lexnet_source",
+          "authority_personacion_status": "representation is source-verified for the proceeding/period; underlying authority instrument is not yet separately linked",
+          "proceeding_id": "DP 748/2026",
+          "pieza_incidente": "sintesis_concrecion_hechos",
+          "court_body": "Plaza nº 4 del Tribunal de Instancia (Sección Instrucción) de San Cristóbal de La Laguna",
+          "filing_date": "2026-06-26",
+          "presentation_datetime": "2026-06-26 00:22:46",
+          "filing_title": "Escrito de síntesis / concreción en DP 748/2026",
+          "document_ref": "DP748-SRC-20260626-LEXNET",
+          "position_relief": "Source verifies a synthesis/concreción filing in the pending reform/subsidiary-appeal lane; complete merits remain controlled by the signed pleading.",
+          "evidence_refs": ["DP748-SRC-20260626-LEXNET"],
+          "court_laj_response_ref": "DP748-2026-20260716-ORDER",
+          "court_laj_response_status": "later 16-Jul-2026 reform order located",
+          "result": "considered_with_reform_lane_exact_individual_treatment_not_separately_stated",
+          "appeal_followup_ref": "TF-APP-004",
+          "appeal_followup_status": "OPEN_P0_reconcile_subsidiary_appeal_processing_after_16Jul_order_and_1Sep_notification",
+          "timeline_event_ref": "DP748-2026-20260626-SINTESIS",
+          "source_confidence": "high_primary_procedural_source",
+          "verification_status": "filed_lexnet_source_verified"
+        }
+      ]
     },
     {
-      "display_name": "Ignacio Manuel Martín Marrero", "side_perimeter": "external_or_party_specific_counsel", "our_perimeter": false,
+      "display_name": "Juan Daniel Fajardo Expósito",
+      "side_perimeter": "external_or_party_specific_counsel",
+      "our_perimeter": false,
       "register_status": "Rollo_1010_2018_cover_appearance_located_filings_and_authority_open",
-      "located_appearances": [{"proceeding_id":"Rollo 1010/2018","client_party":"Constructora Acosta Matos; Laura Patricia Acosta Matos; José Daniel Acosta Matos","procurador":"José Ángel Rodríguez Gil","source_ref":"archive/ROLLO_1010_2018_AUTO_804_CARET_INTERLINK_CONTROL_30AUG2026.md"}], "filings": []
+      "located_appearances": [{"proceeding_id":"Rollo 1010/2018","client_party":"Gil Marer","procurador":"Andrés Castellano Rivero","source_ref":"archive/ROLLO_1010_2018_AUTO_804_CARET_INTERLINK_CONTROL_30AUG2026.md"}],
+      "filings": []
     },
     {
-      "display_name": "Juan Carlos Prieto Puente", "side_perimeter": "external_opposing_dissident_side", "our_perimeter": false,
+      "display_name": "Ignacio Manuel Martín Marrero",
+      "side_perimeter": "external_or_party_specific_counsel",
+      "our_perimeter": false,
       "register_status": "Rollo_1010_2018_cover_appearance_located_filings_and_authority_open",
-      "located_appearances": [{"proceeding_id":"Rollo 1010/2018","client_party":"Antonio Cogolludo Rojas; Shaila María Cogolludo Ramos","procurador":"Soledad Tello Checa","source_ref":"archive/ROLLO_1010_2018_AUTO_804_CARET_INTERLINK_CONTROL_30AUG2026.md"}], "filings": []
+      "located_appearances": [{"proceeding_id":"Rollo 1010/2018","client_party":"Constructora Acosta Matos; Laura Patricia Acosta Matos; José Daniel Acosta Matos","procurador":"José Ángel Rodríguez Gil","source_ref":"archive/ROLLO_1010_2018_AUTO_804_CARET_INTERLINK_CONTROL_30AUG2026.md"}],
+      "filings": []
+    },
+    {
+      "display_name": "Juan Carlos Prieto Puente",
+      "side_perimeter": "external_opposing_dissident_side",
+      "our_perimeter": false,
+      "register_status": "Rollo_1010_2018_cover_appearance_located_filings_and_authority_open",
+      "located_appearances": [{"proceeding_id":"Rollo 1010/2018","client_party":"Antonio Cogolludo Rojas; Shaila María Cogolludo Ramos","procurador":"Soledad Tello Checa","source_ref":"archive/ROLLO_1010_2018_AUTO_804_CARET_INTERLINK_CONTROL_30AUG2026.md"}],
+      "filings": []
     }
   ],
   "global_scan_status": {
     "complete_lawyer_denominator": false,
     "complete_filing_denominator": false,
     "complete_procurador_denominator": false,
-    "verified_filing_count_in_this_register": 2,
-    "reason": "Source population has begun with two verified RPL 3304/2025 filings attributed to Javier Sixto Seijas and three lawyer appearances on the Rollo 1010/2018 cover. Cover appearances are not promoted as filings. Full primary-source corpus ingestion and reconciliation remains required before any denominator-completeness claim."
+    "verified_filing_count_in_this_register": 4,
+    "reason": "Two verified RPL 3304/2025 filings and two verified DP 748/2026 filings are promoted. DP 748 includes a source-verified subsidiary appeal filing, while downstream admission/transmission/appellate-roll evidence remains an explicit P0 gap rather than being inferred."
   }
 }
