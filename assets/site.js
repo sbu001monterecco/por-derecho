@@ -97,6 +97,15 @@
     document.head.appendChild(media);
   };
 
+  const loadJoanCruzMultitrack = () => {
+    if (document.querySelector('script[data-joan-cruz-multitrack-loader]')) return;
+    const multitrack = document.createElement('script');
+    multitrack.src = new URL('joan-cruz-multitrack-crosslinks-20260901.js?v=20260901a', current.src).href;
+    multitrack.async = false;
+    multitrack.setAttribute('data-joan-cruz-multitrack-loader', '20260901a');
+    document.head.appendChild(multitrack);
+  };
+
   // Preserve the complete site loader that existed before this visual update.
   const prior = document.createElement('script');
   prior.src = new URL('site-pre-treasury-154-hq-20260828.js?v=20260828a', current.src).href;
@@ -110,4 +119,5 @@
   loadCuatrecasasBookCover();
   loadActaAuthorityInterlink();
   loadAcostaHotelPlatformMedia();
+  loadJoanCruzMultitrack();
 })();
