@@ -221,7 +221,14 @@
       "script": "scripts/verify_pwc_carlos_saavedra_live.py",
       "workflow": ".github/workflows/verify-pwc-carlos-saavedra-live.yml",
       "scope": "Exact live byte parity, source hashes, bilingual markers, portrait bytes, 32/35 PwC ledger, 336-ID registry, 21/24 unitary ledger and collision-safe authority-graph transition.",
-      "gate": "CLOSEOUT_PULL_REQUEST_AND_EVERY_RELEVANT_MAIN_PUSH"
+      "gate": "CLOSEOUT_PULL_REQUEST_AND_EVERY_RELEVANT_MAIN_PUSH",
+      "closeout_pull_request": 1333,
+      "run_id": 33544595557,
+      "job_id": 99978862378,
+      "checked_at": "2026-09-01T18:36:30.399717Z",
+      "status": "EXACT_LIVE_BYTES_MARKERS_AND_FINITE_CONTROLS_PASS",
+      "resources_checked": 9,
+      "live_sha256_match_release_source": true
     }
   },
   "evidential_boundaries": [

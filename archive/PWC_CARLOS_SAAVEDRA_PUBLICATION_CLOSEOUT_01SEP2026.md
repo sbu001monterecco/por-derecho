@@ -23,7 +23,7 @@ GitHub Pages run [33542787869](https://github.com/sbu001monterecco/por-derecho/a
 
 Direct browser inspection after deployment confirmed the canonical Spanish URL and title, the Carlos Saavedra identity caret, the rendered 800 × 800 portrait, `32/35`, `PARCIAL — NO TODO ES^`, the 12–16 May and 6–10 June source-safe additions, and collision-safe CNMV ID `PD-SP-I-0042`.
 
-The dedicated verifier `scripts/verify_pwc_carlos_saavedra_live.py` checks exact live byte parity for both pages, the portrait, PwC ledger, current identity/caret surfaces and the registered authority-graph successor. Its workflow runs on the closeout pull request and every relevant main push.
+The dedicated verifier `scripts/verify_pwc_carlos_saavedra_live.py` checks exact live byte parity for both pages, the portrait, PwC ledger, current identity/caret surfaces and the registered authority-graph successor. [Closeout workflow run 33544595557](https://github.com/sbu001monterecco/por-derecho/actions/runs/33544595557) passed all nine checks at `2026-09-01T18:36:30.399717Z`; its workflow also runs on every relevant main push.
 
 ## Finite public result
 
