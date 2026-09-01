@@ -64,7 +64,7 @@
         "PERSON": 157,
         "ORGANISATION": 83,
         "STRUCTURE": 11,
-        "INSTITUTION": 42,
+        "INSTITUTION": 43,
         "PROCEEDING": 43
       },
       "candidate_state": "LOCAL_SOURCE_STATIC_CANDIDATE_NOT_YET_LIVE_VERIFIED",

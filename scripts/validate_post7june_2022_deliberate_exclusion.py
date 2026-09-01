@@ -198,11 +198,11 @@ def main() -> int:
     require("PD-SP-P-0093" in actors and "PD-SP-P-0094" in actors, "Javier/Gerardo actor rows missing")
 
     require(registry["counts"] == {
-        "total": 341,
+        "total": 342,
         "PERSON": 162,
         "ORGANISATION": 83,
         "STRUCTURE": 11,
-        "INSTITUTION": 42,
+        "INSTITUTION": 43,
         "PROCEEDING": 43,
     }, "master registry counts mismatch")
     by_id = {item["id"]: item for item in people}
@@ -291,7 +291,7 @@ def main() -> int:
         "'total': 341",
         "'PERSON': 162",
         "'ORGANISATION': 83",
-        "data-static-registry-counts=\"341-162-83-11-42-43\"",
+        "data-static-registry-counts=\"342-162-83-11-43-43\"",
         "identity_registry_parity'] == 204",
         "'identity_source_current': 341",
         "'specialist_historical_identity_snapshot': 204",

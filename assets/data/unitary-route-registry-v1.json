@@ -2048,5 +2048,23 @@
     "summary": "Registro público seguro derivado de fuente de presentaciones Red SARA/AGE individualizadas, índice de adjuntos indicados en justificantes y respuestas institucionales entrantes. Un justificante o aviso no prueba tramitación de fondo.",
     "tags": ["Red SARA", "AGE", "REGAGE", "respuestas de autoridades", "comunicaciones institucionales", "índice de adjuntos"],
     "aliases": ["Intervención General", "184368/2026", "497011/2026", "699645/2026", "Yaiza", "Cabildo de Lanzarote", "REGAGE26e00072883405", "SNCA", "141-2026-IRR02", "registro RedSARA"]
+  },
+  {
+    "lang": "en",
+    "path": "en/authority-redsara-deletion-safety-closeout/",
+    "title": "Authority / Red SARA deletion-safety and caret closeout",
+    "type": "governance",
+    "summary": "Independent 24/24 preservation audit, exact live-byte readback and finite 1/3 CAEPR caret census, with evidence-dependent gaps preserved open.",
+    "tags": ["deletion safety", "continuity", "CAEPR", "caret", "Red SARA", "Intervención General"],
+    "aliases": ["PD-AUTH-REDSARA-DELETE-CARET-20260901-01", "PD-SP-I-0043", "authority closeout"]
+  },
+  {
+    "lang": "es",
+    "path": "es/cierre-seguridad-borrado-autoridades-redsara/",
+    "title": "Cierre de seguridad de borrado y caret · autoridades / Red SARA",
+    "type": "governance",
+    "summary": "Auditoría independiente de preservación 24/24, relectura exacta de bytes y censo CAEPR finito 1/3, manteniendo abiertas las brechas dependientes de fuente.",
+    "tags": ["seguridad de borrado", "continuidad", "CAEPR", "caret", "Red SARA", "Intervención General"],
+    "aliases": ["PD-AUTH-REDSARA-DELETE-CARET-20260901-01", "PD-SP-I-0043", "cierre autoridades"]
   }
 ]

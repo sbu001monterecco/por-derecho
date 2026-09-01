@@ -20,6 +20,7 @@ INTERVENCION_RESPONSE = ROOT / "es/intervencion-general-699645-2026/index.html"
 COMMUNICATIONS = ROOT / "assets/data/institutional-communications-register-v1.json"
 CAEPR_PROFESSIONAL = ROOT / "assets/data/caepr-caret-fti-meeting-point-professional-institutional-v1.json"
 CAEPR_RICPE = ROOT / "assets/data/caepr-caret-fti-meeting-point-ricpe-continuity-v1.json"
+CAEPR_INSTITUTIONS = ROOT / "assets/data/matter-identity-registry-v1.institutions.json"
 PUBLICATION_MANIFEST = ROOT / "publication-manifests/unitary-public-authority-communications-20260901.json"
 LIVE_CLOSEOUT = ROOT / "archive/UNITARY_PUBLIC_AUTHORITY_COMMUNICATIONS_LIVE_CLOSEOUT_01SEP2026.md"
 CONTROL_ID = "PD-UCF-20260901-01"
@@ -59,6 +60,7 @@ def main() -> int:
         INTERVENCION_RESPONSE,
         CAEPR_PROFESSIONAL,
         CAEPR_RICPE,
+        CAEPR_INSTITUTIONS,
         COMMUNICATIONS,
         PUBLICATION_MANIFEST,
         LIVE_CLOSEOUT,
@@ -200,9 +202,14 @@ def main() -> int:
     require(notice.get("canonical_event_id") == "PD-SP-EVT-0141", "first Intervención legacy/event crosswalk missing", errors)
     require(notice.get("commission_date") == "2026-02-24", "first Intervención Commission date changed", errors)
     require(notice.get("presentation_caret_state") == "CARET_NOT_APPLICABLE", "document must not receive a presentation caret", errors)
-    require(notice.get("issuing_institution_identity_state") == "CARET_PENDING", "institution identity must remain caret-pending until threshold closure", errors)
-    require(notice.get("caret_command_audit") == "REPAIRED_PARTIALLY_VERIFIED", "user-command caret audit state missing", errors)
-    require(notice.get("caret_command_audit_label") == "REPAIRED / PARTIALLY VERIFIED", "human-readable caret audit state missing", errors)
+    require(notice.get("issuing_institution_identity_state") == "CARET_CONFIRMED", "institution identity threshold closure missing", errors)
+    require(notice.get("issuing_institution_caepr_id") == "PD-SP-I-0043", "issuing institution CAEPR crosslink missing", errors)
+    require(notice.get("caret_command_audit") == "REPAIRED_VERIFIED_IDENTITY_OPEN_MERITS", "user-command caret audit state missing", errors)
+    require(notice.get("caret_command_audit_label") == "REPAIRED / VERIFIED IDENTITY / OPEN MERITS", "human-readable caret audit state missing", errors)
+    institutions = load(CAEPR_INSTITUTIONS).get("records", [])
+    intervention_identity = next((item for item in institutions if item.get("id") == "PD-SP-I-0043"), {})
+    require(intervention_identity.get("identity_resolution") == "CARET_CONFIRMED", "PD-SP-I-0043 is not caret-confirmed", errors)
+    require(len(intervention_identity.get("source_urls", [])) >= 2, "PD-SP-I-0043 lacks official identity sources", errors)
     authority_intervencion = next((item for item in authority.get("authority_files", []) if item.get("master_id") == "X-INT-004"), {})
     expected_intervencion_refs = ["PD-EV-UCF-INT-184368-2026", "PD-SP-EVT-0141", "PD-SP-EVT-0142", "PD-SP-EVT-0143"]
     require(authority_intervencion.get("canonical_evidence_refs") == expected_intervencion_refs, "authority register lacks the three-response canonical evidence interlink", errors)
@@ -213,7 +220,7 @@ def main() -> int:
     professional_intervencion = next((item for item in caepr_professional.get("records", []) if item.get("object_key") == "INTERVENCION_GENERAL_EXACT"), {})
     ricpe_intervencion = next((item for item in caepr_ricpe.get("records", []) if item.get("object_key") == "INTERVENCION_GENERAL"), {})
     for item, label in ((professional_intervencion, "professional CAEPR"), (ricpe_intervencion, "RICPE CAEPR")):
-        require(item.get("state") == "CARET_PENDING", f"{label}: Intervención must remain caret-pending", errors)
+        require(item.get("state") == "CARET_PENDING", f"{label}: dated predecessor snapshot changed without a successor transition", errors)
         require(item.get("label") == "Intervención General de la Comunidad Autónoma de Canarias", f"{label}: resolved regional organ name missing", errors)
         require(item.get("evidence_refs") == ["PD-EV-UCF-INT-184368-2026", "X-INT-004"], f"{label}: canonical evidence interlink missing", errors)
         require("DIR3" in item.get("next_source_needed", ""), f"{label}: remaining identity source not stated", errors)

@@ -616,11 +616,11 @@ jobs:
               'PROCEEDING': 43,
           }
           for route, language_marker in (
-              ('/es/registro-identidad-materia/', 'Los <strong>341 IDs</strong>'),
-              ('/en/matter-identity-registry/', 'The <strong>341 IDs</strong>'),
+              ('/es/registro-identidad-materia/', 'Los <strong>342 IDs</strong>'),
+              ('/en/matter-identity-registry/', 'The <strong>342 IDs</strong>'),
           ):
               registry_body = body(route)
-              assert 'data-static-registry-counts="341-162-83-11-42-43"' in registry_body
+              assert 'data-static-registry-counts="342-162-83-11-43-43"' in registry_body
               assert 'data-registry-stat="TOTAL">341' in registry_body
               assert language_marker in registry_body
 
