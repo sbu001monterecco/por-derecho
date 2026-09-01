@@ -2,14 +2,13 @@
   "schema": "por-derecho.amph-three-professionals-identity-reconciliation.v1",
   "control_id": "PD-AMHP-3P-ID-20260901",
   "control_date": "2026-09-01",
-  "status": "PARTIAL_NOT_ALL_IS_CARET",
-  "baseline_main_sha": "0f523d86853730e242d8212e98250c01ee6013db",
+  "status": "ALL_THREE_PEOPLE_CARET_CONFIRMED_EXACT_FIRM_IDENTITIES_REGISTERED_WITH_RELATIONSHIP_BOUNDARIES",
+  "baseline_main_sha": "a116f9823dab53c22139a66b43a9fbad60b305fe",
   "people": [
     {
       "name": "Francisco de Borja Rodríguez-Batllori Laffitte",
       "caepr_id": "PD-SP-P-0010",
-      "current_master_state": "REGISTERED_WITHOUT_CARET_CONFIRMED_FIELD_AT_BASELINE",
-      "identity_source_state": "SUFFICIENT_FOR_CARET_PROMOTION_SUBJECT_TO_CURRENT_MAIN_COLLISION_RERUN",
+      "current_state": "CARET_CONFIRMED_VIA_FEDERATED_RESOLUTION_OVERLAY",
       "identity_sources": [
         "BOE-B-2012-22189 — appointment in Concurso 36/2012, 6-Jun-2012",
         "BORME-A-2012-198-35",
@@ -19,50 +18,53 @@
         {
           "date": "2016-04-21",
           "edge": "EMAIL_FROM_DESPACHOSANTELMO_DOMAIN",
+          "entity_id": "PD-SP-O-0084",
           "source": "Gmail Fwd: CONVOCATORIA SUN PARK — Borja Rguez.-Batllori Laffitte <brbatllori@despachosantelmo.com>",
           "boundary": "The source establishes the sender address/domain on that message; it does not by itself establish the complete legal-employment relationship, later affiliation or responsibility of San Telmo/RSM."
         },
         {
           "date": "2026-08-22",
-          "edge": "MESSAGE_CC_TO_GRANT_THORNTON_EXTERNAL_ADDRESS",
+          "edge": "MESSAGE_CC_TO_GRANT_THORNTON_EXTERNAL_FORMAT_ADDRESS",
+          "entity_id": "PD-SP-O-0086",
           "source": "Gmail sent cross-border/FTI messages addressed in CC to borja.rodriguez-batllori.ex@es.gt.com in identified sends",
-          "boundary": "Addressing proves the outgoing message record, not present employment, delivery/read status, response, knowledge or endorsement. Current Grant Thornton affiliation must be sourced independently before a public current-role caption."
+          "boundary": "Addressing proves the outgoing message record, not present employment, delivery/read status, response, knowledge or endorsement. The current evidence does NOT establish Borja as an employee or partner of Grant Thornton Canarias."
         }
       ],
       "portrait_source": "PD-DMA-AMHP-PORTRAIT-0002^"
     },
     {
       "name": "Eduardo Sánchez Iglesias",
-      "proposed_caepr_id": "PD-SP-P-0161",
-      "id_status": "PROVISIONAL_UNTIL_CURRENT_MAIN_RERUN_AND_MASTER_ADMISSION",
-      "identity_source_state": "SOURCE_RESOLVED_CAEPR_ADMISSION_REQUIRED",
+      "caepr_id": "PD-SP-P-0161",
+      "current_state": "CARET_CONFIRMED",
       "identity_sources": [
         "Controlled 30-Nov-2021 San Telmo / RICPE webinar source and correction chain",
-        "RSM Spain public professional announcement naming Eduardo Sánchez Iglesias in the SanTelmo integration"
+        "RSM Spain public professional announcement naming Eduardo Sánchez Iglesias in the SanTelmo integration",
+        "BORME-A-2026-99-08 recording Eduardo Sánchez Iglesias among partners of RSM Spain Asesores Legales y Tributarios, S.L.P."
       ],
       "dated_professional_edges": [
         {
           "date": "2021-11-30",
           "edge": "SANTELMO_PARTNER_INTERVIEWING_RICPE_GUEST",
+          "entity_id": "PD-SP-O-0084",
           "source": "Controlled 85-page transcript/video family; PR #744 reconciliation",
           "boundary": "Eduardo Sánchez Iglesias controls the 08:08–08:12 statement attribution; Enrique Guerra is the programme guest. The source does not prove Sun Park-specific client allocation, common intent or a direct Borja–Enrique relationship."
         },
         {
           "date": "2024+",
           "edge": "RSM_INTEGRATION_PROFESSIONAL_CONTINUITY",
-          "source": "RSM Spain public announcement",
-          "boundary": "Describe as SanTelmo integration/incorporation into RSM, not an inferred statutory absorption unless corporate records establish it."
+          "entity_id": "PD-SP-O-0085",
+          "source": "RSM Spain public announcement plus BORME-A-2026-99-08",
+          "boundary": "SanTelmo integration and later partner status are distinct from any earlier Sun Park-specific mandate or information transfer."
         }
       ],
       "portrait_source": "PD-DMA-AMHP-PORTRAIT-0001^"
     },
     {
       "name": "Enrique Guerra Suárez",
-      "proposed_caepr_id": "PD-SP-P-0162",
-      "id_status": "PROVISIONAL_UNTIL_CURRENT_MAIN_RERUN_AND_MASTER_ADMISSION",
-      "identity_source_state": "SOURCE_RESOLVED_CAEPR_ADMISSION_REQUIRED",
+      "caepr_id": "PD-SP-P-0162",
+      "current_state": "CARET_CONFIRMED",
       "identity_sources": [
-        "RICPE certification dated 20-Jul-2021 / controlled 190,098-byte attachment family",
+        "RICPE certification dated 20-Jul-2021 / controlled attachment family",
         "RICPE public professional material naming Enrique Guerra Suárez",
         "Controlled 30-Nov-2021 San Telmo / RICPE event family"
       ],
@@ -70,58 +72,54 @@
         {
           "date": "2021-07-20",
           "edge": "RICPE_CERTIFICATION_SIGNATORY_OR_REPRESENTATIVE_SOURCE_LANE",
+          "entity_id": "PD-SP-O-0020",
           "source": "RICPE_Certificacion_Enrique_Guerra_20JUL2021.pdf / CERTIFICACION de Enrique Guerra Suarez 21JUL2021.pdf source family",
-          "boundary": "The source must be read for exact capacity and proposition before quoting; identity does not transfer every RICPE board/control decision to him personally."
+          "boundary": "The source must be read for exact capacity and proposition before quotation; identity does not transfer every RICPE board/control decision to him personally."
         },
         {
           "date": "2021-11-30",
           "edge": "RICPE_PROGRAMME_GUEST",
+          "entity_id": "PD-SP-O-0020",
           "source": "Controlled San Telmo / RICPE transcript/video family",
-          "boundary": "The direct Borja–Enrique Guerra relationship remains NOT ESTABLISHED in the current repository reconciliation."
+          "boundary": "The direct Borja–Enrique Guerra relationship remains NOT ESTABLISHED in the repository reconciliation."
         }
       ],
       "portrait_source": "PD-DMA-AMHP-PORTRAIT-0003^"
     }
   ],
-  "organisations_and_brands": [
+  "organisations": [
     {
       "name": "RIC Private Equity Investment Partners SCR, S.A.",
       "caepr_id": "PD-SP-O-0020",
-      "baseline_state": "REGISTERED_NO_CARET_CONFIRMED_FIELD_LOCATED_IN_BASELINE_ORGANISATION_RECORD",
-      "aliases": ["RICPE", "RIC Private Equity"],
-      "next_action": "Run exact legal-person/corporate-source identity promotion before displaying a caret after the legal entity name."
-    },
-    {
-      "name": "RSM Spain professional perimeter",
-      "caepr_id": "PD-SP-O-0044",
-      "baseline_state": "CONTROLLED_PERIMETER_LABEL_EXACT_ENTITY_MAY_REQUIRE_SOURCE",
-      "next_action": "Do not add a caret to the brand/perimeter shorthand. Resolve the exact legal person for any legal-entity claim and keep the RSM brand/professional perimeter distinct."
-    },
-    {
-      "name": "Grant Thornton professional perimeter",
-      "caepr_id": "PD-SP-O-0045",
-      "baseline_state": "CONTROLLED_PERIMETER_LABEL_EXACT_ENTITY_MAY_REQUIRE_SOURCE",
-      "next_action": "Do not add a caret to the broad professional-perimeter label. Resolve the date-specific Canary legal person before a legal-entity caret or current-affiliation statement."
+      "state": "CARET_CONFIRMED_VIA_FEDERATED_RESOLUTION_OVERLAY",
+      "identity_anchor": "CNMV official registration no. 295, 25-Oct-2019"
     },
     {
       "name": "San Telmo Abogados y Economistas, S.L.P.",
-      "baseline_state": "EXACT_LEGAL_PERSON_REQUIRES_CANONICAL_ORGANISATION_ADMISSION_OR_COLLISION_CHECK",
-      "next_action": "Admit as a separate historical legal person if current main still lacks it; preserve legal-person history separately from RSM brand/integration."
+      "caepr_id": "PD-SP-O-0084",
+      "state": "CARET_CONFIRMED"
     },
     {
-      "name": "Grant Thornton Canarias, S.L.P. / Grant Thornton Canarias, S.L.",
-      "baseline_state": "DATE_SPECIFIC_LEGAL_FORM_HISTORY_REQUIRES_CANONICAL_RECONCILIATION",
-      "next_action": "Preserve the 2025 legal-form/name change as dated corporate identity history; do not collapse historic S.L.P. and later S.L. wording into a timeless label without source dates."
+      "name": "RSM Spain Asesores Legales y Tributarios, S.L.P.",
+      "caepr_id": "PD-SP-O-0085",
+      "state": "CARET_CONFIRMED",
+      "boundary": "Use the exact legal person for legal-entity claims; RSM Spain professional perimeter PD-SP-O-0044 remains a broader multi-entity label and receives no automatic caret."
+    },
+    {
+      "name": "Grant Thornton Canarias, S.L.",
+      "caepr_id": "PD-SP-O-0086",
+      "state": "CARET_CONFIRMED",
+      "legal_form_history": "Same registry sheet GC 59943 transformed from Grant Thornton Canarias, S.L.P. to Grant Thornton Canarias, S.L. on 22-Oct-2025 (BORME-A-2025-207-35).",
+      "boundary": "This exact entity identity does not establish that Borja worked for it. The broad Grant Thornton professional perimeter PD-SP-O-0045 remains a separate umbrella label."
     }
   ],
-  "global_boundary": "Not all is ^ at this checkpoint. Person/firm names must not be displayed with a CAEPR caret until the canonical master record explicitly resolves identity. PD-DMA portrait carets are exact-file identities only and do not cure CAEPR gaps.",
-  "mandatory_rerun_before_public_graphic": [
-    "Re-fetch current main and check next-free CAEPR IDs",
-    "Promote PD-SP-P-0010 only after current-master source/collision audit",
-    "Admit Eduardo Sánchez Iglesias and Enrique Guerra Suárez to canonical person parts with immutable IDs",
-    "Resolve exact legal persons for San Telmo, RSM and Grant Thornton where the public caption requires legal-person precision",
-    "Run canonical denominator/parity synchronizer and operational identity validator",
-    "Update portrait register interlinks from proposed names to final CAEPR IDs",
-    "Do not label a direct Borja–Enrique relationship; current controlled state is NOT ESTABLISHED"
+  "global_boundary": "All three people are now caret-confirmed for identity, and the exact legal firms/entities needed for the professional-role graph are separately registered. Carets confirm identity only. They do not prove the three acted together, that Borja worked for Grant Thornton, that a direct Borja–Enrique relationship existed, or that any allegation is true.",
+  "portrait_register": "data/pd-dma-three-professionals-portrait-source-register-20260901.json",
+  "resolution_overlay": "assets/data/matter-identity-resolution-overlays-amph-three-professionals-20260901.json",
+  "remaining_open_items": [
+    "Repository binary mirroring / publication-right provenance for the three user-supplied portrait source files",
+    "Exact present-day Borja professional affiliation if a public current-affiliation caption is desired",
+    "Direct Borja–Enrique relationship remains NOT ESTABLISHED",
+    "Every proceedings/email relationship remains source- and message-specific; receipt does not prove merits or shared intent"
   ]
 }
