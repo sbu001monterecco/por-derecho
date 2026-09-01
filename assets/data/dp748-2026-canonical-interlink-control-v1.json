@@ -1,0 +1,100 @@
+{
+  "schema": "por-derecho.dp748-2026-canonical-interlink-control.v1",
+  "as_of": "2026-09-01",
+  "status": "SOURCE_RECONCILED_CANONICAL_IDS_INHERITED_APPEAL_PROCESSING_OPEN",
+  "governance": [
+    ".github/governance/CAEPR_CARET_IDENTITY_AND_ALL_IS_VERIFICATION_PROTOCOL_26AUG2026.md",
+    "archive/PROCEEDINGS_MASTER_REGISTER_PROTOCOL.md",
+    "archive/COUNSEL_PROCURADOR_FILING_LINEAGE_GOVERNANCE_30AUG2026.md"
+  ],
+  "canonical_identity_inheritance": {
+    "source": "PR #1326 / canonical main",
+    "rule": "This control inherits the canonical judicial IDs created by the La Laguna actor registration and must not mint duplicates.",
+    "judge": "PD-SP-P-0147",
+    "laj": "PD-SP-P-0148",
+    "court": "PD-SP-I-0037"
+  },
+  "proceeding": {
+    "master_id": "TF-CRI-003",
+    "caepr_id": "PD-SP-R-0003",
+    "canonical_label": "DP 748/2026 — La Laguna",
+    "procedure": "Diligencias Previas",
+    "number": "0000748/2026",
+    "nig": "3802343220260002351",
+    "jurisdiction": "Criminal",
+    "court": {
+      "caepr_id": "PD-SP-I-0037",
+      "current_name": "Plaza nº 4 del Tribunal de Instancia (Sección Instrucción) de San Cristóbal de La Laguna",
+      "historic_alias": "Juzgado de Instrucción nº 4 de San Cristóbal de La Laguna"
+    }
+  },
+  "parties": [
+    {"caepr_id": "PD-SP-P-0001", "name": "Gil Marer", "role": "denunciante"},
+    {"caepr_id": "PD-SP-O-0049", "name": "Cuatrecasas, Gonçalves Pereira, S.L.P.", "role": "denunciado", "identity_note": "The line-wrapped source header resolves to the existing canonical legal entity and does not create duplicate Cuatrecasas identities."}
+  ],
+  "professional_lineage": {
+    "complainant": {
+      "party_caepr_id": "PD-SP-P-0001",
+      "lawyer": {"caepr_id": "PD-SP-P-0146", "name": "Carlos Llamas Sanz"},
+      "procuradora": {"caepr_id": "PD-SP-P-0067", "procurador_register_id": "PROC-ADRIANA-HERNANDEZ-DIAZ", "name": "Adriana Hernández Díaz"},
+      "pairing_status": "VERIFIED_PROCEEDING_PERIOD_SPECIFIC",
+      "first_verified": "2026-04-17",
+      "latest_verified": "2026-09-01"
+    },
+    "judicial": {
+      "verified_later_order_signatory": {"caepr_id": "PD-SP-P-0147", "name": "Graciela Pérez-Valencia Díaz", "role": "Magistrada-Juez", "source_date": "2026-07-16"},
+      "verified_laj": {"caepr_id": "PD-SP-P-0148", "name": "María del Pilar Luis Medina", "role": "Letrada de la Administración de Justicia", "verified_dates": ["2026-06-15", "2026-09-01"]},
+      "24_mar_signatory": {"status": "UNRESOLVED", "gap_id": "LL-JUD-GAP-001", "rule": "Do not infer the 24-Mar-2026 Auto 454/2026 signer from later acts."}
+    }
+  },
+  "procedural_timeline": [
+    {"event_id": "DP748-2026-20260324-AUTO454", "date": "2026-03-24", "event": "Auto 454/2026 provisionally dismisses/archives DP 748/2026", "verification": "EXISTENCE_DATE_NUMBER_AND_EFFECT_CORROBORATED_BY_LATER_PRIMARY_PROCEDURAL_SOURCES", "signatory": "UNRESOLVED_LL-JUD-GAP-001"},
+    {"event_id": "DP748-2026-20260417-REFORMA-SUB-APELACION", "date": "2026-04-17", "time": "14:29:10", "event": "Gil Marer files recurso de reforma y subsidiario de apelación through the source-verified professional chain", "filing_id": "DP748-2026-GIL-20260417-REFORMA-SUB-APELACION", "verification": "PRIMARY_LEXNET_RECEIPT_VERIFIED"},
+    {"event_id": "DP748-2026-20260520-PROVIDENCIA", "date": "2026-05-20", "event": "Providencia admits/continues processing of the reform and subsidiary-appeal filing lane", "judge_caepr_id": "PD-SP-P-0147", "verification": "SIGNED_COURT_ACT_VERIFIED"},
+    {"event_id": "DP748-2026-20260615-DILIGENCIA", "date": "2026-06-15", "event": "Diligencia de Ordenación joins the Ministerio Fiscal report into the proceeding", "laj_caepr_id": "PD-SP-P-0148", "verification": "SIGNED_COURT_ACT_VERIFIED"},
+    {"event_id": "DP748-2026-20260626-SINTESIS", "date": "2026-06-26", "time": "00:22:46", "event": "Synthesis/concreción filing presented in the reform/subsidiary-appeal lane", "filing_id": "DP748-2026-GIL-20260626-SINTESIS", "verification": "PRIMARY_LEXNET_RECEIPT_VERIFIED"},
+    {"event_id": "DP748-2026-20260716-ORDER", "date": "2026-07-16", "event": "Reform partially upheld as to the acknowledged lack of reasoning in the 24-Mar order; reasons supplied; provisional dismissal/archive maintained; reopening expressly contemplated upon further indicia; the order states that it is not final and records an appeal route", "judge_caepr_id": "PD-SP-P-0147", "verification": "SIGNED_COURT_ORDER_VERIFIED"},
+    {"event_id": "DP748-2026-20260901-NOTIFICATION", "date": "2026-09-01", "event": "The 16-Jul order is communicated through the located LexNET notification lane", "laj_caepr_id": "PD-SP-P-0148", "verification": "PRIMARY_LEXNET_COMMUNICATION_VERIFIED", "time_boundary": "Source timestamps remain controlled in the private evidential source and are not used here to calculate a legal deadline."}
+  ],
+  "current_status": {
+    "dismissal": "PROVISIONAL_DISMISSAL_MAINTAINED_BY_16JUL_ORDER",
+    "reopening": "EXPRESSLY_PRESERVED_ON_FURTHER_INDICIA",
+    "subsidiary_appeal_filed": "VERIFIED_2026-04-17",
+    "subsidiary_appeal_processing": "OPEN_P0_NOT_YET_VERIFIED",
+    "appellate_placeholder": "TF-APP-004_UNVERIFIED",
+    "appellate_identity_gap": "LL-JUD-GAP-003",
+    "deadline_boundary": "The repository records the source dates and procedural route but does not replace counsel/court calculation of any applicable deadline."
+  },
+  "linked_proceedings": [
+    {"master_id": "TF-CIV-002", "reference": "ETJ 163/2020", "relation": "DIRECT_UNDERLYING_ENFORCEMENT", "note": "Keep civil and criminal procedural identities distinct."},
+    {"master_id": "TF-CIV-001", "reference": "Juicio Cambiario 1048/2019", "relation": "PREDECESSOR_TO_ETJ_ENFORCEMENT_LINEAGE"},
+    {"master_id": "TF-FIS-008", "reference": "EG 95/2026", "relation": "RELATED_FISCALIA_CONTEXT", "note": "Cross-reference only; do not merge prosecutor file with DP 748."},
+    {"master_id": "TF-XFR-005", "relation": "EVIDENCE_TRANSMISSION_CONTEXT"},
+    {"master_id": "TF-APP-004", "relation": "APPEAL_REVIEW_PLACEHOLDER", "verification": "UNVERIFIED", "promotion_rule": "Do not promote or populate appellate office-holders until admission/transmission/roll or equivalent primary source is located."}
+  ],
+  "registered_gaps": [
+    {"gap_id": "LL-JUD-GAP-001", "scope": "24-Mar-2026 Auto 454/2026 exact judicial signatory"},
+    {"gap_id": "LL-JUD-GAP-003", "scope": "Subsidiary-appeal processing, verified appellate organ/roll and any named appellate office-holders"},
+    {"gap_id": "CP-GAP-012", "scope": "Subsidiary-appeal processing / notification reconciliation"},
+    {"gap_id": "CP-GAP-013", "scope": "Complaint/ampliaciones/property/actor/evidence deficiency matrix"},
+    {"gap_id": "CP-GAP-014", "scope": "26-Jun source-description/receipt/court-treatment reconciliation"},
+    {"gap_id": "CP-GAP-015", "scope": "Underlying representation/personación instrument backlink"}
+  ],
+  "source_register": [
+    {"source_id": "DP748-SRC-20260417-LEXNET", "type": "LEXNET_FILING_RECEIPT", "date": "2026-04-17", "publication": "PUBLIC_SAFE_PROPOSITION_ONLY"},
+    {"source_id": "DP748-SRC-20260520-PROVIDENCIA", "type": "SIGNED_COURT_ACT", "date": "2026-05-20", "publication": "PUBLIC_SAFE_PROPOSITION_ONLY"},
+    {"source_id": "DP748-SRC-20260615-DILIGENCIA", "type": "SIGNED_COURT_ACT", "date": "2026-06-15", "publication": "PUBLIC_SAFE_PROPOSITION_ONLY"},
+    {"source_id": "DP748-SRC-20260626-LEXNET", "type": "LEXNET_FILING_RECEIPT", "date": "2026-06-26", "publication": "PUBLIC_SAFE_PROPOSITION_ONLY"},
+    {"source_id": "DP748-SRC-20260716-AUTO", "type": "SIGNED_COURT_ORDER", "date": "2026-07-16", "publication": "PUBLIC_SAFE_PROPOSITION_ONLY"},
+    {"source_id": "DP748-SRC-20260901-NOTIFICATION", "type": "LEXNET_NOTIFICATION_CONTROL", "date": "2026-09-01", "publication": "PUBLIC_SAFE_PROPOSITION_ONLY"}
+  ],
+  "publication_boundary": {
+    "public_summary_allowed": true,
+    "raw_private_messages": false,
+    "provider_message_ids": false,
+    "private_source_filenames": false,
+    "signed_download_urls": false,
+    "unnecessary_personal_identifiers": false,
+    "allegation_status_rule": "Registration and procedural chronology do not convert allegations against any party, professional or judicial actor into findings of criminality or liability."
+  }
+}
