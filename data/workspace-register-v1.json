@@ -100,6 +100,31 @@
       "fresh_thread_verification": "PASS_AT_CLOSEOUT_MERGE",
       "superseded_pr": 1316,
       "next_target_mode": "LIVE_PRIVATE_FILESYSTEM_OR_DRIVE_ADAPTER_THEN_TRUE_EVENT_SOURCED_CLIENT"
+    },
+    {
+      "workspace_id": "PD-WS-20260901-0004",
+      "title": "PwC / Carlos Saavedra caret completeness and first-hop evidence interlink workspace",
+      "status": "PUBLICATION_AUTHORIZED_PENDING_PR_MERGE_LIVE_VERIFICATION",
+      "current_handoff_id": "PD-WCH-20260901-PWC-CS-CARET-001",
+      "handoff_path": "archive/handoffs/2026-09-01-pwc-carlos-saavedra-caret-interlink-workspace-handoff.md",
+      "topic_keys": [
+        "PWC",
+        "CARLOS_SAAVEDRA",
+        "SUN_PARK",
+        "CARET",
+        "IDENTITY",
+        "EVENTS",
+        "EVIDENCE",
+        "INTERLINKS",
+        "MULTITRACK_RESCAN",
+        "CONTINUITY"
+      ],
+      "repository": "sbu001monterecco/por-derecho",
+      "public_private_boundary": "PUBLIC_REPO_CONTAINS_SOURCE_SAFE_CENSUS_AND_SUMMARIES; PRIVATE_SOURCE_LOCATORS_AND_NATIVE_AUDIO_WITHHELD",
+      "continuous_capture_mode": "CONNECTED_AGENTIC_CHECKPOINTING",
+      "current_main_sha_checked": "273bb621de7db5473b1223fdbc080f9c733dd038",
+      "validation_state": "LOCAL_TASK_AND_REPOSITORY_VALIDATORS_PASS; PUBLICATION_AUTHORIZED_2026-09-01",
+      "next_target_mode": "PUSH_PR_CI_MERGE_PAGES_LIVE_READBACK_AND_CLOSEOUT"
     }
   ],
   "registration_rule": "Create or recover a stable workspace ID for every substantive Por Derecho workspace when persistence-capable work begins. A workspace may span multiple ChatGPT threads; a ChatGPT thread may be superseded without changing the workspace ID.",

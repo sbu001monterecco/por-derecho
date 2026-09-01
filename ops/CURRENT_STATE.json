@@ -60,11 +60,11 @@
       "path": "assets/data/matter-identity-registry-v1.json",
       "registry_id": "PD-SP-IDENTITY-REGISTRY-001",
       "counts": {
-        "total": 313,
-        "PERSON": 144,
-        "ORGANISATION": 79,
+        "total": 336,
+        "PERSON": 157,
+        "ORGANISATION": 83,
         "STRUCTURE": 11,
-        "INSTITUTION": 36,
+        "INSTITUTION": 42,
         "PROCEEDING": 43
       },
       "candidate_state": "LOCAL_SOURCE_STATIC_CANDIDATE_NOT_YET_LIVE_VERIFIED",

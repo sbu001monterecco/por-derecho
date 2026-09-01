@@ -2,7 +2,7 @@
   "schema": "por-derecho.matter-identity-operational-control.v1",
   "control_id": "PD-SP-IDENTITY-OPS-001",
   "registry_id": "PD-SP-IDENTITY-REGISTRY-001",
-  "control_date": "2026-08-30",
+  "control_date": "2026-09-01",
   "status": "PUBLIC_OPERATIONAL_CONTROL",
   "tracker_issue": "https://github.com/sbu001monterecco/por-derecho/issues/995",
   "linked_controls": {
@@ -50,12 +50,6 @@
     }
   },
   "exact_identity_queue": [
-    {
-      "id": "PD-SP-O-0003",
-      "priority": "P0",
-      "question_es": "Confirmar razón social, jurisdicción, número registral, historial de nombre y titularidad exacta de Matkator.",
-      "question_en": "Confirm Matkator's exact legal name, jurisdiction, registry number, name history and ownership."
-    },
     {
       "id": "PD-SP-O-0008",
       "priority": "P0",

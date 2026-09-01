@@ -1,0 +1,105 @@
+{
+  "schema": "por-derecho.publication-manifest.v1",
+  "publication_id": "PD-PWC-CS-PUBLICATION-20260901-01",
+  "owner": "Por Derecho evidence governance",
+  "control_date": "2026-09-01",
+  "manifest_version": 1,
+  "title": "PwC / Carlos Saavedra first-hop identity, event and evidence package",
+  "purpose": "Govern the source-safe public release of the bilingual PwC / Carlos Saavedra pages, Carlos Saavedra's controlled portrait, the finite first-hop caret census and the synchronized current identity/caret controls without exposing private source locators or private source material.",
+  "current_state": "PR_OPEN",
+  "state": "PR_OPEN_VALIDATION_PENDING",
+  "source_base_sha": "273bb621de7db5473b1223fdbc080f9c733dd038",
+  "head_branch": "codex/pwc-carlos-saavedra-completeness",
+  "authorization": {
+    "repository_and_website_publication": true,
+    "portrait_publication": true,
+    "source_safe_summaries_derived_from_private_emails_and_files": true,
+    "push_pull_request_merge_pages_and_live_verification": true,
+    "raw_private_source_publication": false,
+    "external_contact_or_delivery": false,
+    "email_action": "HOLD_NOT_AUTHORISED",
+    "filing_or_portal_action": "HOLD_NOT_AUTHORISED",
+    "authority": "Gil Marer expressly authorised publication of the validated PwC/Carlos Saavedra package, including Carlos's portrait and source-safe summaries derived from private emails/files, through push, PR, merge, GitHub Pages deployment and live verification on 2026-09-01."
+  },
+  "expected_routes": {
+    "es": [
+      "es/pwc-canarias-carlos-saavedra-sun-park/index.html",
+      "es/registro-identidad-materia/index.html",
+      "es/verificacion-caepr-caret-digest-unitario/index.html"
+    ],
+    "en": [
+      "en/pwc-canarias-carlos-saavedra-sun-park/index.html",
+      "en/matter-identity-registry/index.html",
+      "en/caepr-caret-unitary-digest/index.html"
+    ]
+  },
+  "expected_source_files": [
+    "archive/PWC_CARLOS_SAAVEDRA_LINKEDIN_IMAGE_CARET_CONTROL_01SEP2026.md",
+    "archive/PWC_CARLOS_SAAVEDRA_TEAM_MAX_MULTITRACK_RESCAN_01SEP2026.md",
+    "archive/handoffs/2026-09-01-pwc-carlos-saavedra-caret-interlink-workspace-handoff.md",
+    "assets/actors/carlos-saavedra--linkedin-profile--20260901.jpg",
+    "assets/data/caepr-caret-pwc-carlos-saavedra-first-hop-v1.json",
+    "assets/data/caepr-caret-unitary-digest-v1.json",
+    "assets/data/community-acta-authority-interconnectivity-v1.json",
+    "assets/data/matter-identity-registry-v1.json",
+    "assets/data/matter-identity-registry-v1.people.json",
+    "assets/data/matter-identity-registry-v1.organisations.json",
+    "assets/data/matter-identity-registry-v1.institutions.json",
+    "assets/visual-asset-registry.json",
+    "scripts/validate_pwc_carlos_saavedra_caret_interlink.py",
+    "scripts/audit_proceedings_interconnectivity_map.py"
+  ],
+  "pull_request": {
+    "number": 1328,
+    "url": "https://github.com/sbu001monterecco/por-derecho/pull/1328",
+    "status": "OPEN"
+  },
+  "controlled_scope": {
+    "identity_eligible": 35,
+    "identity_confirmed": 32,
+    "identity_pending": 3,
+    "identity_suspended": 0,
+    "events_registered": 20,
+    "evidence_records_registered": 19,
+    "visual_assets_registered": 1,
+    "matter_identity_registry_ids": 336,
+    "current_unitary_caret_confirmed": 21,
+    "current_unitary_caret_eligible": 24,
+    "verdict": "PARTIAL — NOT ALL IS^"
+  },
+  "predecessor_release_transition": {
+    "policy": "FAIL_CLOSED_SUCCESSOR_COVERAGE",
+    "resource": "assets/data/community-acta-authority-interconnectivity-v1.json",
+    "predecessor_manifest": "publication-manifests/unitary-public-authority-communications-20260901.json",
+    "predecessor_publication_id": "PD-SP-UNITARY-PUBLIC-AUTHORITY-COMMS-20260901-01",
+    "predecessor_sha256": "6980b865e034a632595ceb49452bd64bd422fe0df37f21b4bf4a6dea6cf7217f",
+    "candidate_sha256": "c2cef89efc0d3f07cd88a92f9d498e1fae89ae217a78230a48b4edfd5f798c23",
+    "reason": "Regenerates only the canonical institutions-shard provenance after collision-safe CNMV identity reconciliation; the authority graph denominators, event set, authority tiers, interconnection axes and evidential assertions are unchanged. The predecessor live hash remains an immutable observation of its release."
+  },
+  "release_critical_sha256": {
+    "assets/actors/carlos-saavedra--linkedin-profile--20260901.jpg": "6abc688f2eb1aabceaa68455a8679cb48debae7afb39f39b7eb31e799493f73d",
+    "assets/data/caepr-caret-pwc-carlos-saavedra-first-hop-v1.json": "d6bcaee36593dd004bfbde1df55cc3f891bae2be2d293c0ad03fb873d7a0f879",
+    "assets/data/caepr-caret-unitary-digest-v1.json": "40033b281f4f59919673c979e63c2b35e0ce5f5069ae774e2c4f252dae62adb1",
+    "assets/data/community-acta-authority-interconnectivity-v1.json": "c2cef89efc0d3f07cd88a92f9d498e1fae89ae217a78230a48b4edfd5f798c23",
+    "assets/data/matter-identity-registry-v1.json": "17e394717032d501460ec2a84f7ff088646eed06997b0f6066422e689a0786d3",
+    "assets/data/matter-identity-registry-v1.people.json": "48bcb19ea283f38aa14c75e4494b51554120d3266d910156971adff0424f2af5",
+    "assets/data/matter-identity-registry-v1.organisations.json": "38de216f1c1a9e4e6d7d2b71b5cb33144a520571632d5b6432955d9c26d995f9",
+    "assets/data/matter-identity-registry-v1.institutions.json": "fa651d1f499dcd3f7850c61894ac9f4086742e353c763ff29078efd07a02e54d",
+    "en/pwc-canarias-carlos-saavedra-sun-park/index.html": "2ae590c1b037e587757024c5ddcd212affbf50e972a6ce5382321b6e8361acd4",
+    "es/pwc-canarias-carlos-saavedra-sun-park/index.html": "a1b496341edadeb15d58f91a08a2e13f3d049be730862b486277c3db5bfd0e54",
+    "en/matter-identity-registry/index.html": "517f7751a0c10a3090bef7179fd35e2978200f286cbd9290e5f18809b4207566",
+    "es/registro-identidad-materia/index.html": "002858a9a6639ece3e45e7f1db855dbe4f7f20800e04754b03b3951356d322c5",
+    "en/caepr-caret-unitary-digest/index.html": "af2a16ca9df4f38544ba49d50d157de8bbfefb61c119d1f13a6c5254489644ee",
+    "es/verificacion-caepr-caret-digest-unitario/index.html": "c0799222b797f3afa0c146bf76717cad1f331967828664cdc37a929e3653ea59",
+    "archive/PWC_CARLOS_SAAVEDRA_TEAM_MAX_MULTITRACK_RESCAN_01SEP2026.md": "a243ca6ee7d7c15f90ac1efed058a6cb96c05acba7b4efb3b7dd3ab8a0a14bb5"
+  },
+  "evidential_boundaries": [
+    "A_CARET_CONFIRMS_RECONCILED_IDENTITY_ONLY",
+    "EVENTS_EVIDENCE_DATES_ROLES_RELATIONSHIPS_ALLEGATIONS_AND_CONCLUSIONS_ARE_NOT_CARET_ELIGIBLE",
+    "PWC_LEGAL_ENTITIES_MEMBER_FIRMS_AND_CONTROLLED_CHANNELS_ARE_NOT_COLLAPSED",
+    "COPIED_RECEIPT_DOES_NOT_PROVE_READING_ATTENDANCE_APPROVAL_LATER_ACTION_OR_LIABILITY",
+    "PRIVATE_SOURCE_LOCATORS_ADDRESSES_ATTACHMENTS_AND_NON_PUBLIC_TEXT_ARE_NOT_PUBLISHED",
+    "SOURCE_SAFE_SUMMARIES_DO_NOT_SUBSTITUTE_FOR_THE_UNPUBLISHED_PRIMARY_SOURCE",
+    "NO_ALL_IS_CLAIM_WHILE_ANY_IDENTITY_OBJECT_REMAINS_PENDING_OR_SUSPENDED"
+  ]
+}

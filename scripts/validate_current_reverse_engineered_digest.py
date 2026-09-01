@@ -28,11 +28,11 @@ UNITARY_CARET = ROOT / "assets" / "data" / "caepr-caret-unitary-digest-v1.json"
 REGISTRY = ROOT / "assets" / "data" / "matter-identity-registry-v1.json"
 
 CURRENT_IDENTITY_COUNTS = {
-    "total": 313,
-    "PERSON": 144,
-    "ORGANISATION": 79,
+    "total": 336,
+    "PERSON": 157,
+    "ORGANISATION": 83,
     "STRUCTURE": 11,
-    "INSTITUTION": 36,
+    "INSTITUTION": 42,
     "PROCEEDING": 43,
 }
 
@@ -87,7 +87,7 @@ required_markers = [
     "PD-UNITARY-REDIGEST-20260827-01",
     "Sun Park was one economically integrated hotel platform",
     "PP 1041 is the cleanest finite production demand",
-    "20 / 24 confirmed",
+    "21 / 24 confirmed",
     "superseded",
     "33 pull requests",
     "required-status-check enforcement was off",
@@ -148,25 +148,25 @@ assert state["identity_registry"]["last_live_verified_counts"] == LAST_LIVE_IDEN
 assert registry["counts"] == CURRENT_IDENTITY_COUNTS
 assert state["caret_scope"]["control_id"] == unitary_caret["control_id"]
 assert state["caret_scope"]["control_file"] == "assets/data/caepr-caret-unitary-digest-v1.json"
-assert state["caret_scope"]["confirmed"] == 20
+assert state["caret_scope"]["confirmed"] == 21
 assert state["caret_scope"]["denominator"] == 24
-assert state["caret_scope"]["pending"] == 4
+assert state["caret_scope"]["pending"] == 3
 assert unitary_caret["result"]["confirmed"] == state["caret_scope"]["confirmed"]
 assert unitary_caret["result"]["denominator"] == state["caret_scope"]["denominator"]
 assert unitary_caret["result"]["pending"] == state["caret_scope"]["pending"]
 assert unitary_caret["result"]["suspended"] == 0
 assert unitary_caret["result"]["verdict"] == "PARTIAL_NOT_ALL_IS_CARET"
-assert len(unitary_caret["confirmed_objects"]) == 20
-assert len(unitary_caret["exceptions"]) == 4
-assert {item["id"] for item in unitary_caret["confirmed_objects"]} >= {"PD-SP-O-0075"}
+assert len(unitary_caret["confirmed_objects"]) == 21
+assert len(unitary_caret["exceptions"]) == 3
+assert {item["id"] for item in unitary_caret["confirmed_objects"]} >= {"PD-SP-O-0003", "PD-SP-O-0075"}
 assert "PD-SP-O-0033" not in {item["id"] for item in unitary_caret["confirmed_objects"]}
 assert any(
     item.get("existing_id") == "PD-SP-O-0033" and item.get("state") == "CARET_PENDING"
     for item in unitary_caret["exceptions"]
 )
 assert current_unitary_state["identity_registry"]["separate_caret_scopes"]["unitary"] == {
-    "confirmed": 20,
-    "pending": 4,
+    "confirmed": 21,
+    "pending": 3,
     "denominator": 24,
 }
 assert state["caret_scope"]["old_local_24_of_24_package"] == "SUPERSEDED_NOT_MERGEABLE_AS_IS"
@@ -174,7 +174,7 @@ assert state["source_base"]["open_pull_requests"] == 33
 assert state["source_base"]["required_status_check_enforcement"] == "off"
 
 # The exhaustive specialist census remains separate from, and may not mutate,
-# the independently controlled repository-wide current 20/24 unitary census.
+# the independently controlled repository-wide current 21/24 unitary census.
 modules = {item["module_id"]: item for item in state["specialist_modules"]}
 
 # The 27-August FTI / Meeting Point / RICPE release is additive. It must remain
@@ -584,9 +584,9 @@ if historical_manifest["current_state"] == "LIVE_VERIFIED":
 print("CURRENT REVERSE-ENGINEERED DIGEST: PASS")
 print(" - control:", state["control_id"])
 print(" - source base:", state["source_base"]["main_sha"])
-print(" - source/static identity denominator: 313 / 144 / 79 / 11 / 36 / 43")
+print(" - source/static identity denominator: 336 / 157 / 83 / 11 / 42 / 43")
 print(" - current live-verified identity snapshot: 204 / 87 / 71 / 10 / 18 / 18")
-print(" - caret scope: 20/24; 4 pending; old 24/24 package superseded")
+print(" - caret scope: 21/24; 3 pending; old 24/24 package superseded")
 print(" - separate Magistrate López Villarrubia / Meeting Point scope: 31/31 unique and 32/32 rows; all-is for stated scope")
 print(" - first-hop Magistrate López Villarrubia / Meeting Point evidence corpus: 61/130 partial")
 print(" - Magistrate López Villarrubia publication:", alberto_lifecycle, "/ lifecycle-controlled; communication and filing remain closed")

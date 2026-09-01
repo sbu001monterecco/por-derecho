@@ -12,14 +12,20 @@
     "reason": "The 28 August summary declared 21 confirmed although the current confirmed_objects array contains 20 distinct records. Admitting Clubotel La Dorada, S.L. as PD-SP-O-0075 resolves that legal person and its instrument-specific ONA-side role only; it does not resolve or collapse the distinct Ona Hotels / ONA commercial perimeter at PD-SP-O-0033.",
     "historical_record_preserved_at": "archive/CAEPR_CARET_UNITARY_DIGEST_VERIFICATION_26AUG2026.md"
   },
+  "identity_reconciliation_addendum": {
+    "date": "2026-09-01",
+    "object": "PD-SP-O-0003",
+    "result": "Matkator, S.L.U. reconciled from BORME-A-2013-246-38, entry 551984, with registry sheet TF 52875; removed from the exact-identity queue.",
+    "boundary": "Current primary NIF/status, ownership and unit/title questions remain open and are not transferred by the identity caret."
+  },
   "result": {
     "verdict": "PARTIAL_NOT_ALL_IS_CARET",
     "denominator": 24,
-    "confirmed": 20,
-    "pending": 4,
+    "confirmed": 21,
+    "pending": 3,
     "suspended": 0,
-    "coverage_fraction": "20/24",
-    "coverage_percent_exact": "83.33333333333333",
+    "coverage_fraction": "21/24",
+    "coverage_percent_exact": "87.5",
     "counts_by_type": {
       "PERSON": 1,
       "ORGANISATION": 17,
@@ -31,6 +37,7 @@
   "confirmed_objects": [
     {"id":"PD-SP-O-0001","type":"ORGANISATION","name":"Aweswell Limited","state":"CARET_CONFIRMED"},
     {"id":"PD-SP-O-0002","type":"ORGANISATION","name":"Luchy Playa Blanca, S.L.U.","state":"CARET_CONFIRMED"},
+    {"id":"PD-SP-O-0003","type":"ORGANISATION","name":"Matkator, S.L.U.","state":"CARET_CONFIRMED","identity_boundary":"Exact incorporated single-member company identity only; current primary NIF/status, ownership, unit title and substantive conduct remain separately sourced."},
     {"id":"PD-SP-O-0006","type":"ORGANISATION","name":"Comunidad de Explotación Sun Park","state":"CARET_CONFIRMED"},
     {"id":"PD-SP-O-0004","type":"ORGANISATION","name":"Pink Canary Services, S.L.U.","aliases_in_scope":["Monterecco Sun Park, S.L.U."],"state":"CARET_CONFIRMED"},
     {"id":"PD-SP-O-0029","type":"ORGANISATION","name":"Bankia, S.A.","state":"CARET_CONFIRMED"},
@@ -51,14 +58,6 @@
     {"id":"PD-SP-R-0007","type":"PROCEEDING","name":"JV 1260/2011 / AP 89/2014","state":"CARET_CONFIRMED"}
   ],
   "exceptions": [
-    {
-      "candidate":"Matkator, S.L.U.",
-      "existing_id":"PD-SP-O-0003",
-      "type":"ORGANISATION",
-      "state":"CARET_PENDING",
-      "reason":"The federated registry record still carries an exact-entity-open status even though ops/CANONICAL_ENTITY_NAMES.json records Matkator, S.L.U., NIF B76621689, sheet TF 52875 and a BORME source.",
-      "next_step":"Reconcile PD-SP-O-0003 and the operational exact-identity queue to the canonical-name control, then rerun this scope."
-    },
     {
       "candidate":"Ona Hotels / ONA",
       "existing_id":"PD-SP-O-0033",

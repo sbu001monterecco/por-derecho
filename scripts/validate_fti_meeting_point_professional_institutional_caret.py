@@ -72,15 +72,15 @@ CENSUS_HREF = "../../assets/data/caepr-caret-fti-meeting-point-professional-inst
 PAGE_COUNT_MARKERS = ("<td>8/19</td>", "<td>22/40</td>", "<td>9/24</td>", "<td>4/18</td>")
 UNITARY_TABLE_CORRECTION = {
     "S08": (
-        "<td>Unitario del repositorio</td><td>20/24</td><td>4</td>",
+        "<td>Unitario del repositorio</td><td>21/24</td><td>3</td>",
         "<td>Unitario del repositorio</td><td>21/24</td><td>3</td>",
     ),
     "S09": (
-        "<td>Repository-wide unitary</td><td>20/24</td><td>4</td>",
+        "<td>Repository-wide unitary</td><td>21/24</td><td>3</td>",
         "<td>Repository-wide unitary</td><td>21/24</td><td>3</td>",
     ),
     "S10": (
-        "<td>Repository-weite Prüfung</td><td>20/24</td><td>4</td>",
+        "<td>Repository-weite Prüfung</td><td>21/24</td><td>3</td>",
         "<td>Repository-weite Prüfung</td><td>21/24</td><td>3</td>",
     ),
 }
@@ -212,8 +212,9 @@ def validate() -> None:
     # The three continuity pages are current integrated outputs as well as
     # enumerated source surfaces. The 27-August hashes remain immutable audit
     # snapshots. The sole authorised byte-level divergence is the 31-August
-    # correction of the separate unitary table cell from historical 21/24/3 to
-    # current 20/24/4; normalize only that exact cell before comparing hashes.
+    # 1-September reconciliation returns the separate current unitary table
+    # cell to the historical 21/24/3 value; normalize that exact cell before
+    # comparing the immutable 27-August page hashes.
     for sid, rules in PAGE_RULES.items():
         surface = surface_by_id.get(sid, {})
         expected_path = str(rules["path"])
@@ -229,12 +230,12 @@ def validate() -> None:
         check(CENSUS_HREF in page, f"{sid} expanded-census JSON link missing")
         check("101/101" not in page, f"{sid} misleading 101/101 wording present")
         current_cell, historical_cell = UNITARY_TABLE_CORRECTION[sid]
-        check(page.count(current_cell) == 1, f"{sid} lacks one exact current 20/24/4 unitary table cell")
+        check(page.count(current_cell) == 1, f"{sid} lacks one exact current 21/24/3 unitary table cell")
         historical_snapshot = page.replace(current_cell, historical_cell, 1)
         current_digest = hashlib.sha256(historical_snapshot.encode("utf-8")).hexdigest()
         check(
             surface.get("sha256") == current_digest,
-            f"{sid} historical page fingerprint mismatch after controlled 31-August unitary normalization: declared {surface.get('sha256')}, normalized {current_digest}",
+            f"{sid} historical page fingerprint mismatch after controlled 1-September unitary normalization: declared {surface.get('sha256')}, normalized {current_digest}",
         )
 
     records = data.get("records", [])

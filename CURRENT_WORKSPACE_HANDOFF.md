@@ -12,6 +12,15 @@ A ChatGPT thread is a temporary working surface. A `PD-WS-*` workspace is the du
 
 ## Active and recently preserved workspaces
 
+### `PD-WS-20260901-0004` — PwC / Carlos Saavedra ^ completeness
+
+Read:
+
+1. `archive/handoffs/2026-09-01-pwc-carlos-saavedra-caret-interlink-workspace-handoff.md`
+2. `assets/data/caepr-caret-pwc-carlos-saavedra-first-hop-v1.json`
+3. `.github/governance/CAEPR_CARET_IDENTITY_AND_ALL_IS_VERIFICATION_PROTOCOL_26AUG2026.md`
+4. the PwC evidence and correction controls named by the handoff.
+
 ### `PD-WS-20260901-0003` — automatic workspace persistence runtime
 
 Read:
