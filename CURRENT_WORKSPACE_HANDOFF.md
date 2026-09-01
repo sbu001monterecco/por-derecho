@@ -2,9 +2,9 @@
 
 **Current workspace:** `PD-WS-20260901-0003`  
 **Current continuation pointer:** `PD-WCH-20260901-AWP-RUNTIME-001`  
-**Status:** `HANDOFF_READY`
+**Status:** `DELETION_SAFE_WITH_OPEN_WORK`
 
-**Implementation state:** PR `#1317` merged to `main` at `ca501751410bb3f0ad928c2b16d6d885551e7ea3`; the source-safe closeout correction is branch-only until separately merged.
+**Implementation state:** PR `#1317` merged the runtime to `main` at `ca501751410bb3f0ad928c2b16d6d885551e7ea3`; PR `#1323` merged the source-safe closeout at `aace738d2a6f913c897f20cfc468349cb038c745`, and a fresh-thread bootstrap from that merge passed.
 **Topic:** automatic workspace persistence runtime and private-vault implementation  
 **Pointer semantics:** most recently checkpointed/default workspace; **not exclusive** and not a lock over concurrent workspaces.
 

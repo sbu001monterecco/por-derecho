@@ -35,6 +35,14 @@
     "true_event_sourced_automatic_client": "CREDENTIAL_GATED_NOT_IMPLEMENTED",
     "native_all_chatgpt_thread_hook": "NOT_AVAILABLE_AND_NOT_CLAIMED"
   },
+  "publication_closeout": {
+    "implementation_pr": 1317,
+    "implementation_merge_sha": "ca501751410bb3f0ad928c2b16d6d885551e7ea3",
+    "source_safe_closeout_pr": 1323,
+    "source_safe_closeout_merge_sha": "aace738d2a6f913c897f20cfc468349cb038c745",
+    "fresh_thread_verification": "PASS",
+    "deletion_safety": "DELETION_SAFE_WITH_OPEN_WORK"
+  },
   "core_rule": "Persist material workspace state as part of doing the work rather than waiting for an end-of-thread continuity audit.",
   "capability_boundary": {
     "ordinary_chatgpt": "Agentic persistence can occur while a persistence-capable assistant turn is active, but this environment does not expose a guaranteed universal event hook for every new thread, every turn, app close, deletion or historical-chat export.",
