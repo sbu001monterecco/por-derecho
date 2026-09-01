@@ -16,6 +16,7 @@
     "person.francisco-de-borja-rodriguez-batllori.primary": {
       "subject_type": "person",
       "canonical_name": "Francisco de Borja Rodríguez-Batllori Laffitte",
+      "caepr_id": "PD-SP-P-0010",
       "short_label": "Borja / Administrador Concursal",
       "roles": [
         "Administrador Concursal · Concurso 36/2012",
@@ -45,8 +46,9 @@
     },
     "person.eduardo-sanchez-san-telmo.primary": {
       "subject_type": "person",
-      "canonical_name": "Eduardo Sánchez",
-      "short_label": "Eduardo Sánchez / socio de San Telmo",
+      "canonical_name": "Eduardo Sánchez Iglesias",
+      "caepr_id": "PD-SP-P-0161",
+      "short_label": "Eduardo Sánchez Iglesias / socio de San Telmo (30-Nov-2021)",
       "roles": [
         "Socio · San Telmo",
         "Partner · San Telmo"
@@ -55,8 +57,8 @@
       "git_blob_sha": "19fd487e34807715ce40fb357ceb6c58c7bf5e08",
       "identity_status": "LOCKED_CANONICAL_REPOSITORY_ASSET",
       "identity_basis": "User expressly identified and authorised the supplied portrait as Eduardo Sánchez on 19 August 2026. The repository byte-locks a pointer to the corresponding first-party RSM profile image, with a first-party San Telmo fallback. No facial-identification inference performed.",
-      "alt_en": "Eduardo Sánchez, San Telmo partner",
-      "alt_es": "Eduardo Sánchez, socio de San Telmo",
+      "alt_en": "Eduardo Sánchez Iglesias, identified as San Telmo partner in the 30 November 2021 source",
+      "alt_es": "Eduardo Sánchez Iglesias, identificado como socio de San Telmo en la fuente de 30 de noviembre de 2021",
       "do_not_confuse_with": [
         "person.francisco-de-borja-rodriguez-batllori.primary"
       ],

@@ -41,6 +41,7 @@
       "language": "es",
       "edition": "PRIMARY_SPANISH_PUBLICATION",
       "publication_status": "PUBLIC",
+      "satire_compliance_id": "PD-SAT-AMHP-0001",
       "web_file": "PD-DMA-0001^",
       "outreach_png": "PD-DMA-0001-PNG^",
       "sources": ["SRC-CH-ABOUT-20260901", "SRC-CINCO-DIAS-20260204"]
@@ -52,6 +53,7 @@
       "language": "en",
       "edition": "PRIMARY_ENGLISH_PUBLICATION",
       "publication_status": "PUBLIC",
+      "satire_compliance_id": "PD-SAT-AMHP-0001",
       "web_file": "PD-DMA-0002^",
       "outreach_png": "PD-DMA-0002-PNG^",
       "sources": ["SRC-CH-ABOUT-20260901", "SRC-CINCO-DIAS-20260204"]
@@ -63,6 +65,7 @@
       "language": "es",
       "edition": "CORRECTED_PRIOR_STYLE_ONE",
       "publication_status": "PUBLIC_VARIANT",
+      "satire_compliance_id": "PD-SAT-AMHP-0001",
       "web_file": "PD-DMA-0003^",
       "outreach_png": "PD-DMA-0003-PNG^",
       "sources": ["SRC-CH-ABOUT-20260901", "SRC-CINCO-DIAS-20260204"]
@@ -74,6 +77,7 @@
       "language": "es",
       "edition": "CORRECTED_PRIOR_STYLE_TWO",
       "publication_status": "PUBLIC_VARIANT",
+      "satire_compliance_id": "PD-SAT-AMHP-0001",
       "web_file": "PD-DMA-0004^",
       "outreach_png": "PD-DMA-0004-PNG^",
       "sources": ["SRC-CH-ABOUT-20260901", "SRC-CINCO-DIAS-20260204"]

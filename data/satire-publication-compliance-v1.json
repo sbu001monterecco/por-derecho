@@ -1,0 +1,89 @@
+{
+  "schema": "por-derecho.satire-publication-compliance.v1",
+  "register_id": "PD-SAT-REG-0001",
+  "control_date": "2026-09-01",
+  "status": "ACTIVE_CANONICAL_REGISTER",
+  "governance": "ops/SATIRE_CARICATURE_SPOOF_GOVERNANCE_V1.json",
+  "human_standard": ".github/governance/SATIRE_CARICATURE_SPOOF_PUBLICATION_STANDARD_ES_EN.md",
+  "enforcement": {
+    "mode": "FAIL_CLOSED_FOR_REGISTERED_AND_NEW_PUBLIC_SATIRE_SURFACES",
+    "scope": "Public HTML/SVG surfaces carrying the canonical satire disclosures plus logical assets admitted to the PD-DMA satire family",
+    "repair_path": "Correct the surface or register additively on a branch, rerun the specialist validator and tests, then use a normal corrective or revert PR."
+  },
+  "publications": [
+    {
+      "publication_id": "PD-SAT-AMHP-0001",
+      "family_id": "PD-DMA-FAM-AMHP-001",
+      "title": "Acosta Matos / Canarian Hospitality hotel-platform satire and public-interest explanation",
+      "logical_assets": [
+        "PD-DMA-0001",
+        "PD-DMA-0002",
+        "PD-DMA-0003",
+        "PD-DMA-0004"
+      ],
+      "public_surfaces": [
+        {
+          "path": "assets/media/pd-dma-0001-es.svg",
+          "language": "es",
+          "required_disclosure": "CARICATURA / REPRESENTACIÓN SATÍRICA — NO ES UN ANUNCIO REAL"
+        },
+        {
+          "path": "assets/media/pd-dma-0002-en.svg",
+          "language": "en",
+          "required_disclosure": "SATIRICAL / CARICATURE REPRESENTATION — NOT A REAL ADVERTISEMENT"
+        },
+        {
+          "path": "assets/media/pd-dma-0003-es.svg",
+          "language": "es",
+          "required_disclosure": "CARICATURA / REPRESENTACIÓN SATÍRICA — NO ES UN ANUNCIO REAL"
+        },
+        {
+          "path": "assets/media/pd-dma-0004-es.svg",
+          "language": "es",
+          "required_disclosure": "ANUNCIO SATÍRICO — PARODIA Y CARICATURA. NO ES PUBLICIDAD REAL"
+        },
+        {
+          "path": "es/acosta-matos-plataforma-hotelera/index.html",
+          "language": "es",
+          "required_disclosure": "CARICATURA / REPRESENTACIÓN SATÍRICA — NO ES UN ANUNCIO REAL"
+        },
+        {
+          "path": "en/acosta-matos-hotel-platform/index.html",
+          "language": "en",
+          "required_disclosure": "SATIRICAL / CARICATURE REPRESENTATION — NOT A REAL ADVERTISEMENT"
+        }
+      ],
+      "named_people": [],
+      "named_people_boundary": "No named individual appears in the six current public surfaces. Any future addition requires a person entry before publication; an image lock cannot upgrade CAEPR name status.",
+      "factual_role_and_satirical_function_separated": true,
+      "evidence_states_present": [
+        "DOCUMENTED_FACT",
+        "PROJECT_SIDE_INTERPRETATION",
+        "INVESTIGATIVE_HYPOTHESIS",
+        "RHETORICAL_METAPHOR_OR_DOUBLE_MEANING",
+        "OPEN_OR_UNVERIFIED"
+      ],
+      "source_refs": [
+        "SRC-CH-ABOUT-20260901",
+        "SRC-CINCO-DIAS-20260204"
+      ],
+      "material_boundaries": [
+        "MANAGED_HOTEL_SALES_ARE_NOT_MANAGER_TURNOVER",
+        "NO_MECHANICAL_ADDITION_OF_METRICS",
+        "PLATFORM_PROXIMITY_DOES_NOT_PROVE_COMMON_OWNERSHIP",
+        "PLATFORM_PROXIMITY_DOES_NOT_PROVE_SHARED_KNOWLEDGE_OR_RESPONSIBILITY",
+        "QUESTIONS_AND_METAPHORS_ARE_NOT_ADJUDICATED_FINDINGS"
+      ],
+      "opposing_counsel_risk_review": {
+        "HONOUR_REPUTATION_PROFESSIONAL_PRESTIGE": "PASS_NO_NAMED_PERSON_IN_CURRENT_SURFACES",
+        "FALSE_ENDORSEMENT_AUTHORSHIP_QUOTATION_MANDATE_OR_ROLE": "PASS_VISIBLE_NON_ENDORSEMENT_DISCLOSURE",
+        "IMAGE_LIKENESS_PERSONALITY_RIGHTS": "NOT_APPLICABLE_NO_PERSON_LIKENESS_IN_CURRENT_SURFACES",
+        "IMPLIED_DISHONESTY_CONFLICT_CORRUPTION_ILLEGALITY_OR_CRIMINALITY": "PASS_QUESTIONS_AND_ROLE_BOUNDARIES_VISIBLE",
+        "LOGO_TRADE_DRESS_OR_REAL_ADVERTISING_CONFUSION": "PASS_VISIBLE_SATIRE_DISCLOSURE",
+        "PERSONAL_DATA_NECESSITY_AND_PROPORTIONALITY": "PASS_NO_PERSONAL_DATA_IN_CURRENT_SURFACES",
+        "CORRECTION_REPLY_TAKEDOWN_AND_NARROW_REVERT_PATH": "PASS_ADDITIVE_CORRECTION_AND_NORMAL_REVERT_PR"
+      },
+      "approval_status": "PUBLIC_CURRENT_SURFACES_VALIDATED"
+    }
+  ]
+}

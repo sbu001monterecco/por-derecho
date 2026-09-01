@@ -59,7 +59,7 @@ RESOURCES = [
         "key": "identity_page",
         "url_path": "es/registro-identidad-materia/",
         "source_path": "es/registro-identidad-materia/index.html",
-        "markers": ['data-static-registry-counts="339-160-83-11-42-43"'],
+        "markers": ['data-static-registry-counts="341-162-83-11-42-43"'],
     },
     {
         "key": "unitary_page",
@@ -125,8 +125,8 @@ def validate_json(kind: str, data: dict) -> dict[str, bool]:
             "registry_id": data.get("registry_id") == "PD-SP-IDENTITY-REGISTRY-001",
             "counts": data.get("counts")
             == {
-                "total": 339,
-                "PERSON": 160,
+                "total": 341,
+                "PERSON": 162,
                 "ORGANISATION": 83,
                 "STRUCTURE": 11,
                 "INSTITUTION": 42,

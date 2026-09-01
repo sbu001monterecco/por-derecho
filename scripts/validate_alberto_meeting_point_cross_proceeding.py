@@ -133,8 +133,8 @@ EXPECTED_REGISTRY_COUNTS = {
     "PROCEEDING": 43,
 }
 CURRENT_CANONICAL_REGISTRY_COUNTS = {
-    "total": 339,
-    "PERSON": 160,
+    "total": 341,
+    "PERSON": 162,
     "ORGANISATION": 83,
     "STRUCTURE": 11,
     "INSTITUTION": 42,
@@ -659,7 +659,7 @@ caret_unitary_ref = caret.get("unitary_scope_reference") or {}
 check(caret_unitary_ref == {"control_id": UNITARY_SCOPE_CONTROL_ID, "confirmed": 21, "pending": 3, "denominator": 24, "changed_by_this_module": True}, "specialist caret unitary-scope reference drift")
 check(
     registry.get("counts") == CURRENT_CANONICAL_REGISTRY_COUNTS,
-    "canonical source registry counts do not equal 339/160/83/11/42/43",
+    "canonical source registry counts do not equal 341/162/83/11/42/43",
 )
 
 registry_records: dict[str, dict] = {}
@@ -1207,5 +1207,5 @@ print(" - repository-wide unitary caret census: separately 21/24; 3 pending")
 print(" - graph: 9 bilingual six-field nodes; 13 direct forward/reverse bridges")
 print(" - primary backlinks: 18/18 contained; direct incident reciprocity: 26/26 per language; legacy lateral topology: 8/8 per language")
 print(" - dated digest source registry: 336 / 157 / 83 / 11 / 42 / 43; prior exact-live snapshot remains historical")
-print(" - current canonical source registry: 339 / 160 / 83 / 11 / 42 / 43")
+print(" - current canonical source registry: 341 / 162 / 83 / 11 / 42 / 43")
 print(f" - candidate publication state: {state}; communication and filing remain HOLD")

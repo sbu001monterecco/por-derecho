@@ -176,6 +176,13 @@
         "Francisco de Borja Rodríguez-Batllori",
         "Rodríguez-Batllori"
       ],
+      "identity_resolution": "CARET_CONFIRMED",
+      "identity_sources": [
+        "BOE-B-2012-22189 — appointment in Concurso 36/2012, 6 June 2012",
+        "BORME-A-2012-198-35",
+        "Controlled primary Concurso 36/2012 appointment record"
+      ],
+      "identity_boundary": "Exact person identity and court-appointed insolvency-administrator identity in Concurso 36/2012 only. The caret does not establish any act, omission, current professional affiliation, knowledge, intent, coordination, wrongdoing or liability. San Telmo-domain and later addressed-email edges remain date- and source-specific; no current Grant Thornton affiliation is established by identity reconciliation.",
       "routes": {
         "es": "/es/francisco-de-borja-rodriguez-batllori-laffitte/",
         "en": "/en/francisco-de-borja-rodriguez-batllori-laffitte/"
@@ -1325,6 +1332,49 @@
         "Ray Simon Thompson"
       ],
       "identity_boundary": "Exact person identity and source-named representation/power perimeter only. It does not establish executed authority, current title, payment, knowledge, action, wrongdoing or liability, and it must not be conflated with Ray Simon Thompson."
+    },
+    {
+      "id": "PD-SP-P-0161",
+      "type": "PERSON",
+      "name": "Eduardo Sánchez Iglesias",
+      "aliases": [
+        "Eduardo Sánchez",
+        "Edu Sánchez",
+        "Eduardo Sanchez Iglesias",
+        "Eduardo Sanchez"
+      ],
+      "identity_resolution": "CARET_CONFIRMED",
+      "identity_sources": [
+        "Controlled 30 November 2021 San Telmo / RICPE webinar source, transcript/video family and correction chain",
+        "RSM Spain first-party professional announcement naming Eduardo Sánchez Iglesias in the SanTelmo integration",
+        "data/amph-three-professionals-identity-and-firm-reconciliation-20260901.json"
+      ],
+      "routes": {
+        "es": "/es/san-telmo-ricpe-sun-park/",
+        "en": "/en/san-telmo-ricpe-sun-park/"
+      },
+      "identity_boundary": "Exact person identity and the separately sourced 30-November-2021 San Telmo/RICPE event capacity only. It does not prove a Sun Park-specific client allocation, timeless San Telmo or RSM capacity, statutory succession, shared knowledge, common intent, wrongdoing or a direct relationship with Francisco de Borja Rodríguez-Batllori Laffitte beyond separately sourced edges."
+    },
+    {
+      "id": "PD-SP-P-0162",
+      "type": "PERSON",
+      "name": "Enrique Guerra Suárez",
+      "aliases": [
+        "Enrique Guerra",
+        "Enrique Guerra Suarez"
+      ],
+      "identity_resolution": "CARET_CONFIRMED",
+      "identity_sources": [
+        "RICPE certification dated 20 July 2021 / controlled 190,098-byte attachment family",
+        "RICPE first-party professional material naming Enrique Guerra Suárez",
+        "Controlled 30 November 2021 San Telmo / RICPE event family",
+        "data/amph-three-professionals-identity-and-firm-reconciliation-20260901.json"
+      ],
+      "routes": {
+        "es": "/es/ric-private-equity-sun-park/",
+        "en": "/en/ric-private-equity-sun-park/"
+      },
+      "identity_boundary": "Exact person identity and source-specific RICPE capacities only. The caret does not transfer every RICPE board, control, certification, investor or project decision to him personally and does not establish knowledge, intent, wrongdoing or a direct relationship with Francisco de Borja Rodríguez-Batllori Laffitte."
     }
   ]
 }
