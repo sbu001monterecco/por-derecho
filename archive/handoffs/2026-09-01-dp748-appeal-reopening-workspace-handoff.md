@@ -10,7 +10,7 @@
 **Inherited La Laguna identity baseline:** `273bb621de7db5473b1223fdbc080f9c733dd038` (PR #1326)
 **Workspace collision reconciliation:** provisional `PD-WS-20260901-0004` renumbered to `PD-WS-20260901-0005` because current `main` had already assigned `0004` to the PwC / Carlos Saavedra workspace.
 **Working branch:** `codex/dp748-p0-appeal-20260901`
-**Repository state:** additive replacement PR #1332 open; exact reconciled head and downstream lifecycle fields are maintained in the machine handoff.
+**Repository state:** additive replacement PR #1332 open at reconciled source-release head `1964b7e1222d7920139a3f6b5ae9878bd0e4a22c` / tree `30c8abe75a3c03a0a5bd9bb1cf3735bd2423436f`; downstream lifecycle fields are maintained in the machine handoff.
 
 ## 1. Objective and controlling answer
 

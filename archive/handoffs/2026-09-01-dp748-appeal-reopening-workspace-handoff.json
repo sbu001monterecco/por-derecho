@@ -15,7 +15,8 @@
   },
   "branch": "codex/dp748-p0-appeal-20260901",
   "pull_request": 1332,
-  "head_commit": null,
+  "head_commit": "1964b7e1222d7920139a3f6b5ae9878bd0e4a22c",
+  "release_tree": "30c8abe75a3c03a0a5bd9bb1cf3735bd2423436f",
   "merge_sha": null,
   "objective": "Protect DP 748/2026 appellate rights and prepare a source-led appeal, reopening package, finite diligences and distinct parallel-action lanes.",
   "canonical_ids": {
