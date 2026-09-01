@@ -6,8 +6,8 @@
   "manifest_version": 1,
   "title": "DP 748/2026 appeal, reopening and professional-lineage source control",
   "purpose": "Govern the public-safe canonical registration of the DP 748/2026 appeal posture, ETJ 163/2020 lineage and finite evidential gaps while keeping private pleadings, correspondence and identifiers outside the public repository.",
-  "current_state": "PR_OPEN",
-  "state": "REMOTE_VALIDATION_PENDING",
+  "current_state": "LIVE_VERIFIED",
+  "state": "LIVE_VERIFIED_PUBLIC_SAFE_SOURCE_CONTROL",
   "source_base_sha": "b0958077b71130fe808acaf1cc006185b6aa43fa",
   "head_branch": "codex/dp748-p0-appeal-20260901",
   "authorization": {
@@ -46,7 +46,68 @@
   "pull_request": {
     "number": 1332,
     "url": "https://github.com/sbu001monterecco/por-derecho/pull/1332",
-    "status": "OPEN"
+    "status": "MERGED",
+    "validated_head_sha": "a3a7a4ddf1a115be2c1a92d47d3ca5351e836526",
+    "validated_head_tree_sha": "8fb13de8c31cbc05396e99a7f13564ba56ab63d5",
+    "exact_head_workflows": 35,
+    "exact_head_result": "35_OF_35_SUCCESS"
+  },
+  "merge_sha": "cc3d0985ae014282e8a1f7805e0193d15e673177",
+  "deployment_evidence": {
+    "workflow": "pages build and deployment",
+    "run_id": 33547241129,
+    "run_number": 1387,
+    "head_sha": "cc3d0985ae014282e8a1f7805e0193d15e673177",
+    "conclusion": "success",
+    "completed_at": "2026-09-01T19:11:23Z"
+  },
+  "live_urls": [
+    "https://sbu001monterecco.github.io/por-derecho/assets/data/dp748-2026-appeal-reopening-control-v1.json",
+    "https://sbu001monterecco.github.io/por-derecho/assets/data/matter-identity-registry-v1.json",
+    "https://sbu001monterecco.github.io/por-derecho/assets/data/proceedings-master-public-v1.json"
+  ],
+  "live_markers": {
+    "https://sbu001monterecco.github.io/por-derecho/assets/data/dp748-2026-appeal-reopening-control-v1.json": [
+      "TF-CRI-003",
+      "TF-APP-004",
+      "2026-09-07"
+    ],
+    "https://sbu001monterecco.github.io/por-derecho/assets/data/matter-identity-registry-v1.json": [
+      "\"total\": 339",
+      "\"PERSON\": 160"
+    ],
+    "https://sbu001monterecco.github.io/por-derecho/assets/data/proceedings-master-public-v1.json": [
+      "TF-CRI-003",
+      "TF-CIV-002"
+    ]
+  },
+  "live_verification_evidence": {
+    "checked_at": "2026-09-01T19:12:00Z",
+    "exact_source_byte_parity": true,
+    "identity_counts": {
+      "total": 339,
+      "PERSON": 160,
+      "ORGANISATION": 83,
+      "STRUCTURE": 11,
+      "INSTITUTION": 42,
+      "PROCEEDING": 43
+    },
+    "sha256": {
+      "assets/data/dp748-2026-appeal-reopening-control-v1.json": "b03f43234769e85dc530c85699316c9aec4415af8de189c7afde941d7b3176d7",
+      "assets/data/matter-identity-registry-v1.json": "573d8b0061ed3321169dbefe93881173e261dc6796e352af548cf5067d533df2",
+      "assets/data/proceedings-master-public-v1.json": "83dbbc7e66d22361d233ea63b16e79fcf74848fcb9fc43165181cabd2c0ec44d"
+    },
+    "deployment_race_followup": {
+      "initial_failed_runs": [33547245516, 33547245562, 33547245578],
+      "classification": "LIVE_READBACK_STARTED_BEFORE_PAGES_COMPLETED",
+      "source_tree_failure": false
+    },
+    "stale_push_only_validator_followup": {
+      "failed_run": 33547245293,
+      "cause": "CURRENT_IDENTITY_DENOMINATOR_HARD_CODED_AS_336_157",
+      "historical_204_snapshot_preserved": true,
+      "closeout_branch": "codex/dp748-live-closeout-20260901"
+    }
   },
   "controlled_scope": {
     "master_proceeding_id": "TF-CRI-003",
@@ -181,7 +242,24 @@
     "NO_RAW_EMAIL_PRIVATE_CORRESPONDENCE_SIGNATURE_PERSONAL_IDENTIFIER_OR_UNREDACTED_COURT_DOCUMENT_IS_PUBLISHED"
   ],
   "validation": {
-    "status": "LOCAL_SOURCE_GATES_GREEN_REMOTE_PR_PENDING",
+    "status": "PRIMARY_PR_EXACT_HEAD_GREEN_MERGED_DEPLOYED_AND_LIVE_BYTE_VERIFIED",
+    "evidence": [
+      {
+        "scope": "PR_1332_EXACT_HEAD",
+        "sha": "a3a7a4ddf1a115be2c1a92d47d3ca5351e836526",
+        "result": "35_OF_35_SUCCESS"
+      },
+      {
+        "scope": "PRIMARY_MERGE_PAGES",
+        "sha": "cc3d0985ae014282e8a1f7805e0193d15e673177",
+        "run_id": 33547241129,
+        "result": "SUCCESS"
+      },
+      {
+        "scope": "CORE_LIVE_SOURCE_BYTE_PARITY",
+        "result": "3_OF_3_EXACT_SHA256"
+      }
+    ],
     "required": [
       "DP 748 public-boundary and source-hash validation",
       "identity and proceeding referential integrity",

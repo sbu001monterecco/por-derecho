@@ -4,7 +4,7 @@
 **Current continuation pointer:** `PD-WCH-20260901-DP748-P0-001`
 **Status:** `DELETION_SAFE_WITH_OPEN_WORK`
 
-**Implementation state:** DP 748/2026 P0 appeal/reopening package reconciled against current `main` `b0958077b71130fe808acaf1cc006185b6aa43fa` (PR #1333); it inherits the PR #1326 La Laguna identities at `273bb621de7db5473b1223fdbc080f9c733dd038`. Its provisional `0004` workspace ID was renumbered to `0005` because PR #1328 canonically occupied `0004` first. Governed PR state is recorded in the detailed handoff.
+**Implementation state:** DP 748/2026 P0 appeal/reopening package was reconciled against `main` `b0958077b71130fe808acaf1cc006185b6aa43fa`, passed 35/35 exact-head checks, merged through PR #1332 at `cc3d0985ae014282e8a1f7805e0193d15e673177`, deployed by Pages run `33547241129`, and core live JSON bytes matched source 3/3. It inherits the PR #1326 La Laguna identities at `273bb621de7db5473b1223fdbc080f9c733dd038`. Its provisional `0004` workspace ID was renumbered to `0005` because PR #1328 canonically occupied `0004` first. Governed lifecycle and the bounded post-deployment validator closeout are recorded in the detailed handoff.
 **Topic:** DP 748/2026 appeal, reopening and ETJ 163/2020 source mastery
 **Pointer semantics:** most recently checkpointed/default workspace; **not exclusive** and not a lock over concurrent workspaces.
 

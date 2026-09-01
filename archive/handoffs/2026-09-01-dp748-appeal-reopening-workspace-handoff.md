@@ -10,7 +10,7 @@
 **Inherited La Laguna identity baseline:** `273bb621de7db5473b1223fdbc080f9c733dd038` (PR #1326)
 **Workspace collision reconciliation:** provisional `PD-WS-20260901-0004` renumbered to `PD-WS-20260901-0005` because current `main` had already assigned `0004` to the PwC / Carlos Saavedra workspace.
 **Working branch:** `codex/dp748-p0-appeal-20260901`
-**Repository state:** additive replacement PR #1332 is reconciled with main through PR #1333. The pre-reconciliation head `e29f72d52f410fa10ab02044eb9d559c0d30a846` / tree `48a67bc32f01cbbd956038a4d8c69af2aea77f04` passed 35/35 remote checks; the final reconciliation head and downstream lifecycle fields are maintained in the machine handoff.
+**Repository state:** additive replacement PR #1332 was reconciled with main through PR #1333, passed 35/35 checks on exact head `a3a7a4ddf1a115be2c1a92d47d3ca5351e836526`, merged at `cc3d0985ae014282e8a1f7805e0193d15e673177`, deployed by Pages run `33547241129`, and core live JSON bytes matched source 3/3. The bounded live-closeout branch repairs only stale 336/157 current-denominator assertions while preserving the historical 204 and dated 336 snapshots.
 
 ## 1. Objective and controlling answer
 
