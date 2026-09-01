@@ -1,0 +1,35 @@
+name: Validate La Laguna judicial caret register
+
+on:
+  pull_request:
+    paths:
+      - 'assets/data/la-laguna-judicial-actors-*.json'
+      - 'assets/data/matter-identity-registry-v1.la-laguna-judicial-*.json'
+      - 'assets/data/dp748-2026-appeal-reopening-control-v1.json'
+      - 'es/registro-judicial-la-laguna/**'
+      - 'en/la-laguna-judicial-register/**'
+      - 'scripts/validate_la_laguna_judicial_register.py'
+  push:
+    branches: [main]
+    paths:
+      - 'assets/data/la-laguna-judicial-actors-*.json'
+      - 'assets/data/matter-identity-registry-v1.la-laguna-judicial-*.json'
+      - 'assets/data/dp748-2026-appeal-reopening-control-v1.json'
+      - 'es/registro-judicial-la-laguna/**'
+      - 'en/la-laguna-judicial-register/**'
+      - 'scripts/validate_la_laguna_judicial_register.py'
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
+        with:
+          python-version: '3.12'
+      - name: Validate canonical IDs, current DP 748 posture, gaps and bilingual routes
+        run: python scripts/validate_la_laguna_judicial_register.py
