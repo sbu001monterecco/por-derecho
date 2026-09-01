@@ -1,0 +1,65 @@
+{
+  "schema": "por-derecho.la-laguna-judicial-actors-gap-closure-audit.v1",
+  "as_of": "2026-09-01",
+  "status": "REGISTER_DENOMINATOR_CLOSED_SOURCE_GAPS_EXPLICIT_CURRENT_MAIN_RECONCILED",
+  "scope": "La Laguna judge/magistrate and LAJ identity closure for DP 748/2026, Cambiario 1048/2019, ETJ 163/2020, PO 344/2013 and TF-APP-004, with Arrecife/Yaiza judicial-cooperation actors kept separate.",
+  "controls": {
+    "canonical_interlink": "assets/data/la-laguna-judicial-actors-canonical-interlink-control-v1.json",
+    "people_shard": "assets/data/matter-identity-registry-v1.la-laguna-judicial-people.json",
+    "institution_shard": "assets/data/matter-identity-registry-v1.la-laguna-judicial-institutions.json",
+    "dp748_current_control": "assets/data/dp748-2026-appeal-reopening-control-v1.json"
+  },
+  "closure_states": {
+    "source_identifiable_actor_denominator": "CLOSED_FOR_PRESENTLY_RECOVERED_PRIMARY_SOURCE_CORPUS",
+    "canonical_id_assignment": "CLOSED_FOR_SOURCE_IDENTIFIED_ACTORS",
+    "act_date_capacity_binding": "CLOSED_FOR_SOURCE_IDENTIFIED_ACTORS",
+    "auxiliary_jurisdiction_separation": "CLOSED",
+    "public_bilingual_surface": "CLOSED_BY_SUCCESSOR_RELEASE",
+    "certified_complete_historical_court_denominator": "NOT_CLAIMED"
+  },
+  "gaps": [
+    {
+      "gap_id": "LL-JUD-GAP-001",
+      "priority": "P0",
+      "proceeding": "DP 748/2026",
+      "question": "Who signed the 24-Mar-2026 Auto 454/2026 provisionally dismissing/archiving DP 748/2026?",
+      "verified_minimum": [
+        "Current primary-source controls verify the existence, date, number and provisional-dismissal effect of Auto 454/2026.",
+        "The 17-Apr-2026 reform and subsidiary appeal is source-verified as directed against that Auto.",
+        "The 20-May-2026 Providencia records the reform and subsidiary appeal as interposed in time and form."
+      ],
+      "not_proved": "The signed/authenticated original identifying the judicial signatory of the 24-Mar act remains unlocated in the controlled corpus. Graciela Pérez-Valencia Díaz is not attributed to that act merely because she signs later DP 748/2026 acts.",
+      "search_state": "FINITE_SEARCH_PASS_COMPLETE_EVIDENTIARY_GAP_OPEN",
+      "closure_trigger": "Signed or authenticated electronic original of Auto 454/2026, or equivalent primary court source expressly identifying its judicial signatory."
+    },
+    {
+      "gap_id": "LL-JUD-GAP-002",
+      "priority": "P1",
+      "proceeding": "PO 344/2013",
+      "question": "Which LAJ(s) signed or were identified on the material procedural acts in PO 344/2013?",
+      "verified_minimum": [
+        "Sentencia 41/2014 identifies María Mercedes Santana Rodríguez as the deciding judge.",
+        "The judgment records a 21-May-2013 decree admitting the claim and a 27-Jun-2013 diligencia de ordenación convening the preliminary hearing."
+      ],
+      "not_proved": "The presently recovered source does not name the LAJ for those acts or establish a proceeding-wide LAJ identity.",
+      "search_state": "FINITE_SEARCH_PASS_COMPLETE_EVIDENTIARY_GAP_OPEN",
+      "closure_trigger": "Certified/primary signed 21-May-2013 decree, 27-Jun-2013 diligencia, authenticated docket, or another primary PO 344/2013 act naming the relevant LAJ for the act and period."
+    },
+    {
+      "gap_id": "LL-JUD-GAP-003",
+      "priority": "P0",
+      "proceeding": "TF-APP-004 / DP 748/2026 appeal-review lane",
+      "question": "What is the verified downstream appellate processing, organ, roll and any judicial/LAJ office-holder identity?",
+      "verified_minimum": [
+        "The 17-Apr-2026 filing expressly contains a subsidiary appeal.",
+        "The 20-May-2026 Providencia records the reform and subsidiary appeal as interposed in time and form at the origin court.",
+        "The 16-Jul-2026 order is non-final and records an appeal instruction; its 1-Sep-2026 notification lane is source-controlled."
+      ],
+      "not_proved": "No primary Article 766.4 transfer, remittal/transmission to the Audiencia, appellate roll or equivalent appellate source has been located in the current controlled corpus. No Audiencia organ, panel, judge or LAJ is therefore populated.",
+      "search_state": "ORIGIN_COURT_ADMISSION_VERIFIED_DOWNSTREAM_APPELLATE_PROCESSING_GAP_OPEN",
+      "closure_trigger": "Primary court or Audiencia source identifying transfer/remittal/transmission, appellate roll or equivalent downstream processing and, separately, any named appellate judge/panel/LAJ."
+    }
+  ],
+  "source_search_boundary": "A finite search pass is not proof that a missing source does not exist. Promotion requires a primary source sufficient to identify the person, organ and exact act/capacity relied upon.",
+  "liability_boundary": "Identity registration and gap status establish source linkage only. They do not establish wrongdoing, intent, liability, agreement with a party or merits treatment."
+}
