@@ -185,6 +185,8 @@ SAIP delivery proves only the identified delivery/registration within its source
 
 `assets/data/institutional-communications-register-v1.json` is the single canonical communications register. Its public-authority projection is `assets/data/community-acta-authority-interconnectivity-v1.json#public_communications`; the unitary control stores only the event-ID crosswalk. Do not create a competing authority-mail ledger.
 
+`assets/data/redsara-age-filings-register-v1.json` is a deterministic, read-only public-safe projection of that single register plus the controlled RedSARA attachment index. It exists to make individual filing references, listed annex metadata and source limits discoverable; it is rebuilt by `scripts/build_redsara_age_filings_register.py` and never becomes an independent source of truth. The corresponding ES/EN public register must keep receipt, attachment and aggregate-denominator boundaries visible.
+
 The controlled 1-September census registers **19 events**: two existing Fiscalía Europea REGAGE receipts plus seventeen new source-controlled events covering the three Intervención outputs, the Canary transparency/FEDER routing notice, eight distinct RICPE/SAIP receipts, one Yaiza notification, one Cabildo receipt, one Treasury implementation event and two SNCA events. Every event has one immutable `PD-SP-EVT-*` ID and matching ES/EN `#communication-PD-SP-EVT-*` anchors.
 
 Institutional tier is separate from funding subject. The mandatory tier set is:
