@@ -100,6 +100,44 @@
       "alt_en": "Francisco Mario Matos Matas",
       "alt_es": "Francisco Mario Matos Matas"
     },
+    "person.carlos-saavedra-rodriguez-del-palacio.primary": {
+      "subject_type": "person",
+      "canonical_name": "Carlos Saavedra Rodríguez del Palacio",
+      "short_label": "Carlos Saavedra / PwC Tax & Legal Canarias",
+      "roles": [
+        "Partner · PwC Spain",
+        "Legal-practice lead · PwC Canary Islands"
+      ],
+      "path": "assets/actors/carlos-saavedra--linkedin-profile--20260901.jpg",
+      "git_blob_sha": "3679d667b0236463dab66b0873a5200a9eadaa4e",
+      "identity_status": "LOCKED_CANONICAL_REPOSITORY_ASSET",
+      "identity_basis": "User-supplied portrait named for Carlos Saavedra and identified in the continuing PwC/Carlos instruction as his LinkedIn image. The exact public LinkedIn profile URL identifies Carlos Saavedra as a PwC national partner in Santa Cruz de Tenerife; PwC Spain's exact-full-name professional profile independently identifies Carlos Saavedra Rodríguez del Palacio as a PwC Spain partner and Canary Islands legal-practice lead and displays a separate official portrait. Attribution follows the exact named profiles and the user's supplied-image context; no automated facial-recognition inference was performed.",
+      "approved_contexts": [
+        "PwC / Carlos Saavedra bilingual canonical profile",
+        "PwC / Carlos Saavedra first-hop caret register",
+        "Carlos Saavedra identity and professional-role records"
+      ],
+      "alt_en": "Public LinkedIn profile portrait attributed by the exact named profile to Carlos Saavedra Rodríguez del Palacio of PwC",
+      "alt_es": "Retrato del perfil público de LinkedIn atribuido por el perfil nominal exacto a Carlos Saavedra Rodríguez del Palacio de PwC",
+      "source_provenance": {
+        "source_class": "user-supplied professional-profile portrait",
+        "received_filename_public": false,
+        "library_or_private_locator_public": false,
+        "source_page": "https://es.linkedin.com/in/carlos-saavedra-b71418a8",
+        "first_party_identity_source": "https://www.pwc.es/es/contacts/c/carlos-saavedra-sector-publico.html",
+        "first_party_office_sources": [
+          "https://www.pwc.es/es/quienes-somos/pwc-grancanaria.html",
+          "https://www.pwc.es/es/quienes-somos/pwc-tenerife.html"
+        ],
+        "control_date": "2026-09-01",
+        "sha256": "6abc688f2eb1aabceaa68455a8679cb48debae7afb39f39b7eb31e799493f73d",
+        "dimensions": "800x800",
+        "bytes": 143942,
+        "format": "jpg",
+        "profile_match_basis": "Exact named LinkedIn profile, exact-full-name first-party PwC profile and user-supplied image context"
+      },
+      "storage_mode": "repository-byte-locked"
+    },
     "person.fernando-aguiar-acosta.primary": {
       "subject_type": "person",
       "canonical_name": "Fernando Aguiar Acosta",

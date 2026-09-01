@@ -110,11 +110,11 @@
     }
   },
   "identity_registry": {
-    "total": 313,
-    "PERSON": 144,
-    "ORGANISATION": 79,
+    "total": 336,
+    "PERSON": 157,
+    "ORGANISATION": 83,
     "STRUCTURE": 11,
-    "INSTITUTION": 36,
+    "INSTITUTION": 42,
     "PROCEEDING": 43,
     "archive_backfill": "OPEN",
     "candidate_state": "LOCAL_SOURCE_STATIC_CANDIDATE_NOT_YET_LIVE_VERIFIED",
@@ -168,15 +168,15 @@
     "control_id": "PD-CAEPR-CARET-UNITARY-DIGEST-20260826-01",
     "control_file": "assets/data/caepr-caret-unitary-digest-v1.json",
     "current_live_state": "PARTIAL_NOT_ALL_IS",
-    "confirmed": 20,
+    "confirmed": 21,
     "denominator": 24,
-    "pending": 4,
+    "pending": 3,
     "old_local_24_of_24_package": "SUPERSEDED_NOT_MERGEABLE_AS_IS",
     "reasons": [
       "prepared against earlier 16dd443 repository state",
       "the local 214-record denominator and last live-verified 204-record denominator both differ from the stale package assumptions",
       "proceeding IDs R-0011 through R-0017 are occupied",
-      "Matkator registry-state reconciliation remains open",
+      "Matkator is reconciled as Matkator, S.L.U. from official BORME; its current primary NIF/status and title questions remain open without blocking identity",
       "PP1041 and EH90 require current-registry admission; Clubotel is exact for the instrument-specific role while the distinct Ona Hotels / ONA perimeter remains pending"
     ]
   },

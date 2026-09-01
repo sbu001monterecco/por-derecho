@@ -379,7 +379,23 @@
       "name": "Carlos Saavedra Rodríguez del Palacio",
       "aliases": [
         "Carlos Saavedra"
-      ]
+      ],
+      "identity_resolution": "CARET_CONFIRMED",
+      "identity_sources": [
+        "PwC Spain exact-full-name professional profile, accessed 1 September 2026",
+        "LinkedIn exact named profile /in/carlos-saavedra-b71418a8, indexed 1 September 2026",
+        "PwC Spain Las Palmas and Tenerife office leadership pages, accessed 1 September 2026"
+      ],
+      "routes": {
+        "es": "/es/pwc-canarias-carlos-saavedra-sun-park/",
+        "en": "/en/pwc-canarias-carlos-saavedra-sun-park/"
+      },
+      "visual_asset_id": "person.carlos-saavedra-rodriguez-del-palacio.primary",
+      "public_profiles": {
+        "linkedin": "https://es.linkedin.com/in/carlos-saavedra-b71418a8",
+        "pwc_spain": "https://www.pwc.es/es/contacts/c/carlos-saavedra-sector-publico.html"
+      },
+      "identity_boundary": "The caret confirms this person's identity and exact-profile reconciliation only. It does not establish conduct, a mandate on any date, receipt, knowledge transfer, conflict, misuse of information, causation, benefit, liability or wrongdoing."
     },
     {
       "id": "PD-SP-P-0037",
@@ -387,12 +403,32 @@
       "name": "Miguel Hernández Lorenzo",
       "aliases": [
         "Miguel Hernandez Lorenzo"
-      ]
+      ],
+      "identity_resolution": "CARET_CONFIRMED",
+      "identity_sources": [
+        "Authenticated 2016 PwC email chain and professional signature, private locator withheld",
+        "14-Jun-2016 Landwell/PwC invoice appendix naming professional work, private locator withheld"
+      ],
+      "routes": {
+        "es": "/es/pwc-canarias-carlos-saavedra-sun-park/",
+        "en": "/en/pwc-canarias-carlos-saavedra-sun-park/"
+      },
+      "identity_boundary": "Exact person identity only. Message authorship, copied receipt, meeting participation, mandate, knowledge, intent, conflict and liability remain source- and event-specific."
     },
     {
       "id": "PD-SP-P-0038",
       "type": "PERSON",
-      "name": "Elena Santos Ramos"
+      "name": "Elena Santos Ramos",
+      "identity_resolution": "CARET_CONFIRMED",
+      "identity_sources": [
+        "Authenticated May-June 2016 PwC email chain and Landwell professional signature, private locator withheld",
+        "14-Jun-2016 Landwell/PwC invoice appendix naming professional work, private locator withheld"
+      ],
+      "routes": {
+        "es": "/es/pwc-canarias-carlos-saavedra-sun-park/",
+        "en": "/en/pwc-canarias-carlos-saavedra-sun-park/"
+      },
+      "identity_boundary": "Exact person identity only. A proposed litigation power and copied correspondence do not by themselves prove execution, attendance, knowledge, later action, conflict or liability."
     },
     {
       "id": "PD-SP-P-0039",
@@ -400,7 +436,16 @@
       "name": "Alejandro Perera González",
       "aliases": [
         "Alejandro Perera Gonzalez"
-      ]
+      ],
+      "identity_resolution": "CARET_CONFIRMED",
+      "identity_sources": [
+        "Authenticated 6-10-Jun-2016 PwC report-review and meeting-coordination email chain, private locator withheld"
+      ],
+      "routes": {
+        "es": "/es/pwc-canarias-carlos-saavedra-sun-park/#registro-caret",
+        "en": "/en/pwc-canarias-carlos-saavedra-sun-park/#caret-register"
+      },
+      "identity_boundary": "Exact person identity only. Being copied on the report-review and meeting-coordination chain does not prove authorship, attendance, approval, later access, action, conflict or liability."
     },
     {
       "id": "PD-SP-P-0040",
@@ -409,7 +454,16 @@
       "aliases": [
         "Jonathan Simo Morales",
         "Jonathan Simó"
-      ]
+      ],
+      "identity_resolution": "CARET_CONFIRMED",
+      "identity_sources": [
+        "Signed 22-Apr-2016 accounting report and authenticated 6-Jun-2016 transmission chain, private locators withheld"
+      ],
+      "routes": {
+        "es": "/es/pwc-canarias-carlos-saavedra-sun-park/#registro-caret",
+        "en": "/en/pwc-canarias-carlos-saavedra-sun-park/#caret-register"
+      },
+      "identity_boundary": "Exact external accounting-adviser identity and source authorship only. He is not identified as a PwC team member, and his report conclusions are not judicial findings."
     },
     {
       "id": "PD-SP-P-0041",
@@ -418,7 +472,17 @@
       "aliases": [
         "Juan Tomas Parrilla Suarez",
         "Juan Tomás Parrilla"
-      ]
+      ],
+      "identity_resolution": "CARET_CONFIRMED",
+      "identity_sources": [
+        "14-Jun-2016 Landwell/PwC invoice appendix naming strategy work, private locator withheld",
+        "Authenticated 10-Jun-2016 same-day report-transmission email, private locator withheld"
+      ],
+      "routes": {
+        "es": "/es/pwc-canarias-carlos-saavedra-sun-park/",
+        "en": "/en/pwc-canarias-carlos-saavedra-sun-park/"
+      },
+      "identity_boundary": "Exact person identity only. Billing and same-day transmission references do not prove meeting attendance, later action, knowledge transfer, conflict or liability."
     },
     {
       "id": "PD-SP-P-0042",
@@ -1240,6 +1304,27 @@
       "identity_resolution": "CARET_CONFIRMED",
       "identity_sources": ["21 February 2022 deed, protocol 457, and controlled Registry/court reconstruction", "assets/data/concurso36-court-record-reconstruction-gapclose2-20260829.json"],
       "capacity_boundary": "Identity and authorisation of protocol 457 dated 21-February-2022 only. Notarial authorisation does not establish court filing, judicial validation, full economic performance, Registry correctness, knowledge, wrongdoing or liability."
+    },
+    {
+      "id": "PD-SP-P-0146",
+      "type": "PERSON",
+      "name": "Simon Peter Thompson",
+      "aliases": [
+        "Simon Thompson"
+      ],
+      "identity_resolution": "CARET_CONFIRMED",
+      "identity_sources": [
+        "26-Apr-2016 Sun Park ACTA family identifying Carlos Saavedra as representative",
+        "Authenticated 12-16-May-2016 Community-challenge and litigation-power chain, private locator withheld"
+      ],
+      "routes": {
+        "es": "/es/pwc-canarias-carlos-saavedra-sun-park/#registro-caret",
+        "en": "/en/pwc-canarias-carlos-saavedra-sun-park/#caret-register"
+      },
+      "not_same_as_names": [
+        "Ray Simon Thompson"
+      ],
+      "identity_boundary": "Exact person identity and source-named representation/power perimeter only. It does not establish executed authority, current title, payment, knowledge, action, wrongdoing or liability, and it must not be conflated with Ray Simon Thompson."
     }
   ]
 }
