@@ -4,132 +4,16 @@
   "type": "PERSON",
   "scope": "La Laguna judicial proceedings and directly linked judicial-cooperation acts",
   "records": [
-    {
-      "id": "PD-SP-P-0147",
-      "type": "PERSON",
-      "name": "Graciela Pérez-Valencia Díaz",
-      "aliases": ["Graciela Perez-Valencia Diaz"],
-      "identity_resolution": "CARET_CONFIRMED",
-      "identity_sources": [
-        "DP 748/2026 Providencia electronically signed 20-May-2026",
-        "DP 748/2026 Auto electronically signed 16-Jul-2026"
-      ],
-      "verification_detail": "Primary judicial source / electronic signature confirmed",
-      "capacity_boundary": "Magistrada-Juez of Plaza nº 4 del Tribunal de Instancia (Sección Instrucción), San Cristóbal de La Laguna, for the cited DP 748/2026 acts. This identity does not establish that she signed every earlier or later act in the proceeding; in particular the signer of the 24-Mar-2026 dismissal remains source-specific pending the signed original."
-    },
-    {
-      "id": "PD-SP-P-0148",
-      "type": "PERSON",
-      "name": "María del Pilar Luis Medina",
-      "aliases": ["Mª Pilar Luis Medina", "Maria del Pilar Luis Medina"],
-      "identity_resolution": "CARET_CONFIRMED",
-      "identity_sources": [
-        "DP 748/2026 Diligencia de Ordenación electronically signed 15-Jun-2026",
-        "DP 748/2026 LexNET notification package dated 01-Sep-2026"
-      ],
-      "verification_detail": "Primary judicial source / LexNET source confirmed",
-      "capacity_boundary": "Letrada de la Administración de Justicia in DP 748/2026 on the cited acts only; no transfer of capacity to other La Laguna plazas or proceedings."
-    },
-    {
-      "id": "PD-SP-P-0149",
-      "type": "PERSON",
-      "name": "María Mercedes Santana Rodríguez",
-      "aliases": ["Maria Mercedes Santana Rodriguez"],
-      "identity_resolution": "CARET_CONFIRMED",
-      "identity_sources": ["Sentencia 41/2014, Procedimiento Ordinario 344/2013, Juzgado de Primera Instancia nº 5 de San Cristóbal de La Laguna"],
-      "verification_detail": "Primary judgment transcription confirmed",
-      "capacity_boundary": "Magistrado-Juez recorded as the judge deciding Sentencia 41/2014 in PO 344/2013. The located public transcription does not identify the LAJ for that proceeding."
-    },
-    {
-      "id": "PD-SP-P-0150",
-      "type": "PERSON",
-      "name": "Carmen Rosa Marrero Fumero",
-      "identity_resolution": "CARET_CONFIRMED",
-      "identity_sources": [
-        "Juicio Cambiario 1048/2019 Auto of 04-Sep-2019 and later court acts in the recovered 83-page court copy",
-        "Juicio Cambiario 1048/2019 Providencia electronically signed 03-Jun-2025",
-        "ETJ 163/2020 Auto and Providencia electronically signed 19-Jun-2026"
-      ],
-      "verification_detail": "Primary judicial sources / electronic signatures confirmed across proceeding-period acts",
-      "capacity_boundary": "Magistrada-Juez of historical Juzgado de Primera Instancia nº 3 (antiguo Mixto nº 3), and later Plaza nº 3 del Tribunal de Instancia (Sección Civil), San Cristóbal de La Laguna, for source-verified acts in Cambiario 1048/2019 and ETJ 163/2020. Do not infer authorship of every act in those files from recurring office-holder status."
-    },
-    {
-      "id": "PD-SP-P-0151",
-      "type": "PERSON",
-      "name": "Juan Manuel Pérez Ramos",
-      "aliases": ["Juan Manuel Perez Ramos"],
-      "identity_resolution": "CARET_CONFIRMED",
-      "identity_sources": [
-        "Juicio Cambiario 1048/2019 Diligencia de Ordenación 02-Sep-2019 and later acts in recovered 83-page court copy",
-        "ETJ 163/2020 auction edict located as Edicto de Subasta Matkator 18SEP2024.pdf"
-      ],
-      "verification_detail": "Primary judicial sources confirmed",
-      "capacity_boundary": "Letrado de la Administración de Justicia at Juzgado de Primera Instancia nº 3 de San Cristóbal de La Laguna on the cited Cambiario/ETJ acts, including the 2024 auction edict. Capacity is act- and period-specific."
-    },
-    {
-      "id": "PD-SP-P-0152",
-      "type": "PERSON",
-      "name": "María del Pilar Parrilla Martín",
-      "aliases": ["Maria del Pilar Parrilla Martin"],
-      "identity_resolution": "CARET_CONFIRMED",
-      "identity_sources": [
-        "Juicio Cambiario 1048/2019 Diligencia de Ordenación 03-Dec-2019 and judicial-cooperation request in recovered court copy",
-        "Cambiario/ETJ decrees and acts in recovered court copy through 31-Jul-2020"
-      ],
-      "verification_detail": "Primary judicial sources confirmed",
-      "capacity_boundary": "Letrada de la Administración de Justicia at Juzgado de Primera Instancia nº 3 de San Cristóbal de La Laguna for the cited 2019-2020 acts only."
-    },
-    {
-      "id": "PD-SP-P-0153",
-      "type": "PERSON",
-      "name": "Marco Eulogio Chiang Rebolledo",
-      "identity_resolution": "CARET_CONFIRMED",
-      "identity_sources": ["Juicio Cambiario 1048/2019 Diligencia de Ordenación electronically signed 09-Apr-2025"],
-      "verification_detail": "Primary judicial source / electronic signature confirmed",
-      "capacity_boundary": "Letrado de la Administración de Justicia at Juzgado de Primera Instancia nº 3 de San Cristóbal de La Laguna on the 09-Apr-2025 personación act."
-    },
-    {
-      "id": "PD-SP-P-0154",
-      "type": "PERSON",
-      "name": "Cristina María Hernández Díaz",
-      "aliases": ["Cristina Maria Hernandez Diaz"],
-      "identity_resolution": "CARET_CONFIRMED",
-      "identity_sources": [
-        "ETJ 163/2020 Diligencia de Ordenación dated 06-Jul-2026 and electronically signed 07-Jul-2026",
-        "ETJ 163/2020 Diligencia de Ordenación dated 28-Jul-2026, where her name appears in the LAJ body/header line"
-      ],
-      "verification_detail": "Primary judicial source confirmed; later act contains preserved body/signatory discrepancy",
-      "capacity_boundary": "Letrada de la Administración de Justicia of Plaza nº 3 del Tribunal de Instancia (Sección Civil) for the source-verified ETJ 163/2020 act signed 07-Jul-2026. On the 28-Jul-2026 act she is named in the body/header but a different LAJ, Francisco Martín Pozo, is the electronic signatory; that discrepancy is preserved and must not be silently reconciled."
-    },
-    {
-      "id": "PD-SP-P-0155",
-      "type": "PERSON",
-      "name": "Francisco Martín Pozo",
-      "aliases": ["Francisco Martin Pozo"],
-      "identity_resolution": "CARET_CONFIRMED",
-      "identity_sources": ["ETJ 163/2020 Diligencia de Ordenación electronically signed 28-Jul-2026 at 15:44:20"],
-      "verification_detail": "Electronic LAJ signature confirmed",
-      "capacity_boundary": "Electronic signatory identified as Letrado de la Administración de Justicia on the 28-Jul-2026 ETJ 163/2020 act. The act body/header separately names Cristina María Hernández Díaz; no inference is made about substitution, delegation, clerical error or office allocation without further source proof."
-    },
-    {
-      "id": "PD-SP-P-0156",
-      "type": "PERSON",
-      "name": "María del Mar Vidal Villagrasa",
-      "aliases": ["Maria del Mar Vidal Villagrasa"],
-      "identity_resolution": "CARET_CONFIRMED",
-      "identity_sources": ["Auxilio Nacional 176/2019, Juzgado de Primera Instancia nº 2 de Arrecife, judicial-cooperation acts received from Cambiario 1048/2019"],
-      "verification_detail": "Primary auxiliary judicial source confirmed",
-      "capacity_boundary": "Letrada de la Administración de Justicia of Juzgado de Primera Instancia nº 2 de Arrecife acting only in the auxiliary judicial-cooperation lane generated by La Laguna Cambiario 1048/2019. She is not classified as a La Laguna office-holder."
-    },
-    {
-      "id": "PD-SP-P-0157",
-      "type": "PERSON",
-      "name": "Juan Manuel Vivancos Hernández",
-      "aliases": ["Juan Manuel Vivancos Hernandez"],
-      "identity_resolution": "CARET_CONFIRMED",
-      "identity_sources": ["Juzgado de Paz de Yaiza Diligencia de Ordenación dated 08-Jan-2020 in the judicial-cooperation material of Cambiario 1048/2019"],
-      "verification_detail": "Primary auxiliary judicial source confirmed",
-      "capacity_boundary": "Letrado de la Administración de Justicia of Juzgado de Paz de Yaiza acting in an auxiliary cooperation request linked to Cambiario 1048/2019. He is not classified as a La Laguna office-holder."
-    }
+    {"id":"PD-SP-P-0147","type":"PERSON","name":"Graciela Pérez-Valencia Díaz","aliases":["Graciela Perez-Valencia Diaz"],"routes":{"es":"/es/registro-judicial-la-laguna/#pd-sp-p-0147","en":"/en/la-laguna-judicial-register/#pd-sp-p-0147"},"identity_resolution":"CARET_CONFIRMED","identity_sources":["DP 748/2026 Providencia electronically signed 20-May-2026","DP 748/2026 Auto electronically signed 16-Jul-2026"],"verification_detail":"Primary judicial source / electronic signature confirmed","capacity_boundary":"Magistrada-Juez of Plaza nº 4 del Tribunal de Instancia (Sección Instrucción), San Cristóbal de La Laguna, for the cited DP 748/2026 acts. This identity does not establish that she signed every earlier or later act in the proceeding; in particular the signer of the 24-Mar-2026 dismissal remains source-specific pending the signed original."},
+    {"id":"PD-SP-P-0148","type":"PERSON","name":"María del Pilar Luis Medina","aliases":["Mª Pilar Luis Medina","Maria del Pilar Luis Medina"],"routes":{"es":"/es/registro-judicial-la-laguna/#pd-sp-p-0148","en":"/en/la-laguna-judicial-register/#pd-sp-p-0148"},"identity_resolution":"CARET_CONFIRMED","identity_sources":["DP 748/2026 Diligencia de Ordenación electronically signed 15-Jun-2026","DP 748/2026 LexNET notification package dated 01-Sep-2026"],"verification_detail":"Primary judicial source / LexNET source confirmed","capacity_boundary":"Letrada de la Administración de Justicia in DP 748/2026 on the cited acts only; no transfer of capacity to other La Laguna plazas or proceedings."},
+    {"id":"PD-SP-P-0149","type":"PERSON","name":"María Mercedes Santana Rodríguez","aliases":["Maria Mercedes Santana Rodriguez"],"routes":{"es":"/es/registro-judicial-la-laguna/#pd-sp-p-0149","en":"/en/la-laguna-judicial-register/#pd-sp-p-0149"},"identity_resolution":"CARET_CONFIRMED","identity_sources":["Sentencia 41/2014, Procedimiento Ordinario 344/2013, Juzgado de Primera Instancia nº 5 de San Cristóbal de La Laguna"],"verification_detail":"Primary judgment transcription confirmed","capacity_boundary":"Magistrado-Juez recorded as the judge deciding Sentencia 41/2014 in PO 344/2013. The located public transcription does not identify the LAJ for that proceeding."},
+    {"id":"PD-SP-P-0150","type":"PERSON","name":"Carmen Rosa Marrero Fumero","routes":{"es":"/es/registro-judicial-la-laguna/#pd-sp-p-0150","en":"/en/la-laguna-judicial-register/#pd-sp-p-0150"},"identity_resolution":"CARET_CONFIRMED","identity_sources":["Juicio Cambiario 1048/2019 Auto of 04-Sep-2019 and later court acts in the recovered 83-page court copy","Juicio Cambiario 1048/2019 Providencia electronically signed 03-Jun-2025","ETJ 163/2020 Auto and Providencia electronically signed 19-Jun-2026"],"verification_detail":"Primary judicial sources / electronic signatures confirmed across proceeding-period acts","capacity_boundary":"Magistrada-Juez of historical Juzgado de Primera Instancia nº 3 (antiguo Mixto nº 3), and later Plaza nº 3 del Tribunal de Instancia (Sección Civil), San Cristóbal de La Laguna, for source-verified acts in Cambiario 1048/2019 and ETJ 163/2020. Do not infer authorship of every act in those files from recurring office-holder status."},
+    {"id":"PD-SP-P-0151","type":"PERSON","name":"Juan Manuel Pérez Ramos","aliases":["Juan Manuel Perez Ramos"],"routes":{"es":"/es/registro-judicial-la-laguna/#pd-sp-p-0151","en":"/en/la-laguna-judicial-register/#pd-sp-p-0151"},"identity_resolution":"CARET_CONFIRMED","identity_sources":["Juicio Cambiario 1048/2019 Diligencia de Ordenación 02-Sep-2019 and later acts in recovered 83-page court copy","ETJ 163/2020 auction edict located as Edicto de Subasta Matkator 18SEP2024.pdf"],"verification_detail":"Primary judicial sources confirmed","capacity_boundary":"Letrado de la Administración de Justicia at Juzgado de Primera Instancia nº 3 de San Cristóbal de La Laguna on the cited Cambiario/ETJ acts, including the 2024 auction edict. Capacity is act- and period-specific."},
+    {"id":"PD-SP-P-0152","type":"PERSON","name":"María del Pilar Parrilla Martín","aliases":["Maria del Pilar Parrilla Martin"],"routes":{"es":"/es/registro-judicial-la-laguna/#pd-sp-p-0152","en":"/en/la-laguna-judicial-register/#pd-sp-p-0152"},"identity_resolution":"CARET_CONFIRMED","identity_sources":["Juicio Cambiario 1048/2019 Diligencia de Ordenación 03-Dec-2019 and judicial-cooperation request in recovered court copy","Cambiario/ETJ decrees and acts in recovered court copy through 31-Jul-2020"],"verification_detail":"Primary judicial sources confirmed","capacity_boundary":"Letrada de la Administración de Justicia at Juzgado de Primera Instancia nº 3 de San Cristóbal de La Laguna for the cited 2019-2020 acts only."},
+    {"id":"PD-SP-P-0153","type":"PERSON","name":"Marco Eulogio Chiang Rebolledo","routes":{"es":"/es/registro-judicial-la-laguna/#pd-sp-p-0153","en":"/en/la-laguna-judicial-register/#pd-sp-p-0153"},"identity_resolution":"CARET_CONFIRMED","identity_sources":["Juicio Cambiario 1048/2019 Diligencia de Ordenación electronically signed 09-Apr-2025"],"verification_detail":"Primary judicial source / electronic signature confirmed","capacity_boundary":"Letrado de la Administración de Justicia at Juzgado de Primera Instancia nº 3 de San Cristóbal de La Laguna on the 09-Apr-2025 personación act."},
+    {"id":"PD-SP-P-0154","type":"PERSON","name":"Cristina María Hernández Díaz","aliases":["Cristina Maria Hernandez Diaz"],"routes":{"es":"/es/registro-judicial-la-laguna/#pd-sp-p-0154","en":"/en/la-laguna-judicial-register/#pd-sp-p-0154"},"identity_resolution":"CARET_CONFIRMED","identity_sources":["ETJ 163/2020 Diligencia de Ordenación dated 06-Jul-2026 and electronically signed 07-Jul-2026","ETJ 163/2020 Diligencia de Ordenación dated 28-Jul-2026, where her name appears in the LAJ body/header line"],"verification_detail":"Primary judicial source confirmed; later act contains preserved body/signatory discrepancy","capacity_boundary":"Letrada de la Administración de Justicia of Plaza nº 3 del Tribunal de Instancia (Sección Civil) for the source-verified ETJ 163/2020 act signed 07-Jul-2026. On the 28-Jul-2026 act she is named in the body/header but a different LAJ, Francisco Martín Pozo, is the electronic signatory; that discrepancy is preserved and must not be silently reconciled."},
+    {"id":"PD-SP-P-0155","type":"PERSON","name":"Francisco Martín Pozo","aliases":["Francisco Martin Pozo"],"routes":{"es":"/es/registro-judicial-la-laguna/#pd-sp-p-0155","en":"/en/la-laguna-judicial-register/#pd-sp-p-0155"},"identity_resolution":"CARET_CONFIRMED","identity_sources":["ETJ 163/2020 Diligencia de Ordenación electronically signed 28-Jul-2026 at 15:44:20"],"verification_detail":"Electronic LAJ signature confirmed","capacity_boundary":"Electronic signatory identified as Letrado de la Administración de Justicia on the 28-Jul-2026 ETJ 163/2020 act. The act body/header separately names Cristina María Hernández Díaz; no inference is made about substitution, delegation, clerical error or office allocation without further source proof."},
+    {"id":"PD-SP-P-0156","type":"PERSON","name":"María del Mar Vidal Villagrasa","aliases":["Maria del Mar Vidal Villagrasa"],"routes":{"es":"/es/registro-judicial-la-laguna/#pd-sp-p-0156","en":"/en/la-laguna-judicial-register/#pd-sp-p-0156"},"identity_resolution":"CARET_CONFIRMED","identity_sources":["Auxilio Nacional 176/2019, Juzgado de Primera Instancia nº 2 de Arrecife, judicial-cooperation acts received from Cambiario 1048/2019"],"verification_detail":"Primary auxiliary judicial source confirmed","capacity_boundary":"Letrada de la Administración de Justicia of Juzgado de Primera Instancia nº 2 de Arrecife acting only in the auxiliary judicial-cooperation lane generated by La Laguna Cambiario 1048/2019. She is not classified as a La Laguna office-holder."},
+    {"id":"PD-SP-P-0157","type":"PERSON","name":"Juan Manuel Vivancos Hernández","aliases":["Juan Manuel Vivancos Hernandez"],"routes":{"es":"/es/registro-judicial-la-laguna/#pd-sp-p-0157","en":"/en/la-laguna-judicial-register/#pd-sp-p-0157"},"identity_resolution":"CARET_CONFIRMED","identity_sources":["Juzgado de Paz de Yaiza Diligencia de Ordenación dated 08-Jan-2020 in the judicial-cooperation material of Cambiario 1048/2019"],"verification_detail":"Primary auxiliary judicial source confirmed","capacity_boundary":"Letrado de la Administración de Justicia of Juzgado de Paz de Yaiza acting in an auxiliary cooperation request linked to Cambiario 1048/2019. He is not classified as a La Laguna office-holder."}
   ]
 }
