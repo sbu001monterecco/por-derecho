@@ -1,7 +1,7 @@
 {
   "schema": "por-derecho.matter-identity-registry.v1",
   "registry_id": "PD-SP-IDENTITY-REGISTRY-001",
-  "control_date": "2026-08-31",
+  "control_date": "2026-09-01",
   "status": "CANONICAL_ACTOR_REGISTER_AND_AUTHORIZED_PROFESSIONAL_EXTENSION_ARCHIVE_BACKFILL_OPEN",
   "id_formats": {
     "PERSON": "PD-SP-P-####",
@@ -101,6 +101,7 @@
       "Meeting Point Hotelmanagement (Canaries), S.L.U.",
       "Meeting Point Spain, S.L.U.",
       "Meeting Point Investment, S.L.U.",
+      "Joan Cruz Nuez",
       "AUREN REESTRUCTURACIONES SLP",
       "Sociedad Estatal de Participaciones Industriales",
       "Fondo de Apoyo a la Solvencia de Empresas Estratégicas",
@@ -145,8 +146,8 @@
     ]
   },
   "counts": {
-    "total": 313,
-    "PERSON": 144,
+    "total": 314,
+    "PERSON": 145,
     "ORGANISATION": 79,
     "STRUCTURE": 11,
     "INSTITUTION": 36,
@@ -162,6 +163,11 @@
       "path": "matter-identity-registry-v1.professional-people.json",
       "type": "PERSON",
       "count": 27
+    },
+    {
+      "path": "matter-identity-registry-v1.joan-cruz.json",
+      "type": "PERSON",
+      "count": 1
     },
     {
       "path": "matter-identity-registry-v1.organisations.json",

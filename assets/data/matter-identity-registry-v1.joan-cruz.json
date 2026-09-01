@@ -1,0 +1,24 @@
+{
+  "schema": "por-derecho.matter-identity-registry.part.v1",
+  "registry_id": "PD-SP-IDENTITY-REGISTRY-001",
+  "type": "PERSON",
+  "control_date": "2026-09-01",
+  "records": [
+    {
+      "id": "PD-SP-P-0145",
+      "type": "PERSON",
+      "name": "Joan Cruz Nuez",
+      "aliases": [
+        "Joan Cruz",
+        "JCruz"
+      ],
+      "caret": "Joan Cruz Nuez^",
+      "identity_resolution": "CARET_CONFIRMED",
+      "identity_sources": [
+        "Public professional and BORME-derived records resolving Joan Cruz / Joan Cruz Nuez and the Meeting Point history",
+        "Custodial source attachment filename: ENTRADA ILEGAL DE CAM Y JOAN CRUZ AL HOTEL SUN PARK - 01MAR2018.pdf"
+      ],
+      "capacity_boundary": "Identity is confirmed. The source-file naming associates Joan Cruz with the 01-Mar-2018 evidence package. No facial recognition is used. The filename alone does not prove his presence in any individual image, conduct, knowledge, authority, coordination or illegality."
+    }
+  ]
+}

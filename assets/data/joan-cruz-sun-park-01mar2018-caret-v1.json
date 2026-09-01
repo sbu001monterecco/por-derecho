@@ -1,0 +1,81 @@
+{
+  "schema": "por-derecho.caret-evidence-record.v1",
+  "control_date": "2026-09-01",
+  "status": "CANONICAL_METADATA_REGISTERED",
+  "person": {
+    "id": "PD-SP-P-0145",
+    "caret": "Joan Cruz Nuez^",
+    "identity_status": "CARET_CONFIRMED"
+  },
+  "source": {
+    "id": "PD-SP-SRC-0001",
+    "class": "EMAIL",
+    "custody": "PRIVATE_GMAIL_CUSTODY",
+    "subject": "Illegal entry to Hotel including JCruz",
+    "preservation_date": "2026-01-15",
+    "publication_boundary": "CANONICAL_METADATA_ONLY"
+  },
+  "document": {
+    "id": "PD-SP-DOC-0005",
+    "filename": "ENTRADA ILEGAL DE CAM Y JOAN CRUZ AL HOTEL SUN PARK - 01MAR2018.pdf",
+    "mime_type": "application/pdf",
+    "size_bytes": 2890644,
+    "pages": 18,
+    "sha256": "3c05f2a90648299ca7792296e386aca8b48fc11ef93676f519938aaa61ef306b",
+    "pdf_creation_date": "2018-08-10T15:08:10+01:00",
+    "pdf_modification_date": "2018-08-10T15:08:10+01:00",
+    "producer": "GPL Ghostscript 9.07",
+    "publication_boundary": "METADATA_AND_NEUTRAL_SUMMARY_ONLY",
+    "binary_publication_status": "NOT_COMMITTED_BY_THIS_REGISTRATION"
+  },
+  "event": {
+    "id": "PD-SP-EVT-0001",
+    "date": "2018-03-01",
+    "label": "Sun Park 01-Mar-2018 source event",
+    "location_label": "Hotel Sun Park",
+    "date_basis": [
+      "document filename",
+      "repeated page caption"
+    ],
+    "later_anchor": {
+      "date": "2018-06-07",
+      "route_es": "/es/toma-control-sun-park-7-junio-2018/",
+      "route_en": "/en/sun-park-takeover-7-june-2018/",
+      "elapsed_days": 98
+    }
+  },
+  "source_text_status": {
+    "filename_association": "The filename expressly includes CAM Y JOAN CRUZ and the date 01MAR2018.",
+    "page_caption": "The repeated page caption names Jose Acosta Matos and characterises the entry as illegal and as forcing the staff door on 01/03/18.",
+    "attribution_boundary": "The repository records the words 'ilegal' / 'illegal' as the source's own label, not as an adjudicated legal conclusion. The page captions themselves name Jose Acosta Matos; they do not independently identify Joan Cruz in text."
+  },
+  "identity_context": {
+    "meeting_point_ceo_end": "2017-11-01",
+    "meeting_point_joint_powers_revocation_recorded": "2019-02-05",
+    "boundary": "The surviving public corporate-power record does not prove that any power was exercised at Sun Park on 01-Mar-2018."
+  },
+  "later_public_context": [
+    {
+      "date": "2021-11-19",
+      "fact": "Hosteltur material identifies Joan Cruz among Tusity's partners and separately lists Grupo Acosta Matos among businesses supported by Tusity.",
+      "boundary": "Later commercial context; not proof of a 2018 agreement or coordination."
+    },
+    {
+      "date": "2025-08-08",
+      "fact": "Tourinews reports BLUESEA engaging Joan Cruz in the integration of Meeting Point Hotels Spain and renewal of hotel-management contracts.",
+      "boundary": "Later professional continuity only."
+    }
+  ],
+  "epistemic_guardrails": [
+    "No facial recognition is used to identify people in the 18-page photographic PDF.",
+    "A filename association is not treated as proof of conduct, knowledge, authority, coordination or criminal responsibility.",
+    "The PDF metadata date of 10-Aug-2018 is treated as a later document-compilation date, not as the date of the depicted event.",
+    "The 15-Jan-2026 email date is a custody/preservation date, not the historical event date."
+  ],
+  "public_routes": {
+    "person_es": "/es/joan-cruz-nuez/",
+    "person_en": "/en/joan-cruz-nuez/",
+    "event_es": "/es/sun-park-1-marzo-2018-joan-cruz/",
+    "event_en": "/en/sun-park-1-march-2018-joan-cruz/"
+  }
+}
