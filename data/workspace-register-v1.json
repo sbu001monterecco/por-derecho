@@ -2,11 +2,13 @@
   "schema": "por-derecho.workspace-register.v1",
   "register_id": "PD-WS-REG-001",
   "control_date": "2026-09-01",
-  "status": "ACTIVE",
+  "status": "ACTIVE_RUNTIME_ENABLED",
   "workspace_id_pattern": "PD-WS-YYYYMMDD-NNNN",
   "governance": {
     "continuous_persistence": ".github/governance/AUTOMATIC_WORKSPACE_PERSISTENCE_ARCHITECTURE_01SEP2026.md",
     "handoff": ".github/governance/WORKSPACE_THREAD_CONTINUITY_HANDOFF_STANDARD_01SEP2026.md",
+    "runtime": "scripts/workspace_persistence.py",
+    "runbook": "docs/WORKSPACE_PERSISTENCE_RUNBOOK.md",
     "current_pointer": "CURRENT_WORKSPACE_HANDOFF.md"
   },
   "workspaces": [
@@ -16,14 +18,54 @@
       "status": "DELETION_SAFE_WITH_OPEN_WORK",
       "current_handoff_id": "PD-WCH-20260901-AMHP-DMA-001",
       "handoff_path": "archive/handoffs/2026-09-01-acosta-matos-hotel-platform-digital-media-workspace-handoff.md",
-      "topic_keys": ["ACOSTA_MATOS", "CANARIAN_HOSPITALITY", "HOTEL_PLATFORM", "SATIRE", "DIGITAL_MEDIA", "LINKEDIN", "CONTINUITY"],
+      "topic_keys": [
+        "ACOSTA_MATOS",
+        "CANARIAN_HOSPITALITY",
+        "HOTEL_PLATFORM",
+        "SATIRE",
+        "DIGITAL_MEDIA",
+        "LINKEDIN",
+        "CONTINUITY"
+      ],
       "repository": "sbu001monterecco/por-derecho",
-      "public_private_boundary": "PUBLIC_REPO_CONTAINS_GOVERNED_SOURCE_SAFE_STATE; RAW_PRIVATE_TRANSCRIPT_ARCHIVE_NOT_IMPLEMENTED",
+      "public_private_boundary": "PUBLIC_REPO_CONTAINS_GOVERNED_SOURCE_SAFE_STATE; RAW_PRIVATE_TRANSCRIPT_ARCHIVE_NOT_IMPLEMENTED_FOR_THIS_WORKSPACE",
       "continuous_capture_mode": "CONNECTED_AGENTIC_CHECKPOINTING",
       "next_target_mode": "PRIVATE_ARCHIVE_PLUS_PUBLIC_STATE"
+    },
+    {
+      "workspace_id": "PD-WS-20260901-0002",
+      "title": "Automatic workspace persistence runtime and private-vault implementation",
+      "status": "HANDOFF_READY_IMPLEMENTATION_PR_PENDING",
+      "current_handoff_id": "PD-WCH-20260901-AWP-RUNTIME-001",
+      "handoff_path": "archive/handoffs/2026-09-01-automatic-workspace-persistence-runtime-handoff.md",
+      "machine_handoff_path": "archive/handoffs/2026-09-01-automatic-workspace-persistence-runtime-handoff.json",
+      "topic_keys": [
+        "CONTINUITY",
+        "WORKSPACE_PERSISTENCE",
+        "EVENT_SOURCING",
+        "PRIVATE_VAULT",
+        "CHATGPT_EXPORT",
+        "GITHUB",
+        "GOOGLE_DRIVE"
+      ],
+      "repository": "sbu001monterecco/por-derecho",
+      "public_private_boundary": "PUBLIC_REPO_CONTAINS_RUNTIME_AND_SOURCE_SAFE_STATE; PRIVATE_GOOGLE_DRIVE_VAULT_PROVISIONED_OWNER_ONLY; NO_RAW_TRANSCRIPT_IMPORTED",
+      "continuous_capture_mode": "CONNECTED_AGENTIC_CHECKPOINTING_PLUS_APPEND_ONLY_RUNTIME",
+      "private_vault": {
+        "provider": "GOOGLE_DRIVE",
+        "root_alias": "Por Derecho Private Workspaces",
+        "workspace_alias": "PD-WS-20260901-0002 — Automatic Workspace Persistence Runtime",
+        "permission_state_at_creation": "OWNER_ONLY_SHARED_FALSE",
+        "exact_locator_publication": "WITHHELD",
+        "filesystem_mount_state": "NOT_CONNECTED"
+      },
+      "implementation_branch": "agent/workspace-persistence-runtime-20260901",
+      "next_target_mode": "PRIVATE_ARCHIVE_PLUS_PUBLIC_STATE_THEN_TRUE_EVENT_SOURCED_CLIENT"
     }
   ],
   "registration_rule": "Create/recover a stable workspace ID for every substantive Por Derecho workspace when persistence-capable work begins. A workspace may span multiple ChatGPT threads; a ChatGPT thread may be superseded without changing the workspace ID.",
+  "checkpoint_rule": "Checkpoint material decisions, identity/source/artifact changes, repository/publication events, failures and open work during execution rather than waiting for thread closeout.",
+  "private_vault_rule": "Raw transcripts, connected-source content, private attachments and event logs belong in a separate private vault. The public repository receives only governed source-safe state and expressly approved derivatives.",
   "thread_rule": "Do not use a ChatGPT title as canonical identity. Thread/platform IDs or URLs, when available, are aliases on the workspace record.",
   "supersession_rule": "A later handoff or workspace state supersedes stale chat state only when repository reconciliation is explicit."
 }
