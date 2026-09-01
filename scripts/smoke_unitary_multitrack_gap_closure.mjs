@@ -75,8 +75,14 @@ try {
       await page.locator('[data-ucf-gap-priority]').selectOption('P1');
       if (await page.locator('[data-ucf-gap]').count() !== 2) fail(`${route.lang}/${width}: P1 filter should show 2 gaps`);
       await page.locator('[data-ucf-gap-priority]').selectOption('');
-      const overflow = await page.evaluate(() => document.documentElement.scrollWidth - document.documentElement.clientWidth);
-      if (overflow > 2) fail(`${route.lang}/${width}: horizontal overflow ${overflow}px`);
+      const overflow = await page.evaluate(() => ({
+        width: document.documentElement.scrollWidth - document.documentElement.clientWidth,
+        offenders: Array.from(document.querySelectorAll('body *')).map((node) => {
+          const rect = node.getBoundingClientRect();
+          return { tag: node.tagName, className: node.className, right: Math.round(rect.right), left: Math.round(rect.left) };
+        }).filter((item) => item.right > innerWidth + 2 || item.left < -2).slice(0, 12),
+      }));
+      if (overflow.width > 2) fail(`${route.lang}/${width}: horizontal overflow ${overflow.width}px ${JSON.stringify(overflow.offenders)}`);
       if (errors.length) fail(`${route.lang}/${width}: browser errors: ${errors.join(' | ')}`);
       await page.close();
     }
