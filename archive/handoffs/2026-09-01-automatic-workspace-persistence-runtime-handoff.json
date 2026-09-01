@@ -3,19 +3,34 @@
   "handoff_id": "PD-WCH-20260901-AWP-RUNTIME-001",
   "workspace_id": "PD-WS-20260901-0003",
   "date": "2026-09-01",
-  "status": "HANDOFF_READY_RECONCILED_PR_PENDING",
+  "status": "DELETION_SAFE_WITH_OPEN_WORK",
   "repository": "sbu001monterecco/por-derecho",
-  "architecture_merge_sha": "89e84ffd6656a37951565d769f5eee4214661e37",
-  "reconciled_baseline_sha": "1099e48a83b8f81cd652734df5e5012336985e62",
-  "superseded_branch": "agent/workspace-persistence-runtime-20260901",
-  "superseded_pr": 1316,
-  "active_branch": "agent/workspace-persistence-runtime-reconciled-20260901",
-  "objective": "Implement privacy-separated append-only workspace persistence, private ChatGPT export import, public-summary gating, tests, CI and concurrent workspace governance.",
+  "architecture_release": {
+    "pull_request": 1314,
+    "merge_sha": "89e84ffd6656a37951565d769f5eee4214661e37"
+  },
+  "runtime_release": {
+    "pull_request": 1317,
+    "tested_head_sha": "aeedb75f7ffaca5614e6cfb299f207915edc9a00",
+    "merge_sha": "ca501751410bb3f0ad928c2b16d6d885551e7ea3",
+    "workflow_runs": 13,
+    "workflow_failures": 0,
+    "local_runtime_tests": 5,
+    "local_runtime_test_failures": 0,
+    "state": "MERGED_TO_MAIN"
+  },
+  "superseded_release": {
+    "pull_request": 1316,
+    "state": "CLOSED_UNMERGED",
+    "reason": "The branch was stale and collided with a current-main workspace registration; it was superseded by the reconciled PR 1317."
+  },
+  "objective": "Provide a tested privacy-separated append-only workspace persistence runtime, private ChatGPT export normalizer, explicit public-summary gate, concurrent workspace governance and deletion-safe continuity state.",
   "identity_reconciliation": {
     "provisional_id": "PD-WS-20260901-0002",
     "canonical_id": "PD-WS-20260901-0003",
     "reason": "Current main independently registered PD-WS-20260901-0002 for authority discovery before the persistence runtime branch merged.",
     "rule": "CURRENT_MAIN_WINS_UNMERGED_WORKSPACE_RENUMBERS",
+    "governance": ".github/governance/CONCURRENT_WORKSPACE_REGISTRATION_PROTOCOL_01SEP2026.md",
     "result": "RESOLVED_WITHOUT_SILENT_OVERWRITE"
   },
   "implemented_paths": [
@@ -47,19 +62,10 @@
     "event_store": "PRIVATE_APPEND_ONLY_JSONL",
     "integrity": "SHA256_CONTENT_HASH_EVENT_HASH_AND_PREVIOUS_EVENT_HASH",
     "atomic_state_handoff": true,
+    "portable_exclusive_locking": true,
     "public_repo_vault_refusal": true,
-    "public_summary_gate": "EXPLICIT_OBJECT_REQUIRED"
-  },
-  "local_test_state": {
-    "status": "PASS",
-    "tests": 5,
-    "areas": [
-      "INIT_APPEND_CHECKPOINT_VALIDATE",
-      "TAMPER_DETECTION",
-      "PUBLIC_SUMMARY_GATE",
-      "PRIVATE_CHATGPT_EXPORT_IMPORT",
-      "PUBLIC_REPO_VAULT_REFUSAL"
-    ]
+    "public_summary_gate": "EXPLICIT_OBJECT_REQUIRED",
+    "system_and_tool_export_messages_default": "EXCLUDED_UNLESS_EXPLICITLY_REQUESTED"
   },
   "private_vault": {
     "provider": "GOOGLE_DRIVE",
@@ -78,10 +84,14 @@
     ],
     "seed": {
       "filename": "PD-WS-20260901-0003-seed-20260901.zip",
-      "bytes": 10803,
-      "sha256": "5b38b80efef14bab05f8d54160c792b24a0cedc610129453a92655f06fd2f742",
-      "validation": "PASS",
-      "state": "UPLOADED_PRIVATE",
+      "bytes": 14298,
+      "sha256": "84db4a21ca7fb5cfd871029380a373a6b917420af92bdf9992dded07621479e5",
+      "zip_integrity": "PASS",
+      "workspace_validation": "PASS",
+      "last_event_id": "PD-WS-20260901-0003-EVT-000005",
+      "last_event_hash": "d4c0263c524e094ccaa56bc8287b0c4c2e7db636aeba46a549f93bd4dc346fed",
+      "manifest_state": "SEPARATE_PRIVATE_DRIVE_MANIFEST_PRESENT",
+      "state": "VALIDATED_POST_MERGE_REPLACED_IN_PLACE",
       "contains_raw_chat_history": false
     }
   },
@@ -90,7 +100,8 @@
     "CONNECTED_SOURCE_CONTENT_NOT_AUTO_PUBLISHED",
     "PUBLIC_SUMMARY_EXPLICIT_APPROVAL_REQUIRED",
     "PRIVATE_VAULT_REFUSED_INSIDE_PUBLIC_REPO",
-    "DRIVE_LOCATORS_NOT_STORED_PUBLICLY"
+    "DRIVE_LOCATORS_NOT_STORED_PUBLICLY",
+    "CHAT_TEXT_DOES_NOT_PROVE_EXTERNAL_FACT"
   ],
   "not_performed": [
     "REAL_HISTORICAL_CHATGPT_EXPORT_IMPORT",
@@ -101,9 +112,7 @@
     "EXTERNAL_COMMUNICATION_OR_SOCIAL_PUBLICATION"
   ],
   "open_work": [
-    "MERGE_RECONCILED_RUNTIME_PR_AND_RECORD_EXACT_SHA",
     "CONNECT_LIVE_PRIVATE_FILESYSTEM_OR_DRIVE_OBJECT_STORE_ADAPTER",
-    "INITIALISE_OR_RESTORE_CANONICAL_LIVE_PD_WS_20260901_0003_CHAIN",
     "OPTIONAL_AUTHORISED_CHATGPT_EXPORT_IMPORT",
     "HISTORICAL_THREAD_CLUSTERING_AND_RECONCILIATION",
     "CREDENTIAL_GATED_REQUEST_PATH_WORKBENCH",
@@ -114,13 +123,13 @@
     "NATIVE_ALL_THREAD_CHATGPT_CAPTURE",
     "SINGLE_CURRENT_WORKSPACE_ONLY",
     "PUBLIC_REPOSITORY_CONTAINS_RAW_PRIVATE_TRANSCRIPTS",
-    "GOOGLE_DRIVE_IS_LIVE_RUNTIME_SINK",
+    "GOOGLE_DRIVE_IS_CONTINUOUS_RUNTIME_SINK",
     "HISTORICAL_EXPORT_IMPORTED",
     "OPENAI_API_KEY_EXISTS_OR_IS_AUTHORISED",
     "OPENAI_API_WORKBENCH_IMPLEMENTED",
     "REPOSITORY_MERGE_EQUALS_EXTERNAL_ACTION",
     "HASH_CHAIN_PROVES_EXTERNAL_FACT"
   ],
-  "next_thread_first_action": "Read the active workspace index, select PD-WS-20260901-0003, and reconcile the reconciled branch/PR against current main before acting.",
-  "deletion_safety": "HANDOFF_READY_FINAL_CLOSEOUT_PENDING_RECONCILED_PR_MERGE"
+  "next_thread_first_action": "Read the active workspace index, select PD-WS-20260901-0003, reconcile current main, and continue with the live private event-sink or request-path workbench phase only when explicitly instructed and credentialed.",
+  "deletion_safety": "DELETION_SAFE_WITH_OPEN_IMPLEMENTATION_WORK"
 }
