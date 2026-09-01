@@ -111,9 +111,8 @@ try {
     await page.goto(`${base}${path}`, { waitUntil: 'domcontentloaded', timeout: 60000 });
     const reciprocal = page.locator('[data-ucf-authority-propagation-link="PD-UCF-20260901-01"]');
     if (await reciprocal.count() !== 1) fail(`${path}: authority-propagation reciprocal control missing`);
-    const href = await reciprocal.locator('a').getAttribute('href');
-    if (!href?.includes('#unitary-authority-propagation')) fail(`${path}: authority-propagation anchor missing`);
     const checkpointHrefs = await reciprocal.locator('a').evaluateAll((nodes) => nodes.map((node) => node.getAttribute('href')));
+    if (!checkpointHrefs.some((value) => value?.includes('#unitary-authority-propagation'))) fail(`${path}: authority-propagation anchor missing`);
     if (!checkpointHrefs.some((value) => value?.includes('#evidence-PD-EV-UCF-INT-184368-2026'))) fail(`${path}: Intervención evidence anchor missing`);
     await page.close();
   }
