@@ -51,9 +51,11 @@ prof_ids = {r["id"] for r in prof["records"]}
 assert "PD-SP-P-0146" in prof_ids
 assert any(r["display_name"] == "Carlos Llamas Sanz" and len(r["filings"]) == 2 for r in filings["professional_registers"])
 
-for rel in ["es/registro-judicial-la-laguna/index.html", "en/la-laguna-judicial-register/index.html", "es/registro-identidad-materia/index.html", "en/matter-identity-registry/index.html"]:
+for rel in ["es/registro-identidad-materia/index.html", "en/matter-identity-registry/index.html"]:
     text = (ROOT / rel).read_text(encoding="utf-8")
     assert "331" in text
+    assert "157" in text
+    assert "41" in text
 
 for rel in ["es/registro-judicial-la-laguna/index.html", "en/la-laguna-judicial-register/index.html"]:
     text = (ROOT / rel).read_text(encoding="utf-8")
