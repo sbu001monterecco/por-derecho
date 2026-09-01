@@ -1,0 +1,45 @@
+name: Audit live proceeding email intake
+
+on:
+  pull_request:
+    paths:
+      - '.github/governance/LIVE_PROCEEDING_EMAIL_INTAKE_GOVERNANCE_01SEP2026.md'
+      - '.github/workflows/audit-live-proceeding-email-intake.yml'
+      - 'ops/LIVE_PROCEEDING_EMAIL_INTAKE_V1.json'
+      - 'scripts/validate_live_proceeding_email_intake.py'
+      - 'assets/data/institutional-communications-register-v1.json'
+      - 'archive/PROCEEDINGS_MASTER_REGISTER.csv'
+      - 'assets/data/proceedings-master-public-v1.json'
+      - 'data/workspace-register-v1.json'
+      - 'CURRENT_WORKSPACE_HANDOFF.md'
+      - 'archive/handoffs/2026-09-01-live-proceeding-email-intake-workspace-handoff.md'
+  push:
+    branches:
+      - main
+    paths:
+      - '.github/governance/LIVE_PROCEEDING_EMAIL_INTAKE_GOVERNANCE_01SEP2026.md'
+      - '.github/workflows/audit-live-proceeding-email-intake.yml'
+      - 'ops/LIVE_PROCEEDING_EMAIL_INTAKE_V1.json'
+      - 'scripts/validate_live_proceeding_email_intake.py'
+      - 'assets/data/institutional-communications-register-v1.json'
+      - 'archive/PROCEEDINGS_MASTER_REGISTER.csv'
+      - 'assets/data/proceedings-master-public-v1.json'
+      - 'data/workspace-register-v1.json'
+      - 'CURRENT_WORKSPACE_HANDOFF.md'
+      - 'archive/handoffs/2026-09-01-live-proceeding-email-intake-workspace-handoff.md'
+
+permissions:
+  contents: read
+
+jobs:
+  specialist-control:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate live proceeding email intake
+        run: python3 scripts/validate_live_proceeding_email_intake.py
