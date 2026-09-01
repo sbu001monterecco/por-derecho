@@ -9,6 +9,7 @@ const outputDir = process.env.PD_ID_SCREENSHOT_DIR || 'artifacts/operational-ide
 await fs.mkdir(outputDir, { recursive: true });
 
 const registryIndex = JSON.parse(await fs.readFile('assets/data/matter-identity-registry-v1.json', 'utf8'));
+const operationalControl = JSON.parse(await fs.readFile('assets/data/matter-identity-operational-control-v1.json', 'utf8'));
 const expectedTotal = Number(registryIndex?.counts?.total);
 if (!(expectedTotal > 0)) throw new Error('Canonical registry does not expose a positive counts.total');
 const registryParts = Array.isArray(registryIndex?.parts) ? registryIndex.parts : [];
@@ -33,6 +34,11 @@ const expectedUnresolved = registryRecords.filter(record => {
   return !['CANONICAL', 'CARET_CONFIRMED'].includes(resolutionKey);
 }).length;
 if (!(expectedUnresolved > 0)) throw new Error('Canonical registry exposes no unresolved identity records');
+const expectedUnresolvedQueue = [
+  ...(operationalControl.exact_identity_queue || []),
+  ...(operationalControl.proceeding_identity_queue || [])
+].length;
+if (!(expectedUnresolvedQueue > 0)) throw new Error('Operational control exposes no unresolved queue records');
 
 const cases = [
   {
@@ -100,8 +106,8 @@ try {
         if (!(value > 0)) throw new Error(`${url}: ${queue} queue is empty`);
         queueCounts[queue] = value;
       }
-      if (queueCounts.unresolved !== expectedUnresolved) {
-        throw new Error(`${url}: expected ${expectedUnresolved} unresolved identities, found ${queueCounts.unresolved}`);
+      if (queueCounts.unresolved !== expectedUnresolvedQueue) {
+        throw new Error(`${url}: expected ${expectedUnresolvedQueue} operational unresolved queue items, found ${queueCounts.unresolved}`);
       }
 
       await page.locator('[data-operational-filter="UNRESOLVED"]').click();
