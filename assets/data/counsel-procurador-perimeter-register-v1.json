@@ -1,6 +1,6 @@
 {
   "schema": "por-derecho-counsel-procurador-perimeter-register-v1",
-  "as_of": "2026-08-30",
+  "as_of": "2026-09-01",
   "status": "seed_control_not_complete_denominator",
   "governance": "archive/COUNSEL_PROCURADOR_FILING_LINEAGE_GOVERNANCE_30AUG2026.md",
   "rules": {
@@ -31,9 +31,7 @@
     },
     {
       "display_name": "Cristo Ayose Suárez Pimentel",
-      "aliases": [
-        "Cristro Suarez Pimentel"
-      ],
+      "aliases": ["Cristro Suarez Pimentel"],
       "classification": "our_former_counsel",
       "our_perimeter": true,
       "identity_status": "canonical_name_source_verified_alias_preserved",
@@ -47,43 +45,63 @@
     },
     {
       "display_name": "Javier Sixto Seijas",
-      "aliases": [
-        "Javier",
-        "Javier Sixto"
-      ],
+      "aliases": ["Javier", "Javier Sixto"],
       "classification": "our_counsel",
       "our_perimeter": true,
       "working_relationship": "professional_pair_with_Estefania",
       "identity_status": "primary_procedural_source_verified",
-      "professional_detail": {
-        "college": "Ilustre Colegio de la Abogacía de Madrid",
-        "colegiado": "99.513"
-      }
+      "professional_detail": {"college": "Ilustre Colegio de la Abogacía de Madrid", "colegiado": "99.513"}
     },
     {
       "display_name": "Estefanía Sixto Seijas",
-      "aliases": [
-        "Estefanía",
-        "Estefania Sixto Seijas"
-      ],
+      "aliases": ["Estefanía", "Estefania Sixto Seijas"],
       "classification": "our_counsel",
       "our_perimeter": true,
       "working_relationship": "professional_pair_with_Javier",
       "identity_status": "current_correspondence_source_verified_individual_filing_attribution_open"
     },
     {
-      "display_name": "Juan Daniel Fajardo Expósito", "classification": "external_or_party_specific_counsel", "our_perimeter": false,
-      "identity_status": "Rollo_1010_2018_appellate_cover_verified", "period_specific_clients": ["Gil Marer"],
+      "display_name": "Carlos Llamas Sanz",
+      "caepr_id": "PD-SP-P-0146",
+      "classification": "our_counsel",
+      "our_perimeter": true,
+      "identity_status": "primary_procedural_source_verified",
+      "period_specific_clients": ["Gil Marer"],
+      "period_specific_proceedings": ["DP 748/2026"],
+      "procurador_pairing": [
+        {
+          "procurador": "Adriana Hernández Díaz",
+          "procurador_id": "PROC-ADRIANA-HERNANDEZ-DIAZ",
+          "proceeding_id": "DP 748/2026",
+          "first_verified": "2026-04-17",
+          "latest_verified": "2026-09-01",
+          "status": "verified_proceeding_period_pairing"
+        }
+      ],
+      "boundary": "Verified as Gil Marer's counsel in DP 748/2026 from primary LexNET/court sources; do not transfer this representation to another client or proceeding without source proof."
+    },
+    {
+      "display_name": "Juan Daniel Fajardo Expósito",
+      "classification": "external_or_party_specific_counsel",
+      "our_perimeter": false,
+      "identity_status": "Rollo_1010_2018_appellate_cover_verified",
+      "period_specific_clients": ["Gil Marer"],
       "boundary": "Appearance on the located appellate cover only; filing and authority denominator remain open"
     },
     {
-      "display_name": "Ignacio Manuel Martín Marrero", "classification": "external_or_party_specific_counsel", "our_perimeter": false,
-      "identity_status": "Rollo_1010_2018_appellate_cover_verified", "period_specific_clients": ["Constructora Acosta Matos", "Laura Patricia Acosta Matos", "José Daniel Acosta Matos"],
+      "display_name": "Ignacio Manuel Martín Marrero",
+      "classification": "external_or_party_specific_counsel",
+      "our_perimeter": false,
+      "identity_status": "Rollo_1010_2018_appellate_cover_verified",
+      "period_specific_clients": ["Constructora Acosta Matos", "Laura Patricia Acosta Matos", "José Daniel Acosta Matos"],
       "boundary": "Appearance on the located appellate cover only; filing and authority denominator remain open"
     },
     {
-      "display_name": "Juan Carlos Prieto Puente", "classification": "external_opposing_dissident_side", "our_perimeter": false,
-      "identity_status": "Rollo_1010_2018_appellate_cover_verified", "period_specific_clients": ["Antonio Cogolludo Rojas", "Shaila María Cogolludo Ramos"],
+      "display_name": "Juan Carlos Prieto Puente",
+      "classification": "external_opposing_dissident_side",
+      "our_perimeter": false,
+      "identity_status": "Rollo_1010_2018_appellate_cover_verified",
+      "period_specific_clients": ["Antonio Cogolludo Rojas", "Shaila María Cogolludo Ramos"],
       "boundary": "Do not conflate with the separate legacy string Juan Carlos Roque Prieto; appearance on this cover does not transfer other roles"
     }
   ],
