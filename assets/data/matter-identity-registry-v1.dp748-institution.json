@@ -1,0 +1,23 @@
+{
+  "schema": "por-derecho.matter-identity-registry.part.v1",
+  "registry_id": "PD-SP-IDENTITY-REGISTRY-001",
+  "type": "INSTITUTION",
+  "records": [
+    {
+      "id": "PD-SP-I-0037",
+      "type": "INSTITUTION",
+      "name": "Plaza nº 4 del Tribunal de Instancia (Sección Instrucción) de San Cristóbal de La Laguna",
+      "aliases": [
+        "Juzgado de Instrucción nº 4 de San Cristóbal de La Laguna",
+        "Juzgado de Instrucción nº 4 La Laguna",
+        "Plaza Nº 4 del Tribunal de Instancia (Sección Instrucción)"
+      ],
+      "identity_resolution": "CARET_CONFIRMED",
+      "identity_sources": [
+        "DP 748/2026 Order signed 16-Jul-2026",
+        "DP 748/2026 LexNET communication/notification issued 1-Sep-2026"
+      ],
+      "capacity_boundary": "Current court-organ label is taken from the 16-Jul-2026 order and 1-Sep-2026 communication. The Juzgado de Instrucción nº 4 wording is retained as the predecessor/historic procedural alias for the same DP 748/2026 lineage, not as a separate proceeding."
+    }
+  ]
+}
