@@ -1,0 +1,59 @@
+{
+  "schema": "por-derecho.la-laguna-judicial-actors-gap-closure-audit.v1",
+  "as_of": "2026-09-01",
+  "status": "SOURCE_IDENTIFIABLE_DENOMINATOR_CLOSED_THREE_EVIDENTIARY_GAPS_EXPLICIT",
+  "scope": "La Laguna judge/magistrate and LAJ identity closure for DP 748/2026, Cambiario 1048/2019, ETJ 163/2020, PO 344/2013 and the DP 748 appellate lane, with Arrecife/Yaiza cooperation actors kept separate.",
+  "controls": {
+    "canonical_interlink": "assets/data/la-laguna-judicial-actors-canonical-interlink-control-v1.json",
+    "dp748_appeal": "assets/data/dp748-2026-appeal-reopening-control-v1.json",
+    "people_shard": "assets/data/matter-identity-registry-v1.la-laguna-judicial-people.json",
+    "institution_shard": "assets/data/matter-identity-registry-v1.la-laguna-judicial-institutions.json"
+  },
+  "closure_states": {
+    "presently_source_identifiable_judicial_actor_denominator": "CLOSED",
+    "canonical_id_assignment": "CLOSED_FOR_SOURCE_IDENTIFIED_ACTORS",
+    "act_date_capacity_binding": "CLOSED_FOR_SOURCE_IDENTIFIED_ACTORS",
+    "auxiliary_jurisdiction_separation": "CLOSED",
+    "certified_complete_historical_court_denominator": "NOT_CLAIMED"
+  },
+  "search_boundary": "Recovered primary judicial sources, authorised connected Gmail/Drive discovery and targeted official indexed-source searches were reviewed. Finite search completion is not proof that a missing source does not exist.",
+  "gaps": [
+    {
+      "gap_id": "LL-JUD-GAP-001",
+      "priority": "P0",
+      "proceeding": "DP 748/2026",
+      "question": "Who signed Auto 454/2026 dated 24-Mar-2026?",
+      "verified_minimum": "Later primary procedural material verifies the Auto's existence, date, number, provisional-dismissal effect and the challenge directed against it.",
+      "not_proved": "The signed/authenticated original identifying that exact act's judicial signatory has not been recovered. Graciela Pérez-Valencia Díaz is not attributed to the 24-Mar act merely because she signs later DP 748 acts.",
+      "search_state": "FINITE_SEARCH_PASS_COMPLETE_EVIDENTIARY_GAP_OPEN",
+      "closure_trigger": "Signed/authenticated Auto 454/2026 or equivalent primary court source expressly identifying its judicial signatory."
+    },
+    {
+      "gap_id": "LL-JUD-GAP-002",
+      "priority": "P1",
+      "proceeding": "PO 344/2013",
+      "question": "Which LAJ(s) are source-identified for PO 344/2013?",
+      "verified_minimum": "Sentencia 41/2014 identifies María Mercedes Santana Rodríguez as deciding judge and records a 21-May-2013 decree and 27-Jun-2013 diligencia.",
+      "not_proved": "The presently recovered source does not name the LAJ for those acts or establish a proceeding-wide LAJ identity.",
+      "search_state": "FINITE_SEARCH_PASS_COMPLETE_EVIDENTIARY_GAP_OPEN",
+      "closure_trigger": "Signed/certified decree, diligencia, authenticated docket or another primary PO 344/2013 act naming the relevant LAJ for the act and period."
+    },
+    {
+      "gap_id": "LL-JUD-GAP-003",
+      "priority": "P0",
+      "proceeding": "DP 748/2026 appellate lane / TF-APP-004",
+      "question": "What happened after admission of the subsidiary appeal, and which appellate organ/roll/judges/LAJ are source-verified?",
+      "verified_minimum": "The 17-Apr-2026 subsidiary appeal filing is source-verified and the 20-May-2026 providencia signed by PD-SP-P-0147 admitted it as interposed in time and form and ordered the Article 766 transfer step.",
+      "not_proved": "The reviewed corpus does not yet verify completion/service of the Article 766.4 transfer, party submissions/opposition, remission/transmission to the Audiencia, an appellate roll, current/final appellate disposition, or appellate judges/LAJ.",
+      "search_state": "ADMISSION_VERIFIED_POST_ADMISSION_TRANSMISSION_ROLL_IDENTITY_GAP_OPEN",
+      "closure_trigger": "Primary court/Audiencia evidence establishing the post-admission transfer/transmission/roll or equivalent appellate processing and, separately, any named appellate office-holders.",
+      "promotion_rule": "Do not populate TF-APP-004 with an Audiencia organ, panel, judge or LAJ until the primary appellate source identifies them."
+    }
+  ],
+  "identity_collision_control": {
+    "carlos_llamas_sanz": "PD-SP-P-0062",
+    "stale_reserved_id": "PD-SP-P-0146",
+    "rule": "PD-SP-P-0146 from stale PR #1324 is superseded and must not be minted as a duplicate Carlos Llamas identity. Current canonical Carlos Llamas Sanz is PD-SP-P-0062."
+  },
+  "liability_boundary": "Identity registration and gap status establish source linkage only. They do not establish wrongdoing, intent, liability, agreement with a party or merits treatment."
+}
