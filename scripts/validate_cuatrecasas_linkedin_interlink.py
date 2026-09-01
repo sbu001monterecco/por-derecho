@@ -39,6 +39,10 @@ ICAM_PAGES = {
     "en": ROOT / "en/cuatrecasas-icam-ccacm-2026/index.html",
     "es": ROOT / "es/cuatrecasas-icam-ccacm-2026/index.html",
 }
+DP748_PAGES = {
+    "en": ROOT / "en/cuatrecasas-dp748-civil-action/index.html",
+    "es": ROOT / "es/cuatrecasas-dp748-accion-civil/index.html",
+}
 
 
 def jpeg_dimensions(data: bytes) -> tuple[int, int] | None:
@@ -91,8 +95,8 @@ def main() -> int:
         errors.append("canonical person must resolve to PD-SP-P-0049")
     if record.get("date_basis", {}).get("capture_display") != "TODAY":
         errors.append("screenshot-only date limitation is missing")
-    if record.get("governance_revision") != "2026-09-01a":
-        errors.append("evidence record is not on governance revision 2026-09-01a")
+    if record.get("governance_revision") != "2026-09-01b":
+        errors.append("evidence record is not on governance revision 2026-09-01b")
     if record.get("image_publication_authorized") != "2026-09-01":
         errors.append("image publication authority date is missing")
 
@@ -105,6 +109,16 @@ def main() -> int:
     email_findings = record.get("targeted_email_context", {}).get("public_safe_findings")
     if not isinstance(email_findings, list) or len(email_findings) != 9:
         errors.append("targeted email context must contain nine minimized chronology groups")
+    attribution = record.get("firm_attribution_analysis") or {}
+    if len(attribution.get("levels") or []) != 4:
+        errors.append("firm-attribution analysis must preserve four separate proof levels")
+    if "not presently proved to be an authorised, adopted or ratified" not in attribution.get("controlled_classification", ""):
+        errors.append("firm-attribution analysis lacks the corporate-adoption boundary")
+    laguna = record.get("laguna_remate_connection") or {}
+    if "leading concrete hypothesis" not in laguna.get("attributed_hypothesis", ""):
+        errors.append("La Laguna record lacks Gil's attributed leading-recipient hypothesis")
+    if len(laguna.get("not_established") or []) != 3 or len(laguna.get("decisive_records") or []) != 5:
+        errors.append("La Laguna record must contain three negative controls and five decisive-record groups")
 
     captures = record.get("preservation", {}).get("capture_records")
     expected_capture_ids = {
@@ -172,6 +186,8 @@ def main() -> int:
         "/es/cuatrecasas-sun-park/#inigo-linkedin-20260306",
         "/en/cuatrecasas-icam-ccacm-2026/",
         "/es/cuatrecasas-icam-ccacm-2026/",
+        "/en/cuatrecasas-dp748-civil-action/#laguna-remate-ccacm-firm-expression-20260901",
+        "/es/cuatrecasas-dp748-accion-civil/#laguna-remate-ccacm-firm-expression-20260901",
     }:
         if target not in targets:
             errors.append(f"public target missing: {target}")
@@ -188,7 +204,7 @@ def main() -> int:
         "../cuatrecasas-icam-ccacm-2026/",
         "window.location.hash === '#inigo-linkedin-20260306'",
         "section.scrollIntoView",
-        "data-governance-revision', '20260901a'",
+        "data-governance-revision', '20260901b'",
         "The captures, not only the transcript",
         "Las capturas, no sólo la transcripción",
         "A procedural archive does not answer the professional record",
@@ -201,6 +217,11 @@ def main() -> int:
         "Impide afirmar obstrucción de la venia.",
         "delivery bounced or expired",
         "hubo rebotes y expiración",
+        "From individual expression to firm expression: four levels",
+        "De expresión individual a expresión del despacho: cuatro niveles",
+        "La Laguna bridge:",
+        "Puente La Laguna:",
+        "laguna-remate-ccacm-firm-expression-20260901",
     ):
         if marker not in panel:
             errors.append(f"panel marker missing: {marker}")
@@ -210,14 +231,14 @@ def main() -> int:
         errors.append("panel exposes a received private filename or locator")
 
     loader = SITE_LOADER.read_text(encoding="utf-8")
-    if "cuatrecasas-inigo-linkedin-record-20260831.js?v=20260901a" not in loader:
+    if "cuatrecasas-inigo-linkedin-record-20260831.js?v=20260901b" not in loader:
         errors.append("site loader does not request the cache-busted panel revision")
-    if "data-cuatrecasas-inigo-linkedin-loader', '20260901a'" not in loader:
+    if "data-cuatrecasas-inigo-linkedin-loader', '20260901b'" not in loader:
         errors.append("site loader revision marker is missing")
 
     for lang, path in CUATRE_PAGES.items():
         body = path.read_text(encoding="utf-8")
-        if "../../assets/site.js?v=20260901a" not in body:
+        if "../../assets/site.js?v=20260901b" not in body:
             errors.append(f"{lang} Cuatrecasas page does not cache-bust the shared loader")
         if "17 Sep / 18 Oct 2024" not in body and "17 sep / 18 oct 2024" not in body:
             errors.append(f"{lang} Cuatrecasas page lacks the source-qualified 2024 ETJ dates")
@@ -232,6 +253,19 @@ def main() -> int:
         required_boundary = "does not prove the Madrid Bar outcome" if lang == "en" else "no prueba la decisión del Colegio de Madrid"
         if required_boundary not in body:
             errors.append(f"{lang} ICAM/CCACM page lacks the outcome boundary")
+        if 'id="linkedin-firm-attribution-20260901"' not in body:
+            errors.append(f"{lang} ICAM/CCACM page lacks the four-level firm-attribution anchor")
+
+    for lang, path in DP748_PAGES.items():
+        body = path.read_text(encoding="utf-8")
+        if 'id="laguna-remate-ccacm-firm-expression-20260901"' not in body:
+            errors.append(f"{lang} DP748 page lacks the unitary remate/complaints anchor")
+        direct = '../cuatrecasas-sun-park/#inigo-linkedin-20260306'
+        if body.count(direct) != 1:
+            errors.append(f"{lang} DP748 page must contain exactly one screenshot-panel link")
+        icam_anchor = '../cuatrecasas-icam-ccacm-2026/#linkedin-firm-attribution-20260901'
+        if body.count(icam_anchor) != 1:
+            errors.append(f"{lang} DP748 page must contain exactly one firm-attribution link")
 
     try:
         image_manifest = json.loads(IMAGE_MANIFEST.read_text(encoding="utf-8"))
@@ -265,7 +299,8 @@ def main() -> int:
     print(
         "CUATRECASAS LINKEDIN INTERLINK VALIDATION PASSED — "
         "2 hash-verified public captures, 2 bilingual public panels, 10 controlled proposition groups, "
-        "9 minimized email chronology groups, 3 procedural records and exact image-publication authority"
+        "9 minimized email chronology groups, 4 attribution levels, one controlled La Laguna bridge, "
+        "3 procedural records and exact image-publication authority"
     )
     return 0
 
