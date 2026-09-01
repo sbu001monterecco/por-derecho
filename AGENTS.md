@@ -53,6 +53,16 @@ The public identity is **Laura Patricia Acosta Matos**. Do not use “Laura Isab
 - Do not publish raw private email bodies, message IDs, unnecessary personal identifiers, privileged advice, unredacted protected records, private tax/fee ledgers, unsent correspondence or live legal strategy.
 - For every audio, voice note, dictation or derived transcript, apply `archive/declarations/VOICE_TO_TEXT_STATEMENT_OF_FACT_AND_TRUTH_PROTOCOL_25AUG2026.md`: keep native source, transcript versions, speaker attribution, personal adoption and truth assessment separate. Do not stitch Gil Marer, the reserved declarant or another person into a joint statement without each person's separate adoption of the exact text.
 - For every named-person or entity relationship, apply `archive/OPEN_SOURCE_INTELLIGENCE_NAMED_PERSON_ENTITY_PROTOCOL_25AUG2026.md`: use exact names, dated capacities and direct sources; record homonym and finite-search limits; and never transfer knowledge, intent, control or liability through association.
+- For every satire, caricature, spoof advertisement or materially equivalent
+  public presentation, apply
+  `.github/governance/SATIRE_CARICATURE_SPOOF_PUBLICATION_STANDARD_ES_EN.md`.
+  Use a full person name only through `CARET_CONFIRMED` plus its immutable CAEPR
+  person ID, or through the recorded strongly verified exception. Otherwise use
+  the exact short source form, surname/entity plus sourced role, a neutral
+  descriptor, or withhold the identity. A portrait/image lock never upgrades a
+  name, dated role or current affiliation. Keep factual role, affiliation state
+  and satirical function separate, and admit every public satire surface to
+  `data/satire-publication-compliance-v1.json` before publication.
 
 ## 5. Required change process
 

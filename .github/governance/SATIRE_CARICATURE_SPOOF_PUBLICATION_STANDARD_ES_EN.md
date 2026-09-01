@@ -113,6 +113,61 @@ Before publication:
 - apply the repository's named-person/entity OSINT protocol and `^` identity rule;
 - do not invent or transfer a caret.
 
+### 9.1 Mandatory name-display hierarchy
+
+Every named person depicted or identified in a satirical graphic, caption or
+landing page must use the first available form in this order:
+
+1. **Full canonical name — `CARET_CONFIRMED`:** use the CAEPR name and immutable
+   `PD-SP-P-*` identifier. The caret confirms identity only; it does not certify
+   the accompanying role, affiliation, conduct or satirical characterisation.
+2. **Full strongly verified name — controlled exception:** permitted only where
+   no resolved CAEPR record is available, the exact name is supported by a
+   directly attributable public/official or first-party professional source,
+   use of the full name is necessary to understand the sourced role, and the
+   exception, source and necessity are recorded in the machine compliance
+   register. This exception does not create or transfer a caret.
+3. **Short source-led or neutral form:** where identity is plausible but not
+   locked, use the exact short form shown by the source, surname plus sourced
+   role, entity plus role, or a neutral descriptor. Mark the identity
+   `CARET_PENDING` or `OPEN_OR_UNVERIFIED` in the supporting register.
+4. **Withhold:** where a material collision, homonym or role ambiguity remains,
+   do not name or depict the person as identified.
+
+Never complete a person's name from memory, initials, surname conventions,
+geography, a brand, a family relationship, a likely employer or another
+person's record. Never add a terminal caret for typographic effect or apparent
+completeness.
+
+An image/portrait identity lock and a CAEPR name lock are separate controls. A
+byte-locked or user-confirmed portrait does not upgrade a pending name, dated
+capacity or current affiliation.
+
+### 9.2 Role, affiliation and satire separation
+
+For every named person preserve three separate fields:
+
+- **factual role:** the exact sourced capacity, organisation and date/period;
+- **affiliation status:** `HISTORICAL_DATED`, `CURRENT_VERIFIED_ON_DATE`,
+  `SOURCE_LITERAL`, `DISPUTED_OR_CONFLICTING`, or `OPEN`;
+- **satirical function:** the metaphor, shorthand, question or visual role used
+  by the composition.
+
+The satirical function must never overwrite the factual role. A current
+affiliation requires a dated first-party/official check. A later affiliation
+must not be projected backwards, and a historical affiliation must not be
+presented as current. Where sources conflict, display the conflict or omit the
+current-affiliation claim.
+
+### 9.3 Restrained labels
+
+Use a full name, when permitted, with a restrained factual role. Labels such as
+`seller`, `broker`, `placed investors`, `provided financing`, `owner`,
+`controller`, `criminal`, or their Spanish equivalents require actor-specific,
+role-specific evidence. Otherwise use a question, quotation marks plus an
+unavoidable satire label, or a neutral relationship descriptor. A disclaimer
+does not cure an unsupported factual label.
+
 ## 10. ES/EN parity
 
 The disclosure, evidence-state grammar, role labels, source ledger and material qualifications must be equivalent in Spanish and English. Translation may be idiomatic, but it may not strengthen an allegation or remove a qualification.
@@ -135,3 +190,39 @@ Before a new satire/caricature/spoof is rendered or published:
 ## 12. Continuity rule
 
 Any future repository work containing `satire`, `satirical`, `spoof`, `caricature`, `caricatura`, `parody`, `parodia`, `anuncio satírico`, `caricatura publicitaria` or a materially equivalent concept must treat this file as the default repository-wide standard unless a later dated control expressly supersedes it.
+
+## 13. Opposing-counsel publication-risk preflight
+
+Before approval, record a proportionate review of:
+
+- injury to honour, reputation or professional prestige;
+- false endorsement, authorship, quotation, mandate, ownership or commercial
+  role attribution;
+- recognisable image/likeness and personality-right use;
+- implication of corruption, dishonesty, conflict, concealment, illegality or
+  criminality beyond the actor-specific evidence;
+- confusing imitation of logos, trade dress or genuine advertising;
+- necessity and proportionality of personal data; and
+- correction, right-of-reply, preservation, takedown and narrow revert paths.
+
+The review is an evidence and publication control, not a representation that
+legal risk is zero or that a disclaimer defeats every possible claim.
+
+## 14. Machine enforcement and repair path
+
+The machine contract is `ops/SATIRE_CARICATURE_SPOOF_GOVERNANCE_V1.json`; each
+public satire family/surface must also be admitted to
+`data/satire-publication-compliance-v1.json`. The specialist validator is
+`scripts/validate_satire_publication_governance.py`.
+
+The validator fails closed for a new or changed public satire surface when the
+surface is unregistered, its disclosure is absent, a known full canonical name
+is undeclared, a pending identity is rendered as a confirmed full name, a
+current affiliation lacks a dated source check, the factual and satirical roles
+are collapsed, or the required risk review is missing.
+
+The narrow repair path is additive: correct the surface or its compliance
+record on a branch, rerun the specialist validator and tests, and use a normal
+corrective/revert PR. Do not disable the repository-wide publication gate,
+rewrite history or suppress a source to make the validator pass. Unrelated
+non-satire changes do not invoke this specialist workflow.

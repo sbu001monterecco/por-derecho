@@ -61,6 +61,8 @@
       "Ricardo Molina Betancor",
       "Miguel Molina Betancor",
       "Francisco de Borja Rodríguez-Batllori Laffitte",
+      "Eduardo Sánchez Iglesias",
+      "Enrique Guerra Suárez",
       "Carlos Caimi Vicente",
       "Celia Guillén Pérez",
       "Gervasio Manuel González García",
@@ -161,20 +163,19 @@
       "Plaza nº 3 del Tribunal de Instancia (Sección Civil) de San Cristóbal de La Laguna",
       "Juzgado de Primera Instancia nº 5 de San Cristóbal de La Laguna",
       "Juzgado de Primera Instancia nº 2 de Arrecife",
-      "Juzgado de Paz de Yaiza",
-      "Intervención General de la Comunidad Autónoma de Canarias"
+      "Juzgado de Paz de Yaiza"
     ]
   },
   "counts": {
-    "total": 340,
-    "PERSON": 160,
+    "total": 342,
+    "PERSON": 162,
     "ORGANISATION": 83,
     "STRUCTURE": 11,
     "INSTITUTION": 43,
     "PROCEEDING": 43
   },
   "parts": [
-    {"path": "matter-identity-registry-v1.people.json", "type": "PERSON", "count": 118},
+    {"path": "matter-identity-registry-v1.people.json", "type": "PERSON", "count": 120},
     {"path": "matter-identity-registry-v1.professional-people.json", "type": "PERSON", "count": 27},
     {"path": "matter-identity-registry-v1.joan-cruz.json", "type": "PERSON", "count": 1},
     {"path": "matter-identity-registry-v1.la-laguna-judicial-people.json", "type": "PERSON", "count": 11},

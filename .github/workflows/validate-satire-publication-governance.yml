@@ -1,0 +1,63 @@
+name: Validate satire publication governance
+
+on:
+  pull_request:
+    paths:
+      - "assets/media/**"
+      - "assets/data/matter-identity-registry-v1*.json"
+      - "assets/visual-asset-registry.json"
+      - "es/**/*.html"
+      - "en/**/*.html"
+      - "de/**/*.html"
+      - "data/digital-media-asset-register-v1.json"
+      - "data/satire-publication-compliance-v1.json"
+      - "ops/SATIRE_CARICATURE_SPOOF_GOVERNANCE_V1.json"
+      - ".github/governance/SATIRE_CARICATURE_SPOOF_PUBLICATION_STANDARD_ES_EN.md"
+      - ".github/governance/DIGITAL_MEDIA_ASSET_CARET_IDENTITY_STANDARD_01SEP2026.md"
+      - "scripts/validate_satire_publication_governance.py"
+      - "tests/test_validate_satire_publication_governance.py"
+      - ".github/workflows/validate-satire-publication-governance.yml"
+  push:
+    branches: [main]
+    paths:
+      - "assets/media/**"
+      - "assets/data/matter-identity-registry-v1*.json"
+      - "assets/visual-asset-registry.json"
+      - "es/**/*.html"
+      - "en/**/*.html"
+      - "de/**/*.html"
+      - "data/digital-media-asset-register-v1.json"
+      - "data/satire-publication-compliance-v1.json"
+      - "ops/SATIRE_CARICATURE_SPOOF_GOVERNANCE_V1.json"
+      - ".github/governance/SATIRE_CARICATURE_SPOOF_PUBLICATION_STANDARD_ES_EN.md"
+      - ".github/governance/DIGITAL_MEDIA_ASSET_CARET_IDENTITY_STANDARD_01SEP2026.md"
+      - "scripts/validate_satire_publication_governance.py"
+      - "tests/test_validate_satire_publication_governance.py"
+      - ".github/workflows/validate-satire-publication-governance.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: satire-publication-governance-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  satire-publication-governance:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Set up Python
+        uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: "3.12"
+
+      - name: Validate satire disclosures, identities, roles and risk review
+        run: python3 scripts/validate_satire_publication_governance.py
+
+      - name: Run satire-governance negative tests
+        run: python3 -m unittest tests/test_validate_satire_publication_governance.py -v

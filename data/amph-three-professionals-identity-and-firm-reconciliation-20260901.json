@@ -2,14 +2,14 @@
   "schema": "por-derecho.amph-three-professionals-identity-reconciliation.v1",
   "control_id": "PD-AMHP-3P-ID-20260901",
   "control_date": "2026-09-01",
-  "status": "PARTIAL_NOT_ALL_IS_CARET",
-  "baseline_main_sha": "0f523d86853730e242d8212e98250c01ee6013db",
+  "status": "THREE_PERSON_IDENTITIES_CARET_CONFIRMED_FIRM_LEGAL_PERSON_GAPS_OPEN",
+  "baseline_main_sha": "a116f9823dab53c22139a66b43a9fbad60b305fe",
   "people": [
     {
       "name": "Francisco de Borja Rodríguez-Batllori Laffitte",
       "caepr_id": "PD-SP-P-0010",
-      "current_master_state": "REGISTERED_WITHOUT_CARET_CONFIRMED_FIELD_AT_BASELINE",
-      "identity_source_state": "SUFFICIENT_FOR_CARET_PROMOTION_SUBJECT_TO_CURRENT_MAIN_COLLISION_RERUN",
+      "current_master_state": "CARET_CONFIRMED_PD_SP_P_0010",
+      "identity_source_state": "CANONICAL_MASTER_PROMOTION_COMPLETE",
       "identity_sources": [
         "BOE-B-2012-22189 — appointment in Concurso 36/2012, 6-Jun-2012",
         "BORME-A-2012-198-35",
@@ -33,9 +33,9 @@
     },
     {
       "name": "Eduardo Sánchez Iglesias",
-      "proposed_caepr_id": "PD-SP-P-0161",
-      "id_status": "PROVISIONAL_UNTIL_CURRENT_MAIN_RERUN_AND_MASTER_ADMISSION",
-      "identity_source_state": "SOURCE_RESOLVED_CAEPR_ADMISSION_REQUIRED",
+      "caepr_id": "PD-SP-P-0161",
+      "id_status": "IMMUTABLE_CANONICAL_ADMISSION",
+      "identity_source_state": "CARET_CONFIRMED",
       "identity_sources": [
         "Controlled 30-Nov-2021 San Telmo / RICPE webinar source and correction chain",
         "RSM Spain public professional announcement naming Eduardo Sánchez Iglesias in the SanTelmo integration"
@@ -58,9 +58,9 @@
     },
     {
       "name": "Enrique Guerra Suárez",
-      "proposed_caepr_id": "PD-SP-P-0162",
-      "id_status": "PROVISIONAL_UNTIL_CURRENT_MAIN_RERUN_AND_MASTER_ADMISSION",
-      "identity_source_state": "SOURCE_RESOLVED_CAEPR_ADMISSION_REQUIRED",
+      "caepr_id": "PD-SP-P-0162",
+      "id_status": "IMMUTABLE_CANONICAL_ADMISSION",
+      "identity_source_state": "CARET_CONFIRMED",
       "identity_sources": [
         "RICPE certification dated 20-Jul-2021 / controlled 190,098-byte attachment family",
         "RICPE public professional material naming Enrique Guerra Suárez",
@@ -114,14 +114,9 @@
       "next_action": "Preserve the 2025 legal-form/name change as dated corporate identity history; do not collapse historic S.L.P. and later S.L. wording into a timeless label without source dates."
     }
   ],
-  "global_boundary": "Not all is ^ at this checkpoint. Person/firm names must not be displayed with a CAEPR caret until the canonical master record explicitly resolves identity. PD-DMA portrait carets are exact-file identities only and do not cure CAEPR gaps.",
+  "global_boundary": "All three person identities are CARET_CONFIRMED for this finite person scope: PD-SP-P-0010, PD-SP-P-0161 and PD-SP-P-0162. The carets resolve identity only, not roles on every date, firm succession, current affiliation, knowledge, intent, coordination, wrongdoing or liability. Exact San Telmo, RSM and Grant Thornton legal-person/date-specific affiliation gaps remain open. PD-DMA portrait carets remain exact-file identities only.",
   "mandatory_rerun_before_public_graphic": [
-    "Re-fetch current main and check next-free CAEPR IDs",
-    "Promote PD-SP-P-0010 only after current-master source/collision audit",
-    "Admit Eduardo Sánchez Iglesias and Enrique Guerra Suárez to canonical person parts with immutable IDs",
     "Resolve exact legal persons for San Telmo, RSM and Grant Thornton where the public caption requires legal-person precision",
-    "Run canonical denominator/parity synchronizer and operational identity validator",
-    "Update portrait register interlinks from proposed names to final CAEPR IDs",
     "Do not label a direct Borja–Enrique relationship; current controlled state is NOT ESTABLISHED"
   ]
 }

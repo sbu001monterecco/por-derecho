@@ -51,7 +51,7 @@ def main() -> int:
             errors.append("PD-SP-I-0043 must retain two official source URLs")
 
     counts = master.get("counts", {})
-    if counts != {"total": 340, "PERSON": 160, "ORGANISATION": 83, "STRUCTURE": 11, "INSTITUTION": 43, "PROCEEDING": 43}:
+    if counts != {"total": 342, "PERSON": 162, "ORGANISATION": 83, "STRUCTURE": 11, "INSTITUTION": 43, "PROCEEDING": 43}:
         errors.append(f"canonical count drift: {counts}")
 
     evidence = gaps.get("authority_legitimacy_propagation", {}).get("notice_checkpoint", {})

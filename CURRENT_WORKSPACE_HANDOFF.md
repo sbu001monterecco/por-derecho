@@ -2,9 +2,9 @@
 
 **Current workspace:** `PD-WS-20260901-0001`  
 **Current continuation pointer:** `PD-WCH-20260901-AMHP-3P-002`  
-**Status:** `DELETION_SAFE_CHECKPOINT_WITH_OPEN_IDENTITY_AND_PUBLICATION_WORK`
+**Status:** `DELETION_SAFE_PERSON_IDENTITY_CLOSED_WITH_OPEN_FIRM_AND_PUBLICATION_WORK`
 
-**Current checkpoint:** the Acosta Matos / Canarian Hospitality hotel-platform media workspace has been advanced to preserve the three-professional caricature work, exact portrait-file hashes, Borja/Eduardo/Enrique identity gaps, Grant Thornton / San Telmo-RSM / RICPE Gmail findings, the proposed `Caricatura y contraste documental` page, a source-controlled LinkedIn draft and the explicit **NO IMAGE GENERATION** hold for the checkpointing turn. The inspected baseline was `main` `0f523d86853730e242d8212e98250c01ee6013db`; a successor must re-fetch current `main` before allocating IDs or making changes.
+**Current checkpoint:** the Acosta Matos / Canarian Hospitality hotel-platform media workspace now has a fail-closed satire/name-display gate and a closed three-person CAEPR denominator: Francisco de Borja Rodríguez-Batllori Laffitte (`PD-SP-P-0010`), Eduardo Sánchez Iglesias (`PD-SP-P-0161`) and Enrique Guerra Suárez (`PD-SP-P-0162`) are `CARET_CONFIRMED` for identity only. Exact Grant Thornton / San Telmo-RSM / RICPE legal-person and date-specific affiliation gaps remain open; direct Borja–Enrique remains **NOT ESTABLISHED**. Portrait-file hashes, Gmail findings, the proposed `Caricatura y contraste documental` page, the source-controlled LinkedIn draft and the explicit **NO IMAGE GENERATION** hold remain preserved. The reconciled base is `main` `a116f9823dab53c22139a66b43a9fbad60b305fe`; a successor must still re-fetch current `main` before further changes.
 
 **Pointer semantics:** most recently checkpointed/default workspace; **not exclusive** and not a lock over concurrent workspaces.
 
@@ -17,17 +17,20 @@ A ChatGPT thread is a temporary working surface. A `PD-WS-*` workspace is the du
 Read in this order:
 
 1. `archive/handoffs/2026-09-01-amph-three-professionals-portrait-email-checkpoint.md`
-2. `archive/handoffs/2026-09-01-amph-three-professionals-portrait-email-checkpoint.json`
-3. `data/amph-three-professionals-identity-and-firm-reconciliation-20260901.json`
-4. `data/pd-dma-three-professionals-portrait-source-register-20260901.json`
-5. prior package handoff `archive/handoffs/2026-09-01-acosta-matos-hotel-platform-digital-media-workspace-handoff.md`
-6. current CAEPR / PD-DMA / satire / visual-priority controls named by those records.
+2. `.github/governance/records/SATIRE_NAME_IDENTITY_FAIL_CLOSED_IMPLEMENTATION_01SEP2026.md`
+3. `archive/handoffs/2026-09-01-amph-three-professionals-portrait-email-checkpoint.json`
+4. `data/amph-three-professionals-identity-and-firm-reconciliation-20260901.json`
+5. `data/pd-dma-three-professionals-portrait-source-register-20260901.json`
+6. prior package handoff `archive/handoffs/2026-09-01-acosta-matos-hotel-platform-digital-media-workspace-handoff.md`
+7. current CAEPR / PD-DMA / satire / visual-priority controls named by those records.
 
 Current critical state:
 
 - **do not generate a new image until the user explicitly lifts the hold in the continuing thread**;
-- Francisco de Borja Rodríguez-Batllori Laffitte is `PD-SP-P-0010` but the inspected master record still required explicit `CARET_CONFIRMED` promotion;
-- Eduardo Sánchez Iglesias and Enrique Guerra Suárez are source-resolved CAEPR admission candidates; any provisional next IDs must be rechecked against current `main` before admission;
+- Francisco de Borja Rodríguez-Batllori Laffitte is `PD-SP-P-0010`, `CARET_CONFIRMED`;
+- Eduardo Sánchez Iglesias is `PD-SP-P-0161`, `CARET_CONFIRMED`;
+- Enrique Guerra Suárez is `PD-SP-P-0162`, `CARET_CONFIRMED`;
+- those carets resolve identity only; exact firm/legal-person and current-affiliation statements remain separately source- and date-gated;
 - the three uploaded portrait source files are exact-byte hash locked under PD-DMA portrait carets; those are media-file identities, not person carets;
 - no Borja portrait was located on his current dedicated website page/repository search, so the uploaded portrait is the controlled source candidate;
 - direct Borja–Enrique Guerra relationship remains **NOT ESTABLISHED** in the controlled repository state;
@@ -102,6 +105,6 @@ For `PD-WS-20260901-0001`, the three current portrait binaries are not falsely r
 
 ## New-thread bootstrap
 
-> Continue `PD-WS-20260901-0001` from repository continuity state, not prior chat memory. Read `CURRENT_WORKSPACE_HANDOFF.md`, then `archive/handoffs/2026-09-01-amph-three-professionals-portrait-email-checkpoint.md` and its machine companion, then the identity reconciliation and portrait register. Re-fetch current `main` before allocating IDs or changing anything. Apply `PD-CONT-DIGEST-001` and the CAEPR `^` protocol. First close the Borja/Eduardo/Enrique and exact-firm identity gaps and update portrait interlinks; then scan repository/GitHub plus authorised Gmail/Drive for Grant Thornton, San Telmo/RSM and RICPE mandates, clients, investor introductions, DD, conflicts and control decisions. Preserve direct Borja–Enrique as NOT ESTABLISHED. Do not generate the new image until I explicitly lift the no-image hold. When lifted, create a new PD-DMA derivative closer to visual concepts 1 and 2, build the bilingual `Caricatura y contraste documental` page and finalize the LinkedIn post from verified source/live state. Maximum pressure means maximum documentary specificity and accountability, not unsupported guilt by association.
+> Continue `PD-WS-20260901-0001` from repository continuity state, not prior chat memory. Read `CURRENT_WORKSPACE_HANDOFF.md`, the satire/name-display fail-closed closeout, the three-professional checkpoint and its machine companion, then the identity reconciliation and portrait register. Re-fetch current `main` before changing anything. The three people are already identity-confirmed as `PD-SP-P-0010`, `PD-SP-P-0161` and `PD-SP-P-0162`; do not allocate replacements. Apply the new satire compliance register/validator, `PD-CONT-DIGEST-001` and the CAEPR `^` protocol. Next close only the exact-firm/date-specific affiliation gaps and continue the authorised source scan for Grant Thornton, San Telmo/RSM and RICPE mandates, clients, investor introductions, DD, conflicts and control decisions. Preserve direct Borja–Enrique as NOT ESTABLISHED. Do not generate the new image until I explicitly lift the no-image hold. When lifted, create a new PD-DMA derivative closer to visual concepts 1 and 2, build the bilingual `Caricatura y contraste documental` page and finalize the LinkedIn post from verified source/live state. Maximum pressure means maximum documentary specificity and accountability, not unsupported guilt by association.
 
 Older topic-specific deletion audits and handoffs remain historical controls. Updating the most-recent/default pointer does not invalidate or hide them.

@@ -41,8 +41,8 @@ DIGEST_SNAPSHOT_IDENTITY_COUNTS = {
 # has since gained the La Laguna judicial perimeter plus this DP 748 source
 # control; validate that current denominator independently.
 CURRENT_CANONICAL_IDENTITY_COUNTS = {
-    "total": 340,
-    "PERSON": 160,
+    "total": 342,
+    "PERSON": 162,
     "ORGANISATION": 83,
     "STRUCTURE": 11,
     "INSTITUTION": 43,
@@ -598,7 +598,7 @@ print("CURRENT REVERSE-ENGINEERED DIGEST: PASS")
 print(" - control:", state["control_id"])
 print(" - source base:", state["source_base"]["main_sha"])
 print(" - dated digest identity denominator: 336 / 157 / 83 / 11 / 42 / 43")
-print(" - current canonical identity denominator: 340 / 160 / 83 / 11 / 43 / 43")
+print(" - current canonical identity denominator: 342 / 162 / 83 / 11 / 43 / 43")
 print(" - current live-verified identity snapshot: 204 / 87 / 71 / 10 / 18 / 18")
 print(" - caret scope: 21/24; 3 pending; old 24/24 package superseded")
 print(" - separate Magistrate López Villarrubia / Meeting Point scope: 31/31 unique and 32/32 rows; all-is for stated scope")
