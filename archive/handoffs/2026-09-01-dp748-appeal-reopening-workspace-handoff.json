@@ -1,0 +1,108 @@
+{
+  "schema": "por-derecho.workspace-handoff.v1",
+  "handoff_id": "PD-WCH-20260901-DP748-P0-001",
+  "workspace_id": "PD-WS-20260901-0005",
+  "date": "2026-09-01",
+  "status": "DELETION_SAFE_WITH_OPEN_WORK",
+  "repository": "sbu001monterecco/por-derecho",
+  "baseline_sha": "d1817de1b8613a8e0d340f1453acda99e440e5af",
+  "inherited_identity_baseline_sha": "273bb621de7db5473b1223fdbc080f9c733dd038",
+  "workspace_collision_reconciliation": {
+    "provisional_workspace_id": "PD-WS-20260901-0004",
+    "main_registered_owner": "PwC / Carlos Saavedra caret completeness and first-hop evidence interlink workspace",
+    "renumbered_workspace_id": "PD-WS-20260901-0005",
+    "result": "RESOLVED_WITHOUT_SILENT_OVERWRITE"
+  },
+  "branch": "codex/dp748-p0-appeal-20260901",
+  "pull_request": 1332,
+  "head_commit": null,
+  "merge_sha": null,
+  "objective": "Protect DP 748/2026 appellate rights and prepare a source-led appeal, reopening package, finite diligences and distinct parallel-action lanes.",
+  "canonical_ids": {
+    "dp_master": "TF-CRI-003",
+    "dp_caepr": "PD-SP-R-0003",
+    "dp_court": "PD-SP-I-0037",
+    "judge": "PD-SP-P-0147",
+    "laj": "PD-SP-P-0148",
+    "etj_master": "TF-CIV-002",
+    "cambiario_master": "TF-CIV-001",
+    "appeal_placeholder": "TF-APP-004",
+    "counsel": "PD-SP-P-0062",
+    "procuradora": "PD-SP-P-0067"
+  },
+  "new_act_specific_identities": [
+    "PD-SP-P-0158",
+    "PD-SP-P-0159",
+    "PD-SP-P-0160"
+  ],
+  "p0": {
+    "subsidiary_appeal_filed": true,
+    "origin_court_admission_verified": true,
+    "article_766_4_transfer_located": false,
+    "audiencia_transmission_located": false,
+    "appellate_roll_located": false,
+    "best_supported_fifth_day": "2026-09-07",
+    "protective_operational_instruction": "FILE_2026-09-04_OR_EARLIER_SUBJECT_TO_LIVE_COUNSEL_VERIFICATION"
+  },
+  "controlling_paths": [
+    "archive/DP748_2026_APPEAL_REOPENING_SOURCE_CONTROL_CLOSEOUT_01SEP2026.md",
+    "assets/data/dp748-2026-appeal-reopening-control-v1.json",
+    "assets/data/la-laguna-judicial-actors-canonical-interlink-control-v1.json",
+    "archive/PROCEEDINGS_MASTER_REGISTER.csv",
+    "assets/data/counsel-filing-register-v1.json",
+    "assets/data/procurador-master-register-v1.json",
+    "assets/data/counsel-procurador-gap-register-v1.json"
+  ],
+  "private_artifacts": [
+    {
+      "name": "DP748_P0_Counsel_Brief_01SEP2026.docx",
+      "pages": 1,
+      "sha256": "39218e5e1258b31a23fa627c5ab7f12bb738c0aa862973da1d6eb3a879177986"
+    },
+    {
+      "name": "DP748_Protective_Appeal_Article_766_4_01SEP2026.docx",
+      "pages": 5,
+      "sha256": "268e542e91ea860bab1130dbd4353064a77e5bc352a4c4b230530702e9d30916"
+    },
+    {
+      "name": "DP748_Reopening_Diligencias_Package_01SEP2026.docx",
+      "pages": 4,
+      "sha256": "73c6e7eb5ce184b3278a2b43bd05164978916b4b4d3ec247d945acc7da81315e"
+    },
+    {
+      "name": "DP748_Master_Analysis_Parallel_Actions_01SEP2026.docx",
+      "pages": 12,
+      "sha256": "870bf82f137a403c8391e48478c31ceb70b073fa03c139a99a933d1d34d21982"
+    }
+  ],
+  "classification_locks": [
+    "DP_SYNTHESIS_26JUN_002246_IS_DP748",
+    "REPOSICION_26JUN_144008_IS_ETJ163",
+    "FINCA_8584_IS_ONLY_LOCATED_AUCTION_LOT",
+    "FINCA_8588_CONTEXT_ONLY_PENDING_SEPARATE_SOURCE",
+    "FISCAL_SUPPORTED_MOTIVATION_POINT_ONLY",
+    "TF_APP_004_REMAINS_UNVERIFIED"
+  ],
+  "superseded_pull_request": 1324,
+  "superseded_pull_request_state_at_reconciliation": "OPEN_UNMERGED_DIRTY_NON_MERGEABLE_DO_NOT_CHERRY_PICK",
+  "not_performed": [
+    "COURT_FILING_OR_SERVICE",
+    "EMAIL_OR_COUNSEL_COMMUNICATION",
+    "FISCALIA_UPDATE",
+    "DISCIPLINARY_UPDATE",
+    "CIVIL_MASC",
+    "RAW_PRIVATE_SOURCE_PUBLICATION",
+    "MAIN_MERGE_OR_DEPLOYMENT"
+  ],
+  "open_work": [
+    "COUNSEL_REVIEW_AND_P0_FILING",
+    "LAST_NOTIFICATION_AND_APPEAL_PROCESSING_CERTIFICATE",
+    "ETJ_POST_28JUL_CERTIFIED_STATUS",
+    "FINCA_8584_CERTIFICATION_AND_EXPERT_CROSSWALK",
+    "CAMBIARIO_1048_COMPLETE_TITLE_CHAIN",
+    "AUTHORITY_PERSONACION_INSTRUMENTS",
+    "REOPENING_FINAL_ANNEX_AUTHENTICATION",
+    "SEPARATE_FISCALIA_DISCIPLINARY_AND_CIVIL_ASSESSMENT"
+  ],
+  "deletion_safety": "DELETION_SAFE_WITH_OPEN_WORK_AND_UNSATISFIED_EXTERNAL_DEADLINE_UNTIL_FILED"
+}

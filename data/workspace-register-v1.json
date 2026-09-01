@@ -4,7 +4,7 @@
   "control_date": "2026-09-01",
   "status": "ACTIVE_RUNTIME_ENABLED_CONCURRENT_SAFE",
   "workspace_id_pattern": "PD-WS-YYYYMMDD-NNNN",
-  "default_workspace_id": "PD-WS-20260901-0003",
+  "default_workspace_id": "PD-WS-20260901-0005",
   "default_pointer_semantics": "MOST_RECENTLY_CHECKPOINTED_NOT_EXCLUSIVE",
   "governance": {
     "continuous_persistence": ".github/governance/AUTOMATIC_WORKSPACE_PERSISTENCE_ARCHITECTURE_01SEP2026.md",
@@ -125,6 +125,37 @@
       "current_main_sha_checked": "273bb621de7db5473b1223fdbc080f9c733dd038",
       "validation_state": "LOCAL_TASK_AND_REPOSITORY_VALIDATORS_PASS; PUBLICATION_AUTHORIZED_2026-09-01",
       "next_target_mode": "PUSH_PR_CI_MERGE_PAGES_LIVE_READBACK_AND_CLOSEOUT"
+    },
+    {
+      "workspace_id": "PD-WS-20260901-0005",
+      "title": "DP 748/2026 appeal, reopening and ETJ 163/2020 source-mastery workspace",
+      "status": "DELETION_SAFE_WITH_OPEN_WORK",
+      "current_handoff_id": "PD-WCH-20260901-DP748-P0-001",
+      "handoff_path": "archive/handoffs/2026-09-01-dp748-appeal-reopening-workspace-handoff.md",
+      "machine_handoff_path": "archive/handoffs/2026-09-01-dp748-appeal-reopening-workspace-handoff.json",
+      "topic_keys": [
+        "DP748",
+        "TF_CRI_003",
+        "ETJ163",
+        "TF_CIV_002",
+        "CRIMINAL_APPEAL",
+        "REOPENING",
+        "PROCEDURAL_DEADLINE",
+        "CONTINUITY"
+      ],
+      "repository": "sbu001monterecco/por-derecho",
+      "public_private_boundary": "PUBLIC_REPO_CONTAINS_SOURCE_SAFE_IDENTITIES_REGISTERS_HASHES_AND_PROCEDURAL_CONTROLS; PRIVATE_PLEADINGS_LEXNET_EMAILS_AND_COUNSEL_DRAFTS_REMAIN_OUTSIDE_PUBLIC_REPO",
+      "continuous_capture_mode": "CONNECTED_AGENTIC_CHECKPOINTING",
+      "baseline_sha": "d1817de1b8613a8e0d340f1453acda99e440e5af",
+      "working_branch": "codex/dp748-p0-appeal-20260901",
+      "collision_reconciliation": {
+        "provisional_workspace_id": "PD-WS-20260901-0004",
+        "main_registered_owner": "PwC / Carlos Saavedra caret completeness and first-hop evidence interlink workspace",
+        "renumbered_workspace_id": "PD-WS-20260901-0005",
+        "reconciled_against_main_sha": "d1817de1b8613a8e0d340f1453acda99e440e5af",
+        "result": "RESOLVED_WITHOUT_SILENT_OVERWRITE"
+      },
+      "next_target_mode": "COUNSEL_REVIEW_P0_FILING_THEN_CERTIFIED_APPEAL_ETJ_AND_PROPERTY_GAP_CLOSURE"
     }
   ],
   "registration_rule": "Create or recover a stable workspace ID for every substantive Por Derecho workspace when persistence-capable work begins. A workspace may span multiple ChatGPT threads; a ChatGPT thread may be superseded without changing the workspace ID.",

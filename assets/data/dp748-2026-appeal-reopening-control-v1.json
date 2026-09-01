@@ -1,0 +1,391 @@
+{
+  "schema": "por-derecho.dp748-2026-appeal-reopening-control.v1",
+  "as_of": "2026-09-01",
+  "status": "P0_RIGHTS_PRESERVATION_PACKAGE_PREPARED_SUBSIDIARY_APPEAL_ADMITTED_PROCESSING_OPEN",
+  "governance": [
+    ".github/governance/CAEPR_CARET_IDENTITY_AND_ALL_IS_VERIFICATION_PROTOCOL_26AUG2026.md",
+    "archive/PROCEEDINGS_MASTER_REGISTER_PROTOCOL.md",
+    "archive/COUNSEL_PROCURADOR_FILING_LINEAGE_GOVERNANCE_30AUG2026.md"
+  ],
+  "proceeding": {
+    "master_id": "TF-CRI-003",
+    "caepr_id": "PD-SP-R-0003",
+    "reference": "DP 748/2026",
+    "procedure": "Diligencias Previas",
+    "nig": "3802343220260002351",
+    "court_caepr_id": "PD-SP-I-0037",
+    "current_court": "Plaza nº 4 del Tribunal de Instancia (Sección Instrucción) de San Cristóbal de La Laguna",
+    "historic_court_alias": "Juzgado de Instrucción nº 4 de San Cristóbal de La Laguna",
+    "identity_boundary": "Current and historic labels are continuity aliases for this source-verified proceeding. No appellate organ is inferred."
+  },
+  "canonical_parties": [
+    {
+      "caepr_id": "PD-SP-P-0001",
+      "name": "Gil Marer",
+      "role": "denunciante"
+    },
+    {
+      "caepr_id": "PD-SP-O-0049",
+      "name": "Cuatrecasas, Gonçalves Pereira, S.L.P.",
+      "role": "denunciado",
+      "identity_boundary": "Line wrapping in a court document does not create a second entity."
+    }
+  ],
+  "act_specific_professional_lineage": [
+    {
+      "party": "Gil Marer",
+      "party_caepr_id": "PD-SP-P-0001",
+      "lawyer": "Carlos Llamas Sanz",
+      "lawyer_caepr_id": "PD-SP-P-0062",
+      "procuradora": "Adriana Hernández Díaz",
+      "procuradora_caepr_id": "PD-SP-P-0067",
+      "procurador_register_id": "PROC-ADRIANA-HERNANDEZ-DIAZ",
+      "proceeding": "DP 748/2026",
+      "verified_period": "2026-04-17 through 2026-09-01",
+      "basis": "Signed pleading, LexNET filing receipt, 20-May Providencia, 16-Jul Auto and 01-Sep notification lane",
+      "boundary": "Proceeding- and period-specific; no permanent pairing is inferred."
+    },
+    {
+      "party": "Matkator, S.L.",
+      "lawyer": "Carlos Llamas Sanz",
+      "lawyer_caepr_id": "PD-SP-P-0062",
+      "procuradora": "Adriana Hernández Díaz",
+      "procuradora_caepr_id": "PD-SP-P-0067",
+      "procurador_register_id": "PROC-ADRIANA-HERNANDEZ-DIAZ",
+      "proceeding": "ETJ 163/2020",
+      "verified_act": "Recurso de reposición dated 26-Jun-2026 and later admission/transfer act",
+      "boundary": "Act-specific; underlying poder/apud-acta remains a separate gap."
+    },
+    {
+      "party": "Cuatrecasas, Gonçalves Pereira, S.L.P.",
+      "party_caepr_id": "PD-SP-O-0049",
+      "lawyer": "Teresa Morenés Basabe",
+      "lawyer_caepr_id": "PD-SP-P-0158",
+      "procurador": "José Javier Bueno Mesa",
+      "procurador_caepr_id": "PD-SP-P-0159",
+      "procurador_register_id": "PROC-JOSE-JAVIER-BUENO-MESA",
+      "proceeding": "ETJ 163/2020",
+      "verified_acts": [
+        "18-Oct-2024",
+        "21-Feb-2025",
+        "25-Apr-2025",
+        "10-Feb-2026"
+      ],
+      "boundary": "Identity, signatures and procedural positions only; no truth, knowledge beyond the documents, intent, crime or liability is inferred."
+    }
+  ],
+  "judicial_and_fiscal_actors": [
+    {
+      "caepr_id": "PD-SP-P-0147",
+      "name": "Graciela Pérez-Valencia Díaz",
+      "capacity": "Magistrada-Juez",
+      "acts": [
+        "Providencia 20-May-2026",
+        "Auto 16-Jul-2026"
+      ]
+    },
+    {
+      "caepr_id": "PD-SP-P-0148",
+      "name": "María del Pilar Luis Medina",
+      "capacity": "LAJ",
+      "acts": [
+        "Diligencia de Ordenación 15-Jun-2026",
+        "01-Sep-2026 notification lane"
+      ]
+    },
+    {
+      "caepr_id": "PD-SP-P-0160",
+      "name": "María Francisca Sánchez Álvarez",
+      "capacity": "Fiscal signatory",
+      "institution_caepr_id": "PD-SP-I-0002",
+      "act": "Ministerio Fiscal report 08-Jun-2026",
+      "boundary": "The report supports partial estimation only for the original order's lack of concrete reasoning. It does not request investigation or endorse criminality."
+    }
+  ],
+  "procedural_timeline": [
+    {
+      "event_id": "DP748-2026-20260204-DENUNCIA",
+      "date": "2026-02-04",
+      "event": "Complaint filed",
+      "verification": "PRIMARY_FILED_PLEADING"
+    },
+    {
+      "event_id": "DP748-2026-20260324-AUTO454",
+      "date": "2026-03-24",
+      "event": "Auto 454/2026 provisionally dismisses and archives",
+      "verification": "PRIMARY_COPY_LOCATED_SIGNED_ORIGINAL_SIGNATORY_OPEN",
+      "gap_id": "LL-JUD-GAP-001"
+    },
+    {
+      "event_id": "DP748-2026-20260417-REFORMA-SUB-APELACION",
+      "date": "2026-04-17",
+      "time": "14:29:10",
+      "event": "Recurso de reforma y subsidiario de apelación filed",
+      "filing_id": "DP748-2026-GIL-20260417-REFORMA-SUB-APELACION",
+      "verification": "PRIMARY_SIGNED_PLEADING_AND_LEXNET_RECEIPT"
+    },
+    {
+      "event_id": "DP748-2026-20260520-PROVIDENCIA",
+      "date": "2026-05-20",
+      "event": "Court records reform and subsidiary appeal as interposed in time and form",
+      "verification": "PRIMARY_SIGNED_COURT_ACT",
+      "judge_caepr_id": "PD-SP-P-0147"
+    },
+    {
+      "event_id": "DP748-2026-20260608-FISCAL",
+      "date": "2026-06-08",
+      "event": "Fiscal seeks partial estimation only for lack of concrete reasoning",
+      "verification": "PRIMARY_SIGNED_REPORT",
+      "fiscal_caepr_id": "PD-SP-P-0160"
+    },
+    {
+      "event_id": "DP748-2026-20260615-DIOR",
+      "date": "2026-06-15",
+      "event": "Fiscal report joined and file placed for decision",
+      "verification": "PRIMARY_SIGNED_COURT_ACT",
+      "laj_caepr_id": "PD-SP-P-0148"
+    },
+    {
+      "event_id": "DP748-2026-20260626-SINTESIS",
+      "date": "2026-06-26",
+      "time": "00:22:46",
+      "event": "Synthesis/concreción pleading filed",
+      "filing_id": "DP748-2026-GIL-20260626-SINTESIS",
+      "verification": "PRIMARY_SIGNED_PLEADING_AND_LEXNET_RECEIPT"
+    },
+    {
+      "event_id": "DP748-2026-20260716-AUTO",
+      "date": "2026-07-16",
+      "time": "15:02:46",
+      "event": "Reform partly upheld for lack of reasons; new reasoning supplied; provisional dismissal/archive maintained; reopening expressly preserved; order states it is not final and gives a five-day appeal instruction",
+      "verification": "PRIMARY_SIGNED_COURT_ORDER",
+      "judge_caepr_id": "PD-SP-P-0147"
+    },
+    {
+      "event_id": "DP748-2026-20260901-NOTIFICATION",
+      "date": "2026-09-01",
+      "event": "Located LexNET packet sent, distributed and collected on 01-Sep-2026",
+      "verification": "PRIMARY_LEXNET_PACKET",
+      "laj_caepr_id": "PD-SP-P-0148"
+    }
+  ],
+  "p0_appeal_control": {
+    "subsidiary_appeal_filed": "VERIFIED",
+    "subsidiary_appeal_admitted": "VERIFIED_BY_20MAY_PROVIDENCIA_INTERPOSED_IN_TIME_AND_FORM",
+    "article_766_4_transfer_to_appellant": "NOT_LOCATED",
+    "transmission_to_audiencia": "NOT_LOCATED",
+    "appellate_roll": "NOT_LOCATED",
+    "tf_app_004": "UNVERIFIED_PLACEHOLDER",
+    "best_supported_service_analysis": "College service received 01-Sep; Article 151.2 LEC deemed notification 02-Sep; count starts 03-Sep; Article 201 LECrim treats all days as enabled for instruction appeals; fifth day 07-Sep-2026.",
+    "protective_operational_deadline": "FILE_04SEP2026_OR_EARLIER",
+    "protective_filing": "Assert continuity of the admitted subsidiary appeal; file Article 766.4 allegations; subsidiarily interpose direct appeal against the 16-Jul Auto without waiver or novation; request certification of last notifications, procedural admission/status, transmission and any roll.",
+    "calculation_boundary": "Counsel must verify the live LexNET/court docket and the last notification. Do not rely on Article 135 LEC or a later unverified notification."
+  },
+  "judicial_deficiency_matrix": [
+    {
+      "deficiency": "exact_act",
+      "record_before_criminal_court": "PARTIAL",
+      "assessment": "The 17-Apr appeal identified warnings on 20-Sep and 08-Oct-2024 and a later 21-Feb-2025 adjudication request, so the record was not wholly devoid of a dated act. It did not close individual signatory, exact proposition, finca and effect.",
+      "reopening_cure": "Signed ETJ pleadings dated 18-Oct-2024, 21-Feb-2025, 25-Apr-2025 and 10-Feb-2026, with filing receipts and correlated decisions."
+    },
+    {
+      "deficiency": "concrete_property",
+      "record_before_criminal_court": "INSUFFICIENT",
+      "assessment": "The criminal pleadings did not provide a closed finca-level schedule.",
+      "reopening_cure": "Located auction edict identifies one lot only: finca 8584. Finca 8588 remains contextual unless a separate realization act is proved."
+    },
+    {
+      "deficiency": "minimum_criminal_indicia",
+      "record_before_criminal_court": "INCOMPLETE",
+      "assessment": "Temporal sequence supported knowledge of a dispute and continued enforcement activity, but did not prove a false factual representation, knowledge of falsity, judicial error, harmful resolution or causal loss.",
+      "reopening_cure": "The 25-Apr-2025 pleading is an objective knowledge/position source, but also shows the civil court was told of the controversy. Finite docket, registry and expert checks must be capable of confirming or excluding falsity, materiality, error and effect."
+    }
+  ],
+  "narrow_case_definition": {
+    "property": "Finca registral 8584 only",
+    "actor_documents": "Named signatories and the identified ETJ writings",
+    "question": "Whether a concrete factual representation about finca 8584 was false and material, known to be false, used to obtain adjudication, sufficient to cause judicial error, and followed by a harmful resolution.",
+    "excluded_without_direct_nexus": [
+      "generic review of ETJ 163/2020",
+      "whole Sun Park history",
+      "finca 8588 as an auction lot",
+      "criminality inferred from enforcement activity alone",
+      "completed procedural fraud without a proved resolution and loss"
+    ],
+    "exculpatory_control": "The 25-Apr-2025 pleading appears to disclose the property controversy to the civil court; this may negate concealment or error and must be tested, not suppressed."
+  },
+  "property_control": [
+    {
+      "property": "Finca 8584",
+      "register": "Registro de la Propiedad nº 1 de Tías",
+      "auction_status": "ONLY_LOCATED_LOT",
+      "auction_value_eur": "111200.00",
+      "requested_70_percent_eur": "77840.00",
+      "current_adjudication_cession_registration_possession": "OPEN_GAP",
+      "needed": "Historic/current certification, correlated ETJ orders and independent physical-registry-cadastral crosswalk"
+    },
+    {
+      "property": "Finca 8588",
+      "auction_status": "NOT_IN_LOCATED_AUCTION_EDICT",
+      "use": "CONTEXT_ONLY_PENDING_SEPARATE_REALIZATION_SOURCE",
+      "needed": "Certified registry and any exact embargo/realization act"
+    }
+  ],
+  "source_register": [
+    {
+      "source_id": "DP748-SRC-DENUNCIA-20260204",
+      "sha256": "f48e4d7ca705064bce04a2d323f083aa4cb02de4a8ee20b21f2e26c7565d2b28",
+      "source_class": "FILED_PLEADING",
+      "limited_proposition": "Content filed; not truth of allegations."
+    },
+    {
+      "source_id": "DP748-SRC-AMPLIACION-2026",
+      "sha256": "67efa30c57a5637c63edf75d9c8c05df4bbe30b19fd622bb2e2769359284e9ed",
+      "source_class": "FILED_PLEADING",
+      "limited_proposition": "Content filed; not truth of allegations."
+    },
+    {
+      "source_id": "DP748-SRC-REFORMA-APELACION-20260417",
+      "sha256": "16ad4333afacc2df27399d9b8e6329af6af88185992a34b4ba177a0de6815252",
+      "source_class": "SIGNED_FILED_PLEADING",
+      "limited_proposition": "Grounds and relief stated."
+    },
+    {
+      "source_id": "DP748-SRC-LEXNET-20260417",
+      "sha256": "4d1116510ec3c99952faae0b2093de55f485fd6b88c042bf9db1e187f3517795",
+      "source_class": "LEXNET_RECEIPT",
+      "limited_proposition": "Filing identity and date/time."
+    },
+    {
+      "source_id": "DP748-SRC-PROVIDENCIA-20260520",
+      "sha256": "429a2728aedbad73cdceb9b4ab40899e4e46c5f09c9c0b3369347d66d6965d04",
+      "source_class": "COURT_ACT",
+      "limited_proposition": "Reform and subsidiary appeal interposed in time and form."
+    },
+    {
+      "source_id": "DP748-SRC-FISCAL-20260608",
+      "sha256": "64a010f4980790615e8c2f4b0feebe0268af00a3c64b357ef4986927c4c50a41",
+      "source_class": "SIGNED_FISCAL_REPORT",
+      "limited_proposition": "Exact Fiscal position."
+    },
+    {
+      "source_id": "DP748-SRC-DIOR-20260615",
+      "sha256": "717c6f17ef6d365fe93c4934957a21ccf922dd6cff612317c0fc24b4c7ce0305",
+      "source_class": "COURT_ACT",
+      "limited_proposition": "Fiscal report joined and file passed for decision."
+    },
+    {
+      "source_id": "DP748-SRC-SINTESIS-20260625",
+      "sha256": "f89bce54818c4f1206b92d10413183cee8444bb6bd3561dac6920130dd08a87d",
+      "source_class": "SIGNED_FILED_PLEADING",
+      "limited_proposition": "Synthesis/concreción content."
+    },
+    {
+      "source_id": "DP748-SRC-AUTO-20260716",
+      "sha256": "32f70f813113870609127b5f35e2a8859c734236efe1577cdd3dc7703813d8a4",
+      "source_class": "SIGNED_COURT_ORDER",
+      "limited_proposition": "Reasoning, disposition, non-finality, reopening statement and appeal instruction."
+    },
+    {
+      "source_id": "DP748-SRC-NOTIFICATION-20260901",
+      "sha256": "54ddaf2954a1ab51c3a556f43f432f7ddee0efbf9fd6ffd51d25d3f3622078dc",
+      "source_class": "LEXNET_NOTIFICATION_PACKET",
+      "limited_proposition": "Notification lane and displayed timestamps."
+    },
+    {
+      "source_id": "ETJ163-SRC-AUCTION-EDICT",
+      "sha256": "fc1abc2261ccd3244bfdc46d23edc21ca5f723540052fd2673f614a7fa1a3beb",
+      "source_class": "COURT_AUCTION_EDICT",
+      "limited_proposition": "Located lot, finca and value; formal edict date remains to be authenticated."
+    },
+    {
+      "source_id": "ETJ163-SRC-MATKATOR-20241008",
+      "sha256": "5875c02f1c4d0b88e961460a45d121b9f73aae3d80765a7ad553cc4fff222d59",
+      "source_class": "SIGNED_PLEADING",
+      "limited_proposition": "Matkator warning/impugnation content."
+    },
+    {
+      "source_id": "ETJ163-SRC-CUATRECASAS-20241018",
+      "sha256": "870ad117f20b4982f66ca78d7708403a94e0170febc95aca8ec0ecbdba3a08f0",
+      "source_class": "SIGNED_PLEADING",
+      "limited_proposition": "Request for adjudication at 70 percent and reservation of assignment."
+    },
+    {
+      "source_id": "ETJ163-SRC-CUATRECASAS-20250221",
+      "sha256": "4c8effcb7b79d5a07bb9ca2627cecee682a50a98ef9a30bf3622fb27ff3b6dae",
+      "source_class": "SIGNED_PLEADING",
+      "limited_proposition": "Requested amount and stated balance."
+    },
+    {
+      "source_id": "ETJ163-SRC-CUATRECASAS-20250425",
+      "sha256": "49b54b3820a233e30783bc18e301d8a79148f09b7c852d1b6b4ea7cb8be1632e",
+      "source_class": "SIGNED_PLEADING",
+      "limited_proposition": "Knowledge of the dispute, stated property position, opposition to new expert evidence and requested continuation."
+    },
+    {
+      "source_id": "ETJ163-SRC-CUATRECASAS-20260210",
+      "sha256": "f8cc0f8a3e7ba0b6feeaccd8022ba12d49ad4c65a9c6cbc2f05ef14e7d7949ff",
+      "source_class": "SIGNED_PLEADING",
+      "limited_proposition": "Reiteration of adjudication/assignment request."
+    },
+    {
+      "source_id": "ETJ163-SRC-AUTO-20260619",
+      "sha256": "4752fe941eb03223871f6ce0e939ea4b13a7a7678e9587f078305f86951ea28c",
+      "source_class": "SIGNED_COURT_ORDER",
+      "limited_proposition": "Suspension denied."
+    },
+    {
+      "source_id": "ETJ163-SRC-REPOSICION-20260626",
+      "sha256": "9cdd1f0d2a0c954aacb3695ca7045f3bf4ec73a605c95088407b2f5c97473f23",
+      "source_class": "SIGNED_FILED_PLEADING",
+      "limited_proposition": "Matkator reposición content and act-specific Carlos/Adriana lineage."
+    },
+    {
+      "source_id": "ETJ163-SRC-DIOR-20260728",
+      "sha256": "6c8fdcf5f0a8d1e68d3144916979197aaa5b10e655d7907a708d72f0abc97127",
+      "source_class": "COURT_ACT",
+      "limited_proposition": "Reposición admitted and five-day transfer ordered; later result open."
+    }
+  ],
+  "open_gaps": [
+    "LL-JUD-GAP-001",
+    "LL-JUD-GAP-003",
+    "CP-GAP-012",
+    "CP-GAP-013",
+    "CP-GAP-015",
+    "CP-GAP-016",
+    "CP-GAP-017",
+    "CP-GAP-018"
+  ],
+  "linked_proceedings": [
+    {
+      "master_id": "TF-CIV-002",
+      "relation": "DIRECT_UNDERLYING_ENFORCEMENT"
+    },
+    {
+      "master_id": "TF-CIV-001",
+      "relation": "PREDECESSOR_CAMBIARIO"
+    },
+    {
+      "master_id": "TF-FIS-008",
+      "relation": "RELATED_FISCALIA_COORDINATION_NOT_MERGED"
+    },
+    {
+      "master_id": "TF-XFR-005",
+      "relation": "EVIDENCE_TRANSMISSION_CONTEXT"
+    },
+    {
+      "master_id": "TF-APP-004",
+      "relation": "UNVERIFIED_APPEAL_PLACEHOLDER"
+    }
+  ],
+  "publication_boundary": {
+    "repository_state": "SOURCE_SAFE_CONTROL_ONLY",
+    "raw_sources_in_repository": false,
+    "raw_email_or_private_correspondence": false,
+    "personal_contact_or_identity_numbers": false,
+    "signed_download_links": false,
+    "allegation_status_rule": "No allegation is converted into a finding of crime, intent, professional misconduct or civil liability.",
+    "procedural_status_rule": "The 16-Jul order is a maintained provisional dismissal, not acquittal, sobreseimiento libre or final merits adjudication."
+  }
+}

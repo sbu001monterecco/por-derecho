@@ -154,6 +154,9 @@
       "Francisco Martín Pozo",
       "María del Mar Vidal Villagrasa",
       "Juan Manuel Vivancos Hernández",
+      "Teresa Morenés Basabe",
+      "José Javier Bueno Mesa",
+      "María Francisca Sánchez Álvarez",
       "Plaza nº 4 del Tribunal de Instancia (Sección Instrucción) de San Cristóbal de La Laguna",
       "Plaza nº 3 del Tribunal de Instancia (Sección Civil) de San Cristóbal de La Laguna",
       "Juzgado de Primera Instancia nº 5 de San Cristóbal de La Laguna",
@@ -162,8 +165,8 @@
     ]
   },
   "counts": {
-    "total": 336,
-    "PERSON": 157,
+    "total": 339,
+    "PERSON": 160,
     "ORGANISATION": 83,
     "STRUCTURE": 11,
     "INSTITUTION": 42,
@@ -174,6 +177,7 @@
     {"path": "matter-identity-registry-v1.professional-people.json", "type": "PERSON", "count": 27},
     {"path": "matter-identity-registry-v1.joan-cruz.json", "type": "PERSON", "count": 1},
     {"path": "matter-identity-registry-v1.la-laguna-judicial-people.json", "type": "PERSON", "count": 11},
+    {"path": "matter-identity-registry-v1.dp748-professional-people.json", "type": "PERSON", "count": 3},
     {"path": "matter-identity-registry-v1.organisations.json", "type": "ORGANISATION", "count": 76},
     {"path": "matter-identity-registry-v1.professional-organisations.json", "type": "ORGANISATION", "count": 7},
     {"path": "matter-identity-registry-v1.structures.json", "type": "STRUCTURE", "count": 11},

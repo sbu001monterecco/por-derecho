@@ -8960,6 +8960,201 @@
       "supporting_assertion_count": 1
     },
     {
+      "id": "REL-PARENT_CHILD-TF-CIV-001-TF-CIV-002",
+      "from_master_id": "TF-CIV-001",
+      "to_master_id": "TF-CIV-002",
+      "relationship_class": "DIRECT_PROCEDURAL_EDGE",
+      "relationship_type": "PARENT_CHILD",
+      "direction": "FORWARD",
+      "why_en": "TF-CIV-002 records TF-CIV-001 in Parent_Master_ID. This is an explicit procedural lineage, not adoption of any merits proposition.",
+      "why_es": "TF-CIV-002 registra TF-CIV-001 en Parent_Master_ID. Es una filiación procesal expresa, no la adopción de ninguna proposición de fondo.",
+      "source": {
+        "kind": "MASTER_REGISTER_FIELD",
+        "source_id": "PROCEEDINGS_MASTER_REGISTER",
+        "record_master_id": "TF-CIV-002",
+        "field": "Parent_Master_ID",
+        "value_token": "TF-CIV-001",
+        "evidence_status": "VERIFIED_PRIMARY"
+      },
+      "source_assertions": [
+        {
+          "source_id": "PROCEEDINGS_MASTER_REGISTER",
+          "source_record_master_id": "TF-CIV-001",
+          "field": "Linked_Proceedings",
+          "value_token": "TF-CIV-002",
+          "evidence_status": "VERIFIED_PROCEDURAL",
+          "assertion_relationship_type": "LINKED_PROCEEDING",
+          "assertion_direction": "FORWARD",
+          "assertion_from_master_id": "TF-CIV-001",
+          "assertion_to_master_id": "TF-CIV-002"
+        },
+        {
+          "source_id": "PROCEEDINGS_MASTER_REGISTER",
+          "source_record_master_id": "TF-CIV-002",
+          "field": "Linked_Proceedings",
+          "value_token": "TF-CIV-001",
+          "evidence_status": "VERIFIED_PRIMARY",
+          "assertion_relationship_type": "LINKED_PROCEEDING",
+          "assertion_direction": "FORWARD",
+          "assertion_from_master_id": "TF-CIV-002",
+          "assertion_to_master_id": "TF-CIV-001"
+        },
+        {
+          "source_id": "PROCEEDINGS_MASTER_REGISTER",
+          "source_record_master_id": "TF-CIV-002",
+          "field": "Parent_Master_ID",
+          "value_token": "TF-CIV-001",
+          "evidence_status": "VERIFIED_PRIMARY",
+          "assertion_relationship_type": "PARENT_CHILD",
+          "assertion_direction": "FORWARD",
+          "assertion_from_master_id": "TF-CIV-001",
+          "assertion_to_master_id": "TF-CIV-002"
+        }
+      ],
+      "limitations_en": "Reverse navigation may be derived from this recorded field. The edge does not establish joinder, notice, admissibility, knowledge, agreement, wrongdoing or liability.",
+      "limitations_es": "Puede derivarse navegación inversa de este campo registrado. El enlace no acredita acumulación, conocimiento formal, admisibilidad, conocimiento personal, acuerdo, ilicitud ni responsabilidad.",
+      "public_safe": true,
+      "supporting_assertion_count": 3
+    },
+    {
+      "id": "REL-LINKED_PROCEEDING-TF-CIV-001-TF-CRI-003",
+      "from_master_id": "TF-CIV-001",
+      "to_master_id": "TF-CRI-003",
+      "relationship_class": "DIRECT_PROCEDURAL_EDGE",
+      "relationship_type": "LINKED_PROCEEDING",
+      "direction": "FORWARD",
+      "why_en": "TF-CIV-001 names TF-CRI-003 in Linked_Proceedings. The canonical link is preserved without inferring joinder or shared merits.",
+      "why_es": "TF-CIV-001 identifica TF-CRI-003 en Linked_Proceedings. Se conserva el enlace canónico sin inferir acumulación ni fondo común.",
+      "source": {
+        "kind": "MASTER_REGISTER_FIELD",
+        "source_id": "PROCEEDINGS_MASTER_REGISTER",
+        "record_master_id": "TF-CIV-001",
+        "field": "Linked_Proceedings",
+        "value_token": "TF-CRI-003",
+        "evidence_status": "VERIFIED_PROCEDURAL"
+      },
+      "source_assertions": [
+        {
+          "source_id": "PROCEEDINGS_MASTER_REGISTER",
+          "source_record_master_id": "TF-CIV-001",
+          "field": "Linked_Proceedings",
+          "value_token": "TF-CRI-003",
+          "evidence_status": "VERIFIED_PROCEDURAL",
+          "assertion_relationship_type": "LINKED_PROCEEDING",
+          "assertion_direction": "FORWARD",
+          "assertion_from_master_id": "TF-CIV-001",
+          "assertion_to_master_id": "TF-CRI-003"
+        },
+        {
+          "source_id": "PROCEEDINGS_MASTER_REGISTER",
+          "source_record_master_id": "TF-CRI-003",
+          "field": "Linked_Proceedings",
+          "value_token": "TF-CIV-001",
+          "evidence_status": "VERIFIED_PRIMARY",
+          "assertion_relationship_type": "LINKED_PROCEEDING",
+          "assertion_direction": "FORWARD",
+          "assertion_from_master_id": "TF-CRI-003",
+          "assertion_to_master_id": "TF-CIV-001"
+        }
+      ],
+      "limitations_en": "Reverse navigation may be derived from this recorded field. The edge does not establish joinder, notice, admissibility, knowledge, agreement, wrongdoing or liability.",
+      "limitations_es": "Puede derivarse navegación inversa de este campo registrado. El enlace no acredita acumulación, conocimiento formal, admisibilidad, conocimiento personal, acuerdo, ilicitud ni responsabilidad.",
+      "public_safe": true,
+      "supporting_assertion_count": 2
+    },
+    {
+      "id": "REL-LINKED_PROCEEDING-TF-CIV-002-TF-CRI-003",
+      "from_master_id": "TF-CIV-002",
+      "to_master_id": "TF-CRI-003",
+      "relationship_class": "DIRECT_PROCEDURAL_EDGE",
+      "relationship_type": "LINKED_PROCEEDING",
+      "direction": "FORWARD",
+      "why_en": "TF-CIV-002 names TF-CRI-003 in Linked_Proceedings. The canonical link is preserved without inferring joinder or shared merits.",
+      "why_es": "TF-CIV-002 identifica TF-CRI-003 en Linked_Proceedings. Se conserva el enlace canónico sin inferir acumulación ni fondo común.",
+      "source": {
+        "kind": "MASTER_REGISTER_FIELD",
+        "source_id": "PROCEEDINGS_MASTER_REGISTER",
+        "record_master_id": "TF-CIV-002",
+        "field": "Linked_Proceedings",
+        "value_token": "TF-CRI-003",
+        "evidence_status": "VERIFIED_PRIMARY"
+      },
+      "source_assertions": [
+        {
+          "source_id": "PROCEEDINGS_MASTER_REGISTER",
+          "source_record_master_id": "TF-CIV-002",
+          "field": "Linked_Proceedings",
+          "value_token": "TF-CRI-003",
+          "evidence_status": "VERIFIED_PRIMARY",
+          "assertion_relationship_type": "LINKED_PROCEEDING",
+          "assertion_direction": "FORWARD",
+          "assertion_from_master_id": "TF-CIV-002",
+          "assertion_to_master_id": "TF-CRI-003"
+        },
+        {
+          "source_id": "PROCEEDINGS_MASTER_REGISTER",
+          "source_record_master_id": "TF-CRI-003",
+          "field": "Linked_Proceedings",
+          "value_token": "TF-CIV-002",
+          "evidence_status": "VERIFIED_PRIMARY",
+          "assertion_relationship_type": "LINKED_PROCEEDING",
+          "assertion_direction": "FORWARD",
+          "assertion_from_master_id": "TF-CRI-003",
+          "assertion_to_master_id": "TF-CIV-002"
+        }
+      ],
+      "limitations_en": "Reverse navigation may be derived from this recorded field. The edge does not establish joinder, notice, admissibility, knowledge, agreement, wrongdoing or liability.",
+      "limitations_es": "Puede derivarse navegación inversa de este campo registrado. El enlace no acredita acumulación, conocimiento formal, admisibilidad, conocimiento personal, acuerdo, ilicitud ni responsabilidad.",
+      "public_safe": true,
+      "supporting_assertion_count": 2
+    },
+    {
+      "id": "REL-LINKED_PROCEEDING-TF-CRI-003-TF-FIS-008",
+      "from_master_id": "TF-CRI-003",
+      "to_master_id": "TF-FIS-008",
+      "relationship_class": "DIRECT_PROCEDURAL_EDGE",
+      "relationship_type": "LINKED_PROCEEDING",
+      "direction": "FORWARD",
+      "why_en": "TF-CRI-003 names TF-FIS-008 in Linked_Proceedings. The canonical link is preserved without inferring joinder or shared merits.",
+      "why_es": "TF-CRI-003 identifica TF-FIS-008 en Linked_Proceedings. Se conserva el enlace canónico sin inferir acumulación ni fondo común.",
+      "source": {
+        "kind": "MASTER_REGISTER_FIELD",
+        "source_id": "PROCEEDINGS_MASTER_REGISTER",
+        "record_master_id": "TF-CRI-003",
+        "field": "Linked_Proceedings",
+        "value_token": "TF-FIS-008",
+        "evidence_status": "VERIFIED_PRIMARY"
+      },
+      "source_assertions": [
+        {
+          "source_id": "PROCEEDINGS_MASTER_REGISTER",
+          "source_record_master_id": "TF-CRI-003",
+          "field": "Linked_Proceedings",
+          "value_token": "TF-FIS-008",
+          "evidence_status": "VERIFIED_PRIMARY",
+          "assertion_relationship_type": "LINKED_PROCEEDING",
+          "assertion_direction": "FORWARD",
+          "assertion_from_master_id": "TF-CRI-003",
+          "assertion_to_master_id": "TF-FIS-008"
+        },
+        {
+          "source_id": "PROCEEDINGS_MASTER_REGISTER",
+          "source_record_master_id": "TF-FIS-008",
+          "field": "Linked_Proceedings",
+          "value_token": "TF-CRI-003",
+          "evidence_status": "VERIFIED_PRIMARY",
+          "assertion_relationship_type": "LINKED_PROCEEDING",
+          "assertion_direction": "FORWARD",
+          "assertion_from_master_id": "TF-FIS-008",
+          "assertion_to_master_id": "TF-CRI-003"
+        }
+      ],
+      "limitations_en": "Reverse navigation may be derived from this recorded field. The edge does not establish joinder, notice, admissibility, knowledge, agreement, wrongdoing or liability.",
+      "limitations_es": "Puede derivarse navegación inversa de este campo registrado. El enlace no acredita acumulación, conocimiento formal, admisibilidad, conocimiento personal, acuerdo, ilicitud ni responsabilidad.",
+      "public_safe": true,
+      "supporting_assertion_count": 2
+    },
+    {
       "id": "REL-LINKED_PROCEEDING-TF-FIS-008-TF-CIV-001",
       "from_master_id": "TF-FIS-008",
       "to_master_id": "TF-CIV-001",
@@ -9022,41 +9217,6 @@
           "assertion_direction": "FORWARD",
           "assertion_from_master_id": "TF-FIS-008",
           "assertion_to_master_id": "TF-CIV-002"
-        }
-      ],
-      "limitations_en": "Reverse navigation may be derived from this recorded field. The edge does not establish joinder, notice, admissibility, knowledge, agreement, wrongdoing or liability.",
-      "limitations_es": "Puede derivarse navegación inversa de este campo registrado. El enlace no acredita acumulación, conocimiento formal, admisibilidad, conocimiento personal, acuerdo, ilicitud ni responsabilidad.",
-      "public_safe": true,
-      "supporting_assertion_count": 1
-    },
-    {
-      "id": "REL-LINKED_PROCEEDING-TF-FIS-008-TF-CRI-003",
-      "from_master_id": "TF-FIS-008",
-      "to_master_id": "TF-CRI-003",
-      "relationship_class": "DIRECT_PROCEDURAL_EDGE",
-      "relationship_type": "LINKED_PROCEEDING",
-      "direction": "FORWARD",
-      "why_en": "TF-FIS-008 names TF-CRI-003 in Linked_Proceedings. The canonical link is preserved without inferring joinder or shared merits.",
-      "why_es": "TF-FIS-008 identifica TF-CRI-003 en Linked_Proceedings. Se conserva el enlace canónico sin inferir acumulación ni fondo común.",
-      "source": {
-        "kind": "MASTER_REGISTER_FIELD",
-        "source_id": "PROCEEDINGS_MASTER_REGISTER",
-        "record_master_id": "TF-FIS-008",
-        "field": "Linked_Proceedings",
-        "value_token": "TF-CRI-003",
-        "evidence_status": "VERIFIED_PRIMARY"
-      },
-      "source_assertions": [
-        {
-          "source_id": "PROCEEDINGS_MASTER_REGISTER",
-          "source_record_master_id": "TF-FIS-008",
-          "field": "Linked_Proceedings",
-          "value_token": "TF-CRI-003",
-          "evidence_status": "VERIFIED_PRIMARY",
-          "assertion_relationship_type": "LINKED_PROCEEDING",
-          "assertion_direction": "FORWARD",
-          "assertion_from_master_id": "TF-FIS-008",
-          "assertion_to_master_id": "TF-CRI-003"
         }
       ],
       "limitations_en": "Reverse navigation may be derived from this recorded field. The edge does not establish joinder, notice, admissibility, knowledge, agreement, wrongdoing or liability.",
@@ -27275,7 +27435,9 @@
       "master_id": "TF-CIV-001",
       "primary_classification": "DIRECT_PROCEDURAL_EDGE",
       "relationship_ids": [
-        "REL-LINKED_PROCEEDING-TF-FIS-008-TF-CIV-001"
+        "REL-LINKED_PROCEEDING-TF-CIV-001-TF-CRI-003",
+        "REL-LINKED_PROCEEDING-TF-FIS-008-TF-CIV-001",
+        "REL-PARENT_CHILD-TF-CIV-001-TF-CIV-002"
       ],
       "context_cluster_ids": [
         "CTX-PRISM-P01",
@@ -27285,13 +27447,15 @@
       "why_es": "Al menos una relación directa está respaldada por un campo canónico expreso Parent_Master_ID, Linked_Proceedings o Appeal_or_Review.",
       "limitations_en": "This disposition controls navigation only. It does not prove joinder, receipt, admissibility, knowledge, agreement, causation, wrongdoing or liability.",
       "limitations_es": "Esta clasificación controla solo la navegación. No prueba acumulación, recepción, admisibilidad, conocimiento, acuerdo, causalidad, ilicitud ni responsabilidad.",
-      "next_source_needed_en": "Complete claim, title, opposition, decisions, finality and enforcement bridge",
+      "next_source_needed_en": "Complete initiating title, demand, service, opposition, dispositive acts, finality and enforcement bridge",
       "next_source_needed_es": "Demanda completa, título, oposición, resoluciones, firmeza y nexo con la ejecución.",
       "source_status": "VERIFIED_PROCEDURAL",
       "basis": {
         "kind": "DIRECT_RELATIONSHIP_MEMBERSHIP",
         "relationship_ids": [
-          "REL-LINKED_PROCEEDING-TF-FIS-008-TF-CIV-001"
+          "REL-LINKED_PROCEEDING-TF-CIV-001-TF-CRI-003",
+          "REL-LINKED_PROCEEDING-TF-FIS-008-TF-CIV-001",
+          "REL-PARENT_CHILD-TF-CIV-001-TF-CIV-002"
         ]
       },
       "finite_test": {
@@ -27300,13 +27464,13 @@
         "family_template_id": "CIVIL_FILE_DECISION",
         "family_taxonomy_only": true,
         "question": {
-          "en": "For Juicio Cambiario 1048/2019, what exact source establishes Underlying cambiario proceeding; what claim, title, opposition and evidence was before La Laguna court — exact organ in judicial archive; what was decided or enforced; and what is the current appeal/finality status?",
-          "es": "Para Juicio Cambiario 1048/2019, ¿qué fuente exacta acredita el objeto registrado; qué demanda, título, oposición y prueba estuvo ante La Laguna court — exact organ in judicial archive; qué se decidió o ejecutó; y cuál es el estado actual de recurso/firmeza?"
+          "en": "For Juicio Cambiario 1048/2019, what exact source establishes Underlying cambiario title and enforcement lineage; what claim, title, opposition and evidence was before Juzgado de Primera Instancia nº 3 de San Cristóbal de La Laguna; what was decided or enforced; and what is the current appeal/finality status?",
+          "es": "Para Juicio Cambiario 1048/2019, ¿qué fuente exacta acredita el objeto registrado; qué demanda, título, oposición y prueba estuvo ante Juzgado de Primera Instancia nº 3 de San Cristóbal de La Laguna; qué se decidió o ejecutó; y cuál es el estado actual de recurso/firmeza?"
         },
-        "recorded_object": "Underlying cambiario proceeding",
+        "recorded_object": "Underlying cambiario title and enforcement lineage",
         "attribution": "DOCUMENTED_PROCEDURAL_RECORD_WITH_OPEN_COMPLETION",
         "source_needed": {
-          "en": "Complete claim, title, opposition, decisions, finality and enforcement bridge",
+          "en": "Complete initiating title, demand, service, opposition, dispositive acts, finality and enforcement bridge",
           "es": "Demanda completa, título, oposición, resoluciones, firmeza y nexo con la ejecución."
         },
         "current_source_status": "VERIFIED_PROCEDURAL",
@@ -27331,12 +27495,14 @@
           }
         ],
         "competent_organ": {
-          "recorded_candidate": "La Laguna court",
+          "recorded_candidate": "Plaza nº 3 del Tribunal de Instancia (Sección Civil) de San Cristóbal de La Laguna",
           "basis_field": "Current_Custodian",
           "status": "RECORDED_CURRENT_CUSTODIAN"
         },
         "related_proceedings": {
           "direct_master_ids": [
+            "TF-CIV-002",
+            "TF-CRI-003",
             "TF-FIS-008"
           ],
           "context_master_ids": [
@@ -27364,6 +27530,8 @@
             "CTX-PRISM-P06"
           ],
           "direct": [
+            "TF-CIV-002",
+            "TF-CRI-003",
             "TF-FIS-008"
           ],
           "context": [
@@ -27397,24 +27565,24 @@
           "es": "La disponibilidad lícita, admisibilidad o inclusión en el ámbito de otro expediente o fuente debe determinarse en el procedimiento seleccionado; este modelo de navegación no infiere disponibilidad ni deber de examen."
         },
         "decision_dependency": {
-          "en": "For Juicio Cambiario 1048/2019, the finite decision question is whether the legally competent organ must determine whether the complete civil file supports the recorded claim, defence, title, enforcement or relief and its appeal/finality status for the recorded object “Underlying cambiario proceeding”. La Laguna court is only the recorded custodian/organ candidate and is not treated here as legally competent or obliged to act. Controlled navigation currently identifies direct files [TF-FIS-008] and contextual files [GC-APP-004, GC-APP-005, GC-APP-006, GC-APP-028, GC-CAL-002, GC-CIV-027, GC-CONT-025, GC-FIS-013, GC-FIS-017, GC-FIS-018, GC-GOV-019, GC-GOV-020, GC-JUD-001, LZ-JUD-001, LZ-JUD-005, TF-CIV-002, TF-CRI-003, VAL-CIV-001]. Their presence does not establish receipt, admissibility or a duty to consider them.",
-          "es": "Para Juicio Cambiario 1048/2019, la cuestión decisoria finita es si el órgano legalmente competente debe determinar si el expediente civil completo sustenta la pretensión, defensa, título, ejecución o tutela registradas y su estado de recurso/firmeza respecto del objeto registrado «Underlying cambiario proceeding». La Laguna court es solo el candidato registrado como custodio/órgano y aquí no se le atribuye competencia jurídica ni obligación de actuar. La navegación controlada identifica actualmente expedientes directos [TF-FIS-008] y contextuales [GC-APP-004, GC-APP-005, GC-APP-006, GC-APP-028, GC-CAL-002, GC-CIV-027, GC-CONT-025, GC-FIS-013, GC-FIS-017, GC-FIS-018, GC-GOV-019, GC-GOV-020, GC-JUD-001, LZ-JUD-001, LZ-JUD-005, TF-CIV-002, TF-CRI-003, VAL-CIV-001]. Su presencia no acredita recepción, admisibilidad ni deber de examinarlos."
+          "en": "For Juicio Cambiario 1048/2019, the finite decision question is whether the legally competent organ must determine whether the complete civil file supports the recorded claim, defence, title, enforcement or relief and its appeal/finality status for the recorded object “Underlying cambiario title and enforcement lineage”. Plaza nº 3 del Tribunal de Instancia (Sección Civil) de San Cristóbal de La Laguna is only the recorded custodian/organ candidate and is not treated here as legally competent or obliged to act. Controlled navigation currently identifies direct files [TF-CIV-002, TF-CRI-003, TF-FIS-008] and contextual files [GC-APP-004, GC-APP-005, GC-APP-006, GC-APP-028, GC-CAL-002, GC-CIV-027, GC-CONT-025, GC-FIS-013, GC-FIS-017, GC-FIS-018, GC-GOV-019, GC-GOV-020, GC-JUD-001, LZ-JUD-001, LZ-JUD-005, TF-CIV-002, TF-CRI-003, VAL-CIV-001]. Their presence does not establish receipt, admissibility or a duty to consider them.",
+          "es": "Para Juicio Cambiario 1048/2019, la cuestión decisoria finita es si el órgano legalmente competente debe determinar si el expediente civil completo sustenta la pretensión, defensa, título, ejecución o tutela registradas y su estado de recurso/firmeza respecto del objeto registrado «Underlying cambiario title and enforcement lineage». Plaza nº 3 del Tribunal de Instancia (Sección Civil) de San Cristóbal de La Laguna es solo el candidato registrado como custodio/órgano y aquí no se le atribuye competencia jurídica ni obligación de actuar. La navegación controlada identifica actualmente expedientes directos [TF-CIV-002, TF-CRI-003, TF-FIS-008] y contextuales [GC-APP-004, GC-APP-005, GC-APP-006, GC-APP-028, GC-CAL-002, GC-CIV-027, GC-CONT-025, GC-FIS-013, GC-FIS-017, GC-FIS-018, GC-GOV-019, GC-GOV-020, GC-JUD-001, LZ-JUD-001, LZ-JUD-005, TF-CIV-002, TF-CRI-003, VAL-CIV-001]. Su presencia no acredita recepción, admisibilidad ni deber de examinarlos."
         },
         "contrary_explanation": {
-          "en": "For Juicio Cambiario 1048/2019, the strongest hypothetical innocent or contrary explanation could be a lawful application of party scope, title, standing, res judicata, evidence, procedural discretion, enforcement or finality rules, but only if the primary record establishes that the legally competent organ applied it to “Underlying cambiario proceeding”. No act is attributed by this model to the recorded candidate La Laguna court. A different treatment, missing public inventory or related-file membership alone does not establish concealment, coordination, error or wrongdoing.",
-          "es": "Para Juicio Cambiario 1048/2019, la explicación inocente o contraria hipotética más fuerte podría ser una aplicación lícita de reglas sobre partes, título, legitimación, cosa juzgada, prueba, discrecionalidad procesal, ejecución o firmeza, pero solo si la fuente primaria acredita que el órgano legalmente competente la aplicó a «Underlying cambiario proceeding». Este modelo no atribuye actuación alguna al candidato registrado La Laguna court. Un tratamiento distinto, la falta de inventario público o la pertenencia a expedientes relacionados no acreditan por sí solos ocultación, coordinación, error ni ilicitud."
+          "en": "For Juicio Cambiario 1048/2019, the strongest hypothetical innocent or contrary explanation could be a lawful application of party scope, title, standing, res judicata, evidence, procedural discretion, enforcement or finality rules, but only if the primary record establishes that the legally competent organ applied it to “Underlying cambiario title and enforcement lineage”. No act is attributed by this model to the recorded candidate Plaza nº 3 del Tribunal de Instancia (Sección Civil) de San Cristóbal de La Laguna. A different treatment, missing public inventory or related-file membership alone does not establish concealment, coordination, error or wrongdoing.",
+          "es": "Para Juicio Cambiario 1048/2019, la explicación inocente o contraria hipotética más fuerte podría ser una aplicación lícita de reglas sobre partes, título, legitimación, cosa juzgada, prueba, discrecionalidad procesal, ejecución o firmeza, pero solo si la fuente primaria acredita que el órgano legalmente competente la aplicó a «Underlying cambiario title and enforcement lineage». Este modelo no atribuye actuación alguna al candidato registrado Plaza nº 3 del Tribunal de Instancia (Sección Civil) de San Cristóbal de La Laguna. Un tratamiento distinto, la falta de inventario público o la pertenencia a expedientes relacionados no acreditan por sí solos ocultación, coordinación, error ni ilicitud."
         },
         "strongest_contrary_or_innocent_explanation": {
-          "en": "For Juicio Cambiario 1048/2019, the strongest hypothetical innocent or contrary explanation could be a lawful application of party scope, title, standing, res judicata, evidence, procedural discretion, enforcement or finality rules, but only if the primary record establishes that the legally competent organ applied it to “Underlying cambiario proceeding”. No act is attributed by this model to the recorded candidate La Laguna court. A different treatment, missing public inventory or related-file membership alone does not establish concealment, coordination, error or wrongdoing.",
-          "es": "Para Juicio Cambiario 1048/2019, la explicación inocente o contraria hipotética más fuerte podría ser una aplicación lícita de reglas sobre partes, título, legitimación, cosa juzgada, prueba, discrecionalidad procesal, ejecución o firmeza, pero solo si la fuente primaria acredita que el órgano legalmente competente la aplicó a «Underlying cambiario proceeding». Este modelo no atribuye actuación alguna al candidato registrado La Laguna court. Un tratamiento distinto, la falta de inventario público o la pertenencia a expedientes relacionados no acreditan por sí solos ocultación, coordinación, error ni ilicitud."
+          "en": "For Juicio Cambiario 1048/2019, the strongest hypothetical innocent or contrary explanation could be a lawful application of party scope, title, standing, res judicata, evidence, procedural discretion, enforcement or finality rules, but only if the primary record establishes that the legally competent organ applied it to “Underlying cambiario title and enforcement lineage”. No act is attributed by this model to the recorded candidate Plaza nº 3 del Tribunal de Instancia (Sección Civil) de San Cristóbal de La Laguna. A different treatment, missing public inventory or related-file membership alone does not establish concealment, coordination, error or wrongdoing.",
+          "es": "Para Juicio Cambiario 1048/2019, la explicación inocente o contraria hipotética más fuerte podría ser una aplicación lícita de reglas sobre partes, título, legitimación, cosa juzgada, prueba, discrecionalidad procesal, ejecución o firmeza, pero solo si la fuente primaria acredita que el órgano legalmente competente la aplicó a «Underlying cambiario title and enforcement lineage». Este modelo no atribuye actuación alguna al candidato registrado Plaza nº 3 del Tribunal de Instancia (Sección Civil) de San Cristóbal de La Laguna. Un tratamiento distinto, la falta de inventario público o la pertenencia a expedientes relacionados no acreditan por sí solos ocultación, coordinación, error ni ilicitud."
         },
         "if_confirmed": {
-          "en": "If the requested primary record confirms the recorded object, treatment and current status in Juicio Cambiario 1048/2019, the legally competent organ could determine within its powers whether to retain or revise the recorded civil, title, enforcement or appeal treatment within the competent court's powers. The recorded candidate La Laguna court is not treated as competent merely because it is named in the register. Confirmation remains file-specific and does not establish another file's treatment, personal knowledge, causation, wrongdoing or liability.",
-          "es": "Si la fuente primaria solicitada confirma el objeto, tratamiento y estado actual registrados en Juicio Cambiario 1048/2019, el órgano legalmente competente podría determinar dentro de sus potestades si procede mantener o revisar el tratamiento civil, de título, ejecución o recurso registrado dentro de las potestades del órgano competente. El candidato registrado La Laguna court no se considera competente por el mero hecho de figurar en el registro. La confirmación sigue siendo específica del expediente y no acredita el tratamiento de otro expediente, conocimiento personal, causalidad, ilicitud ni responsabilidad."
+          "en": "If the requested primary record confirms the recorded object, treatment and current status in Juicio Cambiario 1048/2019, the legally competent organ could determine within its powers whether to retain or revise the recorded civil, title, enforcement or appeal treatment within the competent court's powers. The recorded candidate Plaza nº 3 del Tribunal de Instancia (Sección Civil) de San Cristóbal de La Laguna is not treated as competent merely because it is named in the register. Confirmation remains file-specific and does not establish another file's treatment, personal knowledge, causation, wrongdoing or liability.",
+          "es": "Si la fuente primaria solicitada confirma el objeto, tratamiento y estado actual registrados en Juicio Cambiario 1048/2019, el órgano legalmente competente podría determinar dentro de sus potestades si procede mantener o revisar el tratamiento civil, de título, ejecución o recurso registrado dentro de las potestades del órgano competente. El candidato registrado Plaza nº 3 del Tribunal de Instancia (Sección Civil) de San Cristóbal de La Laguna no se considera competente por el mero hecho de figurar en el registro. La confirmación sigue siendo específica del expediente y no acredita el tratamiento de otro expediente, conocimiento personal, causalidad, ilicitud ni responsabilidad."
         },
         "if_refuted": {
-          "en": "If the primary record refutes the recorded object, treatment or status in Juicio Cambiario 1048/2019, that discrepancy would call for correction of the canonical record and every affected direct/context classification, preservation of the contrary source, and assessment by the legally competent organ of any file-specific consequence. The recorded candidate La Laguna court is not treated as competent or required to act by this model.",
-          "es": "Si la fuente primaria refuta el objeto, tratamiento o estado registrado en Juicio Cambiario 1048/2019, esa discrepancia exigiría corregir el registro canónico y toda clasificación directa/contextual afectada, conservar la fuente contraria y que el órgano legalmente competente valore cualquier consecuencia específica del expediente. Este modelo no considera competente ni obliga a actuar al candidato registrado La Laguna court."
+          "en": "If the primary record refutes the recorded object, treatment or status in Juicio Cambiario 1048/2019, that discrepancy would call for correction of the canonical record and every affected direct/context classification, preservation of the contrary source, and assessment by the legally competent organ of any file-specific consequence. The recorded candidate Plaza nº 3 del Tribunal de Instancia (Sección Civil) de San Cristóbal de La Laguna is not treated as competent or required to act by this model.",
+          "es": "Si la fuente primaria refuta el objeto, tratamiento o estado registrado en Juicio Cambiario 1048/2019, esa discrepancia exigiría corregir el registro canónico y toda clasificación directa/contextual afectada, conservar la fuente contraria y que el órgano legalmente competente valore cualquier consecuencia específica del expediente. Este modelo no considera competente ni obliga a actuar al candidato registrado Plaza nº 3 del Tribunal de Instancia (Sección Civil) de San Cristóbal de La Laguna."
         },
         "receipt_knowledge": {
           "classification": "EXPLICIT_SOURCE_NOT_LOCATED",
@@ -27577,7 +27745,9 @@
       "master_id": "TF-CIV-002",
       "primary_classification": "DIRECT_PROCEDURAL_EDGE",
       "relationship_ids": [
-        "REL-LINKED_PROCEEDING-TF-FIS-008-TF-CIV-002"
+        "REL-LINKED_PROCEEDING-TF-CIV-002-TF-CRI-003",
+        "REL-LINKED_PROCEEDING-TF-FIS-008-TF-CIV-002",
+        "REL-PARENT_CHILD-TF-CIV-001-TF-CIV-002"
       ],
       "context_cluster_ids": [
         "CTX-PRISM-P01",
@@ -27587,13 +27757,15 @@
       "why_es": "Al menos una relación directa está respaldada por un campo canónico expreso Parent_Master_ID, Linked_Proceedings o Appeal_or_Review.",
       "limitations_en": "This disposition controls navigation only. It does not prove joinder, receipt, admissibility, knowledge, agreement, causation, wrongdoing or liability.",
       "limitations_es": "Esta clasificación controla solo la navegación. No prueba acumulación, recepción, admisibilidad, conocimiento, acuerdo, causalidad, ilicitud ni responsabilidad.",
-      "next_source_needed_en": "Full docket, remate/assignment documents and present enforcement/title status",
+      "next_source_needed_en": "Certified complete docket; correlated receipts/resolutions; adjudication/assignment/registration/possession; historic/current registry and expert crosswalk",
       "next_source_needed_es": "Expediente completo, documentos de remate o adjudicación y estado actual de la ejecución y del título.",
-      "source_status": "VERIFIED_PROCEDURAL",
+      "source_status": "VERIFIED_PRIMARY",
       "basis": {
         "kind": "DIRECT_RELATIONSHIP_MEMBERSHIP",
         "relationship_ids": [
-          "REL-LINKED_PROCEEDING-TF-FIS-008-TF-CIV-002"
+          "REL-LINKED_PROCEEDING-TF-CIV-002-TF-CRI-003",
+          "REL-LINKED_PROCEEDING-TF-FIS-008-TF-CIV-002",
+          "REL-PARENT_CHILD-TF-CIV-001-TF-CIV-002"
         ]
       },
       "finite_test": {
@@ -27602,16 +27774,16 @@
         "family_template_id": "CIVIL_FILE_DECISION",
         "family_taxonomy_only": true,
         "question": {
-          "en": "For ETJ 163/2020, what exact source establishes Civil enforcement; what claim, title, opposition and evidence was before La Laguna court; what was decided or enforced; and what is the current appeal/finality status?",
-          "es": "Para ETJ 163/2020, ¿qué fuente exacta acredita el objeto registrado; qué demanda, título, oposición y prueba estuvo ante La Laguna court; qué se decidió o ejecutó; y cuál es el estado actual de recurso/firmeza?"
+          "en": "For ETJ 163/2020, what exact source establishes Civil enforcement underlying DP 748/2026; what claim, title, opposition and evidence was before Juzgado de Primera Instancia nº 3 de San Cristóbal de La Laguna; what was decided or enforced; and what is the current appeal/finality status?",
+          "es": "Para ETJ 163/2020, ¿qué fuente exacta acredita el objeto registrado; qué demanda, título, oposición y prueba estuvo ante Juzgado de Primera Instancia nº 3 de San Cristóbal de La Laguna; qué se decidió o ejecutó; y cuál es el estado actual de recurso/firmeza?"
         },
-        "recorded_object": "Civil enforcement",
+        "recorded_object": "Civil enforcement underlying DP 748/2026",
         "attribution": "DOCUMENTED_PROCEDURAL_RECORD_WITH_OPEN_COMPLETION",
         "source_needed": {
-          "en": "Full docket, remate/assignment documents and present enforcement/title status",
+          "en": "Certified complete docket; correlated receipts/resolutions; adjudication/assignment/registration/possession; historic/current registry and expert crosswalk",
           "es": "Expediente completo, documentos de remate o adjudicación y estado actual de la ejecución y del título."
         },
-        "current_source_status": "VERIFIED_PROCEDURAL",
+        "current_source_status": "VERIFIED_PRIMARY",
         "source_needed_status": "STATUS_UNRESOLVED",
         "source_refs": [
           {
@@ -27633,12 +27805,14 @@
           }
         ],
         "competent_organ": {
-          "recorded_candidate": "La Laguna court",
+          "recorded_candidate": "Plaza nº 3 del Tribunal de Instancia (Sección Civil) de San Cristóbal de La Laguna",
           "basis_field": "Current_Custodian",
           "status": "RECORDED_CURRENT_CUSTODIAN"
         },
         "related_proceedings": {
           "direct_master_ids": [
+            "TF-CIV-001",
+            "TF-CRI-003",
             "TF-FIS-008"
           ],
           "context_master_ids": [
@@ -27666,6 +27840,8 @@
             "CTX-PRISM-P06"
           ],
           "direct": [
+            "TF-CIV-001",
+            "TF-CRI-003",
             "TF-FIS-008"
           ],
           "context": [
@@ -27699,24 +27875,24 @@
           "es": "La disponibilidad lícita, admisibilidad o inclusión en el ámbito de otro expediente o fuente debe determinarse en el procedimiento seleccionado; este modelo de navegación no infiere disponibilidad ni deber de examen."
         },
         "decision_dependency": {
-          "en": "For ETJ 163/2020, the finite decision question is whether the legally competent organ must determine whether the complete civil file supports the recorded claim, defence, title, enforcement or relief and its appeal/finality status for the recorded object “Civil enforcement”. La Laguna court is only the recorded custodian/organ candidate and is not treated here as legally competent or obliged to act. Controlled navigation currently identifies direct files [TF-FIS-008] and contextual files [GC-APP-004, GC-APP-005, GC-APP-006, GC-APP-028, GC-CAL-002, GC-CIV-027, GC-CONT-025, GC-FIS-013, GC-FIS-017, GC-FIS-018, GC-GOV-019, GC-GOV-020, GC-JUD-001, LZ-JUD-001, LZ-JUD-005, TF-CIV-001, TF-CRI-003, VAL-CIV-001]. Their presence does not establish receipt, admissibility or a duty to consider them.",
-          "es": "Para ETJ 163/2020, la cuestión decisoria finita es si el órgano legalmente competente debe determinar si el expediente civil completo sustenta la pretensión, defensa, título, ejecución o tutela registradas y su estado de recurso/firmeza respecto del objeto registrado «Civil enforcement». La Laguna court es solo el candidato registrado como custodio/órgano y aquí no se le atribuye competencia jurídica ni obligación de actuar. La navegación controlada identifica actualmente expedientes directos [TF-FIS-008] y contextuales [GC-APP-004, GC-APP-005, GC-APP-006, GC-APP-028, GC-CAL-002, GC-CIV-027, GC-CONT-025, GC-FIS-013, GC-FIS-017, GC-FIS-018, GC-GOV-019, GC-GOV-020, GC-JUD-001, LZ-JUD-001, LZ-JUD-005, TF-CIV-001, TF-CRI-003, VAL-CIV-001]. Su presencia no acredita recepción, admisibilidad ni deber de examinarlos."
+          "en": "For ETJ 163/2020, the finite decision question is whether the legally competent organ must determine whether the complete civil file supports the recorded claim, defence, title, enforcement or relief and its appeal/finality status for the recorded object “Civil enforcement underlying DP 748/2026”. Plaza nº 3 del Tribunal de Instancia (Sección Civil) de San Cristóbal de La Laguna is only the recorded custodian/organ candidate and is not treated here as legally competent or obliged to act. Controlled navigation currently identifies direct files [TF-CIV-001, TF-CRI-003, TF-FIS-008] and contextual files [GC-APP-004, GC-APP-005, GC-APP-006, GC-APP-028, GC-CAL-002, GC-CIV-027, GC-CONT-025, GC-FIS-013, GC-FIS-017, GC-FIS-018, GC-GOV-019, GC-GOV-020, GC-JUD-001, LZ-JUD-001, LZ-JUD-005, TF-CIV-001, TF-CRI-003, VAL-CIV-001]. Their presence does not establish receipt, admissibility or a duty to consider them.",
+          "es": "Para ETJ 163/2020, la cuestión decisoria finita es si el órgano legalmente competente debe determinar si el expediente civil completo sustenta la pretensión, defensa, título, ejecución o tutela registradas y su estado de recurso/firmeza respecto del objeto registrado «Civil enforcement underlying DP 748/2026». Plaza nº 3 del Tribunal de Instancia (Sección Civil) de San Cristóbal de La Laguna es solo el candidato registrado como custodio/órgano y aquí no se le atribuye competencia jurídica ni obligación de actuar. La navegación controlada identifica actualmente expedientes directos [TF-CIV-001, TF-CRI-003, TF-FIS-008] y contextuales [GC-APP-004, GC-APP-005, GC-APP-006, GC-APP-028, GC-CAL-002, GC-CIV-027, GC-CONT-025, GC-FIS-013, GC-FIS-017, GC-FIS-018, GC-GOV-019, GC-GOV-020, GC-JUD-001, LZ-JUD-001, LZ-JUD-005, TF-CIV-001, TF-CRI-003, VAL-CIV-001]. Su presencia no acredita recepción, admisibilidad ni deber de examinarlos."
         },
         "contrary_explanation": {
-          "en": "For ETJ 163/2020, the strongest hypothetical innocent or contrary explanation could be a lawful application of party scope, title, standing, res judicata, evidence, procedural discretion, enforcement or finality rules, but only if the primary record establishes that the legally competent organ applied it to “Civil enforcement”. No act is attributed by this model to the recorded candidate La Laguna court. A different treatment, missing public inventory or related-file membership alone does not establish concealment, coordination, error or wrongdoing.",
-          "es": "Para ETJ 163/2020, la explicación inocente o contraria hipotética más fuerte podría ser una aplicación lícita de reglas sobre partes, título, legitimación, cosa juzgada, prueba, discrecionalidad procesal, ejecución o firmeza, pero solo si la fuente primaria acredita que el órgano legalmente competente la aplicó a «Civil enforcement». Este modelo no atribuye actuación alguna al candidato registrado La Laguna court. Un tratamiento distinto, la falta de inventario público o la pertenencia a expedientes relacionados no acreditan por sí solos ocultación, coordinación, error ni ilicitud."
+          "en": "For ETJ 163/2020, the strongest hypothetical innocent or contrary explanation could be a lawful application of party scope, title, standing, res judicata, evidence, procedural discretion, enforcement or finality rules, but only if the primary record establishes that the legally competent organ applied it to “Civil enforcement underlying DP 748/2026”. No act is attributed by this model to the recorded candidate Plaza nº 3 del Tribunal de Instancia (Sección Civil) de San Cristóbal de La Laguna. A different treatment, missing public inventory or related-file membership alone does not establish concealment, coordination, error or wrongdoing.",
+          "es": "Para ETJ 163/2020, la explicación inocente o contraria hipotética más fuerte podría ser una aplicación lícita de reglas sobre partes, título, legitimación, cosa juzgada, prueba, discrecionalidad procesal, ejecución o firmeza, pero solo si la fuente primaria acredita que el órgano legalmente competente la aplicó a «Civil enforcement underlying DP 748/2026». Este modelo no atribuye actuación alguna al candidato registrado Plaza nº 3 del Tribunal de Instancia (Sección Civil) de San Cristóbal de La Laguna. Un tratamiento distinto, la falta de inventario público o la pertenencia a expedientes relacionados no acreditan por sí solos ocultación, coordinación, error ni ilicitud."
         },
         "strongest_contrary_or_innocent_explanation": {
-          "en": "For ETJ 163/2020, the strongest hypothetical innocent or contrary explanation could be a lawful application of party scope, title, standing, res judicata, evidence, procedural discretion, enforcement or finality rules, but only if the primary record establishes that the legally competent organ applied it to “Civil enforcement”. No act is attributed by this model to the recorded candidate La Laguna court. A different treatment, missing public inventory or related-file membership alone does not establish concealment, coordination, error or wrongdoing.",
-          "es": "Para ETJ 163/2020, la explicación inocente o contraria hipotética más fuerte podría ser una aplicación lícita de reglas sobre partes, título, legitimación, cosa juzgada, prueba, discrecionalidad procesal, ejecución o firmeza, pero solo si la fuente primaria acredita que el órgano legalmente competente la aplicó a «Civil enforcement». Este modelo no atribuye actuación alguna al candidato registrado La Laguna court. Un tratamiento distinto, la falta de inventario público o la pertenencia a expedientes relacionados no acreditan por sí solos ocultación, coordinación, error ni ilicitud."
+          "en": "For ETJ 163/2020, the strongest hypothetical innocent or contrary explanation could be a lawful application of party scope, title, standing, res judicata, evidence, procedural discretion, enforcement or finality rules, but only if the primary record establishes that the legally competent organ applied it to “Civil enforcement underlying DP 748/2026”. No act is attributed by this model to the recorded candidate Plaza nº 3 del Tribunal de Instancia (Sección Civil) de San Cristóbal de La Laguna. A different treatment, missing public inventory or related-file membership alone does not establish concealment, coordination, error or wrongdoing.",
+          "es": "Para ETJ 163/2020, la explicación inocente o contraria hipotética más fuerte podría ser una aplicación lícita de reglas sobre partes, título, legitimación, cosa juzgada, prueba, discrecionalidad procesal, ejecución o firmeza, pero solo si la fuente primaria acredita que el órgano legalmente competente la aplicó a «Civil enforcement underlying DP 748/2026». Este modelo no atribuye actuación alguna al candidato registrado Plaza nº 3 del Tribunal de Instancia (Sección Civil) de San Cristóbal de La Laguna. Un tratamiento distinto, la falta de inventario público o la pertenencia a expedientes relacionados no acreditan por sí solos ocultación, coordinación, error ni ilicitud."
         },
         "if_confirmed": {
-          "en": "If the requested primary record confirms the recorded object, treatment and current status in ETJ 163/2020, the legally competent organ could determine within its powers whether to retain or revise the recorded civil, title, enforcement or appeal treatment within the competent court's powers. The recorded candidate La Laguna court is not treated as competent merely because it is named in the register. Confirmation remains file-specific and does not establish another file's treatment, personal knowledge, causation, wrongdoing or liability.",
-          "es": "Si la fuente primaria solicitada confirma el objeto, tratamiento y estado actual registrados en ETJ 163/2020, el órgano legalmente competente podría determinar dentro de sus potestades si procede mantener o revisar el tratamiento civil, de título, ejecución o recurso registrado dentro de las potestades del órgano competente. El candidato registrado La Laguna court no se considera competente por el mero hecho de figurar en el registro. La confirmación sigue siendo específica del expediente y no acredita el tratamiento de otro expediente, conocimiento personal, causalidad, ilicitud ni responsabilidad."
+          "en": "If the requested primary record confirms the recorded object, treatment and current status in ETJ 163/2020, the legally competent organ could determine within its powers whether to retain or revise the recorded civil, title, enforcement or appeal treatment within the competent court's powers. The recorded candidate Plaza nº 3 del Tribunal de Instancia (Sección Civil) de San Cristóbal de La Laguna is not treated as competent merely because it is named in the register. Confirmation remains file-specific and does not establish another file's treatment, personal knowledge, causation, wrongdoing or liability.",
+          "es": "Si la fuente primaria solicitada confirma el objeto, tratamiento y estado actual registrados en ETJ 163/2020, el órgano legalmente competente podría determinar dentro de sus potestades si procede mantener o revisar el tratamiento civil, de título, ejecución o recurso registrado dentro de las potestades del órgano competente. El candidato registrado Plaza nº 3 del Tribunal de Instancia (Sección Civil) de San Cristóbal de La Laguna no se considera competente por el mero hecho de figurar en el registro. La confirmación sigue siendo específica del expediente y no acredita el tratamiento de otro expediente, conocimiento personal, causalidad, ilicitud ni responsabilidad."
         },
         "if_refuted": {
-          "en": "If the primary record refutes the recorded object, treatment or status in ETJ 163/2020, that discrepancy would call for correction of the canonical record and every affected direct/context classification, preservation of the contrary source, and assessment by the legally competent organ of any file-specific consequence. The recorded candidate La Laguna court is not treated as competent or required to act by this model.",
-          "es": "Si la fuente primaria refuta el objeto, tratamiento o estado registrado en ETJ 163/2020, esa discrepancia exigiría corregir el registro canónico y toda clasificación directa/contextual afectada, conservar la fuente contraria y que el órgano legalmente competente valore cualquier consecuencia específica del expediente. Este modelo no considera competente ni obliga a actuar al candidato registrado La Laguna court."
+          "en": "If the primary record refutes the recorded object, treatment or status in ETJ 163/2020, that discrepancy would call for correction of the canonical record and every affected direct/context classification, preservation of the contrary source, and assessment by the legally competent organ of any file-specific consequence. The recorded candidate Plaza nº 3 del Tribunal de Instancia (Sección Civil) de San Cristóbal de La Laguna is not treated as competent or required to act by this model.",
+          "es": "Si la fuente primaria refuta el objeto, tratamiento o estado registrado en ETJ 163/2020, esa discrepancia exigiría corregir el registro canónico y toda clasificación directa/contextual afectada, conservar la fuente contraria y que el órgano legalmente competente valore cualquier consecuencia específica del expediente. Este modelo no considera competente ni obliga a actuar al candidato registrado Plaza nº 3 del Tribunal de Instancia (Sección Civil) de San Cristóbal de La Laguna."
         },
         "receipt_knowledge": {
           "classification": "EXPLICIT_SOURCE_NOT_LOCATED",
@@ -27879,7 +28055,9 @@
       "master_id": "TF-CRI-003",
       "primary_classification": "DIRECT_PROCEDURAL_EDGE",
       "relationship_ids": [
-        "REL-LINKED_PROCEEDING-TF-FIS-008-TF-CRI-003"
+        "REL-LINKED_PROCEEDING-TF-CIV-001-TF-CRI-003",
+        "REL-LINKED_PROCEEDING-TF-CIV-002-TF-CRI-003",
+        "REL-LINKED_PROCEEDING-TF-CRI-003-TF-FIS-008"
       ],
       "context_cluster_ids": [
         "CTX-PRISM-P06"
@@ -27888,13 +28066,15 @@
       "why_es": "Al menos una relación directa está respaldada por un campo canónico expreso Parent_Master_ID, Linked_Proceedings o Appeal_or_Review.",
       "limitations_en": "This disposition controls navigation only. It does not prove joinder, receipt, admissibility, knowledge, agreement, causation, wrongdoing or liability.",
       "limitations_es": "Esta clasificación controla solo la navegación. No prueba acumulación, recepción, admisibilidad, conocimiento, acuerdo, causalidad, ilicitud ni responsabilidad.",
-      "next_source_needed_en": "Complete complaint, archive order, reform, Fiscalía report, appeal and current status",
+      "next_source_needed_en": "P0 protective allegations; last-notification certificate; Article 766.4 processing; remittal/roll; signed original of 24-Mar Auto; finite actor-finca-effect evidence",
       "next_source_needed_es": "Denuncia completa, auto de archivo, recurso de reforma, informe de Fiscalía, apelación y estado actual.",
-      "source_status": "VERIFIED_PROCEDURAL",
+      "source_status": "VERIFIED_PRIMARY",
       "basis": {
         "kind": "DIRECT_RELATIONSHIP_MEMBERSHIP",
         "relationship_ids": [
-          "REL-LINKED_PROCEEDING-TF-FIS-008-TF-CRI-003"
+          "REL-LINKED_PROCEEDING-TF-CIV-001-TF-CRI-003",
+          "REL-LINKED_PROCEEDING-TF-CIV-002-TF-CRI-003",
+          "REL-LINKED_PROCEEDING-TF-CRI-003-TF-FIS-008"
         ]
       },
       "finite_test": {
@@ -27903,16 +28083,16 @@
         "family_template_id": "CRIMINAL_FILE_DECISION",
         "family_taxonomy_only": true,
         "question": {
-          "en": "For DP 748/2026, what exact source establishes Criminal complaint/investigation route; what complaint, evidence and prosecution/court material was before Juzgado de Instrucción nº 4 La Laguna; what was decided or referred; and what is the current review/finality status?",
-          "es": "Para DP 748/2026, ¿qué fuente exacta acredita el objeto registrado; qué denuncia, prueba y material fiscal/judicial estuvo ante Juzgado de Instrucción nº 4 La Laguna; qué se decidió o remitió; y cuál es el estado actual de revisión/firmeza?"
+          "en": "For DP 748/2026, what exact source establishes Diligencias Previas; provisional dismissal and appeal/reopening lane; what complaint, evidence and prosecution/court material was before Juzgado de Instrucción nº 4 de San Cristóbal de La Laguna; what was decided or referred; and what is the current review/finality status?",
+          "es": "Para DP 748/2026, ¿qué fuente exacta acredita el objeto registrado; qué denuncia, prueba y material fiscal/judicial estuvo ante Juzgado de Instrucción nº 4 de San Cristóbal de La Laguna; qué se decidió o remitió; y cuál es el estado actual de revisión/firmeza?"
         },
-        "recorded_object": "Criminal complaint/investigation route",
+        "recorded_object": "Diligencias Previas; provisional dismissal and appeal/reopening lane",
         "attribution": "DOCUMENTED_PROCEDURAL_RECORD_WITH_OPEN_COMPLETION",
         "source_needed": {
-          "en": "Complete complaint, archive order, reform, Fiscalía report, appeal and current status",
+          "en": "P0 protective allegations; last-notification certificate; Article 766.4 processing; remittal/roll; signed original of 24-Mar Auto; finite actor-finca-effect evidence",
           "es": "Denuncia completa, auto de archivo, recurso de reforma, informe de Fiscalía, apelación y estado actual."
         },
-        "current_source_status": "VERIFIED_PROCEDURAL",
+        "current_source_status": "VERIFIED_PRIMARY",
         "source_needed_status": "STATUS_UNRESOLVED",
         "source_refs": [
           {
@@ -27934,12 +28114,14 @@
           }
         ],
         "competent_organ": {
-          "recorded_candidate": "Juzgado de Instrucción nº 4 La Laguna",
+          "recorded_candidate": "Plaza nº 4 del Tribunal de Instancia (Sección Instrucción) de San Cristóbal de La Laguna",
           "basis_field": "Current_Custodian",
           "status": "RECORDED_CURRENT_CUSTODIAN"
         },
         "related_proceedings": {
           "direct_master_ids": [
+            "TF-CIV-001",
+            "TF-CIV-002",
             "TF-FIS-008"
           ],
           "context_master_ids": [
@@ -27952,6 +28134,8 @@
             "CTX-PRISM-P06"
           ],
           "direct": [
+            "TF-CIV-001",
+            "TF-CIV-002",
             "TF-FIS-008"
           ],
           "context": [
@@ -27971,24 +28155,24 @@
           "es": "La disponibilidad lícita, admisibilidad o inclusión en el ámbito de otro expediente o fuente debe determinarse en el procedimiento seleccionado; este modelo de navegación no infiere disponibilidad ni deber de examen."
         },
         "decision_dependency": {
-          "en": "For DP 748/2026, the finite decision question is whether the legally competent organ must determine whether the complete criminal file supports its admission, investigative steps, closure, review and current finality for the recorded object “Criminal complaint/investigation route”. Juzgado de Instrucción nº 4 La Laguna is only the recorded custodian/organ candidate and is not treated here as legally competent or obliged to act. Controlled navigation currently identifies direct files [TF-FIS-008] and contextual files [GC-FIS-018, GC-JUD-001, TF-CIV-001, TF-CIV-002]. Their presence does not establish receipt, admissibility or a duty to consider them.",
-          "es": "Para DP 748/2026, la cuestión decisoria finita es si el órgano legalmente competente debe determinar si el expediente penal completo sustenta su admisión, diligencias, archivo, revisión y firmeza actual respecto del objeto registrado «Criminal complaint/investigation route». Juzgado de Instrucción nº 4 La Laguna es solo el candidato registrado como custodio/órgano y aquí no se le atribuye competencia jurídica ni obligación de actuar. La navegación controlada identifica actualmente expedientes directos [TF-FIS-008] y contextuales [GC-FIS-018, GC-JUD-001, TF-CIV-001, TF-CIV-002]. Su presencia no acredita recepción, admisibilidad ni deber de examinarlos."
+          "en": "For DP 748/2026, the finite decision question is whether the legally competent organ must determine whether the complete criminal file supports its admission, investigative steps, closure, review and current finality for the recorded object “Diligencias Previas; provisional dismissal and appeal/reopening lane”. Plaza nº 4 del Tribunal de Instancia (Sección Instrucción) de San Cristóbal de La Laguna is only the recorded custodian/organ candidate and is not treated here as legally competent or obliged to act. Controlled navigation currently identifies direct files [TF-CIV-001, TF-CIV-002, TF-FIS-008] and contextual files [GC-FIS-018, GC-JUD-001, TF-CIV-001, TF-CIV-002]. Their presence does not establish receipt, admissibility or a duty to consider them.",
+          "es": "Para DP 748/2026, la cuestión decisoria finita es si el órgano legalmente competente debe determinar si el expediente penal completo sustenta su admisión, diligencias, archivo, revisión y firmeza actual respecto del objeto registrado «Diligencias Previas; provisional dismissal and appeal/reopening lane». Plaza nº 4 del Tribunal de Instancia (Sección Instrucción) de San Cristóbal de La Laguna es solo el candidato registrado como custodio/órgano y aquí no se le atribuye competencia jurídica ni obligación de actuar. La navegación controlada identifica actualmente expedientes directos [TF-CIV-001, TF-CIV-002, TF-FIS-008] y contextuales [GC-FIS-018, GC-JUD-001, TF-CIV-001, TF-CIV-002]. Su presencia no acredita recepción, admisibilidad ni deber de examinarlos."
         },
         "contrary_explanation": {
-          "en": "For DP 748/2026, the strongest hypothetical innocent or contrary explanation could be a lawful application of competence, duplication or judicialisation rules, the criminal threshold, admissibility, evidential sufficiency or procedural finality, but only if the primary record establishes that the legally competent organ applied it to “Criminal complaint/investigation route”. No act is attributed by this model to the recorded candidate Juzgado de Instrucción nº 4 La Laguna. A different treatment, missing public inventory or related-file membership alone does not establish concealment, coordination, error or wrongdoing.",
-          "es": "Para DP 748/2026, la explicación inocente o contraria hipotética más fuerte podría ser una aplicación lícita de reglas de competencia, duplicidad o judicialización, umbral penal, admisibilidad, suficiencia probatoria o firmeza procesal, pero solo si la fuente primaria acredita que el órgano legalmente competente la aplicó a «Criminal complaint/investigation route». Este modelo no atribuye actuación alguna al candidato registrado Juzgado de Instrucción nº 4 La Laguna. Un tratamiento distinto, la falta de inventario público o la pertenencia a expedientes relacionados no acreditan por sí solos ocultación, coordinación, error ni ilicitud."
+          "en": "For DP 748/2026, the strongest hypothetical innocent or contrary explanation could be a lawful application of competence, duplication or judicialisation rules, the criminal threshold, admissibility, evidential sufficiency or procedural finality, but only if the primary record establishes that the legally competent organ applied it to “Diligencias Previas; provisional dismissal and appeal/reopening lane”. No act is attributed by this model to the recorded candidate Plaza nº 4 del Tribunal de Instancia (Sección Instrucción) de San Cristóbal de La Laguna. A different treatment, missing public inventory or related-file membership alone does not establish concealment, coordination, error or wrongdoing.",
+          "es": "Para DP 748/2026, la explicación inocente o contraria hipotética más fuerte podría ser una aplicación lícita de reglas de competencia, duplicidad o judicialización, umbral penal, admisibilidad, suficiencia probatoria o firmeza procesal, pero solo si la fuente primaria acredita que el órgano legalmente competente la aplicó a «Diligencias Previas; provisional dismissal and appeal/reopening lane». Este modelo no atribuye actuación alguna al candidato registrado Plaza nº 4 del Tribunal de Instancia (Sección Instrucción) de San Cristóbal de La Laguna. Un tratamiento distinto, la falta de inventario público o la pertenencia a expedientes relacionados no acreditan por sí solos ocultación, coordinación, error ni ilicitud."
         },
         "strongest_contrary_or_innocent_explanation": {
-          "en": "For DP 748/2026, the strongest hypothetical innocent or contrary explanation could be a lawful application of competence, duplication or judicialisation rules, the criminal threshold, admissibility, evidential sufficiency or procedural finality, but only if the primary record establishes that the legally competent organ applied it to “Criminal complaint/investigation route”. No act is attributed by this model to the recorded candidate Juzgado de Instrucción nº 4 La Laguna. A different treatment, missing public inventory or related-file membership alone does not establish concealment, coordination, error or wrongdoing.",
-          "es": "Para DP 748/2026, la explicación inocente o contraria hipotética más fuerte podría ser una aplicación lícita de reglas de competencia, duplicidad o judicialización, umbral penal, admisibilidad, suficiencia probatoria o firmeza procesal, pero solo si la fuente primaria acredita que el órgano legalmente competente la aplicó a «Criminal complaint/investigation route». Este modelo no atribuye actuación alguna al candidato registrado Juzgado de Instrucción nº 4 La Laguna. Un tratamiento distinto, la falta de inventario público o la pertenencia a expedientes relacionados no acreditan por sí solos ocultación, coordinación, error ni ilicitud."
+          "en": "For DP 748/2026, the strongest hypothetical innocent or contrary explanation could be a lawful application of competence, duplication or judicialisation rules, the criminal threshold, admissibility, evidential sufficiency or procedural finality, but only if the primary record establishes that the legally competent organ applied it to “Diligencias Previas; provisional dismissal and appeal/reopening lane”. No act is attributed by this model to the recorded candidate Plaza nº 4 del Tribunal de Instancia (Sección Instrucción) de San Cristóbal de La Laguna. A different treatment, missing public inventory or related-file membership alone does not establish concealment, coordination, error or wrongdoing.",
+          "es": "Para DP 748/2026, la explicación inocente o contraria hipotética más fuerte podría ser una aplicación lícita de reglas de competencia, duplicidad o judicialización, umbral penal, admisibilidad, suficiencia probatoria o firmeza procesal, pero solo si la fuente primaria acredita que el órgano legalmente competente la aplicó a «Diligencias Previas; provisional dismissal and appeal/reopening lane». Este modelo no atribuye actuación alguna al candidato registrado Plaza nº 4 del Tribunal de Instancia (Sección Instrucción) de San Cristóbal de La Laguna. Un tratamiento distinto, la falta de inventario público o la pertenencia a expedientes relacionados no acreditan por sí solos ocultación, coordinación, error ni ilicitud."
         },
         "if_confirmed": {
-          "en": "If the requested primary record confirms the recorded object, treatment and current status in DP 748/2026, the legally competent organ could determine within its powers whether to retain or revise the recorded admission/investigation/closure/review treatment and identify any next investigative or judicial step. The recorded candidate Juzgado de Instrucción nº 4 La Laguna is not treated as competent merely because it is named in the register. Confirmation remains file-specific and does not establish another file's treatment, personal knowledge, causation, wrongdoing or liability.",
-          "es": "Si la fuente primaria solicitada confirma el objeto, tratamiento y estado actual registrados en DP 748/2026, el órgano legalmente competente podría determinar dentro de sus potestades si procede mantener o revisar el tratamiento registrado de admisión/investigación/archivo/revisión e identificar cualquier siguiente diligencia o actuación judicial. El candidato registrado Juzgado de Instrucción nº 4 La Laguna no se considera competente por el mero hecho de figurar en el registro. La confirmación sigue siendo específica del expediente y no acredita el tratamiento de otro expediente, conocimiento personal, causalidad, ilicitud ni responsabilidad."
+          "en": "If the requested primary record confirms the recorded object, treatment and current status in DP 748/2026, the legally competent organ could determine within its powers whether to retain or revise the recorded admission/investigation/closure/review treatment and identify any next investigative or judicial step. The recorded candidate Plaza nº 4 del Tribunal de Instancia (Sección Instrucción) de San Cristóbal de La Laguna is not treated as competent merely because it is named in the register. Confirmation remains file-specific and does not establish another file's treatment, personal knowledge, causation, wrongdoing or liability.",
+          "es": "Si la fuente primaria solicitada confirma el objeto, tratamiento y estado actual registrados en DP 748/2026, el órgano legalmente competente podría determinar dentro de sus potestades si procede mantener o revisar el tratamiento registrado de admisión/investigación/archivo/revisión e identificar cualquier siguiente diligencia o actuación judicial. El candidato registrado Plaza nº 4 del Tribunal de Instancia (Sección Instrucción) de San Cristóbal de La Laguna no se considera competente por el mero hecho de figurar en el registro. La confirmación sigue siendo específica del expediente y no acredita el tratamiento de otro expediente, conocimiento personal, causalidad, ilicitud ni responsabilidad."
         },
         "if_refuted": {
-          "en": "If the primary record refutes the recorded object, treatment or status in DP 748/2026, that discrepancy would call for correction of the canonical record and every affected direct/context classification, preservation of the contrary source, and assessment by the legally competent organ of any file-specific consequence. The recorded candidate Juzgado de Instrucción nº 4 La Laguna is not treated as competent or required to act by this model.",
-          "es": "Si la fuente primaria refuta el objeto, tratamiento o estado registrado en DP 748/2026, esa discrepancia exigiría corregir el registro canónico y toda clasificación directa/contextual afectada, conservar la fuente contraria y que el órgano legalmente competente valore cualquier consecuencia específica del expediente. Este modelo no considera competente ni obliga a actuar al candidato registrado Juzgado de Instrucción nº 4 La Laguna."
+          "en": "If the primary record refutes the recorded object, treatment or status in DP 748/2026, that discrepancy would call for correction of the canonical record and every affected direct/context classification, preservation of the contrary source, and assessment by the legally competent organ of any file-specific consequence. The recorded candidate Plaza nº 4 del Tribunal de Instancia (Sección Instrucción) de San Cristóbal de La Laguna is not treated as competent or required to act by this model.",
+          "es": "Si la fuente primaria refuta el objeto, tratamiento o estado registrado en DP 748/2026, esa discrepancia exigiría corregir el registro canónico y toda clasificación directa/contextual afectada, conservar la fuente contraria y que el órgano legalmente competente valore cualquier consecuencia específica del expediente. Este modelo no considera competente ni obliga a actuar al candidato registrado Plaza nº 4 del Tribunal de Instancia (Sección Instrucción) de San Cristóbal de La Laguna."
         },
         "receipt_knowledge": {
           "classification": "EXPLICIT_SOURCE_NOT_LOCATED",
@@ -37215,9 +37399,9 @@
       "master_id": "TF-FIS-008",
       "primary_classification": "DIRECT_PROCEDURAL_EDGE",
       "relationship_ids": [
+        "REL-LINKED_PROCEEDING-TF-CRI-003-TF-FIS-008",
         "REL-LINKED_PROCEEDING-TF-FIS-008-TF-CIV-001",
         "REL-LINKED_PROCEEDING-TF-FIS-008-TF-CIV-002",
-        "REL-LINKED_PROCEEDING-TF-FIS-008-TF-CRI-003",
         "REL-LINKED_PROCEEDING-TF-FIS-008-TF-FIS-007"
       ],
       "context_cluster_ids": [
@@ -37233,9 +37417,9 @@
       "basis": {
         "kind": "DIRECT_RELATIONSHIP_MEMBERSHIP",
         "relationship_ids": [
+          "REL-LINKED_PROCEEDING-TF-CRI-003-TF-FIS-008",
           "REL-LINKED_PROCEEDING-TF-FIS-008-TF-CIV-001",
           "REL-LINKED_PROCEEDING-TF-FIS-008-TF-CIV-002",
-          "REL-LINKED_PROCEEDING-TF-FIS-008-TF-CRI-003",
           "REL-LINKED_PROCEEDING-TF-FIS-008-TF-FIS-007"
         ]
       },
@@ -39992,11 +40176,11 @@
       "EXPLICIT_RELATIONSHIP_GAP": 1
     },
     "node_disposition_count": 97,
-    "direct_relationship_count": 33,
-    "direct_relationship_source_verified_pair_count": 31,
+    "direct_relationship_count": 36,
+    "direct_relationship_source_verified_pair_count": 34,
     "direct_relationship_source_reported_pending_pair_count": 2,
-    "direct_source_assertion_count": 40,
-    "direct_source_verified_assertion_count": 38,
+    "direct_source_assertion_count": 48,
+    "direct_source_verified_assertion_count": 46,
     "direct_source_reported_pending_assertion_count": 2,
     "context_cluster_count": 26,
     "recorded_connection_cluster_count": 7,

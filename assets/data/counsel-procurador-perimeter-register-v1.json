@@ -1,6 +1,6 @@
 {
   "schema": "por-derecho-counsel-procurador-perimeter-register-v1",
-  "as_of": "2026-08-30",
+  "as_of": "2026-09-01",
   "status": "seed_control_not_complete_denominator",
   "governance": "archive/COUNSEL_PROCURADOR_FILING_LINEAGE_GOVERNANCE_30AUG2026.md",
   "rules": {
@@ -70,6 +70,40 @@
       "our_perimeter": true,
       "working_relationship": "professional_pair_with_Javier",
       "identity_status": "current_correspondence_source_verified_individual_filing_attribution_open"
+    },
+    {
+      "display_name": "Carlos Llamas Sanz",
+      "caepr_id": "PD-SP-P-0062",
+      "classification": "our_counsel",
+      "our_perimeter": true,
+      "identity_status": "primary_procedural_source_verified_DP748_ETJ163",
+      "period_specific_clients": [
+        "Gil Marer — DP 748/2026",
+        "Matkator, S.L. — ETJ 163/2020"
+      ],
+      "boundary": "Each client/proceeding/act pairing is source-specific; no permanent pairing, authority instrument or wider mandate is inferred."
+    },
+    {
+      "display_name": "Teresa Morenés Basabe",
+      "caepr_id": "PD-SP-P-0158",
+      "classification": "external_executing_creditor_counsel",
+      "our_perimeter": false,
+      "identity_status": "signed_ETJ163_pleadings_verified",
+      "period_specific_clients": [
+        "Cuatrecasas, Gonçalves Pereira, S.L.P. — ETJ 163/2020"
+      ],
+      "boundary": "Signed ETJ acts only; identity and representation do not establish truth, instructions, knowledge outside the documents, intent, wrongdoing or liability."
+    },
+    {
+      "display_name": "José Javier Bueno Mesa",
+      "caepr_id": "PD-SP-P-0159",
+      "classification": "external_executing_creditor_procurador",
+      "our_perimeter": false,
+      "identity_status": "signed_ETJ163_pleadings_verified",
+      "period_specific_clients": [
+        "Cuatrecasas, Gonçalves Pereira, S.L.P. — ETJ 163/2020"
+      ],
+      "boundary": "Act-specific procurador capacity only; no permanent lawyer pairing, knowledge transfer, intent, wrongdoing or liability is inferred."
     },
     {
       "display_name": "Juan Daniel Fajardo Expósito", "classification": "external_or_party_specific_counsel", "our_perimeter": false,

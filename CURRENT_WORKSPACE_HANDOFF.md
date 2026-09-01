@@ -1,16 +1,25 @@
 # Active workspace continuity index
 
-**Current workspace:** `PD-WS-20260901-0003`  
-**Current continuation pointer:** `PD-WCH-20260901-AWP-RUNTIME-001`  
+**Current workspace:** `PD-WS-20260901-0005`
+**Current continuation pointer:** `PD-WCH-20260901-DP748-P0-001`
 **Status:** `DELETION_SAFE_WITH_OPEN_WORK`
 
-**Implementation state:** PR `#1317` merged the runtime to `main` at `ca501751410bb3f0ad928c2b16d6d885551e7ea3`; PR `#1323` merged the source-safe closeout at `aace738d2a6f913c897f20cfc468349cb038c745`, and a fresh-thread bootstrap from that merge passed.
-**Topic:** automatic workspace persistence runtime and private-vault implementation  
+**Implementation state:** DP 748/2026 P0 appeal/reopening package reconciled against current `main` `d1817de1b8613a8e0d340f1453acda99e440e5af`; it inherits the PR #1326 La Laguna identities at `273bb621de7db5473b1223fdbc080f9c733dd038`. Its provisional `0004` workspace ID was renumbered to `0005` because PR #1328 canonically occupied `0004` first. Governed PR state is recorded in the detailed handoff.
+**Topic:** DP 748/2026 appeal, reopening and ETJ 163/2020 source mastery
 **Pointer semantics:** most recently checkpointed/default workspace; **not exclusive** and not a lock over concurrent workspaces.
 
 A ChatGPT thread is a temporary working surface. A `PD-WS-*` workspace is the durable continuity object. More than one substantive workspace may be active or preserved at the same time.
 
 ## Active and recently preserved workspaces
+
+### `PD-WS-20260901-0005` — DP 748/2026 appeal/reopening
+
+Read:
+
+1. `archive/handoffs/2026-09-01-dp748-appeal-reopening-workspace-handoff.md`
+2. `archive/DP748_2026_APPEAL_REOPENING_SOURCE_CONTROL_CLOSEOUT_01SEP2026.md`
+3. `assets/data/dp748-2026-appeal-reopening-control-v1.json`
+4. the canonical Master/CAEPR/counsel/procurador/gap controls named there.
 
 ### `PD-WS-20260901-0004` — PwC / Carlos Saavedra ^ completeness
 

@@ -1,6 +1,6 @@
 {
   "schema": "por-derecho-counsel-filing-register-v1",
-  "as_of": "2026-08-30",
+  "as_of": "2026-09-01",
   "status": "initialized_not_complete_denominator",
   "governance": "archive/COUNSEL_PROCURADOR_FILING_LINEAGE_GOVERNANCE_30AUG2026.md",
   "proceedings_protocol": "archive/PROCEEDINGS_MASTER_REGISTER_PROTOCOL.md",
@@ -161,6 +161,262 @@
       "filings": []
     },
     {
+      "display_name": "Carlos Llamas Sanz",
+      "caepr_id": "PD-SP-P-0062",
+      "side_perimeter": "our_counsel",
+      "our_perimeter": true,
+      "register_status": "DP748_ETJ_primary_source_population_started_denominator_not_complete",
+      "located_appearances": [
+        {
+          "proceeding_id": "DP 748/2026",
+          "client_party": "Gil Marer",
+          "procurador": "Adriana Hernández Díaz",
+          "source_ref": "assets/data/dp748-2026-appeal-reopening-control-v1.json"
+        },
+        {
+          "proceeding_id": "ETJ 163/2020",
+          "client_party": "MATKATOR, S.L.",
+          "procurador": "Adriana Hernández Díaz",
+          "source_ref": "ETJ163-SRC-REPOSICION-20260626"
+        }
+      ],
+      "filings": [
+        {
+          "filing_id": "DP748-2026-GIL-20260417-REFORMA-SUB-APELACION",
+          "lawyer": "Carlos Llamas Sanz",
+          "side_perimeter": "our_counsel",
+          "client_party": "Gil Marer",
+          "procurador": "Adriana Hernández Díaz",
+          "procurador_status": "verified_in_signed_pleading_and_primary_lexnet_receipt",
+          "authority_personacion_status": "pleading_states_representation_accredited_and_court_accepts_filing_underlying_poder_apud_acta_not_separately_registered",
+          "proceeding_id": "DP 748/2026",
+          "pieza_incidente": "recurso_de_reforma_y_subsidiario_de_apelacion",
+          "court_body": "Plaza nº 4 del Tribunal de Instancia (Sección Instrucción) de San Cristóbal de La Laguna",
+          "filing_date": "2026-04-17",
+          "presentation_datetime": "2026-04-17 14:29:10",
+          "filing_title": "Recurso de reforma y subsidiario de apelación contra Auto 454/2026",
+          "document_ref": "DP748-SRC-REFORMA-APELACION-20260417",
+          "position_relief": "Reform of the provisional dismissal and, subsidiarily, appeal; exact grounds and relief remain controlled by the signed pleading.",
+          "evidence_refs": [
+            "DP748-SRC-REFORMA-APELACION-20260417",
+            "DP748-SRC-LEXNET-20260417",
+            "DP748-SRC-PROVIDENCIA-20260520",
+            "DP748-SRC-AUTO-20260716"
+          ],
+          "court_laj_response_ref": "DP748-2026-20260520-PROVIDENCIA; DP748-2026-20260716-AUTO",
+          "court_laj_response_status": "20-May Providencia records reform and subsidiary appeal as interposed in time and form; 16-Jul Auto partly upholds reform for lack of reasons and otherwise maintains provisional dismissal",
+          "result": "reforma_partly_upheld_reasoning_defect_archive_provisional_maintained",
+          "appeal_followup_ref": "TF-APP-004; CP-GAP-012",
+          "appeal_followup_status": "subsidiary_appeal_admitted_but_article_766_4_transfer_transmission_and_roll_not_located",
+          "timeline_event_ref": "DP748-2026-20260417-REFORMA-SUB-APELACION",
+          "source_confidence": "high_primary_procedural_source",
+          "verification_status": "signed_filing_lexnet_presentation_and_court_admission_verified"
+        },
+        {
+          "filing_id": "DP748-2026-GIL-20260626-SINTESIS",
+          "lawyer": "Carlos Llamas Sanz",
+          "side_perimeter": "our_counsel",
+          "client_party": "Gil Marer",
+          "procurador": "Adriana Hernández Díaz",
+          "procurador_status": "verified_in_signed_pleading_and_primary_lexnet_receipt",
+          "authority_personacion_status": "representation_stated_and_accepted_in_proceeding_underlying_poder_apud_acta_not_separately_registered",
+          "proceeding_id": "DP 748/2026",
+          "pieza_incidente": "sintesis_concrecion_hechos_in_reform_lane",
+          "court_body": "Plaza nº 4 del Tribunal de Instancia (Sección Instrucción) de San Cristóbal de La Laguna",
+          "filing_date": "2026-06-25",
+          "presentation_datetime": "2026-06-26 00:22:46",
+          "filing_title": "Escrito de síntesis y concreción de los hechos denunciados",
+          "document_ref": "DP748-SRC-SINTESIS-20260625",
+          "position_relief": "Source states that the pleading is not a new appeal and seeks to order and delimit the facts for the pending reform decision.",
+          "evidence_refs": [
+            "DP748-SRC-SINTESIS-20260625",
+            "primary LexNET receipt for DP 748/2026 presented 26-Jun-2026 00:22:46",
+            "DP748-SRC-AUTO-20260716"
+          ],
+          "court_laj_response_ref": "DP748-2026-20260716-AUTO",
+          "court_laj_response_status": "later reform Auto located; individual treatment of every requested diligencia not separately stated",
+          "result": "joined_to_reform_lane_archive_provisional_maintained",
+          "appeal_followup_ref": "TF-APP-004; CP-GAP-012",
+          "appeal_followup_status": "subsidiary_appeal_processing_after_reform_decision_open",
+          "timeline_event_ref": "DP748-2026-20260626-SINTESIS",
+          "source_confidence": "high_primary_procedural_source",
+          "verification_status": "signed_filing_and_primary_lexnet_presentation_verified"
+        },
+        {
+          "filing_id": "ETJ163-2020-MATKATOR-20260626-REPOSICION-SUSPENSION",
+          "lawyer": "Carlos Llamas Sanz",
+          "side_perimeter": "our_counsel",
+          "client_party": "MATKATOR, S.L.",
+          "procurador": "Adriana Hernández Díaz",
+          "procurador_status": "verified_in_signed_pleading_and_primary_lexnet_receipt",
+          "authority_personacion_status": "pleading_states_representation_accredited_underlying_poder_apud_acta_not_separately_registered",
+          "proceeding_id": "ETJ 163/2020",
+          "pieza_incidente": "recurso_de_reposicion_against_denial_of_suspension",
+          "court_body": "Plaza nº 3 del Tribunal de Instancia (Sección Civil) de San Cristóbal de La Laguna",
+          "filing_date": "2026-06-26",
+          "presentation_datetime": "2026-06-26 14:40:08",
+          "filing_title": "Recurso de reposición contra Auto de 19-Jun-2026",
+          "document_ref": "ETJ163-SRC-REPOSICION-20260626",
+          "position_relief": "Challenges denial of suspension for criminal prejudiciality and requests reconsideration under the grounds stated in the signed pleading.",
+          "evidence_refs": [
+            "ETJ163-SRC-AUTO-20260619",
+            "ETJ163-SRC-REPOSICION-20260626",
+            "primary ETJ LexNET receipt presented 26-Jun-2026 14:40:08",
+            "ETJ163-SRC-DIOR-20260728"
+          ],
+          "court_laj_response_ref": "ETJ163-SRC-DIOR-20260728",
+          "court_laj_response_status": "reposicion admitted and five-day transfer ordered; later determination not located",
+          "result": "admitted_pending_later_determination",
+          "appeal_followup_ref": "CP-GAP-016",
+          "appeal_followup_status": "later_opposition_resolution_and_current_enforcement_status_open",
+          "timeline_event_ref": "ETJ163-2020-20260626-REPOSICION",
+          "source_confidence": "high_primary_procedural_source",
+          "verification_status": "signed_filing_lexnet_presentation_and_admission_verified"
+        }
+      ]
+    },
+    {
+      "display_name": "Teresa Morenés Basabe",
+      "caepr_id": "PD-SP-P-0158",
+      "side_perimeter": "external_executing_creditor_counsel",
+      "our_perimeter": false,
+      "register_status": "ETJ163_primary_source_population_started_denominator_not_complete",
+      "filings": [
+        {
+          "filing_id": "ETJ163-2020-CUATRECASAS-20241018-ADJUDICACION-70-CESION",
+          "lawyer": "Teresa Morenés Basabe",
+          "side_perimeter": "external_executing_creditor_counsel",
+          "client_party": "Cuatrecasas, Gonçalves Pereira, S.L.P.",
+          "procurador": "José Javier Bueno Mesa",
+          "procurador_status": "verified_by_signatures_on_primary_pleading",
+          "authority_personacion_status": "act_specific_representation_verified_underlying_authority_instrument_not_separately_registered",
+          "proceeding_id": "ETJ 163/2020",
+          "pieza_incidente": "auction_adjudication_and_assignment_reservation",
+          "court_body": "Plaza nº 3 del Tribunal de Instancia (Sección Civil) de San Cristóbal de La Laguna",
+          "filing_date": "2024-10-18",
+          "presentation_datetime": null,
+          "filing_title": "Solicitud de adjudicación por el 70 por ciento y reserva de cesión",
+          "document_ref": "ETJ163-SRC-CUATRECASAS-20241018",
+          "position_relief": "Requests adjudication at 70 percent and reserves assignment, as stated in the signed pleading.",
+          "evidence_refs": [
+            "ETJ163-SRC-CUATRECASAS-20241018",
+            "sha256:870ad117f20b4982f66ca78d7708403a94e0170febc95aca8ec0ecbdba3a08f0"
+          ],
+          "court_laj_response_ref": null,
+          "court_laj_response_status": "correlated_receipt_and_disposition_not_yet_linked",
+          "result": "request_verified_effect_open",
+          "appeal_followup_ref": null,
+          "appeal_followup_status": "later_ETJ_writings_located_final_effect_open",
+          "timeline_event_ref": "ETJ163-2020-20241018-CUATRECASAS-ADJUDICACION",
+          "source_confidence": "high_signed_primary_procedural_source",
+          "verification_status": "signed_pleading_verified_presentation_and_effect_open"
+        },
+        {
+          "filing_id": "ETJ163-2020-CUATRECASAS-20250221-IMPORTES-SALDO",
+          "lawyer": "Teresa Morenés Basabe",
+          "side_perimeter": "external_executing_creditor_counsel",
+          "client_party": "Cuatrecasas, Gonçalves Pereira, S.L.P.",
+          "procurador": "José Javier Bueno Mesa",
+          "procurador_status": "verified_by_signatures_on_primary_pleading",
+          "authority_personacion_status": "act_specific_representation_verified_underlying_authority_instrument_not_separately_registered",
+          "proceeding_id": "ETJ 163/2020",
+          "pieza_incidente": "auction_adjudication_amount_and_balance",
+          "court_body": "Plaza nº 3 del Tribunal de Instancia (Sección Civil) de San Cristóbal de La Laguna",
+          "filing_date": "2025-02-21",
+          "presentation_datetime": null,
+          "filing_title": "Evacuación de requerimiento sobre importe de adjudicación y saldo",
+          "document_ref": "ETJ163-SRC-CUATRECASAS-20250221",
+          "position_relief": "States an adjudication amount of EUR 77,840 and a remaining balance of EUR 104,677.72.",
+          "evidence_refs": [
+            "ETJ163-SRC-CUATRECASAS-20250221",
+            "sha256:4c8effcb7b79d5a07bb9ca2627cecee682a50a98ef9a30bf3622fb27ff3b6dae"
+          ],
+          "court_laj_response_ref": null,
+          "court_laj_response_status": "correlated_receipt_and_disposition_not_yet_linked",
+          "result": "position_verified_effect_open",
+          "appeal_followup_ref": null,
+          "appeal_followup_status": "later_ETJ_writings_located_final_effect_open",
+          "timeline_event_ref": "ETJ163-2020-20250221-CUATRECASAS-IMPORTES",
+          "source_confidence": "high_signed_primary_procedural_source",
+          "verification_status": "signed_pleading_verified_presentation_and_effect_open"
+        },
+        {
+          "filing_id": "ETJ163-2020-CUATRECASAS-20250425-ALEGACIONES-FINCAS",
+          "lawyer": "Teresa Morenés Basabe",
+          "side_perimeter": "external_executing_creditor_counsel",
+          "client_party": "Cuatrecasas, Gonçalves Pereira, S.L.P.",
+          "procurador": "José Javier Bueno Mesa",
+          "procurador_status": "verified_by_signatures_on_primary_pleading",
+          "authority_personacion_status": "act_specific_representation_verified_underlying_authority_instrument_not_separately_registered",
+          "proceeding_id": "ETJ 163/2020",
+          "pieza_incidente": "allegations_on_property_transformation_and_continuation",
+          "court_body": "Plaza nº 3 del Tribunal de Instancia (Sección Civil) de San Cristóbal de La Laguna",
+          "filing_date": "2025-04-25",
+          "presentation_datetime": null,
+          "filing_title": "Alegaciones sobre fincas 8584/8588 y continuación de la ejecución",
+          "document_ref": "ETJ163-SRC-CUATRECASAS-20250425",
+          "position_relief": "Records knowledge of the property dispute, states the position on juridical subsistence and transformation, opposes a new expert valuation and requests continuation/adjudication.",
+          "evidence_refs": [
+            "ETJ163-SRC-CUATRECASAS-20250425",
+            "sha256:49b54b3820a233e30783bc18e301d8a79148f09b7c852d1b6b4ea7cb8be1632e"
+          ],
+          "court_laj_response_ref": null,
+          "court_laj_response_status": "correlated_receipt_resolution_and_judicial_effect_not_yet_linked",
+          "result": "knowledge_and_position_verified_truth_and_effect_open",
+          "appeal_followup_ref": "CP-GAP-016; CP-GAP-017",
+          "appeal_followup_status": "docket_registry_expert_and_causation_questions_open",
+          "timeline_event_ref": "ETJ163-2020-20250425-CUATRECASAS-ALEGACIONES",
+          "source_confidence": "high_signed_primary_procedural_source",
+          "verification_status": "signed_pleading_verified_presentation_truth_and_effect_open"
+        },
+        {
+          "filing_id": "ETJ163-2020-CUATRECASAS-20260210-REITERACION",
+          "lawyer": "Teresa Morenés Basabe",
+          "side_perimeter": "external_executing_creditor_counsel",
+          "client_party": "Cuatrecasas, Gonçalves Pereira, S.L.P.",
+          "procurador": "José Javier Bueno Mesa",
+          "procurador_status": "verified_by_signatures_on_primary_pleading",
+          "authority_personacion_status": "act_specific_representation_verified_underlying_authority_instrument_not_separately_registered",
+          "proceeding_id": "ETJ 163/2020",
+          "pieza_incidente": "reiteration_of_adjudication_and_assignment_reservation",
+          "court_body": "Plaza nº 3 del Tribunal de Instancia (Sección Civil) de San Cristóbal de La Laguna",
+          "filing_date": "2026-02-10",
+          "presentation_datetime": null,
+          "filing_title": "Reiteración de solicitud de adjudicación y reserva de cesión",
+          "document_ref": "ETJ163-SRC-CUATRECASAS-20260210",
+          "position_relief": "Reiterates adjudication at 70 percent and reservation of assignment; source states a decision had not yet issued at that point.",
+          "evidence_refs": [
+            "ETJ163-SRC-CUATRECASAS-20260210",
+            "sha256:f8cc0f8a3e7ba0b6feeaccd8022ba12d49ad4c65a9c6cbc2f05ef14e7d7949ff"
+          ],
+          "court_laj_response_ref": null,
+          "court_laj_response_status": "later_adjudication_cession_registration_and_possession_status_not_located",
+          "result": "request_verified_final_effect_open",
+          "appeal_followup_ref": "CP-GAP-016",
+          "appeal_followup_status": "current_ETJ_state_requires_certification",
+          "timeline_event_ref": "ETJ163-2020-20260210-CUATRECASAS-REITERACION",
+          "source_confidence": "high_signed_primary_procedural_source",
+          "verification_status": "signed_pleading_verified_presentation_and_effect_open"
+        }
+      ]
+    },
+    {
+      "display_name": "José Javier Bueno Mesa",
+      "caepr_id": "PD-SP-P-0159",
+      "side_perimeter": "external_executing_creditor_procurador",
+      "our_perimeter": false,
+      "register_status": "procurador_acts_are_linked_in_master_procurador_register_not_attributed_as_lawyer_filings",
+      "located_appearances": [
+        {
+          "proceeding_id": "ETJ 163/2020",
+          "client_party": "Cuatrecasas, Gonçalves Pereira, S.L.P.",
+          "lawyer": "Teresa Morenés Basabe",
+          "source_ref": "ETJ163 signed pleadings dated 18-Oct-2024, 21-Feb-2025, 25-Apr-2025 and 10-Feb-2026"
+        }
+      ],
+      "filings": []
+    },
+    {
       "display_name": "Juan Daniel Fajardo Expósito", "side_perimeter": "external_or_party_specific_counsel", "our_perimeter": false,
       "register_status": "Rollo_1010_2018_cover_appearance_located_filings_and_authority_open",
       "located_appearances": [{"proceeding_id":"Rollo 1010/2018","client_party":"Gil Marer","procurador":"Andrés Castellano Rivero","source_ref":"archive/ROLLO_1010_2018_AUTO_804_CARET_INTERLINK_CONTROL_30AUG2026.md"}], "filings": []
@@ -180,7 +436,7 @@
     "complete_lawyer_denominator": false,
     "complete_filing_denominator": false,
     "complete_procurador_denominator": false,
-    "verified_filing_count_in_this_register": 2,
-    "reason": "Source population has begun with two verified RPL 3304/2025 filings attributed to Javier Sixto Seijas and three lawyer appearances on the Rollo 1010/2018 cover. Cover appearances are not promoted as filings. Full primary-source corpus ingestion and reconciliation remains required before any denominator-completeness claim."
+    "verified_filing_count_in_this_register": 9,
+    "reason": "Source population includes two verified RPL 3304/2025 filings attributed to Javier Sixto Seijas, three source-verified DP 748/ETJ filings attributed to Carlos Llamas Sanz, four signed ETJ filings attributed to Teresa Morenés Basabe, and three lawyer appearances on the Rollo 1010/2018 cover. The Teresa entries verify signed pleadings while presentation times and correlated court effects remain open. Cover appearances are not promoted as filings. Full primary-source corpus ingestion and reconciliation remains required before any denominator-completeness claim."
   }
 }
