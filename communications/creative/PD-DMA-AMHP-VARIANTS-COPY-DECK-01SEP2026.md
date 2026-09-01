@@ -2,7 +2,8 @@
 
 **Family:** `PD-DMA-FAM-AMHP-001`  
 **Status:** IMPLEMENTED — the English companion and both corrected prior-style variants now exist, are hash-verified and are published as controlled web manifestations.  
-**Controls:** digital/media caret governance + satire/caricature governance + hotel-platform role taxonomy.
+**Controls:** digital/media caret governance + satire/caricature governance + hotel-platform role taxonomy.  
+**Visual-priority control:** `data/pd-dma-amph-visual-priority-20260901.json`.
 
 ## Implemented assets
 
@@ -12,6 +13,48 @@
 - `PD-DMA-0004` — corrected version inspired by the second earlier resort/clearance direction. Web: `PD-DMA-0004^`; outreach: `PD-DMA-0004-PNG^`.
 
 Exact hashes, byte lengths and dimensions are canonical in `data/digital-media-asset-register-v1.json`.
+
+## Creative priority locked 1 September 2026
+
+The next hero/poster treatment must be **visually much closer to the first two concepts than to the third/data-explainer treatment**.
+
+### Preferred hierarchy
+
+1. **Dominant influence — first concept / high-contrast poster:** oversized type, dense visual field, dramatic black/yellow/red contrast, hotel/resort imagery, strong blocks, stamps, labels and satirical-advertising energy.
+2. **Strong secondary influence — second concept / resort-clearance travel poster:** vintage tourism-advertising language, theatrical “everything together” composition, luggage-tag / offer-board / catalogue feel, playful exaggeration and conspicuous parody.
+3. **Supporting influence only — third “No es lo mismo” explainer:** retain its disciplined metric distinction and source clarity, but use it as a compact comparison box, sticker, side panel or footnote—not as the overall aesthetic.
+
+### Working blend
+
+For future design prompts, use approximately **60% first-concept visual language / 30% second-concept visual language / 10% third-concept data-explainer language**. This is a creative-direction ratio, not an evidential weighting.
+
+### What the next visual should feel like
+
+- a **spoof advertisement / satirical hotel-platform campaign** first;
+- a visually busy, attention-grabbing LinkedIn poster second;
+- an infographic only where necessary to communicate the two distinct financial measures;
+- image-led and theatrical rather than dashboard-like;
+- bold enough to stop scrolling at thumbnail size;
+- immediately legible as parody, not a genuine corporate advertisement.
+
+### What to avoid
+
+- a clean corporate dashboard as the dominant look;
+- large areas of white space that dilute the parody;
+- an accounting-report aesthetic;
+- making the `€100m+` versus `€44m / ~€50m / €60m` comparison consume the whole composition;
+- losing the hotel/platform imagery in favour of charts or tables;
+- importing the factual mistakes, portraits or unsupported ownership/agency claims from the legacy concepts.
+
+### How to carry the third version's useful content without its look
+
+The factual comparison remains essential, but should appear as a **high-impact inset**:
+
+> **+100 M€ VENTAS HOTELERAS BAJO GESTIÓN**  
+> **≠**  
+> **44 M€ / ~50 M€ / 60 M€ FACTURACIÓN PROPIA COMUNICADA DE LA GESTORA**
+
+The visual hook remains the wider “platform”: hotels, assets, brands, managers, investors, capital, advisers, mandates, construction and media visibility—each accurately role-labelled rather than collapsed into common ownership.
 
 ## Shared non-negotiables retained in all implemented versions
 
@@ -52,4 +95,4 @@ Fictional “clearance” parody in which each tile asks a role question — own
 
 ## Legacy treatment
 
-The two earlier generated concepts remain preserved only as `PD-DMA-LEGACY-0001-PNG^` and `PD-DMA-LEGACY-0002-PNG^`. They are design references, not public evidence sheets, and must not be republished unchanged.
+The two earlier generated concepts remain preserved only as `PD-DMA-LEGACY-0001-PNG^` and `PD-DMA-LEGACY-0002-PNG^`. They are design references, not public evidence sheets, and must not be republished unchanged. Their **visual language may be deliberately reused** under the priority above, while their inaccurate or unsupported factual content remains quarantined.
