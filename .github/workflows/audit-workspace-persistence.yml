@@ -1,0 +1,74 @@
+name: Audit workspace persistence
+
+on:
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - 'scripts/workspace_persistence.py'
+      - 'tests/test_workspace_persistence.py'
+      - 'schemas/workspace-*.schema.json'
+      - 'schemas/chatgpt-export-import-manifest-v1.schema.json'
+      - 'docs/WORKSPACE_PERSISTENCE_RUNBOOK.md'
+      - 'examples/workspace-checkpoint.example.json'
+      - 'data/workspace-register-v1.json'
+      - 'ops/AUTOMATIC_WORKSPACE_PERSISTENCE_V1.json'
+      - 'CURRENT_WORKSPACE_HANDOFF.md'
+      - '.gitignore'
+      - '.github/workflows/audit-workspace-persistence.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/workspace_persistence.py'
+      - 'tests/test_workspace_persistence.py'
+      - 'schemas/workspace-*.schema.json'
+      - 'schemas/chatgpt-export-import-manifest-v1.schema.json'
+      - 'docs/WORKSPACE_PERSISTENCE_RUNBOOK.md'
+      - 'examples/workspace-checkpoint.example.json'
+      - 'data/workspace-register-v1.json'
+      - 'ops/AUTOMATIC_WORKSPACE_PERSISTENCE_V1.json'
+      - 'CURRENT_WORKSPACE_HANDOFF.md'
+      - '.gitignore'
+      - '.github/workflows/audit-workspace-persistence.yml'
+  schedule:
+    - cron: '17 5 * * 1'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: workspace-persistence-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Compile runtime
+        run: python -m py_compile scripts/workspace_persistence.py
+
+      - name: Run runtime tests
+        run: python -m unittest discover -s tests -p 'test_workspace_persistence.py' -v
+
+      - name: Audit public continuity controls
+        run: |
+          mkdir -p artifacts/workspace-persistence-audit
+          python scripts/workspace_persistence.py validate-repository \
+            --output artifacts/workspace-persistence-audit/result.json
+
+      - name: Upload read-only audit result
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: workspace-persistence-audit-${{ github.run_id }}
+          path: artifacts/workspace-persistence-audit/
+          if-no-files-found: warn
+          retention-days: 30
