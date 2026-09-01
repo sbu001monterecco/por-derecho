@@ -3,15 +3,20 @@
   "handoff_id": "PD-WCH-20260901-AWP-RUNTIME-001",
   "workspace_id": "PD-WS-20260901-0003",
   "date": "2026-09-01",
-  "status": "HANDOFF_READY",
+  "status": "DELETION_SAFE_WITH_OPEN_WORK",
   "repository": "sbu001monterecco/por-derecho",
   "architecture_merge_sha": "89e84ffd6656a37951565d769f5eee4214661e37",
   "reconciled_baseline_sha": "1099e48a83b8f81cd652734df5e5012336985e62",
-  "current_main_sha_checked": "3977178d0d01a11ab349c81e0f834322f46d5da2",
+  "current_main_sha_checked": "aace738d2a6f913c897f20cfc468349cb038c745",
   "implementation_merge_sha": "ca501751410bb3f0ad928c2b16d6d885551e7ea3",
   "implementation_pr": 1317,
-  "closeout_record_state": "BRANCH_ONLY",
+  "closeout_record_state": "MERGED_TO_MAIN",
   "closeout_branch": "codex/pd-ws-20260901-0003-continue",
+  "closeout_pr": 1323,
+  "closeout_merge_sha": "aace738d2a6f913c897f20cfc468349cb038c745",
+  "authorized_local_source_commit": "17c8e90a5524a7e89bf29448e36ce23a528cfc7c",
+  "remote_tree_commit": "3b558bb069ef4cc8bbccb1a467a47b4c6459ab9c",
+  "closeout_tree_sha": "6050dfa178d9958e50a78c51b4cfd5750ded0354",
   "superseded_branch": "agent/workspace-persistence-runtime-20260901",
   "superseded_pr": 1316,
   "implementation_branch": "agent/workspace-persistence-runtime-reconciled-20260901",
@@ -66,6 +71,20 @@
       "PUBLIC_REPO_VAULT_REFUSAL"
     ]
   },
+  "fresh_thread_verification": {
+    "verified_merge_sha": "aace738d2a6f913c897f20cfc468349cb038c745",
+    "status": "PASS",
+    "runtime_tests_passed": 5,
+    "repository_audit": "PASS",
+    "repository_preservation": "PASS",
+    "bootstrap_handoff_discovery": "PASS"
+  },
+  "publication_transport": {
+    "direct_git_push": "FAILED_BEFORE_REMOTE_MUTATION_NO_INTERACTIVE_GITHUB_CREDENTIAL",
+    "fallback": "GITHUB_CONNECTOR_IDENTICAL_AUTHORISED_TREE",
+    "relevant_pr_checks": "PASS",
+    "bounded_unrelated_ci_warning": "LEGACY_3205_ARRECIFE_IDENTITY_REGISTRY_COUNT_AND_CONTROL_DATE_DRIFT_OUTSIDE_CONTINUITY_DIFF"
+  },
   "private_vault": {
     "provider": "GOOGLE_DRIVE",
     "root_alias": "Por Derecho Private Workspaces",
@@ -113,7 +132,6 @@
     "EXTERNAL_COMMUNICATION_OR_SOCIAL_PUBLICATION"
   ],
   "open_work": [
-    "MERGE_SOURCE_SAFE_CLOSEOUT_CORRECTION_AND_RECORD_EXACT_SHA",
     "CONNECT_LIVE_PRIVATE_FILESYSTEM_OR_DRIVE_OBJECT_STORE_ADAPTER",
     "INITIALISE_OR_RESTORE_CANONICAL_LIVE_PD_WS_20260901_0003_CHAIN",
     "OPTIONAL_AUTHORISED_CHATGPT_EXPORT_IMPORT",
@@ -133,6 +151,6 @@
     "REPOSITORY_MERGE_EQUALS_EXTERNAL_ACTION",
     "HASH_CHAIN_PROVES_EXTERNAL_FACT"
   ],
-  "next_thread_first_action": "Read the active workspace index, select PD-WS-20260901-0003, and reconcile current main plus any later closeout PR before acting.",
-  "deletion_safety": "HANDOFF_READY_IMPLEMENTATION_MERGED_CLOSEOUT_CORRECTION_BRANCH_ONLY"
+  "next_thread_first_action": "Read the active workspace index, select PD-WS-20260901-0003, reconcile current main, and continue only from the recorded open work plus the user's new instruction.",
+  "deletion_safety": "DELETION_SAFE_WITH_OPEN_WORK"
 }

@@ -3,11 +3,11 @@
 **Handoff ID:** `PD-WCH-20260901-AWP-RUNTIME-001`  
 **Workspace ID:** `PD-WS-20260901-0003`  
 **Date:** 1 September 2026  
-**Continuity status:** `HANDOFF_READY`
+**Continuity status:** `DELETION_SAFE_WITH_OPEN_WORK`
 **Repository:** `sbu001monterecco/por-derecho`
 
-**Authoritative baseline checked:** `3977178d0d01a11ab349c81e0f834322f46d5da2` (`origin/main`, 1 September 2026)
-**Closeout record state:** `BRANCH_ONLY` on `codex/pd-ws-20260901-0003-continue`; no push, PR or merge is represented.
+**Authoritative baseline checked:** `aace738d2a6f913c897f20cfc468349cb038c745` (`origin/main`, 1 September 2026)
+**Closeout record state:** `MERGED_TO_MAIN` through PR #1323 at `aace738d2a6f913c897f20cfc468349cb038c745`; fresh-thread verification passed.
 
 ## 1. Objective
 
@@ -61,12 +61,18 @@ Reconciled implementation branch:
 
 Reconciliation on 1 September 2026:
 
-- fetched `origin/main`: `3977178d0d01a11ab349c81e0f834322f46d5da2`;
-- PR #1317 merge is an ancestor of that current main;
-- the merged runtime tests and read-only repository audit both pass; and
-- this source-safe closeout correction remains branch-only until separately merged.
+- the authorised local closeout commit `17c8e90a5524a7e89bf29448e36ce23a528cfc7c` and connector-created remote commit `3b558bb069ef4cc8bbccb1a467a47b4c6459ab9c` have the identical tree `6050dfa178d9958e50a78c51b4cfd5750ded0354` and parent `3977178d0d01a11ab349c81e0f834322f46d5da2`;
+- PR #1323 merged that source-safe closeout to `main` at `aace738d2a6f913c897f20cfc468349cb038c745`;
+- PR #1317 merge remains an ancestor of that current main; and
+- from a fresh detached checkout of `aace738d2a6f913c897f20cfc468349cb038c745`, all five runtime tests, the read-only repository audit, repository-preservation validation and fresh-thread bootstrap checks passed.
 
 A successor thread must re-check current `main` and any later closeout PR before writing.
+
+### Publication transport and bounded CI warning
+
+The first direct HTTPS `git push` failed before any remote mutation because the local checkout had no interactive GitHub credential. The GitHub connector fallback created the identical authorised tree, preserving the public/private boundary and commit content exactly.
+
+PR #1323 completed the relevant workspace-persistence, publication-integrity, preservation, privacy and specialist checks successfully. One unrelated legacy validator, `Validate 3205/2014 Arrecife publication`, reported pre-existing identity-registry count and control-date drift outside the five-file continuity change. That bounded warning remains open under repository governance; it was neither caused nor falsely closed by this workspace closeout.
 
 ## 4. Implemented runtime
 
@@ -217,14 +223,13 @@ No real raw ChatGPT transcript, Gmail/Drive source corpus or private attachment 
 
 ## 8. Open work
 
-1. Merge this source-safe closeout correction and record its exact merge SHA; the runtime implementation itself is already merged through PR #1317.
-2. Connect the runtime to a durable filesystem vault or implement a Drive/object-store adapter.
-3. Initialise or restore the live private `PD-WS-20260901-0003` event chain at that destination, using the seed only as a controlled starting snapshot.
-4. Optionally obtain and privately import an authorised ChatGPT data export.
-5. Review the clustering queue and map related historical threads to stable workspaces.
-6. Build the true request-path OpenAI workbench only after an explicit credential decision.
-7. Add scheduled private backup after the live destination is selected.
-8. Introduce a collision-resistant `workspace_uid` in the future workbench while preserving human-readable `PD-WS-*` IDs.
+1. Connect the runtime to a durable filesystem vault or implement a Drive/object-store adapter.
+2. Initialise or restore the live private `PD-WS-20260901-0003` event chain at that destination, using the seed only as a controlled starting snapshot.
+3. Optionally obtain and privately import an authorised ChatGPT data export.
+4. Review the clustering queue and map related historical threads to stable workspaces.
+5. Build the true request-path OpenAI workbench only after an explicit credential decision.
+6. Add scheduled private backup after the live destination is selected.
+7. Introduce a collision-resistant `workspace_uid` in the future workbench while preserving human-readable `PD-WS-*` IDs.
 
 ## 9. Do not infer
 
@@ -255,6 +260,6 @@ A successor thread must not infer that:
 
 ## 12. Deletion-safety test
 
-Current result: **HANDOFF READY; IMPLEMENTATION MERGED; SOURCE-SAFE CLOSEOUT CORRECTION BRANCH-ONLY.**
+Current result: **DELETION SAFE WITH OPEN WORK.**
 
-The substantive design, code and canonical workspace correction are merged. The private vault holds the validated current seed. The corrected current-main baseline, implementation merge SHA, live permission readback and superseding seed fingerprint are captured on the closeout branch. Final status becomes `DELETION_SAFE_WITH_OPEN_WORK` when this source-safe closeout correction is merged and its exact merge reference is recorded.
+The substantive design, code and canonical workspace correction are merged. The private vault holds the validated current seed. PR #1323, merge `aace738d2a6f913c897f20cfc468349cb038c745`, publication transport failure, bounded legacy-CI warning, fresh-checkout verification and all remaining work are durably recorded. No material instruction, failure or current workspace state is known to remain chat-only. This thread may be deleted without losing continuity. Deletion does not imply that Google Drive is a live event sink, a historical ChatGPT export has been imported, or an OpenAI API workbench or credential exists.

@@ -57,7 +57,7 @@
     {
       "workspace_id": "PD-WS-20260901-0003",
       "title": "Automatic workspace persistence runtime and private-vault implementation",
-      "status": "HANDOFF_READY",
+      "status": "DELETION_SAFE_WITH_OPEN_WORK",
       "current_handoff_id": "PD-WCH-20260901-AWP-RUNTIME-001",
       "handoff_path": "archive/handoffs/2026-09-01-automatic-workspace-persistence-runtime-handoff.md",
       "machine_handoff_path": "archive/handoffs/2026-09-01-automatic-workspace-persistence-runtime-handoff.json",
@@ -93,8 +93,11 @@
       },
       "implementation_pr": 1317,
       "implementation_merge_sha": "ca501751410bb3f0ad928c2b16d6d885551e7ea3",
-      "current_main_sha_checked": "3977178d0d01a11ab349c81e0f834322f46d5da2",
-      "closeout_record_state": "BRANCH_ONLY",
+      "current_main_sha_checked": "aace738d2a6f913c897f20cfc468349cb038c745",
+      "closeout_record_state": "MERGED_TO_MAIN",
+      "closeout_pr": 1323,
+      "closeout_merge_sha": "aace738d2a6f913c897f20cfc468349cb038c745",
+      "fresh_thread_verification": "PASS_AT_CLOSEOUT_MERGE",
       "superseded_pr": 1316,
       "next_target_mode": "LIVE_PRIVATE_FILESYSTEM_OR_DRIVE_ADAPTER_THEN_TRUE_EVENT_SOURCED_CLIENT"
     }
