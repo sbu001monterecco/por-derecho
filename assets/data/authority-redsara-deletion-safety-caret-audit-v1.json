@@ -4,8 +4,8 @@
   "control_date": "2026-09-01",
   "workspace_id": "PD-WS-20260901-0002",
   "audited_base_sha": "0f523d86853730e242d8212e98250c01ee6013db",
-  "status": "PREPARED_FOR_AUTHORISED_RELEASE",
-  "deletion_verdict": "PENDING_MERGE_DEPLOYMENT_AND_LIVE_CLOSEOUT",
+  "status": "LIVE_VERIFIED_DELETION_SAFE",
+  "deletion_verdict": "DELETION_SAFE_WITH_OPEN_EVIDENCE_GAPS",
   "prior_release": {
     "pull_request": 1313,
     "reviewed_head_sha": "b98f193b5beb952710387e2a9d9b9c081fa71d90",
@@ -13,6 +13,22 @@
     "continuity_sha": "4aa479c876332369443e15eed9971c5624caed05",
     "pages_deployment_id": 6201863449,
     "pages_action_run": 33511479330
+  },
+  "publication_closeout": {
+    "pull_request": 1339,
+    "reviewed_head_sha": "236d101c999f3f382115b9453b74d74ddae7ce05",
+    "merge_sha": "526e366d1b8137bb34faf4812232b4a45159962c",
+    "pull_request_checks": {"passed": 43, "failed": 0},
+    "pages_action_run": 33559539768,
+    "pages_conclusion": "success",
+    "live_exact_sha256": {
+      "en_route": "1de79af039087bdab3ab8e4d920e6e19ff309cfc9b6eda39d5eec0064af4bdab",
+      "es_route": "dc3650181538a21bf4b30d2792a25d1bbd2acc549cfd40c7f65040e157799212",
+      "audit_json": "415e178ef4688b45c2cacd2d13849e5579985b6ab730193c54dfdae46fe7ba8a",
+      "registry_json": "02898d11f85d68ea4e5a7675540d80beb01e0a60e9f7dd3269118f26f8bb7570",
+      "institution_shard_json": "6f3de546947ae4c14e0664f3fb26528168499c325a37f1c088cda6a3abd5da9e"
+    },
+    "verified_at": "2026-09-01T21:12:00Z"
   },
   "preservation_inventory": {
     "material_files": 24,

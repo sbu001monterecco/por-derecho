@@ -3,7 +3,7 @@
 **Control:** `PD-AUTH-REDSARA-DELETE-CARET-20260901-01`
 **Workspace:** `PD-WS-20260901-0002`
 **Audited base:** `0f523d86853730e242d8212e98250c01ee6013db`
-**Publication state:** `AUTHORISED_CLOSEOUT_IN_PROGRESS`
+**Publication state:** `DELETION_SAFE_WITH_OPEN_EVIDENCE_GAPS`
 
 ## Independent preservation result
 
@@ -51,4 +51,6 @@ Publication does not prove that any authority was contacted, any new filing was 
 
 ## Final deletion gate
 
-This record may be updated to `DELETION_SAFE` only after the authorised package is merged, the exact merge SHA is successfully deployed, both bilingual routes and the controlled JSON are read back from production, and those facts are recorded in Git. Until then the correct state is `AUTHORISED_CLOSEOUT_IN_PROGRESS`.
+PR [#1339](https://github.com/sbu001monterecco/por-derecho/pull/1339) passed 43/43 checks and merged as `526e366d1b8137bb34faf4812232b4a45159962c`. Pages action run `33559539768` completed successfully. Cache-busted production readback then matched the repository byte-for-byte for both bilingual routes, the deletion/caret audit JSON, the canonical identity registry and its institution shard.
+
+The originating thread is therefore **deletion-safe with open evidence gaps**. Deletion safety means repository, archive, handoff, machine audit, deployment and live-readback continuity are preserved outside chat. It does not convert the two `CARET_PENDING` identities or any source-dependent merits/routing gap into a closure.

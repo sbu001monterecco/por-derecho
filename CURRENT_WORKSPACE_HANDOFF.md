@@ -68,6 +68,8 @@ Read:
 
 ### `PD-WS-20260901-0002` — authority discovery / Red SARA / AGE
 
+State: `DELETION_SAFE_WITH_OPEN_EVIDENCE_GAPS` after PR #1339, merge `526e366d1b8137bb34faf4812232b4a45159962c`, successful Pages run `33559539768` and exact five-object live readback.
+
 Read:
 
 1. `archive/handoffs/2026-09-01-authority-redsara-caret-deletion-closeout.md`
