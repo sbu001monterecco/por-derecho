@@ -31,14 +31,14 @@ jobs:
         with:
           python-version: '3.12'
 
-      - name: Migrate the legacy validator date block
+      - name: Migrate legacy validator and page-copy variants
         shell: bash
         run: |
           python - <<'PY'
           from pathlib import Path
 
-          path = Path("scripts/validate_dp3205_2014_publication.py")
-          text = path.read_text(encoding="utf-8")
+          validator = Path("scripts/validate_dp3205_2014_publication.py")
+          text = validator.read_text(encoding="utf-8")
           if "registry_date_match = re.fullmatch" not in text:
               start_marker = 'registry_control_date = registry.get("control_date") if isinstance(registry, dict) else None'
               end_marker = 'includes(registry_es, "31 AGOSTO 2026", relative(REGISTRY_ES))'
@@ -69,7 +69,17 @@ jobs:
                   '        includes(registry_es, f"{registry_day} {registry_es_months[registry_month]} {registry_year}", relative(REGISTRY_ES))',
                   '',
               ])
-              path.write_text(text[:start] + new + text[end:], encoding="utf-8")
+              validator.write_text(text[:start] + new + text[end:], encoding="utf-8")
+
+          generator = Path("scripts/sync_matter_identity_registry_static.py")
+          generator_text = generator.read_text(encoding="utf-8")
+          legacy_pattern = r"connected with actions and an evidence graph\."
+          tolerant_pattern = r"connected (?:to institutional actions|with actions) and an evidence graph\."
+          if legacy_pattern in generator_text:
+              generator_text = generator_text.replace(legacy_pattern, tolerant_pattern, 1)
+              generator.write_text(generator_text, encoding="utf-8")
+          elif tolerant_pattern not in generator_text:
+              raise SystemExit("English JSON-LD description matcher was not found")
           PY
           python -m py_compile scripts/validate_dp3205_2014_publication.py
           python -m py_compile scripts/sync_matter_identity_registry_static.py
