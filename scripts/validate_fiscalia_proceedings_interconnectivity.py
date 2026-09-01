@@ -65,12 +65,24 @@ def main() -> int:
     with MASTER.open(encoding="utf-8-sig", newline="") as handle:
         master_rows = list(csv.DictReader(handle))
     master_ids = {row["Master_ID"] for row in master_rows}
-    event_ids = {event["event_id"] for event in communications["events"]}
+    canonical_event_ids = {event["event_id"] for event in communications["events"]}
+    excluded_authority_ids = set(
+        communications.get("authority_scan_control", {}).get("new_event_ids", [])
+    )
+    event_ids = canonical_event_ids - excluded_authority_ids
     projected_ids = {event["event_id"] for event in payload["events"]}
 
     require(payload.get("schema_version") == "1.0.0", "schema version changed", errors)
     require(payload.get("status") == "PUBLIC_SAFE_DERIVED_INTERCONNECTIVITY_PROJECTION", "projection status changed", errors)
-    require(len(event_ids) == len(projected_ids) == 296 and event_ids == projected_ids, "event denominator or identity mismatch", errors)
+    require(
+        len(canonical_event_ids) == 313
+        and len(excluded_authority_ids) == 17
+        and excluded_authority_ids <= canonical_event_ids
+        and len(event_ids) == len(projected_ids) == 296
+        and event_ids == projected_ids,
+        "event denominator or identity mismatch",
+        errors,
+    )
     require(payload["coverage"].get("matter_linked_events") == 117, "matter-linked event denominator mismatch", errors)
     require(payload["coverage"].get("fiscalia_exact_files") == 21, "exact Fiscalía denominator mismatch", errors)
     require(payload["coverage"].get("fiscalia_unresolved_references") == 3, "unresolved Fiscalía denominator mismatch", errors)

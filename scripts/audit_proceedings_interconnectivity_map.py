@@ -78,6 +78,8 @@ REQUIRED = [
     "docs/deletion-audits/2026-08-30-all-proceedings-interlinkability-continuity.md",
     "publication-manifests/case-prism-substantive-gap-closure-20260831.json",
     "docs/deletion-audits/2026-08-31-case-prism-substantive-gap-closure-continuity.md",
+    "publication-manifests/unitary-public-authority-communications-20260901.json",
+    "docs/deletion-audits/2026-09-01-unitary-public-authority-communications-continuity.md",
 ]
 
 # The institutional-reader audit is intentionally an identified-route
@@ -457,6 +459,12 @@ if not errors:
     treasury_manifest = json.loads(read("publication-manifests/treasury-transparency-7-2026-20260830.json"))
     lifecycle = json.loads(read("publication-manifests/all-proceedings-interlinkability-20260830.json"))
     current_lifecycle = json.loads(read("publication-manifests/case-prism-substantive-gap-closure-20260831.json"))
+    authority_successor = json.loads(
+        read("publication-manifests/unitary-public-authority-communications-20260901.json")
+    )
+    authority_successor_continuity = read(
+        "docs/deletion-audits/2026-09-01-unitary-public-authority-communications-continuity.md"
+    )
     current_continuity = read(
         "docs/deletion-audits/2026-08-31-case-prism-substantive-gap-closure-continuity.md"
     )
@@ -2591,6 +2599,242 @@ if not errors:
             token in current_continuity,
             f"current substantive-gap continuity record omits control: {token}",
         )
+
+    # A live manifest is an immutable observation of one deployed merge, not a
+    # permanent lock on all later repository bytes.  This successor must
+    # register every intentional drift from the 31-August live observation and
+    # must pin both the predecessor hash and the current release hash.  Any
+    # unregistered drift continues to fail closed below.
+    require(
+        authority_successor.get("schema") == "por-derecho.publication-manifest.v1"
+        and authority_successor.get("publication_id")
+        == "PD-SP-UNITARY-PUBLIC-AUTHORITY-COMMS-20260901-01"
+        and authority_successor.get("control_date") == "2026-09-01"
+        and authority_successor.get("source_base_sha")
+        == "00bcadd858e588dc3dd378fd7b3a630fad18c4f8"
+        and authority_successor.get("head_branch")
+        == "codex/unitary-criminal-first-gap-closure-20260901",
+        "authority-communications successor identity/source base is stale",
+    )
+    successor_state = authority_successor.get("current_state")
+    successor_live = successor_state == "LIVE_VERIFIED"
+    require(
+        (successor_state, authority_successor.get("state"))
+        in {
+            ("PREPARED_PENDING_MERGE", "PUBLICATION_AUTHORISED_VALIDATION_PENDING"),
+            ("LIVE_VERIFIED", "LIVE_VERIFIED_WITH_ACCEPTED_PUBLICATION_BOUNDARY_GAP"),
+        },
+        "authority-communications successor lifecycle state is invalid",
+    )
+    successor_predecessor = authority_successor.get("predecessor_live_attestation", {})
+    require(
+        successor_predecessor.get("manifest")
+        == "publication-manifests/case-prism-substantive-gap-closure-20260831.json"
+        and successor_predecessor.get("publication_id")
+        == current_lifecycle.get("publication_id")
+        and successor_predecessor.get("pull_request") == 1282
+        and successor_predecessor.get("merge_sha") == current_lifecycle.get("merge_sha")
+        and successor_predecessor.get("state") == current_lifecycle.get("state")
+        and "immutable observation" in successor_predecessor.get("rule", "")
+        and "must not rewrite" in successor_predecessor.get("rule", ""),
+        "authority-communications successor does not preserve the predecessor attestation",
+    )
+    successor_authorization = authority_successor.get("authorization", {})
+    require(
+        successor_authorization.get("repository_and_website_publication") is True
+        and successor_authorization.get("external_contact_or_delivery") is False
+        and successor_authorization.get("email_action") == "HOLD_NOT_AUTHORISED"
+        and successor_authorization.get("filing_or_portal_action")
+        == "HOLD_NOT_AUTHORISED",
+        "authority-communications successor exceeds publication authorization",
+    )
+    successor_pr = authority_successor.get("pull_request", {})
+    require(
+        successor_pr.get("number") == 1305
+        and successor_pr.get("url")
+        == "https://github.com/sbu001monterecco/por-derecho/pull/1305"
+        and successor_pr.get("status") == ("MERGED" if successor_live else "OPEN"),
+        "authority-communications successor PR identity/state is stale",
+    )
+    successor_scope = authority_successor.get("controlled_scope", {})
+    successor_discovery = successor_scope.get("metadata_discovery", {})
+    require(
+        successor_scope.get("canonical_communication_events") == 313
+        and successor_scope.get("authority_communication_events") == 19
+        and successor_scope.get("new_authority_event_ids") == 17
+        and successor_scope.get("reused_authority_event_ids") == 2
+        and successor_scope.get("authority_tiers")
+        == [
+            "ES_LOCAL_MUNICIPAL",
+            "ES_ISLAND_CABILDO",
+            "ES_CANARY_AUTONOMOUS",
+            "ES_STATE",
+            "EU_SUPRANATIONAL",
+        ]
+        and successor_scope.get("acta_packages") == 20
+        and successor_scope.get("acta_files") == 49
+        and successor_scope.get("authority_groups") == 6
+        and successor_scope.get("interconnection_axes") == 7
+        and successor_discovery.get("mailbox_lane_hits_before_cross_lane_deduplication")
+        == 8256
+        and successor_discovery.get("mailbox_unique_cross_lane_items") == 5514
+        and successor_discovery.get("drive_lane_hits_before_cross_lane_deduplication")
+        == 29503
+        and successor_discovery.get("drive_unique_cross_lane_items") == 326
+        and "not merits review" in successor_discovery.get("meaning", ""),
+        "authority-communications successor denominators or discovery boundary changed",
+    )
+    require(
+        authority_successor.get("handling_state_ladder")
+        == [
+            "transmission",
+            "registration",
+            "delivery",
+            "routing",
+            "incorporation",
+            "examination",
+            "verification_or_rejection",
+            "adoption",
+            "decision_or_use",
+            "effect",
+            "causation",
+            "benefit_or_loss",
+        ],
+        "authority-communications successor handling ladder is incomplete",
+    )
+    successor_changed_rows = authority_successor.get("historical_transition", {}).get(
+        "changed_resources", []
+    )
+    successor_changed = {
+        item.get("resource"): item
+        for item in successor_changed_rows
+        if isinstance(item, dict) and item.get("resource")
+    }
+    expected_successor_prior_hashes = {
+        "archive/PROCEEDINGS_MASTER_REGISTER.csv": "8caa65a0aaefa2b568be263869d7749b79fd8e7eb3b00ab568c7cabdc29bb801",
+        "assets/data/proceedings-master-public-v1.json": "17aa8f8c3d59a833df95092019877d301b8b7cdd7878a1fa7b3aa978c7666fe9",
+        "assets/data/fiscalia-proceedings-interconnectivity-v1.json": "8f7e1a4c92d779f79638261eaeea4bc801c4f52a234ac7592a4f75c4c001a956",
+        "assets/data/community-acta-authority-interconnectivity-v1.json": "38bffa9c694d6e7f7277177a56523d213747b9970fd806fe2440f9f5abc2e725",
+    }
+    require(
+        authority_successor.get("historical_transition", {}).get("policy")
+        == "FAIL_CLOSED_SUCCESSOR_COVERAGE"
+        and len(successor_changed_rows) == len(successor_changed)
+        and set(successor_changed) == set(expected_successor_prior_hashes)
+        and all(
+            successor_changed[path].get("predecessor_live_sha256") == prior_hash
+            and successor_changed[path].get("release_sha256")
+            == hashlib.sha256((ROOT / path).read_bytes()).hexdigest()
+            and bool(successor_changed[path].get("reason"))
+            for path, prior_hash in expected_successor_prior_hashes.items()
+        ),
+        "authority-communications successor transition coverage is incomplete or stale",
+    )
+    successor_release_hashes = authority_successor.get("release_critical_sha256", {})
+    expected_successor_release_paths = {
+        "assets/data/institutional-communications-register-v1.json",
+        "assets/data/unitary-multitrack-criminal-first-gap-closure-v1.json",
+        "assets/data/community-acta-authority-interconnectivity-v1.json",
+        "assets/data/proceedings-master-public-v1.json",
+        "assets/data/fiscalia-proceedings-interconnectivity-v1.json",
+        "assets/unitary-multitrack-gap-closure-20260901.js",
+        "assets/unitary-multitrack-gap-closure-20260901.css",
+        "en/unitary-criminal-reverse-engineering/index.html",
+        "es/ingenieria-inversa-criminal-unitaria/index.html",
+        "en/community-actas-public-authorities/index.html",
+        "es/actas-comunidad-autoridades-publicas/index.html",
+        "ops/PUBLIC_AUTHORITY_COMMUNICATIONS_SCAN_CHECKPOINT_20260901.json",
+    }
+    require(
+        set(successor_release_hashes) == expected_successor_release_paths
+        and all(
+            successor_release_hashes.get(path)
+            == hashlib.sha256((ROOT / path).read_bytes()).hexdigest()
+            for path in expected_successor_release_paths
+        ),
+        "authority-communications successor release hashes are incomplete or stale",
+    )
+    successor_boundaries = set(authority_successor.get("evidential_boundaries", []))
+    require(
+        {
+            "CRIMINAL_HYPOTHESIS_IS_DIRECT_ATTRIBUTED_AND_FALSIFIABLE_NOT_AN_ADJUDICATED_FINDING",
+            "CRIMINAL_RESPONSIBILITY_DOES_NOT_PROPAGATE_ACROSS_ACTORS_DOCUMENTS_AUTHORITIES_OR_TRACKS",
+            "RECEIPT_OR_REGISTRATION_DOES_NOT_PROVE_EXAMINATION_ADOPTION_DECISION_CAUSATION_OR_BENEFIT",
+            "PUBLIC_AUTHORITY_TIER_DOES_NOT_ESTABLISH_COMPETENCE_DUTY_OR_MERITS",
+            "NO_PROVIDER_IDS_SUBJECTS_ADDRESSES_PRIVATE_URLS_OR_PRIVATE_ATTACHMENTS_ARE_PUBLISHED",
+        }
+        <= successor_boundaries,
+        "authority-communications successor omits a required evidential/privacy boundary",
+    )
+    for token in (
+        "immutable observation",
+        "not a permanent hash lock",
+        "313 events",
+        "296-event denominator",
+        "Criminal responsibility never propagates",
+        "Receipt or registration proves no higher handling state",
+        "single integrator",
+        "exact merge SHA",
+    ):
+        require(
+            token in authority_successor_continuity,
+            f"authority-communications continuity record omits control: {token}",
+        )
+    successor_validation = authority_successor.get("validation", {})
+    successor_verification = authority_successor.get("verification", {})
+    if successor_live:
+        require(
+            successor_validation.get("status")
+            == "EXACT_HEAD_AND_EXACT_MERGE_PUSH_CI_GREEN"
+            and all(
+                re.fullmatch(r"[0-9a-f]{40}", authority_successor.get(field, ""))
+                for field in (
+                    "reviewed_head_sha",
+                    "reviewed_tree_sha",
+                    "merge_sha",
+                    "merge_tree_sha",
+                )
+            )
+            and authority_successor.get("merge_tree_sha")
+            == authority_successor.get("reviewed_tree_sha")
+            and authority_successor.get("deployment_evidence", {}).get("status")
+            == "COMPLETED_SUCCESS"
+            and authority_successor.get("deployment_evidence", {}).get("head_sha")
+            == authority_successor.get("merge_sha")
+            and authority_successor.get("live_verification_evidence", {}).get("status")
+            == "HTTP_200_EXACT_SHA256_MATCH"
+            and successor_verification.get("source_prepared") is True
+            and successor_verification.get("exact_head_ci_green") is True
+            and successor_verification.get("merged") is True
+            and successor_verification.get("pages_deployed") is True
+            and successor_verification.get("live_http_readback") is True
+            and successor_verification.get("deletion_safe") is False
+            and authority_successor.get("publication_closeout", {}).get("status")
+            == "COMPLETE_WITH_ACCEPTED_AND_EVIDENCE_DEPENDENT_GAPS",
+            "live authority-communications successor closeout is incomplete",
+        )
+    else:
+        require(
+            successor_validation.get("status") == "LOCAL_GREEN_REMOTE_PENDING"
+            and authority_successor.get("reviewed_head_sha") is None
+            and authority_successor.get("reviewed_tree_sha") is None
+            and authority_successor.get("merge_sha") is None
+            and authority_successor.get("merge_tree_sha") is None
+            and authority_successor.get("deployment_evidence") is None
+            and authority_successor.get("live_verification_evidence") is None
+            and successor_verification
+            == {
+                "source_prepared": True,
+                "exact_head_ci_green": False,
+                "merged": False,
+                "pages_deployed": False,
+                "live_http_readback": False,
+                "deletion_safe": False,
+            }
+            and authority_successor.get("publication_closeout", {}).get("status")
+            == "PENDING_MERGE_DEPLOYMENT_AND_EXACT_LIVE_READBACK",
+            "pending authority-communications successor overstates publication state",
+        )
     current_boundary_gap = current_lifecycle.get("accepted_publication_boundary_gap", {})
     require(
         current_boundary_gap.get("status") == "UNRESOLVED_ACCEPTED_FOR_THIS_RELEASE"
@@ -2598,25 +2842,21 @@ if not errors:
         == "archive/PROCEEDINGS_MASTER_REGISTER.csv"
         and current_boundary_gap.get("last_recorded_http_status") == 200
         and current_boundary_gap.get("current_source_base_sha256")
-        == hashlib.sha256(
-            (ROOT / "archive/PROCEEDINGS_MASTER_REGISTER.csv").read_bytes()
-        ).hexdigest()
+        == expected_successor_prior_hashes["archive/PROCEEDINGS_MASTER_REGISTER.csv"]
         and current_boundary_gap.get("post_deployment_http_and_hash_verification")
         == "VERIFIED_HTTP_200_EXACT_SHA256_MATCH"
         and current_boundary_gap.get("observed_at") == "2026-08-31T23:51:00Z"
         and current_boundary_gap.get("observed_content_type")
         == "text/csv; charset=utf-8"
         and current_boundary_gap.get("observed_bytes")
-        == (ROOT / "archive/PROCEEDINGS_MASTER_REGISTER.csv").stat().st_size
+        == 89948
         and current_boundary_gap.get("observed_sha256")
-        == hashlib.sha256(
-            (ROOT / "archive/PROCEEDINGS_MASTER_REGISTER.csv").read_bytes()
-        ).hexdigest()
+        == expected_successor_prior_hashes["archive/PROCEEDINGS_MASTER_REGISTER.csv"]
         and current_boundary_gap.get("intended_live_surface") is False
         and current_boundary_gap.get("included_in_live_urls") is False
         and current_boundary_gap.get("included_in_live_markers") is False
         and current_boundary_gap.get("deletion_safe") is False,
-        "current accepted CSV publication-boundary observation is incomplete or stale",
+        "historical accepted CSV publication-boundary observation is incomplete or stale",
     )
     require(
         current_lifecycle.get("validation", {}).get("status")
@@ -2728,10 +2968,14 @@ if not errors:
         and set(live_hashes) == set(expected_live_hash_paths)
         and all(
             live_hashes.get(route)
-            == hashlib.sha256((ROOT / path).read_bytes()).hexdigest()
+            == (
+                successor_changed[path].get("predecessor_live_sha256")
+                if path in successor_changed
+                else hashlib.sha256((ROOT / path).read_bytes()).hexdigest()
+            )
             for route, path in expected_live_hash_paths.items()
         ),
-        "current substantive-gap intended live-byte evidence is incomplete or stale",
+        "historical substantive-gap intended live-byte evidence is incomplete or has unregistered drift",
     )
     browser_evidence = live_evidence.get("browser_interaction", {})
     verification = current_lifecycle.get("verification", {})

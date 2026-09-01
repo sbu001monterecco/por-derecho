@@ -165,7 +165,18 @@ def build() -> dict[str, Any]:
     public_rows = [row for row in master_rows if row["Master_ID"] in public_ids]
     by_master = {row["Master_ID"]: row for row in public_rows}
     alias_index = build_alias_index(public_rows, assertions)
-    events = communications["events"]
+    # The canonical communications register now also contains a bounded set of
+    # non-Fiscalía public-authority events.  The Fiscalía graph keeps its
+    # historical denominator by excluding only the newly allocated authority
+    # batch; reused EPPO/Fiscalía receipts remain in scope.
+    non_fiscalia_authority_ids = set(
+        communications.get("authority_scan_control", {}).get("new_event_ids", [])
+    )
+    events = [
+        event
+        for event in communications["events"]
+        if event.get("event_id") not in non_fiscalia_authority_ids
+    ]
 
     if len(events) != EXPECTED_EVENTS:
         raise ValueError(f"expected {EXPECTED_EVENTS} communication events, found {len(events)}")
