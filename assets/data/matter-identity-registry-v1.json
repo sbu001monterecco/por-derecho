@@ -2,7 +2,7 @@
   "schema": "por-derecho.matter-identity-registry.v1",
   "registry_id": "PD-SP-IDENTITY-REGISTRY-001",
   "control_date": "2026-09-01",
-  "status": "CANONICAL_ACTOR_REGISTER_LA_LAGUNA_JUDICIAL_ACTORS_INDEXED_ARCHIVE_BACKFILL_OPEN",
+  "status": "CANONICAL_ACTOR_REGISTER_LA_LAGUNA_JUDICIAL_ACTORS_AND_AMHP_THREE_PROFESSIONALS_INDEXED_ARCHIVE_BACKFILL_OPEN",
   "id_formats": {
     "PERSON": "PD-SP-P-####",
     "ORGANISATION": "PD-SP-O-####",
@@ -19,7 +19,7 @@
     "Legal professionals and procuradores belong in the separate Professionals and representatives perimeter; representation does not make them part of the claimant/ownership perimeter or an adverse private party."
   ],
   "coverage": {
-    "state": "COMPLETE_FOR_CURRENT_CANONICAL_ACTOR_REGISTER_V2_GRAPH_AUTHORIZED_PROFESSIONAL_CENSUS_AND_SOURCE_IDENTIFIED_LA_LAGUNA_JUDICIAL_ACTORS",
+    "state": "COMPLETE_FOR_CURRENT_CANONICAL_ACTOR_REGISTER_V2_GRAPH_AUTHORIZED_PROFESSIONAL_CENSUS_SOURCE_IDENTIFIED_LA_LAGUNA_JUDICIAL_ACTORS_AND_AMHP_THREE_PROFESSIONAL_IDENTITY_SET",
     "archive_backfill": "OPEN",
     "required_names": [
       "Construcciones Acosta Matos, S.A.",
@@ -61,6 +61,11 @@
       "Ricardo Molina Betancor",
       "Miguel Molina Betancor",
       "Francisco de Borja Rodríguez-Batllori Laffitte",
+      "Eduardo Sánchez Iglesias",
+      "Enrique Guerra Suárez",
+      "San Telmo Abogados y Economistas, S.L.P.",
+      "RSM Spain Asesores Legales y Tributarios, S.L.P.",
+      "Grant Thornton Canarias, S.L.",
       "Carlos Caimi Vicente",
       "Celia Guillén Pérez",
       "Gervasio Manuel González García",
@@ -165,9 +170,9 @@
     ]
   },
   "counts": {
-    "total": 339,
-    "PERSON": 160,
-    "ORGANISATION": 83,
+    "total": 344,
+    "PERSON": 162,
+    "ORGANISATION": 86,
     "STRUCTURE": 11,
     "INSTITUTION": 42,
     "PROCEEDING": 43
@@ -178,13 +183,18 @@
     {"path": "matter-identity-registry-v1.joan-cruz.json", "type": "PERSON", "count": 1},
     {"path": "matter-identity-registry-v1.la-laguna-judicial-people.json", "type": "PERSON", "count": 11},
     {"path": "matter-identity-registry-v1.dp748-professional-people.json", "type": "PERSON", "count": 3},
+    {"path": "matter-identity-registry-v1.amph-three-professionals.json", "type": "PERSON", "count": 2},
     {"path": "matter-identity-registry-v1.organisations.json", "type": "ORGANISATION", "count": 76},
     {"path": "matter-identity-registry-v1.professional-organisations.json", "type": "ORGANISATION", "count": 7},
+    {"path": "matter-identity-registry-v1.amph-professional-organisations.json", "type": "ORGANISATION", "count": 3},
     {"path": "matter-identity-registry-v1.structures.json", "type": "STRUCTURE", "count": 11},
     {"path": "matter-identity-registry-v1.institutions.json", "type": "INSTITUTION", "count": 36},
     {"path": "matter-identity-registry-v1.dp3205-institutions.json", "type": "INSTITUTION", "count": 1},
     {"path": "matter-identity-registry-v1.la-laguna-judicial-institutions.json", "type": "INSTITUTION", "count": 5},
     {"path": "matter-identity-registry-v1.proceedings.json", "type": "PROCEEDING", "count": 42},
     {"path": "matter-identity-registry-v1.dp3205-proceedings.json", "type": "PROCEEDING", "count": 1}
+  ],
+  "resolution_overlays": [
+    "matter-identity-resolution-overlays-amph-three-professionals-20260901.json"
   ]
 }
