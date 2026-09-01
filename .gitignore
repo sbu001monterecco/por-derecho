@@ -15,9 +15,9 @@ chatgpt-export*.zip
 /artifacts/acta-source-contact-sheets/
 
 # Cuatrecasas private working artifacts — never publish from this repository.
-CUATRECAS_TIMECARD_TRANSCRIPTION_WORKING_*.csv
-CUATRECAS_DISBURSEMENT_TRANSCRIPTION_WORKING_*.csv
-CUATRECAS_BILLING_ACCOUNT_AND_EXPLANATION_DRAFT_*.md
+CUATRECASAS_TIMECARD_TRANSCRIPTION_WORKING_*.csv
+CUATRECASAS_DISBURSEMENT_TRANSCRIPTION_WORKING_*.csv
+CUATRECASAS_BILLING_ACCOUNT_AND_EXPLANATION_DRAFT_*.md
 
 # Legal-adviser intake / work product — quarantine outside Git; never publish.
 .private-legal/
