@@ -51,7 +51,7 @@ try {
       const body = await page.locator('body').innerText();
       if (!body.includes(route.boundary) || !body.includes(route.caret)) fail(`${route.lang}/${width}: attribution or caret boundary missing`);
       if (!body.includes(route.direct) || !body.includes(route.notice)) fail(`${route.lang}/${width}: direct criminal attribution or Intervención checkpoint missing`);
-      if (await page.locator('.pd-ucf-metric').count() !== 10) fail(`${route.lang}/${width}: denominator crosswalk did not render 10 metrics`);
+      if (await page.locator('.pd-ucf-metric').count() !== 11) fail(`${route.lang}/${width}: denominator crosswalk did not render 11 metrics`);
       if (await page.locator('.pd-ucf-class').count() !== 7) fail(`${route.lang}/${width}: evidence legend did not render 7 classes`);
       if (await page.locator('[data-ucf-node]').count() !== 12) fail(`${route.lang}/${width}: reverse chain did not render 12 nodes`);
       if (await page.locator('[data-ucf-authority-stage]').count() !== 10) fail(`${route.lang}/${width}: authority chain did not render 10 stages`);
@@ -75,8 +75,14 @@ try {
       await page.locator('[data-ucf-gap-priority]').selectOption('P1');
       if (await page.locator('[data-ucf-gap]').count() !== 2) fail(`${route.lang}/${width}: P1 filter should show 2 gaps`);
       await page.locator('[data-ucf-gap-priority]').selectOption('');
-      const overflow = await page.evaluate(() => document.documentElement.scrollWidth - document.documentElement.clientWidth);
-      if (overflow > 2) fail(`${route.lang}/${width}: horizontal overflow ${overflow}px`);
+      const overflow = await page.evaluate(() => ({
+        width: document.documentElement.scrollWidth - document.documentElement.clientWidth,
+        offenders: Array.from(document.querySelectorAll('body *')).map((node) => {
+          const rect = node.getBoundingClientRect();
+          return { tag: node.tagName, className: node.className, right: Math.round(rect.right), left: Math.round(rect.left) };
+        }).filter((item) => item.right > innerWidth + 2 || item.left < -2).slice(0, 12),
+      }));
+      if (overflow.width > 2) fail(`${route.lang}/${width}: horizontal overflow ${overflow.width}px ${JSON.stringify(overflow.offenders)}`);
       if (errors.length) fail(`${route.lang}/${width}: browser errors: ${errors.join(' | ')}`);
       await page.close();
     }
@@ -111,9 +117,8 @@ try {
     await page.goto(`${base}${path}`, { waitUntil: 'domcontentloaded', timeout: 60000 });
     const reciprocal = page.locator('[data-ucf-authority-propagation-link="PD-UCF-20260901-01"]');
     if (await reciprocal.count() !== 1) fail(`${path}: authority-propagation reciprocal control missing`);
-    const href = await reciprocal.locator('a').getAttribute('href');
-    if (!href?.includes('#unitary-authority-propagation')) fail(`${path}: authority-propagation anchor missing`);
     const checkpointHrefs = await reciprocal.locator('a').evaluateAll((nodes) => nodes.map((node) => node.getAttribute('href')));
+    if (!checkpointHrefs.some((value) => value?.includes('#unitary-authority-propagation'))) fail(`${path}: authority-propagation anchor missing`);
     if (!checkpointHrefs.some((value) => value?.includes('#evidence-PD-EV-UCF-INT-184368-2026'))) fail(`${path}: Intervención evidence anchor missing`);
     await page.close();
   }
