@@ -34,14 +34,28 @@
       "id": "PD-SP-O-0086",
       "type": "ORGANISATION",
       "name": "Grant Thornton Canarias, S.L.",
-      "aliases": ["Grant Thornton Canarias"],
+      "aliases": ["Grant Thornton Canarias", "Grant Thornton Canarias, S.L.P.", "Grant Thornton Canarias, Sociedad Limitada Profesional"],
       "identity_resolution": "CARET_CONFIRMED",
+      "tax_identifier": "B67834002",
       "registry_sheet": "GC 59943",
+      "legal_form_history": [
+        {
+          "through": "2025-10-22",
+          "name": "Grant Thornton Canarias, S.L.P.",
+          "source": "BORME-A-2025-207-35 entry 473588"
+        },
+        {
+          "from": "2025-10-22",
+          "name": "Grant Thornton Canarias, S.L.",
+          "source": "BORME-A-2025-207-35 entry 473588 — transformation to Sociedad Limitada"
+        }
+      ],
       "identity_sources": [
+        "BORME-A-2025-207-35 entry 473588 documenting transformation of the same sheet from Grant Thornton Canarias, S.L.P. to Grant Thornton Canarias, S.L.",
         "Grant Thornton Informe de Transparencia 2025 identifying Grant Thornton Canarias, S.L. and its business purpose/group relationship",
         "BORME-A-2026-81-35 entries 207261-207262 for Grant Thornton Canarias, Sociedad Limitada, hoja GC 59943"
       ],
-      "capacity_boundary": "Exact current Canary legal-person identity only. It does not establish that Francisco de Borja Rodríguez-Batllori Laffitte was employed by, a partner of, or represented by this entity. The March-April 2018 Grant Thornton correspondence must be read by exact sender, client and mandate; firm proximity does not transfer knowledge or responsibility."
+      "capacity_boundary": "Exact Canary legal-person identity and legal-form continuity only. It does not establish that Francisco de Borja Rodríguez-Batllori Laffitte was employed by, a partner of, or represented by this entity. The March-April 2018 Grant Thornton correspondence must be read by exact sender, client and mandate; firm proximity does not transfer knowledge or responsibility."
     }
   ]
 }
