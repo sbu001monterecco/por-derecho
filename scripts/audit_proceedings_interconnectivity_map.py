@@ -2416,9 +2416,9 @@ if not errors:
     }
     require(recovery_companions <= set(lifecycle.get("expected_source_files", [])), "lifecycle recovery set omits a proceeding companion control")
 
-    # The 30-August manifest above remains immutable live evidence.  This new
-    # release has its own lifecycle and is intentionally only prepared until
-    # exact-head CI, merge, Pages and live readback produce later evidence.
+    # The 30-August manifest above remains immutable live evidence.  The
+    # corrective 31-August release has its own exact PR/head/tree, merge, Pages
+    # and live-readback evidence and must retain its qualified live state.
     require(
         current_lifecycle.get("schema") == "por-derecho.publication-manifest.v1"
         and current_lifecycle.get("publication_id")
@@ -2437,10 +2437,10 @@ if not errors:
         "current substantive-gap lifecycle does not pin schema/data versions 1.7.0/1.1.0",
     )
     require(
-        current_lifecycle.get("current_state") == "PREPARED_PENDING_MERGE"
+        current_lifecycle.get("current_state") == "LIVE_VERIFIED"
         and current_lifecycle.get("state")
-        == "PREPARED_PENDING_MERGE_WITH_ACCEPTED_PUBLICATION_BOUNDARY_GAP",
-        "current substantive-gap lifecycle must remain PREPARED_PENDING_MERGE before publication",
+        == "LIVE_VERIFIED_WITH_ACCEPTED_PUBLICATION_BOUNDARY_GAP",
+        "current substantive-gap lifecycle qualified live state changed",
     )
     current_baseline = current_lifecycle.get("baseline_denominator", {})
     expected_current_baseline = {
@@ -2498,8 +2498,8 @@ if not errors:
         and current_targets.get("fiscalia_office_file_matrix_profiled_rows") == "8_OF_24"
         and current_targets.get("fiscalia_response_episodes")
         == "9_OF_9_INCLUDING_8_MATRIX_ROWS_PLUS_1_JUDICIAL_FILE_PROFILE"
-        and current_targets.get("shared_proposition_coordinate_coverage") == "26_OF_97"
-        and current_targets.get("shared_proposition_no_coordinate_gap") == "71_OF_97"
+        and current_targets.get("shared_proposition_coordinate_coverage") == "43_OF_97"
+        and current_targets.get("shared_proposition_no_coordinate_gap") == "54_OF_97"
         and current_targets.get("dedicated_narrative_dossier_coverage")
         == "PARTIAL_SEPARATE_POSITIVE_COUNT",
         "current substantive-gap manifest conflates structural coverage with positive evidence",
@@ -2602,7 +2602,16 @@ if not errors:
             (ROOT / "archive/PROCEEDINGS_MASTER_REGISTER.csv").read_bytes()
         ).hexdigest()
         and current_boundary_gap.get("post_deployment_http_and_hash_verification")
-        == "PENDING"
+        == "VERIFIED_HTTP_200_EXACT_SHA256_MATCH"
+        and current_boundary_gap.get("observed_at") == "2026-08-31T23:51:00Z"
+        and current_boundary_gap.get("observed_content_type")
+        == "text/csv; charset=utf-8"
+        and current_boundary_gap.get("observed_bytes")
+        == (ROOT / "archive/PROCEEDINGS_MASTER_REGISTER.csv").stat().st_size
+        and current_boundary_gap.get("observed_sha256")
+        == hashlib.sha256(
+            (ROOT / "archive/PROCEEDINGS_MASTER_REGISTER.csv").read_bytes()
+        ).hexdigest()
         and current_boundary_gap.get("intended_live_surface") is False
         and current_boundary_gap.get("included_in_live_urls") is False
         and current_boundary_gap.get("included_in_live_markers") is False
@@ -2611,15 +2620,146 @@ if not errors:
     )
     require(
         current_lifecycle.get("validation", {}).get("status")
-        == "PENDING_EXACT_HEAD_CI"
-        and current_lifecycle.get("pull_request") is None
-        and current_lifecycle.get("reviewed_head_sha") is None
-        and current_lifecycle.get("reviewed_tree_sha") is None
-        and current_lifecycle.get("merge_sha") is None
-        and current_lifecycle.get("deployment_evidence") is None
-        and current_lifecycle.get("live_urls") == []
-        and current_lifecycle.get("live_markers") == {},
-        "current lifecycle claims publication evidence before PR/CI/merge/deployment",
+        == "EXACT_HEAD_AND_EXACT_MERGE_PUSH_CI_GREEN"
+        and current_lifecycle.get("pull_request", {}).get("number") == 1282
+        and current_lifecycle.get("pull_request", {}).get("status") == "MERGED"
+        and current_lifecycle.get("reviewed_head_sha")
+        == "9adb0ed41ebb6cbe4f36420c2cb32f39d16d2215"
+        and current_lifecycle.get("reviewed_tree_sha")
+        == "eeb0f7aeebf1d5dbfda425553088a9774f9cb2c3"
+        and current_lifecycle.get("merge_sha")
+        == "d8940e5a7e2d9073a8117b2342e20205bfab7653"
+        and current_lifecycle.get("merge_tree_sha")
+        == current_lifecycle.get("reviewed_tree_sha")
+        and current_lifecycle.get("deployment_evidence", {}).get("run_id")
+        == 33452158130
+        and current_lifecycle.get("deployment_evidence", {}).get("head_sha")
+        == current_lifecycle.get("merge_sha")
+        and current_lifecycle.get("deployment_evidence", {}).get("status")
+        == "COMPLETED_SUCCESS"
+        and len(current_lifecycle.get("live_urls", [])) == 6
+        and current_lifecycle.get("live_markers", {}).get(
+            "exact_file_decision_dependency"
+        )
+        == "97_OF_97"
+        and current_lifecycle.get("live_markers", {}).get(
+            "exact_file_fragmentation_audit"
+        )
+        == "97_OF_97"
+        and current_lifecycle.get("live_markers", {}).get(
+            "shared_proposition_membership"
+        )
+        == "43_OF_97_WITH_54_GAPS",
+        "current lifecycle exact PR/CI/merge/Pages evidence is incomplete or stale",
+    )
+    live_release_denominator = current_lifecycle.get("live_release_denominator", {})
+    require(
+        live_release_denominator.get("canonical_rows") == CURRENT_CANONICAL_RECORDS
+        and live_release_denominator.get("public_rows") == CURRENT_PUBLIC_RECORDS
+        and live_release_denominator.get("canonical_exact_proceedings")
+        == CURRENT_CANONICAL_EXACT
+        and live_release_denominator.get("public_exact_proceedings")
+        == CURRENT_PUBLIC_EXACT
+        and live_release_denominator.get("private_exact_excluded")
+        == CURRENT_PRIVATE_EXACT
+        and live_release_denominator.get("public_exact_dispositions")
+        == "VERIFIED_97_OF_97"
+        and live_release_denominator.get("direct_relationship_pairs")
+        == CURRENT_DIRECT_PAIRS
+        and live_release_denominator.get(
+            "direct_relationship_pairs_source_verified"
+        )
+        == CURRENT_VERIFIED_DIRECT_PAIRS
+        and live_release_denominator.get(
+            "direct_relationship_pairs_source_reported_primary_pending"
+        )
+        == CURRENT_PENDING_DIRECT_PAIRS
+        and live_release_denominator.get("material_context_clusters")
+        == len(context_clusters)
+        and live_release_denominator.get("explicit_matrix_coordinates")
+        == len(cells)
+        and live_release_denominator.get(
+            "exact_file_decision_dependency_and_fragmentation_audit"
+        )
+        == "VERIFIED_97_OF_97"
+        and live_release_denominator.get(
+            "case_prism_exact_proceedings_with_shared_proposition_coordinate"
+        )
+        == CURRENT_CASE_PRISM_EXACT_COVERED
+        and live_release_denominator.get(
+            "case_prism_exact_proceedings_without_shared_proposition_coordinate"
+        )
+        == CURRENT_CASE_PRISM_EXACT_UNCOVERED
+        and live_release_denominator.get("audience_lenses") == 9
+        and live_release_denominator.get("institutional_positive_source_profiles")
+        == 9
+        and live_release_denominator.get("actor_specific_positive_profiles") == 0,
+        "current substantive-gap live-release denominator is incomplete or stale",
+    )
+    live_evidence = current_lifecycle.get("live_verification_evidence", {})
+    live_hashes = live_evidence.get("critical_sha256", {})
+    expected_live_hash_paths = {
+        "en/proceedings-map/": "en/proceedings-map/index.html",
+        "es/mapa-procedimientos/": "es/mapa-procedimientos/index.html",
+        "assets/proceedings-interconnectivity-map-20260830.js": "assets/proceedings-interconnectivity-map-20260830.js",
+        "assets/proceedings-interconnectivity-map-20260830.css": "assets/proceedings-interconnectivity-map-20260830.css",
+        "assets/data/proceedings-case-prism-v1.json": "assets/data/proceedings-case-prism-v1.json",
+        "assets/data/proceedings-interlinkability-v1.json": "assets/data/proceedings-interlinkability-v1.json",
+        "assets/data/proceedings-master-public-v1.json": "assets/data/proceedings-master-public-v1.json",
+        "assets/data/fiscalia-proceedings-interconnectivity-v1.json": "assets/data/fiscalia-proceedings-interconnectivity-v1.json",
+        "assets/data/community-acta-authority-interconnectivity-v1.json": "assets/data/community-acta-authority-interconnectivity-v1.json",
+        "en/master-proceedings-register/": "en/master-proceedings-register/index.html",
+        "es/registro-maestro-procedimientos/": "es/registro-maestro-procedimientos/index.html",
+        "en/": "en/index.html",
+        "es/": "es/index.html",
+        "en/public-authority-unitary-case-reconstruction/": "en/public-authority-unitary-case-reconstruction/index.html",
+        "es/reconstruccion-unitaria-autoridades-publicas/": "es/reconstruccion-unitaria-autoridades-publicas/index.html",
+    }
+    require(
+        live_evidence.get("observed_at") == "2026-08-31T23:51:00Z"
+        and live_evidence.get("method")
+        == "CACHE_BUSTED_HTTP_READBACK_AND_EXACT_LOCAL_BYTE_COMPARISON"
+        and live_evidence.get("intended_critical_resource_count")
+        == len(expected_live_hash_paths)
+        and live_evidence.get("intended_http_200_count")
+        == len(expected_live_hash_paths)
+        and live_evidence.get("intended_exact_byte_match_count")
+        == len(expected_live_hash_paths)
+        and set(live_hashes) == set(expected_live_hash_paths)
+        and all(
+            live_hashes.get(route)
+            == hashlib.sha256((ROOT / path).read_bytes()).hexdigest()
+            for route, path in expected_live_hash_paths.items()
+        ),
+        "current substantive-gap intended live-byte evidence is incomplete or stale",
+    )
+    browser_evidence = live_evidence.get("browser_interaction", {})
+    verification = current_lifecycle.get("verification", {})
+    require(
+        browser_evidence.get("basis")
+        == "EXACT_MERGE_TREE_THEN_EXACT_LIVE_BYTE_IDENTITY"
+        and browser_evidence.get("run_id") == 33452159009
+        and browser_evidence.get("job_id") == 99684249593
+        and browser_evidence.get("english")
+        == "PASS_228_CELL_MATRIX_SWIMLANE_97_FILE_ISOLATION_TRACE_MOBILE"
+        and browser_evidence.get("spanish")
+        == "PASS_228_CELL_MATRIX_SWIMLANE_97_FILE_ISOLATION_TRACE_MOBILE"
+        and browser_evidence.get("actor_source_receipt_knowledge_separation")
+        == "PASS"
+        and browser_evidence.get("finite_test_fail_closed_mutations")
+        == "PASS_16_OF_16"
+        and verification.get("source_prepared") is True
+        and verification.get("exact_head_ci_green") is True
+        and verification.get("merged") is True
+        and verification.get("pages_deployed") is True
+        and verification.get("live_http_readback") is True
+        and verification.get("live_browser_interaction")
+        == "VERIFIED_BY_EXACT_DEPLOYED_BYTE_IDENTITY_TO_INTERACTIVELY_TESTED_MERGE_TREE"
+        and verification.get("independent_second_live_browser_execution") is False
+        and verification.get("deletion_safe") is False
+        and current_lifecycle.get("publication_closeout", {}).get("status")
+        == "COMPLETE_WITH_ACCEPTED_AND_EVIDENCE_DEPENDENT_GAPS",
+        "current substantive-gap qualified verification/closeout record is incomplete",
     )
     current_required_paths = {
         "assets/data/proceedings-interlinkability-v1.json",
@@ -2629,6 +2769,7 @@ if not errors:
         "scripts/build_proceedings_interlinkability_v1.py",
         "scripts/audit_proceedings_interconnectivity_map.py",
         "scripts/smoke_proceedings_case_prism.mjs",
+        "archive/DEPLOYMENT_LOG.md",
         "publication-manifests/all-proceedings-interlinkability-20260830.json",
         "publication-manifests/case-prism-substantive-gap-closure-20260831.json",
         "docs/deletion-audits/2026-08-31-case-prism-substantive-gap-closure-continuity.md",
