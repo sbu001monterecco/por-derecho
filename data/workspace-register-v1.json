@@ -57,7 +57,7 @@
     {
       "workspace_id": "PD-WS-20260901-0003",
       "title": "Automatic workspace persistence runtime and private-vault implementation",
-      "status": "DELETION_SAFE_WITH_OPEN_WORK",
+      "status": "HANDOFF_READY_RECONCILED_PR_OPEN",
       "current_handoff_id": "PD-WCH-20260901-AWP-RUNTIME-001",
       "handoff_path": "archive/handoffs/2026-09-01-automatic-workspace-persistence-runtime-handoff.md",
       "machine_handoff_path": "archive/handoffs/2026-09-01-automatic-workspace-persistence-runtime-handoff.json",
@@ -72,7 +72,7 @@
         "CONCURRENT_WORKSPACES"
       ],
       "repository": "sbu001monterecco/por-derecho",
-      "public_private_boundary": "PUBLIC_REPO_CONTAINS_RUNTIME_AND_SOURCE_SAFE_STATE; PRIVATE_GOOGLE_DRIVE_VAULT_OWNER_ONLY_NOT_SHARED_AT_CREATION; VALIDATED SEED SNAPSHOT PRESENT; NO RAW CHATGPT EXPORT IMPORTED",
+      "public_private_boundary": "PUBLIC_REPO_CONTAINS_RUNTIME_AND SOURCE_SAFE_STATE; PRIVATE_GOOGLE_DRIVE_VAULT_OWNER_ONLY_NOT_SHARED_AT_CREATION; VALIDATED_SEED_SNAPSHOT_PRESENT; NO_RAW_CHATGPT_EXPORT_IMPORTED",
       "continuous_capture_mode": "CONNECTED_AGENTIC_CHECKPOINTING_PLUS_APPEND_ONLY_RUNTIME",
       "private_vault": {
         "provider": "GOOGLE_DRIVE",
@@ -86,7 +86,8 @@
         "seed_bytes": 10803,
         "seed_state": "VALIDATED_UPLOADED_PRIVATE"
       },
-      "implementation_pr": "SUPERSEDES_CONFLICTED_PR_1316_WITH_RECONCILED_CURRENT_MAIN_PR",
+      "implementation_pr": 1317,
+      "superseded_pr": 1316,
       "next_target_mode": "LIVE_PRIVATE_FILESYSTEM_OR_DRIVE_ADAPTER_THEN_TRUE_EVENT_SOURCED_CLIENT"
     }
   ],
@@ -102,6 +103,8 @@
     "collided_provisional_id": "PD-WS-20260901-0002",
     "main_registered_owner": "Authority discovery / Red SARA workspace",
     "renumbered_workspace": "PD-WS-20260901-0003",
+    "superseded_pr": 1316,
+    "reconciled_pr": 1317,
     "result": "RESOLVED_WITHOUT_SILENT_OVERWRITE"
   }
 }
