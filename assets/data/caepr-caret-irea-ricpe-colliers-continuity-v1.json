@@ -4,6 +4,12 @@
   "control_date": "2026-08-28",
   "scope": "Identity-eligible people, organisations and the hotel establishment in the IREA-Meridian-Sun Park, Fernando Aguiar Acosta RICPE-Belagua/ACHM-Colliers, Laura Aguiar Acosta-Canarian Hospitality-RICPE-financed hotel and AC Hotel Tenerife presentation",
   "legend": "^ means exact identity resolved. It does not prove a relationship, knowledge, intent, control, wrongdoing or liability.",
+  "event_and_proceeding_control": "assets/data/aguiar-acosta-person-event-proceeding-control-v1.json",
+  "aguiar_person_event_state": {
+    "Fernando Aguiar Acosta": {"caepr_id":"PD-SP-P-0088","caret_state":"CARET_CONFIRMED","dated_event_count":4,"proceeding_context_count":3},
+    "Laura Aguiar Acosta": {"caepr_id":"PD-SP-P-0095","caret_state":"CARET_CONFIRMED","dated_event_count":2,"proceeding_context_count":3},
+    "procedural_boundary":"The linked proceeding references are contextual navigation/records-custody links. No direct procedural act is attributed to either person without a source proving that act."
+  },
   "records": [
     {"object_key":"AWESWELL","label":"Aweswell Limited","type":"ORGANISATION","state":"CARET_CONFIRMED","caepr_id":"PD-SP-O-0001"},
     {"object_key":"LPB","label":"Luchy Playa Blanca, S.L.U.","type":"ORGANISATION","state":"CARET_CONFIRMED","caepr_id":"PD-SP-O-0002"},
@@ -43,8 +49,8 @@
     {"label":"Sun Park, currently marketed as MYND Yaiza (RICPE source: former Sun Park)","classification":"HOTEL_ESTABLISHMENT_AND_BRAND_LABEL_NOT_SEPARATELY_CARET_CONTROLLED"},
     {"label":"Radisson Blu Resort Lanzarote","classification":"HOTEL_ESTABLISHMENT_AND_BRAND_LABEL_NOT_SEPARATELY_CARET_CONTROLLED"},
     {"label":"AC Hotels by Marriott","classification":"BRAND_LABEL_NOT_SEPARATE_LEGAL_PERSON_IN_THIS CONTROL"},
-    {"label":"Marriott International group","classification":"SOURCE_DESCRIBED_CORPORATE_GROUP; SHAREHOLDER LEGAL-PERSON FORM NOT SEPARATELY RESOLVED"},
+    {"label":"Marriott International group","classification":"SOURCE_DESCRIBED_CORPORATE_GROUP; SHAREHOLDER LEGAL-PERSON FORM NOT_SEPARATELY_RESOLVED"},
     {"label":"BELAGUA 2013 SL","classification":"AEAT SOURCE-LITERAL LEGAL-FORM DISCREPANCY; CURRENT BORME IDENTITY CONTROLLED AS BELAGUA 2013, S.A."}
   ],
-  "verdict": "FINITE IDENTITY CENSUS COMPLETE; 20/20 CARET_CONFIRMED; GROUP/BRAND/SOURCE-FORM EXCEPTIONS CONTROLLED; DIRECT LAURA-RICPE EMPLOYMENT NOT SHOWN; FERNANDO-LAURA SIBLING CLAIM AND WIDER FAMILY RELATIONSHIPS REMAIN UNVERIFIED"
+  "verdict": "FINITE IDENTITY CENSUS COMPLETE; 20/20 CARET_CONFIRMED; FERNANDO PD-SP-P-0088 AND LAURA PD-SP-P-0095 NOW LINK TO DATED EVENT/PROCEEDING CONTROL; GROUP/BRAND/SOURCE-FORM EXCEPTIONS CONTROLLED; DIRECT LAURA-RICPE EMPLOYMENT NOT SHOWN; FERNANDO-LAURA SIBLING CLAIM AND WIDER FAMILY RELATIONSHIPS REMAIN UNVERIFIED"
 }
