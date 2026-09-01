@@ -51,7 +51,7 @@ try {
       const body = await page.locator('body').innerText();
       if (!body.includes(route.boundary) || !body.includes(route.caret)) fail(`${route.lang}/${width}: attribution or caret boundary missing`);
       if (!body.includes(route.direct) || !body.includes(route.notice)) fail(`${route.lang}/${width}: direct criminal attribution or Intervención checkpoint missing`);
-      if (await page.locator('.pd-ucf-metric').count() !== 10) fail(`${route.lang}/${width}: denominator crosswalk did not render 10 metrics`);
+      if (await page.locator('.pd-ucf-metric').count() !== 11) fail(`${route.lang}/${width}: denominator crosswalk did not render 11 metrics`);
       if (await page.locator('.pd-ucf-class').count() !== 7) fail(`${route.lang}/${width}: evidence legend did not render 7 classes`);
       if (await page.locator('[data-ucf-node]').count() !== 12) fail(`${route.lang}/${width}: reverse chain did not render 12 nodes`);
       if (await page.locator('[data-ucf-authority-stage]').count() !== 10) fail(`${route.lang}/${width}: authority chain did not render 10 stages`);
