@@ -1,0 +1,96 @@
+{
+  "schema": "por-derecho.event-continuity-repository-digest-and-action.v1",
+  "control_id": "PD-ECRD-001",
+  "control_date": "2026-09-01",
+  "status": "ACTIVE_MANDATORY_OPERATING_PROTOCOL",
+  "human_control": "/.github/governance/EVENT_CONTINUITY_REPOSITORY_DIGEST_AND_ACTION_PROTOCOL_01SEP2026.md",
+  "applies_to": [
+    "MATERIAL_CHRONOLOGY_EVENT",
+    "INCIDENT_REGISTER_EVENT",
+    "PROCEEDING_EVENT",
+    "ACTA_EVENT",
+    "PUBLIC_AUTHORITY_EVENT",
+    "OUTGOING_FILING_EVENT",
+    "INCOMING_RESPONSE_EVENT",
+    "TRANSACTION_OR_FINANCE_EVENT",
+    "PROFESSIONAL_OR_ACTOR_RELATIONSHIP_EVENT",
+    "PUBLICATION_OR_CORRECTION_EVENT"
+  ],
+  "required_lanes": [
+    "CURRENT_MAIN_ROUTING",
+    "REPOSITORY_GITHUB_DIGEST",
+    "IDENTITY_CARET_AUDIT",
+    "SOURCE_PROVENANCE_CONTRARY_RECORD",
+    "CHRONOLOGY_CAUSAL_BRIDGES",
+    "PROCEEDING_FILING_AUTHORITY_REGISTER",
+    "ASSET_MONEY_ROLE_LANE",
+    "INTERLINK_DISCOVERABILITY",
+    "PUBLIC_PRIVATE_PUBLICATION_STATE",
+    "REPAIR_VALIDATE_VERIFY",
+    "NEXT_ACTIONS_CONTINUITY_CHECKPOINT"
+  ],
+  "statuses": [
+    "DONE",
+    "OPEN_SOURCE_REQUIRED",
+    "OPEN_REPOSITORY_RECONCILIATION",
+    "OPEN_IDENTITY_RESOLUTION",
+    "OPEN_INTERLINK",
+    "OPEN_PUBLICATION_VERIFICATION",
+    "BLOCKED_AUTHORITY_OR_PRIVACY",
+    "NOT_APPLICABLE",
+    "SUPERSEDED"
+  ],
+  "mandatory_rule": "Every controlled material event must contain or point to a finite EVENT_DIGEST_ACTIONS list covering every required lane. A lane may be NOT_APPLICABLE but may not be silently omitted.",
+  "repository_digest_minimum": {
+    "current_main_reconciled": true,
+    "current_start_here_read": true,
+    "relevant_specialist_controls_read": true,
+    "event_date_reference_names_aliases_searched": true,
+    "relevant_pr_commit_history_checked": true,
+    "finite_search_denominator_recorded": true
+  },
+  "identity_minimum": {
+    "enumerate_all_named_people_organisations_institutions_and_proceedings": true,
+    "resolve_immutable_ids": true,
+    "record_caret_state": true,
+    "record_dated_capacity_separately_from_identity": true,
+    "check_alias_homonym_legal_form_and_not_same_as": true,
+    "repair_safe_identity_gaps_when_in_scope": true,
+    "caret_resolution_companion": "/assets/data/matter-identity-caret-resolution-v1.json"
+  },
+  "filing_and_response_rule": "Where relevant, outgoing filing, each attachment, authority receipt/registration, substantive response, later procedural use and final/current status are separate registered objects and must be cross-linked rather than collapsed into one event.",
+  "publication_rule": "Repository source, build/deploy state and live Pages state are separate. External connected-source material is not presumed public or continuously synchronised.",
+  "repair_rule": "REPAIR_DONT_JUST_REPORT applies to safe in-scope defects; unrelated unresolved evidence remains visible and does not become a universal publication freeze.",
+  "enforcement": {
+    "operating_protocol": "MANDATORY",
+    "new_hard_ci_gate": false,
+    "reason": "AGENTS.md requires separate explicit authority and shadow validation before activating new repository-wide hard enforcement."
+  },
+  "event_template": {
+    "event_id": "REQUIRED",
+    "event_date": "REQUIRED_OR_BOUNDED",
+    "event_label": "REQUIRED",
+    "context_ids": [],
+    "actors": [
+      {
+        "id": "PD-SP-P-####",
+        "caret_state": "CARET_CONFIRMED_OR_PENDING",
+        "capacity": "DATED_SOURCE_CONTROLLED_CAPACITY"
+      }
+    ],
+    "sources": [],
+    "evidence_state": "REQUIRED",
+    "predecessor_event_ids": [],
+    "successor_event_ids": [],
+    "contrary_or_limiting_record": [],
+    "event_digest_actions": [
+      {
+        "seq": 1,
+        "lane": "CURRENT_MAIN_ROUTING",
+        "status": "DONE",
+        "target": "current main and routing controls"
+      }
+    ],
+    "continuity_state": "OPEN_OR_COMPLETE"
+  }
+}
