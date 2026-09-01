@@ -138,3 +138,21 @@ A successor thread should read `CURRENT_WORKSPACE_HANDOFF.md`, select `PD-WS-202
 **DELETION-SAFE WITH OPEN WORK.**
 
 The implementation, exact release identity, tests, check outcome, private seed identity, collision correction, privacy boundary, limitations and next phase are all durably recorded. No unique substantive state identified for this workspace is known to remain dependent on the originating chat.
+
+## 11. Fail-closed identity-registry parity repair
+
+The closeout checks exposed a separate concurrent-publication mismatch after the canonical identity registry advanced through another merged workstream. The canonical denominator had become **314 identities / 145 people / 79 organisations / 11 structures / 36 institutions / 43 proceedings**, while the bilingual static registry pages and the unitary-state mirror still displayed the former 313/144 denominator.
+
+The closeout did not waive that failure. It added the idempotent structural synchronizer:
+
+- `scripts/sync_matter_identity_registry_static.py`
+
+The synchronizer derives the bilingual page metadata, JSON-LD, visible counters, coverage text, control date and `ops/CURRENT_UNITARY_STATE.json` identity mirror from the canonical JSON. It also migrated the legacy DP3205 validator from a hard-coded 31-August date to the canonical registry date.
+
+Generated parity commit:
+
+- `41726f416be8b3ff5c1d5bddbf3f6cbf8947625e`
+- workflow run `33520251006`
+- result: `SUCCESS`
+
+After generation, both language pages show the 1 September 2026 denominator of 314/145/79/11/36/43, the unitary-state mirror matches it, the DP3205 validation passes, and the one-shot temporary workflow deleted itself. This repair remains a source-parity correction; it is not a new claim about any identity's acts, knowledge or responsibility.
