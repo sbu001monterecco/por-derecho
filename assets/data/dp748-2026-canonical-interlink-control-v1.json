@@ -1,0 +1,47 @@
+{
+  "schema":"por-derecho.dp748-2026-canonical-interlink-control.v1",
+  "as_of":"2026-09-01",
+  "status":"SOURCE_RECONCILED_CONTROLLING_INTERLINK_OVERLAY",
+  "governance":[".github/governance/CAEPR_CARET_IDENTITY_AND_ALL_IS_VERIFICATION_PROTOCOL_26AUG2026.md","archive/PROCEEDINGS_MASTER_REGISTER_PROTOCOL.md","archive/COUNSEL_PROCURADOR_FILING_LINEAGE_GOVERNANCE_30AUG2026.md"],
+  "proceeding":{
+    "master_id":"TF-CRI-003",
+    "caepr_id":"PD-SP-R-0003",
+    "canonical_label":"DP 748/2026 — La Laguna",
+    "procedure":"Diligencias Previas",
+    "number":"0000748/2026",
+    "nig":"3802343220260002351",
+    "jurisdiction":"Criminal",
+    "court":{"caepr_id":"PD-SP-I-0037","current_name":"Plaza nº 4 del Tribunal de Instancia (Sección Instrucción) de San Cristóbal de La Laguna","historic_alias":"Juzgado de Instrucción nº 4 de San Cristóbal de La Laguna"}
+  },
+  "parties":[
+    {"caepr_id":"PD-SP-P-0001","name":"Gil Marer","role":"denunciante"},
+    {"caepr_id":"PD-SP-O-0049","name":"Cuatrecasas, Gonçalves Pereira, S.L.P.","role":"denunciado","identity_note":"The line-wrapped court header is resolved to the existing canonical Cuatrecasas legal entity; it does not create separate CUATRECASAS and GONCALVES PEREIRA entities."}
+  ],
+  "professional_lineage":{
+    "complainant":{"party_caepr_id":"PD-SP-P-0001","lawyer":{"caepr_id":"PD-SP-P-0146","name":"Carlos Llamas Sanz","firm_context_caepr_id":"PD-SP-O-0062"},"procuradora":{"caepr_id":"PD-SP-P-0067","procurador_register_id":"PROC-ADRIANA-HERNANDEZ-DIAZ","name":"Adriana Hernández Díaz","college":"Ilustre Colegio de Procuradores de Santa Cruz de Tenerife","college_number":"346"},"pairing_status":"VERIFIED_PROCEEDING_PERIOD_SPECIFIC","first_verified":"2026-04-17","latest_verified":"2026-09-01"},
+    "judicial":{"order_signatory":{"caepr_id":"PD-SP-P-0147","name":"Graciela Pérez-Valencia Díaz","role":"Magistrate-Judge","source_date":"2026-07-16"},"notification_signatory":{"caepr_id":"PD-SP-P-0148","name":"María del Pilar Luis Medina","role":"Letrada de la Administración de Justicia","source_date":"2026-09-01"}}
+  },
+  "procedural_timeline":[
+    {"event_id":"DP748-2026-20260324-AUTO454","date":"2026-03-24","event":"Auto 454/2026 provisionally dismisses and archives the proceedings","status":"SOURCE_REFERENCED_PRIMARY_ORDER_TO_BE_FULLY_CROSSWALKED"},
+    {"event_id":"DP748-2026-20260417-REFORMA-SUB-APELACION","date":"2026-04-17","time":"14:29:10","event":"Gil Marer files recurso de reforma y subsidiario de apelación through Adriana Hernández Díaz under the direction of Carlos Llamas Sanz","filing_id":"DP748-2026-GIL-20260417-REFORMA-SUB-APELACION","verification":"PRIMARY_LEXNET_RECEIPT_VERIFIED"},
+    {"event_id":"DP748-2026-20260626-SINTESIS","date":"2026-06-26","time":"00:22:46","event":"Synthesis/concreción filing presented in the reform/subsidiary-appeal lane","filing_id":"DP748-2026-GIL-20260626-SINTESIS","verification":"PRIMARY_LEXNET_RECEIPT_VERIFIED"},
+    {"event_id":"DP748-2026-20260716-ORDER","date":"2026-07-16","time":"15:02:46","event":"Reform partially upheld as to the acknowledged lack of reasoning in the 24-Mar order; provisional dismissal/archive otherwise maintained; reopening expressly contemplated upon further indicia; order states a five-day appeal route from the day after the last notification","judge_caepr_id":"PD-SP-P-0147","verification":"SIGNED_COURT_ORDER_VERIFIED"},
+    {"event_id":"DP748-2026-20260901-NOTIFICATION","date":"2026-09-01","sent_time_lexnet":"11:28:07","collected_time_lexnet":"17:04:02","event":"16-Jul order communicated through LexNET and collected by Adriana Hernández Díaz","laj_caepr_id":"PD-SP-P-0148","verification":"PRIMARY_LEXNET_COMMUNICATION_VERIFIED","timezone_note":"LexNET timestamps are preserved as displayed in the source; do not silently convert them when calculating procedural time."}
+  ],
+  "current_status":{"dismissal":"PROVISIONAL_DISMISSAL_MAINTAINED","finality":"ORDER_STATES_NOT_FINAL","reopening":"EXPRESSLY_PRESERVED_ON_FURTHER_INDICIA","subsidiary_appeal_filed":"VERIFIED_2026-04-17","subsidiary_appeal_processing":"OPEN_P0_NOT_YET_VERIFIED","fresh_appeal_instruction_in_16Jul_order":"VERIFIED","notification_date":"2026-09-01","deadline_rule":"Deadline calculation requires immediate counsel reconciliation from legally effective notification; repository does not infer the final filing date without procedural calculation and court calendar review."},
+  "linked_proceedings":[
+    {"master_id":"TF-CIV-002","reference":"ETJ 163/2020","relation":"DIRECT_UNDERLYING_ENFORCEMENT","strength":"DIRECT","note":"Core enforcement proceeding to which the DP 748 allegations relate; retain distinct civil/criminal procedural identities."},
+    {"master_id":"TF-CIV-001","reference":"Juicio Cambiario 1048/2019","relation":"PREDECESSOR_TO_ETJ_ENFORCEMENT_LINEAGE","strength":"DIRECT_LINEAGE"},
+    {"master_id":"TF-FIS-008","reference":"EG 95/2026","relation":"RELATED_FISCALIA_COORDINATION_SOURCE_VERIFIED","strength":"SOURCE_VERIFIED_CONTEXT","note":"Cross-reference only; do not merge prosecutor file with DP 748."},
+    {"master_id":"TF-XFR-005","relation":"EVIDENCE_TRANSMISSION_CONTEXT","strength":"CONTEXTUAL"},
+    {"master_id":"TF-APP-004","relation":"APPEAL_REVIEW_PLACEHOLDER","strength":"UNVERIFIED_PLACEHOLDER","promotion_rule":"Do not promote to verified appeal proceeding until admission/transmission/appellate roll or equivalent court source is located."}
+  ],
+  "professional_register_links":{"counsel_perimeter":"assets/data/counsel-procurador-perimeter-register-v1.json","counsel_filings":"assets/data/counsel-filing-register-v1.json","procuradores":"assets/data/procurador-master-register-v1.json","open_gaps":["CP-GAP-012","CP-GAP-013","CP-GAP-014","CP-GAP-015"]},
+  "source_register":[
+    {"source_id":"DP748-SRC-20260417-LEXNET","type":"LEXNET_FILING_RECEIPT","date":"2026-04-17","filename":"2026_0000748_DIP_120261087187914520260417142910_000_RESUMEN.pdf","privacy":"INTERNAL_EVIDENCE"},
+    {"source_id":"DP748-SRC-20260626-LEXNET","type":"LEXNET_FILING_RECEIPT","date":"2026-06-26","filename":"2026_0000748_DIP_120261089388572920260626002246_000_RESUMEN.pdf","privacy":"INTERNAL_EVIDENCE"},
+    {"source_id":"DP748-SRC-20260716-AUTO","type":"SIGNED_COURT_ORDER","date":"2026-07-16","document_verification_code":"A05003250-38ee40f91e639e315a111c58c321784210715505","privacy":"CONTROLLED_PUBLIC_SUMMARY_RAW_SOURCE_REVIEW_REQUIRED"},
+    {"source_id":"DP748-SRC-20260901-NOTIFICATION","type":"LEXNET_NOTIFICATION_PACKET","date":"2026-09-01","filename_prefix":"2026_0000748_DIP_20261090630913620260901112808","privacy":"INTERNAL_EVIDENCE"}
+  ],
+  "publication_boundary":{"public_summary_allowed":"subject_to_existing_publication_governance","raw_email_addresses":false,"personal_identifiers":false,"signed_download_urls":false,"private_correspondence":false,"allegation_status_rule":"No allegation is converted into a finding of criminality by this registration."}
+}
