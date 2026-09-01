@@ -61,6 +61,8 @@
       "Ricardo Molina Betancor",
       "Miguel Molina Betancor",
       "Francisco de Borja Rodríguez-Batllori Laffitte",
+      "Eduardo Sánchez Iglesias",
+      "Enrique Guerra Suárez",
       "Carlos Caimi Vicente",
       "Celia Guillén Pérez",
       "Gervasio Manuel González García",
@@ -165,15 +167,15 @@
     ]
   },
   "counts": {
-    "total": 339,
-    "PERSON": 160,
+    "total": 341,
+    "PERSON": 162,
     "ORGANISATION": 83,
     "STRUCTURE": 11,
     "INSTITUTION": 42,
     "PROCEEDING": 43
   },
   "parts": [
-    {"path": "matter-identity-registry-v1.people.json", "type": "PERSON", "count": 118},
+    {"path": "matter-identity-registry-v1.people.json", "type": "PERSON", "count": 120},
     {"path": "matter-identity-registry-v1.professional-people.json", "type": "PERSON", "count": 27},
     {"path": "matter-identity-registry-v1.joan-cruz.json", "type": "PERSON", "count": 1},
     {"path": "matter-identity-registry-v1.la-laguna-judicial-people.json", "type": "PERSON", "count": 11},

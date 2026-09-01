@@ -68,6 +68,12 @@ Mandatory short disclosures:
 
 A disclaimer never cures an invented or unsupported factual assertion. Names, roles, ownership edges, figures and dates remain source-controlled.
 
+For named people, the visual-asset identity lock and CAEPR name status are
+independent. A `LOCKED_CANONICAL_REPOSITORY_ASSET` portrait does not authorise a
+full-name caret, a dated professional capacity, a present affiliation or a
+satirical function label. Apply the mandatory display hierarchy in section 9.1
+of the satire standard and record the person in the satire compliance register.
+
 ## 6. Current hotel-platform family
 
 `PD-DMA-FAM-AMHP-001` currently publishes:

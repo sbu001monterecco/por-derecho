@@ -19,7 +19,7 @@
     {
       "workspace_id": "PD-WS-20260901-0001",
       "title": "Acosta Matos / Canarian Hospitality hotel-platform digital-media and continuity workspace",
-      "status": "DELETION_SAFE_CHECKPOINT_WITH_OPEN_IDENTITY_AND_PUBLICATION_WORK",
+      "status": "DELETION_SAFE_PERSON_IDENTITY_CLOSED_WITH_OPEN_FIRM_AND_PUBLICATION_WORK",
       "current_handoff_id": "PD-WCH-20260901-AMHP-3P-002",
       "handoff_path": "archive/handoffs/2026-09-01-amph-three-professionals-portrait-email-checkpoint.md",
       "machine_handoff_path": "archive/handoffs/2026-09-01-amph-three-professionals-portrait-email-checkpoint.json",
@@ -45,13 +45,13 @@
       "repository": "sbu001monterecco/por-derecho",
       "public_private_boundary": "PUBLIC_REPO_CONTAINS_GOVERNED_SOURCE_SAFE_STATE_AND_HASH_LOCKED_PORTRAIT_METADATA; EXACT_UPLOADED_PORTRAIT_BINARIES_NOT_REPRESENTED_AS_PUBLIC_REPOSITORY_MIRRORS; RAW_PRIVATE_TRANSCRIPTS_AND_CONNECTED_SOURCE_CONTENT_NOT_COPIED",
       "continuous_capture_mode": "CONNECTED_AGENTIC_CHECKPOINTING",
-      "current_main_sha_checked": "0f523d86853730e242d8212e98250c01ee6013db",
-      "checkpoint_branch": "agent/amph-three-professionals-checkpoint-20260901",
+      "current_main_sha_checked": "a116f9823dab53c22139a66b43a9fbad60b305fe",
+      "checkpoint_branch": "codex/hardwire-satire-identity-governance",
       "no_image_generation_hold": true,
-      "identity_state": "PARTIAL_NOT_ALL_IS_CARET",
+      "identity_state": "THREE_OF_THREE_PERSON_IDENTITIES_CARET_CONFIRMED_EXACT_FIRM_LEGAL_PERSON_GAPS_OPEN",
       "portrait_register": "data/pd-dma-three-professionals-portrait-source-register-20260901.json",
       "identity_reconciliation": "data/amph-three-professionals-identity-and-firm-reconciliation-20260901.json",
-      "next_target_mode": "CLOSE_THREE_PERSON_AND_EXACT_FIRM_CAEPR_GAPS_THEN_DEEP_SOURCE_SCAN_THEN_USER_AUTHORISED_IMAGE_PAGE_LINKEDIN_RELEASE"
+      "next_target_mode": "CLOSE_EXACT_FIRM_AND_DATE_SPECIFIC_AFFILIATION_GAPS_THEN_DEEP_SOURCE_SCAN_THEN_USER_AUTHORISED_IMAGE_PAGE_LINKEDIN_RELEASE"
     },
     {
       "workspace_id": "PD-WS-20260901-0002",

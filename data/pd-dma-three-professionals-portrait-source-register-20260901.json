@@ -21,11 +21,12 @@
       "sha256": "a46afb994e6fa0fb309d43fff45b72923a75db39680abc01e10a0c13a52af7d6",
       "provenance": "User-supplied portrait in the 1-Sep-2026 hotel-platform workspace; filename/user context associates the file with Eduardo Sánchez. No facial-recognition inference is used.",
       "intended_person_name": "Eduardo Sánchez Iglesias",
+      "caepr_id": "PD-SP-P-0161",
       "documentary_identity_sources": [
         "Controlled 30-Nov-2021 San Telmo / RICPE event transcript and repository correction chain (PRs #505, #506, #552, #557, #744)",
         "RSM Spain public professional announcement naming Eduardo Sánchez Iglesias in the SanTelmo integration"
       ],
-      "caepr_state_at_checkpoint": "PERSON_ID_ADMISSION_REQUIRED_BEFORE_NAME_CARET",
+      "caepr_state_at_checkpoint": "CARET_CONFIRMED_PERSON_IDENTITY_ONLY",
       "repository_binary_mirror": false,
       "repository_binary_mirror_gap": "Exact uploaded binary is hash-locked in this register but is not represented as committed to the public repository.",
       "interlink_targets": [
@@ -51,7 +52,7 @@
         "BORME-A-2012-198-35 — Concurso 36/2012 entry",
         "controlled primary Concurso 36/2012 appointment record"
       ],
-      "caepr_state_at_checkpoint": "REGISTERED_IDENTITY_SOURCE_STRONG_MASTER_RECORD_STILL_LACKED_CARET_CONFIRMED_FIELD",
+      "caepr_state_at_checkpoint": "CARET_CONFIRMED_PERSON_IDENTITY_ONLY",
       "website_portrait_search": "NOT_LOCATED_ON_CURRENT_DEDICATED_PAGE_OR_REPOSITORY_SEARCH_AT_2026-09-01_CHECKPOINT",
       "website_route": "/es/francisco-de-borja-rodriguez-batllori-laffitte/",
       "repository_binary_mirror": false,
@@ -73,12 +74,13 @@
       "sha256": "55d524b046a39323b304fb7349ac6d29c8d4eb34ed2c8e8ed3a70819d4ad3772",
       "provenance": "User-supplied portrait in the 1-Sep-2026 hotel-platform workspace; filename/user context associates the file with Enrique Guerra. No facial-recognition inference is used.",
       "intended_person_name": "Enrique Guerra Suárez",
+      "caepr_id": "PD-SP-P-0162",
       "documentary_identity_sources": [
         "RICPE certification dated 20-Jul-2021 / controlled attachment family",
         "RICPE public professional materials naming Enrique Guerra Suárez",
         "Controlled 30-Nov-2021 San Telmo / RICPE event and repository reconciliation (PRs #505, #506, #552, #744)"
       ],
-      "caepr_state_at_checkpoint": "PERSON_ID_ADMISSION_REQUIRED_BEFORE_NAME_CARET",
+      "caepr_state_at_checkpoint": "CARET_CONFIRMED_PERSON_IDENTITY_ONLY",
       "repository_binary_mirror": false,
       "repository_binary_mirror_gap": "Exact uploaded binary is hash-locked in this register but is not represented as committed to the public repository.",
       "interlink_targets": [
