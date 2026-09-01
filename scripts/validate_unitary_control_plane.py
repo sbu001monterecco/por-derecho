@@ -9,9 +9,17 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "assets" / "data"
-EXPECTED = {
+CONTROL_PLANE_SNAPSHOT_COUNTS = {
     "total": 336,
     "PERSON": 157,
+    "ORGANISATION": 83,
+    "STRUCTURE": 11,
+    "INSTITUTION": 42,
+    "PROCEEDING": 43,
+}
+CURRENT_CANONICAL_COUNTS = {
+    "total": 339,
+    "PERSON": 160,
     "ORGANISATION": 83,
     "STRUCTURE": 11,
     "INSTITUTION": 42,
@@ -69,9 +77,12 @@ def require_markers(path: Path, markers: list[str], forbidden: list[str] | None 
 def main() -> int:
     try:
         index = load_json(DATA / "matter-identity-registry-v1.json")
-        require(index.get("counts") == EXPECTED, f"unexpected identity counts: {index.get('counts')}")
+        require(
+            index.get("counts") == CURRENT_CANONICAL_COUNTS,
+            f"unexpected current canonical identity counts: {index.get('counts')}",
+        )
 
-        actual = {key: 0 for key in EXPECTED if key != "total"}
+        actual = {key: 0 for key in CURRENT_CANONICAL_COUNTS if key != "total"}
         ids: set[str] = set()
         for descriptor in index.get("parts", []):
             part = load_json(DATA / descriptor["path"])
@@ -82,19 +93,22 @@ def main() -> int:
                 require(rid and rid not in ids, f"duplicate or empty ID: {rid}")
                 ids.add(rid)
                 actual[record["type"]] += 1
-        require(len(ids) == EXPECTED["total"], "identity part total mismatch")
+        require(len(ids) == CURRENT_CANONICAL_COUNTS["total"], "identity part total mismatch")
         for key in actual:
-            require(actual[key] == EXPECTED[key], f"identity class mismatch {key}: {actual[key]}")
+            require(
+                actual[key] == CURRENT_CANONICAL_COUNTS[key],
+                f"identity class mismatch {key}: {actual[key]}",
+            )
 
         es_identity = require_markers(
             ROOT / "es/registro-identidad-materia/index.html",
             [
-                'content="Registro operativo de 336 IDs inmutables',
-                'data-static-registry-counts="336-157-83-11-42-43"',
-                'data-registry-stat="TOTAL">336',
-                'data-registry-stat="PERSON">157',
+                'content="Registro operativo de 339 IDs inmutables',
+                'data-static-registry-counts="339-160-83-11-42-43"',
+                'data-registry-stat="TOTAL">339',
+                'data-registry-stat="PERSON">160',
                 'data-registry-stat="ORGANISATION">83',
-                '"name":"Total","value":336',
+                '"name":"Total","value":339',
                 '../../ops/CURRENT_UNITARY_STATE.json',
             ],
             ['Los 159 IDs', 'data-registry-stat="TOTAL">159', '159 identidades canónicas'],
@@ -102,12 +116,12 @@ def main() -> int:
         en_identity = require_markers(
             ROOT / "en/matter-identity-registry/index.html",
             [
-                'content="Operational Por Derecho register of 336 immutable IDs',
-                'data-static-registry-counts="336-157-83-11-42-43"',
-                'data-registry-stat="TOTAL">336',
-                'data-registry-stat="PERSON">157',
+                'content="Operational Por Derecho register of 339 immutable IDs',
+                'data-static-registry-counts="339-160-83-11-42-43"',
+                'data-registry-stat="TOTAL">339',
+                'data-registry-stat="PERSON">160',
                 'data-registry-stat="ORGANISATION">83',
-                '"name":"Total","value":336',
+                '"name":"Total","value":339',
                 '../../ops/CURRENT_UNITARY_STATE.json',
             ],
             ['The 159 IDs', 'data-registry-stat="TOTAL">159', '159 canonical identities'],
@@ -143,7 +157,10 @@ def main() -> int:
             re.fullmatch(r"[0-9a-f]{40}", state["repository"]["current_main_sha_at_preparation"]),
             "invalid preparation SHA",
         )
-        require(state["identity_registry"]["counts"] == EXPECTED, "state identity counts drift")
+        require(
+            state["identity_registry"]["counts"] == CURRENT_CANONICAL_COUNTS,
+            "current unitary-state identity counts drift",
+        )
         require(
             state["identity_registry"]["last_live_verified_counts"]
             == LAST_LIVE_IDENTITY_COUNTS,
@@ -240,8 +257,9 @@ def main() -> int:
             "operational/unitary non-substitution rule missing",
         )
         require(
-            current.get("corpus", {}).get("identity_registry", {}).get("counts") == EXPECTED,
-            "operational identity counts drift",
+            current.get("corpus", {}).get("identity_registry", {}).get("counts")
+            == CONTROL_PLANE_SNAPSHOT_COUNTS,
+            "dated operational identity counts drift",
         )
         observation = current.get("repository_observation") or {}
         require(observation.get("sha") == MERGE_SHA, "operational repository merge drift")
@@ -377,7 +395,8 @@ def main() -> int:
     print("UNITARY CONTROL PLANE: PASS")
     print(" - specialist status: LIVE_VERIFIED")
     print(" - operational repository/deployment state remains separate")
-    print(" - source/static identity denominator: 336 / 157 / 83 / 11 / 42 / 43")
+    print(" - dated control-plane identity denominator: 336 / 157 / 83 / 11 / 42 / 43")
+    print(" - current canonical identity denominator: 339 / 160 / 83 / 11 / 42 / 43")
     print(" - latest live-verified identity snapshot: 204 / 87 / 71 / 10 / 18 / 18")
     print(" - promoted 26-Aug unitary snapshot remains 194 / 86 / 66 / 10 / 15 / 17")
     print(f" - repository latest material date: {repository_latest}")

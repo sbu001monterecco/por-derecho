@@ -40,7 +40,22 @@
       "name": "DP 748/2026 — La Laguna",
       "aliases": [
         "DP 748/2026"
-      ]
+      ],
+      "identity_resolution": "CARET_CONFIRMED",
+      "master_register_ids": [
+        "TF-CRI-003"
+      ],
+      "competent_organ": "PD-SP-I-0037",
+      "nig": "3802343220260002351",
+      "procedural_state": "PROVISIONAL_DISMISSAL_MAINTAINED_16JUL2026_REFORM_PARTLY_UPHELD_SUBSIDIARY_APPEAL_ADMITTED_PROCESSING_OPEN",
+      "related_master_register_ids": [
+        "TF-CIV-001",
+        "TF-CIV-002",
+        "TF-FIS-008",
+        "TF-XFR-005",
+        "TF-APP-004"
+      ],
+      "identity_boundary": "Exact DP 748/2026 identity only. The 20-May-2026 Providencia verifies that reform and subsidiary appeal were interposed in time and form, but no primary source yet verifies Article 766.4 transfer, remittal, an Audiencia Provincial roll or appellate office-holders. TF-APP-004 remains an unverified placeholder. Registration does not establish criminality or merits."
     },
     {
       "id": "PD-SP-R-0004",

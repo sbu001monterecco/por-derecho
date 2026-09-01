@@ -1,0 +1,196 @@
+{
+  "schema": "por-derecho.publication-manifest.v1",
+  "publication_id": "PD-SP-DP748-APPEAL-REOPENING-20260901-01",
+  "owner": "Por Derecho evidence governance",
+  "control_date": "2026-09-01",
+  "manifest_version": 1,
+  "title": "DP 748/2026 appeal, reopening and professional-lineage source control",
+  "purpose": "Govern the public-safe canonical registration of the DP 748/2026 appeal posture, ETJ 163/2020 lineage and finite evidential gaps while keeping private pleadings, correspondence and identifiers outside the public repository.",
+  "current_state": "PR_OPEN",
+  "state": "REMOTE_VALIDATION_PENDING",
+  "source_base_sha": "b0958077b71130fe808acaf1cc006185b6aa43fa",
+  "head_branch": "codex/dp748-p0-appeal-20260901",
+  "authorization": {
+    "repository_and_website_publication": true,
+    "external_contact_or_delivery": false,
+    "email_action": "HOLD_NOT_AUTHORISED",
+    "filing_or_portal_action": "HOLD_NOT_AUTHORISED"
+  },
+  "expected_routes": {
+    "es": [],
+    "en": []
+  },
+  "predecessor_main": {
+    "sha": "b0958077b71130fe808acaf1cc006185b6aa43fa",
+    "pull_request": 1333,
+    "rule": "The release is additive to the exact current main used for final reconciliation, including the PwC / Carlos Saavedra live-publication closeout."
+  },
+  "predecessor_publication": {
+    "manifest": "publication-manifests/pwc-carlos-saavedra-20260901.json",
+    "publication_id": "PD-PWC-CS-PUBLICATION-20260901-01",
+    "pull_request": 1328,
+    "closeout_pull_request": 1333,
+    "rule": "The PwC / Carlos Saavedra identity, evidence and workspace additions are inherited without overwrite."
+  },
+  "inherited_identity_baseline": {
+    "sha": "273bb621de7db5473b1223fdbc080f9c733dd038",
+    "pull_request": 1326,
+    "rule": "The La Laguna identity release is inherited exactly. Its immutable IDs and act/date/capacity boundaries must not be duplicated or reassigned."
+  },
+  "predecessor_live_attestation": {
+    "manifest": "publication-manifests/unitary-public-authority-communications-20260901.json",
+    "publication_id": "PD-SP-UNITARY-PUBLIC-AUTHORITY-COMMS-20260901-01",
+    "merge_sha": "a2873cd865567da1b6644f32821bb15ece53a160",
+    "rule": "This release is an additive successor. It preserves the earlier live attestation and registers each later byte change without rewriting historical deployment evidence."
+  },
+  "pull_request": {
+    "number": 1332,
+    "url": "https://github.com/sbu001monterecco/por-derecho/pull/1332",
+    "status": "OPEN"
+  },
+  "controlled_scope": {
+    "master_proceeding_id": "TF-CRI-003",
+    "caepr_proceeding_id": "PD-SP-R-0003",
+    "civil_predecessor_id": "TF-CIV-001",
+    "civil_enforcement_id": "TF-CIV-002",
+    "fiscalia_link_id": "TF-FIS-008",
+    "transmission_context_id": "TF-XFR-005",
+    "unverified_appellate_placeholder_id": "TF-APP-004",
+    "current_canonical_identity_denominator": {
+      "total": 339,
+      "PERSON": 160,
+      "ORGANISATION": 83,
+      "STRUCTURE": 11,
+      "INSTITUTION": 42,
+      "PROCEEDING": 43
+    },
+    "direct_relationship_pairs": 36,
+    "direct_source_assertions": 48
+  },
+  "historical_transition": {
+    "policy": "FAIL_CLOSED_SUCCESSOR_COVERAGE",
+    "changed_resources": [
+      {
+        "resource": "archive/PROCEEDINGS_MASTER_REGISTER.csv",
+        "predecessor_main_sha256": "03cae1ab3e846b52136e2cb583d79f67d223a0a07546930a2adf81f4947165a5",
+        "release_sha256": "38232d990a5b418d89d9653725452d584320b191a23cceba381a679873b70fe8",
+        "reason": "Concretises the DP 748, ETJ, cambiario and unverified appellate rows using public-safe source grades, exact lineage and open-gap language."
+      },
+      {
+        "resource": "assets/data/counsel-filing-register-v1.json",
+        "predecessor_main_sha256": "7d330ba4af2fcba880a0c92ef0a326d7d0e08818f2b2e6af3e2fd54bd14b3530",
+        "release_sha256": "9fd690dd8cb8bf3b31e9131be68866774a769d96829d9dfa5b3dc788bfd07829",
+        "reason": "Adds act-specific, source-graded DP 748 and ETJ filing lineage without inferring a permanent professional pairing."
+      },
+      {
+        "resource": "assets/data/counsel-procurador-gap-register-v1.json",
+        "predecessor_main_sha256": "26cd97648c5f537fae5fdfd1a2592b4fcade04dbe023290f7075faf43c5919b4",
+        "release_sha256": "c8dd515697d409d82963a9cbf7ba48f1ddc647497f47237421e7c9a065602f4a",
+        "reason": "Registers the finite appeal-processing, signer, ETJ outcome and authority gaps instead of treating empty arrays as negative evidence."
+      },
+      {
+        "resource": "assets/data/counsel-procurador-perimeter-register-v1.json",
+        "predecessor_main_sha256": "9bfd361cd6625df1e4c2b61b6f15d7dd816a3c61f9ffa39a32f625bb11d4da36",
+        "release_sha256": "d135e1193f1cfe2c4592b2fb1df9011c0f2e169ad386bbe5ae677723da87cfaa",
+        "reason": "Adds role- and act-bounded professional perimeter records for the recovered DP 748 and ETJ sources."
+      },
+      {
+        "resource": "assets/data/matter-identity-registry-v1.json",
+        "predecessor_main_sha256": "17e394717032d501460ec2a84f7ff088646eed06997b0f6066422e689a0786d3",
+        "release_sha256": "573d8b0061ed3321169dbefe93881173e261dc6796e352af548cf5067d533df2",
+        "reason": "Adds three source-bounded professional identities and updates the additive canonical denominator without changing inherited IDs."
+      },
+      {
+        "resource": "assets/data/matter-identity-registry-v1.proceedings.json",
+        "predecessor_main_sha256": "92b410b2195e0d651e54fdf8984ea7c9a32ac977a9bfdb54b2ff4e8efb38ac7e",
+        "release_sha256": "6fa973fcf9bcbdb4f079988f7f090c420cc6e16b75dd828b24e8d12f41cd71ee",
+        "reason": "Binds PD-SP-R-0003 to TF-CRI-003, the verified court organ and the bounded linked-proceeding state."
+      },
+      {
+        "resource": "assets/data/proceedings-master-public-v1.json",
+        "predecessor_main_sha256": "840799af2a833058ee0ace184966c01ad862016c98a5d344c4e446b2276b0325",
+        "release_sha256": "83dbbc7e66d22361d233ea63b16e79fcf74848fcb9fc43165181cabd2c0ec44d",
+        "reason": "Regenerates the allowlisted public projection from the updated canonical proceeding rows."
+      },
+      {
+        "resource": "assets/data/procurador-master-register-v1.json",
+        "predecessor_main_sha256": "228e7cb104ff2b6a5ed2dca5934fae10caf100d7e33c69e7d83ff4bff0fc5943",
+        "release_sha256": "b92ea7fad2c14b47174415e3f329cea2a6193b94f0058c8ff690509be1704c7d",
+        "reason": "Adds filing-specific procurador lineage and preserves authority and pairing gaps."
+      },
+      {
+        "resource": "assets/data/fiscalia-proceedings-interconnectivity-v1.json",
+        "predecessor_main_sha256": "a48f041f76e8b238a61d982e302d2f8de337e5ccb6a2f50971c345d53641f2ba",
+        "release_sha256": "c2b2a92b44268893646e07a444ba1a66b0e79078cf44a0a1b62598fb73dba608",
+        "reason": "Refreshes canonical source digests after the proceeding updates while preserving the bounded Fiscalía event denominator."
+      },
+      {
+        "resource": "assets/data/community-acta-authority-interconnectivity-v1.json",
+        "predecessor_main_sha256": "c2cef89efc0d3f07cd88a92f9d498e1fae89ae217a78230a48b4edfd5f798c23",
+        "release_sha256": "f47f392cd53d38a1aab4565b48e4236d8dc617b842f46ce7dcc80431554f92c0",
+        "reason": "Refreshes canonical identity-shard provenance after the additive DP 748 professional-identity shard; authority-event denominators and evidential assertions remain unchanged."
+      },
+      {
+        "resource": "assets/data/proceedings-interlinkability-v1.json",
+        "predecessor_main_sha256": "5534195c00aedc1026b6cab080af37cbf906345f4c2189d3c6d187b643ce20ee",
+        "release_sha256": "87487072e2f1af6b8bdb2a92db5b1f950729fdb843a5ee3e555b46c8cce6c588",
+        "reason": "Deterministically projects the newly explicit bidirectional DP 748, ETJ, cambiario, Fiscalía and appellate-placeholder links."
+      },
+      {
+        "resource": "assets/data/proceedings-interconnectivity-schema-v1.json",
+        "predecessor_main_sha256": "eb281aee0daa5f61256b649b59aee4d0cb0e3985433a9dd33b4ab0692cbe3446",
+        "release_sha256": "15bd61c10266b48c4444050f95db75ba9242408eb26c2d3e0319fbfb865e59d6",
+        "reason": "Advances only the current direct-pair and direct-assertion denominators; all historical deployment denominators remain unchanged."
+      }
+    ],
+    "new_resources": [
+      {
+        "resource": "assets/data/dp748-2026-appeal-reopening-control-v1.json",
+        "release_sha256": "b03f43234769e85dc530c85699316c9aec4415af8de189c7afde941d7b3176d7",
+        "reason": "Adds the public-safe P0, chronology, deficiency, property, source-hash and gap control."
+      },
+      {
+        "resource": "assets/data/matter-identity-registry-v1.dp748-professional-people.json",
+        "release_sha256": "647b3b83c89c7d6ff6362f5f341a9969057f6952311335440e926c5efc93024d",
+        "reason": "Adds three immutable, act-bounded professional identity records supported by recovered signed sources."
+      }
+    ]
+  },
+  "release_critical_sha256": {
+    "archive/PROCEEDINGS_MASTER_REGISTER.csv": "38232d990a5b418d89d9653725452d584320b191a23cceba381a679873b70fe8",
+    "assets/data/counsel-filing-register-v1.json": "9fd690dd8cb8bf3b31e9131be68866774a769d96829d9dfa5b3dc788bfd07829",
+    "assets/data/counsel-procurador-gap-register-v1.json": "c8dd515697d409d82963a9cbf7ba48f1ddc647497f47237421e7c9a065602f4a",
+    "assets/data/counsel-procurador-perimeter-register-v1.json": "d135e1193f1cfe2c4592b2fb1df9011c0f2e169ad386bbe5ae677723da87cfaa",
+    "assets/data/matter-identity-registry-v1.json": "573d8b0061ed3321169dbefe93881173e261dc6796e352af548cf5067d533df2",
+    "assets/data/matter-identity-registry-v1.proceedings.json": "6fa973fcf9bcbdb4f079988f7f090c420cc6e16b75dd828b24e8d12f41cd71ee",
+    "assets/data/proceedings-master-public-v1.json": "83dbbc7e66d22361d233ea63b16e79fcf74848fcb9fc43165181cabd2c0ec44d",
+    "assets/data/procurador-master-register-v1.json": "b92ea7fad2c14b47174415e3f329cea2a6193b94f0058c8ff690509be1704c7d",
+    "assets/data/fiscalia-proceedings-interconnectivity-v1.json": "c2b2a92b44268893646e07a444ba1a66b0e79078cf44a0a1b62598fb73dba608",
+    "assets/data/community-acta-authority-interconnectivity-v1.json": "f47f392cd53d38a1aab4565b48e4236d8dc617b842f46ce7dcc80431554f92c0",
+    "assets/data/proceedings-interlinkability-v1.json": "87487072e2f1af6b8bdb2a92db5b1f950729fdb843a5ee3e555b46c8cce6c588",
+    "assets/data/proceedings-interconnectivity-schema-v1.json": "15bd61c10266b48c4444050f95db75ba9242408eb26c2d3e0319fbfb865e59d6",
+    "assets/data/dp748-2026-appeal-reopening-control-v1.json": "b03f43234769e85dc530c85699316c9aec4415af8de189c7afde941d7b3176d7",
+    "assets/data/matter-identity-registry-v1.dp748-professional-people.json": "647b3b83c89c7d6ff6362f5f341a9969057f6952311335440e926c5efc93024d"
+  },
+  "evidential_boundaries": [
+    "PROVISIONAL_DISMISSAL_IS_NOT_AN_ACQUITTAL_OR_FINAL_MERITS_FINDING",
+    "SUBSIDIARY_APPEAL_ADMISSION_AT_ORIGIN_DOES_NOT_PROVE_REMITTAL_OR_AN_APPELLATE_ROLL",
+    "TF_APP_004_REMAINS_AN_UNVERIFIED_PLACEHOLDER_WITHOUT_AN_INVENTED_PANEL_OR_LAJ",
+    "SOURCE_BACKED_KNOWLEDGE_OR_PROCEDURAL_POSITION_DOES_NOT_BY_ITSELF_PROVE_FALSITY_INTENT_CAUSATION_OR_CRIMINALITY",
+    "PROFESSIONAL_PAIRINGS_ARE_ACT_DATE_AND_CAPACITY_BOUND_NOT_PERMANENT",
+    "NO_RAW_EMAIL_PRIVATE_CORRESPONDENCE_SIGNATURE_PERSONAL_IDENTIFIER_OR_UNREDACTED_COURT_DOCUMENT_IS_PUBLISHED"
+  ],
+  "validation": {
+    "status": "LOCAL_SOURCE_GATES_GREEN_REMOTE_PR_PENDING",
+    "required": [
+      "DP 748 public-boundary and source-hash validation",
+      "identity and proceeding referential integrity",
+      "counsel and procurador lineage and finite-gap validation",
+      "deterministic proceedings and Fiscalía derived projections",
+      "historical-attestation successor coverage",
+      "repository preservation, privacy and publication integrity",
+      "exact reviewed-head CI before merge",
+      "exact merge-SHA deployment and live readback before LIVE_VERIFIED"
+    ]
+  }
+}

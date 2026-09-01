@@ -172,12 +172,20 @@ CURRENT_PUBLIC_EXACT = 97
 CURRENT_PRIVATE_EXACT = 1
 CURRENT_CASE_PRISM_EXACT_COVERED = 43
 CURRENT_CASE_PRISM_EXACT_UNCOVERED = 54
-CURRENT_DIRECT_PAIRS = 33
-CURRENT_VERIFIED_DIRECT_PAIRS = 31
+CURRENT_DIRECT_PAIRS = 36
+CURRENT_VERIFIED_DIRECT_PAIRS = 34
 CURRENT_PENDING_DIRECT_PAIRS = 2
-CURRENT_DIRECT_ASSERTIONS = 40
-CURRENT_VERIFIED_DIRECT_ASSERTIONS = 38
+CURRENT_DIRECT_ASSERTIONS = 48
+CURRENT_VERIFIED_DIRECT_ASSERTIONS = 46
 CURRENT_PENDING_DIRECT_ASSERTIONS = 2
+# Immutable 31-August substantive-gap deployment denominator.  The current
+# DP 748 successor adds explicit links but does not rewrite this live snapshot.
+HISTORICAL_SUBSTANTIVE_GAP_DIRECT_PAIRS = 33
+HISTORICAL_SUBSTANTIVE_GAP_VERIFIED_DIRECT_PAIRS = 31
+HISTORICAL_SUBSTANTIVE_GAP_PENDING_DIRECT_PAIRS = 2
+HISTORICAL_SUBSTANTIVE_GAP_DIRECT_ASSERTIONS = 40
+HISTORICAL_SUBSTANTIVE_GAP_VERIFIED_DIRECT_ASSERTIONS = 38
+HISTORICAL_SUBSTANTIVE_GAP_PENDING_DIRECT_ASSERTIONS = 2
 CURRENT_FISCALIA_OFFICE_FILE_RECORDS = 24
 CURRENT_FISCALIA_EXACT_RECORDS = 21
 CURRENT_FISCALIA_UNRESOLVED_RECORDS = 3
@@ -465,6 +473,9 @@ if not errors:
     )
     pwc_successor = json.loads(
         read("publication-manifests/pwc-carlos-saavedra-20260901.json")
+    )
+    dp748_successor = json.loads(
+        read("publication-manifests/dp748-appeal-reopening-source-control-20260901.json")
     )
     authority_successor_continuity = read(
         "docs/deletion-audits/2026-09-01-unitary-public-authority-communications-continuity.md"
@@ -2464,12 +2475,12 @@ if not errors:
         "canonical_exact_proceedings": CURRENT_CANONICAL_EXACT,
         "public_exact_proceedings": CURRENT_PUBLIC_EXACT,
         "private_exact_excluded": CURRENT_PRIVATE_EXACT,
-        "direct_relationship_pairs": CURRENT_DIRECT_PAIRS,
-        "direct_relationship_pairs_source_verified": CURRENT_VERIFIED_DIRECT_PAIRS,
-        "direct_relationship_pairs_source_reported_primary_pending": CURRENT_PENDING_DIRECT_PAIRS,
-        "direct_source_assertions": CURRENT_DIRECT_ASSERTIONS,
-        "direct_source_assertions_verified": CURRENT_VERIFIED_DIRECT_ASSERTIONS,
-        "direct_source_assertions_source_reported_primary_pending": CURRENT_PENDING_DIRECT_ASSERTIONS,
+        "direct_relationship_pairs": HISTORICAL_SUBSTANTIVE_GAP_DIRECT_PAIRS,
+        "direct_relationship_pairs_source_verified": HISTORICAL_SUBSTANTIVE_GAP_VERIFIED_DIRECT_PAIRS,
+        "direct_relationship_pairs_source_reported_primary_pending": HISTORICAL_SUBSTANTIVE_GAP_PENDING_DIRECT_PAIRS,
+        "direct_source_assertions": HISTORICAL_SUBSTANTIVE_GAP_DIRECT_ASSERTIONS,
+        "direct_source_assertions_verified": HISTORICAL_SUBSTANTIVE_GAP_VERIFIED_DIRECT_ASSERTIONS,
+        "direct_source_assertions_source_reported_primary_pending": HISTORICAL_SUBSTANTIVE_GAP_PENDING_DIRECT_ASSERTIONS,
         "material_context_clusters": len(context_clusters),
         "shared_case_prism_propositions": len(props),
         "parallel_lanes": len(lanes),
@@ -2608,10 +2619,142 @@ if not errors:
         )
 
     # A live manifest is an immutable observation of one deployed merge, not a
-    # permanent lock on all later repository bytes.  This successor must
-    # register every intentional drift from the 31-August live observation and
-    # must pin both the predecessor hash and the current release hash.  Any
-    # unregistered drift continues to fail closed below.
+    # permanent lock on all later repository bytes.  Successors must register
+    # every intentional drift and pin both predecessor and release bytes.  The
+    # DP 748 release is the next additive link in that chain.
+    require(
+        dp748_successor.get("schema") == "por-derecho.publication-manifest.v1"
+        and dp748_successor.get("publication_id")
+        == "PD-SP-DP748-APPEAL-REOPENING-20260901-01"
+        and dp748_successor.get("control_date") == "2026-09-01"
+        and dp748_successor.get("source_base_sha")
+        == "b0958077b71130fe808acaf1cc006185b6aa43fa"
+        and dp748_successor.get("head_branch")
+        == "codex/dp748-p0-appeal-20260901",
+        "DP 748 successor identity/source base is stale",
+    )
+    require(
+        (dp748_successor.get("current_state"), dp748_successor.get("state"))
+        in {
+            ("PREPARED_PENDING_MERGE", "RELEASE_CANDIDATE_VALIDATION_PENDING"),
+            ("PR_OPEN", "REMOTE_VALIDATION_PENDING"),
+            ("CI_GREEN", "EXACT_HEAD_VALIDATED_PENDING_MERGE"),
+            ("LIVE_VERIFIED", "LIVE_VERIFIED_PUBLIC_SAFE_SOURCE_CONTROL"),
+        },
+        "DP 748 successor lifecycle state is invalid",
+    )
+    require(
+        dp748_successor.get("predecessor_main", {}).get("sha")
+        == "b0958077b71130fe808acaf1cc006185b6aa43fa"
+        and dp748_successor.get("predecessor_main", {}).get("pull_request") == 1333
+        and dp748_successor.get("predecessor_publication", {}).get("manifest")
+        == "publication-manifests/pwc-carlos-saavedra-20260901.json"
+        and dp748_successor.get("predecessor_publication", {}).get("pull_request")
+        == 1328
+        and dp748_successor.get("predecessor_publication", {}).get(
+            "closeout_pull_request"
+        )
+        == 1333
+        and dp748_successor.get("inherited_identity_baseline", {}).get("sha")
+        == "273bb621de7db5473b1223fdbc080f9c733dd038"
+        and dp748_successor.get("inherited_identity_baseline", {}).get("pull_request")
+        == 1326
+        and dp748_successor.get("predecessor_live_attestation", {}).get("manifest")
+        == "publication-manifests/unitary-public-authority-communications-20260901.json",
+        "DP 748 successor does not preserve its canonical predecessor controls",
+    )
+    dp748_authorization = dp748_successor.get("authorization", {})
+    require(
+        dp748_authorization.get("repository_and_website_publication") is True
+        and dp748_authorization.get("external_contact_or_delivery") is False
+        and dp748_authorization.get("email_action") == "HOLD_NOT_AUTHORISED"
+        and dp748_authorization.get("filing_or_portal_action")
+        == "HOLD_NOT_AUTHORISED",
+        "DP 748 successor exceeds publication authorization",
+    )
+    dp748_changed_rows = dp748_successor.get("historical_transition", {}).get(
+        "changed_resources", []
+    )
+    dp748_changed = {
+        item.get("resource"): item
+        for item in dp748_changed_rows
+        if isinstance(item, dict) and item.get("resource")
+    }
+    expected_dp748_prior_hashes = {
+        "archive/PROCEEDINGS_MASTER_REGISTER.csv": "03cae1ab3e846b52136e2cb583d79f67d223a0a07546930a2adf81f4947165a5",
+        "assets/data/counsel-filing-register-v1.json": "7d330ba4af2fcba880a0c92ef0a326d7d0e08818f2b2e6af3e2fd54bd14b3530",
+        "assets/data/counsel-procurador-gap-register-v1.json": "26cd97648c5f537fae5fdfd1a2592b4fcade04dbe023290f7075faf43c5919b4",
+        "assets/data/counsel-procurador-perimeter-register-v1.json": "9bfd361cd6625df1e4c2b61b6f15d7dd816a3c61f9ffa39a32f625bb11d4da36",
+        "assets/data/matter-identity-registry-v1.json": "17e394717032d501460ec2a84f7ff088646eed06997b0f6066422e689a0786d3",
+        "assets/data/matter-identity-registry-v1.proceedings.json": "92b410b2195e0d651e54fdf8984ea7c9a32ac977a9bfdb54b2ff4e8efb38ac7e",
+        "assets/data/proceedings-master-public-v1.json": "840799af2a833058ee0ace184966c01ad862016c98a5d344c4e446b2276b0325",
+        "assets/data/procurador-master-register-v1.json": "228e7cb104ff2b6a5ed2dca5934fae10caf100d7e33c69e7d83ff4bff0fc5943",
+        "assets/data/fiscalia-proceedings-interconnectivity-v1.json": "a48f041f76e8b238a61d982e302d2f8de337e5ccb6a2f50971c345d53641f2ba",
+        "assets/data/community-acta-authority-interconnectivity-v1.json": "c2cef89efc0d3f07cd88a92f9d498e1fae89ae217a78230a48b4edfd5f798c23",
+        "assets/data/proceedings-interlinkability-v1.json": "5534195c00aedc1026b6cab080af37cbf906345f4c2189d3c6d187b643ce20ee",
+        "assets/data/proceedings-interconnectivity-schema-v1.json": "eb281aee0daa5f61256b649b59aee4d0cb0e3985433a9dd33b4ab0692cbe3446",
+    }
+    require(
+        dp748_successor.get("historical_transition", {}).get("policy")
+        == "FAIL_CLOSED_SUCCESSOR_COVERAGE"
+        and len(dp748_changed_rows) == len(dp748_changed)
+        and set(dp748_changed) == set(expected_dp748_prior_hashes)
+        and all(
+            dp748_changed[path].get("predecessor_main_sha256") == prior_hash
+            and dp748_changed[path].get("release_sha256")
+            == hashlib.sha256((ROOT / path).read_bytes()).hexdigest()
+            and bool(dp748_changed[path].get("reason"))
+            for path, prior_hash in expected_dp748_prior_hashes.items()
+        ),
+        "DP 748 successor transition coverage is incomplete or stale",
+    )
+    dp748_new_rows = dp748_successor.get("historical_transition", {}).get(
+        "new_resources", []
+    )
+    dp748_new = {
+        item.get("resource"): item
+        for item in dp748_new_rows
+        if isinstance(item, dict) and item.get("resource")
+    }
+    expected_dp748_new_paths = {
+        "assets/data/dp748-2026-appeal-reopening-control-v1.json",
+        "assets/data/matter-identity-registry-v1.dp748-professional-people.json",
+    }
+    require(
+        len(dp748_new_rows) == len(dp748_new)
+        and set(dp748_new) == expected_dp748_new_paths
+        and all(
+            dp748_new[path].get("release_sha256")
+            == hashlib.sha256((ROOT / path).read_bytes()).hexdigest()
+            and bool(dp748_new[path].get("reason"))
+            for path in expected_dp748_new_paths
+        ),
+        "DP 748 successor new-resource coverage is incomplete or stale",
+    )
+    dp748_release_hashes = dp748_successor.get("release_critical_sha256", {})
+    expected_dp748_release_paths = set(expected_dp748_prior_hashes) | expected_dp748_new_paths
+    require(
+        set(dp748_release_hashes) == expected_dp748_release_paths
+        and all(
+            dp748_release_hashes.get(path)
+            == hashlib.sha256((ROOT / path).read_bytes()).hexdigest()
+            for path in expected_dp748_release_paths
+        ),
+        "DP 748 successor release hashes are incomplete or stale",
+    )
+    require(
+        {
+            "PROVISIONAL_DISMISSAL_IS_NOT_AN_ACQUITTAL_OR_FINAL_MERITS_FINDING",
+            "SUBSIDIARY_APPEAL_ADMISSION_AT_ORIGIN_DOES_NOT_PROVE_REMITTAL_OR_AN_APPELLATE_ROLL",
+            "TF_APP_004_REMAINS_AN_UNVERIFIED_PLACEHOLDER_WITHOUT_AN_INVENTED_PANEL_OR_LAJ",
+            "SOURCE_BACKED_KNOWLEDGE_OR_PROCEDURAL_POSITION_DOES_NOT_BY_ITSELF_PROVE_FALSITY_INTENT_CAUSATION_OR_CRIMINALITY",
+            "PROFESSIONAL_PAIRINGS_ARE_ACT_DATE_AND_CAPACITY_BOUND_NOT_PERMANENT",
+            "NO_RAW_EMAIL_PRIVATE_CORRESPONDENCE_SIGNATURE_PERSONAL_IDENTIFIER_OR_UNREDACTED_COURT_DOCUMENT_IS_PUBLISHED",
+        }
+        <= set(dp748_successor.get("evidential_boundaries", [])),
+        "DP 748 successor omits a required merits, identity or privacy boundary",
+    )
+
     require(
         authority_successor.get("schema") == "por-derecho.publication-manifest.v1"
         and authority_successor.get("publication_id")
@@ -2735,7 +2878,12 @@ if not errors:
             successor_changed[path].get("predecessor_live_sha256") == prior_hash
             and successor_changed[path].get("release_sha256")
             == authority_frozen_release_hashes.get(
-                path, hashlib.sha256((ROOT / path).read_bytes()).hexdigest()
+                path,
+                (
+                    dp748_changed[path].get("predecessor_main_sha256")
+                    if path in dp748_changed
+                    else hashlib.sha256((ROOT / path).read_bytes()).hexdigest()
+                ),
             )
             and bool(successor_changed[path].get("reason"))
             for path, prior_hash in expected_successor_prior_hashes.items()
@@ -2747,6 +2895,11 @@ if not errors:
     community_current_sha256 = hashlib.sha256(
         (ROOT / community_resource).read_bytes()
     ).hexdigest()
+    community_pwc_candidate_sha256 = (
+        dp748_changed[community_resource].get("predecessor_main_sha256")
+        if community_resource in dp748_changed
+        else community_current_sha256
+    )
     pwc_state = pwc_successor.get("current_state")
     pwc_live = pwc_state in {"LIVE_VERIFIED", "DELETION_SAFE"}
     require(
@@ -2806,7 +2959,8 @@ if not errors:
         and pwc_transition.get("predecessor_sha256")
         == authority_frozen_release_hashes.get(community_resource)
         == "6980b865e034a632595ceb49452bd64bd422fe0df37f21b4bf4a6dea6cf7217f"
-        and pwc_transition.get("candidate_sha256") == community_current_sha256
+        and pwc_transition.get("candidate_sha256")
+        == community_pwc_candidate_sha256
         and "canonical institutions-shard provenance"
         in pwc_transition.get("reason", "")
         and "denominators" in pwc_transition.get("reason", "")
@@ -2835,7 +2989,11 @@ if not errors:
         set(successor_release_hashes) == expected_successor_release_paths
         and all(
             successor_release_hashes.get(path)
-            == hashlib.sha256((ROOT / path).read_bytes()).hexdigest()
+            == (
+                dp748_changed[path].get("predecessor_main_sha256")
+                if path in dp748_changed
+                else hashlib.sha256((ROOT / path).read_bytes()).hexdigest()
+            )
             for path in expected_successor_release_paths - {community_resource}
         ),
         "authority-communications successor release hashes are incomplete or stale",
@@ -2843,7 +3001,10 @@ if not errors:
     require(
         successor_release_hashes.get(community_resource)
         == pwc_transition.get("predecessor_sha256")
-        and pwc_transition.get("candidate_sha256") == community_current_sha256,
+        and pwc_transition.get("candidate_sha256")
+        == community_pwc_candidate_sha256
+        and dp748_changed.get(community_resource, {}).get("release_sha256")
+        == community_current_sha256,
         "authority-communications successor release hash lacks a valid later transition",
     )
     successor_boundaries = set(authority_successor.get("evidential_boundaries", []))
@@ -3014,15 +3175,15 @@ if not errors:
         and live_release_denominator.get("public_exact_dispositions")
         == "VERIFIED_97_OF_97"
         and live_release_denominator.get("direct_relationship_pairs")
-        == CURRENT_DIRECT_PAIRS
+        == HISTORICAL_SUBSTANTIVE_GAP_DIRECT_PAIRS
         and live_release_denominator.get(
             "direct_relationship_pairs_source_verified"
         )
-        == CURRENT_VERIFIED_DIRECT_PAIRS
+        == HISTORICAL_SUBSTANTIVE_GAP_VERIFIED_DIRECT_PAIRS
         and live_release_denominator.get(
             "direct_relationship_pairs_source_reported_primary_pending"
         )
-        == CURRENT_PENDING_DIRECT_PAIRS
+        == HISTORICAL_SUBSTANTIVE_GAP_PENDING_DIRECT_PAIRS
         and live_release_denominator.get("material_context_clusters")
         == len(context_clusters)
         and live_release_denominator.get("explicit_matrix_coordinates")
@@ -3080,7 +3241,11 @@ if not errors:
             == (
                 successor_changed[path].get("predecessor_live_sha256")
                 if path in successor_changed
-                else hashlib.sha256((ROOT / path).read_bytes()).hexdigest()
+                else (
+                    dp748_changed[path].get("predecessor_main_sha256")
+                    if path in dp748_changed
+                    else hashlib.sha256((ROOT / path).read_bytes()).hexdigest()
+                )
             )
             for route, path in expected_live_hash_paths.items()
         ),

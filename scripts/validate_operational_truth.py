@@ -44,6 +44,22 @@ ALLOWED_OBSERVATION_STATES = {
     "BASELINE_OBSERVED_BEFORE_OPERATIONAL_TRUTH_CHANGE",
     "POST_MERGE_MAIN_AND_DEPLOYMENT_OBSERVED",
 }
+UNITARY_SNAPSHOT_IDENTITY_COUNTS = {
+    "total": 336,
+    "PERSON": 157,
+    "ORGANISATION": 83,
+    "STRUCTURE": 11,
+    "INSTITUTION": 42,
+    "PROCEEDING": 43,
+}
+CURRENT_CANONICAL_IDENTITY_COUNTS = {
+    "total": 339,
+    "PERSON": 160,
+    "ORGANISATION": 83,
+    "STRUCTURE": 11,
+    "INSTITUTION": 42,
+    "PROCEEDING": 43,
+}
 
 
 def load(path: Path) -> dict[str, Any]:
@@ -227,7 +243,14 @@ def main() -> int:
         corpus = current.get("corpus") or {}
         current_identity = (corpus.get("identity_registry") or {}).get("counts")
         current_professional = (corpus.get("legal_professional_register") or {}).get("counts")
-        require(current_identity == identity.get("counts"), "CURRENT_STATE identity counts drift")
+        require(
+            identity.get("counts") == CURRENT_CANONICAL_IDENTITY_COUNTS,
+            "current canonical identity counts drift",
+        )
+        require(
+            current_identity == UNITARY_SNAPSHOT_IDENTITY_COUNTS,
+            "dated CURRENT_STATE identity counts drift",
+        )
         require(
             current_professional == professional.get("counts"),
             "CURRENT_STATE professional counts drift",
@@ -283,8 +306,8 @@ def main() -> int:
         )
         require(
             (unitary.get("identity_registry") or {}).get("counts")
-            == identity.get("counts"),
-            "unitary identity counts drift from canonical registry",
+            == CURRENT_CANONICAL_IDENTITY_COUNTS,
+            "current unitary identity counts drift",
         )
 
         served_sha = production.get("served_sha")

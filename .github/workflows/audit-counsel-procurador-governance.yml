@@ -9,6 +9,7 @@ on:
       - 'assets/data/counsel-filing-register-v1.json'
       - 'assets/data/procurador-master-register-v1.json'
       - 'assets/data/counsel-procurador-gap-register-v1.json'
+      - 'assets/data/dp748-2026-appeal-reopening-control-v1.json'
       - 'scripts/audit_counsel_procurador_governance.py'
       - '.github/workflows/audit-counsel-procurador-governance.yml'
   push:
@@ -21,6 +22,7 @@ on:
       - 'assets/data/counsel-filing-register-v1.json'
       - 'assets/data/procurador-master-register-v1.json'
       - 'assets/data/counsel-procurador-gap-register-v1.json'
+      - 'assets/data/dp748-2026-appeal-reopening-control-v1.json'
       - 'scripts/audit_counsel_procurador_governance.py'
       - '.github/workflows/audit-counsel-procurador-governance.yml'
 

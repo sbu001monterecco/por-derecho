@@ -27,9 +27,22 @@ CURRENT_UNITARY_STATE = ROOT / "ops" / "CURRENT_UNITARY_STATE.json"
 UNITARY_CARET = ROOT / "assets" / "data" / "caepr-caret-unitary-digest-v1.json"
 REGISTRY = ROOT / "assets" / "data" / "matter-identity-registry-v1.json"
 
-CURRENT_IDENTITY_COUNTS = {
+DIGEST_SNAPSHOT_IDENTITY_COUNTS = {
     "total": 336,
     "PERSON": 157,
+    "ORGANISATION": 83,
+    "STRUCTURE": 11,
+    "INSTITUTION": 42,
+    "PROCEEDING": 43,
+}
+
+# The reverse-engineered digest is a dated 27-August control and must retain
+# its exact source/static denominator.  The canonical registry is additive and
+# has since gained the La Laguna judicial perimeter plus this DP 748 source
+# control; validate that current denominator independently.
+CURRENT_CANONICAL_IDENTITY_COUNTS = {
+    "total": 339,
+    "PERSON": 160,
     "ORGANISATION": 83,
     "STRUCTURE": 11,
     "INSTITUTION": 42,
@@ -141,11 +154,11 @@ assert state["status"] in {
     "LIVE_VERIFIED_PUBLIC_CONTROL",
 }
 assert state["source_base"]["main_sha"] == "8e8e83c5a337846245a942222efbc3120645b1fd"
-for key, value in CURRENT_IDENTITY_COUNTS.items():
+for key, value in DIGEST_SNAPSHOT_IDENTITY_COUNTS.items():
     assert state["identity_registry"][key] == value
 assert state["identity_registry"]["archive_backfill"] == "OPEN"
 assert state["identity_registry"]["last_live_verified_counts"] == LAST_LIVE_IDENTITY_COUNTS
-assert registry["counts"] == CURRENT_IDENTITY_COUNTS
+assert registry["counts"] == CURRENT_CANONICAL_IDENTITY_COUNTS
 assert state["caret_scope"]["control_id"] == unitary_caret["control_id"]
 assert state["caret_scope"]["control_file"] == "assets/data/caepr-caret-unitary-digest-v1.json"
 assert state["caret_scope"]["confirmed"] == 21
@@ -584,7 +597,8 @@ if historical_manifest["current_state"] == "LIVE_VERIFIED":
 print("CURRENT REVERSE-ENGINEERED DIGEST: PASS")
 print(" - control:", state["control_id"])
 print(" - source base:", state["source_base"]["main_sha"])
-print(" - source/static identity denominator: 336 / 157 / 83 / 11 / 42 / 43")
+print(" - dated digest identity denominator: 336 / 157 / 83 / 11 / 42 / 43")
+print(" - current canonical identity denominator: 339 / 160 / 83 / 11 / 42 / 43")
 print(" - current live-verified identity snapshot: 204 / 87 / 71 / 10 / 18 / 18")
 print(" - caret scope: 21/24; 3 pending; old 24/24 package superseded")
 print(" - separate Magistrate López Villarrubia / Meeting Point scope: 31/31 unique and 32/32 rows; all-is for stated scope")
