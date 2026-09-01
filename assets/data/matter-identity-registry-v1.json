@@ -161,15 +161,16 @@
       "Plaza nº 3 del Tribunal de Instancia (Sección Civil) de San Cristóbal de La Laguna",
       "Juzgado de Primera Instancia nº 5 de San Cristóbal de La Laguna",
       "Juzgado de Primera Instancia nº 2 de Arrecife",
-      "Juzgado de Paz de Yaiza"
+      "Juzgado de Paz de Yaiza",
+      "Intervención General de la Comunidad Autónoma de Canarias"
     ]
   },
   "counts": {
-    "total": 339,
+    "total": 340,
     "PERSON": 160,
     "ORGANISATION": 83,
     "STRUCTURE": 11,
-    "INSTITUTION": 42,
+    "INSTITUTION": 43,
     "PROCEEDING": 43
   },
   "parts": [
@@ -181,7 +182,7 @@
     {"path": "matter-identity-registry-v1.organisations.json", "type": "ORGANISATION", "count": 76},
     {"path": "matter-identity-registry-v1.professional-organisations.json", "type": "ORGANISATION", "count": 7},
     {"path": "matter-identity-registry-v1.structures.json", "type": "STRUCTURE", "count": 11},
-    {"path": "matter-identity-registry-v1.institutions.json", "type": "INSTITUTION", "count": 36},
+    {"path": "matter-identity-registry-v1.institutions.json", "type": "INSTITUTION", "count": 37},
     {"path": "matter-identity-registry-v1.dp3205-institutions.json", "type": "INSTITUTION", "count": 1},
     {"path": "matter-identity-registry-v1.la-laguna-judicial-institutions.json", "type": "INSTITUTION", "count": 5},
     {"path": "matter-identity-registry-v1.proceedings.json", "type": "PROCEEDING", "count": 42},

@@ -14,15 +14,15 @@ CONTROL_PLANE_SNAPSHOT_COUNTS = {
     "PERSON": 157,
     "ORGANISATION": 83,
     "STRUCTURE": 11,
-    "INSTITUTION": 42,
+    "INSTITUTION": 43,
     "PROCEEDING": 43,
 }
 CURRENT_CANONICAL_COUNTS = {
-    "total": 339,
+    "total": 340,
     "PERSON": 160,
     "ORGANISATION": 83,
     "STRUCTURE": 11,
-    "INSTITUTION": 42,
+    "INSTITUTION": 43,
     "PROCEEDING": 43,
 }
 LAST_LIVE_IDENTITY_COUNTS = {
@@ -103,9 +103,9 @@ def main() -> int:
         es_identity = require_markers(
             ROOT / "es/registro-identidad-materia/index.html",
             [
-                'content="Registro operativo de 339 IDs inmutables',
-                'data-static-registry-counts="339-160-83-11-42-43"',
-                'data-registry-stat="TOTAL">339',
+                'content="Registro operativo de 340 IDs inmutables',
+                'data-static-registry-counts="340-160-83-11-43-43"',
+                'data-registry-stat="TOTAL">340',
                 'data-registry-stat="PERSON">160',
                 'data-registry-stat="ORGANISATION">83',
                 '"name":"Total","value":339',
@@ -117,8 +117,8 @@ def main() -> int:
             ROOT / "en/matter-identity-registry/index.html",
             [
                 'content="Operational Por Derecho register of 339 immutable IDs',
-                'data-static-registry-counts="339-160-83-11-42-43"',
-                'data-registry-stat="TOTAL">339',
+                'data-static-registry-counts="340-160-83-11-43-43"',
+                'data-registry-stat="TOTAL">340',
                 'data-registry-stat="PERSON">160',
                 'data-registry-stat="ORGANISATION">83',
                 '"name":"Total","value":339',
@@ -396,7 +396,7 @@ def main() -> int:
     print(" - specialist status: LIVE_VERIFIED")
     print(" - operational repository/deployment state remains separate")
     print(" - dated control-plane identity denominator: 336 / 157 / 83 / 11 / 42 / 43")
-    print(" - current canonical identity denominator: 339 / 160 / 83 / 11 / 42 / 43")
+    print(" - current canonical identity denominator: 340 / 160 / 83 / 11 / 43 / 43")
     print(" - latest live-verified identity snapshot: 204 / 87 / 71 / 10 / 18 / 18")
     print(" - promoted 26-Aug unitary snapshot remains 194 / 86 / 66 / 10 / 15 / 17")
     print(f" - repository latest material date: {repository_latest}")

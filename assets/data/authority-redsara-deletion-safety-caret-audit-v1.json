@@ -1,0 +1,98 @@
+{
+  "schema": "por-derecho.authority-redsara-deletion-safety-caret-audit.v1",
+  "control_id": "PD-AUTH-REDSARA-DELETE-CARET-20260901-01",
+  "control_date": "2026-09-01",
+  "workspace_id": "PD-WS-20260901-0002",
+  "audited_base_sha": "0f523d86853730e242d8212e98250c01ee6013db",
+  "status": "PREPARED_FOR_AUTHORISED_RELEASE",
+  "deletion_verdict": "PENDING_MERGE_DEPLOYMENT_AND_LIVE_CLOSEOUT",
+  "prior_release": {
+    "pull_request": 1313,
+    "reviewed_head_sha": "b98f193b5beb952710387e2a9d9b9c081fa71d90",
+    "merge_sha": "4de5b4c739a5e982e7953723eb0f19e63151f83d",
+    "continuity_sha": "4aa479c876332369443e15eed9971c5624caed05",
+    "pages_deployment_id": 6201863449,
+    "pages_action_run": 33511479330
+  },
+  "preservation_inventory": {
+    "material_files": 24,
+    "confirmed_on_canonical_main": 24,
+    "live_objects_rechecked": 7,
+    "live_objects_exact_sha256_parity": 7,
+    "missing_or_local_only_material_items": 0,
+    "ignored_runtime_cache_only": true
+  },
+  "caret_scope": {
+    "scope": "Identity-sensitive institutions materially relied upon by the authority/Red SARA deletion closeout",
+    "unique_reference_denominator": 3,
+    "caret_confirmed": 1,
+    "caret_pending": 2,
+    "caret_suspended": 0,
+    "coverage_percentage": 33.33,
+    "verdict": "PARTIAL — NOT ALL IS^",
+    "records": [
+      {
+        "ordinal": 1,
+        "label": "Intervención General de la Comunidad Autónoma de Canarias^",
+        "caepr_id": "PD-SP-I-0043",
+        "state": "CARET_CONFIRMED",
+        "source": "Official Government of the Canary Islands organisation chart and Intervención General organisation page",
+        "boundary": "Identity only; the outgoing responses do not establish merits, misuse, knowledge, intent, causation or guilt."
+      },
+      {
+        "ordinal": 2,
+        "label": "Comisión para Integridad Pública y Lucha contra la Corrupción",
+        "caepr_id": null,
+        "state": "CARET_PENDING",
+        "next_source_needed": "Official constitutive instrument and current organigram fixing the exact institutional identity and parent organ."
+      },
+      {
+        "ordinal": 3,
+        "label": "Viceconsejería de Justicia",
+        "caepr_id": null,
+        "state": "CARET_PENDING",
+        "next_source_needed": "Official organigram and the source dispatch/receipt fixing the exact receiving suborgan at the relevant date."
+      }
+    ],
+    "caret_not_applicable_but_command_audited": [
+      "PD-SP-EVT-0141",
+      "PD-SP-EVT-0142",
+      "PD-SP-EVT-0143",
+      "PD-EV-UCF-INT-184368-2026",
+      "X-INT-004",
+      "Red SARA/AGE receipts",
+      "receipt-listed attachment rows"
+    ]
+  },
+  "closed_gaps": [
+    {
+      "gap": "Exact identity of the regional Intervención issuing organ",
+      "resolution": "Admitted as PD-SP-I-0043 from official Canary Government sources",
+      "closed_on": "2026-09-01"
+    },
+    {
+      "gap": "Independent deletion audit existed only in the originating thread",
+      "resolution": "This machine-readable record, bilingual public closeout and repository archive preserve the audit outside chat",
+      "closed_on": "2026-09-01"
+    }
+  ],
+  "open_source_dependent_gaps": [
+    "Source-proved individual rows/statuses for the 22-record aggregate-only Red SARA batch",
+    "Permitted primary receipt-to-attachment mapping source",
+    "Exact Commission and Justice receiving-suborgan identities and downstream routing/merits record",
+    "PD-GAP-UCF-001–011, 013, 015 and 016 under their existing finite closure tests"
+  ],
+  "external_actions": {
+    "repository_publication": "AUTHORISED",
+    "pages_publication": "AUTHORISED",
+    "authority_contact": "HOLD_NOT_AUTHORISED",
+    "filing_or_registration": "HOLD_NOT_AUTHORISED",
+    "email_or_third_party_contact": "HOLD_NOT_AUTHORISED"
+  },
+  "boundaries": [
+    "A caret confirms reconciled identity only.",
+    "A receipt proves presentation metadata only.",
+    "Registration, delivery, routing, incorporation, examination, adoption, decision, effect, causation and benefit are separate sourced states.",
+    "Open evidence gaps are not closed by publication and do not establish criminal responsibility."
+  ]
+}

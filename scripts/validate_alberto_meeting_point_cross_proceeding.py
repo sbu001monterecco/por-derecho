@@ -129,15 +129,15 @@ EXPECTED_REGISTRY_COUNTS = {
     "PERSON": 157,
     "ORGANISATION": 83,
     "STRUCTURE": 11,
-    "INSTITUTION": 42,
+    "INSTITUTION": 43,
     "PROCEEDING": 43,
 }
 CURRENT_CANONICAL_REGISTRY_COUNTS = {
-    "total": 339,
+    "total": 340,
     "PERSON": 160,
     "ORGANISATION": 83,
     "STRUCTURE": 11,
-    "INSTITUTION": 42,
+    "INSTITUTION": 43,
     "PROCEEDING": 43,
 }
 EXPECTED_SPECIALIST_LIVE_REGISTRY_COUNTS = {
@@ -1207,5 +1207,5 @@ print(" - repository-wide unitary caret census: separately 21/24; 3 pending")
 print(" - graph: 9 bilingual six-field nodes; 13 direct forward/reverse bridges")
 print(" - primary backlinks: 18/18 contained; direct incident reciprocity: 26/26 per language; legacy lateral topology: 8/8 per language")
 print(" - dated digest source registry: 336 / 157 / 83 / 11 / 42 / 43; prior exact-live snapshot remains historical")
-print(" - current canonical source registry: 339 / 160 / 83 / 11 / 42 / 43")
+print(" - current canonical source registry: 340 / 160 / 83 / 11 / 43 / 43")
 print(f" - candidate publication state: {state}; communication and filing remain HOLD")

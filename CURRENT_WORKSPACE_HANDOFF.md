@@ -67,8 +67,9 @@ Read:
 
 Read:
 
-1. `archive/handoffs/2026-09-01-authority-discovery-redsara-workspace-handoff.md`
-2. the canonical authority-discovery controls named there.
+1. `archive/handoffs/2026-09-01-authority-redsara-caret-deletion-closeout.md`
+2. `archive/handoffs/2026-09-01-authority-discovery-redsara-workspace-handoff.md`
+3. the canonical authority-discovery controls named there.
 
 The machine authority for the complete list and exact state is `data/workspace-register-v1.json`.
 

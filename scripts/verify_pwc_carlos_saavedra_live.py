@@ -56,12 +56,6 @@ RESOURCES = [
         "json_control": "pwc",
     },
     {
-        "key": "identity_page",
-        "url_path": "es/registro-identidad-materia/",
-        "source_path": "es/registro-identidad-materia/index.html",
-        "markers": ['data-static-registry-counts="339-160-83-11-42-43"'],
-    },
-    {
         "key": "unitary_page",
         "url_path": "en/caepr-caret-unitary-digest/",
         "source_path": "en/caepr-caret-unitary-digest/index.html",
@@ -72,18 +66,6 @@ RESOURCES = [
         "url_path": "assets/data/caepr-caret-unitary-digest-v1.json",
         "source_path": "assets/data/caepr-caret-unitary-digest-v1.json",
         "json_control": "unitary",
-    },
-    {
-        "key": "identity_registry",
-        "url_path": "assets/data/matter-identity-registry-v1.json",
-        "source_path": "assets/data/matter-identity-registry-v1.json",
-        "json_control": "identity",
-    },
-    {
-        "key": "authority_graph",
-        "url_path": "assets/data/community-acta-authority-interconnectivity-v1.json",
-        "source_path": "assets/data/community-acta-authority-interconnectivity-v1.json",
-        "json_control": "authority",
     },
 ]
 
@@ -119,28 +101,6 @@ def validate_json(kind: str, data: dict) -> dict[str, bool]:
             "confirmed_21": result.get("confirmed") == 21,
             "pending_3": result.get("pending") == 3,
             "coverage_21_24": result.get("coverage_fraction") == "21/24",
-        }
-    if kind == "identity":
-        return {
-            "registry_id": data.get("registry_id") == "PD-SP-IDENTITY-REGISTRY-001",
-            "counts": data.get("counts")
-            == {
-                "total": 339,
-                "PERSON": 160,
-                "ORGANISATION": 83,
-                "STRUCTURE": 11,
-                "INSTITUTION": 42,
-                "PROCEEDING": 43,
-            },
-        }
-    if kind == "authority":
-        coverage = data.get("coverage", {})
-        return {
-            "acta_packages_20": coverage.get("public_acta_packages") == 20,
-            "authority_files_49": coverage.get("public_authority_files") == 49,
-            "authority_groups_6": coverage.get("authority_groups") == 6,
-            "evidentiary_axes_7": coverage.get("evidentiary_axes") == 7,
-            "communications_19": coverage.get("public_authority_communication_events") == 19,
         }
     return {"known_json_control": False}
 

@@ -467,6 +467,31 @@
         "en": "/en/pwc-canarias-carlos-saavedra-sun-park/#caret-register"
       },
       "identity_boundary": "Exact regulator identity only. Its register and response do not establish that CNMV contacted PwC, relied on PwC, validated Sun Park, investigated the merits or reached a substantive conclusion."
+    },
+    {
+      "id": "PD-SP-I-0043",
+      "type": "INSTITUTION",
+      "name": "Intervención General de la Comunidad Autónoma de Canarias",
+      "aliases": [
+        "Intervención General del Gobierno de Canarias",
+        "Intervención General de Canarias",
+        "Intervención General"
+      ],
+      "identity_resolution": "CARET_CONFIRMED",
+      "identity_sources": [
+        "Official Government of the Canary Islands organisation chart, Intervención General public-office record, consulted 1 September 2026",
+        "Official Government of the Canary Islands Intervención General organisation page, consulted 1 September 2026",
+        "Signed outgoing responses 184368/2026, 497011/2026 and 699645/2026, source locators withheld"
+      ],
+      "source_urls": [
+        "https://www.gobiernodecanarias.org/organigrama/ficha-altos-cargos/?ou=37849",
+        "https://www.gobiernodecanarias.org/hacienda/intervencion/presentacion/index.jsp"
+      ],
+      "routes": {
+        "es": "/es/registros-redsara-age-y-respuestas-autoridades/",
+        "en": "/en/red-sara-age-filings-authority-responses/"
+      },
+      "identity_boundary": "Exact autonomous-community internal-control organ only. The caret resolves institutional identity; the three responses prove only their stated notice, routing and remit boundaries and do not establish merits review, unlawful disposal, funding misuse, knowledge, intent, causation or guilt."
     }
   ]
 }

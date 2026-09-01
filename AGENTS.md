@@ -538,8 +538,11 @@ Yaiza/Cabildo, SAIP, benefit, harm or recovery.
 - For legacy alias `PD-EV-UCF-INT-184368-2026` → `PD-SP-EVT-0141`, the
   user-command `^` audit is
   `REPAIRED / PARTIALLY VERIFIED`; the communication is
-  `CARET_NOT_APPLICABLE` and the issuing institution remains `CARET_PENDING`
-  until the DIR3/official-organigram identity threshold is closed.
+  `CARET_NOT_APPLICABLE`. The exact issuing organ is now
+  `PD-SP-I-0043`, Intervención General de la Comunidad Autónoma de Canarias^,
+  admitted from the official Canary Government organigram. The institution
+  identity is resolved; the downstream Commission/Justice/programme merits and
+  routing chain remains open under `PD-GAP-UCF-016`.
 - Preserve the strongest contrary/exculpatory record and adverse outcome beside
   every hypothesis. An open gap prevents a claim of proof; it does not require
   deleting a properly attributed falsifiable allegation.

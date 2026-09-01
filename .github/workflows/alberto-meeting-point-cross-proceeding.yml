@@ -620,8 +620,8 @@ jobs:
               ('/en/matter-identity-registry/', 'The <strong>339 IDs</strong>'),
           ):
               registry_body = body(route)
-              assert 'data-static-registry-counts="339-160-83-11-42-43"' in registry_body
-              assert 'data-registry-stat="TOTAL">339' in registry_body
+              assert 'data-static-registry-counts="340-160-83-11-43-43"' in registry_body
+              assert 'data-registry-stat="TOTAL">340' in registry_body
               assert language_marker in registry_body
 
           # The specialist manifest records its own exact historical release at

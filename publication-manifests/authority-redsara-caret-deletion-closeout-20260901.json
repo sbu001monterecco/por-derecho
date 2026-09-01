@@ -1,0 +1,38 @@
+{
+  "schema": "por-derecho.publication-manifest.v1",
+  "publication_id": "PD-AUTH-REDSARA-DELETE-CARET-20260901-01",
+  "owner": "Por Derecho evidence governance",
+  "control_date": "2026-09-01",
+  "title": "Authority / Red SARA caret and thread-deletion closeout",
+  "purpose": "Publish the independently rerun preservation audit, admit the source-verified Intervención institution to CAEPR, disclose the finite 1/3 caret result and preserve evidence-dependent gaps ahead of thread deletion.",
+  "current_state": "REMOTE_SOURCE",
+  "source_base_sha": "0f523d86853730e242d8212e98250c01ee6013db",
+  "head_branch": "codex/authority-redsara-deletion-closeout-20260901",
+  "authorization": {
+    "repository_and_website_publication": true,
+    "push_pull_request_merge_pages_and_live_verification": true,
+    "raw_private_source_publication": false,
+    "external_contact_or_delivery": false,
+    "authority": "Gil Marer instructed: publish all, use ^ and close gaps, ahead of deletion of this thread, on 1 September 2026."
+  },
+  "expected_routes": {
+    "en": ["en/authority-redsara-deletion-safety-closeout/index.html"],
+    "es": ["es/cierre-seguridad-borrado-autoridades-redsara/index.html"]
+  },
+  "expected_source_files": [
+    "assets/data/authority-redsara-deletion-safety-caret-audit-v1.json",
+    "assets/data/matter-identity-registry-v1.institutions.json",
+    "assets/data/matter-identity-registry-v1.json",
+    "assets/data/unitary-multitrack-criminal-first-gap-closure-v1.json",
+    "archive/AUTHORITY_REDSARA_CARET_AND_THREAD_DELETION_CLOSEOUT_01SEP2026.md",
+    "archive/handoffs/2026-09-01-authority-redsara-caret-deletion-closeout.md",
+    "scripts/validate_authority_redsara_deletion_safety_caret.py"
+  ],
+  "caret_scope": {"eligible": 3, "confirmed": 1, "pending": 2, "coverage_percentage": 33.33, "verdict": "PARTIAL — NOT ALL IS^"},
+  "preservation_scope": {"inventoried": 24, "canonical_main": 24, "live_exact_parity": 7, "missing_material": 0},
+  "external_actions": {"authority_contact": "HOLD_NOT_AUTHORISED", "filing": "HOLD_NOT_AUTHORISED", "email": "HOLD_NOT_AUTHORISED"},
+  "merge_sha": null,
+  "deployment_evidence": null,
+  "live_verification_evidence": null,
+  "deletion_state": "PENDING_MERGE_DEPLOYMENT_AND_LIVE_CLOSEOUT"
+}

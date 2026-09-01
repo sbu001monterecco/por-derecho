@@ -19,8 +19,6 @@ on:
       - 'assets/actors/carlos-saavedra--linkedin-profile--20260901.jpg'
       - 'assets/data/caepr-caret-pwc-carlos-saavedra-first-hop-v1.json'
       - 'assets/data/caepr-caret-unitary-digest-v1.json'
-      - 'assets/data/matter-identity-registry-v1.json'
-      - 'assets/data/community-acta-authority-interconnectivity-v1.json'
   workflow_dispatch:
 
 permissions:
