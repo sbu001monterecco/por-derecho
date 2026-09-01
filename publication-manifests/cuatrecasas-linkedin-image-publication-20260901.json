@@ -3,12 +3,16 @@
   "publication_id": "cuatrecasas-linkedin-image-publication-20260901",
   "control_id": "PD-CUATRE-LINKEDIN-20260306-IMAGES-03",
   "control_date": "2026-09-01",
-  "current_state": "REMOTE_SOURCE",
-  "status": "prepared_for_remote_publication",
+  "current_state": "LIVE_VERIFIED",
+  "status": "published_live_verified",
   "owner": "Por Derecho / Project Sun Rock",
   "repository": "sbu001monterecco/por-derecho",
   "initial_task_main_sha": "e9e1380e810bf44c75dda1ed391f484972e867ba",
   "branch": "codex/cuatrecasas-linkedin-images-20260901",
+  "closeout_branch": "codex/cuatrecasas-linkedin-images-closeout-20260901",
+  "reviewed_head_sha": "9deb9086cc9a303e751e6f691db6175c63ccfc1b",
+  "merge_sha": "ef9445dbf6223dc3c498608d9a049d5c72833dd4",
+  "merge_tree_sha": "865e7680a7d2cdff9506a8fd9b2f2a5f19b208f8",
   "purpose": "Publish the exact two user-supplied LinkedIn screenshot copies alongside the existing bilingual text record, with full-resolution access, controlled captions, binary integrity checks and unchanged authorship, Madrid Bar outcome, later-interface-state, dissemination and firm-responsibility boundaries.",
   "supersedes_publication_boundary": {
     "scope": "The prior raw-screenshot exclusion is superseded for the exact two controlled captures only.",
@@ -117,17 +121,111 @@
     "direct_contact": "HOLD_NOT_AUTHORISED"
   },
   "validation": {
-    "status": "PENDING_REMOTE_CI",
-    "evidence": []
+    "status": "PASSED",
+    "evidence": [
+      "Local publication-integrity validation passed across 120 manifests and 15 changed files.",
+      "The specialist validator passed with two hash-verified public captures and two bilingual public panels.",
+      "Repository-preservation, audience-experience, private-source-governance, JavaScript syntax and JSON/YAML parsing checks passed.",
+      "The reviewed PR suite completed with 37 successes, one expected conditional skip and zero failures or pending runs.",
+      "Exact-merge specialist, private-source-governance, publication-integrity and audience-experience workflows completed successfully."
+    ]
   },
-  "deployment_evidence": null,
+  "deployment_evidence": {
+    "pull_request": 1299,
+    "pages_run_id": 33463232728,
+    "pages_run_number": 1361,
+    "pages_run_url": "https://github.com/sbu001monterecco/por-derecho/actions/runs/33463232728",
+    "head_sha": "ef9445dbf6223dc3c498608d9a049d5c72833dd4",
+    "status": "completed",
+    "conclusion": "success",
+    "exact_merge_sha": true
+  },
   "live_urls": [
     "https://sbu001monterecco.github.io/por-derecho/en/cuatrecasas-sun-park/#inigo-linkedin-20260306",
     "https://sbu001monterecco.github.io/por-derecho/es/cuatrecasas-sun-park/#inigo-linkedin-20260306",
     "https://sbu001monterecco.github.io/por-derecho/assets/evidence/cuatrecasas/inigo-de-luisa-linkedin-message-20260306-capture-01.jpg",
     "https://sbu001monterecco.github.io/por-derecho/assets/evidence/cuatrecasas/inigo-de-luisa-linkedin-message-20260306-capture-02.jpg"
   ],
-  "live_verification_evidence": null,
-  "deletion_record": null,
-  "next_gate": "Require local validation, refreshed-main diff review, PR CI, merge, exact Pages deployment, public image byte readback and bilingual rendered verification before LIVE_VERIFIED or deletion-safety claims."
+  "live_verification_evidence": {
+    "verified_at_utc": "2026-09-01T02:45:15Z",
+    "method": "No-cache public-edge byte parity against the exact merge tree plus rendered cloud-browser verification.",
+    "byte_parity": {
+      "matched": 9,
+      "expected": 9,
+      "resources": [
+        {
+          "path": "assets/evidence/cuatrecasas/inigo-de-luisa-linkedin-message-20260306-capture-01.jpg",
+          "bytes": 151680,
+          "sha256": "ddf86dfe42a0cfa8d4481a6e504c4dc94a63e48c2ce7cb98ec764fa20cb25102"
+        },
+        {
+          "path": "assets/evidence/cuatrecasas/inigo-de-luisa-linkedin-message-20260306-capture-02.jpg",
+          "bytes": 138006,
+          "sha256": "baefb00dc12914aef4c32f0b69bd63842b15f4d83860a254294900a3822d2aab"
+        },
+        {
+          "path": "assets/cuatrecasas-inigo-linkedin-record-20260831.js",
+          "bytes": 32249,
+          "sha256": "f63eef160958af2753630900191459fc7c3b622682861789b7371d3312d2a13d"
+        },
+        {
+          "path": "assets/site.js",
+          "bytes": 5331,
+          "sha256": "9521c877802c1b106c59b23b164bf72f8b8b72b84cf69b3ee14cdb01e2dd6bae"
+        },
+        {
+          "path": "en/cuatrecasas-sun-park/index.html",
+          "bytes": 88296,
+          "sha256": "5ae6e3a4db3e29314760de1337b8d3ca5eb817b999ee114ff0abfdd9df4bc290"
+        },
+        {
+          "path": "es/cuatrecasas-sun-park/index.html",
+          "bytes": 90900,
+          "sha256": "dc187994c0d7eaba3dcb33d9cb12107f518ce7e6c4fc40feb2f88797e4a4f05e"
+        },
+        {
+          "path": "evidence/cuatrecasas/2026-03-06-inigo-de-luisa-linkedin-message.json",
+          "bytes": 13018,
+          "sha256": "ea025b6afe1baff7dbbe1d2cddd498f7cafb4db3851ada7fef5b61ec5a45c9af"
+        },
+        {
+          "path": "archive/CUATRECASAS_LINKEDIN_IMAGE_PUBLICATION_CONTROL_01SEP2026.md",
+          "bytes": 4887,
+          "sha256": "3c1bc26595feddbdfb82b512ad87e937d6a7d0ee5baae57b7a8fc37d3453d123"
+        },
+        {
+          "path": "publication-manifests/cuatrecasas-linkedin-image-publication-20260901.json",
+          "bytes": 6989,
+          "sha256": "c5f7666751776487f9aaadafe2c4e4c60b591606c18817ae7469a9995617cc98"
+        }
+      ]
+    },
+    "rendered_routes": {
+      "en": {
+        "capture_count": 2,
+        "loaded_dimensions": "921x2048 each",
+        "full_resolution_anchor_count": 4,
+        "public_record_link_count": 1,
+        "reciprocal_institution_link_count": 1
+      },
+      "es": {
+        "capture_count": 2,
+        "loaded_dimensions": "921x2048 each",
+        "full_resolution_anchor_count": 4,
+        "public_record_link_count": 1,
+        "reciprocal_institution_link_count": 1
+      },
+      "icam_ccacm_backlinks": {
+        "en": 1,
+        "es": 1
+      }
+    }
+  },
+  "deletion_record": {
+    "status": "DELETION_SAFE_WITH_OPEN_EVIDENCE",
+    "preserved": "Exact supplied screenshot bytes, cryptographic hashes, dimensions, bilingual presentation, transcript, claim boundaries, reciprocal links and exact-merge deployment evidence.",
+    "open_evidence": "Provider-certified exports, provider-side timestamp/timezone and authorship evidence, and evidence establishing the cause of the later LinkedIn interface state.",
+    "external_action": "NONE"
+  },
+  "next_gate": "No publication gate remains. Preserve the open provider-evidence limitations; any LinkedIn action, direct contact, email, filing, service or institutional supplement requires separate authority."
 }
