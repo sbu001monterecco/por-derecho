@@ -154,20 +154,20 @@ Repository main, Pages deployment and exact public readback remain separately re
 
 The 27-August Magistrate López Villarrubia / Meeting Point specialist release
 admitted ten additional immutable records and was exactly read back at 204.
-The present local 31-August append-only register, including the later
-Ministerio Fiscal proceedings, person and institution backfill, produces a
-source/static denominator of 313. That 313-record state is **not yet
+The present local 1-September append-only register, including the later
+Ministerio Fiscal, La Laguna judicial and PwC/Sun Park identity backfills, produces a
+source/static denominator of 336. That 336-record state is **not yet
 live-verified**. The 204- and earlier
 194-record snapshots remain historical deployment evidence.
 
 | Class | Count |
 |---|---:|
-| People | 144 |
-| Organisations | 79 |
+| People | 157 |
+| Organisations | 83 |
 | Structures | 11 |
-| Institutions | 36 |
+| Institutions | 42 |
 | Proceedings | 43 |
-| **Total** | **313** |
+| **Total** | **336** |
 
 These counts control in the local canonical JSON, both static public pages,
 metadata, JSON-LD and no-JavaScript fallbacks. They require later authorised
@@ -177,11 +177,13 @@ Archive backfill remains open. Identity resolves identity
 only; it does not transfer knowledge, intention, control, benefit,
 responsibility or liability.
 
-The identity counts do not merge three distinct caret scopes. As corrected on
-31 August 2026, the repository-wide unitary control is 20/24 with four pending:
-Clubotel La Dorada, S.L. is exact at `PD-SP-O-0075` for the instrument-specific
-role, while the distinct Ona Hotels / ONA perimeter remains pending at
-`PD-SP-O-0033`. The six-surface Magistrate-Judge López
+The identity counts do not merge three distinct caret scopes. As further
+reconciled on 1 September 2026, the repository-wide unitary control is 21/24
+with three pending: Matkator, S.L.U. is exact at `PD-SP-O-0003` from official
+incorporation and registry-sheet evidence, while its current primary NIF/status
+certificate remains an evidence-production gap. Clubotel La Dorada, S.L. is
+exact at `PD-SP-O-0075` for the instrument-specific role, while the distinct
+Ona Hotels / ONA perimeter remains pending at `PD-SP-O-0033`. The six-surface Magistrate-Judge López
 Villarrubia / Meeting Point control is 31/31; and the full eighteen-route
 first-hop evidence corpus is 61/130. The unitary and first-hop scopes remain
 **PARTIAL — NOT ALL IS^**; the separately bounded six-surface identity census

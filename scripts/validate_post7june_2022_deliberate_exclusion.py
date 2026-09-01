@@ -198,11 +198,11 @@ def main() -> int:
     require("PD-SP-P-0093" in actors and "PD-SP-P-0094" in actors, "Javier/Gerardo actor rows missing")
 
     require(registry["counts"] == {
-        "total": 313,
-        "PERSON": 144,
-        "ORGANISATION": 79,
+        "total": 336,
+        "PERSON": 157,
+        "ORGANISATION": 83,
         "STRUCTURE": 11,
-        "INSTITUTION": 36,
+        "INSTITUTION": 42,
         "PROCEEDING": 43,
     }, "master registry counts mismatch")
     by_id = {item["id"]: item for item in people}
@@ -288,12 +288,12 @@ def main() -> int:
         "@media (max-width: 620px)",
     ])
     require_markers(ALBERTO_LIVE_WORKFLOW, [
-        "'total': 313",
-        "'PERSON': 144",
-        "'ORGANISATION': 79",
-        "data-static-registry-counts=\"313-144-79-11-36-43\"",
+        "'total': 336",
+        "'PERSON': 157",
+        "'ORGANISATION': 83",
+        "data-static-registry-counts=\"336-157-83-11-42-43\"",
         "identity_registry_parity'] == 204",
-        "'identity_source_current': 313",
+        "'identity_source_current': 336",
         "'specialist_historical_identity_snapshot': 204",
     ])
     omni_manifest = load_json(OMNI_MANIFEST)

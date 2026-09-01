@@ -210,8 +210,8 @@ The complete certified Concurso 36/2012 file, current RPL 2523/2025 status, PP 1
 
 - The unitary record already uses the correct “read forward; test backward” method.
 - The criminal reverse-engineering page separates attributed theory from judicial finding and exposes contrary proof requirements.
-- The current repository source/static identity denominator is **313**: 144 people,
-  79 organisations, 11 structures, 36 institutions and 43 proceedings. Fetched
+- The current repository source/static identity denominator is **336**: 157 people,
+  83 organisations, 11 structures, 42 institutions and 43 proceedings. Fetched
   origin/main `a9e394a893251ba393ae37ead58be82987666820` contains 210 objects; the
   204-record and earlier 194-record exact public readbacks remain historical deployment evidence. The
   additive local identity changes include Construcciones Acos-Matos, S.L.^, the
@@ -232,25 +232,28 @@ The complete certified Concurso 36/2012 file, current RPL 2523/2025 status, PP 1
 
 ## 6. CAEPR caret correction
 
-As corrected on 31 August 2026, the finite unitary caret digest after the
-28-August principal-scope closure is:
+As further reconciled on 1 September 2026, the finite unitary caret digest after
+the 28-August principal-scope closure is:
 
-- **20 / 24 confirmed**;
-- **4 pending**;
+- **21 / 24 confirmed**;
+- **3 pending**;
 - verdict: `PARTIAL — NOT ALL IS^`.
 
 The 28-August summary overcounted the numerator by one. Clubotel La Dorada,
 S.L. is confirmed at `PD-SP-O-0075` for the instrument-specific ONA-side role;
 the distinct Ona Hotels / ONA commercial perimeter remains pending at
-`PD-SP-O-0033` and is not collapsed into Clubotel.
+`PD-SP-O-0033` and is not collapsed into Clubotel. Matkator, S.L.U. is now
+confirmed at `PD-SP-O-0003` from official BORME incorporation and registry-sheet
+evidence; its current primary NIF/status certificate remains an evidence gap,
+not an identity exception.
 
 A previously prepared local 24/24 package was based on the earlier `16dd443...` repository state. It is **not mergeable as-is** because:
 
 - the source-base registry was 194, the separately controlled Magistrate López Villarrubia / Meeting
   Point release advanced the then-live-verified registry to 204, fetched origin/main later reached
-  210, and the present repository source/static registry is 313; none of those states validates the stale package's assumptions;
+  210, and the present repository source/static registry is 336; none of those states validates the stale package's assumptions;
 - proceeding IDs `PD-SP-R-0011` through `PD-SP-R-0017` are now occupied;
-- Matkator remains a registry-state reconciliation exception;
+- Matkator's former registry-state exception is closed at `PD-SP-O-0003` without treating the current primary-certificate gap as an identity gap;
 - Clubotel La Dorada is admitted at `PD-SP-O-0075` and resolves the instrument-specific ONA-side role without collapsing or resolving the wider ONA perimeter, which remains pending at `PD-SP-O-0033`;
 - PP 1041 and EH 94 are not yet admitted as current-registry proceedings.
 
@@ -260,7 +263,7 @@ Future closure must rebase on current `main`, preserve immutable IDs, complete t
 
 `PD-ALV-MP357-MULTI-20260827-01` is a separate criminal-first,
 multidirectional evidence module. It does not add to, subtract from or close the
-repository-wide 20/24 census above.
+repository-wide 21/24 census above.
 
 Its exhaustive specialist census is **31/31 unique identities and 32/32
 occurrence rows confirmed, zero pending — ALL IS^ for this stated scope**. The
@@ -282,7 +285,7 @@ controlled perimeters, 25 institutions or sub-organs and 14 proceedings**.
 The result is **61 confirmed, 69 pending, 0 suspended — PARTIAL, NOT ALL IS^**
 (46.923076…%). It overlaps 31 core objects and adds 99; every pending object has
 an exact source-completion target. It does not change the specialist all-is
-scope or the repository-wide 20/24 result. Object-level confirmation does not authorise
+scope or the repository-wide 21/24 result. Object-level confirmation does not authorise
 a caret on an unresolved shorthand or source literal.
 
 The module reads every bridge in two directions:
@@ -323,7 +326,7 @@ readback. It does not rewrite the immutable `8e8e83c5...` historical
 source-base snapshot.
 
 The module keeps two new identity-only censuses separate from one another and
-from the 32/32 occurrence-row specialist, 61/130 and repository-wide 20/24 scopes above:
+from the 32/32 occurrence-row specialist, 61/130 and repository-wide 21/24 scopes above:
 
 - continuity spine: **39/65 confirmed, 26 pending, 0 suspended — PARTIAL, NOT ALL IS^**;
 - role-selected Germany/Spain/EU professional and institutional census:
@@ -390,7 +393,7 @@ Controls:
 5. Obtain the certified RPL 2523/2025 and complete Concurso 36/2012 denominators.
 6. Obtain the CEXP succession and 7-June authority records.
 7. Reconcile the separate 24-object CAEPR caret scope against the current
-   313-ID source/static registry; keep the Magistrate López Villarrubia / Meeting Point
+   336-ID source/static registry; keep the Magistrate López Villarrubia / Meeting Point
    specialist all-is scope separate from the three unitary pending objects.
 8. Reconcile/close stale PRs by verified delta, not wholesale merge.
 

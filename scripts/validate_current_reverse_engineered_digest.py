@@ -87,7 +87,7 @@ required_markers = [
     "PD-UNITARY-REDIGEST-20260827-01",
     "Sun Park was one economically integrated hotel platform",
     "PP 1041 is the cleanest finite production demand",
-    "20 / 24 confirmed",
+    "21 / 24 confirmed",
     "superseded",
     "33 pull requests",
     "required-status-check enforcement was off",
@@ -174,7 +174,7 @@ assert state["source_base"]["open_pull_requests"] == 33
 assert state["source_base"]["required_status_check_enforcement"] == "off"
 
 # The exhaustive specialist census remains separate from, and may not mutate,
-# the independently controlled repository-wide current 20/24 unitary census.
+# the independently controlled repository-wide current 21/24 unitary census.
 modules = {item["module_id"]: item for item in state["specialist_modules"]}
 
 # The 27-August FTI / Meeting Point / RICPE release is additive. It must remain
