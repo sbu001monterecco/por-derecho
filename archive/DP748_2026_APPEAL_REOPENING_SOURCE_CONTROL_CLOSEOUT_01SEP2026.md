@@ -198,7 +198,16 @@ The following remain genuinely open:
 
 The separate 26 June filing-classification ambiguity is resolved as `CP-GAP-014`: DP synthesis and ETJ reposición were distinct filings.
 
-## 10. Deletion-safe status
+## 10. Governed repository and publication lifecycle
+
+- PR #1332 passed **35/35** workflows on exact reconciled head `a3a7a4ddf1a115be2c1a92d47d3ca5351e836526` and tree `8fb13de8c31cbc05396e99a7f13564ba56ab63d5`.
+- It merged at `cc3d0985ae014282e8a1f7805e0193d15e673177`.
+- GitHub Pages run `33547241129` / #1387 completed successfully.
+- Live source-byte readback matched 3/3 core JSON resources: the DP 748 control, canonical identity registry and public Master projection.
+- Three initial live checks began before Pages completed and read mixed old/new bytes; they are deployment-race observations, not source-tree failures.
+- One push-only López Villarrubia / Meeting Point verifier retained the former 336/157 current denominator. The bounded closeout updates that current denominator to 339/160 while preserving the immutable historical 204 snapshot and the separately dated 336/157 digest snapshot.
+
+## 11. Deletion-safe status
 
 The material procedural conclusions, source hashes, identities, filing lineage, property boundary, appellate posture, gaps and prepared-artifact fingerprints are durable in the repository controls and the private artifact set. No raw private source is required to be inferred from this closeout.
 

@@ -160,6 +160,10 @@
         "result": "RESOLVED_WITHOUT_SILENT_OVERWRITE"
       },
       "final_reconciled_main_sha": "b0958077b71130fe808acaf1cc006185b6aa43fa",
+      "validation_state": "PR_1332_EXACT_HEAD_35_OF_35_GREEN; PRIMARY_MERGE_AND_PAGES_DEPLOYED; CORE_LIVE_JSON_3_OF_3_EXACT_SHA256; BOUNDED_PUSH_ONLY_VALIDATOR_CLOSEOUT_IN_PROGRESS",
+      "publication_pr": 1332,
+      "publication_merge_sha": "cc3d0985ae014282e8a1f7805e0193d15e673177",
+      "pages_run_id": 33547241129,
       "next_target_mode": "COUNSEL_REVIEW_P0_FILING_THEN_CERTIFIED_APPEAL_ETJ_AND_PROPERTY_GAP_CLOSURE"
     }
   ],
