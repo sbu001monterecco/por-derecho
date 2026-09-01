@@ -1,0 +1,44 @@
+{
+  "schema": "por-derecho.matter-identity-resolution-overlay.v1",
+  "control_id": "PD-SP-ID-RES-AMHP-3P-20260901",
+  "control_date": "2026-09-01",
+  "purpose": "Resolve existing canonical identities without duplicating immutable IDs while the base typed record is retained in its historical part file.",
+  "resolutions": [
+    {
+      "target_id": "PD-SP-P-0010",
+      "name": "Francisco de Borja Rodríguez-Batllori Laffitte",
+      "identity_resolution": "CARET_CONFIRMED",
+      "identity_sources": [
+        "BOE-B-2012-22189 — appointment in Concurso 36/2012, 6-Jun-2012",
+        "BORME-A-2012-198-35",
+        "Controlled primary Concurso 36/2012 appointment record"
+      ],
+      "capacity_boundary": "The caret confirms exact person identity only. His appointment as insolvency administrator is proceeding- and date-specific. A 2016 despachosantelmo.com sender address and later outgoing messages addressed to a Grant Thornton external-format address do not establish a timeless employment relationship, knowledge transfer, coordination, wrongdoing or liability."
+    },
+    {
+      "target_id": "PD-SP-O-0020",
+      "name": "RIC Private Equity Investment Partners SCR, S.A.",
+      "identity_resolution": "CARET_CONFIRMED",
+      "identity_sources": [
+        "CNMV official venture-capital-company register: registration number 295, registered 25-Oct-2019",
+        "Controlled RICPE project, webinar, certification and institutional-source corpus"
+      ],
+      "capacity_boundary": "Exact regulated legal-person identity only. Financing, investment, board, control-unit, subscriber, materialiser, adviser, project and individual knowledge/decision roles remain proposition-specific."
+    }
+  ],
+  "non_resolutions": [
+    {
+      "target_id": "PD-SP-O-0044",
+      "name": "RSM Spain professional perimeter",
+      "state": "NO_CARET_ON_UMBRELLA_LABEL",
+      "reason": "RSM Spain is a multi-entity professional network; exact legal person PD-SP-O-0085 is separately registered for the legal/tax entity relevant to Eduardo Sánchez Iglesias."
+    },
+    {
+      "target_id": "PD-SP-O-0045",
+      "name": "Grant Thornton professional perimeter",
+      "state": "NO_CARET_ON_UMBRELLA_LABEL",
+      "reason": "The broad professional-perimeter label is not one legal person. Exact Canary legal person PD-SP-O-0086 is separately registered with dated legal-form history."
+    }
+  ],
+  "governance_boundary": "A resolution overlay is part of the federated CAEPR control plane. It cannot duplicate an ID as a second person/entity record and cannot transfer a professional relationship, conduct, knowledge, intent or liability."
+}
