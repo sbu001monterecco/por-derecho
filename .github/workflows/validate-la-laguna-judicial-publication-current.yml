@@ -1,0 +1,28 @@
+name: Validate La Laguna judicial publication current main
+on:
+  pull_request:
+    paths:
+      - 'assets/data/la-laguna-judicial-actors-*.json'
+      - 'assets/data/matter-identity-registry-v1.la-laguna-judicial-*.json'
+      - 'es/registro-judicial-la-laguna/**'
+      - 'en/la-laguna-judicial-register/**'
+      - 'scripts/validate_la_laguna_judicial_publication_current.py'
+  push:
+    branches: [main]
+    paths:
+      - 'assets/data/la-laguna-judicial-actors-*.json'
+      - 'assets/data/matter-identity-registry-v1.la-laguna-judicial-*.json'
+      - 'es/registro-judicial-la-laguna/**'
+      - 'en/la-laguna-judicial-register/**'
+      - 'scripts/validate_la_laguna_judicial_publication_current.py'
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python scripts/validate_la_laguna_judicial_publication_current.py
