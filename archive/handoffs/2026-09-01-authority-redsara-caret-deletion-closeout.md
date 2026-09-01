@@ -2,7 +2,7 @@
 
 **Handoff:** `PD-WCH-20260901-AUTH-REDSARA-002`
 **Workspace:** `PD-WS-20260901-0002`
-**State:** `PUBLICATION_AUTHORISED_CLOSEOUT_IN_PROGRESS`
+**State:** `DELETION_SAFE_WITH_OPEN_EVIDENCE_GAPS`
 
 Continue from current `main`, not chat memory. Read:
 
@@ -14,4 +14,4 @@ Continue from current `main`, not chat memory. Read:
 
 The exact Intervención identity is `PD-SP-I-0043`, Intervención General de la Comunidad Autónoma de Canarias^. The caret is identity-only. Preserve the 1/3 finite result and both pending institutional exceptions until their official sources are obtained. Do not create rows for the aggregate-only 22-record batch, infer receipt-to-attachment mappings, or promote notice/routing into merits, causation or guilt.
 
-Before deleting the originating thread, verify that this release has moved through merge, Pages deployment, exact live readback and a final repository closeout update.
+Release PR #1339 passed 43/43 checks and merged as `526e366d1b8137bb34faf4812232b4a45159962c`; Pages run `33559539768` succeeded; five canonical live objects matched exact repository SHA-256 values. The originating thread may be deleted. Continue all future work from current `main` and the machine audit, preserving the two pending identities and every source-dependent gap.

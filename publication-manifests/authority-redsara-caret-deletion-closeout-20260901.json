@@ -5,7 +5,7 @@
   "control_date": "2026-09-01",
   "title": "Authority / Red SARA caret and thread-deletion closeout",
   "purpose": "Publish the independently rerun preservation audit, admit the source-verified Intervención institution to CAEPR, disclose the finite 1/3 caret result and preserve evidence-dependent gaps ahead of thread deletion.",
-  "current_state": "REMOTE_SOURCE",
+  "current_state": "LIVE_VERIFIED",
   "source_base_sha": "0f523d86853730e242d8212e98250c01ee6013db",
   "head_branch": "codex/authority-redsara-deletion-closeout-20260901",
   "authorization": {
@@ -31,8 +31,40 @@
   "caret_scope": {"eligible": 3, "confirmed": 1, "pending": 2, "coverage_percentage": 33.33, "verdict": "PARTIAL — NOT ALL IS^"},
   "preservation_scope": {"inventoried": 24, "canonical_main": 24, "live_exact_parity": 7, "missing_material": 0},
   "external_actions": {"authority_contact": "HOLD_NOT_AUTHORISED", "filing": "HOLD_NOT_AUTHORISED", "email": "HOLD_NOT_AUTHORISED"},
-  "merge_sha": null,
-  "deployment_evidence": null,
-  "live_verification_evidence": null,
-  "deletion_state": "PENDING_MERGE_DEPLOYMENT_AND_LIVE_CLOSEOUT"
+  "merge_sha": "526e366d1b8137bb34faf4812232b4a45159962c",
+  "deployment_evidence": {
+    "pull_request": 1339,
+    "reviewed_head_sha": "236d101c999f3f382115b9453b74d74ddae7ce05",
+    "pull_request_checks": "43/43_SUCCESS",
+    "pages_action_run": 33559539768,
+    "conclusion": "success"
+  },
+  "validation": {
+    "evidence": [
+      "PR #1339 reviewed head 236d101c999f3f382115b9453b74d74ddae7ce05: 43/43 associated pull-request workflow runs completed success.",
+      "PR #1339 merged to main as 526e366d1b8137bb34faf4812232b4a45159962c.",
+      "GitHub Pages action run 33559539768 completed success for merge 526e366d1b8137bb34faf4812232b4a45159962c.",
+      "Cache-busted production readback matched exact repository SHA-256 values for 5/5 controlled live objects."
+    ]
+  },
+  "live_urls": [
+    "https://sbu001monterecco.github.io/por-derecho/en/authority-redsara-deletion-safety-closeout/",
+    "https://sbu001monterecco.github.io/por-derecho/es/cierre-seguridad-borrado-autoridades-redsara/",
+    "https://sbu001monterecco.github.io/por-derecho/assets/data/authority-redsara-deletion-safety-caret-audit-v1.json",
+    "https://sbu001monterecco.github.io/por-derecho/assets/data/matter-identity-registry-v1.json",
+    "https://sbu001monterecco.github.io/por-derecho/assets/data/matter-identity-registry-v1.institutions.json"
+  ],
+  "live_verification_evidence": {
+    "method": "CACHE_BUSTED_EXACT_SHA256_PARITY",
+    "objects": 5,
+    "matched": 5,
+    "hashes": {
+      "en_route": "1de79af039087bdab3ab8e4d920e6e19ff309cfc9b6eda39d5eec0064af4bdab",
+      "es_route": "dc3650181538a21bf4b30d2792a25d1bbd2acc549cfd40c7f65040e157799212",
+      "audit_json": "415e178ef4688b45c2cacd2d13849e5579985b6ab730193c54dfdae46fe7ba8a",
+      "registry_json": "02898d11f85d68ea4e5a7675540d80beb01e0a60e9f7dd3269118f26f8bb7570",
+      "institution_shard_json": "6f3de546947ae4c14e0664f3fb26528168499c325a37f1c088cda6a3abd5da9e"
+    }
+  },
+  "deletion_state": "DELETION_SAFE_WITH_OPEN_EVIDENCE_GAPS"
 }
