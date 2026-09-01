@@ -118,3 +118,20 @@ After merge and Pages success:
 5. write a post-deployment attestation before claiming `LIVE_VERIFIED` or `DELETION_SAFE`.
 
 Until that chain completes, the correct state remains no higher than the objective gate actually reached.
+
+## 10. Continuity continuation — 1 September 2026
+
+The original implementation is now durably present on `main` through source PR [#1292](https://github.com/sbu001monterecco/por-derecho/pull/1292), reviewed head `68537741dbedba2874df35f6036f1cef85db57fa`, merge `aefc9dc4dcc59f4f5d6eaaf87c580c6aae235029`, and count-synchronisation PR [#1294](https://github.com/sbu001monterecco/por-derecho/pull/1294), reviewed head `5f0eeba81b8bc1ce5c0b2a3acce56e911b3820d7`, merge `77a3d30b8cf5d6a13d3a527caafa8972e058d5f8`. The latest observed deployed descendant before this continuation is `e9e1380e810bf44c75dda1ed391f484972e867ba`, published successfully by Pages run `33453675351` (#1360).
+
+Pages run `33448645852` (#1353) for the earlier Ricardo corrective head was cancelled only after a newer `main` superseded it. It is recorded as superseded, not as a failed release and not as proof of live byte equality.
+
+The successor control adds [`assets/data/justice-professionals-evidence-production-queue-v1.json`](../assets/data/justice-professionals-evidence-production-queue-v1.json), which:
+
+- maps all 48 named people exactly once to their sourced act, capacity, source literal, office-only status or expressly non-attributive contextual link;
+- carries nine bounded open production tasks;
+- binds the three pending notarial literals to `ME-123`–`ME-125`;
+- binds the zero-name Property Registry gap to `ME-126`;
+- reuses `ME-009`, `ME-010`, `ME-121` and `ME-122` for the DP 1901, E.G. 745 and hearing gaps rather than duplicating them; and
+- preserves `PARTIAL — NOT ALL IS^` until every person in a revised finite denominator is confirmed.
+
+**Successor-artifact state at preparation:** `PREPARED_PENDING_MERGE`. The already deployed source history does not prove that this new queue, its bilingual links or its closeout record are live. A post-merge Pages run and no-cache route/resource readback remain required before this continuation may be promoted to `LIVE_VERIFIED` or classified `DELETION-SAFE WITH OPEN EVIDENCE`.

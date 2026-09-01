@@ -47,6 +47,33 @@
       "fact": "Gil Marer and Aweswell Limited allege that the 2019 opinion was at minimum gravely reckless and may already have been criminal; that the criminal threshold had been crossed before or, at the latest, at the 2023 hearing; and that the Calificación was actively instrumentalised as an institutional shield."
     }
   ],
+  "linked_proceedings": [
+    {
+      "reference": "Calificación / Concurso 36/2012",
+      "relationship": "DOCUMENTED_PERSONAL_ACT_AND_HEARING_CONTINUITY",
+      "personal_attribution": "Signed 12 March 2019 opinion; direct declarant identification at the 25 July 2023 hearing remains officially person-specific pending."
+    },
+    {
+      "reference": "RPL 2523/2025",
+      "relationship": "RELATED_APPEAL_CONTINUITY",
+      "personal_attribution": "No new Ricardo-authored filing, appearance or decision is located."
+    },
+    {
+      "reference": "DP 1901/2026",
+      "relationship": "EVIDENCE_AND_PRODUCTION_CONTINUITY",
+      "personal_attribution": "No signed report or primary source attributes a DP 1901/2026 act to Ricardo in the reviewed corpus."
+    },
+    {
+      "reference": "E.G. 745/2026",
+      "relationship": "INSTITUTIONAL_INSPECTION_CONTINUITY",
+      "personal_attribution": "The located decree and notice are signed by other identified actors; no personal E.G. 745/2026 act is attributed to Ricardo."
+    }
+  ],
+  "evidence_queue": {
+    "path": "assets/data/justice-professionals-evidence-production-queue-v1.json",
+    "control_id": "PD-SP-JUSTICE-PROFESSIONALS-EVIDENCE-QUEUE-20260901-01",
+    "actor_specific_tasks": ["JP-EQ-001", "JP-EQ-002", "JP-EQ-003", "JP-EQ-009"]
+  },
   "knowledge_boundary": "Public specialist training and a date-specific professional title are relevant competence context. They do not prove receipt or reading of a particular filing, matter-specific knowledge, intent, coordination, wrongdoing, causation or criminal liability.",
   "open_production": [
     "complete source and review file behind the 12 March 2019 opinion",

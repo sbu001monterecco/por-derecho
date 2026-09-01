@@ -7,7 +7,7 @@
   "repository": "sbu001monterecco/por-derecho",
   "preparation_base_sha": "e313c13bf46464015a72025dcd9264e61ec33107",
   "branch": "codex/ricardo-mosteyrin-justice-professionals-caret-20260831",
-  "merge_sha": null,
+  "merge_sha": "aefc9dc4dcc59f4f5d6eaaf87c580c6aae235029",
   "expected_routes": {
     "es": [
       "es/ricardo-de-mosteyrin-sampalo/index.html",
@@ -35,15 +35,23 @@
     "archive/RICARDO_MOSTEYRIN_JUSTICE_PROFESSIONALS_CARET_CONTINUITY_AUDIT_31AUG2026.md",
     "archive/CONTINUOUS_MAINTENANCE_MATRIX.md",
     "assets/data/justice-professionals-caret-audit-v1.json",
+    "assets/data/justice-professionals-evidence-production-queue-v1.json",
+    "assets/data/ricardo-de-mosteyrin-sampalo-v1.json",
     "assets/data/matter-identity-registry-v1.json",
     "assets/data/matter-identity-registry-v1.people.json",
     "assets/data/matter-identity-registry-v1.professional-people.json",
     "assets/data/justice-map.json",
     "scripts/validate_justice_professionals_caret.py",
     "scripts/validate_operational_identity_registry.py",
+    "archive/MISSING_EVIDENCE_REGISTER.md",
     "sitemap-caepr-caret.xml",
     "sitemap-calificacion.xml",
     "CHATGPT_START_HERE.md"
+  ],
+  "expected_public_resources": [
+    "assets/data/justice-professionals-caret-audit-v1.json",
+    "assets/data/justice-professionals-evidence-production-queue-v1.json",
+    "assets/data/ricardo-de-mosteyrin-sampalo-v1.json"
   ],
   "identity_scope": {
     "named_people": 48,
@@ -66,11 +74,26 @@
     "A generic Property Registry office or function is not converted into a named person."
   ],
   "publication_closeout": {
-    "pull_request": null,
-    "reviewed_head_sha": null,
-    "merge_sha": null,
-    "pages_run_id": null,
+    "pull_request": 1292,
+    "reviewed_head_sha": "68537741dbedba2874df35f6036f1cef85db57fa",
+    "merge_sha": "aefc9dc4dcc59f4f5d6eaaf87c580c6aae235029",
+    "count_synchronisation": {
+      "pull_request": 1294,
+      "reviewed_head_sha": "5f0eeba81b8bc1ce5c0b2a3acce56e911b3820d7",
+      "merge_sha": "77a3d30b8cf5d6a13d3a527caafa8972e058d5f8"
+    },
+    "latest_observed_deployed_descendant_before_queue_release": "e9e1380e810bf44c75dda1ed391f484972e867ba",
+    "pages_run_id": 33453675351,
+    "pages_run_number": 1360,
+    "pages_conclusion": "success",
+    "superseded_pages_run": {
+      "run_id": 33448645852,
+      "run_number": 1353,
+      "conclusion": "cancelled",
+      "classification": "SUPERSEDED_BY_NEWER_MAIN_NOT_RELEASE_FAILURE"
+    },
     "live_verification": null,
-    "next_state_gate": "Remote branch, pull request, CI, merge, exact-SHA Pages deployment and no-cache live readback must be observed in sequence."
+    "successor_queue_state": "PREPARED_PENDING_MERGE",
+    "next_state_gate": "The evidence queue, bilingual links and closeout update require their own pull request, merge, Pages deployment and no-cache live readback before this manifest may claim LIVE_VERIFIED."
   }
 }

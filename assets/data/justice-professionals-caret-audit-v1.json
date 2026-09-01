@@ -3,6 +3,7 @@
   "control_id": "PD-SP-JUSTICE-PROFESSIONALS-CARET-20260831-01",
   "control_date": "2026-08-31",
   "status": "PARTIAL_NOT_ALL_IS_CARET",
+  "publication_state": "PREPARED_PENDING_MERGE",
   "scope": "Named Ministerio Fiscal or Fiscalía members, judges, magistrates, LAJs and notaries appearing in the controlled Public Prosecution, E.G. 745/2026, Classification, DP 1901/2026, Concurso 36/2012 judicial and notarial source surfaces; plus exact named Property Registry personnel if any",
   "scope_boundary": "Finite source census, not a claim that every complete official docket has been obtained. Verbatim source transcriptions are not modified; caret presentation belongs to attribution and index layers.",
   "counts": {
@@ -31,6 +32,7 @@
     "Pending literals retain their exact source spelling and receive no caret until the source threshold is met."
   ],
   "source_surfaces": [
+    "assets/data/justice-professionals-evidence-production-queue-v1.json",
     "assets/data/justice-map.json",
     "es/carta-abierta-ministerio-fiscal/destinatarios.html",
     "en/open-letter-public-prosecution-service/addressees.html",
@@ -48,6 +50,13 @@
     "archive/knowledge-project/SUN_PARK_CANONICAL_ACTOR_REGISTER.md",
     "archive/concurso36-primary-autos-21aug2026/FORENSIC_SCAN_CRITICAL_AUTOS_CONCURSO_36_2012_21AUG2026.md"
   ],
+  "occurrence_and_production_control": {
+    "path": "assets/data/justice-professionals-evidence-production-queue-v1.json",
+    "control_id": "PD-SP-JUSTICE-PROFESSIONALS-EVIDENCE-QUEUE-20260901-01",
+    "occurrence_rows": 48,
+    "open_tasks": 9,
+    "boundary": "The matrix maps each already named person to the controlled act, capacity, source literal, office-only context or non-attributive proceeding link. The queue does not expand a personal attribution and authorises no external contact."
+  },
   "roles": {
     "MINISTERIO_FISCAL": [
       {"caepr_id":"PD-SP-P-0114","name":"Tomás Fernández de Páiz","state":"CARET_CONFIRMED"},
