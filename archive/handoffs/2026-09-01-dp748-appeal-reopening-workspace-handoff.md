@@ -6,11 +6,11 @@
 **Continuity status:** `DELETION_SAFE_WITH_OPEN_WORK`
 **Repository:** `sbu001monterecco/por-derecho`
 
-**Authoritative baseline checked:** `d1817de1b8613a8e0d340f1453acda99e440e5af` (PR #1328 merge / current `origin/main` at final reconciliation)
+**Authoritative baseline checked:** `b0958077b71130fe808acaf1cc006185b6aa43fa` (PR #1333 merge / current `origin/main` at final reconciliation; includes the PR #1328 PwC release and its live closeout)
 **Inherited La Laguna identity baseline:** `273bb621de7db5473b1223fdbc080f9c733dd038` (PR #1326)
 **Workspace collision reconciliation:** provisional `PD-WS-20260901-0004` renumbered to `PD-WS-20260901-0005` because current `main` had already assigned `0004` to the PwC / Carlos Saavedra workspace.
 **Working branch:** `codex/dp748-p0-appeal-20260901`
-**Repository state:** additive replacement PR #1332 open at reconciled source-release head `1964b7e1222d7920139a3f6b5ae9878bd0e4a22c` / tree `30c8abe75a3c03a0a5bd9bb1cf3735bd2423436f`; downstream lifecycle fields are maintained in the machine handoff.
+**Repository state:** additive replacement PR #1332 is reconciled with main through PR #1333. The pre-reconciliation head `e29f72d52f410fa10ab02044eb9d559c0d30a846` / tree `48a67bc32f01cbbd956038a4d8c69af2aea77f04` passed 35/35 remote checks; the final reconciliation head and downstream lifecycle fields are maintained in the machine handoff.
 
 ## 1. Objective and controlling answer
 

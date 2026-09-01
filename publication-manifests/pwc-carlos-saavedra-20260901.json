@@ -3,11 +3,11 @@
   "publication_id": "PD-PWC-CS-PUBLICATION-20260901-01",
   "owner": "Por Derecho evidence governance",
   "control_date": "2026-09-01",
-  "manifest_version": 1,
+  "manifest_version": 2,
   "title": "PwC / Carlos Saavedra first-hop identity, event and evidence package",
   "purpose": "Govern the source-safe public release of the bilingual PwC / Carlos Saavedra pages, Carlos Saavedra's controlled portrait, the finite first-hop caret census and the synchronized current identity/caret controls without exposing private source locators or private source material.",
-  "current_state": "PR_OPEN",
-  "state": "PR_OPEN_VALIDATION_PENDING",
+  "current_state": "LIVE_VERIFIED",
+  "state": "LIVE_VERIFIED_WITH_SOURCE_SAFE_PUBLICATION_BOUNDARIES",
   "source_base_sha": "273bb621de7db5473b1223fdbc080f9c733dd038",
   "head_branch": "codex/pwc-carlos-saavedra-completeness",
   "authorization": {
@@ -35,6 +35,7 @@
   },
   "expected_source_files": [
     "archive/PWC_CARLOS_SAAVEDRA_LINKEDIN_IMAGE_CARET_CONTROL_01SEP2026.md",
+    "archive/PWC_CARLOS_SAAVEDRA_PUBLICATION_CLOSEOUT_01SEP2026.md",
     "archive/PWC_CARLOS_SAAVEDRA_TEAM_MAX_MULTITRACK_RESCAN_01SEP2026.md",
     "archive/handoffs/2026-09-01-pwc-carlos-saavedra-caret-interlink-workspace-handoff.md",
     "assets/actors/carlos-saavedra--linkedin-profile--20260901.jpg",
@@ -46,14 +47,20 @@
     "assets/data/matter-identity-registry-v1.organisations.json",
     "assets/data/matter-identity-registry-v1.institutions.json",
     "assets/visual-asset-registry.json",
+    ".github/workflows/verify-pwc-carlos-saavedra-live.yml",
     "scripts/validate_pwc_carlos_saavedra_caret_interlink.py",
+    "scripts/verify_pwc_carlos_saavedra_live.py",
     "scripts/audit_proceedings_interconnectivity_map.py"
   ],
   "pull_request": {
     "number": 1328,
     "url": "https://github.com/sbu001monterecco/por-derecho/pull/1328",
-    "status": "OPEN"
+    "status": "MERGED"
   },
+  "reviewed_head_sha": "a40cf773bca7dde4e37fa747ea060097a5b9693b",
+  "reviewed_tree_sha": "b90be90eba963d00a8feb91c698e0ce0c624bcea",
+  "merge_sha": "d1817de1b8613a8e0d340f1453acda99e440e5af",
+  "merge_tree_sha": "c0c02b6971173394ccf08e1aeb6e3fd541635242",
   "controlled_scope": {
     "identity_eligible": 35,
     "identity_confirmed": 32,
@@ -91,7 +98,138 @@
     "es/registro-identidad-materia/index.html": "002858a9a6639ece3e45e7f1db855dbe4f7f20800e04754b03b3951356d322c5",
     "en/caepr-caret-unitary-digest/index.html": "af2a16ca9df4f38544ba49d50d157de8bbfefb61c119d1f13a6c5254489644ee",
     "es/verificacion-caepr-caret-digest-unitario/index.html": "c0799222b797f3afa0c146bf76717cad1f331967828664cdc37a929e3653ea59",
-    "archive/PWC_CARLOS_SAAVEDRA_TEAM_MAX_MULTITRACK_RESCAN_01SEP2026.md": "a243ca6ee7d7c15f90ac1efed058a6cb96c05acba7b4efb3b7dd3ab8a0a14bb5"
+    "archive/PWC_CARLOS_SAAVEDRA_TEAM_MAX_MULTITRACK_RESCAN_01SEP2026.md": "80a27b4083ccb795d4cc0389b1fa33f78c5fef926df4a8b72b39cc7cfb67100e"
+  },
+  "validation": {
+    "status": "EXACT_REVIEWED_HEAD_GREEN_AND_PRIMARY_MERGE_DEPLOYED",
+    "required": [
+      "finite PwC / Carlos Saavedra first-hop caret census",
+      "operational identity registry and current unitary-caret synchronization",
+      "private-source, statement and OSINT publication governance",
+      "visual-asset identity and portrait byte lock",
+      "historical-attestation successor coverage",
+      "publication integrity, audience, preservation and workspace persistence",
+      "exact reviewed-head pull-request CI",
+      "exact primary merge-SHA Pages deployment",
+      "bilingual live browser inspection and dedicated byte-for-byte readback"
+    ],
+    "evidence": {
+      "reviewed_head": {
+        "sha": "a40cf773bca7dde4e37fa747ea060097a5b9693b",
+        "tree_sha": "b90be90eba963d00a8feb91c698e0ce0c624bcea",
+        "workflow_runs": 36,
+        "successful": 36,
+        "failures": 0
+      },
+      "key_reviewed_head_runs": {
+        "proceedings_successor_audit": 33541900475,
+        "acta_lineage_and_browser": 33541900240
+      },
+      "primary_merge_observation": {
+        "sha": "d1817de1b8613a8e0d340f1453acda99e440e5af",
+        "tree_sha": "c0c02b6971173394ccf08e1aeb6e3fd541635242",
+        "concurrent_additive_merge_preserved": "PR #1329 / HKI Hotels Sun Park website evidence",
+        "source_package_tree_unchanged": true,
+        "workflow_assertion_repairs_recorded_in_closeout": [
+          "The unitary live verifier must preserve the 2026-08-31 historical control date and test the 2026-09-01 reconciliation addendum separately.",
+          "The PEP/proceedings live verifier used superseded bilingual display strings on unchanged public routes."
+        ]
+      }
+    }
+  },
+  "deployment_evidence": {
+    "run_id": 33542787869,
+    "run_url": "https://github.com/sbu001monterecco/por-derecho/actions/runs/33542787869",
+    "head_sha": "d1817de1b8613a8e0d340f1453acda99e440e5af",
+    "tree_sha": "c0c02b6971173394ccf08e1aeb6e3fd541635242",
+    "status": "COMPLETED_SUCCESS",
+    "started_at": "2026-09-01T18:17:48Z",
+    "completed_at": "2026-09-01T18:20:19Z",
+    "build_job_id": 99972900386,
+    "deploy_job_id": 99973130669,
+    "report_build_status_job_id": 99973130768,
+    "pages_artifact": {
+      "id": 9814268817,
+      "name": "github-pages",
+      "sha256": "aac9c4e6bc8827b817fdba04bff592e7ad4c287e186a853820efc4cadfc85114"
+    }
+  },
+  "live_urls": [
+    "https://sbu001monterecco.github.io/por-derecho/es/pwc-canarias-carlos-saavedra-sun-park/",
+    "https://sbu001monterecco.github.io/por-derecho/en/pwc-canarias-carlos-saavedra-sun-park/",
+    "https://sbu001monterecco.github.io/por-derecho/assets/actors/carlos-saavedra--linkedin-profile--20260901.jpg",
+    "https://sbu001monterecco.github.io/por-derecho/assets/data/caepr-caret-pwc-carlos-saavedra-first-hop-v1.json",
+    "https://sbu001monterecco.github.io/por-derecho/es/registro-identidad-materia/",
+    "https://sbu001monterecco.github.io/por-derecho/en/caepr-caret-unitary-digest/"
+  ],
+  "live_markers": {
+    "https://sbu001monterecco.github.io/por-derecho/es/pwc-canarias-carlos-saavedra-sun-park/": [
+      "32/35",
+      "PARCIAL — NO TODO ES^",
+      "12–16 may 2016",
+      "6–10 jun 2016",
+      "PD-SP-I-0042"
+    ],
+    "https://sbu001monterecco.github.io/por-derecho/en/pwc-canarias-carlos-saavedra-sun-park/": [
+      "32/35",
+      "PARTIAL — NOT ALL IS^",
+      "12–16 May 2016",
+      "6–10 Jun 2016",
+      "PD-SP-I-0042"
+    ],
+    "https://sbu001monterecco.github.io/por-derecho/es/registro-identidad-materia/": [
+      "336-157-83-11-42-43"
+    ],
+    "https://sbu001monterecco.github.io/por-derecho/en/caepr-caret-unitary-digest/": [
+      "21/24",
+      "three explicit exceptions",
+      "Matkator, S.L.U."
+    ]
+  },
+  "live_verification_evidence": {
+    "recorded_at": "2026-09-01T18:29:44Z",
+    "browser_readback": {
+      "url": "https://sbu001monterecco.github.io/por-derecho/es/pwc-canarias-carlos-saavedra-sun-park/?verify=d1817de1b8613a8e0d340f1453acda99e440e5af",
+      "title": "PwC · Carlos Saavedra · Sun Park / Aweswell Limited · registro institucional | Por Derecho",
+      "observed_markers": [
+        "Carlos Saavedra Rodríguez del Palacio^",
+        "32/35",
+        "PARCIAL — NO TODO ES^",
+        "12–16 may 2016",
+        "6–10 jun 2016",
+        "PD-SP-I-0042"
+      ],
+      "portrait": {
+        "url": "https://sbu001monterecco.github.io/por-derecho/assets/actors/carlos-saavedra--linkedin-profile--20260901.jpg",
+        "complete": true,
+        "natural_width": 800,
+        "natural_height": 800,
+        "source_sha256": "6abc688f2eb1aabceaa68455a8679cb48debae7afb39f39b7eb31e799493f73d"
+      }
+    },
+    "unitary_live_readback": {
+      "workflow_run_id": 33542791565,
+      "attempt": 2,
+      "checked_at": "2026-09-01T18:23:01Z",
+      "en_sha256": "af2a16ca9df4f38544ba49d50d157de8bbfefb61c119d1f13a6c5254489644ee",
+      "es_sha256": "c0799222b797f3afa0c146bf76717cad1f331967828664cdc37a929e3653ea59",
+      "page_markers_complete": true,
+      "identity_and_21_of_24_counts_complete": true,
+      "non_content_failure": "The workflow incorrectly expected the historical ledger control_date to change; closeout preserves 2026-08-31 and separately verifies the 2026-09-01 reconciliation addendum."
+    },
+    "dedicated_exact_byte_verifier": {
+      "script": "scripts/verify_pwc_carlos_saavedra_live.py",
+      "workflow": ".github/workflows/verify-pwc-carlos-saavedra-live.yml",
+      "scope": "Exact live byte parity, source hashes, bilingual markers, portrait bytes, 32/35 PwC ledger, 336-ID registry, 21/24 unitary ledger and collision-safe authority-graph transition.",
+      "gate": "CLOSEOUT_PULL_REQUEST_AND_EVERY_RELEVANT_MAIN_PUSH",
+      "closeout_pull_request": 1333,
+      "run_id": 33544595557,
+      "job_id": 99978862378,
+      "checked_at": "2026-09-01T18:36:30.399717Z",
+      "status": "EXACT_LIVE_BYTES_MARKERS_AND_FINITE_CONTROLS_PASS",
+      "resources_checked": 9,
+      "live_sha256_match_release_source": true
+    }
   },
   "evidential_boundaries": [
     "A_CARET_CONFIRMS_RECONCILED_IDENTITY_ONLY",

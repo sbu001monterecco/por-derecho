@@ -8,7 +8,7 @@
   "purpose": "Govern the public-safe canonical registration of the DP 748/2026 appeal posture, ETJ 163/2020 lineage and finite evidential gaps while keeping private pleadings, correspondence and identifiers outside the public repository.",
   "current_state": "PR_OPEN",
   "state": "REMOTE_VALIDATION_PENDING",
-  "source_base_sha": "d1817de1b8613a8e0d340f1453acda99e440e5af",
+  "source_base_sha": "b0958077b71130fe808acaf1cc006185b6aa43fa",
   "head_branch": "codex/dp748-p0-appeal-20260901",
   "authorization": {
     "repository_and_website_publication": true,
@@ -21,14 +21,15 @@
     "en": []
   },
   "predecessor_main": {
-    "sha": "d1817de1b8613a8e0d340f1453acda99e440e5af",
-    "pull_request": 1328,
-    "rule": "The release is additive to the exact current main used for final reconciliation."
+    "sha": "b0958077b71130fe808acaf1cc006185b6aa43fa",
+    "pull_request": 1333,
+    "rule": "The release is additive to the exact current main used for final reconciliation, including the PwC / Carlos Saavedra live-publication closeout."
   },
   "predecessor_publication": {
     "manifest": "publication-manifests/pwc-carlos-saavedra-20260901.json",
     "publication_id": "PD-PWC-CS-PUBLICATION-20260901-01",
     "pull_request": 1328,
+    "closeout_pull_request": 1333,
     "rule": "The PwC / Carlos Saavedra identity, evidence and workspace additions are inherited without overwrite."
   },
   "inherited_identity_baseline": {

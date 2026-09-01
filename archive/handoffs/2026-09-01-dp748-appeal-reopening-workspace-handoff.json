@@ -5,7 +5,7 @@
   "date": "2026-09-01",
   "status": "DELETION_SAFE_WITH_OPEN_WORK",
   "repository": "sbu001monterecco/por-derecho",
-  "baseline_sha": "d1817de1b8613a8e0d340f1453acda99e440e5af",
+  "baseline_sha": "b0958077b71130fe808acaf1cc006185b6aa43fa",
   "inherited_identity_baseline_sha": "273bb621de7db5473b1223fdbc080f9c733dd038",
   "workspace_collision_reconciliation": {
     "provisional_workspace_id": "PD-WS-20260901-0004",
@@ -15,8 +15,10 @@
   },
   "branch": "codex/dp748-p0-appeal-20260901",
   "pull_request": 1332,
-  "head_commit": "1964b7e1222d7920139a3f6b5ae9878bd0e4a22c",
-  "release_tree": "30c8abe75a3c03a0a5bd9bb1cf3735bd2423436f",
+  "head_commit": "e29f72d52f410fa10ab02044eb9d559c0d30a846",
+  "release_tree": "48a67bc32f01cbbd956038a4d8c69af2aea77f04",
+  "reconciled_main_sha": "b0958077b71130fe808acaf1cc006185b6aa43fa",
+  "pre_reconciliation_remote_checks": "35_OF_35_SUCCESS",
   "merge_sha": null,
   "objective": "Protect DP 748/2026 appellate rights and prepare a source-led appeal, reopening package, finite diligences and distinct parallel-action lanes.",
   "canonical_ids": {

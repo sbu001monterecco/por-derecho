@@ -2628,7 +2628,7 @@ if not errors:
         == "PD-SP-DP748-APPEAL-REOPENING-20260901-01"
         and dp748_successor.get("control_date") == "2026-09-01"
         and dp748_successor.get("source_base_sha")
-        == "d1817de1b8613a8e0d340f1453acda99e440e5af"
+        == "b0958077b71130fe808acaf1cc006185b6aa43fa"
         and dp748_successor.get("head_branch")
         == "codex/dp748-p0-appeal-20260901",
         "DP 748 successor identity/source base is stale",
@@ -2645,12 +2645,16 @@ if not errors:
     )
     require(
         dp748_successor.get("predecessor_main", {}).get("sha")
-        == "d1817de1b8613a8e0d340f1453acda99e440e5af"
-        and dp748_successor.get("predecessor_main", {}).get("pull_request") == 1328
+        == "b0958077b71130fe808acaf1cc006185b6aa43fa"
+        and dp748_successor.get("predecessor_main", {}).get("pull_request") == 1333
         and dp748_successor.get("predecessor_publication", {}).get("manifest")
         == "publication-manifests/pwc-carlos-saavedra-20260901.json"
         and dp748_successor.get("predecessor_publication", {}).get("pull_request")
         == 1328
+        and dp748_successor.get("predecessor_publication", {}).get(
+            "closeout_pull_request"
+        )
+        == 1333
         and dp748_successor.get("inherited_identity_baseline", {}).get("sha")
         == "273bb621de7db5473b1223fdbc080f9c733dd038"
         and dp748_successor.get("inherited_identity_baseline", {}).get("pull_request")
