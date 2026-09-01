@@ -1,0 +1,35 @@
+{
+  "schema": "por-derecho.continuity-event-repository-digest-action-checklist.v1",
+  "control_id": "PD-CONT-DIGEST-001",
+  "control_date": "2026-09-01",
+  "status": "ACTIVE",
+  "human_control": ".github/governance/CONTINUITY_EVENT_REPOSITORY_DIGEST_ACTION_CHECKLIST_01SEP2026.md",
+  "mandatory_fields": [
+    "repository_digest_actions",
+    "connected_source_actions",
+    "registration_and_identity_actions",
+    "relationship_interlink_actions",
+    "chronology_and_proceedings_actions",
+    "publication_and_live_actions",
+    "completed_actions",
+    "open_actions",
+    "do_not_infer",
+    "next_thread_bootstrap"
+  ],
+  "required_sequence": [
+    "CURRENT_MAIN",
+    "WORKSPACE_CONTINUITY",
+    "CONTROLLING_GOVERNANCE",
+    "REPOSITORY_GITHUB_DIGEST",
+    "CONNECTED_SOURCE_SCAN_IF_AUTHORISED_AND_RELEVANT",
+    "CARET_OR_OBJECT_IDENTITY_AUDIT",
+    "EVIDENCE_CHRONOLOGY_PROCEEDINGS",
+    "RELATIONSHIP_INTERLINK_AUDIT",
+    "PUBLICATION_LIVE_STATE_IF_IN_SCOPE",
+    "COMPLETED_AND_OPEN_ACTION_LEDGER",
+    "SUCCESSOR_BOOTSTRAP"
+  ],
+  "caret_rule": "GitHub existence or a prose mention does not automatically confer a CAEPR presentation caret. The user-command ^ triggers the governed audit; a displayed Name^ requires explicit canonical identity resolution in the applicable CAEPR state. PD-DMA exact-file carets are a separate namespace.",
+  "pressure_rule": "Maximum pressure means maximum source-specific documentary questions, preservation, traceability and accountability; it does not permit fabrication, harassment or conversion of allegations into findings.",
+  "deletion_safe_condition": "A successor can reconstruct current baseline, searches, findings, registrations, interlinks, publication/live state, open work and next actions without the originating chat."
+}

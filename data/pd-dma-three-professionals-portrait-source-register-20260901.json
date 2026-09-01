@@ -1,0 +1,94 @@
+{
+  "schema": "por-derecho.digital-media-portrait-source-register.v1",
+  "register_id": "PD-DMA-PORTRAIT-SOURCES-20260901-001",
+  "control_date": "2026-09-01",
+  "family_id": "PD-DMA-FAM-AMHP-001",
+  "status": "HASH_LOCKED_SOURCE_PORTRAITS_REPOSITORY_BINARY_MIRROR_OPEN",
+  "governance": [
+    ".github/governance/DIGITAL_MEDIA_ASSET_CARET_IDENTITY_STANDARD_01SEP2026.md",
+    ".github/governance/SATIRE_CARICATURE_SPOOF_PUBLICATION_STANDARD_ES_EN.md",
+    ".github/governance/CAEPR_CARET_IDENTITY_AND_ALL_IS_VERIFICATION_PROTOCOL_26AUG2026.md"
+  ],
+  "caret_boundary": "The terminal caret on PD-DMA portrait references verifies exact source-file byte identity only. It is not a CAEPR person caret, facial-identification result, endorsement, role finding, publication right or finding of conduct. Person identity must be separately established from documentary sources.",
+  "source_files": [
+    {
+      "reference": "PD-DMA-AMHP-PORTRAIT-0001^",
+      "source_filename": "Eduardo Sánchez (1) (1)(3).webp",
+      "mime": "image/webp",
+      "width_px": 800,
+      "height_px": 600,
+      "bytes": 27594,
+      "sha256": "a46afb994e6fa0fb309d43fff45b72923a75db39680abc01e10a0c13a52af7d6",
+      "provenance": "User-supplied portrait in the 1-Sep-2026 hotel-platform workspace; filename/user context associates the file with Eduardo Sánchez. No facial-recognition inference is used.",
+      "intended_person_name": "Eduardo Sánchez Iglesias",
+      "documentary_identity_sources": [
+        "Controlled 30-Nov-2021 San Telmo / RICPE event transcript and repository correction chain (PRs #505, #506, #552, #557, #744)",
+        "RSM Spain public professional announcement naming Eduardo Sánchez Iglesias in the SanTelmo integration"
+      ],
+      "caepr_state_at_checkpoint": "PERSON_ID_ADMISSION_REQUIRED_BEFORE_NAME_CARET",
+      "repository_binary_mirror": false,
+      "repository_binary_mirror_gap": "Exact uploaded binary is hash-locked in this register but is not represented as committed to the public repository.",
+      "interlink_targets": [
+        "PD-DMA-FAM-AMHP-001",
+        "San Telmo / RICPE 30-Nov-2021 evidence family",
+        "RSM Spain professional perimeter (PD-SP-O-0044)",
+        "future caricature/documentary-contrast page"
+      ]
+    },
+    {
+      "reference": "PD-DMA-AMHP-PORTRAIT-0002^",
+      "source_filename": "francisco-de-borja-rodriguez-batllori(3).jpg",
+      "mime": "image/jpeg",
+      "width_px": 135,
+      "height_px": 151,
+      "bytes": 7906,
+      "sha256": "2fb1a49d1ed2011f390e44daa7770c18b31459bd25acc7b204b72eb315fba743",
+      "provenance": "User-supplied portrait in the 1-Sep-2026 hotel-platform workspace; filename/user context associates the file with Francisco de Borja Rodríguez-Batllori Laffitte. No facial-recognition inference is used.",
+      "intended_person_name": "Francisco de Borja Rodríguez-Batllori Laffitte",
+      "caepr_id": "PD-SP-P-0010",
+      "documentary_identity_sources": [
+        "BOE-B-2012-22189 — 6-Jun-2012 Concurso 36/2012 appointment",
+        "BORME-A-2012-198-35 — Concurso 36/2012 entry",
+        "controlled primary Concurso 36/2012 appointment record"
+      ],
+      "caepr_state_at_checkpoint": "REGISTERED_IDENTITY_SOURCE_STRONG_MASTER_RECORD_STILL_LACKED_CARET_CONFIRMED_FIELD",
+      "website_portrait_search": "NOT_LOCATED_ON_CURRENT_DEDICATED_PAGE_OR_REPOSITORY_SEARCH_AT_2026-09-01_CHECKPOINT",
+      "website_route": "/es/francisco-de-borja-rodriguez-batllori-laffitte/",
+      "repository_binary_mirror": false,
+      "repository_binary_mirror_gap": "Exact uploaded binary is hash-locked in this register but is not represented as committed to the public repository.",
+      "interlink_targets": [
+        "PD-SP-P-0010",
+        "Concurso 36/2012",
+        "San Telmo historical correspondence lane",
+        "future caricature/documentary-contrast page"
+      ]
+    },
+    {
+      "reference": "PD-DMA-AMHP-PORTRAIT-0003^",
+      "source_filename": "Enrique Guerra(3).jpg",
+      "mime": "image/jpeg",
+      "width_px": 739,
+      "height_px": 415,
+      "bytes": 21624,
+      "sha256": "55d524b046a39323b304fb7349ac6d29c8d4eb34ed2c8e8ed3a70819d4ad3772",
+      "provenance": "User-supplied portrait in the 1-Sep-2026 hotel-platform workspace; filename/user context associates the file with Enrique Guerra. No facial-recognition inference is used.",
+      "intended_person_name": "Enrique Guerra Suárez",
+      "documentary_identity_sources": [
+        "RICPE certification dated 20-Jul-2021 / controlled attachment family",
+        "RICPE public professional materials naming Enrique Guerra Suárez",
+        "Controlled 30-Nov-2021 San Telmo / RICPE event and repository reconciliation (PRs #505, #506, #552, #744)"
+      ],
+      "caepr_state_at_checkpoint": "PERSON_ID_ADMISSION_REQUIRED_BEFORE_NAME_CARET",
+      "repository_binary_mirror": false,
+      "repository_binary_mirror_gap": "Exact uploaded binary is hash-locked in this register but is not represented as committed to the public repository.",
+      "interlink_targets": [
+        "RIC Private Equity Investment Partners SCR, S.A. (PD-SP-O-0020)",
+        "RICPE certification 20-Jul-2021",
+        "San Telmo / RICPE 30-Nov-2021 evidence family",
+        "future caricature/documentary-contrast page"
+      ]
+    }
+  ],
+  "publication_rule": "Before any portrait is displayed in a new public graphic/page, resolve the intended person through CAEPR, verify the exact source/right/provenance boundary, assign the resulting derivative its own PD-DMA exact-file identity and preserve the visible satire/non-advertisement disclosure. A source portrait is not itself a publication derivative.",
+  "relationship_boundary": "A portrait placed beside a firm, event or financial role does not prove employment on every date, coordination, mandate, financing, knowledge, wrongdoing or shared responsibility. Every role/date edge must be separately sourced."
+}
