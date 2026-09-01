@@ -1,13 +1,13 @@
 # Current workspace handoff
 
-**Current workspace:** `PD-WS-20260901-0001`  
-**Current continuation pointer:** `PD-WCH-20260901-AMHP-DMA-001`  
+**Current workspace:** `PD-WS-20260901-0002`
+**Current continuation pointer:** `PD-WCH-20260901-AUTH-REDSARA-001`
 **Status:** `DELETION_SAFE_WITH_OPEN_WORK`  
-**Topic:** Acosta Matos / Canarian Hospitality hotel-platform digital/media package
+**Topic:** Authority discovery, Red SARA/AGE filings and institutional responses
 
 Before continuing this workspace in a new thread, read:
 
-1. `archive/handoffs/2026-09-01-acosta-matos-hotel-platform-digital-media-workspace-handoff.md`
+1. `archive/handoffs/2026-09-01-authority-discovery-redsara-workspace-handoff.md`
 2. `.github/governance/WORKSPACE_THREAD_CONTINUITY_HANDOFF_STANDARD_01SEP2026.md`
 3. `.github/governance/AUTOMATIC_WORKSPACE_PERSISTENCE_ARCHITECTURE_01SEP2026.md`
 4. `data/workspace-register-v1.json`

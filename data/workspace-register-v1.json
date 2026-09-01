@@ -21,6 +21,18 @@
       "public_private_boundary": "PUBLIC_REPO_CONTAINS_GOVERNED_SOURCE_SAFE_STATE; RAW_PRIVATE_TRANSCRIPT_ARCHIVE_NOT_IMPLEMENTED",
       "continuous_capture_mode": "CONNECTED_AGENTIC_CHECKPOINTING",
       "next_target_mode": "PRIVATE_ARCHIVE_PLUS_PUBLIC_STATE"
+    },
+    {
+      "workspace_id": "PD-WS-20260901-0002",
+      "title": "Authority discovery, Red SARA/AGE filings and institutional-response continuity workspace",
+      "status": "DELETION_SAFE_WITH_OPEN_WORK",
+      "current_handoff_id": "PD-WCH-20260901-AUTH-REDSARA-001",
+      "handoff_path": "archive/handoffs/2026-09-01-authority-discovery-redsara-workspace-handoff.md",
+      "topic_keys": ["REDSARA", "AGE", "INSTITUTIONAL_COMMUNICATIONS", "INTERVENCION_GENERAL", "PUBLIC_AUTHORITY_DISCOVERY", "CONTINUITY"],
+      "repository": "sbu001monterecco/por-derecho",
+      "public_private_boundary": "PUBLIC_REPO_CONTAINS_SOURCE_SAFE_REGISTRY_METADATA; NO_NATIVE_RECEIPTS_OR_PRIVATE_ATTACHMENTS",
+      "continuous_capture_mode": "CONNECTED_AGENTIC_CHECKPOINTING",
+      "next_target_mode": "SOURCE_PROVED_REGISTRY_RECONCILIATION_AND_P0_GAP_CLOSURE"
     }
   ],
   "registration_rule": "Create/recover a stable workspace ID for every substantive Por Derecho workspace when persistence-capable work begins. A workspace may span multiple ChatGPT threads; a ChatGPT thread may be superseded without changing the workspace ID.",
