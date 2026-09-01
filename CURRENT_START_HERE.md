@@ -4,6 +4,8 @@
 **Machine pair:** `ops/CURRENT_OPERATIONAL_STATE_27AUG2026.json`  
 **Detailed pointer:** `CURRENT_OPERATIONAL_STATE_27AUG2026.md`
 
+> **1-Sep-2026 specialist Acosta Matos / RICPE / Canarian investment-map continuity:** for work on the corrected poster, the downstream hotel/investment perimeter, “who were the investors?” provenance, MYND/Sholeo/Canarian/Radisson role separation, or 2017–2026 acquisition/financing tracing, read `.github/governance/records/ACOSTA_MATOS_POSTER_INVESTMENT_CONTINUITY_01SEP2026.md`, `research/ACOSTA_MATOS_PERIMETER_INVESTMENT_MAP_2017_2026.md`, `data/acosta-matos-perimeter-investment-register-2017-2026.json` and `data/acosta-matos-perimeter-identity-reconciliation-20260901.json`. The map is source-graded and repo-only: owner, shareholder, governance, manager, brand, RICPE financing and Acosta construction are separate edges; downstream “fruit” remains a tracing hypothesis, not a conclusion. The truthful caret state is `PARTIAL_NOT_ALL_IS_CARET`; newly source-resolved legal persons are not silently given CAEPR carets.
+
 For every new ChatGPT thread, repository-maintenance run, unitary redigest or continuity audit:
 
 1. **Resolve the live `main` branch first.** Never assume a checked-in SHA is still the current Git head.
