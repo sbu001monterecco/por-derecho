@@ -4,7 +4,11 @@
 
 **Current-main baseline:** `73503faafeb9e2df2b6db601c3d9e574a70a3d23`
 
-**State:** `PREPARED_PENDING_MERGE`
+**State:** `LIVE_VERIFIED`
+
+**Target release:** PR [#1303](https://github.com/sbu001monterecco/por-derecho/pull/1303), reviewed head `23639fd6ddf2b7ac5a7b96711be8de5c58b2e593`, merge `a49347e4605ad94fcef873b4bdd5dc7b1587c0ac`, tree `e2f7d65f6e4c9333976fa9c150a38e78c7ca945a`
+
+**Pages deployment:** run [33469147249](https://github.com/sbu001monterecco/por-derecho/actions/runs/33469147249), run number `1365`, completed successfully at `2026-09-01T04:16:47Z`
 
 **Public marker:** `laguna-remate-ccacm-firm-expression-20260901`
 
@@ -77,15 +81,17 @@ These outcomes do not decide DP 748/2026, ETJ merits, remate-recipient identity,
 - No email, LinkedIn post, institutional supplement, Bar filing, court filing, service or third-party communication is authorised.
 - Silence or non-response must be recorded only as unanswered, never as admission or proof.
 
-## Required release gate
+## Completed release and live-verification gate
 
-Before any authorised repository publication:
+1. The package was rebased onto baseline `73503faafeb9e2df2b6db601c3d9e574a70a3d23` and published through PR #1303.
+2. The final reviewed tree exactly equals the merge tree `e2f7d65f6e4c9333976fa9c150a38e78c7ca945a`.
+3. All 38 triggered pull-request checks passed; one conditional check was skipped and there were zero failures.
+4. The dedicated DP748, LinkedIn, repository-preservation, publication-integrity, audience-experience and private-source governance gates passed.
+5. GitHub Pages deployed merge `a49347e4605ad94fcef873b4bdd5dc7b1587c0ac` successfully in run 33469147249.
+6. Cache-busted public-edge readback reproduced the exact reviewed bytes and SHA-256 for all 14 changed public/control files.
+7. A rendered live-browser check confirmed the English and Spanish Cuatrecasas panels, exactly two complete `921 × 2048` LinkedIn captures on each panel, the four-level attribution table and the reciprocal DP748 and ICAM/CCACM links.
+8. Reciprocal rendered checks confirmed both DP748 anchors and both ICAM/CCACM anchors, with one proposition-specific screenshot link and one cross-analysis link on each route.
 
-1. refresh `origin/main` and resolve only true overlaps;
-2. run the DP748 and LinkedIn specialist validators;
-3. run repository preservation, publication integrity, audience experience and private-source governance validation;
-4. parse changed JSON and check JavaScript syntax;
-5. confirm reciprocal EN/ES anchors and image rendering; and
-6. obtain separate express authority for push/PR/merge.
+The state is therefore `LIVE_VERIFIED`. This is proof of technical publication, byte parity and rendered interlinking—not proof of the underlying allegations, a criminal finding, completed remate cession, recipient identity or Cuatrecasas corporate adoption.
 
-After merge, live verification must record the exact merge SHA, Pages deployment result, route/anchor readback and rendered screenshot presence. Until then the status remains `PREPARED_PENDING_MERGE`.
+The no-contact/no-message/no-filing boundary remains unchanged. No direct contact with Iñigo de Luisa, external message, LinkedIn post, Bar supplement, court filing or third-party service was made or authorised by this publication step.

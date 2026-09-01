@@ -5,9 +5,12 @@
   "owner": "Gil Marer / Aweswell Limited / Matkator, S.L.U.",
   "created_at": "2026-09-01T00:00:00Z",
   "current_main_baseline": "73503faafeb9e2df2b6db601c3d9e574a70a3d23",
-  "current_state": "PREPARED_PENDING_MERGE",
-  "status": "prepared_pending_merge",
+  "current_state": "LIVE_VERIFIED",
+  "status": "live_verified",
   "branch": "codex/laguna-remate-cuatrecasas-ccacm-unitary-20260901",
+  "controlling_pr": 1303,
+  "merge_sha": "a49347e4605ad94fcef873b4bdd5dc7b1587c0ac",
+  "verified_at": "2026-09-01T04:22:00Z",
   "purpose": "Join the La Laguna ETJ/remate, Matkator asset, Acosta Matos-connected recipient, hotel consolidation/commercialisation, ICAM/CCACM and LinkedIn evidence tracks while preserving actor, entity, proceeding, criminal-element and firm-attribution boundaries.",
   "expected_routes": {
     "en": [
@@ -52,8 +55,73 @@
     "external_messages": "NOT_AUTHORISED",
     "court_or_institutional_filings": "NOT_AUTHORISED"
   },
+  "release": {
+    "pull_request": 1303,
+    "pull_request_url": "https://github.com/sbu001monterecco/por-derecho/pull/1303",
+    "base_main_sha": "73503faafeb9e2df2b6db601c3d9e574a70a3d23",
+    "reviewed_head_sha": "23639fd6ddf2b7ac5a7b96711be8de5c58b2e593",
+    "reviewed_tree_sha": "e2f7d65f6e4c9333976fa9c150a38e78c7ca945a",
+    "merge_method": "merge",
+    "merge_sha": "a49347e4605ad94fcef873b4bdd5dc7b1587c0ac",
+    "merge_tree_sha": "e2f7d65f6e4c9333976fa9c150a38e78c7ca945a",
+    "tree_matches_reviewed_head": true,
+    "changed_path_count": 14,
+    "pull_request_checks": "38_SUCCESS_1_SKIPPED_ZERO_FAILURES"
+  },
+  "deployment_evidence": {
+    "workflow": "pages build and deployment",
+    "pages_run_id": 33469147249,
+    "pages_run_number": 1365,
+    "url": "https://github.com/sbu001monterecco/por-derecho/actions/runs/33469147249",
+    "head_sha": "a49347e4605ad94fcef873b4bdd5dc7b1587c0ac",
+    "head_tree_sha": "e2f7d65f6e4c9333976fa9c150a38e78c7ca945a",
+    "status": "completed",
+    "conclusion": "success",
+    "created_at_utc": "2026-09-01T04:15:18Z",
+    "updated_at_utc": "2026-09-01T04:16:47Z"
+  },
+  "live_urls": [
+    "https://sbu001monterecco.github.io/por-derecho/en/cuatrecasas-dp748-civil-action/#laguna-remate-ccacm-firm-expression-20260901",
+    "https://sbu001monterecco.github.io/por-derecho/es/cuatrecasas-dp748-accion-civil/#laguna-remate-ccacm-firm-expression-20260901",
+    "https://sbu001monterecco.github.io/por-derecho/en/cuatrecasas-icam-ccacm-2026/#linkedin-firm-attribution-20260901",
+    "https://sbu001monterecco.github.io/por-derecho/es/cuatrecasas-icam-ccacm-2026/#linkedin-firm-attribution-20260901",
+    "https://sbu001monterecco.github.io/por-derecho/en/cuatrecasas-sun-park/#inigo-linkedin-20260306",
+    "https://sbu001monterecco.github.io/por-derecho/es/cuatrecasas-sun-park/#inigo-linkedin-20260306"
+  ],
+  "live_verification_evidence": {
+    "status": "PASS",
+    "verified_at": "2026-09-01T04:22:00Z",
+    "method": "Cache-busted no-cache public-edge byte comparison against the reviewed merge tree, followed by rendered live-browser route, anchor, image and reciprocal-link checks.",
+    "exact_public_edge_parity": "14_OF_14_CHANGED_FILES",
+    "byte_mismatch_count": 0,
+    "rendered_routes_checked": 6,
+    "rendered_route_failure_count": 0,
+    "linkedin_capture_count_per_language_panel": 2,
+    "linkedin_capture_natural_dimensions": "921x2048",
+    "linkedin_captures_complete": true,
+    "firm_attribution_levels": 4,
+    "reciprocal_dp748_routes": 2,
+    "reciprocal_icam_ccacm_routes": 2,
+    "target_release_sha256": {
+      "assets/cuatrecasas-inigo-linkedin-record-20260831.js": "bfea5036bc1735fe88c9295c2944904d7117ba92a2ec0d8c80fed26ae69a6a07",
+      "assets/site.js": "d29be01479c65d75e8ff034ba092d69be556d13d5c62c8696dafeb119e523b52",
+      "en/cuatrecasas-dp748-civil-action/index.html": "f913e32d29b66239a39e24e8efb25c460f751304c70b8089d861ac48bf0fed73",
+      "en/cuatrecasas-icam-ccacm-2026/index.html": "2fde417bafaae7aec9e6dd7c8a022b49955b02d5082570d0b0208a2860429b65",
+      "en/cuatrecasas-sun-park/index.html": "0146f4f3870166bcd78418c167b71c5bab349251c96d29a797d4bfadcb98f10f",
+      "es/cuatrecasas-dp748-accion-civil/index.html": "0bd17b972d0404edfc6c1853c372db3b4d63cdb2fd6e8f8e535229f411e13f65",
+      "es/cuatrecasas-icam-ccacm-2026/index.html": "13db2c33bc0d721c6444b602ab49b0343deb482899b3538849c8a4ed1b53cde1",
+      "es/cuatrecasas-sun-park/index.html": "9508bcf9322e79db0d52434bf3b5fbf3869975456a69f5967fd7dd5faa152827",
+      "evidence/cuatrecasas/2026-03-06-inigo-de-luisa-linkedin-message.json": "ade3de1a7c66ff44ce73770a8af26ca09f54d3f28a38201b5185c7b2bb44cad5",
+      "assets/evidence/cuatrecasas/inigo-de-luisa-linkedin-message-20260306-capture-01.jpg": "ddf86dfe42a0cfa8d4481a6e504c4dc94a63e48c2ce7cb98ec764fa20cb25102",
+      "assets/evidence/cuatrecasas/inigo-de-luisa-linkedin-message-20260306-capture-02.jpg": "baefb00dc12914aef4c32f0b69bd63842b15f4d83860a254294900a3822d2aab",
+      "archive/CUATRECASAS_LA_LAGUNA_REMATE_CCACM_FIRM_EXPRESSION_CONTROL_01SEP2026.md": "5790eec3356b4fb2f486f9843d68565aa04c6779f5df576cc132a1e2bdf247d8",
+      "archive/MISSING_EVIDENCE_REGISTER_CUATRECASAS_LAGUNA_REMATE_FIRM_ATTRIBUTION_APPEND_01SEP2026.md": "9d434bf2c11ff8dc92b08364d9474225195dc827dfadfa6e58eceec77fd1a99f",
+      "publication-manifests/cuatrecasas-laguna-remate-ccacm-firm-expression-20260901.json": "cb20fd010b78186bbe622e4819b2dd22ce9f12a9a0d291c486d55d1e9118cc7a"
+    },
+    "boundary": "LIVE_VERIFIED proves technical publication, exact readback and rendered interlinking; it does not prove criminality, completed cession, recipient identity, hotel-benefit receipt or Cuatrecasas corporate adoption."
+  },
   "validation": {
-    "status": "PASSED_LOCAL",
+    "status": "CI_GREEN_LIVE_VERIFIED",
     "required": [
       "python3 scripts/validate_cuatrecasas_dp748_civil_action.py",
       "python3 scripts/validate_cuatrecasas_linkedin_interlink.py",
@@ -67,9 +135,13 @@
       "Cuatrecasas DP748 / civil-action specialist validator passed.",
       "Cuatrecasas LinkedIn specialist validator passed with two hash-verified public captures, four attribution levels and one controlled La Laguna bridge.",
       "Repository-preservation, publication-integrity, audience-experience and private-source/voice/OSINT governance gates passed.",
-      "Changed JSON parsed, changed JavaScript passed syntax checks and git diff --check passed."
+      "Changed JSON parsed, changed JavaScript passed syntax checks and git diff --check passed.",
+      "PR #1303 final reviewed head passed 38 checks, with one expected conditional skip and zero failures.",
+      "The reviewed head tree exactly matched merge tree e2f7d65f6e4c9333976fa9c150a38e78c7ca945a.",
+      "Pages run 33469147249 completed successfully for merge a49347e4605ad94fcef873b4bdd5dc7b1587c0ac.",
+      "All 14 changed public/control files matched the reviewed SHA-256 on the public edge, and all six bilingual routes passed rendered anchor, image and reciprocal-link checks."
     ],
-    "rendered_browser_status": "NOT_RUN_NO_LOCAL_CHROMIUM; static image dimensions, hashes, source presence and internal links passed specialist and repository gates"
+    "rendered_browser_status": "PASSED_LIVE_BROWSER_6_ROUTES_2_COMPLETE_LINKEDIN_CAPTURES_PER_LANGUAGE_PANEL_4_ATTRIBUTION_LEVELS_RECIPROCAL_DP748_AND_ICAM_CCACM_LINKS"
   },
-  "next_gate": "Run pull-request CI, merge only if green, verify exact GitHub Pages deployment and preserve the no-contact/no-message/no-filing boundary."
+  "next_gate": "Preserve the no-contact/no-message/no-filing boundary; update the public analysis only when a dated source changes an actor, entity, proceeding, criminal-element, remate-recipient or firm-adoption classification."
 }
