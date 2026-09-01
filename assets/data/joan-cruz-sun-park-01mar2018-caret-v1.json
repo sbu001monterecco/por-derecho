@@ -66,11 +66,22 @@
       "boundary": "Later professional continuity only."
     }
   ],
+  "related_web_evidence": [
+    {
+      "capture_family_id": "PD-SP-WEB-HKI-20191125-001",
+      "registry_path": "assets/data/joan-cruz-hki-sunpark-web-captures-v1.json",
+      "date": "2019-11-25",
+      "relationship": "LATER_CONTINUITY_EVIDENCE",
+      "statement": "Recovered original HKI Hotels website captures show Sun Park (Lanzarote) in the firm's projects section and Joan Cruz on the firm's team page in the captured website state of 25-Nov-2019.",
+      "boundary": "This later website state does not by itself establish that the listing existed on 01-Mar-2018 or 07-Jun-2018, nor any contract, mandate, court authorisation, coordination or illegality."
+    }
+  ],
   "epistemic_guardrails": [
     "No facial recognition is used to identify people in the 18-page photographic PDF.",
     "A filename association is not treated as proof of conduct, knowledge, authority, coordination or criminal responsibility.",
     "The PDF metadata date of 10-Aug-2018 is treated as a later document-compilation date, not as the date of the depicted event.",
-    "The 15-Jan-2026 email date is a custody/preservation date, not the historical event date."
+    "The 15-Jan-2026 email date is a custody/preservation date, not the historical event date.",
+    "The 25-Nov-2019 HKI website capture is treated as later continuity evidence and is not backdated to 2018 without separate evidence."
   ],
   "public_routes": {
     "person_es": "/es/joan-cruz-nuez/",
