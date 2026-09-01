@@ -1,12 +1,15 @@
 {
   "schema": "por-derecho.acosta-matos.hotel-platform-page-foundation.v1",
   "control_date": "2026-09-01",
-  "status": "FOUNDATION_ONLY_PAGE_NOT_CREATED",
-  "publication_hold": true,
-  "reserved_routes": {
+  "status": "PUBLIC_HOOK_PAGES_WITH_ES_RASTER_AND_EN_HTML_READING_EDITION",
+  "publication_hold": false,
+  "full_platform_expansion_hold": true,
+  "visual_generation_hold_until_new_request": true,
+  "routes": {
     "es": "/es/acosta-matos-plataforma-hotelera/",
     "en": "/en/acosta-matos-hotel-platform/",
-    "route_state": "RESERVED_NOT_CREATED"
+    "route_state": "CREATED_BILINGUAL",
+    "current_scope": "Figures hook, metric distinction, platform-role taxonomy, public-interest analytical lenses, questions, sources and digital-asset links. It is not yet the full hotel-by-hotel platform map."
   },
   "platform_definition": "A source-graded network/ecosystem of differentiated hotel, entity, capital, advisory, mandate, management, brand, construction, media and reputational relationships; not a statement of common ownership or common wrongdoing.",
   "human_governance": ".github/governance/records/ACOSTA_MATOS_HOTEL_PLATFORM_SATIRE_FOUNDATION_01SEP2026.md",
@@ -15,10 +18,43 @@
     "human": ".github/governance/SATIRE_CARICATURE_SPOOF_PUBLICATION_STANDARD_ES_EN.md",
     "machine": "ops/SATIRE_CARICATURE_SPOOF_GOVERNANCE_V1.json"
   },
+  "digital_media_governance": {
+    "human": ".github/governance/DIGITAL_MEDIA_ASSET_CARET_IDENTITY_STANDARD_01SEP2026.md",
+    "machine": "assets/data/digital-media-asset-registry-v1.json",
+    "public_register_es": "/es/registro-activos-digitales/",
+    "public_register_en": "/en/digital-media-asset-register/"
+  },
+  "public_assets": {
+    "full_resolution_spanish_original": "PD-DMA-20260901-0003-ES^",
+    "repository_web_derivative": "PD-DMA-20260901-0007-ES-WEB^",
+    "english_current_form": "COMPLETE_HTML_READING_EDITION_NOT_RASTER_ASSET"
+  },
+  "pending_assets": [
+    {
+      "reference": "PD-DMA-20260901-0004-EN",
+      "description": "English raster translation of current Spanish poster",
+      "state": "RESERVED_PENDING_GENERATION_NO_CARET"
+    },
+    {
+      "reference": "PD-DMA-20260901-0005-ES",
+      "description": "Corrected high-contrast platform-grid variant inspired by concept version 1",
+      "state": "RESERVED_PENDING_GENERATION_NO_CARET"
+    },
+    {
+      "reference": "PD-DMA-20260901-0006-ES",
+      "description": "Corrected vintage-resort variant inspired by concept version 2",
+      "state": "RESERVED_PENDING_GENERATION_NO_CARET"
+    }
+  ],
   "mandatory_disclosures": {
     "es_short": "CARICATURA / REPRESENTACIÓN SATÍRICA — NO ES UN ANUNCIO REAL",
     "es_strong": "ANUNCIO SATÍRICO — PARODIA Y CARICATURA. NO ES PUBLICIDAD REAL NI UNA COMUNICACIÓN DE LAS ENTIDADES REPRESENTADAS.",
     "en_short": "SATIRICAL / CARICATURE REPRESENTATION — NOT A REAL ADVERTISEMENT"
+  },
+  "headline_source_model": {
+    "portfolio_metric": "Canarian Hospitality statement: 12 hotels, approximately 2,500 rooms and more than EUR 100m in 2025 sales.",
+    "manager_metric": "Cinco Días report of CEO figures: EUR 44m in 2024, approximately EUR 50m in 2025 and EUR 60m forecast for 2026.",
+    "mandatory_boundary": "Hotel sales attributed to the managed portfolio and the manager's own turnover are different measures and must not be mechanically added."
   },
   "relationship_classes": [
     "OWNERSHIP_TITLE",
@@ -79,12 +115,21 @@
     {
       "id": "MEDIA_COVERAGE_DOUBLE_MEANING",
       "status": "RHETORICAL_SECOND_MEANING",
-      "boundary": "No claim of knowing journalistic concealment/protection/coordination without actor-specific evidence."
+      "boundary": "No claim of knowing journalistic concealment, protection or coordination without actor-specific evidence."
     }
   ],
-  "planned_sections": [
+  "published_sections": [
     "HERO_DISCLOSURE",
-    "PLATFORM_AT_A_GLANCE",
+    "FIGURES_HOOK",
+    "PORTFOLIO_SALES_VS_MANAGER_TURNOVER",
+    "PLATFORM_ROLE_TAXONOMY",
+    "PUBLIC_INTEREST_ANALYTICAL_LENS",
+    "QUESTIONS_NOT_CONCLUSIONS",
+    "SOURCES_AND_METHOD",
+    "DIGITAL_MEDIA_ASSET_REGISTER_INTERLINK"
+  ],
+  "planned_full_platform_sections": [
+    "PLATFORM_AT_A_GLANCE_HOTEL_BY_HOTEL",
     "ONE_HOTEL_MANY_ROLES_MATRIX",
     "OWN_FINANCE_MANAGE_ADVISE_LANES",
     "CREDIBILITY_STACK",
@@ -93,26 +138,22 @@
     "AUTHORITY_ACCESS_MANDATE_CAPITAL_ASSETS",
     "MEDIA_COVERAGE_DOUBLE_MEANING",
     "RIC_RICPE_INVESTOR_PROVENANCE",
-    "PLATFORM_EXPANSION_CHRONOLOGY",
-    "QUESTIONS_NOT_CONCLUSIONS",
-    "SOURCES_METHODOLOGY_CORRECTIONS_OPEN_PROOF"
+    "PLATFORM_EXPANSION_CHRONOLOGY"
   ],
   "existing_parent_context_routes": {
     "es": "/es/acosta-matos-perimetro/",
     "en": "/en/acosta-matos-perimeter/",
-    "rule": "Do not replace; future hotel-platform route should be parent/sibling-linked after route audit."
+    "rule": "The new pages link to these existing parent routes and do not replace them. A later additive backlink patch may be made without altering their substantive record."
   },
-  "bidirectional_interlink_targets": [
-    "HOTEL_OR_PROJECT_PAGE",
-    "LEGAL_OWNER_OR_SPV_PAGE",
-    "NAMED_PERSON_OR_ENTITY_PAGE",
-    "RIC_OR_RICPE_FINANCING_RECORD",
-    "MANAGER_OPERATOR_BRAND_PAGE",
-    "CONSTRUCTION_OR_DEVELOPMENT_RECORD",
-    "ADVISER_OR_MANDATE_RECORD",
-    "MEDIA_SOURCE_REGISTER",
-    "RELEVANT_PROCEEDING_ACTA_OR_PUBLIC_AUTHORITY_EVENT_WHERE_SOURCED",
-    "OPEN_PROOF_OR_CORRECTION_ITEM"
+  "current_interlinks": [
+    "BILINGUAL_LANDING_PAGE_PAIR",
+    "BILINGUAL_DIGITAL_MEDIA_REGISTER_PAIR",
+    "SPANISH_WEB_DERIVATIVE",
+    "MACHINE_ASSET_REGISTER",
+    "ACOSTA_MATOS_PARENT_PERIMETER",
+    "RICPE_SUN_PARK_DOSSIER",
+    "RICPE_HNT_GC836_TRACEABILITY",
+    "SPECIALIST_SITEMAP"
   ],
   "source_registers": [
     "research/ACOSTA_MATOS_PERIMETER_INVESTMENT_MAP_2017_2026.md",
@@ -121,15 +162,15 @@
     "research/ACOSTA_MATOS_NON_HOTEL_INVESTMENT_DEVELOPMENT_CENSUS_2017_2026.md",
     "data/acosta-matos-non-hotel-investment-development-register-2017-2026.json"
   ],
-  "required_before_render": [
+  "required_before_full_platform_expansion": [
     "DATED_MEDIA_COVERAGE_SOURCE_REGISTER",
     "ADVISER_STRUCTURER_MANDATE_RELATIONSHIP_REGISTER",
     "CAPITAL_PROVIDER_INVESTOR_PROVENANCE_CROSSWALK",
     "BRAND_MANAGEMENT_WORKS_EDGE_CROSSWALK",
-    "ROUTE_AND_INTERLINK_TARGET_AUDIT",
+    "FULL_HOTEL_ROUTE_AND_INTERLINK_TARGET_AUDIT",
     "CAEPR_RERUN",
     "ES_EN_COPY_PARITY_CHECK",
     "ROLE_EDGE_SOURCE_IDS_COMPLETE_OR_MARKED_OPEN"
   ],
-  "next_allowed_phase": "DATA_INTERLINK_AND_COPY_FOUNDATION_ONLY"
+  "next_allowed_phase": "GENERATE_AND_REGISTER_PENDING_RASTER_ASSETS_ONLY_AFTER_A_NEW_USER_REQUEST; CONTINUE_SOURCE_REGISTERS_BEFORE_FULL_HOTEL_BY_HOTEL_PLATFORM_EXPANSION"
 }
