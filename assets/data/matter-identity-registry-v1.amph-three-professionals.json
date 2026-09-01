@@ -1,0 +1,35 @@
+{
+  "schema": "por-derecho.matter-identity-registry.part.v1",
+  "registry_id": "PD-SP-IDENTITY-REGISTRY-001",
+  "type": "PERSON",
+  "control_date": "2026-09-01",
+  "records": [
+    {
+      "id": "PD-SP-P-0161",
+      "type": "PERSON",
+      "name": "Eduardo Sánchez Iglesias",
+      "aliases": ["Eduardo Sanchez Iglesias", "Eduardo Sánchez"],
+      "identity_resolution": "CARET_CONFIRMED",
+      "identity_sources": [
+        "San Telmo / RICPE #UnCaféenSanTelmo event of 30-Nov-2021, controlled 85-page transcript and preserved video; Eduardo Sánchez Iglesias controls the 08:08–08:12 statement attribution",
+        "RSM Spain official announcement recording the 2024 integration of SanTelmo Abogados y Economistas and the incorporation of partner Eduardo Sánchez Iglesias into RSM Tax&Legal",
+        "BORME / corporate records for San Telmo Abogados y Economistas, S.L.P. used in the repository institutional-genealogy controls"
+      ],
+      "capacity_boundary": "Identity only. The sources support dated San Telmo and later RSM professional roles. They do not transfer the insolvency administrator's capacity, RICPE investment authority, a particular client identity, knowledge, coordination, intent, wrongdoing or liability to Eduardo Sánchez Iglesias."
+    },
+    {
+      "id": "PD-SP-P-0162",
+      "type": "PERSON",
+      "name": "Enrique Guerra Suárez",
+      "aliases": ["Enrique Guerra Suarez", "Enrique Guerra"],
+      "identity_resolution": "CARET_CONFIRMED",
+      "identity_sources": [
+        "RIC Private Equity webinar of 11-Nov-2020, controlled source package",
+        "RICPE certification dated 20-Jul-2021 and CAM filing dated 21-Jul-2021, controlled source package",
+        "San Telmo / RICPE #UnCaféenSanTelmo event of 30-Nov-2021, controlled 85-page transcript and preserved video",
+        "Repository-controlled RICPE management, investor and institutional-source materials"
+      ],
+      "capacity_boundary": "Identity only. Executive, corporate, legal or investment roles are source- and date-specific. Identity does not establish illegality, a direct relationship with Francisco de Borja Rodríguez-Batllori Laffitte, knowledge outside the cited sources, coordination, intent, wrongdoing or liability."
+    }
+  ]
+}
