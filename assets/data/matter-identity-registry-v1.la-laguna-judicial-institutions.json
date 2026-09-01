@@ -8,7 +8,7 @@
       "id": "PD-SP-I-0037",
       "type": "INSTITUTION",
       "name": "Plaza nº 4 del Tribunal de Instancia (Sección Instrucción) de San Cristóbal de La Laguna",
-      "aliases": ["Juzgado de Instrucción nº 4 de San Cristóbal de La Laguna", "Juzgado 1ª Inst 4 La Laguna"],
+      "aliases": ["Juzgado de Instrucción nº 4 de San Cristóbal de La Laguna", "Juzgado de Instrucción nº 4 La Laguna", "Juzgado 1ª Inst 4 La Laguna", "Plaza Nº 4 del Tribunal de Instancia (Sección Instrucción)"],
       "routes": {"es": "/es/registro-judicial-la-laguna/#pd-sp-i-0037", "en": "/en/la-laguna-judicial-register/#pd-sp-i-0037"},
       "identity_resolution": "CARET_CONFIRMED",
       "identity_sources": ["DP 748/2026 court acts and LexNET packet in 2026"],
