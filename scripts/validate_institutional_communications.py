@@ -16,6 +16,7 @@ from reconcile_institutional_communications import (
     BASELINE_COHORT,
     BASELINE_EXPECTED,
     BASELINE_SOURCE_SHA256,
+    AUTHORITY_SCAN_CHECKPOINT,
     DEFAULT_CHECKPOINT,
     DEFAULT_MAILBOX_INDEX,
     DEFAULT_REGISTER,
@@ -44,6 +45,9 @@ from build_public_mailbox_event_index import (
 DEFAULT_SCHEMA = REPO_ROOT / ".github/evidence-intelligence/schemas/institutional-communications.schema.json"
 DEFAULT_ID_POLICY = REPO_ROOT / ".github/evidence-intelligence/id-extension-policy.json"
 DEFAULT_PEOPLE = REPO_ROOT / "assets/data/matter-identity-registry-v1.people.json"
+DEFAULT_INSTITUTIONS = REPO_ROOT / "assets/data/matter-identity-registry-v1.institutions.json"
+DEFAULT_MASTER = REPO_ROOT / "assets/data/proceedings-master-public-v1.json"
+DEFAULT_UNITARY = REPO_ROOT / "assets/data/unitary-multitrack-criminal-first-gap-closure-v1.json"
 EVENT_ID_RE = re.compile(r"^PD-SP-EVT-[0-9]{4}$")
 EMAIL_RE = re.compile(r"(?i)\b[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}\b")
 PRIVATE_URL_RE = re.compile(r"(?i)https?://[^\s\"]*(?:mail\.google|gmail|drive\.google|docs\.google)[^\s\"]*")
@@ -172,6 +176,8 @@ def validate_register(
         "mailbox_draft_rows": 3,
         "mailbox_route_not_publicly_attested_rows": 81,
         "mailbox_transport_events": 156,
+        "public_authority_communication_events": 19,
+        "new_public_authority_communication_events": 17,
     }
     for key, expected in expected_denominator.items():
         if denominator.get(key) != expected:
@@ -193,6 +199,73 @@ def validate_register(
     source_keys = [event.get("source_key") for event in events if isinstance(event, dict)]
     if len(source_keys) != len(set(source_keys)):
         errors.append("duplicate source_key")
+
+    authority_events = [event for event in events if event.get("authority_tier_id")]
+    expected_authority_ids = ["PD-SP-EVT-0004", "PD-SP-EVT-0014", *[f"PD-SP-EVT-{number:04d}" for number in range(141, 158)]]
+    if [event.get("event_id") for event in authority_events] != expected_authority_ids:
+        errors.append("19-event public-authority communication set changed")
+    if denominator.get("event_rows_total") != len(events) or len(events) != 313:
+        errors.append(f"event-row denominator drift: expected 313, found {len(events)}")
+    try:
+        authority_scan = load_json(AUTHORITY_SCAN_CHECKPOINT)
+    except (OSError, json.JSONDecodeError) as exc:
+        errors.append(f"authority scan checkpoint cannot be loaded: {exc}")
+        authority_scan = {}
+    if authority_scan.get("canonical_event_ids") != expected_authority_ids:
+        errors.append("authority scan checkpoint event set changed")
+    if authority_scan.get("denominators", {}).get("gmail_unique_messages_across_lanes") != 5514:
+        errors.append("authority scan Gmail denominator changed")
+    if authority_scan.get("denominators", {}).get("drive_unique_documents_across_lanes") != 326:
+        errors.append("authority scan Drive denominator changed")
+    authority_control = register.get("authority_scan_control", {})
+    actual_authority_scan_hash = sha256_file(AUTHORITY_SCAN_CHECKPOINT) if AUTHORITY_SCAN_CHECKPOINT.is_file() else "MISSING"
+    if authority_control.get("checkpoint_sha256") != actual_authority_scan_hash:
+        errors.append("register authority-scan checkpoint hash mismatch")
+    if authority_control.get("universal_completeness_claim") is not False:
+        errors.append("bounded authority scan must not claim universal completeness")
+    try:
+        institution_ids = {record["id"] for record in load_json(DEFAULT_INSTITUTIONS)["records"]}
+        master_ids = {record["Master_ID"] for record in load_json(DEFAULT_MASTER)["records"]}
+        unitary = load_json(DEFAULT_UNITARY)
+        stage_ids = {record["id"] for record in unitary["authority_legitimacy_propagation"]["stages"]}
+        track_ids = {record["id"] for record in unitary["tracks"]}
+        gap_ids = {record["id"] for record in unitary["gaps"]}
+    except (OSError, json.JSONDecodeError, KeyError) as exc:
+        errors.append(f"authority-reference controls cannot be loaded: {exc}")
+        institution_ids, master_ids, stage_ids, track_ids, gap_ids = set(), set(), set(), set(), set()
+    for event in authority_events:
+        event_id = event.get("event_id")
+        if event.get("institution_caret_state") == "CARET_CONFIRMED" and event.get("institution_id") not in institution_ids:
+            errors.append(f"{event_id} confirmed institution identity does not resolve")
+        if not set(event.get("master_ids", [])).issubset(master_ids):
+            errors.append(f"{event_id} has an unknown Master ID")
+        if not set(event.get("context_master_ids", [])).issubset(master_ids):
+            errors.append(f"{event_id} has an unknown contextual Master ID")
+        if not set(event.get("authority_stage_ids", [])).issubset(stage_ids):
+            errors.append(f"{event_id} has an unknown authority stage")
+        if not set(event.get("track_ids", [])).issubset(track_ids):
+            errors.append(f"{event_id} has an unknown track")
+        if not set(event.get("gap_ids", [])).issubset(gap_ids):
+            errors.append(f"{event_id} has an unknown gap")
+        if event.get("master_link_state") == "RESOLVED" and not event.get("master_ids"):
+            errors.append(f"{event_id} claims a resolved Master link without a Master ID")
+        if event.get("canonical_anchor_es") != f"es/ingenieria-inversa-criminal-unitaria/#communication-{event_id}":
+            errors.append(f"{event_id} ES canonical anchor mismatch")
+        if event.get("canonical_anchor_en") != f"en/unitary-criminal-reverse-engineering/#communication-{event_id}":
+            errors.append(f"{event_id} EN canonical anchor mismatch")
+        handling = event.get("handling_state", {})
+        if any(handling.get(key) != "NOT_PROVEN" for key in ("verification_or_rejection", "adoption", "effect", "causation", "benefit_or_loss")):
+            errors.append(f"{event_id} overstates verification, adoption, effect, causation or benefit/loss")
+        if event.get("criminal_responsibility_transfer") is not False:
+            errors.append(f"{event_id} improperly transfers criminal responsibility")
+        if not event.get("proves_es") or not event.get("does_not_prove_es"):
+            errors.append(f"{event_id} lacks bilingual proof boundaries")
+    for event in authority_events:
+        if event.get("official_reference") in {"REGAGE26e00075136691", "REGAGE26e00069678966", "141-2026-IRR02"} and event.get("authority_tier_id") != "ES_STATE":
+            errors.append(f"{event.get('event_id')} misclassifies a Spanish body as EU tier")
+    legacy_crosswalk = next((event for event in authority_events if event.get("event_id") == "PD-SP-EVT-0141"), {})
+    if legacy_crosswalk.get("legacy_evidence_ids") != ["PD-EV-UCF-INT-184368-2026"]:
+        errors.append("first Intervención legacy evidence crosswalk changed")
 
     if mailbox_index.get("schema") != "por-derecho.institutional-communications-mailbox-index.v1":
         errors.append("unexpected public mailbox-index schema")
@@ -499,6 +572,13 @@ def validate_register(
     }.items():
         if checkpoint_mailbox.get(key) != expected:
             errors.append(f"checkpoint mailbox_index.{key}: expected {expected!r}")
+    checkpoint_authority = checkpoint.get("public_authority_scan", {})
+    if checkpoint_authority.get("checkpoint_sha256") != actual_authority_scan_hash:
+        errors.append("main checkpoint authority-scan hash mismatch")
+    if checkpoint_authority.get("canonical_authority_event_count") != 19:
+        errors.append("main checkpoint authority-event denominator changed")
+    if checkpoint_authority.get("provider_locators_or_exact_subjects_published") is not False:
+        errors.append("main checkpoint violates the private-locator boundary")
     return errors
 
 
@@ -537,7 +617,7 @@ def main(argv: list[str] | None = None) -> int:
     print(
         "OK: 75 detailed receipts + 156 mailbox transports reconciled; "
         "22 aggregate-only records remain one batch; "
-        f"{len(KEY_EVENTS)} curated events source-anchored; public/private boundary enforced"
+        f"{len(KEY_EVENTS)} curated events source-anchored; 19 authority events interlinked; public/private boundary enforced"
     )
     return 0
 

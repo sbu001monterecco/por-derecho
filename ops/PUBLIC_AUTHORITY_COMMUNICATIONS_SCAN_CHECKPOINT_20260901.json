@@ -1,0 +1,96 @@
+{
+  "schema": "por-derecho.public-authority-communications-scan-checkpoint.v1",
+  "checkpoint_id": "PD-SP-AUTH-COMMS-SCAN-20260901",
+  "control_date": "2026-09-01",
+  "status": "BOUNDED_METADATA_CENSUS_COMPLETE_ITEM_LEVEL_MERITS_REVIEW_OPEN",
+  "authority_scope_rule": "Every current public-authority Master row plus every additional authority directly identified by an in-scope communication or controlled source; this is a finite repository, Gmail and Drive census, not a universal-mailbox completeness claim.",
+  "gmail_lanes": [
+    {"lane_id": "EU_FUNDS", "messages": 800, "pages": 9, "pagination_complete": true},
+    {"lane_id": "YAIZA", "messages": 2259, "pages": 23, "pagination_complete": true},
+    {"lane_id": "CABILDO", "messages": 465, "pages": 5, "pagination_complete": true},
+    {"lane_id": "CANARY_AUTONOMIC", "messages": 1461, "pages": 15, "pagination_complete": true},
+    {"lane_id": "SPANISH_STATE", "messages": 3736, "pages": 38, "pagination_complete": true}
+  ],
+  "drive_lanes": [
+    {"lane_id": "EU_FUNDS", "documents": 29, "pages": 1, "pagination_complete": true},
+    {"lane_id": "YAIZA", "documents": 195, "pages": 2, "pagination_complete": true},
+    {"lane_id": "CABILDO", "documents": 185, "pages": 2, "pagination_complete": true},
+    {"lane_id": "CANARY_AUTONOMIC", "documents": 95, "pages": 1, "pagination_complete": true},
+    {"lane_id": "SPANISH_STATE", "documents": 9, "pages": 1, "pagination_complete": true}
+  ],
+  "denominators": {
+    "gmail_lane_hits_before_cross_lane_deduplication": 8721,
+    "gmail_unique_messages_across_lanes": 5514,
+    "drive_lane_hits_before_cross_lane_deduplication": 513,
+    "drive_unique_documents_across_lanes": 326,
+    "existing_eu_receipt_events_reused": 2,
+    "new_source_controlled_events_registered": 17,
+    "authority_events_in_public_projection": 19
+  },
+  "canonical_event_ids": [
+    "PD-SP-EVT-0004",
+    "PD-SP-EVT-0014",
+    "PD-SP-EVT-0141",
+    "PD-SP-EVT-0142",
+    "PD-SP-EVT-0143",
+    "PD-SP-EVT-0144",
+    "PD-SP-EVT-0145",
+    "PD-SP-EVT-0146",
+    "PD-SP-EVT-0147",
+    "PD-SP-EVT-0148",
+    "PD-SP-EVT-0149",
+    "PD-SP-EVT-0150",
+    "PD-SP-EVT-0151",
+    "PD-SP-EVT-0152",
+    "PD-SP-EVT-0153",
+    "PD-SP-EVT-0154",
+    "PD-SP-EVT-0155",
+    "PD-SP-EVT-0156",
+    "PD-SP-EVT-0157"
+  ],
+  "identity_result": {
+    "confirmed_institutions": ["PD-SP-I-0006", "PD-SP-I-0009", "PD-SP-I-0010"],
+    "pending_exact_organs": [
+      "Intervencion General de la Comunidad Autonoma de Canarias",
+      "Comisionado de Transparencia y Acceso a la Informacion Publica",
+      "Canary Presidency and Justice recipient organ",
+      "Canary regional-incentives recipient organ",
+      "Canary ERDF recipient organ",
+      "Spanish regional-incentives recipient organ",
+      "Spanish Directorate-General for European Funds",
+      "CNMV",
+      "Canary Treasury competent directorate",
+      "SNCA or IGAE exact receiving organ",
+      "European Public Prosecutor Office exact receiving organ"
+    ],
+    "caret_rule": "The caret marker is identity-only. Communications receive event IDs and canonical anchors, never presentation carets. Pending exact organs are not printed with a caret."
+  },
+  "privacy_boundary": {
+    "public_contains": [
+      "aggregate lane counts",
+      "official references",
+      "dates",
+      "public office labels",
+      "source-controlled public summaries",
+      "canonical event and cross-track identifiers"
+    ],
+    "public_excludes": [
+      "mail provider message or thread identifiers",
+      "private Drive identifiers or URLs",
+      "email addresses and recipient lists",
+      "exact private subjects or bodies",
+      "native attachment filenames",
+      "verification credentials and access codes",
+      "private custody locators"
+    ],
+    "native_sources": "Remain in authorised private custody; this checkpoint is a public-safe aggregate and canonicalisation record."
+  },
+  "proof_boundary": "Search hits and document matches are discovery leads. A sent item proves only the located transport state; a REGAGE receipt proves formal presentation to the stated registry; an official routing notice proves only the routing stated in that notice. None alone proves downstream delivery, incorporation, examination, adoption, reliance, personal knowledge, intent, causation, criminal organisation, offence or guilt.",
+  "open_controls": [
+    "Item-level relevance and duplicate reconciliation remain open for discovery hits not represented by the 19 controlled events.",
+    "Exact CAEPR identity remains open for every organ listed as pending.",
+    "Yaiza filings without individually controlled primary receipts remain unallocated.",
+    "For every event, routing, incorporation, examination, verification, adoption, decision, effect and reliance require separate source proof.",
+    "Legacy public-source privacy debt must be remediated prospectively without rewriting Git history or destroying private originals."
+  ]
+}

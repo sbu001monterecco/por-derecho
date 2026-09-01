@@ -158,3 +158,15 @@ The workflow is a publication-integrity gate for this controlled scope. It does 
 infer guilt from completeness and does not authorise filing, contact or messaging.
 
 Any older unqualified title in a canonical register must be corrected additively to show that the source records the title while lawful authority remains disputed. The original source wording is preserved; the repository's inference is corrected.
+
+## 10. Unitary multi-track prosecutorial continuity
+
+For every claimed-office event that propagates into Community debt/vote, access/security, insolvency, adjudication/title, refurbishment, RIC/RICPE, public aid/funds, Yaiza/Cabildo, SAIP or benefit, apply `.github/governance/UNITARY_MULTI_TRACK_CRIMINAL_FIRST_PROSECUTORIAL_FORENSIC_PROTOCOL_01SEP2026.md` (`PD-UCF-20260901-01`).
+
+The actor-action matrix remains the actor-specific source. The unitary graph may display a cross-track edge only when it preserves:
+
+`actor → capacity → date → source → act/omission → knowledge/intent state → use/recipient → effect/causation → beneficiary → contrary record → open proof`.
+
+`C1` and `C2` remain attributed documentary phases, never collective actors. `D-MIXED`/`D-OPEN` remain evidence statuses and never enter a criminal hypothesis by colour or proximity. A downstream institutional or financial connector remains `OPEN` or `NOTICE` until document-specific transmission, verification/adoption and use are proved.
+
+All material production obligations use the finite `PD-GAP-UCF-*` register. Carets remain identity-only CAEPR markers; they do not certify office, authority, evidence, conduct or guilt.

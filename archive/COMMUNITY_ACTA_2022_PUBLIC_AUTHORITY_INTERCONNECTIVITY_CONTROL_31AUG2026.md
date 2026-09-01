@@ -1,7 +1,7 @@
 # Community ACTA ↔ 2022 parallel track ↔ public-authority interconnectivity control
 
 Control date: **31 August 2026**  
-Status: **IMPLEMENTED IN CURRENT TREE — PUBLICATION VERIFICATION PENDING**
+Status: **LIVE VERIFIED — PR #1281 / merge `7cdb356d5f2b6180027719c1aa80ac8b22f77435` / descendant Pages run `33446723239` / bilingual rendered readback**
 
 ## Outcome
 
@@ -94,4 +94,4 @@ The browser smoke is enforced in the pull-request workflow. Local static and det
 
 ## Publication state
 
-This control records current-tree implementation only. A later immutable deployment closeout must record the pull request, merge commit, successful GitHub Pages run and live EN/ES, ACTA, Master Register and Proceedings Map read-back.
+The immutable deployment closeout is `archive/FISCALIA_ACTA_AUTHORITY_INTERCONNECTIVITY_DEPLOYMENT_CLOSEOUT_31AUG2026.md`. It records PR #1281, merge identity, successful descendant Pages deployment, live EN/ES rendering, 20 ACTA packages, 49 authority files, seven evidence axes, all reciprocal routes tested and the retained non-finding boundaries. The later `PD-UCF-20260901-01` unitary gap-closure layer remains a separate local implementation pending publication authority.

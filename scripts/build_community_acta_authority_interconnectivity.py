@@ -23,11 +23,54 @@ PRISM = ROOT / "assets/data/proceedings-case-prism-v1.json"
 DECISIONS = ROOT / "archive/judicial-intelligence/decisions.jsonl"
 POST7JUNE = ROOT / "assets/data/sun-park-post-7june-2018-2022-continuing-harm-v1.json"
 ASSERTIONS = ROOT / "assets/data/community-acta-authority-link-assertions-v1.json"
+COMMUNICATIONS = ROOT / "assets/data/institutional-communications-register-v1.json"
+AUTHORITY_SCAN = ROOT / "ops/PUBLIC_AUTHORITY_COMMUNICATIONS_SCAN_CHECKPOINT_20260901.json"
+UNITARY = ROOT / "assets/data/unitary-multitrack-criminal-first-gap-closure-v1.json"
+INSTITUTIONS = ROOT / "assets/data/matter-identity-registry-v1.institutions.json"
 TARGET = ROOT / "assets/data/community-acta-authority-interconnectivity-v1.json"
 
 EXPECTED_ACTAS = 20
 EXPECTED_AUTHORITIES = 49
 EXPECTED_ADJUDICATION_DECISIONS = 5
+EXPECTED_AUTHORITY_COMMUNICATIONS = 19
+
+AUTHORITY_TIERS = [
+    {
+        "id": "ES_LOCAL_MUNICIPAL",
+        "label_en": "Local / municipal",
+        "label_es": "Local / municipal",
+        "boundary_en": "A municipal receipt or act proves only the municipal event and source-bounded handling stated; it does not decide private title, criminal liability or another tier's treatment.",
+        "boundary_es": "Un acuse o acto municipal prueba solo el evento municipal y el tratamiento delimitado por la fuente; no decide título privado, responsabilidad penal ni el tratamiento de otro nivel.",
+    },
+    {
+        "id": "ES_ISLAND_CABILDO",
+        "label_en": "Island / Cabildo",
+        "label_es": "Insular / Cabildo",
+        "boundary_en": "Tourism administration and private property are distinct; registry presentation does not prove file delivery, title, authority or reliance.",
+        "boundary_es": "La administración turística y la propiedad privada son distintas; la presentación registral no prueba entrega, título, autoridad ni utilización.",
+    },
+    {
+        "id": "ES_CANARY_AUTONOMOUS",
+        "label_en": "Canary autonomous administration",
+        "label_es": "Administración autonómica canaria",
+        "boundary_en": "Separate Canary departments retain separate competence, files and proof chains; one referral is not whole-government knowledge or adoption.",
+        "boundary_es": "Los departamentos canarios conservan competencias, expedientes y cadenas probatorias separadas; un traslado no es conocimiento ni adopción de todo el Gobierno.",
+    },
+    {
+        "id": "ES_STATE",
+        "label_en": "Spanish State administration",
+        "label_es": "Administración estatal española",
+        "boundary_en": "A European-funds subject does not turn a Spanish State body into an EU institution; receipt and competence remain organ-specific.",
+        "boundary_es": "La materia de fondos europeos no convierte a un órgano estatal español en institución UE; recepción y competencia siguen siendo específicas de cada órgano.",
+    },
+    {
+        "id": "EU_SUPRANATIONAL",
+        "label_en": "European Union institution",
+        "label_es": "Institución de la Unión Europea",
+        "boundary_en": "A REGAGE destination receipt does not establish internal EU delivery, EPPO or OLAF competence, investigation, merits review or liability.",
+        "boundary_es": "Un acuse dirigido por REGAGE no acredita entrega interna UE, competencia de Fiscalía Europea u OLAF, investigación, examen de fondo ni responsabilidad.",
+    },
+]
 
 DECISION_ES = {
     "C36-E044": {
@@ -108,7 +151,100 @@ def build() -> dict[str, Any]:
     prism = load_json(PRISM)
     post7june = load_json(POST7JUNE)
     assertions = load_json(ASSERTIONS)
+    communications = load_json(COMMUNICATIONS)
+    authority_scan = load_json(AUTHORITY_SCAN)
+    unitary = load_json(UNITARY)
+    institutions = load_json(INSTITUTIONS)
     decisions = load_decisions()
+
+    tier_ids = {tier["id"] for tier in AUTHORITY_TIERS}
+    identity_ids = {record["id"] for record in institutions["records"]}
+    unitary_stage_ids = {stage["id"] for stage in unitary["authority_legitimacy_propagation"]["stages"]}
+    unitary_track_ids = {track["id"] for track in unitary["tracks"]}
+    unitary_gap_ids = {gap["id"] for gap in unitary["gaps"]}
+    authority_communication_events = sorted(
+        (event for event in communications["events"] if event.get("authority_tier_id")),
+        key=lambda event: event["event_id"],
+    )
+    if len(authority_communication_events) != EXPECTED_AUTHORITY_COMMUNICATIONS:
+        raise ValueError(
+            f"expected {EXPECTED_AUTHORITY_COMMUNICATIONS} canonical authority communications, "
+            f"found {len(authority_communication_events)}"
+        )
+    if [event["event_id"] for event in authority_communication_events] != authority_scan["canonical_event_ids"]:
+        raise ValueError("authority communication IDs do not reconcile to the bounded scan checkpoint")
+
+    master_ids_all = {record["Master_ID"] for record in master["records"]}
+    events_by_master: dict[str, list[str]] = defaultdict(list)
+    public_communications: list[dict[str, Any]] = []
+    by_evidence_id: dict[str, dict[str, Any]] = {}
+    tier_counts: Counter[str] = Counter()
+    for event in authority_communication_events:
+        event_id = event["event_id"]
+        tier_id = event["authority_tier_id"]
+        if tier_id not in tier_ids:
+            raise ValueError(f"{event_id} has unknown authority tier {tier_id}")
+        tier_counts[tier_id] += 1
+        master_ids = event.get("master_ids", [])
+        context_master_ids = event.get("context_master_ids", [])
+        unknown_master_ids = (set(master_ids) | set(context_master_ids)) - master_ids_all
+        if unknown_master_ids:
+            raise ValueError(f"{event_id} has unknown Master IDs: {sorted(unknown_master_ids)}")
+        if not set(event.get("authority_stage_ids", [])).issubset(unitary_stage_ids):
+            raise ValueError(f"{event_id} has unknown unitary authority stage")
+        if not set(event.get("track_ids", [])).issubset(unitary_track_ids):
+            raise ValueError(f"{event_id} has unknown unitary track")
+        if not set(event.get("gap_ids", [])).issubset(unitary_gap_ids):
+            raise ValueError(f"{event_id} has unknown unitary gap")
+        if event.get("institution_caret_state") == "CARET_CONFIRMED" and event.get("institution_id") not in identity_ids:
+            raise ValueError(f"{event_id} has an unresolved confirmed institution ID")
+        for master_id in master_ids:
+            events_by_master[master_id].append(event_id)
+        projection = {
+            "event_id": event_id,
+            "legacy_evidence_ids": event.get("legacy_evidence_ids", []),
+            "date": event["event_date"],
+            "direction": event["direction"],
+            "channel": event["channel"],
+            "record_type": event["record_type"],
+            "official_reference": event["official_reference"],
+            "primary_authority_tier_id": tier_id,
+            "tier_resolution_state": event["tier_resolution_state"],
+            "institution_label": event["office"],
+            "institution_id": event.get("institution_id") if event.get("institution_caret_state") == "CARET_CONFIRMED" else None,
+            "institution_identity_state": event["institution_caret_state"],
+            "master_ids": master_ids,
+            "context_master_ids": context_master_ids,
+            "master_link_state": event["master_link_state"],
+            "authority_stage_ids": event["authority_stage_ids"],
+            "track_ids": event["track_ids"],
+            "gap_ids": event["gap_ids"],
+            "evidence_classes": event["evidence_classes"],
+            "handling_state": event["handling_state"],
+            "source_anchor": event["source_integrity"]["repository_anchor"],
+            "proves_en": " ".join(event["proves"]),
+            "proves_es": event["proves_es"],
+            "does_not_prove_en": " ".join(event["does_not_prove"]),
+            "does_not_prove_es": event["does_not_prove_es"],
+            "summary_en": event.get("public_summary") or " ".join(event["proves"]),
+            "summary_es": event["public_summary_es"],
+            "canonical_anchor_es": event["canonical_anchor_es"],
+            "canonical_anchor_en": event["canonical_anchor_en"],
+            "public_derivative_state": event["public_derivative_state"],
+            "criminal_relevance_state": event["criminal_relevance_state"],
+            "criminal_responsibility_transfer": event["criminal_responsibility_transfer"],
+        }
+        public_communications.append(projection)
+        by_evidence_id[event_id] = {
+            "primary_authority_tier_id": tier_id,
+            "institution_identity_state": event["institution_caret_state"],
+            "master_ids": master_ids,
+            "authority_stage_ids": event["authority_stage_ids"],
+            "track_ids": event["track_ids"],
+            "gap_ids": event["gap_ids"],
+            "canonical_anchor_es": event["canonical_anchor_es"],
+            "canonical_anchor_en": event["canonical_anchor_en"],
+        }
 
     acta_items = sorted(acta_index["items"], key=lambda item: (item["date"], item["id"]))
     if len(acta_items) != EXPECTED_ACTAS:
@@ -161,6 +297,19 @@ def build() -> dict[str, Any]:
         group = authority_group(row["Master_ID"], assertions)
         group_counts[group["id"]] += 1
         links = memberships.get(row["Master_ID"], [])
+        communication_event_ids = sorted(events_by_master.get(row["Master_ID"], []))
+        linked_events = [by_evidence_id[event_id] for event_id in communication_event_ids]
+        unitary_links: dict[str, Any] = {}
+        if communication_event_ids:
+            unitary_links = {
+                "communication_event_ids": communication_event_ids,
+                "unitary_authority_stage_ids": sorted({value for event in linked_events for value in event["authority_stage_ids"]}),
+                "unitary_gap_ids": sorted({value for event in linked_events for value in event["gap_ids"]}),
+            }
+        if row["Master_ID"] == "X-INT-004":
+            unitary_links["canonical_evidence_refs"] = [
+                "PD-EV-UCF-INT-184368-2026", "PD-SP-EVT-0141", "PD-SP-EVT-0142", "PD-SP-EVT-0143"
+            ]
         authority_file = {
             "master_id": row["Master_ID"],
             "record_type": row["Record_Type"],
@@ -180,6 +329,7 @@ def build() -> dict[str, Any]:
             "relationship_strength": "DEPENDENCY_TEST_ONLY",
             "boundary_en": group["boundary_en"],
             "boundary_es": group["boundary_es"],
+            **unitary_links,
         }
         authority_files.append(authority_file)
         by_master_id[row["Master_ID"]] = {
@@ -189,6 +339,7 @@ def build() -> dict[str, Any]:
             "relationship_strength": "DEPENDENCY_TEST_ONLY",
             "boundary_en": "This reciprocal link exposes the applicable evidence questions; it does not prove ACTA delivery, receipt, examination, reliance, knowledge or merits.",
             "boundary_es": "Este enlace recíproco expone las preguntas probatorias aplicables; no prueba entrega, recepción, examen, utilización, conocimiento ni fondo del ACTA.",
+            **unitary_links,
         }
 
     selected_decisions = []
@@ -273,10 +424,13 @@ def build() -> dict[str, Any]:
         if not set(group["axis_ids"]).issubset(axis_ids):
             raise ValueError(f"unknown axis in authority group {group['id']}")
 
-    source_files = [ACTA_INDEX, MASTER, PRISM, DECISIONS, POST7JUNE, ASSERTIONS]
+    source_files = [
+        ACTA_INDEX, MASTER, PRISM, DECISIONS, POST7JUNE, ASSERTIONS,
+        COMMUNICATIONS, AUTHORITY_SCAN, UNITARY, INSTITUTIONS,
+    ]
     return {
         "schema_version": "1.0.0",
-        "generated": "2026-08-31",
+        "generated": "2026-09-01",
         "status": "PUBLIC_SAFE_DERIVED_INTERCONNECTIVITY_PROJECTION",
         "title_en": "Community ACTAs, the 2022 parallel track and public-authority files",
         "title_es": "ACTAs comunitarias, vía paralela de 2022 y expedientes de autoridades públicas",
@@ -297,8 +451,24 @@ def build() -> dict[str, Any]:
             "verified_primary_authority_files": sum(file["source_status"] == "VERIFIED_PRIMARY" for file in authority_files),
             "verified_procedural_authority_files": sum(file["source_status"] == "VERIFIED_PROCEDURAL" for file in authority_files),
             "open_or_primary_pending_authority_files": sum(file["source_status"] in {"OPEN_REFERENCE", "CORPUS_REPORTED_PRIMARY_PENDING"} for file in authority_files),
+            "public_authority_communication_events": len(public_communications),
+            "authority_tiers_represented": sum(tier_counts[tier["id"]] > 0 for tier in AUTHORITY_TIERS),
+            "confirmed_identity_communication_events": sum(event["institution_identity_state"] == "CARET_CONFIRMED" for event in public_communications),
+            "pending_identity_communication_events": sum(event["institution_identity_state"] == "CARET_PENDING" for event in public_communications),
         },
         "actas": actas,
+        "authority_tiers": [
+            {**tier, "event_count": tier_counts[tier["id"]]} for tier in AUTHORITY_TIERS
+        ],
+        "public_communications": public_communications,
+        "by_evidence_id": by_evidence_id,
+        "communication_scan_control": {
+            **communications["authority_scan_control"],
+            "proof_boundary_en": authority_scan["proof_boundary"],
+            "proof_boundary_es": "Los resultados de búsqueda son pistas. Transporte, registro, entrega, remisión, incorporación, examen, adopción, utilización, conocimiento, dolo, causalidad y responsabilidad requieren fuentes separadas.",
+            "responsibility_boundary_en": "Apparent authority and documents may propagate as inputs; criminal responsibility never propagates through an ACTA, communication, referral, office or tier.",
+            "responsibility_boundary_es": "La autoridad aparente y los documentos pueden propagarse como insumos; la responsabilidad penal nunca se propaga por ACTA, comunicación, traslado, órgano o nivel.",
+        },
         "authority_groups": authority_groups,
         "authority_files": authority_files,
         "by_master_id": by_master_id,

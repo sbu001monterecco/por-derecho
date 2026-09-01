@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
-"""Deterministically reconcile the public-safe Ministerio Fiscal communications register.
+"""Deterministically reconcile the public-safe institutional communications register.
 
 The 75-row RedSARA short index is the canonical detailed baseline.  This script
 never expands the later 22 metadata-only records into invented event rows.  It
-also never imports mailbox/provider locators into the public repository.
+also merges only source-controlled curated/public-authority events and never
+imports mailbox/provider locators into the public repository.
 """
 
 from __future__ import annotations
@@ -26,6 +27,7 @@ DEFAULT_SOURCE = REPO_ROOT / "archive/evidence/mf-redsara-anexo4/MF_REDSARA_REGI
 DEFAULT_MAILBOX_INDEX = REPO_ROOT / "assets/data/institutional-communications-mailbox-index-v1.json"
 DEFAULT_REGISTER = REPO_ROOT / "assets/data/institutional-communications-register-v1.json"
 DEFAULT_CHECKPOINT = REPO_ROOT / "ops/INSTITUTIONAL_COMMUNICATIONS_SCAN_CHECKPOINT.json"
+AUTHORITY_SCAN_CHECKPOINT = REPO_ROOT / "ops/PUBLIC_AUTHORITY_COMMUNICATIONS_SCAN_CHECKPOINT_20260901.json"
 BASELINE_COHORT = "BASELINE_REDSARA_ANEXO4_75"
 BASELINE_EXPECTED = 75
 BASELINE_SOURCE_SHA256 = "784b45bb9ef9e5934d4b4dedc7068dfef90b6e19a10d55bfc1170933d097dcc3"
@@ -88,6 +90,8 @@ def _key_event(
     transport_link_state: str = "NO_PUBLIC_TRANSPORT_LINK_ASSERTED",
     proof_level: str = "SOURCE_PROVED_PUBLIC_SAFE_DERIVATIVE",
     event_sequence: str | None = None,
+    institution_id: str | None = "PD-SP-I-0002",
+    authority_metadata: dict[str, Any] | None = None,
 ) -> dict[str, Any]:
     source_integrity: dict[str, str] = {
         "status": "SOURCE_PROVED_PUBLIC_SAFE_DERIVATIVE",
@@ -104,7 +108,6 @@ def _key_event(
         "event_date": event_date,
         "direction": direction,
         "channel": channel,
-        "institution_id": "PD-SP-I-0002",
         "office": office,
         "official_reference": reference,
         "public_summary": summary,
@@ -127,6 +130,10 @@ def _key_event(
         "proves": proves,
         "does_not_prove": does_not_prove,
     }
+    if institution_id:
+        event["institution_id"] = institution_id
+    if authority_metadata:
+        event.update(deepcopy(authority_metadata))
     if signatory_person_id:
         event["signatory_person_id"] = signatory_person_id
     if signatory_person_label:
@@ -975,6 +982,294 @@ for event_id, reference in (
     )
 
 
+def _authority_handling_state(kind: str) -> dict[str, str]:
+    if kind == "REGISTRATION_RECEIPT":
+        return {
+            "transmission": "PROVEN",
+            "registration": "PROVEN",
+            "delivery": "OPEN",
+            "routing": "OPEN",
+            "incorporation": "OPEN",
+            "examination": "OPEN",
+            "verification_or_rejection": "NOT_PROVEN",
+            "adoption": "NOT_PROVEN",
+            "decision_or_use": "NOT_PROVEN",
+            "effect": "NOT_PROVEN",
+            "causation": "NOT_PROVEN",
+            "benefit_or_loss": "NOT_PROVEN",
+        }
+    if kind == "ROUTING_NOTICE":
+        return {
+            "transmission": "PROVEN",
+            "registration": "PROVEN",
+            "delivery": "ONLY_AS_STATED_IN_SOURCE",
+            "routing": "PROVEN_AS_STATED_IN_SOURCE",
+            "incorporation": "OPEN",
+            "examination": "OPEN",
+            "verification_or_rejection": "NOT_PROVEN",
+            "adoption": "NOT_PROVEN",
+            "decision_or_use": "NOT_PROVEN",
+            "effect": "NOT_PROVEN",
+            "causation": "NOT_PROVEN",
+            "benefit_or_loss": "NOT_PROVEN",
+        }
+    return {
+        "transmission": "PROVEN",
+        "registration": "ONLY_AS_STATED_IN_SOURCE",
+        "delivery": "PROVEN_BY_LOCATED_RECEIPT_OR_NOTICE",
+        "routing": "ONLY_AS_STATED_IN_SOURCE",
+        "incorporation": "OPEN",
+        "examination": "ONLY_AS_STATED_IN_SOURCE",
+        "verification_or_rejection": "NOT_PROVEN",
+        "adoption": "NOT_PROVEN",
+        "decision_or_use": "ONLY_THE_LOCATED_PROCEDURAL_ACT",
+        "effect": "NOT_PROVEN",
+        "causation": "NOT_PROVEN",
+        "benefit_or_loss": "NOT_PROVEN",
+    }
+
+
+def _authority_event(spec: dict[str, Any]) -> dict[str, Any]:
+    record_type = str(spec["record_type"])
+    handling_kind = str(spec.get("handling_kind", record_type))
+    receipt = record_type == "REGISTRATION_RECEIPT"
+    authority_metadata = {
+        "institution_key": spec["institution_key"],
+        "institution_caret_state": "CARET_CONFIRMED" if spec.get("institution_id") else "CARET_PENDING",
+        "authority_tier_id": spec["authority_tier_id"],
+        "tier_resolution_state": "CONFIRMED",
+        "master_ids": spec.get("master_ids", []),
+        "context_master_ids": spec.get("context_master_ids", []),
+        "master_link_state": "RESOLVED" if spec.get("master_ids") else "OPEN",
+        "authority_stage_ids": spec["authority_stage_ids"],
+        "track_ids": spec["track_ids"],
+        "gap_ids": spec["gap_ids"],
+        "evidence_classes": spec["evidence_classes"],
+        "handling_state": _authority_handling_state(handling_kind),
+        "public_summary_es": spec["summary_es"],
+        "proves_es": spec["proves_es"],
+        "does_not_prove_es": spec["does_not_prove_es"],
+        "canonical_anchor_es": f"es/ingenieria-inversa-criminal-unitaria/#communication-{spec['event_id']}",
+        "canonical_anchor_en": f"en/unitary-criminal-reverse-engineering/#communication-{spec['event_id']}",
+        "public_derivative_state": "PUBLIC_SAFE_MINIMISED_DERIVATIVE",
+        "command_caret_audit": "EVENT_REGISTERED_IDENTITY_CARET_SEPARATELY_CONTROLLED",
+        "criminal_relevance_state": "OPEN_HYPOTHESIS_LINK",
+        "criminal_responsibility_transfer": False,
+        "source_batch_id": "PD-SP-AUTH-COMMS-SCAN-20260901",
+        "legacy_evidence_ids": spec.get("legacy_evidence_ids", []),
+    }
+    return _key_event(
+        spec["event_id"],
+        spec["event_date"],
+        record_type,
+        spec["direction"],
+        spec["channel"],
+        spec["office"],
+        spec["official_reference"],
+        spec["summary_en"],
+        spec["source_anchor"],
+        [spec["proves_en"]],
+        [spec["does_not_prove_en"]],
+        matter_references=spec.get("matter_references", [spec["official_reference"]]),
+        evidence_state=deepcopy(RECEIPT_BOUNDARY) if receipt else None,
+        attribution_state="INSTITUTIONAL_NOTICE_NO_PERSONAL_SIGNATORY_ASSERTED",
+        transport_link_state="NO_PUBLIC_TRANSPORT_LINK_ASSERTED",
+        proof_level=spec["proof_level"],
+        institution_id=spec.get("institution_id"),
+        authority_metadata=authority_metadata,
+    )
+
+
+_FUNDS_STAGES = ["AUTH-UCF-009"]
+_FUNDS_TRACKS = ["T13", "T14", "T15", "T17", "T18"]
+_FUNDS_GAPS = ["PD-GAP-UCF-009", "PD-GAP-UCF-012", "PD-GAP-UCF-015", "PD-GAP-UCF-016"]
+_FUNDS_NOT_PROVED_EN = "Registration, notice or routing does not prove downstream receipt, incorporation, examination, adoption, reliance, a qualifying payment, misuse, personal knowledge, intent, causation, criminal organisation, offence or guilt."
+_FUNDS_NOT_PROVED_ES = "El registro, aviso o traslado no prueba recepción posterior, incorporación, examen, adopción, utilización, pago elegible, uso indebido, conocimiento personal, dolo, causalidad, organización criminal, delito ni culpabilidad."
+
+
+AUTHORITY_EVENT_SPECS: list[dict[str, Any]] = [
+    {
+        "event_id": "PD-SP-EVT-0141", "event_date": "2026-03-06", "record_type": "OFFICIAL_ROUTING_ACT",
+        "handling_kind": "ROUTING_NOTICE", "direction": "INBOUND_FROM_INSTITUTION", "channel": "OFFICIAL_RESPONSE",
+        "office": "Intervención General de la Comunidad Autónoma de Canarias", "institution_key": "INTERVENCION_GENERAL_EXACT",
+        "authority_tier_id": "ES_CANARY_AUTONOMOUS", "official_reference": "184368/2026",
+        "summary_en": "The first located response records Commission analysis, anonymised referral to Justice and stated public-grant control competence.",
+        "summary_es": "La primera respuesta localizada consigna análisis de la Comisión, traslado anonimizado a Justicia y competencia declarada de control de subvenciones públicas.",
+        "proves_en": "The official response and its stated Commission-analysis and referral steps are controlled.",
+        "proves_es": "Se controlan la respuesta oficial y los pasos de análisis y traslado que declara.",
+        "does_not_prove_en": _FUNDS_NOT_PROVED_EN, "does_not_prove_es": _FUNDS_NOT_PROVED_ES,
+        "source_anchor": "es/intervencion-general-699645-2026/index.html", "proof_level": "OFFICIAL_RESPONSE_PUBLIC_SAFE_DERIVATIVE_LOCATED",
+        "master_ids": ["X-INT-004"], "authority_stage_ids": ["AUTH-UCF-005", "AUTH-UCF-009", "AUTH-UCF-010"],
+        "track_ids": ["T08", "T14", "T15", "T17", "T18"], "gap_ids": ["PD-GAP-UCF-015", "PD-GAP-UCF-016"],
+        "evidence_classes": ["DOC", "NOTICE", "OPEN"], "legacy_evidence_ids": ["PD-EV-UCF-INT-184368-2026"],
+    },
+    {
+        "event_id": "PD-SP-EVT-0142", "event_date": "2026-06-11", "record_type": "OFFICIAL_ROUTING_ACT",
+        "handling_kind": "ROUTING_NOTICE", "direction": "INBOUND_FROM_INSTITUTION", "channel": "OFFICIAL_RESPONSE",
+        "office": "Intervención General de la Comunidad Autónoma de Canarias", "institution_key": "INTERVENCION_GENERAL_EXACT",
+        "authority_tier_id": "ES_CANARY_AUTONOMOUS", "official_reference": "497011/2026",
+        "summary_en": "The second located response identifies the RIC lane, an AEAT report and a Canary decision, and states a transfer to the competent Finance office.",
+        "summary_es": "La segunda respuesta localizada identifica el carril RIC, un informe AEAT y una decisión canaria, y declara el traslado al órgano competente de Hacienda.",
+        "proves_en": "The response proves only its stated competence analysis and referral.", "proves_es": "La respuesta prueba únicamente el análisis competencial y traslado que declara.",
+        "does_not_prove_en": _FUNDS_NOT_PROVED_EN, "does_not_prove_es": _FUNDS_NOT_PROVED_ES,
+        "source_anchor": "es/intervencion-general-699645-2026/index.html", "proof_level": "OFFICIAL_RESPONSE_PUBLIC_SAFE_DERIVATIVE_LOCATED",
+        "master_ids": ["X-INT-004"], "authority_stage_ids": _FUNDS_STAGES, "track_ids": _FUNDS_TRACKS, "gap_ids": _FUNDS_GAPS,
+        "evidence_classes": ["DOC", "NOTICE", "OPEN"],
+    },
+    {
+        "event_id": "PD-SP-EVT-0143", "event_date": "2026-08-19", "record_type": "OFFICIAL_NOTIFICATION",
+        "direction": "INBOUND_FROM_INSTITUTION", "channel": "OFFICIAL_RESPONSE",
+        "office": "Intervención General de la Comunidad Autónoma de Canarias", "institution_key": "INTERVENCION_GENERAL_EXACT",
+        "authority_tier_id": "ES_CANARY_AUTONOMOUS", "official_reference": "699645/2026",
+        "summary_en": "The third response narrows the Comptroller's remit and prevents treating 497011/2026 as a universal no-funds or no-files certificate.",
+        "summary_es": "La tercera respuesta delimita el ámbito de Intervención e impide tratar 497011/2026 como certificado universal de inexistencia de fondos o expedientes.",
+        "proves_en": "The located derivative controls the stated clarification and competence boundary.", "proves_es": "El derivado localizado controla la aclaración y el límite competencial declarados.",
+        "does_not_prove_en": _FUNDS_NOT_PROVED_EN, "does_not_prove_es": _FUNDS_NOT_PROVED_ES,
+        "source_anchor": "es/intervencion-general-699645-2026/index.html", "proof_level": "OFFICIAL_RESPONSE_PUBLIC_SAFE_DERIVATIVE_LOCATED_NATIVE_SIGNED_BINARY_OPEN",
+        "master_ids": ["X-INT-004"], "authority_stage_ids": _FUNDS_STAGES, "track_ids": _FUNDS_TRACKS, "gap_ids": _FUNDS_GAPS,
+        "evidence_classes": ["DOC", "NOTICE", "OPEN"],
+    },
+    {
+        "event_id": "PD-SP-EVT-0144", "event_date": "2026-08-26", "record_type": "OFFICIAL_ROUTING_ACT",
+        "handling_kind": "ROUTING_NOTICE", "direction": "INBOUND_FROM_INSTITUTION", "channel": "OFFICIAL_TRANSPARENCY_NOTICE",
+        "office": "Canary Finance and EU Relations public-information unit", "institution_key": "CANARY_FEDER_TRANSPARENCY_ORGAN",
+        "authority_tier_id": "ES_CANARY_AUTONOMOUS", "official_reference": "16/2026-0825121919",
+        "summary_en": "The notice states that the request entered the Canary Finance public-information unit and was referred to the regional economic-promotion directorate.",
+        "summary_es": "La notificación declara que la solicitud entró en la unidad de información pública de Hacienda y fue remitida a la dirección general regional de promoción económica.",
+        "proves_en": "The notice proves the administrative description and referral stated in the notice.", "proves_es": "La notificación prueba la descripción administrativa y la remisión que en ella se declaran.",
+        "does_not_prove_en": _FUNDS_NOT_PROVED_EN, "does_not_prove_es": _FUNDS_NOT_PROVED_ES,
+        "source_anchor": "es/gobierno-canarias-transparencia-feder-remision-16-2026-0825121919/index.html", "proof_level": "OFFICIAL_NOTICE_REDACTED_DERIVATIVE_LOCATED",
+        "master_ids": ["NAT-AID-001"], "authority_stage_ids": _FUNDS_STAGES, "track_ids": _FUNDS_TRACKS, "gap_ids": _FUNDS_GAPS,
+        "evidence_classes": ["DOC", "NOTICE", "OPEN"],
+    },
+]
+
+
+for number, reference, office, institution_key, institution_id, tier, master_ids, context_master_ids in (
+    (145, "REGAGE26e00075132698", "Comisionado de Transparencia y Acceso a la Información Pública", "CANARY_TRANSPARENCY_COMMISSIONER", None, "ES_CANARY_AUTONOMOUS", ["LZ-TRA-028"], []),
+    (146, "REGAGE26e00075135054", "Canary Presidency, Public Administrations, Justice and Security", "CANARY_PRESIDENCY_JUSTICE_RECIPIENT", None, "ES_CANARY_AUTONOMOUS", [], []),
+    (147, "REGAGE26e00075135386", "Agencia Estatal de Administración Tributaria", "AEAT", "PD-SP-I-0006", "ES_STATE", [], []),
+    (148, "REGAGE26e00075135813", "Canary regional-incentives registry destination", "CANARY_REGIONAL_INCENTIVES_RECIPIENT", None, "ES_CANARY_AUTONOMOUS", ["NAT-AID-001"], []),
+    (149, "REGAGE26e00075136198", "Spanish State regional-incentives directorate", "STATE_REGIONAL_INCENTIVES_RECIPIENT", None, "ES_STATE", ["NAT-AID-001"], []),
+    (150, "REGAGE26e00075136446", "Canary Finance and EU Relations registry destination", "CANARY_FEDER_RECIPIENT", None, "ES_CANARY_AUTONOMOUS", [], ["NAT-AID-001"]),
+    (151, "REGAGE26e00075136691", "Spanish Directorate-General for European Funds", "STATE_EUROPEAN_FUNDS_DIRECTORATE", None, "ES_STATE", [], ["NAT-AID-001"]),
+    (152, "REGAGE26e00075136953", "Comisión Nacional del Mercado de Valores", "CNMV", None, "ES_STATE", [], ["X-REG-001", "NAT-CNMV-001", "NAT-CNMV-002"]),
+):
+    AUTHORITY_EVENT_SPECS.append({
+        "event_id": f"PD-SP-EVT-{number:04d}", "event_date": "2026-08-24", "record_type": "REGISTRATION_RECEIPT",
+        "direction": "OUTBOUND_TO_INSTITUTION", "channel": "REGAGE", "office": office, "institution_key": institution_key,
+        "institution_id": institution_id, "authority_tier_id": tier, "official_reference": reference,
+        "summary_en": "One of eight separately registered RICPE, regional-incentives and European-funds access routes; the receipt is controlled at registration level.",
+        "summary_es": "Una de ocho rutas de acceso RICPE, incentivos regionales y fondos europeos registradas por separado; el acuse se controla al nivel de registro.",
+        "proves_en": "The receipt proves formal presentation to the registry destination and time stated on the receipt.",
+        "proves_es": "El acuse prueba la presentación formal al destino registral y en el momento que declara.",
+        "does_not_prove_en": _FUNDS_NOT_PROVED_EN, "does_not_prove_es": _FUNDS_NOT_PROVED_ES,
+        "source_anchor": "es/ricpe-acciones-pendientes-ahora/index.html", "proof_level": "PRIMARY_REGISTRATION_RECEIPT_LOCATED_PUBLIC_SAFE_SUMMARY",
+        "master_ids": master_ids, "context_master_ids": context_master_ids, "authority_stage_ids": _FUNDS_STAGES,
+        "track_ids": _FUNDS_TRACKS, "gap_ids": _FUNDS_GAPS, "evidence_classes": ["NOTICE", "OPEN"],
+    })
+
+
+AUTHORITY_EVENT_SPECS.extend([
+    {
+        "event_id": "PD-SP-EVT-0153", "event_date": "2026-08-05", "record_type": "OFFICIAL_NOTIFICATION",
+        "direction": "INBOUND_FROM_INSTITUTION", "channel": "OFFICIAL_MUNICIPAL_NOTICE", "office": "Ayuntamiento de Yaiza",
+        "institution_key": "AYUNTAMIENTO_DE_YAIZA", "institution_id": "PD-SP-I-0009", "authority_tier_id": "ES_LOCAL_MUNICIPAL",
+        "official_reference": "7066/2026", "summary_en": "A source-controlled municipal notification identifies archive-funds consultation file 7066/2026.",
+        "summary_es": "Una notificación municipal controlada identifica el expediente 7066/2026 de consulta de fondos del archivo.",
+        "proves_en": "The official notification, date and municipal file reference are controlled.", "proves_es": "Se controlan la notificación oficial, la fecha y la referencia del expediente municipal.",
+        "does_not_prove_en": "The notice does not prove a complete file, title, authority, valid licence, reliance on an ACTA, intent, offence or guilt.",
+        "does_not_prove_es": "La notificación no prueba expediente completo, título, autoridad, licencia válida, utilización de un ACTA, dolo, delito ni culpabilidad.",
+        "source_anchor": "assets/data/proceedings-master-public-v1.json", "proof_level": "OFFICIAL_NOTIFICATION_MASTER_RECONCILED",
+        "master_ids": ["LZ-YAI-031"], "authority_stage_ids": ["AUTH-UCF-010"], "track_ids": ["T16", "T17", "T18"],
+        "gap_ids": ["PD-GAP-UCF-010", "PD-GAP-UCF-015"], "evidence_classes": ["DOC", "NOTICE", "OPEN"],
+    },
+    {
+        "event_id": "PD-SP-EVT-0154", "event_date": "2026-08-13", "record_type": "REGISTRATION_RECEIPT",
+        "direction": "OUTBOUND_TO_INSTITUTION", "channel": "REGAGE", "office": "Cabildo de Lanzarote",
+        "institution_key": "CABILDO_DE_LANZAROTE", "institution_id": "PD-SP-I-0010", "authority_tier_id": "ES_ISLAND_CABILDO",
+        "official_reference": "REGAGE26e00072883405", "summary_en": "The receipt records a request to implement access in file 614/2026 and obtain four identified tourism files.",
+        "summary_es": "El acuse consigna una solicitud de ejecución del acceso en el expediente 614/2026 y de obtención de cuatro expedientes turísticos identificados.",
+        "proves_en": "The receipt proves formal presentation of the stated access request to the Cabildo registry.",
+        "proves_es": "El acuse prueba la presentación formal de la solicitud de acceso indicada al registro del Cabildo.",
+        "does_not_prove_en": "It does not prove internal assignment, delivery of the files, ACTA reliance, valid title or authority, intent, offence or guilt.",
+        "does_not_prove_es": "No prueba asignación interna, entrega de expedientes, utilización de ACTAS, título o autoridad válidos, dolo, delito ni culpabilidad.",
+        "source_anchor": "es/cabildo-lanzarote-turismo-trazabilidad/index.html", "proof_level": "PRIMARY_REGISTRATION_RECEIPT_PUBLIC_SUMMARY_LOCATED",
+        "master_ids": ["LZ-CAB-025"], "authority_stage_ids": ["AUTH-UCF-010"], "track_ids": ["T16", "T17", "T18"],
+        "gap_ids": ["PD-GAP-UCF-010", "PD-GAP-UCF-015"], "evidence_classes": ["NOTICE", "OPEN"],
+    },
+    {
+        "event_id": "PD-SP-EVT-0155", "event_date": "2026-08-28", "record_type": "OFFICIAL_NOTIFICATION",
+        "direction": "INBOUND_FROM_INSTITUTION", "channel": "OFFICIAL_TREASURY_DELIVERY", "office": "Canary Directorate-General for the Treasury and Financial Policy",
+        "institution_key": "CANARY_TREASURY_DG", "authority_tier_id": "ES_CANARY_AUTONOMOUS", "official_reference": "Colabora 7-2026-0316134247",
+        "summary_en": "The signed implementation notice records partial access moving into staged delivery, including the first controlled tranche.",
+        "summary_es": "La notificación firmada de ejecución consigna el paso del acceso parcial a entrega escalonada, incluida la primera tanda controlada.",
+        "proves_en": "The notice proves the stated implementation act and first staged production state.", "proves_es": "La notificación prueba el acto de ejecución y el estado de primera producción escalonada que declara.",
+        "does_not_prove_en": _FUNDS_NOT_PROVED_EN, "does_not_prove_es": _FUNDS_NOT_PROVED_ES,
+        "source_anchor": "es/tesoro-transparencia-7-2026-28agosto/index.html", "proof_level": "SIGNED_IMPLEMENTATION_ACT_AND_PUBLIC_SAFE_PRODUCTION_CONTROL_LOCATED",
+        "master_ids": ["NAT-TES-001"], "authority_stage_ids": _FUNDS_STAGES, "track_ids": ["T13", "T14", "T17", "T18"],
+        "gap_ids": ["PD-GAP-UCF-009", "PD-GAP-UCF-012", "PD-GAP-UCF-015"], "evidence_classes": ["DOC", "NOTICE", "OPEN"],
+    },
+    {
+        "event_id": "PD-SP-EVT-0156", "event_date": "2026-07-30", "record_type": "REGISTRATION_RECEIPT",
+        "direction": "OUTBOUND_TO_INSTITUTION", "channel": "REGAGE", "office": "SNCA / AFCOS registry route",
+        "institution_key": "SNCA", "authority_tier_id": "ES_STATE", "official_reference": "REGAGE26e00069678966",
+        "summary_en": "A controlled registration receipt is linked to the Spanish national antifraud-coordination file 141-2026-IRR02.",
+        "summary_es": "Un acuse de registro controlado se vincula al expediente español de coordinación antifraude 141-2026-IRR02.",
+        "proves_en": "The receipt proves formal presentation to the stated Spanish registry route.", "proves_es": "El acuse prueba la presentación formal a la ruta registral española indicada.",
+        "does_not_prove_en": _FUNDS_NOT_PROVED_EN, "does_not_prove_es": _FUNDS_NOT_PROVED_ES,
+        "source_anchor": "es/snca-fondos-europeos-trazabilidad/index.html", "proof_level": "PRIMARY_REGISTRATION_RECEIPT_REFERENCE_CONTROLLED",
+        "master_ids": ["X-EU-003"], "authority_stage_ids": _FUNDS_STAGES, "track_ids": _FUNDS_TRACKS, "gap_ids": _FUNDS_GAPS,
+        "evidence_classes": ["NOTICE", "OPEN"],
+    },
+    {
+        "event_id": "PD-SP-EVT-0157", "event_date": "2026-07-30", "record_type": "INSTITUTIONAL_ACKNOWLEDGEMENT",
+        "direction": "INBOUND_FROM_INSTITUTION", "channel": "OFFICIAL_RESPONSE", "office": "SNCA / AFCOS",
+        "institution_key": "SNCA", "authority_tier_id": "ES_STATE", "official_reference": "141-2026-IRR02",
+        "summary_en": "The located response identifies the file and supplies general channel and competence material; the concrete EU-funds nexus and treatment remain open.",
+        "summary_es": "La respuesta localizada identifica el expediente y aporta material general sobre canal y competencia; el nexo concreto con fondos UE y su tratamiento siguen abiertos.",
+        "proves_en": "The identifiable file and the response's stated channel and scope are controlled.", "proves_es": "Se controlan el expediente identificable y el canal y alcance declarados por la respuesta.",
+        "does_not_prove_en": _FUNDS_NOT_PROVED_EN, "does_not_prove_es": _FUNDS_NOT_PROVED_ES,
+        "source_anchor": "es/snca-fondos-europeos-trazabilidad/index.html", "proof_level": "OFFICIAL_RESPONSE_PUBLIC_SUMMARY_LOCATED",
+        "master_ids": ["X-EU-003"], "authority_stage_ids": _FUNDS_STAGES, "track_ids": _FUNDS_TRACKS, "gap_ids": _FUNDS_GAPS,
+        "evidence_classes": ["DOC", "NOTICE", "OPEN"],
+    },
+])
+
+
+KEY_EVENTS.extend(_authority_event(spec) for spec in AUTHORITY_EVENT_SPECS)
+
+
+EU_BASELINE_AUTHORITY_ENRICHMENTS: dict[str, dict[str, Any]] = {
+    event_id: {
+        "institution_key": "EUROPEAN_PUBLIC_PROSECUTOR_OFFICE_EXACT",
+        "institution_caret_state": "CARET_PENDING",
+        "authority_tier_id": "EU_SUPRANATIONAL",
+        "tier_resolution_state": "CONFIRMED",
+        "master_ids": [],
+        "context_master_ids": [],
+        "master_link_state": "OPEN",
+        "authority_stage_ids": ["AUTH-UCF-009"],
+        "track_ids": ["T15", "T17", "T18"],
+        "gap_ids": ["PD-GAP-UCF-009", "PD-GAP-UCF-012", "PD-GAP-UCF-015", "PD-GAP-UCF-016"],
+        "evidence_classes": ["NOTICE", "OPEN"],
+        "handling_state": _authority_handling_state("REGISTRATION_RECEIPT"),
+        "public_summary_es": "Acuse REGAGE dirigido a la Fiscalía Europea; prueba presentación registral, no entrega interna ni examen de fondo.",
+        "proves_es": "Prueba la presentación formal al destino registral indicado en el acuse.",
+        "does_not_prove_es": "No prueba reparto, incorporación, examen, investigación, adopción, nexo con fondos UE, delito ni culpabilidad.",
+        "canonical_anchor_es": f"es/ingenieria-inversa-criminal-unitaria/#communication-{event_id}",
+        "canonical_anchor_en": f"en/unitary-criminal-reverse-engineering/#communication-{event_id}",
+        "public_derivative_state": "PUBLIC_SAFE_MINIMISED_DERIVATIVE",
+        "command_caret_audit": "EVENT_REGISTERED_IDENTITY_CARET_SEPARATELY_CONTROLLED",
+        "criminal_relevance_state": "OPEN_HYPOTHESIS_LINK",
+        "criminal_responsibility_transfer": False,
+        "source_batch_id": "PD-SP-AUTH-COMMS-SCAN-20260901",
+        "legacy_evidence_ids": [],
+    }
+    for event_id in ("PD-SP-EVT-0004", "PD-SP-EVT-0014")
+}
+
+
 def sha256_file(path: Path) -> str:
     digest = hashlib.sha256()
     with path.open("rb") as handle:
@@ -1203,8 +1498,7 @@ def build_receipt_events(rows: list[dict[str, Any]], existing: dict[str, Any] | 
     for row in rows:
         event_id = id_by_reference.get(row["official_reference"]) or allocate()
         dir3, institution_id = RECIPIENTS[row["office"]]
-        events.append(
-            {
+        event = {
                 "event_id": event_id,
                 "cohort": BASELINE_COHORT,
                 "layer": "FORMAL_REGISTRATION",
@@ -1239,7 +1533,9 @@ def build_receipt_events(rows: list[dict[str, Any]], existing: dict[str, Any] | 
                     "Delivery beyond the registry state shown, internal assignment, joinder, examination, admission, investigation, merits acceptance or requested relief.",
                 ],
             }
-        )
+        if event_id in EU_BASELINE_AUTHORITY_ENRICHMENTS:
+            event.update(deepcopy(EU_BASELINE_AUTHORITY_ENRICHMENTS[event_id]))
+        events.append(event)
     return events
 
 
@@ -1247,12 +1543,12 @@ def base_register() -> dict[str, Any]:
     return {
         "schema": "por-derecho.institutional-communications-register.v1",
         "register_id": "PD-SP-INSTITUTIONAL-COMMUNICATIONS-001",
-        "control_date": "2026-08-31",
+        "control_date": "2026-09-01",
         "scope": {
-            "institution": "Ministerio Fiscal / Fiscalía",
-            "focus_case": "E.G. 745/2026",
-            "purpose": "Canonical public-safe continuity register for source-proved communications, receipts, decisions, notices and routing acts.",
-            "interpretive_boundary": "Adverse outcomes, silence, routing gaps and repeated institutional contact do not prove coordination, obstruction, prevarication or criminality without additional evidence.",
+            "institution": "Multi-authority register; Fiscalía baseline retained as one controlled cohort",
+            "focus_case": "Unitary Sun Park / LPB / RICPE authority, public-funds and ACTA continuity",
+            "purpose": "Canonical public-safe continuity register for source-proved transport, registration, decision, notice, routing and production events across local, island, autonomous, State and EU tiers.",
+            "interpretive_boundary": "Adverse outcomes, silence, routing gaps, repeated institutional contact and cross-tier communication do not prove coordination, obstruction, prevarication, criminal organisation, offence or guilt without actor-specific evidence.",
         },
         "denominator_control": {
             "wider_regage_records_reported": 97,
@@ -1271,6 +1567,19 @@ def base_register() -> dict[str, Any]:
             "mailbox_self_archive_rows": 10,
             "mailbox_draft_rows": 3,
             "mailbox_route_not_publicly_attested_rows": 81,
+            "public_authority_communication_events": 19,
+            "new_public_authority_communication_events": 17,
+        },
+        "authority_scan_control": {
+            "checkpoint_path": "ops/PUBLIC_AUTHORITY_COMMUNICATIONS_SCAN_CHECKPOINT_20260901.json",
+            "checkpoint_sha256": sha256_file(AUTHORITY_SCAN_CHECKPOINT),
+            "scope_status": "BOUNDED_METADATA_CENSUS_COMPLETE_ITEM_LEVEL_MERITS_REVIEW_OPEN",
+            "gmail_unique_messages_across_lanes": 5514,
+            "drive_unique_documents_across_lanes": 326,
+            "canonical_authority_events": 19,
+            "new_event_ids": [f"PD-SP-EVT-{number:04d}" for number in range(141, 158)],
+            "existing_reused_event_ids": ["PD-SP-EVT-0004", "PD-SP-EVT-0014"],
+            "universal_completeness_claim": False,
         },
         "source_controls": {
             "detailed_index": "archive/evidence/mf-redsara-anexo4/MF_REDSARA_REGISTRATION_INDEX_SHORT.csv",
@@ -1340,6 +1649,10 @@ def base_register() -> dict[str, Any]:
             "Never create one event per aggregate-only record without individual source proof.",
             "Never publish provider identifiers or private custody locators.",
             "Transport, formal registration and official-act layers remain distinct and are linked rather than collapsed.",
+            "Each authority event must preserve jurisdictional tier separately from funding subject; Spanish SNCA and the Spanish Directorate-General for European Funds are State-tier, not EU institutions.",
+            "Every receipt-to-decision step requires its own source: transmission, registration, delivery, routing, incorporation, examination, verification or rejection, adoption, decision, effect, causation and benefit remain separate.",
+            "The caret marker remains identity-only; communication events receive stable IDs and bilingual anchors, never presentation carets.",
+            "Criminal relevance may be linked as an open hypothesis, but criminal responsibility never transfers through an ACTA, communication, referral, office or institutional tier.",
         ],
     }
 
@@ -1374,7 +1687,7 @@ def build_checkpoint(register_sha256: str, source_sha256: str, mailbox_index_sha
     return {
         "schema": "por-derecho.institutional-communications-scan-checkpoint.v1",
         "checkpoint_id": "PD-SP-MF-SCAN-CHECKPOINT-001",
-        "control_date": "2026-08-31",
+        "control_date": "2026-09-01",
         "register_path": "assets/data/institutional-communications-register-v1.json",
         "register_sha256": register_sha256,
         "private_custody": {
@@ -1410,6 +1723,18 @@ def build_checkpoint(register_sha256: str, source_sha256: str, mailbox_index_sha
             "reported_rows": 22,
             "representation": "MF-UNRESOLVED-BATCH-001",
             "synthetic_event_rows": 0,
+        },
+        "public_authority_scan": {
+            "checkpoint_path": "ops/PUBLIC_AUTHORITY_COMMUNICATIONS_SCAN_CHECKPOINT_20260901.json",
+            "checkpoint_sha256": sha256_file(AUTHORITY_SCAN_CHECKPOINT),
+            "scope_status": "BOUNDED_METADATA_CENSUS_COMPLETE_ITEM_LEVEL_MERITS_REVIEW_OPEN",
+            "gmail_unique_messages_across_lanes": 5514,
+            "drive_unique_documents_across_lanes": 326,
+            "existing_event_ids_reused": ["PD-SP-EVT-0004", "PD-SP-EVT-0014"],
+            "new_event_ids": [f"PD-SP-EVT-{number:04d}" for number in range(141, 158)],
+            "canonical_authority_event_count": 19,
+            "provider_locators_or_exact_subjects_published": False,
+            "universal_completeness_claim": False,
         },
         "source_required_and_normalisation_gates": [
             "22 later RedSARA/AGE records remain aggregate-only; no synthetic individual rows were created.",

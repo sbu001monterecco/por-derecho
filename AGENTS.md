@@ -449,3 +449,99 @@ For every Sun Park Owners' Community meeting/ACTA task, read and apply
   state downstream reliance on an ACTA without the document-specific
   transmission, citation, authority schedule, verification or adoption record.
   `D-MIXED`/`D-OPEN` is an evidential status, never a criminal actor perimeter.
+
+## 11. Unitary multi-track criminal-first prosecutorial continuity
+
+Read and apply
+`.github/governance/UNITARY_MULTI_TRACK_CRIMINAL_FIRST_PROSECUTORIAL_FORENSIC_PROTOCOL_01SEP2026.md`
+(`PD-UCF-20260901-01`) whenever a Sun Park task connects Community authority,
+ACTAS, debt/vote, access/security, insolvency, credit, valuation, adjudication,
+title, works/operation, RIC/RICPE, regional incentives, FEDER/ERDF,
+Yaiza/Cabildo, SAIP, benefit, harm or recovery.
+
+- Maintain one fact-and-evidence graph with distinct legal outputs. Present the
+  criminal/prosecutorial analysis first, followed by civil/LPH, insolvency,
+  administrative, regulatory/public-funds, professional and recovery outputs.
+- Preserve without dilution Gil Marer/Aweswell's direct attributed position
+  that dealings through the Sun Park Community organ formed an organised,
+  coordinated and continuous criminal mechanism spanning assumed/manufactured
+  authority and apparent legitimacy, ACTAS, debt/voting/certificates,
+  procedures inside and outside Concurso 36/2012, alleged procedural fraud and
+  possible insolvency criminality, and de facto/shadow control of LPB assets
+  formally subject to insolvency-administration and judicial-supervision
+  safeguards whose practical effectiveness is disputed, followed by title,
+  RIC/RICPE, refurbishment, regional incentives and FEDER/ERDF. Do not recast
+  it as merely civil/LPH. This is a direct, falsifiable
+  party allegation, not an adjudicated finding of crime, organisation or guilt.
+- Classify every connector in writing as `DOC`, `HIP`, `OPEN`, `NOTICE`,
+  `CONTRARY`, `ADVERSE` or `GAP`. Colour is never sufficient by itself.
+- A criminal link must identify actor, historical capacity, date, source,
+  act/omission, alleged issue, knowledge, intent, use, recipient, effect,
+  causation, beneficiary, pattern, contrary/lawful alternative, open proof and
+  potential legal relevance. Sequence, association and benefit do not transfer
+  criminal responsibility.
+- Use `AUTH-UCF-001`–`010` for the authority/apparent-legitimacy propagation
+  chain. Apparent legitimacy may travel as a received or adopted documentary
+  input; criminal responsibility never travels with it. Close every stage with
+  the document/hash, author/capacity, transmitter, recipient, contrary notice,
+  verification/adoption, decision, effect, causal nexus, benefit, knowledge,
+  intent and lawful alternative under `PD-GAP-UCF-015`.
+- `C1` and `C2` are attributed documentary phases, not collective actors.
+  `D-MIXED`/`D-OPEN` is an evidence status, never a criminal perimeter.
+- Do not state ACTA reliance by RIC/RICPE, an incentive, FEDER/ERDF, a work,
+  Yaiza, Cabildo, tourism or SAIP track without the exact transmitted document,
+  sender/capacity, recipient, date, incorporation, verification/adoption,
+  decision/use, effect, causation and beneficiary.
+- Use `assets/data/unitary-multitrack-criminal-first-gap-closure-v1.json` as the
+  single finite gap register. Every material production obligation has one
+  `PD-GAP-UCF-*` ID, custodian universe, status and closure test; do not create a
+  competing unnumbered list.
+- Use `assets/data/institutional-communications-register-v1.json` as the one
+  canonical communications register. The bounded 1-Sep-2026 authority scan
+  controls 19 public-safe events: reused `PD-SP-EVT-0004` and `PD-SP-EVT-0014`
+  plus `PD-SP-EVT-0141`–`0157`. Its five fully paginated Gmail keyword lanes
+  returned 5,514 unique messages and the five Drive lanes returned 326 unique
+  documents. Those are discovery denominators, not universal completeness or
+  item-level merits review.
+- Keep municipal/local, Cabildo/insular, Canary-autonomous, Spanish-State and
+  EU/supranational tiers distinct. EU-funds subject matter does not make a
+  Spanish organ an EU institution; SNCA/IGAE and the Spanish Directorate-General
+  for European Funds remain State-tier unless a primary source identifies an
+  exact EU recipient.
+- Treat the three located Intervención General outputs as one `X-INT-004`
+  sequence: `PD-SP-EVT-0141` / 184368/2026, `PD-SP-EVT-0142` / 497011/2026 and
+  `PD-SP-EVT-0143` / 699645/2026. Preserve
+  `PD-EV-UCF-INT-184368-2026` only as a legacy alias to `PD-SP-EVT-0141`. The
+  first response proves Commission analysis on 24-Feb-2026, the agreed
+  anonymised Justice referral and the Intervención's stated subsidy-control
+  remit; none of the sequence proves merits, unlawful disposal, funding misuse,
+  knowledge, intent, causation or guilt. Preserve `PD-GAP-UCF-016` for the
+  complete Intervención → Commission → Justice and programme-file chain.
+- For authority acquisitions, use independent read-only mail, file,
+  local/insular, Canary-autonomous, State/EU and identity/QA lanes. Workers
+  return sanitised candidates; one integrator allocates IDs and edits canonical
+  files. Deduplicate by official reference/organ/act/date, then native hash,
+  private Message-ID tuple, REGAGE receipt and private normalised fingerprint.
+  Different hashes under one reference are variants/conflicts, not duplicates.
+- Track `transmitted → registered → delivered → routed → incorporated →
+  examined → verified/rejected → adopted → decision/use → effect → causation →
+  benefit/loss` as separate sourced states. Never promote a lower state into a
+  higher one. A receipt is `NOTICE`, not proof of examination, adoption,
+  reliance, knowledge, causation or guilt.
+- Keep provider IDs, exact private subjects/bodies, addresses, private URLs,
+  native filenames, credentials/codes, tax-reserved content and privilege
+  material out of public Git. Preserve native sources and sensitive locators in
+  private custody; record unresolved review or privacy debt as an open control.
+- The caret marker `^` remains identity-only under CAEPR. ACTAS, communications,
+  evidence objects, propositions and gaps use stable evidence IDs and bilingual
+  anchors, not carets.
+- For legacy alias `PD-EV-UCF-INT-184368-2026` → `PD-SP-EVT-0141`, the
+  user-command `^` audit is
+  `REPAIRED / PARTIALLY VERIFIED`; the communication is
+  `CARET_NOT_APPLICABLE` and the issuing institution remains `CARET_PENDING`
+  until the DIR3/official-organigram identity threshold is closed.
+- Preserve the strongest contrary/exculpatory record and adverse outcome beside
+  every hypothesis. An open gap prevents a claim of proof; it does not require
+  deleting a properly attributed falsifiable allegation.
+- `scripts/validate_unitary_multitrack_gap_closure.py` and its workflow remain
+  advisory/shadow until expressly promoted under the enforcement-change rules.

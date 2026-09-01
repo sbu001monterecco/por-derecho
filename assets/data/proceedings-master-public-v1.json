@@ -3,7 +3,7 @@
   "dataset": "por-derecho.public-proceedings-projection",
   "canonical_source_id": "PROCEEDINGS_MASTER_REGISTER",
   "derivation": "DETERMINISTIC_ALLOWLIST",
-  "canonical_source_sha256": "8caa65a0aaefa2b568be263869d7749b79fd8e7eb3b00ab568c7cabdc29bb801",
+  "canonical_source_sha256": "03cae1ab3e846b52136e2cb583d79f67d223a0a07546930a2adf81f4947165a5",
   "publication_policy": {
     "eligibility_field": "Public_Treatment",
     "public_treatment_allowlist": [
@@ -1717,19 +1717,19 @@
       "Geography": "Canary Islands",
       "Origin_Organ": "Intervención General de Canarias",
       "Current_Custodian": "Intervención General de Canarias",
-      "Reference": "184368/2026; 497011/2026",
+      "Reference": "184368/2026; 497011/2026; 699645/2026",
       "Secondary_Reference": "",
       "NIG": "",
       "Date_or_Period": "2026",
       "Connection": "Regional internal control/routing",
-      "Object_or_Purpose": "Output/routing references; not established as separate merits proceedings",
-      "Status": "Examination/routing within stated competence documented",
+      "Object_or_Purpose": "Three output/routing references; not established as separate merits proceedings",
+      "Status": "Examination/routing within stated competence documented; 699645/2026 narrows the earlier no-funds/no-files reading",
       "Latest_Known_Event": "",
       "Appeal_or_Review": "",
       "Parent_Master_ID": "",
       "Linked_Proceedings": "",
       "Source_Status": "VERIFIED_PRIMARY",
-      "Open_Reference_Gap": "Underlying file/custody if distinct from output references"
+      "Open_Reference_Gap": "Underlying file/custody if distinct from output references and native signed 699645/2026 source"
     },
     {
       "Master_ID": "X-WB-005",

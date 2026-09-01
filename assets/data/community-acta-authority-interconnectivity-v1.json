@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "generated": "2026-08-31",
+  "generated": "2026-09-01",
   "status": "PUBLIC_SAFE_DERIVED_INTERCONNECTIVITY_PROJECTION",
   "title_en": "Community ACTAs, the 2022 parallel track and public-authority files",
   "title_es": "ACTAs comunitarias, vía paralela de 2022 y expedientes de autoridades públicas",
@@ -15,7 +15,7 @@
     },
     {
       "path": "assets/data/proceedings-master-public-v1.json",
-      "sha256": "17aa8f8c3d59a833df95092019877d301b8b7cdd7878a1fa7b3aa978c7666fe9"
+      "sha256": "840799af2a833058ee0ace184966c01ad862016c98a5d344c4e446b2276b0325"
     },
     {
       "path": "assets/data/proceedings-case-prism-v1.json",
@@ -32,6 +32,22 @@
     {
       "path": "assets/data/community-acta-authority-link-assertions-v1.json",
       "sha256": "46013ac60a19ee892c2ee1964603d6823ead7f70420277d60b8660458acc8cc6"
+    },
+    {
+      "path": "assets/data/institutional-communications-register-v1.json",
+      "sha256": "04eda9a473d07419c1d1d0941b9123d1497f7329366998a9f4cf76221910bbed"
+    },
+    {
+      "path": "ops/PUBLIC_AUTHORITY_COMMUNICATIONS_SCAN_CHECKPOINT_20260901.json",
+      "sha256": "cead64dfc04f5a32cb39cc28b292b61e93e261a36aa8d2753f4ecc4e7cc60352"
+    },
+    {
+      "path": "assets/data/unitary-multitrack-criminal-first-gap-closure-v1.json",
+      "sha256": "0176883e51cbb760169838e0b1b2149a1df65c5cbafe13ad19cb4434f73f1f50"
+    },
+    {
+      "path": "assets/data/matter-identity-registry-v1.institutions.json",
+      "sha256": "2ba7b9b3484f6f02087bfd82cd4b647215087b2eebfc547782732bde4e31053e"
     }
   ],
   "coverage": {
@@ -43,7 +59,11 @@
     "adjudication_and_deed_milestones": 6,
     "verified_primary_authority_files": 33,
     "verified_procedural_authority_files": 8,
-    "open_or_primary_pending_authority_files": 8
+    "open_or_primary_pending_authority_files": 8,
+    "public_authority_communication_events": 19,
+    "authority_tiers_represented": 5,
+    "confirmed_identity_communication_events": 3,
+    "pending_identity_communication_events": 16
   },
   "actas": [
     {
@@ -547,6 +567,1759 @@
       ]
     }
   ],
+  "authority_tiers": [
+    {
+      "id": "ES_LOCAL_MUNICIPAL",
+      "label_en": "Local / municipal",
+      "label_es": "Local / municipal",
+      "boundary_en": "A municipal receipt or act proves only the municipal event and source-bounded handling stated; it does not decide private title, criminal liability or another tier's treatment.",
+      "boundary_es": "Un acuse o acto municipal prueba solo el evento municipal y el tratamiento delimitado por la fuente; no decide título privado, responsabilidad penal ni el tratamiento de otro nivel.",
+      "event_count": 1
+    },
+    {
+      "id": "ES_ISLAND_CABILDO",
+      "label_en": "Island / Cabildo",
+      "label_es": "Insular / Cabildo",
+      "boundary_en": "Tourism administration and private property are distinct; registry presentation does not prove file delivery, title, authority or reliance.",
+      "boundary_es": "La administración turística y la propiedad privada son distintas; la presentación registral no prueba entrega, título, autoridad ni utilización.",
+      "event_count": 1
+    },
+    {
+      "id": "ES_CANARY_AUTONOMOUS",
+      "label_en": "Canary autonomous administration",
+      "label_es": "Administración autonómica canaria",
+      "boundary_en": "Separate Canary departments retain separate competence, files and proof chains; one referral is not whole-government knowledge or adoption.",
+      "boundary_es": "Los departamentos canarios conservan competencias, expedientes y cadenas probatorias separadas; un traslado no es conocimiento ni adopción de todo el Gobierno.",
+      "event_count": 9
+    },
+    {
+      "id": "ES_STATE",
+      "label_en": "Spanish State administration",
+      "label_es": "Administración estatal española",
+      "boundary_en": "A European-funds subject does not turn a Spanish State body into an EU institution; receipt and competence remain organ-specific.",
+      "boundary_es": "La materia de fondos europeos no convierte a un órgano estatal español en institución UE; recepción y competencia siguen siendo específicas de cada órgano.",
+      "event_count": 6
+    },
+    {
+      "id": "EU_SUPRANATIONAL",
+      "label_en": "European Union institution",
+      "label_es": "Institución de la Unión Europea",
+      "boundary_en": "A REGAGE destination receipt does not establish internal EU delivery, EPPO or OLAF competence, investigation, merits review or liability.",
+      "boundary_es": "Un acuse dirigido por REGAGE no acredita entrega interna UE, competencia de Fiscalía Europea u OLAF, investigación, examen de fondo ni responsabilidad.",
+      "event_count": 2
+    }
+  ],
+  "public_communications": [
+    {
+      "event_id": "PD-SP-EVT-0004",
+      "legacy_evidence_ids": [],
+      "date": "2025-12-15",
+      "direction": "OUTBOUND_TO_INSTITUTION",
+      "channel": "REGAGE",
+      "record_type": "REGISTRATION_RECEIPT",
+      "official_reference": "REGAGE25e00109047819",
+      "primary_authority_tier_id": "EU_SUPRANATIONAL",
+      "tier_resolution_state": "CONFIRMED",
+      "institution_label": "Fiscalía Europea",
+      "institution_id": null,
+      "institution_identity_state": "CARET_PENDING",
+      "master_ids": [],
+      "context_master_ids": [],
+      "master_link_state": "OPEN",
+      "authority_stage_ids": [
+        "AUTH-UCF-009"
+      ],
+      "track_ids": [
+        "T15",
+        "T17",
+        "T18"
+      ],
+      "gap_ids": [
+        "PD-GAP-UCF-009",
+        "PD-GAP-UCF-012",
+        "PD-GAP-UCF-015",
+        "PD-GAP-UCF-016"
+      ],
+      "evidence_classes": [
+        "NOTICE",
+        "OPEN"
+      ],
+      "handling_state": {
+        "adoption": "NOT_PROVEN",
+        "benefit_or_loss": "NOT_PROVEN",
+        "causation": "NOT_PROVEN",
+        "decision_or_use": "NOT_PROVEN",
+        "delivery": "OPEN",
+        "effect": "NOT_PROVEN",
+        "examination": "OPEN",
+        "incorporation": "OPEN",
+        "registration": "PROVEN",
+        "routing": "OPEN",
+        "transmission": "PROVEN",
+        "verification_or_rejection": "NOT_PROVEN"
+      },
+      "source_anchor": "archive/evidence/mf-redsara-anexo4/MF_REDSARA_REGISTRATION_INDEX_SHORT.csv",
+      "proves_en": "The stated text and annex metadata were formally registered at the stated time to the stated registry destination.",
+      "proves_es": "Prueba la presentación formal al destino registral indicado en el acuse.",
+      "does_not_prove_en": "Truth of the submission's allegations. Delivery beyond the registry state shown, internal assignment, joinder, examination, admission, investigation, merits acceptance or requested relief.",
+      "does_not_prove_es": "No prueba reparto, incorporación, examen, investigación, adopción, nexo con fondos UE, delito ni culpabilidad.",
+      "summary_en": "The stated text and annex metadata were formally registered at the stated time to the stated registry destination.",
+      "summary_es": "Acuse REGAGE dirigido a la Fiscalía Europea; prueba presentación registral, no entrega interna ni examen de fondo.",
+      "canonical_anchor_es": "es/ingenieria-inversa-criminal-unitaria/#communication-PD-SP-EVT-0004",
+      "canonical_anchor_en": "en/unitary-criminal-reverse-engineering/#communication-PD-SP-EVT-0004",
+      "public_derivative_state": "PUBLIC_SAFE_MINIMISED_DERIVATIVE",
+      "criminal_relevance_state": "OPEN_HYPOTHESIS_LINK",
+      "criminal_responsibility_transfer": false
+    },
+    {
+      "event_id": "PD-SP-EVT-0014",
+      "legacy_evidence_ids": [],
+      "date": "2025-12-21",
+      "direction": "OUTBOUND_TO_INSTITUTION",
+      "channel": "REGAGE",
+      "record_type": "REGISTRATION_RECEIPT",
+      "official_reference": "REGAGE25e00110740444",
+      "primary_authority_tier_id": "EU_SUPRANATIONAL",
+      "tier_resolution_state": "CONFIRMED",
+      "institution_label": "Fiscalía Europea",
+      "institution_id": null,
+      "institution_identity_state": "CARET_PENDING",
+      "master_ids": [],
+      "context_master_ids": [],
+      "master_link_state": "OPEN",
+      "authority_stage_ids": [
+        "AUTH-UCF-009"
+      ],
+      "track_ids": [
+        "T15",
+        "T17",
+        "T18"
+      ],
+      "gap_ids": [
+        "PD-GAP-UCF-009",
+        "PD-GAP-UCF-012",
+        "PD-GAP-UCF-015",
+        "PD-GAP-UCF-016"
+      ],
+      "evidence_classes": [
+        "NOTICE",
+        "OPEN"
+      ],
+      "handling_state": {
+        "adoption": "NOT_PROVEN",
+        "benefit_or_loss": "NOT_PROVEN",
+        "causation": "NOT_PROVEN",
+        "decision_or_use": "NOT_PROVEN",
+        "delivery": "OPEN",
+        "effect": "NOT_PROVEN",
+        "examination": "OPEN",
+        "incorporation": "OPEN",
+        "registration": "PROVEN",
+        "routing": "OPEN",
+        "transmission": "PROVEN",
+        "verification_or_rejection": "NOT_PROVEN"
+      },
+      "source_anchor": "archive/evidence/mf-redsara-anexo4/MF_REDSARA_REGISTRATION_INDEX_SHORT.csv",
+      "proves_en": "The stated text and annex metadata were formally registered at the stated time to the stated registry destination.",
+      "proves_es": "Prueba la presentación formal al destino registral indicado en el acuse.",
+      "does_not_prove_en": "Truth of the submission's allegations. Delivery beyond the registry state shown, internal assignment, joinder, examination, admission, investigation, merits acceptance or requested relief.",
+      "does_not_prove_es": "No prueba reparto, incorporación, examen, investigación, adopción, nexo con fondos UE, delito ni culpabilidad.",
+      "summary_en": "The stated text and annex metadata were formally registered at the stated time to the stated registry destination.",
+      "summary_es": "Acuse REGAGE dirigido a la Fiscalía Europea; prueba presentación registral, no entrega interna ni examen de fondo.",
+      "canonical_anchor_es": "es/ingenieria-inversa-criminal-unitaria/#communication-PD-SP-EVT-0014",
+      "canonical_anchor_en": "en/unitary-criminal-reverse-engineering/#communication-PD-SP-EVT-0014",
+      "public_derivative_state": "PUBLIC_SAFE_MINIMISED_DERIVATIVE",
+      "criminal_relevance_state": "OPEN_HYPOTHESIS_LINK",
+      "criminal_responsibility_transfer": false
+    },
+    {
+      "event_id": "PD-SP-EVT-0141",
+      "legacy_evidence_ids": [
+        "PD-EV-UCF-INT-184368-2026"
+      ],
+      "date": "2026-03-06",
+      "direction": "INBOUND_FROM_INSTITUTION",
+      "channel": "OFFICIAL_RESPONSE",
+      "record_type": "OFFICIAL_ROUTING_ACT",
+      "official_reference": "184368/2026",
+      "primary_authority_tier_id": "ES_CANARY_AUTONOMOUS",
+      "tier_resolution_state": "CONFIRMED",
+      "institution_label": "Intervención General de la Comunidad Autónoma de Canarias",
+      "institution_id": null,
+      "institution_identity_state": "CARET_PENDING",
+      "master_ids": [
+        "X-INT-004"
+      ],
+      "context_master_ids": [],
+      "master_link_state": "RESOLVED",
+      "authority_stage_ids": [
+        "AUTH-UCF-005",
+        "AUTH-UCF-009",
+        "AUTH-UCF-010"
+      ],
+      "track_ids": [
+        "T08",
+        "T14",
+        "T15",
+        "T17",
+        "T18"
+      ],
+      "gap_ids": [
+        "PD-GAP-UCF-015",
+        "PD-GAP-UCF-016"
+      ],
+      "evidence_classes": [
+        "DOC",
+        "NOTICE",
+        "OPEN"
+      ],
+      "handling_state": {
+        "adoption": "NOT_PROVEN",
+        "benefit_or_loss": "NOT_PROVEN",
+        "causation": "NOT_PROVEN",
+        "decision_or_use": "NOT_PROVEN",
+        "delivery": "ONLY_AS_STATED_IN_SOURCE",
+        "effect": "NOT_PROVEN",
+        "examination": "OPEN",
+        "incorporation": "OPEN",
+        "registration": "PROVEN",
+        "routing": "PROVEN_AS_STATED_IN_SOURCE",
+        "transmission": "PROVEN",
+        "verification_or_rejection": "NOT_PROVEN"
+      },
+      "source_anchor": "es/intervencion-general-699645-2026/index.html",
+      "proves_en": "The official response and its stated Commission-analysis and referral steps are controlled.",
+      "proves_es": "Se controlan la respuesta oficial y los pasos de análisis y traslado que declara.",
+      "does_not_prove_en": "Registration, notice or routing does not prove downstream receipt, incorporation, examination, adoption, reliance, a qualifying payment, misuse, personal knowledge, intent, causation, criminal organisation, offence or guilt.",
+      "does_not_prove_es": "El registro, aviso o traslado no prueba recepción posterior, incorporación, examen, adopción, utilización, pago elegible, uso indebido, conocimiento personal, dolo, causalidad, organización criminal, delito ni culpabilidad.",
+      "summary_en": "The first located response records Commission analysis, anonymised referral to Justice and stated public-grant control competence.",
+      "summary_es": "La primera respuesta localizada consigna análisis de la Comisión, traslado anonimizado a Justicia y competencia declarada de control de subvenciones públicas.",
+      "canonical_anchor_es": "es/ingenieria-inversa-criminal-unitaria/#communication-PD-SP-EVT-0141",
+      "canonical_anchor_en": "en/unitary-criminal-reverse-engineering/#communication-PD-SP-EVT-0141",
+      "public_derivative_state": "PUBLIC_SAFE_MINIMISED_DERIVATIVE",
+      "criminal_relevance_state": "OPEN_HYPOTHESIS_LINK",
+      "criminal_responsibility_transfer": false
+    },
+    {
+      "event_id": "PD-SP-EVT-0142",
+      "legacy_evidence_ids": [],
+      "date": "2026-06-11",
+      "direction": "INBOUND_FROM_INSTITUTION",
+      "channel": "OFFICIAL_RESPONSE",
+      "record_type": "OFFICIAL_ROUTING_ACT",
+      "official_reference": "497011/2026",
+      "primary_authority_tier_id": "ES_CANARY_AUTONOMOUS",
+      "tier_resolution_state": "CONFIRMED",
+      "institution_label": "Intervención General de la Comunidad Autónoma de Canarias",
+      "institution_id": null,
+      "institution_identity_state": "CARET_PENDING",
+      "master_ids": [
+        "X-INT-004"
+      ],
+      "context_master_ids": [],
+      "master_link_state": "RESOLVED",
+      "authority_stage_ids": [
+        "AUTH-UCF-009"
+      ],
+      "track_ids": [
+        "T13",
+        "T14",
+        "T15",
+        "T17",
+        "T18"
+      ],
+      "gap_ids": [
+        "PD-GAP-UCF-009",
+        "PD-GAP-UCF-012",
+        "PD-GAP-UCF-015",
+        "PD-GAP-UCF-016"
+      ],
+      "evidence_classes": [
+        "DOC",
+        "NOTICE",
+        "OPEN"
+      ],
+      "handling_state": {
+        "adoption": "NOT_PROVEN",
+        "benefit_or_loss": "NOT_PROVEN",
+        "causation": "NOT_PROVEN",
+        "decision_or_use": "NOT_PROVEN",
+        "delivery": "ONLY_AS_STATED_IN_SOURCE",
+        "effect": "NOT_PROVEN",
+        "examination": "OPEN",
+        "incorporation": "OPEN",
+        "registration": "PROVEN",
+        "routing": "PROVEN_AS_STATED_IN_SOURCE",
+        "transmission": "PROVEN",
+        "verification_or_rejection": "NOT_PROVEN"
+      },
+      "source_anchor": "es/intervencion-general-699645-2026/index.html",
+      "proves_en": "The response proves only its stated competence analysis and referral.",
+      "proves_es": "La respuesta prueba únicamente el análisis competencial y traslado que declara.",
+      "does_not_prove_en": "Registration, notice or routing does not prove downstream receipt, incorporation, examination, adoption, reliance, a qualifying payment, misuse, personal knowledge, intent, causation, criminal organisation, offence or guilt.",
+      "does_not_prove_es": "El registro, aviso o traslado no prueba recepción posterior, incorporación, examen, adopción, utilización, pago elegible, uso indebido, conocimiento personal, dolo, causalidad, organización criminal, delito ni culpabilidad.",
+      "summary_en": "The second located response identifies the RIC lane, an AEAT report and a Canary decision, and states a transfer to the competent Finance office.",
+      "summary_es": "La segunda respuesta localizada identifica el carril RIC, un informe AEAT y una decisión canaria, y declara el traslado al órgano competente de Hacienda.",
+      "canonical_anchor_es": "es/ingenieria-inversa-criminal-unitaria/#communication-PD-SP-EVT-0142",
+      "canonical_anchor_en": "en/unitary-criminal-reverse-engineering/#communication-PD-SP-EVT-0142",
+      "public_derivative_state": "PUBLIC_SAFE_MINIMISED_DERIVATIVE",
+      "criminal_relevance_state": "OPEN_HYPOTHESIS_LINK",
+      "criminal_responsibility_transfer": false
+    },
+    {
+      "event_id": "PD-SP-EVT-0143",
+      "legacy_evidence_ids": [],
+      "date": "2026-08-19",
+      "direction": "INBOUND_FROM_INSTITUTION",
+      "channel": "OFFICIAL_RESPONSE",
+      "record_type": "OFFICIAL_NOTIFICATION",
+      "official_reference": "699645/2026",
+      "primary_authority_tier_id": "ES_CANARY_AUTONOMOUS",
+      "tier_resolution_state": "CONFIRMED",
+      "institution_label": "Intervención General de la Comunidad Autónoma de Canarias",
+      "institution_id": null,
+      "institution_identity_state": "CARET_PENDING",
+      "master_ids": [
+        "X-INT-004"
+      ],
+      "context_master_ids": [],
+      "master_link_state": "RESOLVED",
+      "authority_stage_ids": [
+        "AUTH-UCF-009"
+      ],
+      "track_ids": [
+        "T13",
+        "T14",
+        "T15",
+        "T17",
+        "T18"
+      ],
+      "gap_ids": [
+        "PD-GAP-UCF-009",
+        "PD-GAP-UCF-012",
+        "PD-GAP-UCF-015",
+        "PD-GAP-UCF-016"
+      ],
+      "evidence_classes": [
+        "DOC",
+        "NOTICE",
+        "OPEN"
+      ],
+      "handling_state": {
+        "adoption": "NOT_PROVEN",
+        "benefit_or_loss": "NOT_PROVEN",
+        "causation": "NOT_PROVEN",
+        "decision_or_use": "ONLY_THE_LOCATED_PROCEDURAL_ACT",
+        "delivery": "PROVEN_BY_LOCATED_RECEIPT_OR_NOTICE",
+        "effect": "NOT_PROVEN",
+        "examination": "ONLY_AS_STATED_IN_SOURCE",
+        "incorporation": "OPEN",
+        "registration": "ONLY_AS_STATED_IN_SOURCE",
+        "routing": "ONLY_AS_STATED_IN_SOURCE",
+        "transmission": "PROVEN",
+        "verification_or_rejection": "NOT_PROVEN"
+      },
+      "source_anchor": "es/intervencion-general-699645-2026/index.html",
+      "proves_en": "The located derivative controls the stated clarification and competence boundary.",
+      "proves_es": "El derivado localizado controla la aclaración y el límite competencial declarados.",
+      "does_not_prove_en": "Registration, notice or routing does not prove downstream receipt, incorporation, examination, adoption, reliance, a qualifying payment, misuse, personal knowledge, intent, causation, criminal organisation, offence or guilt.",
+      "does_not_prove_es": "El registro, aviso o traslado no prueba recepción posterior, incorporación, examen, adopción, utilización, pago elegible, uso indebido, conocimiento personal, dolo, causalidad, organización criminal, delito ni culpabilidad.",
+      "summary_en": "The third response narrows the Comptroller's remit and prevents treating 497011/2026 as a universal no-funds or no-files certificate.",
+      "summary_es": "La tercera respuesta delimita el ámbito de Intervención e impide tratar 497011/2026 como certificado universal de inexistencia de fondos o expedientes.",
+      "canonical_anchor_es": "es/ingenieria-inversa-criminal-unitaria/#communication-PD-SP-EVT-0143",
+      "canonical_anchor_en": "en/unitary-criminal-reverse-engineering/#communication-PD-SP-EVT-0143",
+      "public_derivative_state": "PUBLIC_SAFE_MINIMISED_DERIVATIVE",
+      "criminal_relevance_state": "OPEN_HYPOTHESIS_LINK",
+      "criminal_responsibility_transfer": false
+    },
+    {
+      "event_id": "PD-SP-EVT-0144",
+      "legacy_evidence_ids": [],
+      "date": "2026-08-26",
+      "direction": "INBOUND_FROM_INSTITUTION",
+      "channel": "OFFICIAL_TRANSPARENCY_NOTICE",
+      "record_type": "OFFICIAL_ROUTING_ACT",
+      "official_reference": "16/2026-0825121919",
+      "primary_authority_tier_id": "ES_CANARY_AUTONOMOUS",
+      "tier_resolution_state": "CONFIRMED",
+      "institution_label": "Canary Finance and EU Relations public-information unit",
+      "institution_id": null,
+      "institution_identity_state": "CARET_PENDING",
+      "master_ids": [
+        "NAT-AID-001"
+      ],
+      "context_master_ids": [],
+      "master_link_state": "RESOLVED",
+      "authority_stage_ids": [
+        "AUTH-UCF-009"
+      ],
+      "track_ids": [
+        "T13",
+        "T14",
+        "T15",
+        "T17",
+        "T18"
+      ],
+      "gap_ids": [
+        "PD-GAP-UCF-009",
+        "PD-GAP-UCF-012",
+        "PD-GAP-UCF-015",
+        "PD-GAP-UCF-016"
+      ],
+      "evidence_classes": [
+        "DOC",
+        "NOTICE",
+        "OPEN"
+      ],
+      "handling_state": {
+        "adoption": "NOT_PROVEN",
+        "benefit_or_loss": "NOT_PROVEN",
+        "causation": "NOT_PROVEN",
+        "decision_or_use": "NOT_PROVEN",
+        "delivery": "ONLY_AS_STATED_IN_SOURCE",
+        "effect": "NOT_PROVEN",
+        "examination": "OPEN",
+        "incorporation": "OPEN",
+        "registration": "PROVEN",
+        "routing": "PROVEN_AS_STATED_IN_SOURCE",
+        "transmission": "PROVEN",
+        "verification_or_rejection": "NOT_PROVEN"
+      },
+      "source_anchor": "es/gobierno-canarias-transparencia-feder-remision-16-2026-0825121919/index.html",
+      "proves_en": "The notice proves the administrative description and referral stated in the notice.",
+      "proves_es": "La notificación prueba la descripción administrativa y la remisión que en ella se declaran.",
+      "does_not_prove_en": "Registration, notice or routing does not prove downstream receipt, incorporation, examination, adoption, reliance, a qualifying payment, misuse, personal knowledge, intent, causation, criminal organisation, offence or guilt.",
+      "does_not_prove_es": "El registro, aviso o traslado no prueba recepción posterior, incorporación, examen, adopción, utilización, pago elegible, uso indebido, conocimiento personal, dolo, causalidad, organización criminal, delito ni culpabilidad.",
+      "summary_en": "The notice states that the request entered the Canary Finance public-information unit and was referred to the regional economic-promotion directorate.",
+      "summary_es": "La notificación declara que la solicitud entró en la unidad de información pública de Hacienda y fue remitida a la dirección general regional de promoción económica.",
+      "canonical_anchor_es": "es/ingenieria-inversa-criminal-unitaria/#communication-PD-SP-EVT-0144",
+      "canonical_anchor_en": "en/unitary-criminal-reverse-engineering/#communication-PD-SP-EVT-0144",
+      "public_derivative_state": "PUBLIC_SAFE_MINIMISED_DERIVATIVE",
+      "criminal_relevance_state": "OPEN_HYPOTHESIS_LINK",
+      "criminal_responsibility_transfer": false
+    },
+    {
+      "event_id": "PD-SP-EVT-0145",
+      "legacy_evidence_ids": [],
+      "date": "2026-08-24",
+      "direction": "OUTBOUND_TO_INSTITUTION",
+      "channel": "REGAGE",
+      "record_type": "REGISTRATION_RECEIPT",
+      "official_reference": "REGAGE26e00075132698",
+      "primary_authority_tier_id": "ES_CANARY_AUTONOMOUS",
+      "tier_resolution_state": "CONFIRMED",
+      "institution_label": "Comisionado de Transparencia y Acceso a la Información Pública",
+      "institution_id": null,
+      "institution_identity_state": "CARET_PENDING",
+      "master_ids": [
+        "LZ-TRA-028"
+      ],
+      "context_master_ids": [],
+      "master_link_state": "RESOLVED",
+      "authority_stage_ids": [
+        "AUTH-UCF-009"
+      ],
+      "track_ids": [
+        "T13",
+        "T14",
+        "T15",
+        "T17",
+        "T18"
+      ],
+      "gap_ids": [
+        "PD-GAP-UCF-009",
+        "PD-GAP-UCF-012",
+        "PD-GAP-UCF-015",
+        "PD-GAP-UCF-016"
+      ],
+      "evidence_classes": [
+        "NOTICE",
+        "OPEN"
+      ],
+      "handling_state": {
+        "adoption": "NOT_PROVEN",
+        "benefit_or_loss": "NOT_PROVEN",
+        "causation": "NOT_PROVEN",
+        "decision_or_use": "NOT_PROVEN",
+        "delivery": "OPEN",
+        "effect": "NOT_PROVEN",
+        "examination": "OPEN",
+        "incorporation": "OPEN",
+        "registration": "PROVEN",
+        "routing": "OPEN",
+        "transmission": "PROVEN",
+        "verification_or_rejection": "NOT_PROVEN"
+      },
+      "source_anchor": "es/ricpe-acciones-pendientes-ahora/index.html",
+      "proves_en": "The receipt proves formal presentation to the registry destination and time stated on the receipt.",
+      "proves_es": "El acuse prueba la presentación formal al destino registral y en el momento que declara.",
+      "does_not_prove_en": "Registration, notice or routing does not prove downstream receipt, incorporation, examination, adoption, reliance, a qualifying payment, misuse, personal knowledge, intent, causation, criminal organisation, offence or guilt.",
+      "does_not_prove_es": "El registro, aviso o traslado no prueba recepción posterior, incorporación, examen, adopción, utilización, pago elegible, uso indebido, conocimiento personal, dolo, causalidad, organización criminal, delito ni culpabilidad.",
+      "summary_en": "One of eight separately registered RICPE, regional-incentives and European-funds access routes; the receipt is controlled at registration level.",
+      "summary_es": "Una de ocho rutas de acceso RICPE, incentivos regionales y fondos europeos registradas por separado; el acuse se controla al nivel de registro.",
+      "canonical_anchor_es": "es/ingenieria-inversa-criminal-unitaria/#communication-PD-SP-EVT-0145",
+      "canonical_anchor_en": "en/unitary-criminal-reverse-engineering/#communication-PD-SP-EVT-0145",
+      "public_derivative_state": "PUBLIC_SAFE_MINIMISED_DERIVATIVE",
+      "criminal_relevance_state": "OPEN_HYPOTHESIS_LINK",
+      "criminal_responsibility_transfer": false
+    },
+    {
+      "event_id": "PD-SP-EVT-0146",
+      "legacy_evidence_ids": [],
+      "date": "2026-08-24",
+      "direction": "OUTBOUND_TO_INSTITUTION",
+      "channel": "REGAGE",
+      "record_type": "REGISTRATION_RECEIPT",
+      "official_reference": "REGAGE26e00075135054",
+      "primary_authority_tier_id": "ES_CANARY_AUTONOMOUS",
+      "tier_resolution_state": "CONFIRMED",
+      "institution_label": "Canary Presidency, Public Administrations, Justice and Security",
+      "institution_id": null,
+      "institution_identity_state": "CARET_PENDING",
+      "master_ids": [],
+      "context_master_ids": [],
+      "master_link_state": "OPEN",
+      "authority_stage_ids": [
+        "AUTH-UCF-009"
+      ],
+      "track_ids": [
+        "T13",
+        "T14",
+        "T15",
+        "T17",
+        "T18"
+      ],
+      "gap_ids": [
+        "PD-GAP-UCF-009",
+        "PD-GAP-UCF-012",
+        "PD-GAP-UCF-015",
+        "PD-GAP-UCF-016"
+      ],
+      "evidence_classes": [
+        "NOTICE",
+        "OPEN"
+      ],
+      "handling_state": {
+        "adoption": "NOT_PROVEN",
+        "benefit_or_loss": "NOT_PROVEN",
+        "causation": "NOT_PROVEN",
+        "decision_or_use": "NOT_PROVEN",
+        "delivery": "OPEN",
+        "effect": "NOT_PROVEN",
+        "examination": "OPEN",
+        "incorporation": "OPEN",
+        "registration": "PROVEN",
+        "routing": "OPEN",
+        "transmission": "PROVEN",
+        "verification_or_rejection": "NOT_PROVEN"
+      },
+      "source_anchor": "es/ricpe-acciones-pendientes-ahora/index.html",
+      "proves_en": "The receipt proves formal presentation to the registry destination and time stated on the receipt.",
+      "proves_es": "El acuse prueba la presentación formal al destino registral y en el momento que declara.",
+      "does_not_prove_en": "Registration, notice or routing does not prove downstream receipt, incorporation, examination, adoption, reliance, a qualifying payment, misuse, personal knowledge, intent, causation, criminal organisation, offence or guilt.",
+      "does_not_prove_es": "El registro, aviso o traslado no prueba recepción posterior, incorporación, examen, adopción, utilización, pago elegible, uso indebido, conocimiento personal, dolo, causalidad, organización criminal, delito ni culpabilidad.",
+      "summary_en": "One of eight separately registered RICPE, regional-incentives and European-funds access routes; the receipt is controlled at registration level.",
+      "summary_es": "Una de ocho rutas de acceso RICPE, incentivos regionales y fondos europeos registradas por separado; el acuse se controla al nivel de registro.",
+      "canonical_anchor_es": "es/ingenieria-inversa-criminal-unitaria/#communication-PD-SP-EVT-0146",
+      "canonical_anchor_en": "en/unitary-criminal-reverse-engineering/#communication-PD-SP-EVT-0146",
+      "public_derivative_state": "PUBLIC_SAFE_MINIMISED_DERIVATIVE",
+      "criminal_relevance_state": "OPEN_HYPOTHESIS_LINK",
+      "criminal_responsibility_transfer": false
+    },
+    {
+      "event_id": "PD-SP-EVT-0147",
+      "legacy_evidence_ids": [],
+      "date": "2026-08-24",
+      "direction": "OUTBOUND_TO_INSTITUTION",
+      "channel": "REGAGE",
+      "record_type": "REGISTRATION_RECEIPT",
+      "official_reference": "REGAGE26e00075135386",
+      "primary_authority_tier_id": "ES_STATE",
+      "tier_resolution_state": "CONFIRMED",
+      "institution_label": "Agencia Estatal de Administración Tributaria",
+      "institution_id": "PD-SP-I-0006",
+      "institution_identity_state": "CARET_CONFIRMED",
+      "master_ids": [],
+      "context_master_ids": [],
+      "master_link_state": "OPEN",
+      "authority_stage_ids": [
+        "AUTH-UCF-009"
+      ],
+      "track_ids": [
+        "T13",
+        "T14",
+        "T15",
+        "T17",
+        "T18"
+      ],
+      "gap_ids": [
+        "PD-GAP-UCF-009",
+        "PD-GAP-UCF-012",
+        "PD-GAP-UCF-015",
+        "PD-GAP-UCF-016"
+      ],
+      "evidence_classes": [
+        "NOTICE",
+        "OPEN"
+      ],
+      "handling_state": {
+        "adoption": "NOT_PROVEN",
+        "benefit_or_loss": "NOT_PROVEN",
+        "causation": "NOT_PROVEN",
+        "decision_or_use": "NOT_PROVEN",
+        "delivery": "OPEN",
+        "effect": "NOT_PROVEN",
+        "examination": "OPEN",
+        "incorporation": "OPEN",
+        "registration": "PROVEN",
+        "routing": "OPEN",
+        "transmission": "PROVEN",
+        "verification_or_rejection": "NOT_PROVEN"
+      },
+      "source_anchor": "es/ricpe-acciones-pendientes-ahora/index.html",
+      "proves_en": "The receipt proves formal presentation to the registry destination and time stated on the receipt.",
+      "proves_es": "El acuse prueba la presentación formal al destino registral y en el momento que declara.",
+      "does_not_prove_en": "Registration, notice or routing does not prove downstream receipt, incorporation, examination, adoption, reliance, a qualifying payment, misuse, personal knowledge, intent, causation, criminal organisation, offence or guilt.",
+      "does_not_prove_es": "El registro, aviso o traslado no prueba recepción posterior, incorporación, examen, adopción, utilización, pago elegible, uso indebido, conocimiento personal, dolo, causalidad, organización criminal, delito ni culpabilidad.",
+      "summary_en": "One of eight separately registered RICPE, regional-incentives and European-funds access routes; the receipt is controlled at registration level.",
+      "summary_es": "Una de ocho rutas de acceso RICPE, incentivos regionales y fondos europeos registradas por separado; el acuse se controla al nivel de registro.",
+      "canonical_anchor_es": "es/ingenieria-inversa-criminal-unitaria/#communication-PD-SP-EVT-0147",
+      "canonical_anchor_en": "en/unitary-criminal-reverse-engineering/#communication-PD-SP-EVT-0147",
+      "public_derivative_state": "PUBLIC_SAFE_MINIMISED_DERIVATIVE",
+      "criminal_relevance_state": "OPEN_HYPOTHESIS_LINK",
+      "criminal_responsibility_transfer": false
+    },
+    {
+      "event_id": "PD-SP-EVT-0148",
+      "legacy_evidence_ids": [],
+      "date": "2026-08-24",
+      "direction": "OUTBOUND_TO_INSTITUTION",
+      "channel": "REGAGE",
+      "record_type": "REGISTRATION_RECEIPT",
+      "official_reference": "REGAGE26e00075135813",
+      "primary_authority_tier_id": "ES_CANARY_AUTONOMOUS",
+      "tier_resolution_state": "CONFIRMED",
+      "institution_label": "Canary regional-incentives registry destination",
+      "institution_id": null,
+      "institution_identity_state": "CARET_PENDING",
+      "master_ids": [
+        "NAT-AID-001"
+      ],
+      "context_master_ids": [],
+      "master_link_state": "RESOLVED",
+      "authority_stage_ids": [
+        "AUTH-UCF-009"
+      ],
+      "track_ids": [
+        "T13",
+        "T14",
+        "T15",
+        "T17",
+        "T18"
+      ],
+      "gap_ids": [
+        "PD-GAP-UCF-009",
+        "PD-GAP-UCF-012",
+        "PD-GAP-UCF-015",
+        "PD-GAP-UCF-016"
+      ],
+      "evidence_classes": [
+        "NOTICE",
+        "OPEN"
+      ],
+      "handling_state": {
+        "adoption": "NOT_PROVEN",
+        "benefit_or_loss": "NOT_PROVEN",
+        "causation": "NOT_PROVEN",
+        "decision_or_use": "NOT_PROVEN",
+        "delivery": "OPEN",
+        "effect": "NOT_PROVEN",
+        "examination": "OPEN",
+        "incorporation": "OPEN",
+        "registration": "PROVEN",
+        "routing": "OPEN",
+        "transmission": "PROVEN",
+        "verification_or_rejection": "NOT_PROVEN"
+      },
+      "source_anchor": "es/ricpe-acciones-pendientes-ahora/index.html",
+      "proves_en": "The receipt proves formal presentation to the registry destination and time stated on the receipt.",
+      "proves_es": "El acuse prueba la presentación formal al destino registral y en el momento que declara.",
+      "does_not_prove_en": "Registration, notice or routing does not prove downstream receipt, incorporation, examination, adoption, reliance, a qualifying payment, misuse, personal knowledge, intent, causation, criminal organisation, offence or guilt.",
+      "does_not_prove_es": "El registro, aviso o traslado no prueba recepción posterior, incorporación, examen, adopción, utilización, pago elegible, uso indebido, conocimiento personal, dolo, causalidad, organización criminal, delito ni culpabilidad.",
+      "summary_en": "One of eight separately registered RICPE, regional-incentives and European-funds access routes; the receipt is controlled at registration level.",
+      "summary_es": "Una de ocho rutas de acceso RICPE, incentivos regionales y fondos europeos registradas por separado; el acuse se controla al nivel de registro.",
+      "canonical_anchor_es": "es/ingenieria-inversa-criminal-unitaria/#communication-PD-SP-EVT-0148",
+      "canonical_anchor_en": "en/unitary-criminal-reverse-engineering/#communication-PD-SP-EVT-0148",
+      "public_derivative_state": "PUBLIC_SAFE_MINIMISED_DERIVATIVE",
+      "criminal_relevance_state": "OPEN_HYPOTHESIS_LINK",
+      "criminal_responsibility_transfer": false
+    },
+    {
+      "event_id": "PD-SP-EVT-0149",
+      "legacy_evidence_ids": [],
+      "date": "2026-08-24",
+      "direction": "OUTBOUND_TO_INSTITUTION",
+      "channel": "REGAGE",
+      "record_type": "REGISTRATION_RECEIPT",
+      "official_reference": "REGAGE26e00075136198",
+      "primary_authority_tier_id": "ES_STATE",
+      "tier_resolution_state": "CONFIRMED",
+      "institution_label": "Spanish State regional-incentives directorate",
+      "institution_id": null,
+      "institution_identity_state": "CARET_PENDING",
+      "master_ids": [
+        "NAT-AID-001"
+      ],
+      "context_master_ids": [],
+      "master_link_state": "RESOLVED",
+      "authority_stage_ids": [
+        "AUTH-UCF-009"
+      ],
+      "track_ids": [
+        "T13",
+        "T14",
+        "T15",
+        "T17",
+        "T18"
+      ],
+      "gap_ids": [
+        "PD-GAP-UCF-009",
+        "PD-GAP-UCF-012",
+        "PD-GAP-UCF-015",
+        "PD-GAP-UCF-016"
+      ],
+      "evidence_classes": [
+        "NOTICE",
+        "OPEN"
+      ],
+      "handling_state": {
+        "adoption": "NOT_PROVEN",
+        "benefit_or_loss": "NOT_PROVEN",
+        "causation": "NOT_PROVEN",
+        "decision_or_use": "NOT_PROVEN",
+        "delivery": "OPEN",
+        "effect": "NOT_PROVEN",
+        "examination": "OPEN",
+        "incorporation": "OPEN",
+        "registration": "PROVEN",
+        "routing": "OPEN",
+        "transmission": "PROVEN",
+        "verification_or_rejection": "NOT_PROVEN"
+      },
+      "source_anchor": "es/ricpe-acciones-pendientes-ahora/index.html",
+      "proves_en": "The receipt proves formal presentation to the registry destination and time stated on the receipt.",
+      "proves_es": "El acuse prueba la presentación formal al destino registral y en el momento que declara.",
+      "does_not_prove_en": "Registration, notice or routing does not prove downstream receipt, incorporation, examination, adoption, reliance, a qualifying payment, misuse, personal knowledge, intent, causation, criminal organisation, offence or guilt.",
+      "does_not_prove_es": "El registro, aviso o traslado no prueba recepción posterior, incorporación, examen, adopción, utilización, pago elegible, uso indebido, conocimiento personal, dolo, causalidad, organización criminal, delito ni culpabilidad.",
+      "summary_en": "One of eight separately registered RICPE, regional-incentives and European-funds access routes; the receipt is controlled at registration level.",
+      "summary_es": "Una de ocho rutas de acceso RICPE, incentivos regionales y fondos europeos registradas por separado; el acuse se controla al nivel de registro.",
+      "canonical_anchor_es": "es/ingenieria-inversa-criminal-unitaria/#communication-PD-SP-EVT-0149",
+      "canonical_anchor_en": "en/unitary-criminal-reverse-engineering/#communication-PD-SP-EVT-0149",
+      "public_derivative_state": "PUBLIC_SAFE_MINIMISED_DERIVATIVE",
+      "criminal_relevance_state": "OPEN_HYPOTHESIS_LINK",
+      "criminal_responsibility_transfer": false
+    },
+    {
+      "event_id": "PD-SP-EVT-0150",
+      "legacy_evidence_ids": [],
+      "date": "2026-08-24",
+      "direction": "OUTBOUND_TO_INSTITUTION",
+      "channel": "REGAGE",
+      "record_type": "REGISTRATION_RECEIPT",
+      "official_reference": "REGAGE26e00075136446",
+      "primary_authority_tier_id": "ES_CANARY_AUTONOMOUS",
+      "tier_resolution_state": "CONFIRMED",
+      "institution_label": "Canary Finance and EU Relations registry destination",
+      "institution_id": null,
+      "institution_identity_state": "CARET_PENDING",
+      "master_ids": [],
+      "context_master_ids": [
+        "NAT-AID-001"
+      ],
+      "master_link_state": "OPEN",
+      "authority_stage_ids": [
+        "AUTH-UCF-009"
+      ],
+      "track_ids": [
+        "T13",
+        "T14",
+        "T15",
+        "T17",
+        "T18"
+      ],
+      "gap_ids": [
+        "PD-GAP-UCF-009",
+        "PD-GAP-UCF-012",
+        "PD-GAP-UCF-015",
+        "PD-GAP-UCF-016"
+      ],
+      "evidence_classes": [
+        "NOTICE",
+        "OPEN"
+      ],
+      "handling_state": {
+        "adoption": "NOT_PROVEN",
+        "benefit_or_loss": "NOT_PROVEN",
+        "causation": "NOT_PROVEN",
+        "decision_or_use": "NOT_PROVEN",
+        "delivery": "OPEN",
+        "effect": "NOT_PROVEN",
+        "examination": "OPEN",
+        "incorporation": "OPEN",
+        "registration": "PROVEN",
+        "routing": "OPEN",
+        "transmission": "PROVEN",
+        "verification_or_rejection": "NOT_PROVEN"
+      },
+      "source_anchor": "es/ricpe-acciones-pendientes-ahora/index.html",
+      "proves_en": "The receipt proves formal presentation to the registry destination and time stated on the receipt.",
+      "proves_es": "El acuse prueba la presentación formal al destino registral y en el momento que declara.",
+      "does_not_prove_en": "Registration, notice or routing does not prove downstream receipt, incorporation, examination, adoption, reliance, a qualifying payment, misuse, personal knowledge, intent, causation, criminal organisation, offence or guilt.",
+      "does_not_prove_es": "El registro, aviso o traslado no prueba recepción posterior, incorporación, examen, adopción, utilización, pago elegible, uso indebido, conocimiento personal, dolo, causalidad, organización criminal, delito ni culpabilidad.",
+      "summary_en": "One of eight separately registered RICPE, regional-incentives and European-funds access routes; the receipt is controlled at registration level.",
+      "summary_es": "Una de ocho rutas de acceso RICPE, incentivos regionales y fondos europeos registradas por separado; el acuse se controla al nivel de registro.",
+      "canonical_anchor_es": "es/ingenieria-inversa-criminal-unitaria/#communication-PD-SP-EVT-0150",
+      "canonical_anchor_en": "en/unitary-criminal-reverse-engineering/#communication-PD-SP-EVT-0150",
+      "public_derivative_state": "PUBLIC_SAFE_MINIMISED_DERIVATIVE",
+      "criminal_relevance_state": "OPEN_HYPOTHESIS_LINK",
+      "criminal_responsibility_transfer": false
+    },
+    {
+      "event_id": "PD-SP-EVT-0151",
+      "legacy_evidence_ids": [],
+      "date": "2026-08-24",
+      "direction": "OUTBOUND_TO_INSTITUTION",
+      "channel": "REGAGE",
+      "record_type": "REGISTRATION_RECEIPT",
+      "official_reference": "REGAGE26e00075136691",
+      "primary_authority_tier_id": "ES_STATE",
+      "tier_resolution_state": "CONFIRMED",
+      "institution_label": "Spanish Directorate-General for European Funds",
+      "institution_id": null,
+      "institution_identity_state": "CARET_PENDING",
+      "master_ids": [],
+      "context_master_ids": [
+        "NAT-AID-001"
+      ],
+      "master_link_state": "OPEN",
+      "authority_stage_ids": [
+        "AUTH-UCF-009"
+      ],
+      "track_ids": [
+        "T13",
+        "T14",
+        "T15",
+        "T17",
+        "T18"
+      ],
+      "gap_ids": [
+        "PD-GAP-UCF-009",
+        "PD-GAP-UCF-012",
+        "PD-GAP-UCF-015",
+        "PD-GAP-UCF-016"
+      ],
+      "evidence_classes": [
+        "NOTICE",
+        "OPEN"
+      ],
+      "handling_state": {
+        "adoption": "NOT_PROVEN",
+        "benefit_or_loss": "NOT_PROVEN",
+        "causation": "NOT_PROVEN",
+        "decision_or_use": "NOT_PROVEN",
+        "delivery": "OPEN",
+        "effect": "NOT_PROVEN",
+        "examination": "OPEN",
+        "incorporation": "OPEN",
+        "registration": "PROVEN",
+        "routing": "OPEN",
+        "transmission": "PROVEN",
+        "verification_or_rejection": "NOT_PROVEN"
+      },
+      "source_anchor": "es/ricpe-acciones-pendientes-ahora/index.html",
+      "proves_en": "The receipt proves formal presentation to the registry destination and time stated on the receipt.",
+      "proves_es": "El acuse prueba la presentación formal al destino registral y en el momento que declara.",
+      "does_not_prove_en": "Registration, notice or routing does not prove downstream receipt, incorporation, examination, adoption, reliance, a qualifying payment, misuse, personal knowledge, intent, causation, criminal organisation, offence or guilt.",
+      "does_not_prove_es": "El registro, aviso o traslado no prueba recepción posterior, incorporación, examen, adopción, utilización, pago elegible, uso indebido, conocimiento personal, dolo, causalidad, organización criminal, delito ni culpabilidad.",
+      "summary_en": "One of eight separately registered RICPE, regional-incentives and European-funds access routes; the receipt is controlled at registration level.",
+      "summary_es": "Una de ocho rutas de acceso RICPE, incentivos regionales y fondos europeos registradas por separado; el acuse se controla al nivel de registro.",
+      "canonical_anchor_es": "es/ingenieria-inversa-criminal-unitaria/#communication-PD-SP-EVT-0151",
+      "canonical_anchor_en": "en/unitary-criminal-reverse-engineering/#communication-PD-SP-EVT-0151",
+      "public_derivative_state": "PUBLIC_SAFE_MINIMISED_DERIVATIVE",
+      "criminal_relevance_state": "OPEN_HYPOTHESIS_LINK",
+      "criminal_responsibility_transfer": false
+    },
+    {
+      "event_id": "PD-SP-EVT-0152",
+      "legacy_evidence_ids": [],
+      "date": "2026-08-24",
+      "direction": "OUTBOUND_TO_INSTITUTION",
+      "channel": "REGAGE",
+      "record_type": "REGISTRATION_RECEIPT",
+      "official_reference": "REGAGE26e00075136953",
+      "primary_authority_tier_id": "ES_STATE",
+      "tier_resolution_state": "CONFIRMED",
+      "institution_label": "Comisión Nacional del Mercado de Valores",
+      "institution_id": null,
+      "institution_identity_state": "CARET_PENDING",
+      "master_ids": [],
+      "context_master_ids": [
+        "X-REG-001",
+        "NAT-CNMV-001",
+        "NAT-CNMV-002"
+      ],
+      "master_link_state": "OPEN",
+      "authority_stage_ids": [
+        "AUTH-UCF-009"
+      ],
+      "track_ids": [
+        "T13",
+        "T14",
+        "T15",
+        "T17",
+        "T18"
+      ],
+      "gap_ids": [
+        "PD-GAP-UCF-009",
+        "PD-GAP-UCF-012",
+        "PD-GAP-UCF-015",
+        "PD-GAP-UCF-016"
+      ],
+      "evidence_classes": [
+        "NOTICE",
+        "OPEN"
+      ],
+      "handling_state": {
+        "adoption": "NOT_PROVEN",
+        "benefit_or_loss": "NOT_PROVEN",
+        "causation": "NOT_PROVEN",
+        "decision_or_use": "NOT_PROVEN",
+        "delivery": "OPEN",
+        "effect": "NOT_PROVEN",
+        "examination": "OPEN",
+        "incorporation": "OPEN",
+        "registration": "PROVEN",
+        "routing": "OPEN",
+        "transmission": "PROVEN",
+        "verification_or_rejection": "NOT_PROVEN"
+      },
+      "source_anchor": "es/ricpe-acciones-pendientes-ahora/index.html",
+      "proves_en": "The receipt proves formal presentation to the registry destination and time stated on the receipt.",
+      "proves_es": "El acuse prueba la presentación formal al destino registral y en el momento que declara.",
+      "does_not_prove_en": "Registration, notice or routing does not prove downstream receipt, incorporation, examination, adoption, reliance, a qualifying payment, misuse, personal knowledge, intent, causation, criminal organisation, offence or guilt.",
+      "does_not_prove_es": "El registro, aviso o traslado no prueba recepción posterior, incorporación, examen, adopción, utilización, pago elegible, uso indebido, conocimiento personal, dolo, causalidad, organización criminal, delito ni culpabilidad.",
+      "summary_en": "One of eight separately registered RICPE, regional-incentives and European-funds access routes; the receipt is controlled at registration level.",
+      "summary_es": "Una de ocho rutas de acceso RICPE, incentivos regionales y fondos europeos registradas por separado; el acuse se controla al nivel de registro.",
+      "canonical_anchor_es": "es/ingenieria-inversa-criminal-unitaria/#communication-PD-SP-EVT-0152",
+      "canonical_anchor_en": "en/unitary-criminal-reverse-engineering/#communication-PD-SP-EVT-0152",
+      "public_derivative_state": "PUBLIC_SAFE_MINIMISED_DERIVATIVE",
+      "criminal_relevance_state": "OPEN_HYPOTHESIS_LINK",
+      "criminal_responsibility_transfer": false
+    },
+    {
+      "event_id": "PD-SP-EVT-0153",
+      "legacy_evidence_ids": [],
+      "date": "2026-08-05",
+      "direction": "INBOUND_FROM_INSTITUTION",
+      "channel": "OFFICIAL_MUNICIPAL_NOTICE",
+      "record_type": "OFFICIAL_NOTIFICATION",
+      "official_reference": "7066/2026",
+      "primary_authority_tier_id": "ES_LOCAL_MUNICIPAL",
+      "tier_resolution_state": "CONFIRMED",
+      "institution_label": "Ayuntamiento de Yaiza",
+      "institution_id": "PD-SP-I-0009",
+      "institution_identity_state": "CARET_CONFIRMED",
+      "master_ids": [
+        "LZ-YAI-031"
+      ],
+      "context_master_ids": [],
+      "master_link_state": "RESOLVED",
+      "authority_stage_ids": [
+        "AUTH-UCF-010"
+      ],
+      "track_ids": [
+        "T16",
+        "T17",
+        "T18"
+      ],
+      "gap_ids": [
+        "PD-GAP-UCF-010",
+        "PD-GAP-UCF-015"
+      ],
+      "evidence_classes": [
+        "DOC",
+        "NOTICE",
+        "OPEN"
+      ],
+      "handling_state": {
+        "adoption": "NOT_PROVEN",
+        "benefit_or_loss": "NOT_PROVEN",
+        "causation": "NOT_PROVEN",
+        "decision_or_use": "ONLY_THE_LOCATED_PROCEDURAL_ACT",
+        "delivery": "PROVEN_BY_LOCATED_RECEIPT_OR_NOTICE",
+        "effect": "NOT_PROVEN",
+        "examination": "ONLY_AS_STATED_IN_SOURCE",
+        "incorporation": "OPEN",
+        "registration": "ONLY_AS_STATED_IN_SOURCE",
+        "routing": "ONLY_AS_STATED_IN_SOURCE",
+        "transmission": "PROVEN",
+        "verification_or_rejection": "NOT_PROVEN"
+      },
+      "source_anchor": "assets/data/proceedings-master-public-v1.json",
+      "proves_en": "The official notification, date and municipal file reference are controlled.",
+      "proves_es": "Se controlan la notificación oficial, la fecha y la referencia del expediente municipal.",
+      "does_not_prove_en": "The notice does not prove a complete file, title, authority, valid licence, reliance on an ACTA, intent, offence or guilt.",
+      "does_not_prove_es": "La notificación no prueba expediente completo, título, autoridad, licencia válida, utilización de un ACTA, dolo, delito ni culpabilidad.",
+      "summary_en": "A source-controlled municipal notification identifies archive-funds consultation file 7066/2026.",
+      "summary_es": "Una notificación municipal controlada identifica el expediente 7066/2026 de consulta de fondos del archivo.",
+      "canonical_anchor_es": "es/ingenieria-inversa-criminal-unitaria/#communication-PD-SP-EVT-0153",
+      "canonical_anchor_en": "en/unitary-criminal-reverse-engineering/#communication-PD-SP-EVT-0153",
+      "public_derivative_state": "PUBLIC_SAFE_MINIMISED_DERIVATIVE",
+      "criminal_relevance_state": "OPEN_HYPOTHESIS_LINK",
+      "criminal_responsibility_transfer": false
+    },
+    {
+      "event_id": "PD-SP-EVT-0154",
+      "legacy_evidence_ids": [],
+      "date": "2026-08-13",
+      "direction": "OUTBOUND_TO_INSTITUTION",
+      "channel": "REGAGE",
+      "record_type": "REGISTRATION_RECEIPT",
+      "official_reference": "REGAGE26e00072883405",
+      "primary_authority_tier_id": "ES_ISLAND_CABILDO",
+      "tier_resolution_state": "CONFIRMED",
+      "institution_label": "Cabildo de Lanzarote",
+      "institution_id": "PD-SP-I-0010",
+      "institution_identity_state": "CARET_CONFIRMED",
+      "master_ids": [
+        "LZ-CAB-025"
+      ],
+      "context_master_ids": [],
+      "master_link_state": "RESOLVED",
+      "authority_stage_ids": [
+        "AUTH-UCF-010"
+      ],
+      "track_ids": [
+        "T16",
+        "T17",
+        "T18"
+      ],
+      "gap_ids": [
+        "PD-GAP-UCF-010",
+        "PD-GAP-UCF-015"
+      ],
+      "evidence_classes": [
+        "NOTICE",
+        "OPEN"
+      ],
+      "handling_state": {
+        "adoption": "NOT_PROVEN",
+        "benefit_or_loss": "NOT_PROVEN",
+        "causation": "NOT_PROVEN",
+        "decision_or_use": "NOT_PROVEN",
+        "delivery": "OPEN",
+        "effect": "NOT_PROVEN",
+        "examination": "OPEN",
+        "incorporation": "OPEN",
+        "registration": "PROVEN",
+        "routing": "OPEN",
+        "transmission": "PROVEN",
+        "verification_or_rejection": "NOT_PROVEN"
+      },
+      "source_anchor": "es/cabildo-lanzarote-turismo-trazabilidad/index.html",
+      "proves_en": "The receipt proves formal presentation of the stated access request to the Cabildo registry.",
+      "proves_es": "El acuse prueba la presentación formal de la solicitud de acceso indicada al registro del Cabildo.",
+      "does_not_prove_en": "It does not prove internal assignment, delivery of the files, ACTA reliance, valid title or authority, intent, offence or guilt.",
+      "does_not_prove_es": "No prueba asignación interna, entrega de expedientes, utilización de ACTAS, título o autoridad válidos, dolo, delito ni culpabilidad.",
+      "summary_en": "The receipt records a request to implement access in file 614/2026 and obtain four identified tourism files.",
+      "summary_es": "El acuse consigna una solicitud de ejecución del acceso en el expediente 614/2026 y de obtención de cuatro expedientes turísticos identificados.",
+      "canonical_anchor_es": "es/ingenieria-inversa-criminal-unitaria/#communication-PD-SP-EVT-0154",
+      "canonical_anchor_en": "en/unitary-criminal-reverse-engineering/#communication-PD-SP-EVT-0154",
+      "public_derivative_state": "PUBLIC_SAFE_MINIMISED_DERIVATIVE",
+      "criminal_relevance_state": "OPEN_HYPOTHESIS_LINK",
+      "criminal_responsibility_transfer": false
+    },
+    {
+      "event_id": "PD-SP-EVT-0155",
+      "legacy_evidence_ids": [],
+      "date": "2026-08-28",
+      "direction": "INBOUND_FROM_INSTITUTION",
+      "channel": "OFFICIAL_TREASURY_DELIVERY",
+      "record_type": "OFFICIAL_NOTIFICATION",
+      "official_reference": "Colabora 7-2026-0316134247",
+      "primary_authority_tier_id": "ES_CANARY_AUTONOMOUS",
+      "tier_resolution_state": "CONFIRMED",
+      "institution_label": "Canary Directorate-General for the Treasury and Financial Policy",
+      "institution_id": null,
+      "institution_identity_state": "CARET_PENDING",
+      "master_ids": [
+        "NAT-TES-001"
+      ],
+      "context_master_ids": [],
+      "master_link_state": "RESOLVED",
+      "authority_stage_ids": [
+        "AUTH-UCF-009"
+      ],
+      "track_ids": [
+        "T13",
+        "T14",
+        "T17",
+        "T18"
+      ],
+      "gap_ids": [
+        "PD-GAP-UCF-009",
+        "PD-GAP-UCF-012",
+        "PD-GAP-UCF-015"
+      ],
+      "evidence_classes": [
+        "DOC",
+        "NOTICE",
+        "OPEN"
+      ],
+      "handling_state": {
+        "adoption": "NOT_PROVEN",
+        "benefit_or_loss": "NOT_PROVEN",
+        "causation": "NOT_PROVEN",
+        "decision_or_use": "ONLY_THE_LOCATED_PROCEDURAL_ACT",
+        "delivery": "PROVEN_BY_LOCATED_RECEIPT_OR_NOTICE",
+        "effect": "NOT_PROVEN",
+        "examination": "ONLY_AS_STATED_IN_SOURCE",
+        "incorporation": "OPEN",
+        "registration": "ONLY_AS_STATED_IN_SOURCE",
+        "routing": "ONLY_AS_STATED_IN_SOURCE",
+        "transmission": "PROVEN",
+        "verification_or_rejection": "NOT_PROVEN"
+      },
+      "source_anchor": "es/tesoro-transparencia-7-2026-28agosto/index.html",
+      "proves_en": "The notice proves the stated implementation act and first staged production state.",
+      "proves_es": "La notificación prueba el acto de ejecución y el estado de primera producción escalonada que declara.",
+      "does_not_prove_en": "Registration, notice or routing does not prove downstream receipt, incorporation, examination, adoption, reliance, a qualifying payment, misuse, personal knowledge, intent, causation, criminal organisation, offence or guilt.",
+      "does_not_prove_es": "El registro, aviso o traslado no prueba recepción posterior, incorporación, examen, adopción, utilización, pago elegible, uso indebido, conocimiento personal, dolo, causalidad, organización criminal, delito ni culpabilidad.",
+      "summary_en": "The signed implementation notice records partial access moving into staged delivery, including the first controlled tranche.",
+      "summary_es": "La notificación firmada de ejecución consigna el paso del acceso parcial a entrega escalonada, incluida la primera tanda controlada.",
+      "canonical_anchor_es": "es/ingenieria-inversa-criminal-unitaria/#communication-PD-SP-EVT-0155",
+      "canonical_anchor_en": "en/unitary-criminal-reverse-engineering/#communication-PD-SP-EVT-0155",
+      "public_derivative_state": "PUBLIC_SAFE_MINIMISED_DERIVATIVE",
+      "criminal_relevance_state": "OPEN_HYPOTHESIS_LINK",
+      "criminal_responsibility_transfer": false
+    },
+    {
+      "event_id": "PD-SP-EVT-0156",
+      "legacy_evidence_ids": [],
+      "date": "2026-07-30",
+      "direction": "OUTBOUND_TO_INSTITUTION",
+      "channel": "REGAGE",
+      "record_type": "REGISTRATION_RECEIPT",
+      "official_reference": "REGAGE26e00069678966",
+      "primary_authority_tier_id": "ES_STATE",
+      "tier_resolution_state": "CONFIRMED",
+      "institution_label": "SNCA / AFCOS registry route",
+      "institution_id": null,
+      "institution_identity_state": "CARET_PENDING",
+      "master_ids": [
+        "X-EU-003"
+      ],
+      "context_master_ids": [],
+      "master_link_state": "RESOLVED",
+      "authority_stage_ids": [
+        "AUTH-UCF-009"
+      ],
+      "track_ids": [
+        "T13",
+        "T14",
+        "T15",
+        "T17",
+        "T18"
+      ],
+      "gap_ids": [
+        "PD-GAP-UCF-009",
+        "PD-GAP-UCF-012",
+        "PD-GAP-UCF-015",
+        "PD-GAP-UCF-016"
+      ],
+      "evidence_classes": [
+        "NOTICE",
+        "OPEN"
+      ],
+      "handling_state": {
+        "adoption": "NOT_PROVEN",
+        "benefit_or_loss": "NOT_PROVEN",
+        "causation": "NOT_PROVEN",
+        "decision_or_use": "NOT_PROVEN",
+        "delivery": "OPEN",
+        "effect": "NOT_PROVEN",
+        "examination": "OPEN",
+        "incorporation": "OPEN",
+        "registration": "PROVEN",
+        "routing": "OPEN",
+        "transmission": "PROVEN",
+        "verification_or_rejection": "NOT_PROVEN"
+      },
+      "source_anchor": "es/snca-fondos-europeos-trazabilidad/index.html",
+      "proves_en": "The receipt proves formal presentation to the stated Spanish registry route.",
+      "proves_es": "El acuse prueba la presentación formal a la ruta registral española indicada.",
+      "does_not_prove_en": "Registration, notice or routing does not prove downstream receipt, incorporation, examination, adoption, reliance, a qualifying payment, misuse, personal knowledge, intent, causation, criminal organisation, offence or guilt.",
+      "does_not_prove_es": "El registro, aviso o traslado no prueba recepción posterior, incorporación, examen, adopción, utilización, pago elegible, uso indebido, conocimiento personal, dolo, causalidad, organización criminal, delito ni culpabilidad.",
+      "summary_en": "A controlled registration receipt is linked to the Spanish national antifraud-coordination file 141-2026-IRR02.",
+      "summary_es": "Un acuse de registro controlado se vincula al expediente español de coordinación antifraude 141-2026-IRR02.",
+      "canonical_anchor_es": "es/ingenieria-inversa-criminal-unitaria/#communication-PD-SP-EVT-0156",
+      "canonical_anchor_en": "en/unitary-criminal-reverse-engineering/#communication-PD-SP-EVT-0156",
+      "public_derivative_state": "PUBLIC_SAFE_MINIMISED_DERIVATIVE",
+      "criminal_relevance_state": "OPEN_HYPOTHESIS_LINK",
+      "criminal_responsibility_transfer": false
+    },
+    {
+      "event_id": "PD-SP-EVT-0157",
+      "legacy_evidence_ids": [],
+      "date": "2026-07-30",
+      "direction": "INBOUND_FROM_INSTITUTION",
+      "channel": "OFFICIAL_RESPONSE",
+      "record_type": "INSTITUTIONAL_ACKNOWLEDGEMENT",
+      "official_reference": "141-2026-IRR02",
+      "primary_authority_tier_id": "ES_STATE",
+      "tier_resolution_state": "CONFIRMED",
+      "institution_label": "SNCA / AFCOS",
+      "institution_id": null,
+      "institution_identity_state": "CARET_PENDING",
+      "master_ids": [
+        "X-EU-003"
+      ],
+      "context_master_ids": [],
+      "master_link_state": "RESOLVED",
+      "authority_stage_ids": [
+        "AUTH-UCF-009"
+      ],
+      "track_ids": [
+        "T13",
+        "T14",
+        "T15",
+        "T17",
+        "T18"
+      ],
+      "gap_ids": [
+        "PD-GAP-UCF-009",
+        "PD-GAP-UCF-012",
+        "PD-GAP-UCF-015",
+        "PD-GAP-UCF-016"
+      ],
+      "evidence_classes": [
+        "DOC",
+        "NOTICE",
+        "OPEN"
+      ],
+      "handling_state": {
+        "adoption": "NOT_PROVEN",
+        "benefit_or_loss": "NOT_PROVEN",
+        "causation": "NOT_PROVEN",
+        "decision_or_use": "ONLY_THE_LOCATED_PROCEDURAL_ACT",
+        "delivery": "PROVEN_BY_LOCATED_RECEIPT_OR_NOTICE",
+        "effect": "NOT_PROVEN",
+        "examination": "ONLY_AS_STATED_IN_SOURCE",
+        "incorporation": "OPEN",
+        "registration": "ONLY_AS_STATED_IN_SOURCE",
+        "routing": "ONLY_AS_STATED_IN_SOURCE",
+        "transmission": "PROVEN",
+        "verification_or_rejection": "NOT_PROVEN"
+      },
+      "source_anchor": "es/snca-fondos-europeos-trazabilidad/index.html",
+      "proves_en": "The identifiable file and the response's stated channel and scope are controlled.",
+      "proves_es": "Se controlan el expediente identificable y el canal y alcance declarados por la respuesta.",
+      "does_not_prove_en": "Registration, notice or routing does not prove downstream receipt, incorporation, examination, adoption, reliance, a qualifying payment, misuse, personal knowledge, intent, causation, criminal organisation, offence or guilt.",
+      "does_not_prove_es": "El registro, aviso o traslado no prueba recepción posterior, incorporación, examen, adopción, utilización, pago elegible, uso indebido, conocimiento personal, dolo, causalidad, organización criminal, delito ni culpabilidad.",
+      "summary_en": "The located response identifies the file and supplies general channel and competence material; the concrete EU-funds nexus and treatment remain open.",
+      "summary_es": "La respuesta localizada identifica el expediente y aporta material general sobre canal y competencia; el nexo concreto con fondos UE y su tratamiento siguen abiertos.",
+      "canonical_anchor_es": "es/ingenieria-inversa-criminal-unitaria/#communication-PD-SP-EVT-0157",
+      "canonical_anchor_en": "en/unitary-criminal-reverse-engineering/#communication-PD-SP-EVT-0157",
+      "public_derivative_state": "PUBLIC_SAFE_MINIMISED_DERIVATIVE",
+      "criminal_relevance_state": "OPEN_HYPOTHESIS_LINK",
+      "criminal_responsibility_transfer": false
+    }
+  ],
+  "by_evidence_id": {
+    "PD-SP-EVT-0004": {
+      "primary_authority_tier_id": "EU_SUPRANATIONAL",
+      "institution_identity_state": "CARET_PENDING",
+      "master_ids": [],
+      "authority_stage_ids": [
+        "AUTH-UCF-009"
+      ],
+      "track_ids": [
+        "T15",
+        "T17",
+        "T18"
+      ],
+      "gap_ids": [
+        "PD-GAP-UCF-009",
+        "PD-GAP-UCF-012",
+        "PD-GAP-UCF-015",
+        "PD-GAP-UCF-016"
+      ],
+      "canonical_anchor_es": "es/ingenieria-inversa-criminal-unitaria/#communication-PD-SP-EVT-0004",
+      "canonical_anchor_en": "en/unitary-criminal-reverse-engineering/#communication-PD-SP-EVT-0004"
+    },
+    "PD-SP-EVT-0014": {
+      "primary_authority_tier_id": "EU_SUPRANATIONAL",
+      "institution_identity_state": "CARET_PENDING",
+      "master_ids": [],
+      "authority_stage_ids": [
+        "AUTH-UCF-009"
+      ],
+      "track_ids": [
+        "T15",
+        "T17",
+        "T18"
+      ],
+      "gap_ids": [
+        "PD-GAP-UCF-009",
+        "PD-GAP-UCF-012",
+        "PD-GAP-UCF-015",
+        "PD-GAP-UCF-016"
+      ],
+      "canonical_anchor_es": "es/ingenieria-inversa-criminal-unitaria/#communication-PD-SP-EVT-0014",
+      "canonical_anchor_en": "en/unitary-criminal-reverse-engineering/#communication-PD-SP-EVT-0014"
+    },
+    "PD-SP-EVT-0141": {
+      "primary_authority_tier_id": "ES_CANARY_AUTONOMOUS",
+      "institution_identity_state": "CARET_PENDING",
+      "master_ids": [
+        "X-INT-004"
+      ],
+      "authority_stage_ids": [
+        "AUTH-UCF-005",
+        "AUTH-UCF-009",
+        "AUTH-UCF-010"
+      ],
+      "track_ids": [
+        "T08",
+        "T14",
+        "T15",
+        "T17",
+        "T18"
+      ],
+      "gap_ids": [
+        "PD-GAP-UCF-015",
+        "PD-GAP-UCF-016"
+      ],
+      "canonical_anchor_es": "es/ingenieria-inversa-criminal-unitaria/#communication-PD-SP-EVT-0141",
+      "canonical_anchor_en": "en/unitary-criminal-reverse-engineering/#communication-PD-SP-EVT-0141"
+    },
+    "PD-SP-EVT-0142": {
+      "primary_authority_tier_id": "ES_CANARY_AUTONOMOUS",
+      "institution_identity_state": "CARET_PENDING",
+      "master_ids": [
+        "X-INT-004"
+      ],
+      "authority_stage_ids": [
+        "AUTH-UCF-009"
+      ],
+      "track_ids": [
+        "T13",
+        "T14",
+        "T15",
+        "T17",
+        "T18"
+      ],
+      "gap_ids": [
+        "PD-GAP-UCF-009",
+        "PD-GAP-UCF-012",
+        "PD-GAP-UCF-015",
+        "PD-GAP-UCF-016"
+      ],
+      "canonical_anchor_es": "es/ingenieria-inversa-criminal-unitaria/#communication-PD-SP-EVT-0142",
+      "canonical_anchor_en": "en/unitary-criminal-reverse-engineering/#communication-PD-SP-EVT-0142"
+    },
+    "PD-SP-EVT-0143": {
+      "primary_authority_tier_id": "ES_CANARY_AUTONOMOUS",
+      "institution_identity_state": "CARET_PENDING",
+      "master_ids": [
+        "X-INT-004"
+      ],
+      "authority_stage_ids": [
+        "AUTH-UCF-009"
+      ],
+      "track_ids": [
+        "T13",
+        "T14",
+        "T15",
+        "T17",
+        "T18"
+      ],
+      "gap_ids": [
+        "PD-GAP-UCF-009",
+        "PD-GAP-UCF-012",
+        "PD-GAP-UCF-015",
+        "PD-GAP-UCF-016"
+      ],
+      "canonical_anchor_es": "es/ingenieria-inversa-criminal-unitaria/#communication-PD-SP-EVT-0143",
+      "canonical_anchor_en": "en/unitary-criminal-reverse-engineering/#communication-PD-SP-EVT-0143"
+    },
+    "PD-SP-EVT-0144": {
+      "primary_authority_tier_id": "ES_CANARY_AUTONOMOUS",
+      "institution_identity_state": "CARET_PENDING",
+      "master_ids": [
+        "NAT-AID-001"
+      ],
+      "authority_stage_ids": [
+        "AUTH-UCF-009"
+      ],
+      "track_ids": [
+        "T13",
+        "T14",
+        "T15",
+        "T17",
+        "T18"
+      ],
+      "gap_ids": [
+        "PD-GAP-UCF-009",
+        "PD-GAP-UCF-012",
+        "PD-GAP-UCF-015",
+        "PD-GAP-UCF-016"
+      ],
+      "canonical_anchor_es": "es/ingenieria-inversa-criminal-unitaria/#communication-PD-SP-EVT-0144",
+      "canonical_anchor_en": "en/unitary-criminal-reverse-engineering/#communication-PD-SP-EVT-0144"
+    },
+    "PD-SP-EVT-0145": {
+      "primary_authority_tier_id": "ES_CANARY_AUTONOMOUS",
+      "institution_identity_state": "CARET_PENDING",
+      "master_ids": [
+        "LZ-TRA-028"
+      ],
+      "authority_stage_ids": [
+        "AUTH-UCF-009"
+      ],
+      "track_ids": [
+        "T13",
+        "T14",
+        "T15",
+        "T17",
+        "T18"
+      ],
+      "gap_ids": [
+        "PD-GAP-UCF-009",
+        "PD-GAP-UCF-012",
+        "PD-GAP-UCF-015",
+        "PD-GAP-UCF-016"
+      ],
+      "canonical_anchor_es": "es/ingenieria-inversa-criminal-unitaria/#communication-PD-SP-EVT-0145",
+      "canonical_anchor_en": "en/unitary-criminal-reverse-engineering/#communication-PD-SP-EVT-0145"
+    },
+    "PD-SP-EVT-0146": {
+      "primary_authority_tier_id": "ES_CANARY_AUTONOMOUS",
+      "institution_identity_state": "CARET_PENDING",
+      "master_ids": [],
+      "authority_stage_ids": [
+        "AUTH-UCF-009"
+      ],
+      "track_ids": [
+        "T13",
+        "T14",
+        "T15",
+        "T17",
+        "T18"
+      ],
+      "gap_ids": [
+        "PD-GAP-UCF-009",
+        "PD-GAP-UCF-012",
+        "PD-GAP-UCF-015",
+        "PD-GAP-UCF-016"
+      ],
+      "canonical_anchor_es": "es/ingenieria-inversa-criminal-unitaria/#communication-PD-SP-EVT-0146",
+      "canonical_anchor_en": "en/unitary-criminal-reverse-engineering/#communication-PD-SP-EVT-0146"
+    },
+    "PD-SP-EVT-0147": {
+      "primary_authority_tier_id": "ES_STATE",
+      "institution_identity_state": "CARET_CONFIRMED",
+      "master_ids": [],
+      "authority_stage_ids": [
+        "AUTH-UCF-009"
+      ],
+      "track_ids": [
+        "T13",
+        "T14",
+        "T15",
+        "T17",
+        "T18"
+      ],
+      "gap_ids": [
+        "PD-GAP-UCF-009",
+        "PD-GAP-UCF-012",
+        "PD-GAP-UCF-015",
+        "PD-GAP-UCF-016"
+      ],
+      "canonical_anchor_es": "es/ingenieria-inversa-criminal-unitaria/#communication-PD-SP-EVT-0147",
+      "canonical_anchor_en": "en/unitary-criminal-reverse-engineering/#communication-PD-SP-EVT-0147"
+    },
+    "PD-SP-EVT-0148": {
+      "primary_authority_tier_id": "ES_CANARY_AUTONOMOUS",
+      "institution_identity_state": "CARET_PENDING",
+      "master_ids": [
+        "NAT-AID-001"
+      ],
+      "authority_stage_ids": [
+        "AUTH-UCF-009"
+      ],
+      "track_ids": [
+        "T13",
+        "T14",
+        "T15",
+        "T17",
+        "T18"
+      ],
+      "gap_ids": [
+        "PD-GAP-UCF-009",
+        "PD-GAP-UCF-012",
+        "PD-GAP-UCF-015",
+        "PD-GAP-UCF-016"
+      ],
+      "canonical_anchor_es": "es/ingenieria-inversa-criminal-unitaria/#communication-PD-SP-EVT-0148",
+      "canonical_anchor_en": "en/unitary-criminal-reverse-engineering/#communication-PD-SP-EVT-0148"
+    },
+    "PD-SP-EVT-0149": {
+      "primary_authority_tier_id": "ES_STATE",
+      "institution_identity_state": "CARET_PENDING",
+      "master_ids": [
+        "NAT-AID-001"
+      ],
+      "authority_stage_ids": [
+        "AUTH-UCF-009"
+      ],
+      "track_ids": [
+        "T13",
+        "T14",
+        "T15",
+        "T17",
+        "T18"
+      ],
+      "gap_ids": [
+        "PD-GAP-UCF-009",
+        "PD-GAP-UCF-012",
+        "PD-GAP-UCF-015",
+        "PD-GAP-UCF-016"
+      ],
+      "canonical_anchor_es": "es/ingenieria-inversa-criminal-unitaria/#communication-PD-SP-EVT-0149",
+      "canonical_anchor_en": "en/unitary-criminal-reverse-engineering/#communication-PD-SP-EVT-0149"
+    },
+    "PD-SP-EVT-0150": {
+      "primary_authority_tier_id": "ES_CANARY_AUTONOMOUS",
+      "institution_identity_state": "CARET_PENDING",
+      "master_ids": [],
+      "authority_stage_ids": [
+        "AUTH-UCF-009"
+      ],
+      "track_ids": [
+        "T13",
+        "T14",
+        "T15",
+        "T17",
+        "T18"
+      ],
+      "gap_ids": [
+        "PD-GAP-UCF-009",
+        "PD-GAP-UCF-012",
+        "PD-GAP-UCF-015",
+        "PD-GAP-UCF-016"
+      ],
+      "canonical_anchor_es": "es/ingenieria-inversa-criminal-unitaria/#communication-PD-SP-EVT-0150",
+      "canonical_anchor_en": "en/unitary-criminal-reverse-engineering/#communication-PD-SP-EVT-0150"
+    },
+    "PD-SP-EVT-0151": {
+      "primary_authority_tier_id": "ES_STATE",
+      "institution_identity_state": "CARET_PENDING",
+      "master_ids": [],
+      "authority_stage_ids": [
+        "AUTH-UCF-009"
+      ],
+      "track_ids": [
+        "T13",
+        "T14",
+        "T15",
+        "T17",
+        "T18"
+      ],
+      "gap_ids": [
+        "PD-GAP-UCF-009",
+        "PD-GAP-UCF-012",
+        "PD-GAP-UCF-015",
+        "PD-GAP-UCF-016"
+      ],
+      "canonical_anchor_es": "es/ingenieria-inversa-criminal-unitaria/#communication-PD-SP-EVT-0151",
+      "canonical_anchor_en": "en/unitary-criminal-reverse-engineering/#communication-PD-SP-EVT-0151"
+    },
+    "PD-SP-EVT-0152": {
+      "primary_authority_tier_id": "ES_STATE",
+      "institution_identity_state": "CARET_PENDING",
+      "master_ids": [],
+      "authority_stage_ids": [
+        "AUTH-UCF-009"
+      ],
+      "track_ids": [
+        "T13",
+        "T14",
+        "T15",
+        "T17",
+        "T18"
+      ],
+      "gap_ids": [
+        "PD-GAP-UCF-009",
+        "PD-GAP-UCF-012",
+        "PD-GAP-UCF-015",
+        "PD-GAP-UCF-016"
+      ],
+      "canonical_anchor_es": "es/ingenieria-inversa-criminal-unitaria/#communication-PD-SP-EVT-0152",
+      "canonical_anchor_en": "en/unitary-criminal-reverse-engineering/#communication-PD-SP-EVT-0152"
+    },
+    "PD-SP-EVT-0153": {
+      "primary_authority_tier_id": "ES_LOCAL_MUNICIPAL",
+      "institution_identity_state": "CARET_CONFIRMED",
+      "master_ids": [
+        "LZ-YAI-031"
+      ],
+      "authority_stage_ids": [
+        "AUTH-UCF-010"
+      ],
+      "track_ids": [
+        "T16",
+        "T17",
+        "T18"
+      ],
+      "gap_ids": [
+        "PD-GAP-UCF-010",
+        "PD-GAP-UCF-015"
+      ],
+      "canonical_anchor_es": "es/ingenieria-inversa-criminal-unitaria/#communication-PD-SP-EVT-0153",
+      "canonical_anchor_en": "en/unitary-criminal-reverse-engineering/#communication-PD-SP-EVT-0153"
+    },
+    "PD-SP-EVT-0154": {
+      "primary_authority_tier_id": "ES_ISLAND_CABILDO",
+      "institution_identity_state": "CARET_CONFIRMED",
+      "master_ids": [
+        "LZ-CAB-025"
+      ],
+      "authority_stage_ids": [
+        "AUTH-UCF-010"
+      ],
+      "track_ids": [
+        "T16",
+        "T17",
+        "T18"
+      ],
+      "gap_ids": [
+        "PD-GAP-UCF-010",
+        "PD-GAP-UCF-015"
+      ],
+      "canonical_anchor_es": "es/ingenieria-inversa-criminal-unitaria/#communication-PD-SP-EVT-0154",
+      "canonical_anchor_en": "en/unitary-criminal-reverse-engineering/#communication-PD-SP-EVT-0154"
+    },
+    "PD-SP-EVT-0155": {
+      "primary_authority_tier_id": "ES_CANARY_AUTONOMOUS",
+      "institution_identity_state": "CARET_PENDING",
+      "master_ids": [
+        "NAT-TES-001"
+      ],
+      "authority_stage_ids": [
+        "AUTH-UCF-009"
+      ],
+      "track_ids": [
+        "T13",
+        "T14",
+        "T17",
+        "T18"
+      ],
+      "gap_ids": [
+        "PD-GAP-UCF-009",
+        "PD-GAP-UCF-012",
+        "PD-GAP-UCF-015"
+      ],
+      "canonical_anchor_es": "es/ingenieria-inversa-criminal-unitaria/#communication-PD-SP-EVT-0155",
+      "canonical_anchor_en": "en/unitary-criminal-reverse-engineering/#communication-PD-SP-EVT-0155"
+    },
+    "PD-SP-EVT-0156": {
+      "primary_authority_tier_id": "ES_STATE",
+      "institution_identity_state": "CARET_PENDING",
+      "master_ids": [
+        "X-EU-003"
+      ],
+      "authority_stage_ids": [
+        "AUTH-UCF-009"
+      ],
+      "track_ids": [
+        "T13",
+        "T14",
+        "T15",
+        "T17",
+        "T18"
+      ],
+      "gap_ids": [
+        "PD-GAP-UCF-009",
+        "PD-GAP-UCF-012",
+        "PD-GAP-UCF-015",
+        "PD-GAP-UCF-016"
+      ],
+      "canonical_anchor_es": "es/ingenieria-inversa-criminal-unitaria/#communication-PD-SP-EVT-0156",
+      "canonical_anchor_en": "en/unitary-criminal-reverse-engineering/#communication-PD-SP-EVT-0156"
+    },
+    "PD-SP-EVT-0157": {
+      "primary_authority_tier_id": "ES_STATE",
+      "institution_identity_state": "CARET_PENDING",
+      "master_ids": [
+        "X-EU-003"
+      ],
+      "authority_stage_ids": [
+        "AUTH-UCF-009"
+      ],
+      "track_ids": [
+        "T13",
+        "T14",
+        "T15",
+        "T17",
+        "T18"
+      ],
+      "gap_ids": [
+        "PD-GAP-UCF-009",
+        "PD-GAP-UCF-012",
+        "PD-GAP-UCF-015",
+        "PD-GAP-UCF-016"
+      ],
+      "canonical_anchor_es": "es/ingenieria-inversa-criminal-unitaria/#communication-PD-SP-EVT-0157",
+      "canonical_anchor_en": "en/unitary-criminal-reverse-engineering/#communication-PD-SP-EVT-0157"
+    }
+  },
+  "communication_scan_control": {
+    "canonical_authority_events": 19,
+    "checkpoint_path": "ops/PUBLIC_AUTHORITY_COMMUNICATIONS_SCAN_CHECKPOINT_20260901.json",
+    "checkpoint_sha256": "cead64dfc04f5a32cb39cc28b292b61e93e261a36aa8d2753f4ecc4e7cc60352",
+    "drive_unique_documents_across_lanes": 326,
+    "existing_reused_event_ids": [
+      "PD-SP-EVT-0004",
+      "PD-SP-EVT-0014"
+    ],
+    "gmail_unique_messages_across_lanes": 5514,
+    "new_event_ids": [
+      "PD-SP-EVT-0141",
+      "PD-SP-EVT-0142",
+      "PD-SP-EVT-0143",
+      "PD-SP-EVT-0144",
+      "PD-SP-EVT-0145",
+      "PD-SP-EVT-0146",
+      "PD-SP-EVT-0147",
+      "PD-SP-EVT-0148",
+      "PD-SP-EVT-0149",
+      "PD-SP-EVT-0150",
+      "PD-SP-EVT-0151",
+      "PD-SP-EVT-0152",
+      "PD-SP-EVT-0153",
+      "PD-SP-EVT-0154",
+      "PD-SP-EVT-0155",
+      "PD-SP-EVT-0156",
+      "PD-SP-EVT-0157"
+    ],
+    "scope_status": "BOUNDED_METADATA_CENSUS_COMPLETE_ITEM_LEVEL_MERITS_REVIEW_OPEN",
+    "universal_completeness_claim": false,
+    "proof_boundary_en": "Search hits and document matches are discovery leads. A sent item proves only the located transport state; a REGAGE receipt proves formal presentation to the stated registry; an official routing notice proves only the routing stated in that notice. None alone proves downstream delivery, incorporation, examination, adoption, reliance, personal knowledge, intent, causation, criminal organisation, offence or guilt.",
+    "proof_boundary_es": "Los resultados de búsqueda son pistas. Transporte, registro, entrega, remisión, incorporación, examen, adopción, utilización, conocimiento, dolo, causalidad y responsabilidad requieren fuentes separadas.",
+    "responsibility_boundary_en": "Apparent authority and documents may propagate as inputs; criminal responsibility never propagates through an ACTA, communication, referral, office or tier.",
+    "responsibility_boundary_es": "La autoridad aparente y los documentos pueden propagarse como insumos; la responsabilidad penal nunca se propaga por ACTA, comunicación, traslado, órgano o nivel."
+  },
   "authority_groups": [
     {
       "id": "LOCAL_TOURISM_WORKS",
@@ -1122,7 +2895,17 @@
       "proposition_links": [],
       "relationship_strength": "DEPENDENCY_TEST_ONLY",
       "boundary_en": "Shared subject matter can justify a dependency test; it does not prove that any file received or relied on the 2022 ACTA.",
-      "boundary_es": "La materia compartida puede justificar una prueba de dependencia; no demuestra que expediente alguno recibiera o utilizara el ACTA de 2022."
+      "boundary_es": "La materia compartida puede justificar una prueba de dependencia; no demuestra que expediente alguno recibiera o utilizara el ACTA de 2022.",
+      "communication_event_ids": [
+        "PD-SP-EVT-0154"
+      ],
+      "unitary_authority_stage_ids": [
+        "AUTH-UCF-010"
+      ],
+      "unitary_gap_ids": [
+        "PD-GAP-UCF-010",
+        "PD-GAP-UCF-015"
+      ]
     },
     {
       "master_id": "LZ-PRO-029",
@@ -1188,7 +2971,19 @@
       "proposition_links": [],
       "relationship_strength": "DEPENDENCY_TEST_ONLY",
       "boundary_en": "Access, transparency and ombudsman treatment do not establish the truth of the underlying allegations.",
-      "boundary_es": "La tramitación de acceso, transparencia o defensoría no acredita la veracidad de las alegaciones subyacentes."
+      "boundary_es": "La tramitación de acceso, transparencia o defensoría no acredita la veracidad de las alegaciones subyacentes.",
+      "communication_event_ids": [
+        "PD-SP-EVT-0145"
+      ],
+      "unitary_authority_stage_ids": [
+        "AUTH-UCF-009"
+      ],
+      "unitary_gap_ids": [
+        "PD-GAP-UCF-009",
+        "PD-GAP-UCF-012",
+        "PD-GAP-UCF-015",
+        "PD-GAP-UCF-016"
+      ]
     },
     {
       "master_id": "LZ-TRA-032",
@@ -1440,7 +3235,17 @@
       "proposition_links": [],
       "relationship_strength": "DEPENDENCY_TEST_ONLY",
       "boundary_en": "Shared subject matter can justify a dependency test; it does not prove that any file received or relied on the 2022 ACTA.",
-      "boundary_es": "La materia compartida puede justificar una prueba de dependencia; no demuestra que expediente alguno recibiera o utilizara el ACTA de 2022."
+      "boundary_es": "La materia compartida puede justificar una prueba de dependencia; no demuestra que expediente alguno recibiera o utilizara el ACTA de 2022.",
+      "communication_event_ids": [
+        "PD-SP-EVT-0153"
+      ],
+      "unitary_authority_stage_ids": [
+        "AUTH-UCF-010"
+      ],
+      "unitary_gap_ids": [
+        "PD-GAP-UCF-010",
+        "PD-GAP-UCF-015"
+      ]
     },
     {
       "master_id": "LZ-YAI-037",
@@ -1691,7 +3496,21 @@
       ],
       "relationship_strength": "DEPENDENCY_TEST_ONLY",
       "boundary_en": "Programme identity, grant, audit and routing records remain legally separate; no payment, overlap, misuse, false certification or recovery is inferred.",
-      "boundary_es": "La identidad de programa y los registros de concesión, auditoría y remisión siguen separados; no se infiere pago, solapamiento, uso indebido, certificación falsa ni reintegro."
+      "boundary_es": "La identidad de programa y los registros de concesión, auditoría y remisión siguen separados; no se infiere pago, solapamiento, uso indebido, certificación falsa ni reintegro.",
+      "communication_event_ids": [
+        "PD-SP-EVT-0144",
+        "PD-SP-EVT-0148",
+        "PD-SP-EVT-0149"
+      ],
+      "unitary_authority_stage_ids": [
+        "AUTH-UCF-009"
+      ],
+      "unitary_gap_ids": [
+        "PD-GAP-UCF-009",
+        "PD-GAP-UCF-012",
+        "PD-GAP-UCF-015",
+        "PD-GAP-UCF-016"
+      ]
     },
     {
       "master_id": "NAT-CNMV-001",
@@ -1770,7 +3589,18 @@
       ],
       "relationship_strength": "DEPENDENCY_TEST_ONLY",
       "boundary_en": "Programme identity, grant, audit and routing records remain legally separate; no payment, overlap, misuse, false certification or recovery is inferred.",
-      "boundary_es": "La identidad de programa y los registros de concesión, auditoría y remisión siguen separados; no se infiere pago, solapamiento, uso indebido, certificación falsa ni reintegro."
+      "boundary_es": "La identidad de programa y los registros de concesión, auditoría y remisión siguen separados; no se infiere pago, solapamiento, uso indebido, certificación falsa ni reintegro.",
+      "communication_event_ids": [
+        "PD-SP-EVT-0155"
+      ],
+      "unitary_authority_stage_ids": [
+        "AUTH-UCF-009"
+      ],
+      "unitary_gap_ids": [
+        "PD-GAP-UCF-009",
+        "PD-GAP-UCF-012",
+        "PD-GAP-UCF-015"
+      ]
     },
     {
       "master_id": "X-EU-003",
@@ -1794,7 +3624,20 @@
       "proposition_links": [],
       "relationship_strength": "DEPENDENCY_TEST_ONLY",
       "boundary_en": "Programme identity, grant, audit and routing records remain legally separate; no payment, overlap, misuse, false certification or recovery is inferred.",
-      "boundary_es": "La identidad de programa y los registros de concesión, auditoría y remisión siguen separados; no se infiere pago, solapamiento, uso indebido, certificación falsa ni reintegro."
+      "boundary_es": "La identidad de programa y los registros de concesión, auditoría y remisión siguen separados; no se infiere pago, solapamiento, uso indebido, certificación falsa ni reintegro.",
+      "communication_event_ids": [
+        "PD-SP-EVT-0156",
+        "PD-SP-EVT-0157"
+      ],
+      "unitary_authority_stage_ids": [
+        "AUTH-UCF-009"
+      ],
+      "unitary_gap_ids": [
+        "PD-GAP-UCF-009",
+        "PD-GAP-UCF-012",
+        "PD-GAP-UCF-015",
+        "PD-GAP-UCF-016"
+      ]
     },
     {
       "master_id": "X-INT-004",
@@ -1802,13 +3645,13 @@
       "stream": "Intervención General",
       "organ": "Intervención General de Canarias",
       "current_custodian": "Intervención General de Canarias",
-      "reference": "184368/2026; 497011/2026",
+      "reference": "184368/2026; 497011/2026; 699645/2026",
       "period": "2026",
       "connection": "Regional internal control/routing",
-      "object": "Output/routing references; not established as separate merits proceedings",
-      "status": "Examination/routing within stated competence documented",
+      "object": "Three output/routing references; not established as separate merits proceedings",
+      "status": "Examination/routing within stated competence documented; 699645/2026 narrows the earlier no-funds/no-files reading",
       "source_status": "VERIFIED_PRIMARY",
-      "open_reference_gap": "Underlying file/custody if distinct from output references",
+      "open_reference_gap": "Underlying file/custody if distinct from output references and native signed 699645/2026 source",
       "group_id": "PUBLIC_FUNDS_INTERNAL_CONTROL",
       "axis_ids": [
         "AX-FUNDING",
@@ -1818,7 +3661,29 @@
       "proposition_links": [],
       "relationship_strength": "DEPENDENCY_TEST_ONLY",
       "boundary_en": "Programme identity, grant, audit and routing records remain legally separate; no payment, overlap, misuse, false certification or recovery is inferred.",
-      "boundary_es": "La identidad de programa y los registros de concesión, auditoría y remisión siguen separados; no se infiere pago, solapamiento, uso indebido, certificación falsa ni reintegro."
+      "boundary_es": "La identidad de programa y los registros de concesión, auditoría y remisión siguen separados; no se infiere pago, solapamiento, uso indebido, certificación falsa ni reintegro.",
+      "communication_event_ids": [
+        "PD-SP-EVT-0141",
+        "PD-SP-EVT-0142",
+        "PD-SP-EVT-0143"
+      ],
+      "unitary_authority_stage_ids": [
+        "AUTH-UCF-005",
+        "AUTH-UCF-009",
+        "AUTH-UCF-010"
+      ],
+      "unitary_gap_ids": [
+        "PD-GAP-UCF-009",
+        "PD-GAP-UCF-012",
+        "PD-GAP-UCF-015",
+        "PD-GAP-UCF-016"
+      ],
+      "canonical_evidence_refs": [
+        "PD-EV-UCF-INT-184368-2026",
+        "PD-SP-EVT-0141",
+        "PD-SP-EVT-0142",
+        "PD-SP-EVT-0143"
+      ]
     },
     {
       "master_id": "X-REG-001",
@@ -2108,7 +3973,17 @@
       "proposition_ids": [],
       "relationship_strength": "DEPENDENCY_TEST_ONLY",
       "boundary_en": "This reciprocal link exposes the applicable evidence questions; it does not prove ACTA delivery, receipt, examination, reliance, knowledge or merits.",
-      "boundary_es": "Este enlace recíproco expone las preguntas probatorias aplicables; no prueba entrega, recepción, examen, utilización, conocimiento ni fondo del ACTA."
+      "boundary_es": "Este enlace recíproco expone las preguntas probatorias aplicables; no prueba entrega, recepción, examen, utilización, conocimiento ni fondo del ACTA.",
+      "communication_event_ids": [
+        "PD-SP-EVT-0154"
+      ],
+      "unitary_authority_stage_ids": [
+        "AUTH-UCF-010"
+      ],
+      "unitary_gap_ids": [
+        "PD-GAP-UCF-010",
+        "PD-GAP-UCF-015"
+      ]
     },
     "LZ-PRO-029": {
       "group_id": "PROFESSIONAL_OVERSIGHT",
@@ -2138,7 +4013,19 @@
       "proposition_ids": [],
       "relationship_strength": "DEPENDENCY_TEST_ONLY",
       "boundary_en": "This reciprocal link exposes the applicable evidence questions; it does not prove ACTA delivery, receipt, examination, reliance, knowledge or merits.",
-      "boundary_es": "Este enlace recíproco expone las preguntas probatorias aplicables; no prueba entrega, recepción, examen, utilización, conocimiento ni fondo del ACTA."
+      "boundary_es": "Este enlace recíproco expone las preguntas probatorias aplicables; no prueba entrega, recepción, examen, utilización, conocimiento ni fondo del ACTA.",
+      "communication_event_ids": [
+        "PD-SP-EVT-0145"
+      ],
+      "unitary_authority_stage_ids": [
+        "AUTH-UCF-009"
+      ],
+      "unitary_gap_ids": [
+        "PD-GAP-UCF-009",
+        "PD-GAP-UCF-012",
+        "PD-GAP-UCF-015",
+        "PD-GAP-UCF-016"
+      ]
     },
     "LZ-TRA-032": {
       "group_id": "TRANSPARENCY_OMBUDSMAN",
@@ -2258,7 +4145,17 @@
       "proposition_ids": [],
       "relationship_strength": "DEPENDENCY_TEST_ONLY",
       "boundary_en": "This reciprocal link exposes the applicable evidence questions; it does not prove ACTA delivery, receipt, examination, reliance, knowledge or merits.",
-      "boundary_es": "Este enlace recíproco expone las preguntas probatorias aplicables; no prueba entrega, recepción, examen, utilización, conocimiento ni fondo del ACTA."
+      "boundary_es": "Este enlace recíproco expone las preguntas probatorias aplicables; no prueba entrega, recepción, examen, utilización, conocimiento ni fondo del ACTA.",
+      "communication_event_ids": [
+        "PD-SP-EVT-0153"
+      ],
+      "unitary_authority_stage_ids": [
+        "AUTH-UCF-010"
+      ],
+      "unitary_gap_ids": [
+        "PD-GAP-UCF-010",
+        "PD-GAP-UCF-015"
+      ]
     },
     "LZ-YAI-037": {
       "group_id": "LOCAL_TOURISM_WORKS",
@@ -2368,7 +4265,21 @@
       ],
       "relationship_strength": "DEPENDENCY_TEST_ONLY",
       "boundary_en": "This reciprocal link exposes the applicable evidence questions; it does not prove ACTA delivery, receipt, examination, reliance, knowledge or merits.",
-      "boundary_es": "Este enlace recíproco expone las preguntas probatorias aplicables; no prueba entrega, recepción, examen, utilización, conocimiento ni fondo del ACTA."
+      "boundary_es": "Este enlace recíproco expone las preguntas probatorias aplicables; no prueba entrega, recepción, examen, utilización, conocimiento ni fondo del ACTA.",
+      "communication_event_ids": [
+        "PD-SP-EVT-0144",
+        "PD-SP-EVT-0148",
+        "PD-SP-EVT-0149"
+      ],
+      "unitary_authority_stage_ids": [
+        "AUTH-UCF-009"
+      ],
+      "unitary_gap_ids": [
+        "PD-GAP-UCF-009",
+        "PD-GAP-UCF-012",
+        "PD-GAP-UCF-015",
+        "PD-GAP-UCF-016"
+      ]
     },
     "NAT-CNMV-001": {
       "group_id": "MARKET_TAX_SUPERVISION",
@@ -2404,7 +4315,18 @@
       ],
       "relationship_strength": "DEPENDENCY_TEST_ONLY",
       "boundary_en": "This reciprocal link exposes the applicable evidence questions; it does not prove ACTA delivery, receipt, examination, reliance, knowledge or merits.",
-      "boundary_es": "Este enlace recíproco expone las preguntas probatorias aplicables; no prueba entrega, recepción, examen, utilización, conocimiento ni fondo del ACTA."
+      "boundary_es": "Este enlace recíproco expone las preguntas probatorias aplicables; no prueba entrega, recepción, examen, utilización, conocimiento ni fondo del ACTA.",
+      "communication_event_ids": [
+        "PD-SP-EVT-0155"
+      ],
+      "unitary_authority_stage_ids": [
+        "AUTH-UCF-009"
+      ],
+      "unitary_gap_ids": [
+        "PD-GAP-UCF-009",
+        "PD-GAP-UCF-012",
+        "PD-GAP-UCF-015"
+      ]
     },
     "X-EU-003": {
       "group_id": "PUBLIC_FUNDS_INTERNAL_CONTROL",
@@ -2416,7 +4338,20 @@
       "proposition_ids": [],
       "relationship_strength": "DEPENDENCY_TEST_ONLY",
       "boundary_en": "This reciprocal link exposes the applicable evidence questions; it does not prove ACTA delivery, receipt, examination, reliance, knowledge or merits.",
-      "boundary_es": "Este enlace recíproco expone las preguntas probatorias aplicables; no prueba entrega, recepción, examen, utilización, conocimiento ni fondo del ACTA."
+      "boundary_es": "Este enlace recíproco expone las preguntas probatorias aplicables; no prueba entrega, recepción, examen, utilización, conocimiento ni fondo del ACTA.",
+      "communication_event_ids": [
+        "PD-SP-EVT-0156",
+        "PD-SP-EVT-0157"
+      ],
+      "unitary_authority_stage_ids": [
+        "AUTH-UCF-009"
+      ],
+      "unitary_gap_ids": [
+        "PD-GAP-UCF-009",
+        "PD-GAP-UCF-012",
+        "PD-GAP-UCF-015",
+        "PD-GAP-UCF-016"
+      ]
     },
     "X-INT-004": {
       "group_id": "PUBLIC_FUNDS_INTERNAL_CONTROL",
@@ -2428,7 +4363,29 @@
       "proposition_ids": [],
       "relationship_strength": "DEPENDENCY_TEST_ONLY",
       "boundary_en": "This reciprocal link exposes the applicable evidence questions; it does not prove ACTA delivery, receipt, examination, reliance, knowledge or merits.",
-      "boundary_es": "Este enlace recíproco expone las preguntas probatorias aplicables; no prueba entrega, recepción, examen, utilización, conocimiento ni fondo del ACTA."
+      "boundary_es": "Este enlace recíproco expone las preguntas probatorias aplicables; no prueba entrega, recepción, examen, utilización, conocimiento ni fondo del ACTA.",
+      "communication_event_ids": [
+        "PD-SP-EVT-0141",
+        "PD-SP-EVT-0142",
+        "PD-SP-EVT-0143"
+      ],
+      "unitary_authority_stage_ids": [
+        "AUTH-UCF-005",
+        "AUTH-UCF-009",
+        "AUTH-UCF-010"
+      ],
+      "unitary_gap_ids": [
+        "PD-GAP-UCF-009",
+        "PD-GAP-UCF-012",
+        "PD-GAP-UCF-015",
+        "PD-GAP-UCF-016"
+      ],
+      "canonical_evidence_refs": [
+        "PD-EV-UCF-INT-184368-2026",
+        "PD-SP-EVT-0141",
+        "PD-SP-EVT-0142",
+        "PD-SP-EVT-0143"
+      ]
     },
     "X-REG-001": {
       "group_id": "MARKET_TAX_SUPERVISION",

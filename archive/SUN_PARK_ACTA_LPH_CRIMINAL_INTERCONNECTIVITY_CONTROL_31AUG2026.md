@@ -1,6 +1,6 @@
 # Sun Park ACTA lifecycle, LPH and criminal-interconnectivity control — 31 August 2026
 
-**Status:** PUBLICATION AUTHORISED 31 AUGUST 2026; RELEASE TRACKED IN PR #1284. MERGE, DEPLOYMENT AND LIVE STATUS MUST BE TAKEN FROM GITHUB AND EXACT LIVE READBACK, NOT SELF-ATTESTED BY THIS RECORD.
+**Status:** LIVE VERIFIED THROUGH DEPLOYED DESCENDANT; PR #1284 merged as `b505c7a81756205bfdecc1ead12ee7b9762dc1e7`; descendant Pages run `33446723239` succeeded; current 1-Sep-2026 exact readback matched 4/4 critical resources. See `archive/SUN_PARK_ACTA_LPH_PR1284_LIVE_DEPLOYMENT_CLOSEOUT_01SEP2026.md`.
 **Current-main base:** `7cdb356d5f2b6180027719c1aa80ac8b22f77435`
 **Preceding local ACTA role commit after rebase:** `5e58fa23`
 **Scope:** Community meeting lifecycle, canonical evidence references, historical LPH testing, C1→C2 alleged criminal mechanism and downstream institutional tracks.
@@ -95,4 +95,4 @@ The criminal hypothesis is framed as possible knowing creation, adoption or use 
 
 ## Publication boundary
 
-The implementation is local only. Push, PR, merge, Pages deployment and live readback remain pending separate publication authority.
+The 31-Aug-2026 implementation is live through the deployment and exact readback recorded in `archive/SUN_PARK_ACTA_LPH_PR1284_LIVE_DEPLOYMENT_CLOSEOUT_01SEP2026.md`. That publication status proves the controlled surface and bytes, not historic completeness, LPH non-compliance, downstream reliance, criminality or guilt. The later `PD-UCF-20260901-01` unitary gap-closure release remains a separate local implementation pending publication authority.
