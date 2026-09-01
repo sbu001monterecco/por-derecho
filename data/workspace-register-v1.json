@@ -1,0 +1,29 @@
+{
+  "schema": "por-derecho.workspace-register.v1",
+  "register_id": "PD-WS-REG-001",
+  "control_date": "2026-09-01",
+  "status": "ACTIVE",
+  "workspace_id_pattern": "PD-WS-YYYYMMDD-NNNN",
+  "governance": {
+    "continuous_persistence": ".github/governance/AUTOMATIC_WORKSPACE_PERSISTENCE_ARCHITECTURE_01SEP2026.md",
+    "handoff": ".github/governance/WORKSPACE_THREAD_CONTINUITY_HANDOFF_STANDARD_01SEP2026.md",
+    "current_pointer": "CURRENT_WORKSPACE_HANDOFF.md"
+  },
+  "workspaces": [
+    {
+      "workspace_id": "PD-WS-20260901-0001",
+      "title": "Acosta Matos / Canarian Hospitality hotel-platform digital-media and continuity workspace",
+      "status": "DELETION_SAFE_WITH_OPEN_WORK",
+      "current_handoff_id": "PD-WCH-20260901-AMHP-DMA-001",
+      "handoff_path": "archive/handoffs/2026-09-01-acosta-matos-hotel-platform-digital-media-workspace-handoff.md",
+      "topic_keys": ["ACOSTA_MATOS", "CANARIAN_HOSPITALITY", "HOTEL_PLATFORM", "SATIRE", "DIGITAL_MEDIA", "LINKEDIN", "CONTINUITY"],
+      "repository": "sbu001monterecco/por-derecho",
+      "public_private_boundary": "PUBLIC_REPO_CONTAINS_GOVERNED_SOURCE_SAFE_STATE; RAW_PRIVATE_TRANSCRIPT_ARCHIVE_NOT_IMPLEMENTED",
+      "continuous_capture_mode": "CONNECTED_AGENTIC_CHECKPOINTING",
+      "next_target_mode": "PRIVATE_ARCHIVE_PLUS_PUBLIC_STATE"
+    }
+  ],
+  "registration_rule": "Create/recover a stable workspace ID for every substantive Por Derecho workspace when persistence-capable work begins. A workspace may span multiple ChatGPT threads; a ChatGPT thread may be superseded without changing the workspace ID.",
+  "thread_rule": "Do not use a ChatGPT title as canonical identity. Thread/platform IDs or URLs, when available, are aliases on the workspace record.",
+  "supersession_rule": "A later handoff or workspace state supersedes stale chat state only when repository reconciliation is explicit."
+}
