@@ -1,5 +1,7 @@
 # Cuatrecasas LinkedIn clause and email-context audit control
 
+> **1-September-2026 successor:** `archive/CUATRECASAS_LINKEDIN_IMAGE_PUBLICATION_CONTROL_01SEP2026.md` authorises the exact two controlled screenshot copies to accompany this audit. Statements below that the captures were private record the 31-August release state; the email, locator, unsupported-claim and no-contact boundaries remain unchanged.
+
 **Control date:** 31 August 2026
 
 **Final publication-branch base SHA:** `d26d592950d6297220ef4f3bc6d9abd895953dad`

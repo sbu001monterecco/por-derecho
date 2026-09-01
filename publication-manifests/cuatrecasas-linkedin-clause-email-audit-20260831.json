@@ -12,6 +12,11 @@
   "branch": "codex/cuatrecasas-clause-email-audit-publish-20260831",
   "merge_sha": "8d0b45672cac23d1e1a55ae7c8687d1e4cb495a7",
   "purpose": "Publish one bilingual, non-fragmented audit of every clause in the preserved 6-March-2026 LinkedIn message, the three controlling institutional records and nine minimized email-context groups, while applying maximum evidence-based pressure through five finite documentary questions.",
+  "successor_publication": {
+    "publication_id": "cuatrecasas-linkedin-image-publication-20260901",
+    "control_date": "2026-09-01",
+    "scope": "Authorises the exact two controlled screenshot copies while preserving the email, locator, unsupported-claim and no-contact boundaries of this historical release."
+  },
   "expected_routes": {
     "es": [
       "es/cuatrecasas-sun-park/index.html"

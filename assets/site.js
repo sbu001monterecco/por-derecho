@@ -64,9 +64,9 @@
   const loadCuatrecasasLinkedInRecord = () => {
     if (document.querySelector('script[data-cuatrecasas-inigo-linkedin-loader]')) return;
     const linkedInRecord = document.createElement('script');
-    linkedInRecord.src = new URL('cuatrecasas-inigo-linkedin-record-20260831.js?v=20260831c', current.src).href;
+    linkedInRecord.src = new URL('cuatrecasas-inigo-linkedin-record-20260831.js?v=20260901a', current.src).href;
     linkedInRecord.async = false;
-    linkedInRecord.setAttribute('data-cuatrecasas-inigo-linkedin-loader', '20260831c');
+    linkedInRecord.setAttribute('data-cuatrecasas-inigo-linkedin-loader', '20260901a');
     document.head.appendChild(linkedInRecord);
   };
 

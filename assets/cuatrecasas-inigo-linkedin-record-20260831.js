@@ -16,7 +16,14 @@
   const copy = isEs ? {
     eyebrow: 'AUDITORÍA UNITARIA · MENSAJE, CORREOS Y EXPEDIENTES OFICIALES',
     title: 'Un archivo procesal no responde al expediente profesional',
-    intro: 'Una captura preservada muestra, a las 12:13 PM del 6 de marzo de 2026, una cuenta de LinkedIn con el nombre visible “Inigo de Luisa Maiz” y el siguiente mensaje. Se reproduce literalmente, con sus mayúsculas, gramática y ortografía:',
+    intro: 'Dos capturas preservadas muestran, a las 12:13 PM del 6 de marzo de 2026, una cuenta de LinkedIn con el nombre visible “Inigo de Luisa Maiz”, el mensaje y un estado posterior de la interfaz. Se publican las copias exactas suministradas y, debajo, el texto literal con sus mayúsculas, gramática y ortografía:',
+    capturesTitle: 'Las capturas, no sólo la transcripción',
+    capturesIntro: 'Copias exactas de los dos archivos JPEG suministrados, publicadas sin alteración de imagen por autorización expresa de 1 de septiembre de 2026. Son las mejores copias de captura disponibles aportadas por el usuario, no exportaciones certificadas por LinkedIn. Pulse cada imagen para abrirla a resolución completa.',
+    capture1Title: 'Captura 1 · identidad visible y mensaje completo.',
+    capture1: 'Muestra el nombre de cuenta “Inigo de Luisa Maiz”, el mensaje de las 12:13 PM y el estado “LinkedIn member unable to receive messages”. No acredita por sí sola la fecha de calendario, la autoría certificada por el proveedor, la decisión del Colegio de Madrid ni la causa del estado posterior.',
+    capture2Title: 'Captura 2 · estado posterior de la interfaz.',
+    capture2: 'Muestra “LinkedIn Member”, el aviso de contenido no deseado o dañino y el estado de imposibilidad de recibir mensajes. No demuestra por sí sola borrado, bloqueo, desactivación, moderación ni otro motivo técnico.',
+    openCapture: 'Abrir captura a resolución completa ↗',
     correctionTitle: 'Corrección necesaria a “adequately dismissed”',
     correction: 'ICAM 434/26 archivó la queja el 6 de marzo por prescripción disciplinaria. Sus consideraciones se declararon de alcance meramente dialéctico y quedaron a salvo acciones de otro orden. Ese mismo día se interpuso alzada; CCACM abrió 193/2026 y el 27 de agosto informó de que seguía en estudio. No se ha localizado resolución final sobre el fondo.',
     adverseTitle: 'Resultado institucional adverso que también debe leerse',
@@ -73,7 +80,14 @@
   } : {
     eyebrow: 'UNITARY AUDIT · MESSAGE, EMAILS AND OFFICIAL RECORDS',
     title: 'A procedural archive does not answer the professional record',
-    intro: 'A preserved capture shows, at 12:13 PM on 6 March 2026, a LinkedIn account displaying the name “Inigo de Luisa Maiz” and the following message. It is reproduced verbatim, including its capitalization, grammar and spelling:',
+    intro: 'Two preserved captures show, at 12:13 PM on 6 March 2026, a LinkedIn account displaying the name “Inigo de Luisa Maiz”, the message and a later interface state. The exact supplied copies are published below, followed by the verbatim text, including its capitalization, grammar and spelling:',
+    capturesTitle: 'The captures, not only the transcript',
+    capturesIntro: 'Exact copies of the two supplied JPEG files, published without image alteration under express authorization dated 1 September 2026. They are the best available user-supplied screenshot copies, not provider-certified LinkedIn exports. Select either image to open it at full resolution.',
+    capture1Title: 'Capture 1 · displayed identity and complete message.',
+    capture1: 'Shows the account name “Inigo de Luisa Maiz”, the 12:13 PM message and the “LinkedIn member unable to receive messages” state. It does not by itself establish the calendar date, provider-certified authorship, the Madrid Bar outcome or the cause of the later state.',
+    capture2Title: 'Capture 2 · later interface state.',
+    capture2: 'Shows “LinkedIn Member”, the unwanted-or-harmful-content warning and the unable-to-receive-messages state. It does not by itself prove deletion, blocking, deactivation, moderation or another technical cause.',
+    openCapture: 'Open full-resolution capture ↗',
     correctionTitle: 'The necessary correction to “adequately dismissed”',
     correction: 'ICAM 434/26 archived the complaint on 6 March because the disciplinary limitation period had elapsed. Its factual remarks were expressly only dialectical, and other avenues were reserved. An appeal was filed that day; CCACM opened 193/2026 and said on 27 August that it remained under study. No final merits resolution has been located.',
     adverseTitle: 'The adverse institutional outcome must also be read',
@@ -141,13 +155,26 @@
   section.setAttribute('aria-labelledby', 'inigo-linkedin-20260306-title');
   section.setAttribute('data-cuatrecasas-inigo-linkedin-record', '20260306');
   section.setAttribute('data-publication-marker', 'cuatrecasas-linkedin-interlink-20260831');
-  section.setAttribute('data-governance-revision', '20260831c');
+  section.setAttribute('data-image-publication-marker', 'cuatrecasas-linkedin-images-20260901');
+  section.setAttribute('data-governance-revision', '20260901a');
   section.innerHTML = `
     <div class="shell record">
       <div class="cuatre-linkedin-panel">
         <p class="eyeline">${escapeHTML(copy.eyebrow)}</p>
         <h2 id="inigo-linkedin-20260306-title">${escapeHTML(copy.title)}</h2>
         <p class="cuatre-linkedin-intro">${escapeHTML(copy.intro)}</p>
+        <h3 class="cuatre-linkedin-section-title">${escapeHTML(copy.capturesTitle)}</h3>
+        <p>${escapeHTML(copy.capturesIntro)}</p>
+        <div class="cuatre-linkedin-captures" data-public-capture-count="2">
+          <figure data-evidence-id="CUATRECASAS-LINKEDIN-20260306-INIGO-DE-LUISA.CAPTURE-01">
+            <a href="../../assets/evidence/cuatrecasas/inigo-de-luisa-linkedin-message-20260306-capture-01.jpg" target="_blank" rel="noopener"><img src="../../assets/evidence/cuatrecasas/inigo-de-luisa-linkedin-message-20260306-capture-01.jpg" width="921" height="2048" loading="eager" fetchpriority="high" decoding="async" alt="${escapeHTML(isEs ? 'Captura de LinkedIn suministrada que muestra la cuenta Inigo de Luisa Maiz y el mensaje completo de las 12:13 PM' : 'Supplied LinkedIn capture displaying the Inigo de Luisa Maiz account and the complete 12:13 PM message')}"></a>
+            <figcaption><strong>${escapeHTML(copy.capture1Title)}</strong> ${escapeHTML(copy.capture1)} <a href="../../assets/evidence/cuatrecasas/inigo-de-luisa-linkedin-message-20260306-capture-01.jpg" target="_blank" rel="noopener">${escapeHTML(copy.openCapture)}</a></figcaption>
+          </figure>
+          <figure data-evidence-id="CUATRECASAS-LINKEDIN-20260306-INIGO-DE-LUISA.CAPTURE-02">
+            <a href="../../assets/evidence/cuatrecasas/inigo-de-luisa-linkedin-message-20260306-capture-02.jpg" target="_blank" rel="noopener"><img src="../../assets/evidence/cuatrecasas/inigo-de-luisa-linkedin-message-20260306-capture-02.jpg" width="921" height="2048" loading="lazy" decoding="async" alt="${escapeHTML(isEs ? 'Captura de LinkedIn suministrada que muestra LinkedIn Member, el aviso de contenido y el estado de imposibilidad de recibir mensajes' : 'Supplied LinkedIn capture displaying LinkedIn Member, the content warning and the unable-to-receive-messages state')}"></a>
+            <figcaption><strong>${escapeHTML(copy.capture2Title)}</strong> ${escapeHTML(copy.capture2)} <a href="../../assets/evidence/cuatrecasas/inigo-de-luisa-linkedin-message-20260306-capture-02.jpg" target="_blank" rel="noopener">${escapeHTML(copy.openCapture)}</a></figcaption>
+          </figure>
+        </div>
         <blockquote class="cuatre-linkedin-message"></blockquote>
         <div class="cuatre-linkedin-rulings">
           <article><h3>${escapeHTML(copy.correctionTitle)}</h3><p>${escapeHTML(copy.correction)}</p></article>
@@ -171,12 +198,19 @@
   section.querySelector('.cuatre-linkedin-message').textContent = message;
 
   const style = document.createElement('style');
-  style.setAttribute('data-cuatrecasas-inigo-linkedin-record-style', '20260306');
+  style.setAttribute('data-cuatrecasas-inigo-linkedin-record-style', '20260901a');
   style.textContent = `
     .cuatre-linkedin-record{background:#f4f1ea;scroll-margin-top:1.5rem}
     .cuatre-linkedin-panel{background:#fff;border:1px solid #d9dede;border-top:7px solid #13252d;border-radius:22px;padding:clamp(1.2rem,3vw,2rem);box-shadow:0 16px 40px rgba(16,38,45,.10)}
     .cuatre-linkedin-panel h2{max-width:930px;margin:.35rem 0 .8rem}
     .cuatre-linkedin-intro{max-width:980px;font-size:1.02rem;line-height:1.65}
+    .cuatre-linkedin-captures{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem;margin:1rem 0 1.4rem}
+    .cuatre-linkedin-captures figure{margin:0;background:#eef2f1;border:1px solid #d5dddb;border-radius:15px;overflow:hidden;box-shadow:0 10px 26px rgba(16,38,45,.08)}
+    .cuatre-linkedin-captures figure>a{display:block;background:#fff}
+    .cuatre-linkedin-captures img{display:block;width:100%;height:auto;background:#fff}
+    .cuatre-linkedin-captures figcaption{padding:.9rem 1rem;font-size:.92rem;line-height:1.55;color:#374247}
+    .cuatre-linkedin-captures figcaption strong{display:block;margin-bottom:.3rem;color:#13252d}
+    .cuatre-linkedin-captures figcaption a{display:inline-block;margin-top:.45rem;font-weight:750}
     .cuatre-linkedin-message{margin:1.25rem 0;padding:1.15rem 1.25rem;background:#13252d;color:#fff;border-left:7px solid #d0a12d;border-radius:12px;font-size:clamp(1.05rem,2vw,1.25rem);line-height:1.65;font-style:normal}
     .cuatre-linkedin-rulings{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem;margin:1.25rem 0}
     .cuatre-linkedin-rulings article{background:#f8f6f0;border:1px solid #ded8c9;border-radius:14px;padding:1rem}
@@ -199,7 +233,7 @@
     .cuatre-linkedin-provenance p{margin:.45rem 0;line-height:1.6}
     .cuatre-linkedin-boundary{font-size:.92rem;color:#4d5558}
     .cuatre-linkedin-links{font-weight:650}
-    @media (max-width:760px){.cuatre-linkedin-rulings{grid-template-columns:1fr}.cuatre-linkedin-panel{border-radius:15px}.cuatre-linkedin-table{font-size:.9rem}}
+    @media (max-width:760px){.cuatre-linkedin-captures,.cuatre-linkedin-rulings{grid-template-columns:1fr}.cuatre-linkedin-panel{border-radius:15px}.cuatre-linkedin-table{font-size:.9rem}}
   `;
   document.head.appendChild(style);
 
