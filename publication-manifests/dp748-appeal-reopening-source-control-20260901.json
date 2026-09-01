@@ -16,6 +16,10 @@
     "email_action": "HOLD_NOT_AUTHORISED",
     "filing_or_portal_action": "HOLD_NOT_AUTHORISED"
   },
+  "expected_routes": {
+    "es": [],
+    "en": []
+  },
   "predecessor_main": {
     "sha": "d1817de1b8613a8e0d340f1453acda99e440e5af",
     "pull_request": 1328,
@@ -120,6 +124,12 @@
         "reason": "Refreshes canonical source digests after the proceeding updates while preserving the bounded Fiscalía event denominator."
       },
       {
+        "resource": "assets/data/community-acta-authority-interconnectivity-v1.json",
+        "predecessor_main_sha256": "c2cef89efc0d3f07cd88a92f9d498e1fae89ae217a78230a48b4edfd5f798c23",
+        "release_sha256": "f47f392cd53d38a1aab4565b48e4236d8dc617b842f46ce7dcc80431554f92c0",
+        "reason": "Refreshes canonical identity-shard provenance after the additive DP 748 professional-identity shard; authority-event denominators and evidential assertions remain unchanged."
+      },
+      {
         "resource": "assets/data/proceedings-interlinkability-v1.json",
         "predecessor_main_sha256": "5534195c00aedc1026b6cab080af37cbf906345f4c2189d3c6d187b643ce20ee",
         "release_sha256": "87487072e2f1af6b8bdb2a92db5b1f950729fdb843a5ee3e555b46c8cce6c588",
@@ -155,6 +165,7 @@
     "assets/data/proceedings-master-public-v1.json": "83dbbc7e66d22361d233ea63b16e79fcf74848fcb9fc43165181cabd2c0ec44d",
     "assets/data/procurador-master-register-v1.json": "b92ea7fad2c14b47174415e3f329cea2a6193b94f0058c8ff690509be1704c7d",
     "assets/data/fiscalia-proceedings-interconnectivity-v1.json": "c2b2a92b44268893646e07a444ba1a66b0e79078cf44a0a1b62598fb73dba608",
+    "assets/data/community-acta-authority-interconnectivity-v1.json": "f47f392cd53d38a1aab4565b48e4236d8dc617b842f46ce7dcc80431554f92c0",
     "assets/data/proceedings-interlinkability-v1.json": "87487072e2f1af6b8bdb2a92db5b1f950729fdb843a5ee3e555b46c8cce6c588",
     "assets/data/proceedings-interconnectivity-schema-v1.json": "15bd61c10266b48c4444050f95db75ba9242408eb26c2d3e0319fbfb865e59d6",
     "assets/data/dp748-2026-appeal-reopening-control-v1.json": "b03f43234769e85dc530c85699316c9aec4415af8de189c7afde941d7b3176d7",

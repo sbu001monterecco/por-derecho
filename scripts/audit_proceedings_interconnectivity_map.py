@@ -2686,6 +2686,7 @@ if not errors:
         "assets/data/proceedings-master-public-v1.json": "840799af2a833058ee0ace184966c01ad862016c98a5d344c4e446b2276b0325",
         "assets/data/procurador-master-register-v1.json": "228e7cb104ff2b6a5ed2dca5934fae10caf100d7e33c69e7d83ff4bff0fc5943",
         "assets/data/fiscalia-proceedings-interconnectivity-v1.json": "a48f041f76e8b238a61d982e302d2f8de337e5ccb6a2f50971c345d53641f2ba",
+        "assets/data/community-acta-authority-interconnectivity-v1.json": "c2cef89efc0d3f07cd88a92f9d498e1fae89ae217a78230a48b4edfd5f798c23",
         "assets/data/proceedings-interlinkability-v1.json": "5534195c00aedc1026b6cab080af37cbf906345f4c2189d3c6d187b643ce20ee",
         "assets/data/proceedings-interconnectivity-schema-v1.json": "eb281aee0daa5f61256b649b59aee4d0cb0e3985433a9dd33b4ab0692cbe3446",
     }
@@ -2872,12 +2873,13 @@ if not errors:
         and all(
             successor_changed[path].get("predecessor_live_sha256") == prior_hash
             and successor_changed[path].get("release_sha256")
-            == (
-                dp748_changed[path].get("predecessor_main_sha256")
-                if path in dp748_changed
-                else authority_frozen_release_hashes.get(
-                    path, hashlib.sha256((ROOT / path).read_bytes()).hexdigest()
-                )
+            == authority_frozen_release_hashes.get(
+                path,
+                (
+                    dp748_changed[path].get("predecessor_main_sha256")
+                    if path in dp748_changed
+                    else hashlib.sha256((ROOT / path).read_bytes()).hexdigest()
+                ),
             )
             and bool(successor_changed[path].get("reason"))
             for path, prior_hash in expected_successor_prior_hashes.items()
@@ -2889,6 +2891,11 @@ if not errors:
     community_current_sha256 = hashlib.sha256(
         (ROOT / community_resource).read_bytes()
     ).hexdigest()
+    community_pwc_candidate_sha256 = (
+        dp748_changed[community_resource].get("predecessor_main_sha256")
+        if community_resource in dp748_changed
+        else community_current_sha256
+    )
     pwc_state = pwc_successor.get("current_state")
     pwc_live = pwc_state in {"LIVE_VERIFIED", "DELETION_SAFE"}
     require(
@@ -2948,7 +2955,8 @@ if not errors:
         and pwc_transition.get("predecessor_sha256")
         == authority_frozen_release_hashes.get(community_resource)
         == "6980b865e034a632595ceb49452bd64bd422fe0df37f21b4bf4a6dea6cf7217f"
-        and pwc_transition.get("candidate_sha256") == community_current_sha256
+        and pwc_transition.get("candidate_sha256")
+        == community_pwc_candidate_sha256
         and "canonical institutions-shard provenance"
         in pwc_transition.get("reason", "")
         and "denominators" in pwc_transition.get("reason", "")
@@ -2989,7 +2997,10 @@ if not errors:
     require(
         successor_release_hashes.get(community_resource)
         == pwc_transition.get("predecessor_sha256")
-        and pwc_transition.get("candidate_sha256") == community_current_sha256,
+        and pwc_transition.get("candidate_sha256")
+        == community_pwc_candidate_sha256
+        and dp748_changed.get(community_resource, {}).get("release_sha256")
+        == community_current_sha256,
         "authority-communications successor release hash lacks a valid later transition",
     )
     successor_boundaries = set(authority_successor.get("evidential_boundaries", []))
