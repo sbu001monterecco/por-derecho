@@ -20,6 +20,8 @@ INTERVENCION_RESPONSE = ROOT / "es/intervencion-general-699645-2026/index.html"
 COMMUNICATIONS = ROOT / "assets/data/institutional-communications-register-v1.json"
 CAEPR_PROFESSIONAL = ROOT / "assets/data/caepr-caret-fti-meeting-point-professional-institutional-v1.json"
 CAEPR_RICPE = ROOT / "assets/data/caepr-caret-fti-meeting-point-ricpe-continuity-v1.json"
+PUBLICATION_MANIFEST = ROOT / "publication-manifests/unitary-public-authority-communications-20260901.json"
+LIVE_CLOSEOUT = ROOT / "archive/UNITARY_PUBLIC_AUTHORITY_COMMUNICATIONS_LIVE_CLOSEOUT_01SEP2026.md"
 CONTROL_ID = "PD-UCF-20260901-01"
 
 
@@ -58,6 +60,8 @@ def main() -> int:
         CAEPR_PROFESSIONAL,
         CAEPR_RICPE,
         COMMUNICATIONS,
+        PUBLICATION_MANIFEST,
+        LIVE_CLOSEOUT,
         ROOT / "es/administracion-de-hecho-comunidad-ac/index.html",
         ROOT / "en/de-facto-administration-community-ac/index.html",
         ROOT / "es/concurso-36-2012-analisis-penal-forense-unitario/index.html",
@@ -81,10 +85,32 @@ def main() -> int:
     caepr_professional = load(CAEPR_PROFESSIONAL)
     caepr_ricpe = load(CAEPR_RICPE)
     communications = load(COMMUNICATIONS)
+    publication_manifest = load(PUBLICATION_MANIFEST)
 
     require(data.get("schema_version") == "1.0.0", "schema version changed", errors)
     require(data.get("control_id") == CONTROL_ID, "control ID changed", errors)
-    require(data.get("status") == "PUBLICATION_AUTHORISED_VALIDATION_PENDING", "publication-authority lifecycle state changed without closeout", errors)
+    require(
+        data.get("status") == "PUBLICATION_AUTHORISED_VALIDATION_PENDING",
+        "pre-deployment machine snapshot state changed; live status belongs to the successor manifest",
+        errors,
+    )
+    require(
+        publication_manifest.get("publication_id")
+        == "PD-SP-UNITARY-PUBLIC-AUTHORITY-COMMS-20260901-01"
+        and publication_manifest.get("current_state") == "LIVE_VERIFIED"
+        and publication_manifest.get("state")
+        == "LIVE_VERIFIED_WITH_ACCEPTED_PUBLICATION_BOUNDARY_GAP"
+        and publication_manifest.get("merge_sha")
+        == "a2873cd865567da1b6644f32821bb15ece53a160"
+        and publication_manifest.get("verification", {}).get("live_http_readback")
+        is True
+        and publication_manifest.get("verification", {}).get("deletion_safe")
+        is False
+        and publication_manifest.get("closeout_record")
+        == "archive/UNITARY_PUBLIC_AUTHORITY_COMMUNICATIONS_LIVE_CLOSEOUT_01SEP2026.md",
+        "successor publication manifest is not live-verified with the accepted boundary gap",
+        errors,
+    )
     require(data.get("canonical_routes") == {
         "es": "es/ingenieria-inversa-criminal-unitaria/",
         "en": "en/unitary-criminal-reverse-engineering/",
@@ -367,7 +393,7 @@ def main() -> int:
     print("UNITARY MULTI-TRACK GAP CLOSURE: PASS")
     print(" - 18 tracks; 12 reverse-chain nodes; 10 authority-propagation stages; 7 evidence classes; 5 threshold hypotheses")
     print(" - 16 canonical gaps; 23 events; 122 lifecycle objects; 20 ACTA packages; 49 authority files; 19 authority communications")
-    print(" - validator mode: advisory/shadow; publication explicitly authorised and still subject to validation/readback")
+    print(" - validator mode: advisory/shadow; preparation snapshot retained; successor manifest is LIVE_VERIFIED with an accepted publication-boundary gap")
     return 0
 
 

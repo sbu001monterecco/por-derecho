@@ -80,6 +80,7 @@ REQUIRED = [
     "docs/deletion-audits/2026-08-31-case-prism-substantive-gap-closure-continuity.md",
     "publication-manifests/unitary-public-authority-communications-20260901.json",
     "docs/deletion-audits/2026-09-01-unitary-public-authority-communications-continuity.md",
+    "archive/UNITARY_PUBLIC_AUTHORITY_COMMUNICATIONS_LIVE_CLOSEOUT_01SEP2026.md",
 ]
 
 # The institutional-reader audit is intentionally an identified-route
@@ -464,6 +465,9 @@ if not errors:
     )
     authority_successor_continuity = read(
         "docs/deletion-audits/2026-09-01-unitary-public-authority-communications-continuity.md"
+    )
+    authority_live_closeout = read(
+        "archive/UNITARY_PUBLIC_AUTHORITY_COMMUNICATIONS_LIVE_CLOSEOUT_01SEP2026.md"
     )
     current_continuity = read(
         "docs/deletion-audits/2026-08-31-case-prism-substantive-gap-closure-continuity.md"
@@ -2812,6 +2816,23 @@ if not errors:
             and authority_successor.get("publication_closeout", {}).get("status")
             == "COMPLETE_WITH_ACCEPTED_AND_EVIDENCE_DEPENDENT_GAPS",
             "live authority-communications successor closeout is incomplete",
+        )
+        require(
+            authority_successor.get("closeout_record")
+            == "archive/UNITARY_PUBLIC_AUTHORITY_COMMUNICATIONS_LIVE_CLOSEOUT_01SEP2026.md"
+            and all(
+                token in authority_live_closeout
+                for token in (
+                    "b505cf170a422ef15cd6a2214e0563e05c0a67aa",
+                    "a2873cd865567da1b6644f32821bb15ece53a160",
+                    "33472209126",
+                    "13/13",
+                    "Criminal responsibility never propagates",
+                    "not deletion-safe",
+                    "No email, authority contact, filing, service, portal action",
+                )
+            ),
+            "authority-communications immutable live-closeout record is incomplete",
         )
     else:
         require(

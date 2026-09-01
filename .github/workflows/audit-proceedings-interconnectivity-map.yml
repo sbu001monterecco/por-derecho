@@ -139,6 +139,7 @@ on:
       - 'docs/deletion-audits/2026-08-30-all-proceedings-interlinkability-continuity.md'
       - 'docs/deletion-audits/2026-08-31-case-prism-substantive-gap-closure-continuity.md'
       - 'docs/deletion-audits/2026-09-01-unitary-public-authority-communications-continuity.md'
+      - 'archive/UNITARY_PUBLIC_AUTHORITY_COMMUNICATIONS_LIVE_CLOSEOUT_01SEP2026.md'
       - 'docs/deletion-audits/2026-08-30-arrecife-1304-2014-identity-interlink-continuity.md'
       - 'docs/deletion-audits/2026-08-30-dp3205-2014-arrecife-caret-interlink.md'
   push:
@@ -279,6 +280,7 @@ on:
       - 'docs/deletion-audits/2026-08-30-all-proceedings-interlinkability-continuity.md'
       - 'docs/deletion-audits/2026-08-31-case-prism-substantive-gap-closure-continuity.md'
       - 'docs/deletion-audits/2026-09-01-unitary-public-authority-communications-continuity.md'
+      - 'archive/UNITARY_PUBLIC_AUTHORITY_COMMUNICATIONS_LIVE_CLOSEOUT_01SEP2026.md'
       - 'docs/deletion-audits/2026-08-30-arrecife-1304-2014-identity-interlink-continuity.md'
       - 'docs/deletion-audits/2026-08-30-dp3205-2014-arrecife-caret-interlink.md'
 
