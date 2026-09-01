@@ -97,6 +97,16 @@
     document.head.appendChild(media);
   };
 
+  const loadActorsAcostaCanonicalRegister = () => {
+    if (!window.location.pathname.includes('/en/actors-parties-lawyers-representatives/')) return;
+    if (document.querySelector('script[data-actors-acosta-canonical-register-loader]')) return;
+    const register = document.createElement('script');
+    register.src = new URL('actors-acosta-matos-canonical-register-20260901.js?v=20260901a', current.src).href;
+    register.async = false;
+    register.setAttribute('data-actors-acosta-canonical-register-loader', '20260901a');
+    document.head.appendChild(register);
+  };
+
   // Preserve the complete site loader that existed before this visual update.
   const prior = document.createElement('script');
   prior.src = new URL('site-pre-treasury-154-hq-20260828.js?v=20260828a', current.src).href;
@@ -110,4 +120,5 @@
   loadCuatrecasasBookCover();
   loadActaAuthorityInterlink();
   loadAcostaHotelPlatformMedia();
+  loadActorsAcostaCanonicalRegister();
 })();
