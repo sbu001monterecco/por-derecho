@@ -1,9 +1,18 @@
 #!/usr/bin/env python3
-"""Synchronize static identity-registry surfaces from the canonical registry.
+"""Synchronize derived identity-registry surfaces from the canonical JSON.
 
-The canonical denominator lives in assets/data/matter-identity-registry-v1.json.
-This script updates only derived public/static mirrors and makes the legacy
-DP3205 validator date-aware rather than frozen to one registry revision.
+Canonical source:
+  assets/data/matter-identity-registry-v1.json
+
+Derived surfaces:
+  en/matter-identity-registry/index.html
+  es/registro-identidad-materia/index.html
+  ops/CURRENT_UNITARY_STATE.json
+  scripts/validate_dp3205_2014_publication.py (legacy date migration only)
+
+The synchronizer is intentionally structural: it updates named metadata, JSON-LD,
+static counters and the bounded coverage sentences without depending on one exact
+editorial suffix.
 """
 from __future__ import annotations
 
@@ -23,64 +32,44 @@ DP3205_VALIDATOR = ROOT / "scripts/validate_dp3205_2014_publication.py"
 
 TYPES = ("PERSON", "ORGANISATION", "STRUCTURE", "INSTITUTION", "PROCEEDING")
 EN_MONTHS = {
-    1: "JANUARY",
-    2: "FEBRUARY",
-    3: "MARCH",
-    4: "APRIL",
-    5: "MAY",
-    6: "JUNE",
-    7: "JULY",
-    8: "AUGUST",
-    9: "SEPTEMBER",
-    10: "OCTOBER",
-    11: "NOVEMBER",
-    12: "DECEMBER",
+    1: "JANUARY", 2: "FEBRUARY", 3: "MARCH", 4: "APRIL",
+    5: "MAY", 6: "JUNE", 7: "JULY", 8: "AUGUST",
+    9: "SEPTEMBER", 10: "OCTOBER", 11: "NOVEMBER", 12: "DECEMBER",
 }
 ES_MONTHS = {
-    1: "ENERO",
-    2: "FEBRERO",
-    3: "MARZO",
-    4: "ABRIL",
-    5: "MAYO",
-    6: "JUNIO",
-    7: "JULIO",
-    8: "AGOSTO",
-    9: "SEPTIEMBRE",
-    10: "OCTUBRE",
-    11: "NOVIEMBRE",
-    12: "DICIEMBRE",
+    1: "ENERO", 2: "FEBRERO", 3: "MARZO", 4: "ABRIL",
+    5: "MAYO", 6: "JUNIO", 7: "JULIO", 8: "AGOSTO",
+    9: "SEPTIEMBRE", 10: "OCTUBRE", 11: "NOVIEMBRE", 12: "DICIEMBRE",
 }
 
 
 class SyncError(RuntimeError):
-    pass
+    """Fail-closed synchronization error."""
 
 
-def load_json(path: Path) -> dict:
+def load_object(path: Path) -> dict:
     try:
         value = json.loads(path.read_text(encoding="utf-8"))
     except (OSError, json.JSONDecodeError) as exc:
-        raise SyncError(f"cannot read JSON {path.relative_to(ROOT)}: {exc}") from exc
+        raise SyncError(f"cannot read {path.relative_to(ROOT)}: {exc}") from exc
     if not isinstance(value, dict):
         raise SyncError(f"{path.relative_to(ROOT)} must contain a JSON object")
     return value
 
 
-def replace_once(text: str, pattern: str, replacement: str | Callable[[re.Match[str]], str], label: str) -> str:
+def replace_exactly_once(
+    text: str,
+    pattern: str,
+    replacement: str | Callable[[re.Match[str]], str],
+    label: str,
+) -> str:
     updated, count = re.subn(pattern, replacement, text, count=1, flags=re.DOTALL)
     if count != 1:
         raise SyncError(f"{label}: expected exactly one match, observed {count}")
     return updated
 
 
-def replace_all_required(text: str, pattern: str, replacement: str | Callable[[re.Match[str]], str], label: str, minimum: int = 1) -> str:
-    updated, count = re.subn(pattern, replacement, text, flags=re.DOTALL)
-    if count < minimum:
-        raise SyncError(f"{label}: expected at least {minimum} matches, observed {count}")
-    return updated
-
-
-def human_dates(control_date: str) -> tuple[str, str]:
+def iso_and_human_dates(control_date: str) -> tuple[str, str]:
     match = re.fullmatch(r"(\d{4})-(\d{2})-(\d{2})", control_date)
     if not match:
         raise SyncError(f"invalid registry control_date: {control_date!r}")
@@ -93,145 +82,187 @@ def human_dates(control_date: str) -> tuple[str, str]:
     )
 
 
-def synchronize_page(path: Path, language: str, counts: dict[str, int], control_date: str) -> str:
+def synchronize_page(
+    path: Path,
+    language: str,
+    counts: dict[str, int],
+    control_date: str,
+) -> str:
     text = path.read_text(encoding="utf-8")
     total = counts["total"]
     people = counts["PERSON"]
-    orgs = counts["ORGANISATION"]
+    organisations = counts["ORGANISATION"]
     structures = counts["STRUCTURE"]
     institutions = counts["INSTITUTION"]
     proceedings = counts["PROCEEDING"]
-    marker = f"{total}-{people}-{orgs}-{structures}-{institutions}-{proceedings}"
-    en_date, es_date = human_dates(control_date)
+    marker = f"{total}-{people}-{organisations}-{structures}-{institutions}-{proceedings}"
+    en_date, es_date = iso_and_human_dates(control_date)
 
     if language == "en":
-        text = replace_once(
+        meta = (
+            f"Operational Por Derecho register of {total} immutable IDs: {people} people, "
+            f"{organisations} organisations, {structures} structures, {institutions} institutions "
+            f"and {proceedings} proceedings"
+        )
+        og = (
+            f"{total} canonical identities: {people} people, {organisations} organisations, "
+            f"{structures} structures, {institutions} institutions and {proceedings} proceedings."
+        )
+        json_description = (
+            f"Canonical register of {total} identities: {people} people, {organisations} organisations, "
+            f"{structures} structures, {institutions} institutions and {proceedings} proceedings, "
+            "connected to institutional actions and an evidence graph."
+        )
+        coverage = (
+            f"The <strong>{total} IDs</strong> cover the current canonical register: {people} people, "
+            f"{organisations} organisations, {structures} structures, {institutions} institutions and "
+            f"{proceedings} proceedings."
+        )
+        noscript = (
+            f"The static canonical denominator is {total}: {people} people, {organisations} organisations, "
+            f"{structures} structures, {institutions} institutions and {proceedings} proceedings."
+        )
+        text = replace_exactly_once(
             text,
-            r'(<meta name="description" content=")Operational Por Derecho register of \d+ immutable IDs: \d+ people, \d+ organisations, \d+ structures, \d+ institutions and \d+ proceedings',
-            rf'\1Operational Por Derecho register of {total} immutable IDs: {people} people, {orgs} organisations, {structures} structures, {institutions} institutions and {proceedings} proceedings',
+            r'(?<=<meta name="description" content=")Operational Por Derecho register of \d+ immutable IDs: \d+ people, \d+ organisations, \d+ structures, \d+ institutions and \d+ proceedings',
+            meta,
             "English meta description",
         )
-        text = replace_once(
+        text = replace_exactly_once(
             text,
-            r'(<meta property="og:description" content=")\d+ canonical identities: \d+ people, \d+ organisations, \d+ structures, \d+ institutions and \d+ proceedings\.',
-            rf'\1{total} canonical identities: {people} people, {orgs} organisations, {structures} structures, {institutions} institutions and {proceedings} proceedings.',
+            r'(?<=<meta property="og:description" content=")\d+ canonical identities: \d+ people, \d+ organisations, \d+ structures, \d+ institutions and \d+ proceedings\.',
+            og,
             "English Open Graph description",
         )
-        text = replace_once(text, r'"dateModified":"\d{4}-\d{2}-\d{2}"', f'"dateModified":"{control_date}"', "English JSON-LD date")
-        text = replace_once(
+        text = replace_exactly_once(
             text,
-            r'"description":"Canonical register of \d+ identities: \d+ people, \d+ organisations, \d+ structures, \d+ institutions and \d+ proceedings, connected with actions and an evidence graph\."',
-            f'"description":"Canonical register of {total} identities: {people} people, {orgs} organisations, {structures} structures, {institutions} institutions and {proceedings} proceedings, connected with actions and an evidence graph."',
+            r'(?<="inLanguage":"en","description":")Canonical register of \d+ identities: \d+ people, \d+ organisations, \d+ structures, \d+ institutions and \d+ proceedings, [^"]+',
+            json_description,
             "English JSON-LD description",
         )
         value_names = {
             "Total": total,
             "People": people,
-            "Organisations": orgs,
+            "Organisations": organisations,
             "Structures": structures,
             "Institutions": institutions,
             "Proceedings": proceedings,
         }
-        for name, value in value_names.items():
-            text = replace_once(
-                text,
-                rf'("name":"{re.escape(name)}","value":)\d+',
-                rf'\g<1>{value}',
-                f"English JSON-LD {name}",
-            )
-        text = replace_once(
-            text,
-            r'(PD-SP-IDENTITY-REGISTRY-001 · PD-SP-IDENTITY-OPS-001 · )\d{1,2} [A-Z]+ \d{4}',
-            rf'\1{en_date}',
-            "English human date",
+        human_date = en_date
+        date_pattern = r'(?<=PD-SP-IDENTITY-REGISTRY-001 · PD-SP-IDENTITY-OPS-001 · )\d{1,2} [A-Z]+ \d{4}'
+        coverage_pattern = (
+            r'The <strong>\d+ IDs</strong> cover the current canonical register: \d+ people, '
+            r'\d+ organisations, \d+ structures, \d+ institutions and \d+ proceedings\.'
         )
-        text = replace_once(
-            text,
-            r'The <strong>\d+ IDs</strong> cover the current canonical register: \d+ people, \d+ organisations, \d+ structures, \d+ institutions and \d+ proceedings\.',
-            f'The <strong>{total} IDs</strong> cover the current canonical register: {people} people, {orgs} organisations, {structures} structures, {institutions} institutions and {proceedings} proceedings.',
-            "English coverage boundary",
+        noscript_pattern = (
+            r'The static canonical denominator is \d+: \d+ people, \d+ organisations, '
+            r'\d+ structures, \d+ institutions and \d+ proceedings\.'
         )
-        text = replace_once(
-            text,
-            r'The static canonical denominator is \d+: \d+ people, \d+ organisations, \d+ structures, \d+ institutions and \d+ proceedings\.',
-            f'The static canonical denominator is {total}: {people} people, {orgs} organisations, {structures} structures, {institutions} institutions and {proceedings} proceedings.',
-            "English noscript denominator",
+    elif language == "es":
+        meta = (
+            f"Registro operativo de {total} IDs inmutables de Por Derecho: {people} personas, "
+            f"{organisations} organizaciones, {structures} estructuras, {institutions} instituciones "
+            f"y {proceedings} procedimientos"
         )
-    else:
-        text = replace_once(
+        og = (
+            f"{total} identidades canónicas: {people} personas, {organisations} organizaciones, "
+            f"{structures} estructuras, {institutions} instituciones y {proceedings} procedimientos."
+        )
+        json_description = (
+            f"Registro canónico de {total} identidades: {people} personas, {organisations} organizaciones, "
+            f"{structures} estructuras, {institutions} instituciones y {proceedings} procedimientos, "
+            "conectado con acciones institucionales y un grafo probatorio."
+        )
+        coverage = (
+            f"Los <strong>{total} IDs</strong> cubren el registro canónico actual: {people} personas, "
+            f"{organisations} organizaciones, {structures} estructuras, {institutions} instituciones "
+            f"y {proceedings} procedimientos."
+        )
+        noscript = (
+            f"El denominador canónico estático es {total}: {people} personas, {organisations} organizaciones, "
+            f"{structures} estructuras, {institutions} instituciones y {proceedings} procedimientos."
+        )
+        text = replace_exactly_once(
             text,
-            r'(<meta name="description" content=")Registro operativo de \d+ IDs inmutables de Por Derecho: \d+ personas, \d+ organizaciones, \d+ estructuras, \d+ instituciones y \d+ procedimientos',
-            rf'\1Registro operativo de {total} IDs inmutables de Por Derecho: {people} personas, {orgs} organizaciones, {structures} estructuras, {institutions} instituciones y {proceedings} procedimientos',
+            r'(?<=<meta name="description" content=")Registro operativo de \d+ IDs inmutables de Por Derecho: \d+ personas, \d+ organizaciones, \d+ estructuras, \d+ instituciones y \d+ procedimientos',
+            meta,
             "Spanish meta description",
         )
-        text = replace_once(
+        text = replace_exactly_once(
             text,
-            r'(<meta property="og:description" content=")\d+ identidades canónicas: \d+ personas, \d+ organizaciones, \d+ estructuras, \d+ instituciones y \d+ procedimientos\.',
-            rf'\1{total} identidades canónicas: {people} personas, {orgs} organizaciones, {structures} estructuras, {institutions} instituciones y {proceedings} procedimientos.',
+            r'(?<=<meta property="og:description" content=")\d+ identidades canónicas: \d+ personas, \d+ organizaciones, \d+ estructuras, \d+ instituciones y \d+ procedimientos\.',
+            og,
             "Spanish Open Graph description",
         )
-        text = replace_once(text, r'"dateModified":"\d{4}-\d{2}-\d{2}"', f'"dateModified":"{control_date}"', "Spanish JSON-LD date")
-        text = replace_once(
+        text = replace_exactly_once(
             text,
-            r'"description":"Registro canónico de \d+ identidades: \d+ personas, \d+ organizaciones, \d+ estructuras, \d+ instituciones y \d+ procedimientos, conectado con acciones institucionales y un grafo probatorio\."',
-            f'"description":"Registro canónico de {total} identidades: {people} personas, {orgs} organizaciones, {structures} estructuras, {institutions} instituciones y {proceedings} procedimientos, conectado con acciones institucionales y un grafo probatorio."',
+            r'(?<="inLanguage":"es","description":")Registro canónico de \d+ identidades: \d+ personas, \d+ organizaciones, \d+ estructuras, \d+ instituciones y \d+ procedimientos, [^"]+',
+            json_description,
             "Spanish JSON-LD description",
         )
         value_names = {
             "Total": total,
             "Personas": people,
-            "Organizaciones": orgs,
+            "Organizaciones": organisations,
             "Estructuras": structures,
             "Instituciones": institutions,
             "Procedimientos": proceedings,
         }
-        for name, value in value_names.items():
-            text = replace_once(
-                text,
-                rf'("name":"{re.escape(name)}","value":)\d+',
-                rf'\g<1>{value}',
-                f"Spanish JSON-LD {name}",
-            )
-        text = replace_once(
-            text,
-            r'(PD-SP-IDENTITY-REGISTRY-001 · PD-SP-IDENTITY-OPS-001 · )\d{1,2} [A-ZÁÉÍÓÚÑ]+ \d{4}',
-            rf'\1{es_date}',
-            "Spanish human date",
+        human_date = es_date
+        date_pattern = r'(?<=PD-SP-IDENTITY-REGISTRY-001 · PD-SP-IDENTITY-OPS-001 · )\d{1,2} [A-ZÁÉÍÓÚÑ]+ \d{4}'
+        coverage_pattern = (
+            r'Los <strong>\d+ IDs</strong> cubren el registro canónico actual: \d+ personas, '
+            r'\d+ organizaciones, \d+ estructuras, \d+ instituciones y \d+ procedimientos\.'
         )
-        text = replace_once(
-            text,
-            r'Los <strong>\d+ IDs</strong> cubren el registro canónico actual: \d+ personas, \d+ organizaciones, \d+ estructuras, \d+ instituciones y \d+ procedimientos\.',
-            f'Los <strong>{total} IDs</strong> cubren el registro canónico actual: {people} personas, {orgs} organizaciones, {structures} estructuras, {institutions} instituciones y {proceedings} procedimientos.',
-            "Spanish coverage boundary",
+        noscript_pattern = (
+            r'El denominador canónico estático es \d+: \d+ personas, \d+ organizaciones, '
+            r'\d+ estructuras, \d+ instituciones y \d+ procedimientos\.'
         )
-        text = replace_once(
-            text,
-            r'El denominador canónico estático es \d+: \d+ personas, \d+ organizaciones, \d+ estructuras, \d+ instituciones y \d+ procedimientos\.',
-            f'El denominador canónico estático es {total}: {people} personas, {orgs} organizaciones, {structures} estructuras, {institutions} instituciones y {proceedings} procedimientos.',
-            "Spanish noscript denominator",
-        )
+    else:
+        raise SyncError(f"unsupported language: {language}")
 
-    text = replace_once(text, r'data-static-registry-counts="[0-9-]+"', f'data-static-registry-counts="{marker}"', f"{language} static marker")
+    text = replace_exactly_once(
+        text,
+        r'(?<="dateModified":")\d{4}-\d{2}-\d{2}',
+        control_date,
+        f"{language} JSON-LD date",
+    )
+    for name, value in value_names.items():
+        text = replace_exactly_once(
+            text,
+            rf'(?<="name":"{re.escape(name)}","value":)\d+',
+            str(value),
+            f"{language} JSON-LD value {name}",
+        )
+    text = replace_exactly_once(text, date_pattern, human_date, f"{language} human date")
+    text = replace_exactly_once(text, coverage_pattern, coverage, f"{language} coverage sentence")
+    text = replace_exactly_once(text, noscript_pattern, noscript, f"{language} noscript denominator")
+    text = replace_exactly_once(
+        text,
+        r'(?<=data-static-registry-counts=")[0-9-]+',
+        marker,
+        f"{language} static marker",
+    )
     stat_values = {
         "TOTAL": total,
         "PERSON": people,
-        "ORGANISATION": orgs,
+        "ORGANISATION": organisations,
         "STRUCTURE": structures,
         "INSTITUTION": institutions,
         "PROCEEDING": proceedings,
     }
-    for name, value in stat_values.items():
-        text = replace_once(
+    for stat_name, value in stat_values.items():
+        text = replace_exactly_once(
             text,
-            rf'(<strong data-registry-stat="{name}">)\d+(</strong>)',
-            rf'\g<1>{value}\2',
-            f"{language} static stat {name}",
+            rf'(?<=<strong data-registry-stat="{stat_name}">)\d+',
+            str(value),
+            f"{language} static stat {stat_name}",
         )
     return text
 
 
 def update_unitary_state(counts: dict[str, int], control_date: str) -> str:
-    state = load_json(UNITARY_STATE)
+    state = load_object(UNITARY_STATE)
     identity = state.get("identity_registry")
     if not isinstance(identity, dict):
         raise SyncError("CURRENT_UNITARY_STATE lacks identity_registry object")
@@ -246,59 +277,66 @@ def update_unitary_state(counts: dict[str, int], control_date: str) -> str:
 
 def update_dp3205_validator() -> str:
     text = DP3205_VALIDATOR.read_text(encoding="utf-8")
-    old = '''registry_control_date = registry.get("control_date") if isinstance(registry, dict) else None
-require(registry_control_date == "2026-08-31", "canonical current registry control date is stale")
-includes(registry_en, f'"dateModified":"{registry_control_date}"', relative(REGISTRY_EN))
-includes(registry_en, "31 AUGUST 2026", relative(REGISTRY_EN))
-includes(registry_es, f'"dateModified":"{registry_control_date}"', relative(REGISTRY_ES))
-includes(registry_es, "31 AGOSTO 2026", relative(REGISTRY_ES))
-'''
-    new = '''registry_control_date = registry.get("control_date") if isinstance(registry, dict) else None
-registry_date_match = re.fullmatch(r"(\\d{4})-(\\d{2})-(\\d{2})", str(registry_control_date or ""))
-require(bool(registry_date_match), "canonical current registry control date is not a valid ISO date")
-includes(registry_en, f'"dateModified":"{registry_control_date}"', relative(REGISTRY_EN))
-includes(registry_es, f'"dateModified":"{registry_control_date}"', relative(REGISTRY_ES))
-if registry_date_match:
-    registry_year, registry_month, registry_day = (int(part) for part in registry_date_match.groups())
-    registry_en_months = {1:"JANUARY",2:"FEBRUARY",3:"MARCH",4:"APRIL",5:"MAY",6:"JUNE",7:"JULY",8:"AUGUST",9:"SEPTEMBER",10:"OCTOBER",11:"NOVEMBER",12:"DECEMBER"}
-    registry_es_months = {1:"ENERO",2:"FEBRERO",3:"MARZO",4:"ABRIL",5:"MAYO",6:"JUNIO",7:"JULIO",8:"AGOSTO",9:"SEPTIEMBRE",10:"OCTUBRE",11:"NOVIEMBRE",12:"DICIEMBRE"}
-    require(registry_month in registry_en_months, "canonical registry control date has an invalid month")
-    if registry_month in registry_en_months:
-        includes(registry_en, f"{registry_day} {registry_en_months[registry_month]} {registry_year}", relative(REGISTRY_EN))
-        includes(registry_es, f"{registry_day} {registry_es_months[registry_month]} {registry_year}", relative(REGISTRY_ES))
-'''
-    if old in text:
-        return text.replace(old, new, 1)
     if "registry_date_match = re.fullmatch" in text:
         return text
-    raise SyncError("DP3205 validator date block is neither legacy nor synchronized")
+
+    start_marker = 'registry_control_date = registry.get("control_date") if isinstance(registry, dict) else None'
+    end_marker = 'includes(registry_es, "31 AGOSTO 2026", relative(REGISTRY_ES))'
+    start = text.find(start_marker)
+    end = text.find(end_marker, start if start >= 0 else 0)
+    if start < 0 or end < 0:
+        raise SyncError("DP3205 validator legacy date block was not found")
+    end += len(end_marker)
+    if text[end:end + 2] == "\r\n":
+        end += 2
+    elif text[end:end + 1] == "\n":
+        end += 1
+
+    replacement = "\n".join([
+        'registry_control_date = registry.get("control_date") if isinstance(registry, dict) else None',
+        'registry_date_match = re.fullmatch(r"(\\d{4})-(\\d{2})-(\\d{2})", str(registry_control_date or ""))',
+        'require(bool(registry_date_match), "canonical current registry control date is not a valid ISO date")',
+        'includes(registry_en, f\'"dateModified":"{registry_control_date}"\', relative(REGISTRY_EN))',
+        'includes(registry_es, f\'"dateModified":"{registry_control_date}"\', relative(REGISTRY_ES))',
+        'if registry_date_match:',
+        '    registry_year, registry_month, registry_day = (int(part) for part in registry_date_match.groups())',
+        '    registry_en_months = {1:"JANUARY",2:"FEBRUARY",3:"MARCH",4:"APRIL",5:"MAY",6:"JUNE",7:"JULY",8:"AUGUST",9:"SEPTEMBER",10:"OCTOBER",11:"NOVEMBER",12:"DECEMBER"}',
+        '    registry_es_months = {1:"ENERO",2:"FEBRERO",3:"MARZO",4:"ABRIL",5:"MAYO",6:"JUNIO",7:"JULIO",8:"AGOSTO",9:"SEPTIEMBRE",10:"OCTUBRE",11:"NOVIEMBRE",12:"DICIEMBRE"}',
+        '    require(registry_month in registry_en_months, "canonical registry control date has an invalid month")',
+        '    if registry_month in registry_en_months:',
+        '        includes(registry_en, f"{registry_day} {registry_en_months[registry_month]} {registry_year}", relative(REGISTRY_EN))',
+        '        includes(registry_es, f"{registry_day} {registry_es_months[registry_month]} {registry_year}", relative(REGISTRY_ES))',
+        '',
+    ])
+    return text[:start] + replacement + text[end:]
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser()
-    parser.add_argument("--write", action="store_true", help="write synchronized files")
-    parser.add_argument("--check", action="store_true", help="fail if synchronization would change files")
+    parser = argparse.ArgumentParser(description=__doc__)
+    mode = parser.add_mutually_exclusive_group(required=True)
+    mode.add_argument("--write", action="store_true", help="write synchronized derived files")
+    mode.add_argument("--check", action="store_true", help="fail if a derived file is stale")
     args = parser.parse_args()
-    if not args.write and not args.check:
-        parser.error("choose --write or --check")
 
-    registry = load_json(REGISTRY)
-    counts = registry.get("counts")
-    if not isinstance(counts, dict) or set(counts) != {"total", *TYPES}:
+    registry = load_object(REGISTRY)
+    raw_counts = registry.get("counts")
+    expected_keys = {"total", *TYPES}
+    if not isinstance(raw_counts, dict) or set(raw_counts) != expected_keys:
         raise SyncError("canonical registry count schema is incomplete")
-    integer_counts = {key: int(counts[key]) for key in ("total", *TYPES)}
-    if sum(integer_counts[key] for key in TYPES) != integer_counts["total"]:
+    counts = {key: int(raw_counts[key]) for key in ("total", *TYPES)}
+    if sum(counts[key] for key in TYPES) != counts["total"]:
         raise SyncError("canonical registry total does not equal class totals")
     control_date = str(registry.get("control_date") or "")
-    human_dates(control_date)
+    iso_and_human_dates(control_date)
 
     outputs = {
-        EN_PAGE: synchronize_page(EN_PAGE, "en", integer_counts, control_date),
-        ES_PAGE: synchronize_page(ES_PAGE, "es", integer_counts, control_date),
-        UNITARY_STATE: update_unitary_state(integer_counts, control_date),
+        EN_PAGE: synchronize_page(EN_PAGE, "en", counts, control_date),
+        ES_PAGE: synchronize_page(ES_PAGE, "es", counts, control_date),
+        UNITARY_STATE: update_unitary_state(counts, control_date),
         DP3205_VALIDATOR: update_dp3205_validator(),
     }
     changed = [path for path, content in outputs.items() if path.read_text(encoding="utf-8") != content]
+
     if args.check:
         if changed:
             print("IDENTITY REGISTRY STATIC SYNCHRONIZATION: FAIL")
