@@ -1,12 +1,18 @@
 {
   "schema": "por-derecho.la-laguna-judicial-actors-canonical-interlink-control.v1",
   "as_of": "2026-09-01",
-  "status": "SOURCE_IDENTIFIED_ACTORS_REGISTERED_GAPS_EXPLICIT",
+  "status": "SOURCE_IDENTIFIED_ACTORS_REGISTERED_PUBLIC_SURFACE_CLOSED_SOURCE_GAPS_EXPLICIT",
   "governance": [
     ".github/governance/CAEPR_CARET_IDENTITY_AND_ALL_IS_VERIFICATION_PROTOCOL_26AUG2026.md",
     "archive/PROCEEDINGS_MASTER_REGISTER_PROTOCOL.md"
   ],
   "scope_rule": "Every judge/magistrate and LAJ named in the located primary La Laguna judicial corpus is linked to the exact proceeding, organ, act/date and capacity. Auxiliary cooperation office-holders are retained separately. Missing office-holder identity is a gap, never an inference.",
+  "public_routes": {
+    "es": "/es/registro-judicial-la-laguna/",
+    "en": "/en/la-laguna-judicial-register/"
+  },
+  "gap_audit": "assets/data/la-laguna-judicial-actors-gap-closure-audit-v1.json",
+  "dp748_interlink": "assets/data/dp748-2026-canonical-interlink-control-v1.json",
   "proceedings": [
     {
       "master_id": "TF-CIV-001",
@@ -111,7 +117,7 @@
         {
           "caepr_id": "PD-SP-P-0147",
           "name": "Graciela Pérez-Valencia Díaz",
-          "verified_acts": ["Providencia 20-May-2026 admitting reforma and subsidiary appeal", "Auto 16-Jul-2026 resolving reforma"],
+          "verified_acts": ["Providencia 20-May-2026 admitting/processing reforma and subsidiary appeal lane", "Auto 16-Jul-2026 resolving reforma"],
           "source_status": "PRIMARY_SOURCE_VERIFIED"
         }
       ],
@@ -126,7 +132,10 @@
       "open_gaps": [
         {
           "gap_id": "LL-JUD-GAP-001",
+          "priority": "P0",
           "what_missing": "Signed original of the 24-Mar-2026 provisional-dismissal Auto sufficient to attribute that exact act to its judicial signatory.",
+          "search_state": "FINITE_SEARCH_PASS_COMPLETE_EVIDENTIARY_GAP_OPEN",
+          "closure_trigger": "Signed/authenticated Auto 454/2026 or equivalent primary court source expressly identifying its signatory.",
           "rule": "Do not infer the 24-Mar signer from later acts even though the same proceeding is involved."
         }
       ]
@@ -147,7 +156,10 @@
       "open_gaps": [
         {
           "gap_id": "LL-JUD-GAP-002",
+          "priority": "P1",
           "what_missing": "Identity of the LAJ(s) responsible for PO 344/2013, including the located-but-unnamed 21-May-2013 decree / 27-Jun-2013 diligencia lineage.",
+          "search_state": "FINITE_SEARCH_PASS_COMPLETE_EVIDENTIARY_GAP_OPEN",
+          "closure_trigger": "Certified/primary signed 21-May-2013 decree, 27-Jun-2013 diligencia, authenticated docket, or another primary PO 344/2013 act naming the relevant LAJ for the act and period.",
           "likely_source": "Certified complete court file, original signed decrees/diligencias or authenticated docket."
         }
       ]
@@ -161,12 +173,17 @@
       "open_gaps": [
         {
           "gap_id": "LL-JUD-GAP-003",
+          "priority": "P0",
           "what_missing": "Verified appellate organ/roll and its judicial/LAJ office-holders.",
+          "verified_minimum": "The 17-Apr-2026 DP 748 filing expressly contains a subsidiary appeal; no admission/transmission/appellate-roll source has been located in the reviewed corpus.",
+          "search_state": "FINITE_SEARCH_PASS_COMPLETE_DEADLINE_SENSITIVE_EVIDENTIARY_GAP_OPEN",
+          "closure_trigger": "Primary court or Audiencia source identifying admission/transmission/roll or equivalent processing and, separately, any named appellate judge/panel/LAJ.",
           "promotion_rule": "Do not assign any judge, LAJ or appellate organ until admission/transmission/roll or equivalent primary source is located."
         }
       ]
     }
   ],
-  "denominator_statement": "All judges and LAJs identifiable from the presently recovered primary La Laguna proceeding corpus have a canonical person record and act-specific proceeding link in this control. Unknown office-holders remain explicit source gaps and are not guessed.",
+  "denominator_statement": "All judges and LAJs identifiable from the presently recovered primary La Laguna proceeding corpus have a canonical person record, act-specific proceeding link and bilingual public surface in this control. Unknown office-holders remain explicit source gaps and are not guessed.",
+  "certified_denominator_boundary": "This is not a claim that every historical act or court file has been recovered or certified complete.",
   "liability_boundary": "Registration establishes identity, procedural capacity and source linkage only. It does not transfer knowledge, intent, responsibility, agreement with a party, or merits attribution across acts or proceedings."
 }
