@@ -1,0 +1,40 @@
+{
+  "summary": "Material workspace checkpoint",
+  "visibility_class": "PRIVATE_WORKSPACE",
+  "status": "DELETION_SAFE_WITH_OPEN_WORK",
+  "objective": "Continue the substantive workspace from durable state rather than chat memory.",
+  "completed": [
+    "Record completed repository, evidence, artifact and publication-state events with exact references."
+  ],
+  "decisions": [
+    "The PD-WS workspace identity persists across replacement ChatGPT threads.",
+    "Raw private workspace material does not flow automatically into the public repository."
+  ],
+  "open_tasks": [
+    "Name the next targeted task and the evidence or implementation gap it closes."
+  ],
+  "next_actions": [
+    "Reconcile current main and continue only from the recorded open task."
+  ],
+  "do_not_infer": [
+    "A completed repository action is not an external filing, service, authority notice or social-media publication.",
+    "A chat statement is not proof of the underlying external fact."
+  ],
+  "artifact_refs": [],
+  "source_refs": [],
+  "thread_aliases": [],
+  "repository_state": {
+    "repository": "sbu001monterecco/por-derecho",
+    "baseline": "REPLACE_WITH_CURRENT_MAIN_SHA",
+    "active_branch": null,
+    "pull_request": null,
+    "deployment_state": "NOT_APPLICABLE_OR_EXPLICITLY_STATE"
+  },
+  "publication_state": {
+    "public_repository": "SEPARATE_FROM_PRIVATE_VAULT",
+    "external_actions": "NONE_UNLESS_EXPLICITLY_RECORDED"
+  },
+  "tool_failures": [],
+  "public_summary": null,
+  "notes": "Replace this example content. Do not place credentials, raw Gmail/Drive data, privileged material or unredacted personal data in a public checkpoint."
+}

@@ -2,6 +2,15 @@ __pycache__/
 *.py[cod]
 tmp/
 
+# Private workspace vaults and ChatGPT exports — never commit to the public repository.
+.workspace-vault/
+.pd-workspace-vault/
+private-workspaces/
+workspaces-private/
+conversations.json
+*.chatgpt-export.zip
+chatgpt-export*.zip
+
 # ACTA visual-review contact sheets are review derivatives, never publication assets.
 /artifacts/acta-source-contact-sheets/
 

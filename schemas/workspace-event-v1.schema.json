@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://sbu001monterecco.github.io/por-derecho/schemas/workspace-event-v1.schema.json",
+  "title": "Por Derecho workspace event v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "event_id",
+    "workspace_id",
+    "sequence",
+    "timestamp_utc",
+    "event_type",
+    "visibility_class",
+    "summary",
+    "details",
+    "repository_refs",
+    "artifact_refs",
+    "source_refs",
+    "thread_refs",
+    "content_hash",
+    "previous_event_hash",
+    "event_hash"
+  ],
+  "properties": {
+    "schema": {"const": "por-derecho.workspace-event.v1"},
+    "event_id": {"pattern": "^PD-WS-[0-9]{8}-[0-9]{4}-EVT-[0-9]{6}$"},
+    "workspace_id": {"pattern": "^PD-WS-[0-9]{8}-[0-9]{4}$"},
+    "sequence": {"type": "integer", "minimum": 1},
+    "timestamp_utc": {"type": "string", "format": "date-time"},
+    "event_type": {"type": "string", "pattern": "^[A-Z][A-Z0-9_]{1,63}$"},
+    "visibility_class": {
+      "enum": [
+        "PUBLIC_SOURCE_SAFE",
+        "PUBLIC_DERIVED_SAFE",
+        "PRIVATE_WORKSPACE",
+        "CONFIDENTIAL_USER_SUPPLIED",
+        "CONNECTED_SOURCE_RESTRICTED",
+        "PUBLICATION_REVIEW_REQUIRED"
+      ]
+    },
+    "summary": {"type": "string", "minLength": 1},
+    "details": {"type": "object"},
+    "repository_refs": {"type": "array", "items": {"type": "string"}},
+    "artifact_refs": {"type": "array", "items": {"type": "string"}},
+    "source_refs": {"type": "array", "items": {"type": "string"}},
+    "thread_refs": {"type": "array", "items": {"type": "string"}},
+    "content_hash": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "previous_event_hash": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "event_hash": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+  }
+}

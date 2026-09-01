@@ -2,11 +2,16 @@
   "schema": "por-derecho.workspace-register.v1",
   "register_id": "PD-WS-REG-001",
   "control_date": "2026-09-01",
-  "status": "ACTIVE",
+  "status": "ACTIVE_RUNTIME_ENABLED_CONCURRENT_SAFE",
   "workspace_id_pattern": "PD-WS-YYYYMMDD-NNNN",
+  "default_workspace_id": "PD-WS-20260901-0003",
+  "default_pointer_semantics": "MOST_RECENTLY_CHECKPOINTED_NOT_EXCLUSIVE",
   "governance": {
     "continuous_persistence": ".github/governance/AUTOMATIC_WORKSPACE_PERSISTENCE_ARCHITECTURE_01SEP2026.md",
     "handoff": ".github/governance/WORKSPACE_THREAD_CONTINUITY_HANDOFF_STANDARD_01SEP2026.md",
+    "concurrency": ".github/governance/CONCURRENT_WORKSPACE_REGISTRATION_PROTOCOL_01SEP2026.md",
+    "runtime": "scripts/workspace_persistence.py",
+    "runbook": "docs/WORKSPACE_PERSISTENCE_RUNBOOK.md",
     "current_pointer": "CURRENT_WORKSPACE_HANDOFF.md"
   },
   "workspaces": [
@@ -16,9 +21,17 @@
       "status": "DELETION_SAFE_WITH_OPEN_WORK",
       "current_handoff_id": "PD-WCH-20260901-AMHP-DMA-001",
       "handoff_path": "archive/handoffs/2026-09-01-acosta-matos-hotel-platform-digital-media-workspace-handoff.md",
-      "topic_keys": ["ACOSTA_MATOS", "CANARIAN_HOSPITALITY", "HOTEL_PLATFORM", "SATIRE", "DIGITAL_MEDIA", "LINKEDIN", "CONTINUITY"],
+      "topic_keys": [
+        "ACOSTA_MATOS",
+        "CANARIAN_HOSPITALITY",
+        "HOTEL_PLATFORM",
+        "SATIRE",
+        "DIGITAL_MEDIA",
+        "LINKEDIN",
+        "CONTINUITY"
+      ],
       "repository": "sbu001monterecco/por-derecho",
-      "public_private_boundary": "PUBLIC_REPO_CONTAINS_GOVERNED_SOURCE_SAFE_STATE; RAW_PRIVATE_TRANSCRIPT_ARCHIVE_NOT_IMPLEMENTED",
+      "public_private_boundary": "PUBLIC_REPO_CONTAINS_GOVERNED_SOURCE_SAFE_STATE; RAW_PRIVATE_TRANSCRIPT_ARCHIVE_NOT_IMPLEMENTED_FOR_THIS_WORKSPACE",
       "continuous_capture_mode": "CONNECTED_AGENTIC_CHECKPOINTING",
       "next_target_mode": "PRIVATE_ARCHIVE_PLUS_PUBLIC_STATE"
     },
@@ -28,14 +41,70 @@
       "status": "DELETION_SAFE_WITH_OPEN_WORK",
       "current_handoff_id": "PD-WCH-20260901-AUTH-REDSARA-001",
       "handoff_path": "archive/handoffs/2026-09-01-authority-discovery-redsara-workspace-handoff.md",
-      "topic_keys": ["REDSARA", "AGE", "INSTITUTIONAL_COMMUNICATIONS", "INTERVENCION_GENERAL", "PUBLIC_AUTHORITY_DISCOVERY", "CONTINUITY"],
+      "topic_keys": [
+        "REDSARA",
+        "AGE",
+        "INSTITUTIONAL_COMMUNICATIONS",
+        "INTERVENCION_GENERAL",
+        "PUBLIC_AUTHORITY_DISCOVERY",
+        "CONTINUITY"
+      ],
       "repository": "sbu001monterecco/por-derecho",
       "public_private_boundary": "PUBLIC_REPO_CONTAINS_SOURCE_SAFE_REGISTRY_METADATA; NO_NATIVE_RECEIPTS_OR_PRIVATE_ATTACHMENTS",
       "continuous_capture_mode": "CONNECTED_AGENTIC_CHECKPOINTING",
       "next_target_mode": "SOURCE_PROVED_REGISTRY_RECONCILIATION_AND_P0_GAP_CLOSURE"
+    },
+    {
+      "workspace_id": "PD-WS-20260901-0003",
+      "title": "Automatic workspace persistence runtime and private-vault implementation",
+      "status": "HANDOFF_READY_RECONCILED_PR_OPEN",
+      "current_handoff_id": "PD-WCH-20260901-AWP-RUNTIME-001",
+      "handoff_path": "archive/handoffs/2026-09-01-automatic-workspace-persistence-runtime-handoff.md",
+      "machine_handoff_path": "archive/handoffs/2026-09-01-automatic-workspace-persistence-runtime-handoff.json",
+      "topic_keys": [
+        "CONTINUITY",
+        "WORKSPACE_PERSISTENCE",
+        "EVENT_SOURCING",
+        "PRIVATE_VAULT",
+        "CHATGPT_EXPORT",
+        "GITHUB",
+        "GOOGLE_DRIVE",
+        "CONCURRENT_WORKSPACES"
+      ],
+      "repository": "sbu001monterecco/por-derecho",
+      "public_private_boundary": "PUBLIC_REPO_CONTAINS_RUNTIME_AND_SOURCE_SAFE_STATE; PRIVATE_GOOGLE_DRIVE_VAULT_OWNER_ONLY_NOT_SHARED_AT_CREATION; VALIDATED_SEED_SNAPSHOT_PRESENT; NO_RAW_CHATGPT_EXPORT_IMPORTED",
+      "continuous_capture_mode": "CONNECTED_AGENTIC_CHECKPOINTING_PLUS_APPEND_ONLY_RUNTIME",
+      "private_vault": {
+        "provider": "GOOGLE_DRIVE",
+        "root_alias": "Por Derecho Private Workspaces",
+        "workspace_alias": "PD-WS-20260901-0003 — Automatic Workspace Persistence Runtime",
+        "permission_state_at_creation": "OWNER_ONLY_SHARED_FALSE",
+        "exact_locator_publication": "WITHHELD",
+        "filesystem_mount_state": "NOT_CONNECTED",
+        "seed_filename": "PD-WS-20260901-0003-seed-20260901.zip",
+        "seed_sha256": "5b38b80efef14bab05f8d54160c792b24a0cedc610129453a92655f06fd2f742",
+        "seed_bytes": 10803,
+        "seed_state": "VALIDATED_UPLOADED_PRIVATE"
+      },
+      "implementation_pr": 1317,
+      "superseded_pr": 1316,
+      "next_target_mode": "LIVE_PRIVATE_FILESYSTEM_OR_DRIVE_ADAPTER_THEN_TRUE_EVENT_SOURCED_CLIENT"
     }
   ],
-  "registration_rule": "Create/recover a stable workspace ID for every substantive Por Derecho workspace when persistence-capable work begins. A workspace may span multiple ChatGPT threads; a ChatGPT thread may be superseded without changing the workspace ID.",
+  "registration_rule": "Create or recover a stable workspace ID for every substantive Por Derecho workspace when persistence-capable work begins. A workspace may span multiple ChatGPT threads; a ChatGPT thread may be superseded without changing the workspace ID.",
+  "allocation_rule": "A locally or branch-allocated sequential ID is provisional until reconciled with current main. Current main wins; an unmerged colliding workspace must be renumbered and all affected private/public manifests corrected.",
+  "checkpoint_rule": "Checkpoint material decisions, identity/source/artifact changes, repository/publication events, failures and open work during execution rather than waiting for thread closeout.",
+  "private_vault_rule": "Raw transcripts, connected-source content, private attachments and event logs belong in a separate private vault. The public repository receives only governed source-safe state and expressly approved derivatives.",
+  "pointer_rule": "CURRENT_WORKSPACE_HANDOFF.md is a human index and most-recent/default pointer, not proof that only one workspace exists. Select a workspace by explicit ID or substantive topic.",
   "thread_rule": "Do not use a ChatGPT title as canonical identity. Thread/platform IDs or URLs, when available, are aliases on the workspace record.",
-  "supersession_rule": "A later handoff or workspace state supersedes stale chat state only when repository reconciliation is explicit."
+  "supersession_rule": "A later handoff or workspace state supersedes stale chat state only when repository reconciliation is explicit.",
+  "collision_record": {
+    "date": "2026-09-01",
+    "collided_provisional_id": "PD-WS-20260901-0002",
+    "main_registered_owner": "Authority discovery / Red SARA workspace",
+    "renumbered_workspace": "PD-WS-20260901-0003",
+    "superseded_pr": 1316,
+    "reconciled_pr": 1317,
+    "result": "RESOLVED_WITHOUT_SILENT_OVERWRITE"
+  }
 }
