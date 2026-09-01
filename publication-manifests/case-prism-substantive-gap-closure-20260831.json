@@ -3,13 +3,13 @@
   "publication_id": "PD-SP-CASE-PRISM-EXACT-ACTIONABILITY-20260831-01",
   "owner": "Por Derecho / Project Sun Rock",
   "control_date": "2026-08-31",
-  "current_state": "PREPARED_PENDING_MERGE",
-  "state": "PREPARED_PENDING_MERGE_WITH_ACCEPTED_PUBLICATION_BOUNDARY_GAP",
-  "manifest_version": "1.0.0",
+  "current_state": "LIVE_VERIFIED",
+  "state": "LIVE_VERIFIED_WITH_ACCEPTED_PUBLICATION_BOUNDARY_GAP",
+  "manifest_version": "2.0.0",
   "title": "Case Prism exact-file actionability and institutional-memory closure",
   "purpose": "Add one controlled finite test and one receipt/knowledge classification for every public exact proceeding while preserving the narrower shared-proposition matrix, evidence gaps and legal separateness.",
   "source_base_sha": "a54c74b204d6f7596d3da9e41af569c08c676736",
-  "head_branch": "codex/close-case-prism-substantive-gaps-20260831",
+  "head_branch": "codex/record-case-prism-live-closeout-20260831",
   "authorization": {
     "status": "EXPRESSLY_AUTHORIZED_IN_CURRENT_THREAD",
     "scope": "Implement, verify, publish and close the recorded Case Prism substantive implementation gaps through the normal PR, CI, merge, Pages and live-verification chain.",
@@ -35,6 +35,7 @@
     "assets/data/proceedings-interconnectivity-schema-v1.json",
     "assets/data/fiscalia-response-correspondence.json",
     "assets/data/counsel-procurador-gap-register-v1.json",
+    "archive/DEPLOYMENT_LOG.md",
     "assets/proceedings-interconnectivity-map-20260830.js",
     "assets/proceedings-interconnectivity-map-20260830.css",
     "assets/master-proceedings-publication-20260830.js",
@@ -81,6 +82,36 @@
     "fiscalia_matrix_rows_with_episode_profiles": 8,
     "judicial_file_episode_profiles_outside_fiscalia_matrix": 1
   },
+  "live_release_denominator": {
+    "canonical_rows": 122,
+    "public_rows": 121,
+    "canonical_exact_proceedings": 98,
+    "public_exact_proceedings": 97,
+    "private_exact_excluded": 1,
+    "public_exact_dispositions": "VERIFIED_97_OF_97",
+    "direct_relationship_pairs": 33,
+    "direct_relationship_pairs_source_verified": 31,
+    "direct_relationship_pairs_source_reported_primary_pending": 2,
+    "direct_source_assertions": 40,
+    "direct_source_assertions_verified": 38,
+    "direct_source_assertions_source_reported_primary_pending": 2,
+    "material_context_clusters": 26,
+    "shared_case_prism_propositions": 19,
+    "parallel_lanes": 12,
+    "explicit_matrix_coordinates": 228,
+    "exact_file_decision_dependency_and_fragmentation_audit": "VERIFIED_97_OF_97",
+    "case_prism_exact_proceedings_with_shared_proposition_coordinate": 43,
+    "case_prism_exact_proceedings_without_shared_proposition_coordinate": 54,
+    "audience_lenses": 9,
+    "institutional_positive_source_profiles": 9,
+    "actor_specific_positive_profiles": 0,
+    "public_master_fiscalia_rows": 24,
+    "public_master_fiscalia_exact_rows": 21,
+    "public_master_fiscalia_unverified_reference_rows": 3,
+    "source_controlled_fiscalia_response_episodes": 9,
+    "fiscalia_matrix_rows_with_episode_profiles": 8,
+    "judicial_file_episode_profiles_outside_fiscalia_matrix": 1
+  },
   "target_structural_coverage": {
     "public_exact_dispositions": "97_OF_97",
     "exact_proceeding_full_finite_tests": "97_OF_97",
@@ -105,8 +136,8 @@
     "fiscalia_office_file_matrix_composition": "21_EXACT_PLUS_3_UNRESOLVED_REFERENCES",
     "fiscalia_office_file_matrix_profiled_rows": "8_OF_24",
     "fiscalia_response_episodes": "9_OF_9_INCLUDING_8_MATRIX_ROWS_PLUS_1_JUDICIAL_FILE_PROFILE",
-    "shared_proposition_coordinate_coverage": "26_OF_97",
-    "shared_proposition_no_coordinate_gap": "71_OF_97",
+    "shared_proposition_coordinate_coverage": "43_OF_97",
+    "shared_proposition_no_coordinate_gap": "54_OF_97",
     "dedicated_narrative_dossier_coverage": "PARTIAL_SEPARATE_POSITIVE_COUNT"
   },
   "coverage_meaning": {
@@ -115,7 +146,7 @@
     "actor_specific": "Actor-specific receipt and knowledge remain non-positive unless an actor-specific source identifies the person, material or act, time and permissible evidential scope.",
     "fiscalia": "Twenty-four public Master Register rows—21 exact and three unresolved references—receive separate source-attributed material, received-inventory-gap, direct/context proceeding, related-asset-gap, referred, actually-examined, response, cross-file, unitary, contrary and unanswered dispositions. Only reviewed event-to-matter relationships may support the eight profiled matrix rows. A ninth response episode profiles the separate DP 1901/2026 judicial file outside the matrix.",
     "routing": "Master Register, exact trace and isolation routes are required for every public exact ID. Dedicated narrative dossiers are a separately counted optional positive route.",
-    "case_prism": "The finite-test layer does not add the 71 no-coordinate proceedings to a shared proposition or lane."
+    "case_prism": "The finite-test layer does not add the 54 no-coordinate proceedings to a shared proposition or lane."
   },
   "evidential_boundaries": [
     "STRUCTURAL_AUDIT_COVERAGE_IS_NOT_EVIDENCE_COMPLETION",
@@ -144,7 +175,7 @@
     {
       "id": "CASE-PRISM-COORDINATE-001",
       "status": "OPEN",
-      "description": "The finite shared-proposition matrix covers 26 of 97 exact proceedings; 71 retain an explicit no-coordinate gap."
+      "description": "The finite shared-proposition matrix covers 43 of 97 exact proceedings; 54 retain an explicit no-coordinate gap."
     },
     {
       "id": "CELL-SOURCE-001",
@@ -172,7 +203,11 @@
     "resource": "archive/PROCEEDINGS_MASTER_REGISTER.csv",
     "last_recorded_http_status": 200,
     "current_source_base_sha256": "8caa65a0aaefa2b568be263869d7749b79fd8e7eb3b00ab568c7cabdc29bb801",
-    "post_deployment_http_and_hash_verification": "PENDING",
+    "post_deployment_http_and_hash_verification": "VERIFIED_HTTP_200_EXACT_SHA256_MATCH",
+    "observed_at": "2026-08-31T23:51:00Z",
+    "observed_content_type": "text/csv; charset=utf-8",
+    "observed_bytes": 89948,
+    "observed_sha256": "8caa65a0aaefa2b568be263869d7749b79fd8e7eb3b00ab568c7cabdc29bb801",
     "intended_live_surface": false,
     "included_in_live_urls": false,
     "included_in_live_markers": false,
@@ -180,8 +215,25 @@
     "qualification": "The renderer must use only allowlisted public projections. Continued CSV exposure is observed separately and must not become an intended publication invariant."
   },
   "validation": {
-    "status": "PENDING_EXACT_HEAD_CI",
-    "evidence": [],
+    "status": "EXACT_HEAD_AND_EXACT_MERGE_PUSH_CI_GREEN",
+    "evidence": [
+      {
+        "stage": "pull_request",
+        "pull_request": 1282,
+        "reviewed_head_sha": "9adb0ed41ebb6cbe4f36420c2cb32f39d16d2215",
+        "reviewed_tree_sha": "eeb0f7aeebf1d5dbfda425553088a9774f9cb2c3",
+        "result": "24_SUCCESS_1_SKIPPED_0_ADVERSE",
+        "specialist_run_id": 33451641756
+      },
+      {
+        "stage": "merge_push",
+        "merge_sha": "d8940e5a7e2d9073a8117b2342e20205bfab7653",
+        "merge_tree_sha": "eeb0f7aeebf1d5dbfda425553088a9774f9cb2c3",
+        "result": "25_OF_25_ASSOCIATED_WORKFLOWS_SUCCESS_INCLUDING_PAGES",
+        "specialist_run_id": 33452159009,
+        "specialist_job_id": 99684249593
+      }
+    ],
     "required": [
       "deterministic generated projections",
       "schema 1.7.0 and interlinkability projection 1.1.0",
@@ -194,33 +246,96 @@
       "24/24 Fiscalia office/file matrix split into 21 exact plus three unresolved-reference rows, eight profiled matrix rows and one separate DP 1901/2026 response profile",
       "24/24 Fiscalia rows with separate material allegations/evidence, received-inventory gap, direct/context proceedings, related assets/gap, referred, actually examined, response, cross-file, unitary, contrary and unanswered controls",
       "31 verified plus two pending-primary direct pairs preserved",
-      "26/97 shared proposition coordinate boundary preserved",
+      "43/97 shared proposition coordinate boundary preserved with 54 no-coordinate gaps",
       "bilingual exhaustive browser interaction",
       "publication integrity",
       "repository preservation",
       "audience experience"
     ]
   },
-  "pull_request": null,
-  "reviewed_head_sha": null,
-  "reviewed_tree_sha": null,
-  "merge_sha": null,
-  "deployment_evidence": null,
-  "live_urls": [],
-  "live_markers": {},
-  "live_verification_evidence": null,
+  "pull_request": {
+    "number": 1282,
+    "url": "https://github.com/sbu001monterecco/por-derecho/pull/1282",
+    "status": "MERGED"
+  },
+  "reviewed_head_sha": "9adb0ed41ebb6cbe4f36420c2cb32f39d16d2215",
+  "reviewed_tree_sha": "eeb0f7aeebf1d5dbfda425553088a9774f9cb2c3",
+  "merge_sha": "d8940e5a7e2d9073a8117b2342e20205bfab7653",
+  "merge_tree_sha": "eeb0f7aeebf1d5dbfda425553088a9774f9cb2c3",
+  "deployment_evidence": {
+    "provider": "GITHUB_PAGES",
+    "run_id": 33452158130,
+    "run_url": "https://github.com/sbu001monterecco/por-derecho/actions/runs/33452158130",
+    "head_sha": "d8940e5a7e2d9073a8117b2342e20205bfab7653",
+    "created_at": "2026-08-31T23:47:32Z",
+    "completed_at": "2026-08-31T23:48:36Z",
+    "status": "COMPLETED_SUCCESS"
+  },
+  "live_urls": [
+    "https://sbu001monterecco.github.io/por-derecho/en/proceedings-map/",
+    "https://sbu001monterecco.github.io/por-derecho/es/mapa-procedimientos/",
+    "https://sbu001monterecco.github.io/por-derecho/en/master-proceedings-register/",
+    "https://sbu001monterecco.github.io/por-derecho/es/registro-maestro-procedimientos/",
+    "https://sbu001monterecco.github.io/por-derecho/en/public-authority-unitary-case-reconstruction/",
+    "https://sbu001monterecco.github.io/por-derecho/es/reconstruccion-unitaria-autoridades-publicas/"
+  ],
+  "live_markers": {
+    "renderer": "data-proceedings-map=20260831e",
+    "propositions_lanes_coordinates": "19_X_12_EQUALS_228",
+    "exact_file_decision_dependency": "97_OF_97",
+    "exact_file_fragmentation_audit": "97_OF_97",
+    "shared_proposition_membership": "43_OF_97_WITH_54_GAPS",
+    "audience_lenses": 9
+  },
+  "live_verification_evidence": {
+    "observed_at": "2026-08-31T23:51:00Z",
+    "method": "CACHE_BUSTED_HTTP_READBACK_AND_EXACT_LOCAL_BYTE_COMPARISON",
+    "intended_critical_resource_count": 15,
+    "intended_http_200_count": 15,
+    "intended_exact_byte_match_count": 15,
+    "accepted_boundary_resource_count": 1,
+    "accepted_boundary_http_200_exact_byte_match_count": 1,
+    "critical_sha256": {
+      "en/proceedings-map/": "4b568386cf83f758740b04f251329d39926a88b91360c9aedc05303e27e370c7",
+      "es/mapa-procedimientos/": "3569476a5d8f96701b0518044494ac94b83e214048f401ab870fa9e95a280795",
+      "assets/proceedings-interconnectivity-map-20260830.js": "6f936f260317729f1f655991c3cd2c9802caf3c0789cabdf05f22aed48b6feae",
+      "assets/proceedings-interconnectivity-map-20260830.css": "874c836df4c236d258e67b1ff82ca7188ecba43740dc004ab841583ee9758e8e",
+      "assets/data/proceedings-case-prism-v1.json": "8268665437a78ab12bfbd23725176d814d7f37c748ece07ed5f12518a5319a7a",
+      "assets/data/proceedings-interlinkability-v1.json": "5534195c00aedc1026b6cab080af37cbf906345f4c2189d3c6d187b643ce20ee",
+      "assets/data/proceedings-master-public-v1.json": "17aa8f8c3d59a833df95092019877d301b8b7cdd7878a1fa7b3aa978c7666fe9",
+      "assets/data/fiscalia-proceedings-interconnectivity-v1.json": "8f7e1a4c92d779f79638261eaeea4bc801c4f52a234ac7592a4f75c4c001a956",
+      "assets/data/community-acta-authority-interconnectivity-v1.json": "38bffa9c694d6e7f7277177a56523d213747b9970fd806fe2440f9f5abc2e725",
+      "en/master-proceedings-register/": "4d2af56a973e18fa977cb6de2c83afeed9081856d2a7e9bd8412b80685723e4a",
+      "es/registro-maestro-procedimientos/": "6681792d9bbfd8e0e34259175a29d5335f8d2796ced792ede2ac1a0a03532757",
+      "en/": "05a0d321e205be5438afda4178fdfb9fa8c698700950d279ba774db59af8bba5",
+      "es/": "1b3bfaabbd7f219e7a907d02d0782f3f02391cc4abf57577ec824833426936ce",
+      "en/public-authority-unitary-case-reconstruction/": "30e8ba3285232f5028426fd7372f662284c42b7e347868481aee1cd0821b0f4c",
+      "es/reconstruccion-unitaria-autoridades-publicas/": "f33a72920b723d9c7063b8974eae48ff034e61aa417b6d81b9ddc6ac50a95a68"
+    },
+    "browser_interaction": {
+      "basis": "EXACT_MERGE_TREE_THEN_EXACT_LIVE_BYTE_IDENTITY",
+      "run_id": 33452159009,
+      "job_id": 99684249593,
+      "english": "PASS_228_CELL_MATRIX_SWIMLANE_97_FILE_ISOLATION_TRACE_MOBILE",
+      "spanish": "PASS_228_CELL_MATRIX_SWIMLANE_97_FILE_ISOLATION_TRACE_MOBILE",
+      "actor_source_receipt_knowledge_separation": "PASS",
+      "finite_test_fail_closed_mutations": "PASS_16_OF_16",
+      "independent_second_live_browser_execution": "NOT_COMPLETED_BROWSER_BINARY_DOWNLOAD_TIMED_OUT"
+    }
+  },
   "verification": {
     "source_prepared": true,
-    "exact_head_ci_green": false,
-    "merged": false,
-    "pages_deployed": false,
-    "live_http_readback": false,
-    "live_browser_interaction": false,
+    "exact_head_ci_green": true,
+    "merged": true,
+    "pages_deployed": true,
+    "live_http_readback": true,
+    "live_browser_interaction": "VERIFIED_BY_EXACT_DEPLOYED_BYTE_IDENTITY_TO_INTERACTIVELY_TESTED_MERGE_TREE",
+    "independent_second_live_browser_execution": false,
     "deletion_safe": false
   },
   "publication_closeout": {
-    "status": "PENDING",
-    "rule": "Populate only from exact PR/head/tree, merge, Pages and live-readback evidence. Preserve the accepted CSV observation separately."
+    "status": "COMPLETE_WITH_ACCEPTED_AND_EVIDENCE_DEPENDENT_GAPS",
+    "rule": "Exact PR/head/tree, merge, Pages and cache-busted live-byte evidence are recorded. Structural interlinking is complete for the 97-file public exact denominator; shared-proposition, direct-primary, counsel/procurador, dedicated-dossier and operational-CSV gaps remain explicit and may not be relabelled as complete."
   },
   "continuity_record": "docs/deletion-audits/2026-08-31-case-prism-substantive-gap-closure-continuity.md"
 }

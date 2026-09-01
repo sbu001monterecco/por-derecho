@@ -1,8 +1,9 @@
-# Case Prism exact-file actionability — prepared continuity record
+# Case Prism exact-file actionability — live continuity closeout
 
 **Control date:** 31 August 2026
 **Source base:** `a54c74b204d6f7596d3da9e41af569c08c676736`
 **Lifecycle at creation:** `PREPARED_PENDING_MERGE`
+**Current lifecycle:** `LIVE_VERIFIED_WITH_ACCEPTED_PUBLICATION_BOUNDARY_GAP`
 **Deletion-safety:** `NO — ACCEPTED OPERATIONAL CSV PUBLICATION BOUNDARY REMAINS OPEN`
 **Controlled versions:** interconnectivity schema `1.7.0`; interlinkability data
 projection `1.1.0`
@@ -38,8 +39,8 @@ Current `main` after PRs #1251–#1276 contains:
 | Source-reported/pending-primary assertions | 2 |
 | Controlled material context clusters | 26 |
 | Shared Case Prism propositions × lanes | 19 × 12 = 228 cells |
-| Exact proceedings admitted to a non-`OUTSIDE` proposition cell | 26 / 97 |
-| Exact proceedings with no shared-proposition coordinate | 71 / 97 |
+| Exact proceedings admitted to a non-`OUTSIDE` proposition cell | 43 / 97 |
+| Exact proceedings with no shared-proposition coordinate | 54 / 97 |
 | Audience lenses | 9 |
 | Public Master Register Fiscalía rows | 24 |
 | Source-controlled response episodes | 9 |
@@ -115,8 +116,8 @@ is unresolved and no actor-specific knowledge is proved.
 
 This package deliberately does **not** close or relabel the following:
 
-1. The finite shared-proposition matrix remains **26 / 97** exact proceedings
-   represented and **71 / 97** without a non-`OUTSIDE` coordinate. Adding a
+1. The finite shared-proposition matrix remains **43 / 97** exact proceedings
+   represented and **54 / 97** without a non-`OUTSIDE` coordinate. Adding a
    finite exact-file test does not invent shared proposition membership.
 2. Two direct relationship pairs remain source-reported/pending primary
    completion. They are not promoted to verified.
@@ -150,9 +151,10 @@ The tracked operational source
 `archive/PROCEEDINGS_MASTER_REGISTER.csv` remains a pre-existing accepted
 publication-boundary gap. At this source base its SHA-256 is
 `8caa65a0aaefa2b568be263869d7749b79fd8e7eb3b00ab568c7cabdc29bb801`.
-Its previously recorded HTTP 200 accessibility is not an intended live route or
-marker. Exact post-deployment status and bytes must be observed again and kept
-separate from the intended-surface verification.
+Its HTTP 200 accessibility was re-observed after deployment at
+`2026-08-31T23:51:00Z`: content type `text/csv; charset=utf-8`, 89,948 entity
+bytes and the same SHA-256. It is not an intended live route or marker and is
+kept separate from the intended-surface verification.
 
 This accepted gap blocks `DELETION_SAFE`. It does not authorise the renderer to
 fetch the operational CSV and does not permit continued exposure to become a
@@ -206,31 +208,40 @@ Updating a literal from `0 / 97` to `97 / 97` is insufficient. The gate must
 derive the ID set and fail on a missing, duplicate, private, fabricated or stale
 record.
 
-## 7. Remaining lifecycle
+## 7. Completed lifecycle
 
-This record does not assert a PR, green CI, merge, deployment or live state.
-Those fields remain pending in the associated publication manifest. Completion
-requires, in order:
+The ordered lifecycle has completed for the corrective public release:
 
-1. final branch tree review against current `main`;
-2. exact-head specialist and repository-wide CI;
-3. normal PR merge with reviewed-tree reconciliation;
-4. successful exact-merge GitHub Pages deployment;
-5. byte-level readback of the intended critical assets;
-6. interactive English and Spanish verification of all 97 exact-file tests; and
-7. a separate re-observation of the accepted operational CSV boundary gap.
+1. the corrective branch was reconciled to base
+   `0ece824742abe57e7e6a90363e341e18926306e0`;
+2. PR `#1282` reviewed head
+   `9adb0ed41ebb6cbe4f36420c2cb32f39d16d2215` and tree
+   `eeb0f7aeebf1d5dbfda425553088a9774f9cb2c3` passed 24 checks with one
+   intentional skip and no adverse result;
+3. PR `#1282` merged as
+   `d8940e5a7e2d9073a8117b2342e20205bfab7653`; its merge tree is exactly the
+   reviewed tree;
+4. GitHub Pages run `33452158130` completed successfully for that exact merge;
+5. all 25 workflows associated with the merge completed successfully,
+   including specialist run `33452159009` / job `99684249593`;
+6. 15 / 15 intended critical live resources returned HTTP 200 and matched the
+   merge-tree bytes exactly; and
+7. the operational CSV was re-observed separately as HTTP 200 with its exact
+   source hash and remains an accepted unresolved boundary gap.
 
-Only a later evidence closeout may promote the release manifest to
+The manifest is therefore promoted to
 `LIVE_VERIFIED_WITH_ACCEPTED_PUBLICATION_BOUNDARY_GAP`. The release remains not
 `DELETION_SAFE` for as long as the accepted CSV exposure remains public.
 
 ## 8. Continuity conclusion
 
-The implementation decision, current denominator, evidential boundaries,
-required gates and remaining lifecycle no longer depend on the originating chat.
-The release itself is still prepared, not merged or live-verified. Publication
-closeout can establish only `LIVE_VERIFIED_WITH_ACCEPTED_PUBLICATION_BOUNDARY_GAP`;
-the release remains not `DELETION_SAFE` while the accepted CSV is public.
+The implementation decision, current denominator, evidential boundaries and
+release proof no longer depend on the originating chat. The intended Case Prism
+surface is merged, deployed and live-verified. Structural exact-file
+interlinking is complete for the 97-file public exact denominator; evidence
+completion is not. Publication closeout establishes
+`LIVE_VERIFIED_WITH_ACCEPTED_PUBLICATION_BOUNDARY_GAP`, and the release remains
+not `DELETION_SAFE` while the accepted CSV is public.
 
 ## 9. Post-merge renderer-parity correction
 
@@ -280,10 +291,52 @@ other intervening change. The closeout must name that final base SHA, identify
 any conflict resolution and verify that no later route, evidence or continuity
 control was overwritten.
 
-The corrective PR, exact-head CI, merge SHA/tree, exact Pages run and live
-readback are deliberately not asserted here until they occur. A later closeout
-must append those exact values, reconcile the final tree, and promote the
-machine-readable manifest only on evidence. The operational CSV exposure remains
-an accepted unresolved publication-boundary gap and continues to block
-`DELETION_SAFE` even if the intended interlinking surface becomes
-`LIVE_VERIFIED`.
+The corrective PR is `#1282`. Its reviewed head is
+`9adb0ed41ebb6cbe4f36420c2cb32f39d16d2215`, its reviewed tree is
+`eeb0f7aeebf1d5dbfda425553088a9774f9cb2c3`, its merge is
+`d8940e5a7e2d9073a8117b2342e20205bfab7653`, and the merge tree is identical to
+the reviewed tree. Pages run `33452158130` completed successfully on that exact
+merge at `2026-08-31T23:48:36Z`.
+
+The exact-merge specialist workflow `33452159009` checked out the merge SHA and
+passed deterministic projections, schema/invariant audits, JavaScript syntax,
+public-projection controls and the exhaustive browser suite. The browser logs
+record separate English and Spanish passes for the 228-cell matrix, swimlane,
+97-file trace/isolation and mobile behavior, plus actor-source/receipt/knowledge
+separation and all 16 fail-closed mutation cases. Cache-busted public readback at
+`2026-08-31T23:51:00Z` then established exact byte identity for 15 / 15 intended
+critical resources: both maps, renderer JS/CSS, four controlled data assets,
+both Master Registers, both homepages and both institutional clean-room routes.
+This is an exact-deployed-byte interaction proof; a redundant second browser
+execution directly against Pages was not completed because the isolated browser
+binary download timed out. That environment limitation is not converted into a
+site success claim and is recorded separately from the successful exact-tree
+browser gate and direct live HTTP proof.
+
+The operational CSV exposure remains an accepted unresolved
+publication-boundary gap and continues to block `DELETION_SAFE`.
+
+## 10. Final completion denominator
+
+| Closeout control | State | Exact qualification |
+|---|---|---|
+| Repository source | VERIFIED | Corrective implementation preserved in reviewed/merge tree `eeb0f7ae…` |
+| Canonical registration | VERIFIED | 122 canonical rows; 121 controlled-public rows; 98 canonical exact; 97 public exact; one private exact excluded |
+| Direct procedural edges | VERIFIED + GAP | 33 controlled pairs; 31 source-verified; two source-reported/pending primary |
+| Contextual / convergence edges | VERIFIED | 26 controlled material context clusters; contextual bridges remain non-procedural |
+| Decision-dependency coverage | VERIFIED | 97 / 97 public exact files have an audited finite-test register entry |
+| Fragmentation-audit coverage | VERIFIED | 97 / 97 exact files have trace, isolation and reconnection controls |
+| Shared proposition membership | GAP | 43 / 97 represented; 54 explicit no-coordinate source-review gaps |
+| Audience-lens coverage | VERIFIED | Nine lenses over one evidence base |
+| Institutional nine-axis coverage | VERIFIED | 97 / 97 classifications; nine positive source profiles; zero actor-specific positive profiles |
+| Fiscalía institutional-memory matrix | VERIFIED + GAP | 24 / 24 rows; 21 exact + three unresolved references; eight profiled matrix rows; nine response episodes |
+| Bilingual publication | VERIFIED | English and Spanish renderer, Master and institutional entry routes |
+| Deployment | VERIFIED | Pages run `33452158130` on exact merge `d8940e5a…` |
+| Live HTTP readback | VERIFIED | 15 / 15 intended resources HTTP 200 and exact-byte matched |
+| Counsel / procurador completeness | GAP | `CP-GAP-004` and `CP-GAP-005` remain open |
+| Dedicated narrative dossiers | GAP | Partial positive subset; not inferred from 97 / 97 navigation |
+| Deletion-safe continuity | GAP | Operational Master CSV remains publicly HTTP-accessible by express accepted exception |
+
+No unitary acknowledgement has been located in the controlled corpus where the
+relevant office/file record says so. That statement is not converted into a
+claim that no such acknowledgement exists.
