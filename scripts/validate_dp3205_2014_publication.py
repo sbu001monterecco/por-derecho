@@ -1268,11 +1268,18 @@ for page in (REGISTRY_EN, REGISTRY_ES):
 registry_en = read_text(REGISTRY_EN)
 registry_es = read_text(REGISTRY_ES)
 registry_control_date = registry.get("control_date") if isinstance(registry, dict) else None
-require(registry_control_date == "2026-08-31", "canonical current registry control date is stale")
+registry_date_match = re.fullmatch(r"(\d{4})-(\d{2})-(\d{2})", str(registry_control_date or ""))
+require(bool(registry_date_match), "canonical current registry control date is not a valid ISO date")
 includes(registry_en, f'"dateModified":"{registry_control_date}"', relative(REGISTRY_EN))
-includes(registry_en, "31 AUGUST 2026", relative(REGISTRY_EN))
 includes(registry_es, f'"dateModified":"{registry_control_date}"', relative(REGISTRY_ES))
-includes(registry_es, "31 AGOSTO 2026", relative(REGISTRY_ES))
+if registry_date_match:
+    registry_year, registry_month, registry_day = (int(part) for part in registry_date_match.groups())
+    registry_en_months = {1:"JANUARY",2:"FEBRUARY",3:"MARCH",4:"APRIL",5:"MAY",6:"JUNE",7:"JULY",8:"AUGUST",9:"SEPTEMBER",10:"OCTOBER",11:"NOVEMBER",12:"DECEMBER"}
+    registry_es_months = {1:"ENERO",2:"FEBRERO",3:"MARZO",4:"ABRIL",5:"MAYO",6:"JUNIO",7:"JULIO",8:"AGOSTO",9:"SEPTIEMBRE",10:"OCTUBRE",11:"NOVIEMBRE",12:"DICIEMBRE"}
+    require(registry_month in registry_en_months, "canonical registry control date has an invalid month")
+    if registry_month in registry_en_months:
+        includes(registry_en, f"{registry_day} {registry_en_months[registry_month]} {registry_year}", relative(REGISTRY_EN))
+        includes(registry_es, f"{registry_day} {registry_es_months[registry_month]} {registry_year}", relative(REGISTRY_ES))
 
 current_unitary_state = read_json(CURRENT_UNITARY_STATE)
 identity_registry_state = (

@@ -2,8 +2,9 @@
 
 **Current workspace:** `PD-WS-20260901-0003`  
 **Current continuation pointer:** `PD-WCH-20260901-AWP-RUNTIME-001`  
-**Status:** `HANDOFF_READY_RECONCILED_PR_OPEN`  
-**Current implementation PR:** `#1317`  
+**Status:** `DELETION_SAFE_WITH_OPEN_WORK`  
+**Implementation PR:** `#1317`  
+**Implementation merge:** `ca501751410bb3f0ad928c2b16d6d885551e7ea3`  
 **Topic:** automatic workspace persistence runtime and private-vault implementation  
 **Pointer semantics:** most recently checkpointed/default workspace; **not exclusive** and not a lock over concurrent workspaces.
 
@@ -16,10 +17,11 @@ A ChatGPT thread is a temporary working surface. A `PD-WS-*` workspace is the du
 Read:
 
 1. `archive/handoffs/2026-09-01-automatic-workspace-persistence-runtime-handoff.md`
-2. `.github/governance/AUTOMATIC_WORKSPACE_PERSISTENCE_ARCHITECTURE_01SEP2026.md`
-3. `.github/governance/CONCURRENT_WORKSPACE_REGISTRATION_PROTOCOL_01SEP2026.md`
-4. `docs/WORKSPACE_PERSISTENCE_RUNBOOK.md`
-5. `ops/AUTOMATIC_WORKSPACE_PERSISTENCE_V1.json`
+2. `archive/AUTOMATIC_WORKSPACE_PERSISTENCE_RUNTIME_CLOSEOUT_01SEP2026.md`
+3. `.github/governance/AUTOMATIC_WORKSPACE_PERSISTENCE_ARCHITECTURE_01SEP2026.md`
+4. `.github/governance/CONCURRENT_WORKSPACE_REGISTRATION_PROTOCOL_01SEP2026.md`
+5. `docs/WORKSPACE_PERSISTENCE_RUNBOOK.md`
+6. `ops/AUTOMATIC_WORKSPACE_PERSISTENCE_V1.json`
 
 ### `PD-WS-20260901-0002` — authority discovery / Red SARA / AGE
 
@@ -47,9 +49,21 @@ The machine authority for the complete list and exact state is `data/workspace-r
 
 A branch-local sequential ID is provisional. Before merge, re-read current `data/workspace-register-v1.json`. Current `main` wins any collision; the unmerged workspace must be renumbered under `PD-CWR-001`.
 
-## Current private-vault boundary
+## Current implementation state
 
-For `PD-WS-20260901-0003`, an owner-only/not-shared Google Drive vault structure and a validated private seed snapshot exist under the aliases recorded in the handoff. Exact private locators are intentionally withheld from public Git. The Python runtime is not yet connected to that Drive folder as a live filesystem/API event sink, and no real historical ChatGPT export has been imported.
+The tested runtime is merged through PR `#1317`. Its exact tested head was `aeedb75f7ffaca5614e6cfb299f207915edc9a00`; 13 workflow runs completed with zero failures. The merge commit is `ca501751410bb3f0ad928c2b16d6d885551e7ea3`.
+
+For `PD-WS-20260901-0003`, an owner-only/not-shared Google Drive vault structure exists under the aliases recorded in the handoff. Its canonical post-merge private seed is:
+
+- `PD-WS-20260901-0003-seed-20260901.zip`
+- 14,298 bytes
+- SHA-256 `84db4a21ca7fb5cfd871029380a373a6b917420af92bdf9992dded07621479e5`
+- last private event `PD-WS-20260901-0003-EVT-000005`
+- last event hash `d4c0263c524e094ccaa56bc8287b0c4c2e7db636aeba46a549f93bd4dc346fed`
+
+A separate private manifest records the archive hash and merge reference. Exact Drive locators remain outside public Git.
+
+The Python runtime is **not yet connected** to that Drive folder as a continuous filesystem/API event sink, no real historical ChatGPT export has been imported, and no OpenAI API request-path workbench or credential has been configured.
 
 ## New-thread bootstrap
 
