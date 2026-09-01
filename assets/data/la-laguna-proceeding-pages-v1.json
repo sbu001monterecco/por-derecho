@@ -1,0 +1,37 @@
+{
+  "schema": "por-derecho.la-laguna-proceeding-pages.v1",
+  "control_id": "PD-LALAGUNA-PROCEEDING-PAGES-20260901-01",
+  "as_of": "2026-09-01",
+  "status": "PUBLIC_CANONICAL_INTERLINK_CANDIDATE",
+  "proceedings": [
+    {
+      "master_id": "TF-CIV-001",
+      "reference": "Juicio Cambiario 1048/2019",
+      "nig": "3802342120190009565",
+      "relationship": "CIVIL_ORIGIN_OF_ETJ_163_2020",
+      "routes": {"en": "/en/cambiario-1048-2019/", "es": "/es/cambiario-1048-2019/"},
+      "status_boundary": "UNDER_RECONSTRUCTION"
+    },
+    {
+      "master_id": "TF-CIV-002",
+      "reference": "ETJ 163/2020",
+      "nig": "3802342120190009565",
+      "relationship": "CIVIL_ENFORCEMENT_CONTINUATION_OF_CAMBIARIO_1048_2019",
+      "routes": {"en": "/en/etj-163-2020/", "es": "/es/etj-163-2020/"},
+      "status_boundary": "ACTIVE"
+    },
+    {
+      "master_id": "TF-CRI-003",
+      "caepr_id": "PD-SP-R-0003",
+      "reference": "DP 748/2026",
+      "nig": "3802343220260002351",
+      "relationship": "DISTINCT_CRIMINAL_PROCEEDING_CONTEXTUALLY_LINKED_TO_ETJ_163_2020",
+      "routes": {"en": "/en/dp-748-2026/", "es": "/es/dp-748-2026/"},
+      "status_boundary": "PROVISIONAL_DISMISSAL_REMEDY_AND_REOPENING_ROUTES_PRESERVED"
+    }
+  ],
+  "broader_context_routes": {"en": "/en/cuatrecasas-sun-park/", "es": "/es/cuatrecasas-sun-park/"},
+  "relationship_rule": "Cambiario 1048/2019 and ETJ 163/2020 form a civil procedural lineage. DP 748/2026 is legally distinct and is linked only for source-supported context concerning alleged autonomous conduct associated with the enforcement.",
+  "liability_boundary": "Interlinking establishes navigation and source-controlled procedural relationship only. It does not establish criminal intent, wrongdoing, liability, agreement, knowledge or merits attribution.",
+  "appeal_boundary": "The 17-Apr-2026 reform plus subsidiary appeal filing is source-verified. Post-reform appeal processing, any article 766.4 allegations stage, admission/transmission and an appellate roll remain subject to primary-source verification."
+}
