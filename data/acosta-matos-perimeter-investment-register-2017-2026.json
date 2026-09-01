@@ -3,8 +3,7 @@
   "register_id": "PD-AM-INV-2017-2026-001",
   "control_date": "2026-09-01",
   "time_scope": "2017-01-01/2026-09-01",
-  "scope_note": "Finite public-source census of hotel/investment nodes relevant to the Acosta Matos / Canarian Hospitality / RICPE perimeter. Role edges are source-graded and must not be collapsed into beneficial ownership or criminal attribution.",
-  "status_values": ["DOC", "PUBLIC_COMPANY_REPRESENTATION", "PUBLIC_REPORTING", "HIP", "OPEN", "CONTRARY_OR_LIMITING"],
+  "scope_note": "Finite public-source census. Owner, shareholder, governance, manager, brand, financier and builder are separate source-graded edges; no edge is converted into beneficial ownership, concerted action, tax impropriety or criminal attribution by association.",
   "role_values": [
     "ACOSTA_DIRECT_OR_PERIMETER_OWNER_IDENTIFIED",
     "ACOSTA_CURRENT_OFFICIAL_OWN_NETWORK_CLAIM",
@@ -13,199 +12,171 @@
     "CANARIAN_HOSPITALITY_MANAGER_OR_LESSEE",
     "MYND_OR_SHOLEO_BRAND",
     "RADISSON_OR_OTHER_FRANCHISE_BRAND",
-    "RICPE_FINANCED_RELATED_PARTY",
+    "RICPE_FINANCED_RELATED_PARTY_DOCUMENTED",
+    "RICPE_FINANCED_ACOSTA_RELATIONSHIP_PRESENT_RELATED_PARTY_STATUS_OPEN",
     "RICPE_FINANCED_NOT_ACOSTA_OWNED",
     "ANNOUNCED_PIPELINE_OR_FUTURE_PROJECT",
-    "OWNERSHIP_OR_SPV_REGISTRY_VERIFICATION_OPEN",
-    "EXCLUDED_FROM_OWNERSHIP_MAP_CONSTRUCTION_ONLY"
+    "OWNERSHIP_OR_SPV_REGISTRY_VERIFICATION_OPEN"
   ],
   "assets": [
     {
       "id": "PD-AM-ASSET-001",
       "name": "Sun Park / MYND Yaiza",
       "location": "Playa Blanca, Yaiza, Lanzarote",
-      "period": "2017-present",
-      "roles": ["ACOSTA_DIRECT_OR_PERIMETER_OWNER_IDENTIFIED", "MYND_OR_SHOLEO_BRAND", "RICPE_FINANCED_RELATED_PARTY"],
-      "owner_entity": "Hotel New Trend, S.L.",
+      "roles": ["ACOSTA_DIRECT_OR_PERIMETER_OWNER_IDENTIFIED", "MYND_OR_SHOLEO_BRAND", "RICPE_FINANCED_RELATED_PARTY_DOCUMENTED"],
+      "owner": "Hotel New Trend, S.L.",
       "owner_caepr": "PD-SP-O-0018",
-      "shareholder_fact": {"entity": "Grupo Patrimonial Acosta Matos, S.L.", "status": "DOC", "date": "2024-06-19", "proposition": "BORME records Grupo Patrimonial Acosta Matos, S.L. as HNT sole shareholder."},
-      "operator_source_literal": "Grupo Acosta Matos, S.L.",
-      "management_platform": "Canarian Hospitality / MYND public portfolio",
-      "financier": "RIC Private Equity Investment Partners, S.C.R., S.A.",
-      "existing_repo_links": ["/es/acosta-matos-perimetro/", "/en/acosta-matos-perimeter/", "CURRENT_HANDOVER_RICPE_HNT_GC836_TREASURY_21AUG2026.md", "SUN_PARK_RICPE_HNT_GC836_FINANCING_CHRONOLOGY_21AUG2026.md"],
+      "shareholder_fact": "BORME 26-Jun-2024 records Grupo Patrimonial Acosta Matos, S.L. as HNT sole shareholder.",
       "sources": ["https://www.acostamatos.com/hoteles/hotel-mynd-yaiza/", "https://www.boe.es/diario_borme/txt.php?id=BORME-A-2024-122-35"],
-      "open_proof": ["complete post-segregation asset schedule", "consideration and payment trail", "intercompany accounts", "management agreement", "source-of-funds/source-of-value bridge"]
+      "open": ["post-segregation asset schedule", "consideration/payment trail", "intercompany accounts", "management agreement", "source-of-funds/value bridge"]
     },
     {
       "id": "PD-AM-ASSET-002",
       "name": "MYND Adeje",
       "location": "Callao Salvaje, Adeje, Tenerife",
-      "period": "2021-present",
-      "roles": ["ACOSTA_DIRECT_OR_PERIMETER_OWNER_IDENTIFIED", "MYND_OR_SHOLEO_BRAND", "RICPE_FINANCED_RELATED_PARTY"],
-      "owner_entity": "Hotel Callao Adeje, S.L.",
+      "roles": ["ACOSTA_DIRECT_OR_PERIMETER_OWNER_IDENTIFIED", "MYND_OR_SHOLEO_BRAND", "RICPE_FINANCED_RELATED_PARTY_DOCUMENTED"],
+      "owner": "Hotel Callao Adeje, S.L.",
       "owner_identity_status": "SOURCE_RESOLVED_CAEPR_ADMISSION_PENDING",
-      "operator_source_literal": "Grupo Acosta Matos, S.L.",
-      "management_platform": "Canarian Hospitality / MYND",
       "sources": ["https://www.acostamatos.com/hoteles/hotel-mynd-adeje/", "https://www.boe.es/diario_borme/txt.php?id=BORME-C-2023-6632", "https://www.boe.es/diario_borme/txt.php?id=BORME-A-2024-34-35"],
-      "open_proof": ["pre-2023 to post-demerger title/economic-unit bridge", "current shareholder register", "financing/capital stack"]
+      "open": ["pre-2023/post-demerger title bridge", "current shareholders", "capital stack"]
     },
     {
       "id": "PD-AM-ASSET-003",
       "name": "Sholeo Lodges Maspalomas / former Jardín del Sol",
       "location": "Playa del Inglés, Gran Canaria",
-      "period": "2024-present",
-      "roles": ["ACOSTA_DIRECT_OR_PERIMETER_OWNER_IDENTIFIED", "MYND_OR_SHOLEO_BRAND", "RICPE_FINANCED_RELATED_PARTY"],
+      "roles": ["ACOSTA_DIRECT_OR_PERIMETER_OWNER_IDENTIFIED", "MYND_OR_SHOLEO_BRAND", "RICPE_FINANCED_RELATED_PARTY_DOCUMENTED"],
       "owner_source_literal": "Acosta Matos Investment, S.L.",
       "canonical_owner_candidate": "Acosta Matos Investments, Sociedad Limitada",
-      "canonical_owner_registry_sheet": "GC 61953",
-      "management_platform": "Canarian Hospitality / Sholeo",
-      "sources": ["https://www.acostamatos.com/hoteles/hotel-sholeo-maspalomas/", "https://www.boe.es/borme/dias/2023/12/18/pdfs/BORME-A-2023-238-35.pdf", "https://www.boe.es/diario_borme/txt.php?id=BORME-A-2024-22-35", "https://canarianhospitality.com/wp-content/uploads/2024/12/ES_DosierDePrensa_CanarianHospitality_compressed.pdf"],
-      "open_proof": ["confirm website singular source literal maps to GC 61953", "trace EUR 10.633m capital increase", "trace RICPE funding and acquisition/works uses"]
+      "canonical_owner_sheet": "GC 61953",
+      "sources": ["https://www.acostamatos.com/hoteles/hotel-sholeo-maspalomas/", "https://www.boe.es/borme/dias/2023/12/18/pdfs/BORME-A-2023-238-35.pdf", "https://www.boe.es/diario_borme/txt.php?id=BORME-A-2024-22-35"],
+      "open": ["source-literal-to-GC61953 bridge", "EUR 10.633m capital-increase tracing", "RICPE uses"]
     },
     {
       "id": "PD-AM-ASSET-004",
       "name": "Sholeo Lodges Las Palmas",
-      "location": "C/ Juan Rejón, Las Palmas de Gran Canaria",
-      "period": "2024-present",
+      "location": "Las Palmas de Gran Canaria",
       "roles": ["ACOSTA_DIRECT_OR_PERIMETER_OWNER_IDENTIFIED", "MYND_OR_SHOLEO_BRAND"],
-      "owner_entity": "Grupo Patrimonial Acosta Matos, S.L.",
-      "operator_source_literal": "Grupo Acosta Matos, S.L.",
+      "owner": "Grupo Patrimonial Acosta Matos, S.L.",
       "sources": ["https://www.acostamatos.com/hoteles/sholeo-lodges-las-palmas/"],
-      "open_proof": ["acquisition deed and price", "funding source"]
+      "open": ["acquisition deed/price", "funding source"]
     },
     {
       "id": "PD-AM-ASSET-005",
       "name": "Sholeo Lodges La Cicer",
-      "location": "C/ Pelayo, Las Palmas de Gran Canaria",
-      "period": "2024-present",
+      "location": "Las Palmas de Gran Canaria",
       "roles": ["ACOSTA_DIRECT_OR_PERIMETER_OWNER_IDENTIFIED", "MYND_OR_SHOLEO_BRAND"],
-      "owner_entity": "Grupo Patrimonial Acosta Matos, S.L.",
-      "operator_source_literal": "Grupo Acosta Matos, S.L.",
+      "owner": "Grupo Patrimonial Acosta Matos, S.L.",
       "sources": ["https://www.acostamatos.com/hoteles/sholeolacicer/"],
-      "open_proof": ["acquisition deed and price", "funding source"]
+      "open": ["acquisition deed/price", "funding source"]
     },
     {
       "id": "PD-AM-ASSET-006",
       "name": "Sholeo Lodges Santa Catalina",
       "location": "Las Palmas de Gran Canaria",
-      "period": "2024-present",
       "roles": ["ACOSTA_DIRECT_OR_PERIMETER_OWNER_IDENTIFIED", "MYND_OR_SHOLEO_BRAND"],
-      "owner_entity": "Grupo Patrimonial Acosta Matos, S.L.",
+      "owner": "Grupo Patrimonial Acosta Matos, S.L.",
       "sources": ["https://www.acostamatos.com/turismo/2/", "https://canarianhospitality.com/"],
-      "open_proof": ["exact owner project page/source lock", "acquisition deed and price"]
+      "open": ["project-page owner source lock", "acquisition deed/price"]
     },
     {
       "id": "PD-AM-ASSET-007",
       "name": "Hotel Santa Cruz / AC Hotel Tenerife project",
       "location": "Santa Cruz de Tenerife",
-      "period": "2020-present",
-      "roles": ["ACOSTA_CURRENT_OFFICIAL_OWN_NETWORK_CLAIM", "RICPE_FINANCED_RELATED_PARTY"],
+      "roles": ["ACOSTA_CURRENT_OFFICIAL_OWN_NETWORK_CLAIM", "RICPE_FINANCED_RELATED_PARTY_DOCUMENTED"],
       "current_owner_representation": "Grupo Patrimonial Acosta Matos, S.L.",
       "historical_project_company": "Hotel Project Tenerife, S.L.",
       "historical_project_company_caepr": "PD-SP-O-0079",
-      "historical_manager": "ACHM Spain Management, S.L.",
       "historical_manager_caepr": "PD-SP-O-0077",
       "sources": ["https://www.acostamatos.com/hoteles/hotel-santa-cruz/"],
-      "open_proof": ["title/corporate bridge from historical HPT/CAM structure to current owner representation", "current brand/operator agreement"]
+      "open": ["HPT/CAM-to-current-title bridge", "current brand/operator agreement"]
     },
     {
       "id": "PD-AM-ASSET-008",
       "name": "Design Plus BEX",
       "location": "Las Palmas de Gran Canaria",
-      "period": "pre-2018-present",
       "roles": ["ACOSTA_DIRECT_OR_PERIMETER_OWNER_IDENTIFIED"],
-      "owner_entity": "Grupo Patrimonial Acosta Matos, S.L.",
+      "owner": "Grupo Patrimonial Acosta Matos, S.L.",
       "source_literal_typo": "Hotel Desing Plux Bex",
-      "sources": ["https://www.acostamatos.com/hoteles/hotel-desing-plux-bex/", "https://www.acostamatos.com/turismo/2/"],
-      "open_proof": ["current operating agreement/brand status", "acquisition and funding chain"]
+      "sources": ["https://www.acostamatos.com/hoteles/hotel-desing-plux-bex/"],
+      "open": ["current operating/brand agreement", "acquisition/funding chain"]
     },
     {
       "id": "PD-AM-ASSET-009",
       "name": "Labranda Marieta / MYND Marieta candidate continuity",
       "location": "Playa del Inglés, Gran Canaria",
-      "period": "pre-2018-present",
       "roles": ["ACOSTA_DIRECT_OR_PERIMETER_OWNER_IDENTIFIED", "MYND_OR_SHOLEO_BRAND"],
-      "owner_entity": "Grupo Patrimonial Acosta Matos, S.L.",
-      "brand_bridge_status": "OPEN_EXACT_SAME_AS_CONFIRMATION",
+      "owner": "Grupo Patrimonial Acosta Matos, S.L.",
+      "same_asset_rebrand_status": "OPEN",
       "sources": ["https://www.acostamatos.com/hoteles/hotel-labranda-marieta/", "https://canarianhospitality.com/en/home/"],
-      "open_proof": ["source-lock MYND Marieta as exact same asset/rebrand", "current operating/brand agreement"]
+      "open": ["exact MYND Marieta same-as/rebrand bridge", "current operating/brand agreement"]
     },
     {
       "id": "PD-AM-ASSET-010",
       "name": "Labranda Cactus Garden",
       "location": "Morro Jable, Pájara, Fuerteventura",
-      "period": "pre-2018-present",
       "roles": ["ACOSTA_CURRENT_OFFICIAL_OWN_NETWORK_CLAIM", "OWNERSHIP_OR_SPV_REGISTRY_VERIFICATION_OPEN"],
-      "website_owner_source_literal": "Construcciones Acosta Matos, S.A.",
-      "limitation": "CAM S.A. was totally demerged in 2023; current owner cannot be inferred from the stale/historical website owner literal.",
+      "website_owner_literal": "Construcciones Acosta Matos, S.A.",
+      "limitation": "CAM S.A. was totally demerged in 2023; current owner cannot be inferred from that historical/stale website literal.",
       "sources": ["https://www.acostamatos.com/turismo/2/", "https://www.boe.es/diario_borme/txt.php?id=BORME-C-2023-6632"],
-      "open_proof": ["2023 beneficiary allocation", "current land-registry owner", "current operator"]
+      "open": ["2023 beneficiary allocation", "current registry title", "current operator"]
     },
     {
       "id": "PD-AM-ASSET-011",
       "name": "Royal Costa Calma",
       "location": "Costa Calma, Fuerteventura",
-      "period": "pre-2018-present",
       "roles": ["ACOSTA_CURRENT_OFFICIAL_OWN_NETWORK_CLAIM", "OWNERSHIP_OR_SPV_REGISTRY_VERIFICATION_OPEN"],
       "sources": ["https://www.acostamatos.com/turismo/2/", "https://www.acostamatos.com/construccion-turismo/"],
-      "open_proof": ["exact current owner/SPV", "acquisition/title chain", "current operator", "funding source"]
+      "open": ["current owner/SPV", "title/acquisition chain", "operator", "funding"]
     },
     {
       "id": "PD-AM-ASSET-012",
       "name": "Radisson Resort & Residences Tenerife / former Parque San Antonio",
       "location": "Puerto de la Cruz, Tenerife",
-      "period": "2024-present",
-      "roles": ["ACOSTA_CURRENT_OFFICIAL_OWN_NETWORK_CLAIM", "ACOSTA_CO_INVESTOR_OR_GOVERNANCE_PARTICIPATION_EXACT_EQUITY_OPEN", "CANARIAN_HOSPITALITY_MANAGER_OR_LESSEE", "RADISSON_OR_OTHER_FRANCHISE_BRAND", "RICPE_FINANCED_RELATED_PARTY"],
+      "roles": ["ACOSTA_CURRENT_OFFICIAL_OWN_NETWORK_CLAIM", "ACOSTA_CO_INVESTOR_OR_GOVERNANCE_PARTICIPATION_EXACT_EQUITY_OPEN", "CANARIAN_HOSPITALITY_MANAGER_OR_LESSEE", "RADISSON_OR_OTHER_FRANCHISE_BRAND", "RICPE_FINANCED_ACOSTA_RELATIONSHIP_PRESENT_RELATED_PARTY_STATUS_OPEN"],
       "asset_company": "Tenerife Assets Company, S.L.",
       "acosta_governance_fact": "BORME records Grupo Patrimonial Acosta Matos, S.L. as director and secretary before April-2025 cessation.",
-      "equity_percentage_status": "OPEN_NOT_ESTABLISHED",
+      "related_party_classification": "OPEN_NOT_ASSERTED",
+      "equity_percentage": "OPEN_NOT_ESTABLISHED",
       "sources": ["https://www.acostamatos.com/turismo/", "https://www.boe.es/diario_borme/txt.php?id=BORME-A-2025-75-35", "https://www.boe.es/diario_borme/txt.php?id=BORME-A-2024-173-08"],
-      "open_proof": ["shareholders/percentages at acquisition and current date", "shareholder loans/guarantees", "RICPE allocation", "renovation drawdowns"]
+      "open": ["shareholders/percentages", "shareholder loans/guarantees", "specific RICPE conflict classification", "renovation drawdowns"]
     },
     {
       "id": "PD-AM-ASSET-013",
       "name": "Radisson Blu Lanzarote Resort",
       "location": "Costa Teguise, Lanzarote",
-      "period": "2022-present",
       "roles": ["CANARIAN_HOSPITALITY_MANAGER_OR_LESSEE", "RADISSON_OR_OTHER_FRANCHISE_BRAND", "RICPE_FINANCED_NOT_ACOSTA_OWNED", "ACOSTA_DEVELOPER_BUILDER_OR_REHABILITATOR_ONLY"],
-      "owner_entity": "Las Coronas de Teguise, S.L.",
+      "owner": "Las Coronas de Teguise, S.L.",
       "public_owner_perimeter": "Al-Bochi family",
-      "manager": "Canarian Hospitality, S.L.",
       "manager_caepr": "PD-SP-O-0019",
-      "classification_limit": "Do not depict as Acosta-owned on located evidence.",
-      "open_proof": ["current shareholder register if deeper beneficial-owner map required", "Acosta works contract", "RICPE financing/capital stack"]
+      "limitation": "Do not depict as Acosta-owned on located evidence.",
+      "open": ["shareholder register if deeper beneficial-owner analysis is required", "works contract", "RICPE capital stack"]
     },
     {
       "id": "PD-AM-ASSET-014",
       "name": "Sholeo Lodges Los Gigantes",
       "location": "Santiago del Teide, Tenerife",
-      "period": "2022/2023-present",
       "roles": ["ACOSTA_CO_INVESTOR_OR_GOVERNANCE_PARTICIPATION_EXACT_EQUITY_OPEN", "CANARIAN_HOSPITALITY_MANAGER_OR_LESSEE", "MYND_OR_SHOLEO_BRAND", "RICPE_FINANCED_NOT_ACOSTA_OWNED"],
       "property_company": "Oceánica Hotel Management, S.L.",
-      "historical_acosta_governance_fact": "Laura Patricia Acosta Matos was sole administrator before the company lost unipersonality; she ceased 30-Nov-2022 and Aeromédica Canaria, S.L. became sole administrator.",
-      "current_acosta_equity_status": "OPEN_NOT_ESTABLISHED",
+      "historical_acosta_fact": "BORME records Laura Patricia Acosta Matos as former sole administrator; on 30-Nov-2022 Oceánica lost unipersonality, she ceased and Aeromédica Canaria, S.L. became sole administrator.",
+      "current_acosta_equity": "OPEN_NOT_ESTABLISHED",
       "sources": ["https://www.boe.es/diario_borme/txt.php?id=BORME-A-2022-234-35", "https://canarianhospitality.com/"],
-      "open_proof": ["incorporation/shareholder history", "2022 capital-entry identities", "2023 acquisition price and funding", "current shareholders"]
+      "open": ["shareholder history", "2022 capital-entry identities", "2023 acquisition/funding", "current shareholders"]
     },
     {
       "id": "PD-AM-ASSET-015",
       "name": "Servatur Puerto Azul",
       "location": "Puerto Rico, Gran Canaria",
-      "period": "2021-present",
       "roles": ["RICPE_FINANCED_NOT_ACOSTA_OWNED"],
       "owner_perimeter": "Servatur",
-      "classification_limit": "RICPE financing does not make this an Acosta-owned asset.",
-      "open_proof": []
+      "limitation": "RICPE financing does not make this an Acosta asset."
     },
     {
       "id": "PD-AM-ASSET-016",
       "name": "ORION Rental SOCIMI investment node",
-      "location": "Canary Islands / portfolio",
-      "period": "2024-present",
-      "roles": ["RICPE_FINANCED_NOT_ACOSTA_OWNED"],
-      "caepr_id": "PD-SP-O-0027",
       "asset_type": "non-hotel housing/investment node",
-      "classification_limit": "Keep separate from hotel ownership map; relationship to Sun Park actors is governed by existing repository actor-specific evidence, not by RICPE financing alone."
+      "caepr_id": "PD-SP-O-0027",
+      "roles": ["RICPE_FINANCED_NOT_ACOSTA_OWNED"],
+      "limitation": "Keep outside hotel ownership map unless separately linked by asset-specific proof."
     },
     {
       "id": "PD-AM-ASSET-017",
@@ -214,67 +185,53 @@
       "period": "announced 2026; target spring 2028",
       "roles": ["ANNOUNCED_PIPELINE_OR_FUTURE_PROJECT", "ACOSTA_CO_INVESTOR_OR_GOVERNANCE_PARTICIPATION_EXACT_EQUITY_OPEN", "CANARIAN_HOSPITALITY_MANAGER_OR_LESSEE", "RADISSON_OR_OTHER_FRANCHISE_BRAND"],
       "public_developer_promoter": "Grupo Acosta Matos together with a group of Canary investors",
-      "manager": "Canarian Hospitality",
-      "brand_plan": "third Radisson relationship reported/planned",
       "sources": ["https://cincodias.elpais.com/companias/2026-02-04/la-gestora-canarian-hospitality-firma-su-noveno-hotel-en-el-archipielago-y-el-tercero-con-radisson.html"],
-      "open_proof": ["owner SPV", "investor identities and percentages", "land title", "debt/equity/RIC structure", "franchise agreement", "public incentives"]
+      "open": ["owner SPV", "investors/percentages", "land title", "debt/equity/RIC structure", "franchise agreement", "public incentives"]
     },
     {
       "id": "PD-AM-ASSET-018",
       "name": "Canarian Hospitality Fuerteventura / Jandía-Pájara pipeline",
-      "location": "South Fuerteventura, Jandía / Pájara",
-      "period": "announced; roadmap milestone Nov-2026",
+      "location": "South Fuerteventura",
+      "period": "roadmap milestone Nov-2026",
       "roles": ["ANNOUNCED_PIPELINE_OR_FUTURE_PROJECT", "OWNERSHIP_OR_SPV_REGISTRY_VERIFICATION_OPEN"],
-      "as_of_control_date": "Nov-2026 is future relative to 1-Sep-2026; no opening is asserted.",
+      "as_of_control_date": "Nov-2026 is future relative to 1-Sep-2026; no opening asserted.",
       "sources": ["https://canarianhospitality.com/en/home/", "https://canarianhospitality.com/wp-content/uploads/2024/12/ES_DosierDePrensa_CanarianHospitality_compressed.pdf"],
-      "open_proof": ["property identity", "owner SPV", "Acosta equity role if any", "transaction date", "brand", "financing", "actual future opening"]
+      "open": ["property", "owner SPV", "Acosta equity role", "transaction date", "brand", "financing", "future opening"]
     }
   ],
   "platforms": [
-    {
-      "id": "PD-AM-PLATFORM-001",
-      "name": "Canarian Hospitality, S.L.",
-      "caepr_id": "PD-SP-O-0019",
-      "role": "asset-light hotel manager/operator; own brands MYND Hotels and Sholeo Lodges; international franchise-management relationships including Radisson",
-      "limitation": "Management/lease/brand relationship is not asset ownership."
-    },
-    {
-      "id": "PD-AM-PLATFORM-002",
-      "name": "RIC Private Equity Investment Partners, S.C.R., S.A.",
-      "caepr_id": "PD-SP-O-0020",
-      "role": "regulated investment/financing platform linked to RIC materialisation",
-      "limitation": "RICPE portfolio membership is not Acosta ownership and RIC tax participation is not itself evidence of illegality."
-    },
-    {
-      "id": "PD-AM-PLATFORM-003",
-      "name": "Grupo Acosta Matos post-2023 corporate spine",
-      "role": "five-beneficiary structure created by total demerger of CAM S.A.",
-      "source": "https://www.boe.es/diario_borme/txt.php?id=BORME-C-2023-6632"
-    }
+    {"name": "Canarian Hospitality, S.L.", "caepr_id": "PD-SP-O-0019", "role": "asset-light manager/operator; MYND Hotels and Sholeo Lodges own brands; international franchise management", "limitation": "management/lease/brand is not ownership"},
+    {"name": "RIC Private Equity Investment Partners, S.C.R., S.A.", "caepr_id": "PD-SP-O-0020", "role": "regulated investment/financing platform linked to RIC materialisation", "limitation": "RICPE portfolio membership is not Acosta ownership; RIC tax participation is not itself illegality"},
+    {"name": "Post-2023 Acosta Matos corporate spine", "role": "five-beneficiary total demerger structure", "source": "https://www.boe.es/diario_borme/txt.php?id=BORME-C-2023-6632"}
   ],
   "people": [
-    {"name": "José Daniel Acosta Matos", "caepr_id": "PD-SP-P-0011", "caret": true, "roles": ["Acosta group governance", "RICPE board relationship in existing repository/CNMV record", "architect/source-literal Jose D. Acosta Matos on Acosta project pages"]},
-    {"name": "Laura Patricia Acosta Matos", "caepr_id": "PD-SP-P-0012", "caret": true, "roles": ["Acosta group governance", "dated corporate roles in demerger/Grupo Patrimonial/Acosta Matos Investments/Oceánica records"]},
-    {"name": "Javier Acosta Matos", "caepr_id": "PD-SP-P-0093", "caret": true, "roles": ["Grupo Patrimonial board role from 2024 BORME"]},
-    {"name": "Gerardo Zacarías Acosta Matos", "caepr_id": "PD-SP-P-0094", "caret": true, "roles": ["Grupo Patrimonial board role from 2024 BORME"]},
-    {"name": "Francisco Manuel Fernández García", "caepr_id": null, "caret": false, "roles": ["Canarian Hospitality leadership/source name", "powers in Acosta Matos Investments, Hotel Callao Adeje, Hotel New Trend and Tenerife Assets public BORME acts"], "next_identity_action": "CAEPR admission/source bridge before caret"},
-    {"name": "Alejandro Páez Sedano", "caepr_id": null, "caret": false, "roles": ["Canarian Hospitality leadership/source name", "powers in Hotel Callao Adeje, Acosta Matos Investments and Tenerife Assets public acts"], "next_identity_action": "CAEPR admission/source bridge before caret"}
+    {"name": "José Daniel Acosta Matos", "caepr_id": "PD-SP-P-0011", "caret": true},
+    {"name": "Laura Patricia Acosta Matos", "caepr_id": "PD-SP-P-0012", "caret": true},
+    {"name": "Javier Acosta Matos", "caepr_id": "PD-SP-P-0093", "caret": true},
+    {"name": "Gerardo Zacarías Acosta Matos", "caepr_id": "PD-SP-P-0094", "caret": true},
+    {"name": "Francisco Manuel Fernández García", "caepr_id": null, "caret": false, "next": "CAEPR source bridge/admission"},
+    {"name": "Alejandro Páez Sedano", "caepr_id": null, "caret": false, "next": "CAEPR source bridge/admission"}
   ],
   "corrections": [
-    {"from": "Mind Hotels", "to": "MYND Hotels", "status": "VERIFIED_BRAND_LITERAL"},
-    {"from": "Canary Hospitality", "to": "Canarian Hospitality, S.L.", "status": "CARET_CONFIRMED_LEGAL_ENTITY_WHERE_COMPANY_INTENDED"},
-    {"from": "Acosta Matos Investment, S.L.", "to": "Acosta Matos Investments, Sociedad Limitada", "status": "LEGAL_DENOMINATION_VERIFIED; SINGULAR RETAINED ONLY AS WEBSITE SOURCE_LITERAL"},
-    {"from": "Radisson hotel = Acosta-owned", "to": "separate asset owner, Canarian manager, Radisson franchise, Acosta construction/governance/equity edges", "status": "MANDATORY_ROLE_CORRECTION"},
-    {"from": "Solano", "to": null, "status": "UNRESOLVED_USER_LITERAL; SHOLEO_LODGES_POSSIBLE_CANDIDATE_NOT_SILENTLY_SUBSTITUTED"}
+    {"from": "Mind Hotels", "to": "MYND Hotels"},
+    {"from": "Canary Hospitality", "to": "Canarian Hospitality, S.L."},
+    {"from": "Acosta Matos Investment, S.L.", "to": "Acosta Matos Investments, Sociedad Limitada", "note": "singular retained only as website source literal until GC 61953 bridge is completed"},
+    {"from": "Radisson brand = Acosta ownership", "to": "separate owner / manager / brand / financier / builder / governance edges"},
+    {"from": "Solano", "to": null, "note": "unresolved user literal; Sholeo Lodges is a possible intended candidate, not silently substituted"}
   ],
   "interlinks": {
     "human_map": "research/ACOSTA_MATOS_PERIMETER_INVESTMENT_MAP_2017_2026.md",
     "identity_reconciliation": "data/acosta-matos-perimeter-identity-reconciliation-20260901.json",
     "poster_continuity": ".github/governance/records/ACOSTA_MATOS_POSTER_INVESTMENT_CONTINUITY_01SEP2026.md",
-    "existing_public_es": "/es/acosta-matos-perimetro/",
-    "existing_public_en": "/en/acosta-matos-perimeter/",
+    "public_es": "/es/acosta-matos-perimetro/",
+    "public_en": "/en/acosta-matos-perimeter/",
     "ricpe_handover": "CURRENT_HANDOVER_RICPE_HNT_GC836_TREASURY_21AUG2026.md",
-    "ricpe_relationship_continuity": "THREAD_DELETION_AUDIT_2026-08-26_RICPE_RELATIONSHIP_NETWORK.md"
+    "relationship_continuity": "THREAD_DELETION_AUDIT_2026-08-26_RICPE_RELATIONSHIP_NETWORK.md"
   },
-  "publication": {"repository_only": true, "website_routes_changed": false, "poster_binary_committed": false, "poster_png_sha256": "f62c18c633fd9a3ce48944cefa3e7a4c74dbf4a388bae64e5064505049e73e33"}
+  "publication": {
+    "repository_only": true,
+    "website_routes_changed": false,
+    "poster_binary_committed": false,
+    "poster_png_sha256": "f62c18c633fd9a3ce48944cefa3e7a4c74dbf4a388bae64e5064505049e73e33"
+  }
 }
