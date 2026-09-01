@@ -1,108 +1,80 @@
 # Acosta Matos / Canarian Hospitality hotel-platform media publication closeout — 1 September 2026
 
 **Control ID:** `PD-AMHP-MEDIA-PUB-20260901-01`  
-**Scope:** bilingual figures-hook pages, digital/media asset register, Spanish registered poster derivative, LinkedIn publication draft, and reserved corrected variants.  
-**External communications:** none sent or posted by this release.
+**Status:** publication package complete on working branch; external LinkedIn publication not performed by this release.  
+**Scope:** bilingual website pages, PD-DMA register, four current visual assets, corrected prior-style variants, interlinking and LinkedIn draft.
 
-## 1. Publication authorised and completed in repository source
+## 1. User-authorised scope
 
-The user expressly requested that the current Spanish satirical asset and its English version be added to the website, that digital/media assets receive stable caret references, that a LinkedIn post be prepared and that corrected versions inspired by the first and second visual concepts be prepared.
+The requested package is: stable references for recurrent digital/media assets including PNGs; Spanish and English website publication; a LinkedIn post prepared agentically; and corrected versions inspired by the earlier first and second visual directions.
 
-This release creates:
+## 2. Numerical boundary
+
+The public hook preserves two attributed series without adding them:
+
+1. Canarian Hospitality states that in five years it reached **12 hotels, approximately 2,500 rooms and more than EUR 100m in sales in 2025**.
+2. Cinco Días, 4 February 2026, reports CEO figures of **EUR 44m for 2024, around EUR 50m for 2025 and a EUR 60m forecast for 2026** for the management company.
+
+The pages expressly distinguish hotel sales attributed to the managed portfolio from the manager company's own reported turnover. The >EUR 100m figure is not relabelled as consolidated Acosta Matos turnover.
+
+## 3. Canonical PD-DMA identity model
+
+Logical asset references do not carry a caret. A caret identifies one exact file object.
+
+- `PD-DMA-0001` — primary Spanish asset.
+  - web SVG `PD-DMA-0001^`: 10,401 bytes; SHA-256 `f0b301793227e217a0c594331291096de747592ee8748eaebc0778d1522f422b`.
+  - outreach PNG `PD-DMA-0001-PNG^`: 1122×1402; 2,229,301 bytes; SHA-256 `3958fcd906b53c43f25f469573734cb3cf6851f6b92e9bf116557a094aa3d881`.
+- `PD-DMA-0002` — English companion.
+  - web SVG `PD-DMA-0002^`: 10,334 bytes; SHA-256 `70ae7fcd9797c3f769553712416a7c1c034dad7457513dd12fefb847771abb49`.
+  - outreach PNG `PD-DMA-0002-PNG^`: 1200×1500; 239,753 bytes; SHA-256 `b0616f945d145080ad3053f5e5c08f3f1b7620d10e8ec24547043c895a6e039f`.
+- `PD-DMA-0003` — corrected platform-catalogue variant inspired by the first earlier visual direction.
+  - web SVG `PD-DMA-0003^`: 13,773 bytes; SHA-256 `6f2bcb6ed10b198871dcc60ea09e36b2a250b75d9959817d3e0191854f434f38`.
+  - outreach PNG `PD-DMA-0003-PNG^`: 1200×1500; 204,794 bytes; SHA-256 `1bd492c1858bc911d14bbd046c5bb501947d4076c91472cdfe3f655927da113b`.
+- `PD-DMA-0004` — corrected fictional-clearance variant inspired by the second earlier visual direction.
+  - web SVG `PD-DMA-0004^`: 12,910 bytes; SHA-256 `204b048051026680fcbe68c764c4cfff9fe2569abf3ebfb73db2abec4996ad58`.
+  - outreach PNG `PD-DMA-0004-PNG^`: 1200×1500; 184,214 bytes; SHA-256 `125d1b0b07e6fffd8734e84017d9f0cc529f6a8ef6a534af2439c3cf74305c5f`.
+
+Canonical machine register: `data/digital-media-asset-register-v1.json`.
+
+The earlier concept images remain hash-identified as `PD-DMA-LEGACY-0001-PNG^` and `PD-DMA-LEGACY-0002-PNG^`, but are quarantined from unchanged public use because their inherited hotel roster, portraits and apparent role/ownership implications are not approved factual content.
+
+## 4. Initial generation error and continuation resolution
+
+An earlier image-generation call returned an error, and that turn correctly recorded the then-uncompleted state. After the user issued a new **continue** request, completed output files already present in the working filesystem were recovered, inspected and hash-verified. The prior “pending/ungenerated” state is therefore superseded by the exact references above. The initial error remains part of the audit trail and is not erased.
+
+## 5. Public pages
+
+The package publishes source-controlled bilingual pages:
 
 - `/es/acosta-matos-plataforma-hotelera/`;
 - `/en/acosta-matos-hotel-platform/`;
 - `/es/registro-activos-digitales/`;
-- `/en/digital-media-asset-register/`;
-- `sitemap-hotel-platform-media.xml` and its `robots.txt` pointer;
-- a repository-hosted Spanish web derivative;
-- repository-wide digital/media caret governance and a machine register;
-- a Spanish/English LinkedIn publication package; and
-- source-controlled production copy for three pending raster assets.
+- `/en/digital-media-asset-register/`.
 
-## 2. Headline and numerical boundary
+The hotel-platform pages show the current Spanish/English visuals and the two corrected prior-style variants. They separate ownership, equity, management, operation, brand/franchise, capital/RICPE/RIC, construction, mandate/advice and media visibility.
 
-The published hook preserves two attributed public series:
+## 6. Responsibility and satire boundary
 
-1. Canarian Hospitality's statement that in five years it reached **12 hotels, approximately 2,500 rooms and more than EUR 100m in sales in 2025**.
-2. The Cinco Días report, dated 4 February 2026, attributing to the CEO figures of **EUR 44m for 2024, around EUR 50m for 2025 and a EUR 60m forecast for 2026** for the manager itself.
+The package does not assert that all 12 hotels have the same owner; does not infer shared knowledge, agreement, intent or liability from association; and does not treat a brand, adviser, investor, journalist or other third party as responsible merely because it appears in the wider platform.
 
-The pages state prominently that hotel sales attributed to the managed portfolio and the manager's own reported turnover are different measures and must not be mechanically added. The release does not relabel the >EUR 100m figure as consolidated Acosta Matos turnover.
+“Reputation whitewashing”, “predatory inclusion”, credibility instrumentalisation, authority-ratchet and media “coverage/cover” are preserved only as Project Sun Rock analytical or satirical lenses. Intentional concealment, knowing participation, coordination and causation require actor-specific evidence.
 
-## 3. Digital/media references
-
-### Public current assets
-
-- `PD-DMA-20260901-0003-ES^` — full-resolution Spanish PNG original, hash-locked but not committed because the available normal text-file write path could not carry the multi-megabyte source without an unsuitable repository operation.
-- `PD-DMA-20260901-0007-ES-WEB^` — repository-hosted JPEG display derivative, 300 × 375, 16,634 bytes, SHA-256 `01a95ed09611cafd9327f58ac224f90a47e293c9935757981a60582655ad3dbf`.
-
-### Preserved design references — not public evidence sheets
-
-- `PD-DMA-20260901-0001-EN^` — original high-contrast grid concept.
-- `PD-DMA-20260901-0002-EN^` — original vintage-resort concept.
-
-Their exact bytes are identified, but their inherited hotel labels, ownership implications, portraits and person-role framing are not approved factual content and must not be republished unchanged.
-
-### Reserved assets without caret
-
-- `PD-DMA-20260901-0004-EN` — English raster translation of version 3.
-- `PD-DMA-20260901-0005-ES` — corrected version inspired by concept 1.
-- `PD-DMA-20260901-0006-ES` — corrected version inspired by concept 2.
-
-No caret is attached because no completed byte object exists.
-
-## 4. Image-generation failure — explicit non-completion
-
-The image-generation operation intended to create the English raster and new visual variants returned an error. Platform instructions prohibited retrying image generation within the same request. This release therefore does **not** claim that those three images were generated.
-
-Instead:
-
-- the English website route provides a complete, responsive English reading/visual edition in HTML and clearly labels the English raster as pending;
-- the exact English translation and the two corrected visual production specifications are preserved in `communications/creative/PD-DMA-AMHP-VARIANTS-COPY-DECK-01SEP2026.md`; and
-- the three reserved references remain without a caret until a later user request permits a fresh generation attempt and the resulting files are hash-verified.
-
-## 5. Platform and responsibility boundary
-
-The pages use “platform” for a network of distinct roles. They expressly separate:
-
-- ownership/title;
-- shareholding/equity and co-investment;
-- management/operation;
-- proprietary and third-party brand/franchise;
-- capital, RICPE finance and RIC subscriber/taxpayer roles;
-- construction/rehabilitation;
-- advice, introduction and mandate;
-- media reporting and visibility; and
-- open/unverified relationships.
-
-The pages do not assert that all 12 hotels are Acosta-owned, that every relationship implies common control, or that persons/entities share knowledge, intent or liability by association.
-
-## 6. Public-interest analytical lenses
-
-The release retains reputation whitewashing, predatory inclusion, credibility instrumentalisation, authority/access/mandate ratchet and media “coverage/cover” as Project Sun Rock analytical or satirical lenses. It separately states that deliberate concealment, knowing participation, coordination, intent and causation require actor-specific evidence.
+Every current visual carries or is presented with a prominent statement that it is satire/caricature and not a real advertisement.
 
 ## 7. LinkedIn package
 
-Prepared, but not externally posted:
+Prepared but **not externally posted**:
 
 `communications/linkedin/LINKEDIN_ACOSTA_MATOS_CANARIAN_100M_PLATFORM_01SEP2026.md`
 
-It includes:
+The package contains Spanish long/short versions, first-comment sources, accessibility alt text, an English version and publication sequencing. The recommended first Spanish attachment is `PD-DMA-0001-PNG^`; the English companion is `PD-DMA-0002-PNG^`.
 
-- recommended Spanish long post;
-- shorter alternative;
-- first comment with source identification;
-- Spanish accessibility alt text;
-- English post for later use;
-- publication sequencing; and
-- editorial-risk checks.
+An actual external post should create a later register event recording final text, timestamp, URL and uploaded-file hash.
 
-A later actual post must create a new register event recording the final text, timestamp, public URL and exact uploaded-file hash.
+## 8. Full-platform expansion
 
-## 8. Full-platform expansion remains controlled
-
-The current public routes are deliberately a **figures-and-functions hook**, not yet the complete hotel-by-hotel platform map. Before expanding the public page to paint every asset, brand, investor, adviser and mandate, complete the outstanding source registers identified in `data/acosta-matos-hotel-platform-page-foundation-20260901.json`, especially media coverage, adviser/mandate, capital-provider/investor-provenance and brand/management/works crosswalks.
+The current release is a figures-and-functions public entry point. A fuller hotel-by-hotel, investor-by-investor map remains source-gated: ownership/title, exact co-investment percentages, capital-provider provenance, RIC subscribers/materialisers, adviser/mandate relationships, brand/management/works edges and dated media coverage must remain separately sourced.
 
 ## 9. Continuity state
 
-The asset identity model, references, sources, numerical distinction, page copy, pending-image gap, LinkedIn draft, variant specifications, public routes and fuller-expansion hold no longer depend on the originating chat. The three ungenerated raster assets remain an expressly recorded future task rather than a hidden failure.
+The visual family, hashes, bilingual pages, corrected variants, LinkedIn draft, source distinction, proof boundaries and future expansion rules now live in repository-controlled records and do not depend on the originating chat.
