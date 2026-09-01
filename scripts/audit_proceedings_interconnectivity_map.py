@@ -463,6 +463,9 @@ if not errors:
     authority_successor = json.loads(
         read("publication-manifests/unitary-public-authority-communications-20260901.json")
     )
+    pwc_successor = json.loads(
+        read("publication-manifests/pwc-carlos-saavedra-20260901.json")
+    )
     authority_successor_continuity = read(
         "docs/deletion-audits/2026-09-01-unitary-public-authority-communications-continuity.md"
     )
@@ -2720,6 +2723,9 @@ if not errors:
         "assets/data/fiscalia-proceedings-interconnectivity-v1.json": "8f7e1a4c92d779f79638261eaeea4bc801c4f52a234ac7592a4f75c4c001a956",
         "assets/data/community-acta-authority-interconnectivity-v1.json": "38bffa9c694d6e7f7277177a56523d213747b9970fd806fe2440f9f5abc2e725",
     }
+    authority_frozen_release_hashes = authority_successor.get(
+        "release_critical_sha256", {}
+    )
     require(
         authority_successor.get("historical_transition", {}).get("policy")
         == "FAIL_CLOSED_SUCCESSOR_COVERAGE"
@@ -2728,13 +2734,89 @@ if not errors:
         and all(
             successor_changed[path].get("predecessor_live_sha256") == prior_hash
             and successor_changed[path].get("release_sha256")
-            == hashlib.sha256((ROOT / path).read_bytes()).hexdigest()
+            == authority_frozen_release_hashes.get(
+                path, hashlib.sha256((ROOT / path).read_bytes()).hexdigest()
+            )
             and bool(successor_changed[path].get("reason"))
             for path, prior_hash in expected_successor_prior_hashes.items()
         ),
         "authority-communications successor transition coverage is incomplete or stale",
     )
-    successor_release_hashes = authority_successor.get("release_critical_sha256", {})
+    pwc_transition = pwc_successor.get("predecessor_release_transition", {})
+    community_resource = "assets/data/community-acta-authority-interconnectivity-v1.json"
+    community_current_sha256 = hashlib.sha256(
+        (ROOT / community_resource).read_bytes()
+    ).hexdigest()
+    pwc_state = pwc_successor.get("current_state")
+    pwc_live = pwc_state in {"LIVE_VERIFIED", "DELETION_SAFE"}
+    require(
+        pwc_successor.get("schema") == "por-derecho.publication-manifest.v1"
+        and pwc_successor.get("publication_id")
+        == "PD-PWC-CS-PUBLICATION-20260901-01"
+        and pwc_successor.get("control_date") == "2026-09-01"
+        and pwc_successor.get("source_base_sha")
+        == "273bb621de7db5473b1223fdbc080f9c733dd038"
+        and pwc_successor.get("head_branch")
+        == "codex/pwc-carlos-saavedra-completeness"
+        and (pwc_state, pwc_successor.get("state"))
+        in {
+            ("PR_OPEN", "PR_OPEN_VALIDATION_PENDING"),
+            (
+                "LIVE_VERIFIED",
+                "LIVE_VERIFIED_WITH_SOURCE_SAFE_PUBLICATION_BOUNDARIES",
+            ),
+            (
+                "DELETION_SAFE",
+                "LIVE_VERIFIED_WITH_SOURCE_SAFE_PUBLICATION_BOUNDARIES",
+            ),
+        },
+        "PwC/Carlos Saavedra successor identity or lifecycle is stale",
+    )
+    pwc_authorization = pwc_successor.get("authorization", {})
+    pwc_pr = pwc_successor.get("pull_request", {})
+    require(
+        pwc_authorization.get("repository_and_website_publication") is True
+        and pwc_authorization.get("portrait_publication") is True
+        and pwc_authorization.get(
+            "source_safe_summaries_derived_from_private_emails_and_files"
+        )
+        is True
+        and pwc_authorization.get(
+            "push_pull_request_merge_pages_and_live_verification"
+        )
+        is True
+        and pwc_authorization.get("raw_private_source_publication") is False
+        and pwc_authorization.get("external_contact_or_delivery") is False
+        and pwc_authorization.get("email_action") == "HOLD_NOT_AUTHORISED"
+        and pwc_authorization.get("filing_or_portal_action")
+        == "HOLD_NOT_AUTHORISED"
+        and pwc_pr.get("number") == 1328
+        and pwc_pr.get("url")
+        == "https://github.com/sbu001monterecco/por-derecho/pull/1328"
+        and pwc_pr.get("status") == ("MERGED" if pwc_live else "OPEN"),
+        "PwC/Carlos Saavedra authorization or PR state is incomplete",
+    )
+    require(
+        pwc_transition.get("policy") == "FAIL_CLOSED_SUCCESSOR_COVERAGE"
+        and pwc_transition.get("resource") == community_resource
+        and pwc_transition.get("predecessor_manifest")
+        == "publication-manifests/unitary-public-authority-communications-20260901.json"
+        and pwc_transition.get("predecessor_publication_id")
+        == authority_successor.get("publication_id")
+        and pwc_transition.get("predecessor_sha256")
+        == authority_frozen_release_hashes.get(community_resource)
+        == "6980b865e034a632595ceb49452bd64bd422fe0df37f21b4bf4a6dea6cf7217f"
+        and pwc_transition.get("candidate_sha256") == community_current_sha256
+        and "canonical institutions-shard provenance"
+        in pwc_transition.get("reason", "")
+        and "denominators" in pwc_transition.get("reason", "")
+        and "event set" in pwc_transition.get("reason", "")
+        and "evidential assertions are unchanged"
+        in pwc_transition.get("reason", "")
+        and "immutable observation" in pwc_transition.get("reason", ""),
+        "PwC/Carlos Saavedra successor does not cover the authority-graph transition",
+    )
+    successor_release_hashes = authority_frozen_release_hashes
     expected_successor_release_paths = {
         "assets/data/institutional-communications-register-v1.json",
         "assets/data/unitary-multitrack-criminal-first-gap-closure-v1.json",
@@ -2754,9 +2836,15 @@ if not errors:
         and all(
             successor_release_hashes.get(path)
             == hashlib.sha256((ROOT / path).read_bytes()).hexdigest()
-            for path in expected_successor_release_paths
+            for path in expected_successor_release_paths - {community_resource}
         ),
         "authority-communications successor release hashes are incomplete or stale",
+    )
+    require(
+        successor_release_hashes.get(community_resource)
+        == pwc_transition.get("predecessor_sha256")
+        and pwc_transition.get("candidate_sha256") == community_current_sha256,
+        "authority-communications successor release hash lacks a valid later transition",
     )
     successor_boundaries = set(authority_successor.get("evidential_boundaries", []))
     require(
