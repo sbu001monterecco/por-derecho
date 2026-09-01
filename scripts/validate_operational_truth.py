@@ -306,8 +306,8 @@ def main() -> int:
         )
         require(
             (unitary.get("identity_registry") or {}).get("counts")
-            == UNITARY_SNAPSHOT_IDENTITY_COUNTS,
-            "dated unitary identity counts drift",
+            == CURRENT_CANONICAL_IDENTITY_COUNTS,
+            "current unitary identity counts drift",
         )
 
         served_sha = production.get("served_sha")
