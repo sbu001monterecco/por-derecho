@@ -1,0 +1,104 @@
+{
+  "schema": "por-derecho.live-proceeding-email-intake.v1",
+  "control_id": "PD-LPEI-001",
+  "control_date": "2026-09-01",
+  "status": "ACTIVE_SPECIALIST_CONTROL",
+  "workspace_id": "PD-WS-20260901-0004",
+  "governance_path": ".github/governance/LIVE_PROCEEDING_EMAIL_INTAKE_GOVERNANCE_01SEP2026.md",
+  "canonical_destinations": {
+    "communications_graph": "assets/data/institutional-communications-register-v1.json",
+    "proceedings_source": "archive/PROCEEDINGS_MASTER_REGISTER.csv",
+    "proceedings_public_projection": "assets/data/proceedings-master-public-v1.json",
+    "authority_discovery_projection": "assets/data/redsara-age-filings-register-v1.json",
+    "operations_control": "data/operations-control.json",
+    "workspace_register": "data/workspace-register-v1.json",
+    "continuity_index": "CURRENT_WORKSPACE_HANDOFF.md"
+  },
+  "architecture": {
+    "shadow_email_register_allowed": false,
+    "append_only_history": true,
+    "silent_overwrite_allowed": false,
+    "subject_only_proceeding_match_allowed": false,
+    "duplicate_event_on_rerun_allowed": false,
+    "unsupported_state_mutation_allowed": false,
+    "deadline_without_source_allowed": false,
+    "assumption_based_conflict_resolution_allowed": false
+  },
+  "private_custody": {
+    "native_email_body_public": false,
+    "provider_message_id_public": false,
+    "provider_thread_id_public": false,
+    "recipient_identity_public_by_default": false,
+    "private_attachment_content_public_by_default": false,
+    "native_source_required_for_private_email": true,
+    "allowed_public_source_reference": "OPAQUE_PROJECT_SOURCE_ID"
+  },
+  "dedup_order": [
+    "PRIVATE_NATIVE_PROVIDER_ID",
+    "PRIVATE_NATIVE_CONTENT_HASH",
+    "ATTACHMENT_HASHES_PLUS_TIMESTAMP_CONTEXT",
+    "EXISTING_OPAQUE_SOURCE_OR_OFFICIAL_REFERENCE"
+  ],
+  "proceeding_resolution": {
+    "statuses": ["RESOLVED", "UNRESOLVED", "DISPUTED"],
+    "allowed_basis": [
+      "CANONICAL_PROCEEDING_ID",
+      "NIG_OR_OFFICIAL_PROCEDURE_REFERENCE",
+      "AUTHORITY_PLUS_OFFICIAL_REFERENCE",
+      "PROVED_CORRESPONDENCE_RELATIONSHIP",
+      "EXPRESS_REFERENCE_IN_SOURCE_OR_ATTACHMENT"
+    ],
+    "unresolved_may_mutate_current_state": false
+  },
+  "verification_statuses": ["VERIFIED", "UNVERIFIED", "DISPUTED"],
+  "change_types": ["CONFIRMS", "SUPPLEMENTS", "CONTRADICTS", "CORRECTS", "SUPERSEDES"],
+  "action_statuses": ["OPEN", "COMPLETED", "SUPERSEDED", "CANCELLED"],
+  "default_timezone": "Atlantic/Canary",
+  "handling_state_ladder": [
+    "transmission",
+    "registration",
+    "delivery",
+    "routing",
+    "incorporation",
+    "examination",
+    "verification_or_rejection",
+    "adoption",
+    "decision_or_use",
+    "effect",
+    "causation",
+    "benefit_or_loss"
+  ],
+  "required_search_dimensions": [
+    "PROCEEDING_REFERENCE",
+    "NIG_OR_EXPEDIENTE_OR_OFFICIAL_REFERENCE",
+    "AUTHORITY_OR_COURT_OR_OFFICE",
+    "CANONICAL_PERSON_ENTITY_WHERE_PUBLIC_SAFE",
+    "RELATED_OR_ANTECEDENT_PROCEEDING",
+    "FILING_RESPONSE_DECISION_RELATIONSHIP",
+    "EVIDENCE_ATTACHMENT_DERIVATIVE",
+    "CHRONOLOGY"
+  ],
+  "acceptance_gate": [
+    "SOURCE_PRESERVED_OR_INDEPENDENTLY_PUBLIC",
+    "DEDUP_COMPLETE",
+    "PROCEEDING_RESOLUTION_RECORDED",
+    "CANONICAL_EVENT_APPENDED_OR_REUSED",
+    "ATTACHMENTS_LINKED_NOT_DUPLICATED",
+    "ASSERTIONS_PROVENANCE_BACKED",
+    "CURRENT_STATE_TRACEABLE_AND_PRIOR_STATE_PRESERVED",
+    "ACTIONS_AND_DEADLINES_CAPTURED_OR_AFFIRMATIVELY_NONE",
+    "CONTRADICTIONS_REVIEWED",
+    "OFFICIAL_REFERENCES_SEARCHABLE_WHERE_PUBLIC_SAFE",
+    "INTERLINKS_REFRESHED",
+    "CONTINUITY_CHECKPOINT_UPDATED"
+  ],
+  "specialist_validator": "scripts/validate_live_proceeding_email_intake.py",
+  "specialist_workflow": ".github/workflows/audit-live-proceeding-email-intake.yml",
+  "external_authority": {
+    "mailbox_access_authorised_by_this_control": false,
+    "email_send_authorised_by_this_control": false,
+    "filing_authorised_by_this_control": false,
+    "portal_action_authorised_by_this_control": false,
+    "third_party_contact_authorised_by_this_control": false
+  }
+}
