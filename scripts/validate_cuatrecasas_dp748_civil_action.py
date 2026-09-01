@@ -329,7 +329,11 @@ if not UNITARY_CONTROL.is_file():
 else:
     control_text = UNITARY_CONTROL.read_text(encoding="utf-8")
     for marker in (
-        "PREPARED_PENDING_MERGE",
+        "LIVE_VERIFIED",
+        "PR [#1303]",
+        "a49347e4605ad94fcef873b4bdd5dc7b1587c0ac",
+        "Pages deployment",
+        "exactly two complete `921 × 2048` LinkedIn captures",
         "possible **estafa procesal**",
         "Any insolvency or **concursal** characterisation is secondary and conditional",
         "leading concrete probability assessment",
@@ -363,8 +367,33 @@ except Exception as exc:
 else:
     if unitary_manifest.get("control_marker") != UNITARY_REMATE_MARKER:
         errors.append("La Laguna/remate publication manifest marker mismatch")
-    if unitary_manifest.get("current_state") != "PREPARED_PENDING_MERGE":
-        errors.append("La Laguna/remate manifest must remain PREPARED_PENDING_MERGE until live closeout")
+    if unitary_manifest.get("current_state") != "LIVE_VERIFIED":
+        errors.append("La Laguna/remate manifest must be LIVE_VERIFIED after the completed release closeout")
+    if unitary_manifest.get("status") != "live_verified":
+        errors.append("La Laguna/remate manifest live status marker is missing")
+    if unitary_manifest.get("controlling_pr") != 1303:
+        errors.append("La Laguna/remate manifest controlling PR mismatch")
+    if unitary_manifest.get("merge_sha") != "a49347e4605ad94fcef873b4bdd5dc7b1587c0ac":
+        errors.append("La Laguna/remate manifest merge SHA mismatch")
+    release = unitary_manifest.get("release") or {}
+    if release.get("reviewed_head_sha") != "23639fd6ddf2b7ac5a7b96711be8de5c58b2e593":
+        errors.append("La Laguna/remate manifest reviewed head SHA mismatch")
+    if release.get("reviewed_tree_sha") != "e2f7d65f6e4c9333976fa9c150a38e78c7ca945a":
+        errors.append("La Laguna/remate manifest reviewed tree SHA mismatch")
+    if release.get("merge_tree_sha") != release.get("reviewed_tree_sha") or release.get("tree_matches_reviewed_head") is not True:
+        errors.append("La Laguna/remate manifest does not prove reviewed/merge tree identity")
+    deployment = unitary_manifest.get("deployment_evidence") or {}
+    if deployment.get("pages_run_id") != 33469147249 or deployment.get("conclusion") != "success":
+        errors.append("La Laguna/remate manifest Pages deployment evidence mismatch")
+    live = unitary_manifest.get("live_verification_evidence") or {}
+    if live.get("status") != "PASS" or live.get("exact_public_edge_parity") != "14_OF_14_CHANGED_FILES":
+        errors.append("La Laguna/remate manifest exact public-edge verification is incomplete")
+    if live.get("rendered_routes_checked") != 6 or live.get("rendered_route_failure_count") != 0:
+        errors.append("La Laguna/remate manifest rendered route verification is incomplete")
+    if live.get("linkedin_capture_count_per_language_panel") != 2 or live.get("linkedin_captures_complete") is not True:
+        errors.append("La Laguna/remate manifest rendered LinkedIn capture verification is incomplete")
+    if len(live.get("target_release_sha256") or {}) != 14:
+        errors.append("La Laguna/remate manifest must preserve all 14 target-release SHA-256 values")
     authority = unitary_manifest.get("authority") or {}
     for gate in ("repository_push", "pull_request", "merge_and_website_publication"):
         if authority.get(gate) != "AUTHORISED_BY_CURRENT_USER_2026-09-01":
