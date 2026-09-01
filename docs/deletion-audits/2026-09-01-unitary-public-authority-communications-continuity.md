@@ -37,3 +37,11 @@ Parallel lanes may discover and classify read-only source candidates. A single i
 ## Closeout gate
 
 The manifest may become `LIVE_VERIFIED` only after the exact reviewed head is green, PR `#1305` is merged, the exact merge SHA is deployed by Pages, and cache-busted public readback matches the release hashes. A later closeout must record those identifiers without rewriting the predecessor attestation.
+
+## Live closeout
+
+That gate closed successfully. Final head `b505cf170a422ef15cd6a2214e0563e05c0a67aa` completed 48 successful workflows plus one intentional skip and no failures. PR `#1305` merged as `a2873cd865567da1b6644f32821bb15ece53a160`; reviewed and merge tree `05bd9703ea80ec0ace2a27c722a251aa89a492ac` are identical. Pages run `33472209126` completed successfully for that merge.
+
+Parallel cache-busted readback at `2026-09-01T05:15:54Z`–`05:16:04Z` passed 13/13 HTTP-200 and exact-SHA checks. The post-merge ACTA live-browser run `33472211594` also passed. The target release is therefore `LIVE_VERIFIED_WITH_ACCEPTED_PUBLICATION_BOUNDARY_GAP`; it is not deletion-safe because the operational proceedings CSV boundary remains open. The immutable closeout is `archive/UNITARY_PUBLIC_AUTHORITY_COMMUNICATIONS_LIVE_CLOSEOUT_01SEP2026.md`.
+
+This closeout proves publication and byte identity only. All allegation, handling-state, authority-tier, identity, privacy and non-propagation boundaries above continue unchanged. No email, filing, service, portal action or authority contact occurred.

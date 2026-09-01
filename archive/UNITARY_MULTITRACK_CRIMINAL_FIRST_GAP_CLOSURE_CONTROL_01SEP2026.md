@@ -4,7 +4,7 @@
 
 **Repository base:** originally `654afe42`; reconciled through `origin/main` `a49347e4` in branch merge `d07e8c4b` before publication
 
-**Status:** `PUBLICATION_AUTHORISED_VALIDATION_PENDING`
+**Status:** `LIVE_VERIFIED_WITH_ACCEPTED_PUBLICATION_BOUNDARY_GAP` — PR `#1305`, merge `a2873cd865567da1b6644f32821bb15ece53a160`, Pages run `33472209126`, 13/13 exact live-byte checks. See `archive/UNITARY_PUBLIC_AUTHORITY_COMMUNICATIONS_LIVE_CLOSEOUT_01SEP2026.md`.
 **Authority snapshot:** Gil Marer's 1-Sep-2026 instruction authorises branch push, protected PR, merge after relevant checks, Pages deployment and exact-SHA/readback verification for this repository/site revision. It does not authorise filing, service, email, portal action, authority contact, ruleset changes, history rewriting or disclosure of private source material.
 **External acts at this checkpoint:** none yet recorded
 
