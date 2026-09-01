@@ -1,0 +1,135 @@
+{
+  "schema": "por-derecho.acosta-matos.hotel-platform-page-foundation.v1",
+  "control_date": "2026-09-01",
+  "status": "FOUNDATION_ONLY_PAGE_NOT_CREATED",
+  "publication_hold": true,
+  "reserved_routes": {
+    "es": "/es/acosta-matos-plataforma-hotelera/",
+    "en": "/en/acosta-matos-hotel-platform/",
+    "route_state": "RESERVED_NOT_CREATED"
+  },
+  "platform_definition": "A source-graded network/ecosystem of differentiated hotel, entity, capital, advisory, mandate, management, brand, construction, media and reputational relationships; not a statement of common ownership or common wrongdoing.",
+  "human_governance": ".github/governance/records/ACOSTA_MATOS_HOTEL_PLATFORM_SATIRE_FOUNDATION_01SEP2026.md",
+  "landing_blueprint": "research/ACOSTA_MATOS_HOTEL_PLATFORM_LANDING_PAGE_BLUEPRINT_20260901.md",
+  "global_satire_governance": {
+    "human": ".github/governance/SATIRE_CARICATURE_SPOOF_PUBLICATION_STANDARD_ES_EN.md",
+    "machine": "ops/SATIRE_CARICATURE_SPOOF_GOVERNANCE_V1.json"
+  },
+  "mandatory_disclosures": {
+    "es_short": "CARICATURA / REPRESENTACIÓN SATÍRICA — NO ES UN ANUNCIO REAL",
+    "es_strong": "ANUNCIO SATÍRICO — PARODIA Y CARICATURA. NO ES PUBLICIDAD REAL NI UNA COMUNICACIÓN DE LAS ENTIDADES REPRESENTADAS.",
+    "en_short": "SATIRICAL / CARICATURE REPRESENTATION — NOT A REAL ADVERTISEMENT"
+  },
+  "relationship_classes": [
+    "OWNERSHIP_TITLE",
+    "SHAREHOLDER_EQUITY",
+    "CO_INVESTOR_EXACT_PERCENTAGE_OPEN",
+    "GOVERNANCE_BOARD_OFFICER",
+    "CAPITAL_PROVIDER_FINANCIER",
+    "RICPE_FINANCING",
+    "RIC_MATERIALISATION_OR_SUBSCRIBER_ROLE",
+    "ADVISER_STRUCTURER",
+    "INTRODUCER_ARRANGER_PLACEMENT",
+    "MANDATE_AGENCY_REPRESENTATION",
+    "HOTEL_MANAGER_OPERATOR_LESSEE",
+    "MYND_SHOLEO_OR_OTHER_OPERATING_BRAND",
+    "FRANCHISE_OR_GLOBAL_BRAND",
+    "DEVELOPER_BUILDER_REHABILITATOR",
+    "PROFESSIONAL_CREDENTIAL_OR_AUTHORITY_ASSOCIATION",
+    "MEDIA_REPORTING_VISIBILITY",
+    "PUBLIC_OR_INSTITUTIONAL_CONTACT_NOTICE_OR_AUTHORITY",
+    "REPUTATIONAL_ASSOCIATION",
+    "OPEN_OR_UNVERIFIED_RELATION"
+  ],
+  "future_visual_badges": {
+    "OWN": "OWNERSHIP_TITLE",
+    "EQ": "SHAREHOLDER_EQUITY",
+    "CO-INV": "CO_INVESTOR_EXACT_PERCENTAGE_OPEN",
+    "CAP": "CAPITAL_PROVIDER_FINANCIER",
+    "RICPE": "RICPE_FINANCING",
+    "ADV": "ADVISER_STRUCTURER",
+    "MANDATE": "MANDATE_AGENCY_REPRESENTATION",
+    "MGT": "HOTEL_MANAGER_OPERATOR_LESSEE",
+    "BRAND": "FRANCHISE_OR_GLOBAL_BRAND",
+    "BUILD": "DEVELOPER_BUILDER_REHABILITATOR",
+    "MEDIA": "MEDIA_REPORTING_VISIBILITY",
+    "OPEN": "OPEN_OR_UNVERIFIED_RELATION"
+  },
+  "analytical_lenses": [
+    {
+      "id": "REPUTATION_WHITEWASHING",
+      "status": "PROJECT_SIDE_ANALYTICAL_LENS",
+      "intent_rule": "Purposeful laundering, concealment or deception requires independent evidence; reputational effect may be analysed separately."
+    },
+    {
+      "id": "PREDATORY_INCLUSION",
+      "status": "PROJECT_SIDE_ANALYTICAL_LENS",
+      "intent_rule": "Third-party inclusion or association does not prove knowing participation; purposeful exploitation requires independent evidence."
+    },
+    {
+      "id": "CREDIBILITY_INSTRUMENTALISATION",
+      "status": "TRACE_REQUIRED",
+      "required_sequence": ["CREDIBLE_ACTOR_OR_BRAND", "DOCUMENTED_ASSOCIATION", "DOCUMENTED_USE_OR_REPRESENTATION", "AUDIENCE_EXPOSURE", "NEW_ACCESS_OR_MANDATE_OR_CAPITAL", "LATER_BENEFIT_IF_TRACEABLE"]
+    },
+    {
+      "id": "AUTHORITY_RATCHET",
+      "status": "SEPARATE_SOURCE_PER_ARROW",
+      "required_sequence": ["FOOTHOLD", "AUTHORITY_OR_ROLE", "ACCESS", "MANDATE", "CAPITAL_OR_TRANSACTION_ROLE", "ASSET_OR_PROJECT_OPPORTUNITY", "TRACEABLE_LATER_BENEFIT"]
+    },
+    {
+      "id": "MEDIA_COVERAGE_DOUBLE_MEANING",
+      "status": "RHETORICAL_SECOND_MEANING",
+      "boundary": "No claim of knowing journalistic concealment/protection/coordination without actor-specific evidence."
+    }
+  ],
+  "planned_sections": [
+    "HERO_DISCLOSURE",
+    "PLATFORM_AT_A_GLANCE",
+    "ONE_HOTEL_MANY_ROLES_MATRIX",
+    "OWN_FINANCE_MANAGE_ADVISE_LANES",
+    "CREDIBILITY_STACK",
+    "REPUTATION_WHITEWASHING_ANALYSIS",
+    "PREDATORY_INCLUSION_CREDIBILITY_TRANSFER",
+    "AUTHORITY_ACCESS_MANDATE_CAPITAL_ASSETS",
+    "MEDIA_COVERAGE_DOUBLE_MEANING",
+    "RIC_RICPE_INVESTOR_PROVENANCE",
+    "PLATFORM_EXPANSION_CHRONOLOGY",
+    "QUESTIONS_NOT_CONCLUSIONS",
+    "SOURCES_METHODOLOGY_CORRECTIONS_OPEN_PROOF"
+  ],
+  "existing_parent_context_routes": {
+    "es": "/es/acosta-matos-perimetro/",
+    "en": "/en/acosta-matos-perimeter/",
+    "rule": "Do not replace; future hotel-platform route should be parent/sibling-linked after route audit."
+  },
+  "bidirectional_interlink_targets": [
+    "HOTEL_OR_PROJECT_PAGE",
+    "LEGAL_OWNER_OR_SPV_PAGE",
+    "NAMED_PERSON_OR_ENTITY_PAGE",
+    "RIC_OR_RICPE_FINANCING_RECORD",
+    "MANAGER_OPERATOR_BRAND_PAGE",
+    "CONSTRUCTION_OR_DEVELOPMENT_RECORD",
+    "ADVISER_OR_MANDATE_RECORD",
+    "MEDIA_SOURCE_REGISTER",
+    "RELEVANT_PROCEEDING_ACTA_OR_PUBLIC_AUTHORITY_EVENT_WHERE_SOURCED",
+    "OPEN_PROOF_OR_CORRECTION_ITEM"
+  ],
+  "source_registers": [
+    "research/ACOSTA_MATOS_PERIMETER_INVESTMENT_MAP_2017_2026.md",
+    "data/acosta-matos-perimeter-investment-register-2017-2026.json",
+    "data/acosta-matos-perimeter-identity-reconciliation-20260901.json",
+    "research/ACOSTA_MATOS_NON_HOTEL_INVESTMENT_DEVELOPMENT_CENSUS_2017_2026.md",
+    "data/acosta-matos-non-hotel-investment-development-register-2017-2026.json"
+  ],
+  "required_before_render": [
+    "DATED_MEDIA_COVERAGE_SOURCE_REGISTER",
+    "ADVISER_STRUCTURER_MANDATE_RELATIONSHIP_REGISTER",
+    "CAPITAL_PROVIDER_INVESTOR_PROVENANCE_CROSSWALK",
+    "BRAND_MANAGEMENT_WORKS_EDGE_CROSSWALK",
+    "ROUTE_AND_INTERLINK_TARGET_AUDIT",
+    "CAEPR_RERUN",
+    "ES_EN_COPY_PARITY_CHECK",
+    "ROLE_EDGE_SOURCE_IDS_COMPLETE_OR_MARKED_OPEN"
+  ],
+  "next_allowed_phase": "DATA_INTERLINK_AND_COPY_FOUNDATION_ONLY"
+}
