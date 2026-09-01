@@ -1,0 +1,133 @@
+{
+  "schema": "por-derecho.matter-identity-caret-resolution.v1",
+  "control_id": "PD-SP-IDENTITY-CARET-RESOLUTION-001",
+  "registry_id": "PD-SP-IDENTITY-REGISTRY-001",
+  "control_date": "2026-09-01",
+  "status": "CANONICAL_CARET_RESOLUTION_COMPANION",
+  "purpose": "Provide an explicit current ^ resolution layer for existing immutable CAEPR records whose historical typed part lacks an embedded identity_resolution field, and record the source-bounded professional/entity relationships required by the caricature/documentary-contrast publication family.",
+  "precedence_rule": "This file does not create a second identity or replace an immutable CAEPR record. For an ID listed here, CARET_CONFIRMED is the current presentation-marker resolution when the canonical base record has no conflicting later CARET_PENDING or CARET_SUSPENDED state. Any future material collision suspends the affected resolution pending review.",
+  "presentation_boundary": "A caret confirms canonical identity only. It never proves a role in an unsourced event, shared knowledge, endorsement, coordination, ownership, intent, wrongdoing or liability.",
+  "resolutions": [
+    {
+      "id": "PD-SP-P-0010",
+      "canonical_name": "Francisco de Borja Rodríguez-Batllori Laffitte",
+      "display": "Francisco de Borja Rodríguez-Batllori Laffitte^",
+      "resolution": "CARET_CONFIRMED",
+      "base_record_state_before": "CANONICAL_RECORD_PRESENT_EMBEDDED_CARET_STATE_ABSENT",
+      "identity_sources": [
+        "BOE-B-2012-22189, official edict for Concurso 36/2012 naming Francisco de Borja Rodríguez-Batllori Laffitte and DNI 44.700.629-Z as insolvency administrator",
+        "BORME-A-2012-198-35, entry 418095 for Luchy Playa Blanca and Concurso 36/2012",
+        "BORME-A-2018-175-35 and BORME-A-2024-132-35, San Telmo professional/administration continuity records"
+      ],
+      "identity_boundary": "The 2012 appointment, later San Telmo roles and later Grant Thornton public professional affiliation are separate dated edges. The caret does not make Grant Thornton Canarias the insolvency-administration firm in 2012 and does not transfer any firm's knowledge or conduct to the individual or vice versa."
+    },
+    {
+      "id": "PD-SP-P-0146",
+      "canonical_name": "Eduardo Sánchez Iglesias",
+      "display": "Eduardo Sánchez Iglesias^",
+      "resolution": "CARET_CONFIRMED",
+      "base_record_state_before": "NEW_CANONICAL_RECORD_WITH_EMBEDDED_CARET",
+      "identity_sources": [
+        "BORME-A-2018-175-35",
+        "RSM Spain official SanTelmo integration announcement",
+        "BORME-A-2026-99-08"
+      ]
+    },
+    {
+      "id": "PD-SP-P-0147",
+      "canonical_name": "Enrique Luis Guerra Suárez",
+      "display": "Enrique Luis Guerra Suárez^",
+      "resolution": "CARET_CONFIRMED",
+      "base_record_state_before": "NEW_CANONICAL_RECORD_WITH_EMBEDDED_CARET",
+      "identity_sources": [
+        "CNMV official register for RIC Private Equity Investment Partners, S.C.R., S.A., NIF A76335900, official register no. 295",
+        "RIC Private Equity official public material using the shorter form Enrique Guerra Suárez"
+      ]
+    },
+    {
+      "id": "PD-SP-O-0020",
+      "canonical_name": "RIC Private Equity Investment Partners SCR, S.A.",
+      "official_source_literal": "RIC PRIVATE EQUITY INVESTMENT PARTNERS, S.C.R., S.A.",
+      "display": "RIC Private Equity Investment Partners, S.C.R., S.A.^",
+      "resolution": "CARET_CONFIRMED",
+      "base_record_state_before": "CANONICAL_RECORD_PRESENT_EMBEDDED_CARET_STATE_ABSENT",
+      "identity_sources": [
+        "CNMV official register, NIF A76335900, official register no. 295, registered 25-Oct-2019",
+        "CNMV 2025 annual accounts naming the same legal person and its prior names"
+      ],
+      "identity_boundary": "The caret resolves the legal person. RICPE financing, board office, investment, RIC materialisation, subscriber status, benefit, knowledge and responsibility remain separate propositions requiring their own sources."
+    },
+    {
+      "id": "PD-SP-O-0080",
+      "canonical_name": "San Telmo Abogados y Economistas, S.L.P.",
+      "display": "San Telmo Abogados y Economistas, S.L.P.^",
+      "resolution": "CARET_CONFIRMED",
+      "base_record_state_before": "NEW_CANONICAL_RECORD_WITH_EMBEDDED_CARET"
+    },
+    {
+      "id": "PD-SP-O-0081",
+      "canonical_name": "RSM Spain Asesores Legales y Tributarios, S.L.P.",
+      "display": "RSM Spain Asesores Legales y Tributarios, S.L.P.^",
+      "resolution": "CARET_CONFIRMED",
+      "base_record_state_before": "NEW_CANONICAL_RECORD_WITH_EMBEDDED_CARET"
+    },
+    {
+      "id": "PD-SP-O-0082",
+      "canonical_name": "Grant Thornton Canarias, S.L.",
+      "display": "Grant Thornton Canarias, S.L.^",
+      "resolution": "CARET_CONFIRMED",
+      "base_record_state_before": "NEW_CANONICAL_RECORD_WITH_EMBEDDED_CARET"
+    }
+  ],
+  "relationship_edges": [
+    {
+      "edge_id": "PD-SP-REL-P0010-O0080-2018",
+      "from": "PD-SP-P-0010",
+      "to": "PD-SP-O-0080",
+      "type": "DATED_PROFESSIONAL_AND_GOVERNANCE_RELATIONSHIP",
+      "status": "DOCUMENTED_FACT",
+      "date_scope": "at least through the 2018 administration record; professional-member continuity separately recorded through 2024",
+      "sources": ["BORME-A-2018-175-35", "BORME-A-2024-132-35"],
+      "boundary": "Does not establish that every insolvency appointment or later mandate belonged to San Telmo."
+    },
+    {
+      "edge_id": "PD-SP-REL-P0010-O0082-PUBLIC",
+      "from": "PD-SP-P-0010",
+      "to": "PD-SP-O-0082",
+      "type": "PUBLIC_GRANT_THORNTON_CANARIAS_PROFESSIONAL_PERIMETER_ASSOCIATION_EXACT_EMPLOYER_OPEN",
+      "status": "DOCUMENTED_ASSOCIATION_WITH_LEGAL_ENTITY_EDGE_QUALIFIED",
+      "date_scope": "public Grant Thornton Legal material current in the 2024-2026 period",
+      "sources": ["Grant Thornton Spain official Legal author profile listing Borja Rodríguez-Batllori as Senior Advisor", "Cuyás Abogados public team page describing the Grant Thornton Canarias alliance and listing Borja Rodríguez-Batllori Laffitte"],
+      "boundary": "The public brand/perimeter association is documented. Exact employing or contracting Grant Thornton legal person for the individual is not inferred solely from brand presentation or email domain; the 2012 LPB appointment is not attributed to Grant Thornton Canarias."
+    },
+    {
+      "edge_id": "PD-SP-REL-P0146-O0080-2018",
+      "from": "PD-SP-P-0146",
+      "to": "PD-SP-O-0080",
+      "type": "DATED_ADMINISTRATION_AND_PARTNER_RELATIONSHIP",
+      "status": "DOCUMENTED_FACT",
+      "sources": ["BORME-A-2018-175-35", "RSM Spain official SanTelmo integration announcement"],
+      "boundary": "Role and professional association are date-specific; they do not transfer knowledge or conduct."
+    },
+    {
+      "edge_id": "PD-SP-REL-P0146-O0081-2026",
+      "from": "PD-SP-P-0146",
+      "to": "PD-SP-O-0081",
+      "type": "RSM_EXACT_LEGAL_PERSON_SHAREHOLDER_RECORD",
+      "status": "DOCUMENTED_FACT",
+      "date_scope": "20-May-2026 BORME record",
+      "sources": ["BORME-A-2026-99-08, entry 252474"],
+      "boundary": "The BORME record identifies Eduardo Sánchez Iglesias among the non-professional shareholders in that act. It does not establish every current function, mandate or knowledge state."
+    },
+    {
+      "edge_id": "PD-SP-REL-P0147-O0020-2019-2026",
+      "from": "PD-SP-P-0147",
+      "to": "PD-SP-O-0020",
+      "type": "SECRETARY_AND_DIRECTOR_GENERAL",
+      "status": "DOCUMENTED_FACT",
+      "date_scope": "secretary from 25-Oct-2019; director general from 09-Jul-2020 in the current CNMV register",
+      "sources": ["CNMV official register for NIF A76335900"],
+      "boundary": "Office does not by itself establish participation in or knowledge of any particular investment, representation or disputed act."
+    }
+  ]
+}

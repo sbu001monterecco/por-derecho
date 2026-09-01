@@ -1,0 +1,50 @@
+{
+  "schema": "por-derecho.matter-identity-registry.part.v1",
+  "registry_id": "PD-SP-IDENTITY-REGISTRY-001",
+  "type": "PERSON",
+  "control_date": "2026-09-01",
+  "records": [
+    {
+      "id": "PD-SP-P-0146",
+      "type": "PERSON",
+      "name": "Eduardo Sánchez Iglesias",
+      "aliases": [
+        "Eduardo Sanchez Iglesias",
+        "Eduardo Sánchez"
+      ],
+      "caret": "Eduardo Sánchez Iglesias^",
+      "identity_resolution": "CARET_CONFIRMED",
+      "identity_sources": [
+        "BORME-A-2018-175-35, San Telmo Abogados y Economistas, S.L.P., administration record",
+        "RSM Spain official 2021 announcement identifying Eduardo Sánchez Iglesias as a SanTelmo partner joining the RSM Tax & Legal area",
+        "BORME-A-2026-99-08, RSM Spain Asesores Legales y Tributarios, S.L.P., shareholder/professional-structure record"
+      ],
+      "routes": {
+        "es": "/es/caricatura-contraste-documental/#eduardo-sanchez-iglesias",
+        "en": "/en/caricature-documentary-contrast/#eduardo-sanchez-iglesias"
+      },
+      "capacity_boundary": "The caret confirms the identity Eduardo Sánchez Iglesias. His dated roles at San Telmo and within the later RSM professional perimeter are separate sourced relationships. Identity or professional association does not establish knowledge of Sun Park facts, agreement with another actor, intent, wrongdoing or liability."
+    },
+    {
+      "id": "PD-SP-P-0147",
+      "type": "PERSON",
+      "name": "Enrique Luis Guerra Suárez",
+      "aliases": [
+        "Enrique Guerra Suárez",
+        "Enrique Guerra Suarez",
+        "Enrique Guerra"
+      ],
+      "caret": "Enrique Luis Guerra Suárez^",
+      "identity_resolution": "CARET_CONFIRMED",
+      "identity_sources": [
+        "CNMV official register for RIC Private Equity Investment Partners, S.C.R., S.A. (NIF A76335900; register no. 295), identifying GUERRA SUAREZ, ENRIQUE LUIS as secretary from 25-Oct-2019 and director general from 09-Jul-2020",
+        "RIC Private Equity official publications using the shorter public form Enrique Guerra Suárez"
+      ],
+      "routes": {
+        "es": "/es/caricatura-contraste-documental/#enrique-luis-guerra-suarez",
+        "en": "/en/caricature-documentary-contrast/#enrique-luis-guerra-suarez"
+      },
+      "capacity_boundary": "The caret confirms the identity Enrique Luis Guerra Suárez and preserves Enrique Guerra Suárez as a public-source alias. CNMV offices are date-specific. Identity and office do not by themselves establish participation in a particular transaction, knowledge of another actor's conduct, intent, coordination, wrongdoing or liability."
+    }
+  ]
+}

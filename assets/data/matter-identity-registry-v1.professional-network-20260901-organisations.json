@@ -1,0 +1,75 @@
+{
+  "schema": "por-derecho.matter-identity-registry.part.v1",
+  "registry_id": "PD-SP-IDENTITY-REGISTRY-001",
+  "type": "ORGANISATION",
+  "control_date": "2026-09-01",
+  "records": [
+    {
+      "id": "PD-SP-O-0080",
+      "type": "ORGANISATION",
+      "name": "San Telmo Abogados y Economistas, S.L.P.",
+      "aliases": [
+        "SAN TELMO ABOGADOS Y ECONOMISTAS, SOCIEDAD LIMITADA PROFESIONAL",
+        "SanTelmo Abogados y Economistas",
+        "San Telmo"
+      ],
+      "caret": "San Telmo Abogados y Economistas, S.L.P.^",
+      "identity_resolution": "CARET_CONFIRMED",
+      "registry_sheet": "GC 47681",
+      "identity_sources": [
+        "BORME-A-2018-175-35, entries 371214-371215",
+        "BORME-A-2024-132-35, entries 308340-308341"
+      ],
+      "routes": {
+        "es": "/es/caricatura-contraste-documental/#san-telmo",
+        "en": "/en/caricature-documentary-contrast/#san-telmo"
+      },
+      "capacity_boundary": "Exact legal-person identity only. The firm is distinct from individual lawyers, RSM entities and Grant Thornton entities. A person's dated office or professional-membership entry does not transfer every mandate, file, communication, knowledge, intent or liability of the firm or another professional."
+    },
+    {
+      "id": "PD-SP-O-0081",
+      "type": "ORGANISATION",
+      "name": "RSM Spain Asesores Legales y Tributarios, S.L.P.",
+      "aliases": [
+        "RSM SPAIN ASESORES LEGALES Y TRIBUTARIOS S.L.P.",
+        "RSM Spain Tax & Legal"
+      ],
+      "caret": "RSM Spain Asesores Legales y Tributarios, S.L.P.^",
+      "identity_resolution": "CARET_CONFIRMED",
+      "related_perimeter_id": "PD-SP-O-0044",
+      "registry_sheet": "B 201052",
+      "identity_sources": [
+        "BORME-A-2026-99-08, entry 252474",
+        "RSM Spain official announcement concerning the incorporation of the SanTelmo office into RSM's Tax & Legal area"
+      ],
+      "routes": {
+        "es": "/es/caricatura-contraste-documental/#rsm-spain-asesores-legales",
+        "en": "/en/caricature-documentary-contrast/#rsm-spain-legal-tax-advisers"
+      },
+      "capacity_boundary": "Exact legal-person identity only. It is related to but not interchangeable with the broader RSM Spain professional perimeter. The SanTelmo-to-RSM relationship is described using the source's integration/incorporation wording and is not silently recharacterised as a statutory merger or transfer of every historic mandate or knowledge state."
+    },
+    {
+      "id": "PD-SP-O-0082",
+      "type": "ORGANISATION",
+      "name": "Grant Thornton Canarias, S.L.",
+      "aliases": [
+        "GRANT THORNTON CANARIAS, SOCIEDAD LIMITADA",
+        "Grant Thornton Canarias, S.L.P.",
+        "GRANT THORNTON CANARIAS, SOCIEDAD LIMITADA PROFESIONAL"
+      ],
+      "caret": "Grant Thornton Canarias, S.L.^",
+      "identity_resolution": "CARET_CONFIRMED",
+      "related_perimeter_id": "PD-SP-O-0045",
+      "registry_sheet": "GC 59943",
+      "identity_sources": [
+        "BORME-A-2025-207-35, entry 473588, transformation from Grant Thornton Canarias, S.L.P. to Grant Thornton Canarias, S.L.",
+        "BORME-A-2026-152-35, entry 370778, current 2026 governance record"
+      ],
+      "routes": {
+        "es": "/es/caricatura-contraste-documental/#grant-thornton-canarias",
+        "en": "/en/caricature-documentary-contrast/#grant-thornton-canarias"
+      },
+      "capacity_boundary": "Exact current Canary legal-person identity and legal-form history only. Grant Thornton's public professional material identifies Borja Rodríguez-Batllori in its Legal team, but the exact employing/contracting Grant Thornton legal person for that individual is not inferred solely from the brand or email domain. The 2012 LPB insolvency appointment predates this current Grant Thornton Canarias legal identity and is not attributed to it."
+    }
+  ]
+}
