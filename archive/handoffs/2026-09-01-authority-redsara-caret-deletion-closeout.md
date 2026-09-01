@@ -1,7 +1,7 @@
 # Workspace handoff — authority / Red SARA caret and deletion closeout
 
-**Handoff:** `PD-WCH-20260901-AUTH-REDSARA-002`  
-**Workspace:** `PD-WS-20260901-0002`  
+**Handoff:** `PD-WCH-20260901-AUTH-REDSARA-002`
+**Workspace:** `PD-WS-20260901-0002`
 **State:** `PUBLICATION_AUTHORISED_CLOSEOUT_IN_PROGRESS`
 
 Continue from current `main`, not chat memory. Read:

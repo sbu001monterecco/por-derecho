@@ -1,8 +1,8 @@
 # Authority / Red SARA caret and thread-deletion closeout
 
-**Control:** `PD-AUTH-REDSARA-DELETE-CARET-20260901-01`  
-**Workspace:** `PD-WS-20260901-0002`  
-**Audited base:** `0f523d86853730e242d8212e98250c01ee6013db`  
+**Control:** `PD-AUTH-REDSARA-DELETE-CARET-20260901-01`
+**Workspace:** `PD-WS-20260901-0002`
+**Audited base:** `0f523d86853730e242d8212e98250c01ee6013db`
 **Publication state:** `AUTHORISED_CLOSEOUT_IN_PROGRESS`
 
 ## Independent preservation result
@@ -19,11 +19,11 @@ PR #1313 remains the underlying implementation release: reviewed head `b98f193bâ
 
 ## `^` command result
 
-**Scope:** three identity-sensitive institutions materially relied upon by this deletion closeout.  
-**Unique-reference denominator:** 3.  
-**CARET_CONFIRMED:** 1.  
-**CARET_PENDING:** 2.  
-**Coverage:** 33.33%.  
+**Scope:** three identity-sensitive institutions materially relied upon by this deletion closeout.
+**Unique-reference denominator:** 3.
+**CARET_CONFIRMED:** 1.
+**CARET_PENDING:** 2.
+**Coverage:** 33.33%.
 **Verdict:** **PARTIAL â€” NOT ALL IS^**.
 
 The official Canary Government organigram closes the exact issuing-organ identity gap:
