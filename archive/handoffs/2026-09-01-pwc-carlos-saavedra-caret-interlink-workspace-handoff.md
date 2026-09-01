@@ -6,7 +6,7 @@
 - Repository: `sbu001monterecco/por-derecho`
 - Branch: `codex/pwc-carlos-saavedra-completeness`
 - Reconciled main: `273bb621de7db5473b1223fdbc080f9c733dd038`
-- State: `PUBLICATION_AUTHORIZED_PENDING_PR_MERGE_LIVE_VERIFICATION`
+- State: `DELETION_SAFE_WITH_OPEN_WORK` — primary package `LIVE_VERIFIED`
 
 ## User instruction
 
@@ -66,3 +66,7 @@ The exact indexed LinkedIn profile `/in/carlos-saavedra-b71418a8`, PwC Spain's e
 ## Publication authority and next action
 
 Gil Marer expressly authorised publication on 1 September 2026 with the instruction `publish now`. The candidate was then fetched and reconciled against main `273bb621de7db5473b1223fdbc080f9c733dd038`; the concurrent La Laguna identity allocation was preserved, and the task/repository validators were rerun. At this checkpoint no push, pull request, remote merge or deployment had yet occurred. The authorised next sequence is push → PR → required checks → merge → Pages deployment → exact bilingual and asset readback → source-safe closeout.
+
+## Publication closeout
+
+That authorised sequence is complete. PR `#1328` merged reviewed head `a40cf773bca7dde4e37fa747ea060097a5b9693b` as `d1817de1b8613a8e0d340f1453acda99e440e5af`; Pages run `33542787869` completed successfully, and direct browser readback confirmed both canonical content lanes, Carlos's 800 × 800 portrait, the finite `32/35` result and the source-safe May/June additions. The canonical closeout is `archive/PWC_CARLOS_SAAVEDRA_PUBLICATION_CLOSEOUT_01SEP2026.md`. Open work is now limited to the evidence gaps listed above and future corrections/responses; publication is no longer pending.

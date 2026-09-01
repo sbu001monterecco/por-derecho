@@ -4,7 +4,7 @@
 
 **Control ID:** `PD-PWC-CS-MAX-MULTITRACK-RESCAN-20260901-01`
 
-**State:** `PUBLICATION_AUTHORIZED_PENDING_PR_MERGE_LIVE_VERIFICATION`
+**State:** `LIVE_VERIFIED_WITH_SOURCE_SAFE_PUBLICATION_BOUNDARIES`
 **Public routes:** `/es/pwc-canarias-carlos-saavedra-sun-park/` and `/en/pwc-canarias-carlos-saavedra-sun-park/`
 
 ## Resultado / Outcome
@@ -132,5 +132,5 @@ This is not a second backlog. Each PwC-specific request is a scoped production r
 
 - No email address, Gmail message ID, Drive/Library locator, private attachment path or privileged/confidential text is published by this control.
 - Public official URLs may be published; private evidence remains source-safe summaries until a separate authority and privacy review permits more.
-- No push, pull request, merge, deploy, external message or publication was authorised or performed by this rescan.
+- The rescan itself did not perform publication. Gil Marer later expressly authorised the source-safe package, portrait, push, PR, merge, Pages deployment and live verification; the completed sequence is recorded in `publication-manifests/pwc-carlos-saavedra-20260901.json` and `archive/PWC_CARLOS_SAAVEDRA_PUBLICATION_CLOSEOUT_01SEP2026.md`.
 - The page must continue to display `PARTIAL — NOT ALL IS^` while any of the three controlled identity perimeters remains pending.

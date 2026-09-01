@@ -46,12 +46,12 @@ jobs:
 
           BASE = 'https://sbu001monterecco.github.io/por-derecho/'
           CHECKS = [
-              ('proceedings_en', 'en/institutional-records/', ['Fourteen stable records', 'Q26/574', 'REGAGE26e00073341191']),
-              ('proceedings_es', 'es/registros-institucionales/', ['Catorce registros estables', 'Q26/574', 'REGAGE26e00073341191']),
-              ('pink496_en', 'en/pink-canary-aeat-496-2026/', ['PO 0000496/2026', 'Auto 00426/2026', 'does not resolve the legality']),
+              ('proceedings_en', 'en/institutional-records/', ['Fourteen core records', 'Q26/574', 'REGAGE26e00073341191']),
+              ('proceedings_es', 'es/registros-institucionales/', ['Catorce registros base', 'Q26/574', 'REGAGE26e00073341191']),
+              ('pink496_en', 'en/pink-canary-aeat-496-2026/', ['PO 0000496/2026', 'Order 00426/2026', 'does not resolve the legality']),
               ('pink496_es', 'es/pink-canary-aeat-496-2026/', ['PO 0000496/2026', 'Auto 00426/2026', 'No decide la legalidad']),
-              ('cuatrecasas_en', 'en/cuatrecasas-icam-ccacm-2026/', ['Proceeding boundary', '434/26', 'CCACM 193/2026']),
-              ('cuatrecasas_es', 'es/cuatrecasas-icam-ccacm-2026/', ['Límite entre procedimientos', '434/26', 'CCACM 193/2026']),
+              ('cuatrecasas_en', 'en/cuatrecasas-icam-ccacm-2026/', ["The appeal's procedural boundary", '434/26', '193/2026']),
+              ('cuatrecasas_es', 'es/cuatrecasas-icam-ccacm-2026/', ['Límite procesal de la alzada', '434/26', '193/2026']),
               ('pep_en', 'en/private-actors-pep-influence-aforamiento-related-persons/', ['Are any material private actors PEPs', 'José Daniel Acosta Matos', 'Article 231']),
               ('pep_es', 'es/actores-privados-pep-influencia-aforamiento-personas-relacionadas/', ['¿Algún actor privado material es PEP', 'Laura Patricia Acosta Matos', 'artículo 231']),
               ('actors_en', 'en/actors-parties-lawyers-representatives/', ['private-actors-pep-influence-aforamiento-related-persons', 'Francisco Mario Matos Matas']),
