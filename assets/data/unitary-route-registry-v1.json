@@ -2030,5 +2030,23 @@
     "summary": "Eight public-redacted OCR derivatives, 734 source pages, page-sequenced transcripts, omission logs, index and hashes; protected native custody.",
     "tags": ["Canary Treasury", "RIC debt", "734 pages", "Resolution 154/2026", "public-redacted OCR"],
     "aliases": ["CAN-RIC-TREAS-001–008", "RIC 2022–2025 document room"]
+  },
+  {
+    "lang": "en",
+    "path": "en/red-sara-age-filings-authority-responses/",
+    "title": "Red SARA/AGE filings and public-authority responses — controlled register",
+    "type": "institution",
+    "summary": "Source-derived public-safe register of individually controlled Red SARA/AGE filing events, receipt-listed attachment index and incoming institutional responses. A receipt or notice is not proof of substantive handling.",
+    "tags": ["Red SARA", "AGE", "REGAGE", "public-authority responses", "institutional communications", "attachment index"],
+    "aliases": ["Intervención General", "184368/2026", "497011/2026", "699645/2026", "Yaiza", "Cabildo de Lanzarote", "REGAGE26e00072883405", "SNCA", "141-2026-IRR02", "RedSARA register"]
+  },
+  {
+    "lang": "es",
+    "path": "es/registros-redsara-age-y-respuestas-autoridades/",
+    "title": "Registros Red SARA/AGE y respuestas de autoridades públicas — registro controlado",
+    "type": "institution",
+    "summary": "Registro público seguro derivado de fuente de presentaciones Red SARA/AGE individualizadas, índice de adjuntos indicados en justificantes y respuestas institucionales entrantes. Un justificante o aviso no prueba tramitación de fondo.",
+    "tags": ["Red SARA", "AGE", "REGAGE", "respuestas de autoridades", "comunicaciones institucionales", "índice de adjuntos"],
+    "aliases": ["Intervención General", "184368/2026", "497011/2026", "699645/2026", "Yaiza", "Cabildo de Lanzarote", "REGAGE26e00072883405", "SNCA", "141-2026-IRR02", "registro RedSARA"]
   }
 ]

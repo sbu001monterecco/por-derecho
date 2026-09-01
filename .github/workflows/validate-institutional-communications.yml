@@ -4,6 +4,7 @@ on:
   pull_request:
     paths:
       - 'assets/data/institutional-communications-register-v1.json'
+      - 'assets/data/redsara-age-filings-register-v1.json'
       - 'assets/data/institutional-communications-mailbox-index-v1.json'
       - 'ops/INSTITUTIONAL_COMMUNICATIONS_SCAN_CHECKPOINT.json'
       - 'archive/evidence/mf-redsara-anexo4/MF_REDSARA_REGISTRATION_INDEX_SHORT.csv'
@@ -17,12 +18,20 @@ on:
       - 'scripts/reconcile_institutional_communications.py'
       - 'scripts/build_public_mailbox_event_index.py'
       - 'scripts/validate_institutional_communications.py'
+      - 'scripts/build_redsara_age_filings_register.py'
+      - 'scripts/validate_redsara_authority_discovery.py'
       - 'scripts/test_reconcile_institutional_communications.py'
+      - 'assets/unitary-public-shell-20260818.js'
+      - 'assets/authority-communications-register-20260901.js'
+      - 'assets/authority-communications-register-20260901.css'
+      - 'en/red-sara-age-filings-authority-responses/**'
+      - 'es/registros-redsara-age-y-respuestas-autoridades/**'
       - '.github/workflows/validate-institutional-communications.yml'
   push:
     branches: [main]
     paths:
       - 'assets/data/institutional-communications-register-v1.json'
+      - 'assets/data/redsara-age-filings-register-v1.json'
       - 'assets/data/institutional-communications-mailbox-index-v1.json'
       - 'ops/INSTITUTIONAL_COMMUNICATIONS_SCAN_CHECKPOINT.json'
       - 'archive/evidence/mf-redsara-anexo4/MF_REDSARA_REGISTRATION_INDEX_SHORT.csv'
@@ -36,7 +45,14 @@ on:
       - 'scripts/reconcile_institutional_communications.py'
       - 'scripts/build_public_mailbox_event_index.py'
       - 'scripts/validate_institutional_communications.py'
+      - 'scripts/build_redsara_age_filings_register.py'
+      - 'scripts/validate_redsara_authority_discovery.py'
       - 'scripts/test_reconcile_institutional_communications.py'
+      - 'assets/unitary-public-shell-20260818.js'
+      - 'assets/authority-communications-register-20260901.js'
+      - 'assets/authority-communications-register-20260901.css'
+      - 'en/red-sara-age-filings-authority-responses/**'
+      - 'es/registros-redsara-age-y-respuestas-autoridades/**'
       - '.github/workflows/validate-institutional-communications.yml'
 
 permissions:
@@ -55,5 +71,9 @@ jobs:
         run: python scripts/reconcile_institutional_communications.py --check
       - name: Validate register, checkpoint, IDs and privacy boundary
         run: python scripts/validate_institutional_communications.py
+      - name: Validate Red SARA/AGE projection and authority-search discoverability
+        run: |
+          python scripts/build_redsara_age_filings_register.py --check
+          python scripts/validate_redsara_authority_discovery.py
       - name: Run reconciliation regression tests
         run: python -m unittest -v scripts/test_reconcile_institutional_communications.py

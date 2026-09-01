@@ -7,7 +7,10 @@ on:
       - 'assets/styles.css'
       - 'assets/share-controls-20260817.js'
       - 'assets/unitary-public-shell-20260818.*'
+      - 'assets/authority-communications-register-20260901.*'
       - 'assets/data/unitary-route-registry*.json'
+      - 'assets/data/institutional-communications-register-v1.json'
+      - 'assets/data/redsara-age-filings-register-v1.json'
       - 'assets/*navigation*.js'
       - 'assets/*reader*.js'
       - 'assets/*cross-site*.js'
@@ -19,6 +22,8 @@ on:
       - 'es/sala-control-caso/**'
       - 'en/search/**'
       - 'es/buscar/**'
+      - 'en/red-sara-age-filings-authority-responses/**'
+      - 'es/registros-redsara-age-y-respuestas-autoridades/**'
       - 'en/litigious-credit-retracto-1041-2017/**'
       - 'es/retracto-credito-litigioso-1041-2017/**'
       - 'en/cuatrecasas-sun-park/**'
@@ -39,7 +44,10 @@ on:
       - 'assets/styles.css'
       - 'assets/share-controls-20260817.js'
       - 'assets/unitary-public-shell-20260818.*'
+      - 'assets/authority-communications-register-20260901.*'
       - 'assets/data/unitary-route-registry*.json'
+      - 'assets/data/institutional-communications-register-v1.json'
+      - 'assets/data/redsara-age-filings-register-v1.json'
       - 'assets/*navigation*.js'
       - 'assets/*reader*.js'
       - 'assets/*cross-site*.js'
@@ -51,6 +59,8 @@ on:
       - 'es/sala-control-caso/**'
       - 'en/search/**'
       - 'es/buscar/**'
+      - 'en/red-sara-age-filings-authority-responses/**'
+      - 'es/registros-redsara-age-y-respuestas-autoridades/**'
       - 'en/litigious-credit-retracto-1041-2017/**'
       - 'es/retracto-credito-litigioso-1041-2017/**'
       - 'en/cuatrecasas-sun-park/**'
@@ -86,6 +96,7 @@ jobs:
       - name: Syntax, JSON and sitemap checks
         run: |
           node --check assets/unitary-public-shell-20260818.js
+          node --check assets/authority-communications-register-20260901.js
           node --check assets/share-controls-20260817.js
           node --check scripts/render_unitary_public_shell.mjs
           python3 -m json.tool assets/data/unitary-route-registry-v1.json >/dev/null

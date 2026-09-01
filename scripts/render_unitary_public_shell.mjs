@@ -16,6 +16,8 @@ const routes=[
   {name:'control-es',url:'/es/sala-control-caso/',kind:'control'},
   {name:'search-en',url:'/en/search/',kind:'search'},
   {name:'search-es',url:'/es/buscar/',kind:'search'},
+  {name:'authority-register-en',url:'/en/red-sara-age-filings-authority-responses/',kind:'authority-register'},
+  {name:'authority-register-es',url:'/es/registros-redsara-age-y-respuestas-autoridades/',kind:'authority-register'},
   {name:'dp1901-en',url:'/en/dp-1901-2026/',kind:'gateway'},
   {name:'dp1041-en',url:'/en/litigious-credit-retracto-1041-2017/',kind:'existing'},
   {name:'dp1041-es',url:'/es/retracto-credito-litigioso-1041-2017/',kind:'existing'},
@@ -47,6 +49,21 @@ async function assertSearch(page,query,pattern,label){
   if(!titles.some(t=>pattern.test(t)))throw new Error(`${label} search failed for ${query}`);
 }
 
+async function assertAuthorityRegister(page){
+  const input=page.locator('#pd-acr-search');
+  await input.waitFor({state:'visible',timeout:15000});
+  await input.fill('184368/2026');
+  await page.waitForFunction(()=>document.querySelectorAll('.pd-acr-event').length===1,null,{timeout:15000});
+  const first=page.locator('.pd-acr-event').first();
+  if(await first.getAttribute('id')!=='communication-PD-SP-EVT-0141')throw new Error('Authority register does not resolve 184368/2026 to PD-SP-EVT-0141');
+  const firstText=(await first.textContent())||'';
+  if(!/Intervenci.n General/i.test(firstText))throw new Error('Authority register omits the Intervención General office');
+  await input.fill('Intervención General');
+  await page.waitForFunction(()=>document.querySelectorAll('.pd-acr-event').length>=3,null,{timeout:15000});
+  const text=await page.locator('.pd-acr-event').allTextContents();
+  for(const reference of ['184368/2026','497011/2026','699645/2026'])if(!text.some(value=>value.includes(reference)))throw new Error(`Authority register missing Intervención response ${reference}`);
+}
+
 try{
   for(const viewport of viewports){
     const context=await browser.newContext({viewport:{width:viewport.width,height:viewport.height}});
@@ -56,7 +73,7 @@ try{
       try{
         const response=await page.goto(url,{waitUntil:'domcontentloaded',timeout:60000});
         if(!response||response.status()>=400)throw new Error(`HTTP ${response?.status()}`);
-        await page.waitForFunction(()=>document.documentElement.dataset.psrUnitaryShellVersion==='20260826a',null,{timeout:15000});
+        await page.waitForFunction(()=>document.documentElement.dataset.psrUnitaryShellVersion==='20260901a',null,{timeout:15000});
         if(route.kind==='home'){
           const progressiveRecord=page.locator('[data-audience-full-record] > details');
           if(await progressiveRecord.count())await progressiveRecord.evaluate(node=>{node.open=true;});
@@ -75,10 +92,14 @@ try{
           await assertSearch(page,'CEXP',/CEXP|Community|Comunidad|LPB/i,'CEXP');
           await assertSearch(page,'1041',/1041|retracto|litigious/i,'DP1041');
           await assertSearch(page,'Cuatrecasas',/Cuatrecasas/i,'Cuatrecasas');
+          await assertSearch(page,'184368/2026',/184368\/2026/i,'Intervención General reference');
+          if(await page.locator('.psr-search-result').count()!==1)throw new Error('Exact Intervención reference must not fall through to generic 2026 matches');
+          await assertSearch(page,'Intervención General',/Intervenci.n General/i,'Intervención General office');
           const governanceQuery=route.url.includes('/es/')?'hipotesis de captura':'capture hypothesis';
           await assertSearch(page,governanceQuery,/Governance|Gobernanza/i,'governance visual');
           await assertSearch(page,'pwc canarias carlos saavedra',/Pwc|PwC.*Canarias|Carlos Saavedra/i,'specialist-sitemap fallback');
         }
+        if(route.kind==='authority-register')await assertAuthorityRegister(page);
         if(route.kind==='existing'||route.kind==='gateway')await page.waitForSelector('.psr-utility-nav',{timeout:15000});
         if(route.kind==='ac-autos'||route.kind==='ac-thread'){
           const section=page.locator(route.section);

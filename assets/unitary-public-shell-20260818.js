@@ -1,7 +1,7 @@
 (()=>{
   'use strict';
   const d=document;
-  const VERSION='20260826a';
+  const VERSION='20260901a';
   if(window.PorDerechoUnitaryShell?.version===VERSION){window.PorDerechoUnitaryShell.init?.();return;}
   const script=d.currentScript;
   const assetBase=script?new URL('.',script.src):new URL('/por-derecho/assets/',location.origin);
@@ -20,6 +20,7 @@
     proceedings:new URL(isEs?'es/cuaderno-juridico/':'en/legal-notebook/',projectRoot).href,
     updates:new URL(isEs?'es/actualizaciones/':'en/updates/',projectRoot).href,
     about:new URL(isEs?'es/sobre-nosotros/':'en/about/',projectRoot).href,
+    authorityRegister:new URL(isEs?'es/registros-redsara-age-y-respuestas-autoridades/':'en/red-sara-age-filings-authority-responses/',projectRoot).href,
     other:new URL(isEs?'en/':'es/',projectRoot).href
   };
   const isHome=()=>new URL(location.href).pathname.replace(/\/+$/,'/')===new URL(urls.home).pathname;
@@ -62,6 +63,44 @@
     }catch{}
     return null;
   };
+  const institutionalSummary=event=>{
+    const value=isEs?event.public_summary_es:event.public_summary;
+    if(value)return value;
+    if(event.channel==='REGAGE')return isEs?'Consta un asiento de registro; el contenido sustantivo y cualquier actuación posterior exigen fuente separada.':'A registration entry is controlled; substantive content and every downstream step require a separate source.';
+    return isEs?'Consta un evento institucional de fuente controlada; su alcance se limita a lo declarado en la fuente.':'A source-controlled institutional event is recorded; its scope is limited to what the source states.';
+  };
+  const institutionalTitle=event=>{
+    const reference=event.official_reference||event.event_id;
+    return `${event.office||((isEs)?'Registro institucional':'Institutional record')} — ${reference}`;
+  };
+  const buildInstitutionalEntries=register=>{
+    const events=Array.isArray(register?.events)?register.events:[];
+    return events.map(event=>{
+      const reference=event.official_reference||'';
+      const anchor=isEs?event.canonical_anchor_es:event.canonical_anchor_en;
+      const fallback=`${isEs?'es/registros-redsara-age-y-respuestas-autoridades/':'en/red-sara-age-filings-authority-responses/'}#communication-${event.event_id}`;
+      const aliases=[reference,event.event_id,event.office,event.institution_key,event.record_type,event.channel,event.direction,...(event.matter_references||[]),...(event.legacy_evidence_ids||[])].filter(Boolean);
+      const officeAlias=/intervenci.n general/i.test(String(event.office||''))?(isEs?'Intervención General':'Intervención General'):null;
+      if(officeAlias)aliases.push(officeAlias);
+      return {
+        lang,
+        path:anchor||fallback,
+        title:institutionalTitle(event),
+        type:'institution',
+        summary:institutionalSummary(event),
+        tags:[event.event_id,reference,event.channel,event.record_type,event.direction,event.authority_tier_id,...(event.matter_references||[])].filter(Boolean),
+        aliases,
+        exactTerms:[reference,event.event_id,...(event.matter_references||[]),...(event.legacy_evidence_ids||[])].filter(Boolean)
+      };
+    });
+  };
+  const loadInstitutionalEntries=async()=>{
+    try{
+      const response=await fetch(new URL('data/institutional-communications-register-v1.json?v=20260901a',assetBase));
+      if(!response.ok)return [];
+      return buildInstitutionalEntries(await response.json());
+    }catch{return [];}
+  };
   const loadEntries=async()=>{
     let curated=[];
     for(const file of ['data/unitary-route-registry-v1.json','data/unitary-route-registry-sync-20260819.json']){
@@ -92,20 +131,22 @@
     }catch{}
     const fetched=await Promise.allSettled([...sitemapUrls].map(async url=>{const r=await fetch(url);if(!r.ok)throw new Error(`HTTP ${r.status}`);return r.text();}));
     fetched.forEach(result=>{if(result.status==='fulfilled')ingest(result.value);});
-    return curated.filter(x=>x.lang===lang);
+    const institutional=await loadInstitutionalEntries();
+    return curated.filter(x=>x.lang===lang).concat(institutional);
   };
   const scoreEntry=(entry,q)=>{
-    if(!q)return 1;
-    const n=normalize(q),tokens=n.split(/\s+/).filter(Boolean);if(!tokens.length)return 1;
+    if(!q)return {score:1,exact:false};
+    const n=normalize(q),compact=n.replace(/\s+/g,''),tokens=n.split(/\s+/).filter(Boolean);if(!tokens.length)return {score:1,exact:false};
     const title=normalize(entry.title),summary=normalize(entry.summary),path=normalize(entry.path),tags=normalize((entry.tags||[]).join(' ')),aliases=normalize((entry.aliases||[]).join(' '));
-    let score=0;if(title===n)score+=180;if(title.includes(n))score+=90;if(aliases.includes(n))score+=85;if(tags.includes(n))score+=55;if(path.includes(n))score+=45;if(summary.includes(n))score+=30;
-    tokens.forEach(t=>{if(title.includes(t))score+=24;if(aliases.includes(t))score+=22;if(tags.includes(t))score+=15;if(path.includes(t))score+=10;if(summary.includes(t))score+=8;});return score;
+    const exact=(entry.exactTerms||[]).some(term=>{const normalized=normalize(term);return normalized===n||normalized.replace(/\s+/g,'')===compact;});
+    let score=exact?1000:0;if(title===n)score+=180;if(title.includes(n))score+=90;if(aliases.includes(n))score+=85;if(tags.includes(n))score+=55;if(path.includes(n))score+=45;if(summary.includes(n))score+=30;
+    tokens.forEach(t=>{if(title.includes(t))score+=24;if(aliases.includes(t))score+=22;if(tags.includes(t))score+=15;if(path.includes(t))score+=10;if(summary.includes(t))score+=8;});return {score,exact};
   };
   const initSearch=async()=>{
     const input=d.getElementById('psr-search-input'),results=d.getElementById('psr-search-results');if(!input||!results||input.dataset.ready==='true')return;
     input.dataset.ready='true';const count=d.getElementById('psr-search-count'),form=d.getElementById('psr-search-form'),filters=[...d.querySelectorAll('[data-search-filter]')];let active='all';const entries=await loadEntries();
     const render=()=>{
-      const q=input.value.trim();const rows=entries.map(e=>({e,score:scoreEntry(e,q)})).filter(x=>x.score>0&&(active==='all'||x.e.type===active)).sort((a,b)=>b.score-a.score||a.e.title.localeCompare(b.e.title)).slice(0,80);
+      const q=input.value.trim();const scored=entries.map(e=>({e,...scoreEntry(e,q)})).filter(x=>x.score>0&&(active==='all'||x.e.type===active)).sort((a,b)=>b.score-a.score||a.e.title.localeCompare(b.e.title));const exact=scored.filter(x=>x.exact);const rows=(exact.length?exact:scored).slice(0,80);
       if(count)count.textContent=strings.count(rows.length);if(!rows.length){results.innerHTML=`<div class="psr-search-empty">${strings.empty}</div>`;return;}
       results.innerHTML=rows.map(({e})=>{const href=new URL(e.path,projectRoot).href;const meta=[e.type,...(e.tags||[]).slice(0,3)].filter(Boolean).map(x=>`<span>${escapeHtml(x)}</span>`).join('');return `<article class="psr-search-result"><h2><a href="${href}">${escapeHtml(e.title)}</a></h2>${e.summary?`<p>${escapeHtml(e.summary)}</p>`:''}<div class="psr-search-meta">${meta}</div></article>`;}).join('');
     };

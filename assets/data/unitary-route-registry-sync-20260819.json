@@ -124,5 +124,23 @@
     "summary": "Reconstrucción visual paralela del registro mayoritario/explotación y del registro disputado de la Comunidad de Propietarios; la captura es una hipótesis a probar, no una etiqueta probatoria.",
     "tags": ["Comunidad", "CEXP", "gobernanza", "actas", "2008–2022"],
     "aliases": ["dos vías", "dos registros gobernanza", "hipótesis de captura", "26 abril 2016", "filtro de voto", "mayoría", "comunidad disputada"]
+  },
+  {
+    "lang": "en",
+    "path": "en/red-sara-age-filings-authority-responses/",
+    "title": "Red SARA/AGE filings and public-authority responses — controlled register",
+    "type": "institution",
+    "summary": "Source-derived public-safe register of individually controlled Red SARA/AGE filing events, receipt-listed attachment index and incoming institutional responses.",
+    "tags": ["Red SARA", "AGE", "REGAGE", "authority response", "attachment index"],
+    "aliases": ["Intervención General", "184368/2026", "497011/2026", "699645/2026", "REGAGE", "RedSARA"]
+  },
+  {
+    "lang": "es",
+    "path": "es/registros-redsara-age-y-respuestas-autoridades/",
+    "title": "Registros Red SARA/AGE y respuestas de autoridades públicas — registro controlado",
+    "type": "institution",
+    "summary": "Registro público seguro derivado de fuente de presentaciones Red SARA/AGE individualizadas, índice de adjuntos indicados en justificantes y respuestas institucionales entrantes.",
+    "tags": ["Red SARA", "AGE", "REGAGE", "respuesta de autoridad", "índice de adjuntos"],
+    "aliases": ["Intervención General", "184368/2026", "497011/2026", "699645/2026", "REGAGE", "RedSARA"]
   }
 ]
