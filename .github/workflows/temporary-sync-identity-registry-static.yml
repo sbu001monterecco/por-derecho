@@ -31,66 +31,15 @@ jobs:
         with:
           python-version: '3.12'
 
-      - name: Migrate legacy validator and page-copy variants
-        shell: bash
-        run: |
-          python - <<'PY'
-          from pathlib import Path
-
-          validator = Path("scripts/validate_dp3205_2014_publication.py")
-          text = validator.read_text(encoding="utf-8")
-          if "registry_date_match = re.fullmatch" not in text:
-              start_marker = 'registry_control_date = registry.get("control_date") if isinstance(registry, dict) else None'
-              end_marker = 'includes(registry_es, "31 AGOSTO 2026", relative(REGISTRY_ES))'
-              start = text.find(start_marker)
-              if start < 0:
-                  raise SystemExit("legacy validator start marker not found")
-              end = text.find(end_marker, start)
-              if end < 0:
-                  raise SystemExit("legacy validator end marker not found")
-              end += len(end_marker)
-              if text[end:end + 2] == "\r\n":
-                  end += 2
-              elif text[end:end + 1] == "\n":
-                  end += 1
-              new = "\n".join([
-                  'registry_control_date = registry.get("control_date") if isinstance(registry, dict) else None',
-                  'registry_date_match = re.fullmatch(r"(\\d{4})-(\\d{2})-(\\d{2})", str(registry_control_date or ""))',
-                  'require(bool(registry_date_match), "canonical current registry control date is not a valid ISO date")',
-                  'includes(registry_en, f\'"dateModified":"{registry_control_date}"\', relative(REGISTRY_EN))',
-                  'includes(registry_es, f\'"dateModified":"{registry_control_date}"\', relative(REGISTRY_ES))',
-                  'if registry_date_match:',
-                  '    registry_year, registry_month, registry_day = (int(part) for part in registry_date_match.groups())',
-                  '    registry_en_months = {1:"JANUARY",2:"FEBRUARY",3:"MARCH",4:"APRIL",5:"MAY",6:"JUNE",7:"JULY",8:"AUGUST",9:"SEPTEMBER",10:"OCTOBER",11:"NOVEMBER",12:"DECEMBER"}',
-                  '    registry_es_months = {1:"ENERO",2:"FEBRERO",3:"MARZO",4:"ABRIL",5:"MAYO",6:"JUNIO",7:"JULIO",8:"AGOSTO",9:"SEPTIEMBRE",10:"OCTUBRE",11:"NOVIEMBRE",12:"DICIEMBRE"}',
-                  '    require(registry_month in registry_en_months, "canonical registry control date has an invalid month")',
-                  '    if registry_month in registry_en_months:',
-                  '        includes(registry_en, f"{registry_day} {registry_en_months[registry_month]} {registry_year}", relative(REGISTRY_EN))',
-                  '        includes(registry_es, f"{registry_day} {registry_es_months[registry_month]} {registry_year}", relative(REGISTRY_ES))',
-                  '',
-              ])
-              validator.write_text(text[:start] + new + text[end:], encoding="utf-8")
-
-          generator = Path("scripts/sync_matter_identity_registry_static.py")
-          generator_text = generator.read_text(encoding="utf-8")
-          legacy_pattern = r"connected with actions and an evidence graph\."
-          tolerant_pattern = r"connected (?:to institutional actions|with actions) and an evidence graph\."
-          if legacy_pattern in generator_text:
-              generator_text = generator_text.replace(legacy_pattern, tolerant_pattern, 1)
-              generator.write_text(generator_text, encoding="utf-8")
-          elif tolerant_pattern not in generator_text:
-              raise SystemExit("English JSON-LD description matcher was not found")
-          PY
-          python -m py_compile scripts/validate_dp3205_2014_publication.py
-          python -m py_compile scripts/sync_matter_identity_registry_static.py
-
       - name: Generate canonical static parity
         run: |
+          python -m py_compile scripts/sync_matter_identity_registry_static.py
           python scripts/sync_matter_identity_registry_static.py --write
           python scripts/sync_matter_identity_registry_static.py --check
 
       - name: Validate repaired publication and workspace controls
         run: |
+          python -m py_compile scripts/validate_dp3205_2014_publication.py
           python -B scripts/validate_dp3205_2014_publication.py
           python -B scripts/workspace_persistence.py validate-repository
 
@@ -107,9 +56,9 @@ jobs:
             scripts/validate_dp3205_2014_publication.py \
             scripts/sync_matter_identity_registry_static.py \
             .github/workflows/temporary-sync-identity-registry-static.yml
-          git diff --cached --exit-code && {
+          if git diff --cached --quiet; then
             echo "No generated parity changes to commit"
             exit 0
-          }
+          fi
           git commit -m "Synchronize canonical identity registry static parity"
           git push origin "HEAD:${GITHUB_REF_NAME}"
