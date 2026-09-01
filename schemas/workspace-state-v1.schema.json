@@ -1,0 +1,71 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://sbu001monterecco.github.io/por-derecho/schemas/workspace-state-v1.schema.json",
+  "title": "Por Derecho workspace state v1",
+  "type": "object",
+  "required": [
+    "schema",
+    "workspace_id",
+    "title",
+    "status",
+    "visibility_class",
+    "objective",
+    "created_at_utc",
+    "updated_at_utc",
+    "event_count",
+    "repository_state",
+    "completed",
+    "decisions",
+    "open_tasks",
+    "next_actions",
+    "do_not_infer",
+    "artifact_refs",
+    "source_refs",
+    "thread_aliases"
+  ],
+  "properties": {
+    "schema": {"const": "por-derecho.workspace-state.v1"},
+    "workspace_id": {"pattern": "^PD-WS-[0-9]{8}-[0-9]{4}$"},
+    "title": {"type": "string", "minLength": 1},
+    "status": {
+      "enum": [
+        "IN_PROGRESS",
+        "HANDOFF_READY",
+        "DELETION_SAFE",
+        "DELETION_SAFE_WITH_OPEN_WORK",
+        "PAUSED",
+        "SUPERSEDED",
+        "CLOSED"
+      ]
+    },
+    "visibility_class": {
+      "enum": [
+        "PUBLIC_SOURCE_SAFE",
+        "PUBLIC_DERIVED_SAFE",
+        "PRIVATE_WORKSPACE",
+        "CONFIDENTIAL_USER_SUPPLIED",
+        "CONNECTED_SOURCE_RESTRICTED",
+        "PUBLICATION_REVIEW_REQUIRED"
+      ]
+    },
+    "objective": {"type": "string"},
+    "created_at_utc": {"type": "string", "format": "date-time"},
+    "updated_at_utc": {"type": "string", "format": "date-time"},
+    "event_count": {"type": "integer", "minimum": 1},
+    "last_event_id": {"type": ["string", "null"]},
+    "last_event_hash": {"type": ["string", "null"], "pattern": "^[0-9a-f]{64}$"},
+    "repository_state": {"type": "object"},
+    "thread_aliases": {"type": "array", "items": {"type": "string"}},
+    "completed": {"type": "array", "items": {"type": "string"}},
+    "decisions": {"type": "array", "items": {"type": "string"}},
+    "open_tasks": {"type": "array", "items": {"type": "string"}},
+    "next_actions": {"type": "array", "items": {"type": "string"}},
+    "do_not_infer": {"type": "array", "items": {"type": "string"}},
+    "artifact_refs": {"type": "array", "items": {"type": "string"}},
+    "source_refs": {"type": "array", "items": {"type": "string"}},
+    "public_summary": {"type": ["object", "null"]},
+    "publication_state": {"type": "object"},
+    "tool_failures": {"type": "array", "items": {"type": "string"}},
+    "notes": {"type": "string"}
+  }
+}
