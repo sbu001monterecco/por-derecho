@@ -72,7 +72,9 @@
   "evidence_queue": {
     "path": "assets/data/justice-professionals-evidence-production-queue-v1.json",
     "control_id": "PD-SP-JUSTICE-PROFESSIONALS-EVIDENCE-QUEUE-20260901-01",
-    "actor_specific_tasks": ["JP-EQ-001", "JP-EQ-002", "JP-EQ-003", "JP-EQ-009"]
+    "actor_specific_tasks": ["JP-EQ-001", "JP-EQ-002", "JP-EQ-003", "JP-EQ-009"],
+    "publication_state": "LIVE_VERIFIED",
+    "publication_closeout": "archive/RICARDO_MOSTEYRIN_JUSTICE_PROFESSIONALS_CARET_LIVE_CLOSEOUT_01SEP2026.md"
   },
   "knowledge_boundary": "Public specialist training and a date-specific professional title are relevant competence context. They do not prove receipt or reading of a particular filing, matter-specific knowledge, intent, coordination, wrongdoing, causation or criminal liability.",
   "open_production": [
