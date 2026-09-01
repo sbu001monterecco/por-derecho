@@ -55,3 +55,4 @@ Sitemap: https://sbu001monterecco.github.io/por-derecho/sitemap-concurso36-contr
 Sitemap: https://sbu001monterecco.github.io/por-derecho/sitemap-canary-ric-public-debt.xml
 Sitemap: https://sbu001monterecco.github.io/por-derecho/sitemap-treasury-transparency-7-2026.xml
 Sitemap: https://sbu001monterecco.github.io/por-derecho/sitemap-hotel-platform-media.xml
+Sitemap: https://sbu001monterecco.github.io/por-derecho/sitemap-la-laguna-proceedings.xml
