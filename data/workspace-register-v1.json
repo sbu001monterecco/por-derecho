@@ -57,7 +57,7 @@
     {
       "workspace_id": "PD-WS-20260901-0003",
       "title": "Automatic workspace persistence runtime and private-vault implementation",
-      "status": "HANDOFF_READY_RECONCILED_PR_OPEN",
+      "status": "HANDOFF_READY",
       "current_handoff_id": "PD-WCH-20260901-AWP-RUNTIME-001",
       "handoff_path": "archive/handoffs/2026-09-01-automatic-workspace-persistence-runtime-handoff.md",
       "machine_handoff_path": "archive/handoffs/2026-09-01-automatic-workspace-persistence-runtime-handoff.json",
@@ -79,14 +79,22 @@
         "root_alias": "Por Derecho Private Workspaces",
         "workspace_alias": "PD-WS-20260901-0003 — Automatic Workspace Persistence Runtime",
         "permission_state_at_creation": "OWNER_ONLY_SHARED_FALSE",
+        "permission_state_reverified_at_utc": "2026-09-01T15:18:09Z",
+        "permission_state_reverified": "OWNER_ONLY_SHARED_FALSE_EXPECTED_FIVE_SUBFOLDERS_LOCATED",
         "exact_locator_publication": "WITHHELD",
         "filesystem_mount_state": "NOT_CONNECTED",
         "seed_filename": "PD-WS-20260901-0003-seed-20260901.zip",
-        "seed_sha256": "5b38b80efef14bab05f8d54160c792b24a0cedc610129453a92655f06fd2f742",
-        "seed_bytes": 10803,
-        "seed_state": "VALIDATED_UPLOADED_PRIVATE"
+        "seed_sha256": "84db4a21ca7fb5cfd871029380a373a6b917420af92bdf9992dded07621479e5",
+        "seed_bytes": 14298,
+        "seed_event_count": 5,
+        "seed_state": "VALIDATED_UPLOADED_PRIVATE",
+        "superseded_intermediate_seed_sha256": "5b38b80efef14bab05f8d54160c792b24a0cedc610129453a92655f06fd2f742",
+        "superseded_intermediate_seed_bytes": 10803
       },
       "implementation_pr": 1317,
+      "implementation_merge_sha": "ca501751410bb3f0ad928c2b16d6d885551e7ea3",
+      "current_main_sha_checked": "3977178d0d01a11ab349c81e0f834322f46d5da2",
+      "closeout_record_state": "BRANCH_ONLY",
       "superseded_pr": 1316,
       "next_target_mode": "LIVE_PRIVATE_FILESYSTEM_OR_DRIVE_ADAPTER_THEN_TRUE_EVENT_SOURCED_CLIENT"
     }

@@ -3,8 +3,11 @@
 **Handoff ID:** `PD-WCH-20260901-AWP-RUNTIME-001`  
 **Workspace ID:** `PD-WS-20260901-0003`  
 **Date:** 1 September 2026  
-**Continuity status:** `HANDOFF_READY_RECONCILED_PR_PENDING`  
+**Continuity status:** `HANDOFF_READY`
 **Repository:** `sbu001monterecco/por-derecho`
+
+**Authoritative baseline checked:** `3977178d0d01a11ab349c81e0f834322f46d5da2` (`origin/main`, 1 September 2026)
+**Closeout record state:** `BRANCH_ONLY` on `codex/pd-ws-20260901-0003-continue`; no push, PR or merge is represented.
 
 ## 1. Objective
 
@@ -54,8 +57,16 @@ Reconciled implementation branch:
 - `agent/workspace-persistence-runtime-reconciled-20260901`
 - constructed from current main `1099e48a83b8f81cd652734df5e5012336985e62`
 - includes the tested runtime plus current-main authority workspace state
+- merged through PR #1317 at `ca501751410bb3f0ad928c2b16d6d885551e7ea3`
 
-A successor thread must re-check current `main` and the reconciled PR before writing.
+Reconciliation on 1 September 2026:
+
+- fetched `origin/main`: `3977178d0d01a11ab349c81e0f834322f46d5da2`;
+- PR #1317 merge is an ancestor of that current main;
+- the merged runtime tests and read-only repository audit both pass; and
+- this source-safe closeout correction remains branch-only until separately merged.
+
+A successor thread must re-check current `main` and any later closeout PR before writing.
 
 ## 4. Implemented runtime
 
@@ -150,7 +161,7 @@ A real private destination structure exists in connected Google Drive under thes
   - `04 Artifacts and Attachments`
   - `05 Publication Manifests`
 
-Creation/readback showed the root as owned by `sbu001@monterecco.com`, `shared: false`, with owner permission only.
+Creation/readback showed the root as owned by `sbu001@monterecco.com`, `shared: false`, with owner permission only. Read-only metadata verification on 1 September 2026 reconfirmed the root and canonical `0003` workspace folder as `shared: false`, with one owner permission, and located all five expected subfolders.
 
 Exact Drive IDs and URLs are deliberately absent from the public repository. A connected successor thread should search the exact aliases and re-read permission metadata before using the vault.
 
@@ -159,13 +170,13 @@ Exact Drive IDs and URLs are deliberately absent from the public repository. A c
 The private `01 State and Handoffs` folder contains:
 
 - `PD-WS-20260901-0003-seed-20260901.zip`
-- bytes: `10803`
-- SHA-256: `5b38b80efef14bab05f8d54160c792b24a0cedc610129453a92655f06fd2f742`
+- bytes: `14298`
+- SHA-256: `84db4a21ca7fb5cfd871029380a373a6b917420af92bdf9992dded07621479e5`
 - validation: `PASS`
 
-The archive contains a private workspace marker, `workspace.json`, append-only events, `state.json`, `handoff.md`, empty source/artifact/attachment registers and a private Drive locator. The exact locator file must never be committed to public `por-derecho`.
+The archive contains a private workspace marker, `workspace.json`, a five-event append-only chain, `state.json`, `handoff.md`, empty source/artifact/attachment registers and a private Drive locator. A private in-memory validation on 1 September 2026 passed workspace identity, sequence, content-hash, event-hash, previous-event-hash and state/last-event reconciliation. The exact locator file must never be committed to public `por-derecho`.
 
-The earlier private seed using provisional ID `0002` was replaced in place; successor work must use only canonical `0003`.
+Drive revision metadata records the collision-correction sequence without requiring public locator or revision IDs: provisional `0002` snapshot (`8748` bytes), intermediate `0002` snapshot (`10803` bytes), and current canonical `0003` snapshot (`14298` bytes). The previously published `10803`-byte SHA-256 `5b38b80efef14bab05f8d54160c792b24a0cedc610129453a92655f06fd2f742` is preserved as the superseded intermediate fingerprint; successor work must use only the current canonical `0003` fingerprint above.
 
 ### Storage boundary
 
@@ -206,9 +217,9 @@ No real raw ChatGPT transcript, Gmail/Drive source corpus or private attachment 
 
 ## 8. Open work
 
-1. Complete checks and merge the reconciled implementation PR; record the exact merge SHA.
+1. Merge this source-safe closeout correction and record its exact merge SHA; the runtime implementation itself is already merged through PR #1317.
 2. Connect the runtime to a durable filesystem vault or implement a Drive/object-store adapter.
-3. Initialise the live private `PD-WS-20260901-0003` event chain at that destination, using the seed only as a controlled starting snapshot.
+3. Initialise or restore the live private `PD-WS-20260901-0003` event chain at that destination, using the seed only as a controlled starting snapshot.
 4. Optionally obtain and privately import an authorised ChatGPT data export.
 5. Review the clustering queue and map related historical threads to stable workspaces.
 6. Build the true request-path OpenAI workbench only after an explicit credential decision.
@@ -244,6 +255,6 @@ A successor thread must not infer that:
 
 ## 12. Deletion-safety test
 
-Current result: **HANDOFF READY; FINAL DELETION-SAFE CLOSEOUT PENDING RECONCILED PR MERGE.**
+Current result: **HANDOFF READY; IMPLEMENTATION MERGED; SOURCE-SAFE CLOSEOUT CORRECTION BRANCH-ONLY.**
 
-The substantive design, code, private-vault aliases, canonical workspace correction, seed hash, failures, limitations and open work are durably captured. Final status will become `DELETION_SAFE_WITH_OPEN_WORK` when the reconciled PR is merged and exact closeout references are recorded.
+The substantive design, code and canonical workspace correction are merged. The private vault holds the validated current seed. The corrected current-main baseline, implementation merge SHA, live permission readback and superseding seed fingerprint are captured on the closeout branch. Final status becomes `DELETION_SAFE_WITH_OPEN_WORK` when this source-safe closeout correction is merged and its exact merge reference is recorded.

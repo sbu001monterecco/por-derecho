@@ -2,8 +2,9 @@
 
 **Current workspace:** `PD-WS-20260901-0003`  
 **Current continuation pointer:** `PD-WCH-20260901-AWP-RUNTIME-001`  
-**Status:** `HANDOFF_READY_RECONCILED_PR_OPEN`  
-**Current implementation PR:** `#1317`  
+**Status:** `HANDOFF_READY`
+
+**Implementation state:** PR `#1317` merged to `main` at `ca501751410bb3f0ad928c2b16d6d885551e7ea3`; the source-safe closeout correction is branch-only until separately merged.
 **Topic:** automatic workspace persistence runtime and private-vault implementation  
 **Pointer semantics:** most recently checkpointed/default workspace; **not exclusive** and not a lock over concurrent workspaces.
 
@@ -49,7 +50,7 @@ A branch-local sequential ID is provisional. Before merge, re-read current `data
 
 ## Current private-vault boundary
 
-For `PD-WS-20260901-0003`, an owner-only/not-shared Google Drive vault structure and a validated private seed snapshot exist under the aliases recorded in the handoff. Exact private locators are intentionally withheld from public Git. The Python runtime is not yet connected to that Drive folder as a live filesystem/API event sink, and no real historical ChatGPT export has been imported.
+For `PD-WS-20260901-0003`, the owner-only/not-shared Google Drive vault structure and current validated private seed snapshot were re-read on 1 September 2026 under the aliases recorded in the handoff. The current seed is the canonical `0003` revision; the earlier public fingerprint is preserved as a superseded intermediate snapshot in the detailed handoff. Exact private locators are intentionally withheld from public Git. The Python runtime is not yet connected to that Drive folder as a live filesystem/API event sink, and no real historical ChatGPT export has been imported.
 
 ## New-thread bootstrap
 
