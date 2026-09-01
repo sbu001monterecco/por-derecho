@@ -134,13 +134,15 @@
       "repository_path": "assets/media/pd-dma-20260901-0007-es-web.jpg",
       "public_url": "/assets/media/pd-dma-20260901-0007-es-web.jpg",
       "mime": "image/jpeg",
-      "width_px": 400,
-      "height_px": 500,
-      "bytes": 32556,
-      "sha256": "6a6b510b1279acb8dcbf5db9d84ec4125fca405fdd689a6a466e99241635525d",
+      "width_px": 300,
+      "height_px": 375,
+      "bytes": 16634,
+      "sha256": "01a95ed09611cafd9327f58ac224f90a47e293c9935757981a60582655ad3dbf",
+      "github_blob_sha": "3ea0dbb553a2861a2902e95b5a0322c64d109cbc",
       "provenance": "Downscaled and compressed display derivative of PD-DMA-20260901-0003-ES^; no textual or compositional edit.",
       "publication_status": "PUBLIC_WEB_DERIVATIVE",
-      "factual_status": "DERIVATIVE_INHERITS_PARENT_BOUNDARIES"
+      "factual_status": "DERIVATIVE_INHERITS_PARENT_BOUNDARIES",
+      "repository_mirror": true
     }
   ],
   "public_register_routes": {
