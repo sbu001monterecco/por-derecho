@@ -103,12 +103,12 @@ def main() -> int:
         es_identity = require_markers(
             ROOT / "es/registro-identidad-materia/index.html",
             [
-                'content="Registro operativo de 336 IDs inmutables',
-                'data-static-registry-counts="336-157-83-11-42-43"',
-                'data-registry-stat="TOTAL">336',
-                'data-registry-stat="PERSON">157',
+                'content="Registro operativo de 339 IDs inmutables',
+                'data-static-registry-counts="339-160-83-11-42-43"',
+                'data-registry-stat="TOTAL">339',
+                'data-registry-stat="PERSON">160',
                 'data-registry-stat="ORGANISATION">83',
-                '"name":"Total","value":336',
+                '"name":"Total","value":339',
                 '../../ops/CURRENT_UNITARY_STATE.json',
             ],
             ['Los 159 IDs', 'data-registry-stat="TOTAL">159', '159 identidades canónicas'],
@@ -116,12 +116,12 @@ def main() -> int:
         en_identity = require_markers(
             ROOT / "en/matter-identity-registry/index.html",
             [
-                'content="Operational Por Derecho register of 336 immutable IDs',
-                'data-static-registry-counts="336-157-83-11-42-43"',
-                'data-registry-stat="TOTAL">336',
-                'data-registry-stat="PERSON">157',
+                'content="Operational Por Derecho register of 339 immutable IDs',
+                'data-static-registry-counts="339-160-83-11-42-43"',
+                'data-registry-stat="TOTAL">339',
+                'data-registry-stat="PERSON">160',
                 'data-registry-stat="ORGANISATION">83',
-                '"name":"Total","value":336',
+                '"name":"Total","value":339',
                 '../../ops/CURRENT_UNITARY_STATE.json',
             ],
             ['The 159 IDs', 'data-registry-stat="TOTAL">159', '159 canonical identities'],
@@ -158,8 +158,8 @@ def main() -> int:
             "invalid preparation SHA",
         )
         require(
-            state["identity_registry"]["counts"] == CONTROL_PLANE_SNAPSHOT_COUNTS,
-            "dated unitary-state identity counts drift",
+            state["identity_registry"]["counts"] == CURRENT_CANONICAL_COUNTS,
+            "current unitary-state identity counts drift",
         )
         require(
             state["identity_registry"]["last_live_verified_counts"]
