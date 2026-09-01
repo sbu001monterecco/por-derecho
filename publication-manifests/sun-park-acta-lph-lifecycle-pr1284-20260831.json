@@ -1,0 +1,89 @@
+{
+  "schema_version": "1.0.0",
+  "publication_id": "PD-PUB-ACTA-LPH-PR1284-20260831",
+  "owner": "Por Derecho / Project Sun Rock",
+  "current_state": "LIVE_VERIFIED",
+  "status": "LIVE_VERIFIED_THROUGH_DEPLOYED_DESCENDANT",
+  "expected_routes": {
+    "es": [
+      "es/comunidad-instrumentalizacion/sala-documental-actas/control-lph-ciclo-juntas/index.html"
+    ],
+    "en": [
+      "en/community-instrumentalisation/acta-document-room/meeting-lifecycle-lph-control/index.html"
+    ]
+  },
+  "implementation_pr": 1284,
+  "implementation_merge": "b505c7a81756205bfdecc1ead12ee7b9762dc1e7",
+  "merge_sha": "b505c7a81756205bfdecc1ead12ee7b9762dc1e7",
+  "implementation_parent": "7cdb356d5f2b6180027719c1aa80ac8b22f77435",
+  "deployment": {
+    "pages_run_id": 33446723239,
+    "pages_run_number": 1347,
+    "deployed_descendant": "fcea60ca338ebd53eb5fc07539f59ab357997e05",
+    "status": "success",
+    "ancestry_verified": true
+  },
+  "deployment_evidence": "GitHub Pages run 33446723239 (run 1347) completed successfully for deployed descendant fcea60ca338ebd53eb5fc07539f59ab357997e05; Git ancestry confirms PR #1284 merge b505c7a81756205bfdecc1ead12ee7b9762dc1e7 is included.",
+  "live_urls": [
+    "https://sbu001monterecco.github.io/por-derecho/es/comunidad-instrumentalizacion/sala-documental-actas/control-lph-ciclo-juntas/",
+    "https://sbu001monterecco.github.io/por-derecho/en/community-instrumentalisation/acta-document-room/meeting-lifecycle-lph-control/"
+  ],
+  "live_verification_evidence": {
+    "status": "PASS",
+    "verified_at": "2026-09-01",
+    "pages_run_id": 33446723239,
+    "source_merge_sha": "b505c7a81756205bfdecc1ead12ee7b9762dc1e7",
+    "deployed_descendant": "fcea60ca338ebd53eb5fc07539f59ab357997e05",
+    "ancestry_verified": true,
+    "readback_result": "Four historic PR #1284 resources returned HTTP 200 and exactly matched their recorded SHA-256 values before the later local PD-UCF-20260901-01 edits."
+  },
+  "validation": {
+    "evidence": [
+      "scripts/validate_acta_lph_lifecycle.py: 122/122 canonical lifecycle references and nine critical LPH events passed.",
+      "scripts/validate_acta_meeting_lineage.py: 23 controlled events and 46 bilingual pages passed.",
+      "Historic production readback: 4/4 resources matched exact SHA-256 values on 2026-09-01."
+    ]
+  },
+  "current_readback": {
+    "date": "2026-09-01",
+    "scope": "historic PR1284 resources before PD-UCF-20260901-01 local edits",
+    "checked": 4,
+    "matched": 4,
+    "resources": [
+      {
+        "path": "es/comunidad-instrumentalizacion/sala-documental-actas/control-lph-ciclo-juntas/index.html",
+        "http_status": 200,
+        "sha256": "5f37ae241aa5b7bf2d18811ce2a8bc5df2e6ca6fb37cad28a7ce03078c547702"
+      },
+      {
+        "path": "en/community-instrumentalisation/acta-document-room/meeting-lifecycle-lph-control/index.html",
+        "http_status": 200,
+        "sha256": "e611b991df44078f6599f287665fecce37bd44c4ed50f9bb3ee22099dd1d728b"
+      },
+      {
+        "path": "assets/acta-document-room-20260822.css",
+        "http_status": 200,
+        "sha256": "1eb96e2318d470aa5048ead2d2cd5308a96feea23e3249453bccb485fd7a2884"
+      },
+      {
+        "path": "evidence/community/actas/meeting-lineage-index-v1.json",
+        "http_status": 200,
+        "sha256": "756eea6a32d8388813171ce82f559052a6ec1f6fb0473e00d7b2bc924b14839a"
+      }
+    ]
+  },
+  "denominators": {
+    "controlled_events": 23,
+    "bilingual_event_pages": 46,
+    "canonical_lifecycle_objects": 122,
+    "critical_lph_events": 9
+  },
+  "boundaries": [
+    "Live presence does not establish every historic ACTA exists or has been located.",
+    "Evidence statuses do not establish LPH validity, invalidity, nullity, falsity, crime or guilt.",
+    "The C1 to C2 sequence is attributed and does not prove legal succession, common command, agreement or collective liability.",
+    "Downstream ACTA reliance remains open without document-specific transmission, verification, adoption and use.",
+    "PD-UCF-20260901-01 is a later local release and is not included in this publication proof."
+  ],
+  "closeout": "archive/SUN_PARK_ACTA_LPH_PR1284_LIVE_DEPLOYMENT_CLOSEOUT_01SEP2026.md"
+}

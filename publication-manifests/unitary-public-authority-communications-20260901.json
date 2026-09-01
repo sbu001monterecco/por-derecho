@@ -1,0 +1,190 @@
+{
+  "schema": "por-derecho.publication-manifest.v1",
+  "publication_id": "PD-SP-UNITARY-PUBLIC-AUTHORITY-COMMS-20260901-01",
+  "owner": "Por Derecho evidence governance",
+  "control_date": "2026-09-01",
+  "manifest_version": 1,
+  "title": "Unitary public-authority communications and ACTA interconnectivity",
+  "purpose": "Govern the bounded public release of the authority-communications register, ACTA authority graph and criminal-first multi-track reader while preserving predecessor live attestations as immutable historical observations.",
+  "current_state": "PREPARED_PENDING_MERGE",
+  "state": "PUBLICATION_AUTHORISED_VALIDATION_PENDING",
+  "source_base_sha": "00bcadd858e588dc3dd378fd7b3a630fad18c4f8",
+  "head_branch": "codex/unitary-criminal-first-gap-closure-20260901",
+  "authorization": {
+    "repository_and_website_publication": true,
+    "external_contact_or_delivery": false,
+    "email_action": "HOLD_NOT_AUTHORISED",
+    "filing_or_portal_action": "HOLD_NOT_AUTHORISED"
+  },
+  "expected_routes": {
+    "es": [
+      "es/ingenieria-inversa-criminal-unitaria/index.html",
+      "es/actas-comunidad-autoridades-publicas/index.html"
+    ],
+    "en": [
+      "en/unitary-criminal-reverse-engineering/index.html",
+      "en/community-actas-public-authorities/index.html"
+    ]
+  },
+  "expected_source_files": [
+    "archive/PROCEEDINGS_MASTER_REGISTER.csv",
+    "assets/data/institutional-communications-register-v1.json",
+    "assets/data/unitary-multitrack-criminal-first-gap-closure-v1.json",
+    "assets/data/community-acta-authority-interconnectivity-v1.json",
+    "assets/data/proceedings-master-public-v1.json",
+    "assets/data/fiscalia-proceedings-interconnectivity-v1.json",
+    "assets/unitary-multitrack-gap-closure-20260901.js",
+    "assets/unitary-multitrack-gap-closure-20260901.css",
+    "ops/PUBLIC_AUTHORITY_COMMUNICATIONS_SCAN_CHECKPOINT_20260901.json",
+    "scripts/reconcile_institutional_communications.py",
+    "scripts/build_community_acta_authority_interconnectivity.py",
+    "scripts/build_unitary_multitrack_gap_closure.py",
+    "scripts/build_fiscalia_proceedings_interconnectivity.py",
+    "scripts/validate_fiscalia_proceedings_interconnectivity.py",
+    "scripts/audit_proceedings_interconnectivity_map.py",
+    "docs/deletion-audits/2026-09-01-unitary-public-authority-communications-continuity.md"
+  ],
+  "predecessor_live_attestation": {
+    "manifest": "publication-manifests/case-prism-substantive-gap-closure-20260831.json",
+    "publication_id": "PD-SP-CASE-PRISM-EXACT-ACTIONABILITY-20260831-01",
+    "pull_request": 1282,
+    "merge_sha": "d8940e5a7e2d9073a8117b2342e20205bfab7653",
+    "state": "LIVE_VERIFIED_WITH_ACCEPTED_PUBLICATION_BOUNDARY_GAP",
+    "rule": "This is an immutable observation: historical HTTP, byte, deployment and browser results remain true only for the predecessor merge. Later lawful changes must be registered here; they must not rewrite the predecessor observation or be rejected merely because current bytes differ."
+  },
+  "pull_request": {
+    "number": 1305,
+    "url": "https://github.com/sbu001monterecco/por-derecho/pull/1305",
+    "status": "OPEN"
+  },
+  "reviewed_head_sha": null,
+  "reviewed_tree_sha": null,
+  "merge_sha": null,
+  "merge_tree_sha": null,
+  "controlled_scope": {
+    "canonical_communication_events": 313,
+    "authority_communication_events": 19,
+    "new_authority_event_ids": 17,
+    "reused_authority_event_ids": 2,
+    "authority_tiers": [
+      "ES_LOCAL_MUNICIPAL",
+      "ES_ISLAND_CABILDO",
+      "ES_CANARY_AUTONOMOUS",
+      "ES_STATE",
+      "EU_SUPRANATIONAL"
+    ],
+    "acta_packages": 20,
+    "acta_files": 49,
+    "authority_groups": 6,
+    "interconnection_axes": 7,
+    "metadata_discovery": {
+      "mailbox_lane_hits_before_cross_lane_deduplication": 8256,
+      "mailbox_unique_cross_lane_items": 5514,
+      "drive_lane_hits_before_cross_lane_deduplication": 29503,
+      "drive_unique_cross_lane_items": 326,
+      "meaning": "Finite paginated metadata discovery for the recorded queries, not merits review, universal completeness, authorship proof or proof of institutional handling."
+    }
+  },
+  "handling_state_ladder": [
+    "transmission",
+    "registration",
+    "delivery",
+    "routing",
+    "incorporation",
+    "examination",
+    "verification_or_rejection",
+    "adoption",
+    "decision_or_use",
+    "effect",
+    "causation",
+    "benefit_or_loss"
+  ],
+  "historical_transition": {
+    "policy": "FAIL_CLOSED_SUCCESSOR_COVERAGE",
+    "changed_resources": [
+      {
+        "resource": "archive/PROCEEDINGS_MASTER_REGISTER.csv",
+        "predecessor_live_sha256": "8caa65a0aaefa2b568be263869d7749b79fd8e7eb3b00ab568c7cabdc29bb801",
+        "release_sha256": "03cae1ab3e846b52136e2cb583d79f67d223a0a07546930a2adf81f4947165a5",
+        "reason": "Adds the controlled X-INT public-authority communications route; the operational CSV remains outside the intended public surface and not deletion-safe."
+      },
+      {
+        "resource": "assets/data/proceedings-master-public-v1.json",
+        "predecessor_live_sha256": "17aa8f8c3d59a833df95092019877d301b8b7cdd7878a1fa7b3aa978c7666fe9",
+        "release_sha256": "840799af2a833058ee0ace184966c01ad862016c98a5d344c4e446b2276b0325",
+        "reason": "Regenerates the allowlisted public projection from the updated canonical register."
+      },
+      {
+        "resource": "assets/data/fiscalia-proceedings-interconnectivity-v1.json",
+        "predecessor_live_sha256": "8f7e1a4c92d779f79638261eaeea4bc801c4f52a234ac7592a4f75c4c001a956",
+        "release_sha256": "a48f041f76e8b238a61d982e302d2f8de337e5ccb6a2f50971c345d53641f2ba",
+        "reason": "Refreshes canonical source digests while preserving the bounded 296-event Fiscalía denominator; non-Fiscalía authority events remain outside that graph."
+      },
+      {
+        "resource": "assets/data/community-acta-authority-interconnectivity-v1.json",
+        "predecessor_live_sha256": "38bffa9c694d6e7f7277177a56523d213747b9970fd806fe2440f9f5abc2e725",
+        "release_sha256": "6980b865e034a632595ceb49452bd64bd422fe0df37f21b4bf4a6dea6cf7217f",
+        "reason": "Expands the ACTA graph to the five-level public-authority taxonomy and 19 canonical communications without inferring handling or criminal responsibility."
+      }
+    ]
+  },
+  "release_critical_sha256": {
+    "assets/data/institutional-communications-register-v1.json": "04eda9a473d07419c1d1d0941b9123d1497f7329366998a9f4cf76221910bbed",
+    "assets/data/unitary-multitrack-criminal-first-gap-closure-v1.json": "0176883e51cbb760169838e0b1b2149a1df65c5cbafe13ad19cb4434f73f1f50",
+    "assets/data/community-acta-authority-interconnectivity-v1.json": "6980b865e034a632595ceb49452bd64bd422fe0df37f21b4bf4a6dea6cf7217f",
+    "assets/data/proceedings-master-public-v1.json": "840799af2a833058ee0ace184966c01ad862016c98a5d344c4e446b2276b0325",
+    "assets/data/fiscalia-proceedings-interconnectivity-v1.json": "a48f041f76e8b238a61d982e302d2f8de337e5ccb6a2f50971c345d53641f2ba",
+    "assets/unitary-multitrack-gap-closure-20260901.js": "bc4e5c2540dcc9b17cebf1c7551dc85727c98e578781da1866793d4a54266cde",
+    "assets/unitary-multitrack-gap-closure-20260901.css": "3461e1bce64ee75c0b631ec6f090b03b65cf14d166be6457b9ce4cd0aa97b165",
+    "en/unitary-criminal-reverse-engineering/index.html": "03e8f4083dd0a4823608a0f28779b6e1922d91b8566f650bd0d64768c6ee8b12",
+    "es/ingenieria-inversa-criminal-unitaria/index.html": "e4f073d427f4a3d68d6c4ecc3398f9410b94964e421ad5e63611c88d46bf7ee0",
+    "en/community-actas-public-authorities/index.html": "9d983a2a58cf994ef0d5c442cffe672d67f824d035b9cba2314c674e4e217402",
+    "es/actas-comunidad-autoridades-publicas/index.html": "6baa05c145e6461ccaadb3c4c6cb32c36c3e880738b25006ff498adb1fb104a5",
+    "ops/PUBLIC_AUTHORITY_COMMUNICATIONS_SCAN_CHECKPOINT_20260901.json": "cead64dfc04f5a32cb39cc28b292b61e93e261a36aa8d2753f4ecc4e7cc60352"
+  },
+  "evidential_boundaries": [
+    "CRIMINAL_HYPOTHESIS_IS_DIRECT_ATTRIBUTED_AND_FALSIFIABLE_NOT_AN_ADJUDICATED_FINDING",
+    "CRIMINAL_RESPONSIBILITY_DOES_NOT_PROPAGATE_ACROSS_ACTORS_DOCUMENTS_AUTHORITIES_OR_TRACKS",
+    "COMMUNICATION_EVENT_PROVES_ONLY_THE_FIELDS_AND_HANDLING_STATE_SUPPORTED_BY_ITS_CANONICAL_SOURCE",
+    "RECEIPT_OR_REGISTRATION_DOES_NOT_PROVE_EXAMINATION_ADOPTION_DECISION_CAUSATION_OR_BENEFIT",
+    "PUBLIC_AUTHORITY_TIER_DOES_NOT_ESTABLISH_COMPETENCE_DUTY_OR_MERITS",
+    "SPANISH_STATE_EU_FUNDS_BODIES_ARE_NOT_RELABELED_AS_EU_SUPRANATIONAL",
+    "CARET_REFERENCES_IDENTIFY_CONTROLLED_EVIDENCE_OBJECTS_ONLY_AND_NEVER_SUBSTITUTE_FOR_EVENT_IDS",
+    "NO_PROVIDER_IDS_SUBJECTS_ADDRESSES_PRIVATE_URLS_OR_PRIVATE_ATTACHMENTS_ARE_PUBLISHED"
+  ],
+  "identity_and_citation": {
+    "canonical_evidence_reference": "One controlled evidence object, one canonical ^ reference.",
+    "canonical_communication_reference": "PD-SP-EVT-#### plus a stable public anchor.",
+    "aliases": "Aliases resolve to exactly one canonical event and never create a second event.",
+    "negative_rule": "A ^ reference establishes identity and provenance only; it does not prove authorship, authority, legality, handling, agreement, causation or criminal responsibility."
+  },
+  "validation": {
+    "status": "LOCAL_GREEN_REMOTE_PENDING",
+    "required": [
+      "deterministic communications reconciliation and schema validation",
+      "deterministic public proceedings, ACTA authority and unitary gap-closure builds",
+      "ACTA LPH and meeting-lineage controls",
+      "Fiscalía denominator isolation and source-digest parity",
+      "historical-attestation successor coverage",
+      "publication integrity, preservation, privacy and audience checks",
+      "bilingual desktop and mobile browser smoke",
+      "exact reviewed-head CI before merge",
+      "exact merge-SHA Pages deployment and byte readback before LIVE_VERIFIED"
+    ]
+  },
+  "deployment_evidence": null,
+  "live_verification_evidence": null,
+  "verification": {
+    "source_prepared": true,
+    "exact_head_ci_green": false,
+    "merged": false,
+    "pages_deployed": false,
+    "live_http_readback": false,
+    "deletion_safe": false
+  },
+  "publication_closeout": {
+    "status": "PENDING_MERGE_DEPLOYMENT_AND_EXACT_LIVE_READBACK",
+    "qualification": "Repository and website publication are authorised. External delivery, email, filing and portal actions remain outside this authorization."
+  },
+  "continuity_record": "docs/deletion-audits/2026-09-01-unitary-public-authority-communications-continuity.md"
+}

@@ -16,7 +16,7 @@
     "unique_regage_references": 75
   },
   "checkpoint_id": "PD-SP-MF-SCAN-CHECKPOINT-001",
-  "control_date": "2026-08-31",
+  "control_date": "2026-09-01",
   "incremental_refresh_2026_08_31": {
     "already_indexed_in_scope_events": 7,
     "excluded_automated_repository_notifications": 4,
@@ -63,8 +63,41 @@
     "provider_or_storage_identifier_published": false,
     "status": "PERSISTED_PRIVATE_CUSTODY"
   },
+  "public_authority_scan": {
+    "canonical_authority_event_count": 19,
+    "checkpoint_path": "ops/PUBLIC_AUTHORITY_COMMUNICATIONS_SCAN_CHECKPOINT_20260901.json",
+    "checkpoint_sha256": "cead64dfc04f5a32cb39cc28b292b61e93e261a36aa8d2753f4ecc4e7cc60352",
+    "drive_unique_documents_across_lanes": 326,
+    "existing_event_ids_reused": [
+      "PD-SP-EVT-0004",
+      "PD-SP-EVT-0014"
+    ],
+    "gmail_unique_messages_across_lanes": 5514,
+    "new_event_ids": [
+      "PD-SP-EVT-0141",
+      "PD-SP-EVT-0142",
+      "PD-SP-EVT-0143",
+      "PD-SP-EVT-0144",
+      "PD-SP-EVT-0145",
+      "PD-SP-EVT-0146",
+      "PD-SP-EVT-0147",
+      "PD-SP-EVT-0148",
+      "PD-SP-EVT-0149",
+      "PD-SP-EVT-0150",
+      "PD-SP-EVT-0151",
+      "PD-SP-EVT-0152",
+      "PD-SP-EVT-0153",
+      "PD-SP-EVT-0154",
+      "PD-SP-EVT-0155",
+      "PD-SP-EVT-0156",
+      "PD-SP-EVT-0157"
+    ],
+    "provider_locators_or_exact_subjects_published": false,
+    "scope_status": "BOUNDED_METADATA_CENSUS_COMPLETE_ITEM_LEVEL_MERITS_REVIEW_OPEN",
+    "universal_completeness_claim": false
+  },
   "register_path": "assets/data/institutional-communications-register-v1.json",
-  "register_sha256": "987a9ac370cf4425cc88ab9cfa3a42fc774e3af0862c42d65a8e8fd111cced30",
+  "register_sha256": "04eda9a473d07419c1d1d0941b9123d1497f7329366998a9f4cf76221910bbed",
   "schema": "por-derecho.institutional-communications-scan-checkpoint.v1",
   "source_required_and_normalisation_gates": [
     "22 later RedSARA/AGE records remain aggregate-only; no synthetic individual rows were created.",

@@ -10,6 +10,7 @@
     "control_date",
     "scope",
     "denominator_control",
+    "authority_scan_control",
     "source_controls",
     "private_locator_boundary",
     "id_namespace_authority",
@@ -62,7 +63,9 @@
         "mailbox_route_not_publicly_attested_rows",
         "curated_source_proved_events",
         "mailbox_transport_events",
-        "event_rows_total"
+        "event_rows_total",
+        "public_authority_communication_events",
+        "new_public_authority_communication_events"
       ],
       "properties": {
         "wider_regage_records_reported": {"const": 97},
@@ -83,7 +86,35 @@
         "mailbox_route_not_publicly_attested_rows": {"const": 81},
         "curated_source_proved_events": {"type": "integer", "minimum": 0},
         "mailbox_transport_events": {"const": 156},
-        "event_rows_total": {"type": "integer", "minimum": 75}
+        "event_rows_total": {"type": "integer", "minimum": 75},
+        "public_authority_communication_events": {"const": 19},
+        "new_public_authority_communication_events": {"const": 17}
+      }
+    },
+    "authority_scan_control": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "checkpoint_path",
+        "checkpoint_sha256",
+        "scope_status",
+        "gmail_unique_messages_across_lanes",
+        "drive_unique_documents_across_lanes",
+        "canonical_authority_events",
+        "new_event_ids",
+        "existing_reused_event_ids",
+        "universal_completeness_claim"
+      ],
+      "properties": {
+        "checkpoint_path": {"const": "ops/PUBLIC_AUTHORITY_COMMUNICATIONS_SCAN_CHECKPOINT_20260901.json"},
+        "checkpoint_sha256": {"$ref": "#/$defs/sha256"},
+        "scope_status": {"const": "BOUNDED_METADATA_CENSUS_COMPLETE_ITEM_LEVEL_MERITS_REVIEW_OPEN"},
+        "gmail_unique_messages_across_lanes": {"const": 5514},
+        "drive_unique_documents_across_lanes": {"const": 326},
+        "canonical_authority_events": {"const": 19},
+        "new_event_ids": {"$ref": "#/$defs/eventIds"},
+        "existing_reused_event_ids": {"$ref": "#/$defs/eventIds"},
+        "universal_completeness_claim": {"const": false}
       }
     },
     "source_controls": {
@@ -184,6 +215,35 @@
       "minItems": 1,
       "items": {"type": "string", "minLength": 1}
     },
+    "eventIds": {
+      "type": "array",
+      "items": {"type": "string", "pattern": "^PD-SP-EVT-[0-9]{4}$"},
+      "uniqueItems": true
+    },
+    "masterIds": {
+      "type": "array",
+      "items": {"type": "string", "pattern": "^[A-Z][A-Z0-9-]{2,40}$"},
+      "uniqueItems": true
+    },
+    "handlingState": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["transmission", "registration", "delivery", "routing", "incorporation", "examination", "verification_or_rejection", "adoption", "decision_or_use", "effect", "causation", "benefit_or_loss"],
+      "properties": {
+        "transmission": {"type": "string", "minLength": 1},
+        "registration": {"type": "string", "minLength": 1},
+        "delivery": {"type": "string", "minLength": 1},
+        "routing": {"type": "string", "minLength": 1},
+        "incorporation": {"type": "string", "minLength": 1},
+        "examination": {"type": "string", "minLength": 1},
+        "verification_or_rejection": {"type": "string", "minLength": 1},
+        "adoption": {"type": "string", "minLength": 1},
+        "decision_or_use": {"type": "string", "minLength": 1},
+        "effect": {"type": "string", "minLength": 1},
+        "causation": {"type": "string", "minLength": 1},
+        "benefit_or_loss": {"type": "string", "minLength": 1}
+      }
+    },
     "sourceIntegrity": {
       "type": "object",
       "additionalProperties": false,
@@ -231,7 +291,6 @@
         "event_date",
         "direction",
         "channel",
-        "institution_id",
         "office",
         "official_reference",
         "matter_references",
@@ -268,6 +327,10 @@
         },
         "channel": {"type": "string", "minLength": 1},
         "institution_id": {"type": "string", "pattern": "^PD-SP-I-[0-9]{4}$"},
+        "institution_key": {"type": "string", "pattern": "^[A-Z][A-Z0-9_]{2,80}$"},
+        "institution_caret_state": {"enum": ["CARET_CONFIRMED", "CARET_PENDING", "UNRESOLVED"]},
+        "authority_tier_id": {"enum": ["ES_LOCAL_MUNICIPAL", "ES_ISLAND_CABILDO", "ES_CANARY_AUTONOMOUS", "ES_STATE", "EU_SUPRANATIONAL", "MULTI_TIER", "UNRESOLVED"]},
+        "tier_resolution_state": {"enum": ["CONFIRMED", "PENDING"]},
         "office": {"type": "string", "minLength": 1},
         "recipient_dir3": {"type": "string", "pattern": "^[A-ZJ][A-Z0-9]{8}$"},
         "official_reference": {"type": "string", "minLength": 1},
@@ -291,6 +354,7 @@
         "subject_digest_sha256": {"$ref": "#/$defs/sha256"},
         "subject_label_status": {"const": "FORMAL_REGISTRATION_LABEL_IN_CANONICAL_SOURCE_NOT_REPEATED_HERE"},
         "public_summary": {"type": "string", "minLength": 1},
+        "public_summary_es": {"type": "string", "minLength": 1},
         "public_match_key": {"type": "string", "pattern": "^MF-MAIL-[A-Z0-9-]{1,80}$"},
         "transport_state": {
           "enum": ["SENT_EMAIL_LOCATED", "RECEIVED_EMAIL_LOCATED", "SELF_ARCHIVE_CONTROL_NOT_AN_INSTITUTIONAL_SEND", "DRAFT_NOT_SENT"]
@@ -302,6 +366,42 @@
         "source_pages": {"type": "string", "pattern": "^[0-9]+-[0-9]+$"},
         "annex_count": {"type": "integer", "minimum": 0},
         "matter_references": {
+          "type": "array",
+          "items": {"type": "string", "minLength": 1},
+          "uniqueItems": true
+        },
+        "master_ids": {"$ref": "#/$defs/masterIds"},
+        "context_master_ids": {"$ref": "#/$defs/masterIds"},
+        "master_link_state": {"enum": ["RESOLVED", "PARTIAL", "OPEN"]},
+        "authority_stage_ids": {
+          "type": "array",
+          "items": {"type": "string", "pattern": "^AUTH-UCF-[0-9]{3}$"},
+          "uniqueItems": true
+        },
+        "track_ids": {
+          "type": "array",
+          "items": {"type": "string", "pattern": "^T[0-9]{2}$"},
+          "uniqueItems": true
+        },
+        "gap_ids": {
+          "type": "array",
+          "items": {"type": "string", "pattern": "^PD-GAP-UCF-[0-9]{3}$"},
+          "uniqueItems": true
+        },
+        "evidence_classes": {
+          "type": "array",
+          "items": {"enum": ["DOC", "HIP", "OPEN", "NOTICE", "CONTRARY", "ADVERSE", "GAP"]},
+          "uniqueItems": true
+        },
+        "handling_state": {"$ref": "#/$defs/handlingState"},
+        "canonical_anchor_es": {"type": "string", "pattern": "^es/.+#communication-PD-SP-EVT-[0-9]{4}$"},
+        "canonical_anchor_en": {"type": "string", "pattern": "^en/.+#communication-PD-SP-EVT-[0-9]{4}$"},
+        "public_derivative_state": {"const": "PUBLIC_SAFE_MINIMISED_DERIVATIVE"},
+        "command_caret_audit": {"const": "EVENT_REGISTERED_IDENTITY_CARET_SEPARATELY_CONTROLLED"},
+        "criminal_relevance_state": {"enum": ["NOTICE_ONLY", "OPEN_HYPOTHESIS_LINK"]},
+        "criminal_responsibility_transfer": {"const": false},
+        "source_batch_id": {"const": "PD-SP-AUTH-COMMS-SCAN-20260901"},
+        "legacy_evidence_ids": {
           "type": "array",
           "items": {"type": "string", "minLength": 1},
           "uniqueItems": true
@@ -327,9 +427,27 @@
         "event_sequence": {"type": "string", "minLength": 1},
         "evidence_state": {"$ref": "#/$defs/evidenceState"},
         "proves": {"$ref": "#/$defs/nonEmptyStrings"},
-        "does_not_prove": {"$ref": "#/$defs/nonEmptyStrings"}
+        "does_not_prove": {"$ref": "#/$defs/nonEmptyStrings"},
+        "proves_es": {"type": "string", "minLength": 1},
+        "does_not_prove_es": {"type": "string", "minLength": 1}
       },
       "allOf": [
+        {
+          "if": {"required": ["authority_tier_id"]},
+          "then": {
+            "required": [
+              "institution_key", "institution_caret_state", "tier_resolution_state", "master_ids", "context_master_ids",
+              "master_link_state", "authority_stage_ids", "track_ids", "gap_ids", "evidence_classes", "handling_state",
+              "public_summary_es", "proves_es", "does_not_prove_es", "canonical_anchor_es", "canonical_anchor_en",
+              "public_derivative_state", "command_caret_audit", "criminal_relevance_state",
+              "criminal_responsibility_transfer", "source_batch_id", "legacy_evidence_ids"
+            ]
+          }
+        },
+        {
+          "if": {"required": ["institution_caret_state"], "properties": {"institution_caret_state": {"const": "CARET_CONFIRMED"}}},
+          "then": {"required": ["institution_id"]}
+        },
         {
           "if": {"properties": {"cohort": {"const": "BASELINE_REDSARA_ANEXO4_75"}}},
           "then": {

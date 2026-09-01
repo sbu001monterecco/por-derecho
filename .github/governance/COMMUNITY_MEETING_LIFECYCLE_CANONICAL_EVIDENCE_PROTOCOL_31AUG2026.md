@@ -95,3 +95,13 @@ Do not say that an incentive, licence, RIC investment, FEDER operation, refurbis
 **Document-specific transmission rule:** downstream reliance is not closed until the actual transmitted or cited document, sender/capacity, recipient, date, institutional verification/adoption and resulting decision or use are identified.
 
 `D-MIXED` and `D-OPEN` are evidence statuses. They are not persons, organisations or criminal perimeters and must not be visually or textually described as guilty. A D item may support an actor-specific hypothesis only after the specific act, capacity, source and connection are proved.
+
+## 8. Unitary criminal-first control and canonical gap register
+
+Apply `.github/governance/UNITARY_MULTI_TRACK_CRIMINAL_FIRST_PROSECUTORIAL_FORENSIC_PROTOCOL_01SEP2026.md` (`PD-UCF-20260901-01`) whenever a meeting, ACTA, claimed Community authority or post-meeting use is connected to insolvency, access/security, adjudication/title, refurbishment/operation, RIC/RICPE, regional incentives, FEDER/ERDF, Yaiza, Cabildo, SAIP, benefit or recovery.
+
+- The 23-event, 122-object lifecycle model remains the canonical ACTA evidence source. It is not copied into a competing criminal register.
+- The unitary surface may link the same object into several legal/economic tracks, but each connector retains its own `DOC`, `HIP`, `OPEN`, `NOTICE`, `CONTRARY`, `ADVERSE` or `GAP` class.
+- Every material acquisition/production obligation belongs in `PD-GAP-UCF-001`–`014` or an explicitly versioned successor. Do not maintain a second unnumbered gap list.
+- A stable evidence ID and bilingual anchor—not a caret—makes an ACTA, communication or material gap canonical. `^` remains an identity-only CAEPR marker.
+- Criminal/prosecutorial analysis is presented first as an attributed, falsifiable hypothesis, followed by civil/LPH and the other distinct outputs. It never converts an LPH concern into criminal guilt.
