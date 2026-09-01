@@ -88,6 +88,15 @@
     document.head.appendChild(interlink);
   };
 
+  const loadAcostaHotelPlatformMedia = () => {
+    if (document.querySelector('script[data-acosta-hotel-platform-media-loader]')) return;
+    const media = document.createElement('script');
+    media.src = new URL('acosta-hotel-platform-media-20260901.js?v=20260901a', current.src).href;
+    media.async = false;
+    media.setAttribute('data-acosta-hotel-platform-media-loader', '20260901a');
+    document.head.appendChild(media);
+  };
+
   // Preserve the complete site loader that existed before this visual update.
   const prior = document.createElement('script');
   prior.src = new URL('site-pre-treasury-154-hq-20260828.js?v=20260828a', current.src).href;
@@ -97,15 +106,8 @@
   prior.addEventListener('error', loadTreasuryVisual, { once: true });
   document.head.appendChild(prior);
 
-  // Documentary Cuatrecasas/LinkedIn insert. The asset self-limits to the
-  // bilingual Cuatrecasas Sun Park pages and is idempotent on repeated loads.
   loadCuatrecasasLinkedInRecord();
-
-  // Four Green Houses / One Red Hotel visual. The asset self-limits to the
-  // bilingual Cuatrecasas Sun Park pages and links to the existing book route.
   loadCuatrecasasBookCover();
-
-  // Reciprocal navigation from every ACTA room and the 2022 adjudication
-  // reconstruction into the controlled ACTA/authority interconnectivity view.
   loadActaAuthorityInterlink();
+  loadAcostaHotelPlatformMedia();
 })();
