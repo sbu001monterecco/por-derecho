@@ -127,3 +127,9 @@ The matrix must contain every person in the current 48-person census exactly onc
 The production queue is finite at nine open tasks. Each task must identify its canonical missing-evidence ID, current evidence, required primary source, lawful acquisition route, upgrade condition and non-proof boundary. A task closes only when its primary source is controlled and the resulting person/act/date/capacity is reconciled across CAEPR, the canonical missing-evidence register and any affected bilingual public surface.
 
 This queue is a continuity and evidence-control instrument. It authorises no filing, service, email, evidence request or third-party contact; each external act requires separate current authority.
+
+## 11. Live control observation — 1 September 2026
+
+The occurrence matrix and finite queue release is `LIVE_VERIFIED` through PR #1301, merge `024fa29aa64500ce46559e3cf2b1a02ba609a0ae`, exact-merge Pages run #1363 and 19/19 no-cache exact-byte public readback. The controlling technical evidence and deletion-safety qualification are recorded in [`archive/RICARDO_MOSTEYRIN_JUSTICE_PROFESSIONALS_CARET_LIVE_CLOSEOUT_01SEP2026.md`](../../archive/RICARDO_MOSTEYRIN_JUSTICE_PROFESSIONALS_CARET_LIVE_CLOSEOUT_01SEP2026.md).
+
+`LIVE_VERIFIED` changes only the publication lifecycle. It does not promote the identity verdict: 45 of 48 named people remain confirmed, three notarial literals remain pending and the exact named-person Property Registry denominator remains zero. All nine evidence tasks remain open until their individual completion rules are met.

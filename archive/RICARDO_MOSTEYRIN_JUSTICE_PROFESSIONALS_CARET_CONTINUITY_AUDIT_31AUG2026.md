@@ -135,3 +135,20 @@ The successor control adds [`assets/data/justice-professionals-evidence-producti
 - preserves `PARTIAL — NOT ALL IS^` until every person in a revised finite denominator is confirmed.
 
 **Successor-artifact state at preparation:** `PREPARED_PENDING_MERGE`. The already deployed source history does not prove that this new queue, its bilingual links or its closeout record are live. A post-merge Pages run and no-cache route/resource readback remain required before this continuation may be promoted to `LIVE_VERIFIED` or classified `DELETION-SAFE WITH OPEN EVIDENCE`.
+
+## 11. Observed live closure — 1 September 2026
+
+The successor gate above has now completed:
+
+- PR [#1301](https://github.com/sbu001monterecco/por-derecho/pull/1301), reviewed head `7c6d9c20a971a7bb615974f5fa5cd809d9109841` and reviewed tree `f2d36ad08967f09adbec1fbc38e290ca74caa203`;
+- merge `024fa29aa64500ce46559e3cf2b1a02ba609a0ae`;
+- Pages run [33466780778 / #1363](https://github.com/sbu001monterecco/por-derecho/actions/runs/33466780778), completed `success` on that exact merge SHA; and
+- no-cache readback of 16 HTML routes and three public JSON controls: 19/19 HTTP 200 and exact merged-source byte equality after one bounded retry of a transient 503.
+
+The detailed route hashes, attribution limits, open evidence and deletion-safety dimensions are preserved in [`RICARDO_MOSTEYRIN_JUSTICE_PROFESSIONALS_CARET_LIVE_CLOSEOUT_01SEP2026.md`](RICARDO_MOSTEYRIN_JUSTICE_PROFESSIONALS_CARET_LIVE_CLOSEOUT_01SEP2026.md).
+
+**Current release state:** `LIVE_VERIFIED`.
+
+**Continuity classification:** `DELETION-SAFE WITH OPEN EVIDENCE`.
+
+The classification does not change the substantive denominator: 48 named, 45 confirmed, three pending and zero exact named Property Registry people. The nine-task evidence queue remains open, and no filing, service, email, evidence request or third-party contact was performed or authorised by this publication chain.

@@ -1,13 +1,16 @@
 {
   "schema": "por-derecho.justice-professionals-caret-publication.v1",
   "publication_id": "PD-SP-RICARDO-JUSTICE-PROFESSIONALS-CARET-20260831-01",
-  "current_state": "PREPARED_PENDING_MERGE",
+  "current_state": "LIVE_VERIFIED",
+  "attestation_artifact_state_at_creation": "PREPARED_PENDING_MERGE",
+  "attested_release_state": "LIVE_VERIFIED",
+  "top_level_current_state_meaning": "The top-level state attests the PR #1301 target release. This successor attestation artifact requires its own merge, Pages deployment and public readback before its publication can be reported as complete.",
   "owner": "Gil Marer / Por Derecho",
   "control_date": "2026-08-31",
   "repository": "sbu001monterecco/por-derecho",
   "preparation_base_sha": "e313c13bf46464015a72025dcd9264e61ec33107",
-  "branch": "codex/ricardo-mosteyrin-justice-professionals-caret-20260831",
-  "merge_sha": "aefc9dc4dcc59f4f5d6eaaf87c580c6aae235029",
+  "branch": "codex/ricardo-justice-professionals-live-closeout-20260901",
+  "merge_sha": "024fa29aa64500ce46559e3cf2b1a02ba609a0ae",
   "expected_routes": {
     "es": [
       "es/ricardo-de-mosteyrin-sampalo/index.html",
@@ -33,6 +36,7 @@
   "expected_source_files": [
     ".github/governance/NAMED_JUSTICE_PROFESSIONAL_CARET_COVERAGE_PROTOCOL_31AUG2026.md",
     "archive/RICARDO_MOSTEYRIN_JUSTICE_PROFESSIONALS_CARET_CONTINUITY_AUDIT_31AUG2026.md",
+    "archive/RICARDO_MOSTEYRIN_JUSTICE_PROFESSIONALS_CARET_LIVE_CLOSEOUT_01SEP2026.md",
     "archive/CONTINUOUS_MAINTENANCE_MATRIX.md",
     "assets/data/justice-professionals-caret-audit-v1.json",
     "assets/data/justice-professionals-evidence-production-queue-v1.json",
@@ -53,6 +57,58 @@
     "assets/data/justice-professionals-evidence-production-queue-v1.json",
     "assets/data/ricardo-de-mosteyrin-sampalo-v1.json"
   ],
+  "validation": {
+    "evidence": [
+      "The PR #1301 reviewed head passed the publication-integrity and audience-experience gates before merge.",
+      "The exact reviewed tree passed the operational identity registry, repository preservation, justice-professionals specialist and governance-compatibility validators locally.",
+      "The 48-person census, 45/3 identity split, zero exact named Registry-person denominator and nine open production tasks were machine-reconciled before publication."
+    ]
+  },
+  "deployment_evidence": {
+    "workflow": "pages build and deployment",
+    "pages_run_id": 33466780778,
+    "pages_run_number": 1363,
+    "url": "https://github.com/sbu001monterecco/por-derecho/actions/runs/33466780778",
+    "head_sha": "024fa29aa64500ce46559e3cf2b1a02ba609a0ae",
+    "head_tree": "f2d36ad08967f09adbec1fbc38e290ca74caa203",
+    "status": "completed",
+    "conclusion": "success",
+    "completed_at_utc": "2026-09-01T03:36:47Z"
+  },
+  "live_urls": [
+    "https://sbu001monterecco.github.io/por-derecho/es/ricardo-de-mosteyrin-sampalo/",
+    "https://sbu001monterecco.github.io/por-derecho/es/registro-identidad-profesionales-justicia/",
+    "https://sbu001monterecco.github.io/por-derecho/es/calificacion-concurso-36-2012-vidas-paralelas/",
+    "https://sbu001monterecco.github.io/por-derecho/es/calificacion-rpl-2523-mapa-prueba/",
+    "https://sbu001monterecco.github.io/por-derecho/es/dp-1901-2026/",
+    "https://sbu001monterecco.github.io/por-derecho/es/fiscalia-inspeccion-exp-gub-745-2026/",
+    "https://sbu001monterecco.github.io/por-derecho/es/implementacion-notarial-protocolo-457/",
+    "https://sbu001monterecco.github.io/por-derecho/es/implementacion-registral-finca-por-finca/",
+    "https://sbu001monterecco.github.io/por-derecho/en/ricardo-de-mosteyrin-sampalo/",
+    "https://sbu001monterecco.github.io/por-derecho/en/justice-professionals-identity-register/",
+    "https://sbu001monterecco.github.io/por-derecho/en/insolvency-classification-parallel-lives/",
+    "https://sbu001monterecco.github.io/por-derecho/en/calificacion-rpl-2523-evidence-map/",
+    "https://sbu001monterecco.github.io/por-derecho/en/dp-1901-2026/",
+    "https://sbu001monterecco.github.io/por-derecho/en/public-prosecution-inspection-exp-gub-745-2026/",
+    "https://sbu001monterecco.github.io/por-derecho/en/notarial-implementation-protocol-457/",
+    "https://sbu001monterecco.github.io/por-derecho/en/land-registry-implementation-property-by-property/",
+    "https://sbu001monterecco.github.io/por-derecho/assets/data/justice-professionals-caret-audit-v1.json",
+    "https://sbu001monterecco.github.io/por-derecho/assets/data/justice-professionals-evidence-production-queue-v1.json",
+    "https://sbu001monterecco.github.io/por-derecho/assets/data/ricardo-de-mosteyrin-sampalo-v1.json"
+  ],
+  "live_verification_evidence": {
+    "state": "LIVE_BYTES_VERIFIED",
+    "verified_at_utc": "2026-09-01T03:39:05Z",
+    "source_publication_sha": "024fa29aa64500ce46559e3cf2b1a02ba609a0ae",
+    "source_tree_sha": "f2d36ad08967f09adbec1fbc38e290ca74caa203",
+    "verified_html_count": 16,
+    "verified_public_json_count": 3,
+    "verified_total_count": 19,
+    "http_200_for_all": true,
+    "byte_identical_for_all": true,
+    "transient_observation": "The first parallel English RPL evidence-map request returned HTTP 503; bounded retry returned HTTP 200 and exact source bytes.",
+    "boundary": "This proves technical publication of the PR #1301 target release. It does not close the nine evidence tasks, establish a personal act by interlinking, prove an allegation or legal conclusion, or authorise contact, filing or service."
+  },
   "identity_scope": {
     "named_people": 48,
     "confirmed": 45,
@@ -74,26 +130,73 @@
     "A generic Property Registry office or function is not converted into a named person."
   ],
   "publication_closeout": {
-    "pull_request": 1292,
-    "reviewed_head_sha": "68537741dbedba2874df35f6036f1cef85db57fa",
-    "merge_sha": "aefc9dc4dcc59f4f5d6eaaf87c580c6aae235029",
+    "status": "LIVE_VERIFIED_WITH_OPEN_EVIDENCE",
+    "source_release": {
+      "pull_request": 1292,
+      "reviewed_head_sha": "68537741dbedba2874df35f6036f1cef85db57fa",
+      "merge_sha": "aefc9dc4dcc59f4f5d6eaaf87c580c6aae235029"
+    },
     "count_synchronisation": {
       "pull_request": 1294,
       "reviewed_head_sha": "5f0eeba81b8bc1ce5c0b2a3acce56e911b3820d7",
       "merge_sha": "77a3d30b8cf5d6a13d3a527caafa8972e058d5f8"
     },
+    "evidence_queue_release": {
+      "pull_request": 1301,
+      "reviewed_head_sha": "7c6d9c20a971a7bb615974f5fa5cd809d9109841",
+      "reviewed_tree_sha": "f2d36ad08967f09adbec1fbc38e290ca74caa203",
+      "merge_sha": "024fa29aa64500ce46559e3cf2b1a02ba609a0ae",
+      "pages_run_id": 33466780778,
+      "pages_run_number": 1363,
+      "pages_conclusion": "success",
+      "pages_completed_at": "2026-09-01T03:36:47Z"
+    },
     "latest_observed_deployed_descendant_before_queue_release": "e9e1380e810bf44c75dda1ed391f484972e867ba",
-    "pages_run_id": 33453675351,
-    "pages_run_number": 1360,
-    "pages_conclusion": "success",
     "superseded_pages_run": {
       "run_id": 33448645852,
       "run_number": 1353,
       "conclusion": "cancelled",
       "classification": "SUPERSEDED_BY_NEWER_MAIN_NOT_RELEASE_FAILURE"
     },
-    "live_verification": null,
-    "successor_queue_state": "PREPARED_PENDING_MERGE",
-    "next_state_gate": "The evidence queue, bilingual links and closeout update require their own pull request, merge, Pages deployment and no-cache live readback before this manifest may claim LIVE_VERIFIED."
+    "live_verification": {
+      "verified_at": "2026-09-01T03:39:05Z",
+      "base_url": "https://sbu001monterecco.github.io/por-derecho/",
+      "html_routes_http_200_exact_bytes": 16,
+      "public_json_resources_http_200_exact_bytes": 3,
+      "total_http_200_exact_bytes": 19,
+      "result": "LIVE_VERIFIED",
+      "transient_observation": "The first parallel request to en/calificacion-rpl-2523-evidence-map/index.html returned HTTP 503; bounded retry returned HTTP 200 and the exact source hash. No persistent route or byte mismatch remained.",
+      "sha256": {
+        "es/ricardo-de-mosteyrin-sampalo/index.html": "62758412d1bdef34a7813fe8baa93f16317d4f156b394d11ac0d0a31e8449a3b",
+        "es/registro-identidad-profesionales-justicia/index.html": "e262d428f2f00cc343001cce2ca00259f8b0afc61c29f719a812e7e85660daee",
+        "es/calificacion-concurso-36-2012-vidas-paralelas/index.html": "fe5ffc26a788917ed8626540d2189e51f4e348a7334053118250bf50db5bb6f9",
+        "es/calificacion-rpl-2523-mapa-prueba/index.html": "f8077117f07efe481066fddce592ac359377d0bec6b693f35c4b7a1186df05b3",
+        "es/dp-1901-2026/index.html": "216ef4817fc7e19e369ae9aad2b55a3c40b864f80f60d3cc9921c3f2107e4f0d",
+        "es/fiscalia-inspeccion-exp-gub-745-2026/index.html": "65d1dbe6af4b6f1079dbe08918c1755f21aea8fb96a4a161e35131123ba16d41",
+        "es/implementacion-notarial-protocolo-457/index.html": "b5833cd0509e307a9cd5e842839273faf129f5ec1a404b88752cc2f054670679",
+        "es/implementacion-registral-finca-por-finca/index.html": "a207569b6b8760532b06fcc5230efc11926cd69041c84e324328ec8be96ef165",
+        "en/ricardo-de-mosteyrin-sampalo/index.html": "fc5421c27443746c7d89a016332bcddf5e04f64b03b658a09a1a4e481eaa523b",
+        "en/justice-professionals-identity-register/index.html": "0deba74fa297b55e502f6b601319e9dcaabb4e6bc8383322e7f1c33ea65acc5f",
+        "en/insolvency-classification-parallel-lives/index.html": "b4c35eafd3973b1d1b8ca57ff7bc0b24870f8cace6eca0cf93421de99c1aff44",
+        "en/calificacion-rpl-2523-evidence-map/index.html": "9170484c899e4471b62ab70949cb77543c5554c6fef24da3cff43e9825a081b1",
+        "en/dp-1901-2026/index.html": "4b41065ae536cc72e995b50bdc784e6288050daf43a231bc8f386ef11bec7dde",
+        "en/public-prosecution-inspection-exp-gub-745-2026/index.html": "26b244eedb2681afbb67a0790e3d57e15e96b95fe808bdd6a659a6188edcea0c",
+        "en/notarial-implementation-protocol-457/index.html": "f24be54a9b263733fb09bb38d268dcc9e99e6e083ef674ea86ae242a9862d5cd",
+        "en/land-registry-implementation-property-by-property/index.html": "0df2fdb09611c23f3a8924f6ecebea04a5149f586c4472fee9969b842ffdd7b8",
+        "assets/data/justice-professionals-caret-audit-v1.json": "3c2a4a58a2bfe733d12f4db0c108223cf6c030a9a3cd294574bd962803b7e626",
+        "assets/data/justice-professionals-evidence-production-queue-v1.json": "06d4741c3c704a6513388ae38a6acf45f0c3026ef45c02efe84065dab0ff71e0",
+        "assets/data/ricardo-de-mosteyrin-sampalo-v1.json": "a7020b2769b12ed28be3cb7dbb485debefcdcbe904a8dbb96e7afb951722d93d"
+      }
+    },
+    "successor_queue_state": "LIVE_VERIFIED",
+    "continuity_classification": "DELETION_SAFE_WITH_OPEN_EVIDENCE",
+    "open_evidence": {
+      "queue_state": "OPEN_FINITE_QUEUE",
+      "open_tasks": 9,
+      "identity_verdict": "PARTIAL_NOT_ALL_IS_CARET",
+      "qualification": "Technical publication and byte readback do not close the primary-evidence tasks or prove an allegation or legal conclusion."
+    },
+    "closeout_record": "archive/RICARDO_MOSTEYRIN_JUSTICE_PROFESSIONALS_CARET_LIVE_CLOSEOUT_01SEP2026.md",
+    "next_state_gate": "Future evidence changes must update the existing queue task and CAEPR record, preserve bilingual parity and receive a new merge/Pages/readback attestation."
   }
 }

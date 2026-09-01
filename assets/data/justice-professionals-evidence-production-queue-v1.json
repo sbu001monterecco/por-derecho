@@ -3,6 +3,8 @@
   "control_id": "PD-SP-JUSTICE-PROFESSIONALS-EVIDENCE-QUEUE-20260901-01",
   "control_date": "2026-09-01",
   "status": "OPEN_FINITE_QUEUE",
+  "publication_state": "LIVE_VERIFIED",
+  "publication_closeout": "archive/RICARDO_MOSTEYRIN_JUSTICE_PROFESSIONALS_CARET_LIVE_CLOSEOUT_01SEP2026.md",
   "scope": "Exact people already present in the named justice-professionals caret census, plus bounded primary-source work that may identify additional Fiscalía, judicial, LAJ, notarial or Property Registry people in the linked proceedings.",
   "source_census": "assets/data/justice-professionals-caret-audit-v1.json",
   "registry_authority": "assets/data/matter-identity-registry-v1.json",
