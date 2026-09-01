@@ -2,7 +2,8 @@
 
 **Current workspace:** `PD-WS-20260901-0003`  
 **Current continuation pointer:** `PD-WCH-20260901-AWP-RUNTIME-001`  
-**Status:** `DELETION_SAFE_WITH_OPEN_WORK`  
+**Status:** `HANDOFF_READY_RECONCILED_PR_OPEN`  
+**Current implementation PR:** `#1317`  
 **Topic:** automatic workspace persistence runtime and private-vault implementation  
 **Pointer semantics:** most recently checkpointed/default workspace; **not exclusive** and not a lock over concurrent workspaces.
 
