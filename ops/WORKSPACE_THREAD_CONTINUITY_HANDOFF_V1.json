@@ -1,0 +1,73 @@
+{
+  "schema": "por-derecho.workspace-thread-continuity-handoff.v1",
+  "control_id": "PD-WCH-001",
+  "control_date": "2026-09-01",
+  "governance": ".github/governance/WORKSPACE_THREAD_CONTINUITY_HANDOFF_STANDARD_01SEP2026.md",
+  "root_pointer": "CURRENT_WORKSPACE_HANDOFF.md",
+  "handoff_directory": "archive/handoffs/",
+  "continuity_status_values": [
+    "IN_PROGRESS",
+    "HANDOFF_READY",
+    "DELETION_SAFE",
+    "DELETION_SAFE_WITH_OPEN_WORK",
+    "HANDOFF_READY_EXCEPT_CHAT_ONLY_GAP"
+  ],
+  "execution_state_values": [
+    "MERGED_TO_MAIN",
+    "LIVE_VERIFIED",
+    "MERGED_NOT_LIVE_VERIFIED",
+    "BRANCH_ONLY",
+    "PR_OPEN",
+    "DRAFT_ONLY",
+    "RESERVED_NOT_GENERATED",
+    "HASH_LOCKED_BINARY_MIRROR_GAP",
+    "GENERATION_FAILED_NO_FILE_CREATED",
+    "PUBLICATION_HOLD",
+    "OPEN_EVIDENCE_GAP"
+  ],
+  "mandatory_markdown_sections": [
+    "HANDOFF_ID_DATE",
+    "SCOPE",
+    "CONTINUITY_STATUS",
+    "AUTHORITATIVE_BASELINE",
+    "BRANCH_PR_STATE",
+    "COMPLETED_WORK",
+    "PUBLIC_LIVE_STATE",
+    "DECISIONS_TERMINOLOGY_LOCKS",
+    "SOURCE_EVIDENCE_BOUNDARIES",
+    "ARTIFACT_REGISTER",
+    "TOOL_FAILURES",
+    "OPEN_WORK",
+    "DO_NOT_REPEAT_OR_INFER",
+    "NEXT_THREAD_FIRST_ACTIONS",
+    "BOOTSTRAP_PROMPT",
+    "DELETION_SAFETY_TEST"
+  ],
+  "new_thread_startup_order": [
+    "CURRENT_WORKSPACE_HANDOFF.md",
+    "named detailed handoff",
+    "canonical controls named by handoff",
+    "current main/PR reconciliation",
+    "targeted next-task reads/searches"
+  ],
+  "deletion_safe_requirements": [
+    "no material instruction known to remain chat-only",
+    "unique decisions are durable",
+    "open gaps are explicit",
+    "branch/PR/main state is explicit",
+    "volatile outputs are registered or named as gaps",
+    "failed operations are recorded",
+    "bootstrap prompt is sufficient",
+    "canonical controls are linked instead of inaccurately duplicated"
+  ],
+  "anti_patterns": [
+    "treat chat history as canonical source",
+    "say done without state qualification",
+    "re-run full repository scan by default",
+    "infer that branch-only work is merged",
+    "infer that merged means live",
+    "infer that public means filed or served",
+    "infer failed generation produced a file",
+    "silently replace artifact hashes or references"
+  ]
+}

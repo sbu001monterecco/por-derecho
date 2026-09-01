@@ -1,0 +1,58 @@
+{
+  "schema": "por-derecho.workspace-handoff.v1",
+  "handoff_id": "PD-WCH-20260901-AMHP-DMA-001",
+  "date": "2026-09-01",
+  "topic": "Acosta Matos / Canarian Hospitality hotel-platform digital-media package",
+  "continuity_status": "DELETION_SAFE_WITH_OPEN_WORK",
+  "repository": "sbu001monterecco/por-derecho",
+  "audited_main_sha": "467f76d09645eb557c84201f3d6e8782dbf7c64d",
+  "canonical_controls": [
+    ".github/governance/WORKSPACE_THREAD_CONTINUITY_HANDOFF_STANDARD_01SEP2026.md",
+    ".github/governance/DIGITAL_MEDIA_ASSET_CARET_IDENTITY_STANDARD_01SEP2026.md",
+    ".github/governance/SATIRE_CARICATURE_SPOOF_PUBLICATION_STANDARD_ES_EN.md",
+    "ops/SATIRE_CARICATURE_SPOOF_GOVERNANCE_V1.json",
+    "data/digital-media-asset-register-v1.json",
+    "communications/linkedin/LINKEDIN_ACOSTA_MATOS_CANARIAN_100M_PLATFORM_01SEP2026.md"
+  ],
+  "logical_assets": [
+    "PD-DMA-0001",
+    "PD-DMA-0002",
+    "PD-DMA-0003",
+    "PD-DMA-0004"
+  ],
+  "legacy_quarantine": [
+    "PD-DMA-LEGACY-0001-PNG^",
+    "PD-DMA-LEGACY-0002-PNG^"
+  ],
+  "public_routes": [
+    "/es/acosta-matos-plataforma-hotelera/",
+    "/en/acosta-matos-hotel-platform/",
+    "/es/registro-activos-digitales/",
+    "/en/digital-media-asset-register/"
+  ],
+  "core_boundaries": [
+    "Managed-hotel sales and the management company's own reported turnover are different measures and must not be mechanically added.",
+    "Platform proximity does not establish common ownership, shared knowledge, coordination, intent or responsibility.",
+    "Digital/media carets confirm exact file identity only.",
+    "Public web publication is separate from social posting, formal filing, service or authority notice."
+  ],
+  "historical_transient_state_correction": {
+    "earlier_image_generation_failure": "One originating-chat image generation attempt failed and created no file.",
+    "current_canonical_state": "Current main now registers the English companion and both corrected prior-style variants as public assets, so the earlier reserved/not-generated state is superseded.",
+    "next_thread_rule": "Reconcile against current main before relying on chat-era execution state."
+  },
+  "open_work": [
+    "Verify live dossier route immediately before any real LinkedIn post.",
+    "Archive final LinkedIn URL, timestamp, exact text and uploaded-file hash if posted.",
+    "Assign new asset IDs/hashes for any new redesign rather than overwriting PD-DMA-0001 through PD-DMA-0004.",
+    "Update binary-mirror status accurately if the full-resolution PNG masters are later committed."
+  ],
+  "next_thread_start": [
+    "Read CURRENT_WORKSPACE_HANDOFF.md.",
+    "Read the detailed Markdown handoff.",
+    "Fetch the canonical digital-media register from current main.",
+    "Fetch named governance controls.",
+    "Reconcile current main SHA and later PR/merge state.",
+    "Continue only the user's targeted next action."
+  ]
+}
