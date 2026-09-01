@@ -2,9 +2,38 @@
   "schema": "por-derecho.automatic-workspace-persistence.v1",
   "control_id": "PD-AWP-001",
   "control_date": "2026-09-01",
-  "status": "ACTIVE_GOVERNANCE_ARCHITECTURE",
+  "status": "ACTIVE_RUNTIME_IMPLEMENTED_PRIVATE_DESTINATION_OPEN",
   "human_governance": ".github/governance/AUTOMATIC_WORKSPACE_PERSISTENCE_ARCHITECTURE_01SEP2026.md",
   "handoff_governance": ".github/governance/WORKSPACE_THREAD_CONTINUITY_HANDOFF_STANDARD_01SEP2026.md",
+  "runbook": "docs/WORKSPACE_PERSISTENCE_RUNBOOK.md",
+  "runtime": {
+    "path": "scripts/workspace_persistence.py",
+    "dependencies": "PYTHON_STANDARD_LIBRARY_ONLY",
+    "commands": [
+      "doctor",
+      "init",
+      "append",
+      "checkpoint",
+      "validate",
+      "import-chatgpt",
+      "public-summary",
+      "validate-repository"
+    ],
+    "event_store": "PRIVATE_APPEND_ONLY_JSONL",
+    "integrity": "SHA256_CONTENT_HASH_PLUS_PREVIOUS_EVENT_HASH_CHAIN",
+    "atomic_state_outputs": ["workspace.json", "state.json", "handoff.md"],
+    "public_summary_gate": "EXPLICIT_PUBLIC_SUMMARY_OBJECT_REQUIRED",
+    "public_repo_vault_refusal": true,
+    "tests": "tests/test_workspace_persistence.py",
+    "ci": ".github/workflows/audit-workspace-persistence.yml"
+  },
+  "implementation_state": {
+    "connected_agentic_checkpointing": "IMPLEMENTED_GOVERNANCE_AND_RUNTIME",
+    "private_archive_plus_public_state": "RUNTIME_IMPLEMENTED_DURABLE_PRIVATE_DESTINATION_NOT_YET_PROVISIONED",
+    "historical_export_import": "IMPLEMENTED_PRIVATE_NORMALISER",
+    "true_event_sourced_automatic_client": "CREDENTIAL_GATED_NOT_IMPLEMENTED",
+    "native_all_chatgpt_thread_hook": "NOT_AVAILABLE_AND_NOT_CLAIMED"
+  },
   "core_rule": "Persist material workspace state as part of doing the work rather than waiting for an end-of-thread continuity audit.",
   "capability_boundary": {
     "ordinary_chatgpt": "Agentic persistence can occur while a persistence-capable assistant turn is active, but this environment does not expose a guaranteed universal event hook for every new thread, every turn, app close, deletion, or historical-chat export.",
@@ -15,38 +44,104 @@
       "id": "CONNECTED_AGENTIC_CHECKPOINTING",
       "recommended": true,
       "available_now_when_github_connected": true,
-      "triggers": ["INIT", "MATERIAL_DECISION", "IDENTITY_CORRECTION", "NEW_SOURCE_OR_PROCEEDING", "ARTIFACT_REGISTERED", "BRANCH_PR_MERGE", "PUBLICATION_STATE_CHANGE", "TOOL_FAILURE", "CONTINUITY_REQUEST", "LONG_TASK_OPEN_WORK", "HANDOFF"],
+      "runtime_available": true,
+      "triggers": [
+        "INIT",
+        "MATERIAL_DECISION",
+        "IDENTITY_CORRECTION",
+        "NEW_SOURCE_OR_PROCEEDING",
+        "ARTIFACT_REGISTERED",
+        "BRANCH_PR_MERGE",
+        "PUBLICATION_STATE_CHANGE",
+        "TOOL_FAILURE",
+        "CONTINUITY_REQUEST",
+        "LONG_TASK_OPEN_WORK",
+        "HANDOFF"
+      ],
       "limitation": "Cannot discover a separate ChatGPT thread if no persistence-capable action is invoked in that thread."
     },
     {
       "id": "PRIVATE_ARCHIVE_PLUS_PUBLIC_STATE",
       "recommended": true,
-      "private_store": "SEPARATE_PRIVATE_REPOSITORY_OR_ENCRYPTED_OBJECT_STORE",
+      "private_store": "SEPARATE_PRIVATE_REPOSITORY_ENCRYPTED_DIRECTORY_OR_OBJECT_STORE",
       "public_store": "sbu001monterecco/por-derecho",
+      "runtime": "scripts/workspace_persistence.py",
+      "destination_state": "OPEN_USER_CONTROLLED_PRIVATE_DESTINATION_REQUIRED",
       "rule": "Raw transcripts and restricted/private material do not auto-flow to the public repository."
     },
     {
       "id": "TRUE_EVENT_SOURCED_AUTOMATIC_CLIENT",
       "recommended_target": true,
-      "requires": ["PURPOSE_BUILT_CLIENT_OR_WORKBENCH", "OPENAI_API", "PRIVATE_EVENT_STORE", "GITHUB_APP_OR_REPOSITORY_INTEGRATION"],
+      "requires": [
+        "PURPOSE_BUILT_CLIENT_OR_WORKBENCH",
+        "OPENAI_API",
+        "PRIVATE_EVENT_STORE",
+        "GITHUB_APP_OR_REPOSITORY_INTEGRATION",
+        "EXPLICIT_CREDENTIAL_DECISION"
+      ],
+      "implementation_state": "NOT_STARTED_CREDENTIAL_GATED",
       "guarantee": "Every user-visible workspace event can be persisted because the capture layer sits in the request path."
     }
   ],
   "workspace_id_pattern": "PD-WS-YYYYMMDD-NNNN",
-  "visibility_classes": ["PUBLIC_SOURCE_SAFE", "PUBLIC_DERIVED_SAFE", "PRIVATE_WORKSPACE", "CONFIDENTIAL_USER_SUPPLIED", "CONNECTED_SOURCE_RESTRICTED", "PUBLICATION_REVIEW_REQUIRED"],
+  "visibility_classes": [
+    "PUBLIC_SOURCE_SAFE",
+    "PUBLIC_DERIVED_SAFE",
+    "PRIVATE_WORKSPACE",
+    "CONFIDENTIAL_USER_SUPPLIED",
+    "CONNECTED_SOURCE_RESTRICTED",
+    "PUBLICATION_REVIEW_REQUIRED"
+  ],
   "public_auto_sync_allowed": ["PUBLIC_SOURCE_SAFE", "PUBLIC_DERIVED_SAFE"],
-  "recommended_workspace_files": ["workspace.json", "events.jsonl", "state.json", "handoff.md", "artifacts.json", "sources.json", "attachments-manifest.json", "publication-events.jsonl"],
-  "event_integrity_fields": ["event_id", "timestamp_utc", "workspace_id", "event_type", "visibility_class", "content_hash", "previous_event_hash", "repository_refs", "artifact_refs"],
+  "recommended_workspace_files": [
+    "workspace.json",
+    "events.jsonl",
+    "state.json",
+    "handoff.md",
+    "artifacts.json",
+    "sources.json",
+    "attachments-manifest.json",
+    "publication-events.jsonl"
+  ],
+  "event_integrity_fields": [
+    "event_id",
+    "timestamp_utc",
+    "workspace_id",
+    "event_type",
+    "visibility_class",
+    "content_hash",
+    "previous_event_hash",
+    "event_hash",
+    "repository_refs",
+    "artifact_refs"
+  ],
+  "schemas": [
+    "schemas/workspace-event-v1.schema.json",
+    "schemas/workspace-state-v1.schema.json",
+    "schemas/chatgpt-export-import-manifest-v1.schema.json"
+  ],
   "historical_backfill": {
     "method": "USER_AUTHORISED_CHAT_EXPORT_IMPORT",
+    "runtime_command": "import-chatgpt",
     "raw_destination": "PRIVATE_ONLY",
+    "default_roles": ["user", "assistant"],
+    "system_tool_default": "EXCLUDED_UNLESS_EXPLICITLY_REQUESTED",
+    "workspace_assignment": "UNASSIGNED_REVIEW_REQUIRED",
     "required_reconciliation": "CURRENT_REPOSITORY_TRUTH_SUPERSEDES_STALE_CHAT_STATE",
     "public_raw_transcript_dump": false
   },
   "fallback": {
     "id": "PRIVATE_GITHUB_ISSUE_PER_WORKSPACE",
-    "purpose": "Chronological checkpoint ledger when a dedicated event store is deferred"
+    "purpose": "Chronological checkpoint ledger when a dedicated event store is deferred",
+    "warning": "Never use a public issue for confidential raw workspace material."
   },
   "future_thread_default": "When a substantive Por Derecho workspace is recognised and GitHub access is available, initialise/recover a PD-WS workspace and checkpoint material state without waiting for an explicit continuity-audit request.",
-  "do_not_claim": ["NATIVE_ZERO_TOUCH_ALL_CHATGPT_THREADS", "AUTOMATIC_HISTORICAL_CHAT_ENUMERATION", "PUBLICATION_EQUALS_PRIVATE_ARCHIVE", "CHAT_VISIBILITY_EQUALS_REPOSITORY_PRESERVATION"]
+  "do_not_claim": [
+    "NATIVE_ZERO_TOUCH_ALL_CHATGPT_THREADS",
+    "AUTOMATIC_HISTORICAL_CHAT_ENUMERATION",
+    "PUBLICATION_EQUALS_PRIVATE_ARCHIVE",
+    "CHAT_VISIBILITY_EQUALS_REPOSITORY_PRESERVATION",
+    "PRIVATE_DESTINATION_ALREADY_PROVISIONED",
+    "OPENAI_API_CLIENT_ALREADY_CONFIGURED"
+  ]
 }
