@@ -13,6 +13,11 @@
   "reviewed_head_sha": "5d5a1a65d9c2288a8790f0eb547f027cdc466db7",
   "merge_tree_sha": "a7555e26048e8d3b3f0518e264456a3cbcee998c",
   "purpose": "Complete proposition-specific reciprocal interlinking of the already-published 6-March-2026 Cuatrecasas LinkedIn text record while minimizing private custody data, excluding the raw screenshots and preserving the individual/firm/outcome proof boundaries.",
+  "successor_publication": {
+    "publication_id": "cuatrecasas-linkedin-image-publication-20260901",
+    "control_date": "2026-09-01",
+    "scope": "Supersedes the raw-screenshot exclusion for the exact two controlled captures only; this manifest remains the historical closeout of the 31-August interlink release."
+  },
   "expected_routes": {
     "es": [
       "es/cuatrecasas-sun-park/index.html",

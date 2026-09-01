@@ -1,5 +1,7 @@
 # Cuatrecasas LinkedIn evidence interlink control
 
+> **1-September-2026 successor:** `archive/CUATRECASAS_LINKEDIN_IMAGE_PUBLICATION_CONTROL_01SEP2026.md` supersedes this control's raw-screenshot exclusion for the exact two controlled captures only. The exclusion below records the authority state of the 31-August interlink release; all other privacy, claim and no-contact boundaries remain in force.
+
 **Control date:** 31 August 2026
 
 **Initial current-main SHA:** `fe8326840604a591e971d2f0a224ccd594e40b04`

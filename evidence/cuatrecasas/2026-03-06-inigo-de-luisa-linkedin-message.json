@@ -21,15 +21,31 @@
       {
         "evidence_id": "CUATRECASAS-LINKEDIN-20260306-INIGO-DE-LUISA.CAPTURE-01",
         "source_class": "best available user-supplied screenshot copy",
-        "custody_status": "HASH_VERIFIED_PRIVATE_COPY",
-        "public_binary": false,
+        "custody_status": "HASH_VERIFIED_PUBLIC_COPY",
+        "public_binary": true,
+        "public_asset": "/assets/evidence/cuatrecasas/inigo-de-luisa-linkedin-message-20260306-capture-01.jpg",
+        "sha256": "ddf86dfe42a0cfa8d4481a6e504c4dc94a63e48c2ce7cb98ec764fa20cb25102",
+        "byte_size": 151680,
+        "pixel_dimensions": {
+          "width": 921,
+          "height": 2048
+        },
+        "publication_authority": "CURRENT_USER_AUTHORISED_2026-09-01",
         "role": "displayed account identity and full message text"
       },
       {
         "evidence_id": "CUATRECASAS-LINKEDIN-20260306-INIGO-DE-LUISA.CAPTURE-02",
         "source_class": "best available user-supplied screenshot copy",
-        "custody_status": "HASH_VERIFIED_PRIVATE_COPY",
-        "public_binary": false,
+        "custody_status": "HASH_VERIFIED_PUBLIC_COPY",
+        "public_binary": true,
+        "public_asset": "/assets/evidence/cuatrecasas/inigo-de-luisa-linkedin-message-20260306-capture-02.jpg",
+        "sha256": "baefb00dc12914aef4c32f0b69bd63842b15f4d83860a254294900a3822d2aab",
+        "byte_size": 138006,
+        "pixel_dimensions": {
+          "width": 921,
+          "height": 2048
+        },
+        "publication_authority": "CURRENT_USER_AUTHORISED_2026-09-01",
         "role": "preceding thread context and later LinkedIn interface state"
       }
     ],
@@ -179,7 +195,7 @@
       }
     ]
   },
-  "publication_boundary": "The message is reproduced verbatim from the retained screenshot as an already-published documentary text record. The two raw screenshot binaries remain private and are not published by this record. The deletion point is stated only in the qualified form used in the contemporaneous memorialisation ('appears to have deleted it'). The later LinkedIn interface-status screenshot is not treated on its own as conclusive proof of deletion or its cause. No inference of civil, criminal or disciplinary liability is made from the message alone.",
+  "publication_boundary": "The message is reproduced verbatim and the exact two best-available user-supplied screenshot copies are public under the user's express 1-September-2026 authorization. They are not provider-certified LinkedIn exports. The original received filenames, restricted storage locators and private preservation communications remain nonpublic. The deletion point is stated only in the qualified form used in the contemporaneous memorialisation ('appears to have deleted it'). The later LinkedIn interface-status screenshot is not treated on its own as conclusive proof of deletion or its cause. No inference of civil, criminal or disciplinary liability is made from the message alone.",
   "communication_governance": {
     "direct_contact": "HOLD_NOT_AUTHORISED",
     "reason": "The displayed message says 'Do not ever contact me'. Any legally necessary communication must use authorised counsel, a verified professional channel or the competent institutional or procedural route.",
@@ -192,5 +208,6 @@
     "/es/cuatrecasas-icam-ccacm-2026/"
   ],
   "created_for_publication": "2026-08-31",
-  "governance_revision": "2026-08-31c"
+  "image_publication_authorized": "2026-09-01",
+  "governance_revision": "2026-09-01a"
 }
