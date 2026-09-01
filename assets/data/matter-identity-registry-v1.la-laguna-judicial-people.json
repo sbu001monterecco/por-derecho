@@ -9,6 +9,7 @@
       "type": "PERSON",
       "name": "Graciela Pérez-Valencia Díaz",
       "aliases": ["Graciela Perez-Valencia Diaz"],
+      "routes": {"es": "/es/registro-judicial-la-laguna/#pd-sp-p-0147", "en": "/en/la-laguna-judicial-register/#pd-sp-p-0147"},
       "identity_resolution": "CARET_CONFIRMED",
       "identity_sources": [
         "DP 748/2026 Providencia electronically signed 20-May-2026",
@@ -22,6 +23,7 @@
       "type": "PERSON",
       "name": "María del Pilar Luis Medina",
       "aliases": ["Mª Pilar Luis Medina", "Maria del Pilar Luis Medina"],
+      "routes": {"es": "/es/registro-judicial-la-laguna/#pd-sp-p-0148", "en": "/en/la-laguna-judicial-register/#pd-sp-p-0148"},
       "identity_resolution": "CARET_CONFIRMED",
       "identity_sources": [
         "DP 748/2026 Diligencia de Ordenación electronically signed 15-Jun-2026",
@@ -35,6 +37,7 @@
       "type": "PERSON",
       "name": "María Mercedes Santana Rodríguez",
       "aliases": ["Maria Mercedes Santana Rodriguez"],
+      "routes": {"es": "/es/registro-judicial-la-laguna/#pd-sp-p-0149", "en": "/en/la-laguna-judicial-register/#pd-sp-p-0149"},
       "identity_resolution": "CARET_CONFIRMED",
       "identity_sources": ["Sentencia 41/2014, Procedimiento Ordinario 344/2013, Juzgado de Primera Instancia nº 5 de San Cristóbal de La Laguna"],
       "verification_detail": "Primary judgment transcription confirmed",
@@ -44,6 +47,7 @@
       "id": "PD-SP-P-0150",
       "type": "PERSON",
       "name": "Carmen Rosa Marrero Fumero",
+      "routes": {"es": "/es/registro-judicial-la-laguna/#pd-sp-p-0150", "en": "/en/la-laguna-judicial-register/#pd-sp-p-0150"},
       "identity_resolution": "CARET_CONFIRMED",
       "identity_sources": [
         "Juicio Cambiario 1048/2019 Auto of 04-Sep-2019 and later court acts in the recovered 83-page court copy",
@@ -58,6 +62,7 @@
       "type": "PERSON",
       "name": "Juan Manuel Pérez Ramos",
       "aliases": ["Juan Manuel Perez Ramos"],
+      "routes": {"es": "/es/registro-judicial-la-laguna/#pd-sp-p-0151", "en": "/en/la-laguna-judicial-register/#pd-sp-p-0151"},
       "identity_resolution": "CARET_CONFIRMED",
       "identity_sources": [
         "Juicio Cambiario 1048/2019 Diligencia de Ordenación 02-Sep-2019 and later acts in recovered 83-page court copy",
@@ -71,6 +76,7 @@
       "type": "PERSON",
       "name": "María del Pilar Parrilla Martín",
       "aliases": ["Maria del Pilar Parrilla Martin"],
+      "routes": {"es": "/es/registro-judicial-la-laguna/#pd-sp-p-0152", "en": "/en/la-laguna-judicial-register/#pd-sp-p-0152"},
       "identity_resolution": "CARET_CONFIRMED",
       "identity_sources": [
         "Juicio Cambiario 1048/2019 Diligencia de Ordenación 03-Dec-2019 and judicial-cooperation request in recovered court copy",
@@ -83,6 +89,7 @@
       "id": "PD-SP-P-0153",
       "type": "PERSON",
       "name": "Marco Eulogio Chiang Rebolledo",
+      "routes": {"es": "/es/registro-judicial-la-laguna/#pd-sp-p-0153", "en": "/en/la-laguna-judicial-register/#pd-sp-p-0153"},
       "identity_resolution": "CARET_CONFIRMED",
       "identity_sources": ["Juicio Cambiario 1048/2019 Diligencia de Ordenación electronically signed 09-Apr-2025"],
       "verification_detail": "Primary judicial source / electronic signature confirmed",
@@ -93,6 +100,7 @@
       "type": "PERSON",
       "name": "Cristina María Hernández Díaz",
       "aliases": ["Cristina Maria Hernandez Diaz"],
+      "routes": {"es": "/es/registro-judicial-la-laguna/#pd-sp-p-0154", "en": "/en/la-laguna-judicial-register/#pd-sp-p-0154"},
       "identity_resolution": "CARET_CONFIRMED",
       "identity_sources": [
         "ETJ 163/2020 Diligencia de Ordenación dated 06-Jul-2026 and electronically signed 07-Jul-2026",
@@ -106,6 +114,7 @@
       "type": "PERSON",
       "name": "Francisco Martín Pozo",
       "aliases": ["Francisco Martin Pozo"],
+      "routes": {"es": "/es/registro-judicial-la-laguna/#pd-sp-p-0155", "en": "/en/la-laguna-judicial-register/#pd-sp-p-0155"},
       "identity_resolution": "CARET_CONFIRMED",
       "identity_sources": ["ETJ 163/2020 Diligencia de Ordenación electronically signed 28-Jul-2026 at 15:44:20"],
       "verification_detail": "Electronic LAJ signature confirmed",
@@ -116,6 +125,7 @@
       "type": "PERSON",
       "name": "María del Mar Vidal Villagrasa",
       "aliases": ["Maria del Mar Vidal Villagrasa"],
+      "routes": {"es": "/es/registro-judicial-la-laguna/#pd-sp-p-0156", "en": "/en/la-laguna-judicial-register/#pd-sp-p-0156"},
       "identity_resolution": "CARET_CONFIRMED",
       "identity_sources": ["Auxilio Nacional 176/2019, Juzgado de Primera Instancia nº 2 de Arrecife, judicial-cooperation acts received from Cambiario 1048/2019"],
       "verification_detail": "Primary auxiliary judicial source confirmed",
@@ -126,6 +136,7 @@
       "type": "PERSON",
       "name": "Juan Manuel Vivancos Hernández",
       "aliases": ["Juan Manuel Vivancos Hernandez"],
+      "routes": {"es": "/es/registro-judicial-la-laguna/#pd-sp-p-0157", "en": "/en/la-laguna-judicial-register/#pd-sp-p-0157"},
       "identity_resolution": "CARET_CONFIRMED",
       "identity_sources": ["Juzgado de Paz de Yaiza Diligencia de Ordenación dated 08-Jan-2020 in the judicial-cooperation material of Cambiario 1048/2019"],
       "verification_detail": "Primary auxiliary judicial source confirmed",
