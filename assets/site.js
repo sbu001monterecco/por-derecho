@@ -157,7 +157,7 @@
     if (!isHome()) return;
     if (document.querySelector('script[data-borja-separation-search-extension-loader]')) return;
     const extension = document.createElement('script');
-    extension.src = new URL('borja-separation-rpl3304-search-extension-20260902.js?v=20260902a', current.src).href;
+    extension.src = new URL('borja-separation-search-extension-20260902.js?v=20260902a', current.src).href;
     extension.async = false;
     extension.setAttribute('data-borja-separation-search-extension-loader', '20260902a');
     document.head.appendChild(extension);
