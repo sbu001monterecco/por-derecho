@@ -7,6 +7,19 @@
 
 Salir con una respuesta cerrada a estas siete decisiones, evitando reabrir toda la historia Sun Park cuando el recurso puede descansar sobre un núcleo documental mucho más pequeño.
 
+## Run-of-show de 30 minutos
+
+La llamada debe funcionar como una sesión de decisión, no como una relectura del expediente:
+
+- **0–3 min · Objetivo y plazo:** confirmar qué debe quedar decidido hoy y el cómputo procesal que controla.
+- **3–8 min · Vehículo procesal:** art. 766.4 LECrim, apelación subsidiaria ya interpuesta y necesidad o no de formulación ad cautelam.
+- **8–14 min · Núcleo documental:** una sola finca (8.584), cuatro hitos (20 SEP / 17 OCT / 21 FEB / 25 APR) y la constancia exacta de traslado a Cuatrecasas.
+- **14–20 min · Teoría y contraprueba:** identificar el engaño/omisión concreta si existe; conservar expresamente la doble lectura favorable y adversa del escrito de 25 abril.
+- **20–25 min · Diligencias y anexos:** cerrar qué documentos se piden por testimonio, cuáles acompañan ya y cuáles se reservan.
+- **25–30 min · Decisión final y responsables:** versión del recurso, cambios, quién hace cada acción, fecha/hora de presentación y control de acuse.
+
+Si un punto de contexto no cambia una de esas decisiones, debe quedar para una nota posterior y no consumir el tiempo de la llamada.
+
 ### 1. Vehículo procesal y plazo
 - ¿Se presenta como desarrollo de la apelación subsidiaria ya interpuesta el 17 de abril bajo art. 766.4 LECrim?
 - ¿Conviene añadir apelación ad cautelam frente al Auto de 16 de julio?
