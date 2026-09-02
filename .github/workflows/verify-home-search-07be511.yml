@@ -1,0 +1,156 @@
+name: Verify homepage search hotfix in Chromium
+
+on:
+  push:
+    branches: [verify/home-search-07be511-20260902]
+    paths:
+      - '.github/workflows/verify-home-search-07be511.yml'
+
+jobs:
+  browser-search:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          ref: verify/home-search-07be511-20260902
+          fetch-depth: 0
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020
+        with:
+          node-version: '22'
+      - name: Prepare exact hotfix tree and Chromium
+        shell: bash
+        run: |
+          git worktree add --detach /tmp/site 07be5119b6dc7dfd818f98d77dcc1897d9c57d46
+          ln -s /tmp/site /tmp/por-derecho
+          mkdir -p /tmp/browser
+          cd /tmp/browser
+          npm init -y >/dev/null 2>&1
+          npm install playwright@1.55.0 >/dev/null 2>&1
+          npx playwright install --with-deps chromium >/dev/null
+      - name: Run visible DOM, search and click-through matrix
+        shell: bash
+        run: |
+          nohup python3 -m http.server 4173 --directory /tmp >/tmp/home-search-server.log 2>&1 &
+          for i in $(seq 1 30); do
+            if curl -fsS http://127.0.0.1:4173/por-derecho/es/ >/dev/null; then break; fi
+            sleep 1
+          done
+          cat >/tmp/browser/test.js <<'JS'
+          const fs = require('fs');
+          const { chromium } = require('playwright');
+
+          const base = 'http://127.0.0.1:4173/por-derecho';
+          const mergedHead = '07be5119b6dc7dfd818f98d77dcc1897d9c57d46';
+          const checks = [
+            ['Graciela Pérez-Valencia Díaz', 'PD-SP-P-0147'],
+            ['PD-SP-P-0147', 'PD-SP-P-0147'],
+            ['^P-0147', 'PD-SP-P-0147'],
+            ['^0147', 'PD-SP-P-0147'],
+            ['DP 748/2026', 'PD-SP-R-0003'],
+            ['PD-SP-R-0003', 'PD-SP-R-0003'],
+            ['^R-0003', 'PD-SP-R-0003'],
+            ['3802343220260002351', 'PD-SP-R-0003'],
+            ['TF-CRI-003', 'PD-SP-R-0003'],
+            ['Audiencia Provincial de Las Palmas', 'PD-SP-I-0044'],
+            ['PD-SP-I-0044', 'PD-SP-I-0044'],
+            ['^I-0044', 'PD-SP-I-0044'],
+            ['^0044', 'PD-SP-I-0044'],
+            ['PD-SP-I-0025', 'PD-SP-I-0025'],
+            ['Ricardo de Mosteyrín Sampalo', 'PD-SP-P-0058']
+          ];
+
+          async function openHome(page, lang) {
+            await page.goto(`${base}/${lang}/`, {waitUntil: 'networkidle'});
+            await page.waitForSelector('#canonical-home-search-input', {state: 'visible', timeout: 15000});
+            await page.waitForFunction(() => window.PorDerechoCanonicalSearch && window.PorDerechoCanonicalSearch.count > 0, null, {timeout: 15000});
+          }
+
+          (async () => {
+            const browser = await chromium.launch({headless: true});
+            const page = await browser.newPage({viewport: {width: 1440, height: 1100}});
+            const report = {hotfix_head: mergedHead, project_base: '/por-derecho/', languages: {}, verdict: 'PENDING'};
+
+            for (const lang of ['es', 'en']) {
+              await openHome(page, lang);
+              const mount = await page.evaluate(() => {
+                const section = document.querySelector('.canonical-home-search');
+                const input = document.querySelector('#canonical-home-search-input');
+                const rect = input.getBoundingClientRect();
+                return {
+                  input_visible_geometry: rect.width > 0 && rect.height > 0,
+                  input_width: rect.width,
+                  input_height: rect.height,
+                  parent_is_body: section.parentElement === document.body,
+                  previous_is_site_header: !!section.previousElementSibling?.classList.contains('site-header'),
+                  inside_details: !!section.closest('details'),
+                  indexed_entries: window.PorDerechoCanonicalSearch.count,
+                  api_version: window.PorDerechoCanonicalSearch.version
+                };
+              });
+              if (!mount.input_visible_geometry || !mount.parent_is_body || !mount.previous_is_site_header || mount.inside_details) {
+                throw new Error(`${lang} mount invariant failed: ${JSON.stringify(mount)}`);
+              }
+              const queryRows = [];
+              for (const [query, expectedId] of checks) {
+                const input = page.locator('#canonical-home-search-input');
+                await input.fill(query);
+                const expected = page.locator(`[data-search-result-id="${expectedId}"]`).first();
+                await expected.waitFor({state: 'visible', timeout: 10000});
+                const first = page.locator('.canonical-search-result').first();
+                queryRows.push({
+                  query,
+                  expected_id: expectedId,
+                  expected_visible: await expected.isVisible(),
+                  expected_href: await expected.getAttribute('href'),
+                  first_id: await first.getAttribute('data-search-result-id'),
+                  first_text: (await first.innerText()).replace(/\s+/g, ' ').trim(),
+                  status: (await page.locator('#canonical-home-search-status').innerText()).trim()
+                });
+              }
+              report.languages[lang] = {mount, queries: queryRows, click_throughs: []};
+
+              for (const [query, expectedId] of [
+                ['Graciela Pérez-Valencia Díaz', 'PD-SP-P-0147'],
+                ['DP 748/2026', 'PD-SP-R-0003'],
+                ['Audiencia Provincial de Las Palmas', 'PD-SP-I-0044'],
+                ['PD-SP-I-0025', 'PD-SP-I-0025']
+              ]) {
+                await openHome(page, lang);
+                await page.locator('#canonical-home-search-input').fill(query);
+                const expected = page.locator(`[data-search-result-id="${expectedId}"]`).first();
+                await expected.waitFor({state: 'visible'});
+                const href = await expected.getAttribute('href');
+                if (!href || !href.includes('/por-derecho/')) throw new Error(`${query} href lacks project base: ${href}`);
+                const response = await page.goto(href, {waitUntil: 'domcontentloaded'});
+                const row = {query, expected_id: expectedId, href, http_status: response?.status() ?? null, final_url: page.url(), title: await page.title()};
+                report.languages[lang].click_throughs.push(row);
+                if (!response || response.status() !== 200) throw new Error(`${lang} click-through failed: ${JSON.stringify(row)}`);
+              }
+
+              await openHome(page, lang);
+              await page.locator('#canonical-home-search-input').fill('^I-0044');
+              await page.locator('[data-search-result-id="PD-SP-I-0044"]').first().waitFor({state: 'visible'});
+              await page.locator('.canonical-home-search').screenshot({path: `/tmp/browser/HOME_SEARCH_${lang.toUpperCase()}_07be511.png`});
+            }
+
+            report.verdict = 'PASS';
+            report.completed_at = new Date().toISOString();
+            fs.writeFileSync('/tmp/browser/HOME_SEARCH_BROWSER_TEST_07be511.json', JSON.stringify(report, null, 2) + '\n');
+            console.log(JSON.stringify(report, null, 2));
+            await browser.close();
+          })().catch((error) => { console.error(error); process.exit(1); });
+          JS
+          cd /tmp/browser
+          node test.js
+      - name: Upload browser verification evidence
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: home-search-browser-07be511
+          path: |
+            /tmp/browser/HOME_SEARCH_BROWSER_TEST_07be511.json
+            /tmp/browser/HOME_SEARCH_ES_07be511.png
+            /tmp/browser/HOME_SEARCH_EN_07be511.png
+          if-no-files-found: warn
+          retention-days: 14
