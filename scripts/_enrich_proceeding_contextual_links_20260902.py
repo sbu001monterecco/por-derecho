@@ -16,8 +16,10 @@ graph_doc=json.loads(graph_path.read_text(encoding='utf-8'))
 records=public['records']; by_id={r['Master_ID']:r for r in records}; routes=routes_doc['routes']
 graph={r['master_id']:r for r in graph_doc['records']}
 
+# Generic procedural/registry vocabulary must never create a contextual relation by itself.
 STOP={
- 'the','and','for','from','with','into','later','historical','history','proceeding','proceedings','matter','file','reference','court','exact','pending','linked','track','civil','criminal','judicial','direct','reported','controlled','source','appeal','review','procedure','procedural','against','concerning','related','relationship','public','official','current','status','las','los','del','de','la','el','en','y','por','para','con','sin','sobre','expediente','procedimiento','historico','historica','judicial','recurso','juzgado','audiencia','provincial','palmas','arrecife','lanzarote','tenerife','canarias'
+ 'the','and','for','from','with','into','later','historical','history','proceeding','proceedings','matter','file','reference','court','exact','pending','linked','track','civil','criminal','judicial','direct','reported','controlled','source','appeal','review','procedure','procedural','against','concerning','related','relationship','public','official','current','status','las','los','del','de','la','el','en','y','por','para','con','sin','sobre','expediente','procedimiento','historico','historica','judicial','recurso','juzgado','audiencia','provincial','palmas','arrecife','lanzarote','tenerife','canarias',
+ 'diligencias','previas','docket','requires','required','require','parties','party','user','users','auto','order','judgment','sentencia','allegations','alleged','complaint','dispute','park','perimeter','record','records','identity','unverified','verified','primary','copy','document','documents','filing','filings','application','applications','decision','decisions'
 }
 
 def norm(s):
@@ -36,17 +38,21 @@ ranked={mid:[] for mid in by_id}
 for i,(mid,a) in enumerate(by_id.items()):
  for oid,b in list(by_id.items())[i+1:]:
   score=0; reasons=[]
+  same_connection=exact(a,b,'Connection')
+  shared=sorted(T[mid]&T[oid])
+  # Contextual recommendations require substantive overlap or the same explicit connection label.
+  # Same court/geography/stream are boosts only; same-organ navigation already has its own section.
+  if not shared and not same_connection:
+   continue
   if exact(a,b,'Origin_Organ'):
    score+=6; reasons.append('same_origin_organ')
   if exact(a,b,'Geography'):
    score+=2; reasons.append('same_geography')
   if exact(a,b,'Stream'):
    score+=2; reasons.append('same_stream')
-  shared=sorted(T[mid]&T[oid])
   if shared:
-   weight=min(12,3*len(shared)); score+=weight; reasons.append('shared_canonical_terms:'+','.join(shared[:6]))
-  # A stronger boost for an exact non-trivial connection label.
-  if exact(a,b,'Connection'):
+   weight=min(12,4*len(shared)); score+=weight; reasons.append('shared_canonical_terms:'+','.join(shared[:6]))
+  if same_connection:
    score+=8; reasons.append('same_connection_label')
   if score>=8:
    ranked[mid].append((score,oid,reasons)); ranked[oid].append((score,mid,reasons))
@@ -72,7 +78,7 @@ for mid,item in graph.items():
 
 graph_doc['status']='RECIPROCAL_FORMAL_TEXTUAL_AND_CONTEXTUAL_NAVIGATION_EDGES'
 graph_doc['boundary']='Formal related edges derive only from Parent_Master_ID and Linked_Proceedings. Textual, contextual-similarity and same-organ links are navigation aids and do not establish joinder, transfer, common parties, common knowledge, merits, causation or liability.'
-graph_doc['contextual_method']='Top canonical-field similarities using exact origin/geography/stream plus shared meaningful terms from Connection/Object/Secondary_Reference; threshold >=8; strongest 12 per record then reciprocal symmetrisation.'
+graph_doc['contextual_method']='Contextual links require at least one meaningful shared canonical term from Connection/Object/Secondary_Reference or an exact non-empty Connection label. Same origin/geography/stream are boosts only. Generic procedural vocabulary is excluded; threshold >=8; strongest 12 per record then reciprocal symmetrisation.'
 graph_path.write_text(json.dumps(graph_doc,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
 
 def cards(mid,lang):
@@ -83,10 +89,12 @@ def cards(mid,lang):
   rows.append(f"<a class='pd-proc-link' href='{escape(href)}'><code>{escape(oid)}</code><strong>{escape(r.get('Reference') or oid)}</strong><small>{escape(reason)}</small></a>")
  return ''.join(rows) or '<p class="pd-muted">—</p>'
 
+context_re=re.compile(r"\n?<section class='pd-proc-shell' data-contextual-related-navigation='20260902'>.*?</section>\n?", re.S)
 for mid in by_id:
  for lang in ('es','en'):
   p=ROOT/routes[mid][lang]/'index.html'; h=p.read_text(encoding='utf-8')
-  if 'data-contextual-related-navigation=' in h: continue
+  # Regeneration is idempotent: replace any prior contextual block with the freshly scored block.
+  h=context_re.sub('\n',h)
   if lang=='es':
    anchor="<section class='pd-proc-shell'><h2>Navegación: mismo órgano de origen</h2>"
    section="<section class='pd-proc-shell' data-contextual-related-navigation='20260902'><h2>Procedimientos relacionados · navegación contextual</h2><p class='pd-muted'>Enlaces calculados desde campos canónicos compartidos. Sirven para reconstruir el perímetro y descubrir expedientes vecinos, pero <strong>no</strong> prueban acumulación, identidad de partes, conexión procesal formal, conocimiento compartido, causalidad ni responsabilidad.</p><div class='pd-proc-links'>"+cards(mid,lang)+"</div></section>\n"
