@@ -16,6 +16,9 @@ graph = {r['master_id']: r for r in graph_doc['records']}
 assert routes_doc['record_count'] == len(records) == len(routes), (routes_doc['record_count'], len(records), len(routes))
 assert graph_doc['record_count'] == len(records) == len(graph)
 assert set(routes) == set(by_id) == set(graph)
+assert 'LZ-CIV-050' not in by_id, 'duplicate 1041/2017 row survived reconciliation'
+assert sum(r.get('Reference') == 'Diligencias Preliminares 1041/2017' for r in records) == 1
+assert by_id['GC-CIV-003']['NIG'] == '3501642120170028407'
 
 for mid, row in by_id.items():
     for lang in ('es','en'):
@@ -42,32 +45,37 @@ for p in (ROOT/'es/procedimientos/index.html', ROOT/'en/proceedings/index.html')
 search = (ROOT/'assets/canonical-home-search-20260902.js').read_text(encoding='utf-8')
 for marker in ('proceeding-page-routes-20260902.json', 'proceedingRoutes[record.Master_ID]?.[lang]'):
     assert marker in search, marker
-
-for path, marker in [
-    (ROOT/'es/registro-maestro-procedimientos/index.html', '../procedimientos/'),
-    (ROOT/'en/master-proceedings-register/index.html', '../proceedings/'),
-]:
+for path, marker in [(ROOT/'es/registro-maestro-procedimientos/index.html', '../procedimientos/'), (ROOT/'en/master-proceedings-register/index.html', '../proceedings/')]:
     assert marker in path.read_text(encoding='utf-8'), f'directory backlink missing in {path}'
 
-# Recovered references must have dedicated pages and public rows.
 required_refs = [
-    'Procedimiento Ordinario 467/2010','Rollo 793/2012','DP 3017/2014','DP 168/2015','DP 2084/2016',
-    'Rollo 526/2013','P.O. 1241/2011','Medidas cautelares 1355/2011','P.O. 562/2014','P.O. 213/2015',
-    'Juicio Verbal 268/2016','Diligencias Preliminares 1041/2017','273/2013','302/2018','49/2018','92/2012'
+    'Procedimiento Ordinario 467/2010','Juicio Verbal 1260/2011','Rollo 793/2012','P.O. 1241/2011','Medidas cautelares 1355/2011',
+    'P.O. 562/2014','P.O. 213/2015','Juicio Verbal 268/2016','DP 3017/2014','DP 168/2015','DP 2084/2016','Rollo 526/2013',
+    'DP 332/2014','DP 1132/2018','Rollo 1010/2018','Diligencias Preliminares 1041/2017','273/2013','302/2018','49/2018','92/2012'
 ]
-refs = {r.get('Reference'): r['Master_ID'] for r in records}
+refs = {}
+for record in records: refs.setdefault(record.get('Reference'), []).append(record['Master_ID'])
 for ref in required_refs:
     assert ref in refs, f'missing recovered reference {ref}'
-    mid = refs[ref]
+    assert len(refs[ref]) == 1, f'duplicate recovered reference {ref}: {refs[ref]}'
+    mid = refs[ref][0]
     assert (ROOT/routes[mid]['es']/'index.html').is_file()
     assert (ROOT/routes[mid]['en']/'index.html').is_file()
 
-# Source-supported judge identities must remain explicit and unknown office-holders remain gaps.
 coverage_doc = json.loads((DATA/'proceeding-justice-authority-coverage-20260902.json').read_text(encoding='utf-8'))
 coverage = {r['master_id']: r for r in coverage_doc['records']}
 assert coverage['LZ-CIV-045']['judge_or_magistrate']['person_ids'] == ['PD-SP-P-0163']
 assert set(coverage['LZ-APP-046']['judge_or_magistrate']['person_ids']) == {'PD-SP-P-0164','PD-SP-P-0130','PD-SP-P-0129'}
 assert coverage['LZ-JUD-047']['judge_or_magistrate']['state'] == 'SOURCE_GAP'
 assert coverage['LZ-JUD-047']['laj']['state'] == 'SOURCE_GAP'
+assert coverage['GC-CIV-003']['institution_ids'] == ['PD-SP-I-0048']
+assert coverage['GC-CIV-003']['judge_or_magistrate']['person_ids'] == ['PD-SP-P-0124']
+assert coverage['GC-CIV-003']['laj']['person_ids'] == ['PD-SP-P-0165']
 
-print('PASS dedicated proceeding pages/interlinks:', len(records), 'public records;', sum(len(v['formal_related']) for v in graph.values())//2, 'reciprocal formal edges')
+for lang in ('es','en'):
+    html = (ROOT/routes['GC-CIV-003'][lang]/'index.html').read_text(encoding='utf-8')
+    for identifier in ('PD-SP-I-0048','PD-SP-P-0124','PD-SP-P-0165'):
+        assert f'<code>{identifier} ^</code>' in html, f'{identifier} not linked from GC-CIV-003 {lang}'
+    assert '3501642120170028407' in html
+
+print('PASS dedicated proceeding pages/interlinks:', len(records), 'public records;', sum(len(v['formal_related']) for v in graph.values())//2, 'reciprocal formal edges; 1041/2017 reconciled')
