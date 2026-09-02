@@ -15,9 +15,8 @@ jobs:
         with:
           ref: authority-search/historic-proceedings-search-backfill-20260902
           fetch-depth: 0
-      - name: Build canonical backfill and proceeding pages
+      - name: Regenerate dedicated pages and maximum safe interlinks
         run: |
-          python3 scripts/_backfill_historic_proceedings_search_20260902.py
           python3 scripts/_generate_proceeding_pages_and_interlinks_20260902.py
           python3 scripts/_enrich_proceeding_contextual_links_20260902.py
       - name: Reconcile static CAEPR count markers
@@ -43,28 +42,14 @@ jobs:
         run: |
           git config user.name por-derecho-governance-bot
           git config user.email sbu001monterecco@users.noreply.github.com
-          git add archive/PROCEEDINGS_MASTER_REGISTER.csv \
-            assets/data/proceedings-master-public-v1.json \
-            assets/data/matter-identity-registry-v1.json \
-            assets/data/matter-identity-registry-v1.historic-arrecife-judicial-people-20260902.json \
-            assets/data/matter-identity-registry-v1.historic-arrecife-judicial-institutions-20260902.json \
-            assets/data/justice-authority-register-current-v2.json \
-            assets/data/proceeding-justice-authority-coverage-20260902.json \
-            assets/data/proceeding-page-routes-20260902.json \
+          git add assets/data/proceeding-page-routes-20260902.json \
             assets/data/proceeding-interlink-graph-20260902.json \
             assets/canonical-home-search-20260902.js \
             assets/justice-professionals-current-overlay-20260902.js \
-            es/registro-autoridad-historica-arrecife/index.html \
-            en/historic-arrecife-justice-authority-register/index.html \
             es/procedimientos en/proceedings \
             es/registro-maestro-procedimientos/index.html \
             en/master-proceedings-register/index.html \
             sitemap.xml \
-            ops/CURRENT_UNITARY_STATE.json \
-            scripts/validate_canonical_home_search.py \
-            scripts/validate_operational_truth.py \
-            scripts/validate_current_reverse_engineered_digest.py \
-            scripts/validate_dp3205_2014_publication.py \
             es/registro-identidad-materia/index.html \
             en/matter-identity-registry/index.html
           git commit -m "Expand proceeding pages with contextual reciprocal navigation" || exit 0
