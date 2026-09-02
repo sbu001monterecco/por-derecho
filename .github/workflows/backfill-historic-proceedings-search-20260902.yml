@@ -15,9 +15,8 @@ jobs:
         with:
           ref: authority-search/historic-proceedings-search-backfill-20260902
           fetch-depth: 0
-      - name: Regenerate dedicated pages and maximum safe interlinks
+      - name: Enrich committed proceeding pages with maximum safe contextual interlinks
         run: |
-          python3 scripts/_generate_proceeding_pages_and_interlinks_20260902.py
           python3 scripts/_enrich_proceeding_contextual_links_20260902.py
       - name: Reconcile static CAEPR count markers
         run: |
@@ -38,18 +37,12 @@ jobs:
           python3 scripts/validate_operational_truth.py
           python3 scripts/validate_current_reverse_engineered_digest.py
           python3 scripts/validate_dp3205_2014_publication.py
-      - name: Commit generated release
+      - name: Commit contextual interlink release
         run: |
           git config user.name por-derecho-governance-bot
           git config user.email sbu001monterecco@users.noreply.github.com
-          git add assets/data/proceeding-page-routes-20260902.json \
-            assets/data/proceeding-interlink-graph-20260902.json \
-            assets/canonical-home-search-20260902.js \
-            assets/justice-professionals-current-overlay-20260902.js \
+          git add assets/data/proceeding-interlink-graph-20260902.json \
             es/procedimientos en/proceedings \
-            es/registro-maestro-procedimientos/index.html \
-            en/master-proceedings-register/index.html \
-            sitemap.xml \
             es/registro-identidad-materia/index.html \
             en/matter-identity-registry/index.html
           git commit -m "Expand proceeding pages with contextual reciprocal navigation" || exit 0
