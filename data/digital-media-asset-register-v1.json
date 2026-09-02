@@ -1,7 +1,7 @@
 {
   "schema": "por-derecho.digital-media-asset-register.v1",
   "register_id": "PD-DMA-REG-0001",
-  "control_date": "2026-09-01",
+  "control_date": "2026-09-02",
   "status": "ACTIVE_CANONICAL_REGISTER",
   "caret_semantics": "A terminal caret identifies one exact byte object whose SHA-256, byte length, MIME/format and dimensions where applicable are recorded. It does not validate factual content, publication status, ownership, endorsement, knowledge, intent or legal responsibility.",
   "namespace_separation": "PD-DMA caret references identify digital/media files. They are separate from CAEPR person/entity identity carets and must not be conflated.",
@@ -20,6 +20,41 @@
       "publisher": "Cinco Días",
       "claim": "The 4 February 2026 article reports CEO figures of EUR 44m for 2024, around EUR 50m for 2025 and a EUR 60m forecast for 2026 for the management company.",
       "url": "https://cincodias.elpais.com/companias/2026-02-04/la-gestora-canarian-hospitality-firma-su-noveno-hotel-en-el-archipielago-y-el-tercero-con-radisson.html"
+    },
+    {
+      "id": "SRC-CH-ROADMAP-20260902",
+      "source_type": "COMPANY_SELF_DESCRIPTION",
+      "publisher": "Canarian Hospitality",
+      "claim": "The company road map names the hotel openings and announced projects represented in the satire; the source records a commercial/operational perimeter and does not establish common ownership.",
+      "url": "https://canarianhospitality.com/"
+    },
+    {
+      "id": "SRC-BOE-B-2012-22189",
+      "source_type": "OFFICIAL_GAZETTE",
+      "publisher": "Boletín Oficial del Estado",
+      "claim": "Official notice of the 6 June 2012 appointment of Francisco de Borja Rodríguez-Batllori Laffitte as insolvency administrator in Concurso 36/2012 concerning Luchy Playa Blanca, S.L.U.",
+      "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-B-2012-22189"
+    },
+    {
+      "id": "SRC-CUYAS-TEAM-20260902",
+      "source_type": "FIRST_PARTY_PROFESSIONAL_PROFILE",
+      "publisher": "Cuyás Abogados",
+      "claim": "The firm's current public team page lists Borja Rodríguez-Batllori Laffitte as a lawyer and publishes an es.gt.com professional address; this supports the dated present professional-perimeter label only.",
+      "url": "https://www.cuyasabogados.com/"
+    },
+    {
+      "id": "SRC-RSM-SANTELMO-20240703",
+      "source_type": "FIRST_PARTY_PROFESSIONAL_ANNOUNCEMENT",
+      "publisher": "RSM Spain",
+      "claim": "RSM states that Eduardo Sánchez Iglesias joined its Tax & Legal area with the SanTelmo team in July 2024.",
+      "url": "https://www.rsm.global/spain/en/news/rsm-grows-las-palmas-incorporation-san-telmo-office"
+    },
+    {
+      "id": "SRC-RIC-CAPITAL-ENRIQUE-GUERRA-20260902",
+      "source_type": "FIRST_PARTY_PROFESSIONAL_PROFILE",
+      "publisher": "RIC Capital",
+      "claim": "The first-party profile identifies Enrique Guerra Suárez and his published legal-fiscal and investor-relations capacity.",
+      "url": "https://ric.capital/enrique-guerra-dptolegal/"
     }
   ],
   "families": [
@@ -27,9 +62,10 @@
       "family_id": "PD-DMA-FAM-AMHP-001",
       "title": "Acosta Matos / Canarian Hospitality hotel-platform satire and public-interest explanation",
       "scope": "Visual family distinguishing hotel sales under management, the manager's own turnover, ownership/equity, management/operation, brand, capital, RIC/RICPE, construction, mandates/advice and media visibility.",
-      "current_primary_es": "PD-DMA-0001",
+      "current_primary_es": "PD-DMA-0003",
       "current_primary_en": "PD-DMA-0002",
       "corrected_prior_style_variants": ["PD-DMA-0003", "PD-DMA-0004"],
+      "current_spanish_channel_files": ["PD-DMA-0003-WEB-EMAIL-PNG^", "PD-DMA-0003-LINKEDIN-PNG^"],
       "mandatory_boundary": "Managed-hotel sales and the management company's own reported turnover are different measures and must not be mechanically added. Platform proximity does not establish common ownership, shared knowledge or shared responsibility."
     }
   ],
@@ -63,12 +99,14 @@
       "family_id": "PD-DMA-FAM-AMHP-001",
       "title": "Catálogo satírico de la plataforma hotelera",
       "language": "es",
-      "edition": "CORRECTED_PRIOR_STYLE_ONE",
-      "publication_status": "PUBLIC_VARIANT",
+      "edition": "USER_APPROVED_NAMED_PERSON_CATALOGUE",
+      "publication_status": "PUBLIC_PRIMARY_SPANISH",
       "satire_compliance_id": "PD-SAT-AMHP-0001",
-      "web_file": "PD-DMA-0003^",
-      "outreach_png": "PD-DMA-0003-PNG^",
-      "sources": ["SRC-CH-ABOUT-20260901", "SRC-CINCO-DIAS-20260204"]
+      "web_file": "PD-DMA-0003-PAGE^",
+      "outreach_png": "PD-DMA-0003-WEB-EMAIL-PNG^",
+      "social_png": "PD-DMA-0003-LINKEDIN-PNG^",
+      "superseded_outreach_png": "PD-DMA-0003-PNG^",
+      "sources": ["SRC-CH-ABOUT-20260901", "SRC-CINCO-DIAS-20260204", "SRC-CH-ROADMAP-20260902", "SRC-BOE-B-2012-22189", "SRC-CUYAS-TEAM-20260902", "SRC-RSM-SANTELMO-20240703", "SRC-RIC-CAPITAL-ENRIQUE-GUERRA-20260902"]
     },
     {
       "reference": "PD-DMA-0004",
@@ -152,7 +190,7 @@
       "bytes": 13773,
       "sha256": "6f2bcb6ed10b198871dcc60ea09e36b2a250b75d9959817d3e0191854f434f38",
       "repository_mirror": true,
-      "publication_status": "PUBLIC_VARIANT"
+      "publication_status": "PUBLIC_ARCHIVE_NOT_RENDERED_ON_CURRENT_ES_PAGE"
     },
     {
       "reference": "PD-DMA-0003-PNG^",
@@ -165,7 +203,53 @@
       "bytes": 204794,
       "sha256": "1bd492c1858bc911d14bbd046c5bb501947d4076c91472cdfe3f655927da113b",
       "repository_mirror": false,
-      "repository_mirror_gap": "Hash-locked original is preserved outside the repository binary mirror; website serves PD-DMA-0003^."
+      "repository_mirror_gap": "Hash-locked original is preserved outside the repository binary mirror; it was attached in error on 1 September 2026 and is not an approved current outreach file.",
+      "publication_status": "SUPERSEDED_WRONG_OUTREACH_ATTACHMENT",
+      "replacement_references": ["PD-DMA-0003-WEB-EMAIL-PNG^", "PD-DMA-0003-LINKEDIN-PNG^"]
+    },
+    {
+      "reference": "PD-DMA-0003-PAGE^",
+      "logical_asset": "PD-DMA-0003",
+      "role": "PUBLIC_WEB_PRESENTATION",
+      "repository_path": "es/acosta-matos-plataforma-hotelera/index.html",
+      "public_url": "/es/acosta-matos-plataforma-hotelera/",
+      "mime": "text/html",
+      "bytes": 16654,
+      "sha256": "84cfc205e53ce15e6d54b1fecc2c02e0c0bbcc7d043c7e2fb6d4a6fe979a2f4b",
+      "repository_mirror": true,
+      "publication_status": "PUBLIC_PRIMARY_SPANISH"
+    },
+    {
+      "reference": "PD-DMA-0003-WEB-EMAIL-PNG^",
+      "logical_asset": "PD-DMA-0003",
+      "role": "PUBLIC_WEB_AND_EMAIL_MASTER",
+      "source_filename": "acosta-matos-spoof-web-email-1080x1920.png",
+      "repository_path": "assets/media/pd-dma-0003-web-email-es.png",
+      "public_url": "/assets/media/pd-dma-0003-web-email-es.png",
+      "mime": "image/png",
+      "width_px": 1080,
+      "height_px": 1920,
+      "bytes": 3284092,
+      "sha256": "2677eb53121bb6d6f39d75b3652c30403d0b1980f69ef10cd31bdca372219165",
+      "repository_mirror": true,
+      "publication_status": "PUBLIC_CURRENT_APPROVED",
+      "intended_channels": ["website", "email attachment", "email direct reference", "archive"]
+    },
+    {
+      "reference": "PD-DMA-0003-LINKEDIN-PNG^",
+      "logical_asset": "PD-DMA-0003",
+      "role": "PUBLIC_LINKEDIN_MASTER",
+      "source_filename": "acosta-matos-spoof-linkedin-1080x1350.png",
+      "repository_path": "assets/media/pd-dma-0003-linkedin-es.png",
+      "public_url": "/assets/media/pd-dma-0003-linkedin-es.png",
+      "mime": "image/png",
+      "width_px": 1080,
+      "height_px": 1350,
+      "bytes": 2425141,
+      "sha256": "6d86c54ceb5996ec2b72c00ad4d6fb405029843e34e399b929f622bd80d8f6a2",
+      "repository_mirror": true,
+      "publication_status": "PUBLIC_CURRENT_APPROVED",
+      "intended_channels": ["LinkedIn", "website", "email reference", "archive"]
     },
     {
       "reference": "PD-DMA-0004^",
