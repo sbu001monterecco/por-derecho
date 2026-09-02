@@ -1,16 +1,30 @@
 # Active workspace continuity index
 
-**Current workspace:** `PD-WS-20260901-0001`  
-**Current continuation pointer:** `PD-WCH-20260901-AMHP-3P-002`  
-**Status:** `DELETION_SAFE_PERSON_IDENTITY_CLOSED_WITH_OPEN_FIRM_AND_PUBLICATION_WORK`
+**Current workspace:** `PD-WS-20260902-0001`  
+**Current continuation pointer:** `PD-WCH-20260902-AUTH-SEARCH-001`  
+**Status:** `DELETION_SAFE_WITH_OPEN_WORK`
 
-**Current checkpoint:** the Acosta Matos / Canarian Hospitality hotel-platform media workspace now has a fail-closed satire/name-display gate and a closed three-person CAEPR denominator: Francisco de Borja Rodríguez-Batllori Laffitte (`PD-SP-P-0010`), Eduardo Sánchez Iglesias (`PD-SP-P-0161`) and Enrique Guerra Suárez (`PD-SP-P-0162`) are `CARET_CONFIRMED` for identity only. Exact Grant Thornton / San Telmo-RSM / RICPE legal-person and date-specific affiliation gaps remain open; direct Borja–Enrique remains **NOT ESTABLISHED**. Portrait-file hashes, Gmail findings, the proposed `Caricatura y contraste documental` page, the source-controlled LinkedIn draft and the explicit **NO IMAGE GENERATION** hold remain preserved. The reconciled base is `main` `a116f9823dab53c22139a66b43a9fbad60b305fe`; a successor must still re-fetch current `main` before further changes.
+**Current checkpoint:** the 2 September judicial/prosecutorial authority-register, CAEPR caret-search and court-hierarchy release is merged and `LIVE_VERIFIED` on `0145793d53d86a99f34ef60ff69db7df871e4910`. ES/EN homepage search was browser-verified with 464 indexed entries and representative HTTP-200 click-throughs. This checkpoint adds the previously missing dedicated workspace/handoff object. Global historic-docket backfill remains explicitly open and is not certified complete.
 
 **Pointer semantics:** most recently checkpointed/default workspace; **not exclusive** and not a lock over concurrent workspaces.
 
 A ChatGPT thread is a temporary working surface. A `PD-WS-*` workspace is the durable continuity object. More than one substantive workspace may be active or preserved at the same time.
 
 ## Active and recently preserved workspaces
+
+### `PD-WS-20260902-0001` — justice authority / caret search / court hierarchy — current checkpoint
+
+State: `DELETION_SAFE_WITH_OPEN_WORK`; release state `LIVE_VERIFIED`.
+
+Read:
+
+1. `archive/handoffs/2026-09-02-justice-authority-caret-search-live-closeout.md`
+2. `archive/handoffs/2026-09-02-justice-authority-caret-search-live-closeout.json`
+3. `.github/governance/JUDICIAL_PROSECUTORIAL_AUTHORITY_REGISTER_CONTINUITY_02SEP2026.md`
+4. `assets/data/justice-authority-register-current-v2.json`
+5. the CAEPR / Master Proceedings controls named by the handoff.
+
+Critical boundary: **59 source-identified justice professionals / 56 confirmed / 3 pending is the current recovered-source denominator, not a certified complete historic/current docket denominator.** Unknown applicable Judges/LAJs/Fiscals remain explicit source gaps, never silent blanks.
 
 ### `PD-WS-20260901-0001` — Acosta Matos / Canarian Hospitality hotel-platform media package — current checkpoint
 
@@ -107,6 +121,6 @@ For `PD-WS-20260901-0001`, the three current portrait binaries are not falsely r
 
 ## New-thread bootstrap
 
-> Continue `PD-WS-20260901-0001` from repository continuity state, not prior chat memory. Read `CURRENT_WORKSPACE_HANDOFF.md`, the satire/name-display fail-closed closeout, the three-professional checkpoint and its machine companion, then the identity reconciliation and portrait register. Re-fetch current `main` before changing anything. The three people are already identity-confirmed as `PD-SP-P-0010`, `PD-SP-P-0161` and `PD-SP-P-0162`; do not allocate replacements. Apply the new satire compliance register/validator, `PD-CONT-DIGEST-001` and the CAEPR `^` protocol. Next close only the exact-firm/date-specific affiliation gaps and continue the authorised source scan for Grant Thornton, San Telmo/RSM and RICPE mandates, clients, investor introductions, DD, conflicts and control decisions. Preserve direct Borja–Enrique as NOT ESTABLISHED. Do not generate the new image until I explicitly lift the no-image hold. When lifted, create a new PD-DMA derivative closer to visual concepts 1 and 2, build the bilingual `Caricatura y contraste documental` page and finalize the LinkedIn post from verified source/live state. Maximum pressure means maximum documentary specificity and accountability, not unsupported guilt by association.
+> Continue `PD-WS-20260902-0001` from repository continuity state, not prior chat memory. Read `CURRENT_WORKSPACE_HANDOFF.md`, `archive/handoffs/2026-09-02-justice-authority-caret-search-live-closeout.md`, its machine companion, the judicial/prosecutorial authority continuity control and the current authority/CAEPR/Master Proceedings controls. Re-fetch current `main` before changes. Preserve explicit historic-docket gaps and act/date/capacity boundaries. Do not re-run broad discovery unless the handoff identifies a stale gap. Then continue the priority proceeding, currently E.G. 745/2026, using this verified authority/caret/search layer as the continuity substrate.
 
 Older topic-specific deletion audits and handoffs remain historical controls. Updating the most-recent/default pointer does not invalidate or hide them.

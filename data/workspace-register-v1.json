@@ -1,10 +1,10 @@
 {
   "schema": "por-derecho.workspace-register.v1",
   "register_id": "PD-WS-REG-001",
-  "control_date": "2026-09-01",
+  "control_date": "2026-09-02",
   "status": "ACTIVE_RUNTIME_ENABLED_CONCURRENT_SAFE",
   "workspace_id_pattern": "PD-WS-YYYYMMDD-NNNN",
-  "default_workspace_id": "PD-WS-20260901-0001",
+  "default_workspace_id": "PD-WS-20260902-0001",
   "default_pointer_semantics": "MOST_RECENTLY_CHECKPOINTED_NOT_EXCLUSIVE",
   "governance": {
     "continuous_persistence": ".github/governance/AUTOMATIC_WORKSPACE_PERSISTENCE_ARCHITECTURE_01SEP2026.md",
@@ -183,6 +183,49 @@
       "publication_merge_sha": "cc3d0985ae014282e8a1f7805e0193d15e673177",
       "pages_run_id": 33547241129,
       "next_target_mode": "COUNSEL_REVIEW_P0_FILING_THEN_CERTIFIED_APPEAL_ETJ_AND_PROPERTY_GAP_CLOSURE"
+    },
+    {
+      "workspace_id": "PD-WS-20260902-0001",
+      "title": "Judicial/prosecutorial authority register, caret search and court-hierarchy release",
+      "status": "DELETION_SAFE_WITH_OPEN_WORK",
+      "current_handoff_id": "PD-WCH-20260902-AUTH-SEARCH-001",
+      "handoff_path": "archive/handoffs/2026-09-02-justice-authority-caret-search-live-closeout.md",
+      "machine_handoff_path": "archive/handoffs/2026-09-02-justice-authority-caret-search-live-closeout.json",
+      "topic_keys": [
+        "JUSTICE_AUTHORITY",
+        "CARET",
+        "CAEPR",
+        "JUDGES",
+        "LAJ",
+        "FISCALIA",
+        "FISCALES",
+        "COURT_HIERARCHY",
+        "HOMEPAGE_SEARCH",
+        "CONTINUITY"
+      ],
+      "repository": "sbu001monterecco/por-derecho",
+      "public_private_boundary": "PUBLIC_REPO_CONTAINS_SOURCE_SAFE_CANONICAL_IDENTITIES_GOVERNANCE_PUBLIC_ROUTES_AND_VERIFICATION_METADATA; PRIVATE_NATIVE_DOCKETS_AND_CONNECTED_SOURCE_CONTENT_ARE_NOT_COPIED",
+      "continuous_capture_mode": "CONNECTED_AGENTIC_CHECKPOINTING",
+      "current_main_sha_checked": "0145793d53d86a99f34ef60ff69db7df871e4910",
+      "primary_publication_pr": 1347,
+      "primary_merge_sha": "5e12444f44b27b3c94d7bc31c80e2d56ef58bb08",
+      "visibility_hotfix_pr": 1351,
+      "publication_merge_sha": "0145793d53d86a99f34ef60ff69db7df871e4910",
+      "pages_run_id": 33622844666,
+      "live_browser_verification_run_id": 33623082252,
+      "verification_artifact_id": 9843703946,
+      "verification_artifact_sha256": "2738c514d4523d9a645233db848b5d51d457e23ce7598b3e89e2149bc0fd0fd9",
+      "validation_state": "LIVE_VERIFIED_ES_EN_CANONICAL_SEARCH_464_ENTRIES_REPRESENTATIVE_CLICKTHROUGHS_HTTP_200_AUTHORITY_REGISTER_CI_GREEN",
+      "authority_governance": ".github/governance/JUDICIAL_PROSECUTORIAL_AUTHORITY_REGISTER_CONTINUITY_02SEP2026.md",
+      "authority_control_id": "PD-SP-JUSTICE-AUTHORITY-CURRENT-20260902-01",
+      "current_source_identified_denominator": {
+        "named_people": 59,
+        "caret_confirmed": 56,
+        "caret_pending": 3,
+        "caret_suspended": 0
+      },
+      "open_gap_state": "GLOBAL_HISTORIC_DOCKET_BACKFILL_OPEN_EXPLICIT_SOURCE_GAPS_REQUIRED",
+      "next_target_mode": "TARGETED_PROCEEDING_ACTIONS_WITH_AUTHORITY_BACKFILL_AS_PRIMARY_SOURCES_SURFACE; EG_745_2026_PRIORITY"
     }
   ],
   "registration_rule": "Create or recover a stable workspace ID for every substantive Por Derecho workspace when persistence-capable work begins. A workspace may span multiple ChatGPT threads; a ChatGPT thread may be superseded without changing the workspace ID.",
