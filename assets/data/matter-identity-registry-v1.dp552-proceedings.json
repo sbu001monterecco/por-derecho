@@ -1,0 +1,49 @@
+{
+  "schema": "por-derecho.matter-identity-registry.part.v1",
+  "registry_id": "PD-SP-IDENTITY-REGISTRY-001",
+  "type": "PROCEEDING",
+  "scope": "DP 552/2025 origin and DP 711/2025 territorial continuation",
+  "records": [
+    {
+      "id": "PD-SP-R-0044",
+      "type": "PROCEEDING",
+      "name": "DP 552/2025 — Juzgado de Instrucción nº 2 de San Cristóbal de La Laguna",
+      "aliases": ["DP 552/2025", "DP 552/2025-00", "0000552/2025"],
+      "identity_resolution": "CARET_CONFIRMED",
+      "master_register_ids": ["TF-CRI-011"],
+      "nig": "3802343220250001820",
+      "routes": {"es": "/es/dp-552-2025/", "en": "/en/dp-552-2025/"},
+      "origin_institution": "PD-SP-I-0044",
+      "procedural_state": "ORIGIN_PROCEEDING_TERRITORIALLY_CONTINUED_AS_DP_711_2025; downstream appeal outcome open",
+      "related_master_register_ids": ["LZ-JUD-047", "TF-CIV-002", "TF-CRI-003"],
+      "identity_sources": [
+        "20-Feb-2025 complaint and source-controlled 87-page original",
+        "March-2025 enlargement with LexNET receipt",
+        "13-Mar-2025 ETJ 163/2020 filing identifying DP 552/2025",
+        "17-Mar-2025 DP 711/2025 court order header expressly naming origin DP 552/2025-00 and NIG 3802343220250001820"
+      ],
+      "identity_boundary": "The proceeding identity, origin court, shared NIG and documented downstream relationships are confirmed. Allegations in the complaint/enlargement are not judicial findings. The exact signed inhibition/remission act and complete certified docket remain open."
+    },
+    {
+      "id": "PD-SP-R-0045",
+      "type": "PROCEEDING",
+      "name": "DP 711/2025 — Juzgado de Instrucción nº 2 de Arrecife",
+      "aliases": ["DP 711/2025", "0000711/2025"],
+      "identity_resolution": "CARET_CONFIRMED",
+      "master_register_ids": ["LZ-JUD-047"],
+      "nig": "3802343220250001820",
+      "routes": {"es": "/es/dp-711-2025/", "en": "/en/dp-711-2025/"},
+      "institution": "PD-SP-I-0024",
+      "origin_proceeding": "PD-SP-R-0044",
+      "procedural_state": "PROVISIONAL_DISMISSAL_17MAR2025; REFORM_DISMISSED_25SEP2025; APPEAL_PRESENTATION_DOCUMENTED; APPELLATE_OUTCOME_NOT_LOCATED",
+      "related_master_register_ids": ["TF-CRI-011", "TF-CIV-002"],
+      "identity_sources": [
+        "17-Mar-2025 signed order with origin DP 552/2025-00 and shared NIG",
+        "04-Apr-2025 providencia of personation",
+        "25-Sep-2025 signed order dismissing reform",
+        "October-2025 appeal communications and LexNET presentation packet"
+      ],
+      "identity_boundary": "The origin relationship and located first-instance acts are confirmed. No Audiencia roll, appellate panel or appellate outcome is asserted until a primary source is located. Provisional dismissal is not described as an acquittal."
+    }
+  ]
+}
