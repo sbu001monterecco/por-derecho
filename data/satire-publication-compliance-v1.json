@@ -1,7 +1,7 @@
 {
   "schema": "por-derecho.satire-publication-compliance.v1",
   "register_id": "PD-SAT-REG-0001",
-  "control_date": "2026-09-01",
+  "control_date": "2026-09-02",
   "status": "ACTIVE_CANONICAL_REGISTER",
   "governance": "ops/SATIRE_CARICATURE_SPOOF_GOVERNANCE_V1.json",
   "human_standard": ".github/governance/SATIRE_CARICATURE_SPOOF_PUBLICATION_STANDARD_ES_EN.md",
@@ -53,8 +53,74 @@
           "required_disclosure": "SATIRICAL / CARICATURE REPRESENTATION — NOT A REAL ADVERTISEMENT"
         }
       ],
-      "named_people": [],
-      "named_people_boundary": "No named individual appears in the six current public surfaces. Any future addition requires a person entry before publication; an image lock cannot upgrade CAEPR name status.",
+      "named_people": [
+        {
+          "display_name": "Francisco de Borja Rodríguez-Batllori Laffitte",
+          "naming_form": "FULL_CANONICAL_CARET_CONFIRMED",
+          "identity_state": "CARET_CONFIRMED",
+          "caepr_id": "PD-SP-P-0010",
+          "source_refs": ["SRC-BOE-B-2012-22189", "SRC-CUYAS-TEAM-20260902", "PD-AMHP-3P-ID-20260901"],
+          "factual_role": {
+            "label": "Administrador concursal de Luchy Playa Blanca, S.L.U. en el Concurso 36/2012",
+            "date_or_period": "nombramiento de 6 de junio de 2012",
+            "source_refs": ["SRC-BOE-B-2012-22189"]
+          },
+          "affiliation": {
+            "state": "CURRENT_VERIFIED_ON_DATE",
+            "verified_on": "2026-09-02",
+            "label": "Cuyás Abogados / perímetro profesional Grant Thornton Canarias",
+            "source_refs": ["SRC-CUYAS-TEAM-20260902"]
+          },
+          "satirical_function": {
+            "state": "QUESTION",
+            "label": "¿Qué papel desempeñó cada uno? No se le presenta como vendedor, financiador ni coordinador."
+          }
+        },
+        {
+          "display_name": "Eduardo Sánchez Iglesias",
+          "naming_form": "FULL_CANONICAL_CARET_CONFIRMED",
+          "identity_state": "CARET_CONFIRMED",
+          "caepr_id": "PD-SP-P-0161",
+          "source_refs": ["SRC-RSM-SANTELMO-20240703", "PD-AMHP-3P-ID-20260901"],
+          "factual_role": {
+            "label": "Profesional incorporado con el equipo de SanTelmo al área Tax & Legal de RSM",
+            "date_or_period": "julio de 2024",
+            "source_refs": ["SRC-RSM-SANTELMO-20240703"]
+          },
+          "affiliation": {
+            "state": "HISTORICAL_DATED",
+            "date_or_period": "SanTelmo antes de julio de 2024; incorporación al área RSM Tax & Legal en julio de 2024",
+            "source_refs": ["SRC-RSM-SANTELMO-20240703"]
+          },
+          "satirical_function": {
+            "state": "QUESTION",
+            "label": "¿Quién presenta al inversor y qué papel tuvo cada uno? No se afirma una función Sun Park específica."
+          }
+        },
+        {
+          "display_name": "Enrique Guerra Suárez",
+          "naming_form": "FULL_CANONICAL_CARET_CONFIRMED",
+          "identity_state": "CARET_CONFIRMED",
+          "caepr_id": "PD-SP-P-0162",
+          "source_refs": ["SRC-RIC-CAPITAL-ENRIQUE-GUERRA-20260902", "PD-AMHP-3P-ID-20260901"],
+          "factual_role": {
+            "label": "Director general, área legal-fiscal y relación con inversores según perfil profesional de RIC Capital",
+            "date_or_period": "perfil público comprobado el 2 de septiembre de 2026",
+            "source_refs": ["SRC-RIC-CAPITAL-ENRIQUE-GUERRA-20260902"]
+          },
+          "affiliation": {
+            "state": "CURRENT_VERIFIED_ON_DATE",
+            "verified_on": "2026-09-02",
+            "label": "RIC Capital / RIC Private Equity",
+            "source_refs": ["SRC-RIC-CAPITAL-ENRIQUE-GUERRA-20260902"]
+          },
+          "satirical_function": {
+            "state": "QUESTION",
+            "label": "¿Quién aporta o estructura el capital? La pregunta no atribuye una financiación concreta ni todas las decisiones RICPE."
+          }
+        }
+      ],
+      "named_people_boundary": "Las tres identidades están CARET_CONFIRMED: PD-SP-P-0010, PD-SP-P-0161 y PD-SP-P-0162. Los carets resuelven identidad solamente. Los roles y afiliaciones se registran separadamente por fuente y fecha; la composición no prueba venta, financiación, coordinación, conocimiento, intención, conducta ilícita ni responsabilidad.",
       "factual_role_and_satirical_function_separated": true,
       "evidence_states_present": [
         "DOCUMENTED_FACT",
@@ -65,7 +131,12 @@
       ],
       "source_refs": [
         "SRC-CH-ABOUT-20260901",
-        "SRC-CINCO-DIAS-20260204"
+        "SRC-CINCO-DIAS-20260204",
+        "SRC-CH-ROADMAP-20260902",
+        "SRC-BOE-B-2012-22189",
+        "SRC-CUYAS-TEAM-20260902",
+        "SRC-RSM-SANTELMO-20240703",
+        "SRC-RIC-CAPITAL-ENRIQUE-GUERRA-20260902"
       ],
       "material_boundaries": [
         "MANAGED_HOTEL_SALES_ARE_NOT_MANAGER_TURNOVER",
@@ -75,15 +146,15 @@
         "QUESTIONS_AND_METAPHORS_ARE_NOT_ADJUDICATED_FINDINGS"
       ],
       "opposing_counsel_risk_review": {
-        "HONOUR_REPUTATION_PROFESSIONAL_PRESTIGE": "PASS_NO_NAMED_PERSON_IN_CURRENT_SURFACES",
-        "FALSE_ENDORSEMENT_AUTHORSHIP_QUOTATION_MANDATE_OR_ROLE": "PASS_VISIBLE_NON_ENDORSEMENT_DISCLOSURE",
-        "IMAGE_LIKENESS_PERSONALITY_RIGHTS": "NOT_APPLICABLE_NO_PERSON_LIKENESS_IN_CURRENT_SURFACES",
-        "IMPLIED_DISHONESTY_CONFLICT_CORRUPTION_ILLEGALITY_OR_CRIMINALITY": "PASS_QUESTIONS_AND_ROLE_BOUNDARIES_VISIBLE",
+        "HONOUR_REPUTATION_PROFESSIONAL_PRESTIGE": "REVIEWED_NAMES_CARET_CONFIRMED_ROLES_SOURCE_DATED_AND_NO_LITERAL_SELLER_OR_CRIMINAL_LABEL",
+        "FALSE_ENDORSEMENT_AUTHORSHIP_QUOTATION_MANDATE_OR_ROLE": "PASS_VISIBLE_NON_ENDORSEMENT_DISCLOSURE_AND_FACTUAL_ROLE_SATIRICAL_QUESTION_SEPARATION",
+        "IMAGE_LIKENESS_PERSONALITY_RIGHTS": "REVIEWED_PUBLIC_PROFESSIONAL_CONTEXT_USER_APPROVED_DERIVATIVE_PROVENANCE_AND_NO_ENDORSEMENT_BOUNDARY",
+        "IMPLIED_DISHONESTY_CONFLICT_CORRUPTION_ILLEGALITY_OR_CRIMINALITY": "PASS_QUESTIONS_NOT_CONCLUSIONS_AND_NO_RESPONSIBILITY_BY_VISUAL_PROXIMITY_BOUNDARY",
         "LOGO_TRADE_DRESS_OR_REAL_ADVERTISING_CONFUSION": "PASS_VISIBLE_SATIRE_DISCLOSURE",
-        "PERSONAL_DATA_NECESSITY_AND_PROPORTIONALITY": "PASS_NO_PERSONAL_DATA_IN_CURRENT_SURFACES",
+        "PERSONAL_DATA_NECESSITY_AND_PROPORTIONALITY": "REVIEWED_PUBLIC_PROFESSIONAL_NAMES_ROLES_AND_LIKENESSES_ONLY_NO_PRIVATE_CONTACT_DATA",
         "CORRECTION_REPLY_TAKEDOWN_AND_NARROW_REVERT_PATH": "PASS_ADDITIVE_CORRECTION_AND_NORMAL_REVERT_PR"
       },
-      "approval_status": "PUBLIC_CURRENT_SURFACES_VALIDATED"
+      "approval_status": "PUBLIC_NAMED_PERSON_VARIANTS_USER_APPROVED_2026_09_02"
     }
   ]
 }
