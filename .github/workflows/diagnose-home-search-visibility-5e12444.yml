@@ -1,0 +1,62 @@
+name: Diagnose merged homepage search visibility
+
+on:
+  push:
+    branches: [verify/home-search-5e12444-20260902]
+    paths:
+      - '.github/workflows/diagnose-home-search-visibility-5e12444.yml'
+
+jobs:
+  diagnose:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          ref: verify/home-search-5e12444-20260902
+          fetch-depth: 0
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020
+        with:
+          node-version: '22'
+      - name: Diagnose exact merged tree
+        shell: bash
+        run: |
+          git worktree add --detach /tmp/site 5e12444f44b27b3c94d7bc31c80e2d56ef58bb08
+          mkdir -p /tmp/browser && cd /tmp/browser
+          npm init -y >/dev/null 2>&1
+          npm install playwright@1.55.0 >/dev/null 2>&1
+          npx playwright install --with-deps chromium >/dev/null
+          nohup python3 -m http.server 4173 --directory /tmp/site >/tmp/server.log 2>&1 &
+          sleep 2
+          cat > diagnose.js <<'JS'
+          const { chromium } = require('playwright');
+          (async()=>{
+            const browser = await chromium.launch({headless:true});
+            const page = await browser.newPage({viewport:{width:1440,height:1100}});
+            await page.goto('http://127.0.0.1:4173/es/', {waitUntil:'networkidle'});
+            await page.waitForSelector('#canonical-home-search-input', {state:'attached'});
+            const report = await page.evaluate(()=>{
+              const input = document.querySelector('#canonical-home-search-input');
+              const chain=[];
+              let el=input;
+              while(el){
+                const cs=getComputedStyle(el); const r=el.getBoundingClientRect();
+                chain.push({tag:el.tagName,id:el.id,class:el.className,hidden:el.hidden,ariaHidden:el.getAttribute('aria-hidden'),display:cs.display,visibility:cs.visibility,opacity:cs.opacity,width:r.width,height:r.height,overflow:cs.overflow,position:cs.position,contentVisibility:cs.contentVisibility});
+                el=el.parentElement;
+              }
+              const sheets=[];
+              for(const sheet of [...document.styleSheets]){
+                let rules=[]; try{rules=[...sheet.cssRules]}catch(e){continue}
+                for(const rule of rules){
+                  if(rule.selectorText && (rule.selectorText.includes('canonical') || rule.selectorText.includes('input') || rule.selectorText.includes('.section'))){
+                    sheets.push({href:sheet.href,selector:rule.selectorText,cssText:rule.cssText});
+                  }
+                }
+              }
+              return {url:location.href,ready:window.PorDerechoCanonicalSearch&&window.PorDerechoCanonicalSearch.count,chain,sheets};
+            });
+            console.log(JSON.stringify(report,null,2));
+            await browser.close();
+          })().catch(e=>{console.error(e);process.exit(1)});
+          JS
+          node diagnose.js
