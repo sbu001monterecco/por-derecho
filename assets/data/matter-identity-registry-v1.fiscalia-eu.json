@@ -1,0 +1,46 @@
+{
+  "schema": "por-derecho.matter-identity-registry.part.v1",
+  "registry_id": "PD-SP-IDENTITY-REGISTRY-001",
+  "type": "INSTITUTION",
+  "scope": "European Public Prosecutor's Office and the source-verified Spanish IGAE support unit; separate from the Spanish Ministerio Fiscal hierarchy",
+  "records": [
+    {
+      "id": "PD-SP-I-0045",
+      "type": "INSTITUTION",
+      "name": "Fiscalía Europea / European Public Prosecutor's Office (EPPO)",
+      "aliases": ["Fiscalía Europea", "European Public Prosecutor's Office", "EPPO"],
+      "routes": {
+        "es": "/es/ministerio-fiscal/#office-PD-SP-I-0045",
+        "en": "/en/public-prosecution-service/#office-PD-SP-I-0045"
+      },
+      "identity_resolution": "CARET_CONFIRMED",
+      "identity_sources": [
+        "EPPO official Spain member-office page identifying the regional office in Madrid as Fiscalía Europea",
+        "Spanish Organic Law 9/2021, article 16, on the Office of the European Public Prosecutor and European Delegated Prosecutors in Madrid",
+        "Primary REGAGE receipt in the controlled project corpus addressed to Fiscalía Europea"
+      ],
+      "not_same_as": ["PD-SP-I-0002", "PD-SP-I-0029"],
+      "identity_boundary": "Independent EU prosecution office. It is displayed beside, not inside, the Spanish Ministerio Fiscal hierarchy. A REGAGE presentation proves the stated registry presentation only and does not establish EPPO competence, allocation, investigation, examination or merits."
+    },
+    {
+      "id": "PD-SP-I-0046",
+      "type": "INSTITUTION",
+      "name": "Unidad de Apoyo de la IGAE a la Fiscalía Europea",
+      "aliases": ["Unidad de Apoyo a la Fiscalía Europea", "Unidad de Apoyo de la IGAE a la Fiscalía Europea"],
+      "routes": {
+        "es": "/es/ministerio-fiscal/#office-PD-SP-I-0046",
+        "en": "/en/public-prosecution-service/#office-PD-SP-I-0046"
+      },
+      "identity_resolution": "CARET_CONFIRMED",
+      "functional_parent_institution": "PD-SP-I-0045",
+      "organic_parent_text": "Intervención General de la Administración del Estado (IGAE)",
+      "identity_sources": [
+        "Official EPPO–IGAE protocol: the support unit is organically dependent on IGAE and functionally dependent on the European Public Prosecutor's Office",
+        "2026 BOE staffing record naming UNIDAD DE APOYO A LA FISCALIA EUROPEA",
+        "Primary REGAGE receipt in the controlled project corpus addressed to Unidad de Apoyo a la Fiscalía Europea"
+      ],
+      "not_same_as": ["PD-SP-I-0002", "PD-SP-I-0029"],
+      "identity_boundary": "Support unit for EPPO, not a Spanish Ministerio Fiscal office. Organic and functional relationships are kept distinct. Receipt at this destination does not prove transfer to EPPO, examination, investigation or merits."
+    }
+  ]
+}

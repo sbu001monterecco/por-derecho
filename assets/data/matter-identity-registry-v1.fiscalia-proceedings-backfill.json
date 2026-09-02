@@ -1,0 +1,63 @@
+{
+  "schema": "por-derecho.matter-identity-registry.part.v1",
+  "registry_id": "PD-SP-IDENTITY-REGISTRY-001",
+  "type": "PROCEEDING",
+  "scope": "Ministerio Fiscal proceeding identities previously present in the master register but missing a dedicated CAEPR proceeding identity",
+  "records": [
+    {
+      "id": "PD-SP-R-0044",
+      "type": "PROCEEDING",
+      "name": "DI 273/2013 — Fiscalía Provincial de Las Palmas",
+      "aliases": ["DI 273/2013"],
+      "routes": {
+        "es": "/es/ministerio-fiscal/#file-PD-SP-R-0044",
+        "en": "/en/public-prosecution-service/#file-PD-SP-R-0044"
+      },
+      "identity_resolution": "CARET_CONFIRMED",
+      "master_register_ids": ["GC-FIS-011"],
+      "competent_organ": "PD-SP-I-0020",
+      "procedural_state": "HISTORICAL_PROSECUTION_FILE_LATER_LED_TO_QUERELLA_AND_DP_332_2014_COMPLETE_FILE_PENDING",
+      "related_master_register_ids": ["LZ-JUD-002"],
+      "identity_sources": [
+        "archive/HANDOVER_MF_FISCALIA_FIRST_FRAME_JUSTICE_MAP_15AUG2026.md",
+        "archive/PROCEEDINGS_MASTER_REGISTER.csv"
+      ],
+      "identity_boundary": "Exact historical file identity and documented lineage only. The complete certified file, originating communication, performed diligences and transmission record remain open."
+    },
+    {
+      "id": "PD-SP-R-0045",
+      "type": "PROCEEDING",
+      "name": "Fiscalía 39/2014 — exact office and file scope pending",
+      "aliases": ["Fiscalía 39/2014", "39/2014 Fiscalía"],
+      "routes": {
+        "es": "/es/ministerio-fiscal/#file-PD-SP-R-0045",
+        "en": "/en/public-prosecution-service/#file-PD-SP-R-0045"
+      },
+      "identity_resolution": "CARET_PENDING",
+      "master_register_ids": ["GC-FIS-012"],
+      "procedural_state": "REFERENCE_LOCATED_PRIMARY_FILE_OFFICE_OBJECT_PARTIES_AND_DECISION_PENDING",
+      "identity_sources": ["archive/PROCEEDINGS_MASTER_REGISTER.csv"],
+      "identity_boundary": "Stable canonical unresolved-reference identity. The number is preserved without guessing the exact office, object, parties, acts, outcome or relationship to another file."
+    },
+    {
+      "id": "PD-SP-R-0046",
+      "type": "PROCEEDING",
+      "name": "E.G. 352/2025 — Fiscalía Anticorrupción",
+      "aliases": ["EG 352/2025", "E.G. 352/2025"],
+      "routes": {
+        "es": "/es/ministerio-fiscal/#file-PD-SP-R-0046",
+        "en": "/en/public-prosecution-service/#file-PD-SP-R-0046"
+      },
+      "identity_resolution": "CARET_CONFIRMED",
+      "master_register_ids": ["GC-FIS-015"],
+      "competent_organ": "PD-SP-I-0033",
+      "procedural_state": "EXACT_REFERENCE_AND_OFFICIAL_CORRESPONDENCE_LOCATED_ADMISSION_CURE_AND_LATER_TREATMENT_OPEN",
+      "identity_sources": [
+        "Official 2025 complaint-transmission and receipt/reference correspondence controlled in the Ministerio Fiscal mailbox baseline",
+        "20-August-2026 Anticorrupción response requiring compliant electronic signature before admission",
+        "evidence/fiscalia/2026/MF_MAILBOX_REGAGE_CONTROL_31AUG2026.md"
+      ],
+      "identity_boundary": "Exact Anticorrupción file identity and correspondence checkpoints only. The later admission, cure, independent investigation, remissions, merits decision and outcome remain source-bounded."
+    }
+  ]
+}

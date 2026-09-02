@@ -1,0 +1,50 @@
+name: Validate Ministerio Fiscal canonical hub
+
+on:
+  pull_request:
+    paths:
+      - 'assets/data/matter-identity-registry-v1.json'
+      - 'assets/data/matter-identity-registry-v1.fiscalia-eu.json'
+      - 'assets/data/matter-identity-registry-v1.fiscalia-proceedings-backfill.json'
+      - 'assets/data/ministerio-fiscal-hub-config-v1.json'
+      - 'assets/data/institutional-communications-register-v1.json'
+      - 'assets/data/fiscalia-proceedings-interconnectivity-v1.json'
+      - 'assets/ministerio-fiscal-hub-20260902.*'
+      - 'es/ministerio-fiscal/**'
+      - 'en/public-prosecution-service/**'
+      - 'es/fiscalia-comunicaciones-procedimientos/**'
+      - 'en/public-prosecution-communications-proceedings/**'
+      - 'scripts/validate_ministerio_fiscal_hub.py'
+      - '.github/workflows/validate-ministerio-fiscal-hub.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'assets/data/matter-identity-registry-v1.fiscalia-eu.json'
+      - 'assets/data/matter-identity-registry-v1.fiscalia-proceedings-backfill.json'
+      - 'assets/data/ministerio-fiscal-hub-config-v1.json'
+      - 'es/ministerio-fiscal/**'
+      - 'en/public-prosecution-service/**'
+      - 'scripts/validate_ministerio_fiscal_hub.py'
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: '3.12'
+      - name: Validate canonical identities and event registration
+        run: python scripts/validate_ministerio_fiscal_hub.py
+      - name: Validate hub JavaScript syntax
+        run: node --check assets/ministerio-fiscal-hub-20260902.js
+      - name: Smoke hub source wiring
+        run: |
+          grep -q 'data-mf-hub' es/ministerio-fiscal/index.html
+          grep -q 'data-mf-hub' en/public-prosecution-service/index.html
+          grep -q '../ministerio-fiscal/' es/fiscalia-comunicaciones-procedimientos/index.html
+          grep -q '../public-prosecution-service/' en/public-prosecution-communications-proceedings/index.html

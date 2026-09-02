@@ -165,16 +165,21 @@
       "Plaza nº 3 del Tribunal de Instancia (Sección Civil) de San Cristóbal de La Laguna",
       "Juzgado de Primera Instancia nº 5 de San Cristóbal de La Laguna",
       "Juzgado de Primera Instancia nº 2 de Arrecife",
-      "Juzgado de Paz de Yaiza"
+      "Juzgado de Paz de Yaiza",
+      "Fiscalía Europea / European Public Prosecutor's Office (EPPO)",
+      "Unidad de Apoyo de la IGAE a la Fiscalía Europea",
+      "DI 273/2013 — Fiscalía Provincial de Las Palmas",
+      "Fiscalía 39/2014 — exact office and file scope pending",
+      "E.G. 352/2025 — Fiscalía Anticorrupción"
     ]
   },
   "counts": {
-    "total": 343,
+    "total": 348,
     "PERSON": 162,
     "ORGANISATION": 83,
     "STRUCTURE": 11,
-    "INSTITUTION": 44,
-    "PROCEEDING": 43
+    "INSTITUTION": 46,
+    "PROCEEDING": 46
   },
   "parts": [
     {"path": "matter-identity-registry-v1.people.json", "type": "PERSON", "count": 120},
@@ -189,7 +194,9 @@
     {"path": "matter-identity-registry-v1.dp3205-institutions.json", "type": "INSTITUTION", "count": 1},
     {"path": "matter-identity-registry-v1.la-laguna-judicial-institutions.json", "type": "INSTITUTION", "count": 5},
     {"path": "matter-identity-registry-v1.court-hierarchy.json", "type": "INSTITUTION", "count": 1},
+    {"path": "matter-identity-registry-v1.fiscalia-eu.json", "type": "INSTITUTION", "count": 2},
     {"path": "matter-identity-registry-v1.proceedings.json", "type": "PROCEEDING", "count": 42},
-    {"path": "matter-identity-registry-v1.dp3205-proceedings.json", "type": "PROCEEDING", "count": 1}
+    {"path": "matter-identity-registry-v1.dp3205-proceedings.json", "type": "PROCEEDING", "count": 1},
+    {"path": "matter-identity-registry-v1.fiscalia-proceedings-backfill.json", "type": "PROCEEDING", "count": 3}
   ]
 }

@@ -1,0 +1,59 @@
+{
+  "schema": "por-derecho.ministerio-fiscal-hub-config.v1",
+  "control_date": "2026-09-02",
+  "status": "PUBLIC_SAFE_CANONICAL_HUB_CONFIGURATION",
+  "root_institution_id": "PD-SP-I-0002",
+  "separate_supranational_branch": true,
+  "groups": [
+    {
+      "id": "state-central",
+      "title_es": "Nivel estatal / central",
+      "title_en": "State / central level",
+      "institution_ids": ["PD-SP-I-0029", "PD-SP-I-0036", "PD-SP-I-0034", "PD-SP-I-0030", "PD-SP-I-0031", "PD-SP-I-0032", "PD-SP-I-0033"]
+    },
+    {
+      "id": "autonomous-canary",
+      "title_es": "Comunidad Autónoma de Canarias",
+      "title_en": "Canary Islands autonomous-community level",
+      "institution_ids": ["PD-SP-I-0028"]
+    },
+    {
+      "id": "provincial",
+      "title_es": "Nivel provincial",
+      "title_en": "Provincial level",
+      "institution_ids": ["PD-SP-I-0020", "PD-SP-I-0027"]
+    },
+    {
+      "id": "area",
+      "title_es": "Fiscalía de Área",
+      "title_en": "Area prosecution office",
+      "institution_ids": ["PD-SP-I-0026"]
+    },
+    {
+      "id": "eu-supranational",
+      "title_es": "Fiscalía Europea y apoyo funcional — rama separada",
+      "title_en": "European Public Prosecutor and functional support — separate branch",
+      "institution_ids": ["PD-SP-I-0045", "PD-SP-I-0046"],
+      "separate_from_ministerio_fiscal": true
+    }
+  ],
+  "identifier_rules": {
+    "institution": "PD-SP-I-####",
+    "prosecution_file": "PD-SP-R-####",
+    "master_register": "territorial master id such as GC-FIS-###, TF-FIS-###, LZ-FIS-### or NAT-FIS-###",
+    "communication_event": "PD-SP-EVT-####",
+    "source_artifact": "PD-SP-SRC-* where allocated",
+    "external_registration": "REGAGE/RedSARA/AGE receipt or other official external identifier",
+    "caret_rule": "Caret is identity-only. Communication events remain immutable event IDs and do not receive synthetic caret identities."
+  },
+  "source_files": {
+    "identity_index": "assets/data/matter-identity-registry-v1.json",
+    "communications": "assets/data/institutional-communications-register-v1.json",
+    "fiscalia_graph": "assets/data/fiscalia-proceedings-interconnectivity-v1.json",
+    "public_master": "assets/data/proceedings-master-public-v1.json"
+  },
+  "proof_boundaries": {
+    "es": "Registro no equivale a entrega interna, reparto, incorporación, examen, admisión, investigación o fondo. Una respuesta localizada recibe un evento canónico propio; una respuesta no localizada permanece como brecha y no se sintetiza.",
+    "en": "Registration is not internal delivery, allocation, incorporation, examination, admission, investigation or merits. A located response receives its own canonical event; an unlocated response remains a gap and is not synthesised."
+  }
+}
