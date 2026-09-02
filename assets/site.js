@@ -19,6 +19,7 @@
    * data-playa-blanca-concept-loader
    * MASTER_PROCEEDINGS_PUBLICATION_GATE_20260830
    * CANONICAL_HOME_SEARCH_AND_JUSTICE_AUTHORITY_REGISTER_20260902
+   * BORJA_SEPARATION_RPL3304_CONVERGENCE_INBOUND_20260902
    */
 
   const loadMasterProceedingsPublication = () => {
@@ -134,6 +135,15 @@
     document.head.appendChild(overlay);
   };
 
+  const loadBorjaSeparationRpl3304Inbound = () => {
+    if (document.querySelector('script[data-borja-separation-rpl3304-inbound-loader]')) return;
+    const inbound = document.createElement('script');
+    inbound.src = new URL('borja-separation-rpl3304-inbound-20260902.js?v=20260902a', current.src).href;
+    inbound.async = false;
+    inbound.setAttribute('data-borja-separation-rpl3304-inbound-loader', '20260902a');
+    document.head.appendChild(inbound);
+  };
+
   // Preserve the complete site loader that existed before this visual update.
   const prior = document.createElement('script');
   prior.src = new URL('site-pre-treasury-154-hq-20260828.js?v=20260828a', current.src).href;
@@ -150,4 +160,5 @@
   loadActorsAcostaCanonicalRegister();
   loadCanonicalHomeSearch();
   loadJusticeProfessionalsCurrentOverlay();
+  loadBorjaSeparationRpl3304Inbound();
 })();
