@@ -23,16 +23,19 @@ jobs:
         shell: bash
         run: |
           python3 - <<'PY'
+          import re
           from pathlib import Path
 
           search = Path('assets/canonical-home-search-20260902.js')
           text = search.read_text(encoding='utf-8')
-          old = '''  const main = document.querySelector('main');
-          if (!main) return;
-          const first = main.firstElementChild;
-          if (first && first.nextSibling) main.insertBefore(section, first.nextSibling);
-          else main.appendChild(section);'''
-          new = '''  const main = document.querySelector('main');
+          pattern = re.compile(
+              r"  const main = document\.querySelector\('main'\);\n"
+              r"  if \(!main\) return;\n"
+              r"  const first = main\.firstElementChild;\n"
+              r"  if \(first && first\.nextSibling\) main\.insertBefore\(section, first\.nextSibling\);\n"
+              r"  else main\.appendChild\(section\);"
+          )
+          replacement = """  const main = document.querySelector('main');
           const siteHeader = document.querySelector('.site-header');
           if (!main || !siteHeader) return;
 
@@ -46,18 +49,16 @@ jobs:
           };
           mountTopLevel();
           requestAnimationFrame(mountTopLevel);
-          window.setTimeout(mountTopLevel, 250);'''
-          if text.count(old) != 1:
-              raise SystemExit(f'expected one old mount block, found {text.count(old)}')
-          search.write_text(text.replace(old, new), encoding='utf-8')
+          window.setTimeout(mountTopLevel, 250);"""
+          text, count = pattern.subn(replacement, text, count=1)
+          if count != 1:
+              raise SystemExit(f'expected one unsafe mount block, found {count}')
+          search.write_text(text, encoding='utf-8')
 
           validator = Path('scripts/validate_canonical_home_search.py')
           body = validator.read_text(encoding='utf-8')
           anchor = '    require("justice-professionals-current-overlay-20260902.js" in site_script, "site.js does not load current justice overlay")\n'
-          addition = anchor + '''    require("siteHeader.insertAdjacentElement('afterend', section)" in search_script, "Homepage search is not mounted after the site header")
-          require("section.closest('details')" in search_script, "Homepage search lacks a closed-details mount guard")
-          require("main.insertBefore(section" not in search_script, "Homepage search retains the unsafe main-child insertion path")
-          '''
+          addition = anchor + '    require("siteHeader.insertAdjacentElement(\'afterend\', section)" in search_script, "Homepage search is not mounted after the site header")\n' + '    require("section.closest(\'details\')" in search_script, "Homepage search lacks a closed-details mount guard")\n' + '    require("main.insertBefore(section" not in search_script, "Homepage search retains the unsafe main-child insertion path")\n'
           if body.count(anchor) != 1:
               raise SystemExit(f'validator anchor count {body.count(anchor)}')
           validator.write_text(body.replace(anchor, addition), encoding='utf-8')
