@@ -19,6 +19,7 @@ GOVERNANCE_ALLOWLIST = {
     ".github/CODEOWNERS",
     ".github/governance/AGENT_PUBLISHING_COMPATIBILITY.md",
     ".github/governance/COMMUNITY_CLAIMED_OFFICE_CRIMINAL_FIRST_AUTHORITY_PROTOCOL_30AUG2026.md",
+    ".github/governance/NEW_THREAD_SCOPE_AND_CONTINUITY_GATE_02SEP2026.md",
     ".github/governance/TRANSACTION_DEVELOPMENT_SEPARATION_AND_PUBLICATION_PROTOCOL.md",
     ".github/governance/records/TXD-PN-20260825-01.md",
     ".github/governance/validate_agent_governance_compatibility.py",
@@ -30,6 +31,8 @@ REQUIRED_FILES = set(GOVERNANCE_ALLOWLIST)
 
 REQUIRED_MARKERS = {
     "AGENTS.md": [
+        "## 0. Mandatory first-turn scope and continuity gate",
+        "APPARENTLY_UNRELATED_AWAITING_CONFIRMATION",
         "PD-GOV-001 — CURRENT-MAIN",
         "PD-GOV-002 — PUBLIC-REPO",
         "PD-GOV-003 — AUTHORITY",
@@ -47,6 +50,13 @@ REQUIRED_MARKERS = {
         "## Public-site surface",
         "## Governance-only acceptance test",
         "This promise does not grant standing authority",
+    ],
+    ".github/governance/NEW_THREAD_SCOPE_AND_CONTINUITY_GATE_02SEP2026.md": [
+        "## Gate A — potentially related, related, or uncertain",
+        "## Gate B — apparently unrelated",
+        "APPARENTLY_UNRELATED_AWAITING_CONFIRMATION",
+        "CONFIRMED_UNRELATED",
+        "## No unnecessary interruption rule",
     ],
 }
 

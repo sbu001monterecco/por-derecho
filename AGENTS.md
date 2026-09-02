@@ -2,6 +2,36 @@
 
 These rules apply to every human or automated change in this repository. They preserve the public record; they do not turn allegations into findings.
 
+## 0. Mandatory first-turn scope and continuity gate
+
+This is the **first substantive action** for every new ChatGPT Chat, ChatGPT Work,
+Codex or other agent thread started by Gil Marer where this repository/workspace
+is available or Por Derecho / Project Sun Rock may be in scope. Apply
+`.github/governance/NEW_THREAD_SCOPE_AND_CONTINUITY_GATE_02SEP2026.md` before
+substantive analysis or implementation.
+
+- If the opening task is related, potentially related or materially uncertain,
+  state that Por Derecho / Project Sun Rock continuity governance is active,
+  fetch and identify current remote `main`, confirm that current `main` rather
+  than chat memory or a stale workspace is the repository source of truth, read
+  the required bootstrap/specialist controls, and only then continue the task.
+- If the opening task appears completely unrelated, do **not** silently assume
+  separation. Tell Gil Marer that it appears unrelated, that Por Derecho
+  substantive context will be kept out of the thread, and ask him to confirm
+  that the thread is unrelated. Until he confirms, use
+  `APPARENTLY_UNRELATED_AWAITING_CONFIRMATION` and do not import Por Derecho
+  allegations, evidence, actors, proceedings or strategy merely because they are
+  available in memory or connected sources.
+- After Gil confirms an unrelated task, use `CONFIRMED_UNRELATED` and proceed
+  normally without repeated scope questions. If Gil says it is related, or a
+  material overlap later appears, activate the related continuity gate before
+  continuing the overlapping work.
+- Do not ask Gil to repeat project facts that are already recoverable from
+  current `main`, the canonical registers or authorised connected sources.
+
+This scope gate is a workflow boundary only. It does not create publication,
+email, filing, contact or other external authority.
+
 ## 1. Start from the actual source of truth
 
 - Fetch and read the current remote `main` before analysing or editing. Never publish an older worktree, chat reconstruction or stale branch over later work.
