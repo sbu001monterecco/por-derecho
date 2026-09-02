@@ -7,14 +7,18 @@ on:
       - 'en/legal-notebook/meeting-point-357-2024-judicial-traceability/**'
       - 'assets/data/matter-identity-registry-v1*.json'
       - 'assets/data/caret-public-surface-coverage-v1.json'
+      - 'assets/data/caepr-caret-alberto-meeting-point-first-hop-v1.json'
       - 'assets/data/justice-professionals-evidence-production-queue-v1.json'
       - 'assets/data/la-laguna-judicial-actors-gap-closure-audit-v1.json'
       - 'scripts/validate_caret_public_surface.py'
+      - 'scripts/validate_alberto_meeting_point_first_hop_caret.py'
       - 'scripts/validate_operational_identity_registry.py'
+      - 'scripts/validate_publication_integrity.py'
       - '.github/governance/CAEPR_PUBLIC_SURFACE_PROPAGATION_AND_CONTINUITY_GATE_02SEP2026.md'
       - '.github/workflows/verify-caret-public-surface-propagation.yml'
       - 'archive/CARET_PUBLIC_SURFACE_GAP_CLOSURE_CONTINUITY_HANDOVER_02SEP2026.md'
       - 'publication-manifests/caret-public-surface-gap-closure-20260902.json'
+      - 'publication-manifests/dp748-2026-deepest-digest-20260902.json'
   push:
     branches: [main]
     paths:
@@ -22,14 +26,18 @@ on:
       - 'en/legal-notebook/meeting-point-357-2024-judicial-traceability/**'
       - 'assets/data/matter-identity-registry-v1*.json'
       - 'assets/data/caret-public-surface-coverage-v1.json'
+      - 'assets/data/caepr-caret-alberto-meeting-point-first-hop-v1.json'
       - 'assets/data/justice-professionals-evidence-production-queue-v1.json'
       - 'assets/data/la-laguna-judicial-actors-gap-closure-audit-v1.json'
       - 'scripts/validate_caret_public_surface.py'
+      - 'scripts/validate_alberto_meeting-point-first-hop-caret.py'
       - 'scripts/validate_operational_identity_registry.py'
+      - 'scripts/validate_publication_integrity.py'
       - '.github/governance/CAEPR_PUBLIC_SURFACE_PROPAGATION_AND_CONTINUITY_GATE_02SEP2026.md'
       - '.github/workflows/verify-caret-public-surface-propagation.yml'
       - 'archive/CARET_PUBLIC_SURFACE_GAP_CLOSURE_CONTINUITY_HANDOVER_02SEP2026.md'
       - 'publication-manifests/caret-public-surface-gap-closure-20260902.json'
+      - 'publication-manifests/dp748-2026-deepest-digest-20260902.json'
   workflow_dispatch:
 
 permissions:
@@ -58,15 +66,23 @@ jobs:
       - name: Compile validators
         run: |
           python3 -m py_compile scripts/validate_caret_public_surface.py
+          python3 -m py_compile scripts/validate_alberto_meeting_point_first_hop_caret.py
           python3 -m py_compile scripts/validate_operational_identity_registry.py
+          python3 -m py_compile scripts/validate_publication_integrity.py
 
       - name: Validate strict caret occurrences and produce advisory scan
         run: |
           python3 scripts/validate_caret_public_surface.py \
             --report artifacts/caret-public-surface-audit/report.json
 
+      - name: Validate historical first-hop census and pinned N07 successor
+        run: python3 scripts/validate_alberto_meeting_point_first_hop_caret.py
+
       - name: Validate federated identity registry integrity
         run: python3 scripts/validate_operational_identity_registry.py
+
+      - name: Validate publication lifecycle manifests
+        run: python3 scripts/validate_publication_integrity.py
 
       - name: Verify changed JSON parses
         run: |
@@ -77,6 +93,7 @@ jobs:
           paths = [
               Path('assets/data/caret-public-surface-coverage-v1.json'),
               Path('publication-manifests/caret-public-surface-gap-closure-20260902.json'),
+              Path('publication-manifests/dp748-2026-deepest-digest-20260902.json'),
           ]
           for path in paths:
               with path.open(encoding='utf-8') as handle:
@@ -92,7 +109,6 @@ jobs:
           BASE: https://sbu001monterecco.github.io/por-derecho
         shell: python
         run: |
-          import json
           import os
           import time
           import urllib.request
@@ -129,7 +145,7 @@ jobs:
                       'PD-SP-CARET-SURFACE-20260902-01',
                       'CARET-SURF-GAP-001',
                       'CARET-SURF-GAP-004',
-                      'NOT_MERGED_NOT_LIVE_VERIFIED',
+                      'HISTORICAL_SNAPSHOT_IMMUTABLE_SUCCESSOR_BLOB_PINNED_DECLARED_CONFIRMED_IDENTITIES_ONLY',
                   ],
               ),
           ]
@@ -187,6 +203,7 @@ jobs:
             echo "- SHA: $GITHUB_SHA"
             echo '- Control: `PD-SP-CARET-SURFACE-20260902-01`'
             echo '- Strict scope: two bilingual Meeting Point 357/2024 routes; two immutable identities; four surface/identity rows.'
+            echo '- Historical continuity: sixteen predecessor first-hop surfaces remain frozen; two AM357-N07 successors are exact-blob pinned.'
             echo '- Archive-wide exact-name discovery remains advisory and is preserved in the uploaded JSON artifact.'
             echo '- A visible caret confirms canonical identity only; it does not prove knowledge, conduct, wrongdoing or liability.'
             if [ "$GITHUB_EVENT_NAME" = 'pull_request' ]; then
