@@ -1,0 +1,197 @@
+name: Verify CAEPR public-surface propagation
+
+on:
+  pull_request:
+    paths:
+      - 'es/cuaderno-juridico/meeting-point-357-2024-trazabilidad-judicial/**'
+      - 'en/legal-notebook/meeting-point-357-2024-judicial-traceability/**'
+      - 'assets/data/matter-identity-registry-v1*.json'
+      - 'assets/data/caret-public-surface-coverage-v1.json'
+      - 'assets/data/justice-professionals-evidence-production-queue-v1.json'
+      - 'assets/data/la-laguna-judicial-actors-gap-closure-audit-v1.json'
+      - 'scripts/validate_caret_public_surface.py'
+      - 'scripts/validate_operational_identity_registry.py'
+      - '.github/governance/CAEPR_PUBLIC_SURFACE_PROPAGATION_AND_CONTINUITY_GATE_02SEP2026.md'
+      - '.github/workflows/verify-caret-public-surface-propagation.yml'
+      - 'archive/CARET_PUBLIC_SURFACE_GAP_CLOSURE_CONTINUITY_HANDOVER_02SEP2026.md'
+      - 'publication-manifests/caret-public-surface-gap-closure-20260902.json'
+  push:
+    branches: [main]
+    paths:
+      - 'es/cuaderno-juridico/meeting-point-357-2024-trazabilidad-judicial/**'
+      - 'en/legal-notebook/meeting-point-357-2024-judicial-traceability/**'
+      - 'assets/data/matter-identity-registry-v1*.json'
+      - 'assets/data/caret-public-surface-coverage-v1.json'
+      - 'assets/data/justice-professionals-evidence-production-queue-v1.json'
+      - 'assets/data/la-laguna-judicial-actors-gap-closure-audit-v1.json'
+      - 'scripts/validate_caret_public_surface.py'
+      - 'scripts/validate_operational_identity_registry.py'
+      - '.github/governance/CAEPR_PUBLIC_SURFACE_PROPAGATION_AND_CONTINUITY_GATE_02SEP2026.md'
+      - '.github/workflows/verify-caret-public-surface-propagation.yml'
+      - 'archive/CARET_PUBLIC_SURFACE_GAP_CLOSURE_CONTINUITY_HANDOVER_02SEP2026.md'
+      - 'publication-manifests/caret-public-surface-gap-closure-20260902.json'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: caret-public-surface-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: false
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
+        with:
+          python-version: '3.12'
+
+      - name: Compile validators
+        run: |
+          python3 -m py_compile scripts/validate_caret_public_surface.py
+          python3 -m py_compile scripts/validate_operational_identity_registry.py
+
+      - name: Validate strict caret occurrences and produce advisory scan
+        run: |
+          python3 scripts/validate_caret_public_surface.py \
+            --report artifacts/caret-public-surface-audit/report.json
+
+      - name: Validate federated identity registry integrity
+        run: python3 scripts/validate_operational_identity_registry.py
+
+      - name: Verify changed JSON parses
+        run: |
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+
+          paths = [
+              Path('assets/data/caret-public-surface-coverage-v1.json'),
+              Path('publication-manifests/caret-public-surface-gap-closure-20260902.json'),
+          ]
+          for path in paths:
+              with path.open(encoding='utf-8') as handle:
+                  payload = json.load(handle)
+              if not isinstance(payload, dict):
+                  raise SystemExit(f'{path}: JSON root is not an object')
+              print(f'JSON OK {path} :: {len(path.read_bytes())} bytes')
+          PY
+
+      - name: Verify public Pages routes and exact caret markers
+        if: github.event_name != 'pull_request'
+        env:
+          BASE: https://sbu001monterecco.github.io/por-derecho
+        shell: python
+        run: |
+          import json
+          import os
+          import time
+          import urllib.request
+
+          base = os.environ['BASE'].rstrip('/')
+          checks = [
+              (
+                  '/es/cuaderno-juridico/meeting-point-357-2024-trazabilidad-judicial/',
+                  [
+                      'data-caepr-id="PD-SP-O-0070"',
+                      'data-caepr-id="PD-SP-P-0087"',
+                      'PD-SP-O-0070',
+                      'PD-SP-P-0087',
+                      'AUREN REESTRUCTURACIONES SLP',
+                      'Guillermo Fernández García',
+                      '<sup>^</sup>',
+                  ],
+              ),
+              (
+                  '/en/legal-notebook/meeting-point-357-2024-judicial-traceability/',
+                  [
+                      'data-caepr-id="PD-SP-O-0070"',
+                      'data-caepr-id="PD-SP-P-0087"',
+                      'PD-SP-O-0070',
+                      'PD-SP-P-0087',
+                      'AUREN REESTRUCTURACIONES SLP',
+                      'Guillermo Fernández García',
+                      '<sup>^</sup>',
+                  ],
+              ),
+              (
+                  '/assets/data/caret-public-surface-coverage-v1.json',
+                  [
+                      'PD-SP-CARET-SURFACE-20260902-01',
+                      'CARET-SURF-GAP-001',
+                      'CARET-SURF-GAP-004',
+                      'NOT_MERGED_NOT_LIVE_VERIFIED',
+                  ],
+              ),
+          ]
+
+          def fetch(url):
+              request = urllib.request.Request(
+                  url,
+                  headers={
+                      'User-Agent': 'por-derecho-caret-public-surface-verifier/1',
+                      'Cache-Control': 'no-cache, no-store, max-age=0',
+                      'Pragma': 'no-cache',
+                  },
+              )
+              with urllib.request.urlopen(request, timeout=30) as response:
+                  return response.status, response.read().decode('utf-8', errors='replace')
+
+          failures = []
+          for route, markers in checks:
+              last = None
+              for attempt in range(1, 19):
+                  url = f'{base}{route}?verify={os.environ.get("GITHUB_SHA", "")}-{attempt}'
+                  try:
+                      status, body = fetch(url)
+                      missing = [marker for marker in markers if marker not in body]
+                      if status == 200 and not missing:
+                          print(f'LIVE VERIFIED {url} :: {len(body)} bytes :: {len(markers)} markers')
+                          break
+                      last = f'HTTP {status}; missing={missing}'
+                  except Exception as exc:
+                      last = repr(exc)
+                  if attempt < 18:
+                      time.sleep(10)
+              else:
+                  failures.append(f'{route}: {last}')
+
+          if failures:
+              raise SystemExit('LIVE VERIFICATION FAILED\n- ' + '\n- '.join(failures))
+
+      - name: Upload advisory scan and strict validation record
+        if: always()
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
+        with:
+          name: caret-public-surface-audit
+          path: artifacts/caret-public-surface-audit/report.json
+          if-no-files-found: error
+          retention-days: 30
+
+      - name: Publish verification summary
+        if: always()
+        run: |
+          {
+            echo '## CAEPR public-surface propagation verification'
+            echo
+            echo "- Event: $GITHUB_EVENT_NAME"
+            echo "- SHA: $GITHUB_SHA"
+            echo '- Control: `PD-SP-CARET-SURFACE-20260902-01`'
+            echo '- Strict scope: two bilingual Meeting Point 357/2024 routes; two immutable identities; four surface/identity rows.'
+            echo '- Archive-wide exact-name discovery remains advisory and is preserved in the uploaded JSON artifact.'
+            echo '- A visible caret confirms canonical identity only; it does not prove knowledge, conduct, wrongdoing or liability.'
+            if [ "$GITHUB_EVENT_NAME" = 'pull_request' ]; then
+              echo '- This run verifies repository state only. The PR is not live publication.'
+            else
+              echo '- Cache-busted public route and data-control markers were checked after the main-branch push.'
+            fi
+          } >> "$GITHUB_STEP_SUMMARY"
