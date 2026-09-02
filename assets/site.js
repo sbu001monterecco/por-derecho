@@ -109,11 +109,17 @@
   };
 
   const loadCanonicalHomeSearch = () => {
+    const pathname = window.location.pathname.replace(/\/index\.html$/, '/');
+    const segments = pathname.split('/').filter(Boolean);
+    const isHome = segments.length === 0
+      || (segments.length === 1 && ['por-derecho', 'es', 'en'].includes(segments[0]))
+      || (segments.length === 2 && segments[0] === 'por-derecho' && ['es', 'en'].includes(segments[1]));
+    if (!isHome) return;
     if (document.querySelector('script[data-canonical-home-search-loader]')) return;
     const search = document.createElement('script');
-    search.src = new URL('canonical-home-search-20260902.js?v=20260902a', current.src).href;
+    search.src = new URL('canonical-home-search-20260902.js?v=20260902b', current.src).href;
     search.async = false;
-    search.setAttribute('data-canonical-home-search-loader', '20260902a');
+    search.setAttribute('data-canonical-home-search-loader', '20260902b');
     document.head.appendChild(search);
   };
 
