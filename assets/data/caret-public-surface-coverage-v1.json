@@ -1,0 +1,194 @@
+{
+  "schema": "por-derecho.caret-public-surface-coverage.v1",
+  "control_id": "PD-SP-CARET-SURFACE-20260902-01",
+  "control_date": "2026-09-02",
+  "base_main_sha": "6013473e0e510948d2702fe0b4f5f6cfe45f7028",
+  "status": "IMPLEMENTATION_BRANCH_READY",
+  "publication_state": "NOT_MERGED_NOT_LIVE_VERIFIED",
+  "purpose": "Separate canonical identity admission from public occurrence propagation, source-specific attribution, deployment and live readback.",
+  "governance": ".github/governance/CAEPR_PUBLIC_SURFACE_PROPAGATION_AND_CONTINUITY_GATE_02SEP2026.md",
+  "parent_governance": ".github/governance/CAEPR_CARET_IDENTITY_AND_ALL_IS_VERIFICATION_PROTOCOL_26AUG2026.md",
+  "registry_authority": "assets/data/matter-identity-registry-v1.json",
+  "operational_control": "assets/data/matter-identity-operational-control-v1.json",
+  "source_gap_authority": "assets/data/justice-professionals-evidence-production-queue-v1.json",
+  "validator": "scripts/validate_caret_public_surface.py",
+  "workflow": ".github/workflows/verify-caret-public-surface-propagation.yml",
+  "counts": {
+    "strict_public_surfaces": 2,
+    "strict_identity_records": 2,
+    "strict_surface_identity_rows": 4,
+    "resolved_occurrence_gaps": 4,
+    "named_caret_pending_reused": 3,
+    "unknown_actor_source_gap_families_reused": 7
+  },
+  "identity_boundary": "A visible caret and immutable CAEPR ID confirm canonical identity for the displayed context only. They do not establish mandate scope, receipt, knowledge, control, intent, coordination, legal correctness, wrongdoing, liability or outcome.",
+  "strict_surfaces": [
+    {
+      "path": "es/cuaderno-juridico/meeting-point-357-2024-trazabilidad-judicial/index.html",
+      "language": "es",
+      "route": "/es/cuaderno-juridico/meeting-point-357-2024-trazabilidad-judicial/",
+      "records": [
+        {
+          "id": "PD-SP-O-0070",
+          "display_name": "AUREN REESTRUCTURACIONES SLP",
+          "required_state": "CARET_CONFIRMED",
+          "required_href": "../../registro-identidad-materia/#PD-SP-O-0070",
+          "minimum_declared_occurrences": 1,
+          "source_context": "Exact entity appointed in signed Auto 97/2025 dated 18 February 2025."
+        },
+        {
+          "id": "PD-SP-P-0087",
+          "display_name": "Guillermo Fernández García",
+          "required_state": "CARET_CONFIRMED",
+          "required_href": "../../registro-identidad-materia/#PD-SP-P-0087",
+          "minimum_declared_occurrences": 1,
+          "source_context": "Electronic judicial signatory of signed Auto 97/2025 dated 18 February 2025."
+        }
+      ]
+    },
+    {
+      "path": "en/legal-notebook/meeting-point-357-2024-judicial-traceability/index.html",
+      "language": "en",
+      "route": "/en/legal-notebook/meeting-point-357-2024-judicial-traceability/",
+      "records": [
+        {
+          "id": "PD-SP-O-0070",
+          "display_name": "AUREN REESTRUCTURACIONES SLP",
+          "required_state": "CARET_CONFIRMED",
+          "required_href": "../../matter-identity-registry/#PD-SP-O-0070",
+          "minimum_declared_occurrences": 1,
+          "source_context": "Exact entity appointed in signed Auto 97/2025 dated 18 February 2025."
+        },
+        {
+          "id": "PD-SP-P-0087",
+          "display_name": "Guillermo Fernández García",
+          "required_state": "CARET_CONFIRMED",
+          "required_href": "../../matter-identity-registry/#PD-SP-P-0087",
+          "minimum_declared_occurrences": 1,
+          "source_context": "Electronic judicial signatory of signed Auto 97/2025 dated 18 February 2025."
+        }
+      ]
+    }
+  ],
+  "resolved_occurrence_gaps": [
+    {
+      "gap_id": "CARET-SURF-GAP-001",
+      "path": "es/cuaderno-juridico/meeting-point-357-2024-trazabilidad-judicial/index.html",
+      "identity_id": "PD-SP-O-0070",
+      "state": "REPAIRED_ON_IMPLEMENTATION_BRANCH",
+      "repair": "Exact entity now carries visible caret, visible immutable ID, machine-readable state and canonical registry link."
+    },
+    {
+      "gap_id": "CARET-SURF-GAP-002",
+      "path": "es/cuaderno-juridico/meeting-point-357-2024-trazabilidad-judicial/index.html",
+      "identity_id": "PD-SP-P-0087",
+      "state": "REPAIRED_ON_IMPLEMENTATION_BRANCH",
+      "repair": "Exact person now carries visible caret, visible immutable ID, machine-readable state and canonical registry link."
+    },
+    {
+      "gap_id": "CARET-SURF-GAP-003",
+      "path": "en/legal-notebook/meeting-point-357-2024-judicial-traceability/index.html",
+      "identity_id": "PD-SP-O-0070",
+      "state": "REPAIRED_ON_IMPLEMENTATION_BRANCH",
+      "repair": "Exact entity now carries visible caret, visible immutable ID, machine-readable state and canonical registry link."
+    },
+    {
+      "gap_id": "CARET-SURF-GAP-004",
+      "path": "en/legal-notebook/meeting-point-357-2024-judicial-traceability/index.html",
+      "identity_id": "PD-SP-P-0087",
+      "state": "REPAIRED_ON_IMPLEMENTATION_BRANCH",
+      "repair": "Exact person now carries visible caret, visible immutable ID, machine-readable state and canonical registry link."
+    }
+  ],
+  "named_caret_pending_reused": [
+    {
+      "id": "PD-SP-P-0138",
+      "name": "Carmen Martínez Socias",
+      "state": "CARET_PENDING",
+      "existing_task": "JP-EQ-004",
+      "closure_trigger": "Primary incorporation deed or official notarial record identifying exact name, date, capacity and protocol."
+    },
+    {
+      "id": "PD-SP-P-0139",
+      "name": "Nicolás Quintana Plasencia",
+      "state": "CARET_PENDING",
+      "existing_task": "JP-EQ-005",
+      "closure_trigger": "Primary deed or official notarial record identifying exact name, date, capacity and protocol."
+    },
+    {
+      "id": "PD-SP-P-0143",
+      "name": "Pedro Eugenio Botella Torres",
+      "state": "CARET_PENDING",
+      "existing_task": "JP-EQ-006",
+      "closure_trigger": "Primary protocol or official notarial record identifying exact name, date, capacity and protocol number."
+    }
+  ],
+  "unknown_actor_source_gap_families_reused": [
+    {
+      "reference": "LL-JUD-GAP-001",
+      "target": "Judicial signatory of Auto 454/2026 in DP 748/2026",
+      "rule": "Do not infer the signer from later acts in the same proceeding."
+    },
+    {
+      "reference": "LL-JUD-GAP-002",
+      "target": "LAJ identity or identities for the material PO 344/2013 acts",
+      "rule": "Require a signed act or authenticated docket naming the person for the act and period."
+    },
+    {
+      "reference": "LL-JUD-GAP-003",
+      "target": "Downstream DP 748/2026 appellate organ, roll, judge or LAJ",
+      "rule": "Do not populate an appellate actor until transfer, remittal, roll or equivalent primary source exists."
+    },
+    {
+      "reference": "JP-EQ-002",
+      "target": "DP 1901/2026 signed Ministerio Fiscal admission report and author",
+      "rule": "Institutional transfer does not identify a personal author."
+    },
+    {
+      "reference": "JP-EQ-003",
+      "target": "DP 1901/2026 post-report judicial resolution, signatory, LAJ processing and service",
+      "rule": "An unlocated later act is not proof that no act exists."
+    },
+    {
+      "reference": "JP-EQ-007",
+      "target": "Exact named Property Registry person in a dated relevant act",
+      "rule": "A generic registry function is not a person identity."
+    },
+    {
+      "reference": "JP-EQ-009",
+      "target": "E.G. 745/2026 allocation, routing, examination and approval chain",
+      "rule": "Do not transfer a personal act to Ricardo de Mosteyrín Sampalo or another office-holder without the primary chain."
+    }
+  ],
+  "candidate_scan_policy": {
+    "roots": ["es", "en"],
+    "extensions": [".html"],
+    "excluded_path_fragments": [
+      "/evidence/",
+      "/archive/",
+      "/vendor/",
+      "/node_modules/",
+      "/artifacts/"
+    ],
+    "minimum_canonical_name_length": 8,
+    "mode": "ADVISORY_EXACT_NAME_DISCOVERY",
+    "promotion_rule": "A candidate becomes strict only after source and false-positive review and explicit addition to strict_surfaces."
+  },
+  "continuity_states": [
+    "REGISTERED_AND_CONFIRMED",
+    "REGISTERED_BUT_PUBLIC_OCCURRENCE_GAP",
+    "CARET_PENDING_SOURCE_REQUIRED",
+    "UNKNOWN_PERSON_SOURCE_REQUIRED",
+    "PR_READY_NOT_LIVE",
+    "MERGED_LIVE_VERIFIED"
+  ],
+  "invariants": [
+    "No new identity is created merely to repair an occurrence of an existing confirmed identity.",
+    "The generic Auren perimeter PD-SP-O-0046 remains distinct from exact AUREN REESTRUCTURACIONES SLP PD-SP-O-0070.",
+    "A source quotation or transcript is not silently rewritten to add a caret.",
+    "A pending or suspended identity must never be rendered as CARET_CONFIRMED.",
+    "Spanish and English controlled surfaces remain equivalent in identity state and source boundary.",
+    "A branch or pull request is not live publication; a deployment is not live verification without route readback.",
+    "No repository control authorises email, filing, service, external contact or publication of restricted material."
+  ]
+}
