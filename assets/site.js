@@ -22,6 +22,7 @@
    * BORJA_SEPARATION_RPL3304_CONVERGENCE_INBOUND_20260902
    * BORJA_SEPARATION_RPL3304_SEARCH_EXTENSION_20260902
    * CUATRECASAS_MANDATE_RIC_INBOUND_20260902
+   * CUATRECASAS_WHY_STEP4_LONGFORM_20260902
    */
 
   const loadMasterProceedingsPublication = () => {
@@ -168,6 +169,16 @@
     document.head.appendChild(inbound);
   };
 
+  const loadCuatrecasasWhyStep4Longform = () => {
+    if (!window.location.pathname.includes('/en/cuatrecasas-sun-park/')) return;
+    if (document.querySelector('script[data-cuatrecasas-why-step4-loader]')) return;
+    const longform = document.createElement('script');
+    longform.src = new URL('cuatrecasas-why-step4-longform-20260902.js?v=20260902a', current.src).href;
+    longform.async = false;
+    longform.setAttribute('data-cuatrecasas-why-step4-loader', '20260902a');
+    document.head.appendChild(longform);
+  };
+
   // Preserve the complete site loader that existed before this visual update.
   const prior = document.createElement('script');
   prior.src = new URL('site-pre-treasury-154-hq-20260828.js?v=20260828a', current.src).href;
@@ -187,4 +198,5 @@
   loadBorjaSeparationRpl3304Inbound();
   loadBorjaSeparationSearchExtension();
   loadCuatrecasasMandateRicInbound();
+  loadCuatrecasasWhyStep4Longform();
 })();
