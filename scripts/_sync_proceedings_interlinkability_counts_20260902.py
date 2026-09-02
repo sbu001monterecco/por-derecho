@@ -209,14 +209,6 @@ def main() -> int:
     if n != 1:
         raise SystemExit(f"could not uniquely update EXPECTED_FINITE_TEST_FAMILY_COUNTS in {BUILDER}")
 
-    split_pattern = re.compile(
-        r"if \(fiscalia_matrix_exact_count, fiscalia_matrix_unverified_count\) != "
-        r"(?:\(\d+,\s*\d+\)|\(EXPECTED_FISCALIA_EXACT_RECORDS,\s*EXPECTED_FISCALIA_UNVERIFIED_RECORDS\)):\n"
-        r"\s*raise ValueError\(\n"
-        r"\s*\"Fiscalía office/file matrix must preserve its .*? split\"\n"
-        r"\s*\)",
-        re.S,
-    )
     split_replacement = (
         "if (fiscalia_matrix_exact_count, fiscalia_matrix_unverified_count) != (\n"
         "        EXPECTED_FISCALIA_EXACT_RECORDS,\n"
@@ -229,9 +221,32 @@ def main() -> int:
         "            f\"{fiscalia_matrix_exact_count} + {fiscalia_matrix_unverified_count}\"\n"
         "        )"
     )
-    text, n = split_pattern.subn(split_replacement, text, count=1)
-    if n != 1:
-        raise SystemExit("could not uniquely update Fiscalía exact/unresolved matrix gate")
+
+    governed_split_markers = (
+        "if (fiscalia_matrix_exact_count, fiscalia_matrix_unverified_count) != (\n"
+        "        EXPECTED_FISCALIA_EXACT_RECORDS,\n"
+        "        EXPECTED_FISCALIA_UNVERIFIED_RECORDS,\n"
+        "    ):"
+    )
+    governed_error_marker = '"Fiscalía office/file exact/unresolved split is stale: "'
+
+    if governed_split_markers in text and governed_error_marker in text:
+        # Already migrated. Scalar constants above remain independently refreshed,
+        # so the governed comparison continues to use the current derived split.
+        pass
+    else:
+        old_split_pattern = re.compile(
+            r"if \(fiscalia_matrix_exact_count, fiscalia_matrix_unverified_count\) != \(\d+,\s*\d+\):\n"
+            r"\s*raise ValueError\(\n"
+            r"\s*\"Fiscalía office/file matrix must preserve its .*? split\"\n"
+            r"\s*\)",
+            re.S,
+        )
+        text, n = old_split_pattern.subn(split_replacement, text, count=1)
+        if n != 1:
+            raise SystemExit(
+                "Fiscalía exact/unresolved matrix gate is neither the governed dynamic form nor the expected legacy numeric form"
+            )
 
     BUILDER.write_text(text, encoding="utf-8")
     state = "IDEMPOTENT" if text == original else "UPDATED"
