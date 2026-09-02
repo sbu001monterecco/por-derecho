@@ -2,17 +2,20 @@ name: Backfill historic proceedings search 20260902
 on:
   workflow_dispatch:
   push:
-    branches: [authority-search/historic-proceedings-search-backfill-20260902]
+    branches: [authority-search/historic-proceedings-reintegration-20260903]
     paths:
       - .github/workflows/backfill-historic-proceedings-search-20260902.yml
       - scripts/_reconcile_historic_proceedings_authority_20260902.py
       - scripts/_sync_current_caepr_counts_20260902.py
       - scripts/_sync_proceedings_interlinkability_counts_20260902.py
+      - scripts/_sync_proceedings_interconnectivity_audit_20260903.py
       - scripts/_sync_proceedings_interlinkability_gap_es_20260902.py
       - scripts/_sync_master_proceedings_publication_counts_20260902.py
       - scripts/_generate_proceeding_pages_and_interlinks_20260902.py
       - scripts/_enrich_proceeding_contextual_links_20260902.py
       - scripts/_render_proceeding_authority_backlinks_20260902.py
+      - scripts/audit_proceedings_interconnectivity_map.py
+      - assets/data/proceedings-interconnectivity-schema-v1.json
       - scripts/validate_canonical_home_search.py
       - scripts/validate_proceeding_pages_interlinks_20260902.py
       - scripts/validate_proceeding_contextual_links_20260902.py
@@ -26,7 +29,7 @@ jobs:
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
         with:
-          ref: authority-search/historic-proceedings-search-backfill-20260902
+          ref: authority-search/historic-proceedings-reintegration-20260903
           fetch-depth: 0
       - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
         with:
@@ -67,11 +70,14 @@ jobs:
         run: |
           echo 'Residual LZ-CIV-050 occurrences after canonical reconciliation:'
           grep -R -n --exclude-dir=.git --exclude='*.html' --exclude='sitemap.xml' 'LZ-CIV-050' archive assets/data scripts ops || true
+          test ! -d en/proceedings/lz-civ-050
+          test ! -d es/procedimientos/lz-civ-050
 
       - name: Rebuild legacy proceedings projections used by the site map
         run: |
           python3 scripts/build_proceedings_case_prism_v2.py
           python3 scripts/build_proceedings_interlinkability_v1.py
+          python3 scripts/_sync_proceedings_interconnectivity_audit_20260903.py
 
       - name: Validate canonical authority search and dedicated proceeding pages
         run: |
@@ -89,6 +95,7 @@ jobs:
           python3 scripts/audit_master_proceedings_publication.py
           python3 scripts/build_proceedings_case_prism_v2.py --check
           python3 scripts/build_proceedings_interlinkability_v1.py --check
+          python3 scripts/_sync_proceedings_interconnectivity_audit_20260903.py
           python3 scripts/audit_proceedings_interconnectivity_map.py
           python3 scripts/audit_counsel_procurador_governance.py
           python3 scripts/validate_treasury_transparency_7_2026.py
@@ -118,6 +125,7 @@ jobs:
             assets/justice-professionals-current-overlay-20260902.js \
             ops/CURRENT_UNITARY_STATE.json \
             scripts/audit_master_proceedings_publication.py \
+            scripts/audit_proceedings_interconnectivity_map.py \
             scripts/build_proceedings_interlinkability_v1.py \
             scripts/validate_operational_truth.py \
             scripts/validate_current_reverse_engineered_digest.py \
@@ -129,5 +137,5 @@ jobs:
             es/registro-maestro-procedimientos/index.html \
             en/master-proceedings-register/index.html \
             sitemap.xml
-          git commit -m "Reconcile historic proceedings authority backfill" || exit 0
-          git push origin HEAD:authority-search/historic-proceedings-search-backfill-20260902
+          git commit -m "Reconcile historic proceedings authority backfill on current main" || exit 0
+          git push origin HEAD:authority-search/historic-proceedings-reintegration-20260903
