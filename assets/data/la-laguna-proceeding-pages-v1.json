@@ -1,8 +1,8 @@
 {
   "schema": "por-derecho.la-laguna-proceeding-pages.v1",
-  "control_id": "PD-LALAGUNA-PROCEEDING-PAGES-20260901-01",
-  "as_of": "2026-09-01",
-  "status": "PUBLIC_CANONICAL_INTERLINK_CANDIDATE",
+  "control_id": "PD-LALAGUNA-PROCEEDING-PAGES-20260902-02",
+  "as_of": "2026-09-02",
+  "status": "PUBLIC_CANONICAL_INTERLINK_ACTIVE",
   "proceedings": [
     {
       "master_id": "TF-CIV-001",
@@ -10,63 +10,139 @@
       "nig": "3802342120190009565",
       "relationship": "CIVIL_ORIGIN_OF_ETJ_163_2020",
       "routes": {"en": "/en/cambiario-1048-2019/", "es": "/es/cambiario-1048-2019/"},
+      "reciprocal_link_to_dp748": true,
       "status_boundary": "UNDER_RECONSTRUCTION"
     },
     {
       "master_id": "TF-CIV-002",
       "reference": "ETJ 163/2020",
       "nig": "3802342120190009565",
-      "relationship": "CIVIL_ENFORCEMENT_CONTINUATION_OF_CAMBIARIO_1048_2019",
+      "relationship": "CIVIL_ENFORCEMENT_CONTINUATION_OF_CAMBIARIO_1048_2019_AND_DIRECT_CONTEXT_OF_DP_748_2026",
       "routes": {"en": "/en/etj-163-2020/", "es": "/es/etj-163-2020/"},
-      "status_boundary": "ACTIVE"
+      "reciprocal_link_to_dp748": true,
+      "status_boundary": "ACTIVE",
+      "related_filing_controls": [
+        {
+          "control_id": "PD-ETJ163-FIL-20260626",
+          "date": "2026-06-26",
+          "title": "Recurso de reposicion contra negativa de suspension por prejudicialidad penal",
+          "classification": "ETJ_CIVIL_FILING_NOT_DP748_FILING",
+          "relationship_to_dp748": "DOCUMENTS_EXISTENCE_STATUS_AND_OBJECTIVE_CONNECTION_OF_DP_748_2026"
+        }
+      ]
     },
     {
       "master_id": "TF-CRI-003",
       "caepr_id": "PD-SP-R-0003",
       "reference": "DP 748/2026",
       "nig": "3802343220260002351",
+      "court_id": "PD-SP-I-0037",
+      "judge_id": "PD-SP-P-0147",
+      "laj_id": "PD-SP-P-0148",
+      "identity_lock": "DP_748_2026_PLUS_NIG_3802343220260002351_PLUS_LA_LAGUNA_INSTRUCTION_PLAZA_4",
+      "anti_conflation": "DO_NOT_IDENTIFY_BY_SHORT_NUMBER_ALONE_AND_DO_NOT_CLASSIFY_AS_MADRID",
       "relationship": "DISTINCT_CRIMINAL_PROCEEDING_CONTEXTUALLY_LINKED_TO_ETJ_163_2020",
       "routes": {"en": "/en/dp-748-2026/", "es": "/es/dp-748-2026/"},
-      "status_boundary": "PROVISIONAL_DISMISSAL_APPEAL_AND_REOPENING_ROUTES_PRESERVED",
+      "status_boundary": "PROVISIONAL_DISMISSAL_NOT_FINAL_APPEAL_AND_REOPENING_ROUTES_PRESERVED",
+      "filing_register": [
+        {
+          "control_id": "PD-DP748-FIL-001",
+          "date": "2026-02-04",
+          "title": "Denuncia penal",
+          "source_status": "PRIMARY_PARTY_FILING_READ",
+          "principal_blocks": ["MATKATOR_AWESWELL_CLIENT_DEBTOR_DIVERGENCE", "ALLEGED_PHYSICAL_TRANSFORMATION_OF_REGISTERED_UNIT", "ALLEGED_CONTINUED_ENFORCEMENT_WITH_KNOWLEDGE"],
+          "requested_enquiries": ["COMPLETE_ETJ_163_2020_RECORD", "YAIZA_RECORDS", "IDENTIFICATION_OF_ADJUDICATION_OR_ASSIGNMENT_BENEFICIARY"]
+        },
+        {
+          "control_id": "PD-DP748-FIL-002",
+          "date": "2026-02-11",
+          "title": "Escrito de impulso urgente",
+          "source_status": "REFERRED_TO_IN_LATER_PRIMARY_FILING_FULL_CONTENT_PUBLIC_CONTROL_OPEN"
+        },
+        {
+          "control_id": "PD-DP748-FIL-003",
+          "date": "2026-03-16",
+          "title": "Ampliacion de denuncia y solicitud de diligencias de verificacion",
+          "source_status": "PRIMARY_PARTY_FILING_READ",
+          "principal_blocks": ["HOTEL_INTEGRATION_AND_TRANSFORMATION", "PHYSICAL_REGISTRY_CADASTRAL_DIVERGENCE", "CORPORATE_SPIN_OFF", "PUBLIC_FINANCING", "INTERVENCION_GENERAL_COMMUNICATION", "CONCURSO_36_2012_CONTEXT", "ETJ_163_2020_CONTEXT"]
+        },
+        {
+          "control_id": "PD-DP748-FIL-004",
+          "date": "2026-04-17",
+          "title": "Recurso de reforma y subsidiario de apelacion contra Auto 454/2026",
+          "source_status": "PRIMARY_PARTY_FILING_READ_AND_LEXNET_PRESENTATION_VERIFIED",
+          "dated_knowledge_sequence_alleged": ["2024-09-20_NOTICE_IN_ETJ", "2024-10-08_RECONSIDERATION_NOTICE_IN_ETJ", "2025-02-21_LATER_ADJUDICATION_REQUEST"],
+          "annex_controls": [
+            "PD-DP748-ANN-001_TRANSPARENCIA_R2026000054",
+            "PD-DP748-ANN-002_FONDOS_EUROPEOS_EXP_502395_20260410",
+            "PD-DP748-ANN-003_BOE_INCENTIVE_20230526",
+            "PD-DP748-ANN-004_CATASTRO_20260304",
+            "PD-DP748-ANN-005_SPIN_OFF_20221216",
+            "PD-DP748-ANN-006_REFORM_PROJECT_220001745000",
+            "PD-DP748-ANN-007_YAIZA_COMPATIBILITY_5944_2022",
+            "PD-DP748-ANN-008_TOURISM_REGISTER_20231018"
+          ]
+        },
+        {
+          "control_id": "PD-DP748-FIL-005",
+          "date": "2026-06-25",
+          "title": "Escrito de sintesis y concrecion de los hechos denunciados",
+          "source_status": "PRIMARY_PARTY_FILING_READ",
+          "factual_blocks": [
+            "DEBTOR_IDENTITY",
+            "PROPERTY_TO_PHYSICAL_REALITY_DIVERGENCE",
+            "HOTEL_TRANSFORMATION",
+            "CADASTRAL_REFLECTION",
+            "ECONOMIC_UNIT_SPIN_OFF",
+            "PUBLIC_FINANCING",
+            "ALLEGED_PRIOR_KNOWLEDGE_AND_LATER_ENFORCEMENT",
+            "NEED_FOR_INDIVIDUALISED_REASONS"
+          ],
+          "finite_enquiries": ["ETJ_TESTIMONY", "YAIZA", "CATASTRO", "PROPERTY_REGISTRY", "COMMERCIAL_REGISTRY_AND_DEED", "TOURISM_REGISTER", "FUNDING_AUTHORITY", "REPRESENTATIVE_EVIDENCE_ONLY_IF_DOCUMENTS_WARRANT"]
+        }
+      ],
+      "procedural_act_register": [
+        {"control_id": "PD-DP748-ACT-001", "date": "2026-03-24", "title": "Auto 454/2026", "outcome": "PROVISIONAL_DISMISSAL_AND_ARCHIVE"},
+        {"control_id": "PD-DP748-ACT-002", "date": "2026-05-20", "title": "Providencia", "outcome": "REFORM_AND_SUBSIDIARY_APPEAL_ROUTE_RECORDED_AND_TRANSFER_ORDERED"},
+        {"control_id": "PD-DP748-MF-001", "date": "2026-06-08", "title": "Informe del Ministerio Fiscal", "outcome": "PARTIAL_ALLOWANCE_REQUESTED_FOR_LACK_OF_REASONS_AND_CLEARER_FACTUAL_DELIMITATION_REQUESTED"},
+        {"control_id": "PD-DP748-ACT-003", "date": "2026-06-15", "title": "Diligencia de Ordenacion", "outcome": "FISCAL_REPORT_JOINED_AND_FILE_SENT_FOR_DECISION"},
+        {"control_id": "PD-DP748-ACT-004", "date": "2026-07-16", "title": "Auto estimando parcialmente reforma", "outcome": "LACK_OF_REASONS_ACCEPTED_PROVISIONAL_DISMISSAL_MAINTAINED"},
+        {"control_id": "PD-DP748-NOT-001", "date": "2026-09-01", "title": "LexNET transmission of signed 16 July order", "outcome": "NOTIFICATION_SOURCE_RECEIVED"}
+      ],
       "decision_2026_07_16": {
         "outcome": "REFORM_PARTIALLY_UPHELD_FOR_LACK_OF_REASONING_DISMISSAL_MAINTAINED",
         "finality": "NOT_FINAL_AS_STATED_IN_ORDER",
+        "appeal_wording": "FIVE_DAYS_FROM_DAY_AFTER_LAST_NOTIFICATION",
+        "deadline_calculation": "DO_NOT_CALCULATE_WITHOUT_COMPLETE_LAST_NOTIFICATION_RECORD",
         "reopening_expressly_preserved": true,
         "reopening_wording_control": "provisional dismissal could lead to reopening with contributions of other indicia",
-        "stated_deficiencies": [
-          "EXACT_ACT_NOT_SUFFICIENTLY_SPECIFIED",
-          "CONCRETE_PROPERTY_NOT_SUFFICIENTLY_IDENTIFIED",
-          "MINIMUM_CRIMINAL_INDICIUM_NOT_SUFFICIENTLY_PRESENTED"
-        ],
+        "stated_deficiencies": ["EXACT_ACT_NOT_SUFFICIENTLY_SPECIFIED", "CONCRETE_PROPERTY_NOT_SUFFICIENTLY_IDENTIFIED", "MINIMUM_CRIMINAL_INDICIUM_NOT_SUFFICIENTLY_PRESENTED"],
         "civil_criminal_boundary": "Criminal route must identify alleged autonomous criminal conduct and not operate as generic review of the civil enforcement."
       },
       "appeal_control": {
         "subsidiary_appeal_filing_verified": true,
         "filing_date": "2026-04-17",
+        "primary_question": "WHETHER_APRIL_AND_JUNE_FILINGS_ALREADY_SUPPLIED_SUFFICIENT_ACT_PROPERTY_INDICIA_AND_FINITE_ENQUIRIES",
         "article_766_4_stage": "PRIMARY_SOURCE_VERIFICATION_OPEN",
         "admission_transmission_roll": "UNVERIFIED_NO_ROLL_ASSERTED"
       },
+      "evidential_crosscheck": {
+        "already_present": ["DATED_NOTICE_TO_LATER_ACT_SEQUENCE", "EIGHT_FACTUAL_BLOCKS", "EIGHT_FINITE_ENQUIRIES", "ADMINISTRATIVE_REGISTRY_CORPORATE_AND_FUNDING_CONTEXT"],
+        "still_open": ["SINGLE_ACTOR_TO_SIGNED_FILING_TO_EXACT_PROPOSITION_MAP", "CERTIFIED_FINCA_TO_CURRENT_PHYSICAL_UNIT_MAP", "PERSONAL_KNOWLEDGE_AND_RECEIPT", "JUDICIAL_ERROR_CAUSATION_AND_BENEFIT", "ADJUDICATEE_OR_ASSIGNEE_IDENTITY"]
+      },
       "reopening_control": {
-        "working_evidence_matrix": [
-          "ACTOR_AND_CAPACITY",
-          "EXACT_ACT_AND_DATE",
-          "DOCUMENT_OR_REPRESENTATION",
-          "EXACT_PROPERTY_OR_FINCA",
-          "PRIOR_KNOWLEDGE_SOURCE",
-          "LATER_CONDUCT",
-          "JUDICIAL_OR_PATRIMONIAL_EFFECT",
-          "NEW_RELEVANT_INDICIUM_OR_FINITE_DILIGENCE"
-        ],
+        "working_evidence_matrix": ["ACTOR_AND_CAPACITY", "EXACT_ACT_AND_DATE", "EXACT_STATEMENT_OR_OMISSION", "EXACT_PROPERTY_OR_FINCA", "PRIOR_KNOWLEDGE_SOURCE", "LATER_CONDUCT", "JUDICIAL_OR_PATRIMONIAL_EFFECT", "LOSS_OR_BENEFIT", "NEW_RELEVANT_INDICIUM_OR_FINITE_DILIGENCE"],
         "post_finality_rule_boundary": "Use new or distinct relevant indicia; do not describe mere re-evaluation of the identical evidential set as a reopening trigger."
+      },
+      "publication_boundary": {
+        "publish_unredacted_court_pdfs": false,
+        "excluded_public_fields": ["NIE", "HOME_ADDRESS", "PHONE", "DIGITAL_SIGNATURE", "VERIFICATION_CODE", "SERVICE_METADATA", "UNNECESSARY_PERSONAL_DATA"],
+        "allegation_rule": "Attribute allegations and do not convert evidential context into findings of crime, knowledge or intent."
       }
     }
   ],
   "broader_context_routes": {"en": "/en/cuatrecasas-sun-park/", "es": "/es/cuatrecasas-sun-park/"},
   "relationship_rule": "Cambiario 1048/2019 and ETJ 163/2020 form a civil procedural lineage. DP 748/2026 is legally distinct and is linked only for source-supported context concerning alleged autonomous conduct associated with the enforcement.",
   "liability_boundary": "Interlinking establishes navigation and source-controlled procedural relationship only. It does not establish criminal intent, wrongdoing, liability, agreement, knowledge or merits attribution.",
-  "public_law_sources": [
-    "https://www.boe.es/buscar/act.php?id=BOE-A-1882-6036",
-    "https://hj.tribunalconstitucional.es/es/Resolucion/Show/25835",
-    "https://hj.tribunalconstitucional.es/HJ/es/Resolucion/Show/30118"
-  ]
+  "public_law_sources": ["https://www.boe.es/buscar/act.php?id=BOE-A-1882-6036", "https://hj.tribunalconstitucional.es/es/Resolucion/Show/25835", "https://hj.tribunalconstitucional.es/HJ/es/Resolucion/Show/30118"]
 }
