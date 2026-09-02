@@ -8,7 +8,7 @@ on:
       - 'archive/PROCEEDINGS_MASTER_REGISTER.csv'
       - 'assets/ministerio-fiscal-directory-20260902.*'
       - 'es/ministerio-fiscal/**'
-      - 'en/public-prosecution-service/**'
+      - 'en/ministerio-fiscal/**'
       - 'scripts/validate_ministerio_fiscal_directory.py'
       - '.github/workflows/validate-ministerio-fiscal-directory.yml'
   push:
@@ -19,7 +19,7 @@ on:
       - 'archive/PROCEEDINGS_MASTER_REGISTER.csv'
       - 'assets/ministerio-fiscal-directory-20260902.*'
       - 'es/ministerio-fiscal/**'
-      - 'en/public-prosecution-service/**'
+      - 'en/ministerio-fiscal/**'
       - 'scripts/validate_ministerio_fiscal_directory.py'
       - '.github/workflows/validate-ministerio-fiscal-directory.yml'
   workflow_dispatch:
