@@ -19,6 +19,8 @@
    * data-playa-blanca-concept-loader
    * MASTER_PROCEEDINGS_PUBLICATION_GATE_20260830
    * CANONICAL_HOME_SEARCH_AND_JUSTICE_AUTHORITY_REGISTER_20260902
+   * BORJA_SEPARATION_RPL3304_CONVERGENCE_INBOUND_20260902
+   * BORJA_SEPARATION_RPL3304_SEARCH_EXTENSION_20260902
    */
 
   const loadMasterProceedingsPublication = () => {
@@ -108,13 +110,16 @@
     document.head.appendChild(register);
   };
 
-  const loadCanonicalHomeSearch = () => {
+  const isHome = () => {
     const pathname = window.location.pathname.replace(/\/index\.html$/, '/');
     const segments = pathname.split('/').filter(Boolean);
-    const isHome = segments.length === 0
+    return segments.length === 0
       || (segments.length === 1 && ['por-derecho', 'es', 'en'].includes(segments[0]))
       || (segments.length === 2 && segments[0] === 'por-derecho' && ['es', 'en'].includes(segments[1]));
-    if (!isHome) return;
+  };
+
+  const loadCanonicalHomeSearch = () => {
+    if (!isHome()) return;
     if (document.querySelector('script[data-canonical-home-search-loader]')) return;
     const search = document.createElement('script');
     search.src = new URL('canonical-home-search-20260902.js?v=20260902b', current.src).href;
@@ -134,6 +139,25 @@
     document.head.appendChild(overlay);
   };
 
+  const loadBorjaSeparationRpl3304Inbound = () => {
+    if (document.querySelector('script[data-borja-separation-rpl3304-inbound-loader]')) return;
+    const inbound = document.createElement('script');
+    inbound.src = new URL('borja-separation-rpl3304-inbound-20260902.js?v=20260902b', current.src).href;
+    inbound.async = false;
+    inbound.setAttribute('data-borja-separation-rpl3304-inbound-loader', '20260902b');
+    document.head.appendChild(inbound);
+  };
+
+  const loadBorjaSeparationSearchExtension = () => {
+    if (!isHome()) return;
+    if (document.querySelector('script[data-borja-separation-search-extension-loader]')) return;
+    const extension = document.createElement('script');
+    extension.src = new URL('borja-separation-search-extension-20260902.js?v=20260902a', current.src).href;
+    extension.async = false;
+    extension.setAttribute('data-borja-separation-search-extension-loader', '20260902a');
+    document.head.appendChild(extension);
+  };
+
   // Preserve the complete site loader that existed before this visual update.
   const prior = document.createElement('script');
   prior.src = new URL('site-pre-treasury-154-hq-20260828.js?v=20260828a', current.src).href;
@@ -150,4 +174,6 @@
   loadActorsAcostaCanonicalRegister();
   loadCanonicalHomeSearch();
   loadJusticeProfessionalsCurrentOverlay();
+  loadBorjaSeparationRpl3304Inbound();
+  loadBorjaSeparationSearchExtension();
 })();
