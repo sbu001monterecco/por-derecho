@@ -1,0 +1,70 @@
+name: Reconcile authority search counts
+
+on:
+  push:
+    branches: [authority-search-20260902]
+    paths:
+      - '.github/workflows/reconcile-authority-search-counts-20260902.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  reconcile:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          ref: authority-search-20260902
+          fetch-depth: 0
+          persist-credentials: true
+      - name: Reconcile current canonical count surfaces
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+
+          for rel in ('es/registro-identidad-materia/index.html', 'en/matter-identity-registry/index.html'):
+              path = Path(rel)
+              text = path.read_text(encoding='utf-8')
+              if '342' not in text:
+                  raise SystemExit(f'{rel}: expected stale 342 count not found')
+              text = text.replace('342', '343')
+              path.write_text(text, encoding='utf-8')
+              print(f'{rel}: reconciled every current denominator reference to 343')
+
+          path = Path('scripts/validate_unitary_control_plane.py')
+          text = path.read_text(encoding='utf-8')
+          replacements = {
+              '''CURRENT_CANONICAL_COUNTS = {\n    "total": 342,\n    "PERSON": 162,\n    "ORGANISATION": 83,\n    "STRUCTURE": 11,\n    "INSTITUTION": 43,\n    "PROCEEDING": 43,\n}''': '''CURRENT_CANONICAL_COUNTS = {\n    "total": 343,\n    "PERSON": 162,\n    "ORGANISATION": 83,\n    "STRUCTURE": 11,\n    "INSTITUTION": 44,\n    "PROCEEDING": 43,\n}''',
+              'content="Registro operativo de 342 IDs inmutables': 'content="Registro operativo de 343 IDs inmutables',
+              'data-static-registry-counts="342-162-83-11-43-43"': 'data-static-registry-counts="343-162-83-11-44-43"',
+              'data-registry-stat="TOTAL">341': 'data-registry-stat="TOTAL">343',
+              '"name":"Total","value":342': '"name":"Total","value":343',
+              'content="Operational Por Derecho register of 342 immutable IDs': 'content="Operational Por Derecho register of 343 immutable IDs',
+              'current canonical identity denominator: 342 / 162 / 83 / 11 / 43 / 43': 'current canonical identity denominator: 343 / 162 / 83 / 11 / 44 / 43',
+          }
+          for old, new in replacements.items():
+              count = text.count(old)
+              if count < 1:
+                  raise SystemExit(f'validator marker not found: {old!r}')
+              text = text.replace(old, new)
+              print(f'validator: replaced {count} occurrence(s) of {old!r}')
+          path.write_text(text, encoding='utf-8')
+          PY
+      - name: Validate repaired branch
+        run: |
+          python3 scripts/validate_canonical_home_search.py
+          python3 scripts/validate_unitary_control_plane.py
+          python3 scripts/validate_operational_truth.py
+          python3 scripts/validate_current_reverse_engineered_digest.py
+          python3 scripts/validate_dp3205_2014_publication.py
+      - name: Commit reconciliation
+        shell: bash
+        run: |
+          git config user.name 'por-derecho-governance-bot'
+          git config user.email 'sbu001monterecco@users.noreply.github.com'
+          git add es/registro-identidad-materia/index.html en/matter-identity-registry/index.html scripts/validate_unitary_control_plane.py
+          git commit -m 'Reconcile current canonical count to 343 and 44 institutions'
+          git push origin HEAD:authority-search-20260902
