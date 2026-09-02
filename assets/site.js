@@ -23,6 +23,8 @@
    * BORJA_SEPARATION_RPL3304_SEARCH_EXTENSION_20260902
    * CUATRECASAS_MANDATE_RIC_INBOUND_20260902
    * CUATRECASAS_WHY_STEP4_LONGFORM_20260902
+   * CUATRECASAS_STEP4_PUBLICATION_NODE_20260902
+   * CUATRECASAS_STEP4_SEARCH_EXTENSION_20260902
    */
 
   const loadMasterProceedingsPublication = () => {
@@ -179,6 +181,25 @@
     document.head.appendChild(longform);
   };
 
+  const loadCuatrecasasStep4PublicationNode = () => {
+    if (document.querySelector('script[data-cuatrecasas-step4-publication-loader]')) return;
+    const publication = document.createElement('script');
+    publication.src = new URL('cuatrecasas-step4-publication-node-20260902.js?v=20260902a', current.src).href;
+    publication.async = false;
+    publication.setAttribute('data-cuatrecasas-step4-publication-loader', '20260902a');
+    document.head.appendChild(publication);
+  };
+
+  const loadCuatrecasasStep4SearchExtension = () => {
+    if (!isHome()) return;
+    if (document.querySelector('script[data-cuatrecasas-step4-search-extension-loader]')) return;
+    const extension = document.createElement('script');
+    extension.src = new URL('cuatrecasas-step4-search-extension-20260902.js?v=20260902a', current.src).href;
+    extension.async = false;
+    extension.setAttribute('data-cuatrecasas-step4-search-extension-loader', '20260902a');
+    document.head.appendChild(extension);
+  };
+
   // Preserve the complete site loader that existed before this visual update.
   const prior = document.createElement('script');
   prior.src = new URL('site-pre-treasury-154-hq-20260828.js?v=20260828a', current.src).href;
@@ -199,4 +220,6 @@
   loadBorjaSeparationSearchExtension();
   loadCuatrecasasMandateRicInbound();
   loadCuatrecasasWhyStep4Longform();
+  loadCuatrecasasStep4PublicationNode();
+  loadCuatrecasasStep4SearchExtension();
 })();

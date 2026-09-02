@@ -1,0 +1,47 @@
+{
+  "id": "PD-PUB-CUAT-LINKEDIN-WHY-STEP4-20260902",
+  "type": "public_communication_event",
+  "platform": "LinkedIn",
+  "publication_date": "2026-09-02",
+  "status": "user_confirmed_published",
+  "external_url": null,
+  "external_url_status": "not_independently_captured",
+  "title": "Why go straight to Step 4?",
+  "subject": "Cuatrecasas fee-enforcement sequence in the wider Sun Park / LPB / Matkator record",
+  "linked_public_page": "https://sbu001monterecco.github.io/por-derecho/en/cuatrecasas-sun-park/",
+  "linked_bridge_page": "https://sbu001monterecco.github.io/por-derecho/en/cuatrecasas-mandate-ric-continuity/",
+  "canonical_evidence_record": "/por-derecho/evidence/cuatrecasas/2026-09-02-mandate-inversion-execution-perimeter.json",
+  "publication_basis": "The user confirmed publication immediately after receiving the shortened LinkedIn draft. The canonical LinkedIn URL and exact platform rendering were not independently captured in the repository at registration time.",
+  "post_text_basis": "Shortened English draft supplied immediately before the user's publication confirmation; exact platform text remains subject to later capture/verification.",
+  "post_text": "CUATRECASAS SELLS ‘SPECIAL SITUATIONS’.\n\nHERE IS ONE IT SHOULD EXPLAIN.\n\nCuatrecasas publicly markets expertise in restructuring, insolvency, NPLs, distressed debt, credit bidding, loan-to-own and enforcement.\n\nSo why, in our documented Sun Park matter, does the fee-recovery path appear to jump straight to Step 4?\n\n1. Demand payment from the mandating UK client, Aweswell? Not evidenced in the record presently located.\n\n2. Seek payment through LPB’s Concurso 36/2012? Not evidenced as the payment route used.\n\n3. Seek payment through the operating hotel/recovery structure? Not evidenced in the record presently located.\n\n4. Execute against Matkator? YES.\n\nThe current remate concerns one property only: finca registral 8,584. But the executed debtor is Matkator, S.L. That distinction matters. Subject to the execution order, balance, proportionality and attachability rules, the exposure is not conceptually limited to one apartment: other legally attachable Matkator assets or patrimonial rights may potentially matter.\n\nAnd Matkator is the wholly owned subsidiary of Aweswell — the UK client whose wider hotel recovery Cuatrecasas had been retained to assist.\n\nThat is why we call this MANDATE INVERSION.\n\nThe pagarés were documented in 2018 as covering pending invoices and incurred costs. In 2019 Cuatrecasas itself identified Matkator’s free assets as potential rescue-financing collateral.\n\nSo the question is not simply whether fees could be collected. It is: WHY DID FEE-DERIVED INSTRUMENTS BECOME THE ROUTE INTO THE SAME PATRIMONIAL BASE THE MANDATE WAS SUPPOSED TO HELP PROTECT, FINANCE OR RECOVER?\n\nAnd why Step 4 first?\n\nIf Steps 1–3 happened, show the documents.\n\nFull evidence-led reconstruction: https://sbu001monterecco.github.io/por-derecho/en/cuatrecasas-sun-park/\n\nFacts, inferences and allegations remain separate.\n\n#Cuatrecasas #SpecialSituations #Insolvency #NPL #ProfessionalResponsibility #SunPark",
+  "attachment": {
+    "title": "Why go straight to step 4?",
+    "format": "PNG",
+    "dimensions_px": "1491x1055",
+    "sha256": "e52ba00479e98983b92c2c88919aecc7f2ef9cc496f65ebfc731ddd062387a74",
+    "provenance": "Generated in the current ChatGPT working session and used by the user as the LinkedIn attachment.",
+    "binary_repository_status": "hash_and_dimensions_registered; exact binary not mirrored through the text-only GitHub connector",
+    "website_equivalent": "The same Step 1–4 logic is rendered as native HTML on the Cuatrecasas page by assets/cuatrecasas-why-step4-longform-20260902.js."
+  },
+  "relationships": [
+    "PD-EV-CUAT-MANDATE-INVERSION-20260902",
+    "ETJ 163/2020",
+    "Cambiario 1048/2019",
+    "DP 748/2026",
+    "Concurso 36/2012",
+    "Aweswell Limited",
+    "Matkator, S.L."
+  ],
+  "publication_boundaries": [
+    "This publication event is evidence that a public communication was made; it is not independent proof of the underlying professional, civil, disciplinary or criminal allegations.",
+    "The controlled ETJ record presently identifies finca registral 8584 as the single current auction/adjudication object and Matkator as the executed debtor.",
+    "Aweswell does not automatically become an executed debtor and its separate assets are not exposed merely because it owns Matkator.",
+    "No completed remate cession to CAM, HNT, MYND or another identified third party is established by this publication record.",
+    "The March 2021 RIC/CNMV notice does not backdate knowledge of later-created regional-incentive, ERDF/EU-funding or public-authority material."
+  ],
+  "follow_up_controls": [
+    "Capture the canonical LinkedIn post URL and platform screenshot if later supplied or independently located.",
+    "Preserve any substantive public response, correction, takedown, legal notice or engagement as a separate dated event rather than editing this record retrospectively.",
+    "Any contrary primary documentation supplied by Cuatrecasas should be linked into the same chronology with equal prominence."
+  ]
+}
