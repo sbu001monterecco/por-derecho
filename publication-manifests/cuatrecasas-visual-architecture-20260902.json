@@ -1,7 +1,7 @@
 {
   "publication_id": "CUATRECASAS-VISUAL-ARCHITECTURE-20260902",
   "owner": "Por Derecho / Project Sun Rock",
-  "current_state": "MERGED",
+  "current_state": "LIVE_VERIFIED",
   "control_date": "2026-09-02",
   "publication_type": "bilingual visual navigation and reconstruction layer across Cuatrecasas, Matkator, ETJ, 360-degree and RIC/CNMV routes, including the dedicated March 2021 RICPE/CNMV notice node",
   "base_main_sha": "dbfcd6eedbf4924616c836a984d8b624fd24f19d",
@@ -58,7 +58,10 @@
       "PR #1365 branch preparation rendered both canonical localized SVG atlases successfully and the v2 JavaScript renderer passed node --check.",
       "PR #1365 pre-merge compare against current main recorded behind_by=0 with no deletions or renames.",
       "PR #1365 merged to main at 2a26e4a201099633491ba24741c46baade1c1eea on 2026-09-02.",
-      "The post-merge public Pages state remains deliberately unclaimed until the dedicated deployment probe and live verifier added by the closeout PR pass."
+      "PR #1366 added the dedicated public deployment probe and source/live verifier without changing the substantive visual architecture and merged at ffbab72e6e436913d8c78eec2faf6352f595b848.",
+      "Post-merge visual-verification workflow run 33680541638 completed source integrity and public-edge verification successfully on ffbab72e6e436913d8c78eec2faf6352f595b848.",
+      "Public-edge job 100415880350 reached 25/25 live checks on attempt 4 at 2026-09-02T20:40:15.750954Z, covering the deployment probe, both localized atlases, the loader/renderer chain and all 18 expected bilingual routes.",
+      "GitHub Pages run 33680539286 built and deployed ffbab72e6e436913d8c78eec2faf6352f595b848 successfully; deploy job 100415952924 completed at 2026-09-02T20:40:10Z."
     ],
     "local_source_checks": [
       "Both canonical SVG atlases rendered successfully during PR #1365 branch preparation.",
@@ -71,7 +74,58 @@
     "publication_integrity": "SUCCESS_CORRECTED_PR1365_HEAD",
     "repository_preservation": "SUCCESS_CORRECTED_PR1365_HEAD",
     "audience_experience": "SUCCESS_CORRECTED_PR1365_HEAD",
-    "rendered_checks": "SOURCE_VALIDATED_POST_MERGE_LIVE_GATE_PENDING"
+    "rendered_checks": "SOURCE_AND_PUBLIC_PAGES_VERIFIED"
+  },
+  "deployment_evidence": [
+    "PR #1366 merged the dedicated deployment probe and source/live verifier at ffbab72e6e436913d8c78eec2faf6352f595b848.",
+    "GitHub Pages run 33680539286 built and deployed that exact merge SHA successfully; deploy job 100415952924 completed successfully at 2026-09-02T20:40:10Z.",
+    "Dedicated visual workflow run 33680541638 verified the public Pages host after propagation rather than inferring publication from Git source."
+  ],
+  "live_urls": [
+    "https://sbu001monterecco.github.io/por-derecho/en/cuatrecasas-sun-park/",
+    "https://sbu001monterecco.github.io/por-derecho/en/cuatrecasas-mandate-ric-continuity/",
+    "https://sbu001monterecco.github.io/por-derecho/en/cuatrecasas-dp748-civil-action/",
+    "https://sbu001monterecco.github.io/por-derecho/en/matkator-asset-rights-register/",
+    "https://sbu001monterecco.github.io/por-derecho/en/reverse-engineering-360-sun-park-chain/",
+    "https://sbu001monterecco.github.io/por-derecho/en/unitary-record/",
+    "https://sbu001monterecco.github.io/por-derecho/en/ric-private-equity-sun-park/",
+    "https://sbu001monterecco.github.io/por-derecho/en/ricpe-cnmv-dossier-2021/",
+    "https://sbu001monterecco.github.io/por-derecho/en/same-hotel-multiple-financial-lives/",
+    "https://sbu001monterecco.github.io/por-derecho/es/cuatrecasas-sun-park/",
+    "https://sbu001monterecco.github.io/por-derecho/es/cuatrecasas-mandato-continuidad-ric/",
+    "https://sbu001monterecco.github.io/por-derecho/es/cuatrecasas-dp748-accion-civil/",
+    "https://sbu001monterecco.github.io/por-derecho/es/registro-activos-derechos-matkator/",
+    "https://sbu001monterecco.github.io/por-derecho/es/ingenieria-inversa-360-cadena-sun-park/",
+    "https://sbu001monterecco.github.io/por-derecho/es/registro-unitario/",
+    "https://sbu001monterecco.github.io/por-derecho/es/ric-private-equity-sun-park/",
+    "https://sbu001monterecco.github.io/por-derecho/es/ricpe-cnmv-dossier-2021/",
+    "https://sbu001monterecco.github.io/por-derecho/es/mismo-hotel-multiples-vidas-financieras/"
+  ],
+  "live_verification_evidence": {
+    "status": "LIVE_VERIFIED",
+    "verified_at": "2026-09-02T20:40:15.750954Z",
+    "source_sha": "ffbab72e6e436913d8c78eec2faf6352f595b848",
+    "workflow_run_id": 33680541638,
+    "source_job_id": 100415818210,
+    "public_pages_job_id": 100415880350,
+    "source_propagation_attempt": 4,
+    "verified_checks": 25,
+    "required_checks": 25,
+    "pages_deploy_run_id": 33680539286,
+    "pages_deploy_job_id": 100415952924,
+    "pages_deployed_at": "2026-09-02T20:40:10Z",
+    "checks": {
+      "deployment_probe_live": true,
+      "english_atlas_live": true,
+      "spanish_atlas_live": true,
+      "renderer_live": true,
+      "cross_page_loader_live": true,
+      "site_loader_live": true,
+      "inbound_loader_live": true,
+      "expected_bilingual_routes_live": 18,
+      "expected_bilingual_routes_total": 18
+    },
+    "verification_basis": "The public Pages host served the post-PR-1366 deployment probe, both localized atlases, the loader/renderer chain and all 18 expected bilingual routes. This verifies publication/navigation availability only and does not establish any underlying allegation."
   },
   "evidence_and_legal_boundaries": [
     "Visuals and the 2021 notice page are illustrative navigation/reconstruction aids, not independent evidence.",
@@ -86,15 +140,26 @@
     "FACT -> INFERENCE -> ALLEGATION -> OPEN QUESTION remains controlling."
   ],
   "live_verification": {
-    "status": "PENDING_POST_MERGE_GATE",
+    "status": "LIVE_VERIFIED",
     "deployment_probe": "deployment-probes/cuatrecasas-visual-architecture-20260902.json",
     "verifier": "scripts/verify_cuatrecasas_visual_architecture.py",
     "workflow": ".github/workflows/verify-cuatrecasas-visual-architecture-live.yml",
     "minimum_visual_merge": "2a26e4a201099633491ba24741c46baade1c1eea",
-    "required_gate": "Public Pages must serve the deployment probe, both localized atlases, the loader/renderer chain and all 18 expected bilingual routes before LIVE_VERIFIED is recorded."
+    "closeout_pr": 1366,
+    "closeout_merge_sha": "ffbab72e6e436913d8c78eec2faf6352f595b848",
+    "workflow_run_id": 33680541638,
+    "source_job_id": 100415818210,
+    "public_pages_job_id": 100415880350,
+    "verified_at": "2026-09-02T20:40:15.750954Z",
+    "attempt": 4,
+    "verified_checks": "25/25",
+    "pages_deploy_run_id": 33680539286,
+    "pages_deploy_job_id": 100415952924,
+    "pages_deployed_at": "2026-09-02T20:40:10Z",
+    "verification_basis": "Public Pages served the deployment probe, both localized atlases, the loader/renderer chain and all 18 expected bilingual routes."
   },
   "thread_deletion_audit": {
     "status": "NOT_YET_DELETION_SAFE",
-    "note": "The substantive visual architecture is merged and source-validated. Deletion safety still requires the new post-merge public Pages gate to pass and its result to be preserved in the continuity record."
+    "note": "The substantive visual architecture and its public deployment are live-verified. Thread deletion safety remains a separate continuity assessment and is not asserted by this release."
   }
 }

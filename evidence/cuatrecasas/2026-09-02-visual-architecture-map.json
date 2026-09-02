@@ -1,7 +1,7 @@
 {
   "record_type": "cuatrecasas_visual_architecture_map",
   "date": "2026-09-02",
-  "status": "MERGED_PR1365_LIVE_GATE_PENDING",
+  "status": "LIVE_VERIFIED",
   "continuity_base": {
     "main_sha_before_work": "dbfcd6eedbf4924616c836a984d8b624fd24f19d",
     "predecessor_prs": [1359, 1360, 1361, 1362, 1363, 1364],
@@ -56,10 +56,22 @@
     "source_pr": 1365,
     "merge_sha": "2a26e4a201099633491ba24741c46baade1c1eea",
     "source_ci": "GREEN_ON_CORRECTED_PR_HEAD_BEFORE_MERGE",
-    "live_verification": "PENDING_POST_MERGE_GATE",
+    "live_verification": "LIVE_VERIFIED",
+    "closeout_pr": 1366,
+    "closeout_merge_sha": "ffbab72e6e436913d8c78eec2faf6352f595b848",
     "deployment_probe": "deployment-probes/cuatrecasas-visual-architecture-20260902.json",
     "verifier": "scripts/verify_cuatrecasas_visual_architecture.py",
     "workflow": ".github/workflows/verify-cuatrecasas-visual-architecture-live.yml",
-    "rule": "Do not claim LIVE_VERIFIED until the public-pages job confirms the probe, both localized atlases, the loader/renderer chain and all expected bilingual routes on the public Pages host."
+    "verification_run_id": 33680541638,
+    "source_job_id": 100415818210,
+    "public_pages_job_id": 100415880350,
+    "verified_at": "2026-09-02T20:40:15.750954Z",
+    "verified_checks": "25/25",
+    "verification_attempt": 4,
+    "pages_deploy_run_id": 33680539286,
+    "pages_deploy_job_id": 100415952924,
+    "pages_deployed_at": "2026-09-02T20:40:10Z",
+    "verification_basis": "The post-PR-1366 public Pages host served the deployment probe, both localized atlases, the loader/renderer chain and all 18 expected bilingual public routes; all 25 live checks passed. This verifies deployment/navigation availability only and does not establish the underlying allegations.",
+    "rule": "LIVE_VERIFIED records public deployment of the visual architecture only; FACT -> INFERENCE -> ALLEGATION -> OPEN QUESTION and all substantive evidential firewalls remain controlling."
   }
 }
