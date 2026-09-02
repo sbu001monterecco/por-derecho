@@ -1,0 +1,138 @@
+{
+  "schema": "por-derecho.proceedings-relationship-graph.v1",
+  "control_id": "PD-PROCEEDINGS-GRAPH-20260902-01",
+  "as_of": "2026-09-02",
+  "purpose": "Source-graded visual and machine-readable map of proceedings that share procedural lineage, transmitted evidence, asset context or separately alleged conduct.",
+  "global_boundary": "A connection in this graph is not joinder, accumulation, identity of parties, proof of knowledge, proof of criminality or transfer of findings between proceedings.",
+  "nodes": [
+    {
+      "id": "TF-CIV-001",
+      "caepr_id": null,
+      "label": "Cambiario 1048/2019",
+      "lane": "CIVIL",
+      "route_es": "/es/cambiario-1048-2019/",
+      "route_en": "/en/cambiario-1048-2019/",
+      "status": "SOURCE_VERIFIED_PREDECESSOR"
+    },
+    {
+      "id": "TF-CIV-002",
+      "label": "ETJ 163/2020",
+      "lane": "CIVIL_ENFORCEMENT",
+      "route_es": "/es/etj-163-2020/",
+      "route_en": "/en/etj-163-2020/",
+      "status": "ACTIVE_OUTCOME_GAPS"
+    },
+    {
+      "id": "TF-CRI-011",
+      "caepr_id": "PD-SP-R-0044",
+      "label": "DP 552/2025 · La Laguna",
+      "lane": "CRIMINAL_ORIGIN",
+      "route_es": "/es/dp-552-2025/",
+      "route_en": "/en/dp-552-2025/",
+      "nig": "3802343220250001820",
+      "status": "ORIGIN_FILE_CONTINUED_TERRITORIALLY"
+    },
+    {
+      "id": "LZ-JUD-047",
+      "caepr_id": "PD-SP-R-0045",
+      "label": "DP 711/2025 · Arrecife",
+      "lane": "CRIMINAL_CONTINUATION",
+      "route_es": "/es/dp-711-2025/",
+      "route_en": "/en/dp-711-2025/",
+      "nig": "3802343220250001820",
+      "status": "PROVISIONAL_DISMISSAL_REFORM_DISMISSED_APPEAL_OUTCOME_OPEN"
+    },
+    {
+      "id": "TF-CRI-003",
+      "caepr_id": "PD-SP-R-0003",
+      "label": "DP 748/2026 · La Laguna",
+      "lane": "SEPARATE_CRIMINAL_ROUTE",
+      "route_es": "/es/dp-748-2026/",
+      "route_en": "/en/dp-748-2026/",
+      "nig": "3802343220260002351",
+      "status": "PROVISIONAL_DISMISSAL_NONFINAL_APPEAL_ROUTE"
+    },
+    {
+      "id": "GC-JUD-001",
+      "caepr_id": "PD-SP-R-0001",
+      "label": "Concurso 36/2012 · Luchy Playa Blanca",
+      "lane": "INSOLVENCY_CONTEXT",
+      "route_es": "/es/concurso-36-2012-masa-activa-2018-2021/",
+      "route_en": "/en/insolvency-36-2012-active-estate-2018-2021/",
+      "status": "CONTEXT_ONLY_FOR_THIS_GRAPH"
+    }
+  ],
+  "edges": [
+    {
+      "from": "TF-CIV-001",
+      "to": "TF-CIV-002",
+      "type": "PROCEDURAL_PREDECESSOR",
+      "source_grade": "VERIFIED_PROCEDURAL",
+      "why_it_matters": "Cambiario 1048/2019 is the civil predecessor to ETJ 163/2020.",
+      "boundary": "The lineage does not itself establish validity of the title, debt, later enforcement acts or criminality."
+    },
+    {
+      "from": "TF-CRI-011",
+      "to": "LZ-JUD-047",
+      "type": "ORIGIN_TERRITORIAL_CONTINUATION",
+      "source_grade": "PRIMARY_COURT_HEADER",
+      "why_it_matters": "The DP 711/2025 court header expressly records origin proceeding DP 552/2025-00 and the shared NIG.",
+      "boundary": "Continuation is not an automatic merits adoption of every allegation or annex from the origin file."
+    },
+    {
+      "from": "TF-CRI-011",
+      "to": "TF-CIV-002",
+      "type": "EVIDENCE_PORTED_AS_HECHO_NUEVO",
+      "source_grade": "FILED_PRIMARY_PLEADING",
+      "why_it_matters": "The 13 March 2025 ETJ filing expressly presented the DP 552 complaint/enlargement as a new fact relevant to the execution, valuation and requested nullity/suspension issues.",
+      "boundary": "A filing proves that evidence/arguments were put before the civil court; it does not prove judicial acceptance or the truth of the allegations."
+    },
+    {
+      "from": "TF-CRI-011",
+      "to": "TF-CIV-002",
+      "type": "SHARED_PROPERTY_IDENTITY_CONTEXT",
+      "source_grade": "PARTY_PLEADING_PLUS_REGISTRY_REFERENCES",
+      "why_it_matters": "Fincas 8584 and 8588 and the physical state/value of Matkator property are recurring factual objects in both lanes.",
+      "boundary": "The current-room mapping and legal effects require certified registry/cadastral and expert evidence."
+    },
+    {
+      "from": "TF-CRI-003",
+      "to": "TF-CIV-002",
+      "type": "SEPARATE_CRIMINAL_LANE_SHARED_ENFORCEMENT_CONTEXT",
+      "source_grade": "PRIMARY_COURT_AND_FILED_SOURCES",
+      "why_it_matters": "DP 748/2026 alleges autonomous conduct associated with the civil enforcement and therefore shares ETJ source material.",
+      "boundary": "DP 748 is not an appeal from ETJ and is not the same criminal proceeding as DP 552/DP 711."
+    },
+    {
+      "from": "TF-CRI-011",
+      "to": "TF-CRI-003",
+      "type": "RELATED_EVIDENTIAL_HISTORY_NOT_PROCEDURAL_CONTINUATION",
+      "source_grade": "CONTROLLED_CROSS_PROCEEDING_ANALYSIS",
+      "why_it_matters": "Both criminal routes touch the alleged transformation/identity of Matkator assets and later use of those assets within the ETJ context, but they were initiated at different times against different alleged conduct/perimeters.",
+      "boundary": "No direct procedural succession, accumulation or transfer of findings is asserted."
+    },
+    {
+      "from": "GC-JUD-001",
+      "to": "TF-CRI-011",
+      "type": "SHARED_SUN_PARK_ASSET_CONTEXT",
+      "source_grade": "CONTEXTUAL",
+      "why_it_matters": "The wider Sun Park/LPB history helps explain the asset setting in which Matkator units were located.",
+      "boundary": "Matkator is not thereby treated as an insolvent debtor in Concurso 36/2012 and no criminal conclusion is imported from insolvency events."
+    },
+    {
+      "from": "GC-JUD-001",
+      "to": "TF-CIV-002",
+      "type": "SHARED_HOTEL_ASSET_CONTEXT",
+      "source_grade": "CONTEXTUAL",
+      "why_it_matters": "ETJ property is physically situated within the wider Sun Park/MYND asset history.",
+      "boundary": "Context is not procedural joinder or proof that Concurso decisions resolved title to Matkator property."
+    }
+  ],
+  "legend": {
+    "PRIMARY_COURT_HEADER": "Direct judicial act/header",
+    "FILED_PRIMARY_PLEADING": "A filing proves submission, not truth",
+    "VERIFIED_PROCEDURAL": "Procedural relationship established from controlled sources",
+    "CONTEXTUAL": "Background relevance only",
+    "OPEN_GAP": "Relationship/detail awaiting primary confirmation"
+  }
+}
