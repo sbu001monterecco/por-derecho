@@ -62,3 +62,18 @@
   if (hero && hero.nextSibling) main.insertBefore(section, hero.nextSibling);
   else main.prepend(section);
 })();
+
+(() => {
+  const current = document.currentScript;
+  if (!current) return;
+  const load = (file, marker) => {
+    if (document.querySelector(`script[${marker}]`)) return;
+    const script = document.createElement('script');
+    script.src = new URL(file, current.src).href;
+    script.async = false;
+    script.setAttribute(marker, '20260902a');
+    document.head.appendChild(script);
+  };
+  load('matkator-asset-rights-inbound-20260902.js?v=20260902a', 'data-matkator-asset-rights-inbound-loader');
+  load('matkator-asset-rights-search-extension-20260902.js?v=20260902a', 'data-matkator-asset-rights-search-loader');
+})();
