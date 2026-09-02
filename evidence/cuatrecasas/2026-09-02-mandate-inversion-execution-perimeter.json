@@ -1,0 +1,65 @@
+{
+  "id": "PD-EV-CUAT-MANDATE-INVERSION-20260902",
+  "title_en": "Cuatrecasas mandate inversion / Matkator execution perimeter",
+  "title_es": "Cuatrecasas inversión del mandato / perímetro de ejecución de Matkator",
+  "status": "controlled_public_summary",
+  "updated": "2026-09-02",
+  "entities": [
+    "Aweswell Limited",
+    "Matkator, S.L.",
+    "Luchy Playa Blanca, S.L.U.",
+    "Cuatrecasas Gonçalves Pereira, S.L.P."
+  ],
+  "proceedings": [
+    "Cambiario 1048/2019",
+    "ETJ 163/2020",
+    "DP 748/2026"
+  ],
+  "documented_facts": [
+    {
+      "date": "2018-11-22",
+      "fact": "A controlled Cuatrecasas email records that promissory notes were delivered to cover pending invoices and existing incurred costs and were intended to allow continued assistance while financing and the insolvency position were being resolved."
+    },
+    {
+      "date": "2019-06-11",
+      "fact": "A controlled financing email identifies free assets owned by Matkator as assets capable of supporting mortgage/security discussions within the rescue-financing workstream."
+    },
+    {
+      "date": "2019-07-09",
+      "fact": "A controlled email from Iñigo de Luisa records his understanding, in the context of fund conversations, that Aweswell owned 100% of Luchy and Matkator."
+    },
+    {
+      "date": "2022-02-18",
+      "fact": "A controlled Cuatrecasas email states a combined claimed amount of EUR 441,463 in connection with ongoing judicial claims and identifies the matter in its subject as AWESWELL/MARKATOR/LUCHY PLAYA BLANCA."
+    },
+    {
+      "date": "2024-10-17",
+      "fact": "The ETJ 163/2020 adjudication request identifies Cuatrecasas as executing creditor and Matkator as executed debtor, seeks adjudication of the auctioned property at 70% of auction value and reserves the right to assign the remate to a third party."
+    },
+    {
+      "date": "2026-06-22",
+      "fact": "The controlled auction review identifies the present auction object as a single lot: finca registral 8584, historical apartment 758."
+    }
+  ],
+  "controlled_inferences": [
+    "The present real-estate object is narrower than the monetary enforcement-debt perimeter because only finca 8584 is presently identified as the auction/adjudication object while Matkator is the executed debtor.",
+    "If the enforceable balance remains unsatisfied, additional legally attachable Matkator assets or patrimonial rights may potentially become relevant, subject to the execution order, proportionality and the Spanish Civil Procedure Act.",
+    "Because the promissory notes were documented as covering professional invoices/costs, later enforcement of those instruments against Matkator can be analysed as a mandate-inversion or fee-coherence question rather than only as interpersonal disloyalty.",
+    "Because Aweswell was documented as the 100% owner of Matkator, depletion of Matkator can impair Aweswell's investment and hotel-recovery position even though Aweswell is not thereby automatically an executed debtor."
+  ],
+  "hard_boundaries": [
+    "The controlled record does not show multiple Matkator units presently auctioned in ETJ 163/2020; the present controlled object is finca 8584 only.",
+    "A monetary execution against Matkator does not automatically permit seizure of Aweswell's separate assets merely because Aweswell owns Matkator.",
+    "No completed remate cession to Acosta Matos, HNT, MYND or any other identified third party is established by this record.",
+    "Not every litigation or personal right is attachable; any asserted exposure of a claim or receivable requires proof that it is an identifiable patrimonial right capable of attachment.",
+    "Useful historical legal work is not erased merely because later conduct is disputed; fee validity, breach, damages, set-off/restitution and net recovery require separate legal and accounting analysis."
+  ],
+  "public_routes": {
+    "en_bridge": "/por-derecho/en/cuatrecasas-mandate-ric-continuity/#mandate-inversion",
+    "es_bridge": "/por-derecho/es/cuatrecasas-mandato-continuidad-ric/#inversion-mandato",
+    "en_etj": "/por-derecho/en/cuatrecasas-dp748-civil-action/",
+    "es_etj": "/por-derecho/es/cuatrecasas-dp748-accion-civil/",
+    "en_360": "/por-derecho/en/reverse-engineering-360-sun-park-chain/",
+    "es_360": "/por-derecho/es/ingenieria-inversa-360-cadena-sun-park/"
+  }
+}
