@@ -1,0 +1,32 @@
+name: Backfill historic proceedings search 20260902
+on:
+  push:
+    branches: [authority-search/historic-proceedings-search-backfill-20260902]
+    paths:
+      - .github/workflows/backfill-historic-proceedings-search-20260902.yml
+permissions:
+  contents: write
+jobs:
+  backfill:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          ref: authority-search/historic-proceedings-search-backfill-20260902
+          fetch-depth: 0
+      - name: Build canonical backfill
+        run: python3 scripts/_backfill_historic_proceedings_search_20260902.py
+      - name: Validate key controls
+        run: |
+          python3 scripts/validate_canonical_home_search.py
+          python3 scripts/validate_operational_truth.py
+          python3 scripts/validate_current_reverse_engineered_digest.py
+          python3 scripts/validate_dp3205_2014_publication.py
+      - name: Commit generated release
+        run: |
+          git config user.name por-derecho-governance-bot
+          git config user.email sbu001monterecco@users.noreply.github.com
+          git add archive/PROCEEDINGS_MASTER_REGISTER.csv assets/data/proceedings-master-public-v1.json assets/data/matter-identity-registry-v1.json assets/data/matter-identity-registry-v1.historic-arrecife-judicial-people-20260902.json assets/data/matter-identity-registry-v1.historic-arrecife-judicial-institutions-20260902.json assets/data/justice-authority-register-current-v2.json assets/data/proceeding-justice-authority-coverage-20260902.json es/registro-autoridad-historica-arrecife/index.html en/historic-arrecife-justice-authority-register/index.html ops/CURRENT_UNITARY_STATE.json scripts/validate_operational_truth.py scripts/validate_current_reverse_engineered_digest.py scripts/validate_dp3205_2014_publication.py es/registro-identidad-materia/index.html en/matter-identity-registry/index.html
+          git commit -m "Backfill historic proceedings and justice authority search" || exit 0
+          git push origin HEAD:authority-search/historic-proceedings-search-backfill-20260902
