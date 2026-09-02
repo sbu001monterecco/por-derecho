@@ -53,6 +53,7 @@
   if (!main) return;
   const insert = () => {
     const step4 = main.querySelector('[data-cuatrecasas-why-step4="20260902"]');
+    if (step4 && !step4.id) step4.id = 'why-step4';
     const mandate = main.querySelector('#mandate-inversion, #inversion-mandato, [data-cuatrecasas-mandate-ric-inbound="20260902"]');
     const anchor = step4 || mandate || main.querySelector('section');
     if (anchor && anchor.nextSibling) main.insertBefore(section, anchor.nextSibling);
