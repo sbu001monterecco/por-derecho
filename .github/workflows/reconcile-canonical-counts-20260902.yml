@@ -104,18 +104,18 @@ jobs:
 
           replace_exact(
               'scripts/validate_dp3205_2014_publication.py',
-              'assert registry_control_date == "2026-09-01"',
-              'assert registry_control_date == "2026-09-02"',
+              'require(registry_control_date == "2026-09-01", "canonical current registry control date is stale")',
+              'require(registry_control_date == "2026-09-02", "canonical current registry control date is stale")',
           )
           replace_exact(
               'scripts/validate_dp3205_2014_publication.py',
-              '"en": "1 SEPTEMBER 2026"',
-              '"en": "2 SEPTEMBER 2026"',
+              'includes(registry_en, "1 SEPTEMBER 2026", relative(REGISTRY_EN))',
+              'includes(registry_en, "2 SEPTEMBER 2026", relative(REGISTRY_EN))',
           )
           replace_exact(
               'scripts/validate_dp3205_2014_publication.py',
-              '"es": "1 SEPTIEMBRE 2026"',
-              '"es": "2 SEPTIEMBRE 2026"',
+              'includes(registry_es, "1 SEPTIEMBRE 2026", relative(REGISTRY_ES))',
+              'includes(registry_es, "2 SEPTIEMBRE 2026", relative(REGISTRY_ES))',
           )
 
           reconcile_page(
