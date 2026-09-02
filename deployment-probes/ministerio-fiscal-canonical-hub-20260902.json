@@ -1,0 +1,21 @@
+{
+  "publication_id": "MINISTERIO-FISCAL-CANONICAL-HUB-20260902",
+  "control_date": "2026-09-02",
+  "status": "SOURCE_CREATED_LIVE_VERIFICATION_PENDING",
+  "purpose": "Canonical Ministerio Fiscal hub and office directory with stable Por Derecho office/event identities kept separate from REGAGE/RedSARA and official expediente references.",
+  "expected_public_routes": [
+    "/por-derecho/es/ministerio-fiscal/",
+    "/por-derecho/es/ministerio-fiscal/oficinas/",
+    "/por-derecho/en/public-prosecution-service/",
+    "/por-derecho/en/public-prosecution-service/offices/",
+    "/por-derecho/es/fiscalia-comunicaciones-procedimientos/",
+    "/por-derecho/en/public-prosecution-communications-proceedings/"
+  ],
+  "source_controls": [
+    "assets/data/ministerio-fiscal-directory-v1.json",
+    "assets/data/institutional-communications-register-v1.json",
+    "archive/PROCEEDINGS_MASTER_REGISTER.csv",
+    "scripts/validate_ministerio_fiscal_directory.py"
+  ],
+  "non_inference": "Publication and live rendering do not prove internal institutional delivery, examination, merits, intent, wrongdoing or historical completeness."
+}
