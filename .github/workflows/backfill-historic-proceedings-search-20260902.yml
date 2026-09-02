@@ -4,6 +4,8 @@ on:
     branches: [authority-search/historic-proceedings-search-backfill-20260902]
     paths:
       - .github/workflows/backfill-historic-proceedings-search-20260902.yml
+      - scripts/_enrich_proceeding_contextual_links_20260902.py
+      - scripts/validate_proceeding_contextual_links_20260902.py
 permissions:
   contents: write
 jobs:
@@ -45,5 +47,5 @@ jobs:
             es/procedimientos en/proceedings \
             es/registro-identidad-materia/index.html \
             en/matter-identity-registry/index.html
-          git commit -m "Expand proceeding pages with contextual reciprocal navigation" || exit 0
+          git commit -m "Tighten proceeding contextual reciprocal navigation" || exit 0
           git push origin HEAD:authority-search/historic-proceedings-search-backfill-20260902
