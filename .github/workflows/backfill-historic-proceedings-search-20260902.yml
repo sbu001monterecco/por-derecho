@@ -8,6 +8,7 @@ on:
       - scripts/_reconcile_historic_proceedings_authority_20260902.py
       - scripts/_sync_current_caepr_counts_20260902.py
       - scripts/_sync_proceedings_interlinkability_counts_20260902.py
+      - scripts/_sync_proceedings_interlinkability_gap_es_20260902.py
       - scripts/_generate_proceeding_pages_and_interlinks_20260902.py
       - scripts/_enrich_proceeding_contextual_links_20260902.py
       - scripts/_render_proceeding_authority_backlinks_20260902.py
@@ -38,6 +39,7 @@ jobs:
           python3 scripts/_reconcile_historic_proceedings_authority_20260902.py
           python3 scripts/_sync_current_caepr_counts_20260902.py
           python3 scripts/_sync_proceedings_interlinkability_counts_20260902.py
+          python3 scripts/_sync_proceedings_interlinkability_gap_es_20260902.py
 
       - name: Generate reusable bilingual proceeding pages and graphs
         run: |
@@ -56,6 +58,7 @@ jobs:
           python3 scripts/_render_proceeding_authority_backlinks_20260902.py
           python3 scripts/_sync_current_caepr_counts_20260902.py
           python3 scripts/_sync_proceedings_interlinkability_counts_20260902.py
+          python3 scripts/_sync_proceedings_interlinkability_gap_es_20260902.py
 
       - name: Trace residual duplicate proceeding ID
         run: |
