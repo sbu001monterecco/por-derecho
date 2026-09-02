@@ -21,11 +21,16 @@ identity['PROCEEDING'] = counts['PROCEEDING']
 p.write_text(json.dumps(state, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
 
 # Validators intentionally preserve historical snapshot constants while deriving
-# the current canonical registry denominator from this generated block.
+# the current canonical registry denominator from this generated block. This
+# replacement accepts both multiline and compact prior output, so rerunning the
+# release workflow cannot fail merely because this sync already ran once.
 def sync_python_block(path: Path) -> None:
     text = path.read_text(encoding='utf-8')
-    block = 'CURRENT_CANONICAL_IDENTITY_COUNTS = ' + repr(ordered).replace("'", '"')
-    pattern = re.compile(r'CURRENT_CANONICAL_IDENTITY_COUNTS\s*=\s*\{.*?\n\}', re.S)
+    block_lines = ['CURRENT_CANONICAL_IDENTITY_COUNTS = {']
+    block_lines.extend(f'    {json.dumps(key)}: {ordered[key]},' for key in ('total','PERSON','ORGANISATION','STRUCTURE','INSTITUTION','PROCEEDING'))
+    block_lines.append('}')
+    block = '\n'.join(block_lines)
+    pattern = re.compile(r'CURRENT_CANONICAL_IDENTITY_COUNTS\s*=\s*\{[^}]*\}', re.S)
     text2, n = pattern.subn(block, text, count=1)
     if n != 1:
         raise AssertionError(f'current canonical count block not found in {path}')
@@ -45,4 +50,11 @@ for rel in ('es/registro-identidad-materia/index.html','en/matter-identity-regis
         raise AssertionError(f'static registry marker absent from {rel}')
     path.write_text(text, encoding='utf-8')
 
-print('CURRENT_CAEPR_COUNTS_SYNCED', ordered, marker)
+# Idempotence self-check: a second in-process application must make no further
+# semantic change and must still locate the generated blocks.
+first = {rel: (ROOT/rel).read_text(encoding='utf-8') for rel in ('scripts/validate_operational_truth.py','scripts/validate_current_reverse_engineered_digest.py')}
+for rel in first:
+    sync_python_block(ROOT/rel)
+    assert (ROOT/rel).read_text(encoding='utf-8') == first[rel], f'non-idempotent count sync: {rel}'
+
+print('CURRENT_CAEPR_COUNTS_SYNCED', ordered, marker, 'IDEMPOTENT')
