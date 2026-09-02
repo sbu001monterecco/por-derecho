@@ -1,0 +1,78 @@
+name: Fix homepage search visible mount
+
+on:
+  push:
+    branches: [fix/home-search-visible-20260902]
+    paths:
+      - '.github/workflows/fix-home-search-visible-20260902.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  fix:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          ref: fix/home-search-visible-20260902
+          fetch-depth: 0
+          persist-credentials: true
+      - name: Move search outside closed details and harden validator
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+
+          search = Path('assets/canonical-home-search-20260902.js')
+          text = search.read_text(encoding='utf-8')
+          old = '''  const main = document.querySelector('main');
+          if (!main) return;
+          const first = main.firstElementChild;
+          if (first && first.nextSibling) main.insertBefore(section, first.nextSibling);
+          else main.appendChild(section);'''
+          new = '''  const main = document.querySelector('main');
+          const siteHeader = document.querySelector('.site-header');
+          if (!main || !siteHeader) return;
+
+          // Mount as a top-level body section immediately after the site header.
+          // The homepage contains nested evidence <details> blocks and generic
+          // insertion points must never place this primary navigation control inside one.
+          const mountTopLevel = () => {
+            if (section.parentElement !== document.body || section.previousElementSibling !== siteHeader || section.closest('details')) {
+              siteHeader.insertAdjacentElement('afterend', section);
+            }
+          };
+          mountTopLevel();
+          requestAnimationFrame(mountTopLevel);
+          window.setTimeout(mountTopLevel, 250);'''
+          if text.count(old) != 1:
+              raise SystemExit(f'expected one old mount block, found {text.count(old)}')
+          search.write_text(text.replace(old, new), encoding='utf-8')
+
+          validator = Path('scripts/validate_canonical_home_search.py')
+          body = validator.read_text(encoding='utf-8')
+          anchor = '    require("justice-professionals-current-overlay-20260902.js" in site_script, "site.js does not load current justice overlay")\n'
+          addition = anchor + '''    require("siteHeader.insertAdjacentElement('afterend', section)" in search_script, "Homepage search is not mounted after the site header")
+          require("section.closest('details')" in search_script, "Homepage search lacks a closed-details mount guard")
+          require("main.insertBefore(section" not in search_script, "Homepage search retains the unsafe main-child insertion path")
+          '''
+          if body.count(anchor) != 1:
+              raise SystemExit(f'validator anchor count {body.count(anchor)}')
+          validator.write_text(body.replace(anchor, addition), encoding='utf-8')
+          PY
+      - name: Validate search and repository contracts
+        run: |
+          python3 scripts/validate_canonical_home_search.py
+          python3 scripts/validate_unitary_control_plane.py
+          python3 scripts/validate_publication_integrity.py
+          python3 scripts/validate_operational_truth.py
+      - name: Commit hotfix
+        shell: bash
+        run: |
+          git config user.name 'por-derecho-governance-bot'
+          git config user.email 'sbu001monterecco@users.noreply.github.com'
+          git add assets/canonical-home-search-20260902.js scripts/validate_canonical_home_search.py
+          git commit -m 'Keep homepage canonical search outside closed details'
+          git push origin HEAD:fix/home-search-visible-20260902
