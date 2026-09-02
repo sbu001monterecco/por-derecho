@@ -1,0 +1,156 @@
+name: Verify merged homepage search in Chromium
+
+on:
+  push:
+    branches: [verify/home-search-5e12444-20260902]
+    paths:
+      - '.github/workflows/verify-home-search-browser-5e12444.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  browser-search:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Check out verification branch
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          ref: verify/home-search-5e12444-20260902
+          fetch-depth: 0
+          persist-credentials: true
+      - name: Set up Node
+        uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020
+        with:
+          node-version: '22'
+      - name: Prepare exact merged tree and Chromium
+        shell: bash
+        run: |
+          git worktree add --detach /tmp/site 5e12444f44b27b3c94d7bc31c80e2d56ef58bb08
+          mkdir -p /tmp/browser
+          cd /tmp/browser
+          npm init -y >/dev/null 2>&1
+          npm install playwright@1.55.0 >/dev/null 2>&1
+          npx playwright install --with-deps chromium >/dev/null
+      - name: Run exact homepage search-box test
+        shell: bash
+        run: |
+          nohup python3 -m http.server 4173 --directory /tmp/site >/tmp/home-search-server.log 2>&1 &
+          for i in $(seq 1 30); do
+            if curl -fsS http://127.0.0.1:4173/es/ >/dev/null; then break; fi
+            sleep 1
+          done
+          cat >/tmp/browser/test.js <<'JS'
+          const fs = require('fs');
+          const { chromium } = require('playwright');
+
+          (async () => {
+            const browser = await chromium.launch({headless: true});
+            const page = await browser.newPage({viewport: {width: 1440, height: 1100}});
+            const home = 'http://127.0.0.1:4173/es/';
+            const mergedSha = '5e12444f44b27b3c94d7bc31c80e2d56ef58bb08';
+            const results = {
+              merged_sha: mergedSha,
+              tested_surface: '/es/ visible canonical homepage search box',
+              search_api_version: null,
+              indexed_entries: null,
+              queries: [],
+              click_throughs: [],
+              verdict: 'PENDING'
+            };
+
+            await page.goto(home, {waitUntil: 'networkidle'});
+            await page.waitForSelector('#canonical-home-search-input', {state: 'visible'});
+            await page.waitForFunction(() => window.PorDerechoCanonicalSearch && window.PorDerechoCanonicalSearch.count > 0);
+            results.search_api_version = await page.evaluate(() => window.PorDerechoCanonicalSearch.version);
+            results.indexed_entries = await page.evaluate(() => window.PorDerechoCanonicalSearch.count);
+
+            const checks = [
+              ['Graciela Pérez-Valencia Díaz', 'PD-SP-P-0147'],
+              ['PD-SP-P-0147', 'PD-SP-P-0147'],
+              ['^P-0147', 'PD-SP-P-0147'],
+              ['DP 748/2026', 'PD-SP-R-0003'],
+              ['PD-SP-R-0003', 'PD-SP-R-0003'],
+              ['^R-0003', 'PD-SP-R-0003'],
+              ['3802343220260002351', 'PD-SP-R-0003'],
+              ['TF-CRI-003', 'TF-CRI-003'],
+              ['Audiencia Provincial de Las Palmas', 'PD-SP-I-0044'],
+              ['PD-SP-I-0044', 'PD-SP-I-0044'],
+              ['^I-0044', 'PD-SP-I-0044'],
+              ['^0044', 'PD-SP-I-0044'],
+              ['PD-SP-I-0025', 'PD-SP-I-0025'],
+              ['Ricardo de Mosteyrín Sampalo', 'PD-SP-P-0058']
+            ];
+
+            for (const [query, expectedId] of checks) {
+              const input = page.locator('#canonical-home-search-input');
+              await input.fill(query);
+              const expected = page.locator(`[data-search-result-id="${expectedId}"]`).first();
+              await expected.waitFor({state: 'visible', timeout: 10000});
+              const first = page.locator('.canonical-search-result').first();
+              const row = {
+                query,
+                expected_id: expectedId,
+                expected_visible: await expected.isVisible(),
+                expected_href: await expected.getAttribute('href'),
+                first_id: await first.getAttribute('data-search-result-id'),
+                first_text: (await first.innerText()).replace(/\s+/g, ' ').trim(),
+                status: (await page.locator('#canonical-home-search-status').innerText()).trim()
+              };
+              results.queries.push(row);
+            }
+
+            const clickChecks = [
+              ['Graciela Pérez-Valencia Díaz', 'PD-SP-P-0147'],
+              ['DP 748/2026', 'PD-SP-R-0003'],
+              ['Audiencia Provincial de Las Palmas', 'PD-SP-I-0044']
+            ];
+            for (const [query, expectedId] of clickChecks) {
+              await page.goto(home, {waitUntil: 'networkidle'});
+              await page.waitForFunction(() => window.PorDerechoCanonicalSearch && window.PorDerechoCanonicalSearch.count > 0);
+              await page.locator('#canonical-home-search-input').fill(query);
+              const expected = page.locator(`[data-search-result-id="${expectedId}"]`).first();
+              await expected.waitFor({state: 'visible'});
+              const href = await expected.getAttribute('href');
+              const response = await page.goto(href, {waitUntil: 'domcontentloaded'});
+              results.click_throughs.push({
+                query,
+                expected_id: expectedId,
+                href,
+                http_status: response ? response.status() : null,
+                final_url: page.url(),
+                title: await page.title()
+              });
+              if (!response || response.status() !== 200) throw new Error(`Click-through failed for ${query}: ${response && response.status()}`);
+            }
+
+            await page.goto(home, {waitUntil: 'networkidle'});
+            await page.waitForFunction(() => window.PorDerechoCanonicalSearch && window.PorDerechoCanonicalSearch.count > 0);
+            await page.locator('#canonical-home-search-input').fill('^I-0044');
+            await page.locator('[data-search-result-id="PD-SP-I-0044"]').first().waitFor({state: 'visible'});
+            await page.locator('.canonical-home-search').screenshot({path: '/tmp/browser/HOME_SEARCH_BROWSER_5e12444.png'});
+
+            results.verdict = 'PASS';
+            results.completed_at = new Date().toISOString();
+            fs.writeFileSync('/tmp/browser/HOME_SEARCH_BROWSER_TEST_5e12444.json', JSON.stringify(results, null, 2) + '\n');
+            console.log(JSON.stringify(results, null, 2));
+            await browser.close();
+          })().catch((error) => {
+            console.error(error);
+            process.exit(1);
+          });
+          JS
+          cd /tmp/browser
+          node test.js
+      - name: Preserve verification evidence on verification branch
+        shell: bash
+        run: |
+          mkdir -p verification
+          cp /tmp/browser/HOME_SEARCH_BROWSER_TEST_5e12444.json verification/
+          cp /tmp/browser/HOME_SEARCH_BROWSER_5e12444.png verification/
+          git config user.name 'por-derecho-verification-bot'
+          git config user.email 'sbu001monterecco@users.noreply.github.com'
+          git add verification/HOME_SEARCH_BROWSER_TEST_5e12444.json verification/HOME_SEARCH_BROWSER_5e12444.png
+          git commit -m 'Preserve Chromium homepage search verification for 5e12444'
+          git push origin HEAD:verify/home-search-5e12444-20260902
