@@ -1,0 +1,133 @@
+name: Backfill historic proceedings search 20260902
+on:
+  workflow_dispatch:
+  push:
+    branches: [authority-search/historic-proceedings-search-backfill-20260902]
+    paths:
+      - .github/workflows/backfill-historic-proceedings-search-20260902.yml
+      - scripts/_reconcile_historic_proceedings_authority_20260902.py
+      - scripts/_sync_current_caepr_counts_20260902.py
+      - scripts/_sync_proceedings_interlinkability_counts_20260902.py
+      - scripts/_sync_proceedings_interlinkability_gap_es_20260902.py
+      - scripts/_sync_master_proceedings_publication_counts_20260902.py
+      - scripts/_generate_proceeding_pages_and_interlinks_20260902.py
+      - scripts/_enrich_proceeding_contextual_links_20260902.py
+      - scripts/_render_proceeding_authority_backlinks_20260902.py
+      - scripts/validate_canonical_home_search.py
+      - scripts/validate_proceeding_pages_interlinks_20260902.py
+      - scripts/validate_proceeding_contextual_links_20260902.py
+      - assets/justice-professionals-current-overlay-20260902.js
+permissions:
+  contents: write
+jobs:
+  backfill:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          ref: authority-search/historic-proceedings-search-backfill-20260902
+          fetch-depth: 0
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020
+        with:
+          node-version: '22'
+
+      - name: Reconcile primary-source proceeding and authority state
+        run: |
+          python3 scripts/_reconcile_historic_proceedings_authority_20260902.py
+          python3 scripts/_sync_current_caepr_counts_20260902.py
+          python3 scripts/_sync_proceedings_interlinkability_counts_20260902.py
+          python3 scripts/_sync_proceedings_interlinkability_gap_es_20260902.py
+          python3 scripts/_sync_master_proceedings_publication_counts_20260902.py
+
+      - name: Generate reusable bilingual proceeding pages and graphs
+        run: |
+          # The page generator is a one-time migration whose legacy rewrite anchors
+          # correspond to the exact pre-generator state at e3fb3d62. Those temporary
+          # source files are never validated or committed: current dynamic sources are
+          # restored before enrichment and every release gate below.
+          cp assets/justice-professionals-current-overlay-20260902.js /tmp/justice-overlay-dynamic.js
+          cp scripts/validate_canonical_home_search.py /tmp/canonical-search-validator-dynamic.py
+          git show e3fb3d62b82ed9dbecd750226768ae00312ee66f:assets/justice-professionals-current-overlay-20260902.js > assets/justice-professionals-current-overlay-20260902.js
+          git show e3fb3d62b82ed9dbecd750226768ae00312ee66f:scripts/validate_canonical_home_search.py > scripts/validate_canonical_home_search.py
+          python3 scripts/_generate_proceeding_pages_and_interlinks_20260902.py
+          cp /tmp/justice-overlay-dynamic.js assets/justice-professionals-current-overlay-20260902.js
+          cp /tmp/canonical-search-validator-dynamic.py scripts/validate_canonical_home_search.py
+          python3 scripts/_enrich_proceeding_contextual_links_20260902.py
+          python3 scripts/_render_proceeding_authority_backlinks_20260902.py
+          python3 scripts/_sync_current_caepr_counts_20260902.py
+          python3 scripts/_sync_proceedings_interlinkability_counts_20260902.py
+          python3 scripts/_sync_proceedings_interlinkability_gap_es_20260902.py
+          python3 scripts/_sync_master_proceedings_publication_counts_20260902.py
+
+      - name: Trace residual duplicate proceeding ID
+        run: |
+          echo 'Residual LZ-CIV-050 occurrences after canonical reconciliation:'
+          grep -R -n --exclude-dir=.git --exclude='*.html' --exclude='sitemap.xml' 'LZ-CIV-050' archive assets/data scripts ops || true
+
+      - name: Rebuild legacy proceedings projections used by the site map
+        run: |
+          python3 scripts/build_proceedings_case_prism_v2.py
+          python3 scripts/build_proceedings_interlinkability_v1.py
+
+      - name: Validate canonical authority search and dedicated proceeding pages
+        run: |
+          python3 scripts/validate_canonical_home_search.py
+          python3 scripts/validate_proceeding_pages_interlinks_20260902.py
+          python3 scripts/validate_proceeding_contextual_links_20260902.py
+          node --check assets/canonical-home-search-20260902.js
+          node --check assets/justice-professionals-current-overlay-20260902.js
+          node --check assets/site.js
+
+      - name: Validate Master Proceedings and interconnectivity controls
+        run: |
+          python3 scripts/build_public_proceedings_projection.py --check
+          python3 scripts/_sync_master_proceedings_publication_counts_20260902.py
+          python3 scripts/audit_master_proceedings_publication.py
+          python3 scripts/build_proceedings_case_prism_v2.py --check
+          python3 scripts/build_proceedings_interlinkability_v1.py --check
+          python3 scripts/audit_proceedings_interconnectivity_map.py
+          python3 scripts/audit_counsel_procurador_governance.py
+          python3 scripts/validate_treasury_transparency_7_2026.py
+
+      - name: Validate publication privacy and current-state controls
+        run: |
+          BASE_SHA="$(git merge-base origin/main HEAD)"
+          python3 scripts/validate_private_source_statement_osint_governance.py --base "$BASE_SHA"
+          python3 scripts/validate_operational_truth.py
+          python3 scripts/validate_current_reverse_engineered_digest.py
+          python3 scripts/validate_dp3205_2014_publication.py
+
+      - name: Validate workspace persistence controls
+        run: |
+          python3 -m py_compile scripts/workspace_persistence.py
+          python3 -m unittest discover -s tests -p 'test_workspace_persistence.py' -v
+          mkdir -p artifacts/workspace-persistence-audit
+          python3 scripts/workspace_persistence.py validate-repository --output artifacts/workspace-persistence-audit/result.json
+
+      - name: Commit reconciled release candidate
+        run: |
+          git config user.name por-derecho-governance-bot
+          git config user.email sbu001monterecco@users.noreply.github.com
+          git add \
+            archive/PROCEEDINGS_MASTER_REGISTER.csv \
+            assets/data \
+            assets/justice-professionals-current-overlay-20260902.js \
+            ops/CURRENT_UNITARY_STATE.json \
+            scripts/audit_master_proceedings_publication.py \
+            scripts/build_proceedings_interlinkability_v1.py \
+            scripts/validate_operational_truth.py \
+            scripts/validate_current_reverse_engineered_digest.py \
+            es/procedimientos en/proceedings \
+            es/registro-autoridad-historica-las-palmas-civil \
+            en/historic-las-palmas-civil-justice-authority-register \
+            es/registro-identidad-materia/index.html \
+            en/matter-identity-registry/index.html \
+            es/registro-maestro-procedimientos/index.html \
+            en/master-proceedings-register/index.html \
+            sitemap.xml
+          git commit -m "Reconcile historic proceedings authority backfill" || exit 0
+          git push origin HEAD:authority-search/historic-proceedings-search-backfill-20260902
