@@ -288,3 +288,303 @@ exists.
 
 See `.github/governance/AGENT_PUBLISHING_COMPATIBILITY.md` for the hard/advisory
 matrix and the governance-only acceptance test.
+
+## 7. Transaction-development separation
+
+Prospective financing, investment, acquisition, sale, operating-partner and
+other new-transaction activity is presumptively separate from the legal-dispute,
+asset-recovery and public-accountability record.
+
+Before storing or linking such material, read
+`.github/governance/TRANSACTION_DEVELOPMENT_SEPARATION_AND_PUBLICATION_PROTOCOL.md`.
+Keep native messages, screenshots, identities, private locators, unannounced
+assets and negotiation material outside Git. Where continuity requires a
+repository record, use only a minimized, anonymized derivative under
+`.github/governance/records/`; remember that the repository is public even
+though `.github/` is not rendered by Pages.
+
+Do not cross-link transaction-development material to a legal allegation,
+person, proceeding, evidence map or website route merely because of chronology,
+group affiliation, professional role or interest in an asset. A cross-link
+requires specific sourced materiality, actor-specific analysis, privacy
+minimization, contrary/limiting evidence and express authority for the new
+private-source derivative. Website publication requires separate express
+authority and must never be inferred from repository-only preservation.
+
+For self-preservation emails, the word “self” creates no exception to
+`EMAIL_SEND_FINAL_AUTHORIZATION_RULE.md`: present and obtain fresh approval of
+the exact outbound package before transmission.
+
+For transaction-development communications, verified corporate email is the
+primary substantive channel. Use LinkedIn, WhatsApp, SMS or similar channels
+only for minimal acknowledgement or routing, then redirect to and preserve the
+verified corporate-email thread. Do not conduct substantive calls through an
+unidentified telephone number, an unscheduled inbound call or a social/messaging
+platform.
+
+Arrange substantive discussions through a corporate Google Calendar invitation
+with a generated Google Meet link, resolved attendees and capacities, an agenda,
+confidentiality status and an agreed transcript. Give required notice and obtain
+required consent before transcription. Preserve the invite, attendee record,
+transcript and post-meeting corporate-email summary privately; do not commit
+those native records or identities to Git.
+
+## 8. Voice statements, private mail and OSINT
+
+The following controls apply to every new voice-to-text account, statement of
+truth/fact, private-mail evidence task and named-person/entity scan:
+
+- Read and apply
+  `archive/declarations/VOICE_TO_TEXT_STATEMENT_OF_FACT_AND_TRUTH_PROTOCOL_25AUG2026.md`.
+  If a speaker says that more audio will follow or asks that analysis wait,
+  preserve the intake and do not analyse, finalise or publish until the speaker
+  closes the sequence.
+- Keep each speaker's propositions separately attributed. Relationship,
+  coordination, presence or silence does not create a joint statement. Gil or
+  another person adopts a proposition only by express proposition-specific
+  confirmation.
+- A `Statement of Truth` label records the declarant's documented adoption and
+  honest belief at the stated stage; it is not repository, AI or joint
+  certification of material truth. Distinguish transcription, attribution,
+  review, ratification, signature, oath and institutional filing.
+- Native audio, full working transcripts, private email exports, subjects,
+  sender/recipient lists, provider/message/thread IDs, exact private filenames
+  and custody locators belong in the private evidence manifest/vault. Encoding,
+  compression, an `archive` directory or a `backend` label does not make a
+  tracked Git file private.
+- For a private mailbox, follow
+  `archive/RESERVED_DECLARANT_PRIVATE_MAILBOX_ACQUISITION_AND_CUSTODY_PROTOCOL_25AUG2026.md`.
+  Never request credentials or forward a mailbox as a substitute for native
+  acquisition. Account connection, preservation, review, filing and public
+  release are separate authorities.
+- For every web/background scan involving a person, entity, role or
+  relationship, follow
+  `archive/OPEN_SOURCE_INTELLIGENCE_NAMED_PERSON_ENTITY_PROTOCOL_25AUG2026.md`.
+  Record exact source/date/capacity and negative-search limits; do not infer
+  guilt, mandate, friendship, family, ownership, conflict or coordination from
+  association alone.
+- Do not silently reconcile contradictions. Classify direct contradiction,
+  material tension, imprecision, omission, single-declarant proposition,
+  incomplete alignment and supersession; direct clarification to the correct
+  speaker and preserve the earlier version.
+- Before public naming or a new private-source derivative, apply the privacy and
+  authority gates in Sections 4 and 6. A request to preserve or update rules is
+  not authority to publish raw private material or intensify a named allegation.
+- Run `python3 scripts/validate_private_source_statement_osint_governance.py
+  --base <revision>` for the complete proposed diff. Its GitHub workflow remains
+  advisory/shadow-mode until expressly promoted under the enforcement rules.
+
+## 9. Canonical Actors, Entities and Proceedings Registry (`CAEPR`)
+
+Read and apply
+`.github/governance/CAEPR_CARET_IDENTITY_AND_ALL_IS_VERIFICATION_PROTOCOL_26AUG2026.md`
+for every `^` rendering, `all is^` confirmation, caret-coverage audit or change
+to a CAEPR identity/proceeding record.
+
+The existing federated matter-identity system is named the **Canonical Actors,
+Entities and Proceedings Registry (`CAEPR`)**. It is not a replacement register.
+Its controlling components are:
+
+- `assets/data/matter-identity-registry-v1.json` and its person, organisation,
+  professional, structure, institution and proceeding parts;
+- `assets/data/matter-identity-operational-control-v1.json`;
+- `ops/CANONICAL_ENTITY_NAMES.json`; and
+- `archive/PROCEEDINGS_MASTER_REGISTER_PROTOCOL.md` together with
+  `archive/PROCEEDINGS_MASTER_REGISTER.csv`.
+
+Use the literal caret marker **`^`** immediately after a display name or
+proceeding label to mean only:
+
+> this person, entity, institution or proceeding has been positively identified,
+> reconciled to one immutable CAEPR record and cleared of any material unresolved
+> identity collision for the stated context.
+
+Examples: `CaixaBank, S.A.^`, `Francisco de Borja Rodríguez-Batllori Laffitte^`
+and `Concurso 36/2012^`.
+
+The marker confirms canonical identity resolution only. It does **not** certify
+an allegation, role, act, omission, knowledge, intention, relationship,
+participation, liability, current office, procedural status, outcome, finality
+or source authenticity. Those propositions retain their separate evidence and
+status controls.
+
+### Caret eligibility and rendering
+
+- A person or institution is `^`-eligible only when the exact identity meets the
+  repository identity-admission threshold and resolves to one immutable CAEPR ID.
+- An organisation is `^`-eligible only when the exact legal person, or a clearly
+  labelled non-legal perimeter/brand where that is the intended object, is
+  resolved. A record carrying an unresolved exact-entity or legal-form status is
+  not `^`-eligible for an exact-legal-person claim.
+- A proceeding is `^`-eligible only when the organ, reference and legally useful
+  identity are sufficiently established and reconciled with the Proceedings
+  Master Register. A registration receipt, draft, transmission, filename,
+  internal control number or unresolved candidate reference is not upgraded to a
+  proceeding by adding `^`.
+- Conceptual structures, alleged perimeters, events, evidence objects and source
+  literals do not receive `^` unless the text clearly identifies the distinct
+  CAEPR object being marked and that object satisfies its own eligibility rule.
+- Do not alter quotations, official titles, source literals, filenames, search
+  strings, URLs or formal citations by inserting the marker. Put the canonical
+  marked label outside the quotation or source literal where reconciliation is
+  useful.
+- In a table, dossier or narrative, the marker should appear on the first
+  identity-sensitive reference or wherever ambiguity could recur. A visible
+  legend must define `^`; machine-readable surfaces should also carry the
+  immutable CAEPR ID and resolution status rather than relying on punctuation
+  alone.
+- Absence of `^` means only that canonical identification has not been asserted
+  in that presentation. It does not imply that the object is fictitious,
+  unrelated or unidentified in every repository source.
+
+### Prompt command: `confirm all is^`
+
+When Gil Marer writes **`confirm all is^`**, treat it as a verification command,
+not as a requested conclusion. For the expressly stated scope—or, if the prompt
+does not narrow it, the complete current deliverable and every distinct named
+person, entity, institution and proceeding on which it relies—perform all of the
+following:
+
+1. enumerate and deduplicate the in-scope named references;
+2. reconcile names, aliases, former names, spelling variants, capacities and
+   proceeding references to immutable CAEPR IDs;
+3. test every candidate against the applicable caret-eligibility threshold and
+   current correction/source controls;
+4. apply or retain `^` only for eligible resolved objects, without changing the
+   legal or evidential meaning of quoted source text;
+5. report the denominator, the number resolved and marked, and every unresolved,
+   ambiguous, duplicate, stale or missing record; and
+6. refuse an unqualified `all is^` confirmation while any in-scope exception
+   remains.
+
+The required result format is: **scope; unique-reference denominator; `^` count;
+coverage percentage; exceptions with reason and next source needed**. A truthful
+partial result is `PARTIAL — NOT ALL IS^`; complete confirmation is permitted
+only when the exception count is zero. Never add carets merely to reach 100%.
+
+## 10. Community meeting lifecycle and canonical evidence
+
+For every Sun Park Owners' Community meeting/ACTA task, read and apply
+`.github/governance/COMMUNITY_MEETING_LIFECYCLE_CANONICAL_EVIDENCE_PROTOCOL_31AUG2026.md`.
+
+- Treat authority/call, notice/service, attendance/debt/vote, ACTA production,
+  and post-meeting circulation/objection/use as five separate evidential gates.
+- Give every located item or material missing-source obligation one immutable
+  stable evidence ID and one bilingual canonical URL/fragment. A gap ID records
+  the search obligation and never fabricates a source.
+- Apply the article-by-article LPH version in force on the meeting date. Use
+  `facial-concern`, `contested`, `located-open`, `unlocated`, `reference-only`
+  or `not-applicable`; do not convert those controls into an unproved finding
+  of compliance, nullity, falsity, criminality or guilt.
+- Keep ACTA, notice, agenda, proxy, annex, objection, email, audio, circulation,
+  implementation and later reliance records distinct even if bundled in one
+  carrier. Keep callers, chairs, secretaries, authors, custodians, circulators
+  and later users distinct.
+- The attributed C1 → C2 sequence may be visualised only with the actor/entity,
+  legal-succession, common-command, agreement, intent and guilt boundaries
+  stated visibly.
+- For RIC/RICPE, refurbishment/HNT/MYND, regional-incentive, FEDER/EU-funds,
+  Yaiza, Cabildo or SAIP links, classify the connector as direct documentary,
+  attributed criminal hypothesis, reliance open or institutional notice. Do not
+  state downstream reliance on an ACTA without the document-specific
+  transmission, citation, authority schedule, verification or adoption record.
+  `D-MIXED`/`D-OPEN` is an evidential status, never a criminal actor perimeter.
+
+## 11. Unitary multi-track criminal-first prosecutorial continuity
+
+Read and apply
+`.github/governance/UNITARY_MULTI_TRACK_CRIMINAL_FIRST_PROSECUTORIAL_FORENSIC_PROTOCOL_01SEP2026.md`
+(`PD-UCF-20260901-01`) whenever a Sun Park task connects Community authority,
+ACTAS, debt/vote, access/security, insolvency, credit, valuation, adjudication,
+title, works/operation, RIC/RICPE, regional incentives, FEDER/ERDF,
+Yaiza/Cabildo, SAIP, benefit, harm or recovery.
+
+- Maintain one fact-and-evidence graph with distinct legal outputs. Present the
+  criminal/prosecutorial analysis first, followed by civil/LPH, insolvency,
+  administrative, regulatory/public-funds, professional and recovery outputs.
+- Preserve without dilution Gil Marer/Aweswell's direct attributed position
+  that dealings through the Sun Park Community organ formed an organised,
+  coordinated and continuous criminal mechanism spanning assumed/manufactured
+  authority and apparent legitimacy, ACTAS, debt/voting/certificates,
+  procedures inside and outside Concurso 36/2012, alleged procedural fraud and
+  possible insolvency criminality, and de facto/shadow control of LPB assets
+  formally subject to insolvency-administration and judicial-supervision
+  safeguards whose practical effectiveness is disputed, followed by title,
+  RIC/RICPE, refurbishment, regional incentives and FEDER/ERDF. Do not recast
+  it as merely civil/LPH. This is a direct, falsifiable
+  party allegation, not an adjudicated finding of crime, organisation or guilt.
+- Classify every connector in writing as `DOC`, `HIP`, `OPEN`, `NOTICE`,
+  `CONTRARY`, `ADVERSE` or `GAP`. Colour is never sufficient by itself.
+- A criminal link must identify actor, historical capacity, date, source,
+  act/omission, alleged issue, knowledge, intent, use, recipient, effect,
+  causation, beneficiary, pattern, contrary/lawful alternative, open proof and
+  potential legal relevance. Sequence, association and benefit do not transfer
+  criminal responsibility.
+- Use `AUTH-UCF-001`–`010` for the authority/apparent-legitimacy propagation
+  chain. Apparent legitimacy may travel as a received or adopted documentary
+  input; criminal responsibility never travels with it. Close every stage with
+  the document/hash, author/capacity, transmitter, recipient, contrary notice,
+  verification/adoption, decision, effect, causal nexus, benefit, knowledge,
+  intent and lawful alternative under `PD-GAP-UCF-015`.
+- `C1` and `C2` are attributed documentary phases, not collective actors.
+  `D-MIXED`/`D-OPEN` is an evidence status, never a criminal perimeter.
+- Do not state ACTA reliance by RIC/RICPE, an incentive, FEDER/ERDF, a work,
+  Yaiza, Cabildo, tourism or SAIP track without the exact transmitted document,
+  sender/capacity, recipient, date, incorporation, verification/adoption,
+  decision/use, effect, causation and beneficiary.
+- Use `assets/data/unitary-multitrack-criminal-first-gap-closure-v1.json` as the
+  single finite gap register. Every material production obligation has one
+  `PD-GAP-UCF-*` ID, custodian universe, status and closure test; do not create a
+  competing unnumbered list.
+- Use `assets/data/institutional-communications-register-v1.json` as the one
+  canonical communications register. The bounded 1-Sep-2026 authority scan
+  controls 19 public-safe events: reused `PD-SP-EVT-0004` and `PD-SP-EVT-0014`
+  plus `PD-SP-EVT-0141`–`0157`. Its five fully paginated Gmail keyword lanes
+  returned 5,514 unique messages and the five Drive lanes returned 326 unique
+  documents. Those are discovery denominators, not universal completeness or
+  item-level merits review.
+- Keep municipal/local, Cabildo/insular, Canary-autonomous, Spanish-State and
+  EU/supranational tiers distinct. EU-funds subject matter does not make a
+  Spanish organ an EU institution; SNCA/IGAE and the Spanish Directorate-General
+  for European Funds remain State-tier unless a primary source identifies an
+  exact EU recipient.
+- Treat the three located Intervención General outputs as one `X-INT-004`
+  sequence: `PD-SP-EVT-0141` / 184368/2026, `PD-SP-EVT-0142` / 497011/2026 and
+  `PD-SP-EVT-0143` / 699645/2026. Preserve
+  `PD-EV-UCF-INT-184368-2026` only as a legacy alias to `PD-SP-EVT-0141`. The
+  first response proves Commission analysis on 24-Feb-2026, the agreed
+  anonymised Justice referral and the Intervención's stated subsidy-control
+  remit; none of the sequence proves merits, unlawful disposal, funding misuse,
+  knowledge, intent, causation or guilt. Preserve `PD-GAP-UCF-016` for the
+  complete Intervención → Commission → Justice and programme-file chain.
+- For authority acquisitions, use independent read-only mail, file,
+  local/insular, Canary-autonomous, State/EU and identity/QA lanes. Workers
+  return sanitised candidates; one integrator allocates IDs and edits canonical
+  files. Deduplicate by official reference/organ/act/date, then native hash,
+  private Message-ID tuple, REGAGE receipt and private normalised fingerprint.
+  Different hashes under one reference are variants/conflicts, not duplicates.
+- Track `transmitted → registered → delivered → routed → incorporated →
+  examined → verified/rejected → adopted → decision/use → effect → causation →
+  benefit/loss` as separate sourced states. Never promote a lower state into a
+  higher one. A receipt is `NOTICE`, not proof of examination, adoption,
+  reliance, knowledge, causation or guilt.
+- Keep provider IDs, exact private subjects/bodies, addresses, private URLs,
+  native filenames, credentials/codes, tax-reserved content and privilege
+  material out of public Git. Preserve native sources and sensitive locators in
+  private custody; record unresolved review or privacy debt as an open control.
+- The caret marker `^` remains identity-only under CAEPR. ACTAS, communications,
+  evidence objects, propositions and gaps use stable evidence IDs and bilingual
+  anchors, not carets.
+- For legacy alias `PD-EV-UCF-INT-184368-2026` → `PD-SP-EVT-0141`, the
+  user-command `^` audit is
+  `REPAIRED / PARTIALLY VERIFIED`; the communication is
+  `CARET_NOT_APPLICABLE`. The exact issuing organ is now
+  `PD-SP-I-0043`, Intervención General de la Comunidad Autónoma de Canarias^,
+  admitted from the official Canary Government organigram. The institution
+  identity is resolved; the downstream Commission/Justice/programme merits and
+  routing chain remains open under `PD-GAP-UCF-016`.
+- Preserve the strongest contrary/exculpatory record and adverse outcome beside
+  every hypothesis. An open gap prevents a claim of proof; it does not require
+  deleting a properly attributed falsifiable allegation.
+- `scripts/validate_unitary_multitrack_gap_closure.py` and its workflow remain
+  advisory/shadow until expressly promoted under the enforcement-change rules.
