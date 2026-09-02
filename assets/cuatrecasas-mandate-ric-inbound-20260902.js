@@ -77,3 +77,22 @@
   load('matkator-asset-rights-inbound-20260902.js?v=20260902a', 'data-matkator-asset-rights-inbound-loader');
   load('matkator-asset-rights-search-extension-20260902.js?v=20260902a', 'data-matkator-asset-rights-search-loader');
 })();
+
+(() => {
+  const current = document.currentScript;
+  if (!current || !window.location.pathname.includes('/en/cuatrecasas-sun-park/')) return;
+  if (document.querySelector('script[data-cuatrecasas-visual-bridge-atlas-data-loader]')) return;
+  const data = document.createElement('script');
+  data.src = new URL('cuatrecasas-visual-bridge-atlas-data-20260902.js?v=20260902a', current.src).href;
+  data.async = false;
+  data.setAttribute('data-cuatrecasas-visual-bridge-atlas-data-loader', '20260902a');
+  data.addEventListener('load', () => {
+    if (document.querySelector('script[data-cuatrecasas-visual-bridge-atlas-loader]')) return;
+    const visual = document.createElement('script');
+    visual.src = new URL('cuatrecasas-visual-bridge-atlas-20260902.js?v=20260902a', current.src).href;
+    visual.async = false;
+    visual.setAttribute('data-cuatrecasas-visual-bridge-atlas-loader', '20260902a');
+    document.head.appendChild(visual);
+  }, { once: true });
+  document.head.appendChild(data);
+})();
