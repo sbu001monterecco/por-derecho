@@ -86,6 +86,19 @@ jobs:
           if missing:
               raise SystemExit('materialised files missing: ' + ', '.join(missing))
 
+          # Normalize only the declared materialised UTF-8 sources. This removes
+          # accidental trailing spaces without touching unrelated current-main files.
+          for rel in sorted(expected):
+              source = root / rel
+              try:
+                  text = source.read_text(encoding='utf-8')
+              except UnicodeDecodeError:
+                  continue
+              normalized = '\n'.join(line.rstrip(' \t') for line in text.splitlines())
+              if text.endswith(('\n', '\r')):
+                  normalized += '\n'
+              source.write_text(normalized, encoding='utf-8')
+
           closeout = root / 'archive/CONTINUITY_V2_BOOTSTRAP_MATERIALISATION_02SEP2026.md'
           closeout.write_text(
               '# Continuity v2 bootstrap materialisation\n\n'
@@ -105,7 +118,19 @@ jobs:
           python -m unittest discover -s tests -p 'test_workspace_persistence.py' -v
           python -m unittest discover -s tests -p 'test_workspace_continuity_v2.py' -v
           python scripts/workspace_persistence.py validate-repository --output /tmp/workspace-persistence-v1.json
-          python scripts/validate_workspace_continuity_v2.py --base "$EXPECTED_BASE" --event-name pull_request --pr-body $'Workspace-Impact: PD-WS-20260902-0001, PD-WS-20260901-0001, PD-WS-20260901-0005\nWorkspace-Checkpoint: required\nExternal-Action: repository-and-website-only\nPublication-Scope: continuity-v2-eg745' --output /tmp/workspace-continuity-v2.json
+
+          # Validate the complete uncommitted materialised tree by creating a
+          # temporary commit object without moving the branch.
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -A
+          VALIDATION_TREE=$(git write-tree)
+          VALIDATION_COMMIT=$(printf '%s\n' 'temporary continuity-v2 validation tree' | git commit-tree "$VALIDATION_TREE" -p HEAD)
+          GITHUB_EVENT_NAME=push GITHUB_BASE_SHA="$EXPECTED_BASE" GITHUB_HEAD_SHA="$VALIDATION_COMMIT" \
+            python scripts/validate_workspace_continuity_v2.py \
+              --base "$EXPECTED_BASE" --head "$VALIDATION_COMMIT" \
+              --output /tmp/workspace-continuity-v2.json
+          git reset
 
           rm -f .continuity-v2-visible.patch .continuity-v2-visible.patch.gz .continuity-v2-source-files.tar.gz
           rm -f operations/bootstrap/continuity-v2-payload-20260902.part*.b64
@@ -115,8 +140,6 @@ jobs:
           rm -f operations/bootstrap/continuity-v2-expected-paths.txt
           rm -f .github/workflows/materialise-continuity-v2-patch.yml
 
-          git config user.name 'github-actions[bot]'
-          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add -A
           git diff --cached --check
           git commit -m 'Materialise continuity v2 and EG 745 pilot' \
