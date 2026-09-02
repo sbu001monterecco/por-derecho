@@ -1,0 +1,42 @@
+{
+  "schema": "por-derecho.matter-identity-registry.part.v1",
+  "registry_id": "PD-SP-IDENTITY-REGISTRY-001",
+  "type": "INSTITUTION",
+  "scope": "Parent court identities whose sections or court positions already have separate canonical CAEPR institution identities",
+  "records": [
+    {
+      "id": "PD-SP-I-0044",
+      "type": "INSTITUTION",
+      "name": "Audiencia Provincial de Las Palmas",
+      "aliases": [
+        "AP Las Palmas",
+        "Audiencia Provincial de Las Palmas de Gran Canaria",
+        "Provincial Court of Las Palmas",
+        "^I-0044",
+        "^0044"
+      ],
+      "routes": {
+        "es": "/es/registro-judicial-audiencia-provincial-las-palmas/",
+        "en": "/en/las-palmas-provincial-court-register/"
+      },
+      "identity_resolution": "CARET_CONFIRMED",
+      "identity_sources": [
+        "Primary appellate sources already controlled for Audiencia Provincial de Las Palmas — Sección Segunda",
+        "Primary appellate sources already controlled for Audiencia Provincial de Las Palmas — Sección Cuarta"
+      ],
+      "child_institutions": [
+        {
+          "institution_id": "PD-SP-I-0025",
+          "relationship": "CHILD_SECTION",
+          "label": "Sección Segunda"
+        },
+        {
+          "institution_id": "PD-SP-I-0014",
+          "relationship": "CHILD_SECTION",
+          "label": "Sección Cuarta"
+        }
+      ],
+      "identity_boundary": "Master institutional identity for the Audiencia Provincial de Las Palmas. It groups separately identified sections for navigation and continuity only. It does not identify the competent section, panel, judge, magistrate, LAJ, prosecutor, allocation, receipt, knowledge, merits or outcome in any particular proceeding. Every section and every source-identified office-holder retains a separate immutable CAEPR identity and act-specific attribution."
+    }
+  ]
+}
