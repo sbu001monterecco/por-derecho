@@ -1,0 +1,84 @@
+{
+  "schema": "por-derecho.publication-manifest.v1",
+  "manifest_id": "PD-PUB-DP748-DEEPEST-20260902-01",
+  "date": "2026-09-02",
+  "authority": "USER_CARET_BLANKET_APPROVAL",
+  "repository": "sbu001monterecco/por-derecho",
+  "branch": "feat/dp748-deep-digest-20260902",
+  "canonical_record": {
+    "master_id": "TF-CRI-003",
+    "caepr_id": "PD-SP-R-0003",
+    "reference": "DP 748/2026",
+    "nig": "3802343220260002351",
+    "court_id": "PD-SP-I-0037"
+  },
+  "changed_paths": [
+    "es/dp-748-2026/index.html",
+    "en/dp-748-2026/index.html",
+    "assets/data/la-laguna-proceeding-pages-v1.json",
+    "prompts/DP748_2026_DEEPEST_DIGEST_AND_CANONICAL_UPDATE.md",
+    "CURRENT_HANDOVER_DP748_DEEPEST_DIGEST_02SEP2026.md",
+    "publication-manifests/dp748-2026-deepest-digest-20260902.json",
+    "sitemap-la-laguna-proceedings.xml"
+  ],
+  "source_classes_reviewed": [
+    "SIGNED_JUDICIAL_ORDER_2026_07_16",
+    "NOTIFICATION_EMAIL_2026_09_01",
+    "INITIAL_COMPLAINT_2026_02_04",
+    "ENLARGEMENT_2026_03_16",
+    "REFORM_AND_SUBSIDIARY_APPEAL_2026_04_17",
+    "FISCAL_REPORT_2026_06_08",
+    "SYNTHESIS_2026_06_25",
+    "RELATED_ETJ_RECONSIDERATION_2026_06_26",
+    "EXISTING_REPOSITORY_AND_PUBLIC_PAGES"
+  ],
+  "corrections": [
+    "LOCKED_LA_LAGUNA_IDENTITY_AND_REMOVED_MADRID_CONFLATION",
+    "DISTINGUISHED_2026_07_16_DECISION_DATE_FROM_2026_09_01_TRANSMISSION",
+    "RECORDED_ORDER_AS_NOT_FINAL_AND_FIVE_DAY_APPEAL_FROM_LAST_NOTIFICATION",
+    "RECORDED_EXPRESS_REOPENING_GATEWAY",
+    "DISTINGUISHED_DP_FILINGS_FROM_RELATED_ETJ_AND_EXTERNAL_COMMUNICATIONS"
+  ],
+  "registered_controls": {
+    "filings": ["PD-DP748-FIL-001", "PD-DP748-FIL-002", "PD-DP748-FIL-003", "PD-DP748-FIL-004", "PD-DP748-FIL-005"],
+    "judicial_and_fiscal": ["PD-DP748-ACT-001", "PD-DP748-ACT-002", "PD-DP748-MF-001", "PD-DP748-ACT-003", "PD-DP748-ACT-004", "PD-DP748-NOT-001"],
+    "related": ["PD-ETJ163-FIL-20260626"],
+    "annex_range": "PD-DP748-ANN-001_TO_PD-DP748-ANN-008"
+  },
+  "interlinks": {
+    "lineage": ["TF-CIV-001", "TF-CIV-002", "TF-CRI-003"],
+    "reciprocal_pages_verified_in_repository": [
+      "/es/cambiario-1048-2019/",
+      "/en/cambiario-1048-2019/",
+      "/es/etj-163-2020/",
+      "/en/etj-163-2020/",
+      "/es/dp-748-2026/",
+      "/en/dp-748-2026/"
+    ],
+    "broader_context": ["/es/cuatrecasas-sun-park/", "/en/cuatrecasas-sun-park/"]
+  },
+  "publication_boundaries": {
+    "unredacted_court_pdf_published": false,
+    "allegations_attributed": true,
+    "provisional_dismissal_not_described_as_acquittal": true,
+    "deadline_not_calculated_without_last_notification_record": true,
+    "excluded_data": ["NIE", "ADDRESS", "PHONE", "SIGNATURE", "VALIDATION_CODE", "SERVICE_METADATA", "PRIVILEGED_CORRESPONDENCE"]
+  },
+  "open_evidence": [
+    "COMPLETE_CERTIFIED_ETJ_163_2020_FILE",
+    "FULL_PRIMARY_11_FEBRUARY_IMPULSE_FILING",
+    "CERTIFIED_FINCA_TO_CURRENT_PHYSICAL_UNIT_OVERLAY",
+    "ACTOR_TO_SIGNED_FILING_TO_EXACT_PROPOSITION_MAP",
+    "PROOF_OF_PRIOR_KNOWLEDGE_AND_RECEIPT",
+    "ADJUDICATEE_OR_ASSIGNEE_IDENTITY",
+    "ARTICLE_766_4_OR_APPELLATE_ROLL_PRIMARY_SOURCE"
+  ],
+  "validation": {
+    "pre_merge": "PENDING_PR_REVIEW",
+    "post_merge_deployment": "PENDING",
+    "live_urls": [
+      "https://sbu001monterecco.github.io/por-derecho/es/dp-748-2026/",
+      "https://sbu001monterecco.github.io/por-derecho/en/dp-748-2026/"
+    ]
+  }
+}
