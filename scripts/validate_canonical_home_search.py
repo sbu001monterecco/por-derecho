@@ -176,6 +176,9 @@ def main() -> None:
         require(marker in search_script, f"Canonical search script lacks marker: {marker}")
     require("canonical-home-search-20260902.js" in site_script, "site.js does not load canonical homepage search")
     require("justice-professionals-current-overlay-20260902.js" in site_script, "site.js does not load current justice overlay")
+    require("siteHeader.insertAdjacentElement('afterend', section)" in search_script, "Homepage search is not mounted after the site header")
+    require("section.closest('details')" in search_script, "Homepage search lacks a closed-details mount guard")
+    require("main.insertBefore(section" not in search_script, "Homepage search retains the unsafe main-child insertion path")
     require("['59', 0]" in overlay_script and "['56', 1]" in overlay_script, "Justice overlay does not expose current counts")
 
     master_projection = load_json(DATA / "proceedings-master-public-v1.json")

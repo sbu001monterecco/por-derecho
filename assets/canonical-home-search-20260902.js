@@ -212,10 +212,20 @@
   document.head.appendChild(style);
 
   const main = document.querySelector('main');
-  if (!main) return;
-  const first = main.firstElementChild;
-  if (first && first.nextSibling) main.insertBefore(section, first.nextSibling);
-  else main.appendChild(section);
+const siteHeader = document.querySelector('.site-header');
+if (!main || !siteHeader) return;
+
+// Mount as a top-level body section immediately after the site header.
+// The homepage contains nested evidence <details> blocks and generic
+// insertion points must never place this primary navigation control inside one.
+const mountTopLevel = () => {
+  if (section.parentElement !== document.body || section.previousElementSibling !== siteHeader || section.closest('details')) {
+    siteHeader.insertAdjacentElement('afterend', section);
+  }
+};
+mountTopLevel();
+requestAnimationFrame(mountTopLevel);
+window.setTimeout(mountTopLevel, 250);
 
   const form = section.querySelector('form');
   const input = section.querySelector('input');
