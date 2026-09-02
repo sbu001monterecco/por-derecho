@@ -2,10 +2,12 @@
 """Synchronise stale interlinkability snapshot counts from canonical controlled sources.
 
 This is deliberately narrow. It does not change relationship logic, finite-test
-classification, source gaps, or publication policy. It only refreshes the four
-record-denominator constants in build_proceedings_interlinkability_v1.py after
-PROCEEDINGS_MASTER_REGISTER.csv and proceedings-master-public-v1.json have been
-reconciled and independently projected.
+classification, source gaps, episode mappings, or publication policy. It only
+refreshes record-denominator constants in build_proceedings_interlinkability_v1.py
+after PROCEEDINGS_MASTER_REGISTER.csv and proceedings-master-public-v1.json have
+been reconciled and independently projected.  The Fiscalía denominator is derived
+with the builder's own membership rule: public rows whose canonical Stream contains
+"FISCAL".
 """
 from __future__ import annotations
 
@@ -53,11 +55,16 @@ def main() -> int:
             + ", ".join(sorted(public_exact_ids - canonical_exact_ids))
         )
 
+    public_fiscalia_rows = [
+        row for row in public_rows if "FISCAL" in (row.get("Stream") or "").upper()
+    ]
+
     counts = {
         "EXPECTED_PUBLIC_RECORDS": len(public_rows),
         "EXPECTED_CANONICAL_EXACT_PROCEEDINGS": len(canonical_exact_ids),
         "EXPECTED_PUBLIC_EXACT_PROCEEDINGS": len(public_exact_ids),
         "EXPECTED_PRIVATE_EXACT_PROCEEDINGS": len(canonical_exact_ids - public_exact_ids),
+        "EXPECTED_FISCALIA_OFFICE_FILE_RECORDS": len(public_fiscalia_rows),
     }
 
     text = BUILDER.read_text(encoding="utf-8")
