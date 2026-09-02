@@ -97,7 +97,7 @@ FILE_CHECKS = [
         "markers": [
             "cuatrecasas-visual-architecture-v2-20260902.js",
             "finca 8,584",
-            "not evidence",
+            "does not replace sources or convert inferences or allegations into adjudicated facts",
         ],
         "kind": "cross_page_loader",
     },
