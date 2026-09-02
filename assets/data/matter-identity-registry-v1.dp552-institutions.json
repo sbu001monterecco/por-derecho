@@ -1,0 +1,18 @@
+{
+  "schema":"por-derecho.matter-identity-registry.part.v1",
+  "registry_id":"PD-SP-IDENTITY-REGISTRY-001",
+  "type":"INSTITUTION",
+  "scope":"DP 552/2025 origin court",
+  "records":[
+    {
+      "id":"PD-SP-I-0044",
+      "type":"INSTITUTION",
+      "name":"Juzgado de Instrucción nº 2 de San Cristóbal de La Laguna",
+      "aliases":["Juzgado de Instrucción número 2 de San Cristóbal de La Laguna"],
+      "routes":{"es":"/es/dp-552-2025/","en":"/en/dp-552-2025/"},
+      "identity_resolution":"CARET_CONFIRMED",
+      "identity_sources":["DP 552/2025 enlargement addressed to the court","13-Mar-2025 ETJ filing identifying the origin court and DP 552/2025","17-Mar-2025 DP 711/2025 header identifying DP 552/2025-00 as origin"],
+      "identity_boundary":"Historical origin-court identity for DP 552/2025. Successor Tribunal de Instancia naming, assigned judge/LAJ in the origin file and complete reparto history require primary-source confirmation."
+    }
+  ]
+}
