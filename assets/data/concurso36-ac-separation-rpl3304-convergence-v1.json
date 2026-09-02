@@ -1,7 +1,7 @@
 {
   "schema": "por-derecho.concurso36-ac-separation-appellate-convergence.v1",
   "control_date": "2026-09-02",
-  "status": "PUBLIC_SAFE_PROCEDURAL_CONVERGENCE_CONTROL",
+  "status": "PUBLIC_SAFE_PROCEDURAL_CONVERGENCE_CONTROL_DETAILED_APPLICATION_VISUAL",
   "canonical_rule": "Aweswell originated the separation application; Aweswell appealed through RPL 3319/2025; LPB independently appealed through RPL 3304/2025; the Audiencia Provincial accumulated the appeals; RPL 3304/2025 is the live consolidated appellate proceeding. Termination of the separate 3319 roll is not a merits dismissal absent source evidence.",
   "routes": {
     "es": "/es/concurso-36-2012-separacion-administrador-concursal-rpl-3304-2025/",
@@ -25,8 +25,18 @@
     "public_source_record": "R01",
     "sha256": "5665ec05ae42f18fc64b1209ed7984c39ece015933bdfc9dd8bcf1a8ece6bf26",
     "raw_publication": "WITHHELD_DATA_MINIMISATION",
+    "visual_summary": {"pages":58,"pleaded_factual_blocks":7,"relief_or_communication_families":6,"controlled_first_instance_decisions":2,"independent_appeals":2,"live_consolidated_rolls":1},
     "relief_requested": ["article 100 TRLC removal","article 101 TRLC replacement","rendition of accounts","Public Insolvency Register notice","AEAT communication","Public Prosecutor communication/referral where pleaded"],
-    "pleaded_factual_blocks": ["accounts / rendition of accounts","financial-risk / swap","credit-assignment price and retract","dación en pago / fiscal valuation","fragmentation of the hotel operating unit","remuneration","opacity / conflicts"]
+    "pleaded_factual_blocks": ["accounts / rendition of accounts","financial-risk / swap","credit-assignment price and retract","dación en pago / fiscal valuation","fragmentation of the hotel operating unit","remuneration","opacity / conflicts"],
+    "pleaded_factual_blocks_detailed": [
+      {"key":"accounts","label":"accounts / rendition of accounts","allegation":"Prolonged failure to prepare and file annual accounts after LPB powers were suspended; the pleading relied among other materials on a 20 March 2025 court-office record that did not locate an exemption order or accounting documents at the point searched.","removal_relevance":"Pleaded as an ongoing accountability and accounting-traceability problem and linked to the request for rendition of accounts and institutional communications.","status":"PARTY_ALLEGATION_NOT_ADJUDICATED"},
+      {"key":"financial-risk-swap","label":"financial risk / swap","allegation":"Alleged inaction and later obstruction concerning the 2008 financial-risk-management contract; the pleading stated that it had caused more than EUR 500,000 of loss and might support an estate recovery claim.","removal_relevance":"Pleaded as a failure to examine and protect a potentially valuable estate claim.","status":"PARTY_ALLEGATION_NOT_ADJUDICATED"},
+      {"key":"credit-assignment","label":"credit-assignment price / retract","allegation":"Alleged obstruction or insufficient access to the true price and full terms of the credit assignment, linked in the pleading to litigation, negotiation, estate strategy and analysis of retract where legally applicable.","removal_relevance":"Pleaded on the basis that incomplete economics of the assignment could obstruct informed liability and liquidation-alternative decisions.","status":"PARTY_ALLEGATION_NOT_ADJUDICATED_RETRACT_NOT_ASSUMED"},
+      {"key":"dacion","label":"dación en pago / fiscal valuation","allegation":"The application challenged what it characterised as insufficiently critical acceptance or defence of a transfer/adjudication transaction and raised valuation, perimeter, authority and estate-protection questions.","removal_relevance":"Pleaded as a challenge to the Administrator's recommendation/protective function; any later judicial decision remains distinct from the Administrator conduct alleged.","status":"PARTY_ALLEGATION_NOT_ADJUDICATED"},
+      {"key":"hotel-unit","label":"fragmentation of the hotel operating unit","allegation":"Alleged inaction concerning fragmentation of the hotel as an economic unit and issues of access, operation and third-party assets or rights said to remain outside the insolvency estate.","removal_relevance":"Pleaded as affecting value preservation, economic continuity, estate perimeter and operating/exit alternatives.","status":"PARTY_ALLEGATION_NOT_ADJUDICATED"},
+      {"key":"remuneration","label":"remuneration","allegation":"Alleged accrual and receipt of remuneration outside liquidation time limits Aweswell said were applicable, together with interest on remuneration.","removal_relevance":"Pleaded as an estate-cost, transparency and regularity issue; materially connected with but procedurally separate from the fees route and RPL 421/2026.","status":"PARTY_ALLEGATION_SEPARATE_FEES_PROCEEDING_NOT_MERGED"},
+      {"key":"opacity-conflicts","label":"opacity / conflicts","allegation":"Alleged information asymmetries and insufficient disclosure or management of relationships and conflicts said to affect independence, transparency and confidence in the office.","removal_relevance":"Pleaded as a cross-cutting independence and disclosure issue rather than only an isolated-act allegation.","status":"PARTY_ALLEGATION_NOT_ADJUDICATED"}
+    ]
   },
   "appellate_sequence": [
     {"date":"2025-04-23","event":"Aweswell files removal application","proceeding":"GC-JUD-001"},
@@ -39,11 +49,27 @@
   ],
   "evidence_matrix": [
     {"proposition":"Aweswell originated the application","source":"R01","proceeding":"GC-JUD-001","actors":["PD-SP-O-0001","PD-SP-P-0010"],"event_id":null,"event_id_gap":"Canonical event ID not located; do not invent"},
+    {"proposition":"Seven factual blocks were pleaded","source":"R01 body of application","proceeding":"GC-JUD-001","actors":["PD-SP-O-0001","PD-SP-P-0010"],"event_id":null,"event_id_gap":"Canonical event ID not located; do not invent"},
     {"proposition":"LPB independently appealed","source":"RPL 3304/2025 appellate record","proceeding":"GC-APP-005","actors":["PD-SP-O-0002","PD-SP-I-0014"],"event_id":null,"event_id_gap":"Canonical event ID not located"},
     {"proposition":"Aweswell independently appealed","source":"RPL 3319/2025 appellate record","proceeding":"GC-APP-006","actors":["PD-SP-O-0001","PD-SP-I-0014"],"event_id":null,"event_id_gap":"Canonical event ID not located"},
     {"proposition":"3319 accumulated into 3304","source":"Auto 223/2026, 15 July 2026","proceeding":"GC-APP-005","actors":["PD-SP-I-0014"],"event_id":null,"event_id_gap":"Canonical event ID not located"},
     {"proposition":"Separate 3319 roll ended because of accumulation, not a merits adjudication","source":"Decreto 222/2026","proceeding":"GC-APP-006","actors":["PD-SP-I-0014"],"event_id":null,"event_id_gap":"Canonical event ID not located"}
   ],
+  "interlinks": {
+    "detailed_administrator_file":{"es":"/es/concurso-36-2012-separacion-ac-honorarios/","en":"/en/insolvency-36-2012-administrator-removal-fees/"},
+    "orders_filings_corpus":{"es":"/es/concurso-36-2012-autos-resoluciones/","en":"/en/insolvency-36-2012-orders-decisions/"},
+    "administrator_dossier":{"es":"/es/concurso-36-2012-administrador-concursal/","en":"/en/insolvency-36-2012-insolvency-administrator/"},
+    "appeal_section":{"es":"/es/concurso-36-2012-ap-seccion-4/","en":"/en/insolvency-36-2012-ap-section-4/"},
+    "proceedings_map":{"es":"/es/mapa-procedimientos/","en":"/en/proceedings-map/"},
+    "master_register":{"es":"/es/registro-maestro-procedimientos/","en":"/en/master-proceedings-register/"},
+    "fees_appeal_master_id":"GC-APP-028",
+    "classification":{"es":"/es/calificacion-concurso-36-2012-vidas-paralelas/","en":"/en/insolvency-classification-parallel-lives/"},
+    "dp1901":{"es":"/es/dp-1901-2026/","en":"/en/dp-1901-2026/"},
+    "community_minutes":{"es":"/es/comunidad-instrumentalizacion/actas-2011-2022/","en":"/en/community-instrumentalisation/minutes-2011-2022/"},
+    "takeover_7_june":{"es":"/es/toma-control-sun-park-7-junio-2018/","en":"/en/sun-park-takeover-7-june-2018/"},
+    "identity_register":{"es":"/es/registro-identidad-materia/","en":"/en/matter-identity-registry/"},
+    "public_authority_reconstruction":{"es":"/es/reconstruccion-unitaria-autoridades-publicas/","en":"/en/public-authority-unitary-case-reconstruction/"}
+  },
   "search_terms": ["Borja","Rodríguez-Batllori","separación administrador concursal","RPL 3304/2025","RPL 3319/2025","Aweswell","Luchy Playa Blanca","artículo 100 TRLC","artículo 101 TRLC","Decreto 222/2026"],
   "publication_boundary": "No raw private email, unnecessary personal data or restricted annex is exposed. Allegations and requested relief remain distinguished from judicial findings."
 }

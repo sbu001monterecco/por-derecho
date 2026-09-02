@@ -1,0 +1,62 @@
+name: Validate Borja separation detailed visual
+on:
+  pull_request:
+    paths:
+      - 'es/concurso-36-2012-separacion-administrador-concursal-rpl-3304-2025/**'
+      - 'en/insolvency-36-2012-administrator-removal-rpl-3304-2025/**'
+      - 'assets/data/concurso36-ac-separation-rpl3304-convergence-v1.json'
+      - 'archive/BORJA_SEPARATION_DETAILED_VISUAL_RESCAN_02SEP2026.md'
+      - 'scripts/validate_borja_separation_detailed_visual.py'
+      - 'scripts/smoke_borja_separation_detailed_visual.mjs'
+      - '.github/workflows/validate-borja-separation-detailed-visual.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'es/concurso-36-2012-separacion-administrador-concursal-rpl-3304-2025/**'
+      - 'en/insolvency-36-2012-administrator-removal-rpl-3304-2025/**'
+      - 'assets/data/concurso36-ac-separation-rpl3304-convergence-v1.json'
+      - 'archive/BORJA_SEPARATION_DETAILED_VISUAL_RESCAN_02SEP2026.md'
+      - 'scripts/validate_borja_separation_detailed_visual.py'
+      - 'scripts/smoke_borja_separation_detailed_visual.mjs'
+      - '.github/workflows/validate-borja-separation-detailed-visual.yml'
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+      - name: Set up Python
+        uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
+        with:
+          python-version: '3.12'
+      - name: Set up Node
+        uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020
+        with:
+          node-version: '22'
+      - name: Validate detailed application structure and internal links
+        run: python scripts/validate_borja_separation_detailed_visual.py
+      - name: Check rendered-smoke JavaScript syntax
+        run: node --check scripts/smoke_borja_separation_detailed_visual.mjs
+      - name: Install Playwright Chromium
+        run: |
+          npm install --no-save playwright@1.50.1
+          npx playwright install --with-deps chromium
+      - name: Serve static site at production subpath
+        run: |
+          mkdir -p /tmp/psr-borja-site/por-derecho
+          cp -a . /tmp/psr-borja-site/por-derecho/
+          cd /tmp/psr-borja-site
+          python3 -m http.server 8000 --bind 127.0.0.1 > /tmp/psr-borja-http.log 2>&1 &
+          for i in $(seq 1 30); do
+            if curl -fsS http://127.0.0.1:8000/por-derecho/es/concurso-36-2012-separacion-administrador-concursal-rpl-3304-2025/ >/dev/null; then exit 0; fi
+            sleep 1
+          done
+          cat /tmp/psr-borja-http.log
+          exit 1
+      - name: Render Spanish and English desktop and mobile views
+        env:
+          PSR_BASE_URL: http://127.0.0.1:8000/por-derecho
+        run: node scripts/smoke_borja_separation_detailed_visual.mjs
