@@ -1,0 +1,27 @@
+{
+  "schema": "por-derecho.matter-identity-registry.part.v1",
+  "registry_id": "PD-SP-IDENTITY-REGISTRY-001",
+  "type": "PERSON",
+  "scope": "Historic Las Palmas civil judicial office-holders newly source-identified on 2-Sep-2026",
+  "records": [
+    {
+      "id": "PD-SP-P-0165",
+      "type": "PERSON",
+      "name": "Fernando Pérez Polo",
+      "aliases": [
+        "Fernando Perez Polo"
+      ],
+      "role": "LAJ",
+      "routes": {
+        "es": "/es/registro-autoridad-historica-las-palmas-civil/#pd-sp-p-0165",
+        "en": "/en/historic-las-palmas-civil-justice-authority-register/#pd-sp-p-0165"
+      },
+      "identity_resolution": "CARET_CONFIRMED",
+      "identity_sources": [
+        "Authentic electronic Providencia in Diligencias Preliminares 1041/2017, signed as Letrado de la Administración de Justicia on 15-Jan-2018"
+      ],
+      "verification_detail": "Primary authentic electronic judicial copy identifies the LAJ signatory",
+      "capacity_boundary": "Letrado de la Administración de Justicia signatory of the 12-Jan-2018 Providencia in Diligencias Preliminares 1041/2017, electronic signature timestamp 15-Jan-2018. No authorship or office-holding is inferred for any other act."
+    }
+  ]
+}

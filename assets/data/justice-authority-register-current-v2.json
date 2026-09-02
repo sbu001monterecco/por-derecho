@@ -2,7 +2,7 @@
   "schema": "por-derecho.justice-authority-register.current.v2",
   "control_id": "PD-SP-JUSTICE-AUTHORITY-CURRENT-20260902-01",
   "control_date": "2026-09-02",
-  "status": "CURRENT_DERIVED_REGISTER_LIVE_RELEASE_PENDING_GLOBAL_HISTORIC_DOCKET_BACKFILL_OPEN",
+  "status": "CURRENT_DERIVED_REGISTER_SOURCE_LED_HISTORIC_AUTHORITY_BACKFILL_GLOBAL_DOCKET_BACKFILL_OPEN",
   "purpose": "Current derived control for every source-identified judge, magistrate, LAJ, Fiscal/prosecutor and canonical court or prosecution institution, without creating a competing identity registry.",
   "canonical_identity_authority": "assets/data/matter-identity-registry-v1.json",
   "person_sources": [
@@ -19,17 +19,31 @@
       "people": 11,
       "confirmed": 11,
       "pending": 0
+    },
+    {
+      "path": "assets/data/matter-identity-registry-v1.historic-arrecife-judicial-people-20260902.json",
+      "scope": "Historic Arrecife/AP Las Palmas judges newly source-identified from primary judicial copies on 2-Sep-2026",
+      "people": 2,
+      "confirmed": 2,
+      "pending": 0
+    },
+    {
+      "path": "assets/data/matter-identity-registry-v1.historic-las-palmas-civil-judicial-people-20260902.json",
+      "scope": "Historic Las Palmas civil LAJ newly source-identified from primary Diligencias Preliminares 1041/2017 copy on 2-Sep-2026",
+      "people": 1,
+      "confirmed": 1,
+      "pending": 0
     }
   ],
   "derived_counts": {
-    "unique_named_people": 59,
-    "confirmed": 56,
+    "unique_named_people": 62,
+    "confirmed": 59,
     "pending": 3,
     "suspended": 0,
     "by_role": {
       "MINISTERIO_FISCAL": 17,
-      "JUDGE_OR_MAGISTRATE": 18,
-      "LAJ": 16,
+      "JUDGE_OR_MAGISTRATE": 20,
+      "LAJ": 17,
       "NOTARY": 8
     }
   },
@@ -54,7 +68,7 @@
     "historic_substitution_or_successor_state_without_overwrite",
     "reciprocal_search_and_public_route"
   ],
-  "completion_rule": "No global all-historic/all-current completeness statement is permitted until every applicable Master Proceedings Register row has populated authority coverage or an explicit source-defined gap and the certified complete docket denominator is closed. The current derived 59-person denominator is complete only for the presently registered source-identified people.",
+  "completion_rule": "The current derived 62-person denominator is complete only for the presently registered source-identified people. No global all-historic/all-current completeness statement is permitted until every applicable Master Proceedings Register row has populated authority coverage or an explicit source-defined gap and the certified complete docket denominator is closed.",
   "search_contract": {
     "loader": "assets/canonical-home-search-20260902.js",
     "registry_sources": [

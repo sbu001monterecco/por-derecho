@@ -1,0 +1,477 @@
+{
+  "schema": "por-derecho.proceeding-justice-authority-coverage.v1",
+  "control_id": "PD-SP-PROCEEDING-AUTHORITY-BACKFILL-20260902-01",
+  "control_date": "2026-09-02",
+  "status": "SOURCE_IDENTIFIED_EDGES_PLUS_EXPLICIT_GAPS_DUPLICATE_1041_RECONCILED",
+  "completion_boundary": "This backfill covers the recovered historical inventory denominator only. SOURCE_GAP means the current controlled source does not identify the office-holder and no inference is permitted.",
+  "records": [
+    {
+      "master_id": "LZ-CIV-045",
+      "reference": "Procedimiento Ordinario 467/2010",
+      "nig": "3500441120100004798",
+      "court_or_fiscalia": "Juzgado de Instrucción nº 3 de Arrecife (antiguo Mixto nº 8; civil function in source)",
+      "judge_or_magistrate": {
+        "state": "SOURCE_IDENTIFIED",
+        "person_ids": [
+          "PD-SP-P-0163"
+        ],
+        "act": "Sentencia 39/2011",
+        "date": "2011-03-14"
+      },
+      "laj": {
+        "state": "SOURCE_GAP",
+        "person_ids": []
+      },
+      "fiscal": {
+        "state": "NOT_APPLICABLE_OR_SOURCE_GAP",
+        "person_ids": []
+      },
+      "source_status": "VERIFIED_PRIMARY_COPY",
+      "open_gap": "LAJ identity; complete docket; appeal/finality/service record",
+      "institution_ids": [
+        "PD-SP-I-0045"
+      ]
+    },
+    {
+      "master_id": "LZ-CIV-035",
+      "reference": "Juicio Verbal 1260/2011",
+      "nig": "3500442120110008131",
+      "court_or_fiscalia": "Juzgado de Primera Instancia nº 4 de Arrecife",
+      "judge_or_magistrate": {
+        "state": "SOURCE_GAP",
+        "person_ids": []
+      },
+      "laj": {
+        "state": "SOURCE_GAP",
+        "person_ids": []
+      },
+      "fiscal": {
+        "state": "NOT_APPLICABLE_OR_SOURCE_GAP",
+        "person_ids": []
+      },
+      "source_status": "VERIFIED_PRIMARY_APPELLATE_COPY",
+      "open_gap": "First-instance signed judgment identifying Judge/LAJ; complete first-instance docket and service/finality record",
+      "institution_ids": [
+        "PD-SP-I-0046"
+      ]
+    },
+    {
+      "master_id": "LZ-APP-046",
+      "reference": "Rollo 793/2012",
+      "nig": "3500442120110008131",
+      "court_or_fiscalia": "Audiencia Provincial de Las Palmas — Sección Cuarta",
+      "judge_or_magistrate": {
+        "state": "SOURCE_IDENTIFIED_PANEL",
+        "person_ids": [
+          "PD-SP-P-0164",
+          "PD-SP-P-0130",
+          "PD-SP-P-0129"
+        ],
+        "act": "Sentencia 89/2014",
+        "date": "2014-01-13",
+        "roles": {
+          "PD-SP-P-0164": "Presidenta",
+          "PD-SP-P-0130": "Magistrada",
+          "PD-SP-P-0129": "Magistrado ponente"
+        }
+      },
+      "laj": {
+        "state": "SOURCE_GAP",
+        "person_ids": []
+      },
+      "fiscal": {
+        "state": "NOT_APPLICABLE_OR_SOURCE_GAP",
+        "person_ids": []
+      },
+      "source_status": "VERIFIED_PRIMARY_COPY",
+      "open_gap": "LAJ identity; court-certified complete roll; service/finality record",
+      "institution_ids": [
+        "PD-SP-I-0014"
+      ]
+    },
+    {
+      "master_id": "LZ-JUD-047",
+      "reference": "DP 3017/2014",
+      "nig": "3500443220140012080",
+      "court_or_fiscalia": "Juzgado de Instrucción nº 4 de Arrecife",
+      "judge_or_magistrate": {
+        "state": "SOURCE_GAP",
+        "person_ids": []
+      },
+      "laj": {
+        "state": "SOURCE_GAP",
+        "person_ids": []
+      },
+      "fiscal": {
+        "state": "NOT_APPLICABLE_OR_SOURCE_GAP",
+        "person_ids": []
+      },
+      "source_status": "VERIFIED_PRIMARY_IDENTITY_COPY",
+      "open_gap": "Signed initiating order/complaint; Judge; LAJ; prosecutor; accumulation act with DP 168/2015; final disposition, notice and finality",
+      "institution_ids": [
+        "PD-SP-I-0047"
+      ]
+    },
+    {
+      "master_id": "LZ-REF-038",
+      "reference": "DP 168/2015",
+      "nig": "",
+      "court_or_fiscalia": "Juzgado de Instrucción nº 4 de Arrecife",
+      "judge_or_magistrate": {
+        "state": "SOURCE_GAP",
+        "person_ids": []
+      },
+      "laj": {
+        "state": "SOURCE_GAP",
+        "person_ids": []
+      },
+      "fiscal": {
+        "state": "NOT_APPLICABLE_OR_SOURCE_GAP",
+        "person_ids": []
+      },
+      "source_status": "CORPUS_REPORTED_PRIMARY_PENDING",
+      "open_gap": "NIG; complaint/querella; signed 15-Jul-2017 accumulation/extension act; Judge; LAJ; prosecutor; final disposition and notice",
+      "institution_ids": [
+        "PD-SP-I-0047"
+      ]
+    },
+    {
+      "master_id": "LZ-JUD-048",
+      "reference": "DP 2084/2016",
+      "nig": "",
+      "court_or_fiscalia": "Juzgado de Instrucción nº 3 de Arrecife",
+      "judge_or_magistrate": {
+        "state": "SOURCE_GAP",
+        "person_ids": []
+      },
+      "laj": {
+        "state": "SOURCE_GAP",
+        "person_ids": []
+      },
+      "fiscal": {
+        "state": "NOT_APPLICABLE_OR_SOURCE_GAP",
+        "person_ids": []
+      },
+      "source_status": "CORPUS_REPORTED_PRIMARY_PENDING",
+      "open_gap": "NIG; querella/complaint; exact parties/capacities; Judge; LAJ; prosecutor; archive order and finality",
+      "institution_ids": [
+        "PD-SP-I-0045"
+      ]
+    },
+    {
+      "master_id": "LZ-APP-054",
+      "reference": "Rollo 526/2013",
+      "nig": "",
+      "court_or_fiscalia": "Audiencia Provincial de Las Palmas — Sección Quinta",
+      "judge_or_magistrate": {
+        "state": "SOURCE_GAP",
+        "person_ids": []
+      },
+      "laj": {
+        "state": "SOURCE_GAP",
+        "person_ids": []
+      },
+      "fiscal": {
+        "state": "NOT_APPLICABLE_OR_SOURCE_GAP",
+        "person_ids": []
+      },
+      "source_status": "CORPUS_REPORTED_PRIMARY_PENDING",
+      "open_gap": "NIG; exact final signed resolution; panel/Judge identities if judicial act applicable; LAJ; service/finality"
+    },
+    {
+      "master_id": "LZ-CIV-040",
+      "reference": "P.O. 1241/2011",
+      "nig": "",
+      "court_or_fiscalia": "Juzgado de Primera Instancia nº 5 de Arrecife",
+      "judge_or_magistrate": {
+        "state": "SOURCE_GAP",
+        "person_ids": []
+      },
+      "laj": {
+        "state": "SOURCE_GAP",
+        "person_ids": []
+      },
+      "fiscal": {
+        "state": "NOT_APPLICABLE_OR_SOURCE_GAP",
+        "person_ids": []
+      },
+      "source_status": "VERIFIED_PROCEDURAL",
+      "open_gap": "Certified index; claim/defence; annexes; signed judgment; appeal and finality"
+    },
+    {
+      "master_id": "LZ-CIV-041",
+      "reference": "Medidas cautelares 1355/2011",
+      "nig": "",
+      "court_or_fiscalia": "Juzgado de Primera Instancia nº 5 de Arrecife",
+      "judge_or_magistrate": {
+        "state": "SOURCE_GAP",
+        "person_ids": []
+      },
+      "laj": {
+        "state": "SOURCE_GAP",
+        "person_ids": []
+      },
+      "fiscal": {
+        "state": "NOT_APPLICABLE_OR_SOURCE_GAP",
+        "person_ids": []
+      },
+      "source_status": "VERIFIED_PROCEDURAL",
+      "open_gap": "Certified index; application/opposition; security; signed Auto; enforcement appeal and finality"
+    },
+    {
+      "master_id": "LZ-CIV-033",
+      "reference": "P.O. 562/2014",
+      "nig": "",
+      "court_or_fiscalia": "Arrecife civil court — exact organ to verify",
+      "judge_or_magistrate": {
+        "state": "SOURCE_GAP",
+        "person_ids": []
+      },
+      "laj": {
+        "state": "SOURCE_GAP",
+        "person_ids": []
+      },
+      "fiscal": {
+        "state": "NOT_APPLICABLE_OR_SOURCE_GAP",
+        "person_ids": []
+      },
+      "source_status": "VERIFIED_PROCEDURAL",
+      "open_gap": "Exact court, parties, object, full judgment/appeal/finality"
+    },
+    {
+      "master_id": "LZ-CIV-034",
+      "reference": "P.O. 213/2015",
+      "nig": "",
+      "court_or_fiscalia": "Arrecife civil court — exact organ to verify",
+      "judge_or_magistrate": {
+        "state": "SOURCE_GAP",
+        "person_ids": []
+      },
+      "laj": {
+        "state": "SOURCE_GAP",
+        "person_ids": []
+      },
+      "fiscal": {
+        "state": "NOT_APPLICABLE_OR_SOURCE_GAP",
+        "person_ids": []
+      },
+      "source_status": "VERIFIED_PROCEDURAL",
+      "open_gap": "Exact court, parties, object, appellate roll and finality"
+    },
+    {
+      "master_id": "LZ-REF-039",
+      "reference": "Juicio Verbal 268/2016",
+      "nig": "",
+      "court_or_fiscalia": "Juzgado de Primera Instancia nº 4 de Arrecife",
+      "judge_or_magistrate": {
+        "state": "SOURCE_GAP",
+        "person_ids": []
+      },
+      "laj": {
+        "state": "SOURCE_GAP",
+        "person_ids": []
+      },
+      "fiscal": {
+        "state": "NOT_APPLICABLE_OR_SOURCE_GAP",
+        "person_ids": []
+      },
+      "source_status": "CORPUS_REPORTED_PRIMARY_PENDING",
+      "open_gap": "NIG; signed judgment; Judge; LAJ; pleadings; service/finality",
+      "institution_ids": [
+        "PD-SP-I-0046"
+      ]
+    },
+    {
+      "master_id": "LZ-JUD-002",
+      "reference": "DP 332/2014",
+      "nig": "",
+      "court_or_fiscalia": "Juzgado de Instrucción nº 3 de Arrecife",
+      "judge_or_magistrate": {
+        "state": "SOURCE_GAP",
+        "person_ids": []
+      },
+      "laj": {
+        "state": "SOURCE_GAP",
+        "person_ids": []
+      },
+      "fiscal": {
+        "state": "NOT_APPLICABLE_OR_SOURCE_GAP",
+        "person_ids": []
+      },
+      "source_status": "CORPUS_REPORTED_PRIMARY_PENDING",
+      "open_gap": "Certified docket, signed final disposition, notice and finality",
+      "institution_ids": [
+        "PD-SP-I-0045"
+      ]
+    },
+    {
+      "master_id": "LZ-JUD-003",
+      "reference": "DP 1132/2018",
+      "nig": "3500443220180003508",
+      "court_or_fiscalia": "Juzgado de Instrucción nº 2 de Arrecife (antiguo Juzgado Mixto nº 7)",
+      "judge_or_magistrate": {
+        "state": "SOURCE_GAP",
+        "person_ids": []
+      },
+      "laj": {
+        "state": "SOURCE_GAP",
+        "person_ids": []
+      },
+      "fiscal": {
+        "state": "NOT_APPLICABLE_OR_SOURCE_GAP",
+        "person_ids": []
+      },
+      "source_status": "VERIFIED_PRIMARY_COPY",
+      "open_gap": "Court-certified complete docket, service record, full annex set and audiovisual masters",
+      "institution_ids": [
+        "PD-SP-I-0024"
+      ]
+    },
+    {
+      "master_id": "LZ-APP-004",
+      "reference": "Rollo 1010/2018",
+      "nig": "3500443220180003508",
+      "court_or_fiscalia": "Audiencia Provincial de Las Palmas, Sección Segunda",
+      "judge_or_magistrate": {
+        "state": "SOURCE_IDENTIFIED_PANEL",
+        "person_ids": [
+          "PD-SP-P-0096",
+          "PD-SP-P-0097",
+          "PD-SP-P-0098"
+        ],
+        "act": "Auto 804/2018",
+        "date": "2018-11-13"
+      },
+      "laj": {
+        "state": "SOURCE_GAP",
+        "person_ids": []
+      },
+      "fiscal": {
+        "state": "NOT_APPLICABLE_OR_SOURCE_GAP",
+        "person_ids": []
+      },
+      "source_status": "VERIFIED_PRIMARY_COPY",
+      "open_gap": "Court-certified complete roll, appeal/opposition filings, Fiscalía position and service record",
+      "institution_ids": [
+        "PD-SP-I-0025"
+      ]
+    },
+    {
+      "master_id": "GC-CIV-003",
+      "reference": "Diligencias Preliminares 1041/2017",
+      "nig": "3501642120170028407",
+      "court_or_fiscalia": "Juzgado de Primera Instancia nº 2 de Las Palmas de Gran Canaria",
+      "judge_or_magistrate": {
+        "state": "SOURCE_IDENTIFIED",
+        "person_ids": [
+          "PD-SP-P-0124"
+        ],
+        "act": "Providencia",
+        "date": "2018-01-12"
+      },
+      "laj": {
+        "state": "SOURCE_IDENTIFIED",
+        "person_ids": [
+          "PD-SP-P-0165"
+        ],
+        "act": "Providencia (electronic LAJ signature)",
+        "date": "2018-01-15"
+      },
+      "fiscal": {
+        "state": "NOT_APPLICABLE",
+        "person_ids": []
+      },
+      "source_status": "VERIFIED_PRIMARY_COPY",
+      "open_gap": "Preceding signed Auto; complete docket; evidence of 19-Feb-2018 appearance/production; later 5-Mar-2018 decree/closure; service and finality",
+      "institution_ids": [
+        "PD-SP-I-0048"
+      ]
+    },
+    {
+      "master_id": "LZ-FIS-049",
+      "reference": "273/2013",
+      "nig": "",
+      "court_or_fiscalia": "Fiscalía Provincial de Las Palmas",
+      "judge_or_magistrate": {
+        "state": "SOURCE_GAP",
+        "person_ids": []
+      },
+      "laj": {
+        "state": "SOURCE_GAP",
+        "person_ids": []
+      },
+      "fiscal": {
+        "state": "NOT_APPLICABLE_OR_SOURCE_GAP",
+        "person_ids": []
+      },
+      "source_status": "VERIFIED_PRIMARY_FILE_LOCATED_CONTENT_EXTRACTION_PENDING",
+      "open_gap": "Assigned Fiscal/signatory extraction; judicial destination/NIG; complete investigation file; disposition/finality",
+      "institution_ids": [
+        "PD-SP-I-0020"
+      ]
+    },
+    {
+      "master_id": "LZ-FIS-051",
+      "reference": "302/2018",
+      "nig": "",
+      "court_or_fiscalia": "Fiscalía Provincial de Las Palmas",
+      "judge_or_magistrate": {
+        "state": "SOURCE_GAP",
+        "person_ids": []
+      },
+      "laj": {
+        "state": "SOURCE_GAP",
+        "person_ids": []
+      },
+      "fiscal": {
+        "state": "NOT_APPLICABLE_OR_SOURCE_GAP",
+        "person_ids": []
+      },
+      "source_status": "CORPUS_REPORTED_PRIMARY_PENDING",
+      "open_gap": "Exact Fiscalía file class; assigned Fiscal/signatory; opening and archive decrees; annexes; notice/finality",
+      "institution_ids": [
+        "PD-SP-I-0020"
+      ]
+    },
+    {
+      "master_id": "LZ-REF-052",
+      "reference": "49/2018",
+      "nig": "",
+      "court_or_fiscalia": "Juzgado de Instrucción nº 4 de Arrecife — historical inventory label",
+      "judge_or_magistrate": {
+        "state": "SOURCE_GAP",
+        "person_ids": []
+      },
+      "laj": {
+        "state": "SOURCE_GAP",
+        "person_ids": []
+      },
+      "fiscal": {
+        "state": "NOT_APPLICABLE_OR_SOURCE_GAP",
+        "person_ids": []
+      },
+      "source_status": "OPEN_REFERENCE",
+      "open_gap": "Exact proceeding class/title; NIG; parties/capacities; Judge; LAJ; pleadings; disposition/finality"
+    },
+    {
+      "master_id": "LZ-REF-053",
+      "reference": "92/2012",
+      "nig": "",
+      "court_or_fiscalia": "Juzgado de Instrucción nº 2 de Arrecife — historical inventory label",
+      "judge_or_magistrate": {
+        "state": "SOURCE_GAP",
+        "person_ids": []
+      },
+      "laj": {
+        "state": "SOURCE_GAP",
+        "person_ids": []
+      },
+      "fiscal": {
+        "state": "NOT_APPLICABLE_OR_SOURCE_GAP",
+        "person_ids": []
+      },
+      "source_status": "OPEN_REFERENCE",
+      "open_gap": "Exact court/jurisdiction; NIG; enforcement title; Judge; LAJ; parties; signed termination/disposition; finality"
+    }
+  ]
+}

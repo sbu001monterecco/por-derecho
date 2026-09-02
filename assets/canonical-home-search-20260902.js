@@ -92,6 +92,8 @@
     return new URL(`${fallback}#${encodeURIComponent(record.id || '')}`, siteRoot).href;
   };
 
+  let proceedingRoutes = {};
+
   const masterRoute = () => new URL(
     lang === 'es' ? 'es/registro-maestro-procedimientos/' : 'en/master-proceedings-register/',
     siteRoot
@@ -137,7 +139,7 @@
       name,
       aliases,
       meta: [record.Origin_Organ, record.Status].filter(Boolean).join(' · '),
-      route: `${masterRoute()}?q=${encodeURIComponent(record.Reference || record.Master_ID)}`,
+      route: proceedingRoutes[record.Master_ID]?.[lang] ? new URL(proceedingRoutes[record.Master_ID][lang], siteRoot).href : `${masterRoute()}?q=${encodeURIComponent(record.Reference || record.Master_ID)}`,
       haystack: normalise([record.Master_ID, name, ...aliases, record.Object_or_Purpose, record.Connection].join(' | ')),
       exact: new Set([record.Master_ID, name, ...aliases].map(normalise).filter(Boolean))
     };
@@ -270,7 +272,7 @@ window.setTimeout(mountTopLevel, 250);
   };
 
   const load = async () => {
-    const [registryIndex, master] = await Promise.all([
+    const [registryIndex, master, proceedingRouteMap] = await Promise.all([
       fetch(dataUrl('matter-identity-registry-v1.json'), { cache: 'no-store' }).then((response) => {
         if (!response.ok) throw new Error(`registry ${response.status}`);
         return response.json();
@@ -278,8 +280,13 @@ window.setTimeout(mountTopLevel, 250);
       fetch(dataUrl('proceedings-master-public-v1.json'), { cache: 'no-store' }).then((response) => {
         if (!response.ok) throw new Error(`proceedings ${response.status}`);
         return response.json();
+      }),
+      fetch(dataUrl('proceeding-page-routes-20260902.json'), { cache: 'no-store' }).then((response) => {
+        if (!response.ok) throw new Error(`proceeding routes ${response.status}`);
+        return response.json();
       })
     ]);
+    proceedingRoutes = proceedingRouteMap.routes || {};
 
     const shards = await Promise.all((registryIndex.parts || []).map((part) =>
       fetch(dataUrl(part.path), { cache: 'no-store' }).then((response) => {

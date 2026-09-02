@@ -20,7 +20,7 @@
     "A parent court, each section or court position, every proceeding and every named office-holder remain separate canonical objects; hierarchy supplies navigation only."
   ],
   "coverage": {
-    "state": "COMPLETE_FOR_CURRENT_CANONICAL_ACTOR_REGISTER_V2_GRAPH_AUTHORIZED_PROFESSIONAL_CENSUS_SOURCE_IDENTIFIED_LA_LAGUNA_JUDICIAL_ACTORS_AND_AP_LAS_PALMAS_PARENT_COURT",
+    "state": "COMPLETE_FOR_CURRENT_CANONICAL_ACTOR_REGISTER_SOURCE_IDENTIFIED_HISTORIC_AUTHORITY_BACKFILL_GLOBAL_DOCKET_BACKFILL_OPEN",
     "archive_backfill": "OPEN",
     "required_names": [
       "Construcciones Acosta Matos, S.A.",
@@ -165,31 +165,114 @@
       "Plaza nº 3 del Tribunal de Instancia (Sección Civil) de San Cristóbal de La Laguna",
       "Juzgado de Primera Instancia nº 5 de San Cristóbal de La Laguna",
       "Juzgado de Primera Instancia nº 2 de Arrecife",
-      "Juzgado de Paz de Yaiza"
+      "Juzgado de Paz de Yaiza",
+      "Ángela López-Yuste Padial",
+      "Emma Galcerán Solsona",
+      "Juzgado de Instrucción nº 3 de Arrecife (antiguo Mixto nº 8)",
+      "Juzgado de Primera Instancia nº 4 de Arrecife",
+      "Juzgado de Instrucción nº 4 de Arrecife",
+      "Fernando Pérez Polo",
+      "Juzgado de Primera Instancia nº 2 de Las Palmas de Gran Canaria"
     ]
   },
   "counts": {
-    "total": 343,
-    "PERSON": 162,
+    "total": 350,
+    "PERSON": 165,
     "ORGANISATION": 83,
     "STRUCTURE": 11,
-    "INSTITUTION": 44,
+    "INSTITUTION": 48,
     "PROCEEDING": 43
   },
   "parts": [
-    {"path": "matter-identity-registry-v1.people.json", "type": "PERSON", "count": 120},
-    {"path": "matter-identity-registry-v1.professional-people.json", "type": "PERSON", "count": 27},
-    {"path": "matter-identity-registry-v1.joan-cruz.json", "type": "PERSON", "count": 1},
-    {"path": "matter-identity-registry-v1.la-laguna-judicial-people.json", "type": "PERSON", "count": 11},
-    {"path": "matter-identity-registry-v1.dp748-professional-people.json", "type": "PERSON", "count": 3},
-    {"path": "matter-identity-registry-v1.organisations.json", "type": "ORGANISATION", "count": 76},
-    {"path": "matter-identity-registry-v1.professional-organisations.json", "type": "ORGANISATION", "count": 7},
-    {"path": "matter-identity-registry-v1.structures.json", "type": "STRUCTURE", "count": 11},
-    {"path": "matter-identity-registry-v1.institutions.json", "type": "INSTITUTION", "count": 37},
-    {"path": "matter-identity-registry-v1.dp3205-institutions.json", "type": "INSTITUTION", "count": 1},
-    {"path": "matter-identity-registry-v1.la-laguna-judicial-institutions.json", "type": "INSTITUTION", "count": 5},
-    {"path": "matter-identity-registry-v1.court-hierarchy.json", "type": "INSTITUTION", "count": 1},
-    {"path": "matter-identity-registry-v1.proceedings.json", "type": "PROCEEDING", "count": 42},
-    {"path": "matter-identity-registry-v1.dp3205-proceedings.json", "type": "PROCEEDING", "count": 1}
+    {
+      "path": "matter-identity-registry-v1.people.json",
+      "type": "PERSON",
+      "count": 120
+    },
+    {
+      "path": "matter-identity-registry-v1.professional-people.json",
+      "type": "PERSON",
+      "count": 27
+    },
+    {
+      "path": "matter-identity-registry-v1.joan-cruz.json",
+      "type": "PERSON",
+      "count": 1
+    },
+    {
+      "path": "matter-identity-registry-v1.la-laguna-judicial-people.json",
+      "type": "PERSON",
+      "count": 11
+    },
+    {
+      "path": "matter-identity-registry-v1.dp748-professional-people.json",
+      "type": "PERSON",
+      "count": 3
+    },
+    {
+      "path": "matter-identity-registry-v1.organisations.json",
+      "type": "ORGANISATION",
+      "count": 76
+    },
+    {
+      "path": "matter-identity-registry-v1.professional-organisations.json",
+      "type": "ORGANISATION",
+      "count": 7
+    },
+    {
+      "path": "matter-identity-registry-v1.structures.json",
+      "type": "STRUCTURE",
+      "count": 11
+    },
+    {
+      "path": "matter-identity-registry-v1.institutions.json",
+      "type": "INSTITUTION",
+      "count": 37
+    },
+    {
+      "path": "matter-identity-registry-v1.dp3205-institutions.json",
+      "type": "INSTITUTION",
+      "count": 1
+    },
+    {
+      "path": "matter-identity-registry-v1.la-laguna-judicial-institutions.json",
+      "type": "INSTITUTION",
+      "count": 5
+    },
+    {
+      "path": "matter-identity-registry-v1.court-hierarchy.json",
+      "type": "INSTITUTION",
+      "count": 1
+    },
+    {
+      "path": "matter-identity-registry-v1.proceedings.json",
+      "type": "PROCEEDING",
+      "count": 42
+    },
+    {
+      "path": "matter-identity-registry-v1.dp3205-proceedings.json",
+      "type": "PROCEEDING",
+      "count": 1
+    },
+    {
+      "path": "matter-identity-registry-v1.historic-arrecife-judicial-people-20260902.json",
+      "type": "PERSON",
+      "count": 2
+    },
+    {
+      "path": "matter-identity-registry-v1.historic-arrecife-judicial-institutions-20260902.json",
+      "type": "INSTITUTION",
+      "count": 3
+    },
+    {
+      "path": "matter-identity-registry-v1.historic-las-palmas-civil-judicial-people-20260902.json",
+      "type": "PERSON",
+      "count": 1
+    },
+    {
+      "path": "matter-identity-registry-v1.historic-las-palmas-civil-judicial-institutions-20260902.json",
+      "type": "INSTITUTION",
+      "count": 1
+    }
   ]
 }
