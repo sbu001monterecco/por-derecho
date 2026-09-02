@@ -1,0 +1,102 @@
+{
+  "schema": "por-derecho.dp552-public-source-index.v1",
+  "control_id": "PD-DP552-SOURCE-INDEX-20260902-01",
+  "as_of": "2026-09-02",
+  "canonical_proceeding": "PD-SP-R-0044",
+  "master_id": "TF-CRI-011",
+  "reference": "DP 552/2025",
+  "nig": "3802343220250001820",
+  "origin_court": "Juzgado de Instrucción nº 2 de San Cristóbal de La Laguna",
+  "privacy_rule": "Public repository contains source-controlled digests and public-safe derivatives only. Private identifiers, addresses, signatures, verification codes and protected annex material remain outside the public repository.",
+  "date_conflicts": [
+    {
+      "issue": "MARCH_2025_ENLARGEMENT_PRESENTATION_DATE",
+      "primary_receipt": "2025-03-06T17:09:37 Europe/Madrid (LexNET peninsular time)",
+      "later_filing_wording": "presented 7 March 2025",
+      "rule": "Preserve both source literals until the certified court docket resolves the discrepancy."
+    }
+  ],
+  "documents": [
+    {
+      "id": "PD-DP552-DOC-001",
+      "date": "2025-02-20",
+      "title": "Denuncia presentada por Patricia Domínguez en defensa de Matkator",
+      "original_filename": "DENUNCIA PRESENTADA MATKATOR 20FEB2025.pdf",
+      "original_pages": 87,
+      "original_sha256": "2a31f0726e8cc89e35ef33ae6308704ec9e4cd855e8e73e7763bae13de1e34c5",
+      "public_derivative": "03_DP_552_2025_DENUNCIA_PATRICIA_MATKATOR_20FEB2025_EXTRACTO_PUBLICO.pdf",
+      "public_scope": "Controlled extract of source pages 1-18; remaining notarial/registry annexes retained privately.",
+      "representation_status": ["PRIVATE_PRIMARY_INDEXED", "PUBLIC_CONTROLLED_PDF_IN_LIBRARY", "PUBLIC_SEARCHABLE_DIGEST_IN_REPOSITORY"],
+      "source_class": "PARTY_COMPLAINT",
+      "proof_boundary": "Proves what was alleged and the source material presented; does not prove the allegations."
+    },
+    {
+      "id": "PD-DP552-DOC-002",
+      "date": "2025-03-06/07",
+      "title": "Ampliación de denuncia",
+      "original_filename": "20250223 Ampliacion denuncia.pdf",
+      "original_pages": 7,
+      "original_sha256": "360ab767475898d2d98bce5b52804194c173cbcbb6b91edf5f07370c1f30e73e",
+      "public_derivative": "04_DP_552_2025_AMPLIACION_ACOSTA_MATOS_06MAR2025_PUBLICA.pdf",
+      "public_scope": "Seven-page controlled public copy; identifying data suppressed.",
+      "representation_status": ["PRIMARY_FILE_INDEXED", "LEXNET_RECEIPT_LOCATED", "PUBLIC_CONTROLLED_PDF_IN_LIBRARY", "PUBLIC_SEARCHABLE_DIGEST_IN_REPOSITORY"],
+      "source_class": "FILED_PARTY_PLEADING",
+      "proof_boundary": "Allegations against named persons/entities remain allegations unless separately established."
+    },
+    {
+      "id": "PD-DP552-DOC-003",
+      "date": "2025-03-13",
+      "title": "ETJ 163/2020 — aportación de DP 552/2025 como hecho nuevo",
+      "original_filename": "250313 escrito adjuntando ampliación de la denuncia fda.pdf",
+      "original_pages": 5,
+      "original_sha256": "e83d4794c9d9c9cd02660926119db80fb2a9fefffe4c4d8566ae567efe74af98",
+      "public_derivative": "05_ETJ_163_2020_APORTACION_DP552_HECHO_NUEVO_13MAR2025_PUBLICA.pdf",
+      "public_scope": "Five-page controlled public copy.",
+      "representation_status": ["PRIMARY_FILE_INDEXED", "PUBLIC_CONTROLLED_PDF_IN_LIBRARY", "PUBLIC_SEARCHABLE_DIGEST_IN_REPOSITORY"],
+      "source_class": "RELATED_PROCEEDING_FILING",
+      "relationship": "DP552 evidence expressly presented in ETJ 163/2020 as a new fact; this does not establish judicial acceptance of its truth."
+    },
+    {
+      "id": "PD-DP711-DOC-001",
+      "date": "2025-03-17",
+      "title": "DP 711/2025 — Auto de incoación y sobreseimiento provisional",
+      "original_sha256": "4dc10f6897b363d7d8d55fc4ba3736a7b0df4b03726679bdd3e691380e3a7beb",
+      "public_derivative": "06_DP_711_2025_AUTO_INCOACION_SOBRESEIMIENTO_17MAR2025_PUBLICO.pdf",
+      "representation_status": ["PRIMARY_COURT_ACT_INDEXED", "PUBLIC_CONTROLLED_PDF_IN_LIBRARY", "PUBLIC_SEARCHABLE_DIGEST_IN_REPOSITORY"],
+      "source_class": "JUDICIAL_ORDER",
+      "identity_fact": "Header expressly records origin proceeding DP 552/2025-00 and NIG 3802343220250001820."
+    },
+    {
+      "id": "PD-DP711-DOC-002",
+      "date": "2025-04-04",
+      "title": "DP 711/2025 — Providencia de personación",
+      "original_sha256": "6dfe33c885807bd1d83e274be9f0ce9f6da5a8b2d7d46f931b3f0ce76017184e",
+      "public_derivative": "07_DP_711_2025_PROVIDENCIA_PERSONACION_04APR2025_PUBLICA.pdf",
+      "representation_status": ["PRIMARY_COURT_ACT_INDEXED", "PUBLIC_CONTROLLED_PDF_IN_LIBRARY", "PUBLIC_SEARCHABLE_DIGEST_IN_REPOSITORY"],
+      "source_class": "JUDICIAL_PROVIDENCIA"
+    },
+    {
+      "id": "PD-DP711-DOC-003",
+      "date": "2025-09-25",
+      "title": "DP 711/2025 — Auto que desestima reforma",
+      "original_sha256": "180c73e884b194ea6b47ef0051fb1403258078d52c4ceefdc234d31ca86a9a84",
+      "public_derivative": "08_DP_711_2025_AUTO_DESESTIMA_REFORMA_25SEP2025_PUBLICO.pdf",
+      "representation_status": ["PRIMARY_COURT_ACT_INDEXED", "PUBLIC_CONTROLLED_PDF_IN_LIBRARY", "PUBLIC_SEARCHABLE_DIGEST_IN_REPOSITORY"],
+      "source_class": "JUDICIAL_ORDER",
+      "appeal_boundary": "Appeal preparation is documented in October 2025 and a LexNET package dated 6 October is located; no appellate outcome has been located in the controlled corpus."
+    },
+    {
+      "id": "PD-ETJ163-DOC-20240920",
+      "date": "2024-09-20",
+      "title": "ETJ 163/2020 — solicitud de nulidad y suspensión",
+      "original_filename": "escrito solicitando nulidad.pdf",
+      "original_pages": 12,
+      "original_sha256": "37754c7883e9cefaa21d30d51e8287f734bf37490e5844145107c068130de2ff",
+      "public_derivative": "01_ETJ_163_2020_SOLICITUD_NULIDAD_SUSPENSION_20SEP2024_PUBLICA.pdf",
+      "source_class": "RELATED_PROCEEDING_FILING",
+      "relationship": "Predates DP 552/2025 and is expressly cited by the 13 March 2025 ETJ filing as part of the enforcement chronology."
+    }
+  ],
+  "binary_publication_state": "CONTROLLED_PUBLIC_PDFS_EXIST_IN_CHATGPT_LIBRARY; repository binary upload remains a separate publication operation. Their hashes and searchable public-safe representations are controlled here so absence of a binary on GitHub is not mistaken for source absence.",
+  "continuity_rule": "Successor threads must start from this index, the dedicated pages, the relationship graph and the DP552/DP711 handover before rescanning email or Library sources."
+}
