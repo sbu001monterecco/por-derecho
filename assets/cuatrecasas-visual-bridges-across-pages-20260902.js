@@ -120,3 +120,14 @@
   };
   ensureAtlas();
 })();
+
+(() => {
+  const current = document.currentScript;
+  if (!current) return;
+  if (document.querySelector('script[data-cuatrecasas-visual-architecture-v2-loader]')) return;
+  const visual = document.createElement('script');
+  visual.src = new URL('cuatrecasas-visual-architecture-v2-20260902.js?v=20260902c', current.src).href;
+  visual.async = false;
+  visual.setAttribute('data-cuatrecasas-visual-architecture-v2-loader', '20260902c');
+  document.head.appendChild(visual);
+})();

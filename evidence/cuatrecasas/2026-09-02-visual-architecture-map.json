@@ -1,0 +1,52 @@
+{
+  "record_type": "cuatrecasas_visual_architecture_map",
+  "date": "2026-09-02",
+  "status": "IMPLEMENTED_ON_FEATURE_BRANCH_PENDING_PR",
+  "continuity_base": {
+    "main_sha_before_work": "dbfcd6eedbf4924616c836a984d8b624fd24f19d",
+    "predecessor_prs": [1359, 1360, 1361, 1362, 1363, 1364],
+    "rule": "Preserve later continuity work; supersede the English-only bitmap/runtime placement through a localized vector v2 renderer without deleting predecessor assets."
+  },
+  "canonical_assets": {
+    "en": "assets/cuatrecasas-visual-bridge-atlas-en-20260902.svg",
+    "es": "assets/cuatrecasas-visual-bridge-atlas-es-20260902.svg",
+    "renderer": "assets/cuatrecasas-visual-architecture-v2-20260902.js",
+    "legacy_assets_preserved": [
+      "assets/cuatrecasas-visual-bridge-atlas-data-20260902.js",
+      "assets/cuatrecasas-visual-bridge-atlas-20260902.js",
+      "assets/cuatrecasas-visual-bridges-across-pages-20260902.js"
+    ]
+  },
+  "visuals": {
+    "A": "Aweswell mandate -> Sun Park/hotel-recovery perimeter -> LPB Concurso 36/2012 as one workstream -> fees/pagares/Matkator -> ETJ 163/2020 -> RIC/CNMV/later funding",
+    "B": "finca 8,584 current controlled remate object -> finca 8,588 historical Matkator property -> other Matkator assets/rights only if proved and attachable -> Aweswell corporate/economic firewall",
+    "C": "documented client relationship -> integrated mandate -> invoices/WIP/pagares -> Matkator executed debtor -> 17 Oct 2024 adjudication request -> open mandate-coherence question",
+    "D": "pre-existing Sun Park mandate -> 8 Mar 2021 direct notice -> 17 Mar 2021 communications -> RIC/CNMV record -> 2025/2026 escalations -> later funding under temporal firewall"
+  },
+  "placement_map": {
+    "main_cuatrecasas_en_es": ["A", "C", "D"],
+    "mandate_ric_bridge_en_es": ["A", "B", "C", "D"],
+    "etj_civil_en_es": ["C", "B"],
+    "matkator_asset_rights_en_es": ["B"],
+    "ric_cnmv_pages": ["D"],
+    "reverse_engineering_360_en_es": ["A", "B"],
+    "unitary_record_en_es": ["A"]
+  },
+  "governance_boundaries": [
+    "FACT -> INFERENCE -> ALLEGATION -> OPEN QUESTION remains controlling.",
+    "Historical title does not prove current title.",
+    "Finca 8,584 is the one current controlled remate/adjudication object; finca 8,588 is not presently identified as an ETJ auction object.",
+    "Potential debtor-wide enforcement does not prove that additional Matkator assets are currently attached or auctioned.",
+    "Matkator is not Aweswell; the Aweswell link is an economic/equity-value/control gateway, not automatic veil-piercing.",
+    "Reservation of a right to cede remate does not prove a completed cession.",
+    "The 2021 RIC/CNMV notice does not prove knowledge in 2021 of later incentive/FEDER/funding records that did not yet exist.",
+    "The diagrams are illustrative navigation/reconstruction assets and are not independent evidence."
+  ],
+  "accessibility_and_navigation": {
+    "localized_assets": true,
+    "localized_aria_labels": true,
+    "clickable_panel_bridges": true,
+    "responsive_single_column_below_px": 820,
+    "caption_boundary_present": true
+  }
+}
