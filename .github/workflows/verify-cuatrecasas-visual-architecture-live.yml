@@ -1,0 +1,120 @@
+name: Verify Cuatrecasas visual architecture live
+
+on:
+  pull_request:
+    paths:
+      - 'assets/cuatrecasas-visual-bridge-atlas-en-20260902.svg'
+      - 'assets/cuatrecasas-visual-bridge-atlas-es-20260902.svg'
+      - 'assets/cuatrecasas-visual-architecture-v2-20260902.js'
+      - 'assets/cuatrecasas-visual-bridges-across-pages-20260902.js'
+      - 'assets/cuatrecasas-mandate-ric-inbound-20260902.js'
+      - 'assets/site.js'
+      - 'en/cuatrecasas-sun-park/**'
+      - 'en/cuatrecasas-mandate-ric-continuity/**'
+      - 'en/cuatrecasas-dp748-civil-action/**'
+      - 'en/matkator-asset-rights-register/**'
+      - 'en/reverse-engineering-360-sun-park-chain/**'
+      - 'en/unitary-record/**'
+      - 'en/ric-private-equity-sun-park/**'
+      - 'en/ricpe-cnmv-dossier-2021/**'
+      - 'en/same-hotel-multiple-financial-lives/**'
+      - 'es/cuatrecasas-sun-park/**'
+      - 'es/cuatrecasas-mandato-continuidad-ric/**'
+      - 'es/cuatrecasas-dp748-accion-civil/**'
+      - 'es/registro-activos-derechos-matkator/**'
+      - 'es/ingenieria-inversa-360-cadena-sun-park/**'
+      - 'es/registro-unitario/**'
+      - 'es/ric-private-equity-sun-park/**'
+      - 'es/ricpe-cnmv-dossier-2021/**'
+      - 'es/mismo-hotel-multiples-vidas-financieras/**'
+      - 'deployment-probes/cuatrecasas-visual-architecture-20260902.json'
+      - 'evidence/cuatrecasas/2026-09-02-visual-architecture-map.json'
+      - 'publication-manifests/cuatrecasas-visual-architecture-20260902.json'
+      - 'scripts/verify_cuatrecasas_visual_architecture.py'
+      - '.github/workflows/verify-cuatrecasas-visual-architecture-live.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'assets/cuatrecasas-visual-bridge-atlas-en-20260902.svg'
+      - 'assets/cuatrecasas-visual-bridge-atlas-es-20260902.svg'
+      - 'assets/cuatrecasas-visual-architecture-v2-20260902.js'
+      - 'assets/cuatrecasas-visual-bridges-across-pages-20260902.js'
+      - 'assets/cuatrecasas-mandate-ric-inbound-20260902.js'
+      - 'assets/site.js'
+      - 'en/cuatrecasas-sun-park/**'
+      - 'en/cuatrecasas-mandate-ric-continuity/**'
+      - 'en/cuatrecasas-dp748-civil-action/**'
+      - 'en/matkator-asset-rights-register/**'
+      - 'en/reverse-engineering-360-sun-park-chain/**'
+      - 'en/unitary-record/**'
+      - 'en/ric-private-equity-sun-park/**'
+      - 'en/ricpe-cnmv-dossier-2021/**'
+      - 'en/same-hotel-multiple-financial-lives/**'
+      - 'es/cuatrecasas-sun-park/**'
+      - 'es/cuatrecasas-mandato-continuidad-ric/**'
+      - 'es/cuatrecasas-dp748-accion-civil/**'
+      - 'es/registro-activos-derechos-matkator/**'
+      - 'es/ingenieria-inversa-360-cadena-sun-park/**'
+      - 'es/registro-unitario/**'
+      - 'es/ric-private-equity-sun-park/**'
+      - 'es/ricpe-cnmv-dossier-2021/**'
+      - 'es/mismo-hotel-multiples-vidas-financieras/**'
+      - 'deployment-probes/cuatrecasas-visual-architecture-20260902.json'
+      - 'evidence/cuatrecasas/2026-09-02-visual-architecture-map.json'
+      - 'publication-manifests/cuatrecasas-visual-architecture-20260902.json'
+      - 'scripts/verify_cuatrecasas_visual_architecture.py'
+      - '.github/workflows/verify-cuatrecasas-visual-architecture-live.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: cuatrecasas-visual-architecture-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  source-integrity:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - name: Confirm descendant of PR 1365 merge
+        run: git merge-base --is-ancestor 2a26e4a201099633491ba24741c46baade1c1eea HEAD
+      - name: Validate renderer syntax
+        run: node --check assets/cuatrecasas-visual-architecture-v2-20260902.js
+      - name: Verify source architecture
+        run: >-
+          python3 scripts/verify_cuatrecasas_visual_architecture.py
+          --mode source
+          --output artifacts/cuatrecasas-visual-architecture/source-verification.json
+      - name: Preserve source result in workflow log
+        if: always()
+        run: cat artifacts/cuatrecasas-visual-architecture/source-verification.json || true
+
+  public-pages:
+    if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
+    needs: source-integrity
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - name: Confirm descendant of PR 1365 merge
+        run: git merge-base --is-ancestor 2a26e4a201099633491ba24741c46baade1c1eea HEAD
+      - name: Verify public Pages propagation
+        run: >-
+          python3 scripts/verify_cuatrecasas_visual_architecture.py
+          --mode live
+          --attempts 72
+          --interval 10
+          --timeout 20
+          --output artifacts/cuatrecasas-visual-architecture/live-verification.json
+      - name: Preserve live result in workflow log
+        if: always()
+        run: cat artifacts/cuatrecasas-visual-architecture/live-verification.json || true
