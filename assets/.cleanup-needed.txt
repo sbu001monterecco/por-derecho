@@ -1,0 +1,1 @@
+Temporary marker files created during visual bridge release should be removed before merge.
