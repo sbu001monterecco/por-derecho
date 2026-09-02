@@ -54,6 +54,11 @@ jobs:
           python3 scripts/_render_proceeding_authority_backlinks_20260902.py
           python3 scripts/_sync_current_caepr_counts_20260902.py
 
+      - name: Trace residual duplicate proceeding ID
+        run: |
+          echo 'Residual LZ-CIV-050 occurrences after canonical reconciliation:'
+          grep -R -n --exclude-dir=.git --exclude='*.html' --exclude='sitemap.xml' 'LZ-CIV-050' archive assets/data scripts ops || true
+
       - name: Rebuild legacy proceedings projections used by the site map
         run: |
           python3 scripts/build_proceedings_case_prism_v2.py
