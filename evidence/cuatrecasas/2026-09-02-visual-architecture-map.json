@@ -1,10 +1,12 @@
 {
   "record_type": "cuatrecasas_visual_architecture_map",
   "date": "2026-09-02",
-  "status": "IMPLEMENTED_ON_FEATURE_BRANCH_PENDING_PR",
+  "status": "MERGED_PR1365_LIVE_GATE_PENDING",
   "continuity_base": {
     "main_sha_before_work": "dbfcd6eedbf4924616c836a984d8b624fd24f19d",
     "predecessor_prs": [1359, 1360, 1361, 1362, 1363, 1364],
+    "visual_architecture_pr": 1365,
+    "visual_architecture_merge_sha": "2a26e4a201099633491ba24741c46baade1c1eea",
     "rule": "Preserve later continuity work; supersede the English-only bitmap/runtime placement through a localized vector v2 renderer without deleting predecessor assets."
   },
   "canonical_assets": {
@@ -48,5 +50,16 @@
     "clickable_panel_bridges": true,
     "responsive_single_column_below_px": 820,
     "caption_boundary_present": true
+  },
+  "post_merge_closeout": {
+    "source_pr_merged": true,
+    "source_pr": 1365,
+    "merge_sha": "2a26e4a201099633491ba24741c46baade1c1eea",
+    "source_ci": "GREEN_ON_CORRECTED_PR_HEAD_BEFORE_MERGE",
+    "live_verification": "PENDING_POST_MERGE_GATE",
+    "deployment_probe": "deployment-probes/cuatrecasas-visual-architecture-20260902.json",
+    "verifier": "scripts/verify_cuatrecasas_visual_architecture.py",
+    "workflow": ".github/workflows/verify-cuatrecasas-visual-architecture-live.yml",
+    "rule": "Do not claim LIVE_VERIFIED until the public-pages job confirms the probe, both localized atlases, the loader/renderer chain and all expected bilingual routes on the public Pages host."
   }
 }
