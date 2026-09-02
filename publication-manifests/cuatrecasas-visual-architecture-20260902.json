@@ -53,6 +53,13 @@
     "ric_cnmv_and_financial_lives": ["D"]
   },
   "validation": {
+    "evidence": [
+      "PR #1365 corrected-head source validation completed successfully before merge: repository preservation, publication integrity and bilingual audience-experience checks were green after the missing EN/ES RICPE/CNMV dossier targets were added.",
+      "PR #1365 branch preparation rendered both canonical localized SVG atlases successfully and the v2 JavaScript renderer passed node --check.",
+      "PR #1365 pre-merge compare against current main recorded behind_by=0 with no deletions or renames.",
+      "PR #1365 merged to main at 2a26e4a201099633491ba24741c46baade1c1eea on 2026-09-02.",
+      "The post-merge public Pages state remains deliberately unclaimed until the dedicated deployment probe and live verifier added by the closeout PR pass."
+    ],
     "local_source_checks": [
       "Both canonical SVG atlases rendered successfully during PR #1365 branch preparation.",
       "The v2 JavaScript renderer passed node --check during PR #1365 branch preparation.",
