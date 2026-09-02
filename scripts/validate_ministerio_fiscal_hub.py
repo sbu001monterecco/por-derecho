@@ -69,7 +69,7 @@ def main() -> None:
         for mid in mids:
             by_master[mid].append(record["id"])
 
-    fiscal_files = graph.get("fiscal_files", [])
+    fiscal_files = graph.get("fiscalia_files", [])
     if graph.get("coverage", {}).get("fiscalia_exact_files") != 21:
         raise AssertionError("Fiscalía exact-file denominator changed; reconcile source before publishing")
     if graph.get("coverage", {}).get("fiscalia_unresolved_references") != 3:
