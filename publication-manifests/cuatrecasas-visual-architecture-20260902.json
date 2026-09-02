@@ -1,11 +1,12 @@
 {
   "publication_id": "CUATRECASAS-VISUAL-ARCHITECTURE-20260902",
   "owner": "Por Derecho / Project Sun Rock",
-  "current_state": "PR_OPEN",
+  "current_state": "MERGED_PR1365_LIVE_GATE_PENDING",
   "control_date": "2026-09-02",
   "publication_type": "bilingual visual navigation and reconstruction layer across Cuatrecasas, Matkator, ETJ, 360-degree and RIC/CNMV routes, including the dedicated March 2021 RICPE/CNMV notice node",
   "base_main_sha": "dbfcd6eedbf4924616c836a984d8b624fd24f19d",
   "pull_request": 1365,
+  "merge_sha": "2a26e4a201099633491ba24741c46baade1c1eea",
   "predecessor_prs": [1359, 1360, 1361, 1362, 1363, 1364],
   "expected_routes": {
     "en": [
@@ -53,16 +54,17 @@
   },
   "validation": {
     "local_source_checks": [
-      "Both canonical SVG atlases rendered successfully during branch preparation.",
-      "The v2 JavaScript renderer passed node --check during branch preparation.",
-      "Initial main-to-feature compare before PR showed behind_by=0 and no deletions or renames.",
-      "First PR publication-integrity run passed repository-preservation and publication-integrity checks but audience-experience exposed two pre-existing broken EN/ES links to the missing ricpe-cnmv-dossier-2021 node.",
-      "The intended bilingual ricpe-cnmv-dossier-2021 source-navigation node was then added rather than masking the broken links with a broader redirect; CI must rerun on the corrected head."
+      "Both canonical SVG atlases rendered successfully during PR #1365 branch preparation.",
+      "The v2 JavaScript renderer passed node --check during PR #1365 branch preparation.",
+      "Initial main-to-feature compare before PR #1365 showed behind_by=0 and no deletions or renames.",
+      "First PR #1365 publication-integrity run passed repository-preservation and publication-integrity checks but audience-experience exposed two pre-existing broken EN/ES links to the missing ricpe-cnmv-dossier-2021 node.",
+      "The intended bilingual ricpe-cnmv-dossier-2021 source-navigation node was added rather than masking the broken links with a broader redirect; corrected-head CI completed successfully before merge.",
+      "PR #1365 merged to main at 2a26e4a201099633491ba24741c46baade1c1eea."
     ],
-    "publication_integrity": "PENDING_CORRECTED_HEAD_CI",
-    "repository_preservation": "PENDING_CORRECTED_HEAD_CI",
-    "audience_experience": "PENDING_CORRECTED_HEAD_CI",
-    "rendered_checks": "PENDING_CORRECTED_HEAD_CI_AND_POST_DEPLOYMENT"
+    "publication_integrity": "SUCCESS_CORRECTED_PR1365_HEAD",
+    "repository_preservation": "SUCCESS_CORRECTED_PR1365_HEAD",
+    "audience_experience": "SUCCESS_CORRECTED_PR1365_HEAD",
+    "rendered_checks": "SOURCE_VALIDATED_POST_MERGE_LIVE_GATE_PENDING"
   },
   "evidence_and_legal_boundaries": [
     "Visuals and the 2021 notice page are illustrative navigation/reconstruction aids, not independent evidence.",
@@ -77,11 +79,15 @@
     "FACT -> INFERENCE -> ALLEGATION -> OPEN QUESTION remains controlling."
   ],
   "live_verification": {
-    "status": "NOT_YET_CLAIMED",
-    "note": "PR_OPEN records branch/source preservation only. CI_GREEN, MERGED, DEPLOYED and LIVE_VERIFIED require their separate objective gates."
+    "status": "PENDING_POST_MERGE_GATE",
+    "deployment_probe": "deployment-probes/cuatrecasas-visual-architecture-20260902.json",
+    "verifier": "scripts/verify_cuatrecasas_visual_architecture.py",
+    "workflow": ".github/workflows/verify-cuatrecasas-visual-architecture-live.yml",
+    "minimum_visual_merge": "2a26e4a201099633491ba24741c46baade1c1eea",
+    "required_gate": "Public Pages must serve the deployment probe, both localized atlases, the loader/renderer chain and all 18 expected bilingual routes before LIVE_VERIFIED is recorded."
   },
   "thread_deletion_audit": {
     "status": "NOT_YET_DELETION_SAFE",
-    "note": "Deletion safety requires merge, deployment/live evidence, preserved open gaps and a post-deployment continuity record."
+    "note": "The substantive visual architecture is merged and source-validated. Deletion safety still requires the new post-merge public Pages gate to pass and its result to be preserved in the continuity record."
   }
 }
