@@ -30,7 +30,7 @@ on:
       - 'assets/data/justice-professionals-evidence-production-queue-v1.json'
       - 'assets/data/la-laguna-judicial-actors-gap-closure-audit-v1.json'
       - 'scripts/validate_caret_public_surface.py'
-      - 'scripts/validate_alberto_meeting-point-first-hop-caret.py'
+      - 'scripts/validate_alberto_meeting_point_first_hop_caret.py'
       - 'scripts/validate_operational_identity_registry.py'
       - 'scripts/validate_publication_integrity.py'
       - '.github/governance/CAEPR_PUBLIC_SURFACE_PROPAGATION_AND_CONTINUITY_GATE_02SEP2026.md'
