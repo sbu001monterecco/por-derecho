@@ -1,27 +1,32 @@
 #!/usr/bin/env python3
 """Validate CAEPR identity propagation to public editorial surfaces.
 
-The validator deliberately separates:
+The validator keeps five layers separate:
 
-* canonical identity admission in the federated CAEPR registry;
-* source-specific act/capacity attribution;
-* public occurrence markup and canonical linking; and
-* advisory archive-wide discovery of likely unmarked occurrences.
+1. canonical identity admission in the federated CAEPR registry;
+2. source-specific act and capacity attribution;
+3. public occurrence markup and canonical linking;
+4. historical/successor rendered-surface snapshots; and
+5. deployment and live readback.
 
 Strict failures are limited to the finite surfaces declared in
 ``assets/data/caret-public-surface-coverage-v1.json`` and to objectively invalid
-``data-caepr-id`` declarations. Archive-wide exact-name discoveries are reported
-as advisory candidates unless ``--fail-on-advisory`` is supplied.
+``data-caepr-id`` declarations. Archive-wide exact-name discoveries and
+successor-hash drift are reported as diagnostics unless separately promoted to a
+finite strict control.
 """
 
 from __future__ import annotations
 
 import argparse
+import hashlib
 import html
 import json
 import re
 import sys
+import unicodedata
 from collections import Counter
+from html.parser import HTMLParser
 from pathlib import Path
 from typing import Any, Iterable
 
@@ -31,22 +36,75 @@ CONTROL_PATH = DATA / "caret-public-surface-coverage-v1.json"
 REGISTRY_PATH = DATA / "matter-identity-registry-v1.json"
 QUEUE_PATH = DATA / "justice-professionals-evidence-production-queue-v1.json"
 LA_LAGUNA_GAPS_PATH = DATA / "la-laguna-judicial-actors-gap-closure-audit-v1.json"
+FIRST_HOP_PATH = DATA / "caepr-caret-alberto-meeting-point-first-hop-v1.json"
+DP748_SUCCESSOR_PATH = ROOT / "publication-manifests" / "dp748-appeal-reopening-source-control-20260901.json"
+AUTHORITY_SUCCESSOR_PATH = ROOT / "publication-manifests" / "unitary-public-authority-communications-20260901.json"
 
 CONTROL_SCHEMA = "por-derecho.caret-public-surface-coverage.v1"
 REGISTRY_SCHEMA = "por-derecho.matter-identity-registry.v1"
 PART_SCHEMA = "por-derecho.matter-identity-registry.part.v1"
 
+# These states expressly block a visible confirmed caret. Older canonical
+# records may have no explicit identity_resolution field; that legacy absence is
+# not retrospectively treated as a failure. Finite strict rows may still require
+# an explicit CARET_CONFIRMED state.
+EXPLICITLY_UNCONFIRMED_STATES = {
+    "CARET_PENDING",
+    "CARET_SUSPENDED",
+    "CARET_PENDING_EXACT_ORGAN_AND_CERTIFIED_DOCKET",
+    "CONTROLLED_PERIMETER_LABEL_EXACT_ENTITY_MAY_REQUIRE_SOURCE",
+    "REFERENCED_LEGAL_FORM_VARIANT_UNRESOLVED",
+}
+
 TAG_RE = re.compile(r"<[^>]+>", re.S)
 SCRIPT_STYLE_RE = re.compile(r"<(script|style)\b[^>]*>.*?</\1>", re.I | re.S)
-DECLARATION_TAG_RE = re.compile(r"<[^>]*\bdata-caepr-id\s*=\s*([\"'])(?P<id>[^\"']+)\1[^>]*>", re.I | re.S)
+DECLARATION_TAG_RE = re.compile(
+    r"<[^>]*\bdata-caepr-id\s*=\s*([\"'])(?P<id>[^\"']+)\1[^>]*>",
+    re.I | re.S,
+)
 DECLARED_ELEMENT_RE = re.compile(
     r"<(?P<tag>a|span|strong|div|article|li|p)\b"
     r"(?P<attrs>[^>]*\bdata-caepr-id\s*=\s*([\"'])(?P<id>[^\"']+)\3[^>]*)>"
     r"(?P<body>.*?)</(?P=tag)>",
     re.I | re.S,
 )
-ATTRIBUTE_RE = re.compile(r"(?P<name>[A-Za-z_:][-A-Za-z0-9_:.]*)\s*=\s*([\"'])(?P<value>.*?)\2", re.S)
+ATTRIBUTE_RE = re.compile(
+    r"(?P<name>[A-Za-z_:][-A-Za-z0-9_:.]*)\s*=\s*([\"'])(?P<value>.*?)\2",
+    re.S,
+)
 CARET_RE = re.compile(r"<sup\b[^>]*>\s*\^\s*</sup>", re.I | re.S)
+
+
+class MainSurface(HTMLParser):
+    """Extract normalized rendered ``main`` text like the historical gate."""
+
+    def __init__(self) -> None:
+        super().__init__(convert_charrefs=True)
+        self.main_depth = 0
+        self.skip_depth = 0
+        self.parts: list[str] = []
+
+    def handle_starttag(self, tag: str, attrs_list: list[tuple[str, str | None]]) -> None:
+        attrs = {key: value or "" for key, value in attrs_list}
+        if tag == "main":
+            self.main_depth += 1
+        if self.main_depth and (
+            self.skip_depth
+            or tag in {"script", "style", "template", "noscript"}
+            or "hidden" in attrs
+            or attrs.get("aria-hidden") == "true"
+        ):
+            self.skip_depth += 1
+
+    def handle_endtag(self, tag: str) -> None:
+        if self.main_depth and self.skip_depth:
+            self.skip_depth -= 1
+        if tag == "main":
+            self.main_depth -= 1
+
+    def handle_data(self, data: str) -> None:
+        if self.main_depth and not self.skip_depth:
+            self.parts.append(data)
 
 
 def require(condition: bool, message: str, errors: list[str]) -> None:
@@ -70,6 +128,19 @@ def safe_repo_path(relative: str, errors: list[str], label: str) -> Path | None:
         errors.append(f"Unsafe {label} path: {relative!r}")
         return None
     return ROOT / candidate
+
+
+def normalize(value: str) -> str:
+    return re.sub(r"\s+", " ", unicodedata.normalize("NFKC", html.unescape(value))).strip()
+
+
+def git_blob_sha1(payload: bytes) -> str:
+    header = f"blob {len(payload)}\0".encode("ascii")
+    return hashlib.sha1(header + payload).hexdigest()
+
+
+def sha256_file(path: Path) -> str:
+    return hashlib.sha256(path.read_bytes()).hexdigest()
 
 
 def load_registry(errors: list[str]) -> tuple[dict[str, Any], dict[str, dict[str, Any]]]:
@@ -112,12 +183,19 @@ def load_registry(errors: list[str]) -> tuple[dict[str, Any], dict[str, dict[str
             records[record_id] = record
 
     declared_total = index.get("counts", {}).get("total")
-    require(len(records) == declared_total, f"Registry total mismatch: loaded {len(records)}, declared {declared_total}", errors)
+    require(
+        len(records) == declared_total,
+        f"Registry total mismatch: loaded {len(records)}, declared {declared_total}",
+        errors,
+    )
     return index, records
 
 
 def parse_attributes(raw: str) -> dict[str, str]:
-    return {match.group("name").casefold(): html.unescape(match.group("value")) for match in ATTRIBUTE_RE.finditer(raw)}
+    return {
+        match.group("name").casefold(): html.unescape(match.group("value"))
+        for match in ATTRIBUTE_RE.finditer(raw)
+    }
 
 
 def text_content(fragment: str) -> str:
@@ -139,6 +217,10 @@ def iter_declared_elements(document: str) -> Iterable[dict[str, Any]]:
         }
 
 
+def registry_state(record: dict[str, Any]) -> str:
+    return str(record.get("identity_resolution") or record.get("status") or "")
+
+
 def validate_all_declarations(
     public_files: list[Path], records: dict[str, dict[str, Any]], errors: list[str]
 ) -> tuple[int, Counter[str]]:
@@ -152,8 +234,11 @@ def validate_all_declarations(
         for tag_match in DECLARATION_TAG_RE.finditer(document):
             declaration_count += 1
             record_id = tag_match.group("id")
-            record = records.get(record_id)
-            require(record is not None, f"{relative}: unknown data-caepr-id {record_id}", errors)
+            require(
+                records.get(record_id) is not None,
+                f"{relative}: unknown data-caepr-id {record_id}",
+                errors,
+            )
 
         for element in iter_declared_elements(document):
             record_id = element["id"]
@@ -161,33 +246,52 @@ def validate_all_declarations(
             if record is None:
                 continue
             declared_state = element["attrs"].get("data-caret-state", "")
-            registry_state = str(record.get("identity_resolution") or record.get("status") or "")
+            state = registry_state(record)
             if declared_state:
                 state_counts[declared_state] += 1
             if declared_state == "CARET_CONFIRMED":
                 require(
-                    registry_state == "CARET_CONFIRMED",
-                    f"{relative}: {record_id} declared CARET_CONFIRMED but registry state is {registry_state or 'unset'}",
+                    state not in EXPLICITLY_UNCONFIRMED_STATES,
+                    f"{relative}: {record_id} is explicitly {state} but is declared CARET_CONFIRMED",
                     errors,
                 )
-            if element["has_caret"] and registry_state in {"CARET_PENDING", "CARET_SUSPENDED"}:
+            if element["has_caret"] and state in EXPLICITLY_UNCONFIRMED_STATES:
                 errors.append(
-                    f"{relative}: {record_id} is {registry_state} but its declared element renders a visible caret"
+                    f"{relative}: {record_id} is explicitly {state} but its declared element renders a visible caret"
                 )
     return declaration_count, state_counts
 
 
+def strict_surface_snapshot(path: Path, surface: dict[str, Any]) -> dict[str, Any]:
+    payload = path.read_bytes()
+    document = payload.decode("utf-8", errors="replace")
+    parser = MainSurface()
+    parser.feed(document)
+    main_text = normalize(" ".join(parser.parts))
+    return {
+        "path": path.relative_to(ROOT).as_posix(),
+        "route": surface.get("route"),
+        "language": surface.get("language"),
+        "first_hop_node_id": surface.get("first_hop_node_id", "AM357-N07"),
+        "normalized_characters": len(main_text),
+        "normalized_main_sha256": hashlib.sha256(main_text.encode("utf-8")).hexdigest(),
+        "file_sha256": hashlib.sha256(payload).hexdigest(),
+        "git_blob_sha1": git_blob_sha1(payload),
+    }
+
+
 def validate_strict_surfaces(
     control: dict[str, Any], records: dict[str, dict[str, Any]], errors: list[str]
-) -> tuple[int, int]:
+) -> tuple[int, int, list[dict[str, Any]]]:
     surface_count = 0
     row_count = 0
     languages: dict[str, set[str]] = {}
+    snapshots: list[dict[str, Any]] = []
 
     strict_surfaces = control.get("strict_surfaces")
     if not isinstance(strict_surfaces, list) or not strict_surfaces:
         errors.append("Control strict_surfaces must be a non-empty array")
-        return 0, 0
+        return 0, 0, snapshots
 
     for surface in strict_surfaces:
         if not isinstance(surface, dict):
@@ -204,6 +308,7 @@ def validate_strict_surfaces(
             continue
         document = path.read_text(encoding="utf-8", errors="replace")
         declared = list(iter_declared_elements(document))
+        snapshots.append(strict_surface_snapshot(path, surface))
         surface_count += 1
         surface_ids: set[str] = set()
 
@@ -232,14 +337,21 @@ def validate_strict_surfaces(
                 continue
             surface_ids.add(record_id)
 
-            require(required_state == "CARET_CONFIRMED", f"{relative}: strict state must be CARET_CONFIRMED for {record_id}", errors)
+            require(
+                required_state == "CARET_CONFIRMED",
+                f"{relative}: strict state must be CARET_CONFIRMED for {record_id}",
+                errors,
+            )
             require(
                 record.get("identity_resolution") == "CARET_CONFIRMED",
-                f"{relative}: {record_id} is not CARET_CONFIRMED in the registry",
+                f"{relative}: {record_id} is not explicitly CARET_CONFIRMED in the registry",
                 errors,
             )
             if isinstance(display_name, str):
-                allowed_names = {str(record.get("name", "")), *[str(alias) for alias in record.get("aliases", [])]}
+                allowed_names = {
+                    str(record.get("name", "")),
+                    *[str(alias) for alias in record.get("aliases", [])],
+                }
                 require(
                     display_name in allowed_names,
                     f"{relative}: display_name {display_name!r} is not canonical or an alias for {record_id}",
@@ -287,7 +399,7 @@ def validate_strict_surfaces(
             f"Strict ES/EN identity parity mismatch: es={sorted(languages['es'])}, en={sorted(languages['en'])}",
             errors,
         )
-    return surface_count, row_count
+    return surface_count, row_count, snapshots
 
 
 def validate_source_gap_reuse(
@@ -413,13 +525,103 @@ def advisory_candidates(
     return candidates
 
 
+def successor_hash_diagnostics() -> dict[str, Any]:
+    diagnostics: dict[str, Any] = {}
+    for label, path in (
+        ("dp748_successor", DP748_SUCCESSOR_PATH),
+        ("authority_successor", AUTHORITY_SUCCESSOR_PATH),
+    ):
+        if not path.is_file():
+            diagnostics[label] = {"error": f"missing {path.relative_to(ROOT)}"}
+            continue
+        manifest = load_json(path)
+        rows: list[dict[str, Any]] = []
+        transition = manifest.get("historical_transition", {})
+        for category in ("changed_resources", "new_resources"):
+            for item in transition.get(category, []) or []:
+                if not isinstance(item, dict) or not item.get("resource"):
+                    continue
+                resource = ROOT / str(item["resource"])
+                current = sha256_file(resource) if resource.is_file() else None
+                stored = item.get("release_sha256")
+                rows.append(
+                    {
+                        "category": category,
+                        "resource": item.get("resource"),
+                        "stored_release_sha256": stored,
+                        "current_sha256": current,
+                        "matches_current": stored == current,
+                    }
+                )
+        for resource_name, stored in (manifest.get("release_critical_sha256", {}) or {}).items():
+            resource = ROOT / str(resource_name)
+            current = sha256_file(resource) if resource.is_file() else None
+            rows.append(
+                {
+                    "category": "release_critical_sha256",
+                    "resource": resource_name,
+                    "stored_release_sha256": stored,
+                    "current_sha256": current,
+                    "matches_current": stored == current,
+                }
+            )
+        diagnostics[label] = {
+            "manifest": path.relative_to(ROOT).as_posix(),
+            "publication_id": manifest.get("publication_id"),
+            "current_state": manifest.get("current_state"),
+            "mismatch_count": sum(not row["matches_current"] for row in rows),
+            "rows": rows,
+        }
+    return diagnostics
+
+
+def historical_first_hop_snapshot_diagnostics(
+    successor_snapshots: list[dict[str, Any]],
+) -> list[dict[str, Any]]:
+    if not FIRST_HOP_PATH.is_file():
+        return [{"error": f"missing {FIRST_HOP_PATH.relative_to(ROOT)}"}]
+    payload = load_json(FIRST_HOP_PATH)
+    historic = {
+        (item.get("node_id"), item.get("language")): item
+        for item in payload.get("rendered_occurrence_control", {}).get("route_snapshots", [])
+        if isinstance(item, dict)
+    }
+    rows = []
+    for snapshot in successor_snapshots:
+        key = (snapshot.get("first_hop_node_id"), snapshot.get("language"))
+        predecessor = historic.get(key, {})
+        rows.append(
+            {
+                **snapshot,
+                "predecessor_normalized_characters": predecessor.get("normalized_characters"),
+                "predecessor_normalized_main_sha256": predecessor.get("normalized_main_sha256"),
+                "changed_from_predecessor": (
+                    predecessor.get("normalized_characters") != snapshot.get("normalized_characters")
+                    or predecessor.get("normalized_main_sha256") != snapshot.get("normalized_main_sha256")
+                ),
+            }
+        )
+    return rows
+
+
 def validate_control_shape(control: dict[str, Any], errors: list[str]) -> None:
     require(control.get("schema") == CONTROL_SCHEMA, "Unexpected caret public-surface control schema", errors)
     require(control.get("control_id") == "PD-SP-CARET-SURFACE-20260902-01", "Unexpected control ID", errors)
     base_sha = control.get("base_main_sha")
-    require(isinstance(base_sha, str) and re.fullmatch(r"[0-9a-f]{40}", base_sha) is not None, "base_main_sha must be a full commit SHA", errors)
+    require(
+        isinstance(base_sha, str) and re.fullmatch(r"[0-9a-f]{40}", base_sha) is not None,
+        "base_main_sha must be a full commit SHA",
+        errors,
+    )
 
-    for key in ("governance", "parent_governance", "validator", "workflow", "registry_authority", "source_gap_authority"):
+    for key in (
+        "governance",
+        "parent_governance",
+        "validator",
+        "workflow",
+        "registry_authority",
+        "source_gap_authority",
+    ):
         value = control.get(key)
         require(isinstance(value, str) and bool(value), f"Control {key} must be a path", errors)
         if isinstance(value, str) and value:
@@ -428,10 +630,18 @@ def validate_control_shape(control: dict[str, Any], errors: list[str]) -> None:
                 require(path.is_file(), f"Control path does not exist: {value}", errors)
 
     gap_rows = control.get("resolved_occurrence_gaps", [])
-    strict_rows = sum(len(surface.get("records", [])) for surface in control.get("strict_surfaces", []) if isinstance(surface, dict))
+    strict_rows = sum(
+        len(surface.get("records", []))
+        for surface in control.get("strict_surfaces", [])
+        if isinstance(surface, dict)
+    )
     require(isinstance(gap_rows, list), "resolved_occurrence_gaps must be an array", errors)
     if isinstance(gap_rows, list):
-        require(len(gap_rows) == strict_rows, "Each initial strict surface/identity row must have one resolved occurrence-gap record", errors)
+        require(
+            len(gap_rows) == strict_rows,
+            "Each initial strict surface/identity row must have one resolved occurrence-gap record",
+            errors,
+        )
         for row in gap_rows:
             if isinstance(row, dict):
                 require(
@@ -452,7 +662,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--fail-on-advisory",
         action="store_true",
-        help="Treat every archive-wide advisory candidate as a failure after false-positive review.",
+        help="Treat archive-wide advisory candidates as failures after false-positive review.",
     )
     return parser.parse_args()
 
@@ -467,11 +677,16 @@ def main() -> int:
 
     public_files, skipped = collect_public_files(control)
     declaration_count, declaration_states = validate_all_declarations(public_files, records, errors)
-    strict_surface_count, strict_row_count = validate_strict_surfaces(control, records, errors)
+    strict_surface_count, strict_row_count, strict_snapshots = validate_strict_surfaces(
+        control, records, errors
+    )
     candidates = advisory_candidates(control, records, public_files)
 
     if args.fail_on_advisory and candidates:
         errors.append(f"Archive-wide advisory candidates remain: {len(candidates)}")
+
+    first_hop_diagnostics = historical_first_hop_snapshot_diagnostics(strict_snapshots)
+    hash_diagnostics = successor_hash_diagnostics()
 
     report = {
         "schema": "por-derecho.caret-public-surface-validation-report.v1",
@@ -486,21 +701,38 @@ def main() -> int:
         "declaration_state_counts": dict(sorted(declaration_states.items())),
         "advisory_candidate_count": len(candidates),
         "advisory_candidates": candidates,
+        "successor_surface_snapshots": strict_snapshots,
+        "historical_first_hop_snapshot_diagnostics": first_hop_diagnostics,
+        "successor_hash_diagnostics": hash_diagnostics,
         "skipped": skipped,
         "strict_errors": errors,
         "result": "PASS" if not errors else "FAIL",
-        "mode": "STRICT_DECLARED_SURFACES_PLUS_ADVISORY_ARCHIVE_DISCOVERY",
+        "mode": "STRICT_DECLARED_SURFACES_PLUS_ADVISORY_ARCHIVE_AND_SUCCESSOR_DIAGNOSTICS",
     }
 
     report_path = args.report
     if not report_path.is_absolute():
         report_path = ROOT / report_path
     report_path.parent.mkdir(parents=True, exist_ok=True)
-    report_path.write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    report_path.write_text(
+        json.dumps(report, ensure_ascii=False, indent=2) + "\n",
+        encoding="utf-8",
+    )
 
-    print(json.dumps({key: value for key, value in report.items() if key != "advisory_candidates"}, ensure_ascii=False, indent=2))
+    summary = {key: value for key, value in report.items() if key not in {
+        "advisory_candidates",
+        "successor_hash_diagnostics",
+    }}
+    print(json.dumps(summary, ensure_ascii=False, indent=2))
     if candidates:
-        print(f"ADVISORY: {len(candidates)} exact-name page/identity candidates written to {report_path.relative_to(ROOT)}")
+        print(
+            f"ADVISORY: {len(candidates)} exact-name page/identity candidates written to "
+            f"{report_path.relative_to(ROOT)}"
+        )
+    print(
+        "CONTINUITY DIAGNOSTICS: successor surface snapshots and historical hash drift "
+        f"written to {report_path.relative_to(ROOT)}"
+    )
     if errors:
         print("STRICT FAILURES:", file=sys.stderr)
         for item in errors:
