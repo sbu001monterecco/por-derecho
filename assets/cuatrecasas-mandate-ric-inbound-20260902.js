@@ -96,3 +96,14 @@
   }, { once: true });
   document.head.appendChild(data);
 })();
+
+(() => {
+  const current = document.currentScript;
+  if (!current) return;
+  if (document.querySelector('script[data-cuatrecasas-visual-bridges-across-pages-loader]')) return;
+  const visual = document.createElement('script');
+  visual.src = new URL('cuatrecasas-visual-bridges-across-pages-20260902.js?v=20260902a', current.src).href;
+  visual.async = false;
+  visual.setAttribute('data-cuatrecasas-visual-bridges-across-pages-loader', '20260902a');
+  document.head.appendChild(visual);
+})();
