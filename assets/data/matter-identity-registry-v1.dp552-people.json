@@ -1,0 +1,26 @@
+{
+  "schema":"por-derecho.matter-identity-registry.part.v1",
+  "registry_id":"PD-SP-IDENTITY-REGISTRY-001",
+  "type":"PERSON",
+  "scope":"DP 552/2025, DP 711/2025 and direct ETJ evidence-port acts",
+  "records":[
+    {
+      "id":"PD-SP-P-0161","type":"PERSON","name":"Jerónimo Alonso Herrero","aliases":["Jeronimo Alonso Herrero"],"identity_resolution":"CARET_CONFIRMED","routes":{"es":"/es/dp-711-2025/","en":"/en/dp-711-2025/"},"identity_sources":["DP 711/2025 Auto dated 17-Mar-2025","DP 711/2025 Providencia dated 04-Apr-2025","DP 711/2025 Auto dated 25-Sep-2025"],"capacity_boundary":"Magistrado-Juez of Juzgado de Instrucción nº 2 de Arrecife for the cited signed acts only. Identity does not establish authorship of every act in the file or any appellate act."
+    },
+    {
+      "id":"PD-SP-P-0162","type":"PERSON","name":"Patricia Domínguez Montelongo","aliases":["Patricia Dominguez Montelongo","Patricia Isabel Domínguez Montelongo","Patricia Isabel Dominguez Montelongo"],"identity_resolution":"CARET_CONFIRMED_WITH_SOURCE_VARIANT","routes":{"es":"/es/dp-552-2025/","en":"/en/dp-552-2025/"},"identity_sources":["20-Feb-2025 complaint corpus","March-2025 enlargement","DP 711/2025 primary court headers"],"capacity_boundary":"Complainant/represented party identity as named in the cited sources. The middle-name variant is preserved as source variation; this record does not publish private identifiers or infer any different legal capacity outside the cited acts."
+    },
+    {
+      "id":"PD-SP-P-0163","type":"PERSON","name":"Estefanía Sixto Seijas","aliases":["Estefania Sixto Seijas"],"identity_resolution":"CARET_CONFIRMED","identity_sources":["March-2025 DP 552 enlargement","DP 711/2025 Providencia dated 04-Apr-2025","DP 711/2025 Auto dated 25-Sep-2025"],"capacity_boundary":"Legal counsel for Matkator/Patricia on the cited DP 552/DP 711 acts only. Representation does not establish the truth of party allegations or a role in other proceedings without a source."
+    },
+    {
+      "id":"PD-SP-P-0164","type":"PERSON","name":"María Luisa Díaz Vecino","aliases":["Maria Luisa Diaz Vecino"],"identity_resolution":"CARET_CONFIRMED_SOURCE_SPECIFIC","identity_sources":["DP 711/2025 Providencia dated 04-Apr-2025 and court header"],"capacity_boundary":"Procuradora designated for Matkator/Patricia in the cited DP 711/2025 act only. Do not silently merge this source identity with other Díaz Vecino variants without a primary identity bridge."
+    },
+    {
+      "id":"PD-SP-P-0165","type":"PERSON","name":"Carlos Llamas Sanz","identity_resolution":"CARET_CONFIRMED","identity_sources":["13-Mar-2025 signed ETJ 163/2020 filing bringing DP 552/2025 material into the execution"],"capacity_boundary":"Lawyer signing the identified 13-Mar-2025 ETJ 163/2020 filing for Matkator. This does not establish representation in the origin DP 552 file unless separately sourced."
+    },
+    {
+      "id":"PD-SP-P-0166","type":"PERSON","name":"María Antonia Díaz Vecino","aliases":["Maria Antonia Diaz Vecino"],"identity_resolution":"CARET_CONFIRMED_SOURCE_SPECIFIC","identity_sources":["LexNET presentation receipt for the March-2025 DP 552 enlargement","LexNET presentation packet for the October-2025 DP 711 appeal"],"capacity_boundary":"Procuradora identified by the cited LexNET presentation records. No same-person finding is made with María Luisa Díaz Vecino or any legacy Díaz Vecino registry variant absent a primary identity bridge."
+    }
+  ]
+}
