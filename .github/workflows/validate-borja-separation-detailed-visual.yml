@@ -4,6 +4,7 @@ on:
     paths:
       - 'es/concurso-36-2012-separacion-administrador-concursal-rpl-3304-2025/**'
       - 'en/insolvency-36-2012-administrator-removal-rpl-3304-2025/**'
+      - 'assets/borja-separation-rpl3304-inbound-20260902.js'
       - 'assets/data/concurso36-ac-separation-rpl3304-convergence-v1.json'
       - 'archive/BORJA_SEPARATION_DETAILED_VISUAL_RESCAN_02SEP2026.md'
       - 'scripts/validate_borja_separation_detailed_visual.py'
@@ -14,6 +15,7 @@ on:
     paths:
       - 'es/concurso-36-2012-separacion-administrador-concursal-rpl-3304-2025/**'
       - 'en/insolvency-36-2012-administrator-removal-rpl-3304-2025/**'
+      - 'assets/borja-separation-rpl3304-inbound-20260902.js'
       - 'assets/data/concurso36-ac-separation-rpl3304-convergence-v1.json'
       - 'archive/BORJA_SEPARATION_DETAILED_VISUAL_RESCAN_02SEP2026.md'
       - 'scripts/validate_borja_separation_detailed_visual.py'
