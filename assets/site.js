@@ -18,6 +18,7 @@
    * playa-blanca-concept-home-20260820.js
    * data-playa-blanca-concept-loader
    * MASTER_PROCEEDINGS_PUBLICATION_GATE_20260830
+   * CANONICAL_HOME_SEARCH_AND_JUSTICE_AUTHORITY_REGISTER_20260902
    */
 
   const loadMasterProceedingsPublication = () => {
@@ -107,6 +108,26 @@
     document.head.appendChild(register);
   };
 
+  const loadCanonicalHomeSearch = () => {
+    if (document.querySelector('script[data-canonical-home-search-loader]')) return;
+    const search = document.createElement('script');
+    search.src = new URL('canonical-home-search-20260902.js?v=20260902a', current.src).href;
+    search.async = false;
+    search.setAttribute('data-canonical-home-search-loader', '20260902a');
+    document.head.appendChild(search);
+  };
+
+  const loadJusticeProfessionalsCurrentOverlay = () => {
+    const path = window.location.pathname;
+    if (!path.includes('/es/registro-identidad-profesionales-justicia/') && !path.includes('/en/justice-professionals-identity-register/')) return;
+    if (document.querySelector('script[data-justice-professionals-current-overlay-loader]')) return;
+    const overlay = document.createElement('script');
+    overlay.src = new URL('justice-professionals-current-overlay-20260902.js?v=20260902a', current.src).href;
+    overlay.async = false;
+    overlay.setAttribute('data-justice-professionals-current-overlay-loader', '20260902a');
+    document.head.appendChild(overlay);
+  };
+
   // Preserve the complete site loader that existed before this visual update.
   const prior = document.createElement('script');
   prior.src = new URL('site-pre-treasury-154-hq-20260828.js?v=20260828a', current.src).href;
@@ -121,4 +142,6 @@
   loadActaAuthorityInterlink();
   loadAcostaHotelPlatformMedia();
   loadActorsAcostaCanonicalRegister();
+  loadCanonicalHomeSearch();
+  loadJusticeProfessionalsCurrentOverlay();
 })();
