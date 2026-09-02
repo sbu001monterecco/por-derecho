@@ -1,0 +1,53 @@
+name: Audit canonical authority register and homepage search
+
+on:
+  pull_request:
+    paths:
+      - 'assets/site.js'
+      - 'assets/canonical-home-search-20260902.js'
+      - 'assets/justice-professionals-current-overlay-20260902.js'
+      - 'assets/data/matter-identity-registry-v1*.json'
+      - 'assets/data/justice-professionals-caret-audit-v1.json'
+      - 'assets/data/justice-authority-register-current-v2.json'
+      - 'assets/data/proceedings-master-public-v1.json'
+      - 'es/registro-judicial-audiencia-provincial-las-palmas/**'
+      - 'en/las-palmas-provincial-court-register/**'
+      - '.github/governance/JUDICIAL_PROSECUTORIAL_AUTHORITY_REGISTER_CONTINUITY_02SEP2026.md'
+      - 'scripts/validate_canonical_home_search.py'
+      - '.github/workflows/audit-canonical-home-search.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'assets/site.js'
+      - 'assets/canonical-home-search-20260902.js'
+      - 'assets/justice-professionals-current-overlay-20260902.js'
+      - 'assets/data/matter-identity-registry-v1*.json'
+      - 'assets/data/justice-professionals-caret-audit-v1.json'
+      - 'assets/data/justice-authority-register-current-v2.json'
+      - 'assets/data/proceedings-master-public-v1.json'
+      - 'es/registro-judicial-audiencia-provincial-las-palmas/**'
+      - 'en/las-palmas-provincial-court-register/**'
+      - '.github/governance/JUDICIAL_PROSECUTORIAL_AUTHORITY_REGISTER_CONTINUITY_02SEP2026.md'
+      - 'scripts/validate_canonical_home_search.py'
+      - '.github/workflows/audit-canonical-home-search.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate canonical authority register and search
+        run: python3 scripts/validate_canonical_home_search.py
+      - name: Check JavaScript syntax
+        run: |
+          node --check assets/canonical-home-search-20260902.js
+          node --check assets/justice-professionals-current-overlay-20260902.js
+          node --check assets/site.js
