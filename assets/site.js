@@ -25,6 +25,7 @@
    * CUATRECASAS_WHY_STEP4_LONGFORM_20260902
    * CUATRECASAS_STEP4_PUBLICATION_NODE_20260902
    * CUATRECASAS_STEP4_SEARCH_EXTENSION_20260902
+   * CUATRECASAS_DP748_TRANSPARENCY_APPEAL_20260902
    */
 
   const loadMasterProceedingsPublication = () => {
@@ -156,7 +157,7 @@
     if (!isHome()) return;
     if (document.querySelector('script[data-borja-separation-search-extension-loader]')) return;
     const extension = document.createElement('script');
-    extension.src = new URL('borja-separation-search-extension-20260902.js?v=20260902a', current.src).href;
+    extension.src = new URL('borja-separation-rpl3304-search-extension-20260902.js?v=20260902a', current.src).href;
     extension.async = false;
     extension.setAttribute('data-borja-separation-search-extension-loader', '20260902a');
     document.head.appendChild(extension);
@@ -200,6 +201,21 @@
     document.head.appendChild(extension);
   };
 
+  const loadCuatrecasasDp748Transparency = () => {
+    const path = window.location.pathname;
+    const relevant = path.includes('/es/cuatrecasas-sun-park/')
+      || path.includes('/en/cuatrecasas-sun-park/')
+      || path.includes('/es/cuatrecasas-dp748-accion-civil/')
+      || path.includes('/en/cuatrecasas-dp748-civil-action/');
+    if (!relevant) return;
+    if (document.querySelector('script[data-cuatrecasas-dp748-transparency-loader]')) return;
+    const transparency = document.createElement('script');
+    transparency.src = new URL('cuatrecasas-dp748-transparency-20260902.js?v=20260902a', current.src).href;
+    transparency.async = false;
+    transparency.setAttribute('data-cuatrecasas-dp748-transparency-loader', '20260902a');
+    document.head.appendChild(transparency);
+  };
+
   // Preserve the complete site loader that existed before this visual update.
   const prior = document.createElement('script');
   prior.src = new URL('site-pre-treasury-154-hq-20260828.js?v=20260828a', current.src).href;
@@ -222,4 +238,5 @@
   loadCuatrecasasWhyStep4Longform();
   loadCuatrecasasStep4PublicationNode();
   loadCuatrecasasStep4SearchExtension();
+  loadCuatrecasasDp748Transparency();
 })();
