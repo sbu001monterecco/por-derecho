@@ -3,7 +3,7 @@
   "control_date": "2026-09-02",
   "status": "RECIPROCAL_FORMAL_TEXTUAL_AND_CONTEXTUAL_NAVIGATION_EDGES",
   "boundary": "Formal related edges derive only from Parent_Master_ID and Linked_Proceedings. Textual, contextual-similarity and same-organ links are navigation aids and do not establish joinder, transfer, common parties, common knowledge, merits, causation or liability.",
-  "record_count": 131,
+  "record_count": 130,
   "records": [
     {
       "master_id": "LZ-JUD-001",
@@ -4771,7 +4771,17 @@
       "formal_related": [],
       "canonical_text_cross_references": [],
       "same_origin_organ_navigation": [],
-      "contextual_related_navigation": []
+      "contextual_related_navigation": [
+        {
+          "master_id": "GC-CIV-030",
+          "score": 8,
+          "reasons": [
+            "same_geography",
+            "same_stream",
+            "shared_canonical_terms:exhibition"
+          ]
+        }
+      ]
     },
     {
       "master_id": "GC-APP-004",
@@ -4988,6 +4998,15 @@
             "same_geography",
             "shared_canonical_terms:concurso,liability,professional,remuneration",
             "same_connection_label"
+          ]
+        },
+        {
+          "master_id": "GC-CIV-003",
+          "score": 8,
+          "reasons": [
+            "same_geography",
+            "same_stream",
+            "shared_canonical_terms:exhibition"
           ]
         }
       ]
@@ -8923,29 +8942,6 @@
       ]
     },
     {
-      "master_id": "LZ-CIV-050",
-      "formal_related": [],
-      "canonical_text_cross_references": [],
-      "same_origin_organ_navigation": [],
-      "contextual_related_navigation": [
-        {
-          "master_id": "LZ-APP-054",
-          "score": 12,
-          "reasons": [
-            "shared_canonical_terms:describes,inventory,transaction"
-          ]
-        },
-        {
-          "master_id": "LZ-REF-053",
-          "score": 10,
-          "reasons": [
-            "same_geography",
-            "shared_canonical_terms:describes,inventory"
-          ]
-        }
-      ]
-    },
-    {
       "master_id": "LZ-FIS-051",
       "formal_related": [],
       "canonical_text_cross_references": [],
@@ -9012,14 +9008,6 @@
           ]
         },
         {
-          "master_id": "LZ-CIV-050",
-          "score": 10,
-          "reasons": [
-            "same_geography",
-            "shared_canonical_terms:describes,inventory"
-          ]
-        },
-        {
           "master_id": "LZ-JUD-005",
           "score": 10,
           "reasons": [
@@ -9052,13 +9040,6 @@
       "canonical_text_cross_references": [],
       "same_origin_organ_navigation": [],
       "contextual_related_navigation": [
-        {
-          "master_id": "LZ-CIV-050",
-          "score": 12,
-          "reasons": [
-            "shared_canonical_terms:describes,inventory,transaction"
-          ]
-        },
         {
           "master_id": "LZ-REF-053",
           "score": 8,

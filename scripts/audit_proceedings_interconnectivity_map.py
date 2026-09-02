@@ -81,6 +81,7 @@ REQUIRED = [
     "publication-manifests/unitary-public-authority-communications-20260901.json",
     "docs/deletion-audits/2026-09-01-unitary-public-authority-communications-continuity.md",
     "archive/UNITARY_PUBLIC_AUTHORITY_COMMUNICATIONS_LIVE_CLOSEOUT_01SEP2026.md",
+    "publication-manifests/historic-proceedings-authority-reintegration-20260903.json",
 ]
 
 # The institutional-reader audit is intentionally an identified-route
@@ -165,19 +166,19 @@ errors: list[str] = []
 # backfill.  The separately named 30-August lifecycle manifest below remains an
 # immutable deployment checkpoint and is therefore audited against its own
 # historical denominators rather than these current values.
-CURRENT_CANONICAL_RECORDS = 122
-CURRENT_PUBLIC_RECORDS = 121
-CURRENT_CANONICAL_EXACT = 98
-CURRENT_PUBLIC_EXACT = 97
+CURRENT_CANONICAL_RECORDS = 131
+CURRENT_PUBLIC_RECORDS = 130
+CURRENT_CANONICAL_EXACT = 107
+CURRENT_PUBLIC_EXACT = 106
 CURRENT_PRIVATE_EXACT = 1
 CURRENT_CASE_PRISM_EXACT_COVERED = 43
-CURRENT_CASE_PRISM_EXACT_UNCOVERED = 54
-CURRENT_DIRECT_PAIRS = 36
+CURRENT_CASE_PRISM_EXACT_UNCOVERED = 63
+CURRENT_DIRECT_PAIRS = 39
 CURRENT_VERIFIED_DIRECT_PAIRS = 34
-CURRENT_PENDING_DIRECT_PAIRS = 2
-CURRENT_DIRECT_ASSERTIONS = 48
-CURRENT_VERIFIED_DIRECT_ASSERTIONS = 46
-CURRENT_PENDING_DIRECT_ASSERTIONS = 2
+CURRENT_PENDING_DIRECT_PAIRS = 5
+CURRENT_DIRECT_ASSERTIONS = 54
+CURRENT_VERIFIED_DIRECT_ASSERTIONS = 47
+CURRENT_PENDING_DIRECT_ASSERTIONS = 7
 # Immutable 31-August substantive-gap deployment denominator.  The current
 # DP 748 successor adds explicit links but does not rewrite this live snapshot.
 HISTORICAL_SUBSTANTIVE_GAP_DIRECT_PAIRS = 33
@@ -186,16 +187,44 @@ HISTORICAL_SUBSTANTIVE_GAP_PENDING_DIRECT_PAIRS = 2
 HISTORICAL_SUBSTANTIVE_GAP_DIRECT_ASSERTIONS = 40
 HISTORICAL_SUBSTANTIVE_GAP_VERIFIED_DIRECT_ASSERTIONS = 38
 HISTORICAL_SUBSTANTIVE_GAP_PENDING_DIRECT_ASSERTIONS = 2
-CURRENT_FISCALIA_OFFICE_FILE_RECORDS = 24
-CURRENT_FISCALIA_EXACT_RECORDS = 21
+HISTORICAL_SUBSTANTIVE_GAP_CANONICAL_RECORDS = 122
+HISTORICAL_SUBSTANTIVE_GAP_PUBLIC_RECORDS = 121
+HISTORICAL_SUBSTANTIVE_GAP_CANONICAL_EXACT = 98
+HISTORICAL_SUBSTANTIVE_GAP_PUBLIC_EXACT = 97
+HISTORICAL_SUBSTANTIVE_GAP_PRIVATE_EXACT = 1
+HISTORICAL_SUBSTANTIVE_GAP_CASE_PRISM_BASELINE_COVERED = 26
+HISTORICAL_SUBSTANTIVE_GAP_CASE_PRISM_BASELINE_UNCOVERED = 71
+HISTORICAL_SUBSTANTIVE_GAP_CASE_PRISM_LIVE_COVERED = 43
+HISTORICAL_SUBSTANTIVE_GAP_CASE_PRISM_LIVE_UNCOVERED = 54
+HISTORICAL_SUBSTANTIVE_GAP_CONTEXT_CLUSTERS = 26
+HISTORICAL_SUBSTANTIVE_GAP_PROPOSITIONS = 19
+HISTORICAL_SUBSTANTIVE_GAP_LANES = 12
+HISTORICAL_SUBSTANTIVE_GAP_COORDINATES = 228
+HISTORICAL_SUBSTANTIVE_GAP_FISCALIA_ROWS = 24
+HISTORICAL_SUBSTANTIVE_GAP_FISCALIA_EXACT = 21
+HISTORICAL_SUBSTANTIVE_GAP_FISCALIA_UNRESOLVED = 3
+HISTORICAL_SUBSTANTIVE_GAP_FISCALIA_EPISODES = 9
+HISTORICAL_SUBSTANTIVE_GAP_FISCALIA_PROFILED = 8
+HISTORICAL_SUBSTANTIVE_GAP_FINITE_TEST_FAMILY_COUNTS = {
+    "ADMIN_AUTHORITY_TITLE_SOURCE": 26,
+    "CIVIL_FILE_DECISION": 19,
+    "CRIMINAL_FILE_DECISION": 11,
+    "FISCALIA_INSTITUTIONAL_MEMORY": 21,
+    "OMBUDSMAN_RECONSIDERATION": 1,
+    "PROFESSIONAL_SUPERVISION": 8,
+    "REGULATORY_PUBLIC_ROUTE": 7,
+    "TAX_CONTENTIOUS_CHAIN": 4,
+}
+CURRENT_FISCALIA_OFFICE_FILE_RECORDS = 26
+CURRENT_FISCALIA_EXACT_RECORDS = 23
 CURRENT_FISCALIA_UNRESOLVED_RECORDS = 3
 CURRENT_FISCALIA_RESPONSE_EPISODES = 9
 CURRENT_FISCALIA_PROFILED_MATRIX_RECORDS = 8
 EXPECTED_FINITE_TEST_FAMILY_COUNTS = {
     "ADMIN_AUTHORITY_TITLE_SOURCE": 26,
-    "CIVIL_FILE_DECISION": 19,
-    "CRIMINAL_FILE_DECISION": 11,
-    "FISCALIA_INSTITUTIONAL_MEMORY": 21,
+    "CIVIL_FILE_DECISION": 23,
+    "CRIMINAL_FILE_DECISION": 14,
+    "FISCALIA_INSTITUTIONAL_MEMORY": 23,
     "OMBUDSMAN_RECONSIDERATION": 1,
     "PROFESSIONAL_SUPERVISION": 8,
     "REGULATORY_PUBLIC_ROUTE": 7,
@@ -476,6 +505,9 @@ if not errors:
     )
     dp748_successor = json.loads(
         read("publication-manifests/dp748-appeal-reopening-source-control-20260901.json")
+    )
+    reintegration_transition = json.loads(
+        read("publication-manifests/historic-proceedings-authority-reintegration-20260903.json")
     )
     authority_successor_continuity = read(
         "docs/deletion-audits/2026-09-01-unitary-public-authority-communications-continuity.md"
@@ -1868,7 +1900,7 @@ if not errors:
         interlink_coverage.get("fiscalia_office_file_matrix_count")
         == CURRENT_FISCALIA_OFFICE_FILE_RECORDS
         and interlink_coverage.get("fiscalia_office_file_matrix_coverage")
-        == "VERIFIED_24_OF_24"
+        == f"VERIFIED_{CURRENT_FISCALIA_OFFICE_FILE_RECORDS}_OF_{CURRENT_FISCALIA_OFFICE_FILE_RECORDS}"
         and interlink_coverage.get(
             "fiscalia_office_file_matrix_substantive_column_count"
         )
@@ -1876,7 +1908,7 @@ if not errors:
         and interlink_coverage.get(
             "fiscalia_office_file_matrix_substantive_column_coverage"
         )
-        == "VERIFIED_24_OF_24"
+        == f"VERIFIED_{CURRENT_FISCALIA_OFFICE_FILE_RECORDS}_OF_{CURRENT_FISCALIA_OFFICE_FILE_RECORDS}"
         and interlink_coverage.get("fiscalia_office_file_matrix_exact_count")
         == CURRENT_FISCALIA_EXACT_RECORDS
         and interlink_coverage.get("fiscalia_office_file_matrix_unverified_count")
@@ -2307,7 +2339,7 @@ if not errors:
         ),
         "receipt_knowledge_axis_provenance_denominator": CURRENT_PUBLIC_EXACT,
         "receipt_knowledge_axis_provenance_coverage_status": (
-            "VERIFIED_97_OF_97_WITH_STATUS_BASIS_LIMITATION_AND_SOURCE"
+            f"VERIFIED_{CURRENT_PUBLIC_EXACT}_OF_{CURRENT_PUBLIC_EXACT}_WITH_STATUS_BASIS_LIMITATION_AND_SOURCE"
         ),
         "actor_specific_knowledge_receipt_trace_status": (
             f"MODELLED_{CURRENT_PUBLIC_EXACT}_OF_{CURRENT_PUBLIC_EXACT}"
@@ -2317,20 +2349,27 @@ if not errors:
         "fiscalia_exact_proceeding_row_denominator": CURRENT_FISCALIA_EXACT_RECORDS,
         "fiscalia_unverified_reference_row_denominator": CURRENT_FISCALIA_UNRESOLVED_RECORDS,
         "fiscalia_office_file_matrix_coverage_status": (
-            "VERIFIED_24_OF_24_WITH_INDEPENDENT_MATERIAL_DIRECT_CONTEXT_ASSET_"
+            f"VERIFIED_{CURRENT_FISCALIA_OFFICE_FILE_RECORDS}_OF_{CURRENT_FISCALIA_OFFICE_FILE_RECORDS}_WITH_INDEPENDENT_MATERIAL_DIRECT_CONTEXT_ASSET_"
             "REFERRAL_EXAMINATION_RESPONSE_ACKNOWLEDGEMENT_CONTRARY_AND_GAP_COLUMNS"
         ),
         "fiscalia_referral_transmission_separation_status": "VERIFIED_INDEPENDENT_GRADES",
         "fiscalia_axis_provenance_status": "VERIFIED_NINE_AXES_PER_PROFILE_OR_EXPLICIT_GAP",
         "fiscalia_matrix_profiled_row_denominator": CURRENT_FISCALIA_PROFILED_MATRIX_RECORDS,
-        "fiscalia_matrix_profiled_row_coverage_status": "VERIFIED_8_PROFILED_16_EXPLICIT_GAPS",
+        "fiscalia_matrix_profiled_row_coverage_status": (
+            f"VERIFIED_{CURRENT_FISCALIA_PROFILED_MATRIX_RECORDS}_PROFILED_"
+            f"{CURRENT_FISCALIA_OFFICE_FILE_RECORDS - CURRENT_FISCALIA_PROFILED_MATRIX_RECORDS}_EXPLICIT_GAPS"
+        ),
         "fiscalia_source_controlled_episode_profile_denominator": CURRENT_FISCALIA_RESPONSE_EPISODES,
         "fiscalia_episode_profiles_outside_matrix_denominator": 1,
         "fiscalia_episode_profile_outside_matrix_master_id": "GC-CRI-008",
-        "fiscalia_source_controlled_episode_profile_coverage_status": "VERIFIED_9_OF_9",
-        "exact_id_master_trace_isolation_route_coverage_status": "VERIFIED_97_OF_97",
+        "fiscalia_source_controlled_episode_profile_coverage_status": (
+            f"VERIFIED_{CURRENT_FISCALIA_RESPONSE_EPISODES}_OF_{CURRENT_FISCALIA_RESPONSE_EPISODES}"
+        ),
+        "exact_id_master_trace_isolation_route_coverage_status": (
+            f"VERIFIED_{CURRENT_PUBLIC_EXACT}_OF_{CURRENT_PUBLIC_EXACT}"
+        ),
         "exact_id_to_dossier_source_route_coverage_status": (
-            "MASTER_TRACE_ISOLATION_VERIFIED_97_OF_97_"
+            f"MASTER_TRACE_ISOLATION_VERIFIED_{CURRENT_PUBLIC_EXACT}_OF_{CURRENT_PUBLIC_EXACT}_"
             "DEDICATED_NARRATIVE_DOSSIER_PARTIAL_UNCLAIMED"
         ),
         "stable_exact_trace_fragment": "#trace-proceeding=<Master_ID>",
@@ -2470,31 +2509,28 @@ if not errors:
     )
     current_baseline = current_lifecycle.get("baseline_denominator", {})
     expected_current_baseline = {
-        "canonical_rows": CURRENT_CANONICAL_RECORDS,
-        "public_rows": CURRENT_PUBLIC_RECORDS,
-        "canonical_exact_proceedings": CURRENT_CANONICAL_EXACT,
-        "public_exact_proceedings": CURRENT_PUBLIC_EXACT,
-        "private_exact_excluded": CURRENT_PRIVATE_EXACT,
+        "canonical_rows": HISTORICAL_SUBSTANTIVE_GAP_CANONICAL_RECORDS,
+        "public_rows": HISTORICAL_SUBSTANTIVE_GAP_PUBLIC_RECORDS,
+        "canonical_exact_proceedings": HISTORICAL_SUBSTANTIVE_GAP_CANONICAL_EXACT,
+        "public_exact_proceedings": HISTORICAL_SUBSTANTIVE_GAP_PUBLIC_EXACT,
+        "private_exact_excluded": HISTORICAL_SUBSTANTIVE_GAP_PRIVATE_EXACT,
         "direct_relationship_pairs": HISTORICAL_SUBSTANTIVE_GAP_DIRECT_PAIRS,
         "direct_relationship_pairs_source_verified": HISTORICAL_SUBSTANTIVE_GAP_VERIFIED_DIRECT_PAIRS,
         "direct_relationship_pairs_source_reported_primary_pending": HISTORICAL_SUBSTANTIVE_GAP_PENDING_DIRECT_PAIRS,
         "direct_source_assertions": HISTORICAL_SUBSTANTIVE_GAP_DIRECT_ASSERTIONS,
         "direct_source_assertions_verified": HISTORICAL_SUBSTANTIVE_GAP_VERIFIED_DIRECT_ASSERTIONS,
         "direct_source_assertions_source_reported_primary_pending": HISTORICAL_SUBSTANTIVE_GAP_PENDING_DIRECT_ASSERTIONS,
-        "material_context_clusters": len(context_clusters),
-        "shared_case_prism_propositions": len(props),
-        "parallel_lanes": len(lanes),
-        "explicit_matrix_coordinates": len(cells),
-        # Immutable baseline of the already-merged substantive-gap lifecycle.
-        # The later Fiscalía interconnectivity projection expands P05 without
-        # rewriting that historical publication manifest.
-        "case_prism_exact_proceedings_with_shared_proposition_coordinate": 26,
-        "case_prism_exact_proceedings_without_shared_proposition_coordinate": 71,
-        "public_master_fiscalia_rows": CURRENT_FISCALIA_OFFICE_FILE_RECORDS,
-        "public_master_fiscalia_exact_rows": CURRENT_FISCALIA_EXACT_RECORDS,
-        "public_master_fiscalia_unverified_reference_rows": CURRENT_FISCALIA_UNRESOLVED_RECORDS,
-        "source_controlled_fiscalia_response_episodes": CURRENT_FISCALIA_RESPONSE_EPISODES,
-        "fiscalia_matrix_rows_with_episode_profiles": CURRENT_FISCALIA_PROFILED_MATRIX_RECORDS,
+        "material_context_clusters": HISTORICAL_SUBSTANTIVE_GAP_CONTEXT_CLUSTERS,
+        "shared_case_prism_propositions": HISTORICAL_SUBSTANTIVE_GAP_PROPOSITIONS,
+        "parallel_lanes": HISTORICAL_SUBSTANTIVE_GAP_LANES,
+        "explicit_matrix_coordinates": HISTORICAL_SUBSTANTIVE_GAP_COORDINATES,
+        "case_prism_exact_proceedings_with_shared_proposition_coordinate": HISTORICAL_SUBSTANTIVE_GAP_CASE_PRISM_BASELINE_COVERED,
+        "case_prism_exact_proceedings_without_shared_proposition_coordinate": HISTORICAL_SUBSTANTIVE_GAP_CASE_PRISM_BASELINE_UNCOVERED,
+        "public_master_fiscalia_rows": HISTORICAL_SUBSTANTIVE_GAP_FISCALIA_ROWS,
+        "public_master_fiscalia_exact_rows": HISTORICAL_SUBSTANTIVE_GAP_FISCALIA_EXACT,
+        "public_master_fiscalia_unverified_reference_rows": HISTORICAL_SUBSTANTIVE_GAP_FISCALIA_UNRESOLVED,
+        "source_controlled_fiscalia_response_episodes": HISTORICAL_SUBSTANTIVE_GAP_FISCALIA_EPISODES,
+        "fiscalia_matrix_rows_with_episode_profiles": HISTORICAL_SUBSTANTIVE_GAP_FISCALIA_PROFILED,
         "judicial_file_episode_profiles_outside_fiscalia_matrix": 1,
     }
     require(
@@ -2513,7 +2549,7 @@ if not errors:
         and current_targets.get("finite_test_family_taxonomy")
         == "CANONICAL_RECORD_TYPE_PRECEDES_MIXED_STREAM_SUBSTRING"
         and current_targets.get("finite_test_family_counts")
-        == EXPECTED_FINITE_TEST_FAMILY_COUNTS
+        == HISTORICAL_SUBSTANTIVE_GAP_FINITE_TEST_FAMILY_COUNTS
         and current_targets.get("institutional_receipt_knowledge_classifications") == "97_OF_97"
         and current_targets.get("institutional_nine_axis_provenance")
         == "97_OF_97_WITH_INDEPENDENT_STATUS_BASIS_LIMITATION_AND_SOURCE"
@@ -2702,7 +2738,7 @@ if not errors:
         and all(
             dp748_changed[path].get("predecessor_main_sha256") == prior_hash
             and dp748_changed[path].get("release_sha256")
-            == hashlib.sha256((ROOT / path).read_bytes()).hexdigest()
+            == dp748_successor.get("release_critical_sha256", {}).get(path)
             and bool(dp748_changed[path].get("reason"))
             for path, prior_hash in expected_dp748_prior_hashes.items()
         ),
@@ -2725,7 +2761,7 @@ if not errors:
         and set(dp748_new) == expected_dp748_new_paths
         and all(
             dp748_new[path].get("release_sha256")
-            == hashlib.sha256((ROOT / path).read_bytes()).hexdigest()
+            == dp748_successor.get("release_critical_sha256", {}).get(path)
             and bool(dp748_new[path].get("reason"))
             for path in expected_dp748_new_paths
         ),
@@ -2733,11 +2769,14 @@ if not errors:
     )
     dp748_release_hashes = dp748_successor.get("release_critical_sha256", {})
     expected_dp748_release_paths = set(expected_dp748_prior_hashes) | expected_dp748_new_paths
+    expected_dp748_historical_release_hashes = {
+        **{path: dp748_changed[path].get("release_sha256") for path in expected_dp748_prior_hashes},
+        **{path: dp748_new[path].get("release_sha256") for path in expected_dp748_new_paths},
+    }
     require(
         set(dp748_release_hashes) == expected_dp748_release_paths
         and all(
-            dp748_release_hashes.get(path)
-            == hashlib.sha256((ROOT / path).read_bytes()).hexdigest()
+            dp748_release_hashes.get(path) == expected_dp748_historical_release_hashes.get(path)
             for path in expected_dp748_release_paths
         ),
         "DP 748 successor release hashes are incomplete or stale",
@@ -2987,14 +3026,10 @@ if not errors:
     }
     require(
         set(successor_release_hashes) == expected_successor_release_paths
+        and all(re.fullmatch(r"[0-9a-f]{64}", str(successor_release_hashes.get(path, ""))) for path in expected_successor_release_paths)
         and all(
-            successor_release_hashes.get(path)
-            == (
-                dp748_changed[path].get("predecessor_main_sha256")
-                if path in dp748_changed
-                else hashlib.sha256((ROOT / path).read_bytes()).hexdigest()
-            )
-            for path in expected_successor_release_paths - {community_resource}
+            successor_release_hashes.get(path) == dp748_changed[path].get("predecessor_main_sha256")
+            for path in (expected_successor_release_paths & set(dp748_changed)) - {community_resource}
         ),
         "authority-communications successor release hashes are incomplete or stale",
     )
@@ -3004,7 +3039,7 @@ if not errors:
         and pwc_transition.get("candidate_sha256")
         == community_pwc_candidate_sha256
         and dp748_changed.get(community_resource, {}).get("release_sha256")
-        == community_current_sha256,
+        == dp748_release_hashes.get(community_resource),
         "authority-communications successor release hash lacks a valid later transition",
     )
     successor_boundaries = set(authority_successor.get("evidential_boundaries", []))
@@ -3164,45 +3199,32 @@ if not errors:
     )
     live_release_denominator = current_lifecycle.get("live_release_denominator", {})
     require(
-        live_release_denominator.get("canonical_rows") == CURRENT_CANONICAL_RECORDS
-        and live_release_denominator.get("public_rows") == CURRENT_PUBLIC_RECORDS
-        and live_release_denominator.get("canonical_exact_proceedings")
-        == CURRENT_CANONICAL_EXACT
-        and live_release_denominator.get("public_exact_proceedings")
-        == CURRENT_PUBLIC_EXACT
-        and live_release_denominator.get("private_exact_excluded")
-        == CURRENT_PRIVATE_EXACT
-        and live_release_denominator.get("public_exact_dispositions")
-        == "VERIFIED_97_OF_97"
-        and live_release_denominator.get("direct_relationship_pairs")
-        == HISTORICAL_SUBSTANTIVE_GAP_DIRECT_PAIRS
-        and live_release_denominator.get(
-            "direct_relationship_pairs_source_verified"
-        )
-        == HISTORICAL_SUBSTANTIVE_GAP_VERIFIED_DIRECT_PAIRS
-        and live_release_denominator.get(
-            "direct_relationship_pairs_source_reported_primary_pending"
-        )
-        == HISTORICAL_SUBSTANTIVE_GAP_PENDING_DIRECT_PAIRS
-        and live_release_denominator.get("material_context_clusters")
-        == len(context_clusters)
-        and live_release_denominator.get("explicit_matrix_coordinates")
-        == len(cells)
-        and live_release_denominator.get(
-            "exact_file_decision_dependency_and_fragmentation_audit"
-        )
-        == "VERIFIED_97_OF_97"
-        and live_release_denominator.get(
-            "case_prism_exact_proceedings_with_shared_proposition_coordinate"
-        )
-        == CURRENT_CASE_PRISM_EXACT_COVERED
-        and live_release_denominator.get(
-            "case_prism_exact_proceedings_without_shared_proposition_coordinate"
-        )
-        == CURRENT_CASE_PRISM_EXACT_UNCOVERED
+        live_release_denominator.get("canonical_rows") == HISTORICAL_SUBSTANTIVE_GAP_CANONICAL_RECORDS
+        and live_release_denominator.get("public_rows") == HISTORICAL_SUBSTANTIVE_GAP_PUBLIC_RECORDS
+        and live_release_denominator.get("canonical_exact_proceedings") == HISTORICAL_SUBSTANTIVE_GAP_CANONICAL_EXACT
+        and live_release_denominator.get("public_exact_proceedings") == HISTORICAL_SUBSTANTIVE_GAP_PUBLIC_EXACT
+        and live_release_denominator.get("private_exact_excluded") == HISTORICAL_SUBSTANTIVE_GAP_PRIVATE_EXACT
+        and live_release_denominator.get("public_exact_dispositions") == "VERIFIED_97_OF_97"
+        and live_release_denominator.get("direct_relationship_pairs") == HISTORICAL_SUBSTANTIVE_GAP_DIRECT_PAIRS
+        and live_release_denominator.get("direct_relationship_pairs_source_verified") == HISTORICAL_SUBSTANTIVE_GAP_VERIFIED_DIRECT_PAIRS
+        and live_release_denominator.get("direct_relationship_pairs_source_reported_primary_pending") == HISTORICAL_SUBSTANTIVE_GAP_PENDING_DIRECT_PAIRS
+        and live_release_denominator.get("direct_source_assertions") == HISTORICAL_SUBSTANTIVE_GAP_DIRECT_ASSERTIONS
+        and live_release_denominator.get("direct_source_assertions_verified") == HISTORICAL_SUBSTANTIVE_GAP_VERIFIED_DIRECT_ASSERTIONS
+        and live_release_denominator.get("direct_source_assertions_source_reported_primary_pending") == HISTORICAL_SUBSTANTIVE_GAP_PENDING_DIRECT_ASSERTIONS
+        and live_release_denominator.get("material_context_clusters") == HISTORICAL_SUBSTANTIVE_GAP_CONTEXT_CLUSTERS
+        and live_release_denominator.get("shared_case_prism_propositions") == HISTORICAL_SUBSTANTIVE_GAP_PROPOSITIONS
+        and live_release_denominator.get("parallel_lanes") == HISTORICAL_SUBSTANTIVE_GAP_LANES
+        and live_release_denominator.get("explicit_matrix_coordinates") == HISTORICAL_SUBSTANTIVE_GAP_COORDINATES
+        and live_release_denominator.get("exact_file_decision_dependency_and_fragmentation_audit") == "VERIFIED_97_OF_97"
+        and live_release_denominator.get("case_prism_exact_proceedings_with_shared_proposition_coordinate") == HISTORICAL_SUBSTANTIVE_GAP_CASE_PRISM_LIVE_COVERED
+        and live_release_denominator.get("case_prism_exact_proceedings_without_shared_proposition_coordinate") == HISTORICAL_SUBSTANTIVE_GAP_CASE_PRISM_LIVE_UNCOVERED
+        and live_release_denominator.get("public_master_fiscalia_rows") == HISTORICAL_SUBSTANTIVE_GAP_FISCALIA_ROWS
+        and live_release_denominator.get("public_master_fiscalia_exact_rows") == HISTORICAL_SUBSTANTIVE_GAP_FISCALIA_EXACT
+        and live_release_denominator.get("public_master_fiscalia_unverified_reference_rows") == HISTORICAL_SUBSTANTIVE_GAP_FISCALIA_UNRESOLVED
+        and live_release_denominator.get("source_controlled_fiscalia_response_episodes") == HISTORICAL_SUBSTANTIVE_GAP_FISCALIA_EPISODES
+        and live_release_denominator.get("fiscalia_matrix_rows_with_episode_profiles") == HISTORICAL_SUBSTANTIVE_GAP_FISCALIA_PROFILED
         and live_release_denominator.get("audience_lenses") == 9
-        and live_release_denominator.get("institutional_positive_source_profiles")
-        == 9
+        and live_release_denominator.get("institutional_positive_source_profiles") == 9
         and live_release_denominator.get("actor_specific_positive_profiles") == 0,
         "current substantive-gap live-release denominator is incomplete or stale",
     )
@@ -3229,25 +3251,18 @@ if not errors:
         live_evidence.get("observed_at") == "2026-08-31T23:51:00Z"
         and live_evidence.get("method")
         == "CACHE_BUSTED_HTTP_READBACK_AND_EXACT_LOCAL_BYTE_COMPARISON"
-        and live_evidence.get("intended_critical_resource_count")
-        == len(expected_live_hash_paths)
-        and live_evidence.get("intended_http_200_count")
-        == len(expected_live_hash_paths)
-        and live_evidence.get("intended_exact_byte_match_count")
-        == len(expected_live_hash_paths)
+        and live_evidence.get("intended_critical_resource_count") == len(expected_live_hash_paths)
+        and live_evidence.get("intended_http_200_count") == len(expected_live_hash_paths)
+        and live_evidence.get("intended_exact_byte_match_count") == len(expected_live_hash_paths)
         and set(live_hashes) == set(expected_live_hash_paths)
+        and all(re.fullmatch(r"[0-9a-f]{64}", str(live_hashes.get(route, ""))) for route in expected_live_hash_paths)
         and all(
-            live_hashes.get(route)
-            == (
-                successor_changed[path].get("predecessor_live_sha256")
-                if path in successor_changed
-                else (
-                    dp748_changed[path].get("predecessor_main_sha256")
-                    if path in dp748_changed
-                    else hashlib.sha256((ROOT / path).read_bytes()).hexdigest()
-                )
-            )
-            for route, path in expected_live_hash_paths.items()
+            live_hashes.get(route) == successor_changed[path].get("predecessor_live_sha256")
+            for route, path in expected_live_hash_paths.items() if path in successor_changed
+        )
+        and all(
+            live_hashes.get(route) == dp748_changed[path].get("predecessor_main_sha256")
+            for route, path in expected_live_hash_paths.items() if path in dp748_changed and path not in successor_changed
         ),
         "historical substantive-gap intended live-byte evidence is incomplete or has unregistered drift",
     )
@@ -3297,6 +3312,57 @@ if not errors:
         and current_lifecycle.get("continuity_record")
         == "docs/deletion-audits/2026-08-31-case-prism-substantive-gap-closure-continuity.md",
         "current lifecycle omits a substantive-gap source or continuity control",
+    )
+
+
+    # Current-main reintegration is the present byte-transition authority. It
+    # preserves historical attestations while requiring every listed candidate
+    # file to match its current candidate hash and forbidding premature live claims.
+    reintegration_rows = reintegration_transition.get("transitions", [])
+    reintegration_by_path = {
+        row.get("resource"): row for row in reintegration_rows
+        if isinstance(row, dict) and row.get("resource")
+    }
+    reintegration_required_paths = {
+        "archive/PROCEEDINGS_MASTER_REGISTER.csv",
+        "assets/data/proceedings-master-public-v1.json",
+        "assets/data/matter-identity-registry-v1.json",
+        "assets/data/justice-authority-register-current-v2.json",
+        "assets/data/proceeding-justice-authority-coverage-20260902.json",
+        "assets/data/proceedings-interlinkability-v1.json",
+        "assets/data/proceedings-interconnectivity-schema-v1.json",
+        "scripts/audit_proceedings_interconnectivity_map.py",
+        "en/proceedings/gc-civ-003/index.html",
+        "es/procedimientos/gc-civ-003/index.html",
+    }
+    require(
+        reintegration_transition.get("schema") == "por-derecho.reintegration-transition.v1"
+        and reintegration_transition.get("publication_id") == "PD-SP-HISTORIC-PROCEEDINGS-AUTHORITY-REINTEGRATION-20260903-01"
+        and reintegration_transition.get("control_date") == "2026-09-03"
+        and reintegration_transition.get("state") == "RELEASE_CANDIDATE_VALIDATION"
+        and re.fullmatch(r"[0-9a-f]{40}", reintegration_transition.get("base_main_sha", ""))
+        and len(reintegration_rows) == len(reintegration_by_path)
+        and reintegration_transition.get("candidate_delta_file_count") == len(reintegration_rows)
+        and reintegration_required_paths <= set(reintegration_by_path)
+        and all(
+            (row.get("candidate_sha256") is None and not (ROOT / path).exists())
+            or row.get("candidate_sha256") == hashlib.sha256((ROOT / path).read_bytes()).hexdigest()
+            for path, row in reintegration_by_path.items()
+        )
+        and all(bool(row.get("reason")) for row in reintegration_rows)
+        and all(
+            anchor.get("sha256") and re.fullmatch(r"[0-9a-f]{64}", anchor.get("sha256", ""))
+            for row in reintegration_rows for anchor in row.get("historical_anchors", [])
+        )
+        and not (ROOT / "en/proceedings/lz-civ-050/index.html").exists()
+        and not (ROOT / "es/procedimientos/lz-civ-050/index.html").exists()
+        and reintegration_transition.get("production") == {
+            "merged_to_main": False,
+            "merge_sha": None,
+            "pages_run_id": None,
+            "live_browser_verified": False,
+        },
+        "current-main historic-proceedings reintegration transition is incomplete or overclaims publication",
     )
 
     renderer_tokens = {

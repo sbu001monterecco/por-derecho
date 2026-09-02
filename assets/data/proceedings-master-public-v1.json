@@ -3,7 +3,7 @@
   "dataset": "por-derecho.public-proceedings-projection",
   "canonical_source_id": "PROCEEDINGS_MASTER_REGISTER",
   "derivation": "DETERMINISTIC_ALLOWLIST",
-  "canonical_source_sha256": "f1827c31dc8f3720e04906add21cc71427afe5ab5943c139d22458badb0e06f7",
+  "canonical_source_sha256": "c3d3d025fa69b1e8b1d3cc7ea8e8d44cd622aeba4d33f7cf3f230a4a39cf9bb9",
   "publication_policy": {
     "eligibility_field": "Public_Treatment",
     "public_treatment_allowlist": [
@@ -47,8 +47,8 @@
     "Source_Status",
     "Open_Reference_Gap"
   ],
-  "source_record_count": 132,
-  "public_record_count": 131,
+  "source_record_count": 131,
+  "public_record_count": 130,
   "excluded_record_count": 1,
   "records": [
     {
@@ -851,21 +851,21 @@
       "Proceeding_Class": "DIRECT",
       "Stream": "Civil preliminary disclosure",
       "Geography": "Gran Canaria",
-      "Origin_Organ": "JPI nº 2 Las Palmas",
-      "Current_Custodian": "JPI nº 2 Las Palmas",
+      "Origin_Organ": "Juzgado de Primera Instancia nº 2 de Las Palmas de Gran Canaria",
+      "Current_Custodian": "Juzgado de Primera Instancia nº 2 de Las Palmas de Gran Canaria",
       "Reference": "Diligencias Preliminares 1041/2017",
-      "Secondary_Reference": "",
-      "NIG": "",
+      "Secondary_Reference": "0001041/2017; Providencia 12/01/2018; IUP LR2017147858",
+      "NIG": "3501642120170028407",
       "Date_or_Period": "2017-2018",
-      "Connection": "LPB v CAM assignment disclosure route",
-      "Object_or_Purpose": "Disclosure of assignment deed/economic terms",
-      "Status": "Admission/disclosure route; later archive/discontinuance identified",
-      "Latest_Known_Event": "",
+      "Connection": "LPB v Construcciones Acosta Matos — assignment-document disclosure route",
+      "Object_or_Purpose": "Exhibition and complete-copy production of the 20-Oct-2017 credit-assignment deed and economic terms",
+      "Status": "Primary 12-Jan-2018 Providencia located; complete docket and later closure sequence remain incomplete",
+      "Latest_Known_Event": "12-Jan-2018 Providencia fixed 19-Feb-2018 exhibition; electronic signatures identify Judge and LAJ",
       "Appeal_or_Review": "",
       "Parent_Master_ID": "",
       "Linked_Proceedings": "",
-      "Source_Status": "VERIFIED_PROCEDURAL",
-      "Open_Reference_Gap": "Signed 19 Dec 2017 order, production, 5 Mar 2018 decree and annexes"
+      "Source_Status": "VERIFIED_PRIMARY_COPY",
+      "Open_Reference_Gap": "Preceding signed Auto; complete docket; evidence of 19-Feb-2018 appearance/production; later 5-Mar-2018 decree/closure; service and finality"
     },
     {
       "Master_ID": "GC-APP-004",
@@ -3074,30 +3074,6 @@
       "Linked_Proceedings": "LZ-JUD-002",
       "Source_Status": "VERIFIED_PRIMARY_FILE_LOCATED_CONTENT_EXTRACTION_PENDING",
       "Open_Reference_Gap": "Assigned Fiscal/signatory extraction; judicial destination/NIG; complete investigation file; disposition/finality"
-    },
-    {
-      "Master_ID": "LZ-CIV-050",
-      "Legacy_ID": "",
-      "Record_Type": "JUDICIAL_PROCEEDING",
-      "Is_Proceeding": "TRUE",
-      "Proceeding_Class": "DIRECT",
-      "Stream": "Civil preliminary proceedings",
-      "Geography": "Lanzarote",
-      "Origin_Organ": "Juzgado de Primera Instancia nº 2 de Arrecife",
-      "Current_Custodian": "Juzgado de Primera Instancia nº 2 de Arrecife",
-      "Reference": "Diligencias Preliminares 1041/2017",
-      "Secondary_Reference": "",
-      "NIG": "",
-      "Date_or_Period": "2017-2018",
-      "Connection": "LPB / CAM / tanteo-retracto transaction-document request",
-      "Object_or_Purpose": "Historical inventory describes preliminary diligences seeking transaction documentation",
-      "Status": "Controlled historical inventory and source-family attachment located; signed complete docket pending",
-      "Latest_Known_Event": "",
-      "Appeal_or_Review": "",
-      "Parent_Master_ID": "",
-      "Linked_Proceedings": "",
-      "Source_Status": "CORPUS_REPORTED_PRIMARY_PENDING",
-      "Open_Reference_Gap": "NIG; signed first/last acts; Judge; LAJ; exact parties/capacities; finality"
     },
     {
       "Master_ID": "LZ-FIS-051",

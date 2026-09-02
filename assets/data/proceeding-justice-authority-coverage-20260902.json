@@ -2,7 +2,7 @@
   "schema": "por-derecho.proceeding-justice-authority-coverage.v1",
   "control_id": "PD-SP-PROCEEDING-AUTHORITY-BACKFILL-20260902-01",
   "control_date": "2026-09-02",
-  "status": "SOURCE_IDENTIFIED_EDGES_PLUS_EXPLICIT_GAPS",
+  "status": "SOURCE_IDENTIFIED_EDGES_PLUS_EXPLICIT_GAPS_DUPLICATE_1041_RECONCILED",
   "completion_boundary": "This backfill covers the recovered historical inventory denominator only. SOURCE_GAP means the current controlled source does not identify the office-holder and no inference is permitted.",
   "records": [
     {
@@ -27,7 +27,10 @@
         "person_ids": []
       },
       "source_status": "VERIFIED_PRIMARY_COPY",
-      "open_gap": "LAJ identity; complete docket; appeal/finality/service record"
+      "open_gap": "LAJ identity; complete docket; appeal/finality/service record",
+      "institution_ids": [
+        "PD-SP-I-0045"
+      ]
     },
     {
       "master_id": "LZ-CIV-035",
@@ -47,7 +50,10 @@
         "person_ids": []
       },
       "source_status": "VERIFIED_PRIMARY_APPELLATE_COPY",
-      "open_gap": "First-instance signed judgment identifying Judge/LAJ; complete first-instance docket and service/finality record"
+      "open_gap": "First-instance signed judgment identifying Judge/LAJ; complete first-instance docket and service/finality record",
+      "institution_ids": [
+        "PD-SP-I-0046"
+      ]
     },
     {
       "master_id": "LZ-APP-046",
@@ -78,7 +84,10 @@
         "person_ids": []
       },
       "source_status": "VERIFIED_PRIMARY_COPY",
-      "open_gap": "LAJ identity; court-certified complete roll; service/finality record"
+      "open_gap": "LAJ identity; court-certified complete roll; service/finality record",
+      "institution_ids": [
+        "PD-SP-I-0014"
+      ]
     },
     {
       "master_id": "LZ-JUD-047",
@@ -98,7 +107,10 @@
         "person_ids": []
       },
       "source_status": "VERIFIED_PRIMARY_IDENTITY_COPY",
-      "open_gap": "Signed initiating order/complaint; Judge; LAJ; prosecutor; accumulation act with DP 168/2015; final disposition, notice and finality"
+      "open_gap": "Signed initiating order/complaint; Judge; LAJ; prosecutor; accumulation act with DP 168/2015; final disposition, notice and finality",
+      "institution_ids": [
+        "PD-SP-I-0047"
+      ]
     },
     {
       "master_id": "LZ-REF-038",
@@ -118,7 +130,10 @@
         "person_ids": []
       },
       "source_status": "CORPUS_REPORTED_PRIMARY_PENDING",
-      "open_gap": "NIG; complaint/querella; signed 15-Jul-2017 accumulation/extension act; Judge; LAJ; prosecutor; final disposition and notice"
+      "open_gap": "NIG; complaint/querella; signed 15-Jul-2017 accumulation/extension act; Judge; LAJ; prosecutor; final disposition and notice",
+      "institution_ids": [
+        "PD-SP-I-0047"
+      ]
     },
     {
       "master_id": "LZ-JUD-048",
@@ -138,7 +153,10 @@
         "person_ids": []
       },
       "source_status": "CORPUS_REPORTED_PRIMARY_PENDING",
-      "open_gap": "NIG; querella/complaint; exact parties/capacities; Judge; LAJ; prosecutor; archive order and finality"
+      "open_gap": "NIG; querella/complaint; exact parties/capacities; Judge; LAJ; prosecutor; archive order and finality",
+      "institution_ids": [
+        "PD-SP-I-0045"
+      ]
     },
     {
       "master_id": "LZ-APP-054",
@@ -258,7 +276,10 @@
         "person_ids": []
       },
       "source_status": "CORPUS_REPORTED_PRIMARY_PENDING",
-      "open_gap": "NIG; signed judgment; Judge; LAJ; pleadings; service/finality"
+      "open_gap": "NIG; signed judgment; Judge; LAJ; pleadings; service/finality",
+      "institution_ids": [
+        "PD-SP-I-0046"
+      ]
     },
     {
       "master_id": "LZ-JUD-002",
@@ -278,7 +299,10 @@
         "person_ids": []
       },
       "source_status": "CORPUS_REPORTED_PRIMARY_PENDING",
-      "open_gap": "Certified docket, signed final disposition, notice and finality"
+      "open_gap": "Certified docket, signed final disposition, notice and finality",
+      "institution_ids": [
+        "PD-SP-I-0045"
+      ]
     },
     {
       "master_id": "LZ-JUD-003",
@@ -298,7 +322,10 @@
         "person_ids": []
       },
       "source_status": "VERIFIED_PRIMARY_COPY",
-      "open_gap": "Court-certified complete docket, service record, full annex set and audiovisual masters"
+      "open_gap": "Court-certified complete docket, service record, full annex set and audiovisual masters",
+      "institution_ids": [
+        "PD-SP-I-0024"
+      ]
     },
     {
       "master_id": "LZ-APP-004",
@@ -324,27 +351,41 @@
         "person_ids": []
       },
       "source_status": "VERIFIED_PRIMARY_COPY",
-      "open_gap": "Court-certified complete roll, appeal/opposition filings, Fiscalía position and service record"
+      "open_gap": "Court-certified complete roll, appeal/opposition filings, Fiscalía position and service record",
+      "institution_ids": [
+        "PD-SP-I-0025"
+      ]
     },
     {
       "master_id": "GC-CIV-003",
       "reference": "Diligencias Preliminares 1041/2017",
-      "nig": "",
-      "court_or_fiscalia": "JPI nº 2 Las Palmas",
+      "nig": "3501642120170028407",
+      "court_or_fiscalia": "Juzgado de Primera Instancia nº 2 de Las Palmas de Gran Canaria",
       "judge_or_magistrate": {
-        "state": "SOURCE_GAP",
-        "person_ids": []
+        "state": "SOURCE_IDENTIFIED",
+        "person_ids": [
+          "PD-SP-P-0124"
+        ],
+        "act": "Providencia",
+        "date": "2018-01-12"
       },
       "laj": {
-        "state": "SOURCE_GAP",
-        "person_ids": []
+        "state": "SOURCE_IDENTIFIED",
+        "person_ids": [
+          "PD-SP-P-0165"
+        ],
+        "act": "Providencia (electronic LAJ signature)",
+        "date": "2018-01-15"
       },
       "fiscal": {
-        "state": "NOT_APPLICABLE_OR_SOURCE_GAP",
+        "state": "NOT_APPLICABLE",
         "person_ids": []
       },
-      "source_status": "VERIFIED_PROCEDURAL",
-      "open_gap": "Signed 19 Dec 2017 order, production, 5 Mar 2018 decree and annexes"
+      "source_status": "VERIFIED_PRIMARY_COPY",
+      "open_gap": "Preceding signed Auto; complete docket; evidence of 19-Feb-2018 appearance/production; later 5-Mar-2018 decree/closure; service and finality",
+      "institution_ids": [
+        "PD-SP-I-0048"
+      ]
     },
     {
       "master_id": "LZ-FIS-049",
@@ -364,7 +405,10 @@
         "person_ids": []
       },
       "source_status": "VERIFIED_PRIMARY_FILE_LOCATED_CONTENT_EXTRACTION_PENDING",
-      "open_gap": "Assigned Fiscal/signatory extraction; judicial destination/NIG; complete investigation file; disposition/finality"
+      "open_gap": "Assigned Fiscal/signatory extraction; judicial destination/NIG; complete investigation file; disposition/finality",
+      "institution_ids": [
+        "PD-SP-I-0020"
+      ]
     },
     {
       "master_id": "LZ-FIS-051",
@@ -384,7 +428,10 @@
         "person_ids": []
       },
       "source_status": "CORPUS_REPORTED_PRIMARY_PENDING",
-      "open_gap": "Exact Fiscalía file class; assigned Fiscal/signatory; opening and archive decrees; annexes; notice/finality"
+      "open_gap": "Exact Fiscalía file class; assigned Fiscal/signatory; opening and archive decrees; annexes; notice/finality",
+      "institution_ids": [
+        "PD-SP-I-0020"
+      ]
     },
     {
       "master_id": "LZ-REF-052",

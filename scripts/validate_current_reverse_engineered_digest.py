@@ -41,11 +41,11 @@ DIGEST_SNAPSHOT_IDENTITY_COUNTS = {
 # has since gained the La Laguna judicial perimeter plus this DP 748 source
 # control; validate that current denominator independently.
 CURRENT_CANONICAL_IDENTITY_COUNTS = {
-    "total": 348,
-    "PERSON": 164,
+    "total": 350,
+    "PERSON": 165,
     "ORGANISATION": 83,
     "STRUCTURE": 11,
-    "INSTITUTION": 47,
+    "INSTITUTION": 48,
     "PROCEEDING": 43,
 }
 

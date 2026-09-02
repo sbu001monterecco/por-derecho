@@ -21,7 +21,8 @@
         "Sentencia 39/2011, Procedimiento Ordinario 467/2010, dated 14-Mar-2011, primary judicial copy"
       ],
       "verification_detail": "Primary signed judicial judgment identifies the Magistrada-Juez",
-      "capacity_boundary": "Magistrada-Juez deciding Sentencia 39/2011 in P.O. 467/2010 only. Identity does not establish authorship of any other act, LAJ identity, later office, knowledge, merits correctness, wrongdoing or liability."
+      "capacity_boundary": "Magistrada-Juez deciding Sentencia 39/2011 in P.O. 467/2010 only. Identity does not establish authorship of any other act, LAJ identity, later office, knowledge, merits correctness, wrongdoing or liability.",
+      "role": "JUDGE_OR_MAGISTRATE"
     },
     {
       "id": "PD-SP-P-0164",
@@ -39,7 +40,8 @@
         "Sentencia 89/2014, Rollo de Apelación 793/2012, dated 13-Jan-2014, primary judicial copy"
       ],
       "verification_detail": "Primary appellate judgment identifies Presidenta of the panel",
-      "capacity_boundary": "Presidenta of the Sección Cuarta panel recorded in Sentencia 89/2014 / Rollo 793/2012 only. This does not establish participation in any other appeal, vote beyond the signed panel act, knowledge, wrongdoing or liability."
+      "capacity_boundary": "Presidenta of the Sección Cuarta panel recorded in Sentencia 89/2014 / Rollo 793/2012 only. This does not establish participation in any other appeal, vote beyond the signed panel act, knowledge, wrongdoing or liability.",
+      "role": "JUDGE_OR_MAGISTRATE"
     }
   ]
 }

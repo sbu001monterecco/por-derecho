@@ -20,7 +20,7 @@
     "A parent court, each section or court position, every proceeding and every named office-holder remain separate canonical objects; hierarchy supplies navigation only."
   ],
   "coverage": {
-    "state": "COMPLETE_FOR_CURRENT_CANONICAL_ACTOR_REGISTER_SOURCE_IDENTIFIED_HISTORIC_ARRECIFE_AUTHORITY_BACKFILL_GLOBAL_DOCKET_BACKFILL_OPEN",
+    "state": "COMPLETE_FOR_CURRENT_CANONICAL_ACTOR_REGISTER_SOURCE_IDENTIFIED_HISTORIC_AUTHORITY_BACKFILL_GLOBAL_DOCKET_BACKFILL_OPEN",
     "archive_backfill": "OPEN",
     "required_names": [
       "Construcciones Acosta Matos, S.A.",
@@ -170,15 +170,17 @@
       "Emma Galcerán Solsona",
       "Juzgado de Instrucción nº 3 de Arrecife (antiguo Mixto nº 8)",
       "Juzgado de Primera Instancia nº 4 de Arrecife",
-      "Juzgado de Instrucción nº 4 de Arrecife"
+      "Juzgado de Instrucción nº 4 de Arrecife",
+      "Fernando Pérez Polo",
+      "Juzgado de Primera Instancia nº 2 de Las Palmas de Gran Canaria"
     ]
   },
   "counts": {
-    "total": 348,
-    "PERSON": 164,
+    "total": 350,
+    "PERSON": 165,
     "ORGANISATION": 83,
     "STRUCTURE": 11,
-    "INSTITUTION": 47,
+    "INSTITUTION": 48,
     "PROCEEDING": 43
   },
   "parts": [
@@ -261,6 +263,16 @@
       "path": "matter-identity-registry-v1.historic-arrecife-judicial-institutions-20260902.json",
       "type": "INSTITUTION",
       "count": 3
+    },
+    {
+      "path": "matter-identity-registry-v1.historic-las-palmas-civil-judicial-people-20260902.json",
+      "type": "PERSON",
+      "count": 1
+    },
+    {
+      "path": "matter-identity-registry-v1.historic-las-palmas-civil-judicial-institutions-20260902.json",
+      "type": "INSTITUTION",
+      "count": 1
     }
   ]
 }

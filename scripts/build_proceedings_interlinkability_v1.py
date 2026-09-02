@@ -34,12 +34,14 @@ CONTEXT_SOURCE_FILES = (
     ROOT / "assets/data/treasury-transparency-7-2026-v1.json",
 )
 
-EXPECTED_PUBLIC_RECORDS = 121
-EXPECTED_CANONICAL_EXACT_PROCEEDINGS = 98
-EXPECTED_PUBLIC_EXACT_PROCEEDINGS = 97
+EXPECTED_PUBLIC_RECORDS = 130
+EXPECTED_CANONICAL_EXACT_PROCEEDINGS = 107
+EXPECTED_PUBLIC_EXACT_PROCEEDINGS = 106
 EXPECTED_PRIVATE_EXACT_PROCEEDINGS = 1
 EXPECTED_CASE_PRISM_EXACT_COVERED = 43
-EXPECTED_FISCALIA_OFFICE_FILE_RECORDS = 24
+EXPECTED_FISCALIA_OFFICE_FILE_RECORDS = 26
+EXPECTED_FISCALIA_EXACT_RECORDS = 23
+EXPECTED_FISCALIA_UNVERIFIED_RECORDS = 3
 EXPECTED_FISCALIA_RESPONSE_EPISODES = 9
 
 DIRECT_TYPE_PRIORITY = {
@@ -95,9 +97,9 @@ FINITE_TEST_FAMILY_CATALOG = {
 
 EXPECTED_FINITE_TEST_FAMILY_COUNTS = {
     "ADMIN_AUTHORITY_TITLE_SOURCE": 26,
-    "CIVIL_FILE_DECISION": 19,
-    "CRIMINAL_FILE_DECISION": 11,
-    "FISCALIA_INSTITUTIONAL_MEMORY": 21,
+    "CIVIL_FILE_DECISION": 23,
+    "CRIMINAL_FILE_DECISION": 14,
+    "FISCALIA_INSTITUTIONAL_MEMORY": 23,
     "OMBUDSMAN_RECONSIDERATION": 1,
     "PROFESSIONAL_SUPERVISION": 8,
     "REGULATORY_PUBLIC_ROUTE": 7,
@@ -375,6 +377,15 @@ GAP_ES = {
     "GC-FIS-035": "Acto subyacente; objeto; expediente e índice completos; disposición; NIG; firmante; material examinado; y cualquier traslado o tratamiento posterior.",
     "NAT-FIS-006": "Expediente e índice completos; objeto; traslado o asociación interna; funcionario asignado; NIG; identidad del firmante; y actuación o resultado posterior.",
     "NAT-FIS-007": "Expediente e índice completos; objeto; traslado o asociación interna; funcionario asignado; NIG; identidad del firmante; y actuación o resultado posterior.",
+    "LZ-APP-046": "Identidad del LAJ; rollo certificado completo; registro de notificación y firmeza.",
+    "LZ-APP-054": "NIG; resolución final firmada exacta; identidades del panel o Juez cuando proceda por el acto judicial; LAJ; notificación y firmeza.",
+    "LZ-CIV-045": "Identidad del LAJ; expediente completo; recurso, firmeza y registro de notificación.",
+    "LZ-FIS-049": "Extracción del Fiscal asignado o firmante; destino judicial y NIG; expediente completo de investigación; disposición y firmeza.",
+    "LZ-FIS-051": "Clase exacta del expediente de Fiscalía; Fiscal asignado o firmante; decretos de incoación y archivo; anexos; notificación y firmeza.",
+    "LZ-JUD-047": "Auto inicial o denuncia firmados; Juez; LAJ; Fiscal; acto de acumulación con DP 168/2015; disposición final, notificación y firmeza.",
+    "LZ-JUD-048": "NIG; querella o denuncia; partes y capacidades exactas; Juez; LAJ; Fiscal; auto de archivo y firmeza.",
+    "LZ-REF-038": "NIG; denuncia o querella; acto firmado de acumulación o ampliación de 15 de julio de 2017; Juez; LAJ; Fiscal; disposición final y notificación.",
+    "LZ-REF-039": "NIG; sentencia firmada; Juez; LAJ; escritos de las partes; notificación y firmeza.",
 }
 
 
@@ -2073,9 +2084,15 @@ def build() -> dict[str, Any]:
     fiscalia_matrix_unverified_count = sum(
         row.get("is_proceeding") == "UNVERIFIED" for row in fiscalia_matrix
     )
-    if (fiscalia_matrix_exact_count, fiscalia_matrix_unverified_count) != (21, 3):
+    if (fiscalia_matrix_exact_count, fiscalia_matrix_unverified_count) != (
+        EXPECTED_FISCALIA_EXACT_RECORDS,
+        EXPECTED_FISCALIA_UNVERIFIED_RECORDS,
+    ):
         raise ValueError(
-            "Fiscalía office/file matrix must preserve its 21 exact + 3 unresolved split"
+            "Fiscalía office/file exact/unresolved split is stale: "
+            f"expected {EXPECTED_FISCALIA_EXACT_RECORDS} exact + "
+            f"{EXPECTED_FISCALIA_UNVERIFIED_RECORDS} unresolved, found "
+            f"{fiscalia_matrix_exact_count} + {fiscalia_matrix_unverified_count}"
         )
     fiscalia_matrix_source_profiled_record_count = sum(
         bool(row.get("source_profile_ids")) for row in fiscalia_matrix

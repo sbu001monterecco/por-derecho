@@ -2,7 +2,7 @@
   "schema": "por-derecho.proceeding-page-routes.v1",
   "control_date": "2026-09-02",
   "status": "DEDICATED_BILINGUAL_PAGE_FOR_EVERY_PUBLIC_MASTER_RECORD",
-  "record_count": 131,
+  "record_count": 130,
   "routes": {
     "LZ-JUD-001": {
       "es": "es/procedimientos/lz-jud-001/",
@@ -507,10 +507,6 @@
     "LZ-FIS-049": {
       "es": "es/procedimientos/lz-fis-049/",
       "en": "en/proceedings/lz-fis-049/"
-    },
-    "LZ-CIV-050": {
-      "es": "es/procedimientos/lz-civ-050/",
-      "en": "en/proceedings/lz-civ-050/"
     },
     "LZ-FIS-051": {
       "es": "es/procedimientos/lz-fis-051/",
