@@ -1,0 +1,532 @@
+{
+  "schema": "por-derecho.proceeding-page-routes.v1",
+  "control_date": "2026-09-02",
+  "status": "DEDICATED_BILINGUAL_PAGE_FOR_EVERY_PUBLIC_MASTER_RECORD",
+  "record_count": 131,
+  "routes": {
+    "LZ-JUD-001": {
+      "es": "es/procedimientos/lz-jud-001/",
+      "en": "en/proceedings/lz-jud-001/"
+    },
+    "LZ-JUD-002": {
+      "es": "es/procedimientos/lz-jud-002/",
+      "en": "en/proceedings/lz-jud-002/"
+    },
+    "LZ-JUD-003": {
+      "es": "es/procedimientos/lz-jud-003/",
+      "en": "en/proceedings/lz-jud-003/"
+    },
+    "LZ-JUD-042": {
+      "es": "es/procedimientos/lz-jud-042/",
+      "en": "en/proceedings/lz-jud-042/"
+    },
+    "LZ-APP-004": {
+      "es": "es/procedimientos/lz-app-004/",
+      "en": "en/proceedings/lz-app-004/"
+    },
+    "LZ-JUD-005": {
+      "es": "es/procedimientos/lz-jud-005/",
+      "en": "en/proceedings/lz-jud-005/"
+    },
+    "LZ-JUD-FAM-006": {
+      "es": "es/procedimientos/lz-jud-fam-006/",
+      "en": "en/proceedings/lz-jud-fam-006/"
+    },
+    "LZ-FIS-007": {
+      "es": "es/procedimientos/lz-fis-007/",
+      "en": "en/proceedings/lz-fis-007/"
+    },
+    "LZ-TUR-008": {
+      "es": "es/procedimientos/lz-tur-008/",
+      "en": "en/proceedings/lz-tur-008/"
+    },
+    "LZ-TUR-009": {
+      "es": "es/procedimientos/lz-tur-009/",
+      "en": "en/proceedings/lz-tur-009/"
+    },
+    "LZ-TUR-010": {
+      "es": "es/procedimientos/lz-tur-010/",
+      "en": "en/proceedings/lz-tur-010/"
+    },
+    "LZ-CAB-011": {
+      "es": "es/procedimientos/lz-cab-011/",
+      "en": "en/proceedings/lz-cab-011/"
+    },
+    "LZ-CAB-012": {
+      "es": "es/procedimientos/lz-cab-012/",
+      "en": "en/proceedings/lz-cab-012/"
+    },
+    "LZ-CAB-013": {
+      "es": "es/procedimientos/lz-cab-013/",
+      "en": "en/proceedings/lz-cab-013/"
+    },
+    "LZ-YAI-014": {
+      "es": "es/procedimientos/lz-yai-014/",
+      "en": "en/proceedings/lz-yai-014/"
+    },
+    "LZ-YAI-015": {
+      "es": "es/procedimientos/lz-yai-015/",
+      "en": "en/proceedings/lz-yai-015/"
+    },
+    "LZ-YAI-016": {
+      "es": "es/procedimientos/lz-yai-016/",
+      "en": "en/proceedings/lz-yai-016/"
+    },
+    "LZ-YAI-017": {
+      "es": "es/procedimientos/lz-yai-017/",
+      "en": "en/proceedings/lz-yai-017/"
+    },
+    "LZ-YAI-018": {
+      "es": "es/procedimientos/lz-yai-018/",
+      "en": "en/proceedings/lz-yai-018/"
+    },
+    "LZ-CAB-019": {
+      "es": "es/procedimientos/lz-cab-019/",
+      "en": "en/proceedings/lz-cab-019/"
+    },
+    "LZ-CAB-020": {
+      "es": "es/procedimientos/lz-cab-020/",
+      "en": "en/proceedings/lz-cab-020/"
+    },
+    "LZ-CAB-021": {
+      "es": "es/procedimientos/lz-cab-021/",
+      "en": "en/proceedings/lz-cab-021/"
+    },
+    "LZ-CAB-022": {
+      "es": "es/procedimientos/lz-cab-022/",
+      "en": "en/proceedings/lz-cab-022/"
+    },
+    "LZ-CAB-023": {
+      "es": "es/procedimientos/lz-cab-023/",
+      "en": "en/proceedings/lz-cab-023/"
+    },
+    "LZ-CAB-024": {
+      "es": "es/procedimientos/lz-cab-024/",
+      "en": "en/proceedings/lz-cab-024/"
+    },
+    "LZ-CAB-025": {
+      "es": "es/procedimientos/lz-cab-025/",
+      "en": "en/proceedings/lz-cab-025/"
+    },
+    "LZ-YAI-026": {
+      "es": "es/procedimientos/lz-yai-026/",
+      "en": "en/proceedings/lz-yai-026/"
+    },
+    "LZ-TRA-027": {
+      "es": "es/procedimientos/lz-tra-027/",
+      "en": "en/proceedings/lz-tra-027/"
+    },
+    "LZ-TRA-028": {
+      "es": "es/procedimientos/lz-tra-028/",
+      "en": "en/proceedings/lz-tra-028/"
+    },
+    "LZ-PRO-029": {
+      "es": "es/procedimientos/lz-pro-029/",
+      "en": "en/proceedings/lz-pro-029/"
+    },
+    "LZ-TEC-030": {
+      "es": "es/procedimientos/lz-tec-030/",
+      "en": "en/proceedings/lz-tec-030/"
+    },
+    "GC-JUD-001": {
+      "es": "es/procedimientos/gc-jud-001/",
+      "en": "en/proceedings/gc-jud-001/"
+    },
+    "GC-CAL-002": {
+      "es": "es/procedimientos/gc-cal-002/",
+      "en": "en/proceedings/gc-cal-002/"
+    },
+    "GC-CIV-003": {
+      "es": "es/procedimientos/gc-civ-003/",
+      "en": "en/proceedings/gc-civ-003/"
+    },
+    "GC-APP-004": {
+      "es": "es/procedimientos/gc-app-004/",
+      "en": "en/proceedings/gc-app-004/"
+    },
+    "GC-APP-005": {
+      "es": "es/procedimientos/gc-app-005/",
+      "en": "en/proceedings/gc-app-005/"
+    },
+    "GC-APP-006": {
+      "es": "es/procedimientos/gc-app-006/",
+      "en": "en/proceedings/gc-app-006/"
+    },
+    "GC-APP-007": {
+      "es": "es/procedimientos/gc-app-007/",
+      "en": "en/proceedings/gc-app-007/"
+    },
+    "GC-CIV-027": {
+      "es": "es/procedimientos/gc-civ-027/",
+      "en": "en/proceedings/gc-civ-027/"
+    },
+    "GC-CIV-030": {
+      "es": "es/procedimientos/gc-civ-030/",
+      "en": "en/proceedings/gc-civ-030/"
+    },
+    "GC-APP-028": {
+      "es": "es/procedimientos/gc-app-028/",
+      "en": "en/proceedings/gc-app-028/"
+    },
+    "GC-REF-029": {
+      "es": "es/procedimientos/gc-ref-029/",
+      "en": "en/proceedings/gc-ref-029/"
+    },
+    "GC-CRI-008": {
+      "es": "es/procedimientos/gc-cri-008/",
+      "en": "en/proceedings/gc-cri-008/"
+    },
+    "GC-CRI-009": {
+      "es": "es/procedimientos/gc-cri-009/",
+      "en": "en/proceedings/gc-cri-009/"
+    },
+    "GC-HC-010": {
+      "es": "es/procedimientos/gc-hc-010/",
+      "en": "en/proceedings/gc-hc-010/"
+    },
+    "GC-FIS-011": {
+      "es": "es/procedimientos/gc-fis-011/",
+      "en": "en/proceedings/gc-fis-011/"
+    },
+    "GC-FIS-012": {
+      "es": "es/procedimientos/gc-fis-012/",
+      "en": "en/proceedings/gc-fis-012/"
+    },
+    "GC-FIS-013": {
+      "es": "es/procedimientos/gc-fis-013/",
+      "en": "en/proceedings/gc-fis-013/"
+    },
+    "GC-FIS-014": {
+      "es": "es/procedimientos/gc-fis-014/",
+      "en": "en/proceedings/gc-fis-014/"
+    },
+    "GC-FIS-015": {
+      "es": "es/procedimientos/gc-fis-015/",
+      "en": "en/proceedings/gc-fis-015/"
+    },
+    "GC-FIS-016": {
+      "es": "es/procedimientos/gc-fis-016/",
+      "en": "en/proceedings/gc-fis-016/"
+    },
+    "GC-FIS-017": {
+      "es": "es/procedimientos/gc-fis-017/",
+      "en": "en/proceedings/gc-fis-017/"
+    },
+    "GC-FIS-018": {
+      "es": "es/procedimientos/gc-fis-018/",
+      "en": "en/proceedings/gc-fis-018/"
+    },
+    "GC-GOV-019": {
+      "es": "es/procedimientos/gc-gov-019/",
+      "en": "en/proceedings/gc-gov-019/"
+    },
+    "GC-GOV-020": {
+      "es": "es/procedimientos/gc-gov-020/",
+      "en": "en/proceedings/gc-gov-020/"
+    },
+    "GC-LAJ-021": {
+      "es": "es/procedimientos/gc-laj-021/",
+      "en": "en/proceedings/gc-laj-021/"
+    },
+    "GC-PRO-022": {
+      "es": "es/procedimientos/gc-pro-022/",
+      "en": "en/proceedings/gc-pro-022/"
+    },
+    "GC-PRO-023": {
+      "es": "es/procedimientos/gc-pro-023/",
+      "en": "en/proceedings/gc-pro-023/"
+    },
+    "GC-POL-024": {
+      "es": "es/procedimientos/gc-pol-024/",
+      "en": "en/proceedings/gc-pol-024/"
+    },
+    "GC-CONT-025": {
+      "es": "es/procedimientos/gc-cont-025/",
+      "en": "en/proceedings/gc-cont-025/"
+    },
+    "GC-TEC-026": {
+      "es": "es/procedimientos/gc-tec-026/",
+      "en": "en/proceedings/gc-tec-026/"
+    },
+    "TF-CIV-001": {
+      "es": "es/procedimientos/tf-civ-001/",
+      "en": "en/proceedings/tf-civ-001/"
+    },
+    "TF-CIV-002": {
+      "es": "es/procedimientos/tf-civ-002/",
+      "en": "en/proceedings/tf-civ-002/"
+    },
+    "TF-CRI-003": {
+      "es": "es/procedimientos/tf-cri-003/",
+      "en": "en/proceedings/tf-cri-003/"
+    },
+    "TF-APP-004": {
+      "es": "es/procedimientos/tf-app-004/",
+      "en": "en/proceedings/tf-app-004/"
+    },
+    "TF-XFR-005": {
+      "es": "es/procedimientos/tf-xfr-005/",
+      "en": "en/proceedings/tf-xfr-005/"
+    },
+    "X-REG-001": {
+      "es": "es/procedimientos/x-reg-001/",
+      "en": "en/proceedings/x-reg-001/"
+    },
+    "X-TAX-002": {
+      "es": "es/procedimientos/x-tax-002/",
+      "en": "en/proceedings/x-tax-002/"
+    },
+    "X-EU-003": {
+      "es": "es/procedimientos/x-eu-003/",
+      "en": "en/proceedings/x-eu-003/"
+    },
+    "X-INT-004": {
+      "es": "es/procedimientos/x-int-004/",
+      "en": "en/proceedings/x-int-004/"
+    },
+    "X-WB-005": {
+      "es": "es/procedimientos/x-wb-005/",
+      "en": "en/proceedings/x-wb-005/"
+    },
+    "LZ-YAI-031": {
+      "es": "es/procedimientos/lz-yai-031/",
+      "en": "en/proceedings/lz-yai-031/"
+    },
+    "LZ-TRA-032": {
+      "es": "es/procedimientos/lz-tra-032/",
+      "en": "en/proceedings/lz-tra-032/"
+    },
+    "LZ-CIV-033": {
+      "es": "es/procedimientos/lz-civ-033/",
+      "en": "en/proceedings/lz-civ-033/"
+    },
+    "LZ-CIV-034": {
+      "es": "es/procedimientos/lz-civ-034/",
+      "en": "en/proceedings/lz-civ-034/"
+    },
+    "LZ-CIV-035": {
+      "es": "es/procedimientos/lz-civ-035/",
+      "en": "en/proceedings/lz-civ-035/"
+    },
+    "LZ-CIV-040": {
+      "es": "es/procedimientos/lz-civ-040/",
+      "en": "en/proceedings/lz-civ-040/"
+    },
+    "LZ-CIV-041": {
+      "es": "es/procedimientos/lz-civ-041/",
+      "en": "en/proceedings/lz-civ-041/"
+    },
+    "LZ-FIS-036": {
+      "es": "es/procedimientos/lz-fis-036/",
+      "en": "en/proceedings/lz-fis-036/"
+    },
+    "LZ-YAI-037": {
+      "es": "es/procedimientos/lz-yai-037/",
+      "en": "en/proceedings/lz-yai-037/"
+    },
+    "LZ-REF-038": {
+      "es": "es/procedimientos/lz-ref-038/",
+      "en": "en/proceedings/lz-ref-038/"
+    },
+    "LZ-REF-039": {
+      "es": "es/procedimientos/lz-ref-039/",
+      "en": "en/proceedings/lz-ref-039/"
+    },
+    "LZ-REF-044": {
+      "es": "es/procedimientos/lz-ref-044/",
+      "en": "en/proceedings/lz-ref-044/"
+    },
+    "MAD-AN-CONT-001": {
+      "es": "es/procedimientos/mad-an-cont-001/",
+      "en": "en/proceedings/mad-an-cont-001/"
+    },
+    "MAD-AN-CONT-002": {
+      "es": "es/procedimientos/mad-an-cont-002/",
+      "en": "en/proceedings/mad-an-cont-002/"
+    },
+    "NAT-AEAT-001": {
+      "es": "es/procedimientos/nat-aeat-001/",
+      "en": "en/proceedings/nat-aeat-001/"
+    },
+    "NAT-AEAT-002": {
+      "es": "es/procedimientos/nat-aeat-002/",
+      "en": "en/proceedings/nat-aeat-002/"
+    },
+    "NAT-AEAT-COM-003": {
+      "es": "es/procedimientos/nat-aeat-com-003/",
+      "en": "en/proceedings/nat-aeat-com-003/"
+    },
+    "MAD-ICAM-001": {
+      "es": "es/procedimientos/mad-icam-001/",
+      "en": "en/proceedings/mad-icam-001/"
+    },
+    "MAD-CCACM-002": {
+      "es": "es/procedimientos/mad-ccacm-002/",
+      "en": "en/proceedings/mad-ccacm-002/"
+    },
+    "MAD-ICAM-003": {
+      "es": "es/procedimientos/mad-icam-003/",
+      "en": "en/proceedings/mad-icam-003/"
+    },
+    "MAD-ICAM-004": {
+      "es": "es/procedimientos/mad-icam-004/",
+      "en": "en/proceedings/mad-icam-004/"
+    },
+    "MAD-ICAM-005": {
+      "es": "es/procedimientos/mad-icam-005/",
+      "en": "en/proceedings/mad-icam-005/"
+    },
+    "NAT-CNMV-001": {
+      "es": "es/procedimientos/nat-cnmv-001/",
+      "en": "en/proceedings/nat-cnmv-001/"
+    },
+    "NAT-CNMV-002": {
+      "es": "es/procedimientos/nat-cnmv-002/",
+      "en": "en/proceedings/nat-cnmv-002/"
+    },
+    "NAT-AID-001": {
+      "es": "es/procedimientos/nat-aid-001/",
+      "en": "en/proceedings/nat-aid-001/"
+    },
+    "NAT-TES-001": {
+      "es": "es/procedimientos/nat-tes-001/",
+      "en": "en/proceedings/nat-tes-001/"
+    },
+    "CAN-OMB-001": {
+      "es": "es/procedimientos/can-omb-001/",
+      "en": "en/proceedings/can-omb-001/"
+    },
+    "MAD-AN-CRI-003": {
+      "es": "es/procedimientos/mad-an-cri-003/",
+      "en": "en/proceedings/mad-an-cri-003/"
+    },
+    "MAD-AN-CRI-004": {
+      "es": "es/procedimientos/mad-an-cri-004/",
+      "en": "en/proceedings/mad-an-cri-004/"
+    },
+    "ESP-TS-001": {
+      "es": "es/procedimientos/esp-ts-001/",
+      "en": "en/proceedings/esp-ts-001/"
+    },
+    "VAL-CIV-001": {
+      "es": "es/procedimientos/val-civ-001/",
+      "en": "en/proceedings/val-civ-001/"
+    },
+    "TF-CIV-006": {
+      "es": "es/procedimientos/tf-civ-006/",
+      "en": "en/proceedings/tf-civ-006/"
+    },
+    "LZ-JUD-043": {
+      "es": "es/procedimientos/lz-jud-043/",
+      "en": "en/proceedings/lz-jud-043/"
+    },
+    "GC-REF-031": {
+      "es": "es/procedimientos/gc-ref-031/",
+      "en": "en/proceedings/gc-ref-031/"
+    },
+    "LZ-REF-042": {
+      "es": "es/procedimientos/lz-ref-042/",
+      "en": "en/proceedings/lz-ref-042/"
+    },
+    "LZ-FIS-045": {
+      "es": "es/procedimientos/lz-fis-045/",
+      "en": "en/proceedings/lz-fis-045/"
+    },
+    "TF-FIS-007": {
+      "es": "es/procedimientos/tf-fis-007/",
+      "en": "en/proceedings/tf-fis-007/"
+    },
+    "GC-FIS-032": {
+      "es": "es/procedimientos/gc-fis-032/",
+      "en": "en/proceedings/gc-fis-032/"
+    },
+    "TF-FIS-008": {
+      "es": "es/procedimientos/tf-fis-008/",
+      "en": "en/proceedings/tf-fis-008/"
+    },
+    "GC-FIS-033": {
+      "es": "es/procedimientos/gc-fis-033/",
+      "en": "en/proceedings/gc-fis-033/"
+    },
+    "NAT-FIS-004": {
+      "es": "es/procedimientos/nat-fis-004/",
+      "en": "en/proceedings/nat-fis-004/"
+    },
+    "LZ-JUD-046": {
+      "es": "es/procedimientos/lz-jud-046/",
+      "en": "en/proceedings/lz-jud-046/"
+    },
+    "GC-FIS-034": {
+      "es": "es/procedimientos/gc-fis-034/",
+      "en": "en/proceedings/gc-fis-034/"
+    },
+    "NAT-FIS-005": {
+      "es": "es/procedimientos/nat-fis-005/",
+      "en": "en/proceedings/nat-fis-005/"
+    },
+    "GC-FIS-035": {
+      "es": "es/procedimientos/gc-fis-035/",
+      "en": "en/proceedings/gc-fis-035/"
+    },
+    "NAT-FIS-006": {
+      "es": "es/procedimientos/nat-fis-006/",
+      "en": "en/proceedings/nat-fis-006/"
+    },
+    "NAT-FIS-007": {
+      "es": "es/procedimientos/nat-fis-007/",
+      "en": "en/proceedings/nat-fis-007/"
+    },
+    "TF-FIS-009": {
+      "es": "es/procedimientos/tf-fis-009/",
+      "en": "en/proceedings/tf-fis-009/"
+    },
+    "TF-FIS-010": {
+      "es": "es/procedimientos/tf-fis-010/",
+      "en": "en/proceedings/tf-fis-010/"
+    },
+    "UNK-FIS-001": {
+      "es": "es/procedimientos/unk-fis-001/",
+      "en": "en/proceedings/unk-fis-001/"
+    },
+    "LZ-CIV-045": {
+      "es": "es/procedimientos/lz-civ-045/",
+      "en": "en/proceedings/lz-civ-045/"
+    },
+    "LZ-APP-046": {
+      "es": "es/procedimientos/lz-app-046/",
+      "en": "en/proceedings/lz-app-046/"
+    },
+    "LZ-JUD-047": {
+      "es": "es/procedimientos/lz-jud-047/",
+      "en": "en/proceedings/lz-jud-047/"
+    },
+    "LZ-JUD-048": {
+      "es": "es/procedimientos/lz-jud-048/",
+      "en": "en/proceedings/lz-jud-048/"
+    },
+    "LZ-FIS-049": {
+      "es": "es/procedimientos/lz-fis-049/",
+      "en": "en/proceedings/lz-fis-049/"
+    },
+    "LZ-CIV-050": {
+      "es": "es/procedimientos/lz-civ-050/",
+      "en": "en/proceedings/lz-civ-050/"
+    },
+    "LZ-FIS-051": {
+      "es": "es/procedimientos/lz-fis-051/",
+      "en": "en/proceedings/lz-fis-051/"
+    },
+    "LZ-REF-052": {
+      "es": "es/procedimientos/lz-ref-052/",
+      "en": "en/proceedings/lz-ref-052/"
+    },
+    "LZ-REF-053": {
+      "es": "es/procedimientos/lz-ref-053/",
+      "en": "en/proceedings/lz-ref-053/"
+    },
+    "LZ-APP-054": {
+      "es": "es/procedimientos/lz-app-054/",
+      "en": "en/proceedings/lz-app-054/"
+    }
+  }
+}

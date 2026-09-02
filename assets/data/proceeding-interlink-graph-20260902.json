@@ -1,0 +1,1298 @@
+{
+  "schema": "por-derecho.proceeding-interlink-graph.v1",
+  "control_date": "2026-09-02",
+  "status": "RECIPROCAL_FORMAL_EDGES_PLUS_LABELLED_NAVIGATION_ONLY_EDGES",
+  "boundary": "Formal related edges derive only from Parent_Master_ID and Linked_Proceedings. Textual and same-organ links are navigation aids and do not establish joinder, transfer, common parties, common knowledge, merits, causation or liability.",
+  "record_count": 131,
+  "records": [
+    {
+      "master_id": "LZ-JUD-001",
+      "formal_related": [],
+      "canonical_text_cross_references": [],
+      "same_origin_organ_navigation": [
+        "GC-APP-028",
+        "GC-APP-004",
+        "GC-APP-005",
+        "GC-APP-006",
+        "GC-APP-007"
+      ]
+    },
+    {
+      "master_id": "LZ-JUD-002",
+      "formal_related": [
+        "LZ-FIS-049",
+        "LZ-JUD-042"
+      ],
+      "canonical_text_cross_references": [
+        "LZ-REF-044"
+      ],
+      "same_origin_organ_navigation": [
+        "LZ-JUD-048"
+      ]
+    },
+    {
+      "master_id": "LZ-JUD-003",
+      "formal_related": [
+        "LZ-APP-004",
+        "LZ-JUD-042"
+      ],
+      "canonical_text_cross_references": [],
+      "same_origin_organ_navigation": []
+    },
+    {
+      "master_id": "LZ-JUD-042",
+      "formal_related": [
+        "GC-FIS-013",
+        "GC-JUD-001",
+        "LZ-APP-004",
+        "LZ-JUD-002",
+        "LZ-JUD-003"
+      ],
+      "canonical_text_cross_references": [],
+      "same_origin_organ_navigation": []
+    },
+    {
+      "master_id": "LZ-APP-004",
+      "formal_related": [
+        "LZ-JUD-003",
+        "LZ-JUD-042"
+      ],
+      "canonical_text_cross_references": [],
+      "same_origin_organ_navigation": []
+    },
+    {
+      "master_id": "LZ-JUD-005",
+      "formal_related": [],
+      "canonical_text_cross_references": [],
+      "same_origin_organ_navigation": []
+    },
+    {
+      "master_id": "LZ-JUD-FAM-006",
+      "formal_related": [],
+      "canonical_text_cross_references": [],
+      "same_origin_organ_navigation": []
+    },
+    {
+      "master_id": "LZ-FIS-007",
+      "formal_related": [],
+      "canonical_text_cross_references": [],
+      "same_origin_organ_navigation": []
+    },
+    {
+      "master_id": "LZ-TUR-008",
+      "formal_related": [],
+      "canonical_text_cross_references": [],
+      "same_origin_organ_navigation": [
+        "LZ-TUR-010"
+      ]
+    },
+    {
+      "master_id": "LZ-TUR-009",
+      "formal_related": [],
+      "canonical_text_cross_references": [],
+      "same_origin_organ_navigation": [
+        "LZ-CAB-011",
+        "LZ-CAB-012",
+        "LZ-CAB-013",
+        "LZ-CAB-019",
+        "LZ-CAB-020",
+        "LZ-CAB-021",
+        "LZ-CAB-022",
+        "LZ-CAB-023"
+      ]
+    },
+    {
+      "master_id": "LZ-TUR-010",
+      "formal_related": [],
+      "canonical_text_cross_references": [],
+      "same_origin_organ_navigation": [
+        "LZ-TUR-008"
+      ]
+    },
+    {
+      "master_id": "LZ-CAB-011",
+      "formal_related": [],
+      "canonical_text_cross_references": [],
+      "same_origin_organ_navigation": [
+        "LZ-CAB-012",
+        "LZ-CAB-013",
+        "LZ-CAB-019",
+        "LZ-CAB-020",
+        "LZ-CAB-021",
+        "LZ-CAB-022",
+        "LZ-CAB-023",
+        "LZ-CAB-024"
+      ]
+    },
+    {
+      "master_id": "LZ-CAB-012",
+      "formal_related": [],
+      "canonical_text_cross_references": [],
+      "same_origin_organ_navigation": [
+        "LZ-CAB-011",
+        "LZ-CAB-013",
+        "LZ-CAB-019",
+        "LZ-CAB-020",
+        "LZ-CAB-021",
+        "LZ-CAB-022",
+        "LZ-CAB-023",
+        "LZ-CAB-024"
+      ]
+    },
+    {
+      "master_id": "LZ-CAB-013",
+      "formal_related": [],
+      "canonical_text_cross_references": [],
+      "same_origin_organ_navigation": [
+        "LZ-CAB-011",
+        "LZ-CAB-012",
+        "LZ-CAB-019",
+        "LZ-CAB-020",
+        "LZ-CAB-021",
+        "LZ-CAB-022",
+        "LZ-CAB-023",
+        "LZ-CAB-024"
+      ]
+    },
+    {
+      "master_id": "LZ-YAI-014",
+      "formal_related": [],
+      "canonical_text_cross_references": [],
+      "same_origin_organ_navigation": [
+        "LZ-YAI-015",
+        "LZ-YAI-016",
+        "LZ-YAI-017",
+        "LZ-YAI-018",
+        "LZ-YAI-026",
+        "LZ-YAI-031",
+        "LZ-YAI-037"
+      ]
+    },
+    {
+      "master_id": "LZ-YAI-015",
+      "formal_related": [],
+      "canonical_text_cross_references": [],
+      "same_origin_organ_navigation": [
+        "LZ-YAI-014",
+        "LZ-YAI-016",
+        "LZ-YAI-017",
+        "LZ-YAI-018",
+        "LZ-YAI-026",
+        "LZ-YAI-031",
+        "LZ-YAI-037"
+      ]
+    },
+    {
+      "master_id": "LZ-YAI-016",
+      "formal_related": [],
+      "canonical_text_cross_references": [],
+      "same_origin_organ_navigation": [
+        "LZ-YAI-014",
+        "LZ-YAI-015",
+        "LZ-YAI-017",
+        "LZ-YAI-018",
+        "LZ-YAI-026",
+        "LZ-YAI-031",
+        "LZ-YAI-037"
+      ]
+    },
+    {
+      "master_id": "LZ-YAI-017",
+      "formal_related": [],
+      "canonical_text_cross_references": [],
+      "same_origin_organ_navigation": [
+        "LZ-YAI-014",
+        "LZ-YAI-015",
+        "LZ-YAI-016",
+        "LZ-YAI-018",
+        "LZ-YAI-026",
+        "LZ-YAI-031",
+        "LZ-YAI-037"
+      ]
+    },
+    {
+      "master_id": "LZ-YAI-018",
+      "formal_related": [],
+      "canonical_text_cross_references": [],
+      "same_origin_organ_navigation": [
+        "LZ-YAI-014",
+        "LZ-YAI-015",
+        "LZ-YAI-016",
+        "LZ-YAI-017",
+        "LZ-YAI-026",
+        "LZ-YAI-031",
+        "LZ-YAI-037"
+      ]
+    },
+    {
+      "master_id": "LZ-CAB-019",
+      "formal_related": [],
+      "canonical_text_cross_references": [],
+      "same_origin_organ_navigation": [
+        "LZ-CAB-011",
+        "LZ-CAB-012",
+        "LZ-CAB-013",
+        "LZ-CAB-020",
+        "LZ-CAB-021",
+        "LZ-CAB-022",
+        "LZ-CAB-023",
+        "LZ-CAB-024"
+      ]
+    },
+    {
+      "master_id": "LZ-CAB-020",
+      "formal_related": [],
+      "canonical_text_cross_references": [],
+      "same_origin_organ_navigation": [
+        "LZ-CAB-011",
+        "LZ-CAB-012",
+        "LZ-CAB-013",
+        "LZ-CAB-019",
+        "LZ-CAB-021",
+        "LZ-CAB-022",
+        "LZ-CAB-023",
+        "LZ-CAB-024"
+      ]
+    },
+    {
+      "master_id": "LZ-CAB-021",
+      "formal_related": [],
+      "canonical_text_cross_references": [],
+      "same_origin_organ_navigation": [
+        "LZ-CAB-011",
+        "LZ-CAB-012",
+        "LZ-CAB-013",
+        "LZ-CAB-019",
+        "LZ-CAB-020",
+        "LZ-CAB-022",
+        "LZ-CAB-023",
+        "LZ-CAB-024"
+      ]
+    },
+    {
+      "master_id": "LZ-CAB-022",
+      "formal_related": [],
+      "canonical_text_cross_references": [],
+      "same_origin_organ_navigation": [
+        "LZ-CAB-011",
+        "LZ-CAB-012",
+        "LZ-CAB-013",
+        "LZ-CAB-019",
+        "LZ-CAB-020",
+        "LZ-CAB-021",
+        "LZ-CAB-023",
+        "LZ-CAB-024"
+      ]
+    },
+    {
+      "master_id": "LZ-CAB-023",
+      "formal_related": [],
+      "canonical_text_cross_references": [],
+      "same_origin_organ_navigation": [
+        "LZ-CAB-011",
+        "LZ-CAB-012",
+        "LZ-CAB-013",
+        "LZ-CAB-019",
+        "LZ-CAB-020",
+        "LZ-CAB-021",
+        "LZ-CAB-022",
+        "LZ-CAB-024"
+      ]
+    },
+    {
+      "master_id": "LZ-CAB-024",
+      "formal_related": [],
+      "canonical_text_cross_references": [],
+      "same_origin_organ_navigation": [
+        "LZ-CAB-011",
+        "LZ-CAB-012",
+        "LZ-CAB-013",
+        "LZ-CAB-019",
+        "LZ-CAB-020",
+        "LZ-CAB-021",
+        "LZ-CAB-022",
+        "LZ-CAB-023"
+      ]
+    },
+    {
+      "master_id": "LZ-CAB-025",
+      "formal_related": [],
+      "canonical_text_cross_references": [],
+      "same_origin_organ_navigation": [
+        "LZ-CAB-011",
+        "LZ-CAB-012",
+        "LZ-CAB-013",
+        "LZ-CAB-019",
+        "LZ-CAB-020",
+        "LZ-CAB-021",
+        "LZ-CAB-022",
+        "LZ-CAB-023"
+      ]
+    },
+    {
+      "master_id": "LZ-YAI-026",
+      "formal_related": [],
+      "canonical_text_cross_references": [],
+      "same_origin_organ_navigation": [
+        "LZ-YAI-014",
+        "LZ-YAI-015",
+        "LZ-YAI-016",
+        "LZ-YAI-017",
+        "LZ-YAI-018",
+        "LZ-YAI-031",
+        "LZ-YAI-037"
+      ]
+    },
+    {
+      "master_id": "LZ-TRA-027",
+      "formal_related": [
+        "LZ-TRA-032"
+      ],
+      "canonical_text_cross_references": [],
+      "same_origin_organ_navigation": [
+        "LZ-TRA-028"
+      ]
+    },
+    {
+      "master_id": "LZ-TRA-028",
+      "formal_related": [],
+      "canonical_text_cross_references": [],
+      "same_origin_organ_navigation": [
+        "LZ-TRA-027",
+        "LZ-TRA-032"
+      ]
+    },
+    {
+      "master_id": "LZ-PRO-029",
+      "formal_related": [],
+      "canonical_text_cross_references": [],
+      "same_origin_organ_navigation": []
+    },
+    {
+      "master_id": "LZ-TEC-030",
+      "formal_related": [],
+      "canonical_text_cross_references": [],
+      "same_origin_organ_navigation": []
+    },
+    {
+      "master_id": "GC-JUD-001",
+      "formal_related": [
+        "GC-APP-005",
+        "GC-APP-006",
+        "GC-APP-007",
+        "GC-CAL-002",
+        "LZ-JUD-042"
+      ],
+      "canonical_text_cross_references": [],
+      "same_origin_organ_navigation": []
+    },
+    {
+      "master_id": "GC-CAL-002",
+      "formal_related": [
+        "GC-APP-004",
+        "GC-FIS-013",
+        "GC-JUD-001"
+      ],
+      "canonical_text_cross_references": [],
+      "same_origin_organ_navigation": []
+    },
+    {
+      "master_id": "GC-CIV-003",
+      "formal_related": [],
+      "canonical_text_cross_references": [],
+      "same_origin_organ_navigation": []
+    },
+    {
+      "master_id": "GC-APP-004",
+      "formal_related": [
+        "GC-CAL-002"
+      ],
+      "canonical_text_cross_references": [],
+      "same_origin_organ_navigation": [
+        "GC-APP-005",
+        "GC-APP-006",
+        "GC-APP-007",
+        "GC-APP-028",
+        "LZ-JUD-001"
+      ]
+    },
+    {
+      "master_id": "GC-APP-005",
+      "formal_related": [
+        "GC-APP-006",
+        "GC-APP-007",
+        "GC-JUD-001"
+      ],
+      "canonical_text_cross_references": [],
+      "same_origin_organ_navigation": [
+        "GC-APP-004",
+        "GC-APP-028",
+        "LZ-JUD-001"
+      ]
+    },
+    {
+      "master_id": "GC-APP-006",
+      "formal_related": [
+        "GC-APP-005",
+        "GC-APP-007",
+        "GC-JUD-001"
+      ],
+      "canonical_text_cross_references": [],
+      "same_origin_organ_navigation": [
+        "GC-APP-004",
+        "GC-APP-028",
+        "LZ-JUD-001"
+      ]
+    },
+    {
+      "master_id": "GC-APP-007",
+      "formal_related": [
+        "GC-APP-005",
+        "GC-APP-006",
+        "GC-JUD-001"
+      ],
+      "canonical_text_cross_references": [],
+      "same_origin_organ_navigation": [
+        "GC-APP-004",
+        "GC-APP-028",
+        "LZ-JUD-001"
+      ]
+    },
+    {
+      "master_id": "GC-CIV-027",
+      "formal_related": [
+        "GC-APP-028",
+        "GC-CIV-030"
+      ],
+      "canonical_text_cross_references": [],
+      "same_origin_organ_navigation": []
+    },
+    {
+      "master_id": "GC-CIV-030",
+      "formal_related": [
+        "GC-CIV-027"
+      ],
+      "canonical_text_cross_references": [],
+      "same_origin_organ_navigation": []
+    },
+    {
+      "master_id": "GC-APP-028",
+      "formal_related": [
+        "GC-CIV-027"
+      ],
+      "canonical_text_cross_references": [],
+      "same_origin_organ_navigation": [
+        "LZ-JUD-001",
+        "GC-APP-004",
+        "GC-APP-005",
+        "GC-APP-006",
+        "GC-APP-007"
+      ]
+    },
+    {
+      "master_id": "GC-REF-029",
+      "formal_related": [],
+      "canonical_text_cross_references": [],
+      "same_origin_organ_navigation": []
+    },
+    {
+      "master_id": "GC-CRI-008",
+      "formal_related": [
+        "GC-FIS-017",
+        "NAT-FIS-004"
+      ],
+      "canonical_text_cross_references": [],
+      "same_origin_organ_navigation": []
+    },
+    {
+      "master_id": "GC-CRI-009",
+      "formal_related": [],
+      "canonical_text_cross_references": [],
+      "same_origin_organ_navigation": []
+    },
+    {
+      "master_id": "GC-HC-010",
+      "formal_related": [],
+      "canonical_text_cross_references": [],
+      "same_origin_organ_navigation": []
+    },
+    {
+      "master_id": "GC-FIS-011",
+      "formal_related": [],
+      "canonical_text_cross_references": [],
+      "same_origin_organ_navigation": [
+        "GC-FIS-013",
+        "GC-FIS-014",
+        "GC-FIS-016",
+        "GC-FIS-034",
+        "LZ-FIS-051",
+        "LZ-FIS-049"
+      ]
+    },
+    {
+      "master_id": "GC-FIS-012",
+      "formal_related": [],
+      "canonical_text_cross_references": [],
+      "same_origin_organ_navigation": []
+    },
+    {
+      "master_id": "GC-FIS-013",
+      "formal_related": [
+        "GC-CAL-002",
+        "LZ-JUD-042",
+        "NAT-FIS-004"
+      ],
+      "canonical_text_cross_references": [],
+      "same_origin_organ_navigation": [
+        "GC-FIS-011",
+        "GC-FIS-014",
+        "GC-FIS-016",
+        "GC-FIS-034",
+        "LZ-FIS-051",
+        "LZ-FIS-049"
+      ]
+    },
+    {
+      "master_id": "GC-FIS-014",
+      "formal_related": [
+        "LZ-JUD-046",
+        "NAT-FIS-004"
+      ],
+      "canonical_text_cross_references": [],
+      "same_origin_organ_navigation": [
+        "GC-FIS-011",
+        "GC-FIS-013",
+        "GC-FIS-016",
+        "GC-FIS-034",
+        "LZ-FIS-051",
+        "LZ-FIS-049"
+      ]
+    },
+    {
+      "master_id": "GC-FIS-015",
+      "formal_related": [
+        "GC-FIS-016"
+      ],
+      "canonical_text_cross_references": [],
+      "same_origin_organ_navigation": []
+    },
+    {
+      "master_id": "GC-FIS-016",
+      "formal_related": [
+        "GC-FIS-015",
+        "NAT-FIS-004",
+        "TF-FIS-007"
+      ],
+      "canonical_text_cross_references": [],
+      "same_origin_organ_navigation": [
+        "GC-FIS-011",
+        "GC-FIS-013",
+        "GC-FIS-014",
+        "GC-FIS-034",
+        "LZ-FIS-051",
+        "LZ-FIS-049"
+      ]
+    },
+    {
+      "master_id": "GC-FIS-017",
+      "formal_related": [
+        "GC-CRI-008",
+        "GC-FIS-033",
+        "NAT-FIS-004"
+      ],
+      "canonical_text_cross_references": [],
+      "same_origin_organ_navigation": [
+        "GC-FIS-032",
+        "GC-FIS-035"
+      ]
+    },
+    {
+      "master_id": "GC-FIS-018",
+      "formal_related": [
+        "NAT-FIS-004"
+      ],
+      "canonical_text_cross_references": [],
+      "same_origin_organ_navigation": []
+    },
+    {
+      "master_id": "GC-GOV-019",
+      "formal_related": [
+        "GC-GOV-020"
+      ],
+      "canonical_text_cross_references": [],
+      "same_origin_organ_navigation": []
+    },
+    {
+      "master_id": "GC-GOV-020",
+      "formal_related": [
+        "GC-GOV-019"
+      ],
+      "canonical_text_cross_references": [],
+      "same_origin_organ_navigation": []
+    },
+    {
+      "master_id": "GC-LAJ-021",
+      "formal_related": [],
+      "canonical_text_cross_references": [],
+      "same_origin_organ_navigation": []
+    },
+    {
+      "master_id": "GC-PRO-022",
+      "formal_related": [],
+      "canonical_text_cross_references": [],
+      "same_origin_organ_navigation": [
+        "GC-PRO-023"
+      ]
+    },
+    {
+      "master_id": "GC-PRO-023",
+      "formal_related": [],
+      "canonical_text_cross_references": [],
+      "same_origin_organ_navigation": [
+        "GC-PRO-022"
+      ]
+    },
+    {
+      "master_id": "GC-POL-024",
+      "formal_related": [],
+      "canonical_text_cross_references": [],
+      "same_origin_organ_navigation": []
+    },
+    {
+      "master_id": "GC-CONT-025",
+      "formal_related": [],
+      "canonical_text_cross_references": [],
+      "same_origin_organ_navigation": []
+    },
+    {
+      "master_id": "GC-TEC-026",
+      "formal_related": [],
+      "canonical_text_cross_references": [],
+      "same_origin_organ_navigation": []
+    },
+    {
+      "master_id": "TF-CIV-001",
+      "formal_related": [
+        "TF-CIV-002",
+        "TF-CRI-003",
+        "TF-FIS-008"
+      ],
+      "canonical_text_cross_references": [],
+      "same_origin_organ_navigation": []
+    },
+    {
+      "master_id": "TF-CIV-002",
+      "formal_related": [
+        "TF-APP-004",
+        "TF-CIV-001",
+        "TF-CRI-003",
+        "TF-FIS-008"
+      ],
+      "canonical_text_cross_references": [],
+      "same_origin_organ_navigation": []
+    },
+    {
+      "master_id": "TF-CRI-003",
+      "formal_related": [
+        "TF-APP-004",
+        "TF-CIV-001",
+        "TF-CIV-002",
+        "TF-FIS-008",
+        "TF-XFR-005"
+      ],
+      "canonical_text_cross_references": [],
+      "same_origin_organ_navigation": []
+    },
+    {
+      "master_id": "TF-APP-004",
+      "formal_related": [
+        "TF-CIV-002",
+        "TF-CRI-003"
+      ],
+      "canonical_text_cross_references": [],
+      "same_origin_organ_navigation": []
+    },
+    {
+      "master_id": "TF-XFR-005",
+      "formal_related": [
+        "TF-CRI-003"
+      ],
+      "canonical_text_cross_references": [],
+      "same_origin_organ_navigation": []
+    },
+    {
+      "master_id": "X-REG-001",
+      "formal_related": [],
+      "canonical_text_cross_references": [],
+      "same_origin_organ_navigation": [
+        "NAT-CNMV-001",
+        "NAT-CNMV-002"
+      ]
+    },
+    {
+      "master_id": "X-TAX-002",
+      "formal_related": [],
+      "canonical_text_cross_references": [],
+      "same_origin_organ_navigation": [
+        "NAT-AEAT-001",
+        "NAT-AEAT-002"
+      ]
+    },
+    {
+      "master_id": "X-EU-003",
+      "formal_related": [],
+      "canonical_text_cross_references": [],
+      "same_origin_organ_navigation": []
+    },
+    {
+      "master_id": "X-INT-004",
+      "formal_related": [],
+      "canonical_text_cross_references": [],
+      "same_origin_organ_navigation": []
+    },
+    {
+      "master_id": "X-WB-005",
+      "formal_related": [
+        "NAT-TES-001"
+      ],
+      "canonical_text_cross_references": [],
+      "same_origin_organ_navigation": []
+    },
+    {
+      "master_id": "LZ-YAI-031",
+      "formal_related": [],
+      "canonical_text_cross_references": [],
+      "same_origin_organ_navigation": [
+        "LZ-YAI-014",
+        "LZ-YAI-015",
+        "LZ-YAI-016",
+        "LZ-YAI-017",
+        "LZ-YAI-018",
+        "LZ-YAI-026",
+        "LZ-YAI-037"
+      ]
+    },
+    {
+      "master_id": "LZ-TRA-032",
+      "formal_related": [
+        "LZ-TRA-027"
+      ],
+      "canonical_text_cross_references": [],
+      "same_origin_organ_navigation": [
+        "LZ-TRA-028"
+      ]
+    },
+    {
+      "master_id": "LZ-CIV-033",
+      "formal_related": [
+        "LZ-CIV-034"
+      ],
+      "canonical_text_cross_references": [
+        "LZ-REF-044"
+      ],
+      "same_origin_organ_navigation": []
+    },
+    {
+      "master_id": "LZ-CIV-034",
+      "formal_related": [
+        "LZ-CIV-033"
+      ],
+      "canonical_text_cross_references": [],
+      "same_origin_organ_navigation": []
+    },
+    {
+      "master_id": "LZ-CIV-035",
+      "formal_related": [
+        "LZ-APP-046"
+      ],
+      "canonical_text_cross_references": [],
+      "same_origin_organ_navigation": [
+        "LZ-REF-039"
+      ]
+    },
+    {
+      "master_id": "LZ-CIV-040",
+      "formal_related": [
+        "LZ-APP-054",
+        "LZ-CIV-041"
+      ],
+      "canonical_text_cross_references": [],
+      "same_origin_organ_navigation": []
+    },
+    {
+      "master_id": "LZ-CIV-041",
+      "formal_related": [
+        "LZ-CIV-040"
+      ],
+      "canonical_text_cross_references": [],
+      "same_origin_organ_navigation": []
+    },
+    {
+      "master_id": "LZ-FIS-036",
+      "formal_related": [],
+      "canonical_text_cross_references": [],
+      "same_origin_organ_navigation": []
+    },
+    {
+      "master_id": "LZ-YAI-037",
+      "formal_related": [],
+      "canonical_text_cross_references": [],
+      "same_origin_organ_navigation": [
+        "LZ-YAI-014",
+        "LZ-YAI-015",
+        "LZ-YAI-016",
+        "LZ-YAI-017",
+        "LZ-YAI-018",
+        "LZ-YAI-026",
+        "LZ-YAI-031"
+      ]
+    },
+    {
+      "master_id": "LZ-REF-038",
+      "formal_related": [
+        "LZ-JUD-047"
+      ],
+      "canonical_text_cross_references": [],
+      "same_origin_organ_navigation": []
+    },
+    {
+      "master_id": "LZ-REF-039",
+      "formal_related": [],
+      "canonical_text_cross_references": [],
+      "same_origin_organ_navigation": [
+        "LZ-CIV-035"
+      ]
+    },
+    {
+      "master_id": "LZ-REF-044",
+      "formal_related": [],
+      "canonical_text_cross_references": [
+        "LZ-CIV-033",
+        "LZ-JUD-002",
+        "LZ-JUD-043",
+        "LZ-JUD-047"
+      ],
+      "same_origin_organ_navigation": []
+    },
+    {
+      "master_id": "MAD-AN-CONT-001",
+      "formal_related": [
+        "MAD-AN-CONT-002",
+        "NAT-AEAT-001"
+      ],
+      "canonical_text_cross_references": [],
+      "same_origin_organ_navigation": []
+    },
+    {
+      "master_id": "MAD-AN-CONT-002",
+      "formal_related": [
+        "MAD-AN-CONT-001"
+      ],
+      "canonical_text_cross_references": [],
+      "same_origin_organ_navigation": []
+    },
+    {
+      "master_id": "NAT-AEAT-001",
+      "formal_related": [
+        "MAD-AN-CONT-001"
+      ],
+      "canonical_text_cross_references": [],
+      "same_origin_organ_navigation": [
+        "NAT-AEAT-002",
+        "X-TAX-002"
+      ]
+    },
+    {
+      "master_id": "NAT-AEAT-002",
+      "formal_related": [],
+      "canonical_text_cross_references": [],
+      "same_origin_organ_navigation": [
+        "NAT-AEAT-001",
+        "X-TAX-002"
+      ]
+    },
+    {
+      "master_id": "NAT-AEAT-COM-003",
+      "formal_related": [],
+      "canonical_text_cross_references": [],
+      "same_origin_organ_navigation": []
+    },
+    {
+      "master_id": "MAD-ICAM-001",
+      "formal_related": [
+        "MAD-CCACM-002"
+      ],
+      "canonical_text_cross_references": [],
+      "same_origin_organ_navigation": [
+        "MAD-ICAM-003",
+        "MAD-ICAM-004",
+        "MAD-ICAM-005"
+      ]
+    },
+    {
+      "master_id": "MAD-CCACM-002",
+      "formal_related": [
+        "MAD-ICAM-001"
+      ],
+      "canonical_text_cross_references": [],
+      "same_origin_organ_navigation": []
+    },
+    {
+      "master_id": "MAD-ICAM-003",
+      "formal_related": [],
+      "canonical_text_cross_references": [],
+      "same_origin_organ_navigation": [
+        "MAD-ICAM-001",
+        "MAD-ICAM-004",
+        "MAD-ICAM-005"
+      ]
+    },
+    {
+      "master_id": "MAD-ICAM-004",
+      "formal_related": [],
+      "canonical_text_cross_references": [],
+      "same_origin_organ_navigation": [
+        "MAD-ICAM-001",
+        "MAD-ICAM-003",
+        "MAD-ICAM-005"
+      ]
+    },
+    {
+      "master_id": "MAD-ICAM-005",
+      "formal_related": [],
+      "canonical_text_cross_references": [],
+      "same_origin_organ_navigation": [
+        "MAD-ICAM-001",
+        "MAD-ICAM-003",
+        "MAD-ICAM-004"
+      ]
+    },
+    {
+      "master_id": "NAT-CNMV-001",
+      "formal_related": [],
+      "canonical_text_cross_references": [],
+      "same_origin_organ_navigation": [
+        "NAT-CNMV-002",
+        "X-REG-001"
+      ]
+    },
+    {
+      "master_id": "NAT-CNMV-002",
+      "formal_related": [],
+      "canonical_text_cross_references": [],
+      "same_origin_organ_navigation": [
+        "NAT-CNMV-001",
+        "X-REG-001"
+      ]
+    },
+    {
+      "master_id": "NAT-AID-001",
+      "formal_related": [],
+      "canonical_text_cross_references": [],
+      "same_origin_organ_navigation": []
+    },
+    {
+      "master_id": "NAT-TES-001",
+      "formal_related": [
+        "X-WB-005"
+      ],
+      "canonical_text_cross_references": [],
+      "same_origin_organ_navigation": []
+    },
+    {
+      "master_id": "CAN-OMB-001",
+      "formal_related": [],
+      "canonical_text_cross_references": [],
+      "same_origin_organ_navigation": []
+    },
+    {
+      "master_id": "MAD-AN-CRI-003",
+      "formal_related": [
+        "MAD-AN-CRI-004"
+      ],
+      "canonical_text_cross_references": [],
+      "same_origin_organ_navigation": []
+    },
+    {
+      "master_id": "MAD-AN-CRI-004",
+      "formal_related": [
+        "ESP-TS-001",
+        "MAD-AN-CRI-003"
+      ],
+      "canonical_text_cross_references": [],
+      "same_origin_organ_navigation": []
+    },
+    {
+      "master_id": "ESP-TS-001",
+      "formal_related": [
+        "MAD-AN-CRI-004"
+      ],
+      "canonical_text_cross_references": [],
+      "same_origin_organ_navigation": []
+    },
+    {
+      "master_id": "VAL-CIV-001",
+      "formal_related": [],
+      "canonical_text_cross_references": [],
+      "same_origin_organ_navigation": []
+    },
+    {
+      "master_id": "TF-CIV-006",
+      "formal_related": [],
+      "canonical_text_cross_references": [],
+      "same_origin_organ_navigation": []
+    },
+    {
+      "master_id": "LZ-JUD-043",
+      "formal_related": [],
+      "canonical_text_cross_references": [
+        "LZ-REF-044"
+      ],
+      "same_origin_organ_navigation": []
+    },
+    {
+      "master_id": "GC-REF-031",
+      "formal_related": [],
+      "canonical_text_cross_references": [],
+      "same_origin_organ_navigation": []
+    },
+    {
+      "master_id": "LZ-REF-042",
+      "formal_related": [],
+      "canonical_text_cross_references": [],
+      "same_origin_organ_navigation": []
+    },
+    {
+      "master_id": "LZ-FIS-045",
+      "formal_related": [],
+      "canonical_text_cross_references": [],
+      "same_origin_organ_navigation": []
+    },
+    {
+      "master_id": "TF-FIS-007",
+      "formal_related": [
+        "GC-FIS-016",
+        "TF-FIS-008"
+      ],
+      "canonical_text_cross_references": [
+        "TF-FIS-009",
+        "TF-FIS-010"
+      ],
+      "same_origin_organ_navigation": []
+    },
+    {
+      "master_id": "GC-FIS-032",
+      "formal_related": [],
+      "canonical_text_cross_references": [],
+      "same_origin_organ_navigation": [
+        "GC-FIS-017",
+        "GC-FIS-033",
+        "GC-FIS-035"
+      ]
+    },
+    {
+      "master_id": "TF-FIS-008",
+      "formal_related": [
+        "TF-CIV-001",
+        "TF-CIV-002",
+        "TF-CRI-003",
+        "TF-FIS-007",
+        "TF-FIS-009",
+        "TF-FIS-010"
+      ],
+      "canonical_text_cross_references": [],
+      "same_origin_organ_navigation": []
+    },
+    {
+      "master_id": "GC-FIS-033",
+      "formal_related": [
+        "GC-FIS-017"
+      ],
+      "canonical_text_cross_references": [],
+      "same_origin_organ_navigation": [
+        "GC-FIS-032",
+        "GC-FIS-035"
+      ]
+    },
+    {
+      "master_id": "NAT-FIS-004",
+      "formal_related": [
+        "GC-CRI-008",
+        "GC-FIS-013",
+        "GC-FIS-014",
+        "GC-FIS-016",
+        "GC-FIS-017",
+        "GC-FIS-018"
+      ],
+      "canonical_text_cross_references": [],
+      "same_origin_organ_navigation": []
+    },
+    {
+      "master_id": "LZ-JUD-046",
+      "formal_related": [
+        "GC-FIS-014"
+      ],
+      "canonical_text_cross_references": [],
+      "same_origin_organ_navigation": []
+    },
+    {
+      "master_id": "GC-FIS-034",
+      "formal_related": [],
+      "canonical_text_cross_references": [],
+      "same_origin_organ_navigation": [
+        "GC-FIS-011",
+        "GC-FIS-013",
+        "GC-FIS-014",
+        "GC-FIS-016",
+        "LZ-FIS-051",
+        "LZ-FIS-049"
+      ]
+    },
+    {
+      "master_id": "NAT-FIS-005",
+      "formal_related": [],
+      "canonical_text_cross_references": [],
+      "same_origin_organ_navigation": []
+    },
+    {
+      "master_id": "GC-FIS-035",
+      "formal_related": [],
+      "canonical_text_cross_references": [],
+      "same_origin_organ_navigation": [
+        "GC-FIS-017",
+        "GC-FIS-032",
+        "GC-FIS-033"
+      ]
+    },
+    {
+      "master_id": "NAT-FIS-006",
+      "formal_related": [],
+      "canonical_text_cross_references": [],
+      "same_origin_organ_navigation": [
+        "NAT-FIS-007"
+      ]
+    },
+    {
+      "master_id": "NAT-FIS-007",
+      "formal_related": [],
+      "canonical_text_cross_references": [],
+      "same_origin_organ_navigation": [
+        "NAT-FIS-006"
+      ]
+    },
+    {
+      "master_id": "TF-FIS-009",
+      "formal_related": [
+        "TF-FIS-008"
+      ],
+      "canonical_text_cross_references": [
+        "TF-FIS-007",
+        "TF-FIS-010"
+      ],
+      "same_origin_organ_navigation": []
+    },
+    {
+      "master_id": "TF-FIS-010",
+      "formal_related": [
+        "TF-FIS-008"
+      ],
+      "canonical_text_cross_references": [
+        "TF-FIS-007",
+        "TF-FIS-009"
+      ],
+      "same_origin_organ_navigation": []
+    },
+    {
+      "master_id": "UNK-FIS-001",
+      "formal_related": [],
+      "canonical_text_cross_references": [],
+      "same_origin_organ_navigation": []
+    },
+    {
+      "master_id": "LZ-CIV-045",
+      "formal_related": [],
+      "canonical_text_cross_references": [],
+      "same_origin_organ_navigation": []
+    },
+    {
+      "master_id": "LZ-APP-046",
+      "formal_related": [
+        "LZ-CIV-035"
+      ],
+      "canonical_text_cross_references": [],
+      "same_origin_organ_navigation": []
+    },
+    {
+      "master_id": "LZ-JUD-047",
+      "formal_related": [
+        "LZ-REF-038"
+      ],
+      "canonical_text_cross_references": [
+        "LZ-REF-044"
+      ],
+      "same_origin_organ_navigation": []
+    },
+    {
+      "master_id": "LZ-JUD-048",
+      "formal_related": [],
+      "canonical_text_cross_references": [],
+      "same_origin_organ_navigation": [
+        "LZ-JUD-002"
+      ]
+    },
+    {
+      "master_id": "LZ-FIS-049",
+      "formal_related": [
+        "LZ-JUD-002"
+      ],
+      "canonical_text_cross_references": [],
+      "same_origin_organ_navigation": [
+        "GC-FIS-011",
+        "GC-FIS-013",
+        "GC-FIS-014",
+        "GC-FIS-016",
+        "GC-FIS-034",
+        "LZ-FIS-051"
+      ]
+    },
+    {
+      "master_id": "LZ-CIV-050",
+      "formal_related": [],
+      "canonical_text_cross_references": [],
+      "same_origin_organ_navigation": []
+    },
+    {
+      "master_id": "LZ-FIS-051",
+      "formal_related": [],
+      "canonical_text_cross_references": [],
+      "same_origin_organ_navigation": [
+        "GC-FIS-011",
+        "GC-FIS-013",
+        "GC-FIS-014",
+        "GC-FIS-016",
+        "GC-FIS-034",
+        "LZ-FIS-049"
+      ]
+    },
+    {
+      "master_id": "LZ-REF-052",
+      "formal_related": [],
+      "canonical_text_cross_references": [],
+      "same_origin_organ_navigation": []
+    },
+    {
+      "master_id": "LZ-REF-053",
+      "formal_related": [],
+      "canonical_text_cross_references": [],
+      "same_origin_organ_navigation": []
+    },
+    {
+      "master_id": "LZ-APP-054",
+      "formal_related": [
+        "LZ-CIV-040"
+      ],
+      "canonical_text_cross_references": [],
+      "same_origin_organ_navigation": []
+    }
+  ]
+}

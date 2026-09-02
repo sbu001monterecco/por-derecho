@@ -150,20 +150,25 @@ def main() -> None:
 
     current = load_json(DATA / "justice-authority-register-current-v2.json")
     require(current.get("control_id") == "PD-SP-JUSTICE-AUTHORITY-CURRENT-20260902-01", "Unexpected current authority control ID")
-    base_audit = load_json(ROOT / current["person_sources"][0]["path"])
-    supplement = load_json(ROOT / current["person_sources"][1]["path"])
-    base_rows = [row for rows in base_audit.get("roles", {}).values() for row in rows]
-    supplement_rows = supplement.get("records", [])
-    base_ids = {row["caepr_id"] for row in base_rows}
-    supplement_ids = {row["id"] for row in supplement_rows}
-    require(len(base_rows) == 48 and len(supplement_rows) == 11, "Unexpected source census sizes")
-    require(base_ids.isdisjoint(supplement_ids), "Current authority sources contain duplicate people")
-    require(len(base_ids | supplement_ids) == current["derived_counts"]["unique_named_people"] == 59, "Derived people count mismatch")
-    base_confirmed = sum(row["state"] == "CARET_CONFIRMED" for row in base_rows)
-    supplement_confirmed = sum(row.get("identity_resolution") == "CARET_CONFIRMED" for row in supplement_rows)
-    require(base_confirmed + supplement_confirmed == current["derived_counts"]["confirmed"] == 56, "Derived confirmed count mismatch")
+    authority_ids: set[str] = set()
+    confirmed_count = 0
+    for descriptor in current.get("person_sources", []):
+        source = load_json(ROOT / descriptor["path"])
+        if isinstance(source.get("roles"), dict):
+            source_rows = [row for rows in source.get("roles", {}).values() for row in rows]
+            ids = {row["caepr_id"] for row in source_rows}
+            confirmed = sum(row.get("state") == "CARET_CONFIRMED" for row in source_rows)
+        else:
+            source_rows = source.get("records", [])
+            ids = {row["id"] for row in source_rows}
+            confirmed = sum(row.get("identity_resolution") == "CARET_CONFIRMED" for row in source_rows)
+        require(authority_ids.isdisjoint(ids), f"Current authority sources contain duplicate people in {descriptor['path']}")
+        authority_ids |= ids
+        confirmed_count += confirmed
+    require(len(authority_ids) == current["derived_counts"]["unique_named_people"] == 61, "Derived people count mismatch")
+    require(confirmed_count == current["derived_counts"]["confirmed"] == 58, "Derived confirmed count mismatch")
     require(current["derived_counts"]["pending"] == 3, "Derived pending count mismatch")
-    for identifier in base_ids | supplement_ids:
+    for identifier in authority_ids:
         require(identifier in records, f"Current authority person absent from CAEPR: {identifier}")
 
     search_script = (ROOT / "assets" / "canonical-home-search-20260902.js").read_text(encoding="utf-8")
@@ -179,7 +184,7 @@ def main() -> None:
     require("siteHeader.insertAdjacentElement('afterend', section)" in search_script, "Homepage search is not mounted after the site header")
     require("section.closest('details')" in search_script, "Homepage search lacks a closed-details mount guard")
     require("main.insertBefore(section" not in search_script, "Homepage search retains the unsafe main-child insertion path")
-    require("['59', 0]" in overlay_script and "['56', 1]" in overlay_script, "Justice overlay does not expose current counts")
+    require("['61', 0]" in overlay_script and "['58', 1]" in overlay_script, "Justice overlay does not expose current counts")
 
     master_projection = load_json(DATA / "proceedings-master-public-v1.json")
     entries = [make_caepr_entry(record) for record in records.values()]
@@ -228,7 +233,7 @@ def main() -> None:
 
     print(
         "PASS canonical authority/search audit: "
-        f"{len(records)} CAEPR records; 59 current justice professionals; "
+        f"{len(records)} CAEPR records; 61 current justice professionals; "
         f"master court PD-SP-I-0044 with {len(children)} sections; {len(smoke_tests)} search tests"
     )
 
