@@ -1,0 +1,142 @@
+{
+  "schema_version": "1.0.0",
+  "control_date": "2026-09-02",
+  "record_type": "ministerio_fiscal_canonical_directory",
+  "status": "SOURCE_CONTROLLED_DIRECTORY_WITH_EXPLICIT_COMPLETENESS_GAPS",
+  "identity_policy": {
+    "office_directory_namespace": "PD-MF-OFF-####",
+    "office_directory_rule": "A PD-MF-OFF identifier is a Por Derecho canonical directory identity for an office/route. It is not an official Ministerio Fiscal reference and does not replace any existing global institution record.",
+    "expediente_namespace": "Existing Master_ID values such as GC-FIS-016, TF-FIS-008, LZ-FIS-045 and NAT-FIS-004 remain controlling; no renumbering is permitted.",
+    "event_namespace": "PD-SP-EVT-####",
+    "event_rule": "Every source-proved filing, receipt, response, decree, notice, acknowledgement, routing act or transport event receives one stable PD-SP-EVT identifier. The event identifier is separate from REGAGE/RedSARA, NIG, DI, DIP, EG, ST, CC/CA and court references.",
+    "caret_rule": "The ^ marker identifies a locked canonical identity. It does not convert an event, receipt, allegation or procedural assertion into an adjudicated fact.",
+    "no_collapse_rule": "Transport, formal registration, official act/decision, notification and proceeding identity remain separate records and are linked rather than collapsed."
+  },
+  "proof_boundaries": [
+    "A REGAGE/RedSARA receipt proves formal presentation to the destination shown on the receipt, not internal delivery, allocation, joinder, examination, admission, investigation or merits.",
+    "An official acknowledgement proves only the handling state stated in the acknowledgement.",
+    "An official decree or decision proves that the act was issued and its stated reasoning/outcome; it does not prove the complete expediente, correctness, intent, wrongdoing or criminality.",
+    "Institutional possession does not prove personal knowledge by an identified Fiscal.",
+    "No aggregate-only RedSARA record may be converted into a synthetic individual event without an individual source."
+  ],
+  "coverage_baseline": {
+    "detailed_redsara_receipts_source_proved": 75,
+    "mailbox_source_rows_fixed_baseline_20260831": 156,
+    "aggregate_only_later_redsara_records_reported": 22,
+    "universal_historical_completeness_claim": false,
+    "historical_rule": "The historical lane is append-only. The 2011/2012 traceability request is a scope instruction, not proof that a Fiscalía filing existed in those years. The earliest presently registered direct prosecution file in the controlled master register is DI 273/2013."
+  },
+  "office_groups": [
+    {
+      "group_key": "state",
+      "title_es": "Nivel estatal / central",
+      "title_en": "State / central level",
+      "description_es": "Fiscalía General del Estado, Inspección Fiscal, Secretaría Técnica y unidades centrales.",
+      "description_en": "Fiscalía General del Estado, Fiscal Inspection, Technical Secretariat and central units."
+    },
+    {
+      "group_key": "specialist",
+      "title_es": "Fiscalías especializadas y Audiencia Nacional",
+      "title_en": "Specialist offices and Audiencia Nacional",
+      "description_es": "Anticorrupción, Audiencia Nacional y otras rutas especializadas cuando conste fuente.",
+      "description_en": "Anti-Corruption, Audiencia Nacional and other specialist routes where source-controlled."
+    },
+    {
+      "group_key": "canarias",
+      "title_es": "Comunidad Autónoma de Canarias",
+      "title_en": "Canary Islands autonomous level",
+      "description_es": "Fiscalía de la Comunidad Autónoma / Fiscalía Superior de Canarias.",
+      "description_en": "Fiscalía de la Comunidad Autónoma / Superior Prosecutor of the Canary Islands."
+    },
+    {
+      "group_key": "las-palmas",
+      "title_es": "Fiscalía Provincial de Las Palmas",
+      "title_en": "Las Palmas Provincial Prosecution Office",
+      "description_es": "Expedientes provinciales de Gran Canaria y rutas recibidas desde otros territorios.",
+      "description_en": "Gran Canaria provincial files and routes received from other territories."
+    },
+    {
+      "group_key": "arrecife",
+      "title_es": "Fiscalía de Área de Arrecife de Lanzarote–Puerto del Rosario",
+      "title_en": "Arrecife de Lanzarote–Puerto del Rosario Area Prosecution Office",
+      "description_es": "Rutas de Lanzarote/Fuerteventura y remisiones territoriales hacia Arrecife.",
+      "description_en": "Lanzarote/Fuerteventura routes and territorial referrals to Arrecife."
+    },
+    {
+      "group_key": "tenerife",
+      "title_es": "Fiscalía Provincial de Santa Cruz de Tenerife",
+      "title_en": "Santa Cruz de Tenerife Provincial Prosecution Office",
+      "description_es": "Expedientes y remisiones vinculados a Tenerife / La Laguna.",
+      "description_en": "Files and referrals linked to Tenerife / La Laguna."
+    },
+    {
+      "group_key": "eppo",
+      "title_es": "Fiscalía Europea — rama supranacional separada",
+      "title_en": "European Public Prosecutor's Office — separate supranational branch",
+      "description_es": "Se muestra junto al Ministerio Fiscal por interconexión documental, no como órgano subordinado del Ministerio Fiscal español.",
+      "description_en": "Shown alongside the Spanish prosecution structure for documentary interconnection, not as a subordinate Spanish Ministerio Fiscal office."
+    },
+    {
+      "group_key": "unresolved",
+      "title_es": "Referencias de Fiscalía con identidad de oficina pendiente",
+      "title_en": "Prosecution references with office identity pending",
+      "description_es": "Se preservan sin adivinar oficina, clase o resultado.",
+      "description_en": "Preserved without guessing office, class or outcome."
+    }
+  ],
+  "offices": [
+    {"canonical_id":"PD-MF-OFF-0001","caret":"^","group_key":"state","name_es":"Fiscalía General del Estado","name_en":"Fiscalía General del Estado","tier":"STATE_CENTRAL","dir3":"J00003992","official_id_status":"DIR3_LOCATED_IN_REGAGE_RECEIPT"},
+    {"canonical_id":"PD-MF-OFF-0002","caret":"^","group_key":"state","name_es":"Inspección Fiscal de la Fiscalía General del Estado","name_en":"Fiscal Inspection of the Fiscalía General del Estado","tier":"STATE_CENTRAL_SUPERVISION","dir3":null,"official_id_status":"INTERNAL_DESTINATION_NOT_INDEPENDENTLY_LOCKED_BY_BASELINE_RECEIPT"},
+    {"canonical_id":"PD-MF-OFF-0003","caret":"^","group_key":"state","name_es":"Secretaría Técnica de la Fiscalía General del Estado","name_en":"Technical Secretariat of the Fiscalía General del Estado","tier":"STATE_CENTRAL_TECHNICAL","dir3":null,"official_id_status":"OFFICIAL_ROUTE_SOURCE_LOCATED"},
+    {"canonical_id":"PD-MF-OFF-0004","caret":"^","group_key":"state","name_es":"Unidad de Delitos contra la Administración Pública — Fiscalía General del Estado","name_en":"Public Administration Offences Unit — Fiscalía General del Estado","tier":"STATE_CENTRAL_SPECIALIST","dir3":null,"official_id_status":"OFFICIAL_FILE_SOURCE_LOCATED"},
+    {"canonical_id":"PD-MF-OFF-0005","caret":"^","group_key":"specialist","name_es":"Fiscalía Especial contra la Corrupción y la Criminalidad Organizada","name_en":"Special Prosecution Office against Corruption and Organised Crime","tier":"STATE_SPECIALIST","dir3":"J00004991","official_id_status":"DIR3_LOCATED_IN_REGAGE_RECEIPT"},
+    {"canonical_id":"PD-MF-OFF-0006","caret":"^","group_key":"specialist","name_es":"Fiscalía de la Audiencia Nacional","name_en":"Prosecution Office of the Audiencia Nacional","tier":"STATE_SPECIALIST","dir3":"J00003864","official_id_status":"DIR3_LOCATED_IN_REGAGE_RECEIPT"},
+    {"canonical_id":"PD-MF-OFF-0007","caret":"^","group_key":"specialist","name_es":"Fiscalía de la Sala de lo Penal del Tribunal Supremo","name_en":"Prosecution Office before the Criminal Chamber of the Supreme Court","tier":"STATE_SPECIALIST","dir3":"J00020146","official_id_status":"DIR3_LOCATED_IN_REGAGE_RECEIPT"},
+    {"canonical_id":"PD-MF-OFF-0008","caret":"^","group_key":"canarias","name_es":"Fiscalía de la Comunidad Autónoma de Canarias","name_en":"Prosecution Office of the Autonomous Community of the Canary Islands","tier":"AUTONOMOUS_COMMUNITY","dir3":"J00015401","official_id_status":"DIR3_LOCATED_IN_REGAGE_RECEIPT"},
+    {"canonical_id":"PD-MF-OFF-0009","caret":"^","group_key":"las-palmas","name_es":"Fiscalía Provincial de Las Palmas","name_en":"Las Palmas Provincial Prosecution Office","tier":"PROVINCIAL","dir3":"J00001657","official_id_status":"DIR3_LOCATED_IN_REGAGE_RECEIPT"},
+    {"canonical_id":"PD-MF-OFF-0010","caret":"^","group_key":"tenerife","name_es":"Fiscalía Provincial de Santa Cruz de Tenerife","name_en":"Santa Cruz de Tenerife Provincial Prosecution Office","tier":"PROVINCIAL","dir3":null,"official_id_status":"OFFICIAL_PROCEDURAL_SOURCE_LOCATED_DIR3_NOT_LOCKED_HERE"},
+    {"canonical_id":"PD-MF-OFF-0011","caret":"^","group_key":"arrecife","name_es":"Fiscalía de Área de Arrecife de Lanzarote–Puerto del Rosario","name_en":"Arrecife de Lanzarote–Puerto del Rosario Area Prosecution Office","tier":"AREA","dir3":"J00017154","official_id_status":"DIR3_LOCATED_IN_REGAGE_RECEIPT"},
+    {"canonical_id":"PD-MF-OFF-0012","caret":"^","group_key":"eppo","name_es":"Fiscalía Europea","name_en":"European Public Prosecutor's Office","tier":"EU_SUPRANATIONAL","dir3":"J00024141","official_id_status":"DIR3_LOCATED_IN_REGAGE_RECEIPT"},
+    {"canonical_id":"PD-MF-OFF-0013","caret":"^","group_key":"eppo","name_es":"Unidad de Apoyo a la Fiscalía Europea","name_en":"Support Unit for the European Public Prosecutor's Office","tier":"STATE_SUPPORT_TO_EU_ROUTE","dir3":"EA0052807","official_id_status":"DIR3_LOCATED_IN_REGAGE_RECEIPT"},
+    {"canonical_id":"PD-MF-OFF-0014","caret":"^","group_key":"specialist","name_es":"Fiscalía Provincial de Valencia","name_en":"Valencia Provincial Prosecution Office","tier":"PROVINCIAL_OTHER_TERRITORY","dir3":"J00004143","official_id_status":"DIR3_LOCATED_IN_REGAGE_RECEIPT"}
+  ],
+  "expedientes": [
+    {"master_id":"GC-FIS-011","reference":"DI 273/2013","office_ids":["PD-MF-OFF-0009"],"caret_id":null,"verification":"VERIFIED_PROCEDURAL","period":"2013","status_es":"Primer marco fiscal localizado; posteriormente condujo a querella / DP 332/2014.","status_en":"Earliest located prosecution frame; later led to a criminal complaint / DP 332/2014."},
+    {"master_id":"GC-FIS-012","reference":"Fiscalía 39/2014","office_ids":[],"caret_id":null,"verification":"OPEN_REFERENCE","period":"2014","status_es":"Referencia separada localizada; oficina, objeto y resolución primaria pendientes.","status_en":"Separate reference located; office, object and primary disposition remain pending."},
+    {"master_id":"GC-FIS-013","reference":"DI 248/2018","office_ids":["PD-MF-OFF-0009"],"caret_id":"PD-SP-R-0024","verification":"VERIFIED_PRIMARY_COPY","period":"2018–2019","status_es":"Decreto de archivo firmado de 7 mayo 2019 y notificación de 16 mayo localizados.","status_en":"Signed 7 May 2019 archive decree and 16 May notice located."},
+    {"master_id":"GC-FIS-014","reference":"DI 113/2022","office_ids":["PD-MF-OFF-0009"],"caret_id":"PD-SP-R-0025","verification":"VERIFIED_PRIMARY_COPY","period":"2022–2026","status_es":"Archivo firmado de 8 febrero 2023 y decisión de copia de 23 febrero 2026 localizados.","status_en":"Signed 8 February 2023 archive and 23 February 2026 copy decision located."},
+    {"master_id":"GC-FIS-015","reference":"EG 352/2025","office_ids":["PD-MF-OFF-0005"],"caret_id":null,"verification":"OPEN_REFERENCE","period":"2025–2026","status_es":"Ruta Anticorrupción registrada; admisión/remisión final pendiente de cierre primario.","status_en":"Anti-Corruption route registered; final admission/referral state remains primary-source pending."},
+    {"master_id":"GC-FIS-016","reference":"DI 22/2026","office_ids":["PD-MF-OFF-0009"],"caret_id":"PD-SP-R-0026","verification":"VERIFIED_PRIMARY_COPY","period":"2026","status_es":"Archivo inicial y múltiples actos posteriores de unión/mantenimiento registrados por separado.","status_en":"Initial archive and multiple later joinder/maintenance acts separately registered."},
+    {"master_id":"GC-FIS-017","reference":"DIP 2/2026","office_ids":["PD-MF-OFF-0008"],"caret_id":"PD-SP-R-0006","verification":"VERIFIED_PRIMARY","period":"2026","status_es":"Decreto de archivo y notificación localizados; corrección REGAGE posterior registrada por separado.","status_en":"Archive decree and notice located; later REGAGE correction separately registered."},
+    {"master_id":"GC-FIS-018","reference":"EG 49/2026","office_ids":["PD-MF-OFF-0004","PD-MF-OFF-0001"],"caret_id":"PD-SP-R-0030","verification":"VERIFIED_PRIMARY","period":"2026","status_es":"Dos decisiones centrales firmadas localizadas y registradas por separado.","status_en":"Two signed central decisions located and separately registered."},
+    {"master_id":"LZ-FIS-007","reference":"EG 86/2026","office_ids":["PD-MF-OFF-0006","PD-MF-OFF-0011"],"caret_id":"PD-SP-R-0031","verification":"VERIFIED_PRIMARY_COPY","period":"2026","status_es":"Inhibición/remisión desde Audiencia Nacional hacia Arrecife; tratamiento de destino pendiente.","status_en":"Competence referral from Audiencia Nacional to Arrecife; destination treatment pending."},
+    {"master_id":"LZ-FIS-045","reference":"DI preprocesal 114/2025","office_ids":["PD-MF-OFF-0011"],"caret_id":"PD-SP-R-0027","verification":"VERIFIED_PRIMARY_COPY","period":"2025–2026","status_es":"Notificación oficial de archivo localizada; expediente certificado completo pendiente.","status_en":"Official archive notice located; complete certified file pending."},
+    {"master_id":"TF-FIS-007","reference":"DIP 20/2026","office_ids":["PD-MF-OFF-0010","PD-MF-OFF-0009"],"caret_id":"PD-SP-R-0028","verification":"VERIFIED_PRIMARY","period":"2026","status_es":"Apertura y remisión territorial Tenerife → Las Palmas probadas; asociación/tratamiento receptor pendiente.","status_en":"Opening and territorial referral Tenerife → Las Palmas proved; receiving association/treatment pending."},
+    {"master_id":"GC-FIS-032","reference":"EG 44/2026","office_ids":["PD-MF-OFF-0008"],"caret_id":"PD-SP-R-0029","verification":"VERIFIED_PRIMARY_COPY","period":"2026","status_es":"Decreto firmado de 30 marzo localizado; remisiones receptoras pendientes de completar.","status_en":"Signed 30 March decree located; receiving-office follow-through remains to be completed."},
+    {"master_id":"TF-FIS-008","reference":"EG 95/2026","office_ids":["PD-MF-OFF-0010"],"caret_id":"PD-SP-R-0032","verification":"VERIFIED_PRIMARY","period":"2026","status_es":"Decreto/notificación de 21 agosto localizados; DIP 7/2026 y DIP 12/2026 permanecen referencias independientes pendientes.","status_en":"21 August decree/notice located; DIP 7/2026 and DIP 12/2026 remain independent pending references."},
+    {"master_id":"GC-FIS-033","reference":"EG 112/2026","office_ids":["PD-MF-OFF-0008"],"caret_id":"PD-SP-R-0033","verification":"VERIFIED_PRIMARY","period":"2026","status_es":"Archivo y aclaración firmada localizados; transferencia/tratamiento provincial pendiente.","status_en":"Archive and signed clarification located; provincial transfer/treatment remains pending."},
+    {"master_id":"NAT-FIS-004","reference":"E.G. 745/2026","office_ids":["PD-MF-OFF-0002","PD-MF-OFF-0001"],"caret_id":"PD-SP-R-0034","verification":"VERIFIED_PRIMARY","period":"2026","status_es":"Decreto de archivo de 26 agosto localizado; reposición debe permanecer separada y solo pasar a presentada con justificante oficial.","status_en":"26 August archive decree located; reconsideration must remain separate and may be marked filed only with official filing proof."},
+    {"master_id":"GC-FIS-034","reference":"EG 33/2025","office_ids":["PD-MF-OFF-0009"],"caret_id":"PD-SP-R-0036","verification":"VERIFIED_PRIMARY_COPY","period":"2025","status_es":"Apertura/notificación localizada; disposición posterior no verificada.","status_en":"Opening/notice located; later disposition not verified."},
+    {"master_id":"NAT-FIS-005","reference":"CC/CA 12/2025","office_ids":["PD-MF-OFF-0001"],"caret_id":"PD-SP-R-0037","verification":"VERIFIED_PROCEDURAL","period":"2025","status_es":"Correspondencia central localizada; no se infiere decisión de fondo.","status_en":"Central correspondence located; no merits disposition inferred."},
+    {"master_id":"GC-FIS-035","reference":"EG 6/2026","office_ids":["PD-MF-OFF-0008"],"caret_id":"PD-SP-R-0038","verification":"VERIFIED_PROCEDURAL","period":"2026","status_es":"Notificación oficial localizada; acto subyacente y fondo pendientes de digestión primaria.","status_en":"Official notice located; underlying act and merits remain primary-source pending."},
+    {"master_id":"NAT-FIS-006","reference":"ST 553/2026","office_ids":["PD-MF-OFF-0003"],"caret_id":"PD-SP-R-0039","verification":"VERIFIED_PRIMARY_COPY","period":"2026","status_es":"Acuse firmado localizado; acredita recepción/tramitación, no admisión o investigación.","status_en":"Signed acknowledgement located; proves receipt/handling, not admission or investigation."},
+    {"master_id":"NAT-FIS-007","reference":"ST 104/2025","office_ids":["PD-MF-OFF-0003"],"caret_id":"PD-SP-R-0040","verification":"VERIFIED_PROCEDURAL","period":"2025","status_es":"Múltiples acuses oficiales localizados; expediente completo pendiente.","status_en":"Multiple official acknowledgements located; complete file pending."},
+    {"master_id":"TF-FIS-009","reference":"DIP 7/2026","office_ids":["PD-MF-OFF-0010"],"caret_id":"PD-SP-R-0041","verification":"CARET_PENDING","period":"2026","status_es":"Mencionado en EG 95/2026; fuente nativa independiente no localizada.","status_en":"Referenced in EG 95/2026; independent native source not located."},
+    {"master_id":"TF-FIS-010","reference":"DIP 12/2026","office_ids":["PD-MF-OFF-0010"],"caret_id":"PD-SP-R-0042","verification":"CARET_PENDING","period":"2026","status_es":"Mencionado en EG 95/2026; fuente nativa independiente no localizada.","status_en":"Referenced in EG 95/2026; independent native source not located."},
+    {"master_id":"UNK-FIS-001","reference":"EG 58/2026","office_ids":[],"caret_id":"PD-SP-R-0043","verification":"CARET_PENDING","period":"2026","status_es":"Referencia preservada; oficina, clase, acto y resultado discretos pendientes.","status_en":"Reference preserved; office, class, discrete act and outcome pending."}
+  ],
+  "priority_open_references": [
+    {"reference":"22 later RedSARA/AGE records","state":"AGGREGATE_ONLY_NO_SYNTHETIC_EVENTS","next":"Recover the individual official export/receipts before creating one row per record."},
+    {"reference":"EG 19/2026 Valencia → Arrecife route","state":"SUBJECT_LEVEL_REFERENCE_REQUIRES_MASTER_RECONCILIATION","next":"Recover the native decision/referral and receiving Arrecife reference before assigning a Master_ID relationship."},
+    {"reference":"OC/2024/0532 / Fiscalía Europea route","state":"REGAGE_REFERENCE_REQUIRES_EPPO_FILE_BRIDGE","next":"Recover a native EPPO acknowledgement/file reference or other official bridge before claiming internal association."},
+    {"reference":"DP 1901/2026 Fiscal report","state":"SOURCE_REQUIRED","next":"Recover the signed Fiscal report and later judicial act; do not infer content from the court's request alone."},
+    {"reference":"2011–2012 historical Fiscalía lane","state":"HISTORICAL_SOURCE_RECONCILIATION_OPEN","next":"Search source-controlled proceedings, denuncias, official correspondence and certified files; add events only when an individual source is located."}
+  ],
+  "canonical_sources": {
+    "communications_register":"assets/data/institutional-communications-register-v1.json",
+    "mailbox_control":"evidence/fiscalia/2026/MF_MAILBOX_REGAGE_CONTROL_31AUG2026.md",
+    "master_proceedings":"archive/PROCEEDINGS_MASTER_REGISTER.csv",
+    "interconnectivity":"assets/data/fiscalia-proceedings-interconnectivity-v1.json",
+    "receipt_index":"archive/evidence/mf-redsara-anexo4/MF_REDSARA_REGISTRATION_INDEX_SHORT.csv"
+  }
+}
