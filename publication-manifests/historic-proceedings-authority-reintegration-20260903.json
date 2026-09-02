@@ -55,7 +55,7 @@
     "TAX_CONTENTIOUS_CHAIN": 4,
     "REGULATORY_PUBLIC_ROUTE": 7
   },
-  "candidate_delta_file_count": 304,
+  "candidate_delta_file_count": 308,
   "transitions": [
     {
       "resource": ".github/workflows/backfill-historic-proceedings-search-20260902.yml",
@@ -115,6 +115,22 @@
       "git_status": "A",
       "preintegration_main_sha256": null,
       "candidate_sha256": "215bf7f5bd1e4794d8d94cd8d0b1030b47f57dc24c718a4da08593e8179fcc2e",
+      "historical_anchors": [],
+      "reason": "Current-main reintegration of the controlled historic-proceedings, justice-authority, bilingual page/search and validation architecture."
+    },
+    {
+      "resource": "assets/data/matter-identity-registry-v1.historic-las-palmas-civil-judicial-institutions-20260902.json",
+      "git_status": "A",
+      "preintegration_main_sha256": null,
+      "candidate_sha256": "7789d0f6c0c8612306a9078b9c24745138f8ef785f88f25353a8a66ba3e7b722",
+      "historical_anchors": [],
+      "reason": "Current-main reintegration of the controlled historic-proceedings, justice-authority, bilingual page/search and validation architecture."
+    },
+    {
+      "resource": "assets/data/matter-identity-registry-v1.historic-las-palmas-civil-judicial-people-20260902.json",
+      "git_status": "A",
+      "preintegration_main_sha256": null,
+      "candidate_sha256": "acb6e2b6d9f38c58afe956ddcff6141972a188ed36de152806a5e13c21fc8c6e",
       "historical_anchors": [],
       "reason": "Current-main reintegration of the controlled historic-proceedings, justice-authority, bilingual page/search and validation architecture."
     },
@@ -241,6 +257,14 @@
       "git_status": "A",
       "preintegration_main_sha256": null,
       "candidate_sha256": "74126cdc65893cc5bae2be8bf9765a3420aecf134a81e819889bdee789fdb2cb",
+      "historical_anchors": [],
+      "reason": "Current-main reintegration of the controlled historic-proceedings, justice-authority, bilingual page/search and validation architecture."
+    },
+    {
+      "resource": "en/historic-las-palmas-civil-justice-authority-register/index.html",
+      "git_status": "A",
+      "preintegration_main_sha256": null,
+      "candidate_sha256": "cf6199c6656500d2bfb64559798715e5dfc76400e3841c6a5fd16f64119b36fb",
       "historical_anchors": [],
       "reason": "Current-main reintegration of the controlled historic-proceedings, justice-authority, bilingual page/search and validation architecture."
     },
@@ -2368,6 +2392,14 @@
       "git_status": "A",
       "preintegration_main_sha256": null,
       "candidate_sha256": "353c398829f80e41b0e3d66462bb8767cabafee8f99a05c21f776fba569a6cda",
+      "historical_anchors": [],
+      "reason": "Current-main reintegration of the controlled historic-proceedings, justice-authority, bilingual page/search and validation architecture."
+    },
+    {
+      "resource": "es/registro-autoridad-historica-las-palmas-civil/index.html",
+      "git_status": "A",
+      "preintegration_main_sha256": null,
+      "candidate_sha256": "ce0200b3529ee42e801e435b333d8dd0c1acb67dfeb3d45c05ac4f4863face66",
       "historical_anchors": [],
       "reason": "Current-main reintegration of the controlled historic-proceedings, justice-authority, bilingual page/search and validation architecture."
     },
