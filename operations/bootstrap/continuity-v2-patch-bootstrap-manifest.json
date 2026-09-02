@@ -1,0 +1,39 @@
+{
+  "schema": "por-derecho.bootstrap.v1",
+  "bootstrap_id": "PD-BOOT-CONTINUITY-V2-20260902-02",
+  "complete": true,
+  "repository": "sbu001monterecco/por-derecho",
+  "base_main_sha": "6013473e0e510948d2702fe0b4f5f6cfe45f7028",
+  "visible_patch": {
+    "parts": [
+      "operations/bootstrap/continuity-v2-visible-patch.part00.b64",
+      "operations/bootstrap/continuity-v2-visible-patch.part01.b64",
+      "operations/bootstrap/continuity-v2-visible-patch.part02.b64"
+    ],
+    "decoded_gzip_sha256": "edd5f87c626763108f2ba784aed30b9a833046424492d198350db53be54789b5"
+  },
+  "source_files": {
+    "parts": [
+      "operations/bootstrap/continuity-v2-source-files.part00.b64",
+      "operations/bootstrap/continuity-v2-source-files.part01.b64",
+      "operations/bootstrap/continuity-v2-source-files.part02.b64",
+      "operations/bootstrap/continuity-v2-source-files.part03.b64",
+      "operations/bootstrap/continuity-v2-source-files.part04.b64",
+      "operations/bootstrap/continuity-v2-source-files.part05.b64"
+    ],
+    "decoded_tar_gzip_sha256": "d74f93f5b54ccc91143a795943414bb7b4dd629ea8b5648ca6d235664880fb8f"
+  },
+  "expected_materialised_paths_file": "operations/bootstrap/continuity-v2-expected-paths.txt",
+  "expected_materialised_path_count": 44,
+  "cleanup_globs": [
+    "operations/bootstrap/continuity-v2-payload-20260902.part*.b64",
+    "operations/bootstrap/continuity-v2-visible-patch.part*.b64",
+    "operations/bootstrap/continuity-v2-source-files.part*.b64"
+  ],
+  "commit_trailers": {
+    "Workspace-Impact": "PD-WS-20260902-0001, PD-WS-20260901-0001, PD-WS-20260901-0005",
+    "Workspace-Checkpoint": "required",
+    "External-Action": "repository-and-website-only",
+    "Publication-Scope": "continuity-v2-eg745"
+  }
+}
