@@ -12,6 +12,10 @@ Record_Type / Stream taxonomy. The builder still classifies each file itself and
 compares its observed census against this expected census, so a later change to
 the builder taxonomy does not silently self-validate. No exact proceeding is
 allowed to fall through to the general fallback family.
+
+The Fiscalía matrix split is independently derived from the public Fiscalía rows'
+canonical Is_Proceeding values. Exact and unresolved counts remain separate gates;
+no unresolved file is promoted to an exact proceeding by this synchroniser.
 """
 from __future__ import annotations
 
@@ -118,6 +122,19 @@ def main() -> int:
     public_fiscalia_rows = [
         row for row in public_rows if "FISCAL" in (row.get("Stream") or "").upper()
     ]
+    fiscalia_state_counts = Counter(
+        (row.get("Is_Proceeding") or "").strip().upper() for row in public_fiscalia_rows
+    )
+    unsupported_fiscalia_states = sorted(
+        state for state in fiscalia_state_counts if state not in {"TRUE", "UNVERIFIED"}
+    )
+    if unsupported_fiscalia_states:
+        raise SystemExit(
+            "public Fiscalía matrix contains unsupported Is_Proceeding states: "
+            + ", ".join(unsupported_fiscalia_states)
+        )
+    if sum(fiscalia_state_counts.values()) != len(public_fiscalia_rows):
+        raise SystemExit("Fiscalía exact/unresolved split does not cover its public denominator")
 
     family_by_id = {
         row["Master_ID"]: expected_family(row)
@@ -146,10 +163,30 @@ def main() -> int:
         "EXPECTED_PUBLIC_EXACT_PROCEEDINGS": len(public_exact_ids),
         "EXPECTED_PRIVATE_EXACT_PROCEEDINGS": len(canonical_exact_ids - public_exact_ids),
         "EXPECTED_FISCALIA_OFFICE_FILE_RECORDS": len(public_fiscalia_rows),
+        "EXPECTED_FISCALIA_EXACT_RECORDS": fiscalia_state_counts["TRUE"],
+        "EXPECTED_FISCALIA_UNVERIFIED_RECORDS": fiscalia_state_counts["UNVERIFIED"],
     }
 
     text = BUILDER.read_text(encoding="utf-8")
     original = text
+
+    # Older builders pre-date the split constants. Insert them once, adjacent to
+    # the existing Fiscalía denominator, then keep all three scalar expectations
+    # synchronised from the public controlled projection.
+    if "EXPECTED_FISCALIA_EXACT_RECORDS" not in text:
+        anchor = re.search(
+            r"(?m)^EXPECTED_FISCALIA_OFFICE_FILE_RECORDS\s*=\s*\d+\s*$",
+            text,
+        )
+        if not anchor:
+            raise SystemExit("Fiscalía office/file denominator anchor missing in builder")
+        insertion = (
+            anchor.group(0)
+            + "\nEXPECTED_FISCALIA_EXACT_RECORDS = 0"
+            + "\nEXPECTED_FISCALIA_UNVERIFIED_RECORDS = 0"
+        )
+        text = text[: anchor.start()] + insertion + text[anchor.end() :]
+
     for name, value in counts.items():
         pattern = rf"(?m)^{re.escape(name)}\s*=\s*\d+\s*$"
         replacement = f"{name} = {value}"
@@ -171,6 +208,30 @@ def main() -> int:
     )
     if n != 1:
         raise SystemExit(f"could not uniquely update EXPECTED_FINITE_TEST_FAMILY_COUNTS in {BUILDER}")
+
+    split_pattern = re.compile(
+        r"if \(fiscalia_matrix_exact_count, fiscalia_matrix_unverified_count\) != "
+        r"(?:\(\d+,\s*\d+\)|\(EXPECTED_FISCALIA_EXACT_RECORDS,\s*EXPECTED_FISCALIA_UNVERIFIED_RECORDS\)):\n"
+        r"\s*raise ValueError\(\n"
+        r"\s*\"Fiscalía office/file matrix must preserve its .*? split\"\n"
+        r"\s*\)",
+        re.S,
+    )
+    split_replacement = (
+        "if (fiscalia_matrix_exact_count, fiscalia_matrix_unverified_count) != (\n"
+        "        EXPECTED_FISCALIA_EXACT_RECORDS,\n"
+        "        EXPECTED_FISCALIA_UNVERIFIED_RECORDS,\n"
+        "    ):\n"
+        "        raise ValueError(\n"
+        "            \"Fiscalía office/file exact/unresolved split is stale: \"\n"
+        "            f\"expected {EXPECTED_FISCALIA_EXACT_RECORDS} exact + \"\n"
+        "            f\"{EXPECTED_FISCALIA_UNVERIFIED_RECORDS} unresolved, found \"\n"
+        "            f\"{fiscalia_matrix_exact_count} + {fiscalia_matrix_unverified_count}\"\n"
+        "        )"
+    )
+    text, n = split_pattern.subn(split_replacement, text, count=1)
+    if n != 1:
+        raise SystemExit("could not uniquely update Fiscalía exact/unresolved matrix gate")
 
     BUILDER.write_text(text, encoding="utf-8")
     state = "IDEMPOTENT" if text == original else "UPDATED"
