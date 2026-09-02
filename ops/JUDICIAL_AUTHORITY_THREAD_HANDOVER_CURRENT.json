@@ -1,0 +1,57 @@
+{
+  "schema": "por-derecho.thread-handover.judicial-authority.v1",
+  "as_of": "2026-09-02",
+  "state": "THREAD_STATE_PRESERVED_SOURCE_LOCKED_BACKFILL_AND_CERTIFIED_DOCKET_GAPS_OPEN",
+  "source_branch": "continuity-judicial-authority-handover-20260902",
+  "read_first": [
+    "CHATGPT_START_HERE.md",
+    "archive/THREAD_HANDOVER_JUDICIAL_AUTHORITY_SCAN_02SEP2026.md",
+    ".github/governance/NAMED_JUSTICE_PROFESSIONAL_CARET_COVERAGE_PROTOCOL_31AUG2026.md",
+    ".github/governance/JUDICIAL_PROSECUTORIAL_AUTHORITY_REGISTER_CONTINUITY_02SEP2026.md",
+    "archive/PROCEEDINGS_MASTER_REGISTER.csv",
+    "assets/data/matter-identity-registry-v1.json",
+    "assets/data/justice-authority-register-current-v2.json",
+    "assets/data/justice-map.json"
+  ],
+  "source_locked_new_or_unreconciled_people": [
+    {"name":"Jerónimo Alonso Herrero","role":"Magistrado-Juez","proceeding":"DP 1132/2018","act":"Providencia 01-Aug-2018","caepr_action":"COLLISION_CHECK_THEN_REGISTER_OR_LINK"},
+    {"name":"Fernando Pérez Polo","role":"LAJ","proceeding":"DP 1041/2017","act":"Providencia signed 15-Jan-2018","caepr_action":"COLLISION_CHECK_THEN_REGISTER_OR_LINK"},
+    {"name":"Luis Francisco Galván Mesa","role":"Magistrado-Juez","proceeding":"DP 1901/2026","act":"Providencia 12-Jul-2026","caepr_action":"COLLISION_CHECK_THEN_REGISTER_OR_LINK"},
+    {"name":"Alberto Puebla Contreras","role":"Magistrado-Juez","proceeding":"DP 1956/2026","act":"opening/termination/provisional-dismissal Auto, accessed 21-Jul-2026","caepr_action":"COLLISION_CHECK_THEN_REGISTER_OR_LINK"},
+    {"name":"Nuria Martín García","role":"LAJ","proceeding":"PO 496/2026","act":"Diligencia 17-Apr-2026; Decreto 15-Jun-2026","caepr_action":"COLLISION_CHECK_THEN_REGISTER_OR_LINK"},
+    {"name":"Manuel Marchena Gómez","role":"Magistrate / panel president","proceeding":"RC 1867/2024","act":"Auto 13-Jun-2024","caepr_action":"VERIFY_EXISTING_ID_THEN_LINK"},
+    {"name":"Antonio del Moral García","role":"Magistrate","proceeding":"RC 1867/2024","act":"Auto 13-Jun-2024","caepr_action":"VERIFY_EXISTING_ID_THEN_LINK"},
+    {"name":"Vicente Magro Servet","role":"Magistrate / ponente","proceeding":"RC 1867/2024","act":"Auto 13-Jun-2024","caepr_action":"VERIFY_EXISTING_ID_THEN_LINK"},
+    {"name":"María del Carmen Calvo Velasco","role":"LAJ","proceeding":"RC 1867/2024","act":"Auto 13-Jun-2024","caepr_action":"VERIFY_EXISTING_ID_THEN_LINK"}
+  ],
+  "source_locked_proceedings_requiring_master_reconciliation": [
+    {"reference":"DI 1103/2018","relationship":"origin of DP 1132/2018; do not merge as same exact proceeding"},
+    {"reference":"DP 1132/2018","nig":"3500443220180003508","court":"Juzgado de Instrucción nº 2 de Arrecife"},
+    {"reference":"Rollo 1094/2018","nig":"3501647120120000351","court":"Audiencia Provincial de Las Palmas — Sección Cuarta","resolution":"Auto 78/2019"},
+    {"reference":"Recurso de Queja 741/2021","nig":"3501647120120000351","court":"Audiencia Provincial de Las Palmas — Sección Cuarta","resolution":"Auto 96/2021"},
+    {"reference":"RC 1867/2024","court":"Tribunal Supremo — Sala de lo Penal","resolution":"Auto 13-Jun-2024"}
+  ],
+  "open_high_priority_gaps": [
+    "DP 1132/2018 named LAJ",
+    "DP 1901/2026 named LAJ and later signed fiscal/judicial acts",
+    "DP 1956/2026 named LAJ plus authentic electronic copy/date/CSV",
+    "AN Rollo 120/2024 exact panel and LAJ from native act",
+    "RPL 2523/2025 exact panel/LAJ",
+    "RPL 3304/2025 exact panel/LAJ",
+    "RPL 3319/2025 exact panel/LAJ",
+    "RPL 421/2026 exact panel/LAJ",
+    "historic Arrecife 4009/2015 and other source-light rows exact court/Judge/LAJ",
+    "Valencia ORD 1859/2023 Judge/LAJ",
+    "certified historical docket completeness"
+  ],
+  "completion_gate": {
+    "rule": "NO_SILENT_JUDGE_OR_LAJ_BLANKS",
+    "allowed_role_states": ["CARET_CONFIRMED_PERSON_ID","ROLE_NOT_APPLICABLE","CERTIFIED_DOCKET_REQUIRED","PERSON_NOT_YET_SOURCE_IDENTIFIED"],
+    "must_validate": ["person_to_act","act_to_proceeding","proceeding_to_court","court_hierarchy","master_register_crosswalk","caepr_referential_integrity"]
+  },
+  "safe_to_delete_thread_when": [
+    "handover merged to main",
+    "GitHub Pages deployment for merge SHA succeeds",
+    "live readback of public continuity page and machine handover succeeds"
+  ]
+}
