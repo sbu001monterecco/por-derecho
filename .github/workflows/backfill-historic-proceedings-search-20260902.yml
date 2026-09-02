@@ -39,10 +39,17 @@ jobs:
 
       - name: Generate reusable bilingual proceeding pages and graphs
         run: |
+          # The 2-Sep page generator is a one-time migration that also rewrites the
+          # then-current overlay/search validator. Keep those legacy rewrite anchors
+          # available only while the generator runs; the governed dynamic versions
+          # are restored before enrichment or validation.
+          cp assets/justice-professionals-current-overlay-20260902.js /tmp/justice-overlay-dynamic.js
+          cp scripts/validate_canonical_home_search.py /tmp/canonical-search-validator-dynamic.py
+          git show 14b347041e3db72521da7aadaa6e747614d61064:assets/justice-professionals-current-overlay-20260902.js > assets/justice-professionals-current-overlay-20260902.js
+          git show 14b347041e3db72521da7aadaa6e747614d61064:scripts/validate_canonical_home_search.py > scripts/validate_canonical_home_search.py
           python3 scripts/_generate_proceeding_pages_and_interlinks_20260902.py
-          # The page generator still contains a historical embedded overlay template.
-          # Restore the separately governed dynamic source files before validation.
-          git checkout -- assets/justice-professionals-current-overlay-20260902.js scripts/validate_canonical_home_search.py
+          cp /tmp/justice-overlay-dynamic.js assets/justice-professionals-current-overlay-20260902.js
+          cp /tmp/canonical-search-validator-dynamic.py scripts/validate_canonical_home_search.py
           python3 scripts/_enrich_proceeding_contextual_links_20260902.py
           python3 scripts/_render_proceeding_authority_backlinks_20260902.py
           python3 scripts/_sync_current_caepr_counts_20260902.py
