@@ -1,0 +1,78 @@
+{
+  "publication_id": "CUATRECASAS-VISUAL-ARCHITECTURE-20260902",
+  "owner": "Por Derecho / Project Sun Rock",
+  "current_state": "REMOTE_SOURCE",
+  "control_date": "2026-09-02",
+  "publication_type": "bilingual visual navigation and reconstruction layer across existing Cuatrecasas, Matkator, ETJ, 360-degree and RIC/CNMV routes",
+  "base_main_sha": "dbfcd6eedbf4924616c836a984d8b624fd24f19d",
+  "predecessor_prs": [1359, 1360, 1361, 1362, 1363, 1364],
+  "expected_routes": {
+    "en": [
+      "en/cuatrecasas-sun-park/index.html",
+      "en/cuatrecasas-mandate-ric-continuity/index.html",
+      "en/cuatrecasas-dp748-civil-action/index.html",
+      "en/matkator-asset-rights-register/index.html",
+      "en/reverse-engineering-360-sun-park-chain/index.html",
+      "en/unitary-record/index.html",
+      "en/ric-private-equity-sun-park/index.html",
+      "en/same-hotel-multiple-financial-lives/index.html"
+    ],
+    "es": [
+      "es/cuatrecasas-sun-park/index.html",
+      "es/cuatrecasas-mandato-continuidad-ric/index.html",
+      "es/cuatrecasas-dp748-accion-civil/index.html",
+      "es/registro-activos-derechos-matkator/index.html",
+      "es/ingenieria-inversa-360-cadena-sun-park/index.html",
+      "es/registro-unitario/index.html",
+      "es/ric-private-equity-sun-park/index.html",
+      "es/mismo-hotel-multiples-vidas-financieras/index.html"
+    ]
+  },
+  "expected_source_files": [
+    "assets/cuatrecasas-visual-bridge-atlas-en-20260902.svg",
+    "assets/cuatrecasas-visual-bridge-atlas-es-20260902.svg",
+    "assets/cuatrecasas-visual-architecture-v2-20260902.js",
+    "assets/cuatrecasas-visual-bridges-across-pages-20260902.js",
+    "evidence/cuatrecasas/2026-09-02-visual-architecture-map.json",
+    "publication-manifests/cuatrecasas-visual-architecture-20260902.json"
+  ],
+  "visual_placement": {
+    "main_cuatrecasas": ["A", "C", "D"],
+    "mandate_ric_bridge": ["A", "B", "C", "D"],
+    "etj_civil_action": ["C", "B"],
+    "matkator_asset_rights": ["B"],
+    "reverse_engineering_360": ["A", "B"],
+    "unitary_record": ["A"],
+    "ric_cnmv_and_financial_lives": ["D"]
+  },
+  "validation": {
+    "local_source_checks": [
+      "Both canonical SVG atlases rendered successfully during branch preparation.",
+      "The v2 JavaScript renderer passed node --check during branch preparation.",
+      "main-to-feature compare before PR showed behind_by=0 and no deletions or renames."
+    ],
+    "publication_integrity": "PENDING_PR_CI",
+    "repository_preservation": "PENDING_PR_CI",
+    "audience_experience": "PENDING_PR_CI",
+    "rendered_checks": "PENDING_PR_CI_AND_POST_DEPLOYMENT"
+  },
+  "evidence_and_legal_boundaries": [
+    "Visuals are illustrative navigation/reconstruction aids, not independent evidence.",
+    "Finca 8,584 is the one current controlled ETJ remate/adjudication object.",
+    "Finca 8,588 is historical Matkator property and is not presently identified as an ETJ auction object.",
+    "Matkator is the executed debtor; Aweswell is not thereby an executed debtor and its separate assets are not automatically exposed.",
+    "The Aweswell link is an economic/equity-value/control gateway, not automatic veil-piercing.",
+    "Reservation of the right to cede the remate does not establish a completed cession.",
+    "Absence of a located demand/payment route for Steps 1-3 remains 'not evidenced in the record presently located', not proof that it never occurred.",
+    "The 2021 RIC/CNMV notice cannot be used to backdate knowledge of later incentive, FEDER or public-funding records that did not then exist.",
+    "FACT -> INFERENCE -> ALLEGATION -> OPEN QUESTION remains controlling."
+  ],
+  "live_verification": {
+    "status": "NOT_YET_CLAIMED",
+    "note": "REMOTE_SOURCE records branch/source preservation only. CI_GREEN, MERGED, DEPLOYED and LIVE_VERIFIED require their separate objective gates."
+  },
+  "thread_deletion_audit": {
+    "status": "NOT_YET_DELETION_SAFE",
+    "note": "Deletion safety requires merge, deployment/live evidence, preserved open gaps and a post-deployment continuity record."
+  }
+}
