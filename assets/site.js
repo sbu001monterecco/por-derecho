@@ -142,9 +142,9 @@
   const loadBorjaSeparationRpl3304Inbound = () => {
     if (document.querySelector('script[data-borja-separation-rpl3304-inbound-loader]')) return;
     const inbound = document.createElement('script');
-    inbound.src = new URL('borja-separation-rpl3304-inbound-20260902.js?v=20260902a', current.src).href;
+    inbound.src = new URL('borja-separation-rpl3304-inbound-20260902.js?v=20260902b', current.src).href;
     inbound.async = false;
-    inbound.setAttribute('data-borja-separation-rpl3304-inbound-loader', '20260902a');
+    inbound.setAttribute('data-borja-separation-rpl3304-inbound-loader', '20260902b');
     document.head.appendChild(inbound);
   };
 
