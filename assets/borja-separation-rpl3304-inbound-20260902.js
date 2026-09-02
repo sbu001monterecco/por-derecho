@@ -22,6 +22,22 @@
     document.head.appendChild(style);
   }
 
+  // Spanish social-publication companion: preserve the controlled dossier as
+  // the source of truth while giving the user a reusable incremental LinkedIn queue.
+  if (localPath === '/por-derecho/es/concurso-36-2012-separacion-administrador-concursal-rpl-3304-2025/'
+      && !document.querySelector('[data-borja-separation-linkedin-series="20260902"]')) {
+    const series = document.createElement('section');
+    series.setAttribute('data-borja-separation-linkedin-series', '20260902');
+    series.className = 'section';
+    series.innerHTML = `<div class="shell"><div style="border-left:7px solid #315c7b;background:#fff;padding:1.15rem 1.3rem;box-shadow:0 10px 26px rgba(19,37,45,.08)"><p class="eyebrow">SERIE LINKEDIN · PUBLICACIÓN INCREMENTAL</p><h2 style="margin-top:.25rem">Ocho publicaciones listas, cada una enlazada de nuevo al expediente documental.</h2><p>La serie empieza con la notificación recibida el 2 de septiembre de 2026 y avanza por la demanda de 58 páginas, los límites de primera instancia, la acumulación 3319→3304, los carriles penal/disciplinario y las conexiones diferenciadas con Grant Thornton España, RSM Spain y el perímetro Acosta Matos.</p><p><strong>Las etiquetas institucionales no equivalen a una imputación colectiva:</strong> se utilizan por trazabilidad, contexto y derecho de respuesta.</p><p><a class="button" href="/por-derecho/es/concurso-36-2012-separacion-administrador-concursal-rpl-3304-2025/linkedin-serie/">Abrir la serie LinkedIn lista para copiar →</a></p></div></div>`;
+    const main = document.querySelector('main');
+    if (main) {
+      const hero = main.querySelector('.hero, .dossier-hero, section');
+      if (hero && hero.parentElement === main) hero.insertAdjacentElement('afterend', series);
+      else main.insertAdjacentElement('afterbegin', series);
+    }
+  }
+
   const routes = new Set([
     '/por-derecho/es/concurso-36-2012-separacion-ac-honorarios/',
     '/por-derecho/es/concurso-36-2012-administrador-concursal/',
