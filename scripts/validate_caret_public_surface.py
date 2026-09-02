@@ -44,15 +44,15 @@ CONTROL_SCHEMA = "por-derecho.caret-public-surface-coverage.v1"
 REGISTRY_SCHEMA = "por-derecho.matter-identity-registry.v1"
 PART_SCHEMA = "por-derecho.matter-identity-registry.part.v1"
 
-# These states expressly block a visible confirmed caret. Older canonical
-# records may have no explicit identity_resolution field; that legacy absence is
-# not retrospectively treated as a failure. Finite strict rows may still require
-# an explicit CARET_CONFIRMED state.
+# These states expressly block a visible confirmed caret. A stable named
+# professional/commercial perimeter may itself be caret-confirmed while the
+# exact legal entity remains an expressly open, separate question; therefore
+# CONTROLLED_PERIMETER_LABEL_EXACT_ENTITY_MAY_REQUIRE_SOURCE is not a blocker.
+# Older canonical records may also have no explicit identity_resolution field.
 EXPLICITLY_UNCONFIRMED_STATES = {
     "CARET_PENDING",
     "CARET_SUSPENDED",
     "CARET_PENDING_EXACT_ORGAN_AND_CERTIFIED_DOCKET",
-    "CONTROLLED_PERIMETER_LABEL_EXACT_ENTITY_MAY_REQUIRE_SOURCE",
     "REFERENCED_LEGAL_FORM_VARIANT_UNRESOLVED",
 }
 
