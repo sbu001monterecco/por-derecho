@@ -1,0 +1,42 @@
+name: Run authority search continuity closeout v2
+
+on:
+  push:
+    branches:
+      - continuity/authority-search-live-closeout-20260902
+    paths:
+      - .github/workflows/closeout-authority-search-continuity-v2-20260902.yml
+
+permissions:
+  contents: write
+
+jobs:
+  closeout:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Check out branch
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          ref: continuity/authority-search-live-closeout-20260902
+          fetch-depth: 0
+          persist-credentials: true
+      - name: Build continuity package
+        run: python3 scripts/_closeout_authority_search_continuity_20260902.py
+      - name: Validate continuity package
+        run: |
+          python3 -m py_compile scripts/workspace_persistence.py
+          python3 -m unittest discover -s tests -p 'test_workspace_persistence.py' -v
+          mkdir -p artifacts/workspace-persistence-audit
+          python3 scripts/workspace_persistence.py validate-repository --output artifacts/workspace-persistence-audit/result.json
+          python3 scripts/validate_canonical_home_search.py
+          python3 scripts/validate_unitary_control_plane.py
+          python3 scripts/validate_publication_integrity.py
+          python3 scripts/validate_operational_truth.py
+      - name: Commit package
+        run: |
+          git config user.name por-derecho-governance-bot
+          git config user.email sbu001monterecco@users.noreply.github.com
+          git add data/workspace-register-v1.json CURRENT_WORKSPACE_HANDOFF.md archive/handoffs/2026-09-02-justice-authority-caret-search-live-closeout.md archive/handoffs/2026-09-02-justice-authority-caret-search-live-closeout.json
+          git commit -m 'Register authority search continuity workspace'
+          git push origin HEAD:continuity/authority-search-live-closeout-20260902
