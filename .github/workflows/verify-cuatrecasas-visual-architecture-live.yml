@@ -78,9 +78,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@3d3c42b8786e943b0f402c8326e1474ee79368a6
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           fetch-depth: 0
+          persist-credentials: false
       - name: Confirm descendant of PR 1365 merge
         run: git merge-base --is-ancestor 2a26e4a201099633491ba24741c46baade1c1eea HEAD
       - name: Validate renderer syntax
@@ -90,13 +91,9 @@ jobs:
           python3 scripts/verify_cuatrecasas_visual_architecture.py
           --mode source
           --output artifacts/cuatrecasas-visual-architecture/source-verification.json
-      - name: Upload source verification
+      - name: Preserve source result in workflow log
         if: always()
-        uses: actions/upload-artifact@043fb973c0661c219131c92222b8ef1b50133223
-        with:
-          name: cuatrecasas-visual-source-verification
-          path: artifacts/cuatrecasas-visual-architecture/source-verification.json
-          if-no-files-found: warn
+        run: cat artifacts/cuatrecasas-visual-architecture/source-verification.json || true
 
   public-pages:
     if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
@@ -104,9 +101,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@3d3c42b8786e943b0f402c8326e1474ee79368a6
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           fetch-depth: 0
+          persist-credentials: false
       - name: Confirm descendant of PR 1365 merge
         run: git merge-base --is-ancestor 2a26e4a201099633491ba24741c46baade1c1eea HEAD
       - name: Verify public Pages propagation
@@ -117,10 +115,6 @@ jobs:
           --interval 10
           --timeout 20
           --output artifacts/cuatrecasas-visual-architecture/live-verification.json
-      - name: Upload live verification
+      - name: Preserve live result in workflow log
         if: always()
-        uses: actions/upload-artifact@043fb973c0661c219131c92222b8ef1b50133223
-        with:
-          name: cuatrecasas-visual-live-verification
-          path: artifacts/cuatrecasas-visual-architecture/live-verification.json
-          if-no-files-found: warn
+        run: cat artifacts/cuatrecasas-visual-architecture/live-verification.json || true
