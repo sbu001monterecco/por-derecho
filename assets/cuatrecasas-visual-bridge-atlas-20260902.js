@@ -32,7 +32,7 @@
       key: 'ric',
       title: 'Mandate continuity into RIC / CNMV warnings',
       note: 'The chronology bridge from the pre-existing Sun Park mandate to the 2021 warning/notice record and the later funding questions.',
-      href: '../cuatrecasas-mandate-ric-continuity/#ric-cnmv-knowledge-bridge',
+      href: '../cuatrecasas-mandate-ric-continuity/',
       pos: 'right bottom'
     }
   ];
