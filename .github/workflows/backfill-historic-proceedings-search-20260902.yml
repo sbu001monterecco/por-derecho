@@ -15,10 +15,11 @@ jobs:
         with:
           ref: authority-search/historic-proceedings-search-backfill-20260902
           fetch-depth: 0
-      - name: Build canonical backfill
+      - name: Build canonical backfill and proceeding pages
         run: |
           python3 scripts/_backfill_historic_proceedings_search_20260902.py
           python3 scripts/_generate_proceeding_pages_and_interlinks_20260902.py
+          python3 scripts/_enrich_proceeding_contextual_links_20260902.py
       - name: Reconcile static CAEPR count markers
         run: |
           python3 - <<'PY'
@@ -34,6 +35,7 @@ jobs:
         run: |
           python3 scripts/validate_canonical_home_search.py
           python3 scripts/validate_proceeding_pages_interlinks_20260902.py
+          python3 scripts/validate_proceeding_contextual_links_20260902.py
           python3 scripts/validate_operational_truth.py
           python3 scripts/validate_current_reverse_engineered_digest.py
           python3 scripts/validate_dp3205_2014_publication.py
@@ -65,5 +67,5 @@ jobs:
             scripts/validate_dp3205_2014_publication.py \
             es/registro-identidad-materia/index.html \
             en/matter-identity-registry/index.html
-          git commit -m "Backfill historic proceedings with dedicated pages and reciprocal links" || exit 0
+          git commit -m "Expand proceeding pages with contextual reciprocal navigation" || exit 0
           git push origin HEAD:authority-search/historic-proceedings-search-backfill-20260902
