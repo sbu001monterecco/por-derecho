@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 820" role="img" aria-labelledby="title desc">
+  <title id="title">Mapa visual de procedimientos relacionados con DP 552/2025</title>
+  <desc id="desc">Mapa de conexiones procesales y documentales entre Cambiario 1048/2019, ETJ 163/2020, DP 552/2025, DP 711/2025, DP 748/2026 y Concurso 36/2012. Las conexiones no equivalen a acumulación ni a responsabilidad.</desc>
+  <style>
+    .bg{fill:#f6f3ec}.lane{fill:#fff;stroke:#d8dedf;stroke-width:2}.node{fill:#fff;stroke:#17343c;stroke-width:3}.node-crim{fill:#fff8ee;stroke:#8a6421}.node-civil{fill:#f2f8fb;stroke:#315f80}.node-ins{fill:#f4f0f8;stroke:#66507b}.t{font:700 24px Arial,sans-serif;fill:#13252d}.s{font:400 16px Arial,sans-serif;fill:#405157}.xs{font:700 13px Arial,sans-serif;fill:#405157;letter-spacing:.03em}.head{font:800 29px Arial,sans-serif;fill:#13252d}.edge{fill:none;stroke:#17343c;stroke-width:4;marker-end:url(#arrow)}.edge-dash{fill:none;stroke:#80621d;stroke-width:4;stroke-dasharray:12 9;marker-end:url(#arrowGold)}.edge-context{fill:none;stroke:#6c5a7a;stroke-width:3;stroke-dasharray:5 8;marker-end:url(#arrowPurple)}.badge{fill:#eef8f4;stroke:#1d5c4a}.badge-open{fill:#fff7df;stroke:#80621d}.badge-text{font:700 12px Arial,sans-serif;fill:#17343c}.note{font:700 15px Arial,sans-serif;fill:#8c2f2c}.legend{font:400 14px Arial,sans-serif;fill:#45575b}
+  </style>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L9,3 z" fill="#17343c"/></marker>
+    <marker id="arrowGold" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L9,3 z" fill="#80621d"/></marker>
+    <marker id="arrowPurple" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L9,3 z" fill="#6c5a7a"/></marker>
+  </defs>
+  <rect class="bg" x="0" y="0" width="1200" height="820" rx="24"/>
+  <text class="head" x="55" y="58">Una misma realidad puede entrar en varios procedimientos — sin convertirlos en uno</text>
+  <text class="note" x="55" y="88">CONEXIÓN DOCUMENTAL / PROCESAL ≠ ACUMULACIÓN ≠ IDENTIDAD DE PARTES ≠ RESPONSABILIDAD PROBADA</text>
+
+  <rect class="lane" x="45" y="120" width="1110" height="185" rx="20"/>
+  <text class="xs" x="70" y="150">LÍNEA CIVIL / EJECUCIÓN</text>
+  <rect class="node node-civil" x="85" y="175" width="285" height="95" rx="16"/>
+  <text class="t" x="110" y="210">Cambiario 1048/2019</text>
+  <text class="s" x="110" y="240">origen civil · La Laguna</text>
+  <rect class="node node-civil" x="475" y="165" width="320" height="115" rx="16"/>
+  <text class="t" x="500" y="205">ETJ 163/2020</text>
+  <text class="s" x="500" y="235">ejecución · subasta · finca 8584</text>
+  <text class="s" x="500" y="258">expediente-fuente compartido</text>
+  <path class="edge" d="M370 222 C410 222 430 222 475 222"/>
+  <text class="xs" x="388" y="207">PREDECESOR</text>
+
+  <rect class="lane" x="45" y="330" width="1110" height="265" rx="20"/>
+  <text class="xs" x="70" y="360">LÍNEAS PENALES SEPARADAS</text>
+  <rect class="node node-crim" x="90" y="395" width="315" height="135" rx="16"/>
+  <text class="t" x="115" y="430">DP 552/2025 · La Laguna</text>
+  <text class="s" x="115" y="460">origen 20-feb-2025</text>
+  <text class="s" x="115" y="485">fincas / transformación / uso</text>
+  <rect class="badge" x="115" y="498" width="166" height="23" rx="11"/>
+  <text class="badge-text" x="126" y="514">PD-SP-R-0044 · ^</text>
+
+  <rect class="node node-crim" x="470" y="395" width="310" height="135" rx="16"/>
+  <text class="t" x="495" y="430">DP 711/2025 · Arrecife</text>
+  <text class="s" x="495" y="460">origen declarado: DP 552/2025-00</text>
+  <text class="s" x="495" y="485">sobreseimiento provisional</text>
+  <rect class="badge-open" x="495" y="498" width="226" height="23" rx="11"/>
+  <text class="badge-text" x="506" y="514">apelación: resultado abierto</text>
+  <path class="edge" d="M405 462 C430 462 445 462 470 462"/>
+  <text class="xs" x="410" y="446">CONTINUIDAD TERRITORIAL</text>
+
+  <rect class="node node-crim" x="850" y="395" width="260" height="135" rx="16"/>
+  <text class="t" x="875" y="430">DP 748/2026</text>
+  <text class="s" x="875" y="460">otra vía penal · La Laguna</text>
+  <text class="s" x="875" y="485">conducta alegada en ETJ</text>
+  <rect class="badge" x="875" y="498" width="165" height="23" rx="11"/>
+  <text class="badge-text" x="886" y="514">PD-SP-R-0003 · ^</text>
+
+  <path class="edge-dash" d="M250 395 C300 325 485 322 565 280"/>
+  <text class="xs" x="245" y="337">DP 552 → ETJ: “hecho nuevo” presentado</text>
+  <path class="edge-dash" d="M980 395 C930 330 800 322 705 280"/>
+  <text class="xs" x="804" y="337">DP 748 ↔ ETJ: contexto ejecutivo compartido</text>
+  <path class="edge-context" d="M405 520 C560 565 735 560 850 510"/>
+  <text class="xs" x="510" y="570">relación evidencial — NO sucesión procesal</text>
+
+  <rect class="lane" x="45" y="620" width="1110" height="120" rx="20"/>
+  <text class="xs" x="70" y="650">CONTEXTO DEL ACTIVO — NO PROCEDIMIENTO COMÚN</text>
+  <rect class="node node-ins" x="350" y="665" width="500" height="55" rx="15"/>
+  <text class="t" x="385" y="700">Concurso 36/2012 · Sun Park / LPB</text>
+  <path class="edge-context" d="M430 665 C360 610 315 570 275 530"/>
+  <path class="edge-context" d="M700 665 C650 595 630 560 625 530"/>
+
+  <text class="legend" x="55" y="775">Línea continua: relación procesal acreditada · línea discontinua dorada: evidencia/contexto llevado entre expedientes · línea violeta: contexto compartido.</text>
+  <text class="legend" x="55" y="798">Cada flecha requiere su propia fuente. Ninguna flecha convierte una alegación en hecho probado.</text>
+</svg>
