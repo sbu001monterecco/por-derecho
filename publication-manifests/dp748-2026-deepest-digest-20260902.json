@@ -1,10 +1,22 @@
 {
   "schema": "por-derecho.publication-manifest.v1",
+  "publication_id": "dp748-2026-deepest-digest-20260902",
   "manifest_id": "PD-PUB-DP748-DEEPEST-20260902-01",
   "date": "2026-09-02",
   "authority": "USER_CARET_BLANKET_APPROVAL",
   "repository": "sbu001monterecco/por-derecho",
   "branch": "feat/dp748-deep-digest-20260902",
+  "owner": "Por Derecho / Project Sun Rock",
+  "current_state": "MERGED",
+  "merge_sha": "6013473e0e510948d2702fe0b4f5f6cfe45f7028",
+  "expected_routes": {
+    "es": [
+      "es/dp-748-2026/index.html"
+    ],
+    "en": [
+      "en/dp-748-2026/index.html"
+    ]
+  },
   "canonical_record": {
     "master_id": "TF-CRI-003",
     "caepr_id": "PD-SP-R-0003",
@@ -40,13 +52,32 @@
     "DISTINGUISHED_DP_FILINGS_FROM_RELATED_ETJ_AND_EXTERNAL_COMMUNICATIONS"
   ],
   "registered_controls": {
-    "filings": ["PD-DP748-FIL-001", "PD-DP748-FIL-002", "PD-DP748-FIL-003", "PD-DP748-FIL-004", "PD-DP748-FIL-005"],
-    "judicial_and_fiscal": ["PD-DP748-ACT-001", "PD-DP748-ACT-002", "PD-DP748-MF-001", "PD-DP748-ACT-003", "PD-DP748-ACT-004", "PD-DP748-NOT-001"],
-    "related": ["PD-ETJ163-FIL-20260626"],
+    "filings": [
+      "PD-DP748-FIL-001",
+      "PD-DP748-FIL-002",
+      "PD-DP748-FIL-003",
+      "PD-DP748-FIL-004",
+      "PD-DP748-FIL-005"
+    ],
+    "judicial_and_fiscal": [
+      "PD-DP748-ACT-001",
+      "PD-DP748-ACT-002",
+      "PD-DP748-MF-001",
+      "PD-DP748-ACT-003",
+      "PD-DP748-ACT-004",
+      "PD-DP748-NOT-001"
+    ],
+    "related": [
+      "PD-ETJ163-FIL-20260626"
+    ],
     "annex_range": "PD-DP748-ANN-001_TO_PD-DP748-ANN-008"
   },
   "interlinks": {
-    "lineage": ["TF-CIV-001", "TF-CIV-002", "TF-CRI-003"],
+    "lineage": [
+      "TF-CIV-001",
+      "TF-CIV-002",
+      "TF-CRI-003"
+    ],
     "reciprocal_pages_verified_in_repository": [
       "/es/cambiario-1048-2019/",
       "/en/cambiario-1048-2019/",
@@ -55,14 +86,25 @@
       "/es/dp-748-2026/",
       "/en/dp-748-2026/"
     ],
-    "broader_context": ["/es/cuatrecasas-sun-park/", "/en/cuatrecasas-sun-park/"]
+    "broader_context": [
+      "/es/cuatrecasas-sun-park/",
+      "/en/cuatrecasas-sun-park/"
+    ]
   },
   "publication_boundaries": {
     "unredacted_court_pdf_published": false,
     "allegations_attributed": true,
     "provisional_dismissal_not_described_as_acquittal": true,
     "deadline_not_calculated_without_last_notification_record": true,
-    "excluded_data": ["NIE", "ADDRESS", "PHONE", "SIGNATURE", "VALIDATION_CODE", "SERVICE_METADATA", "PRIVILEGED_CORRESPONDENCE"]
+    "excluded_data": [
+      "NIE",
+      "ADDRESS",
+      "PHONE",
+      "SIGNATURE",
+      "VALIDATION_CODE",
+      "SERVICE_METADATA",
+      "PRIVILEGED_CORRESPONDENCE"
+    ]
   },
   "open_evidence": [
     "COMPLETE_CERTIFIED_ETJ_163_2020_FILE",
@@ -79,6 +121,15 @@
     "live_urls": [
       "https://sbu001monterecco.github.io/por-derecho/es/dp-748-2026/",
       "https://sbu001monterecco.github.io/por-derecho/en/dp-748-2026/"
+    ],
+    "evidence": [
+      {
+        "type": "merge",
+        "sha": "6013473e0e510948d2702fe0b4f5f6cfe45f7028",
+        "status": "merged",
+        "boundary": "SOURCE_IS_ON_MAIN; DEPLOYMENT_AND_LIVE_READBACK_NOT_ATTESTED_BY_THIS_REPAIR"
+      }
     ]
-  }
+  },
+  "state_boundary": "MERGED records source presence on main only. This repair does not promote the package to DEPLOYED, LIVE_VERIFIED or DELETION_SAFE without separate deployment and readback evidence."
 }
