@@ -1,0 +1,83 @@
+{
+  "schema": "por-derecho.justice-authority-register.current.v2",
+  "control_id": "PD-SP-JUSTICE-AUTHORITY-CURRENT-20260902-01",
+  "control_date": "2026-09-02",
+  "status": "CURRENT_DERIVED_REGISTER_LIVE_RELEASE_PENDING_GLOBAL_HISTORIC_DOCKET_BACKFILL_OPEN",
+  "purpose": "Current derived control for every source-identified judge, magistrate, LAJ, Fiscal/prosecutor and canonical court or prosecution institution, without creating a competing identity registry.",
+  "canonical_identity_authority": "assets/data/matter-identity-registry-v1.json",
+  "person_sources": [
+    {
+      "path": "assets/data/justice-professionals-caret-audit-v1.json",
+      "scope": "31-Aug-2026 finite named justice-professional census",
+      "people": 48,
+      "confirmed": 45,
+      "pending": 3
+    },
+    {
+      "path": "assets/data/matter-identity-registry-v1.la-laguna-judicial-people.json",
+      "scope": "Source-identified La Laguna and directly linked judicial-cooperation judges and LAJs added after the finite census",
+      "people": 11,
+      "confirmed": 11,
+      "pending": 0
+    }
+  ],
+  "derived_counts": {
+    "unique_named_people": 59,
+    "confirmed": 56,
+    "pending": 3,
+    "suspended": 0,
+    "by_role": {
+      "MINISTERIO_FISCAL": 17,
+      "JUDGE_OR_MAGISTRATE": 18,
+      "LAJ": 16,
+      "NOTARY": 8
+    }
+  },
+  "court_hierarchy": {
+    "master_court_id": "PD-SP-I-0044",
+    "master_court_name": "Audiencia Provincial de Las Palmas",
+    "section_ids": [
+      "PD-SP-I-0025",
+      "PD-SP-I-0014"
+    ],
+    "rule": "A parent court, each section or court position, every proceeding and every named office-holder remain separate canonical objects. A parent-child court link never transfers handling, knowledge, authorship, panel formation, merits or outcome."
+  },
+  "mandatory_proceeding_coverage_fields": [
+    "proceeding_id_or_master_id",
+    "exact_reference_and_nig_where_available",
+    "court_or_fiscalia_institution_id",
+    "judge_or_magistrate_person_ids_or_explicit_source_gap",
+    "laj_person_ids_or_explicit_source_gap",
+    "fiscalia_institution_id_where_applicable",
+    "fiscal_person_ids_or_explicit_source_gap",
+    "act_date_capacity_and_source_for_every_person_edge",
+    "historic_substitution_or_successor_state_without_overwrite",
+    "reciprocal_search_and_public_route"
+  ],
+  "completion_rule": "No global all-historic/all-current completeness statement is permitted until every applicable Master Proceedings Register row has populated authority coverage or an explicit source-defined gap and the certified complete docket denominator is closed. The current derived 59-person denominator is complete only for the presently registered source-identified people.",
+  "search_contract": {
+    "loader": "assets/canonical-home-search-20260902.js",
+    "registry_sources": [
+      "assets/data/matter-identity-registry-v1.json",
+      "assets/data/proceedings-master-public-v1.json"
+    ],
+    "accepted_query_classes": [
+      "canonical name or alias",
+      "proceeding reference",
+      "NIG",
+      "Master Proceedings ID",
+      "full PD-SP-* identifier",
+      "typed caret identifier such as ^P-0147 or ^I-0044",
+      "numeric caret shorthand such as ^0147 or ^0044"
+    ]
+  },
+  "public_routes": {
+    "home_es": "/es/",
+    "home_en": "/en/",
+    "court_master_es": "/es/registro-judicial-audiencia-provincial-las-palmas/",
+    "court_master_en": "/en/las-palmas-provincial-court-register/",
+    "justice_professionals_es": "/es/registro-identidad-profesionales-justicia/",
+    "justice_professionals_en": "/en/justice-professionals-identity-register/"
+  },
+  "open_global_gap": "Historic and current official dockets have not all been certified complete. Unknown applicable judges, LAJs or Fiscals must remain explicit source gaps and may not be inferred from later office-holders, office leadership, recurring signatures or institutional proximity."
+}
