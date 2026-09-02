@@ -2,6 +2,26 @@
   'use strict';
 
   const path = window.location.pathname.replace(/\/index\.html$/, '/');
+  const localPath = path.startsWith('/por-derecho/') ? path : `/por-derecho${path.startsWith('/') ? '' : '/'}${path}`;
+
+  // The dedicated 3304/3319 dossier contains a full SHA-256 and several
+  // long procedural identifiers. Keep those source-integrity strings visible
+  // without allowing them to widen a mobile viewport.
+  const dossierRoutes = new Set([
+    '/por-derecho/es/concurso-36-2012-separacion-administrador-concursal-rpl-3304-2025/',
+    '/por-derecho/en/insolvency-36-2012-administrator-removal-rpl-3304-2025/'
+  ]);
+  if (dossierRoutes.has(localPath) && !document.querySelector('[data-borja-separation-responsive-fix="20260902"]')) {
+    const style = document.createElement('style');
+    style.setAttribute('data-borja-separation-responsive-fix', '20260902');
+    style.textContent = `
+      .mono{overflow-wrap:anywhere;word-break:break-word;max-width:100%}
+      .panel,.ground,.metric,.relief,.link-card,.lane,.master{min-width:0}
+      .panel a,.ground a,.link-card a{overflow-wrap:anywhere}
+    `;
+    document.head.appendChild(style);
+  }
+
   const routes = new Set([
     '/por-derecho/es/concurso-36-2012-separacion-ac-honorarios/',
     '/por-derecho/es/concurso-36-2012-administrador-concursal/',
@@ -10,7 +30,6 @@
     '/por-derecho/en/insolvency-36-2012-insolvency-administrator/',
     '/por-derecho/en/insolvency-36-2012-ap-section-4/'
   ]);
-  const localPath = path.startsWith('/por-derecho/') ? path : `/por-derecho${path.startsWith('/') ? '' : '/'}${path}`;
   if (!routes.has(localPath)) return;
   if (document.querySelector('[data-borja-separation-rpl3304-inbound="20260902"]')) return;
 
