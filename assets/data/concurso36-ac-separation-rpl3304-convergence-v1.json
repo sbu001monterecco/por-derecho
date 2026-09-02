@@ -1,0 +1,49 @@
+{
+  "schema": "por-derecho.concurso36-ac-separation-appellate-convergence.v1",
+  "control_date": "2026-09-02",
+  "status": "PUBLIC_SAFE_PROCEDURAL_CONVERGENCE_CONTROL",
+  "canonical_rule": "Aweswell originated the separation application; Aweswell appealed through RPL 3319/2025; LPB independently appealed through RPL 3304/2025; the Audiencia Provincial accumulated the appeals; RPL 3304/2025 is the live consolidated appellate proceeding. Termination of the separate 3319 roll is not a merits dismissal absent source evidence.",
+  "routes": {
+    "es": "/es/concurso-36-2012-separacion-administrador-concursal-rpl-3304-2025/",
+    "en": "/en/insolvency-36-2012-administrator-removal-rpl-3304-2025/"
+  },
+  "canonical_ids": {
+    "borja_person": "PD-SP-P-0010",
+    "aweswell": "PD-SP-O-0001",
+    "lpb": "PD-SP-O-0002",
+    "first_instance_judge": "PD-SP-P-0057",
+    "first_instance_court": "PD-SP-I-0001",
+    "appeal_section": "PD-SP-I-0014",
+    "concurso": "GC-JUD-001",
+    "rpl_3304": {"master_id":"GC-APP-005","caret":"PD-SP-R-0011","state":"LIVE_CONSOLIDATED_MASTER_ROLL"},
+    "rpl_3319": {"master_id":"GC-APP-006","caret":"PD-SP-R-0012","state":"HISTORICAL_ORIGINATING_APPEAL_ACCUMULATED_INTO_GC_APP_005"},
+    "appeal_family_reference": {"master_id":"GC-APP-007","caret":"PD-SP-R-0013","is_proceeding":false}
+  },
+  "originating_application": {
+    "date": "2025-04-23",
+    "pages": 58,
+    "public_source_record": "R01",
+    "sha256": "5665ec05ae42f18fc64b1209ed7984c39ece015933bdfc9dd8bcf1a8ece6bf26",
+    "raw_publication": "WITHHELD_DATA_MINIMISATION",
+    "relief_requested": ["article 100 TRLC removal","article 101 TRLC replacement","rendition of accounts","Public Insolvency Register notice","AEAT communication","Public Prosecutor communication/referral where pleaded"],
+    "pleaded_factual_blocks": ["accounts / rendition of accounts","financial-risk / swap","credit-assignment price and retract","dación en pago / fiscal valuation","fragmentation of the hotel operating unit","remuneration","opacity / conflicts"]
+  },
+  "appellate_sequence": [
+    {"date":"2025-04-23","event":"Aweswell files removal application","proceeding":"GC-JUD-001"},
+    {"date":"2025-09-12","event":"Auto 1377/2025 rejects on standing without entering substantive grounds","proceeding":"GC-JUD-001"},
+    {"date":"2025-11-11","event":"Reconsideration decision confirms refusal and appeal route remains available","proceeding":"GC-JUD-001"},
+    {"date":null,"event":"LPB independent appeal","proceeding":"GC-APP-005"},
+    {"date":null,"event":"Aweswell independent appeal","proceeding":"GC-APP-006"},
+    {"date":"2026-07-15","event":"Auto 223/2026 accumulates RPL 3319/2025 into RPL 3304/2025","proceeding":"GC-APP-005"},
+    {"date":null,"event":"Decreto 222/2026 records termination of separate RPL 3319/2025 roll because of accumulation","proceeding":"GC-APP-006"}
+  ],
+  "evidence_matrix": [
+    {"proposition":"Aweswell originated the application","source":"R01","proceeding":"GC-JUD-001","actors":["PD-SP-O-0001","PD-SP-P-0010"],"event_id":null,"event_id_gap":"Canonical event ID not located; do not invent"},
+    {"proposition":"LPB independently appealed","source":"RPL 3304/2025 appellate record","proceeding":"GC-APP-005","actors":["PD-SP-O-0002","PD-SP-I-0014"],"event_id":null,"event_id_gap":"Canonical event ID not located"},
+    {"proposition":"Aweswell independently appealed","source":"RPL 3319/2025 appellate record","proceeding":"GC-APP-006","actors":["PD-SP-O-0001","PD-SP-I-0014"],"event_id":null,"event_id_gap":"Canonical event ID not located"},
+    {"proposition":"3319 accumulated into 3304","source":"Auto 223/2026, 15 July 2026","proceeding":"GC-APP-005","actors":["PD-SP-I-0014"],"event_id":null,"event_id_gap":"Canonical event ID not located"},
+    {"proposition":"Separate 3319 roll ended because of accumulation, not a merits adjudication","source":"Decreto 222/2026","proceeding":"GC-APP-006","actors":["PD-SP-I-0014"],"event_id":null,"event_id_gap":"Canonical event ID not located"}
+  ],
+  "search_terms": ["Borja","Rodríguez-Batllori","separación administrador concursal","RPL 3304/2025","RPL 3319/2025","Aweswell","Luchy Playa Blanca","artículo 100 TRLC","artículo 101 TRLC","Decreto 222/2026"],
+  "publication_boundary": "No raw private email, unnecessary personal data or restricted annex is exposed. Allegations and requested relief remain distinguished from judicial findings."
+}
