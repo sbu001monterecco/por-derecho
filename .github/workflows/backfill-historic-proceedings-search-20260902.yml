@@ -9,6 +9,7 @@ on:
       - scripts/_sync_current_caepr_counts_20260902.py
       - scripts/_sync_proceedings_interlinkability_counts_20260902.py
       - scripts/_sync_proceedings_interconnectivity_audit_20260903.py
+      - scripts/_fix_proceedings_convergence_view_20260903.py
       - scripts/_sync_proceedings_interlinkability_gap_es_20260902.py
       - scripts/_sync_master_proceedings_publication_counts_20260902.py
       - scripts/_generate_proceeding_pages_and_interlinks_20260902.py
@@ -79,6 +80,7 @@ jobs:
           python3 scripts/build_proceedings_case_prism_v2.py
           python3 scripts/build_proceedings_interlinkability_v1.py
           python3 scripts/_sync_proceedings_interconnectivity_audit_20260903.py
+          python3 scripts/_fix_proceedings_convergence_view_20260903.py
 
       - name: Validate canonical authority search and dedicated proceeding pages
         run: |
@@ -97,6 +99,7 @@ jobs:
           python3 scripts/build_proceedings_case_prism_v2.py --check
           python3 scripts/build_proceedings_interlinkability_v1.py --check
           python3 scripts/_sync_proceedings_interconnectivity_audit_20260903.py
+          python3 scripts/_fix_proceedings_convergence_view_20260903.py
           python3 scripts/audit_proceedings_interconnectivity_map.py
           python3 scripts/audit_counsel_procurador_governance.py
           python3 scripts/validate_treasury_transparency_7_2026.py
