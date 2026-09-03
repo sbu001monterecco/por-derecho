@@ -26,121 +26,117 @@ jobs:
         with:
           python-version: '3.12'
 
-      - name: Reconcile current denominators and browser control count
+      - name: Prepare candidate bytes
         shell: python
         run: |
           from pathlib import Path
           def replace_once(path_str, old, new):
-              path = Path(path_str)
-              text = path.read_text(encoding='utf-8')
-              if old not in text:
-                  raise SystemExit(f'Expected stale constant not found in {path_str}: {old}')
+              path = Path(path_str); text = path.read_text(encoding='utf-8')
+              if old not in text: raise SystemExit(f'Expected stale constant not found in {path_str}: {old}')
               path.write_text(text.replace(old, new, 1), encoding='utf-8')
           smoke = Path('scripts/smoke_fiscalia_proceedings_interconnectivity.mjs')
-          smoke_text = smoke.read_text(encoding='utf-8')
+          text = smoke.read_text(encoding='utf-8')
           for old, new in {
               "data.coverage.fiscalia_exact_files !== 21 || data.coverage.fiscalia_unresolved_references !== 3": "data.coverage.fiscalia_exact_files !== 23 || data.coverage.fiscalia_unresolved_references !== 3",
               "Fiscalía identity denominator is not 21 + 3": "Fiscalía identity denominator is not 23 + 3",
               "page.locator('[data-mf-files] [data-file]').count() !== 25": "page.locator('[data-mf-files] [data-file]').count() !== 27",
               "expected all + 24 file controls": "expected all + 26 file controls",
           }.items():
-              if old not in smoke_text:
-                  raise SystemExit(f'Expected stale smoke constant not found: {old}')
-              smoke_text = smoke_text.replace(old, new, 1)
-          smoke.write_text(smoke_text, encoding='utf-8')
+              if old not in text: raise SystemExit(f'Expected stale smoke constant not found: {old}')
+              text = text.replace(old, new, 1)
+          smoke.write_text(text, encoding='utf-8')
           replace_once('scripts/build_proceedings_interlinkability_v1.py', 'EXPECTED_CASE_PRISM_EXACT_COVERED = 43', 'EXPECTED_CASE_PRISM_EXACT_COVERED = 45')
           replace_once('scripts/audit_proceedings_interconnectivity_map.py', 'CURRENT_CASE_PRISM_EXACT_COVERED = 43', 'CURRENT_CASE_PRISM_EXACT_COVERED = 45')
           replace_once('scripts/audit_proceedings_interconnectivity_map.py', 'CURRENT_CASE_PRISM_EXACT_UNCOVERED = 63', 'CURRENT_CASE_PRISM_EXACT_UNCOVERED = 61')
           schema = Path('assets/data/proceedings-interconnectivity-schema-v1.json')
-          schema_text = schema.read_text(encoding='utf-8')
+          text = schema.read_text(encoding='utf-8')
           for old, new in {
               'shared-proposition membership remains 43 of 106 with 63 explicit no-coordinate gaps': 'shared-proposition membership remains 45 of 106 with 61 explicit no-coordinate gaps',
               '"case_prism_exact_proceeding_covered_denominator": 43': '"case_prism_exact_proceeding_covered_denominator": 45',
               '"case_prism_exact_proceeding_uncovered_denominator": 63': '"case_prism_exact_proceeding_uncovered_denominator": 61',
               '"shared_case_prism_proposition_membership_coverage_status": "GAP_43_OF_106"': '"shared_case_prism_proposition_membership_coverage_status": "GAP_45_OF_106"',
           }.items():
-              if old not in schema_text:
-                  raise SystemExit(f'Expected stale schema constant not found: {old}')
-              schema_text = schema_text.replace(old, new, 1)
-          schema.write_text(schema_text, encoding='utf-8')
+              if old not in text: raise SystemExit(f'Expected stale schema constant not found: {old}')
+              text = text.replace(old, new, 1)
+          schema.write_text(text, encoding='utf-8')
 
-      - name: Regenerate proceedings interlinkability projection
-        run: python scripts/build_proceedings_interlinkability_v1.py
+      - name: Regenerate projections
+        run: |
+          python scripts/build_proceedings_interlinkability_v1.py
+          python scripts/build_community_acta_authority_interconnectivity.py
 
-      - name: Regenerate Community ACTA authority projection
-        run: python scripts/build_community_acta_authority_interconnectivity.py
-
-      - name: Reconcile current reintegration transition bytes
+      - name: Reconcile intended transition rows and enumerate remaining drift
         shell: python
         run: |
-          import hashlib, json
+          import hashlib, json, re
           from pathlib import Path
           manifest_path = Path('publication-manifests/historic-proceedings-authority-reintegration-20260903.json')
           data = json.loads(manifest_path.read_text(encoding='utf-8'))
-          denominator = data.get('current_denominator', {})
-          if denominator.get('CURRENT_CASE_PRISM_EXACT_COVERED') != 43 or denominator.get('CURRENT_CASE_PRISM_EXACT_UNCOVERED') != 63:
-              raise SystemExit('Expected stale 43/63 reintegration denominator not found')
-          denominator['CURRENT_CASE_PRISM_EXACT_COVERED'] = 45
-          denominator['CURRENT_CASE_PRISM_EXACT_UNCOVERED'] = 61
-          tracked = {
+          d = data.get('current_denominator', {})
+          d['CURRENT_CASE_PRISM_EXACT_COVERED'] = 45
+          d['CURRENT_CASE_PRISM_EXACT_UNCOVERED'] = 61
+          rows = data.get('transitions', [])
+          by = {row.get('resource'): row for row in rows if isinstance(row, dict) and row.get('resource')}
+          intended = {
               'assets/data/proceedings-interconnectivity-schema-v1.json',
               'assets/data/proceedings-interlinkability-v1.json',
               'scripts/audit_proceedings_interconnectivity_map.py',
               'scripts/build_proceedings_interlinkability_v1.py',
           }
-          rows = {row.get('resource'): row for row in data.get('transitions', []) if isinstance(row, dict)}
-          missing = sorted(tracked - set(rows))
-          if missing:
-              raise SystemExit(f'Missing transition rows: {missing}')
-          for resource in sorted(tracked):
-              rows[resource]['candidate_sha256'] = hashlib.sha256(Path(resource).read_bytes()).hexdigest()
+          for resource in intended:
+              if resource not in by: raise SystemExit(f'Missing intended transition row: {resource}')
+              by[resource]['candidate_sha256'] = hashlib.sha256(Path(resource).read_bytes()).hexdigest()
           manifest_path.write_text(json.dumps(data, indent=2, ensure_ascii=False) + '\n', encoding='utf-8')
 
-      - name: Check proceedings interlinkability projection
-        run: python scripts/build_proceedings_interlinkability_v1.py --check
+          mismatches=[]; absent_violations=[]
+          for resource,row in by.items():
+              path=Path(resource); expected=row.get('candidate_sha256')
+              if expected is None:
+                  if path.exists(): absent_violations.append(resource)
+              else:
+                  if not path.exists(): mismatches.append(f'{resource} :: MISSING :: expected={expected}')
+                  else:
+                      actual=hashlib.sha256(path.read_bytes()).hexdigest()
+                      if actual != expected: mismatches.append(f'{resource} :: expected={expected} :: actual={actual}')
+          required={
+              'archive/PROCEEDINGS_MASTER_REGISTER.csv',
+              'assets/data/proceedings-interconnectivity-schema-v1.json',
+              'assets/data/proceedings-interlinkability-v1.json',
+              'scripts/audit_proceedings_interconnectivity_map.py',
+              'en/proceedings/gc-civ-003/index.html',
+              'es/procedimientos/gc-civ-003/index.html',
+          }
+          invalid_anchors=[]
+          for row in rows:
+              for anchor in row.get('historical_anchors', []):
+                  value=anchor.get('sha256','')
+                  if not value or re.fullmatch(r'[0-9a-f]{64}', value) is None:
+                      invalid_anchors.append(f"{row.get('resource')}::{value}")
+          lines=[
+              f"schema={data.get('schema')}",
+              f"publication_id={data.get('publication_id')}",
+              f"control_date={data.get('control_date')}",
+              f"state={data.get('state')}",
+              f"base_main_sha={data.get('base_main_sha')}",
+              f"row_count={len(rows)} unique_path_count={len(by)} candidate_delta_file_count={data.get('candidate_delta_file_count')}",
+              f"missing_required={sorted(required-set(by))}",
+              f"production={data.get('production')}",
+              f"lz_civ_050_en_exists={Path('en/proceedings/lz-civ-050/index.html').exists()}",
+              f"lz_civ_050_es_exists={Path('es/procedimientos/lz-civ-050/index.html').exists()}",
+              f"invalid_anchor_count={len(invalid_anchors)}",
+              f"absent_violation_count={len(absent_violations)}",
+              f"hash_mismatch_count={len(mismatches)}",
+              'ABSENT_VIOLATIONS:', *absent_violations,
+              'HASH_MISMATCHES:', *mismatches,
+              'INVALID_ANCHORS:', *invalid_anchors,
+          ]
+          Path('.github/reintegration-transition-diagnostic.txt').write_text('\n'.join(lines)+'\n', encoding='utf-8')
 
-      - name: Audit proceedings interconnectivity map
-        id: proceedings_audit
-        continue-on-error: true
-        run: python scripts/audit_proceedings_interconnectivity_map.py > .github/reconcile-audit-diagnostic-2.txt 2>&1
-
-      - name: Preserve second proceedings audit failure
-        if: steps.proceedings_audit.outcome == 'failure'
+      - name: Preserve detailed transition diagnostic
         run: |
           git config user.name github-actions[bot]
           git config user.email 41898282+github-actions[bot]@users.noreply.github.com
-          git add .github/reconcile-audit-diagnostic-2.txt
-          git commit -m 'Preserve second temporary proceedings audit diagnostic'
+          git add .github/reintegration-transition-diagnostic.txt
+          git commit -m 'Preserve temporary reintegration transition diagnostic'
           git push origin HEAD:ministerio-fiscal-fulltext-audit-20260903
           exit 1
-
-      - name: Check Community ACTA projection
-        run: python scripts/build_community_acta_authority_interconnectivity.py --check
-      - name: Validate Community ACTA projection
-        run: python scripts/validate_community_acta_authority_interconnectivity.py
-      - name: Test Community ACTA projection
-        run: python -m unittest -v scripts/test_build_community_acta_authority_interconnectivity.py
-      - name: Check Fiscalía projection
-        run: python scripts/build_fiscalia_proceedings_interconnectivity.py --check
-      - name: Validate Fiscalía projection
-        run: python scripts/validate_fiscalia_proceedings_interconnectivity.py
-      - name: Test Fiscalía projection
-        run: python -m unittest -v scripts/test_build_fiscalia_proceedings_interconnectivity.py
-      - name: Parse Fiscalía browser smoke
-        run: node --check scripts/smoke_fiscalia_proceedings_interconnectivity.mjs
-
-      - name: Commit reconciled permanent files only
-        run: |
-          git config user.name github-actions[bot]
-          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
-          git rm -f .github/reconcile-audit-diagnostic.txt .github/reconcile-audit-diagnostic-2.txt || true
-          git add assets/data/proceedings-interlinkability-v1.json \
-                  assets/data/community-acta-authority-interconnectivity-v1.json \
-                  assets/data/proceedings-interconnectivity-schema-v1.json \
-                  publication-manifests/historic-proceedings-authority-reintegration-20260903.json \
-                  scripts/build_proceedings_interlinkability_v1.py \
-                  scripts/audit_proceedings_interconnectivity_map.py \
-                  scripts/smoke_fiscalia_proceedings_interconnectivity.mjs
-          if git diff --cached --quiet; then exit 1; fi
-          git commit -m 'Reconcile current interconnectivity denominators'
-          git push origin HEAD:ministerio-fiscal-fulltext-audit-20260903
