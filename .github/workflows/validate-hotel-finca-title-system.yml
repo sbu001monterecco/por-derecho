@@ -86,13 +86,13 @@ jobs:
           grep -Fq 'sitemap-hotel-finca-title-system.xml' robots.txt
       - name: Scope, position and boundary invariants
         run: |
-          grep -Fq 'finca 8584 is the worked ETJ example' CURRENT_HANDOVER_HOTEL_FINCA_TITLE_SYSTEM_03SEP2026.md
-          grep -Fq '8584 and 8588' archive/HOTEL_FINCA_ASSET_CLASSIFICATION_TITLE_ON_TITLE_INJURY_UNITARY_CONTROL_03SEP2026.md
+          grep -Fiq 'Finca 8584 is the worked ETJ example' CURRENT_HANDOVER_HOTEL_FINCA_TITLE_SYSTEM_03SEP2026.md
+          grep -Fq 'source-locked Matkator titles' archive/HOTEL_FINCA_ASSET_CLASSIFICATION_TITLE_ON_TITLE_INJURY_UNITARY_CONTROL_03SEP2026.md
           grep -Fq 'PARTY_POSITION / ALLEGED_COMPLETED_OFFENCE' archive/HOTEL_FINCA_ASSET_CLASSIFICATION_TITLE_ON_TITLE_INJURY_UNITARY_CONTROL_03SEP2026.md
           grep -Fq 'not an adjudicated finding' archive/HOTEL_FINCA_ASSET_CLASSIFICATION_TITLE_ON_TITLE_INJURY_UNITARY_CONTROL_03SEP2026.md
           grep -Fq 'title-on-title injury' en/hotel-fincas-asset-classification-title-on-title-injury/index.html
           grep -Fq 'lesión jurídica título-sobre-título' es/fincas-hoteleras-clasificacion-lesion-titulo-sobre-titulo/index.html
-          grep -Fq 'not the perimeter limit' docs/cuatrecasas/DP748/2026-09-03_DP748_COMPLETED_ESTAFA_ALL_HOTEL_FINCA_SCOPE_SUPPLEMENT.md
+          grep -Fq 'must not be read as limiting the factual, patrimonial or criminal context to that finca' docs/cuatrecasas/DP748/2026-09-03_DP748_COMPLETED_ESTAFA_ALL_HOTEL_FINCA_SCOPE_SUPPLEMENT.md
           grep -Fq 'does not make finca 8588' docs/cuatrecasas/ETJ163/2026-09-03_ETJ163_EXACT_8584_WIDER_TITLE_SYSTEM_CONTEXT_SUPPLEMENT.md
       - name: Loader continuity
         run: |
