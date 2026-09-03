@@ -1,0 +1,39 @@
+{
+  "release_id": "PD-REL-ONA-FX-20260903-01",
+  "date": "2026-09-03",
+  "purpose": "Close the publication gap between the controlled ONA funded-exit email/court corpus and the public repository/site, especially the Sep 2018-Oct 2019 causal chain.",
+  "source_records": [
+    "archive/evidence/ONA_FUNDED_EXIT_UNITARY_FACT_RECORD_20260826.md",
+    "archive/evidence/ONA_FUNDED_EXIT_SABOTAGE_CHAIN_20260903.md"
+  ],
+  "machine_graph": "assets/data/ona-funded-exit-interference-chain-v1.json",
+  "public_pages": [
+    "es/ona-hotels-salida-concurso-36-2012/cadena-interferencia-salida-financiada/index.html",
+    "en/ona-hotels-insolvency-exit-36-2012/funded-exit-interference-chain/index.html"
+  ],
+  "required_context_links": [
+    "/es/ona-hotels-salida-concurso-36-2012/",
+    "/es/ona-hotels-salida-concurso-36-2012/expediente-unitario-abril-2018-octubre-2019/",
+    "/es/concurso-36-2012-administrador-concursal/",
+    "/es/concurso-36-2012-magistrado-juez/",
+    "/es/2018-proteccion-leal-masa/",
+    "/es/toma-control-sun-park-7-junio-2018/",
+    "/es/acosta-matos-perimetro/"
+  ],
+  "gap_closed": [
+    "26 Sep 2018 debt-quantum meeting not in prior canonical timeline",
+    "28 Nov 2018 separate locales/pools transaction not connected to funded-exit causation",
+    "24 Dec 2018 Irigoyen contemporaneous warning not preserved in canonical ONA chain",
+    "Feb 2019 ONA continuation not linked to the locales-sale chronology",
+    "24 Oct 2019 judicial unitary-sale finding not connected as structural corroboration of the Dec 2018 warning",
+    "No machine-readable edge graph for this causal chain"
+  ],
+  "publication_boundaries": [
+    "No raw private email bodies or personal data are republished.",
+    "Contemporaneous professional accounts are attributed and are not treated as certified court minutes.",
+    "The 24 Oct 2019 order is treated as a judicial finding on liquidation structure/authorization/competitive effect, not as a criminal conviction.",
+    "Deliberate sabotage, concert with CAM/private actors and criminal liability remain Gil Marer's attributed allegations/proof questions.",
+    "No financing route is represented as unconditionally certain to close."
+  ],
+  "successor_thread_rule": "Use PD-ONA-FX-20260826-01 and PD-ONA-FX-20260903-02 as the first-hop funded-exit corpus. Re-search Gmail/Drive only for a named source gap, contrary evidence, native execution copy or later development."
+}
