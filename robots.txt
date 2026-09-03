@@ -56,3 +56,4 @@ Sitemap: https://sbu001monterecco.github.io/por-derecho/sitemap-canary-ric-publi
 Sitemap: https://sbu001monterecco.github.io/por-derecho/sitemap-treasury-transparency-7-2026.xml
 Sitemap: https://sbu001monterecco.github.io/por-derecho/sitemap-hotel-platform-media.xml
 Sitemap: https://sbu001monterecco.github.io/por-derecho/sitemap-la-laguna-proceedings.xml
+Sitemap: https://sbu001monterecco.github.io/por-derecho/sitemap-unitary-digest-20260903.xml

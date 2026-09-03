@@ -1,0 +1,45 @@
+{
+  "control_id": "PD-PRCLR-20260903-01",
+  "date": "2026-09-03",
+  "base_main": "c630538e2190ed68755c6dc21780d85340015cd1",
+  "method": "CURRENT_MAIN_DELTA_ONLY",
+  "rules": [
+    "CURRENT_MAIN_WINS_COLLISIONS",
+    "NO_STALE_WHOLE_BRANCH_MERGES",
+    "EXACT_BLOB_REUSE_WHERE_SOURCE_SAFE",
+    "PRIVATE_OR_PRIVILEGED_SOURCE_DOES_NOT_BECOME_PUBLIC_BY_BACKLOG_CLEARANCE",
+    "ALLEGATION_FINDING_AND_SOURCE_GAP_REMAIN_SEPARATE",
+    "CLOSE_SUPERSEDED_PRS_WITH_PROVENANCE_NOTE"
+  ],
+  "merged_on_2026_09_03": [1385, 1387, 1388, 1389, 1390, 1392, 1393],
+  "closed_superseded_on_2026_09_03": [1368, 1349, 1343, 1327, 804, 685, 1338],
+  "salvaged_into_clearance_release": {
+    "1212": "liquidation-plan / judge / LAJ governance, two data registers and four bilingual public pages; stale site.js/workflow omitted",
+    "1047": "final prescription/recovery deletion-safety certificate only",
+    "790": "outbound-email capacity / alertador / funding evidence-control rule only; stale handovers omitted",
+    "769": "Orion Rental 2024 disclosure audit; internal evidence-led control, no criminal concealment finding"
+  },
+  "active_p0_transplant_or_reconciliation": {
+    "576": "PP1041 authority/authenticity/benefit branch; current main already carries core correction, audit remaining unique deltas before closure",
+    "749": "large primary-auto source reservoir; never merge wholesale; preserve only unique source-safe primary-auto redigest artifacts",
+    "747": "Community criminal-instrumentalisation non-derogation; reconcile against current PD-UCF before closing",
+    "590": "2018 takeover-to-formalisation one-spine/five-lane material; reconcile against current unitary graph",
+    "211": "Matkator DP552→711 / ETJ163 propagation; reconcile against newer La Laguna/ETJ cluster",
+    "771": "262-finca journey; transplant self-contained public-safe explorer only after current-title/source conflict check",
+    "750": "FTI/Meeting Point reconciliation; retain only deltas not superseded by later Meeting Point/CAEPR work",
+    "1041": "owner/court-party network; draft remains incomplete and requires current identity reconciliation",
+    "1090": "Mercantil 3 / FTI comparator; additive source-control candidate"
+  },
+  "secondary_reconcile_or_archive": [478, 450, 737, 761, 767, 1322, 710, 691, 735, 526, 527],
+  "blocked": {
+    "766": "AI assistant production requires provider secrets/configuration, processor/privacy decisions and non-static deployment; do not force live",
+    "701": "full-text Controls 21/22/24 publication remains behind source-page/redaction/privacy/public-interest review",
+    "780": "outreach review/draft-email material requires recipient/privacy/send-state review; controls may be archived without publishing drafts",
+    "1321": "workspace persistence closeout contains stale parity/runtime state and private-seed metadata; runtime already merged elsewhere, reconcile before closure"
+  },
+  "stale_verifier_close_candidates": [937, 634, 544],
+  "superseded_chain_candidate": {"196": "older Matkator ingest; close after #211 unique delta is reconciled"},
+  "close_after_this_release": [1219, 1033, 1047, 790, 769],
+  "next_execution_order": [576, 1212, 749, 211, 771, 750, 1090],
+  "publication_boundary": "Backlog clearance authorises repository analysis and source-safe public publication. It does not authorise external filing, email, authority contact, witness contact, accusation or publication of private/privileged material."
+}
