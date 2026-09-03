@@ -2,7 +2,7 @@
   'use strict';
   const path = window.location.pathname.replace(/\/index\.html$/, '/');
   const localPath = path.startsWith('/por-derecho/') ? path : `/por-derecho${path.startsWith('/') ? '' : '/'}${path}`;
-  if (document.documentElement.dataset.caixaConcursoRipple === '20260903a') return;
+  if (document.documentElement.dataset.caixaConcursoRipple === '20260903b') return;
 
   const routes = new Set([
     '/por-derecho/es/reclamacion-caixabank-valencia/',
@@ -12,7 +12,7 @@
     '/por-derecho/es/acreedor-de-registro/',
     '/por-derecho/en/lender-of-record/',
     '/por-derecho/es/convergencia-venta-acreedor/',
-    '/por-derecho/en/creditor-sale-convergence/',
+    '/por-derecho/en/sale-lender-convergence/',
     '/por-derecho/es/objetivos-recuperacion-restitucion/',
     '/por-derecho/en/recovery-restitution-objectives/',
     '/por-derecho/es/concurso-36-2012-separacion-administrador-concursal-rpl-3304-2025/',
@@ -23,14 +23,14 @@
     '/por-derecho/en/insolvency-36-2012-administrator-removal-fees/'
   ]);
   if (!routes.has(localPath)) return;
-  document.documentElement.dataset.caixaConcursoRipple = '20260903a';
+  document.documentElement.dataset.caixaConcursoRipple = '20260903b';
 
   const es = localPath.includes('/es/');
   const base = '/por-derecho';
   const hub = es ? `${base}/es/caixabank-concurso-efecto-domino/` : `${base}/en/caixabank-insolvency-ripple/`;
   const caixa = es ? `${base}/es/reclamacion-caixabank-valencia/` : `${base}/en/caixabank-valencia-claim/`;
   const concurso = es ? `${base}/es/insolvencia-lpb/` : `${base}/en/lpb-insolvency/`;
-  const creditor = es ? `${base}/es/convergencia-venta-acreedor/` : `${base}/en/creditor-sale-convergence/`;
+  const creditor = es ? `${base}/es/convergencia-venta-acreedor/` : `${base}/en/sale-lender-convergence/`;
   const recovery = es ? `${base}/es/objetivos-recuperacion-restitucion/` : `${base}/en/recovery-restitution-objectives/`;
   const separation = es ? `${base}/es/concurso-36-2012-separacion-administrador-concursal-rpl-3304-2025/` : `${base}/en/insolvency-36-2012-administrator-removal-rpl-3304-2025/`;
 
@@ -46,7 +46,7 @@
   const isSeparation = localPath.includes('separacion-administrador-concursal-rpl-3304-2025') || localPath.includes('administrator-removal-rpl-3304-2025');
   const section = document.createElement('section');
   section.className = 'pd-ripple';
-  section.setAttribute('data-caixabank-concurso-ripple', '20260903a');
+  section.setAttribute('data-caixabank-concurso-ripple', '20260903b');
   const courtCard = isCaixa ? (es
     ? `<div class="pd-source"><a href="${base}/es/reclamacion-caixabank-valencia/senalamiento-28-enero-2027/"><img src="${base}/assets/evidence/caixabank-valencia-1859-2023-diligencia-06nov2025-p1-publica.jpg" alt="Diligencia judicial pública, 6 de noviembre de 2025"></a><div><strong>Fuente procesal primaria visible.</strong><p>La diligencia firmada el 6 de noviembre de 2025 fija la vista de ORD 1859/2023-9 para el <strong>28 de enero de 2027 a las 10:00</strong>. <a href="${base}/es/reclamacion-caixabank-valencia/senalamiento-28-enero-2027/">Abrir las dos páginas públicas redactadas →</a></p></div></div>`
     : `<div class="pd-source"><a href="${base}/es/reclamacion-caixabank-valencia/senalamiento-28-enero-2027/"><img src="${base}/assets/evidence/caixabank-valencia-1859-2023-diligencia-06nov2025-p1-publica.jpg" alt="Public court diligence, 6 November 2025"></a><div><strong>Visible primary procedural source.</strong><p>The signed 6 November 2025 diligence sets ORD 1859/2023-9 for <strong>28 January 2027 at 10:00</strong>. <a href="${base}/es/reclamacion-caixabank-valencia/senalamiento-28-enero-2027/">Open the two redacted public court pages →</a></p></div></div>`) : '';
