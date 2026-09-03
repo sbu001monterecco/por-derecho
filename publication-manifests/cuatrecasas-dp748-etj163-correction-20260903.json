@@ -2,7 +2,7 @@
   "schema": "por-derecho.publication-manifest.v1",
   "control_id": "PD-PUB-CUATRECASAS-DP748-ETJ163-20260903-01",
   "date": "2026-09-03",
-  "status": "PENDING_PR_MERGE_AND_LIVE_READBACK",
+  "status": "RELEASE_CANDIDATE_LIVE_STATE_REQUIRES_DEPLOYMENT_READBACK",
   "workspace": "PD-WS-20260902-0001",
   "governance": [
     "ANTI_CONFLATION_IS_NOT_ANTI_CONNECTIVITY",
@@ -50,5 +50,6 @@
     "LIVE_TEXT_READBACK_CORRECTED_FINDING",
     "BILINGUAL_RECIPROCAL_LINKS",
     "NO_PRIVILEGED_TEXT_PUBLICATION"
-  ]
+  ],
+  "lifecycle_rule": "This manifest records the release scope and required checks. Current merge and live status must be verified from GitHub main and Pages at the time of use; this file does not self-certify deployment."
 }
