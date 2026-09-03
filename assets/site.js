@@ -28,6 +28,7 @@
    * CUATRECASAS_DP748_TRANSPARENCY_APPEAL_20260902
    * CUATRECASAS_DP748_ETJ163_RECENT_PRIMARY_CLUSTER_20260903
    * LA_LAGUNA_CONCURSO_PUBLIC_INTERCONNECTION_20260903
+   * CAIXABANK_VALENCIA_SETTLEMENT_OUTREACH_20260903
    */
 
   const loadMasterProceedingsPublication = () => {
@@ -245,6 +246,18 @@
     document.head.appendChild(bridge);
   };
 
+  const loadCaixaBankValenciaSettlementOutreach = () => {
+    const path = window.location.pathname.replace(/\/index\.html$/, '/');
+    if (!path.includes('/es/reclamacion-caixabank-valencia/')) return;
+    if (path.includes('/senalamiento-28-enero-2027/')) return;
+    if (document.querySelector('script[data-caixabank-valencia-settlement-outreach-loader]')) return;
+    const outreach = document.createElement('script');
+    outreach.src = new URL('caixabank-valencia-settlement-outreach-20260903.js?v=20260903a', current.src).href;
+    outreach.async = false;
+    outreach.setAttribute('data-caixabank-valencia-settlement-outreach-loader', '20260903a');
+    document.head.appendChild(outreach);
+  };
+
   // Preserve the complete site loader that existed before this visual update.
   const prior = document.createElement('script');
   prior.src = new URL('site-pre-treasury-154-hq-20260828.js?v=20260828a', current.src).href;
@@ -269,4 +282,5 @@
   loadCuatrecasasStep4SearchExtension();
   loadCuatrecasasDp748Transparency();
   loadLaLagunaConcursoPublicBridge();
+  loadCaixaBankValenciaSettlementOutreach();
 })();
