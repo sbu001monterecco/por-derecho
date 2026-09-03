@@ -1,0 +1,76 @@
+name: Verify GC-CIV-003 Arrecife live 20260903
+on:
+  push:
+    branches:
+      - verify/gc-civ-003-arrecife-live-20260903
+permissions:
+  contents: read
+jobs:
+  live-browser:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
+        with:
+          python-version: '3.12'
+      - name: Install Chromium browser
+        run: |
+          python -m pip install --disable-pip-version-check playwright
+          python -m playwright install --with-deps chromium
+      - name: Verify live bilingual GC-CIV-003 authority rows
+        run: |
+          python - <<'PY'
+          from playwright.sync_api import sync_playwright
+
+          base = 'https://sbu001monterecco.github.io/por-derecho'
+          pages = {
+              '/en/historic-arrecife-justice-authority-register/': [
+                  'GC-CIV-003',
+                  'Diligencias Preliminares 1041/2017',
+                  'Juzgado de Primera Instancia nº 2 de Las Palmas de Gran Canaria',
+                  'PD-SP-P-0124',
+                  'Juan Avello Formoso',
+                  'PD-SP-P-0165',
+                  'Fernando Pérez Polo',
+                  'corrected Las Palmas classification',
+              ],
+              '/es/registro-autoridad-historica-arrecife/': [
+                  'GC-CIV-003',
+                  'Diligencias Preliminares 1041/2017',
+                  'Juzgado de Primera Instancia nº 2 de Las Palmas de Gran Canaria',
+                  'PD-SP-P-0124',
+                  'Juan Avello Formoso',
+                  'PD-SP-P-0165',
+                  'Fernando Pérez Polo',
+                  'clasificación corregida a Las Palmas',
+              ],
+          }
+
+          with sync_playwright() as p:
+              browser = p.chromium.launch()
+              page = browser.new_page()
+              for path, expected in pages.items():
+                  response = page.goto(base + path, wait_until='domcontentloaded', timeout=60000)
+                  assert response is not None and response.status < 400, (path, None if response is None else response.status)
+                  row = page.locator('tr#gc-civ-003')
+                  assert row.count() == 1, f'{path}: GC-CIV-003 row missing or duplicated'
+                  text = row.inner_text()
+                  for value in expected:
+                      assert value in text, f'{path}: missing {value!r} in row: {text!r}'
+                  assert 'SOURCE_GAP' not in text, f'{path}: stale SOURCE_GAP remains: {text!r}'
+                  print(f'PASS {path} status={response.status} row={text!r}')
+
+              for path in ('/en/proceedings/lz-civ-050/', '/es/procedimientos/lz-civ-050/'):
+                  response = page.goto(base + path, wait_until='domcontentloaded', timeout=60000)
+                  status = None if response is None else response.status
+                  assert status == 404, f'{path}: expected 404, got {status}'
+                  print(f'PASS {path} status=404')
+
+              sitemap = page.request.get(base + '/sitemap.xml')
+              assert sitemap.ok, f'sitemap status={sitemap.status}'
+              sitemap_text = sitemap.text().lower()
+              assert 'lz-civ-050' not in sitemap_text, 'deprecated lz-civ-050 still appears in sitemap'
+              print('PASS sitemap: lz-civ-050 absent')
+              browser.close()
+          PY
