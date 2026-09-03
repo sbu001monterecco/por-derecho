@@ -1,8 +1,10 @@
 # CURRENT START HERE — Por Derecho
 
-**Routing status:** CURRENT 27-AUG-2026 RESTART GATE  
+**Routing status:** CURRENT 03-SEP-2026 CRIMINAL-FIRST SOURCE CONTROL  
 **Machine pair:** `ops/CURRENT_OPERATIONAL_STATE_27AUG2026.json`  
 **Detailed pointer:** `CURRENT_OPERATIONAL_STATE_27AUG2026.md`
+
+> **3-Sep-2026 unitary criminal-first RedSARA source control:** before any criminal/prosecutorial, Concurso 36/2012, AC, Sun Park, RIC/RICPE or connected civil/mercantile/concursal redigest, read `reports/UNITARY_CRIMINAL_FIRST_REVERSE_ENGINEERING_GAP_CLOSURE_03SEP2026.md`, `UNITARY_CRIMINAL_PROSECUTORIAL_DIGEST_03SEP2026.md` and `data/unitary-criminal-redsara-register-20260903.json`. The full 154-page RedSARA annex reparse resolves **75 REGAGE communications / 125 attachment SHA-512 records / 15 receipt records without a hashed attachment**. The nine substantive PDFs in the current source set match registered attachments byte-for-byte by exact SHA-512. Criminal-first is an analytical/evidence-routing priority, not a presumption of crime or blanket displacement of other jurisdictions. Raw filings contain protected personal data; public derivatives use registration metadata + hash provenance instead of republishing raw PII.
 
 > **1-Sep-2026 digital/media asset `^` register + public Acosta Matos / Canarian Hospitality figures hook:** before any work using `satire`, `satirical`, `spoof`, `caricature`, `caricatura`, `parody`, `parodia`, `anuncio satírico`, `caricatura publicitaria` or a materially equivalent presentation, read `.github/governance/SATIRE_CARICATURE_SPOOF_PUBLICATION_STANDARD_ES_EN.md`, `ops/SATIRE_CARICATURE_SPOOF_GOVERNANCE_V1.json`, `.github/governance/DIGITAL_MEDIA_ASSET_CARET_IDENTITY_STANDARD_01SEP2026.md`, `data/satire-publication-compliance-v1.json` and the canonical `data/digital-media-asset-register-v1.json`; then run `python3 scripts/validate_satire_publication_governance.py`. Use a full person name only through `CARET_CONFIRMED` plus its immutable CAEPR person ID or the recorded strongly verified exception; otherwise use a source-short/neutral form or withhold. A portrait lock never upgrades a name, dated role or current affiliation. A PD-DMA caret confirms exact file-byte identity, **not** factual truth, ownership, endorsement or responsibility. The bilingual public pages are `/es/acosta-matos-plataforma-hotelera/` and `/en/acosta-matos-hotel-platform/`; the public asset registers are `/es/registro-activos-digitales/` and `/en/digital-media-asset-register/`. Current logical assets are `PD-DMA-0001` (Spanish primary), `PD-DMA-0002` (English companion), `PD-DMA-0003` and `PD-DMA-0004` (corrected prior-style variants). Exact web files carry `^`; exact outreach masters carry `-PNG^`. The published hook distinguishes >€100m in 2025 hotel sales attributed to the managed portfolio from the manager’s separately reported €44m / ~€50m / €60m turnover series; the measures are not mechanically added. Earlier concepts survive only under `PD-DMA-LEGACY-*` quarantine. The fuller hotel-by-hotel platform expansion remains source-gated under `data/acosta-matos-hotel-platform-page-foundation-20260901.json`.
 
@@ -13,11 +15,12 @@
 For every new ChatGPT thread, repository-maintenance run, unitary redigest or continuity audit:
 
 1. **Resolve the live `main` branch first.** Never assume a checked-in SHA is still the current Git head.
-2. Read `CURRENT_OPERATIONAL_STATE_27AUG2026.md` and its machine-readable pair.
-3. Read `CURRENT_HANDOVER_UNITARY_RECOVERY_27AUG2026.md`.
-4. Read `CURRENT_ACTIONS_360_START_HERE_27AUG2026.md` and `ops/UNITARY_360_ACTION_REGISTER_27AUG2026.json`.
-5. Read `CURRENT_REVERSE_ENGINEERED_DIGEST.md` and the relevant specialist controls.
-6. Apply `AGENTS.md`, `CHATGPT_START_HERE.md` and `ops/REPOSITORY_PRESERVATION_CONTRACT.json` before editing or publishing.
+2. Read `reports/UNITARY_CRIMINAL_FIRST_REVERSE_ENGINEERING_GAP_CLOSURE_03SEP2026.md`, `UNITARY_CRIMINAL_PROSECUTORIAL_DIGEST_03SEP2026.md` and `data/unitary-criminal-redsara-register-20260903.json` when the work touches the criminal/prosecutorial or connected Sun Park/Concurso 36/2012 perimeter.
+3. Read `CURRENT_OPERATIONAL_STATE_27AUG2026.md` and its machine-readable pair.
+4. Read `CURRENT_HANDOVER_UNITARY_RECOVERY_27AUG2026.md`.
+5. Read `CURRENT_ACTIONS_360_START_HERE_27AUG2026.md` and `ops/UNITARY_360_ACTION_REGISTER_27AUG2026.json`.
+6. Read `CURRENT_REVERSE_ENGINEERED_DIGEST.md` and the relevant specialist controls.
+7. Apply `AGENTS.md`, `CHATGPT_START_HERE.md` and `ops/REPOSITORY_PRESERVATION_CONTRACT.json` before editing or publishing.
 
 ## Routing rule
 
