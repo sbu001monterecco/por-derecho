@@ -1,0 +1,46 @@
+{
+  "schema": "por-derecho.actor-event-multitrack.v1",
+  "control_date": "2026-09-01",
+  "actor": {"id":"PD-SP-P-0145","name":"Joan Cruz Nuez","aliases":["Joan Cruz","JCruz"],"caret":"CARET_CONFIRMED"},
+  "canonical_objects": {
+    "source":"PD-SP-SRC-0001",
+    "document":"PD-SP-DOC-0005",
+    "event":"PD-SP-EVT-0001"
+  },
+  "chronology": [
+    {"date":"2017-10-11","label":"CAM access-attempt lane begins","state":"DOCUMENTED_IN_CONTROLLED_ACCESS_INDEX"},
+    {"date":"2017-11-01","label":"Joan Cruz reported cessation of Meeting Point CEO functions","state":"DOCUMENTED_PUBLIC_CONTEXT"},
+    {"date":"2017-11-20","label":"PwC access-channel issue","state":"DOCUMENTED_IN_CONTROLLED_ACCESS_INDEX"},
+    {"date":"2018-01-24/25","label":"AC permits CAM measurement access with non-interference limit","state":"DOCUMENTED_IN_CONTROLLED_ACCESS_INDEX"},
+    {"date":"2018-03-01","event_id":"PD-SP-EVT-0001","label":"Sun Park photographic package; filename associates CAM and Joan Cruz; printed captions name José Acosta Matos","state":"DOCUMENT_NAME_ASSOCIATION"},
+    {"date":"2018-03","label":"Witness account describes a visit with Acosta, Joan and representatives, plus other visits/measurements; exact dates require reconciliation","state":"WITNESS_ATTESTED"},
+    {"date":"2018-03-22","label":"Certified transcript contains access, exploitation, personnel, Community, security and target-control language; speakers not independently identified in transcript body","state":"DOCUMENTED_WITH_IDENTITY_GAP"},
+    {"date":"2018-05-24","label":"ONA / marketing-operational visibility counter-track","state":"DOCUMENTED_IN_CONTROLLED_ACCESS_INDEX"},
+    {"date":"2018-06-06","label":"AC security contact later described as limited to LPB apartments","state":"DOCUMENTED"},
+    {"date":"2018-06-07","label":"Physical-control / locks / keys / security event","route_es":"/es/toma-control-sun-park-7-junio-2018/","route_en":"/en/sun-park-takeover-7-june-2018/","state":"DOCUMENTED_EVENT","days_after_2018_03_01":98},
+    {"date":"2018-06-08/12","label":"AC later says he ordered cessation of lock changes / delivery of keys","state":"DOCUMENTED"},
+    {"date":"2018-06-25","label":"Contemporaneous Gil Marer email records concern about repeated Daniel/Joan hotel visits, measurements and showing the hotel to others","state":"ATTRIBUTED_CONTEMPORANEOUS_NOTICE"},
+    {"date":"2019","label":"Meeting Point / Club Sei commercialisation and operation evidence lane","state":"DOCUMENTED_DOWNSTREAM_CONTEXT"}
+  ],
+  "edges": [
+    {"from":"PD-SP-P-0145","to":"José Acosta Matos","type":"CO_PRESENCE_OR_ASSOCIATION","state":"WITNESS_ATTESTED_AND_DOCUMENT_NAME_ASSOCIATION"},
+    {"from":"PD-SP-P-0145","to":"Meeting Point Hotelmanagement (Canaries), S.L.U.","type":"PROFESSIONAL_CAPACITY","state":"DOCUMENTED"},
+    {"from":"PD-SP-P-0145","to":"PD-SP-EVT-0001","type":"EVENT_ASSOCIATION","state":"DOCUMENT_NAME_ASSOCIATION_PLUS_WITNESS_CONTEXT"},
+    {"from":"PD-SP-EVT-0001","to":"2018-06-07 Sun Park control event","type":"PRECURSOR","state":"DOCUMENTED_TEMPORAL","elapsed_days":98},
+    {"from":"PD-SP-P-0145","to":"Francisco de Borja Rodríguez-Batllori Laffitte","type":"DIRECT_COORDINATION","state":"OPEN","boundary":"Chronology overlaps with CAM access/security permissions but no direct Joan↔AC communication or instruction has yet been established."},
+    {"from":"PD-SP-P-0145","to":"Juzgado de lo Mercantil nº 1 de Las Palmas / judge","type":"DIRECT_COORDINATION","state":"OPEN","boundary":"No direct Joan↔Judge communication, instruction or advance-knowledge bridge has yet been established."},
+    {"from":"pre-7-Jun-2018 sequence","to":"planned/prepared control trajectory","type":"INFERENCE","state":"REASONED_INFERENCE","boundary":"Supports investigation of preparation/organisation; does not prove conspiracy or criminal intent."}
+  ],
+  "asset_lanes": ["ownership-title","insolvency-liquidation","operation-exploitation","community-CEXP-governance","financing-NPL","possession-access-security-control","commercialisation-MeetingPoint-FTI-ClubSei","funded-exit-ONA-Stoneweg-Elaia","judicial-prosecutorial-regulatory","tax-RIC-RICPE-public-support"],
+  "image_family": {"directory":"/assets/evidence/joan-cruz-01mar2018/","pages":18,"contact_sheet":true,"identification_rule":"No facial or biometric recognition. Human-authored filename/caption/witness attributions remain attributed to those sources."},
+  "open_gaps": [
+    "Exact date and purpose of each witness-attested pre-7-Jun visit involving Joan Cruz.",
+    "Invitation/authority for each access and identity/capacity of accompanying representatives.",
+    "Original communications between Joan Cruz/Meeting Point and CAM concerning Sun Park before 7-Jun-2018.",
+    "Any direct AC knowledge/instruction concerning Joan Cruz or Meeting Point before 7-Jun-2018.",
+    "Any direct court/judge/LAJ knowledge or authorisation concerning Joan Cruz/Meeting Point access.",
+    "Identity of the person who compiled/named the 18-page PDF and evidential basis for naming Joan Cruz.",
+    "Contractual bridge, if any, from pre-7-Jun access to later Meeting Point/Club Sei commercialisation."
+  ],
+  "public_routes": {"person_es":"/es/joan-cruz-nuez/","person_en":"/en/joan-cruz-nuez/","event_es":"/es/sun-park-1-marzo-2018-joan-cruz/","event_en":"/en/sun-park-1-march-2018-joan-cruz/"}
+}
