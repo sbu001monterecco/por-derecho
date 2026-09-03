@@ -26,7 +26,7 @@ jobs:
         with:
           python-version: '3.12'
 
-      - name: Prepare candidate bytes
+      - name: Reconcile current denominators and browser control count
         shell: python
         run: |
           from pathlib import Path
@@ -60,83 +60,77 @@ jobs:
               text = text.replace(old, new, 1)
           schema.write_text(text, encoding='utf-8')
 
-      - name: Regenerate projections
+      - name: Regenerate deterministic projections
         run: |
           python scripts/build_proceedings_interlinkability_v1.py
           python scripts/build_community_acta_authority_interconnectivity.py
 
-      - name: Reconcile intended transition rows and enumerate remaining drift
+      - name: Reconcile bounded reintegration transition drift
         shell: python
         run: |
-          import hashlib, json, re
+          import hashlib, json
           from pathlib import Path
           manifest_path = Path('publication-manifests/historic-proceedings-authority-reintegration-20260903.json')
           data = json.loads(manifest_path.read_text(encoding='utf-8'))
-          d = data.get('current_denominator', {})
-          d['CURRENT_CASE_PRISM_EXACT_COVERED'] = 45
-          d['CURRENT_CASE_PRISM_EXACT_UNCOVERED'] = 61
-          rows = data.get('transitions', [])
-          by = {row.get('resource'): row for row in rows if isinstance(row, dict) and row.get('resource')}
-          intended = {
+          denominator = data.get('current_denominator', {})
+          if denominator.get('CURRENT_CASE_PRISM_EXACT_COVERED') != 43 or denominator.get('CURRENT_CASE_PRISM_EXACT_UNCOVERED') != 63:
+              raise SystemExit('Expected stale 43/63 reintegration denominator not found')
+          denominator['CURRENT_CASE_PRISM_EXACT_COVERED'] = 45
+          denominator['CURRENT_CASE_PRISM_EXACT_UNCOVERED'] = 61
+          tracked = {
+              '.github/workflows/backfill-historic-proceedings-search-20260902.yml',
+              'en/historic-arrecife-justice-authority-register/index.html',
+              'en/proceedings/gc-civ-003/index.html',
+              'es/procedimientos/gc-civ-003/index.html',
+              'es/registro-autoridad-historica-arrecife/index.html',
               'assets/data/proceedings-interconnectivity-schema-v1.json',
               'assets/data/proceedings-interlinkability-v1.json',
               'scripts/audit_proceedings_interconnectivity_map.py',
               'scripts/build_proceedings_interlinkability_v1.py',
           }
-          for resource in intended:
-              if resource not in by: raise SystemExit(f'Missing intended transition row: {resource}')
-              by[resource]['candidate_sha256'] = hashlib.sha256(Path(resource).read_bytes()).hexdigest()
+          rows = {row.get('resource'): row for row in data.get('transitions', []) if isinstance(row, dict) and row.get('resource')}
+          missing = sorted(tracked - set(rows))
+          if missing: raise SystemExit(f'Missing bounded transition rows: {missing}')
+          for resource in sorted(tracked):
+              path = Path(resource)
+              if not path.exists(): raise SystemExit(f'Bounded transition resource missing: {resource}')
+              rows[resource]['candidate_sha256'] = hashlib.sha256(path.read_bytes()).hexdigest()
           manifest_path.write_text(json.dumps(data, indent=2, ensure_ascii=False) + '\n', encoding='utf-8')
 
-          mismatches=[]; absent_violations=[]
-          for resource,row in by.items():
-              path=Path(resource); expected=row.get('candidate_sha256')
-              if expected is None:
-                  if path.exists(): absent_violations.append(resource)
-              else:
-                  if not path.exists(): mismatches.append(f'{resource} :: MISSING :: expected={expected}')
-                  else:
-                      actual=hashlib.sha256(path.read_bytes()).hexdigest()
-                      if actual != expected: mismatches.append(f'{resource} :: expected={expected} :: actual={actual}')
-          required={
-              'archive/PROCEEDINGS_MASTER_REGISTER.csv',
-              'assets/data/proceedings-interconnectivity-schema-v1.json',
-              'assets/data/proceedings-interlinkability-v1.json',
-              'scripts/audit_proceedings_interconnectivity_map.py',
-              'en/proceedings/gc-civ-003/index.html',
-              'es/procedimientos/gc-civ-003/index.html',
-          }
-          invalid_anchors=[]
-          for row in rows:
-              for anchor in row.get('historical_anchors', []):
-                  value=anchor.get('sha256','')
-                  if not value or re.fullmatch(r'[0-9a-f]{64}', value) is None:
-                      invalid_anchors.append(f"{row.get('resource')}::{value}")
-          lines=[
-              f"schema={data.get('schema')}",
-              f"publication_id={data.get('publication_id')}",
-              f"control_date={data.get('control_date')}",
-              f"state={data.get('state')}",
-              f"base_main_sha={data.get('base_main_sha')}",
-              f"row_count={len(rows)} unique_path_count={len(by)} candidate_delta_file_count={data.get('candidate_delta_file_count')}",
-              f"missing_required={sorted(required-set(by))}",
-              f"production={data.get('production')}",
-              f"lz_civ_050_en_exists={Path('en/proceedings/lz-civ-050/index.html').exists()}",
-              f"lz_civ_050_es_exists={Path('es/procedimientos/lz-civ-050/index.html').exists()}",
-              f"invalid_anchor_count={len(invalid_anchors)}",
-              f"absent_violation_count={len(absent_violations)}",
-              f"hash_mismatch_count={len(mismatches)}",
-              'ABSENT_VIOLATIONS:', *absent_violations,
-              'HASH_MISMATCHES:', *mismatches,
-              'INVALID_ANCHORS:', *invalid_anchors,
-          ]
-          Path('.github/reintegration-transition-diagnostic.txt').write_text('\n'.join(lines)+'\n', encoding='utf-8')
+      - name: Check proceedings interlinkability projection
+        run: python scripts/build_proceedings_interlinkability_v1.py --check
+      - name: Audit proceedings interconnectivity map
+        run: python scripts/audit_proceedings_interconnectivity_map.py
+      - name: Check Community ACTA projection
+        run: python scripts/build_community_acta_authority_interconnectivity.py --check
+      - name: Validate Community ACTA projection
+        run: python scripts/validate_community_acta_authority_interconnectivity.py
+      - name: Test Community ACTA projection
+        run: python -m unittest -v scripts/test_build_community_acta_authority_interconnectivity.py
+      - name: Check Fiscalía projection
+        run: python scripts/build_fiscalia_proceedings_interconnectivity.py --check
+      - name: Validate Fiscalía projection
+        run: python scripts/validate_fiscalia_proceedings_interconnectivity.py
+      - name: Test Fiscalía projection
+        run: python -m unittest -v scripts/test_build_fiscalia_proceedings_interconnectivity.py
+      - name: Parse Fiscalía browser smoke
+        run: node --check scripts/smoke_fiscalia_proceedings_interconnectivity.mjs
 
-      - name: Preserve detailed transition diagnostic
+      - name: Commit reconciled permanent files only
         run: |
           git config user.name github-actions[bot]
           git config user.email 41898282+github-actions[bot]@users.noreply.github.com
-          git add .github/reintegration-transition-diagnostic.txt
-          git commit -m 'Preserve temporary reintegration transition diagnostic'
+          git rm -f .github/reconcile-audit-diagnostic.txt .github/reconcile-audit-diagnostic-2.txt .github/reintegration-transition-diagnostic.txt || true
+          git add assets/data/proceedings-interlinkability-v1.json \
+                  assets/data/community-acta-authority-interconnectivity-v1.json \
+                  assets/data/proceedings-interconnectivity-schema-v1.json \
+                  publication-manifests/historic-proceedings-authority-reintegration-20260903.json \
+                  scripts/build_proceedings_interlinkability_v1.py \
+                  scripts/audit_proceedings_interconnectivity_map.py \
+                  scripts/smoke_fiscalia_proceedings_interconnectivity.mjs
+          if git diff --cached --quiet; then
+            echo 'No permanent reconciliation changes produced.'
+            exit 1
+          fi
+          git commit -m 'Reconcile current interconnectivity denominators'
           git push origin HEAD:ministerio-fiscal-fulltext-audit-20260903
-          exit 1
