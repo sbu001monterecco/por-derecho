@@ -161,3 +161,15 @@ Do publish the claimant’s allegations accurately and firmly, alongside the sep
 ## 15. Successor instruction
 
 Never restart from an isolated-8584 or autonomous-apartment model. Start at the hotel title system, descend to the exact title and proceeding, then propagate every verified fact to all modules with a defined evidential, beneficiary, injury or remedy edge.
+
+## 16. Release status
+
+- publication PR: `#1410`;
+- merged: `3 September 2026`;
+- merge commit: `bc85c64bd3cbc5790ab2162bdf93cec21d6f8dfe`;
+- focused validation run: `33816683423` — **SUCCESS**;
+- source presence on remote `main`: verified for both canonical pages and the controlling governance files;
+- direct independent HTTP readback of the two newly created GitHub Pages routes: not yet confirmed at closeout;
+- search-engine discovery: not yet indexed at closeout.
+
+A successor may state that the repository source and Pages source tree are merged and validated. It must not state that the new public routes were independently live-read back until a direct HTTP check succeeds.
