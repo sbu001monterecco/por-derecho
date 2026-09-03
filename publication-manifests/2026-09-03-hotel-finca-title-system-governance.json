@@ -1,0 +1,70 @@
+{
+  "manifest_id": "PD-PUB-HOTEL-FINCA-20260903-01",
+  "title": "All-hotel-finca asset classification, title-on-title injury and cross-proceeding instrumentality release",
+  "created": "2026-09-03",
+  "workspace": "PD-WS-20260902-0001",
+  "status": "READY_FOR_PULL_REQUEST",
+  "scope_correction": {
+    "worked_example": "finca 8584",
+    "source_locked_matkator_titles": ["8584", "8588"],
+    "rule": "apply to every source-verified Matkator title and title-by-title across the complete hotel denominator"
+  },
+  "public_routes": [
+    "/es/fincas-hoteleras-clasificacion-lesion-titulo-sobre-titulo/",
+    "/en/hotel-fincas-asset-classification-title-on-title-injury/"
+  ],
+  "governance_files": [
+    "CURRENT_HANDOVER_HOTEL_FINCA_TITLE_SYSTEM_03SEP2026.md",
+    "archive/HOTEL_FINCA_ASSET_CLASSIFICATION_TITLE_ON_TITLE_INJURY_UNITARY_CONTROL_03SEP2026.md",
+    "archive/CORRECTION_REGISTER_ADDENDUM_HOTEL_FINCA_SYSTEM_03SEP2026.md",
+    "archive/PROCEEDINGS_INTERCONNECTIVITY_ADDENDUM_HOTEL_FINCA_SYSTEM_03SEP2026.md",
+    "data/hotel-finca-title-system-cross-proceedings-map-20260903.json"
+  ],
+  "legal_module_files": [
+    "docs/cuatrecasas/2026-09-03_LA_LAGUNA_CONCURSO36_CROSS_PROCEEDING_INSTRUMENTALITY_CONTROL.md",
+    "docs/cuatrecasas/DP748/2026-09-03_DP748_COMPLETED_ESTAFA_ALL_HOTEL_FINCA_SCOPE_SUPPLEMENT.md",
+    "docs/cuatrecasas/ETJ163/2026-09-03_ETJ163_EXACT_8584_WIDER_TITLE_SYSTEM_CONTEXT_SUPPLEMENT.md",
+    "docs/acosta-matos/2026-09-03_ALL_HOTEL_FINCA_TITLE_SYSTEM_MULTITRACK_RIPPLE_CONTROL.md"
+  ],
+  "site_modules": [
+    "assets/hotel-finca-title-system-interlink-20260903.js",
+    "assets/hotel-finca-title-system-search-extension-20260903.js",
+    "assets/site.js"
+  ],
+  "search_terms": [
+    "finca 8584",
+    "finca 8588",
+    "Matkator fincas",
+    "hotel fincas",
+    "title-on-title injury",
+    "lesion titulo sobre titulo",
+    "Cuatrecasas estafa procesal",
+    "La Laguna Concurso 36/2012 instrumentality",
+    "Acosta Matos hotel titles"
+  ],
+  "claimant_position": {
+    "classification": "PARTY_POSITION_ALLEGED_COMPLETED_OFFENCE",
+    "statement": "The claimant alleges completed estafa procesal in the Cuatrecasas/Matkator La Laguna proceedings and alleges concert, participation or enabling conduct, concealment or regularisation, and cross-proceeding instrumental effects concerning Concurso 36/2012.",
+    "adjudicative_status": "not established by a final judicial finding"
+  },
+  "publication_boundaries": [
+    "Finca 8584 remains the exact current ETJ worked example",
+    "Finca 8588 is source-locked historically but is not asserted to be an ETJ 163 auction object",
+    "No third Matkator title is invented",
+    "Operational unity does not merge legal ownership",
+    "Matkator titles remain outside LPB insolvency estate",
+    "Not every Acosta Matos acquisition is stated to be unlawful",
+    "Valid consensual acquisition is separated from disputed consent and alleged non-consensual integration",
+    "Title-on-title injury is an analytical descriptor, not a standalone offence",
+    "Conspiracy requires evidence of agreement and resolution",
+    "Enablement must be mapped to a specific participation route",
+    "Encubrimiento is not used as a catch-all for an alleged original participant",
+    "Fraude concursal requires an exact actor, act and candidate offence",
+    "No guilt or common criminal plan is stated as adjudicated fact"
+  ],
+  "specialised_sitemap": "sitemap-hotel-finca-title-system.xml",
+  "robots_update_required": true,
+  "pull_request": null,
+  "merge_commit": null,
+  "live_verification": "PENDING_AFTER_MERGE"
+}
