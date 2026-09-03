@@ -3,7 +3,7 @@
   "title": "All-hotel-finca asset classification, title-on-title injury and cross-proceeding instrumentality release",
   "created": "2026-09-03",
   "workspace": "PD-WS-20260902-0001",
-  "status": "PULL_REQUEST_OPEN",
+  "status": "REPOSITORY_MERGED_FOCUSED_VALIDATION_GREEN_PAGES_DIRECT_READBACK_PENDING",
   "scope_correction": {
     "worked_example": "finca 8584",
     "source_locked_matkator_titles": ["8584", "8588"],
@@ -65,8 +65,25 @@
   "specialised_sitemap": "sitemap-hotel-finca-title-system.xml",
   "robots_updated": true,
   "pull_request": 1410,
+  "pull_request_state": "MERGED",
+  "merge_commit": "bc85c64bd3cbc5790ab2162bdf93cec21d6f8dfe",
+  "main_source_presence_verified": true,
   "focused_validation_workflow": ".github/workflows/validate-hotel-finca-title-system.yml",
-  "focused_validation_status": "PENDING",
-  "merge_commit": null,
-  "live_verification": "PENDING_AFTER_MERGE"
+  "focused_validation_run_id": 33816683423,
+  "focused_validation_status": "SUCCESS",
+  "focused_validation_checks": [
+    "required files",
+    "JavaScript syntax",
+    "JSON and sitemap syntax",
+    "canonical and reciprocal language routes",
+    "scope, claimant-position and adjudicative-status boundaries",
+    "consensual-acquisition and legal-person boundaries",
+    "legacy and new loader continuity"
+  ],
+  "live_verification": {
+    "repository_source": "VERIFIED_ON_MAIN",
+    "pages_direct_http_readback": "PENDING_INDEPENDENT_CONFIRMATION",
+    "search_engine_discovery": "NOT_YET_INDEXED_AT_CLOSEOUT",
+    "representation_rule": "Do not describe the new routes as independently live-verified until direct HTTP readback succeeds."
+  }
 }
