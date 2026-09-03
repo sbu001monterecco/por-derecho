@@ -28,7 +28,7 @@ TARGET = ROOT / "assets/data/fiscalia-proceedings-interconnectivity-v1.json"
 
 EXPECTED_EVENTS = 296
 EXPECTED_MATTER_LINKED_EVENTS = 117
-EXPECTED_FISCALIA_EXACT = 21
+EXPECTED_FISCALIA_EXACT = 23
 EXPECTED_FISCALIA_UNRESOLVED = 3
 SUPPORT_REFERENCE_PREFIXES = ("REGAGE",)
 FISCALIA_RECORD_TYPES = {"FISCALIA_FILE", "UNRESOLVED_REFERENCE"}
@@ -165,10 +165,6 @@ def build() -> dict[str, Any]:
     public_rows = [row for row in master_rows if row["Master_ID"] in public_ids]
     by_master = {row["Master_ID"]: row for row in public_rows}
     alias_index = build_alias_index(public_rows, assertions)
-    # The canonical communications register now also contains a bounded set of
-    # non-Fiscalía public-authority events.  The Fiscalía graph keeps its
-    # historical denominator by excluding only the newly allocated authority
-    # batch; reused EPPO/Fiscalía receipts remain in scope.
     non_fiscalia_authority_ids = set(
         communications.get("authority_scan_control", {}).get("new_event_ids", [])
     )
@@ -313,7 +309,10 @@ def build() -> dict[str, Any]:
     exact = sum(row["Record_Type"] == "FISCALIA_FILE" for row in fiscal_rows)
     unresolved = sum(row["Record_Type"] == "UNRESOLVED_REFERENCE" for row in fiscal_rows)
     if (exact, unresolved) != (EXPECTED_FISCALIA_EXACT, EXPECTED_FISCALIA_UNRESOLVED):
-        raise ValueError(f"expected 21 exact + 3 unresolved Fiscalía identities, found {exact} + {unresolved}")
+        raise ValueError(
+            f"expected {EXPECTED_FISCALIA_EXACT} exact + {EXPECTED_FISCALIA_UNRESOLVED} unresolved Fiscalía identities, "
+            f"found {exact} + {unresolved}"
+        )
 
     fiscal_files: list[dict[str, Any]] = []
     for row in fiscal_rows:
@@ -388,7 +387,7 @@ def build() -> dict[str, Any]:
     return {
         "schema_version": "1.0.0",
         "dataset": "fiscalia-proceedings-interconnectivity-v1",
-        "control_date": "2026-08-31",
+        "control_date": "2026-09-03",
         "status": "PUBLIC_SAFE_DERIVED_INTERCONNECTIVITY_PROJECTION",
         "canonical_sources": {
             "communications_register": str(COMMUNICATIONS.relative_to(ROOT)),
@@ -437,6 +436,8 @@ def main() -> int:
     if args.check:
         if not TARGET.exists() or TARGET.read_text(encoding="utf-8") != rendered:
             print(f"stale or missing generated projection: {TARGET.relative_to(ROOT)}")
+            print(f"current canonical source hashes: communications={sha256(COMMUNICATIONS)} master={sha256(MASTER)} assertions={sha256(ASSERTIONS)}")
+            print(f"expected Fiscalía denominator: {EXPECTED_FISCALIA_EXACT} exact + {EXPECTED_FISCALIA_UNRESOLVED} unresolved")
             return 1
         print(f"OK: {TARGET.relative_to(ROOT)} is deterministic and current")
         return 0
