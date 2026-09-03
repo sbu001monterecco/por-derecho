@@ -1,0 +1,105 @@
+{
+  "schema": "por-derecho.workspace-handoff.v1",
+  "workspace_id": "PD-WS-20260902-0001",
+  "handoff_id": "PD-WCH-20260903-GCCIV003-SRC-004",
+  "control_date": "2026-09-03",
+  "topic": "GC-CIV-003 primary closure decree recovery and source-gap refinement",
+  "historic_docket_state": "OPEN_NOT_CERTIFIED_COMPLETE",
+  "branch": "codex/gc-civ-003-decree-closure-primary-20260903",
+  "base_main_sha": "08b2c9efeec59ce1b4009377b0f84de3cd138d8c",
+  "proceeding": {
+    "master_id": "GC-CIV-003",
+    "reference": "Diligencias Preliminares 1041/2017",
+    "nig": "3501642120170028407",
+    "iup": "LR2017147858",
+    "court_id": "PD-SP-I-0048",
+    "judge_id": "PD-SP-P-0124",
+    "laj_id": "PD-SP-P-0165",
+    "deprecated_duplicate": "LZ-CIV-050"
+  },
+  "immutable_release": {
+    "pr": 1373,
+    "merge_sha": "efbb1032b0c5e21ca892b3a9db17b3f7b4073e6c",
+    "tree_sha": "1e2295ccc94d3e020b2ef0db59924d439de2aa93",
+    "pages_run_id": 33697357002,
+    "chromium_run_id": 33700567926
+  },
+  "prior_source_release": {
+    "pr": 1377,
+    "merge_sha": "ddebffb07f4750ab4ab19017a3aef5a195c45f70",
+    "pages_run_id": 33708727660,
+    "pages_run_number": 1424,
+    "live_browser_run_id": 33709044855,
+    "closeout_pr": 1378,
+    "closeout_merge_sha": "08b2c9efeec59ce1b4009377b0f84de3cd138d8c"
+  },
+  "new_primary_sources": [
+    {
+      "type": "DECRETO",
+      "resolution": "000139/2018",
+      "date": "2018-03-05",
+      "filename": "Decreto DP 1041-2017 LBP-CAM 5MAR2018.pdf",
+      "sha256": "4f8fff28bb5239895ab3c64ff9650ec5ffa2750cc401841c5a1274948301503c",
+      "bytes": 316520,
+      "state": "PRIMARY_VERIFIED"
+    },
+    {
+      "type": "DILIGENCIA_DE_ORDENACION",
+      "date": "2024-05-13",
+      "filename": "DIOR DP 1041-2017 LPB-CAM 13MAY2024.pdf",
+      "sha256": "87190775e0b8de91323e1d4901d5f1d78a634ee466dcc8e22a32913b4e79cbf2",
+      "bytes": 402540,
+      "state": "PRIMARY_VERIFIED"
+    },
+    {
+      "type": "PARTY_OPPOSITION",
+      "date": "2018-01-24",
+      "filename": "DP 250118 1 Retracto Oposicion de CAM.pdf",
+      "sha256": "02e2efcb55333f647225f1a81e27728f371214e78091f6968f18e84435dd5efc",
+      "bytes": 706239,
+      "state": "PRIMARY_VERIFIED"
+    },
+    {
+      "type": "OPPOSITION_EXHIBIT_ASSIGNMENT_NOTIFICATION",
+      "filename": "DP 250118 2 Retracto Notificacion de CAM a LPB.pdf",
+      "sha256": "8f11764548d458286de1aff04fe5ff08f00eb847a8960eab4dad8af4456dfdc3",
+      "bytes": 433878,
+      "state": "PRIMARY_EXHIBIT_VISUALLY_VERIFIED"
+    }
+  ],
+  "closure_findings": {
+    "requesting_party": "LUCHY_PLAYA_BLANCA_SLU_PRIMARY_CONFIRMED",
+    "individual_desistimiento_author": "SOURCE_GAP",
+    "cam_conformity": "PRIMARY_CONFIRMED_VIA_DECREE_2018-02-25_REG_1222-18",
+    "legal_basis": "ARTICLE_20_3_LEC_PRIMARY_CONFIRMED",
+    "sobreseimiento": "PRIMARY_CONFIRMED",
+    "hearing_suspended": "2018-04-25T11:15_PRIMARY_CONFIRMED",
+    "later_archive_status": "PRIMARY_CONFIRMED_AS_OF_2024-05-13",
+    "decree_service": "SOURCE_GAP",
+    "exact_decree_finality_date": "SOURCE_GAP"
+  },
+  "remaining_p0": [
+    "Complete docket/certified index",
+    "Actual 19-Feb-2018 result and intervening rescheduling act",
+    "Original LPB desistimiento filing with exact date/author/signatory/representative/full text",
+    "Original CAM 25-Feb-2018 conformity filing registry 1222/18",
+    "Service/notification of Decreto 000139/2018",
+    "Exact finality date/source after the five-day review route"
+  ],
+  "targeted_search_result": "No original desistimiento or 1222/18 conformity filing surfaced in exact-target Gmail/Drive searches; no broad discovery run.",
+  "controlling_source_state": "assets/data/gc-civ-003-primary-source-state-20260903.json",
+  "source_register": "archive/GC_CIV_003_PRIMARY_ACTS_SOURCE_REGISTER_03SEP2026.md",
+  "public_routes": [
+    "es/procedimientos/gc-civ-003/index.html",
+    "en/proceedings/gc-civ-003/index.html"
+  ],
+  "publication_state": "BRANCH_STAGED_PR_PENDING",
+  "master_row_boundary": "02-Sep stale gap wording is superseded for source interpretation; deterministic Master rebuild still required",
+  "do_not_infer": [
+    "Court lawyer/procurador metadata does not prove authorship of the desistimiento filing",
+    "Decree review notice does not prove service or exact finality date",
+    "25-Apr hearing date does not prove what happened on 19-Feb",
+    "Contemporaneous AC emails do not prove authorship of later desistimiento or misconduct",
+    "Separate Concurso 36/2012 acts do not transfer authorities or formal procedural relationships into GC-CIV-003"
+  ]
+}
