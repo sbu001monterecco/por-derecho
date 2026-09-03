@@ -2,7 +2,7 @@
 
 **Control:** `PD-UCD-20260903-01`  
 **Repository:** `sbu001monterecco/por-derecho`  
-**Base main before this release:** `c630538e2190ed68755c6dc21780d85340015cd1`  
+**Base main before the RedSARA source-control release:** `84b2b0c28d5c20cd206c0a6e4942b859331125e6`  
 **Method:** reverse engineering from current control/title/operation and forward testing from the historic source record.  
 **Boundary:** criminal/prosecutorial-led does not mean presumed crime or collective guilt.
 
@@ -11,6 +11,26 @@
 Gil Marer / Aweswell allege a continuing economic-criminal mechanism in which disputed authority, debt/voting, professional or institutional powers, material control, procedural instruments, valuation, adjudication/title, funding and later operation were capable of reinforcing one another over time. The repository preserves that allegation without dilution because it is the principal investigative theory being tested.
 
 It is **not** a judicial finding of an offence, criminal organisation, common plan, knowledge, intent, participation, causation or guilt. Every material bridge must be proved actor-by-actor, capacity-by-capacity, date-by-date and source-by-source. A sequence can be connected without every participant sharing a purpose. Apparent legitimacy may be carried forward as a documentary input; criminal responsibility never travels automatically with it.
+
+## 1A. Registered-source denominator — controlling provenance
+
+The full 154-page `ANEXO 4 RedSARA Ministerio Fiscal Comunicaciones Registradas.pdf` has now been reparsed end-to-end. The controlling denominator is **75 REGAGE communications**, **125 attachment SHA-512 records** and **15 receipt records without a hashed attachment**. Any earlier partial count of 56 communications is superseded for this source annex.
+
+Nine substantive PDFs in the current source set match their registered RedSARA attachments by **exact SHA-512 byte identity**. The public-safe canonical manifest is `data/unitary-criminal-redsara-register-20260903.json`; the 75 registration records are stored in its five listed shards; the gap-closure and privacy analysis is `reports/UNITARY_CRIMINAL_FIRST_REVERSE_ENGINEERING_GAP_CLOSURE_03SEP2026.md`.
+
+The nine exact current bridges are:
+
+1. 18-Jan-2026 — `REGAGE26e00004212180` — financed-exit / obstruction filing.
+2. 19-Jan-2026 — `REGAGE26e00004639835` — OB REM / desvinculación / funds filing.
+3. 20-Jan-2026 — `REGAGE26e00005026215` — liquidation-plan execution filing.
+4. 20-Jan-2026 — `REGAGE26e00005031882` — extraprocessual-use-of-non-final-resolution filing.
+5. 23-Jan-2026 — `REGAGE26e00006380826` — AC funds-management / accounting-trace filing.
+6. 24-Jan-2026 — `REGAGE26e00006889281` — unit/exploitation instrumentalisation filing.
+7. 25-Jan-2026 — `REGAGE26e00007274391` — unitary community/accounting/concursal expansion.
+8. 31-Jan-2026 — `REGAGE26e00009989396` — AC acts-and-omissions filing.
+9. 2-Feb-2026 — `REGAGE26e00010347207` — coordination-indicia / investigative-impulse expansion.
+
+Registration, receipt and hash equality prove delivery/file identity only within the RedSARA receipt chain. They do **not** prove truth, legal classification, institutional adoption, incorporation into a proceeding, examination, investigation, knowledge, intent, causation or guilt. Raw filings contain protected personal data, so the public surface uses minimised registration metadata and hashes rather than republishing the raw PDFs.
 
 ## 2. Reverse-engineered causal spine
 
@@ -81,6 +101,8 @@ Current main wins every collision. New public routes should normally close a mat
 Already merged today: Ministerio Fiscal full-text architecture (#1385), CAEPR public-surface repair (#1387), Aguiar Acosta event controls (#1388), Joan Cruz precursor evidence layer (#1389), redacted 21-Apr-2016 source derivatives (#1390), La Laguna ⇄ Concurso interconnection (#1392), and Montelanza 2008 searchable corpus (#1393).
 
 This clearance release additionally preserves the liquidation-plan/judge/LAJ audit, Luis Miguel López filing/remedy inventory, Orion 2024 disclosure audit, outbound-email evidence safeguards and final prescription-thread deletion certification, plus the live backlog ledger.
+
+The RedSARA source-control closure adds the verified 75-registration / 125-hash denominator, nine current exact SHA-512 filing bridges, public-safe machine ledgers and bilingual searchable source-provenance routes.
 
 ## 7. Output discipline
 
