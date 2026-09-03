@@ -80,7 +80,19 @@ jobs:
         run: python scripts/build_proceedings_interlinkability_v1.py --check
 
       - name: Audit proceedings interconnectivity map
-        run: python scripts/audit_proceedings_interconnectivity_map.py
+        id: proceedings_audit
+        continue-on-error: true
+        run: python scripts/audit_proceedings_interconnectivity_map.py > .github/reconcile-audit-diagnostic.txt 2>&1
+
+      - name: Preserve exact proceedings audit failure
+        if: steps.proceedings_audit.outcome == 'failure'
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add .github/reconcile-audit-diagnostic.txt
+          git commit -m 'Preserve temporary proceedings audit diagnostic'
+          git push origin HEAD:ministerio-fiscal-fulltext-audit-20260903
+          exit 1
 
       - name: Check Community ACTA projection
         run: python scripts/build_community_acta_authority_interconnectivity.py --check
