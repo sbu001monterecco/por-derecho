@@ -1,0 +1,33 @@
+name: Validate Aguiar Acosta caret event proceeding control
+
+on:
+  pull_request:
+    paths:
+      - 'assets/data/aguiar-acosta-person-event-proceeding-control-v1.json'
+      - 'assets/data/caepr-caret-irea-ricpe-colliers-continuity-v1.json'
+      - 'assets/data/matter-identity-registry-v1.people.json'
+      - 'archive/PROCEEDINGS_MASTER_REGISTER.csv'
+      - 'scripts/validate_aguiar_acosta_caret_event_proceeding.py'
+      - '.github/workflows/validate-aguiar-acosta-caret-event-proceeding.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'assets/data/aguiar-acosta-person-event-proceeding-control-v1.json'
+      - 'assets/data/caepr-caret-irea-ricpe-colliers-continuity-v1.json'
+      - 'assets/data/matter-identity-registry-v1.people.json'
+      - 'archive/PROCEEDINGS_MASTER_REGISTER.csv'
+      - 'scripts/validate_aguiar_acosta_caret_event_proceeding.py'
+      - '.github/workflows/validate-aguiar-acosta-caret-event-proceeding.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python scripts/validate_aguiar_acosta_caret_event_proceeding.py
