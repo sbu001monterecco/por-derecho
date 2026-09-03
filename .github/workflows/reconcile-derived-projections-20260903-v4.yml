@@ -76,17 +76,32 @@ jobs:
       - name: Regenerate Community ACTA authority projection
         run: python scripts/build_community_acta_authority_interconnectivity.py
 
-      - name: Validate regenerated projections and current denominators
-        run: |
-          python scripts/build_proceedings_interlinkability_v1.py --check
-          python scripts/audit_proceedings_interconnectivity_map.py
-          python scripts/build_community_acta_authority_interconnectivity.py --check
-          python scripts/validate_community_acta_authority_interconnectivity.py
-          python -m unittest -v scripts/test_build_community_acta_authority_interconnectivity.py
-          python scripts/build_fiscalia_proceedings_interconnectivity.py --check
-          python scripts/validate_fiscalia_proceedings_interconnectivity.py
-          python -m unittest -v scripts/test_build_fiscalia_proceedings_interconnectivity.py
-          node --check scripts/smoke_fiscalia_proceedings_interconnectivity.mjs
+      - name: Check proceedings interlinkability projection
+        run: python scripts/build_proceedings_interlinkability_v1.py --check
+
+      - name: Audit proceedings interconnectivity map
+        run: python scripts/audit_proceedings_interconnectivity_map.py
+
+      - name: Check Community ACTA projection
+        run: python scripts/build_community_acta_authority_interconnectivity.py --check
+
+      - name: Validate Community ACTA projection
+        run: python scripts/validate_community_acta_authority_interconnectivity.py
+
+      - name: Test Community ACTA projection
+        run: python -m unittest -v scripts/test_build_community_acta_authority_interconnectivity.py
+
+      - name: Check Fiscalía projection
+        run: python scripts/build_fiscalia_proceedings_interconnectivity.py --check
+
+      - name: Validate Fiscalía projection
+        run: python scripts/validate_fiscalia_proceedings_interconnectivity.py
+
+      - name: Test Fiscalía projection
+        run: python -m unittest -v scripts/test_build_fiscalia_proceedings_interconnectivity.py
+
+      - name: Parse Fiscalía browser smoke
+        run: node --check scripts/smoke_fiscalia_proceedings_interconnectivity.mjs
 
       - name: Commit reconciled permanent files only
         run: |
