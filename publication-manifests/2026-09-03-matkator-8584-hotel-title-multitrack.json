@@ -3,7 +3,9 @@
   "title": "Matkator finca 8584 hotel-title / remate / restitution multitrack release",
   "created": "2026-09-03",
   "workspace": "PD-WS-20260902-0001",
-  "status": "READY_FOR_PR",
+  "status": "REPOSITORY_MERGED_PAGES_PENDING_DIRECT_READBACK",
+  "principal_pr": 1407,
+  "principal_merge_commit": "f53f8a044aac804281aea869faa5b4eb7eeb1cc4",
   "public_routes": [
     "/es/matkator-8584-titulo-hotel-remate-restitucion/",
     "/en/matkator-8584-hotel-title-remate-restitution/"
@@ -48,7 +50,8 @@
     "CAM/HNT/Canarian Hospitality terminal-beneficiary proposition classified as evidence-based inference",
     "Matkator title remains outside LPB estate",
     "Adjudication mechanism not criminalised by itself",
-    "Counsel filing and email remain subject to counsel verification"
+    "Source-safe response architectures require instructed-counsel verification",
+    "No addressed counsel email or acting-lawyer identity retained in the current public tree"
   ],
   "official_legal_context": [
     "BOE-A-1995-12102",
@@ -60,5 +63,11 @@
   ],
   "sitemap": "sitemap-matkator-8584-hotel-title.xml",
   "robots_updated": true,
-  "live_verification": "PENDING_MERGE_AND_PAGES"
+  "repository_verification": {
+    "main_contains_release": true,
+    "legacy_loader_preserved": true,
+    "prior_handover_preserved": true,
+    "privacy_closeout_required": true
+  },
+  "live_verification": "DIRECT_PAGES_ROUTE_READBACK_PENDING"
 }

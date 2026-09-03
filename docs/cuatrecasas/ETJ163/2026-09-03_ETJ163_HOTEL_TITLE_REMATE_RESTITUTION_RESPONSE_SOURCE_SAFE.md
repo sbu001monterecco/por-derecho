@@ -1,7 +1,7 @@
 # ETJ 163/2020 — RESPONSE ARCHITECTURE: HOTEL TITLE, ADJUDICATION, CESSION AND RESTITUTION
 
 **Control ID:** `PD-ETJ163-RSP-MAT8584-20260903`  
-**Status:** source-safe public work product; **not filed; counsel must select the available procedural vehicle**  
+**Status:** source-safe public work product; **not filed; instructed counsel must select the available procedural vehicle**  
 **Proceeding:** ETJ 163/2020 · NIG 3802342120190009565  
 **Related:** Cambiario 1048/2019 · DP 748/2026 · DP 552/2025 → DP 711/2025 · Concurso 36/2012
 
@@ -15,7 +15,7 @@ The controlled record presently states:
 - the appeal route against that order must be described only by the filed/verified procedural record;
 - DP 552/2025 → DP 711/2025 is the separate criminal line concerning the alleged physical/operational treatment of Matkator property.
 
-This architecture does not assume that a further merits reply is procedurally available. Carlos Llamas Sanz must determine whether the correct vehicle is an aportación de resolución sobrevenida, appeal receipt, procedural update, protective request or another permitted filing.
+This architecture does not assume that a further merits reply is procedurally available. Instructed counsel must determine whether the correct vehicle is an aportación de resolución sobrevenida, appeal receipt, procedural update, protective request or another permitted filing.
 
 ## 2. The execution object is a hotel title, not an autonomous apartment
 
@@ -136,4 +136,4 @@ The filing must preserve:
 
 ## 11. Counsel control
 
-The exact heading, statutory basis, timing and relief must be settled by Carlos Llamas Sanz against the complete ETJ file. This is a continuity and drafting architecture, not a filed pleading or a substitute for counsel.
+The exact heading, statutory basis, timing and relief must be settled by instructed counsel against the complete ETJ file. This is a continuity and drafting architecture, not a filed pleading or a substitute for legal advice.
