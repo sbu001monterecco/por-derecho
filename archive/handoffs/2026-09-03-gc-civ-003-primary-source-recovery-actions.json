@@ -1,0 +1,64 @@
+{
+  "schema": "por-derecho.continuity-event-action-ledger.v1",
+  "workspace_id": "PD-WS-20260902-0001",
+  "handoff_id": "PD-WCH-20260903-GCCIV003-SRC-002",
+  "control_date": "2026-09-03",
+  "topic": "GC-CIV-003 primary-source recovery and gap refinement",
+  "repository_digest_actions": [
+    {"action": "Re-fetch current main before write", "state": "DONE", "result": "231d25c12108579efdf92365cf7860bf281178f5"},
+    {"action": "Read CURRENT_WORKSPACE_HANDOFF and release closeout", "state": "DONE"},
+    {"action": "Locate canonical GC-CIV-003 Master/public/page/authority state", "state": "DONE"},
+    {"action": "Register recovered primary acts in source-safe repo controls", "state": "DONE"},
+    {"action": "Refine bilingual proceeding pages", "state": "DONE"},
+    {"action": "Preserve immutable PR #1373 release manifests", "state": "DONE"}
+  ],
+  "connected_source_scans": [
+    {"scope": "Drive DILIGENCIA PRELIMINAR family", "state": "DONE_TARGETED_ONLY"},
+    {"scope": "Drive TANTEO Y RETRACTO sibling family", "state": "DONE_TARGETED_ONLY"},
+    {"scope": "Drive exact/near-exact 19-Feb and 5-Mar recovery terms", "state": "DONE_TARGETED_ONLY"},
+    {"scope": "Gmail exact case-number windows around 19-Feb and 5-Mar", "state": "DONE_TARGETED_ONLY"},
+    {"scope": "Broad Gmail/Drive rediscovery", "state": "NOT_RUN_BY_GOVERNANCE"}
+  ],
+  "identity_actions": [
+    {"id": "PD-SP-I-0048", "state": "PRESERVED_LOCKED"},
+    {"id": "PD-SP-P-0124", "state": "PRESERVED_CARET_CONFIRMED"},
+    {"id": "PD-SP-P-0165", "state": "PRESERVED_CARET_CONFIRMED"},
+    {"id": "LZ-CIV-050", "state": "DEPRECATED_REMOVED_DO_NOT_RECREATE"}
+  ],
+  "chronology_actions": [
+    {"date": "2017-12-19", "act": "Admission Auto", "state": "PRIMARY_VERIFIED"},
+    {"date": "2018-01-12", "act": "Providencia scheduling 19-Feb", "state": "PRIMARY_VERIFIED"},
+    {"date": "2018-01-18", "act": "CAM citation/requerimiento", "state": "PRIMARY_CONFIRMED_VIA_23JAN_LAJ_ORDER"},
+    {"date": "2018-01-23", "act": "Diligencia de Ordenación", "state": "PRIMARY_VERIFIED"},
+    {"date": "2018-02-19", "act": "Scheduled diligence result", "state": "SOURCE_GAP"},
+    {"date": "2018-03-05", "act": "Archive decree", "state": "STRONGLY_TRACED_PRIMARY_FILE_STILL_TO_RECOVER"}
+  ],
+  "interlink_actions": [
+    {"action": "Preserve no formal procedural edge to Concurso 36/2012 from contextual 8-Feb Mercantil Auto", "state": "DONE"},
+    {"action": "Preserve existing contextual navigation separately from formal edges", "state": "DONE"}
+  ],
+  "publication_actions": [
+    {"action": "Create fresh source-recovery branch from current main", "state": "DONE", "branch": "codex/gc-civ-003-primary-source-recovery-20260903"},
+    {"action": "Open governed PR", "state": "PENDING"},
+    {"action": "CI green", "state": "PENDING"},
+    {"action": "Merge with expected-head safety", "state": "PENDING"},
+    {"action": "Exact merge-SHA Pages deployment", "state": "PENDING"},
+    {"action": "Live ES/EN/source-state verification", "state": "PENDING"}
+  ],
+  "open_actions": [
+    "Recover actual 19-Feb-2018 act/result",
+    "Recover standalone 5-Mar-2018 decree",
+    "Recover archive/desistimiento request",
+    "Recover service and finality of closure sequence",
+    "Ingest 03-Sep source overlay into a future deterministic Master-register rebuild so stale 02-Sep row wording is physically replaced"
+  ],
+  "do_not_infer": [
+    "scheduled 19-Feb date is not proof of occurrence",
+    "Auto finality is not closure finality",
+    "annex trace is not primary decree verification",
+    "party filing has no inferred judicial authorship",
+    "legacy spreadsheet with wrong Arrecife label does not override primary Las Palmas/NIG chain",
+    "separate Concurso 36/2012 act does not transfer Judge/LAJ into GC-CIV-003"
+  ],
+  "successor_bootstrap": "Continue PD-WS-20260902-0001 from PD-WCH-20260903-GCCIV003-SRC-002. Treat assets/data/gc-civ-003-primary-source-state-20260903.json as the controlling 03-Sep source correction overlay. Preserve PR #1373 as immutable release checkpoint, LZ-CIV-050 as removed, and historic docket as OPEN_NOT_CERTIFIED_COMPLETE. Continue only the four named P0 source gaps."
+}

@@ -1,10 +1,10 @@
 # Active workspace continuity index
 
 **Current workspace:** `PD-WS-20260902-0001`  
-**Current continuation pointer:** `PD-WCH-20260903-AUTH-SEARCH-REINT-001`  
+**Current continuation pointer:** `PD-WCH-20260903-GCCIV003-SRC-002`  
 **Status:** `DELETION_SAFE_WITH_OPEN_WORK`
 
-**Current checkpoint:** the historic-proceedings / justice-authority / Fiscalía / canonical-search / interconnectivity reintegration is merged through PR **#1373** at production merge `efbb1032b0c5e21ca892b3a9db17b3f7b4073e6c`, tree `1e2295ccc94d3e020b2ef0db59924d439de2aa93`, deployed by GitHub Pages run **33697357002 / #1420** from that exact merge SHA, and live-browser verified in Chromium run **33700567926**. The locked Diligencias Preliminares 1041/2017 identity is `GC-CIV-003`; deprecated duplicate `LZ-CIV-050` is absent from live routes, search, sitemap and public route/master data. Global historic-docket backfill remains explicitly open and is not certified complete.
+**Current checkpoint:** the historic-proceedings / justice-authority / Fiscalía / canonical-search / interconnectivity reintegration remains immutably released through PR **#1373** at production merge `efbb1032b0c5e21ca892b3a9db17b3f7b4073e6c`, tree `1e2295ccc94d3e020b2ef0db59924d439de2aa93`, deployed by GitHub Pages run **33697357002 / #1420** from that exact merge SHA, and live-browser verified in Chromium run **33700567926**. Post-release source recovery now additionally confirms the primary 19-Dec-2017 Auto in `GC-CIV-003`, the Auto's own finality, the positive 18-Jan-2018 CAM citation/requerimiento recorded by the 23-Jan LAJ order, and CAM's primary opposition/appearance filing. The actual 19-Feb result and the standalone 5-Mar archive decree remain source gaps. Deprecated duplicate `LZ-CIV-050` remains removed. Global historic-docket backfill remains explicitly `OPEN_NOT_CERTIFIED_COMPLETE`.
 
 **Pointer semantics:** most recently checkpointed/default workspace; **not exclusive** and not a lock over concurrent workspaces.
 
@@ -14,22 +14,29 @@ A ChatGPT thread is a temporary working surface. A `PD-WS-*` workspace is the du
 
 ### `PD-WS-20260902-0001` — historic proceedings / justice authority / Fiscalía / caret search / interconnectivity — current checkpoint
 
-State: `DELETION_SAFE_WITH_OPEN_WORK`; release state `MERGED_DEPLOYED_LIVE_BROWSER_VERIFIED`.
+State: `DELETION_SAFE_WITH_OPEN_WORK`; release state `MERGED_DEPLOYED_LIVE_BROWSER_VERIFIED`; GC-CIV-003 source-recovery branch state `BRANCH_REGISTERED_PR_PENDING`.
 
-Read:
+Read in this order:
 
-1. `archive/handoffs/2026-09-03-historic-proceedings-authority-search-reintegration-live-closeout.md`
-2. `archive/handoffs/2026-09-03-historic-proceedings-authority-search-reintegration-live-closeout.json`
-3. prior checkpoint `archive/handoffs/2026-09-02-justice-authority-caret-search-live-closeout.md`
-4. `.github/governance/JUDICIAL_PROSECUTORIAL_AUTHORITY_REGISTER_CONTINUITY_02SEP2026.md`
-5. `assets/data/justice-authority-register-current-v2.json`
-6. the CAEPR / Master Proceedings / interconnectivity controls named by the successor handoff.
+1. `archive/handoffs/2026-09-03-gc-civ-003-primary-source-recovery-checkpoint.md`
+2. `archive/handoffs/2026-09-03-gc-civ-003-primary-source-recovery-checkpoint.json`
+3. `archive/handoffs/2026-09-03-gc-civ-003-primary-source-recovery-actions.json`
+4. `assets/data/gc-civ-003-primary-source-state-20260903.json`
+5. `archive/GC_CIV_003_PRIMARY_ACTS_SOURCE_REGISTER_03SEP2026.md`
+6. immutable release closeout `archive/handoffs/2026-09-03-historic-proceedings-authority-search-reintegration-live-closeout.md`
+7. its machine companion `archive/handoffs/2026-09-03-historic-proceedings-authority-search-reintegration-live-closeout.json`
+8. prior checkpoint `archive/handoffs/2026-09-02-justice-authority-caret-search-live-closeout.md`
+9. `.github/governance/JUDICIAL_PROSECUTORIAL_AUTHORITY_REGISTER_CONTINUITY_02SEP2026.md`
+10. `assets/data/justice-authority-register-current-v2.json`
+11. the CAEPR / Master Proceedings / interconnectivity controls named by the successor handoff.
 
-Release denominator at the current checkpoint: **131 canonical Master rows / 130 public; 107 canonical exact / 106 public exact / 1 private exact; 24 public non-exact/FALSE/UNVERIFIED; 130 bilingual public proceeding routes; 54 reciprocal formal procedural edges; 416 reciprocal contextual pairs; Fiscalía 26 public / 23 exact / 3 unresolved.**
+Release denominator at the immutable #1373 checkpoint: **131 canonical Master rows / 130 public; 107 canonical exact / 106 public exact / 1 private exact; 24 public non-exact/FALSE/UNVERIFIED; 130 bilingual public proceeding routes; 54 reciprocal formal procedural edges; 416 reciprocal contextual pairs; Fiscalía 26 public / 23 exact / 3 unresolved.** Do not reset these denominators without governed validation against current main.
 
-Authority denominator: **350 CAEPR objects** (PERSON 165 / ORGANISATION 83 / STRUCTURE 11 / INSTITUTION 48 / PROCEEDING 43); **62 source-identified justice/prosecutorial/notarial people / 59 CARET_CONFIRMED / 3 CARET_PENDING**. This is the current recovered-source denominator, **not** a certified complete historic/current docket denominator. Unknown applicable Judges/LAJs/Fiscals remain explicit source gaps, never silent blanks.
+Authority denominator: **350 CAEPR objects** (PERSON 165 / ORGANISATION 83 / STRUCTURE 11 / INSTITUTION 48 / PROCEEDING 43); **62 source-identified justice/prosecutorial/notarial people / 59 CARET_CONFIRMED / 3 CARET_PENDING**. This is the recovered-source denominator, **not** a certified complete historic/current docket denominator. Unknown applicable Judges/LAJs/Fiscals remain explicit source gaps, never silent blanks.
 
-Locked correction: Diligencias Preliminares 1041/2017 is `GC-CIV-003`, NIG `3501642120170028407`, court `PD-SP-I-0048`, Magistrado-Juez Juan Avello Formoso `PD-SP-P-0124`, LAJ Fernando Pérez Polo `PD-SP-P-0165`. Open source gaps remain the preceding signed Auto, complete docket/certified index, 19-Feb-2018 appearance/production proof, 5-Mar-2018 decree/closure, service and finality. Never resurrect `LZ-CIV-050`.
+Locked correction: Diligencias Preliminares 1041/2017 is `GC-CIV-003`, NIG `3501642120170028407`, court `PD-SP-I-0048`, Magistrado-Juez Juan Avello Formoso `PD-SP-P-0124`, LAJ Fernando Pérez Polo `PD-SP-P-0165`. The dated `assets/data/gc-civ-003-primary-source-state-20260903.json` is the controlling 03-Sep source correction overlay for gap interpretation. Closed by primary source: the signed 19-Dec-2017 admission Auto; finality of that Auto only; positive CAM citation/requerimiento on 18-Jan-2018; CAM appearance/opposition. Remaining targeted gaps: complete docket/certified index; actual 19-Feb-2018 result; standalone primary 5-Mar-2018 archive decree; original archive/desistimiento/request and exact procedural authority; service of the 5-Mar decree; finality of the closure sequence. The 5-Mar decree is `STRONGLY_TRACED_PRIMARY_FILE_STILL_TO_RECOVER`. Never resurrect `LZ-CIV-050`.
+
+The older 02-Sep GC-CIV-003 Master-row text that still says `Preceding signed Auto` is superseded for source-gap interpretation by the 03-Sep overlay and bilingual proceeding pages. A future deterministic Master-register rebuild must ingest the overlay and physically replace the stale row text without altering the locked identity or historical release manifests.
 
 ### `PD-WS-20260901-0001` — Acosta Matos / Canarian Hospitality hotel-platform media package — current checkpoint
 
@@ -95,7 +102,7 @@ Read:
 2. `archive/handoffs/2026-09-01-authority-discovery-redsara-workspace-handoff.md`
 3. the canonical authority-discovery controls named there.
 
-The machine authority for the complete list and exact state is `data/workspace-register-v1.json`.
+The machine authority for the complete list and exact state is `data/workspace-register-v1.json`; the current pointer above additionally records the branch-local GC-CIV-003 recovery checkpoint pending governed PR merge.
 
 ## Continuity-event action-ledger rule
 
@@ -124,8 +131,10 @@ For `PD-WS-20260901-0003`, the owner-only/not-shared Google Drive vault structur
 
 For `PD-WS-20260901-0001`, the three current portrait binaries are not falsely represented as public-Git binary mirrors. Their exact hashes, byte sizes, dimensions, provenance and intended interlinks are preserved in the specialist source register. Raw Gmail content is summarized source-safely in the handoff; it is not copied wholesale into the public repository.
 
+For `PD-WS-20260902-0001`, connected Drive locators and native GC-CIV-003 court files remain private; public Git contains source-safe metadata, chronology, source states and explicit gaps only.
+
 ## New-thread bootstrap
 
-> Continue `PD-WS-20260902-0001` from repository continuity state, not prior chat memory. Read `CURRENT_WORKSPACE_HANDOFF.md`, `archive/handoffs/2026-09-03-historic-proceedings-authority-search-reintegration-live-closeout.md`, its machine companion, then the prior 2-Sep handoff and current authority/CAEPR/Master Proceedings controls. Treat PR #1373, merge `efbb1032b0c5e21ca892b3a9db17b3f7b4073e6c`, tree `1e2295ccc94d3e020b2ef0db59924d439de2aa93`, Pages run 33697357002 and Chromium run 33700567926 as the completed release checkpoint. Re-fetch current `main` before changes. Preserve `GC-CIV-003`; never resurrect `LZ-CIV-050`. Preserve explicit historic-docket gaps and act/date/capacity boundaries. Do not re-run broad discovery unless a named `SOURCE_GAP` requires targeted recovery.
+> Continue `PD-WS-20260902-0001` from repository continuity state, not prior chat memory. Read `CURRENT_WORKSPACE_HANDOFF.md`, then `archive/handoffs/2026-09-03-gc-civ-003-primary-source-recovery-checkpoint.md`, its machine companion and action ledger, `assets/data/gc-civ-003-primary-source-state-20260903.json`, and only then the immutable #1373 release closeout. Treat PR #1373, merge `efbb1032b0c5e21ca892b3a9db17b3f7b4073e6c`, tree `1e2295ccc94d3e020b2ef0db59924d439de2aa93`, Pages run 33697357002 and Chromium run 33700567926 as the completed release checkpoint. Re-fetch current `main` before changes. Preserve `GC-CIV-003`; never resurrect `LZ-CIV-050`. For GC-CIV-003, the 19-Dec Auto, its own finality, 18-Jan positive CAM citation/requerimiento and CAM opposition are closed by primary source; preserve the actual 19-Feb result, standalone 5-Mar decree, archive request, closure service and closure finality as targeted gaps. Do not re-run broad discovery.
 
 Older topic-specific deletion audits and handoffs remain historical controls. Updating the most-recent/default pointer does not invalidate or hide them.
