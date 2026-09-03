@@ -1,0 +1,72 @@
+{
+  "schema": "por-derecho.continuity-event-action-ledger.v1",
+  "workspace_id": "PD-WS-20260902-0001",
+  "handoff_id": "PD-WCH-20260903-GCCIV003-SRC-004",
+  "control_date": "2026-09-03",
+  "topic": "GC-CIV-003 primary Decreto 000139/2018 and closure sequence recovery",
+  "repository_digest_actions": [
+    {"action":"Re-fetch main after PR #1378","state":"DONE","result":"08b2c9efeec59ce1b4009377b0f84de3cd138d8c"},
+    {"action":"Create fresh substantive branch from current main","state":"DONE","branch":"codex/gc-civ-003-decree-closure-primary-20260903"},
+    {"action":"Promote standalone 5-Mar decree from traced to primary verified","state":"DONE"},
+    {"action":"Register 13-May-2024 archive-status LAJ order","state":"DONE"},
+    {"action":"Refine bilingual GC-CIV-003 pages","state":"DONE"},
+    {"action":"Preserve immutable PR #1373 release manifests","state":"DONE"}
+  ],
+  "connected_source_scans": [
+    {"scope":"Gmail exact 1041 attachment search","state":"DONE_TARGETED_ONLY","result":"Primary Decreto 000139/2018 and 2024 DIOR recovered"},
+    {"scope":"Gmail exact CAM January source family","state":"DONE_TARGETED_ONLY","result":"24-Jan opposition and assignment-notification exhibit recovered"},
+    {"scope":"Gmail exact 1222/18 / desistimiento / 25-Apr identifiers","state":"DONE_TARGETED_ONLY","result":"Original desistimiento and conformity filings not surfaced"},
+    {"scope":"Drive exact desistimiento / 1222/18 identifiers","state":"DONE_TARGETED_ONLY","result":"No primary original filing surfaced"},
+    {"scope":"Broad Gmail/Drive rediscovery","state":"NOT_RUN_BY_GOVERNANCE"}
+  ],
+  "identity_actions": [
+    {"id":"GC-CIV-003","state":"PRESERVED_LOCKED"},
+    {"id":"PD-SP-I-0048","state":"PRESERVED_LOCKED"},
+    {"id":"PD-SP-P-0124","state":"PRESERVED_CARET_CONFIRMED"},
+    {"id":"PD-SP-P-0165","state":"PRESERVED_CARET_CONFIRMED"},
+    {"id":"LZ-CIV-050","state":"DEPRECATED_REMOVED_DO_NOT_RECREATE"}
+  ],
+  "chronology_actions": [
+    {"date":"2017-12-19","act":"Admission Auto","state":"PRIMARY_VERIFIED"},
+    {"date":"2018-01-12","act":"Providencia schedules 19-Feb","state":"PRIMARY_VERIFIED"},
+    {"date":"2018-01-18","act":"CAM citation/requerimiento","state":"PRIMARY_CONFIRMED_VIA_23JAN_LAJ_ORDER"},
+    {"date":"2018-01-24","act":"CAM opposition","state":"PRIMARY_VERIFIED_DATE_LOCKED"},
+    {"date":"2018-02-19","act":"Scheduled diligence result","state":"SOURCE_GAP"},
+    {"date":"2018-02-25","act":"CAM conformity/no-opposition to LPB desistimiento, registry 1222/18","state":"PRIMARY_CONFIRMED_VIA_5MAR_DECREE_ORIGINAL_FILING_GAP"},
+    {"date":"2018-03-05","act":"Decreto 000139/2018","state":"PRIMARY_VERIFIED"},
+    {"date":"2018-04-25T11:15","act":"Later hearing date suspended by decree","state":"PRIMARY_CONFIRMED_AS_SCHEDULED_DATE_NOT_HEARING_RESULT"},
+    {"date":"2024-05-13","act":"LAJ archive-status order","state":"PRIMARY_VERIFIED_FINALISED_ARCHIVED_AS_OF_DATE"}
+  ],
+  "publication_actions": [
+    {"action":"Update machine source state","state":"DONE"},
+    {"action":"Update primary-act source register","state":"DONE"},
+    {"action":"Update ES proceeding page","state":"DONE"},
+    {"action":"Update EN proceeding page","state":"DONE"},
+    {"action":"Write SRC-004 checkpoint and machine companion","state":"DONE"},
+    {"action":"Advance CURRENT_WORKSPACE_HANDOFF.md","state":"PENDING"},
+    {"action":"Reconcile workspace register","state":"PENDING"},
+    {"action":"Open governed PR","state":"PENDING"},
+    {"action":"CI green","state":"PENDING"},
+    {"action":"Merge with expected-head safety","state":"PENDING"},
+    {"action":"Exact merge-SHA Pages deployment","state":"PENDING"},
+    {"action":"Hosted Chromium ES/EN/source/search/negative-duplicate verification","state":"PENDING"}
+  ],
+  "open_actions": [
+    "Recover complete docket/certified index",
+    "Recover actual 19-Feb-2018 result and intervening rescheduling act",
+    "Recover original LPB desistimiento filing and exact author/signatory/representative",
+    "Recover original CAM 25-Feb-2018 conformity filing registry 1222/18",
+    "Recover service/notification of Decreto 000139/2018",
+    "Recover exact finality date/source after the five-day review route",
+    "Ingest source overlay into future deterministic Master rebuild to replace stale 02-Sep gap wording"
+  ],
+  "do_not_infer": [
+    "LPB as requesting party does not identify individual author/signatory of desistimiento",
+    "Court lawyer/procurador metadata does not prove filing authorship",
+    "Decree's review notice does not establish service or exact finality date",
+    "25-Apr hearing schedule does not establish 19-Feb result",
+    "Contemporaneous AC communications do not prove later filing authorship or misconduct",
+    "Separate Concurso 36/2012 acts remain contextual unless explicit formal link exists"
+  ],
+  "successor_bootstrap":"Continue PD-WS-20260902-0001 from PD-WCH-20260903-GCCIV003-SRC-004. The standalone Decreto 000139/2018 is PRIMARY_VERIFIED; never revert it to traced/missing. Preserve LPB party-level requester vs individual-authorship distinction and the six remaining targeted gaps."
+}
