@@ -12,6 +12,13 @@
     ripple.setAttribute('data-caixabank-concurso-ripple-loader', '20260903b');
     document.head.appendChild(ripple);
   }
+  if (current && !document.querySelector('script[data-caixabank-concurso-caret-loader]')) {
+    const caret = document.createElement('script');
+    caret.src = new URL('caixabank-concurso-caret-overlay-20260903.js?v=20260903a', current.src).href;
+    caret.async = false;
+    caret.setAttribute('data-caixabank-concurso-caret-loader', '20260903a');
+    document.head.appendChild(caret);
+  }
 
   const path = window.location.pathname.replace(/\/index\.html$/, '/');
   const localPath = path.startsWith('/por-derecho/') ? path : `/por-derecho${path.startsWith('/') ? '' : '/'}${path}`;
