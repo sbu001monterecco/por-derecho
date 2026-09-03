@@ -1,0 +1,1 @@
+The page-separated OCR files in this directory are source derivatives of the 38-page Montelanza 2008 Mercantile Registry filing. The registry scan controls. The manifest records hashes and visually verified pages. Placeholder content is not acceptable for publication; the final branch validator requires all 38 page markers and minimum source lengths.
