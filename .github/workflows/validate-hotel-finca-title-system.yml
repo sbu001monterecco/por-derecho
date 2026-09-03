@@ -1,0 +1,120 @@
+name: Validate hotel-finca title-system governance
+
+on:
+  pull_request:
+    paths:
+      - 'CURRENT_HANDOVER.md'
+      - 'CURRENT_HANDOVER_HOTEL_FINCA_TITLE_SYSTEM_03SEP2026.md'
+      - 'archive/*HOTEL_FINCA*'
+      - 'assets/hotel-finca-title-system-*'
+      - 'assets/site.js'
+      - 'data/hotel-finca-title-system-*'
+      - 'docs/acosta-matos/*HOTEL_FINCA*'
+      - 'docs/cuatrecasas/**/*HOTEL_FINCA*'
+      - 'docs/cuatrecasas/*INSTRUMENTALITY*'
+      - 'es/fincas-hoteleras-clasificacion-lesion-titulo-sobre-titulo/**'
+      - 'en/hotel-fincas-asset-classification-title-on-title-injury/**'
+      - 'publication-manifests/*hotel-finca*'
+      - 'sitemap-hotel-finca-title-system.xml'
+      - 'robots.txt'
+  push:
+    branches: [main]
+    paths:
+      - 'CURRENT_HANDOVER.md'
+      - 'CURRENT_HANDOVER_HOTEL_FINCA_TITLE_SYSTEM_03SEP2026.md'
+      - 'archive/*HOTEL_FINCA*'
+      - 'assets/hotel-finca-title-system-*'
+      - 'assets/site.js'
+      - 'data/hotel-finca-title-system-*'
+      - 'docs/acosta-matos/*HOTEL_FINCA*'
+      - 'docs/cuatrecasas/**/*HOTEL_FINCA*'
+      - 'docs/cuatrecasas/*INSTRUMENTALITY*'
+      - 'es/fincas-hoteleras-clasificacion-lesion-titulo-sobre-titulo/**'
+      - 'en/hotel-fincas-asset-classification-title-on-title-injury/**'
+      - 'publication-manifests/*hotel-finca*'
+      - 'sitemap-hotel-finca-title-system.xml'
+      - 'robots.txt'
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Required files
+        run: |
+          test -f CURRENT_HANDOVER_HOTEL_FINCA_TITLE_SYSTEM_03SEP2026.md
+          test -f archive/HOTEL_FINCA_ASSET_CLASSIFICATION_TITLE_ON_TITLE_INJURY_UNITARY_CONTROL_03SEP2026.md
+          test -f archive/CORRECTION_REGISTER_ADDENDUM_HOTEL_FINCA_SYSTEM_03SEP2026.md
+          test -f archive/PROCEEDINGS_INTERCONNECTIVITY_ADDENDUM_HOTEL_FINCA_SYSTEM_03SEP2026.md
+          test -f docs/cuatrecasas/2026-09-03_LA_LAGUNA_CONCURSO36_CROSS_PROCEEDING_INSTRUMENTALITY_CONTROL.md
+          test -f docs/cuatrecasas/DP748/2026-09-03_DP748_COMPLETED_ESTAFA_ALL_HOTEL_FINCA_SCOPE_SUPPLEMENT.md
+          test -f docs/cuatrecasas/ETJ163/2026-09-03_ETJ163_EXACT_8584_WIDER_TITLE_SYSTEM_CONTEXT_SUPPLEMENT.md
+          test -f docs/acosta-matos/2026-09-03_ALL_HOTEL_FINCA_TITLE_SYSTEM_MULTITRACK_RIPPLE_CONTROL.md
+          test -f es/fincas-hoteleras-clasificacion-lesion-titulo-sobre-titulo/index.html
+          test -f en/hotel-fincas-asset-classification-title-on-title-injury/index.html
+      - name: JavaScript syntax
+        run: |
+          node --check assets/site.js
+          node --check assets/hotel-finca-title-system-interlink-20260903.js
+          node --check assets/hotel-finca-title-system-search-extension-20260903.js
+      - name: JSON and sitemap syntax
+        run: |
+          python - <<'PY'
+          import json
+          import xml.etree.ElementTree as ET
+          from pathlib import Path
+          for p in [
+              Path('data/hotel-finca-title-system-cross-proceedings-map-20260903.json'),
+              Path('publication-manifests/2026-09-03-hotel-finca-title-system-governance.json'),
+          ]:
+              json.loads(p.read_text(encoding='utf-8'))
+          ET.parse('sitemap-hotel-finca-title-system.xml')
+          print('structured files valid')
+          PY
+      - name: Canonical and reciprocal language routes
+        run: |
+          grep -Fq 'https://sbu001monterecco.github.io/por-derecho/es/fincas-hoteleras-clasificacion-lesion-titulo-sobre-titulo/' es/fincas-hoteleras-clasificacion-lesion-titulo-sobre-titulo/index.html
+          grep -Fq 'https://sbu001monterecco.github.io/por-derecho/en/hotel-fincas-asset-classification-title-on-title-injury/' en/hotel-fincas-asset-classification-title-on-title-injury/index.html
+          grep -Fq '../../en/hotel-fincas-asset-classification-title-on-title-injury/' es/fincas-hoteleras-clasificacion-lesion-titulo-sobre-titulo/index.html
+          grep -Fq '../../es/fincas-hoteleras-clasificacion-lesion-titulo-sobre-titulo/' en/hotel-fincas-asset-classification-title-on-title-injury/index.html
+          grep -Fq 'sitemap-hotel-finca-title-system.xml' robots.txt
+      - name: Scope, position and boundary invariants
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+
+          def text(path):
+              return Path(path).read_text(encoding='utf-8').casefold()
+
+          checks = [
+              ('handover scope', 'CURRENT_HANDOVER_HOTEL_FINCA_TITLE_SYSTEM_03SEP2026.md', 'finca 8584 is the worked etj example'),
+              ('two source-locked titles', 'archive/HOTEL_FINCA_ASSET_CLASSIFICATION_TITLE_ON_TITLE_INJURY_UNITARY_CONTROL_03SEP2026.md', 'two matkator hotel titles presently source-locked'),
+              ('completed-offence party classification', 'archive/HOTEL_FINCA_ASSET_CLASSIFICATION_TITLE_ON_TITLE_INJURY_UNITARY_CONTROL_03SEP2026.md', 'party_position / alleged_completed_offence'),
+              ('non-adjudicated boundary', 'archive/HOTEL_FINCA_ASSET_CLASSIFICATION_TITLE_ON_TITLE_INJURY_UNITARY_CONTROL_03SEP2026.md', 'adjudicated finding'),
+              ('English title-on-title term', 'en/hotel-fincas-asset-classification-title-on-title-injury/index.html', 'title-on-title injury'),
+              ('Spanish title-on-title term', 'es/fincas-hoteleras-clasificacion-lesion-titulo-sobre-titulo/index.html', 'lesión jurídica título-sobre-título'),
+              ('DP748 wider scope', 'docs/cuatrecasas/DP748/2026-09-03_DP748_COMPLETED_ESTAFA_ALL_HOTEL_FINCA_SCOPE_SUPPLEMENT.md', 'must not be read as limiting the factual, patrimonial or criminal context to that finca'),
+              ('ETJ exact-object boundary', 'docs/cuatrecasas/ETJ163/2026-09-03_ETJ163_EXACT_8584_WIDER_TITLE_SYSTEM_CONTEXT_SUPPLEMENT.md', 'does not make finca 8588'),
+              ('consensual-acquisition boundary', 'docs/acosta-matos/2026-09-03_ALL_HOTEL_FINCA_TITLE_SYSTEM_MULTITRACK_RIPPLE_CONTROL.md', 'verified consensual acquisition'),
+              ('legal-person boundary', 'CURRENT_HANDOVER_HOTEL_FINCA_TITLE_SYSTEM_03SEP2026.md', 'no derivative loss merges legal persons or estates'),
+          ]
+          failures = []
+          for label, path, needle in checks:
+              if needle.casefold() not in text(path):
+                  failures.append(f'{label}: missing {needle!r} in {path}')
+          if failures:
+              raise SystemExit('\n'.join(failures))
+          print('scope and legal-boundary invariants valid')
+          PY
+      - name: Loader continuity
+        run: |
+          grep -Fq 'site-pre-matkator-8584-20260903.js' assets/site.js
+          grep -Fq 'matkator-8584-hotel-title-multitrack-20260903.js' assets/site.js
+          grep -Fq 'hotel-finca-title-system-interlink-20260903.js' assets/site.js
+          grep -Fq 'hotel-finca-title-system-search-extension-20260903.js' assets/site.js
