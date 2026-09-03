@@ -1,0 +1,59 @@
+{
+  "schema_version": "1.0.0",
+  "dataset": "institutional-communications-register-mf-supplement-20260903",
+  "control_date": "2026-09-03",
+  "base_main_sha": "2f2e9a82fde1cb5af955dc262988c185cead4277",
+  "supplement_to": "assets/data/institutional-communications-register-v1.json",
+  "append_only": true,
+  "logical_dataset_rule": "Load after the canonical register; event IDs must be unique and must not replace existing rows.",
+  "events": [
+    {
+      "attribution_state": "SOURCE_PROVED_SIGNATORY",
+      "channel": "SIGNED_DECREE",
+      "cohort": "CURATED_SOURCE_PROVED_EVENT",
+      "direction": "INBOUND_FROM_INSTITUTION",
+      "event_date": "2025-09-19",
+      "event_id": "PD-SP-EVT-0158",
+      "evidence_state": {
+        "delivery": "ONLY_AS_STATED_IN_SOURCE",
+        "destination": "ONLY_AS_STATED_IN_SOURCE",
+        "filing": "NOT_INFERRED_UNLESS_EXPRESSLY_STATED",
+        "internal_association": "NOT_ESTABLISHED_UNLESS_EXPRESSLY_STATED",
+        "merits": "PROCEDURAL_ROUTING_ACT_ONLY_NOT_TRUTH_OF_UNDERLYING_ALLEGATIONS",
+        "registration": "NOT_INFERRED_UNLESS_EXPRESSLY_STATED",
+        "substantive_examination": "NOT_ESTABLISHED_UNLESS_EXPRESSLY_STATED",
+        "transmission": "DECREE_LOCATED_IN_LATER_OFFICIAL_NOTICE_PACKAGE"
+      },
+      "institution_id": "PD-SP-I-0002",
+      "layer": "OFFICIAL_ACT_OR_CORRESPONDENCE",
+      "linked_transport_event_ids": ["PD-SP-EVT-0121", "PD-SP-EVT-1058"],
+      "matter_references": ["EG 352/2025", "N.R. 1353", "R.S. 1542"],
+      "master_ids": ["GC-FIS-015"],
+      "office": "Fiscalía Especial contra la Corrupción y la Criminalidad Organizada",
+      "official_reference": "EG 352/2025 / N.R. 1353 / decreto 19-09-2025",
+      "proof_level": "SIGNED_ACT_LOCATED_FULL_TEXT_MANUALLY_TRANSCRIBED_AND_VISUALLY_CHECKED",
+      "proves": [
+        "The signed decree dated 19 September 2025 orders remittal of the complaint to the Fiscalía de Área de Arrecife-Puerto del Rosario.",
+        "The decree is distinct from the later notification/transmission event."
+      ],
+      "does_not_prove": [
+        "Receipt, incorporation, examination or outcome by the receiving office in Arrecife.",
+        "Acceptance of the allegations, a merits finding, wrongdoing, coordination or criminal liability."
+      ],
+      "public_summary": "Signed 19 September 2025 decree records lack of Anticorrupción competence and orders remittal to the Fiscalía de Área de Arrecife-Puerto del Rosario.",
+      "record_type": "OFFICIAL_ROUTING_ACT",
+      "signatory_person_label": "Antonio Romeral Moraleda",
+      "source_integrity": {
+        "canonical_custody_id": "PD-SP-CUST-0001",
+        "private_original_sha256": "4962e7457241141d936b2d9c1cde33189f0921ec238775e59a60485475a54a23",
+        "private_original_public": false,
+        "prepared_public_redacted_derivative_sha256": "e29710fe14e5611f0ea3936555a61821d5fdd0bfd3bb7a1b39159ff65ee54fe1",
+        "prepared_public_redacted_derivative_state": "HASH_LOCKED_LOCALLY_NOT_YET_COMMITTED_BINARY",
+        "transcription_path": "evidence/fiscalia/eg-352-2025/EG_352_2025_FULL_TRANSCRIPTION_ES.md",
+        "status": "PRIVATE_ORIGINAL_RETAINED_CHECKED_FULL_TEXT_PUBLIC_DERIVATIVE_BINARY_PENDING"
+      },
+      "source_key": "CURATED:PD-SP-EVT-0158",
+      "transport_link_state": "DECREE_SEPARATE_FROM_26_SEPTEMBER_NOTIFICATION_PD-SP-EVT-0121_AND_MAILBOX_TRANSPORT_PD-SP-EVT-1058"
+    }
+  ]
+}
