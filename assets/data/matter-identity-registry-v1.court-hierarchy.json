@@ -2,7 +2,7 @@
   "schema": "por-derecho.matter-identity-registry.part.v1",
   "registry_id": "PD-SP-IDENTITY-REGISTRY-001",
   "type": "INSTITUTION",
-  "scope": "Parent court identities whose sections or court positions already have separate canonical CAEPR institution identities",
+  "scope": "Source-identified court identities that require a separate canonical CAEPR institution object, including parent courts and exact source-printed court organs",
   "records": [
     {
       "id": "PD-SP-I-0044",
@@ -37,6 +37,28 @@
         }
       ],
       "identity_boundary": "Master institutional identity for the Audiencia Provincial de Las Palmas. It groups separately identified sections for navigation and continuity only. It does not identify the competent section, panel, judge, magistrate, LAJ, prosecutor, allocation, receipt, knowledge, merits or outcome in any particular proceeding. Every section and every source-identified office-holder retains a separate immutable CAEPR identity and act-specific attribution."
+    },
+    {
+      "id": "PD-SP-I-0049",
+      "type": "INSTITUTION",
+      "name": "Juzgado de Primera Instancia nº 27 de Valencia",
+      "aliases": [
+        "Juzgado de Primera Instancia número 27 de Valencia",
+        "JPI nº 27 Valencia",
+        "JPI no.27 Valencia",
+        "^I-0049",
+        "^0049"
+      ],
+      "routes": {
+        "es": "/es/reclamacion-caixabank-valencia/senalamiento-28-enero-2027/",
+        "en": "/en/caixabank-valencia-claim/"
+      },
+      "identity_resolution": "CARET_CONFIRMED",
+      "identity_sources": [
+        "Signed Diligencia de ordenación dated 6-Nov-2025 in Procedimiento Ordinario 1859/2023-9, preserved in the controlled corpus and published only as redacted public pages"
+      ],
+      "date_boundary": "Exact court-organ name as printed on the signed 6-Nov-2025 source. No post-reorganisation successor naming is inferred without a sufficient primary source.",
+      "identity_boundary": "Court-organ identity only. It does not identify an individual judge, LAJ, panel or office-holder for any act and does not transfer knowledge, merits, conduct, intent, responsibility or any later procedural allocation."
     }
   ]
 }
