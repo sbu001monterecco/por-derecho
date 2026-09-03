@@ -17,12 +17,12 @@
     '/es/matkator-dp552-dp711-etj163-continuidad/','/en/matkator-dp552-dp711-etj163-continuity/',
     '/es/registro-activos-derechos-matkator/','/en/matkator-asset-rights-register/',
     '/es/ingenieria-inversa-360-cadena-sun-park/','/en/reverse-engineering-360-sun-park-chain/',
-    '/es/ingenieria-forense-criminal-sun-park/','/en/sun-park-criminal-forensic-engineering/',
-    '/es/toma-control-sun-park-7-junio-2018/','/en/sun-park-control-takeover-7-june-2018/',
-    '/es/adjudicacion-2022-reconstruccion-documental/','/en/adjudication-2022-documentary-reconstruction/'
+    '/es/ingenieria-forense-criminal-sun-park/','/en/sun-park-criminal-engineering-investigation/',
+    '/es/toma-control-sun-park-7-junio-2018/','/en/sun-park-takeover-7-june-2018/',
+    '/es/adjudicacion-2022-reconstruccion-documental/','/en/2022-adjudication-documentary-reconstruction/'
   ];
   const relevantFragments = [
-    'concurso-36-2012','ona-hotels','calificacion','rpl-2523','rpl-3304','rpl-3319',
+    'concurso-36-2012','insolvency-36-2012','ona-hotels','calificacion','rpl-2523','rpl-3304','rpl-3319',
     'administrador-concursal','acosta-matos','hotel-new-trend','canarian-hospitality','mynd',
     'ricpe','ric-private-equity','feder','incentivos','intervencion','aeat','onif','cnmv',
     'fiscalia','eg-745','yaiza','asset-recovery','recuperacion-activos'
@@ -80,7 +80,7 @@
   const t = lang === 'en' ? en : es;
   const hrefs = lang === 'en' ? {
     etj:'/por-derecho/en/etj-163-2020/', dp:'/por-derecho/en/dp-748-2026/', mat:'/por-derecho/en/matkator-dp552-dp711-etj163-continuity/',
-    c36:'/por-derecho/en/concurso-36-2012-liquidation-plan-judge-laj-audit/', acosta:'/por-derecho/en/acosta-matos-perimeter/'
+    c36:'/por-derecho/en/insolvency-36-2012-liquidation-plan-judge-laj-audit/', acosta:'/por-derecho/en/acosta-matos-perimeter/'
   } : {
     etj:'/por-derecho/es/etj-163-2020/', dp:'/por-derecho/es/dp-748-2026/', mat:'/por-derecho/es/matkator-dp552-dp711-etj163-continuidad/',
     c36:'/por-derecho/es/concurso-36-2012-auditoria-plan-liquidacion-juez-laj/', acosta:'/por-derecho/es/acosta-matos-perimetro/'
