@@ -26,6 +26,7 @@
    * CUATRECASAS_STEP4_PUBLICATION_NODE_20260902
    * CUATRECASAS_STEP4_SEARCH_EXTENSION_20260902
    * CUATRECASAS_DP748_TRANSPARENCY_APPEAL_20260902
+   * CUATRECASAS_DP748_ETJ163_RECENT_PRIMARY_CLUSTER_20260903
    */
 
   const loadMasterProceedingsPublication = () => {
@@ -206,13 +207,19 @@
     const relevant = path.includes('/es/cuatrecasas-sun-park/')
       || path.includes('/en/cuatrecasas-sun-park/')
       || path.includes('/es/cuatrecasas-dp748-accion-civil/')
-      || path.includes('/en/cuatrecasas-dp748-civil-action/');
+      || path.includes('/en/cuatrecasas-dp748-civil-action/')
+      || path.includes('/es/dp-748-2026/')
+      || path.includes('/en/dp-748-2026/')
+      || path.includes('/es/etj-163-2020/')
+      || path.includes('/en/etj-163-2020/')
+      || path.includes('/es/cuatrecasas-dp748-transparencia-2026/')
+      || path.includes('/en/cuatrecasas-dp748-transparency-2026/');
     if (!relevant) return;
     if (document.querySelector('script[data-cuatrecasas-dp748-transparency-loader]')) return;
     const transparency = document.createElement('script');
-    transparency.src = new URL('cuatrecasas-dp748-transparency-20260902.js?v=20260902a', current.src).href;
+    transparency.src = new URL('cuatrecasas-dp748-transparency-20260902.js?v=20260903a', current.src).href;
     transparency.async = false;
-    transparency.setAttribute('data-cuatrecasas-dp748-transparency-loader', '20260902a');
+    transparency.setAttribute('data-cuatrecasas-dp748-transparency-loader', '20260903a');
     document.head.appendChild(transparency);
   };
 
