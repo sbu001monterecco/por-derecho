@@ -1,4 +1,26 @@
 {
+  "schema": "por-derecho.publication-state.v1",
+  "schema_version": "1.0.0",
+  "publication_id": "PD-PUB-MAT8584-20260903-01",
+  "control_date": "2026-09-03",
+  "current_state": "MERGED",
+  "expected_routes": {
+    "es": [
+      "es/matkator-8584-titulo-hotel-remate-restitucion/index.html"
+    ],
+    "en": [
+      "en/matkator-8584-hotel-title-remate-restitution/index.html"
+    ]
+  },
+  "owner": "Por Derecho repository governance",
+  "validation": {
+    "evidence": [
+      "Principal release PR #1407 is recorded as merged",
+      "Repository verification records source presence on main, legacy-loader preservation and prior-handover preservation",
+      "Direct Pages route readback remains pending and is not claimed"
+    ]
+  },
+  "merge_sha": "f53f8a044aac804281aea869faa5b4eb7eeb1cc4",
   "manifest_id": "PD-PUB-MAT8584-20260903-01",
   "title": "Matkator finca 8584 hotel-title / remate / restitution multitrack release",
   "created": "2026-09-03",
