@@ -1,9 +1,32 @@
 {
   "schema": "por-derecho.publication-manifest.v1",
-  "control_id": "PD-PUB-CUATRECASAS-DP748-ETJ163-20260903-01",
-  "date": "2026-09-03",
-  "status": "RELEASE_CANDIDATE_LIVE_STATE_REQUIRES_DEPLOYMENT_READBACK",
+  "publication_id": "PD-PUB-CUATRECASAS-DP748-ETJ163-20260903-01",
+  "owner": "Por Derecho / Project Sun Rock",
+  "current_state": "DEPLOYED",
+  "control_date": "2026-09-03",
   "workspace": "PD-WS-20260902-0001",
+  "publication_type": "source-safe bilingual continuity correction and current procedural overlay",
+  "controlling_pr": 1397,
+  "merge_sha": "024627b31d11f212cc8774d8f4abf00195cbc703",
+  "expected_routes": {
+    "es": [
+      "es/cuatrecasas-etj-continuity/index.html",
+      "es/cambiario-1048-2019/index.html",
+      "es/etj-163-2020/index.html"
+    ],
+    "en": [
+      "en/cuatrecasas-etj-continuity/index.html",
+      "en/cambiario-1048-2019/index.html",
+      "en/etj-163-2020/index.html"
+    ]
+  },
+  "expected_source_files": [
+    "archive/CUATRECASAS_DP748_ETJ163_COUNSEL_COORDINATION_CORRECTION_03SEP2026.md",
+    "CURRENT_HANDOVER_DP748_ETJ163_RECENT_CLUSTER_03SEP2026.md",
+    "archive/CUATRECASAS_DP748_ETJ163_UNITARY_REDIGEST_20260903.md",
+    "docs/cuatrecasas/DP748/2026-09-01_auto_16jul2026_fulltext_source_safe.md",
+    "docs/cuatrecasas/ETJ163/2026-09-03_cuatrecasas_impugnacion_reposicion_fulltext_source_safe.md"
+  ],
   "governance": [
     "ANTI_CONFLATION_IS_NOT_ANTI_CONNECTIVITY",
     "INVOICING_IS_NOT_JUDICIAL_PURSUIT",
@@ -11,18 +34,6 @@
     "DISCUSSION_OR_CIRCULATION_IS_NOT_COUNSEL_ADOPTION",
     "PARTY_FILING_IS_NOT_JUDICIAL_FINDING",
     "PRIVILEGED_COUNSEL_MATERIAL_NOT_PUBLIC"
-  ],
-  "repository_records": [
-    "archive/CUATRECASAS_DP748_ETJ163_COUNSEL_COORDINATION_CORRECTION_03SEP2026.md",
-    "CURRENT_HANDOVER_DP748_ETJ163_RECENT_CLUSTER_03SEP2026.md"
-  ],
-  "public_routes": [
-    "/en/cuatrecasas-etj-continuity/",
-    "/es/cuatrecasas-etj-continuity/",
-    "/en/cambiario-1048-2019/",
-    "/es/cambiario-1048-2019/",
-    "/en/etj-163-2020/",
-    "/es/etj-163-2020/"
   ],
   "controlled_finding": "The reviewed corpus documents invoices, proformas and extrajudicial payment discussions with Aweswell/Gil, but no judicial fee-recovery action by Cuatrecasas against Aweswell has been identified in the controlled Spain/UK corpus as at 3 September 2026. The identified judicial route was against Matkator through Cambiario 1048/2019 and ETJ 163/2020.",
   "non_findings": [
@@ -42,14 +53,28 @@
     "CONFIDENTIAL_SETTLEMENT_POSITIONS",
     "PRIVILEGED_EMAIL_CHAINS"
   ],
-  "validation_required": [
-    "BRANCH_DIFF_REVIEW",
-    "PR_MERGE_TO_MAIN",
-    "PAGES_DEPLOYMENT_SUCCESS",
-    "HTTP_200_ALL_PUBLIC_ROUTES",
-    "LIVE_TEXT_READBACK_CORRECTED_FINDING",
-    "BILINGUAL_RECIPROCAL_LINKS",
-    "NO_PRIVILEGED_TEXT_PUBLICATION"
-  ],
-  "lifecycle_rule": "This manifest records the release scope and required checks. Current merge and live status must be verified from GitHub main and Pages at the time of use; this file does not self-certify deployment."
+  "validation": {
+    "evidence": [
+      "PR 1397 source-safe diff reviewed before merge.",
+      "PR 1397 squash-merged to main at 024627b31d11f212cc8774d8f4abf00195cbc703.",
+      "Private-source publication governance audit on merge SHA: success.",
+      "GitHub Pages build and deployment run 33788640324 for merge SHA: success."
+    ],
+    "private_source_publication_governance": "PASS",
+    "pages_build_and_deploy": "PASS",
+    "manifest_schema": "CORRECTED_IN_SUCCESSOR_RELEASE"
+  },
+  "deployment_evidence": {
+    "provider": "GitHub Pages",
+    "workflow_run_id": 33788640324,
+    "deployed_sha": "024627b31d11f212cc8774d8f4abf00195cbc703",
+    "artifact_id": 9906427781,
+    "artifact_sha256": "62b9d9a0c8f72ba084a4e7d442529aaac5ee424a4d513001b94bdf49c7f1a73f",
+    "result": "success"
+  },
+  "live_verification": {
+    "status": "DEPLOYED_NOT_INDEPENDENTLY_LIVE_READBACK",
+    "note": "Exact-SHA GitHub Pages deployment is verified. Independent public-edge text readback was not obtained in the current tool session; search-engine indexing may lag. LIVE_VERIFIED is therefore not claimed by this manifest."
+  },
+  "lifecycle_rule": "This manifest records the release scope, merge and exact-SHA deployment. LIVE_VERIFIED and DELETION_SAFE require independent public-edge readback under the publication-integrity governance rules."
 }
