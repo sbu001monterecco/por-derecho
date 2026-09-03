@@ -1,0 +1,21 @@
+schema=por-derecho.reintegration-transition.v1
+publication_id=PD-SP-HISTORIC-PROCEEDINGS-AUTHORITY-REINTEGRATION-20260903-01
+control_date=2026-09-03
+state=RELEASE_CANDIDATE_VALIDATION
+base_main_sha=91ab9c6c74a95d31d3368527484eb20730b86c9f
+row_count=308 unique_path_count=308 candidate_delta_file_count=308
+missing_required=[]
+production={'merged_to_main': False, 'merge_sha': None, 'pages_run_id': None, 'live_browser_verified': False}
+lz_civ_050_en_exists=False
+lz_civ_050_es_exists=False
+invalid_anchor_count=0
+absent_violation_count=0
+hash_mismatch_count=5
+ABSENT_VIOLATIONS:
+HASH_MISMATCHES:
+.github/workflows/backfill-historic-proceedings-search-20260902.yml :: expected=724aadbc84f217a2b566d236573bc315cd119424ac1f6bfcdf15a30c198b1e39 :: actual=94883eb62245a2a999a39300667dc8a7eb5d99b14cf36af23859c85bc72cd49c
+en/historic-arrecife-justice-authority-register/index.html :: expected=74126cdc65893cc5bae2be8bf9765a3420aecf134a81e819889bdee789fdb2cb :: actual=a55ffe80deaeda6db6e3bf5ac8c7b5b5ea19bcd36c8df96236c372b7955c97c6
+en/proceedings/gc-civ-003/index.html :: expected=7c2c4e502fd702506d807e7ffd656a2b71a78d3a74e2d06ce7db26cfd3e8dacc :: actual=b5bfd0ae672028250c98074838c57ed776b3494bed7e513cca93fc46709a6f87
+es/procedimientos/gc-civ-003/index.html :: expected=cd4565a9ebd639c2614d67315a09048c5d875dd1e30eb0cc23e2814df797a901 :: actual=ce630cbd47534997e96ef98f3db1dc5024e9adba5e5d323823ded7820b513c49
+es/registro-autoridad-historica-arrecife/index.html :: expected=353c398829f80e41b0e3d66462bb8767cabafee8f99a05c21f776fba569a6cda :: actual=a98ecfea04d246b830511f0db9981f6247d77e2625f1af8b50658d468655b745
+INVALID_ANCHORS:
