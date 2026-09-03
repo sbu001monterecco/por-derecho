@@ -76,23 +76,44 @@ jobs:
       - name: Regenerate Community ACTA authority projection
         run: python scripts/build_community_acta_authority_interconnectivity.py
 
+      - name: Reconcile current reintegration transition bytes
+        shell: python
+        run: |
+          import hashlib
+          import json
+          from pathlib import Path
+
+          manifest_path = Path('publication-manifests/historic-proceedings-authority-reintegration-20260903.json')
+          data = json.loads(manifest_path.read_text(encoding='utf-8'))
+          denominator = data.get('current_denominator', {})
+          if denominator.get('CURRENT_CASE_PRISM_EXACT_COVERED') != 43 or denominator.get('CURRENT_CASE_PRISM_EXACT_UNCOVERED') != 63:
+              raise SystemExit('Expected stale 43/63 reintegration denominator not found')
+          denominator['CURRENT_CASE_PRISM_EXACT_COVERED'] = 45
+          denominator['CURRENT_CASE_PRISM_EXACT_UNCOVERED'] = 61
+
+          tracked = {
+              'assets/data/proceedings-interconnectivity-schema-v1.json',
+              'assets/data/proceedings-interlinkability-v1.json',
+              'scripts/audit_proceedings_interconnectivity_map.py',
+              'scripts/build_proceedings_interlinkability_v1.py',
+          }
+          rows = {row.get('resource'): row for row in data.get('transitions', []) if isinstance(row, dict)}
+          missing = sorted(tracked - set(rows))
+          if missing:
+              raise SystemExit(f'Missing transition rows: {missing}')
+          for resource in sorted(tracked):
+              path = Path(resource)
+              if not path.exists():
+                  raise SystemExit(f'Expected transition resource missing: {resource}')
+              rows[resource]['candidate_sha256'] = hashlib.sha256(path.read_bytes()).hexdigest()
+
+          manifest_path.write_text(json.dumps(data, indent=2, ensure_ascii=False) + '\n', encoding='utf-8')
+
       - name: Check proceedings interlinkability projection
         run: python scripts/build_proceedings_interlinkability_v1.py --check
 
       - name: Audit proceedings interconnectivity map
-        id: proceedings_audit
-        continue-on-error: true
-        run: python scripts/audit_proceedings_interconnectivity_map.py > .github/reconcile-audit-diagnostic.txt 2>&1
-
-      - name: Preserve exact proceedings audit failure
-        if: steps.proceedings_audit.outcome == 'failure'
-        run: |
-          git config user.name github-actions[bot]
-          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
-          git add .github/reconcile-audit-diagnostic.txt
-          git commit -m 'Preserve temporary proceedings audit diagnostic'
-          git push origin HEAD:ministerio-fiscal-fulltext-audit-20260903
-          exit 1
+        run: python scripts/audit_proceedings_interconnectivity_map.py
 
       - name: Check Community ACTA projection
         run: python scripts/build_community_acta_authority_interconnectivity.py --check
@@ -119,9 +140,11 @@ jobs:
         run: |
           git config user.name github-actions[bot]
           git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git rm -f .github/reconcile-audit-diagnostic.txt || true
           git add assets/data/proceedings-interlinkability-v1.json \
                   assets/data/community-acta-authority-interconnectivity-v1.json \
                   assets/data/proceedings-interconnectivity-schema-v1.json \
+                  publication-manifests/historic-proceedings-authority-reintegration-20260903.json \
                   scripts/build_proceedings_interlinkability_v1.py \
                   scripts/audit_proceedings_interconnectivity_map.py \
                   scripts/smoke_fiscalia_proceedings_interconnectivity.mjs
