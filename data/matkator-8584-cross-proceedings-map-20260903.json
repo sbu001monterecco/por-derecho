@@ -1,0 +1,38 @@
+{
+  "graph_id": "PD-GRAPH-MAT8584-20260903",
+  "title": "Finca 8584 hotel-title / remate / restitution cross-proceedings map",
+  "created": "2026-09-03",
+  "nodes": [
+    {"id":"C36","label":"Concurso 36/2012","type":"INSOLVENCY","status":"ACTIVE_CONSEQUENCES","boundary":"LPB estate is not finca 8584"},
+    {"id":"CONTROL2018","label":"7 June 2018 control / preservation / funded exit","type":"EVENT_CLUSTER","status":"MIXED_VERIFIED_AND_ALLEGED"},
+    {"id":"FORMAL2022","label":"2022 CAM→HNT formalisation / MYND operation","type":"CORPORATE_OPERATIONAL_CLUSTER","status":"DOCUMENTED_WITH_OPEN_AUTHORITY_QUESTIONS"},
+    {"id":"DP711","label":"DP 552/2025 → DP 711/2025","type":"CRIMINAL","status":"APPEAL_RESULT_NOT_LOCATED","role":"predicate physical/operational allegations"},
+    {"id":"CAMBIARIO","label":"Cambiario 1048/2019","type":"CIVIL","status":"TITLE_SOURCE","role":"monetary-title formation"},
+    {"id":"ETJ","label":"ETJ 163/2020","type":"CIVIL_EXECUTION","status":"ACTIVE","role":"auction/adjudication/possible cession of finca 8584"},
+    {"id":"DP748","label":"DP 748/2026","type":"CRIMINAL","status":"PROVISIONAL_DISMISSAL_NON_FINAL","role":"alleged autonomous criminal relevance of later procedural conduct"},
+    {"id":"ACOSTA_MULTI","label":"Acosta Matos / HNT / Canarian Hospitality multitrack","type":"CRIMINAL_REGULATORY_RECOVERY","status":"MULTIPLE_OPEN_TRACKS"},
+    {"id":"C36_APPEALS","label":"RPL 2523/2025 · RPL 3304/2025 · RPL 3319/2025","type":"APPELLATE_CONCURSAL","status":"CURRENT_CONTROLS_APPLY"}
+  ],
+  "edges": [
+    {"from":"C36","to":"CONTROL2018","relation":"productive_system_and_preservation_context","classification":"DOCUMENTARY_FACT_PLUS_PARTY_ALLEGATION","does_not_prove":"Matkator title entered LPB estate"},
+    {"from":"CONTROL2018","to":"FORMAL2022","relation":"control_works_project_formalisation_sequence","classification":"MIXED","does_not_prove":"single criminal agreement"},
+    {"from":"FORMAL2022","to":"DP711","relation":"alleged incorporation and exploitation of Matkator property","classification":"PARTY_ALLEGATION","does_not_prove":"final criminal liability"},
+    {"from":"CAMBIARIO","to":"ETJ","relation":"procedural_lineage","classification":"VERIFIED_PROCEDURAL_FACT","does_not_prove":"criminal invalidity"},
+    {"from":"DP711","to":"ETJ","relation":"predicate hotel_possession_restitution_context","classification":"VERIFIED_PROCEEDING_PLUS_ALLEGED_FACTS","does_not_prove":"automatic suspension"},
+    {"from":"ETJ","to":"DP748","relation":"later_procedural_conduct_under_criminal_review","classification":"VERIFIED_PROCEDURAL_CONNECTION","does_not_prove":"procedural fraud"},
+    {"from":"ETJ","to":"ACOSTA_MULTI","relation":"specific_terminal_beneficiary_hypothesis","classification":"EVIDENCE_BASED_INFERENCE","does_not_prove":"formal assignee or concert"},
+    {"from":"DP711","to":"ACOSTA_MULTI","relation":"underlying_criminal_regulatory_recovery_actions","classification":"VERIFIED_TRACKS_PLUS_PARTY_ALLEGATIONS","does_not_prove":"collective guilt"},
+    {"from":"ETJ","to":"C36_APPEALS","relation":"productive_unit_claim_recovery_and_accountability_consequence","classification":"EVIDENCE_BASED_INFERENCE","does_not_prove":"8584 is mass property"},
+    {"from":"C36","to":"C36_APPEALS","relation":"appellate_and_accountability_continuity","classification":"VERIFIED_PROCEDURAL_CONTEXT","does_not_prove":"merits outcome"}
+  ],
+  "mandatory_questions": [
+    "What physical hotel space corresponds to finca 8584 today?",
+    "Who possesses, controls access to and operates that space?",
+    "What owner/operator authority is relied upon?",
+    "Who receives the associated hotel revenue?",
+    "What is the current adjudication/cession status?",
+    "Who is the formal recipient and who is the real or terminal beneficiary?",
+    "How would transfer affect restitution, restoration, accounting and standing?",
+    "What LPB estate rights, claims or value consequences arise without importing the title into masa activa?"
+  ]
+}
