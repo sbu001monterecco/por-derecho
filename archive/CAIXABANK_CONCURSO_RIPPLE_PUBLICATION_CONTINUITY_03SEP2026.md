@@ -19,11 +19,12 @@ Canonical new routes:
 - `/es/caixabank-concurso-efecto-domino/`
 - `/en/caixabank-insolvency-ripple/`
 
-Reusable public overlay:
+Reusable public overlays:
 
 - `assets/caixabank-concurso-ripple-interconnect-20260903.js`
+- `assets/caixabank-concurso-caret-overlay-20260903.js`
 
-The overlay is applied only to an explicit ES/EN route allow-list covering:
+The ripple overlay is applied only to an explicit ES/EN route allow-list covering:
 
 - CaixaBank Valencia claim;
 - LPB / Concurso 36/2012 insolvency hub;
@@ -33,7 +34,7 @@ The overlay is applied only to an explicit ES/EN route allow-list covering:
 - administrator-removal RPL 3304/3319 dossier;
 - administrator overview and removal/fees pages.
 
-The overlay is loaded through the already universal `borja-separation-rpl3304-inbound-20260902.js` loader path. This avoids rewriting the inherited `site.js` loader contract or removing its preservation markers. The ripple asset itself exits immediately outside the explicit governed allow-list.
+The overlays are loaded through the already universal `borja-separation-rpl3304-inbound-20260902.js` loader path. This avoids rewriting the inherited `site.js` loader contract or removing its preservation markers. Each asset exits immediately outside its explicit governed allow-list.
 
 ## Primary court notice preserved
 
@@ -48,7 +49,7 @@ Existing public images remain:
 - `assets/evidence/caixabank-valencia-1859-2023-diligencia-06nov2025-p1-publica.jpg`
 - `assets/evidence/caixabank-valencia-1859-2023-diligencia-06nov2025-p2-publica.jpg`
 
-The reusable overlay adds a visible thumbnail/card on both ES and EN CaixaBank main dossiers and links to the two-page redacted public notice.
+The reusable ripple overlay adds a visible thumbnail/card on both ES and EN CaixaBank main dossiers and links to the two-page redacted public notice. The notice child page now loads the route-scoped caret layer directly so its source-locked parties, proceeding and court organ carry the same identity control.
 
 ## Canonical procedural state carried forward
 
@@ -83,13 +84,29 @@ The 12 June 2018 Stoneweg/Varia proposal is described as a **Conditional Binding
 
 ## `^` / CAEPR / CARET control
 
-No competing identity record is created by this workstream.
+This publication uses the canonical immutable PD-SP identity layer rather than creating display-only identities.
 
-- Existing canonical `^` identities remain controlling.
-- Public ripple surfaces link to the canonical justice-professionals identity register.
-- No name is completed from office succession, family/company relationship or contextual proximity.
-- Unknown authorities remain `SOURCE_GAP` under the existing identity system.
-- No new `CARET_PENDING` identity was introduced by this patch.
+Source-locked objects used by the ripple include:
+
+- `PD-SP-P-0010^` — Francisco de Borja Rodríguez-Batllori Laffitte;
+- `PD-SP-O-0001^` — Aweswell Limited;
+- `PD-SP-O-0002^` — Luchy Playa Blanca, S.L.U.;
+- `PD-SP-O-0007^` — Construcciones Acosta Matos, S.A.;
+- `PD-SP-O-0021^` — Promontoria Holding 122 B.V.;
+- `PD-SP-O-0029^` — Bankia, S.A.;
+- `PD-SP-O-0030^` — SAREB;
+- `PD-SP-O-0032^` — CaixaBank, S.A.;
+- `PD-SP-R-0001^` — Concurso 36/2012;
+- `PD-SP-R-0008^` — CaixaBank Valencia / ORD 1859/2023-9 canonical proceeding object;
+- `PD-SP-R-0011^` — RPL 3304/2025;
+- `PD-SP-R-0012^` — RPL 3319/2025;
+- `PD-SP-I-0049^` — Juzgado de Primera Instancia nº 27 de Valencia, source-locked to the organ name printed on the signed 6-Nov-2025 diligence.
+
+`PD-SP-I-0049^` has an explicit date boundary: the 6-Nov-2025 court-organ name is confirmed; no later Tribunal-de-Instancia/successor label and no individual judge or LAJ is inferred from that identity.
+
+The combined 3304+3319 family reference is not given a competing caret. Where a public shorthand says `RPL 3304/3319`, the caret layer renders the two exact proceedings separately because the aggregate `PD-SP-R-0013` is a non-caret family reference.
+
+No name is completed from office succession, family/company relationship or contextual proximity. Exact-entity perimeter labels whose legal person remains open are deliberately not promoted to `^`; their existing source-gap status remains controlling. Identity resolves identity only and never transfers knowledge, intent, control, merits or responsibility.
 
 ## Specific route correction made during reintegration
 
@@ -107,16 +124,18 @@ No private settlement values, concessions, negotiation strategy, David Espejo ou
 - EH 90/2012 still requires document-by-document completion where sources remain missing.
 - Any future CaixaBank outcome will require outcome-specific analysis of what amounts/rights are affected and which procedural mechanism is legally available.
 - Consequences for transferred credit, estate accounts, possession/title economics, adjudication or administrator liability remain conditional on the actual source and competent determination.
+- Historical labels such as Caja Insular/La Caja/BFA remain economic-history labels unless and until their exact legal/corporate identity object is separately source-locked; this publication does not manufacture new carets for them.
 
 These are retained as evidential/legal gaps, not filled by inference.
 
-## Validation / merge fields
+## Validation / publication fields
 
-To be completed at PR closeout:
-
-- PR: `PENDING`
-- merged `main` SHA: `PENDING`
-- checks/validators: `PENDING`
-- GitHub Pages live verification: `PENDING`
+- PR: `#1404`
+- publication instruction: `PUBLISH NOW` — 3 September 2026
+- mergeability: confirmed `true` before the final caret pass
+- inherited validator state: current `main` at `64785292...` already carried the same bidder-anonymisation and audience-source/route failures later observed on PR #1404; those repository-wide inherited failures are not represented as newly caused by this workstream
+- new identity rule: do not merge if the final caret changes introduce a new identity-specific failure; inherited unrelated failures do not erase the user's express publication instruction
+- merged `main` SHA: `PENDING_FINAL_MERGE`
+- GitHub Pages live verification: `PENDING_FINAL_MERGE`
 
 A successor thread should start from the then-current remote `main`, read this record, and never restart the CaixaBank/Concurso ripple reconstruction from zero.
