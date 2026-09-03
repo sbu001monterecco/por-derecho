@@ -7,27 +7,13 @@
     "reference": "Diligencias Preliminares 1041/2017",
     "nig": "3501642120170028407",
     "iup": "LR2017147858",
-    "court": {
-      "name": "Juzgado de Primera Instancia nº 2 de Las Palmas de Gran Canaria",
-      "id": "PD-SP-I-0048"
-    },
-    "judge": {
-      "name": "Juan Avello Formoso",
-      "id": "PD-SP-P-0124",
-      "state": "CARET_CONFIRMED"
-    },
-    "laj": {
-      "name": "Fernando Pérez Polo",
-      "id": "PD-SP-P-0165",
-      "state": "CARET_CONFIRMED"
-    }
+    "court": {"name": "Juzgado de Primera Instancia nº 2 de Las Palmas de Gran Canaria", "id": "PD-SP-I-0048"},
+    "judge": {"name": "Juan Avello Formoso", "id": "PD-SP-P-0124", "state": "CARET_CONFIRMED"},
+    "laj": {"name": "Fernando Pérez Polo", "id": "PD-SP-P-0165", "state": "CARET_CONFIRMED"}
   },
   "historic_docket_state": "OPEN_NOT_CERTIFIED_COMPLETE",
   "publication_boundary": "CONNECTED_SOURCE_LOCATORS_AND_NATIVE_DOCKET_FILES_WITHHELD; PUBLIC_GIT_CONTAINS_SOURCE_SAFE_METADATA_AND_HASHES",
-  "deprecated_identity": {
-    "id": "LZ-CIV-050",
-    "state": "REMOVED_DO_NOT_RECREATE"
-  },
+  "deprecated_identity": {"id": "LZ-CIV-050", "state": "REMOVED_DO_NOT_RECREATE"},
   "verified_acts": [
     {
       "act_id": "GC-CIV-003-ACT-20171219-AUTO",
@@ -46,10 +32,7 @@
       "caucion_eur": 100,
       "judge_signature": "Juan Avello Formoso — 2017-12-19 11:11:51",
       "laj_signature": "Fernando Pérez Polo — 2017-12-19 11:11:51",
-      "finality": {
-        "state": "PRIMARY_SOURCE_CONFIRMED_FOR_THIS_ACT_ONLY",
-        "basis": "Auto expressly states that it is final and that no appeal lies under article 258.2 LEC"
-      }
+      "finality": {"state": "PRIMARY_SOURCE_CONFIRMED_FOR_THIS_ACT_ONLY", "basis": "Auto expressly states that it is final and that no appeal lies under article 258.2 LEC"}
     },
     {
       "act_id": "GC-CIV-003-ACT-20180112-PROVIDENCIA",
@@ -68,13 +51,7 @@
       "source_filename": "diligencia 23 enero 2018.pdf",
       "laj": "Fernando Pérez Polo",
       "electronic_signature": "2018-01-24 09:35:00",
-      "service_finding": {
-        "state": "PRIMARY_SOURCE_CONFIRMED",
-        "scne_result": "POSITIVO",
-        "respondent_cited_and_required_date": "2018-01-18",
-        "respondent": "Construcciones Acosta Matos, S.A.",
-        "scope_boundary": "Does not prove service of later February/March acts"
-      }
+      "service_finding": {"state": "PRIMARY_SOURCE_CONFIRMED", "scne_result": "POSITIVO", "respondent_cited_and_required_date": "2018-01-18", "respondent": "Construcciones Acosta Matos, S.A.", "scope_boundary": "Does not prove service of later February/March acts"}
     },
     {
       "act_id": "GC-CIV-003-ACT-20180305-DECRETO-000139-2018",
@@ -90,37 +67,12 @@
       "iup": "LR2017147858",
       "laj": "Fernando Pérez Polo",
       "electronic_signature": "2018-03-06 09:51:31",
-      "request_finding": {
-        "requesting_party": "Luchy Playa Blanca, S.L.U.",
-        "state": "PRIMARY_SOURCE_CONFIRMED_AT_PARTY_LEVEL",
-        "boundary": "The decree proves that LPB requested desistimiento; it does not identify the exact author/signatory of the underlying request filing"
-      },
-      "respondent_position": {
-        "party": "Construcciones Acosta Matos, S.A.",
-        "state": "PRIMARY_SOURCE_CONFIRMED_VIA_DECREE",
-        "finding": "No opposition and express conformity by filing dated 2018-02-25, registry 1222/18",
-        "original_filing_state": "SOURCE_GAP"
-      },
+      "request_finding": {"requesting_party": "Luchy Playa Blanca, S.L.U.", "state": "PRIMARY_SOURCE_CONFIRMED_AT_PARTY_LEVEL", "boundary": "The decree proves that LPB requested desistimiento; it does not identify the exact author/signatory of the underlying request filing"},
+      "respondent_position": {"party": "Construcciones Acosta Matos, S.A.", "state": "PRIMARY_SOURCE_CONFIRMED_VIA_DECREE", "finding": "No opposition and express conformity by filing dated 2018-02-25, registry 1222/18", "original_filing_state": "SOURCE_GAP"},
       "legal_basis": "Article 20.3, second paragraph, LEC",
-      "operative_result": [
-        "LPB treated as desisting from continuation of Diligencias Preliminares 0001041/2017",
-        "Proceeding ordered sobreseído",
-        "Hearing then scheduled for 2018-04-25 at 11:15 suspended"
-      ],
-      "court_metadata": {
-        "claimant_lawyer_shown": "Francisco Borja Rodríguez-Batllori Laffitte",
-        "claimant_procurador_shown": "Alejandro Valido Farray",
-        "respondent_lawyer_shown": "Carmen Ramírez de Prada",
-        "respondent_procurador_shown": "Gerardo Pérez Almeida",
-        "authorship_boundary": "Court metadata does not establish who authored or signed the underlying desistimiento filing"
-      },
-      "review": {
-        "mode": "recurso de revisión",
-        "period": "five days",
-        "deposit_eur": 25,
-        "finality_state": "NOT_EXPRESSLY_FIRME_IN_DECREE",
-        "boundary": "Do not infer the service date, expiry of review period or exact date of finality from this decree alone"
-      },
+      "operative_result": ["LPB treated as desisting from continuation of Diligencias Preliminares 0001041/2017", "Proceeding ordered sobreseído", "Hearing then scheduled for 2018-04-25 at 11:15 suspended"],
+      "court_metadata": {"claimant_lawyer_shown": "Francisco Borja Rodríguez-Batllori Laffitte", "claimant_procurador_shown": "Alejandro Valido Farray", "respondent_lawyer_shown": "Carmen Ramírez de Prada", "respondent_procurador_shown": "Gerardo Pérez Almeida", "authorship_boundary": "Court metadata does not establish who authored or signed the underlying desistimiento filing"},
+      "review": {"mode": "recurso de revisión", "period": "five days", "deposit_eur": 25, "finality_state": "NOT_EXPRESSLY_FIRME_IN_DECREE", "boundary": "Do not infer the service date, expiry of review period or exact date of finality from this decree alone"},
       "textual_anomaly_boundary": "The operative text states 'frente a LUCHY PLAYA BLANCA S.L.U.' although the document header identifies Construcciones Acosta Matos, S.A. as defendant; the source text is preserved and not silently corrected"
     },
     {
@@ -132,33 +84,27 @@
       "source_sha256": "87190775e0b8de91323e1d4901d5f1d78a634ee466dcc8e22a32913b4e79cbf2",
       "source_bytes": 402540,
       "laj": "Fernando Pérez Polo",
-      "order_date": "2018 proceeding status recorded on 2024-05-13",
       "electronic_signature": "2024-05-14 09:34:21",
-      "filing_received": {
-        "date": "2024-05-10",
-        "registry": "5193/2024",
-        "party": "Aweswell Limited",
-        "procuradora": "María Luisa Díaz Vecino"
-      },
-      "status_finding": {
-        "state": "PRIMARY_SOURCE_CONFIRMED_AS_OF_2024-05-13",
-        "finding": "The proceeding is finalizado y archivado by desistimiento of the claimant agreed by decree dated 2018-03-05; no proceedings derived from the present case; file to be returned to the judicial archive",
-        "boundary": "Confirms later finalised/archive status but does not establish exact 2018 service date or exact date when Decreto 000139/2018 became unchallengeable"
-      }
+      "filing_received": {"date": "2024-05-10", "registry": "5193/2024", "party": "Aweswell Limited", "procuradora": "María Luisa Díaz Vecino"},
+      "status_finding": {"state": "PRIMARY_SOURCE_CONFIRMED_AS_OF_2024-05-13", "finding": "The proceeding is finalizado y archivado by desistimiento of the claimant agreed by decree dated 2018-03-05; no proceedings derived from the present case; file to be returned to the judicial archive", "boundary": "Confirms later finalised/archive status but does not establish exact 2018 service date or exact date when Decreto 000139/2018 became unchallengeable"}
     }
   ],
   "party_filings": [
     {
       "act_id": "GC-CIV-003-PARTY-CAM-OPPOSITION",
-      "source_family": "DILIGENCIA PRELIMINAR / DP 250118",
+      "date": "2018-01-24",
+      "date_state": "PRIMARY_SOURCE_LOCKED",
       "source_class": "PRIMARY_PARTY_FILING",
+      "source_filename": "DP 250118 1 Retracto Oposicion de CAM.pdf",
+      "source_sha256": "02e2efcb55333f647225f1a81e27728f371214e78091f6968f18e84435dd5efc",
+      "source_bytes": 706239,
       "respondent": "Construcciones Acosta Matos, S.A.",
       "procurador": "Gerardo Pérez Almeida",
       "lawyer": "Carmen Ramírez de Prada",
       "appearance": "CONFIRMED_BY_PRIMARY_PARTY_FILING",
       "opposition": "OPOSICIÓN A LAS DILIGENCIAS PRELIMINARES SOLICITADAS",
       "notice_asserted_in_filing": "2018-01-18 notice of 12-Jan Providencia, 19-Dec Auto, initiating application and documents",
-      "date_state": "DATE_NOT_LOCKED_FROM_EXPLICIT_DATE_LINE_IN_CONNECTED_EXTRACT",
+      "requested_relief": "Set aside the requested preliminary diligences; costs requested against applicant",
       "authorship_boundary": "PARTY_FILING_NO_JUDICIAL_AUTHORSHIP_INFERRED"
     },
     {
@@ -178,6 +124,18 @@
       "party": "Construcciones Acosta Matos, S.A.",
       "filing_function": "No opposition and conformity to LPB desistimiento",
       "original_filing_state": "SOURCE_GAP"
+    }
+  ],
+  "supporting_exhibits": [
+    {
+      "evidence_id": "GC-CIV-003-EVID-CAM-NOTICE-ASSIGNMENT-20171027",
+      "source_class": "PRIMARY_PARTY_EXHIBIT_VISUALLY_VERIFIED",
+      "source_filename": "DP 250118 2 Retracto Notificacion de CAM a LPB.pdf",
+      "source_sha256": "8f11764548d458286de1aff04fe5ff08f00eb847a8960eab4dad8af4456dfdc3",
+      "source_bytes": 433878,
+      "finding": "Notarial/registered-mail assignment-notification package relied on in CAM opposition; package records delivery to LPB on 2017-10-27 and contains the 20-Oct-2017 assignment notice",
+      "signature_metadata_visible": "Construcciones Acosta Matos, S.A. — Laura Patricia Acosta Matos; Promontoria Holding 122, B.V. — María Montserrat Álvarez González",
+      "boundary": "Supporting party exhibit; not promoted beyond the propositions established by the source and opposition filing"
     }
   ],
   "contemporaneous_communications": [
@@ -215,42 +173,18 @@
     "exact_2018_finality_date": "SOURCE_GAP"
   },
   "gaps": [
-    {
-      "gap_id": "GC-CIV-003-GAP-DOCKET",
-      "state": "SOURCE_GAP",
-      "description": "Complete docket / certified index"
-    },
-    {
-      "gap_id": "GC-CIV-003-GAP-20180219",
-      "state": "SOURCE_GAP",
-      "description": "Actual 19-Feb-2018 appearance/production result and the intervening procedural step that led to a later hearing being scheduled for 25-Apr-2018"
-    },
-    {
-      "gap_id": "GC-CIV-003-GAP-LPB-DESISTIMIENTO-ORIGINAL",
-      "state": "SOURCE_GAP",
-      "description": "Original LPB desistimiento filing: exact filing date, author/signatory/representative and full text"
-    },
-    {
-      "gap_id": "GC-CIV-003-GAP-CAM-CONFORMITY-ORIGINAL",
-      "state": "SOURCE_GAP",
-      "description": "Original CAM conformity/no-opposition filing dated 25-Feb-2018, registry 1222/18"
-    },
-    {
-      "gap_id": "GC-CIV-003-GAP-CLOSURE-SERVICE",
-      "state": "SOURCE_GAP",
-      "description": "Service/notification of Decreto 000139/2018"
-    },
-    {
-      "gap_id": "GC-CIV-003-GAP-CLOSURE-FINALITY-DATE",
-      "state": "SOURCE_GAP",
-      "description": "Exact date and source establishing expiry/no-use of the five-day revision route and resulting finality of Decreto 000139/2018"
-    }
+    {"gap_id": "GC-CIV-003-GAP-DOCKET", "state": "SOURCE_GAP", "description": "Complete docket / certified index"},
+    {"gap_id": "GC-CIV-003-GAP-20180219", "state": "SOURCE_GAP", "description": "Actual 19-Feb-2018 appearance/production result and the intervening procedural step that led to a later hearing being scheduled for 25-Apr-2018"},
+    {"gap_id": "GC-CIV-003-GAP-LPB-DESISTIMIENTO-ORIGINAL", "state": "SOURCE_GAP", "description": "Original LPB desistimiento filing: exact filing date, author/signatory/representative and full text"},
+    {"gap_id": "GC-CIV-003-GAP-CAM-CONFORMITY-ORIGINAL", "state": "SOURCE_GAP", "description": "Original CAM conformity/no-opposition filing dated 25-Feb-2018, registry 1222/18"},
+    {"gap_id": "GC-CIV-003-GAP-CLOSURE-SERVICE", "state": "SOURCE_GAP", "description": "Service/notification of Decreto 000139/2018"},
+    {"gap_id": "GC-CIV-003-GAP-CLOSURE-FINALITY-DATE", "state": "SOURCE_GAP", "description": "Exact date and source establishing expiry/no-use of the five-day revision route and resulting finality of Decreto 000139/2018"}
   ],
   "closed_gaps": [
     "Preceding signed 19-Dec-2017 Auto",
     "Finality of the 19-Dec-2017 Auto only",
     "Positive CAM citation/requerimiento on 18-Jan-2018",
-    "CAM appearance/opposition",
+    "CAM appearance/opposition dated 24-Jan-2018",
     "Standalone primary Decreto 000139/2018 dated 5-Mar-2018",
     "LPB as the party requesting desistimiento",
     "CAM no-opposition/conformity dated 25-Feb-2018, registry 1222/18",
@@ -259,14 +193,16 @@
     "Proceeding finalised and archived status as confirmed by the 13-May-2024 LAJ order"
   ],
   "targeted_recovery_20260903": {
-    "drive": "Targeted Drive searches first located later annex traces and source families but did not independently surface the standalone decree.",
-    "gmail": "Targeted exact case-number attachment search surfaced a preserved source family containing the authentic standalone Decreto 000139/2018, the 13-May-2024 LAJ archive-status order, and contemporaneous January communications.",
-    "secondary_lead": "Later annex compilations and a legacy spreadsheet remain secondary recovery leads only and are not used to override the primary court sources."
+    "gmail": "Exact case-number attachment search surfaced the authentic standalone Decreto 000139/2018, the 13-May-2024 LAJ archive-status order, the 24-Jan-2018 CAM opposition, the assignment-notification exhibit, and contemporaneous January communications. Exact 1222/18/desistimiento/25-Apr searches did not surface the original LPB desistimiento or CAM conformity filing.",
+    "drive": "Exact-target searches for desistimiento/1041/1222/18 did not surface the primary original LPB desistimiento or CAM conformity filing; later annex compilations remain secondary recovery leads only.",
+    "broad_discovery": "NOT_RUN_BY_GOVERNANCE"
   },
   "next_p0": [
+    "complete docket/certified index",
     "actual 19-Feb-2018 act/result and intervening rescheduling sequence",
     "original LPB desistimiento filing",
     "original CAM 25-Feb-2018 conformity filing registry 1222/18",
-    "service of Decreto 000139/2018 and exact finality date"
+    "service of Decreto 000139/2018",
+    "exact finality date/source"
   ]
 }
