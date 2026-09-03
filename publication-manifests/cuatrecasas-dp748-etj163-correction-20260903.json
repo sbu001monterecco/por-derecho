@@ -1,0 +1,55 @@
+{
+  "schema": "por-derecho.publication-manifest.v1",
+  "control_id": "PD-PUB-CUATRECASAS-DP748-ETJ163-20260903-01",
+  "date": "2026-09-03",
+  "status": "RELEASE_CANDIDATE_LIVE_STATE_REQUIRES_DEPLOYMENT_READBACK",
+  "workspace": "PD-WS-20260902-0001",
+  "governance": [
+    "ANTI_CONFLATION_IS_NOT_ANTI_CONNECTIVITY",
+    "INVOICING_IS_NOT_JUDICIAL_PURSUIT",
+    "CONTROLLED_CORPUS_NON_FINDING_IS_NOT_UNIVERSAL_ABSENCE",
+    "DISCUSSION_OR_CIRCULATION_IS_NOT_COUNSEL_ADOPTION",
+    "PARTY_FILING_IS_NOT_JUDICIAL_FINDING",
+    "PRIVILEGED_COUNSEL_MATERIAL_NOT_PUBLIC"
+  ],
+  "repository_records": [
+    "archive/CUATRECASAS_DP748_ETJ163_COUNSEL_COORDINATION_CORRECTION_03SEP2026.md",
+    "CURRENT_HANDOVER_DP748_ETJ163_RECENT_CLUSTER_03SEP2026.md"
+  ],
+  "public_routes": [
+    "/en/cuatrecasas-etj-continuity/",
+    "/es/cuatrecasas-etj-continuity/",
+    "/en/cambiario-1048-2019/",
+    "/es/cambiario-1048-2019/",
+    "/en/etj-163-2020/",
+    "/es/etj-163-2020/"
+  ],
+  "controlled_finding": "The reviewed corpus documents invoices, proformas and extrajudicial payment discussions with Aweswell/Gil, but no judicial fee-recovery action by Cuatrecasas against Aweswell has been identified in the controlled Spain/UK corpus as at 3 September 2026. The identified judicial route was against Matkator through Cambiario 1048/2019 and ETJ 163/2020.",
+  "non_findings": [
+    "NO_UNIVERSAL_PROOF_THAT_NO_AWESWELL_PROCEEDING_EXISTS",
+    "NO_FINDING_THAT_MATKATOR_LACKED_LIABILITY",
+    "NO_FINDING_THAT_PROMISSORY_NOTES_WERE_INVALID",
+    "NO_FINDING_THAT_EDICTAL_SERVICE_WAS_DEFECTIVE",
+    "NO_COMPLETED_ADJUDICATION_OR_ASSIGNMENT_PROVED_BY_3_SEPTEMBER_FILING",
+    "NO_ASSIGNEE_OR_BENEFICIARY_IDENTITY_PROVED",
+    "NO_CRIMINAL_INTENT_OR_LIABILITY_PROVED",
+    "NO_COUNSEL_APPROVAL_INFERRED_FROM_CALL_OR_CIRCULATION"
+  ],
+  "excluded_public_material": [
+    "RAW_LAWYER_CLIENT_CALL_TRANSCRIPT",
+    "PRIVATE_LEGAL_ADVICE",
+    "UNAPPROVED_LITIGATION_STRATEGY",
+    "CONFIDENTIAL_SETTLEMENT_POSITIONS",
+    "PRIVILEGED_EMAIL_CHAINS"
+  ],
+  "validation_required": [
+    "BRANCH_DIFF_REVIEW",
+    "PR_MERGE_TO_MAIN",
+    "PAGES_DEPLOYMENT_SUCCESS",
+    "HTTP_200_ALL_PUBLIC_ROUTES",
+    "LIVE_TEXT_READBACK_CORRECTED_FINDING",
+    "BILINGUAL_RECIPROCAL_LINKS",
+    "NO_PRIVILEGED_TEXT_PUBLICATION"
+  ],
+  "lifecycle_rule": "This manifest records the release scope and required checks. Current merge and live status must be verified from GitHub main and Pages at the time of use; this file does not self-certify deployment."
+}
