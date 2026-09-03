@@ -188,12 +188,12 @@
       "workspace_id": "PD-WS-20260902-0001",
       "title": "Historic proceedings, judicial/prosecutorial authority register, Fiscalía, caret search and interconnectivity release",
       "status": "DELETION_SAFE_WITH_OPEN_WORK",
-      "current_handoff_id": "PD-WCH-20260903-AUTH-SEARCH-REINT-001",
-      "handoff_path": "archive/handoffs/2026-09-03-historic-proceedings-authority-search-reintegration-live-closeout.md",
-      "machine_handoff_path": "archive/handoffs/2026-09-03-historic-proceedings-authority-search-reintegration-live-closeout.json",
-      "prior_handoff_id": "PD-WCH-20260902-AUTH-SEARCH-001",
-      "prior_handoff_path": "archive/handoffs/2026-09-02-justice-authority-caret-search-live-closeout.md",
-      "prior_machine_handoff_path": "archive/handoffs/2026-09-02-justice-authority-caret-search-live-closeout.json",
+      "current_handoff_id": "PD-WCH-20260903-GCCIV003-SRC-002",
+      "handoff_path": "archive/handoffs/2026-09-03-gc-civ-003-primary-source-recovery-checkpoint.md",
+      "machine_handoff_path": "archive/handoffs/2026-09-03-gc-civ-003-primary-source-recovery-checkpoint.json",
+      "prior_handoff_id": "PD-WCH-20260903-AUTH-SEARCH-REINT-001",
+      "prior_handoff_path": "archive/handoffs/2026-09-03-historic-proceedings-authority-search-reintegration-live-closeout.md",
+      "prior_machine_handoff_path": "archive/handoffs/2026-09-03-historic-proceedings-authority-search-reintegration-live-closeout.json",
       "topic_keys": [
         "HISTORIC_PROCEEDINGS",
         "JUSTICE_AUTHORITY",
@@ -206,12 +206,15 @@
         "COURT_HIERARCHY",
         "HOMEPAGE_SEARCH",
         "INTERCONNECTIVITY",
+        "GC_CIV_003",
+        "SOURCE_RECOVERY",
         "CONTINUITY"
       ],
       "repository": "sbu001monterecco/por-derecho",
-      "public_private_boundary": "PUBLIC_REPO_CONTAINS_SOURCE_SAFE_CANONICAL_IDENTITIES_GOVERNANCE_PUBLIC_ROUTES_AND_VERIFICATION_METADATA; PRIVATE_NATIVE_DOCKETS_AND_CONNECTED_SOURCE_CONTENT_ARE_NOT_COPIED",
+      "public_private_boundary": "PUBLIC_REPO_CONTAINS_SOURCE_SAFE_CANONICAL_IDENTITIES_GOVERNANCE_PUBLIC_ROUTES_AND_VERIFICATION_METADATA; PRIVATE_NATIVE_DOCKETS_AND CONNECTED_SOURCE_LOCATORS_AND_CONTENT_ARE_NOT_COPIED",
       "continuous_capture_mode": "CONNECTED_AGENTIC_CHECKPOINTING",
-      "current_main_sha_checked": "efbb1032b0c5e21ca892b3a9db17b3f7b4073e6c",
+      "current_main_sha_checked": "231d25c12108579efdf92365cf7860bf281178f5",
+      "checkpoint_branch": "codex/gc-civ-003-primary-source-recovery-20260903",
       "initial_authority_publication_pr": 1347,
       "initial_authority_merge_sha": "5e12444f44b27b3c94d7bc31c80e2d56ef58bb08",
       "initial_visibility_hotfix_pr": 1351,
@@ -226,7 +229,7 @@
       "live_browser_verification_run_id": 33700567926,
       "live_browser_verification_run_number": 1,
       "live_browser_verifier_head_sha": "fcf03556f89c7cf6fe541efed381471f5ac360ca",
-      "validation_state": "PR_1373_EXACT_REVIEWED_TREE_MERGED; PAGES_DEPLOYED_FROM_EXACT_MERGE_SHA; LIVE_CHROMIUM_ES_EN_ROUTE_SEARCH_NEGATIVE_DUPLICATE_CHECK_PASS",
+      "validation_state": "PR_1373_EXACT_REVIEWED_TREE_MERGED; PAGES_DEPLOYED_FROM_EXACT_MERGE_SHA; LIVE_CHROMIUM_ES_EN_ROUTE_SEARCH_NEGATIVE_DUPLICATE_CHECK_PASS; GC_CIV_003_SOURCE_RECOVERY_BRANCH_REGISTERED_PR_PENDING",
       "authority_governance": ".github/governance/JUDICIAL_PROSECUTORIAL_AUTHORITY_REGISTER_CONTINUITY_02SEP2026.md",
       "authority_control_id": "PD-SP-JUSTICE-AUTHORITY-CURRENT-20260902-01",
       "proceedings_denominator": {
@@ -269,8 +272,30 @@
         "judge_id": "PD-SP-P-0124",
         "laj_id": "PD-SP-P-0165"
       },
+      "gc_civ_003_source_recovery": {
+        "control_path": "assets/data/gc-civ-003-primary-source-state-20260903.json",
+        "source_register_path": "archive/GC_CIV_003_PRIMARY_ACTS_SOURCE_REGISTER_03SEP2026.md",
+        "action_ledger_path": "archive/handoffs/2026-09-03-gc-civ-003-primary-source-recovery-actions.json",
+        "state": "CONTROLLING_03SEP2026_SOURCE_CORRECTION_OVERLAY_BRANCH_REGISTERED_PR_PENDING",
+        "closed_primary_gaps": [
+          "19-Dec-2017 signed admission Auto",
+          "Finality of the 19-Dec-2017 Auto only",
+          "Positive CAM citation/requerimiento on 18-Jan-2018",
+          "CAM appearance/opposition"
+        ],
+        "remaining_p0": [
+          "Complete docket/certified index",
+          "Actual 19-Feb-2018 result",
+          "Standalone primary 5-Mar-2018 archive decree",
+          "Original archive/desistimiento/request and exact procedural authority",
+          "Service of 5-Mar decree",
+          "Finality of closure sequence"
+        ],
+        "closure_trace_state": "STRONGLY_TRACED_PRIMARY_FILE_STILL_TO_RECOVER",
+        "master_row_reconciliation": "02-SEP_STALE_GAP_TEXT_SUPERSEDED_FOR_SOURCE_INTERPRETATION_FUTURE_DETERMINISTIC_REBUILD_REQUIRED"
+      },
       "open_gap_state": "GLOBAL_HISTORIC_DOCKET_BACKFILL_OPEN_EXPLICIT_SOURCE_GAPS_REQUIRED",
-      "next_target_mode": "P0_GC_CIV_003_SOURCE_GAPS_THEN_PUBLIC_NONEXACT_AND_FISCALIA_UNRESOLVED_TARGETED_RECOVERY; NO_BROAD_REDISCOVERY"
+      "next_target_mode": "P0_GC_CIV_003_19FEB_5MAR_ARCHIVE_REQUEST_SERVICE_FINALITY_ONLY; NO_BROAD_REDISCOVERY"
     }
   ],
   "registration_rule": "Create or recover a stable workspace ID for every substantive Por Derecho workspace when persistence-capable work begins. A workspace may span multiple ChatGPT threads; a ChatGPT thread may be superseded without changing the workspace ID.",
