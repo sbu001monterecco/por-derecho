@@ -40,10 +40,10 @@
     },
     "PD-SP-EVT-0158": {
       "category": "C",
-      "reason": "Complete checked transcription and custody hash are controlled; private original is retained and the publication-safe redacted PDF derivative is prepared/hash-locked but cannot yet be committed through the current binary write surface.",
+      "reason": "Complete checked, public-safe transcription and custody hash are controlled; private original is retained and a NIE/private-email-redacted PDF facsimile is prepared/hash-locked, but its binary is not yet committed or publicly exposed.",
       "full_text_path": "es/ministerio-fiscal/expedientes/eg-352-2025/",
       "canonical_custody_id": "PD-SP-CUST-0001",
-      "prepared_public_redacted_derivative_sha256": "e29710fe14e5611f0ea3936555a61821d5fdd0bfd3bb7a1b39159ff65ee54fe1"
+      "prepared_public_redacted_derivative_sha256": "a255f7ffa8d6926b55826b27d77d7b4c392838ce046fd75408384ffcdd4f1980"
     }
   },
   "source_gaps": [
