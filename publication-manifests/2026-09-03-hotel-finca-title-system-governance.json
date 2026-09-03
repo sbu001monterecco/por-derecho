@@ -1,4 +1,26 @@
 {
+  "schema": "por-derecho.publication-state.v1",
+  "schema_version": "1.0.0",
+  "publication_id": "PD-PUB-HOTEL-FINCA-20260903-01",
+  "control_date": "2026-09-03",
+  "current_state": "MERGED",
+  "expected_routes": {
+    "es": [
+      "es/fincas-hoteleras-clasificacion-lesion-titulo-sobre-titulo/index.html"
+    ],
+    "en": [
+      "en/hotel-fincas-asset-classification-title-on-title-injury/index.html"
+    ]
+  },
+  "owner": "Por Derecho repository governance",
+  "validation": {
+    "evidence": [
+      "Focused validation workflow .github/workflows/validate-hotel-finca-title-system.yml",
+      "Focused validation run 33816683423 completed with SUCCESS",
+      "Main source presence is recorded as verified; direct Pages HTTP readback remains pending"
+    ]
+  },
+  "merge_sha": "bc85c64bd3cbc5790ab2162bdf93cec21d6f8dfe",
   "manifest_id": "PD-PUB-HOTEL-FINCA-20260903-01",
   "title": "All-hotel-finca asset classification, title-on-title injury and cross-proceeding instrumentality release",
   "created": "2026-09-03",
@@ -6,7 +28,10 @@
   "status": "REPOSITORY_MERGED_FOCUSED_VALIDATION_GREEN_PAGES_DIRECT_READBACK_PENDING",
   "scope_correction": {
     "worked_example": "finca 8584",
-    "source_locked_matkator_titles": ["8584", "8588"],
+    "source_locked_matkator_titles": [
+      "8584",
+      "8588"
+    ],
     "rule": "apply to every source-verified Matkator title and title-by-title across the complete hotel denominator"
   },
   "public_routes": [
