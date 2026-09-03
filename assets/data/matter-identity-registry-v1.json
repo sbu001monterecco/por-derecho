@@ -1,7 +1,7 @@
 {
   "schema": "por-derecho.matter-identity-registry.v1",
   "registry_id": "PD-SP-IDENTITY-REGISTRY-001",
-  "control_date": "2026-09-02",
+  "control_date": "2026-09-03",
   "status": "CANONICAL_ACTOR_REGISTER_COURT_HIERARCHY_AND_HOME_SEARCH_INDEXED_ARCHIVE_BACKFILL_OPEN",
   "id_formats": {
     "PERSON": "PD-SP-P-####",
@@ -172,15 +172,16 @@
       "Juzgado de Primera Instancia nº 4 de Arrecife",
       "Juzgado de Instrucción nº 4 de Arrecife",
       "Fernando Pérez Polo",
-      "Juzgado de Primera Instancia nº 2 de Las Palmas de Gran Canaria"
+      "Juzgado de Primera Instancia nº 2 de Las Palmas de Gran Canaria",
+      "Juzgado de Primera Instancia nº 27 de Valencia"
     ]
   },
   "counts": {
-    "total": 350,
+    "total": 351,
     "PERSON": 165,
     "ORGANISATION": 83,
     "STRUCTURE": 11,
-    "INSTITUTION": 48,
+    "INSTITUTION": 49,
     "PROCEEDING": 43
   },
   "parts": [
@@ -242,7 +243,7 @@
     {
       "path": "matter-identity-registry-v1.court-hierarchy.json",
       "type": "INSTITUTION",
-      "count": 1
+      "count": 2
     },
     {
       "path": "matter-identity-registry-v1.proceedings.json",
