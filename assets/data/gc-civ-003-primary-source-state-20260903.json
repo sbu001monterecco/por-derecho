@@ -1,0 +1,156 @@
+{
+  "schema": "por-derecho.gc-civ-003-primary-source-state.v1",
+  "control_date": "2026-09-03",
+  "workspace_id": "PD-WS-20260902-0001",
+  "proceeding": {
+    "master_id": "GC-CIV-003",
+    "reference": "Diligencias Preliminares 1041/2017",
+    "nig": "3501642120170028407",
+    "court": {
+      "name": "Juzgado de Primera Instancia nº 2 de Las Palmas de Gran Canaria",
+      "id": "PD-SP-I-0048"
+    },
+    "judge": {
+      "name": "Juan Avello Formoso",
+      "id": "PD-SP-P-0124",
+      "state": "CARET_CONFIRMED"
+    },
+    "laj": {
+      "name": "Fernando Pérez Polo",
+      "id": "PD-SP-P-0165",
+      "state": "CARET_CONFIRMED"
+    }
+  },
+  "historic_docket_state": "OPEN_NOT_CERTIFIED_COMPLETE",
+  "publication_boundary": "CONNECTED_SOURCE_LOCATORS_AND_NATIVE_DOCKET_FILES_WITHHELD",
+  "deprecated_identity": {
+    "id": "LZ-CIV-050",
+    "state": "REMOVED_DO_NOT_RECREATE"
+  },
+  "verified_acts": [
+    {
+      "act_id": "GC-CIV-003-ACT-20171219-AUTO",
+      "date": "2017-12-19",
+      "type": "AUTO",
+      "source_class": "PRIMARY_ELECTRONIC_JUDICIAL_ACT",
+      "source_filename": "Auto admite Diligencia (LPB Tanteo y Retracto - Proc 1041) 19DIC17.pdf",
+      "proceeding_reference": "0001041/2017",
+      "nig": "3501642120170028407",
+      "iup": "LR2017147858",
+      "applicant": "Luchy Playa Blanca, S.L.",
+      "applicant_procurador": "Andrés Castellano Rivero",
+      "applicant_lawyer_court_metadata": "Cristo Ayose Suárez Pimentel",
+      "respondent": "Construcciones Acosta Matos, S.A.",
+      "order_scope": "Exhibition and complete production of the 20-Oct-2017 credit-assignment deed, including concrete purchase price, payment date and transaction costs",
+      "caucion_eur": 100,
+      "judge_signature": "Juan Avello Formoso — 2017-12-19 11:11:51",
+      "laj_signature": "Fernando Pérez Polo — 2017-12-19 11:11:51",
+      "finality": {
+        "state": "PRIMARY_SOURCE_CONFIRMED_FOR_THIS_ACT_ONLY",
+        "basis": "Auto expressly states that it is final and that no appeal lies under article 258.2 LEC"
+      }
+    },
+    {
+      "act_id": "GC-CIV-003-ACT-20180112-PROVIDENCIA",
+      "date": "2018-01-12",
+      "type": "PROVIDENCIA",
+      "source_class": "PRIMARY_ELECTRONIC_JUDICIAL_ACT",
+      "source_filename": "LPB - Proc 1041 MATOS debe aportar escritura el 19FEB - 12JAN18.pdf",
+      "function": "Schedules exhibition/production for 2018-02-19",
+      "outcome_boundary": "SCHEDULED_DATE_DOES_NOT_PROVE_OCCURRENCE_OR_RESULT"
+    },
+    {
+      "act_id": "GC-CIV-003-ACT-20180123-DIOR",
+      "date": "2018-01-23",
+      "type": "DILIGENCIA_DE_ORDENACION",
+      "source_class": "PRIMARY_ELECTRONIC_JUDICIAL_ACT",
+      "source_filename": "diligencia 23 enero 2018.pdf",
+      "laj": "Fernando Pérez Polo",
+      "electronic_signature": "2018-01-24 09:35:00",
+      "service_finding": {
+        "state": "PRIMARY_SOURCE_CONFIRMED",
+        "scne_result": "POSITIVO",
+        "respondent_cited_and_required_date": "2018-01-18",
+        "respondent": "Construcciones Acosta Matos, S.A.",
+        "scope_boundary": "Does not prove service of later February/March acts"
+      }
+    }
+  ],
+  "party_filings": [
+    {
+      "act_id": "GC-CIV-003-PARTY-CAM-OPPOSITION",
+      "source_family": "DILIGENCIA PRELIMINAR / DP 250118",
+      "source_class": "PRIMARY_PARTY_FILING",
+      "respondent": "Construcciones Acosta Matos, S.A.",
+      "procurador": "Gerardo Pérez Almeida",
+      "lawyer": "Carmen Ramírez de Prada",
+      "appearance": "CONFIRMED_BY_PRIMARY_PARTY_FILING",
+      "opposition": "OPOSICIÓN A LAS DILIGENCIAS PRELIMINARES SOLICITADAS",
+      "notice_asserted_in_filing": "2018-01-18 notice of 12-Jan Providencia, 19-Dec Auto, initiating application and documents",
+      "date_state": "DATE_NOT_LOCKED_FROM_EXPLICIT_DATE_LINE_IN_CONNECTED_EXTRACT",
+      "authorship_boundary": "PARTY_FILING_NO_JUDICIAL_AUTHORSHIP_INFERRED"
+    }
+  ],
+  "closure_trace": {
+    "date": "2018-03-05",
+    "type": "DECRETO_DE_ARCHIVO",
+    "state": "STRONGLY_TRACED_PRIMARY_FILE_STILL_TO_RECOVER",
+    "trace_source": "Denuncia Fiscalía Desahucio 19ENE2026 annex list",
+    "not_primary_proven": [
+      "who precisely requested archive",
+      "procedural basis of the archive request",
+      "exact decree reasoning",
+      "service or notification of the decree",
+      "finality of the closure sequence"
+    ]
+  },
+  "gaps": [
+    {
+      "gap_id": "GC-CIV-003-GAP-DOCKET",
+      "state": "SOURCE_GAP",
+      "description": "Complete docket / certified index"
+    },
+    {
+      "gap_id": "GC-CIV-003-GAP-20180219",
+      "state": "SOURCE_GAP",
+      "description": "Actual 19-Feb-2018 appearance/production result"
+    },
+    {
+      "gap_id": "GC-CIV-003-GAP-20180305-DECREE",
+      "state": "STRONGLY_TRACED_PRIMARY_FILE_STILL_TO_RECOVER",
+      "description": "Standalone primary Decreto de archivo de 05/03/2018"
+    },
+    {
+      "gap_id": "GC-CIV-003-GAP-ARCHIVE-REQUEST",
+      "state": "SOURCE_GAP",
+      "description": "Original archive/desistimiento/request filing and exact procedural authority"
+    },
+    {
+      "gap_id": "GC-CIV-003-GAP-CLOSURE-SERVICE",
+      "state": "SOURCE_GAP",
+      "description": "Service/notification of the 5-Mar decree"
+    },
+    {
+      "gap_id": "GC-CIV-003-GAP-CLOSURE-FINALITY",
+      "state": "SOURCE_GAP",
+      "description": "Finality of the closure sequence"
+    }
+  ],
+  "closed_gaps": [
+    "Preceding signed 19-Dec-2017 Auto",
+    "Finality of the 19-Dec-2017 Auto only",
+    "Positive CAM citation/requerimiento on 18-Jan-2018",
+    "CAM appearance/opposition"
+  ],
+  "targeted_recovery_20260903": {
+    "drive": "No standalone 19-Feb result or 5-Mar decree surfaced in targeted exact/near-exact searches or the DILIGENCIA PRELIMINAR / TANTEO Y RETRACTO source folders",
+    "gmail": "No exact case-number hit around 19-Feb or 5-Mar; no date/actor-scoped 5-Mar result",
+    "secondary_lead": "A legacy 2020 litigation spreadsheet reports an archive after CAM appeared but misidentifies the court as Arrecife; retained only as a recovery lead"
+  },
+  "next_p0": [
+    "actual 19-Feb-2018 act/result",
+    "standalone 5-Mar-2018 decree",
+    "underlying archive/desistimiento request",
+    "service and finality of closure sequence"
+  ]
+}
