@@ -3,7 +3,7 @@
   "title": "All-hotel-finca asset classification, title-on-title injury and cross-proceeding instrumentality release",
   "created": "2026-09-03",
   "workspace": "PD-WS-20260902-0001",
-  "status": "READY_FOR_PULL_REQUEST",
+  "status": "PULL_REQUEST_OPEN",
   "scope_correction": {
     "worked_example": "finca 8584",
     "source_locked_matkator_titles": ["8584", "8588"],
@@ -63,8 +63,10 @@
     "No guilt or common criminal plan is stated as adjudicated fact"
   ],
   "specialised_sitemap": "sitemap-hotel-finca-title-system.xml",
-  "robots_update_required": true,
-  "pull_request": null,
+  "robots_updated": true,
+  "pull_request": 1410,
+  "focused_validation_workflow": ".github/workflows/validate-hotel-finca-title-system.yml",
+  "focused_validation_status": "PENDING",
   "merge_commit": null,
   "live_verification": "PENDING_AFTER_MERGE"
 }
