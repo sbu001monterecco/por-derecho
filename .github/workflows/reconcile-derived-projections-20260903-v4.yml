@@ -26,23 +26,49 @@ jobs:
         with:
           python-version: '3.12'
 
-      - name: Reconcile stale Fiscalía browser denominator
+      - name: Reconcile current denominators and browser control count
         shell: python
         run: |
           from pathlib import Path
-          path = Path('scripts/smoke_fiscalia_proceedings_interconnectivity.mjs')
-          text = path.read_text(encoding='utf-8')
-          replacements = {
+
+          def replace_once(path_str, old, new):
+              path = Path(path_str)
+              text = path.read_text(encoding='utf-8')
+              if old not in text:
+                  raise SystemExit(f'Expected stale constant not found in {path_str}: {old}')
+              path.write_text(text.replace(old, new, 1), encoding='utf-8')
+
+          smoke = Path('scripts/smoke_fiscalia_proceedings_interconnectivity.mjs')
+          smoke_text = smoke.read_text(encoding='utf-8')
+          smoke_replacements = {
               "data.coverage.fiscalia_exact_files !== 21 || data.coverage.fiscalia_unresolved_references !== 3": "data.coverage.fiscalia_exact_files !== 23 || data.coverage.fiscalia_unresolved_references !== 3",
               "Fiscalía identity denominator is not 21 + 3": "Fiscalía identity denominator is not 23 + 3",
               "page.locator('[data-mf-files] [data-file]').count() !== 25": "page.locator('[data-mf-files] [data-file]').count() !== 27",
               "expected all + 24 file controls": "expected all + 26 file controls",
           }
-          for old, new in replacements.items():
-              if old not in text:
+          for old, new in smoke_replacements.items():
+              if old not in smoke_text:
                   raise SystemExit(f'Expected stale smoke constant not found: {old}')
-              text = text.replace(old, new, 1)
-          path.write_text(text, encoding='utf-8')
+              smoke_text = smoke_text.replace(old, new, 1)
+          smoke.write_text(smoke_text, encoding='utf-8')
+
+          replace_once('scripts/build_proceedings_interlinkability_v1.py', 'EXPECTED_CASE_PRISM_EXACT_COVERED = 43', 'EXPECTED_CASE_PRISM_EXACT_COVERED = 45')
+          replace_once('scripts/audit_proceedings_interconnectivity_map.py', 'CURRENT_CASE_PRISM_EXACT_COVERED = 43', 'CURRENT_CASE_PRISM_EXACT_COVERED = 45')
+          replace_once('scripts/audit_proceedings_interconnectivity_map.py', 'CURRENT_CASE_PRISM_EXACT_UNCOVERED = 63', 'CURRENT_CASE_PRISM_EXACT_UNCOVERED = 61')
+
+          schema = Path('assets/data/proceedings-interconnectivity-schema-v1.json')
+          schema_text = schema.read_text(encoding='utf-8')
+          schema_replacements = {
+              'shared-proposition membership remains 43 of 106 with 63 explicit no-coordinate gaps': 'shared-proposition membership remains 45 of 106 with 61 explicit no-coordinate gaps',
+              '"case_prism_exact_proceeding_covered_denominator": 43': '"case_prism_exact_proceeding_covered_denominator": 45',
+              '"case_prism_exact_proceeding_uncovered_denominator": 63': '"case_prism_exact_proceeding_uncovered_denominator": 61',
+              '"shared_case_prism_proposition_membership_coverage_status": "GAP_43_OF_106"': '"shared_case_prism_proposition_membership_coverage_status": "GAP_45_OF_106"',
+          }
+          for old, new in schema_replacements.items():
+              if old not in schema_text:
+                  raise SystemExit(f'Expected stale schema constant not found: {old}')
+              schema_text = schema_text.replace(old, new, 1)
+          schema.write_text(schema_text, encoding='utf-8')
 
       - name: Regenerate proceedings interlinkability projection
         run: python scripts/build_proceedings_interlinkability_v1.py
@@ -50,9 +76,10 @@ jobs:
       - name: Regenerate Community ACTA authority projection
         run: python scripts/build_community_acta_authority_interconnectivity.py
 
-      - name: Validate regenerated projections and Fiscalía denominator
+      - name: Validate regenerated projections and current denominators
         run: |
           python scripts/build_proceedings_interlinkability_v1.py --check
+          python scripts/audit_proceedings_interconnectivity_map.py
           python scripts/build_community_acta_authority_interconnectivity.py --check
           python scripts/validate_community_acta_authority_interconnectivity.py
           python -m unittest -v scripts/test_build_community_acta_authority_interconnectivity.py
@@ -67,10 +94,13 @@ jobs:
           git config user.email 41898282+github-actions[bot]@users.noreply.github.com
           git add assets/data/proceedings-interlinkability-v1.json \
                   assets/data/community-acta-authority-interconnectivity-v1.json \
+                  assets/data/proceedings-interconnectivity-schema-v1.json \
+                  scripts/build_proceedings_interlinkability_v1.py \
+                  scripts/audit_proceedings_interconnectivity_map.py \
                   scripts/smoke_fiscalia_proceedings_interconnectivity.mjs
           if git diff --cached --quiet; then
             echo 'No reconciliation changes were produced.'
             exit 1
           fi
-          git commit -m 'Reconcile derived interconnectivity projections'
+          git commit -m 'Reconcile current interconnectivity denominators'
           git push origin HEAD:ministerio-fiscal-fulltext-audit-20260903
