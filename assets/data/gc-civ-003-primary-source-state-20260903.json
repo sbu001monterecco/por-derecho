@@ -22,7 +22,7 @@
     }
   },
   "historic_docket_state": "OPEN_NOT_CERTIFIED_COMPLETE",
-  "publication_boundary": "CONNECTED_SOURCE_LOCATORS_AND_NATIVE_DOCKET_FILES_WITHHELD",
+  "publication_boundary": "CONNECTED_SOURCE_LOCATORS_NATIVE_EMAILS_AND_NATIVE_DOCKET_FILES_WITHHELD",
   "deprecated_identity": {
     "id": "LZ-CIV-050",
     "state": "REMOVED_DO_NOT_RECREATE"
@@ -74,6 +74,25 @@
         "respondent": "Construcciones Acosta Matos, S.A.",
         "scope_boundary": "Does not prove service of later February/March acts"
       }
+    },
+    {
+      "act_id": "GC-CIV-003-ACT-20180305-DECRETO-000139-2018",
+      "date": "2018-03-05",
+      "type": "DECRETO",
+      "source_class": "PRIMARY_ELECTRONIC_JUDICIAL_ACT",
+      "source_filename": "Documento N 11 - Decreto 5 de marzo.pdf",
+      "decree_number": "000139/2018",
+      "proceeding_reference": "0001041/2017",
+      "nig": "3501642120170028407",
+      "laj": "Fernando Pérez Polo",
+      "electronic_signature": "2018-03-06 09:51:31",
+      "recorded_requester": "Luchy Playa Blanca, S.L. as party",
+      "recorded_request": "desistimiento",
+      "opposing_party_position": "No opposition; consent/conformity recorded through filing dated 2018-02-25, registro 1222/18",
+      "disposition": "sobreseimiento under article 20.3 LEC",
+      "hearing_effect": "Then-pending hearing for 2018-04-25 11:15 suspended",
+      "review": "recurso de revisión within five days",
+      "finality_boundary": "Ultimate service and finality not established by current source set"
     }
   ],
   "party_filings": [
@@ -89,19 +108,49 @@
       "notice_asserted_in_filing": "2018-01-18 notice of 12-Jan Providencia, 19-Dec Auto, initiating application and documents",
       "date_state": "DATE_NOT_LOCKED_FROM_EXPLICIT_DATE_LINE_IN_CONNECTED_EXTRACT",
       "authorship_boundary": "PARTY_FILING_NO_JUDICIAL_AUTHORSHIP_INFERRED"
+    },
+    {
+      "act_id": "GC-CIV-003-PARTY-CAM-20180225-1222-18",
+      "date": "2018-02-25",
+      "source_class": "JUDICIAL_ACT_RECORDS_EXISTENCE_AND_CHARACTER_OF_PARTY_FILING",
+      "registro": "1222/18",
+      "recorded_position": "CAM did not oppose and consented/conformed to LPB discontinuance",
+      "text_state": "SOURCE_GAP_FULL_PRIMARY_PARTY_FILING_NOT_YET_RECOVERED"
+    }
+  ],
+  "contextual_primary_sources": [
+    {
+      "source_id": "GC-CIV-003-SRC-20180125-AC-COMMUNICATION",
+      "date": "2018-01-25",
+      "source_class": "CONTEMPORANEOUS_PRIMARY_COMMUNICATION",
+      "actor": "Francisco de Borja Rodríguez-Batllori Laffitte",
+      "capacity_asserted_in_source": "administrador concursal / liquidador",
+      "recipient_context": "communication to Cristo Pimentel concerning DP 1041/2017",
+      "verified_content": [
+        "requested venia",
+        "communicated termination of LPB's existing professional relationship with its lawyer",
+        "instructed that the procurador file no further papers in DP 1041/2017 without his express consent"
+      ],
+      "boundary": "Does not by itself prove personal authorship or filing of the discontinuance, illegality of the representation change, criminal intent, common design or an instruction from an Acosta Matos individual"
     }
   ],
   "closure_trace": {
     "date": "2018-03-05",
-    "type": "DECRETO_DE_ARCHIVO",
-    "state": "STRONGLY_TRACED_PRIMARY_FILE_STILL_TO_RECOVER",
-    "trace_source": "Denuncia Fiscalía Desahucio 19ENE2026 annex list",
-    "not_primary_proven": [
-      "who precisely requested archive",
-      "procedural basis of the archive request",
-      "exact decree reasoning",
+    "type": "DECRETO_000139_2018",
+    "state": "PRIMARY_SOURCE_RECOVERED_AND_READ",
+    "proven": [
+      "LPB as party requested desistimiento",
+      "CAM did not oppose and consented/conformed through 25-Feb-2018 filing registro 1222/18",
+      "sobreseimiento ordered under article 20.3 LEC",
+      "25-Apr-2018 11:15 hearing suspended",
+      "review route stated as recurso de revisión within five days"
+    ],
+    "remaining_not_proven": [
+      "material author and filer of the original LPB discontinuance request",
+      "text and procedural authority asserted in that original request",
+      "full text of CAM filing 1222/18",
       "service or notification of the decree",
-      "finality of the closure sequence"
+      "ultimate finality of the closure sequence"
     ]
   },
   "gaps": [
@@ -113,44 +162,61 @@
     {
       "gap_id": "GC-CIV-003-GAP-20180219",
       "state": "SOURCE_GAP",
-      "description": "Actual 19-Feb-2018 appearance/production result"
-    },
-    {
-      "gap_id": "GC-CIV-003-GAP-20180305-DECREE",
-      "state": "STRONGLY_TRACED_PRIMARY_FILE_STILL_TO_RECOVER",
-      "description": "Standalone primary Decreto de archivo de 05/03/2018"
+      "description": "Actual 19-Feb-2018 appearance/production result and any equivalent disclosure"
     },
     {
       "gap_id": "GC-CIV-003-GAP-ARCHIVE-REQUEST",
       "state": "SOURCE_GAP",
-      "description": "Original archive/desistimiento/request filing and exact procedural authority"
+      "description": "Original LPB discontinuance filing: text, material author, filer and procedural authority/power relied on"
+    },
+    {
+      "gap_id": "GC-CIV-003-GAP-CAM-1222-18",
+      "state": "SOURCE_GAP",
+      "description": "Full primary CAM filing dated 25-Feb-2018, registro 1222/18"
+    },
+    {
+      "gap_id": "GC-CIV-003-GAP-AC-AUTHORITY",
+      "state": "SOURCE_GAP",
+      "description": "Specific legal/power basis relied on by the insolvency administrator to terminate/change LPB's professional representation and restrict further filings"
     },
     {
       "gap_id": "GC-CIV-003-GAP-CLOSURE-SERVICE",
       "state": "SOURCE_GAP",
-      "description": "Service/notification of the 5-Mar decree"
+      "description": "Service/notification of Decree 000139/2018"
     },
     {
       "gap_id": "GC-CIV-003-GAP-CLOSURE-FINALITY",
       "state": "SOURCE_GAP",
-      "description": "Finality of the closure sequence"
+      "description": "Ultimate finality of the closure sequence"
+    },
+    {
+      "gap_id": "GC-CIV-003-GAP-INDIVIDUAL-PRIVATE-ACTOR-LINK",
+      "state": "SOURCE_GAP",
+      "description": "Any primary communication or instruction linking an identified Acosta Matos individual to LPB's discontinuance decision"
     }
   ],
   "closed_gaps": [
     "Preceding signed 19-Dec-2017 Auto",
     "Finality of the 19-Dec-2017 Auto only",
     "Positive CAM citation/requerimiento on 18-Jan-2018",
-    "CAM appearance/opposition"
+    "CAM appearance/opposition",
+    "Standalone primary Decree 000139/2018 dated 05-Mar-2018",
+    "Party-level identity of discontinuance requester as recorded by the court: LPB",
+    "Court-recorded CAM non-opposition/consent through filing 1222/18",
+    "Court-recorded suspension of the 25-Apr-2018 11:15 hearing",
+    "Review route stated in Decree 000139/2018"
   ],
   "targeted_recovery_20260903": {
-    "drive": "No standalone 19-Feb result or 5-Mar decree surfaced in targeted exact/near-exact searches or the DILIGENCIA PRELIMINAR / TANTEO Y RETRACTO source folders",
-    "gmail": "No exact case-number hit around 19-Feb or 5-Mar; no date/actor-scoped 5-Mar result",
-    "secondary_lead": "A legacy 2020 litigation spreadsheet reports an archive after CAM appeared but misidentifies the court as Arrecife; retained only as a recovery lead"
+    "decree_recovery": "Recovered through Javier Sixto's 23-Apr-2025 filing-transmission email as standalone attachment 'Documento N 11 - Decreto 5 de marzo.pdf' and visually verified as primary judicial source",
+    "ac_communication": "Contemporaneous 25-Jan-2018 communication recovered and treated as primary evidence of intervention in LPB's legal representation",
+    "boundary": "No broad Gmail/Drive rediscovery required; remaining recovery is limited to named SOURCE_GAPs"
   },
   "next_p0": [
-    "actual 19-Feb-2018 act/result",
-    "standalone 5-Mar-2018 decree",
-    "underlying archive/desistimiento request",
-    "service and finality of closure sequence"
+    "actual 19-Feb-2018 act/result and any equivalent disclosure",
+    "original LPB discontinuance filing and procedural authority/power",
+    "full CAM filing dated 25-Feb-2018, registro 1222/18",
+    "specific legal/power basis for the AC representation intervention",
+    "service and ultimate finality of Decree 000139/2018",
+    "any primary individual-actor instruction connecting an Acosta Matos person to the discontinuance"
   ]
 }
