@@ -20,7 +20,7 @@ EXPECTED_FISCALIA_IDS = {
     "GC-FIS-015", "GC-FIS-016", "GC-FIS-017", "GC-FIS-018", "LZ-FIS-036",
     "LZ-FIS-045", "TF-FIS-007", "GC-FIS-032", "TF-FIS-008", "GC-FIS-033",
     "NAT-FIS-004", "GC-FIS-034", "NAT-FIS-005", "GC-FIS-035", "NAT-FIS-006",
-    "NAT-FIS-007", "TF-FIS-009", "TF-FIS-010", "UNK-FIS-001",
+    "NAT-FIS-007", "LZ-FIS-049", "LZ-FIS-051", "TF-FIS-009", "TF-FIS-010", "UNK-FIS-001",
 }
 FORBIDDEN_PUBLIC_KEYS = {
     "recipient_email", "sender_email", "message_id", "thread_id", "account_id",
@@ -84,9 +84,9 @@ def main() -> int:
         errors,
     )
     require(payload["coverage"].get("matter_linked_events") == 117, "matter-linked event denominator mismatch", errors)
-    require(payload["coverage"].get("fiscalia_exact_files") == 21, "exact Fiscalía denominator mismatch", errors)
+    require(payload["coverage"].get("fiscalia_exact_files") == 23, "exact Fiscalía denominator mismatch", errors)
     require(payload["coverage"].get("fiscalia_unresolved_references") == 3, "unresolved Fiscalía denominator mismatch", errors)
-    require(payload["coverage"].get("fiscalia_identity_total") == 24, "Fiscalía total denominator mismatch", errors)
+    require(payload["coverage"].get("fiscalia_identity_total") == 26, "Fiscalía total denominator mismatch", errors)
     require(len(payload.get("priority_chains", [])) == 9, "priority chain denominator mismatch", errors)
     require(not payload["coverage"].get("unresolved_matter_reference_literals"), "matter references remain orphaned", errors)
     require(all(event.get("allocation_state") and event.get("interconnectivity_scope") for event in payload["events"]), "an event lacks allocation/scope", errors)
@@ -146,7 +146,7 @@ def main() -> int:
         return 1
     print("OK: Fiscalía communications/proceedings interconnectivity is complete, reciprocal, public-safe and deterministic")
     print(f"- events: {len(projected_ids)}; event/proceeding edges: {len(proceeding_edges)}; event/event edges: {len(event_edges)}")
-    print("- Fiscalía identities: 21 exact + 3 unresolved; priority chains: 9")
+    print("- Fiscalía identities: 23 exact + 3 unresolved; priority chains: 9")
     return 0
 
 

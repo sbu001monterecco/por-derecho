@@ -12,7 +12,7 @@ try {
   const data = await dataResponse.json();
   if (data.coverage.communication_events !== 296) fail('communication denominator is not 296');
   if (data.coverage.matter_linked_events !== 117) fail('matter-linked denominator is not 117');
-  if (data.coverage.fiscalia_exact_files !== 21 || data.coverage.fiscalia_unresolved_references !== 3) fail('Fiscalía identity denominator is not 21 + 3');
+  if (data.coverage.fiscalia_exact_files !== 23 || data.coverage.fiscalia_unresolved_references !== 3) fail('Fiscalía identity denominator is not 23 + 3');
   if (data.event_proceeding_edges.length !== 139 || data.event_event_edges.length !== 84) fail('graph edge denominator changed');
   if (data.priority_chains.length !== 9) fail('priority-chain denominator is not nine');
   await context.close();
@@ -30,7 +30,7 @@ try {
     if (!response?.ok()) fail(`${route.lang}: specialist route returned ${response?.status()}`);
     await page.waitForSelector('[data-mf-files] [data-file="NAT-FIS-004"][aria-current="true"]');
     if (await page.locator('.pd-mf-metric').count() !== 6) fail(`${route.lang}: expected six headline metrics`);
-    if (await page.locator('[data-mf-files] [data-file]').count() !== 25) fail(`${route.lang}: expected all + 24 file controls`);
+    if (await page.locator('[data-mf-files] [data-file]').count() !== 27) fail(`${route.lang}: expected all + 26 file controls`);
     if (await page.locator('[data-mf-chains] .pd-mf-chain').count() !== 9) fail(`${route.lang}: expected nine priority chains`);
     const detail = page.locator('[data-mf-detail]');
     if (!(await detail.innerText()).includes('NAT-FIS-004')) fail(`${route.lang}: deep-linked file was not rendered`);

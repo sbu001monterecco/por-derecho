@@ -30,8 +30,8 @@
     "CURRENT_CANONICAL_EXACT": 107,
     "CURRENT_PUBLIC_EXACT": 106,
     "CURRENT_PRIVATE_EXACT": 1,
-    "CURRENT_CASE_PRISM_EXACT_COVERED": 43,
-    "CURRENT_CASE_PRISM_EXACT_UNCOVERED": 63,
+    "CURRENT_CASE_PRISM_EXACT_COVERED": 45,
+    "CURRENT_CASE_PRISM_EXACT_UNCOVERED": 61,
     "CURRENT_DIRECT_PAIRS": 39,
     "CURRENT_VERIFIED_DIRECT_PAIRS": 34,
     "CURRENT_PENDING_DIRECT_PAIRS": 5,
@@ -61,7 +61,7 @@
       "resource": ".github/workflows/backfill-historic-proceedings-search-20260902.yml",
       "git_status": "A",
       "preintegration_main_sha256": null,
-      "candidate_sha256": "724aadbc84f217a2b566d236573bc315cd119424ac1f6bfcdf15a30c198b1e39",
+      "candidate_sha256": "94883eb62245a2a999a39300667dc8a7eb5d99b14cf36af23859c85bc72cd49c",
       "historical_anchors": [],
       "reason": "Current-main reintegration of the controlled historic-proceedings, justice-authority, bilingual page/search and validation architecture."
     },
@@ -185,7 +185,7 @@
       "resource": "assets/data/proceedings-interconnectivity-schema-v1.json",
       "git_status": "M",
       "preintegration_main_sha256": "15bd61c10266b48c4444050f95db75ba9242408eb26c2d3e0319fbfb865e59d6",
-      "candidate_sha256": "4f0ff67f1422ee90d16df673f124914f6b21227660982e6ae8c3528b7e0ca53c",
+      "candidate_sha256": "0032f5529ff93c2ce6d3353201d4cff6872de18ffb325b7680e897330a87bc80",
       "historical_anchors": [
         {
           "manifest": "publication-manifests/dp748-appeal-reopening-source-control-20260901.json",
@@ -200,7 +200,7 @@
       "resource": "assets/data/proceedings-interlinkability-v1.json",
       "git_status": "M",
       "preintegration_main_sha256": "87487072e2f1af6b8bdb2a92db5b1f950729fdb843a5ee3e555b46c8cce6c588",
-      "candidate_sha256": "9879d5a0ad520673fdd2ca1345c9e66e8f34686607e37ecedea7969997081a84",
+      "candidate_sha256": "7fac5703bce3b659df29e4fe9f1932f5d7c0d6f78f4050b8d591bdcffebc23dc",
       "historical_anchors": [
         {
           "manifest": "publication-manifests/case-prism-substantive-gap-closure-20260831.json",
@@ -256,7 +256,7 @@
       "resource": "en/historic-arrecife-justice-authority-register/index.html",
       "git_status": "A",
       "preintegration_main_sha256": null,
-      "candidate_sha256": "74126cdc65893cc5bae2be8bf9765a3420aecf134a81e819889bdee789fdb2cb",
+      "candidate_sha256": "a55ffe80deaeda6db6e3bf5ac8c7b5b5ea19bcd36c8df96236c372b7955c97c6",
       "historical_anchors": [],
       "reason": "Current-main reintegration of the controlled historic-proceedings, justice-authority, bilingual page/search and validation architecture."
     },
@@ -359,7 +359,7 @@
       "resource": "en/proceedings/gc-civ-003/index.html",
       "git_status": "A",
       "preintegration_main_sha256": null,
-      "candidate_sha256": "7c2c4e502fd702506d807e7ffd656a2b71a78d3a74e2d06ce7db26cfd3e8dacc",
+      "candidate_sha256": "b5bfd0ae672028250c98074838c57ed776b3494bed7e513cca93fc46709a6f87",
       "historical_anchors": [],
       "reason": "Current-main reintegration of the controlled historic-proceedings, justice-authority, bilingual page/search and validation architecture."
     },
@@ -1407,7 +1407,7 @@
       "resource": "es/procedimientos/gc-civ-003/index.html",
       "git_status": "A",
       "preintegration_main_sha256": null,
-      "candidate_sha256": "cd4565a9ebd639c2614d67315a09048c5d875dd1e30eb0cc23e2814df797a901",
+      "candidate_sha256": "ce630cbd47534997e96ef98f3db1dc5024e9adba5e5d323823ded7820b513c49",
       "historical_anchors": [],
       "reason": "Current-main reintegration of the controlled historic-proceedings, justice-authority, bilingual page/search and validation architecture."
     },
@@ -2391,7 +2391,7 @@
       "resource": "es/registro-autoridad-historica-arrecife/index.html",
       "git_status": "A",
       "preintegration_main_sha256": null,
-      "candidate_sha256": "353c398829f80e41b0e3d66462bb8767cabafee8f99a05c21f776fba569a6cda",
+      "candidate_sha256": "a98ecfea04d246b830511f0db9981f6247d77e2625f1af8b50658d468655b745",
       "historical_anchors": [],
       "reason": "Current-main reintegration of the controlled historic-proceedings, justice-authority, bilingual page/search and validation architecture."
     },
@@ -2534,7 +2534,7 @@
       "resource": "scripts/audit_proceedings_interconnectivity_map.py",
       "git_status": "M",
       "preintegration_main_sha256": "5358ab3548cf3d405099b9309d86604262c309bfe2ff1a796277aa65324e8649",
-      "candidate_sha256": "0c5dd864bd9278a233d4d281fe74854ca340e888a38bd557f72391f50f2352fc",
+      "candidate_sha256": "dcb17a98770d70cd69c3d8b4d3b2cd3947e4721e823ff7bf547cb5970f9034f8",
       "historical_anchors": [],
       "reason": "Current-main reintegration of the controlled historic-proceedings, justice-authority, bilingual page/search and validation architecture."
     },
@@ -2542,7 +2542,7 @@
       "resource": "scripts/build_proceedings_interlinkability_v1.py",
       "git_status": "M",
       "preintegration_main_sha256": "14c2f89d0af2723587aa2d6f75737815899a35221bd8b19038072ee93b99bf4a",
-      "candidate_sha256": "05603746b50faf79092e43bb43a5afeb345dc634b4fef963566c61a0a962f45e",
+      "candidate_sha256": "e7c4aefcf692b7cb08751cc9a1e99e4f393d7aac9afb811a34c5f52e4392b6e2",
       "historical_anchors": [],
       "reason": "Current-main reintegration of the controlled historic-proceedings, justice-authority, bilingual page/search and validation architecture."
     },

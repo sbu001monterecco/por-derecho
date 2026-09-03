@@ -1,13 +1,13 @@
 {
   "schema_version": "1.0.0",
   "dataset": "fiscalia-proceedings-interconnectivity-v1",
-  "control_date": "2026-08-31",
+  "control_date": "2026-09-03",
   "status": "PUBLIC_SAFE_DERIVED_INTERCONNECTIVITY_PROJECTION",
   "canonical_sources": {
     "communications_register": "assets/data/institutional-communications-register-v1.json",
     "communications_sha256": "04eda9a473d07419c1d1d0941b9123d1497f7329366998a9f4cf76221910bbed",
     "proceedings_master": "archive/PROCEEDINGS_MASTER_REGISTER.csv",
-    "proceedings_master_sha256": "38232d990a5b418d89d9653725452d584320b191a23cceba381a679873b70fe8",
+    "proceedings_master_sha256": "c3d3d025fa69b1e8b1d3cc7ea8e8d44cd622aeba4d33f7cf3f230a4a39cf9bb9",
     "public_proceedings_projection": "assets/data/proceedings-master-public-v1.json",
     "link_assertions": "assets/data/fiscalia-proceedings-link-assertions-v1.json",
     "link_assertions_sha256": "18427814dd0a8d412f989458c7058ca2ae490fbf80ae35535042a6e113fa0392"
@@ -23,9 +23,9 @@
     "support_reference_only_events": 2,
     "event_proceeding_edges": 139,
     "event_event_edges": 84,
-    "fiscalia_exact_files": 21,
+    "fiscalia_exact_files": 23,
     "fiscalia_unresolved_references": 3,
-    "fiscalia_identity_total": 24,
+    "fiscalia_identity_total": 26,
     "allocation_counts": {
       "DRAFT": 3,
       "PROCEEDING_LINKED": 107,
@@ -12401,6 +12401,52 @@
       "latest_known_event": "31-Aug-2026 mailbox/REGAGE control retained EG 58/2026 as SOURCE REQUIRED",
       "source_status": "OPEN_REFERENCE",
       "open_reference_gap": "Discrete official act; exact office and file class; NIG; object; dates; signatory; status; relationships and outcome",
+      "linked_event_ids": [],
+      "linked_judicial_master_ids": [],
+      "counts": {
+        "events": 0,
+        "outbound": 0,
+        "inbound": 0,
+        "institution_to_institution": 0,
+        "official_acts_or_decisions": 0,
+        "linked_judicial_proceedings": 0
+      }
+    },
+    {
+      "master_id": "LZ-FIS-049",
+      "identity_state": "EXACT_CANONICAL",
+      "reference": "273/2013",
+      "secondary_reference": "Querella Fiscalía 273-2013 dated 27-Dec-2013",
+      "office": "Historical destination court/file pending certified linkage",
+      "geography": "Las Palmas / Lanzarote",
+      "status": "Primary querella file located in Drive; complete extraction and judicial destination linkage pending",
+      "latest_known_event": "",
+      "source_status": "VERIFIED_PRIMARY_FILE_LOCATED_CONTENT_EXTRACTION_PENDING",
+      "open_reference_gap": "Assigned Fiscal/signatory extraction; judicial destination/NIG; complete investigation file; disposition/finality",
+      "linked_event_ids": [],
+      "linked_judicial_master_ids": [
+        "LZ-JUD-002"
+      ],
+      "counts": {
+        "events": 0,
+        "outbound": 0,
+        "inbound": 0,
+        "institution_to_institution": 0,
+        "official_acts_or_decisions": 0,
+        "linked_judicial_proceedings": 1
+      }
+    },
+    {
+      "master_id": "LZ-FIS-051",
+      "identity_state": "EXACT_CANONICAL",
+      "reference": "302/2018",
+      "secondary_reference": "",
+      "office": "Fiscalía Provincial de Las Palmas",
+      "geography": "Las Palmas",
+      "status": "Controlled historical inventory identifies reference; complete Fiscalía file pending",
+      "latest_known_event": "",
+      "source_status": "CORPUS_REPORTED_PRIMARY_PENDING",
+      "open_reference_gap": "Exact Fiscalía file class; assigned Fiscal/signatory; opening and archive decrees; annexes; notice/finality",
       "linked_event_ids": [],
       "linked_judicial_master_ids": [],
       "counts": {

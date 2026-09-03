@@ -1989,6 +1989,8 @@
         "GC-JUD-001",
         "LZ-FIS-036",
         "LZ-FIS-045",
+        "LZ-FIS-049",
+        "LZ-FIS-051",
         "NAT-FIS-004",
         "NAT-FIS-005",
         "NAT-FIS-006",
@@ -2016,6 +2018,8 @@
         "GC-JUD-001",
         "LZ-FIS-036",
         "LZ-FIS-045",
+        "LZ-FIS-049",
+        "LZ-FIS-051",
         "NAT-FIS-004",
         "NAT-FIS-005",
         "NAT-FIS-006",
@@ -2260,6 +2264,8 @@
         "LZ-FIS-007",
         "LZ-FIS-036",
         "LZ-FIS-045",
+        "LZ-FIS-049",
+        "LZ-FIS-051",
         "NAT-FIS-004",
         "NAT-FIS-005",
         "NAT-FIS-006",
@@ -2287,6 +2293,8 @@
         "LZ-FIS-007",
         "LZ-FIS-036",
         "LZ-FIS-045",
+        "LZ-FIS-049",
+        "LZ-FIS-051",
         "NAT-FIS-004",
         "NAT-FIS-005",
         "NAT-FIS-006",
@@ -2516,6 +2524,8 @@
         "LZ-FIS-007",
         "LZ-FIS-036",
         "LZ-FIS-045",
+        "LZ-FIS-049",
+        "LZ-FIS-051",
         "NAT-FIS-004",
         "NAT-FIS-005",
         "NAT-FIS-006",
@@ -2543,6 +2553,8 @@
         "LZ-FIS-007",
         "LZ-FIS-036",
         "LZ-FIS-045",
+        "LZ-FIS-049",
+        "LZ-FIS-051",
         "NAT-FIS-004",
         "NAT-FIS-005",
         "NAT-FIS-006",
@@ -2776,6 +2788,8 @@
         "LZ-FIS-007",
         "LZ-FIS-036",
         "LZ-FIS-045",
+        "LZ-FIS-049",
+        "LZ-FIS-051",
         "LZ-JUD-001",
         "LZ-JUD-003",
         "LZ-JUD-005",
@@ -2820,6 +2834,8 @@
         "LZ-FIS-007",
         "LZ-FIS-036",
         "LZ-FIS-045",
+        "LZ-FIS-049",
+        "LZ-FIS-051",
         "LZ-JUD-001",
         "LZ-JUD-003",
         "LZ-JUD-005",
@@ -3071,6 +3087,8 @@
         "LZ-FIS-007",
         "LZ-FIS-036",
         "LZ-FIS-045",
+        "LZ-FIS-049",
+        "LZ-FIS-051",
         "LZ-JUD-046",
         "NAT-FIS-004",
         "NAT-FIS-005",
@@ -3102,6 +3120,8 @@
         "LZ-FIS-007",
         "LZ-FIS-036",
         "LZ-FIS-045",
+        "LZ-FIS-049",
+        "LZ-FIS-051",
         "NAT-FIS-004",
         "NAT-FIS-005",
         "NAT-FIS-006",
@@ -3331,6 +3351,8 @@
         "LZ-FIS-007",
         "LZ-FIS-036",
         "LZ-FIS-045",
+        "LZ-FIS-049",
+        "LZ-FIS-051",
         "NAT-FIS-004",
         "NAT-FIS-005",
         "NAT-FIS-006",
@@ -3360,6 +3382,8 @@
         "LZ-FIS-007",
         "LZ-FIS-036",
         "LZ-FIS-045",
+        "LZ-FIS-049",
+        "LZ-FIS-051",
         "NAT-FIS-004",
         "NAT-FIS-005",
         "NAT-FIS-006",
@@ -3586,6 +3610,8 @@
         "LZ-FIS-007",
         "LZ-FIS-036",
         "LZ-FIS-045",
+        "LZ-FIS-049",
+        "LZ-FIS-051",
         "NAT-FIS-004",
         "NAT-FIS-005",
         "NAT-FIS-006",
@@ -3617,6 +3643,8 @@
         "LZ-FIS-007",
         "LZ-FIS-036",
         "LZ-FIS-045",
+        "LZ-FIS-049",
+        "LZ-FIS-051",
         "NAT-FIS-004",
         "NAT-FIS-005",
         "NAT-FIS-006",
@@ -3868,6 +3896,8 @@
         "LZ-FIS-007",
         "LZ-FIS-036",
         "LZ-FIS-045",
+        "LZ-FIS-049",
+        "LZ-FIS-051",
         "LZ-JUD-001",
         "LZ-JUD-003",
         "LZ-JUD-005",
@@ -3912,6 +3942,8 @@
         "LZ-FIS-007",
         "LZ-FIS-036",
         "LZ-FIS-045",
+        "LZ-FIS-049",
+        "LZ-FIS-051",
         "LZ-JUD-001",
         "LZ-JUD-003",
         "LZ-JUD-005",
@@ -4168,6 +4200,8 @@
         "LZ-FIS-007",
         "LZ-FIS-036",
         "LZ-FIS-045",
+        "LZ-FIS-049",
+        "LZ-FIS-051",
         "LZ-JUD-001",
         "LZ-JUD-003",
         "LZ-JUD-005",
@@ -4211,6 +4245,8 @@
         "LZ-FIS-007",
         "LZ-FIS-036",
         "LZ-FIS-045",
+        "LZ-FIS-049",
+        "LZ-FIS-051",
         "LZ-JUD-001",
         "LZ-JUD-003",
         "LZ-JUD-005",
@@ -4449,6 +4485,8 @@
         "GC-JUD-001",
         "LZ-FIS-007",
         "LZ-FIS-045",
+        "LZ-FIS-049",
+        "LZ-FIS-051",
         "NAT-FIS-004",
         "NAT-FIS-005",
         "NAT-FIS-006",
@@ -4476,6 +4514,8 @@
         "GC-JUD-001",
         "LZ-FIS-007",
         "LZ-FIS-045",
+        "LZ-FIS-049",
+        "LZ-FIS-051",
         "NAT-FIS-004",
         "NAT-FIS-005",
         "NAT-FIS-006",
@@ -4687,6 +4727,8 @@
         "GC-JUD-001",
         "LZ-FIS-007",
         "LZ-FIS-036",
+        "LZ-FIS-049",
+        "LZ-FIS-051",
         "NAT-FIS-004",
         "NAT-FIS-005",
         "NAT-FIS-006",
@@ -4714,6 +4756,8 @@
         "GC-JUD-001",
         "LZ-FIS-007",
         "LZ-FIS-036",
+        "LZ-FIS-049",
+        "LZ-FIS-051",
         "NAT-FIS-004",
         "NAT-FIS-005",
         "NAT-FIS-006",
@@ -4926,6 +4970,8 @@
         "LZ-FIS-007",
         "LZ-FIS-036",
         "LZ-FIS-045",
+        "LZ-FIS-049",
+        "LZ-FIS-051",
         "NAT-FIS-004",
         "NAT-FIS-005",
         "NAT-FIS-006",
@@ -4956,6 +5002,8 @@
         "LZ-FIS-007",
         "LZ-FIS-036",
         "LZ-FIS-045",
+        "LZ-FIS-049",
+        "LZ-FIS-051",
         "NAT-FIS-004",
         "NAT-FIS-005",
         "NAT-FIS-006",
@@ -5166,6 +5214,8 @@
         "LZ-FIS-007",
         "LZ-FIS-036",
         "LZ-FIS-045",
+        "LZ-FIS-049",
+        "LZ-FIS-051",
         "NAT-FIS-004",
         "NAT-FIS-005",
         "NAT-FIS-006",
@@ -5193,6 +5243,8 @@
         "LZ-FIS-007",
         "LZ-FIS-036",
         "LZ-FIS-045",
+        "LZ-FIS-049",
+        "LZ-FIS-051",
         "NAT-FIS-004",
         "NAT-FIS-005",
         "NAT-FIS-006",
@@ -5405,6 +5457,8 @@
         "LZ-FIS-007",
         "LZ-FIS-036",
         "LZ-FIS-045",
+        "LZ-FIS-049",
+        "LZ-FIS-051",
         "NAT-FIS-004",
         "NAT-FIS-005",
         "NAT-FIS-006",
@@ -5440,6 +5494,8 @@
         "LZ-FIS-007",
         "LZ-FIS-036",
         "LZ-FIS-045",
+        "LZ-FIS-049",
+        "LZ-FIS-051",
         "NAT-FIS-004",
         "NAT-FIS-005",
         "NAT-FIS-006",
@@ -5650,6 +5706,8 @@
         "LZ-FIS-007",
         "LZ-FIS-036",
         "LZ-FIS-045",
+        "LZ-FIS-049",
+        "LZ-FIS-051",
         "NAT-FIS-004",
         "NAT-FIS-005",
         "NAT-FIS-006",
@@ -5679,6 +5737,8 @@
         "LZ-FIS-007",
         "LZ-FIS-036",
         "LZ-FIS-045",
+        "LZ-FIS-049",
+        "LZ-FIS-051",
         "NAT-FIS-004",
         "NAT-FIS-005",
         "NAT-FIS-006",
@@ -5907,6 +5967,8 @@
         "LZ-FIS-007",
         "LZ-FIS-036",
         "LZ-FIS-045",
+        "LZ-FIS-049",
+        "LZ-FIS-051",
         "NAT-FIS-005",
         "NAT-FIS-006",
         "NAT-FIS-007",
@@ -5941,6 +6003,8 @@
         "LZ-FIS-007",
         "LZ-FIS-036",
         "LZ-FIS-045",
+        "LZ-FIS-049",
+        "LZ-FIS-051",
         "NAT-FIS-005",
         "NAT-FIS-006",
         "NAT-FIS-007",
@@ -6169,6 +6233,8 @@
         "LZ-FIS-007",
         "LZ-FIS-036",
         "LZ-FIS-045",
+        "LZ-FIS-049",
+        "LZ-FIS-051",
         "NAT-FIS-004",
         "NAT-FIS-005",
         "NAT-FIS-006",
@@ -6196,6 +6262,8 @@
         "LZ-FIS-007",
         "LZ-FIS-036",
         "LZ-FIS-045",
+        "LZ-FIS-049",
+        "LZ-FIS-051",
         "NAT-FIS-004",
         "NAT-FIS-005",
         "NAT-FIS-006",
@@ -6408,6 +6476,8 @@
         "LZ-FIS-007",
         "LZ-FIS-036",
         "LZ-FIS-045",
+        "LZ-FIS-049",
+        "LZ-FIS-051",
         "NAT-FIS-004",
         "NAT-FIS-006",
         "NAT-FIS-007",
@@ -6435,6 +6505,8 @@
         "LZ-FIS-007",
         "LZ-FIS-036",
         "LZ-FIS-045",
+        "LZ-FIS-049",
+        "LZ-FIS-051",
         "NAT-FIS-004",
         "NAT-FIS-006",
         "NAT-FIS-007",
@@ -6645,6 +6717,8 @@
         "LZ-FIS-007",
         "LZ-FIS-036",
         "LZ-FIS-045",
+        "LZ-FIS-049",
+        "LZ-FIS-051",
         "NAT-FIS-004",
         "NAT-FIS-005",
         "NAT-FIS-006",
@@ -6672,6 +6746,8 @@
         "LZ-FIS-007",
         "LZ-FIS-036",
         "LZ-FIS-045",
+        "LZ-FIS-049",
+        "LZ-FIS-051",
         "NAT-FIS-004",
         "NAT-FIS-005",
         "NAT-FIS-006",
@@ -6884,6 +6960,8 @@
         "LZ-FIS-007",
         "LZ-FIS-036",
         "LZ-FIS-045",
+        "LZ-FIS-049",
+        "LZ-FIS-051",
         "NAT-FIS-004",
         "NAT-FIS-005",
         "NAT-FIS-007",
@@ -6911,6 +6989,8 @@
         "LZ-FIS-007",
         "LZ-FIS-036",
         "LZ-FIS-045",
+        "LZ-FIS-049",
+        "LZ-FIS-051",
         "NAT-FIS-004",
         "NAT-FIS-005",
         "NAT-FIS-007",
@@ -7122,6 +7202,8 @@
         "LZ-FIS-007",
         "LZ-FIS-036",
         "LZ-FIS-045",
+        "LZ-FIS-049",
+        "LZ-FIS-051",
         "NAT-FIS-004",
         "NAT-FIS-005",
         "NAT-FIS-006",
@@ -7149,6 +7231,8 @@
         "LZ-FIS-007",
         "LZ-FIS-036",
         "LZ-FIS-045",
+        "LZ-FIS-049",
+        "LZ-FIS-051",
         "NAT-FIS-004",
         "NAT-FIS-005",
         "NAT-FIS-006",
@@ -7905,12 +7989,65 @@
         "es": "No se ha localizado en el corpus controlado un inventario completo elemento por elemento del material recibido."
       },
       "related_master_ids": [
-        "LZ-JUD-002"
+        "GC-APP-004",
+        "GC-FIS-011",
+        "GC-FIS-012",
+        "GC-FIS-013",
+        "GC-FIS-014",
+        "GC-FIS-015",
+        "GC-FIS-016",
+        "GC-FIS-017",
+        "GC-FIS-018",
+        "GC-FIS-032",
+        "GC-FIS-033",
+        "GC-FIS-034",
+        "GC-FIS-035",
+        "GC-GOV-019",
+        "GC-GOV-020",
+        "GC-JUD-001",
+        "LZ-FIS-007",
+        "LZ-FIS-036",
+        "LZ-FIS-045",
+        "LZ-FIS-051",
+        "LZ-JUD-002",
+        "NAT-FIS-004",
+        "NAT-FIS-005",
+        "NAT-FIS-006",
+        "NAT-FIS-007",
+        "TF-FIS-007",
+        "TF-FIS-008"
       ],
       "related_direct_master_ids": [
         "LZ-JUD-002"
       ],
-      "related_context_master_ids": [],
+      "related_context_master_ids": [
+        "GC-APP-004",
+        "GC-FIS-011",
+        "GC-FIS-012",
+        "GC-FIS-013",
+        "GC-FIS-014",
+        "GC-FIS-015",
+        "GC-FIS-016",
+        "GC-FIS-017",
+        "GC-FIS-018",
+        "GC-FIS-032",
+        "GC-FIS-033",
+        "GC-FIS-034",
+        "GC-FIS-035",
+        "GC-GOV-019",
+        "GC-GOV-020",
+        "GC-JUD-001",
+        "LZ-FIS-007",
+        "LZ-FIS-036",
+        "LZ-FIS-045",
+        "LZ-FIS-051",
+        "NAT-FIS-004",
+        "NAT-FIS-005",
+        "NAT-FIS-006",
+        "NAT-FIS-007",
+        "TF-FIS-007",
+        "TF-FIS-008"
+      ],
       "related_proceedings_status": "CONTROLLED_NAVIGATION_ONLY",
       "related_assets": [],
       "related_assets_status": "NOT_LOCATED",
@@ -8096,17 +8233,71 @@
         "en": "No complete item-by-item received-material inventory has been located in the controlled corpus.",
         "es": "No se ha localizado en el corpus controlado un inventario completo elemento por elemento del material recibido."
       },
-      "related_master_ids": [],
+      "related_master_ids": [
+        "GC-APP-004",
+        "GC-FIS-011",
+        "GC-FIS-012",
+        "GC-FIS-013",
+        "GC-FIS-014",
+        "GC-FIS-015",
+        "GC-FIS-016",
+        "GC-FIS-017",
+        "GC-FIS-018",
+        "GC-FIS-032",
+        "GC-FIS-033",
+        "GC-FIS-034",
+        "GC-FIS-035",
+        "GC-GOV-019",
+        "GC-GOV-020",
+        "GC-JUD-001",
+        "LZ-FIS-007",
+        "LZ-FIS-036",
+        "LZ-FIS-045",
+        "LZ-FIS-049",
+        "NAT-FIS-004",
+        "NAT-FIS-005",
+        "NAT-FIS-006",
+        "NAT-FIS-007",
+        "TF-FIS-007",
+        "TF-FIS-008"
+      ],
       "related_direct_master_ids": [],
-      "related_context_master_ids": [],
-      "related_proceedings_status": "NOT_LOCATED",
+      "related_context_master_ids": [
+        "GC-APP-004",
+        "GC-FIS-011",
+        "GC-FIS-012",
+        "GC-FIS-013",
+        "GC-FIS-014",
+        "GC-FIS-015",
+        "GC-FIS-016",
+        "GC-FIS-017",
+        "GC-FIS-018",
+        "GC-FIS-032",
+        "GC-FIS-033",
+        "GC-FIS-034",
+        "GC-FIS-035",
+        "GC-GOV-019",
+        "GC-GOV-020",
+        "GC-JUD-001",
+        "LZ-FIS-007",
+        "LZ-FIS-036",
+        "LZ-FIS-045",
+        "LZ-FIS-049",
+        "NAT-FIS-004",
+        "NAT-FIS-005",
+        "NAT-FIS-006",
+        "NAT-FIS-007",
+        "TF-FIS-007",
+        "TF-FIS-008"
+      ],
+      "related_proceedings_status": "CONTROLLED_NAVIGATION_ONLY",
       "related_assets": [],
       "related_assets_status": "NOT_LOCATED",
       "related_assets_gap": {
         "en": "No separate source-controlled asset inventory is established by this matrix row.",
         "es": "Esta fila de la matriz no acredita un inventario separado de activos controlado por fuente."
       },
-      "related_proceedings_assets_status": "NOT_LOCATED",
+      "related_proceedings_assets_status": "CONTROLLED_NAVIGATION_ONLY",
       "transmission_status": "NOT_LOCATED",
       "referral_status": "NOT_LOCATED",
       "what_was_referred": {
@@ -10646,7 +10837,9 @@
         "NAT-FIS-005",
         "GC-FIS-035",
         "NAT-FIS-006",
-        "NAT-FIS-007"
+        "NAT-FIS-007",
+        "LZ-FIS-049",
+        "LZ-FIS-051"
       ],
       "why_en": "Each member is explicitly keyed to proposition P05 in a non-OUTSIDE Case Prism coordinate.",
       "why_es": "Cada miembro está vinculado expresamente a la proposición P05 en una coordenada del Prisma distinta de OUTSIDE.",
@@ -10898,6 +11091,26 @@
           },
           {
             "master_id": "NAT-FIS-007",
+            "cell_refs": [
+              "P05/fiscalia"
+            ],
+            "cell_statuses": [
+              "DIRECT"
+            ],
+            "evidence_status": "MULTIPLE_VERIFIED_AND_OPEN_FISCALIA_FILES"
+          },
+          {
+            "master_id": "LZ-FIS-049",
+            "cell_refs": [
+              "P05/fiscalia"
+            ],
+            "cell_statuses": [
+              "DIRECT"
+            ],
+            "evidence_status": "MULTIPLE_VERIFIED_AND_OPEN_FISCALIA_FILES"
+          },
+          {
+            "master_id": "LZ-FIS-051",
             "cell_refs": [
               "P05/fiscalia"
             ],
@@ -13711,6 +13924,8 @@
             "GC-JUD-001",
             "LZ-FIS-036",
             "LZ-FIS-045",
+            "LZ-FIS-049",
+            "LZ-FIS-051",
             "NAT-FIS-004",
             "NAT-FIS-005",
             "NAT-FIS-006",
@@ -13741,6 +13956,8 @@
             "GC-JUD-001",
             "LZ-FIS-036",
             "LZ-FIS-045",
+            "LZ-FIS-049",
+            "LZ-FIS-051",
             "NAT-FIS-004",
             "NAT-FIS-005",
             "NAT-FIS-006",
@@ -13758,8 +13975,8 @@
           "es": "La disponibilidad lícita, admisibilidad o inclusión en el ámbito de otro expediente o fuente debe determinarse en el procedimiento seleccionado; este modelo de navegación no infiere disponibilidad ni deber de examen."
         },
         "decision_dependency": {
-          "en": "For Expediente Gubernativo 86/2026, the finite decision question is whether the legally competent organ must determine whether the complete prosecution file supports the recorded receipt, allocation, referral, examination, response, closure and cross-file treatment for the recorded object “Competence determination and territorial referral”. Fiscalía de Área de Arrecife de Lanzarote–Puerto del Rosario is only the recorded custodian/organ candidate and is not treated here as legally competent or obliged to act. Controlled navigation currently identifies direct files [none currently admitted] and contextual files [GC-APP-004, GC-FIS-011, GC-FIS-012, GC-FIS-013, GC-FIS-014, GC-FIS-015, GC-FIS-016, GC-FIS-017, GC-FIS-018, GC-FIS-032, GC-FIS-033, GC-FIS-034, GC-FIS-035, GC-GOV-019, GC-GOV-020, GC-JUD-001, LZ-FIS-036, LZ-FIS-045, NAT-FIS-004, NAT-FIS-005, NAT-FIS-006, NAT-FIS-007, TF-FIS-007, TF-FIS-008]. Their presence does not establish receipt, admissibility or a duty to consider them.",
-          "es": "Para Expediente Gubernativo 86/2026, la cuestión decisoria finita es si el órgano legalmente competente debe determinar si el expediente fiscal completo sustenta la recepción, reparto, remisión, examen, respuesta, archivo y tratamiento entre expedientes registrados respecto del objeto registrado «Competence determination and territorial referral». Fiscalía de Área de Arrecife de Lanzarote–Puerto del Rosario es solo el candidato registrado como custodio/órgano y aquí no se le atribuye competencia jurídica ni obligación de actuar. La navegación controlada identifica actualmente expedientes directos [ninguno admitido actualmente] y contextuales [GC-APP-004, GC-FIS-011, GC-FIS-012, GC-FIS-013, GC-FIS-014, GC-FIS-015, GC-FIS-016, GC-FIS-017, GC-FIS-018, GC-FIS-032, GC-FIS-033, GC-FIS-034, GC-FIS-035, GC-GOV-019, GC-GOV-020, GC-JUD-001, LZ-FIS-036, LZ-FIS-045, NAT-FIS-004, NAT-FIS-005, NAT-FIS-006, NAT-FIS-007, TF-FIS-007, TF-FIS-008]. Su presencia no acredita recepción, admisibilidad ni deber de examinarlos."
+          "en": "For Expediente Gubernativo 86/2026, the finite decision question is whether the legally competent organ must determine whether the complete prosecution file supports the recorded receipt, allocation, referral, examination, response, closure and cross-file treatment for the recorded object “Competence determination and territorial referral”. Fiscalía de Área de Arrecife de Lanzarote–Puerto del Rosario is only the recorded custodian/organ candidate and is not treated here as legally competent or obliged to act. Controlled navigation currently identifies direct files [none currently admitted] and contextual files [GC-APP-004, GC-FIS-011, GC-FIS-012, GC-FIS-013, GC-FIS-014, GC-FIS-015, GC-FIS-016, GC-FIS-017, GC-FIS-018, GC-FIS-032, GC-FIS-033, GC-FIS-034, GC-FIS-035, GC-GOV-019, GC-GOV-020, GC-JUD-001, LZ-FIS-036, LZ-FIS-045, LZ-FIS-049, LZ-FIS-051, NAT-FIS-004, NAT-FIS-005, NAT-FIS-006, NAT-FIS-007, TF-FIS-007, TF-FIS-008]. Their presence does not establish receipt, admissibility or a duty to consider them.",
+          "es": "Para Expediente Gubernativo 86/2026, la cuestión decisoria finita es si el órgano legalmente competente debe determinar si el expediente fiscal completo sustenta la recepción, reparto, remisión, examen, respuesta, archivo y tratamiento entre expedientes registrados respecto del objeto registrado «Competence determination and territorial referral». Fiscalía de Área de Arrecife de Lanzarote–Puerto del Rosario es solo el candidato registrado como custodio/órgano y aquí no se le atribuye competencia jurídica ni obligación de actuar. La navegación controlada identifica actualmente expedientes directos [ninguno admitido actualmente] y contextuales [GC-APP-004, GC-FIS-011, GC-FIS-012, GC-FIS-013, GC-FIS-014, GC-FIS-015, GC-FIS-016, GC-FIS-017, GC-FIS-018, GC-FIS-032, GC-FIS-033, GC-FIS-034, GC-FIS-035, GC-GOV-019, GC-GOV-020, GC-JUD-001, LZ-FIS-036, LZ-FIS-045, LZ-FIS-049, LZ-FIS-051, NAT-FIS-004, NAT-FIS-005, NAT-FIS-006, NAT-FIS-007, TF-FIS-007, TF-FIS-008]. Su presencia no acredita recepción, admisibilidad ni deber de examinarlos."
         },
         "contrary_explanation": {
           "en": "For Expediente Gubernativo 86/2026, the strongest hypothetical innocent or contrary explanation could be a lawful limitation based on competence, territorial routing, duplication, judicialisation, evidential threshold, confidentiality or independent file-specific reasoning, but only if the primary record establishes that the legally competent organ applied it to “Competence determination and territorial referral”. No act is attributed by this model to the recorded candidate Fiscalía de Área de Arrecife de Lanzarote–Puerto del Rosario. A different treatment, missing public inventory or related-file membership alone does not establish concealment, coordination, error or wrongdoing.",
@@ -20628,6 +20845,8 @@
             "LZ-FIS-007",
             "LZ-FIS-036",
             "LZ-FIS-045",
+            "LZ-FIS-049",
+            "LZ-FIS-051",
             "LZ-JUD-001",
             "LZ-JUD-003",
             "LZ-JUD-005",
@@ -20696,6 +20915,8 @@
             "LZ-FIS-007",
             "LZ-FIS-036",
             "LZ-FIS-045",
+            "LZ-FIS-049",
+            "LZ-FIS-051",
             "LZ-JUD-001",
             "LZ-JUD-003",
             "LZ-JUD-005",
@@ -20724,8 +20945,8 @@
           "es": "La disponibilidad lícita, admisibilidad o inclusión en el ámbito de otro expediente o fuente debe determinarse en el procedimiento seleccionado; este modelo de navegación no infiere disponibilidad ni deber de examen."
         },
         "decision_dependency": {
-          "en": "For Concurso ordinario 36/2012, the finite decision question is whether the legally competent organ must determine whether the complete civil file supports the recorded claim, defence, title, enforcement or relief and its appeal/finality status for the recorded object “Core insolvency proceeding”. Juzgado de lo Mercantil nº 1 / Sección Mercantil Plaza 1 is only the recorded custodian/organ candidate and is not treated here as legally competent or obliged to act. Controlled navigation currently identifies direct files [GC-APP-005, GC-APP-006, GC-CAL-002] and contextual files [GC-APP-004, GC-APP-005, GC-APP-006, GC-APP-028, GC-CAL-002, GC-CIV-027, GC-CONT-025, GC-FIS-011, GC-FIS-012, GC-FIS-013, GC-FIS-014, GC-FIS-015, GC-FIS-016, GC-FIS-017, GC-FIS-018, GC-FIS-032, GC-FIS-033, GC-FIS-034, GC-FIS-035, GC-GOV-019, GC-GOV-020, LZ-APP-004, LZ-FIS-007, LZ-FIS-036, LZ-FIS-045, LZ-JUD-001, LZ-JUD-003, LZ-JUD-005, NAT-AID-001, NAT-FIS-004, NAT-FIS-005, NAT-FIS-006, NAT-FIS-007, NAT-TES-001, TF-CIV-001, TF-CIV-002, TF-CRI-003, TF-FIS-007, TF-FIS-008, VAL-CIV-001, X-REG-001]. Their presence does not establish receipt, admissibility or a duty to consider them.",
-          "es": "Para Concurso ordinario 36/2012, la cuestión decisoria finita es si el órgano legalmente competente debe determinar si el expediente civil completo sustenta la pretensión, defensa, título, ejecución o tutela registradas y su estado de recurso/firmeza respecto del objeto registrado «Core insolvency proceeding». Juzgado de lo Mercantil nº 1 / Sección Mercantil Plaza 1 es solo el candidato registrado como custodio/órgano y aquí no se le atribuye competencia jurídica ni obligación de actuar. La navegación controlada identifica actualmente expedientes directos [GC-APP-005, GC-APP-006, GC-CAL-002] y contextuales [GC-APP-004, GC-APP-005, GC-APP-006, GC-APP-028, GC-CAL-002, GC-CIV-027, GC-CONT-025, GC-FIS-011, GC-FIS-012, GC-FIS-013, GC-FIS-014, GC-FIS-015, GC-FIS-016, GC-FIS-017, GC-FIS-018, GC-FIS-032, GC-FIS-033, GC-FIS-034, GC-FIS-035, GC-GOV-019, GC-GOV-020, LZ-APP-004, LZ-FIS-007, LZ-FIS-036, LZ-FIS-045, LZ-JUD-001, LZ-JUD-003, LZ-JUD-005, NAT-AID-001, NAT-FIS-004, NAT-FIS-005, NAT-FIS-006, NAT-FIS-007, NAT-TES-001, TF-CIV-001, TF-CIV-002, TF-CRI-003, TF-FIS-007, TF-FIS-008, VAL-CIV-001, X-REG-001]. Su presencia no acredita recepción, admisibilidad ni deber de examinarlos."
+          "en": "For Concurso ordinario 36/2012, the finite decision question is whether the legally competent organ must determine whether the complete civil file supports the recorded claim, defence, title, enforcement or relief and its appeal/finality status for the recorded object “Core insolvency proceeding”. Juzgado de lo Mercantil nº 1 / Sección Mercantil Plaza 1 is only the recorded custodian/organ candidate and is not treated here as legally competent or obliged to act. Controlled navigation currently identifies direct files [GC-APP-005, GC-APP-006, GC-CAL-002] and contextual files [GC-APP-004, GC-APP-005, GC-APP-006, GC-APP-028, GC-CAL-002, GC-CIV-027, GC-CONT-025, GC-FIS-011, GC-FIS-012, GC-FIS-013, GC-FIS-014, GC-FIS-015, GC-FIS-016, GC-FIS-017, GC-FIS-018, GC-FIS-032, GC-FIS-033, GC-FIS-034, GC-FIS-035, GC-GOV-019, GC-GOV-020, LZ-APP-004, LZ-FIS-007, LZ-FIS-036, LZ-FIS-045, LZ-FIS-049, LZ-FIS-051, LZ-JUD-001, LZ-JUD-003, LZ-JUD-005, NAT-AID-001, NAT-FIS-004, NAT-FIS-005, NAT-FIS-006, NAT-FIS-007, NAT-TES-001, TF-CIV-001, TF-CIV-002, TF-CRI-003, TF-FIS-007, TF-FIS-008, VAL-CIV-001, X-REG-001]. Their presence does not establish receipt, admissibility or a duty to consider them.",
+          "es": "Para Concurso ordinario 36/2012, la cuestión decisoria finita es si el órgano legalmente competente debe determinar si el expediente civil completo sustenta la pretensión, defensa, título, ejecución o tutela registradas y su estado de recurso/firmeza respecto del objeto registrado «Core insolvency proceeding». Juzgado de lo Mercantil nº 1 / Sección Mercantil Plaza 1 es solo el candidato registrado como custodio/órgano y aquí no se le atribuye competencia jurídica ni obligación de actuar. La navegación controlada identifica actualmente expedientes directos [GC-APP-005, GC-APP-006, GC-CAL-002] y contextuales [GC-APP-004, GC-APP-005, GC-APP-006, GC-APP-028, GC-CAL-002, GC-CIV-027, GC-CONT-025, GC-FIS-011, GC-FIS-012, GC-FIS-013, GC-FIS-014, GC-FIS-015, GC-FIS-016, GC-FIS-017, GC-FIS-018, GC-FIS-032, GC-FIS-033, GC-FIS-034, GC-FIS-035, GC-GOV-019, GC-GOV-020, LZ-APP-004, LZ-FIS-007, LZ-FIS-036, LZ-FIS-045, LZ-FIS-049, LZ-FIS-051, LZ-JUD-001, LZ-JUD-003, LZ-JUD-005, NAT-AID-001, NAT-FIS-004, NAT-FIS-005, NAT-FIS-006, NAT-FIS-007, NAT-TES-001, TF-CIV-001, TF-CIV-002, TF-CRI-003, TF-FIS-007, TF-FIS-008, VAL-CIV-001, X-REG-001]. Su presencia no acredita recepción, admisibilidad ni deber de examinarlos."
         },
         "contrary_explanation": {
           "en": "For Concurso ordinario 36/2012, the strongest hypothetical innocent or contrary explanation could be a lawful application of party scope, title, standing, res judicata, evidence, procedural discretion, enforcement or finality rules, but only if the primary record establishes that the legally competent organ applied it to “Core insolvency proceeding”. No act is attributed by this model to the recorded candidate Juzgado de lo Mercantil nº 1 / Sección Mercantil Plaza 1. A different treatment, missing public inventory or related-file membership alone does not establish concealment, coordination, error or wrongdoing.",
@@ -21562,6 +21783,8 @@
             "LZ-FIS-007",
             "LZ-FIS-036",
             "LZ-FIS-045",
+            "LZ-FIS-049",
+            "LZ-FIS-051",
             "LZ-JUD-001",
             "LZ-JUD-003",
             "LZ-JUD-005",
@@ -21623,6 +21846,8 @@
             "LZ-FIS-007",
             "LZ-FIS-036",
             "LZ-FIS-045",
+            "LZ-FIS-049",
+            "LZ-FIS-051",
             "LZ-JUD-001",
             "LZ-JUD-003",
             "LZ-JUD-005",
@@ -21650,8 +21875,8 @@
           "es": "La disponibilidad lícita, admisibilidad o inclusión en el ámbito de otro expediente o fuente debe determinarse en el procedimiento seleccionado; este modelo de navegación no infiere disponibilidad ni deber de examen."
         },
         "decision_dependency": {
-          "en": "For RPL 2523/2025, the finite decision question is whether the legally competent organ must determine whether the complete civil file supports the recorded claim, defence, title, enforcement or relief and its appeal/finality status for the recorded object “Calificación record completeness / information certification”. Audiencia Provincial de Las Palmas is only the recorded custodian/organ candidate and is not treated here as legally competent or obliged to act. Controlled navigation currently identifies direct files [GC-CAL-002] and contextual files [GC-APP-005, GC-APP-006, GC-APP-028, GC-CAL-002, GC-CIV-027, GC-CONT-025, GC-FIS-011, GC-FIS-012, GC-FIS-013, GC-FIS-014, GC-FIS-015, GC-FIS-016, GC-FIS-017, GC-FIS-018, GC-FIS-032, GC-FIS-033, GC-FIS-034, GC-FIS-035, GC-GOV-019, GC-GOV-020, GC-JUD-001, LZ-APP-004, LZ-FIS-007, LZ-FIS-036, LZ-FIS-045, LZ-JUD-001, LZ-JUD-003, LZ-JUD-005, NAT-AID-001, NAT-FIS-004, NAT-FIS-005, NAT-FIS-006, NAT-FIS-007, NAT-TES-001, TF-CIV-001, TF-CIV-002, TF-FIS-007, TF-FIS-008, VAL-CIV-001, X-REG-001]. Their presence does not establish receipt, admissibility or a duty to consider them.",
-          "es": "Para RPL 2523/2025, la cuestión decisoria finita es si el órgano legalmente competente debe determinar si el expediente civil completo sustenta la pretensión, defensa, título, ejecución o tutela registradas y su estado de recurso/firmeza respecto del objeto registrado «Calificación record completeness / information certification». Audiencia Provincial de Las Palmas es solo el candidato registrado como custodio/órgano y aquí no se le atribuye competencia jurídica ni obligación de actuar. La navegación controlada identifica actualmente expedientes directos [GC-CAL-002] y contextuales [GC-APP-005, GC-APP-006, GC-APP-028, GC-CAL-002, GC-CIV-027, GC-CONT-025, GC-FIS-011, GC-FIS-012, GC-FIS-013, GC-FIS-014, GC-FIS-015, GC-FIS-016, GC-FIS-017, GC-FIS-018, GC-FIS-032, GC-FIS-033, GC-FIS-034, GC-FIS-035, GC-GOV-019, GC-GOV-020, GC-JUD-001, LZ-APP-004, LZ-FIS-007, LZ-FIS-036, LZ-FIS-045, LZ-JUD-001, LZ-JUD-003, LZ-JUD-005, NAT-AID-001, NAT-FIS-004, NAT-FIS-005, NAT-FIS-006, NAT-FIS-007, NAT-TES-001, TF-CIV-001, TF-CIV-002, TF-FIS-007, TF-FIS-008, VAL-CIV-001, X-REG-001]. Su presencia no acredita recepción, admisibilidad ni deber de examinarlos."
+          "en": "For RPL 2523/2025, the finite decision question is whether the legally competent organ must determine whether the complete civil file supports the recorded claim, defence, title, enforcement or relief and its appeal/finality status for the recorded object “Calificación record completeness / information certification”. Audiencia Provincial de Las Palmas is only the recorded custodian/organ candidate and is not treated here as legally competent or obliged to act. Controlled navigation currently identifies direct files [GC-CAL-002] and contextual files [GC-APP-005, GC-APP-006, GC-APP-028, GC-CAL-002, GC-CIV-027, GC-CONT-025, GC-FIS-011, GC-FIS-012, GC-FIS-013, GC-FIS-014, GC-FIS-015, GC-FIS-016, GC-FIS-017, GC-FIS-018, GC-FIS-032, GC-FIS-033, GC-FIS-034, GC-FIS-035, GC-GOV-019, GC-GOV-020, GC-JUD-001, LZ-APP-004, LZ-FIS-007, LZ-FIS-036, LZ-FIS-045, LZ-FIS-049, LZ-FIS-051, LZ-JUD-001, LZ-JUD-003, LZ-JUD-005, NAT-AID-001, NAT-FIS-004, NAT-FIS-005, NAT-FIS-006, NAT-FIS-007, NAT-TES-001, TF-CIV-001, TF-CIV-002, TF-FIS-007, TF-FIS-008, VAL-CIV-001, X-REG-001]. Their presence does not establish receipt, admissibility or a duty to consider them.",
+          "es": "Para RPL 2523/2025, la cuestión decisoria finita es si el órgano legalmente competente debe determinar si el expediente civil completo sustenta la pretensión, defensa, título, ejecución o tutela registradas y su estado de recurso/firmeza respecto del objeto registrado «Calificación record completeness / information certification». Audiencia Provincial de Las Palmas es solo el candidato registrado como custodio/órgano y aquí no se le atribuye competencia jurídica ni obligación de actuar. La navegación controlada identifica actualmente expedientes directos [GC-CAL-002] y contextuales [GC-APP-005, GC-APP-006, GC-APP-028, GC-CAL-002, GC-CIV-027, GC-CONT-025, GC-FIS-011, GC-FIS-012, GC-FIS-013, GC-FIS-014, GC-FIS-015, GC-FIS-016, GC-FIS-017, GC-FIS-018, GC-FIS-032, GC-FIS-033, GC-FIS-034, GC-FIS-035, GC-GOV-019, GC-GOV-020, GC-JUD-001, LZ-APP-004, LZ-FIS-007, LZ-FIS-036, LZ-FIS-045, LZ-FIS-049, LZ-FIS-051, LZ-JUD-001, LZ-JUD-003, LZ-JUD-005, NAT-AID-001, NAT-FIS-004, NAT-FIS-005, NAT-FIS-006, NAT-FIS-007, NAT-TES-001, TF-CIV-001, TF-CIV-002, TF-FIS-007, TF-FIS-008, VAL-CIV-001, X-REG-001]. Su presencia no acredita recepción, admisibilidad ni deber de examinarlos."
         },
         "contrary_explanation": {
           "en": "For RPL 2523/2025, the strongest hypothetical innocent or contrary explanation could be a lawful application of party scope, title, standing, res judicata, evidence, procedural discretion, enforcement or finality rules, but only if the primary record establishes that the legally competent organ applied it to “Calificación record completeness / information certification”. No act is attributed by this model to the recorded candidate Audiencia Provincial de Las Palmas. A different treatment, missing public inventory or related-file membership alone does not establish concealment, coordination, error or wrongdoing.",
@@ -23726,6 +23951,8 @@
             "LZ-FIS-007",
             "LZ-FIS-036",
             "LZ-FIS-045",
+            "LZ-FIS-049",
+            "LZ-FIS-051",
             "NAT-FIS-004",
             "NAT-FIS-005",
             "NAT-FIS-006",
@@ -23756,6 +23983,8 @@
             "LZ-FIS-007",
             "LZ-FIS-036",
             "LZ-FIS-045",
+            "LZ-FIS-049",
+            "LZ-FIS-051",
             "NAT-FIS-004",
             "NAT-FIS-005",
             "NAT-FIS-006",
@@ -23773,8 +24002,8 @@
           "es": "La disponibilidad lícita, admisibilidad o inclusión en el ámbito de otro expediente o fuente debe determinarse en el procedimiento seleccionado; este modelo de navegación no infiere disponibilidad ni deber de examen."
         },
         "decision_dependency": {
-          "en": "For DI 273/2013, the finite decision question is whether the legally competent organ must determine whether the complete prosecution file supports the recorded receipt, allocation, referral, examination, response, closure and cross-file treatment for the recorded object “Fiscalía file / referral / review”. Fiscalía Provincial de Las Palmas is only the recorded custodian/organ candidate and is not treated here as legally competent or obliged to act. Controlled navigation currently identifies direct files [none currently admitted] and contextual files [GC-APP-004, GC-FIS-012, GC-FIS-013, GC-FIS-014, GC-FIS-015, GC-FIS-016, GC-FIS-017, GC-FIS-018, GC-FIS-032, GC-FIS-033, GC-FIS-034, GC-FIS-035, GC-GOV-019, GC-GOV-020, GC-JUD-001, LZ-FIS-007, LZ-FIS-036, LZ-FIS-045, NAT-FIS-004, NAT-FIS-005, NAT-FIS-006, NAT-FIS-007, TF-FIS-007, TF-FIS-008]. Their presence does not establish receipt, admissibility or a duty to consider them.",
-          "es": "Para DI 273/2013, la cuestión decisoria finita es si el órgano legalmente competente debe determinar si el expediente fiscal completo sustenta la recepción, reparto, remisión, examen, respuesta, archivo y tratamiento entre expedientes registrados respecto del objeto registrado «Fiscalía file / referral / review». Fiscalía Provincial de Las Palmas es solo el candidato registrado como custodio/órgano y aquí no se le atribuye competencia jurídica ni obligación de actuar. La navegación controlada identifica actualmente expedientes directos [ninguno admitido actualmente] y contextuales [GC-APP-004, GC-FIS-012, GC-FIS-013, GC-FIS-014, GC-FIS-015, GC-FIS-016, GC-FIS-017, GC-FIS-018, GC-FIS-032, GC-FIS-033, GC-FIS-034, GC-FIS-035, GC-GOV-019, GC-GOV-020, GC-JUD-001, LZ-FIS-007, LZ-FIS-036, LZ-FIS-045, NAT-FIS-004, NAT-FIS-005, NAT-FIS-006, NAT-FIS-007, TF-FIS-007, TF-FIS-008]. Su presencia no acredita recepción, admisibilidad ni deber de examinarlos."
+          "en": "For DI 273/2013, the finite decision question is whether the legally competent organ must determine whether the complete prosecution file supports the recorded receipt, allocation, referral, examination, response, closure and cross-file treatment for the recorded object “Fiscalía file / referral / review”. Fiscalía Provincial de Las Palmas is only the recorded custodian/organ candidate and is not treated here as legally competent or obliged to act. Controlled navigation currently identifies direct files [none currently admitted] and contextual files [GC-APP-004, GC-FIS-012, GC-FIS-013, GC-FIS-014, GC-FIS-015, GC-FIS-016, GC-FIS-017, GC-FIS-018, GC-FIS-032, GC-FIS-033, GC-FIS-034, GC-FIS-035, GC-GOV-019, GC-GOV-020, GC-JUD-001, LZ-FIS-007, LZ-FIS-036, LZ-FIS-045, LZ-FIS-049, LZ-FIS-051, NAT-FIS-004, NAT-FIS-005, NAT-FIS-006, NAT-FIS-007, TF-FIS-007, TF-FIS-008]. Their presence does not establish receipt, admissibility or a duty to consider them.",
+          "es": "Para DI 273/2013, la cuestión decisoria finita es si el órgano legalmente competente debe determinar si el expediente fiscal completo sustenta la recepción, reparto, remisión, examen, respuesta, archivo y tratamiento entre expedientes registrados respecto del objeto registrado «Fiscalía file / referral / review». Fiscalía Provincial de Las Palmas es solo el candidato registrado como custodio/órgano y aquí no se le atribuye competencia jurídica ni obligación de actuar. La navegación controlada identifica actualmente expedientes directos [ninguno admitido actualmente] y contextuales [GC-APP-004, GC-FIS-012, GC-FIS-013, GC-FIS-014, GC-FIS-015, GC-FIS-016, GC-FIS-017, GC-FIS-018, GC-FIS-032, GC-FIS-033, GC-FIS-034, GC-FIS-035, GC-GOV-019, GC-GOV-020, GC-JUD-001, LZ-FIS-007, LZ-FIS-036, LZ-FIS-045, LZ-FIS-049, LZ-FIS-051, NAT-FIS-004, NAT-FIS-005, NAT-FIS-006, NAT-FIS-007, TF-FIS-007, TF-FIS-008]. Su presencia no acredita recepción, admisibilidad ni deber de examinarlos."
         },
         "contrary_explanation": {
           "en": "For DI 273/2013, the strongest hypothetical innocent or contrary explanation could be a lawful limitation based on competence, territorial routing, duplication, judicialisation, evidential threshold, confidentiality or independent file-specific reasoning, but only if the primary record establishes that the legally competent organ applied it to “Fiscalía file / referral / review”. No act is attributed by this model to the recorded candidate Fiscalía Provincial de Las Palmas. A different treatment, missing public inventory or related-file membership alone does not establish concealment, coordination, error or wrongdoing.",
@@ -24060,6 +24289,8 @@
             "LZ-FIS-007",
             "LZ-FIS-036",
             "LZ-FIS-045",
+            "LZ-FIS-049",
+            "LZ-FIS-051",
             "NAT-FIS-004",
             "NAT-FIS-005",
             "NAT-FIS-006",
@@ -24090,6 +24321,8 @@
             "LZ-FIS-007",
             "LZ-FIS-036",
             "LZ-FIS-045",
+            "LZ-FIS-049",
+            "LZ-FIS-051",
             "NAT-FIS-004",
             "NAT-FIS-005",
             "NAT-FIS-006",
@@ -24107,8 +24340,8 @@
           "es": "La disponibilidad lícita, admisibilidad o inclusión en el ámbito de otro expediente o fuente debe determinarse en el procedimiento seleccionado; este modelo de navegación no infiere disponibilidad ni deber de examen."
         },
         "decision_dependency": {
-          "en": "For Fiscalía 39/2014, the finite decision question is whether the legally competent organ must determine whether the complete prosecution file supports the recorded receipt, allocation, referral, examination, response, closure and cross-file treatment for the recorded object “Fiscalía file / referral / review”. Fiscalía — exact office pending is only the recorded custodian/organ candidate and is not treated here as legally competent or obliged to act. Controlled navigation currently identifies direct files [none currently admitted] and contextual files [GC-APP-004, GC-FIS-011, GC-FIS-013, GC-FIS-014, GC-FIS-015, GC-FIS-016, GC-FIS-017, GC-FIS-018, GC-FIS-032, GC-FIS-033, GC-FIS-034, GC-FIS-035, GC-GOV-019, GC-GOV-020, GC-JUD-001, LZ-FIS-007, LZ-FIS-036, LZ-FIS-045, NAT-FIS-004, NAT-FIS-005, NAT-FIS-006, NAT-FIS-007, TF-FIS-007, TF-FIS-008]. Their presence does not establish receipt, admissibility or a duty to consider them.",
-          "es": "Para Fiscalía 39/2014, la cuestión decisoria finita es si el órgano legalmente competente debe determinar si el expediente fiscal completo sustenta la recepción, reparto, remisión, examen, respuesta, archivo y tratamiento entre expedientes registrados respecto del objeto registrado «Fiscalía file / referral / review». Fiscalía — exact office pending es solo el candidato registrado como custodio/órgano y aquí no se le atribuye competencia jurídica ni obligación de actuar. La navegación controlada identifica actualmente expedientes directos [ninguno admitido actualmente] y contextuales [GC-APP-004, GC-FIS-011, GC-FIS-013, GC-FIS-014, GC-FIS-015, GC-FIS-016, GC-FIS-017, GC-FIS-018, GC-FIS-032, GC-FIS-033, GC-FIS-034, GC-FIS-035, GC-GOV-019, GC-GOV-020, GC-JUD-001, LZ-FIS-007, LZ-FIS-036, LZ-FIS-045, NAT-FIS-004, NAT-FIS-005, NAT-FIS-006, NAT-FIS-007, TF-FIS-007, TF-FIS-008]. Su presencia no acredita recepción, admisibilidad ni deber de examinarlos."
+          "en": "For Fiscalía 39/2014, the finite decision question is whether the legally competent organ must determine whether the complete prosecution file supports the recorded receipt, allocation, referral, examination, response, closure and cross-file treatment for the recorded object “Fiscalía file / referral / review”. Fiscalía — exact office pending is only the recorded custodian/organ candidate and is not treated here as legally competent or obliged to act. Controlled navigation currently identifies direct files [none currently admitted] and contextual files [GC-APP-004, GC-FIS-011, GC-FIS-013, GC-FIS-014, GC-FIS-015, GC-FIS-016, GC-FIS-017, GC-FIS-018, GC-FIS-032, GC-FIS-033, GC-FIS-034, GC-FIS-035, GC-GOV-019, GC-GOV-020, GC-JUD-001, LZ-FIS-007, LZ-FIS-036, LZ-FIS-045, LZ-FIS-049, LZ-FIS-051, NAT-FIS-004, NAT-FIS-005, NAT-FIS-006, NAT-FIS-007, TF-FIS-007, TF-FIS-008]. Their presence does not establish receipt, admissibility or a duty to consider them.",
+          "es": "Para Fiscalía 39/2014, la cuestión decisoria finita es si el órgano legalmente competente debe determinar si el expediente fiscal completo sustenta la recepción, reparto, remisión, examen, respuesta, archivo y tratamiento entre expedientes registrados respecto del objeto registrado «Fiscalía file / referral / review». Fiscalía — exact office pending es solo el candidato registrado como custodio/órgano y aquí no se le atribuye competencia jurídica ni obligación de actuar. La navegación controlada identifica actualmente expedientes directos [ninguno admitido actualmente] y contextuales [GC-APP-004, GC-FIS-011, GC-FIS-013, GC-FIS-014, GC-FIS-015, GC-FIS-016, GC-FIS-017, GC-FIS-018, GC-FIS-032, GC-FIS-033, GC-FIS-034, GC-FIS-035, GC-GOV-019, GC-GOV-020, GC-JUD-001, LZ-FIS-007, LZ-FIS-036, LZ-FIS-045, LZ-FIS-049, LZ-FIS-051, NAT-FIS-004, NAT-FIS-005, NAT-FIS-006, NAT-FIS-007, TF-FIS-007, TF-FIS-008]. Su presencia no acredita recepción, admisibilidad ni deber de examinarlos."
         },
         "contrary_explanation": {
           "en": "For Fiscalía 39/2014, the strongest hypothetical innocent or contrary explanation could be a lawful limitation based on competence, territorial routing, duplication, judicialisation, evidential threshold, confidentiality or independent file-specific reasoning, but only if the primary record establishes that the legally competent organ applied it to “Fiscalía file / referral / review”. No act is attributed by this model to the recorded candidate Fiscalía — exact office pending. A different treatment, missing public inventory or related-file membership alone does not establish concealment, coordination, error or wrongdoing.",
@@ -24385,6 +24618,8 @@
             "LZ-FIS-007",
             "LZ-FIS-036",
             "LZ-FIS-045",
+            "LZ-FIS-049",
+            "LZ-FIS-051",
             "LZ-JUD-001",
             "LZ-JUD-003",
             "LZ-JUD-005",
@@ -24438,6 +24673,8 @@
             "LZ-FIS-007",
             "LZ-FIS-036",
             "LZ-FIS-045",
+            "LZ-FIS-049",
+            "LZ-FIS-051",
             "LZ-JUD-001",
             "LZ-JUD-003",
             "LZ-JUD-005",
@@ -24463,8 +24700,8 @@
           "es": "La disponibilidad lícita, admisibilidad o inclusión en el ámbito de otro expediente o fuente debe determinarse en el procedimiento seleccionado; este modelo de navegación no infiere disponibilidad ni deber de examen."
         },
         "decision_dependency": {
-          "en": "For DI 248/2018, the finite decision question is whether the legally competent organ must determine whether the complete prosecution file supports the recorded receipt, allocation, referral, examination, response, closure and cross-file treatment for the recorded object “Fiscalía investigation file”. Fiscalía Provincial de Las Palmas is only the recorded custodian/organ candidate and is not treated here as legally competent or obliged to act. Controlled navigation currently identifies direct files [GC-CAL-002, NAT-FIS-004] and contextual files [GC-APP-004, GC-APP-005, GC-APP-006, GC-APP-028, GC-CAL-002, GC-CIV-027, GC-CONT-025, GC-FIS-011, GC-FIS-012, GC-FIS-014, GC-FIS-015, GC-FIS-016, GC-FIS-017, GC-FIS-018, GC-FIS-032, GC-FIS-033, GC-FIS-034, GC-FIS-035, GC-GOV-019, GC-GOV-020, GC-JUD-001, LZ-APP-004, LZ-FIS-007, LZ-FIS-036, LZ-FIS-045, LZ-JUD-001, LZ-JUD-003, LZ-JUD-005, NAT-AID-001, NAT-FIS-004, NAT-FIS-005, NAT-FIS-006, NAT-FIS-007, TF-CIV-001, TF-CIV-002, TF-FIS-007, TF-FIS-008, VAL-CIV-001]. Their presence does not establish receipt, admissibility or a duty to consider them.",
-          "es": "Para DI 248/2018, la cuestión decisoria finita es si el órgano legalmente competente debe determinar si el expediente fiscal completo sustenta la recepción, reparto, remisión, examen, respuesta, archivo y tratamiento entre expedientes registrados respecto del objeto registrado «Fiscalía investigation file». Fiscalía Provincial de Las Palmas es solo el candidato registrado como custodio/órgano y aquí no se le atribuye competencia jurídica ni obligación de actuar. La navegación controlada identifica actualmente expedientes directos [GC-CAL-002, NAT-FIS-004] y contextuales [GC-APP-004, GC-APP-005, GC-APP-006, GC-APP-028, GC-CAL-002, GC-CIV-027, GC-CONT-025, GC-FIS-011, GC-FIS-012, GC-FIS-014, GC-FIS-015, GC-FIS-016, GC-FIS-017, GC-FIS-018, GC-FIS-032, GC-FIS-033, GC-FIS-034, GC-FIS-035, GC-GOV-019, GC-GOV-020, GC-JUD-001, LZ-APP-004, LZ-FIS-007, LZ-FIS-036, LZ-FIS-045, LZ-JUD-001, LZ-JUD-003, LZ-JUD-005, NAT-AID-001, NAT-FIS-004, NAT-FIS-005, NAT-FIS-006, NAT-FIS-007, TF-CIV-001, TF-CIV-002, TF-FIS-007, TF-FIS-008, VAL-CIV-001]. Su presencia no acredita recepción, admisibilidad ni deber de examinarlos."
+          "en": "For DI 248/2018, the finite decision question is whether the legally competent organ must determine whether the complete prosecution file supports the recorded receipt, allocation, referral, examination, response, closure and cross-file treatment for the recorded object “Fiscalía investigation file”. Fiscalía Provincial de Las Palmas is only the recorded custodian/organ candidate and is not treated here as legally competent or obliged to act. Controlled navigation currently identifies direct files [GC-CAL-002, NAT-FIS-004] and contextual files [GC-APP-004, GC-APP-005, GC-APP-006, GC-APP-028, GC-CAL-002, GC-CIV-027, GC-CONT-025, GC-FIS-011, GC-FIS-012, GC-FIS-014, GC-FIS-015, GC-FIS-016, GC-FIS-017, GC-FIS-018, GC-FIS-032, GC-FIS-033, GC-FIS-034, GC-FIS-035, GC-GOV-019, GC-GOV-020, GC-JUD-001, LZ-APP-004, LZ-FIS-007, LZ-FIS-036, LZ-FIS-045, LZ-FIS-049, LZ-FIS-051, LZ-JUD-001, LZ-JUD-003, LZ-JUD-005, NAT-AID-001, NAT-FIS-004, NAT-FIS-005, NAT-FIS-006, NAT-FIS-007, TF-CIV-001, TF-CIV-002, TF-FIS-007, TF-FIS-008, VAL-CIV-001]. Their presence does not establish receipt, admissibility or a duty to consider them.",
+          "es": "Para DI 248/2018, la cuestión decisoria finita es si el órgano legalmente competente debe determinar si el expediente fiscal completo sustenta la recepción, reparto, remisión, examen, respuesta, archivo y tratamiento entre expedientes registrados respecto del objeto registrado «Fiscalía investigation file». Fiscalía Provincial de Las Palmas es solo el candidato registrado como custodio/órgano y aquí no se le atribuye competencia jurídica ni obligación de actuar. La navegación controlada identifica actualmente expedientes directos [GC-CAL-002, NAT-FIS-004] y contextuales [GC-APP-004, GC-APP-005, GC-APP-006, GC-APP-028, GC-CAL-002, GC-CIV-027, GC-CONT-025, GC-FIS-011, GC-FIS-012, GC-FIS-014, GC-FIS-015, GC-FIS-016, GC-FIS-017, GC-FIS-018, GC-FIS-032, GC-FIS-033, GC-FIS-034, GC-FIS-035, GC-GOV-019, GC-GOV-020, GC-JUD-001, LZ-APP-004, LZ-FIS-007, LZ-FIS-036, LZ-FIS-045, LZ-FIS-049, LZ-FIS-051, LZ-JUD-001, LZ-JUD-003, LZ-JUD-005, NAT-AID-001, NAT-FIS-004, NAT-FIS-005, NAT-FIS-006, NAT-FIS-007, TF-CIV-001, TF-CIV-002, TF-FIS-007, TF-FIS-008, VAL-CIV-001]. Su presencia no acredita recepción, admisibilidad ni deber de examinarlos."
         },
         "contrary_explanation": {
           "en": "For DI 248/2018, the strongest hypothetical innocent or contrary explanation could be a lawful limitation based on competence, territorial routing, duplication, judicialisation, evidential threshold, confidentiality or independent file-specific reasoning, but only if the primary record establishes that the legally competent organ applied it to “Fiscalía investigation file”. No act is attributed by this model to the recorded candidate Fiscalía Provincial de Las Palmas. A different treatment, missing public inventory or related-file membership alone does not establish concealment, coordination, error or wrongdoing.",
@@ -24759,6 +24996,8 @@
             "LZ-FIS-007",
             "LZ-FIS-036",
             "LZ-FIS-045",
+            "LZ-FIS-049",
+            "LZ-FIS-051",
             "NAT-FIS-004",
             "NAT-FIS-005",
             "NAT-FIS-006",
@@ -24792,6 +25031,8 @@
             "LZ-FIS-007",
             "LZ-FIS-036",
             "LZ-FIS-045",
+            "LZ-FIS-049",
+            "LZ-FIS-051",
             "NAT-FIS-004",
             "NAT-FIS-005",
             "NAT-FIS-006",
@@ -24810,8 +25051,8 @@
           "es": "La disponibilidad lícita, admisibilidad o inclusión en el ámbito de otro expediente o fuente debe determinarse en el procedimiento seleccionado; este modelo de navegación no infiere disponibilidad ni deber de examen."
         },
         "decision_dependency": {
-          "en": "For DI 113/2022, the finite decision question is whether the legally competent organ must determine whether the complete prosecution file supports the recorded receipt, allocation, referral, examination, response, closure and cross-file treatment for the recorded object “Fiscalía investigation and later information/copy request”. Fiscalía Provincial de Las Palmas is only the recorded custodian/organ candidate and is not treated here as legally competent or obliged to act. Controlled navigation currently identifies direct files [LZ-JUD-046, NAT-FIS-004] and contextual files [GC-APP-004, GC-FIS-011, GC-FIS-012, GC-FIS-013, GC-FIS-015, GC-FIS-016, GC-FIS-017, GC-FIS-018, GC-FIS-032, GC-FIS-033, GC-FIS-034, GC-FIS-035, GC-GOV-019, GC-GOV-020, GC-JUD-001, LZ-FIS-007, LZ-FIS-036, LZ-FIS-045, NAT-FIS-004, NAT-FIS-005, NAT-FIS-006, NAT-FIS-007, TF-FIS-007, TF-FIS-008]. Their presence does not establish receipt, admissibility or a duty to consider them.",
-          "es": "Para DI 113/2022, la cuestión decisoria finita es si el órgano legalmente competente debe determinar si el expediente fiscal completo sustenta la recepción, reparto, remisión, examen, respuesta, archivo y tratamiento entre expedientes registrados respecto del objeto registrado «Fiscalía investigation and later information/copy request». Fiscalía Provincial de Las Palmas es solo el candidato registrado como custodio/órgano y aquí no se le atribuye competencia jurídica ni obligación de actuar. La navegación controlada identifica actualmente expedientes directos [LZ-JUD-046, NAT-FIS-004] y contextuales [GC-APP-004, GC-FIS-011, GC-FIS-012, GC-FIS-013, GC-FIS-015, GC-FIS-016, GC-FIS-017, GC-FIS-018, GC-FIS-032, GC-FIS-033, GC-FIS-034, GC-FIS-035, GC-GOV-019, GC-GOV-020, GC-JUD-001, LZ-FIS-007, LZ-FIS-036, LZ-FIS-045, NAT-FIS-004, NAT-FIS-005, NAT-FIS-006, NAT-FIS-007, TF-FIS-007, TF-FIS-008]. Su presencia no acredita recepción, admisibilidad ni deber de examinarlos."
+          "en": "For DI 113/2022, the finite decision question is whether the legally competent organ must determine whether the complete prosecution file supports the recorded receipt, allocation, referral, examination, response, closure and cross-file treatment for the recorded object “Fiscalía investigation and later information/copy request”. Fiscalía Provincial de Las Palmas is only the recorded custodian/organ candidate and is not treated here as legally competent or obliged to act. Controlled navigation currently identifies direct files [LZ-JUD-046, NAT-FIS-004] and contextual files [GC-APP-004, GC-FIS-011, GC-FIS-012, GC-FIS-013, GC-FIS-015, GC-FIS-016, GC-FIS-017, GC-FIS-018, GC-FIS-032, GC-FIS-033, GC-FIS-034, GC-FIS-035, GC-GOV-019, GC-GOV-020, GC-JUD-001, LZ-FIS-007, LZ-FIS-036, LZ-FIS-045, LZ-FIS-049, LZ-FIS-051, NAT-FIS-004, NAT-FIS-005, NAT-FIS-006, NAT-FIS-007, TF-FIS-007, TF-FIS-008]. Their presence does not establish receipt, admissibility or a duty to consider them.",
+          "es": "Para DI 113/2022, la cuestión decisoria finita es si el órgano legalmente competente debe determinar si el expediente fiscal completo sustenta la recepción, reparto, remisión, examen, respuesta, archivo y tratamiento entre expedientes registrados respecto del objeto registrado «Fiscalía investigation and later information/copy request». Fiscalía Provincial de Las Palmas es solo el candidato registrado como custodio/órgano y aquí no se le atribuye competencia jurídica ni obligación de actuar. La navegación controlada identifica actualmente expedientes directos [LZ-JUD-046, NAT-FIS-004] y contextuales [GC-APP-004, GC-FIS-011, GC-FIS-012, GC-FIS-013, GC-FIS-015, GC-FIS-016, GC-FIS-017, GC-FIS-018, GC-FIS-032, GC-FIS-033, GC-FIS-034, GC-FIS-035, GC-GOV-019, GC-GOV-020, GC-JUD-001, LZ-FIS-007, LZ-FIS-036, LZ-FIS-045, LZ-FIS-049, LZ-FIS-051, NAT-FIS-004, NAT-FIS-005, NAT-FIS-006, NAT-FIS-007, TF-FIS-007, TF-FIS-008]. Su presencia no acredita recepción, admisibilidad ni deber de examinarlos."
         },
         "contrary_explanation": {
           "en": "For DI 113/2022, the strongest hypothetical innocent or contrary explanation could be a lawful limitation based on competence, territorial routing, duplication, judicialisation, evidential threshold, confidentiality or independent file-specific reasoning, but only if the primary record establishes that the legally competent organ applied it to “Fiscalía investigation and later information/copy request”. No act is attributed by this model to the recorded candidate Fiscalía Provincial de Las Palmas. A different treatment, missing public inventory or related-file membership alone does not establish concealment, coordination, error or wrongdoing.",
@@ -25103,6 +25344,8 @@
             "LZ-FIS-007",
             "LZ-FIS-036",
             "LZ-FIS-045",
+            "LZ-FIS-049",
+            "LZ-FIS-051",
             "NAT-FIS-004",
             "NAT-FIS-005",
             "NAT-FIS-006",
@@ -25135,6 +25378,8 @@
             "LZ-FIS-007",
             "LZ-FIS-036",
             "LZ-FIS-045",
+            "LZ-FIS-049",
+            "LZ-FIS-051",
             "NAT-FIS-004",
             "NAT-FIS-005",
             "NAT-FIS-006",
@@ -25153,8 +25398,8 @@
           "es": "La disponibilidad lícita, admisibilidad o inclusión en el ámbito de otro expediente o fuente debe determinarse en el procedimiento seleccionado; este modelo de navegación no infiere disponibilidad ni deber de examen."
         },
         "decision_dependency": {
-          "en": "For EG 352/2025, the finite decision question is whether the legally competent organ must determine whether the complete prosecution file supports the recorded receipt, allocation, referral, examination, response, closure and cross-file treatment for the recorded object “Fiscalía file / referral / review”. Fiscalía Anticorrupción is only the recorded custodian/organ candidate and is not treated here as legally competent or obliged to act. Controlled navigation currently identifies direct files [GC-FIS-016] and contextual files [GC-APP-004, GC-FIS-011, GC-FIS-012, GC-FIS-013, GC-FIS-014, GC-FIS-016, GC-FIS-017, GC-FIS-018, GC-FIS-032, GC-FIS-033, GC-FIS-034, GC-FIS-035, GC-GOV-019, GC-GOV-020, GC-JUD-001, LZ-FIS-007, LZ-FIS-036, LZ-FIS-045, NAT-FIS-004, NAT-FIS-005, NAT-FIS-006, NAT-FIS-007, TF-FIS-007, TF-FIS-008]. Their presence does not establish receipt, admissibility or a duty to consider them.",
-          "es": "Para EG 352/2025, la cuestión decisoria finita es si el órgano legalmente competente debe determinar si el expediente fiscal completo sustenta la recepción, reparto, remisión, examen, respuesta, archivo y tratamiento entre expedientes registrados respecto del objeto registrado «Fiscalía file / referral / review». Fiscalía Anticorrupción es solo el candidato registrado como custodio/órgano y aquí no se le atribuye competencia jurídica ni obligación de actuar. La navegación controlada identifica actualmente expedientes directos [GC-FIS-016] y contextuales [GC-APP-004, GC-FIS-011, GC-FIS-012, GC-FIS-013, GC-FIS-014, GC-FIS-016, GC-FIS-017, GC-FIS-018, GC-FIS-032, GC-FIS-033, GC-FIS-034, GC-FIS-035, GC-GOV-019, GC-GOV-020, GC-JUD-001, LZ-FIS-007, LZ-FIS-036, LZ-FIS-045, NAT-FIS-004, NAT-FIS-005, NAT-FIS-006, NAT-FIS-007, TF-FIS-007, TF-FIS-008]. Su presencia no acredita recepción, admisibilidad ni deber de examinarlos."
+          "en": "For EG 352/2025, the finite decision question is whether the legally competent organ must determine whether the complete prosecution file supports the recorded receipt, allocation, referral, examination, response, closure and cross-file treatment for the recorded object “Fiscalía file / referral / review”. Fiscalía Anticorrupción is only the recorded custodian/organ candidate and is not treated here as legally competent or obliged to act. Controlled navigation currently identifies direct files [GC-FIS-016] and contextual files [GC-APP-004, GC-FIS-011, GC-FIS-012, GC-FIS-013, GC-FIS-014, GC-FIS-016, GC-FIS-017, GC-FIS-018, GC-FIS-032, GC-FIS-033, GC-FIS-034, GC-FIS-035, GC-GOV-019, GC-GOV-020, GC-JUD-001, LZ-FIS-007, LZ-FIS-036, LZ-FIS-045, LZ-FIS-049, LZ-FIS-051, NAT-FIS-004, NAT-FIS-005, NAT-FIS-006, NAT-FIS-007, TF-FIS-007, TF-FIS-008]. Their presence does not establish receipt, admissibility or a duty to consider them.",
+          "es": "Para EG 352/2025, la cuestión decisoria finita es si el órgano legalmente competente debe determinar si el expediente fiscal completo sustenta la recepción, reparto, remisión, examen, respuesta, archivo y tratamiento entre expedientes registrados respecto del objeto registrado «Fiscalía file / referral / review». Fiscalía Anticorrupción es solo el candidato registrado como custodio/órgano y aquí no se le atribuye competencia jurídica ni obligación de actuar. La navegación controlada identifica actualmente expedientes directos [GC-FIS-016] y contextuales [GC-APP-004, GC-FIS-011, GC-FIS-012, GC-FIS-013, GC-FIS-014, GC-FIS-016, GC-FIS-017, GC-FIS-018, GC-FIS-032, GC-FIS-033, GC-FIS-034, GC-FIS-035, GC-GOV-019, GC-GOV-020, GC-JUD-001, LZ-FIS-007, LZ-FIS-036, LZ-FIS-045, LZ-FIS-049, LZ-FIS-051, NAT-FIS-004, NAT-FIS-005, NAT-FIS-006, NAT-FIS-007, TF-FIS-007, TF-FIS-008]. Su presencia no acredita recepción, admisibilidad ni deber de examinarlos."
         },
         "contrary_explanation": {
           "en": "For EG 352/2025, the strongest hypothetical innocent or contrary explanation could be a lawful limitation based on competence, territorial routing, duplication, judicialisation, evidential threshold, confidentiality or independent file-specific reasoning, but only if the primary record establishes that the legally competent organ applied it to “Fiscalía file / referral / review”. No act is attributed by this model to the recorded candidate Fiscalía Anticorrupción. A different treatment, missing public inventory or related-file membership alone does not establish concealment, coordination, error or wrongdoing.",
@@ -25421,6 +25666,8 @@
             "LZ-FIS-007",
             "LZ-FIS-036",
             "LZ-FIS-045",
+            "LZ-FIS-049",
+            "LZ-FIS-051",
             "NAT-FIS-004",
             "NAT-FIS-005",
             "NAT-FIS-006",
@@ -25455,6 +25702,8 @@
             "LZ-FIS-007",
             "LZ-FIS-036",
             "LZ-FIS-045",
+            "LZ-FIS-049",
+            "LZ-FIS-051",
             "NAT-FIS-004",
             "NAT-FIS-005",
             "NAT-FIS-006",
@@ -25473,8 +25722,8 @@
           "es": "La disponibilidad lícita, admisibilidad o inclusión en el ámbito de otro expediente o fuente debe determinarse en el procedimiento seleccionado; este modelo de navegación no infiere disponibilidad ni deber de examen."
         },
         "decision_dependency": {
-          "en": "For DI 22/2026, the finite decision question is whether the legally competent organ must determine whether the complete prosecution file supports the recorded receipt, allocation, referral, examination, response, closure and cross-file treatment for the recorded object “Fiscalía investigation file and later joinder/maintenance acts”. Fiscalía Provincial de Las Palmas is only the recorded custodian/organ candidate and is not treated here as legally competent or obliged to act. Controlled navigation currently identifies direct files [GC-FIS-015, NAT-FIS-004, TF-FIS-007] and contextual files [GC-APP-004, GC-FIS-011, GC-FIS-012, GC-FIS-013, GC-FIS-014, GC-FIS-015, GC-FIS-017, GC-FIS-018, GC-FIS-032, GC-FIS-033, GC-FIS-034, GC-FIS-035, GC-GOV-019, GC-GOV-020, GC-JUD-001, LZ-FIS-007, LZ-FIS-036, LZ-FIS-045, NAT-FIS-004, NAT-FIS-005, NAT-FIS-006, NAT-FIS-007, TF-FIS-007, TF-FIS-008]. Their presence does not establish receipt, admissibility or a duty to consider them.",
-          "es": "Para DI 22/2026, la cuestión decisoria finita es si el órgano legalmente competente debe determinar si el expediente fiscal completo sustenta la recepción, reparto, remisión, examen, respuesta, archivo y tratamiento entre expedientes registrados respecto del objeto registrado «Fiscalía investigation file and later joinder/maintenance acts». Fiscalía Provincial de Las Palmas es solo el candidato registrado como custodio/órgano y aquí no se le atribuye competencia jurídica ni obligación de actuar. La navegación controlada identifica actualmente expedientes directos [GC-FIS-015, NAT-FIS-004, TF-FIS-007] y contextuales [GC-APP-004, GC-FIS-011, GC-FIS-012, GC-FIS-013, GC-FIS-014, GC-FIS-015, GC-FIS-017, GC-FIS-018, GC-FIS-032, GC-FIS-033, GC-FIS-034, GC-FIS-035, GC-GOV-019, GC-GOV-020, GC-JUD-001, LZ-FIS-007, LZ-FIS-036, LZ-FIS-045, NAT-FIS-004, NAT-FIS-005, NAT-FIS-006, NAT-FIS-007, TF-FIS-007, TF-FIS-008]. Su presencia no acredita recepción, admisibilidad ni deber de examinarlos."
+          "en": "For DI 22/2026, the finite decision question is whether the legally competent organ must determine whether the complete prosecution file supports the recorded receipt, allocation, referral, examination, response, closure and cross-file treatment for the recorded object “Fiscalía investigation file and later joinder/maintenance acts”. Fiscalía Provincial de Las Palmas is only the recorded custodian/organ candidate and is not treated here as legally competent or obliged to act. Controlled navigation currently identifies direct files [GC-FIS-015, NAT-FIS-004, TF-FIS-007] and contextual files [GC-APP-004, GC-FIS-011, GC-FIS-012, GC-FIS-013, GC-FIS-014, GC-FIS-015, GC-FIS-017, GC-FIS-018, GC-FIS-032, GC-FIS-033, GC-FIS-034, GC-FIS-035, GC-GOV-019, GC-GOV-020, GC-JUD-001, LZ-FIS-007, LZ-FIS-036, LZ-FIS-045, LZ-FIS-049, LZ-FIS-051, NAT-FIS-004, NAT-FIS-005, NAT-FIS-006, NAT-FIS-007, TF-FIS-007, TF-FIS-008]. Their presence does not establish receipt, admissibility or a duty to consider them.",
+          "es": "Para DI 22/2026, la cuestión decisoria finita es si el órgano legalmente competente debe determinar si el expediente fiscal completo sustenta la recepción, reparto, remisión, examen, respuesta, archivo y tratamiento entre expedientes registrados respecto del objeto registrado «Fiscalía investigation file and later joinder/maintenance acts». Fiscalía Provincial de Las Palmas es solo el candidato registrado como custodio/órgano y aquí no se le atribuye competencia jurídica ni obligación de actuar. La navegación controlada identifica actualmente expedientes directos [GC-FIS-015, NAT-FIS-004, TF-FIS-007] y contextuales [GC-APP-004, GC-FIS-011, GC-FIS-012, GC-FIS-013, GC-FIS-014, GC-FIS-015, GC-FIS-017, GC-FIS-018, GC-FIS-032, GC-FIS-033, GC-FIS-034, GC-FIS-035, GC-GOV-019, GC-GOV-020, GC-JUD-001, LZ-FIS-007, LZ-FIS-036, LZ-FIS-045, LZ-FIS-049, LZ-FIS-051, NAT-FIS-004, NAT-FIS-005, NAT-FIS-006, NAT-FIS-007, TF-FIS-007, TF-FIS-008]. Su presencia no acredita recepción, admisibilidad ni deber de examinarlos."
         },
         "contrary_explanation": {
           "en": "For DI 22/2026, the strongest hypothetical innocent or contrary explanation could be a lawful limitation based on competence, territorial routing, duplication, judicialisation, evidential threshold, confidentiality or independent file-specific reasoning, but only if the primary record establishes that the legally competent organ applied it to “Fiscalía investigation file and later joinder/maintenance acts”. No act is attributed by this model to the recorded candidate Fiscalía Provincial de Las Palmas. A different treatment, missing public inventory or related-file membership alone does not establish concealment, coordination, error or wrongdoing.",
@@ -25783,6 +26032,8 @@
             "LZ-FIS-007",
             "LZ-FIS-036",
             "LZ-FIS-045",
+            "LZ-FIS-049",
+            "LZ-FIS-051",
             "LZ-JUD-001",
             "LZ-JUD-003",
             "LZ-JUD-005",
@@ -25835,6 +26086,8 @@
             "LZ-FIS-007",
             "LZ-FIS-036",
             "LZ-FIS-045",
+            "LZ-FIS-049",
+            "LZ-FIS-051",
             "LZ-JUD-001",
             "LZ-JUD-003",
             "LZ-JUD-005",
@@ -25860,8 +26113,8 @@
           "es": "La disponibilidad lícita, admisibilidad o inclusión en el ámbito de otro expediente o fuente debe determinarse en el procedimiento seleccionado; este modelo de navegación no infiere disponibilidad ni deber de examen."
         },
         "decision_dependency": {
-          "en": "For DIP 2/2026, the finite decision question is whether the legally competent organ must determine whether the complete prosecution file supports the recorded receipt, allocation, referral, examination, response, closure and cross-file treatment for the recorded object “Fiscalía pre-procedural investigation”. Fiscalía de la Comunidad Autónoma de Canarias is only the recorded custodian/organ candidate and is not treated here as legally competent or obliged to act. Controlled navigation currently identifies direct files [GC-CRI-008, GC-FIS-033, NAT-FIS-004] and contextual files [GC-APP-004, GC-APP-005, GC-APP-006, GC-APP-028, GC-CAL-002, GC-CIV-027, GC-CONT-025, GC-FIS-011, GC-FIS-012, GC-FIS-013, GC-FIS-014, GC-FIS-015, GC-FIS-016, GC-FIS-018, GC-FIS-032, GC-FIS-033, GC-FIS-034, GC-FIS-035, GC-GOV-019, GC-GOV-020, GC-JUD-001, LZ-FIS-007, LZ-FIS-036, LZ-FIS-045, LZ-JUD-001, LZ-JUD-003, LZ-JUD-005, NAT-AID-001, NAT-FIS-004, NAT-FIS-005, NAT-FIS-006, NAT-FIS-007, TF-CIV-001, TF-CIV-002, TF-FIS-007, TF-FIS-008, VAL-CIV-001]. Their presence does not establish receipt, admissibility or a duty to consider them.",
-          "es": "Para DIP 2/2026, la cuestión decisoria finita es si el órgano legalmente competente debe determinar si el expediente fiscal completo sustenta la recepción, reparto, remisión, examen, respuesta, archivo y tratamiento entre expedientes registrados respecto del objeto registrado «Fiscalía pre-procedural investigation». Fiscalía de la Comunidad Autónoma de Canarias es solo el candidato registrado como custodio/órgano y aquí no se le atribuye competencia jurídica ni obligación de actuar. La navegación controlada identifica actualmente expedientes directos [GC-CRI-008, GC-FIS-033, NAT-FIS-004] y contextuales [GC-APP-004, GC-APP-005, GC-APP-006, GC-APP-028, GC-CAL-002, GC-CIV-027, GC-CONT-025, GC-FIS-011, GC-FIS-012, GC-FIS-013, GC-FIS-014, GC-FIS-015, GC-FIS-016, GC-FIS-018, GC-FIS-032, GC-FIS-033, GC-FIS-034, GC-FIS-035, GC-GOV-019, GC-GOV-020, GC-JUD-001, LZ-FIS-007, LZ-FIS-036, LZ-FIS-045, LZ-JUD-001, LZ-JUD-003, LZ-JUD-005, NAT-AID-001, NAT-FIS-004, NAT-FIS-005, NAT-FIS-006, NAT-FIS-007, TF-CIV-001, TF-CIV-002, TF-FIS-007, TF-FIS-008, VAL-CIV-001]. Su presencia no acredita recepción, admisibilidad ni deber de examinarlos."
+          "en": "For DIP 2/2026, the finite decision question is whether the legally competent organ must determine whether the complete prosecution file supports the recorded receipt, allocation, referral, examination, response, closure and cross-file treatment for the recorded object “Fiscalía pre-procedural investigation”. Fiscalía de la Comunidad Autónoma de Canarias is only the recorded custodian/organ candidate and is not treated here as legally competent or obliged to act. Controlled navigation currently identifies direct files [GC-CRI-008, GC-FIS-033, NAT-FIS-004] and contextual files [GC-APP-004, GC-APP-005, GC-APP-006, GC-APP-028, GC-CAL-002, GC-CIV-027, GC-CONT-025, GC-FIS-011, GC-FIS-012, GC-FIS-013, GC-FIS-014, GC-FIS-015, GC-FIS-016, GC-FIS-018, GC-FIS-032, GC-FIS-033, GC-FIS-034, GC-FIS-035, GC-GOV-019, GC-GOV-020, GC-JUD-001, LZ-FIS-007, LZ-FIS-036, LZ-FIS-045, LZ-FIS-049, LZ-FIS-051, LZ-JUD-001, LZ-JUD-003, LZ-JUD-005, NAT-AID-001, NAT-FIS-004, NAT-FIS-005, NAT-FIS-006, NAT-FIS-007, TF-CIV-001, TF-CIV-002, TF-FIS-007, TF-FIS-008, VAL-CIV-001]. Their presence does not establish receipt, admissibility or a duty to consider them.",
+          "es": "Para DIP 2/2026, la cuestión decisoria finita es si el órgano legalmente competente debe determinar si el expediente fiscal completo sustenta la recepción, reparto, remisión, examen, respuesta, archivo y tratamiento entre expedientes registrados respecto del objeto registrado «Fiscalía pre-procedural investigation». Fiscalía de la Comunidad Autónoma de Canarias es solo el candidato registrado como custodio/órgano y aquí no se le atribuye competencia jurídica ni obligación de actuar. La navegación controlada identifica actualmente expedientes directos [GC-CRI-008, GC-FIS-033, NAT-FIS-004] y contextuales [GC-APP-004, GC-APP-005, GC-APP-006, GC-APP-028, GC-CAL-002, GC-CIV-027, GC-CONT-025, GC-FIS-011, GC-FIS-012, GC-FIS-013, GC-FIS-014, GC-FIS-015, GC-FIS-016, GC-FIS-018, GC-FIS-032, GC-FIS-033, GC-FIS-034, GC-FIS-035, GC-GOV-019, GC-GOV-020, GC-JUD-001, LZ-FIS-007, LZ-FIS-036, LZ-FIS-045, LZ-FIS-049, LZ-FIS-051, LZ-JUD-001, LZ-JUD-003, LZ-JUD-005, NAT-AID-001, NAT-FIS-004, NAT-FIS-005, NAT-FIS-006, NAT-FIS-007, TF-CIV-001, TF-CIV-002, TF-FIS-007, TF-FIS-008, VAL-CIV-001]. Su presencia no acredita recepción, admisibilidad ni deber de examinarlos."
         },
         "contrary_explanation": {
           "en": "For DIP 2/2026, the strongest hypothetical innocent or contrary explanation could be a lawful limitation based on competence, territorial routing, duplication, judicialisation, evidential threshold, confidentiality or independent file-specific reasoning, but only if the primary record establishes that the legally competent organ applied it to “Fiscalía pre-procedural investigation”. No act is attributed by this model to the recorded candidate Fiscalía de la Comunidad Autónoma de Canarias. A different treatment, missing public inventory or related-file membership alone does not establish concealment, coordination, error or wrongdoing.",
@@ -26166,6 +26419,8 @@
             "LZ-FIS-007",
             "LZ-FIS-036",
             "LZ-FIS-045",
+            "LZ-FIS-049",
+            "LZ-FIS-051",
             "LZ-JUD-001",
             "LZ-JUD-003",
             "LZ-JUD-005",
@@ -26220,6 +26475,8 @@
             "LZ-FIS-007",
             "LZ-FIS-036",
             "LZ-FIS-045",
+            "LZ-FIS-049",
+            "LZ-FIS-051",
             "LZ-JUD-001",
             "LZ-JUD-003",
             "LZ-JUD-005",
@@ -26247,8 +26504,8 @@
           "es": "La disponibilidad lícita, admisibilidad o inclusión en el ámbito de otro expediente o fuente debe determinarse en el procedimiento seleccionado; este modelo de navegación no infiere disponibilidad ni deber de examen."
         },
         "decision_dependency": {
-          "en": "For EG 49/2026, the finite decision question is whether the legally competent organ must determine whether the complete prosecution file supports the recorded receipt, allocation, referral, examination, response, closure and cross-file treatment for the recorded object “Central governmental/prosecutorial review file”. Fiscalía General del Estado — Unidad de Delitos contra la Administración Pública is only the recorded custodian/organ candidate and is not treated here as legally competent or obliged to act. Controlled navigation currently identifies direct files [NAT-FIS-004] and contextual files [GC-APP-004, GC-APP-005, GC-APP-006, GC-APP-028, GC-CIV-027, GC-CONT-025, GC-FIS-011, GC-FIS-012, GC-FIS-013, GC-FIS-014, GC-FIS-015, GC-FIS-016, GC-FIS-017, GC-FIS-032, GC-FIS-033, GC-FIS-034, GC-FIS-035, GC-GOV-019, GC-GOV-020, GC-JUD-001, LZ-FIS-007, LZ-FIS-036, LZ-FIS-045, LZ-JUD-001, LZ-JUD-003, LZ-JUD-005, NAT-AID-001, NAT-FIS-004, NAT-FIS-005, NAT-FIS-006, NAT-FIS-007, NAT-TES-001, TF-CIV-001, TF-CIV-002, TF-CRI-003, TF-FIS-007, TF-FIS-008, X-REG-001]. Their presence does not establish receipt, admissibility or a duty to consider them.",
-          "es": "Para EG 49/2026, la cuestión decisoria finita es si el órgano legalmente competente debe determinar si el expediente fiscal completo sustenta la recepción, reparto, remisión, examen, respuesta, archivo y tratamiento entre expedientes registrados respecto del objeto registrado «Central governmental/prosecutorial review file». Fiscalía General del Estado — Unidad de Delitos contra la Administración Pública es solo el candidato registrado como custodio/órgano y aquí no se le atribuye competencia jurídica ni obligación de actuar. La navegación controlada identifica actualmente expedientes directos [NAT-FIS-004] y contextuales [GC-APP-004, GC-APP-005, GC-APP-006, GC-APP-028, GC-CIV-027, GC-CONT-025, GC-FIS-011, GC-FIS-012, GC-FIS-013, GC-FIS-014, GC-FIS-015, GC-FIS-016, GC-FIS-017, GC-FIS-032, GC-FIS-033, GC-FIS-034, GC-FIS-035, GC-GOV-019, GC-GOV-020, GC-JUD-001, LZ-FIS-007, LZ-FIS-036, LZ-FIS-045, LZ-JUD-001, LZ-JUD-003, LZ-JUD-005, NAT-AID-001, NAT-FIS-004, NAT-FIS-005, NAT-FIS-006, NAT-FIS-007, NAT-TES-001, TF-CIV-001, TF-CIV-002, TF-CRI-003, TF-FIS-007, TF-FIS-008, X-REG-001]. Su presencia no acredita recepción, admisibilidad ni deber de examinarlos."
+          "en": "For EG 49/2026, the finite decision question is whether the legally competent organ must determine whether the complete prosecution file supports the recorded receipt, allocation, referral, examination, response, closure and cross-file treatment for the recorded object “Central governmental/prosecutorial review file”. Fiscalía General del Estado — Unidad de Delitos contra la Administración Pública is only the recorded custodian/organ candidate and is not treated here as legally competent or obliged to act. Controlled navigation currently identifies direct files [NAT-FIS-004] and contextual files [GC-APP-004, GC-APP-005, GC-APP-006, GC-APP-028, GC-CIV-027, GC-CONT-025, GC-FIS-011, GC-FIS-012, GC-FIS-013, GC-FIS-014, GC-FIS-015, GC-FIS-016, GC-FIS-017, GC-FIS-032, GC-FIS-033, GC-FIS-034, GC-FIS-035, GC-GOV-019, GC-GOV-020, GC-JUD-001, LZ-FIS-007, LZ-FIS-036, LZ-FIS-045, LZ-FIS-049, LZ-FIS-051, LZ-JUD-001, LZ-JUD-003, LZ-JUD-005, NAT-AID-001, NAT-FIS-004, NAT-FIS-005, NAT-FIS-006, NAT-FIS-007, NAT-TES-001, TF-CIV-001, TF-CIV-002, TF-CRI-003, TF-FIS-007, TF-FIS-008, X-REG-001]. Their presence does not establish receipt, admissibility or a duty to consider them.",
+          "es": "Para EG 49/2026, la cuestión decisoria finita es si el órgano legalmente competente debe determinar si el expediente fiscal completo sustenta la recepción, reparto, remisión, examen, respuesta, archivo y tratamiento entre expedientes registrados respecto del objeto registrado «Central governmental/prosecutorial review file». Fiscalía General del Estado — Unidad de Delitos contra la Administración Pública es solo el candidato registrado como custodio/órgano y aquí no se le atribuye competencia jurídica ni obligación de actuar. La navegación controlada identifica actualmente expedientes directos [NAT-FIS-004] y contextuales [GC-APP-004, GC-APP-005, GC-APP-006, GC-APP-028, GC-CIV-027, GC-CONT-025, GC-FIS-011, GC-FIS-012, GC-FIS-013, GC-FIS-014, GC-FIS-015, GC-FIS-016, GC-FIS-017, GC-FIS-032, GC-FIS-033, GC-FIS-034, GC-FIS-035, GC-GOV-019, GC-GOV-020, GC-JUD-001, LZ-FIS-007, LZ-FIS-036, LZ-FIS-045, LZ-FIS-049, LZ-FIS-051, LZ-JUD-001, LZ-JUD-003, LZ-JUD-005, NAT-AID-001, NAT-FIS-004, NAT-FIS-005, NAT-FIS-006, NAT-FIS-007, NAT-TES-001, TF-CIV-001, TF-CIV-002, TF-CRI-003, TF-FIS-007, TF-FIS-008, X-REG-001]. Su presencia no acredita recepción, admisibilidad ni deber de examinarlos."
         },
         "contrary_explanation": {
           "en": "For EG 49/2026, the strongest hypothetical innocent or contrary explanation could be a lawful limitation based on competence, territorial routing, duplication, judicialisation, evidential threshold, confidentiality or independent file-specific reasoning, but only if the primary record establishes that the legally competent organ applied it to “Central governmental/prosecutorial review file”. No act is attributed by this model to the recorded candidate Fiscalía General del Estado — Unidad de Delitos contra la Administración Pública. A different treatment, missing public inventory or related-file membership alone does not establish concealment, coordination, error or wrongdoing.",
@@ -26552,6 +26809,8 @@
             "LZ-FIS-007",
             "LZ-FIS-036",
             "LZ-FIS-045",
+            "LZ-FIS-049",
+            "LZ-FIS-051",
             "LZ-JUD-001",
             "LZ-JUD-003",
             "LZ-JUD-005",
@@ -26604,6 +26863,8 @@
             "LZ-FIS-007",
             "LZ-FIS-036",
             "LZ-FIS-045",
+            "LZ-FIS-049",
+            "LZ-FIS-051",
             "LZ-JUD-001",
             "LZ-JUD-003",
             "LZ-JUD-005",
@@ -26630,8 +26891,8 @@
           "es": "La disponibilidad lícita, admisibilidad o inclusión en el ámbito de otro expediente o fuente debe determinarse en el procedimiento seleccionado; este modelo de navegación no infiere disponibilidad ni deber de examen."
         },
         "decision_dependency": {
-          "en": "For DI 169/2026, the finite decision question is whether the legally competent organ must determine whether the complete administrative file supports the recorded authority, title, access, licence, application, act and current legal effect for the recorded object “Judicial-governance complaint”. CGPJ is only the recorded custodian/organ candidate and is not treated here as legally competent or obliged to act. Controlled navigation currently identifies direct files [GC-GOV-020] and contextual files [GC-APP-004, GC-APP-005, GC-APP-006, GC-APP-028, GC-CAL-002, GC-CIV-027, GC-CONT-025, GC-FIS-011, GC-FIS-012, GC-FIS-013, GC-FIS-014, GC-FIS-015, GC-FIS-016, GC-FIS-017, GC-FIS-018, GC-FIS-032, GC-FIS-033, GC-FIS-034, GC-FIS-035, GC-GOV-020, GC-JUD-001, LZ-FIS-007, LZ-FIS-036, LZ-FIS-045, LZ-JUD-001, LZ-JUD-003, LZ-JUD-005, NAT-AID-001, NAT-FIS-004, NAT-FIS-005, NAT-FIS-006, NAT-FIS-007, NAT-TES-001, TF-CIV-001, TF-CIV-002, TF-FIS-007, TF-FIS-008, VAL-CIV-001]. Their presence does not establish receipt, admissibility or a duty to consider them.",
-          "es": "Para DI 169/2026, la cuestión decisoria finita es si el órgano legalmente competente debe determinar si el expediente administrativo completo sustenta la autoridad, título, acceso, licencia, solicitud, acto y efecto jurídico actual registrados respecto del objeto registrado «Judicial-governance complaint». CGPJ es solo el candidato registrado como custodio/órgano y aquí no se le atribuye competencia jurídica ni obligación de actuar. La navegación controlada identifica actualmente expedientes directos [GC-GOV-020] y contextuales [GC-APP-004, GC-APP-005, GC-APP-006, GC-APP-028, GC-CAL-002, GC-CIV-027, GC-CONT-025, GC-FIS-011, GC-FIS-012, GC-FIS-013, GC-FIS-014, GC-FIS-015, GC-FIS-016, GC-FIS-017, GC-FIS-018, GC-FIS-032, GC-FIS-033, GC-FIS-034, GC-FIS-035, GC-GOV-020, GC-JUD-001, LZ-FIS-007, LZ-FIS-036, LZ-FIS-045, LZ-JUD-001, LZ-JUD-003, LZ-JUD-005, NAT-AID-001, NAT-FIS-004, NAT-FIS-005, NAT-FIS-006, NAT-FIS-007, NAT-TES-001, TF-CIV-001, TF-CIV-002, TF-FIS-007, TF-FIS-008, VAL-CIV-001]. Su presencia no acredita recepción, admisibilidad ni deber de examinarlos."
+          "en": "For DI 169/2026, the finite decision question is whether the legally competent organ must determine whether the complete administrative file supports the recorded authority, title, access, licence, application, act and current legal effect for the recorded object “Judicial-governance complaint”. CGPJ is only the recorded custodian/organ candidate and is not treated here as legally competent or obliged to act. Controlled navigation currently identifies direct files [GC-GOV-020] and contextual files [GC-APP-004, GC-APP-005, GC-APP-006, GC-APP-028, GC-CAL-002, GC-CIV-027, GC-CONT-025, GC-FIS-011, GC-FIS-012, GC-FIS-013, GC-FIS-014, GC-FIS-015, GC-FIS-016, GC-FIS-017, GC-FIS-018, GC-FIS-032, GC-FIS-033, GC-FIS-034, GC-FIS-035, GC-GOV-020, GC-JUD-001, LZ-FIS-007, LZ-FIS-036, LZ-FIS-045, LZ-FIS-049, LZ-FIS-051, LZ-JUD-001, LZ-JUD-003, LZ-JUD-005, NAT-AID-001, NAT-FIS-004, NAT-FIS-005, NAT-FIS-006, NAT-FIS-007, NAT-TES-001, TF-CIV-001, TF-CIV-002, TF-FIS-007, TF-FIS-008, VAL-CIV-001]. Their presence does not establish receipt, admissibility or a duty to consider them.",
+          "es": "Para DI 169/2026, la cuestión decisoria finita es si el órgano legalmente competente debe determinar si el expediente administrativo completo sustenta la autoridad, título, acceso, licencia, solicitud, acto y efecto jurídico actual registrados respecto del objeto registrado «Judicial-governance complaint». CGPJ es solo el candidato registrado como custodio/órgano y aquí no se le atribuye competencia jurídica ni obligación de actuar. La navegación controlada identifica actualmente expedientes directos [GC-GOV-020] y contextuales [GC-APP-004, GC-APP-005, GC-APP-006, GC-APP-028, GC-CAL-002, GC-CIV-027, GC-CONT-025, GC-FIS-011, GC-FIS-012, GC-FIS-013, GC-FIS-014, GC-FIS-015, GC-FIS-016, GC-FIS-017, GC-FIS-018, GC-FIS-032, GC-FIS-033, GC-FIS-034, GC-FIS-035, GC-GOV-020, GC-JUD-001, LZ-FIS-007, LZ-FIS-036, LZ-FIS-045, LZ-FIS-049, LZ-FIS-051, LZ-JUD-001, LZ-JUD-003, LZ-JUD-005, NAT-AID-001, NAT-FIS-004, NAT-FIS-005, NAT-FIS-006, NAT-FIS-007, NAT-TES-001, TF-CIV-001, TF-CIV-002, TF-FIS-007, TF-FIS-008, VAL-CIV-001]. Su presencia no acredita recepción, admisibilidad ni deber de examinarlos."
         },
         "contrary_explanation": {
           "en": "For DI 169/2026, the strongest hypothetical innocent or contrary explanation could be a lawful application of competence, title, data-protection, confidentiality, access, licensing, time-limit or administrative-discretion rules, but only if the primary record establishes that the legally competent organ applied it to “Judicial-governance complaint”. No act is attributed by this model to the recorded candidate CGPJ. A different treatment, missing public inventory or related-file membership alone does not establish concealment, coordination, error or wrongdoing.",
@@ -26903,6 +27164,8 @@
             "LZ-FIS-007",
             "LZ-FIS-036",
             "LZ-FIS-045",
+            "LZ-FIS-049",
+            "LZ-FIS-051",
             "LZ-JUD-001",
             "LZ-JUD-003",
             "LZ-JUD-005",
@@ -26952,6 +27215,8 @@
             "LZ-FIS-007",
             "LZ-FIS-036",
             "LZ-FIS-045",
+            "LZ-FIS-049",
+            "LZ-FIS-051",
             "LZ-JUD-001",
             "LZ-JUD-003",
             "LZ-JUD-005",
@@ -26976,8 +27241,8 @@
           "es": "La disponibilidad lícita, admisibilidad o inclusión en el ámbito de otro expediente o fuente debe determinarse en el procedimiento seleccionado; este modelo de navegación no infiere disponibilidad ni deber de examen."
         },
         "decision_dependency": {
-          "en": "For Recurso de alzada 286/2026, the finite decision question is whether the legally competent organ must determine whether the complete administrative file supports the recorded authority, title, access, licence, application, act and current legal effect for the recorded object “Administrative appeal”. CGPJ is only the recorded custodian/organ candidate and is not treated here as legally competent or obliged to act. Controlled navigation currently identifies direct files [GC-GOV-019] and contextual files [GC-APP-004, GC-APP-005, GC-APP-006, GC-APP-028, GC-CAL-002, GC-CIV-027, GC-CONT-025, GC-FIS-011, GC-FIS-012, GC-FIS-013, GC-FIS-014, GC-FIS-015, GC-FIS-016, GC-FIS-017, GC-FIS-018, GC-FIS-032, GC-FIS-033, GC-FIS-034, GC-FIS-035, GC-GOV-019, GC-JUD-001, LZ-FIS-007, LZ-FIS-036, LZ-FIS-045, LZ-JUD-001, LZ-JUD-003, LZ-JUD-005, NAT-FIS-004, NAT-FIS-005, NAT-FIS-006, NAT-FIS-007, TF-CIV-001, TF-CIV-002, TF-FIS-007, TF-FIS-008, VAL-CIV-001]. Their presence does not establish receipt, admissibility or a duty to consider them.",
-          "es": "Para Recurso de alzada 286/2026, la cuestión decisoria finita es si el órgano legalmente competente debe determinar si el expediente administrativo completo sustenta la autoridad, título, acceso, licencia, solicitud, acto y efecto jurídico actual registrados respecto del objeto registrado «Administrative appeal». CGPJ es solo el candidato registrado como custodio/órgano y aquí no se le atribuye competencia jurídica ni obligación de actuar. La navegación controlada identifica actualmente expedientes directos [GC-GOV-019] y contextuales [GC-APP-004, GC-APP-005, GC-APP-006, GC-APP-028, GC-CAL-002, GC-CIV-027, GC-CONT-025, GC-FIS-011, GC-FIS-012, GC-FIS-013, GC-FIS-014, GC-FIS-015, GC-FIS-016, GC-FIS-017, GC-FIS-018, GC-FIS-032, GC-FIS-033, GC-FIS-034, GC-FIS-035, GC-GOV-019, GC-JUD-001, LZ-FIS-007, LZ-FIS-036, LZ-FIS-045, LZ-JUD-001, LZ-JUD-003, LZ-JUD-005, NAT-FIS-004, NAT-FIS-005, NAT-FIS-006, NAT-FIS-007, TF-CIV-001, TF-CIV-002, TF-FIS-007, TF-FIS-008, VAL-CIV-001]. Su presencia no acredita recepción, admisibilidad ni deber de examinarlos."
+          "en": "For Recurso de alzada 286/2026, the finite decision question is whether the legally competent organ must determine whether the complete administrative file supports the recorded authority, title, access, licence, application, act and current legal effect for the recorded object “Administrative appeal”. CGPJ is only the recorded custodian/organ candidate and is not treated here as legally competent or obliged to act. Controlled navigation currently identifies direct files [GC-GOV-019] and contextual files [GC-APP-004, GC-APP-005, GC-APP-006, GC-APP-028, GC-CAL-002, GC-CIV-027, GC-CONT-025, GC-FIS-011, GC-FIS-012, GC-FIS-013, GC-FIS-014, GC-FIS-015, GC-FIS-016, GC-FIS-017, GC-FIS-018, GC-FIS-032, GC-FIS-033, GC-FIS-034, GC-FIS-035, GC-GOV-019, GC-JUD-001, LZ-FIS-007, LZ-FIS-036, LZ-FIS-045, LZ-FIS-049, LZ-FIS-051, LZ-JUD-001, LZ-JUD-003, LZ-JUD-005, NAT-FIS-004, NAT-FIS-005, NAT-FIS-006, NAT-FIS-007, TF-CIV-001, TF-CIV-002, TF-FIS-007, TF-FIS-008, VAL-CIV-001]. Their presence does not establish receipt, admissibility or a duty to consider them.",
+          "es": "Para Recurso de alzada 286/2026, la cuestión decisoria finita es si el órgano legalmente competente debe determinar si el expediente administrativo completo sustenta la autoridad, título, acceso, licencia, solicitud, acto y efecto jurídico actual registrados respecto del objeto registrado «Administrative appeal». CGPJ es solo el candidato registrado como custodio/órgano y aquí no se le atribuye competencia jurídica ni obligación de actuar. La navegación controlada identifica actualmente expedientes directos [GC-GOV-019] y contextuales [GC-APP-004, GC-APP-005, GC-APP-006, GC-APP-028, GC-CAL-002, GC-CIV-027, GC-CONT-025, GC-FIS-011, GC-FIS-012, GC-FIS-013, GC-FIS-014, GC-FIS-015, GC-FIS-016, GC-FIS-017, GC-FIS-018, GC-FIS-032, GC-FIS-033, GC-FIS-034, GC-FIS-035, GC-GOV-019, GC-JUD-001, LZ-FIS-007, LZ-FIS-036, LZ-FIS-045, LZ-FIS-049, LZ-FIS-051, LZ-JUD-001, LZ-JUD-003, LZ-JUD-005, NAT-FIS-004, NAT-FIS-005, NAT-FIS-006, NAT-FIS-007, TF-CIV-001, TF-CIV-002, TF-FIS-007, TF-FIS-008, VAL-CIV-001]. Su presencia no acredita recepción, admisibilidad ni deber de examinarlos."
         },
         "contrary_explanation": {
           "en": "For Recurso de alzada 286/2026, the strongest hypothetical innocent or contrary explanation could be a lawful application of competence, title, data-protection, confidentiality, access, licensing, time-limit or administrative-discretion rules, but only if the primary record establishes that the legally competent organ applied it to “Administrative appeal”. No act is attributed by this model to the recorded candidate CGPJ. A different treatment, missing public inventory or related-file membership alone does not establish concealment, coordination, error or wrongdoing.",
@@ -31294,6 +31559,8 @@
             "GC-JUD-001",
             "LZ-FIS-007",
             "LZ-FIS-045",
+            "LZ-FIS-049",
+            "LZ-FIS-051",
             "NAT-FIS-004",
             "NAT-FIS-005",
             "NAT-FIS-006",
@@ -31324,6 +31591,8 @@
             "GC-JUD-001",
             "LZ-FIS-007",
             "LZ-FIS-045",
+            "LZ-FIS-049",
+            "LZ-FIS-051",
             "NAT-FIS-004",
             "NAT-FIS-005",
             "NAT-FIS-006",
@@ -31341,8 +31610,8 @@
           "es": "La disponibilidad lícita, admisibilidad o inclusión en el ámbito de otro expediente o fuente debe determinarse en el procedimiento seleccionado; este modelo de navegación no infiere disponibilidad ni deber de examen."
         },
         "decision_dependency": {
-          "en": "For EG 19/26, the finite decision question is whether the legally competent organ must determine whether the complete prosecution file supports the recorded receipt, allocation, referral, examination, response, closure and cross-file treatment for the recorded object “Expediente gubernativo; territorial inhibition/referral”. Fiscalía de Área de Arrecife de Lanzarote is only the recorded custodian/organ candidate and is not treated here as legally competent or obliged to act. Controlled navigation currently identifies direct files [none currently admitted] and contextual files [GC-APP-004, GC-FIS-011, GC-FIS-012, GC-FIS-013, GC-FIS-014, GC-FIS-015, GC-FIS-016, GC-FIS-017, GC-FIS-018, GC-FIS-032, GC-FIS-033, GC-FIS-034, GC-FIS-035, GC-GOV-019, GC-GOV-020, GC-JUD-001, LZ-FIS-007, LZ-FIS-045, NAT-FIS-004, NAT-FIS-005, NAT-FIS-006, NAT-FIS-007, TF-FIS-007, TF-FIS-008]. Their presence does not establish receipt, admissibility or a duty to consider them.",
-          "es": "Para EG 19/26, la cuestión decisoria finita es si el órgano legalmente competente debe determinar si el expediente fiscal completo sustenta la recepción, reparto, remisión, examen, respuesta, archivo y tratamiento entre expedientes registrados respecto del objeto registrado «Expediente gubernativo; territorial inhibition/referral». Fiscalía de Área de Arrecife de Lanzarote es solo el candidato registrado como custodio/órgano y aquí no se le atribuye competencia jurídica ni obligación de actuar. La navegación controlada identifica actualmente expedientes directos [ninguno admitido actualmente] y contextuales [GC-APP-004, GC-FIS-011, GC-FIS-012, GC-FIS-013, GC-FIS-014, GC-FIS-015, GC-FIS-016, GC-FIS-017, GC-FIS-018, GC-FIS-032, GC-FIS-033, GC-FIS-034, GC-FIS-035, GC-GOV-019, GC-GOV-020, GC-JUD-001, LZ-FIS-007, LZ-FIS-045, NAT-FIS-004, NAT-FIS-005, NAT-FIS-006, NAT-FIS-007, TF-FIS-007, TF-FIS-008]. Su presencia no acredita recepción, admisibilidad ni deber de examinarlos."
+          "en": "For EG 19/26, the finite decision question is whether the legally competent organ must determine whether the complete prosecution file supports the recorded receipt, allocation, referral, examination, response, closure and cross-file treatment for the recorded object “Expediente gubernativo; territorial inhibition/referral”. Fiscalía de Área de Arrecife de Lanzarote is only the recorded custodian/organ candidate and is not treated here as legally competent or obliged to act. Controlled navigation currently identifies direct files [none currently admitted] and contextual files [GC-APP-004, GC-FIS-011, GC-FIS-012, GC-FIS-013, GC-FIS-014, GC-FIS-015, GC-FIS-016, GC-FIS-017, GC-FIS-018, GC-FIS-032, GC-FIS-033, GC-FIS-034, GC-FIS-035, GC-GOV-019, GC-GOV-020, GC-JUD-001, LZ-FIS-007, LZ-FIS-045, LZ-FIS-049, LZ-FIS-051, NAT-FIS-004, NAT-FIS-005, NAT-FIS-006, NAT-FIS-007, TF-FIS-007, TF-FIS-008]. Their presence does not establish receipt, admissibility or a duty to consider them.",
+          "es": "Para EG 19/26, la cuestión decisoria finita es si el órgano legalmente competente debe determinar si el expediente fiscal completo sustenta la recepción, reparto, remisión, examen, respuesta, archivo y tratamiento entre expedientes registrados respecto del objeto registrado «Expediente gubernativo; territorial inhibition/referral». Fiscalía de Área de Arrecife de Lanzarote es solo el candidato registrado como custodio/órgano y aquí no se le atribuye competencia jurídica ni obligación de actuar. La navegación controlada identifica actualmente expedientes directos [ninguno admitido actualmente] y contextuales [GC-APP-004, GC-FIS-011, GC-FIS-012, GC-FIS-013, GC-FIS-014, GC-FIS-015, GC-FIS-016, GC-FIS-017, GC-FIS-018, GC-FIS-032, GC-FIS-033, GC-FIS-034, GC-FIS-035, GC-GOV-019, GC-GOV-020, GC-JUD-001, LZ-FIS-007, LZ-FIS-045, LZ-FIS-049, LZ-FIS-051, NAT-FIS-004, NAT-FIS-005, NAT-FIS-006, NAT-FIS-007, TF-FIS-007, TF-FIS-008]. Su presencia no acredita recepción, admisibilidad ni deber de examinarlos."
         },
         "contrary_explanation": {
           "en": "For EG 19/26, the strongest hypothetical innocent or contrary explanation could be a lawful limitation based on competence, territorial routing, duplication, judicialisation, evidential threshold, confidentiality or independent file-specific reasoning, but only if the primary record establishes that the legally competent organ applied it to “Expediente gubernativo; territorial inhibition/referral”. No act is attributed by this model to the recorded candidate Fiscalía de Área de Arrecife de Lanzarote. A different treatment, missing public inventory or related-file membership alone does not establish concealment, coordination, error or wrongdoing.",
@@ -37598,6 +37867,8 @@
             "GC-JUD-001",
             "LZ-FIS-007",
             "LZ-FIS-036",
+            "LZ-FIS-049",
+            "LZ-FIS-051",
             "NAT-FIS-004",
             "NAT-FIS-005",
             "NAT-FIS-006",
@@ -37628,6 +37899,8 @@
             "GC-JUD-001",
             "LZ-FIS-007",
             "LZ-FIS-036",
+            "LZ-FIS-049",
+            "LZ-FIS-051",
             "NAT-FIS-004",
             "NAT-FIS-005",
             "NAT-FIS-006",
@@ -37645,8 +37918,8 @@
           "es": "La disponibilidad lícita, admisibilidad o inclusión en el ámbito de otro expediente o fuente debe determinarse en el procedimiento seleccionado; este modelo de navegación no infiere disponibilidad ni deber de examen."
         },
         "decision_dependency": {
-          "en": "For DI preprocesal 114/2025, the finite decision question is whether the legally competent organ must determine whether the complete prosecution file supports the recorded receipt, allocation, referral, examination, response, closure and cross-file treatment for the recorded object “Fiscalía pre-procedural investigation”. Fiscalía de Área de Arrecife de Lanzarote–Puerto del Rosario is only the recorded custodian/organ candidate and is not treated here as legally competent or obliged to act. Controlled navigation currently identifies direct files [none currently admitted] and contextual files [GC-APP-004, GC-FIS-011, GC-FIS-012, GC-FIS-013, GC-FIS-014, GC-FIS-015, GC-FIS-016, GC-FIS-017, GC-FIS-018, GC-FIS-032, GC-FIS-033, GC-FIS-034, GC-FIS-035, GC-GOV-019, GC-GOV-020, GC-JUD-001, LZ-FIS-007, LZ-FIS-036, NAT-FIS-004, NAT-FIS-005, NAT-FIS-006, NAT-FIS-007, TF-FIS-007, TF-FIS-008]. Their presence does not establish receipt, admissibility or a duty to consider them.",
-          "es": "Para DI preprocesal 114/2025, la cuestión decisoria finita es si el órgano legalmente competente debe determinar si el expediente fiscal completo sustenta la recepción, reparto, remisión, examen, respuesta, archivo y tratamiento entre expedientes registrados respecto del objeto registrado «Fiscalía pre-procedural investigation». Fiscalía de Área de Arrecife de Lanzarote–Puerto del Rosario es solo el candidato registrado como custodio/órgano y aquí no se le atribuye competencia jurídica ni obligación de actuar. La navegación controlada identifica actualmente expedientes directos [ninguno admitido actualmente] y contextuales [GC-APP-004, GC-FIS-011, GC-FIS-012, GC-FIS-013, GC-FIS-014, GC-FIS-015, GC-FIS-016, GC-FIS-017, GC-FIS-018, GC-FIS-032, GC-FIS-033, GC-FIS-034, GC-FIS-035, GC-GOV-019, GC-GOV-020, GC-JUD-001, LZ-FIS-007, LZ-FIS-036, NAT-FIS-004, NAT-FIS-005, NAT-FIS-006, NAT-FIS-007, TF-FIS-007, TF-FIS-008]. Su presencia no acredita recepción, admisibilidad ni deber de examinarlos."
+          "en": "For DI preprocesal 114/2025, the finite decision question is whether the legally competent organ must determine whether the complete prosecution file supports the recorded receipt, allocation, referral, examination, response, closure and cross-file treatment for the recorded object “Fiscalía pre-procedural investigation”. Fiscalía de Área de Arrecife de Lanzarote–Puerto del Rosario is only the recorded custodian/organ candidate and is not treated here as legally competent or obliged to act. Controlled navigation currently identifies direct files [none currently admitted] and contextual files [GC-APP-004, GC-FIS-011, GC-FIS-012, GC-FIS-013, GC-FIS-014, GC-FIS-015, GC-FIS-016, GC-FIS-017, GC-FIS-018, GC-FIS-032, GC-FIS-033, GC-FIS-034, GC-FIS-035, GC-GOV-019, GC-GOV-020, GC-JUD-001, LZ-FIS-007, LZ-FIS-036, LZ-FIS-049, LZ-FIS-051, NAT-FIS-004, NAT-FIS-005, NAT-FIS-006, NAT-FIS-007, TF-FIS-007, TF-FIS-008]. Their presence does not establish receipt, admissibility or a duty to consider them.",
+          "es": "Para DI preprocesal 114/2025, la cuestión decisoria finita es si el órgano legalmente competente debe determinar si el expediente fiscal completo sustenta la recepción, reparto, remisión, examen, respuesta, archivo y tratamiento entre expedientes registrados respecto del objeto registrado «Fiscalía pre-procedural investigation». Fiscalía de Área de Arrecife de Lanzarote–Puerto del Rosario es solo el candidato registrado como custodio/órgano y aquí no se le atribuye competencia jurídica ni obligación de actuar. La navegación controlada identifica actualmente expedientes directos [ninguno admitido actualmente] y contextuales [GC-APP-004, GC-FIS-011, GC-FIS-012, GC-FIS-013, GC-FIS-014, GC-FIS-015, GC-FIS-016, GC-FIS-017, GC-FIS-018, GC-FIS-032, GC-FIS-033, GC-FIS-034, GC-FIS-035, GC-GOV-019, GC-GOV-020, GC-JUD-001, LZ-FIS-007, LZ-FIS-036, LZ-FIS-049, LZ-FIS-051, NAT-FIS-004, NAT-FIS-005, NAT-FIS-006, NAT-FIS-007, TF-FIS-007, TF-FIS-008]. Su presencia no acredita recepción, admisibilidad ni deber de examinarlos."
         },
         "contrary_explanation": {
           "en": "For DI preprocesal 114/2025, the strongest hypothetical innocent or contrary explanation could be a lawful limitation based on competence, territorial routing, duplication, judicialisation, evidential threshold, confidentiality or independent file-specific reasoning, but only if the primary record establishes that the legally competent organ applied it to “Fiscalía pre-procedural investigation”. No act is attributed by this model to the recorded candidate Fiscalía de Área de Arrecife de Lanzarote–Puerto del Rosario. A different treatment, missing public inventory or related-file membership alone does not establish concealment, coordination, error or wrongdoing.",
@@ -37911,6 +38184,8 @@
             "LZ-FIS-007",
             "LZ-FIS-036",
             "LZ-FIS-045",
+            "LZ-FIS-049",
+            "LZ-FIS-051",
             "NAT-FIS-004",
             "NAT-FIS-005",
             "NAT-FIS-006",
@@ -37944,6 +38219,8 @@
             "LZ-FIS-007",
             "LZ-FIS-036",
             "LZ-FIS-045",
+            "LZ-FIS-049",
+            "LZ-FIS-051",
             "NAT-FIS-004",
             "NAT-FIS-005",
             "NAT-FIS-006",
@@ -37961,8 +38238,8 @@
           "es": "La disponibilidad lícita, admisibilidad o inclusión en el ámbito de otro expediente o fuente debe determinarse en el procedimiento seleccionado; este modelo de navegación no infiere disponibilidad ni deber de examen."
         },
         "decision_dependency": {
-          "en": "For DIP 20/2026, the finite decision question is whether the legally competent organ must determine whether the complete prosecution file supports the recorded receipt, allocation, referral, examination, response, closure and cross-file treatment for the recorded object “Fiscalía pre-procedural investigation and territorial referral”. Fiscalía Provincial de Las Palmas is only the recorded custodian/organ candidate and is not treated here as legally competent or obliged to act. Controlled navigation currently identifies direct files [GC-FIS-016, TF-FIS-008] and contextual files [GC-APP-004, GC-FIS-011, GC-FIS-012, GC-FIS-013, GC-FIS-014, GC-FIS-015, GC-FIS-016, GC-FIS-017, GC-FIS-018, GC-FIS-032, GC-FIS-033, GC-FIS-034, GC-FIS-035, GC-GOV-019, GC-GOV-020, GC-JUD-001, LZ-FIS-007, LZ-FIS-036, LZ-FIS-045, NAT-FIS-004, NAT-FIS-005, NAT-FIS-006, NAT-FIS-007, TF-FIS-008]. Their presence does not establish receipt, admissibility or a duty to consider them.",
-          "es": "Para DIP 20/2026, la cuestión decisoria finita es si el órgano legalmente competente debe determinar si el expediente fiscal completo sustenta la recepción, reparto, remisión, examen, respuesta, archivo y tratamiento entre expedientes registrados respecto del objeto registrado «Fiscalía pre-procedural investigation and territorial referral». Fiscalía Provincial de Las Palmas es solo el candidato registrado como custodio/órgano y aquí no se le atribuye competencia jurídica ni obligación de actuar. La navegación controlada identifica actualmente expedientes directos [GC-FIS-016, TF-FIS-008] y contextuales [GC-APP-004, GC-FIS-011, GC-FIS-012, GC-FIS-013, GC-FIS-014, GC-FIS-015, GC-FIS-016, GC-FIS-017, GC-FIS-018, GC-FIS-032, GC-FIS-033, GC-FIS-034, GC-FIS-035, GC-GOV-019, GC-GOV-020, GC-JUD-001, LZ-FIS-007, LZ-FIS-036, LZ-FIS-045, NAT-FIS-004, NAT-FIS-005, NAT-FIS-006, NAT-FIS-007, TF-FIS-008]. Su presencia no acredita recepción, admisibilidad ni deber de examinarlos."
+          "en": "For DIP 20/2026, the finite decision question is whether the legally competent organ must determine whether the complete prosecution file supports the recorded receipt, allocation, referral, examination, response, closure and cross-file treatment for the recorded object “Fiscalía pre-procedural investigation and territorial referral”. Fiscalía Provincial de Las Palmas is only the recorded custodian/organ candidate and is not treated here as legally competent or obliged to act. Controlled navigation currently identifies direct files [GC-FIS-016, TF-FIS-008] and contextual files [GC-APP-004, GC-FIS-011, GC-FIS-012, GC-FIS-013, GC-FIS-014, GC-FIS-015, GC-FIS-016, GC-FIS-017, GC-FIS-018, GC-FIS-032, GC-FIS-033, GC-FIS-034, GC-FIS-035, GC-GOV-019, GC-GOV-020, GC-JUD-001, LZ-FIS-007, LZ-FIS-036, LZ-FIS-045, LZ-FIS-049, LZ-FIS-051, NAT-FIS-004, NAT-FIS-005, NAT-FIS-006, NAT-FIS-007, TF-FIS-008]. Their presence does not establish receipt, admissibility or a duty to consider them.",
+          "es": "Para DIP 20/2026, la cuestión decisoria finita es si el órgano legalmente competente debe determinar si el expediente fiscal completo sustenta la recepción, reparto, remisión, examen, respuesta, archivo y tratamiento entre expedientes registrados respecto del objeto registrado «Fiscalía pre-procedural investigation and territorial referral». Fiscalía Provincial de Las Palmas es solo el candidato registrado como custodio/órgano y aquí no se le atribuye competencia jurídica ni obligación de actuar. La navegación controlada identifica actualmente expedientes directos [GC-FIS-016, TF-FIS-008] y contextuales [GC-APP-004, GC-FIS-011, GC-FIS-012, GC-FIS-013, GC-FIS-014, GC-FIS-015, GC-FIS-016, GC-FIS-017, GC-FIS-018, GC-FIS-032, GC-FIS-033, GC-FIS-034, GC-FIS-035, GC-GOV-019, GC-GOV-020, GC-JUD-001, LZ-FIS-007, LZ-FIS-036, LZ-FIS-045, LZ-FIS-049, LZ-FIS-051, NAT-FIS-004, NAT-FIS-005, NAT-FIS-006, NAT-FIS-007, TF-FIS-008]. Su presencia no acredita recepción, admisibilidad ni deber de examinarlos."
         },
         "contrary_explanation": {
           "en": "For DIP 20/2026, the strongest hypothetical innocent or contrary explanation could be a lawful limitation based on competence, territorial routing, duplication, judicialisation, evidential threshold, confidentiality or independent file-specific reasoning, but only if the primary record establishes that the legally competent organ applied it to “Fiscalía pre-procedural investigation and territorial referral”. No act is attributed by this model to the recorded candidate Fiscalía Provincial de Las Palmas. A different treatment, missing public inventory or related-file membership alone does not establish concealment, coordination, error or wrongdoing.",
@@ -38217,6 +38494,8 @@
             "LZ-FIS-007",
             "LZ-FIS-036",
             "LZ-FIS-045",
+            "LZ-FIS-049",
+            "LZ-FIS-051",
             "NAT-FIS-004",
             "NAT-FIS-005",
             "NAT-FIS-006",
@@ -38247,6 +38526,8 @@
             "LZ-FIS-007",
             "LZ-FIS-036",
             "LZ-FIS-045",
+            "LZ-FIS-049",
+            "LZ-FIS-051",
             "NAT-FIS-004",
             "NAT-FIS-005",
             "NAT-FIS-006",
@@ -38264,8 +38545,8 @@
           "es": "La disponibilidad lícita, admisibilidad o inclusión en el ámbito de otro expediente o fuente debe determinarse en el procedimiento seleccionado; este modelo de navegación no infiere disponibilidad ni deber de examen."
         },
         "decision_dependency": {
-          "en": "For Expediente Gubernativo 44/2026, the finite decision question is whether the legally competent organ must determine whether the complete prosecution file supports the recorded receipt, allocation, referral, examination, response, closure and cross-file treatment for the recorded object “Superior-Fiscalía governmental file”. Fiscalía de la Comunidad Autónoma de Canarias is only the recorded custodian/organ candidate and is not treated here as legally competent or obliged to act. Controlled navigation currently identifies direct files [none currently admitted] and contextual files [GC-APP-004, GC-FIS-011, GC-FIS-012, GC-FIS-013, GC-FIS-014, GC-FIS-015, GC-FIS-016, GC-FIS-017, GC-FIS-018, GC-FIS-033, GC-FIS-034, GC-FIS-035, GC-GOV-019, GC-GOV-020, GC-JUD-001, LZ-FIS-007, LZ-FIS-036, LZ-FIS-045, NAT-FIS-004, NAT-FIS-005, NAT-FIS-006, NAT-FIS-007, TF-FIS-007, TF-FIS-008]. Their presence does not establish receipt, admissibility or a duty to consider them.",
-          "es": "Para Expediente Gubernativo 44/2026, la cuestión decisoria finita es si el órgano legalmente competente debe determinar si el expediente fiscal completo sustenta la recepción, reparto, remisión, examen, respuesta, archivo y tratamiento entre expedientes registrados respecto del objeto registrado «Superior-Fiscalía governmental file». Fiscalía de la Comunidad Autónoma de Canarias es solo el candidato registrado como custodio/órgano y aquí no se le atribuye competencia jurídica ni obligación de actuar. La navegación controlada identifica actualmente expedientes directos [ninguno admitido actualmente] y contextuales [GC-APP-004, GC-FIS-011, GC-FIS-012, GC-FIS-013, GC-FIS-014, GC-FIS-015, GC-FIS-016, GC-FIS-017, GC-FIS-018, GC-FIS-033, GC-FIS-034, GC-FIS-035, GC-GOV-019, GC-GOV-020, GC-JUD-001, LZ-FIS-007, LZ-FIS-036, LZ-FIS-045, NAT-FIS-004, NAT-FIS-005, NAT-FIS-006, NAT-FIS-007, TF-FIS-007, TF-FIS-008]. Su presencia no acredita recepción, admisibilidad ni deber de examinarlos."
+          "en": "For Expediente Gubernativo 44/2026, the finite decision question is whether the legally competent organ must determine whether the complete prosecution file supports the recorded receipt, allocation, referral, examination, response, closure and cross-file treatment for the recorded object “Superior-Fiscalía governmental file”. Fiscalía de la Comunidad Autónoma de Canarias is only the recorded custodian/organ candidate and is not treated here as legally competent or obliged to act. Controlled navigation currently identifies direct files [none currently admitted] and contextual files [GC-APP-004, GC-FIS-011, GC-FIS-012, GC-FIS-013, GC-FIS-014, GC-FIS-015, GC-FIS-016, GC-FIS-017, GC-FIS-018, GC-FIS-033, GC-FIS-034, GC-FIS-035, GC-GOV-019, GC-GOV-020, GC-JUD-001, LZ-FIS-007, LZ-FIS-036, LZ-FIS-045, LZ-FIS-049, LZ-FIS-051, NAT-FIS-004, NAT-FIS-005, NAT-FIS-006, NAT-FIS-007, TF-FIS-007, TF-FIS-008]. Their presence does not establish receipt, admissibility or a duty to consider them.",
+          "es": "Para Expediente Gubernativo 44/2026, la cuestión decisoria finita es si el órgano legalmente competente debe determinar si el expediente fiscal completo sustenta la recepción, reparto, remisión, examen, respuesta, archivo y tratamiento entre expedientes registrados respecto del objeto registrado «Superior-Fiscalía governmental file». Fiscalía de la Comunidad Autónoma de Canarias es solo el candidato registrado como custodio/órgano y aquí no se le atribuye competencia jurídica ni obligación de actuar. La navegación controlada identifica actualmente expedientes directos [ninguno admitido actualmente] y contextuales [GC-APP-004, GC-FIS-011, GC-FIS-012, GC-FIS-013, GC-FIS-014, GC-FIS-015, GC-FIS-016, GC-FIS-017, GC-FIS-018, GC-FIS-033, GC-FIS-034, GC-FIS-035, GC-GOV-019, GC-GOV-020, GC-JUD-001, LZ-FIS-007, LZ-FIS-036, LZ-FIS-045, LZ-FIS-049, LZ-FIS-051, NAT-FIS-004, NAT-FIS-005, NAT-FIS-006, NAT-FIS-007, TF-FIS-007, TF-FIS-008]. Su presencia no acredita recepción, admisibilidad ni deber de examinarlos."
         },
         "contrary_explanation": {
           "en": "For Expediente Gubernativo 44/2026, the strongest hypothetical innocent or contrary explanation could be a lawful limitation based on competence, territorial routing, duplication, judicialisation, evidential threshold, confidentiality or independent file-specific reasoning, but only if the primary record establishes that the legally competent organ applied it to “Superior-Fiscalía governmental file”. No act is attributed by this model to the recorded candidate Fiscalía de la Comunidad Autónoma de Canarias. A different treatment, missing public inventory or related-file membership alone does not establish concealment, coordination, error or wrongdoing.",
@@ -38536,6 +38817,8 @@
             "LZ-FIS-007",
             "LZ-FIS-036",
             "LZ-FIS-045",
+            "LZ-FIS-049",
+            "LZ-FIS-051",
             "NAT-FIS-004",
             "NAT-FIS-005",
             "NAT-FIS-006",
@@ -38571,6 +38854,8 @@
             "LZ-FIS-007",
             "LZ-FIS-036",
             "LZ-FIS-045",
+            "LZ-FIS-049",
+            "LZ-FIS-051",
             "NAT-FIS-004",
             "NAT-FIS-005",
             "NAT-FIS-006",
@@ -38588,8 +38873,8 @@
           "es": "La disponibilidad lícita, admisibilidad o inclusión en el ámbito de otro expediente o fuente debe determinarse en el procedimiento seleccionado; este modelo de navegación no infiere disponibilidad ni deber de examen."
         },
         "decision_dependency": {
-          "en": "For Expediente Gubernativo 95/2026, the finite decision question is whether the legally competent organ must determine whether the complete prosecution file supports the recorded receipt, allocation, referral, examination, response, closure and cross-file treatment for the recorded object “Provincial governmental file”. Fiscalía Provincial de Santa Cruz de Tenerife is only the recorded custodian/organ candidate and is not treated here as legally competent or obliged to act. Controlled navigation currently identifies direct files [TF-CIV-001, TF-CIV-002, TF-CRI-003, TF-FIS-007] and contextual files [GC-APP-004, GC-FIS-011, GC-FIS-012, GC-FIS-013, GC-FIS-014, GC-FIS-015, GC-FIS-016, GC-FIS-017, GC-FIS-018, GC-FIS-032, GC-FIS-033, GC-FIS-034, GC-FIS-035, GC-GOV-019, GC-GOV-020, GC-JUD-001, LZ-FIS-007, LZ-FIS-036, LZ-FIS-045, NAT-FIS-004, NAT-FIS-005, NAT-FIS-006, NAT-FIS-007, TF-FIS-007]. Their presence does not establish receipt, admissibility or a duty to consider them.",
-          "es": "Para Expediente Gubernativo 95/2026, la cuestión decisoria finita es si el órgano legalmente competente debe determinar si el expediente fiscal completo sustenta la recepción, reparto, remisión, examen, respuesta, archivo y tratamiento entre expedientes registrados respecto del objeto registrado «Provincial governmental file». Fiscalía Provincial de Santa Cruz de Tenerife es solo el candidato registrado como custodio/órgano y aquí no se le atribuye competencia jurídica ni obligación de actuar. La navegación controlada identifica actualmente expedientes directos [TF-CIV-001, TF-CIV-002, TF-CRI-003, TF-FIS-007] y contextuales [GC-APP-004, GC-FIS-011, GC-FIS-012, GC-FIS-013, GC-FIS-014, GC-FIS-015, GC-FIS-016, GC-FIS-017, GC-FIS-018, GC-FIS-032, GC-FIS-033, GC-FIS-034, GC-FIS-035, GC-GOV-019, GC-GOV-020, GC-JUD-001, LZ-FIS-007, LZ-FIS-036, LZ-FIS-045, NAT-FIS-004, NAT-FIS-005, NAT-FIS-006, NAT-FIS-007, TF-FIS-007]. Su presencia no acredita recepción, admisibilidad ni deber de examinarlos."
+          "en": "For Expediente Gubernativo 95/2026, the finite decision question is whether the legally competent organ must determine whether the complete prosecution file supports the recorded receipt, allocation, referral, examination, response, closure and cross-file treatment for the recorded object “Provincial governmental file”. Fiscalía Provincial de Santa Cruz de Tenerife is only the recorded custodian/organ candidate and is not treated here as legally competent or obliged to act. Controlled navigation currently identifies direct files [TF-CIV-001, TF-CIV-002, TF-CRI-003, TF-FIS-007] and contextual files [GC-APP-004, GC-FIS-011, GC-FIS-012, GC-FIS-013, GC-FIS-014, GC-FIS-015, GC-FIS-016, GC-FIS-017, GC-FIS-018, GC-FIS-032, GC-FIS-033, GC-FIS-034, GC-FIS-035, GC-GOV-019, GC-GOV-020, GC-JUD-001, LZ-FIS-007, LZ-FIS-036, LZ-FIS-045, LZ-FIS-049, LZ-FIS-051, NAT-FIS-004, NAT-FIS-005, NAT-FIS-006, NAT-FIS-007, TF-FIS-007]. Their presence does not establish receipt, admissibility or a duty to consider them.",
+          "es": "Para Expediente Gubernativo 95/2026, la cuestión decisoria finita es si el órgano legalmente competente debe determinar si el expediente fiscal completo sustenta la recepción, reparto, remisión, examen, respuesta, archivo y tratamiento entre expedientes registrados respecto del objeto registrado «Provincial governmental file». Fiscalía Provincial de Santa Cruz de Tenerife es solo el candidato registrado como custodio/órgano y aquí no se le atribuye competencia jurídica ni obligación de actuar. La navegación controlada identifica actualmente expedientes directos [TF-CIV-001, TF-CIV-002, TF-CRI-003, TF-FIS-007] y contextuales [GC-APP-004, GC-FIS-011, GC-FIS-012, GC-FIS-013, GC-FIS-014, GC-FIS-015, GC-FIS-016, GC-FIS-017, GC-FIS-018, GC-FIS-032, GC-FIS-033, GC-FIS-034, GC-FIS-035, GC-GOV-019, GC-GOV-020, GC-JUD-001, LZ-FIS-007, LZ-FIS-036, LZ-FIS-045, LZ-FIS-049, LZ-FIS-051, NAT-FIS-004, NAT-FIS-005, NAT-FIS-006, NAT-FIS-007, TF-FIS-007]. Su presencia no acredita recepción, admisibilidad ni deber de examinarlos."
         },
         "contrary_explanation": {
           "en": "For Expediente Gubernativo 95/2026, the strongest hypothetical innocent or contrary explanation could be a lawful limitation based on competence, territorial routing, duplication, judicialisation, evidential threshold, confidentiality or independent file-specific reasoning, but only if the primary record establishes that the legally competent organ applied it to “Provincial governmental file”. No act is attributed by this model to the recorded candidate Fiscalía Provincial de Santa Cruz de Tenerife. A different treatment, missing public inventory or related-file membership alone does not establish concealment, coordination, error or wrongdoing.",
@@ -38850,6 +39135,8 @@
             "LZ-FIS-007",
             "LZ-FIS-036",
             "LZ-FIS-045",
+            "LZ-FIS-049",
+            "LZ-FIS-051",
             "NAT-FIS-004",
             "NAT-FIS-005",
             "NAT-FIS-006",
@@ -38882,6 +39169,8 @@
             "LZ-FIS-007",
             "LZ-FIS-036",
             "LZ-FIS-045",
+            "LZ-FIS-049",
+            "LZ-FIS-051",
             "NAT-FIS-004",
             "NAT-FIS-005",
             "NAT-FIS-006",
@@ -38900,8 +39189,8 @@
           "es": "La disponibilidad lícita, admisibilidad o inclusión en el ámbito de otro expediente o fuente debe determinarse en el procedimiento seleccionado; este modelo de navegación no infiere disponibilidad ni deber de examen."
         },
         "decision_dependency": {
-          "en": "For Expediente Gubernativo 112/2026, the finite decision question is whether the legally competent organ must determine whether the complete prosecution file supports the recorded receipt, allocation, referral, examination, response, closure and cross-file treatment for the recorded object “Superior-Fiscalía governmental file”. Fiscalía de la Comunidad Autónoma de Canarias is only the recorded custodian/organ candidate and is not treated here as legally competent or obliged to act. Controlled navigation currently identifies direct files [GC-FIS-017] and contextual files [GC-APP-004, GC-FIS-011, GC-FIS-012, GC-FIS-013, GC-FIS-014, GC-FIS-015, GC-FIS-016, GC-FIS-017, GC-FIS-018, GC-FIS-032, GC-FIS-034, GC-FIS-035, GC-GOV-019, GC-GOV-020, GC-JUD-001, LZ-FIS-007, LZ-FIS-036, LZ-FIS-045, NAT-FIS-004, NAT-FIS-005, NAT-FIS-006, NAT-FIS-007, TF-FIS-007, TF-FIS-008]. Their presence does not establish receipt, admissibility or a duty to consider them.",
-          "es": "Para Expediente Gubernativo 112/2026, la cuestión decisoria finita es si el órgano legalmente competente debe determinar si el expediente fiscal completo sustenta la recepción, reparto, remisión, examen, respuesta, archivo y tratamiento entre expedientes registrados respecto del objeto registrado «Superior-Fiscalía governmental file». Fiscalía de la Comunidad Autónoma de Canarias es solo el candidato registrado como custodio/órgano y aquí no se le atribuye competencia jurídica ni obligación de actuar. La navegación controlada identifica actualmente expedientes directos [GC-FIS-017] y contextuales [GC-APP-004, GC-FIS-011, GC-FIS-012, GC-FIS-013, GC-FIS-014, GC-FIS-015, GC-FIS-016, GC-FIS-017, GC-FIS-018, GC-FIS-032, GC-FIS-034, GC-FIS-035, GC-GOV-019, GC-GOV-020, GC-JUD-001, LZ-FIS-007, LZ-FIS-036, LZ-FIS-045, NAT-FIS-004, NAT-FIS-005, NAT-FIS-006, NAT-FIS-007, TF-FIS-007, TF-FIS-008]. Su presencia no acredita recepción, admisibilidad ni deber de examinarlos."
+          "en": "For Expediente Gubernativo 112/2026, the finite decision question is whether the legally competent organ must determine whether the complete prosecution file supports the recorded receipt, allocation, referral, examination, response, closure and cross-file treatment for the recorded object “Superior-Fiscalía governmental file”. Fiscalía de la Comunidad Autónoma de Canarias is only the recorded custodian/organ candidate and is not treated here as legally competent or obliged to act. Controlled navigation currently identifies direct files [GC-FIS-017] and contextual files [GC-APP-004, GC-FIS-011, GC-FIS-012, GC-FIS-013, GC-FIS-014, GC-FIS-015, GC-FIS-016, GC-FIS-017, GC-FIS-018, GC-FIS-032, GC-FIS-034, GC-FIS-035, GC-GOV-019, GC-GOV-020, GC-JUD-001, LZ-FIS-007, LZ-FIS-036, LZ-FIS-045, LZ-FIS-049, LZ-FIS-051, NAT-FIS-004, NAT-FIS-005, NAT-FIS-006, NAT-FIS-007, TF-FIS-007, TF-FIS-008]. Their presence does not establish receipt, admissibility or a duty to consider them.",
+          "es": "Para Expediente Gubernativo 112/2026, la cuestión decisoria finita es si el órgano legalmente competente debe determinar si el expediente fiscal completo sustenta la recepción, reparto, remisión, examen, respuesta, archivo y tratamiento entre expedientes registrados respecto del objeto registrado «Superior-Fiscalía governmental file». Fiscalía de la Comunidad Autónoma de Canarias es solo el candidato registrado como custodio/órgano y aquí no se le atribuye competencia jurídica ni obligación de actuar. La navegación controlada identifica actualmente expedientes directos [GC-FIS-017] y contextuales [GC-APP-004, GC-FIS-011, GC-FIS-012, GC-FIS-013, GC-FIS-014, GC-FIS-015, GC-FIS-016, GC-FIS-017, GC-FIS-018, GC-FIS-032, GC-FIS-034, GC-FIS-035, GC-GOV-019, GC-GOV-020, GC-JUD-001, LZ-FIS-007, LZ-FIS-036, LZ-FIS-045, LZ-FIS-049, LZ-FIS-051, NAT-FIS-004, NAT-FIS-005, NAT-FIS-006, NAT-FIS-007, TF-FIS-007, TF-FIS-008]. Su presencia no acredita recepción, admisibilidad ni deber de examinarlos."
         },
         "contrary_explanation": {
           "en": "For Expediente Gubernativo 112/2026, the strongest hypothetical innocent or contrary explanation could be a lawful limitation based on competence, territorial routing, duplication, judicialisation, evidential threshold, confidentiality or independent file-specific reasoning, but only if the primary record establishes that the legally competent organ applied it to “Superior-Fiscalía governmental file”. No act is attributed by this model to the recorded candidate Fiscalía de la Comunidad Autónoma de Canarias. A different treatment, missing public inventory or related-file membership alone does not establish concealment, coordination, error or wrongdoing.",
@@ -39178,6 +39467,8 @@
             "LZ-FIS-007",
             "LZ-FIS-036",
             "LZ-FIS-045",
+            "LZ-FIS-049",
+            "LZ-FIS-051",
             "NAT-FIS-005",
             "NAT-FIS-006",
             "NAT-FIS-007",
@@ -39215,6 +39506,8 @@
             "LZ-FIS-007",
             "LZ-FIS-036",
             "LZ-FIS-045",
+            "LZ-FIS-049",
+            "LZ-FIS-051",
             "NAT-FIS-005",
             "NAT-FIS-006",
             "NAT-FIS-007",
@@ -39232,8 +39525,8 @@
           "es": "La disponibilidad lícita, admisibilidad o inclusión en el ámbito de otro expediente o fuente debe determinarse en el procedimiento seleccionado; este modelo de navegación no infiere disponibilidad ni deber de examen."
         },
         "decision_dependency": {
-          "en": "For E.G. 745/2026, the finite decision question is whether the legally competent organ must determine whether the complete prosecution file supports the recorded receipt, allocation, referral, examination, response, closure and cross-file treatment for the recorded object “Inspection/governmental file”. Inspección Fiscal de la Fiscalía General del Estado is only the recorded custodian/organ candidate and is not treated here as legally competent or obliged to act. Controlled navigation currently identifies direct files [GC-CRI-008, GC-FIS-013, GC-FIS-014, GC-FIS-016, GC-FIS-017, GC-FIS-018] and contextual files [GC-APP-004, GC-FIS-011, GC-FIS-012, GC-FIS-013, GC-FIS-014, GC-FIS-015, GC-FIS-016, GC-FIS-017, GC-FIS-018, GC-FIS-032, GC-FIS-033, GC-FIS-034, GC-FIS-035, GC-GOV-019, GC-GOV-020, GC-JUD-001, LZ-FIS-007, LZ-FIS-036, LZ-FIS-045, NAT-FIS-005, NAT-FIS-006, NAT-FIS-007, TF-FIS-007, TF-FIS-008]. Their presence does not establish receipt, admissibility or a duty to consider them.",
-          "es": "Para E.G. 745/2026, la cuestión decisoria finita es si el órgano legalmente competente debe determinar si el expediente fiscal completo sustenta la recepción, reparto, remisión, examen, respuesta, archivo y tratamiento entre expedientes registrados respecto del objeto registrado «Inspection/governmental file». Inspección Fiscal de la Fiscalía General del Estado es solo el candidato registrado como custodio/órgano y aquí no se le atribuye competencia jurídica ni obligación de actuar. La navegación controlada identifica actualmente expedientes directos [GC-CRI-008, GC-FIS-013, GC-FIS-014, GC-FIS-016, GC-FIS-017, GC-FIS-018] y contextuales [GC-APP-004, GC-FIS-011, GC-FIS-012, GC-FIS-013, GC-FIS-014, GC-FIS-015, GC-FIS-016, GC-FIS-017, GC-FIS-018, GC-FIS-032, GC-FIS-033, GC-FIS-034, GC-FIS-035, GC-GOV-019, GC-GOV-020, GC-JUD-001, LZ-FIS-007, LZ-FIS-036, LZ-FIS-045, NAT-FIS-005, NAT-FIS-006, NAT-FIS-007, TF-FIS-007, TF-FIS-008]. Su presencia no acredita recepción, admisibilidad ni deber de examinarlos."
+          "en": "For E.G. 745/2026, the finite decision question is whether the legally competent organ must determine whether the complete prosecution file supports the recorded receipt, allocation, referral, examination, response, closure and cross-file treatment for the recorded object “Inspection/governmental file”. Inspección Fiscal de la Fiscalía General del Estado is only the recorded custodian/organ candidate and is not treated here as legally competent or obliged to act. Controlled navigation currently identifies direct files [GC-CRI-008, GC-FIS-013, GC-FIS-014, GC-FIS-016, GC-FIS-017, GC-FIS-018] and contextual files [GC-APP-004, GC-FIS-011, GC-FIS-012, GC-FIS-013, GC-FIS-014, GC-FIS-015, GC-FIS-016, GC-FIS-017, GC-FIS-018, GC-FIS-032, GC-FIS-033, GC-FIS-034, GC-FIS-035, GC-GOV-019, GC-GOV-020, GC-JUD-001, LZ-FIS-007, LZ-FIS-036, LZ-FIS-045, LZ-FIS-049, LZ-FIS-051, NAT-FIS-005, NAT-FIS-006, NAT-FIS-007, TF-FIS-007, TF-FIS-008]. Their presence does not establish receipt, admissibility or a duty to consider them.",
+          "es": "Para E.G. 745/2026, la cuestión decisoria finita es si el órgano legalmente competente debe determinar si el expediente fiscal completo sustenta la recepción, reparto, remisión, examen, respuesta, archivo y tratamiento entre expedientes registrados respecto del objeto registrado «Inspection/governmental file». Inspección Fiscal de la Fiscalía General del Estado es solo el candidato registrado como custodio/órgano y aquí no se le atribuye competencia jurídica ni obligación de actuar. La navegación controlada identifica actualmente expedientes directos [GC-CRI-008, GC-FIS-013, GC-FIS-014, GC-FIS-016, GC-FIS-017, GC-FIS-018] y contextuales [GC-APP-004, GC-FIS-011, GC-FIS-012, GC-FIS-013, GC-FIS-014, GC-FIS-015, GC-FIS-016, GC-FIS-017, GC-FIS-018, GC-FIS-032, GC-FIS-033, GC-FIS-034, GC-FIS-035, GC-GOV-019, GC-GOV-020, GC-JUD-001, LZ-FIS-007, LZ-FIS-036, LZ-FIS-045, LZ-FIS-049, LZ-FIS-051, NAT-FIS-005, NAT-FIS-006, NAT-FIS-007, TF-FIS-007, TF-FIS-008]. Su presencia no acredita recepción, admisibilidad ni deber de examinarlos."
         },
         "contrary_explanation": {
           "en": "For E.G. 745/2026, the strongest hypothetical innocent or contrary explanation could be a lawful limitation based on competence, territorial routing, duplication, judicialisation, evidential threshold, confidentiality or independent file-specific reasoning, but only if the primary record establishes that the legally competent organ applied it to “Inspection/governmental file”. No act is attributed by this model to the recorded candidate Inspección Fiscal de la Fiscalía General del Estado. A different treatment, missing public inventory or related-file membership alone does not establish concealment, coordination, error or wrongdoing.",
@@ -39776,6 +40069,8 @@
             "LZ-FIS-007",
             "LZ-FIS-036",
             "LZ-FIS-045",
+            "LZ-FIS-049",
+            "LZ-FIS-051",
             "NAT-FIS-004",
             "NAT-FIS-005",
             "NAT-FIS-006",
@@ -39806,6 +40101,8 @@
             "LZ-FIS-007",
             "LZ-FIS-036",
             "LZ-FIS-045",
+            "LZ-FIS-049",
+            "LZ-FIS-051",
             "NAT-FIS-004",
             "NAT-FIS-005",
             "NAT-FIS-006",
@@ -39823,8 +40120,8 @@
           "es": "La disponibilidad lícita, admisibilidad o inclusión en el ámbito de otro expediente o fuente debe determinarse en el procedimiento seleccionado; este modelo de navegación no infiere disponibilidad ni deber de examen."
         },
         "decision_dependency": {
-          "en": "For Expediente Gubernativo 33/2025, the finite decision question is whether the legally competent organ must determine whether the complete prosecution file supports the recorded receipt, allocation, referral, examination, response, closure and cross-file treatment for the recorded object “Provincial governmental file”. Fiscalía Provincial de Las Palmas is only the recorded custodian/organ candidate and is not treated here as legally competent or obliged to act. Controlled navigation currently identifies direct files [none currently admitted] and contextual files [GC-APP-004, GC-FIS-011, GC-FIS-012, GC-FIS-013, GC-FIS-014, GC-FIS-015, GC-FIS-016, GC-FIS-017, GC-FIS-018, GC-FIS-032, GC-FIS-033, GC-FIS-035, GC-GOV-019, GC-GOV-020, GC-JUD-001, LZ-FIS-007, LZ-FIS-036, LZ-FIS-045, NAT-FIS-004, NAT-FIS-005, NAT-FIS-006, NAT-FIS-007, TF-FIS-007, TF-FIS-008]. Their presence does not establish receipt, admissibility or a duty to consider them.",
-          "es": "Para Expediente Gubernativo 33/2025, la cuestión decisoria finita es si el órgano legalmente competente debe determinar si el expediente fiscal completo sustenta la recepción, reparto, remisión, examen, respuesta, archivo y tratamiento entre expedientes registrados respecto del objeto registrado «Provincial governmental file». Fiscalía Provincial de Las Palmas es solo el candidato registrado como custodio/órgano y aquí no se le atribuye competencia jurídica ni obligación de actuar. La navegación controlada identifica actualmente expedientes directos [ninguno admitido actualmente] y contextuales [GC-APP-004, GC-FIS-011, GC-FIS-012, GC-FIS-013, GC-FIS-014, GC-FIS-015, GC-FIS-016, GC-FIS-017, GC-FIS-018, GC-FIS-032, GC-FIS-033, GC-FIS-035, GC-GOV-019, GC-GOV-020, GC-JUD-001, LZ-FIS-007, LZ-FIS-036, LZ-FIS-045, NAT-FIS-004, NAT-FIS-005, NAT-FIS-006, NAT-FIS-007, TF-FIS-007, TF-FIS-008]. Su presencia no acredita recepción, admisibilidad ni deber de examinarlos."
+          "en": "For Expediente Gubernativo 33/2025, the finite decision question is whether the legally competent organ must determine whether the complete prosecution file supports the recorded receipt, allocation, referral, examination, response, closure and cross-file treatment for the recorded object “Provincial governmental file”. Fiscalía Provincial de Las Palmas is only the recorded custodian/organ candidate and is not treated here as legally competent or obliged to act. Controlled navigation currently identifies direct files [none currently admitted] and contextual files [GC-APP-004, GC-FIS-011, GC-FIS-012, GC-FIS-013, GC-FIS-014, GC-FIS-015, GC-FIS-016, GC-FIS-017, GC-FIS-018, GC-FIS-032, GC-FIS-033, GC-FIS-035, GC-GOV-019, GC-GOV-020, GC-JUD-001, LZ-FIS-007, LZ-FIS-036, LZ-FIS-045, LZ-FIS-049, LZ-FIS-051, NAT-FIS-004, NAT-FIS-005, NAT-FIS-006, NAT-FIS-007, TF-FIS-007, TF-FIS-008]. Their presence does not establish receipt, admissibility or a duty to consider them.",
+          "es": "Para Expediente Gubernativo 33/2025, la cuestión decisoria finita es si el órgano legalmente competente debe determinar si el expediente fiscal completo sustenta la recepción, reparto, remisión, examen, respuesta, archivo y tratamiento entre expedientes registrados respecto del objeto registrado «Provincial governmental file». Fiscalía Provincial de Las Palmas es solo el candidato registrado como custodio/órgano y aquí no se le atribuye competencia jurídica ni obligación de actuar. La navegación controlada identifica actualmente expedientes directos [ninguno admitido actualmente] y contextuales [GC-APP-004, GC-FIS-011, GC-FIS-012, GC-FIS-013, GC-FIS-014, GC-FIS-015, GC-FIS-016, GC-FIS-017, GC-FIS-018, GC-FIS-032, GC-FIS-033, GC-FIS-035, GC-GOV-019, GC-GOV-020, GC-JUD-001, LZ-FIS-007, LZ-FIS-036, LZ-FIS-045, LZ-FIS-049, LZ-FIS-051, NAT-FIS-004, NAT-FIS-005, NAT-FIS-006, NAT-FIS-007, TF-FIS-007, TF-FIS-008]. Su presencia no acredita recepción, admisibilidad ni deber de examinarlos."
         },
         "contrary_explanation": {
           "en": "For Expediente Gubernativo 33/2025, the strongest hypothetical innocent or contrary explanation could be a lawful limitation based on competence, territorial routing, duplication, judicialisation, evidential threshold, confidentiality or independent file-specific reasoning, but only if the primary record establishes that the legally competent organ applied it to “Provincial governmental file”. No act is attributed by this model to the recorded candidate Fiscalía Provincial de Las Palmas. A different treatment, missing public inventory or related-file membership alone does not establish concealment, coordination, error or wrongdoing.",
@@ -40080,6 +40377,8 @@
             "LZ-FIS-007",
             "LZ-FIS-036",
             "LZ-FIS-045",
+            "LZ-FIS-049",
+            "LZ-FIS-051",
             "NAT-FIS-004",
             "NAT-FIS-006",
             "NAT-FIS-007",
@@ -40110,6 +40409,8 @@
             "LZ-FIS-007",
             "LZ-FIS-036",
             "LZ-FIS-045",
+            "LZ-FIS-049",
+            "LZ-FIS-051",
             "NAT-FIS-004",
             "NAT-FIS-006",
             "NAT-FIS-007",
@@ -40126,8 +40427,8 @@
           "es": "La disponibilidad lícita, admisibilidad o inclusión en el ámbito de otro expediente o fuente debe determinarse en el procedimiento seleccionado; este modelo de navegación no infiere disponibilidad ni deber de examen."
         },
         "decision_dependency": {
-          "en": "For CC/CA 12/2025, the finite decision question is whether the legally competent organ must determine whether the complete prosecution file supports the recorded receipt, allocation, referral, examination, response, closure and cross-file treatment for the recorded object “Central correspondence/tracking file”. Fiscalía General del Estado — Atención al Ciudadano is only the recorded custodian/organ candidate and is not treated here as legally competent or obliged to act. Controlled navigation currently identifies direct files [none currently admitted] and contextual files [GC-APP-004, GC-FIS-011, GC-FIS-012, GC-FIS-013, GC-FIS-014, GC-FIS-015, GC-FIS-016, GC-FIS-017, GC-FIS-018, GC-FIS-032, GC-FIS-033, GC-FIS-034, GC-FIS-035, GC-GOV-019, GC-GOV-020, GC-JUD-001, LZ-FIS-007, LZ-FIS-036, LZ-FIS-045, NAT-FIS-004, NAT-FIS-006, NAT-FIS-007, TF-FIS-007, TF-FIS-008]. Their presence does not establish receipt, admissibility or a duty to consider them.",
-          "es": "Para CC/CA 12/2025, la cuestión decisoria finita es si el órgano legalmente competente debe determinar si el expediente fiscal completo sustenta la recepción, reparto, remisión, examen, respuesta, archivo y tratamiento entre expedientes registrados respecto del objeto registrado «Central correspondence/tracking file». Fiscalía General del Estado — Atención al Ciudadano es solo el candidato registrado como custodio/órgano y aquí no se le atribuye competencia jurídica ni obligación de actuar. La navegación controlada identifica actualmente expedientes directos [ninguno admitido actualmente] y contextuales [GC-APP-004, GC-FIS-011, GC-FIS-012, GC-FIS-013, GC-FIS-014, GC-FIS-015, GC-FIS-016, GC-FIS-017, GC-FIS-018, GC-FIS-032, GC-FIS-033, GC-FIS-034, GC-FIS-035, GC-GOV-019, GC-GOV-020, GC-JUD-001, LZ-FIS-007, LZ-FIS-036, LZ-FIS-045, NAT-FIS-004, NAT-FIS-006, NAT-FIS-007, TF-FIS-007, TF-FIS-008]. Su presencia no acredita recepción, admisibilidad ni deber de examinarlos."
+          "en": "For CC/CA 12/2025, the finite decision question is whether the legally competent organ must determine whether the complete prosecution file supports the recorded receipt, allocation, referral, examination, response, closure and cross-file treatment for the recorded object “Central correspondence/tracking file”. Fiscalía General del Estado — Atención al Ciudadano is only the recorded custodian/organ candidate and is not treated here as legally competent or obliged to act. Controlled navigation currently identifies direct files [none currently admitted] and contextual files [GC-APP-004, GC-FIS-011, GC-FIS-012, GC-FIS-013, GC-FIS-014, GC-FIS-015, GC-FIS-016, GC-FIS-017, GC-FIS-018, GC-FIS-032, GC-FIS-033, GC-FIS-034, GC-FIS-035, GC-GOV-019, GC-GOV-020, GC-JUD-001, LZ-FIS-007, LZ-FIS-036, LZ-FIS-045, LZ-FIS-049, LZ-FIS-051, NAT-FIS-004, NAT-FIS-006, NAT-FIS-007, TF-FIS-007, TF-FIS-008]. Their presence does not establish receipt, admissibility or a duty to consider them.",
+          "es": "Para CC/CA 12/2025, la cuestión decisoria finita es si el órgano legalmente competente debe determinar si el expediente fiscal completo sustenta la recepción, reparto, remisión, examen, respuesta, archivo y tratamiento entre expedientes registrados respecto del objeto registrado «Central correspondence/tracking file». Fiscalía General del Estado — Atención al Ciudadano es solo el candidato registrado como custodio/órgano y aquí no se le atribuye competencia jurídica ni obligación de actuar. La navegación controlada identifica actualmente expedientes directos [ninguno admitido actualmente] y contextuales [GC-APP-004, GC-FIS-011, GC-FIS-012, GC-FIS-013, GC-FIS-014, GC-FIS-015, GC-FIS-016, GC-FIS-017, GC-FIS-018, GC-FIS-032, GC-FIS-033, GC-FIS-034, GC-FIS-035, GC-GOV-019, GC-GOV-020, GC-JUD-001, LZ-FIS-007, LZ-FIS-036, LZ-FIS-045, LZ-FIS-049, LZ-FIS-051, NAT-FIS-004, NAT-FIS-006, NAT-FIS-007, TF-FIS-007, TF-FIS-008]. Su presencia no acredita recepción, admisibilidad ni deber de examinarlos."
         },
         "contrary_explanation": {
           "en": "For CC/CA 12/2025, the strongest hypothetical innocent or contrary explanation could be a lawful limitation based on competence, territorial routing, duplication, judicialisation, evidential threshold, confidentiality or independent file-specific reasoning, but only if the primary record establishes that the legally competent organ applied it to “Central correspondence/tracking file”. No act is attributed by this model to the recorded candidate Fiscalía General del Estado — Atención al Ciudadano. A different treatment, missing public inventory or related-file membership alone does not establish concealment, coordination, error or wrongdoing.",
@@ -40382,6 +40683,8 @@
             "LZ-FIS-007",
             "LZ-FIS-036",
             "LZ-FIS-045",
+            "LZ-FIS-049",
+            "LZ-FIS-051",
             "NAT-FIS-004",
             "NAT-FIS-005",
             "NAT-FIS-006",
@@ -40412,6 +40715,8 @@
             "LZ-FIS-007",
             "LZ-FIS-036",
             "LZ-FIS-045",
+            "LZ-FIS-049",
+            "LZ-FIS-051",
             "NAT-FIS-004",
             "NAT-FIS-005",
             "NAT-FIS-006",
@@ -40429,8 +40734,8 @@
           "es": "La disponibilidad lícita, admisibilidad o inclusión en el ámbito de otro expediente o fuente debe determinarse en el procedimiento seleccionado; este modelo de navegación no infiere disponibilidad ni deber de examen."
         },
         "decision_dependency": {
-          "en": "For Expediente Gubernativo 6/2026, the finite decision question is whether the legally competent organ must determine whether the complete prosecution file supports the recorded receipt, allocation, referral, examination, response, closure and cross-file treatment for the recorded object “Superior-Fiscalía governmental file”. Fiscalía de la Comunidad Autónoma de Canarias is only the recorded custodian/organ candidate and is not treated here as legally competent or obliged to act. Controlled navigation currently identifies direct files [none currently admitted] and contextual files [GC-APP-004, GC-FIS-011, GC-FIS-012, GC-FIS-013, GC-FIS-014, GC-FIS-015, GC-FIS-016, GC-FIS-017, GC-FIS-018, GC-FIS-032, GC-FIS-033, GC-FIS-034, GC-GOV-019, GC-GOV-020, GC-JUD-001, LZ-FIS-007, LZ-FIS-036, LZ-FIS-045, NAT-FIS-004, NAT-FIS-005, NAT-FIS-006, NAT-FIS-007, TF-FIS-007, TF-FIS-008]. Their presence does not establish receipt, admissibility or a duty to consider them.",
-          "es": "Para Expediente Gubernativo 6/2026, la cuestión decisoria finita es si el órgano legalmente competente debe determinar si el expediente fiscal completo sustenta la recepción, reparto, remisión, examen, respuesta, archivo y tratamiento entre expedientes registrados respecto del objeto registrado «Superior-Fiscalía governmental file». Fiscalía de la Comunidad Autónoma de Canarias es solo el candidato registrado como custodio/órgano y aquí no se le atribuye competencia jurídica ni obligación de actuar. La navegación controlada identifica actualmente expedientes directos [ninguno admitido actualmente] y contextuales [GC-APP-004, GC-FIS-011, GC-FIS-012, GC-FIS-013, GC-FIS-014, GC-FIS-015, GC-FIS-016, GC-FIS-017, GC-FIS-018, GC-FIS-032, GC-FIS-033, GC-FIS-034, GC-GOV-019, GC-GOV-020, GC-JUD-001, LZ-FIS-007, LZ-FIS-036, LZ-FIS-045, NAT-FIS-004, NAT-FIS-005, NAT-FIS-006, NAT-FIS-007, TF-FIS-007, TF-FIS-008]. Su presencia no acredita recepción, admisibilidad ni deber de examinarlos."
+          "en": "For Expediente Gubernativo 6/2026, the finite decision question is whether the legally competent organ must determine whether the complete prosecution file supports the recorded receipt, allocation, referral, examination, response, closure and cross-file treatment for the recorded object “Superior-Fiscalía governmental file”. Fiscalía de la Comunidad Autónoma de Canarias is only the recorded custodian/organ candidate and is not treated here as legally competent or obliged to act. Controlled navigation currently identifies direct files [none currently admitted] and contextual files [GC-APP-004, GC-FIS-011, GC-FIS-012, GC-FIS-013, GC-FIS-014, GC-FIS-015, GC-FIS-016, GC-FIS-017, GC-FIS-018, GC-FIS-032, GC-FIS-033, GC-FIS-034, GC-GOV-019, GC-GOV-020, GC-JUD-001, LZ-FIS-007, LZ-FIS-036, LZ-FIS-045, LZ-FIS-049, LZ-FIS-051, NAT-FIS-004, NAT-FIS-005, NAT-FIS-006, NAT-FIS-007, TF-FIS-007, TF-FIS-008]. Their presence does not establish receipt, admissibility or a duty to consider them.",
+          "es": "Para Expediente Gubernativo 6/2026, la cuestión decisoria finita es si el órgano legalmente competente debe determinar si el expediente fiscal completo sustenta la recepción, reparto, remisión, examen, respuesta, archivo y tratamiento entre expedientes registrados respecto del objeto registrado «Superior-Fiscalía governmental file». Fiscalía de la Comunidad Autónoma de Canarias es solo el candidato registrado como custodio/órgano y aquí no se le atribuye competencia jurídica ni obligación de actuar. La navegación controlada identifica actualmente expedientes directos [ninguno admitido actualmente] y contextuales [GC-APP-004, GC-FIS-011, GC-FIS-012, GC-FIS-013, GC-FIS-014, GC-FIS-015, GC-FIS-016, GC-FIS-017, GC-FIS-018, GC-FIS-032, GC-FIS-033, GC-FIS-034, GC-GOV-019, GC-GOV-020, GC-JUD-001, LZ-FIS-007, LZ-FIS-036, LZ-FIS-045, LZ-FIS-049, LZ-FIS-051, NAT-FIS-004, NAT-FIS-005, NAT-FIS-006, NAT-FIS-007, TF-FIS-007, TF-FIS-008]. Su presencia no acredita recepción, admisibilidad ni deber de examinarlos."
         },
         "contrary_explanation": {
           "en": "For Expediente Gubernativo 6/2026, the strongest hypothetical innocent or contrary explanation could be a lawful limitation based on competence, territorial routing, duplication, judicialisation, evidential threshold, confidentiality or independent file-specific reasoning, but only if the primary record establishes that the legally competent organ applied it to “Superior-Fiscalía governmental file”. No act is attributed by this model to the recorded candidate Fiscalía de la Comunidad Autónoma de Canarias. A different treatment, missing public inventory or related-file membership alone does not establish concealment, coordination, error or wrongdoing.",
@@ -40686,6 +40991,8 @@
             "LZ-FIS-007",
             "LZ-FIS-036",
             "LZ-FIS-045",
+            "LZ-FIS-049",
+            "LZ-FIS-051",
             "NAT-FIS-004",
             "NAT-FIS-005",
             "NAT-FIS-007",
@@ -40716,6 +41023,8 @@
             "LZ-FIS-007",
             "LZ-FIS-036",
             "LZ-FIS-045",
+            "LZ-FIS-049",
+            "LZ-FIS-051",
             "NAT-FIS-004",
             "NAT-FIS-005",
             "NAT-FIS-007",
@@ -40732,8 +41041,8 @@
           "es": "La disponibilidad lícita, admisibilidad o inclusión en el ámbito de otro expediente o fuente debe determinarse en el procedimiento seleccionado; este modelo de navegación no infiere disponibilidad ni deber de examen."
         },
         "decision_dependency": {
-          "en": "For ST 553/2026, the finite decision question is whether the legally competent organ must determine whether the complete prosecution file supports the recorded receipt, allocation, referral, examination, response, closure and cross-file treatment for the recorded object “Technical Secretariat tracking file”. Secretaría Técnica de la Fiscalía General del Estado is only the recorded custodian/organ candidate and is not treated here as legally competent or obliged to act. Controlled navigation currently identifies direct files [none currently admitted] and contextual files [GC-APP-004, GC-FIS-011, GC-FIS-012, GC-FIS-013, GC-FIS-014, GC-FIS-015, GC-FIS-016, GC-FIS-017, GC-FIS-018, GC-FIS-032, GC-FIS-033, GC-FIS-034, GC-FIS-035, GC-GOV-019, GC-GOV-020, GC-JUD-001, LZ-FIS-007, LZ-FIS-036, LZ-FIS-045, NAT-FIS-004, NAT-FIS-005, NAT-FIS-007, TF-FIS-007, TF-FIS-008]. Their presence does not establish receipt, admissibility or a duty to consider them.",
-          "es": "Para ST 553/2026, la cuestión decisoria finita es si el órgano legalmente competente debe determinar si el expediente fiscal completo sustenta la recepción, reparto, remisión, examen, respuesta, archivo y tratamiento entre expedientes registrados respecto del objeto registrado «Technical Secretariat tracking file». Secretaría Técnica de la Fiscalía General del Estado es solo el candidato registrado como custodio/órgano y aquí no se le atribuye competencia jurídica ni obligación de actuar. La navegación controlada identifica actualmente expedientes directos [ninguno admitido actualmente] y contextuales [GC-APP-004, GC-FIS-011, GC-FIS-012, GC-FIS-013, GC-FIS-014, GC-FIS-015, GC-FIS-016, GC-FIS-017, GC-FIS-018, GC-FIS-032, GC-FIS-033, GC-FIS-034, GC-FIS-035, GC-GOV-019, GC-GOV-020, GC-JUD-001, LZ-FIS-007, LZ-FIS-036, LZ-FIS-045, NAT-FIS-004, NAT-FIS-005, NAT-FIS-007, TF-FIS-007, TF-FIS-008]. Su presencia no acredita recepción, admisibilidad ni deber de examinarlos."
+          "en": "For ST 553/2026, the finite decision question is whether the legally competent organ must determine whether the complete prosecution file supports the recorded receipt, allocation, referral, examination, response, closure and cross-file treatment for the recorded object “Technical Secretariat tracking file”. Secretaría Técnica de la Fiscalía General del Estado is only the recorded custodian/organ candidate and is not treated here as legally competent or obliged to act. Controlled navigation currently identifies direct files [none currently admitted] and contextual files [GC-APP-004, GC-FIS-011, GC-FIS-012, GC-FIS-013, GC-FIS-014, GC-FIS-015, GC-FIS-016, GC-FIS-017, GC-FIS-018, GC-FIS-032, GC-FIS-033, GC-FIS-034, GC-FIS-035, GC-GOV-019, GC-GOV-020, GC-JUD-001, LZ-FIS-007, LZ-FIS-036, LZ-FIS-045, LZ-FIS-049, LZ-FIS-051, NAT-FIS-004, NAT-FIS-005, NAT-FIS-007, TF-FIS-007, TF-FIS-008]. Their presence does not establish receipt, admissibility or a duty to consider them.",
+          "es": "Para ST 553/2026, la cuestión decisoria finita es si el órgano legalmente competente debe determinar si el expediente fiscal completo sustenta la recepción, reparto, remisión, examen, respuesta, archivo y tratamiento entre expedientes registrados respecto del objeto registrado «Technical Secretariat tracking file». Secretaría Técnica de la Fiscalía General del Estado es solo el candidato registrado como custodio/órgano y aquí no se le atribuye competencia jurídica ni obligación de actuar. La navegación controlada identifica actualmente expedientes directos [ninguno admitido actualmente] y contextuales [GC-APP-004, GC-FIS-011, GC-FIS-012, GC-FIS-013, GC-FIS-014, GC-FIS-015, GC-FIS-016, GC-FIS-017, GC-FIS-018, GC-FIS-032, GC-FIS-033, GC-FIS-034, GC-FIS-035, GC-GOV-019, GC-GOV-020, GC-JUD-001, LZ-FIS-007, LZ-FIS-036, LZ-FIS-045, LZ-FIS-049, LZ-FIS-051, NAT-FIS-004, NAT-FIS-005, NAT-FIS-007, TF-FIS-007, TF-FIS-008]. Su presencia no acredita recepción, admisibilidad ni deber de examinarlos."
         },
         "contrary_explanation": {
           "en": "For ST 553/2026, the strongest hypothetical innocent or contrary explanation could be a lawful limitation based on competence, territorial routing, duplication, judicialisation, evidential threshold, confidentiality or independent file-specific reasoning, but only if the primary record establishes that the legally competent organ applied it to “Technical Secretariat tracking file”. No act is attributed by this model to the recorded candidate Secretaría Técnica de la Fiscalía General del Estado. A different treatment, missing public inventory or related-file membership alone does not establish concealment, coordination, error or wrongdoing.",
@@ -40989,6 +41298,8 @@
             "LZ-FIS-007",
             "LZ-FIS-036",
             "LZ-FIS-045",
+            "LZ-FIS-049",
+            "LZ-FIS-051",
             "NAT-FIS-004",
             "NAT-FIS-005",
             "NAT-FIS-006",
@@ -41019,6 +41330,8 @@
             "LZ-FIS-007",
             "LZ-FIS-036",
             "LZ-FIS-045",
+            "LZ-FIS-049",
+            "LZ-FIS-051",
             "NAT-FIS-004",
             "NAT-FIS-005",
             "NAT-FIS-006",
@@ -41035,8 +41348,8 @@
           "es": "La disponibilidad lícita, admisibilidad o inclusión en el ámbito de otro expediente o fuente debe determinarse en el procedimiento seleccionado; este modelo de navegación no infiere disponibilidad ni deber de examen."
         },
         "decision_dependency": {
-          "en": "For ST 104/2025, the finite decision question is whether the legally competent organ must determine whether the complete prosecution file supports the recorded receipt, allocation, referral, examination, response, closure and cross-file treatment for the recorded object “Technical Secretariat tracking file”. Secretaría Técnica de la Fiscalía General del Estado is only the recorded custodian/organ candidate and is not treated here as legally competent or obliged to act. Controlled navigation currently identifies direct files [none currently admitted] and contextual files [GC-APP-004, GC-FIS-011, GC-FIS-012, GC-FIS-013, GC-FIS-014, GC-FIS-015, GC-FIS-016, GC-FIS-017, GC-FIS-018, GC-FIS-032, GC-FIS-033, GC-FIS-034, GC-FIS-035, GC-GOV-019, GC-GOV-020, GC-JUD-001, LZ-FIS-007, LZ-FIS-036, LZ-FIS-045, NAT-FIS-004, NAT-FIS-005, NAT-FIS-006, TF-FIS-007, TF-FIS-008]. Their presence does not establish receipt, admissibility or a duty to consider them.",
-          "es": "Para ST 104/2025, la cuestión decisoria finita es si el órgano legalmente competente debe determinar si el expediente fiscal completo sustenta la recepción, reparto, remisión, examen, respuesta, archivo y tratamiento entre expedientes registrados respecto del objeto registrado «Technical Secretariat tracking file». Secretaría Técnica de la Fiscalía General del Estado es solo el candidato registrado como custodio/órgano y aquí no se le atribuye competencia jurídica ni obligación de actuar. La navegación controlada identifica actualmente expedientes directos [ninguno admitido actualmente] y contextuales [GC-APP-004, GC-FIS-011, GC-FIS-012, GC-FIS-013, GC-FIS-014, GC-FIS-015, GC-FIS-016, GC-FIS-017, GC-FIS-018, GC-FIS-032, GC-FIS-033, GC-FIS-034, GC-FIS-035, GC-GOV-019, GC-GOV-020, GC-JUD-001, LZ-FIS-007, LZ-FIS-036, LZ-FIS-045, NAT-FIS-004, NAT-FIS-005, NAT-FIS-006, TF-FIS-007, TF-FIS-008]. Su presencia no acredita recepción, admisibilidad ni deber de examinarlos."
+          "en": "For ST 104/2025, the finite decision question is whether the legally competent organ must determine whether the complete prosecution file supports the recorded receipt, allocation, referral, examination, response, closure and cross-file treatment for the recorded object “Technical Secretariat tracking file”. Secretaría Técnica de la Fiscalía General del Estado is only the recorded custodian/organ candidate and is not treated here as legally competent or obliged to act. Controlled navigation currently identifies direct files [none currently admitted] and contextual files [GC-APP-004, GC-FIS-011, GC-FIS-012, GC-FIS-013, GC-FIS-014, GC-FIS-015, GC-FIS-016, GC-FIS-017, GC-FIS-018, GC-FIS-032, GC-FIS-033, GC-FIS-034, GC-FIS-035, GC-GOV-019, GC-GOV-020, GC-JUD-001, LZ-FIS-007, LZ-FIS-036, LZ-FIS-045, LZ-FIS-049, LZ-FIS-051, NAT-FIS-004, NAT-FIS-005, NAT-FIS-006, TF-FIS-007, TF-FIS-008]. Their presence does not establish receipt, admissibility or a duty to consider them.",
+          "es": "Para ST 104/2025, la cuestión decisoria finita es si el órgano legalmente competente debe determinar si el expediente fiscal completo sustenta la recepción, reparto, remisión, examen, respuesta, archivo y tratamiento entre expedientes registrados respecto del objeto registrado «Technical Secretariat tracking file». Secretaría Técnica de la Fiscalía General del Estado es solo el candidato registrado como custodio/órgano y aquí no se le atribuye competencia jurídica ni obligación de actuar. La navegación controlada identifica actualmente expedientes directos [ninguno admitido actualmente] y contextuales [GC-APP-004, GC-FIS-011, GC-FIS-012, GC-FIS-013, GC-FIS-014, GC-FIS-015, GC-FIS-016, GC-FIS-017, GC-FIS-018, GC-FIS-032, GC-FIS-033, GC-FIS-034, GC-FIS-035, GC-GOV-019, GC-GOV-020, GC-JUD-001, LZ-FIS-007, LZ-FIS-036, LZ-FIS-045, LZ-FIS-049, LZ-FIS-051, NAT-FIS-004, NAT-FIS-005, NAT-FIS-006, TF-FIS-007, TF-FIS-008]. Su presencia no acredita recepción, admisibilidad ni deber de examinarlos."
         },
         "contrary_explanation": {
           "en": "For ST 104/2025, the strongest hypothetical innocent or contrary explanation could be a lawful limitation based on competence, territorial routing, duplication, judicialisation, evidential threshold, confidentiality or independent file-specific reasoning, but only if the primary record establishes that the legally competent organ applied it to “Technical Secretariat tracking file”. No act is attributed by this model to the recorded candidate Secretaría Técnica de la Fiscalía General del Estado. A different treatment, missing public inventory or related-file membership alone does not establish concealment, coordination, error or wrongdoing.",
@@ -42230,7 +42543,9 @@
       "relationship_ids": [
         "REL-LINKED_PROCEEDING-LZ-FIS-049-LZ-JUD-002"
       ],
-      "context_cluster_ids": [],
+      "context_cluster_ids": [
+        "CTX-PRISM-P05"
+      ],
       "why_en": "At least one direct relationship is supported by an explicit canonical Parent_Master_ID, Linked_Proceedings or Appeal_or_Review field.",
       "why_es": "Al menos una relación directa está respaldada por un campo canónico expreso Parent_Master_ID, Linked_Proceedings o Appeal_or_Review.",
       "limitations_en": "This disposition controls navigation only. It does not prove joinder, receipt, admissibility, knowledge, agreement, causation, wrongdoing or liability.",
@@ -42289,14 +42604,71 @@
           "direct_master_ids": [
             "LZ-JUD-002"
           ],
-          "context_master_ids": [],
-          "context_cluster_ids": [],
+          "context_master_ids": [
+            "GC-APP-004",
+            "GC-FIS-011",
+            "GC-FIS-012",
+            "GC-FIS-013",
+            "GC-FIS-014",
+            "GC-FIS-015",
+            "GC-FIS-016",
+            "GC-FIS-017",
+            "GC-FIS-018",
+            "GC-FIS-032",
+            "GC-FIS-033",
+            "GC-FIS-034",
+            "GC-FIS-035",
+            "GC-GOV-019",
+            "GC-GOV-020",
+            "GC-JUD-001",
+            "LZ-FIS-007",
+            "LZ-FIS-036",
+            "LZ-FIS-045",
+            "LZ-FIS-051",
+            "NAT-FIS-004",
+            "NAT-FIS-005",
+            "NAT-FIS-006",
+            "NAT-FIS-007",
+            "TF-FIS-007",
+            "TF-FIS-008"
+          ],
+          "context_cluster_ids": [
+            "CTX-PRISM-P05"
+          ],
           "direct": [
             "LZ-JUD-002"
           ],
-          "context": [],
+          "context": [
+            "GC-APP-004",
+            "GC-FIS-011",
+            "GC-FIS-012",
+            "GC-FIS-013",
+            "GC-FIS-014",
+            "GC-FIS-015",
+            "GC-FIS-016",
+            "GC-FIS-017",
+            "GC-FIS-018",
+            "GC-FIS-032",
+            "GC-FIS-033",
+            "GC-FIS-034",
+            "GC-FIS-035",
+            "GC-GOV-019",
+            "GC-GOV-020",
+            "GC-JUD-001",
+            "LZ-FIS-007",
+            "LZ-FIS-036",
+            "LZ-FIS-045",
+            "LZ-FIS-051",
+            "NAT-FIS-004",
+            "NAT-FIS-005",
+            "NAT-FIS-006",
+            "NAT-FIS-007",
+            "TF-FIS-007",
+            "TF-FIS-008"
+          ],
           "connection_statuses": [
-            "DIRECT_PROCEDURAL_EDGE"
+            "DIRECT_PROCEDURAL_EDGE",
+            "MATERIALLY_RELEVANT_CONTEXT"
           ],
           "treatment_status": "STATUS_UNRESOLVED"
         },
@@ -42305,8 +42677,8 @@
           "es": "La disponibilidad lícita, admisibilidad o inclusión en el ámbito de otro expediente o fuente debe determinarse en el procedimiento seleccionado; este modelo de navegación no infiere disponibilidad ni deber de examen."
         },
         "decision_dependency": {
-          "en": "For 273/2013, the finite decision question is whether the legally competent organ must determine whether the complete prosecution file supports the recorded receipt, allocation, referral, examination, response, closure and cross-file treatment for the recorded object “Fiscalía investigation/querella concerning alleged corporate/asset-concealment offences; exact judicial conversion requires primary linkage”. Historical destination court/file pending certified linkage is only the recorded custodian/organ candidate and is not treated here as legally competent or obliged to act. Controlled navigation currently identifies direct files [LZ-JUD-002] and contextual files [none currently admitted]. Their presence does not establish receipt, admissibility or a duty to consider them.",
-          "es": "Para 273/2013, la cuestión decisoria finita es si el órgano legalmente competente debe determinar si el expediente fiscal completo sustenta la recepción, reparto, remisión, examen, respuesta, archivo y tratamiento entre expedientes registrados respecto del objeto registrado «Fiscalía investigation/querella concerning alleged corporate/asset-concealment offences; exact judicial conversion requires primary linkage». Historical destination court/file pending certified linkage es solo el candidato registrado como custodio/órgano y aquí no se le atribuye competencia jurídica ni obligación de actuar. La navegación controlada identifica actualmente expedientes directos [LZ-JUD-002] y contextuales [ninguno admitido actualmente]. Su presencia no acredita recepción, admisibilidad ni deber de examinarlos."
+          "en": "For 273/2013, the finite decision question is whether the legally competent organ must determine whether the complete prosecution file supports the recorded receipt, allocation, referral, examination, response, closure and cross-file treatment for the recorded object “Fiscalía investigation/querella concerning alleged corporate/asset-concealment offences; exact judicial conversion requires primary linkage”. Historical destination court/file pending certified linkage is only the recorded custodian/organ candidate and is not treated here as legally competent or obliged to act. Controlled navigation currently identifies direct files [LZ-JUD-002] and contextual files [GC-APP-004, GC-FIS-011, GC-FIS-012, GC-FIS-013, GC-FIS-014, GC-FIS-015, GC-FIS-016, GC-FIS-017, GC-FIS-018, GC-FIS-032, GC-FIS-033, GC-FIS-034, GC-FIS-035, GC-GOV-019, GC-GOV-020, GC-JUD-001, LZ-FIS-007, LZ-FIS-036, LZ-FIS-045, LZ-FIS-051, NAT-FIS-004, NAT-FIS-005, NAT-FIS-006, NAT-FIS-007, TF-FIS-007, TF-FIS-008]. Their presence does not establish receipt, admissibility or a duty to consider them.",
+          "es": "Para 273/2013, la cuestión decisoria finita es si el órgano legalmente competente debe determinar si el expediente fiscal completo sustenta la recepción, reparto, remisión, examen, respuesta, archivo y tratamiento entre expedientes registrados respecto del objeto registrado «Fiscalía investigation/querella concerning alleged corporate/asset-concealment offences; exact judicial conversion requires primary linkage». Historical destination court/file pending certified linkage es solo el candidato registrado como custodio/órgano y aquí no se le atribuye competencia jurídica ni obligación de actuar. La navegación controlada identifica actualmente expedientes directos [LZ-JUD-002] y contextuales [GC-APP-004, GC-FIS-011, GC-FIS-012, GC-FIS-013, GC-FIS-014, GC-FIS-015, GC-FIS-016, GC-FIS-017, GC-FIS-018, GC-FIS-032, GC-FIS-033, GC-FIS-034, GC-FIS-035, GC-GOV-019, GC-GOV-020, GC-JUD-001, LZ-FIS-007, LZ-FIS-036, LZ-FIS-045, LZ-FIS-051, NAT-FIS-004, NAT-FIS-005, NAT-FIS-006, NAT-FIS-007, TF-FIS-007, TF-FIS-008]. Su presencia no acredita recepción, admisibilidad ni deber de examinarlos."
         },
         "contrary_explanation": {
           "en": "For 273/2013, the strongest hypothetical innocent or contrary explanation could be a lawful limitation based on competence, territorial routing, duplication, judicialisation, evidential threshold, confidentiality or independent file-specific reasoning, but only if the primary record establishes that the legally competent organ applied it to “Fiscalía investigation/querella concerning alleged corporate/asset-concealment offences; exact judicial conversion requires primary linkage”. No act is attributed by this model to the recorded candidate Historical destination court/file pending certified linkage. A different treatment, missing public inventory or related-file membership alone does not establish concealment, coordination, error or wrongdoing.",
@@ -42483,22 +42855,21 @@
     },
     {
       "master_id": "LZ-FIS-051",
-      "primary_classification": "EXPLICIT_RELATIONSHIP_GAP",
+      "primary_classification": "CONTROLLED_CONTEXTUAL_BRIDGE",
       "relationship_ids": [],
-      "context_cluster_ids": [],
-      "why_en": "No direct edge or admitted controlled contextual cluster is currently materialised. The row's open primary-source requirement is carried as an explicit relationship gap.",
-      "why_es": "Actualmente no se materializa ningún enlace directo ni grupo contextual controlado admitido. La necesidad de fuente primaria abierta de la fila se mantiene como laguna relacional expresa.",
+      "context_cluster_ids": [
+        "CTX-PRISM-P05"
+      ],
+      "why_en": "No direct edge is asserted. The primary controlled bridge is CASE_PRISM_PROPOSITION; its limitations remain attached.",
+      "why_es": "No se afirma enlace directo. El puente controlado principal es CASE_PRISM_PROPOSITION; se mantienen sus limitaciones.",
       "limitations_en": "This disposition controls navigation only. It does not prove joinder, receipt, admissibility, knowledge, agreement, causation, wrongdoing or liability.",
       "limitations_es": "Esta clasificación controla solo la navegación. No prueba acumulación, recepción, admisibilidad, conocimiento, acuerdo, causalidad, ilicitud ni responsabilidad.",
       "next_source_needed_en": "Exact Fiscalía file class; assigned Fiscal/signatory; opening and archive decrees; annexes; notice/finality",
       "next_source_needed_es": "Clase exacta del expediente de Fiscalía; Fiscal asignado o firmante; decretos de incoación y archivo; anexos; notificación y firmeza.",
       "source_status": "CORPUS_REPORTED_PRIMARY_PENDING",
       "basis": {
-        "kind": "MASTER_REGISTER_FIELD",
-        "source_id": "PROCEEDINGS_MASTER_REGISTER",
-        "record_master_id": "LZ-FIS-051",
-        "field": "Open_Reference_Gap",
-        "evidence_status": "CORPUS_REPORTED_PRIMARY_PENDING"
+        "kind": "CONTEXT_CLUSTER_MEMBERSHIP",
+        "primary_context_cluster_id": "CTX-PRISM-P05"
       },
       "finite_test": {
         "id": "FT-LZ-FIS-051",
@@ -42543,12 +42914,68 @@
         },
         "related_proceedings": {
           "direct_master_ids": [],
-          "context_master_ids": [],
-          "context_cluster_ids": [],
+          "context_master_ids": [
+            "GC-APP-004",
+            "GC-FIS-011",
+            "GC-FIS-012",
+            "GC-FIS-013",
+            "GC-FIS-014",
+            "GC-FIS-015",
+            "GC-FIS-016",
+            "GC-FIS-017",
+            "GC-FIS-018",
+            "GC-FIS-032",
+            "GC-FIS-033",
+            "GC-FIS-034",
+            "GC-FIS-035",
+            "GC-GOV-019",
+            "GC-GOV-020",
+            "GC-JUD-001",
+            "LZ-FIS-007",
+            "LZ-FIS-036",
+            "LZ-FIS-045",
+            "LZ-FIS-049",
+            "NAT-FIS-004",
+            "NAT-FIS-005",
+            "NAT-FIS-006",
+            "NAT-FIS-007",
+            "TF-FIS-007",
+            "TF-FIS-008"
+          ],
+          "context_cluster_ids": [
+            "CTX-PRISM-P05"
+          ],
           "direct": [],
-          "context": [],
+          "context": [
+            "GC-APP-004",
+            "GC-FIS-011",
+            "GC-FIS-012",
+            "GC-FIS-013",
+            "GC-FIS-014",
+            "GC-FIS-015",
+            "GC-FIS-016",
+            "GC-FIS-017",
+            "GC-FIS-018",
+            "GC-FIS-032",
+            "GC-FIS-033",
+            "GC-FIS-034",
+            "GC-FIS-035",
+            "GC-GOV-019",
+            "GC-GOV-020",
+            "GC-JUD-001",
+            "LZ-FIS-007",
+            "LZ-FIS-036",
+            "LZ-FIS-045",
+            "LZ-FIS-049",
+            "NAT-FIS-004",
+            "NAT-FIS-005",
+            "NAT-FIS-006",
+            "NAT-FIS-007",
+            "TF-FIS-007",
+            "TF-FIS-008"
+          ],
           "connection_statuses": [
-            "NOT_LOCATED"
+            "MATERIALLY_RELEVANT_CONTEXT"
           ],
           "treatment_status": "STATUS_UNRESOLVED"
         },
@@ -42557,8 +42984,8 @@
           "es": "La disponibilidad lícita, admisibilidad o inclusión en el ámbito de otro expediente o fuente debe determinarse en el procedimiento seleccionado; este modelo de navegación no infiere disponibilidad ni deber de examen."
         },
         "decision_dependency": {
-          "en": "For 302/2018, the finite decision question is whether the legally competent organ must determine whether the complete prosecution file supports the recorded receipt, allocation, referral, examination, response, closure and cross-file treatment for the recorded object “Historical inventory reports allegations of disloyal administration, damage, arbitrary exercise of rights and false testimony”. Fiscalía Provincial de Las Palmas is only the recorded custodian/organ candidate and is not treated here as legally competent or obliged to act. Controlled navigation currently identifies direct files [none currently admitted] and contextual files [none currently admitted]. Their presence does not establish receipt, admissibility or a duty to consider them.",
-          "es": "Para 302/2018, la cuestión decisoria finita es si el órgano legalmente competente debe determinar si el expediente fiscal completo sustenta la recepción, reparto, remisión, examen, respuesta, archivo y tratamiento entre expedientes registrados respecto del objeto registrado «Historical inventory reports allegations of disloyal administration, damage, arbitrary exercise of rights and false testimony». Fiscalía Provincial de Las Palmas es solo el candidato registrado como custodio/órgano y aquí no se le atribuye competencia jurídica ni obligación de actuar. La navegación controlada identifica actualmente expedientes directos [ninguno admitido actualmente] y contextuales [ninguno admitido actualmente]. Su presencia no acredita recepción, admisibilidad ni deber de examinarlos."
+          "en": "For 302/2018, the finite decision question is whether the legally competent organ must determine whether the complete prosecution file supports the recorded receipt, allocation, referral, examination, response, closure and cross-file treatment for the recorded object “Historical inventory reports allegations of disloyal administration, damage, arbitrary exercise of rights and false testimony”. Fiscalía Provincial de Las Palmas is only the recorded custodian/organ candidate and is not treated here as legally competent or obliged to act. Controlled navigation currently identifies direct files [none currently admitted] and contextual files [GC-APP-004, GC-FIS-011, GC-FIS-012, GC-FIS-013, GC-FIS-014, GC-FIS-015, GC-FIS-016, GC-FIS-017, GC-FIS-018, GC-FIS-032, GC-FIS-033, GC-FIS-034, GC-FIS-035, GC-GOV-019, GC-GOV-020, GC-JUD-001, LZ-FIS-007, LZ-FIS-036, LZ-FIS-045, LZ-FIS-049, NAT-FIS-004, NAT-FIS-005, NAT-FIS-006, NAT-FIS-007, TF-FIS-007, TF-FIS-008]. Their presence does not establish receipt, admissibility or a duty to consider them.",
+          "es": "Para 302/2018, la cuestión decisoria finita es si el órgano legalmente competente debe determinar si el expediente fiscal completo sustenta la recepción, reparto, remisión, examen, respuesta, archivo y tratamiento entre expedientes registrados respecto del objeto registrado «Historical inventory reports allegations of disloyal administration, damage, arbitrary exercise of rights and false testimony». Fiscalía Provincial de Las Palmas es solo el candidato registrado como custodio/órgano y aquí no se le atribuye competencia jurídica ni obligación de actuar. La navegación controlada identifica actualmente expedientes directos [ninguno admitido actualmente] y contextuales [GC-APP-004, GC-FIS-011, GC-FIS-012, GC-FIS-013, GC-FIS-014, GC-FIS-015, GC-FIS-016, GC-FIS-017, GC-FIS-018, GC-FIS-032, GC-FIS-033, GC-FIS-034, GC-FIS-035, GC-GOV-019, GC-GOV-020, GC-JUD-001, LZ-FIS-007, LZ-FIS-036, LZ-FIS-045, LZ-FIS-049, NAT-FIS-004, NAT-FIS-005, NAT-FIS-006, NAT-FIS-007, TF-FIS-007, TF-FIS-008]. Su presencia no acredita recepción, admisibilidad ni deber de examinarlos."
         },
         "contrary_explanation": {
           "en": "For 302/2018, the strongest hypothetical innocent or contrary explanation could be a lawful limitation based on competence, territorial routing, duplication, judicialisation, evidential threshold, confidentiality or independent file-specific reasoning, but only if the primary record establishes that the legally competent organ applied it to “Historical inventory reports allegations of disloyal administration, damage, arbitrary exercise of rights and false testimony”. No act is attributed by this model to the recorded candidate Fiscalía Provincial de Las Palmas. A different treatment, missing public inventory or related-file membership alone does not establish concealment, coordination, error or wrongdoing.",
@@ -43011,11 +43438,11 @@
     "recorded_stream_cluster_count": 0,
     "case_prism_proposition_cluster_count": 18,
     "source_controlled_corridor_count": 1,
-    "case_prism_exact_proceeding_covered_count": 43,
-    "case_prism_exact_proceeding_uncovered_count": 63,
+    "case_prism_exact_proceeding_covered_count": 45,
+    "case_prism_exact_proceeding_uncovered_count": 61,
     "decision_dependency_exact_coverage": "VERIFIED_106_OF_106",
     "decision_dependency_exact_coverage_scope": "PUBLIC_EXACT_FILE_FINITE_TEST_REGISTER",
-    "shared_case_prism_proposition_membership_coverage": "GAP_43_OF_106",
+    "shared_case_prism_proposition_membership_coverage": "GAP_45_OF_106",
     "shared_case_prism_proposition_membership_scope": "SHARED_CASE_PRISM_PROPOSITION_MEMBERSHIP_ONLY",
     "exact_file_decision_dependency_actionability_count": 106,
     "exact_file_decision_dependency_actionability_coverage": "VERIFIED_106_OF_106",
@@ -43052,9 +43479,9 @@
     "dedicated_narrative_dossier_coverage": "PARTIAL_NOT_INFERRED",
     "classification_counts": {
       "DIRECT_PROCEDURAL_EDGE": 47,
-      "CONTROLLED_CONTEXTUAL_BRIDGE": 43,
+      "CONTROLLED_CONTEXTUAL_BRIDGE": 44,
       "INDEPENDENT_TRACK": 0,
-      "EXPLICIT_RELATIONSHIP_GAP": 16
+      "EXPLICIT_RELATIONSHIP_GAP": 15
     },
     "unexplained_exact_proceeding_count": 0,
     "geography_only_bridge_count": 0

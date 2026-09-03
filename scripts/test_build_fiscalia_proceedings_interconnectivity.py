@@ -24,7 +24,7 @@ class FiscaliaInterconnectivityBuilderTest(unittest.TestCase):
         payload = builder.build()
         self.assertEqual(payload["coverage"]["communication_events"], 296)
         self.assertEqual(payload["coverage"]["matter_linked_events"], 117)
-        self.assertEqual(payload["coverage"]["fiscalia_identity_total"], 24)
+        self.assertEqual(payload["coverage"]["fiscalia_identity_total"], 26)
         self.assertEqual(len(payload["priority_chains"]), 9)
         self.assertFalse(payload["coverage"]["unresolved_matter_reference_literals"])
 
