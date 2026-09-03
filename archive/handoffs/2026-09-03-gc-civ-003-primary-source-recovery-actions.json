@@ -1,29 +1,32 @@
 {
   "schema": "por-derecho.continuity-event-action-ledger.v1",
   "workspace_id": "PD-WS-20260902-0001",
-  "handoff_id": "PD-WCH-20260903-GCCIV003-SRC-002",
+  "handoff_id": "PD-WCH-20260903-GCCIV003-SRC-003",
   "control_date": "2026-09-03",
-  "topic": "GC-CIV-003 primary-source recovery and gap refinement",
+  "topic": "GC-CIV-003 primary-source recovery, source-gap refinement and live closeout",
   "repository_digest_actions": [
-    {"action": "Re-fetch current main before write", "state": "DONE", "result": "231d25c12108579efdf92365cf7860bf281178f5"},
-    {"action": "Read CURRENT_WORKSPACE_HANDOFF and release closeout", "state": "DONE"},
+    {"action": "Re-fetch current main before source-recovery write", "state": "DONE", "result": "231d25c12108579efdf92365cf7860bf281178f5"},
+    {"action": "Read CURRENT_WORKSPACE_HANDOFF and immutable release closeout", "state": "DONE"},
     {"action": "Locate canonical GC-CIV-003 Master/public/page/authority state", "state": "DONE"},
     {"action": "Register recovered primary acts in source-safe repo controls", "state": "DONE"},
     {"action": "Refine bilingual proceeding pages", "state": "DONE"},
-    {"action": "Preserve immutable PR #1373 release manifests", "state": "DONE"}
+    {"action": "Preserve immutable PR #1373 release manifests", "state": "DONE"},
+    {"action": "Record PR #1377 release and hosted Chromium live result", "state": "DONE"}
   ],
   "connected_source_scans": [
     {"scope": "Drive DILIGENCIA PRELIMINAR family", "state": "DONE_TARGETED_ONLY"},
     {"scope": "Drive TANTEO Y RETRACTO sibling family", "state": "DONE_TARGETED_ONLY"},
     {"scope": "Drive exact/near-exact 19-Feb and 5-Mar recovery terms", "state": "DONE_TARGETED_ONLY"},
     {"scope": "Gmail exact case-number windows around 19-Feb and 5-Mar", "state": "DONE_TARGETED_ONLY"},
+    {"scope": "Gmail date-bounded broader 19-Feb result", "state": "DONE_TARGETED_ONLY", "result": "CONCURSO_36_2012_NOT_GC_CIV_003_NO_GAP_CLOSURE"},
+    {"scope": "Gmail 5-Mar actor/counsel window", "state": "DONE_TARGETED_ONLY", "result": "NO_RESPONSIVE_MESSAGE"},
     {"scope": "Broad Gmail/Drive rediscovery", "state": "NOT_RUN_BY_GOVERNANCE"}
   ],
   "identity_actions": [
     {"id": "PD-SP-I-0048", "state": "PRESERVED_LOCKED"},
     {"id": "PD-SP-P-0124", "state": "PRESERVED_CARET_CONFIRMED"},
     {"id": "PD-SP-P-0165", "state": "PRESERVED_CARET_CONFIRMED"},
-    {"id": "LZ-CIV-050", "state": "DEPRECATED_REMOVED_DO_NOT_RECREATE"}
+    {"id": "LZ-CIV-050", "state": "DEPRECATED_REMOVED_DO_NOT_RECREATE_LIVE_NEGATIVE_VERIFIED"}
   ],
   "chronology_actions": [
     {"date": "2017-12-19", "act": "Admission Auto", "state": "PRIMARY_VERIFIED"},
@@ -35,15 +38,16 @@
   ],
   "interlink_actions": [
     {"action": "Preserve no formal procedural edge to Concurso 36/2012 from contextual 8-Feb Mercantil Auto", "state": "DONE"},
-    {"action": "Preserve existing contextual navigation separately from formal edges", "state": "DONE"}
+    {"action": "Preserve existing contextual navigation separately from formal edges", "state": "DONE"},
+    {"action": "Treat 19-Feb Cuatrecasas email thread as Concurso 36/2012 only", "state": "DONE_NO_CROSS_PROCEEDING_INFERENCE"}
   ],
   "publication_actions": [
     {"action": "Create fresh source-recovery branch from current main", "state": "DONE", "branch": "codex/gc-civ-003-primary-source-recovery-20260903"},
-    {"action": "Open governed PR", "state": "PENDING"},
-    {"action": "CI green", "state": "PENDING"},
-    {"action": "Merge with expected-head safety", "state": "PENDING"},
-    {"action": "Exact merge-SHA Pages deployment", "state": "PENDING"},
-    {"action": "Live ES/EN/source-state verification", "state": "PENDING"}
+    {"action": "Open governed PR", "state": "DONE", "pr": 1377, "head_sha": "3595abac9a1151d8bac1ae31e9721fcd0b8fa4f4"},
+    {"action": "PR validation", "state": "DONE_GREEN", "result": "15_OF_15_COMPLETED_NO_REPORTED_FAILURE"},
+    {"action": "Merge with expected-head safety", "state": "DONE", "merge_sha": "ddebffb07f4750ab4ab19017a3aef5a195c45f70", "tree_sha": "a724378b7e0935aef691d9c941d0261ecd9c1b10"},
+    {"action": "Exact merge-SHA Pages deployment", "state": "DONE_SUCCESS", "run_id": 33708727660, "run_number": 1424, "head_sha": "ddebffb07f4750ab4ab19017a3aef5a195c45f70"},
+    {"action": "Hosted Chromium live ES/EN/source-state/search/negative-duplicate verification", "state": "DONE_SUCCESS", "branch": "verify/gc-civ-003-primary-source-live-20260903", "branch_policy": "DISPOSABLE_DO_NOT_MERGE", "run_id": 33709044855, "run_number": 1, "head_sha": "072cac2577e77a6eb0b3796c5707be389fb7f4f3", "terminal_marker": "GC_CIV_003_PRIMARY_SOURCE_LIVE_BROWSER_VERIFIED=PASS"}
   ],
   "open_actions": [
     "Recover actual 19-Feb-2018 act/result",
@@ -58,7 +62,7 @@
     "annex trace is not primary decree verification",
     "party filing has no inferred judicial authorship",
     "legacy spreadsheet with wrong Arrecife label does not override primary Las Palmas/NIG chain",
-    "separate Concurso 36/2012 act does not transfer Judge/LAJ into GC-CIV-003"
+    "separate Concurso 36/2012 act or email thread does not transfer Judge/LAJ or procedural facts into GC-CIV-003"
   ],
-  "successor_bootstrap": "Continue PD-WS-20260902-0001 from PD-WCH-20260903-GCCIV003-SRC-002. Treat assets/data/gc-civ-003-primary-source-state-20260903.json as the controlling 03-Sep source correction overlay. Preserve PR #1373 as immutable release checkpoint, LZ-CIV-050 as removed, and historic docket as OPEN_NOT_CERTIFIED_COMPLETE. Continue only the four named P0 source gaps."
+  "successor_bootstrap": "Continue PD-WS-20260902-0001 from PD-WCH-20260903-GCCIV003-SRC-003. Treat assets/data/gc-civ-003-primary-source-state-20260903.json as the controlling 03-Sep source correction overlay and PR #1377 / ddebffb07f4750ab4ab19017a3aef5a195c45f70 as the merged source-recovery release. Preserve PR #1373 as the immutable broad historic release checkpoint, LZ-CIV-050 as removed, and the historic docket as OPEN_NOT_CERTIFIED_COMPLETE. Continue only the named P0 source gaps and do not run broad rediscovery."
 }
