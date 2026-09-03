@@ -27,6 +27,7 @@
    * CUATRECASAS_STEP4_SEARCH_EXTENSION_20260902
    * CUATRECASAS_DP748_TRANSPARENCY_APPEAL_20260902
    * CUATRECASAS_DP748_ETJ163_RECENT_PRIMARY_CLUSTER_20260903
+   * LA_LAGUNA_CONCURSO_PUBLIC_INTERCONNECTION_20260903
    */
 
   const loadMasterProceedingsPublication = () => {
@@ -223,6 +224,27 @@
     document.head.appendChild(transparency);
   };
 
+  const loadLaLagunaConcursoPublicBridge = () => {
+    const path = window.location.pathname;
+    const relevant = path.includes('/es/cuatrecasas-sun-park/')
+      || path.includes('/en/cuatrecasas-sun-park/')
+      || path.includes('/es/etj-163-2020/')
+      || path.includes('/en/etj-163-2020/')
+      || path.includes('/es/dp-748-2026/')
+      || path.includes('/en/dp-748-2026/')
+      || path.includes('/es/cambiario-1048-2019/')
+      || path.includes('/en/cambiario-1048-2019/')
+      || path.includes('/es/cuatrecasas-dp748-transparencia-2026/')
+      || path.includes('/en/cuatrecasas-dp748-transparency-2026/');
+    if (!relevant) return;
+    if (document.querySelector('script[data-la-laguna-concurso-public-bridge-loader]')) return;
+    const bridge = document.createElement('script');
+    bridge.src = new URL('la-laguna-concurso-public-bridge-20260903.js?v=20260903b', current.src).href;
+    bridge.async = false;
+    bridge.setAttribute('data-la-laguna-concurso-public-bridge-loader', '20260903b');
+    document.head.appendChild(bridge);
+  };
+
   // Preserve the complete site loader that existed before this visual update.
   const prior = document.createElement('script');
   prior.src = new URL('site-pre-treasury-154-hq-20260828.js?v=20260828a', current.src).href;
@@ -246,4 +268,5 @@
   loadCuatrecasasStep4PublicationNode();
   loadCuatrecasasStep4SearchExtension();
   loadCuatrecasasDp748Transparency();
+  loadLaLagunaConcursoPublicBridge();
 })();
