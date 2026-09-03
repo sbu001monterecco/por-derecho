@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 900" role="img" aria-labelledby="title desc">
+<title id="title">GC-CIV-003 — mapa de interoperabilidad multitrack</title>
+<desc id="desc">Mapa visual que sitúa GC-CIV-003 en el centro y lo conecta con el administrador concursal, CAM/Acosta Matos, Concurso 36/2012, la tesis criminal-first, la ingeniería inversa unitaria y la cuestión de remedios, distinguiendo conexión documentada de hipótesis contextual.</desc>
+<rect width="1400" height="900" fill="#f5f7f6"/>
+<text x="70" y="82" font-family="Arial,Helvetica,sans-serif" font-size="42" font-weight="700" fill="#111827">GC-CIV-003 · INTEROPERABILIDAD MULTITRACK</text>
+<text x="70" y="122" font-family="Arial,Helvetica,sans-serif" font-size="23" fill="#4b5563">Una misma secuencia, múltiples planos jurídicos · enlaces de navegación no equivalen a prueba de coordinación</text>
+<defs>
+<marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#526b66"/></marker>
+<marker id="arrowred" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#8b1e1e"/></marker>
+</defs>
+<g stroke="#526b66" stroke-width="5" fill="none" marker-end="url(#arrow)">
+<path d="M700 445 C520 350 430 280 310 240"/>
+<path d="M700 445 C880 350 970 280 1090 240"/>
+<path d="M700 445 C500 490 390 525 275 565"/>
+<path d="M700 445 C900 490 1010 525 1125 565"/>
+<path d="M700 445 C590 610 550 685 455 735"/>
+<path d="M700 445 C810 610 850 685 945 735"/>
+</g>
+<g font-family="Arial,Helvetica,sans-serif">
+<rect x="505" y="315" width="390" height="250" rx="30" fill="#fff" stroke="#8b1e1e" stroke-width="6"/>
+<text x="700" y="380" text-anchor="middle" font-size="36" font-weight="700" fill="#8b1e1e">GC-CIV-003</text>
+<text x="700" y="423" text-anchor="middle" font-size="25" font-weight="700" fill="#111827">Intervención del AC</text>
+<text x="700" y="459" text-anchor="middle" font-size="25" font-weight="700" fill="#111827">+ desistimiento registrado</text>
+<text x="700" y="505" text-anchor="middle" font-size="20" fill="#4b5563">Nodo fuente-controlado</text>
+<text x="700" y="535" text-anchor="middle" font-size="20" fill="#4b5563">DP 1041/2017 · NIG 3501642120170028407</text>
+
+<rect x="90" y="150" width="420" height="160" rx="22" fill="#fff" stroke="#243b53" stroke-width="3"/>
+<text x="120" y="195" font-size="26" font-weight="700" fill="#111827">Administrador concursal</text>
+<text x="120" y="232" font-size="22" fill="#111827">Francisco de Borja</text>
+<text x="120" y="264" font-size="22" fill="#111827">Rodríguez-Batllori Laffitte</text>
+<text x="120" y="294" font-size="18" fill="#6b7280">Intervención documentada · responsabilidad individual a probar</text>
+
+<rect x="890" y="150" width="420" height="160" rx="22" fill="#fff" stroke="#243b53" stroke-width="3"/>
+<text x="920" y="195" font-size="26" font-weight="700" fill="#111827">CAM / Acosta Matos</text>
+<text x="920" y="232" font-size="22" fill="#111827">Parte requerida y contraria</text>
+<text x="920" y="264" font-size="22" fill="#111827">Conformidad al desistimiento</text>
+<text x="920" y="294" font-size="18" fill="#6b7280">Beneficio potencial · participación personal no inferida</text>
+
+<rect x="70" y="500" width="410" height="165" rx="22" fill="#fff" stroke="#526b66" stroke-width="3"/>
+<text x="100" y="548" font-size="26" font-weight="700" fill="#111827">Concurso 36/2012</text>
+<text x="100" y="585" font-size="22" fill="#111827">Poder concursal · liquidación</text>
+<text x="100" y="617" font-size="22" fill="#111827">calificación · adjudicación</text>
+<text x="100" y="648" font-size="18" fill="#6b7280">Contexto institucional y downstream</text>
+
+<rect x="920" y="500" width="410" height="165" rx="22" fill="#fff" stroke="#8b1e1e" stroke-width="3"/>
+<text x="950" y="548" font-size="26" font-weight="700" fill="#8b1e1e">Tesis criminal-first</text>
+<text x="950" y="585" font-size="22" fill="#111827">Actor → acto → autoridad</text>
+<text x="950" y="617" font-size="22" fill="#111827">daño → beneficio → contrafactual</text>
+<text x="950" y="648" font-size="18" fill="#6b7280">Hipótesis refutable · no condena</text>
+
+<rect x="250" y="705" width="410" height="140" rx="22" fill="#fff" stroke="#526b66" stroke-width="3"/>
+<text x="280" y="750" font-size="26" font-weight="700" fill="#111827">Ingeniería inversa unitaria</text>
+<text x="280" y="787" font-size="22" fill="#111827">Antes · durante · después</text>
+<text x="280" y="819" font-size="18" fill="#6b7280">Interoperabilidad sin fragmentación</text>
+
+<rect x="740" y="705" width="410" height="140" rx="22" fill="#fff" stroke="#7b5d14" stroke-width="3"/>
+<text x="770" y="750" font-size="26" font-weight="700" fill="#7b5d14">Remedios y protección</text>
+<text x="770" y="787" font-size="22" fill="#111827">Revisión · cautela · restitución</text>
+<text x="770" y="819" font-size="18" fill="#6b7280">LPB · Aweswell/Oswell · sin anticipar remedio concreto</text>
+</g>
+<line x1="70" y1="865" x2="1330" y2="865" stroke="#d1d5db" stroke-width="2"/>
+<text x="70" y="892" font-family="Arial,Helvetica,sans-serif" font-size="17" fill="#6b7280">Regla visual: enlaces = rutas de análisis. Sólo la fuente primaria establece hechos; proximidad gráfica no prueba concierto, dolo, causalidad o responsabilidad penal.</text>
+</svg>
