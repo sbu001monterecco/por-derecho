@@ -1,0 +1,2 @@
+PROCEEDINGS INTERCONNECTIVITY MAP AUDIT: FAIL
+- current-main historic-proceedings reintegration transition is incomplete or overclaims publication
