@@ -1,0 +1,130 @@
+name: One-shot GC-CIV-003 SRC-004 continuity patch
+
+on:
+  push:
+    branches:
+      - codex/gc-civ-003-decree-closure-primary-20260903
+    paths:
+      - '.github/workflows/_oneshot-gc-civ-003-src004-patch.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  patch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Patch GC-CIV-003 continuity state only
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import json, re
+
+          handoff = Path('CURRENT_WORKSPACE_HANDOFF.md')
+          s = handoff.read_text(encoding='utf-8')
+          s = s.replace('**Current continuation pointer:** `PD-WCH-20260903-GCCIV003-SRC-003`', '**Current continuation pointer:** `PD-WCH-20260903-GCCIV003-SRC-004`')
+          checkpoint = """**Current checkpoint:** the historic-proceedings / justice-authority / Fiscalía / canonical-search / interconnectivity reintegration remains immutably released through PR **#1373** at production merge `efbb1032b0c5e21ca892b3a9db17b3f7b4073e6c`, tree `1e2295ccc94d3e020b2ef0db59924d439de2aa93`, deployed by GitHub Pages run **33697357002 / #1420** and live-browser verified in Chromium run **33700567926**. GC-CIV-003 source recovery was separately merged/deployed/live-verified through PR **#1377**, merge `ddebffb07f4750ab4ab19017a3aef5a195c45f70`, Pages **33708727660 / #1424**, Chromium **33709044855**, with continuity closeout PR **#1378** merged at `08b2c9efeec59ce1b4009377b0f84de3cd138d8c`. A further targeted primary recovery now has the authentic **Decreto 000139/2018 of 5-Mar-2018** and the signed **13-May-2024 LAJ archive-status order** staged under SRC-004. The decree proves LPB was the party requesting desistimiento, CAM conformed by a 25-Feb-2018 filing registry `1222/18`, art. 20.3 LEC was applied, the proceeding was sobreseído and the hearing then set for 25-Apr-2018 11:15 was suspended. The 2024 order confirms the proceeding finalised and archived as of that date. Individual authorship/signature of the LPB desistimiento filing, the original CAM conformity filing, 19-Feb result, decree service and exact finality date remain source gaps. Deprecated `LZ-CIV-050` remains removed. Global historic-docket backfill remains `OPEN_NOT_CERTIFIED_COMPLETE`."""
+          s = re.sub(r'\*\*Current checkpoint:\*\*.*?\n\n\*\*Pointer semantics:', checkpoint + '\n\n**Pointer semantics:', s, count=1, flags=re.S)
+
+          read_block = """Read in this order:
+
+1. `archive/handoffs/2026-09-03-gc-civ-003-decree-primary-checkpoint.md`
+2. `archive/handoffs/2026-09-03-gc-civ-003-decree-primary-checkpoint.json`
+3. `archive/handoffs/2026-09-03-gc-civ-003-decree-primary-actions.json`
+4. `assets/data/gc-civ-003-primary-source-state-20260903.json`
+5. `archive/GC_CIV_003_PRIMARY_ACTS_SOURCE_REGISTER_03SEP2026.md`
+6. prior live closeout `archive/handoffs/2026-09-03-gc-civ-003-primary-source-recovery-live-closeout.md`
+7. immutable broad release closeout `archive/handoffs/2026-09-03-historic-proceedings-authority-search-reintegration-live-closeout.md`
+8. its machine companion `archive/handoffs/2026-09-03-historic-proceedings-authority-search-reintegration-live-closeout.json`
+9. `.github/governance/JUDICIAL_PROSECUTORIAL_AUTHORITY_REGISTER_CONTINUITY_02SEP2026.md`
+10. `assets/data/justice-authority-register-current-v2.json`
+11. the CAEPR / Master Proceedings / interconnectivity controls named by the successor handoff.
+"""
+          s = re.sub(r'Read in this order:\n\n.*?\nRelease denominator at the immutable #1373 checkpoint:', read_block + '\nRelease denominator at the immutable #1373 checkpoint:', s, count=1, flags=re.S)
+
+          locked = """Locked correction: Diligencias Preliminares 1041/2017 is `GC-CIV-003`, NIG `3501642120170028407`, court `PD-SP-I-0048`, Magistrado-Juez Juan Avello Formoso `PD-SP-P-0124`, LAJ Fernando Pérez Polo `PD-SP-P-0165`. The dated `assets/data/gc-civ-003-primary-source-state-20260903.json` controls current source-gap interpretation. Closed by primary source now include: the 19-Dec-2017 admission Auto and its own finality; positive CAM citation/requerimiento on 18-Jan; CAM opposition dated 24-Jan-2018; standalone Decreto `000139/2018` dated 5-Mar-2018; LPB as the party requesting desistimiento; CAM no-opposition/conformity dated 25-Feb-2018 registry `1222/18` as recorded in that decree; art. 20.3 LEC basis; sobreseimiento and suspension of the hearing then set for 25-Apr-2018 11:15; and finalised/archive status as of 13-May-2024. Remaining targeted gaps: complete docket/certified index; actual 19-Feb result plus intervening rescheduling act; original LPB desistimiento filing with exact date/author/signatory/representative/full text; original CAM 25-Feb conformity filing; service of Decreto 000139/2018; exact finality date/source. Court lawyer/procurador metadata is not filing-authorship proof. Never resurrect `LZ-CIV-050`."""
+          s = re.sub(r'Locked correction:.*?\n\nPR #1377 source release:', locked + '\n\nPR #1377 source release:', s, count=1, flags=re.S)
+
+          bootstrap = "> Continue `PD-WS-20260902-0001` from repository continuity state, not prior chat memory. Read `CURRENT_WORKSPACE_HANDOFF.md`, then the SRC-004 decree-primary checkpoint, machine companion and action ledger, `assets/data/gc-civ-003-primary-source-state-20260903.json`, and the source register; use the PR #1377 live closeout and immutable #1373 broad release only as earlier checkpoints. Re-fetch current `main` before changes. Preserve `GC-CIV-003`; never resurrect `LZ-CIV-050`. The standalone Decreto 000139/2018 is PRIMARY_VERIFIED and must never revert to traced/missing. Preserve the distinction between LPB as proven requesting party and unresolved individual author/signatory of the desistimiento filing. Continue only the six SRC-004 targeted gaps; do not re-run broad discovery."
+          s = re.sub(r'> Continue `PD-WS-20260902-0001`.*?Do not re-run broad discovery\.', bootstrap, s, count=1, flags=re.S)
+          handoff.write_text(s, encoding='utf-8')
+
+          regp = Path('data/workspace-register-v1.json')
+          reg = json.loads(regp.read_text(encoding='utf-8'))
+          ws = next(x for x in reg['workspaces'] if x['workspace_id'] == 'PD-WS-20260902-0001')
+          ws['current_handoff_id'] = 'PD-WCH-20260903-GCCIV003-SRC-004'
+          ws['handoff_path'] = 'archive/handoffs/2026-09-03-gc-civ-003-decree-primary-checkpoint.md'
+          ws['machine_handoff_path'] = 'archive/handoffs/2026-09-03-gc-civ-003-decree-primary-checkpoint.json'
+          ws['prior_handoff_id'] = 'PD-WCH-20260903-GCCIV003-SRC-003'
+          ws['prior_handoff_path'] = 'archive/handoffs/2026-09-03-gc-civ-003-primary-source-recovery-live-closeout.md'
+          ws['prior_machine_handoff_path'] = 'archive/handoffs/2026-09-03-gc-civ-003-primary-source-recovery-live-closeout.json'
+          ws['current_main_sha_checked'] = '08b2c9efeec59ce1b4009377b0f84de3cd138d8c'
+          ws['checkpoint_branch'] = 'codex/gc-civ-003-decree-closure-primary-20260903'
+          ws['validation_state'] = 'PR_1377_MERGED_DEPLOYED_LIVE_BROWSER_VERIFIED; PR_1378_CONTINUITY_CLOSEOUT_MERGED; SRC_004_PRIMARY_DECREE_CORRECTION_BRANCH_STAGED_PR_PENDING'
+          r = ws['gc_civ_003_source_recovery']
+          r['action_ledger_path'] = 'archive/handoffs/2026-09-03-gc-civ-003-decree-primary-actions.json'
+          r['state'] = 'CONTROLLING_03SEP2026_PRIMARY_DECREE_SOURCE_CORRECTION_BRANCH_STAGED_PR_PENDING'
+          r['closed_primary_gaps'] = [
+              '19-Dec-2017 signed admission Auto',
+              'Finality of the 19-Dec-2017 Auto only',
+              'Positive CAM citation/requerimiento on 18-Jan-2018',
+              'CAM appearance/opposition dated 24-Jan-2018',
+              'Standalone Decreto 000139/2018 dated 5-Mar-2018',
+              'LPB as party requesting desistimiento',
+              'CAM no-opposition/conformity dated 25-Feb-2018 registry 1222/18 via decree',
+              'Article 20.3 LEC basis and sobreseimiento',
+              'Suspension of hearing then scheduled 25-Apr-2018 11:15',
+              'Finalised/archive status confirmed as of 13-May-2024'
+          ]
+          r['remaining_p0'] = [
+              'Complete docket/certified index',
+              'Actual 19-Feb-2018 result and intervening rescheduling act',
+              'Original LPB desistimiento filing with exact date/author/signatory/representative/full text',
+              'Original CAM 25-Feb-2018 conformity filing registry 1222/18',
+              'Service/notification of Decreto 000139/2018',
+              'Exact finality date/source after five-day review route'
+          ]
+          r['closure_trace_state'] = 'PRIMARY_VERIFIED_DECRETO_000139_2018; ARCHIVE_STATUS_PRIMARY_CONFIRMED_AS_OF_2024-05-13'
+          ws['next_target_mode'] = 'P0_GC_CIV_003_19FEB_RESCHEDULING_ORIGINAL_DESISTIMIENTO_ORIGINAL_1222_SERVICE_EXACT_FINALITY_ONLY; NO_BROAD_REDISCOVERY'
+          regp.write_text(json.dumps(reg, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+
+          srcp = Path('assets/data/gc-civ-003-primary-source-state-20260903.json')
+          src = json.loads(srcp.read_text(encoding='utf-8'))
+          opp = next(x for x in src['party_filings'] if x['act_id'] == 'GC-CIV-003-PARTY-CAM-OPPOSITION')
+          opp['date'] = '2018-01-24'
+          opp['date_state'] = 'PRIMARY_SOURCE_LOCKED'
+          opp['source_filename'] = 'DP 250118 1 Retracto Oposicion de CAM.pdf'
+          opp['source_sha256'] = '02e2efcb55333f647225f1a81e27728f371214e78091f6968f18e84435dd5efc'
+          opp['source_bytes'] = 706239
+          opp['requested_relief'] = 'Set aside the requested preliminary diligences; costs requested against applicant'
+          src['supporting_exhibits'] = src.get('supporting_exhibits', [])
+          if not any(x.get('evidence_id') == 'GC-CIV-003-EVID-CAM-NOTICE-ASSIGNMENT-20171027' for x in src['supporting_exhibits']):
+              src['supporting_exhibits'].append({
+                  'evidence_id':'GC-CIV-003-EVID-CAM-NOTICE-ASSIGNMENT-20171027',
+                  'source_class':'PRIMARY_PARTY_EXHIBIT_VISUALLY_VERIFIED',
+                  'source_filename':'DP 250118 2 Retracto Notificacion de CAM a LPB.pdf',
+                  'source_sha256':'8f11764548d458286de1aff04fe5ff08f00eb847a8960eab4dad8af4456dfdc3',
+                  'source_bytes':433878,
+                  'finding':'Notarial/registered-mail assignment-notification package relied on in CAM opposition; package records delivery to LPB on 2017-10-27 and contains the 20-Oct-2017 assignment notice',
+                  'signature_metadata_visible':'Construcciones Acosta Matos, S.A. — Laura Patricia Acosta Matos; Promontoria Holding 122, B.V. — María Montserrat Álvarez González',
+                  'boundary':'Supporting party exhibit; not promoted beyond the propositions established by the source and opposition filing'
+              })
+          srcp.write_text(json.dumps(src, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+
+          actp = Path('archive/handoffs/2026-09-03-gc-civ-003-decree-primary-actions.json')
+          act = json.loads(actp.read_text(encoding='utf-8'))
+          for item in act['publication_actions']:
+              if item['action'] in ['Advance CURRENT_WORKSPACE_HANDOFF.md','Reconcile workspace register']:
+                  item['state'] = 'DONE'
+          actp.write_text(json.dumps(act, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+          PY
+          git config user.name 'sbu001monterecco'
+          git config user.email 'sbu001@monterecco.com'
+          git rm .github/workflows/_oneshot-gc-civ-003-src004-patch.yml
+          git add CURRENT_WORKSPACE_HANDOFF.md data/workspace-register-v1.json assets/data/gc-civ-003-primary-source-state-20260903.json archive/handoffs/2026-09-03-gc-civ-003-decree-primary-actions.json
+          git commit -m 'Advance SRC-004 GC-CIV-003 continuity state'
+          git push origin HEAD:codex/gc-civ-003-decree-closure-primary-20260903
