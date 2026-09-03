@@ -1,0 +1,33 @@
+{
+  "schema_version": "1.0.0",
+  "dataset": "fiscalia-proceedings-interconnectivity-supplement-20260903",
+  "control_date": "2026-09-03",
+  "supplement_to": "assets/data/fiscalia-proceedings-interconnectivity-v1.json",
+  "events": [
+    {
+      "event_id": "PD-SP-EVT-0158",
+      "event_date": "2025-09-19",
+      "direction": "INBOUND_FROM_INSTITUTION",
+      "record_type": "OFFICIAL_ROUTING_ACT",
+      "channel": "SIGNED_DECREE",
+      "layer": "OFFICIAL_ACT_OR_CORRESPONDENCE",
+      "office": "Fiscalía Especial contra la Corrupción y la Criminalidad Organizada",
+      "official_reference": "EG 352/2025 / N.R. 1353 / decreto 19-09-2025",
+      "matter_references": ["EG 352/2025", "N.R. 1353"],
+      "public_summary": "Signed decree orders remittal to the Fiscalía de Área de Arrecife-Puerto del Rosario.",
+      "proof_level": "SIGNED_ACT_LOCATED_FULL_TEXT_MANUALLY_TRANSCRIBED_AND_VISUALLY_CHECKED",
+      "proves": ["The decree orders territorial remittal to Arrecife."],
+      "does_not_prove": ["Receiving-office incorporation, examination, merits acceptance or outcome."],
+      "source": {
+        "repository_anchor": "es/ministerio-fiscal/expedientes/eg-352-2025/",
+        "status": "PUBLIC_FULL_TEXT_SOURCE_DERIVATIVE_BINARY_PENDING"
+      },
+      "allocation_state": "PROCEEDING_LINKED",
+      "interconnectivity_scope": "OUTSIDE_JUDICIAL_PROCEEDING",
+      "master_ids": ["GC-FIS-015"],
+      "supporting_references": [],
+      "unresolved_matter_references": []
+    }
+  ],
+  "file_event_additions": {"GC-FIS-015": ["PD-SP-EVT-0158"]}
+}
