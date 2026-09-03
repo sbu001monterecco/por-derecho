@@ -1,0 +1,64 @@
+{
+  "manifest_id": "PD-PUB-MAT8584-20260903-01",
+  "title": "Matkator finca 8584 hotel-title / remate / restitution multitrack release",
+  "created": "2026-09-03",
+  "workspace": "PD-WS-20260902-0001",
+  "status": "READY_FOR_PR",
+  "public_routes": [
+    "/es/matkator-8584-titulo-hotel-remate-restitucion/",
+    "/en/matkator-8584-hotel-title-remate-restitution/"
+  ],
+  "dynamic_propagation": {
+    "loader": "assets/site.js",
+    "legacy_preserved_as": "assets/site-pre-matkator-8584-20260903.js",
+    "module": "assets/matkator-8584-hotel-title-multitrack-20260903.js",
+    "search_extension": "assets/matkator-8584-search-extension-20260903.js",
+    "target_families": [
+      "DP 748/2026",
+      "ETJ 163/2020",
+      "Cambiario 1048/2019",
+      "DP 552/2025 → DP 711/2025",
+      "Cuatrecasas",
+      "Concurso 36/2012 and appeals",
+      "ONA/funded exit",
+      "Acosta Matos/HNT/MYND",
+      "RIC/RICPE/incentives/FEDER",
+      "Fiscalia/public-authority/recovery pages",
+      "home and canonical search"
+    ]
+  },
+  "governance_files": [
+    "archive/MATKATOR_8584_REGULATED_HOTEL_TITLE_REMATE_RESTITUTION_UNITARY_CRIMINAL_CONTROL_03SEP2026.md",
+    "archive/CORRECTION_REGISTER_ADDENDUM_MATKATOR8584_03SEP2026.md",
+    "archive/MISSING_EVIDENCE_REGISTER_ADDENDUM_MATKATOR8584_03SEP2026.md",
+    "archive/PROCEEDINGS_INTERCONNECTIVITY_ADDENDUM_MATKATOR8584_03SEP2026.md",
+    "evidence/matkator/2026-09-03-finca-8584-hotel-title-remate-restitution.json",
+    "data/matkator-8584-cross-proceedings-map-20260903.json"
+  ],
+  "procedural_response_files": [
+    "docs/cuatrecasas/DP748/2026-09-03_DP748_HOTEL_TITLE_REMATE_RESTITUTION_RESPONSE_SOURCE_SAFE.md",
+    "docs/cuatrecasas/ETJ163/2026-09-03_ETJ163_HOTEL_TITLE_REMATE_RESTITUTION_RESPONSE_SOURCE_SAFE.md",
+    "docs/concurso36/2026-09-03_MATKATOR8584_EXTRACONCURSAL_TITLE_CONCURSAL_CONSEQUENCE_BRIDGE.md",
+    "docs/acosta-matos/2026-09-03_MATKATOR8584_ACOSTA_HNT_MULTITRACK_RIPPLE_CONTROL.md"
+  ],
+  "publication_boundaries": [
+    "No criminal guilt stated as fact",
+    "No completed adjudication or cession stated without source",
+    "Formal assignee remains unproved",
+    "CAM/HNT/Canarian Hospitality terminal-beneficiary proposition classified as evidence-based inference",
+    "Matkator title remains outside LPB estate",
+    "Adjudication mechanism not criminalised by itself",
+    "Counsel filing and email remain subject to counsel verification"
+  ],
+  "official_legal_context": [
+    "BOE-A-1995-12102",
+    "BOE-A-1960-10906",
+    "BOE-A-1995-25444",
+    "BOE-A-2000-323",
+    "BOE-A-1946-2453",
+    "BORME-C-2022-7271"
+  ],
+  "sitemap": "sitemap-matkator-8584-hotel-title.xml",
+  "robots_updated": true,
+  "live_verification": "PENDING_MERGE_AND_PAGES"
+}
