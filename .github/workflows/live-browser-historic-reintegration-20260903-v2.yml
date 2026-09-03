@@ -1,0 +1,30 @@
+name: Live browser historic reintegration 20260903 v2
+
+on:
+  push:
+    branches:
+      - verify/historic-proceedings-live-browser-20260903-v2
+    paths:
+      - '.github/workflows/live-browser-historic-reintegration-20260903-v2.yml'
+      - 'scripts/_verify_live_historic_reintegration_20260903_v2.mjs'
+
+permissions:
+  contents: read
+
+jobs:
+  chromium-live-release-smoke:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout verifier branch
+        uses: actions/checkout@v4
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Install Playwright Chromium
+        run: |
+          npm install --no-save playwright@1.55.0
+          npx playwright install --with-deps chromium
+      - name: Verify live public site in Chromium
+        run: node scripts/_verify_live_historic_reintegration_20260903_v2.mjs
