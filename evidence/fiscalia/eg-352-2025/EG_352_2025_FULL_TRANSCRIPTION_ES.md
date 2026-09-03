@@ -6,9 +6,9 @@
 **Notificación:** `PD-SP-EVT-0121` — 26 septiembre 2025  
 **Custodia:** `PD-SP-CUST-0001`  
 **Original privado SHA-256:** `4962e7457241141d936b2d9c1cde33189f0921ec238775e59a60485475a54a23`  
-**Derivado público redactado preparado SHA-256:** `e29710fe14e5611f0ea3936555a61821d5fdd0bfd3bb7a1b39159ff65ee54fe1`
+**Derivado público redactado preparado SHA-256:** `a255f7ffa8d6926b55826b27d77d7b4c392838ce046fd75408384ffcdd4f1980`
 
-Transcripción manual, página por página, comprobada visualmente contra el escaneo oficial de cuatro páginas. El extractor de Gmail no devolvió texto legible. No se utilizó OCR. Se conserva la literalidad de la fuente, incluidos errores tipográficos. La única redacción sustantiva practicada para la publicación pública preparada es el NIE del denunciante, conforme a la propia advertencia de disociación de datos personales de la resolución.
+Transcripción manual, página por página, comprobada visualmente contra el escaneo oficial de cuatro páginas. El extractor de Gmail no devolvió texto legible. No se utilizó OCR. Se conserva la literalidad de la fuente salvo la disociación pública del NIE y de la dirección privada de correo electrónico del denunciante, conforme a la propia advertencia de disociación de datos personales de la resolución. El original íntegro permanece bajo custodia privada.
 
 ## Página 1 — oficio de notificación
 
@@ -21,7 +21,7 @@ Expediente Gubernativo: 352/2025
 TENIENTE FISCAL
 
 Gil Marer  
-sbu001@monterecco.com
+[CORREO PRIVADO REDACTADO — dato conservado en el original privado]
 
 Por medio del presente, y en relación con su escrito registrado en esta Fiscalía Especial el 28 de julio de 2025, con número de registro al margen referenciado, le comunico lo acordado mediante decreto dictado el 19 de septiembre de 2025, cuya copia se adjunta al presente.
 
@@ -58,7 +58,7 @@ Expediente Gubernativo: 352/2025
 
 ### I. ANTECEDENTES
 
-Gil Marer, NIE [REDACTADO — dato conservado en el original privado], desde la dirección de correo electrónico sbu001@monterecco.com, presenta una denuncia ante esta Fiscalía contra FTI TOURISTIK en Alemania, MEETING POINT HOTELS y HOTEL NEW TREND en España, por unos hechos que considera que pudieran ser constitutivos de delito, relacionados con la usurpación y comercialización encubierta de activos -HOTEL SUN PARK- bajo protección judicial, desvío de ingresos y obtención fraudulenta de financiación pública en Playa Blanco, Lanzarote.
+Gil Marer, NIE [REDACTADO — dato conservado en el original privado], desde la dirección de correo electrónico [CORREO PRIVADO REDACTADO — dato conservado en el original privado], presenta una denuncia ante esta Fiscalía contra FTI TOURISTIK en Alemania, MEETING POINT HOTELS y HOTEL NEW TREND en España, por unos hechos que considera que pudieran ser constitutivos de delito, relacionados con la usurpación y comercialización encubierta de activos -HOTEL SUN PARK- bajo protección judicial, desvío de ingresos y obtención fraudulenta de financiación pública en Playa Blanca, Lanzarote.
 
 ### II. FUNDAMENTOS JURÍDICOS
 
