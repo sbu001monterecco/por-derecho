@@ -1,0 +1,133 @@
+name: Reconcile proceedings smoke 20260903
+
+on:
+  push:
+    branches:
+      - ministerio-fiscal-fulltext-audit-20260903
+    paths:
+      - '.github/workflows/reconcile-proceedings-smoke-20260903.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  reconcile:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Check out branch
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          ref: ministerio-fiscal-fulltext-audit-20260903
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
+        with:
+          python-version: '3.12'
+
+      - name: Set up Node
+        uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020
+        with:
+          node-version: '22'
+
+      - name: Reconcile stale proceedings smoke denominators
+        shell: python
+        run: |
+          from pathlib import Path
+          path = Path('scripts/smoke_proceedings_case_prism.mjs')
+          text = path.read_text(encoding='utf-8')
+          replacements = {
+            "headlineFinite: '97 of 97'": "headlineFinite: '106 of 106'",
+            "headlineFinite: '97 de 97'": "headlineFinite: '106 de 106'",
+            "getAttribute('data-audit-count') !== '96'": "getAttribute('data-audit-count') !== '105'",
+            "audited finite-test denominator to 96/97": "audited finite-test denominator to 105/106",
+            "publicRecords.length !== 121": "publicRecords.length !== 130",
+            "expected 121 controlled public records": "expected 130 controlled public records",
+            "exactIds.length !== 97": "exactIds.length !== 106",
+            "expected 97 exact public proceedings after aggregate-family repair": "expected 106 exact public proceedings after aggregate-family repair",
+            "public_exact_proceeding_count: 97": "public_exact_proceeding_count: 106",
+            "case_prism_exact_proceeding_covered_count: 43": "case_prism_exact_proceeding_covered_count: 45",
+            "case_prism_exact_proceeding_uncovered_count: 54": "case_prism_exact_proceeding_uncovered_count: 61",
+            "decision_dependency_exact_coverage: 'VERIFIED_97_OF_97'": "decision_dependency_exact_coverage: 'VERIFIED_106_OF_106'",
+            "shared_case_prism_proposition_membership_coverage: 'GAP_43_OF_97'": "shared_case_prism_proposition_membership_coverage: 'GAP_45_OF_106'",
+            "exact_file_decision_dependency_actionability_count: 97": "exact_file_decision_dependency_actionability_count: 106",
+            "exact_file_decision_dependency_actionability_coverage: 'VERIFIED_97_OF_97'": "exact_file_decision_dependency_actionability_coverage: 'VERIFIED_106_OF_106'",
+            "exact_proceeding_full_finite_test_count: 97": "exact_proceeding_full_finite_test_count: 106",
+            "exact_proceeding_full_finite_test_coverage: 'VERIFIED_97_OF_97'": "exact_proceeding_full_finite_test_coverage: 'VERIFIED_106_OF_106'",
+            "receipt_knowledge_classification_count: 97": "receipt_knowledge_classification_count: 106",
+            "receipt_knowledge_classification_coverage: 'VERIFIED_97_OF_97'": "receipt_knowledge_classification_coverage: 'VERIFIED_106_OF_106'",
+            "receipt_knowledge_axis_provenance_count: 97": "receipt_knowledge_axis_provenance_count: 106",
+            "receipt_knowledge_axis_provenance_coverage: 'VERIFIED_97_OF_97'": "receipt_knowledge_axis_provenance_coverage: 'VERIFIED_106_OF_106'",
+            "fiscalia_office_file_matrix_count: 24": "fiscalia_office_file_matrix_count: 26",
+            "fiscalia_office_file_matrix_coverage: 'VERIFIED_24_OF_24'": "fiscalia_office_file_matrix_coverage: 'VERIFIED_26_OF_26'",
+            "fiscalia_office_file_matrix_substantive_column_count: 24": "fiscalia_office_file_matrix_substantive_column_count: 26",
+            "fiscalia_office_file_matrix_substantive_column_coverage: 'VERIFIED_24_OF_24'": "fiscalia_office_file_matrix_substantive_column_coverage: 'VERIFIED_26_OF_26'",
+            "fiscalia_office_file_matrix_exact_count: 21": "fiscalia_office_file_matrix_exact_count: 23",
+            "controlled_trace_route_count: 97": "controlled_trace_route_count: 106",
+            "controlled_isolation_route_count: 97": "controlled_isolation_route_count: 106",
+            "controlled_navigation_coverage: 'VERIFIED_97_OF_97'": "controlled_navigation_coverage: 'VERIFIED_106_OF_106'",
+            "prismCoveredIds.size !== 43": "prismCoveredIds.size !== 45",
+            "exactIds.length - prismCoveredIds.size !== 54": "exactIds.length - prismCoveredIds.size !== 61",
+            "!staticPrismText.includes('43')": "!staticPrismText.includes('45')",
+            "!staticPrismText.includes('54')": "!staticPrismText.includes('61')",
+            "misstates the 43/97 shared-proposition denominator": "misstates the 45/106 shared-proposition denominator",
+            "getAttribute('data-shared-proposition-count') !== '43'": "getAttribute('data-shared-proposition-count') !== '45'",
+            "distinguish 97/97 actionability from 43/97 shared-proposition membership": "distinguish 106/106 actionability from 45/106 shared-proposition membership",
+            "matrix detail must precede the 97-file register": "matrix detail must precede the 106-file register",
+            "status === 'covered').length !== 43": "status === 'covered').length !== 45",
+            "status === 'unresolved').length !== 54": "status === 'unresolved').length !== 61",
+            "must remain 43 covered / 54 unresolved": "must remain 45 covered / 61 unresolved",
+            "coverageText.includes(`43/${exactIds.length}`)": "coverageText.includes(`45/${exactIds.length}`)",
+            "!coverageText.includes('54')": "!coverageText.includes('61')",
+            "finite 43/97 Case Prism content denominator": "finite 45/106 Case Prism content denominator",
+            "getAttribute('data-audit-count') !== '97'": "getAttribute('data-audit-count') !== '106'",
+            "distinguish 97 audited models from nine files": "distinguish 106 audited models from nine files",
+            "!finiteCoverageText.includes('97/97')": "!finiteCoverageText.includes('106/106')",
+            "finiteOptionCoverage.length !== 97": "finiteOptionCoverage.length !== 106",
+            "all 97 exact options": "all 106 exact options",
+            "renderedMasterIds.length !== 121": "renderedMasterIds.length !== 130",
+            "Master Register must render 121 controlled public rows": "Master Register must render 130 controlled public rows",
+          }
+          for old, new in replacements.items():
+              if old not in text:
+                  raise SystemExit(f'Expected stale smoke token not found: {old}')
+              text = text.replace(old, new, 1)
+          path.write_text(text, encoding='utf-8')
+
+      - name: Validate deterministic proceedings data
+        run: |
+          python scripts/build_public_proceedings_projection.py --check
+          python scripts/build_proceedings_case_prism_v2.py --check
+          python scripts/build_proceedings_interlinkability_v1.py --check
+          python scripts/audit_proceedings_interconnectivity_map.py
+          node --check scripts/smoke_proceedings_case_prism.mjs
+
+      - name: Install Playwright Chromium
+        run: |
+          npm install --no-save playwright@1.50.1
+          npx playwright install --with-deps chromium
+
+      - name: Serve production subpath and run full browser smoke
+        env:
+          PSR_BASE_URL: http://127.0.0.1:8000/por-derecho
+        run: |
+          mkdir -p /tmp/psr-proceedings-site/por-derecho
+          cp -a . /tmp/psr-proceedings-site/por-derecho/
+          cd /tmp/psr-proceedings-site
+          python3 -m http.server 8000 --bind 127.0.0.1 > /tmp/psr-proceedings-http.log 2>&1 &
+          for i in $(seq 1 30); do
+            if curl -fsS http://127.0.0.1:8000/por-derecho/en/proceedings-map/ >/dev/null; then break; fi
+            sleep 1
+          done
+          cd "$GITHUB_WORKSPACE"
+          node scripts/smoke_proceedings_case_prism.mjs
+
+      - name: Commit permanent smoke repair only
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add scripts/smoke_proceedings_case_prism.mjs
+          if git diff --cached --quiet; then exit 1; fi
+          git commit -m 'Reconcile proceedings browser smoke denominators'
+          git push origin HEAD:ministerio-fiscal-fulltext-audit-20260903
