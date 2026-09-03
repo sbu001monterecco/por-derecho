@@ -6,27 +6,13 @@
     "master_id": "GC-CIV-003",
     "reference": "Diligencias Preliminares 1041/2017",
     "nig": "3501642120170028407",
-    "court": {
-      "name": "Juzgado de Primera Instancia nº 2 de Las Palmas de Gran Canaria",
-      "id": "PD-SP-I-0048"
-    },
-    "judge": {
-      "name": "Juan Avello Formoso",
-      "id": "PD-SP-P-0124",
-      "state": "CARET_CONFIRMED"
-    },
-    "laj": {
-      "name": "Fernando Pérez Polo",
-      "id": "PD-SP-P-0165",
-      "state": "CARET_CONFIRMED"
-    }
+    "court": {"name": "Juzgado de Primera Instancia nº 2 de Las Palmas de Gran Canaria", "id": "PD-SP-I-0048"},
+    "judge": {"name": "Juan Avello Formoso", "id": "PD-SP-P-0124", "state": "CARET_CONFIRMED"},
+    "laj": {"name": "Fernando Pérez Polo", "id": "PD-SP-P-0165", "state": "CARET_CONFIRMED"}
   },
   "historic_docket_state": "OPEN_NOT_CERTIFIED_COMPLETE",
-  "publication_boundary": "CONNECTED_SOURCE_LOCATORS_AND_NATIVE_DOCKET_FILES_WITHHELD",
-  "deprecated_identity": {
-    "id": "LZ-CIV-050",
-    "state": "REMOVED_DO_NOT_RECREATE"
-  },
+  "publication_boundary": "CONNECTED_SOURCE_LOCATORS_RAW_PRIVATE_EMAILS_AND_NATIVE_DOCKET_FILES_WITHHELD",
+  "deprecated_identity": {"id": "LZ-CIV-050", "state": "REMOVED_DO_NOT_RECREATE"},
   "verified_acts": [
     {
       "act_id": "GC-CIV-003-ACT-20171219-AUTO",
@@ -45,10 +31,7 @@
       "caucion_eur": 100,
       "judge_signature": "Juan Avello Formoso — 2017-12-19 11:11:51",
       "laj_signature": "Fernando Pérez Polo — 2017-12-19 11:11:51",
-      "finality": {
-        "state": "PRIMARY_SOURCE_CONFIRMED_FOR_THIS_ACT_ONLY",
-        "basis": "Auto expressly states that it is final and that no appeal lies under article 258.2 LEC"
-      }
+      "finality": {"state": "PRIMARY_SOURCE_CONFIRMED_FOR_THIS_ACT_ONLY", "basis": "Auto expressly states that it is final and that no appeal lies under article 258.2 LEC"}
     },
     {
       "act_id": "GC-CIV-003-ACT-20180112-PROVIDENCIA",
@@ -67,13 +50,51 @@
       "source_filename": "diligencia 23 enero 2018.pdf",
       "laj": "Fernando Pérez Polo",
       "electronic_signature": "2018-01-24 09:35:00",
-      "service_finding": {
-        "state": "PRIMARY_SOURCE_CONFIRMED",
-        "scne_result": "POSITIVO",
-        "respondent_cited_and_required_date": "2018-01-18",
-        "respondent": "Construcciones Acosta Matos, S.A.",
-        "scope_boundary": "Does not prove service of later February/March acts"
-      }
+      "service_finding": {"state": "PRIMARY_SOURCE_CONFIRMED", "scne_result": "POSITIVO", "respondent_cited_and_required_date": "2018-01-18", "respondent": "Construcciones Acosta Matos, S.A.", "scope_boundary": "Does not prove service of later February/March acts"}
+    },
+    {
+      "act_id": "GC-CIV-003-ACT-20180305-DECRETO-139-2018",
+      "date": "2018-03-05",
+      "type": "DECRETO",
+      "number": "000139/2018",
+      "source_class": "PRIMARY_ELECTRONIC_JUDICIAL_ACT",
+      "source_filename": "Documento N 11 - Decreto 5 de marzo.pdf",
+      "proceeding_reference": "0001041/2017",
+      "nig": "3501642120170028407",
+      "laj": "Fernando Pérez Polo",
+      "electronic_signature": "2018-03-06 09:51:31",
+      "findings": {
+        "lpb_requested_discontinuance": true,
+        "opposing_party_non_opposition_and_consent": true,
+        "opposing_party_filing_date": "2018-02-25",
+        "opposing_party_filing_register": "1222/18",
+        "dismissal_basis": "Article 20.3 LEC",
+        "pending_hearing_suspended": "2018-04-25 11:15"
+      },
+      "review": {"state": "EXPRESSLY_AVAILABLE", "type": "recurso de revisión", "period": "five days"},
+      "finality": {"state": "SOURCE_GAP", "basis": "Availability of review means decree finality cannot be inferred without service/review/finality evidence"},
+      "authorship_boundary": "Decree attributes the discontinuance request to LPB as party; it does not identify the natural person who drafted, signed or filed LPB's request"
+    }
+  ],
+  "primary_communications": [
+    {
+      "event_id": "GC-CIV-003-COMM-20180125-AC-REPRESENTATION",
+      "date": "2018-01-25",
+      "source_class": "PRIMARY_CONTEMPORANEOUS_COMMUNICATION",
+      "sender": "Francisco de Borja Rodríguez-Batllori",
+      "sender_capacity_asserted_in_source": "administrador concursal / liquidador",
+      "recipient_reference": "Cristo Pimentel",
+      "propositions": [
+        "requests venia",
+        "communicates termination of the existing professional relationship with LPB",
+        "instructs the procurador not to file further papers in the preliminary diligence without the AC's express consent"
+      ],
+      "publication_boundary": "RAW_PRIVATE_EMAIL_NOT_REPUBLISHED",
+      "inference_boundary": [
+        "does not prove the AC personally authored or filed LPB's later discontinuance request",
+        "does not by itself prove illegality, criminal intent or corrupt coordination",
+        "does not identify any private-perimeter person as giving instructions to the AC"
+      ]
     }
   ],
   "party_filings": [
@@ -89,68 +110,78 @@
       "notice_asserted_in_filing": "2018-01-18 notice of 12-Jan Providencia, 19-Dec Auto, initiating application and documents",
       "date_state": "DATE_NOT_LOCKED_FROM_EXPLICIT_DATE_LINE_IN_CONNECTED_EXTRACT",
       "authorship_boundary": "PARTY_FILING_NO_JUDICIAL_AUTHORSHIP_INFERRED"
+    },
+    {
+      "act_id": "GC-CIV-003-PARTY-CAM-20180225-1222-18",
+      "date": "2018-02-25",
+      "register": "1222/18",
+      "state": "EXISTENCE_AND_CHARACTER_CONFIRMED_VIA_PRIMARY_DECRETO_TEXT_ONLY",
+      "character": "opposing party did not oppose and consented/conformed to LPB discontinuance",
+      "source_gap": "standalone primary filing text not yet recovered"
     }
   ],
   "closure_trace": {
     "date": "2018-03-05",
-    "type": "DECRETO_DE_ARCHIVO",
-    "state": "STRONGLY_TRACED_PRIMARY_FILE_STILL_TO_RECOVER",
-    "trace_source": "Denuncia Fiscalía Desahucio 19ENE2026 annex list",
-    "not_primary_proven": [
-      "who precisely requested archive",
-      "procedural basis of the archive request",
-      "exact decree reasoning",
+    "type": "DECRETO_000139_2018",
+    "state": "PRIMARY_SOURCE_RECOVERED_AND_READ",
+    "primary_source": "Documento N 11 - Decreto 5 de marzo.pdf",
+    "confirmed": [
+      "LPB as party requested discontinuance",
+      "CAM/opposing party did not oppose and consented via 25-Feb-2018 filing register 1222/18",
+      "dismissal under article 20.3 LEC",
+      "25-Apr-2018 11:15 hearing suspended",
+      "recurso de revisión available within five days"
+    ],
+    "still_not_primary_proven": [
+      "natural person who drafted/signed/filed LPB discontinuance",
+      "exact authority/power relied on for LPB discontinuance",
       "service or notification of the decree",
+      "whether review was filed",
       "finality of the closure sequence"
     ]
   },
+  "criminal_first_publication": {
+    "state": "PUBLISHED_AS_GIL_MARER_INVESTIGATIVE_ALLEGATION_NOT_JUDICIAL_FINDING",
+    "standalone_hypothesis": "Investigate whether the documented AC intervention in LPB representation/procedural control and the later LPB discontinuance constituted unlawful procedural instrumentalisation",
+    "unitary_context_hypothesis": "Gil Marer alleges the episode should also be tested within a wider before-during-after-concurso pattern potentially functionally favourable to the private Molina/Montalanza-Molina to Acosta Matos perimeter",
+    "potential_benefit_boundary": "Potential CAM benefit is framed only as termination of the judicial mechanism aimed at obtaining assignment economics if equivalent disclosure had not already occurred",
+    "not_proved": [
+      "criminal intent",
+      "common design or concert",
+      "personal authorship of LPB discontinuance by the AC",
+      "instruction or participation by any named private-perimeter individual",
+      "individual private benefit",
+      "whether equivalent disclosure had already occurred"
+    ]
+  },
   "gaps": [
-    {
-      "gap_id": "GC-CIV-003-GAP-DOCKET",
-      "state": "SOURCE_GAP",
-      "description": "Complete docket / certified index"
-    },
-    {
-      "gap_id": "GC-CIV-003-GAP-20180219",
-      "state": "SOURCE_GAP",
-      "description": "Actual 19-Feb-2018 appearance/production result"
-    },
-    {
-      "gap_id": "GC-CIV-003-GAP-20180305-DECREE",
-      "state": "STRONGLY_TRACED_PRIMARY_FILE_STILL_TO_RECOVER",
-      "description": "Standalone primary Decreto de archivo de 05/03/2018"
-    },
-    {
-      "gap_id": "GC-CIV-003-GAP-ARCHIVE-REQUEST",
-      "state": "SOURCE_GAP",
-      "description": "Original archive/desistimiento/request filing and exact procedural authority"
-    },
-    {
-      "gap_id": "GC-CIV-003-GAP-CLOSURE-SERVICE",
-      "state": "SOURCE_GAP",
-      "description": "Service/notification of the 5-Mar decree"
-    },
-    {
-      "gap_id": "GC-CIV-003-GAP-CLOSURE-FINALITY",
-      "state": "SOURCE_GAP",
-      "description": "Finality of the closure sequence"
-    }
+    {"gap_id": "GC-CIV-003-GAP-DOCKET", "state": "SOURCE_GAP", "description": "Complete docket / certified index"},
+    {"gap_id": "GC-CIV-003-GAP-20180219", "state": "SOURCE_GAP", "description": "Actual 19-Feb-2018 appearance/production result and intervening rescheduling act leading to 25-Apr hearing"},
+    {"gap_id": "GC-CIV-003-GAP-ARCHIVE-REQUEST", "state": "SOURCE_GAP", "description": "Original LPB discontinuance filing, exact wording, natural-person author/filer and procedural authority/power"},
+    {"gap_id": "GC-CIV-003-GAP-CAM-1222-18", "state": "SOURCE_GAP", "description": "Standalone primary text of CAM 25-Feb-2018 filing register 1222/18"},
+    {"gap_id": "GC-CIV-003-GAP-CLOSURE-SERVICE", "state": "SOURCE_GAP", "description": "Service/notification of the 5-Mar decree"},
+    {"gap_id": "GC-CIV-003-GAP-CLOSURE-REVIEW", "state": "SOURCE_GAP", "description": "Whether recurso de revisión was filed or resolved"},
+    {"gap_id": "GC-CIV-003-GAP-CLOSURE-FINALITY", "state": "SOURCE_GAP", "description": "Finality of the closure sequence"}
   ],
   "closed_gaps": [
     "Preceding signed 19-Dec-2017 Auto",
     "Finality of the 19-Dec-2017 Auto only",
     "Positive CAM citation/requerimiento on 18-Jan-2018",
-    "CAM appearance/opposition"
+    "CAM appearance/opposition",
+    "Standalone primary 5-Mar-2018 Decree 000139/2018 recovered/read",
+    "LPB party-level discontinuance request confirmed by primary Decree",
+    "CAM party-level non-opposition/consent via filing 1222/18 confirmed by primary Decree"
   ],
   "targeted_recovery_20260903": {
-    "drive": "No standalone 19-Feb result or 5-Mar decree surfaced in targeted exact/near-exact searches or the DILIGENCIA PRELIMINAR / TANTEO Y RETRACTO source folders",
-    "gmail": "No exact case-number hit around 19-Feb or 5-Mar; no date/actor-scoped 5-Mar result",
-    "secondary_lead": "A legacy 2020 litigation spreadsheet reports an archive after CAM appeared but misidentifies the court as Arrecife; retained only as a recovery lead"
+    "standalone_decree": "RECOVERED from Javier Sixto 23-Apr-2025 filing transmission as standalone attachment Documento N 11 - Decreto 5 de marzo.pdf and visually/source-checked",
+    "drive": "Targeted folders did not contain standalone discontinuance filing, CAM 1222/18 standalone text, actual 19-Feb result or closure service/finality",
+    "gmail": "Contemporaneous 25-Jan-2018 AC communication recovered; exact LPB discontinuance filing not recovered",
+    "secondary_lead": "Legacy 2020 spreadsheet remains secondary only and does not override primary court identity or establish missing authorship/finality"
   },
   "next_p0": [
-    "actual 19-Feb-2018 act/result",
-    "standalone 5-Mar-2018 decree",
-    "underlying archive/desistimiento request",
-    "service and finality of closure sequence"
+    "actual 19-Feb-2018 act/result and intervening rescheduling act",
+    "original LPB discontinuance filing and authority/power basis",
+    "standalone CAM 25-Feb-2018 filing 1222/18",
+    "service, review and finality of closure sequence"
   ]
 }
