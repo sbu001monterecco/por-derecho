@@ -1,0 +1,146 @@
+{
+  "schema": "por-derecho.la-laguna-concurso-public-bridge.v1",
+  "control_id": "PD-LALAGUNA-CONCURSO-BRIDGE-20260903",
+  "as_of": "2026-09-03",
+  "status": "PUBLIC_SOURCE_FIRST_INTERCONNECTION_ACTIVE",
+  "governance": [
+    "ANTI_CONFLATION_IS_NOT_ANTI_CONNECTIVITY",
+    "DO_NOT_CONFLATE_DO_CONNECT",
+    "ESTAFA_PROCESAL_ALLEGATION_NOT_FINDING",
+    "CONCURSAL_EFFECT_HYPOTHESIS_SOURCE_GAP",
+    "FUTURE_UNFILED_ARGUMENTS_NOT_PUBLIC_BEFORE_FILING"
+  ],
+  "public_routes": {
+    "es": "/es/la-laguna-concurso-mapa-2026/",
+    "en": "/en/la-laguna-concurso-map-2026/"
+  },
+  "directly_proved_procedural_lineage": [
+    {
+      "reference": "Juicio Cambiario 1048/2019",
+      "master_id": "TF-CIV-001",
+      "nig": "3802342120190009565",
+      "relationship": "CIVIL_TITLE_ORIGIN"
+    },
+    {
+      "reference": "ETJ 163/2020",
+      "master_id": "TF-CIV-002",
+      "nig": "3802342120190009565",
+      "relationship": "ENFORCEMENT_OF_CAMBIARIO_TITLE"
+    },
+    {
+      "reference": "DP 748/2026",
+      "master_id": "TF-CRI-003",
+      "caepr_id": "PD-SP-R-0003",
+      "nig": "3802343220260002351",
+      "relationship": "LEGALLY_DISTINCT_CRIMINAL_LANE_FACTUALLY_AND_EVIDENTIALLY_LINKED_WHERE_PRIMARY_SOURCES_ESTABLISH_BRIDGE"
+    }
+  ],
+  "recent_primary_source_cluster": [
+    {
+      "control_id": "PD-DP748-ACT-004",
+      "date": "2026-07-16",
+      "received": "2026-09-01",
+      "public_source_es": "/docs/cuatrecasas/DP748/2026-09-01_auto_16jul2026_fulltext_source_safe.md",
+      "public_source_en": "/docs/cuatrecasas/DP748/2026-09-01_order_16jul2026_fulltext_en.md",
+      "locked_propositions": [
+        "ORIGINAL_DISMISSAL_LACKED_CONCRETE_REASONING",
+        "PROVISIONAL_DISMISSAL_MAINTAINED",
+        "EXACT_ACT_CONCRETE_ASSET_AND_MINIMUM_CRIMINAL_INDICIUM_HELD_INSUFFICIENTLY_SPECIFIED",
+        "REOPENING_WITH_OTHER_INDICIA_EXPRESSLY_PRESERVED",
+        "ORDER_STATES_NOT_FINAL_AND_FIVE_DAY_APPEAL_ROUTE"
+      ]
+    },
+    {
+      "control_id": "PD-ETJ163-FIL-20260903",
+      "date": "2026-09-03",
+      "public_source_es": "/docs/cuatrecasas/ETJ163/2026-09-03_cuatrecasas_impugnacion_reposicion_fulltext_source_safe.md",
+      "public_source_en": "/docs/cuatrecasas/ETJ163/2026-09-03_cuatrecasas_opposition_fulltext_en.md",
+      "locked_propositions": [
+        "CUATRECASAS_EXPRESSLY_REFERENCES_DP748",
+        "CAMBIARIO_TITLE_IDENTIFIED_AS_ENFORCEMENT_TITLE",
+        "FINCA_8584_IDENTIFIED_AS_AUCTIONED_PROPERTY",
+        "MATKATOR_STATED_AS_REGISTERED_OWNER",
+        "PHYSICAL_TRANSFORMATION_ACKNOWLEDGED_BUT_DENIED_SUSPENSIVE_RELEVANCE",
+        "ADJUDICATION_DESCRIBED_AS_IMMEDIATELY_PENDING",
+        "POWER_TO_ASSIGN_REMATE_TO_THIRD_PARTY_REQUESTED"
+      ],
+      "boundary": "DOES_NOT_PROVE_COMPLETED_ASSIGNMENT_ASSIGNEE_IDENTITY_FRAUD_DECEPTION_OR_CRIMINAL_INTENT"
+    }
+  ],
+  "procedural_fraud_public_allegation": {
+    "source": "Matkator nullity filing dated 2025-05-05 in Cambiario 1048/2019",
+    "classification": "PARTY_ALLEGATION_NOT_JUDICIAL_FINDING",
+    "public_summary": "The filed nullity application alleges that the Cambiario proceeded toward service by edict while Cuatrecasas possessed direct contact routes to Matkator's administrator and continued debt communications, raising an alleged title-formation/defence issue.",
+    "primary_source_checks_required": [
+      "ORIGINAL_CAMBIARIO_CLAIM",
+      "COMPLETE_LOCALISATION_AND_SERVICE_RECORD",
+      "REQUEST_FOR_SERVICE_BY_EDICT",
+      "ORDER_AUTHORISING_SERVICE_BY_EDICT",
+      "CONTACT_INFORMATION_ACTUALLY_DISCLOSED_TO_COURT"
+    ]
+  },
+  "counter_evidence": [
+    "GENUINE_UNPAID_PROFESSIONAL_FEES_DOCUMENTED",
+    "2018_11_22_PROMISSORY_NOTES_DESCRIBED_AS_COVERING_PENDING_INVOICES_AND_INCURRED_COSTS",
+    "DIRECT_COLLECTION_AND_SETTLEMENT_EFFORTS_DOCUMENTED",
+    "DO_NOT_PUBLISH_NO_DEBT_THEORY_AS_FACT"
+  ],
+  "professional_and_hotel_bridge": {
+    "status": "STRONGLY_SOURCE_SUPPORTED",
+    "propositions": [
+      "CUATRECASAS_ACTED_IN_CONCURSO_36_2012",
+      "CUATRECASAS_KNEW_AWESWELL_LUCHY_MATKATOR_OWNERSHIP_STRUCTURE",
+      "CUATRECASAS_PRODUCED_HOTEL_AND_FINANCING_DUE_DILIGENCE_AND_RESCUE_MATERIAL",
+      "CUATRECASAS_RECEIVED_HOTEL_PLANS_VALUATION_AND_PHYSICAL_STATE_INFORMATION",
+      "2019_CUATRECASAS_DESCRIBED_CONCURSO_WORK_AS_POTENTIALLY_HELPING_SAVE_THE_COMPLEX"
+    ],
+    "boundary": "FACTUAL_PROFESSIONAL_AND_ECONOMIC_CONNECTIVITY_DOES_NOT_COLLAPSE_LEGAL_PERSONALITIES_ESTATES_OR_JURISDICTIONS"
+  },
+  "possible_concursal_effect_chain": [
+    {
+      "step": "CUATRECASAS_ENFORCEMENT_TO_POSSIBLE_LOSS_OF_FINCA_8584",
+      "grade": "DIRECTLY_PROVED_AS_CURRENT_PROCEDURAL_RISK"
+    },
+    {
+      "step": "LOSS_OF_FINCA_8584_TO_WEAKENING_OF_AWESWELL_MATKATOR_HOTEL_POSITION",
+      "grade": "PLAUSIBLE_BUT_UNPROVED"
+    },
+    {
+      "step": "ETJ_RESULT_TO_CONSOLIDATION_OF_CURRENT_HOTEL_CONTROL_PERIMETER",
+      "grade": "SOURCE_GAP"
+    },
+    {
+      "step": "BENEFIT_TO_ACOSTA_MATOS_HNT_OR_RELATED_PERIMETER",
+      "grade": "SOURCE_GAP"
+    },
+    {
+      "step": "ETJ_RESULT_TO_DIRECT_EFFECT_IN_OR_AROUND_CONCURSO_36_2012",
+      "grade": "PLAUSIBLE_CAUSAL_HYPOTHESIS_DIRECT_ESTATE_EFFECT_UNPROVED"
+    },
+    {
+      "step": "COORDINATION_OR_SHARED_CRIMINAL_PURPOSE",
+      "grade": "NOT_PROVED_DO_NOT_INFER_FROM_ALIGNED_OUTCOMES"
+    }
+  ],
+  "express_non_claims": [
+    "ETJ_163_2020_IS_NOT_DESCRIBED_AS_LEGALLY_INSIDE_CONCURSO_36_2012",
+    "FINCA_8584_IS_NOT_DESCRIBED_AS_LPB_INSOLVENCY_ESTATE_PROPERTY_WITHOUT_SOURCE",
+    "NO_ACOSTA_MATOS_HNT_OR_OTHER_ENTITY_IS_IDENTIFIED_AS_ASSIGNEE_OR_BENEFICIARY_WITHOUT_PRIMARY_SOURCE",
+    "NO_COORDINATION_OR_CRIMINAL_INTENT_IS_INFERRED_FROM_TIMING_ALIGNMENT_OR_COMMON_ECONOMIC_EFFECT"
+  ],
+  "publication_boundary": {
+    "publish": [
+      "FILED_OR_RECEIVED_PRIMARY_SOURCES",
+      "CURRENT_PROCEDURAL_STATUS",
+      "SOURCE_CONTROLLED_INTERCONNECTIONS",
+      "PARTY_ALLEGATIONS_WITH_CLEAR_ATTRIBUTION",
+      "COUNTER_EVIDENCE",
+      "GRADED_SOURCE_GAPS"
+    ],
+    "withhold_until_filed": [
+      "CONCRETE_ARGUMENTATION_OF_FUTURE_APPEAL_OR_ETJ_RESPONSE",
+      "UNFILED_TACTICAL_PRIORITIES",
+      "UNPRESENTED_DOCUMENT_DEPLOYMENT_SEQUENCE"
+    ]
+  }
+}
