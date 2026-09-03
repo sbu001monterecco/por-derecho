@@ -1,0 +1,34 @@
+name: Live browser GC-CIV-003 primary source 20260903
+
+on:
+  push:
+    branches:
+      - verify/gc-civ-003-primary-source-live-20260903
+    paths:
+      - '.github/workflows/live-browser-gc-civ-003-primary-source-20260903.yml'
+      - 'scripts/_verify_live_gc_civ_003_primary_source_20260903.mjs'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  chromium-live-gc-civ-003:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout disposable verifier branch
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install Playwright
+        run: |
+          npm install --no-save playwright@1.55.0
+          npx playwright install --with-deps chromium
+
+      - name: Verify deployed GC-CIV-003 source state in Chromium
+        run: node scripts/_verify_live_gc_civ_003_primary_source_20260903.mjs
