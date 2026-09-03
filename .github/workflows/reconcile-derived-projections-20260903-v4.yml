@@ -1,0 +1,75 @@
+name: Reconcile derived projections 20260903 v4
+
+on:
+  push:
+    branches:
+      - ministerio-fiscal-fulltext-audit-20260903
+    paths:
+      - '.github/workflows/reconcile-derived-projections-20260903-v4.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  reconcile:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Check out branch
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          ref: ministerio-fiscal-fulltext-audit-20260903
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
+        with:
+          python-version: '3.12'
+
+      - name: Reconcile stale Fiscalía browser denominator
+        shell: python
+        run: |
+          from pathlib import Path
+          path = Path('scripts/smoke_fiscalia_proceedings_interconnectivity.mjs')
+          text = path.read_text(encoding='utf-8')
+          replacements = {
+              "data.coverage.fiscalia_exact_files !== 21 || data.coverage.fiscalia_unresolved_references !== 3": "data.coverage.fiscalia_exact_files !== 23 || data.coverage.fiscalia_unresolved_references !== 3",
+              "Fiscalía identity denominator is not 21 + 3": "Fiscalía identity denominator is not 23 + 3",
+              "page.locator('[data-mf-files] [data-file]').count() !== 25": "page.locator('[data-mf-files] [data-file]').count() !== 27",
+              "expected all + 24 file controls": "expected all + 26 file controls",
+          }
+          for old, new in replacements.items():
+              if old not in text:
+                  raise SystemExit(f'Expected stale smoke constant not found: {old}')
+              text = text.replace(old, new, 1)
+          path.write_text(text, encoding='utf-8')
+
+      - name: Regenerate deterministic projections
+        run: |
+          python scripts/build_proceedings_interlinkability_v1.py
+          python scripts/build_community_acta_authority_interconnectivity.py
+
+      - name: Validate regenerated projections and Fiscalía denominator
+        run: |
+          python scripts/build_proceedings_interlinkability_v1.py --check
+          python scripts/build_community_acta_authority_interconnectivity.py --check
+          python scripts/validate_community_acta_authority_interconnectivity.py
+          python -m unittest -v scripts/test_build_community_acta_authority_interconnectivity.py
+          python scripts/build_fiscalia_proceedings_interconnectivity.py --check
+          python scripts/validate_fiscalia_proceedings_interconnectivity.py
+          python -m unittest -v scripts/test_build_fiscalia_proceedings_interconnectivity.py
+          node --check scripts/smoke_fiscalia_proceedings_interconnectivity.mjs
+
+      - name: Commit reconciled permanent files only
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add assets/data/proceedings-interlinkability-v1.json \
+                  assets/data/community-acta-authority-interconnectivity-v1.json \
+                  scripts/smoke_fiscalia_proceedings_interconnectivity.mjs
+          if git diff --cached --quiet; then
+            echo 'No reconciliation changes were produced.'
+            exit 1
+          fi
+          git commit -m 'Reconcile derived interconnectivity projections'
+          git push origin HEAD:ministerio-fiscal-fulltext-audit-20260903
