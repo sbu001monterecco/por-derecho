@@ -1,0 +1,52 @@
+{
+  "schema_version": "1.0",
+  "record_id": "PD-ONA-FX-20260903-02",
+  "record_date": "2026-09-03",
+  "matter": "Sun Park / Luchy Playa Blanca SLU / Concurso 36/2012",
+  "supplements": "PD-ONA-FX-20260826-01",
+  "publication_boundary": "Underlying acts/effects may be documented or judicially found; deliberate sabotage, concert and criminal liability remain attributed allegations unless finally adjudicated.",
+  "nodes": [
+    {"id":"ONA-FX-010","date":"2018-06-06","type":"DOCUMENTED_FACT","label":"Signed operator + €26m exit/LOI + ECO valuation + DD + term-sheet package"},
+    {"id":"ONA-FX-011","date":"2018-06-07","type":"ATTRIBUTED_CONTEMPORANEOUS_ACCOUNT","label":"Irigoyen maps bid route and all-creditor pay/consign/conclude route with ONA plan"},
+    {"id":"ONA-FX-012","date":"2018-06-13","type":"ATTRIBUTED_CONTEMPORANEOUS_ACCOUNT","label":"Sanz reports court receptive to debt-payment conclusion route"},
+    {"id":"ONA-FX-013","date":"2018-09-26","type":"ATTRIBUTED_CONTEMPORANEOUS_ACCOUNT","label":"AC/judge meeting: €13.1m figure accepted as erroneous; bid relevance disputed"},
+    {"id":"ONA-FX-014","date":"2018-11-28","type":"DOCUMENTED_PROCEDURAL_FACT","label":"Separate locales/pools sale to CAM for €400,000"},
+    {"id":"ONA-FX-015","date":"2018-12-24","type":"ATTRIBUTED_CONTEMPORANEOUS_ACCOUNT","label":"Irigoyen warns AC separation damages debt-payment exit and future auction"},
+    {"id":"ONA-FX-016","date":"2018-12-24","type":"ATTRIBUTED_PROFESSIONAL_ASSESSMENT","label":"Irigoyen says process broken and proposes court/AP recourse"},
+    {"id":"ONA-FX-017","date":"2019-02","type":"DOCUMENTED_FACT","label":"ONA/Clubotel continues Sun Park contractual/addendum work"},
+    {"id":"ONA-FX-018","date":"2019-10-24","type":"JUDICIAL_FINDING","label":"Court refuses validation: separate sale contradicted unitary liquidation structure"},
+    {"id":"ONA-FX-019","date":"2019-10-24","type":"JUDICIAL_FINDING","label":"Court: stripping unencumbered installations impairs improved bids; no prior judicial authorization"},
+    {"id":"ONA-FX-020","date":"2019-10-30","type":"CONTEMPORANEOUS_PROFESSIONAL_SUMMARY","label":"Cuatrecasas summarises unitary-sale ruling and reopened bid window"}
+  ],
+  "edges": [
+    {"from":"ONA-FX-010","to":"ONA-FX-011","relation":"TRANSACTION_ARCHITECTURE_TO_EXIT_ROUTE"},
+    {"from":"ONA-FX-011","to":"ONA-FX-012","relation":"EXIT_ROUTE_TO_COURT_PRESENTATION"},
+    {"from":"ONA-FX-012","to":"ONA-FX-013","relation":"COURT_KNOWLEDGE_TO_DEBT_QUANTUM_WORK"},
+    {"from":"ONA-FX-013","to":"ONA-FX-014","relation":"DEBT_AND_BID_CONTEXT_TO_SEPARATE_ASSET_SALE"},
+    {"from":"ONA-FX-014","to":"ONA-FX-015","relation":"SALE_TO_CONTEMPORANEOUS_HARM_WARNING"},
+    {"from":"ONA-FX-015","to":"ONA-FX-017","relation":"WARNING_TO_CONTINUING_OPERATOR_WORKSTREAM"},
+    {"from":"ONA-FX-014","to":"ONA-FX-018","relation":"SALE_TO_LATER_JUDICIAL_REJECTION"},
+    {"from":"ONA-FX-015","to":"ONA-FX-019","relation":"CONTEMPORANEOUS_WARNING_CORROBORATED_STRUCTURALLY_BY_LATER_JUDICIAL_FINDING"}
+  ],
+  "transaction_dependencies": [
+    "reliable_debt_amount",
+    "intact_productive_unit",
+    "access_due_diligence_valuation",
+    "competitive_third_party_bidding",
+    "payment_or_consignation_and_conclusion",
+    "post_exit_mortgage_refinancing"
+  ],
+  "allegation": "Gil Marer alleges direct and active sabotage of the ONA-led funded exit by the Insolvency Administrator through cumulative commissions and omissions that enabled the CAM/private-actor perimeter and impaired transaction prerequisites.",
+  "open_proof": [
+    "actor_specific_intent",
+    "concert_or_coordination_with_CAM_private_actors",
+    "counterfactual_closing_probability_by_financing_route",
+    "complete_AC_CAM_communications_around_2018_11_28",
+    "complete_accounting_for_400000_euro_locales_component",
+    "certified_minutes_or_docket_for_June_and_September_2018_meetings"
+  ],
+  "public_routes": {
+    "es": "/es/ona-hotels-salida-concurso-36-2012/cadena-interferencia-salida-financiada/",
+    "en": "/en/ona-hotels-insolvency-exit-36-2012/funded-exit-interference-chain/"
+  }
+}
