@@ -1,7 +1,7 @@
 # DP 748/2026 — RESPONSE ARCHITECTURE: FINCA 8584 AS HOTEL TITLE, ADJUDICATION AND RESTITUTION
 
 **Control ID:** `PD-DP748-RSP-MAT8584-20260903`  
-**Status:** source-safe public work product; **not filed; counsel must verify and adapt**  
+**Status:** source-safe public work product; **not filed; instructed counsel must verify and adapt**  
 **Proceeding:** DP 748/2026 · NIG 3802343220260002351  
 **Related:** Cambiario 1048/2019 · ETJ 163/2020 · DP 552/2025 → DP 711/2025 · Concurso 36/2012
 
@@ -160,4 +160,4 @@ The filed response must preserve:
 
 ## 13. Counsel control
 
-The actual filing must be settled by Carlos Llamas Sanz against the certified court record, the exact notification date/deadline, the complete appeal already lodged subsidiarily and the current law. This record is a source-safe continuity and drafting aid, not a filed pleading or substitute for counsel.
+The actual filing must be settled by instructed counsel against the certified court record, the exact notification date/deadline, the complete appeal already lodged subsidiarily and the current law. This record is a source-safe continuity and drafting aid, not a filed pleading or substitute for legal advice.
