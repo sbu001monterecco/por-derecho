@@ -1,10 +1,10 @@
 # Active workspace continuity index
 
 **Current workspace:** `PD-WS-20260902-0001`  
-**Current continuation pointer:** `PD-WCH-20260902-AUTH-SEARCH-001`  
+**Current continuation pointer:** `PD-WCH-20260903-AUTH-SEARCH-REINT-001`  
 **Status:** `DELETION_SAFE_WITH_OPEN_WORK`
 
-**Current checkpoint:** the 2 September judicial/prosecutorial authority-register, CAEPR caret-search and court-hierarchy release is merged and `LIVE_VERIFIED` on `0145793d53d86a99f34ef60ff69db7df871e4910`. ES/EN homepage search was browser-verified with 464 indexed entries and representative HTTP-200 click-throughs. This checkpoint adds the previously missing dedicated workspace/handoff object. Global historic-docket backfill remains explicitly open and is not certified complete.
+**Current checkpoint:** the historic-proceedings / justice-authority / Fiscalía / canonical-search / interconnectivity reintegration is merged through PR **#1373** at production merge `efbb1032b0c5e21ca892b3a9db17b3f7b4073e6c`, tree `1e2295ccc94d3e020b2ef0db59924d439de2aa93`, deployed by GitHub Pages run **33697357002 / #1420** from that exact merge SHA, and live-browser verified in Chromium run **33700567926**. The locked Diligencias Preliminares 1041/2017 identity is `GC-CIV-003`; deprecated duplicate `LZ-CIV-050` is absent from live routes, search, sitemap and public route/master data. Global historic-docket backfill remains explicitly open and is not certified complete.
 
 **Pointer semantics:** most recently checkpointed/default workspace; **not exclusive** and not a lock over concurrent workspaces.
 
@@ -12,19 +12,24 @@ A ChatGPT thread is a temporary working surface. A `PD-WS-*` workspace is the du
 
 ## Active and recently preserved workspaces
 
-### `PD-WS-20260902-0001` — justice authority / caret search / court hierarchy — current checkpoint
+### `PD-WS-20260902-0001` — historic proceedings / justice authority / Fiscalía / caret search / interconnectivity — current checkpoint
 
-State: `DELETION_SAFE_WITH_OPEN_WORK`; release state `LIVE_VERIFIED`.
+State: `DELETION_SAFE_WITH_OPEN_WORK`; release state `MERGED_DEPLOYED_LIVE_BROWSER_VERIFIED`.
 
 Read:
 
-1. `archive/handoffs/2026-09-02-justice-authority-caret-search-live-closeout.md`
-2. `archive/handoffs/2026-09-02-justice-authority-caret-search-live-closeout.json`
-3. `.github/governance/JUDICIAL_PROSECUTORIAL_AUTHORITY_REGISTER_CONTINUITY_02SEP2026.md`
-4. `assets/data/justice-authority-register-current-v2.json`
-5. the CAEPR / Master Proceedings controls named by the handoff.
+1. `archive/handoffs/2026-09-03-historic-proceedings-authority-search-reintegration-live-closeout.md`
+2. `archive/handoffs/2026-09-03-historic-proceedings-authority-search-reintegration-live-closeout.json`
+3. prior checkpoint `archive/handoffs/2026-09-02-justice-authority-caret-search-live-closeout.md`
+4. `.github/governance/JUDICIAL_PROSECUTORIAL_AUTHORITY_REGISTER_CONTINUITY_02SEP2026.md`
+5. `assets/data/justice-authority-register-current-v2.json`
+6. the CAEPR / Master Proceedings / interconnectivity controls named by the successor handoff.
 
-Critical boundary: **59 source-identified justice professionals / 56 confirmed / 3 pending is the current recovered-source denominator, not a certified complete historic/current docket denominator.** Unknown applicable Judges/LAJs/Fiscals remain explicit source gaps, never silent blanks.
+Release denominator at the current checkpoint: **131 canonical Master rows / 130 public; 107 canonical exact / 106 public exact / 1 private exact; 24 public non-exact/FALSE/UNVERIFIED; 130 bilingual public proceeding routes; 54 reciprocal formal procedural edges; 416 reciprocal contextual pairs; Fiscalía 26 public / 23 exact / 3 unresolved.**
+
+Authority denominator: **350 CAEPR objects** (PERSON 165 / ORGANISATION 83 / STRUCTURE 11 / INSTITUTION 48 / PROCEEDING 43); **62 source-identified justice/prosecutorial/notarial people / 59 CARET_CONFIRMED / 3 CARET_PENDING**. This is the current recovered-source denominator, **not** a certified complete historic/current docket denominator. Unknown applicable Judges/LAJs/Fiscals remain explicit source gaps, never silent blanks.
+
+Locked correction: Diligencias Preliminares 1041/2017 is `GC-CIV-003`, NIG `3501642120170028407`, court `PD-SP-I-0048`, Magistrado-Juez Juan Avello Formoso `PD-SP-P-0124`, LAJ Fernando Pérez Polo `PD-SP-P-0165`. Open source gaps remain the preceding signed Auto, complete docket/certified index, 19-Feb-2018 appearance/production proof, 5-Mar-2018 decree/closure, service and finality. Never resurrect `LZ-CIV-050`.
 
 ### `PD-WS-20260901-0001` — Acosta Matos / Canarian Hospitality hotel-platform media package — current checkpoint
 
@@ -121,6 +126,6 @@ For `PD-WS-20260901-0001`, the three current portrait binaries are not falsely r
 
 ## New-thread bootstrap
 
-> Continue `PD-WS-20260902-0001` from repository continuity state, not prior chat memory. Read `CURRENT_WORKSPACE_HANDOFF.md`, `archive/handoffs/2026-09-02-justice-authority-caret-search-live-closeout.md`, its machine companion, the judicial/prosecutorial authority continuity control and the current authority/CAEPR/Master Proceedings controls. Re-fetch current `main` before changes. Preserve explicit historic-docket gaps and act/date/capacity boundaries. Do not re-run broad discovery unless the handoff identifies a stale gap. Then continue the priority proceeding, currently E.G. 745/2026, using this verified authority/caret/search layer as the continuity substrate.
+> Continue `PD-WS-20260902-0001` from repository continuity state, not prior chat memory. Read `CURRENT_WORKSPACE_HANDOFF.md`, `archive/handoffs/2026-09-03-historic-proceedings-authority-search-reintegration-live-closeout.md`, its machine companion, then the prior 2-Sep handoff and current authority/CAEPR/Master Proceedings controls. Treat PR #1373, merge `efbb1032b0c5e21ca892b3a9db17b3f7b4073e6c`, tree `1e2295ccc94d3e020b2ef0db59924d439de2aa93`, Pages run 33697357002 and Chromium run 33700567926 as the completed release checkpoint. Re-fetch current `main` before changes. Preserve `GC-CIV-003`; never resurrect `LZ-CIV-050`. Preserve explicit historic-docket gaps and act/date/capacity boundaries. Do not re-run broad discovery unless a named `SOURCE_GAP` requires targeted recovery.
 
 Older topic-specific deletion audits and handoffs remain historical controls. Updating the most-recent/default pointer does not invalidate or hide them.
