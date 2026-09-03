@@ -82,7 +82,7 @@ The module injects a source-safe critical-update panel and reciprocal links into
 - `docs/concurso36/2026-09-03_MATKATOR8584_EXTRACONCURSAL_TITLE_CONCURSAL_CONSEQUENCE_BRIDGE.md`
 - `docs/acosta-matos/2026-09-03_MATKATOR8584_ACOSTA_HNT_MULTITRACK_RIPPLE_CONTROL.md`
 
-These are source-safe drafting aids, not filed pleadings. Carlos Llamas Sanz must verify procedure, deadlines, statutory basis and final relief against the complete files.
+These are source-safe drafting aids, not filed pleadings. Instructed counsel must verify procedure, deadlines, statutory basis and final relief against the complete files. No addressed email draft or acting-lawyer identity belongs in the public repository.
 
 ## 7. Acosta Matos criminal/regulatory multitrack
 
@@ -123,10 +123,18 @@ Do not publish:
 - a completed cession without source;
 - Acosta Matos as proved formal recipient;
 - a nominee or clandestine payment without evidence;
-- privileged instructions or private emails;
+- privileged instructions, addressed counsel email drafts or private correspondence;
+- acting lawyer/procurador identities unless already independently public and necessary under a separately approved source-safe control;
 - automatic firm-wide knowledge;
 - finca 8584 as LPB estate property.
 
-## 10. Successor instruction
+## 10. Release status
+
+- principal publication PR: `#1407`;
+- principal merge commit: `f53f8a044aac804281aea869faa5b4eb7eeb1cc4`;
+- privacy/privilege closeout: separate corrective PR required and recorded once merged;
+- direct live-route readback remains mandatory before representing the release as fully deployed.
+
+## 11. Successor instruction
 
 Do not restart or return to the “isolated apartment / unknown beneficiary / cession-only prejudice” framing. Read this handover first, verify the current remote `main`, then continue the evidence, counsel and multitrack work from the canonical control.
