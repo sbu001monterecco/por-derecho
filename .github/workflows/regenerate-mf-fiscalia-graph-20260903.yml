@@ -1,0 +1,37 @@
+name: Regenerate MF Fiscalía graph 20260903
+
+on:
+  push:
+    branches:
+      - ministerio-fiscal-fulltext-audit-20260903
+    paths:
+      - '.github/workflows/regenerate-mf-fiscalia-graph-20260903.yml'
+      - 'scripts/build_fiscalia_proceedings_interconnectivity.py'
+
+permissions:
+  contents: write
+
+jobs:
+  regenerate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          ref: ministerio-fiscal-fulltext-audit-20260903
+          fetch-depth: 0
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
+        with:
+          python-version: '3.12'
+      - name: Regenerate deterministic Fiscalía projection
+        run: python scripts/build_fiscalia_proceedings_interconnectivity.py --apply
+      - name: Commit projection if changed
+        run: |
+          if git diff --quiet -- assets/data/fiscalia-proceedings-interconnectivity-v1.json; then
+            echo 'Projection already current'
+            exit 0
+          fi
+          git config user.name 'sbu001monterecco'
+          git config user.email 'sbu001@monterecco.com'
+          git add assets/data/fiscalia-proceedings-interconnectivity-v1.json
+          git commit -m 'Regenerate Fiscalía graph for current 23+3 denominator'
+          git push origin HEAD:ministerio-fiscal-fulltext-audit-20260903
