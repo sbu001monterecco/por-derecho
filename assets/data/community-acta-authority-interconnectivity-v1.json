@@ -15,11 +15,11 @@
     },
     {
       "path": "assets/data/proceedings-master-public-v1.json",
-      "sha256": "83dbbc7e66d22361d233ea63b16e79fcf74848fcb9fc43165181cabd2c0ec44d"
+      "sha256": "c9f2a9bd6ad7a39252817c01e39d70281763e4371ec388a3e193b2033356cec5"
     },
     {
       "path": "assets/data/proceedings-case-prism-v1.json",
-      "sha256": "8268665437a78ab12bfbd23725176d814d7f37c748ece07ed5f12518a5319a7a"
+      "sha256": "8950c73703673ed32097bf44ea3670fe3437b82f5b84db9966ab1ecf9138c41b"
     },
     {
       "path": "archive/judicial-intelligence/decisions.jsonl",
