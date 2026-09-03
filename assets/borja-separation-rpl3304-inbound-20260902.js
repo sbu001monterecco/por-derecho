@@ -1,6 +1,18 @@
 (() => {
   'use strict';
 
+  // Compatibility bridge: this module is already loaded by site.js on every public
+  // surface. Load the source-controlled CaixaBank ↔ Concurso ripple once; the
+  // ripple asset itself applies only to its explicit governed route allow-list.
+  const current = document.currentScript;
+  if (current && !document.querySelector('script[data-caixabank-concurso-ripple-loader]')) {
+    const ripple = document.createElement('script');
+    ripple.src = new URL('caixabank-concurso-ripple-interconnect-20260903.js?v=20260903b', current.src).href;
+    ripple.async = false;
+    ripple.setAttribute('data-caixabank-concurso-ripple-loader', '20260903b');
+    document.head.appendChild(ripple);
+  }
+
   const path = window.location.pathname.replace(/\/index\.html$/, '/');
   const localPath = path.startsWith('/por-derecho/') ? path : `/por-derecho${path.startsWith('/') ? '' : '/'}${path}`;
 
