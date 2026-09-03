@@ -1,8 +1,9 @@
 {
   "schema": "por-derecho.la-laguna-proceeding-pages.v1",
-  "control_id": "PD-LALAGUNA-PROCEEDING-PAGES-20260902-02",
-  "as_of": "2026-09-02",
+  "control_id": "PD-LALAGUNA-PROCEEDING-PAGES-20260903-03",
+  "as_of": "2026-09-03",
   "status": "PUBLIC_CANONICAL_INTERLINK_ACTIVE",
+  "governance_rule": "ANTI_CONFLATION_IS_NOT_ANTI_CONNECTIVITY",
   "proceedings": [
     {
       "master_id": "TF-CIV-001",
@@ -28,6 +29,29 @@
           "title": "Recurso de reposicion contra negativa de suspension por prejudicialidad penal",
           "classification": "ETJ_CIVIL_FILING_NOT_DP748_FILING",
           "relationship_to_dp748": "DOCUMENTS_EXISTENCE_STATUS_AND_OBJECTIVE_CONNECTION_OF_DP_748_2026"
+        },
+        {
+          "control_id": "PD-ETJ163-FIL-20260903",
+          "lexnet_control": "PD-ETJ163-LEXNET-20260903",
+          "annex_control": "PD-ETJ163-ANN-20260903-01",
+          "date": "2026-09-03",
+          "title": "Cuatrecasas impugnacion del recurso de reposicion frente al Auto de 19 junio 2026",
+          "classification": "ETJ_CIVIL_POST_NOTICE_PRIMARY_FILING_DIRECTLY_REFERENCING_DP748",
+          "lexnet_presented_at": "2026-09-03T14:10:19+02:00",
+          "source_safe_fulltext_es": "/docs/cuatrecasas/ETJ163/2026-09-03_cuatrecasas_impugnacion_reposicion_fulltext_source_safe.md",
+          "full_translation_en": "/docs/cuatrecasas/ETJ163/2026-09-03_cuatrecasas_opposition_fulltext_en.md",
+          "relationship_to_dp748": "CUATRECASAS_EXPRESSLY_INVOCES_DP748_STATUS_AND_RELEVANCE_IN_ETJ_AND_REQUESTS_CONTINUATION_TO_ADJUDICATION",
+          "source_locked_propositions": [
+            "CUATRECASAS_TREATS_DP748_PROVISIONAL_DISMISSAL_AS_NO_ACTIVE_CRIMINAL_INVESTIGATION",
+            "CUATRECASAS_ARGUES_DP748_DOES_NOT_AFFECT_CAMBIARIO_TITLE_OR_ENFORCEMENT_ORDER",
+            "CAMBIARIO_TITLE_STATED_AS_182517_72_EUR_PRINCIPAL",
+            "FINCA_8584_IDENTIFIED_AS_AUCTIONED_PROPERTY",
+            "MATKATOR_STATED_AS_REGISTERED_OWNER",
+            "PHYSICAL_HOTEL_TRANSFORMATION_ACKNOWLEDGED_BUT_DENIED_SUSPENSIVE_RELEVANCE",
+            "ADJUDICATION_DESCRIBED_AS_IMMEDIATELY_PENDING",
+            "ADJUDICATION_WITH_POWER_TO_ASSIGN_REMATE_TO_THIRD_PARTY_REAFFIRMED"
+          ],
+          "evidential_boundary": "PARTY_SUBMISSION_NOT_JUDICIAL_FINDING; DOES_NOT_PROVE_COMPLETED_ASSIGNMENT_ASSIGNEE_IDENTITY_DECEPTION_FRAUD_OR_CRIMINAL_INTENT"
         }
       ]
     },
@@ -41,7 +65,7 @@
       "laj_id": "PD-SP-P-0148",
       "identity_lock": "DP_748_2026_PLUS_NIG_3802343220260002351_PLUS_LA_LAGUNA_INSTRUCTION_PLAZA_4",
       "anti_conflation": "DO_NOT_IDENTIFY_BY_SHORT_NUMBER_ALONE_AND_DO_NOT_CLASSIFY_AS_MADRID",
-      "relationship": "DISTINCT_CRIMINAL_PROCEEDING_CONTEXTUALLY_LINKED_TO_ETJ_163_2020",
+      "relationship": "DISTINCT_CRIMINAL_PROCEEDING_CONTEXTUALLY_AND_EVIDENTIALLY_LINKED_TO_ETJ_163_2020",
       "routes": {"en": "/en/dp-748-2026/", "es": "/es/dp-748-2026/"},
       "status_boundary": "PROVISIONAL_DISMISSAL_NOT_FINAL_APPEAL_AND_REOPENING_ROUTES_PRESERVED",
       "filing_register": [
@@ -106,8 +130,22 @@
         {"control_id": "PD-DP748-ACT-002", "date": "2026-05-20", "title": "Providencia", "outcome": "REFORM_AND_SUBSIDIARY_APPEAL_ROUTE_RECORDED_AND_TRANSFER_ORDERED"},
         {"control_id": "PD-DP748-MF-001", "date": "2026-06-08", "title": "Informe del Ministerio Fiscal", "outcome": "PARTIAL_ALLOWANCE_REQUESTED_FOR_LACK_OF_REASONS_AND_CLEARER_FACTUAL_DELIMITATION_REQUESTED"},
         {"control_id": "PD-DP748-ACT-003", "date": "2026-06-15", "title": "Diligencia de Ordenacion", "outcome": "FISCAL_REPORT_JOINED_AND_FILE_SENT_FOR_DECISION"},
-        {"control_id": "PD-DP748-ACT-004", "date": "2026-07-16", "title": "Auto estimando parcialmente reforma", "outcome": "LACK_OF_REASONS_ACCEPTED_PROVISIONAL_DISMISSAL_MAINTAINED"},
+        {"control_id": "PD-DP748-ACT-004", "date": "2026-07-16", "title": "Auto estimando parcialmente reforma", "outcome": "LACK_OF_REASONS_ACCEPTED_PROVISIONAL_DISMISSAL_MAINTAINED", "source_safe_fulltext_es": "/docs/cuatrecasas/DP748/2026-09-01_auto_16jul2026_fulltext_source_safe.md", "full_translation_en": "/docs/cuatrecasas/DP748/2026-09-01_order_16jul2026_fulltext_en.md"},
         {"control_id": "PD-DP748-NOT-001", "date": "2026-09-01", "title": "LexNET transmission of signed 16 July order", "outcome": "NOTIFICATION_SOURCE_RECEIVED"}
+      ],
+      "working_appeal": {
+        "path": "/docs/cuatrecasas/DP748/2026-09-02_borrador_apelacion_propuesta.md",
+        "date": "2026-09-02",
+        "status": "NOT_FILED_SUBJECT_TO_COUNSEL_REVIEW_CORRECTION_AND_APPROVAL",
+        "scope": "PUBLIC_PROPOSED_APPEAL_NARROWING_THE_CRIMINAL_QUESTION_TO_FINITE_DOCUMENTARY_ACT_PROPERTY_KNOWLEDGE_AND_EFFECT_CHECKS"
+      },
+      "related_post_notice_civil_sources": [
+        {
+          "control_id": "PD-ETJ163-FIL-20260903",
+          "date": "2026-09-03",
+          "classification": "ETJ_PRIMARY_PARTY_FILING_NOT_DP748_FILING",
+          "relationship": "POST_NOTICE_CUATRECASAS_POSITION_EXPRESSLY_REFERENCES_DP748_AND_REQUESTS_CONTINUATION_TO_ADJUDICATION_WITH_POWER_TO_ASSIGN_REMATE"
+        }
       ],
       "decision_2026_07_16": {
         "outcome": "REFORM_PARTIALLY_UPHELD_FOR_LACK_OF_REASONING_DISMISSAL_MAINTAINED",
@@ -127,8 +165,8 @@
         "admission_transmission_roll": "UNVERIFIED_NO_ROLL_ASSERTED"
       },
       "evidential_crosscheck": {
-        "already_present": ["DATED_NOTICE_TO_LATER_ACT_SEQUENCE", "EIGHT_FACTUAL_BLOCKS", "EIGHT_FINITE_ENQUIRIES", "ADMINISTRATIVE_REGISTRY_CORPORATE_AND_FUNDING_CONTEXT"],
-        "still_open": ["SINGLE_ACTOR_TO_SIGNED_FILING_TO_EXACT_PROPOSITION_MAP", "CERTIFIED_FINCA_TO_CURRENT_PHYSICAL_UNIT_MAP", "PERSONAL_KNOWLEDGE_AND_RECEIPT", "JUDICIAL_ERROR_CAUSATION_AND_BENEFIT", "ADJUDICATEE_OR_ASSIGNEE_IDENTITY"]
+        "already_present": ["DATED_NOTICE_TO_LATER_ACT_SEQUENCE", "EIGHT_FACTUAL_BLOCKS", "EIGHT_FINITE_ENQUIRIES", "ADMINISTRATIVE_REGISTRY_CORPORATE_AND_FUNDING_CONTEXT", "20260903_CUATRECASAS_POST_NOTICE_ETJ_POSITION"],
+        "still_open": ["SINGLE_ACTOR_TO_SIGNED_FILING_TO_EXACT_PROPOSITION_MAP", "CERTIFIED_FINCA_TO_CURRENT_PHYSICAL_UNIT_MAP", "PERSONAL_KNOWLEDGE_AND_RECEIPT", "JUDICIAL_ERROR_CAUSATION_AND_BENEFIT", "COMPLETED_ASSIGNMENT_STATUS_AND_ASSIGNEE_IDENTITY"]
       },
       "reopening_control": {
         "working_evidence_matrix": ["ACTOR_AND_CAPACITY", "EXACT_ACT_AND_DATE", "EXACT_STATEMENT_OR_OMISSION", "EXACT_PROPERTY_OR_FINCA", "PRIOR_KNOWLEDGE_SOURCE", "LATER_CONDUCT", "JUDICIAL_OR_PATRIMONIAL_EFFECT", "LOSS_OR_BENEFIT", "NEW_RELEVANT_INDICIUM_OR_FINITE_DILIGENCE"],
@@ -136,13 +174,18 @@
       },
       "publication_boundary": {
         "publish_unredacted_court_pdfs": false,
-        "excluded_public_fields": ["NIE", "HOME_ADDRESS", "PHONE", "DIGITAL_SIGNATURE", "VERIFICATION_CODE", "SERVICE_METADATA", "UNNECESSARY_PERSONAL_DATA"],
+        "excluded_public_fields": ["NIE", "HOME_ADDRESS", "PHONE", "DIGITAL_SIGNATURE", "VERIFICATION_CODE", "SERVICE_METADATA", "DOCUMENT_HASH", "UNNECESSARY_PERSONAL_DATA"],
         "allegation_rule": "Attribute allegations and do not convert evidential context into findings of crime, knowledge or intent."
       }
     }
   ],
+  "recent_source_cluster": {
+    "date_range": "2026-09-01/2026-09-03",
+    "items": ["PD-DP748-NOT-001", "PD-DP748-ACT-004-FULLTEXT", "DP748_PUBLIC_APPEAL_DRAFT_20260902_NOT_FILED", "PD-ETJ163-FIL-20260903", "PD-ETJ163-LEXNET-20260903", "PD-ETJ163-ANN-20260903-01"],
+    "unitary_digest": "/archive/CUATRECASAS_DP748_ETJ163_UNITARY_REDIGEST_20260903.md"
+  },
   "broader_context_routes": {"en": "/en/cuatrecasas-sun-park/", "es": "/es/cuatrecasas-sun-park/"},
-  "relationship_rule": "Cambiario 1048/2019 and ETJ 163/2020 form a civil procedural lineage. DP 748/2026 is legally distinct and is linked only for source-supported context concerning alleged autonomous conduct associated with the enforcement.",
-  "liability_boundary": "Interlinking establishes navigation and source-controlled procedural relationship only. It does not establish criminal intent, wrongdoing, liability, agreement, knowledge or merits attribution.",
+  "relationship_rule": "Cambiario 1048/2019 and ETJ 163/2020 form a civil procedural lineage. DP 748/2026 is legally distinct but factually and evidentially interconnected where primary sources establish a bridge. Separate proceeding does not mean unrelated; same hotel or context does not mean same legal owner, estate or jurisdiction.",
+  "liability_boundary": "Interlinking establishes navigation and source-controlled factual, evidential or procedural relationships only. It does not establish criminal intent, wrongdoing, liability, agreement, knowledge beyond the exact source, completed assignment, assignee identity or merits attribution.",
   "public_law_sources": ["https://www.boe.es/buscar/act.php?id=BOE-A-1882-6036", "https://hj.tribunalconstitucional.es/es/Resolucion/Show/25835", "https://hj.tribunalconstitucional.es/HJ/es/Resolucion/Show/30118"]
 }
