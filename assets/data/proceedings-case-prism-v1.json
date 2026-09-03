@@ -188,8 +188,8 @@
     },
     {
       "id": "fiscalia",
-      "en": "Ministerio Fiscal · 21 exact + 3 unresolved",
-      "es": "Ministerio Fiscal · 21 exactos + 3 no resueltos",
+      "en": "Ministerio Fiscal · 23 exact + 3 unresolved",
+      "es": "Ministerio Fiscal · 23 exactos + 3 no resueltos",
       "master_ids": [
         "LZ-FIS-007",
         "GC-FIS-011",
@@ -212,6 +212,8 @@
         "GC-FIS-035",
         "NAT-FIS-006",
         "NAT-FIS-007",
+        "LZ-FIS-049",
+        "LZ-FIS-051",
         "TF-FIS-009",
         "TF-FIS-010",
         "UNK-FIS-001"
@@ -2469,8 +2471,8 @@
           "status": "DIRECT",
           "treatment": "DIRECTLY_IN_FILE",
           "evidence_status": "MULTIPLE_VERIFIED_AND_OPEN_FISCALIA_FILES",
-          "note_en": "Complete current public denominator: 21 exact Fiscalía files plus three controlled unresolved references. References do not merge files or prove cross-file examination.",
-          "note_es": "Denominador público actual completo: 21 expedientes exactos de Fiscalía y tres referencias no resueltas controladas. Las referencias no fusionan expedientes ni prueban examen entre ellos.",
+          "note_en": "Complete current public denominator: 23 exact Fiscalía files plus three controlled unresolved references. References do not merge files or prove cross-file examination.",
+          "note_es": "Denominador público actual completo: 23 expedientes exactos de Fiscalía y tres referencias no resueltas controladas. Las referencias no fusionan expedientes ni prueban examen entre ellos.",
           "decision_en": "What each office/file actually received, examined, referred or answered and whether it acknowledged cross-file relevance.",
           "decision_es": "Qué recibió, examinó, remitió o respondió realmente cada oficina/expediente y si reconoció relevancia entre expedientes.",
           "master_ids": [
@@ -2495,6 +2497,8 @@
             "GC-FIS-035",
             "NAT-FIS-006",
             "NAT-FIS-007",
+            "LZ-FIS-049",
+            "LZ-FIS-051",
             "TF-FIS-009",
             "TF-FIS-010",
             "UNK-FIS-001"
