@@ -30,6 +30,24 @@ Canonical public dossier:
 Dedicated court-notice route:
 `https://sbu001monterecco.github.io/por-derecho/es/reclamacion-caixabank-valencia/senalamiento-28-enero-2027/`
 
+## Public ADR / settlement invitation — 3 September 2026
+
+The canonical CaixaBank Valencia dossier now carries a dedicated public settlement-outreach section loaded through:
+
+- `assets/caixabank-valencia-settlement-outreach-20260903.js`
+- the canonical `assets/site.js` loader.
+
+The public section:
+
+1. embeds the first redacted public court-notice image and links to the two-page documentary route;
+2. makes an express open invitation to CaixaBank, its representatives and the competent internal decision-making team to contact Aweswell to explore a serious, confidential and commercially rational out-of-court resolution before trial;
+3. states that the invitation is without prejudice to either party's procedural position and without admission of liability;
+4. calls for lawyers with real, demonstrable experience negotiating settlements / ADR with CaixaBank, particularly complex banking, financial-product, derivatives/swap or commercial disputes;
+5. reproduces the September 2026 Spanish LinkedIn outreach text as a public call;
+6. records that September 2026 is the active window for identifying the correct CaixaBank route and testing whether a mutually beneficial pre-trial solution is possible.
+
+This is a resolution invitation, not public pleading of the merits, reputational coercion or disclosure of private litigation strategy.
+
 ## Resolution objective and boundary
 
 Authorised objective: explore a serious, confidential, commercial pre-trial resolution before the January 2027 hearing, without prejudicing the litigation.
@@ -68,4 +86,4 @@ Substantive settlement handling remains with Aweswell/Gil and, where appropriate
 
 ## LinkedIn-publication boundary
 
-A future outreach post may state only that there is a live banking/commercial dispute, that trial is listed for January 2027, and that Aweswell seeks introductions to lawyers with real experience negotiating with CaixaBank for serious confidential pre-trial resolution. It should not plead the merits or make unsupported allegations.
+The outreach post may state only that there is a live banking/commercial dispute, that trial is listed for January 2027, and that Aweswell seeks introductions to lawyers with real experience negotiating with CaixaBank for serious confidential pre-trial resolution. It should not plead the merits or make unsupported allegations.
