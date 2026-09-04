@@ -49,8 +49,8 @@ A successor thread should:
 
 - Prior continuity-governance release: PR `#1418`, merge SHA `005ca9b51eb0a4cff6ce9545d9cd4561a30450ab`; specialist continuity validation succeeded.
 - Three-track full-digitisation release subsequently landed on `main` and independently records the Control 24 79-page signed package, 31-page principal complaint, 10-page dependent supplement, Reg. 24 and unknown formal allocation/status.
-- Current reader-facing/canonical correction is PR `#1422` — **Unify GC-HC-010 under Reg. No. 24 and harden continuity governance**. Until merged, its final merge SHA and live deployment verification remain pending.
-- PR #1422 includes bilingual GC-HC-010 pages, machine-state correction, strengthened continuity protocol/validator, correction control, and deterministic post-merge master-register migration.
+- Current reader-facing/canonical correction is PR `#1422` — **Unify GC-HC-010 under Reg. No. 24 and harden continuity governance**. It is prepared on current main and mergeable; final merge SHA and live deployment verification are recorded after merge.
+- PR #1422 includes bilingual GC-HC-010 pages, machine-state correction, strengthened continuity protocol/validator, correction control, handoff update, and deterministic post-merge master-register migration.
 
 ## Finite open gaps
 
