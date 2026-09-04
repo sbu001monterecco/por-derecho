@@ -2,7 +2,7 @@
 
 **Control date:** 2026-09-01  
 **Continuity refresh:** 2026-09-04  
-**Status:** canonical identity + evidence metadata registered; commercial-continuity layer refreshed on worker branch  
+**Status:** canonical identity + evidence metadata registered; commercial-continuity and Annex 08-D control layer refreshed on worker branch  
 **Person:** `PD-SP-P-0145` — Joan Cruz Nuez^  
 **Source:** `PD-SP-SRC-0001`  
 **Document:** `PD-SP-DOC-0005`  
@@ -69,9 +69,9 @@ The 01-Mar-2018 event precedes the separately documented 07-Jun-2018 Sun Park co
 - **08-Aug-2025:** Tourinews reports BLUESEA engaging Cruz to direct the absorption of Meeting Point Hotels Spain and renew management contracts approaching expiry.
 - **Sep-2025 public activity:** Joan Cruz's public LinkedIn profile preserves/shares items concerning a renewed Meeting Point hotel contract at Hotel Alyssa Suite in Playa Blanca with BLUESEA support and the entrustment of Hotel Marieta by Acosta Matos to Meeting Point/BLUESEA. These are professional self-publication/context signals, not evidence of a 2018 agreement.
 
-## 8. Annex 08-D — controlled derivative located in Drive
+## 8. Annex 08-D — authenticated controlled derivative; predecessor relationship still open
 
-Continuity scan on 04-Sep-2026 located the later file:
+Continuity scan on 04-Sep-2026 located and read the later file:
 
 `ANEXO_08D_DOCUMENTO_GRAFICO_CAM_JOAN_CRUZ_01MAR2018.pdf`
 
@@ -81,15 +81,38 @@ Private Drive metadata records:
 - size: **7,159,878 bytes**
 - storage status: private evidence archive
 
-This is registered as a **distinct later derivative / filing annex**, not as a replacement for `PD-SP-DOC-0005`. Its binary has not yet been hash-matched page-by-page against the 18-page predecessor in this worker pass. Until that comparison is completed, the correct classification is **UNRESOLVED / REQUIRES AUTHENTICATION** for derivative identity, image provenance and any additional pages or annotations.
+The annex identifies itself as **“ANEXO 08-D · CONTROL DEL DOCUMENTO GRÁFICO Y SECUENCIA FOTOGRÁFICA · Entrada al Hotel Sun Park · 01/03/2018 · Atribución documental: José Acosta Matos/CAM y Joan Cruz”** and as a technical documentary annex within **Control 21 — 26 June 2026**.
 
-Do not infer identity from faces. Authentication targets remain the original files, EXIF/device metadata, photographer/custodian, complete sequence, witnesses, agendas, communications, contracts and the asserted purpose and authority for the visit.
+Its own control language is material:
+
+- it states that the person attribution is documentary, drawn from the source filename/references and party references, **not from facial recognition or image inference**;
+- it expressly says that the images by themselves do **not** establish the legal right or quality of access, permission, force, intent, purpose, subsequent use, a link to adjudication/judicial/FTI events, or criminal/legal responsibility;
+- it requires original files, EXIF/device data, custodian/photographer, witnesses, agendas, communications, contracts, visitor relationships and the exact asserted purpose to be checked.
+
+The annex describes an embedded controlled copy named:
+
+`ANEXO 2. ENTRADA ILEGAL CAM - 01MAR2018.pdf`
+
+and reports for that embedded copy:
+
+- reported extent: **19 pages** in the annex text;
+- SHA-256: `79f6aa1d29e9c4bd7d86d66474039f56ea15fc3091194fb0c2fad617728592bb`.
+
+That hash is **different** from the canonical 18-page predecessor `PD-SP-DOC-0005` (`3c05f2a9…306b`). Therefore the correct control position is now:
+
+1. **DOCUMENTED FACT:** Annex 08-D exists as a later controlled technical annex and contains its own conservative attribution/proof limits.
+2. **DOCUMENTED FACT:** Annex 08-D reports a controlled embedded copy and a distinct SHA-256.
+3. **UNRESOLVED / REQUIRES AUTHENTICATION:** the exact page-by-page/version relationship between that embedded copy and `PD-SP-DOC-0005`, including whether the difference is only packaging/rendering or reflects additional/altered material.
+4. **UNRESOLVED / REQUIRES AUTHENTICATION:** the underlying image provenance, independent identity authentication, access authority, purpose and responsibility.
+
+Do not infer identity from faces. The annex strengthens custody/provenance control; it does **not** upgrade the underlying 01-Mar event into a finding of unlawful conduct.
 
 ## 9. Commercial/professional continuity — classified propositions
 
 ### 1. DOCUMENTED FACT
 
 - The controlled 01-Mar-2018 package expressly associates Joan Cruz by filename with the Sun Park photographic sequence, subject to the attribution boundary above.
+- Annex 08-D is a later controlled technical annex that independently preserves documentary attribution limits and an embedded-copy hash.
 - The recovered HKI original screenshots dated **25-Nov-2019** show `Sun Park (Lanzarote)` on HKI Hotels' projects page and Joan Cruz on HKI Hotels' team page.
 - The controlled archive contains later Club Sei Lanzarote commercial captures and the already-canonical Sun Park → Lava Verde → Club Sei chronology.
 
@@ -151,7 +174,7 @@ Still unresolved:
 - exact Meeting Point/FTI legal entity, contract, LOI, mandate, inventory, bookings, payments or revenue route for Sun Park/Lava Verde/Club Sei;
 - whether any Sun Park/Lava Verde/Club Sei project material appears in Meeting Point/FTI/BLUESEA handover, insolvency or 357/2024 files;
 - reconciliation of the 2019 and 2025 BORME revocation entries without assuming continuous power after 2019;
-- Annex 08-D hash/page equivalence to the predecessor PDF.
+- page-by-page/version equivalence between the Annex 08-D embedded controlled copy and `PD-SP-DOC-0005`.
 
 ## 10. Why this node matters
 
