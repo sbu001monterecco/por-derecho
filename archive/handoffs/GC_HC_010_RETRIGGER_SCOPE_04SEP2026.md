@@ -1,0 +1,1 @@
+Scope boundary: this retrigger exists only to reconcile the stale GC-HC-010 master CSV/public projection with the already-correct dedicated bilingual page and continuity graph. It does not change any allegation, create a new proceeding, assert TSJC receipt/custody, or alter the separate identities of CGPJ 169/2026 and Appeal 286/2026.

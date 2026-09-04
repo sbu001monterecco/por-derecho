@@ -58,3 +58,5 @@ jobs:
             echo '::warning::Broader publication audit remains red on unrelated inherited site.js loader/source-attribution controls. GC-HC-010 migration, deterministic projection build, projection --check and Control 21-22-24 continuity validation already passed before the canonical commit.'
             exit 1
           }
+
+# 04-SEP-2026 retrigger: enforce GC-HC-010 canonical/public parity after merged reader-page correction.

@@ -1,0 +1,1 @@
+GC-HC-010 / Reg. No. 24 master-projection retrigger marker. See 2026-09-04-gc-hc-010-master-projection-retrigger.md and .json. This marker exists to keep the protected-main migration trigger change bundled with a successor-readable continuity checkpoint.
