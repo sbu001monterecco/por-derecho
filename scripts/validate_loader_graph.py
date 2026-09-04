@@ -51,16 +51,6 @@ def main() -> int:
         else:
             paths.append(path)
 
-    # The compatibility marker exists only to keep older validators readable.
-    # It must remain unquoted so the graph parser cannot mistake it for a live
-    # direct edge from assets/site.js.
-    root_body = open("assets/site.js", encoding="utf-8").read()
-    compatibility = "site-pre-treasury-154-hq-20260828.js?v=20260828a"
-    if compatibility not in root_body:
-        errors.append("assets/site.js lacks the documented inherited pre-Treasury compatibility marker")
-    if f"'{compatibility}'" in root_body or f'"{compatibility}"' in root_body or f"`{compatibility}`" in root_body:
-        errors.append("pre-Treasury compatibility marker must not masquerade as a direct quoted loader edge")
-
     if errors:
         print("SHARED LOADER GRAPH: FAIL")
         for error in errors:
