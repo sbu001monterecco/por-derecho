@@ -4,7 +4,11 @@
 **Repository:** `sbu001monterecco/por-derecho`  
 **Publication branch:** `publish/controls-22-24-digitisation-20260904`  
 **Base main at branch creation:** `56761b5fa7a06579b3db563d859d75c65fb0a0b6`  
-**Release status at creation:** branch package prepared; PR, merge, Pages deployment and direct live readback pending.
+**Publication PR:** `#1413`  
+**Merge commit:** `d6c3550cc86e4b7dd642126b458cf205c4379bf6`  
+**Focused validation:** run `33823156071` — **SUCCESS**  
+**GitHub Pages deployment:** run `33823548923` — **SUCCESS**, deployed SHA `d6c3550cc86e4b7dd642126b458cf205c4379bf6`  
+**Direct independent HTTP readback of the four new routes:** not independently confirmed at this closeout; do not upgrade to `LIVE_VERIFIED` until that check succeeds.
 
 ## 1. Scope completed
 
@@ -124,4 +128,4 @@ Start from the structured register, then descend to the exact source and actor. 
 - Insolvency Administrator — Control 22 / DP 1956;
 - judicial decisions and supervision — Control 24 and its separate querella/CGPJ/Fiscalía interfaces.
 
-After merge, update this handover and the publication manifest with the PR number, merge commit, focused validation run, Pages deployment run and exact direct HTTP readback status. Do not call the new routes independently live-verified until direct no-cache readback succeeds.
+The repository source is merged and Pages has deployed the exact merge SHA. Direct public-edge readback remains a separate verification state. If a successor obtains successful cache-busted HTTP readback of all four routes, update the manifest and this handover to `LIVE_VERIFIED`; otherwise do not infer live state from deployment alone.
