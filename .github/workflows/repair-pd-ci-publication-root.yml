@@ -1,0 +1,73 @@
+name: One-shot PD-CI publication root repair
+
+on:
+  push:
+    branches:
+      - fix/PD-CI-20260903-publication-integrity-root
+    paths:
+      - .github/workflows/repair-pd-ci-publication-root.yml
+
+permissions:
+  contents: write
+
+jobs:
+  repair:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: fix/PD-CI-20260903-publication-integrity-root
+          fetch-depth: 1
+          show-progress: false
+          persist-credentials: true
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: '3.12'
+      - name: Correct canonical-total HTML marker mapping
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          path = Path("scripts/reconcile_identity_registry_projections.py")
+          body = path.read_text(encoding="utf-8")
+          anchor = "    for key in COUNT_KEYS:\n        body = replace_regex_once("
+          replacement = "    for key in COUNT_KEYS:\n        stat_marker = \"TOTAL\" if key == \"total\" else key\n        body = replace_regex_once("
+          if body.count(anchor) != 1:
+              raise SystemExit(f"expected one projection-loop anchor, found {body.count(anchor)}")
+          body = body.replace(anchor, replacement, 1)
+          marker = 'rf\'(<strong data-registry-stat="{key}">)\\d+(</strong>)\''
+          marker_replacement = 'rf\'(<strong data-registry-stat="{stat_marker}">)\\d+(</strong>)\''
+          if body.count(marker) != 1:
+              raise SystemExit(f"expected one projection-stat marker, found {body.count(marker)}")
+          path.write_text(body.replace(marker, marker_replacement, 1), encoding="utf-8")
+          PY
+      - name: Generate identity projections with explicit annotations
+        shell: bash
+        run: |
+          set +e
+          python scripts/reconcile_identity_registry_projections.py --write 2>&1 | tee /tmp/identity-reconcile.log
+          rc=${PIPESTATUS[0]}
+          set -e
+          if [ "$rc" -ne 0 ]; then
+            while IFS= read -r line; do
+              printf '::error title=Identity projection reconciliation::%s\n' "$line"
+            done < /tmp/identity-reconcile.log
+            exit "$rc"
+          fi
+      - name: Verify deterministic identity projections
+        run: |
+          python -m py_compile scripts/reconcile_identity_registry_projections.py
+          python scripts/reconcile_identity_registry_projections.py
+      - name: Commit generated identity reconciliation
+        run: |
+          git config user.name "por-derecho-governance-bot"
+          git config user.email "sbu001monterecco@users.noreply.github.com"
+          git add \
+            scripts/reconcile_identity_registry_projections.py \
+            en/matter-identity-registry/index.html \
+            es/registro-identidad-materia/index.html \
+            ops/CURRENT_UNITARY_STATE.json \
+            ops/reconciliations/identity-registry-20260903-valencia-court.json
+          git diff --cached --exit-code && exit 0
+          git commit -m "Reconcile identity projections from canonical registry"
+          git push origin HEAD:fix/PD-CI-20260903-publication-integrity-root

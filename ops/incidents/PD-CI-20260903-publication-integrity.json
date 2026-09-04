@@ -1,0 +1,68 @@
+{
+  "schema": "por-derecho.ci-incident.v1",
+  "incident_id": "PD-CI-20260903-PUBLICATION-INTEGRITY",
+  "title": "Publication-manifest namespace and validation-contract failure",
+  "opened_at_utc": "2026-09-04T00:00:00Z",
+  "state": "FIX_IN_WORKSPACE",
+  "objective": "Repair the upstream repository governance and validation defects. Reduced GitHub notification volume is a consequence, not the objective.",
+  "repository": "sbu001monterecco/por-derecho",
+  "branch": "main",
+  "original_trigger_sha": "2c02a831e8969d11b897b67a2808a8365c5991c8",
+  "current_trigger_sha": "56761b5fa7a06579b3db563d859d75c65fb0a0b6",
+  "repair": {
+    "branch": "fix/PD-CI-20260903-publication-integrity-root",
+    "base_main_sha": "56761b5fa7a06579b3db563d859d75c65fb0a0b6",
+    "branch_ref_is_authoritative_for_repair_head": true,
+    "scope": [
+      "Introduce an explicit publication-state document schema",
+      "Grandfather unchanged canonical legacy manifests until their next edit",
+      "Fail closed for new or changed schema-less or unsupported records",
+      "Migrate the three incompatible records without changing their substantive publication boundaries",
+      "Preserve direct Pages readback as pending where it was pending"
+    ],
+    "prohibited_scope": [
+      "No substantive merits, evidence or public-narrative changes",
+      "No GitHub notification suppression",
+      "No validator bypass, skipped file or weakened publication-state threshold",
+      "No branch-protection change until the repaired aggregate source gate is proven green"
+    ]
+  },
+  "observed_failure": {
+    "workflow_run_id": 33817021109,
+    "job_id": 100851311128,
+    "check_name": "publication-integrity",
+    "failure_class": "SCHEMA_NAMESPACE_COLLISION",
+    "first_failed_command": "python scripts/validate_publication_integrity_v2.py",
+    "affected_records": [
+      "publication-manifests/2026-09-03-hotel-finca-title-system-governance.json",
+      "publication-manifests/2026-09-03-matkator-8584-hotel-title-multitrack.json",
+      "publication-manifests/ona-funded-exit-interference-20260903.json"
+    ],
+    "missing_legacy_fields": [
+      "publication_id",
+      "current_state",
+      "expected_routes",
+      "owner"
+    ]
+  },
+  "root_cause": {
+    "direct": "The governed publication-manifests directory contained heterogeneous JSON records, while the wrapper implicitly delegated every non-transition record to the legacy publication-state validator.",
+    "systemic": [
+      "No explicit document-type discriminator for new or changed records",
+      "The failing publication-integrity check was not required before merge",
+      "Successful focused validation and Pages deployment could coexist with a failed global integrity gate"
+    ]
+  },
+  "closure_criteria": [
+    "The explicit-schema classifier and checked-in contract pass on the repair branch",
+    "All three migrated records pass the legacy publication-state thresholds without overstating live verification",
+    "The publication-integrity check is green on the pull-request head",
+    "The repair is merged at an exact SHA and publication-integrity is green on the resulting main",
+    "A separate enforcement change makes the stable aggregate integrity check mandatory before future merges"
+  ],
+  "continuity": {
+    "successor_first_read": "ops/incidents/PD-CI-20260903-publication-integrity.json",
+    "one_incident_one_workspace_rule": true,
+    "notification_correlation_rule": "Group workflow notifications by repository, head SHA and normalized first-failure fingerprint; do not create one branch per email."
+  }
+}
