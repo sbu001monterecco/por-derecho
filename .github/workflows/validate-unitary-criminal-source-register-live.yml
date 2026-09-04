@@ -1,0 +1,34 @@
+name: Unitary criminal-source live readback
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'assets/site.js'
+      - 'assets/unitary-criminal-source-register-search-extension-20260904.js'
+      - 'es/registro-fuentes-penales/**'
+      - 'en/criminal-source-register/**'
+      - 'es/ministerio-fiscal-continuidad-redsara/**'
+      - 'en/ministerio-fiscal-redsara-continuity/**'
+      - 'data/unitary-criminal-redsara-register-20260903*'
+      - 'data/ministry-fiscal-continuity-ledger-20260904.json'
+      - 'sitemap-unitary-digest-20260903.xml'
+      - 'scripts/validate_unitary_criminal_source_register_live.py'
+      - '.github/workflows/validate-unitary-criminal-source-register-live.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: unitary-criminal-source-live-main
+  cancel-in-progress: true
+
+jobs:
+  live-readback:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout merged source
+        uses: actions/checkout@v4
+      - name: Verify deployed Pages routes, data, sitemap and search discovery
+        run: python3 scripts/validate_unitary_criminal_source_register_live.py --attempts 24 --delay 5
