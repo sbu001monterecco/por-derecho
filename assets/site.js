@@ -15,6 +15,8 @@
   const loadControl2224Release = () => {
     load('control-22-24-interlink-20260904.js', 'data-control-22-24-interlink-loader', '20260904a');
     load('control-22-24-search-extension-20260904.js', 'data-control-22-24-search-loader', '20260904a');
+    load('concurso-36-2012-triangle-20260904.js', 'data-concurso36-triangle-loader', '20260904b');
+    load('concurso-36-2012-triangle-search-20260904.js', 'data-concurso36-triangle-search-loader', '20260904b');
   };
 
   const loadHotelFincaSystem = () => {
