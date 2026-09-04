@@ -1,31 +1,52 @@
 {
-  "manifest_version": "1.0",
+  "manifest_version": "1.1",
   "published_at": "2026-09-04",
   "scope": "Uría Menéndez / RICPE / Sun Park documentary witness map",
-  "classification_rule": "A connection is not a finding of representation, conflict, breach, liability, common purpose or wrongdoing.",
+  "canonical_uria_entity": {
+    "name": "URÍA MENÉNDEZ ABOGADOS, S.L.P.",
+    "nif": "B28563963"
+  },
+  "classification_rule": "A connection is not a finding of representation, conflict, breach, liability, common purpose or wrongdoing. Party pleadings and reported communications are labelled as such. Contradictory evidence is preserved explicitly.",
   "actors": [
     {"id":"actor-ac-borja","name":"Francisco de Borja Rodríguez-Batllori Laffitte","role":"Administrador Concursal · Concurso 36/2012"},
     {"id":"actor-javier-rubio-sanz","name":"Javier Rubio Sanz","role":"Uría Menéndez lawyer / documentary witness node"},
+    {"id":"actor-javier-gonzalez-guimaraes","name":"Javier González Guimaraes-Da Silva","role":"Uría Madrid / 2015 creditor-enforcement correspondence node"},
+    {"id":"actor-raimon-tagliavini","name":"Raimon Tagliavini Sansa","role":"Uría Menéndez / CaixaBank counsel in PO 1859/2023-9"},
+    {"id":"actor-david-garcia-martin","name":"David García Martín","role":"Uría Menéndez / CaixaBank co-counsel in PO 1859/2023-9"},
     {"id":"actor-jose-acosta","name":"José Acosta","role":"source of attributed RICPE project representations"}
   ],
   "firms": [
-    {"id":"firm-uria-menendez","name":"Uría Menéndez"},
+    {"id":"firm-uria-menendez","name":"URÍA MENÉNDEZ ABOGADOS, S.L.P."},
     {"id":"firm-pwc","name":"PwC"},
     {"id":"firm-ricpe","name":"RIC Private Equity"},
-    {"id":"firm-cam","name":"CAM / Acosta Matos perimeter"}
+    {"id":"firm-cam","name":"CAM / Acosta Matos perimeter"},
+    {"id":"entity-haya","name":"HAYA / Haya Real Estate","role":"servicing/interlocutor perimeter; asset-specific title not inferred"},
+    {"id":"entity-sareb","name":"SAREB","role":"creditor/enforcement chain"},
+    {"id":"entity-caixabank","name":"CaixaBank, S.A.","role":"defendant in PO 1859/2023-9"}
   ],
   "events": [
-    {"id":"evt-2015-07-03-ac-rubio-reported-contact","date":"2015-07-03","status":"reported-contact","statement":"A contemporaneous record reports that the Administrador Concursal had spoken with Javier Rubio Sanz of Uría Menéndez. This does not by itself establish representation, conflict or improper information flow.","links":["actor-ac-borja","actor-javier-rubio-sanz","firm-uria-menendez"]},
+    {"id":"evt-2015-04-28-haya-uria-reported-path","date":"2015-04-28","status":"documented-reported-communication","statement":"A native contemporaneous email records the sender's report that HAYA asked for case material to be passed toward Uría Madrid and that Javier González was involved in a later communication about continuing the proceeding. This does not establish the native HAYA instruction, Uría's client, a retainer or legal title.","links":["actor-javier-gonzalez-guimaraes","firm-uria-menendez","entity-haya","source-note-2015"]},
+    {"id":"evt-2015-04-30-no-haya-mandate","date":"2015-04-30","status":"counterevidence","statement":"After speaking with Uría, Cuatrecasas reported that Uría said it did not yet have instructions to take any action on behalf of HAYA. This is material counter-evidence against treating a HAYA mandate as established on that date.","links":["firm-uria-menendez","entity-haya","source-note-2015"]},
+    {"id":"evt-2015-05-04-sareb-local-lawyer","date":"2015-05-04","status":"strong-supporting-evidence","statement":"Cuatrecasas reported that the local enforcement lawyer confirmed acting in the proceedings for SAREB rather than Bankia. Native court appearance and assignment records remain required for final capacity/title conclusions.","links":["entity-sareb","source-note-2015"]},
+    {"id":"evt-2015-07-03-ac-rubio-reported-contact","date":"2015-07-03","status":"reported-contact","statement":"A contemporaneous record reports that the Administrador Concursal had spoken with Javier Rubio Sanz of Uría Menéndez. This does not by itself establish representation, conflict or improper information flow.","links":["actor-ac-borja","actor-javier-rubio-sanz","firm-uria-menendez","source-note-2015"]},
+    {"id":"evt-2017-05-15-ph122-uria","date":"2017-05-15","status":"primary-court-document","statement":"A Promontoria Holding 122 B.V. filing in Concurso 36/2012 is signed by Uría lawyers including Javier Rubio Sanz, establishing a separate primary-document Uría footprint in the insolvency record.","links":["actor-javier-rubio-sanz","firm-uria-menendez"]},
     {"id":"evt-2020-11-11-ricpe-presentation","date":"2020-11-11","status":"attributed-representation","statement":"Preserved RICPE presentation materials describe Uría Menéndez Madrid and PwC in the project-processing/due-diligence architecture and attribute to José Acosta statements including 'libres de cargas' and Sun Park / €12m. Those statements are not independent proof of title or absence of charges.","links":["actor-jose-acosta","firm-uria-menendez","firm-pwc","firm-ricpe","firm-cam","project-sun-park"]},
-    {"id":"evt-2021-07-20-ricpe-certification","date":"2021-07-20","status":"primary-document","statement":"RICPE certification describes Sun Park as at a very early study/negotiation stage and says complete legal, tax, financial, technical and insurance due diligence had not yet taken place because no letter of intent had been signed.","links":["firm-ricpe","project-sun-park","doc-ricpe-cert-20210720"]},
+    {"id":"evt-2021-07-20-ricpe-certification","date":"2021-07-20","status":"primary-document-counterevidence","statement":"RICPE certification describes Sun Park as at a very early study/negotiation stage and says complete legal, tax, financial, technical and insurance due diligence had not yet taken place because no letter of intent had been signed.","links":["firm-ricpe","project-sun-park","doc-ricpe-cert-20210720"]},
     {"id":"evt-2021-07-21-cam-filing","date":"2021-07-21","status":"court-filing","statement":"CAM filing supplies the RICPE certification into the relevant documentary record.","links":["firm-cam","doc-cam-filing-20210721","doc-ricpe-cert-20210720"]},
-    {"id":"evt-2026-07-09-production-request","date":"2026-07-09","status":"recovered-pre-filing-version-plus-receipt","statement":"The recovered consolidated pre-filing version requests reports/notes from Uría Menéndez, PwC and others concerning title, encumbrances, suitability, risks and the real scope of Sun Park in 2020–2021. The Decanato receipt documents reception/submission on 9 July 2026 but does not independently establish byte-for-byte identity between the recovered DOCX and the physically filed document.","links":["firm-uria-menendez","firm-pwc","firm-ricpe","project-sun-park","doc-control21-20260709","doc-receipt-20260709"]}
+    {"id":"evt-2024-01-29-caixabank-defence","date":"2024-01-29","status":"primary-litigation-document-party-position","statement":"CaixaBank's defence in PO 1859/2023-9 identifies Raimon Tagliavini Sansa and David García Martín as counsel and expressly relies on LPB Concurso 36/2012 and the Administración Concursal record for standing and res judicata arguments. The pleaded consequences are not judicial findings.","links":["actor-raimon-tagliavini","actor-david-garcia-martin","firm-uria-menendez","entity-caixabank","doc-caixabank-defence","source-note-caixabank-2024"]},
+    {"id":"evt-2026-07-09-production-request","date":"2026-07-09","status":"recovered-pre-filing-version-plus-receipt","statement":"The recovered consolidated pre-filing version requests reports/notes from Uría Menéndez, PwC and others concerning title, encumbrances, suitability, risks and the real scope of Sun Park in 2020–2021. The Decanato receipt supports reception/submission on 9 July 2026 and visibly records procedure no. 1901/2026, but does not independently establish byte-for-byte identity with the recovered DOCX.","links":["firm-uria-menendez","firm-pwc","firm-ricpe","project-sun-park","doc-control21-20260709","doc-receipt-20260709","source-note-control21-translation"]}
   ],
   "documents": [
     {"id":"doc-ricpe-cert-20210720","filename":"RICPE_Certificacion_Enrique_Guerra_20JUL2021.pdf","sha256":"241928ea649933609441644567dd50cb97b87d17bafac850c90aca3bbda37b80","source_status":"preserved original binary","public_binary_mirror":"pending connector-capable binary upload","digital_summary":"Primary RICPE certification; controls the 20 July 2021 stage qualification."},
     {"id":"doc-cam-filing-20210721","filename":"CAM_Escrito_Aporta_Certificacion_RICPE_21JUL2021.pdf","sha256":"efda379e7b2ae0bfbbd80859a42332d5aae99ccd9644a04003760158b54b05fd","source_status":"preserved original binary","public_binary_mirror":"pending connector-capable binary upload","digital_summary":"CAM filing supplying the RICPE certification."},
-    {"id":"doc-caixabank-defence","filename":"CONTESTACION.pdf","sha256":"e9cfcc7f364939bab3c796dde132ccc28e7b42e3b98470436af0e4e56eca9669","source_status":"preserved original binary","public_binary_mirror":"pending connector-capable binary upload","digital_summary":"CaixaBank defence preserved in the source bundle; not treated as proof of the 2015 contact unless a specific passage is separately identified."},
+    {"id":"doc-caixabank-defence","filename":"CONTESTACION.pdf","sha256":"e9cfcc7f364939bab3c796dde132ccc28e7b42e3b98470436af0e4e56eca9669","source_status":"preserved original binary","public_binary_mirror":"pending connector-capable binary upload","digital_summary":"Primary 29 January 2024 CaixaBank defence; counsel and LPB/AC reliance are registered as party positions."},
     {"id":"doc-control21-20260709","filename":"CONTROL21_Ampliacion_JDAM_LPAM_AcostaMatos_09JUL2026_FINAL_CONSOLIDADA_PRINT_FILE_FIRMA.docx","sha256":"6741dcbfb1a2201c7773141bcfad292d101041560e599aac39178ea9530623c9","source_status":"recovered final consolidated pre-filing version","public_binary_mirror":"pending connector-capable binary upload","digital_summary":"Contains the production request for Uría Menéndez/PwC notes or reports on title, encumbrances, suitability, risks and real project scope."},
-    {"id":"doc-receipt-20260709","filename":"Ampliacion Proc.1901-2026 (CAM et al) 09JUL2026.jpeg","sha256":"fb9f9f5b65735fe0f53318d7d122801520b0968dc34a1bac4f6505f20e2ca967","source_status":"preserved receipt image","public_binary_mirror":"pending connector-capable binary upload","digital_summary":"Documents reception/submission date; does not independently establish byte-for-byte filing identity."}
+    {"id":"doc-receipt-20260709","filename":"Ampliacion Proc.1901-2026 (CAM et al) 09JUL2026.jpeg","sha256":"fb9f9f5b65735fe0f53318d7d122801520b0968dc34a1bac4f6505f20e2ca967","source_status":"preserved receipt image","public_binary_mirror":"pending connector-capable binary upload","digital_summary":"Supports reception/submission on 9 July 2026; visibly records procedure no. 1901/2026; does not independently establish byte-for-byte filing identity."}
+  ],
+  "source_notes": [
+    {"id":"source-note-2015","path":"evidence/uria-ricpe-sun-park/2015-creditor-haya-uria-source-note.md","status":"controlled-public-source-note"},
+    {"id":"source-note-caixabank-2024","path":"evidence/uria-ricpe-sun-park/caixabank-defence-20240129-source-note.md","status":"controlled-public-source-note"},
+    {"id":"source-note-control21-translation","path":"evidence/uria-ricpe-sun-park/control21-09jul2026-xii-bis-translation.md","status":"controlled-public-source-note-and-translation"},
+    {"id":"structured-2015-counterevidence","path":"data/puzzle/uria-2015-counterevidence-supplement.json","status":"structured-evidence-supplement"}
   ]
 }
