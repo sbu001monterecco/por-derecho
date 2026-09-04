@@ -1,0 +1,88 @@
+{
+  "schema": "por-derecho.matter-identity-registry.part.v1",
+  "registry_id": "PD-SP-IDENTITY-REGISTRY-001",
+  "type": "PERSON",
+  "records": [
+    {
+      "id": "PD-SP-P-0166",
+      "type": "PERSON",
+      "name": "Juan Miguel Hernández Herrera",
+      "aliases": ["Juan Miguel Hernandez Herrera", "Juan M. Hernández Herrera"],
+      "organisation_id": "PD-SP-O-0084",
+      "routes": {"es": "/es/uria-menendez/", "en": "/en/uria-menendez-sun-park/"},
+      "identity_resolution": "CARET_CONFIRMED",
+      "source_tier": "PRIMARY_FILING",
+      "search_meta": "Uría Menéndez · PH122 filing · 15 May 2017",
+      "matter_roles": [{"matter": "Concurso 36/2012 / PH122", "date": "2017-05-15", "role": "Lawyer identified in the filed document", "evidence_id": "DOC-PH122-URIA-20170515"}],
+      "capacity_boundary": "Appearance is controlled to the identified PH122 filing; it does not establish a wider mandate, knowledge or conduct."
+    },
+    {
+      "id": "PD-SP-P-0167",
+      "type": "PERSON",
+      "name": "Ángel Alonso Hernández",
+      "aliases": ["Angel Alonso Hernandez"],
+      "organisation_id": "PD-SP-O-0084",
+      "routes": {"es": "/es/uria-menendez/", "en": "/en/uria-menendez-sun-park/"},
+      "identity_resolution": "CARET_CONFIRMED",
+      "source_tier": "PRIMARY_FILING",
+      "search_meta": "Uría Menéndez · PH122 filing · 15 May 2017",
+      "matter_roles": [{"matter": "Concurso 36/2012 / PH122", "date": "2017-05-15", "role": "Lawyer identified in the filed document", "evidence_id": "DOC-PH122-URIA-20170515"}],
+      "capacity_boundary": "Appearance is controlled to the identified PH122 filing; it does not establish a wider mandate, knowledge or conduct."
+    },
+    {
+      "id": "PD-SP-P-0168",
+      "type": "PERSON",
+      "name": "Javier Rubio Sanz",
+      "aliases": ["Javier Rubio"],
+      "organisation_id": "PD-SP-O-0084",
+      "routes": {"es": "/es/uria-menendez/", "en": "/en/uria-menendez-sun-park/#actor-rubio"},
+      "identity_resolution": "CARET_CONFIRMED",
+      "source_tier": "PRIMARY_FILING_AND_PUBLIC_PROFESSIONAL_SOURCE",
+      "search_meta": "Uría Menéndez · PH122 filing; separate reported-contact record",
+      "matter_roles": [
+        {"matter": "Concurso 36/2012 / PH122", "date": "2017-05-15", "role": "Lawyer identified in the filed document", "evidence_id": "DOC-PH122-URIA-20170515"},
+        {"matter": "2015 creditor-contact chronology", "date": "2015-07-03", "role": "Reported contact only", "boundary": "The report does not prove that Uría or Rubio represented the Insolvency Administrator, HAYA or another actor on that date."}
+      ],
+      "capacity_boundary": "Every reported contact, instruction and mandate remains separate; do not infer client identity or information flow from a name hit."
+    },
+    {
+      "id": "PD-SP-P-0169",
+      "type": "PERSON",
+      "name": "Juan Francisco Falcón",
+      "aliases": ["Juan Francisco Falcon", "Juan Falcón", "Juan Falcon"],
+      "organisation_id": "PD-SP-O-0084",
+      "routes": {"es": "/es/uria-menendez/", "en": "/en/uria-menendez-sun-park/"},
+      "identity_resolution": "CARET_CONFIRMED",
+      "source_tier": "PUBLIC_CORPORATE_SOURCE",
+      "search_meta": "Uría Menéndez · RICPE formation/advisory perimeter · 2019-2020",
+      "matter_roles": [{"matter": "RIC Private Equity formation and advisory perimeter", "period": "2019-2020", "role": "Partner/adviser identified by RICPE public sources", "evidence_ids": ["DOC-RICPE-HISTORY", "DOC-RICPE-ARTICLE-20200117"]}],
+      "capacity_boundary": "Public sources support the stated formation/advisory role; they do not by themselves establish a Sun Park-specific mandate, work product, knowledge or conflict."
+    },
+    {
+      "id": "PD-SP-P-0170",
+      "type": "PERSON",
+      "name": "Raimon Tagliavini Sansa",
+      "aliases": ["Raimon Tagliavini", "R. Tagliavini Sansa"],
+      "organisation_id": "PD-SP-O-0084",
+      "routes": {"es": "/es/uria-menendez/", "en": "/en/uria-menendez-sun-park/"},
+      "identity_resolution": "CARET_CONFIRMED",
+      "source_tier": "PRIMARY_FILING_AND_PUBLIC_PROFESSIONAL_SOURCE",
+      "search_meta": "Uría Menéndez · CaixaBank defence · 29 January 2024",
+      "matter_roles": [{"matter": "Procedimiento ordinario 1859/2023-9", "date": "2024-01-29", "role": "Lawyer identified for CaixaBank", "evidence_id": "DOC-CAIXA-DEFENCE-20240129"}],
+      "capacity_boundary": "The record establishes the identified 2024 litigation role only; it does not transfer knowledge or responsibility to earlier events."
+    },
+    {
+      "id": "PD-SP-P-0171",
+      "type": "PERSON",
+      "name": "David García Martín",
+      "aliases": ["David Garcia Martin"],
+      "organisation_id": "PD-SP-O-0084",
+      "routes": {"es": "/es/uria-menendez/", "en": "/en/uria-menendez-sun-park/"},
+      "identity_resolution": "CARET_CONFIRMED",
+      "source_tier": "PRIMARY_FILING_AND_PUBLIC_PROFESSIONAL_SOURCE",
+      "search_meta": "Uría Menéndez · CaixaBank defence · 29 January 2024",
+      "matter_roles": [{"matter": "Procedimiento ordinario 1859/2023-9", "date": "2024-01-29", "role": "Lawyer identified for CaixaBank", "evidence_id": "DOC-CAIXA-DEFENCE-20240129"}],
+      "capacity_boundary": "The record establishes the identified 2024 litigation role only; it does not transfer knowledge or responsibility to earlier events."
+    }
+  ]
+}
