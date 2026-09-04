@@ -1,4 +1,11 @@
 {
+  "publication_id": "PD-PUB-HOTEL-FINCA-20260903-01",
+  "current_state": "MERGED",
+  "owner": "sbu001monterecco",
+  "expected_routes": {
+    "es": ["es/fincas-hoteleras-clasificacion-lesion-titulo-sobre-titulo/index.html"],
+    "en": ["en/hotel-fincas-asset-classification-title-on-title-injury/index.html"]
+  },
   "manifest_id": "PD-PUB-HOTEL-FINCA-20260903-01",
   "title": "All-hotel-finca asset classification, title-on-title injury and cross-proceeding instrumentality release",
   "created": "2026-09-03",
@@ -67,6 +74,7 @@
   "pull_request": 1410,
   "pull_request_state": "MERGED",
   "merge_commit": "bc85c64bd3cbc5790ab2162bdf93cec21d6f8dfe",
+  "merge_sha": "bc85c64bd3cbc5790ab2162bdf93cec21d6f8dfe",
   "main_source_presence_verified": true,
   "focused_validation_workflow": ".github/workflows/validate-hotel-finca-title-system.yml",
   "focused_validation_run_id": 33816683423,
@@ -80,6 +88,9 @@
     "consensual-acquisition and legal-person boundaries",
     "legacy and new loader continuity"
   ],
+  "validation": {
+    "evidence": "Focused workflow run 33816683423 completed successfully; repository source presence verified on merged main."
+  },
   "live_verification": {
     "repository_source": "VERIFIED_ON_MAIN",
     "pages_direct_http_readback": "PENDING_INDEPENDENT_CONFIRMATION",
