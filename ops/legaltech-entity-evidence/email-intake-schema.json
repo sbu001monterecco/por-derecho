@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "por-derecho.email-entity-candidate.v1",
+  "title": "Sanitised mailbox entity candidate",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["candidate_id", "candidate_name", "message_date", "hit_location", "source_class", "privacy_gate", "fingerprint"],
+  "properties": {
+    "candidate_id": {"type": "string"},
+    "candidate_name": {"type": "string", "minLength": 3},
+    "message_date": {"type": "string", "format": "date"},
+    "thread_locator_hash": {"type": "string"},
+    "subject_hash": {"type": "string"},
+    "hit_location": {"enum": ["direct_sender", "direct_recipient", "message_body", "quoted_body", "attachment_text", "attachment_filename", "later_derivative_summary"]},
+    "source_class": {"enum": ["PRIMARY_COMMUNICATION", "ATTACHMENT_PRIMARY", "QUOTED_COMMUNICATION", "DERIVATIVE_ADVOCACY", "UNKNOWN"]},
+    "privacy_gate": {"enum": ["PRIVATE_ONLY", "PRIVILEGE_REVIEW", "REDACTED_METADATA_ONLY"]},
+    "matter_hint": {"type": "string"},
+    "fingerprint": {"type": "string"},
+    "notes": {"type": "string"}
+  }
+}
