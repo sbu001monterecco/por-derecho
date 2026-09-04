@@ -1,0 +1,125 @@
+{
+  "control": "PD-MF-CONTINUITY-20260904-01",
+  "status": "ACTIVE_RECONCILIATION",
+  "purpose": "Criminal-first, non-fragmented provenance ledger joining formal RedSARA/AGE filings, later Ministerio Fiscal email communications and prosecutor-side responses without collapsing their evidential meaning.",
+  "governing_rules": [
+    "A RedSARA/AGE receipt proves presentation/receipt only to its stated extent; it is not a merits finding or proof of investigation.",
+    "A sent email is not a formal RedSARA filing unless separately supported by a registration receipt.",
+    "A draft is not delivery and is excluded from sent/received denominators.",
+    "A self-archive is provenance/control material, not delivery to an authority.",
+    "An incoming acknowledgement, notice, decree or routing message is a response-side event and must not be counted as a claimant filing.",
+    "Duplicate or corrected transmissions preserve provenance but must identify the controlling version so they do not inflate substantive-event counts.",
+    "No final post-21-June denominator is asserted until the later RedSARA register and email/event corpus are deduplicated and status-reconciled."
+  ],
+  "layers": [
+    {
+      "id": "MF-LAYER-01",
+      "event_class": "REDSARA_BASELINE_DETAILED",
+      "date_from": "2025-12-15",
+      "date_to": "2026-02-26",
+      "count": 75,
+      "source": "ANEXO 4 RedSARA Ministerio Fiscal Comunicaciones Registradas.pdf",
+      "detail_level": "complete presentation receipts in 154-page compilation",
+      "note": "Contains registered Expone/Solicita, annex filenames and SHA-512 fingerprints where present. This is a historical baseline, not the terminal Ministerio Fiscal corpus."
+    },
+    {
+      "id": "MF-LAYER-02",
+      "event_class": "REDSARA_POST_ANEXO_DELTA",
+      "date_from": "2026-03-11",
+      "date_to": "2026-06-21",
+      "count": 22,
+      "source": "RedSARA_AGE_FULL_DIGEST_97_FILINGS / registry export",
+      "detail_level": "registry metadata where detailed receipt absent",
+      "aggregate_through_cutoff": {
+        "registrations": 97,
+        "received": 90,
+        "rejected": 7
+      },
+      "note": "These 22 registrations are outside the 154-page Anexo 4 compilation."
+    },
+    {
+      "id": "MF-LAYER-03",
+      "event_class": "REDSARA_LATER_FORMAL",
+      "date_from": "2026-08-02",
+      "date_to": null,
+      "count": null,
+      "count_status": "OPEN_DENOMINATOR_PENDING_DEDUP_STATUS_RECONCILIATION",
+      "known_checkpoint": {
+        "date": "2026-08-02/03",
+        "linked_seven_registration_package": [
+          "REGAGE26e00070235399",
+          "REGAGE26e00070235775",
+          "REGAGE26e00070236067",
+          "REGAGE26e00070236245",
+          "REGAGE26e00070236543",
+          "REGAGE26e00070236749",
+          "REGAGE26e00070237051"
+        ],
+        "additional_identified_registration": "REGAGE26e00070234288",
+        "note": "Checkpoint only. It must not be mistaken for the complete post-21-June denominator."
+      }
+    },
+    {
+      "id": "MF-LAYER-04",
+      "event_class": "EMAIL_OUTBOUND_SENT",
+      "date_from": "2026-08-20",
+      "date_to": null,
+      "count": null,
+      "count_status": "DERIVE_FROM_NATIVE_LOCATOR_AFTER_DEDUP",
+      "known_checkpoints": [
+        {"date": "2026-08-20", "references": ["DI 22/2026", "REGAGE26e00070237051", "EG 112/2026", "Exp. Gub. 352/2025", "Exp. Gub. 86/2026", "DP 748/2026"], "note": "Multiple sent communications to distinct Ministerio Fiscal routes; drafts are separately classified."},
+        {"date": "2026-08-25", "references": ["E.G. 112/2026"], "note": "Sent clarification/preservation follow-up."},
+        {"date": "2026-08-26", "references": ["DI 22/2026", "REGAGE26e00070237051", "Exp. Gub. 86/2026"], "note": "Sent updates concerning official FEDER notification/preservation."},
+        {"date": "2026-08-27", "references": ["DI 22/2026", "REGAGE26e00070237051", "Exp. Gub. 86/2026"], "note": "Sent supervening-evidence updates with attachment package."}
+      ]
+    },
+    {
+      "id": "MF-LAYER-05",
+      "event_class": "EMAIL_INBOUND_FISCALIA_OR_RESPONSE",
+      "date_from": "2026-03-03",
+      "date_to": null,
+      "count": null,
+      "count_status": "DERIVE_FROM_NATIVE_LOCATOR",
+      "known_checkpoints": [
+        {"date": "2026-03-03", "reference": "DI 22/2026", "type": "notification/decree-side event"},
+        {"date": "2026-06-03", "reference": "DI 22/2026", "type": "notification"},
+        {"date": "2026-07-02", "reference": "DI 22/2026", "type": "notification of decree dated 30 June 2026"},
+        {"date": "2026-07-10", "reference": "DI 22/2026", "type": "notification of decree dated 10 July 2026"},
+        {"date": "2026-08-20", "reference": "Exp. G. 112/2026", "type": "inbound decree/diligence"},
+        {"date": "2026-08-25", "reference": "E.G. 112/2026", "type": "inbound clarification decree"},
+        {"date": "2026-08-26", "reference": "EXP. GUB. 745/2026", "type": "inbound official notice and decree"}
+      ]
+    },
+    {
+      "id": "MF-LAYER-06",
+      "event_class": "DRAFT",
+      "count": null,
+      "public_count_rule": "EXCLUDE_FROM_DELIVERY_COUNTS",
+      "note": "Preserve privately for version provenance only."
+    },
+    {
+      "id": "MF-LAYER-07",
+      "event_class": "SELF_ARCHIVE",
+      "count": null,
+      "public_count_rule": "EXCLUDE_FROM_DELIVERY_COUNTS",
+      "note": "Source-control record only; not authority delivery."
+    }
+  ],
+  "dedup_controls": {
+    "required_fields": ["event_class", "event_date", "official_reference", "provider_or_receipt_locator", "status", "duplicate_of", "controlling_version", "source_scope"],
+    "known_issue": "Multiple 20-August DI 22/2026 transmissions with the same subject/attachments require controlling-version linkage; an explicit clarification message exists.",
+    "rule": "Count substantive transmissions only after duplicate/control-version reconciliation; retain every native event for provenance."
+  },
+  "public_safety": {
+    "publish": ["date", "event class", "office class or official reference where appropriate", "REGAGE number", "subject-level description", "source status"],
+    "withhold_by_default": ["personal identifiers", "street addresses", "personal telephone numbers", "private email addresses", "full confidential bodies", "unredacted receipt PDFs"],
+    "note": "Public summaries preserve allegation/finding and receipt/merits distinctions."
+  },
+  "next_controlled_closure": [
+    "Reconcile the later RedSARA_REGAGE register through its latest available cutoff against the 97-entry June digest.",
+    "Deduplicate by registration number, status, package identity and destination.",
+    "Reconcile Gmail SENT versus DRAFT versus SELF_ARCHIVE versus INBOUND_RESPONSE.",
+    "Link each formal filing and later communication to the exact proceeding/event node in the unitary criminal-first graph.",
+    "Only then publish a final post-Anexo denominator."
+  ]
+}
