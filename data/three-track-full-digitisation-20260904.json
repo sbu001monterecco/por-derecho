@@ -1,0 +1,213 @@
+{
+  "schema_version": "1.0.0",
+  "control_id": "PD-THREE-TRACK-DIGITISATION-20260904-01",
+  "created": "2026-09-04",
+  "base_main_sha": "b8ded173b06f17aaf91569f051dd11e621b139ae",
+  "status": "PUBLIC_SAFE_FULL_TEXT_DIGEST_WITH_PRIVATE_ORIGINALS_EXCLUDED",
+  "purpose": "Provide one source-complete, page-aware public digest for DP 1901/2026, DP 1956/2026 and Control 24 while preserving separate procedural identities and actor-specific attribution.",
+  "global_boundary": [
+    "The three tracks are evidentially interconnected but procedurally separate.",
+    "Shared evidence does not transfer knowledge, intent, causation, guilt or liability.",
+    "A complaint proves that an allegation was made; it does not prove the allegation.",
+    "Private originals, signatures, personal identifiers, private addresses, emails, verification codes and privileged material are not published here.",
+    "Public digitisation means complete text-layer processing, structured indexing and public-safe presentation; it does not mean publication of the raw private pleading."
+  ],
+  "tracks": [
+    {
+      "track_id": "DP1901-C21",
+      "procedure": "DP 1901/2026",
+      "layer": "private actors / NEXUS 36",
+      "base_filing": {
+        "reported_filing_date": "2026-06-25",
+        "source_filename": "01_NEXUS_36_DENUNCIA_PENAL_ACTUALIZADA_PRESENTACION_25JUN2026.pdf",
+        "pages": 69,
+        "sha256": "cb2ea7e6a206be97e30d28e92c330f3e40ece1d18d9964b38f9a5fd05a36c3f1",
+        "text_layer_processed": "69/69 pages",
+        "source_role": "operative base complaint candidate / reported filed copy",
+        "public_raw_pdf": false
+      },
+      "expansion": {
+        "reported_filing_date": "2026-07-09",
+        "source_filename": "CONTROL21_Ampliacion_JDAM_LPAM_AcostaMatos_09JUL2026_FINAL_CONSOLIDADA_FILE_THIS_09JUL2026.pdf",
+        "pages": 7,
+        "sha256": "436ffdddd8c9584a1e907cb25f1fbd9f27b82e7c6976c785fdcf09f535f3c9b9",
+        "text_layer_processed": "7/7 pages",
+        "source_role": "reported 9 July expansion; filing status must remain source-controlled",
+        "public_raw_pdf": false
+      },
+      "official_status_control": {
+        "nig": "3501643220260016977",
+        "court_position": "Plaza n.º 6, Sección de Instrucción, Tribunal de Instancia de Las Palmas de Gran Canaria",
+        "latest_primary_event_on_public_page": "Providencia signed 2026-07-12: five-day transfer to Ministerio Fiscal concerning admission in relation to DIP 2/2026",
+        "boundary": "The providencia is not itself a later merits decision or proof of admission, dismissal or guilt."
+      },
+      "base_sections": [
+        "I. Personas denunciadas y entidades relacionadas",
+        "II. Naturaleza, objeto y disciplina probatoria de la denuncia",
+        "III. Competencia territorial, carácter autónomo y separación de procedimientos",
+        "IV. Cuestiones matrices que debe resolver la investigación",
+        "V. Relación circunstanciada de los hechos",
+        "VI. Individualización provisional de conductas y responsabilidades",
+        "VII. Daños, beneficios y nexo causal",
+        "VIII. Calificación jurídica provisional",
+        "IX. Prescripción y delimitación temporal",
+        "X. Disponibilidad asimétrica de la prueba y método de investigación",
+        "XI. Diligencias de investigación solicitadas",
+        "XII. Protección del denunciante y trazabilidad",
+        "XIII. Suplico al Juzgado"
+      ],
+      "expansion_sections": [
+        "I. Objeto exacto y regla de lectura no fragmentada",
+        "II. Teoría autoridad aparente → decisión → valor",
+        "III. Control de prudencia y fuentes nativas necesarias",
+        "IV. Comunidad como maquinaria documental previa y posible adopción posterior",
+        "V. JDAM: conocimiento, límite de titularidad y contradicción funcional",
+        "VI. LPAM: representación, autoridad, actas, acceso y beneficio empresarial",
+        "VII. RICPE 2020 y webinar de 11 noviembre 2020",
+        "VIII. RICPE, HNT/MYND y financiación/incentivos a reconciliar",
+        "IX. Google Business, cuentas y clientela",
+        "X. Comunidad SunRockers y valor de plataforma",
+        "XI. Ecosistema operativo, comunitario, comercial, cultural y artístico",
+        "XII. Solos/MCT/HVTT, Club Sei, Meeting Point/FTI, Loveholidays y comercialización",
+        "XIII. Canarias7 / Fiscalía: preservación y transparencia",
+        "XIV. PwC, San Telmo/RSM y custodios profesionales",
+        "XV. Desplazamiento patrimonial de plataforma",
+        "XVI. Tipicidad provisional",
+        "XVII. Diligencias por prioridad",
+        "XVIII. Matriz de anexos y control de no omisión"
+      ],
+      "public_route_es": "/por-derecho/es/dp-1901-2026/",
+      "public_route_en": "/por-derecho/en/dp-1901-2026/"
+    },
+    {
+      "track_id": "DP1956-C22",
+      "procedure": "DP 1956/2026",
+      "layer": "insolvency administrator / Control 22",
+      "base_filing": {
+        "reported_filing_date": "2026-06-18",
+        "source_filename": "01_Denuncia_Penal_AC_LPB_Sun_Park_AC-FINAL_17JUN2026.pdf",
+        "pages": 55,
+        "sha256": "b11f10e7410f922a8cd1796ea462ea7ea20d555b7308e4481f2cb23732b1002b",
+        "text_layer_processed": "55/55 pages",
+        "source_role": "operative Control 22 complaint candidate / reported filed copy",
+        "public_raw_pdf": false
+      },
+      "official_status_control": {
+        "nig": "3501643220260016826",
+        "iup": "LI2026016921",
+        "court_position": "Plaza n.º 1, Sección de Instrucción, Tribunal de Instancia de Las Palmas de Gran Canaria",
+        "status": "sobreseimiento provisional communicated 2026-07-21",
+        "boundary": "Do not describe as acquittal, sobreseimiento libre or final merits exoneration."
+      },
+      "sections": [
+        "I. Objeto penal limitado y razón de la investigación",
+        "II. Continuidad de las vías de recuperación y carácter aún discutido",
+        "III. Identificación societaria y evitación de confusión denominativa",
+        "IV. Relación con la solicitud de separación del Administrador Concursal",
+        "V. Posiciones procesales actuales en los recursos de separación",
+        "VI. Identificación de la masa activa y deber reforzado del Administrador Concursal",
+        "VII. Antecedentes previos y ruptura de unidad",
+        "VIII. Conocimiento temprano: comunicación fehaciente de julio 2016",
+        "IX. Grabación de junio 2016: Comunidad y deuda controvertidas",
+        "X. CAM/Promontoria: acreedor con interés económico directo",
+        "XI. Primeros meses de 2018: salida legal del concurso",
+        "XII. Denuncia de abril 2018 contra CAM/JDAM",
+        "XIII. Conversación telefónica certificada de marzo 2018",
+        "XIV. Comunicación del AC a la Comunidad y acta de 18 mayo 2018",
+        "XV. 7 junio 2018: desplazamiento del control material",
+        "XVI. Hotel operativo: turistas, cursos y explotación",
+        "XVII. Supuesta autorización o validación del AC respecto de control/acceso",
+        "XVIII. Junio 2018: vía financiada y respaldada",
+        "XIX. Septiembre 2018: solicitud de cifra operativa para conclusión",
+        "XX. Denuncia de 12 septiembre 2018 contra AC y CAM"
+      ],
+      "public_route_es": "/por-derecho/es/dp-1956-2026/",
+      "public_route_en": "/por-derecho/en/dp-1956-2026/"
+    },
+    {
+      "track_id": "C24-JUDGE",
+      "procedure": "Control 24 / formal allocation unknown",
+      "layer": "judicial decisions and supervision",
+      "base_filing": {
+        "reported_filing_date": "2026-06-18",
+        "source_filename": "02_Paquete_Unificado_Para_Presentacion_JUEZ_ FINAL 17JUNE2026 (signed).pdf",
+        "pages": 79,
+        "principal_complaint_pages": 31,
+        "sha256": "1cae1912a20202c5f5779db07e77c7e1d3f0ae514676e07d3ace4dd56f6f76a0",
+        "source_role": "signed presentation package with principal complaint and selected annexes",
+        "legal_nature": "denuncia / notitia criminis; not formal querella",
+        "public_raw_pdf": false
+      },
+      "supplement": {
+        "reported_filing_date": "2026-06-25",
+        "source_filename": "APORTACION_COMPLEMENTARIA_CONTROL_24_25JUN2026.pdf",
+        "pages": 10,
+        "sha256": "a552c10094a3bdbf21132f7083689d79bee39b8d51ed96de19090a3d638b7c48",
+        "relationship": "dependent supplement requested to be joined to Control 24"
+      },
+      "status_control": {
+        "decanato_daily_locator": "24",
+        "official_case_number": null,
+        "nig": null,
+        "assigned_court": null,
+        "current_status": "FILED/PRESENTED — FORMAL ALLOCATION AND CURRENT STATUS NOT YET PRIMARY-VERIFIED",
+        "cgpj_relation": "reported to CGPJ within the 169/2026 appeal record; remains a separate institutional route"
+      },
+      "principal_modules": [
+        "Funded exit and judicial knowledge",
+        "Recognised credit, threshold and res judicata",
+        "OB REM transaction and non-validation",
+        "Bidding, effective competition and adjudication",
+        "Identity of creditor, enforcing party, bidder, adjudicatee and registered owner"
+      ],
+      "public_route_es": "/por-derecho/es/control-24-denuncia-juez-concurso-36-2012/",
+      "public_route_en": "/por-derecho/en/control-24-insolvency-judge-complaint-36-2012/"
+    }
+  ],
+  "shared_context": [
+    {
+      "event": "Community authority / debt / voting architecture",
+      "dp1901": "alleged creation/use by private actors",
+      "dp1956": "knowledge, verification, reliance and estate-duty questions attributed to the Insolvency Administrator",
+      "control24": "judicial knowledge, supervision and decision-response questions",
+      "boundary": "same documents; different actor-specific legal questions"
+    },
+    {
+      "event": "7 June 2018 material control/access change",
+      "dp1901": "private-actor conduct and control",
+      "dp1956": "what the Insolvency Administrator knew, authorised, protected, reported or failed to correct",
+      "control24": "what reached the court and what protective or later decisions followed",
+      "boundary": "no automatic transfer of the physical acts to AC or judge"
+    },
+    {
+      "event": "2018 funded exit",
+      "dp1901": "knowledge, motive, interference and beneficiary questions concerning private actors",
+      "dp1956": "estate-preservation, payoff, facilitation and accounting duties",
+      "control24": "judicial knowledge, quantified conditions and decision sequence",
+      "boundary": "existence of a financing structure does not prove entitlement to approval or criminal obstruction"
+    },
+    {
+      "event": "28 November 2018 OB REM / €400,000 transaction and 24 October 2019 non-validation",
+      "dp1901": "private participation, benefit and downstream use",
+      "dp1956": "AC authority, safeguarding, accounting, restoration and reporting",
+      "control24": "judicial non-validation, implementation and later supervisory consistency",
+      "boundary": "each transition requires its own source; no inference from later title alone"
+    },
+    {
+      "event": "Credit / threshold / 2021 bidding / 2022 adjudication",
+      "dp1901": "private offer, information, control and beneficiary questions",
+      "dp1956": "calculation, reporting, equal-treatment and implementation questions",
+      "control24": "orders, scope, res judicata, competition and final decision bridge",
+      "boundary": "different figures have different legal/economic functions and must not be collapsed"
+    },
+    {
+      "event": "HNT / MYND / RICPE / later operation",
+      "dp1901": "downstream private control, commercialisation and benefit allegations",
+      "dp1956": "later evidence only where it bears on knowledge, restoration, accounts or continuing consequence",
+      "control24": "later context only; does not prove historical judicial knowledge",
+      "boundary": "later operation or financing does not validate predecessor authority or title"
+    }
+  ],
+  "reader_model": "ACTOR → CAPACITY → EVENT → SOURCE → DECISION/OMISSION → ASSET/RIGHT → CONSEQUENCE → CONTRARY/ALTERNATIVE → OPEN PROOF",
+  "release_scope": "Additive public presentation and structured context only; no court filing, email, authority contact, or publication of raw private evidence is authorised by this record."
+}
