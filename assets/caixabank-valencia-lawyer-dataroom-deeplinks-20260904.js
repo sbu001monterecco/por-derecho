@@ -8,7 +8,7 @@
 
   const fix = () => {
     document.querySelectorAll('a[href="../lender-of-record/"]').forEach(a => a.setAttribute('href','../../lender-of-record/'));
-    document.querySelectorAll('a[href="../insolvency-lpb/"]').forEach(a => a.setAttribute('href','../../insolvency-lpb/'));
+    document.querySelectorAll('a[href="../insolvency-lpb/"]').forEach(a => a.setAttribute('href','../../lpb-insolvency/'));
   };
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', fix, {once:true});
   else fix();
