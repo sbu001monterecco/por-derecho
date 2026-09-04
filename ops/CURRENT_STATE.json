@@ -6,7 +6,8 @@
   "repository": {
     "name": "sbu001monterecco/por-derecho",
     "branch": "main",
-    "pre_release_anchor_sha": "5c0538407699fe8c94424ae752fa797063aac2a4",
+    "pre_release_anchor_sha": "bebc0ce0a1cd282b689e27be4ee4f40ff149369e",
+    "source_main_note": "Includes PR #1429 three-track page enhancement merged during preparation of this control-plane release.",
     "runtime_rule": "Always fetch current remote main. This anchor is provenance only and never a substitute for the live head."
   },
   "control_tower": {
