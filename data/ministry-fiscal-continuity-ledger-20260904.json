@@ -4,17 +4,16 @@
   "date": "2026-09-04",
   "repository": "sbu001monterecco/por-derecho",
   "base_main": "b8ded173b06f17aaf91569f051dd11e621b139ae",
-  "purpose": "Join formal RedSARA/AGE filings, later Ministerio Fiscal email events and prosecution-side responses without collapsing evidential meaning, procedural identity or institutional numbering.",
+  "purpose": "Join formal RedSARA/AGE filings, later Ministerio Fiscal email events and prosecution-side responses without collapsing evidential meaning, procedural identity or channel status.",
   "governing_rules": [
     "A RedSARA/AGE receipt proves presentation or receipt only to the extent recorded; it does not prove merits, investigation, adoption, agreement or truth.",
     "A sent email is not a formal RedSARA filing unless a corresponding formal receipt is independently identified.",
     "DRAFT items are excluded from sent/received denominators.",
     "SELF_ARCHIVE items are provenance only and are not delivery evidence.",
-    "An incoming acknowledgement, decree or routing communication is response-side evidence and must not be counted as a claimant filing.",
+    "An incoming acknowledgement, decree or institutional response is response-side evidence and must not be counted as a claimant filing.",
     "Duplicates, corrections and controlling-version messages must be linked and must not inflate substantive-event counts.",
-    "The same numeric expediente reference must not be treated as the same proceeding when the organ, source fingerprint or source content differs.",
     "The same filename is not file identity; byte identity requires a cryptographic hash match.",
-    "Routing or incorporation instructions are not merits acceptance, opening of an investigation, a finding or proof of criminal conduct."
+    "An archive, acknowledgement or routing act does not itself prove the truth or falsity of the underlying allegations."
   ],
   "formal_layers": [
     {
@@ -93,74 +92,66 @@
       "counting_rule": "PROVENANCE_ONLY_NOT_DELIVERY"
     }
   ],
-  "reference_identity_controls": [
+  "source_verifications": [
     {
-      "collision_id": "MF-REF-COLLISION-745-2026-01",
-      "shared_short_reference": "Exp. Gub. 745/2026",
-      "status": "SEPARATE_SOURCE_BOUND_RECORDS_REQUIRED",
-      "reason": "Two three-page official-source records use the short reference 745/2026 and the same filename but have different byte fingerprints, organs/context and operative content. Numeric reference and filename therefore cannot be used as identity keys.",
-      "records": [
-        {
-          "source_bound_id": "NAT-FIS-004",
-          "organ_context": "Fiscal Inspection / Inspección Fiscal",
-          "public_route_es": "/es/fiscalia-inspeccion-exp-gub-745-2026/",
-          "public_route_en": "/en/public-prosecution-inspection-exp-gub-745-2026/",
-          "source_filename": "OFICIO Y DECRETO EXP. 745-26.pdf",
-          "source_sha256": "1e09c8eb3bce26e28dc5f22e5d6ebad3f458212cf8d85f5920e869fa42554abe",
-          "associated_registration": "REGAGE26e00070235775",
-          "controlled_public_summary": "Existing Inspection-specific dossier records an archive decree notified 26 August 2026 and a separate review/preservation track.",
-          "status": "EXISTING_CANONICAL_PUBLIC_RECORD",
-          "boundary": "No inference is made that this source is identical to the Las Palmas Provincial Prosecutor source below."
-        },
-        {
-          "source_bound_id": "PD-MF-LPGC-GUB-745-20260825",
-          "canonical_state": "PROVISIONAL_SOURCE_BOUND_IDENTIFIER_PENDING_MASTER_REGISTER_RECONCILIATION",
-          "organ_context": "Fiscalía Provincial de Las Palmas",
-          "decree_date": "2026-08-25",
-          "received_via_email_date": "2026-08-26",
-          "source_filename": "OFICIO Y DECRETO EXP. 745-26.pdf",
-          "source_sha256": "0d96284231db1d126cf9477dd5f9b837819bde475e89623ab512749396eda4cf",
-          "controlled_source_summary": [
-            "The official document states that six writings received on 13, 17 and 20 August 2026 were referred to the Special Anti-Corruption Prosecutor so that they could be incorporated into ET 46/2025.",
-            "It separately states that a writing received on 10 August 2026 under REGAGE 26e00079131250 was referred on 11 August to the Arrecife Area Prosecutor for DI 22/2026.",
-            "The decree references an earlier 20 April registration REGAGE 26e00036156931 and a 2 July registration REGAGE 26e00058990118 in the prior referral context.",
-            "The operative part orders referral of the six writings for incorporation into ET 46/2025 and notification to the complainant; the governmental file is then archived in that administrative/routing sense."
-          ],
-          "evidence_class": "OFFICIAL_RESPONSE_ROUTING_INCORPORATION_INSTRUCTION",
-          "status": "SOURCE_VERIFIED_CONNECTED_EMAIL_ATTACHMENT",
-          "privacy": "No personal identifiers, signature certificate identifiers, address, email or phone are reproduced in the public derivative.",
-          "boundary": "Referral/incorporation instruction does not by itself establish merits examination, investigation opening, adoption of allegations, agreement, criminal characterisation or guilt."
-        }
+      "verification_id": "MF-EG745-BYTE-PARITY-20260904",
+      "master_id": "NAT-FIS-004",
+      "reference": "E.G. 745/2026",
+      "organ": "Inspección Fiscal de la Fiscalía General del Estado",
+      "source_filename": "OFICIO Y DECRETO EXP. 745-26.pdf",
+      "pages": 3,
+      "bytes": 1111997,
+      "sha256": "1e09c8eb3bce26e28dc5f22e5d6ebad3f458212cf8d85f5920e869fa42554abe",
+      "sha512": "e31f92fcf4462aa79d963e62d20b5afb7d84820785daeb823eb313c24c356a40d9846498ed770bb39368bfdfba07dda6214827b85f32a316d0bfbf843cff8196",
+      "associated_registration": "REGAGE26e00070235775",
+      "received_notification_date": "2026-08-26",
+      "public_route_es": "/es/fiscalia-inspeccion-exp-gub-745-2026/",
+      "public_route_en": "/en/public-prosecution-inspection-exp-gub-745-2026/",
+      "status": "EXACT_FILE_PARITY_CONFIRMED_WITH_EXISTING_PUBLIC_CONTROL",
+      "source_summary": [
+        "Page 1 is an Inspección Fiscal notification dated 26 August 2026 attaching the decree for E.G. 745/2026.",
+        "The decree states that an email entered Inspección Fiscal on 3 August 2026 and reproduces the request for an independent inspection review of post-knowledge conduct by the Fiscalía Provincial de Las Palmas.",
+        "The decree characterises the filing as confused and incoherent, cites Article 66.1(c) of Law 39/2015, and states that no concrete irregularity attributable to a particular prosecutor in a particular matter was specified.",
+        "The operative part archives E.G. 745/2026 and orders notification to the complainant.",
+        "Page 3 states the optional reconsideration and direct contentious-administrative review routes and their stated one-month/two-month periods."
       ],
-      "resolution_rule": "Use organ + date + source hash + source-bound identifier. Never collapse records solely because both say 745/2026 or use the same filename."
+      "privacy": "The native PDF contains personal/contact information and signatures. Public derivatives must keep privacy minimisation and must not expose unnecessary personal identifiers or contact details.",
+      "boundary": "The decree is an official institutional outcome for this inspection expediente; it does not establish that the underlying allegations are true or false, nor does it establish criminality or misconduct."
     }
   ],
-  "procedural_bridges": [
+  "proceeding_continuity": [
     {
-      "from": "PD-MF-LPGC-GUB-745-20260825",
-      "to": "ET 46/2025",
-      "relationship": "six August writings ordered referred for incorporation",
-      "evidence_status": "OFFICIAL_SOURCE_STATES_ROUTING"
+      "proceeding": "NAT-FIS-004 / E.G. 745/2026",
+      "channel": "Inspección Fiscal",
+      "status": "ARCHIVED_BY_DECREE_26AUG2026",
+      "review_status": "PUBLIC_REPOSITORY_RECORD_SAYS_RECONSIDERATION_NOT_VERIFIED_AS_FILED_AS_OF_31AUG2026",
+      "link_rule": "Keep separate from DI 22/2026, EG 112/2026, Exp. Gub. 86/2026 and other prosecutor-side tracks unless a source establishes an actual procedural or routing link."
     },
     {
-      "from": "REGAGE26e00079131250",
-      "to": "DI 22/2026",
-      "relationship": "official source states referral on 11 August 2026 to Fiscalía de Área de Arrecife",
-      "evidence_status": "OFFICIAL_SOURCE_STATES_ROUTING"
+      "proceeding": "DI 22/2026",
+      "channel": "prosecution investigation track",
+      "status": "CONNECTED_EMAIL_CONTINUITY_PRESENT",
+      "note": "March-July and August 2026 response/outbound events exist in the connected email corpus; final event denominator and procedural effect remain to be reconciled source by source."
     },
     {
-      "from": "NAT-FIS-004",
-      "to": "PD-MF-LPGC-GUB-745-20260825",
-      "relationship": "same short reference and filename only",
-      "evidence_status": "IDENTITY_COLLISION_NOT_PROCEDURAL_CONNECTION"
+      "proceeding": "EG 112/2026",
+      "channel": "governmental/prosecution-side track",
+      "status": "CONNECTED_EMAIL_CONTINUITY_PRESENT",
+      "note": "August 2026 sent and inbound events exist; dedupe and exact operative-effect classification remain open."
+    },
+    {
+      "proceeding": "Exp. Gub. 86/2026",
+      "channel": "Arrecife prosecution-side governmental track",
+      "status": "CONNECTED_EMAIL_CONTINUITY_PRESENT",
+      "note": "August 2026 sent events exist; formal-receipt and substantive-response reconciliation remain open."
     }
   ],
   "next_closure": [
     "Reconcile every post-21-June RedSARA registration against the 97-entry checkpoint and later receipts.",
     "Deduplicate Gmail SENT by exact package and controlling-version evidence; classify DRAFT and SELF_ARCHIVE separately.",
     "Classify every inbound prosecution-side response by organ, exact proceeding/event and operative effect.",
-    "Allocate a stable canonical master-proceeding identity to the Las Palmas Provincial Exp. Gub. 745/2026 record without reusing NAT-FIS-004 unless a source proves they are the same institutional expediente.",
-    "Update public navigation only after the identity collision is preserved as two source-bound records.",
-    "Do not publish the unredacted official PDF; preserve a minimised derivative and source fingerprint only."
+    "Attach each formal registration and response event to the correct Master Proceeding ID without merging independent tracks by theme alone.",
+    "Preserve E.G. 745/2026 source-byte parity and the existing NAT-FIS-004 route; do not create a duplicate proceeding identity.",
+    "Do not publish the unredacted official PDF; keep public derivatives minimised and source-fingerprinted."
   ]
 }
