@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Estándar de visibilidad de la prueba · Por Derecho</title>
+<meta name="description" content="Estándar de Por Derecho para preservar fuentes nativas, publicar texto buscable y mostrar imágenes probatorias derivadas de la fuente con redacción controlada.">
+<link rel="canonical" href="https://sbu001monterecco.github.io/por-derecho/es/visibilidad-evidencia/">
+<link rel="alternate" hreflang="en" href="https://sbu001monterecco.github.io/por-derecho/en/evidence-visibility/">
+<link rel="stylesheet" href="../../assets/styles.css">
+<script src="../../assets/site.js?v=20260904e" defer></script>
+<style>
+.evis-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1rem}.evis-card,.evis-boundary{border:1px solid rgba(100,100,100,.3);border-radius:14px;padding:1.15rem;background:var(--surface,#fff)}.evis-step{font-size:2rem;font-weight:900;opacity:.32}.evis-status{display:inline-block;border:1px solid currentColor;border-radius:999px;padding:.18rem .55rem;font-size:.78rem;font-weight:800}.evis-boundary{border-left:5px solid #a46a00}.evis-list li{margin:.55rem 0}.tight{max-width:82ch}
+</style>
+</head>
+<body class="dossier-page">
+<a class="skip-link" href="#content">Saltar al contenido</a>
+<header class="site-header"><div class="shell header-inner"><a class="brand" href="../"><span class="brand-mark">PD</span><span class="brand-copy"><strong>Por Derecho</strong><small>Expediente probatorio visible</small></span></a><nav class="main-nav"><a href="../uria-menendez-sun-park/">Uría / Sun Park</a><a href="../puzzle/">Puzzle</a><a href="#standard">Estándar</a><a class="language-link" href="../../en/evidence-visibility/">EN</a></nav></div></header>
+<main id="content">
+<section class="dossier-hero"><div class="shell dossier-hero-grid"><div><p class="eyebrow">Control canónico · PD-EVIS-20260904-01</p><h1>La prueba debe ser visible además de buscable</h1><p class="lead">Por Derecho exige ahora que todo elemento probatorio declare tres estados coordinados: la fuente nativa, el texto buscable/OCR y las imágenes de prueba derivadas de la fuente. La redacción se gestiona mediante un derivado público con huella propia.</p><div class="actions"><a class="button" href="#standard">Leer la regla operativa</a><a class="button secondary" href="../../data/evidence-visibility/uria-ricpe-sun-park-20260904.json">Abrir el primer registro</a></div></div><aside class="dossier-status"><div><span>Se aplica a</span><strong>Todos los roles y relevos de continuidad</strong></div><div><span>Despliegue actual</span><strong>Estándar activo · migración histórica parcial</strong></div><div><span>Prohibido</span><strong>Sustitutos sintéticos presentados como prueba</strong></div></aside></div></section>
+
+<section class="section" id="standard"><div class="shell"><p class="kicker">Tríada obligatoria del objeto probatorio</p><h2>Preservar. Buscar. Mostrar.</h2><div class="evis-grid">
+<article class="evis-card"><div class="evis-step">01</div><h3>Fuente nativa</h3><p>Preservar el archivo original o identificar su custodio externo controlado. Registrar nombre, procedencia, tamaño, páginas o duración, SHA-256, variantes y límites de identidad.</p></article>
+<article class="evis-card"><div class="evis-step">02</div><h3>Texto buscable</h3><p>Publicar extracción nativa, transcripción u OCR, con método y límites. Añadir el idioma de origen y una traducción claramente identificada cuando sea material.</p></article>
+<article class="evis-card"><div class="evis-step">03</div><h3>Imágenes de prueba</h3><p>Renderizar imágenes de página completa derivadas de la fuente y en orden. Miniaturas, recortes y destacados complementan, pero no sustituyen, la página completa.</p></article>
+</div></div></section>
+
+<section class="section alt"><div class="shell"><p class="kicker">Redacción</p><h2>Protección pública sin destruir la custodia</h2><div class="evis-boundary tight"><p>Cuando la exposición íntegra no proceda, el original sin redactar permanece preservado en su capa controlada. Se crea un derivado público distinto, aplanado, identificado mediante hash, revisado y enlazado a sus propias imágenes y texto buscable.</p><p><strong>La redacción es un proceso de derivación: no es borrado, edición silenciosa ni sustitución de la prueba.</strong></p></div></div></section>
+
+<section class="section"><div class="shell"><p class="kicker">Todos los roles</p><h2>Deberes de continuidad</h2><div class="evis-grid">
+<article class="evis-card"><h3>Worker</h3><p>Registra la fuente, la procedencia, los estados de texto/imagen/redacción y las lagunas exactas.</p></article>
+<article class="evis-card"><h3>Integrator</h3><p>Reconcilia variantes, conserva todo contenido único e integra la tríada completa en el paquete canónico.</p></article>
+<article class="evis-card"><h3>Verifier</h3><p>Comprueba hashes, orden de páginas, enlace imagen/texto, seguridad de la redacción y lectura pública.</p></article>
+<article class="evis-card"><h3>Publication Coordinator</h3><p>Controla el límite público, la aprobación del derivado, el commit desplegado y la presentación pública.</p></article>
+<article class="evis-card"><h3>Continuidad / cierre</h3><p>Traslada cada laguna de fuente, imagen, OCR, traducción y redacción al hilo siguiente.</p></article>
+</div></div></section>
+
+<section class="section alt"><div class="shell"><p class="kicker">Estado real del despliegue</p><h2>Uría / RICPE / HAYA es el primer paquete registrado</h2><p class="tight">Los binarios conectados que sustentan el paquete Uría todavía no están almacenados en el árbol Git. Se preservan los hashes y notas buscables existentes, mientras que la prueba visual queda expresamente marcada <span class="evis-status">SOURCE PENDING</span>. No se muestra ninguna imagen inventada. La siguiente fase controlada es materializar la fuente, revisar la redacción, renderizar todas las páginas, enlazar OCR/traducción y verificar las rutas.</p><div class="actions"><a class="button" href="../uria-menendez-sun-park/#evidence-visibility">Abrir el registro visual de Uría</a><a class="button secondary" href="../../data/evidence-visibility/uria-ricpe-sun-park-20260904.json">Examinar el estado estructurado</a></div></div></section>
+
+<section class="section"><div class="shell"><p class="kicker">Ciclo de vida</p><h2>La finalización se acredita elemento por elemento</h2><ul class="evis-list tight"><li><strong>SOURCE_PENDING</strong> — identificado, pero aún no custodiado por el repositorio.</li><li><strong>SOURCE_PRESERVED</strong> — fuente nativa o conectada controlada con huella registrada.</li><li><strong>TEXT_EXTRACTED</strong> — existe texto de fuente buscable.</li><li><strong>IMAGE_RENDERED</strong> — existen imágenes visuales derivadas de la fuente.</li><li><strong>REDACTED_PUBLIC_DERIVATIVE</strong> — existen derivado público aprobado, imágenes y texto.</li><li><strong>LIVE_VERIFIED</strong> — rutas y activos públicos leídos y verificados de forma independiente.</li></ul><p class="tight"><strong>Nunca se declara que un paquete está visualmente completo mientras un elemento material permanezca pendiente, parcial o bloqueado.</strong></p></div></section>
+</main>
+<footer class="site-footer"><div class="shell"><p>Por Derecho · prueba visible, buscable y segura para la continuidad.</p></div></footer>
+</body>
+</html>
