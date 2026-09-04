@@ -1,4 +1,11 @@
 {
+  "publication_id": "PD-PUB-MAT8584-20260903-01",
+  "current_state": "MERGED",
+  "owner": "sbu001monterecco",
+  "expected_routes": {
+    "es": ["es/matkator-8584-titulo-hotel-remate-restitucion/index.html"],
+    "en": ["en/matkator-8584-hotel-title-remate-restitution/index.html"]
+  },
   "manifest_id": "PD-PUB-MAT8584-20260903-01",
   "title": "Matkator finca 8584 hotel-title / remate / restitution multitrack release",
   "created": "2026-09-03",
@@ -6,6 +13,7 @@
   "status": "REPOSITORY_MERGED_PAGES_PENDING_DIRECT_READBACK",
   "principal_pr": 1407,
   "principal_merge_commit": "f53f8a044aac804281aea869faa5b4eb7eeb1cc4",
+  "merge_sha": "f53f8a044aac804281aea869faa5b4eb7eeb1cc4",
   "public_routes": [
     "/es/matkator-8584-titulo-hotel-remate-restitucion/",
     "/en/matkator-8584-hotel-title-remate-restitution/"
@@ -68,6 +76,9 @@
     "legacy_loader_preserved": true,
     "prior_handover_preserved": true,
     "privacy_closeout_required": true
+  },
+  "validation": {
+    "evidence": "Principal release PR 1407 merged at f53f8a044aac804281aea869faa5b4eb7eeb1cc4; repository verification records the release on main with legacy loader continuity preserved."
   },
   "live_verification": "DIRECT_PAGES_ROUTE_READBACK_PENDING"
 }
