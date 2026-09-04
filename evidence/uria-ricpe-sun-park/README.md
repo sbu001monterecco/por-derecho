@@ -19,11 +19,12 @@ This register is a documentary navigation layer. A connection is **not** a findi
 - Existing RICPE/Sun Park record: `/en/ric-private-equity-sun-park/` and `/es/ric-private-equity-sun-park/`
 - Existing professional-distribution record: `/en/aafc-ricpe-professional-distribution/` and `/es/aafc-ricpe-professional-distribution/`
 
-## Source notes / translations
+## Source notes / translations / integrity
 
 - `2015-creditor-haya-uria-source-note.md` — April–July 2015 creditor/HAYA/Uría chronology, including the counter-evidence that on 30 April Cuatrecasas reported Uría did not yet have instructions to act for HAYA.
 - `caixabank-defence-20240129-source-note.md` — page-controlled 2024 CaixaBank defence source note and party-advocacy boundary.
-- `control21-09jul2026-xii-bis-translation.md` — complete Spanish text and full English translation of Section XII bis of the recovered final consolidated Control 21 version, plus receipt/identity controls.
+- `control21-09jul2026-xii-bis-translation.md` — complete Spanish text and full English translation of Section XII bis of the recovered current connected Control 21 version, plus receipt/identity controls.
+- `SOURCE_INTEGRITY_RECONCILIATION_04SEP2026.md` — current connected-source fingerprints versus legacy #1446 fingerprints; no silent conflation of same-named binary variants.
 - `/data/puzzle/uria-2015-counterevidence-supplement.json` — structured 2015 counter-evidence/relationship supplement.
 
 ## Event register
@@ -56,35 +57,37 @@ The certification is a primary record. It describes Sun Park as still at a **ver
 
 ### 21 July 2021 — CAM filing
 
-The CAM filing supplies the RICPE certification into the documentary record. The filing and the certification are separately hashed below.
+The CAM filing supplies the RICPE certification into the documentary record. The filing and the certification are separately registered.
 
 ### 29 January 2024 — CaixaBank defence / LPB insolvency record
 
-The preserved 47-page CaixaBank defence in PO 1859/2023-9 identifies **Raimon Tagliavini Sansa** and **David García Martín** as counsel and expressly relies on **Luchy Playa Blanca, S.L. / Concurso 36/2012 / the Administración Concursal record**, including standing and res judicata arguments based on recognised credits.
+The recovered connected 47-page CaixaBank defence in PO 1859/2023-9 identifies **Raimon Tagliavini Sansa** and **David García Martín** as counsel and expressly relies on **Luchy Playa Blanca, S.L. / Concurso 36/2012 / the Administración Concursal record**, including standing and res judicata arguments based on recognised credits.
 
 Publication status: **PRIMARY LITIGATION DOCUMENT — CAIXABANK DEFENCE POSITION**. The pleaded legal consequences are not judicial findings and the source does not itself establish a conflict.
 
-### 9 July 2026 — recovered consolidated filing version and Decanato receipt
+### 9 July 2026 — recovered connected Control 21 version and Decanato receipt
 
-The recovered final consolidated pre-filing DOCX contains the request:
+The current connected DOCX contains the request:
 
 > “Requerir informes o notas de Uría Menéndez, PwC, asesores fiscales, arquitectos, RICPE y Consejo de Administración sobre titularidad, cargas, idoneidad, riesgos y alcance real del proyecto Sun Park en 2020-2021.”
 
-The preserved Decanato receipt documents reception/submission on 9 July 2026 and visibly records procedure no. **1901/2026**. It does **not** independently prove byte-for-byte identity between the recovered DOCX and the physically filed document. Exact filing time, exact filed-byte identity, and any later court ruling/production on this specific request remain open unless closed by court-native evidence.
+The current connected Decanato receipt supports reception/submission on 9 July 2026 and visibly records procedure no. **1901/2026**. It does **not** independently prove byte-for-byte identity between the recovered DOCX and the physically filed document. Exact filing time, exact filed-byte identity, and any later court ruling/production on this specific request remain open unless closed by court-native evidence.
 
 The complete Spanish Section XII bis and full English translation are preserved in `control21-09jul2026-xii-bis-translation.md`.
 
-## Preserved binaries / integrity anchors
+## Binary integrity — current connected sources vs legacy variants
 
-| ID | Preserved filename | SHA-256 | Status |
+The current connected-source binaries re-read on 4 September 2026 produce the hashes below. Earlier #1446 records contain different fingerprints for same-named files. Those legacy fingerprints are retained as alternate/historical provenance in `SOURCE_INTEGRITY_RECONCILIATION_04SEP2026.md`; they are not silently overwritten or treated as byte-identical.
+
+| ID | Current connected filename | Current connected SHA-256 | Current status |
 |---|---|---|---|
-| doc-ricpe-cert-20210720 | `RICPE_Certificacion_Enrique_Guerra_20JUL2021.pdf` | `241928ea649933609441644567dd50cb97b87d17bafac850c90aca3bbda37b80` | preserved original binary |
-| doc-cam-filing-20210721 | `CAM_Escrito_Aporta_Certificacion_RICPE_21JUL2021.pdf` | `efda379e7b2ae0bfbbd80859a42332d5aae99ccd9644a04003760158b54b05fd` | preserved original binary |
-| doc-caixabank-defence | `CONTESTACION.pdf` | `e9cfcc7f364939bab3c796dde132ccc28e7b42e3b98470436af0e4e56eca9669` | preserved original binary; primary 2024 defence source |
-| doc-control21-20260709 | `CONTROL21_Ampliacion_JDAM_LPAM_AcostaMatos_09JUL2026_FINAL_CONSOLIDADA_PRINT_FILE_FIRMA.docx` | `6741dcbfb1a2201c7773141bcfad292d101041560e599aac39178ea9530623c9` | recovered final consolidated pre-filing version |
-| doc-receipt-20260709 | `Ampliacion Proc.1901-2026 (CAM et al) 09JUL2026.jpeg` | `fb9f9f5b65735fe0f53318d7d122801520b0968dc34a1bac4f6505f20e2ca967` | preserved receipt image |
+| doc-caixabank-defence | `CONTESTACION.pdf` | `abbaf13c655058635fbd37395ad2e8699c1c91918b6ef75c8a07b90b9b97b73b` | current connected Gmail binary; 47 pages; matches existing repository source-register fingerprint |
+| doc-control21-20260709 | `CONTROL21_Ampliacion_JDAM_LPAM_AcostaMatos_09JUL2026_FINAL_CONSOLIDADA_PRINT_FILE_FIRMA.docx` | `d13ddbc3c55c0d7f4753b25e0444275ec5bf1b21e0b378fcfd6315550ba78f09` | current connected Gmail binary; 18 pages; matches existing repository source-register fingerprint |
+| doc-receipt-20260709 | `Ampliacion Proc.1901-2026 (CAM et al) 09JUL2026.jpeg` | `dfad6f405b7a2ec047a98a7183a9cbfd0698427d3925d02b2a50b4de76de8f71` | current connected Gmail receipt binary; visible 9 Jul 2026 Decanato stamp / procedure 1901/2026 |
 
-The current GitHub connector supports UTF-8 repository writes but does not expose a local-file/binary upload action. For that reason the integration publishes integrity/source registers while preserving the exact originals and hashes. Binary-mirror fields remain pending rather than falsely claiming the originals were uploaded.
+The previously registered RICPE certification and CAM filing fingerprints remain part of the evidence register; they were not re-hashed from a newly recovered connected binary during this pass and are therefore not relabelled as newly verified here.
+
+The current GitHub connector supports UTF-8 repository writes but does not expose a local-file/binary upload action. Binary public-mirror status remains separate from source custody.
 
 ## Production / preservation targets
 

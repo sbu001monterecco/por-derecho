@@ -3,11 +3,17 @@
 Source date: 29 January 2024  
 Proceeding: **Procedimiento Ordinario 1859/2023-9 — Juzgado de Primera Instancia nº 27 de Valencia**  
 Defendant: **CaixaBank, S.A.**  
-Preserved source: `CONTESTACION.pdf`  
-SHA-256: `e9cfcc7f364939bab3c796dde132ccc28e7b42e3b98470436af0e4e56eca9669`  
+Recovered connected-source filename: `CONTESTACION.pdf`  
+Current connected-source SHA-256: `abbaf13c655058635fbd37395ad2e8699c1c91918b6ef75c8a07b90b9b97b73b`  
+Current connected-source size: 941,946 bytes  
+Legacy #1446 fingerprint retained for reconciliation: `e9cfcc7f364939bab3c796dde132ccc28e7b42e3b98470436af0e4e56eca9669`  
 Status: **PRIMARY LITIGATION DOCUMENT — PARTY ADVOCACY / DEFENCE POSITION, NOT A JUDICIAL FINDING**
 
-## Counsel identified in the filed defence
+## Binary-integrity control
+
+The connected Gmail attachment recovered and re-hashed on 4 September 2026 produces `abbaf13c…`. That same fingerprint is already registered in the repository's pre-existing `uria-ricpe-caixabank-source-register-20260904.js` for the 47-page public raw defence. The older #1446 manifest contained a different fingerprint, `e9cfcc7f…`, for a file with the same display filename. The matching legacy binary has not been re-located during this pass. Do not conflate the fingerprints or assume byte identity. See `SOURCE_INTEGRITY_RECONCILIATION_04SEP2026.md`.
+
+## Counsel identified in the defence
 
 Page 1 identifies the legal direction as:
 

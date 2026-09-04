@@ -2,8 +2,10 @@
 
 ## Source / filing identity control
 
-Recovered source filename: `CONTROL21_Ampliacion_JDAM_LPAM_AcostaMatos_09JUL2026_FINAL_CONSOLIDADA_PRINT_FILE_FIRMA.docx`  
-SHA-256: `6741dcbfb1a2201c7773141bcfad292d101041560e599aac39178ea9530623c9`  
+Recovered connected-source filename: `CONTROL21_Ampliacion_JDAM_LPAM_AcostaMatos_09JUL2026_FINAL_CONSOLIDADA_PRINT_FILE_FIRMA.docx`  
+Current connected-source SHA-256: `d13ddbc3c55c0d7f4753b25e0444275ec5bf1b21e0b378fcfd6315550ba78f09`  
+Current connected-source size: 62,288 bytes  
+Legacy #1446 fingerprint retained for reconciliation: `6741dcbfb1a2201c7773141bcfad292d101041560e599aac39178ea9530623c9`  
 Document title: **Control 21 - Ampliación penal - Sun Park / MYND Yaiza**  
 Document description: **Documento para presentación judicial presencial - 9 julio 2026 - Decanato de Las Palmas**  
 Length: 18 pages  
@@ -12,9 +14,14 @@ Addressed to: **AL JUZGADO DE INSTRUCCIÓN DE LAS PALMAS DE GRAN CANARIA QUE POR
 Internal reference: **Control 21**  
 Relevant section: **XII bis**, pages 7–8  
 Recovered pre-presentation email timestamp: 8 July 2026, 16:54 (+01:00)  
-Physical presentation evidence: preserved Decanato receipt dated **9 July 2026**, visibly bearing procedure no. **1901/2026**  
+Physical presentation evidence: connected-source Decanato receipt dated **9 July 2026**, visibly bearing procedure no. **1901/2026**  
+Current connected-source receipt SHA-256: `dfad6f405b7a2ec047a98a7183a9cbfd0698427d3925d02b2a50b4de76de8f71`  
+Current connected-source receipt size: 295,037 bytes  
+Legacy #1446 receipt fingerprint retained for reconciliation: `fb9f9f5b65735fe0f53318d7d122801520b0968dc34a1bac4f6505f20e2ca967`  
 Exact filing time: **NOT ESTABLISHED by the current receipt/source set**  
 Court ruling on this production request: **NOT YET ESTABLISHED in the sources recovered for this note**
+
+The current connected DOCX hash `d13ddbc3…` independently matches the fingerprint already present in the repository's existing Uría/RICPE/CaixaBank source-register runtime. The earlier #1446 manifest contained a different fingerprint for a same-named DOCX. The legacy binary has not been re-located in this pass. The same issue exists for the receipt. These byte-level variants are preserved as an integrity question rather than silently conflated; see `SOURCE_INTEGRITY_RECONCILIATION_04SEP2026.md`.
 
 The receipt supports physical reception/submission on 9 July 2026. It does **not** prove byte-for-byte identity between this recovered DOCX and the exact court-filed packet. That remains an explicit evidence gap until closed by a court-certified copy, native filing-system copy/hash or equivalent source.
 
@@ -54,11 +61,13 @@ The Court is not being asked at this stage to declare that the asterisk was frau
 
 ## What the request proves — and does not prove
 
-**DOCUMENTED:** the recovered final consolidated version contains the production request above and ties it directly to the June 2020 brochure and November 2020 webinar history.
+**DOCUMENTED:** the current recovered final consolidated version contains the production request above and ties it directly to the June 2020 brochure and November 2020 webinar history.
 
-**DOCUMENTED:** a preserved Decanato receipt supports physical reception/submission on 9 July 2026 and visibly records procedure no. 1901/2026.
+**DOCUMENTED:** the current connected Decanato receipt supports physical reception/submission on 9 July 2026 and visibly records procedure no. 1901/2026.
 
 **NOT YET ESTABLISHED:** that the recovered DOCX is byte-for-byte identical to the document physically filed.
+
+**NOT YET ESTABLISHED:** that the legacy #1446 DOCX/receipt fingerprints represent byte-identical copies of the current connected binaries or merely alternate exported/saved variants.
 
 **NOT YET ESTABLISHED:** that Uría created, held, reviewed or relied upon Sun Park-specific reports concerning title, encumbrances, suitability or risk. The filing asks for those materials; the request is not evidence that they exist or what they contain.
 
