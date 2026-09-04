@@ -32,6 +32,7 @@
     load('caixabank-valencia-full-source-pdfs-20260904.js', 'data-caixabank-valencia-full-source-pdfs-loader', '20260904b');
     load('caixabank-borja-witness-claimant-clarification-20260904.js', 'data-borja-witness-claimant-clarification-loader', '20260904a');
     load('ricpe-cam-conflict-substance-claimant-statement-20260904.js', 'data-ricpe-cam-conflict-substance-statement-loader', '20260904a');
+    load('uria-ricpe-caixabank-source-register-20260904.js', 'data-uria-ricpe-caixabank-source-register-loader', '20260904a');
   };
 
   const loadHotelFincaSystem = () => {
