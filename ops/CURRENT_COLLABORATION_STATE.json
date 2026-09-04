@@ -1,0 +1,104 @@
+{
+  "schema": "por-derecho.current-collaboration-state.v2",
+  "control_id": "PD-MTCP-20260904-01",
+  "status": "ACTIVE",
+  "effective_when": "present on main",
+  "repository": {
+    "name": "sbu001monterecco/por-derecho",
+    "branch": "main",
+    "pre_release_anchor_sha": "bebc0ce0a1cd282b689e27be4ee4f40ff149369e",
+    "source_main_note": "Includes PR #1429 three-track page enhancement merged during preparation of this control-plane release.",
+    "runtime_rule": "Always fetch current remote main. This anchor is provenance only and never a substitute for the live head."
+  },
+  "control_tower": {
+    "issue_number": 1428,
+    "issue_url": "https://github.com/sbu001monterecco/por-derecho/issues/1428",
+    "purpose": "Canonical multi-thread integration queue and coordination bus"
+  },
+  "operating_model": {
+    "parallel_workers_allowed": true,
+    "single_active_integrator": true,
+    "default_related_thread_role": "WORKER",
+    "worker_may_publish_independently": false,
+    "one_logical_release_one_integration_pr_norm": true,
+    "thread_handover_default": "DO_NOT_CREATE_IF_CANONICAL_DELTA_CAN_BE_STORED_DIRECTLY",
+    "pre_control_open_pr_default": "LEGACY_BACKLOG"
+  },
+  "runtime_integration_resolution": {
+    "active_integrator_is_dynamic": true,
+    "resolve_from": [
+      "current remote main",
+      "Issue #1428",
+      "open current-main-based integration/publication PRs",
+      "explicit current user instruction"
+    ],
+    "rule": "If an active integration lane exists, all other related threads remain workers unless the user expressly transfers/replaces the integrator role."
+  },
+  "startup_order": [
+    "fetch current remote main",
+    "read AGENTS.md",
+    "read .github/governance/NEW_THREAD_SCOPE_AND_CONTINUITY_GATE_02SEP2026.md",
+    "read .github/governance/MULTI_THREAD_COLLABORATION_AND_PUBLICATION_V2_04SEP2026.md",
+    "read ops/CURRENT_COLLABORATION_STATE.json",
+    "read Issue #1428 and the relevant task issue",
+    "read only specialist controls materially required by the task"
+  ],
+  "wake_command": "Por Derecho: wake up. Refresh current main, apply PD-MTCP-20260904-01, work as a worker unless you are the active integrator, preserve only your canonical delta, and do not independently publish.",
+  "worker_delta_required_fields": [
+    "task",
+    "canonical_ids",
+    "sources",
+    "corrections",
+    "new_propositions",
+    "open_gaps",
+    "proposed_changes",
+    "conflicts_with_current_main",
+    "readiness"
+  ],
+  "worker_readiness_states": [
+    "READY_TO_INTEGRATE",
+    "BLOCKED_SOURCE_GAP",
+    "RESEARCH_ONLY",
+    "SUPERSEDED_BY_MAIN"
+  ],
+  "publication_pipeline": [
+    "refresh current main",
+    "collect ready deltas",
+    "reconcile canonical collisions once",
+    "generate deterministic derived artifacts before merge",
+    "run scoped and preservation/publication validation",
+    "CI verifies determinism and does not repair main",
+    "one integration PR",
+    "merge",
+    "deploy",
+    "verify exact merged SHA and affected routes",
+    "update task issues and Control Tower queue"
+  ],
+  "post_merge_policy": {
+    "normal_content_mutation_by_ci": false,
+    "normal_role": ["deploy", "verify", "report"],
+    "legacy_mutating_workflows": "MIGRATION_DEBT_NOT_A_PATTERN_FOR_NEW_WORK"
+  },
+  "legacy_pr_policy": {
+    "scope": "PRs opened before this control is effective",
+    "default": "LEGACY_BACKLOG",
+    "allowed_reclassification": [
+      "REACTIVATE",
+      "DELTA_SOURCE",
+      "SUPERSEDED",
+      "DRAFT_BACKLOG",
+      "CLOSE_NO_UNIQUE_DELTA"
+    ],
+    "wholesale_merge_without_current_main_reconciliation": false
+  },
+  "external_authority": {
+    "repository_publication": "ONLY_WHEN_USER_AUTHORIZES_THE_DEFINED_PUBLICATION_SCOPE",
+    "email": false,
+    "filing": false,
+    "red_sara_age_submission": false,
+    "portal_submission": false,
+    "authority_contact": false,
+    "journalist_contact": false,
+    "social_publication": false
+  }
+}
