@@ -1,0 +1,55 @@
+name: Migrate GC-HC-010 master projection
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/migrate_gc_hc_010_master_projection_04sep2026.py'
+      - '.github/workflows/migrate-gc-hc-010-master-projection-04sep2026.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: gc-hc-010-master-projection-migration
+  cancel-in-progress: false
+
+jobs:
+  migrate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check out main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Apply deterministic Reg. No. 24 correction and rebuild projection
+        run: python3 scripts/migrate_gc_hc_010_master_projection_04sep2026.py
+
+      - name: Validate Control 21-22-24 continuity
+        run: python3 scripts/validate_control_21_22_24_continuity.py
+
+      - name: Audit master proceedings publication
+        run: python3 scripts/audit_master_proceedings_publication.py
+
+      - name: Commit generated canonical/projection correction if needed
+        shell: bash
+        run: |
+          set -euo pipefail
+          if git diff --quiet -- archive/PROCEEDINGS_MASTER_REGISTER.csv assets/data/proceedings-master-public-v1.json; then
+            echo 'GC-HC-010 canonical row and public projection already current.'
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add archive/PROCEEDINGS_MASTER_REGISTER.csv assets/data/proceedings-master-public-v1.json
+          git commit -m 'Correct GC-HC-010 Reg 24 master projection'
+          git push origin HEAD:main
