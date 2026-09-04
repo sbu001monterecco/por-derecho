@@ -1,8 +1,8 @@
 {
   "schema": "por-derecho.matter-identity-registry.v1",
   "registry_id": "PD-SP-IDENTITY-REGISTRY-001",
-  "control_date": "2026-09-03",
-  "status": "CANONICAL_ACTOR_REGISTER_COURT_HIERARCHY_AND_HOME_SEARCH_INDEXED_ARCHIVE_BACKFILL_OPEN",
+  "control_date": "2026-09-04",
+  "status": "CANONICAL_ACTOR_REGISTER_COURT_HIERARCHY_HOME_SEARCH_AND_URIA_BANKING_PROFESSIONAL_NETWORK_INDEXED_ARCHIVE_BACKFILL_OPEN",
   "id_formats": {
     "PERSON": "PD-SP-P-####",
     "ORGANISATION": "PD-SP-O-####",
@@ -17,10 +17,13 @@
     "A shared ID resolves identity only; it does not transfer knowledge, intent, control or liability.",
     "New controlled-surface identities require an ID before publication.",
     "Legal professionals and procuradores belong in the separate Professionals and representatives perimeter; representation does not make them part of the claimant/ownership perimeter or an adverse private party.",
-    "A parent court, each section or court position, every proceeding and every named office-holder remain separate canonical objects; hierarchy supplies navigation only."
+    "A parent court, each section or court position, every proceeding and every named office-holder remain separate canonical objects; hierarchy supplies navigation only.",
+    "Automated repository, Library or connected-email discovery creates a review candidate only; canonical admission requires a source, date/capacity boundary, homonym check and accountable reviewer decision.",
+    "Private-source discovery records use opaque source references and sanitised propositions only; raw email bodies, addresses, telephone numbers, privileged advice and unnecessary personal data never enter the public registry.",
+    "Every newly admitted identity must have a public search route plus at least one evidence, event, relationship or proceeding link, or an explicit open-linkage gap."
   ],
   "coverage": {
-    "state": "COMPLETE_FOR_CURRENT_CANONICAL_ACTOR_REGISTER_SOURCE_IDENTIFIED_HISTORIC_AUTHORITY_BACKFILL_GLOBAL_DOCKET_BACKFILL_OPEN",
+    "state": "COMPLETE_FOR_CURRENT_CANONICAL_ACTOR_REGISTER_AND_URIA_BANKING_PROFESSIONAL_NETWORK_SOURCE_IDENTIFIED_HISTORIC_AUTHORITY_AND_GLOBAL_DOCKET_BACKFILL_OPEN",
     "archive_backfill": "OPEN",
     "required_names": [
       "Construcciones Acosta Matos, S.A.",
@@ -173,107 +176,51 @@
       "Juzgado de Instrucción nº 4 de Arrecife",
       "Fernando Pérez Polo",
       "Juzgado de Primera Instancia nº 2 de Las Palmas de Gran Canaria",
-      "Juzgado de Primera Instancia nº 27 de Valencia"
+      "Juzgado de Primera Instancia nº 27 de Valencia",
+      "URÍA MENÉNDEZ ABOGADOS, S.L.P.",
+      "Haya Real Estate",
+      "Cerberus Capital Management, L.P.",
+      "Banco Financiero y de Ahorros, S.A.",
+      "Javier Rubio Sanz",
+      "Javier González Guimaraes-Da Silva",
+      "Raimon Tagliavini Sansa",
+      "David García Martín",
+      "Juan Francisco Falcón",
+      "Juan Miguel Hernández Herrera",
+      "Ángel Alonso Hernández",
+      "Aitor Cohrs",
+      "Ana María Tabada Pinzón",
+      "César Guadalupe Plaza"
     ]
   },
   "counts": {
-    "total": 351,
-    "PERSON": 165,
-    "ORGANISATION": 83,
+    "total": 365,
+    "PERSON": 175,
+    "ORGANISATION": 87,
     "STRUCTURE": 11,
     "INSTITUTION": 49,
     "PROCEEDING": 43
   },
   "parts": [
-    {
-      "path": "matter-identity-registry-v1.people.json",
-      "type": "PERSON",
-      "count": 120
-    },
-    {
-      "path": "matter-identity-registry-v1.professional-people.json",
-      "type": "PERSON",
-      "count": 27
-    },
-    {
-      "path": "matter-identity-registry-v1.joan-cruz.json",
-      "type": "PERSON",
-      "count": 1
-    },
-    {
-      "path": "matter-identity-registry-v1.la-laguna-judicial-people.json",
-      "type": "PERSON",
-      "count": 11
-    },
-    {
-      "path": "matter-identity-registry-v1.dp748-professional-people.json",
-      "type": "PERSON",
-      "count": 3
-    },
-    {
-      "path": "matter-identity-registry-v1.organisations.json",
-      "type": "ORGANISATION",
-      "count": 76
-    },
-    {
-      "path": "matter-identity-registry-v1.professional-organisations.json",
-      "type": "ORGANISATION",
-      "count": 7
-    },
-    {
-      "path": "matter-identity-registry-v1.structures.json",
-      "type": "STRUCTURE",
-      "count": 11
-    },
-    {
-      "path": "matter-identity-registry-v1.institutions.json",
-      "type": "INSTITUTION",
-      "count": 37
-    },
-    {
-      "path": "matter-identity-registry-v1.dp3205-institutions.json",
-      "type": "INSTITUTION",
-      "count": 1
-    },
-    {
-      "path": "matter-identity-registry-v1.la-laguna-judicial-institutions.json",
-      "type": "INSTITUTION",
-      "count": 5
-    },
-    {
-      "path": "matter-identity-registry-v1.court-hierarchy.json",
-      "type": "INSTITUTION",
-      "count": 2
-    },
-    {
-      "path": "matter-identity-registry-v1.proceedings.json",
-      "type": "PROCEEDING",
-      "count": 42
-    },
-    {
-      "path": "matter-identity-registry-v1.dp3205-proceedings.json",
-      "type": "PROCEEDING",
-      "count": 1
-    },
-    {
-      "path": "matter-identity-registry-v1.historic-arrecife-judicial-people-20260902.json",
-      "type": "PERSON",
-      "count": 2
-    },
-    {
-      "path": "matter-identity-registry-v1.historic-arrecife-judicial-institutions-20260902.json",
-      "type": "INSTITUTION",
-      "count": 3
-    },
-    {
-      "path": "matter-identity-registry-v1.historic-las-palmas-civil-judicial-people-20260902.json",
-      "type": "PERSON",
-      "count": 1
-    },
-    {
-      "path": "matter-identity-registry-v1.historic-las-palmas-civil-judicial-institutions-20260902.json",
-      "type": "INSTITUTION",
-      "count": 1
-    }
+    {"path": "matter-identity-registry-v1.people.json", "type": "PERSON", "count": 120},
+    {"path": "matter-identity-registry-v1.professional-people.json", "type": "PERSON", "count": 27},
+    {"path": "matter-identity-registry-v1.joan-cruz.json", "type": "PERSON", "count": 1},
+    {"path": "matter-identity-registry-v1.la-laguna-judicial-people.json", "type": "PERSON", "count": 11},
+    {"path": "matter-identity-registry-v1.dp748-professional-people.json", "type": "PERSON", "count": 3},
+    {"path": "matter-identity-registry-v1.uria-bankia-professional-people.json", "type": "PERSON", "count": 10},
+    {"path": "matter-identity-registry-v1.organisations.json", "type": "ORGANISATION", "count": 76},
+    {"path": "matter-identity-registry-v1.professional-organisations.json", "type": "ORGANISATION", "count": 7},
+    {"path": "matter-identity-registry-v1.uria-bankia-organisations.json", "type": "ORGANISATION", "count": 4},
+    {"path": "matter-identity-registry-v1.structures.json", "type": "STRUCTURE", "count": 11},
+    {"path": "matter-identity-registry-v1.institutions.json", "type": "INSTITUTION", "count": 37},
+    {"path": "matter-identity-registry-v1.dp3205-institutions.json", "type": "INSTITUTION", "count": 1},
+    {"path": "matter-identity-registry-v1.la-laguna-judicial-institutions.json", "type": "INSTITUTION", "count": 5},
+    {"path": "matter-identity-registry-v1.court-hierarchy.json", "type": "INSTITUTION", "count": 2},
+    {"path": "matter-identity-registry-v1.proceedings.json", "type": "PROCEEDING", "count": 42},
+    {"path": "matter-identity-registry-v1.dp3205-proceedings.json", "type": "PROCEEDING", "count": 1},
+    {"path": "matter-identity-registry-v1.historic-arrecife-judicial-people-20260902.json", "type": "PERSON", "count": 2},
+    {"path": "matter-identity-registry-v1.historic-arrecife-judicial-institutions-20260902.json", "type": "INSTITUTION", "count": 3},
+    {"path": "matter-identity-registry-v1.historic-las-palmas-civil-judicial-people-20260902.json", "type": "PERSON", "count": 1},
+    {"path": "matter-identity-registry-v1.historic-las-palmas-civil-judicial-institutions-20260902.json", "type": "INSTITUTION", "count": 1}
   ]
 }
