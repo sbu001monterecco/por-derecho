@@ -1,0 +1,74 @@
+name: Validate homepage mission-critical command surface
+
+on:
+  pull_request:
+    paths:
+      - 'assets/home-mission-critical-20260904.js'
+      - 'assets/site.js'
+      - 'data/homepage-mission-critical-20260904.json'
+      - 'archive/HOMEPAGE_MISSION_CRITICAL_CONTROL_04SEP2026.md'
+      - '.github/workflows/validate-homepage-mission-critical-20260904.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'assets/home-mission-critical-20260904.js'
+      - 'assets/site.js'
+      - 'data/homepage-mission-critical-20260904.json'
+      - 'archive/HOMEPAGE_MISSION_CRITICAL_CONTROL_04SEP2026.md'
+      - '.github/workflows/validate-homepage-mission-critical-20260904.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: JavaScript syntax
+        run: |
+          node --check assets/home-mission-critical-20260904.js
+          node --check assets/site.js
+
+      - name: Manifest and loader invariants
+        run: |
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          data=json.loads(Path('data/homepage-mission-critical-20260904.json').read_text(encoding='utf-8'))
+          assert data['control_id']=='PD-HOME-MISSION-CRITICAL-20260904-01'
+          assert data['implementation']['mode']=='additive-only'
+          site=Path('assets/site.js').read_text(encoding='utf-8')
+          assert 'home-mission-critical-20260904.js' in site
+          asset=Path('assets/home-mission-critical-20260904.js').read_text(encoding='utf-8')
+          required=['DP 1901/2026','DP 1956/2026','Control 24','INTERLINKED ≠ MERGED','INTERCONECTADO ≠ FUNDIDO','pd-home-case-map']
+          for token in required:
+              assert token in asset, token
+          print('homepage mission manifest and loader valid')
+          PY
+
+      - name: Non-removal and public-safety gate
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          asset=Path('assets/home-mission-critical-20260904.js').read_text(encoding='utf-8')
+          forbidden=['display:none','display: none','.remove()','removeChild(','replaceWith(','Y2231410X','sbu001@monterecco.com','BEGIN PRIVATE KEY','ghp_','github_pat_','sk-proj-']
+          hits=[x for x in forbidden if x.lower() in asset.lower()]
+          if hits:
+              raise SystemExit('forbidden homepage mutation/private token: '+', '.join(hits))
+          for p in ['es/index.html','en/index.html']:
+              text=Path(p).read_text(encoding='utf-8')
+              assert 'assets/site.js' in text
+              assert '<section class="hero"' in text
+          print('additive-only and public-safety gate valid')
+          PY
+
+      - name: Required route literals
+        run: |
+          grep -Fq "dp-1901-2026/" assets/home-mission-critical-20260904.js
+          grep -Fq "dp-1956-2026/" assets/home-mission-critical-20260904.js
+          grep -Fq "control-24-insolvency-judge-complaint-36-2012/" assets/home-mission-critical-20260904.js
+          grep -Fq "control-24-denuncia-juez-concurso-36-2012/" assets/home-mission-critical-20260904.js
+          grep -Fq "three-track-full-digitisation-20260904.json" assets/home-mission-critical-20260904.js
