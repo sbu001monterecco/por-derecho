@@ -55,6 +55,11 @@ jobs:
               "rf'(<strong data-registry-stat=\"{key}\">)\\d+(</strong>)'",
               "rf'(<strong data-registry-stat=\"{stat_marker}\">)\\d+(</strong>)'",
           )
+          patch(
+              "scripts/reconcile_identity_registry_projections.py",
+              "r'La capa estática canónica es \\d+:",
+              "r'(?:La capa estática canónica|El denominador canónico estático) es \\d+:",
+          )
 
           patch(
               "scripts/validate_repository_preservation.py",
