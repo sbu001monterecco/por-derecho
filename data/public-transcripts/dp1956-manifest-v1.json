@@ -1,0 +1,63 @@
+{
+  "schema": "por-derecho.public-normalized-transcript-manifest.v1",
+  "control_id": "PD-DP1956-PUBLIC-TRANSCRIPT-20260904-01",
+  "procedure": "DP 1956/2026",
+  "language_of_source": "es",
+  "public_route_es": "/por-derecho/es/dp-1956-2026/",
+  "public_route_en": "/por-derecho/en/dp-1956-2026/",
+  "publication_type": "PUBLIC_NORMALIZED_TRANSCRIPTION_WITH_PRIVACY_REDACTIONS",
+  "status_control": {
+    "nig": "3501643220260016826",
+    "iup": "LI2026016921",
+    "court": "Plaza n.º 1, Sección de Instrucción, Tribunal de Instancia de Las Palmas de Gran Canaria",
+    "status": "SOBRESEIMIENTO_PROVISIONAL_COMMUNICATED_2026-07-21",
+    "boundary": "Not an acquittal, sobreseimiento libre or final merits exoneration."
+  },
+  "boundary": [
+    "This transcription preserves source-language content and source pagination but is an editorial derivative; it does not replace or amend the original complaint.",
+    "Personal identifiers, private contact details, private notification addresses and verification codes are redacted.",
+    "A complaint records allegations and requests; it does not prove the truth of the allegations.",
+    "Control 22 and DP 1956/2026 remain separate identities until the canonical intake/reparto bridge is primary-source certified."
+  ],
+  "documents": [
+    {
+      "id": "dp1956-base",
+      "label_es": "Denuncia base · 17/18 junio 2026",
+      "label_en": "Base complaint · 17/18 June 2026",
+      "source_filename": "01_Denuncia_Penal_AC_LPB_Sun_Park_AC-FINAL_17JUN2026.pdf",
+      "document_date": "2026-06-17",
+      "reported_filing_date": "2026-06-18",
+      "page_count": 55,
+      "sha256": "b11f10e7410f922a8cd1796ea462ea7ea20d555b7308e4481f2cb23732b1002b",
+      "source_authority": "OPERATIVE CONTROL 22 COMPLAINT / REPORTED FILED COPY; CONTROL22→DP1956 BRIDGE REMAINS CANONICALLY UNVERIFIED",
+      "text_coverage": "55/55",
+      "chunks": [
+        "/por-derecho/data/public-transcripts/dp1956-base-p01-15.json",
+        "/por-derecho/data/public-transcripts/dp1956-base-p16-30.json",
+        "/por-derecho/data/public-transcripts/dp1956-base-p31-45.json",
+        "/por-derecho/data/public-transcripts/dp1956-base-p46-55.json"
+      ]
+    }
+  ],
+  "later_candidate_documents": [
+    {
+      "title": "DP_1956_2026_APORTACION_FINAL_REFORZADA_AC_CONTABILIDAD_DP1901_21JUL2026",
+      "date_printed_or_prepared": "2026-07-21",
+      "status": "REPORTED_FOR_FILING / RECEIPT OR CERTIFIED JOINDER NOT LOCATED",
+      "public_full_transcript": false,
+      "reason": "Publication is withheld from the filed corpus until exact filing/joinder authority is established; this avoids presenting a candidate or later strategy document as a filed pleading."
+    },
+    {
+      "title": "DP_1956_2026_NUEVA_APORTACION_UNITARIA_COORDINACION_DP1901_SAN_TELMO_RICPE_21JUL2026",
+      "date_printed_or_prepared": "2026-07-21",
+      "status": "CANDIDATE / FILING STATUS NOT PRIMARY-VERIFIED",
+      "public_full_transcript": false,
+      "reason": "Kept as a separate candidate; does not inherit filed status from the base complaint or from DP 1956/2026."
+    }
+  ],
+  "related_routes": [
+    {"id":"DP1901","es":"/por-derecho/es/dp-1901-2026/","en":"/por-derecho/en/dp-1901-2026/","role":"private actors"},
+    {"id":"DP1956","es":"/por-derecho/es/dp-1956-2026/","en":"/por-derecho/en/dp-1956-2026/","role":"insolvency administrator"},
+    {"id":"CONTROL24","es":"/por-derecho/es/control-24-denuncia-juez-concurso-36-2012/","en":"/por-derecho/en/control-24-insolvency-judge-complaint-36-2012/","role":"judicial decisions/supervision"}
+  ]
+}
