@@ -15,9 +15,14 @@ This control reduces stale branches, duplicate handovers, overlapping canonical 
 
 ## 2. Runtime hierarchy
 
+Keep operational truth and collaboration truth separate:
+
+- `ops/CURRENT_STATE.json` remains the repository/deployment/rollback operational-truth contract;
+- `ops/CURRENT_COLLABORATION_STATE.json` controls concurrent-thread roles and integration routing.
+
 For related work the runtime order is:
 
-`current remote main -> ops/CURRENT_STATE.json -> Issue #1428 Control Tower / Integration Queue -> relevant canonical registers + task issue -> specialist work -> structured delta -> one integration PR -> validation -> merge -> deploy -> live verification`.
+`current remote main -> ops/CURRENT_STATE.json + ops/CURRENT_COLLABORATION_STATE.json -> Issue #1428 Control Tower / Integration Queue -> relevant canonical registers + task issue -> specialist work -> structured delta -> one integration PR -> validation -> merge -> deploy -> live verification`.
 
 Historical handovers and dated state files remain audit/provenance material. They are not competing current-state authorities.
 
@@ -34,7 +39,7 @@ A worker may inspect sources, use authorised connected sources, analyse, draft c
 Only one integrator may coordinate publication at a time. Before taking the role it must:
 
 1. fetch current remote `main`;
-2. read `ops/CURRENT_STATE.json` and Issue #1428;
+2. read `ops/CURRENT_STATE.json`, `ops/CURRENT_COLLABORATION_STATE.json` and Issue #1428;
 3. inspect open PRs for an already-active integration/publication lane;
 4. if another integration lane exists, remain a worker unless the user expressly replaces/transfers the integrator role;
 5. if no integration lane exists and publication is authorised, create one current-main-based integration branch/PR and reconcile worker deltas into it.
@@ -51,7 +56,7 @@ An already-open thread does not need to restart. On activation it must:
 
 1. discard any assumption that its remembered SHA/branch is current;
 2. fetch current `main`;
-3. read `AGENTS.md`, `.github/governance/NEW_THREAD_SCOPE_AND_CONTINUITY_GATE_02SEP2026.md`, this control and `ops/CURRENT_STATE.json`;
+3. read `AGENTS.md`, `.github/governance/NEW_THREAD_SCOPE_AND_CONTINUITY_GATE_02SEP2026.md`, this control, `ops/CURRENT_STATE.json` and `ops/CURRENT_COLLABORATION_STATE.json`;
 4. determine whether it is worker or the active integrator;
 5. preserve unique substantive work as a canonical delta;
 6. treat its old branch/PR, if any, as a delta source until reconciled against current `main`;
