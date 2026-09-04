@@ -7,6 +7,7 @@ on:
       - 'assets/canonical-knowledge-search-20260904.js'
       - 'assets/legaltech-uria-unitary-gap-closure-20260904.js'
       - 'assets/legaltech-review-and-matrix-20260904.js'
+      - 'assets/ricpe-2020-representation-evidentiary-correction-20260904.js'
       - 'assets/site.js'
       - 'data/canonical-discovery/**'
       - 'data/legaltech/**'
@@ -28,6 +29,7 @@ on:
       - 'assets/canonical-knowledge-search-20260904.js'
       - 'assets/legaltech-uria-unitary-gap-closure-20260904.js'
       - 'assets/legaltech-review-and-matrix-20260904.js'
+      - 'assets/ricpe-2020-representation-evidentiary-correction-20260904.js'
       - 'assets/site.js'
       - 'data/canonical-discovery/**'
       - 'data/legaltech/**'
@@ -76,6 +78,7 @@ jobs:
           node --check assets/canonical-knowledge-search-20260904.js
           node --check assets/legaltech-uria-unitary-gap-closure-20260904.js
           node --check assets/legaltech-review-and-matrix-20260904.js
+          node --check assets/ricpe-2020-representation-evidentiary-correction-20260904.js
           node --check assets/site.js
       - name: Scan repository for unregistered identity candidates
         run: python3 scripts/build_canonical_discovery_candidates.py --summary
