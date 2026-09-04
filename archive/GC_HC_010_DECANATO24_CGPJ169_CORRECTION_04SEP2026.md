@@ -32,19 +32,25 @@ Native evidence remains in private custody where required. Public digitisation m
 
 ## 3. Current procedural status — mandatory boundary
 
-Daily registration no. 24 is a reception locator, not a judicial case number. The current documentary record does **not** permit the repository to state or imply any of the following unless a primary source is later linked:
+Daily registration no. 24 is a reception locator, not a judicial case number. Two facts may be stated and used affirmatively in the repository: **the complaint was filed/presented through the Decanato under Reg. No. 24**, and **its subsequent route has not yet been traced or primary-verified**.
 
-- allocation/reparto to a judicial body;
+The expected or presumed competence route is **TSJ Canarias / TSJC**, because of the judicial capacity/competence framing of the complaint and its intended route. That expectation is a legitimate contextual proposition, but it is **not** equivalent to proof that the Decanato actually reparted or remitted the filing there. The current documentary record does **not** permit the repository to state or imply any of the following unless a primary source is later linked:
+
+- confirmed allocation/reparto to the TSJ/TSJC or any other judicial body;
 - NIG or Diligencias Previas identity;
-- TSJ/TSJC entry or acceptance;
+- confirmed TSJ/TSJC receipt, docket entry, acceptance or custody;
 - investigation or Fiscalía treatment;
 - formal querella filing;
 - dismissal, archive, remittal or other disposition;
 - current judicial custodian or present physical/electronic location.
 
-Accordingly, the canonical present status is: **filed/presented under Reg. No. 24; subsequent judicial allocation, current custodian and outcome unknown**.
+Accordingly, the canonical present status is: **filed/presented under Reg. No. 24; expected/presumed TSJ Canarias / TSJC competence route; subsequent judicial allocation, destination, current custodian and outcome untraced / unknown**.
 
-The original package's intended recipient or addressee must not be converted into a verified originating organ/current custodian.
+The fact of filing should not be diluted merely because the downstream route is unresolved. Conversely, the intended or expected TSJC route must not be converted into a verified originating organ/current custodian.
+
+### Active trace position
+
+The reporting party is asking the **Decanato / Registro y Reparto**, the **TSJ Canarias / TSJC**, and the **CGPJ** to locate and confirm the post-intake route, present location/custody and procedural treatment of Reg. No. 24. Until a primary response, reparto record, receipt, docket or equivalent source is obtained, this remains an active trace inquiry rather than a verified procedural destination.
 
 ## 4. 25 June supplement — custody boundary
 
@@ -59,7 +65,7 @@ The Master Proceedings Register separately carries:
 - `GC-GOV-019` — the CGPJ control carrying the `169/2026` reference; and
 - `GC-GOV-020` — `Recurso de alzada 286/2026`.
 
-These controls must remain distinct. Cross-linking Reg. No. 24 to 169/2026 records later reporting/provenance only; it does not establish joinder, acceptance, merits review or the destination/outcome of the original Decanato filing. Exact CGPJ nomenclature, document date, annex reference and treatment remain subject to primary-source reconciliation.
+These controls must remain distinct. Cross-linking Reg. No. 24 to 169/2026 records later reporting/provenance and the current trace request only; it does not establish joinder, acceptance, merits review or the destination/outcome of the original Decanato filing. Exact CGPJ nomenclature, document date, annex reference and treatment remain subject to primary-source reconciliation.
 
 ## 6. Actor and action interconnection rule
 
@@ -70,7 +76,7 @@ Interconnections must be actor-specific and typed. The repository may connect th
 - related ≠ consolidated;
 - shared evidence ≠ shared responsibility;
 - adverse decision/omission ≠ criminal intent;
-- intended recipient ≠ verified custodian;
+- expected/intended TSJC route ≠ verified reparto, receipt or custody;
 - prepared/reviewed/intended querella ≠ filed querella.
 
 Every allegation-dependent connection should descend through actor → capacity → knowledge/source → act or omission → claimed effect → lawful alternative explanation → evidence needed to confirm or exclude the proposition.
@@ -82,13 +88,14 @@ Every successor thread, generator, search index, graph, register row or public d
 1. resolve `GC-HC-010` to **Reg. No. 24 / Control 24**;
 2. carry **both dated filing events, 18 June and 25 June 2026**;
 3. treat the 25 June filing as a **dependent supplement**;
-4. retain **status unknown** until primary evidence resolves reparto/current status;
-5. link to the full bilingual Control 24 dossier rather than duplicate or shorten its evidence architecture into a competing narrative;
-6. preserve `GC-GOV-019` / 169/2026 and `GC-GOV-020` / Appeal 286/2026 as separate CGPJ records;
-7. preserve EN/ES semantic parity;
-8. never restore the stale TSJ-origin/current-custodian inference merely because the original complaint was addressed to the TSJ/TSJC;
-9. preserve public/private evidence boundaries and source-status labels;
-10. update all derivative search/graph/register projections when the canonical source changes.
+4. retain both controlled status propositions: **filed through the Decanato** and **post-intake route still untraced**;
+5. preserve **TSJ Canarias / TSJC only as the expected/presumed route** until primary evidence proves reparto, receipt, docket entry or custody;
+6. preserve the active trace request to **Decanato + TSJC + CGPJ**;
+7. link to the full bilingual Control 24 dossier rather than duplicate or shorten its evidence architecture into a competing narrative;
+8. preserve `GC-GOV-019` / 169/2026 and `GC-GOV-020` / Appeal 286/2026 as separate CGPJ records;
+9. preserve EN/ES semantic parity;
+10. preserve public/private evidence boundaries and source-status labels; and
+11. update all derivative search/graph/register projections when the canonical source changes.
 
 ## 8. Canonical public routes
 
@@ -102,9 +109,11 @@ Every successor thread, generator, search index, graph, register row or public d
 1. Certified Decanato electronic intake for Reg. No. 24, including time and inventory.
 2. Electronic metadata and joinder record for the 25 June supplement.
 3. Outgoing/reparto route from the Decanato and certified recipient.
-4. Any assigned NIG/case number and present procedural status.
-5. Current custodian/location and any disposition/notification.
-6. Exact CGPJ 169/2026 filing/annex reference and treatment.
-7. Any formal querella filing receipt before describing a querella as filed.
+4. Confirmation/refutation from TSJC of receipt, docketing, custody or transfer.
+5. Any assigned NIG/case number and present procedural status.
+6. Current custodian/location and any disposition/notification.
+7. CGPJ response locating or otherwise addressing the Reg. No. 24 trace issue within 169/2026.
+8. Exact CGPJ 169/2026 filing/annex reference and treatment.
+9. Any formal querella filing receipt before describing a querella as filed.
 
 This control is authoritative for identity and continuity unless superseded by a later dated control grounded in primary documentary evidence.
