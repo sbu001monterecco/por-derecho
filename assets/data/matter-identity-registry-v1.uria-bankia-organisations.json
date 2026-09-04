@@ -1,0 +1,60 @@
+{
+  "schema": "por-derecho.matter-identity-registry.part.v1",
+  "registry_id": "PD-SP-IDENTITY-REGISTRY-001",
+  "type": "ORGANISATION",
+  "control_id": "PD-LT-URIA-SEARCH-20260904-01",
+  "records": [
+    {
+      "id": "PD-SP-O-0084",
+      "type": "ORGANISATION",
+      "name": "URÍA MENÉNDEZ ABOGADOS, S.L.P.",
+      "aliases": ["Uría Menéndez", "Uria Menendez", "Uría", "Uria", "UM"],
+      "identity_resolution": "CARET_CONFIRMED",
+      "identity_sources": ["NIF B28563963 recorded in the Uría/RICPE evidence manifest", "Primary 15-May-2017 PH122 filing", "Primary 29-Jan-2024 CaixaBank defence"],
+      "capacity_boundary": "Firm identity only. Each client, mandate, lawyer, matter, date, information flow, conflict screen, waiver, duty, conduct and responsibility must be proved separately.",
+      "routes": {"es": "/es/uria-menendez-sun-park/", "en": "/en/uria-menendez-sun-park/"},
+      "domain": "Professional-services / documentary-witness perimeter",
+      "linked_proceedings": ["Concurso 36/2012", "PO 1859/2023-9 · Aweswell v CaixaBank"],
+      "events": ["2015 reported/counter-record", "15-May-2017 PH122 filing", "2019-2020 RICPE advisory footprint", "29-Jan-2024 CaixaBank defence", "09-Jul-2026 production request"]
+    },
+    {
+      "id": "PD-SP-O-0085",
+      "type": "ORGANISATION",
+      "name": "Haya Real Estate",
+      "aliases": ["HAYA", "Haya", "HAYA Real Estate", "Haya servicing platform"],
+      "identity_resolution": "SOURCE_CONFIRMED_HISTORICAL_LABEL_LEGAL_FORM_OPEN",
+      "identity_sources": ["2015 contemporaneous creditor/interlocutor correspondence", "HAYA/Cerberus public-source note"],
+      "capacity_boundary": "Historical servicing/interlocutor label. SERVICING IS NOT TITLE. Exact contracting entity, mandate, asset schedule, authority, beneficial owner, instructions and legal form at each date remain open unless a primary instrument proves them.",
+      "routes": {"es": "/es/haya-cerberus/", "en": "/en/uria-menendez-sun-park/#haya-2015-people"},
+      "domain": "Bankia/SAREB servicing and interlocutor perimeter",
+      "linked_proceedings": ["Concurso 36/2012", "mortgage-enforcement perimeter"],
+      "events": ["April-May 2015 document/offer pathway"]
+    },
+    {
+      "id": "PD-SP-O-0086",
+      "type": "ORGANISATION",
+      "name": "Cerberus Capital Management, L.P.",
+      "aliases": ["Cerberus", "Cerberus Capital Management", "Cerberus perimeter"],
+      "identity_resolution": "PUBLIC_CONTEXT_CONFIRMED_ASSET_SPECIFIC_ROLE_OPEN",
+      "identity_sources": ["HAYA/Cerberus public-source note", "Bankia → SAREB → PH122 → CAM chain controls"],
+      "capacity_boundary": "Corporate/platform context only. No asset-specific instruction, approval, title, economic benefit, knowledge, control, wrongdoing or liability is inferred without the native mandate, asset schedule and decision records.",
+      "routes": {"es": "/es/haya-cerberus/", "en": "/en/uria-menendez-sun-park/#ph122-2017-footprint"},
+      "domain": "Servicing/investment context",
+      "linked_proceedings": ["Concurso 36/2012", "mortgage-enforcement perimeter"],
+      "events": ["2014-2015 HAYA/Cerberus public context", "PH122 credit perimeter"]
+    },
+    {
+      "id": "PD-SP-O-0087",
+      "type": "ORGANISATION",
+      "name": "Banco Financiero y de Ahorros, S.A.",
+      "aliases": ["BFA", "Banco Financiero y de Ahorros"],
+      "identity_resolution": "HISTORICAL_ENTITY_CONFIRMED_CAPACITY_SEPARATED",
+      "identity_sources": ["Bankia/BFA lender-chain records registered by Por Derecho"],
+      "capacity_boundary": "Historical banking entity. It is kept separate from Bankia, SAREB, CaixaBank, HAYA, PH122 and CAM; corporate succession or proximity does not automatically transfer title, knowledge, conduct or liability.",
+      "routes": {"es": "/es/reclamacion-caixabank-valencia/", "en": "/en/uria-menendez-sun-park/#complete-chronology"},
+      "domain": "Historical lender/corporate perimeter",
+      "linked_proceedings": ["PO 1859/2023-9 · Aweswell v CaixaBank", "Concurso 36/2012"],
+      "events": ["Caja Insular/BFA/Bankia upstream product and corporate chain"]
+    }
+  ]
+}
