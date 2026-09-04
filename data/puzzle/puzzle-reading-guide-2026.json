@@ -1,0 +1,124 @@
+{
+  "schema": "por-derecho.puzzle-reading-guide.v1",
+  "version": "2026-09-04-worker-a",
+  "sourceStatus": "FILED_COMPANION_GUIDE_WITH_POST_FILING_LAYER_SEPARATED",
+  "document": {
+    "title": "PUZZLE 2024",
+    "pageCount": 32,
+    "sha256": "e441bdb368c0092d5b15ca5ee911eeac266540bde54817e424f3075f4c5fdd47",
+    "sizeBytes": 50046618,
+    "assetPath": "assets/docs/puzzle/PUZZLE-2024-original.pdf",
+    "assetState": "PENDING_CONTROLLED_PUBLIC_MATERIALISATION",
+    "presentationUrl": null
+  },
+  "filedGuide": {
+    "formalDate": "2026-07-21",
+    "proceedings": ["DP 1956/2026", "DP 1901/2026"],
+    "en": {
+      "title": "2026 substitute reading guide",
+      "status": "Filed/formal companion layer. It supersedes the old internal introduction as the current reading guide.",
+      "boundary": "The 32-page visual is a historical navigation map of sources, versions and custodians. Its arrows, photographs, associations and earlier conclusions are not findings and are not adopted as an expert report."
+    },
+    "es": {
+      "title": "Guía sustitutiva de lectura 2026",
+      "status": "Capa acompañante formal/presentada. Sustituye la antigua introducción interna como guía actual de lectura.",
+      "boundary": "El mapa visual de 32 páginas es una guía histórica de fuentes, versiones y custodios. Sus flechas, fotografías, asociaciones y conclusiones anteriores no son hallazgos ni se adoptan como informe pericial."
+    }
+  },
+  "globalRules": {
+    "en": [
+      "A photograph, public appearance, professional coincidence or separate proceeding does not by itself prove concert, influence or responsibility.",
+      "RIC is a tax incentive/materialisation mechanism; it is not by itself a grant or EU funding.",
+      "A published or authorised amount is not the same thing as subscribed capital, a contracted loan, money disbursed, eligible expenditure, payment or certified cost.",
+      "Failure to locate a document in the accessible corpus does not prove non-existence; it can identify a finite production target.",
+      "An authority opening, transfer or response proves only the recorded institutional act, not acceptance of the underlying allegation."
+    ],
+    "es": [
+      "Una fotografía, aparición pública, coincidencia profesional u otro procedimiento no prueba por sí sola concierto, influencia o responsabilidad.",
+      "La RIC es un incentivo fiscal/mecanismo de materialización; no equivale por sí sola a subvención ni a fondos de la UE.",
+      "Una cantidad publicada o autorizada no equivale a capital suscrito, préstamo contratado, dinero desembolsado, gasto elegible, pago o coste certificado.",
+      "No localizar un documento en el corpus accesible no acredita su inexistencia; puede identificar una diligencia finita de producción.",
+      "La apertura, traslado o respuesta de un organismo acredita únicamente el acto institucional registrado, no la aceptación de la alegación de fondo."
+    ]
+  },
+  "tracks": {
+    "1956": {
+      "en": {
+        "label": "DP 1956/2026 · Insolvency Administrator / estate",
+        "summary": "Use the PUZZLE to locate the external economic project and test what reached the insolvency proceeding, what required verification, what protective measure was available and what effect followed for the estate. The PUZZLE does not itself establish the Administrator's knowledge or responsibility.",
+        "directNotice": "The companion identifies the 8 March 2021 inspection/valuation request as direct patrimonial notice about access, condition and possible damage. It does not, by itself, establish knowledge of RPE/RIC or the December 2021 corporate agreement."
+      },
+      "es": {
+        "label": "DP 1956/2026 · Administración Concursal / masa",
+        "summary": "Usar el PUZZLE para localizar el proyecto económico externo y comprobar qué llegó al concurso, qué exigía verificación, qué medida de protección estaba disponible y qué efecto siguió para la masa. El PUZZLE no acredita por sí solo conocimiento o responsabilidad del Administrador Concursal.",
+        "directNotice": "La nota identifica la solicitud de inspección/valoración de 8 de marzo de 2021 como aviso patrimonial directo sobre acceso, estado y posibles daños. Por sí sola no acredita conocimiento de RPE/RIC ni del acuerdo societario de diciembre de 2021."
+      }
+    },
+    "1901": {
+      "en": {
+        "label": "DP 1901/2026 · Private actors / RIC traceability",
+        "summary": "Test who created, adopted, transmitted or used each representation about title, availability, works, investment, employment and validation; to whom; what decision or benefit followed; and what the particular person knew at that date.",
+        "focus": "The filed guide calls for comparison of the 2020 representations with the July 2021 position, the December 2021 Sun Park agreement and its follow-up, the CAM → RPE → HNT → MYND chain, and the relevant commercial and institutional records."
+      },
+      "es": {
+        "label": "DP 1901/2026 · Actores privados / trazabilidad RIC",
+        "summary": "Comprobar quién creó, adoptó, transmitió o utilizó cada representación sobre titularidad, disponibilidad, obras, inversión, empleo y validación; ante quién; qué decisión o beneficio siguió; y qué sabía la persona concreta en esa fecha.",
+        "focus": "La guía presentada pide contrastar las manifestaciones de 2020 con la posición de julio de 2021, el acuerdo Sun Park de diciembre de 2021 y su seguimiento, la cadena CAM → RPE → HNT → MYND y los registros comerciales e institucionales pertinentes."
+      }
+    }
+  },
+  "chapters": [
+    {
+      "id": "context",
+      "pages": [1, 6],
+      "en": {"label": "Context", "content": "Cover, chronology, people and context.", "use": "Historical identification and origin of the visual map.", "limit": "Do not infer implication from an image, office, attendance or association."},
+      "es": {"label": "Contexto", "content": "Portada, cronología, personas y contexto.", "use": "Identificación histórica y origen del mapa visual.", "limit": "No inferir implicación por una imagen, cargo, asistencia o asociación."}
+    },
+    {
+      "id": "investor-2020",
+      "pages": [7, 10],
+      "en": {"label": "2020 investor record", "content": "2020 prospectuses, CAM, webinar and investor process.", "use": "Representations concerning property, project, RIC, works and filters.", "limit": "Compare native originals, video and conditions; the visual alone is not independent title or funding proof."},
+      "es": {"label": "Registro inversor 2020", "content": "Folletos 2020, CAM, webinar y proceso inversor.", "use": "Representaciones sobre propiedad, proyecto, RIC, obras y filtros.", "limit": "Cotejar originales nativos, vídeo y condiciones; el mapa por sí solo no prueba título o financiación."}
+    },
+    {
+      "id": "commercial-audio",
+      "pages": [11, 14],
+      "en": {"label": "Commercial / audio", "content": "FTI/Meeting Point, actors and audio material.", "use": "Locate commercial custodians, contracts, data and communications.", "limit": "Do not infer appropriation, threat or responsibility without authentication, context and actor-specific proof."},
+      "es": {"label": "Comercial / audio", "content": "FTI/Meeting Point, actores y material de audio.", "use": "Localizar custodios comerciales, contratos, datos y comunicaciones.", "limit": "No inferir apropiación, amenaza o responsabilidad sin autenticación, contexto y prueba individualizada."}
+    },
+    {
+      "id": "insolvency",
+      "pages": [15, 20],
+      "en": {"label": "Judicial / insolvency", "content": "Judicial and insolvency block.", "use": "Historical origin of the longitudinal protection and supervision question.", "limit": "Photographs and arrows are not evidence against the magistrate; powers, notice, acts/omissions and consequences require source-by-source proof."},
+      "es": {"label": "Judicial / concursal", "content": "Bloque judicial y concursal.", "use": "Origen histórico de la cuestión longitudinal de tutela y supervisión.", "limit": "Fotografías y flechas no son prueba contra el magistrado; facultades, aviso, actos/omisiones y consecuencias requieren prueba fuente por fuente."}
+    },
+    {
+      "id": "rpe-versions",
+      "pages": [21, 25],
+      "en": {"label": "RPE versions", "content": "Offers and changing RPE/project versions.", "use": "Track changes in project, holder and financing and identify the source versions that matter.", "limit": "Changes may have lawful explanations; obtain and reconcile the underlying file and versions."},
+      "es": {"label": "Versiones RPE", "content": "Ofertas y cambios de versiones RPE/proyecto.", "use": "Seguir cambios de proyecto, titular y financiación e identificar las versiones fuente relevantes.", "limit": "Los cambios pueden tener explicación lícita; obtener y conciliar expediente y versiones."}
+    },
+    {
+      "id": "community-finance",
+      "pages": [26, 28],
+      "en": {"label": "Community / figures", "content": "Community, budget and financial figures.", "use": "Test authority, works and financial reconciliation.", "limit": "Do not add heterogeneous concepts or assert double financing from numerical proximity alone."},
+      "es": {"label": "Comunidad / cifras", "content": "Comunidad, presupuesto y cifras financieras.", "use": "Comprobar autoridad, obras y conciliación financiera.", "limit": "No sumar conceptos heterogéneos ni afirmar doble financiación por mera proximidad numérica."}
+    },
+    {
+      "id": "synthesis",
+      "pages": [29, 32],
+      "en": {"label": "Synthesis", "content": "Names, commercialisation, capital and synthesis.", "use": "Test asset identity, pre-adjudication timing and custodians.", "limit": "Advance preparation does not automatically establish illegality; title, authority, conditions and execution remain separate questions."},
+      "es": {"label": "Síntesis", "content": "Nombres, comercialización, capital y síntesis.", "use": "Comprobar identidad del activo, timing preadjudicación y custodios.", "limit": "La preparación anticipada no acredita automáticamente ilicitud; título, autoridad, condiciones y ejecución siguen siendo cuestiones separadas."}
+    }
+  ],
+  "postFiling": {
+    "en": {
+      "title": "Current record · after the filed guide",
+      "text": "Later repository evidence is kept in a separate layer below this viewer. It may refine, contradict or extend a proposition, but it does not rewrite what the July 2026 companion said when filed."
+    },
+    "es": {
+      "title": "Registro actual · posterior a la guía presentada",
+      "text": "La evidencia posterior del repositorio se mantiene en una capa separada bajo este visor. Puede precisar, contradecir o ampliar una proposición, pero no reescribe lo que decía el acompañante de julio de 2026 al presentarse."
+    }
+  }
+}
