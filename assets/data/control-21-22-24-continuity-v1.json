@@ -1,0 +1,107 @@
+{
+  "schema_version": "1.0.0",
+  "control_id": "PD-C212224-001",
+  "as_of": "2026-09-04",
+  "repository": "sbu001monterecco/por-derecho",
+  "baseline_main_sha": "b8ded173b06f17aaf91569f051dd11e621b139ae",
+  "canonical_nucleus": {
+    "id": "CONCURSO-36-2012",
+    "label": "Concurso Ordinario 36/2012"
+  },
+  "controls": [
+    {
+      "id": "CONTROL-21",
+      "label": "Daily reference 21 — user-reported private-actor filing control",
+      "claimed_filing_date": "2026-06-25",
+      "canonical_repository_object": null,
+      "candidate_proceeding": "GC-CRI-008",
+      "candidate_reference": "DP 1901/2026",
+      "bridge_status": "UNVERIFIED_CANDIDATE_BRIDGE",
+      "evidential_state": "ATTRIBUTED_ALLEGATION",
+      "do_not_infer": "Do not state that daily reference 21 became DP 1901/2026 without a source-certified intake/reparto bridge. Do not merge this object with the judge-related 25 June amplification."
+    },
+    {
+      "id": "CONTROL-22",
+      "label": "Daily intake/reference 22 — Insolvency Administrator complaint",
+      "filing_date": "2026-06-18",
+      "canonical_repository_object": "GC-REF-029",
+      "candidate_proceeding": "GC-CRI-009",
+      "candidate_reference": "DP 1956/2026",
+      "bridge_status": "UNVERIFIED_CANDIDATE_BRIDGE",
+      "evidential_state": "DOCUMENTED",
+      "do_not_infer": "Daily reference 22 is an intake locator and is not itself a NIG, DP number, certified reparto or proof of assignment to DP 1956/2026."
+    },
+    {
+      "id": "CONTROL-24",
+      "label": "Daily reference 24 — judge-related complaint/notitia",
+      "filing_date": "2026-06-18",
+      "canonical_repository_object": "GC-HC-010",
+      "judge_amplification_date": "2026-06-25",
+      "formal_destination_status": "UNKNOWN",
+      "bridge_status": "UNVERIFIED_CANDIDATE_BRIDGE",
+      "evidential_state": "DOCUMENTED",
+      "do_not_infer": "Daily reference 24 is not a NIG, DP number, certified reparto, admission, dismissal, archive or merits outcome."
+    }
+  ],
+  "nodes": [
+    {"id":"CONCURSO-36-2012","type":"PROCEEDING_NUCLEUS","label":"Concurso Ordinario 36/2012"},
+    {"id":"CONTROL-21","type":"FILING_CONTROL","label":"Daily reference 21 — claimed private-actor filing control"},
+    {"id":"CONTROL-22","type":"FILING_CONTROL","label":"Daily reference 22 — Insolvency Administrator filing control"},
+    {"id":"CONTROL-24","type":"FILING_CONTROL","label":"Daily reference 24 — judge-related complaint/notitia"},
+    {"id":"GC-CRI-008","type":"JUDICIAL_PROCEEDING","label":"DP 1901/2026"},
+    {"id":"GC-CRI-009","type":"JUDICIAL_PROCEEDING","label":"DP 1956/2026"},
+    {"id":"GC-REF-029","type":"INTAKE_REFERENCE","label":"Daily intake/reference 22"},
+    {"id":"GC-HC-010","type":"FILING_CONTROL_RECORD","label":"2026 complaint/notitia concerning Concurso judge"},
+    {"id":"CONTROL-24-AMPLIACION-20260625","type":"FILING_AMPLIFICATION","label":"Judge-related amplification dated/presented 25 June 2026"},
+    {"id":"CONTROL-21-OBJECT-20260625","type":"UNRESOLVED_FILING_OBJECT","label":"User-reported private-actor filing object dated 25 June 2026"},
+    {"id":"GC-GOV-019","type":"GOVERNANCE_ROUTE","label":"DI 169/2026 / CGPJ 169/2026 control requiring nomenclature reconciliation"},
+    {"id":"ALZADA-286-2026","type":"APPEAL_REVIEW_ROUTE","label":"Alzada 286/2026"},
+    {"id":"GC-FIS-017","type":"PROSECUTORIAL_ROUTE","label":"DIP 2/2026"},
+    {"id":"GC-APP-005","type":"APPEAL","label":"RPL 3304/2025"},
+    {"id":"GC-APP-006","type":"APPEAL","label":"RPL 3319/2025"},
+    {"id":"RPL-2523-2025","type":"APPEAL","label":"RPL 2523/2025"},
+    {"id":"RPL-421-2026","type":"APPEAL","label":"RPL 421/2026"},
+    {"id":"ICALPA-80-2026","type":"DISCIPLINARY_ROUTE","label":"ICALPA/DIP 80/2026"},
+    {"id":"AC-SEPARATION-ROUTE","type":"INSOLVENCY_ROUTE","label":"Insolvency Administrator separation/removal route"}
+  ],
+  "edges": [
+    {"from":"CONCURSO-36-2012","to":"CONTROL-21","relation":"COMMON_FACTUAL_NUCLEUS","bidirectional":true,"evidential_status":"ATTRIBUTED_ALLEGATION"},
+    {"from":"CONCURSO-36-2012","to":"CONTROL-22","relation":"COMMON_FACTUAL_NUCLEUS","bidirectional":true,"evidential_status":"DOCUMENTED"},
+    {"from":"CONCURSO-36-2012","to":"CONTROL-24","relation":"COMMON_FACTUAL_NUCLEUS","bidirectional":true,"evidential_status":"DOCUMENTED"},
+    {"from":"CONTROL-21","to":"GC-CRI-008","relation":"CANDIDATE_LATER_PROCEEDING","bidirectional":true,"bridge_status":"UNVERIFIED_CANDIDATE_BRIDGE","evidential_status":"OPEN"},
+    {"from":"CONTROL-22","to":"GC-REF-029","relation":"CANONICAL_INTAKE_OBJECT","bidirectional":true,"bridge_status":"PROVEN_DOCUMENTARY_BRIDGE","evidential_status":"DOCUMENTED"},
+    {"from":"CONTROL-22","to":"GC-CRI-009","relation":"CANDIDATE_LATER_PROCEEDING","bidirectional":true,"bridge_status":"UNVERIFIED_CANDIDATE_BRIDGE","evidential_status":"OPEN"},
+    {"from":"CONTROL-24","to":"GC-HC-010","relation":"CANONICAL_CONTROL_RECORD","bidirectional":true,"bridge_status":"PROVEN_DOCUMENTARY_BRIDGE","evidential_status":"DOCUMENTED"},
+    {"from":"CONTROL-24","to":"CONTROL-24-AMPLIACION-20260625","relation":"AMPLIFICATION","bidirectional":true,"bridge_status":"MATERIALLY_LINKED_DISTINCT_OBJECTS","evidential_status":"DOCUMENTED"},
+    {"from":"CONTROL-24","to":"GC-GOV-019","relation":"REPORTED_TO_GOVERNANCE_REVIEW","bidirectional":true,"bridge_status":"RELATED_SEPARATE_ROUTE","evidential_status":"ATTRIBUTED_ALLEGATION"},
+    {"from":"GC-GOV-019","to":"ALZADA-286-2026","relation":"APPEAL_REVIEW_LINEAGE","bidirectional":true,"bridge_status":"RELATED_SEPARATE_ROUTE","evidential_status":"DOCUMENTED"},
+    {"from":"CONTROL-24","to":"GC-FIS-017","relation":"RELATED_PROSECUTORIAL_ROUTE","bidirectional":true,"bridge_status":"RELATED_SEPARATE_ROUTE","evidential_status":"DOCUMENTED"},
+    {"from":"CONTROL-21-OBJECT-20260625","to":"CONTROL-24-AMPLIACION-20260625","relation":"SAME_DATE_DISTINCT_UNTIL_RECONCILED","bidirectional":true,"bridge_status":"NO_BRIDGE","evidential_status":"OPEN"},
+    {"from":"GC-REF-029","to":"GC-APP-005","relation":"CONTEXTUAL_AC_SEPARATION_PERIMETER","bidirectional":true,"bridge_status":"RELATED_SEPARATE_ROUTE","evidential_status":"DOCUMENTED"},
+    {"from":"GC-REF-029","to":"GC-APP-006","relation":"CONTEXTUAL_AC_SEPARATION_PERIMETER","bidirectional":true,"bridge_status":"RELATED_SEPARATE_ROUTE","evidential_status":"DOCUMENTED"},
+    {"from":"GC-CRI-009","to":"ICALPA-80-2026","relation":"AC_ACCOUNTABILITY_PERIMETER","bidirectional":true,"bridge_status":"RELATED_SEPARATE_ROUTE","evidential_status":"OPEN"},
+    {"from":"GC-CRI-009","to":"AC-SEPARATION-ROUTE","relation":"AC_ACCOUNTABILITY_PERIMETER","bidirectional":true,"bridge_status":"RELATED_SEPARATE_ROUTE","evidential_status":"DOCUMENTED"},
+    {"from":"AC-SEPARATION-ROUTE","to":"RPL-421-2026","relation":"RELATED_REMUNERATION_APPEAL_PERIMETER","bidirectional":true,"bridge_status":"RELATED_SEPARATE_ROUTE","evidential_status":"DOCUMENTED"},
+    {"from":"CONCURSO-36-2012","to":"RPL-2523-2025","relation":"CLASSIFICATION_APPEAL","bidirectional":true,"bridge_status":"RELATED_SEPARATE_ROUTE","evidential_status":"DOCUMENTED"}
+  ],
+  "aliases": [
+    "Control 21","Control 22","Control 24","daily 21","daily 22","daily 24","daily reference 21","daily reference 22","daily reference 24","DP 1901/2026","DP 1956/2026","GC-CRI-008","GC-CRI-009","GC-REF-029","GC-HC-010","DI 169/2026","CGPJ 169/2026","Alzada 286/2026","DIP 2/2026","ICALPA 80/2026","RPL 2523/2025","RPL 3304/2025","RPL 3319/2025","RPL 421/2026","18 June 2026","25 June 2026","18 junio 2026","25 junio 2026","Concurso 36/2012"
+  ],
+  "public_routes": {
+    "CONTROL-22_EN": "/en/proceedings/gc-ref-029/",
+    "CONTROL-22_ES": "/es/procedimientos/gc-ref-029/",
+    "DP-1901_EN": "/en/proceedings/gc-cri-008/",
+    "DP-1901_ES": "/es/procedimientos/gc-cri-008/",
+    "DP-1956_EN": "/en/proceedings/gc-cri-009/",
+    "DP-1956_ES": "/es/procedimientos/gc-cri-009/",
+    "CONTROL-24_EN": "/en/proceedings/gc-hc-010/",
+    "CONTROL-24_ES": "/es/procedimientos/gc-hc-010/"
+  },
+  "open_gaps": [
+    "Source-certified Control-21 to DP 1901/2026 bridge",
+    "Source-certified Control-22 to DP 1956/2026 bridge",
+    "Certified reparto/current destination for Control 24",
+    "Source-level reconciliation of the two potentially distinct 25 June 2026 documents",
+    "Canonical registration of any missing stamped source files, transcriptions/OCR derivatives and hashes"
+  ]
+}
