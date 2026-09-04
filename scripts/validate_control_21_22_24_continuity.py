@@ -11,6 +11,9 @@ DATA = ROOT / "assets/data/control-21-22-24-continuity-v1.json"
 PROTOCOL = ROOT / ".github/governance/CONTROL_21_22_24_CONTINUITY_INTERLINK_PROTOCOL_04SEP2026.md"
 HANDOFF_MD = ROOT / "archive/handoffs/2026-09-04-control-21-22-24-continuity-handoff.md"
 HANDOFF_JSON = ROOT / "archive/handoffs/2026-09-04-control-21-22-24-continuity-handoff.json"
+CORRECTION = ROOT / "archive/GC_HC_010_DECANATO24_CGPJ169_CORRECTION_04SEP2026.md"
+EN_CONTROL24 = ROOT / "en/proceedings/gc-hc-010/index.html"
+ES_CONTROL24 = ROOT / "es/procedimientos/gc-hc-010/index.html"
 
 REQUIRED_NODE_IDS = {
     "CONCURSO-36-2012",
@@ -32,6 +35,8 @@ REQUIRED_ALIASES = {
     "Control 21",
     "Control 22",
     "Control 24",
+    "Reg. No. 24",
+    "Registro n.º 24",
     "DP 1901/2026",
     "DP 1956/2026",
     "GC-CRI-008",
@@ -40,7 +45,10 @@ REQUIRED_ALIASES = {
     "GC-HC-010",
     "DI 169/2026",
     "CGPJ 169/2026",
+    "Alzada 286/2026",
     "DIP 2/2026",
+    "TSJ Canarias",
+    "TSJC",
     "18 June 2026",
     "25 June 2026",
     "Concurso 36/2012",
@@ -51,7 +59,7 @@ CRITICAL_EDGES = {
     ("CONTROL-22", "GC-REF-029", "PROVEN_DOCUMENTARY_BRIDGE"),
     ("CONTROL-22", "GC-CRI-009", "UNVERIFIED_CANDIDATE_BRIDGE"),
     ("CONTROL-24", "GC-HC-010", "PROVEN_DOCUMENTARY_BRIDGE"),
-    ("CONTROL-24", "CONTROL-24-AMPLIACION-20260625", "MATERIALLY_LINKED_DISTINCT_OBJECTS"),
+    ("CONTROL-24", "CONTROL-24-AMPLIACION-20260625", "PROVEN_SAME_RECORD_DEPENDENT_SUPPLEMENT"),
     ("CONTROL-24", "GC-GOV-019", "RELATED_SEPARATE_ROUTE"),
     ("CONTROL-24", "GC-FIS-017", "RELATED_SEPARATE_ROUTE"),
     ("CONTROL-21-OBJECT-20260625", "CONTROL-24-AMPLIACION-20260625", "NO_BRIDGE"),
@@ -71,8 +79,17 @@ def load_json(path: Path):
         fail(f"invalid JSON in {path.relative_to(ROOT)}: {exc}")
 
 
+def require_phrases(path: Path, phrases: tuple[str, ...]) -> None:
+    if not path.is_file():
+        fail(f"missing required continuity/public file: {path.relative_to(ROOT)}")
+    text = path.read_text(encoding="utf-8")
+    for phrase in phrases:
+        if phrase not in text:
+            fail(f"required phrase missing from {path.relative_to(ROOT)}: {phrase}")
+
+
 def main() -> None:
-    for required in (PROTOCOL, HANDOFF_MD, HANDOFF_JSON):
+    for required in (PROTOCOL, HANDOFF_MD, HANDOFF_JSON, CORRECTION, EN_CONTROL24, ES_CONTROL24):
         if not required.is_file():
             fail(f"missing required continuity file: {required.relative_to(ROOT)}")
 
@@ -106,12 +123,32 @@ def main() -> None:
     if c24.get("canonical_repository_object") != "GC-HC-010":
         fail("Control 24 must retain GC-HC-010 as its canonical control record")
     if c24.get("judge_amplification_date") != "2026-06-25":
-        fail("Control 24 judge-related amplification date must remain explicit")
+        fail("Control 24 judge-related supplement date must remain explicit")
+    if c24.get("supplement_status") != "DEPENDENT_SAME_RECORD":
+        fail("25 June Control 24 supplement must remain dependent within the same Reg. No. 24 record")
+    if "one Reg. No. 24" not in c24.get("canonical_identity_rule", ""):
+        fail("Control 24 canonical identity rule must explicitly preserve one Reg. No. 24 record")
+    presumed = c24.get("expected_or_presumed_route", "")
+    if "TSJ Canarias / TSJC" not in presumed or "not verified" not in presumed:
+        fail("Control 24 must preserve TSJC only as an expected/presumed, unverified route")
+    if c24.get("trace_status") != "ACTIVE_TRACE_REQUESTED":
+        fail("Control 24 active trace status must remain explicit")
+    if set(c24.get("trace_targets", [])) != {
+        "Decanato / Registro y Reparto Las Palmas", "TSJ Canarias / TSJC", "CGPJ"
+    }:
+        fail("Control 24 trace targets must remain Decanato + TSJC + CGPJ")
+    trace_rule = c24.get("trace_rule", "")
+    for required_phrase in ("fact of filing", "post-intake route remains untraced", "must not be promoted"):
+        if required_phrase not in trace_rule:
+            fail(f"Control 24 trace rule missing safeguard: {required_phrase}")
 
-    nodes = {item.get("id") for item in data.get("nodes", [])}
+    node_map = {item.get("id"): item for item in data.get("nodes", [])}
+    nodes = set(node_map)
     missing_nodes = REQUIRED_NODE_IDS - nodes
     if missing_nodes:
         fail(f"missing required graph nodes: {sorted(missing_nodes)}")
+    if node_map["CONTROL-24-AMPLIACION-20260625"].get("type") != "DEPENDENT_FILING_EVENT":
+        fail("Control 24 supplement must be typed as a dependent filing event, not an autonomous proceeding")
 
     aliases = set(data.get("aliases", []))
     missing_aliases = REQUIRED_ALIASES - aliases
@@ -131,10 +168,14 @@ def main() -> None:
         fail(f"missing/altered critical edges: {sorted(missing_edges)}")
 
     if "CONTROL-21-OBJECT-20260625" == "CONTROL-24-AMPLIACION-20260625":
-        fail("25 June objects collapsed")
+        fail("25 June Control-21 and Control-24 document objects collapsed")
 
     public_routes = data.get("public_routes", {})
-    for key in ("CONTROL-22_EN", "CONTROL-22_ES", "DP-1901_EN", "DP-1901_ES", "DP-1956_EN", "DP-1956_ES", "CONTROL-24_EN", "CONTROL-24_ES"):
+    for key in (
+        "CONTROL-22_EN", "CONTROL-22_ES", "DP-1901_EN", "DP-1901_ES",
+        "DP-1956_EN", "DP-1956_ES", "CONTROL-24_EN", "CONTROL-24_ES",
+        "CONTROL-24-DOSSIER_EN", "CONTROL-24-DOSSIER_ES",
+    ):
         if not public_routes.get(key):
             fail(f"missing public route alias: {key}")
 
@@ -143,16 +184,51 @@ def main() -> None:
     if handoff.get("scope_state") != "RELATED_CONTINUITY_ACTIVE":
         fail("handoff scope state is not continuity-active")
 
-    protocol_text = PROTOCOL.read_text(encoding="utf-8")
-    for phrase in (
+    require_phrases(PROTOCOL, (
         "UNVERIFIED",
         "Two-documents-on-25-June safeguard",
+        "one Reg. No. 24 filing record, two dated filing events",
+        "separate document object, same Reg. No. 24 procedural record",
+        "fact of filing",
+        "post-intake route remains untraced",
+        "Decanato + TSJC + CGPJ",
         "Interlinking never transfers knowledge, intent, causation, guilt, liability, procedural status or evidential weight",
-    ):
-        if phrase not in protocol_text:
-            fail(f"protocol safeguard missing: {phrase}")
+    ))
+    require_phrases(CORRECTION, (
+        "18 June 2026",
+        "25 June 2026",
+        "one continuous filing record",
+        "expected or presumed competence route",
+        "post-intake route",
+        "Decanato / Registro y Reparto",
+        "TSJ Canarias / TSJC",
+        "CGPJ",
+        "169/2026",
+    ))
+    require_phrases(EN_CONTROL24, (
+        "GC-HC-010",
+        "18 June 2026",
+        "25 June 2026",
+        "same Daily Registration No. 24 record",
+        "Current status",
+        "untraced",
+        "Expected / presumed judicial route",
+        "Decanato, TSJC and CGPJ",
+        "169/2026",
+    ))
+    require_phrases(ES_CONTROL24, (
+        "GC-HC-010",
+        "18 de junio de 2026",
+        "25 de junio de 2026",
+        "mismo Registro diario n.º 24",
+        "Estado actual",
+        "sin localizarse",
+        "Vía judicial esperada / presumida",
+        "Decanato, TSJC y CGPJ",
+        "169/2026",
+    ))
 
-    print("PASS: PD-C212224-001 continuity graph, bridge safeguards, aliases and handoff are coherent")
+    print("PASS: PD-C212224-001 preserves Reg. No. 24 as one filed-but-untraced record, TSJC only as presumed/unverified route, active Decanato-TSJC-CGPJ tracing, typed cross-links and source-status boundaries")
 
 
 if __name__ == "__main__":

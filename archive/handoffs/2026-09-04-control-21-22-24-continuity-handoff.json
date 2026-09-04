@@ -1,63 +1,60 @@
 {
-  "schema_version": "1.0.1",
+  "schema_version": "1.1.0",
   "workspace_id": "PD-WS-20260904-0001",
   "date": "2026-09-04",
   "scope_state": "RELATED_CONTINUITY_ACTIVE",
-  "baseline_main_sha": "b8ded173b06f17aaf91569f051dd11e621b139ae",
   "objective": "Preserve and publish typed continuity governance for the Control 21, Control 22 and Control 24 filing/proceeding perimeter around Concurso 36/2012.",
   "canonical_state": "assets/data/control-21-22-24-continuity-v1.json",
   "governance": ".github/governance/CONTROL_21_22_24_CONTINUITY_INTERLINK_PROTOCOL_04SEP2026.md",
   "human_handoff": "archive/handoffs/2026-09-04-control-21-22-24-continuity-handoff.md",
   "validator": "scripts/validate_control_21_22_24_continuity.py",
-  "publication": {
-    "pull_request": 1418,
-    "merge_sha": "005ca9b51eb0a4cff6ce9545d9cd4561a30450ab",
-    "merged_at": "2026-09-04T01:41:08Z",
-    "remote_main_readback": "VERIFIED",
-    "reader_facing_pages_changed": false
+  "control24_state": {
+    "canonical_record": "GC-HC-010",
+    "daily_registration": "24",
+    "original_filing_date": "2026-06-18",
+    "dependent_supplement_date": "2026-06-25",
+    "filed_fact": "DOCUMENTED",
+    "post_intake_route": "UNTRACED_UNKNOWN",
+    "expected_or_presumed_route": "TSJ Canarias / TSJC — not verified by reparto, receipt, docket or custody evidence",
+    "trace_status": "ACTIVE_TRACE_REQUESTED",
+    "trace_targets": [
+      "Decanato / Registro y Reparto Las Palmas",
+      "TSJ Canarias / TSJC",
+      "CGPJ"
+    ],
+    "later_reporting_link": "CGPJ 169/2026 — separate institutional route; not proof of original allocation or outcome"
   },
-  "validation": {
-    "specialist_continuity_gate": {
-      "workflow_run_id": 33826701811,
-      "head_sha": "005ca9b51eb0a4cff6ce9545d9cd4561a30450ab",
-      "status": "completed",
-      "conclusion": "success"
-    },
-    "publication_integrity_gate_at_checkpoint": {
-      "workflow_run_id": 33826701839,
-      "head_sha": "005ca9b51eb0a4cff6ce9545d9cd4561a30450ab",
-      "status": "queued",
-      "conclusion": null
-    },
-    "audience_experience_gate": {
-      "workflow_run_id": 33826701787,
-      "head_sha": "005ca9b51eb0a4cff6ce9545d9cd4561a30450ab",
-      "status": "completed",
-      "conclusion": "failure",
-      "classification": "PRE_EXISTING_REPOSITORY_DEBT_OUTSIDE_GOVERNANCE_ONLY_DIFF",
-      "basis": "The same workflow failed on the immediately preceding main SHA b8ded173b06f17aaf91569f051dd11e621b139ae (run 33824661934), while PR #1418 made no reader-facing Pages changes."
-    }
+  "publication_history": {
+    "continuity_pr": 1418,
+    "continuity_merge_sha": "005ca9b51eb0a4cff6ce9545d9cd4561a30450ab",
+    "continuity_specialist_validation": "SUCCESS",
+    "three_track_full_digitisation_on_main": true,
+    "current_correction_pr": 1422,
+    "current_correction_state": "MERGE_READY"
   },
-  "status": "MERGED_MAIN_SPECIALIST_VALIDATED",
+  "status": "CURRENT_CORRECTION_PR_MERGE_READY",
   "open_gaps": [
     "Source-certified Control-21 to DP 1901/2026 bridge",
     "Source-certified Control-22 to DP 1956/2026 bridge",
-    "Certified reparto/current destination for Control 24",
-    "Source reconciliation of two potentially distinct 25 June 2026 documents",
-    "Canonical source-file/transcription/hash reconciliation",
-    "Deterministic source-tree discoverability for exact identifiers"
+    "Certified Decanato reparto/outgoing route for Control 24",
+    "TSJC confirmation/refutation of receipt, docketing, transfer or custody for Reg. No. 24",
+    "Decanato/TSJC/CGPJ trace responses identifying location and treatment of Reg. No. 24",
+    "Electronic joinder/remittal metadata for the 25 June Control 24 supplement",
+    "Canonical source-file/transcription/hash reconciliation where still incomplete"
   ],
   "non_collapse_rules": [
     "CONTROL-21 != GC-CRI-008 unless a source-certified bridge proves identity",
     "CONTROL-22 != GC-CRI-009 unless a source-certified bridge proves identity",
     "CONTROL-24 daily reference != NIG/DP/reparto/admission/dismissal/archive",
-    "CONTROL-21-OBJECT-20260625 != CONTROL-24-AMPLIACION-20260625 unless a primary source proves identity"
+    "CONTROL-24 original 18 June filing + dependent 25 June supplement = one Reg. No. 24 filing record",
+    "The fact of filing may be stated affirmatively; the post-intake route remains untraced",
+    "TSJ Canarias / TSJC is expected/presumed only until primary route/custody proof exists",
+    "CGPJ 169/2026 remains a later separate institutional/reporting route and trace interface"
   ],
   "next_actions": [
-    "Use the canonical machine state and protocol as the successor-thread starting point for this perimeter",
-    "Resolve documentary bridge gaps from controlled primary sources rather than chat memory",
-    "Update machine state first when a bridge is proved or refuted, then propagate reciprocal public links",
-    "Keep the pre-existing audience-experience failure separate unless a future change touches its source-attribution surface",
-    "If reader-facing Pages files are changed later, require exact merge-SHA Pages deployment and reciprocal live-route verification"
+    "Merge PR 1422",
+    "Run deterministic GC-HC-010 master-register migration and regenerate the public projection",
+    "Verify exact main readback and live EN/ES GC-HC-010 routes",
+    "Resolve the Decanato/TSJC/CGPJ trace gap from primary responses and update machine state first when evidence arrives"
   ]
 }
