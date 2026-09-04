@@ -3,7 +3,7 @@ name: Validate multi-thread collaboration v2
 on:
   pull_request:
     paths:
-      - 'ops/CURRENT_STATE.json'
+      - 'ops/CURRENT_COLLABORATION_STATE.json'
       - '.github/governance/MULTI_THREAD_COLLABORATION_AND_PUBLICATION_V2_04SEP2026.md'
       - '.github/governance/NEW_THREAD_SCOPE_AND_CONTINUITY_GATE_02SEP2026.md'
       - 'CURRENT_START_HERE.md'
@@ -12,7 +12,7 @@ on:
   push:
     branches: [main]
     paths:
-      - 'ops/CURRENT_STATE.json'
+      - 'ops/CURRENT_COLLABORATION_STATE.json'
       - '.github/governance/MULTI_THREAD_COLLABORATION_AND_PUBLICATION_V2_04SEP2026.md'
       - '.github/governance/NEW_THREAD_SCOPE_AND_CONTINUITY_GATE_02SEP2026.md'
       - 'CURRENT_START_HERE.md'
