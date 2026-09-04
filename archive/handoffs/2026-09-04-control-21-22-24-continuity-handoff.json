@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "1.0.1",
   "workspace_id": "PD-WS-20260904-0001",
   "date": "2026-09-04",
   "scope_state": "RELATED_CONTINUITY_ACTIVE",
@@ -9,7 +9,36 @@
   "governance": ".github/governance/CONTROL_21_22_24_CONTINUITY_INTERLINK_PROTOCOL_04SEP2026.md",
   "human_handoff": "archive/handoffs/2026-09-04-control-21-22-24-continuity-handoff.md",
   "validator": "scripts/validate_control_21_22_24_continuity.py",
-  "status": "PUBLICATION_BRANCH_IN_PROGRESS",
+  "publication": {
+    "pull_request": 1418,
+    "merge_sha": "005ca9b51eb0a4cff6ce9545d9cd4561a30450ab",
+    "merged_at": "2026-09-04T01:41:08Z",
+    "remote_main_readback": "VERIFIED",
+    "reader_facing_pages_changed": false
+  },
+  "validation": {
+    "specialist_continuity_gate": {
+      "workflow_run_id": 33826701811,
+      "head_sha": "005ca9b51eb0a4cff6ce9545d9cd4561a30450ab",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    "publication_integrity_gate_at_checkpoint": {
+      "workflow_run_id": 33826701839,
+      "head_sha": "005ca9b51eb0a4cff6ce9545d9cd4561a30450ab",
+      "status": "queued",
+      "conclusion": null
+    },
+    "audience_experience_gate": {
+      "workflow_run_id": 33826701787,
+      "head_sha": "005ca9b51eb0a4cff6ce9545d9cd4561a30450ab",
+      "status": "completed",
+      "conclusion": "failure",
+      "classification": "PRE_EXISTING_REPOSITORY_DEBT_OUTSIDE_GOVERNANCE_ONLY_DIFF",
+      "basis": "The same workflow failed on the immediately preceding main SHA b8ded173b06f17aaf91569f051dd11e621b139ae (run 33824661934), while PR #1418 made no reader-facing Pages changes."
+    }
+  },
+  "status": "MERGED_MAIN_SPECIALIST_VALIDATED",
   "open_gaps": [
     "Source-certified Control-21 to DP 1901/2026 bridge",
     "Source-certified Control-22 to DP 1956/2026 bridge",
@@ -25,10 +54,10 @@
     "CONTROL-21-OBJECT-20260625 != CONTROL-24-AMPLIACION-20260625 unless a primary source proves identity"
   ],
   "next_actions": [
-    "Run continuity validator",
-    "Run repository preservation/publication validators where available in a checkout/CI",
-    "Open and merge PR after diff review",
-    "Verify files on remote main after merge",
-    "If public reader-facing files are changed later, verify exact Pages deployment and reciprocal live routes"
+    "Use the canonical machine state and protocol as the successor-thread starting point for this perimeter",
+    "Resolve documentary bridge gaps from controlled primary sources rather than chat memory",
+    "Update machine state first when a bridge is proved or refuted, then propagate reciprocal public links",
+    "Keep the pre-existing audience-experience failure separate unless a future change touches its source-attribution surface",
+    "If reader-facing Pages files are changed later, require exact merge-SHA Pages deployment and reciprocal live-route verification"
   ]
 }
