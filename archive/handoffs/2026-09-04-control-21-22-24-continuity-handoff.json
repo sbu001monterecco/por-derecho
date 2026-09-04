@@ -30,9 +30,9 @@
     "continuity_specialist_validation": "SUCCESS",
     "three_track_full_digitisation_on_main": true,
     "current_correction_pr": 1422,
-    "current_correction_state": "OPEN_PENDING_MERGE_AT_HANDOFF_UPDATE"
+    "current_correction_state": "MERGE_READY"
   },
-  "status": "CURRENT_CORRECTION_PR_OPEN",
+  "status": "CURRENT_CORRECTION_PR_MERGE_READY",
   "open_gaps": [
     "Source-certified Control-21 to DP 1901/2026 bridge",
     "Source-certified Control-22 to DP 1956/2026 bridge",
@@ -52,7 +52,7 @@
     "CGPJ 169/2026 remains a later separate institutional/reporting route and trace interface"
   ],
   "next_actions": [
-    "Merge PR 1422 after validation",
+    "Merge PR 1422",
     "Run deterministic GC-HC-010 master-register migration and regenerate the public projection",
     "Verify exact main readback and live EN/ES GC-HC-010 routes",
     "Resolve the Decanato/TSJC/CGPJ trace gap from primary responses and update machine state first when evidence arrives"
