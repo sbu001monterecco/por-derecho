@@ -1,0 +1,110 @@
+{
+  "schema": "por-derecho.connected-source-discovery.v1",
+  "scan_id": "PD-GMAIL-DISCOVERY-20260904-01",
+  "scan_date": "2026-09-04",
+  "source": "AUTHENTICATED_GMAIL_CONNECTOR",
+  "privacy_state": "PUBLIC_SAFE_SANITISED_PROPOSITIONS_ONLY",
+  "scope": "Targeted searches for Uría, HAYA, SAREB, PH122, RICPE, CaixaBank and 2015 creditor/enforcement communications. Raw messages, addresses, phone numbers, subjects, provider IDs and privileged/legal-discussion bodies are excluded.",
+  "coverage_limit": "Targeted query set, not a representation that the complete mailbox was exhaustively read.",
+  "queries": [
+    "Uría / Uria / Uría Menéndez",
+    "April-July 2015 HAYA / Javier Rubio / Javier González / Administrador Concursal",
+    "27 August 2026 RICPE closure / ethics-channel attachment package",
+    "CaixaBank defence / Control 21 / RICPE certification / CAM filing"
+  ],
+  "confirmed_or_admitted": [
+    {
+      "canonical_id": "PD-SP-P-0163",
+      "name": "Javier Rubio Sanz",
+      "source_ref": "GMAIL-SANITISED-2015-AC-RUBIO-THREAD-02",
+      "proposition": "A contemporaneous communication reports that the Insolvency Administrator had spoken with Javier Rubio Sanz; contact subject, client and mandate are not established.",
+      "evidence_status": "REPORTED_CONTACT"
+    },
+    {
+      "canonical_id": "PD-SP-P-0164",
+      "name": "Javier González Guimaraes-Da Silva",
+      "source_ref": "GMAIL-SANITISED-2015-HAYA-URIA-THREAD-01",
+      "proposition": "A contemporaneous communication names him in a reported Madrid/Uría continuation pathway; exact professional capacity, instruction and authority remain open.",
+      "evidence_status": "SOURCE_CONFIRMED_CONTEXT_LIMITED"
+    },
+    {
+      "canonical_id": "PD-SP-P-0170",
+      "name": "Aitor Cohrs",
+      "source_ref": "GMAIL-SANITISED-2015-HAYA-URIA-THREAD-01",
+      "proposition": "Contemporaneous correspondence records a HAYA interlocutor/portfolio-manager description and later offer/document transmission; exact legal entity, authority and servicing mandate remain open.",
+      "evidence_status": "SOURCE_CONFIRMED_CONTEXT_LIMITED"
+    },
+    {
+      "canonical_id": "PD-SP-P-0171",
+      "name": "Ana María Tabada Pinzón",
+      "source_ref": "GMAIL-SANITISED-2015-HAYA-URIA-THREAD-01",
+      "proposition": "A contemporaneous report identifies a HAYA contact requesting case material for onward transmission; native instruction and exact capacity remain open.",
+      "evidence_status": "SOURCE_CONFIRMED_CONTEXT_LIMITED"
+    },
+    {
+      "canonical_id": "PD-SP-P-0172",
+      "name": "César Guadalupe Plaza",
+      "source_ref": "GMAIL-SANITISED-2015-HAYA-URIA-THREAD-01",
+      "proposition": "Contemporaneous correspondence attributes reports to the local enforcement-lawyer/interlocutor node, including a SAREB rather than Bankia capacity statement; native appearance and authority remain required.",
+      "evidence_status": "SOURCE_CONFIRMED_CONTEXT_LIMITED"
+    },
+    {
+      "canonical_id": "PD-SP-O-0020",
+      "name": "RIC Private Equity Investment Partners SCR, S.A.",
+      "source_ref": "GMAIL-ATTACHMENT-RICPE-CLOSURE-27AUG2026",
+      "proposition": "The certified channel record states inadmission and archive without opening an internal investigation, with future assessment reserved for new concrete, objectively verifiable and relevant evidence directly connected to RICPE conduct.",
+      "evidence_status": "PRIMARY_CERTIFIED_CHANNEL_RECORD",
+      "public_derivative": "/evidence/ricpe-cnmv/2026-08-27/"
+    }
+  ],
+  "counterevidence": [
+    {
+      "source_ref": "GMAIL-SANITISED-2015-HAYA-URIA-THREAD-01",
+      "date": "2015-04-30",
+      "proposition": "After speaking with Uría, Cuatrecasas reported that Uría said it did not yet have instructions to take action for HAYA.",
+      "required_use": "Must appear beside the 28 April reported HAYA→Uría pathway and must prevent automatic publication of a HAYA mandate as established fact."
+    }
+  ],
+  "review_candidates": [
+    {
+      "candidate_id": "PD-MAYBE-0001",
+      "name": "José Miguel Díaz González",
+      "source_ref": "GMAIL-SANITISED-2015-HAYA-URIA-THREAD-01",
+      "reason": "Named within the creditor/enforcement communication perimeter; exact role, appearance, client and homonym resolution require primary corroboration."
+    },
+    {
+      "candidate_id": "PD-MAYBE-0002",
+      "name": "Jesús Ignacio Arias Arana",
+      "source_ref": "GMAIL-SANITISED-2015-HAYA-URIA-THREAD-01",
+      "reason": "Appears within the 2015 creditor/enforcement perimeter; exact dated capacity and source identity require verification."
+    }
+  ],
+  "attachment_selection": [
+    {
+      "source_ref": "GMAIL-ATTACHMENT-RICPE-CLOSURE-27AUG2026",
+      "filename_public_label": "RICPE ethics-channel certified resolution · 27 August 2026",
+      "selection": "USE_EXISTING_PUBLIC_REDACTED_REPOSITORY_DERIVATIVE",
+      "reason": "The raw attachment contains private contact data; the repository already contains the complete six-page public redacted PDF, searchable text and page images."
+    },
+    {
+      "source_ref": "GMAIL-ATTACHMENT-RICPE-CERT-20JUL2021",
+      "filename_public_label": "RICPE certification · 20 July 2021",
+      "selection": "FULL_PUBLIC_REDACTED_AFTER_HASH_AND_VERSION_RECONCILIATION"
+    },
+    {
+      "source_ref": "GMAIL-ATTACHMENT-CAM-FILING-21JUL2021",
+      "filename_public_label": "CAM filing supplying RICPE certification · 21 July 2021",
+      "selection": "FULL_PUBLIC_REDACTED_AFTER_HASH_AND_VERSION_RECONCILIATION"
+    },
+    {
+      "source_ref": "GMAIL-ATTACHMENT-RICPE-WEBINAR-11NOV2020",
+      "filename_public_label": "RICPE webinar / presentation · 11 November 2020",
+      "selection": "PARTIAL_NATIVE_PAGES_PLUS_SEPARATE_ANNOTATIONS_AND_TRANSCRIPT"
+    },
+    {
+      "source_ref": "GMAIL-ATTACHMENT-RICPE-CERT-PAGE-IMAGES",
+      "filename_public_label": "RICPE certification source-derived page images",
+      "selection": "IMAGE_CHILDREN_OF_CANONICAL_PDF_REPOSITORY_PATH_PENDING"
+    }
+  ]
+}
