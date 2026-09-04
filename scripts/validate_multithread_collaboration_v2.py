@@ -58,7 +58,7 @@ workflow = workflow_path.read_text(encoding="utf-8")
 for token in (
     "PD-MTCP-20260904-01",
     "Issue #1428",
-    "single active integration lane",
+    "Only one integrator may coordinate publication at a time",
     "do not independently publish",
 ):
     if token.lower() not in control.lower():
