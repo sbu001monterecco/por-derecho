@@ -3,6 +3,13 @@
   const current = document.currentScript;
   if (!current) return;
 
+  /*
+   * Compatibility marker for the inherited loader chain.
+   * site-pre-matkator-8584-20260903.js transitively executes the preserved
+   * site-pre-treasury-154-hq-20260828.js?v=20260828a release; do not load it
+   * a second time here because that would duplicate inherited runtime modules.
+   */
+
   const load = (file, marker, version) => {
     if (document.querySelector(`script[${marker}]`)) return;
     const script = document.createElement('script');
