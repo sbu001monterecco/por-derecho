@@ -38,6 +38,7 @@
     load('canonical-knowledge-search-20260904.js', 'data-canonical-knowledge-search-loader', '20260904a');
     load('legaltech-uria-unitary-gap-closure-20260904.js', 'data-legaltech-uria-unitary-loader', '20260904a');
     load('legaltech-review-and-matrix-20260904.js', 'data-legaltech-review-matrix-loader', '20260904a');
+    load('ricpe-2020-representation-evidentiary-correction-20260904.js', 'data-ricpe-evidentiary-correction-loader', '20260904a');
   };
 
   const loadHotelFincaSystem = () => {
