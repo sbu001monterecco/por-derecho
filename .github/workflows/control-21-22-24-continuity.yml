@@ -1,0 +1,35 @@
+name: Control 21-22-24 continuity governance
+
+on:
+  pull_request:
+    paths:
+      - '.github/governance/CONTROL_21_22_24_CONTINUITY_INTERLINK_PROTOCOL_04SEP2026.md'
+      - 'assets/data/control-21-22-24-continuity-v1.json'
+      - 'archive/handoffs/2026-09-04-control-21-22-24-continuity-handoff.*'
+      - 'scripts/validate_control_21_22_24_continuity.py'
+      - '.github/workflows/control-21-22-24-continuity.yml'
+  push:
+    branches: [main]
+    paths:
+      - '.github/governance/CONTROL_21_22_24_CONTINUITY_INTERLINK_PROTOCOL_04SEP2026.md'
+      - 'assets/data/control-21-22-24-continuity-v1.json'
+      - 'archive/handoffs/2026-09-04-control-21-22-24-continuity-handoff.*'
+      - 'scripts/validate_control_21_22_24_continuity.py'
+      - '.github/workflows/control-21-22-24-continuity.yml'
+  workflow_dispatch:
+  schedule:
+    - cron: '17 6 * * 1'
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate Control 21-22-24 continuity
+        run: python3 scripts/validate_control_21_22_24_continuity.py
