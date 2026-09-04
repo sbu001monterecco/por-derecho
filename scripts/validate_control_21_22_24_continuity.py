@@ -47,6 +47,8 @@ REQUIRED_ALIASES = {
     "CGPJ 169/2026",
     "Alzada 286/2026",
     "DIP 2/2026",
+    "TSJ Canarias",
+    "TSJC",
     "18 June 2026",
     "25 June 2026",
     "Concurso 36/2012",
@@ -126,6 +128,19 @@ def main() -> None:
         fail("25 June Control 24 supplement must remain dependent within the same Reg. No. 24 record")
     if "one Reg. No. 24" not in c24.get("canonical_identity_rule", ""):
         fail("Control 24 canonical identity rule must explicitly preserve one Reg. No. 24 record")
+    presumed = c24.get("expected_or_presumed_route", "")
+    if "TSJ Canarias / TSJC" not in presumed or "not verified" not in presumed:
+        fail("Control 24 must preserve TSJC only as an expected/presumed, unverified route")
+    if c24.get("trace_status") != "ACTIVE_TRACE_REQUESTED":
+        fail("Control 24 active trace status must remain explicit")
+    if set(c24.get("trace_targets", [])) != {
+        "Decanato / Registro y Reparto Las Palmas", "TSJ Canarias / TSJC", "CGPJ"
+    }:
+        fail("Control 24 trace targets must remain Decanato + TSJC + CGPJ")
+    trace_rule = c24.get("trace_rule", "")
+    for required_phrase in ("fact of filing", "post-intake route remains untraced", "must not be promoted"):
+        if required_phrase not in trace_rule:
+            fail(f"Control 24 trace rule missing safeguard: {required_phrase}")
 
     node_map = {item.get("id"): item for item in data.get("nodes", [])}
     nodes = set(node_map)
@@ -174,13 +189,20 @@ def main() -> None:
         "Two-documents-on-25-June safeguard",
         "one Reg. No. 24 filing record, two dated filing events",
         "separate document object, same Reg. No. 24 procedural record",
+        "fact of filing",
+        "post-intake route remains untraced",
+        "Decanato + TSJC + CGPJ",
         "Interlinking never transfers knowledge, intent, causation, guilt, liability, procedural status or evidential weight",
     ))
     require_phrases(CORRECTION, (
         "18 June 2026",
         "25 June 2026",
         "one continuous filing record",
-        "outcome unknown",
+        "expected or presumed competence route",
+        "post-intake route",
+        "Decanato / Registro y Reparto",
+        "TSJ Canarias / TSJC",
+        "CGPJ",
         "169/2026",
     ))
     require_phrases(EN_CONTROL24, (
@@ -189,7 +211,9 @@ def main() -> None:
         "25 June 2026",
         "same Daily Registration No. 24 record",
         "Current status",
-        "Unknown",
+        "untraced",
+        "Expected / presumed judicial route",
+        "Decanato, TSJC and CGPJ",
         "169/2026",
     ))
     require_phrases(ES_CONTROL24, (
@@ -198,11 +222,13 @@ def main() -> None:
         "25 de junio de 2026",
         "mismo Registro diario n.º 24",
         "Estado actual",
-        "Desconocido",
+        "sin localizarse",
+        "Vía judicial esperada / presumida",
+        "Decanato, TSJC y CGPJ",
         "169/2026",
     ))
 
-    print("PASS: PD-C212224-001 preserves Reg. No. 24 as one record with a dependent 25 June supplement, typed cross-links, aliases and source-status boundaries")
+    print("PASS: PD-C212224-001 preserves Reg. No. 24 as one filed-but-untraced record, TSJC only as presumed/unverified route, active Decanato-TSJC-CGPJ tracing, typed cross-links and source-status boundaries")
 
 
 if __name__ == "__main__":
