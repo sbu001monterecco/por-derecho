@@ -9,7 +9,8 @@
 Before the gate below is applied to related work, read:
 
 - `.github/governance/MULTI_THREAD_COLLABORATION_AND_PUBLICATION_V2_04SEP2026.md`;
-- `ops/CURRENT_STATE.json`; and
+- `ops/CURRENT_STATE.json` for repository/deployment/rollback operational truth;
+- `ops/CURRENT_COLLABORATION_STATE.json` for concurrent-thread/integration routing; and
 - GitHub Issue #1428, the **Control Tower — Multi-thread integration queue**.
 
 For related work, the default thread role is now `WORKER`. Parallel research/analysis is allowed, but only one active integrator/publication lane may exist at a time. A worker preserves a structured canonical delta and **does not independently publish**. A related existing thread may be activated without restarting: refresh current `main`, apply `PD-MTCP-20260904-01`, determine whether it is worker or active integrator, and reconcile its unique work against current canonical state.
@@ -31,7 +32,7 @@ If the user's opening request is related to, may overlap with, or cannot safely 
 1. state that Por Derecho / Project Sun Rock continuity governance is active for the thread;
 2. fetch and identify the current remote `main` SHA for `sbu001monterecco/por-derecho`;
 3. confirm that current `main`, not a predecessor chat, stale workspace, handover, branch or remembered summary, is the repository source of truth;
-4. read `AGENTS.md`, `CHATGPT_START_HERE.md`, this gate, `PD-MTCP-20260904-01`, `ops/CURRENT_STATE.json`, the universal publication/thread-deletion protocol and the specialist controls relevant to the task;
+4. read `AGENTS.md`, `CHATGPT_START_HERE.md`, this gate, `PD-MTCP-20260904-01`, `ops/CURRENT_STATE.json`, `ops/CURRENT_COLLABORATION_STATE.json`, the universal publication/thread-deletion protocol and the specialist controls relevant to the task;
 5. read Issue #1428 and the relevant task issue, if one exists, then determine `WORKER` versus active integrator role;
 6. preserve the existing identity, proceeding, event, evidence, communication and route registers rather than creating parallel records;
 7. re-query authorised private source systems when private evidence is needed instead of reconstructing it from public Git history or chat memory; and
@@ -61,7 +62,7 @@ The gate is a first-turn scope control, not a recurring interruption. Once scope
 
 For related work, the durable hierarchy is now:
 
-`current remote main -> ops/CURRENT_STATE.json -> Issue #1428 / task issue -> canonical repository controls/registers -> authorised connected private sources where required -> worker delta -> single integration lane -> validation -> merge -> deployment/live verification`.
+`current remote main -> ops/CURRENT_STATE.json (operational truth) + ops/CURRENT_COLLABORATION_STATE.json (coordination truth) -> Issue #1428 / task issue -> canonical repository controls/registers -> authorised connected private sources where required -> worker delta -> single integration lane -> validation -> merge -> deployment/live verification`.
 
 Chat memory, Work context, prior-thread summaries and historical handovers may accelerate retrieval but are not preservation or completion authorities.
 
