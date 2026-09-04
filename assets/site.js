@@ -35,6 +35,9 @@
     load('uria-ricpe-caixabank-source-register-20260904.js', 'data-uria-ricpe-caixabank-source-register-loader', '20260904a');
     load('uria-haya-puzzle-integration-20260904.js', 'data-uria-haya-puzzle-integration-loader', '20260904b');
     load('evidence-visibility-runtime-20260904.js', 'data-evidence-visibility-runtime-loader', '20260904a');
+    load('canonical-knowledge-search-20260904.js', 'data-canonical-knowledge-search-loader', '20260904a');
+    load('legaltech-uria-unitary-gap-closure-20260904.js', 'data-legaltech-uria-unitary-loader', '20260904a');
+    load('legaltech-review-and-matrix-20260904.js', 'data-legaltech-review-matrix-loader', '20260904a');
   };
 
   const loadHotelFincaSystem = () => {
