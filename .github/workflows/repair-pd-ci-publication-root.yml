@@ -28,30 +28,18 @@ jobs:
         run: |
           python - <<'PY'
           from pathlib import Path
-
-          path = Path('scripts/reconcile_identity_registry_projections.py')
-          body = path.read_text(encoding='utf-8')
-          old = '''    for key in COUNT_KEYS:
-        body = replace_regex_once(
-            body,
-            rf'(<strong data-registry-stat="{key}">)\\d+(</strong>)',
-            rf'\\g<1>{counts[key]}\\g<2>',
-            f"{label} {key} stat",
-        )
-'''
-          new = '''    for key in COUNT_KEYS:
-        stat_marker = "TOTAL" if key == "total" else key
-        body = replace_regex_once(
-            body,
-            rf'(<strong data-registry-stat="{stat_marker}">)\\d+(</strong>)',
-            rf'\\g<1>{counts[key]}\\g<2>',
-            f"{label} {key} stat",
-        )
-'''
-          count = body.count(old)
-          if count != 1:
-              raise SystemExit(f'expected one canonical-total projection loop, found {count}')
-          path.write_text(body.replace(old, new, 1), encoding='utf-8')
+          path = Path("scripts/reconcile_identity_registry_projections.py")
+          body = path.read_text(encoding="utf-8")
+          anchor = "    for key in COUNT_KEYS:\n        body = replace_regex_once("
+          replacement = "    for key in COUNT_KEYS:\n        stat_marker = \"TOTAL\" if key == \"total\" else key\n        body = replace_regex_once("
+          if body.count(anchor) != 1:
+              raise SystemExit(f"expected one projection-loop anchor, found {body.count(anchor)}")
+          body = body.replace(anchor, replacement, 1)
+          marker = 'rf\'(<strong data-registry-stat="{key}">)\\d+(</strong>)\''
+          marker_replacement = 'rf\'(<strong data-registry-stat="{stat_marker}">)\\d+(</strong>)\''
+          if body.count(marker) != 1:
+              raise SystemExit(f"expected one projection-stat marker, found {body.count(marker)}")
+          path.write_text(body.replace(marker, marker_replacement, 1), encoding="utf-8")
           PY
       - name: Generate identity projections with explicit annotations
         shell: bash
