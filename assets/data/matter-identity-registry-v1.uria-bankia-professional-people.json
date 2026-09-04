@@ -1,0 +1,141 @@
+{
+  "schema": "por-derecho.matter-identity-registry.part.v1",
+  "registry_id": "PD-SP-IDENTITY-REGISTRY-001",
+  "type": "PERSON",
+  "control_id": "PD-LT-URIA-SEARCH-20260904-01",
+  "records": [
+    {
+      "id": "PD-SP-P-0163",
+      "type": "PERSON",
+      "name": "Javier Rubio Sanz",
+      "aliases": ["Javier Rubio", "Rubio Sanz", "J. Rubio Sanz"],
+      "identity_resolution": "CARET_CONFIRMED_EVENT_LIMITED",
+      "identity_sources": [
+        "Promontoria Holding 122 B.V. filing dated 15-May-2017 in Concurso 36/2012",
+        "Sanitised 03-Jul-2015 contemporaneous source note: reported AC contact"
+      ],
+      "capacity_boundary": "The 2017 court document supports an Uría/PH122 filing role; the 2015 communication supports only reported contact. Neither proves the client, subject, mandate, information flow, conflict, wrongdoing or liability for the 2015 contact.",
+      "routes": {"es": "/es/uria-menendez-sun-park/#cronologia-integral", "en": "/en/uria-menendez-sun-park/#complete-chronology"},
+      "domain": "Uría Menéndez · PH122 · Concurso 36/2012",
+      "linked_proceedings": ["Concurso 36/2012", "PP 1041/2017"],
+      "events": ["03-Jul-2015 reported contact", "15-May-2017 PH122 filing"]
+    },
+    {
+      "id": "PD-SP-P-0164",
+      "type": "PERSON",
+      "name": "Javier González Guimaraes-Da Silva",
+      "aliases": ["Javier Gonzalez Guimaraes-Da Silva", "Javier González Gimaraes-Da Silva", "Javier Gonzalez Gimaraes-Da Silva", "Javier González", "Javier Gonzalez"],
+      "identity_resolution": "SOURCE_CONFIRMED_CONTEXT_LIMITED",
+      "identity_sources": ["Sanitised 28-Apr-2015 contemporaneous creditor/HAYA/Uría source note"],
+      "capacity_boundary": "Named in contemporaneous correspondence as a Madrid/Uría communication node. The native HAYA instruction, exact professional capacity, retainer, client, mandate and authority remain open.",
+      "routes": {"es": "/es/uria-menendez-sun-park/#cronologia-integral", "en": "/en/uria-menendez-sun-park/#complete-chronology"},
+      "domain": "2015 HAYA → Uría reported pathway",
+      "linked_proceedings": ["Concurso 36/2012"],
+      "events": ["28-Apr-2015 reported continuation communication"]
+    },
+    {
+      "id": "PD-SP-P-0165",
+      "type": "PERSON",
+      "name": "Raimon Tagliavini Sansa",
+      "aliases": ["Raimon Tagliavini", "R. Tagliavini Sansa"],
+      "identity_resolution": "CARET_CONFIRMED_EVENT_LIMITED",
+      "identity_sources": ["CaixaBank defence dated 29-Jan-2024 in PO 1859/2023-9", "Uría public professional record registered in the source note"],
+      "capacity_boundary": "Counsel role is established for the 29-Jan-2024 CaixaBank defence. It does not transfer historic knowledge, instructions, conduct or responsibility from another Uría matter or professional.",
+      "routes": {"es": "/es/uria-menendez-sun-park/#rama-caixabank-actual", "en": "/en/uria-menendez-sun-park/#current-caixabank-branch"},
+      "domain": "Current CaixaBank litigation branch",
+      "linked_proceedings": ["PO 1859/2023-9 · Aweswell v CaixaBank"],
+      "events": ["29-Jan-2024 CaixaBank defence", "28-Jan-2027 listed hearing"]
+    },
+    {
+      "id": "PD-SP-P-0166",
+      "type": "PERSON",
+      "name": "David García Martín",
+      "aliases": ["David Garcia Martin", "David García", "David Garcia"],
+      "identity_resolution": "CARET_CONFIRMED_EVENT_LIMITED",
+      "identity_sources": ["CaixaBank defence dated 29-Jan-2024 in PO 1859/2023-9", "Uría public professional record registered in the source note"],
+      "capacity_boundary": "Co-counsel role is established for the 29-Jan-2024 CaixaBank defence only. No collective or firm-wide knowledge, intent, conflict or liability is inferred.",
+      "routes": {"es": "/es/uria-menendez-sun-park/#rama-caixabank-actual", "en": "/en/uria-menendez-sun-park/#current-caixabank-branch"},
+      "domain": "Current CaixaBank litigation branch",
+      "linked_proceedings": ["PO 1859/2023-9 · Aweswell v CaixaBank"],
+      "events": ["29-Jan-2024 CaixaBank defence", "28-Jan-2027 listed hearing"]
+    },
+    {
+      "id": "PD-SP-P-0167",
+      "type": "PERSON",
+      "name": "Juan Francisco Falcón",
+      "aliases": ["Juan Francisco Falcon", "Juan F. Falcón", "Juan F. Falcon", "Juan Francisco Falcón Pérez"],
+      "identity_resolution": "PUBLIC_SOURCE_CONFIRMED_CAPACITY_LIMITED",
+      "identity_sources": ["RICPE corporate-history/public presentation material registered by Por Derecho", "Uría public professional biography registered in the source note"],
+      "capacity_boundary": "Public sources support an Uría M&A/private-equity professional role and attributed advice around RICPE formation. They do not establish Sun Park-specific instructions, review, knowledge, conflict, information flow, wrongdoing or liability.",
+      "routes": {"es": "/es/uria-menendez-sun-park/#puente-falcon-ricpe", "en": "/en/uria-menendez-sun-park/#falcon-ricpe-bridge"},
+      "domain": "Uría · RICPE formation/advisory architecture",
+      "linked_proceedings": ["Concurso 36/2012"],
+      "events": ["2019-2020 RICPE formation/advisory public footprint"]
+    },
+    {
+      "id": "PD-SP-P-0168",
+      "type": "PERSON",
+      "name": "Juan Miguel Hernández Herrera",
+      "aliases": ["Juan Miguel Hernandez Herrera", "J. M. Hernández Herrera"],
+      "identity_resolution": "CARET_CONFIRMED_EVENT_LIMITED",
+      "identity_sources": ["Promontoria Holding 122 B.V. filing dated 15-May-2017 in Concurso 36/2012"],
+      "capacity_boundary": "Signature/appearance on the identified 2017 PH122 filing only; broader mandate, knowledge and conduct remain separate proof questions.",
+      "routes": {"es": "/es/uria-menendez-sun-park/#huella-ph122-2017", "en": "/en/uria-menendez-sun-park/#ph122-2017-footprint"},
+      "domain": "PH122 filing · Concurso 36/2012",
+      "linked_proceedings": ["Concurso 36/2012"],
+      "events": ["15-May-2017 PH122 filing"]
+    },
+    {
+      "id": "PD-SP-P-0169",
+      "type": "PERSON",
+      "name": "Ángel Alonso Hernández",
+      "aliases": ["Angel Alonso Hernandez", "Ángel Alonso", "Angel Alonso"],
+      "identity_resolution": "CARET_CONFIRMED_EVENT_LIMITED",
+      "identity_sources": ["Promontoria Holding 122 B.V. filing dated 15-May-2017 in Concurso 36/2012"],
+      "capacity_boundary": "Signature/appearance on the identified 2017 PH122 filing only; broader mandate, knowledge and conduct remain separate proof questions.",
+      "routes": {"es": "/es/uria-menendez-sun-park/#huella-ph122-2017", "en": "/en/uria-menendez-sun-park/#ph122-2017-footprint"},
+      "domain": "PH122 filing · Concurso 36/2012",
+      "linked_proceedings": ["Concurso 36/2012"],
+      "events": ["15-May-2017 PH122 filing"]
+    },
+    {
+      "id": "PD-SP-P-0170",
+      "type": "PERSON",
+      "name": "Aitor Cohrs",
+      "aliases": ["A. Cohrs"],
+      "identity_resolution": "SOURCE_CONFIRMED_CONTEXT_LIMITED",
+      "identity_sources": ["Sanitised April-May 2015 contemporaneous HAYA correspondence source note"],
+      "capacity_boundary": "Reported in contemporaneous correspondence as HAYA portfolio manager/interlocutor. Exact employer entity, authority, servicing mandate, title, instructions and decision power require native corporate and court records.",
+      "routes": {"es": "/es/haya-cerberus/#personas-2015", "en": "/en/uria-menendez-sun-park/#haya-2015-people"},
+      "domain": "HAYA 2015 interlocutor perimeter",
+      "linked_proceedings": ["Concurso 36/2012"],
+      "events": ["30-Apr-2015 HAYA/Uría counter-record", "12-May-2015 offer receipt/transmission"]
+    },
+    {
+      "id": "PD-SP-P-0171",
+      "type": "PERSON",
+      "name": "Ana María Tabada Pinzón",
+      "aliases": ["Ana Maria Tabada Pinzon", "Ana María Tabada", "Ana Maria Tabada"],
+      "identity_resolution": "SOURCE_CONFIRMED_CONTEXT_LIMITED",
+      "identity_sources": ["Sanitised 28-Apr-2015 contemporaneous creditor/HAYA/Uría source note"],
+      "capacity_boundary": "Named in a contemporaneous report as the HAYA contact requesting case material for onward transmission. Native instruction, authority, recipients, purpose and exact corporate capacity remain open.",
+      "routes": {"es": "/es/haya-cerberus/#personas-2015", "en": "/en/uria-menendez-sun-park/#haya-2015-people"},
+      "domain": "HAYA 2015 documentary pathway",
+      "linked_proceedings": ["Concurso 36/2012"],
+      "events": ["09-Apr/28-Apr-2015 reported document request/pathway"]
+    },
+    {
+      "id": "PD-SP-P-0172",
+      "type": "PERSON",
+      "name": "César Guadalupe Plaza",
+      "aliases": ["Cesar Guadalupe Plaza", "César Guadalupe", "Cesar Guadalupe"],
+      "identity_resolution": "SOURCE_CONFIRMED_CONTEXT_LIMITED",
+      "identity_sources": ["Sanitised April-May 2015 contemporaneous creditor correspondence source note"],
+      "capacity_boundary": "The source records reports attributed to this local enforcement-lawyer/interlocutor node, including that he acted for SAREB rather than Bankia. Native appearance, authority and assignment/title instruments remain required.",
+      "routes": {"es": "/es/haya-cerberus/#personas-2015", "en": "/en/uria-menendez-sun-park/#haya-2015-people"},
+      "domain": "SAREB/HAYA enforcement correspondence",
+      "linked_proceedings": ["Concurso 36/2012", "mortgage-enforcement perimeter"],
+      "events": ["28-Apr-2015 reported Uría route", "04-May-2015 reported SAREB capacity"]
+    }
+  ]
+}
