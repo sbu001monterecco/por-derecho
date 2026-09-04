@@ -1,0 +1,338 @@
+{
+  "schema_version": "1.0.0",
+  "canonical_id": "PD-C36-ACCOUNTABILITY-TRIANGLE-20260904",
+  "title": "Concurso Ordinario 36/2012 — accountability triangle and oversight perimeter",
+  "updated_at": "2026-09-04",
+  "status": "CANONICAL_INTERCONNECTIVITY_CONTROL",
+  "common_nucleus": "C36-NEXUS",
+  "source_of_truth": {
+    "operational_master": "archive/PROCEEDINGS_MASTER_REGISTER.csv",
+    "component_register": "data/control-22-24-interconnection-register.json",
+    "control_24_overlay": "archive/PROCEEDINGS_MASTER_REGISTER_CONTROL24_OVERLAY_04SEP2026.md",
+    "governance_prompt": "governance/prompts/TRIANGLE_CONTROL_21_22_24_CONTINUITY.md",
+    "rule": "The operational master remains controlling except for the expressly scoped Control 24 identity overlay. Any discrepancy must be surfaced and reconciled, never silently overwritten."
+  },
+  "evidence_states": [
+    "VERIFIED_PRIMARY",
+    "VERIFIED_PROCEDURAL",
+    "PARTY_POSITION",
+    "ANALYTICAL_INFERENCE",
+    "CONTEXTUAL",
+    "OPEN_REFERENCE"
+  ],
+  "guardrails": [
+    "Controls 21, 22 and 24 are intake, continuity or project-control identifiers; they are not automatically NIGs, Diligencias Previas numbers, reparto decisions or merits findings.",
+    "Control 22 must not be equated with DP 1956/2026 unless a certified reparto bridge establishes that identity.",
+    "Control 24 is a first-class canonical object but remains a Decanato daily intake locator, not a confirmed judicial proceeding.",
+    "Private actors, the Administrador Concursal and the concurso judge remain separate accountability vertices. Knowledge, duty, intent, causation, benefit and liability do not transfer by association.",
+    "Fiscalía is an oversight/prosecutorial perimeter, not a fourth triangle vertex. Neutralisation, ineffectiveness, bypass or capture is the claimant's hypothesis unless established by competent evidence or decision.",
+    "Every public representation must distinguish documented fact, party allegation, inference, procedural determination and unresolved question."
+  ],
+  "vertices": [
+    "PRIVATE-ACTORS",
+    "ADMINISTRADOR-CONCURSAL",
+    "CONCURSO-JUDGE"
+  ],
+  "nodes": [
+    {
+      "id": "C36-NEXUS",
+      "type": "COMMON_PROCEDURAL_NUCLEUS",
+      "label": "Concurso Ordinario 36/2012",
+      "master_id": "GC-JUD-001",
+      "is_proceeding": true,
+      "evidence_state": "VERIFIED_PROCEDURAL",
+      "routes": {
+        "es": "/por-derecho/es/concurso-36-2012-triangulo-responsabilidad/",
+        "en": "/por-derecho/en/concurso-36-2012-accountability-triangle/"
+      }
+    },
+    {
+      "id": "PRIVATE-ACTORS",
+      "type": "ACCOUNTABILITY_VERTEX",
+      "label_es": "Actores privados",
+      "label_en": "Private actors",
+      "is_proceeding": false,
+      "evidence_state": "CONTEXTUAL",
+      "routes": {
+        "es": "/por-derecho/es/dp-1901-2026/",
+        "en": "/por-derecho/en/dp-1901-2026/"
+      }
+    },
+    {
+      "id": "CONTROL-21",
+      "type": "INTAKE_AND_CONTINUITY_IDENTIFIER",
+      "label": "Control 21 / NEXUS 36",
+      "is_proceeding": false,
+      "evidence_state": "VERIFIED_PROCEDURAL",
+      "aliases": ["Control 21", "NEXUS 36", "NEXUS36"]
+    },
+    {
+      "id": "GC-CRI-008",
+      "type": "JUDICIAL_PROCEEDING",
+      "label": "DP 1901/2026",
+      "master_id": "GC-CRI-008",
+      "nig": "3501643220260016977",
+      "is_proceeding": true,
+      "evidence_state": "VERIFIED_PRIMARY",
+      "routes": {
+        "es": "/por-derecho/es/dp-1901-2026/",
+        "en": "/por-derecho/en/dp-1901-2026/"
+      }
+    },
+    {
+      "id": "ADMINISTRADOR-CONCURSAL",
+      "type": "ACCOUNTABILITY_VERTEX",
+      "label_es": "Administrador Concursal",
+      "label_en": "Insolvency Administrator",
+      "is_proceeding": false,
+      "evidence_state": "CONTEXTUAL",
+      "routes": {
+        "es": "/por-derecho/es/concurso-36-2012-administrador-concursal/",
+        "en": "/por-derecho/en/insolvency-36-2012-insolvency-administrator/"
+      }
+    },
+    {
+      "id": "CONTROL-22",
+      "type": "INTAKE_REFERENCE",
+      "label": "Control 22",
+      "master_id": "GC-REF-029",
+      "filing_date": "2026-06-18",
+      "is_proceeding": false,
+      "evidence_state": "VERIFIED_PRIMARY",
+      "reparto_status": "CERTIFIED_BRIDGE_OUTSTANDING",
+      "guardrail": "Do not equate Control 22 with DP 1956/2026 without the certified reparto bridge.",
+      "routes": {
+        "es": "/por-derecho/es/control-22-denuncia-administrador-concursal/",
+        "en": "/por-derecho/en/control-22-insolvency-administrator-complaint/"
+      }
+    },
+    {
+      "id": "GC-CRI-009",
+      "type": "JUDICIAL_PROCEEDING",
+      "label": "DP 1956/2026",
+      "master_id": "GC-CRI-009",
+      "nig": "3501643220260016826",
+      "is_proceeding": true,
+      "evidence_state": "VERIFIED_PROCEDURAL",
+      "status": "Provisional dismissal recorded on 21 July 2026; no filed reform/subsidiary appeal currently established in the controlled corpus.",
+      "routes": {
+        "es": "/por-derecho/es/dp-1956-2026/",
+        "en": "/por-derecho/en/dp-1956-2026/"
+      }
+    },
+    {
+      "id": "GC-PRO-023",
+      "type": "PROFESSIONAL_DISCIPLINE",
+      "label": "ICALPA · DIP 80/2026",
+      "master_id": "GC-PRO-023",
+      "is_proceeding": true,
+      "evidence_state": "VERIFIED_PRIMARY",
+      "aliases": ["ICALPA 80/2026", "DIP 80/2026", "ICALPA DIP 80/2026"],
+      "routes": {
+        "es": "/por-derecho/es/concurso-36-2012-administrador-concursal/",
+        "en": "/por-derecho/en/insolvency-36-2012-insolvency-administrator/"
+      }
+    },
+    {
+      "id": "AC-SEPARATION-FEES",
+      "type": "MULTITRACK_CONTINUITY_NODE",
+      "label_es": "Separación y honorarios del Administrador Concursal",
+      "label_en": "Insolvency Administrator removal and fees",
+      "is_proceeding": false,
+      "members": ["GC-APP-005", "GC-APP-006", "GC-CIV-027", "GC-APP-028"],
+      "evidence_state": "VERIFIED_PROCEDURAL",
+      "routes": {
+        "es": "/por-derecho/es/concurso-36-2012-separacion-ac-honorarios/",
+        "en": "/por-derecho/en/insolvency-36-2012-administrator-removal-fees/"
+      }
+    },
+    {
+      "id": "CONCURSO-JUDGE",
+      "type": "ACCOUNTABILITY_VERTEX",
+      "label_es": "Magistrado-Juez del concurso",
+      "label_en": "Insolvency judge",
+      "is_proceeding": false,
+      "evidence_state": "CONTEXTUAL",
+      "routes": {
+        "es": "/por-derecho/es/concurso-36-2012-magistrado-juez/",
+        "en": "/por-derecho/en/insolvency-36-2012-mercantile-court-1/"
+      }
+    },
+    {
+      "id": "CONTROL-24",
+      "type": "DECANATO_DAILY_INTAKE_REFERENCE",
+      "label": "Control 24",
+      "master_overlay_id": "GC-DEC-024",
+      "filing_date": "2026-06-18",
+      "supplement_date": "2026-06-25",
+      "target_layer": "CONCURSO-JUDGE",
+      "origin_organ": "Decanato de los Juzgados de Las Palmas de Gran Canaria",
+      "current_custodian": "UNRESOLVED",
+      "nig": null,
+      "diligencias_previas": null,
+      "reparto_status": "UNRESOLVED",
+      "is_proceeding": false,
+      "evidence_state": "VERIFIED_PRIMARY",
+      "status": "Physical filing and later supplement are documented. No controlled public record currently establishes reparto, NIG, Diligencias Previas number, referral, inadmission or archive.",
+      "guardrail": "Canonical for continuity and retrieval; not an official NIG, DP number, reparto determination, confirmed proceeding or formal querella.",
+      "routes": {
+        "es": "/por-derecho/es/control-24-denuncia-juez-concurso-36-2012/",
+        "en": "/por-derecho/en/control-24-insolvency-judge-complaint-36-2012/"
+      }
+    },
+    {
+      "id": "C24-SUPPLEMENT-25JUN2026",
+      "type": "DEPENDENT_SUPPLEMENT",
+      "label_es": "Aportación complementaria de 25 junio 2026",
+      "label_en": "Supplementary filing of 25 June 2026",
+      "filing_date": "2026-06-25",
+      "is_proceeding": false,
+      "evidence_state": "VERIFIED_PRIMARY",
+      "routes": {
+        "es": "/por-derecho/es/control-24-denuncia-juez-concurso-36-2012/#estado",
+        "en": "/por-derecho/en/control-24-insolvency-judge-complaint-36-2012/#status"
+      }
+    },
+    {
+      "id": "GC-GOV-019",
+      "type": "GOVERNANCE_SUPERVISION",
+      "label": "CGPJ · DI 169/2026",
+      "master_id": "GC-GOV-019",
+      "is_proceeding": true,
+      "evidence_state": "VERIFIED_PRIMARY",
+      "routes": {
+        "es": "/por-derecho/es/cgpj-comision-permanente-sala-lectura/",
+        "en": "/por-derecho/en/cgpj-permanent-commission-reader-room/"
+      }
+    },
+    {
+      "id": "CGPJ-169-AMPLIACION",
+      "type": "FILING_EVENT",
+      "label_es": "Ampliación / material posterior de DI 169/2026",
+      "label_en": "Amplification / later material in DI 169/2026",
+      "is_proceeding": false,
+      "evidence_state": "VERIFIED_PROCEDURAL",
+      "guardrail": "Registration or joinder does not by itself prove substantive examination.",
+      "routes": {
+        "es": "/por-derecho/es/cgpj-comision-permanente-sala-lectura/",
+        "en": "/por-derecho/en/cgpj-permanent-commission-reader-room/"
+      }
+    },
+    {
+      "id": "GC-GOV-020",
+      "type": "GOVERNANCE_APPEAL",
+      "label": "Recurso de alzada 286/2026",
+      "master_id": "GC-GOV-020",
+      "parent_master_id": "GC-GOV-019",
+      "is_proceeding": true,
+      "evidence_state": "VERIFIED_PROCEDURAL",
+      "status": "Processing recorded; final/current decision not located in the controlled corpus.",
+      "routes": {
+        "es": "/por-derecho/es/cgpj-comision-permanente-sala-lectura/",
+        "en": "/por-derecho/en/cgpj-permanent-commission-reader-room/"
+      }
+    },
+    {
+      "id": "GC-FIS-017",
+      "type": "FISCALIA_FILE",
+      "label": "Fiscalía · DIP 2/2026",
+      "master_id": "GC-FIS-017",
+      "is_proceeding": true,
+      "evidence_state": "VERIFIED_PRIMARY",
+      "guardrail": "DIP 2/2026 and Control 24 are separate records.",
+      "routes": {
+        "es": "/por-derecho/es/fiscalia-dip-2-2026/",
+        "en": "/por-derecho/en/fiscalia-dip-2-2026/"
+      }
+    },
+    {
+      "id": "GC-APP-004",
+      "type": "APPEAL_ROLL",
+      "label": "Calificación · RPL 2523/2025",
+      "master_id": "GC-APP-004",
+      "is_proceeding": true,
+      "evidence_state": "VERIFIED_PROCEDURAL",
+      "routes": {
+        "es": "/por-derecho/es/calificacion-rpl-2523-mapa-prueba/",
+        "en": "/por-derecho/en/calificacion-rpl-2523-evidence-map/"
+      }
+    },
+    {
+      "id": "FISCALIA-PERIMETER",
+      "type": "OVERSIGHT_PERIMETER",
+      "label_es": "Fiscalía / perímetro de supervisión",
+      "label_en": "Public Prosecution Service / oversight perimeter",
+      "is_proceeding": false,
+      "evidence_state": "PARTY_POSITION",
+      "claimant_position_es": "Gil Marer alega neutralización, ineficacia, derivación o ausencia de reacción útil en partes del perímetro fiscal.",
+      "claimant_position_en": "Gil Marer alleges neutralisation, ineffectiveness, diversion or absence of useful action in parts of the prosecutorial perimeter.",
+      "not_established": "The graph does not establish capture, corruption, concert, improper motive or uniform knowledge within Fiscalía.",
+      "routes": {
+        "es": "/por-derecho/es/fiscalia-dip-2-2026/",
+        "en": "/por-derecho/en/fiscalia-dip-2-2026/"
+      }
+    }
+  ],
+  "edges": [
+    {"id":"E01","from":"C36-NEXUS","to":"CONTROL-21","relation":"common_nucleus_to_control","evidence_state":"CONTEXTUAL"},
+    {"id":"E02","from":"CONTROL-21","to":"GC-CRI-008","relation":"private_actor_routing_chain","evidence_state":"VERIFIED_PROCEDURAL","guardrail":"Control 21 is not itself DP 1901/2026."},
+    {"id":"E03","from":"GC-CRI-008","to":"PRIVATE-ACTORS","relation":"accountability_layer","evidence_state":"VERIFIED_PROCEDURAL"},
+    {"id":"E04","from":"C36-NEXUS","to":"CONTROL-22","relation":"common_nucleus_to_control","evidence_state":"CONTEXTUAL"},
+    {"id":"E05","from":"CONTROL-22","to":"ADMINISTRADOR-CONCURSAL","relation":"complaint_target_layer","evidence_state":"VERIFIED_PRIMARY"},
+    {"id":"E06","from":"CONTROL-22","to":"GC-CRI-009","relation":"reported_association_certified_reparto_bridge_outstanding","evidence_state":"OPEN_REFERENCE","guardrail":"No identity or reparto bridge may be asserted until certified."},
+    {"id":"E07","from":"GC-CRI-009","to":"ADMINISTRADOR-CONCURSAL","relation":"accountability_layer","evidence_state":"VERIFIED_PROCEDURAL"},
+    {"id":"E08","from":"ADMINISTRADOR-CONCURSAL","to":"GC-PRO-023","relation":"professional_discipline_track","evidence_state":"VERIFIED_PRIMARY"},
+    {"id":"E09","from":"ADMINISTRADOR-CONCURSAL","to":"AC-SEPARATION-FEES","relation":"removal_fees_and_appeals_track","evidence_state":"VERIFIED_PROCEDURAL"},
+    {"id":"E10","from":"C36-NEXUS","to":"CONTROL-24","relation":"common_nucleus_to_control","evidence_state":"CONTEXTUAL"},
+    {"id":"E11","from":"CONTROL-24","to":"CONCURSO-JUDGE","relation":"complaint_target_layer","evidence_state":"VERIFIED_PRIMARY"},
+    {"id":"E12","from":"CONTROL-24","to":"C24-SUPPLEMENT-25JUN2026","relation":"supplemented_by","evidence_state":"VERIFIED_PRIMARY"},
+    {"id":"E13","from":"CONTROL-24","to":"GC-GOV-019","relation":"shared_judicial_supervision_and_traceability_route","evidence_state":"CONTEXTUAL","guardrail":"Not a procedural parent-child relationship and not proof of reparto."},
+    {"id":"E14","from":"GC-GOV-019","to":"CGPJ-169-AMPLIACION","relation":"later_material_or_ampliacion","evidence_state":"VERIFIED_PROCEDURAL"},
+    {"id":"E15","from":"GC-GOV-019","to":"GC-GOV-020","relation":"appeal_of","evidence_state":"VERIFIED_PROCEDURAL"},
+    {"id":"E16","from":"CONTROL-24","to":"GC-FIS-017","relation":"shared_judge_related_material_and_oversight_context","evidence_state":"CONTEXTUAL","guardrail":"DIP 2/2026 and Control 24 are separate records."},
+    {"id":"E17","from":"C36-NEXUS","to":"GC-APP-004","relation":"classification_appeal_track","evidence_state":"VERIFIED_PROCEDURAL"},
+    {"id":"E18","from":"PRIVATE-ACTORS","to":"ADMINISTRADOR-CONCURSAL","relation":"shared_evidence_and_alleged_facilitation_requires_individual_proof","evidence_state":"ANALYTICAL_INFERENCE"},
+    {"id":"E19","from":"ADMINISTRADOR-CONCURSAL","to":"CONCURSO-JUDGE","relation":"supervision_and_challenged_acts_or_omissions_requires_individual_proof","evidence_state":"ANALYTICAL_INFERENCE"},
+    {"id":"E20","from":"CONCURSO-JUDGE","to":"PRIVATE-ACTORS","relation":"alleged_validation_or_effect_requires_arrow_by_arrow_proof","evidence_state":"ANALYTICAL_INFERENCE"},
+    {"id":"E21","from":"FISCALIA-PERIMETER","to":"PRIVATE-ACTORS","relation":"oversight_perimeter","evidence_state":"PARTY_POSITION"},
+    {"id":"E22","from":"FISCALIA-PERIMETER","to":"ADMINISTRADOR-CONCURSAL","relation":"oversight_perimeter","evidence_state":"PARTY_POSITION"},
+    {"id":"E23","from":"FISCALIA-PERIMETER","to":"CONCURSO-JUDGE","relation":"oversight_perimeter","evidence_state":"PARTY_POSITION"},
+    {"id":"E24","from":"FISCALIA-PERIMETER","to":"GC-FIS-017","relation":"institutional_file_within_perimeter","evidence_state":"VERIFIED_PRIMARY"}
+  ],
+  "search_aliases": {
+    "control 21": "CONTROL-21",
+    "nexus 36": "CONTROL-21",
+    "dp 1901/2026": "GC-CRI-008",
+    "control 22": "CONTROL-22",
+    "dp 1956/2026": "GC-CRI-009",
+    "icalpa 80/2026": "GC-PRO-023",
+    "dip 80/2026": "GC-PRO-023",
+    "control 24": "CONTROL-24",
+    "18 june 2026": "CONTROL-24",
+    "18 junio 2026": "CONTROL-24",
+    "25 june 2026": "C24-SUPPLEMENT-25JUN2026",
+    "25 junio 2026": "C24-SUPPLEMENT-25JUN2026",
+    "cgpj 169/2026": "GC-GOV-019",
+    "di 169/2026": "GC-GOV-019",
+    "alzada 286/2026": "GC-GOV-020",
+    "dip 2/2026": "GC-FIS-017",
+    "rpl 2523/2025": "GC-APP-004",
+    "rpl 3304/2025": "AC-SEPARATION-FEES",
+    "rpl 3319/2025": "AC-SEPARATION-FEES",
+    "rpl 421/2026": "AC-SEPARATION-FEES",
+    "concurso 36/2012": "C36-NEXUS",
+    "accountability triangle": "C36-NEXUS",
+    "triangulo de responsabilidad": "C36-NEXUS"
+  },
+  "required_invariants": [
+    "C36-NEXUS, CONTROL-21, CONTROL-22 and CONTROL-24 must always exist.",
+    "PRIVATE-ACTORS, ADMINISTRADOR-CONCURSAL and CONCURSO-JUDGE must remain separate nodes.",
+    "FISCALIA-PERIMETER must remain outside the three-vertex architecture.",
+    "CONTROL-24 must remain is_proceeding=false with null NIG/DP fields and unresolved reparto until primary evidence changes that status.",
+    "The Control 22 to DP 1956/2026 edge must remain OPEN_REFERENCE until a certified reparto bridge is controlled.",
+    "Control 24, its 25 June supplement, CGPJ DI 169/2026, its later/ampliación material, Alzada 286/2026 and DIP 2/2026 must remain reachable without being falsely merged.",
+    "ICALPA DIP 80/2026 and the AC removal/fees/appeals track must remain reachable from the AC vertex.",
+    "RPL 2523/2025 must remain linked to the common Concurso 36/2012 nucleus.",
+    "No page or derivative may upgrade a party allegation or inference into a proven fact."
+  ]
+}
