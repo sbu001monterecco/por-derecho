@@ -1,0 +1,81 @@
+{
+  "schema_version": "1.0.0",
+  "record_id": "PD-C212224-PUBLICATION-CLOSEOUT-20260904",
+  "scope_state": "PUBLICATION_CLOSEOUT_IN_PROGRESS",
+  "date": "2026-09-04",
+  "repository": "sbu001monterecco/por-derecho",
+  "current_main_rule": "FETCH_CURRENT_MAIN_FIRST",
+  "bootstrap_main_sha": "c9c3dd328e388468d3757441335e5f380ea71dff",
+  "canonical_state": "assets/data/control-21-22-24-continuity-v1.json",
+  "reader_state": "data/three-track-full-digitisation-20260904.json",
+  "governance_protocol": ".github/governance/CONTROL_21_22_24_CONTINUITY_INTERLINK_PROTOCOL_04SEP2026.md",
+  "publication_merges": {
+    "reader_canonical_binding_pr": 1420,
+    "reader_canonical_binding_merge_sha": "667868ee71a98105ad7766d9afb37a5bd10fe921",
+    "bidder_privacy_repair_pr": 1432,
+    "bidder_privacy_repair_merge_sha": "c9c3dd328e388468d3757441335e5f380ea71dff"
+  },
+  "invariants": {
+    "control21_dp1901_bridge": "UNVERIFIED_CANDIDATE_BRIDGE",
+    "control22_dp1956_bridge": "UNVERIFIED_CANDIDATE_BRIDGE",
+    "control24_formal_destination": "UNKNOWN",
+    "control24_20260625_supplement": "DEPENDENT_SAME_RECORD",
+    "same_date_private_vs_judge_object": "NO_BRIDGE",
+    "judge_filing_nature": "DENUNCIA_NOTITIA_CRIMINIS_NOT_FORMAL_QUERELLA",
+    "interlink_transfer_prohibited": true
+  },
+  "successful_pr_checks": {
+    "pr1420": {
+      "continuity": 33827538587,
+      "three_track": 33827538589,
+      "audience": 33827538572,
+      "private_source_governance": 33827538575,
+      "preservation": 33827538516
+    },
+    "pr1432": {
+      "bidder_privacy": 33831128946,
+      "continuity": 33831129037,
+      "three_track": 33831128841,
+      "control22_24": 33831128833,
+      "private_source_governance": 33831128877,
+      "production_smoke": 33831128956
+    }
+  },
+  "post_merge_verification": {
+    "state": "PENDING_COMPLETED_RUN_READBACK",
+    "target_sha": "c9c3dd328e388468d3757441335e5f380ea71dff",
+    "bidder_privacy_run": 33831220447,
+    "continuity_run": 33831220510,
+    "three_track_run": 33831220472,
+    "pages_run": null
+  },
+  "public_routes": [
+    "/por-derecho/es/dp-1901-2026/",
+    "/por-derecho/en/dp-1901-2026/",
+    "/por-derecho/es/dp-1956-2026/",
+    "/por-derecho/en/dp-1956-2026/",
+    "/por-derecho/es/control-24-denuncia-juez-concurso-36-2012/",
+    "/por-derecho/en/control-24-insolvency-judge-complaint-36-2012/"
+  ],
+  "open_evidence_gaps": [
+    "Source-certified Control 21 to DP 1901/2026 intake/reparto bridge",
+    "Source-certified Control 22 to DP 1956/2026 intake/reparto bridge",
+    "Certified reparto/current formal destination for Control 24",
+    "Decanato/TSJC/CGPJ routing trace for Control 24",
+    "Reconciliation of potentially distinct 25 June 2026 private-actor and judge-supplement objects",
+    "Any still-missing stamped source copies, hashes, transcriptions and joinder metadata",
+    "CGPJ/DI 169/2026 nomenclature reconciliation"
+  ],
+  "unrelated_repository_debt": [
+    "Legacy workflow-integrity configuration debt",
+    "Arrecife/identity-registry drift"
+  ],
+  "successor_boot_sequence": [
+    "fetch current remote main",
+    "read canonical_state",
+    "read reader_state",
+    "read governance_protocol",
+    "read publication closeout",
+    "preserve invariants before editing"
+  ]
+}
