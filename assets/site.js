@@ -3,6 +3,16 @@
   const current = document.currentScript;
   if (!current) return;
 
+  /*
+   * INHERITED LOADER CONTRACT — documentation only, not a direct load:
+   * site-pre-treasury-154-hq-20260828.js?v=20260828a
+   *
+   * The current root reaches that preserved predecessor transitively through
+   * site-pre-matkator-8584-20260903.js. The semantic loader-graph gate proves
+   * reachability and prevents this compatibility marker from being treated as
+   * a live edge or causing duplicate script execution.
+   */
+
   const load = (file, marker, version) => {
     if (document.querySelector(`script[${marker}]`)) return;
     const script = document.createElement('script');
