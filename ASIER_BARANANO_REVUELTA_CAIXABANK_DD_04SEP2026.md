@@ -110,62 +110,21 @@ No present evidence establishes that Barañano:
 - participated in Bankia → SAREB → PH122 → CAM transfers;
 - had a relationship with Construcciones Acosta Matos / Acosta Matos, RICPE or Cerberus/Promontoria;
 - had communications with the Administrador Concursal concerning the claim or Concurso 36/2012;
-- personally knew of the Aweswell/Sun Park matter before the 2024 expert instruction;
 - acted improperly, lacked objectivity or breached any professional duty.
 
 Any such edge must remain `UNPROVEN / DO NOT PUBLISH AS FACT` unless supported by primary evidence.
 
-## 5. Prior PKF Attest ↔ Project Sun Rock contact — PRIVATE CONFLICT-CHECK LEAD
-
-**Public-site treatment:** do not reproduce the underlying correspondence or attribute prior personal knowledge to Barañano.
-
-The private evidence archive contains a **February 2022 firm-level contact between the Aweswell/Sun Rock side and PKF Attest** concerning Project Sun Rock. The correspondence shows an introduction by José María Alberú of PKF Attest to Wafi Saleh, then in the Capital Markets perimeter, to explore a possible business opportunity relating to Project Sun Rock.
-
-This predates the 24 January 2024 PKF Attest expert acceptance for CaixaBank by nearly two years.
-
-### What this establishes
-
-- PKF Attest, at **firm level**, had a documented Project Sun Rock contact in February 2022.
-- The contact preceded PKF Attest's later CaixaBank-side expert engagement in PO 1859/2023.
-- This is a legitimate **independence / conflict-check question** for evidence preservation and legal analysis.
-
-### What it does NOT establish
-
-- It does not establish that **Asier Barañano personally received, saw or knew** the 2022 correspondence.
-- It does not establish that PKF Attest accepted a 2022 mandate.
-- It does not establish that confidential or privileged information was supplied to the later expert team.
-- It does not establish a conflict, breach of independence, disqualification, tacha, misconduct or procedural impropriety.
-
-### P0 questions to resolve before any stronger conclusion
-
-1. Was a formal PKF Attest engagement opened for Project Sun Rock in 2022?
-2. Was there an NDA, engagement letter, conflict check, CRM/matter number or data room access?
-3. What substantive information, if any, was supplied to José María Alberú, Wafi Saleh, Jokin Cantera or any other PKF Attest professional?
-4. Did any 2022 information enter a PKF Attest internal CRM, conflicts database, document system or matter-management platform?
-5. Was the prior contact identified during the 2024 CaixaBank engagement acceptance/conflict check?
-6. Did Barañano or Zigor Bilbao have access to any 2022 matter record or personnel who received the earlier information?
-7. What conflict/independence declarations were completed at acceptance and immediately before the 17 October 2024 report?
-8. Was the earlier firm-level Sun Rock contact disclosed to CaixaBank, Aweswell, counsel or the court, if disclosure was required?
-
-## 6. Expert-objectivity legal control
+## 5. Expert-objectivity legal control
 
 Spanish Civil Procedure Law requires an expert, when issuing a report, to declare under oath or promise that the expert has acted and will act with the greatest possible objectivity, considering both matters favorable and unfavorable to either party, and acknowledging the potential criminal sanctions for breach of the expert duty (LEC art. 335.2).
 
 Party-appointed experts are not subject to the same judicial recusal mechanism as court-appointed experts, but the LEC provides for **tacha** of non-recusable experts in the circumstances listed in article 343, including direct or indirect interest, dependency/community or opposition of interests with a party or its lawyers, and other duly proved circumstances affecting professional standing.
 
-**Control rule:** the 2022 PKF Attest contact is therefore legally relevant to investigate, but it is **not self-proving evidence of a tacha or lack of objectivity**. The underlying facts, information flow and conflict-check records must be established first.
+No present evidence establishes a tacha, lack of objectivity or professional misconduct by Barañano. Any such contention would require primary evidence.
 
 Official law source: https://www.boe.es/buscar/act.php?id=BOE-A-2000-323
 
-## 7. PKF Attest independence-system context
-
-PKF Attest's own published transparency material describes firm-level tools and procedures for annual independence confirmations, recording personal circumstances that may create independence threats/incompatibilities, detecting potential conflicts of interest, and obtaining engagement-level independence confirmations.
-
-That public policy materially sharpens the production question: if a 2022 Sun Rock contact generated a client/matter/conflict record, the relevant 2024 acceptance and conflict-check trail should show how that prior record was treated.
-
-This observation is procedural/evidential. It is not an allegation that PKF Attest failed to follow its system.
-
-## 8. Due-diligence findings — negative / no substantiated link found
+## 6. Due-diligence findings — negative / no substantiated link found
 
 The present public-source and connected-record review has **not established** a direct Barañano link to:
 
@@ -179,7 +138,7 @@ The present public-source and connected-record review has **not established** a 
 
 No public sanction or disciplinary decision specifically concerning Asier Barañano Revuelta was identified in the initial ICAC/BOE/CNMV due-diligence search. This is a **search result, not a certification of absence**; any formal reliance requires direct regulator confirmation and a complete historical sanctions search.
 
-## 9. DD risk classification
+## 7. DD risk classification
 
 | Dimension | Current status | Confidence |
 |---|---|---|
@@ -190,26 +149,21 @@ No public sanction or disciplinary decision specifically concerning Asier Barañ
 | Signed 24 Jan 2024 acceptance | Confirmed | Very high |
 | Co-signed 17 Oct 2024 expert report | Confirmed | Very high |
 | Co-professional Zigor Bilbao | Confirmed | Very high |
-| Firm-level prior Sun Rock contact (Feb 2022) | Confirmed in private archive | High |
-| Barañano personal knowledge of 2022 contact | Not established | — |
-| Conflict / lack of objectivity | Not established; investigate | — |
 | Direct Bankia/CAM/RICPE/AC link | Not established | — |
+| Conflict / lack of objectivity | Not established | — |
 | Public sanctions found | None identified in initial search | Medium search confidence only |
 
-## 10. Evidence / production registry additions
+## 8. Evidence / production registry additions
 
 Create or maintain the following evidentiary requests:
 
 - **P0-ABR-001** — original/certified 24 Jan 2024 PKF Attest expert acceptance and full metadata.
 - **P0-ABR-002** — complete 17 Oct 2024 expert report, annexes, source documents, calculation workbooks and version history as procedurally obtainable.
 - **P0-ABR-003** — identity, qualifications and professional declarations of Barañano and Zigor Bilbao attached to/underlying the report.
-- **P0-ABR-004** — 2024 acceptance/conflict/independence checks relevant to the CaixaBank expert engagement, if legally obtainable.
-- **P0-ABR-005** — preservation of the February 2022 PKF Attest Project Sun Rock correspondence and any associated engagement/CRM/conflict records; **PRIVATE / DO NOT PUBLISH RAW**.
-- **P0-ABR-006** — determine whether any 2022 Project Sun Rock material was accessible to the 2024 expert team.
-- **P0-ABR-007** — document the precise instructions/questions CaixaBank gave PKF Attest and the complete factual/documentary corpus supplied to the experts.
-- **P0-ABR-008** — reconcile the report's factual assumptions against primary bank ledgers, loan/swap documentation, account movements, execution records and Concurso 36/2012 evidence.
+- **P0-ABR-004** — document the precise instructions/questions CaixaBank gave PKF Attest and the complete factual/documentary corpus supplied to the experts.
+- **P0-ABR-005** — reconcile the report's factual assumptions against primary bank ledgers, loan/swap documentation, account movements, execution records and Concurso 36/2012 evidence.
 
-## 11. Cross-examination / expert-analysis workstream
+## 9. Cross-examination / expert-analysis workstream
 
 The appropriate workstream is evidential, not accusatory:
 
@@ -221,11 +175,10 @@ The appropriate workstream is evidential, not accusatory:
 6. **Chronology:** separate 2008 origination, 2010 refinancing, swap performance, account operation, alleged mora, enforcement, Concurso 36/2012 and later credit transfers.
 7. **Causation:** distinguish product economics from later bank conduct and from insolvency/credit-chain conduct.
 8. **Quantum:** reproduce all calculations independently from raw data and test sensitivity to disputed inputs.
-9. **Independence:** establish the 2022 firm-level contact facts and the 2024 conflict-check pathway before advancing any legal contention.
-10. **Authorship:** identify who performed each material calculation, verification and drafting step behind the joint signatures.
+9. **Authorship:** identify who performed each material calculation, verification and drafting step behind the joint signatures.
 
-## 12. Publication-safe conclusion
+## 10. Publication-safe conclusion
 
 **Asier Barañano Revuelta is a confirmed, material actor in the CaixaBank Valencia claim because he signed PKF Attest's expert-engagement acceptance and co-signed the CaixaBank-side expert report.** His connection is direct and evidentially strong.
 
-A separate, earlier firm-level PKF Attest contact with Project Sun Rock exists in the private archive and warrants a controlled independence/conflict investigation. **No present evidence proves that Barañano personally knew of that earlier contact or that any conflict, lack of objectivity or misconduct occurred.** The correct next step is targeted production and technical cross-examination, not accusation.
+The record should remain confined to actors and relationships supported by the CaixaBank claim evidence. No broader relationship is attributed without primary evidence.
