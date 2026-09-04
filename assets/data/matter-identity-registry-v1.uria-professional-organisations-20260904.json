@@ -1,0 +1,41 @@
+{
+  "schema": "por-derecho.matter-identity-registry.part.v1",
+  "registry_id": "PD-SP-IDENTITY-REGISTRY-001",
+  "type": "ORGANISATION",
+  "control_id": "PD-NAME-20260904-01",
+  "records": [
+    {
+      "id": "PD-SP-O-0901",
+      "type": "ORGANISATION",
+      "name": "URÍA MENÉNDEZ ABOGADOS, S.L.P.",
+      "aliases": [
+        "Uría Menéndez",
+        "Uria Menendez",
+        "Uría",
+        "Uria",
+        "Uría Menéndez Madrid",
+        "Uria Menendez Madrid",
+        "UM law firm",
+        "PH122 legal team",
+        "Promontoria Holding 122 lawyers",
+        "RICPE legal advisers",
+        "CaixaBank defence counsel firm",
+        "HAYA Uría correspondence",
+        "Sun Park Uría production request",
+        "Concurso 36/2012 Uría"
+      ],
+      "routes": {
+        "es": "/es/uria-menendez/",
+        "en": "/en/uria-menendez-sun-park/"
+      },
+      "identity_resolution": "CANONICAL_LEGAL_ENTITY_SOURCE_IDENTIFIED",
+      "legal_identifier": "B28563963",
+      "source_assertions": [
+        "evidence/uria-ricpe-sun-park/README.md",
+        "evidence/uria-ricpe-sun-park/manifest.json",
+        "URIA_HAYA_PUZZLE_CONTROL_04SEP2026.md"
+      ],
+      "capacity_boundary": "Canonical firm identity for documentary navigation. Different mandates, dates, clients and lawyers remain separate; a shared firm identity does not establish conflict, information flow, common purpose, liability or wrongdoing."
+    }
+  ]
+}
