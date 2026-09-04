@@ -1,12 +1,12 @@
 {
-  "manifest_version": "1.0.0",
+  "manifest_version": "1.0.1",
   "manifest_id": "PD-PUB-CONTROL-22-24-20260904",
   "title": "Control 22 / DP 1956 and Control 24 public digitisation and interconnection release",
   "created": "2026-09-04",
   "repository": "sbu001monterecco/por-derecho",
   "base_main": "56761b5fa7a06579b3db563d859d75c65fb0a0b6",
   "branch": "publish/controls-22-24-digitisation-20260904",
-  "status": "PULL_REQUEST_OPEN_VALIDATION_PENDING",
+  "status": "MERGED_DEPLOYED_DIRECT_READBACK_NOT_INDEPENDENTLY_CONFIRMED",
   "scope": {
     "control_22": "Public-safe digest of the 18 June 2026 complaint concerning the Insolvency Administrator, preserving its distinction from the later DP 1956/2026 identity.",
     "control_24": "Public-safe digest of the 18 June 2026 judge-related complaint and the 25 June dependent supplement, preserving the absence of a confirmed official court destination or outcome.",
@@ -14,26 +14,10 @@
     "interconnection": "Typed links among Control 21/DP 1901, Control 22/DP 1956, Control 24, Insolvency 36/2012, Fiscalía, CGPJ, removal/fees and the shared documentary modules, without consolidation or transferred liability."
   },
   "public_pages": [
-    {
-      "language": "es",
-      "path": "es/control-22-denuncia-administrador-concursal/index.html",
-      "url": "https://sbu001monterecco.github.io/por-derecho/es/control-22-denuncia-administrador-concursal/"
-    },
-    {
-      "language": "en",
-      "path": "en/control-22-insolvency-administrator-complaint/index.html",
-      "url": "https://sbu001monterecco.github.io/por-derecho/en/control-22-insolvency-administrator-complaint/"
-    },
-    {
-      "language": "es",
-      "path": "es/control-24-denuncia-juez-concurso-36-2012/index.html",
-      "url": "https://sbu001monterecco.github.io/por-derecho/es/control-24-denuncia-juez-concurso-36-2012/"
-    },
-    {
-      "language": "en",
-      "path": "en/control-24-insolvency-judge-complaint-36-2012/index.html",
-      "url": "https://sbu001monterecco.github.io/por-derecho/en/control-24-insolvency-judge-complaint-36-2012/"
-    }
+    {"language":"es","path":"es/control-22-denuncia-administrador-concursal/index.html","url":"https://sbu001monterecco.github.io/por-derecho/es/control-22-denuncia-administrador-concursal/"},
+    {"language":"en","path":"en/control-22-insolvency-administrator-complaint/index.html","url":"https://sbu001monterecco.github.io/por-derecho/en/control-22-insolvency-administrator-complaint/"},
+    {"language":"es","path":"es/control-24-denuncia-juez-concurso-36-2012/index.html","url":"https://sbu001monterecco.github.io/por-derecho/es/control-24-denuncia-juez-concurso-36-2012/"},
+    {"language":"en","path":"en/control-24-insolvency-judge-complaint-36-2012/index.html","url":"https://sbu001monterecco.github.io/por-derecho/en/control-24-insolvency-judge-complaint-36-2012/"}
   ],
   "structured_files": [
     "data/control-22-24-interconnection-register.json",
@@ -42,39 +26,27 @@
     "sitemap-control-22-24.xml",
     "CURRENT_HANDOVER_CONTROL_22_24_04SEP2026.md"
   ],
-  "updated_files": [
-    "assets/site.js",
-    "robots.txt"
-  ],
+  "updated_files": ["assets/site.js","robots.txt"],
   "validation": {
     "workflow": ".github/workflows/validate-control-22-24.yml",
-    "status": "PENDING_PULL_REQUEST_CHECK",
-    "checks": [
-      "required release files",
-      "JavaScript syntax",
-      "legacy loader continuity",
-      "JSON and XML syntax",
-      "canonical and reciprocal language routes",
-      "procedural identity boundaries",
-      "adjudicative and querella boundaries",
-      "known broken-route exclusion",
-      "public-safety token scan"
-    ]
+    "status": "SUCCESS",
+    "run_id": 33823156071,
+    "checks": ["required release files","JavaScript syntax","legacy loader continuity","JSON and XML syntax","canonical and reciprocal language routes","procedural identity boundaries","adjudicative and querella boundaries","known broken-route exclusion","public-safety token scan"]
   },
   "pull_request": 1413,
   "pull_request_url": "https://github.com/sbu001monterecco/por-derecho/pull/1413",
-  "pull_request_state": "OPEN",
-  "merge_commit": null,
+  "pull_request_state": "MERGED",
+  "merge_commit": "d6c3550cc86e4b7dd642126b458cf205c4379bf6",
   "pages_deployment": {
-    "status": "PENDING_AFTER_MERGE",
-    "run_id": null,
-    "deployed_sha": null
+    "status": "SUCCESS",
+    "run_id": 33823548923,
+    "deployed_sha": "d6c3550cc86e4b7dd642126b458cf205c4379bf6"
   },
   "live_verification": {
-    "repository_source": "PULL_REQUEST_BRANCH",
-    "pages_direct_http_readback": "PENDING_AFTER_MERGE",
-    "search_engine_discovery": "NOT_TESTED",
-    "representation_rule": "Do not describe the new public routes as independently live-verified until direct no-cache HTTP readback succeeds."
+    "repository_source": "VERIFIED_ON_MAIN",
+    "pages_direct_http_readback": "NOT_INDEPENDENTLY_CONFIRMED_AT_CLOSEOUT",
+    "search_engine_discovery": "NOT_YET_INDEXED_FOR_NEW_ROUTES_AT_CLOSEOUT",
+    "representation_rule": "The release may be described as merged and deployed. Do not describe the four new routes as independently live-read-back until direct HTTP verification succeeds."
   },
   "public_boundaries": [
     "Control 22 is a filing locator and is not DP 1956/2026.",
