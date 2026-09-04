@@ -1,0 +1,142 @@
+{
+  "schema": "por-derecho.publication-manifest.v1",
+  "publication_id": "PD-REDSARA-MF-SUCCESSOR-20260904-01",
+  "owner": "Gil Marer / Por Derecho evidence governance",
+  "control_date": "2026-09-04",
+  "manifest_version": 1,
+  "title": "Unitary criminal-source register successor reconciliation and Ministerio Fiscal continuity",
+  "purpose": "Preserve the already merged RedSARA criminal-source baseline while recovering only the still-correct post-PR-1408 continuity delta from the stale branch, without deleting the 75-record search or overwriting later main work.",
+  "current_state": "REMOTE_SOURCE",
+  "source_base_sha": "f4fda473b3259fd7654011b64952301ec42577b3",
+  "head_branch": "chatgpt/unitary-criminal-source-register-publish-20260904",
+  "authorization": {
+    "repository_and_website_publication": true,
+    "pull_request_and_merge": true,
+    "github_pages_deployment_and_verification": true,
+    "email_action": "HOLD_NOT_AUTHORISED",
+    "redsara_or_age_submission": "HOLD_NOT_AUTHORISED",
+    "judicial_or_prosecutorial_filing": "HOLD_NOT_AUTHORISED",
+    "authority_or_third_party_contact": "HOLD_NOT_AUTHORISED",
+    "social_or_media_publication": "HOLD_NOT_AUTHORISED"
+  },
+  "predecessor_publication": {
+    "pull_request": 1408,
+    "reviewed_head_sha": "dda871c8f3ea6228d8fb9034d25c6e1474d9ba05",
+    "merge_sha": "2c02a831e8969d11b897b67a2808a8365c5991c8",
+    "scope": "75 REGAGE communications / 125 attachment SHA-512 records / 15 receipts without hashed attachment / 9 of 9 current PDFs matched, bilingual searchable source-register routes, JSON/CSV/shards and validator",
+    "rule": "This predecessor package is already merged source truth; this successor does not re-publish or downgrade it."
+  },
+  "stale_delta_source": {
+    "branch": "chatgpt/unitary-criminal-redsara-gap-closure-20260903",
+    "tip_sha": "e507abe313c598f32d7a7864407de83e82b56994",
+    "merge_base_with_predecessor_head": "dda871c8f3ea6228d8fb9034d25c6e1474d9ba05",
+    "unique_commits_after_predecessor_pr_head": 4,
+    "unique_files": [
+      "data/ministry-fiscal-continuity-ledger-20260904.json",
+      "es/registro-fuentes-penales/index.html",
+      "en/criminal-source-register/index.html",
+      "sitemap-unitary-digest-20260903.xml"
+    ],
+    "reconciliation_rule": "CURRENT_MAIN_WINS_EVERY_COLLISION; stale branch is evidence-delta source only and must never be merged wholesale.",
+    "page_reconciliation": "The stale ES/EN replacements removed the nine-source table and 75-record search. Their post-Anexo continuity content is therefore rebuilt on separate bilingual continuity routes while the current canonical searchable source-register routes remain intact."
+  },
+  "expected_routes": {
+    "es": [
+      "es/registro-fuentes-penales/index.html",
+      "es/ministerio-fiscal-continuidad-redsara/index.html"
+    ],
+    "en": [
+      "en/criminal-source-register/index.html",
+      "en/ministerio-fiscal-redsara-continuity/index.html"
+    ]
+  },
+  "expected_source_files": [
+    "data/ministry-fiscal-continuity-ledger-20260904.json",
+    "data/unitary-criminal-redsara-register-20260903.json",
+    "data/unitary-criminal-redsara-register-20260903.csv",
+    "data/unitary-criminal-redsara-register-20260903-part-01.json",
+    "data/unitary-criminal-redsara-register-20260903-part-02.json",
+    "data/unitary-criminal-redsara-register-20260903-part-03.json",
+    "data/unitary-criminal-redsara-register-20260903-part-04.json",
+    "data/unitary-criminal-redsara-register-20260903-part-05.json",
+    "es/registro-fuentes-penales/index.html",
+    "en/criminal-source-register/index.html",
+    "es/ministerio-fiscal-continuidad-redsara/index.html",
+    "en/ministerio-fiscal-redsara-continuity/index.html",
+    "scripts/validate_unitary_criminal_redsara_register.py",
+    "reports/UNITARY_CRIMINAL_FIRST_REVERSE_ENGINEERING_GAP_CLOSURE_03SEP2026.md",
+    "UNITARY_CRIMINAL_PROSECUTORIAL_DIGEST_03SEP2026.md",
+    "sitemap-unitary-digest-20260903.xml",
+    "sitemap-criminal-first-action.xml"
+  ],
+  "controlled_denominators": {
+    "annex_4_source_pages": 154,
+    "annex_4_regage_communications": 75,
+    "attachment_sha512_records": 125,
+    "receipts_without_hashed_attachment": 15,
+    "current_workspace_pdf_byte_matches": "9/9",
+    "post_annex_delta_2026_03_11_through_2026_06_21": 22,
+    "known_registrations_through_2026_06_21": 97,
+    "known_received_through_2026_06_21": 90,
+    "known_rejected_through_2026_06_21": 7,
+    "post_2026_06_21_final_denominator": "OPEN_PENDING_DEDUP_STATUS_RECONCILIATION"
+  },
+  "evidential_boundaries": [
+    "CRIMINAL_FIRST_IS_ANALYTICAL_ORDERING_NOT_PRESUMPTION_OR_JURISDICTION_RULE",
+    "ALLEGATION_IS_NOT_ADJUDICATED_CRIME_OR_GUILT",
+    "REGAGE_RECEIPT_PROVES_PRESENTATION_OR_RECEIPT_ONLY_TO_ITS_STATED_EXTENT",
+    "HASH_EQUALITY_PROVES_BYTE_IDENTITY_OR_PROVENANCE_NOT_TRUTH",
+    "SENT_EMAIL_IS_NOT_REDSARA_UNLESS_SEPARATELY_SUPPORTED_BY_A_FORMAL_RECEIPT",
+    "DRAFT_AND_SELF_ARCHIVE_ARE_EXCLUDED_FROM_DELIVERY_DENOMINATORS",
+    "INBOUND_ACKNOWLEDGEMENT_NOTICE_DECREE_OR_ROUTING_IS_RESPONSE_SIDE_NOT_CLAIMANT_FILING",
+    "DUPLICATE_OR_CORRECTED_TRANSMISSION_DOES_NOT_INFLATE_SUBSTANTIVE_EVENT_COUNTS",
+    "ASSOCIATION_RELATIONSHIP_OR_LATER_BENEFIT_DOES_NOT_TRANSFER_INTENT_KNOWLEDGE_PARTICIPATION_OR_CAUSATION",
+    "ECONOMIC_UNITY_NEVER_COLLAPSES_LPB_MATKATOR_AWESWELL_CEXP_COMMUNITY_OR_OTHER_LEGAL_IDENTITIES"
+  ],
+  "public_safety": {
+    "allowed": [
+      "REGAGE or formal reference",
+      "presentation or registration date",
+      "recipient public-body class where source-safe",
+      "subject-level description",
+      "registered attachment filename",
+      "SHA-512",
+      "public-safe derived classification and summary",
+      "public provenance and route links"
+    ],
+    "withhold_by_default": [
+      "DNI NIE or passport identifiers",
+      "residential address",
+      "personal or private email",
+      "telephone",
+      "signatures",
+      "unrestricted Expone or Solicita free text",
+      "full confidential bodies",
+      "raw unredacted filing or receipt PDFs",
+      "other unnecessary protected personal data"
+    ]
+  },
+  "remaining_p0_gaps": [
+    "Certified chronological and per-piece Concurso 36/2012 docket denominator",
+    "PP 1041 withdrawal authority authenticity LexNET conflict and benefit file",
+    "Liquidation-plan clause to judicial or LAJ act to objection receipt response review implementation matrix",
+    "EUR 9m / EUR 13.166m / EUR 13.168m debt and consideration bridge",
+    "Approximately EUR 400k funds ledger",
+    "262-finca title authority control and revenue matrix",
+    "Pre-7-Jun and 7-Jun-2018 control notice security and access evidence",
+    "ONA / Stoneweg-Varia / Elaia-Lagune funded-exit ledger",
+    "ACTUA mandate 61-unit denominator and working papers",
+    "ACTA authority custody vote payment and use chains",
+    "RIC RICPE incentive and EU-FEDER tracing",
+    "Matkator DP 552 to DP 711 / ETJ 163 continuity",
+    "Ministerio Fiscal delivery to allocation incorporation examination decision or use chains",
+    "Present operation benefit value loss and restitution model"
+  ],
+  "next_controlled_actions": [
+    "Reconcile the later RedSARA register through the latest available cutoff against the 97-entry June digest.",
+    "Deduplicate by registration number, status, package identity and destination.",
+    "Reconcile Gmail SENT versus DRAFT versus SELF_ARCHIVE versus INBOUND_RESPONSE from native locators before publishing a final later denominator.",
+    "Link every formal filing and later communication to the exact proceeding or event node in the unitary criminal-first graph.",
+    "Continue the repository-wide P0 proof programme without holding this source-safe publication open."
+  ]
+}
