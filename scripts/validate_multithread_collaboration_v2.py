@@ -4,19 +4,31 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 
-state_path = ROOT / "ops" / "CURRENT_STATE.json"
+operational_state_path = ROOT / "ops" / "CURRENT_STATE.json"
+collaboration_state_path = ROOT / "ops" / "CURRENT_COLLABORATION_STATE.json"
 control_path = ROOT / ".github" / "governance" / "MULTI_THREAD_COLLABORATION_AND_PUBLICATION_V2_04SEP2026.md"
 gate_path = ROOT / ".github" / "governance" / "NEW_THREAD_SCOPE_AND_CONTINUITY_GATE_02SEP2026.md"
 start_path = ROOT / "CURRENT_START_HERE.md"
 workflow_path = ROOT / ".github" / "workflows" / "validate-multithread-collaboration-v2.yml"
 
-for path in (state_path, control_path, gate_path, start_path, workflow_path):
+for path in (
+    operational_state_path,
+    collaboration_state_path,
+    control_path,
+    gate_path,
+    start_path,
+    workflow_path,
+):
     if not path.exists():
         raise SystemExit(f"missing required collaboration control: {path.relative_to(ROOT)}")
 
-state = json.loads(state_path.read_text(encoding="utf-8"))
+operational_state = json.loads(operational_state_path.read_text(encoding="utf-8"))
+if operational_state.get("schema") != "por-derecho.operational-truth.current-state.v2":
+    raise SystemExit("ops/CURRENT_STATE.json must remain the operational-truth contract")
+
+state = json.loads(collaboration_state_path.read_text(encoding="utf-8"))
 if state.get("schema") != "por-derecho.current-collaboration-state.v2":
-    raise SystemExit("unexpected CURRENT_STATE schema")
+    raise SystemExit("unexpected CURRENT_COLLABORATION_STATE schema")
 if state.get("control_id") != "PD-MTCP-20260904-01":
     raise SystemExit("unexpected collaboration control id")
 if state.get("control_tower", {}).get("issue_number") != 1428:
@@ -60,6 +72,7 @@ for token in (
     "Issue #1428",
     "Only one integrator may coordinate publication at a time",
     "do not independently publish",
+    "ops/CURRENT_COLLABORATION_STATE.json",
 ):
     if token.lower() not in control.lower():
         raise SystemExit(f"control missing required token: {token}")
@@ -68,7 +81,9 @@ for document_name, text in (("new-thread gate", gate), ("CURRENT_START_HERE", st
     if "PD-MTCP-20260904-01" not in text:
         raise SystemExit(f"{document_name} does not route to PD-MTCP-20260904-01")
     if "ops/CURRENT_STATE.json" not in text:
-        raise SystemExit(f"{document_name} does not route to ops/CURRENT_STATE.json")
+        raise SystemExit(f"{document_name} does not preserve operational truth routing")
+    if "ops/CURRENT_COLLABORATION_STATE.json" not in text:
+        raise SystemExit(f"{document_name} does not route to collaboration state")
 
 for forbidden in ("git push", "contents: write", "pull-requests: write"):
     if forbidden in workflow:
