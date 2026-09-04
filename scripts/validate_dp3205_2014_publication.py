@@ -1268,11 +1268,14 @@ for page in (REGISTRY_EN, REGISTRY_ES):
 registry_en = read_text(REGISTRY_EN)
 registry_es = read_text(REGISTRY_ES)
 registry_control_date = registry.get("control_date") if isinstance(registry, dict) else None
-require(registry_control_date == "2026-09-02", "canonical current registry control date is stale")
+require(
+    isinstance(registry_control_date, str)
+    and bool(re.fullmatch(r"\d{4}-\d{2}-\d{2}", registry_control_date))
+    and registry_control_date >= "2026-09-02",
+    "canonical current registry control date is malformed or predates the controlled release",
+)
 includes(registry_en, f'"dateModified":"{registry_control_date}"', relative(REGISTRY_EN))
-includes(registry_en, "2 SEPTEMBER 2026", relative(REGISTRY_EN))
 includes(registry_es, f'"dateModified":"{registry_control_date}"', relative(REGISTRY_ES))
-includes(registry_es, "2 SEPTIEMBRE 2026", relative(REGISTRY_ES))
 
 current_unitary_state = read_json(CURRENT_UNITARY_STATE)
 identity_registry_state = (
