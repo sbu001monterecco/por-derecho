@@ -1,0 +1,97 @@
+{
+  "schema": "por-derecho.canonical-discovery.review-queue.v1",
+  "queue_id": "PD-CDQ-20260904-01",
+  "generated_at": "2026-09-04",
+  "status": "PUBLIC_SAFE_REVIEW_REQUIRED",
+  "instructions": "YES admits a candidate only after the cited source, homonym and capacity checks are completed. NOT_NOW preserves the candidate without publication. NEEDS_VERIFICATION routes it to source recovery. Browser decisions are local until exported and committed through an authenticated repository workflow.",
+  "candidates": [
+    {
+      "candidate_id": "PD-MAYBE-0001",
+      "name": "José Miguel Díaz González",
+      "candidate_type": "PERSON",
+      "confidence": "MEDIUM",
+      "why_found": "Named in 2015 creditor/enforcement correspondence associated with the local legal pathway.",
+      "why_not_canonical_yet": "Exact role, appearance, employer/client and homonym resolution have not been tied to a primary court or professional record.",
+      "source_refs": ["GMAIL-SANITISED-2015-HAYA-URIA-THREAD-01"],
+      "suggested_action": "Locate the native court appearance, professional directory entry or signed communication establishing the dated capacity.",
+      "suggested_routes": ["/es/haya-cerberus/", "/en/uria-menendez-sun-park/"]
+    },
+    {
+      "candidate_id": "PD-MAYBE-0002",
+      "name": "Jesús Ignacio Arias Arana",
+      "candidate_type": "PERSON",
+      "confidence": "MEDIUM",
+      "why_found": "Appears in the 2015 creditor/enforcement communication perimeter.",
+      "why_not_canonical_yet": "The repository does not yet connect the exact person to a dated role, client or filing with adequate homonym control.",
+      "source_refs": ["GMAIL-SANITISED-2015-HAYA-URIA-THREAD-01"],
+      "suggested_action": "Recover the native email/attachment and any court appearance or professional profile; verify full name and capacity.",
+      "suggested_routes": ["/es/haya-cerberus/", "/en/uria-menendez-sun-park/"]
+    },
+    {
+      "candidate_id": "PD-MAYBE-0003",
+      "name": "Jaime Yagüe",
+      "candidate_type": "PERSON",
+      "confidence": "LOW_MEDIUM",
+      "why_found": "A Library/Drive visual capture appears to associate this name with an Uría professional page.",
+      "why_not_canonical_yet": "The capture provenance, date, exact profile and relevance to Sun Park/RICPE have not been independently verified.",
+      "source_refs": ["LIBRARY-CAPTURE-SCREENSHOT-2026-08-27-14.16.37"],
+      "suggested_action": "Verify the source URL, capture date, professional identity and a matter-specific connection before admission.",
+      "suggested_routes": ["/es/uria-menendez-sun-park/", "/en/uria-menendez-sun-park/"]
+    },
+    {
+      "candidate_id": "PD-MAYBE-0004",
+      "name": "José Acosta",
+      "candidate_type": "PERSON_IDENTITY_RESOLUTION",
+      "confidence": "MEDIUM",
+      "why_found": "The 2020 RICPE presentation materials attribute statements to ‘José Acosta’ while the canonical perimeter contains José Daniel Acosta Matos and other Acosta identities.",
+      "why_not_canonical_yet": "The source literal must not be silently equated with José Daniel Acosta Matos without the native recording/deck and identity confirmation.",
+      "source_refs": ["RICPE-WEBINAR-11NOV2020", "PD-EVIS-URIA-RICPE-SUNPARK-20260904"],
+      "suggested_action": "Review the native recording, speaker introduction, deck and event registration; either map to an existing ID or retain a source-literal unresolved node.",
+      "suggested_routes": ["/es/ric-private-equity-sun-park/", "/en/ric-private-equity-sun-park/"]
+    },
+    {
+      "candidate_id": "PD-MAYBE-0005",
+      "name": "Haya Real Estate — exact 2015 legal entity/form",
+      "candidate_type": "ORGANISATION_IDENTITY_RESOLUTION",
+      "confidence": "HIGH_CONTEXT_LOW_FORM",
+      "why_found": "The 2015 correspondence and public-source material use HAYA/Haya Real Estate as the servicing/interlocutor label.",
+      "why_not_canonical_yet": "The precise contracting company, legal form and asset-specific servicing mandate at each date are not yet registered from native corporate and mandate records.",
+      "source_refs": ["GMAIL-SANITISED-2015-HAYA-URIA-THREAD-01", "HAYA-CERBERUS-PUBLIC-SOURCE-NOTE"],
+      "suggested_action": "Obtain the native servicing agreement, asset schedule, power/authority and corporate extract. Keep PD-SP-O-0085 as a controlled historical label until resolved.",
+      "suggested_routes": ["/es/haya-cerberus/", "/en/uria-menendez-sun-park/"]
+    },
+    {
+      "candidate_id": "PD-MAYBE-0006",
+      "name": "2015 Uría client/mandate identity",
+      "candidate_type": "RELATIONSHIP_RESOLUTION",
+      "confidence": "OPEN",
+      "why_found": "The 28 April reported pathway and 3 July reported AC/Rubio contact coexist with the 30 April counter-record that Uría had no HAYA instruction yet.",
+      "why_not_canonical_yet": "No native engagement letter, matter-opening record, invoice, time entry, conflict record or direct instruction identifies the client and scope for each contact.",
+      "source_refs": ["GMAIL-SANITISED-2015-HAYA-URIA-THREAD-01", "GMAIL-SANITISED-2015-AC-RUBIO-THREAD-02"],
+      "suggested_action": "Seek mandate/opening, time, billing, conflict and communication records; do not infer representation from contact alone.",
+      "suggested_routes": ["/es/uria-menendez-sun-park/", "/en/uria-menendez-sun-park/"]
+    },
+    {
+      "candidate_id": "PD-MAYBE-0007",
+      "name": "Cerberus asset-specific Sun Park instruction/benefit node",
+      "candidate_type": "RELATIONSHIP_RESOLUTION",
+      "confidence": "OPEN",
+      "why_found": "Public corporate context links HAYA and Cerberus, while the Sun Park credit chain proceeds through SAREB and PH122.",
+      "why_not_canonical_yet": "No native Sun Park asset schedule, instruction, approval, payment or benefit record has been registered.",
+      "source_refs": ["HAYA-CERBERUS-PUBLIC-SOURCE-NOTE", "PH122-2017-PRIMARY-FILING"],
+      "suggested_action": "Obtain the asset-specific servicing mandate, investment/credit committee record, instruction log and economic reconciliation.",
+      "suggested_routes": ["/es/haya-cerberus/", "/en/uria-menendez-sun-park/"]
+    },
+    {
+      "candidate_id": "PD-MAYBE-0008",
+      "name": "Uría 2020-2021 Sun Park reports or notes",
+      "candidate_type": "DOCUMENT_EXISTENCE_RESOLUTION",
+      "confidence": "REQUEST_ONLY",
+      "why_found": "Control 21 asks the court to obtain Uría/PwC/RICPE reports or notes on ownership, charges, suitability, risks and the real scope of Sun Park.",
+      "why_not_canonical_yet": "A production request does not prove that responsive Uría material exists, who commissioned it or what it says.",
+      "source_refs": ["CONTROL21-09JUL2026-XII-BIS"],
+      "suggested_action": "Track the court ruling, production response, custodian, client, authors, recipients, dates and completeness.",
+      "suggested_routes": ["/es/uria-menendez-sun-park/", "/en/uria-menendez-sun-park/"]
+    }
+  ]
+}

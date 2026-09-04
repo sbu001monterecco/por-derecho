@@ -1,0 +1,148 @@
+{
+  "schema": "por-derecho.library-evidence-selection.v1",
+  "selection_id": "PD-LIB-SEL-20260904-01",
+  "generated_at": "2026-09-04",
+  "status": "PRIORITISED_CENSUS_WITH_RECURSIVE_DRIVE_LIMITATION",
+  "scope_note": "Selection is based on the connected Library metadata census, targeted semantic retrieval, targeted Google Drive search and authenticated Gmail attachment review. Recursive enumeration of the mounted Google Drive collection is not supported by the Library connector, so the register is an evidence-priority selection rather than a representation that every Drive byte has been substantively read.",
+  "publication_classes": {
+    "FULL_PUBLIC": "Publish the complete native document plus searchable text and page images.",
+    "FULL_PUBLIC_REDACTED": "Preserve the unredacted source privately; publish a complete, separately hashed redacted derivative plus redacted text and images.",
+    "PARTIAL_PAGES": "Publish specified pages with surrounding context and identify the omitted range.",
+    "EXCERPT_IMAGE_TEXT": "Publish a redacted visual excerpt and a searchable transcription, not the full private source.",
+    "IMAGE_ONLY_WITH_CAPTION": "Publish a source-derived image where text extraction is immaterial or would mislead.",
+    "WITHHOLD_PRIVATE": "Do not publish; register only a public-safe proposition/hash/custody reference.",
+    "DUPLICATE_SUPERSEDED": "Do not create another public evidence object; retain deduplication/provenance mapping."
+  },
+  "priority_records": [
+    {
+      "record_id": "PD-LIB-EV-0001",
+      "name": "02_RICPE_Cierre_27AGO2026.pdf",
+      "class": "FULL_PUBLIC_REDACTED",
+      "status": "ALREADY_PUBLISHED_WITH_SIX_PAGE_IMAGES",
+      "public_route": "/evidence/ricpe-cnmv/2026-08-27/",
+      "reason": "Primary certified record correcting the stale ‘investigation unknown’ status and preserving the possible future reassessment clause.",
+      "interlinks": ["PD-SP-O-0020", "event e-2026-08-27", "/es/ric-private-equity-sun-park/", "/en/ric-private-equity-sun-park/"]
+    },
+    {
+      "record_id": "PD-LIB-EV-0002",
+      "name": "03_RICPE_Certificacion_20JUL2021.pdf",
+      "class": "FULL_PUBLIC_REDACTED",
+      "status": "NATIVE_CONNECTED_SOURCE_RECOVERED_PUBLIC_BINARY_RECONCILIATION_REQUIRED",
+      "reason": "Primary counter-record on ownership breakdown, acquisition stage, unsigned LOI and incomplete due diligence.",
+      "required_outputs": ["canonical PDF", "page-1 and page-2 images", "searchable Spanish text", "English translation", "current-versus-legacy hash explanation"],
+      "interlinks": ["PD-SP-O-0020", "PD-SP-O-0007", "event e-2021-07-20", "/es/uria-menendez-sun-park/", "/es/ric-private-equity-sun-park/"]
+    },
+    {
+      "record_id": "PD-LIB-EV-0003",
+      "name": "04_CAM_Escrito_21JUL2021.pdf",
+      "class": "FULL_PUBLIC_REDACTED",
+      "status": "NATIVE_CONNECTED_SOURCE_RECOVERED_PUBLIC_BINARY_RECONCILIATION_REQUIRED",
+      "reason": "Court filing that supplies the 20 July 2021 RICPE certification into the insolvency record.",
+      "required_outputs": ["redacted complete PDF", "one image per page", "searchable text", "filing/certification parent-child links", "current-versus-legacy hash explanation"],
+      "interlinks": ["PD-SP-O-0007", "PD-SP-O-0020", "event e-2021-07-21", "Concurso 36/2012"]
+    },
+    {
+      "record_id": "PD-LIB-EV-0004",
+      "name": "05_RICPE_Webinar_11NOV2020.pdf / RIC PRIVATE EQUITY WEBINAR 11NOV2020.pdf",
+      "class": "PARTIAL_PAGES",
+      "status": "SOURCE_PRESENT_ANNOTATION_AND_NATIVE_RECORDING_BOUNDARY_OPEN",
+      "reason": "Material presentation source, but the preserved PDF may mix original content, captures/transcription and later contextual annotations.",
+      "required_outputs": ["identify native-source pages", "publish Sun Park, Uría/PwC, filters and ‘libres de cargas’ pages", "separate later annotations", "seek native recording", "searchable transcript with speaker confidence"],
+      "interlinks": ["PD-SP-O-0084", "PD-SP-P-0167", "PD-SP-O-0020", "event e-2020-11-11"]
+    },
+    {
+      "record_id": "PD-LIB-EV-0005",
+      "name": "01_RICPE_Comunicacion_Unica_Consejo_17AGO2026_FINAL_FIRMADA.pdf",
+      "class": "FULL_PUBLIC_REDACTED",
+      "status": "SOURCE_PRESENT_PRIVACY_AND_LIVE_STRATEGY_REVIEW_REQUIRED",
+      "reason": "Signed formal communication is necessary context for the 27 August resolution but may contain private contact data, live strategy and unnecessary third-party identifiers.",
+      "required_outputs": ["redaction log", "public-safe full derivative or reasoned excerpt decision", "page images", "searchable text", "link to closure response"]
+    },
+    {
+      "record_id": "PD-LIB-EV-0006",
+      "name": "CONTESTACION.pdf — CaixaBank defence dated 29JAN2024",
+      "class": "FULL_PUBLIC_REDACTED",
+      "status": "CURRENT_CONNECTED_VARIANT_REGISTERED_LEGACY_VARIANT_UNRESOLVED",
+      "reason": "Primary current-litigation source identifying Tagliavini/García and reliance on Concurso 36/2012 / Insolvency Administration record.",
+      "required_outputs": ["canonical current connected PDF", "page images for counsel identification and relied-on insolvency propositions", "full searchable text", "legacy/current byte-level comparison"],
+      "interlinks": ["PD-SP-P-0165", "PD-SP-P-0166", "PD-SP-O-0032", "PD-SP-O-0084", "event e-2024-01-29"]
+    },
+    {
+      "record_id": "PD-LIB-EV-0007",
+      "name": "CONTROL21_Ampliacion_JDAM_LPAM_AcostaMatos_09JUL2026_FINAL_CONSOLIDADA_PRINT_FILE_FIRMA.docx",
+      "class": "FULL_PUBLIC_REDACTED",
+      "status": "CURRENT_CONNECTED_VARIANT_REGISTERED_LEGACY_VARIANT_UNRESOLVED",
+      "reason": "Primary recovered connected version containing the Uría/PwC/RICPE production request.",
+      "required_outputs": ["canonical DOCX preservation", "fixed-layout public PDF", "one image per page", "native extracted text", "full English translation", "filed-packet identity limitation", "legacy/current byte-level comparison"],
+      "interlinks": ["PD-SP-O-0084", "PD-SP-O-0020", "event e-2026-07-09", "procedure 1901/2026"]
+    },
+    {
+      "record_id": "PD-LIB-EV-0008",
+      "name": "Ampliacion Proc.1901-2026 (CAM et al) 09JUL2026.jpeg",
+      "class": "FULL_PUBLIC_REDACTED",
+      "status": "CURRENT_CONNECTED_VARIANT_REGISTERED_LEGACY_VARIANT_UNRESOLVED",
+      "reason": "Visible Decanato receipt establishing date and procedure reference, while not proving exact filed-byte identity.",
+      "required_outputs": ["redacted full image", "searchable stamp transcription", "current/legacy comparison", "parent link to Control 21"]
+    },
+    {
+      "record_id": "PD-LIB-EV-0009",
+      "name": "2015 creditor / HAYA / Uría email threads",
+      "class": "EXCERPT_IMAGE_TEXT",
+      "status": "AUTHENTICATED_GMAIL_SOURCE_SANITISED_SUMMARY_ONLY",
+      "reason": "Contemporaneous communications establish reported pathways and material counter-evidence, but raw threads contain private addresses, contact data, signatures, legal discussion and unrelated content.",
+      "required_outputs": ["redacted message-header/date strip", "minimal proposition-bearing excerpt image", "searchable transcription", "thread-level source ID", "30 April counter-evidence beside 28 April and 3 July reports"],
+      "interlinks": ["PD-SP-P-0163", "PD-SP-P-0164", "PD-SP-P-0170", "PD-SP-P-0171", "PD-SP-P-0172", "events e-2015-04-09-28 to e-2015-07-03"]
+    },
+    {
+      "record_id": "PD-LIB-EV-0010",
+      "name": "DocExp 1997-14150 23-01-2015.pdf",
+      "class": "PARTIAL_PAGES",
+      "status": "ATTACHMENT_PRESENT_RELEVANCE_AND_PRIVILEGE_REVIEW_REQUIRED",
+      "reason": "May establish the creditor/enforcement file context referred to in the 2015 communication chain.",
+      "required_outputs": ["identify author/court/date/capacity", "select pages proving creditor/appearance/procedure", "redact identifiers", "do not publish unrelated case material"]
+    },
+    {
+      "record_id": "PD-LIB-EV-0011",
+      "name": "DOCS-#8726424-v3-Propuesta_Luchy-Cerberus.docx",
+      "class": "WITHHOLD_PRIVATE",
+      "status": "PRIVATE_PARTY_PROPOSAL_LIVE_LEGAL_AND_PRIVILEGE_REVIEW_REQUIRED",
+      "reason": "The existence/date/transmission may be evidential, but the proposal body may reveal privileged advice, negotiation position or live strategy.",
+      "public_derivative": "Register date, sender/recipient capacities, file hash and a narrow non-privileged proposition only unless counsel authorises more."
+    },
+    {
+      "record_id": "PD-LIB-EV-0012",
+      "name": "04_RICPE_certificacion_20JUL2021_p1.png and 05_RICPE_certificacion_20JUL2021_p2.png",
+      "class": "IMAGE_ONLY_WITH_CAPTION",
+      "status": "CONNECTED_SOURCE_IMAGES_RECOVERED_REPOSITORY_PATH_PENDING",
+      "reason": "Ready-made source-derived visual evidence for the two certification pages; must be linked to the canonical PDF and text rather than treated as independent evidence.",
+      "interlinks": ["PD-LIB-EV-0002", "event e-2021-07-20"]
+    },
+    {
+      "record_id": "PD-LIB-EV-0013",
+      "name": "02_RICPE_folleto_inversores_Sun_Park_p7.png",
+      "class": "IMAGE_ONLY_WITH_CAPTION",
+      "status": "CONNECTED_SOURCE_IMAGE_RECOVERED_PROVENANCE_REVIEW_REQUIRED",
+      "reason": "Direct visual of Sun Park in investor material; caption must identify source, page, date and whether it is a capture or native page export."
+    },
+    {
+      "record_id": "PD-LIB-EV-0014",
+      "name": "12. CERT SUN PARK JUNTA 2022 ... -redacted.pdf",
+      "class": "FULL_PUBLIC_REDACTED",
+      "status": "LIBRARY_NATIVE_REDACTED_CANDIDATE",
+      "reason": "Potentially important 2022 governance/title chronology source already carrying a redacted designation; verify completeness, provenance and legal relevance before public admission.",
+      "required_outputs": ["hash", "page count", "redaction quality review", "searchable text", "page images", "links to 2022 meeting/adjudication events"]
+    }
+  ],
+  "deduplication_rules": [
+    "Files with the same byte size and filename family, including numbered copies such as 1780049468759_RE_007421_26(n).pdf, are one candidate family until SHA-256 proves distinct variants.",
+    "A generated summary, translation or report never replaces the native source and is not uploaded as a second primary exhibit.",
+    "For each duplicate family select one canonical native object, preserve alternate hashes and creation metadata, and register every derivative as a child.",
+    "Do not mirror a Gmail attachment again when an identical public, redacted repository binary and page-image set already exist."
+  ],
+  "automatic_interlink_rules": [
+    "Every selected item must link to canonical actor/entity IDs, event IDs, proceeding IDs and at least one reader-facing route.",
+    "Every page image must carry parent evidence ID, page number, source hash, derivative hash, redaction status and caption.",
+    "Every excerpt must preserve enough preceding/following context to avoid changing meaning and must identify omitted material.",
+    "Every current/legacy hash pair remains separate until byte-level comparison explains the difference."
+  ]
+}
