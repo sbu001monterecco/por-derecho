@@ -1,0 +1,183 @@
+{
+  "schema": "por-derecho.matter-identity-registry.part.v1",
+  "registry_id": "PD-SP-IDENTITY-REGISTRY-001",
+  "type": "PERSON",
+  "control_id": "PD-NAME-20260904-01",
+  "records": [
+    {
+      "id": "PD-SP-P-0901",
+      "type": "PERSON",
+      "name": "Javier Rubio Sanz",
+      "aliases": [
+        "Javier Rubio",
+        "Rubio Sanz",
+        "Javier Rubio Sanz Uría Menéndez",
+        "Javier Rubio Sanz Uria Menendez",
+        "PH122 Uría",
+        "Promontoria Holding 122 Uría",
+        "3 July 2015 Uría contact",
+        "15 May 2017 PH122 filing"
+      ],
+      "organisation_ids": ["PD-SP-O-0901"],
+      "routes": {
+        "es": "/es/uria-menendez-sun-park/",
+        "en": "/en/uria-menendez-sun-park/"
+      },
+      "identity_resolution": "SOURCE_IDENTIFIED_DOCUMENTARY_WITNESS",
+      "source_assertions": [
+        "evidence/uria-ricpe-sun-park/README.md",
+        "evidence/uria-ricpe-sun-park/manifest.json",
+        "URIA_HAYA_PUZZLE_CONTROL_04SEP2026.md"
+      ],
+      "capacity_boundary": "Reported 2015 contact and named Uría lawyer in the 15 May 2017 PH122 filing; neither fact alone establishes another mandate, conflict, knowledge transfer or wrongdoing."
+    },
+    {
+      "id": "PD-SP-P-0902",
+      "type": "PERSON",
+      "name": "Javier González Guimaraes-Da Silva",
+      "aliases": [
+        "Javier Gonzalez Guimaraes-Da Silva",
+        "Javier González Guimaraes Da Silva",
+        "Javier Gonzalez Guimaraes Da Silva",
+        "Javier González Guimaraes",
+        "Javier Gonzalez Guimaraes",
+        "Uría Madrid 2015 creditor correspondence",
+        "Uria Madrid 2015 creditor correspondence"
+      ],
+      "organisation_ids": ["PD-SP-O-0901"],
+      "routes": {
+        "es": "/es/uria-menendez-sun-park/",
+        "en": "/en/uria-menendez-sun-park/"
+      },
+      "identity_resolution": "SOURCE_IDENTIFIED_REPORTED_COMMUNICATION_NODE",
+      "source_assertions": [
+        "evidence/uria-ricpe-sun-park/README.md",
+        "evidence/uria-ricpe-sun-park/manifest.json",
+        "evidence/uria-ricpe-sun-park/2015-creditor-haya-uria-source-note.md"
+      ],
+      "capacity_boundary": "Named in a contemporaneous reported-communication sequence; the native communication, client, instruction and mandate remain open."
+    },
+    {
+      "id": "PD-SP-P-0903",
+      "type": "PERSON",
+      "name": "Juan Miguel Hernández Herrera",
+      "aliases": [
+        "Juan Miguel Hernandez Herrera",
+        "Juan Miguel Hernández",
+        "Juan Miguel Hernandez",
+        "Hernández Herrera Uría",
+        "Hernandez Herrera Uria",
+        "PH122 Uría 15 May 2017",
+        "Promontoria Holding 122 Uría lawyer"
+      ],
+      "organisation_ids": ["PD-SP-O-0901"],
+      "routes": {
+        "es": "/es/uria-menendez/",
+        "en": "/en/uria-menendez-sun-park/"
+      },
+      "identity_resolution": "PRIMARY_DOCUMENT_SIGNATORY_IDENTIFIED",
+      "source_assertions": ["URIA_HAYA_PUZZLE_CONTROL_04SEP2026.md"],
+      "capacity_boundary": "Named signatory in the 15 May 2017 PH122 filing as recorded by the controlled Uría evidence package; no wider mandate or conduct is inferred."
+    },
+    {
+      "id": "PD-SP-P-0904",
+      "type": "PERSON",
+      "name": "Ángel Alonso Hernández",
+      "aliases": [
+        "Angel Alonso Hernandez",
+        "Ángel Alonso",
+        "Angel Alonso",
+        "Alonso Hernández Uría",
+        "Alonso Hernandez Uria",
+        "PH122 Uría 15 May 2017",
+        "Promontoria Holding 122 Uría lawyer"
+      ],
+      "organisation_ids": ["PD-SP-O-0901"],
+      "routes": {
+        "es": "/es/uria-menendez/",
+        "en": "/en/uria-menendez-sun-park/"
+      },
+      "identity_resolution": "PRIMARY_DOCUMENT_SIGNATORY_IDENTIFIED",
+      "source_assertions": ["URIA_HAYA_PUZZLE_CONTROL_04SEP2026.md"],
+      "capacity_boundary": "Named signatory in the 15 May 2017 PH122 filing as recorded by the controlled Uría evidence package; no wider mandate or conduct is inferred."
+    },
+    {
+      "id": "PD-SP-P-0905",
+      "type": "PERSON",
+      "name": "Raimon Tagliavini Sansa",
+      "aliases": [
+        "Raimon Tagliavini",
+        "Tagliavini Sansa",
+        "Raimon Tagliavini Uría",
+        "Raimon Tagliavini Uria",
+        "CaixaBank defence counsel 29 January 2024",
+        "PO 1859/2023-9 CaixaBank counsel",
+        "CaixaBank concurso 36/2012 counsel"
+      ],
+      "organisation_ids": ["PD-SP-O-0901"],
+      "routes": {
+        "es": "/es/uria-menendez-sun-park/",
+        "en": "/en/uria-menendez-sun-park/"
+      },
+      "identity_resolution": "PRIMARY_LITIGATION_DOCUMENT_COUNSEL_IDENTIFIED",
+      "source_assertions": [
+        "evidence/uria-ricpe-sun-park/README.md",
+        "evidence/uria-ricpe-sun-park/manifest.json",
+        "evidence/uria-ricpe-sun-park/caixabank-defence-20240129-source-note.md"
+      ],
+      "capacity_boundary": "Identified as CaixaBank counsel in the 29 January 2024 defence; representation does not establish personal adoption of every client proposition, prior knowledge, conflict or wrongdoing."
+    },
+    {
+      "id": "PD-SP-P-0906",
+      "type": "PERSON",
+      "name": "David García Martín",
+      "aliases": [
+        "David Garcia Martin",
+        "David García",
+        "David Garcia",
+        "David García Martín Uría",
+        "David Garcia Martin Uria",
+        "CaixaBank defence co-counsel 29 January 2024",
+        "PO 1859/2023-9 CaixaBank counsel",
+        "CaixaBank concurso 36/2012 counsel"
+      ],
+      "organisation_ids": ["PD-SP-O-0901"],
+      "routes": {
+        "es": "/es/uria-menendez-sun-park/",
+        "en": "/en/uria-menendez-sun-park/"
+      },
+      "identity_resolution": "PRIMARY_LITIGATION_DOCUMENT_COUNSEL_IDENTIFIED",
+      "source_assertions": [
+        "evidence/uria-ricpe-sun-park/README.md",
+        "evidence/uria-ricpe-sun-park/manifest.json",
+        "evidence/uria-ricpe-sun-park/caixabank-defence-20240129-source-note.md"
+      ],
+      "capacity_boundary": "Identified as CaixaBank co-counsel in the 29 January 2024 defence; representation does not establish personal adoption of every client proposition, prior knowledge, conflict or wrongdoing."
+    },
+    {
+      "id": "PD-SP-P-0907",
+      "type": "PERSON",
+      "name": "Juan Francisco Falcón",
+      "aliases": [
+        "Juan Francisco Falcon",
+        "Juan Falcón",
+        "Juan Falcon",
+        "Juan Francisco Falcón Uría",
+        "Juan Francisco Falcon Uria",
+        "RICPE legal advice Falcón",
+        "RICPE legal advice Falcon",
+        "Uría M&A Private Equity",
+        "Uria M&A Private Equity",
+        "RIC Private Equity 2019 2020"
+      ],
+      "organisation_ids": ["PD-SP-O-0901"],
+      "routes": {
+        "es": "/es/uria-menendez/",
+        "en": "/en/uria-menendez-sun-park/"
+      },
+      "identity_resolution": "PUBLIC_SOURCE_PROFESSIONAL_ROLE_IDENTIFIED",
+      "source_assertions": ["URIA_HAYA_PUZZLE_CONTROL_04SEP2026.md"],
+      "capacity_boundary": "Public-source professional/advisory role in the RICPE formation perimeter; this does not establish a Sun Park-specific mandate, information flow, conflict or wrongdoing."
+    }
+  ]
+}
