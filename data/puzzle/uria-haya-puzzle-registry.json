@@ -1,0 +1,84 @@
+{
+  "schema": "por-derecho.puzzle-evidence-registry.v1",
+  "module": "uria-haya-cerberus-sunpark",
+  "updated": "2026-09-04",
+  "status_labels": {
+    "CONFIRMED_PRIMARY": "Primary document located and read.",
+    "CONFIRMED_PUBLIC": "Public source located and independently readable.",
+    "CONTROLLED_SOURCE": "Source is preserved in the controlled evidence library but is not republished here.",
+    "REQUEST_ONLY": "A judicial or investigative request; it does not prove the requested material exists or what it says.",
+    "CONTEXTUAL": "Relevant context only; not evidence of asset-specific title, mandate, instruction, coordination or wrongdoing.",
+    "DRAFT_SOURCE": "Draft document; proves the draft and its contents, not dispatch, receipt or legal effect.",
+    "OPEN_EVIDENCE_GAP": "A material proposition remains unproved and must not be stated as fact."
+  },
+  "people": [
+    {"id":"P-JFF","name":"Juan Francisco Falcón","role":"Uría Menéndez partner / RICPE formation adviser","status":"CONFIRMED_PUBLIC"},
+    {"id":"P-EGS","name":"Enrique Guerra Suárez","role":"RICPE promoter / secretary / legal adviser perimeter","status":"CONFIRMED_PUBLIC"},
+    {"id":"P-JA","name":"José Acosta","role":"Acosta Matos / RICPE board perimeter; exact identity to be reconciled against source records","status":"CONFIRMED_PUBLIC"},
+    {"id":"P-JMHH","name":"Juan Miguel Hernández Herrera","role":"Uría Menéndez lawyer on PH122 filing","status":"CONFIRMED_PRIMARY"},
+    {"id":"P-AAH","name":"Ángel Alonso Hernández","role":"Uría Menéndez lawyer on PH122 filing","status":"CONFIRMED_PRIMARY"},
+    {"id":"P-JRS","name":"Javier Rubio Sanz","role":"Uría Menéndez lawyer on PH122 filing","status":"CONFIRMED_PRIMARY"},
+    {"id":"P-RTS","name":"Raimon Tagliavini Sansa","role":"Uría Menéndez partner; lawyer named in CaixaBank defence","status":"CONFIRMED_PRIMARY"},
+    {"id":"P-DGM","name":"David García Martín","role":"Uría Menéndez litigation lawyer; lawyer named in CaixaBank defence","status":"CONFIRMED_PRIMARY"},
+    {"id":"P-FBRBL","name":"Francisco de Borja Rodríguez-Batllori Laffitte","role":"Insolvency Administrator; archived professional profile records A&G Asesores association in 2009-2010","status":"CONTROLLED_SOURCE"},
+    {"id":"P-LC","name":"Lourdes Castillejo","role":"MYND/Google Business requests identified in Control 21; capacity/instructions to be verified","status":"CONTROLLED_SOURCE"}
+  ],
+  "entities": [
+    {"id":"E-URIA","name":"Uría Menéndez Abogados, S.L.P.","type":"law_firm"},
+    {"id":"E-LPB","name":"Luchy Playa Blanca, S.L.U.","type":"company"},
+    {"id":"E-PH122","name":"Promontoria Holding 122 B.V.","type":"credit_vehicle"},
+    {"id":"E-CAM","name":"Construcciones Acosta Matos, S.A.","type":"company"},
+    {"id":"E-RICPE","name":"RIC Private Equity Investment Partners, S.C.R., S.A.","type":"investment_vehicle"},
+    {"id":"E-CAIXA","name":"CaixaBank, S.A.","type":"bank"},
+    {"id":"E-HAYA","name":"Haya Real Estate","type":"servicer"},
+    {"id":"E-CERBERUS","name":"Cerberus","type":"investment_manager_context"},
+    {"id":"E-SAREB","name":"SAREB","type":"asset_management_company"},
+    {"id":"E-BANKIA","name":"Bankia","type":"bank"},
+    {"id":"E-HNT","name":"Hotel New Trend","type":"company"},
+    {"id":"E-MYND","name":"MYND Yaiza / MYND Hotels","type":"operator_brand"},
+    {"id":"E-SANTELMO","name":"Abogados San Telmo / RSM perimeter","type":"professional_services"},
+    {"id":"E-AG","name":"A&G Asesores Legales, Financieros y Tributarios","type":"professional_services"}
+  ],
+  "events": [
+    {"id":"EV-2014-12-30-HAYA","date":"2014-12-30","title":"Contemporaneous email forwards Haya notarised document","status":"CONTROLLED_SOURCE","note":"Email describes a notarised document received from Haya regarding a purported credit cession. The email description is not itself proof that title passed to Haya."},
+    {"id":"EV-2015-01-09-HAYA","date":"2015-01-09","title":"Haya Real Estate burofax forwarded to Cuatrecasas","status":"CONTROLLED_SOURCE","note":"Direct contemporaneous Haya/LPB-side contact. Legal capacity and effect require the underlying instrument and servicing mandate."},
+    {"id":"EV-2017-05-15-PH122-URIA","date":"2017-05-15","title":"Uría lawyers sign PH122 filing in Concurso 36/2012","status":"CONFIRMED_PRIMARY"},
+    {"id":"EV-2017-10-20-PH122-CAM","date":"2017-10-20","title":"PH122-to-CAM credit assignment date stated in later records","status":"CONFIRMED_PRIMARY","note":"Scope, consideration, notification, reconciliation and legal effects must be read from native transfer instruments and court record."},
+    {"id":"EV-2017-12-06-DEMAND","date":"2017-12-06","title":"Draft demand seeks PH122→CAM assignment information and addresses Uría / AC","status":"DRAFT_SOURCE"},
+    {"id":"EV-2019-RICPE","date":"2019","title":"RICPE formation: Falcón advice and Acosta Matos backing","status":"CONFIRMED_PUBLIC"},
+    {"id":"EV-2020-06-04-RICPE-SUNPARK","date":"2020-06-04","title":"RICPE brochure lists Sun Park / CAM in project table","status":"CONTROLLED_SOURCE"},
+    {"id":"EV-2020-11-11-WEBINAR","date":"2020-11-11","title":"RICPE investor webinar presents Sun Park perimeter and adviser/control framework","status":"CONTROLLED_SOURCE"},
+    {"id":"EV-2024-01-29-CAIXA-URIA","date":"2024-01-29","title":"CaixaBank defence names Tagliavini and García Martín","status":"CONFIRMED_PRIMARY"},
+    {"id":"EV-2026-07-09-CONTROL21","date":"2026-07-09","title":"Control 21 supplemental criminal filing","status":"CONFIRMED_PRIMARY"},
+    {"id":"EV-2026-07-09-URIA-REQUEST","date":"2026-07-09","title":"Court asked to obtain Uría/PwC/adviser reports or notes on Sun Park 2020-2021","status":"REQUEST_ONLY"},
+    {"id":"EV-2026-08-13-AG-AC","date":"2026-08-13","title":"Controlled compliance dossier records archived A&G association for the AC and strict evidential limit","status":"CONTROLLED_SOURCE"}
+  ],
+  "documents": [
+    {"id":"DOC-PH122-URIA-20170515","title":"Recurso de reposición de Promontoria, 15 May 2017","status":"CONFIRMED_PRIMARY","visibility":"controlled","finding":"PH122 filing in LPB Concurso 36/2012 signed by Juan Miguel Hernández Herrera, Ángel Alonso Hernández and Javier Rubio Sanz of Uría Menéndez."},
+    {"id":"DOC-LPB-DEMAND-20171206","title":"Draft demand for information on PH122→CAM assignment, 6 Dec 2017","status":"DRAFT_SOURCE","visibility":"controlled"},
+    {"id":"DOC-RICPE-HISTORY","title":"RIC Private Equity — Nuestra historia","status":"CONFIRMED_PUBLIC","visibility":"public","url":"https://ric.capital/compania/nuestra-historia/"},
+    {"id":"DOC-RICPE-ARTICLE-20200117","title":"RICPE-hosted article, 17 Jan 2020","status":"CONFIRMED_PUBLIC","visibility":"public","url":"https://ric.capital/cms/uploads/2020_01_17_DA_pagina_12.pdf"},
+    {"id":"DOC-CAIXA-DEFENCE-20240129","title":"CaixaBank defence, Aweswell v CaixaBank, 29 Jan 2024","status":"CONFIRMED_PRIMARY","visibility":"controlled"},
+    {"id":"DOC-CONTROL21-20260709","title":"Control 21 — Ampliación y aportación documental complementaria, 9 Jul 2026","status":"CONFIRMED_PRIMARY","visibility":"controlled"},
+    {"id":"DOC-HAYA-EMAIL-20141230","title":"Email: Haya Real Estate, 30 Dec 2014","status":"CONTROLLED_SOURCE","visibility":"controlled"},
+    {"id":"DOC-HAYA-BUROFAX-20150109","title":"Burofax HAYA REAL ESTATE, 9 Jan 2015","status":"CONTROLLED_SOURCE","visibility":"controlled"},
+    {"id":"DOC-SAREB-ANNUAL-2014","title":"SAREB Annual Report 2014","status":"CONFIRMED_PUBLIC","visibility":"public","url":"https://www.sareb.es/wp-content/uploads/2024/05/informe-anual-actividad-sareb-2014.pdf"},
+    {"id":"DOC-ELPAIS-HAYA-20140917","title":"El País — Haya Real Estate launch / Bankia asset servicing context","status":"CONFIRMED_PUBLIC","visibility":"public","url":"https://elpais.com/economia/2014/09/17/vivienda/1410952101_227739.html"}
+  ],
+  "evidence_links": [
+    {"id":"LINK-URIA-1","from":"E-URIA","to":"E-PH122","period":"2017","status":"CONFIRMED_PRIMARY","basis":["DOC-PH122-URIA-20170515"]},
+    {"id":"LINK-URIA-2","from":"E-URIA","to":"E-RICPE","period":"2019-2020","status":"CONFIRMED_PUBLIC","basis":["DOC-RICPE-HISTORY","DOC-RICPE-ARTICLE-20200117"]},
+    {"id":"LINK-URIA-3","from":"E-URIA","to":"E-CAIXA","period":"2024","status":"CONFIRMED_PRIMARY","basis":["DOC-CAIXA-DEFENCE-20240129"]},
+    {"id":"LINK-URIA-REQUEST","from":"DOC-CONTROL21-20260709","to":"E-URIA","period":"2026","status":"REQUEST_ONLY","note":"Request for production of reports/notes; not proof that such materials exist."},
+    {"id":"LINK-HAYA-SERVICING","from":"E-HAYA","to":"E-SAREB","period":"2014-2019","status":"CONFIRMED_PUBLIC","note":"SAREB awarded Haya servicing of a portfolio of Bankia-originated loans; asset-specific inclusion must be proved separately."},
+    {"id":"LINK-HAYA-LPB-CONTACT","from":"E-HAYA","to":"E-LPB","period":"2014-2015","status":"CONTROLLED_SOURCE","note":"Contemporaneous communications establish Haya as an interlocutor in the credit-administration perimeter; they do not by themselves establish title."},
+    {"id":"LINK-AG-AC","from":"E-AG","to":"P-FBRBL","period":"2009-2010","status":"CONTROLLED_SOURCE"},
+    {"id":"LINK-AG-RICPE-LINEAGE","from":"E-AG","to":"E-RICPE","period":"pre-2019 to 2019","status":"CONFIRMED_PUBLIC","note":"RICPE's corporate history states A&G Asesores identified/promoted the later vehicle."}
+  ],
+  "open_gaps": [
+    {"id":"GAP-AC-URIA-RETAINER","title":"Direct AC / San Telmo → Uría engagement","status":"OPEN_EVIDENCE_GAP","rule":"Do not state or imply a direct Uría retainer for the Insolvency Administrator unless native engagement evidence is located.","search_targets":["engagement or scope letters","invoices and time narratives","client/matter numbers","conflict checks or waivers","referral records","emails and meeting invitations","payment ledgers","Concurso 36/2012 service lists / professional adviser notices","RSM/San Telmo archive custody records","A&G archive chain and custodian records"]},
+    {"id":"GAP-HAYA-TITLE","title":"Haya title to the specific LPB credit","status":"OPEN_EVIDENCE_GAP","rule":"Servicing/contact must not be collapsed into ownership. Obtain the native assignment/mandate and asset schedule before asserting title."},
+    {"id":"GAP-CERBERUS-ASSET-SPECIFIC","title":"Cerberus asset-specific ownership/control/instruction for LPB","status":"OPEN_EVIDENCE_GAP","rule":"Corporate ownership of/relationship with Haya is contextual; asset-specific ownership, instruction, ratification or benefit requires separate proof."},
+    {"id":"GAP-URIA-SUNPARK-DD","title":"Uría Sun Park 2020-2021 due-diligence reports/notes","status":"OPEN_EVIDENCE_GAP","rule":"Control 21 requested these materials; their existence, authorship, scope and content remain to be obtained and verified."}
+  ]
+}
