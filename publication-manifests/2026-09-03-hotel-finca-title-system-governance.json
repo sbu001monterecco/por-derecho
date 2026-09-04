@@ -1,4 +1,15 @@
 {
+  "publication_id": "PD-PUB-HOTEL-FINCA-20260903-01",
+  "owner": "Por Derecho / repository governance",
+  "current_state": "MERGED",
+  "expected_routes": {
+    "es": ["es/fincas-hoteleras-clasificacion-lesion-titulo-sobre-titulo/index.html"],
+    "en": ["en/hotel-fincas-asset-classification-title-on-title-injury/index.html"]
+  },
+  "merge_sha": "bc85c64bd3cbc5790ab2162bdf93cec21d6f8dfe",
+  "validation": {
+    "evidence": ["Focused validation run 33816683423: SUCCESS", "Source presence on remote main verified by the original release closeout"]
+  },
   "manifest_id": "PD-PUB-HOTEL-FINCA-20260903-01",
   "title": "All-hotel-finca asset classification, title-on-title injury and cross-proceeding instrumentality release",
   "created": "2026-09-03",
