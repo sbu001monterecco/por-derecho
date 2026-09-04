@@ -34,7 +34,7 @@
     {"date":"2025-04-23","label":"CNMC authorises Portobello Capital / BLUESEA acquisition of exclusive control of Meeting Point Spain and subsidiaries","state":"DOCUMENTED","source_class":"PRIMARY_SOURCE_CORPORATE_REGULATORY_RECORD"},
     {"date":"2025-08-08","label":"Tourinews reports Joan Cruz directing BLUESEA absorption work for Meeting Point Hotels Spain and renewals of expiring hotel-management contracts","state":"DOCUMENTED_PUBLIC_CONTEXT"},
     {"date":"2025-09","label":"Public continuity items concern Meeting Point/BLUESEA renewal at Hotel Alyssa Suite in Playa Blanca and Acosta Matos entrusting Hotel Marieta to Meeting Point with BLUESEA support; Joan Cruz public LinkedIn activity shares the developments","state":"DOCUMENTED_PUBLIC_CONTEXT"},
-    {"date":"2026-06-28","label":"Later controlled derivative ANEXO_08D_DOCUMENTO_GRAFICO_CAM_JOAN_CRUZ_01MAR2018.pdf appears in private Drive archive; derivative equivalence remains unverified","state":"OPEN"}
+    {"date":"2026-06-28","label":"Controlled technical Annex 08-D records the 01-Mar-2018 photographic sequence, states documentary rather than facial-recognition attribution, and reports an embedded-copy SHA-256 of 79f6aa1d29e9c4bd7d86d66474039f56ea15fc3091194fb0c2fad617728592bb; version equivalence to PD-SP-DOC-0005 remains open","state":"DOCUMENTED","source_class":"DOCUMENTED_FACT"}
   ],
   "edges": [
     {"from":"PD-SP-P-0145","to":"Meeting Point Hotelmanagement (Canaries), S.L.","type":"PROFESSIONAL_CAPACITY","state":"DOCUMENTED","date_range":"2015-2019 corporate-record chronology"},
@@ -53,6 +53,7 @@
     {"from":"Portobello Capital / BLUESEA","to":"Meeting Point Spain, S.L.U. and subsidiaries","type":"CONTROL_ACQUISITION","state":"DOCUMENTED","date":"2025-04-23"},
     {"from":"PD-SP-P-0145","to":"BLUESEA / Meeting Point integration","type":"POST_FTI_PROFESSIONAL_CONTINUITY","state":"DOCUMENTED_PUBLIC_CONTEXT","date":"2025-08"},
     {"from":"Acosta Matos / Hotel Marieta","to":"Meeting Point / BLUESEA","type":"POST_FTI_OWNER_OPERATOR_CONTINUITY","state":"DOCUMENTED_PUBLIC_CONTEXT","date":"2025-09"},
+    {"from":"ANEXO_08D_DOCUMENTO_GRAFICO_CAM_JOAN_CRUZ_01MAR2018.pdf","to":"PD-SP-DOC-0005","type":"VERSION_RELATIONSHIP","state":"OPEN","boundary":"Annex 08-D is authenticated as a controlled technical annex and reports a distinct embedded-copy hash; page-by-page/version equivalence to the older 18-page predecessor has not been established."},
     {"from":"PD-SP-P-0145","to":"Francisco de Borja Rodríguez-Batllori Laffitte","type":"DIRECT_COORDINATION","state":"OPEN","boundary":"Chronology overlaps with CAM access/security permissions but no direct Joan↔AC communication or instruction has yet been established."},
     {"from":"PD-SP-P-0145","to":"Juzgado de lo Mercantil nº 1 de Las Palmas / judge","type":"DIRECT_COORDINATION","state":"OPEN","boundary":"No direct Joan↔Judge communication, instruction or advance-knowledge bridge has yet been established."},
     {"from":"pre-7-Jun-2018 sequence","to":"planned/prepared control trajectory","type":"INFERENCE","state":"REASONED_INFERENCE","boundary":"Supports investigation of preparation/organisation; does not prove conspiracy or criminal intent."},
@@ -61,13 +62,13 @@
   "asset_lanes": ["ownership-title","insolvency-liquidation","operation-exploitation","community-CEXP-governance","financing-NPL","possession-access-security-control","commercialisation-MeetingPoint-FTI-ClubSei","funded-exit-ONA-Stoneweg-Elaia","judicial-prosecutorial-regulatory","tax-RIC-RICPE-public-support","post-FTI-custody-BLUESEA"],
   "image_family": {"directory":"/assets/evidence/joan-cruz-01mar2018/","pages":18,"contact_sheet":true,"identification_rule":"No facial or biometric recognition. Human-authored filename/caption/witness attributions remain attributed to those sources."},
   "classification_summary": {
-    "1_DOCUMENTED_FACT":"01-Mar package association; recovered HKI 25-Nov-2019 captures; existing controlled Club Sei/Sun Park commercial evidence.",
+    "1_DOCUMENTED_FACT":"01-Mar package association; authenticated controlled Annex 08-D and its embedded-copy hash; recovered HKI 25-Nov-2019 captures; existing controlled Club Sei/Sun Park commercial evidence.",
     "2_PRIMARY_SOURCE_CORPORATE_REGULATORY_RECORD":"BORME Meeting Point chronology; CNMC BLUESEA/MPS control acquisition.",
     "3_CONTEMPORANEOUS_MEDIA_PROFESSIONAL_SELF_PUBLICATION":"2016 LABRANDA Marieta role; Acosta Matos project pages; Club Sei announcements; 2025 professional activity.",
     "4_CORROBORATED_CONNECTION":"Recurring Meeting Point/LABRANDA–Acosta Matos owner/operator/executive relationship before 2018 and renewed post-FTI continuity.",
     "5_INVESTIGATIVE_INFERENCE_HYPOTHESIS":"Test whether the 01-Mar visit related to evaluation, measurements, project preparation, management or commercialisation; no criminal conclusion.",
     "6_USER_ALLEGATION":"Wider alleged causal relationship between pre-title access/project preparation, later material control, commercialisation and adjudication remains separately attributed.",
-    "7_UNRESOLVED_REQUIRES_AUTHENTICATION":"Identity, consent/authority, exact capacity, purpose, originals/EXIF, project outputs, contracts, first dates, custody and Annex 08-D equivalence."
+    "7_UNRESOLVED_REQUIRES_AUTHENTICATION":"Identity, consent/authority, exact capacity, purpose, originals/EXIF, project outputs, contracts, first dates, custody and the version relationship between Annex 08-D's embedded copy and PD-SP-DOC-0005."
   },
   "open_gaps": [
     "Independent identity authentication for the persons depicted in the 01-Mar photographs.",
@@ -83,7 +84,7 @@
     "First internal Lava Verde conception date and first HKI Sun Park publication date.",
     "Booking, payment, revenue, commission and inventory records for Club Sei/Sun Park.",
     "Record custody after FTI collapse, including Meeting Point/BLUESEA handover, insolvency files and proceeding 357/2024.",
-    "Hash/page equivalence of the 28-Jun-2026 Annex 08-D derivative against PD-SP-DOC-0005.",
+    "Page-by-page/version equivalence of the Annex 08-D embedded controlled copy against PD-SP-DOC-0005; the two recorded SHA-256 values differ.",
     "Reconciliation of 2019 and 2025 BORME revocation entries without assuming continuous power after 2019."
   ],
   "public_routes": {
