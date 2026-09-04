@@ -1,7 +1,9 @@
 # CaixaBank Valencia ↔ Concurso 36/2012 ↔ CAM linkage control
 
 Date: 2026-09-04
-Status: PROPOSED FOR PUBLICATION / PR REQUIRED
+Status: PUBLISHED / MERGED TO MAIN
+Publication PR: #1438
+Merge commit: 6a6820cc05ff6ff72dc6b281da9b7d7d8ec2c21d
 Public/private boundary: PUBLIC-SAFE framing only. No private litigation communications, privileged material or unsupported criminal conclusion is reproduced.
 
 ## Purpose
@@ -26,13 +28,13 @@ Add an evidence-led bridge to the canonical Spanish CaixaBank Valencia dossier e
 
 ## Publication thesis
 
-The proposed public section may state that the existing record supports:
+The published section states that the existing record supports:
 
 - an objectively adverse alignment of acts and outcomes;
 - a concrete evidentiary nexus sufficient to investigate whether conduct was independent or consciously complementary; and
 - a need to analyse knowledge, communication, instruction, decision, benefit and causation across the three connected nodes.
 
-It must NOT state collusion, conspiracy, concert, fraud, false documentation, unfair administration, procedural fraud or criminal responsibility as established fact.
+It does NOT state collusion, conspiracy, concert, fraud, false documentation, unfair administration, procedural fraud or criminal responsibility as established fact.
 
 ## Civil / insolvency layer
 
