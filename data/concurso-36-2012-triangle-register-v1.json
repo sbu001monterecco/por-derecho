@@ -1,0 +1,207 @@
+{
+  "schema_version": "1.0.0",
+  "register_id": "PD-C36-TRI-001",
+  "title": "Concurso Ordinario 36/2012 accountability triangle and oversight perimeter",
+  "created": "2026-09-04",
+  "evidence_cutoff": "2026-09-04",
+  "status": "CANONICAL_ARCHITECTURE_WITH_OPEN_PROCEDURAL_BRIDGES",
+  "common_nucleus": {
+    "node_id": "concurso-36-2012",
+    "label_es": "Concurso Ordinario 36/2012",
+    "label_en": "Insolvency Proceeding 36/2012",
+    "kind": "shared_procedural_and_factual_nucleus",
+    "routes": {
+      "es": "/por-derecho/es/concurso-36-2012-magistrado-juez/",
+      "en": "/por-derecho/en/insolvency-36-2012-mercantile-court-1/"
+    }
+  },
+  "architecture_rule": "ONE_EVIDENCE_GRAPH_SEPARATE_PROCEEDINGS_INTERLINK_NOT_MERGE",
+  "vertices": [
+    {
+      "vertex_id": "private-actors",
+      "label_es": "Actores privados",
+      "label_en": "Private actors",
+      "primary_controls": ["control-21", "nexus-36", "dp-1901-2026"],
+      "routes": {
+        "es": "/por-derecho/es/dp-1901-2026/",
+        "en": "/por-derecho/en/dp-1901-2026/"
+      },
+      "status_rule": "PRIVATE_ACTOR_CRIMINAL_ROUTE_REMAINS_SEPARATE_FROM_AC_AND_JUDGE_ROUTES"
+    },
+    {
+      "vertex_id": "insolvency-administrator",
+      "label_es": "Administrador Concursal",
+      "label_en": "Insolvency administrator",
+      "primary_controls": ["control-22", "dp-1956-2026", "icalpa-dip-80-2026", "ac-removal-fees"],
+      "routes": {
+        "es": "/por-derecho/es/concurso-36-2012-administrador-concursal/",
+        "en": "/por-derecho/en/insolvency-36-2012-insolvency-administrator/"
+      },
+      "status_rule": "CONTROL_22_AND_DP_1956_ARE_RELATED_BUT_NOT_IDENTICAL_WITHOUT_PRIMARY_ALLOCATION_BRIDGE"
+    },
+    {
+      "vertex_id": "concurso-judge",
+      "label_es": "Juez del Concurso",
+      "label_en": "Insolvency judge",
+      "primary_controls": ["control-24", "gc-hc-010", "control-24-supplement-2026-06-25", "cgpj-di-169-2026", "cgpj-alzada-286-2026", "judge-querella-lane"],
+      "routes": {
+        "es": "/por-derecho/es/concurso-36-2012-magistrado-juez/",
+        "en": "/por-derecho/en/insolvency-36-2012-mercantile-court-1/"
+      },
+      "status_rule": "CONTROL_24_IS_DECANATO_DAILY_LOCATOR_24_AND_GC_HC_010_CROSS_REFERENCE_NOT_A_NIG_DP_REPARTO_OR_QUERELLA"
+    }
+  ],
+  "perimeter": {
+    "node_id": "fiscalia-oversight-perimeter",
+    "label_es": "Fiscalía / perímetro de supervisión",
+    "label_en": "Prosecution / oversight perimeter",
+    "primary_controls": ["dip-2-2026", "cgpj-di-169-2026", "cgpj-alzada-286-2026", "icalpa-dip-80-2026"],
+    "position_boundary_es": "La neutralización, ineficacia, omisión o instrumentalización de Fiscalía se presenta únicamente como alegación o inferencia atribuida al denunciante salvo fuente competente que pruebe una proposición más estrecha.",
+    "position_boundary_en": "Neutralisation, ineffectiveness, omission or instrumentalisation of the Prosecution Service is presented only as an allegation or inference attributed to the reporting party unless a competent source proves a narrower proposition."
+  },
+  "nodes": [
+    {
+      "node_id": "control-21",
+      "aliases": ["Control 21", "daily control 21", "control diario 21"],
+      "kind": "filing_locator_private_actor_lane",
+      "bridge_status": "SOURCE_CERTIFICATION_REQUIRED_FOR_ANY_CONTROL21_TO_DP1901_IDENTITY_CLAIM",
+      "does_not_mean": "A filing locator is not itself a DP number or proof of allocation."
+    },
+    {
+      "node_id": "nexus-36",
+      "aliases": ["NEXUS 36", "Nexus 36"],
+      "kind": "project_private_actor_nexus_label",
+      "does_not_mean": "A project nexus label does not consolidate proceedings."
+    },
+    {
+      "node_id": "dp-1901-2026",
+      "aliases": ["DP 1901/2026", "1901/2026"],
+      "kind": "private_actor_criminal_proceeding",
+      "routes": {"es": "/por-derecho/es/dp-1901-2026/", "en": "/por-derecho/en/dp-1901-2026/"}
+    },
+    {
+      "node_id": "control-22",
+      "aliases": ["Control 22", "daily control 22", "control diario 22"],
+      "kind": "filing_locator_ac_complaint",
+      "filing_date": "2026-06-18",
+      "bridge_status": "RELATED_TO_DP1956_PRIMARY_ALLOCATION_BRIDGE_COPY_REQUIRED",
+      "routes": {"es": "/por-derecho/es/control-22-denuncia-administrador-concursal/", "en": "/por-derecho/en/control-22-insolvency-administrator-complaint/"},
+      "does_not_mean": "Control 22 is not DP 1956/2026."
+    },
+    {
+      "node_id": "dp-1956-2026",
+      "aliases": ["DP 1956/2026", "1956/2026"],
+      "kind": "ac_criminal_proceeding",
+      "procedural_status": "PROVISIONAL_DISMISSAL_RECORDED_NO_FILED_CHALLENGE_VERIFIED_IN_CANONICAL_SUBREGISTER",
+      "routes": {"es": "/por-derecho/es/dp-1956-2026/", "en": "/por-derecho/en/dp-1956-2026/"}
+    },
+    {
+      "node_id": "icalpa-dip-80-2026",
+      "aliases": ["ICALPA 80/2026", "DIP 80/2026", "ICALPA DIP 80/2026"],
+      "kind": "professional_preliminary_control_ac_side",
+      "procedural_status": "SEPARATE_PRELIMINARY_PROFESSIONAL_CONTROL_ROUTE_NO_FINAL_MERITS_DECISION_LOCATED",
+      "routes": {"es": "/por-derecho/es/registros-institucionales-colegios-abogacia-2026/", "en": "/por-derecho/en/institutional-records-bar-bodies-2026/"}
+    },
+    {
+      "node_id": "ac-removal-fees",
+      "aliases": ["separación administrador concursal", "remoción administrador concursal", "honorarios administrador concursal", "administrator removal fees"],
+      "kind": "insolvency_removal_and_remuneration_appellate_lane",
+      "routes": {"es": "/por-derecho/es/concurso-36-2012-separacion-ac-honorarios/", "en": "/por-derecho/en/insolvency-36-2012-administrator-removal-fees/"},
+      "does_not_mean": "The insolvency appeal lane adjudicates criminal or disciplinary liability."
+    },
+    {
+      "node_id": "control-24",
+      "aliases": ["Control 24", "daily control 24", "control diario 24", "Decanato 24"],
+      "kind": "filing_locator_judge_complaint",
+      "filing_date": "2026-06-18",
+      "canonical_pair": "gc-hc-010",
+      "procedural_status": "FILED_DECANATO_DAILY_24_CURRENT_JUDICIAL_STATUS_AND_CUSTODIAN_UNKNOWN",
+      "routes": {"es": "/por-derecho/es/control-24-denuncia-juez-concurso-36-2012/", "en": "/por-derecho/en/control-24-insolvency-judge-complaint-36-2012/"},
+      "does_not_mean": "Control 24 is not a NIG, DP number, reparto, admission, investigation, referral, archive or formal querella."
+    },
+    {
+      "node_id": "gc-hc-010",
+      "aliases": ["GC-HC-010", "judge complaint GC-HC-010"],
+      "kind": "master_proceedings_canonical_record_for_control24",
+      "routes": {"es": "/por-derecho/es/procedimientos/gc-hc-010/", "en": "/por-derecho/en/proceedings/gc-hc-010/"},
+      "procedural_status": "DECANATO_FILED_18JUN2026_DAILY_24_STATUS_UNKNOWN_CGPJ_169_CROSS_REFERENCE"
+    },
+    {
+      "node_id": "control-24-supplement-2026-06-25",
+      "aliases": ["25 June 2026 supplement", "25 junio 2026 ampliación", "ampliación Control 24"],
+      "kind": "dependent_judge_complaint_supplement",
+      "filing_date": "2026-06-25",
+      "bridge_status": "SUPPLEMENT_RELATION_RECORDED_ELECTRONIC_JOINDER_METADATA_STILL_OPEN",
+      "does_not_mean": "A same-date 25 June document in another lane is the same document."
+    },
+    {
+      "node_id": "cgpj-di-169-2026",
+      "aliases": ["CGPJ 169/2026", "DI 169/2026", "169/2026 CGPJ"],
+      "kind": "judicial_governance_route",
+      "routes": {"es": "/por-derecho/es/cgpj-supervision-masa-activa/", "en": "/por-derecho/en/cgpj-insolvency-estate-supervision/"},
+      "does_not_mean": "CGPJ governance treatment determines criminal merits."
+    },
+    {
+      "node_id": "cgpj-alzada-286-2026",
+      "aliases": ["Alzada 286/2026", "Recurso de alzada 286/2026", "CGPJ appeal 286/2026"],
+      "kind": "judicial_governance_appeal",
+      "routes": {"es": "/por-derecho/es/cgpj-supervision-masa-activa/", "en": "/por-derecho/en/cgpj-insolvency-estate-supervision/"}
+    },
+    {
+      "node_id": "dip-2-2026",
+      "aliases": ["DIP 2/2026", "Fiscalía DIP 2/2026", "Fiscalia 2/2026"],
+      "kind": "prosecutorial_route",
+      "routes": {"es": "/por-derecho/es/fiscalia-dip-2-2026/", "en": "/por-derecho/en/fiscalia-dip-2-2026/"},
+      "does_not_mean": "The DIP 2/2026 result determines Control 24 allocation or criminal merits."
+    },
+    {
+      "node_id": "judge-querella-lane",
+      "aliases": ["querella juez", "querella magistrado", "judge querella", "formal private prosecution judge"],
+      "kind": "judge_directed_formal_private_prosecution_lane",
+      "procedural_status": "FORMAL_FILING_MUST_NOT_BE_STATED_WITHOUT_RECEIPT",
+      "does_not_mean": "Control 24 itself is a querella."
+    },
+    {
+      "node_id": "rpl-2523-2025",
+      "aliases": ["RPL 2523/2025", "calificación appeal", "apelación calificación"],
+      "kind": "classification_appeal",
+      "routes": {"es": "/por-derecho/es/concurso-36-2012-ap-seccion-4/", "en": "/por-derecho/en/insolvency-36-2012-ap-section-4/"},
+      "does_not_mean": "Criminal, disciplinary or governance allegations are part of the appeal record unless source-proved."
+    }
+  ],
+  "edges": [
+    {"from": "concurso-36-2012", "to": "private-actors", "relation": "common_nucleus_for", "status": "DOCUMENTED_CONTEXT"},
+    {"from": "concurso-36-2012", "to": "insolvency-administrator", "relation": "common_nucleus_for", "status": "DOCUMENTED_CONTEXT"},
+    {"from": "concurso-36-2012", "to": "concurso-judge", "relation": "common_nucleus_for", "status": "DOCUMENTED_CONTEXT"},
+    {"from": "control-21", "to": "dp-1901-2026", "relation": "claimed_or_reported_bridge_requiring_source_certification", "status": "OPEN_BRIDGE"},
+    {"from": "control-22", "to": "dp-1956-2026", "relation": "later_project_material_associates", "status": "PRIMARY_ALLOCATION_BRIDGE_REQUIRED"},
+    {"from": "control-22", "to": "icalpa-dip-80-2026", "relation": "shares_ac_professional_handling_subject_matter", "status": "RELATED_NOT_CONSOLIDATED"},
+    {"from": "control-22", "to": "ac-removal-fees", "relation": "shares_ac_duty_conduct_and_accounting_questions", "status": "RELATED_NOT_CONSOLIDATED"},
+    {"from": "control-24", "to": "gc-hc-010", "relation": "canonical_identity_cross_reference", "status": "CANONICAL"},
+    {"from": "control-24-supplement-2026-06-25", "to": "control-24", "relation": "supplements", "status": "RECORDED_WITH_JOINDER_METADATA_GAP"},
+    {"from": "control-24", "to": "cgpj-di-169-2026", "relation": "reported_into_related_governance_record", "status": "RELATED_SEPARATE_ROUTE_EXACT_DOCUMENT_LABEL_RECONCILIATION_OPEN"},
+    {"from": "cgpj-di-169-2026", "to": "cgpj-alzada-286-2026", "relation": "governance_appeal_lineage", "status": "PROCEDURAL_RELATION"},
+    {"from": "control-24", "to": "dip-2-2026", "relation": "shares_judge_and_institutional_subject_matter_documents", "status": "RELATED_NOT_CONSOLIDATED"},
+    {"from": "control-24", "to": "judge-querella-lane", "relation": "reporting_party_treats_as_documentary_basis_for", "status": "ATTRIBUTED_POSITION_FORMAL_FILING_UNVERIFIED"},
+    {"from": "control-21", "to": "control-22", "relation": "shared_factual_nucleus_and_some_sources", "status": "RELATED_NOT_CONSOLIDATED"},
+    {"from": "control-22", "to": "control-24", "relation": "shared_insolvency_factual_matrix", "status": "RELATED_NOT_CONSOLIDATED"},
+    {"from": "control-24", "to": "control-21", "relation": "shared_outcomes_documents_and_alleged_consequences", "status": "RELATED_NOT_CONSOLIDATED"},
+    {"from": "concurso-36-2012", "to": "rpl-2523-2025", "relation": "classification_appeal_arising_from", "status": "PROCEDURAL_RELATION"}
+  ],
+  "mandatory_aliases": [
+    "Control 21", "Control 22", "Control 24", "NEXUS 36", "GC-HC-010", "DP 1901/2026", "DP 1956/2026", "18 June 2026", "25 June 2026", "CGPJ 169/2026", "DI 169/2026", "Alzada 286/2026", "DIP 2/2026", "ICALPA 80/2026", "DIP 80/2026", "separación administrador concursal", "RPL 2523/2025", "Concurso 36/2012"
+  ],
+  "source_registers": [
+    "data/control-22-24-interconnection-register.json",
+    "archive/GC_HC_010_DECANATO24_CGPJ169_CORRECTION_04SEP2026.md"
+  ],
+  "representation_rules": [
+    "Interlink does not mean merge.",
+    "Shared evidence does not transfer knowledge, intent, causation, guilt or liability.",
+    "Control 24 is Decanato daily registration no. 24, not a NIG, DP, reparto or formal querella.",
+    "Control 22 is not DP 1956/2026 without the primary allocation bridge.",
+    "The Control 24 25 June supplement must not be merged with a different 25 June filing by date alone.",
+    "Fiscalía neutralisation language is attributed allegation/inference, not adjudicated fact.",
+    "RPL 2523/2025 remains separate from criminal, disciplinary and governance routes."
+  ]
+}
