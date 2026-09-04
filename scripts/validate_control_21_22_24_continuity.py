@@ -180,7 +180,7 @@ def main() -> None:
         "18 June 2026",
         "25 June 2026",
         "one continuous filing record",
-        "status unknown",
+        "outcome unknown",
         "169/2026",
     ))
     require_phrases(EN_CONTROL24, (
