@@ -1,6 +1,6 @@
 {
   "schema": "por-derecho.actor-event-multitrack.v1",
-  "control_date": "2026-09-01",
+  "control_date": "2026-09-04",
   "actor": {"id":"PD-SP-P-0145","name":"Joan Cruz Nuez","aliases":["Joan Cruz","JCruz"],"caret":"CARET_CONFIRMED"},
   "canonical_objects": {
     "source":"PD-SP-SRC-0001",
@@ -8,6 +8,10 @@
     "event":"PD-SP-EVT-0001"
   },
   "chronology": [
+    {"date":"2015-12-03","label":"BORME records Joan Cruz Nuez among joint attorneys of Meeting Point Hotelmanagement (Canaries), S.L.","state":"DOCUMENTED","source_class":"PRIMARY_SOURCE_CORPORATE_REGULATORY_RECORD"},
+    {"date":"2016-02-19","label":"BORME records Joan Cruz Nuez among joint attorneys of Meeting Point Investment, S.L.","state":"DOCUMENTED","source_class":"PRIMARY_SOURCE_CORPORATE_REGULATORY_RECORD"},
+    {"date":"2016-07-26","label":"BORME records a further joint-attorney appointment including Joan Cruz Nuez at Meeting Point Hotelmanagement (Canaries), S.L.","state":"DOCUMENTED","source_class":"PRIMARY_SOURCE_CORPORATE_REGULATORY_RECORD"},
+    {"date":"2016-08-23","label":"Contemporaneous hospitality reporting identifies Joan Cruz as Director General of LABRANDA Hotels & Resorts at Hotel LABRANDA Marieta; Acosta Matos separately identifies Grupo Patrimonial Acosta Matos, S.L. as owner of the Marieta project","state":"DOCUMENTED","source_class":"CORROBORATED_CONNECTION"},
     {"date":"2017-10-11","label":"CAM access-attempt lane begins","state":"DOCUMENTED_IN_CONTROLLED_ACCESS_INDEX"},
     {"date":"2017-11-01","label":"Joan Cruz reported cessation of Meeting Point CEO functions","state":"DOCUMENTED_PUBLIC_CONTEXT"},
     {"date":"2017-11-20","label":"PwC access-channel issue","state":"DOCUMENTED_IN_CONTROLLED_ACCESS_INDEX"},
@@ -15,32 +19,87 @@
     {"date":"2018-03-01","event_id":"PD-SP-EVT-0001","label":"Sun Park photographic package; filename associates CAM and Joan Cruz; printed captions name José Acosta Matos","state":"DOCUMENT_NAME_ASSOCIATION"},
     {"date":"2018-03","label":"Witness account describes a visit with Acosta, Joan and representatives, plus other visits/measurements; exact dates require reconciliation","state":"WITNESS_ATTESTED"},
     {"date":"2018-03-22","label":"Certified transcript contains access, exploitation, personnel, Community, security and target-control language; speakers not independently identified in transcript body","state":"DOCUMENTED_WITH_IDENTITY_GAP"},
+    {"date":"2018-05-08","label":"Controlled private-investigation report was already examining a hotel executive with Meeting Point/LABRANDA background before the later 7 June control event","state":"DOCUMENTED"},
     {"date":"2018-05-24","label":"ONA / marketing-operational visibility counter-track","state":"DOCUMENTED_IN_CONTROLLED_ACCESS_INDEX"},
     {"date":"2018-06-06","label":"AC security contact later described as limited to LPB apartments","state":"DOCUMENTED"},
     {"date":"2018-06-07","label":"Physical-control / locks / keys / security event","route_es":"/es/toma-control-sun-park-7-junio-2018/","route_en":"/en/sun-park-takeover-7-june-2018/","state":"DOCUMENTED_EVENT","days_after_2018_03_01":98},
     {"date":"2018-06-08/12","label":"AC later says he ordered cessation of lock changes / delivery of keys","state":"DOCUMENTED"},
     {"date":"2018-06-25","label":"Contemporaneous Gil Marer email records concern about repeated Daniel/Joan hotel visits, measurements and showing the hotel to others","state":"ATTRIBUTED_CONTEMPORANEOUS_NOTICE"},
-    {"date":"2019","label":"Meeting Point / Club Sei commercialisation and operation evidence lane","state":"DOCUMENTED_DOWNSTREAM_CONTEXT"}
+    {"date":"2019-01-31","label":"Canonical public-project milestone: Acosta Matos presents Hotel Lava Verde at C/ Janubio 3 as 279 rooms; operator field blank","state":"DOCUMENTED_DOWNSTREAM_CONTEXT","source_class":"CONTEMPORANEOUS_MEDIA_PROFESSIONAL_SELF_PUBLICATION"},
+    {"date":"2019-02-01/02","label":"Trade reporting announces Club Sei Lanzarote within Meeting Point Hotels / FTI; initial reports do not identify the Lanzarote property","state":"DOCUMENTED_DOWNSTREAM_CONTEXT"},
+    {"date":"2019-02-05","label":"BORME records revocation of identified Joan Cruz powers at Meeting Point Hotelmanagement (Canaries) and Meeting Point Investment","state":"DOCUMENTED","source_class":"PRIMARY_SOURCE_CORPORATE_REGULATORY_RECORD"},
+    {"date":"2019-11-25T16:38","label":"Recovered original HKI Hotels screenshot displays Sun Park (Lanzarote) as a project","state":"DOCUMENTED"},
+    {"date":"2019-11-25T16:41","label":"Recovered original HKI Hotels screenshot displays Joan Cruz on HKI Hotels team page as Presidente","state":"DOCUMENTED"},
+    {"date":"2020-10-27","label":"Trade reporting says FTI postponed Club Sei implementation because of the pandemic","state":"CONTRARY"},
+    {"date":"2025-04-23","label":"CNMC authorises Portobello Capital / BLUESEA acquisition of exclusive control of Meeting Point Spain and subsidiaries","state":"DOCUMENTED","source_class":"PRIMARY_SOURCE_CORPORATE_REGULATORY_RECORD"},
+    {"date":"2025-08-08","label":"Tourinews reports Joan Cruz directing BLUESEA absorption work for Meeting Point Hotels Spain and renewals of expiring hotel-management contracts","state":"DOCUMENTED_PUBLIC_CONTEXT"},
+    {"date":"2025-09","label":"Public continuity items concern Meeting Point/BLUESEA renewal at Hotel Alyssa Suite in Playa Blanca and Acosta Matos entrusting Hotel Marieta to Meeting Point with BLUESEA support; Joan Cruz public LinkedIn activity shares the developments","state":"DOCUMENTED_PUBLIC_CONTEXT"},
+    {"date":"2026-06-28","label":"Later controlled derivative ANEXO_08D_DOCUMENTO_GRAFICO_CAM_JOAN_CRUZ_01MAR2018.pdf appears in private Drive archive; derivative equivalence remains unverified","state":"OPEN"}
   ],
   "edges": [
+    {"from":"PD-SP-P-0145","to":"Meeting Point Hotelmanagement (Canaries), S.L.","type":"PROFESSIONAL_CAPACITY","state":"DOCUMENTED","date_range":"2015-2019 corporate-record chronology"},
+    {"from":"PD-SP-P-0145","to":"Meeting Point Investment, S.L.","type":"CORPORATE_POWER","state":"DOCUMENTED","date_range":"2016-2019 corporate-record chronology"},
+    {"from":"PD-SP-P-0145","to":"LABRANDA Hotels & Resorts","type":"EXECUTIVE_ROLE","state":"DOCUMENTED_PUBLIC_CONTEXT","date":"2016-08-23"},
+    {"from":"LABRANDA Hotels & Resorts","to":"Hotel LABRANDA Marieta","type":"HOTEL_OPERATION_BRAND_CONTEXT","state":"DOCUMENTED_PUBLIC_CONTEXT","date":"2016-08-23"},
+    {"from":"Hotel LABRANDA Marieta","to":"Grupo Patrimonial Acosta Matos, S.L.","type":"OWNER_PROJECT_RELATIONSHIP","state":"DOCUMENTED","source_class":"CORPORATE_SELF_PUBLICATION"},
+    {"from":"Acosta Matos","to":"Meeting Point Hotel Management S.L.","type":"PROFESSIONAL_PROJECT_RELATIONSHIP","state":"DOCUMENTED","context":"Meeting Point Gran Canaria central-office refurbishment; date of project start unresolved"},
     {"from":"PD-SP-P-0145","to":"José Acosta Matos","type":"CO_PRESENCE_OR_ASSOCIATION","state":"WITNESS_ATTESTED_AND_DOCUMENT_NAME_ASSOCIATION"},
-    {"from":"PD-SP-P-0145","to":"Meeting Point Hotelmanagement (Canaries), S.L.U.","type":"PROFESSIONAL_CAPACITY","state":"DOCUMENTED"},
     {"from":"PD-SP-P-0145","to":"PD-SP-EVT-0001","type":"EVENT_ASSOCIATION","state":"DOCUMENT_NAME_ASSOCIATION_PLUS_WITNESS_CONTEXT"},
     {"from":"PD-SP-EVT-0001","to":"2018-06-07 Sun Park control event","type":"PRECURSOR","state":"DOCUMENTED_TEMPORAL","elapsed_days":98},
+    {"from":"Sun Park / C. Janubio 3","to":"Hotel Lava Verde","type":"SAME_LOCATION_PROJECT_CONTINUITY","state":"DOCUMENTED_DOWNSTREAM_CONTEXT"},
+    {"from":"Hotel Lava Verde","to":"Club Sei Lanzarote / Meeting Point / FTI","type":"COMMERCIAL_PROJECT_SEQUENCE","state":"REASONED_INFERENCE","boundary":"Public/canonical chronology and later same-address commercial evidence support investigating continuity; the exact operator contract and first internal planning date remain open."},
+    {"from":"PD-SP-P-0145","to":"HKI Hotels","type":"PROFESSIONAL_CAPACITY","state":"DOCUMENTED","date":"2019-11-25 captured website state"},
+    {"from":"HKI Hotels","to":"Sun Park (Lanzarote)","type":"PROJECT_PUBLICATION","state":"DOCUMENTED","date":"2019-11-25 captured website state"},
+    {"from":"Portobello Capital / BLUESEA","to":"Meeting Point Spain, S.L.U. and subsidiaries","type":"CONTROL_ACQUISITION","state":"DOCUMENTED","date":"2025-04-23"},
+    {"from":"PD-SP-P-0145","to":"BLUESEA / Meeting Point integration","type":"POST_FTI_PROFESSIONAL_CONTINUITY","state":"DOCUMENTED_PUBLIC_CONTEXT","date":"2025-08"},
+    {"from":"Acosta Matos / Hotel Marieta","to":"Meeting Point / BLUESEA","type":"POST_FTI_OWNER_OPERATOR_CONTINUITY","state":"DOCUMENTED_PUBLIC_CONTEXT","date":"2025-09"},
     {"from":"PD-SP-P-0145","to":"Francisco de Borja Rodríguez-Batllori Laffitte","type":"DIRECT_COORDINATION","state":"OPEN","boundary":"Chronology overlaps with CAM access/security permissions but no direct Joan↔AC communication or instruction has yet been established."},
     {"from":"PD-SP-P-0145","to":"Juzgado de lo Mercantil nº 1 de Las Palmas / judge","type":"DIRECT_COORDINATION","state":"OPEN","boundary":"No direct Joan↔Judge communication, instruction or advance-knowledge bridge has yet been established."},
-    {"from":"pre-7-Jun-2018 sequence","to":"planned/prepared control trajectory","type":"INFERENCE","state":"REASONED_INFERENCE","boundary":"Supports investigation of preparation/organisation; does not prove conspiracy or criminal intent."}
+    {"from":"pre-7-Jun-2018 sequence","to":"planned/prepared control trajectory","type":"INFERENCE","state":"REASONED_INFERENCE","boundary":"Supports investigation of preparation/organisation; does not prove conspiracy or criminal intent."},
+    {"from":"long-running Meeting Point/LABRANDA–Acosta Matos hospitality relationship","to":"context of PD-SP-EVT-0001","type":"COMMERCIAL_CONTEXT","state":"REASONED_INFERENCE","boundary":"The recurring pre- and post-event relationship makes an isolated-first-contact interpretation less plausible as an investigative assumption, but does not establish the purpose, authority or legality of the 1-Mar-2018 visit."}
   ],
-  "asset_lanes": ["ownership-title","insolvency-liquidation","operation-exploitation","community-CEXP-governance","financing-NPL","possession-access-security-control","commercialisation-MeetingPoint-FTI-ClubSei","funded-exit-ONA-Stoneweg-Elaia","judicial-prosecutorial-regulatory","tax-RIC-RICPE-public-support"],
+  "asset_lanes": ["ownership-title","insolvency-liquidation","operation-exploitation","community-CEXP-governance","financing-NPL","possession-access-security-control","commercialisation-MeetingPoint-FTI-ClubSei","funded-exit-ONA-Stoneweg-Elaia","judicial-prosecutorial-regulatory","tax-RIC-RICPE-public-support","post-FTI-custody-BLUESEA"],
   "image_family": {"directory":"/assets/evidence/joan-cruz-01mar2018/","pages":18,"contact_sheet":true,"identification_rule":"No facial or biometric recognition. Human-authored filename/caption/witness attributions remain attributed to those sources."},
+  "classification_summary": {
+    "1_DOCUMENTED_FACT":"01-Mar package association; recovered HKI 25-Nov-2019 captures; existing controlled Club Sei/Sun Park commercial evidence.",
+    "2_PRIMARY_SOURCE_CORPORATE_REGULATORY_RECORD":"BORME Meeting Point chronology; CNMC BLUESEA/MPS control acquisition.",
+    "3_CONTEMPORANEOUS_MEDIA_PROFESSIONAL_SELF_PUBLICATION":"2016 LABRANDA Marieta role; Acosta Matos project pages; Club Sei announcements; 2025 professional activity.",
+    "4_CORROBORATED_CONNECTION":"Recurring Meeting Point/LABRANDA–Acosta Matos owner/operator/executive relationship before 2018 and renewed post-FTI continuity.",
+    "5_INVESTIGATIVE_INFERENCE_HYPOTHESIS":"Test whether the 01-Mar visit related to evaluation, measurements, project preparation, management or commercialisation; no criminal conclusion.",
+    "6_USER_ALLEGATION":"Wider alleged causal relationship between pre-title access/project preparation, later material control, commercialisation and adjudication remains separately attributed.",
+    "7_UNRESOLVED_REQUIRES_AUTHENTICATION":"Identity, consent/authority, exact capacity, purpose, originals/EXIF, project outputs, contracts, first dates, custody and Annex 08-D equivalence."
+  },
   "open_gaps": [
+    "Independent identity authentication for the persons depicted in the 01-Mar photographs.",
     "Exact date and purpose of each witness-attested pre-7-Jun visit involving Joan Cruz.",
     "Invitation/authority for each access and identity/capacity of accompanying representatives.",
     "Original communications between Joan Cruz/Meeting Point and CAM concerning Sun Park before 7-Jun-2018.",
     "Any direct AC knowledge/instruction concerning Joan Cruz or Meeting Point before 7-Jun-2018.",
     "Any direct court/judge/LAJ knowledge or authorisation concerning Joan Cruz/Meeting Point access.",
     "Identity of the person who compiled/named the 18-page PDF and evidential basis for naming Joan Cruz.",
-    "Contractual bridge, if any, from pre-7-Jun access to later Meeting Point/Club Sei commercialisation."
+    "Original photographs, EXIF/device metadata, photographer/custodian and complete sequence.",
+    "Plans, measurements, photographs, inventories, condition reports or commercial notes derived from visits.",
+    "Exact Meeting Point/FTI legal entity and contractual bridge, if any, from pre-7-Jun access to later Lava Verde/Club Sei commercialisation.",
+    "First internal Lava Verde conception date and first HKI Sun Park publication date.",
+    "Booking, payment, revenue, commission and inventory records for Club Sei/Sun Park.",
+    "Record custody after FTI collapse, including Meeting Point/BLUESEA handover, insolvency files and proceeding 357/2024.",
+    "Hash/page equivalence of the 28-Jun-2026 Annex 08-D derivative against PD-SP-DOC-0005.",
+    "Reconciliation of 2019 and 2025 BORME revocation entries without assuming continuous power after 2019."
   ],
-  "public_routes": {"person_es":"/es/joan-cruz-nuez/","person_en":"/en/joan-cruz-nuez/","event_es":"/es/sun-park-1-marzo-2018-joan-cruz/","event_en":"/en/sun-park-1-march-2018-joan-cruz/"}
+  "public_routes": {
+    "person_es":"/es/joan-cruz-nuez/",
+    "person_en":"/en/joan-cruz-nuez/",
+    "event_es":"/es/sun-park-1-marzo-2018-joan-cruz/",
+    "event_en":"/en/sun-park-1-march-2018-joan-cruz/",
+    "private_investigation_es":"/es/investigacion-privada-2018-meeting-point/",
+    "private_investigation_en":"/en/private-investigation-2018-meeting-point/",
+    "lava_clubsei_es":"/es/lava-verde-club-sei-meeting-point/",
+    "lava_clubsei_en":"/en/lava-verde-club-sei-meeting-point/",
+    "fti_bluesea_es":"/es/fti-touristik-meeting-point-insolvencia-preconcurso-bluesea/",
+    "fti_bluesea_en":"/en/fti-touristik-meeting-point-insolvency-preinsolvency-bluesea/",
+    "takeover_es":"/es/toma-control-sun-park-7-junio-2018/",
+    "takeover_en":"/en/sun-park-takeover-7-june-2018/",
+    "acosta_perimeter_es":"/es/acosta-matos-perimetro/",
+    "acosta_perimeter_en":"/en/acosta-matos-perimeter/"
+  }
 }
