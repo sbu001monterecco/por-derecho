@@ -1,0 +1,163 @@
+name: Validate Control 22 and Control 24 digitisation
+
+on:
+  pull_request:
+    paths:
+      - 'CURRENT_HANDOVER_CONTROL_22_24_04SEP2026.md'
+      - 'archive/*CONTROL_22_24*'
+      - 'assets/control-22-24-*'
+      - 'assets/site.js'
+      - 'data/control-22-24-interconnection-register.json'
+      - 'es/control-22-denuncia-administrador-concursal/**'
+      - 'en/control-22-insolvency-administrator-complaint/**'
+      - 'es/control-24-denuncia-juez-concurso-36-2012/**'
+      - 'en/control-24-insolvency-judge-complaint-36-2012/**'
+      - 'publication-manifests/*control-22-24*'
+      - 'sitemap-control-22-24.xml'
+      - 'robots.txt'
+  push:
+    branches: [main]
+    paths:
+      - 'CURRENT_HANDOVER_CONTROL_22_24_04SEP2026.md'
+      - 'archive/*CONTROL_22_24*'
+      - 'assets/control-22-24-*'
+      - 'assets/site.js'
+      - 'data/control-22-24-interconnection-register.json'
+      - 'es/control-22-denuncia-administrador-concursal/**'
+      - 'en/control-22-insolvency-administrator-complaint/**'
+      - 'es/control-24-denuncia-juez-concurso-36-2012/**'
+      - 'en/control-24-insolvency-judge-complaint-36-2012/**'
+      - 'publication-manifests/*control-22-24*'
+      - 'sitemap-control-22-24.xml'
+      - 'robots.txt'
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Required release files
+        run: |
+          test -f es/control-22-denuncia-administrador-concursal/index.html
+          test -f en/control-22-insolvency-administrator-complaint/index.html
+          test -f es/control-24-denuncia-juez-concurso-36-2012/index.html
+          test -f en/control-24-insolvency-judge-complaint-36-2012/index.html
+          test -f assets/control-22-24-interlink-20260904.js
+          test -f assets/control-22-24-search-extension-20260904.js
+          test -f data/control-22-24-interconnection-register.json
+          test -f sitemap-control-22-24.xml
+          test -f publication-manifests/2026-09-04-control-22-24-digitisation.json
+          test -f CURRENT_HANDOVER_CONTROL_22_24_04SEP2026.md
+
+      - name: JavaScript syntax and loader continuity
+        run: |
+          node --check assets/site.js
+          node --check assets/control-22-24-interlink-20260904.js
+          node --check assets/control-22-24-search-extension-20260904.js
+          grep -Fq 'site-pre-matkator-8584-20260903.js' assets/site.js
+          grep -Fq 'matkator-8584-hotel-title-multitrack-20260903.js' assets/site.js
+          grep -Fq 'hotel-finca-title-system-interlink-20260903.js' assets/site.js
+          grep -Fq 'control-22-24-interlink-20260904.js' assets/site.js
+          grep -Fq 'control-22-24-search-extension-20260904.js' assets/site.js
+
+      - name: JSON and sitemap syntax
+        run: |
+          python - <<'PY'
+          import json
+          import xml.etree.ElementTree as ET
+          from pathlib import Path
+
+          for path in [
+              Path('data/control-22-24-interconnection-register.json'),
+              Path('publication-manifests/2026-09-04-control-22-24-digitisation.json'),
+          ]:
+              json.loads(path.read_text(encoding='utf-8'))
+          ET.parse('sitemap-control-22-24.xml')
+          print('structured release files valid')
+          PY
+
+      - name: Canonical and reciprocal language routes
+        run: |
+          grep -Fq 'https://sbu001monterecco.github.io/por-derecho/es/control-22-denuncia-administrador-concursal/' es/control-22-denuncia-administrador-concursal/index.html
+          grep -Fq 'https://sbu001monterecco.github.io/por-derecho/en/control-22-insolvency-administrator-complaint/' en/control-22-insolvency-administrator-complaint/index.html
+          grep -Fq '../../en/control-22-insolvency-administrator-complaint/' es/control-22-denuncia-administrador-concursal/index.html
+          grep -Fq '../../es/control-22-denuncia-administrador-concursal/' en/control-22-insolvency-administrator-complaint/index.html
+          grep -Fq 'https://sbu001monterecco.github.io/por-derecho/es/control-24-denuncia-juez-concurso-36-2012/' es/control-24-denuncia-juez-concurso-36-2012/index.html
+          grep -Fq 'https://sbu001monterecco.github.io/por-derecho/en/control-24-insolvency-judge-complaint-36-2012/' en/control-24-insolvency-judge-complaint-36-2012/index.html
+          grep -Fq '../../en/control-24-insolvency-judge-complaint-36-2012/' es/control-24-denuncia-juez-concurso-36-2012/index.html
+          grep -Fq '../../es/control-24-denuncia-juez-concurso-36-2012/' en/control-24-insolvency-judge-complaint-36-2012/index.html
+          grep -Fq 'sitemap-control-22-24.xml' robots.txt
+
+      - name: Procedural identity and legal-boundary invariants
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+
+          def text(path):
+              return Path(path).read_text(encoding='utf-8').casefold()
+
+          checks = [
+              ('Control 22 locator boundary ES', 'es/control-22-denuncia-administrador-concursal/index.html', 'control 22 ≠ dp 1956/2026'),
+              ('Control 22 locator boundary EN', 'en/control-22-insolvency-administrator-complaint/index.html', 'control 22 ≠ dp 1956/2026'),
+              ('Control 22 adjudicative boundary ES', 'es/control-22-denuncia-administrador-concursal/index.html', 'no afirma que el administrador concursal haya cometido delito'),
+              ('Control 22 adjudicative boundary EN', 'en/control-22-insolvency-administrator-complaint/index.html', 'does not state that the insolvency administrator committed an offence'),
+              ('Control 24 not querella ES', 'es/control-24-denuncia-juez-concurso-36-2012/index.html', 'control 24 ≠ querella'),
+              ('Control 24 not formal complaint EN', 'en/control-24-insolvency-judge-complaint-36-2012/index.html', 'control 24 ≠ formal private-prosecution complaint'),
+              ('Control 24 official status gap ES', 'es/control-24-denuncia-juez-concurso-36-2012/index.html', 'reparto/admisión/archivo: no verificados'),
+              ('Control 24 official status gap EN', 'en/control-24-insolvency-judge-complaint-36-2012/index.html', 'allocation/admission/dismissal: unverified'),
+              ('shared evidence boundary register', 'data/control-22-24-interconnection-register.json', 'shared evidence does not equal shared responsibility'),
+              ('filing proof boundary register', 'data/control-22-24-interconnection-register.json', 'prepared, reviewed or sent to counsel does not equal filed')
+          ]
+          failures = []
+          for label, path, needle in checks:
+              if needle.casefold() not in text(path):
+                  failures.append(f'{label}: missing {needle!r} in {path}')
+          if failures:
+              raise SystemExit('\n'.join(failures))
+          print('procedural identity and legal-boundary invariants valid')
+          PY
+
+      - name: No known broken legacy routes in new English pages
+        run: |
+          ! grep -R -F '../concurso-36-2012-insolvency-administrator/' en/control-22-insolvency-administrator-complaint en/control-24-insolvency-judge-complaint-36-2012
+          ! grep -R -F '../cgpj-active-estate-supervision/' en/control-22-insolvency-administrator-complaint en/control-24-insolvency-judge-complaint-36-2012
+          ! grep -R -F '../cgpj-standing-committee-reading-room/' en/control-24-insolvency-judge-complaint-36-2012
+          ! grep -R -F '../ona-hotels-funded-exit-insolvency-36-2012/' en/control-24-insolvency-judge-complaint-36-2012
+
+      - name: Public-safety scan
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+
+          paths = [
+              Path('es/control-22-denuncia-administrador-concursal/index.html'),
+              Path('en/control-22-insolvency-administrator-complaint/index.html'),
+              Path('es/control-24-denuncia-juez-concurso-36-2012/index.html'),
+              Path('en/control-24-insolvency-judge-complaint-36-2012/index.html'),
+              Path('data/control-22-24-interconnection-register.json'),
+          ]
+          forbidden = [
+              'private-user-images.githubusercontent.com',
+              'authorization: bearer',
+              'ghp_',
+              'github_pat_',
+              'sk-proj-',
+              'BEGIN PRIVATE KEY',
+          ]
+          failures = []
+          for path in paths:
+              value = path.read_text(encoding='utf-8')
+              for token in forbidden:
+                  if token.casefold() in value.casefold():
+                      failures.append(f'{path}: forbidden token {token!r}')
+          if failures:
+              raise SystemExit('\n'.join(failures))
+          print('public-safety scan valid')
+          PY

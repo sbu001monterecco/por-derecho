@@ -59,3 +59,4 @@ Sitemap: https://sbu001monterecco.github.io/por-derecho/sitemap-la-laguna-procee
 Sitemap: https://sbu001monterecco.github.io/por-derecho/sitemap-unitary-digest-20260903.xml
 Sitemap: https://sbu001monterecco.github.io/por-derecho/sitemap-matkator-8584-hotel-title.xml
 Sitemap: https://sbu001monterecco.github.io/por-derecho/sitemap-hotel-finca-title-system.xml
+Sitemap: https://sbu001monterecco.github.io/por-derecho/sitemap-control-22-24.xml

@@ -12,6 +12,11 @@
     document.head.appendChild(script);
   };
 
+  const loadControl2224Release = () => {
+    load('control-22-24-interlink-20260904.js', 'data-control-22-24-interlink-loader', '20260904a');
+    load('control-22-24-search-extension-20260904.js', 'data-control-22-24-search-loader', '20260904a');
+  };
+
   const loadHotelFincaSystem = () => {
     load('hotel-finca-title-system-interlink-20260903.js', 'data-hotel-finca-system-interlink-loader', '20260903a');
     load('hotel-finca-title-system-search-extension-20260903.js', 'data-hotel-finca-system-search-loader', '20260903a');
@@ -21,6 +26,7 @@
     load('matkator-8584-hotel-title-multitrack-20260903.js', 'data-matkator-8584-multitrack-loader', '20260903a');
     load('matkator-8584-search-extension-20260903.js', 'data-matkator-8584-search-loader', '20260903a');
     loadHotelFincaSystem();
+    loadControl2224Release();
   };
 
   const legacy = document.createElement('script');
