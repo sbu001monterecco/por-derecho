@@ -1,0 +1,1 @@
+Successor pointer: run/verify the protected-main `Migrate GC-HC-010 master projection` workflow after merge of this retrigger branch, then verify `archive/PROCEEDINGS_MASTER_REGISTER.csv`, `assets/data/proceedings-master-public-v1.json`, and both live GC-HC-010 routes before closing the scope.
