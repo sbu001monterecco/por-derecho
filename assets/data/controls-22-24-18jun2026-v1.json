@@ -1,0 +1,62 @@
+{
+  "schema_version": "1.0",
+  "control_date": "2026-09-04",
+  "source_truth": "current repository plus primary filed-document candidates; official court identifiers prevail over this record",
+  "non_fragmentation_rule": "separate proceedings; connected knowledge; coordinated preservation; individual attribution; no automatic joinder; no collective culpability",
+  "controls": [
+    {
+      "label": "Control 22",
+      "filing_date_reported": "2026-06-18",
+      "document_date_observed": "2026-06-17",
+      "subject": "acts and omissions of the Insolvency Administrator in Insolvency 36/2012",
+      "principal_person": "Francisco de Borja Rodríguez-Batllori Laffitte",
+      "principal_candidate": "01_Denuncia_Penal_AC_LPB_Sun_Park_AC-FINAL_17JUN2026.pdf",
+      "principal_candidate_pages": 55,
+      "document_nature": "criminal complaint / notitia criminis; not formal querella",
+      "later_proceeding_reported": "DP 1956/2026",
+      "relation_to_later_proceeding": "strongly correlated; retain primary-source bridge",
+      "published_later_status": "provisional dismissal communicated 2026-07-21",
+      "public_route_es": "/es/dp-1956-2026/",
+      "public_route_en": "/en/dp-1956-2026/"
+    },
+    {
+      "label": "Control 24",
+      "filing_date_reported": "2026-06-18",
+      "document_date_observed": "2026-06-17",
+      "subject": "specified judicial acts and rulings in Insolvency 36/2012",
+      "principal_person": "Alberto López Villarrubia",
+      "intended_addressee_observed": "Sala de lo Civil y Penal del Tribunal Superior de Justicia de Canarias",
+      "principal_candidate": "02_Paquete_Unificado_Para_Presentacion_JUEZ_ FINAL 17JUNE2026 (signed).pdf",
+      "principal_candidate_pages": 79,
+      "principal_complaint_pages": 31,
+      "document_nature": "written criminal complaint / notitia criminis; not formal querella or formal appearance",
+      "official_nig": null,
+      "official_dp_number": null,
+      "official_allocation": null,
+      "official_status": "UNKNOWN_PENDING_PRIMARY_CONFIRMATION",
+      "supplement_date_reported": "2026-06-25",
+      "supplement_nature": "dependent supplementary filing intended to join Control 24; not autonomous complaint",
+      "querella_relationship": "antecedent and documentary basis for a potential or prepared querella; do not call filed querella without filing proof",
+      "public_route_es": "/es/control-24-denuncia-juez-concurso-36-2012/",
+      "public_route_en": "/en/control-24-judge-complaint-insolvency-36-2012/"
+    }
+  ],
+  "cross_track_edges": [
+    {"from": "Control 22", "to": "Control 24", "type": "separate_but_related_to"},
+    {"from": "Control 22", "to": "DP 1901/2026", "type": "shares_evidence_with", "limit": "no attribution transfer"},
+    {"from": "Control 24", "to": "DP 1901/2026", "type": "shares_evidence_with", "limit": "no attribution transfer"},
+    {"from": "Control 24 supplement 2026-06-25", "to": "Control 24", "type": "supplements"},
+    {"from": "Control 24", "to": "future querella", "type": "intended_as_basis_for", "status": "conditional_on_verified_querella_filing"},
+    {"from": "Control 24", "to": "DI 169/2026 / Alzada 286/2026", "type": "separate_but_related_to"},
+    {"from": "Control 22", "to": "Concurso 36/2012 removal/fees appeals", "type": "separate_but_related_to"}
+  ],
+  "continuity_invariants": [
+    "Control 22 is not itself DP 1956/2026; preserve the linking source.",
+    "Control 24 is not a judicial proceeding number.",
+    "Control 24 is not a querella.",
+    "The 25 June Control 24 supplement is not an autonomous complaint absent official proof otherwise.",
+    "Prepared is not filed; filed is not allocated; allocated is not opened; provisional dismissal is not a final merits judgment.",
+    "Related is not joined; shared evidence is not shared responsibility.",
+    "Unknown status must remain unknown until a primary official source changes it."
+  ]
+}
