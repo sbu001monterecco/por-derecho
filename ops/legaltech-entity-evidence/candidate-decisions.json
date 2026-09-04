@@ -1,0 +1,57 @@
+{
+  "schema": "por-derecho.entity-candidate-decisions.v1",
+  "control_date": "2026-09-04",
+  "publication_default": "HOLD_PRIVATE_REVIEW",
+  "rules": [
+    "A repository, Library or mailbox name hit is a discovery event, not an identity or relationship finding.",
+    "YES_NOW means: verify source, allocate or resolve one immutable canonical ID, preserve aliases, and publish only matter-specific supported roles.",
+    "MAYBE_HOLD means: preserve a redacted source locator and seek disambiguating evidence; do not add the candidate to public search.",
+    "NO_REJECT means: retain the rejection fingerprint to prevent recurring false positives.",
+    "No raw mailbox body, attachment, address, phone number, account data or privileged legal advice is stored in this public queue."
+  ],
+  "candidates": [
+    {
+      "candidate_id": "PD-CAND-20260904-001",
+      "candidate_name": "Javier González",
+      "candidate_type": "PERSON",
+      "decision": "MAYBE_HOLD",
+      "source_channels": ["repository", "gmail-metadata"],
+      "hit_location": "reported 2015 HAYA / Uría contact chronology",
+      "reason": "The name is insufficiently distinctive and the located record does not establish exact identity, client or mandate.",
+      "needed_to_promote": ["full name or professional identifier", "native source", "matter/client", "date and role", "independent corroboration"],
+      "do_not_infer": ["Uría mandate", "HAYA mandate", "representation of the Insolvency Administrator", "information flow"]
+    },
+    {
+      "candidate_id": "PD-CAND-20260904-002",
+      "candidate_name": "Uría Menéndez — Project ICE due-diligence role",
+      "candidate_type": "MATTER_EDGE",
+      "decision": "MAYBE_HOLD",
+      "source_channels": ["gmail-attachment-metadata"],
+      "hit_location": "2019 Project ICE / Palacio de Hielo correspondence package",
+      "reason": "The firm is already canonical, but this appears to be a separate matter. The attachment phrase alone is not enough to publish scope, author, recipient or completed work product.",
+      "needed_to_promote": ["underlying due-diligence document", "engagement scope", "client and date", "privilege/publication review"],
+      "do_not_infer": ["Sun Park mandate", "continuity with RICPE", "conflict"]
+    },
+    {
+      "candidate_id": "PD-CAND-20260904-003",
+      "candidate_name": "José Acosta",
+      "candidate_type": "PERSON_ALIAS_OR_DISTINCT_PERSON",
+      "decision": "MAYBE_HOLD",
+      "source_channels": ["repository"],
+      "hit_location": "2020 RICPE presentation page",
+      "reason": "Do not merge the shorter label with José Daniel Acosta Matos without a source bridge proving that the speaker is the same person.",
+      "needed_to_promote": ["native presentation or recording", "speaker list", "full name", "role at event"],
+      "do_not_infer": ["identity with José Daniel Acosta Matos"]
+    },
+    {
+      "candidate_id": "PD-CAND-20260904-004",
+      "candidate_name": "Uriel Abogados",
+      "candidate_type": "ORGANISATION",
+      "decision": "NO_REJECT",
+      "source_channels": ["library"],
+      "hit_location": "RICPE proposal title",
+      "reason": "Name-collision control: Uriel Abogados is not Uría Menéndez. It must never be used as an Uría hit or bridge.",
+      "rejection_fingerprint": "uria-uriel-distinct-20260904"
+    }
+  ]
+}
