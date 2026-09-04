@@ -8,6 +8,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "assets/data/control-21-22-24-continuity-v1.json"
+READER_DATA = ROOT / "data/three-track-full-digitisation-20260904.json"
 PROTOCOL = ROOT / ".github/governance/CONTROL_21_22_24_CONTINUITY_INTERLINK_PROTOCOL_04SEP2026.md"
 HANDOFF_MD = ROOT / "archive/handoffs/2026-09-04-control-21-22-24-continuity-handoff.md"
 HANDOFF_JSON = ROOT / "archive/handoffs/2026-09-04-control-21-22-24-continuity-handoff.json"
@@ -44,6 +45,10 @@ REQUIRED_ALIASES = {
     "18 June 2026",
     "25 June 2026",
     "Concurso 36/2012",
+    "DP1901-C21",
+    "DP1956-C22",
+    "C24-JUDGE",
+    "PD-THREE-TRACK-DIGITISATION-20260904-01",
 }
 
 CRITICAL_EDGES = {
@@ -71,12 +76,18 @@ def load_json(path: Path):
         fail(f"invalid JSON in {path.relative_to(ROOT)}: {exc}")
 
 
+def public_route(path: str) -> str:
+    prefix = "/por-derecho"
+    return path[len(prefix):] if path.startswith(prefix) else path
+
+
 def main() -> None:
-    for required in (PROTOCOL, HANDOFF_MD, HANDOFF_JSON):
+    for required in (PROTOCOL, HANDOFF_MD, HANDOFF_JSON, READER_DATA):
         if not required.is_file():
             fail(f"missing required continuity file: {required.relative_to(ROOT)}")
 
     data = load_json(DATA)
+    reader = load_json(READER_DATA)
     handoff = load_json(HANDOFF_JSON)
 
     if data.get("control_id") != "PD-C212224-001":
@@ -130,13 +141,76 @@ def main() -> None:
     if missing_edges:
         fail(f"missing/altered critical edges: {sorted(missing_edges)}")
 
-    if "CONTROL-21-OBJECT-20260625" == "CONTROL-24-AMPLIACION-20260625":
-        fail("25 June objects collapsed")
-
     public_routes = data.get("public_routes", {})
-    for key in ("CONTROL-22_EN", "CONTROL-22_ES", "DP-1901_EN", "DP-1901_ES", "DP-1956_EN", "DP-1956_ES", "CONTROL-24_EN", "CONTROL-24_ES"):
+    for key in (
+        "CONTROL-22_EN", "CONTROL-22_ES", "DP-1901_EN", "DP-1901_ES",
+        "DP-1956_EN", "DP-1956_ES", "CONTROL-24_EN", "CONTROL-24_ES",
+        "READER_DP-1901_EN", "READER_DP-1901_ES", "READER_DP-1956_EN",
+        "READER_DP-1956_ES", "READER_CONTROL-24_EN", "READER_CONTROL-24_ES",
+    ):
         if not public_routes.get(key):
             fail(f"missing public route alias: {key}")
+
+    # Bind the reader-facing three-track dataset to the canonical continuity graph.
+    if reader.get("control_id") != "PD-THREE-TRACK-DIGITISATION-20260904-01":
+        fail("unexpected three-track reader-layer control_id")
+    continuity = reader.get("continuity_governance", {})
+    if continuity.get("control_id") != "PD-C212224-001":
+        fail("reader layer is not bound to PD-C212224-001")
+    if continuity.get("canonical_state") != "assets/data/control-21-22-24-continuity-v1.json":
+        fail("reader layer points to the wrong canonical continuity state")
+
+    bindings = continuity.get("track_bindings", {})
+    if bindings.get("DP1901-C21", {}).get("bridge_status") != "UNVERIFIED_CANDIDATE_BRIDGE":
+        fail("reader layer upgraded Control 21 -> DP 1901 bridge")
+    if bindings.get("DP1956-C22", {}).get("bridge_status") != "UNVERIFIED_CANDIDATE_BRIDGE":
+        fail("reader layer upgraded Control 22 -> DP 1956 bridge")
+    c24_binding = bindings.get("C24-JUDGE", {})
+    if c24_binding.get("formal_destination_status") != "UNKNOWN":
+        fail("reader layer upgraded Control 24 formal destination")
+    if c24_binding.get("bridge_status") != "UNVERIFIED_CANDIDATE_BRIDGE":
+        fail("reader layer changed Control 24 bridge status")
+
+    same_date = continuity.get("same_date_safeguard", {})
+    if same_date.get("control_21_object") == same_date.get("control_24_amplification"):
+        fail("25 June objects collapsed in reader-layer safeguard")
+    if same_date.get("control_21_object") != "CONTROL-21-OBJECT-20260625":
+        fail("reader-layer Control 21 25 June object id drifted")
+    if same_date.get("control_24_amplification") != "CONTROL-24-AMPLIACION-20260625":
+        fail("reader-layer Control 24 amplification id drifted")
+    if same_date.get("bridge_status") != "NO_BRIDGE":
+        fail("reader layer must preserve NO_BRIDGE between the two 25 June objects")
+
+    reader_layers = data.get("reader_layers", [])
+    if len(reader_layers) != 1:
+        fail("canonical graph must contain exactly one bound three-track reader-layer record")
+    reader_layer = reader_layers[0]
+    if reader_layer.get("control_id") != "PD-THREE-TRACK-DIGITISATION-20260904-01":
+        fail("canonical graph reader-layer control id drifted")
+    if reader_layer.get("path") != "data/three-track-full-digitisation-20260904.json":
+        fail("canonical graph reader-layer path drifted")
+    if reader_layer.get("relationship") != "BOUND_READER_LAYER":
+        fail("reader layer is no longer explicitly bound")
+
+    tracks = {item.get("track_id"): item for item in reader.get("tracks", [])}
+    if set(tracks) != {"DP1901-C21", "DP1956-C22", "C24-JUDGE"}:
+        fail("reader layer must preserve exactly the three controlled tracks")
+
+    route_pairs = {
+        "READER_DP-1901_EN": public_route(tracks["DP1901-C21"].get("public_route_en", "")),
+        "READER_DP-1901_ES": public_route(tracks["DP1901-C21"].get("public_route_es", "")),
+        "READER_DP-1956_EN": public_route(tracks["DP1956-C22"].get("public_route_en", "")),
+        "READER_DP-1956_ES": public_route(tracks["DP1956-C22"].get("public_route_es", "")),
+        "READER_CONTROL-24_EN": public_route(tracks["C24-JUDGE"].get("public_route_en", "")),
+        "READER_CONTROL-24_ES": public_route(tracks["C24-JUDGE"].get("public_route_es", "")),
+    }
+    for key, reader_route in route_pairs.items():
+        if public_routes.get(key) != reader_route:
+            fail(f"canonical/reader route drift for {key}: {public_routes.get(key)!r} != {reader_route!r}")
+
+    c24_status = tracks["C24-JUDGE"].get("status_control", {})
+    if c24_status.get("official_case_number") is not None or c24_status.get("nig") is not None or c24_status.get("assigned_court") is not None:
+        fail("reader layer assigned an unverified official Control 24 destination")
 
     if handoff.get("canonical_state") != "assets/data/control-21-22-24-continuity-v1.json":
         fail("handoff does not point to canonical machine state")
@@ -152,7 +226,7 @@ def main() -> None:
         if phrase not in protocol_text:
             fail(f"protocol safeguard missing: {phrase}")
 
-    print("PASS: PD-C212224-001 continuity graph, bridge safeguards, aliases and handoff are coherent")
+    print("PASS: PD-C212224-001 canonical graph and three-track reader layer are mutually bound; bridge safeguards, aliases, routes and handoff are coherent")
 
 
 if __name__ == "__main__":
