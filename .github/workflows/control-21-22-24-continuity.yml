@@ -14,7 +14,9 @@ on:
       - 'es/control-24-denuncia-juez-concurso-36-2012/**'
       - 'en/control-24-insolvency-judge-complaint-36-2012/**'
       - 'archive/handoffs/2026-09-04-control-21-22-24-continuity-handoff.*'
+      - 'archive/handoffs/2026-09-04-control-21-22-24-reader-layer-reconciliation.md'
       - 'scripts/validate_control_21_22_24_continuity.py'
+      - 'scripts/validate_control_21_22_24_reader_binding.py'
       - '.github/workflows/control-21-22-24-continuity.yml'
       - '.github/workflows/validate-three-track-full-digitisation.yml'
   push:
@@ -31,7 +33,9 @@ on:
       - 'es/control-24-denuncia-juez-concurso-36-2012/**'
       - 'en/control-24-insolvency-judge-complaint-36-2012/**'
       - 'archive/handoffs/2026-09-04-control-21-22-24-continuity-handoff.*'
+      - 'archive/handoffs/2026-09-04-control-21-22-24-reader-layer-reconciliation.md'
       - 'scripts/validate_control_21_22_24_continuity.py'
+      - 'scripts/validate_control_21_22_24_reader_binding.py'
       - '.github/workflows/control-21-22-24-continuity.yml'
       - '.github/workflows/validate-three-track-full-digitisation.yml'
   workflow_dispatch:
@@ -50,5 +54,7 @@ jobs:
       - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
         with:
           python-version: '3.12'
-      - name: Validate Control 21-22-24 continuity
+      - name: Validate Control 21-22-24 canonical continuity
         run: python3 scripts/validate_control_21_22_24_continuity.py
+      - name: Validate Control 21-22-24 reader-layer binding
+        run: python3 scripts/validate_control_21_22_24_reader_binding.py
