@@ -1,8 +1,16 @@
 # CURRENT START HERE — Por Derecho
 
-**Routing status:** CURRENT 03-SEP-2026 CRIMINAL-FIRST SOURCE CONTROL  
-**Machine pair:** `ops/CURRENT_OPERATIONAL_STATE_27AUG2026.json`  
-**Detailed pointer:** `CURRENT_OPERATIONAL_STATE_27AUG2026.md`
+**Routing status:** CURRENT 04-SEP-2026 MULTI-THREAD COLLABORATION / SINGLE-INTEGRATION CONTROL  
+**Current machine routing:** `ops/CURRENT_STATE.json`  
+**Control Tower / integration queue:** GitHub Issue `#1428`  
+**Mandatory coordination control:** `.github/governance/MULTI_THREAD_COLLABORATION_AND_PUBLICATION_V2_04SEP2026.md` (`PD-MTCP-20260904-01`)
+
+> **4-Sep-2026 operating rule:** every related thread first resolves current remote `main`, then reads `AGENTS.md`, the new-thread gate, `PD-MTCP-20260904-01`, `ops/CURRENT_STATE.json`, Issue #1428 and only the specialist controls materially required by its task. Related threads default to `WORKER`; parallel analysis is allowed, but only one active integration/publication lane may exist. Workers preserve structured canonical deltas and do not independently publish. Pre-control open PRs are preserved as `LEGACY_BACKLOG` until expressly reconciled/reactivated. Historical handovers remain provenance rather than competing current-state authorities.
+
+> **Existing-thread activation:** `Por Derecho: wake up. Refresh current main, apply PD-MTCP-20260904-01, work as a worker unless you are the active integrator, preserve only your canonical delta, and do not independently publish.`
+
+**Prior machine pair (historical/specialist routing):** `ops/CURRENT_OPERATIONAL_STATE_27AUG2026.json`  
+**Prior detailed pointer:** `CURRENT_OPERATIONAL_STATE_27AUG2026.md`
 
 > **3-Sep-2026 unitary criminal-first RedSARA source control:** before any criminal/prosecutorial, Concurso 36/2012, AC, Sun Park, RIC/RICPE or connected civil/mercantile/concursal redigest, read `reports/UNITARY_CRIMINAL_FIRST_REVERSE_ENGINEERING_GAP_CLOSURE_03SEP2026.md`, `UNITARY_CRIMINAL_PROSECUTORIAL_DIGEST_03SEP2026.md` and `data/unitary-criminal-redsara-register-20260903.json`. The full 154-page RedSARA annex reparse resolves **75 REGAGE communications / 125 attachment SHA-512 records / 15 receipt records without a hashed attachment**. The nine substantive PDFs in the current source set match registered attachments byte-for-byte by exact SHA-512. Criminal-first is an analytical/evidence-routing priority, not a presumption of crime or blanket displacement of other jurisdictions. Raw filings contain protected personal data; public derivatives use registration metadata + hash provenance instead of republishing raw PII.
 
@@ -12,19 +20,19 @@
 
 > **1-Sep-2026 specialist Acosta Matos / RICPE / Canarian investment-map continuity:** for work on the corrected poster, the downstream hotel/investment perimeter, “who were the investors?” provenance, MYND/Sholeo/Canarian/Radisson role separation, non-hotel investment/development platforms, residential/patrimonial inventory, or 2017–2026 acquisition/financing tracing, read `.github/governance/records/ACOSTA_MATOS_POSTER_INVESTMENT_CONTINUITY_01SEP2026.md`, `research/ACOSTA_MATOS_PERIMETER_INVESTMENT_MAP_2017_2026.md`, `data/acosta-matos-perimeter-investment-register-2017-2026.json`, `data/acosta-matos-perimeter-identity-reconciliation-20260901.json`, `research/ACOSTA_MATOS_NON_HOTEL_INVESTMENT_DEVELOPMENT_CENSUS_2017_2026.md` and `data/acosta-matos-non-hotel-investment-development-register-2017-2026.json`. The maps are source-graded: owner, shareholder, governance, manager, brand, RICPE financing, Acosta construction, real-estate promotion, rental marketing and investment-vehicle governance are separate edges; downstream “fruit” remains a tracing hypothesis, not a conclusion. The truthful CAEPR state is `PARTIAL_NOT_ALL_IS_CARET`; newly source-resolved legal persons are not silently given person/entity carets. Current website inventory is not silently backdated into the 2017–2026 transaction chronology without a dated source.
 
-For every new ChatGPT thread, repository-maintenance run, unitary redigest or continuity audit:
+For every related new or existing ChatGPT thread, repository-maintenance run, unitary redigest or continuity audit:
 
 1. **Resolve the live `main` branch first.** Never assume a checked-in SHA is still the current Git head.
-2. Read `reports/UNITARY_CRIMINAL_FIRST_REVERSE_ENGINEERING_GAP_CLOSURE_03SEP2026.md`, `UNITARY_CRIMINAL_PROSECUTORIAL_DIGEST_03SEP2026.md` and `data/unitary-criminal-redsara-register-20260903.json` when the work touches the criminal/prosecutorial or connected Sun Park/Concurso 36/2012 perimeter.
-3. Read `CURRENT_OPERATIONAL_STATE_27AUG2026.md` and its machine-readable pair.
-4. Read `CURRENT_HANDOVER_UNITARY_RECOVERY_27AUG2026.md`.
-5. Read `CURRENT_ACTIONS_360_START_HERE_27AUG2026.md` and `ops/UNITARY_360_ACTION_REGISTER_27AUG2026.json`.
-6. Read `CURRENT_REVERSE_ENGINEERED_DIGEST.md` and the relevant specialist controls.
-7. Apply `AGENTS.md`, `CHATGPT_START_HERE.md` and `ops/REPOSITORY_PRESERVATION_CONTRACT.json` before editing or publishing.
+2. Read `AGENTS.md`, `.github/governance/NEW_THREAD_SCOPE_AND_CONTINUITY_GATE_02SEP2026.md`, `.github/governance/MULTI_THREAD_COLLABORATION_AND_PUBLICATION_V2_04SEP2026.md` and `ops/CURRENT_STATE.json`.
+3. Read Issue #1428 and the relevant task issue; determine `WORKER` versus active integrator role.
+4. Read `reports/UNITARY_CRIMINAL_FIRST_REVERSE_ENGINEERING_GAP_CLOSURE_03SEP2026.md`, `UNITARY_CRIMINAL_PROSECUTORIAL_DIGEST_03SEP2026.md` and `data/unitary-criminal-redsara-register-20260903.json` when the work touches the criminal/prosecutorial or connected Sun Park/Concurso 36/2012 perimeter.
+5. Use `CURRENT_OPERATIONAL_STATE_27AUG2026.md`, `CURRENT_HANDOVER_UNITARY_RECOVERY_27AUG2026.md`, `CURRENT_ACTIONS_360_START_HERE_27AUG2026.md`, `ops/UNITARY_360_ACTION_REGISTER_27AUG2026.json` and `CURRENT_REVERSE_ENGINEERED_DIGEST.md` as specialist/historical controls only when materially required; they no longer precede the current collaboration routing layer.
+6. Apply `CHATGPT_START_HERE.md`, `ops/REPOSITORY_PRESERVATION_CONTRACT.json` and the relevant specialist controls before editing/publishing.
+7. Store unique work in the smallest canonical register/task issue; do not create a parallel whole-project handover when a canonical delta suffices.
 
 ## Routing rule
 
-The historical `PD-UNITARY-STATE-20260826-01` release remains valid as immutable release evidence, but **it is not the current routing header**. Later 27-August specialist releases and current `main` must not be silently downgraded to the 26-August snapshot.
+The historical `PD-UNITARY-STATE-20260826-01` release remains valid as immutable release evidence, but **it is not the current routing header**. Later specialist releases and current `main` must not be silently downgraded to an older snapshot.
 
 A later governance-only commit may advance `main` without changing merits. A successful Pages deployment does not by itself prove exact public-byte parity. Preserve those distinctions.
 

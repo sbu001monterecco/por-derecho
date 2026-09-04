@@ -1,119 +1,103 @@
 {
-  "schema": "por-derecho.operational-truth.current-state.v2",
-  "record_type": "CURRENT_STATE_CONTRACT_WITH_LAST_OBSERVATION",
-  "control_date": "2026-08-26",
-  "purpose": "Authoritative routing for repository, deployment and rollback state. Specialist case, evidence, procedural and reader-facing facts remain authoritative in their own controlled state files.",
-  "authority": {
-    "current_repository_truth": "Resolve refs/heads/main dynamically through GitHub or local git at execution time.",
-    "current_deployment_truth": "Resolve the latest successful GitHub Pages run for the relevant SHA and perform route-specific readback when material.",
-    "historical_rollback_truth": "Use ops/LAST_KNOWN_GOOD.json and ops/RELEASE_LEDGER.json; a formerly verified SHA is historical unless separately shown current."
+  "schema": "por-derecho.current-collaboration-state.v2",
+  "control_id": "PD-MTCP-20260904-01",
+  "status": "ACTIVE",
+  "effective_when": "present on main",
+  "repository": {
+    "name": "sbu001monterecco/por-derecho",
+    "branch": "main",
+    "pre_release_anchor_sha": "5c0538407699fe8c94424ae752fa797063aac2a4",
+    "runtime_rule": "Always fetch current remote main. This anchor is provenance only and never a substitute for the live head."
   },
-  "specialist_state_routing": {
-    "unitary_case_and_evidence_state": "ops/CURRENT_UNITARY_STATE.json",
-    "unitary_human_state": "CURRENT_UNITARY_STATE.md",
-    "expected_control_id": "PD-UNITARY-STATE-20260826-01",
-    "expected_status": "LIVE_VERIFIED",
-    "pr_reconciliation_ledger": "ops/PR_RECONCILIATION_LEDGER.json",
-    "material_updates": "assets/data/material-updates-v1.json",
-    "rule": "This file controls repository, deployment and rollback truth only. The unitary state controls synchronized case, evidence, procedural and reader-routing facts. Neither layer substitutes for the other."
+  "control_tower": {
+    "issue_number": 1428,
+    "issue_url": "https://github.com/sbu001monterecco/por-derecho/issues/1428",
+    "purpose": "Canonical multi-thread integration queue and coordination bus"
   },
-  "freshness_policy": {
-    "static_observation_is_not_current_truth": true,
-    "max_main_ahead_commits_before_refresh": 10,
-    "max_observation_age_hours_before_refresh": 24,
-    "max_open_pr_count_drift_before_refresh": 5,
-    "scheduled_live_check": ".github/workflows/validate-operational-truth.yml",
-    "runtime_generator": "scripts/generate_operational_truth.py",
-    "structural_validator": "scripts/validate_operational_truth.py"
+  "operating_model": {
+    "parallel_workers_allowed": true,
+    "single_active_integrator": true,
+    "default_related_thread_role": "WORKER",
+    "worker_may_publish_independently": false,
+    "one_logical_release_one_integration_pr_norm": true,
+    "thread_handover_default": "DO_NOT_CREATE_IF_CANONICAL_DELTA_CAN_BE_STORED_DIRECTLY",
+    "pre_control_open_pr_default": "LEGACY_BACKLOG"
   },
-  "repository_observation": {
-    "repository": "sbu001monterecco/por-derecho",
-    "ref": "refs/heads/main",
-    "sha": "77e2ba300af45a953947160af63283a64512e876",
-    "tree_sha": "4f0ac26c5548ae44c68933306c68165cbb6c973e",
-    "commit_time": "2026-08-26T07:28:56Z",
-    "observed_at": "2026-08-26T07:32:47Z",
-    "status": "BASELINE_OBSERVED_BEFORE_OPERATIONAL_TRUTH_CHANGE",
-    "observation_phase": "POST_MERGE_MAIN_AND_DEPLOYMENT_OBSERVED",
-    "legacy_status_compatibility": "The status value is retained temporarily for mission-critical validator compatibility; observation_phase carries the accurate lifecycle state.",
-    "relationship_rule": "The observed SHA must remain an ancestor of the checked-out commit. A live runtime report supersedes this last observation."
+  "runtime_integration_resolution": {
+    "active_integrator_is_dynamic": true,
+    "resolve_from": [
+      "current remote main",
+      "Issue #1428",
+      "open current-main-based integration/publication PRs",
+      "explicit current user instruction"
+    ],
+    "rule": "If an active integration lane exists, all other related threads remain workers unless the user expressly transfers/replaces the integrator role."
   },
-  "deployment_observation": {
-    "status_file": "ops/PRODUCTION_STATUS.json",
-    "last_observed_served_sha": "77e2ba300af45a953947160af63283a64512e876",
-    "last_observed_pages_run_id": 32942972472,
-    "last_observed_at": "2026-08-26T07:32:47Z",
-    "verification_level": "LIVE_VERIFIED_FOR_SERVED_SHA",
-    "last_exact_route_verification_run_id": 32942975508,
-    "last_exact_route_verification_run_number": 4,
-    "last_exact_route_verification_job_id": 98097657687,
-    "last_exact_route_verified_at": "2026-08-26T07:29:55Z"
-  },
-  "repository_inventory_observation": {
-    "open_pull_requests": 36,
-    "observed_at": "2026-08-26T05:50:53Z",
-    "source": "GitHub search API: repo:sbu001monterecco/por-derecho is:pr is:open",
-    "meaning": "Observation only; always re-query before triage or merge decisions."
-  },
-  "corpus": {
-    "identity_registry": {
-      "path": "assets/data/matter-identity-registry-v1.json",
-      "registry_id": "PD-SP-IDENTITY-REGISTRY-001",
-      "counts": {
-        "total": 336,
-        "PERSON": 157,
-        "ORGANISATION": 83,
-        "STRUCTURE": 11,
-        "INSTITUTION": 43,
-        "PROCEEDING": 43
-      },
-      "candidate_state": "LOCAL_SOURCE_STATIC_CANDIDATE_NOT_YET_LIVE_VERIFIED",
-      "last_live_verified_counts": {
-        "total": 204,
-        "PERSON": 87,
-        "ORGANISATION": 71,
-        "STRUCTURE": 10,
-        "INSTITUTION": 18,
-        "PROCEEDING": 18
-      }
-    },
-    "legal_professional_register": {
-      "path": "assets/data/legal-professionals-register-v1.json",
-      "register_id": "PD-SP-LEGAL-PROF-001",
-      "counts": {
-        "total": 40,
-        "current_counsel": 3,
-        "former_or_review_counsel": 31,
-        "current_procuradores": 2,
-        "former_procuradores": 4
-      }
-    }
-  },
-  "operational_controls": {
-    "deployment_status": "ops/PRODUCTION_STATUS.json",
-    "historical_rollback_anchor": "ops/LAST_KNOWN_GOOD.json",
-    "append_only_release_ledger": "ops/RELEASE_LEDGER.json",
-    "historical_snapshots": "archive/ops-snapshots/",
-    "mission_critical_runbook": "ops/GITHUB_MISSION_CRITICAL_RUNBOOK.md",
-    "repository_preservation_contract": "ops/REPOSITORY_PRESERVATION_CONTRACT.json"
-  },
-  "current_priority_sources": [
-    "PRIORITY_ACTIONS_START_HERE.md",
-    "ops/CURRENT_UNITARY_STATE.json",
-    "archive/prompts/CARET_SHORTHAND_AND_CAEPR_DISAMBIGUATION_PROMPT_27AUG2026.md",
-    "archive/CAEPR_JUAN_JOSE_VERA_DIAZ_IDENTITY_CONFIRMATION_27AUG2026.md",
-    "archive/JUAN_JOSE_VERA_MEETING_POINT_MARCH_2018_CONTINUITY_CONTROL_27AUG2026.md",
-    "docs/deletion-audits/2026-08-27-vera-meeting-point-march-2018-continuity-audit.md",
-    "docs/deletion-audits/2026-08-25-unitary-repository-website-valencia-thread-closeout.md",
-    "docs/deletion-audits/2026-08-25-financing-counsel-email-and-unitary-redigest-closeout.md",
-    "docs/deletion-audits/2026-08-25-professional-register-thread-redigest-closeout.md"
+  "startup_order": [
+    "fetch current remote main",
+    "read AGENTS.md",
+    "read .github/governance/NEW_THREAD_SCOPE_AND_CONTINUITY_GATE_02SEP2026.md",
+    "read .github/governance/MULTI_THREAD_COLLABORATION_AND_PUBLICATION_V2_04SEP2026.md",
+    "read ops/CURRENT_STATE.json",
+    "read Issue #1428 and the relevant task issue",
+    "read only specialist controls materially required by the task"
   ],
-  "boundaries": [
-    "This checked-in observation is not permanent current truth.",
-    "A successful Pages build is not the same as route-specific public-content verification.",
-    "Historical live verification remains valid as historical evidence but does not make that SHA current.",
-    "Open pull requests are candidate deltas, not repository truth.",
-    "Operational metadata does not establish any case allegation, procedural status or private-source conclusion.",
-    "Publication verification proves only the recorded deployment and public-route markers; it is not proof of the attributed enterprise allegation, any person's guilt, Penal Code articles 570 bis or 570 ter, an original pact, or evidential support from the Phase-A manifest."
-  ]
+  "wake_command": "Por Derecho: wake up. Refresh current main, apply PD-MTCP-20260904-01, work as a worker unless you are the active integrator, preserve only your canonical delta, and do not independently publish.",
+  "worker_delta_required_fields": [
+    "task",
+    "canonical_ids",
+    "sources",
+    "corrections",
+    "new_propositions",
+    "open_gaps",
+    "proposed_changes",
+    "conflicts_with_current_main",
+    "readiness"
+  ],
+  "worker_readiness_states": [
+    "READY_TO_INTEGRATE",
+    "BLOCKED_SOURCE_GAP",
+    "RESEARCH_ONLY",
+    "SUPERSEDED_BY_MAIN"
+  ],
+  "publication_pipeline": [
+    "refresh current main",
+    "collect ready deltas",
+    "reconcile canonical collisions once",
+    "generate deterministic derived artifacts before merge",
+    "run scoped and preservation/publication validation",
+    "CI verifies determinism and does not repair main",
+    "one integration PR",
+    "merge",
+    "deploy",
+    "verify exact merged SHA and affected routes",
+    "update task issues and Control Tower queue"
+  ],
+  "post_merge_policy": {
+    "normal_content_mutation_by_ci": false,
+    "normal_role": ["deploy", "verify", "report"],
+    "legacy_mutating_workflows": "MIGRATION_DEBT_NOT_A_PATTERN_FOR_NEW_WORK"
+  },
+  "legacy_pr_policy": {
+    "scope": "PRs opened before this control is effective",
+    "default": "LEGACY_BACKLOG",
+    "allowed_reclassification": [
+      "REACTIVATE",
+      "DELTA_SOURCE",
+      "SUPERSEDED",
+      "DRAFT_BACKLOG",
+      "CLOSE_NO_UNIQUE_DELTA"
+    ],
+    "wholesale_merge_without_current_main_reconciliation": false
+  },
+  "external_authority": {
+    "repository_publication": "ONLY_WHEN_USER_AUTHORIZES_THE_DEFINED_PUBLICATION_SCOPE",
+    "email": false,
+    "filing": false,
+    "red_sara_age_submission": false,
+    "portal_submission": false,
+    "authority_contact": false,
+    "journalist_contact": false,
+    "social_publication": false
+  }
 }

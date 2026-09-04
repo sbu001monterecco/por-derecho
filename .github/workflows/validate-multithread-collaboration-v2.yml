@@ -1,0 +1,34 @@
+name: Validate multi-thread collaboration v2
+
+on:
+  pull_request:
+    paths:
+      - 'ops/CURRENT_STATE.json'
+      - '.github/governance/MULTI_THREAD_COLLABORATION_AND_PUBLICATION_V2_04SEP2026.md'
+      - '.github/governance/NEW_THREAD_SCOPE_AND_CONTINUITY_GATE_02SEP2026.md'
+      - 'CURRENT_START_HERE.md'
+      - 'scripts/validate_multithread_collaboration_v2.py'
+      - '.github/workflows/validate-multithread-collaboration-v2.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'ops/CURRENT_STATE.json'
+      - '.github/governance/MULTI_THREAD_COLLABORATION_AND_PUBLICATION_V2_04SEP2026.md'
+      - '.github/governance/NEW_THREAD_SCOPE_AND_CONTINUITY_GATE_02SEP2026.md'
+      - 'CURRENT_START_HERE.md'
+      - 'scripts/validate_multithread_collaboration_v2.py'
+      - '.github/workflows/validate-multithread-collaboration-v2.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python3 scripts/validate_multithread_collaboration_v2.py
