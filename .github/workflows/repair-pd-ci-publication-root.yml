@@ -40,6 +40,13 @@ jobs:
                   body = body.replace(old, new, 1)
               file.write_text(body, encoding='utf-8')
 
+          patch('scripts/reconcile_identity_registry_projections.py', [
+              (
+                  '    for key in COUNT_KEYS:\n        body = replace_regex_once(\n            body,\n            rf\'(<strong data-registry-stat="{key}">)\\d+(</strong>)\',\n            rf\'\\g<1>{counts[key]}\\g<2>\',\n            f"{label} {key} stat",\n        )\n',
+                  '    for key in COUNT_KEYS:\n        stat_marker = "TOTAL" if key == "total" else key\n        body = replace_regex_once(\n            body,\n            rf\'(<strong data-registry-stat="{stat_marker}">)\\d+(</strong>)\',\n            rf\'\\g<1>{counts[key]}\\g<2>\',\n            f"{label} {key} stat",\n        )\n',
+              ),
+          ])
+
           patch('scripts/validate_repository_preservation.py', [
               (
                   'from pathlib import Path\n',
@@ -128,6 +135,13 @@ jobs:
         run: python scripts/reconcile_identity_registry_projections.py --write
       - name: Verify repaired source controls
         run: |
+          python -m py_compile \
+            scripts/reconcile_identity_registry_projections.py \
+            scripts/validate_repository_preservation.py \
+            scripts/validate_calificacion_position_objectives.py \
+            scripts/validate_calificacion_criminal_misuse_thesis.py \
+            scripts/validate_dp3205_2014_publication.py \
+            scripts/validate_unitary_control_plane.py
           python scripts/reconcile_identity_registry_projections.py
           python scripts/validate_loader_graph.py
           python scripts/validate_publication_integrity_v2.py
@@ -136,6 +150,7 @@ jobs:
           git config user.name "por-derecho-governance-bot"
           git config user.email "sbu001monterecco@users.noreply.github.com"
           git add \
+            scripts/reconcile_identity_registry_projections.py \
             scripts/validate_repository_preservation.py \
             scripts/validate_calificacion_position_objectives.py \
             scripts/validate_calificacion_criminal_misuse_thesis.py \
