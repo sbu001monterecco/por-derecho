@@ -5,9 +5,9 @@
 
   /*
    * Compatibility marker for the inherited loader chain.
-   * site-pre-matkator-8584-20260903.js transitively executes the preserved
-   * site-pre-treasury-154-hq-20260828.js?v=20260828a release; do not load it
-   * a second time here because that would duplicate inherited runtime modules.
+   * The 20260904 canonical-search runtime is preloaded with the same marker
+   * used by the inherited loader, preventing the stale 20260902 runtime from
+   * becoming the active search implementation.
    */
 
   const load = (file, marker, version) => {
@@ -18,6 +18,10 @@
     script.setAttribute(marker, version);
     document.head.appendChild(script);
   };
+
+  // Load first. The inherited chain checks this exact marker before loading
+  // canonical-home-search-20260902.js.
+  load('canonical-home-search-20260904.js', 'data-canonical-home-search-loader', '20260904a');
 
   const loadControl2224Release = () => {
     load('control-22-24-interlink-20260904.js', 'data-control-22-24-interlink-loader', '20260904a');
