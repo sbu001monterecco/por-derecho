@@ -1,0 +1,43 @@
+name: Concurso 36 triangle continuity
+
+on:
+  pull_request:
+    paths:
+      - 'data/concurso-36-2012-triangle-register-v1.json'
+      - 'data/control-22-24-interconnection-register.json'
+      - 'assets/concurso-36-2012-triangle-20260904.js'
+      - 'assets/concurso-36-2012-triangle-search-20260904.js'
+      - 'assets/control-22-24-interlink-20260904.js'
+      - 'assets/control-22-24-search-extension-20260904.js'
+      - 'assets/site.js'
+      - '.github/governance/CONCURSO_36_2012_TRIANGLE_CONTROL_21_22_24_CONTINUITY_PROTOCOL_04SEP2026.md'
+      - 'scripts/validate_concurso36_triangle_continuity.py'
+      - 'es/**'
+      - 'en/**'
+  push:
+    branches: [main]
+    paths:
+      - 'data/concurso-36-2012-triangle-register-v1.json'
+      - 'data/control-22-24-interconnection-register.json'
+      - 'assets/concurso-36-2012-triangle-20260904.js'
+      - 'assets/concurso-36-2012-triangle-search-20260904.js'
+      - 'assets/site.js'
+      - '.github/governance/CONCURSO_36_2012_TRIANGLE_CONTROL_21_22_24_CONTINUITY_PROTOCOL_04SEP2026.md'
+      - 'scripts/validate_concurso36_triangle_continuity.py'
+      - 'es/**'
+      - 'en/**'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate canonical triangle and continuity invariants
+        run: python3 scripts/validate_concurso36_triangle_continuity.py
