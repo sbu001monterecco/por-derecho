@@ -1,0 +1,101 @@
+{
+  "manifest_version": "1.0.0",
+  "manifest_id": "PD-PUB-CONTROL-22-24-20260904",
+  "title": "Control 22 / DP 1956 and Control 24 public digitisation and interconnection release",
+  "created": "2026-09-04",
+  "repository": "sbu001monterecco/por-derecho",
+  "base_main": "56761b5fa7a06579b3db563d859d75c65fb0a0b6",
+  "branch": "publish/controls-22-24-digitisation-20260904",
+  "status": "BRANCH_READY_PULL_REQUEST_PENDING",
+  "scope": {
+    "control_22": "Public-safe digest of the 18 June 2026 complaint concerning the Insolvency Administrator, preserving its distinction from the later DP 1956/2026 identity.",
+    "control_24": "Public-safe digest of the 18 June 2026 judge-related complaint and the 25 June dependent supplement, preserving the absence of a confirmed official court destination or outcome.",
+    "querella_interface": "States the complainant's use of Control 24 as the documentary basis of a formal querella route while expressly recording that no formal filing receipt has been located.",
+    "interconnection": "Typed links among Control 21/DP 1901, Control 22/DP 1956, Control 24, Insolvency 36/2012, Fiscalía, CGPJ, removal/fees and the shared documentary modules, without consolidation or transferred liability."
+  },
+  "public_pages": [
+    {
+      "language": "es",
+      "path": "es/control-22-denuncia-administrador-concursal/index.html",
+      "url": "https://sbu001monterecco.github.io/por-derecho/es/control-22-denuncia-administrador-concursal/"
+    },
+    {
+      "language": "en",
+      "path": "en/control-22-insolvency-administrator-complaint/index.html",
+      "url": "https://sbu001monterecco.github.io/por-derecho/en/control-22-insolvency-administrator-complaint/"
+    },
+    {
+      "language": "es",
+      "path": "es/control-24-denuncia-juez-concurso-36-2012/index.html",
+      "url": "https://sbu001monterecco.github.io/por-derecho/es/control-24-denuncia-juez-concurso-36-2012/"
+    },
+    {
+      "language": "en",
+      "path": "en/control-24-insolvency-judge-complaint-36-2012/index.html",
+      "url": "https://sbu001monterecco.github.io/por-derecho/en/control-24-insolvency-judge-complaint-36-2012/"
+    }
+  ],
+  "structured_files": [
+    "data/control-22-24-interconnection-register.json",
+    "assets/control-22-24-interlink-20260904.js",
+    "assets/control-22-24-search-extension-20260904.js",
+    "sitemap-control-22-24.xml",
+    "CURRENT_HANDOVER_CONTROL_22_24_04SEP2026.md"
+  ],
+  "updated_files": [
+    "assets/site.js",
+    "robots.txt"
+  ],
+  "validation": {
+    "workflow": ".github/workflows/validate-control-22-24.yml",
+    "status": "PENDING_PULL_REQUEST",
+    "checks": [
+      "required release files",
+      "JavaScript syntax",
+      "legacy loader continuity",
+      "JSON and XML syntax",
+      "canonical and reciprocal language routes",
+      "procedural identity boundaries",
+      "adjudicative and querella boundaries",
+      "known broken-route exclusion",
+      "public-safety token scan"
+    ]
+  },
+  "pull_request": null,
+  "pull_request_state": "NOT_OPENED",
+  "merge_commit": null,
+  "pages_deployment": {
+    "status": "PENDING_AFTER_MERGE",
+    "run_id": null,
+    "deployed_sha": null
+  },
+  "live_verification": {
+    "repository_source": "BRANCH_ONLY",
+    "pages_direct_http_readback": "PENDING_AFTER_MERGE",
+    "search_engine_discovery": "NOT_TESTED",
+    "representation_rule": "Do not describe the new public routes as independently live-verified until direct no-cache HTTP readback succeeds."
+  },
+  "public_boundaries": [
+    "Control 22 is a filing locator and is not DP 1956/2026.",
+    "Control 24 is a filing locator and is not a NIG, preliminary-proceedings number, High Court case or formal querella.",
+    "The 25 June contribution is a dependent supplement unless a primary source proves another status.",
+    "Prepared, reviewed or sent to counsel does not equal filed.",
+    "Related does not equal consolidated and shared evidence does not transfer responsibility.",
+    "No allegation is published as an adjudicated finding."
+  ],
+  "privacy": {
+    "unredacted_pleadings_published": false,
+    "private_contact_details_published": false,
+    "credentials_published": false,
+    "privileged_or_reserved_material_published": false,
+    "native_private_evidence_published": false
+  },
+  "open_gaps": [
+    "Primary allocation bridge from Control 22 to DP 1956/2026.",
+    "Filed-appeal proof for DP 1956/2026.",
+    "Official registry, destination, present location and outcome for Control 24.",
+    "Electronic joinder metadata for the 25 June supplement.",
+    "Formal querella filing receipt, if any.",
+    "Certified Insolvency 36/2012 act-to-knowledge-to-response record for the shared issue modules."
+  ]
+}
