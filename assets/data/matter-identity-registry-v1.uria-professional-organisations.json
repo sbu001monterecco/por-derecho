@@ -1,0 +1,63 @@
+{
+  "schema": "por-derecho.matter-identity-registry.part.v1",
+  "registry_id": "PD-SP-IDENTITY-REGISTRY-001",
+  "type": "ORGANISATION",
+  "records": [
+    {
+      "id": "PD-SP-O-0084",
+      "type": "ORGANISATION",
+      "name": "URÍA MENÉNDEZ ABOGADOS, S.L.P.",
+      "aliases": [
+        "Uría Menéndez",
+        "Uria Menendez",
+        "Uría Menéndez Abogados",
+        "Uria Menendez Abogados",
+        "Uría",
+        "Uria"
+      ],
+      "identifier": {
+        "type": "NIF",
+        "value": "B28563963"
+      },
+      "routes": {
+        "es": "/es/uria-menendez/",
+        "en": "/en/uria-menendez-sun-park/"
+      },
+      "identity_resolution": "CARET_CONFIRMED",
+      "source_tier": "PRIMARY_AND_PUBLIC_CORROBORATION",
+      "search_meta": "Despacho jurídico · huellas documentales separadas por asunto y fecha",
+      "capacity_boundary": "The firm identity is confirmed. Each client, mandate, scope, communication, knowledge state, conflict process and information-flow proposition must be proved matter by matter; repeated appearance does not establish coordination, conflict or wrongdoing.",
+      "matter_roles": [
+        {
+          "matter": "Concurso 36/2012 / Promontoria Holding 122 B.V.",
+          "date": "2017-05-15",
+          "role": "Counsel identified in a PH122 filing",
+          "evidence_id": "DOC-PH122-URIA-20170515"
+        },
+        {
+          "matter": "RIC Private Equity formation and advisory perimeter",
+          "period": "2019-2020",
+          "role": "Legal adviser described by RICPE public corporate sources",
+          "evidence_ids": ["DOC-RICPE-HISTORY", "DOC-RICPE-ARTICLE-20200117"]
+        },
+        {
+          "matter": "Procedimiento ordinario 1859/2023-9 / CaixaBank defence",
+          "date": "2024-01-29",
+          "role": "Firm of lawyers identified for CaixaBank",
+          "evidence_id": "DOC-CAIXA-DEFENCE-20240129"
+        },
+        {
+          "matter": "Control 21 consolidated filing",
+          "date": "2026-07-09",
+          "role": "Target of a production request only",
+          "evidence_id": "DOC-CONTROL21-20260709",
+          "boundary": "The request does not prove that responsive notes exist or what they contain."
+        }
+      ],
+      "collision_controls": [
+        "Do not merge Uría Menéndez with Uriel Abogados or any other phonetically similar firm.",
+        "Uria and Uría are retrieval aliases for this record only; they are not separate legal entities."
+      ]
+    }
+  ]
+}
