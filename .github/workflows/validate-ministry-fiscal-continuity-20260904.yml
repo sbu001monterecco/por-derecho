@@ -1,0 +1,38 @@
+name: Validate Ministerio Fiscal continuity 20260904
+
+on:
+  pull_request:
+    paths:
+      - 'data/ministry-fiscal-continuity-ledger-20260904.json'
+      - 'reports/MINISTERIO_FISCAL_CONTINUITY_RECONCILIATION_04SEP2026.md'
+      - 'en/ministry-fiscal-continuity/**'
+      - 'es/continuidad-ministerio-fiscal/**'
+      - 'sitemap-ministry-fiscal-continuity.xml'
+      - 'robots.txt'
+      - 'scripts/validate_ministry_fiscal_continuity_20260904.py'
+      - '.github/workflows/validate-ministry-fiscal-continuity-20260904.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'data/ministry-fiscal-continuity-ledger-20260904.json'
+      - 'reports/MINISTERIO_FISCAL_CONTINUITY_RECONCILIATION_04SEP2026.md'
+      - 'en/ministry-fiscal-continuity/**'
+      - 'es/continuidad-ministerio-fiscal/**'
+      - 'sitemap-ministry-fiscal-continuity.xml'
+      - 'robots.txt'
+      - 'scripts/validate_ministry_fiscal_continuity_20260904.py'
+      - '.github/workflows/validate-ministry-fiscal-continuity-20260904.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate continuity controls
+        run: python scripts/validate_ministry_fiscal_continuity_20260904.py
