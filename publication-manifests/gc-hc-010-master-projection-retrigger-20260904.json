@@ -1,0 +1,16 @@
+{
+  "schema_version": "1.0.0",
+  "control": "GC-HC-010",
+  "purpose": "Retrigger deterministic master-proceedings migration after stale canonical/public projection detected",
+  "expected_state": {
+    "filing_date": "2026-06-18",
+    "daily_registration": "24",
+    "supplement_date": "2026-06-25",
+    "assigned_organ": "UNVERIFIED",
+    "current_custodian": "UNVERIFIED",
+    "tsjc_route": "EXPECTED_OR_PRESUMED_NOT_VERIFIED",
+    "trace_targets": ["Decanato", "TSJC", "CGPJ"],
+    "cgpj_169_2026": "SEPARATE_LATER_OVERSIGHT_TRACE"
+  },
+  "publication_rule": "The filing and the unresolved traceability gap are both usable controlled facts; no unverified judicial route or outcome may be promoted to fact."
+}
