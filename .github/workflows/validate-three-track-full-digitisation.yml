@@ -1,0 +1,136 @@
+name: Validate three-track full digitisation
+
+on:
+  pull_request:
+    paths:
+      - 'data/three-track-full-digitisation-20260904.json'
+      - 'assets/control-22-24-interlink-20260904.js'
+      - 'archive/THREE_TRACK_FULL_DIGITISATION_CONTROL_04SEP2026.md'
+      - 'es/dp-1901-2026/**'
+      - 'en/dp-1901-2026/**'
+      - 'es/dp-1956-2026/**'
+      - 'en/dp-1956-2026/**'
+      - 'es/control-24-denuncia-juez-concurso-36-2012/**'
+      - 'en/control-24-insolvency-judge-complaint-36-2012/**'
+  push:
+    branches: [main]
+    paths:
+      - 'data/three-track-full-digitisation-20260904.json'
+      - 'assets/control-22-24-interlink-20260904.js'
+      - 'archive/THREE_TRACK_FULL_DIGITISATION_CONTROL_04SEP2026.md'
+      - 'es/dp-1901-2026/**'
+      - 'en/dp-1901-2026/**'
+      - 'es/dp-1956-2026/**'
+      - 'en/dp-1956-2026/**'
+      - 'es/control-24-denuncia-juez-concurso-36-2012/**'
+      - 'en/control-24-insolvency-judge-complaint-36-2012/**'
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v4
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
+        with:
+          node-version: '22'
+
+      - name: Required files and loader
+        run: |
+          test -f data/three-track-full-digitisation-20260904.json
+          test -f archive/THREE_TRACK_FULL_DIGITISATION_CONTROL_04SEP2026.md
+          test -f assets/control-22-24-interlink-20260904.js
+          grep -Fq "control-22-24-interlink-20260904.js" assets/site.js
+          for p in \
+            es/dp-1901-2026/index.html en/dp-1901-2026/index.html \
+            es/dp-1956-2026/index.html en/dp-1956-2026/index.html \
+            es/control-24-denuncia-juez-concurso-36-2012/index.html \
+            en/control-24-insolvency-judge-complaint-36-2012/index.html; do
+            test -f "$p"
+            grep -Fq "assets/site.js" "$p"
+          done
+
+      - name: JavaScript and JSON syntax
+        run: |
+          node --check assets/control-22-24-interlink-20260904.js
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          p=Path('data/three-track-full-digitisation-20260904.json')
+          data=json.loads(p.read_text(encoding='utf-8'))
+          assert data['control_id']=='PD-THREE-TRACK-DIGITISATION-20260904-01'
+          assert len(data['tracks'])==3
+          assert len(data['shared_context'])==6
+          print('three-track JSON valid')
+          PY
+
+      - name: Source identity and pagination invariants
+        run: |
+          python - <<'PY'
+          import json
+          d=json.load(open('data/three-track-full-digitisation-20260904.json',encoding='utf-8'))
+          t={x['track_id']:x for x in d['tracks']}
+          assert t['DP1901-C21']['base_filing']['pages']==69
+          assert t['DP1901-C21']['base_filing']['sha256']=='cb2ea7e6a206be97e30d28e92c330f3e40ece1d18d9964b38f9a5fd05a36c3f1'
+          assert t['DP1901-C21']['expansion']['pages']==7
+          assert t['DP1901-C21']['expansion']['sha256']=='436ffdddd8c9584a1e907cb25f1fbd9f27b82e7c6976c785fdcf09f535f3c9b9'
+          assert t['DP1956-C22']['base_filing']['pages']==55
+          assert t['DP1956-C22']['base_filing']['sha256']=='b11f10e7410f922a8cd1796ea462ea7ea20d555b7308e4481f2cb23732b1002b'
+          assert t['C24-JUDGE']['base_filing']['pages']==79
+          assert t['C24-JUDGE']['supplement']['pages']==10
+          print('source identity invariants valid')
+          PY
+
+      - name: Procedural separation and status invariants
+        run: |
+          python - <<'PY'
+          import json
+          d=json.load(open('data/three-track-full-digitisation-20260904.json',encoding='utf-8'))
+          blob=json.dumps(d,ensure_ascii=False).casefold()
+          required=[
+            'shared evidence does not transfer knowledge, intent, causation, guilt or liability',
+            'sobreseimiento provisional communicated 2026-07-21',
+            'filed/presented — formal allocation and current status not yet primary-verified',
+            'denuncia / notitia criminis; not formal querella'
+          ]
+          for s in required:
+            assert s.casefold() in blob, s
+          t={x['track_id']:x for x in d['tracks']}
+          assert t['C24-JUDGE']['status_control']['official_case_number'] is None
+          assert t['C24-JUDGE']['status_control']['nig'] is None
+          assert t['C24-JUDGE']['status_control']['assigned_court'] is None
+          assert t['DP1901-C21']['procedure'] != t['DP1956-C22']['procedure']
+          print('procedural identity invariants valid')
+          PY
+
+      - name: Visual contextual narration invariants
+        run: |
+          grep -Fq "ONE EVIDENTIAL CONTEXT" assets/control-22-24-interlink-20260904.js
+          grep -Fq "UN CONTEXTO PROBATORIO" assets/control-22-24-interlink-20260904.js
+          grep -Fq "dp-1901-2026" assets/control-22-24-interlink-20260904.js
+          grep -Fq "dp-1956-2026" assets/control-22-24-interlink-20260904.js
+          grep -Fq "control-24-denuncia-juez-concurso-36-2012" assets/control-22-24-interlink-20260904.js
+          grep -Fq "One event, three legally different questions" assets/control-22-24-interlink-20260904.js
+          grep -Fq "Un mismo evento, tres preguntas jurídicas distintas" assets/control-22-24-interlink-20260904.js
+
+      - name: Public-safety and private-source boundary scan
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          paths=[
+            Path('data/three-track-full-digitisation-20260904.json'),
+            Path('assets/control-22-24-interlink-20260904.js'),
+            Path('archive/THREE_TRACK_FULL_DIGITISATION_CONTROL_04SEP2026.md')
+          ]
+          forbidden=['Y2231410X','sbu001@monterecco.com','Calle Pozo Cabildo','BEGIN PRIVATE KEY','ghp_','github_pat_','sk-proj-']
+          failures=[]
+          for p in paths:
+            s=p.read_text(encoding='utf-8')
+            for token in forbidden:
+              if token.casefold() in s.casefold(): failures.append(f'{p}: {token}')
+          if failures: raise SystemExit('\n'.join(failures))
+          print('public safety scan valid')
+          PY

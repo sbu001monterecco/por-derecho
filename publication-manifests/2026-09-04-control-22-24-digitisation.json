@@ -1,4 +1,17 @@
 {
+  "publication_id": "PD-PUB-CONTROL-22-24-20260904",
+  "current_state": "DEPLOYED",
+  "owner": "sbu001monterecco",
+  "expected_routes": {
+    "es": [
+      "es/control-22-denuncia-administrador-concursal/index.html",
+      "es/control-24-denuncia-juez-concurso-36-2012/index.html"
+    ],
+    "en": [
+      "en/control-22-insolvency-administrator-complaint/index.html",
+      "en/control-24-insolvency-judge-complaint-36-2012/index.html"
+    ]
+  },
   "manifest_version": "1.0.1",
   "manifest_id": "PD-PUB-CONTROL-22-24-20260904",
   "title": "Control 22 / DP 1956 and Control 24 public digitisation and interconnection release",
@@ -31,17 +44,20 @@
     "workflow": ".github/workflows/validate-control-22-24.yml",
     "status": "SUCCESS",
     "run_id": 33823156071,
+    "evidence": "Focused Control 22/24 validation run 33823156071 completed successfully before merge.",
     "checks": ["required release files","JavaScript syntax","legacy loader continuity","JSON and XML syntax","canonical and reciprocal language routes","procedural identity boundaries","adjudicative and querella boundaries","known broken-route exclusion","public-safety token scan"]
   },
   "pull_request": 1413,
   "pull_request_url": "https://github.com/sbu001monterecco/por-derecho/pull/1413",
   "pull_request_state": "MERGED",
   "merge_commit": "d6c3550cc86e4b7dd642126b458cf205c4379bf6",
+  "merge_sha": "d6c3550cc86e4b7dd642126b458cf205c4379bf6",
   "pages_deployment": {
     "status": "SUCCESS",
     "run_id": 33823548923,
     "deployed_sha": "d6c3550cc86e4b7dd642126b458cf205c4379bf6"
   },
+  "deployment_evidence": "GitHub Pages deployment run 33823548923 succeeded for merge d6c3550cc86e4b7dd642126b458cf205c4379bf6.",
   "live_verification": {
     "repository_source": "VERIFIED_ON_MAIN",
     "pages_direct_http_readback": "NOT_INDEPENDENTLY_CONFIRMED_AT_CLOSEOUT",
