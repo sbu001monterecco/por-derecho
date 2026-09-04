@@ -1,10 +1,44 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "1.0.1",
   "control_id": "PD-THREE-TRACK-DIGITISATION-20260904-01",
   "created": "2026-09-04",
   "base_main_sha": "b8ded173b06f17aaf91569f051dd11e621b139ae",
   "status": "PUBLIC_SAFE_FULL_TEXT_DIGEST_WITH_PRIVATE_ORIGINALS_EXCLUDED",
   "purpose": "Provide one source-complete, page-aware public digest for DP 1901/2026, DP 1956/2026 and Control 24 while preserving separate procedural identities and actor-specific attribution.",
+  "continuity_governance": {
+    "control_id": "PD-C212224-001",
+    "canonical_state": "assets/data/control-21-22-24-continuity-v1.json",
+    "protocol": ".github/governance/CONTROL_21_22_24_CONTINUITY_INTERLINK_PROTOCOL_04SEP2026.md",
+    "binding_rule": "This reader-layer dataset is subordinate to the canonical continuity graph for procedural identity and bridge status. A reader-facing label or source filename cannot upgrade an unverified bridge.",
+    "track_bindings": {
+      "DP1901-C21": {
+        "control": "CONTROL-21",
+        "proceeding": "GC-CRI-008",
+        "bridge_status": "UNVERIFIED_CANDIDATE_BRIDGE",
+        "do_not_infer": "Do not state that daily reference 21 became DP 1901/2026 without a source-certified intake/reparto bridge."
+      },
+      "DP1956-C22": {
+        "control": "CONTROL-22",
+        "intake_object": "GC-REF-029",
+        "proceeding": "GC-CRI-009",
+        "bridge_status": "UNVERIFIED_CANDIDATE_BRIDGE",
+        "do_not_infer": "Do not state that daily reference 22 became DP 1956/2026 without a source-certified intake/reparto bridge."
+      },
+      "C24-JUDGE": {
+        "control": "CONTROL-24",
+        "canonical_record": "GC-HC-010",
+        "formal_destination_status": "UNKNOWN",
+        "bridge_status": "UNVERIFIED_CANDIDATE_BRIDGE",
+        "do_not_infer": "Daily reference 24 is not a NIG, DP number, certified reparto, admission, dismissal, archive or merits outcome."
+      }
+    },
+    "same_date_safeguard": {
+      "control_21_object": "CONTROL-21-OBJECT-20260625",
+      "control_24_amplification": "CONTROL-24-AMPLIACION-20260625",
+      "bridge_status": "NO_BRIDGE",
+      "rule": "The two potentially distinct 25 June 2026 document objects remain separate unless a primary source proves identity."
+    }
+  },
   "global_boundary": [
     "The three tracks are evidentially interconnected but procedurally separate.",
     "Shared evidence does not transfer knowledge, intent, causation, guilt or liability.",

@@ -5,17 +5,39 @@ on:
     paths:
       - '.github/governance/CONTROL_21_22_24_CONTINUITY_INTERLINK_PROTOCOL_04SEP2026.md'
       - 'assets/data/control-21-22-24-continuity-v1.json'
+      - 'data/three-track-full-digitisation-20260904.json'
+      - 'assets/control-22-24-interlink-20260904.js'
+      - 'es/dp-1901-2026/**'
+      - 'en/dp-1901-2026/**'
+      - 'es/dp-1956-2026/**'
+      - 'en/dp-1956-2026/**'
+      - 'es/control-24-denuncia-juez-concurso-36-2012/**'
+      - 'en/control-24-insolvency-judge-complaint-36-2012/**'
       - 'archive/handoffs/2026-09-04-control-21-22-24-continuity-handoff.*'
+      - 'archive/handoffs/2026-09-04-control-21-22-24-reader-layer-reconciliation.md'
       - 'scripts/validate_control_21_22_24_continuity.py'
+      - 'scripts/validate_control_21_22_24_reader_binding.py'
       - '.github/workflows/control-21-22-24-continuity.yml'
+      - '.github/workflows/validate-three-track-full-digitisation.yml'
   push:
     branches: [main]
     paths:
       - '.github/governance/CONTROL_21_22_24_CONTINUITY_INTERLINK_PROTOCOL_04SEP2026.md'
       - 'assets/data/control-21-22-24-continuity-v1.json'
+      - 'data/three-track-full-digitisation-20260904.json'
+      - 'assets/control-22-24-interlink-20260904.js'
+      - 'es/dp-1901-2026/**'
+      - 'en/dp-1901-2026/**'
+      - 'es/dp-1956-2026/**'
+      - 'en/dp-1956-2026/**'
+      - 'es/control-24-denuncia-juez-concurso-36-2012/**'
+      - 'en/control-24-insolvency-judge-complaint-36-2012/**'
       - 'archive/handoffs/2026-09-04-control-21-22-24-continuity-handoff.*'
+      - 'archive/handoffs/2026-09-04-control-21-22-24-reader-layer-reconciliation.md'
       - 'scripts/validate_control_21_22_24_continuity.py'
+      - 'scripts/validate_control_21_22_24_reader_binding.py'
       - '.github/workflows/control-21-22-24-continuity.yml'
+      - '.github/workflows/validate-three-track-full-digitisation.yml'
   workflow_dispatch:
   schedule:
     - cron: '17 6 * * 1'
@@ -26,10 +48,13 @@ permissions:
 jobs:
   validate:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
         with:
           python-version: '3.12'
-      - name: Validate Control 21-22-24 continuity
+      - name: Validate Control 21-22-24 canonical continuity
         run: python3 scripts/validate_control_21_22_24_continuity.py
+      - name: Validate Control 21-22-24 reader-layer binding
+        run: python3 scripts/validate_control_21_22_24_reader_binding.py

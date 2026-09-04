@@ -4,6 +4,12 @@ on:
   pull_request:
     paths:
       - 'data/three-track-full-digitisation-20260904.json'
+      - 'assets/data/control-21-22-24-continuity-v1.json'
+      - '.github/governance/CONTROL_21_22_24_CONTINUITY_INTERLINK_PROTOCOL_04SEP2026.md'
+      - 'scripts/validate_control_21_22_24_continuity.py'
+      - 'scripts/validate_control_21_22_24_reader_binding.py'
+      - '.github/workflows/control-21-22-24-continuity.yml'
+      - '.github/workflows/validate-three-track-full-digitisation.yml'
       - 'assets/control-22-24-interlink-20260904.js'
       - 'archive/THREE_TRACK_FULL_DIGITISATION_CONTROL_04SEP2026.md'
       - 'es/dp-1901-2026/**'
@@ -16,6 +22,12 @@ on:
     branches: [main]
     paths:
       - 'data/three-track-full-digitisation-20260904.json'
+      - 'assets/data/control-21-22-24-continuity-v1.json'
+      - '.github/governance/CONTROL_21_22_24_CONTINUITY_INTERLINK_PROTOCOL_04SEP2026.md'
+      - 'scripts/validate_control_21_22_24_continuity.py'
+      - 'scripts/validate_control_21_22_24_reader_binding.py'
+      - '.github/workflows/control-21-22-24-continuity.yml'
+      - '.github/workflows/validate-three-track-full-digitisation.yml'
       - 'assets/control-22-24-interlink-20260904.js'
       - 'archive/THREE_TRACK_FULL_DIGITISATION_CONTROL_04SEP2026.md'
       - 'es/dp-1901-2026/**'
@@ -41,6 +53,10 @@ jobs:
       - name: Required files and loader
         run: |
           test -f data/three-track-full-digitisation-20260904.json
+          test -f assets/data/control-21-22-24-continuity-v1.json
+          test -f .github/governance/CONTROL_21_22_24_CONTINUITY_INTERLINK_PROTOCOL_04SEP2026.md
+          test -f scripts/validate_control_21_22_24_continuity.py
+          test -f scripts/validate_control_21_22_24_reader_binding.py
           test -f archive/THREE_TRACK_FULL_DIGITISATION_CONTROL_04SEP2026.md
           test -f assets/control-22-24-interlink-20260904.js
           grep -Fq "control-22-24-interlink-20260904.js" assets/site.js
@@ -105,6 +121,12 @@ jobs:
           assert t['DP1901-C21']['procedure'] != t['DP1956-C22']['procedure']
           print('procedural identity invariants valid')
           PY
+
+      - name: Canonical Control 21-22-24 continuity
+        run: python3 scripts/validate_control_21_22_24_continuity.py
+
+      - name: Canonical to reader-layer binding
+        run: python3 scripts/validate_control_21_22_24_reader_binding.py
 
       - name: Visual contextual narration invariants
         run: |

@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.2",
+  "schema_version": "1.0.3",
   "control_id": "PD-C212224-001",
   "as_of": "2026-09-04",
   "repository": "sbu001monterecco/por-derecho",
@@ -94,8 +94,22 @@
     {"from":"AC-SEPARATION-ROUTE","to":"RPL-421-2026","relation":"RELATED_REMUNERATION_APPEAL_PERIMETER","bidirectional":true,"bridge_status":"RELATED_SEPARATE_ROUTE","evidential_status":"DOCUMENTED"},
     {"from":"CONCURSO-36-2012","to":"RPL-2523-2025","relation":"CLASSIFICATION_APPEAL","bidirectional":true,"bridge_status":"RELATED_SEPARATE_ROUTE","evidential_status":"DOCUMENTED"}
   ],
+  "reader_layers": [
+    {
+      "control_id": "PD-THREE-TRACK-DIGITISATION-20260904-01",
+      "path": "data/three-track-full-digitisation-20260904.json",
+      "introduced_on_main_sha": "92b254ca03caf8f5ff4a418a9bfacb92b5bdd04f",
+      "relationship": "BOUND_READER_LAYER",
+      "governance_precedence": "PD-C212224-001 controls procedural identity and bridge status. The reader layer may add source-complete public-safe presentation but cannot upgrade a bridge by label, filename or narrative proximity, and it cannot weaken the Reg. No. 24 filed-but-untraced / presumed-TSJC-only safeguards.",
+      "track_bindings": {
+        "DP1901-C21": "CONTROL-21 ↔ GC-CRI-008 / UNVERIFIED_CANDIDATE_BRIDGE",
+        "DP1956-C22": "CONTROL-22 ↔ GC-CRI-009 / UNVERIFIED_CANDIDATE_BRIDGE",
+        "C24-JUDGE": "CONTROL-24 ↔ GC-HC-010 / one Reg. No. 24 record / formal destination UNKNOWN / TSJC presumed-unverified"
+      }
+    }
+  ],
   "aliases": [
-    "Control 21","Control 22","Control 24","Reg. No. 24","Registro n.º 24","daily 21","daily 22","daily 24","daily reference 21","daily reference 22","daily reference 24","DP 1901/2026","DP 1956/2026","GC-CRI-008","GC-CRI-009","GC-REF-029","GC-HC-010","DI 169/2026","CGPJ 169/2026","Alzada 286/2026","DIP 2/2026","ICALPA 80/2026","RPL 2523/2025","RPL 3304/2025","RPL 3319/2025","RPL 421/2026","18 June 2026","25 June 2026","18 junio 2026","25 junio 2026","supplement 25 June 2026","ampliación 25 junio 2026","TSJ Canarias","TSJC","Concurso 36/2012"
+    "Control 21","Control 22","Control 24","Reg. No. 24","Registro n.º 24","daily 21","daily 22","daily 24","daily reference 21","daily reference 22","daily reference 24","DP 1901/2026","DP 1956/2026","GC-CRI-008","GC-CRI-009","GC-REF-029","GC-HC-010","DI 169/2026","CGPJ 169/2026","Alzada 286/2026","DIP 2/2026","ICALPA 80/2026","RPL 2523/2025","RPL 3304/2025","RPL 3319/2025","RPL 421/2026","18 June 2026","25 June 2026","18 junio 2026","25 junio 2026","supplement 25 June 2026","ampliación 25 junio 2026","TSJ Canarias","TSJC","Concurso 36/2012","DP1901-C21","DP1956-C22","C24-JUDGE","PD-THREE-TRACK-DIGITISATION-20260904-01"
   ],
   "public_routes": {
     "CONTROL-22_EN": "/en/proceedings/gc-ref-029/",
@@ -107,7 +121,13 @@
     "CONTROL-24_EN": "/en/proceedings/gc-hc-010/",
     "CONTROL-24_ES": "/es/procedimientos/gc-hc-010/",
     "CONTROL-24-DOSSIER_EN": "/en/control-24-insolvency-judge-complaint-36-2012/",
-    "CONTROL-24-DOSSIER_ES": "/es/control-24-denuncia-juez-concurso-36-2012/"
+    "CONTROL-24-DOSSIER_ES": "/es/control-24-denuncia-juez-concurso-36-2012/",
+    "READER_DP-1901_EN": "/en/dp-1901-2026/",
+    "READER_DP-1901_ES": "/es/dp-1901-2026/",
+    "READER_DP-1956_EN": "/en/dp-1956-2026/",
+    "READER_DP-1956_ES": "/es/dp-1956-2026/",
+    "READER_CONTROL-24_EN": "/en/control-24-insolvency-judge-complaint-36-2012/",
+    "READER_CONTROL-24_ES": "/es/control-24-denuncia-juez-concurso-36-2012/"
   },
   "open_gaps": [
     "Source-certified Control-21 to DP 1901/2026 bridge",
