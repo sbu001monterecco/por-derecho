@@ -1,4 +1,11 @@
 {
+  "publication_id": "PD-REL-ONA-FX-20260903-01",
+  "owner": "Por Derecho / repository governance",
+  "current_state": "REMOTE_SOURCE",
+  "expected_routes": {
+    "es": ["es/ona-hotels-salida-concurso-36-2012/cadena-interferencia-salida-financiada/index.html"],
+    "en": ["en/ona-hotels-insolvency-exit-36-2012/funded-exit-interference-chain/index.html"]
+  },
   "release_id": "PD-REL-ONA-FX-20260903-01",
   "date": "2026-09-03",
   "purpose": "Close the publication gap between the controlled ONA funded-exit email/court corpus and the public repository/site, especially the Sep 2018-Oct 2019 causal chain.",
