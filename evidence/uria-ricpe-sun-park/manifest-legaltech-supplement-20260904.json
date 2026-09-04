@@ -1,0 +1,97 @@
+{
+  "schema": "por-derecho.evidence-manifest-supplement.v1",
+  "supplement_id": "PD-EV-URIA-LT-SUPPLEMENT-20260904",
+  "supplements": "evidence/uria-ricpe-sun-park/manifest.json",
+  "status": "PUBLIC_SAFE_WITH_OPEN_EVIDENCE",
+  "purpose": "Add canonical IDs, actors, entities, events, current-litigation links, RICPE closure evidence and visual assets omitted from the earlier manifest without rewriting its source-integrity and variant history.",
+  "controlling_boundary": "DOCUMENTED MULTI-ROLE OVERLAP — CONFLICT / CONFIDENTIALITY REVIEW REQUIRED. This supplement does not prove a professional conflict, improper information flow, conspiracy, fraud, collective knowledge or liability.",
+  "canonical_people_added": [
+    {"id":"PD-SP-P-0167","name":"Juan Francisco Falcón","capacity":"Publicly attributed Uría adviser in RICPE formation architecture","limit":"No Sun Park-specific mandate, advice, knowledge or conflict is established."},
+    {"id":"PD-SP-P-0168","name":"Juan Miguel Hernández Herrera","capacity":"Lawyer appearing/signing on the 15-May-2017 PH122 filing","limit":"Filing-specific capacity only."},
+    {"id":"PD-SP-P-0169","name":"Ángel Alonso Hernández","capacity":"Lawyer appearing/signing on the 15-May-2017 PH122 filing","limit":"Filing-specific capacity only."},
+    {"id":"PD-SP-P-0170","name":"Aitor Cohrs","capacity":"Reported HAYA interlocutor/portfolio-manager node in 2015 correspondence","limit":"Exact employer entity, authority and servicing mandate remain open."},
+    {"id":"PD-SP-P-0171","name":"Ana María Tabada Pinzón","capacity":"Reported HAYA document-pathway contact in 2015 correspondence","limit":"Native instruction, authority and recipients remain open."},
+    {"id":"PD-SP-P-0172","name":"César Guadalupe Plaza","capacity":"Local enforcement-lawyer/interlocutor node reported in 2015 correspondence","limit":"Native appearance, authority and SAREB/Bankia capacity records remain required."}
+  ],
+  "canonical_people_reconciled": [
+    {"id":"PD-SP-P-0163","name":"Javier Rubio Sanz","events":["03-Jul-2015 reported contact","15-May-2017 PH122 filing"],"limit":"Contact is not representation; the two events must be proved and analysed separately."},
+    {"id":"PD-SP-P-0164","name":"Javier González Guimaraes-Da Silva","events":["28-Apr-2015 reported HAYA→Uría pathway"],"limit":"Exact professional capacity, client, instruction and authority remain open."},
+    {"id":"PD-SP-P-0165","name":"Raimon Tagliavini Sansa","events":["29-Jan-2024 CaixaBank defence","28-Jan-2027 listed hearing"],"limit":"Current counsel role does not transfer historic knowledge or liability."},
+    {"id":"PD-SP-P-0166","name":"David García Martín","events":["29-Jan-2024 CaixaBank defence","28-Jan-2027 listed hearing"],"limit":"Current counsel role does not transfer historic knowledge or liability."}
+  ],
+  "canonical_entities_added": [
+    {"id":"PD-SP-O-0084","name":"URÍA MENÉNDEZ ABOGADOS, S.L.P.","limit":"Firm identity only; every client, lawyer, mandate and matter remains separate."},
+    {"id":"PD-SP-O-0085","name":"Haya Real Estate","limit":"Controlled historical servicing/interlocutor label; exact 2015 legal form and mandate remain open. SERVICING IS NOT TITLE."},
+    {"id":"PD-SP-O-0086","name":"Cerberus Capital Management, L.P.","limit":"Public corporate/servicing context only; no Sun Park asset-specific instruction, approval or benefit is established."},
+    {"id":"PD-SP-O-0087","name":"Banco Financiero y de Ahorros, S.A.","limit":"Historical BFA capacity remains separate from Bankia, SAREB, CaixaBank, HAYA, PH122 and CAM."}
+  ],
+  "canonical_entities_reconciled": [
+    {"id":"PD-SP-O-0021","name":"Promontoria Holding 122 B.V.","reason":"The earlier manifest contained a 2017 PH122 event but omitted PH122 as a structured entity."},
+    {"id":"PD-SP-O-0029","name":"Bankia, S.A.","reason":"Required for the upstream lender/product and downstream credit-transfer architecture."},
+    {"id":"PD-SP-O-0030","name":"SAREB","reason":"Required for the 2015 capacity distinction and credit chain."},
+    {"id":"PD-SP-O-0032","name":"CaixaBank, S.A.","reason":"Required for the current 2024→2027 Uría litigation branch."},
+    {"id":"PD-SP-O-0020","name":"RIC Private Equity Investment Partners SCR, S.A.","reason":"Required for formation advice, Sun Park presentation, 2021 certification and 2026 closure/reassessment."},
+    {"id":"PD-SP-O-0007","name":"Construcciones Acosta Matos, S.A.","reason":"Required for the credit/project/related-party perimeter while preserving company/person separation."}
+  ],
+  "events_added_or_promoted": [
+    {
+      "date":"2019-01-01/2020-01-17",
+      "event":"RICPE formation/advisory public footprint",
+      "status":"PUBLIC_SOURCE_ATTRIBUTION",
+      "proposition":"RICPE-published history/material attributes formation advice to Juan Francisco Falcón of Uría and places Acosta Matos in the founding/board perimeter.",
+      "limit":"Does not establish Sun Park-specific advice, instructions, knowledge, conflict or information flow."
+    },
+    {
+      "date":"2026-08-27",
+      "event":"RICPE Internal Information System inadmission and archive",
+      "status":"PRIMARY_CERTIFIED_CHANNEL_RECORD",
+      "proposition":"RICPE inadmitted and archived the communication without opening an internal investigation, while reserving future assessment if new concrete, objectively verifiable and relevant evidence directly connected to RICPE conduct is supplied.",
+      "limit":"The certificate does not prove who decided, what documents were actually examined, Board circulation, conflict control or preservation measures."
+    },
+    {
+      "date":"2027-01-28",
+      "event":"Listed hearing in Aweswell v CaixaBank, PO 1859/2023-9",
+      "status":"FUTURE_SCHEDULED_PROCEEDING_EVENT",
+      "proposition":"The current CaixaBank/Uría branch remains pending and contested.",
+      "limit":"No merits judgment is represented."
+    }
+  ],
+  "visual_evidence_added": [
+    {
+      "evidence_id":"PD-EV-RICPE-CLOSURE-27AUG2026",
+      "title":"RICPE ethics-channel certified resolution · public redacted derivative",
+      "public_page":"evidence/ricpe-cnmv/2026-08-27/index.html",
+      "pdf":"evidence/ricpe-cnmv/2026-08-27/RICPE_Canal_Etico_Certificado_Resolucion_27AGO2026_PUBLICO_REDACTADO.pdf",
+      "searchable_text":"evidence/ricpe-cnmv/2026-08-27/resolution.txt",
+      "page_images":[
+        "evidence/ricpe-cnmv/2026-08-27/resolution-pages-public-redacted/page-1.jpg",
+        "evidence/ricpe-cnmv/2026-08-27/resolution-pages-public-redacted/page-2.jpg",
+        "evidence/ricpe-cnmv/2026-08-27/resolution-pages-public-redacted/page-3.jpg",
+        "evidence/ricpe-cnmv/2026-08-27/resolution-pages-public-redacted/page-4.jpg",
+        "evidence/ricpe-cnmv/2026-08-27/resolution-pages-public-redacted/page-5.jpg",
+        "evidence/ricpe-cnmv/2026-08-27/resolution-pages-public-redacted/page-6.jpg"
+      ],
+      "redaction":"Private tracking identifier and unnecessary personal contact data removed; unredacted original remains under private custody.",
+      "status":"PUBLIC_COMPLETE_REDACTED_PDF_TEXT_AND_IMAGES"
+    }
+  ],
+  "image_and_binary_gaps_preserved": [
+    {"evidence":"RICPE certification · 20-Jul-2021","status":"CONNECTED_SOURCE_PDF_AND_PAGE_IMAGES_LOCATED_REPOSITORY_CANONICAL_BINARY_AND_HASH_RECONCILIATION_PENDING"},
+    {"evidence":"CAM filing · 21-Jul-2021","status":"CONNECTED_SOURCE_LOCATED_PUBLIC_REDACTED_BINARY_AND_PAGE_IMAGES_PENDING"},
+    {"evidence":"CaixaBank defence · 29-Jan-2024","status":"CURRENT_CONNECTED_AND_LEGACY_VARIANTS_REGISTERED_BYTE_LEVEL_EXPLANATION_PENDING"},
+    {"evidence":"Control 21 · 09-Jul-2026","status":"CURRENT_CONNECTED_AND_LEGACY_VARIANTS_REGISTERED_FIXED_LAYOUT_IMAGES_AND_BYTE_LEVEL_EXPLANATION_PENDING"},
+    {"evidence":"Decanato receipt · 09-Jul-2026","status":"CURRENT_CONNECTED_AND_LEGACY_VARIANTS_REGISTERED_REDACTED_CANONICAL_IMAGE_AND_BYTE_LEVEL_EXPLANATION_PENDING"},
+    {"evidence":"2015 HAYA/Uría communications","status":"NATIVE_PRIVATE_THREADS_PRESERVED_PUBLIC_REDACTED_PROPOSITION_IMAGES_PENDING; RAW_FULL_EMAIL_PUBLICATION_PROHIBITED"}
+  ],
+  "interlinks": [
+    "data/legaltech/uria-bankia-caixabank-unitary-graph-20260904.json",
+    "data/legaltech/notice-continued-conduct-matrix-20260904.json",
+    "data/canonical-discovery/review-candidates-20260904.json",
+    "data/canonical-discovery/library-evidence-selection-20260904.json",
+    "data/canonical-discovery/email-candidates-20260904.json",
+    "en/uria-menendez-sun-park/index.html",
+    "es/uria-menendez-sun-park/index.html",
+    "en/puzzle/index.html",
+    "es/puzzle/index.html"
+  ]
+}
