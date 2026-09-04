@@ -22,6 +22,7 @@
   const loadControl2224Release = () => {
     load('control-22-24-interlink-20260904.js', 'data-control-22-24-interlink-loader', '20260904a');
     load('control-22-24-search-extension-20260904.js', 'data-control-22-24-search-loader', '20260904a');
+    load('unitary-criminal-source-register-search-extension-20260904.js', 'data-unitary-criminal-source-register-search-loader', '20260904a');
   };
 
   const loadHotelFincaSystem = () => {
