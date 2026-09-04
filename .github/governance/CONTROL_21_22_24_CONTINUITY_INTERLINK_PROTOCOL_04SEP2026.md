@@ -39,7 +39,10 @@ The durable unit is not a narrative triangle that implies common liability. It i
 - **Canonical identity: one Reg. No. 24 filing record, two dated filing events.**
 - The 25 June supplement remains a distinct document/event object for provenance, hashing and evidential citation, but it is **not an autonomous complaint or proceeding**. Document identity must not be confused with procedural-record identity.
 - **Formal criminal destination/current custodian: `UNKNOWN`.**
+- **Expected/presumed competence route:** `TSJ Canarias / TSJC`, because of the judicial-capacity/competence framing and intended route. This remains an expectation/presumption, not verified reparto, receipt, docketing or custody.
+- **Active trace position:** the reporting party is asking the **Decanato / Registro y Reparto**, the **TSJC**, and the **CGPJ** to locate and confirm the post-intake route, current location/custody and procedural treatment.
 - Daily registration 24 is a reception locator, not a NIG, DP number, certified reparto, admission, dismissal, archive or merits outcome.
+- The repository may and should use the **fact of filing** as a filing/chronology/provenance fact and may likewise state that the **post-intake route remains untraced**. It must not weaken the filing fact merely because the downstream route is unresolved, and it must not strengthen the presumed TSJC route into a verified destination.
 - The combined Reg. No. 24 matter was later reported to the CGPJ within the `169/2026` control identified as `GC-GOV-019`. That later reporting does not prove the original Decanato filing's allocation, acceptance, joinder, merits treatment or outcome.
 - `GC-GOV-019` / 169/2026 and `Alzada 286/2026` remain distinct CGPJ controls/routes unless a primary source establishes a stronger procedural relation. They must not be silently merged.
 - `DIP 2/2026` and other prosecutorial routes are related but separate unless a primary source establishes a stronger procedural relation.
@@ -57,7 +60,7 @@ Every edge that could collapse two identifiers into one procedural identity must
 
 `PROVEN_SAME_RECORD_DEPENDENT_SUPPLEMENT` means that a later document/event is canonically treated as a dependent filing within the same reception/control record while retaining its own document-level provenance. It does not imply certified electronic joinder, judicial allocation, admission or merits treatment.
 
-A candidate bridge may otherwise be upgraded only when the controlled record identifies the source that proves allocation, assignment, joinder, appeal lineage or other asserted procedural identity. Shared dates, subject matter, actor overlap, receiving office or narrative sequence are insufficient by themselves.
+A candidate bridge may otherwise be upgraded only when the controlled record identifies the source that proves allocation, assignment, joinder, appeal lineage or other asserted procedural identity. Shared dates, subject matter, actor overlap, receiving office, expected competence or narrative sequence are insufficient by themselves.
 
 ## Bidirectional interlink rule
 
@@ -84,7 +87,7 @@ Control 24 must be connected to the relevant actor, capacity, event and legally 
 - the underlying `Concurso 36/2012` judicial/insolvency record;
 - Control 22 / Insolvency Administrator material and any later DP 1956/2026 bridge only at its verified evidential strength;
 - DP 1901/2026 and private-actor/CAM material only as a distinct route with typed cross-evidence;
-- `GC-GOV-019` / CGPJ 169/2026 as a later reporting/governance route;
+- `GC-GOV-019` / CGPJ 169/2026 as a later reporting/governance and current trace route;
 - `Alzada 286/2026` as a separate review control;
 - Fiscalía/DIP routes, insolvency appeals, removal/fees, active-estate and funded-exit material only through typed contextual or documentary relationships.
 
@@ -96,7 +99,7 @@ Related does not mean consolidated; shared evidence does not mean shared respons
 
 ## Search and discoverability rule
 
-The canonical machine state must remain discoverable by at least these aliases and references: `Control 21`, `Control 22`, `Control 24`, `Reg. No. 24`, `Registro n.º 24`, `daily 21`, `daily 22`, `daily 24`, `DP 1901/2026`, `DP 1956/2026`, `GC-CRI-008`, `GC-CRI-009`, `GC-REF-029`, `GC-HC-010`, `DI 169/2026`, `CGPJ 169/2026`, `Alzada 286/2026`, `DIP 2/2026`, `18 June 2026`, `25 June 2026`, `18 junio 2026`, `25 junio 2026` and `Concurso 36/2012`.
+The canonical machine state must remain discoverable by at least these aliases and references: `Control 21`, `Control 22`, `Control 24`, `Reg. No. 24`, `Registro n.º 24`, `daily 21`, `daily 22`, `daily 24`, `DP 1901/2026`, `DP 1956/2026`, `GC-CRI-008`, `GC-CRI-009`, `GC-REF-029`, `GC-HC-010`, `DI 169/2026`, `CGPJ 169/2026`, `Alzada 286/2026`, `DIP 2/2026`, `TSJ Canarias`, `TSJC`, `18 June 2026`, `25 June 2026`, `18 junio 2026`, `25 junio 2026` and `Concurso 36/2012`.
 
 Default-branch code-search failure is not proof that a public page or source object does not exist. Successor threads must use canonical files/directories and live-route verification as needed.
 
@@ -109,10 +112,13 @@ For work touching this perimeter:
 3. read `assets/data/control-21-22-24-continuity-v1.json`;
 4. inspect the latest relevant handoff under `archive/handoffs/` and the latest dated GC-HC-010 correction control;
 5. resolve `GC-HC-010` as Reg. No. 24 with both the 18 June original and 25 June dependent supplement before reasoning about later routes;
-6. re-query controlled source systems for unresolved documentary bridges instead of reconstructing them from chat memory;
-7. update canonical machine state before strengthening public narrative;
-8. propagate corrections to all reciprocal EN/ES pages, master-register/search/graph projections and continuity controls; and
-9. run `python3 scripts/validate_control_21_22_24_continuity.py` plus the repository-wide preservation/publication validators applicable to the actual changed surface.
+6. carry both status propositions: **filed through the Decanato** and **post-intake route still untraced**;
+7. preserve `TSJ Canarias / TSJC` only as the expected/presumed competence route until a primary reparto/receipt/docket/custody source proves more;
+8. preserve the active Decanato + TSJC + CGPJ trace inquiry as an open institutional action;
+9. re-query controlled source systems for unresolved documentary bridges instead of reconstructing them from chat memory;
+10. update canonical machine state before strengthening public narrative;
+11. propagate corrections to all reciprocal EN/ES pages, master-register/search/graph projections and continuity controls; and
+12. run `python3 scripts/validate_control_21_22_24_continuity.py` plus the repository-wide preservation/publication validators applicable to the actual changed surface.
 
 ## Publication boundary
 
@@ -123,6 +129,7 @@ This governance record is public-safe. It records procedural identity controls a
 1. Source-certified Control-21 → DP 1901/2026 bridge.
 2. Source-certified Control-22 → DP 1956/2026 bridge.
 3. Certified reparto/current destination/current custodian for Reg. No. 24 / Control 24.
-4. Certified electronic metadata for the 25 June Reg. No. 24 supplement, including joinder/remittal treatment.
-5. Exact CGPJ 169/2026 document nomenclature, annex reference and treatment.
-6. Canonical registration of stamped source files, transcriptions/OCR derivatives and hashes wherever not already source-controlled.
+4. Response/trace confirmation from Decanato, TSJC and CGPJ identifying the post-intake route, current location and treatment.
+5. Certified electronic metadata for the 25 June Reg. No. 24 supplement, including joinder/remittal treatment.
+6. Exact CGPJ 169/2026 document nomenclature, annex reference and treatment.
+7. Canonical registration of stamped source files, transcriptions/OCR derivatives and hashes wherever not already source-controlled.
