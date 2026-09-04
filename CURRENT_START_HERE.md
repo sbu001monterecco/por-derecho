@@ -1,11 +1,12 @@
 # CURRENT START HERE — Por Derecho
 
 **Routing status:** CURRENT 04-SEP-2026 MULTI-THREAD COLLABORATION / SINGLE-INTEGRATION CONTROL  
-**Current machine routing:** `ops/CURRENT_STATE.json`  
+**Current operational truth:** `ops/CURRENT_STATE.json`  
+**Current collaboration routing:** `ops/CURRENT_COLLABORATION_STATE.json`  
 **Control Tower / integration queue:** GitHub Issue `#1428`  
 **Mandatory coordination control:** `.github/governance/MULTI_THREAD_COLLABORATION_AND_PUBLICATION_V2_04SEP2026.md` (`PD-MTCP-20260904-01`)
 
-> **4-Sep-2026 operating rule:** every related thread first resolves current remote `main`, then reads `AGENTS.md`, the new-thread gate, `PD-MTCP-20260904-01`, `ops/CURRENT_STATE.json`, Issue #1428 and only the specialist controls materially required by its task. Related threads default to `WORKER`; parallel analysis is allowed, but only one active integration/publication lane may exist. Workers preserve structured canonical deltas and do not independently publish. Pre-control open PRs are preserved as `LEGACY_BACKLOG` until expressly reconciled/reactivated. Historical handovers remain provenance rather than competing current-state authorities.
+> **4-Sep-2026 operating rule:** every related thread first resolves current remote `main`, then reads `AGENTS.md`, the new-thread gate, `PD-MTCP-20260904-01`, `ops/CURRENT_STATE.json`, `ops/CURRENT_COLLABORATION_STATE.json`, Issue #1428 and only the specialist controls materially required by its task. Related threads default to `WORKER`; parallel analysis is allowed, but only one active integration/publication lane may exist. Workers preserve structured canonical deltas and do not independently publish. Pre-control open PRs are preserved as `LEGACY_BACKLOG` until expressly reconciled/reactivated. Historical handovers remain provenance rather than competing current-state authorities.
 
 > **Existing-thread activation:** `Por Derecho: wake up. Refresh current main, apply PD-MTCP-20260904-01, work as a worker unless you are the active integrator, preserve only your canonical delta, and do not independently publish.`
 
@@ -23,7 +24,7 @@
 For every related new or existing ChatGPT thread, repository-maintenance run, unitary redigest or continuity audit:
 
 1. **Resolve the live `main` branch first.** Never assume a checked-in SHA is still the current Git head.
-2. Read `AGENTS.md`, `.github/governance/NEW_THREAD_SCOPE_AND_CONTINUITY_GATE_02SEP2026.md`, `.github/governance/MULTI_THREAD_COLLABORATION_AND_PUBLICATION_V2_04SEP2026.md` and `ops/CURRENT_STATE.json`.
+2. Read `AGENTS.md`, `.github/governance/NEW_THREAD_SCOPE_AND_CONTINUITY_GATE_02SEP2026.md`, `.github/governance/MULTI_THREAD_COLLABORATION_AND_PUBLICATION_V2_04SEP2026.md`, `ops/CURRENT_STATE.json` and `ops/CURRENT_COLLABORATION_STATE.json`.
 3. Read Issue #1428 and the relevant task issue; determine `WORKER` versus active integrator role.
 4. Read `reports/UNITARY_CRIMINAL_FIRST_REVERSE_ENGINEERING_GAP_CLOSURE_03SEP2026.md`, `UNITARY_CRIMINAL_PROSECUTORIAL_DIGEST_03SEP2026.md` and `data/unitary-criminal-redsara-register-20260903.json` when the work touches the criminal/prosecutorial or connected Sun Park/Concurso 36/2012 perimeter.
 5. Use `CURRENT_OPERATIONAL_STATE_27AUG2026.md`, `CURRENT_HANDOVER_UNITARY_RECOVERY_27AUG2026.md`, `CURRENT_ACTIONS_360_START_HERE_27AUG2026.md`, `ops/UNITARY_360_ACTION_REGISTER_27AUG2026.json` and `CURRENT_REVERSE_ENGINEERED_DIGEST.md` as specialist/historical controls only when materially required; they no longer precede the current collaboration routing layer.
