@@ -1,0 +1,31 @@
+{
+  "manifest_version": "1.0",
+  "published_at": "2026-09-04",
+  "scope": "Uría Menéndez / RICPE / Sun Park documentary witness map",
+  "classification_rule": "A connection is not a finding of representation, conflict, breach, liability, common purpose or wrongdoing.",
+  "actors": [
+    {"id":"actor-ac-borja","name":"Francisco de Borja Rodríguez-Batllori Laffitte","role":"Administrador Concursal · Concurso 36/2012"},
+    {"id":"actor-javier-rubio-sanz","name":"Javier Rubio Sanz","role":"Uría Menéndez lawyer / documentary witness node"},
+    {"id":"actor-jose-acosta","name":"José Acosta","role":"source of attributed RICPE project representations"}
+  ],
+  "firms": [
+    {"id":"firm-uria-menendez","name":"Uría Menéndez"},
+    {"id":"firm-pwc","name":"PwC"},
+    {"id":"firm-ricpe","name":"RIC Private Equity"},
+    {"id":"firm-cam","name":"CAM / Acosta Matos perimeter"}
+  ],
+  "events": [
+    {"id":"evt-2015-07-03-ac-rubio-reported-contact","date":"2015-07-03","status":"reported-contact","statement":"A contemporaneous record reports that the Administrador Concursal had spoken with Javier Rubio Sanz of Uría Menéndez. This does not by itself establish representation, conflict or improper information flow.","links":["actor-ac-borja","actor-javier-rubio-sanz","firm-uria-menendez"]},
+    {"id":"evt-2020-11-11-ricpe-presentation","date":"2020-11-11","status":"attributed-representation","statement":"Preserved RICPE presentation materials describe Uría Menéndez Madrid and PwC in the project-processing/due-diligence architecture and attribute to José Acosta statements including 'libres de cargas' and Sun Park / €12m. Those statements are not independent proof of title or absence of charges.","links":["actor-jose-acosta","firm-uria-menendez","firm-pwc","firm-ricpe","firm-cam","project-sun-park"]},
+    {"id":"evt-2021-07-20-ricpe-certification","date":"2021-07-20","status":"primary-document","statement":"RICPE certification describes Sun Park as at a very early study/negotiation stage and says complete legal, tax, financial, technical and insurance due diligence had not yet taken place because no letter of intent had been signed.","links":["firm-ricpe","project-sun-park","doc-ricpe-cert-20210720"]},
+    {"id":"evt-2021-07-21-cam-filing","date":"2021-07-21","status":"court-filing","statement":"CAM filing supplies the RICPE certification into the relevant documentary record.","links":["firm-cam","doc-cam-filing-20210721","doc-ricpe-cert-20210720"]},
+    {"id":"evt-2026-07-09-production-request","date":"2026-07-09","status":"recovered-pre-filing-version-plus-receipt","statement":"The recovered consolidated pre-filing version requests reports/notes from Uría Menéndez, PwC and others concerning title, encumbrances, suitability, risks and the real scope of Sun Park in 2020–2021. The Decanato receipt documents reception/submission on 9 July 2026 but does not independently establish byte-for-byte identity between the recovered DOCX and the physically filed document.","links":["firm-uria-menendez","firm-pwc","firm-ricpe","project-sun-park","doc-control21-20260709","doc-receipt-20260709"]}
+  ],
+  "documents": [
+    {"id":"doc-ricpe-cert-20210720","filename":"RICPE_Certificacion_Enrique_Guerra_20JUL2021.pdf","sha256":"241928ea649933609441644567dd50cb97b87d17bafac850c90aca3bbda37b80","source_status":"preserved original binary","public_binary_mirror":"pending connector-capable binary upload","digital_summary":"Primary RICPE certification; controls the 20 July 2021 stage qualification."},
+    {"id":"doc-cam-filing-20210721","filename":"CAM_Escrito_Aporta_Certificacion_RICPE_21JUL2021.pdf","sha256":"efda379e7b2ae0bfbbd80859a42332d5aae99ccd9644a04003760158b54b05fd","source_status":"preserved original binary","public_binary_mirror":"pending connector-capable binary upload","digital_summary":"CAM filing supplying the RICPE certification."},
+    {"id":"doc-caixabank-defence","filename":"CONTESTACION.pdf","sha256":"e9cfcc7f364939bab3c796dde132ccc28e7b42e3b98470436af0e4e56eca9669","source_status":"preserved original binary","public_binary_mirror":"pending connector-capable binary upload","digital_summary":"CaixaBank defence preserved in the source bundle; not treated as proof of the 2015 contact unless a specific passage is separately identified."},
+    {"id":"doc-control21-20260709","filename":"CONTROL21_Ampliacion_JDAM_LPAM_AcostaMatos_09JUL2026_FINAL_CONSOLIDADA_PRINT_FILE_FIRMA.docx","sha256":"6741dcbfb1a2201c7773141bcfad292d101041560e599aac39178ea9530623c9","source_status":"recovered final consolidated pre-filing version","public_binary_mirror":"pending connector-capable binary upload","digital_summary":"Contains the production request for Uría Menéndez/PwC notes or reports on title, encumbrances, suitability, risks and real project scope."},
+    {"id":"doc-receipt-20260709","filename":"Ampliacion Proc.1901-2026 (CAM et al) 09JUL2026.jpeg","sha256":"fb9f9f5b65735fe0f53318d7d122801520b0968dc34a1bac4f6505f20e2ca967","source_status":"preserved receipt image","public_binary_mirror":"pending connector-capable binary upload","digital_summary":"Documents reception/submission date; does not independently establish byte-for-byte filing identity."}
+  ]
+}
