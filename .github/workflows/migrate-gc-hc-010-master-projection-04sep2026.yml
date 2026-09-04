@@ -10,6 +10,7 @@ on:
 
 permissions:
   contents: write
+  pull-requests: write
 
 concurrency:
   group: gc-hc-010-master-projection-migration
@@ -37,24 +38,37 @@ jobs:
       - name: Validate Control 21-22-24 continuity
         run: python3 scripts/validate_control_21_22_24_continuity.py
 
-      - name: Commit validated canonical/projection correction if needed
+      - name: Publish validated canonical/projection correction through PR if needed
         shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: |
           set -euo pipefail
           if git diff --quiet -- archive/PROCEEDINGS_MASTER_REGISTER.csv assets/data/proceedings-master-public-v1.json; then
             echo 'GC-HC-010 canonical row and public projection already current.'
             exit 0
           fi
+
+          branch="bot/gc-hc-010-master-projection-${GITHUB_RUN_ID}"
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git checkout -b "$branch"
           git add archive/PROCEEDINGS_MASTER_REGISTER.csv assets/data/proceedings-master-public-v1.json
           git commit -m 'Correct GC-HC-010 Reg 24 master projection'
-          git push origin HEAD:main
+          git push origin "HEAD:$branch"
+
+          gh pr create \
+            --base main \
+            --head "$branch" \
+            --title 'Correct GC-HC-010 Reg. No. 24 master projection' \
+            --body 'Deterministic generated correction produced by the validated GC-HC-010 migration. It changes the canonical GC-HC-010 row and its public projection so the filing on 18 June 2026 under Decanato daily registration 24 is preserved as fact; the 25 June supplement remains dependent within the same record; subsequent reparto/custody/outcome remain untraced; TSJC is expected/presumed only; Decanato, TSJC and CGPJ remain the active trace interfaces; and CGPJ 169/2026 remains a separate later oversight trace. No other proceeding identity or allegation is changed.'
 
       - name: Audit broader master proceedings publication
         continue-on-error: true
         run: |
           python3 scripts/audit_master_proceedings_publication.py || {
-            echo '::warning::Broader publication audit remains red on unrelated inherited site.js loader/source-attribution controls. GC-HC-010 migration, deterministic projection build, projection --check and Control 21-22-24 continuity validation already passed before the canonical commit.'
+            echo '::warning::Broader publication audit remains red on unrelated inherited site.js loader/source-attribution controls. GC-HC-010 migration and Control 21-22-24 continuity validation already passed before publication of the generated correction PR.'
             exit 1
           }
+
+# 04-SEP-2026 protected-main publication route: validated migration output must enter main through a PR.

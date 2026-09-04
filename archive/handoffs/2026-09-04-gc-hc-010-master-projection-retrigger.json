@@ -1,0 +1,8 @@
+{
+  "schema_version": "1.0.0",
+  "date": "2026-09-04",
+  "scope": "GC-HC-010 / Reg. No. 24 canonical-to-public parity",
+  "branch": "fix/retrigger-gc-hc-010-master-migration-20260904",
+  "reason": "Dedicated EN/ES page source was corrected but master CSV/public projection remained stale and continued to assert TSJC as confirmed origin/custodian.",
+  "target_state": "Filed 18 June 2026 via Decanato under daily registration 24; 25 June dependent supplement; post-intake route/status untraced; TSJC expected/presumed only; tracing active with Decanato, TSJC and CGPJ; CGPJ 169/2026 separate later oversight trace."
+}
