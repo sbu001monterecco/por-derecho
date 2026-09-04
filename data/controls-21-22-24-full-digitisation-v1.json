@@ -1,0 +1,53 @@
+{
+  "schema_version": "1.0.0",
+  "id": "PD-FULL-DIGITISATION-212224-20260904",
+  "as_of": "2026-09-04",
+  "base_main_sha": "005ca9b51eb0a4cff6ce9545d9cd4561a30450ab",
+  "public_boundary": "Every operative page is indexed and structurally represented. Raw pleadings remain private because they contain identifiers, signatures, addresses, contact data and potentially restricted material. Public pages publish public-safe structural digests rather than unredacted originals.",
+  "invariants": [
+    "Control 21 / DP 1901/2026, Control 22 / DP 1956/2026 and Control 24 are separate procedural objects.",
+    "Shared evidence and chronology do not transfer guilt, intent, knowledge or legal responsibility.",
+    "Control 24 is a Decanato intake locator, not a NIG, DP number or verified criminal-court case number.",
+    "A complaint proves that allegations were made; it does not prove their truth."
+  ],
+  "lanes": [
+    {
+      "id": "control21-dp1901",
+      "label": "Control 21 / DP 1901/2026 — private actors",
+      "current_status": "Signed providencia 12 July 2026: five-day referral to Ministerio Fiscal on admission; not itself admission or dismissal.",
+      "sources": [
+        {"role":"base_complaint","filename":"01_NEXUS_36_DENUNCIA_PENAL_ACTUALIZADA_PRESENTACION_25JUN2026.pdf","pages":69,"sha256":"cb2ea7e6a206be97e30d28e92c330f3e40ece1d18d9964b38f9a5fd05a36c3f1"},
+        {"role":"9_july_supplement","filename":"CONTROL21_Ampliacion_JDAM_LPAM_AcostaMatos_09JUL2026_FINAL_CONSOLIDADA_PRINT_FILE_FIRMA.pdf","pages":18,"sha256":"2eebdfa23d18ac5208db564d98b149f809db9f3c83273e81bf6a88190b039a7a","authority_boundary":"Contemporaneous control material supports presentation; filename alone is not filing proof."}
+      ],
+      "routes":{"es":"/es/dp-1901-2026/","en":"/en/dp-1901-2026/","full_es":"/es/digitalizacion-dp-1901-2026/","full_en":"/en/dp-1901-2026-full-digitisation/"}
+    },
+    {
+      "id": "control22-dp1956",
+      "label": "Control 22 / DP 1956/2026 — Insolvency Administrator",
+      "current_status": "Provisional dismissal communicated 21 July 2026; not an acquittal, final merits dismissal or merits exoneration.",
+      "sources": [
+        {"role":"base_complaint","filename":"01_Denuncia_Penal_AC_LPB_Sun_Park_AC-FINAL_17JUN2026.pdf","pages":55,"sha256":"b11f10e7410f922a8cd1796ea462ea7ea20d555b7308e4481f2cb23732b1002b","document_date":"2026-06-17","filing_date":"2026-06-18"}
+      ],
+      "routes":{"es":"/es/dp-1956-2026/","en":"/en/dp-1956-2026/","full_es":"/es/digitalizacion-dp-1956-2026/","full_en":"/en/dp-1956-2026-full-digitisation/"}
+    },
+    {
+      "id": "control24",
+      "label": "Control 24 — judge-related complaint",
+      "current_status": "Presented at the Dean's Office on 18 June 2026 under daily locator 24; allocation, NIG, DP number, present custodian and current judicial status remain unverified.",
+      "sources": [
+        {"role":"signed_package","pages":79,"principal_complaint_pages":31},
+        {"role":"dependent_supplement","date":"2026-06-25","pages":10,"authority_boundary":"Physical joinder reported; official electronic joinder and judicial status remain unverified."}
+      ],
+      "routes":{"es":"/es/control-24-denuncia-juez-concurso-36-2012/","en":"/en/control-24-insolvency-judge-complaint-36-2012/"}
+    }
+  ],
+  "shared_spine": [
+    "2011–2016 — Community authority, debt/vote, operation and notice",
+    "2017–June 2018 — credit/CAM entry, access/measurements, security and funded exit",
+    "7 June 2018 — alleged material change of access/control",
+    "2018–2019 — OB REM transaction, €400,000 and non-validation",
+    "2020–2021 — credit/threshold, estate condition and competition",
+    "2022 — adjudication, deed, title and economic reconciliation",
+    "2022–2026 — HNT/MYND, RIC/RICPE, operation and institutional handling"
+  ]
+}
