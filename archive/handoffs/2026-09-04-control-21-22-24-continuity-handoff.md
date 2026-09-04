@@ -40,6 +40,16 @@ A successor thread should:
 6. update machine state first if a bridge is proved/refuted;
 7. propagate the result to all reciprocal pages/registers and rerun specialist plus repository-wide validators.
 
+## Publication checkpoint
+
+- PR: `#1418` — **Publish Control 21–22–24 continuity governance**.
+- Merge SHA: `005ca9b51eb0a4cff6ce9545d9cd4561a30450ab`.
+- Remote `main` readback after merge: **verified**.
+- Specialist workflow `Control 21-22-24 continuity governance`, run `33826701811`, completed successfully on that exact merge SHA.
+- The broad `Validate audience experience` workflow failed on the merge SHA, but the same workflow also failed on the immediately preceding `main` SHA `b8ded173b06f17aaf91569f051dd11e621b139ae` (run `33824661934`). PR #1418 changed no reader-facing Pages files; this failure is therefore recorded as pre-existing repository debt outside this governance-only diff, not silently reclassified as a regression from the continuity package.
+- Publication-integrity run `33826701839` was still queued at this checkpoint. Its pending state does not override the successful specialist validation and exact `main` readback; any later material failure should be recorded by a successor checkpoint if it intersects this change surface.
+- This was a governance-only release. No claim is made that reader-facing Pages content or navigation changed as part of PR #1418.
+
 ## Finite open gaps
 
 - Prove/refute Control 21 → DP 1901/2026 from stamped intake/reparto material.
