@@ -1,0 +1,5 @@
+# Strongest publication-safe attribution
+
+**Gil Marer alleges that the relevant CaixaBank–Bankia / predecessor-lender / creditor-servicer-adviser perimeter must be investigated as a continuing economic and procedural perimeter, not as isolated institutions. The allegation is that the CaixaBank claim was captured and instrumentalised within the wider struggle for control of LPB, its assets and its insolvency outcome; that the principal alleged criminal responsibility lies first with the Administrador Concursal and extends, where evidence supports individual participation, knowledge, coordination or benefit, to JDAM, LPAM and the wider Acosta Matos perimeter, together with alleged enabling acts or omissions of the concurso judge; and that persons within the CaixaBank/Bankia/adviser perimeter may have moved from passive commercial involvement to knowing collaboration if the evidence establishes that they continued, assisted, legitimised or benefited after acquiring sufficient notice of the alleged instrumentalisation.**
+
+This is an allegation to be tested actor by actor. It is not a finding of collective guilt.

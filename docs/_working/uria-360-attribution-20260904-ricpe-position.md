@@ -1,0 +1,5 @@
+# RICPE conflict statement — attribution rule
+
+Gil Marer's public allegation is that CAM's disclosed related-party conflict and abstention were, in his view, formalistic and inadequate ('lip service') when measured against the full conduct and chronology. Publish this as **Marer's allegation/opinion**, not as established fact. Counter-evidence must remain visible: RICPE's audited accounts record disclosure, abstention and a favourable Control Unit report. The investigative question is whether the disclosure/control process was complete, independent and based on accurate information, and whether subsequent conduct supports or undermines its substance.
+
+RICPE's 27 Aug 2026 ethics-channel closure must likewise remain visible: it closed the alert at preliminary-admissibility stage without opening an internal investigation, while leaving future reconsideration possible upon new concrete evidence. Marer alleges that this response is further evidence of institutional alignment/avoidance; that characterization is his allegation, not a finding.

@@ -1,5 +1,24 @@
 {
   "schema_version": "1.0.0",
+  "publication_id": "PD-PUB-GC-HC-010-PROJECTION-20260904",
+  "current_state": "MERGED",
+  "expected_routes": {
+    "es": [
+      "es/procedimientos/gc-hc-010/index.html"
+    ],
+    "en": [
+      "en/proceedings/gc-hc-010/index.html"
+    ]
+  },
+  "owner": "Por Derecho repository governance",
+  "validation": {
+    "evidence": [
+      "Both declared bilingual GC-HC-010 routes are present in Git source.",
+      "The projection-retrigger manifest was introduced on main by commit 1877ff622c0f8c4cbd251066eb1026ad75223c12.",
+      "This repair adds only the publication-state envelope required by the repository-wide publication-integrity validator."
+    ]
+  },
+  "merge_sha": "1877ff622c0f8c4cbd251066eb1026ad75223c12",
   "control": "GC-HC-010",
   "purpose": "Retrigger deterministic master-proceedings migration after stale canonical/public projection detected",
   "expected_state": {
@@ -9,7 +28,11 @@
     "assigned_organ": "UNVERIFIED",
     "current_custodian": "UNVERIFIED",
     "tsjc_route": "EXPECTED_OR_PRESUMED_NOT_VERIFIED",
-    "trace_targets": ["Decanato", "TSJC", "CGPJ"],
+    "trace_targets": [
+      "Decanato",
+      "TSJC",
+      "CGPJ"
+    ],
     "cgpj_169_2026": "SEPARATE_LATER_OVERSIGHT_TRACE"
   },
   "publication_rule": "The filing and the unresolved traceability gap are both usable controlled facts; no unverified judicial route or outcome may be promoted to fact."
