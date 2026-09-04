@@ -1,0 +1,1012 @@
+{
+  "schema_version": "1.0.0",
+  "package_id": "PD-EVIS-SUNPARK-CONTROL-DIGITAL-2018-2022-20260904",
+  "title": "Sun Park 7 June 2018 control and subsequent digital-identity evidence register",
+  "scope": "Controlled phase-one register joining the documented 7 June 2018 material-control sequence to later Sun Park digital-identity and Google Business Profile evidence through explicit caret pointers, provenance limits, privacy controls and source-gap discipline. Sequence is contextual and does not by itself establish common authorship, causation, authority, intent, wrongdoing or liability.",
+  "governance": {
+    "control_id": "PD-EVIS-20260904-01",
+    "policy_path": ".github/governance/EVIDENCE_VISIBILITY_IMAGE_OCR_REDACTION_AND_CONTINUITY_STANDARD_04SEP2026.md",
+    "schema_path": ".github/evidence-intelligence/schemas/evidence-visibility.schema.json",
+    "visual_completeness_claim": "PARTIAL"
+  },
+  "role_continuity": {
+    "current_owner_role": "Integrator",
+    "next_owner_role": "Publication Coordinator",
+    "handoff_status": "READY",
+    "open_gap_count": 11
+  },
+  "records": [
+    {
+      "evidence_id": "PD-EVIS-SP-20180607-TAKEOVER-CONTROL",
+      "title": "7 June 2018 material-control event register",
+      "document_type": "curated event reconstruction linked to underlying photos, communications, audio/video and procedural material",
+      "source_date": "2018-06-07",
+      "languages": [
+        "es",
+        "en"
+      ],
+      "source_type": "PD_CURATED_ANALYSIS",
+      "lifecycle_status": "TEXT_EXTRACTED",
+      "provenance": {
+        "custodian_class": "Por Derecho controlled repository analysis",
+        "source_description": "Existing takeover and continuity pages reconstruct the material closure/control event from the 27 February precursor, 7 June implementation, 13 June owner notification and later condition records. The current pass does not claim that the entire native source bundle has been re-materialised and hashed in Git.",
+        "verified_or_registered_date": "2026-09-04",
+        "integrity_note": "This is a contextual event-control record, not a substitute for the underlying native evidence. It establishes the registered chronology only to the extent described by the linked sources and must not be used alone to infer crime, common authorship or authority.",
+        "parent_evidence_id": null,
+        "variant_of": null
+      },
+      "original_asset": {
+        "status": "NOT_APPLICABLE",
+        "filename": null,
+        "repository_path": null,
+        "sha256": null,
+        "size_bytes": null,
+        "pages_or_duration": null,
+        "source_reference": "evidence/sun-park-7-june-2018-chain/README.md",
+        "identity_status": "Underlying native 2018 source family remains separately governed; this record controls the event-level pointer."
+      },
+      "searchable_text": {
+        "status": "PUBLISHED",
+        "method": "controlled transcription and cross-linked page reconstruction",
+        "assets": [
+          {
+            "path": "evidence/sun-park-7-june-2018-chain/README.md",
+            "kind": "evidence-register",
+            "language": "es"
+          },
+          {
+            "path": "es/toma-control-sun-park-7-junio-2018/index.html",
+            "kind": "contextual-event-page",
+            "language": "es"
+          }
+        ],
+        "limitations": [
+          "The event page is contextual analysis and cannot validate itself without the underlying source family.",
+          "Native photos, video, audio, emails and procedural materials require item-level custody records."
+        ]
+      },
+      "visual_evidence": {
+        "status": "PARTIAL",
+        "images": [
+          {
+            "path": "assets/sunpark-condition-09jul2018.webp",
+            "kind": "public contextual image",
+            "language": "es",
+            "caption": "Repository image used by the 7 June 2018 takeover page as later physical-condition context; it is not proof of the author or cause of any damage."
+          }
+        ],
+        "rendering_rule": "Only source-derived or pre-existing repository visuals may illustrate this event. No generated reconstruction may be labelled as evidence.",
+        "limitations": [
+          "The referenced July image is later than 7 June and is contextual, not a same-day photograph of the takeover.",
+          "Image adjacency does not establish who caused the recorded physical state."
+        ]
+      },
+      "redaction": {
+        "status": "NOT_ASSESSED",
+        "reason": "Underlying native 2018 materials require item-level privacy, signature and third-party review.",
+        "sensitivity_level": "REVIEW_REQUIRED",
+        "public_version_of": null,
+        "method": null,
+        "review": {
+          "status": "PENDING",
+          "reviewer_role": "Publication Coordinator",
+          "review_date": null
+        }
+      },
+      "relations": {
+        "actors": [
+          "Francisco de Borja Rodríguez-Batllori Laffitte",
+          "Antonio Cogolludo Rojas",
+          "Juan Carlos Prieto Puente",
+          "Joan Cruz Núñez"
+        ],
+        "entities": [
+          "Sun Park",
+          "Comunidad de Propietarios Sun Park",
+          "Luchy Playa Blanca, S.L.U."
+        ],
+        "proceedings": [
+          "Concurso 36/2012"
+        ],
+        "events": [
+          "2018-02-27 security/access precursor",
+          "2018-06-07 material closure and access-control event",
+          "2018-06-13 owner notification",
+          "2018-07-09 later condition record"
+        ],
+        "pages": [
+          "es/toma-control-sun-park-7-junio-2018/index.html",
+          "es/cronologia-control-material-sun-park/index.html",
+          "es/concurso-36-2012-continuidad-gobernanza-7-junio/index.html",
+          "es/evidencia/cadena-control-sun-park-2018-2022/index.html"
+        ],
+        "parent_child": [
+          "PD-EVIS-SP-20180709-CONDITION"
+        ]
+      },
+      "publication": {
+        "status": "REGISTERED",
+        "public_routes": [
+          "es/toma-control-sun-park-7-junio-2018/index.html",
+          "es/cronologia-control-material-sun-park/index.html",
+          "es/concurso-36-2012-continuidad-gobernanza-7-junio/index.html",
+          "es/evidencia/cadena-control-sun-park-2018-2022/index.html"
+        ],
+        "evidence_page": "es/evidencia/cadena-control-sun-park-2018-2022/index.html",
+        "live_verified": false,
+        "deployed_commit": null
+      },
+      "gaps": [
+        {
+          "gap_id": "EVG-SP-2018-NATIVE-PACK",
+          "status": "OPEN",
+          "description": "The complete native 2018 takeover source family has not been itemised and re-hashed in this package.",
+          "next_action": "Recover or map every native email, photo, video, audio and procedural item to its own evidence ID before making a completeness claim.",
+          "owner_role": "Integrator"
+        }
+      ]
+    },
+    {
+      "evidence_id": "PD-EVIS-SP-20180709-CONDITION",
+      "title": "9 July 2018 Sun Park physical-condition image",
+      "document_type": "repository image / contemporaneous condition record",
+      "source_date": "2018-07-09",
+      "languages": [
+        "es"
+      ],
+      "source_type": "PD_PUBLIC_EVIDENCE",
+      "lifecycle_status": "IMAGE_RENDERED",
+      "provenance": {
+        "custodian_class": "Por Derecho public repository",
+        "source_description": "The takeover page uses assets/sunpark-condition-09jul2018.webp as a later physical-condition record during the works period.",
+        "verified_or_registered_date": "2026-09-04",
+        "integrity_note": "Repository presence of the public image is controlled here. The image can evidence visible condition at the captured time only; it does not establish who caused any condition, whether every visible feature resulted from the 7 June event, or the legal title for works.",
+        "parent_evidence_id": null,
+        "variant_of": null
+      },
+      "original_asset": {
+        "status": "PRESERVED_IN_REPOSITORY",
+        "filename": "sunpark-condition-09jul2018.webp",
+        "repository_path": "assets/sunpark-condition-09jul2018.webp",
+        "sha256": null,
+        "size_bytes": null,
+        "pages_or_duration": null,
+        "source_reference": "assets/sunpark-condition-09jul2018.webp",
+        "identity_status": "Public repository image; underlying camera original/metadata not yet tied to this package."
+      },
+      "searchable_text": {
+        "status": "PUBLISHED",
+        "method": "repository image plus contextual caption",
+        "assets": [
+          {
+            "path": "evidence/sun-park-7-june-2018-chain/README.md",
+            "kind": "evidence-register",
+            "language": "es"
+          }
+        ],
+        "limitations": [
+          "No EXIF, photographer identity or original-camera file is asserted in this package."
+        ]
+      },
+      "visual_evidence": {
+        "status": "PUBLISHED",
+        "images": [
+          {
+            "path": "assets/sunpark-condition-09jul2018.webp",
+            "kind": "source-derived/public evidence image",
+            "language": "es",
+            "caption": "Sun Park physical-condition image dated 9 July 2018 in the controlled takeover narrative."
+          }
+        ],
+        "rendering_rule": "Display the image unaltered except for necessary privacy redaction; captions must state that causation and authorship are not inferred from the pixels.",
+        "limitations": [
+          "Later condition is not same-day takeover evidence.",
+          "Visible condition does not identify an author or legal responsibility."
+        ]
+      },
+      "redaction": {
+        "status": "NOT_ASSESSED",
+        "reason": "Review image for any identifiable third-party personal data before expanded republication.",
+        "sensitivity_level": "REVIEW_REQUIRED",
+        "public_version_of": null,
+        "method": null,
+        "review": {
+          "status": "PENDING",
+          "reviewer_role": "Publication Coordinator",
+          "review_date": null
+        }
+      },
+      "relations": {
+        "actors": [],
+        "entities": [
+          "Sun Park"
+        ],
+        "proceedings": [
+          "Concurso 36/2012"
+        ],
+        "events": [
+          "2018-07-09 physical-condition record"
+        ],
+        "pages": [
+          "es/toma-control-sun-park-7-junio-2018/index.html",
+          "es/cronologia-control-material-sun-park/index.html",
+          "es/evidencia/cadena-control-sun-park-2018-2022/index.html"
+        ],
+        "parent_child": [
+          "PD-EVIS-SP-20180607-TAKEOVER-CONTROL"
+        ]
+      },
+      "publication": {
+        "status": "REGISTERED",
+        "public_routes": [
+          "es/toma-control-sun-park-7-junio-2018/index.html",
+          "es/cronologia-control-material-sun-park/index.html",
+          "es/evidencia/cadena-control-sun-park-2018-2022/index.html"
+        ],
+        "evidence_page": "es/evidencia/cadena-control-sun-park-2018-2022/index.html",
+        "live_verified": false,
+        "deployed_commit": null
+      },
+      "gaps": [
+        {
+          "gap_id": "EVG-SP-20180709-ORIGINAL",
+          "status": "OPEN",
+          "description": "The underlying camera-original file, metadata and photographer/custodian statement are not registered in this package.",
+          "next_action": "Recover the original image file and metadata, fingerprint it, and record the custodian/source chain.",
+          "owner_role": "Integrator"
+        }
+      ]
+    },
+    {
+      "evidence_id": "PD-EVIS-SP-20190606-SUNPARK264-MAIL",
+      "title": "6 June 2019 customer-facing email from SUN PARK <sunpark264@gmail.com>",
+      "document_type": "email / forwarded message thread",
+      "source_date": "2019-06-06",
+      "languages": [
+        "en"
+      ],
+      "source_type": "PD_NATIVE_PRIVATE",
+      "lifecycle_status": "TEXT_EXTRACTED",
+      "provenance": {
+        "custodian_class": "user/private archive source reviewed in conversation",
+        "source_description": "Preserved email/PDF reviewed in the evidence pass shows a message presented as SUN PARK from sunpark264@gmail.com asking a former Sun Park customer to remove belongings because the complex would be refurbished shortly.",
+        "verified_or_registered_date": "2026-09-04",
+        "integrity_note": "The message directly supports the account presentation, date, recipient-facing communication and refurbishment/removal request. It does not by itself identify who created or operated the Gmail account, who authored the text, or whether the sender had lawful authority to act for Sun Park.",
+        "parent_evidence_id": null,
+        "variant_of": null
+      },
+      "original_asset": {
+        "status": "SOURCE_PENDING",
+        "filename": "sunpark new gmail address from CAM to clients.pdf",
+        "repository_path": null,
+        "sha256": null,
+        "size_bytes": null,
+        "pages_or_duration": null,
+        "source_reference": "private archive / previously scanned source: sunpark new gmail address from CAM to clients.pdf",
+        "identity_status": "Source was reviewed, but the native message export and current byte-level hash are not in this Git package."
+      },
+      "searchable_text": {
+        "status": "PUBLISHED",
+        "method": "controlled transcription from reviewed source",
+        "assets": [
+          {
+            "path": "evidence/sun-park-7-june-2018-chain/README.md",
+            "kind": "evidence-register",
+            "language": "es"
+          }
+        ],
+        "limitations": [
+          "Public text omits the former client's name and email address.",
+          "A PDF/forwarded print view is not a substitute for native RFC822 headers."
+        ]
+      },
+      "visual_evidence": {
+        "status": "SOURCE_PENDING",
+        "images": [],
+        "rendering_rule": "Create a source-derived public image from the preserved email only after permanently redacting the former client name/email and unnecessary third-party personal data.",
+        "limitations": [
+          "Do not use AI-generated or reconstructed Gmail imagery as primary evidence.",
+          "The public derivative must retain the sender address, date and operative text while blanking the former client's identity."
+        ]
+      },
+      "redaction": {
+        "status": "REDACTION_REQUIRED",
+        "reason": "Former client identity/email and unrelated third-party details must not be published.",
+        "sensitivity_level": "PUBLIC_REDACTED",
+        "public_version_of": "private original / native export",
+        "method": "irreversible visual redaction on public derivative; preserve unredacted original separately",
+        "review": {
+          "status": "PENDING",
+          "reviewer_role": "Publication Coordinator",
+          "review_date": null
+        }
+      },
+      "relations": {
+        "actors": [],
+        "entities": [
+          "Sun Park"
+        ],
+        "proceedings": [
+          "Concurso 36/2012"
+        ],
+        "events": [
+          "2019-06-06 SUN PARK Gmail customer communication"
+        ],
+        "pages": [
+          "es/incidente-sunpark264-acostamatos-2019/index.html",
+          "es/identidad-digital-sun-park-google-mynd/index.html",
+          "es/toma-control-sun-park-7-junio-2018/index.html",
+          "es/evidencia/cadena-control-sun-park-2018-2022/index.html"
+        ],
+        "parent_child": [
+          "PD-EVIS-SP-RECOVERY-2019-DATE-OPEN"
+        ]
+      },
+      "publication": {
+        "status": "REGISTERED",
+        "public_routes": [
+          "es/incidente-sunpark264-acostamatos-2019/index.html",
+          "es/identidad-digital-sun-park-google-mynd/index.html",
+          "es/evidencia/cadena-control-sun-park-2018-2022/index.html"
+        ],
+        "evidence_page": "es/evidencia/cadena-control-sun-park-2018-2022/index.html",
+        "live_verified": false,
+        "deployed_commit": null
+      },
+      "gaps": [
+        {
+          "gap_id": "EVG-SP-20190606-NATIVE",
+          "status": "OPEN",
+          "description": "A native .eml/.mbox export with full headers is not in repository custody.",
+          "next_action": "Recover the native message export, fingerprint it, preserve headers/attachments and create a redacted public derivative.",
+          "owner_role": "Integrator"
+        },
+        {
+          "gap_id": "EVG-SP-20190606-PUBLIC-IMAGE",
+          "status": "OPEN",
+          "description": "A source-derived redacted public image is not yet registered in Git.",
+          "next_action": "Render the reviewed source after redacting the former client name/email; do not substitute a generated image.",
+          "owner_role": "Publication Coordinator"
+        }
+      ]
+    },
+    {
+      "evidence_id": "PD-EVIS-SP-RECOVERY-2019-DATE-OPEN",
+      "title": "Google account-recovery capture for sunpark264@gmail.com — source date unresolved",
+      "document_type": "Google account-recovery screen capture",
+      "source_date": null,
+      "languages": [
+        "en"
+      ],
+      "source_type": "PD_NATIVE_PRIVATE",
+      "lifecycle_status": "TEXT_EXTRACTED",
+      "provenance": {
+        "custodian_class": "user/private archive source reviewed in conversation",
+        "source_description": "Reviewed Google account-recovery capture for sunpark264@gmail.com displays a masked recovery address in a form consistent with the acostamatos.com domain. The same capture also contains a manually entered full acostamatos.com address followed by Google's error that the entered address is incorrect.",
+        "verified_or_registered_date": "2026-09-04",
+        "integrity_note": "The Google-displayed masked recovery channel supports a domain-level linkage shown by Google's UI. The manually typed full address is expressly not confirmed because Google rejected it. The capture does not identify the account operator or prove who created, accessed or used the account.",
+        "parent_evidence_id": null,
+        "variant_of": null
+      },
+      "original_asset": {
+        "status": "SOURCE_PENDING",
+        "filename": "!!!! impersonating email on SP from CAM - Sign in Rosa Maria Dorta Perdomo acostamatos.com Google accounts 8JUN2019.pdf",
+        "repository_path": null,
+        "sha256": null,
+        "size_bytes": null,
+        "pages_or_duration": null,
+        "source_reference": "private archive / previously scanned Google account-recovery capture",
+        "identity_status": "Source reviewed; native browser capture/PDF and content hash are not in Git. The visible date string and legacy filename are not silently reconciled in this register."
+      },
+      "searchable_text": {
+        "status": "PUBLISHED",
+        "method": "controlled source transcription preserving date ambiguity",
+        "assets": [
+          {
+            "path": "evidence/sun-park-7-june-2018-chain/README.md",
+            "kind": "evidence-register",
+            "language": "es"
+          }
+        ],
+        "limitations": [
+          "The visible date string and legacy filename appear inconsistent or locale-dependent; source_date remains null until resolved.",
+          "The typed full recovery address was rejected and must not be presented as Google-confirmed."
+        ]
+      },
+      "visual_evidence": {
+        "status": "SOURCE_PENDING",
+        "images": [],
+        "rendering_rule": "Publish only a source-derived crop that preserves the account name, Google's masked recovery-domain display and the rejection message; redact unnecessary personal address detail.",
+        "limitations": [
+          "Do not expose a full private recovery address if a masked/domain-level view is sufficient.",
+          "Do not reconstruct the Google screen using generated imagery and label it as evidence."
+        ]
+      },
+      "redaction": {
+        "status": "REDACTION_REQUIRED",
+        "reason": "Minimise personal recovery-address data while preserving the evidential domain-level display and Google's rejection message.",
+        "sensitivity_level": "PUBLIC_REDACTED",
+        "public_version_of": "private original capture",
+        "method": "crop/redact to masked/domain-level information; keep native original separately",
+        "review": {
+          "status": "PENDING",
+          "reviewer_role": "Publication Coordinator",
+          "review_date": null
+        }
+      },
+      "relations": {
+        "actors": [],
+        "entities": [
+          "Sun Park",
+          "Acosta Matos corporate domain"
+        ],
+        "proceedings": [
+          "Concurso 36/2012"
+        ],
+        "events": [
+          "2019 Google recovery capture for sunpark264@gmail.com"
+        ],
+        "pages": [
+          "es/incidente-sunpark264-acostamatos-2019/index.html",
+          "es/identidad-digital-sun-park-google-mynd/index.html",
+          "es/evidencia/cadena-control-sun-park-2018-2022/index.html"
+        ],
+        "parent_child": [
+          "PD-EVIS-SP-20190606-SUNPARK264-MAIL"
+        ]
+      },
+      "publication": {
+        "status": "REGISTERED",
+        "public_routes": [
+          "es/incidente-sunpark264-acostamatos-2019/index.html",
+          "es/identidad-digital-sun-park-google-mynd/index.html",
+          "es/evidencia/cadena-control-sun-park-2018-2022/index.html"
+        ],
+        "evidence_page": "es/evidencia/cadena-control-sun-park-2018-2022/index.html",
+        "live_verified": false,
+        "deployed_commit": null
+      },
+      "gaps": [
+        {
+          "gap_id": "EVG-SP-RECOVERY-DATE",
+          "status": "OPEN",
+          "description": "The capture's visible date string and the legacy source filename have not been reconciled to a single ISO source date.",
+          "next_action": "Inspect the native file metadata and original browser/PDF context; record the date only when the ambiguity is resolved.",
+          "owner_role": "Integrator"
+        },
+        {
+          "gap_id": "EVG-SP-RECOVERY-NATIVE",
+          "status": "OPEN",
+          "description": "The native capture/PDF is not currently in Git custody.",
+          "next_action": "Recover the source bytes, hash them and produce a privacy-minimised public derivative.",
+          "owner_role": "Integrator"
+        }
+      ]
+    },
+    {
+      "evidence_id": "PD-EVIS-SP-20211028-GMB-LOURDES",
+      "title": "28 October 2021 Google My Business ownership/access request naming Lourdes Castillejo",
+      "document_type": "Google My Business notification / email",
+      "source_date": "2021-10-28",
+      "languages": [
+        "en",
+        "es"
+      ],
+      "source_type": "PD_NATIVE_PRIVATE",
+      "lifecycle_status": "TEXT_EXTRACTED",
+      "provenance": {
+        "custodian_class": "user/private archive source reviewed in conversation",
+        "source_description": "Google notification reviewed in the source pass states that someone requested ownership/access of Sun Park, Playa Blanca, Lanzarote and names Lourdes Castillejo as Business owner/propietaria del negocio with mynd.hotels@gmail.com.",
+        "verified_or_registered_date": "2026-09-04",
+        "integrity_note": "The notice directly supports that Google sent an ownership/access request notification naming the person, role label and Gmail account. It does not establish legal ownership, authority to control the listing, successful transfer, coordination with any other actor or wrongdoing.",
+        "parent_evidence_id": null,
+        "variant_of": null
+      },
+      "original_asset": {
+        "status": "SOURCE_PENDING",
+        "filename": "Ownership Request of HOTEL SUN PARK by Mynd Hotels 28OCT2021.pdf",
+        "repository_path": null,
+        "sha256": null,
+        "size_bytes": null,
+        "pages_or_duration": null,
+        "source_reference": "private archive / previously scanned Google My Business notification",
+        "identity_status": "Source reviewed in full text; current binary and content hash are not registered in Git by this package."
+      },
+      "searchable_text": {
+        "status": "PUBLISHED",
+        "method": "controlled transcription from reviewed Google notification",
+        "assets": [
+          {
+            "path": "evidence/sun-park-7-june-2018-chain/README.md",
+            "kind": "evidence-register",
+            "language": "es"
+          },
+          {
+            "path": "es/incidente-lourdes-google-mynd/index.html",
+            "kind": "incident-page",
+            "language": "es"
+          }
+        ],
+        "limitations": [
+          "The source includes a phone number that is unnecessary to the public evidential point and should be redacted in public derivatives."
+        ]
+      },
+      "visual_evidence": {
+        "status": "PUBLISHED",
+        "images": [
+          {
+            "path": "assets/sunpark-digital-identity-evidence-sequence-redacted.jpg",
+            "kind": "public redacted evidence sequence",
+            "language": "es",
+            "caption": "Existing public redacted sequence used by the Lourdes/MYND incident page."
+          }
+        ],
+        "rendering_rule": "Use the existing source-derived redacted sequence or a new source-derived crop; omit unnecessary phone/personal data while preserving Google, Sun Park, Lourdes and mynd.hotels@gmail.com context.",
+        "limitations": [
+          "The image establishes the request notification, not legal entitlement or successful control."
+        ]
+      },
+      "redaction": {
+        "status": "PUBLIC_REDACTED_DERIVATIVE",
+        "reason": "Unnecessary phone/personal data should not be republished.",
+        "sensitivity_level": "PUBLIC_REDACTED",
+        "public_version_of": "private original Google notification",
+        "method": "public redacted derivative already referenced by incident page",
+        "review": {
+          "status": "APPROVED",
+          "reviewer_role": "Publication Coordinator",
+          "review_date": "2026-09-04"
+        }
+      },
+      "relations": {
+        "actors": [
+          "Lourdes Castillejo"
+        ],
+        "entities": [
+          "Sun Park",
+          "MYND Hotels / Canarian Hospitality"
+        ],
+        "proceedings": [],
+        "events": [
+          "2021-10-28 Google My Business ownership/access request"
+        ],
+        "pages": [
+          "es/incidente-lourdes-google-mynd/index.html",
+          "es/identidad-digital-sun-park-google-mynd/index.html",
+          "es/evidencia/cadena-control-sun-park-2018-2022/index.html"
+        ],
+        "parent_child": [
+          "PD-EVIS-SP-20220224-GMB-LOURDES",
+          "PD-EVIS-SP-20220620-GMB-MYND-REQUEST"
+        ]
+      },
+      "publication": {
+        "status": "REGISTERED",
+        "public_routes": [
+          "es/incidente-lourdes-google-mynd/index.html",
+          "es/identidad-digital-sun-park-google-mynd/index.html",
+          "es/evidencia/cadena-control-sun-park-2018-2022/index.html"
+        ],
+        "evidence_page": "es/evidencia/cadena-control-sun-park-2018-2022/index.html",
+        "live_verified": false,
+        "deployed_commit": null
+      },
+      "gaps": [
+        {
+          "gap_id": "EVG-SP-20211028-NATIVE",
+          "status": "OPEN",
+          "description": "The reviewed source PDF is not registered with a current repository content hash in this package.",
+          "next_action": "Recover/hash the original PDF or native message and bind the public derivative to that fingerprint.",
+          "owner_role": "Integrator"
+        }
+      ]
+    },
+    {
+      "evidence_id": "PD-EVIS-SP-20220224-GMB-LOURDES",
+      "title": "24 February 2022 Google Business ownership request naming Lourdes Castillejo as Employee",
+      "document_type": "Google Business Profile notification / email",
+      "source_date": "2022-02-24",
+      "languages": [
+        "en"
+      ],
+      "source_type": "CONNECTED_SOURCE",
+      "lifecycle_status": "TEXT_EXTRACTED",
+      "provenance": {
+        "custodian_class": "connected/library evidence register",
+        "source_description": "Controlled archive text located in the source scan records a Google notice that Lourdes Castillejo, Employee, requested ownership of the Business Profile for Sun Park, Playa Blanca, Lanzarote, using mynd.hotels@gmail.com.",
+        "verified_or_registered_date": "2026-09-04",
+        "integrity_note": "The archived text supports the existence and wording of that reported Google notice. Until the native message/PDF is recovered into repository custody, this record is not a byte-verified public original and should not be used to infer legal ownership, successful control or wrongdoing.",
+        "parent_evidence_id": null,
+        "variant_of": null
+      },
+      "original_asset": {
+        "status": "SOURCE_PENDING",
+        "filename": "GMB Mynd Hotels Ownership request - 24FEB2022.pdf",
+        "repository_path": null,
+        "sha256": null,
+        "size_bytes": null,
+        "pages_or_duration": null,
+        "source_reference": "connected archive / CONTROL_21_JUNE2026_EVIDENCE_REFERENCES",
+        "identity_status": "Indexed source text located; native source bytes and current hash not materialised into this branch."
+      },
+      "searchable_text": {
+        "status": "PUBLISHED",
+        "method": "controlled archive transcription",
+        "assets": [
+          {
+            "path": "evidence/sun-park-7-june-2018-chain/README.md",
+            "kind": "evidence-register",
+            "language": "es"
+          }
+        ],
+        "limitations": [
+          "Native source bytes are not yet in Git.",
+          "Phone number is unnecessary for public publication."
+        ]
+      },
+      "visual_evidence": {
+        "status": "SOURCE_PENDING",
+        "images": [],
+        "rendering_rule": "After native recovery, render a source-derived public crop preserving Google, Sun Park, request status, role label and mynd.hotels@gmail.com; redact unnecessary phone/personal data.",
+        "limitations": [
+          "Do not create a visual reconstruction and present it as the original Google notice."
+        ]
+      },
+      "redaction": {
+        "status": "REDACTION_REQUIRED",
+        "reason": "Unnecessary phone/personal data should be suppressed in any public derivative.",
+        "sensitivity_level": "PUBLIC_REDACTED",
+        "public_version_of": "connected/private original",
+        "method": "source-derived redaction after native recovery",
+        "review": {
+          "status": "PENDING",
+          "reviewer_role": "Publication Coordinator",
+          "review_date": null
+        }
+      },
+      "relations": {
+        "actors": [
+          "Lourdes Castillejo"
+        ],
+        "entities": [
+          "Sun Park",
+          "MYND Hotels / Canarian Hospitality"
+        ],
+        "proceedings": [],
+        "events": [
+          "2022-02-24 Google ownership request"
+        ],
+        "pages": [
+          "es/incidente-lourdes-google-mynd/index.html",
+          "es/identidad-digital-sun-park-google-mynd/index.html",
+          "es/evidencia/cadena-control-sun-park-2018-2022/index.html"
+        ],
+        "parent_child": [
+          "PD-EVIS-SP-20211028-GMB-LOURDES",
+          "PD-EVIS-SP-20220620-GMB-MYND-REQUEST"
+        ]
+      },
+      "publication": {
+        "status": "REGISTERED",
+        "public_routes": [
+          "es/incidente-lourdes-google-mynd/index.html",
+          "es/identidad-digital-sun-park-google-mynd/index.html",
+          "es/evidencia/cadena-control-sun-park-2018-2022/index.html"
+        ],
+        "evidence_page": "es/evidencia/cadena-control-sun-park-2018-2022/index.html",
+        "live_verified": false,
+        "deployed_commit": null
+      },
+      "gaps": [
+        {
+          "gap_id": "EVG-SP-20220224-NATIVE",
+          "status": "OPEN",
+          "description": "The native 24 February 2022 Google notice has not been materialised into Git custody.",
+          "next_action": "Recover the source PDF/native message, fingerprint it and then render a redacted public image.",
+          "owner_role": "Integrator"
+        }
+      ]
+    },
+    {
+      "evidence_id": "PD-EVIS-SP-20220620-GMB-MYND-REQUEST",
+      "title": "20 June 2022 Google Business Profile ownership request by MYND Hotels",
+      "document_type": "Google Business Profile notification / email",
+      "source_date": "2022-06-20",
+      "languages": [
+        "en"
+      ],
+      "source_type": "PD_NATIVE_PRIVATE",
+      "lifecycle_status": "TEXT_EXTRACTED",
+      "provenance": {
+        "custodian_class": "user/private archive source reviewed in conversation",
+        "source_description": "Reviewed Google Business notification states that MYND Hotels requested to be listed as an owner of the Sun Park, Playa Blanca, Lanzarote Business Profile and identifies mynd.hotels@gmail.com with the role label Employee.",
+        "verified_or_registered_date": "2026-09-04",
+        "integrity_note": "The notice directly supports the request, account, role label, target profile and date. It does not establish legal ownership, authority, successful transfer, account operator identity beyond the displayed label, coordination or wrongdoing.",
+        "parent_evidence_id": null,
+        "variant_of": null
+      },
+      "original_asset": {
+        "status": "SOURCE_PENDING",
+        "filename": "Ownership Request of HOTEL SUN PARK by Mynd Hotels 20JUN2022.pdf",
+        "repository_path": null,
+        "sha256": null,
+        "size_bytes": null,
+        "pages_or_duration": null,
+        "source_reference": "private archive / previously scanned Google Business Profile evidence set",
+        "identity_status": "Source pages were reviewed; original binary and current content hash are not registered in this Git package."
+      },
+      "searchable_text": {
+        "status": "PUBLISHED",
+        "method": "controlled transcription from reviewed Google notification",
+        "assets": [
+          {
+            "path": "evidence/sun-park-7-june-2018-chain/README.md",
+            "kind": "evidence-register",
+            "language": "es"
+          }
+        ],
+        "limitations": [
+          "Phone number is unnecessary to the public evidential point and should be redacted."
+        ]
+      },
+      "visual_evidence": {
+        "status": "SOURCE_PENDING",
+        "images": [],
+        "rendering_rule": "Render only from the reviewed source PDF/native message, retaining the Google request text and account while redacting unnecessary phone/personal data.",
+        "limitations": [
+          "Request does not equal approval or legal entitlement."
+        ]
+      },
+      "redaction": {
+        "status": "REDACTION_REQUIRED",
+        "reason": "Unnecessary phone/personal data should be removed from the public derivative.",
+        "sensitivity_level": "PUBLIC_REDACTED",
+        "public_version_of": "private original Google notification",
+        "method": "source-derived irreversible redaction for public display",
+        "review": {
+          "status": "PENDING",
+          "reviewer_role": "Publication Coordinator",
+          "review_date": null
+        }
+      },
+      "relations": {
+        "actors": [],
+        "entities": [
+          "Sun Park",
+          "MYND Hotels"
+        ],
+        "proceedings": [],
+        "events": [
+          "2022-06-20 Google Business Profile ownership request"
+        ],
+        "pages": [
+          "es/incidente-lourdes-google-mynd/index.html",
+          "es/identidad-digital-sun-park-google-mynd/index.html",
+          "es/adjudicacion-2022-reconstruccion-documental/index.html",
+          "es/evidencia/cadena-control-sun-park-2018-2022/index.html"
+        ],
+        "parent_child": [
+          "PD-EVIS-SP-20220620-GMB-REJECTION",
+          "PD-EVIS-SP-20220224-GMB-LOURDES"
+        ]
+      },
+      "publication": {
+        "status": "REGISTERED",
+        "public_routes": [
+          "es/incidente-lourdes-google-mynd/index.html",
+          "es/identidad-digital-sun-park-google-mynd/index.html",
+          "es/evidencia/cadena-control-sun-park-2018-2022/index.html"
+        ],
+        "evidence_page": "es/evidencia/cadena-control-sun-park-2018-2022/index.html",
+        "live_verified": false,
+        "deployed_commit": null
+      },
+      "gaps": [
+        {
+          "gap_id": "EVG-SP-20220620-REQUEST-NATIVE",
+          "status": "OPEN",
+          "description": "The reviewed source PDF/native email has not been copied and hashed into repository custody.",
+          "next_action": "Recover/hash the native source and produce a redacted public derivative.",
+          "owner_role": "Integrator"
+        }
+      ]
+    },
+    {
+      "evidence_id": "PD-EVIS-SP-20220620-GMB-REJECTION",
+      "title": "20 June 2022 Google ownership request not approved",
+      "document_type": "Google Business Profile rejection screen",
+      "source_date": "2022-06-20",
+      "languages": [
+        "en"
+      ],
+      "source_type": "PD_NATIVE_PRIVATE",
+      "lifecycle_status": "TEXT_EXTRACTED",
+      "provenance": {
+        "custodian_class": "user/private archive source reviewed in conversation",
+        "source_description": "The reviewed evidence set includes a Google Business Profile screen stating 'Ownership request not approved' and that the request concerning Sun Park, Playa Blanca, Lanzarote was rejected on Monday, 20 June 2022.",
+        "verified_or_registered_date": "2026-09-04",
+        "integrity_note": "The screen directly supports that the displayed request was not approved/rejected on the stated date. It does not establish why Google rejected it, who made every underlying account action, legal ownership of the hotel/listing, or wrongdoing.",
+        "parent_evidence_id": null,
+        "variant_of": null
+      },
+      "original_asset": {
+        "status": "SOURCE_PENDING",
+        "filename": "Ownership Request of HOTEL SUN PARK by Mynd Hotels 20JUN2022.pdf",
+        "repository_path": null,
+        "sha256": null,
+        "size_bytes": null,
+        "pages_or_duration": null,
+        "source_reference": "private archive / reviewed Google Business Profile rejection screen",
+        "identity_status": "Source screen reviewed as part of the multi-page evidence set; original binary/current content hash not yet registered in Git."
+      },
+      "searchable_text": {
+        "status": "PUBLISHED",
+        "method": "controlled transcription from reviewed Google screen",
+        "assets": [
+          {
+            "path": "evidence/sun-park-7-june-2018-chain/README.md",
+            "kind": "evidence-register",
+            "language": "es"
+          }
+        ],
+        "limitations": [
+          "No inference is made about Google's reason for rejection."
+        ]
+      },
+      "visual_evidence": {
+        "status": "SOURCE_PENDING",
+        "images": [],
+        "rendering_rule": "Render the source rejection screen directly, with only necessary privacy redactions and without modifying the operative Google wording.",
+        "limitations": [
+          "The rejection result does not resolve underlying title, authority or account-operator questions."
+        ]
+      },
+      "redaction": {
+        "status": "NONE",
+        "reason": null,
+        "sensitivity_level": "PUBLIC",
+        "public_version_of": null,
+        "method": null,
+        "review": {
+          "status": "NOT_REQUIRED",
+          "reviewer_role": null,
+          "review_date": null
+        }
+      },
+      "relations": {
+        "actors": [],
+        "entities": [
+          "Sun Park",
+          "MYND Hotels",
+          "Google Business Profile"
+        ],
+        "proceedings": [],
+        "events": [
+          "2022-06-20 Google ownership request rejected/not approved"
+        ],
+        "pages": [
+          "es/incidente-lourdes-google-mynd/index.html",
+          "es/identidad-digital-sun-park-google-mynd/index.html",
+          "es/adjudicacion-2022-reconstruccion-documental/index.html",
+          "es/evidencia/cadena-control-sun-park-2018-2022/index.html"
+        ],
+        "parent_child": [
+          "PD-EVIS-SP-20220620-GMB-MYND-REQUEST"
+        ]
+      },
+      "publication": {
+        "status": "REGISTERED",
+        "public_routes": [
+          "es/incidente-lourdes-google-mynd/index.html",
+          "es/identidad-digital-sun-park-google-mynd/index.html",
+          "es/evidencia/cadena-control-sun-park-2018-2022/index.html"
+        ],
+        "evidence_page": "es/evidencia/cadena-control-sun-park-2018-2022/index.html",
+        "live_verified": false,
+        "deployed_commit": null
+      },
+      "gaps": [
+        {
+          "gap_id": "EVG-SP-20220620-REJECTION-NATIVE",
+          "status": "OPEN",
+          "description": "The rejection screen is not yet registered as a separately hashed repository asset.",
+          "next_action": "Recover/hash the source evidence set and render the rejection page as a controlled public image.",
+          "owner_role": "Integrator"
+        }
+      ]
+    },
+    {
+      "evidence_id": "PD-EVIS-SP-LOADERS-SOURCE-GAP",
+      "title": "Claimed Loaders correspondence to Acosta Matos — native source not located",
+      "document_type": "source-gap control record",
+      "source_date": null,
+      "languages": [
+        "en",
+        "es"
+      ],
+      "source_type": "SOURCE_NOT_YET_RECOVERED",
+      "lifecycle_status": "SOURCE_PENDING",
+      "provenance": {
+        "custodian_class": "current Gmail/files scan",
+        "source_description": "The current scan searched connected Gmail and available files for a Loaders/Loaders Spain communication to Acosta Matos concerning Sun Park belongings/removal. No native email or source file was located in the current pass. Prior generated/composite imagery is expressly excluded as evidential source material.",
+        "verified_or_registered_date": "2026-09-04",
+        "integrity_note": "This record proves only that the source is currently unresolved and excluded from the proof graph. It does not establish that the claimed email existed, who sent it, who received it, what it said, or any coordination.",
+        "parent_evidence_id": null,
+        "variant_of": null
+      },
+      "original_asset": {
+        "status": "SOURCE_PENDING",
+        "filename": null,
+        "repository_path": null,
+        "sha256": null,
+        "size_bytes": null,
+        "pages_or_duration": null,
+        "source_reference": "current connected Gmail/files search; no native source recovered",
+        "identity_status": "No evidential image or transcription is admitted until a native message/file is recovered and verified."
+      },
+      "searchable_text": {
+        "status": "PENDING",
+        "method": null,
+        "assets": [],
+        "limitations": [
+          "Search terms did not recover a native message in the current pass.",
+          "Generated imagery and prompt-derived text are not admissible as the source."
+        ]
+      },
+      "visual_evidence": {
+        "status": "SOURCE_PENDING",
+        "images": [],
+        "rendering_rule": "Do not publish any simulated or generated email as evidence. If a native Loaders message is recovered, register the native source first and derive any public image from it.",
+        "limitations": [
+          "The absence of a hit in the current search is not proof that no message ever existed."
+        ]
+      },
+      "redaction": {
+        "status": "NOT_ASSESSED",
+        "reason": "Any recovered email will require recipient, client and staff privacy review.",
+        "sensitivity_level": "REVIEW_REQUIRED",
+        "public_version_of": null,
+        "method": null,
+        "review": {
+          "status": "PENDING",
+          "reviewer_role": "Publication Coordinator",
+          "review_date": null
+        }
+      },
+      "relations": {
+        "actors": [],
+        "entities": [
+          "Sun Park",
+          "Acosta Matos perimeter"
+        ],
+        "proceedings": [],
+        "events": [
+          "claimed Loaders correspondence — unresolved source gap"
+        ],
+        "pages": [
+          "es/evidencia/cadena-control-sun-park-2018-2022/index.html",
+          "es/incidente-sunpark264-acostamatos-2019/index.html"
+        ],
+        "parent_child": []
+      },
+      "publication": {
+        "status": "REGISTERED",
+        "public_routes": [
+          "es/evidencia/cadena-control-sun-park-2018-2022/index.html"
+        ],
+        "evidence_page": "es/evidencia/cadena-control-sun-park-2018-2022/index.html",
+        "live_verified": false,
+        "deployed_commit": null
+      },
+      "gaps": [
+        {
+          "gap_id": "EVG-SP-LOADERS-NATIVE",
+          "status": "OPEN",
+          "description": "No native Loaders email/source file was located in the connected Gmail/files scan.",
+          "next_action": "Recover the native email or source document from the archive; preserve full headers/attachments; then create a new evidence record rather than upgrading generated imagery.",
+          "owner_role": "Integrator"
+        }
+      ]
+    }
+  ]
+}
