@@ -15,6 +15,7 @@
   const loadControl2224Release = () => {
     load('control-22-24-interlink-20260904.js', 'data-control-22-24-interlink-loader', '20260904a');
     load('control-22-24-search-extension-20260904.js', 'data-control-22-24-search-loader', '20260904a');
+    load('controls-21-22-24-full-digitisation-20260904.js', 'data-controls-21-22-24-full-digitisation-loader', '20260904b');
   };
 
   const loadHotelFincaSystem = () => {
