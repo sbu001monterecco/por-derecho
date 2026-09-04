@@ -6,7 +6,7 @@
   "repository": "sbu001monterecco/por-derecho",
   "base_main": "56761b5fa7a06579b3db563d859d75c65fb0a0b6",
   "branch": "publish/controls-22-24-digitisation-20260904",
-  "status": "BRANCH_READY_PULL_REQUEST_PENDING",
+  "status": "PULL_REQUEST_OPEN_VALIDATION_PENDING",
   "scope": {
     "control_22": "Public-safe digest of the 18 June 2026 complaint concerning the Insolvency Administrator, preserving its distinction from the later DP 1956/2026 identity.",
     "control_24": "Public-safe digest of the 18 June 2026 judge-related complaint and the 25 June dependent supplement, preserving the absence of a confirmed official court destination or outcome.",
@@ -48,7 +48,7 @@
   ],
   "validation": {
     "workflow": ".github/workflows/validate-control-22-24.yml",
-    "status": "PENDING_PULL_REQUEST",
+    "status": "PENDING_PULL_REQUEST_CHECK",
     "checks": [
       "required release files",
       "JavaScript syntax",
@@ -61,8 +61,9 @@
       "public-safety token scan"
     ]
   },
-  "pull_request": null,
-  "pull_request_state": "NOT_OPENED",
+  "pull_request": 1413,
+  "pull_request_url": "https://github.com/sbu001monterecco/por-derecho/pull/1413",
+  "pull_request_state": "OPEN",
   "merge_commit": null,
   "pages_deployment": {
     "status": "PENDING_AFTER_MERGE",
@@ -70,7 +71,7 @@
     "deployed_sha": null
   },
   "live_verification": {
-    "repository_source": "BRANCH_ONLY",
+    "repository_source": "PULL_REQUEST_BRANCH",
     "pages_direct_http_readback": "PENDING_AFTER_MERGE",
     "search_engine_discovery": "NOT_TESTED",
     "representation_rule": "Do not describe the new public routes as independently live-verified until direct no-cache HTTP readback succeeds."
