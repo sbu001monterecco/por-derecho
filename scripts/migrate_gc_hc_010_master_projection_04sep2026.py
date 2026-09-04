@@ -1,10 +1,12 @@
 #!/usr/bin/env python3
 """One-record migration for GC-HC-010 / Reg. No. 24.
 
-This migration removes the stale TSJ-origin/current-custodian inference from the
-canonical Proceedings Master CSV, preserves Reg. No. 24 as a reception/control
-record with a dependent 25 June supplement, then regenerates the allowlisted
-public JSON projection using the repository's canonical builder.
+This migration removes the stale assertion that TSJ Canarias / TSJC is a
+verified originating organ/current custodian. It preserves the verified
+Decanato filing under Reg. No. 24, records TSJ Canarias / TSJC only as the
+expected/presumed competence route, preserves the active trace inquiry to the
+Decanato, TSJC and CGPJ, and regenerates the allowlisted public JSON projection
+using the repository's canonical builder.
 
 The script is intentionally idempotent and changes no CSV row other than
 GC-HC-010.
@@ -29,26 +31,26 @@ UPDATES = {
     "Proceeding_Class": "RECEPTION_LOCATOR_NOT_PROCEEDING",
     "Stream": "Criminal intake / judicial complaint control",
     "Geography": "Gran Canaria",
-    "Origin_Organ": "Decanato / Registro y Reparto Las Palmas",
-    "Current_Custodian": "Official destination not yet identified",
+    "Origin_Organ": "Decanato / Registro y Reparto Las Palmas (verified receiving office); TSJ Canarias / TSJC expected or presumed competence route — unconfirmed",
+    "Current_Custodian": "Unknown / untraced; confirmation requested from Decanato, TSJC and CGPJ",
     "Reference": "Daily registration no. 24 / GC-HC-010",
-    "Secondary_Reference": "Original 18/06/2026; dependent supplement 25/06/2026; later reported to CGPJ 169/2026",
+    "Secondary_Reference": "Original 18/06/2026; dependent supplement 25/06/2026; later reported to CGPJ 169/2026; presumed TSJC route not verified",
     "NIG": "",
     "Date_or_Period": "2026-06-18; 2026-06-25",
-    "Connection": "Concurso 36/2012 / judge-related complaint and dependent supplement",
-    "Object_or_Purpose": "Reception/control record for complaint/notitia concerning judicial acts; one Reg. No. 24 record with dependent supplement",
-    "Status": "Filed/presented under daily registration no. 24; formal allocation, current custodian and outcome unknown",
-    "Latest_Known_Event": "25 Jun 2026 dependent supplement presented; combined matter later reported to CGPJ within 169/2026",
-    "Appeal_or_Review": "CGPJ 169/2026 is a separate later institutional route; exact nomenclature/treatment remains to reconcile",
+    "Connection": "Concurso 36/2012 / judge-related complaint and dependent supplement / active Decanato-TSJC-CGPJ trace",
+    "Object_or_Purpose": "Reception/control record for complaint/notitia concerning judicial acts; one Reg. No. 24 record with dependent supplement; expected/presumed TSJC competence route remains unverified",
+    "Status": "Filed/presented under daily registration no. 24; subsequent reparto/destination, current custodian and outcome remain untraced / unknown",
+    "Latest_Known_Event": "25 Jun 2026 dependent supplement presented; combined matter later reported to CGPJ within 169/2026; Decanato, TSJC and CGPJ asked to trace/confirm post-intake route",
+    "Appeal_or_Review": "CGPJ 169/2026 is a separate later institutional/reporting route and trace interface; exact nomenclature/treatment remains to reconcile",
     "Parent_Master_ID": "",
     "Linked_Proceedings": "GC-GOV-019; GC-GOV-020; GC-JUD-001",
     "Source_Status": "SOURCE_PACKAGE_DIGITISED_ALLOCATION_OPEN",
     "Primary_Source_Anchor": "Signed 79-page Control 24 package SHA-256 1cae1912a20202c5f5779db07e77c7e1d3f0ae514676e07d3ace4dd56f6f76a0; 10-page supplement SHA-256 a552c10094a3bdbf21132f7083689d79bee39b8d51ed96de19090a3d638b7c48",
     "Repo_Canonical_Source": "archive/GC_HC_010_DECANATO24_CGPJ169_CORRECTION_04SEP2026.md",
-    "Open_Reference_Gap": "Certified Decanato/reparto trail; electronic joinder/remittal metadata for 25 Jun supplement; assigned organ/NIG/current status; exact CGPJ 169/2026 document treatment",
+    "Open_Reference_Gap": "Certified Decanato/reparto trail; TSJC receipt/docket/custody confirmation or refutation; Decanato/TSJC/CGPJ trace responses; electronic joinder/remittal metadata for 25 Jun supplement; assigned organ/NIG/current status; exact CGPJ 169/2026 document treatment",
     "Public_Treatment": "PUBLIC_SUMMARY_WITH_PROCEDURAL_LIMITS",
     "Last_Scan_Date": "2026-09-04",
-    "Notes": "Canonical identity: 18 Jun complaint + 25 Jun dependent supplement = one Reg. No. 24 / GC-HC-010 filing record. Supplement retains document-level provenance but is not a separate proceeding. Do not infer TSJ/TSJC origin or current custody from intended addressee/competence framing.",
+    "Notes": "Canonical identity: 18 Jun complaint + 25 Jun dependent supplement = one Reg. No. 24 / GC-HC-010 filing record. Filing through Decanato may be stated as fact. Post-intake route is untraced. TSJ Canarias / TSJC may be stated only as expected/presumed competence route until primary reparto/receipt/docket/custody evidence is obtained. Supplement retains document-level provenance but is not a separate proceeding.",
 }
 
 
@@ -85,7 +87,10 @@ def main() -> int:
         raise SystemExit(f"{TARGET_ID} row has {len(row)} fields; expected {len(header)}")
 
     current = dict(zip(header, row))
-    stale_tsj = "TSJ Canarias" in current.get("Origin_Organ", "") or "TSJ Canarias" in current.get("Current_Custodian", "")
+    stale_tsj = (
+        current.get("Origin_Organ") == "TSJ Canarias, Sala Civil y Penal"
+        or current.get("Current_Custodian") == "TSJ Canarias, Sala Civil y Penal"
+    )
     already_correct = all(current.get(key, "") == value for key, value in UPDATES.items())
 
     if not already_correct:
