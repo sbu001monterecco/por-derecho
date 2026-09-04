@@ -1,0 +1,64 @@
+{
+  "publication_id": "PD-PUB-CONTROLS-22-24-20260904-01",
+  "owner": "Por Derecho / repository governance",
+  "current_state": "PR_OPEN",
+  "control_date": "2026-09-04",
+  "publication_type": "bilingual joint digest plus dedicated Control 24 judge-complaint dossier and continuity graph",
+  "controlling_pr": 1414,
+  "expected_routes": {
+    "es": [
+      "es/controles-22-24-18-junio-2026/index.html",
+      "es/control-24-denuncia-juez-concurso-36-2012/index.html"
+    ],
+    "en": [
+      "en/controls-22-24-18-june-2026/index.html",
+      "en/control-24-judge-complaint-insolvency-36-2012/index.html"
+    ]
+  },
+  "expected_source_files": [
+    "assets/data/controls-22-24-18jun2026-v1.json",
+    "archive/CONTROLS_22_24_PUBLICATION_HANDOVER_04SEP2026.md",
+    "es/concurso-36-2012-magistrado-juez/index.html",
+    "en/insolvency-36-2012-mercantile-court-1/index.html"
+  ],
+  "procedural_identity": {
+    "control_22": {
+      "presentation_date": "2026-06-18",
+      "subject": "Insolvency Administrator own acts/omissions",
+      "later_route": "DP 1956/2026",
+      "bridge_rule": "retain source proof linking the presentation locator to the judicial proceeding",
+      "later_status_publication": "provisional dismissal communicated 2026-07-21; not final merits determination"
+    },
+    "control_24": {
+      "presentation_date": "2026-06-18",
+      "subject": "specified judicial acts and rulings in Insolvency 36/2012",
+      "nature": "complaint/notitia criminis, not a formal querella",
+      "formal_case_identifier": "UNKNOWN_PENDING_PRIMARY_CONFIRMATION",
+      "supplement_date": "2026-06-25",
+      "supplement_rule": "dependent supplement, not autonomous complaint absent official proof otherwise",
+      "querella_rule": "antecedent/documentary basis only until a specific querella and official filing proof are verified"
+    }
+  },
+  "non_fragmentation_rule": "separate proceedings; connected knowledge; coordinated preservation; individual attribution; no automatic joinder; no collective culpability",
+  "publication_boundaries": [
+    "Control 22 is not itself DP 1956/2026; the linking source is preserved.",
+    "Control 24 is not a NIG, Diligencias Previas number or formal judicial case number.",
+    "Control 24 is not published as a querella.",
+    "The 25 June supplement is not published as an autonomous complaint.",
+    "Prepared is not filed; filed is not allocated; allocated is not opened; provisional dismissal is not final merits adjudication.",
+    "Related is not joined; shared evidence is not shared responsibility.",
+    "No criminal guilt, corruption, concert or judicial prevaricación is stated as adjudicated fact.",
+    "Unknown procedural status remains unknown until changed by a primary official source."
+  ],
+  "validation": {
+    "evidence": [
+      "Source-control review of the 55-page Control 22 candidate, the 79-page signed Control 24 package and the 10-page 25 June supplement.",
+      "Bilingual route parity and reciprocal judge-page linking implemented in PR 1414.",
+      "Machine-readable continuity record and successor handover added."
+    ]
+  },
+  "live_verification": {
+    "status": "NOT_YET_CLAIMED",
+    "note": "PR_OPEN records repository publication work only. Merge, Pages deployment and direct public-edge readback remain separate states."
+  }
+}
