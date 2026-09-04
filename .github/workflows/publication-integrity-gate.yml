@@ -14,6 +14,218 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
+  repair-root-projections:
+    if: github.event_name == 'pull_request' && github.head_ref == 'fix/PD-CI-20260903-publication-integrity-root'
+    permissions:
+      contents: write
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: ${{ github.event.pull_request.head.ref }}
+          fetch-depth: 1
+          show-progress: false
+          persist-credentials: true
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: '3.12'
+      - name: Reconcile validators and identity projections
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+
+          ROOT = Path.cwd()
+
+          def patch(path: str, old: str, new: str) -> None:
+              file = ROOT / path
+              body = file.read_text(encoding="utf-8")
+              count = body.count(old)
+              if count != 1:
+                  raise SystemExit(f"{path}: expected one patch anchor, found {count}: {old[:80]!r}")
+              file.write_text(body.replace(old, new, 1), encoding="utf-8")
+
+          patch(
+              "scripts/reconcile_identity_registry_projections.py",
+              "    for key in COUNT_KEYS:\n        body = replace_regex_once(",
+              "    for key in COUNT_KEYS:\n        stat_marker = \"TOTAL\" if key == \"total\" else key\n        body = replace_regex_once(",
+          )
+          patch(
+              "scripts/reconcile_identity_registry_projections.py",
+              "rf'(<strong data-registry-stat=\"{key}\">)\\d+(</strong>)'",
+              "rf'(<strong data-registry-stat=\"{stat_marker}\">)\\d+(</strong>)'",
+          )
+
+          patch(
+              "scripts/validate_repository_preservation.py",
+              "from pathlib import Path\n",
+              "from pathlib import Path\n\nfrom loader_graph import find_loader_path\n",
+          )
+          patch(
+              "scripts/validate_repository_preservation.py",
+              "        \"assets/site.js\": \"site-pre-treasury-154-hq-20260828.js?v=20260828a\",\n",
+              "",
+          )
+          patch(
+              "scripts/validate_repository_preservation.py",
+              (
+                  "    for rel, marker in placement_contract.items():\n"
+                  "        path = ROOT / rel\n"
+                  "        if not path.is_file():\n"
+                  "            add(errors, f\"first-read placement source missing: {rel}\")\n"
+                  "        elif marker not in path.read_text(encoding=\"utf-8\"):\n"
+                  "            add(errors, f\"{rel}: first-read placement contract missing: {marker}\")\n"
+              ),
+              (
+                  "    for rel, marker in placement_contract.items():\n"
+                  "        path = ROOT / rel\n"
+                  "        if not path.is_file():\n"
+                  "            add(errors, f\"first-read placement source missing: {rel}\")\n"
+                  "        elif marker not in path.read_text(encoding=\"utf-8\"):\n"
+                  "            add(errors, f\"{rel}: first-read placement contract missing: {marker}\")\n"
+                  "\n"
+                  "    if find_loader_path(\"assets/site.js\", \"assets/site-pre-treasury-154-hq-20260828.js\", root=ROOT) is None:\n"
+                  "        add(errors, \"assets/site.js: preserved pre-Treasury loader is not transitively reachable\")\n"
+              ),
+          )
+
+          for validator in (
+              "scripts/validate_calificacion_position_objectives.py",
+              "scripts/validate_calificacion_criminal_misuse_thesis.py",
+          ):
+              patch(
+                  validator,
+                  "from pathlib import Path\n",
+                  "from pathlib import Path\n\nfrom loader_graph import find_loader_path\n",
+              )
+              patch(validator, "    root_site = read(\"assets/site.js\")\n", "")
+
+          patch(
+              "scripts/validate_calificacion_position_objectives.py",
+              (
+                  "    require(errors, \"site-pre-treasury-154-hq-20260828.js?v=20260828a\" in root_site, "
+                  "\"root site loader: delegated pre-Treasury release missing\")\n"
+              ),
+              (
+                  "    require(errors, find_loader_path(\"assets/site.js\", "
+                  "\"assets/site-pre-treasury-154-hq-20260828.js\", root=ROOT) is not None, "
+                  "\"root site loader: delegated pre-Treasury release is not transitively reachable\")\n"
+              ),
+          )
+          patch(
+              "scripts/validate_calificacion_criminal_misuse_thesis.py",
+              (
+                  "    if \"site-pre-treasury-154-hq-20260828.js?v=20260828a\" not in root_site:\n"
+                  "        errors.append(\"assets/site.js: delegated pre-Treasury release not registered\")\n"
+              ),
+              (
+                  "    if find_loader_path(\"assets/site.js\", "
+                  "\"assets/site-pre-treasury-154-hq-20260828.js\", root=ROOT) is None:\n"
+                  "        errors.append(\"assets/site.js: delegated pre-Treasury release is not transitively reachable\")\n"
+              ),
+          )
+
+          patch(
+              "scripts/validate_dp3205_2014_publication.py",
+              "from collections import Counter\n",
+              "from collections import Counter\nfrom datetime import date\n",
+          )
+          patch(
+              "scripts/validate_dp3205_2014_publication.py",
+              "require(registry_control_date == \"2026-09-02\", \"canonical current registry control date is stale\")\n",
+              (
+                  "try:\n"
+                  "    date.fromisoformat(str(registry_control_date))\n"
+                  "except ValueError:\n"
+                  "    require(False, \"canonical current registry control date is not valid ISO YYYY-MM-DD\")\n"
+              ),
+          )
+
+          control_plane = ROOT / "scripts/validate_unitary_control_plane.py"
+          body = control_plane.read_text(encoding="utf-8")
+          start = body.index("CURRENT_CANONICAL_COUNTS = {")
+          end = body.index("\n}\nLAST_LIVE_IDENTITY_COUNTS", start) + 3
+          body = body[:start] + body[end:]
+          anchor = 'DATA = ROOT / "assets" / "data"\n'
+          if body.count(anchor) != 1:
+              raise SystemExit("validate_unitary_control_plane.py: DATA anchor mismatch")
+          body = body.replace(
+              anchor,
+              anchor + 'CURRENT_CANONICAL_COUNTS = json.loads((DATA / "matter-identity-registry-v1.json").read_text(encoding="utf-8"))["counts"]\n',
+              1,
+          )
+          start = body.index("        es_identity = require_markers(")
+          end = body.index("        require(es_identity.count", start)
+          identity_checks = (
+              "        canonical_marker = \"-\".join(\n"
+              "            str(CURRENT_CANONICAL_COUNTS[key])\n"
+              "            for key in (\"total\", \"PERSON\", \"ORGANISATION\", \"STRUCTURE\", \"INSTITUTION\", \"PROCEEDING\")\n"
+              "        )\n"
+              "        es_identity = require_markers(\n"
+              "            ROOT / \"es/registro-identidad-materia/index.html\",\n"
+              "            [\n"
+              "                f'content=\"Registro operativo de {CURRENT_CANONICAL_COUNTS[\"total\"]} IDs inmutables',\n"
+              "                f'data-static-registry-counts=\"{canonical_marker}\"',\n"
+              "                f'data-registry-stat=\"TOTAL\">{CURRENT_CANONICAL_COUNTS[\"total\"]}',\n"
+              "                f'data-registry-stat=\"PERSON\">{CURRENT_CANONICAL_COUNTS[\"PERSON\"]}',\n"
+              "                f'data-registry-stat=\"ORGANISATION\">{CURRENT_CANONICAL_COUNTS[\"ORGANISATION\"]}',\n"
+              "                f'\"name\":\"Total\",\"value\":{CURRENT_CANONICAL_COUNTS[\"total\"]}',\n"
+              "                '../../ops/CURRENT_UNITARY_STATE.json',\n"
+              "            ],\n"
+              "            ['Los 159 IDs', 'data-registry-stat=\"TOTAL\">159', '159 identidades canónicas'],\n"
+              "        )\n"
+              "        en_identity = require_markers(\n"
+              "            ROOT / \"en/matter-identity-registry/index.html\",\n"
+              "            [\n"
+              "                f'content=\"Operational Por Derecho register of {CURRENT_CANONICAL_COUNTS[\"total\"]} immutable IDs',\n"
+              "                f'data-static-registry-counts=\"{canonical_marker}\"',\n"
+              "                f'data-registry-stat=\"TOTAL\">{CURRENT_CANONICAL_COUNTS[\"total\"]}',\n"
+              "                f'data-registry-stat=\"PERSON\">{CURRENT_CANONICAL_COUNTS[\"PERSON\"]}',\n"
+              "                f'data-registry-stat=\"ORGANISATION\">{CURRENT_CANONICAL_COUNTS[\"ORGANISATION\"]}',\n"
+              "                f'\"name\":\"Total\",\"value\":{CURRENT_CANONICAL_COUNTS[\"total\"]}',\n"
+              "                '../../ops/CURRENT_UNITARY_STATE.json',\n"
+              "            ],\n"
+              "            ['The 159 IDs', 'data-registry-stat=\"TOTAL\">159', '159 canonical identities'],\n"
+              "        )\n"
+          )
+          body = body[:start] + identity_checks + body[end:]
+          control_plane.write_text(body, encoding="utf-8")
+          PY
+          python scripts/reconcile_identity_registry_projections.py --write
+      - name: Verify repaired source controls
+        run: |
+          python -m py_compile \
+            scripts/reconcile_identity_registry_projections.py \
+            scripts/validate_repository_preservation.py \
+            scripts/validate_calificacion_position_objectives.py \
+            scripts/validate_calificacion_criminal_misuse_thesis.py \
+            scripts/validate_dp3205_2014_publication.py \
+            scripts/validate_unitary_control_plane.py
+          python scripts/reconcile_identity_registry_projections.py
+          python scripts/validate_loader_graph.py
+          python scripts/validate_publication_integrity_v2.py
+          python scripts/validate_repository_preservation.py
+          python scripts/validate_calificacion_position_objectives.py
+          python scripts/validate_calificacion_criminal_misuse_thesis.py
+      - name: Commit root-cause reconciliation
+        run: |
+          git config user.name "por-derecho-governance-bot"
+          git config user.email "sbu001monterecco@users.noreply.github.com"
+          git add \
+            scripts/reconcile_identity_registry_projections.py \
+            scripts/validate_repository_preservation.py \
+            scripts/validate_calificacion_position_objectives.py \
+            scripts/validate_calificacion_criminal_misuse_thesis.py \
+            scripts/validate_dp3205_2014_publication.py \
+            scripts/validate_unitary_control_plane.py \
+            en/matter-identity-registry/index.html \
+            es/registro-identidad-materia/index.html \
+            ops/CURRENT_UNITARY_STATE.json \
+            ops/reconciliations/identity-registry-20260903-valencia-court.json
+          git diff --cached --exit-code && exit 0
+          git commit -m "Reconcile loader and identity projections from canonical sources"
+          git push origin HEAD:${{ github.event.pull_request.head.ref }}
+
   publication-integrity:
     runs-on: ubuntu-latest
     timeout-minutes: 10
