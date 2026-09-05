@@ -71,7 +71,7 @@
   ],
   "output_sha256": {
     "assets/cnmv-interim-measures-20260905.css": "fdc7885fc8dbef35474a7578298ac9e7a10d6f953010621c7683542bff033cdb",
-    "assets/cnmv-interim-measures-20260905.js": "89c4e09b054710d488fa6da23bfe080d8462866211263cd704fb5c1f4dab0bcb",
+    "assets/cnmv-interim-measures-20260905.js": "7adfa56e18dfc3c4e9e66de6314837f095d05d4b9758674edc10db623d45e846",
     "en/authorities-duties-asset-recovery/index.html": "4f6d8877a6d7de66ffb135c69f3682701c37a7bf09f2d153ccc5d2b19430f9fc",
     "es/autoridades-deberes-recuperacion-activos/index.html": "1628c966ac6cc6b5fb044da41419082e424c720faa8a8e99ba4ee3eba87361bd",
     "en/cnmv-ricpe-verification/index.html": "33486766200bba3ba34baf42a4ecf15b973e3fac062fa13fa53ce322a8f4f1c6",
@@ -93,7 +93,7 @@
     "en/fti-touristik-meeting-point-insolvency-preinsolvency-bluesea/index.html": "59671e24079c9be3065761f674cd546090bcbd4446005560b1c60e14cc6484be",
     "es/fti-touristik-meeting-point-insolvencia-preconcurso-bluesea/index.html": "8770c32cb5edf377fcd442365e4f8ec16a423dc4ca8ee830e631c04313bd9414",
     "ASSET_RECOVERY_AUTHORITY_MATRIX_21AUG2026.json": "bbb6464fddfb9efef6db10c06853cfaa367061c4de72d3d4c2cc71353380ed58",
-    "publication-manifests/cnmv-interim-measures-20260905.json": "ce436949abdb405f640dc275d5da5272cba0ca36afa4999c9e233ab4c931d3da"
+    "publication-manifests/cnmv-interim-measures-20260905.json": "aca8d2e9400a79006cea28615e0f58c3c94ef8f33cd80b3bf61898fa408a8375"
   },
   "limits": [
     "No universal historical completeness or case-jurisdiction claim",

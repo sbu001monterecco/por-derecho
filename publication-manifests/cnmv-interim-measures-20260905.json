@@ -3,7 +3,7 @@
   "publication_id": "PD-CNMV-INTERIM-20260905-01",
   "owner": "Por Derecho scoped CNMV integration",
   "control_date": "2026-09-05",
-  "current_state": "PREPARED",
+  "current_state": "PREPARED_PENDING_MERGE",
   "title": "CNMV interim measures, lawful publicity and criminal asset-recovery guide",
   "source_base_sha": "66003743d2cb3a1807c1f3765c530bf639857da3",
   "head_branch": "integration/cnmv-interim-measures-20260905",
