@@ -1,0 +1,687 @@
+{
+  "control_id": "PD-CAJASIETE-BOARD-VISUALS-20260905",
+  "base_url": "http://127.0.0.1:8873/por-derecho/",
+  "scope": "Two CajaSiete routes, three engines, two widths, JavaScript on/off; new reader, original commercial anchor, image loading and page error observations. Not a whole-site or legal-proof certificate.",
+  "expected_cases": 24,
+  "cases": [
+    {
+      "engine": "chromium",
+      "width": 390,
+      "javascript": true,
+      "route": "es/cajasiete-sun-park-financiacion-comparabilidad/",
+      "status": "PASS",
+      "page_errors": [],
+      "images": [
+        {
+          "complete": true,
+          "width": 1080,
+          "height": 1640,
+          "source": "http://127.0.0.1:8873/por-derecho/assets/media/cajasiete-board-1-es-20260905.png"
+        },
+        {
+          "complete": true,
+          "width": 1080,
+          "height": 1740,
+          "source": "http://127.0.0.1:8873/por-derecho/assets/media/cajasiete-board-2-es-20260905.png"
+        },
+        {
+          "complete": true,
+          "width": 1080,
+          "height": 1640,
+          "source": "http://127.0.0.1:8873/por-derecho/assets/media/cajasiete-board-3-es-20260905.png"
+        }
+      ]
+    },
+    {
+      "engine": "chromium",
+      "width": 390,
+      "javascript": true,
+      "route": "en/cajasiete-sun-park-financing-comparability/",
+      "status": "PASS",
+      "page_errors": [],
+      "images": [
+        {
+          "complete": true,
+          "width": 1080,
+          "height": 1640,
+          "source": "http://127.0.0.1:8873/por-derecho/assets/media/cajasiete-board-1-en-20260905.png"
+        },
+        {
+          "complete": true,
+          "width": 1080,
+          "height": 1740,
+          "source": "http://127.0.0.1:8873/por-derecho/assets/media/cajasiete-board-2-en-20260905.png"
+        },
+        {
+          "complete": true,
+          "width": 1080,
+          "height": 1640,
+          "source": "http://127.0.0.1:8873/por-derecho/assets/media/cajasiete-board-3-en-20260905.png"
+        }
+      ]
+    },
+    {
+      "engine": "chromium",
+      "width": 390,
+      "javascript": false,
+      "route": "es/cajasiete-sun-park-financiacion-comparabilidad/",
+      "status": "PASS",
+      "page_errors": [],
+      "images": [
+        {
+          "complete": true,
+          "width": 1080,
+          "height": 1640,
+          "source": "http://127.0.0.1:8873/por-derecho/assets/media/cajasiete-board-1-es-20260905.png"
+        },
+        {
+          "complete": true,
+          "width": 1080,
+          "height": 1740,
+          "source": "http://127.0.0.1:8873/por-derecho/assets/media/cajasiete-board-2-es-20260905.png"
+        },
+        {
+          "complete": true,
+          "width": 1080,
+          "height": 1640,
+          "source": "http://127.0.0.1:8873/por-derecho/assets/media/cajasiete-board-3-es-20260905.png"
+        }
+      ]
+    },
+    {
+      "engine": "chromium",
+      "width": 390,
+      "javascript": false,
+      "route": "en/cajasiete-sun-park-financing-comparability/",
+      "status": "PASS",
+      "page_errors": [],
+      "images": [
+        {
+          "complete": true,
+          "width": 1080,
+          "height": 1640,
+          "source": "http://127.0.0.1:8873/por-derecho/assets/media/cajasiete-board-1-en-20260905.png"
+        },
+        {
+          "complete": true,
+          "width": 1080,
+          "height": 1740,
+          "source": "http://127.0.0.1:8873/por-derecho/assets/media/cajasiete-board-2-en-20260905.png"
+        },
+        {
+          "complete": true,
+          "width": 1080,
+          "height": 1640,
+          "source": "http://127.0.0.1:8873/por-derecho/assets/media/cajasiete-board-3-en-20260905.png"
+        }
+      ]
+    },
+    {
+      "engine": "chromium",
+      "width": 1280,
+      "javascript": true,
+      "route": "es/cajasiete-sun-park-financiacion-comparabilidad/",
+      "status": "PASS",
+      "page_errors": [],
+      "images": [
+        {
+          "complete": true,
+          "width": 1080,
+          "height": 1640,
+          "source": "http://127.0.0.1:8873/por-derecho/assets/media/cajasiete-board-1-es-20260905.png"
+        },
+        {
+          "complete": true,
+          "width": 1080,
+          "height": 1740,
+          "source": "http://127.0.0.1:8873/por-derecho/assets/media/cajasiete-board-2-es-20260905.png"
+        },
+        {
+          "complete": true,
+          "width": 1080,
+          "height": 1640,
+          "source": "http://127.0.0.1:8873/por-derecho/assets/media/cajasiete-board-3-es-20260905.png"
+        }
+      ]
+    },
+    {
+      "engine": "chromium",
+      "width": 1280,
+      "javascript": true,
+      "route": "en/cajasiete-sun-park-financing-comparability/",
+      "status": "PASS",
+      "page_errors": [],
+      "images": [
+        {
+          "complete": true,
+          "width": 1080,
+          "height": 1640,
+          "source": "http://127.0.0.1:8873/por-derecho/assets/media/cajasiete-board-1-en-20260905.png"
+        },
+        {
+          "complete": true,
+          "width": 1080,
+          "height": 1740,
+          "source": "http://127.0.0.1:8873/por-derecho/assets/media/cajasiete-board-2-en-20260905.png"
+        },
+        {
+          "complete": true,
+          "width": 1080,
+          "height": 1640,
+          "source": "http://127.0.0.1:8873/por-derecho/assets/media/cajasiete-board-3-en-20260905.png"
+        }
+      ]
+    },
+    {
+      "engine": "chromium",
+      "width": 1280,
+      "javascript": false,
+      "route": "es/cajasiete-sun-park-financiacion-comparabilidad/",
+      "status": "PASS",
+      "page_errors": [],
+      "images": [
+        {
+          "complete": true,
+          "width": 1080,
+          "height": 1640,
+          "source": "http://127.0.0.1:8873/por-derecho/assets/media/cajasiete-board-1-es-20260905.png"
+        },
+        {
+          "complete": true,
+          "width": 1080,
+          "height": 1740,
+          "source": "http://127.0.0.1:8873/por-derecho/assets/media/cajasiete-board-2-es-20260905.png"
+        },
+        {
+          "complete": true,
+          "width": 1080,
+          "height": 1640,
+          "source": "http://127.0.0.1:8873/por-derecho/assets/media/cajasiete-board-3-es-20260905.png"
+        }
+      ]
+    },
+    {
+      "engine": "chromium",
+      "width": 1280,
+      "javascript": false,
+      "route": "en/cajasiete-sun-park-financing-comparability/",
+      "status": "PASS",
+      "page_errors": [],
+      "images": [
+        {
+          "complete": true,
+          "width": 1080,
+          "height": 1640,
+          "source": "http://127.0.0.1:8873/por-derecho/assets/media/cajasiete-board-1-en-20260905.png"
+        },
+        {
+          "complete": true,
+          "width": 1080,
+          "height": 1740,
+          "source": "http://127.0.0.1:8873/por-derecho/assets/media/cajasiete-board-2-en-20260905.png"
+        },
+        {
+          "complete": true,
+          "width": 1080,
+          "height": 1640,
+          "source": "http://127.0.0.1:8873/por-derecho/assets/media/cajasiete-board-3-en-20260905.png"
+        }
+      ]
+    },
+    {
+      "engine": "firefox",
+      "width": 390,
+      "javascript": true,
+      "route": "es/cajasiete-sun-park-financiacion-comparabilidad/",
+      "status": "PASS",
+      "page_errors": [],
+      "images": [
+        {
+          "complete": true,
+          "width": 1080,
+          "height": 1640,
+          "source": "http://127.0.0.1:8873/por-derecho/assets/media/cajasiete-board-1-es-20260905.png"
+        },
+        {
+          "complete": true,
+          "width": 1080,
+          "height": 1740,
+          "source": "http://127.0.0.1:8873/por-derecho/assets/media/cajasiete-board-2-es-20260905.png"
+        },
+        {
+          "complete": true,
+          "width": 1080,
+          "height": 1640,
+          "source": "http://127.0.0.1:8873/por-derecho/assets/media/cajasiete-board-3-es-20260905.png"
+        }
+      ]
+    },
+    {
+      "engine": "firefox",
+      "width": 390,
+      "javascript": true,
+      "route": "en/cajasiete-sun-park-financing-comparability/",
+      "status": "PASS",
+      "page_errors": [],
+      "images": [
+        {
+          "complete": true,
+          "width": 1080,
+          "height": 1640,
+          "source": "http://127.0.0.1:8873/por-derecho/assets/media/cajasiete-board-1-en-20260905.png"
+        },
+        {
+          "complete": true,
+          "width": 1080,
+          "height": 1740,
+          "source": "http://127.0.0.1:8873/por-derecho/assets/media/cajasiete-board-2-en-20260905.png"
+        },
+        {
+          "complete": true,
+          "width": 1080,
+          "height": 1640,
+          "source": "http://127.0.0.1:8873/por-derecho/assets/media/cajasiete-board-3-en-20260905.png"
+        }
+      ]
+    },
+    {
+      "engine": "firefox",
+      "width": 390,
+      "javascript": false,
+      "route": "es/cajasiete-sun-park-financiacion-comparabilidad/",
+      "status": "PASS",
+      "page_errors": [],
+      "images": [
+        {
+          "complete": true,
+          "width": 1080,
+          "height": 1640,
+          "source": "http://127.0.0.1:8873/por-derecho/assets/media/cajasiete-board-1-es-20260905.png"
+        },
+        {
+          "complete": true,
+          "width": 1080,
+          "height": 1740,
+          "source": "http://127.0.0.1:8873/por-derecho/assets/media/cajasiete-board-2-es-20260905.png"
+        },
+        {
+          "complete": true,
+          "width": 1080,
+          "height": 1640,
+          "source": "http://127.0.0.1:8873/por-derecho/assets/media/cajasiete-board-3-es-20260905.png"
+        }
+      ]
+    },
+    {
+      "engine": "firefox",
+      "width": 390,
+      "javascript": false,
+      "route": "en/cajasiete-sun-park-financing-comparability/",
+      "status": "PASS",
+      "page_errors": [],
+      "images": [
+        {
+          "complete": true,
+          "width": 1080,
+          "height": 1640,
+          "source": "http://127.0.0.1:8873/por-derecho/assets/media/cajasiete-board-1-en-20260905.png"
+        },
+        {
+          "complete": true,
+          "width": 1080,
+          "height": 1740,
+          "source": "http://127.0.0.1:8873/por-derecho/assets/media/cajasiete-board-2-en-20260905.png"
+        },
+        {
+          "complete": true,
+          "width": 1080,
+          "height": 1640,
+          "source": "http://127.0.0.1:8873/por-derecho/assets/media/cajasiete-board-3-en-20260905.png"
+        }
+      ]
+    },
+    {
+      "engine": "firefox",
+      "width": 1280,
+      "javascript": true,
+      "route": "es/cajasiete-sun-park-financiacion-comparabilidad/",
+      "status": "PASS",
+      "page_errors": [],
+      "images": [
+        {
+          "complete": true,
+          "width": 1080,
+          "height": 1640,
+          "source": "http://127.0.0.1:8873/por-derecho/assets/media/cajasiete-board-1-es-20260905.png"
+        },
+        {
+          "complete": true,
+          "width": 1080,
+          "height": 1740,
+          "source": "http://127.0.0.1:8873/por-derecho/assets/media/cajasiete-board-2-es-20260905.png"
+        },
+        {
+          "complete": true,
+          "width": 1080,
+          "height": 1640,
+          "source": "http://127.0.0.1:8873/por-derecho/assets/media/cajasiete-board-3-es-20260905.png"
+        }
+      ]
+    },
+    {
+      "engine": "firefox",
+      "width": 1280,
+      "javascript": true,
+      "route": "en/cajasiete-sun-park-financing-comparability/",
+      "status": "PASS",
+      "page_errors": [],
+      "images": [
+        {
+          "complete": true,
+          "width": 1080,
+          "height": 1640,
+          "source": "http://127.0.0.1:8873/por-derecho/assets/media/cajasiete-board-1-en-20260905.png"
+        },
+        {
+          "complete": true,
+          "width": 1080,
+          "height": 1740,
+          "source": "http://127.0.0.1:8873/por-derecho/assets/media/cajasiete-board-2-en-20260905.png"
+        },
+        {
+          "complete": true,
+          "width": 1080,
+          "height": 1640,
+          "source": "http://127.0.0.1:8873/por-derecho/assets/media/cajasiete-board-3-en-20260905.png"
+        }
+      ]
+    },
+    {
+      "engine": "firefox",
+      "width": 1280,
+      "javascript": false,
+      "route": "es/cajasiete-sun-park-financiacion-comparabilidad/",
+      "status": "PASS",
+      "page_errors": [],
+      "images": [
+        {
+          "complete": true,
+          "width": 1080,
+          "height": 1640,
+          "source": "http://127.0.0.1:8873/por-derecho/assets/media/cajasiete-board-1-es-20260905.png"
+        },
+        {
+          "complete": true,
+          "width": 1080,
+          "height": 1740,
+          "source": "http://127.0.0.1:8873/por-derecho/assets/media/cajasiete-board-2-es-20260905.png"
+        },
+        {
+          "complete": true,
+          "width": 1080,
+          "height": 1640,
+          "source": "http://127.0.0.1:8873/por-derecho/assets/media/cajasiete-board-3-es-20260905.png"
+        }
+      ]
+    },
+    {
+      "engine": "firefox",
+      "width": 1280,
+      "javascript": false,
+      "route": "en/cajasiete-sun-park-financing-comparability/",
+      "status": "PASS",
+      "page_errors": [],
+      "images": [
+        {
+          "complete": true,
+          "width": 1080,
+          "height": 1640,
+          "source": "http://127.0.0.1:8873/por-derecho/assets/media/cajasiete-board-1-en-20260905.png"
+        },
+        {
+          "complete": true,
+          "width": 1080,
+          "height": 1740,
+          "source": "http://127.0.0.1:8873/por-derecho/assets/media/cajasiete-board-2-en-20260905.png"
+        },
+        {
+          "complete": true,
+          "width": 1080,
+          "height": 1640,
+          "source": "http://127.0.0.1:8873/por-derecho/assets/media/cajasiete-board-3-en-20260905.png"
+        }
+      ]
+    },
+    {
+      "engine": "webkit",
+      "width": 390,
+      "javascript": true,
+      "route": "es/cajasiete-sun-park-financiacion-comparabilidad/",
+      "status": "PASS",
+      "page_errors": [],
+      "images": [
+        {
+          "complete": true,
+          "width": 1080,
+          "height": 1640,
+          "source": "http://127.0.0.1:8873/por-derecho/assets/media/cajasiete-board-1-es-20260905.png"
+        },
+        {
+          "complete": true,
+          "width": 1080,
+          "height": 1740,
+          "source": "http://127.0.0.1:8873/por-derecho/assets/media/cajasiete-board-2-es-20260905.png"
+        },
+        {
+          "complete": true,
+          "width": 1080,
+          "height": 1640,
+          "source": "http://127.0.0.1:8873/por-derecho/assets/media/cajasiete-board-3-es-20260905.png"
+        }
+      ]
+    },
+    {
+      "engine": "webkit",
+      "width": 390,
+      "javascript": true,
+      "route": "en/cajasiete-sun-park-financing-comparability/",
+      "status": "PASS",
+      "page_errors": [],
+      "images": [
+        {
+          "complete": true,
+          "width": 1080,
+          "height": 1640,
+          "source": "http://127.0.0.1:8873/por-derecho/assets/media/cajasiete-board-1-en-20260905.png"
+        },
+        {
+          "complete": true,
+          "width": 1080,
+          "height": 1740,
+          "source": "http://127.0.0.1:8873/por-derecho/assets/media/cajasiete-board-2-en-20260905.png"
+        },
+        {
+          "complete": true,
+          "width": 1080,
+          "height": 1640,
+          "source": "http://127.0.0.1:8873/por-derecho/assets/media/cajasiete-board-3-en-20260905.png"
+        }
+      ]
+    },
+    {
+      "engine": "webkit",
+      "width": 390,
+      "javascript": false,
+      "route": "es/cajasiete-sun-park-financiacion-comparabilidad/",
+      "status": "PASS",
+      "page_errors": [],
+      "images": [
+        {
+          "complete": true,
+          "width": 1080,
+          "height": 1640,
+          "source": "http://127.0.0.1:8873/por-derecho/assets/media/cajasiete-board-1-es-20260905.png"
+        },
+        {
+          "complete": true,
+          "width": 1080,
+          "height": 1740,
+          "source": "http://127.0.0.1:8873/por-derecho/assets/media/cajasiete-board-2-es-20260905.png"
+        },
+        {
+          "complete": true,
+          "width": 1080,
+          "height": 1640,
+          "source": "http://127.0.0.1:8873/por-derecho/assets/media/cajasiete-board-3-es-20260905.png"
+        }
+      ]
+    },
+    {
+      "engine": "webkit",
+      "width": 390,
+      "javascript": false,
+      "route": "en/cajasiete-sun-park-financing-comparability/",
+      "status": "PASS",
+      "page_errors": [],
+      "images": [
+        {
+          "complete": true,
+          "width": 1080,
+          "height": 1640,
+          "source": "http://127.0.0.1:8873/por-derecho/assets/media/cajasiete-board-1-en-20260905.png"
+        },
+        {
+          "complete": true,
+          "width": 1080,
+          "height": 1740,
+          "source": "http://127.0.0.1:8873/por-derecho/assets/media/cajasiete-board-2-en-20260905.png"
+        },
+        {
+          "complete": true,
+          "width": 1080,
+          "height": 1640,
+          "source": "http://127.0.0.1:8873/por-derecho/assets/media/cajasiete-board-3-en-20260905.png"
+        }
+      ]
+    },
+    {
+      "engine": "webkit",
+      "width": 1280,
+      "javascript": true,
+      "route": "es/cajasiete-sun-park-financiacion-comparabilidad/",
+      "status": "PASS",
+      "page_errors": [],
+      "images": [
+        {
+          "complete": true,
+          "width": 1080,
+          "height": 1640,
+          "source": "http://127.0.0.1:8873/por-derecho/assets/media/cajasiete-board-1-es-20260905.png"
+        },
+        {
+          "complete": true,
+          "width": 1080,
+          "height": 1740,
+          "source": "http://127.0.0.1:8873/por-derecho/assets/media/cajasiete-board-2-es-20260905.png"
+        },
+        {
+          "complete": true,
+          "width": 1080,
+          "height": 1640,
+          "source": "http://127.0.0.1:8873/por-derecho/assets/media/cajasiete-board-3-es-20260905.png"
+        }
+      ]
+    },
+    {
+      "engine": "webkit",
+      "width": 1280,
+      "javascript": true,
+      "route": "en/cajasiete-sun-park-financing-comparability/",
+      "status": "PASS",
+      "page_errors": [],
+      "images": [
+        {
+          "complete": true,
+          "width": 1080,
+          "height": 1640,
+          "source": "http://127.0.0.1:8873/por-derecho/assets/media/cajasiete-board-1-en-20260905.png"
+        },
+        {
+          "complete": true,
+          "width": 1080,
+          "height": 1740,
+          "source": "http://127.0.0.1:8873/por-derecho/assets/media/cajasiete-board-2-en-20260905.png"
+        },
+        {
+          "complete": true,
+          "width": 1080,
+          "height": 1640,
+          "source": "http://127.0.0.1:8873/por-derecho/assets/media/cajasiete-board-3-en-20260905.png"
+        }
+      ]
+    },
+    {
+      "engine": "webkit",
+      "width": 1280,
+      "javascript": false,
+      "route": "es/cajasiete-sun-park-financiacion-comparabilidad/",
+      "status": "PASS",
+      "page_errors": [],
+      "images": [
+        {
+          "complete": true,
+          "width": 1080,
+          "height": 1640,
+          "source": "http://127.0.0.1:8873/por-derecho/assets/media/cajasiete-board-1-es-20260905.png"
+        },
+        {
+          "complete": true,
+          "width": 1080,
+          "height": 1740,
+          "source": "http://127.0.0.1:8873/por-derecho/assets/media/cajasiete-board-2-es-20260905.png"
+        },
+        {
+          "complete": true,
+          "width": 1080,
+          "height": 1640,
+          "source": "http://127.0.0.1:8873/por-derecho/assets/media/cajasiete-board-3-es-20260905.png"
+        }
+      ]
+    },
+    {
+      "engine": "webkit",
+      "width": 1280,
+      "javascript": false,
+      "route": "en/cajasiete-sun-park-financing-comparability/",
+      "status": "PASS",
+      "page_errors": [],
+      "images": [
+        {
+          "complete": true,
+          "width": 1080,
+          "height": 1640,
+          "source": "http://127.0.0.1:8873/por-derecho/assets/media/cajasiete-board-1-en-20260905.png"
+        },
+        {
+          "complete": true,
+          "width": 1080,
+          "height": 1740,
+          "source": "http://127.0.0.1:8873/por-derecho/assets/media/cajasiete-board-2-en-20260905.png"
+        },
+        {
+          "complete": true,
+          "width": 1080,
+          "height": 1640,
+          "source": "http://127.0.0.1:8873/por-derecho/assets/media/cajasiete-board-3-en-20260905.png"
+        }
+      ]
+    }
+  ],
+  "status": "PASS",
+  "case_count": 24,
+  "passed": 24,
+  "source_page_sha256": {
+    "es/cajasiete-sun-park-financiacion-comparabilidad/": "c92bce00bd3f739b95b2c8159f83f7089a9e9e5b127b6c7ec43c6f363823a817",
+    "en/cajasiete-sun-park-financing-comparability/": "0cc211204fc5e0808ce5ce8bcb64bfd3549bb72f4a5b23f9e54cf44a1a0bc2e4"
+  }
+}
