@@ -47,7 +47,7 @@ def main():
   (output/'report.json').write_text(json.dumps(report,ensure_ascii=False,indent=2))
  routes=[]
  for language in ['es','en']:routes.extend([(language,profile['family_routes'][language],True),(language,profile['routes'][language],False)])
- resources={'assets/data/sun-park-mynd-yaiza-site-v1.json','assets/data/matter-identity-registry-v1.organisations.json','assets/data/matter-identity-registry-v1.json'}
+ resources={'assets/master-mynd-reader-priority.js','assets/data/sun-park-mynd-yaiza-site-v1.json','assets/data/matter-identity-registry-v1.organisations.json','assets/data/matter-identity-registry-v1.json'}
  resources.update(i['path'] for i in profile['images']);resources.update(r.lstrip('/')+'index.html' for _,r,_ in routes)
  for language in ['es','en']:resources.update(e['route'].lstrip('/')+'index.html' for e in profile['discovery_routes'][language])
  try:
@@ -67,7 +67,7 @@ def main():
        case={'engine':engine,'route':route,'width':width,'javascript':javascript,'errors':[],'images':[]}
        context=browser.new_context(viewport={'width':width,'height':900},java_script_enabled=javascript);page=context.new_page();page.set_default_timeout(12000)
        exceptions=[];failed_responses=[]
-       page.on('pageerror',lambda exc:exceptions.append(str(exc)))
+       page.on('pageerror',lambda exc:exceptions.append(exc.stack or str(exc)))
        page.on('response',lambda r:failed_responses.append({'status':r.status,'url':r.url}) if r.status>=400 else None)
        try:
         response=page.goto(base+route+'?pd_master_mynd='+sha,wait_until='load',timeout=45000);page.wait_for_timeout(500)
@@ -77,6 +77,8 @@ def main():
         if ADDRESS not in body:case['errors'].append('canonical address missing')
         if family and DISCLOSURES[language] not in body:case['errors'].append('satire disclosure missing')
         if family:
+         expected_first='master-mynd-record' if language=='en' else 'master-mynd'
+         if page.locator('main').evaluate('(m)=>m.firstElementChild.id')!=expected_first:case['errors'].append('approved MASTER MYND content is not the first main section')
          for image in profile['images']:
           locators=page.locator('img[src*="'+image['path']+'"]')
           # English preserves its earlier unaltered photo in the legacy dossier.

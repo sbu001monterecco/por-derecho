@@ -433,10 +433,18 @@
       "repository_path": "es/acosta-matos-familia/index.html",
       "public_url": "/es/acosta-matos-familia/index.html",
       "mime": "text/html",
-      "bytes": 35159,
-      "sha256": "8a520dd731eb37fbe0d27e2982d86a08f1abde4c5ffc860f88d71582c586d396",
+      "bytes": 35232,
+      "sha256": "70e1833e43e3ab6505768eec77d164f3f66d314c7759fb5eb8b8cfa4f1baac1f",
       "repository_mirror": true,
-      "publication_status": "PUBLIC"
+      "publication_status": "PUBLIC",
+      "prior_surface_versions": [
+        {
+          "sha256": "8a520dd731eb37fbe0d27e2982d86a08f1abde4c5ffc860f88d71582c586d396",
+          "bytes": 35159,
+          "state": "SUPERSEDED_BY_SOURCE_IDENTICAL_READING_ORDER_REPAIR",
+          "source_head": "7a07778d120ce9ef777668758b2f449785fc10b5"
+        }
+      ]
     },
     {
       "reference": "PD-DMA-0005-EN-PAGE^",
@@ -445,10 +453,18 @@
       "repository_path": "en/acosta-matos-family/index.html",
       "public_url": "/en/acosta-matos-family/index.html",
       "mime": "text/html",
-      "bytes": 50325,
-      "sha256": "0bf971d54f845bcbe7984013d2937a013f3dd74939be721c96e816eeaff91ef4",
+      "bytes": 50538,
+      "sha256": "01450214880134d97de70e877c916800c458356ef5f29d3f2338bbad8be37dc6",
       "repository_mirror": true,
-      "publication_status": "PUBLIC"
+      "publication_status": "PUBLIC",
+      "prior_surface_versions": [
+        {
+          "sha256": "0bf971d54f845bcbe7984013d2937a013f3dd74939be721c96e816eeaff91ef4",
+          "bytes": 50325,
+          "state": "SUPERSEDED_BY_SOURCE_IDENTICAL_READING_ORDER_REPAIR",
+          "source_head": "7a07778d120ce9ef777668758b2f449785fc10b5"
+        }
+      ]
     }
   ],
   "public_routes": {
