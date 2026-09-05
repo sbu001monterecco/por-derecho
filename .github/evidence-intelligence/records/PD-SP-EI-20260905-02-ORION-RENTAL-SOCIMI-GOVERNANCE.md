@@ -151,3 +151,42 @@ A lawful/innocent alternative must be preserved at every step. If one or more br
 ## 11. Right of reply / correction
 
 All named people and entities retain a full right of correction, contrary evidence and exculpatory production. Silence is not admission. New evidence must update both the adverse and exculpatory branches of this record.
+
+<!-- ORION-NOTICE-CONTROL-20260905:START -->
+
+## Atomic notice integration — 5 September 2026
+
+Control: `PD-SP-ORION-NOTICE-20260905`. Canonical events remain in `assets/data/institutional-communications-register-v1.json`. Allocation/source crosswalk: `ops/ORION_NOTICE_CANONICAL_CROSSWALK_20260905.json`. Source input: `ops/orion-notice-register-input-20260905.json`.
+
+Scope: 20 individually evidenced events, 24 source descriptors including six attachment descriptors; two dated events use the later recipient/official source rather than an unlocated native submission. No historical completeness claim.
+
+| Source input | Event | Source |
+|---|---|---|
+| C-20251202 | PD-SP-EVT-0168 | PD-SP-SRC-0013 |
+| C-20251210 | PD-SP-EVT-0169 | PD-SP-SRC-0014 |
+| C-20260428 | PD-SP-EVT-0170 | PD-SP-SRC-0015 |
+| C-20260827 | PD-SP-EVT-0176 | PD-SP-SRC-0019 |
+| N-20241209-COMPLAINTS | PD-SP-EVT-0161 | PD-SP-SRC-0006 |
+| N-20241209-INFO | PD-SP-EVT-0160 | PD-SP-SRC-0005 |
+| N-20241209-WHISTLE | PD-SP-EVT-0162 | PD-SP-SRC-0007 |
+| N-20260820 | PD-SP-EVT-0171 | PD-SP-SRC-0018 |
+| N-20260825 | PD-SP-EVT-0173 | PD-SP-SRC-0020 |
+| N-20260827 | PD-SP-EVT-0175 | PD-SP-SRC-0018 |
+| N-20260904-DECISION | PD-SP-EVT-0177 | PD-SP-SRC-0020 |
+| N-20260904-EMAIL | PD-SP-EVT-0178 | PD-SP-SRC-0021 |
+| P-20241207 | PD-SP-EVT-0159 | PD-SP-SRC-0004 |
+| P-20241210-MARTIN | PD-SP-EVT-0163 | PD-SP-SRC-0008 |
+| P-20241212 | PD-SP-EVT-0164 | PD-SP-SRC-0009 |
+| P-20250117 | PD-SP-EVT-0165 | PD-SP-SRC-0010 |
+| P-20250321 | PD-SP-EVT-0166 | PD-SP-SRC-0011 |
+| P-20250323 | PD-SP-EVT-0167 | PD-SP-SRC-0012 |
+| P-20260822 | PD-SP-EVT-0172 | PD-SP-SRC-0016 |
+| P-20260826 | PD-SP-EVT-0174 | PD-SP-SRC-0017 |
+
+Every source has a stable bilingual source anchor on the institutional records pages, every event its own communication anchor, and reciprocal dossier/chronology/source links. Public originals are not inferred from attachment metadata. No private email body, provider locator or private contact field is published.
+
+### Limiting and contrary evidence
+
+Portfolio reports review and preservation, not silence. Its relevant-functions referral does not prove full-board circulation. Cajasiete announces intended destruction, not completed destruction. CNMV extends the deadline, not a refusal or merits determination. Exact bank facility/principal/date and its relationship to the suspension/Ona chronology remain unresolved.
+
+<!-- ORION-NOTICE-CONTROL-20260905:END -->

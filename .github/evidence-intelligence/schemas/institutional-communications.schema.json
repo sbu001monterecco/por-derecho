@@ -400,7 +400,7 @@
         "command_caret_audit": {"const": "EVENT_REGISTERED_IDENTITY_CARET_SEPARATELY_CONTROLLED"},
         "criminal_relevance_state": {"enum": ["NOTICE_ONLY", "OPEN_HYPOTHESIS_LINK"]},
         "criminal_responsibility_transfer": {"const": false},
-        "source_batch_id": {"const": "PD-SP-AUTH-COMMS-SCAN-20260901"},
+        "source_batch_id": {"enum": ["PD-SP-AUTH-COMMS-SCAN-20260901", "PD-SP-ORION-NOTICE-20260905"]},
         "legacy_evidence_ids": {
           "type": "array",
           "items": {"type": "string", "minLength": 1},
@@ -465,7 +465,7 @@
           }
         },
         {
-          "if": {"properties": {"attribution_state": {"const": "SOURCE_PROVED_SIGNATORY"}}},
+          "if": {"required": ["attribution_state"], "properties": {"attribution_state": {"const": "SOURCE_PROVED_SIGNATORY"}}},
           "then": {"required": ["signatory_person_id", "signatory_person_label"]}
         }
       ]

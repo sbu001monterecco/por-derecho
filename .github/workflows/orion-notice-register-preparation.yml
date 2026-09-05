@@ -1,0 +1,187 @@
+name: Orion notice register preparation
+on:
+  push:
+    branches: ['integration/orion-notice-register-20260905', main]
+    paths:
+      - '.github/workflows/orion-notice-register-preparation.yml'
+      - 'scripts/prepare_orion_notice_register_20260905.py'
+      - 'ops/orion-notice-register-input-20260905.json'
+      - 'ops/ORION_NOTICE_CANONICAL_CROSSWALK_20260905.json'
+      - 'assets/data/institutional-communications-register-v1.json'
+  pull_request:
+    paths:
+      - '.github/workflows/orion-notice-register-preparation.yml'
+      - 'scripts/prepare_orion_notice_register_20260905.py'
+      - 'ops/orion-notice-register-input-20260905.json'
+      - 'ops/ORION_NOTICE_CANONICAL_CROSSWALK_20260905.json'
+      - 'assets/data/institutional-communications-register-v1.json'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: orion-notice-register-${{ github.ref }}
+  cancel-in-progress: false
+env:
+  PYTHONDONTWRITEBYTECODE: '1'
+jobs:
+  prepare:
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/integration/orion-notice-register-20260905'
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          ref: integration/orion-notice-register-20260905
+          fetch-depth: 1
+      - name: Complete narrowly scoped schema and source-state integration
+        shell: python
+        run: |
+          import json, pathlib, hashlib
+          p=pathlib.Path('scripts/prepare_orion_notice_register_20260905.py')
+          text=p.read_text()
+          fixes={
+            "i['institution'].upper().replace(' ','_')":"re.sub(r'[^A-Z0-9]+','_',i['institution'].upper()).strip('_')",
+            "e['source_pages']=i['source_pages']":"e['source_pages']=i['source_pages'].split(';',1)[0]",
+            "state['registration']=i['decision'] if i['key']=='C-20260428' else 'DOCUMENTED_OFFICIAL_ACT'":"state['registration']='CHANNEL_REFERENCE_IN_NOTICE' if i['key']=='C-20260428' else 'DOCUMENTED_OFFICIAL_ACT'",
+            "        events.append(e)":"        e.update({'attribution_state':'INSTITUTIONAL_NOTICE_NO_PERSONAL_SIGNATORY_ASSERTED','linked_transport_event_ids':[],'transport_link_state':'SEPARATE_ACT_AND_TRANSPORT_LINKS_IN_CANONICAL_CROSSWALK','proof_level':i['source_kind']})\n        events.append(e)"
+          }
+          for old,new in fixes.items():
+            if new in text: continue
+            if text.count(old)!=1: raise ValueError('Unexpected generator patch anchor: '+old)
+            text=text.replace(old,new,1)
+          p.write_text(text)
+          p=pathlib.Path('.github/evidence-intelligence/schemas/institutional-communications.schema.json')
+          text=p.read_text()
+          fixes={
+            '"source_batch_id": {"const": "PD-SP-AUTH-COMMS-SCAN-20260901"}':'"source_batch_id": {"enum": ["PD-SP-AUTH-COMMS-SCAN-20260901", "PD-SP-ORION-NOTICE-20260905"]}',
+            '"if": {"properties": {"attribution_state": {"const": "SOURCE_PROVED_SIGNATORY"}}}':'"if": {"required": ["attribution_state"], "properties": {"attribution_state": {"const": "SOURCE_PROVED_SIGNATORY"}}}'
+          }
+          for old,new in fixes.items():
+            if new in text: continue
+            assert text.count(old)==1, old
+            text=text.replace(old,new,1)
+          p.write_text(text)
+          # Preserve the native attachment name; identify its already-public EN alias.
+          p=pathlib.Path('ops/ORION_NOTICE_CANONICAL_CROSSWALK_20260905.json')
+          if p.exists():
+            cross=json.loads(p.read_text())
+            asset=pathlib.Path('assets/evidence/email-used-20260822/san-telmo-ricpe-sun-park-stamp-v1-EN.png')
+            assert asset.is_file() and asset.stat().st_size==617049
+            src=cross['sources']['A-ST-EN']
+            src.pop('public_asset_state',None)
+            src.update({'public_asset':str(asset),'public_asset_sha256':hashlib.sha256(asset.read_bytes()).hexdigest(),'attachment_equivalence':'EXISTING_PUBLIC_FIGURE under EN filename alias; native email attachment hash equivalence not asserted'})
+            p.write_text(json.dumps(cross,ensure_ascii=False,indent=2,sort_keys=True)+'\n')
+      - name: Build canonical register and existing bilingual projections
+        run: |
+          python -m py_compile scripts/prepare_orion_notice_register_20260905.py
+          python scripts/prepare_orion_notice_register_20260905.py apply
+      - name: Validate canonical controls and regression tests
+        run: |
+          python -m pip install --quiet jsonschema
+          python scripts/reconcile_institutional_communications.py --check
+          python scripts/validate_institutional_communications.py
+          python -m unittest -v scripts/test_reconcile_institutional_communications.py
+          python scripts/build_redsara_age_filings_register.py --check
+          python scripts/validate_redsara_authority_discovery.py
+          python scripts/prepare_orion_notice_register_20260905.py check
+      - name: Verify the optional-signatory condition still rejects unproved identity
+        shell: python
+        run: |
+          import json, copy, jsonschema, pathlib
+          schema=json.loads(pathlib.Path('.github/evidence-intelligence/schemas/institutional-communications.schema.json').read_text())
+          data=json.loads(pathlib.Path('assets/data/institutional-communications-register-v1.json').read_text())
+          validator=jsonschema.Draft202012Validator(schema)
+          assert not list(validator.iter_errors(data))
+          bad=copy.deepcopy(data)
+          bad['events'][0]['attribution_state']='SOURCE_PROVED_SIGNATORY'
+          failures=list(validator.iter_errors(bad))
+          assert any('signatory_person_id' in x.message for x in failures)
+          assert any('signatory_person_label' in x.message for x in failures)
+          print('PASS: absent attribution is not invented; asserted source-proved signatory still requires both identity fields.')
+      - name: Preserve only the validated canonical delta on the integration branch
+        shell: python
+        run: |
+          import json, pathlib, subprocess
+          report=json.loads(pathlib.Path('ops/ORION_NOTICE_PUBLICATION_AUDIT_20260905.json').read_text())
+          allowed=set(report['managed_files']) | {'scripts/prepare_orion_notice_register_20260905.py','.github/evidence-intelligence/schemas/institutional-communications.schema.json'}
+          changed=set(subprocess.check_output(['git','diff','--name-only']).decode().splitlines())
+          changed |= set(subprocess.check_output(['git','ls-files','--others','--exclude-standard']).decode().splitlines())
+          if changed-allowed: raise ValueError('Out-of-scope files: '+str(sorted(changed-allowed)))
+          subprocess.run(['git','diff','--check'],check=True)
+          if changed:
+            subprocess.run(['git','add','--',*sorted(changed)],check=True)
+            subprocess.run(['git','-c','user.name=Por Derecho integration','-c','user.email=41898282+github-actions[bot]@users.noreply.github.com','commit','-m','Register twenty individual Orion institutional notices and interlink existing bilingual pages'],check=True)
+            subprocess.run(['git','push','origin','HEAD:refs/heads/integration/orion-notice-register-20260905'],check=True)
+          print('PREPARED_HEAD',subprocess.check_output(['git','rev-parse','HEAD']).decode().strip())
+          print('FILES',json.dumps(sorted(changed)))
+  validate:
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
+      - run: python -m pip install --quiet jsonschema
+      - run: |
+          python scripts/reconcile_institutional_communications.py --check
+          python scripts/validate_institutional_communications.py
+          python -m unittest -v scripts/test_reconcile_institutional_communications.py
+          python scripts/validate_redsara_authority_discovery.py
+          python scripts/prepare_orion_notice_register_20260905.py check
+  verify-live:
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
+      - name: Verify deployed canonical register and affected pages without mutating main
+        run: python scripts/prepare_orion_notice_register_20260905.py live
+      - name: Verify live reciprocal fragments, exact page blocks, source descriptors and images
+        shell: python
+        run: |
+          import sys, json, hashlib, urllib.request, subprocess
+          from concurrent.futures import ThreadPoolExecutor
+          from pathlib import Path
+          sys.path.insert(0,'scripts')
+          import prepare_orion_notice_register_20260905 as control
+          audit=control.check()
+          cross=control.read(control.CROSSWALK)
+          sha=subprocess.check_output(['git','rev-parse','HEAD']).decode().strip()
+          urls=set()
+          blocks={}
+          for route in audit['pages_checked']:
+            text=(Path(route)/'index.html').read_text()
+            block=text.split(control.START,1)[1].split(control.END,1)[0]
+            blocks[route]=block
+            parsed=control.Links();parsed.feed(block);urls.update(parsed.urls)
+          paths={u.removeprefix('/por-derecho/').split('#',1)[0] for u in urls}
+          paths |= set(blocks)
+          def fetch(path):
+            url='https://sbu001monterecco.github.io/por-derecho/'+path+'?notice-verify='+sha[:12]
+            with urllib.request.urlopen(urllib.request.Request(url,headers={'Cache-Control':'no-cache','User-Agent':'PorDerecho-release-verifier'}),timeout=35) as response:
+              return path,response.read()
+          with ThreadPoolExecutor(max_workers=6) as pool: fetched=dict(pool.map(fetch,sorted(paths)))
+          fragments=0
+          for url in urls:
+            path,sep,fragment=url.removeprefix('/por-derecho/').partition('#')
+            if sep:
+              parser=control.Links();parser.feed(fetched[path].decode('utf-8'))
+              assert fragment in parser.ids, url
+              fragments+=1
+          for route,expected in blocks.items():
+            actual=fetched[route].decode('utf-8').split(control.START,1)[1].split(control.END,1)[0]
+            assert actual==expected, 'stale live block '+route
+          for path in [control.REGISTER,control.CROSSWALK]:
+            assert fetched[path]==Path(path).read_bytes(), 'live source data mismatch '+path
+          images=0
+          for source in cross['sources'].values():
+            if source.get('public_asset'):
+              assert hashlib.sha256(fetched[source['public_asset']]).hexdigest()==source['public_asset_sha256']
+              images+=1
+          assert images==4, 'all four registered public figures must resolve'
+          print(json.dumps({'status':'LIVE_LINKS_ANCHORS_IMAGES_AND_EXACT_BLOCKS_VERIFIED','checked_commit':sha,'pages':len(blocks),'public_targets':len(paths),'unique_internal_links':len(urls),'fragments_verified':fragments,'image_hashes_verified':images,'register_sha256':audit['register_sha256']},indent=2))

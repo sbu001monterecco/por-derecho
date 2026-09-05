@@ -69,13 +69,18 @@ def main() -> int:
     excluded_authority_ids = set(
         communications.get("authority_scan_control", {}).get("new_event_ids", [])
     )
-    event_ids = canonical_event_ids - excluded_authority_ids
+    from prepare_orion_notice_register_20260905 import load_notice_events
+    expected_notices = {event["event_id"]: event for event in load_notice_events(ROOT)}
+    actual_notices = {event["event_id"]: event for event in communications["events"]
+                      if event.get("source_batch_id") == "PD-SP-ORION-NOTICE-20260905"}
+    require(actual_notices == expected_notices, "financial notice source cohort mismatch", errors)
+    event_ids = canonical_event_ids - excluded_authority_ids - set(expected_notices)
     projected_ids = {event["event_id"] for event in payload["events"]}
 
     require(payload.get("schema_version") == "1.0.0", "schema version changed", errors)
     require(payload.get("status") == "PUBLIC_SAFE_DERIVED_INTERCONNECTIVITY_PROJECTION", "projection status changed", errors)
     require(
-        len(canonical_event_ids) == 313
+        len(canonical_event_ids) == 313 + len(expected_notices)
         and len(excluded_authority_ids) == 17
         and excluded_authority_ids <= canonical_event_ids
         and len(event_ids) == len(projected_ids) == 296

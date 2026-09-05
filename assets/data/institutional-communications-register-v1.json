@@ -46,10 +46,10 @@
   "control_date": "2026-09-01",
   "denominator_control": {
     "arithmetic_check": "75 detailed + 22 metadata-only = 97 reported total",
-    "curated_source_proved_events": 82,
+    "curated_source_proved_events": 102,
     "detailed_baseline_receipt_rows_expected": 75,
     "detailed_baseline_receipt_rows_registered": 75,
-    "event_rows_total": 313,
+    "event_rows_total": 333,
     "mailbox_draft_rows": 3,
     "mailbox_inbound_email_rows": 101,
     "mailbox_outbound_email_rows": 42,
@@ -7959,6 +7959,1128 @@
         "T18"
       ],
       "transport_link_state": "NO_PUBLIC_TRANSPORT_LINK_ASSERTED"
+    },
+    {
+      "attachment_count": 2,
+      "attachment_count_basis": "SOURCE_ATTACHMENT_DESCRIPTORS; decorative inline signatures excluded",
+      "attribution_state": "INSTITUTIONAL_NOTICE_NO_PERSONAL_SIGNATORY_ASSERTED",
+      "canonical_anchor_en": "en/institutional-records/#communication-PD-SP-EVT-0159",
+      "canonical_anchor_es": "es/registros-institucionales/#communication-PD-SP-EVT-0159",
+      "channel": "EMAIL",
+      "cohort": "CURATED_SOURCE_PROVED_EVENT",
+      "criminal_responsibility_transfer": false,
+      "direction": "OUTBOUND_TO_INSTITUTION",
+      "does_not_prove": [
+        "The body names CNMV as a copied party, but the actual recipient metadata contains no CC recipients. This transmission does not establish delivery to CNMV, any breach or the truth of the allegations. Its use of prospectus is source wording, not a statement that CNMV approved a prospectus."
+      ],
+      "does_not_prove_es": "El cuerpo menciona a CNMV en copia, pero los metadatos efectivos no contienen destinatarios CC. Este envío no acredita entrega a CNMV, infracción ni veracidad de las alegaciones. La expresión prospectus pertenece a la fuente; no acredita un folleto aprobado por CNMV.",
+      "event_date": "2024-12-07",
+      "event_id": "PD-SP-EVT-0159",
+      "event_timestamp": "2024-12-07T23:04:19+00:00",
+      "evidence_state": {
+        "delivery": "NO_ADDITIONAL_DELIVERY_ASSERTION",
+        "destination": "STATED_IN_SOURCE",
+        "filing": "NOT_ESTABLISHED_BY_THIS_SOURCE",
+        "internal_association": "NOT_ESTABLISHED_BY_THIS_SOURCE",
+        "merits": "NO_MERITS_FINDING_OR_CRIMINAL_ATTRIBUTION",
+        "registration": "NOT_ESTABLISHED_BY_THIS_SOURCE",
+        "substantive_examination": "NOT_ESTABLISHED_BY_THIS_SOURCE",
+        "transmission": "SOURCE_TRANSMISSION_OR_ACT_RETAINED"
+      },
+      "institution_key": "PORTFOLIO_STOCK_EXCHANGE",
+      "layer": "OFFICIAL_ACT_OR_CORRESPONDENCE",
+      "linked_transport_event_ids": [],
+      "matter_references": [
+        "ORION Rental SOCIMI",
+        "Sun Park / MYND Yaiza",
+        "RICPE",
+        "PD-SP-SRC-0004"
+      ],
+      "office": "Portfolio Stock Exchange",
+      "official_reference": "NO_OFFICIAL_REFERENCE_ASSERTED",
+      "proof_level": "RETAINED_SENT_EMAIL",
+      "proves": [
+        "Gil Marer sent an Orion disclosure complaint to Portfolio customer-service and contact functions. The message advances allegations concerning legacy actors and requests a compliance review."
+      ],
+      "proves_es": "Gil Marer envió una comunicación sobre la información de Orion a las funciones de atención y contacto de Portfolio. El escrito formula alegaciones sobre actores históricos y solicita revisión de cumplimiento.",
+      "public_derivative_state": "PUBLIC_SAFE_MINIMISED_DERIVATIVE",
+      "public_summary": "Gil Marer sent an Orion disclosure complaint to Portfolio customer-service and contact functions. The message advances allegations concerning legacy actors and requests a compliance review.",
+      "public_summary_es": "Gil Marer envió una comunicación sobre la información de Orion a las funciones de atención y contacto de Portfolio. El escrito formula alegaciones sobre actores históricos y solicita revisión de cumplimiento.",
+      "record_type": "OUTBOUND_COMMUNICATION",
+      "source_batch_id": "PD-SP-ORION-NOTICE-20260905",
+      "source_integrity": {
+        "repository_anchor": "ops/orion-notice-register-input-20260905.json",
+        "sha256": "51092f022de7c4f82a7c69972f85fac9d8339ca3dcc50d501b3e494e6ad7a9aa",
+        "status": "RETAINED_SENT_EMAIL; PUBLIC_SAFE_REVIEW_DESCRIPTOR"
+      },
+      "source_key": "ORION-NOTICE:P-20241207",
+      "source_timezone": "OFFSET_AS_RETURNED_IN_RETAINED_METADATA",
+      "transport_link_state": "SEPARATE_ACT_AND_TRANSPORT_LINKS_IN_CANONICAL_CROSSWALK"
+    },
+    {
+      "attachment_count": 2,
+      "attachment_count_basis": "SOURCE_ATTACHMENT_DESCRIPTORS; decorative inline signatures excluded",
+      "attribution_state": "INSTITUTIONAL_NOTICE_NO_PERSONAL_SIGNATORY_ASSERTED",
+      "canonical_anchor_en": "en/institutional-records/#communication-PD-SP-EVT-0160",
+      "canonical_anchor_es": "es/registros-institucionales/#communication-PD-SP-EVT-0160",
+      "channel": "EMAIL",
+      "cohort": "CURATED_SOURCE_PROVED_EVENT",
+      "criminal_responsibility_transfer": false,
+      "direction": "OUTBOUND_TO_INSTITUTION",
+      "does_not_prove": [
+        "Sent-message evidence does not establish receipt, internal routing, review or acceptance of allegations."
+      ],
+      "does_not_prove_es": "La constancia de envío no acredita recepción, reparto interno, examen ni aceptación de alegaciones.",
+      "event_date": "2024-12-09",
+      "event_id": "PD-SP-EVT-0160",
+      "event_timestamp": "2024-12-09T11:47:20+00:00",
+      "evidence_state": {
+        "delivery": "NO_ADDITIONAL_DELIVERY_ASSERTION",
+        "destination": "STATED_IN_SOURCE",
+        "filing": "NOT_ESTABLISHED_BY_THIS_SOURCE",
+        "internal_association": "NOT_ESTABLISHED_BY_THIS_SOURCE",
+        "merits": "NO_MERITS_FINDING_OR_CRIMINAL_ATTRIBUTION",
+        "registration": "NOT_ESTABLISHED_BY_THIS_SOURCE",
+        "substantive_examination": "NOT_ESTABLISHED_BY_THIS_SOURCE",
+        "transmission": "SOURCE_TRANSMISSION_OR_ACT_RETAINED"
+      },
+      "institution_key": "CNMV",
+      "layer": "OFFICIAL_ACT_OR_CORRESPONDENCE",
+      "linked_transport_event_ids": [],
+      "matter_references": [
+        "ORION Rental SOCIMI",
+        "Sun Park / MYND Yaiza",
+        "RICPE",
+        "PD-SP-SRC-0005"
+      ],
+      "office": "CNMV",
+      "official_reference": "NO_OFFICIAL_REFERENCE_ASSERTED",
+      "proof_level": "RETAINED_SENT_EMAIL",
+      "proves": [
+        "A separate forward of the Orion complaint was sent to the CNMV information/reclamations route."
+      ],
+      "proves_es": "Se remitió por separado la comunicación Orion a la ruta de información/reclamaciones de CNMV.",
+      "public_derivative_state": "PUBLIC_SAFE_MINIMISED_DERIVATIVE",
+      "public_summary": "A separate forward of the Orion complaint was sent to the CNMV information/reclamations route.",
+      "public_summary_es": "Se remitió por separado la comunicación Orion a la ruta de información/reclamaciones de CNMV.",
+      "record_type": "OUTBOUND_COMMUNICATION",
+      "source_batch_id": "PD-SP-ORION-NOTICE-20260905",
+      "source_integrity": {
+        "repository_anchor": "ops/orion-notice-register-input-20260905.json",
+        "sha256": "51092f022de7c4f82a7c69972f85fac9d8339ca3dcc50d501b3e494e6ad7a9aa",
+        "status": "RETAINED_SENT_EMAIL; PUBLIC_SAFE_REVIEW_DESCRIPTOR"
+      },
+      "source_key": "ORION-NOTICE:N-20241209-INFO",
+      "source_timezone": "OFFSET_AS_RETURNED_IN_RETAINED_METADATA",
+      "transport_link_state": "SEPARATE_ACT_AND_TRANSPORT_LINKS_IN_CANONICAL_CROSSWALK"
+    },
+    {
+      "attachment_count": 2,
+      "attachment_count_basis": "SOURCE_ATTACHMENT_DESCRIPTORS; decorative inline signatures excluded",
+      "attribution_state": "INSTITUTIONAL_NOTICE_NO_PERSONAL_SIGNATORY_ASSERTED",
+      "canonical_anchor_en": "en/institutional-records/#communication-PD-SP-EVT-0161",
+      "canonical_anchor_es": "es/registros-institucionales/#communication-PD-SP-EVT-0161",
+      "channel": "EMAIL",
+      "cohort": "CURATED_SOURCE_PROVED_EVENT",
+      "criminal_responsibility_transfer": false,
+      "direction": "OUTBOUND_TO_INSTITUTION",
+      "does_not_prove": [
+        "This is a separate transmission, not a second underlying complaint finding or proof of examination."
+      ],
+      "does_not_prove_es": "Es una transmisión separada, no una segunda conclusión sobre el fondo ni prueba de examen.",
+      "event_date": "2024-12-09",
+      "event_id": "PD-SP-EVT-0161",
+      "event_timestamp": "2024-12-09T11:48:54+00:00",
+      "evidence_state": {
+        "delivery": "NO_ADDITIONAL_DELIVERY_ASSERTION",
+        "destination": "STATED_IN_SOURCE",
+        "filing": "NOT_ESTABLISHED_BY_THIS_SOURCE",
+        "internal_association": "NOT_ESTABLISHED_BY_THIS_SOURCE",
+        "merits": "NO_MERITS_FINDING_OR_CRIMINAL_ATTRIBUTION",
+        "registration": "NOT_ESTABLISHED_BY_THIS_SOURCE",
+        "substantive_examination": "NOT_ESTABLISHED_BY_THIS_SOURCE",
+        "transmission": "SOURCE_TRANSMISSION_OR_ACT_RETAINED"
+      },
+      "institution_key": "CNMV",
+      "layer": "OFFICIAL_ACT_OR_CORRESPONDENCE",
+      "linked_transport_event_ids": [],
+      "matter_references": [
+        "ORION Rental SOCIMI",
+        "Sun Park / MYND Yaiza",
+        "RICPE",
+        "PD-SP-SRC-0006"
+      ],
+      "office": "CNMV",
+      "official_reference": "NO_OFFICIAL_REFERENCE_ASSERTED",
+      "proof_level": "RETAINED_SENT_EMAIL",
+      "proves": [
+        "Another distinct forward of the Orion complaint was sent to the CNMV complaints service."
+      ],
+      "proves_es": "Otro reenvío individual de la comunicación Orion se dirigió al servicio de reclamaciones de CNMV.",
+      "public_derivative_state": "PUBLIC_SAFE_MINIMISED_DERIVATIVE",
+      "public_summary": "Another distinct forward of the Orion complaint was sent to the CNMV complaints service.",
+      "public_summary_es": "Otro reenvío individual de la comunicación Orion se dirigió al servicio de reclamaciones de CNMV.",
+      "record_type": "OUTBOUND_COMMUNICATION",
+      "source_batch_id": "PD-SP-ORION-NOTICE-20260905",
+      "source_integrity": {
+        "repository_anchor": "ops/orion-notice-register-input-20260905.json",
+        "sha256": "51092f022de7c4f82a7c69972f85fac9d8339ca3dcc50d501b3e494e6ad7a9aa",
+        "status": "RETAINED_SENT_EMAIL; PUBLIC_SAFE_REVIEW_DESCRIPTOR"
+      },
+      "source_key": "ORION-NOTICE:N-20241209-COMPLAINTS",
+      "source_timezone": "OFFSET_AS_RETURNED_IN_RETAINED_METADATA",
+      "transport_link_state": "SEPARATE_ACT_AND_TRANSPORT_LINKS_IN_CANONICAL_CROSSWALK"
+    },
+    {
+      "attachment_count": 2,
+      "attachment_count_basis": "SOURCE_ATTACHMENT_DESCRIPTORS; decorative inline signatures excluded",
+      "attribution_state": "INSTITUTIONAL_NOTICE_NO_PERSONAL_SIGNATORY_ASSERTED",
+      "canonical_anchor_en": "en/institutional-records/#communication-PD-SP-EVT-0162",
+      "canonical_anchor_es": "es/registros-institucionales/#communication-PD-SP-EVT-0162",
+      "channel": "EMAIL",
+      "cohort": "CURATED_SOURCE_PROVED_EVENT",
+      "criminal_responsibility_transfer": false,
+      "direction": "OUTBOUND_TO_INSTITUTION",
+      "does_not_prove": [
+        "The outbound address alone does not prove that the communication entered a protected case, was examined, or established wrongdoing."
+      ],
+      "does_not_prove_es": "La dirección de destino no prueba por sí sola incorporación a expediente protegido, examen ni irregularidad.",
+      "event_date": "2024-12-09",
+      "event_id": "PD-SP-EVT-0162",
+      "event_timestamp": "2024-12-09T11:50:36+00:00",
+      "evidence_state": {
+        "delivery": "NO_ADDITIONAL_DELIVERY_ASSERTION",
+        "destination": "STATED_IN_SOURCE",
+        "filing": "NOT_ESTABLISHED_BY_THIS_SOURCE",
+        "internal_association": "NOT_ESTABLISHED_BY_THIS_SOURCE",
+        "merits": "NO_MERITS_FINDING_OR_CRIMINAL_ATTRIBUTION",
+        "registration": "NOT_ESTABLISHED_BY_THIS_SOURCE",
+        "substantive_examination": "NOT_ESTABLISHED_BY_THIS_SOURCE",
+        "transmission": "SOURCE_TRANSMISSION_OR_ACT_RETAINED"
+      },
+      "institution_key": "CNMV",
+      "layer": "OFFICIAL_ACT_OR_CORRESPONDENCE",
+      "linked_transport_event_ids": [],
+      "matter_references": [
+        "ORION Rental SOCIMI",
+        "Sun Park / MYND Yaiza",
+        "RICPE",
+        "PD-SP-SRC-0007"
+      ],
+      "office": "CNMV",
+      "official_reference": "NO_OFFICIAL_REFERENCE_ASSERTED",
+      "proof_level": "RETAINED_SENT_EMAIL",
+      "proves": [
+        "A third separately timed forward was sent to the CNMV whistleblowing route used by the sender."
+      ],
+      "proves_es": "Un tercer reenvío, con hora distinta, se dirigió a la ruta de whistleblowing de CNMV utilizada por el remitente.",
+      "public_derivative_state": "PUBLIC_SAFE_MINIMISED_DERIVATIVE",
+      "public_summary": "A third separately timed forward was sent to the CNMV whistleblowing route used by the sender.",
+      "public_summary_es": "Un tercer reenvío, con hora distinta, se dirigió a la ruta de whistleblowing de CNMV utilizada por el remitente.",
+      "record_type": "OUTBOUND_COMMUNICATION",
+      "source_batch_id": "PD-SP-ORION-NOTICE-20260905",
+      "source_integrity": {
+        "repository_anchor": "ops/orion-notice-register-input-20260905.json",
+        "sha256": "51092f022de7c4f82a7c69972f85fac9d8339ca3dcc50d501b3e494e6ad7a9aa",
+        "status": "RETAINED_SENT_EMAIL; PUBLIC_SAFE_REVIEW_DESCRIPTOR"
+      },
+      "source_key": "ORION-NOTICE:N-20241209-WHISTLE",
+      "source_timezone": "OFFSET_AS_RETURNED_IN_RETAINED_METADATA",
+      "transport_link_state": "SEPARATE_ACT_AND_TRANSPORT_LINKS_IN_CANONICAL_CROSSWALK"
+    },
+    {
+      "attachment_count": 2,
+      "attachment_count_basis": "SOURCE_ATTACHMENT_DESCRIPTORS; decorative inline signatures excluded",
+      "attribution_state": "INSTITUTIONAL_NOTICE_NO_PERSONAL_SIGNATORY_ASSERTED",
+      "canonical_anchor_en": "en/institutional-records/#communication-PD-SP-EVT-0163",
+      "canonical_anchor_es": "es/registros-institucionales/#communication-PD-SP-EVT-0163",
+      "channel": "EMAIL",
+      "cohort": "CURATED_SOURCE_PROVED_EVENT",
+      "criminal_responsibility_transfer": false,
+      "direction": "OUTBOUND_TO_INSTITUTION",
+      "does_not_prove": [
+        "A sent individual escalation does not establish that its recipient read it or circulated it to the full Portfolio board. The recipient's capacity is not inferred from the email address."
+      ],
+      "does_not_prove_es": "Un envío individual no acredita lectura ni circulación al consejo completo de Portfolio. La capacidad del destinatario no se deduce de su dirección electrónica.",
+      "event_date": "2024-12-10",
+      "event_id": "PD-SP-EVT-0163",
+      "event_timestamp": "2024-12-10T20:57:29+00:00",
+      "evidence_state": {
+        "delivery": "NO_ADDITIONAL_DELIVERY_ASSERTION",
+        "destination": "STATED_IN_SOURCE",
+        "filing": "NOT_ESTABLISHED_BY_THIS_SOURCE",
+        "internal_association": "NOT_ESTABLISHED_BY_THIS_SOURCE",
+        "merits": "NO_MERITS_FINDING_OR_CRIMINAL_ATTRIBUTION",
+        "registration": "NOT_ESTABLISHED_BY_THIS_SOURCE",
+        "substantive_examination": "NOT_ESTABLISHED_BY_THIS_SOURCE",
+        "transmission": "SOURCE_TRANSMISSION_OR_ACT_RETAINED"
+      },
+      "institution_key": "PORTFOLIO_NAMED_INDIVIDUAL_ESCALATION",
+      "layer": "OFFICIAL_ACT_OR_CORRESPONDENCE",
+      "linked_transport_event_ids": [],
+      "matter_references": [
+        "ORION Rental SOCIMI",
+        "Sun Park / MYND Yaiza",
+        "RICPE",
+        "PD-SP-SRC-0008"
+      ],
+      "office": "Portfolio / named individual escalation",
+      "official_reference": "NO_OFFICIAL_REFERENCE_ASSERTED",
+      "proof_level": "RETAINED_SENT_EMAIL",
+      "proves": [
+        "Gil forwarded the Orion/CNMV material to Martin Graham and requested confirmation of safe receipt."
+      ],
+      "proves_es": "Gil reenvió el material Orion/CNMV a Martin Graham y solicitó confirmación de recepción.",
+      "public_derivative_state": "PUBLIC_SAFE_MINIMISED_DERIVATIVE",
+      "public_summary": "Gil forwarded the Orion/CNMV material to Martin Graham and requested confirmation of safe receipt.",
+      "public_summary_es": "Gil reenvió el material Orion/CNMV a Martin Graham y solicitó confirmación de recepción.",
+      "record_type": "OUTBOUND_COMMUNICATION",
+      "source_batch_id": "PD-SP-ORION-NOTICE-20260905",
+      "source_integrity": {
+        "repository_anchor": "ops/orion-notice-register-input-20260905.json",
+        "sha256": "51092f022de7c4f82a7c69972f85fac9d8339ca3dcc50d501b3e494e6ad7a9aa",
+        "status": "RETAINED_SENT_EMAIL; PUBLIC_SAFE_REVIEW_DESCRIPTOR"
+      },
+      "source_key": "ORION-NOTICE:P-20241210-MARTIN",
+      "source_timezone": "OFFSET_AS_RETURNED_IN_RETAINED_METADATA",
+      "transport_link_state": "SEPARATE_ACT_AND_TRANSPORT_LINKS_IN_CANONICAL_CROSSWALK"
+    },
+    {
+      "attribution_state": "INSTITUTIONAL_NOTICE_NO_PERSONAL_SIGNATORY_ASSERTED",
+      "canonical_anchor_en": "en/institutional-records/#communication-PD-SP-EVT-0164",
+      "canonical_anchor_es": "es/registros-institucionales/#communication-PD-SP-EVT-0164",
+      "channel": "EMAIL",
+      "cohort": "CURATED_SOURCE_PROVED_EVENT",
+      "criminal_responsibility_transfer": false,
+      "direction": "INBOUND_FROM_INSTITUTION",
+      "does_not_prove": [
+        "The stated future regulatory liaison is not evidence that liaison actually occurred. Acknowledgement is not endorsement of the complaint."
+      ],
+      "does_not_prove_es": "El contacto regulatorio anunciado para el futuro no acredita que llegase a producirse. El acuse no supone aceptación de la denuncia.",
+      "event_date": "2024-12-12",
+      "event_id": "PD-SP-EVT-0164",
+      "event_timestamp": "2024-12-12T00:12:27+00:00",
+      "evidence_state": {
+        "delivery": "CONFIRMED",
+        "destination": "STATED_IN_SOURCE",
+        "filing": "NOT_ESTABLISHED_BY_THIS_SOURCE",
+        "internal_association": "LOGGED_BY_RECIPIENT",
+        "merits": "NO_MERITS_FINDING_OR_CRIMINAL_ATTRIBUTION",
+        "registration": "NOT_ESTABLISHED_BY_THIS_SOURCE",
+        "substantive_examination": "NOT_ESTABLISHED_BY_THIS_SOURCE",
+        "transmission": "SOURCE_TRANSMISSION_OR_ACT_RETAINED"
+      },
+      "institution_key": "PORTFOLIO_STOCK_EXCHANGE",
+      "layer": "OFFICIAL_ACT_OR_CORRESPONDENCE",
+      "linked_transport_event_ids": [],
+      "matter_references": [
+        "ORION Rental SOCIMI",
+        "Sun Park / MYND Yaiza",
+        "RICPE",
+        "PD-SP-SRC-0009"
+      ],
+      "office": "Portfolio Stock Exchange",
+      "official_reference": "NO_OFFICIAL_REFERENCE_ASSERTED",
+      "proof_level": "RETAINED_RECEIVED_EMAIL",
+      "proves": [
+        "Portfolio confirmed that the information had been received and logged, promised review and confidential preservation, and stated that it would engage with CNMV or other relevant authorities for context."
+      ],
+      "proves_es": "Portfolio confirmó recepción y registro de la información, anunció revisión y conservación confidencial y manifestó que contactaría con CNMV u otras autoridades para obtener contexto.",
+      "public_derivative_state": "PUBLIC_SAFE_MINIMISED_DERIVATIVE",
+      "public_summary": "Portfolio confirmed that the information had been received and logged, promised review and confidential preservation, and stated that it would engage with CNMV or other relevant authorities for context.",
+      "public_summary_es": "Portfolio confirmó recepción y registro de la información, anunció revisión y conservación confidencial y manifestó que contactaría con CNMV u otras autoridades para obtener contexto.",
+      "record_type": "INSTITUTIONAL_ACKNOWLEDGEMENT",
+      "source_batch_id": "PD-SP-ORION-NOTICE-20260905",
+      "source_integrity": {
+        "repository_anchor": "ops/orion-notice-register-input-20260905.json",
+        "sha256": "51092f022de7c4f82a7c69972f85fac9d8339ca3dcc50d501b3e494e6ad7a9aa",
+        "status": "RETAINED_RECEIVED_EMAIL; PUBLIC_SAFE_REVIEW_DESCRIPTOR"
+      },
+      "source_key": "ORION-NOTICE:P-20241212",
+      "source_timezone": "OFFSET_AS_RETURNED_IN_RETAINED_METADATA",
+      "transport_link_state": "SEPARATE_ACT_AND_TRANSPORT_LINKS_IN_CANONICAL_CROSSWALK"
+    },
+    {
+      "attribution_state": "INSTITUTIONAL_NOTICE_NO_PERSONAL_SIGNATORY_ASSERTED",
+      "canonical_anchor_en": "en/institutional-records/#communication-PD-SP-EVT-0165",
+      "canonical_anchor_es": "es/registros-institucionales/#communication-PD-SP-EVT-0165",
+      "channel": "EMAIL",
+      "cohort": "CURATED_SOURCE_PROVED_EVENT",
+      "criminal_responsibility_transfer": false,
+      "direction": "OUTBOUND_TO_INSTITUTION",
+      "does_not_prove": [
+        "These are the sender's allegations. Sending the escalation does not prove its allegations, a failure of statutory duty, receipt by every recipient or board circulation."
+      ],
+      "does_not_prove_es": "Son alegaciones del remitente. El envío no prueba su contenido, incumplimiento de deber legal, recepción por cada destinatario ni circulación al consejo.",
+      "event_date": "2025-01-17",
+      "event_id": "PD-SP-EVT-0165",
+      "event_timestamp": "2025-01-17T12:02:48+00:00",
+      "evidence_state": {
+        "delivery": "NO_ADDITIONAL_DELIVERY_ASSERTION",
+        "destination": "STATED_IN_SOURCE",
+        "filing": "NOT_ESTABLISHED_BY_THIS_SOURCE",
+        "internal_association": "NOT_ESTABLISHED_BY_THIS_SOURCE",
+        "merits": "NO_MERITS_FINDING_OR_CRIMINAL_ATTRIBUTION",
+        "registration": "NOT_ESTABLISHED_BY_THIS_SOURCE",
+        "substantive_examination": "NOT_ESTABLISHED_BY_THIS_SOURCE",
+        "transmission": "SOURCE_TRANSMISSION_OR_ACT_RETAINED"
+      },
+      "institution_key": "PORTFOLIO_CNMV_INDIVIDUAL_ESCALATION",
+      "layer": "OFFICIAL_ACT_OR_CORRESPONDENCE",
+      "linked_transport_event_ids": [],
+      "matter_references": [
+        "ORION Rental SOCIMI",
+        "Sun Park / MYND Yaiza",
+        "RICPE",
+        "PD-SP-SRC-0010"
+      ],
+      "office": "Portfolio / CNMV / individual escalation",
+      "official_reference": "NO_OFFICIAL_REFERENCE_ASSERTED",
+      "proof_level": "RETAINED_SENT_EMAIL_METADATA_AND_CONTENT_REVIEW",
+      "proves": [
+        "Gil sent a further escalation concerning Orion, alleging regulatory failures and media suppression, to Portfolio's channel, CNMV routes and the named individual escalation recipient."
+      ],
+      "proves_es": "Gil remitió una nueva ampliación sobre Orion, con alegaciones de fallos regulatorios y supresión mediática, al canal Portfolio, rutas CNMV y destinatario individual de escalado.",
+      "public_derivative_state": "PUBLIC_SAFE_MINIMISED_DERIVATIVE",
+      "public_summary": "Gil sent a further escalation concerning Orion, alleging regulatory failures and media suppression, to Portfolio's channel, CNMV routes and the named individual escalation recipient.",
+      "public_summary_es": "Gil remitió una nueva ampliación sobre Orion, con alegaciones de fallos regulatorios y supresión mediática, al canal Portfolio, rutas CNMV y destinatario individual de escalado.",
+      "record_type": "OUTBOUND_COMMUNICATION",
+      "source_batch_id": "PD-SP-ORION-NOTICE-20260905",
+      "source_integrity": {
+        "repository_anchor": "ops/orion-notice-register-input-20260905.json",
+        "sha256": "51092f022de7c4f82a7c69972f85fac9d8339ca3dcc50d501b3e494e6ad7a9aa",
+        "status": "RETAINED_SENT_EMAIL_METADATA_AND_CONTENT_REVIEW; PUBLIC_SAFE_REVIEW_DESCRIPTOR"
+      },
+      "source_key": "ORION-NOTICE:P-20250117",
+      "source_timezone": "OFFSET_AS_RETURNED_IN_RETAINED_METADATA",
+      "transport_link_state": "SEPARATE_ACT_AND_TRANSPORT_LINKS_IN_CANONICAL_CROSSWALK"
+    },
+    {
+      "attribution_state": "INSTITUTIONAL_NOTICE_NO_PERSONAL_SIGNATORY_ASSERTED",
+      "canonical_anchor_en": "en/institutional-records/#communication-PD-SP-EVT-0166",
+      "canonical_anchor_es": "es/registros-institucionales/#communication-PD-SP-EVT-0166",
+      "channel": "EMAIL",
+      "cohort": "CURATED_SOURCE_PROVED_EVENT",
+      "criminal_responsibility_transfer": false,
+      "direction": "INBOUND_FROM_INSTITUTION",
+      "does_not_prove": [
+        "This is Portfolio's reported assessment status, not an exonerating judgment or a finding of fraud. Later correspondence referring to 22 March does not replace the retained 21 March message timestamp."
+      ],
+      "does_not_prove_es": "Es el estado de evaluación comunicado por Portfolio, no una sentencia exculpatoria ni una conclusión de fraude. Las referencias posteriores a 22 de marzo no sustituyen la fecha 21 de marzo del mensaje retenido.",
+      "event_date": "2025-03-21",
+      "event_id": "PD-SP-EVT-0166",
+      "event_timestamp": "2025-03-21T20:08:44",
+      "evidence_state": {
+        "delivery": "NO_ADDITIONAL_DELIVERY_ASSERTION",
+        "destination": "STATED_IN_SOURCE",
+        "filing": "NOT_ESTABLISHED_BY_THIS_SOURCE",
+        "internal_association": "NOT_ESTABLISHED_BY_THIS_SOURCE",
+        "merits": "NO_MERITS_FINDING_OR_CRIMINAL_ATTRIBUTION",
+        "registration": "NOT_ESTABLISHED_BY_THIS_SOURCE",
+        "substantive_examination": "INTERNAL_REVIEW_REPORTED_COMPLETED",
+        "transmission": "SOURCE_TRANSMISSION_OR_ACT_RETAINED"
+      },
+      "institution_key": "PORTFOLIO_STOCK_EXCHANGE",
+      "layer": "OFFICIAL_ACT_OR_CORRESPONDENCE",
+      "linked_transport_event_ids": [],
+      "matter_references": [
+        "ORION Rental SOCIMI",
+        "Sun Park / MYND Yaiza",
+        "RICPE",
+        "PD-SP-SRC-0011"
+      ],
+      "office": "Portfolio Stock Exchange",
+      "official_reference": "NO_OFFICIAL_REFERENCE_ASSERTED",
+      "proof_level": "RETAINED_RECEIVED_EMAIL",
+      "proves": [
+        "Portfolio reported an internal investigation over three months, collection of data and review of sources. It said the assessment was completed, subject to possible extension on new evidence, and requested official authority documents rather than merely copies of filed complaints."
+      ],
+      "proves_es": "Portfolio informó de una investigación interna de tres meses, recopilación de datos y examen de fuentes. Declaró terminada la evaluación, sin perjuicio de ampliación con nueva evidencia, y pidió documentos oficiales de autoridades, no meras copias de denuncias presentadas.",
+      "public_derivative_state": "PUBLIC_SAFE_MINIMISED_DERIVATIVE",
+      "public_summary": "Portfolio reported an internal investigation over three months, collection of data and review of sources. It said the assessment was completed, subject to possible extension on new evidence, and requested official authority documents rather than merely copies of filed complaints.",
+      "public_summary_es": "Portfolio informó de una investigación interna de tres meses, recopilación de datos y examen de fuentes. Declaró terminada la evaluación, sin perjuicio de ampliación con nueva evidencia, y pidió documentos oficiales de autoridades, no meras copias de denuncias presentadas.",
+      "record_type": "OFFICIAL_NOTIFICATION",
+      "source_batch_id": "PD-SP-ORION-NOTICE-20260905",
+      "source_integrity": {
+        "repository_anchor": "ops/orion-notice-register-input-20260905.json",
+        "sha256": "51092f022de7c4f82a7c69972f85fac9d8339ca3dcc50d501b3e494e6ad7a9aa",
+        "status": "RETAINED_RECEIVED_EMAIL; PUBLIC_SAFE_REVIEW_DESCRIPTOR"
+      },
+      "source_key": "ORION-NOTICE:P-20250321",
+      "source_timezone": "NOT_STATED; no timezone conversion inferred",
+      "transport_link_state": "SEPARATE_ACT_AND_TRANSPORT_LINKS_IN_CANONICAL_CROSSWALK"
+    },
+    {
+      "attribution_state": "INSTITUTIONAL_NOTICE_NO_PERSONAL_SIGNATORY_ASSERTED",
+      "canonical_anchor_en": "en/institutional-records/#communication-PD-SP-EVT-0167",
+      "canonical_anchor_es": "es/registros-institucionales/#communication-PD-SP-EVT-0167",
+      "channel": "EMAIL",
+      "cohort": "CURATED_SOURCE_PROVED_EVENT",
+      "criminal_responsibility_transfer": false,
+      "direction": "OUTBOUND_TO_INSTITUTION",
+      "does_not_prove": [
+        "An offer to collaborate is not evidence that a meeting took place or that further evidence was accepted."
+      ],
+      "does_not_prove_es": "La oferta de colaboración no acredita reunión celebrada ni aceptación de nueva evidencia.",
+      "event_date": "2025-03-23",
+      "event_id": "PD-SP-EVT-0167",
+      "event_timestamp": "2025-03-23T18:08:27+01:00",
+      "evidence_state": {
+        "delivery": "NO_ADDITIONAL_DELIVERY_ASSERTION",
+        "destination": "STATED_IN_SOURCE",
+        "filing": "NOT_ESTABLISHED_BY_THIS_SOURCE",
+        "internal_association": "NOT_ESTABLISHED_BY_THIS_SOURCE",
+        "merits": "NO_MERITS_FINDING_OR_CRIMINAL_ATTRIBUTION",
+        "registration": "NOT_ESTABLISHED_BY_THIS_SOURCE",
+        "substantive_examination": "NOT_ESTABLISHED_BY_THIS_SOURCE",
+        "transmission": "SOURCE_TRANSMISSION_OR_ACT_RETAINED"
+      },
+      "institution_key": "PORTFOLIO_STOCK_EXCHANGE",
+      "layer": "OFFICIAL_ACT_OR_CORRESPONDENCE",
+      "linked_transport_event_ids": [],
+      "matter_references": [
+        "ORION Rental SOCIMI",
+        "Sun Park / MYND Yaiza",
+        "RICPE",
+        "PD-SP-SRC-0012"
+      ],
+      "office": "Portfolio Stock Exchange",
+      "official_reference": "NO_OFFICIAL_REFERENCE_ASSERTED",
+      "proof_level": "RETAINED_SENT_EMAIL",
+      "proves": [
+        "Gil followed up with Portfolio, thanked it for the response and proposed in-person collaboration."
+      ],
+      "proves_es": "Gil dio seguimiento a Portfolio, agradeció su respuesta y propuso colaboración presencial.",
+      "public_derivative_state": "PUBLIC_SAFE_MINIMISED_DERIVATIVE",
+      "public_summary": "Gil followed up with Portfolio, thanked it for the response and proposed in-person collaboration.",
+      "public_summary_es": "Gil dio seguimiento a Portfolio, agradeció su respuesta y propuso colaboración presencial.",
+      "record_type": "OUTBOUND_COMMUNICATION",
+      "source_batch_id": "PD-SP-ORION-NOTICE-20260905",
+      "source_integrity": {
+        "repository_anchor": "ops/orion-notice-register-input-20260905.json",
+        "sha256": "51092f022de7c4f82a7c69972f85fac9d8339ca3dcc50d501b3e494e6ad7a9aa",
+        "status": "RETAINED_SENT_EMAIL; PUBLIC_SAFE_REVIEW_DESCRIPTOR"
+      },
+      "source_key": "ORION-NOTICE:P-20250323",
+      "source_timezone": "OFFSET_AS_RETURNED_IN_RETAINED_METADATA",
+      "transport_link_state": "SEPARATE_ACT_AND_TRANSPORT_LINKS_IN_CANONICAL_CROSSWALK"
+    },
+    {
+      "attribution_state": "INSTITUTIONAL_NOTICE_NO_PERSONAL_SIGNATORY_ASSERTED",
+      "canonical_anchor_en": "en/institutional-records/#communication-PD-SP-EVT-0168",
+      "canonical_anchor_es": "es/registros-institucionales/#communication-PD-SP-EVT-0168",
+      "channel": "EMAIL",
+      "cohort": "CURATED_SOURCE_PROVED_EVENT",
+      "criminal_responsibility_transfer": false,
+      "direction": "OUTBOUND_TO_INSTITUTION",
+      "does_not_prove": [
+        "This preliminary request does not itself prove delivery of the full evidence, formal admission or a legally adjudicated protected status."
+      ],
+      "does_not_prove_es": "Esta solicitud preliminar no prueba entrega del expediente completo, admisión formal ni reconocimiento judicial del estatuto de protección.",
+      "event_date": "2025-12-02",
+      "event_id": "PD-SP-EVT-0168",
+      "event_timestamp": "2025-12-02T07:43:36",
+      "evidence_state": {
+        "delivery": "NO_ADDITIONAL_DELIVERY_ASSERTION",
+        "destination": "STATED_IN_SOURCE",
+        "filing": "NOT_ESTABLISHED_BY_THIS_SOURCE",
+        "internal_association": "NOT_ESTABLISHED_BY_THIS_SOURCE",
+        "merits": "NO_MERITS_FINDING_OR_CRIMINAL_ATTRIBUTION",
+        "registration": "NOT_ESTABLISHED_BY_THIS_SOURCE",
+        "substantive_examination": "NOT_ESTABLISHED_BY_THIS_SOURCE",
+        "transmission": "SOURCE_TRANSMISSION_OR_ACT_RETAINED"
+      },
+      "institution_key": "CAJASIETE",
+      "layer": "OFFICIAL_ACT_OR_CORRESPONDENCE",
+      "linked_transport_event_ids": [],
+      "matter_references": [
+        "ORION Rental SOCIMI",
+        "Sun Park / MYND Yaiza",
+        "RICPE",
+        "PD-SP-SRC-0013"
+      ],
+      "office": "Cajasiete",
+      "official_reference": "NO_OFFICIAL_REFERENCE_ASSERTED",
+      "proof_level": "RETAINED_SENT_EMAIL",
+      "proves": [
+        "Gil asked Cajasiete's channel manager for receipt/case-opening confirmation, independence and conflict assurances, confidentiality and protection before providing a structured evidential submission."
+      ],
+      "proves_es": "Gil pidió al gestor del canal de Cajasiete confirmación de recepción/apertura, independencia y ausencia de conflictos, confidencialidad y protección antes de aportar una comunicación probatoria estructurada.",
+      "public_derivative_state": "PUBLIC_SAFE_MINIMISED_DERIVATIVE",
+      "public_summary": "Gil asked Cajasiete's channel manager for receipt/case-opening confirmation, independence and conflict assurances, confidentiality and protection before providing a structured evidential submission.",
+      "public_summary_es": "Gil pidió al gestor del canal de Cajasiete confirmación de recepción/apertura, independencia y ausencia de conflictos, confidencialidad y protección antes de aportar una comunicación probatoria estructurada.",
+      "record_type": "OUTBOUND_COMMUNICATION",
+      "source_batch_id": "PD-SP-ORION-NOTICE-20260905",
+      "source_integrity": {
+        "repository_anchor": "ops/orion-notice-register-input-20260905.json",
+        "sha256": "51092f022de7c4f82a7c69972f85fac9d8339ca3dcc50d501b3e494e6ad7a9aa",
+        "status": "RETAINED_SENT_EMAIL; PUBLIC_SAFE_REVIEW_DESCRIPTOR"
+      },
+      "source_key": "ORION-NOTICE:C-20251202",
+      "source_timezone": "NOT_STATED; no timezone conversion inferred",
+      "transport_link_state": "SEPARATE_ACT_AND_TRANSPORT_LINKS_IN_CANONICAL_CROSSWALK"
+    },
+    {
+      "attribution_state": "INSTITUTIONAL_NOTICE_NO_PERSONAL_SIGNATORY_ASSERTED",
+      "canonical_anchor_en": "en/institutional-records/#communication-PD-SP-EVT-0169",
+      "canonical_anchor_es": "es/registros-institucionales/#communication-PD-SP-EVT-0169",
+      "channel": "EMAIL",
+      "cohort": "CURATED_SOURCE_PROVED_EVENT",
+      "criminal_responsibility_transfer": false,
+      "direction": "INBOUND_FROM_INSTITUTION",
+      "does_not_prove": [
+        "The assurances and channel invitation are documented; actual conflict checks and substantive investigation are not established by this email."
+      ],
+      "does_not_prove_es": "Constan las garantías y la invitación al canal; este correo no acredita las comprobaciones de conflictos efectivamente realizadas ni una investigación sustantiva.",
+      "event_date": "2025-12-10",
+      "event_id": "PD-SP-EVT-0169",
+      "event_timestamp": "2025-12-10T10:25:53",
+      "evidence_state": {
+        "delivery": "PRELIMINARY_REQUEST_ACKNOWLEDGED",
+        "destination": "STATED_IN_SOURCE",
+        "filing": "NOT_ESTABLISHED_BY_THIS_SOURCE",
+        "internal_association": "NOT_ESTABLISHED_BY_THIS_SOURCE",
+        "merits": "NO_MERITS_FINDING_OR_CRIMINAL_ATTRIBUTION",
+        "registration": "NOT_ESTABLISHED_BY_THIS_SOURCE",
+        "substantive_examination": "NOT_ESTABLISHED_BY_THIS_SOURCE",
+        "transmission": "SOURCE_TRANSMISSION_OR_ACT_RETAINED"
+      },
+      "institution_key": "CAJASIETE",
+      "layer": "OFFICIAL_ACT_OR_CORRESPONDENCE",
+      "linked_transport_event_ids": [],
+      "matter_references": [
+        "ORION Rental SOCIMI",
+        "Sun Park / MYND Yaiza",
+        "RICPE",
+        "PD-SP-SRC-0014"
+      ],
+      "office": "Cajasiete",
+      "official_reference": "NO_OFFICIAL_REFERENCE_ASSERTED",
+      "proof_level": "RETAINED_RECEIVED_EMAIL",
+      "proves": [
+        "Cajasiete directed Gil to its internal reporting system and gave assurances of independence, confidentiality, non-retaliation and recusal/reassignment if a potential conflict were identified."
+      ],
+      "proves_es": "Cajasiete remitió a Gil a su sistema interno de información y aseguró independencia, confidencialidad, ausencia de represalias e inhibición/reasignación ante un potencial conflicto.",
+      "public_derivative_state": "PUBLIC_SAFE_MINIMISED_DERIVATIVE",
+      "public_summary": "Cajasiete directed Gil to its internal reporting system and gave assurances of independence, confidentiality, non-retaliation and recusal/reassignment if a potential conflict were identified.",
+      "public_summary_es": "Cajasiete remitió a Gil a su sistema interno de información y aseguró independencia, confidencialidad, ausencia de represalias e inhibición/reasignación ante un potencial conflicto.",
+      "record_type": "INSTITUTIONAL_ACKNOWLEDGEMENT",
+      "source_batch_id": "PD-SP-ORION-NOTICE-20260905",
+      "source_integrity": {
+        "repository_anchor": "ops/orion-notice-register-input-20260905.json",
+        "sha256": "51092f022de7c4f82a7c69972f85fac9d8339ca3dcc50d501b3e494e6ad7a9aa",
+        "status": "RETAINED_RECEIVED_EMAIL; PUBLIC_SAFE_REVIEW_DESCRIPTOR"
+      },
+      "source_key": "ORION-NOTICE:C-20251210",
+      "source_timezone": "NOT_STATED; no timezone conversion inferred",
+      "transport_link_state": "SEPARATE_ACT_AND_TRANSPORT_LINKS_IN_CANONICAL_CROSSWALK"
+    },
+    {
+      "attribution_state": "INSTITUTIONAL_NOTICE_NO_PERSONAL_SIGNATORY_ASSERTED",
+      "canonical_anchor_en": "en/institutional-records/#communication-PD-SP-EVT-0170",
+      "canonical_anchor_es": "es/registros-institucionales/#communication-PD-SP-EVT-0170",
+      "channel": "EMAIL",
+      "cohort": "CURATED_SOURCE_PROVED_EVENT",
+      "criminal_responsibility_transfer": false,
+      "direction": "INBOUND_FROM_INSTITUTION",
+      "does_not_prove": [
+        "The notice proves the stated reasons and announced action, not their legal correctness, the original submission's complete contents or actual destruction. The native submission date and attachment manifest remain open."
+      ],
+      "does_not_prove_es": "La notificación prueba los motivos expresados y la actuación anunciada, no su corrección jurídica, el contenido íntegro de la presentación original ni la destrucción efectiva. Siguen pendientes fecha y manifiesto de anexos de la presentación nativa.",
+      "event_date": "2026-04-28",
+      "event_id": "PD-SP-EVT-0170",
+      "event_timestamp": "2026-04-28T08:10:19",
+      "evidence_state": {
+        "delivery": "NO_ADDITIONAL_DELIVERY_ASSERTION",
+        "destination": "STATED_IN_SOURCE",
+        "filing": "NOT_ESTABLISHED_BY_THIS_SOURCE",
+        "internal_association": "NOT_ESTABLISHED_BY_THIS_SOURCE",
+        "merits": "NO_MERITS_FINDING_OR_CRIMINAL_ATTRIBUTION",
+        "registration": "CHANNEL_REFERENCE_IN_NOTICE",
+        "substantive_examination": "NOT_ESTABLISHED_BY_THIS_SOURCE",
+        "transmission": "SOURCE_TRANSMISSION_OR_ACT_RETAINED"
+      },
+      "institution_key": "CAJASIETE",
+      "layer": "OFFICIAL_ACT_OR_CORRESPONDENCE",
+      "linked_transport_event_ids": [],
+      "matter_references": [
+        "ORION Rental SOCIMI",
+        "Sun Park / MYND Yaiza",
+        "RICPE",
+        "PD-SP-SRC-0015",
+        "Communication 6"
+      ],
+      "office": "Cajasiete",
+      "official_reference": "Communication 6",
+      "proof_level": "RETAINED_RECEIVED_CHANNEL_EMAIL",
+      "proves": [
+        "Cajasiete notified inadmission of communication 6. Its stated reasons included public information/rumour, possible personal conflict outside the organisation, scope exclusions and inability to investigate. It said the information would be destroyed."
+      ],
+      "proves_es": "Cajasiete notificó la inadmisión de la comunicación 6. Invocó información pública/rumor, posible conflicto personal ajeno a la organización, exclusiones de ámbito e imposibilidad de investigar. Anunció la destrucción de la información.",
+      "public_derivative_state": "PUBLIC_SAFE_MINIMISED_DERIVATIVE",
+      "public_summary": "Cajasiete notified inadmission of communication 6. Its stated reasons included public information/rumour, possible personal conflict outside the organisation, scope exclusions and inability to investigate. It said the information would be destroyed.",
+      "public_summary_es": "Cajasiete notificó la inadmisión de la comunicación 6. Invocó información pública/rumor, posible conflicto personal ajeno a la organización, exclusiones de ámbito e imposibilidad de investigar. Anunció la destrucción de la información.",
+      "record_type": "OFFICIAL_NOTIFICATION",
+      "source_batch_id": "PD-SP-ORION-NOTICE-20260905",
+      "source_integrity": {
+        "repository_anchor": "ops/orion-notice-register-input-20260905.json",
+        "sha256": "51092f022de7c4f82a7c69972f85fac9d8339ca3dcc50d501b3e494e6ad7a9aa",
+        "status": "RETAINED_RECEIVED_CHANNEL_EMAIL; PUBLIC_SAFE_REVIEW_DESCRIPTOR"
+      },
+      "source_key": "ORION-NOTICE:C-20260428",
+      "source_timezone": "NOT_STATED; no timezone conversion inferred",
+      "transport_link_state": "SEPARATE_ACT_AND_TRANSPORT_LINKS_IN_CANONICAL_CROSSWALK"
+    },
+    {
+      "attribution_state": "INSTITUTIONAL_NOTICE_NO_PERSONAL_SIGNATORY_ASSERTED",
+      "canonical_anchor_en": "en/institutional-records/#communication-PD-SP-EVT-0171",
+      "canonical_anchor_es": "es/registros-institucionales/#communication-PD-SP-EVT-0171",
+      "channel": "EMAIL",
+      "cohort": "CURATED_SOURCE_PROVED_EVENT",
+      "criminal_responsibility_transfer": false,
+      "direction": "OUTBOUND_TO_INSTITUTION",
+      "does_not_prove": [
+        "The complete native 20 August submission and attachment manifest have not been reconciled in this release. The acknowledgement does not establish acceptance of its allegations."
+      ],
+      "does_not_prove_es": "La comunicación nativa completa del 20 de agosto y su manifiesto de anexos no se han conciliado en esta entrega. El acuse no acredita aceptación de sus alegaciones.",
+      "event_date": "2026-08-20",
+      "event_id": "PD-SP-EVT-0171",
+      "evidence_state": {
+        "delivery": "ATTESTED_BY_27_AUG_ACKNOWLEDGEMENT",
+        "destination": "STATED_IN_SOURCE",
+        "filing": "NOT_ESTABLISHED_BY_THIS_SOURCE",
+        "internal_association": "NOT_ESTABLISHED_BY_THIS_SOURCE",
+        "merits": "NO_MERITS_FINDING_OR_CRIMINAL_ATTRIBUTION",
+        "registration": "NOT_ESTABLISHED_BY_THIS_SOURCE",
+        "substantive_examination": "NOT_ESTABLISHED_BY_THIS_SOURCE",
+        "transmission": "DATE_ATTESTED_BY_LINKED_SOURCE"
+      },
+      "institution_key": "CNMV",
+      "layer": "OFFICIAL_ACT_OR_CORRESPONDENCE",
+      "linked_transport_event_ids": [],
+      "matter_references": [
+        "ORION Rental SOCIMI",
+        "Sun Park / MYND Yaiza",
+        "RICPE",
+        "PD-SP-SRC-0018"
+      ],
+      "office": "CNMV",
+      "official_reference": "NO_OFFICIAL_REFERENCE_ASSERTED",
+      "proof_level": "COMMUNICATION_DATE_ATTESTED_BY_LATER_RECIPIENT_ACKNOWLEDGEMENT",
+      "proves": [
+        "CNMV's later acknowledgement identifies a new RICPE communication sent on 20 August. This date-specific communication is registered from that recipient confirmation."
+      ],
+      "proves_es": "El acuse posterior de CNMV identifica una nueva comunicación RICPE remitida el 20 de agosto. Se registra esta comunicación individual desde la confirmación del destinatario.",
+      "public_derivative_state": "PUBLIC_SAFE_MINIMISED_DERIVATIVE",
+      "public_summary": "CNMV's later acknowledgement identifies a new RICPE communication sent on 20 August. This date-specific communication is registered from that recipient confirmation.",
+      "public_summary_es": "El acuse posterior de CNMV identifica una nueva comunicación RICPE remitida el 20 de agosto. Se registra esta comunicación individual desde la confirmación del destinatario.",
+      "record_type": "OUTBOUND_COMMUNICATION",
+      "source_batch_id": "PD-SP-ORION-NOTICE-20260905",
+      "source_integrity": {
+        "repository_anchor": "ops/orion-notice-register-input-20260905.json",
+        "sha256": "51092f022de7c4f82a7c69972f85fac9d8339ca3dcc50d501b3e494e6ad7a9aa",
+        "status": "COMMUNICATION_DATE_ATTESTED_BY_LATER_RECIPIENT_ACKNOWLEDGEMENT; PUBLIC_SAFE_REVIEW_DESCRIPTOR"
+      },
+      "source_key": "ORION-NOTICE:N-20260820",
+      "source_timezone": "NOT_STATED; no timezone conversion inferred",
+      "transport_link_state": "SEPARATE_ACT_AND_TRANSPORT_LINKS_IN_CANONICAL_CROSSWALK"
+    },
+    {
+      "attachment_count": 4,
+      "attachment_count_basis": "SOURCE_ATTACHMENT_DESCRIPTORS; decorative inline signatures excluded",
+      "attribution_state": "INSTITUTIONAL_NOTICE_NO_PERSONAL_SIGNATORY_ASSERTED",
+      "canonical_anchor_en": "en/institutional-records/#communication-PD-SP-EVT-0172",
+      "canonical_anchor_es": "es/registros-institucionales/#communication-PD-SP-EVT-0172",
+      "channel": "EMAIL",
+      "cohort": "CURATED_SOURCE_PROVED_EVENT",
+      "criminal_responsibility_transfer": false,
+      "direction": "OUTBOUND_TO_INSTITUTION",
+      "does_not_prove": [
+        "The earlier two sends must not be credited with delivery of these four exhibits. The visual exhibits are explanatory indexes, not primary findings. Board circulation was requested, not presumed."
+      ],
+      "does_not_prove_es": "No debe atribuirse a los dos envíos previos entrega de estos cuatro anexos. Los gráficos son índices explicativos, no conclusiones primarias. La circulación al consejo fue solicitada, no presumida.",
+      "event_date": "2026-08-22",
+      "event_id": "PD-SP-EVT-0172",
+      "event_timestamp": "2026-08-22T07:11:41-04:00",
+      "evidence_state": {
+        "delivery": "NO_ADDITIONAL_DELIVERY_ASSERTION",
+        "destination": "STATED_IN_SOURCE",
+        "filing": "NOT_ESTABLISHED_BY_THIS_SOURCE",
+        "internal_association": "NOT_ESTABLISHED_BY_THIS_SOURCE",
+        "merits": "NO_MERITS_FINDING_OR_CRIMINAL_ATTRIBUTION",
+        "registration": "NOT_ESTABLISHED_BY_THIS_SOURCE",
+        "substantive_examination": "NOT_ESTABLISHED_BY_THIS_SOURCE",
+        "transmission": "SOURCE_TRANSMISSION_OR_ACT_RETAINED"
+      },
+      "institution_key": "PORTFOLIO_STOCK_EXCHANGE",
+      "layer": "OFFICIAL_ACT_OR_CORRESPONDENCE",
+      "linked_transport_event_ids": [],
+      "matter_references": [
+        "ORION Rental SOCIMI",
+        "Sun Park / MYND Yaiza",
+        "RICPE",
+        "PD-SP-SRC-0016",
+        "Requests 81 / 82"
+      ],
+      "office": "Portfolio Stock Exchange",
+      "official_reference": "Requests 81 / 82",
+      "proof_level": "RETAINED_SENT_EMAIL_WITH_ATTACHMENT_METADATA",
+      "proves": [
+        "Gil corrected two earlier attachment failures and actually sent four ES/EN visual exhibits with the San Telmo/PwC source routes. He requested consolidation, preservation and appropriate internal escalation, including the board where applicable."
+      ],
+      "proves_es": "Gil corrigió dos fallos previos de adjuntos y remitió efectivamente cuatro gráficos ES/EN con las rutas fuente San Telmo/PwC. Solicitó consolidación, preservación y escalado interno competente, incluido el consejo cuando procediera.",
+      "public_derivative_state": "PUBLIC_SAFE_MINIMISED_DERIVATIVE",
+      "public_summary": "Gil corrected two earlier attachment failures and actually sent four ES/EN visual exhibits with the San Telmo/PwC source routes. He requested consolidation, preservation and appropriate internal escalation, including the board where applicable.",
+      "public_summary_es": "Gil corrigió dos fallos previos de adjuntos y remitió efectivamente cuatro gráficos ES/EN con las rutas fuente San Telmo/PwC. Solicitó consolidación, preservación y escalado interno competente, incluido el consejo cuando procediera.",
+      "record_type": "OUTBOUND_COMMUNICATION",
+      "source_batch_id": "PD-SP-ORION-NOTICE-20260905",
+      "source_integrity": {
+        "repository_anchor": "ops/orion-notice-register-input-20260905.json",
+        "sha256": "51092f022de7c4f82a7c69972f85fac9d8339ca3dcc50d501b3e494e6ad7a9aa",
+        "status": "RETAINED_SENT_EMAIL_WITH_ATTACHMENT_METADATA; PUBLIC_SAFE_REVIEW_DESCRIPTOR"
+      },
+      "source_key": "ORION-NOTICE:P-20260822",
+      "source_timezone": "OFFSET_AS_RETURNED_IN_RETAINED_METADATA",
+      "transport_link_state": "SEPARATE_ACT_AND_TRANSPORT_LINKS_IN_CANONICAL_CROSSWALK"
+    },
+    {
+      "attribution_state": "INSTITUTIONAL_NOTICE_NO_PERSONAL_SIGNATORY_ASSERTED",
+      "canonical_anchor_en": "en/institutional-records/#communication-PD-SP-EVT-0173",
+      "canonical_anchor_es": "es/registros-institucionales/#communication-PD-SP-EVT-0173",
+      "channel": "EMAIL",
+      "cohort": "CURATED_SOURCE_PROVED_EVENT",
+      "criminal_responsibility_transfer": false,
+      "direction": "INBOUND_FROM_INSTITUTION",
+      "does_not_prove": [
+        "This is intake attested by the later decision, not a newly located standalone receipt. The relationship with the separately registered 24 August REGAGE event PD-SP-EVT-0152 is a reconciliation question, not assumed identity."
+      ],
+      "does_not_prove_es": "Es entrada acreditada por la resolución posterior, no un nuevo acuse autónomo localizado. La relación con el evento REGAGE separado del 24 de agosto PD-SP-EVT-0152 requiere conciliación; no se presume identidad.",
+      "event_date": "2026-08-25",
+      "event_id": "PD-SP-EVT-0173",
+      "evidence_state": {
+        "delivery": "INTAKE_RECORDED_IN_SIGNED_DECISION",
+        "destination": "STATED_IN_SOURCE",
+        "filing": "NOT_ESTABLISHED_BY_THIS_SOURCE",
+        "internal_association": "NOT_ESTABLISHED_BY_THIS_SOURCE",
+        "merits": "NO_MERITS_FINDING_OR_CRIMINAL_ATTRIBUTION",
+        "registration": "NOT_ESTABLISHED_BY_THIS_SOURCE",
+        "substantive_examination": "NOT_ESTABLISHED_BY_THIS_SOURCE",
+        "transmission": "DATE_ATTESTED_BY_LINKED_SOURCE"
+      },
+      "institution_key": "CNMV",
+      "layer": "OFFICIAL_ACT_OR_CORRESPONDENCE",
+      "linked_transport_event_ids": [],
+      "matter_references": [
+        "ORION Rental SOCIMI",
+        "Sun Park / MYND Yaiza",
+        "RICPE",
+        "PD-SP-SRC-0020",
+        "2026114903",
+        "PD-SP-EVT-0152: separate REGAGE entry; identity bridge unresolved"
+      ],
+      "office": "CNMV",
+      "official_reference": "2026114903",
+      "proof_level": "REGISTRY_INTAKE_DATE_REPORTED_IN_SIGNED_DECISION",
+      "proves": [
+        "CNMV's signed decision records receipt on 25 August of public-information request 2026114903 covering RICPE/Sun Park/MYND source versions, Series F/G, conditions, conflicts, controls and advisers."
+      ],
+      "proves_es": "La resolución firmada de CNMV registra la entrada el 25 de agosto de la solicitud de información pública 2026114903 sobre versiones RICPE/Sun Park/MYND, Series F/G, condiciones, conflictos, controles y asesores.",
+      "public_derivative_state": "PUBLIC_SAFE_MINIMISED_DERIVATIVE",
+      "public_summary": "CNMV's signed decision records receipt on 25 August of public-information request 2026114903 covering RICPE/Sun Park/MYND source versions, Series F/G, conditions, conflicts, controls and advisers.",
+      "public_summary_es": "La resolución firmada de CNMV registra la entrada el 25 de agosto de la solicitud de información pública 2026114903 sobre versiones RICPE/Sun Park/MYND, Series F/G, condiciones, conflictos, controles y asesores.",
+      "record_type": "OFFICIAL_ACT_UNCLASSIFIED",
+      "source_batch_id": "PD-SP-ORION-NOTICE-20260905",
+      "source_integrity": {
+        "repository_anchor": "ops/orion-notice-register-input-20260905.json",
+        "sha256": "51092f022de7c4f82a7c69972f85fac9d8339ca3dcc50d501b3e494e6ad7a9aa",
+        "status": "REGISTRY_INTAKE_DATE_REPORTED_IN_SIGNED_DECISION; PUBLIC_SAFE_REVIEW_DESCRIPTOR"
+      },
+      "source_key": "ORION-NOTICE:N-20260825",
+      "source_timezone": "NOT_STATED; no timezone conversion inferred",
+      "transport_link_state": "SEPARATE_ACT_AND_TRANSPORT_LINKS_IN_CANONICAL_CROSSWALK"
+    },
+    {
+      "attribution_state": "INSTITUTIONAL_NOTICE_NO_PERSONAL_SIGNATORY_ASSERTED",
+      "canonical_anchor_en": "en/institutional-records/#communication-PD-SP-EVT-0174",
+      "canonical_anchor_es": "es/registros-institucionales/#communication-PD-SP-EVT-0174",
+      "channel": "EMAIL",
+      "cohort": "CURATED_SOURCE_PROVED_EVENT",
+      "criminal_responsibility_transfer": false,
+      "direction": "INBOUND_FROM_INSTITUTION",
+      "does_not_prove": [
+        "This does not identify every board recipient, prove full-board circulation, constitute an express formal reopening decision or establish misconduct. The source's affirmative review/preservation statements must be preserved, not rewritten as silence."
+      ],
+      "does_not_prove_es": "No identifica a cada consejero destinatario, no acredita circulación al consejo completo, no constituye resolución expresa de reapertura formal ni prueba irregularidad. Deben preservarse sus afirmaciones de revisión/preservación, sin reescribirlas como silencio.",
+      "event_date": "2026-08-26",
+      "event_id": "PD-SP-EVT-0174",
+      "event_timestamp": "2026-08-26T16:55:03",
+      "evidence_state": {
+        "delivery": "FOUR_EXHIBITS_CONFIRMED",
+        "destination": "STATED_IN_SOURCE",
+        "filing": "NOT_ESTABLISHED_BY_THIS_SOURCE",
+        "internal_association": "CONFIRMED_TO_EXISTING_FILE",
+        "merits": "NO_MERITS_FINDING_OR_CRIMINAL_ATTRIBUTION",
+        "registration": "NOT_ESTABLISHED_BY_THIS_SOURCE",
+        "substantive_examination": "CONTEXTUAL_REVIEW_CONFIRMED",
+        "transmission": "SOURCE_TRANSMISSION_OR_ACT_RETAINED"
+      },
+      "institution_key": "PORTFOLIO_STOCK_EXCHANGE",
+      "layer": "OFFICIAL_ACT_OR_CORRESPONDENCE",
+      "linked_transport_event_ids": [],
+      "matter_references": [
+        "ORION Rental SOCIMI",
+        "Sun Park / MYND Yaiza",
+        "RICPE",
+        "PD-SP-SRC-0017",
+        "Requests 81 / 82"
+      ],
+      "office": "Portfolio Stock Exchange",
+      "official_reference": "Requests 81 / 82",
+      "proof_level": "RETAINED_RECEIVED_EMAIL",
+      "proves": [
+        "Portfolio confirmed receipt of the four exhibits on 22 August, inclusion in the file opened in December 2024, consolidation of requests 81/82, preservation, contextual review and referral to relevant internal functions. It identified its Legal/Compliance head as custodian."
+      ],
+      "proves_es": "Portfolio confirmó recepción de los cuatro anexos el 22 de agosto, incorporación al expediente abierto en diciembre de 2024, consolidación de solicitudes 81/82, preservación, revisión contextual y remisión a funciones internas competentes. Identificó a su responsable Legal/Compliance como custodio.",
+      "public_derivative_state": "PUBLIC_SAFE_MINIMISED_DERIVATIVE",
+      "public_summary": "Portfolio confirmed receipt of the four exhibits on 22 August, inclusion in the file opened in December 2024, consolidation of requests 81/82, preservation, contextual review and referral to relevant internal functions. It identified its Legal/Compliance head as custodian.",
+      "public_summary_es": "Portfolio confirmó recepción de los cuatro anexos el 22 de agosto, incorporación al expediente abierto en diciembre de 2024, consolidación de solicitudes 81/82, preservación, revisión contextual y remisión a funciones internas competentes. Identificó a su responsable Legal/Compliance como custodio.",
+      "record_type": "INSTITUTIONAL_ACKNOWLEDGEMENT",
+      "source_batch_id": "PD-SP-ORION-NOTICE-20260905",
+      "source_integrity": {
+        "repository_anchor": "ops/orion-notice-register-input-20260905.json",
+        "sha256": "51092f022de7c4f82a7c69972f85fac9d8339ca3dcc50d501b3e494e6ad7a9aa",
+        "status": "RETAINED_RECEIVED_EMAIL; PUBLIC_SAFE_REVIEW_DESCRIPTOR"
+      },
+      "source_key": "ORION-NOTICE:P-20260826",
+      "source_timezone": "NOT_STATED; no timezone conversion inferred",
+      "transport_link_state": "SEPARATE_ACT_AND_TRANSPORT_LINKS_IN_CANONICAL_CROSSWALK"
+    },
+    {
+      "attribution_state": "INSTITUTIONAL_NOTICE_NO_PERSONAL_SIGNATORY_ASSERTED",
+      "canonical_anchor_en": "en/institutional-records/#communication-PD-SP-EVT-0175",
+      "canonical_anchor_es": "es/registros-institucionales/#communication-PD-SP-EVT-0175",
+      "channel": "EMAIL",
+      "cohort": "CURATED_SOURCE_PROVED_EVENT",
+      "criminal_responsibility_transfer": false,
+      "direction": "INBOUND_FROM_INSTITUTION",
+      "does_not_prove": [
+        "Acknowledgement proves receipt, not investigation, an adverse finding, clearance, or a supervisory decision."
+      ],
+      "does_not_prove_es": "El acuse acredita recepción, no investigación, conclusión adversa, validación ni decisión supervisora.",
+      "event_date": "2026-08-27",
+      "event_id": "PD-SP-EVT-0175",
+      "event_timestamp": "2026-08-27T09:30:37",
+      "evidence_state": {
+        "delivery": "CONFIRMED",
+        "destination": "STATED_IN_SOURCE",
+        "filing": "NOT_ESTABLISHED_BY_THIS_SOURCE",
+        "internal_association": "NOT_ESTABLISHED_BY_THIS_SOURCE",
+        "merits": "NO_MERITS_FINDING_OR_CRIMINAL_ATTRIBUTION",
+        "registration": "NOT_ESTABLISHED_BY_THIS_SOURCE",
+        "substantive_examination": "NOT_ESTABLISHED_BY_THIS_SOURCE",
+        "transmission": "SOURCE_TRANSMISSION_OR_ACT_RETAINED"
+      },
+      "institution_key": "CNMV",
+      "layer": "OFFICIAL_ACT_OR_CORRESPONDENCE",
+      "linked_transport_event_ids": [],
+      "matter_references": [
+        "ORION Rental SOCIMI",
+        "Sun Park / MYND Yaiza",
+        "RICPE",
+        "PD-SP-SRC-0018"
+      ],
+      "office": "CNMV",
+      "official_reference": "NO_OFFICIAL_REFERENCE_ASSERTED",
+      "proof_level": "RETAINED_RECEIVED_EMAIL",
+      "proves": [
+        "CNMV's infringement-reporting function acknowledged the new RICPE communication sent on 20 August."
+      ],
+      "proves_es": "La función de comunicación de infracciones de CNMV acusó recibo de la nueva comunicación RICPE remitida el 20 de agosto.",
+      "public_derivative_state": "PUBLIC_SAFE_MINIMISED_DERIVATIVE",
+      "public_summary": "CNMV's infringement-reporting function acknowledged the new RICPE communication sent on 20 August.",
+      "public_summary_es": "La función de comunicación de infracciones de CNMV acusó recibo de la nueva comunicación RICPE remitida el 20 de agosto.",
+      "record_type": "INSTITUTIONAL_ACKNOWLEDGEMENT",
+      "source_batch_id": "PD-SP-ORION-NOTICE-20260905",
+      "source_integrity": {
+        "repository_anchor": "ops/orion-notice-register-input-20260905.json",
+        "sha256": "51092f022de7c4f82a7c69972f85fac9d8339ca3dcc50d501b3e494e6ad7a9aa",
+        "status": "RETAINED_RECEIVED_EMAIL; PUBLIC_SAFE_REVIEW_DESCRIPTOR"
+      },
+      "source_key": "ORION-NOTICE:N-20260827",
+      "source_timezone": "NOT_STATED; no timezone conversion inferred",
+      "transport_link_state": "SEPARATE_ACT_AND_TRANSPORT_LINKS_IN_CANONICAL_CROSSWALK"
+    },
+    {
+      "attribution_state": "INSTITUTIONAL_NOTICE_NO_PERSONAL_SIGNATORY_ASSERTED",
+      "canonical_anchor_en": "en/institutional-records/#communication-PD-SP-EVT-0176",
+      "canonical_anchor_es": "es/registros-institucionales/#communication-PD-SP-EVT-0176",
+      "channel": "EMAIL",
+      "cohort": "CURATED_SOURCE_PROVED_EVENT",
+      "criminal_responsibility_transfer": false,
+      "direction": "OUTBOUND_TO_INSTITUTION",
+      "does_not_prove": [
+        "The request does not prove internal delivery to the named officers, acceptance of finance, comparability of actual underwriting or a response. No financial concession is made a condition for withholding an allegation."
+      ],
+      "does_not_prove_es": "La solicitud no prueba reparto interno a los cargos indicados, aceptación de financiación, comparabilidad efectiva del análisis ni respuesta. Ninguna concesión financiera se convierte en condición para retener una alegación.",
+      "event_date": "2026-08-27",
+      "event_id": "PD-SP-EVT-0176",
+      "event_timestamp": "2026-08-27T13:56:54",
+      "evidence_state": {
+        "delivery": "NO_ADDITIONAL_DELIVERY_ASSERTION",
+        "destination": "STATED_IN_SOURCE",
+        "filing": "NOT_ESTABLISHED_BY_THIS_SOURCE",
+        "internal_association": "NOT_ESTABLISHED_BY_THIS_SOURCE",
+        "merits": "NO_MERITS_FINDING_OR_CRIMINAL_ATTRIBUTION",
+        "registration": "NOT_ESTABLISHED_BY_THIS_SOURCE",
+        "substantive_examination": "NOT_ESTABLISHED_BY_THIS_SOURCE",
+        "transmission": "SOURCE_TRANSMISSION_OR_ACT_RETAINED"
+      },
+      "institution_key": "CAJASIETE",
+      "layer": "OFFICIAL_ACT_OR_CORRESPONDENCE",
+      "linked_transport_event_ids": [],
+      "matter_references": [
+        "ORION Rental SOCIMI",
+        "Sun Park / MYND Yaiza",
+        "RICPE",
+        "PD-SP-SRC-0019"
+      ],
+      "office": "Cajasiete",
+      "official_reference": "NO_OFFICIAL_REFERENCE_ASSERTED",
+      "proof_level": "RETAINED_SENT_EMAIL",
+      "proves": [
+        "Gil requested a genuine Aweswell/Matkator financing meeting and internal referral to management, risk, commercial and institutional-relations functions. He asked for objective title, ECO valuation, LTV, debt-service, KYC and litigation criteria for his own proposal, not another client's confidential information."
+      ],
+      "proves_es": "Gil solicitó una reunión comercial real de financiación Aweswell/Matkator y remisión interna a dirección, riesgos, comercial y relaciones institucionales. Pidió criterios objetivos de título, tasación ECO, LTV, servicio de deuda, KYC y litigios para su propia propuesta, no información confidencial de otro cliente.",
+      "public_derivative_state": "PUBLIC_SAFE_MINIMISED_DERIVATIVE",
+      "public_summary": "Gil requested a genuine Aweswell/Matkator financing meeting and internal referral to management, risk, commercial and institutional-relations functions. He asked for objective title, ECO valuation, LTV, debt-service, KYC and litigation criteria for his own proposal, not another client's confidential information.",
+      "public_summary_es": "Gil solicitó una reunión comercial real de financiación Aweswell/Matkator y remisión interna a dirección, riesgos, comercial y relaciones institucionales. Pidió criterios objetivos de título, tasación ECO, LTV, servicio de deuda, KYC y litigios para su propia propuesta, no información confidencial de otro cliente.",
+      "record_type": "OUTBOUND_COMMUNICATION",
+      "source_batch_id": "PD-SP-ORION-NOTICE-20260905",
+      "source_integrity": {
+        "repository_anchor": "ops/orion-notice-register-input-20260905.json",
+        "sha256": "51092f022de7c4f82a7c69972f85fac9d8339ca3dcc50d501b3e494e6ad7a9aa",
+        "status": "RETAINED_SENT_EMAIL; PUBLIC_SAFE_REVIEW_DESCRIPTOR"
+      },
+      "source_key": "ORION-NOTICE:C-20260827",
+      "source_timezone": "NOT_STATED; no timezone conversion inferred",
+      "transport_link_state": "SEPARATE_ACT_AND_TRANSPORT_LINKS_IN_CANONICAL_CROSSWALK"
+    },
+    {
+      "attribution_state": "INSTITUTIONAL_NOTICE_NO_PERSONAL_SIGNATORY_ASSERTED",
+      "canonical_anchor_en": "en/institutional-records/#communication-PD-SP-EVT-0177",
+      "canonical_anchor_es": "es/registros-institucionales/#communication-PD-SP-EVT-0177",
+      "channel": "DOCUMENT",
+      "cohort": "CURATED_SOURCE_PROVED_EVENT",
+      "criminal_responsibility_transfer": false,
+      "direction": "INBOUND_FROM_INSTITUTION",
+      "does_not_prove": [
+        "This is a deadline extension, not refusal of access, a substantive disclosure decision, refusal to investigate, clearance or finding on the allegations. The printed registry time has no stated timezone."
+      ],
+      "does_not_prove_es": "Es una ampliación de plazo, no denegación de acceso, decisión sustantiva de información, negativa a investigar, validación ni conclusión sobre las alegaciones. La hora registral impresa no indica huso horario.",
+      "event_date": "2026-09-04",
+      "event_id": "PD-SP-EVT-0177",
+      "event_timestamp": "2026-09-04T12:00:00",
+      "evidence_state": {
+        "delivery": "NO_ADDITIONAL_DELIVERY_ASSERTION",
+        "destination": "STATED_IN_SOURCE",
+        "filing": "NOT_ESTABLISHED_BY_THIS_SOURCE",
+        "internal_association": "NOT_ESTABLISHED_BY_THIS_SOURCE",
+        "merits": "NO_MERITS_FINDING_OR_CRIMINAL_ATTRIBUTION",
+        "registration": "DOCUMENTED_OFFICIAL_ACT",
+        "substantive_examination": "NOT_ESTABLISHED_BY_THIS_SOURCE",
+        "transmission": "SOURCE_TRANSMISSION_OR_ACT_RETAINED"
+      },
+      "institution_key": "CNMV",
+      "layer": "OFFICIAL_ACT_OR_CORRESPONDENCE",
+      "linked_transport_event_ids": [],
+      "matter_references": [
+        "ORION Rental SOCIMI",
+        "Sun Park / MYND Yaiza",
+        "RICPE",
+        "PD-SP-SRC-0020",
+        "2026114903 / outgoing 2026149422",
+        "PD-SP-EVT-0152: separate REGAGE entry; identity bridge unresolved"
+      ],
+      "office": "CNMV",
+      "official_reference": "2026114903 / outgoing 2026149422",
+      "proof_level": "RETAINED_SIGNED_THREE_PAGE_PDF",
+      "proves": [
+        "The signed CNMV decision extends the transparency-request response period by one additional month because of the volume and complexity of the information requested. The decision is separate from its covering email."
+      ],
+      "proves_es": "La resolución firmada de CNMV amplía en un mes adicional el plazo de respuesta a la solicitud de transparencia por el volumen y complejidad de la información. La resolución es distinta de su correo de remisión.",
+      "public_derivative_state": "PUBLIC_SAFE_MINIMISED_DERIVATIVE",
+      "public_summary": "The signed CNMV decision extends the transparency-request response period by one additional month because of the volume and complexity of the information requested. The decision is separate from its covering email.",
+      "public_summary_es": "La resolución firmada de CNMV amplía en un mes adicional el plazo de respuesta a la solicitud de transparencia por el volumen y complejidad de la información. La resolución es distinta de su correo de remisión.",
+      "record_type": "OFFICIAL_DECISION",
+      "source_batch_id": "PD-SP-ORION-NOTICE-20260905",
+      "source_integrity": {
+        "controlling_source_pdf_sha256": "8b6a6e24b2aaec0be20cd86157982572f3f8d99f2d04d9f9d680fc3d2091106a",
+        "repository_anchor": "ops/orion-notice-register-input-20260905.json",
+        "sha256": "51092f022de7c4f82a7c69972f85fac9d8339ca3dcc50d501b3e494e6ad7a9aa",
+        "status": "RETAINED_SIGNED_THREE_PAGE_PDF; PUBLIC_SAFE_REVIEW_DESCRIPTOR"
+      },
+      "source_key": "ORION-NOTICE:N-20260904-DECISION",
+      "source_pages": "1-2",
+      "source_timezone": "NOT_STATED; no timezone conversion inferred",
+      "transport_link_state": "SEPARATE_ACT_AND_TRANSPORT_LINKS_IN_CANONICAL_CROSSWALK"
+    },
+    {
+      "attachment_count": 1,
+      "attachment_count_basis": "SOURCE_ATTACHMENT_DESCRIPTORS; decorative inline signatures excluded",
+      "attribution_state": "INSTITUTIONAL_NOTICE_NO_PERSONAL_SIGNATORY_ASSERTED",
+      "canonical_anchor_en": "en/institutional-records/#communication-PD-SP-EVT-0178",
+      "canonical_anchor_es": "es/registros-institucionales/#communication-PD-SP-EVT-0178",
+      "channel": "DOCUMENT",
+      "cohort": "CURATED_SOURCE_PROVED_EVENT",
+      "criminal_responsibility_transfer": false,
+      "direction": "INBOUND_FROM_INSTITUTION",
+      "does_not_prove": [
+        "This records the covering transmission only. Its unstated-zone timestamp is not directly comparable to the decision's printed registry time; no new merits conclusion or acknowledgment by Gil is inferred."
+      ],
+      "does_not_prove_es": "Se registra únicamente la remisión. Su hora sin huso no se compara directamente con la hora registral impresa; no se deduce nueva conclusión de fondo ni acuse posterior de Gil.",
+      "event_date": "2026-09-04",
+      "event_id": "PD-SP-EVT-0178",
+      "event_timestamp": "2026-09-04T10:21:17",
+      "evidence_state": {
+        "delivery": "NO_ADDITIONAL_DELIVERY_ASSERTION",
+        "destination": "STATED_IN_SOURCE",
+        "filing": "NOT_ESTABLISHED_BY_THIS_SOURCE",
+        "internal_association": "NOT_ESTABLISHED_BY_THIS_SOURCE",
+        "merits": "NO_MERITS_FINDING_OR_CRIMINAL_ATTRIBUTION",
+        "registration": "NOT_ESTABLISHED_BY_THIS_SOURCE",
+        "substantive_examination": "NOT_ESTABLISHED_BY_THIS_SOURCE",
+        "transmission": "SOURCE_TRANSMISSION_OR_ACT_RETAINED"
+      },
+      "institution_key": "CNMV",
+      "layer": "TRANSPORT",
+      "linked_transport_event_ids": [],
+      "matter_references": [
+        "ORION Rental SOCIMI",
+        "Sun Park / MYND Yaiza",
+        "RICPE",
+        "PD-SP-SRC-0021",
+        "2026114903"
+      ],
+      "office": "CNMV",
+      "official_reference": "2026114903",
+      "proof_level": "RETAINED_RECEIVED_EMAIL_WITH_PDF_ATTACHMENT",
+      "proves": [
+        "CNMV's transparency function transmitted the attached response to the request received on 25 August and asked Gil to acknowledge receipt."
+      ],
+      "proves_es": "La función de transparencia de CNMV remitió la respuesta adjunta a la solicitud recibida el 25 de agosto y pidió a Gil acuse de recibo.",
+      "public_derivative_state": "PUBLIC_SAFE_MINIMISED_DERIVATIVE",
+      "public_summary": "CNMV's transparency function transmitted the attached response to the request received on 25 August and asked Gil to acknowledge receipt.",
+      "public_summary_es": "La función de transparencia de CNMV remitió la respuesta adjunta a la solicitud recibida el 25 de agosto y pidió a Gil acuse de recibo.",
+      "record_type": "EMAIL_TRANSPORT",
+      "source_batch_id": "PD-SP-ORION-NOTICE-20260905",
+      "source_integrity": {
+        "repository_anchor": "ops/orion-notice-register-input-20260905.json",
+        "sha256": "51092f022de7c4f82a7c69972f85fac9d8339ca3dcc50d501b3e494e6ad7a9aa",
+        "status": "RETAINED_RECEIVED_EMAIL_WITH_PDF_ATTACHMENT; PUBLIC_SAFE_REVIEW_DESCRIPTOR"
+      },
+      "source_key": "ORION-NOTICE:N-20260904-EMAIL",
+      "source_timezone": "NOT_STATED; no timezone conversion inferred",
+      "transport_link_state": "SEPARATE_ACT_AND_TRANSPORT_LINKS_IN_CANONICAL_CROSSWALK"
     },
     {
       "attachment_count": 0,

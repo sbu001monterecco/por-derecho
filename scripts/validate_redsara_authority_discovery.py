@@ -9,7 +9,7 @@ import sys
 from pathlib import Path
 
 from build_redsara_age_filings_register import OUTPUT, build, serialized
-
+from prepare_orion_notice_register_20260905 import load_notice_events
 
 ROOT = Path(__file__).resolve().parents[1]
 COMMUNICATIONS = ROOT / "assets/data/institutional-communications-register-v1.json"
@@ -61,8 +61,20 @@ def main() -> int:
     incoming = [event for event in events if event.get("direction") == "INBOUND_FROM_INSTITUTION"]
     if len(regage) != 92:
         fail(f"canonical source has {len(regage)} rather than 92 REGAGE events", errors)
-    if len(incoming) != 163:
-        fail(f"canonical source has {len(incoming)} rather than 163 incoming institutional events", errors)
+    # The historical 163-row incoming cohort is preserved, not silently redefined.
+    # New notice rows are independently compared with their controlled source set.
+    notice_expected = {
+        event['event_id']: event for event in load_notice_events(ROOT)
+        if event.get('direction') == 'INBOUND_FROM_INSTITUTION'
+    }
+    legacy_incoming = [event for event in incoming if event.get('source_batch_id') != 'PD-SP-ORION-NOTICE-20260905']
+    notice_found = {event['event_id']: event for event in incoming if event.get('source_batch_id') == 'PD-SP-ORION-NOTICE-20260905'}
+    if len(legacy_incoming) != 163:
+        fail(f"canonical source has {len(legacy_incoming)} rather than 163 legacy incoming institutional events", errors)
+    if notice_found != notice_expected:
+        fail("additive Orion notice incoming cohort differs from its source-controlled records", errors)
+    if len(incoming) != 163 + len(notice_expected):
+        fail("combined incoming-event denominator does not reconcile", errors)
     for event in incoming:
         for field in ("event_id", "event_date", "official_reference", "office", "source_integrity"):
             if not event.get(field):
@@ -107,7 +119,7 @@ def main() -> int:
         for error in errors:
             print(f"FAIL: {error}", file=sys.stderr)
         return 1
-    print("Red SARA/AGE and authority-response discovery controls pass")
+    print("Red SARA/AGE and authority-response discovery controls pass; legacy cohort and additive notice rows reconcile")
     return 0
 
 

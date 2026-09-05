@@ -168,10 +168,17 @@ def build() -> dict[str, Any]:
     non_fiscalia_authority_ids = set(
         communications.get("authority_scan_control", {}).get("new_event_ids", [])
     )
+    # The separately controlled Orion/financial-notice cohort has no
+    # source-allocated Fiscalia proceeding in this release. It remains fully
+    # registered and interlinked in the institutional/Orion projections.
+    non_fiscalia_notice_ids = {
+        event["event_id"] for event in communications["events"]
+        if event.get("source_batch_id") == "PD-SP-ORION-NOTICE-20260905"
+    }
     events = [
         event
         for event in communications["events"]
-        if event.get("event_id") not in non_fiscalia_authority_ids
+        if event.get("event_id") not in non_fiscalia_authority_ids | non_fiscalia_notice_ids
     ]
 
     if len(events) != EXPECTED_EVENTS:
