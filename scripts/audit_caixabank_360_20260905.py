@@ -127,6 +127,10 @@ async def browser_audit():
                     # A cached revisit is separately observed, not inferred from the fresh navigation.
                     if index<2:
                         await page.reload(wait_until='domcontentloaded',timeout=60000);await page.wait_for_timeout(2500)
+                        for img in await page.locator('img').all():
+                            await img.evaluate('(e)=>e.scrollIntoView({behavior:"instant",block:"center"})')
+                            await img.evaluate('(e)=>Promise.race([e.decode().catch(()=>null),new Promise(r=>setTimeout(r,4000))])')
+                        await page.evaluate('scrollTo({top:0,behavior:"instant"})')
                         row['cached_revisit']=await page.evaluate(JS_SNAPSHOT)
                 except Exception as e: row['error']=str(e)
                 row['page_errors']=errors;row['failed_responses']=bad;results.append(row)

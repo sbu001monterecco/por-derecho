@@ -1692,5 +1692,65 @@
       "Fingerprint mismatch proves misconduct"
     ],
     "preparation_correction": "An earlier unexecuted preparation draft contained incorrect receipt metadata and annex labels. It was replaced after independent extraction and hashing of the mounted source, before generation, merge or site deployment."
+  },
+  "supplementary_review": {
+    "review_url": "https://github.com/sbu001monterecco/por-derecho/pull/1469#issuecomment-5553621660",
+    "scope": "Supplementary source observations; public derivatives do not prove pleaded merits or complete native filing.",
+    "legacy_public_copies": {
+      "observed_at": "2026-09-05T17:23:00Z",
+      "observation_basis": "Authenticated exact-current-file retrieval and separate sharing observation; not guest-byte or historical-cache certification.",
+      "state": "CURRENT_FILE_STREAMS_REDACTED; ANONYMOUS_AND_HISTORICAL_COPY_VERIFICATION_OPEN",
+      "files": [
+        {
+          "document": "claim",
+          "pages": 27,
+          "bytes": 836683,
+          "sha256": "810b5e8235d73de84d51f71c4c882b14007468e8b4cb26807b20464326497838"
+        },
+        {
+          "document": "defence",
+          "pages": 47,
+          "bytes": 827907,
+          "sha256": "128ad71243a51562b773a23b101fde79bb8578bb9bde24da337f876363ba2ad2"
+        },
+        {
+          "document": "AC25Jan2021",
+          "pages": 2,
+          "bytes": 78533,
+          "sha256": "f2fe5eb023b71b4bf07977bbb3c425e8f85eccd70069a12089e08d129f97c0d8"
+        }
+      ],
+      "edition_boundary": "Different public redaction editions from the Git derivatives; no underlying-source alteration inferred."
+    },
+    "prior_LPB_proceeding": {
+      "reference": "ORD1468/2023-6",
+      "organ": "JPI11 Valencia",
+      "act": "Auto639/23",
+      "date": "2023-10-05",
+      "result": "Representation-based inadmission after cure request; not a merits decision in Aweswell ORD1859/2023-9.",
+      "source_sha256": "0dd73c311a4bc4ea9308696219036a3ec0ddd68782f357034de8b39eb74ddc21",
+      "canonical_admission": "PENDING_EXISTING_REGISTER_RECONCILIATION_NO_NEW_ID_ALLOCATED"
+    },
+    "adverse_prosecutorial_record": {
+      "reference": "DIPP546/2025",
+      "organ": "Fiscalia Provincial de Valencia",
+      "date": "2025-11-04",
+      "notification_date": "2025-11-06",
+      "result": "Registered and immediately archived for insufficiently particularised facts and rejection of preventive investigation of a possible future witness statement.",
+      "limits": "Not a civil merits judgment or acquittal; no inference of reopening by EG19/2026. Internal JPI23/JPI27 source inconsistency is not a canonical identity change; recital of OLAF allegation is not independent proof of investigation.",
+      "canonical_admission": "PENDING_EXISTING_REGISTER_RECONCILIATION_NO_NEW_ID_ALLOCATED"
+    },
+    "expert_publication_boundary": {
+      "claimant": "62-page source version continuity between 18Oct2024 and 23Apr2025 transmissions; exact Valencia filing unverified. CONFIDENCIAL source, full text and review derivative remain PRIVATE_REVIEW_ONLY.",
+      "defendant": "96-page PKF received version includes annotations on eight pages. 18Oct2024 receipt recovered, but declared annex fingerprint does not match recovered mail-copy SHA256; algorithm not expressly stated. Receipt is not judicial admission or ratification. Licensed-annex and exact-file gates remain open.",
+      "quantum": "No substitution of expert scenarios for pleaded quantum."
+    },
+    "remaining_evidence": [
+      "Match all thirteen receipt-listed claim components and exact filed versions.",
+      "Reconcile existing canonical source/event/proceeding registers before allocating new IDs.",
+      "Reconcile separate Asier/Uria/search worker deltas without reusing occupied identities.",
+      "Verify anonymous current cloud bytes and historical copies separately."
+    ],
+    "source_preservation": "No raw private originals, mailbox locators, confidential reports, personal identifiers or licensed annexes added."
   }
 }

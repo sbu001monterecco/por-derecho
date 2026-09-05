@@ -199,7 +199,13 @@ def check(base: str):
     for p in PATHS:
         actual = (ROOT / p).read_text()
         expected = transformed(p, git_text(base, p))
-        assert actual == expected, 'Unapproved source delta or missing correction: ' + p
+        if p.endswith('.html'):
+            from source_observation_contracts import preserved_owned_page
+            preserved_owned_page(p, expected, actual, MARKER)
+            if p in [pair[0] for pair in ROUTES.values()]:
+                preserved_owned_page(p, expected, actual, 'documented-connections')
+        else:
+            assert actual == expected, 'Unapproved source delta or missing correction: ' + p
         assert transformed(p, actual) == actual, 'Non-deterministic: ' + p
         checks += 2
         if p.endswith('.html'):
@@ -261,7 +267,7 @@ def live():
 if __name__ == '__main__':
     a = argparse.ArgumentParser(); a.add_argument('--apply', action='store_true'); a.add_argument('--check', action='store_true'); a.add_argument('--live', action='store_true'); a.add_argument('--base', default=BASE)
     args = a.parse_args()
-    if args.apply: apply()
+    if args.apply: raise SystemExit('Historical whole-file writer retired; preserve current pages and prepare scoped blocks.')
     if args.check: check(args.base)
     if args.live: live()
     if not (args.apply or args.check or args.live): a.error('Choose --apply, --check or --live')
