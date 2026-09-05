@@ -1,0 +1,36 @@
+name: Publication controller
+on:
+  issue_comment:
+    types: [created]
+permissions:
+  contents: read
+concurrency:
+  group: por-derecho-publication
+  cancel-in-progress: false
+  queue: max
+jobs:
+  control:
+    if: github.event.issue.number == 1428 && github.event.comment.user.login == 'sbu001monterecco' && github.event.comment.author_association == 'OWNER' && startsWith(github.event.comment.body, '/pd-release ')
+    runs-on: ubuntu-latest
+    timeout-minutes: 18
+    permissions:
+      contents: write
+      actions: read
+      checks: read
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          ref: main
+          fetch-depth: 1
+          persist-credentials: false
+      - name: Process authenticated exact-SHA permit or recovery; never merge main
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python3 scripts/pd_release_controller.py
+      - uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
+        if: always()
+        with:
+          name: publication-controller-${{ github.run_id }}
+          path: /tmp/pd-release-controller/
+          if-no-files-found: warn
+          retention-days: 30
