@@ -22,46 +22,126 @@ concurrency:
   group: cnmv-interim-measures-${{ github.ref }}
   cancel-in-progress: false
 jobs:
-  inspect:
+  prepare-integration-only:
+    if: github.ref == 'refs/heads/integration/cnmv-interim-measures-20260905' && github.event_name != 'pull_request'
     runs-on: ubuntu-latest
     timeout-minutes: 15
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          ref: integration/cnmv-interim-measures-20260905
+          fetch-depth: 30
+          persist-credentials: true
+      - name: Fetch immutable source base and main
+        run: |
+          git fetch --no-tags --depth=30 origin main:refs/remotes/origin/main
+          git cat-file -e 66003743d2cb3a1807c1f3765c530bf639857da3^{commit}
+          test "$(git branch --show-current)" = integration/cnmv-interim-measures-20260905
+          test "$(git rev-parse origin/main)" = 66003743d2cb3a1807c1f3765c530bf639857da3
+      - name: Generate and validate scoped additive publication
+        run: python scripts/build_cnmv_interim_measures_20260905.py --write
+      - name: Commit generated files to integration branch only
+        shell: python
+        run: |
+          import json,subprocess
+          from pathlib import Path
+          a=json.loads(Path('ops/CNMV_INTERIM_PUBLICATION_AUDIT_20260905.json').read_text())
+          allowed=a['outputs']+['ops/CNMV_INTERIM_PUBLICATION_AUDIT_20260905.json','ops/CNMV_INTERIM_RELEASE_20260905.md']
+          subprocess.run(['git','add','--',*allowed],check=True)
+          if subprocess.run(['git','diff','--cached','--quiet']).returncode:
+            subprocess.run(['git','config','user.name','github-actions[bot]'],check=True)
+            subprocess.run(['git','config','user.email','41898282+github-actions[bot]@users.noreply.github.com'],check=True)
+            subprocess.run(['git','commit','-m','Render verified bilingual CNMV interim-measures publication'],check=True)
+            subprocess.run(['git','push','origin','HEAD:refs/heads/integration/cnmv-interim-measures-20260905'],check=True)
+          print('PREPARED_HEAD',subprocess.check_output(['git','rev-parse','HEAD']).decode().strip())
+  validate-read-only:
+    if: github.event_name == 'pull_request' || github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          fetch-depth: 50
+          persist-credentials: false
+      - name: Fetch source baseline and main without write credentials
+        run: |
+          git fetch --no-tags --depth=50 origin main:refs/remotes/origin/main
+          git cat-file -e 66003743d2cb3a1807c1f3765c530bf639857da3^{commit}
+      - name: Deterministic publication, existing-content and source checks
+        run: python scripts/build_cnmv_interim_measures_20260905.py --check
+      - name: Compare broader validation with immutable baseline
+        shell: python
+        run: |
+          import subprocess,json
+          from pathlib import Path
+          base='66003743d2cb3a1807c1f3765c530bf639857da3'
+          baseline=Path('/tmp/cnmv-baseline')
+          subprocess.run(['git','worktree','add','--detach',str(baseline),base],check=True)
+          results=[]
+          for f in ['validate_repository_preservation.py','validate_publication_integrity.py','validate_audience_experience.py']:
+            row={'validator':f}
+            for label,cwd in [('base',baseline),('head',Path.cwd())]:
+              r=subprocess.run(['python','scripts/'+f],cwd=cwd,capture_output=True,text=True)
+              row[label]={'exit':r.returncode,'stdout':r.stdout[-18000:],'stderr':r.stderr[-2000:]}
+            print(json.dumps(row,ensure_ascii=False));results.append(row)
+            if row['base']['exit']==0 and row['head']['exit']!=0:
+              raise SystemExit('New broader-validation failure: '+f)
+          Path('/tmp/cnmv-baseline-comparison.json').write_text(json.dumps(results,ensure_ascii=False,indent=2))
+          print('Existing failing baseline validators are disclosed, not represented as passing. No global gate or protection was disabled.')
+      - name: Install browser test runtime
+        run: |
+          python -m pip install playwright==1.55.0
+          python -m playwright install --with-deps chromium
+      - name: Desktop, mobile, no-script and filter checks
+        shell: python
+        run: |
+          import subprocess,time,json
+          from pathlib import Path
+          from playwright.sync_api import sync_playwright
+          server=subprocess.Popen(['python','-m','http.server','8765','--bind','127.0.0.1','--directory',str(Path.cwd().parent)])
+          checks=0
+          try:
+            time.sleep(2)
+            with sync_playwright() as p:
+              browser=p.chromium.launch()
+              for lang,slug,cnmv,anchor in [('en','authorities-duties-asset-recovery','cnmv-ricpe-verification','interim-measures'),('es','autoridades-deberes-recuperacion-activos','cnmv-ricpe-verificacion','medidas-provisionales')]:
+                for width in [390,1440]:
+                  page=browser.new_page(viewport={'width':width,'height':1000})
+                  errors=[];page.on('pageerror',lambda e:errors.append(str(e)))
+                  page.goto(f'http://127.0.0.1:8765/por-derecho/{lang}/{slug}/',wait_until='networkidle')
+                  assert page.locator('.ca-tool').count()==35;checks+=1
+                  assert page.locator('.ca-authority-list [data-ca-item]').count()==78;checks+=1
+                  assert page.locator('.ca-authority-list [data-status=screening]').count()==15;checks+=1
+                  assert page.evaluate('document.documentElement.scrollWidth<=innerWidth+2');checks+=1
+                  page.locator('#ca-tools-search').fill('588 octies')
+                  assert page.locator('.ca-tool:visible').count()==1;checks+=1
+                  page.locator('#ca-authorities-search').fill('CNMV')
+                  assert page.locator('.ca-authority-list [data-ca-item]:visible').count()==1;checks+=1
+                  page.locator('#ca-tools-search').fill('');page.locator('#ca-authorities-search').fill('')
+                  assert not errors,errors;checks+=1
+                  page.goto(f'http://127.0.0.1:8765/por-derecho/{lang}/{cnmv}/#{anchor}',wait_until='networkidle')
+                  assert page.locator('#'+anchor).count()==1;checks+=1
+                  assert page.locator('#'+anchor+' .ca-requests > li').count()==6;checks+=1
+                  assert page.evaluate('document.documentElement.scrollWidth<=innerWidth+2');checks+=1
+                  page.close()
+                context=browser.new_context(java_script_enabled=False)
+                page=context.new_page();page.goto(f'http://127.0.0.1:8765/por-derecho/{lang}/{slug}/')
+                assert page.locator('.ca-tool').count()==35;checks+=1
+                assert page.locator('.ca-authority-list [data-ca-item]').count()==78;checks+=1
+                context.close()
+              browser.close()
+            print(json.dumps({'result':'BROWSER_PASS','checks':checks,'widths':[390,1440],'languages':['en','es'],'no_script_checked':True}))
+          finally:server.terminate()
+  live-read-only:
+    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+    needs: validate-read-only
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
     steps:
       - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
         with:
           persist-credentials: false
-      - name: Inspect canonical source and route coverage without mutation
-        shell: python
-        run: |
-          from pathlib import Path
-          import json,re,subprocess
-          print('INSPECTED_SHA',subprocess.check_output(['git','rev-parse','HEAD']).decode().strip())
-          print('ROUTES')
-          for lang in ['en','es']:
-            for p in sorted(Path(lang).glob('*/index.html')):
-              if any(x in str(p).lower() for x in ['recuper','recover','autori','authorit','cnmv','fti-tour','cuatrecasas','fiscalia','ministerio','rights','derechos']): print(p)
-          print('REGISTER_CNMV_ROWS')
-          p=Path('assets/data/institutional-communications-register-v1.json')
-          d=json.loads(p.read_text())
-          print('REGISTER_KEYS',list(d),'TOTAL',len(d.get('events',[])))
-          for e in d.get('events',[]):
-            s=json.dumps(e,ensure_ascii=False)
-            if 'cnmv' in s.lower(): print(s)
-          print('CROSSWALK_STRUCTURE')
-          c=json.loads(Path('ops/ORION_NOTICE_CANONICAL_CROSSWALK_20260905.json').read_text())
-          print(json.dumps({k:v for k,v in c.items() if k!='sources'},ensure_ascii=False))
-          print('FOOTER_CONTROL')
-          print(Path('AUTHOR_REPORTING_PERSON_ALERTADOR_FOOTER_CONTROL_22AUG2026.md').read_text())
-          print('CURRENT_BASELINE_EXCEPTIONS')
-          print(Path('ops/ORION_NOTICE_RELEASE_EXCEPTIONS_20260905.md').read_text())
-          print('PUBLICATION_SCHEMA')
-          p=Path('schemas/publication-state-manifest-v1.schema.json')
-          print(p.read_text() if p.exists() else 'schema path absent')
-      - name: Read-only baseline preservation/publication/audience diagnostics
-        shell: python
-        run: |
-          import subprocess
-          for f in ['validate_repository_preservation.py','validate_publication_integrity.py','validate_audience_experience.py']:
-            p=subprocess.run(['python','scripts/'+f],capture_output=True,text=True)
-            print('\nBASELINE_CHECK',f,'EXIT',p.returncode)
-            print(p.stdout[-14000:]);print(p.stderr[-4000:])
-          print('Baseline diagnostics only; no validator results were silently treated as a passing publication gate.')
+      - name: Verify exact public artifacts after Pages publication
+        run: python scripts/build_cnmv_interim_measures_20260905.py --live
