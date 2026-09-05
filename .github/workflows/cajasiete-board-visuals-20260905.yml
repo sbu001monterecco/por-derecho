@@ -11,7 +11,9 @@ jobs:
   preserve:
     if: github.ref == 'refs/heads/worker/cajasiete-board-visuals-20260905' && github.actor != 'github-actions[bot]'
     runs-on: ubuntu-latest
-    timeout-minutes: 12
+    timeout-minutes: 15
+    env:
+      PYTHONHASHSEED: '0'
     steps:
       - uses: actions/checkout@v4
         with:
@@ -19,7 +21,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Refresh without rewriting history
+      - name: Refresh without rewriting any branch history
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
@@ -33,56 +35,19 @@ jobs:
           p=Path('scripts/prepare_cajasiete_board_visuals_20260905.py');s=p.read_text()
           old="'linked_transport_event_ids':['PD-SP-EVT-0176'] if i['direction'].startswith('OUTBOUND') else []"
           new="'linked_transport_event_ids':[],'related_curated_event_ids':['PD-SP-EVT-0176'] if i['direction'].startswith('OUTBOUND') else []"
-          assert s.count(old)==1 or new in s
-          assert 'loading="lazy"' in s or 'loading="eager"' in s
-          p.write_text(s.replace(old,new).replace('loading="lazy"','loading="eager"'))
+          assert s.count(old)==1 or new in s,'Unexpected source; stop rather than guessing'
+          s=s.replace(old,new)
+          assert s.count('loading="lazy"')==1 or s.count('loading="eager"')==1,'Unexpected image markup'
+          p.write_text(s.replace('loading="lazy"','loading="eager"'))
           PY
+      - name: Generate and validate source-controlled candidate
+        run: |
           python scripts/prepare_cajasiete_board_visuals_20260905.py apply
           python scripts/reconcile_institutional_communications.py --check
           python scripts/validate_institutional_communications.py
           python scripts/prepare_cajasiete_board_visuals_20260905.py check
-      - run: python -m playwright install --with-deps chromium firefox webkit
-      - name: Check all 24 engine viewport and JavaScript combinations
-        run: |
-          python - <<'PY'
-          import functools,http.server,threading,json,time
-          from pathlib import Path
-          from playwright.sync_api import sync_playwright
-          root=Path.cwd();parent=root.parent/'cajasiete-http';parent.mkdir(exist_ok=True)
-          if not (parent/'por-derecho').exists():(parent/'por-derecho').symlink_to(root,target_is_directory=True)
-          server=http.server.ThreadingHTTPServer(('127.0.0.1',8873),functools.partial(http.server.SimpleHTTPRequestHandler,directory=str(parent)))
-          threading.Thread(target=server.serve_forever,daemon=True).start();rows=[];shots=Path('qa-cajasiete');shots.mkdir(exist_ok=True)
-          routes=['es/cajasiete-sun-park-financiacion-comparabilidad/','en/cajasiete-sun-park-financing-comparability/']
-          with sync_playwright() as p:
-            for engine in ['chromium','firefox','webkit']:
-              browser=getattr(p,engine).launch()
-              for width in [390,1280]:
-                for js in [True,False]:
-                  context=browser.new_context(viewport={'width':width,'height':900},java_script_enabled=js)
-                  for route in routes:
-                    print('CASE',engine,width,js,route,flush=True)
-                    page=context.new_page();res=page.goto('http://127.0.0.1:8873/por-derecho/'+route,wait_until='networkidle');assert res.status==200
-                    section=page.locator('#board-compliance');assert section.count()==1
-                    images=section.locator('figure img');assert images.count()==3
-                    for image in images.all():
-                      deadline=time.monotonic()+20
-                      while True:
-                        state=image.evaluate('(e)=>({complete:e.complete,width:e.naturalWidth,height:e.naturalHeight,source:e.currentSrc})')
-                        if state['complete'] and state['width']==1080:break
-                        assert time.monotonic()<deadline,(engine,width,js,route,state)
-                        time.sleep(.1)
-                      assert image.get_attribute('alt')
-                    assert section.evaluate('(e)=>e.scrollWidth<=e.clientWidth+2'),'new reader overflow'
-                    assert page.locator('#caja-commercial-original').count()==1
-                    for a in section.locator('a[href^="#"]').all():assert page.locator(a.get_attribute('href')).count()>=1
-                    if width==390 and not js:section.screenshot(path=str(shots/(engine+'-'+route[:2]+'-mobile-nojs.png')),timeout=15000)
-                    rows.append({'engine':engine,'width':width,'javascript':js,'route':route,'status':'PASS'});page.close()
-                  context.close()
-              browser.close()
-          server.shutdown();assert len(rows)==24
-          Path('ops/CAJASIETE_BOARD_BROWSER_20260905.json').write_text(json.dumps({'control_id':'PD-CAJASIETE-BOARD-VISUALS-20260905','cases':rows,'case_count':24,'status':'PASS','scope':'New reader only; not whole-site or legal-proof certification'},indent=2)+'\n')
-          PY
-      - name: Preserve exact branch candidate without writing workflows
+      - name: Preserve source candidate only — NOT deployment acceptance
+        id: source
         env:
           SEED_SHA: ${{ github.sha }}
           BRANCH: ${{ github.ref_name }}
@@ -93,23 +58,55 @@ jobs:
           import json,subprocess
           from pathlib import Path
           r=json.loads(Path('ops/CAJASIETE_BOARD_VISUAL_ACCEPTANCE_20260905.json').read_text())
-          paths=list(r['paths'])+['scripts/prepare_cajasiete_board_visuals_20260905.py','ops/CAJASIETE_BOARD_VISUAL_ACCEPTANCE_20260905.json','ops/CAJASIETE_BOARD_BROWSER_20260905.json']
+          paths=list(r['paths'])+['scripts/prepare_cajasiete_board_visuals_20260905.py','ops/CAJASIETE_BOARD_VISUAL_ACCEPTANCE_20260905.json']
           assert not any(p.startswith('.github/') for p in paths)
           subprocess.run(['git','add','--']+paths,check=True)
           PY
-          git commit -m 'Prepare six bilingual CajaSiete visuals after source preservation and 24 browser checks; not deployed'
+          git commit -m 'Preserve CajaSiete source candidate; browser acceptance and deployment NOT yet established'
           git push origin HEAD:"$BRANCH"
+          echo "content_sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+      - name: Install browser engines
+        run: python -m playwright install --with-deps chromium firefox webkit
+      - name: Run bounded browser checks and retain exact failures
+        run: |
+          rm -f ops/CAJASIETE_BOARD_BROWSER_20260905.json
+          python scripts/check_cajasiete_board_browser_20260905.py --record-only
+      - name: Preserve browser result, including failures, on worker only
+        if: always() && steps.source.outputs.content_sha != ''
+        env:
+          CONTENT_SHA: ${{ steps.source.outputs.content_sha }}
+          BRANCH: ${{ github.ref_name }}
+        run: |
+          test "$BRANCH" = worker/cajasiete-board-visuals-20260905
+          test "$(git ls-remote origin refs/heads/$BRANCH | cut -f1)" = "$CONTENT_SHA"
+          python - <<'PY'
+          from pathlib import Path
+          import json
+          p=Path('ops/CAJASIETE_BOARD_BROWSER_20260905.json')
+          if not p.exists():p.write_text(json.dumps({'control_id':'PD-CAJASIETE-BOARD-VISUALS-20260905','status':'FAIL','reason':'Browser runner did not produce its mandatory result','cases':[]},indent=2)+'\n')
+          PY
+          git add -- ops/CAJASIETE_BOARD_BROWSER_20260905.json
+          git commit -m 'Preserve observed CajaSiete browser result without upgrading failed checks'
+          git push origin HEAD:"$BRANCH"
+      - name: Fail closed unless all browser cases passed
+        if: always() && steps.source.outputs.content_sha != ''
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          r=json.loads(Path('ops/CAJASIETE_BOARD_BROWSER_20260905.json').read_text())
+          assert r['status']=='PASS' and r.get('case_count')==24 and r.get('passed')==24,r
+          PY
       - uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: cajasiete-board-verified-candidate
+          name: cajasiete-board-source-and-observed-browser-result
           path: |
             qa-cajasiete/
             ops/CAJASIETE_BOARD_*.json
             ops/cajasiete-board-source-input-20260905.json
             scripts/prepare_cajasiete_board_visuals_20260905.py
+            scripts/check_cajasiete_board_browser_20260905.py
             assets/media/cajasiete-board-*
-            assets/data/institutional-communications-register-v1.json
-            data/digital-media-asset-register-v1.json
             es/cajasiete-sun-park-financiacion-comparabilidad/index.html
             en/cajasiete-sun-park-financing-comparability/index.html
