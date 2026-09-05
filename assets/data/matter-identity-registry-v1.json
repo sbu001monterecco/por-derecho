@@ -214,12 +214,12 @@
     {
       "path": "matter-identity-registry-v1.organisations.json",
       "type": "ORGANISATION",
-      "count": 76
+      "count": 77
     },
     {
       "path": "matter-identity-registry-v1.professional-organisations.json",
       "type": "ORGANISATION",
-      "count": 8
+      "count": 7
     },
     {
       "path": "matter-identity-registry-v1.structures.json",
