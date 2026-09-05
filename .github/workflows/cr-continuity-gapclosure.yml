@@ -4,7 +4,7 @@ on:
     paths:
       - '.github/workflows/cr-continuity-gapclosure.yml'
       - '.github/workflows/cuatrecasas-rauda-publication.yml'
-      - 'scripts/close_cr_continuity_20260905.py'
+      - 'scripts/*cr_continuity*.py'
       - 'assets/data/la-laguna-proceeding-pages-v1.json'
       - 'assets/data/matter-identity-registry-v1.organisations.json'
       - 'assets/data/unitary-multitrack-criminal-first-gap-closure-v1.json'
@@ -16,7 +16,7 @@ on:
     branches: [main, 'worker/cr-continuity-gapclosure-20260905']
     paths:
       - '.github/workflows/cr-continuity-gapclosure.yml'
-      - 'scripts/close_cr_continuity_20260905.py'
+      - 'scripts/*cr_continuity*.py'
       - 'assets/data/la-laguna-proceeding-pages-v1.json'
       - 'es/cuatrecasas-sun-park/index.html'
       - 'en/cuatrecasas-sun-park/index.html'
@@ -65,7 +65,7 @@ jobs:
             subprocess.run(['git','commit','-m','Render CR continuity: 58 review controls, 7 canonical obligations and sourced RAUDA identity'],check=True)
             subprocess.run(['git','push','origin','HEAD:refs/heads/worker/cr-continuity-gapclosure-20260905'],check=True)
           print('PREPARED_HEAD',subprocess.check_output(['git','rev-parse','HEAD'],text=True).strip())
-          print('Workflow-file changes are retained as evidence and require the authorised connector, not expanded bot permissions.')
+          print('Workflow-file changes require the authorised connector, not expanded bot permissions.')
       - name: Retain public-only generated review evidence
         if: always()
         shell: python
@@ -73,8 +73,7 @@ jobs:
           from pathlib import Path
           import json,shutil,subprocess
           root=Path.cwd();out=root/'diagnostics';out.mkdir(exist_ok=True)
-          p=root/'assets/data/la-laguna-proceeding-pages-v1.json'
-          c=json.loads(p.read_text()).get('continuity_closure',{})
+          c=json.loads((root/'assets/data/la-laguna-proceeding-pages-v1.json').read_text()).get('continuity_closure',{})
           for path in c.get('changed_files',[]):
             src=root/path;dest=out/'source'/path
             dest.parent.mkdir(parents=True,exist_ok=True);shutil.copyfile(src,dest)
@@ -127,45 +126,7 @@ jobs:
           python -m pip install playwright==1.55.0
           python -m playwright install --with-deps chromium
       - name: Verify bilingual rendered links and correction projection
-        shell: python
-        run: |
-          import json,subprocess,time
-          from pathlib import Path
-          from playwright.sync_api import sync_playwright
-          server=subprocess.Popen(['python','-m','http.server','8765','--bind','127.0.0.1','--directory',str(Path.cwd().parent)],stdout=subprocess.DEVNULL,stderr=subprocess.DEVNULL)
-          checks=0
-          try:
-            time.sleep(2)
-            with sync_playwright() as p:
-              b=p.chromium.launch()
-              for width in [390,1440]:
-                for js in [True,False]:
-                  ctx=b.new_context(viewport={'width':width,'height':1000},java_script_enabled=js)
-                  for lang in ['es','en']:
-                    page=ctx.new_page();url='http://127.0.0.1:8765/por-derecho/'+lang+'/cuatrecasas-sun-park/'
-                    response=page.goto(url,wait_until='networkidle');assert response.status==200;checks+=1
-                    panel=page.locator('#cr-continuity-closure-20260905');assert panel.count()==1;checks+=1
-                    assert panel.locator('tbody tr').count()==58;checks+=1
-                    assert panel.locator('article[data-gap-id]').count()==7;checks+=1
-                    assert page.locator('.pd-cr-source').count()==4;checks+=1
-                    assert page.locator('.pd-cr-identity').get_attribute('data-caret-state')=='CARET_CONFIRMED';checks+=1
-                    page.locator('[data-cr-continuity-jump] a').click();assert panel.is_visible();checks+=1
-                    assert panel.evaluate('(e)=>e.getBoundingClientRect().width<=innerWidth+2');checks+=1
-                    page.locator('#CR-GAP-current_status').scroll_into_view_if_needed()
-                    if js:page.screenshot(path=f'diagnostics/cr-continuity-{lang}-{width}.png')
-                    page.goto('http://127.0.0.1:8765/por-derecho/'+lang+'/'+('metodologia/' if lang=='es' else 'methodology/'),wait_until='networkidle')
-                    assert page.locator('h1').count()==1;checks+=1
-                    for a in page.locator('a').all():
-                      href=a.get_attribute('href')
-                      if href.startswith('/por-derecho/'):
-                        target=Path(href.removeprefix('/por-derecho/').split('#')[0]);target=target/'index.html' if href.split('#')[0].endswith('/') else target
-                        assert target.is_file(),str(target);checks+=1
-                    page.close()
-                  ctx.close()
-              b.close()
-            result={'result':'BROWSER_PASS','checks':checks,'widths':[390,1440],'languages':['es','en'],'java_script':[True,False],'correction_rows_per_language':58,'proof_obligations_per_language':7}
-            Path('diagnostics/cr-continuity-browser.json').write_text(json.dumps(result,indent=2));print(json.dumps(result))
-          finally:server.terminate()
+        run: python scripts/check_cr_continuity_browser.py
       - name: Read back actual public files for this merged tree
         if: github.ref == 'refs/heads/main'
         run: python scripts/close_cr_continuity_20260905.py --live
