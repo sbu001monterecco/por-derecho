@@ -1,0 +1,55 @@
+name: Prepare cleared CaixaBank publication repair
+on:
+  push:
+    branches: ['worker/caixabank-publication-repair-20260905']
+    paths: ['.github/workflows/prepare-caixabank-publication-repair-20260905.yml']
+permissions:
+  contents: write
+concurrency:
+  group: prepare-cleared-caixabank-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  prepare:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: true
+          fetch-depth: 1
+      - name: Verify and import the approved public-only transport
+        env:
+          PUBLIC_SAFE_TRANSPORT: 'https://sdmntprnortheu.oaiusercontent.com/files/00000000-0c9c-81f4-8dc7-d5444c4f6f08/raw?se=2026-09-05T16%3A46%3A25Z&sp=r&sv=2026-02-06&sr=b&scid=eec3d73c-86ab-5679-8e85-e98a269352c2&skoid=002823aa-689d-47ca-9347-108c20f4f00d&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-09-05T08%3A38%3A01Z&ske=2026-09-06T08%3A38%3A01Z&sks=b&skv=2026-02-06&sig=4XwVi2%2BW2RyPjKQTVxAOX903Hgvh/ZpJ5HounS6zxP0%3D'
+        run: |
+          python3 - <<'PY'
+          import os,io,json,hashlib,pathlib,urllib.request,zipfile,subprocess
+          branch='worker/caixabank-publication-repair-20260905'
+          assert os.environ['GITHUB_REF']=='refs/heads/'+branch
+          # This expiring transport contains only the already-reviewed publication-safe
+          # repair package. It grants no access to any private native source or account.
+          with urllib.request.urlopen(os.environ['PUBLIC_SAFE_TRANSPORT'],timeout=80) as r: data=r.read()
+          assert hashlib.sha256(data).hexdigest()=='beeff6756f2c4660b980bfe3c256e2e9ddfd16732ad9d10f44fde4cccc997429','transport hash'
+          z=zipfile.ZipFile(io.BytesIO(data)); manifest=json.loads(z.read('bundle.json'))
+          assert manifest['publication_cleared_only'] is True
+          assert manifest['base_sha']=='adc8c87585609709caafdd90f03ffbb4a4687d83'
+          rows=manifest['entries'];names=[r['path'] for r in rows]
+          assert len(rows)==191 and len(set(names))==191
+          assert set(z.namelist())==set(names)|{'bundle.json'}
+          for row in rows:
+            name=row['path'];p=pathlib.Path(name)
+            assert not p.is_absolute() and '..' not in p.parts and not name.startswith('.github/')
+            assert p.suffix.lower() in {'.html','.css','.js','.json','.md','.txt','.csv','.xml','.py','.jpg','.jpeg','.png','.pdf'}
+            content=z.read(name)
+            assert len(content)==row['bytes'] and hashlib.sha256(content).hexdigest()==row['sha256'],name+' payload integrity'
+            current=hashlib.sha256(p.read_bytes()).hexdigest() if p.is_file() else None
+            assert current in (row['expected_before_sha256'],row['sha256']),name+' changed since reviewed baseline'
+          for row in rows:
+            p=pathlib.Path(row['path']);p.parent.mkdir(parents=True,exist_ok=True);p.write_bytes(z.read(row['path']))
+          subprocess.run(['git','add','--',*names],check=True)
+          if subprocess.run(['git','diff','--cached','--quiet']).returncode:
+            subprocess.run(['git','config','user.name','github-actions[bot]'],check=True)
+            subprocess.run(['git','config','user.email','41898282+github-actions[bot]@users.noreply.github.com'],check=True)
+            subprocess.run(['git','commit','-m','Repair CaixaBank sources: six public PDFs,117 genuine page images, responsive readers and controlled crosslinks'],check=True)
+            subprocess.run(['git','push','origin','HEAD:refs/heads/'+branch],check=True)
+          print('PUBLIC_SAFE_IMPORT_VERIFIED',len(rows),subprocess.check_output(['git','rev-parse','HEAD'],text=True).strip())
+          PY
