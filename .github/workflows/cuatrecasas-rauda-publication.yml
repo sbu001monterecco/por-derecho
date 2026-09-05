@@ -1,10 +1,11 @@
 name: Cuatrecasas RAUDA publication
 on:
   push:
-    branches: ['integration/cuatrecasas-rauda-20260905', main]
+    branches: [main]
     paths:
       - '.github/workflows/cuatrecasas-rauda-publication.yml'
       - 'scripts/*cuatrecasas_rauda*20260905.py'
+      - 'scripts/*cr_continuity*.py'
       - 'assets/content/cuatrecasas-rauda-20260905.*.html'
       - 'ops/CUATRECASAS_RAUDA_RELEASE_20260905.json'
       - 'publication-manifests/cuatrecasas-rauda-recovery-review-20260905.json'
@@ -12,6 +13,7 @@ on:
     paths:
       - '.github/workflows/cuatrecasas-rauda-publication.yml'
       - 'scripts/*cuatrecasas_rauda*20260905.py'
+      - 'scripts/*cr_continuity*.py'
       - 'assets/content/cuatrecasas-rauda-20260905.*.html'
       - 'ops/CUATRECASAS_RAUDA_RELEASE_20260905.json'
       - 'publication-manifests/cuatrecasas-rauda-recovery-review-20260905.json'
@@ -21,42 +23,9 @@ permissions:
 concurrency:
   group: cuatrecasas-rauda-${{ github.ref }}
   cancel-in-progress: false
+# The historical preparation writer is retired. This workflow never commits,
+# pushes or repairs main. Full history preserves immutable audit anchors.
 jobs:
-  prepare-integration-only:
-    if: ${{ false }} # Historical preparation retired; generate before reviewed merge.
-    runs-on: ubuntu-latest
-    timeout-minutes: 15
-    permissions:
-      contents: write
-    steps:
-      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
-        with:
-          ref: integration/cuatrecasas-rauda-20260905
-          fetch-depth: 50
-          persist-credentials: true
-      - name: Current-main guard and deterministic additive generation
-        run: |
-          git fetch --no-tags --depth=50 origin main:refs/remotes/origin/main
-          test "$(git rev-parse origin/main)" = e482e29325091bcc32af3fd2b2624335c6699e19
-          python -m py_compile scripts/build_cuatrecasas_rauda_20260905.py scripts/complete_cuatrecasas_rauda_controls_20260905.py
-          python scripts/build_cuatrecasas_rauda_20260905.py --write
-          python scripts/complete_cuatrecasas_rauda_controls_20260905.py --write
-          python scripts/validate_operational_identity_registry.py
-      - name: Commit allowlisted generated output to the integration branch only
-        shell: python
-        run: |
-          import json,subprocess
-          from pathlib import Path
-          path='ops/CUATRECASAS_RAUDA_RELEASE_20260905.json'
-          data=json.loads(Path(path).read_text())
-          allowed=data['outputs']+[path,'assets/data/matter-identity-operational-control-v1.json','publication-manifests/cuatrecasas-rauda-recovery-review-20260905.json']
-          subprocess.run(['git','add','--',*allowed],check=True)
-          if subprocess.run(['git','diff','--cached','--quiet']).returncode:
-            subprocess.run(['git','config','user.name','github-actions[bot]'],check=True)
-            subprocess.run(['git','config','user.email','41898282+github-actions[bot]@users.noreply.github.com'],check=True)
-            subprocess.run(['git','commit','-m','Render Cuatrecasas RAUDA review and complete canonical identity queue and publication manifest'],check=True)
-            subprocess.run(['git','push','origin','HEAD:refs/heads/integration/cuatrecasas-rauda-20260905'],check=True)
-          print('PREPARED_HEAD',subprocess.check_output(['git','rev-parse','HEAD']).decode().strip())
   validate-read-only:
     if: github.event_name == 'pull_request' || github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
@@ -64,17 +33,17 @@ jobs:
     steps:
       - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
         with:
-          fetch-depth: 60
+          fetch-depth: 0
           persist-credentials: false
       - name: Exact source, canonical preservation, safe boundaries and links
         run: |
-          git fetch --no-tags --depth=60 origin main:refs/remotes/origin/main
+          git fetch --no-tags origin main:refs/remotes/origin/main
           python scripts/build_cuatrecasas_rauda_20260905.py --check
           python scripts/complete_cuatrecasas_rauda_controls_20260905.py --check
       - name: Compare repository controls with immutable source baseline
         shell: python
         run: |
-          import subprocess,json,re
+          import subprocess,json
           from pathlib import Path
           base=Path('/tmp/cr-baseline')
           subprocess.run(['git','worktree','add','--detach',str(base),'e482e29325091bcc32af3fd2b2624335c6699e19'],check=True)
@@ -99,7 +68,7 @@ jobs:
                 if not old_errors or not new_errors or any(x not in old_errors for x in new_errors):regressions.append('Changed failure requires review: '+file)
           Path('/tmp/cr-validation-baseline-comparison.json').write_text(json.dumps(results,ensure_ascii=False,indent=2))
           assert not regressions,'; '.join(regressions)
-          print('BASELINE_COMPARISON_PASS: inherited failures separately recorded; no global rule or protection changed.')
+          print('BASELINE_COMPARISON_PASS: no unexplained new failure; no branch protection changed.')
       - name: Install browser runtime
         run: |
           python -m pip install playwright==1.55.0
@@ -164,7 +133,7 @@ jobs:
     steps:
       - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
         with:
-          fetch-depth: 60
+          fetch-depth: 0
           persist-credentials: false
       - name: Exact public-block and release-manifest readback
         run: |
