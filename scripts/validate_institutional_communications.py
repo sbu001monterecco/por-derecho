@@ -204,8 +204,9 @@ def validate_register(
     expected_authority_ids = ["PD-SP-EVT-0004", "PD-SP-EVT-0014", *[f"PD-SP-EVT-{number:04d}" for number in range(141, 158)]]
     if [event.get("event_id") for event in authority_events] != expected_authority_ids:
         errors.append("19-event public-authority communication set changed")
-    if denominator.get("event_rows_total") != len(events) or len(events) != 313:
-        errors.append(f"event-row denominator drift: expected 313, found {len(events)}")
+    expected_event_total = BASELINE_EXPECTED + MAILBOX_EXPECTED + len(KEY_EVENTS)
+    if denominator.get("event_rows_total") != len(events) or len(events) != expected_event_total:
+        errors.append(f"event-row denominator drift: expected {expected_event_total}, found {len(events)}")
     try:
         authority_scan = load_json(AUTHORITY_SCAN_CHECKPOINT)
     except (OSError, json.JSONDecodeError) as exc:

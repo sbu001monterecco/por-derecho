@@ -1,0 +1,253 @@
+{
+  "base_register_sha256": "04eda9a473d07419c1d1d0941b9123d1497f7329366998a9f4cf76221910bbed",
+  "baseline_event_count": 313,
+  "canonical_register": "assets/data/institutional-communications-register-v1.json",
+  "control_date": "2026-09-05",
+  "control_id": "PD-SP-ORION-NOTICE-20260905",
+  "coverage": {
+    "attachment_descriptors": 6,
+    "distinct_source_descriptors": 24,
+    "native_private_material_published": false,
+    "scoped_event_descriptors": 20,
+    "universal_completeness_claim": false
+  },
+  "gaps": [
+    {
+      "en": "Recover Cajasiete communication 6 native submission, date, attachments, admissibility worksheet, conflict checks and preservation/deletion audit. Announced destruction is not completed destruction.",
+      "es": "Recuperar la presentación nativa 6 de Cajasiete, fecha, anexos, ficha de admisión, controles de conflicto y auditoría de preservación/borrado. Destrucción anunciada no equivale a destrucción realizada.",
+      "key": "C-CHANNEL-ORIGINAL"
+    },
+    {
+      "en": "Identify the exact Cajasiete facility, borrower, principal, deed, collateral fincas and dates. Gil's approximate EUR1m recollection, the 2018 locales sale, the 2022 adjudication and the reported 2023 security entry must not be collapsed into one proved transaction. The suspension/funded-exit relationship requires the relevant orders and dated financing documents.",
+      "es": "Identificar la financiación exacta de Cajasiete, prestatario, principal, escritura, fincas y fechas. El recuerdo aproximado de EUR1m, venta de locales de 2018, adjudicación de 2022 y carga referida de 2023 no se funden en una sola operación probada. La relación con suspensión/salida financiada requiere resoluciones y documentos fechados.",
+      "key": "C-LOAN-INSTRUMENT"
+    },
+    {
+      "en": "Obtain the actual Portfolio board/committee distribution and decision record. Individual escalation and relevant-functions referral do not prove circulation to every director.",
+      "es": "Obtener distribución y decisiones efectivas del consejo/comités de Portfolio. Escalado individual y remisión a funciones competentes no prueban circulación a cada consejero.",
+      "key": "P-BOARD-ROUTING"
+    },
+    {
+      "en": "Reconcile the two earlier 22 August emails and separate Requests 81/82 acknowledgements individually; do not backdate delivery of the four exhibits to those failed-attachment sends.",
+      "es": "Conciliar individualmente los dos correos previos del 22 de agosto y los acuses separados 81/82; no retrotraer a los envíos fallidos la entrega de los cuatro gráficos.",
+      "key": "P-PRIOR-SENDS"
+    },
+    {
+      "en": "Recover the complete native 20 August RICPE submission and its attachment manifest, beyond the recipient's date-specific receipt confirmation.",
+      "es": "Recuperar la comunicación nativa RICPE completa del 20 de agosto y sus anexos, más allá del acuse fechado del destinatario.",
+      "key": "N-20AUG-NATIVE"
+    },
+    {
+      "en": "Reconcile CNMV incoming 2026114903 on 25 August with the separate 24 August REGAGE event PD-SP-EVT-0152; preserve both records until documentary identity is established.",
+      "es": "Conciliar la entrada CNMV 2026114903 del 25 de agosto con el evento REGAGE separado del 24 de agosto PD-SP-EVT-0152; mantener ambos hasta acreditar identidad documental.",
+      "key": "N-REGAGE-BRIDGE"
+    },
+    {
+      "en": "Shared governance, a disclosed investment or an acknowledged complaint does not establish common control, lack of legal independence, concealment, reliance, intent or criminal responsibility. Test knowledge, disclosure and subsequent conduct actor by actor.",
+      "es": "Gobierno compartido, inversión revelada o denuncia recibida no acreditan control común, falta de independencia jurídica, ocultación, confianza, dolo ni responsabilidad penal. Contrastar conocimiento, revelación y conducta posterior actor por actor.",
+      "key": "CORPORATE-MERITS"
+    }
+  ],
+  "input_path": "ops/orion-notice-register-input-20260905.json",
+  "input_sha256": "51092f022de7c4f82a7c69972f85fac9d8339ca3dcc50d501b3e494e6ad7a9aa",
+  "mappings": {
+    "C-20251202": {
+      "event_id": "PD-SP-EVT-0168",
+      "source_id": "PD-SP-SRC-0013"
+    },
+    "C-20251210": {
+      "event_id": "PD-SP-EVT-0169",
+      "source_id": "PD-SP-SRC-0014"
+    },
+    "C-20260428": {
+      "event_id": "PD-SP-EVT-0170",
+      "source_id": "PD-SP-SRC-0015"
+    },
+    "C-20260827": {
+      "event_id": "PD-SP-EVT-0176",
+      "source_id": "PD-SP-SRC-0019"
+    },
+    "N-20241209-COMPLAINTS": {
+      "event_id": "PD-SP-EVT-0161",
+      "source_id": "PD-SP-SRC-0006"
+    },
+    "N-20241209-INFO": {
+      "event_id": "PD-SP-EVT-0160",
+      "source_id": "PD-SP-SRC-0005"
+    },
+    "N-20241209-WHISTLE": {
+      "event_id": "PD-SP-EVT-0162",
+      "source_id": "PD-SP-SRC-0007"
+    },
+    "N-20260820": {
+      "event_id": "PD-SP-EVT-0171",
+      "source_id": "PD-SP-SRC-0018"
+    },
+    "N-20260825": {
+      "event_id": "PD-SP-EVT-0173",
+      "source_id": "PD-SP-SRC-0020"
+    },
+    "N-20260827": {
+      "event_id": "PD-SP-EVT-0175",
+      "source_id": "PD-SP-SRC-0018"
+    },
+    "N-20260904-DECISION": {
+      "event_id": "PD-SP-EVT-0177",
+      "source_id": "PD-SP-SRC-0020"
+    },
+    "N-20260904-EMAIL": {
+      "event_id": "PD-SP-EVT-0178",
+      "source_id": "PD-SP-SRC-0021"
+    },
+    "P-20241207": {
+      "event_id": "PD-SP-EVT-0159",
+      "source_id": "PD-SP-SRC-0004"
+    },
+    "P-20241210-MARTIN": {
+      "event_id": "PD-SP-EVT-0163",
+      "source_id": "PD-SP-SRC-0008"
+    },
+    "P-20241212": {
+      "event_id": "PD-SP-EVT-0164",
+      "source_id": "PD-SP-SRC-0009"
+    },
+    "P-20250117": {
+      "event_id": "PD-SP-EVT-0165",
+      "source_id": "PD-SP-SRC-0010"
+    },
+    "P-20250321": {
+      "event_id": "PD-SP-EVT-0166",
+      "source_id": "PD-SP-SRC-0011"
+    },
+    "P-20250323": {
+      "event_id": "PD-SP-EVT-0167",
+      "source_id": "PD-SP-SRC-0012"
+    },
+    "P-20260822": {
+      "event_id": "PD-SP-EVT-0172",
+      "source_id": "PD-SP-SRC-0016"
+    },
+    "P-20260826": {
+      "event_id": "PD-SP-EVT-0174",
+      "source_id": "PD-SP-SRC-0017"
+    }
+  },
+  "sources": {
+    "A-CNMV-LETTER": {
+      "native_document_identity": "NO_DUPLICATE_DOCUMENT_ID_ALLOCATED; attachment/source occurrence only",
+      "public_asset_state": "SOURCE_DESCRIPTION_ONLY; retained original not newly published",
+      "source_id": "PD-SP-SRC-0022",
+      "source_kind": "ATTACHMENT_OCCURRENCE_METADATA; native document equivalence and substantive digest not completed in this release"
+    },
+    "A-CNMV-RECEIPT": {
+      "native_document_identity": "NO_DUPLICATE_DOCUMENT_ID_ALLOCATED; attachment/source occurrence only",
+      "public_asset_state": "SOURCE_DESCRIPTION_ONLY; retained original not newly published",
+      "source_id": "PD-SP-SRC-0023",
+      "source_kind": "ATTACHMENT_OCCURRENCE_METADATA; not treated as a new substantive regulatory decision"
+    },
+    "A-PWC-EN": {
+      "attachment_equivalence": "EXISTING_PUBLIC_FIGURE; native email attachment hash equivalence not asserted",
+      "native_document_identity": "NO_DUPLICATE_DOCUMENT_ID_ALLOCATED; attachment/source occurrence only",
+      "public_asset": "assets/evidence/email-used-20260822/pwc-five-actors-plus-ac-2016-knowledge-checkpoint-EN.png",
+      "public_asset_sha256": "d00d2a5d334bc73bf2c1dd034a8d8341b00c47d9e0a382aff08e1a716d75bc8f",
+      "source_id": "PD-SP-SRC-0025",
+      "source_kind": "EXPLANATORY_EXHIBIT; not a primary judicial or liability finding"
+    },
+    "A-PWC-ES": {
+      "attachment_equivalence": "EXISTING_PUBLIC_FIGURE; native email attachment hash equivalence not asserted",
+      "native_document_identity": "NO_DUPLICATE_DOCUMENT_ID_ALLOCATED; attachment/source occurrence only",
+      "public_asset": "assets/evidence/email-used-20260822/pwc-five-actors-plus-ac-2016-knowledge-checkpoint-ES.png",
+      "public_asset_sha256": "6b3dfac14865f8bd9cdaf6eda6b610ff67175a96761f9d5ab7a0819b935643bf",
+      "source_id": "PD-SP-SRC-0024",
+      "source_kind": "EXPLANATORY_EXHIBIT; not a primary judicial or liability finding"
+    },
+    "A-ST-EN": {
+      "native_document_identity": "NO_DUPLICATE_DOCUMENT_ID_ALLOCATED; attachment/source occurrence only",
+      "public_asset_state": "SOURCE_DESCRIPTION_ONLY; retained original not newly published",
+      "source_id": "PD-SP-SRC-0027",
+      "source_kind": "EXPLANATORY_EXHIBIT; not a primary judicial or liability finding"
+    },
+    "A-ST-ES": {
+      "attachment_equivalence": "EXISTING_PUBLIC_FIGURE; native email attachment hash equivalence not asserted",
+      "native_document_identity": "NO_DUPLICATE_DOCUMENT_ID_ALLOCATED; attachment/source occurrence only",
+      "public_asset": "assets/evidence/email-used-20260822/san-telmo-ricpe-sun-park-stamp-v1-ES.png",
+      "public_asset_sha256": "f50790d29a0dc55521e03693b9023d55241212bbb4fd78977187dbe8bf544add",
+      "source_id": "PD-SP-SRC-0026",
+      "source_kind": "EXPLANATORY_EXHIBIT; not a primary judicial or liability finding"
+    },
+    "C-20251202": {
+      "source_id": "PD-SP-SRC-0013",
+      "source_kind": "RETAINED_SENT_EMAIL"
+    },
+    "C-20251210": {
+      "source_id": "PD-SP-SRC-0014",
+      "source_kind": "RETAINED_RECEIVED_EMAIL"
+    },
+    "C-20260428": {
+      "source_id": "PD-SP-SRC-0015",
+      "source_kind": "RETAINED_RECEIVED_CHANNEL_EMAIL"
+    },
+    "C-20260827": {
+      "source_id": "PD-SP-SRC-0019",
+      "source_kind": "RETAINED_SENT_EMAIL"
+    },
+    "N-20241209-COMPLAINTS": {
+      "source_id": "PD-SP-SRC-0006",
+      "source_kind": "RETAINED_SENT_EMAIL"
+    },
+    "N-20241209-INFO": {
+      "source_id": "PD-SP-SRC-0005",
+      "source_kind": "RETAINED_SENT_EMAIL"
+    },
+    "N-20241209-WHISTLE": {
+      "source_id": "PD-SP-SRC-0007",
+      "source_kind": "RETAINED_SENT_EMAIL"
+    },
+    "N-20260827": {
+      "source_id": "PD-SP-SRC-0018",
+      "source_kind": "RETAINED_RECEIVED_EMAIL"
+    },
+    "N-20260904-DECISION": {
+      "document_id": "PD-SP-DOC-0006",
+      "sha256": "8b6a6e24b2aaec0be20cd86157982572f3f8d99f2d04d9f9d680fc3d2091106a",
+      "source_id": "PD-SP-SRC-0020",
+      "source_kind": "RETAINED_SIGNED_THREE_PAGE_PDF"
+    },
+    "N-20260904-EMAIL": {
+      "source_id": "PD-SP-SRC-0021",
+      "source_kind": "RETAINED_RECEIVED_EMAIL_WITH_PDF_ATTACHMENT"
+    },
+    "P-20241207": {
+      "source_id": "PD-SP-SRC-0004",
+      "source_kind": "RETAINED_SENT_EMAIL"
+    },
+    "P-20241210-MARTIN": {
+      "source_id": "PD-SP-SRC-0008",
+      "source_kind": "RETAINED_SENT_EMAIL"
+    },
+    "P-20241212": {
+      "source_id": "PD-SP-SRC-0009",
+      "source_kind": "RETAINED_RECEIVED_EMAIL"
+    },
+    "P-20250117": {
+      "source_id": "PD-SP-SRC-0010",
+      "source_kind": "RETAINED_SENT_EMAIL_METADATA_AND_CONTENT_REVIEW"
+    },
+    "P-20250321": {
+      "source_id": "PD-SP-SRC-0011",
+      "source_kind": "RETAINED_RECEIVED_EMAIL"
+    },
+    "P-20250323": {
+      "source_id": "PD-SP-SRC-0012",
+      "source_kind": "RETAINED_SENT_EMAIL"
+    },
+    "P-20260822": {
+      "source_id": "PD-SP-SRC-0016",
+      "source_kind": "RETAINED_SENT_EMAIL_WITH_ATTACHMENT_METADATA"
+    },
+    "P-20260826": {
+      "source_id": "PD-SP-SRC-0017",
+      "source_kind": "RETAINED_RECEIVED_EMAIL"
+    }
+  }
+}

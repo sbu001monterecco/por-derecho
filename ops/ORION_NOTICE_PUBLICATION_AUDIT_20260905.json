@@ -1,0 +1,108 @@
+{
+  "attachment_descriptors": 6,
+  "canonical_total": 333,
+  "control_id": "PD-SP-ORION-NOTICE-20260905",
+  "event_count": 20,
+  "existing_event_rows_preserved": 313,
+  "existing_public_figures": 3,
+  "input_sha256": "51092f022de7c4f82a7c69972f85fac9d8339ca3dcc50d501b3e494e6ad7a9aa",
+  "managed_files": [
+    "en/institutional-records/index.html",
+    "en/orion-rental-socimi/index.html",
+    "en/cajasiete-sun-park-financing-comparability/index.html",
+    "en/portfolio-orion-traceability/index.html",
+    "en/cnmv-ricpe-verification/index.html",
+    "en/ric-private-equity-sun-park/index.html",
+    "en/francisco-mario-matos-matas/index.html",
+    "en/antonio-cogolludo-rojas/index.html",
+    "en/shaila-maria-cogolludo-ramos/index.html",
+    "en/pamalexsha-servicios-integrales-sl/index.html",
+    "en/acosta-matos-perimeter/index.html",
+    "es/registros-institucionales/index.html",
+    "es/orion-rental-socimi/index.html",
+    "es/cajasiete-sun-park-financiacion-comparabilidad/index.html",
+    "es/portfolio-orion-trazabilidad/index.html",
+    "es/cnmv-ricpe-verificacion/index.html",
+    "es/ric-private-equity-sun-park/index.html",
+    "es/francisco-mario-matos-matas/index.html",
+    "es/antonio-cogolludo-rojas/index.html",
+    "es/shaila-maria-cogolludo-ramos/index.html",
+    "es/pamalexsha-servicios-integrales-sl/index.html",
+    "es/acosta-matos-perimetro/index.html",
+    "assets/data/orion-rental-socimi-governance-20260905.json",
+    ".github/evidence-intelligence/records/PD-SP-EI-20260905-02-ORION-RENTAL-SOCIMI-GOVERNANCE.md",
+    "ops/ORION_NOTICE_CANONICAL_CROSSWALK_20260905.json",
+    "assets/data/institutional-communications-register-v1.json",
+    "ops/INSTITUTIONAL_COMMUNICATIONS_SCAN_CHECKPOINT.json",
+    "scripts/reconcile_institutional_communications.py",
+    "scripts/validate_institutional_communications.py",
+    "ops/ORION_NOTICE_PUBLICATION_AUDIT_20260905.json"
+  ],
+  "pages_checked": [
+    "en/institutional-records/",
+    "en/orion-rental-socimi/",
+    "en/cajasiete-sun-park-financing-comparability/",
+    "en/portfolio-orion-traceability/",
+    "en/cnmv-ricpe-verification/",
+    "en/ric-private-equity-sun-park/",
+    "en/francisco-mario-matos-matas/",
+    "en/antonio-cogolludo-rojas/",
+    "en/shaila-maria-cogolludo-ramos/",
+    "en/pamalexsha-servicios-integrales-sl/",
+    "en/acosta-matos-perimeter/",
+    "es/registros-institucionales/",
+    "es/orion-rental-socimi/",
+    "es/cajasiete-sun-park-financiacion-comparabilidad/",
+    "es/portfolio-orion-trazabilidad/",
+    "es/cnmv-ricpe-verificacion/",
+    "es/ric-private-equity-sun-park/",
+    "es/francisco-mario-matos-matas/",
+    "es/antonio-cogolludo-rojas/",
+    "es/shaila-maria-cogolludo-ramos/",
+    "es/pamalexsha-servicios-integrales-sl/",
+    "es/acosta-matos-perimetro/"
+  ],
+  "publication_status": "NOT_A_DEPLOYMENT_CERTIFICATE",
+  "register_sha256": "f397fc256cf21bde25c90945ebb67944762599ee4b02350830aae56fe5e7af82",
+  "remaining_gaps": [
+    {
+      "en": "Recover Cajasiete communication 6 native submission, date, attachments, admissibility worksheet, conflict checks and preservation/deletion audit. Announced destruction is not completed destruction.",
+      "es": "Recuperar la presentación nativa 6 de Cajasiete, fecha, anexos, ficha de admisión, controles de conflicto y auditoría de preservación/borrado. Destrucción anunciada no equivale a destrucción realizada.",
+      "key": "C-CHANNEL-ORIGINAL"
+    },
+    {
+      "en": "Identify the exact Cajasiete facility, borrower, principal, deed, collateral fincas and dates. Gil's approximate EUR1m recollection, the 2018 locales sale, the 2022 adjudication and the reported 2023 security entry must not be collapsed into one proved transaction. The suspension/funded-exit relationship requires the relevant orders and dated financing documents.",
+      "es": "Identificar la financiación exacta de Cajasiete, prestatario, principal, escritura, fincas y fechas. El recuerdo aproximado de EUR1m, venta de locales de 2018, adjudicación de 2022 y carga referida de 2023 no se funden en una sola operación probada. La relación con suspensión/salida financiada requiere resoluciones y documentos fechados.",
+      "key": "C-LOAN-INSTRUMENT"
+    },
+    {
+      "en": "Obtain the actual Portfolio board/committee distribution and decision record. Individual escalation and relevant-functions referral do not prove circulation to every director.",
+      "es": "Obtener distribución y decisiones efectivas del consejo/comités de Portfolio. Escalado individual y remisión a funciones competentes no prueban circulación a cada consejero.",
+      "key": "P-BOARD-ROUTING"
+    },
+    {
+      "en": "Reconcile the two earlier 22 August emails and separate Requests 81/82 acknowledgements individually; do not backdate delivery of the four exhibits to those failed-attachment sends.",
+      "es": "Conciliar individualmente los dos correos previos del 22 de agosto y los acuses separados 81/82; no retrotraer a los envíos fallidos la entrega de los cuatro gráficos.",
+      "key": "P-PRIOR-SENDS"
+    },
+    {
+      "en": "Recover the complete native 20 August RICPE submission and its attachment manifest, beyond the recipient's date-specific receipt confirmation.",
+      "es": "Recuperar la comunicación nativa RICPE completa del 20 de agosto y sus anexos, más allá del acuse fechado del destinatario.",
+      "key": "N-20AUG-NATIVE"
+    },
+    {
+      "en": "Reconcile CNMV incoming 2026114903 on 25 August with the separate 24 August REGAGE event PD-SP-EVT-0152; preserve both records until documentary identity is established.",
+      "es": "Conciliar la entrada CNMV 2026114903 del 25 de agosto con el evento REGAGE separado del 24 de agosto PD-SP-EVT-0152; mantener ambos hasta acreditar identidad documental.",
+      "key": "N-REGAGE-BRIDGE"
+    },
+    {
+      "en": "Shared governance, a disclosed investment or an acknowledged complaint does not establish common control, lack of legal independence, concealment, reliance, intent or criminal responsibility. Test knowledge, disclosure and subsequent conduct actor by actor.",
+      "es": "Gobierno compartido, inversión revelada o denuncia recibida no acreditan control común, falta de independencia jurídica, ocultación, confianza, dolo ni responsabilidad penal. Contrastar conocimiento, revelación y conducta posterior actor por actor.",
+      "key": "CORPORATE-MERITS"
+    }
+  ],
+  "source_count": 24,
+  "status": "SCOPED_STATIC_VALIDATION_PASS",
+  "unique_added_links_checked": 118,
+  "universal_completeness_claim": false
+}

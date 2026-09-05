@@ -1454,6 +1454,11 @@ def build_mailbox_events(index: dict[str, Any], index_sha256: str) -> list[dict[
     return events
 
 
+# Source-controlled additive notice cohort; canonical register remains authoritative.
+from prepare_orion_notice_register_20260905 import load_notice_events
+KEY_EVENTS.extend(load_notice_events(REPO_ROOT))
+
+
 def _existing_receipt_ids(register: dict[str, Any] | None) -> dict[str, str]:
     if not register:
         return {}

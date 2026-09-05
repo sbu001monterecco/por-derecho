@@ -1,166 +1,7 @@
 {
-  "schema": "por-derecho.orion-governance-continuity.v2",
-  "control_date": "2026-09-05",
-  "entity": {
-    "id": "PD-SP-O-0027",
-    "name": "ORION Rental SOCIMI, S.A.",
-    "route_en": "/en/orion-rental-socimi/",
-    "route_es": "/es/orion-rental-socimi/",
-    "temporal_firewall": "Constituted in June 2023; not treated as a participant in 2011-2022 Sun Park events."
-  },
-  "documented_edges": [
-    {
-      "from": "RIC Private Equity Investment Partners SCR, S.A.",
-      "to": "ORION Rental SOCIMI, S.A.",
-      "type": "SOLE_SHAREHOLDER_AT_INCORPORATION",
-      "state": "PRIMARY_CORPORATE_RECORD",
-      "date": "2023-06-16",
-      "source": "BORME-A-2023-137-35 / entry 328651"
-    },
-    {
-      "from": "Enrique Guerra Suarez",
-      "to": "ORION Rental SOCIMI, S.A.",
-      "type": "SOLE_ADMINISTRATOR_AT_INCORPORATION_THEN_BOARD_MEMBER",
-      "state": "PRIMARY_CORPORATE_RECORD",
-      "source": "BORME-A-2023-137-35 + BORME-A-2024-69-35"
-    },
-    {
-      "from": "Francisco Mario Matos Matas",
-      "to": "ORION Rental SOCIMI, S.A.",
-      "type": "BOARD_MEMBERSHIP",
-      "state": "DOCUMENTED",
-      "date_from": "2024-04-02",
-      "source": "Orion governance + BORME-A-2024-69-35",
-      "continuity_from": "Sun Park Community administration/secretary-administration record 2011-2022"
-    },
-    {
-      "from": "Jose Daniel Acosta Matos",
-      "to": "ORION Rental SOCIMI, S.A.",
-      "type": "BOARD_MEMBERSHIP",
-      "state": "DOCUMENTED",
-      "date_from": "2024-04-02",
-      "source": "Orion governance + BORME-A-2024-69-35",
-      "continuity_from": "Sun Park 4-Feb-2022 chair/project record"
-    },
-    {
-      "from": "AGM Canary Asset Management, S.L.",
-      "to": "ORION Rental SOCIMI, S.A.",
-      "type": "ATTORNEY_AND_STRATEGIC_ASSET_MANAGEMENT",
-      "state": "DOCUMENTED",
-      "source": "BORME-A-2024-95-35 + Orion audited accounts / issuance document"
-    },
-    {
-      "from": "Francisco Mario Matos Matas",
-      "to": "Pamalexsha Servicios Integrales, S.L.",
-      "type": "33_PERCENT_INTEREST",
-      "state": "AUDITED_RELATED_PARTY_DISCLOSURE",
-      "source": "Orion audited related-party disclosure"
-    },
-    {
-      "from": "Shaila Cogolludo Ramos",
-      "to": "Pamalexsha Servicios Integrales, S.L.",
-      "type": "34_PERCENT_INTEREST",
-      "state": "AUDITED_RELATED_PARTY_DISCLOSURE",
-      "source": "Orion audited related-party disclosure"
-    },
-    {
-      "from": "Antonio Cogolludo Rojas",
-      "to": "Pamalexsha Servicios Integrales, S.L.",
-      "type": "33_PERCENT_INTEREST",
-      "state": "AUDITED_RELATED_PARTY_DISCLOSURE",
-      "source": "Orion audited related-party disclosure"
-    },
-    {
-      "from": "Pamalexsha Servicios Integrales, S.L.",
-      "to": "AGM Canary Asset Management, S.L.",
-      "type": "18_77_PERCENT_INTEREST",
-      "state": "AUDITED_RELATED_PARTY_DISCLOSURE",
-      "source": "Orion audited related-party disclosure",
-      "boundary": "Economic bridge does not prove any direct Orion office for Shaila Cogolludo or Antonio Cogolludo and does not transfer knowledge or intent."
-    },
-    {
-      "from": "Francisco Mario Matos Matas",
-      "to": "AGM Canary Asset Management, S.L.",
-      "type": "BOARD_MEMBERSHIP_AND_INDIRECT_ECONOMIC_INTEREST",
-      "state": "DOCUMENTED",
-      "source": "Orion governance + audited related-party disclosure"
-    },
-    {
-      "from": "Jose Daniel Acosta Matos",
-      "to": "AGM Canary Asset Management, S.L.",
-      "type": "18_77_PERCENT_INTEREST_AND_GOVERNANCE_ROLE",
-      "state": "AUDITED_AND_SELF_PUBLISHED",
-      "source": "Orion 2024 audited accounts + Orion governance"
-    },
-    {
-      "from": "Grupo Patrimonial Acosta Matos, S.L.",
-      "to": "ORION Rental SOCIMI, S.A.",
-      "type": "5_PERCENT_SHAREHOLDER_AT_2024_YEAR_END",
-      "state": "AUDITED_RELATED_PARTY_DISCLOSURE",
-      "source": "Orion 2024 audited accounts"
-    },
-    {
-      "from": "Construcciones Acosta Matos, S.L.U.",
-      "to": "ORION Rental SOCIMI, S.A.",
-      "type": "RELATED_PARTY_CONSTRUCTION_WORKS",
-      "state": "AUDITED_DISCLOSED_TRANSACTION",
-      "amount_eur": 3645525.81,
-      "period": "2024",
-      "source": "Orion 2024 audited accounts",
-      "boundary": "Disclosed transaction; not evidence of impropriety by itself."
-    },
-    {
-      "from": "Proyectos Acosta Matos, S.L.U.",
-      "to": "ORION Rental SOCIMI, S.A.",
-      "type": "RELATED_PARTY_SERVICES",
-      "state": "AUDITED_DISCLOSED_TRANSACTION",
-      "amount_eur": 140941.47,
-      "period": "2024",
-      "source": "Orion 2024 audited accounts",
-      "boundary": "Disclosed transaction; not evidence of impropriety by itself."
-    },
-    {
-      "from": "RIC Private Equity Investment Partners SCR, S.A.",
-      "to": "ORION Rental SOCIMI, S.A.",
-      "type": "FORMATION_AND_FINANCING_CONVERSION_ARCHITECTURE",
-      "state": "DOCUMENTED",
-      "source": "BORME incorporation + Orion issuance / investor materials",
-      "boundary": "Financing or conversion architecture does not establish knowledge or adoption of Sun Park allegations."
-    },
-    {
-      "from": "ORION Rental SOCIMI, S.A.",
-      "to": "wider board / shareholders / investors / auditors / advisers / Portfolio / Euroclear",
-      "type": "GOVERNANCE_CAPITAL_AND_REPUTATIONAL_EXPANSION",
-      "state": "DOCUMENTED_CONTEXT",
-      "source": "Orion governance, audited accounts, issuance and capital-increase records",
-      "attribution_boundary": "No wrongdoing, knowledge or duty breach is attributed to later participants absent actor-specific evidence."
-    }
-  ],
-  "wider_board_2024_borme": [
-    "Victor Marti Gilabert",
-    "Angel Medina Padron",
-    "Francisco Lopez Gonzalez",
-    "Anil Partap Harjani",
-    "Oscar Diaz Melian",
-    "Manuel Medina Artiles",
-    "Jesus Diaz Quintana",
-    "Manuel Padron Padron",
-    "Jose Daniel Acosta Matos",
-    "Francisco Mario Matos Matas",
-    "Enrique Guerra Suarez"
-  ],
-  "disclosure_test": {
-    "source": "Orion November-2024 issuance document",
-    "source_position": "Issuer information is presented as complete, reality-conforming and not omitting relevant information needed for an informed investment decision; issuer/governing body responsibility and the stated limits of Portfolio/CNMV verification are separately described.",
-    "repository_boundary": "Absence of a Sun Park matter from a public document is not proof of concealment. Materiality, actual knowledge, duty/reason to disclose, presentation, reliance and causation must be proved actor by actor.",
-    "questions": [
-      "What Sun Park proceedings, disputes, complaints, appeals and actor-specific allegations existed at each Orion milestone?",
-      "Which were material to Orion, AGM, RICPE, directors, investors, auditors, advisers or market admission?",
-      "What was disclosed, rejected, corrected, considered immaterial or independently verified?",
-      "Did any proved omission cause reliance, capital, approval, reputation or leverage?"
-    ]
-  },
   "attributed_thesis": {
+    "meaning": "Gil alleges that legacy actors may recruit new individuals/entities and thereby use their reputation, institutional credibility, capital, network, professional standing, muscle power and resources as protective and enabling layers, potentially without the new actor knowing the full underlying history.",
+    "non_finding": "The repository does not find that Orion, AGM, RICPE, any director, investor, auditor, adviser, Portfolio, Euroclear or other later participant was coerced, deceived, concealed information, failed a legal duty or knowingly joined an illicit scheme.",
     "speaker": "Gil Marer",
     "status": "PARTY_ALLEGATION_AND_ANALYTICAL_THESIS",
     "terms": [
@@ -172,20 +13,155 @@
       "shield and a sword",
       "illicit shield and an illicit sword",
       "house of cards"
-    ],
-    "meaning": "Gil alleges that legacy actors may recruit new individuals/entities and thereby use their reputation, institutional credibility, capital, network, professional standing, muscle power and resources as protective and enabling layers, potentially without the new actor knowing the full underlying history.",
-    "non_finding": "The repository does not find that Orion, AGM, RICPE, any director, investor, auditor, adviser, Portfolio, Euroclear or other later participant was coerced, deceived, concealed information, failed a legal duty or knowingly joined an illicit scheme."
+    ]
   },
-  "proof_test": [
-    "legacy exposure",
-    "material fact plus disclosure reason or duty",
-    "actor-specific actual knowledge",
-    "omission or misleading presentation",
-    "entry of new actor or resource",
-    "reliance or enabling effect",
-    "actor-specific benefit and causation",
-    "lawful or innocent alternative"
+  "control_date": "2026-09-05",
+  "disclosure_test": {
+    "questions": [
+      "What Sun Park proceedings, disputes, complaints, appeals and actor-specific allegations existed at each Orion milestone?",
+      "Which were material to Orion, AGM, RICPE, directors, investors, auditors, advisers or market admission?",
+      "What was disclosed, rejected, corrected, considered immaterial or independently verified?",
+      "Did any proved omission cause reliance, capital, approval, reputation or leverage?"
+    ],
+    "repository_boundary": "Absence of a Sun Park matter from a public document is not proof of concealment. Materiality, actual knowledge, duty/reason to disclose, presentation, reliance and causation must be proved actor by actor.",
+    "source": "Orion November-2024 issuance document",
+    "source_position": "Issuer information is presented as complete, reality-conforming and not omitting relevant information needed for an informed investment decision; issuer/governing body responsibility and the stated limits of Portfolio/CNMV verification are separately described."
+  },
+  "documented_edges": [
+    {
+      "date": "2023-06-16",
+      "from": "RIC Private Equity Investment Partners SCR, S.A.",
+      "source": "BORME-A-2023-137-35 / entry 328651",
+      "state": "PRIMARY_CORPORATE_RECORD",
+      "to": "ORION Rental SOCIMI, S.A.",
+      "type": "SOLE_SHAREHOLDER_AT_INCORPORATION"
+    },
+    {
+      "from": "Enrique Guerra Suarez",
+      "source": "BORME-A-2023-137-35 + BORME-A-2024-69-35",
+      "state": "PRIMARY_CORPORATE_RECORD",
+      "to": "ORION Rental SOCIMI, S.A.",
+      "type": "SOLE_ADMINISTRATOR_AT_INCORPORATION_THEN_BOARD_MEMBER"
+    },
+    {
+      "continuity_from": "Sun Park Community administration/secretary-administration record 2011-2022",
+      "date_from": "2024-04-02",
+      "from": "Francisco Mario Matos Matas",
+      "source": "Orion governance + BORME-A-2024-69-35",
+      "state": "DOCUMENTED",
+      "to": "ORION Rental SOCIMI, S.A.",
+      "type": "BOARD_MEMBERSHIP"
+    },
+    {
+      "continuity_from": "Sun Park 4-Feb-2022 chair/project record",
+      "date_from": "2024-04-02",
+      "from": "Jose Daniel Acosta Matos",
+      "source": "Orion governance + BORME-A-2024-69-35",
+      "state": "DOCUMENTED",
+      "to": "ORION Rental SOCIMI, S.A.",
+      "type": "BOARD_MEMBERSHIP"
+    },
+    {
+      "from": "AGM Canary Asset Management, S.L.",
+      "source": "BORME-A-2024-95-35 + Orion audited accounts / issuance document",
+      "state": "DOCUMENTED",
+      "to": "ORION Rental SOCIMI, S.A.",
+      "type": "ATTORNEY_AND_STRATEGIC_ASSET_MANAGEMENT"
+    },
+    {
+      "from": "Francisco Mario Matos Matas",
+      "source": "Orion audited related-party disclosure",
+      "state": "AUDITED_RELATED_PARTY_DISCLOSURE",
+      "to": "Pamalexsha Servicios Integrales, S.L.",
+      "type": "33_PERCENT_INTEREST"
+    },
+    {
+      "from": "Shaila Cogolludo Ramos",
+      "source": "Orion audited related-party disclosure",
+      "state": "AUDITED_RELATED_PARTY_DISCLOSURE",
+      "to": "Pamalexsha Servicios Integrales, S.L.",
+      "type": "34_PERCENT_INTEREST"
+    },
+    {
+      "from": "Antonio Cogolludo Rojas",
+      "source": "Orion audited related-party disclosure",
+      "state": "AUDITED_RELATED_PARTY_DISCLOSURE",
+      "to": "Pamalexsha Servicios Integrales, S.L.",
+      "type": "33_PERCENT_INTEREST"
+    },
+    {
+      "boundary": "Economic bridge does not prove any direct Orion office for Shaila Cogolludo or Antonio Cogolludo and does not transfer knowledge or intent.",
+      "from": "Pamalexsha Servicios Integrales, S.L.",
+      "source": "Orion audited related-party disclosure",
+      "state": "AUDITED_RELATED_PARTY_DISCLOSURE",
+      "to": "AGM Canary Asset Management, S.L.",
+      "type": "18_77_PERCENT_INTEREST"
+    },
+    {
+      "from": "Francisco Mario Matos Matas",
+      "source": "Orion governance + audited related-party disclosure",
+      "state": "DOCUMENTED",
+      "to": "AGM Canary Asset Management, S.L.",
+      "type": "BOARD_MEMBERSHIP_AND_INDIRECT_ECONOMIC_INTEREST"
+    },
+    {
+      "from": "Jose Daniel Acosta Matos",
+      "source": "Orion 2024 audited accounts + Orion governance",
+      "state": "AUDITED_AND_SELF_PUBLISHED",
+      "to": "AGM Canary Asset Management, S.L.",
+      "type": "18_77_PERCENT_INTEREST_AND_GOVERNANCE_ROLE"
+    },
+    {
+      "from": "Grupo Patrimonial Acosta Matos, S.L.",
+      "source": "Orion 2024 audited accounts",
+      "state": "AUDITED_RELATED_PARTY_DISCLOSURE",
+      "to": "ORION Rental SOCIMI, S.A.",
+      "type": "5_PERCENT_SHAREHOLDER_AT_2024_YEAR_END"
+    },
+    {
+      "amount_eur": 3645525.81,
+      "boundary": "Disclosed transaction; not evidence of impropriety by itself.",
+      "from": "Construcciones Acosta Matos, S.L.U.",
+      "period": "2024",
+      "source": "Orion 2024 audited accounts",
+      "state": "AUDITED_DISCLOSED_TRANSACTION",
+      "to": "ORION Rental SOCIMI, S.A.",
+      "type": "RELATED_PARTY_CONSTRUCTION_WORKS"
+    },
+    {
+      "amount_eur": 140941.47,
+      "boundary": "Disclosed transaction; not evidence of impropriety by itself.",
+      "from": "Proyectos Acosta Matos, S.L.U.",
+      "period": "2024",
+      "source": "Orion 2024 audited accounts",
+      "state": "AUDITED_DISCLOSED_TRANSACTION",
+      "to": "ORION Rental SOCIMI, S.A.",
+      "type": "RELATED_PARTY_SERVICES"
+    },
+    {
+      "boundary": "Financing or conversion architecture does not establish knowledge or adoption of Sun Park allegations.",
+      "from": "RIC Private Equity Investment Partners SCR, S.A.",
+      "source": "BORME incorporation + Orion issuance / investor materials",
+      "state": "DOCUMENTED",
+      "to": "ORION Rental SOCIMI, S.A.",
+      "type": "FORMATION_AND_FINANCING_CONVERSION_ARCHITECTURE"
+    },
+    {
+      "attribution_boundary": "No wrongdoing, knowledge or duty breach is attributed to later participants absent actor-specific evidence.",
+      "from": "ORION Rental SOCIMI, S.A.",
+      "source": "Orion governance, audited accounts, issuance and capital-increase records",
+      "state": "DOCUMENTED_CONTEXT",
+      "to": "wider board / shareholders / investors / auditors / advisers / Portfolio / Euroclear",
+      "type": "GOVERNANCE_CAPITAL_AND_REPUTATIONAL_EXPANSION"
+    }
   ],
+  "entity": {
+    "id": "PD-SP-O-0027",
+    "name": "ORION Rental SOCIMI, S.A.",
+    "route_en": "/en/orion-rental-socimi/",
+    "route_es": "/es/orion-rental-socimi/",
+    "temporal_firewall": "Constituted in June 2023; not treated as a participant in 2011-2022 Sun Park events."
+  },
   "internal_routes": [
     "/en/orion-rental-socimi/",
     "/es/orion-rental-socimi/",
@@ -206,7 +182,215 @@
     "/en/acosta-matos-perimeter/",
     "/es/acosta-matos-perimetro/",
     "/en/sun-park-takeover-7-june-2018/",
-    "/es/toma-control-sun-park-7-junio-2018/"
+    "/es/toma-control-sun-park-7-junio-2018/",
+    "/en/institutional-records/",
+    "/en/cajasiete-sun-park-financing-comparability/",
+    "/en/portfolio-orion-traceability/",
+    "/en/cnmv-ricpe-verification/",
+    "/es/registros-institucionales/",
+    "/es/cajasiete-sun-park-financiacion-comparabilidad/",
+    "/es/portfolio-orion-trazabilidad/",
+    "/es/cnmv-ricpe-verificacion/"
+  ],
+  "notice_control": {
+    "canonical_register": "assets/data/institutional-communications-register-v1.json",
+    "control_id": "PD-SP-ORION-NOTICE-20260905",
+    "crosswalk": "ops/ORION_NOTICE_CANONICAL_CROSSWALK_20260905.json",
+    "event_ids": [
+      "PD-SP-EVT-0159",
+      "PD-SP-EVT-0160",
+      "PD-SP-EVT-0161",
+      "PD-SP-EVT-0162",
+      "PD-SP-EVT-0163",
+      "PD-SP-EVT-0164",
+      "PD-SP-EVT-0165",
+      "PD-SP-EVT-0166",
+      "PD-SP-EVT-0167",
+      "PD-SP-EVT-0168",
+      "PD-SP-EVT-0169",
+      "PD-SP-EVT-0170",
+      "PD-SP-EVT-0171",
+      "PD-SP-EVT-0172",
+      "PD-SP-EVT-0173",
+      "PD-SP-EVT-0174",
+      "PD-SP-EVT-0175",
+      "PD-SP-EVT-0176",
+      "PD-SP-EVT-0177",
+      "PD-SP-EVT-0178"
+    ],
+    "evidence_boundary": "Notice, review and corporate relationships do not transfer criminal responsibility."
+  },
+  "notice_edges": [
+    {
+      "attribution_boundary": "Use the event-specific proof ceiling; receipt is not merits adoption.",
+      "event_id": "PD-SP-EVT-0159",
+      "route_en": "en/institutional-records/#communication-PD-SP-EVT-0159",
+      "route_es": "es/registros-institucionales/#communication-PD-SP-EVT-0159",
+      "source_id": "PD-SP-SRC-0004",
+      "type": "SOURCE_TO_INDIVIDUAL_EVENT"
+    },
+    {
+      "attribution_boundary": "Use the event-specific proof ceiling; receipt is not merits adoption.",
+      "event_id": "PD-SP-EVT-0160",
+      "route_en": "en/institutional-records/#communication-PD-SP-EVT-0160",
+      "route_es": "es/registros-institucionales/#communication-PD-SP-EVT-0160",
+      "source_id": "PD-SP-SRC-0005",
+      "type": "SOURCE_TO_INDIVIDUAL_EVENT"
+    },
+    {
+      "attribution_boundary": "Use the event-specific proof ceiling; receipt is not merits adoption.",
+      "event_id": "PD-SP-EVT-0161",
+      "route_en": "en/institutional-records/#communication-PD-SP-EVT-0161",
+      "route_es": "es/registros-institucionales/#communication-PD-SP-EVT-0161",
+      "source_id": "PD-SP-SRC-0006",
+      "type": "SOURCE_TO_INDIVIDUAL_EVENT"
+    },
+    {
+      "attribution_boundary": "Use the event-specific proof ceiling; receipt is not merits adoption.",
+      "event_id": "PD-SP-EVT-0162",
+      "route_en": "en/institutional-records/#communication-PD-SP-EVT-0162",
+      "route_es": "es/registros-institucionales/#communication-PD-SP-EVT-0162",
+      "source_id": "PD-SP-SRC-0007",
+      "type": "SOURCE_TO_INDIVIDUAL_EVENT"
+    },
+    {
+      "attribution_boundary": "Use the event-specific proof ceiling; receipt is not merits adoption.",
+      "event_id": "PD-SP-EVT-0163",
+      "route_en": "en/institutional-records/#communication-PD-SP-EVT-0163",
+      "route_es": "es/registros-institucionales/#communication-PD-SP-EVT-0163",
+      "source_id": "PD-SP-SRC-0008",
+      "type": "SOURCE_TO_INDIVIDUAL_EVENT"
+    },
+    {
+      "attribution_boundary": "Use the event-specific proof ceiling; receipt is not merits adoption.",
+      "event_id": "PD-SP-EVT-0164",
+      "route_en": "en/institutional-records/#communication-PD-SP-EVT-0164",
+      "route_es": "es/registros-institucionales/#communication-PD-SP-EVT-0164",
+      "source_id": "PD-SP-SRC-0009",
+      "type": "SOURCE_TO_INDIVIDUAL_EVENT"
+    },
+    {
+      "attribution_boundary": "Use the event-specific proof ceiling; receipt is not merits adoption.",
+      "event_id": "PD-SP-EVT-0165",
+      "route_en": "en/institutional-records/#communication-PD-SP-EVT-0165",
+      "route_es": "es/registros-institucionales/#communication-PD-SP-EVT-0165",
+      "source_id": "PD-SP-SRC-0010",
+      "type": "SOURCE_TO_INDIVIDUAL_EVENT"
+    },
+    {
+      "attribution_boundary": "Use the event-specific proof ceiling; receipt is not merits adoption.",
+      "event_id": "PD-SP-EVT-0166",
+      "route_en": "en/institutional-records/#communication-PD-SP-EVT-0166",
+      "route_es": "es/registros-institucionales/#communication-PD-SP-EVT-0166",
+      "source_id": "PD-SP-SRC-0011",
+      "type": "SOURCE_TO_INDIVIDUAL_EVENT"
+    },
+    {
+      "attribution_boundary": "Use the event-specific proof ceiling; receipt is not merits adoption.",
+      "event_id": "PD-SP-EVT-0167",
+      "route_en": "en/institutional-records/#communication-PD-SP-EVT-0167",
+      "route_es": "es/registros-institucionales/#communication-PD-SP-EVT-0167",
+      "source_id": "PD-SP-SRC-0012",
+      "type": "SOURCE_TO_INDIVIDUAL_EVENT"
+    },
+    {
+      "attribution_boundary": "Use the event-specific proof ceiling; receipt is not merits adoption.",
+      "event_id": "PD-SP-EVT-0168",
+      "route_en": "en/institutional-records/#communication-PD-SP-EVT-0168",
+      "route_es": "es/registros-institucionales/#communication-PD-SP-EVT-0168",
+      "source_id": "PD-SP-SRC-0013",
+      "type": "SOURCE_TO_INDIVIDUAL_EVENT"
+    },
+    {
+      "attribution_boundary": "Use the event-specific proof ceiling; receipt is not merits adoption.",
+      "event_id": "PD-SP-EVT-0169",
+      "route_en": "en/institutional-records/#communication-PD-SP-EVT-0169",
+      "route_es": "es/registros-institucionales/#communication-PD-SP-EVT-0169",
+      "source_id": "PD-SP-SRC-0014",
+      "type": "SOURCE_TO_INDIVIDUAL_EVENT"
+    },
+    {
+      "attribution_boundary": "Use the event-specific proof ceiling; receipt is not merits adoption.",
+      "event_id": "PD-SP-EVT-0170",
+      "route_en": "en/institutional-records/#communication-PD-SP-EVT-0170",
+      "route_es": "es/registros-institucionales/#communication-PD-SP-EVT-0170",
+      "source_id": "PD-SP-SRC-0015",
+      "type": "SOURCE_TO_INDIVIDUAL_EVENT"
+    },
+    {
+      "attribution_boundary": "Use the event-specific proof ceiling; receipt is not merits adoption.",
+      "event_id": "PD-SP-EVT-0171",
+      "route_en": "en/institutional-records/#communication-PD-SP-EVT-0171",
+      "route_es": "es/registros-institucionales/#communication-PD-SP-EVT-0171",
+      "source_id": "PD-SP-SRC-0018",
+      "type": "SOURCE_TO_INDIVIDUAL_EVENT"
+    },
+    {
+      "attribution_boundary": "Use the event-specific proof ceiling; receipt is not merits adoption.",
+      "event_id": "PD-SP-EVT-0172",
+      "route_en": "en/institutional-records/#communication-PD-SP-EVT-0172",
+      "route_es": "es/registros-institucionales/#communication-PD-SP-EVT-0172",
+      "source_id": "PD-SP-SRC-0016",
+      "type": "SOURCE_TO_INDIVIDUAL_EVENT"
+    },
+    {
+      "attribution_boundary": "Use the event-specific proof ceiling; receipt is not merits adoption.",
+      "event_id": "PD-SP-EVT-0173",
+      "route_en": "en/institutional-records/#communication-PD-SP-EVT-0173",
+      "route_es": "es/registros-institucionales/#communication-PD-SP-EVT-0173",
+      "source_id": "PD-SP-SRC-0020",
+      "type": "SOURCE_TO_INDIVIDUAL_EVENT"
+    },
+    {
+      "attribution_boundary": "Use the event-specific proof ceiling; receipt is not merits adoption.",
+      "event_id": "PD-SP-EVT-0174",
+      "route_en": "en/institutional-records/#communication-PD-SP-EVT-0174",
+      "route_es": "es/registros-institucionales/#communication-PD-SP-EVT-0174",
+      "source_id": "PD-SP-SRC-0017",
+      "type": "SOURCE_TO_INDIVIDUAL_EVENT"
+    },
+    {
+      "attribution_boundary": "Use the event-specific proof ceiling; receipt is not merits adoption.",
+      "event_id": "PD-SP-EVT-0175",
+      "route_en": "en/institutional-records/#communication-PD-SP-EVT-0175",
+      "route_es": "es/registros-institucionales/#communication-PD-SP-EVT-0175",
+      "source_id": "PD-SP-SRC-0018",
+      "type": "SOURCE_TO_INDIVIDUAL_EVENT"
+    },
+    {
+      "attribution_boundary": "Use the event-specific proof ceiling; receipt is not merits adoption.",
+      "event_id": "PD-SP-EVT-0176",
+      "route_en": "en/institutional-records/#communication-PD-SP-EVT-0176",
+      "route_es": "es/registros-institucionales/#communication-PD-SP-EVT-0176",
+      "source_id": "PD-SP-SRC-0019",
+      "type": "SOURCE_TO_INDIVIDUAL_EVENT"
+    },
+    {
+      "attribution_boundary": "Use the event-specific proof ceiling; receipt is not merits adoption.",
+      "event_id": "PD-SP-EVT-0177",
+      "route_en": "en/institutional-records/#communication-PD-SP-EVT-0177",
+      "route_es": "es/registros-institucionales/#communication-PD-SP-EVT-0177",
+      "source_id": "PD-SP-SRC-0020",
+      "type": "SOURCE_TO_INDIVIDUAL_EVENT"
+    },
+    {
+      "attribution_boundary": "Use the event-specific proof ceiling; receipt is not merits adoption.",
+      "event_id": "PD-SP-EVT-0178",
+      "route_en": "en/institutional-records/#communication-PD-SP-EVT-0178",
+      "route_es": "es/registros-institucionales/#communication-PD-SP-EVT-0178",
+      "source_id": "PD-SP-SRC-0021",
+      "type": "SOURCE_TO_INDIVIDUAL_EVENT"
+    }
+  ],
+  "proof_test": [
+    "legacy exposure",
+    "material fact plus disclosure reason or duty",
+    "actor-specific actual knowledge",
+    "omission or misleading presentation",
+    "entry of new actor or resource",
+    "reliance or enabling effect",
+    "actor-specific benefit and causation",
+    "lawful or innocent alternative"
   ],
   "public_sources": [
     "https://www.orionsocimi.com/gobierno-corporativo",
@@ -219,5 +403,19 @@
     "https://www.boe.es/diario_borme/txt.php?id=BORME-A-2024-95-35",
     "https://www.boe.es/diario_borme/txt.php?id=BORME-C-2026-3906"
   ],
-  "right_of_reply": "All named people and entities may provide corrections, contrary evidence or exculpatory records. Silence is not admission."
+  "right_of_reply": "All named people and entities may provide corrections, contrary evidence or exculpatory records. Silence is not admission.",
+  "schema": "por-derecho.orion-governance-continuity.v2",
+  "wider_board_2024_borme": [
+    "Victor Marti Gilabert",
+    "Angel Medina Padron",
+    "Francisco Lopez Gonzalez",
+    "Anil Partap Harjani",
+    "Oscar Diaz Melian",
+    "Manuel Medina Artiles",
+    "Jesus Diaz Quintana",
+    "Manuel Padron Padron",
+    "Jose Daniel Acosta Matos",
+    "Francisco Mario Matos Matas",
+    "Enrique Guerra Suarez"
+  ]
 }
