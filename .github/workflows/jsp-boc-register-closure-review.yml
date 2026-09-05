@@ -38,32 +38,29 @@ jobs:
           assert old_by_id==new_by_id,'Never drop or change any previously reviewed event'
           a=copy.deepcopy(old);b=copy.deepcopy(new);a.pop('events');b.pop('events');assert a==b,'Only deterministic order may change the register envelope'
           new_cp=json.loads(cp_path.read_text());a=copy.deepcopy(old_cp);b=copy.deepcopy(new_cp);a.pop('register_sha256');b.pop('register_sha256');assert a==b,'No scan history or unrelated checkpoint fact may change'
-          # The older CNMV release froze 333 rows, not an eternal prohibition on
-          # independently source-proved historical additions by later releases.
-          # Preserve every baseline row and envelope field and allow exactly BOC12.
+          # Preserve all 333 baseline rows and every envelope field; allow only
+          # the 12 historical events independently reproduced from the BOC source.
           cnmv=root/'scripts/build_cnmv_interim_measures_20260905.py';c_before=cnmv.read_text()
           needle="    ck(reg==original(D['canonical_register']),'Canonical register modified')\n    ck(len(json.loads(reg)['events'])==333,'Canonical event count')"
-          replacement="""    baseline_reg=json.loads(original(D['canonical_register']))
-              current_reg=json.loads(reg)
-              ck(len(baseline_reg['events'])==333,'Frozen CNMV event count')
-              allowed_reg=json.loads(json.dumps(baseline_reg))
-              extension=[]
-              if current_reg!=baseline_reg:
-                  from load_jsp_boc_notice_events import load_boc_notice_events
-                  extension=load_boc_notice_events(ROOT)
-                  ck(len(extension)==12,'Reviewed BOC extension count')
-                  ck(not ({e['event_id'] for e in baseline_reg['events']} & {e['event_id'] for e in extension}),'BOC ID collision')
-                  allowed_reg['events']=sorted(baseline_reg['events']+extension,key=lambda e:e['event_id'])
-                  allowed_reg['denominator_control']['event_rows_total']+=len(extension)
-                  allowed_reg['denominator_control']['curated_source_proved_events']+=len(extension)
-              ck(current_reg==allowed_reg,'Canonical register modified')
-              ck(len(current_reg['events'])==333+len(extension),'Canonical event count')"""
-          # Dedent only the extra YAML/Python literal indentation.
-          replacement='\n'.join([replacement.splitlines()[0]]+[l[10:] for l in replacement.splitlines()[1:]])
+          replacement='\n'.join([
+            "    baseline_reg=json.loads(original(D['canonical_register']))",
+            "    current_reg=json.loads(reg)",
+            "    ck(len(baseline_reg['events'])==333,'Frozen CNMV event count')",
+            "    allowed_reg=json.loads(json.dumps(baseline_reg))",
+            "    extension=[]",
+            "    if current_reg!=baseline_reg:",
+            "        from load_jsp_boc_notice_events import load_boc_notice_events",
+            "        extension=load_boc_notice_events(ROOT)",
+            "        ck(len(extension)==12,'Reviewed BOC extension count')",
+            "        ck(not ({e['event_id'] for e in baseline_reg['events']} & {e['event_id'] for e in extension}),'BOC ID collision')",
+            "        allowed_reg['events']=sorted(baseline_reg['events']+extension,key=lambda e:e['event_id'])",
+            "        allowed_reg['denominator_control']['event_rows_total']+=len(extension)",
+            "        allowed_reg['denominator_control']['curated_source_proved_events']+=len(extension)",
+            "    ck(current_reg==allowed_reg,'Canonical register modified')",
+            "    ck(len(current_reg['events'])==333+len(extension),'Canonical event count')"
+          ])
           assert needle in c_before;c_after=c_before.replace(needle,replacement);compile(c_after,str(cnmv),'exec');cnmv.write_text(c_after)
           diffs.extend(difflib.unified_diff(c_before.splitlines(True),c_after.splitlines(True),fromfile=str(cnmv),tofile=str(cnmv)))
-          # Independent mutation tests use the frozen historical source, not an
-          # output-register-derived expected cohort.
           frozen=json.loads(subprocess.check_output(['git','show','66003743d2cb3a1807c1f3765c530bf639857da3:assets/data/institutional-communications-register-v1.json'],cwd=root,text=True))
           expected=copy.deepcopy(frozen);expected['events']=sorted(frozen['events']+source_events,key=lambda e:e['event_id']);expected['denominator_control']['event_rows_total']+=12;expected['denominator_control']['curated_source_proved_events']+=12
           assert expected==new and len(frozen['events'])==333
@@ -119,5 +116,5 @@ jobs:
             /tmp/ci-control-plane
           retention-days: 30
           if-no-files-found: error
-# No authenticated mutation. The five prepared files require reviewed exact-object
+# No authenticated mutation. Five prepared files require reviewed exact-object
 # admission, actual PR checks, a controller permit, merge and live readback.
