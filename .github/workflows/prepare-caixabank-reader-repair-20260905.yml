@@ -1,0 +1,118 @@
+name: Prepare CaixaBank reader repair on isolated worker
+on:
+  push:
+    branches: ['worker/caixabank-360-audit-20260905']
+    paths: ['.github/workflows/prepare-caixabank-reader-repair-20260905.yml']
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: prepare-caixabank-reader-repair-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  prepare:
+    if: github.ref == 'refs/heads/worker/caixabank-360-audit-20260905'
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: false
+          fetch-depth: 1
+      - name: Install pinned verification tools
+        run: python3 -m pip install playwright==1.55.0 requests==2.32.5 beautifulsoup4==4.13.5 PyMuPDF==1.26.4 Pillow==11.3.0
+      - name: Install browser engines
+        run: python3 -m playwright install --with-deps chromium firefox webkit
+      - name: Read exact public-safe worker package and verify preconditions
+        run: |
+          python3 - <<'PY'
+          import asyncio,base64,hashlib,io,json,pathlib,re,requests,zipfile
+          from playwright.async_api import async_playwright
+          share='https://1drv.ms/u/c/bdf43392f576e62f/IQDMLxyBYdxYQ5L8jJeID5G9ATYXwhert9PGdfQjZP7GSrM'
+          expected='c9eaa19a484eecf828f6cb5f39ec91e157a4b924dd3fee4a94e394675689fe6c'
+          token='u!'+base64.urlsafe_b64encode(share.encode()).decode().rstrip('=')
+          blob=None
+          candidates=[f'https://api.onedrive.com/v1.0/shares/{token}/root/content',f'https://api.onedrive.com/v1.0/shares/{token}/driveItem/content',share+'?download=1']
+          for i,url in enumerate(candidates):
+              try:
+                  response=requests.get(url,timeout=50)
+                  print('PUBLIC_PACKAGE_ATTEMPT',i,response.status_code,len(response.content))
+                  if hashlib.sha256(response.content).hexdigest()==expected:blob=response.content;break
+              except Exception as e:print('PUBLIC_PACKAGE_ATTEMPT_FAILED',i,type(e).__name__)
+          async def browser_download():
+              async with async_playwright() as p:
+                  b=await p.chromium.launch();ctx=await b.new_context(accept_downloads=True);page=await ctx.new_page()
+                  await page.goto(share,wait_until='domcontentloaded',timeout=60000);await page.wait_for_timeout(7000)
+                  choices=page.get_by_role('button',name=re.compile('Download|Descargar',re.I))
+                  if not await choices.count():choices=page.get_by_role('menuitem',name=re.compile('Download|Descargar',re.I))
+                  if not await choices.count():raise RuntimeError('No anonymous download control on the public-safe package viewer')
+                  async with page.expect_download(timeout=60000) as info:await choices.first.click(timeout=15000)
+                  download=await info.value;dest=pathlib.Path('/tmp/caixabank-public-worker.zip');await download.save_as(dest)
+                  await b.close();return dest.read_bytes()
+          if blob is None:blob=asyncio.run(browser_download())
+          assert hashlib.sha256(blob).hexdigest()==expected,'Public-safe package fingerprint mismatch'
+          z=zipfile.ZipFile(io.BytesIO(blob));manifest=json.loads(z.read('DELTA_MANIFEST.json'))
+          assert manifest['allowed_worker_branch']=='worker/caixabank-360-audit-20260905'
+          staged=[]
+          for row in manifest['files']:
+              rel=row['path'];path=pathlib.Path(rel)
+              assert not path.is_absolute() and '..' not in path.parts and not rel.startswith('.github/')
+              data=z.read(rel);assert len(data)==row['bytes'] and hashlib.sha256(data).hexdigest()==row['sha256']
+              current=hashlib.sha256(path.read_bytes()).hexdigest() if path.exists() else None
+              assert current in (row['before_sha256'],row['sha256']), 'Concurrent source change: '+rel
+              staged.append((path,data))
+          for path,data in staged:path.parent.mkdir(parents=True,exist_ok=True);path.write_bytes(data)
+          pathlib.Path('/tmp/caixabank-repair-paths.json').write_text(json.dumps([str(p) for p,_ in staged]))
+          pathlib.Path('/tmp/caixabank-delta-manifest.json').write_text(json.dumps(manifest,indent=2))
+          print('PUBLIC_SAFE_DELTA_PREPARED',len(staged),'No private original imported; no main write.')
+          PY
+      - name: Validate prepared sources and syntax
+        run: |
+          python3 scripts/validate_caixabank_reader_repair_20260905.py
+          python3 - <<'PY'
+          import json,pathlib,subprocess
+          for name in json.loads(pathlib.Path('/tmp/caixabank-repair-paths.json').read_text()):
+              if name.endswith('.js'):subprocess.run(['node','--check',name],check=True)
+          PY
+          git diff --check
+      - name: Preserve prepared delta on its worker branch only
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          python3 - <<'PY'
+          import base64,json,os,pathlib,subprocess
+          branch='worker/caixabank-360-audit-20260905'
+          assert os.environ['GITHUB_REF']=='refs/heads/'+branch
+          paths=json.loads(pathlib.Path('/tmp/caixabank-repair-paths.json').read_text())
+          assert not any(p.startswith('.github/') for p in paths)
+          subprocess.run(['git','add','--',*paths],check=True)
+          if subprocess.run(['git','diff','--cached','--quiet']).returncode:
+              subprocess.run(['git','config','user.name','github-actions[bot]'],check=True)
+              subprocess.run(['git','config','user.email','41898282+github-actions[bot]@users.noreply.github.com'],check=True)
+              subprocess.run(['git','commit','-m','Prepare public-redacted CaixaBank sources, mobile reader and reciprocal links'],check=True)
+              auth=base64.b64encode(('x-access-token:'+os.environ['GH_TOKEN']).encode()).decode()
+              subprocess.run(['git','-c','http.extraheader=AUTHORIZATION: basic '+auth,'push','origin','HEAD:refs/heads/'+branch],check=True)
+          print('WORKER_HEAD',subprocess.check_output(['git','rev-parse','HEAD'],text=True).strip())
+          PY
+      - name: Serve candidate under the actual project path
+        run: |
+          mkdir -p /tmp/caixabank-www
+          ln -s "$GITHUB_WORKSPACE" /tmp/caixabank-www/por-derecho
+          python3 -m http.server 8899 --bind 127.0.0.1 --directory /tmp/caixabank-www >/tmp/caixabank-server.log 2>&1 &
+      - name: Test candidate in Chromium Firefox and WebKit with bounded screenshots
+        env:
+          PD_AUDIT_BASE: http://127.0.0.1:8899/por-derecho/
+          PD_AUDIT_OUT: /tmp/caixabank-candidate
+        run: |
+          python3 scripts/audit_caixabank_360_20260905.py --stage browser
+          python3 scripts/audit_caixabank_360_20260905.py --stage http
+          python3 scripts/validate_caixabank_reader_repair_20260905.py --browser-folder /tmp/caixabank-candidate
+      - uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
+        if: always()
+        with:
+          name: caixabank-reader-candidate-checks
+          path: |
+            /tmp/caixabank-candidate/
+            /tmp/caixabank-delta-manifest.json
+            /tmp/caixabank-server.log
+          retention-days: 7
