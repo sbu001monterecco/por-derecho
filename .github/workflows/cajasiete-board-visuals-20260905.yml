@@ -28,7 +28,7 @@ jobs:
           git fetch --quiet origin main
           git merge --no-edit origin/main
       - run: python -m pip install cairosvg==2.8.2 pillow==11.3.0 beautifulsoup4==4.14.3 playwright==1.55.0
-      - name: Correct relationship classification
+      - name: Correct source classification and production image loading
         run: |
           python - <<'PY'
           from pathlib import Path
@@ -36,7 +36,10 @@ jobs:
           old="'linked_transport_event_ids':['PD-SP-EVT-0176'] if i['direction'].startswith('OUTBOUND') else []"
           new="'linked_transport_event_ids':[],'related_curated_event_ids':['PD-SP-EVT-0176'] if i['direction'].startswith('OUTBOUND') else []"
           assert s.count(old)==1 or new in s,'Unexpected source; stop rather than guessing'
-          p.write_text(s.replace(old,new))
+          s=s.replace(old,new)
+          assert s.count('loading="lazy"')==1 or s.count('loading="eager"')==1,'Unexpected image markup'
+          s=s.replace('loading="lazy"','loading="eager"')
+          p.write_text(s)
           PY
       - name: Generate and validate source-controlled candidate
         run: |
