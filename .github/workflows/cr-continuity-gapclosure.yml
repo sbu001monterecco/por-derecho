@@ -1,49 +1,176 @@
 name: CR continuity gap closure
 on:
+  pull_request:
+    paths:
+      - '.github/workflows/cr-continuity-gapclosure.yml'
+      - '.github/workflows/cuatrecasas-rauda-publication.yml'
+      - 'scripts/close_cr_continuity_20260905.py'
+      - 'assets/data/la-laguna-proceeding-pages-v1.json'
+      - 'assets/data/matter-identity-registry-v1.organisations.json'
+      - 'assets/data/unitary-multitrack-criminal-first-gap-closure-v1.json'
+      - 'es/cuatrecasas-sun-park/index.html'
+      - 'en/cuatrecasas-sun-park/index.html'
+      - 'es/metodologia/index.html'
+      - 'en/methodology/index.html'
   push:
-    branches: ['worker/cr-continuity-gapclosure-20260905']
-    paths: ['.github/workflows/cr-continuity-gapclosure.yml']
+    branches: [main, 'worker/cr-continuity-gapclosure-20260905']
+    paths:
+      - '.github/workflows/cr-continuity-gapclosure.yml'
+      - 'scripts/close_cr_continuity_20260905.py'
+      - 'assets/data/la-laguna-proceeding-pages-v1.json'
+      - 'es/cuatrecasas-sun-park/index.html'
+      - 'en/cuatrecasas-sun-park/index.html'
+      - 'es/metodologia/index.html'
+      - 'en/methodology/index.html'
+  workflow_dispatch:
 permissions:
   contents: read
+concurrency:
+  group: cr-continuity-${{ github.ref }}
+  cancel-in-progress: false
 jobs:
-  baseline-audit:
+  prepare-worker-only:
+    if: github.ref == 'refs/heads/worker/cr-continuity-gapclosure-20260905' && github.event_name == 'push'
     runs-on: ubuntu-latest
     timeout-minutes: 15
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
         with:
-          fetch-depth: 80
-          persist-credentials: false
-      - name: Capture current source and independent diagnostic results
+          ref: worker/cr-continuity-gapclosure-20260905
+          fetch-depth: 0
+          persist-credentials: true
+      - name: Apply guarded current-main delta and strict repair checks
+        run: |
+          git fetch --no-tags origin main:refs/remotes/origin/main
+          python -m py_compile scripts/close_cr_continuity_20260905.py
+          python scripts/close_cr_continuity_20260905.py --apply
+          python scripts/validate_publication_integrity.py
+          python scripts/validate_publication_integrity_v2.py
+          python scripts/validate_audience_experience.py
+          python scripts/validate_operational_identity_registry.py
+          python scripts/validate_legal_professional_register.py
+      - name: Commit only declared generated paths to this worker
+        shell: python
+        run: |
+          import json,subprocess
+          from pathlib import Path
+          d=json.loads(Path('assets/data/la-laguna-proceeding-pages-v1.json').read_text())['continuity_closure']
+          allowed=d['changed_files']
+          subprocess.run(['git','add','--',*allowed],check=True)
+          if subprocess.run(['git','diff','--cached','--quiet']).returncode:
+            subprocess.run(['git','config','user.name','github-actions[bot]'],check=True)
+            subprocess.run(['git','config','user.email','41898282+github-actions[bot]@users.noreply.github.com'],check=True)
+            subprocess.run(['git','commit','-m','Render CR continuity: 58 review controls, 7 canonical obligations and sourced RAUDA identity'],check=True)
+            subprocess.run(['git','push','origin','HEAD:refs/heads/worker/cr-continuity-gapclosure-20260905'],check=True)
+          print('PREPARED_HEAD',subprocess.check_output(['git','rev-parse','HEAD'],text=True).strip())
+      - name: Retain public-only generated review evidence
+        if: always()
         shell: python
         run: |
           from pathlib import Path
-          import json,subprocess,shutil,hashlib
-          root=Path.cwd();dest=root/'diagnostics/source';dest.mkdir(parents=True)
-          paths=set()
-          for pattern in ['AGENTS.md','CHATGPT_START_HERE.md','ops/*STATE*.json','ops/RELEASE_LEDGER.json','ops/CUATRECASAS_RAUDA*','ops/CANONICAL_ENTITY_NAMES.json','assets/data/matter-identity*.json','assets/data/legal-professionals-register-v1.json','assets/data/la-laguna-proceeding-pages-v1.json','assets/data/dp748-2026-appeal-reopening-control-v1.json','assets/data/unitary-multitrack-criminal-first-gap-closure-v1.json','assets/data/institutional-communications-register-v1.json','assets/data/material-updates-v1.json','publication-manifests/*cuatrecasas*','publication-manifests/historic-proceedings-authority-reintegration-20260903.json','scripts/*.py','.github/workflows/cuatrecasas-rauda-publication.yml','.github/workflows/publication-integrity*.yml','.github/governance/*CONTINUITY*','.github/governance/*MULTI_THREAD*','.github/governance/*CAEPR*','.github/governance/*UNITARY_MULTI*','assets/content/cuatrecasas-rauda*','assets/cuatrecasas-rauda*.css','archive/UNIVERSAL_PUBLICATION_AND_THREAD_DELETION_SAFETY_PROTOCOL_18AUG2026.md']:
-            paths.update(p for p in root.glob(pattern) if p.is_file())
-          audit=json.loads((root/'ops/CUATRECASAS_RAUDA_RELEASE_20260905.json').read_text())
-          paths.update(root/x['path'] for x in audit['pages'])
-          for lang in ['es','en']:
-            paths.update(p for p in (root/lang).glob('*/index.html') if any(t in str(p) for t in ['metodolog','methodolog','acosta-matos-famil','registro-ident','identity-reg','registro-comun','communication-register']))
-          copied=[]
-          for p in sorted(paths):
-            rel=p.relative_to(root);target=dest/rel;target.parent.mkdir(parents=True,exist_ok=True);shutil.copyfile(p,target)
-            copied.append({'path':str(rel),'sha256':hashlib.sha256(p.read_bytes()).hexdigest()})
-          validators=['validate_repository_preservation.py','validate_publication_integrity.py','validate_publication_integrity_v2.py','validate_audience_experience.py','validate_operational_identity_registry.py','validate_legal_professional_register.py','validate_unitary_multitrack_gap_closure.py','validate_operational_truth.py']
-          results=[]
-          for name in validators:
-            if not (root/'scripts'/name).exists():continue
-            r=subprocess.run(['python','scripts/'+name],capture_output=True,text=True,timeout=120)
-            row={'validator':name,'exit':r.returncode,'stdout':r.stdout,'stderr':r.stderr};results.append(row)
-            print('VALIDATOR',name,'EXIT',r.returncode,r.stdout[-2500:])
-          report={'head':subprocess.check_output(['git','rev-parse','HEAD'],text=True).strip(),'base':'090a678ad53cd9216e673b0cfc643cd084e5286c','files':copied,'validators':results,'mode':'READ_ONLY_BASELINE_DIAGNOSTIC_NOT_COMPLETENESS_CERTIFICATE'}
-          Path('diagnostics/baseline.json').write_text(json.dumps(report,ensure_ascii=False,indent=2))
-          print('PUBLIC_SOURCE_FILES',len(copied))
+          import json,shutil,subprocess
+          root=Path.cwd();out=root/'diagnostics';out.mkdir(exist_ok=True)
+          p=root/'assets/data/la-laguna-proceeding-pages-v1.json'
+          c=json.loads(p.read_text()).get('continuity_closure',{})
+          for path in c.get('changed_files',[]):
+            src=root/path;dest=out/'source'/path
+            dest.parent.mkdir(parents=True,exist_ok=True);shutil.copyfile(src,dest)
+          out.joinpath('head.txt').write_text(subprocess.check_output(['git','rev-parse','HEAD'],text=True))
       - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
         if: always()
         with:
-          name: cr-continuity-baseline-${{ github.run_id }}
+          name: cr-continuity-prepared-${{ github.run_id }}
+          path: diagnostics/
+          include-hidden-files: true
+          retention-days: 14
+  scoped-validation:
+    if: github.event_name == 'pull_request' || github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - name: Verify current scoped controls and repository safety
+        env:
+          GITHUB_BASE_SHA: ${{ github.event.pull_request.base.sha || github.event.before }}
+          GITHUB_HEAD_SHA: ${{ github.event.pull_request.head.sha || github.sha }}
+        run: |
+          git fetch --no-tags origin main:refs/remotes/origin/main
+          python scripts/close_cr_continuity_20260905.py --check
+          python scripts/build_cuatrecasas_rauda_20260905.py --check
+          python scripts/complete_cuatrecasas_rauda_controls_20260905.py --check
+          python scripts/validate_repository_preservation.py
+          python scripts/validate_publication_integrity.py
+          python scripts/validate_publication_integrity_v2.py
+          python scripts/validate_audience_experience.py
+          python scripts/validate_operational_identity_registry.py
+          python scripts/validate_legal_professional_register.py
+      - name: Record wider diagnostics without certifying them closed
+        shell: python
+        run: |
+          import json,subprocess
+          from pathlib import Path
+          results=[]
+          for name in ['validate_unitary_multitrack_gap_closure.py','validate_operational_truth.py']:
+            r=subprocess.run(['python','scripts/'+name],capture_output=True,text=True)
+            results.append({'validator':name,'exit':r.returncode,'stdout':r.stdout,'stderr':r.stderr})
+          Path('diagnostics').mkdir(exist_ok=True)
+          Path('diagnostics/cr-continuity-wider-diagnostics.json').write_text(json.dumps(results,ensure_ascii=False,indent=2))
+          print(json.dumps(results,ensure_ascii=False))
+      - name: Install browser runtime
+        run: |
+          python -m pip install playwright==1.55.0
+          python -m playwright install --with-deps chromium
+      - name: Verify bilingual rendered links and correction projection
+        shell: python
+        run: |
+          import json,subprocess,time
+          from pathlib import Path
+          from playwright.sync_api import sync_playwright
+          server=subprocess.Popen(['python','-m','http.server','8765','--bind','127.0.0.1','--directory',str(Path.cwd().parent)],stdout=subprocess.DEVNULL,stderr=subprocess.DEVNULL)
+          checks=0
+          try:
+            time.sleep(2)
+            with sync_playwright() as p:
+              b=p.chromium.launch()
+              for width in [390,1440]:
+                for js in [True,False]:
+                  ctx=b.new_context(viewport={'width':width,'height':1000},java_script_enabled=js)
+                  for lang in ['es','en']:
+                    page=ctx.new_page();url='http://127.0.0.1:8765/por-derecho/'+lang+'/cuatrecasas-sun-park/'
+                    response=page.goto(url,wait_until='networkidle');assert response.status==200;checks+=1
+                    panel=page.locator('#cr-continuity-closure-20260905');assert panel.count()==1;checks+=1
+                    assert panel.locator('tbody tr').count()==58;checks+=1
+                    assert panel.locator('article[data-gap-id]').count()==7;checks+=1
+                    assert page.locator('.pd-cr-source').count()==4;checks+=1
+                    assert page.locator('.pd-cr-identity').get_attribute('data-caret-state')=='CARET_CONFIRMED';checks+=1
+                    page.locator('[data-cr-continuity-jump] a').click();assert panel.is_visible();checks+=1
+                    assert panel.evaluate('(e)=>e.getBoundingClientRect().width<=innerWidth+2');checks+=1
+                    page.locator('#CR-GAP-current_status').scroll_into_view_if_needed()
+                    if js:page.screenshot(path=f'diagnostics/cr-continuity-{lang}-{width}.png')
+                    page.goto('http://127.0.0.1:8765/por-derecho/'+lang+'/'+('metodologia/' if lang=='es' else 'methodology/'),wait_until='networkidle')
+                    assert page.locator('h1').count()==1;checks+=1
+                    for a in page.locator('a').all():
+                      href=a.get_attribute('href')
+                      if href.startswith('/por-derecho/'):
+                        target=Path(href.removeprefix('/por-derecho/').split('#')[0]);target=target/'index.html' if href.split('#')[0].endswith('/') else target
+                        assert target.is_file(),str(target);checks+=1
+                    page.close()
+                  ctx.close()
+              b.close()
+            result={'result':'BROWSER_PASS','checks':checks,'widths':[390,1440],'languages':['es','en'],'java_script':[True,False],'correction_rows_per_language':58,'proof_obligations_per_language':7}
+            Path('diagnostics/cr-continuity-browser.json').write_text(json.dumps(result,indent=2));print(json.dumps(result))
+          finally:server.terminate()
+      - name: Read back actual public files for this merged tree
+        if: github.ref == 'refs/heads/main'
+        run: python scripts/close_cr_continuity_20260905.py --live
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        if: always()
+        with:
+          name: cr-continuity-qa-${{ github.run_id }}
           path: diagnostics/
           retention-days: 14
