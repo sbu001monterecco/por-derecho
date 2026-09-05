@@ -1,4 +1,4 @@
-import base64, concurrent.futures, hashlib, json, lzma, os
+import base64, concurrent.futures, hashlib, json, lzma, os, traceback
 from pathlib import Path
 import subprocess, sys, urllib.request
 BASE='adc8c87585609709caafdd90f03ffbb4a4687d83'
@@ -18,13 +18,23 @@ assert set(package)==set(manifest)|{'package-manifest.json'},'Unexpected package
 for path,digest in manifest.items():
     assert not Path(path).is_absolute() and '..' not in Path(path).parts and '\\' not in path
     assert hashlib.sha256(package[path].encode()).hexdigest()==digest
+corrections=json.loads(Path('.pd-stage/corrections.json').read_text())
+for row in corrections:
+    assert row['path'] in manifest
+    before=package[row['path']]
+    assert before.count(row['old'])==1, ('Correction anchor drift',row['path'])
+    package[row['path']]=before.replace(row['old'],row['new'],1)
 migration=package['_stage/apply_release_repair.py']
 subprocess.run(['git','checkout','--detach',BASE],check=True,stdout=subprocess.DEVNULL,stderr=subprocess.DEVNULL)
 assert git('status','--porcelain')=='','Current main checkout was not clean'
 for path in manifest:
     if path.startswith('_stage/'):continue
     p=Path(path);p.parent.mkdir(parents=True,exist_ok=True);p.write_text(package[path])
-exec(compile(migration,'<reviewed-current-main-migration>','exec'),{'__name__':'__main__'})
+try:
+    exec(compile(migration,'<reviewed-current-main-migration>','exec'),{'__name__':'__main__'})
+except BaseException:
+    (OUT/'preparation-exception.log').write_text(traceback.format_exc())
+    raise
 assert not subprocess.check_output(['git','diff',BASE,'--','assets/data','evidence','archive','publication-manifests']), 'Canonical evidence or immutable manifest unexpectedly changed'
 changed=sorted(set(git('diff','--name-only').splitlines()+git('ls-files','--others','--exclude-standard').splitlines()))
 changed=[p for p in changed if not p.startswith(('diagnostics/','artifacts/'))]
