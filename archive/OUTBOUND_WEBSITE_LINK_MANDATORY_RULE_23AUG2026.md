@@ -67,3 +67,58 @@ Read this rule with:
 - `EMAIL_SEND_FINAL_AUTHORIZATION_RULE.md`.
 
 This rule adds a mandatory content/readiness requirement. It does not weaken or replace the final-authorisation gate.
+
+## 5 September 2026 reinforcement — PD-MEDIA-LINK-20260905-01
+
+**User-directed scope:** improve preparation of media re-entry packages and prevent another omission of the website or relevant landing pages. Preparation is not permission to send. This additive reinforcement becomes part of the canonical file when integrated to main; a worker branch is not an active deployment. It preserves the original rule and all exact-authorization, privacy and exception controls.
+
+### Actual body first; manifest second
+
+A media package must pass the standing requirements independently of its proposed manifest. A manifest that omits a mandatory component cannot make the package compliant. Comparing an incomplete draft with an identically incomplete sent copy proves transmission consistency, not correctness.
+
+For every media update include, as visible links in the current email body:
+
+1. the appropriate-language Por Derecho website entry point;
+2. at least one distinct, relevant, reader-facing topic landing page; and
+3. when describing judicial or public-authority supporting records as available online, the relevant judicial/institutional access routes that actually expose those records or their public-safe references.
+
+For Spanish Sun Park / MYND / RICPE updates the baseline link set is:
+
+- Website: `https://sbu001monterecco.github.io/por-derecho/es/`
+- Topic: `https://sbu001monterecco.github.io/por-derecho/es/ric-private-equity-sun-park/`
+- Judicial/institutional reconstruction: `https://sbu001monterecco.github.io/por-derecho/es/reconstruccion-unitaria-autoridades-publicas/`
+- Institutional records: `https://sbu001monterecco.github.io/por-derecho/es/registros-institucionales/`
+
+Select a different verified topic route when appropriate. The baseline is not an assertion that every linked record is complete or currently accessible. Recheck each route, its content and any required fragment/source before approval and before a later authorised send. A repository file, GitHub raw/blob link, BOE, BORME, YouTube, a link contained only in a PDF or quoted old email, or a link shown only in the assistant's response does not satisfy this body requirement.
+
+### Mandatory media core remains mandatory
+
+The two language-correct PNG source maps, controlled timestamped San Telmo webinar and evidence limitation required by `archive/OUTBOUND_MEDIA_CORE_PACKAGE_MANDATORY_RULE_23AUG2026.md` remain required. A documentary PDF supplements, rather than replaces, that core. Do not silently omit components for brevity or inferred editorial preference. A source conflict in a graphic must be resolved, flagged or covered by the exact exception mechanism; a transport check does not certify its assertions.
+
+### Accurate website-coverage statement
+
+Use wording materially equivalent to:
+
+> La web de Por Derecho reúne la cronología y las fichas de los procedimientos judiciales y de las actuaciones ante las autoridades públicas, con referencias, resoluciones, escritos, respuestas y documentos de apoyo publicables, además de enlaces entre los distintos expedientes. Distingue los hechos documentados, nuestras alegaciones, las decisiones —incluidas las desfavorables— y la documentación todavía pendiente o reservada. La presencia de un órgano en el registro no implica su respaldo a nuestras conclusiones.
+
+Limit this wording to the actual inspected publication matrix. Do not say that all complete court or administrative files are published without proving that coverage. Distinguish public copies, redacted derivatives, summaries, references, private/request-only records and unresolved source gaps. A filing is not a court finding; receipt, routing, publication and institutional endorsement are different states.
+
+### Required private readiness record
+
+Record each required URL, purpose, body occurrence, language, public-access/content check, timestamp and source/fragment result. An inaccessible browser result is unverified, not proof of a broken page or proof of live availability. Record any cached-view limitation; do not claim exact live-byte verification from a cached page.
+
+Inspect real attachments; record exact filename, version, bytes and SHA-256. Check both plain text and rendered HTML when both are sent. No private email, recipient list, provider locator or unsent package belongs in the public repository.
+
+The offline helper `scripts/validate_media_link_core.py` checks decoded MIME bodies and real PNG attachments, and can compare approved attachment hashes. It does not access Gmail or send anything. Its pass is only `CONTENT_GATE_PASS_ONLY`; it does not prove live URLs, rendered visibility, source accuracy, complete dual Gmail history, privacy clearance, authorization or sending. Those remain separate mandatory checks. It is not automatically installed in Gmail transport or CI by this document.
+
+### Regression and mismatch rule
+
+The mechanical tests must reject missing website links; homepage without a topic landing; missing judicial/institutional access links when required; required links present only in attachments; missing PNGs; altered approved attachment hashes; and HTML/plain-text link mismatch.
+
+Before approval and sending, apply:
+
+`STANDING REQUIREMENTS → ACTUAL BODY / MIME / ATTACHMENTS → VERIFIED LINK AND ATTACHMENT MANIFEST → COMPLETE PERSON + OUTLET HISTORY → EXACT FINAL USER AUTHORIZATION`.
+
+After an authorised send, retrieve the native Sent copy and repeat the required-link and attachment comparisons. A positive connector response is not sufficient. Any missing required component means **SENT BUT NOT VERIFIED AS CORRECT**, even if the incomplete package was successfully transmitted. Preserve that distinction and never silently repair a historical email.
+
+Discovery of a previous omission authorises no correction, follow-up, resend or automatic retry. A separate exact package and fresh final authorization remain necessary.
