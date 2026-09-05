@@ -1,102 +1,89 @@
 #!/usr/bin/env python3
-"""Resolve local JavaScript loader reachability from repository source.
+"""Resolve repository-local JavaScript dependencies without freezing loader depth.
 
-Por Derecho's shared site loader is intentionally layered: each release preserves
-its predecessor and adds new scoped modules. Validators must therefore prove that
-a required loader remains reachable through the current graph, not require that a
-historic predecessor continue to be named directly by ``assets/site.js``.
+This is a literal-reference source contract, not a JavaScript execution engine.
+Browser checks separately prove execution. Comments never create dependencies;
+missing files, escaping paths and dynamic template expressions are not edges.
 """
 from __future__ import annotations
-
-import re
 from collections import deque
 from pathlib import Path
-
+import re
 
 ROOT = Path(__file__).resolve().parents[1]
+_JS_REFERENCE = re.compile(r"(?P<quote>['\"`])(?P<value>(?!https?:|//)[^'\"`\n]*?\.js(?:\?[^'\"`\n]*)?)(?P=quote)")
+_TOKENS = re.compile(r"'(?:\\.|[^'\\])*'|\"(?:\\.|[^\"\\])*\"|`(?:\\.|[^`\\])*`|//[^\n]*|/\*.*?\*/", re.DOTALL)
 
-# Local loader references are expressed as quoted strings in ``new URL(...)``
-# calls and in the shared ``load('file.js', ...)`` helper. Comments in the
-# repository name files without quotes, so they do not create false graph edges.
-_JS_REFERENCE = re.compile(
-    r"(?P<quote>['\"`])(?P<value>(?!https?:|//)[^'\"`\n]*?\.js(?:\?[^'\"`\n]*)?)(?P=quote)"
-)
+
+def source_without_comments(text: str) -> str:
+    return _TOKENS.sub(lambda m: '\n' * m[0].count('\n') if m[0].startswith(('//', '/*')) else m[0], text)
 
 
 def _repo_path(value: str | Path) -> str:
-    return Path(value).as_posix().lstrip("./")
+    path = Path(value)
+    if path.is_absolute() or '..' in path.parts:
+        raise ValueError(f'Expected a safe repository-relative path: {value!r}')
+    return path.as_posix()
+
+
+def _source_path(value: str | Path, root: Path) -> Path | None:
+    path = (root / _repo_path(value)).resolve()
+    if not path.is_relative_to(root.resolve()) or not path.is_file():
+        return None
+    return path
 
 
 def local_loader_references(source: str | Path, *, root: Path = ROOT) -> tuple[str, ...]:
-    """Return existing repository-local JavaScript files referenced by ``source``."""
-    source_rel = _repo_path(source)
-    source_path = (root / source_rel).resolve()
-    root_resolved = root.resolve()
-    if not source_path.is_file():
+    source_path = _source_path(source, root)
+    if source_path is None:
         return ()
-
-    try:
-        body = source_path.read_text(encoding="utf-8")
-    except (OSError, UnicodeError):
-        return ()
-
+    body = source_without_comments(source_path.read_text(encoding='utf-8'))
     references: set[str] = set()
     for match in _JS_REFERENCE.finditer(body):
-        raw = match.group("value")
-        clean = raw.split("#", 1)[0].split("?", 1)[0]
-        if not clean or "${" in clean:
+        clean = match['value'].split('#', 1)[0].split('?', 1)[0]
+        if not clean or '${' in clean:
             continue
-        if clean.startswith("/"):
-            candidate = (root_resolved / clean.lstrip("/")).resolve()
-        else:
-            candidate = (source_path.parent / clean).resolve()
-        try:
-            candidate.relative_to(root_resolved)
-        except ValueError:
+        candidate = ((root.resolve() / clean.lstrip('/')) if clean.startswith('/') else source_path.parent / clean).resolve()
+        if not candidate.is_relative_to(root.resolve()) or candidate.suffix != '.js' or not candidate.is_file():
             continue
-        if candidate.suffix != ".js" or not candidate.is_file():
-            continue
-        references.add(candidate.relative_to(root_resolved).as_posix())
+        references.add(candidate.relative_to(root.resolve()).as_posix())
     return tuple(sorted(references))
 
 
-def find_loader_path(
-    source: str | Path,
-    target: str | Path,
-    *,
-    root: Path = ROOT,
-) -> tuple[str, ...] | None:
-    """Return one shortest local-loader path from ``source`` to ``target``."""
-    source_rel = _repo_path(source)
-    target_rel = _repo_path(target)
-    if source_rel == target_rel:
-        return (source_rel,)
-    if not (root / source_rel).is_file() or not (root / target_rel).is_file():
+def find_loader_path(source: str | Path, target: str | Path, *, root: Path = ROOT) -> tuple[str, ...] | None:
+    source_rel, target_rel = _repo_path(source), _repo_path(target)
+    if _source_path(source_rel, root) is None or _source_path(target_rel, root) is None:
         return None
-
-    queue: deque[tuple[str, tuple[str, ...]]] = deque([(source_rel, (source_rel,))])
+    queue = deque([(source_rel, (source_rel,))])
     visited = {source_rel}
     while queue:
         node, path = queue.popleft()
+        if node == target_rel:
+            return path
         for child in local_loader_references(node, root=root):
-            if child == target_rel:
-                return (*path, child)
-            if child in visited:
-                continue
-            visited.add(child)
-            queue.append((child, (*path, child)))
+            if child not in visited:
+                visited.add(child)
+                queue.append((child, (*path, child)))
     return None
 
 
-def require_loader_path(
-    errors: list[str],
-    source: str | Path,
-    target: str | Path,
-    message: str,
-    *,
-    root: Path = ROOT,
-) -> tuple[str, ...] | None:
-    """Append ``message`` when the target is not transitively reachable."""
+def reachable_loader_text(source: str | Path = 'assets/site.js', *, root: Path = ROOT) -> str:
+    """Actual reachable source for legacy marker assertions; not a directory scan."""
+    start = _repo_path(source)
+    if _source_path(start, root) is None:
+        raise ValueError(f'Missing source loader: {start}')
+    queue = deque([start]); visited: set[str] = set(); parts: list[str] = []
+    while queue:
+        node = queue.popleft()
+        if node in visited:
+            continue
+        visited.add(node)
+        parts.append(source_without_comments((root/node).read_text(encoding='utf-8')))
+        queue.extend(local_loader_references(node, root=root))
+    return '\n'.join(parts)
+
+
+def require_loader_path(errors: list[str], source: str | Path, target: str | Path, message: str, *, root: Path = ROOT) -> tuple[str, ...] | None:
     path = find_loader_path(source, target, root=root)
     if path is None:
         errors.append(message)
@@ -104,4 +91,4 @@ def require_loader_path(
 
 
 def format_loader_path(path: tuple[str, ...] | None) -> str:
-    return " -> ".join(path or ())
+    return ' -> '.join(path or ())
