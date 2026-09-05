@@ -1,123 +1,79 @@
-/* Source-bound compatibility runtime. Renders existing evidence; never re-grades it. */
+/* Existing source graph only: rendering does not upgrade an evidential grade. */
 (() => {
-  'use strict';
-  const root = document.querySelector('[data-convergence-app]');
-  if (!root) return;
-  const lang = document.documentElement.lang.startsWith('es') ? 'es' : 'en';
-  const t = (es, en) => lang === 'es' ? es : en;
-  const local = value => typeof value === 'string' ? value : value && (value[lang] || value.en || value.es) || '';
-  const field = (value, name) => local(value[name + '_' + lang] || value[name]);
-  const key = n => String(n.key || n.id);
-  const grade = e => String(e.grade || e.type || e.evidence_status || 'OPEN_NOT_LOCATED');
-  const label = n => field(n, 'label') || field(n, 'name') || key(n);
-  const el = (tag, text, cls) => { const n = document.createElement(tag); if (text) n.textContent = text; if (cls) n.className = cls; return n; };
-  const url = value => {
-    if (typeof value !== 'string' || !value || /^(javascript|data):/i.test(value)) return null;
-    if (value.startsWith('//')) return null;
-    if (/^https?:/i.test(value)) return value;
-    if (value.startsWith('#')) return value;
-    const path = value.replace(/^\/?por-derecho\//, '').replace(/^\//, '');
-    if (!path.includes('/') && !/\.[a-z0-9]{2,6}(?:[?#]|$)/i.test(path)) return null;
-    if (path.startsWith('.github/')) return 'https://github.com/sbu001monterecco/por-derecho/blob/main/' + path;
-    return '/por-derecho/' + path;
-  };
-  const link = (text, value) => { const target = url(value); const a = el(target ? 'a' : 'span', text); if (target) a.href = target; return a; };
-  const get = async value => { const r = await fetch(value, {credentials:'omit'}); if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); };
-  const graphURL = new URL(root.dataset.graphUrl, location.href);
-  const loadParts = async (g, name) => {
-    if (Array.isArray(g[name])) return g[name];
-    const parts = g[(name === 'nodes' ? 'node' : 'edge') + '_parts'] || [];
-    return (await Promise.all(parts.map(async p => {
-      const part = await get(new URL(p.path, graphURL));
-      const rows = part[name] || part.records;
-      if (!Array.isArray(rows) || (typeof p.count === 'number' && rows.length !== p.count)) throw new Error('Part/count mismatch');
-      return rows;
-    }))).flat();
-  };
-  const sourceLinks = (container, list, sourceMap) => {
-    for (const item of list || []) {
-      const s = typeof item === 'string' ? sourceMap.get(item) || {id:item, path:item} : item;
-      const value = s.url || s.path || s.route || s.href;
-      const title = field(s,'title') || s.label || s.id || String(item);
-      container.append(link(local(title), value), document.createTextNode(' '));
-    }
-  };
-  async function start() {
-    const graph = await get(graphURL);
-    const nodes = await loadParts(graph, 'nodes');
-    const edges = await loadParts(graph, 'edges');
-    if (!nodes.length || !edges.length) throw new Error('Empty source graph');
-    const byKey = new Map(nodes.map(n => [key(n), n]));
-    if (byKey.size !== nodes.length || edges.some(e => !byKey.has(String(e.from || e.source)) || !byKey.has(String(e.to || e.target)))) throw new Error('Duplicate node or orphan edge');
-    const sources = Array.isArray(graph.sources) ? graph.sources : [];
-    const sourceMap = new Map(sources.map(s => [s.id,s]));
-    const typeSelect = root.querySelector('[data-fc-type]');
-    const nodeSelect = root.querySelector('[data-fc-node]');
-    const stats = root.querySelector('[data-fc-stats]');
-    const all = t('Todos','All');
-    if (typeSelect) {
-      typeSelect.replaceChildren(new Option(all,'ALL'));
-      for (const g of [...new Set(edges.map(grade))].sort()) typeSelect.add(new Option(field((graph.grades || {})[g] || {},'label') || g,g));
-    }
-    if (nodeSelect) {
-      nodeSelect.replaceChildren(new Option(all,'ALL'));
-      for (const n of nodes) nodeSelect.add(new Option(label(n),key(n)));
-    }
-    const table = root.querySelector('[data-fc-table]');
-    const inspector = root.querySelector('[data-fc-inspector]');
-    const describe = n => {
-      if (!inspector) return;
-      inspector.replaceChildren(el('h3',label(n)),el('p',n.registry_id || n.entity_id || ''),el('p',field(n,'summary') || field(n,'role')),el('p',n.date || n.period || ''));
-      const route = n['route_' + lang] || (n.routes || {})[lang];
-      if (route) inspector.append(link(t('Abrir registro documental','Open documentary record'),route));
-    };
-    const draw = () => {
-      const selectedType = typeSelect ? typeSelect.value : 'ALL';
-      const selectedNode = nodeSelect ? nodeSelect.value : 'ALL';
-      const filtered = edges.filter(e => (selectedType === 'ALL' || grade(e) === selectedType) && (selectedNode === 'ALL' || [String(e.from || e.source),String(e.to || e.target)].includes(selectedNode)));
-      if (stats) stats.textContent = `${nodes.length} ${t('nodos','nodes')} · ${filtered.length}/${edges.length} ${t('relaciones documentales','documentary relationships')}`;
-      if (table) {
-        const entries = filtered.map(e => {
-          const row = el('article','', 'fc-evidence-row'); row.dataset.edgeId = String(e.id || '');
-          const from = byKey.get(String(e.from || e.source)), to = byKey.get(String(e.to || e.target));
-          row.append(el('h3',`${label(from)} → ${label(to)}`),el('p',`${e.id || ''} · ${grade(e)} · ${e.period || e.date || ''}`));
-          for (const name of ['proposition','label','investigative_significance','limit','limitation','contrary','open_proof']) {
-            const text = field(e,name); if (text) row.append(el('p',text));
-          }
-          const refs = el('p'); sourceLinks(refs,e.sources || e.source_ids || [],sourceMap); row.append(refs); return row;
-        });
-        table.replaceChildren(...entries);
-      }
-      const svg = root.querySelector('[data-fc-svg]');
-      if (svg) {
-        const ns = 'http://www.w3.org/2000/svg';
-        const make = (tag,attrs,text) => { const e = document.createElementNS(ns,tag); for (const [k,v] of Object.entries(attrs)) e.setAttribute(k,String(v)); if (text) e.textContent=text; return e; };
-        const positions = new Map(nodes.map((n,i) => [key(n),{x:90+(i%4)*330,y:65+Math.floor(i/4)*125}]));
-        svg.setAttribute('viewBox',`0 0 1440 ${Math.ceil(nodes.length/4)*125+80}`);svg.replaceChildren();
-        svg.append(make('title',{},t('Relaciones del registro; la dirección no acredita causalidad o culpabilidad','Registry relationships; direction does not establish causation or guilt')));
-        for (const e of filtered) {
-          const a = positions.get(String(e.from || e.source)), b = positions.get(String(e.to || e.target));
-          const l = make('line',{x1:a.x+110,y1:a.y+28,x2:b.x+110,y2:b.y+28,'class':'fc-graph-edge'});
-          l.append(make('title',{},`${e.id || ''} · ${grade(e)} · ${field(e,'proposition') || field(e,'label')}`));svg.append(l);
-        }
-        for (const n of nodes) {
-          const p = positions.get(key(n));const group = make('g',{transform:`translate(${p.x},${p.y})`,tabindex:0,role:'button','aria-label':label(n),'data-node-id':key(n),'class':'fc-graph-node'});
-          group.append(make('rect',{width:245,height:62,rx:8}),make('text',{x:10,y:25},label(n).slice(0,34)),make('text',{x:10,y:47,'class':'fc-node-id'},n.registry_id || n.entity_id || ''));
-          group.addEventListener('click',()=>describe(n)); group.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();describe(n);}});svg.append(group);
-        }
-      }
-      root.dataset.renderedNodes=String(nodes.length);root.dataset.renderedEdges=String(filtered.length);root.dataset.graphState='ready';
-    };
-    const groups = root.querySelector('[data-fc-groups]');
-    if (groups) groups.replaceChildren(...(graph.groups || graph.stages || []).map(g=>el('p',field(g,'label') || field(g,'title') || g.id)));
-    const conclusion=root.querySelector('[data-fc-convergence]');
-    if (conclusion && graph.strongest_current_inference) conclusion.replaceChildren(el('p',local(graph.strongest_current_inference)));
-    const sourcePanel=root.querySelector('[data-fc-sources]');
-    if(sourcePanel){sourcePanel.replaceChildren();sourceLinks(sourcePanel,sources,sourceMap);sourcePanel.append(link(t('Registro de fuentes de la visualización','Visualization source registry'),'assets/data/acosta-matos-functional-convergence-map-v2.json'));}
-    typeSelect?.addEventListener('change',draw);nodeSelect?.addEventListener('change',draw);
-    root.querySelector('[data-fc-reset]')?.addEventListener('click',()=>{if(typeSelect)typeSelect.value='ALL';if(nodeSelect)nodeSelect.value='ALL';draw();});
-    root.querySelector('[data-fc-export]')?.addEventListener('click',()=>{const blob=new Blob([JSON.stringify({graph_id:graph.graph_id,control_date:graph.control_date,reading_rule:graph.reading_rule,nodes,edges},null,2)],{type:'application/json'});const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='por-derecho-convergence-source.json';a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000);});
-    draw();
+ 'use strict';
+ const root=document.querySelector('[data-convergence-app]'); if(!root)return;
+ const lang=document.documentElement.lang.startsWith('es')?'es':'en';
+ const t=(es,en)=>lang==='es'?es:en;
+ const local=v=>typeof v==='string'?v:v&&typeof v==='object'?(v[lang]||v.en||v.es||''):v==null?'':String(v);
+ const field=(v,k)=>local(v[k+'_'+lang]||v[k]);
+ const id=n=>String(n.key||n.id), title=n=>field(n,'label')||field(n,'name')||id(n);
+ const grade=e=>String(e.grade||e.type||e.evidence_status||'OPEN_NOT_LOCATED');
+ const from=e=>String(e.from||e.source), to=e=>String(e.to||e.target);
+ const node=(tag,text,cls)=>{const n=document.createElement(tag);if(text)n.textContent=text;if(cls)n.className=cls;return n;};
+ const choose=(modern,legacy)=>root.querySelector(modern)||root.querySelector(legacy);
+ function safeURL(v){
+  if(typeof v!=='string'||!v||/^(?:javascript|data):/i.test(v)||v.startsWith('//'))return null;
+  if(/^https?:/i.test(v)||v.startsWith('#'))return v;
+  const p=v.replace(/^\/?por-derecho\//,'').replace(/^\//,'');
+  if(!p.includes('/')&&!/\.[a-z0-9]{2,6}(?:[?#]|$)/i.test(p))return null;
+  return p.startsWith('.github/')?'https://github.com/sbu001monterecco/por-derecho/blob/main/'+p:'/por-derecho/'+p;
+ }
+ function link(text,value){const u=safeURL(value),n=node(u?'a':'span',text);if(u)n.href=u;return n;}
+ async function get(u){const r=await fetch(u,{credentials:'omit'});if(!r.ok)throw Error('HTTP '+r.status);return r.json();}
+ const graphURL=new URL(root.dataset.graphUrl,location.href);
+ async function parts(g,kind){
+  if(Array.isArray(g[kind]))return g[kind];
+  const descriptors=g[(kind==='nodes'?'node':'edge')+'_parts']||[];
+  return (await Promise.all(descriptors.map(async p=>{const d=await get(new URL(p.path,graphURL));const rows=d[kind]||d.records;if(!Array.isArray(rows)||(Number.isInteger(p.count)&&rows.length!==p.count))throw Error('Source count mismatch');return rows;}))).flat();
+ }
+ async function run(){
+  const g=await get(graphURL),nodes=await parts(g,'nodes'),edges=await parts(g,'edges');
+  const byID=new Map(nodes.map(n=>[id(n),n]));
+  if(!nodes.length||!edges.length||byID.size!==nodes.length||edges.some(e=>!byID.has(from(e))||!byID.has(to(e))))throw Error('Graph identity mismatch');
+  const controls={stage:choose('#fc-stage','[data-fc-stage]'),grade:choose('#fc-grade','[data-fc-type]'),group:choose('#fc-group','[data-fc-group]'),search:choose('#fc-search','[data-fc-search]')};
+  const status=choose('#fc-status','[data-fc-stats]'),table=choose('#fc-edge-table','[data-fc-table]'),detail=choose('#fc-detail','[data-fc-inspector]');
+  let svg=root.querySelector('[data-fc-svg]');const canvas=root.querySelector('#fc-graph-canvas');
+  if(!svg&&canvas){svg=document.createElementNS('http://www.w3.org/2000/svg','svg');svg.dataset.fcSvg='';svg.setAttribute('role','img');canvas.replaceChildren(svg);}
+  if(!status||!table||!detail||!svg)throw Error('Required graph control missing');
+  const sources=Array.isArray(g.sources)?g.sources:[],sourceMap=new Map(sources.map(s=>[s.id,s]));
+  function sourceRefs(parent,list){for(const raw of list||[]){const s=typeof raw==='string'?(sourceMap.get(raw)||{id:raw}):raw;parent.append(link(field(s,'title')||local(s.label)||s.id||String(raw),s.url||s.path||s.route||s.href),document.createTextNode(' '));}}
+  function options(select,rows){if(!select)return;select.replaceChildren(new Option(t('Todos','All'),'all'));for(const [value,text] of rows)select.add(new Option(text,String(value)));}
+  options(controls.stage,(g.stages||[]).map(s=>[s.id,field(s,'label')||String(s.id)]));
+  options(controls.grade,[...new Set(edges.map(grade))].sort().map(k=>[k,field((g.grades||{})[k]||{},'label')||k]));
+  options(controls.group,[...new Set(nodes.map(n=>String(n.group||'')))].filter(Boolean).sort().map(k=>[k,k]));
+  function inspect(n){
+   detail.replaceChildren(node('h3',title(n)),node('p',n.registry_id||n.entity_id||''),node('p',field(n,'role')||field(n,'summary')),node('p',field(n,'limit')||field(n,'limitation')));
+   const route=n['route_'+lang]||(n.routes||{})[lang];if(route)detail.append(link(t('Abrir registro documental','Open documentary record'),route));
+   const refs=node('p');sourceRefs(refs,n.sources||n.source_ids||[]);detail.append(refs);
   }
-  start().catch(error=>{root.dataset.graphState='error';const panel=root.querySelector('[data-fc-stats]');if(panel)panel.textContent=t('No se pudo cargar el registro. Consulte la edición documental inferior.','The registry could not be loaded. Consult the documentary edition below.');console.error('Convergence source loading failed:',error.message);});
+  const stages=choose('#fc-stage-grid','[data-fc-groups]');
+  if(stages){stages.replaceChildren();for(const s of g.stages||[]){const card=node('section','', 'fc-stage-card');card.append(node('h3',field(s,'label')),node('p',s.period||''));for(const n of nodes.filter(n=>String(n.stage)===String(s.id))){const b=node('button',title(n));b.type='button';b.addEventListener('click',()=>inspect(n));card.append(b);}stages.append(card);}}
+  const inference=choose('#fc-current-inference','[data-fc-convergence]');if(inference)inference.replaceChildren(node('p',local(g.strongest_current_inference)));
+  const open=root.querySelector('#fc-open-production');if(open)open.replaceChildren(...(g.highest_value_open_proof||[]).map(v=>node('li',local(v))));
+  const sp=choose('#fc-sources','[data-fc-sources]');if(sp){sp.replaceChildren();sourceRefs(sp,sources);sp.append(link(t('Registro canónico y fuentes de cada relación','Canonical registry and individual relationship sources'),'assets/data/acosta-matos-functional-convergence-map-v2.json'));}
+  const NS='http://www.w3.org/2000/svg';
+  const S=(tag,a,text)=>{const n=document.createElementNS(NS,tag);for(const[k,v]of Object.entries(a))n.setAttribute(k,String(v));if(text)n.textContent=text;return n;};
+  function draw(){
+   const stage=controls.stage?.value||'all',gr=controls.grade?.value||'all',group=controls.group?.value||'all',query=(controls.search?.value||'').toLocaleLowerCase();
+   const visible=edges.filter(e=>{
+    const a=byID.get(from(e)),b=byID.get(to(e));
+    return(gr==='all'||grade(e)===gr)&&(stage==='all'||[a,b].some(n=>String(n.stage)===stage))&&(group==='all'||[a,b].some(n=>String(n.group)===group))&&(!query||[title(a),title(b),field(e,'proposition'),field(e,'label'),e.id].join(' ').toLocaleLowerCase().includes(query));
+   });
+   status.textContent=`${nodes.length} ${t('nodos','nodes')} · ${visible.length}/${edges.length} ${t('relaciones','relationships')}`;
+   table.replaceChildren(...visible.map(e=>{
+    const tr=node('tr','', 'fc-evidence-row');tr.dataset.edgeId=String(e.id||'');
+    const cells=[`${title(byID.get(from(e)))} → ${title(byID.get(to(e)))}`,`${e.id||''} · ${e.period||e.date||''}`,field((g.grades||{})[grade(e)]||{},'label')||grade(e),field(e,'proposition')||field(e,'label'),[field(e,'limit'),field(e,'limitation'),field(e,'contrary'),field(e,'open_proof')].filter(Boolean).join('\n')];
+    for(const v of cells)tr.append(node('td',v));const last=node('td');sourceRefs(last,e.sources||e.source_ids||[]);tr.append(last);return tr;
+   }));
+   const positions=new Map(nodes.map((n,i)=>[id(n),{x:30+(i%4)*345,y:50+Math.floor(i/4)*125}]));
+   svg.setAttribute('viewBox',`0 0 1440 ${Math.ceil(nodes.length/4)*125+80}`);svg.replaceChildren(S('title',{},t('Relaciones documentales: las flechas no prueban causalidad','Documentary relationships: arrows do not prove causation')));
+   for(const e of visible){const a=positions.get(from(e)),b=positions.get(to(e)),l=S('line',{x1:a.x+120,y1:a.y+30,x2:b.x+120,y2:b.y+30,class:'fc-graph-edge'});l.append(S('title',{},`${e.id||''} · ${grade(e)}`));svg.append(l);}
+   for(const n of nodes){const p=positions.get(id(n)),item=S('g',{transform:`translate(${p.x},${p.y})`,tabindex:0,role:'button','aria-label':title(n),'data-node-id':id(n),class:'fc-graph-node'});item.append(S('rect',{width:265,height:62,rx:8}),S('text',{x:10,y:25},title(n).slice(0,34)),S('text',{x:10,y:47,class:'fc-node-id'},n.registry_id||n.entity_id||''));item.addEventListener('click',()=>inspect(n));item.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();inspect(n);}});svg.append(item);}
+   root.dataset.graphState='ready';root.dataset.renderedNodes=String(nodes.length);root.dataset.renderedEdges=String(visible.length);
+  }
+  for(const c of Object.values(controls))c?.addEventListener(c.tagName==='INPUT'?'input':'change',draw);
+  choose('#fc-reset','[data-fc-reset]')?.addEventListener('click',()=>{for(const c of Object.values(controls))if(c)c.value=c.tagName==='INPUT'?'':'all';draw();});
+  draw();
+ }
+ run().catch(e=>{root.dataset.graphState='error';const p=choose('#fc-status','[data-fc-stats]');if(p)p.textContent=t('No se pudo cargar la visualización. Consulte la edición documental inferior.','Visualization could not be loaded. Consult the documentary edition below.');console.error('Convergence source:',e.message);});
 })();
