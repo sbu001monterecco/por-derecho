@@ -2,7 +2,7 @@
   "schema": "por-derecho.publication-runtime.v1",
   "fence": 1,
   "owner": "1470:0e681dcb73209779b9a81f998ff02bec01282e8f",
-  "phase": "MERGED",
+  "phase": "DEPLOYED",
   "pr": 1470,
   "base_sha": "adc8c87585609709caafdd90f03ffbb4a4687d83",
   "candidate_sha": "0e681dcb73209779b9a81f998ff02bec01282e8f",
@@ -42,8 +42,16 @@
       "evidence": {
         "merge_sha": "529d90898b7172decf46323d6bd58fbc69fb560c"
       }
+    },
+    {
+      "phase": "DEPLOYED",
+      "at": "2026-09-05T17:54:14.489372Z",
+      "evidence": {
+        "pages_run_id": 33982321180,
+        "merge_sha": "529d90898b7172decf46323d6bd58fbc69fb560c"
+      }
     }
   ],
   "recovery_basis": "Explicit owner recovery of exact completed merge; not a retrospective exclusive-lock claim.",
-  "updated_at": "2026-09-05T17:53:20.667510Z"
+  "updated_at": "2026-09-05T17:54:14.489372Z"
 }
