@@ -24,25 +24,48 @@ jobs:
         with:
           ref: integration/ci-rules-open-work-20260905
           fetch-depth: 1
-          persist-credentials: true
-      - name: Install YAML parser and establish the full comparison ancestry
+          persist-credentials: false
+      - name: Install YAML parser and establish full comparison ancestry
         run: |
           python3 -m pip install --quiet PyYAML==6.0.2
           mkdir -p /tmp/ci-recovery-candidate
           git fetch --unshallow --no-tags origin integration/ci-rules-open-work-20260905 main:refs/remotes/origin/main > /tmp/ci-recovery-candidate/fetch.log 2>&1
           test "$(git rev-parse --is-shallow-repository)" = false
-      - name: Prepare and audit only the authorized integration branch
+      - name: Prepare read-only candidate tree and stage blobs; no branch or workflow publication
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
           python3 - <<'PY'
           from pathlib import Path
-          p=Path('.github/prepare-ci-recovery-20260905.py')
-          text=p.read_text()
-          old=r'\n(?:(?!\n  [^ ]).)*?\n    runs-on:'
-          new=r'\n(?:(?!\n  [^ ]).)*?    runs-on:'
-          assert text.count(old)==1
-          p.write_text(text.replace(old,new,1))
+          p=Path('.github/prepare-ci-recovery-20260905.py');text=p.read_text()
+          old=r'\n(?:(?!\n  [^ ]).)*?\n    runs-on:';new=r'\n(?:(?!\n  [^ ]).)*?    runs-on:'
+          assert text.count(old)==1;text=text.replace(old,new,1)
+          text=text.replace("['metodolog','methodolog']","['metodo','method','colabor','por-derecho']")
+          # Auth is used only for GitHub API, never forwarded to signed storage redirects.
+          text=text.replace("API='https://api.github.com/repos/sbu001monterecco/por-derecho/'", """API='https://api.github.com/repos/sbu001monterecco/por-derecho/'
+          class SafeRedirect(urllib.request.HTTPRedirectHandler):
+              def redirect_request(self, req, fp, code, msg, headers, newurl):
+                  target=super().redirect_request(req,fp,code,msg,headers,newurl)
+                  if target is not None: target.remove_header('Authorization')
+                  return target
+          urllib.request.install_opener(urllib.request.build_opener(SafeRedirect()))""")
+          start=text.index("subprocess.run(['git','push','origin','HEAD:refs/heads/'+BRANCH]")
+          text=text[:start]+'''# Only unreferenced Git blobs are staged. The connected GitHub publisher owns
+          # workflow-enabled tree/commit/ref writes; runner credentials never publish.
+          def blob(path):
+              entry={'path':path,'mode':'100644','type':'blob'}
+              p=ROOT/path
+              if not p.exists():return {**entry,'sha':None}
+              payload=json.dumps({'content':p.read_text(encoding='utf-8'),'encoding':'utf-8'}).encode()
+              request=urllib.request.Request(API+'git/blobs',data=payload,method='POST',headers={'Authorization':'Bearer '+os.environ['GH_TOKEN'],'Accept':'application/vnd.github+json','Content-Type':'application/json'})
+              with urllib.request.urlopen(request,timeout=35) as response: data=json.load(response)
+              return {**entry,'sha':data['sha']}
+          elements=list(concurrent.futures.ThreadPoolExecutor(max_workers=4).map(blob,sorted(set(changed))))
+          result={'state':'PREPARED_NOT_DEPLOYED','parent':git('rev-parse','HEAD^'),'base_tree':git('rev-parse','HEAD^'+'^{tree}'),'elements':elements}
+          (OUT/'candidate-tree.json').write_text(json.dumps(result,indent=2))
+          print('CANDIDATE_TREE',json.dumps(result))
+          '''
+          p.write_text(text)
           PY
           python3 .github/prepare-ci-recovery-20260905.py
       - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
