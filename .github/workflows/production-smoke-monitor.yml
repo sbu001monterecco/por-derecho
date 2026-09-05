@@ -1,213 +1,136 @@
 name: Production smoke monitor
 
 on:
-  push:
-    branches:
-      - main
-    paths:
-      - '.github/workflows/production-smoke-monitor.yml'
-      - 'scripts/production_smoke_check.py'
-      - 'scripts/production_smoke_check_v2.py'
-      - 'scripts/validate_sent_email_link_continuity.py'
-      - 'publication-manifests/sent-email-link-continuity-20260824.json'
-      - '404.html'
-      - 'deployment-probes/mission-critical-hardening-20260818.json'
-      - 'assets/site.js'
-      - 'en/index.html'
-      - 'es/index.html'
-      - 'de/lava-verde-club-sei-meeting-point/**'
-      - 'es/activo-financiacion-sun-park-mynd/**'
-      - 'es/concurso-36-2012-autos-decisiones/**'
-      - 'es/ricpe-hnt-gc836-trazabilidad/**'
-      - 'es/yaiza-obras-trazabilidad/**'
-      - 'es/cnmv-ricpe-verificacion/**'
-      - 'en/cam-creditor-control-shadow-administration-judicial-omission/**'
-      - 'es/control-acreedor-cam-administracion-hecho-omision-judicial/**'
-      - 'assets/data/concurso36-*.json'
-      - 'publication-manifests/concurso36-complete-record-20260823.json'
-      - 'evidence/insolvency-36-2012/concurso-autos/**'
-      - 'evidence/sun-park/2018-02-27-ac-security-request/**'
-      - 'en/insolvency-36-2012-orders-decisions/**'
-      - 'es/concurso-36-2012-autos-resoluciones/**'
-      - 'en/concurso-36-2012-what-the-court-ordered/**'
-      - 'es/concurso-36-2012-que-ordeno-el-juzgado/**'
-      - 'en/concurso-36-2012-judicial-spine/**'
-      - 'es/concurso-36-2012-columna-judicial/**'
-      - 'en/insolvency-administrator-security-request-sun-park-27-february-2018/**'
-      - 'es/solicitud-seguridad-administracion-concursal-sun-park-27-febrero-2018/**'
-      - 'en/insolvency-36-2012-administrator-removal-fees/**'
-      - 'es/concurso-36-2012-separacion-ac-honorarios/**'
-      - 'en/lender-of-record/litigious-credit-hidden-deed/**'
-      - 'es/acreedor-de-registro/credito-litigioso-escritura/**'
-      - 'en/public-authority-unitary-case-reconstruction/**'
-      - 'es/reconstruccion-unitaria-autoridades-publicas/**'
-      - 'en/ric-private-equity-sun-park/**'
-      - 'es/ric-private-equity-sun-park/**'
-      - 'en/2022-adjudication-documentary-reconstruction/**'
-      - 'es/adjudicacion-2022-reconstruccion-documental/**'
-      - 'es/rsm/**'
-      - 'en/rsm/**'
-      - 'en/insolvency-36-2012-insolvency-administrator/**'
-      - 'es/concurso-36-2012-administrador-concursal/**'
-      - 'en/reverse-engineering-360-sun-park-chain/**'
-      - 'es/ingenieria-inversa-360-cadena-sun-park/**'
-      - 'en/dp-1956-2026/**'
-      - 'es/dp-1956-2026/**'
-      - 'en/pacto-comisorio-credit-to-title-architecture/**'
-      - 'es/pacto-comisorio-arquitectura-credito-titulo/**'
-      - 'en/ph122-cerberus-haya-bankia-external-perimeter/**'
-      - 'es/perimetro-ph122-cerberus-haya-bankia-externo/**'
-      - 'en/insolvency-administrator-credit-to-title-gatekeeper/**'
-      - 'es/administrador-concursal-puerta-credito-titulo/**'
-      - 'en/lender-of-record/liability/**'
-      - 'es/acreedor-de-registro/responsabilidad/**'
-      - 'sitemap-lender-liability.xml'
+  workflow_run:
+    workflows: ['pages build and deployment']
+    types: [completed]
+    branches: [main]
   pull_request:
+    branches: [main]
     paths:
       - '.github/workflows/production-smoke-monitor.yml'
-      - 'scripts/production_smoke_check.py'
-      - 'scripts/production_smoke_check_v2.py'
+      - 'scripts/production_smoke_check*.py'
+      - 'scripts/loader_graph.py'
       - 'scripts/validate_sent_email_link_continuity.py'
       - 'publication-manifests/sent-email-link-continuity-20260824.json'
+      - 'assets/**'
+      - 'en/**'
+      - 'es/**'
+      - 'de/**'
       - '404.html'
-      - 'deployment-probes/mission-critical-hardening-20260818.json'
-      - 'assets/site.js'
-      - 'en/index.html'
-      - 'es/index.html'
-      - 'de/lava-verde-club-sei-meeting-point/**'
-      - 'es/activo-financiacion-sun-park-mynd/**'
-      - 'es/concurso-36-2012-autos-decisiones/**'
-      - 'es/ricpe-hnt-gc836-trazabilidad/**'
-      - 'es/yaiza-obras-trazabilidad/**'
-      - 'es/cnmv-ricpe-verificacion/**'
-      - 'en/cam-creditor-control-shadow-administration-judicial-omission/**'
-      - 'es/control-acreedor-cam-administracion-hecho-omision-judicial/**'
-      - 'assets/data/concurso36-*.json'
-      - 'publication-manifests/concurso36-complete-record-20260823.json'
-      - 'evidence/insolvency-36-2012/concurso-autos/**'
-      - 'evidence/sun-park/2018-02-27-ac-security-request/**'
-      - 'en/insolvency-36-2012-orders-decisions/**'
-      - 'es/concurso-36-2012-autos-resoluciones/**'
-      - 'en/concurso-36-2012-what-the-court-ordered/**'
-      - 'es/concurso-36-2012-que-ordeno-el-juzgado/**'
-      - 'en/concurso-36-2012-judicial-spine/**'
-      - 'es/concurso-36-2012-columna-judicial/**'
-      - 'en/insolvency-administrator-security-request-sun-park-27-february-2018/**'
-      - 'es/solicitud-seguridad-administracion-concursal-sun-park-27-febrero-2018/**'
-      - 'en/insolvency-36-2012-administrator-removal-fees/**'
-      - 'es/concurso-36-2012-separacion-ac-honorarios/**'
-      - 'en/lender-of-record/litigious-credit-hidden-deed/**'
-      - 'es/acreedor-de-registro/credito-litigioso-escritura/**'
-      - 'en/public-authority-unitary-case-reconstruction/**'
-      - 'es/reconstruccion-unitaria-autoridades-publicas/**'
-      - 'en/ric-private-equity-sun-park/**'
-      - 'es/ric-private-equity-sun-park/**'
-      - 'en/2022-adjudication-documentary-reconstruction/**'
-      - 'es/adjudicacion-2022-reconstruccion-documental/**'
-      - 'es/rsm/**'
-      - 'en/rsm/**'
-      - 'en/insolvency-36-2012-insolvency-administrator/**'
-      - 'es/concurso-36-2012-administrador-concursal/**'
-      - 'en/reverse-engineering-360-sun-park-chain/**'
-      - 'es/ingenieria-inversa-360-cadena-sun-park/**'
-      - 'en/dp-1956-2026/**'
-      - 'es/dp-1956-2026/**'
-      - 'en/pacto-comisorio-credit-to-title-architecture/**'
-      - 'es/pacto-comisorio-arquitectura-credito-titulo/**'
-      - 'en/ph122-cerberus-haya-bankia-external-perimeter/**'
-      - 'es/perimetro-ph122-cerberus-haya-bankia-externo/**'
-      - 'en/insolvency-administrator-credit-to-title-gatekeeper/**'
-      - 'es/administrador-concursal-puerta-credito-titulo/**'
-      - 'en/lender-of-record/liability/**'
-      - 'es/acreedor-de-registro/responsabilidad/**'
-      - 'sitemap-lender-liability.xml'
   schedule:
     - cron: '17 */2 * * *'
   workflow_dispatch:
 
 permissions:
   contents: read
+  actions: read
   issues: write
 
 concurrency:
-  group: production-smoke-monitor
+  group: production-smoke-monitor-${{ github.event.pull_request.number || 'production' }}
   cancel-in-progress: true
 
 jobs:
   smoke:
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-latest
-    timeout-minutes: 8
+    timeout-minutes: 12
     steps:
-      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - name: Select the actual successfully deployed source revision
+        id: source
+        uses: actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3
         with:
+          script: |
+            if (context.eventName === 'pull_request') {
+              core.setOutput('sha', context.payload.pull_request.head.sha);
+              core.setOutput('skip', 'false');
+              return;
+            }
+            const {data} = await github.rest.actions.listWorkflowRuns({
+              ...context.repo, workflow_id: 307309396, branch: 'main', status: 'success', per_page: 1
+            });
+            const deployed = data.workflow_runs[0];
+            if (!deployed || deployed.head_repository.full_name !== `${context.repo.owner}/${context.repo.repo}`) {
+              throw new Error('No authenticated successful main Pages deployment found');
+            }
+            const eventRun = context.payload.workflow_run;
+            const superseded = Boolean(eventRun && eventRun.head_sha !== deployed.head_sha);
+            core.setOutput('sha', deployed.head_sha);
+            core.setOutput('skip', String(superseded));
+            await core.summary.addHeading('Production revision selection')
+              .addRaw(`Pages run ${deployed.id}; source ${deployed.head_sha}.\n`)
+              .addRaw(superseded ? 'SUPERSEDED EVENT: no production-health claim or incident closure.\n' : 'Verification is against the deployed revision, not an unbuilt push.\n').write();
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        if: steps.source.outputs.skip != 'true'
+        with:
+          ref: ${{ steps.source.outputs.sha }}
           persist-credentials: false
-      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
+        if: steps.source.outputs.skip != 'true'
         with:
           python-version: '3.12'
-      - name: Validate sent-email link continuity in the proposed source
+      - name: Validate source continuity and the loader dependency contract
         if: github.event_name == 'pull_request'
-        run: python scripts/validate_sent_email_link_continuity.py
-      - name: Check the public production host
-        if: github.event_name != 'pull_request'
+        run: |
+          python scripts/validate_sent_email_link_continuity.py
+          python scripts/validate_loader_graph.py
+      - name: Check public production with exact loader hashes and all business-route assertions
+        if: github.event_name != 'pull_request' && steps.source.outputs.skip != 'true'
         id: smoke
         continue-on-error: true
         run: |
           set -euo pipefail
-          python scripts/production_smoke_check_v2.py \
-            --attempts 2 \
-            --interval 15 \
-            --timeout 20 \
-            --output artifacts/production-smoke/latest.json
-          python scripts/validate_sent_email_link_continuity.py \
-            --live-base-url https://sbu001monterecco.github.io/por-derecho/ \
-            --timeout 20
-      - name: Upload production evidence
-        if: always() && github.event_name != 'pull_request'
-        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+          mkdir -p artifacts/production-smoke
+          git rev-parse HEAD > artifacts/production-smoke/source-sha.txt
+          python scripts/production_smoke_check_v2.py --attempts 2 --interval 15 --timeout 20 --output artifacts/production-smoke/latest.json
+          python scripts/validate_sent_email_link_continuity.py --live-base-url https://sbu001monterecco.github.io/por-derecho/ --timeout 20 2>&1 | tee artifacts/production-smoke/sent-links.log
+      - name: Upload every executed production result
+        if: always() && github.event_name != 'pull_request' && steps.source.outputs.skip != 'true'
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
         with:
           name: production-smoke-evidence
-          path: artifacts/production-smoke/latest.json
+          path: artifacts/production-smoke/
           if-no-files-found: error
           retention-days: 30
-      - name: Open or update a production incident
-        if: github.event_name != 'pull_request' && steps.smoke.outcome != 'success'
-        uses: actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3 # v9.0.0
+      - name: Report a new or changed incident, not identical repeated comments
+        if: always() && github.event_name != 'pull_request' && steps.source.outputs.skip != 'true' && steps.smoke.outcome != 'success'
+        uses: actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3
+        env:
+          VERIFIED_SOURCE_SHA: ${{ steps.source.outputs.sha }}
         with:
           script: |
-            const title = '[PRODUCTION] GitHub Pages smoke check failed';
-            const runUrl = `${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`;
-            const { data } = await github.rest.issues.listForRepo({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              state: 'open',
-              per_page: 100,
-            });
-            const existing = data.find(issue => !issue.pull_request && issue.title === title);
-            const body = [
-              'Mission-critical production smoke verification failed.',
-              '',
-              `Workflow: ${runUrl}`,
-              `Commit: ${context.sha}`,
-              `Detected: ${new Date().toISOString()}`,
-              '',
-              'Use `ops/GITHUB_MISSION_CRITICAL_RUNBOOK.md` before making production changes.',
-              'The workflow artifact `production-smoke-evidence` contains route-level HTTP and marker evidence.'
-            ].join('\n');
-            if (existing) {
-              await github.rest.issues.createComment({
-                owner: context.repo.owner,
-                repo: context.repo.repo,
-                issue_number: existing.number,
-                body,
-              });
-            } else {
-              await github.rest.issues.create({
-                owner: context.repo.owner,
-                repo: context.repo.repo,
-                title,
-                body,
-              });
+            const fs=require('fs'), crypto=require('crypto');
+            const title='[PRODUCTION] GitHub Pages smoke check failed';
+            let failures;
+            try {
+              const data=JSON.parse(fs.readFileSync('artifacts/production-smoke/latest.json','utf8'));
+              const rows=data.checks || data.records || data.results || [];
+              failures=rows.filter(r=>!r.ok).map(r=>({path:r.path,kind:r.kind,status:r.status,missing:r.missing_markers,error:r.error}));
+              if (!failures.length) failures=[{kind:'sent_link_or_following_verification',evidence:fs.existsSync('artifacts/production-smoke/sent-links.log')?fs.readFileSync('artifacts/production-smoke/sent-links.log','utf8').slice(-2000):'See run artifact'}];
+            } catch { failures=[{kind:'verification_did_not_produce_readable_evidence'}]; }
+            failures.sort((a,b)=>JSON.stringify(a).localeCompare(JSON.stringify(b)));
+            const fingerprint=crypto.createHash('sha256').update(JSON.stringify(failures)).digest('hex');
+            const marker=`<!-- pd-production-failure:${fingerprint} -->`;
+            let existing;
+            for await (const page of github.paginate.iterator(github.rest.issues.listForRepo,{...context.repo,state:'open',per_page:100})) {
+              existing=page.data.find(i=>!i.pull_request&&i.title===title);
+              if(existing)break;
             }
-      - name: Fail the workflow when production is unhealthy
-        if: github.event_name != 'pull_request' && steps.smoke.outcome != 'success'
+            if(existing) {
+              let previous=existing.body || '';
+              for await (const page of github.paginate.iterator(github.rest.issues.listComments,{...context.repo,issue_number:existing.number,per_page:100})) {
+                for(const comment of page.data) if(comment.body?.includes('<!-- pd-production-failure:'))previous=comment.body;
+              }
+              if(previous.includes(marker)) {
+                core.notice('Existing incident has the same failure fingerprint; artifact and failed run retained, no duplicate comment.');
+                return;
+              }
+            }
+            const runUrl=`${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`;
+            const body=[marker,'Production verification failed.',`Workflow: ${runUrl}`,`Deployed source: ${process.env.VERIFIED_SOURCE_SHA}`,'','```json',JSON.stringify(failures,null,2),'```','','Use ops/GITHUB_MISSION_CRITICAL_RUNBOOK.md. Full route-level results remain in the production-smoke-evidence artifact.'].join('\n');
+            if(existing) await github.rest.issues.createComment({...context.repo,issue_number:existing.number,body});
+            else await github.rest.issues.create({...context.repo,title,body});
+      - name: Preserve a failing status for every real verification failure
+        if: always() && github.event_name != 'pull_request' && steps.source.outputs.skip != 'true' && steps.smoke.outcome != 'success'
         run: exit 1
