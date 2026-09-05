@@ -1,0 +1,93 @@
+name: Sun Park historical canonical integrity
+
+on:
+  push:
+    branches:
+      - worker/sun-park-history-canonical-20260905
+      - main
+    paths:
+      - scripts/register_sun_park_history_20260905.py
+      - .github/workflows/sun-park-history-canonical.yml
+      - assets/data/sun-park-history-register-v1.json
+      - assets/data/matter-identity-registry-v1*
+      - assets/data/matter-identity-operational-control-v1.json
+      - assets/data/justice-professionals-caret-audit-v1.json
+      - es/historia-sun-park-jsp-molina/**
+      - en/sun-park-jsp-molina-history/**
+  pull_request:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: sun-park-history-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  worker-materialisation:
+    if: github.event_name == 'push' && github.ref == 'refs/heads/worker/sun-park-history-canonical-20260905'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Generate normal source files on the isolated WORKER branch
+        shell: bash
+        run: |
+          set -euo pipefail
+          test "${GITHUB_REF}" = "refs/heads/worker/sun-park-history-canonical-20260905"
+          if test -f assets/data/sun-park-history-register-v1.json; then
+            python3 scripts/register_sun_park_history_20260905.py --check --self-test | tee /tmp/sun-park-history-qa.json
+          else
+            python3 scripts/register_sun_park_history_20260905.py --self-test | tee /tmp/sun-park-history-qa.json
+          fi
+          python3 scripts/validate_operational_identity_registry.py
+          python3 scripts/validate_justice_professionals_caret.py
+      - name: Commit verified normal source delta, never main or deployment
+        shell: bash
+        run: |
+          set -euo pipefail
+          git diff --stat
+          if test -n "$(git status --porcelain)"; then
+            git fetch origin worker/sun-park-history-canonical-20260905
+            test "$(git rev-parse FETCH_HEAD)" = "${GITHUB_SHA}"
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add -A
+            git commit -m "Register Sun Park history: identities, dates, sources, attribution and safeguards"
+            git push origin HEAD:worker/sun-park-history-canonical-20260905
+          fi
+          {
+            echo '## Bounded WORKER registration'
+            echo "Source commit: $(git rev-parse HEAD)"
+            echo 'Not merged to main; not deployed; active integrator retains publication authority.'
+            echo '```json'
+            cat /tmp/sun-park-history-qa.json
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: sun-park-history-canonical-worker-source
+          path: |
+            assets/data/sun-park-history-register-v1.json
+            assets/data/matter-identity-registry-v1*.json
+            assets/data/matter-identity-operational-control-v1.json
+            es/historia-sun-park-jsp-molina/index.html
+            en/sun-park-jsp-molina-history/index.html
+            scripts/register_sun_park_history_20260905.py
+            archive/SUN_PARK_HISTORY_*05SEP2026.md
+          retention-days: 30
+          if-no-files-found: error
+
+  read-only-validation:
+    if: github.event_name != 'push' || github.ref != 'refs/heads/worker/sun-park-history-canonical-20260905'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 scripts/register_sun_park_history_20260905.py --check --self-test
+      - run: python3 scripts/validate_operational_identity_registry.py
+      - run: python3 scripts/validate_justice_professionals_caret.py
