@@ -1,0 +1,96 @@
+{
+  "schema_version": "1.0.0",
+  "record_key": "CNMV-2026149422-2026114903",
+  "as_of": "2026-09-05",
+  "publication_status": "WORKER_STAGED_NOT_DEPLOYED",
+  "master_register_mapping": "PENDING_ALIAS_RECONCILIATION",
+  "anchor": "cnmv-20260904",
+  "asset_directory": "assets/cnmv/2026-09-04",
+  "canonical_routes": {
+    "es": "es/cnmv-ricpe-verificacion/index.html",
+    "en": "en/cnmv-ricpe-verification/index.html"
+  },
+  "reciprocal_routes": {
+    "es": ["es/ric-private-equity-sun-park/index.html", "es/san-telmo-ricpe-sun-park/index.html"],
+    "en": ["en/ric-private-equity-sun-park/index.html", "en/san-telmo-ricpe-sun-park/index.html"]
+  },
+  "additional_route_mapping_required": ["public-authority chronology", "master evidence register", "PwC", "Grant Thornton/Cuyas", "RSM", "Concurso 36/2012 and administrator", "Orion Rental SOCIMI"],
+  "notices": [
+    {
+      "date": "2026-09-04", "outgoing": "2026149422", "incoming": "2026114903", "request_received": "2026-08-25", "pages": 3,
+      "pdf": "cnmv-2026-09-04-public-redacted.pdf", "image_prefix": "cnmv-2026-09-04-page-", "transcript": "cnmv-2026-09-04-transcript-es.txt",
+      "original_sha256": "8b6a6e24b2aaec0be20cd86157982572f3f8d99f2d04d9f9d680fc3d2091106a",
+      "public_sha256": "f7b3eafbe6659153080780c0712f935b1bd4b16e864b1cc2ed2c461779b36e93",
+      "meaning": {"en": "One additional month for a public-information decision; no substantive disclosure answer.", "es": "Un mes adicional para resolver la solicitud de información; sin respuesta material sobre el acceso."}
+    },
+    {
+      "date": "2026-01-22", "outgoing": "2026008544", "incoming": "2025153171", "request_received": "2025-12-23", "pages": 3,
+      "pdf": "cnmv-2026-01-22-public-redacted.pdf", "image_prefix": "cnmv-2026-01-22-page-", "transcript": "cnmv-2026-01-22-transcript-es.txt",
+      "original_sha256": "31e84a2e3d596977fe0f9a066eeedd9c1c55f09a1cf6a5692c59899877a81a12",
+      "public_sha256": "12a73d86feda2b403032f42bcfe3e48a5e253ff62da1e6084e7b8abd0262afb2",
+      "meaning": {"en": "July 2021 certificate and CAM court filing absent from a specified earlier supervisory corpus; not a universal never-received statement.", "es": "Certificación de julio de 2021 y escrito judicial de CAM ausentes de un corpus supervisor anterior concreto; no equivale a nunca recibidos."}
+    },
+    {
+      "date": "2026-02-20", "outgoing": "2026035232", "incoming": "2026007708", "pages": 2,
+      "pdf": "cnmv-2026-02-20-public-redacted.pdf", "image_prefix": "cnmv-2026-02-20-page-", "transcript": "cnmv-2026-02-20-transcript-es.txt",
+      "original_sha256": "149c827ec21b08e216ddda6df10ebf9907ff02777068945f739d1d96a23cc173",
+      "public_sha256": "c9acae437bf57067239817336a826a540b68d6a21cdfdbe8dd7f8aaf1ce90389",
+      "meaning": {"en": "Supervisory-document access restricted on secrecy grounds; not proof of inaction.", "es": "Acceso a documentación supervisora limitado por el deber de secreto; no prueba inactividad."}
+    }
+  ],
+  "copy": {
+    "en": {
+      "title": "CNMV: what was missing, what was considered and what remains unanswered",
+      "lead": "On 4 September 2026, CNMV extended the time for deciding information request 2026114903 by one additional month, citing volume and complexity. This is a separate transparency procedure, not an announcement that every underlying allegation is being investigated.",
+      "supervision": "The wider record is stronger than a mere acknowledgement: on 6 May 2026, CNMV expressly said the competent department had taken the facts reported on 9 March into account in supervisory actions, while invoking statutory secrecy. Scope, document-by-document checks and outcome remain undisclosed.",
+      "comparator": "The correct comparator is 22 January 2026, outgoing 2026008544. CNMV identified the Guerra certificate and CAM court filing as absent from the particular earlier supervisory corpus. It also recorded that Gil had supplied the certificate as Annex 3 in December 2025. Do not rewrite this as never received.",
+      "request_gap": "The September notice reproduces eleven requested categories and gives 25 August as the receipt date. The exact submitted file and receipt have not been recovered. The prepared 24 August draft is a precursor, not proven to be the exact filed original.",
+      "sent_bridge": "Gil/Aweswell's verified sent letter of 20 August links RICPE, Sun Park/MYND Yaiza and Orion Rental and requests incorporation, comparison, preservation and jurisdiction-specific cooperation. CNMV acknowledged it on 27 August. This is not the same communication as the separate 25 August public-information request.",
+      "orion_limit": "The 20 August letter expressly does not assert, without full title, contractual and financial evidence, that Sun Park and Orion are the same asset or that funds, guarantees or value were transferred. Portfolio identifies Orion's ORIO / ES0105829008 instrument; CNMV identifies Portfolio as an SMN/MTF, not an equivalent regulated-market admission.",
+      "advisers": "RICPE's own history attributes formation advice to Uría's Juan Francisco Falcón. The existing record separates PwC audit from represented project due diligence and identifies Eudita, Intermoney, San Telmo and Grant Thornton/Cuyás questions. San Telmo's client-introduction statement does not alone allocate those clients to Sun Park. RSM's integration announcement names Javier Rodríguez-Batllori, not the insolvency administrator Francisco de Borja. Association is not proof of criminal coordination.",
+      "allegations": "Gil Marer's allegations of unlawful shadow control and professional enablement remain expressly attributed. These CNMV notices do not determine title, insolvency liability, criminal intent or guilt. Each proposed connection requires its own date, source, capacity and limits.",
+      "privacy": "Authentic page images from redacted copies. Private contact details and retrieval CSVs are removed; registry numbers, official signatories and substantive text are retained. The unchanged signed originals are preserved separately. These edited copies are not the original electronically signed PDFs.",
+      "requests_title": "Eleven requests — substantive decision still outstanding",
+      "documents_title": "Original-page comparators",
+      "link_label": "CNMV September update: January comparator, May supervisory statement and eleven outstanding requests",
+      "sources_title": "Sources and connected record"
+    },
+    "es": {
+      "title": "CNMV: qué faltaba, qué se tuvo en cuenta y qué sigue pendiente",
+      "lead": "El 4 de septiembre de 2026, la CNMV amplió un mes el plazo para resolver la solicitud de información 2026114903, por su volumen y complejidad. Es un procedimiento de transparencia separado, no el anuncio de una investigación sobre todas las alegaciones.",
+      "supervision": "El registro anterior es más significativo que un mero acuse: el 6 de mayo de 2026, la CNMV afirmó que el departamento competente había tenido en cuenta los hechos comunicados el 9 de marzo en sus actuaciones de supervisión, invocando el deber de secreto. Su alcance, comprobaciones documentales y resultado no se han revelado.",
+      "comparator": "El comparador correcto es la resolución de 22 de enero de 2026, salida 2026008544. La CNMV identificó la certificación de Guerra y el escrito judicial de CAM como ausentes del corpus supervisor anterior concreto. También hizo constar que Gil había aportado la certificación como anexo 3 en diciembre de 2025. No debe reformularse como nunca recibidos.",
+      "request_gap": "La notificación de septiembre reproduce once categorías y fija el 25 de agosto como fecha de entrada. No se ha recuperado el archivo exacto presentado ni su justificante. El borrador preparado el 24 de agosto es un antecedente, no un original registrado plenamente identificado.",
+      "sent_bridge": "El escrito verificado como enviado por Gil/Aweswell el 20 de agosto conecta RICPE, Sun Park/MYND Yaiza y Orion Rental y pide incorporación, contraste, preservación y cooperación según la competencia acreditada. La CNMV acusó recibo el 27 de agosto. No es la misma comunicación que la solicitud separada de información de 25 de agosto.",
+      "orion_limit": "El escrito de 20 de agosto no afirma, sin trazabilidad registral, contractual y financiera completa, que Sun Park y Orion sean el mismo activo ni que se hayan transferido fondos, garantías o valor. Portfolio identifica el instrumento ORIO / ES0105829008; la CNMV identifica Portfolio como SMN, no como una admisión equivalente en mercado regulado.",
+      "advisers": "La historia publicada por RICPE atribuye asesoramiento de constitución a Juan Francisco Falcón, de Uría. El registro existente separa auditoría de PwC y due diligence de proyecto anunciada, e identifica cuestiones sobre Eudita, Intermoney, San Telmo y Grant Thornton/Cuyás. La manifestación de San Telmo sobre introducción de clientes no los asigna por sí sola a Sun Park. El anuncio de integración de RSM nombra a Javier Rodríguez-Batllori, no al administrador concursal Francisco de Borja. La asociación profesional no prueba coordinación delictiva.",
+      "allegations": "Las alegaciones de Gil Marer sobre control de hecho ilícito y facilitación profesional se mantienen expresamente atribuidas. Estas notificaciones no deciden titularidad, responsabilidad concursal, intención delictiva ni culpabilidad. Cada conexión propuesta exige fecha, fuente, capacidad y límites propios.",
+      "privacy": "Imágenes auténticas de páginas expurgadas. Se retiran datos privados de contacto y códigos CSV de recuperación; se conservan registros, firmantes oficiales y contenido sustantivo. Los originales firmados e inalterados se conservan por separado. Estas copias editadas no son los PDF originales firmados electrónicamente.",
+      "requests_title": "Once solicitudes — decisión sustantiva pendiente",
+      "documents_title": "Comparadores con páginas originales",
+      "link_label": "Actualización CNMV: comparador de enero, supervisión comunicada en mayo y once solicitudes pendientes",
+      "sources_title": "Fuentes y registro conectado"
+    }
+  },
+  "requests": [
+    {"number":1,"en":"Index/copies of public or non-confidential RICPE and Sun Park/MYND information, 2020–2023.","es":"Índice/copias de información pública o no confidencial RICPE y Sun Park/MYND, 2020–2023."},
+    {"number":2,"en":"Versions and corrections of acquisition, title, encumbrance, asset, investment, timetable and opening representations.","es":"Versiones y correcciones sobre adquisición, titularidad, cargas, activos, inversión, calendario y apertura."},
+    {"number":3,"en":"Withdrawal/conditionality, 20 July 2021 position and later re-entry, approval or finance.","es":"Retirada/condicionalidad, posición de 20 de julio de 2021 y reentrada, aprobación o financiación posterior."},
+    {"number":4,"en":"Series F/G agreements, amounts, dates, purpose, borrower, investor information and corrections.","es":"Series F/G: acuerdos, importes, fechas, finalidad, prestatario, información inversora y correcciones."},
+    {"number":5,"en":"Conflicts, abstentions, related parties, Control Unit, governing bodies, conditions and waivers.","es":"Conflictos, abstenciones, operaciones vinculadas, Unidad de Control, órganos, condiciones y dispensas."},
+    {"number":6,"en":"Accessible identification of reports, valuations, due diligence and advisers.","es":"Identificación accesible de informes, valoraciones, due diligence y asesores."},
+    {"number":7,"en":"Accessible references to PwC, Grant Thornton/Cuyás, RSM/San Telmo and other advisers.","es":"Referencias accesibles a PwC, Grant Thornton/Cuyás, RSM/San Telmo y otros asesores."},
+    {"number":8,"en":"Index/metadata and individualised legal basis if a full document is restricted.","es":"Índice/metadatos y fundamento legal individualizado si el documento completo está limitado."},
+    {"number":9,"en":"Complete legible searchable electronic copies or partial redacted access.","es":"Copias electrónicas íntegras, legibles y buscables o acceso parcial con disociación."},
+    {"number":10,"en":"Withdrawn/replaced/corrected/expanded/invalid documents, date and recorded reason.","es":"Documentos retirados/sustituidos/corregidos/ampliados/no válidos, fecha y motivo que consten."},
+    {"number":11,"en":"If not held: search, units/archives consulted, result and likely public custodian.","es":"Si no se custodian: búsqueda, unidades/archivos consultados, resultado y probable custodio público."}
+  ],
+  "public_sources": [
+    {"label":"CNMV SCR 295","url":"https://www.cnmv.es/Portal/Consultas/ECR/Sociedad?lang=es&nif=A76335900"},
+    {"label":"RICPE corporate history / Uría","url":"https://ric.capital/compania/nuestra-historia/"},
+    {"label":"RSM / San Telmo integration","url":"https://www.rsm.global/spain/es/news/rsm-crece-en-las-palmas-con-la-incorporacion-del-despacho-san-telmo"},
+    {"label":"ORION / ORIO / ES0105829008","url":"https://portfolio.exchange/es/portfolio-market/orion-rental-socimi-ORIO-ES0105829008-19"},
+    {"label":"CNMV / Portfolio SMN","url":"https://www.cnmv.es/portal/consultas/rectoras/infraestructuragest?id=89"},
+    {"label":"Law 19/2013, Article 20.1","url":"https://www.boe.es/eli/es/l/2013/12/09/19"}
+  ]
+}
