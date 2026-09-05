@@ -22,41 +22,6 @@ concurrency:
   group: cuatrecasas-rauda-${{ github.ref }}
   cancel-in-progress: false
 jobs:
-  prepare-integration-only:
-    if: github.ref == 'refs/heads/integration/cuatrecasas-rauda-20260905' && github.event_name != 'pull_request'
-    runs-on: ubuntu-latest
-    timeout-minutes: 15
-    permissions:
-      contents: write
-    steps:
-      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
-        with:
-          ref: integration/cuatrecasas-rauda-20260905
-          fetch-depth: 50
-          persist-credentials: true
-      - name: Current-main guard and deterministic additive generation
-        run: |
-          git fetch --no-tags --depth=50 origin main:refs/remotes/origin/main
-          test "$(git rev-parse origin/main)" = e482e29325091bcc32af3fd2b2624335c6699e19
-          python -m py_compile scripts/build_cuatrecasas_rauda_20260905.py scripts/complete_cuatrecasas_rauda_controls_20260905.py
-          python scripts/build_cuatrecasas_rauda_20260905.py --write
-          python scripts/complete_cuatrecasas_rauda_controls_20260905.py --write
-          python scripts/validate_operational_identity_registry.py
-      - name: Commit allowlisted generated output to the integration branch only
-        shell: python
-        run: |
-          import json,subprocess
-          from pathlib import Path
-          path='ops/CUATRECASAS_RAUDA_RELEASE_20260905.json'
-          data=json.loads(Path(path).read_text())
-          allowed=data['outputs']+[path,'assets/data/matter-identity-operational-control-v1.json','publication-manifests/cuatrecasas-rauda-recovery-review-20260905.json']
-          subprocess.run(['git','add','--',*allowed],check=True)
-          if subprocess.run(['git','diff','--cached','--quiet']).returncode:
-            subprocess.run(['git','config','user.name','github-actions[bot]'],check=True)
-            subprocess.run(['git','config','user.email','41898282+github-actions[bot]@users.noreply.github.com'],check=True)
-            subprocess.run(['git','commit','-m','Render Cuatrecasas RAUDA review and complete canonical identity queue and publication manifest'],check=True)
-            subprocess.run(['git','push','origin','HEAD:refs/heads/integration/cuatrecasas-rauda-20260905'],check=True)
-          print('PREPARED_HEAD',subprocess.check_output(['git','rev-parse','HEAD']).decode().strip())
   validate-read-only:
     if: github.event_name == 'pull_request' || github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest

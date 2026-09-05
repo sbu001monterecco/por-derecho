@@ -47,7 +47,7 @@ permissions:
 
 concurrency:
   group: verify-source-of-funds-notice-live-${{ github.ref }}
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   verify-live:
@@ -61,7 +61,8 @@ jobs:
         with:
           node-version: '22'
 
-      - name: Poll canonical pages and shared assets
+      - name: Poll deployed canonical pages and shared assets
+        if: github.event_name != 'pull_request'
         env:
           RUN_ID: ${{ github.run_id }}
           SOURCE_SHA: ${{ github.sha }}
@@ -83,8 +84,9 @@ jobs:
                   'Right of response, correction and documentation',
               ]),
               'loader': (f'{base}/assets/site.js?{q}', [
-                  'site-pre-treasury-154-hq-20260828.js?v=20260828a',
-                  'data-pre-treasury-154-site-loader',
+                  'site-pre-matkator-8584-20260903.js?v=20260903a',
+                  'data-pre-matkator-8584-site-loader',
+                  'loadControl2224Release',
               ]),
               'delegated_loader': (f'{base}/assets/site-pre-treasury-154-hq-20260828.js?{q}', [
                   'SOURCE-OF-FUNDS-NOTICE-20260820',
@@ -356,7 +358,7 @@ jobs:
           cat artifacts/source-funds-live/source.json || true
           cat artifacts/source-funds-live/dom.json || true
 
-      - uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v6.0.0
+      - uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
         if: always()
         with:
           name: source-of-funds-notice-live-verification

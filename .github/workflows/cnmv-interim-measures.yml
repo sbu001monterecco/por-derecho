@@ -22,54 +22,6 @@ concurrency:
   group: cnmv-interim-measures-${{ github.ref }}
   cancel-in-progress: false
 jobs:
-  prepare-integration-only:
-    if: github.ref == 'refs/heads/integration/cnmv-interim-measures-20260905' && github.event_name != 'pull_request'
-    runs-on: ubuntu-latest
-    timeout-minutes: 15
-    permissions:
-      contents: write
-    steps:
-      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
-        with:
-          ref: integration/cnmv-interim-measures-20260905
-          fetch-depth: 30
-          persist-credentials: true
-      - name: Fetch immutable source base and main
-        run: |
-          git fetch --no-tags --depth=30 origin main:refs/remotes/origin/main
-          git cat-file -e 66003743d2cb3a1807c1f3765c530bf639857da3^{commit}
-          test "$(git branch --show-current)" = integration/cnmv-interim-measures-20260905
-          test "$(git rev-parse origin/main)" = 66003743d2cb3a1807c1f3765c530bf639857da3
-      - name: Apply bounded pre-merge source refinements
-        shell: python
-        run: |
-          from pathlib import Path
-          import re
-          p=Path('scripts/build_cnmv_interim_measures_20260905.py')
-          s=p.read_text()
-          s=s.replace("'current_state':'PREPARED'", "'current_state':'PREPARED_PENDING_MERGE'")
-          s=re.sub(r",'Y[0-9]{7}[A-Z]'",'',s)
-          s=re.sub(r",'Calle [^']+'",'',s)
-          s=re.sub(r",'[A-Za-z0-9_.+-]+@[A-Za-z0-9.-]+'",'',s)
-          s=s.replace("norm(item.textContent)","norm([...item.children].filter(el=>!el.matches('.ca-sources')).map(el=>el.textContent).join(' '))")
-          p.write_text(s)
-          print('Pre-merge refinement uses structural patterns, not personal identifier examples. No main write or history rewrite.')
-      - name: Generate and validate scoped additive publication
-        run: python scripts/build_cnmv_interim_measures_20260905.py --write
-      - name: Commit generated files to integration branch only
-        shell: python
-        run: |
-          import json,subprocess
-          from pathlib import Path
-          a=json.loads(Path('ops/CNMV_INTERIM_PUBLICATION_AUDIT_20260905.json').read_text())
-          allowed=a['outputs']+['ops/CNMV_INTERIM_PUBLICATION_AUDIT_20260905.json','ops/CNMV_INTERIM_RELEASE_20260905.md','scripts/build_cnmv_interim_measures_20260905.py']
-          subprocess.run(['git','add','--',*allowed],check=True)
-          if subprocess.run(['git','diff','--cached','--quiet']).returncode:
-            subprocess.run(['git','config','user.name','github-actions[bot]'],check=True)
-            subprocess.run(['git','config','user.email','41898282+github-actions[bot]@users.noreply.github.com'],check=True)
-            subprocess.run(['git','commit','-m','Render verified bilingual CNMV interim-measures publication'],check=True)
-            subprocess.run(['git','push','origin','HEAD:refs/heads/integration/cnmv-interim-measures-20260905'],check=True)
-          print('PREPARED_HEAD',subprocess.check_output(['git','rev-parse','HEAD']).decode().strip())
   validate-read-only:
     if: github.event_name == 'pull_request' || github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
