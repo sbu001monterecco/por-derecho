@@ -1,0 +1,66 @@
+name: JSP one-shot public evidence object ingress
+on:
+  push:
+    branches: [worker/jsp-2017-dossier-canonical-20260905]
+    paths: [.github/workflows/jsp-evidence-object-ingress.yml]
+permissions:
+  contents: write
+jobs:
+  objects-only:
+    if: github.repository == 'sbu001monterecco/por-derecho' && github.ref == 'refs/heads/worker/jsp-2017-dossier-canonical-20260905'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: false
+      - run: python3 -m pip install pymupdf==1.28.2 pillow==12.3.0
+      - name: Reproduce approved public source pixels in a temporary directory
+        run: python3 scripts/prepare_jsp_official_image_objects.py > /tmp/jsp-image-preparation.log
+      - name: Admit only three hash-locked unreferenced git blobs
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import base64, hashlib, json, os, pathlib, urllib.request
+          # Explicit user publication scope: genuine BOE source and its two pixel
+          # derivatives. This temporary job cannot write a ref, tree, commit,
+          # Contents endpoint, issue, Pages setting or production page.
+          expected = {
+            'BORME-C-2017-7368.pdf': '78df26e04206117a5dbebaa2fc337643841c58e85455905eb53f686d7500fad9',
+            'borme-c-2017-7368-full-page.webp': 'bc713c9d9e07c3f696f4583f15589df283f77bb00eb81fb47f749207022a1e8f',
+            'borme-c-2017-7368-item-five.webp': '2d83e06b6962b6e87f99ec9264303d4448ccaea8ebe2e7bc6cabd2ce555c0ff3',
+          }
+          out = pathlib.Path('/tmp/jsp-official-image-objects')
+          receipts = []
+          endpoint = 'https://api.github.com/repos/sbu001monterecco/por-derecho/git/blobs'
+          for name, digest in expected.items():
+              data = (out / name).read_bytes()
+              assert hashlib.sha256(data).hexdigest() == digest, 'Source/image drift: ' + name
+              blob = hashlib.sha1(b'blob ' + str(len(data)).encode() + b'\0' + data).hexdigest()
+              payload = json.dumps({'encoding':'base64','content':base64.b64encode(data).decode('ascii')}).encode()
+              req = urllib.request.Request(endpoint, data=payload, method='POST', headers={
+                  'Authorization':'Bearer ' + os.environ['GH_TOKEN'],
+                  'Accept':'application/vnd.github+json','Content-Type':'application/json',
+                  'X-GitHub-Api-Version':'2022-11-28','User-Agent':'PorDerecho-ApprovedPublicObjectIngress'})
+              with urllib.request.urlopen(req, timeout=45) as response:
+                  result = json.load(response)
+              assert result['sha'] == blob, 'Returned blob mismatch'
+              receipt = {'file':name,'sha256':digest,'bytes':len(data),'git_blob_sha':blob,'state':'UNREFERENCED_OBJECT_ONLY'}
+              receipts.append(receipt)
+              print('VERIFIED_OBJECT ' + json.dumps(receipt))
+          (out/'object-admission-receipt.json').write_text(json.dumps(receipts,indent=2)+'\n')
+          print('NO_REF_TREE_COMMIT_OR_PAGE_WAS_WRITTEN; CONNECTED_PUBLISHER_MUST_ATTACH_VERIFIED_OBJECTS')
+          PY
+      - name: Confirm tracked files remain unchanged
+        run: test -z "$(git status --porcelain)"
+      - uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
+        with:
+          name: jsp-public-object-admission-receipt
+          path: |
+            /tmp/jsp-official-image-objects/manifest.json
+            /tmp/jsp-official-image-objects/object-admission-receipt.json
+          retention-days: 30
+          if-no-files-found: error
