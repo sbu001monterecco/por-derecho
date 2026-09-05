@@ -11,7 +11,7 @@ on:
       - publication-manifests/media-desk-20260905.json
       - .github/workflows/media-desk-release.yml
   push:
-    branches: [main, worker/media-desk-deploy-20260905]
+    branches: [main]
     paths:
       - ops/media-dashboard/**
       - assets/media-desk.*
@@ -24,7 +24,7 @@ permissions:
   contents: read
 concurrency:
   group: media-desk-release-${{ github.event_name }}-${{ github.ref }}
-  cancel-in-progress: false
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
 jobs:
   media-desk-scope:
     runs-on: ubuntu-latest
@@ -45,10 +45,8 @@ jobs:
           node --check assets/media-desk.js
           node --check assets/optimum-reader-journey-finish-20260818.js
           git diff --exit-code
-      - name: Install bounded validator and browser dependencies
-        run: |
-          python3 -m pip install playwright==1.62.0 beautifulsoup4 PyYAML jsonschema
-          python3 -m playwright install --with-deps chromium firefox webkit
+      - name: Install validators
+        run: python3 -m pip install beautifulsoup4 PyYAML jsonschema
       - name: Non-empty exact-range publication checks
         run: |
           test -n "$(git diff --name-only "$GITHUB_BASE_SHA" "$GITHUB_HEAD_SHA")"
@@ -56,7 +54,13 @@ jobs:
           python3 scripts/validate_publication_integrity.py 2>&1 | tee /tmp/media-release/publication.txt
           python3 scripts/validate_audience_experience.py 2>&1 | tee /tmp/media-release/audience.txt
           git diff --exit-code
+      - name: Install pre-merge browser engines
+        if: github.event_name == 'pull_request'
+        run: |
+          python3 -m pip install playwright==1.62.0
+          python3 -m playwright install --with-deps chromium firefox webkit
       - name: Three-engine source browser acceptance
+        if: github.event_name == 'pull_request'
         run: python3 ops/media-dashboard/browser_check.py
       - name: Record exact public candidate source
         if: always()
@@ -87,7 +91,7 @@ jobs:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
         with:
           persist-credentials: false
-      - name: Exact deployed resources
+      - name: Exact deployed resources and thirteen source links
         run: python3 ops/media-dashboard/verify_live.py
       - name: Install browser engines
         run: |
