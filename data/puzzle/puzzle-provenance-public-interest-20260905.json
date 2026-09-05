@@ -1,0 +1,193 @@
+{
+  "schema": "por-derecho.puzzle-provenance-public-interest.v1",
+  "controlId": "PD-PUZZLE-CONTINUITY-20260905-01",
+  "recordedAt": "2026-09-05",
+  "status": "PUBLICATION_CONTROL",
+  "purpose": "Keep the original 2024 visual, the June 2026 filed criminal-complaint baseline, the July 2026 procedural companions and the evolving public record separate but interlinked. The control maximises navigability and evidential strength without converting allegations, chronology, institutional proximity or later relationships into findings of knowledge, intent, coordination, liability or criminal participation.",
+  "original": {
+    "title": "PUZZLE 2024",
+    "path": "assets/docs/puzzle/PUZZLE-2024-original.pdf",
+    "sha256": "e441bdb368c0092d5b15ca5ee911eeac266540bde54817e424f3075f4c5fdd47",
+    "sizeBytes": 50046618,
+    "pageCount": 32,
+    "publicState": "MATERIALISED_EXACT_ORIGINAL_ON_INTEGRATION_BRANCH",
+    "interpretiveStatus": "HISTORICAL_INVESTIGATIVE_VISUAL_AND_NAVIGATION_AID",
+    "limit": "The original contains historic allegation language and visual associations. It is not a pericial finding, judicial finding or self-proving evidential conclusion. Every current proposition must be tested against the later primary record and the relevant actor-specific evidence."
+  },
+  "layers": [
+    {
+      "id": "PUZZLE-L0-2024-ORIGINAL",
+      "date": "2024-06-07",
+      "labelEn": "Original PUZZLE 2024 + explanatory introduction",
+      "labelEs": "PUZZLE 2024 original + introducción explicativa",
+      "sources": [
+        "PUZZLE - Denuncia Presunto Crimen Economico Relacionado con FTI Group 7JUN2024.pdf",
+        "PUZZLE - Intro a Denuncia Presunto Crimen Economico Relacionado con FTI Group 7JUN2024.pdf"
+      ],
+      "use": "Historical visual map, chronology and hypothesis-generation/navigation layer.",
+      "notProofOf": ["common purpose", "knowledge", "intent", "representation", "conflict", "wrongdoing", "criminal participation"]
+    },
+    {
+      "id": "PUZZLE-L1-2026-06-FILED-BASELINE",
+      "date": "2026-06-25",
+      "labelEn": "June 2026 filed baseline — Control 21",
+      "labelEs": "Base presentada en junio de 2026 — Control 21",
+      "source": "01_NEXUS_36_DENUNCIA_PENAL_ACTUALIZADA_PRESENTACION_25JUN2026.pdf",
+      "pages": 69,
+      "status": "PARTY_PLEADING_PRESENTED_25JUN2026",
+      "controllingUse": "This is the controlling June 2026 narrative/methodological baseline for interpreting the Puzzle in the current website. It is a pleading and request for investigation, not proof of the alleged offences.",
+      "method": [
+        "authority/title first",
+        "act, payment, expenditure, possession or representation second",
+        "individual attribution third",
+        "possible criminal/legal characterisation last",
+        "retain counter-evidence and innocent/lawful alternatives",
+        "use production and certified records to confirm or discard the hypothesis rather than requiring an accused person to prove innocence"
+      ],
+      "principalTracks": [
+        "title / possession / exploitation and the exact legal person acting at each date",
+        "Community / governance / debt and the evidential denominator supporting each claimed obligation",
+        "credit / servicing / assignment / enforcement / CAM chain, preserving SERVICING != TITLE",
+        "professional, insolvency-administration and judicial conduct only through actor-specific acts, omissions, notice and legal duties",
+        "later RIC/RICPE, tourism, commercial, financing and public-resource consequences as traceability/economic-effect questions, never automatic retroactive proof of original intent"
+      ],
+      "relatedJuneTracks": [
+        {
+          "date": "2026-06-18",
+          "control": "Control 22",
+          "source": "01_Denuncia_Penal_AC_LPB_Sun_Park_AC-FINAL_17JUN2026.pdf",
+          "pages": 55,
+          "status": "PARTY_PLEADING_PRESENTED_18JUN2026",
+          "limit": "Use as a pleading and retrieval map; presentation does not establish admission, merits or the truth of allegations."
+        },
+        {
+          "date": "2026-06-18/25",
+          "control": "Control 24",
+          "source": "02_Paquete_Unificado_Para_Presentacion_JUEZ_FINAL_17JUNE2026 (signed).pdf + 25 June traceability complement",
+          "status": "SEPARATE_JUDICIAL_GOVERNANCE_TRACK",
+          "limit": "Do not conflate with DP 1901/2026 or DP 1956/2026; exact procedural allocation and legal effect follow the signed court/registry record."
+        }
+      ]
+    },
+    {
+      "id": "PUZZLE-L2-2026-07-PROCEDURAL-COMPANIONS",
+      "date": "2026-07-21",
+      "labelEn": "21 July procedural companions — separate lenses",
+      "labelEs": "Companions procesales de 21 de julio — lentes separados",
+      "sources": [
+        "Companion_PUZZLE_DP_1956_2026_Plaza_1_21JUL2026_STRONGEST_SCAN.pdf",
+        "Companion_PUZZLE_DP_1901_2026_Plaza_6_21JUL2026_STRONGEST_SCAN.pdf"
+      ],
+      "status": "POST_JUNE_INTERPRETIVE_PROCEDURAL_LAYER",
+      "limit": "These later companions may sharpen page-by-page use in DP 1956/2026 and DP 1901/2026, but they are not the text filed on 25 June 2026 and must never be labelled as such."
+    },
+    {
+      "id": "PUZZLE-L3-CURRENT-RECORD",
+      "date": "2026-09-05",
+      "labelEn": "Current record and continuity graph",
+      "labelEs": "Registro actual y grafo de continuidad",
+      "status": "EVOLVING_PUBLIC_SAFE_RECORD",
+      "limit": "Later evidence can strengthen, qualify or contradict a historic Puzzle proposition. Corrections supersede without erasing provenance."
+    }
+  ],
+  "authorAndStandingPosition": {
+    "person": "Gil Marer",
+    "attribution": "CLAIMANT_STATED_POSITION",
+    "rolesStated": [
+      "directly interested and allegedly injured party",
+      "person with an asserted personal and economic interest in the matters documented",
+      "person who states that he has acted as an alertador / informante by reporting matters to Spanish, EU and other competent bodies"
+    ],
+    "foreignInvestorContext": {
+      "entity": "Aweswell Limited",
+      "position": "Gil Marer states that Aweswell Limited is a foreign investor/economic interest in Spain.",
+      "limit": "Foreign-investor status and economic interest are separate from whistleblower/informant protection. This control does not determine treaty protection, standing, jurisdiction, damages or statutory protected-informant status."
+    },
+    "legalStatusFirewall": "The site may describe Gil Marer's reporting activity and the legal regimes he invokes. It must not state that he has been judicially or administratively recognised as a protected whistleblower/informant unless a competent authority has made that determination."
+  },
+  "publicInterestLawFrame": [
+    {
+      "jurisdiction": "European Union",
+      "instrument": "Directive (EU) 2019/1937 on the protection of persons who report breaches of Union law",
+      "officialUrl": "https://eur-lex.europa.eu/eli/dir/2019/1937/oj",
+      "siteUse": "Potential EU minimum-protection framework where the person, subject matter, reporting channel and other conditions fall within the Directive and national implementing law.",
+      "limit": "Do not infer protected status from citizenship, injury, public-interest language or the existence of a report alone."
+    },
+    {
+      "jurisdiction": "Spain",
+      "instrument": "Ley 2/2023, de 20 de febrero, reguladora de la protección de las personas que informen sobre infracciones normativas y de lucha contra la corrupción",
+      "officialUrl": "https://www.boe.es/buscar/act.php?id=BOE-A-2023-4513",
+      "siteUse": "Gil Marer invokes Ley 2/2023 in relation to his reporting activity. Any assertion of statutory protection remains conditional on the Act's material, personal, channel/public-disclosure and good-faith/reasonable-belief requirements, including the applicable conditions for public disclosure.",
+      "limit": "Use 'states that he has acted as an alertador/informante' unless competent recognition of protected status is produced."
+    },
+    {
+      "jurisdiction": "Germany",
+      "instrument": "Hinweisgeberschutzgesetz (HinSchG)",
+      "officialUrl": "https://www.gesetze-im-internet.de/hinschg/",
+      "siteUse": "Potential relevance is limited to German-connected matters falling within the Act's material and personal scope and its reporting/disclosure conditions.",
+      "limit": "A German nexus, UK nationality or an economic interest alone does not establish HinSchG protection."
+    },
+    {
+      "jurisdiction": "United Kingdom / Great Britain",
+      "instrument": "Employment Rights Act 1996 protected-disclosure framework and current GOV.UK whistleblowing guidance",
+      "officialUrl": "https://www.gov.uk/whistleblowing",
+      "siteUse": "Potential relevance only where the applicable worker/status, protected-disclosure, public-interest and channel conditions are satisfied.",
+      "limit": "UK citizenship or a UK economic interest alone does not create protected-disclosure status."
+    }
+  ],
+  "publicFundsAndPublicInterestLens": {
+    "status": "INVESTIGATIVE_RECONCILIATION_LENS_NOT_FINDING",
+    "principle": "The Puzzle may connect public-resource consequences where the record supports a concrete route, but it must distinguish tax expenditure/incentives, subsidies/grants, EU or regional funding, public financing, public authority decisions, tourism/licensing support and ordinary private capital.",
+    "questions": [
+      "Which exact legal person applied for, received, benefited from or represented eligibility for each public resource or fiscal incentive?",
+      "What was the legal basis, amount, date, eligible project/asset and decision-making authority?",
+      "What title, possession, works, exploitation, investment or due-diligence representation supported eligibility at the relevant date?",
+      "What public funds or tax expenditure, if any, were actually committed or disbursed rather than merely applied for or discussed?",
+      "Was any later correction, recovery, clawback, audit, suspension or refusal recorded?",
+      "What counterfactual loss to the public purse can be calculated from primary accounting or authority records, if any?"
+    ],
+    "firewall": "Do not call a fiscal incentive, application, public relationship or later investment 'harm to public funds' unless a source-supported loss/foregone-revenue or other legally relevant public economic effect is demonstrated and attributed to the correct actor and act."
+  },
+  "predatoryInclusion": {
+    "status": "GIL_MARER_ATTRIBUTED_ANALYTICAL_THESIS",
+    "summary": "Gil Marer uses the expression 'predatory inclusion' for an alleged mechanism in which, after alleged non-disclosure or unresolved legacy exposure, additional people, entities, capital, professional reputations, institutional relationships or market resources enter a later structure and may thereby strengthen the existing perimeter.",
+    "requiredProofChain": [
+      "legacy exposure",
+      "material fact plus a reason or duty to disclose",
+      "actual actor-specific knowledge or a legally relevant knowledge standard",
+      "omission or misleading presentation",
+      "entry of the new actor or resource",
+      "reliance or enabling effect",
+      "benefit and causation"
+    ],
+    "exculpatoryRule": "If a later actor lacked material knowledge because information was not supplied, that can be relevant to Gil Marer's unwitting-layer theory while simultaneously being exculpatory of that actor's intent. No later director, investor, adviser, auditor, bank, authority or market participant inherits knowledge, intent or liability from association alone."
+  },
+  "interlinkTargets": [
+    "en/puzzle/",
+    "es/puzzle/",
+    "en/uria-menendez-sun-park/",
+    "es/uria-menendez-sun-park/",
+    "en/ric-private-equity-sun-park/",
+    "es/ric-private-equity-sun-park/",
+    "en/orion-rental-socimi/",
+    "es/orion-rental-socimi/",
+    "en/community-instrumentalisation/",
+    "es/comunidad-instrumentalizacion/",
+    "en/community-instrumentalisation/minutes-2011-2022/",
+    "es/comunidad-instrumentalizacion/actas-2011-2022/",
+    "en/acosta-matos-perimeter/",
+    "es/acosta-matos-perimetro/",
+    "en/sun-park-takeover-7-june-2018/",
+    "es/toma-control-sun-park-7-junio-2018/"
+  ],
+  "publicationRules": [
+    "Preserve exact dates, legal persons, capacities and proceeding boundaries.",
+    "Show adverse evidence and material counter-evidence together.",
+    "Every allegation or inferential edge must identify its attribution/status.",
+    "No graph edge transfers knowledge, intent, control, benefit, title, causation or liability.",
+    "Use original/source-derived images only; no synthetic reconstruction may be presented as evidence.",
+    "The exact original PDF remains directly downloadable even if the interactive viewer fails.",
+    "Corrections, right of reply and exculpatory evidence must propagate to all affected routes and graph nodes.",
+    "A thread, branch, page redesign or new proceeding must not silently delete an unresolved evidential question or its counter-evidence."
+  ]
+}
