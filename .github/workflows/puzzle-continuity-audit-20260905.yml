@@ -1,0 +1,58 @@
+name: Puzzle continuity audit and external readback
+on:
+  push:
+    branches: [legaltech/uria-search-graph-evidence-20260904]
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: puzzle-continuity-audit-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - name: Preserve exact candidate sources and main controls for review
+        shell: bash
+        run: |
+          mkdir -p /tmp/puzzle-audit
+          git rev-parse HEAD > /tmp/puzzle-audit/candidate-sha.txt
+          git rev-parse origin/main > /tmp/puzzle-audit/main-sha.txt
+          git diff --name-only --diff-filter=AM 45fcda0cfcf38f43987ab8fbd19711d8c9415c9f HEAD -z > /tmp/puzzle-audit/delta-paths.bin
+          tar --null -T /tmp/puzzle-audit/delta-paths.bin -czf /tmp/puzzle-audit/candidate-sources.tar.gz
+          git archive origin/main .github AGENTS.md ops | gzip > /tmp/puzzle-audit/main-controls.tar.gz
+          git diff --stat origin/main...HEAD > /tmp/puzzle-audit/diff-stat.txt
+          git diff --check > /tmp/puzzle-audit/whitespace.txt
+      - name: Anonymous HTTP readback without connected-account cookies
+        shell: python
+        run: |
+          import urllib.request, urllib.error, json, datetime
+          root='https://sbu001monterecco.github.io/por-derecho/'
+          paths=['en/puzzle/','es/puzzle/','assets/puzzle-hybrid-viewer-20260904.js','data/puzzle/puzzle-reading-guide-2026.json','assets/docs/puzzle/PUZZLE-2024-original.pdf']
+          rows=[]
+          for path in paths:
+            row={'path':path,'method':'GET','authenticated':False}
+            try:
+              request=urllib.request.Request(root+path,headers={'User-Agent':'PorDerecho-Anonymous-Continuity-Audit/1.0'})
+              with urllib.request.urlopen(request, timeout=25) as response:
+                start=response.read(65536)
+                row.update(status=response.status,content_type=response.headers.get('Content-Type'),content_length=response.headers.get('Content-Length'),prefix_is_pdf=start.startswith(b'%PDF-'))
+            except Exception as exc:
+              row.update(error=str(exc),status=getattr(exc,'code',None))
+            rows.append(row)
+          report={'observed_at':datetime.datetime.now(datetime.timezone.utc).isoformat(),'boundary':'HTTP observations only; not physical-device or merits verification','results':rows}
+          open('/tmp/puzzle-audit/anonymous-http.json','w').write(json.dumps(report,indent=2))
+          print(json.dumps(report,indent=2))
+      - name: Upload read-only audit artifacts
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: puzzle-continuity-audit-${{ github.sha }}
+          path: /tmp/puzzle-audit/
+          retention-days: 7
+          if-no-files-found: error
