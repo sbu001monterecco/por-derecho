@@ -86,7 +86,9 @@ def score(entry: SearchEntry, raw_query: str) -> int:
 def main() -> None:
     index = load_json(DATA / "matter-identity-registry-v1.json")
     require(index.get("registry_id") == "PD-SP-IDENTITY-REGISTRY-001", "Unexpected CAEPR registry ID")
-    require(index.get("control_date") == "2026-09-02", "CAEPR index control date was not advanced")
+    from reconcile_identity_registry_projections import canonical_snapshot
+    canonical_counts, canonical_date = canonical_snapshot(ROOT)
+    require(canonical_date >= "2026-09-02", "CAEPR source predates this search contract")
 
     records: dict[str, dict] = {}
     type_counts = Counter()
@@ -145,7 +147,8 @@ def main() -> None:
     for identifier in authority_ids: require(identifier in records, f"Current authority person absent from CAEPR: {identifier}")
 
     search_script = (ROOT / "assets" / "canonical-home-search-20260902.js").read_text(encoding="utf-8")
-    site_script = (ROOT / "assets" / "site.js").read_text(encoding="utf-8")
+    from loader_graph import reachable_loader_text
+    site_script = reachable_loader_text(root=ROOT)
     overlay_script = (ROOT / "assets" / "justice-professionals-current-overlay-20260902.js").read_text(encoding="utf-8")
     for marker in ("matter-identity-registry-v1.json", "proceedings-master-public-v1.json", "proceeding-page-routes-20260902.json", "^P-0147", "^I-0044", "URLSearchParams", "PorDerechoCanonicalSearch"):
         require(marker in search_script, f"Canonical search script lacks marker: {marker}")

@@ -1,61 +1,24 @@
 name: Orion notice dependent projection reconciliation
 on:
-  push:
-    branches: ['integration/orion-notice-register-20260905']
-    paths: ['.github/workflows/orion-notice-projection-reconciliation.yml']
+  workflow_dispatch:
 permissions:
   contents: read
-env:
-  PYTHONDONTWRITEBYTECODE: '1'
+concurrency:
+  group: orion-notice-projection-${{ github.ref }}
+  cancel-in-progress: true
 jobs:
-  reconcile:
-    if: github.ref == 'refs/heads/integration/orion-notice-register-20260905'
+  verify:
     runs-on: ubuntu-latest
     timeout-minutes: 10
-    permissions:
-      contents: write
     steps:
-      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
         with:
-          ref: integration/orion-notice-register-20260905
-          fetch-depth: 1
-      - name: Preserve the established specialist cohort without deleting canonical notices
-        shell: python
+          persist-credentials: false
+      - name: Verify already-integrated notice and Fiscalia projections without mutation
         run: |
-          from pathlib import Path
-          def patch(path,old,new):
-            p=Path(path);text=p.read_text()
-            if new in text:return
-            assert text.count(old)==1,path
-            p.write_text(text.replace(old,new,1))
-          patch('scripts/build_fiscalia_proceedings_interconnectivity.py',
-                '    events = [\n        event\n        for event in communications["events"]\n        if event.get("event_id") not in non_fiscalia_authority_ids\n    ]',
-                '    # The separately controlled Orion/financial-notice cohort has no\n    # source-allocated Fiscalia proceeding in this release. It remains fully\n    # registered and interlinked in the institutional/Orion projections.\n    non_fiscalia_notice_ids = {\n        event["event_id"] for event in communications["events"]\n        if event.get("source_batch_id") == "PD-SP-ORION-NOTICE-20260905"\n    }\n    events = [\n        event\n        for event in communications["events"]\n        if event.get("event_id") not in non_fiscalia_authority_ids | non_fiscalia_notice_ids\n    ]')
-          patch('scripts/validate_fiscalia_proceedings_interconnectivity.py',
-                '    event_ids = canonical_event_ids - excluded_authority_ids',
-                '    from prepare_orion_notice_register_20260905 import load_notice_events\n    expected_notices = {event["event_id"]: event for event in load_notice_events(ROOT)}\n    actual_notices = {event["event_id"]: event for event in communications["events"]\n                      if event.get("source_batch_id") == "PD-SP-ORION-NOTICE-20260905"}\n    require(actual_notices == expected_notices, "financial notice source cohort mismatch", errors)\n    event_ids = canonical_event_ids - excluded_authority_ids - set(expected_notices)')
-          patch('scripts/validate_fiscalia_proceedings_interconnectivity.py',
-                '        len(canonical_event_ids) == 313',
-                '        len(canonical_event_ids) == 313 + len(expected_notices)')
-      - name: Regenerate derivative source hash and validate both projections
-        run: |
-          python scripts/build_fiscalia_proceedings_interconnectivity.py --apply
           python scripts/build_fiscalia_proceedings_interconnectivity.py --check
           python scripts/validate_fiscalia_proceedings_interconnectivity.py
           python -m unittest -v scripts/test_build_fiscalia_proceedings_interconnectivity.py
           python scripts/prepare_orion_notice_register_20260905.py check
           python scripts/reconcile_institutional_communications.py --check
           python scripts/validate_institutional_communications.py
-      - name: Commit only specialist dependency reconciliation before merge
-        shell: python
-        run: |
-          import subprocess,json
-          allowed={'scripts/build_fiscalia_proceedings_interconnectivity.py','scripts/validate_fiscalia_proceedings_interconnectivity.py','assets/data/fiscalia-proceedings-interconnectivity-v1.json'}
-          changed=set(subprocess.check_output(['git','diff','--name-only']).decode().splitlines())
-          assert changed <= allowed, sorted(changed-allowed)
-          subprocess.run(['git','diff','--check'],check=True)
-          if changed:
-            subprocess.run(['git','add','--',*sorted(changed)],check=True)
-            subprocess.run(['git','-c','user.name=Por Derecho integration','-c','user.email=41898282+github-actions[bot]@users.noreply.github.com','commit','-m','Preserve Fiscalia specialist scope and reconcile canonical notice dependency'],check=True)
-            subprocess.run(['git','push','origin','HEAD:refs/heads/integration/orion-notice-register-20260905'],check=True)
-          print('DEPENDENT_PROJECTION_RECONCILED',subprocess.check_output(['git','rev-parse','HEAD']).decode().strip(),json.dumps(sorted(changed)))

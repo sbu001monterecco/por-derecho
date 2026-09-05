@@ -3318,6 +3318,7 @@ if not errors:
     # Current-main reintegration is the present byte-transition authority. It
     # preserves historical attestations while requiring every listed candidate
     # file to match its current candidate hash and forbidding premature live claims.
+    from historical_transition_integrity import historical_transition_bytes_match
     reintegration_rows = reintegration_transition.get("transitions", [])
     reintegration_by_path = {
         row.get("resource"): row for row in reintegration_rows
@@ -3344,10 +3345,10 @@ if not errors:
         and len(reintegration_rows) == len(reintegration_by_path)
         and reintegration_transition.get("candidate_delta_file_count") == len(reintegration_rows)
         and reintegration_required_paths <= set(reintegration_by_path)
-        and all(
-            (row.get("candidate_sha256") is None and not (ROOT / path).exists())
-            or row.get("candidate_sha256") == hashlib.sha256((ROOT / path).read_bytes()).hexdigest()
-            for path, row in reintegration_by_path.items()
+        and historical_transition_bytes_match(
+            ROOT,
+            "publication-manifests/historic-proceedings-authority-reintegration-20260903.json",
+            "archive/handoffs/2026-09-03-historic-proceedings-authority-search-reintegration-live-closeout.json",
         )
         and all(bool(row.get("reason")) for row in reintegration_rows)
         and all(

@@ -1,0 +1,268 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:por-derecho:schema:publication-state-manifest:v1",
+  "title": "Por Derecho publication-state manifest v1",
+  "description": "Canonical state contract for publication-manifests. Historical reintegration transition snapshots use a separate schema.",
+  "type": "object",
+  "required": [
+    "schema",
+    "schema_version",
+    "publication_id",
+    "current_state",
+    "expected_routes",
+    "owner"
+  ],
+  "properties": {
+    "schema": {
+      "const": "por-derecho.publication-state.v1"
+    },
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "publication_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "control_date": {
+      "type": "string",
+      "minLength": 1
+    },
+    "current_state": {
+      "type": "string",
+      "enum": [
+        "DRAFT",
+        "PREPARED_PENDING_RENEWED_SCOPE_APPROVAL",
+        "PREPARED_PENDING_MERGE",
+        "REMOTE_SOURCE",
+        "PR_OPEN",
+        "CI_GREEN",
+        "MERGED",
+        "DEPLOYED",
+        "LIVE_VERIFIED",
+        "DELETION_SAFE",
+        "BLOCKED_RECOVERY"
+      ]
+    },
+    "expected_routes": {
+      "type": "object",
+      "required": [
+        "es",
+        "en"
+      ],
+      "properties": {
+        "es": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
+        "en": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        }
+      },
+      "additionalProperties": true
+    },
+    "owner": {
+      "type": "string",
+      "minLength": 1
+    },
+    "validation": {
+      "type": "object",
+      "properties": {
+        "evidence": {
+          "type": [
+            "array",
+            "object",
+            "string"
+          ],
+          "minLength": 1
+        }
+      },
+      "additionalProperties": true
+    },
+    "merge_sha": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{40}$"
+    },
+    "deployment_evidence": {
+      "type": "object",
+      "minProperties": 1
+    },
+    "live_urls": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "format": "uri"
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "live_verification_evidence": {
+      "type": [
+        "array",
+        "object",
+        "string"
+      ]
+    },
+    "deletion_record": {
+      "type": [
+        "array",
+        "object",
+        "string"
+      ]
+    },
+    "blocking_reason": {
+      "type": [
+        "string",
+        "object"
+      ],
+      "minLength": 1
+    },
+    "recovery_requirements": {
+      "type": [
+        "array",
+        "object",
+        "string"
+      ]
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "current_state": {
+            "enum": [
+              "CI_GREEN",
+              "MERGED",
+              "DEPLOYED",
+              "LIVE_VERIFIED",
+              "DELETION_SAFE"
+            ]
+          }
+        },
+        "required": [
+          "current_state"
+        ]
+      },
+      "then": {
+        "required": [
+          "validation"
+        ],
+        "properties": {
+          "validation": {
+            "required": [
+              "evidence"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "current_state": {
+            "enum": [
+              "MERGED",
+              "DEPLOYED",
+              "LIVE_VERIFIED",
+              "DELETION_SAFE"
+            ]
+          }
+        },
+        "required": [
+          "current_state"
+        ]
+      },
+      "then": {
+        "required": [
+          "merge_sha"
+        ]
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "current_state": {
+            "enum": [
+              "DEPLOYED",
+              "LIVE_VERIFIED",
+              "DELETION_SAFE"
+            ]
+          }
+        },
+        "required": [
+          "current_state"
+        ]
+      },
+      "then": {
+        "required": [
+          "deployment_evidence"
+        ]
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "current_state": {
+            "enum": [
+              "LIVE_VERIFIED",
+              "DELETION_SAFE"
+            ]
+          }
+        },
+        "required": [
+          "current_state"
+        ]
+      },
+      "then": {
+        "required": [
+          "live_urls",
+          "live_verification_evidence"
+        ]
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "current_state": {
+            "const": "DELETION_SAFE"
+          }
+        },
+        "required": [
+          "current_state"
+        ]
+      },
+      "then": {
+        "required": [
+          "deletion_record"
+        ]
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "current_state": {
+            "const": "BLOCKED_RECOVERY"
+          }
+        },
+        "required": [
+          "current_state"
+        ]
+      },
+      "then": {
+        "required": [
+          "blocking_reason",
+          "recovery_requirements"
+        ]
+      }
+    }
+  ],
+  "additionalProperties": true
+}

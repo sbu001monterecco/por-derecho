@@ -420,7 +420,8 @@ def validate_workflow() -> None:
         check(output in text, f"workflow does not preserve {output}")
     check("fti-meeting-point-asset-transaction-state-v2-" in text, "workflow cache key was not versioned for sticky state v2")
     check(text.count("history.jsonl") >= 3, "workflow does not restore, save and generate bounded history")
-    check("# v7.0.0" in text and "# v6.1.0" not in text, "setup-python pin comment does not match v7.0.0 hash")
+    python_actions = [line.strip() for line in text.splitlines() if "uses: actions/setup-python@" in line]
+    check(len(python_actions) == 1 and python_actions[0].endswith("actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0"), "setup-python action line has a mismatched immutable pin/version")
     check("Enforce required-source and sticky-review result after preservation" in text, "workflow lacks final non-green enforcement gate")
     upload_index = text.find("Upload public-safe monitor evidence")
     enforce_index = text.find("Enforce required-source and sticky-review result after preservation")

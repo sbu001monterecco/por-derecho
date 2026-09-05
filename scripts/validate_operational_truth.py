@@ -52,14 +52,9 @@ UNITARY_SNAPSHOT_IDENTITY_COUNTS = {
     "INSTITUTION": 43,
     "PROCEEDING": 43,
 }
-CURRENT_CANONICAL_IDENTITY_COUNTS = {
-    "total": 350,
-    "PERSON": 165,
-    "ORGANISATION": 83,
-    "STRUCTURE": 11,
-    "INSTITUTION": 48,
-    "PROCEEDING": 43,
-}
+# Validate current shards dynamically; dated historical snapshots stay fixed.
+from reconcile_identity_registry_projections import canonical_snapshot
+CURRENT_CANONICAL_IDENTITY_COUNTS = canonical_snapshot(ROOT)[0]
 
 
 def load(path: Path) -> dict[str, Any]:

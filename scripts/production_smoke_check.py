@@ -256,4 +256,5 @@ def main() -> int:
 
 
 if __name__ == "__main__":
-    raise SystemExit(main())
+    from production_smoke_check_v2 import main as current_main
+    raise SystemExit(current_main())
