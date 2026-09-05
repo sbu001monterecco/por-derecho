@@ -1,0 +1,87 @@
+name: JSP BOC register closure review
+on:
+  push:
+    branches: [worker/jsp-boc-six-sections-20260905]
+    paths: ['.github/workflows/jsp-boc-register-closure-review.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  closure-review:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - run: python3 -m pip install jsonschema beautifulsoup4 markdown pymupdf==1.28.2 pillow==12.3.0
+      - name: Prepare isolated current-head reconciliation and prove all event objects preserved
+        run: |
+          mkdir -p /tmp/jsp-boc-closure
+          git worktree add --detach /tmp/jsp-boc-closure/qa HEAD
+          python3 - <<'PY'
+          import pathlib,sys,subprocess,json,hashlib,copy,difflib
+          root=pathlib.Path('/tmp/jsp-boc-closure/qa');out=root.parent/'files';out.mkdir();sys.path.insert(0,str(root/'scripts'))
+          path=root/'scripts/reconcile_institutional_communications.py';before=path.read_text();needle='KEY_EVENTS.extend(load_notice_events(REPO_ROOT))'
+          assert before.count(needle)==1 and 'load_boc_notice_events' not in before
+          after=before.replace(needle,needle+'\n\n# BOC308/07: fixed source-reported historical cohort; no new filing.\nfrom load_jsp_boc_notice_events import load_boc_notice_events\nKEY_EVENTS.extend(load_boc_notice_events(REPO_ROOT))')
+          path.write_text(after)
+          from load_jsp_boc_notice_events import load_boc_notice_events
+          source_events=load_boc_notice_events(root)
+          reg_path=root/'assets/data/institutional-communications-register-v1.json';old=json.loads(reg_path.read_text());old_by_id={e['event_id']:e for e in old['events']}
+          assert len(source_events)==12 and all(old_by_id[e['event_id']]==e for e in source_events),'source-derived BOC rows differ from reviewed rows'
+          cp_path=root/'ops/INSTITUTIONAL_COMMUNICATIONS_SCAN_CHECKPOINT.json';old_cp=json.loads(cp_path.read_text())
+          subprocess.run(['python3','scripts/reconcile_institutional_communications.py','--apply'],cwd=root,check=True)
+          new=json.loads(reg_path.read_text());new_by_id={e['event_id']:e for e in new['events']}
+          assert old_by_id==new_by_id,'Never drop or change any previously reviewed event'
+          a=copy.deepcopy(old);b=copy.deepcopy(new);a.pop('events');b.pop('events');assert a==b,'Only deterministic order may change the register envelope'
+          new_cp=json.loads(cp_path.read_text());a=copy.deepcopy(old_cp);b=copy.deepcopy(new_cp);a.pop('register_sha256');b.pop('register_sha256');assert a==b,'No scan history or unrelated checkpoint fact may change'
+          manifest_path=root/'assets/data/jsp-boc-release-manifest-20260905.json';manifest=json.loads(manifest_path.read_text())
+          def row(rel):
+              data=(root/rel).read_bytes();return {'path':rel,'bytes':len(data),'sha256':hashlib.sha256(data).hexdigest(),'git_blob':hashlib.sha1(b'blob '+str(len(data)).encode()+b'\0'+data).hexdigest()}
+          edits=['scripts/reconcile_institutional_communications.py','assets/data/institutional-communications-register-v1.json','ops/INSTITUTIONAL_COMMUNICATIONS_SCAN_CHECKPOINT.json']
+          for rel in edits:
+              manifest['files']=[r for r in manifest['files']if r['path']!=rel];manifest['files'].append(row(rel))
+          manifest_path.write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n')
+          edits.append('assets/data/jsp-boc-release-manifest-20260905.json');objects=[]
+          for rel in edits:
+              target=out/rel;target.parent.mkdir(parents=True,exist_ok=True);target.write_bytes((root/rel).read_bytes());objects.append(row(rel))
+          (out/'OBJECTS.json').write_text(json.dumps(objects,indent=2)+'\n')
+          (root.parent/'closure-proof.json').write_text(json.dumps({'source_events':12,'event_objects_preserved':len(new_by_id),'new_ids':False,'prior_event_content_changes':0,'prior_envelope_changes':0,'checkpoint_change':'register_sha256 only','register_sha256':new_cp['register_sha256'],'objects':objects},indent=2))
+          (root.parent/'reconciler.diff').write_text(''.join(difflib.unified_diff(before.splitlines(True),after.splitlines(True))))
+          PY
+          git -C /tmp/jsp-boc-closure/qa -c user.name='Local review only' -c user.email='review@example.invalid' add -A
+          git -C /tmp/jsp-boc-closure/qa -c user.name='Local review only' -c user.email='review@example.invalid' commit -m 'Isolated deterministic checkpoint closure review; not pushed'
+      - name: Run unchanged communications and required publication/release gates
+        run: |
+          cd /tmp/jsp-boc-closure/qa
+          python3 - <<'PY'
+          import pathlib,subprocess,json,os
+          root=pathlib.Path.cwd();out=root.parent/'checks';out.mkdir();env=dict(os.environ)
+          env['GITHUB_BASE_SHA']=subprocess.check_output(['git','rev-parse','origin/main'],text=True).strip();env['GITHUB_HEAD_SHA']=subprocess.check_output(['git','rev-parse','HEAD'],text=True).strip();env['BASE_SHA']=env['GITHUB_BASE_SHA']
+          jobs=[['python3','scripts/reconcile_institutional_communications.py','--check'],['python3','scripts/validate_institutional_communications.py'],['python3','scripts/validate_publication_integrity.py'],['python3','scripts/check_release_acceptance.py']]
+          results=[]
+          for command in jobs:
+              p=subprocess.run(command,cwd=root,text=True,capture_output=True,env=env);name=pathlib.Path(command[1]).stem;(out/(name+'.log')).write_text(p.stdout+'\n'+p.stderr);results.append({'check':name,'exit':p.returncode,'tail':(p.stdout+'\n'+p.stderr)[-6000:]})
+          (out/'summary.json').write_text(json.dumps(results,indent=2));print(json.dumps(results,indent=2))
+          assert all(r['exit']==0 for r in results),'Review failed; artifact records failures and is not a publication permit'
+          PY
+      - name: Prove primary checkout unchanged
+        if: always()
+        run: git diff --exit-code && git diff --cached --exit-code
+      - uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
+        if: always()
+        with:
+          name: jsp-boc-register-closure
+          path: |
+            /tmp/jsp-boc-closure/files
+            /tmp/jsp-boc-closure/checks
+            /tmp/jsp-boc-closure/closure-proof.json
+            /tmp/jsp-boc-closure/reconciler.diff
+            /tmp/pd-release-acceptance
+            /tmp/ci-control-plane
+          retention-days: 30
+          if-no-files-found: error
+# No authenticated mutation. The four prepared files require reviewed exact-object
+# admission, actual PR checks, a controller permit, merge and live readback.
