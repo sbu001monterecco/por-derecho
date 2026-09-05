@@ -1,0 +1,94 @@
+name: CI control-plane recovery audit
+
+on:
+  push:
+    branches: [integration/ci-rules-open-work-20260905]
+    paths: ['.github/workflows/ci-control-plane-recovery-20260905.yml']
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  actions: read
+  pull-requests: read
+
+concurrency:
+  group: ci-control-plane-recovery-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+          fetch-depth: 1
+      - name: Inspect canonical validators, workflows, predecessor repairs and open work
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          python3 - <<'PY'
+          import json, os, pathlib, re, subprocess, urllib.request, concurrent.futures
+          root=pathlib.Path.cwd(); out=pathlib.Path('/tmp/ci-recovery'); out.mkdir(exist_ok=True)
+          api='https://api.github.com/repos/sbu001monterecco/por-derecho/'
+          def get(path):
+              req=urllib.request.Request(api+path,headers={'Authorization':'Bearer '+os.environ['GH_TOKEN'],'Accept':'application/vnd.github+json'})
+              with urllib.request.urlopen(req,timeout=30) as r:return json.load(r)
+          main=get('git/ref/heads/main')['object']['sha']
+          print('OBSERVED_MAIN',main)
+          scripts=['validate_repository_preservation.py','validate_publication_integrity.py','validate_publication_integrity_v2.py','validate_audience_experience.py','validate_mission_critical_repo.py','validate_dp3205_2014_publication.py','validate_multithread_collaboration_v2.py']
+          def check(s):
+              if not (root/'scripts'/s).exists():return {'script':s,'state':'ABSENT'}
+              try:
+                  p=subprocess.run(['python3','scripts/'+s],capture_output=True,text=True,timeout=150)
+                  text=p.stdout+p.stderr; (out/(s+'.log')).write_text(text)
+                  return {'script':s,'returncode':p.returncode,'output_tail':text[-6000:] if p.returncode else text[-700:]}
+              except subprocess.TimeoutExpired:return {'script':s,'state':'TIMEOUT'}
+          vals=list(concurrent.futures.ThreadPoolExecutor(max_workers=4).map(check,scripts))
+          (out/'validators.json').write_text(json.dumps(vals,indent=2)); print('VALIDATOR_RESULTS',json.dumps(vals))
+          workflows=[]
+          for p in sorted((root/'.github/workflows').glob('*.y*ml')):
+              t=p.read_text(); workflows.append({'path':str(p.relative_to(root)),'scheduled':'schedule:' in t,'pr':'pull_request:' in t,'main_push':'push:' in t and 'main' in t,'write':bool(re.search(r':\s*write\b',t)),'timeout':'timeout-minutes:' in t,'unfixed_uses':re.findall(r'uses:\s*([^\s]+@[^\s]+)',t)})
+          for w in workflows:w['unfixed_uses']=[x for x in w['unfixed_uses'] if not re.search(r'@[a-f0-9]{40}$',x)]
+          (out/'workflows.json').write_text(json.dumps(workflows,indent=2))
+          print('WORKFLOW_COUNT',len(workflows));print('WORKFLOW_REVIEW',json.dumps([w for w in workflows if w['scheduled'] or w['write'] or not w['timeout'] or w['unfixed_uses']]))
+          for number in [1412,1437]:
+              pr=get('pulls/'+str(number)); files=[]; page=1
+              while True:
+                  batch=get('pulls/'+str(number)+'/files?per_page=100&page='+str(page));files+=batch
+                  if len(batch)<100:break
+                  page+=1
+              (out/('pr'+str(number)+'-files.json')).write_text(json.dumps(files,indent=2))
+              print('PREDECESSOR',json.dumps({'pr':number,'head':pr['head']['sha'],'base':pr['base']['sha'],'draft':pr['draft'],'files':[{'path':x['filename'],'status':x['status'],'sha':x['sha']} for x in files]}))
+          prs=[];page=1
+          while True:
+              batch=get('pulls?state=open&per_page=100&page='+str(page));prs+=batch
+              if len(batch)<100:break
+              page+=1
+          main_tree=get('git/trees/'+main+'?recursive=1');assert not main_tree.get('truncated'), 'main tree truncated'
+          mt={x['path']:x['sha'] for x in main_tree['tree'] if x['type']=='blob'}
+          def classify(pr):
+              n=pr['number'];files=[];page=1
+              while True:
+                  batch=get('pulls/'+str(n)+'/files?per_page=100&page='+str(page));files+=batch
+                  if len(batch)<100:break
+                  page+=1
+              equal=[f['filename'] for f in files if f['status']!='removed' and mt.get(f['filename'])==f['sha']]
+              absent=[f['filename'] for f in files if f['status']=='removed' and f['filename'] not in mt]
+              unresolved=[f['filename'] for f in files if f['filename'] not in equal+absent]
+              return {'pr':n,'draft':pr['draft'],'head':pr['head']['sha'],'updated_at':pr['updated_at'],'changed_files':len(files),'same_as_main':len(equal)+len(absent),'remaining_paths':unresolved,'classification':'NO_UNIQUE_FILE_DELTA' if not unresolved else 'REVIEW_REQUIRED'}
+          queue=list(concurrent.futures.ThreadPoolExecutor(max_workers=4).map(classify,prs))
+          (out/'open-pr-census.json').write_text(json.dumps(queue,indent=2)); print('OPEN_PR_CENSUS',json.dumps(queue))
+          runs=get('actions/runs?branch=main&per_page=100')['workflow_runs']
+          print('RECENT_MAIN_RUNS',json.dumps([{'id':r['id'],'name':r['name'],'head':r['head_sha'],'event':r['event'],'status':r['status'],'conclusion':r['conclusion']} for r in runs]))
+          try: print('RULESETS',json.dumps(get('rulesets')))
+          except Exception as e: print('RULESETS_READ_LIMIT',type(e).__name__)
+          print('AUDIT_COMPLETE_READ_ONLY')
+          PY
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        if: always()
+        with:
+          name: ci-recovery-audit-${{ github.run_id }}
+          path: /tmp/ci-recovery/
+          retention-days: 14
