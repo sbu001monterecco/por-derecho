@@ -1,0 +1,92 @@
+name: Validate CaixaBank reader and public derivatives
+on:
+  pull_request:
+    paths:
+      - '.github/workflows/validate-caixabank-reader-repair-20260905.yml'
+      - 'scripts/*caixabank*20260905.py'
+      - 'assets/caixabank*'
+      - 'assets/home-mission-critical-20260904.js'
+      - 'assets/site.js'
+      - 'assets/evidence/caixabank*'
+      - 'assets/evidence/caixabank-valencia-publica-20260905/**'
+      - 'data/audits/caixabank*'
+      - 'es/reclamacion-caixabank-valencia/**'
+      - 'en/caixabank-valencia-claim/**'
+      - 'sitemap-banking-recovery.xml'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: caixabank-reader-validation-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: false
+          fetch-depth: 0
+      - name: Preserve current-main ancestry
+        run: git merge-base --is-ancestor origin/main HEAD
+      - name: Install pinned verification dependencies
+        run: |
+          python3 -m pip install playwright==1.55.0 requests==2.32.5 beautifulsoup4==4.13.5 PyMuPDF==1.26.4 Pillow==11.3.0
+          python3 -m playwright install --with-deps chromium firefox webkit
+      - name: Validate prepared source and declared receipt boundary
+        run: |
+          python3 scripts/validate_caixabank_reader_repair_20260905.py
+          python3 - <<'PY'
+          import json,pathlib
+          m=json.loads(pathlib.Path('data/audits/caixabank-public-derivatives-20260905.json').read_text())
+          r=m['claim_filing_reconciliation']
+          assert r['denominator']=={'principal_pdf':1,'accompanying_pdfs':12,'total':13,'annex_labels':'0 through 11'}
+          assert len(r['components'])==13
+          assert r['receipt']['dispatch_local']=='2023-10-11T19:39:57'
+          assert r['receipt']['native_publication']=='WITHHELD_PRIVATE'
+          assert r['components'][10]['component']=='annex-9' and r['components'][10]['receipt_label']=='Cuadros economicos'
+          assert 'NOT_CERTIFIED_BYTE_IDENTICAL' in r['public_claim_status']
+          for route in ['es/reclamacion-caixabank-valencia/documentos/','en/caixabank-valencia-claim/documents/']:
+              assert 'id="control-presentacion-11oct2023"' in pathlib.Path(route+'index.html').read_text()
+          print('RECEIPT_BOUNDARY_PASS')
+          PY
+          git diff --check
+      - name: Serve candidate at the real project base path
+        run: |
+          mkdir -p /tmp/caixabank-validation /tmp/caixabank-www
+          git rev-parse HEAD > /tmp/caixabank-validation/tested-head.txt
+          ln -s "$GITHUB_WORKSPACE" /tmp/caixabank-www/por-derecho
+          python3 -m http.server 8899 --bind 127.0.0.1 --directory /tmp/caixabank-www >/tmp/caixabank-validation/server.log 2>&1 &
+      - name: Render and validate all ten routes in three engines
+        env:
+          PD_AUDIT_BASE: http://127.0.0.1:8899/por-derecho/
+          PD_AUDIT_OUT: /tmp/caixabank-validation
+        run: |
+          python3 scripts/audit_caixabank_360_20260905.py --stage browser
+          python3 scripts/audit_caixabank_360_20260905.py --stage http
+          python3 scripts/validate_caixabank_reader_repair_20260905.py --browser-folder /tmp/caixabank-validation
+          python3 scripts/check_caixabank_final_reader_review_20260905.py
+          python3 - <<'PY'
+          import json,pathlib
+          rows=json.loads(pathlib.Path('/tmp/caixabank-validation/browser-results.json').read_text())['results']
+          for row in rows:
+              assert not row.get('page_errors'),(row['engine'],row['route'],row['page_errors'])
+              assert not row.get('failed_responses'),(row['engine'],row['route'],row['failed_responses'])
+              assert row.get('menu_expanded') in (None,'true'),(row['engine'],row['route'],'menu')
+              c=row.get('cached_revisit')
+              if c:
+                  assert not c['duplicateIds'] and c['bodyWidth']<=c['width']+2 and not c['overflow']
+                  assert all(i['naturalWidth']>0 for i in c['images'] if i['visible'])
+          print('CONSOLE_MENU_CACHE_CHECKS_PASS')
+          PY
+          git diff --exit-code
+      - uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
+        if: always()
+        with:
+          name: caixabank-reader-validation-${{ github.run_id }}
+          path: /tmp/caixabank-validation/
+          retention-days: 7
+# These are PR/local-candidate checks. They do not certify production Pages.
+# Post-merge verification must name the successful Pages SHA and re-fetch
+# the actual public routes and file bytes before LIVE_VERIFIED is claimed.
