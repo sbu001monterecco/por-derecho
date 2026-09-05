@@ -1255,6 +1255,7 @@
     "changed_files": [
       ".github/workflows/cuatrecasas-rauda-publication.yml",
       "CHATGPT_START_HERE.md",
+      "assets/data/community-acta-authority-interconnectivity-v1.json",
       "assets/data/institutional-communications-register-v1.json",
       "assets/data/la-laguna-proceeding-pages-v1.json",
       "assets/data/matter-identity-operational-control-v1.json",
@@ -1292,7 +1293,8 @@
       ".github/workflows/cuatrecasas-rauda-publication.yml": "ee2037e8cd81257f5b619fd827e1d75975dc8e5acc8d13761a4beb517b67b069",
       "ops/CUATRECASAS_RAUDA_CONTINUITY_20260905.md": "8d1c3458c198e2df66ab1006188579c1822ac2877aa3c5b8e1b84843a430b2b9",
       "CHATGPT_START_HERE.md": "97961aa4d63794d5e598c1506b401f44a9041949d3de1c856d7efec8bf93a925",
-      "ops/RELEASE_LEDGER.json": "4fd5737ab5591a79bff83efc9147a24e2e612e6ea18465abb91f6d3a3f20e453"
+      "ops/RELEASE_LEDGER.json": "4fd5737ab5591a79bff83efc9147a24e2e612e6ea18465abb91f6d3a3f20e453",
+      "assets/data/community-acta-authority-interconnectivity-v1.json": "f9acb8e803ad1b08dd7acc441adad2beb8769976604a8b5f1bddae6bd8e77bff"
     },
     "page_projections": {
       "es": {
@@ -1307,6 +1309,13 @@
     "new_routes": [
       "es/metodologia/index.html",
       "en/methodology/index.html"
-    ]
+    ],
+    "projection_dependency_closure": {
+      "target": "assets/data/community-acta-authority-interconnectivity-v1.json",
+      "closed_dimension": "SOURCE_HASH_DRIFT_ONLY",
+      "substantive_fields_changed": [],
+      "meaning": "All graph nodes, relationships, coverage, allegations and limiting evidence remained identical. Canonical input hashes refreshed after the continuity metadata additions.",
+      "source_policy": "Recompute with the existing deterministic builder after future authorised canonical changes; never accept an unexplained substantive difference."
+    }
   }
 }
