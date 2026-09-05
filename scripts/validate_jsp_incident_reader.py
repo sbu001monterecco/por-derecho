@@ -13,6 +13,22 @@ REF='assets/data/jsp-incident-reference/'
 SOURCE='2fc339c92ac9312d8e21b5c70db80a89c88c29c3'
 EXPECTED_IMAGES={'assets/evidence/jsp-2017/borme-c-2017-7368-item-five.webp':('2d83e06b6962b6e87f99ec9264303d4448ccaea8ebe2e7bc6cabd2ce555c0ff3',(1025,116)),'assets/evidence/jsp-2017/borme-c-2017-7368-full-page.webp':('bc713c9d9e07c3f696f4583f15589df283f77bb00eb81fb47f749207022a1e8f',(893,1263))}
 def norm(s):return re.sub('[^a-z0-9]','',unicodedata.normalize('NFKD',s).encode('ascii','ignore').decode().lower())
+
+def compatible(a,b):
+    if norm(a['name'])==norm(b['name']):return True
+    # One reviewed source-name variant, not a new identity or caret promotion.
+    return (a.get('id')==b.get('id')=='PD-SP-R-0044'
+      and a.get('type')==b.get('type')=='PROCEEDING'
+      and a.get('name')=='JSP / Celgán — concurso 440/2021'
+      and b.get('name')=='Concurso 440/2021 — José Sánchez Peñate, S.A. y Celgán, S.A.'
+      and a.get('organ_id')==b.get('court_id')=='PD-SP-I-0015'
+      and b.get('reference')=='440/2021'
+      and a.get('declaration_date')=='2021-07-21'
+      and set(b.get('debtors',[]))=={'PD-SP-O-0085','PD-SP-O-0094'}
+      and set(b['debtors']).issubset(set(a.get('related_ids',[])))
+      and a.get('identity_resolution')==b.get('identity_resolution')=='CARET_PENDING'
+      and all(any('445948' in str(x) for x in r.get('identity_sources',[])) for r in [a,b]))
+
 def load(path):return json.loads((ROOT/path).read_text())
 def require(ok,message):
     if not ok:raise AssertionError(message)
@@ -60,9 +76,12 @@ def main():
             b=(ROOT/REF/item['path']).read_bytes();gitsha=hashlib.sha1(b'blob '+str(len(b)).encode()+b'\0'+b).hexdigest();require(gitsha==item['git_blob'],'pinned reference bytes '+item['path']);rows=json.loads(b)['records'];require(len(rows)==item['count'],'reference count')
             for r in rows:require(r['id'] not in candidates,'duplicate candidate');candidates[r['id']]=r
         require(len(candidates)==59,'59 source proposals')
+        require(compatible(records['PD-SP-R-0044'],candidates['PD-SP-R-0044']),'reviewed proceeding name variant')
+        wrong=copy.deepcopy(candidates['PD-SP-R-0044']);wrong['court_id']='PD-SP-I-0001';require(not compatible(records['PD-SP-R-0044'],wrong),'wrong court variant rejected')
+        wrong=copy.deepcopy(candidates['PD-SP-R-0044']);wrong['debtors']=['PD-SP-O-0002'];require(not compatible(records['PD-SP-R-0044'],wrong),'wrong debtor variant rejected')
         for i in ids:
             require(i in records or i in candidates,'unresolved reference '+i)
-            if i in records and i in candidates:require(norm(records[i]['name'])==norm(candidates[i]['name']),'canonical conflict '+i)
+            if i in records and i in candidates:require(compatible(records[i],candidates[i]),'canonical conflict '+i)
         require(not any(p['path'].startswith('jsp-incident-reference/') for p in manifest['parts']),'cache must not be admitted as global part')
         result['counts']={'references':len(ids),'current_canonical':sum(i in records for i in ids),'candidate_references':sum(i not in records for i in ids),'queue':48,'documents':64,'gaps':20,'global':len(records)}
         result['checks'].append('all references resolve; current canonical names prevail; no new global admission')
