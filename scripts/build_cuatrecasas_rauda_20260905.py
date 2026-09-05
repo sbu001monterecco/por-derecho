@@ -5,6 +5,7 @@
 Existing court controls are reused; private-professional correspondence is indexed
 in the existing La Laguna specialist source control, not misclassified as an
 authority communication. Original institutional communications remain untouched.
+RAUDA is a general organisation identity, not an addition to our closed counsel roster.
 """
 from __future__ import annotations
 import argparse, copy, hashlib, html, json, re, subprocess, sys, time
@@ -21,7 +22,8 @@ ANCHOR = 'cuatrecasas-rauda-revision-20260905'
 SITE = 'https://sbu001monterecco.github.io/por-derecho/'
 CANON = 'assets/data/la-laguna-proceeding-pages-v1.json'
 IDENTITY = 'assets/data/matter-identity-registry-v1.json'
-ORG = 'assets/data/matter-identity-registry-v1.professional-organisations.json'
+ORG = 'assets/data/matter-identity-registry-v1.organisations.json'
+PRO_ROSTER = 'assets/data/matter-identity-registry-v1.professional-organisations.json'
 INSTITUTIONAL = 'assets/data/institutional-communications-register-v1.json'
 AUDIT = 'ops/CUATRECASAS_RAUDA_RELEASE_20260905.json'
 NOTE = 'ops/CUATRECASAS_RAUDA_CONTINUITY_20260905.md'
@@ -145,6 +147,7 @@ def navigation(lang):
 
 def outputs():
     out,rid=identity_outputs();out[CANON]=canonical_output(rid)
+    out[PRO_ROSTER]=original(PRO_ROSTER)
     out[CSS]='.pd-cr-review,.pd-cr-crosslink{overflow-wrap:anywhere;scroll-margin-top:7rem}.pd-cr-review .tablewrap{max-width:100%;overflow-x:auto}.pd-cr-review table{width:100%;border-collapse:collapse;table-layout:fixed}.pd-cr-review th,.pd-cr-review td{padding:.8rem;vertical-align:top;text-align:left;border-bottom:1px solid currentColor}.pd-cr-review .pd-cr-source{padding:.35rem 0;scroll-margin-top:7rem}.pd-cr-review .pd-cr-links{line-height:1.9}.pd-cr-jump{padding:.6rem 0}.pd-cr-review .record{max-width:100%}@media(max-width:600px){.pd-cr-review th{width:32%}.pd-cr-review td,.pd-cr-review th{padding:.5rem;font-size:.95rem}}\n'
     page_audit=[]
     for es,en,kind in PAIRS:
@@ -176,7 +179,7 @@ def outputs():
 Control: {CONTROL}. Source state: PREPARED_PENDING_MERGE. Actual PR, merge, Pages and live evidence belong in Issue #1428 and the release PR, not in a self-certifying source claim.
 
 ## Scope and authoritative records
-The English and Spanish source fragments supply the public-safe substantive update. Existing page text, images, links, identities and procedural facts are preserved. The existing La Laguna specialist control now indexes the two original private-professional recovery communications as PD-CR-COM-20220218 and PD-CR-COM-20220307. It reuses PD-ETJ163-FIL-20260903, PD-DP748-ACT-004 and PD-DP748-NOT-001; it does not create duplicate judicial acts or recast email forwarding as filing. The 333-row institutional register remains byte-identical because private recovery correspondence is not an institutional notice. RAUDA is identity {rid}, source-literal only, exact legal entity pending; no caret upgrade.
+The English and Spanish source fragments supply the public-safe substantive update. Existing page text, images, links, identities and procedural facts are preserved. The existing La Laguna specialist control now indexes the two original private-professional recovery communications as PD-CR-COM-20220218 and PD-CR-COM-20220307. It reuses PD-ETJ163-FIL-20260903, PD-DP748-ACT-004 and PD-DP748-NOT-001; it does not create duplicate judicial acts or recast email forwarding as filing. The 333-row institutional register remains byte-identical because private recovery correspondence is not an institutional notice. RAUDA is identity {rid}, source-literal only, exact legal entity pending; no caret upgrade. It belongs to the general organisation registry, not the closed roster of our former/current professional organisations, which remains byte-identical.
 
 ## Evidential and private boundaries
 The 2022 collection role was disclosed. There is no newly proved advisory mandate for RAUDA, debt purchase, completed adjudication, cessionary, common plan, automatic stay or final liability. The July provisional dismissal and the opponent's substantive countercase remain visible. Fincas 8584/8588, companies, estates, clients, note makers and judgment debtors remain separate. Wider harm needs right-specific causation and valuation.
@@ -217,12 +220,14 @@ def verify(out):
                 if u.fragment and target.suffix=='.html':assert unquote(u.fragment) in Parser(target.read_text()).ids,'Missing anchor '+href
                 checks+=1
     assert (ROOT/INSTITUTIONAL).read_text()==original(INSTITUTIONAL);checks+=1
+    assert (ROOT/PRO_ROSTER).read_text()==original(PRO_ROSTER);checks+=1
     old=json.loads(original(CANON));new=json.loads(out[CANON])
     for key,value in old.items():assert new[key]==value,'Existing canonical field modified '+key;checks+=1
     old=json.loads(original(ORG));new=json.loads(out.get(ORG,original(ORG)))
     assert new['records'][:len(old['records'])]==old['records'];checks+=1
     for name in [IDENTITY,ORG,CANON]:json.loads((ROOT/name).read_text());checks+=1
-    print(json.dumps({'result':'SCOPED_PASS','checks':checks,'managed_pages':len(PAIRS)*2,'institutional_events_preserved':333,'no_private_payload':True}))
+    subprocess.run([sys.executable,'scripts/validate_legal_professional_register.py'],cwd=ROOT,check=True);checks+=1
+    print(json.dumps({'result':'SCOPED_PASS','checks':checks,'managed_pages':len(PAIRS)*2,'institutional_events_preserved':333,'no_private_payload':True,'closed_professional_roster_preserved':True}))
 
 def live(out):
     audit=json.loads(out[AUDIT]);pending={r['path']:r for r in audit['pages']};pending[AUDIT]=None;head=git('rev-parse','HEAD');deadline=time.monotonic()+600
