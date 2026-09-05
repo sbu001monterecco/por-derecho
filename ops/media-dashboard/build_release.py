@@ -24,7 +24,8 @@ def outputs(root=ROOT):
         meta=(f'<link rel="canonical" href="{BASE}{route}">\n'
               f'<link rel="alternate" hreflang="{lang}" href="{BASE}{route}">\n'
               f'<link rel="alternate" hreflang="{other}" href="{BASE}{ROUTES[other]}">\n'
-              '<link rel="stylesheet" href="../../assets/media-desk.css">')
+              '<link rel="stylesheet" href="../../assets/media-desk.css">\n'
+              '<script src="../../assets/media-desk.js" defer></script>')
         text=owned(text,'head',meta,'</head>')
         template=(root/f'ops/media-dashboard/section-{lang}.html').read_text(encoding='utf-8')
         target='<section class="section"><div class="shell"><h2>'+('Prioridad 1 · mensaje abierto ahora' if lang=='es' else 'Priority 1 · open message now')+'</h2>'
@@ -48,7 +49,6 @@ def outputs(root=ROOT):
     for lang,route in ROUTES.items():
         if f'<loc>{BASE}{route}</loc>' not in text:
             other='en' if lang=='es' else 'es'
-            # Do not change the tail whitespace of the last inherited XML node.
             row=f'<url><loc>{BASE}{route}</loc><lastmod>2026-09-05</lastmod><xhtml:link rel="alternate" hreflang="{lang}" href="{BASE}{route}"/><xhtml:link rel="alternate" hreflang="{other}" href="{BASE}{ROUTES[other]}"/></url>\n'
             text=text.replace('</urlset>',row+'</urlset>')
     result[path]=text

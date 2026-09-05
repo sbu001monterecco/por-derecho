@@ -19,26 +19,30 @@ try:
     desk=page.locator('#media-desk');assert desk.count()==1
     assert page.locator('#media-desk article.card').count()==6
     assert page.locator('#media-desk form,#media-desk input,#media-desk script,#media-desk iframe').count()==0
-    assert page.locator('#lpb-concurso-overreach-note').count()==1, 'Preserve inherited note'
-    assert desk.locator('#lpb-concurso-overreach-note').count()==0, 'Do not inject inherited note into new heading'
+    assert page.locator('#lpb-concurso-overreach-note').count()==1,'Preserve inherited note'
+    assert desk.locator('#lpb-concurso-overreach-note').count()==0,'Keep inherited note outside new desk'
     overflow=page.evaluate('document.documentElement.scrollWidth > innerWidth + 2');assert not overflow
     assert response.status==200
-    if width<=650:assert not page.locator('.main-nav').is_visible(), 'Mobile menu must start closed'
+    if width<=650:assert not page.locator('.main-nav').is_visible(),'Mobile menu must start closed'
     initial_heading=page.locator('#media-desk-title').bounding_box();header=page.locator('.site-header').bounding_box()
     page.screenshot(path=str(OUT/f'{route[:2]}-{width}-initial-fragment.png'),full_page=False)
-    initial={'route':route,'width':width,'heading':initial_heading,'header':header,'section':desk.bounding_box()}
-    (OUT/f'{route[:2]}-{width}-initial-geometry.json').write_text(json.dumps(initial,indent=2))
+    (OUT/f'{route[:2]}-{width}-initial-geometry.json').write_text(json.dumps({'route':route,'width':width,'heading':initial_heading,'header':header,'section':desk.bounding_box()},indent=2))
     assert visible_heading(initial_heading,header,height),'Direct hash landing does not expose heading'
-    # Also test a later explicit fragment navigation without smooth-animation screenshots.
-    page.evaluate("document.querySelector('#media-desk').scrollIntoView({block:'start',behavior:'instant'})")
-    page.wait_for_timeout(1000)
+    # Reader scroll must cancel layout-following; do not pull the reader back.
+    page.mouse.wheel(0,350);page.wait_for_timeout(300)
+    stopped=page.evaluate('scrollY');page.wait_for_timeout(600)
+    assert abs(page.evaluate('scrollY')-stopped)<3,'Reader scroll was overridden'
+    # Exercise the actual same-fragment menu link, including mobile menu opening.
+    if width<=650:page.locator('.nav-toggle').click()
+    page.locator('.main-nav a[href="#media-desk"]').click();page.wait_for_timeout(700)
+    if width<=650:assert not page.locator('.main-nav').is_visible(),'Mobile menu did not close after selection'
     heading=page.locator('#media-desk-title').bounding_box();header=page.locator('.site-header').bounding_box()
-    assert visible_heading(heading,header,height),'Explicit fragment heading obscured'
+    assert visible_heading(heading,header,height),'Selected media link did not expose heading'
     page.screenshot(path=str(OUT/f'{route[:2]}-{width}-desk-viewport.png'),full_page=False)
     desk.screenshot(path=str(OUT/f'{route[:2]}-{width}-desk-section.png'))
     page.screenshot(path=str(OUT/f'{route[:2]}-{width}.png'),full_page=True)
-    assert not errors, 'Unexpected browser JavaScript error'
-    results.append({'route':route,'width':width,'status':response.status,'overflow':overflow,'page_errors':errors,'desk_cards':6,'mobile_navigation_overlay':False if width<=650 else None,'initial_hash_heading':initial_heading,'settled_heading':heading,'sticky_header':header,'inherited_note_preserved_outside_desk':True,'direct_hash_heading_visible':True})
+    assert not errors,'Unexpected browser JavaScript error'
+    results.append({'route':route,'width':width,'status':response.status,'overflow':overflow,'page_errors':errors,'desk_cards':6,'mobile_navigation_overlay':False if width<=650 else None,'initial_hash_heading':initial_heading,'selected_link_heading':heading,'inherited_note_preserved_outside_desk':True,'direct_hash_heading_visible':True,'reader_scroll_respected':True})
     page.close()
   for route in ROUTES:
    page=browser.new_page(java_script_enabled=False,viewport={'width':390,'height':844});page.goto('http://127.0.0.1:8765/'+route+'#media-desk');page.wait_for_timeout(1000)
