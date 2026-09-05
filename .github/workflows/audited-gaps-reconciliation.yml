@@ -1,0 +1,82 @@
+name: Audited gaps reconciliation
+on:
+  push:
+    branches: ['worker/audited-gaps-reconcile-20260905']
+    paths:
+      - '.github/workflows/audited-gaps-reconciliation.yml'
+      - 'scripts/reconcile_audited_gaps_20260905.py'
+      - 'scripts/repair_audited_website_gaps_20260905.py'
+  pull_request:
+    paths:
+      - '.github/workflows/audited-gaps-reconciliation.yml'
+      - 'scripts/*audited*20260905.py'
+      - 'ops/AUDITED_GAPS_RECONCILIATION_20260905.json'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: audited-gaps-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  prepare-worker:
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/worker/audited-gaps-reconcile-20260905'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          ref: worker/audited-gaps-reconcile-20260905
+          fetch-depth: 0
+          persist-credentials: true
+      - name: Reconcile reviewed source without touching active integration
+        run: |
+          set -euo pipefail
+          git fetch --no-tags origin main:refs/remotes/origin/main worker/cr-continuity-gapclosure-20260905:refs/remotes/origin/cr-reviewed
+          test "$(git rev-parse origin/main)" = adc8c87585609709caafdd90f03ffbb4a4687d83
+          if [ -f ops/AUDITED_GAPS_RECONCILIATION_20260905.json ]; then
+            python scripts/reconcile_audited_gaps_20260905.py --check
+          else
+            python scripts/reconcile_audited_gaps_20260905.py --prepare
+          fi
+          python scripts/reconcile_audited_gaps_20260905.py --inspect > /tmp/audited-inspection.txt
+      - name: Commit only declared worker output
+        shell: python
+        run: |
+          import json,subprocess
+          from pathlib import Path
+          path='ops/AUDITED_GAPS_RECONCILIATION_20260905.json'
+          data=json.loads(Path(path).read_text())
+          allowed=[r['path'] for r in data['imported_files']]+[path]
+          assert not any(p.startswith('.github/') for p in allowed)
+          subprocess.run(['git','add','--',*allowed],check=True)
+          if subprocess.run(['git','diff','--cached','--quiet']).returncode:
+            subprocess.run(['git','config','user.name','github-actions[bot]'],check=True)
+            subprocess.run(['git','config','user.email','41898282+github-actions[bot]@users.noreply.github.com'],check=True)
+            subprocess.run(['git','commit','-m','Reconcile reviewed CR continuity with current immutable-history validation'],check=True)
+            subprocess.run(['git','push','origin','HEAD:refs/heads/worker/audited-gaps-reconcile-20260905'],check=True)
+          print('PREPARED_HEAD',subprocess.check_output(['git','rev-parse','HEAD'],text=True))
+      - name: Public-only source inspection
+        if: always()
+        run: cat /tmp/audited-inspection.txt || true
+      - uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
+        if: always()
+        with:
+          name: audited-gap-reconciliation-${{ github.run_id }}
+          path: |
+            diagnostics/audited-gaps-source-checks.json
+            /tmp/audited-inspection.txt
+          retention-days: 30
+          if-no-files-found: warn
+  check-read-only:
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - name: Source acceptance
+        run: python scripts/reconcile_audited_gaps_20260905.py --check
