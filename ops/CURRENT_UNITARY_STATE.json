@@ -232,14 +232,14 @@
   ],
   "identity_registry": {
     "registry_id": "PD-SP-IDENTITY-REGISTRY-001",
-    "control_date": "2026-09-03",
+    "control_date": "2026-09-05",
     "counts": {
-      "total": 352,
-      "PERSON": 165,
-      "ORGANISATION": 84,
-      "STRUCTURE": 11,
+      "total": 411,
+      "PERSON": 195,
+      "ORGANISATION": 105,
+      "STRUCTURE": 18,
       "INSTITUTION": 49,
-      "PROCEEDING": 43
+      "PROCEEDING": 44
     },
     "archive_backfill": "OPEN",
     "static_page_parity": "LOCAL_SOURCE_STATIC_CANDIDATE_NOT_YET_LIVE_VERIFIED",
@@ -288,9 +288,9 @@
       }
     },
     "governing_boundary": "Identity resolves identity only; it does not transfer knowledge, intention, control, benefit, responsibility or liability.",
-    "total": 352,
+    "total": 411,
     "INSTITUTION": 49,
-    "PROCEEDING": 43
+    "PROCEEDING": 44
   },
   "material_updates": {
     "canonical_source": "assets/data/material-updates-v1.json",
