@@ -29,11 +29,11 @@ jobs:
     steps:
       - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
         with:
-          fetch-depth: 60
+          fetch-depth: 0
           persist-credentials: false
       - name: Exact source, canonical preservation, safe boundaries and links
         run: |
-          git fetch --no-tags --depth=60 origin main:refs/remotes/origin/main
+          git fetch --no-tags origin main:refs/remotes/origin/main
           python scripts/build_cuatrecasas_rauda_20260905.py --check
           python scripts/complete_cuatrecasas_rauda_controls_20260905.py --check
       - name: Compare repository controls with immutable source baseline
@@ -96,7 +96,7 @@ jobs:
                     assert page.locator('.pd-cr-source').count()==4;checks+=1
                     for source in ['PD-CR-COM-20220218','PD-CR-COM-20220307','PD-CR-SOURCE-ETJ163-20260903','PD-CR-SOURCE-DP748-20260716']:
                       assert page.locator('#'+source).count()==1;checks+=1
-                    assert page.locator('.pd-cr-identity').get_attribute('data-caret-state')=='CARET_PENDING';checks+=1
+                    assert page.locator('.pd-cr-identity').get_attribute('data-caret-state')=='CARET_CONFIRMED';checks+=1
                     page.screenshot(path='/tmp/cr-'+row['path'].split('/')[0]+'-'+str(width)+'.png',full_page=False)
                 page.close()
               context=b.new_context(java_script_enabled=False,viewport={'width':390,'height':1000})
@@ -129,7 +129,7 @@ jobs:
     steps:
       - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
         with:
-          fetch-depth: 60
+          fetch-depth: 0
           persist-credentials: false
       - name: Exact public-block and release-manifest readback
         run: |
