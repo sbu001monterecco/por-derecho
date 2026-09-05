@@ -36,3 +36,7 @@ Remaining integration obligations: reconcile #1471 child readers and incoming co
 - `/en/jsp-montelanza-insolvency-liquidation/`
 
 The routes and anchors are source candidates here, not a claim that they are already live. The source/relationship JSON prepares a later visualization with separate dated lanes and documented, conditional and unproved edges. The previously rejected AI illustrations remain excluded.
+
+## Canonical handoff
+
+The exact source tree at `340fa6c6686e13371f68cd1d764e956fd184a1ef` has been reconciled into PR #1472 (`worker/jsp-canonical-dossier-20260905`) without overwriting current main or allocating duplicate JSP/Explobeach identities. Further canonical expansion and projection reconciliation belong to that candidate. This worker must not independently publish or allocate overlapping new IDs. Handoff does not certify acceptance, merge, deployment or live readback.
