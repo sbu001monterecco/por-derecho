@@ -522,7 +522,10 @@ jobs:
           watch_css = text('assets/fti-meeting-point-canary-capital-control-watch-20260827.css')
           assert '.fm-watch__table' in watch_css
 
-          site_loader = text('assets/site.js')
+          import sys
+          sys.path.insert(0, str(Path('scripts').resolve()))
+          from production_smoke_check_v2 import verified_live_loader_text
+          site_loader = verified_live_loader_text(base)
           pre_loader = text('assets/site-pre-intervencion-highlight-20260820.js')
           closure_loader = text('assets/ricpe-cnmv-closure-update-20260827.js')
           continuity_loader = text('assets/fti-meeting-point-ricpe-continuity-20260827.js')

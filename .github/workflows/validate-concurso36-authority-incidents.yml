@@ -114,7 +114,10 @@ jobs:
           crosslinks = Path('assets/concurso36-arrecife-crosslinks-20260829.js').read_text(encoding='utf-8')
           assert '/en/insolvency-36-2012-arrecife-mercantile-bridge/' in crosslinks
           assert '/es/concurso-36-2012-puente-arrecife-mercantil/' in crosslinks
-          assert 'concurso36-arrecife-crosslinks-20260829.js' in Path('assets/site.js').read_text(encoding='utf-8')
+          import sys
+          sys.path.insert(0, str(Path('scripts').resolve()))
+          from loader_graph import find_loader_path
+          assert find_loader_path('assets/site.js', 'assets/concurso36-arrecife-crosslinks-20260829.js'), 'Arrecife incident loader unreachable'
 
           ET.parse('sitemap-concurso36-controlling-conclusions.xml')
           sitemap = Path('sitemap-concurso36-controlling-conclusions.xml').read_text(encoding='utf-8')

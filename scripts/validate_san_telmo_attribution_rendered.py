@@ -98,7 +98,8 @@ forbidden = {
 
 failures = []
 for path, markers in required.items():
-    text = (ROOT / path).read_text(encoding="utf-8")
+    from loader_graph import reachable_loader_text
+    text = reachable_loader_text(root=ROOT) if path == "assets/site.js" else (ROOT / path).read_text(encoding="utf-8")
     for marker in markers:
         if marker not in text:
             failures.append(f"{path}: missing {marker!r}")

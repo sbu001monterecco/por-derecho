@@ -48,7 +48,7 @@ jobs:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           persist-credentials: false
-      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
         with:
           node-version: '22'
       - name: Syntax-check shared incident overlay
@@ -60,7 +60,10 @@ jobs:
           from pathlib import Path
 
           overlay = Path('assets/concurso36-caret-incident-overlay-20260829.js').read_text(encoding='utf-8')
-          site = Path('assets/site.js').read_text(encoding='utf-8')
+          import sys
+          sys.path.insert(0, str(Path('scripts').resolve()))
+          from loader_graph import reachable_loader_text
+          site = reachable_loader_text()
           required_overlay = (
               "[data-c36-court-record]",
               ".timeline .incident",

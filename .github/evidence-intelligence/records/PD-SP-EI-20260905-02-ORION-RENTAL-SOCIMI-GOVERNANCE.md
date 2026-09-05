@@ -12,6 +12,14 @@ Orion Rental SOCIMI was constituted in **June 2023** and therefore is **not** tr
 
 No later participant inherits knowledge, intent, responsibility or liability merely because Orion, AGM, RICPE, an investor, an auditor or a market intermediary links them into the same later corporate structure.
 
+## Architecture clarification — 5 September 2026
+
+Control: `PD-ORION-ARCH-20260905-01`. The existing bilingual platform-continuity routes are corrected to **distinct but interconnected branches**, not an independent/unconnected Orion branch and not an FMMM-only inquiry. Sections 2–8 below remain controlling and unchanged. The audited ownership, management, related-party and RICPE formation/financing links are preserved within the unitary analysis. Every edge retains its own role, date and evidential status.
+
+Documented corporate/economic connections are distinct from proof that identifiable Sun Park/MYND/LPB/Matkator assets, income, fees, guarantees, collateral or other value entered or supported Orion. The latter remains open and requires transaction-specific evidence. The June-2023 temporal limit prevents attribution of earlier acts to Orion itself; it does not erase earlier roles of subsequently connected individuals/entities. Knowledge, duty, conduct, disclosure, reliance, benefit and responsibility remain actor-specific. FMMM's existing professional inquiry, all attributed allegations, adverse/contrary records, lawful alternatives and the right of reply are preserved.
+
+Corrected routes: `/en/orion-ricpe-platform-continuity/` and `/es/orion-ricpe-continuidad/`; reciprocal explanatory links connect both to the existing Orion Rental SOCIMI dossiers. The same obsolete FMMM-only restriction is corrected in the existing bilingual Acosta Matos perimeter pages, without deleting their FMMM inquiry or their actor-specific proof warning. No new identity, event, financing figure, asset-flow finding or criminal finding is created. This clarification alone proves neither deployment nor formal service.
+
 ## 2. Primary corporate chronology
 
 1. **BORME-A-2023-137-35 / entry 328651.** Orion Rental SOCIMI was incorporated with operations beginning 16-Jun-2023. RIC Private Equity Investment Partners S.C.R. was recorded as sole shareholder and Enrique Guerra Suárez as sole administrator.

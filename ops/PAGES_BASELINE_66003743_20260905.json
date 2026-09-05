@@ -1,0 +1,19 @@
+{
+  "control_id": "PD-PAGES-BASELINE-66003743-20260905",
+  "status": "PRESERVED_DEPLOYMENT_BASELINE",
+  "source_commit": "66003743d2cb3a1807c1f3765c530bf639857da3",
+  "source_pages_run": 33963123181,
+  "source_pages_run_number": 1490,
+  "artifact_id": 9968578617,
+  "artifact_name": "github-pages",
+  "requested_archive_name": "por-derecho-main-66003743-pages.zip",
+  "zip_size_bytes": 385959241,
+  "zip_sha256": "7e9399e1225364dc6c1f157d2db198797c2d39970e90d1192ab996e3b1818d64",
+  "archive_member": "artifact.tar",
+  "artifact_tar_size_bytes": 547891200,
+  "artifact_tar_sha256": "e343aa246a17babb87b69fd3b590299fe78377689bbac50b0c4851814e0992a4",
+  "role_in_release": "PRESERVATION_AND_NON_REGRESSION_BASELINE",
+  "publication_rule": "The archive is a successful GitHub Pages build artifact for the identified source commit. It is not a separate merits source and is not imported as a stale replacement for current main. Current publication must preserve/reconcile its public surface and then generate a fresh Pages artifact from the merged current release.",
+  "binary_handling": "The 385,959,241-byte Pages ZIP is retained as the identified GitHub Actions artifact/download and release-verification input rather than committed as a normal repository blob. Its identity is locked by run, artifact ID, byte size and SHA-256.",
+  "authority_boundary": "This record authorises repository/site publication only. It does not send email, submit REG-AGE/RedSARA, sign a filing or contact an authority."
+}

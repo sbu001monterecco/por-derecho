@@ -1,0 +1,51 @@
+name: Media dashboard read-only source audit
+on:
+  push:
+    branches: [worker/media-dashboard-plan-20260905]
+    paths: [.github/workflows/media-dashboard-audit.yml]
+permissions:
+  contents: read
+concurrency:
+  group: media-dashboard-source-audit-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - name: Collect public-tree inventory and bounded source bundle
+        run: |
+          python3 - <<'PY'
+          import json, pathlib, re, subprocess, zipfile
+          root=pathlib.Path('.')
+          out=pathlib.Path('/tmp/media-source-audit'); out.mkdir()
+          paths=subprocess.check_output(['git','ls-files'],text=True).splitlines()
+          selected=set()
+          exact=['AGENTS.md','CHATGPT_START_HERE.md','EMAIL_SEND_FINAL_AUTHORIZATION_RULE.md','MEDIA_CAMPAIGN_NEW_THREAD_START.md','CHATBOT_MEDIA_INQUIRY_DESK_CONTROL_28AUG2026.md','ops/REPOSITORY_PRESERVATION_CONTRACT.json','ops/CURRENT_COLLABORATION_STATE.json','ops/CURRENT_STATE.json','archive/OUTBOUND_WEBSITE_LINK_MANDATORY_RULE_23AUG2026.md','archive/OUTBOUND_MEDIA_CORE_PACKAGE_MANDATORY_RULE_23AUG2026.md','archive/PRE_SEND_GMAIL_PERSON_OUTLET_HISTORY_GATE_23AUG2026.md','archive/MAXIMUM_MEDIA_DISTRIBUTION_MULTI_RECIPIENT_RULE_23AUG2026.md','archive/UNIVERSAL_PUBLICATION_AND_THREAD_DELETION_SAFETY_PROTOCOL_18AUG2026.md','es/index.html','en/index.html','es/contacto/index.html','en/contact/index.html']
+          selected.update(p for p in exact if p in paths)
+          for p in paths:
+            if p.startswith('ops/media-dashboard/'): selected.add(p)
+            if p.startswith('scripts/') and p.endswith('.py') and re.search(r'(publication|preservation|audience|search|sitemap|media|source.*route)',p,re.I): selected.add(p)
+            if p.startswith('assets/') and p.endswith(('.js','.css')) and re.search(r'(nav|footer|main|site|style|audience)',p,re.I): selected.add(p)
+            if re.fullmatch(r'(es|en)/[^/]*(media|medios|prensa|press|journal|collabora|colabora)[^/]*/index\.html',p,re.I): selected.add(p)
+            if re.fullmatch(r'(es|en)/(medios|media|press|prensa)\.html',p,re.I): selected.add(p)
+            if p.endswith('.xml') and 'sitemap' in p and p.count('/')<2: selected.add(p)
+            if p.startswith(('.github/governance/','.github/workflows/')) and re.search(r'(publication|media|search|deploy|audience)',p,re.I): selected.add(p)
+            if p.startswith(('assets/data/','data/','ops/')) and p.endswith('.json') and re.search(r'(search-registry|site-search|audience-routes|sitemap|route-registry)',p,re.I): selected.add(p)
+          meta={'head':subprocess.check_output(['git','rev-parse','HEAD'],text=True).strip(),'files':paths,'selected':sorted(selected),'media_candidates':[p for p in paths if re.search(r'(media|medios|prensa|press|journal)',p,re.I)],'index_candidates':[p for p in paths if re.search(r'(search|sitemap|navigation|audience)',p,re.I)],'interpretation':'Inventory only. Diagnostic execution success is not site acceptance or deployment.'}
+          (out/'inventory.json').write_text(json.dumps(meta,ensure_ascii=False,indent=2))
+          with zipfile.ZipFile(out/'public-source-context.zip','w',zipfile.ZIP_DEFLATED) as z:
+            for p in sorted(selected):
+              f=pathlib.Path(p)
+              if f.is_file() and f.stat().st_size<2000000: z.write(f,p)
+          print(json.dumps({'head':meta['head'],'media_candidates':meta['media_candidates'],'selected_file_count':len(selected)},indent=2))
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: media-source-context
+          path: /tmp/media-source-audit/
+          retention-days: 7

@@ -52,8 +52,8 @@ def changed_files() -> list[str]:
             stderr=subprocess.DEVNULL,
         )
         return [line.strip() for line in out.splitlines() if line.strip()]
-    except Exception:
-        return []
+    except Exception as exc:
+        raise RuntimeError("Cannot validate the declared Git comparison range") from exc
 
 
 def load_manifests(errors: list[str]) -> list[tuple[Path, dict]]:
@@ -418,5 +418,6 @@ def main() -> int:
     return 0
 
 
-if __name__ == "__main__":
-    sys.exit(main())
+if __name__ == '__main__':
+    from validate_publication_integrity_v2 import main as schema_aware_main
+    raise SystemExit(schema_aware_main())

@@ -127,6 +127,17 @@
       "priority": "P1",
       "question_es": "Fijar la entidad Actyus exacta, jurisdicción, función y relación contractual con Andbank y el proyecto.",
       "question_en": "Fix the exact Actyus entity, jurisdiction, function and contractual relationship with Andbank and the project."
+    },
+    {
+      "id": "PD-SP-O-0084",
+      "priority": "P1",
+      "question_es": "Identificar la entidad jurídica y forma social exactas de RAUDA que intervinieron en el recobro de 2022; separar marca, empleador de los profesionales, mandante, titular del crédito y cualquier eventual cesionario. No inferir mandato anterior, adquisición ni responsabilidad.",
+      "question_en": "Identify the exact RAUDA legal entity and legal form involved in 2022 recovery; distinguish brand, professionals employer, instructing party, debt owner and any eventual cessionary. Do not infer an earlier mandate, acquisition or liability.",
+      "source_controls": [
+        "PD-CR-COM-20220218",
+        "PD-CR-COM-20220307"
+      ],
+      "review_control": "PD-CR-20260905-01"
     }
   ],
   "proceeding_identity_corrections": [
@@ -189,27 +200,43 @@
   ],
   "distinction_controls": [
     {
-      "ids": ["PD-SP-P-0004", "PD-SP-O-0012"],
+      "ids": [
+        "PD-SP-P-0004",
+        "PD-SP-O-0012"
+      ],
       "reason_es": "Asunción Aizpurúa Sánchez no es la sociedad Roque Prieto, S.L.",
       "reason_en": "Asunción Aizpurúa Sánchez is not Roque Prieto, S.L."
     },
     {
-      "ids": ["PD-SP-P-0006", "PD-SP-P-0047"],
+      "ids": [
+        "PD-SP-P-0006",
+        "PD-SP-P-0047"
+      ],
       "reason_es": "Esteban López Noriega no es Luis Miguel López.",
       "reason_en": "Esteban López Noriega is not Luis Miguel López."
     },
     {
-      "ids": ["PD-SP-O-0007", "PD-SP-O-0008"],
+      "ids": [
+        "PD-SP-O-0007",
+        "PD-SP-O-0008"
+      ],
       "reason_es": "CAM, S.A. y la referencia CAM, S.L. no deben fusionarse hasta resolver la forma jurídica.",
       "reason_en": "CAM, S.A. and the CAM, S.L. reference must not be merged until legal form is resolved."
     },
     {
-      "ids": ["PD-SP-O-0022", "PD-SP-O-0023", "PD-SP-O-0024"],
+      "ids": [
+        "PD-SP-O-0022",
+        "PD-SP-O-0023",
+        "PD-SP-O-0024"
+      ],
       "reason_es": "Pamanil, Pamalexsha y Noalpa son entidades distintas aunque existan personas o funciones conectadas.",
       "reason_en": "Pamanil, Pamalexsha and Noalpa are distinct entities despite connected people or functions."
     },
     {
-      "ids": ["PD-SP-P-0013", "PD-SP-P-0094"],
+      "ids": [
+        "PD-SP-P-0013",
+        "PD-SP-P-0094"
+      ],
       "reason_es": "Gerardo Nicanor Acosta Armas, padre/fundador, no es Gerardo Zacarías Acosta Matos, hijo y uno de los cuatro hermanos identificados por Gil en la imagen.",
       "reason_en": "Gerardo Nicanor Acosta Armas, the father/founder, is not Gerardo Zacarías Acosta Matos, the son/sibling in the four-sibling image attribution."
     }
@@ -298,18 +325,90 @@
     }
   ],
   "extension_namespaces": [
-    {"type": "SOURCE", "pattern": "PD-SP-SRC-####", "purpose_es": "Fuente o contenedor de origen", "purpose_en": "Source or originating container", "status": "POLICY_DEFINED"},
-    {"type": "DOCUMENT", "pattern": "PD-SP-DOC-####", "purpose_es": "Documento individual", "purpose_en": "Individual document", "status": "POLICY_DEFINED"},
-    {"type": "MATTER", "pattern": "PD-SP-MAT-####", "purpose_es": "Materia o submateria", "purpose_en": "Matter or sub-matter", "status": "POLICY_DEFINED"},
-    {"type": "EVENT", "pattern": "PD-SP-EVT-####", "purpose_es": "Evento cronológico", "purpose_en": "Chronological event", "status": "POLICY_DEFINED"},
-    {"type": "PROPOSITION", "pattern": "PD-SP-PROP-####", "purpose_es": "Proposición probatoria", "purpose_en": "Evidentiary proposition", "status": "POLICY_DEFINED"},
-    {"type": "ASSET", "pattern": "PD-SP-ASSET-####", "purpose_es": "Activo o finca controlada", "purpose_en": "Controlled asset or property", "status": "POLICY_DEFINED"},
-    {"type": "RIGHT", "pattern": "PD-SP-RIGHT-####", "purpose_es": "Derecho o facultad", "purpose_en": "Right or entitlement", "status": "POLICY_DEFINED"},
-    {"type": "RECOVERY_OBJECT", "pattern": "PD-SP-REC-####", "purpose_es": "Objeto de recuperación", "purpose_en": "Recovery object", "status": "POLICY_DEFINED"},
-    {"type": "CITATION", "pattern": "PD-SP-CIT-####", "purpose_es": "Cita y localización", "purpose_en": "Citation and locator", "status": "POLICY_DEFINED"},
-    {"type": "EVALUATION", "pattern": "PD-SP-EVAL-####", "purpose_es": "Evaluación o grado", "purpose_en": "Evaluation or grade", "status": "POLICY_DEFINED"},
-    {"type": "CUSTODY_MANIFEST", "pattern": "PD-SP-CUST-####", "purpose_es": "Resumen público de custodia", "purpose_en": "Public custody summary", "status": "POLICY_DEFINED"},
-    {"type": "RETRIEVAL_RUN", "pattern": "PD-SP-RUN-####", "purpose_es": "Ejecución de recuperación", "purpose_en": "Retrieval run", "status": "POLICY_DEFINED"}
+    {
+      "type": "SOURCE",
+      "pattern": "PD-SP-SRC-####",
+      "purpose_es": "Fuente o contenedor de origen",
+      "purpose_en": "Source or originating container",
+      "status": "POLICY_DEFINED"
+    },
+    {
+      "type": "DOCUMENT",
+      "pattern": "PD-SP-DOC-####",
+      "purpose_es": "Documento individual",
+      "purpose_en": "Individual document",
+      "status": "POLICY_DEFINED"
+    },
+    {
+      "type": "MATTER",
+      "pattern": "PD-SP-MAT-####",
+      "purpose_es": "Materia o submateria",
+      "purpose_en": "Matter or sub-matter",
+      "status": "POLICY_DEFINED"
+    },
+    {
+      "type": "EVENT",
+      "pattern": "PD-SP-EVT-####",
+      "purpose_es": "Evento cronológico",
+      "purpose_en": "Chronological event",
+      "status": "POLICY_DEFINED"
+    },
+    {
+      "type": "PROPOSITION",
+      "pattern": "PD-SP-PROP-####",
+      "purpose_es": "Proposición probatoria",
+      "purpose_en": "Evidentiary proposition",
+      "status": "POLICY_DEFINED"
+    },
+    {
+      "type": "ASSET",
+      "pattern": "PD-SP-ASSET-####",
+      "purpose_es": "Activo o finca controlada",
+      "purpose_en": "Controlled asset or property",
+      "status": "POLICY_DEFINED"
+    },
+    {
+      "type": "RIGHT",
+      "pattern": "PD-SP-RIGHT-####",
+      "purpose_es": "Derecho o facultad",
+      "purpose_en": "Right or entitlement",
+      "status": "POLICY_DEFINED"
+    },
+    {
+      "type": "RECOVERY_OBJECT",
+      "pattern": "PD-SP-REC-####",
+      "purpose_es": "Objeto de recuperación",
+      "purpose_en": "Recovery object",
+      "status": "POLICY_DEFINED"
+    },
+    {
+      "type": "CITATION",
+      "pattern": "PD-SP-CIT-####",
+      "purpose_es": "Cita y localización",
+      "purpose_en": "Citation and locator",
+      "status": "POLICY_DEFINED"
+    },
+    {
+      "type": "EVALUATION",
+      "pattern": "PD-SP-EVAL-####",
+      "purpose_es": "Evaluación o grado",
+      "purpose_en": "Evaluation or grade",
+      "status": "POLICY_DEFINED"
+    },
+    {
+      "type": "CUSTODY_MANIFEST",
+      "pattern": "PD-SP-CUST-####",
+      "purpose_es": "Resumen público de custodia",
+      "purpose_en": "Public custody summary",
+      "status": "POLICY_DEFINED"
+    },
+    {
+      "type": "RETRIEVAL_RUN",
+      "pattern": "PD-SP-RUN-####",
+      "purpose_es": "Ejecución de recuperación",
+      "purpose_en": "Retrieval run",
+      "status": "POLICY_DEFINED"
+    }
   ],
   "public_routes": {
     "es": "/es/registro-identidad-materia/",
