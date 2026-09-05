@@ -1,0 +1,23 @@
+/* Scoped documentary press desk. No external fonts, tracking or submissions. */
+.media-desk{background:#f3f6f8;color:#183448;padding:3rem 0;overflow-wrap:anywhere}
+.media-desk>.shell{width:min(1120px,calc(100% - 36px));margin-inline:auto}
+.media-desk h2{font-size:clamp(1.65rem,4vw,2.6rem);line-height:1.16;max-width:900px;margin:.55rem 0 1rem}
+.media-desk-lead{font-size:1.06rem;line-height:1.65;max-width:940px}
+.media-desk a{color:#005d73;text-decoration:underline;text-underline-offset:3px}
+.media-desk a:focus-visible,.media-desk summary:focus-visible{outline:3px solid #a44b00;outline-offset:4px}
+.media-desk-steps{display:flex;flex-wrap:wrap;gap:.65rem;margin:1.4rem 0 1.7rem}
+.media-desk-steps a{padding:.6rem .9rem;border:1px solid #bdcfd8;border-radius:7px;background:#fff;font-weight:650}
+.media-desk-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem}
+.media-desk-card{display:flex;flex-direction:column;padding:1.4rem;border:1px solid #cedce4;border-radius:12px;background:#fff;min-width:0}
+.media-desk-label{font-size:.7rem;letter-spacing:.07em;font-weight:750;color:#496475}
+.media-desk-card h3{font-size:1.14rem;line-height:1.35;margin:.6rem 0}
+.media-desk-card p{line-height:1.6;margin:0 0 1.1rem}
+.media-desk-card a{margin-top:auto;font-weight:650}
+.media-desk-boundary{margin-top:1.4rem;border-left:4px solid #ac5d1a;padding:1.1rem 1.4rem;background:#fff7ed;border-radius:0 9px 9px 0;line-height:1.65}
+.media-desk-boundary h3{margin:.1rem 0 .7rem}
+.media-desk-next{margin:1.4rem 0;padding:1rem 1.2rem;background:#fff;border:1px solid #cedce4;border-radius:9px;line-height:1.6}
+.media-desk-next summary{font-weight:750;cursor:pointer}
+.media-desk-history{font-size:.86rem;line-height:1.65;color:#405b6c}
+@media(max-width:900px){.media-desk-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:600px){.media-desk{padding:2rem 0}.media-desk-grid{grid-template-columns:1fr}.media-desk-card{padding:1.2rem}.media-desk-steps{display:grid;grid-template-columns:1fr}.media-desk-boundary{padding:1rem}}
+@media print{.media-desk-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.media-desk-card{break-inside:avoid}.media-desk{background:#fff;padding:0}.media-desk-next{display:block}}
