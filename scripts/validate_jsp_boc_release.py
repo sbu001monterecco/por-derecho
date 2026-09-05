@@ -97,7 +97,12 @@ def main():
                         r=page.goto(base+route,wait_until='networkidle',timeout=60000);require(r.status==200,'page status')
                         require(page.locator('[data-full-section]').count()==6,'six full sections actually rendered');require(page.locator('#qualified-witnesses .witness').count()==22,'witness reader count')
                         page.locator('#boc-308-07').scroll_into_view_if_needed()
-                        for im in page.locator('#boc-308-07 img').all():im.scroll_into_view_if_needed();require(im.evaluate('(i)=>i.complete&&i.naturalWidth>0'),'BOC source image decodes')
+                        for im in page.locator('#boc-308-07 img').all():
+                            im.scroll_into_view_if_needed()
+                            # Native lazy loading is asynchronous, especially in Firefox.
+                            # Wait for completion but still fail on HTTP/decode errors or timeout.
+                            page.wait_for_function('(i)=>i.complete',arg=im.element_handle(),timeout=15000)
+                            require(im.evaluate('async(i)=>{if(!i.naturalWidth)return false;try{await i.decode();return i.complete&&i.naturalWidth>0;}catch(e){return false;}}'),'BOC source image decodes')
                         for n in range(1,7):require(page.locator('#background-'+str(n)).inner_text().strip(),'full section visible')
                         broken=page.evaluate('''() => [...document.querySelectorAll('#jsp-boc-six-sections a[href]')].filter(a=>a.hash&&a.origin===location.origin&&a.pathname===location.pathname&&!document.getElementById(decodeURIComponent(a.hash.slice(1)))).map(a=>a.href)''');require(not broken,'in-page source anchors '+str(broken))
                         require(page.evaluate('document.documentElement.scrollWidth<=innerWidth+2'),'no horizontal overflow')
