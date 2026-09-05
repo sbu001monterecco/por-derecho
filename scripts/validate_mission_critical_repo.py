@@ -66,6 +66,7 @@ REQUIRED_FILES = [
     "deployment-probes/mission-critical-hardening-20260818.json",
 ]
 ALLOWED_WRITE = {
+    "publication-controller.yml": {"contents"},
     "verify-pages-propagation-optimum.yml": {"statuses"},
     "verify-mission-critical-hardening-live.yml": {"statuses"},
     "verify-ricpe-channel-status-live.yml": {"statuses"},
@@ -128,7 +129,15 @@ def validate_workflows(errors: list[str]) -> None:
 
         writes = set(WRITE_SCOPE.findall(text))
         if "contents" in writes:
-            error(f"{rel}: contents: write is prohibited for production workflows", errors)
+            if path.name != "publication-controller.yml":
+                error(f"{rel}: contents: write is prohibited for production workflows", errors)
+            else:
+                for marker in ("issue_comment:", "github.event.issue.number == 1428", "author_association == 'OWNER'", "ref: main", "persist-credentials: false", "cancel-in-progress: false", "queue: max", "python3 scripts/pd_release_controller.py"):
+                    if marker not in text:
+                        error(f"{rel}: state-only controller lost guard: {marker}", errors)
+                for forbidden in ("pull_request:", "pull_request_target:", "git push", "gh pr merge", "persist-credentials: true"):
+                    if forbidden in text:
+                        error(f"{rel}: unsafe state-only controller command: {forbidden}", errors)
         unexpected = writes - ALLOWED_WRITE.get(path.name, set())
         if unexpected:
             error(f"{rel}: unexpected write permission(s): {sorted(unexpected)}", errors)

@@ -1,0 +1,61 @@
+{
+  "schema": "por-derecho.release-automation-status.v1",
+  "control_id": "PD-MTCP-20260904-01",
+  "preparation_base": "adc8c87585609709caafdd90f03ffbb4a4687d83",
+  "status_semantics": "This is a source contract and recovery register, not a live-deployment attestation. Actual state is issue1428, current main, Actions and pd-publication-state.",
+  "controller": "scripts/pd_release_controller.py",
+  "acceptance": "scripts/check_release_acceptance.py",
+  "runtime_state_branch": "pd-publication-state",
+  "exclusive_server_enforcement": false,
+  "administration_dependency": "REQUIRES_ADMINISTRATION_WRITE_AND_NEGATIVE_MERGE_TEST",
+  "prior_release": {
+    "pr": 1468,
+    "merge_sha": "adc8c87585609709caafdd90f03ffbb4a4687d83",
+    "pages_run_id": 33975706751,
+    "readback_resources": 8,
+    "pending_resources": 0,
+    "scope": "Historical observation: eight scoped resources, not the entire website or all CI. Contradictory later chat claim is superseded."
+  },
+  "open_work": [
+    {
+      "id": "PD-P0-CAIXABANK-PUBLIC-COPIES",
+      "priority": "P0",
+      "owner": "worker/caixabank-360-audit-20260905",
+      "state": "SOURCE_REMEDIATION_REVIEW_REQUIRED",
+      "evidence_comment": 5553074711,
+      "closure": "Reviewed actual safe derivatives, decode/route/mobile tests, controlled source-copy replacement and anonymous-share readback. Never publish private originals from a summary."
+    },
+    {
+      "id": "PD-CR-1467-INTEGRATION",
+      "priority": "P1",
+      "owner": "active integrator",
+      "state": "RECONCILE_AFTER_CONTROLLER_REPAIR",
+      "closure": "Reuse exact reviewed 58 controls/seven open proof obligations; exclude historical-manifest rewrite; rerun current-main acceptance and live verification."
+    },
+    {
+      "id": "PD-URIA-ID-COLLISION",
+      "priority": "P1",
+      "owner": "Ur\u00eda worker / canonical allocator",
+      "state": "BLOCKED_COLLISION_RECONCILIATION",
+      "prs": [
+        1452,
+        1453
+      ],
+      "closure": "Preserve RAUDA PD-SP-O-0084; allocate unused ID for the separate entity; update all dependent records and validate. No global ambiguous alias."
+    },
+    {
+      "id": "PD-SERVER-MERGE-ENFORCEMENT",
+      "priority": "P1",
+      "owner": "authorized repository administrator",
+      "state": "CAPABILITY_BLOCKED",
+      "closure": "Require trusted exact acceptance checks and restrict alternative publication paths; confirm with settings readback and a negative merge test."
+    },
+    {
+      "id": "PD-SPECIALIST-SOURCE-CONTRACTS",
+      "priority": "P1",
+      "state": "SEPARATE_CURRENT_MAIN_RECONCILIATION_REQUIRED",
+      "closure": "CNMV managed sections, Alberto/Meeting Point current projections, canonical occurrence defects and historical observations must be fixed in separately validated source deltas, not by suppressing failures."
+    }
+  ],
+  "release_scope": "Automation-only: fail-closed aggregation, semantic finding comparison, canonical ID stability, cooperative atomic permits and recoverable exact deployment readback. No specialist page or source changes."
+}
