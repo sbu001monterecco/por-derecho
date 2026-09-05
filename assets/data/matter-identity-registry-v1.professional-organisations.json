@@ -1,1 +1,80 @@
-{"schema":"por-derecho.matter-identity-registry.part.v1","registry_id":"PD-SP-IDENTITY-REGISTRY-001","type":"ORGANISATION","records":[{"id":"PD-SP-O-0061","type":"ORGANISATION","name":"Sixto Abogados"},{"id":"PD-SP-O-0062","type":"ORGANISATION","name":"Carlos Llamas Legal Compliance","aliases":["Carlos Llamas Sanz independent practice"]},{"id":"PD-SP-O-0063","type":"ORGANISATION","name":"Gallego Abogados"},{"id":"PD-SP-O-0064","type":"ORGANISATION","name":"DWF-RCD / Rousaud Costas Duran professional perimeter","aliases":["DWF-RCD","RCD","Rousaud Costas Duran"]},{"id":"PD-SP-O-0065","type":"ORGANISATION","name":"Del Rosal, Adame & Segrelles","aliases":["DRAS","DRAS Abogados"]},{"id":"PD-SP-O-0066","type":"ORGANISATION","name":"DPM Abogados"},{"id":"PD-SP-O-0070","type":"ORGANISATION","name":"AUREN REESTRUCTURACIONES SLP","routes":{"es":"/es/cuaderno-juridico/meeting-point-357-2024-trazabilidad-judicial/#documentos","en":"/en/legal-notebook/meeting-point-357-2024-judicial-traceability/#documents"},"identity_resolution":"CARET_CONFIRMED","related_perimeter_id":"PD-SP-O-0046","capacity_boundary":"Exact entity appointed in signed Auto 97/2025; identity does not establish mandate scope, received material, knowledge or disclosure"}]}
+{
+  "schema": "por-derecho.matter-identity-registry.part.v1",
+  "registry_id": "PD-SP-IDENTITY-REGISTRY-001",
+  "type": "ORGANISATION",
+  "records": [
+    {
+      "id": "PD-SP-O-0061",
+      "type": "ORGANISATION",
+      "name": "Sixto Abogados"
+    },
+    {
+      "id": "PD-SP-O-0062",
+      "type": "ORGANISATION",
+      "name": "Carlos Llamas Legal Compliance",
+      "aliases": [
+        "Carlos Llamas Sanz independent practice"
+      ]
+    },
+    {
+      "id": "PD-SP-O-0063",
+      "type": "ORGANISATION",
+      "name": "Gallego Abogados"
+    },
+    {
+      "id": "PD-SP-O-0064",
+      "type": "ORGANISATION",
+      "name": "DWF-RCD / Rousaud Costas Duran professional perimeter",
+      "aliases": [
+        "DWF-RCD",
+        "RCD",
+        "Rousaud Costas Duran"
+      ]
+    },
+    {
+      "id": "PD-SP-O-0065",
+      "type": "ORGANISATION",
+      "name": "Del Rosal, Adame & Segrelles",
+      "aliases": [
+        "DRAS",
+        "DRAS Abogados"
+      ]
+    },
+    {
+      "id": "PD-SP-O-0066",
+      "type": "ORGANISATION",
+      "name": "DPM Abogados"
+    },
+    {
+      "id": "PD-SP-O-0070",
+      "type": "ORGANISATION",
+      "name": "AUREN REESTRUCTURACIONES SLP",
+      "routes": {
+        "es": "/es/cuaderno-juridico/meeting-point-357-2024-trazabilidad-judicial/#documentos",
+        "en": "/en/legal-notebook/meeting-point-357-2024-judicial-traceability/#documents"
+      },
+      "identity_resolution": "CARET_CONFIRMED",
+      "related_perimeter_id": "PD-SP-O-0046",
+      "capacity_boundary": "Exact entity appointed in signed Auto 97/2025; identity does not establish mandate scope, received material, knowledge or disclosure"
+    },
+    {
+      "id": "PD-SP-O-0084",
+      "type": "ORGANISATION",
+      "name": "RAUDA",
+      "aliases": [
+        "Rauda"
+      ],
+      "status": "CONTROLLED_PERIMETER_LABEL_EXACT_ENTITY_MAY_REQUIRE_SOURCE",
+      "identity_resolution": "CARET_PENDING",
+      "identity_sources": [
+        "PD-CR-COM-20220218",
+        "PD-CR-COM-20220307"
+      ],
+      "routes": {
+        "es": "/es/cuatrecasas-sun-park/#cuatrecasas-rauda-revision-20260905",
+        "en": "/en/cuatrecasas-sun-park/#cuatrecasas-rauda-revision-20260905"
+      },
+      "capacity_boundary": "Source-literal professional recovery label from 2022 correspondence. Exact legal entity and legal-form history remain unverified. No original advisory mandate, ownership of the debt, purchaser identity, confidentiality misuse, group-wide knowledge or liability is inferred."
+    }
+  ]
+}
