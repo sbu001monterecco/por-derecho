@@ -1,0 +1,67 @@
+name: CNMV interim measures publication
+on:
+  push:
+    branches: ['integration/cnmv-interim-measures-20260905', main]
+    paths:
+      - '.github/workflows/cnmv-interim-measures.yml'
+      - 'scripts/build_cnmv_interim_measures_20260905.py'
+      - 'assets/data/cnmv-interim-measures-20260905.json'
+      - 'assets/cnmv-interim-measures-20260905.css'
+      - 'assets/cnmv-interim-measures-20260905.js'
+  pull_request:
+    paths:
+      - '.github/workflows/cnmv-interim-measures.yml'
+      - 'scripts/build_cnmv_interim_measures_20260905.py'
+      - 'assets/data/cnmv-interim-measures-20260905.json'
+      - 'assets/cnmv-interim-measures-20260905.css'
+      - 'assets/cnmv-interim-measures-20260905.js'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: cnmv-interim-measures-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
+      - name: Inspect canonical source and route coverage without mutation
+        shell: python
+        run: |
+          from pathlib import Path
+          import json,re,subprocess
+          print('INSPECTED_SHA',subprocess.check_output(['git','rev-parse','HEAD']).decode().strip())
+          print('ROUTES')
+          for lang in ['en','es']:
+            for p in sorted(Path(lang).glob('*/index.html')):
+              if any(x in str(p).lower() for x in ['recuper','recover','autori','authorit','cnmv','fti-tour','cuatrecasas','fiscalia','ministerio','rights','derechos']): print(p)
+          print('REGISTER_CNMV_ROWS')
+          p=Path('assets/data/institutional-communications-register-v1.json')
+          d=json.loads(p.read_text())
+          print('REGISTER_KEYS',list(d),'TOTAL',len(d.get('events',[])))
+          for e in d.get('events',[]):
+            s=json.dumps(e,ensure_ascii=False)
+            if 'cnmv' in s.lower(): print(s)
+          print('CROSSWALK_STRUCTURE')
+          c=json.loads(Path('ops/ORION_NOTICE_CANONICAL_CROSSWALK_20260905.json').read_text())
+          print(json.dumps({k:v for k,v in c.items() if k!='sources'},ensure_ascii=False))
+          print('FOOTER_CONTROL')
+          print(Path('AUTHOR_REPORTING_PERSON_ALERTADOR_FOOTER_CONTROL_22AUG2026.md').read_text())
+          print('CURRENT_BASELINE_EXCEPTIONS')
+          print(Path('ops/ORION_NOTICE_RELEASE_EXCEPTIONS_20260905.md').read_text())
+          print('PUBLICATION_SCHEMA')
+          p=Path('schemas/publication-state-manifest-v1.schema.json')
+          print(p.read_text() if p.exists() else 'schema path absent')
+      - name: Read-only baseline preservation/publication/audience diagnostics
+        shell: python
+        run: |
+          import subprocess
+          for f in ['validate_repository_preservation.py','validate_publication_integrity.py','validate_audience_experience.py']:
+            p=subprocess.run(['python','scripts/'+f],capture_output=True,text=True)
+            print('\nBASELINE_CHECK',f,'EXIT',p.returncode)
+            print(p.stdout[-14000:]);print(p.stderr[-4000:])
+          print('Baseline diagnostics only; no validator results were silently treated as a passing publication gate.')
