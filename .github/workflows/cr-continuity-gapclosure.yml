@@ -51,13 +51,13 @@ jobs:
           python scripts/validate_audience_experience.py
           python scripts/validate_operational_identity_registry.py
           python scripts/validate_legal_professional_register.py
-      - name: Commit only declared generated paths to this worker
+      - name: Commit only declared generated content to this worker
         shell: python
         run: |
           import json,subprocess
           from pathlib import Path
           d=json.loads(Path('assets/data/la-laguna-proceeding-pages-v1.json').read_text())['continuity_closure']
-          allowed=d['changed_files']
+          allowed=[p for p in d['changed_files'] if not p.startswith('.github/')]
           subprocess.run(['git','add','--',*allowed],check=True)
           if subprocess.run(['git','diff','--cached','--quiet']).returncode:
             subprocess.run(['git','config','user.name','github-actions[bot]'],check=True)
@@ -65,6 +65,7 @@ jobs:
             subprocess.run(['git','commit','-m','Render CR continuity: 58 review controls, 7 canonical obligations and sourced RAUDA identity'],check=True)
             subprocess.run(['git','push','origin','HEAD:refs/heads/worker/cr-continuity-gapclosure-20260905'],check=True)
           print('PREPARED_HEAD',subprocess.check_output(['git','rev-parse','HEAD'],text=True).strip())
+          print('Workflow-file changes are retained as evidence and require the authorised connector, not expanded bot permissions.')
       - name: Retain public-only generated review evidence
         if: always()
         shell: python
