@@ -1,0 +1,66 @@
+name: JSP BOC fixed object admission
+on:
+  push:
+    branches: [worker/jsp-boc-six-sections-20260905]
+    paths: ['.github/workflows/jsp-boc-object-admission.yml']
+permissions:
+  contents: read
+jobs:
+  admit-reviewed-objects:
+    if: github.repository == 'sbu001monterecco/por-derecho'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+      actions: read
+    steps:
+      - name: Verify the previously reviewed artifact and admit only its fixed unreferenced blobs
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          python3 - <<'PY'
+          import os,json,base64,hashlib,io,zipfile,urllib.request,urllib.error,pathlib
+          api='https://api.github.com/repos/sbu001monterecco/por-derecho'
+          headers={'Authorization':'Bearer '+os.environ['GH_TOKEN'],'Accept':'application/vnd.github+json','X-GitHub-Api-Version':'2022-11-28'}
+          class NoRedirect(urllib.request.HTTPRedirectHandler):
+              def redirect_request(self,req,fp,code,msg,headers,newurl):return None
+          opener=urllib.request.build_opener(NoRedirect)
+          try:
+              response=opener.open(urllib.request.Request(api+'/actions/artifacts/9978112583/zip',headers=headers),timeout=60)
+              archive=response.read(2000000)
+          except urllib.error.HTTPError as e:
+              if e.code not in (301,302,303,307,308):raise
+              location=e.headers['Location'];assert location.startswith('https://')
+              # The credential is deliberately not forwarded to the artifact host.
+              with urllib.request.urlopen(location,timeout=60)as r:archive=r.read(2000000)
+          assert len(archive)==1590183
+          assert hashlib.sha256(archive).hexdigest()=='573ab4a137f99a4551f5b9a413273211efe8e8ab4d35b48d807d1112d6ac4adc'
+          z=zipfile.ZipFile(io.BytesIO(archive));object_bytes=z.read('release/OBJECTS.json')
+          assert hashlib.sha256(object_bytes).hexdigest()=='1c0809e3a1dc388dba226f049d5eeec684be19f4e2f1501d187b664e629733a5'
+          rows=json.loads(object_bytes);assert len(rows)==30 and len({r['path']for r in rows})==30 and sum(r['bytes']for r in rows)==1623191
+          verified=[]
+          for row in rows:
+              path=pathlib.PurePosixPath(row['path']);assert not path.is_absolute() and '..'not in path.parts
+              b=z.read('release/'+row['path']);assert len(b)==row['bytes'] and hashlib.sha256(b).hexdigest()==row['sha256']
+              assert hashlib.sha1(b'blob '+str(len(b)).encode()+b'\0'+b).hexdigest()==row['git_blob']
+              verified.append((row,b))
+          receipts=[]
+          for row,b in verified:
+              payload=json.dumps({'content':base64.b64encode(b).decode(),'encoding':'base64'}).encode()
+              # This is the only mutation endpoint: no tree, commit, ref, PR or Pages.
+              req=urllib.request.Request(api+'/git/blobs',data=payload,headers={**headers,'Content-Type':'application/json'},method='POST')
+              with urllib.request.urlopen(req,timeout=60)as r:receipt=json.load(r)
+              assert receipt['sha']==row['git_blob'];receipts.append({**row,'admitted_sha':receipt['sha']})
+          pathlib.Path('/tmp/jsp-boc-object-receipt.json').write_text(json.dumps({'artifact':9978112583,'artifact_run':33996069209,'count':len(receipts),'branch_mutations':0,'publication_permit':False,'objects':receipts},indent=2))
+          print(json.dumps({'objects':len(receipts),'branch_mutations':0,'publication':False}))
+          PY
+      - uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
+        if: always()
+        with:
+          name: jsp-boc-object-receipt
+          path: /tmp/jsp-boc-object-receipt.json
+          retention-days: 30
+          if-no-files-found: error
+# Reviewed public candidate bytes only. Local review reports are not publication
+# permits: exact-head required gates, controller, normal merge and live readback
+# remain mandatory. Retire this fixed writer to read-only before merging.
