@@ -3,7 +3,7 @@
 
   const path = window.location.pathname.replace(/\/index\.html$/, '/');
   const isEN = document.documentElement.lang?.toLowerCase().startsWith('en') || path.includes('/en/');
-  const isHome = /\/(?:por-derecho\/)?(?:es\/|en\/)?$/.test(path);
+  const isHome = /^\/(?:por-derecho\/)?(?:es\/|en\/)?$/.test(path);
   if (!isHome || document.querySelector('[data-pd-home-mission="20260904"]')) return;
 
   const root = '/por-derecho/' + (isEN ? 'en/' : 'es/');

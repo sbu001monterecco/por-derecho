@@ -24,7 +24,7 @@
     load('control-22-24-search-extension-20260904.js', 'data-control-22-24-search-loader', '20260904a');
     load('three-track-page-enhancement-20260904.js', 'data-three-track-page-enhancement-loader', '20260904b');
     load('unitary-criminal-source-register-search-extension-20260904.js', 'data-unitary-criminal-source-register-search-loader', '20260904a');
-    load('home-mission-critical-20260904.js', 'data-home-mission-critical-loader', '20260904a');
+    load('home-mission-critical-20260904.js', 'data-home-mission-critical-loader', '20260905route');
     load('caixabank-valencia-concurso-cam-linkage-20260904.js', 'data-caixabank-valencia-concurso-cam-linkage-loader', '20260904a');
     load('caixabank-valencia-lawyer-dataroom-unitary-20260904.js', 'data-caixabank-valencia-lawyer-dataroom-unitary-loader', '20260905repair');
     load('caixabank-valencia-lawyer-dataroom-deeplinks-20260904.js', 'data-caixabank-valencia-lawyer-dataroom-deeplinks-loader', '20260904a');

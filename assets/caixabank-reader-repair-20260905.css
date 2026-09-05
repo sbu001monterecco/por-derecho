@@ -17,3 +17,7 @@
 .pd-caixa-reader .pd-caixa-quick{width:calc(100% - 1.5rem)}
 .pd-caixa-reader main :is(th,td){overflow-wrap:anywhere}
 }
+
+/* Explicit contrast on pale source/quick-read cards; global secondary buttons assume a dark hero. */
+.pd-caixa-reader main :is(.pd-caixa-quick,.pd-room-card,.pd-caixa-return,.card,.source) .button.secondary{background:#ffffff;color:#13252d;border:1px solid #13252d;min-height:44px}
+.pd-caixa-reader main :is(.pd-caixa-quick,.pd-room-card,.pd-caixa-return,.card,.source) .button.secondary:hover,.pd-caixa-reader main :is(.pd-caixa-quick,.pd-room-card,.pd-caixa-return,.card,.source) .button.secondary:focus-visible{background:#13252d;color:#ffffff;outline:2px solid #8c6b2f;outline-offset:2px}

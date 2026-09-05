@@ -15,3 +15,12 @@ No canonical identity/proceeding/event is invented or renumbered. Existing claim
 OPEN: exact-target redaction/revocation review of the three old off-site public copies (changing links alone cannot close prior sharing); claimant expert final filed version; unreviewed or restricted annex originals; source/receipt date reconciliation; legacy Uria/search/Asier worker semantic integration; full browser/anonymous-PDF/UI/cache checks; active-integrator release; exact merged SHA, Pages and live readback. No universal source, browser, privacy or repository-green claim.
 
 No email, filing, authority contact, social post, notification filtering, protected ruleset change, raw private original or privileged advice publication.
+
+
+## First completed candidate acceptance and final visual review
+
+Run33978365310 / artifact9973063766 at prepared headbbeb2c2d760d73f0c67f1396fdd95c0d44f7f113 completed60browser/no-JS cases and307HTTP checks with zero errors under the bounded technical contract. Source checks260passed. This is not live certification.
+
+Actual screenshot inspection then found a pale-button contrast defect and unintended homepage-only styling on deep pages. The latter is caused by an unanchored optional-route regex that matched every trailing slash. The correction adds only the missing start anchor to the existing module; homepage narrative and genuine homepage content remain unchanged. Both actual homepages and both CaixaBank entries are tested across all three engines; pale quick-read buttons receive explicit contrast and44px minimum height. These checks supplement rather than weaken the initial acceptance.
+
+The complete11-message September2023 apoderamiento thread was recovered. The public document readers now also preserve the AC’s stated conditional reconsideration route, without publishing original emails or treating his assertions about unmet conditions as proved. Witness-origin provenance was independently re-read in the30October2024 counsel email. No private strategic passage is added to public Git.
