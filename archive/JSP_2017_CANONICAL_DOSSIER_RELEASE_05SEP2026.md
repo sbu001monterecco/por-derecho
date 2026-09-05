@@ -1,42 +1,51 @@
 # JSP August 2017 discovery: canonical dossier release
 
-Control **PD-JSP-2017-DOSSIER-20260905**. Source review 5 September 2026. User authorises the defined canonical registration and separate interlinked JSP webpage publication. This record does not authorise authority, liquidator, lawyer or other third-party contact, a filing or social publication.
+Control **PD-JSP-2017-DOSSIER-20260905**. Source review 5 September 2026. Gil authorises canonical registration and immediate publication of the existing bilingual JSP page with the actual official evidence. This record authorises no court, liquidator, lawyer, witness or other third-party contact, filing or social publication. The separately requested self-addressed dossier remains outside this public record.
 
 ## Source of truth and integration
 
-Base `main@529d90898b7172decf46323d6bd58fbc69fb560c`; worker `worker/jsp-2017-dossier-canonical-20260905`. The existing active integration lane #1469 is not displaced by this worker. This package is a delta source to integrate once with the older JSP root/executed-source branch and the unique option-frustration reader in #1471. Never merge a stale full tree over later main.
+Initial base `main@529d90898b7172decf46323d6bd58fbc69fb560c`; candidate PR #1474, `worker/jsp-2017-dossier-canonical-20260905`. Refresh main and the publication controller before integration. PR #1469's distinct release must not be displaced before its actual verification. Older JSP sources and #1471 contain related material to reconcile separately, not overwrite with this narrower release.
 
-## What this delta actually contains
+## Actual canonical scope
 
-The established JSP ES/EN root routes receive new static source-led dossiers centred on BORME-C-2017-7368, with the original official HTML/PDF links, seven distinct 2017 chronology records, eight source records and eighteen status-qualified relationship edges. The shared stylesheet and script are isolated to the two new roots. No existing page body or global site loader is replaced.
+The existing CAEPR manifest admits fifteen organisations, eleven people and one proceeding: **27 new records**, with **18 existing IDs reused**. The complete declared register becomes **379 records: 176 people, 99 organisations, 11 structures, 49 institutions and 44 proceedings**. These counts are a bounded identity denominator, not proof that every historical file or actor has been investigated.
 
-Three new typed CAEPR parts are admitted into the existing `matter-identity-registry-v1.json` manifest: fifteen organisations, thirteen people and one proceeding. Proposed new ranges are O-0085–0099, P-0166–0178 and R-0044. Sixteen existing IDs are reused. Existing typed records, aliases, identity decisions and manifest coverage fields remain untouched; only counts, appended parts and a scoped release-control field change. The complete manifest and duplicate checks must pass on the actual candidate and be rerun after any main advance.
+Ranges are O-0085–0099, P-0166–0173 and P-0175–0177, and R-0044. The unmerged duplicate proposals P-0174 and P-0178 are withdrawn and reserved against reuse. Their actual existing records are **P-0137 Javier Jiménez Cerrajería** and **P-0125 Román García-Varela Iglesias**. Their existing identity confirmations remain unchanged; their source-specific JSP transaction or court capacity remains qualified. The duplicate-disposition ledger preserves this correction.
 
-Registration is not universal identity confirmation: the new records contain fourteen identity-confirmed records and fifteen pending records. The proceeding is registered with an explicit pending certified-docket/Proceedings Master Register reconciliation. The two Berlys notice-name records preserve an unresolved succession/identity relation; do not silently merge them or treat them as proved unrelated companies. Unnamed shareholders, source-only venue/media labels, the unverified J.S.P., S.L. label, missing instrument signatories and remaining historical candidates have explicit dispositions. No all-perimeter, all-person or all-caret completeness certificate is issued.
+New records retain separate identity states; the two removed proposals were pending, leaving fourteen confirmed and thirteen pending new records. The proceeding awaits certified-docket/Proceedings Master Register reconciliation. Two Berlys source-name records preserve an unresolved legal-identity/succession bridge. Unnamed shareholders, unknown signatories, J.S.P., S.L. as a source literal, venue/media labels and wider historical candidates remain explicit unresolved dispositions. No universal caret or completeness claim is made.
 
-## Controlling substantive corrections
+The canonical manifest, English and Spanish static identity pages and identity section of CURRENT_UNITARY_STATE are reconciled deterministically. Historical publication receipts and unrelated substantive records remain unchanged.
 
-The notice records a request received 3 August 2017 for a meeting scheduled 5 September, not proof of a meeting held. It is dated 7 August and was published 10 August. The Sun Park and Explobeach question must be separated from the bakery and other investment-company sale questions. JOSILAC's administration of JSP and Hotel Royal Playa Blanca's administration of Explobeach are administration relationships, not proof of share ownership or property acquisition.
+## Actual evidence capture and reader
 
-The executed source review controls over the earlier majority hypothesis: JSP's direct Monte Lanza interest is recorded as 26.82% at the reviewed dates and 59/220 company shares in June 2009. Do not confuse those shares with apartments, attendance majority with general control, or direct ownership with a de facto-control hypothesis.
+The source is **BORME-C-2017-7368**, 10 August 2017, printed page 8556. The complete official PDF has 136071 captured bytes and SHA-256 `eec8918e6c8c4714c47ca8d0d13a41d88dab26dda54abc3811b6af24a8e1e194c`.
 
-Protocol 2026 of 18 November 2016 concerns 8499 and 8500 with different conditional recipients; 8498 is a separate deed target. Acceptance by all creditors and Monte Lanza general-meeting approval remain to be shown. A Community-to-CAM completed conveyance is not inferred. Formal Monte Lanza winding-up in 2015–2018 is distinct from JSP/Celgán 440/2021 and the later appointees. JSP's final conclusion/extinction remains unresolved.
+Read-only capture run 33988164394 / job 101365451673 preserved the official PDF, official HTML, text, unannotated full-page PNG, item-five crop and crop provenance, alongside other identified official notices. These are source-derived captures, not generated evidence or certified copies. The compact review artifact is 9975841412. Source hashes and capture boundaries are recorded in the source/relationship JSON. The full notice includes the surrounding introduction, all agenda items, dates and administrator signature attribution.
 
-The public source-reference for the executed source propositions is the already-stored, source-qualified review, not a newly republished private original. No private native document, personal identity number, signature, mailbox/provider locator, private communication or privileged advice is added.
+The public reader at **#official-notice-capture** embeds the actual BOE-hosted PDF and retains always-visible official PDF and accessible-text links. Third-party inline display is browser/host dependent. Capture derivatives are preserved in the review artifact; this release does not falsely claim that the PDF/PNG binaries are hosted on the project domain. The analytical excerpt is explicitly separate from the source.
 
-## Finite validation and remaining work
+## Substantive corrections that travel with the evidence
 
-`python3 scripts/validate_jsp_2017_dossier.py --base <current-base>` checks preservation of the old manifest fields and parts, actual global counts, unique IDs, potential new-name collisions, source presence, reused-ID names, relation endpoints, bilingual anchors, local link targets, key corrections and absence of selected private-mail/credential patterns. It is a scoped read-only test, not a replacement for the repository-wide preservation, publication, audience or exact-head release acceptance gates. CI creates an untracked review report/source ZIP only; it does not repair or commit content.
+The notice records a request received 3 August 2017 for a meeting scheduled 5 September, not proof the meeting occurred. Signature date is 7 August; publication date is 10 August. Item five concerns the Sun Park sale and the majority of Explobeach shares, including explanations reportedly already given at earlier meetings. An agenda question is not a conveyance, meeting answer or adjudication of wrongdoing.
 
-Remaining integration obligations: reconcile #1471 child readers and incoming contextual links; reconcile the proceeding master row without inventing a docket or current office; refresh all canonical collisions against current main; run scoped plus applicable global validation and actual browser checks; secure the current publication-controller permit only through the active integration lane; normal merge, exact-SHA Pages deployment and direct-route readback. Do not label this worker `LIVE_VERIFIED` before those actual events.
+JOSILAC's administration of JSP and Hotel Royal Playa Blanca's administration of Explobeach are administration relationships, not proof of equity ownership or acquisition.
 
-## Intended stable reader routes
+The executed source review controls over the earlier majority hypothesis: JSP's direct Monte Lanza interest is recorded as **26.82%**, with **59/220 company shares** in June 2009. Those shares are not apartments. Direct equity, attendance majority and de facto control remain distinct.
+
+Protocol 2026 of 18 November 2016 concerns **8499 and 8500 with different conditional recipients**; 8498 is a separate instrument target. Creditor acceptance and Monte Lanza general-meeting approval remain to be demonstrated. A completed Community-to-CAM chain is not inferred. Monte Lanza's 2015–2018 voluntary winding-up is distinct from JSP/Celgán 440/2021 and the 2021 appointees. JSP's final conclusion/extinction remains unresolved.
+
+Patricia's dictations and her attributed 2012 conversation with Asunción remain separate from Gil's present instructions and from a personally adopted Asunción statement. No private original, personal identifier, private communication or privileged advice is published.
+
+## Validation and publication state
+
+Scoped checks test global ID/name uniqueness, preservation of existing canonical identities, source/edge resolution, actual counts, reused-ID names, bilingual anchors, local routes, corrections and selected privacy patterns. Browser acceptance tests Chromium, Firefox and WebKit in Spanish/English at mobile and desktop widths, plus no-JavaScript access; source-byte retrieval is independent of third-party PDF rendering. Mobile overflow is fixed through local wrapping and scrollable tables, not hiding evidence. All workflows are read-only, pinned and time-bounded; no CI job repairs or commits content.
+
+Run the scoped validator, all browser cases, deterministic projections and applicable publication/release acceptance on the actual final candidate. Secure the exact-SHA controller permit, merge normally, verify the exact deployed SHA and read the live routes before claiming completion. Code, checks, merge, deployment and live verification are separate states.
+
+## Stable routes and retained work
 
 - `/es/jsp-montelanza-concurso-liquidacion/`
 - `/en/jsp-montelanza-insolvency-liquidation/`
+- `#official-notice-capture` for the actual official notice.
 
-The routes and anchors are source candidates here, not a claim that they are already live. The source/relationship JSON prepares a later visualization with separate dated lanes and documented, conditional and unproved edges. The previously rejected AI illustrations remain excluded.
-
-## Canonical handoff
-
-The exact source tree at `340fa6c6686e13371f68cd1d764e956fd184a1ef` has been reconciled into PR #1472 (`worker/jsp-canonical-dossier-20260905`) without overwriting current main or allocating duplicate JSP/Explobeach identities. Further canonical expansion and projection reconciliation belong to that candidate. This worker must not independently publish or allocate overlapping new IDs. Handoff does not certify acceptance, merge, deployment or live readback.
+The eight-source, seven-event and eighteen-edge register supports later visualisation with documented, conditional and unproved relationships displayed separately. Prior AI illustrations remain rejected. Related older branch handoffs are provenance, not proof that this candidate or another has merged. Reconcile their unique material without allocating duplicate identities or silently dropping evidence. No exact-SHA live claim is made in this premerge record.
