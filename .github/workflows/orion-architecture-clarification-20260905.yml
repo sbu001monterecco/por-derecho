@@ -129,7 +129,7 @@ jobs:
       - name: Verify deployed public bytes (main only; read-only)
         if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
         run: python3 scripts/orion_architecture_clarification_20260905.py --live | tee /tmp/orion-audit/live.txt
-      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+      - uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
         if: always()
         with:
           name: orion-architecture-audit-${{ github.run_id }}
