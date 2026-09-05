@@ -7,11 +7,11 @@ permissions:
   contents: read
 concurrency:
   group: observation-compatibility-preparation
-  cancel-in-progress: true
+  cancel-in-progress: false
 jobs:
   prepare:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 20
     permissions:
       contents: write
     steps:
@@ -19,45 +19,83 @@ jobs:
         with:
           fetch-depth: 0
           persist-credentials: false
-      - name: Inspect and validate owned changes without modifying any public source
+      - name: Validate finite release delta without writing main or another branch
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
           python3 - <<'PY'
-          import concurrent.futures,json,os,pathlib,subprocess,urllib.request
-          root=pathlib.Path.cwd();out=pathlib.Path('/tmp/observation-compatibility');out.mkdir()
+          import concurrent.futures, hashlib, json, os, pathlib, subprocess, urllib.request
+          root=pathlib.Path.cwd();out=pathlib.Path('/tmp/observation-compatibility');out.mkdir(exist_ok=True)
           base='4a85c1902a51d5a09a3b0f6cf8cca4d6d5509435';main='529d90898b7172decf46323d6bd58fbc69fb560c'
           api='https://api.github.com/repos/sbu001monterecco/por-derecho/'
           def get(path,data=None):
               req=urllib.request.Request(api+path,data=None if data is None else json.dumps(data).encode(),headers={'Authorization':'Bearer '+os.environ['GH_TOKEN'],'Accept':'application/vnd.github+json','Content-Type':'application/json'})
               with urllib.request.urlopen(req,timeout=40) as r:return json.load(r)
+          (out/'started.json').write_text(json.dumps({'parent':base,'main':main,'status':'PREPARING_NOT_DEPLOYED'}))
           assert get('git/ref/heads/main')['object']['sha']==main
           assert get('pulls/1469')['head']['sha']==base
           def patch(path,old,new):
               p=root/path;t=p.read_text();assert t.count(old)==1,(path,'source anchor differs');p.write_text(t.replace(old,new,1))
-          patch('scripts/orion_architecture_clarification_20260905.py',"        if actual != desired: raise RuntimeError('non-deterministic output '+path)","        if path.endswith('.html'):\n            from source_observation_contracts import preserved_owned_page\n            preserved_owned_page(path, desired, actual, MARKER)\n            if path in [pair[0] for pair in ROUTES.values()]:\n                preserved_owned_page(path, desired, actual, 'documented-connections')\n        elif actual != desired: raise RuntimeError('non-deterministic output '+path)")
+          patch('scripts/orion_architecture_clarification_20260905.py',"        assert actual == expected, 'Unapproved source delta or missing correction: ' + p", "        if p.endswith('.html'):\n            from source_observation_contracts import preserved_owned_page\n            preserved_owned_page(p, expected, actual, MARKER)\n            if p in [pair[0] for pair in ROUTES.values()]:\n                preserved_owned_page(p, expected, actual, 'documented-connections')\n        else:\n            assert actual == expected, 'Unapproved source delta or missing correction: ' + p")
           patch('scripts/orion_architecture_clarification_20260905.py',"    if args.apply: apply()","    if args.apply: raise SystemExit('Historical whole-file writer retired; preserve current pages and prepare scoped blocks.')")
-          patch('scripts/validate_alberto_meeting_point_first_hop_caret.py','    parser.feed(path.read_text(encoding="utf-8"))','    from source_observation_contracts import historical_surface\n    parser.feed(historical_surface(path))')
+          patch('scripts/validate_alberto_meeting_point_first_hop_caret.py','    parser.feed(path.read_text(encoding="utf-8"))','    from source_observation_contracts import historical_surface\n    current = MainSurface()\n    current.feed(path.read_text(encoding="utf-8"))\n    current_text = normalize(" ".join(current.parts))\n    check(bool(current_text), f"empty current source route {route}")\n    check(not current.inline_identity_markup, f"uncontrolled current inline caret/identity markup on {route}")\n    check("^" not in current_text, f"uncontrolled current inline caret character on {route}")\n    parser.feed(historical_surface(path))')
           patch('scripts/check_release_acceptance.py','    results=[]',"    checks.append(('source-observation-tests',[sys.executable,'-m','unittest','discover','-s','scripts','-p','test_source_observation_contracts.py','-v']))\n    results=[]")
+          # A cached revisit must load lazy resources just as the fresh-visit audit does.
+          # Keep the existing strict image assertion; do not skip the failing image.
+          patch('scripts/audit_caixabank_360_20260905.py',"                        row['cached_revisit']=await page.evaluate(JS_SNAPSHOT)","                        for img in await page.locator('img').all():\n                            await img.evaluate('(e)=>e.scrollIntoView({behavior:\"instant\",block:\"center\"})')\n                            await img.evaluate('(e)=>Promise.race([e.decode().catch(()=>null),new Promise(r=>setTimeout(r,4000))])')\n                        await page.evaluate('scrollTo({top:0,behavior:\"instant\"})')\n                        row['cached_revisit']=await page.evaluate(JS_SNAPSHOT)")
+          # Keep production proof separate while reusing the exact same read-only browser gate.
+          wf='.github/workflows/validate-caixabank-reader-repair-20260905.yml'
+          patch(wf,'  workflow_dispatch:\n','  workflow_dispatch:\n    inputs:\n      target:\n        description: Candidate or production verification\n        type: choice\n        options: [candidate, production]\n        default: candidate\n')
+          patch(wf,'          persist-credentials: false\n','          ref: ${{ github.event.pull_request.head.sha || github.sha }}\n          persist-credentials: false\n')
+          patch(wf,'          PD_AUDIT_BASE: http://127.0.0.1:8899/por-derecho/','          PD_AUDIT_BASE: ${{ inputs.target == \'production\' && \'https://sbu001monterecco.github.io/por-derecho/\' || \'http://127.0.0.1:8899/por-derecho/\' }}')
+          # Public-safe supplement from the existing independent review. No new identity allocation.
+          note={
+            'review_url':'https://github.com/sbu001monterecco/por-derecho/pull/1469#issuecomment-5553621660',
+            'scope':'Supplementary source observations; public derivatives do not prove pleaded merits or complete native filing.',
+            'legacy_public_copies':{
+              'observed_at':'2026-09-05T17:23:00Z','observation_basis':'Authenticated exact-current-file retrieval and separate sharing observation; not guest-byte or historical-cache certification.',
+              'state':'CURRENT_FILE_STREAMS_REDACTED; ANONYMOUS_AND_HISTORICAL_COPY_VERIFICATION_OPEN',
+              'files':[{'document':'claim','pages':27,'bytes':836683,'sha256':'810b5e8235d73de84d51f71c4c882b14007468e8b4cb26807b20464326497838'},{'document':'defence','pages':47,'bytes':827907,'sha256':'128ad71243a51562b773a23b101fde79bb8578bb9bde24da337f876363ba2ad2'},{'document':'AC25Jan2021','pages':2,'bytes':78533,'sha256':'f2fe5eb023b71b4bf07977bbb3c425e8f85eccd70069a12089e08d129f97c0d8'}],
+              'edition_boundary':'Different public redaction editions from the Git derivatives; no underlying-source alteration inferred.'},
+            'prior_LPB_proceeding':{'reference':'ORD1468/2023-6','organ':'JPI11 Valencia','act':'Auto639/23','date':'2023-10-05','result':'Representation-based inadmission after cure request; not a merits decision in Aweswell ORD1859/2023-9.','source_sha256':'0dd73c311a4bc4ea9308696219036a3ec0ddd68782f357034de8b39eb74ddc21','canonical_admission':'PENDING_EXISTING_REGISTER_RECONCILIATION_NO_NEW_ID_ALLOCATED'},
+            'adverse_prosecutorial_record':{'reference':'DIPP546/2025','organ':'Fiscalia Provincial de Valencia','date':'2025-11-04','notification_date':'2025-11-06','result':'Registered and immediately archived for insufficiently particularised facts and rejection of preventive investigation of a possible future witness statement.','limits':'Not a civil merits judgment or acquittal; no inference of reopening by EG19/2026. Internal JPI23/JPI27 source inconsistency is not a canonical identity change; recital of OLAF allegation is not independent proof of investigation.','canonical_admission':'PENDING_EXISTING_REGISTER_RECONCILIATION_NO_NEW_ID_ALLOCATED'},
+            'expert_publication_boundary':{'claimant':'62-page source version continuity between 18Oct2024 and 23Apr2025 transmissions; exact Valencia filing unverified. CONFIDENCIAL source, full text and review derivative remain PRIVATE_REVIEW_ONLY.','defendant':'96-page PKF received version includes annotations on eight pages. 18Oct2024 receipt recovered, but declared annex fingerprint does not match recovered mail-copy SHA256; algorithm not expressly stated. Receipt is not judicial admission or ratification. Licensed-annex and exact-file gates remain open.','quantum':'No substitution of expert scenarios for pleaded quantum.'},
+            'remaining_evidence':['Match all thirteen receipt-listed claim components and exact filed versions.','Reconcile existing canonical source/event/proceeding registers before allocating new IDs.','Reconcile separate Asier/Uria/search worker deltas without reusing occupied identities.','Verify anonymous current cloud bytes and historical copies separately.'],
+            'source_preservation':'No raw private originals, mailbox locators, confidential reports, personal identifiers or licensed annexes added.'}
+          manifest='data/audits/caixabank-public-derivatives-20260905.json'
+          d=json.loads((root/manifest).read_text());assert 'supplementary_review' not in d;d['supplementary_review']=note
+          (root/manifest).write_text(json.dumps(d,ensure_ascii=False,indent=2)+'\n')
+          copy={
+            'es':('<h2>Control complementario de fuentes y resoluciones contrarias</h2><p>La anterior demanda de Luchy Playa Blanca, S.L.U. (LPB) fue inadmitida mediante Auto 639/23, de 5 de octubre de 2023, del JPI 11 de Valencia (ORD 1468/2023-6), por falta de acreditación de la representación del procurador tras el requerimiento de subsanación. Es un procedimiento distinto de la posterior demanda de Aweswell (ORD 1859/2023-9, JPI 27); no constituye una decisión sobre el fondo de esta reclamación bancaria.</p><p>La Fiscalía Provincial de Valencia acordó el 4 de noviembre de 2025 incoar DIPP 546/2025 a efectos de registro y archivarlas de plano, al considerar insuficientemente concretados los hechos y rechazar una investigación preventiva sobre una eventual declaración testifical. Se conserva este razonamiento contrario. No resuelve el fondo civil de ORD 1859/2023 ni acredita por sí solo el estado de otros expedientes.</p><p>La revisión complementaria de 5 de septiembre de 2026 comprobó mediante acceso autenticado que las tres antiguas copias enlazadas de demanda, contestación y escrito de la AC ya devuelven ediciones disociadas. Son ediciones distintas de los PDF públicos de este repositorio; siguen abiertas la comprobación anónima de los bytes y la de versiones históricas o cachés.</p><p>La continuidad del informe pericial de la parte actora entre dos transmisiones no acredita su versión exacta presentada en Valencia: el informe confidencial y su derivado de revisión permanecen privados. Para el informe PKF de 96 páginas se recuperó el recibo de 18 de octubre de 2024, pero la correspondencia exacta de la huella del anexo sigue pendiente; las anotaciones ya existen en la copia recibida. Ninguna diferencia de huellas demuestra por sí sola una alteración sustantiva o una infracción. Se mantienen separados el recibo, la admisión judicial, las licencias de anexos y la cuantía reclamada.</p><p>Estos estados de fuente no asignan nuevos identificadores canónicos ni sustituyen los trece componentes del paquete original de demanda.</p>'),
+            'en':('<h2>Supplementary source control and adverse decisions</h2><p>The earlier claim by Luchy Playa Blanca, S.L.U. (LPB) was refused admission by Order 639/23 of 5 October 2023 in JPI 11 Valencia (ORD 1468/2023-6), because the procurador’s authority was not established following a request to cure. This is separate from Aweswell’s later ORD 1859/2023-9 in JPI 27 and is not a merits determination of that banking claim.</p><p>On 4 November 2025 the Valencia Provincial Prosecutor registered DIPP 546/2025 and immediately closed them, finding insufficiently particularised facts and rejecting a preventive investigation of a possible future witness statement. This adverse reasoning is preserved. It does not determine the civil merits of ORD 1859/2023 or establish the status of other proceedings.</p><p>The supplementary review on 5 September 2026 checked through authenticated retrieval that the three older linked claim, defence and insolvency-administrator copies now return redacted editions. These differ from this repository’s public PDFs; anonymous byte verification and historical versions or caches remain separate open checks.</p><p>Continuity of the claimant-expert report between two transmissions does not establish the exact version filed in Valencia: the confidential report and its review derivative remain private. The 18 October 2024 receipt for the 96-page PKF report was recovered, but exact matching to the declared annex fingerprint remains open; annotations already exist in the received copy. A fingerprint difference alone proves neither substantive alteration nor wrongdoing. Receipt, judicial admission, annex licensing and pleaded quantum remain distinct.</p><p>These source states allocate no new canonical identifiers and do not replace the thirteen components of the original claim package.</p>')}
+          pages=[]
+          for lang,routes in [('es',['es/reclamacion-caixabank-valencia/documentos/index.html','es/reclamacion-caixabank-valencia/faq-contexto-unitario/index.html']),('en',['en/caixabank-valencia-claim/documents/index.html','en/caixabank-valencia-claim/faq-unitary-context/index.html'])]:
+              for path in routes:
+                  text=(root/path).read_text();assert text.count('</main>')==1 and 'id="source-review-20260905"' not in text
+                  section='<section class="section" id="source-review-20260905"><div class="shell record">'+copy[lang]+'<p><a href="../../../data/audits/caixabank-public-derivatives-20260905.json">'+('Control de fuentes y límites' if lang=='es' else 'Source control and limitations')+'</a></p></div></section>\n'
+                  (root/path).write_text(text.replace('</main>',section+'</main>',1));pages.append(path)
           bootstrap='.github/workflows/prepare-observation-compatibility.yml';(root/bootstrap).unlink()
-          paths=['scripts/source_observation_contracts.py','scripts/test_source_observation_contracts.py','scripts/orion_architecture_clarification_20260905.py','scripts/validate_alberto_meeting_point_first_hop_caret.py','scripts/check_release_acceptance.py']
+          paths=['scripts/source_observation_contracts.py','scripts/test_source_observation_contracts.py','scripts/orion_architecture_clarification_20260905.py','scripts/validate_alberto_meeting_point_first_hop_caret.py','scripts/check_release_acceptance.py','scripts/audit_caixabank_360_20260905.py',wf,manifest,*pages]
           subprocess.run(['git','add','--',*paths,bootstrap],check=True)
-          subprocess.run(['git','-c','user.name=Observation compatibility preparation','-c','user.email=ci@example.invalid','commit','-qm','Validate source observation compatibility without public content changes'],check=True)
+          subprocess.run(['git','-c','user.name=CaixaBank release preparation','-c','user.email=ci@example.invalid','commit','-qm','Validate finite source-observation and supplementary-review release delta'],check=True)
           os.environ['GITHUB_BASE_SHA']=main;os.environ['GITHUB_HEAD_SHA']=subprocess.check_output(['git','rev-parse','HEAD'],text=True).strip()
           commands=[['python3','scripts/check_release_acceptance.py'],['python3','scripts/orion_architecture_clarification_20260905.py','--check'],['python3','scripts/validate_alberto_meeting_point_first_hop_caret.py']]
           results=[]
           for command in commands:
-              r=subprocess.run(command,capture_output=True,text=True,timeout=420);name=pathlib.Path(command[1]).name
-              (out/(name+'.log')).write_text(r.stdout+r.stderr);results.append({'check':name,'exit':r.returncode,'tail':(r.stdout+r.stderr)[-10000:]});print(json.dumps(results[-1]))
+              r=subprocess.run(command,capture_output=True,text=True,timeout=480);name=pathlib.Path(command[1]).name
+              (out/(name+'.log')).write_text(r.stdout+r.stderr);results.append({'check':name,'exit':r.returncode,'tail':(r.stdout+r.stderr)[-6000:]});print(json.dumps(results[-1]),flush=True)
           (out/'results.json').write_text(json.dumps(results,indent=2))
           assert all(r['exit']==0 for r in results),'Required checks failed; no accepted candidate'
-          assert not subprocess.check_output(['git','diff',base,'--','assets','en','es','ops','publication-manifests','archive','evidence']), 'Unrelated/public content changed'
+          changed=set(subprocess.check_output(['git','diff','--name-only',base],text=True).splitlines());assert changed==set(paths),sorted(changed.symmetric_difference(paths))
+          for path in pages:
+              old=subprocess.check_output(['git','show',base+':'+path],text=True);new=(root/path).read_text();assert all(x in new for x in old.split('</main>'))
+          assert not subprocess.check_output(['git','diff',base,'--','assets','ops','publication-manifests','archive','evidence']), 'Protected source/identity/history changed'
           assert get('git/ref/heads/main')['object']['sha']==main
           assert get('pulls/1469')['head']['sha']==base
           def blob(path):return {'path':path,'mode':'100644','type':'blob','sha':get('git/blobs',{'content':(root/path).read_text(),'encoding':'utf-8'})['sha']}
           entries=list(concurrent.futures.ThreadPoolExecutor(max_workers=3).map(blob,paths))
           result={'parent':base,'base_tree':'00fba1e65368acc7c86cf3e0f8c05f4e6ad2cd32','elements':entries,'state':'SOURCE_ACCEPTED_NOT_DEPLOYED'}
-          (out/'candidate-tree.json').write_text(json.dumps(result,indent=2));print('CANDIDATE_TREE',json.dumps(result))
+          (out/'candidate-tree.json').write_text(json.dumps(result,indent=2));print('CANDIDATE_TREE',json.dumps(result),flush=True)
           PY
       - uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
         if: always()
