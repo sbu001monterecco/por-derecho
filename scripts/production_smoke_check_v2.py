@@ -91,6 +91,25 @@ def verified_live_loader_text(base_url: str, timeout: int = 20, root: Path = ROO
     return '\n'.join(texts)
 
 
+def production_trigger_errors(workflow_text: str) -> list[str]:
+    """Validate post-deployment monitoring and PR path coverage separately."""
+    import fnmatch
+    import re
+    errors = []
+    for marker in ("workflow_run:", "['pages build and deployment']", "types: [completed]", "branches: [main]", "workflow_run.conclusion == 'success'", "307309396", "deployed.head_sha"):
+        if marker not in workflow_text:
+            errors.append('Production deployment trigger lost: '+marker)
+    if re.search(r'^  push:', workflow_text, re.MULTILINE):
+        errors.append('Production monitoring must follow successful Pages, not an unbuilt push')
+    block = re.search(r'^  pull_request:\n(.*?)(?=^  [a-z_]+:|\Z)', workflow_text, re.MULTILINE|re.DOTALL)
+    patterns = re.findall(r'^\s+-\s+[\'\"]([^\'\"]+)[\'\"]\s*$', block[1], re.MULTILINE) if block else []
+    required = ('deployment-probes/mission-critical-hardening-20260818.json', 'assets/site.js', 'en/index.html', 'es/index.html', 'es/cnmv-ricpe-verificacion/index.html', 'en/cam-creditor-control-shadow-administration-judicial-omission/index.html', 'es/control-acreedor-cam-administracion-hecho-omision-judicial/index.html')
+    for path in required:
+        if not any(fnmatch.fnmatchcase(path,p) for p in patterns if not p.startswith('!')) or any(fnmatch.fnmatchcase(path,p[1:]) for p in patterns if p.startswith('!')):
+            errors.append('Production smoke PR coverage omits '+path)
+    return errors
+
+
 def main() -> int:
     try:
         apply_current_loader_contract()

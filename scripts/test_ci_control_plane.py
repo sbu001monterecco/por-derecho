@@ -147,4 +147,20 @@ class HistoricalSnapshotTests(unittest.TestCase):
         (self.root/'handoff.json').write_text(json.dumps({'production_release':{'reviewed_head_sha':'0'*40,'merge_sha':'0'*40}}))
         self.assertFalse(self.check())
 
+
+class ProductionTriggerTests(unittest.TestCase):
+    def text(self):
+        return (smoke.ROOT/'.github/workflows/production-smoke-monitor.yml').read_text()
+    def test_actual_post_pages_and_pr_coverage(self):
+        self.assertEqual(smoke.production_trigger_errors(self.text()), [])
+    def test_missing_probe_coverage_fails(self):
+        self.assertTrue(smoke.production_trigger_errors(self.text().replace("      - 'deployment-probes/**'", '')))
+    def test_missing_success_guard_fails(self):
+        self.assertTrue(smoke.production_trigger_errors(self.text().replace("workflow_run.conclusion == 'success'", 'true')))
+    def test_missing_pages_event_fails(self):
+        self.assertTrue(smoke.production_trigger_errors(self.text().replace('  workflow_run:', '  unrelated:')))
+    def test_unbuilt_push_is_rejected(self):
+        self.assertTrue(smoke.production_trigger_errors(self.text()+'\n  push:\n'))
+
+
 if __name__=='__main__':unittest.main()

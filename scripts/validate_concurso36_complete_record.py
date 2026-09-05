@@ -1092,17 +1092,8 @@ def check_live_closeout_controls(failures: list[str]) -> None:
         require(expected_canonical.issubset(set(paths)),
                 "production smoke omits a canonical Concurso 36/2012 route", failures)
 
-    for trigger in (
-        "deployment-probes/mission-critical-hardening-20260818.json",
-        "assets/site.js",
-        "en/index.html",
-        "es/index.html",
-        "es/cnmv-ricpe-verificacion/**",
-        "en/cam-creditor-control-shadow-administration-judicial-omission/**",
-        "es/control-acreedor-cam-administracion-hecho-omision-judicial/**",
-    ):
-        require(smoke_workflow.count(trigger) == 2,
-                f"production smoke workflow must trigger on push and PR for {trigger}", failures)
+    from production_smoke_check_v2 import production_trigger_errors
+    failures.extend(production_trigger_errors(smoke_workflow))
 
 
 class _HTMLCollector(HTMLParser):

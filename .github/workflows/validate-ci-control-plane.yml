@@ -41,6 +41,8 @@ jobs:
           ref: ${{ github.event.pull_request.head.sha || github.sha }}
           persist-credentials: false
           fetch-depth: 0
+      - name: Ensure fail-closed PDF privacy inspection is available
+        run: command -v pdftotext || (sudo apt-get update -qq && sudo apt-get install -y poppler-utils)
       - name: Validate all repaired contracts, negative cases and publication boundaries
         run: python3 scripts/validate_ci_control_plane.py
       - name: Reproduce outstanding specialist diagnostics on unchanged base and candidate

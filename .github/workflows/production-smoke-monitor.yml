@@ -18,6 +18,7 @@ on:
       - 'es/**'
       - 'de/**'
       - '404.html'
+      - 'deployment-probes/**'
   schedule:
     - cron: '17 */2 * * *'
   workflow_dispatch:
