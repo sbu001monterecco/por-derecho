@@ -76,7 +76,11 @@
   ],
   "post_merge_policy": {
     "normal_content_mutation_by_ci": false,
-    "normal_role": ["deploy", "verify", "report"],
+    "normal_role": [
+      "deploy",
+      "verify",
+      "report"
+    ],
     "legacy_mutating_workflows": "MIGRATION_DEBT_NOT_A_PATTERN_FOR_NEW_WORK"
   },
   "legacy_pr_policy": {
@@ -100,5 +104,13 @@
     "authority_contact": false,
     "journalist_contact": false,
     "social_publication": false
+  },
+  "publication_controller": {
+    "workflow": ".github/workflows/publication-controller.yml",
+    "manual": "ops/PUBLICATION_CONTROLLER.md",
+    "acceptance": "PD release acceptance",
+    "state_branch": "pd-publication-state",
+    "exclusive_server_enforcement": false,
+    "rule": "Owner commands in existing issue1428; exact-SHA atomic permit, normal connector merge and explicit verification/recovery. Administrative enforcement remains pending."
   }
 }
