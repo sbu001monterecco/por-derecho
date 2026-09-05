@@ -6,10 +6,10 @@ permissions:
   contents: write
 concurrency:
   group: cajasiete-board-preparation-20260905
-  cancel-in-progress: true
+  cancel-in-progress: false
 jobs:
   preserve:
-    if: github.ref == 'refs/heads/worker/cajasiete-board-visuals-20260905' && github.actor != 'github-actions[bot]'
+    if: github.ref == 'refs/heads/worker/cajasiete-board-visuals-20260905' && github.actor != 'github-actions[bot]' && contains(github.event.head_commit.message, '[cajasiete-review-run]')
     runs-on: ubuntu-latest
     timeout-minutes: 15
     env:
@@ -21,92 +21,18 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Refresh without rewriting any branch history
+      - name: Configure worker-only commit identity
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git fetch --quiet origin main
-          git merge --no-edit origin/main
       - run: python -m pip install cairosvg==2.8.2 pillow==11.3.0 beautifulsoup4==4.14.3 playwright==1.55.0
-      - name: Correct source classification and production image loading
-        run: |
-          python - <<'PY'
-          from pathlib import Path
-          p=Path('scripts/prepare_cajasiete_board_visuals_20260905.py');s=p.read_text()
-          old="'linked_transport_event_ids':['PD-SP-EVT-0176'] if i['direction'].startswith('OUTBOUND') else []"
-          new="'linked_transport_event_ids':[],'related_curated_event_ids':['PD-SP-EVT-0176'] if i['direction'].startswith('OUTBOUND') else []"
-          assert s.count(old)==1 or new in s,'Unexpected source; stop rather than guessing'
-          s=s.replace(old,new)
-          assert s.count('loading="lazy"')==1 or s.count('loading="eager"')==1,'Unexpected image markup'
-          p.write_text(s.replace('loading="lazy"','loading="eager"'))
-          PY
-      - name: Generate and validate source-controlled candidate
-        run: |
-          python scripts/prepare_cajasiete_board_visuals_20260905.py apply
-          python scripts/reconcile_institutional_communications.py --check
-          python scripts/validate_institutional_communications.py
-          python scripts/prepare_cajasiete_board_visuals_20260905.py check
-      - name: Preserve source candidate only — NOT deployment acceptance
-        id: source
-        env:
-          SEED_SHA: ${{ github.sha }}
-          BRANCH: ${{ github.ref_name }}
-        run: |
-          test "$BRANCH" = worker/cajasiete-board-visuals-20260905
-          test "$(git ls-remote origin refs/heads/$BRANCH | cut -f1)" = "$SEED_SHA"
-          python - <<'PY'
-          import json,subprocess
-          from pathlib import Path
-          r=json.loads(Path('ops/CAJASIETE_BOARD_VISUAL_ACCEPTANCE_20260905.json').read_text())
-          paths=list(r['paths'])+['scripts/prepare_cajasiete_board_visuals_20260905.py','ops/CAJASIETE_BOARD_VISUAL_ACCEPTANCE_20260905.json']
-          assert not any(p.startswith('.github/') for p in paths)
-          subprocess.run(['git','add','--']+paths,check=True)
-          PY
-          git commit -m 'Preserve CajaSiete source candidate; browser acceptance and deployment NOT yet established'
-          git push origin HEAD:"$BRANCH"
-          echo "content_sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
-      - name: Install browser engines
-        run: python -m playwright install --with-deps chromium firefox webkit
-      - name: Run bounded browser checks and retain exact failures
-        run: |
-          rm -f ops/CAJASIETE_BOARD_BROWSER_20260905.json
-          python scripts/check_cajasiete_board_browser_20260905.py --record-only
-      - name: Preserve browser result, including failures, on worker only
-        if: always() && steps.source.outputs.content_sha != ''
-        env:
-          CONTENT_SHA: ${{ steps.source.outputs.content_sha }}
-          BRANCH: ${{ github.ref_name }}
-        run: |
-          test "$BRANCH" = worker/cajasiete-board-visuals-20260905
-          test "$(git ls-remote origin refs/heads/$BRANCH | cut -f1)" = "$CONTENT_SHA"
-          python - <<'PY'
-          from pathlib import Path
-          import json
-          p=Path('ops/CAJASIETE_BOARD_BROWSER_20260905.json')
-          if not p.exists():p.write_text(json.dumps({'control_id':'PD-CAJASIETE-BOARD-VISUALS-20260905','status':'FAIL','reason':'Browser runner did not produce its mandatory result','cases':[]},indent=2)+'\n')
-          PY
-          git add -- ops/CAJASIETE_BOARD_BROWSER_20260905.json
-          git commit -m 'Preserve observed CajaSiete browser result without upgrading failed checks'
-          git push origin HEAD:"$BRANCH"
-      - name: Fail closed unless all browser cases passed
-        if: always() && steps.source.outputs.content_sha != ''
-        run: |
-          python - <<'PY'
-          import json
-          from pathlib import Path
-          r=json.loads(Path('ops/CAJASIETE_BOARD_BROWSER_20260905.json').read_text())
-          assert r['status']=='PASS' and r.get('case_count')==24 and r.get('passed')==24,r
-          PY
+      - run: python -m playwright install --with-deps chromium firefox webkit
+      - name: Reconcile the existing delta on actual main and validate before worker preservation
+        run: python scripts/reconcile_cajasiete_documentary_review_20260905.py
       - uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: cajasiete-board-source-and-observed-browser-result
-          path: |
-            qa-cajasiete/
-            ops/CAJASIETE_BOARD_*.json
-            ops/cajasiete-board-source-input-20260905.json
-            scripts/prepare_cajasiete_board_visuals_20260905.py
-            scripts/check_cajasiete_board_browser_20260905.py
-            assets/media/cajasiete-board-*
-            es/cajasiete-sun-park-financiacion-comparabilidad/index.html
-            en/cajasiete-sun-park-financing-comparability/index.html
+          name: cajasiete-current-main-review-${{ github.run_id }}
+          path: qa-cajasiete-review/
+          if-no-files-found: warn
+          retention-days: 30
