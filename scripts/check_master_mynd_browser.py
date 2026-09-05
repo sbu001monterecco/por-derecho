@@ -76,6 +76,7 @@ def main():
         body=page.locator('body').inner_text()
         if ADDRESS not in body:case['errors'].append('canonical address missing')
         if family and DISCLOSURES[language] not in body:case['errors'].append('satire disclosure missing')
+        if family and language=='en':case['errors'].extend(page.locator('#master-mynd-record > h1, #master-mynd-record > p').evaluate_all("(els)=>{const rgb=s=>(s.match(/[0-9.]+/g)||[]).slice(0,3).map(Number);const lum=cs=>cs.map(c=>{c/=255;return c<=.04045?c/12.92:Math.pow((c+.055)/1.055,2.4)}).reduce((s,c,i)=>s+c*[.2126,.7152,.0722][i],0);return els.filter(e=>e.innerText.trim()).flatMap(e=>{let b=e;while(b&&getComputedStyle(b).backgroundColor==='rgba(0, 0, 0, 0)')b=b.parentElement;const fg=rgb(getComputedStyle(e).color),bg=b?rgb(getComputedStyle(b).backgroundColor):[255,255,255];const a=lum(fg),z=lum(bg),ratio=(Math.max(a,z)+.05)/(Math.min(a,z)+.05);return ratio>=4.5?[]:[{low_master_narrative_contrast:e.tagName,ratio,fg,bg}]})}"))
         if family:
          expected_first='master-mynd-record' if language=='en' else 'master-mynd'
          if page.locator('main').evaluate('(m)=>m.firstElementChild.id')!=expected_first:case['errors'].append('approved MASTER MYND content is not the first main section')

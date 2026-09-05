@@ -453,8 +453,8 @@
       "repository_path": "en/acosta-matos-family/index.html",
       "public_url": "/en/acosta-matos-family/index.html",
       "mime": "text/html",
-      "bytes": 50538,
-      "sha256": "01450214880134d97de70e877c916800c458356ef5f29d3f2338bbad8be37dc6",
+      "bytes": 50607,
+      "sha256": "6fe117389f0c91f10af2e2520444a55fddf6d5710aff0fc5f3142340a1898488",
       "repository_mirror": true,
       "publication_status": "PUBLIC",
       "prior_surface_versions": [
@@ -463,6 +463,12 @@
           "bytes": 50325,
           "state": "SUPERSEDED_BY_SOURCE_IDENTICAL_READING_ORDER_REPAIR",
           "source_head": "7a07778d120ce9ef777668758b2f449785fc10b5"
+        },
+        {
+          "sha256": "01450214880134d97de70e877c916800c458356ef5f29d3f2338bbad8be37dc6",
+          "bytes": 50538,
+          "state": "SUPERSEDED_BY_SOURCE_IDENTICAL_CONTRAST_REPAIR",
+          "source_head": "a97c22bb16f744f18f4f287991d277902ff5dcfe"
         }
       ]
     }
