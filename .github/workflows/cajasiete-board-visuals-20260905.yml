@@ -1,0 +1,156 @@
+name: CajaSiete board visual preparation
+on:
+  push:
+    branches: [worker/cajasiete-board-visuals-20260905]
+permissions:
+  contents: write
+concurrency:
+  group: cajasiete-board-preparation-20260905
+  cancel-in-progress: false
+jobs:
+  prepare:
+    if: github.ref == 'refs/heads/worker/cajasiete-board-visuals-20260905' && github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install fixed graphics and browser tools
+        run: |
+          python -m pip install cairosvg==2.8.2 pillow==11.3.0 beautifulsoup4==4.14.3 playwright==1.55.0
+          python -m playwright install --with-deps chromium firefox webkit
+      - name: Prepare public-safe additive release
+        run: |
+          python scripts/prepare_cajasiete_board_visuals_20260905.py apply
+          python scripts/reconcile_institutional_communications.py --check
+          python scripts/validate_institutional_communications.py
+          python scripts/prepare_cajasiete_board_visuals_20260905.py check
+      - name: Retain read-only candidate and live regression runner
+        run: |
+          cat > scripts/check_cajasiete_board_browser_20260905.py <<'PY'
+          from __future__ import annotations
+          import argparse,json,threading,functools,http.server,hashlib
+          from pathlib import Path
+          from playwright.sync_api import sync_playwright
+          from prepare_cajasiete_board_visuals_20260905 import ROOT,ROUTES,CONTROL
+          p=argparse.ArgumentParser();p.add_argument('--live',action='store_true');a=p.parse_args()
+          out=ROOT/'cajasiete-board-verification';out.mkdir(exist_ok=True)
+          if not a.live:
+              handler=functools.partial(http.server.SimpleHTTPRequestHandler,directory=str(ROOT.parent))
+              server=http.server.ThreadingHTTPServer(('127.0.0.1',8765),handler)
+              threading.Thread(target=server.serve_forever,daemon=True).start()
+          base='https://sbu001monterecco.github.io/por-derecho/' if a.live else 'http://127.0.0.1:8765/'+ROOT.name+'/'
+          rows=[]
+          with sync_playwright() as pw:
+              for engine in ['chromium','firefox','webkit']:
+                  browser=getattr(pw,engine).launch()
+                  for lang in ['es','en']:
+                      for width,js in [(390,True),(1440,True),(375,False)]:
+                          ctx=browser.new_context(viewport={'width':width,'height':900},java_script_enabled=js)
+                          page=ctx.new_page();response=page.goto(base+ROUTES[lang]['caja'],wait_until='domcontentloaded',timeout=60000)
+                          assert response.status==200
+                          section=page.locator('#board-compliance');assert section.count()==1
+                          assert section.locator('figure img').count()==3
+                          images=section.locator('figure img')
+                          for i in range(3):
+                              images.nth(i).scroll_into_view_if_needed()
+                              images.nth(i).evaluate('(e)=>{e.loading="eager";return e.decode()}')
+                              assert images.nth(i).evaluate('(e)=>e.complete && e.naturalWidth===1080')
+                          bounds=section.bounding_box();assert bounds['x']>=-1 and bounds['x']+bounds['width']<=width+1
+                          assert section.locator('.caja-boundary').is_visible()
+                          assert page.locator('#caja-commercial-original').count()==1
+                          assert page.locator('#notice-20260905').count()==1
+                          overflow=page.evaluate('document.documentElement.scrollWidth>innerWidth')
+                          if engine=='chromium' and js:section.screenshot(path=str(out/f'{lang}-{width}.png'),timeout=60000)
+                          rows.append({'engine':engine,'language':lang,'width':width,'javascript':js,'new_component_overflow':False,'whole_document_overflow_recorded':overflow,'images_decoded':3,'status':'PASS'})
+                          ctx.close()
+                  browser.close()
+          assert len(rows)==18
+          report={'scope':CONTROL,'status':'LIVE_RENDERED_PASS' if a.live else 'CANDIDATE_RENDERED_PASS','cases':rows,'actual_physical_handset_test':False,'universal_completeness_claim':False}
+          (out/'browser-report.json').write_text(json.dumps(report,indent=2));print(json.dumps(report,indent=2))
+          PY
+          cat > .github/workflows/cajasiete-board-visuals-20260905.yml <<'YAML'
+          name: Verify CajaSiete board visuals
+          on:
+            pull_request:
+              paths:
+                - 'scripts/*cajasiete_board*20260905.py'
+                - 'assets/media/cajasiete-board-*'
+                - 'ops/CAJASIETE_BOARD_*'
+                - 'ops/cajasiete-board-*'
+                - 'es/cajasiete-sun-park-financiacion-comparabilidad/**'
+                - 'en/cajasiete-sun-park-financing-comparability/**'
+                - '.github/workflows/cajasiete-board-visuals-20260905.yml'
+            workflow_dispatch:
+              inputs:
+                live:
+                  description: 'Verify deployed exact bytes and rendered routes'
+                  required: false
+                  default: 'false'
+                  type: choice
+                  options: ['false', 'true']
+          permissions:
+            contents: read
+          jobs:
+            verify:
+              runs-on: ubuntu-latest
+              timeout-minutes: 20
+              steps:
+                - uses: actions/checkout@v4
+                  with:
+                    fetch-depth: 0
+                - uses: actions/setup-python@v5
+                  with:
+                    python-version: '3.12'
+                - run: |
+                    python -m pip install cairosvg==2.8.2 pillow==11.3.0 beautifulsoup4==4.14.3 playwright==1.55.0
+                    python -m playwright install --with-deps chromium firefox webkit
+                - run: |
+                    python scripts/prepare_cajasiete_board_visuals_20260905.py check
+                    python scripts/reconcile_institutional_communications.py --check
+                    python scripts/validate_institutional_communications.py
+                    python scripts/check_cajasiete_board_browser_20260905.py
+                    git diff --exit-code
+                - if: github.event_name == 'workflow_dispatch' && inputs.live == 'true'
+                  run: |
+                    python scripts/prepare_cajasiete_board_visuals_20260905.py live
+                    python scripts/check_cajasiete_board_browser_20260905.py --live
+                - uses: actions/upload-artifact@v4
+                  if: always()
+                  with:
+                    name: cajasiete-board-verification
+                    path: cajasiete-board-verification/
+          YAML
+      - name: Verify three engines and no-JavaScript reader
+        run: python scripts/check_cajasiete_board_browser_20260905.py
+      - name: Commit only reviewed generated files to the worker branch
+        env:
+          SEED_SHA: ${{ github.sha }}
+          BRANCH: ${{ github.ref_name }}
+        run: |
+          test "$BRANCH" = worker/cajasiete-board-visuals-20260905
+          test "$(git ls-remote origin refs/heads/$BRANCH | cut -f1)" = "$SEED_SHA"
+          python - <<'PY'
+          import json,subprocess
+          from pathlib import Path
+          r=json.loads(Path('ops/CAJASIETE_BOARD_VISUAL_ACCEPTANCE_20260905.json').read_text())
+          files=list(r['paths'])+['ops/CAJASIETE_BOARD_VISUAL_ACCEPTANCE_20260905.json','scripts/check_cajasiete_board_browser_20260905.py','.github/workflows/cajasiete-board-visuals-20260905.yml']
+          subprocess.run(['git','add','--']+files,check=True)
+          PY
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'Generate six CajaSiete documentary graphics, preserve original pages and register two separate communications'
+          git push origin HEAD:"$BRANCH"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: cajasiete-board-candidate
+          path: |
+            cajasiete-board-verification/
+            ops/CAJASIETE_BOARD_VISUAL_ACCEPTANCE_20260905.json
+            ops/CAJASIETE_BOARD_VISUAL_CROSSWALK_20260905.json
+            assets/media/cajasiete-board-*
