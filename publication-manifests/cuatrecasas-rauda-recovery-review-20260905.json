@@ -1,0 +1,112 @@
+{
+  "schema": "por-derecho.publication-manifest.v1",
+  "publication_id": "PD-CR-20260905-01",
+  "current_state": "REMOTE_SOURCE",
+  "owner": "Por Derecho / Gil Marer authorised scoped integration",
+  "control_date": "2026-09-05",
+  "source_base": "e482e29325091bcc32af3fd2b2624335c6699e19",
+  "source_branch": "integration/cuatrecasas-rauda-20260905",
+  "external_mutation_authorized": true,
+  "authority": "User instruction: Deployment of all; public-safe scope only.",
+  "expected_routes": {
+    "es": [
+      "es/cuatrecasas-sun-park/index.html",
+      "es/cuatrecasas-icam-ccacm-2026/index.html",
+      "es/ingenieria-inversa-criminal-unitaria/index.html",
+      "es/cuatrecasas-dp748-accion-civil/index.html",
+      "es/etj-163-2020/index.html",
+      "es/dp-748-2026/index.html",
+      "es/cambiario-1048-2019/index.html",
+      "es/cuatrecasas-mandato-continuidad-ric/index.html",
+      "es/matkator-8584-titulo-hotel-remate-restitucion/index.html",
+      "es/cnmv-ricpe-verificacion/index.html",
+      "es/pwc-canarias-carlos-saavedra-sun-park/index.html",
+      "es/uria-menendez-sun-park/index.html"
+    ],
+    "en": [
+      "en/cuatrecasas-sun-park/index.html",
+      "en/cuatrecasas-icam-ccacm-2026/index.html",
+      "en/unitary-criminal-reverse-engineering/index.html",
+      "en/cuatrecasas-dp748-civil-action/index.html",
+      "en/etj-163-2020/index.html",
+      "en/dp-748-2026/index.html",
+      "en/cambiario-1048-2019/index.html",
+      "en/cuatrecasas-mandate-ric-continuity/index.html",
+      "en/matkator-8584-hotel-title-remate-restitution/index.html",
+      "en/cnmv-ricpe-verification/index.html",
+      "en/pwc-canarias-carlos-saavedra-sun-park/index.html",
+      "en/uria-menendez-sun-park/index.html"
+    ]
+  },
+  "expected_source_files": [
+    ".github/workflows/cuatrecasas-rauda-publication.yml",
+    "assets/content/cuatrecasas-rauda-20260905.en.html",
+    "assets/content/cuatrecasas-rauda-20260905.es.html",
+    "assets/cuatrecasas-rauda-20260905.css",
+    "assets/data/la-laguna-proceeding-pages-v1.json",
+    "assets/data/matter-identity-operational-control-v1.json",
+    "assets/data/matter-identity-registry-v1.json",
+    "assets/data/matter-identity-registry-v1.organisations.json",
+    "assets/data/matter-identity-registry-v1.professional-organisations.json",
+    "en/cambiario-1048-2019/index.html",
+    "en/cnmv-ricpe-verification/index.html",
+    "en/cuatrecasas-dp748-civil-action/index.html",
+    "en/cuatrecasas-icam-ccacm-2026/index.html",
+    "en/cuatrecasas-mandate-ric-continuity/index.html",
+    "en/cuatrecasas-sun-park/index.html",
+    "en/dp-748-2026/index.html",
+    "en/etj-163-2020/index.html",
+    "en/matkator-8584-hotel-title-remate-restitution/index.html",
+    "en/pwc-canarias-carlos-saavedra-sun-park/index.html",
+    "en/unitary-criminal-reverse-engineering/index.html",
+    "en/uria-menendez-sun-park/index.html",
+    "es/cambiario-1048-2019/index.html",
+    "es/cnmv-ricpe-verificacion/index.html",
+    "es/cuatrecasas-dp748-accion-civil/index.html",
+    "es/cuatrecasas-icam-ccacm-2026/index.html",
+    "es/cuatrecasas-mandato-continuidad-ric/index.html",
+    "es/cuatrecasas-sun-park/index.html",
+    "es/dp-748-2026/index.html",
+    "es/etj-163-2020/index.html",
+    "es/ingenieria-inversa-criminal-unitaria/index.html",
+    "es/matkator-8584-titulo-hotel-remate-restitucion/index.html",
+    "es/pwc-canarias-carlos-saavedra-sun-park/index.html",
+    "es/uria-menendez-sun-park/index.html",
+    "ops/CUATRECASAS_RAUDA_CONTINUITY_20260905.md",
+    "ops/CUATRECASAS_RAUDA_RELEASE_20260905.json",
+    "scripts/build_cuatrecasas_rauda_20260905.py",
+    "scripts/complete_cuatrecasas_rauda_controls_20260905.py"
+  ],
+  "merge_sha": null,
+  "publication_boundary": "No private handoff, native court files, original emails, provider locators, verification metadata or counsel-facing strategy. Existing public-safe court texts and canonical acts are referenced, not duplicated.",
+  "validation": {
+    "commands": [
+      "python scripts/build_cuatrecasas_rauda_20260905.py --check",
+      "python scripts/complete_cuatrecasas_rauda_controls_20260905.py --check",
+      "python scripts/validate_operational_identity_registry.py"
+    ],
+    "evidence": [
+      "Preparation run 33970163169: 206 source/preservation checks passed; this is not PR-CI or live certification."
+    ],
+    "inherited_baseline_gaps": [
+      "Existing historic-proceedings-authority-reintegration-20260903 manifest lacks required fields.",
+      "Existing es/acosta-matos-familia link points to missing es/metodologia."
+    ],
+    "state_boundary": "Final checks, exact merge, Pages deployment and live readback are reported in the PR and Control Tower; this manifest is a remote-source snapshot, not a self-certifying LIVE_VERIFIED claim."
+  },
+  "closeout_tracker": {
+    "control_tower_issue": 1428,
+    "pull_request": 1464,
+    "required": [
+      "Current main and exact reviewed head",
+      "No new preservation, identity or publication failures",
+      "Bilingual desktop/mobile/no-script checks",
+      "Successful Pages run for merged commit",
+      "Exact managed blocks and public control files read back"
+    ]
+  },
+  "continuity": "ops/CUATRECASAS_RAUDA_CONTINUITY_20260905.md",
+  "identity_queue": "assets/data/matter-identity-operational-control-v1.json",
+  "source_control": "assets/data/la-laguna-proceeding-pages-v1.json",
+  "institutional_communications_preserved": 333
+}

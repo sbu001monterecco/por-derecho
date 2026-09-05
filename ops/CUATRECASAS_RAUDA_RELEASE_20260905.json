@@ -1,0 +1,299 @@
+{
+  "schema": "por-derecho.cuatrecasas-rauda-publication.v1",
+  "control_id": "PD-CR-20260905-01",
+  "source_state": "PREPARED_PENDING_MERGE",
+  "as_of": "2026-09-05",
+  "source_base": "e482e29325091bcc32af3fd2b2624335c6699e19",
+  "branch": "integration/cuatrecasas-rauda-20260905",
+  "public_private_boundary": "PUBLIC_SAFE_DERIVATIVE_ONLY",
+  "canonical_source_control": "assets/data/la-laguna-proceeding-pages-v1.json",
+  "rauda_identity_id": "PD-SP-O-0084",
+  "institutional_register_rows": 333,
+  "institutional_register_sha256": "f397fc256cf21bde25c90945ebb67944762599ee4b02350830aae56fe5e7af82",
+  "reused_court_controls": [
+    "PD-ETJ163-FIL-20260903",
+    "PD-DP748-ACT-004",
+    "PD-DP748-NOT-001"
+  ],
+  "recovery_communication_controls": [
+    "PD-CR-COM-20220218",
+    "PD-CR-COM-20220307"
+  ],
+  "pages": [
+    {
+      "path": "es/cuatrecasas-sun-park/index.html",
+      "role": "main",
+      "baseline_sha256": "9508bcf9322e79db0d52434bf3b5fbf3869975456a69f5967fd7dd5faa152827",
+      "output_sha256": "62bef71b3ea8e5531d8a6fc3ad622bdebd784974af52873d4a2cc9d1a5b3d1e5",
+      "blocks_sha256": [
+        "51bda541edca1444bd8b2d8112108a21a1d3abf2305e8d4a2b94522573c37e26",
+        "7002b2d0eb2d5b32642964d5836939d693668e6ddda6179d62838ba8b29360c0",
+        "61c2d6c65794ad30a5f45c21992805d594ee56802013804c3f2fddf9c6464562"
+      ]
+    },
+    {
+      "path": "en/cuatrecasas-sun-park/index.html",
+      "role": "main",
+      "baseline_sha256": "0146f4f3870166bcd78418c167b71c5bab349251c96d29a797d4bfadcb98f10f",
+      "output_sha256": "81058ca7d210c585c518982b089ac6f4f586a254d938bb745bc763c0ac9e4772",
+      "blocks_sha256": [
+        "51bda541edca1444bd8b2d8112108a21a1d3abf2305e8d4a2b94522573c37e26",
+        "6954dd0316e7c295c0e84d2bdc74a786275b5036f931db76e128ac51bbb67183",
+        "94f7c544aed0bc9775d41d618fb6792bbc7645ff80f0a6d714c6b91b15f7885a"
+      ]
+    },
+    {
+      "path": "es/cuatrecasas-icam-ccacm-2026/index.html",
+      "role": "discipline",
+      "baseline_sha256": "13db2c33bc0d721c6444b602ab49b0343deb482899b3538849c8a4ed1b53cde1",
+      "output_sha256": "638c38d14a26d1ee834c552137bc519e422251edcd3a54b44ad104d2283825db",
+      "blocks_sha256": [
+        "51bda541edca1444bd8b2d8112108a21a1d3abf2305e8d4a2b94522573c37e26",
+        "73473b273f96340842050df03689fb4f0b623c1f62c040b6c75358400008d621"
+      ]
+    },
+    {
+      "path": "en/cuatrecasas-icam-ccacm-2026/index.html",
+      "role": "discipline",
+      "baseline_sha256": "2fde417bafaae7aec9e6dd7c8a022b49955b02d5082570d0b0208a2860429b65",
+      "output_sha256": "7ee633cd8d910c8070bdcbff5c141b6049b6cfb24036024cc83ee633e059ba16",
+      "blocks_sha256": [
+        "51bda541edca1444bd8b2d8112108a21a1d3abf2305e8d4a2b94522573c37e26",
+        "cc9e99391954b79df2c935d3d9b6a2e9515efb3e5b8da51f5c084f0887dc46c0"
+      ]
+    },
+    {
+      "path": "es/ingenieria-inversa-criminal-unitaria/index.html",
+      "role": "unitary",
+      "baseline_sha256": "e4f073d427f4a3d68d6c4ecc3398f9410b94964e421ad5e63611c88d46bf7ee0",
+      "output_sha256": "2504b5a77bbcf82f7bde2f14123d5b58e1f8e584c1bcd3a4b645cf05bb76b225",
+      "blocks_sha256": [
+        "51bda541edca1444bd8b2d8112108a21a1d3abf2305e8d4a2b94522573c37e26",
+        "73473b273f96340842050df03689fb4f0b623c1f62c040b6c75358400008d621"
+      ]
+    },
+    {
+      "path": "en/unitary-criminal-reverse-engineering/index.html",
+      "role": "unitary",
+      "baseline_sha256": "03e8f4083dd0a4823608a0f28779b6e1922d91b8566f650bd0d64768c6ee8b12",
+      "output_sha256": "bbeb2022ce39c649551d3e03786d49ca42192ba58a21b43b1f508061ee608029",
+      "blocks_sha256": [
+        "51bda541edca1444bd8b2d8112108a21a1d3abf2305e8d4a2b94522573c37e26",
+        "cc9e99391954b79df2c935d3d9b6a2e9515efb3e5b8da51f5c084f0887dc46c0"
+      ]
+    },
+    {
+      "path": "es/cuatrecasas-dp748-accion-civil/index.html",
+      "role": "civil",
+      "baseline_sha256": "0bd17b972d0404edfc6c1853c372db3b4d63cdb2fd6e8f8e535229f411e13f65",
+      "output_sha256": "832ed68a83bd5fdee24fe1946c3cc268ea2c80387811167d660d4af6733b0a20",
+      "blocks_sha256": [
+        "51bda541edca1444bd8b2d8112108a21a1d3abf2305e8d4a2b94522573c37e26",
+        "73473b273f96340842050df03689fb4f0b623c1f62c040b6c75358400008d621"
+      ]
+    },
+    {
+      "path": "en/cuatrecasas-dp748-civil-action/index.html",
+      "role": "civil",
+      "baseline_sha256": "f913e32d29b66239a39e24e8efb25c460f751304c70b8089d861ac48bf0fed73",
+      "output_sha256": "96af3bf796b795460eaed11d4e30e68d50494979cb8335e13103dcb95ede5ea2",
+      "blocks_sha256": [
+        "51bda541edca1444bd8b2d8112108a21a1d3abf2305e8d4a2b94522573c37e26",
+        "cc9e99391954b79df2c935d3d9b6a2e9515efb3e5b8da51f5c084f0887dc46c0"
+      ]
+    },
+    {
+      "path": "es/etj-163-2020/index.html",
+      "role": "execution",
+      "baseline_sha256": "20c8f0a2ce7a84b444b2be907ae0de776ce7654be4ca85e880c20a89842922ae",
+      "output_sha256": "75d8c7e54f00fdfaba16262cfb23d94a019a10300184923e984c60fed5335704",
+      "blocks_sha256": [
+        "51bda541edca1444bd8b2d8112108a21a1d3abf2305e8d4a2b94522573c37e26",
+        "73473b273f96340842050df03689fb4f0b623c1f62c040b6c75358400008d621"
+      ]
+    },
+    {
+      "path": "en/etj-163-2020/index.html",
+      "role": "execution",
+      "baseline_sha256": "4fc7212495fb1d6b1f524cca8dde147e041bf80cf1d676f5696e3155ba91e64f",
+      "output_sha256": "59ef13e1e1e1b4a5be20547be1f01aaf2aa6137a8551404752fd9e96ec901b2f",
+      "blocks_sha256": [
+        "51bda541edca1444bd8b2d8112108a21a1d3abf2305e8d4a2b94522573c37e26",
+        "cc9e99391954b79df2c935d3d9b6a2e9515efb3e5b8da51f5c084f0887dc46c0"
+      ]
+    },
+    {
+      "path": "es/dp-748-2026/index.html",
+      "role": "criminal",
+      "baseline_sha256": "1ba3429427b3f2ff879e6e8ba1f9fd6186daf19b654b502c046fab359adef18a",
+      "output_sha256": "b841fd4cf43a47e8d6ae83dfa2f1e57573ad99fb8d608836871d9906cd877dee",
+      "blocks_sha256": [
+        "51bda541edca1444bd8b2d8112108a21a1d3abf2305e8d4a2b94522573c37e26",
+        "73473b273f96340842050df03689fb4f0b623c1f62c040b6c75358400008d621"
+      ]
+    },
+    {
+      "path": "en/dp-748-2026/index.html",
+      "role": "criminal",
+      "baseline_sha256": "7a23e01b7811a8df9fbbbee410a8001ea5088cc07b25162f941bd9d682cb2b6b",
+      "output_sha256": "bf92724a350f3d0afc9d3447ec3c1d3e89abafe5a2865db4ff72bf21bb5397ef",
+      "blocks_sha256": [
+        "51bda541edca1444bd8b2d8112108a21a1d3abf2305e8d4a2b94522573c37e26",
+        "cc9e99391954b79df2c935d3d9b6a2e9515efb3e5b8da51f5c084f0887dc46c0"
+      ]
+    },
+    {
+      "path": "es/cambiario-1048-2019/index.html",
+      "role": "debt",
+      "baseline_sha256": "63ee431a2b907ab1de01335a029427e9a2b581db5067548b047f2d591602f618",
+      "output_sha256": "94e731bd12e9eb26b2683fca946265ea51e3d72db8eec5b96023d8972fef766c",
+      "blocks_sha256": [
+        "51bda541edca1444bd8b2d8112108a21a1d3abf2305e8d4a2b94522573c37e26",
+        "73473b273f96340842050df03689fb4f0b623c1f62c040b6c75358400008d621"
+      ]
+    },
+    {
+      "path": "en/cambiario-1048-2019/index.html",
+      "role": "debt",
+      "baseline_sha256": "c64902c62e4187072017490b19f076e496227336a5c321f1dcc40da473528602",
+      "output_sha256": "4b07de84fd8a9006bf8df69412ca12d164a9b178590fffec467e506ba6b2c839",
+      "blocks_sha256": [
+        "51bda541edca1444bd8b2d8112108a21a1d3abf2305e8d4a2b94522573c37e26",
+        "cc9e99391954b79df2c935d3d9b6a2e9515efb3e5b8da51f5c084f0887dc46c0"
+      ]
+    },
+    {
+      "path": "es/cuatrecasas-mandato-continuidad-ric/index.html",
+      "role": "mandate",
+      "baseline_sha256": "a805adbe84ebc4b9cb7ccc87d4c91b2d50b2d692a88f059a4fa33e2e3afd5fd2",
+      "output_sha256": "0d01d7be11b8d3e0929f09200b17b6f6d8828a1779a1e4d97dfd1584ab3d3402",
+      "blocks_sha256": [
+        "51bda541edca1444bd8b2d8112108a21a1d3abf2305e8d4a2b94522573c37e26",
+        "73473b273f96340842050df03689fb4f0b623c1f62c040b6c75358400008d621"
+      ]
+    },
+    {
+      "path": "en/cuatrecasas-mandate-ric-continuity/index.html",
+      "role": "mandate",
+      "baseline_sha256": "15a236fc2ced8de8958fcfc73321b7bba666e03ace5b6b7cb048107fd7e3f861",
+      "output_sha256": "d9515cbff70e3dc4de6c8e07157df599f4b3f299e3e3e55407d9e8b24fd1e521",
+      "blocks_sha256": [
+        "51bda541edca1444bd8b2d8112108a21a1d3abf2305e8d4a2b94522573c37e26",
+        "cc9e99391954b79df2c935d3d9b6a2e9515efb3e5b8da51f5c084f0887dc46c0"
+      ]
+    },
+    {
+      "path": "es/matkator-8584-titulo-hotel-remate-restitucion/index.html",
+      "role": "property",
+      "baseline_sha256": "aa84b7e7499b567b35883df69b8aaf6845eca3f8b7916ff19b04858994dca46a",
+      "output_sha256": "3e1d2ee5100d0bd42a2a8747423d289a688ee8b5a9c7ba40494d22e40dd07435",
+      "blocks_sha256": [
+        "51bda541edca1444bd8b2d8112108a21a1d3abf2305e8d4a2b94522573c37e26",
+        "73473b273f96340842050df03689fb4f0b623c1f62c040b6c75358400008d621"
+      ]
+    },
+    {
+      "path": "en/matkator-8584-hotel-title-remate-restitution/index.html",
+      "role": "property",
+      "baseline_sha256": "371df5831f1038b57c6d65efd0e59185d08d6245bf20895a6979623aeca66cf3",
+      "output_sha256": "c760ab03a79aa9ca4c27e771309946ea9cb06ccb4dadac2eb50b32539fff4652",
+      "blocks_sha256": [
+        "51bda541edca1444bd8b2d8112108a21a1d3abf2305e8d4a2b94522573c37e26",
+        "cc9e99391954b79df2c935d3d9b6a2e9515efb3e5b8da51f5c084f0887dc46c0"
+      ]
+    },
+    {
+      "path": "es/cnmv-ricpe-verificacion/index.html",
+      "role": "regulatory",
+      "baseline_sha256": "6dbb7eb2b9109cb7746e12439072d822ef4a56600f5fded32de1509ee2dad711",
+      "output_sha256": "82141ef49f64c26b9b9b8ad07c92917c987d4d081aa07dad853a11d065777c4b",
+      "blocks_sha256": [
+        "51bda541edca1444bd8b2d8112108a21a1d3abf2305e8d4a2b94522573c37e26",
+        "73473b273f96340842050df03689fb4f0b623c1f62c040b6c75358400008d621"
+      ]
+    },
+    {
+      "path": "en/cnmv-ricpe-verification/index.html",
+      "role": "regulatory",
+      "baseline_sha256": "33486766200bba3ba34baf42a4ecf15b973e3fac062fa13fa53ce322a8f4f1c6",
+      "output_sha256": "20c30502d7ac56173ef28fc2083964b8574cd4f196e8617ac8417205bb3fc8c1",
+      "blocks_sha256": [
+        "51bda541edca1444bd8b2d8112108a21a1d3abf2305e8d4a2b94522573c37e26",
+        "cc9e99391954b79df2c935d3d9b6a2e9515efb3e5b8da51f5c084f0887dc46c0"
+      ]
+    },
+    {
+      "path": "es/pwc-canarias-carlos-saavedra-sun-park/index.html",
+      "role": "advisers",
+      "baseline_sha256": "a1b496341edadeb15d58f91a08a2e13f3d049be730862b486277c3db5bfd0e54",
+      "output_sha256": "9ab3437e737bbc35d7b1b29104f76c26664d1c14d7ff5722a54915f98bd920e4",
+      "blocks_sha256": [
+        "51bda541edca1444bd8b2d8112108a21a1d3abf2305e8d4a2b94522573c37e26",
+        "73473b273f96340842050df03689fb4f0b623c1f62c040b6c75358400008d621"
+      ]
+    },
+    {
+      "path": "en/pwc-canarias-carlos-saavedra-sun-park/index.html",
+      "role": "advisers",
+      "baseline_sha256": "2ae590c1b037e587757024c5ddcd212affbf50e972a6ce5382321b6e8361acd4",
+      "output_sha256": "809f52ffca749adcf175f27a66751ebae55c3a8f2778b9d80c5efdd19f84e9b4",
+      "blocks_sha256": [
+        "51bda541edca1444bd8b2d8112108a21a1d3abf2305e8d4a2b94522573c37e26",
+        "cc9e99391954b79df2c935d3d9b6a2e9515efb3e5b8da51f5c084f0887dc46c0"
+      ]
+    },
+    {
+      "path": "es/uria-menendez-sun-park/index.html",
+      "role": "advisers",
+      "baseline_sha256": "62df42ef2d41a1024174c60a9f4e36f408db8933898d870fe064eb8282cc60d1",
+      "output_sha256": "c166c9f1be982893fa95c02458eb551101f44d94064a7ca66ead030f04495184",
+      "blocks_sha256": [
+        "51bda541edca1444bd8b2d8112108a21a1d3abf2305e8d4a2b94522573c37e26",
+        "73473b273f96340842050df03689fb4f0b623c1f62c040b6c75358400008d621"
+      ]
+    },
+    {
+      "path": "en/uria-menendez-sun-park/index.html",
+      "role": "advisers",
+      "baseline_sha256": "7ca195ebce80315c5c3329a2853e43d2398df34b0294b447e3b86ca44b0f2336",
+      "output_sha256": "f39fbe31763152533ff2b4c5c3af9f3cd57133bddbf2baec809d6dfbe4ebc1a2",
+      "blocks_sha256": [
+        "51bda541edca1444bd8b2d8112108a21a1d3abf2305e8d4a2b94522573c37e26",
+        "cc9e99391954b79df2c935d3d9b6a2e9515efb3e5b8da51f5c084f0887dc46c0"
+      ]
+    }
+  ],
+  "outputs": [
+    "assets/cuatrecasas-rauda-20260905.css",
+    "assets/data/la-laguna-proceeding-pages-v1.json",
+    "assets/data/matter-identity-registry-v1.json",
+    "assets/data/matter-identity-registry-v1.organisations.json",
+    "assets/data/matter-identity-registry-v1.professional-organisations.json",
+    "en/cambiario-1048-2019/index.html",
+    "en/cnmv-ricpe-verification/index.html",
+    "en/cuatrecasas-dp748-civil-action/index.html",
+    "en/cuatrecasas-icam-ccacm-2026/index.html",
+    "en/cuatrecasas-mandate-ric-continuity/index.html",
+    "en/cuatrecasas-sun-park/index.html",
+    "en/dp-748-2026/index.html",
+    "en/etj-163-2020/index.html",
+    "en/matkator-8584-hotel-title-remate-restitution/index.html",
+    "en/pwc-canarias-carlos-saavedra-sun-park/index.html",
+    "en/unitary-criminal-reverse-engineering/index.html",
+    "en/uria-menendez-sun-park/index.html",
+    "es/cambiario-1048-2019/index.html",
+    "es/cnmv-ricpe-verificacion/index.html",
+    "es/cuatrecasas-dp748-accion-civil/index.html",
+    "es/cuatrecasas-icam-ccacm-2026/index.html",
+    "es/cuatrecasas-mandato-continuidad-ric/index.html",
+    "es/cuatrecasas-sun-park/index.html",
+    "es/dp-748-2026/index.html",
+    "es/etj-163-2020/index.html",
+    "es/ingenieria-inversa-criminal-unitaria/index.html",
+    "es/matkator-8584-titulo-hotel-remate-restitucion/index.html",
+    "es/pwc-canarias-carlos-saavedra-sun-park/index.html",
+    "es/uria-menendez-sun-park/index.html",
+    "ops/CUATRECASAS_RAUDA_CONTINUITY_20260905.md"
+  ],
+  "verification_boundary": "This source manifest describes prepared deterministic outputs, not a completed merge, deployment or live verification."
+}

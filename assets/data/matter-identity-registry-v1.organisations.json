@@ -943,6 +943,25 @@
         "en": "/en/pwc-canarias-carlos-saavedra-sun-park/#caret-register"
       },
       "capacity_boundary": "Exact legal person and registered governance roles only. Carlos's non-director-secretary role and Grupo Acosta Matos's board role do not establish compensation, a Sun Park mandate, quid pro quo, information use, wrongdoing or liability."
+    },
+    {
+      "id": "PD-SP-O-0084",
+      "type": "ORGANISATION",
+      "name": "RAUDA",
+      "aliases": [
+        "Rauda"
+      ],
+      "status": "CONTROLLED_PERIMETER_LABEL_EXACT_ENTITY_MAY_REQUIRE_SOURCE",
+      "identity_resolution": "CARET_PENDING",
+      "identity_sources": [
+        "PD-CR-COM-20220218",
+        "PD-CR-COM-20220307"
+      ],
+      "routes": {
+        "es": "/es/cuatrecasas-sun-park/#cuatrecasas-rauda-revision-20260905",
+        "en": "/en/cuatrecasas-sun-park/#cuatrecasas-rauda-revision-20260905"
+      },
+      "capacity_boundary": "Source-literal professional recovery label from 2022 correspondence. Exact legal entity and legal-form history remain unverified. No original advisory mandate, ownership of the debt, purchaser identity, confidentiality misuse, group-wide knowledge or liability is inferred."
     }
   ]
 }
