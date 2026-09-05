@@ -1,0 +1,85 @@
+name: Media desk release checks
+on:
+  push:
+    branches: [worker/media-desk-deploy-20260905]
+    paths: [.github/workflows/media-desk-release.yml]
+permissions:
+  contents: read
+concurrency:
+  group: media-desk-release-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - name: Reconstruct candidate only in temporary checkout
+        run: |
+          mkdir -p /tmp/media-release/original
+          python3 - <<'PY'
+          import pathlib,subprocess,json
+          source='61745a557c0a666452cb71f152753c676fa70686'
+          paths=subprocess.check_output(['git','ls-tree','-r','--name-only',source,'ops/media-dashboard'],text=True).splitlines()+['assets/media-desk.css','assets/media-desk.js']
+          for p in paths:
+            data=subprocess.check_output(['git','show',source+':'+p]);f=pathlib.Path(p);f.parent.mkdir(parents=True,exist_ok=True);f.write_bytes(data)
+          for p in ['es/medios-trazabilidad-relato-publico/index.html','en/media-public-narrative-traceability/index.html','assets/data/unitary-route-registry-sync-20260819.json','sitemap-discovery-navigation.xml']:
+            f=pathlib.Path('/tmp/media-release/original')/p;f.parent.mkdir(parents=True,exist_ok=True);f.write_bytes(pathlib.Path(p).read_bytes())
+          pathlib.Path('/tmp/media-release/provenance.json').write_text(json.dumps({'main':'65d56cec10e11f5a5c0861bb087ee87e64f5effa','proposal':source,'scope':'temporary checkout only; no commit, merge or deployment'}))
+          PY
+          python3 ops/media-dashboard/build_release.py
+          python3 ops/media-dashboard/build_release.py --check
+          python3 -m unittest discover -s ops/media-dashboard -p 'test_*.py' -v
+      - name: Install browser
+        run: |
+          python3 -m pip install playwright
+          python3 -m playwright install --with-deps chromium
+      - name: Diagnose scroll calls and layout without treating collection as acceptance
+        run: |
+          python3 - <<'PY'
+          import pathlib,json,subprocess,time
+          from playwright.sync_api import sync_playwright
+          out=pathlib.Path('/tmp/media-release');server=subprocess.Popen(['python3','-m','http.server','8765','--bind','127.0.0.1'],stdout=subprocess.DEVNULL,stderr=subprocess.DEVNULL);time.sleep(1)
+          rows=[]
+          try:
+            with sync_playwright() as p:
+              b=p.chromium.launch()
+              for language,route in [('es','es/medios-trazabilidad-relato-publico/'),('en','en/media-public-narrative-traceability/')]:
+                page=b.new_page(viewport={'width':390,'height':844})
+                page.add_init_script("""(() => {window.__scrollCalls=[];window.__inputs=[];for (const [object,name] of [[window,'scrollTo'],[window,'scrollBy'],[Element.prototype,'scrollIntoView']]){const original=object[name];object[name]=function(...args){window.__scrollCalls.push({at:performance.now(),name,args,stack:new Error().stack});return original.apply(this,args);};}for(const name of ['wheel','touchstart','pointerdown','keydown'])window.addEventListener(name,()=>window.__inputs.push({name,at:performance.now()}),{passive:true});})();""")
+                page.goto('http://127.0.0.1:8765/'+route+'#media-desk');page.wait_for_timeout(6500)
+                def state():
+                  return page.evaluate("""() => ({at:performance.now(),scrollY,heading:document.querySelector('#media-desk-title').getBoundingClientRect().y,scrollHeight:document.documentElement.scrollHeight,scrollCalls:window.__scrollCalls,inputs:window.__inputs})""")
+                before=state();page.mouse.move(220,550);page.mouse.wheel(0,350);samples=[]
+                for i in range(14):page.wait_for_timeout(150);samples.append(state())
+                page.screenshot(path=str(out/(language+'-after-wheel.png')))
+                rows.append({'lang':language,'before':before,'samples':samples});page.close()
+              b.close()
+          finally:server.terminate()
+          (out/'scroll-diagnostic.json').write_text(json.dumps(rows,ensure_ascii=False,indent=2))
+          print(json.dumps([{'lang':r['lang'],'samples':[[s['at'],s['scrollY'],s['heading'],len(s['scrollCalls'])] for s in r['samples']]} for r in rows],indent=2))
+          PY
+      - name: Bundle only public source context
+        if: always()
+        run: |
+          python3 - <<'PY'
+          import pathlib,zipfile,subprocess,json,hashlib
+          out=pathlib.Path('/tmp/media-release');out.mkdir(exist_ok=True)
+          paths=[str(p) for p in pathlib.Path('ops/media-dashboard').glob('*') if p.is_file()]+['assets/media-desk.css','assets/media-desk.js','es/medios-trazabilidad-relato-publico/index.html','en/media-public-narrative-traceability/index.html','assets/data/unitary-route-registry-sync-20260819.json','sitemap-discovery-navigation.xml','AGENTS.md','CHATGPT_START_HERE.md','ops/RELEASE_AUTOMATION_STATUS.json','ops/PUBLICATION_CONTROLLER.md','.github/workflows/release-acceptance.yml','archive/UNIVERSAL_PUBLICATION_AND_THREAD_DELETION_SAFETY_PROTOCOL_18AUG2026.md']
+          paths += [str(p) for p in pathlib.Path('assets').glob('*.js')]+['assets/styles.css']
+          manifest=[]
+          with zipfile.ZipFile(out/'source.zip','w',zipfile.ZIP_DEFLATED) as z:
+            for p in sorted(set(paths)):
+              f=pathlib.Path(p)
+              if f.is_file():z.write(f,p);manifest.append({'path':p,'sha256':hashlib.sha256(f.read_bytes()).hexdigest(),'bytes':f.stat().st_size})
+          (out/'manifest.json').write_text(json.dumps(manifest,indent=2))
+          PY
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        if: always()
+        with:
+          name: media-release-inspection
+          path: /tmp/media-release/
+          retention-days: 14
