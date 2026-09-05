@@ -33,30 +33,80 @@ PNG_NAMES = {
 }
 
 class LinkParser(HTMLParser):
+    """Conservative common-quote/hidden-content filter, not a browser renderer."""
+    VOID = {'area', 'base', 'br', 'col', 'embed', 'hr', 'img', 'input', 'link',
+            'meta', 'param', 'source', 'track', 'wbr'}
+    QUOTES = {'gmail_quote', 'yahoo_quoted', 'protonmail_quote', 'divrplyfwdmsg'}
+
     def __init__(self) -> None:
-        super().__init__(); self.links: set[str] = set(); self.text: list[str] = []; self.ignored = 0
+        super().__init__()
+        self.links: set[str] = set()
+        self.text: list[str] = []
+        self.stack: list[tuple[str, bool, str | None]] = []
+
     def handle_starttag(self, tag, attrs):
-        if tag in ('script', 'style'): self.ignored += 1
-        if tag == 'a' and not self.ignored:
-            self.links.update(unescape(v) for k, v in attrs if k == 'href' and v)
+        attributes = dict(attrs)
+        style = re.sub(r'\s+', '', attributes.get('style') or '').lower()
+        markers = set(((attributes.get('class') or '') + ' ' +
+                       (attributes.get('id') or '')).lower().split())
+        ignored = (any(row[1] for row in self.stack) or
+                   tag in {'script', 'style', 'head', 'blockquote'} or
+                   bool(markers & self.QUOTES) or 'hidden' in attributes or
+                   (attributes.get('aria-hidden') or '').lower() == 'true' or
+                   'display:none' in style or 'visibility:hidden' in style)
+        href = attributes.get('href') if tag == 'a' and not ignored else None
+        if tag not in self.VOID:
+            self.stack.append((tag, ignored, unescape(href) if href else None))
+        if tag == 'img' and not ignored and attributes.get('alt'):
+            self.handle_data(attributes['alt'])
+
+    def handle_startendtag(self, tag, attrs):
+        self.handle_starttag(tag, attrs)
+        if tag not in self.VOID:
+            self.handle_endtag(tag)
+
     def handle_endtag(self, tag):
-        if tag in ('script', 'style'): self.ignored = max(0, self.ignored - 1)
+        for index in range(len(self.stack) - 1, -1, -1):
+            if self.stack[index][0] == tag:
+                del self.stack[index:]
+                break
+
     def handle_data(self, data):
-        if not self.ignored: self.text.append(data)
+        if not any(row[1] for row in self.stack):
+            self.text.append(data)
+            if data.strip():
+                self.links.update(row[2] for row in self.stack if row[2])
+
+
+def current_plaintext(text: str) -> str:
+    """Exclude common quoted-history forms; manual rendering review is still required."""
+    lines = []
+    delimiter = re.compile(
+        r'^(?:On .+wrote:|El .+escribi[oó]:|Am .+schrieb.*:|'
+        r'-{2,}.*(?:Original Message|Forwarded message|Mensaje original|Mensaje reenviado).*)$',
+        re.IGNORECASE)
+    for line in text.splitlines():
+        if delimiter.match(line.strip()):
+            break
+        if not line.lstrip().startswith('>'):
+            lines.append(line)
+    return '\n'.join(lines)
 
 def project_route(value: str) -> bool:
     p = urlsplit(value)
     return (p.scheme == 'https' and p.netloc == 'sbu001monterecco.github.io'
-            and p.path.startswith('/por-derecho/') and not p.query)
+            and p.path.startswith('/por-derecho/') and not p.query
+            and '%' not in p.path and '..' not in p.path and '//' not in p.path)
 
 def extract_links(text: str, kind: str) -> set[str]:
     if kind == 'text/html':
         parser = LinkParser(); parser.feed(text)
-        return parser.links | set(re.findall(r'https://[^\s<>"\)]+', ''.join(parser.text)))
-    return {u.rstrip('.,;') for u in re.findall(r'https://[^\s<>"\)]+', text)}
+        return parser.links | extract_links(' '.join(parser.text), 'text/plain')
+    return {u.rstrip('.,;') for u in re.findall(r'https://[^\s<>"\)]+', current_plaintext(text))}
 
 def inspect_eml(raw: bytes, language: str, landing_url: str,
-                institutional: bool = False, expected: dict[str, str] | None = None) -> dict:
+                institutional: bool = False, expected: dict[str, str] | None = None,
+                institutional_urls: tuple[str, ...] | None = None) -> dict:
     """Check decoded MIME bodies/attachments; do not accept filenames in body as attachments."""
     errors: list[str] = []
     msg = BytesParser(policy=policy.default).parsebytes(raw)
@@ -72,6 +122,8 @@ def inspect_eml(raw: bytes, language: str, landing_url: str,
                           'png_signature': payload.startswith(b'\x89PNG\r\n\x1a\n')}
                 attachments.setdefault(part.get_filename(), []).append(record)
             return  # No links from forwarded .eml, PDF, attachment metadata, etc.
+        if part.get_content_type() == 'message/rfc822':
+            return  # A forwarded message without a filename is still not the new body.
         if part.is_multipart():
             for child in part.iter_parts(): visit(child)
         elif part.get_content_type() in ('text/plain', 'text/html'):
@@ -81,12 +133,22 @@ def inspect_eml(raw: bytes, language: str, landing_url: str,
     # German has no assumed published hub; an explicit, verified ES/EN hub must be selected by the operator.
     hub_language = language if language in ('es', 'en') else 'es'
     hub = BASE + hub_language + '/'
-    if not project_route(landing_url) or landing_url.rstrip('/') in (BASE.rstrip('/'), hub.rstrip('/')):
+    if (not project_route(landing_url) or not urlsplit(landing_url).path.startswith('/por-derecho/' + hub_language + '/')
+            or urlsplit(landing_url).path.rstrip('/') == urlsplit(hub).path.rstrip('/')):
         errors.append('INVALID_OR_NON_SPECIFIC_LANDING_URL')
     required = {hub: 'WEBSITE_HUB', landing_url: 'SPECIFIC_LANDING', WEBINAR: 'WEBINAR'}
     if institutional:
-        required[BASE + hub_language + '/reconstruccion-unitaria-autoridades-publicas/'] = 'COURT_AUTHORITY_CONTEXT'
-        required[BASE + hub_language + '/registros-institucionales/'] = 'INSTITUTIONAL_RECORDS'
+        # Do not invent translated slugs. Non-Spanish callers supply reviewed routes.
+        selected = institutional_urls
+        if selected is None and hub_language == 'es':
+            selected = (BASE + 'es/reconstruccion-unitaria-autoridades-publicas/',
+                        BASE + 'es/registros-institucionales/')
+        if not selected or len(set(selected)) < 2:
+            errors.append('MISSING_EXPLICIT_INSTITUTIONAL_ROUTES')
+        for index, url in enumerate(selected or (), 1):
+            if not project_route(url) or url in {hub, landing_url}:
+                errors.append('INVALID_INSTITUTIONAL_ROUTE')
+            required[url] = f'INSTITUTIONAL_ROUTE_{index}'
     for index, (kind, links) in enumerate(body_parts, 1):
         for url, label in required.items():
             if url not in links: errors.append(f'BODY_{index}_{kind}:MISSING_{label}')
@@ -99,11 +161,20 @@ def inspect_eml(raw: bytes, language: str, landing_url: str,
         records = attachments.get(filename, [])
         if len(records) != 1 or records[0]['sha256'] != digest:
             errors.append(f'ATTACHMENT_HASH_MISMATCH_OR_MISSING:{filename}')
+    if expected is not None:
+        for filename in attachments.keys() - expected.keys():
+            errors.append(f'UNEXPECTED_ATTACHMENT:{filename}')
+    for filename, records in attachments.items():
+        if len(records) > 1:
+            errors.append(f'DUPLICATE_ATTACHMENT:{filename}')
     return {'status': 'CONTENT_GATE_BLOCKED' if errors else 'CONTENT_GATE_PASS_ONLY',
             'errors': errors, 'attachments': attachments,
             'live_links_verified': False, 'history_gate_verified': False,
             'authorization_verified': False, 'sent_verified': False,
-            'note': 'Offline structural check only. Inspect visible rendering and source limits separately.'}
+            'rendered_visibility_verified': False, 'source_accuracy_verified': False,
+            'note': 'Offline structural check only. PNG signature is not full image decoding. '
+                    'Quote/hidden filters cover common forms only; inspect actual rendering, '
+                    'source limits, live access and exact authority separately.'}
 
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
@@ -111,6 +182,8 @@ def main() -> int:
     parser.add_argument('--language', choices=tuple(PNG_NAMES), default='es')
     parser.add_argument('--landing-url', required=True)
     parser.add_argument('--institutional', action='store_true')
+    parser.add_argument('--institutional-url', action='append',
+                        help='Repeat for two reviewed authority-access routes; required for non-Spanish defaults.')
     parser.add_argument('--attachment-hashes', type=Path,
                         help='Private JSON object mapping every approved filename to SHA-256.')
     args = parser.parse_args()
@@ -120,7 +193,8 @@ def main() -> int:
                 any(not isinstance(k, str) or not isinstance(v, str) or not re.fullmatch(r'[0-9a-f]{64}', v)
                     for k, v in expected.items())):
             raise ValueError('Invalid attachment hash manifest')
-        result = inspect_eml(args.eml.read_bytes(), args.language, args.landing_url, args.institutional, expected)
+        result = inspect_eml(args.eml.read_bytes(), args.language, args.landing_url, args.institutional, expected,
+                             tuple(args.institutional_url) if args.institutional_url else None)
         print(json.dumps(result, ensure_ascii=False, indent=2))
         return 1 if result['errors'] else 0
     except (OSError, ValueError, TypeError, KeyError, UnicodeError) as exc:
