@@ -173,13 +173,14 @@
       "Juzgado de Instrucción nº 4 de Arrecife",
       "Fernando Pérez Polo",
       "Juzgado de Primera Instancia nº 2 de Las Palmas de Gran Canaria",
-      "Juzgado de Primera Instancia nº 27 de Valencia"
+      "Juzgado de Primera Instancia nº 27 de Valencia",
+      "RAUDA"
     ]
   },
   "counts": {
-    "total": 351,
+    "total": 352,
     "PERSON": 165,
-    "ORGANISATION": 83,
+    "ORGANISATION": 84,
     "STRUCTURE": 11,
     "INSTITUTION": 49,
     "PROCEEDING": 43
@@ -213,7 +214,7 @@
     {
       "path": "matter-identity-registry-v1.organisations.json",
       "type": "ORGANISATION",
-      "count": 76
+      "count": 77
     },
     {
       "path": "matter-identity-registry-v1.professional-organisations.json",
@@ -275,5 +276,11 @@
       "type": "INSTITUTION",
       "count": 1
     }
-  ]
+  ],
+  "recovery_identity_control": {
+    "control_id": "PD-CR-20260905-01",
+    "as_of": "2026-09-05",
+    "identity_id": "PD-SP-O-0084",
+    "state": "SOURCE_LITERAL_ONLY_NO_CARET_OR_EXACT_LEGAL_ENTITY_UPGRADE"
+  }
 }
