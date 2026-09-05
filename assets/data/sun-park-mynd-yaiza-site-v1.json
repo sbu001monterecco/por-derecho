@@ -1,0 +1,313 @@
+{
+  "schema": "por-derecho.existing-identity-site-profile.v1",
+  "canonical_id": "PD-SP-O-0042",
+  "canonical_register": "assets/data/matter-identity-registry-v1.organisations.json",
+  "record_semantics": "Enrichment of the existing hotel/establishment identity, not a new registry or a new legal person. Immutable legacy ORGANISATION storage category is retained; object_kind controls site interpretation.",
+  "object_kind": "HOTEL_ESTABLISHMENT_AND_PHYSICAL_SITE",
+  "canonical_site_name": "Sun Park",
+  "current_commercial_name": "MYND Yaiza",
+  "alternative_names": [
+    "Hotel Sun Park",
+    "Sun Park",
+    "MYND Yaiza"
+  ],
+  "qualified_historical_brand_connection": {
+    "name": "Club Sei Lanzarote",
+    "canonical_brand_id": "PD-SP-O-0040",
+    "status": "SOURCE_AND_PERIOD_SPECIFIC_BRAND_CONNECTION_NOT_LEGAL_PERSON_OR_TITLE_EQUIVALENCE",
+    "route": "/es/lava-verde-club-sei-meeting-point/"
+  },
+  "canonical_address": {
+    "display": "Calle Janubio 3, Playa Blanca, Lanzarote 35580, Spain",
+    "street": "Calle Janubio 3",
+    "locality": "Playa Blanca",
+    "municipality": "Yaiza",
+    "island": "Lanzarote",
+    "postal_code": "35580",
+    "province": "Las Palmas",
+    "region": "Canary Islands",
+    "country": "Spain",
+    "locked_on": "2026-09-05",
+    "rule": "SUN_PARK_MYND_YAIZA_SITE_ADDRESS_LOCK_05SEP2026.md",
+    "authority": "Explicit project address lock, corroborated by the indexed official Lanzarote tourism accommodation listing; not a new cadastral/title certification."
+  },
+  "source_address_variants": [
+    {
+      "literal": "AVENIDA JANUBIO s/n-URB. SUN PARK- Playa Blanca-T.M. YAIZA- 35580, Lanzarote",
+      "source": "COA Lanzarote Hoja de Dirección, 25/02/2022, 22/000036/7800",
+      "status": "HISTORICAL_DOCUMENT_LITERAL_PRESERVED"
+    },
+    {
+      "literal": "Avda. Janubio S/N, 35580 Playa Blanca - Lanzarote",
+      "source_url": "https://www.myndhotels.com/en/hotels/lanzarote/mynd-yaiza/map/",
+      "checked_on": "2026-09-05",
+      "status": "CURRENT_OPERATOR_SOURCE_VARIANT_PRESERVED_NOT_SILENTLY_REWRITTEN"
+    }
+  ],
+  "cadastral_reference": {
+    "literal": "5137001FS1953N",
+    "status": "DOCUMENTED_PROJECT_REFERENCE",
+    "source": "COA Lanzarote 22/000036/7800, first sheet",
+    "boundary": "Not a cadastral validation of all individual fincas, ownership, the estate perimeter, or comprehensive current boundaries."
+  },
+  "routes": {
+    "es": "/es/sun-park-mynd-yaiza/",
+    "en": "/en/sun-park-mynd-yaiza/"
+  },
+  "family_routes": {
+    "es": "/es/acosta-matos-familia/",
+    "en": "/en/acosta-matos-family/"
+  },
+  "related_canonical_ids": [
+    "PD-SP-O-0002",
+    "PD-SP-O-0003",
+    "PD-SP-O-0005",
+    "PD-SP-O-0006",
+    "PD-SP-O-0007",
+    "PD-SP-O-0008",
+    "PD-SP-O-0074",
+    "PD-SP-O-0018",
+    "PD-SP-O-0019",
+    "PD-SP-O-0020",
+    "PD-SP-O-0038",
+    "PD-SP-O-0040",
+    "PD-SP-P-0011",
+    "PD-SP-P-0012",
+    "PD-SP-P-0010",
+    "PD-SP-R-0001"
+  ],
+  "relationship_boundary": "Connections enable navigation and actor-specific source review; they do not merge people, companies, estates, proceedings, ownership, authority, knowledge or responsibility. The hotel site has no assigned single legal owner in this record.",
+  "discovery_routes": {
+    "es": [
+      {
+        "label": "Familia Acosta Matos / MASTER MYND",
+        "route": "/es/acosta-matos-familia/",
+        "related_id": null,
+        "status": "DISCOVERY_EDGE_EXISTING_DOSSIER_NOT_NEW_SUBSTANTIVE_FINDING"
+      },
+      {
+        "label": "Perímetro Acosta Matos",
+        "route": "/es/acosta-matos-perimetro/",
+        "related_id": null,
+        "status": "DISCOVERY_EDGE_EXISTING_DOSSIER_NOT_NEW_SUBSTANTIVE_FINDING"
+      },
+      {
+        "label": "RICPE · Hotel New Trend · Canarian Hospitality",
+        "route": "/es/ric-private-equity-sun-park/",
+        "related_id": "PD-SP-O-0020",
+        "status": "DISCOVERY_EDGE_EXISTING_DOSSIER_NOT_NEW_SUBSTANTIVE_FINDING"
+      },
+      {
+        "label": "JDAM · LPAM · toma de control de 7-jun-2018",
+        "route": "/es/toma-control-sun-park-7-junio-2018/",
+        "related_id": "PD-SP-P-0011",
+        "status": "DISCOVERY_EDGE_EXISTING_DOSSIER_NOT_NEW_SUBSTANTIVE_FINDING"
+      },
+      {
+        "label": "Administrador concursal",
+        "route": "/es/francisco-de-borja-rodriguez-batllori-laffitte/",
+        "related_id": "PD-SP-P-0010",
+        "status": "DISCOVERY_EDGE_EXISTING_DOSSIER_NOT_NEW_SUBSTANTIVE_FINDING"
+      },
+      {
+        "label": "Concurso 36/2012 · masa activa",
+        "route": "/es/concurso-36-2012-masa-activa-2018-2021/",
+        "related_id": "PD-SP-R-0001",
+        "status": "DISCOVERY_EDGE_EXISTING_DOSSIER_NOT_NEW_SUBSTANTIVE_FINDING"
+      },
+      {
+        "label": "Comunidad de Propietarios · capa de explotación",
+        "route": "/es/comunidad-instrumentalizacion/",
+        "related_id": "PD-SP-O-0005",
+        "status": "DISCOVERY_EDGE_EXISTING_DOSSIER_NOT_NEW_SUBSTANTIVE_FINDING"
+      },
+      {
+        "label": "Arquitectura · COA Lanzarote · expediente JDAM",
+        "route": "/es/arquitectura-nodo-documental-jdam/",
+        "related_id": "PD-SP-P-0011",
+        "status": "DISCOVERY_EDGE_EXISTING_DOSSIER_NOT_NEW_SUBSTANTIVE_FINDING"
+      },
+      {
+        "label": "Meeting Point / Club Sei · roles separados",
+        "route": "/es/lava-verde-club-sei-meeting-point/",
+        "related_id": "PD-SP-O-0040",
+        "status": "DISCOVERY_EDGE_EXISTING_DOSSIER_NOT_NEW_SUBSTANTIVE_FINDING"
+      },
+      {
+        "label": "Registro de actores, partes y representantes",
+        "route": "/es/actores-partes-abogados-representantes/",
+        "related_id": null,
+        "status": "DISCOVERY_EDGE_EXISTING_DOSSIER_NOT_NEW_SUBSTANTIVE_FINDING"
+      },
+      {
+        "label": "Mapa probatorio penal unitario",
+        "route": "/es/mapa-probatorio-penal-unitario/",
+        "related_id": null,
+        "status": "DISCOVERY_EDGE_EXISTING_DOSSIER_NOT_NEW_SUBSTANTIVE_FINDING"
+      },
+      {
+        "label": "Autoridades · deberes y recuperación de activos",
+        "route": "/es/autoridades-deberes-recuperacion-activos/",
+        "related_id": null,
+        "status": "DISCOVERY_EDGE_EXISTING_DOSSIER_NOT_NEW_SUBSTANTIVE_FINDING"
+      },
+      {
+        "label": "Registro de activos digitales",
+        "route": "/es/registro-activos-digitales/",
+        "related_id": null,
+        "status": "DISCOVERY_EDGE_EXISTING_DOSSIER_NOT_NEW_SUBSTANTIVE_FINDING"
+      }
+    ],
+    "en": [
+      {
+        "label": "Acosta Matos family / MASTER MYND",
+        "route": "/en/acosta-matos-family/",
+        "related_id": null,
+        "status": "DISCOVERY_EDGE_EXISTING_DOSSIER_NOT_NEW_SUBSTANTIVE_FINDING"
+      },
+      {
+        "label": "Acosta Matos perimeter",
+        "route": "/en/acosta-matos-perimeter/",
+        "related_id": null,
+        "status": "DISCOVERY_EDGE_EXISTING_DOSSIER_NOT_NEW_SUBSTANTIVE_FINDING"
+      },
+      {
+        "label": "RICPE · Hotel New Trend · Canarian Hospitality",
+        "route": "/en/ric-private-equity-sun-park/",
+        "related_id": "PD-SP-O-0020",
+        "status": "DISCOVERY_EDGE_EXISTING_DOSSIER_NOT_NEW_SUBSTANTIVE_FINDING"
+      },
+      {
+        "label": "JDAM · LPAM · takeover of 7 June 2018",
+        "route": "/en/sun-park-takeover-7-june-2018/",
+        "related_id": "PD-SP-P-0011",
+        "status": "DISCOVERY_EDGE_EXISTING_DOSSIER_NOT_NEW_SUBSTANTIVE_FINDING"
+      },
+      {
+        "label": "Insolvency administrator",
+        "route": "/en/francisco-de-borja-rodriguez-batllori-laffitte/",
+        "related_id": "PD-SP-P-0010",
+        "status": "DISCOVERY_EDGE_EXISTING_DOSSIER_NOT_NEW_SUBSTANTIVE_FINDING"
+      },
+      {
+        "label": "Concurso 36/2012 · active estate",
+        "route": "/en/insolvency-36-2012-active-estate-2018-2021/",
+        "related_id": "PD-SP-R-0001",
+        "status": "DISCOVERY_EDGE_EXISTING_DOSSIER_NOT_NEW_SUBSTANTIVE_FINDING"
+      },
+      {
+        "label": "Owners’ Community · exploitation layer",
+        "route": "/en/community-instrumentalisation/",
+        "related_id": "PD-SP-O-0005",
+        "status": "DISCOVERY_EDGE_EXISTING_DOSSIER_NOT_NEW_SUBSTANTIVE_FINDING"
+      },
+      {
+        "label": "Architecture · COA Lanzarote · JDAM record",
+        "route": "/en/architecture-documentary-node-jdam/",
+        "related_id": "PD-SP-P-0011",
+        "status": "DISCOVERY_EDGE_EXISTING_DOSSIER_NOT_NEW_SUBSTANTIVE_FINDING"
+      },
+      {
+        "label": "Meeting Point / Club Sei · distinct roles",
+        "route": "/en/lava-verde-club-sei-meeting-point/",
+        "related_id": "PD-SP-O-0040",
+        "status": "DISCOVERY_EDGE_EXISTING_DOSSIER_NOT_NEW_SUBSTANTIVE_FINDING"
+      },
+      {
+        "label": "Actors, parties and representatives register",
+        "route": "/en/actors-parties-lawyers-representatives/",
+        "related_id": null,
+        "status": "DISCOVERY_EDGE_EXISTING_DOSSIER_NOT_NEW_SUBSTANTIVE_FINDING"
+      },
+      {
+        "label": "Unitary criminal evidence map",
+        "route": "/en/unitary-criminal-evidence-map/",
+        "related_id": null,
+        "status": "DISCOVERY_EDGE_EXISTING_DOSSIER_NOT_NEW_SUBSTANTIVE_FINDING"
+      },
+      {
+        "label": "Authorities · duties and asset recovery",
+        "route": "/en/authorities-duties-asset-recovery/",
+        "related_id": null,
+        "status": "DISCOVERY_EDGE_EXISTING_DOSSIER_NOT_NEW_SUBSTANTIVE_FINDING"
+      },
+      {
+        "label": "Digital-media asset register",
+        "route": "/en/digital-media-asset-register/",
+        "related_id": null,
+        "status": "DISCOVERY_EDGE_EXISTING_DOSSIER_NOT_NEW_SUBSTANTIVE_FINDING"
+      }
+    ]
+  },
+  "architecture": {
+    "architect_source_literal": "José D. Acosta Matos",
+    "person_id": "PD-SP-P-0011",
+    "personal_registration": "COAGC 2315",
+    "role_literal": "REDACTOR DEL PROYECTO DE EJECUCIÓN",
+    "execution_field_percent": 100,
+    "promoter_literal": "CDAD. PROP. SUN PARK DE PLAYA BLANCA",
+    "visado_date": "2022-02-25",
+    "reference": "22/000036/7800",
+    "distinct_stamp_number": "21428",
+    "qualification": "The source expressly does not presume commencement of works or actual intervention by the technician; the complete mandate, licences, authority and current membership reconciliation remain separate.",
+    "source_route": "/es/arquitectura-nodo-documental-jdam/"
+  },
+  "images": [
+    {
+      "role": "EDITORIAL_AI_ASSISTED_NOT_DOCUMENTARY",
+      "path": "assets/master-mynd-acosta-matos-architect.webp",
+      "sha256": "5f4299f9e536064db808bcdcb8e353ad8d382945f27e31509e97d84aabf5cdeb",
+      "bytes": 132670,
+      "width": 1122,
+      "height": 1402,
+      "provenance": "Recovered intact from the previously approved complete MASTER MYND English draft; not regenerated.",
+      "digital_asset_id": "PD-DMA-0005"
+    },
+    {
+      "role": "ORIGINAL_CORPORATE_PHOTOGRAPH",
+      "path": "assets/acosta-matos-family-hotel-plans.jpg",
+      "sha256": "aad5ebaffddf8211be21468f5936b6b1a0066c631919a43a06e9886a9061cd37",
+      "bytes": 41954,
+      "width": 770,
+      "height": 420,
+      "provenance": "Exact byte equality with the photograph embedded in the preserved 10 February 2021 El Economista article, capture date 26 February 2021; also visually compared with first-party corporate source.",
+      "digital_asset_id": "PD-DMA-0006"
+    }
+  ],
+  "plan_identification": {
+    "claim": "Gil Marer identifies at least some plans visible in the original four-person photograph as relating to Sun Park.",
+    "status": "AUTHOR_ASSERTED_IDENTIFICATION_INDEPENDENT_MATCH_NOT_COMPLETED",
+    "recovery_status": "Ten pages of source Sun Park plans recovered from an authorised private source system; no longer classified as unavailable.",
+    "missing_step": "Document page/sheet identifiers, original-photo detail positions and reproducible technical comparison, with source-publication and privacy review before placing a plan derivative online.",
+    "boundary": "No face-based identification; no attribution of plans or meeting facts to AI-reconstructed poster details; no claim that every visible sheet is Sun Park."
+  },
+  "source_urls": {
+    "tourism": "https://turismolanzarote.com/en/accommodation/hotel-mynd-yaiza/",
+    "operator": "https://www.myndhotels.com/en/hotels/lanzarote/mynd-yaiza/map/",
+    "ricpe": "https://ric.capital/el-capital-de-canarias-calienta-motores-para-el-reseteo-con-aerolinea-y-ric-para-renovacion-hotelera/",
+    "economista": "https://www.eleconomista.es/canarias/noticias/11042470/02/21/El-capital-de-Canarias-calienta-motores-para-el-reseteo-con-aerolinea-y-RIC-para-renovacion-hotelera.html",
+    "company_photo": "https://www.acostamatos.com/wp-content/uploads/2018/12/OFICINA-AM_12-e1546525586549.jpg"
+  },
+  "workspace_reference": "MASTER MYND — Acosta Matos family / Sun Park / MYND Yaiza — evidential architecture, JDAM/LPAM attributed statements, El Economista image, Sun Park plans, professional architecture record and criminal-first perimeter analysis.",
+  "workspace_id": "PD-WS-20260901-0001",
+  "control_date": "2026-09-05",
+  "open_evidence_steps": [
+    "Independent original-photo/plan-sheet matching",
+    "Native audio and voice authentication",
+    "Commission payment and ultimate-recipient evidence",
+    "Verification of attributed judge/AC contact by lawful source production",
+    "Complete title/unit/estate reconciliation; no ownership assigned from marketing address",
+    "Professional-record reconciliation and complete mandate/licence file"
+  ],
+  "legacy_media_gaps": [
+    {
+      "path": "assets/acosta-matos-founder-gerardo-nicanor-acosta-armas-20260828.webp",
+      "status": "PREEXISTING_TRUNCATED_PORTRAIT_ORIGINAL_RECOVERY_OPEN"
+    },
+    {
+      "path": "assets/acosta-matos-laura-patricia-profile-20260828.webp",
+      "status": "PREEXISTING_TRUNCATED_PORTRAIT_ORIGINAL_RECOVERY_OPEN"
+    }
+  ],
+  "publication_status_semantics": "Publication state is verified externally by the exact merged commit, Pages run and release receipt; file existence is not deployment proof."
+}
