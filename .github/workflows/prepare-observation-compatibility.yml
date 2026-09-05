@@ -36,19 +36,9 @@ jobs:
           def patch(path,old,new):
               p=root/path;t=p.read_text();assert t.count(old)==1,(path,'source anchor differs');p.write_text(t.replace(old,new,1))
           patch('scripts/orion_architecture_clarification_20260905.py',"        if actual != desired: raise RuntimeError('non-deterministic output '+path)","        if path.endswith('.html'):\n            from source_observation_contracts import preserved_owned_page\n            preserved_owned_page(path, desired, actual, MARKER)\n            if path in [pair[0] for pair in ROUTES.values()]:\n                preserved_owned_page(path, desired, actual, 'documented-connections')\n        elif actual != desired: raise RuntimeError('non-deterministic output '+path)")
-          patch('scripts/orion_architecture_clarification_20260905.py',"    if args.apply:\n        for path,text in expected(args.base).items():","    if args.apply:\n        raise SystemExit('Historical whole-file writer retired; preserve current pages and prepare scoped blocks.')\n        for path,text in expected(args.base).items():")
+          patch('scripts/orion_architecture_clarification_20260905.py',"    if args.apply: apply()","    if args.apply: raise SystemExit('Historical whole-file writer retired; preserve current pages and prepare scoped blocks.')")
           patch('scripts/validate_alberto_meeting_point_first_hop_caret.py','    parser.feed(path.read_text(encoding="utf-8"))','    from source_observation_contracts import historical_surface\n    parser.feed(historical_surface(path))')
-          path='scripts/check_release_acceptance.py';t=(root/path).read_text()
-          anchor="    checks=[('release-contract-tests'"
-          # Keep the original required set and add a required child command by insertion.
-          if anchor not in t:
-              anchor="    checks = [('release-contract-tests'"
-          assert anchor in t, 'Acceptance command anchor differs'
-          t=t.replace(anchor,anchor,1)
-          needle='    results=[]'
-          if needle not in t:needle='    results = []'
-          assert t.count(needle)==1
-          t=t.replace(needle,"    checks.append(('source-observation-tests',[sys.executable,'-m','unittest','discover','-s','scripts','-p','test_source_observation_contracts.py','-v']))\n"+needle,1);(root/path).write_text(t)
+          patch('scripts/check_release_acceptance.py','    results=[]',"    checks.append(('source-observation-tests',[sys.executable,'-m','unittest','discover','-s','scripts','-p','test_source_observation_contracts.py','-v']))\n    results=[]")
           bootstrap='.github/workflows/prepare-observation-compatibility.yml';(root/bootstrap).unlink()
           paths=['scripts/source_observation_contracts.py','scripts/test_source_observation_contracts.py','scripts/orion_architecture_clarification_20260905.py','scripts/validate_alberto_meeting_point_first_hop_caret.py','scripts/check_release_acceptance.py']
           subprocess.run(['git','add','--',*paths,bootstrap],check=True)
