@@ -15,26 +15,17 @@ jobs:
         with:
           fetch-depth: 0
           persist-credentials: false
-      - run: python3 -m pip install pymupdf==1.28.2 pillow==12.3.0 markdown jsonschema playwright
-      - name: Prepare output and explicit syntax/link corrections outside checkout
+      - run: python3 -m pip install pymupdf==1.28.2 pillow==12.3.0 markdown beautifulsoup4 jsonschema playwright
+      - name: Prepare complete source delta and explicit repair diffs outside checkout
         run: |
           mkdir -p /tmp/jsp-boc-review
+          python3 scripts/prepare_jsp_boc_review_repairs.py
+          git rev-parse HEAD > /tmp/jsp-boc-review/source-head.txt
           python3 - <<'PY'
-          import pathlib,json,hashlib,difflib,shutil,subprocess
-          root=pathlib.Path.cwd();out=pathlib.Path('/tmp/jsp-boc-review/release');out.mkdir(parents=True)
-          path='scripts/prepare_jsp_boc_release.py';original=(root/path).read_text()
-          corrected=original.replace('else1','else 1')
-          old="href=source_links.get(sid,'../../'+CHILD[lang].replace('index.html','')+'#'+sid)"
-          new="href=source_links.get(sid,('../../'+SUP) if extra else ('../../'+CHILD[lang].replace('index.html','')+'#'+sid))"
-          assert old in corrected;corrected=corrected.replace(old,new)
-          compile(corrected,path,'exec')
-          ns={'__name__':'prepared_review','__file__':str(root/path)};exec(compile(corrected,path,'exec'),ns);ns['prepare'](out)
-          target=out/path;target.parent.mkdir(parents=True,exist_ok=True);target.write_text(corrected)
-          (out.parent/'generator-correction.diff').write_text(''.join(difflib.unified_diff(original.splitlines(True),corrected.splitlines(True),fromfile='original',tofile='corrected')))
-          objects=json.loads((out/'OBJECTS.json').read_text());b=target.read_bytes();objects.append({'path':path,'bytes':len(b),'sha256':hashlib.sha256(b).hexdigest(),'git_blob':hashlib.sha1(b'blob '+str(len(b)).encode()+b'\0'+b).hexdigest()});(out/'OBJECTS.json').write_text(json.dumps(objects,indent=2))
-          (out.parent/'source-head.txt').write_text(subprocess.check_output(['git','rev-parse','HEAD'],text=True))
-          for p in ['archive/jsp-boc-execution-spec-20260905.json','archive/jsp-six-section-source-20260905.en.md','archive/jsp-six-section-source-20260905.es.md','scripts/validate_jsp_incident_reader.py','scripts/validate_jsp_options.py']:
-              t=out.parent/'inputs'/p;t.parent.mkdir(parents=True,exist_ok=True);shutil.copy2(root/p,t)
+          import pathlib,shutil
+          root=pathlib.Path.cwd();out=pathlib.Path('/tmp/jsp-boc-review/inputs')
+          for p in ['archive/jsp-boc-execution-spec-20260905.json','archive/jsp-six-section-source-20260905.en.md','archive/jsp-six-section-source-20260905.es.md','scripts/validate_jsp_boc_release.py','scripts/prepare_jsp_boc_review_repairs.py']:
+              t=out/p;t.parent.mkdir(parents=True,exist_ok=True);shutil.copy2(root/p,t)
           PY
       - name: Build isolated local QA tree without pushing
         run: |
@@ -46,27 +37,26 @@ jobs:
               t=qa/r['path'];t.parent.mkdir(parents=True,exist_ok=True);shutil.copy2(out/r['path'],t)
           PY
           git -C /tmp/jsp-boc-review/qa-tree -c user.name='Local review only' -c user.email='review@example.invalid' add -A
-          git -C /tmp/jsp-boc-review/qa-tree -c user.name='Local review only' -c user.email='review@example.invalid' commit -m 'Isolated candidate for read-only review; not pushed'
+          git -C /tmp/jsp-boc-review/qa-tree -c user.name='Local review only' -c user.email='review@example.invalid' commit -m 'Isolated exact candidate for read-only QA; not pushed'
           git -C /tmp/jsp-boc-review/qa-tree diff --stat origin/main...HEAD > /tmp/jsp-boc-review/delta-stat.txt
-      - name: Validate schema and run inherited candidate checks
+      - name: Run inherited and publication checks with explicit changed-file baseline
         run: |
           cd /tmp/jsp-boc-review/qa-tree
           python3 - <<'PY'
-          import json,pathlib,subprocess,concurrent.futures
-          from jsonschema import Draft202012Validator
-          root=pathlib.Path.cwd();out=pathlib.Path('/tmp/jsp-boc-review/checks');out.mkdir()
-          schema=json.loads((root/'.github/evidence-intelligence/schemas/institutional-communications.schema.json').read_text());data=json.loads((root/'assets/data/institutional-communications-register-v1.json').read_text());errors=[str(e) for e in Draft202012Validator(schema).iter_errors(data)];(out/'schema.json').write_text(json.dumps(errors,indent=2));print('schema errors:',len(errors))
-          jobs=[['python3','scripts/validate_repository_preservation.py'],['python3','scripts/validate_publication_integrity.py'],['python3','scripts/validate_audience_experience.py'],['python3','scripts/validate_jsp_options.py'],['python3','scripts/validate_jsp_2017_dossier.py','--base','origin/main']]
+          import json,pathlib,subprocess,concurrent.futures,os
+          out=pathlib.Path('/tmp/jsp-boc-review/checks');out.mkdir();env=dict(os.environ);env['BASE_SHA']=subprocess.check_output(['git','rev-parse','origin/main'],text=True).strip()
+          jobs=[['python3','scripts/validate_repository_preservation.py'],['python3','scripts/validate_publication_integrity.py','--base',env['BASE_SHA']],['python3','scripts/validate_audience_experience.py'],['python3','scripts/validate_jsp_options.py'],['python3','scripts/validate_jsp_2017_dossier.py','--base','origin/main']]
           def run(command):
-              p=subprocess.run(command,text=True,capture_output=True);name=pathlib.Path(command[1]).stem;(out/(name+'.log')).write_text(p.stdout+'\n'+p.stderr);return {'command':command,'exit':p.returncode}
-          with concurrent.futures.ThreadPoolExecutor(max_workers=5) as pool:results=list(pool.map(run,jobs))
-          (out/'results.json').write_text(json.dumps({'schema_errors':len(errors),'results':results},indent=2));print(json.dumps(results,indent=2))
+              p=subprocess.run(command,text=True,capture_output=True,env=env);name=pathlib.Path(command[1]).stem;(out/(name+'.log')).write_text(p.stdout+'\n'+p.stderr);return {'command':command,'exit':p.returncode}
+          with concurrent.futures.ThreadPoolExecutor(max_workers=5)as pool:results=list(pool.map(run,jobs))
+          (out/'results.json').write_text(json.dumps(results,indent=2));print(json.dumps(results,indent=2))
           PY
-      - name: Install browsers and check incident reader
+      - name: Install browsers and check both independent readers
         run: |
           python3 -m playwright install --with-deps chromium firefox webkit
           cd /tmp/jsp-boc-review/qa-tree
           python3 scripts/validate_jsp_incident_reader.py --base origin/main --output /tmp/jsp-boc-review/incident-browser
+          python3 scripts/validate_jsp_boc_release.py --output /tmp/jsp-boc-review/root-browser
       - name: Assert checkout unchanged
         if: always()
         run: git diff --exit-code && git diff --cached --exit-code
@@ -79,10 +69,11 @@ jobs:
             /tmp/jsp-boc-review/inputs
             /tmp/jsp-boc-review/checks
             /tmp/jsp-boc-review/incident-browser
+            /tmp/jsp-boc-review/root-browser
             /tmp/jsp-boc-review/generator-correction.diff
             /tmp/jsp-boc-review/source-head.txt
             /tmp/jsp-boc-review/delta-stat.txt
           retention-days: 30
           if-no-files-found: error
-# This review records failures; neither a green workflow nor an isolated local
-# test commit is a publication permit. No authenticated repository write occurs.
+# Failures are recorded and must be resolved; a workflow status is not a
+# publication permit. Local QA commits are isolated and never pushed.
