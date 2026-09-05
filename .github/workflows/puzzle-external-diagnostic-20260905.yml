@@ -1,0 +1,112 @@
+name: Puzzle external diagnostic 20260905
+on:
+  push:
+    branches: ['integration/puzzle-continuity-external-view-20260905']
+    paths: ['.github/workflows/puzzle-external-diagnostic-20260905.yml']
+permissions:
+  contents: read
+concurrency:
+  group: puzzle-external-diagnostic-20260905
+  cancel-in-progress: true
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          path: current-main
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Capture current tree and verify existing master object without publishing it
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          mkdir -p diagnostics
+          python - <<'PY'
+          import base64, hashlib, json, os, pathlib, subprocess, tarfile, urllib.request
+          root = pathlib.Path('current-main')
+          sha = subprocess.check_output(['git','-C',str(root),'rev-parse','HEAD'],text=True).strip()
+          tracked = subprocess.check_output(['git','-C',str(root),'ls-files','-z']).decode().split('\0')
+          exts = {'.md','.html','.css','.js','.mjs','.json','.py','.txt','.yml','.yaml','.xml','.csv'}
+          chosen = [p for p in tracked if p and pathlib.Path(p).suffix.lower() in exts and (root/p).is_file() and (root/p).stat().st_size < 15000000]
+          with tarfile.open('diagnostics/current-main-text.tar.gz','w:gz') as out:
+              for path in chosen:
+                  out.add(root/path,arcname=path,recursive=False)
+          summary = {'main_sha':sha,'tracked_files':len([p for p in tracked if p]),'text_snapshot_files':len(chosen),'scope':'all tracked path inventory; bounded text snapshot, not a semantic review of every source'}
+          pathlib.Path('diagnostics/current-tree.json').write_text(json.dumps(summary,indent=2))
+          blob = '2a26b97c197897e3a7ea689e9e530e92088d9cf1'
+          result = {'git_blob_sha1':blob,'expected_sha256':'e441bdb368c0092d5b15ca5ee911eeac266540bde54817e424f3075f4c5fdd47','expected_size':50046618,'native_uploaded_as_artifact':False}
+          try:
+              req = urllib.request.Request('https://api.github.com/repos/sbu001monterecco/por-derecho/git/blobs/'+blob,headers={'Accept':'application/vnd.github.raw+json','Authorization':'Bearer '+os.environ['GH_TOKEN'],'X-GitHub-Api-Version':'2022-11-28'})
+              with urllib.request.urlopen(req,timeout=120) as response:
+                  raw=response.read(); result['http_status']=response.status
+              if raw.lstrip().startswith(b'{'):
+                  payload=json.loads(raw)
+                  raw=base64.b64decode(payload['content'])
+              result.update({'size':len(raw),'sha256':hashlib.sha256(raw).hexdigest(),'pdf_magic':raw.startswith(b'%PDF-')})
+              result['verified']=result['size']==result['expected_size'] and result['sha256']==result['expected_sha256'] and result['pdf_magic']
+              del raw
+          except Exception as exc:
+              result.update({'verified':False,'error_type':type(exc).__name__,'error':str(exc)[:300]})
+          pathlib.Path('diagnostics/master-object-check.json').write_text(json.dumps(result,indent=2))
+          print(json.dumps(summary)); print(json.dumps(result))
+          PY
+      - name: Install browser test tools
+        run: |
+          python -m pip install playwright==1.55.0
+          python -m playwright install --with-deps chromium
+      - name: Unauthenticated public Puzzle readback
+        run: |
+          python - <<'PY'
+          import json, pathlib, time, urllib.request
+          from playwright.sync_api import sync_playwright
+          root=pathlib.Path('diagnostics'); results=[]
+          base='https://sbu001monterecco.github.io/por-derecho/'
+          for asset in ['assets/docs/puzzle/PUZZLE-2024-original.pdf','assets/docs/puzzle/PUZZLE-2024-web-reading-copy.pdf','assets/docs/puzzle/PUZZLE-2024-overview.jpg']:
+              try:
+                  with urllib.request.urlopen(urllib.request.Request(base+asset,method='HEAD'),timeout=30) as response:
+                      results.append({'asset':asset,'status':response.status,'content_type':response.headers.get('Content-Type'),'size':response.headers.get('Content-Length')})
+              except Exception as exc:
+                  results.append({'asset':asset,'error':str(exc)[:240]})
+          with sync_playwright() as pw:
+              browser=pw.chromium.launch()
+              for lang in ['en','es']:
+                  for label,width,height in [('desktop',1440,900),('phone',390,844),('tablet',820,1180)]:
+                      context=browser.new_context(viewport={'width':width,'height':height},is_mobile=label=='phone',has_touch=label!='desktop')
+                      page=context.new_page(); errors=[]
+                      page.on('pageerror',lambda error: errors.append(str(error)))
+                      result={'language':lang,'device_emulation':label,'width':width,'height':height,'physical_device_test':False,'url':base+lang+'/puzzle/#p10'}
+                      try:
+                          started=time.monotonic(); response=page.goto(result['url'],wait_until='domcontentloaded',timeout=60000)
+                          page.wait_for_timeout(10000)
+                          result['http_status']=response.status if response else None
+                          result['elapsed_seconds']=round(time.monotonic()-started,2)
+                          result['viewer']=page.locator('.pd-puzzle-viewer').count()
+                          if result['viewer']:
+                              viewer=page.locator('.pd-puzzle-viewer').first
+                              result['pdf_state']=viewer.get_attribute('data-pdf-state')
+                              result['visible']=viewer.is_visible()
+                              result['page_input']=viewer.locator('[data-page-input]').input_value()
+                              result['iframe_source']=viewer.locator('iframe').get_attribute('src')
+                              result['original_download_attribute']=viewer.locator('[data-original-pdf]').get_attribute('download')
+                              viewer.scroll_into_view_if_needed()
+                          result['horizontal_overflow']=page.evaluate('document.documentElement.scrollWidth > innerWidth + 1')
+                          page.screenshot(path=str(root/(lang+'-'+label+'-before.png')),full_page=False)
+                      except Exception as exc:
+                          result['error']=str(exc)[:600]
+                      result['page_errors']=errors[:12]
+                      results.append(result); context.close()
+              browser.close()
+          root.joinpath('external-before.json').write_text(json.dumps(results,ensure_ascii=False,indent=2))
+          print(json.dumps(results,ensure_ascii=False,indent=2))
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: puzzle-external-diagnostic-20260905
+          path: diagnostics/
+          retention-days: 14
