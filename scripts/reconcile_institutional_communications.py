@@ -1459,6 +1459,10 @@ from prepare_orion_notice_register_20260905 import load_notice_events
 KEY_EVENTS.extend(load_notice_events(REPO_ROOT))
 
 
+from prepare_cajasiete_board_visuals_20260905 import load_cajasiete_events
+KEY_EVENTS.extend(load_cajasiete_events(REPO_ROOT))
+
+
 def _existing_receipt_ids(register: dict[str, Any] | None) -> dict[str, str]:
     if not register:
         return {}

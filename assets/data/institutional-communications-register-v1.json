@@ -46,10 +46,10 @@
   "control_date": "2026-09-01",
   "denominator_control": {
     "arithmetic_check": "75 detailed + 22 metadata-only = 97 reported total",
-    "curated_source_proved_events": 102,
+    "curated_source_proved_events": 104,
     "detailed_baseline_receipt_rows_expected": 75,
     "detailed_baseline_receipt_rows_registered": 75,
-    "event_rows_total": 333,
+    "event_rows_total": 335,
     "mailbox_draft_rows": 3,
     "mailbox_inbound_email_rows": 101,
     "mailbox_outbound_email_rows": 42,
@@ -9081,6 +9081,116 @@
       "source_key": "ORION-NOTICE:N-20260904-EMAIL",
       "source_timezone": "NOT_STATED; no timezone conversion inferred",
       "transport_link_state": "SEPARATE_ACT_AND_TRANSPORT_LINKS_IN_CANONICAL_CROSSWALK"
+    },
+    {
+      "attribution_state": "INSTITUTIONAL_NOTICE_NO_PERSONAL_SIGNATORY_ASSERTED",
+      "canonical_anchor_en": "en/institutional-records/#communication-PD-SP-EVT-0179",
+      "canonical_anchor_es": "es/registros-institucionales/#communication-PD-SP-EVT-0179",
+      "channel": "EMAIL",
+      "cohort": "CURATED_SOURCE_PROVED_EVENT",
+      "criminal_responsibility_transfer": false,
+      "direction": "INBOUND_FROM_INSTITUTION",
+      "does_not_prove": [
+        "Receipt does not establish the complete submission or attachment inventory, formal admissibility, substantive review, board circulation or the truth of allegations. Access credentials are withheld."
+      ],
+      "does_not_prove_es": "El acuse no acredita el contenido íntegro o inventario de anexos, admisión formal, examen sustantivo, circulación al consejo ni veracidad de las alegaciones. Se excluyen las credenciales de acceso.",
+      "event_date": "2026-04-09",
+      "event_id": "PD-SP-EVT-0179",
+      "evidence_state": {
+        "delivery": "CHANNEL_RECEIPT_ACKNOWLEDGED",
+        "destination": "STATED_IN_SOURCE",
+        "filing": "NOT_ESTABLISHED_BY_THIS_SOURCE",
+        "internal_association": "NOT_ESTABLISHED_BY_THIS_SOURCE",
+        "merits": "NO_MERITS_FINDING_OR_CRIMINAL_ATTRIBUTION",
+        "registration": "CHANNEL_REFERENCE_IN_NOTICE",
+        "substantive_examination": "NOT_ESTABLISHED_BY_THIS_SOURCE",
+        "transmission": "SOURCE_TRANSMISSION_OR_ACT_RETAINED"
+      },
+      "institution_key": "CAJASIETE",
+      "layer": "OFFICIAL_ACT_OR_CORRESPONDENCE",
+      "linked_transport_event_ids": [],
+      "matter_references": [
+        "Sun Park / MYND Yaiza",
+        "Aweswell Limited / Matkator",
+        "PD-SP-SRC-0028"
+      ],
+      "office": "Cajasiete",
+      "official_reference": "Communication 6",
+      "proof_level": "RETAINED_RECEIVED_EMAIL",
+      "proves": [
+        "Cajasiete's reporting channel acknowledged receipt of communication 6."
+      ],
+      "proves_es": "El canal de información de Cajasiete acusó recibo de la comunicación 6.",
+      "public_derivative_state": "PUBLIC_SAFE_MINIMISED_DERIVATIVE",
+      "public_summary": "Cajasiete's reporting channel acknowledged receipt of communication 6.",
+      "public_summary_es": "El canal de información de Cajasiete acusó recibo de la comunicación 6.",
+      "record_type": "INSTITUTIONAL_ACKNOWLEDGEMENT",
+      "related_curated_event_ids": [],
+      "source_batch_id": "PD-CAJASIETE-BOARD-VISUALS-20260905",
+      "source_integrity": {
+        "repository_anchor": "ops/cajasiete-board-source-input-20260905.json",
+        "sha256": "3c40a24774f0a1b60ad6117b5d1c0470c2a07ed0dc233b63bc447ec062c6549e",
+        "status": "RETAINED_NATIVE_EMAIL; PUBLIC_SAFE_REVIEW_DESCRIPTOR"
+      },
+      "source_key": "CAJASIETE-RECEIPT-20260409",
+      "source_timezone": "CALENDAR_DATE_ONLY; no time or timezone inferred",
+      "transport_link_state": "SEPARATE_SOURCE_PROVED_COMMUNICATION"
+    },
+    {
+      "attribution_state": "INSTITUTIONAL_NOTICE_NO_PERSONAL_SIGNATORY_ASSERTED",
+      "canonical_anchor_en": "en/institutional-records/#communication-PD-SP-EVT-0180",
+      "canonical_anchor_es": "es/registros-institucionales/#communication-PD-SP-EVT-0180",
+      "channel": "EMAIL",
+      "cohort": "CURATED_SOURCE_PROVED_EVENT",
+      "criminal_responsibility_transfer": false,
+      "direction": "OUTBOUND_TO_INSTITUTION",
+      "does_not_prove": [
+        "A separate sent forwarding does not establish receipt, circulation to named officers, a meeting, a credit decision, refusal or retaliation. It remains separate from protected-channel handling."
+      ],
+      "does_not_prove_es": "El reenvío enviado no acredita recepción, circulación a los cargos indicados, reunión, decisión crediticia, denegación ni represalia. Se mantiene separado de la gestión del canal de información.",
+      "event_date": "2026-08-27",
+      "event_id": "PD-SP-EVT-0180",
+      "evidence_state": {
+        "delivery": "NOT_ESTABLISHED_BY_THIS_SOURCE",
+        "destination": "STATED_IN_SOURCE",
+        "filing": "NOT_ESTABLISHED_BY_THIS_SOURCE",
+        "internal_association": "NOT_ESTABLISHED_BY_THIS_SOURCE",
+        "merits": "NO_MERITS_FINDING_OR_CRIMINAL_ATTRIBUTION",
+        "registration": "NOT_ESTABLISHED_BY_THIS_SOURCE",
+        "substantive_examination": "NOT_ESTABLISHED_BY_THIS_SOURCE",
+        "transmission": "SOURCE_TRANSMISSION_OR_ACT_RETAINED"
+      },
+      "institution_key": "CAJASIETE",
+      "layer": "OFFICIAL_ACT_OR_CORRESPONDENCE",
+      "linked_transport_event_ids": [],
+      "matter_references": [
+        "Sun Park / MYND Yaiza",
+        "Aweswell Limited / Matkator",
+        "PD-SP-SRC-0029"
+      ],
+      "office": "Cajasiete",
+      "official_reference": "Separate forwarding of financing enquiry",
+      "proof_level": "RETAINED_SENT_EMAIL",
+      "proves": [
+        "Gil separately forwarded the genuine financing meeting request through previously used institutional channels, asking for acknowledgement and internal referral to the appropriate functions."
+      ],
+      "proves_es": "Gil reenvió separadamente la solicitud real de reunión de financiación por los canales institucionales utilizados, pidiendo acuse y remisión interna a las funciones competentes.",
+      "public_derivative_state": "PUBLIC_SAFE_MINIMISED_DERIVATIVE",
+      "public_summary": "Gil separately forwarded the genuine financing meeting request through previously used institutional channels, asking for acknowledgement and internal referral to the appropriate functions.",
+      "public_summary_es": "Gil reenvió separadamente la solicitud real de reunión de financiación por los canales institucionales utilizados, pidiendo acuse y remisión interna a las funciones competentes.",
+      "record_type": "OUTBOUND_COMMUNICATION",
+      "related_curated_event_ids": [
+        "PD-SP-EVT-0176"
+      ],
+      "source_batch_id": "PD-CAJASIETE-BOARD-VISUALS-20260905",
+      "source_integrity": {
+        "repository_anchor": "ops/cajasiete-board-source-input-20260905.json",
+        "sha256": "3c40a24774f0a1b60ad6117b5d1c0470c2a07ed0dc233b63bc447ec062c6549e",
+        "status": "RETAINED_NATIVE_EMAIL; PUBLIC_SAFE_REVIEW_DESCRIPTOR"
+      },
+      "source_key": "CAJASIETE-FORWARD-20260827",
+      "source_timezone": "CALENDAR_DATE_ONLY; no time or timezone inferred",
+      "transport_link_state": "SEPARATE_SOURCE_PROVED_COMMUNICATION"
     },
     {
       "attachment_count": 0,

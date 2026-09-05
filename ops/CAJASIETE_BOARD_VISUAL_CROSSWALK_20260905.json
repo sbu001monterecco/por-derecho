@@ -1,0 +1,35 @@
+{
+  "assets": {
+    "en-1": "PD-DMA-0008",
+    "en-2": "PD-DMA-0009",
+    "en-3": "PD-DMA-0010",
+    "es-1": "PD-DMA-0005",
+    "es-2": "PD-DMA-0006",
+    "es-3": "PD-DMA-0007"
+  },
+  "baseline_event_count": 333,
+  "baseline_pages": {
+    "en/cajasiete-sun-park-financing-comparability/index.html": "4aedd7b7f8e77431e1359e680ac023e09ce1479700044ed0e22b7e0ecb10def6",
+    "en/digital-media-asset-register/index.html": "84b6d70e81eca6de34ae9fe50a996f0f7b3366894441b16e03ffceb3d4f55161",
+    "en/institutional-records/index.html": "ff1388323f26bea9ce690d9b101df202574dbde244ea75086fdbcf19bd25a5b4",
+    "en/orion-rental-socimi/index.html": "da766633e656287d760f7f498285f9c406de72f152177a47ac49efecc2b1544b",
+    "es/cajasiete-sun-park-financiacion-comparabilidad/index.html": "06a8cf4bf3d0e70809a482cdf7ed8a88ba00f2a5f4f47d576beb293632de90c7",
+    "es/orion-rental-socimi/index.html": "da2a36cb6141209fbaaa8ef3728c45d585253c33e995769df4bfa22039716b67",
+    "es/registro-activos-digitales/index.html": "752a19abc73f620e36a18b91a8bb1bbfa1609336e3c5349028f60ba63ac8a681",
+    "es/registros-institucionales/index.html": "fc665e3606fa624ec1ce12e6d0a789afde1123f56070e78d28e06792e0b7228e"
+  },
+  "canonical_register": "assets/data/institutional-communications-register-v1.json",
+  "control_id": "PD-CAJASIETE-BOARD-VISUALS-20260905",
+  "events": {
+    "CAJASIETE-FORWARD-20260827": {
+      "event_id": "PD-SP-EVT-0180",
+      "source_id": "PD-SP-SRC-0029"
+    },
+    "CAJASIETE-RECEIPT-20260409": {
+      "event_id": "PD-SP-EVT-0179",
+      "source_id": "PD-SP-SRC-0028"
+    }
+  },
+  "input_sha256": "3c40a24774f0a1b60ad6117b5d1c0470c2a07ed0dc233b63bc447ec062c6549e",
+  "universal_completeness_claim": false
+}
