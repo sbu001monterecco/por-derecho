@@ -35,7 +35,13 @@ def check(out):
         if key!='exact_identity_queue':assert new[key]==value,'Existing identity control changed: '+key
     m=json.loads(out[MANIFEST]);assert len(m['expected_routes']['es'])==len(m['expected_routes']['en'])==12
     for path in m['expected_source_files']:assert (review.ROOT/path).is_file(),path
-    print(json.dumps({'result':'CONTROL_COMPLETENESS_PASS','identity_queue_rows':len(new['exact_identity_queue']),'new_identity_queue_entries':1,'formal_manifest':MANIFEST,'existing_controls_preserved':True}))
+    rid=json.loads((review.ROOT/review.AUDIT).read_text())['rauda_identity_id']
+    general=json.loads((review.ROOT/review.ORG).read_text())['records']
+    historic=json.loads((review.ROOT/review.PRO_ROSTER).read_text())['records']
+    assert sum(row['id']==rid for row in general)==1,'RAUDA must resolve once in the general organisation registry'
+    assert all(row['id']!=rid for row in historic),'Do not imply RAUDA was our former/current counsel'
+    assert (review.ROOT/review.PRO_ROSTER).read_text()==review.original(review.PRO_ROSTER),'Historic professional roster must remain unchanged'
+    print(json.dumps({'result':'CONTROL_COMPLETENESS_PASS','identity_queue_rows':len(new['exact_identity_queue']),'new_identity_queue_entries':1,'formal_manifest':MANIFEST,'existing_controls_preserved':True,'rauda_not_added_to_our_counsel_roster':True}))
 
 def main():
     p=argparse.ArgumentParser();g=p.add_mutually_exclusive_group(required=True);g.add_argument('--write',action='store_true');g.add_argument('--check',action='store_true');g.add_argument('--live',action='store_true');a=p.parse_args();out=outputs()
