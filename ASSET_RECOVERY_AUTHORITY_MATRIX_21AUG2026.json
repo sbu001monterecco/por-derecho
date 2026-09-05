@@ -19,29 +19,44 @@
     {
       "authority": "criminal_judge",
       "mechanism": "judicial_intervention_legal_person",
-      "primary_law": ["Codigo Penal 33.7(g)"],
+      "primary_law": [
+        "Codigo Penal 33.7(g)"
+      ],
       "core_power": "Intervention of the whole legal person or defined installations, sections or business units; precautionary intervention may be ordered by the investigating judge during the investigation.",
       "case_gate": "Entity-specific criminal attribution, procedural posture, statutory purpose and proportionality."
     },
     {
       "authority": "criminal_judge",
       "mechanism": "early_seizure_attachment_for_confiscation",
-      "primary_law": ["Codigo Penal 127 octies", "Codigo Penal 127 septies"],
+      "primary_law": [
+        "Codigo Penal 127 octies",
+        "Codigo Penal 127 septies"
+      ],
       "core_power": "Seizure or attachment and deposit from the first investigative steps to preserve confiscation effectiveness; equivalent-value confiscation is separately contemplated.",
       "case_gate": "Trace alleged predicate conduct to identifiable property/value; do not infer criminal provenance from chronology alone."
     },
     {
       "authority": "CNMV",
       "mechanism": "intervention_and_substitution",
-      "primary_law": ["Ley 22/2014 art. 102", "Ley 35/2003 arts. 72-75"],
-      "covered_categories": ["SCR", "SICC", "SGEIC", "depositaries"],
+      "primary_law": [
+        "Ley 22/2014 art. 102",
+        "Ley 35/2003 arts. 72-75"
+      ],
+      "covered_categories": [
+        "SCR",
+        "SICC",
+        "SGEIC",
+        "depositaries"
+      ],
       "core_power": "Intervention/provisional substitution under statutory exceptional-gravity conditions, including appointed interveners/administrators and access to offices, books and documents.",
       "case_gate": "First establish the exact regulated status of the RICPE vehicle, manager and depositary and then test the statutory threshold."
     },
     {
       "authority": "ORGA",
       "mechanism": "asset_recovery_and_management",
-      "primary_law": ["Real Decreto 948/2015"],
+      "primary_law": [
+        "Real Decreto 948/2015"
+      ],
       "core_power": "Locate, recover, conserve, administer and realise assets within the criminal-law remit when legally entrusted.",
       "case_gate": "Separate tracing, judicial restraint, management and final confiscation."
     },
@@ -65,5 +80,17 @@
     "Do not state that the CNMV intervention threshold is met until exact regulated status and statutory facts are established.",
     "Attempted transmission is not delivered transmission.",
     "Receipt by a prosecutor is not admission of a complaint."
-  ]
+  ],
+  "public_research_extension_20260905": {
+    "control_id": "PD-CNMV-INTERIM-20260905-01",
+    "read_model": "assets/data/cnmv-interim-measures-20260905.json",
+    "routes": {
+      "en": "en/authorities-duties-asset-recovery/index.html",
+      "es": "es/autoridades-deberes-recuperacion-activos/index.html"
+    },
+    "new_email_sent": false,
+    "new_registry_filing": false,
+    "official_intervention_order_identified": false,
+    "historical_status_rule": "Original 21-August recent_status is retained as historical, not certified current. The new page links separate canonical events and preserves source gaps."
+  }
 }
