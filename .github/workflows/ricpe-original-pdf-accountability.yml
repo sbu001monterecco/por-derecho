@@ -11,6 +11,8 @@ on:
       - 'operations/preservation-authorizations/RICPE_ORIGINAL_EXACT_PUBLICATION_05SEP2026.json'
       - 'es/ric-private-equity-sun-park/analisis-canal.html'
       - 'en/ric-private-equity-sun-park/channel-analysis.html'
+      - 'es/ricpe-perimetro-accionistas-medios/index.html'
+      - 'en/ricpe-perimeter-shareholders-media/index.html'
   pull_request:
     paths:
       - '.github/workflows/ricpe-original-pdf-accountability.yml'
@@ -20,6 +22,8 @@ on:
       - 'evidence/ricpe-cnmv/2026-08-27/**'
       - 'es/ric-private-equity-sun-park/analisis-canal.html'
       - 'en/ric-private-equity-sun-park/channel-analysis.html'
+      - 'es/ricpe-perimetro-accionistas-medios/index.html'
+      - 'en/ricpe-perimeter-shareholders-media/index.html'
 permissions:
   contents: read
 concurrency:
@@ -36,6 +40,8 @@ jobs:
           ref: ${{ github.event.pull_request.head.sha || github.sha }}
           fetch-depth: 0
           persist-credentials: false
+      - name: Fail early on missing entrypoints or changed inherited standalone bodies
+        run: python3 scripts/validate_ricpe_original_entrypoints.py
       - name: Install bounded browser and PDF inspection dependencies
         run: |
           command -v pdfinfo || (sudo apt-get update -qq && sudo apt-get install -y poppler-utils)
@@ -66,9 +72,10 @@ jobs:
           root=pathlib.Path('.');out=pathlib.Path('/tmp/ricpe-accountability');out.mkdir(exist_ok=True)
           paths=subprocess.check_output(['git','ls-files'],text=True).splitlines()
           (out/'repository-paths.txt').write_text('\n'.join(paths))
+          extra=('assets/site.js','scripts/validate_ricpe_channel_identifier_privacy.py','es/ricpe-perimetro-accionistas-medios/index.html','en/ricpe-perimeter-shareholders-media/index.html','evidence/ricpe-cnmv/2026-08-27/index.html')
           with zipfile.ZipFile(out/'candidate-source.zip','w',zipfile.ZIP_DEFLATED) as z:
               for p in paths:
-                  if ('ricpe-original' in p or p in ('assets/site.js','scripts/validate_ricpe_channel_identifier_privacy.py','scripts/ricpe_original_publication_policy.py') or 'analisis-canal.html' in p or 'channel-analysis.html' in p or 'RICPE_ORIGINAL' in p or 'PD-RICPE-ORIGINAL' in p):z.write(p,p)
+                  if ('ricpe-original' in p or 'ricpe_original' in p or p in extra or 'analisis-canal.html' in p or 'channel-analysis.html' in p or 'RICPE_ORIGINAL' in p or 'PD-RICPE-ORIGINAL' in p):z.write(p,p)
           PY
       - name: Confirm validation did not edit source
         if: always()
