@@ -25,12 +25,26 @@ jobs:
           ref: integration/ci-rules-open-work-20260905
           fetch-depth: 1
           persist-credentials: true
-      - name: Install YAML parser
-        run: python3 -m pip install --quiet PyYAML==6.0.2
+      - name: Install YAML parser and establish the full comparison ancestry
+        run: |
+          python3 -m pip install --quiet PyYAML==6.0.2
+          mkdir -p /tmp/ci-recovery-candidate
+          git fetch --unshallow --no-tags origin integration/ci-rules-open-work-20260905 main:refs/remotes/origin/main > /tmp/ci-recovery-candidate/fetch.log 2>&1
+          test "$(git rev-parse --is-shallow-repository)" = false
       - name: Prepare and audit only the authorized integration branch
         env:
           GH_TOKEN: ${{ github.token }}
-        run: python3 .github/prepare-ci-recovery-20260905.py
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          p=Path('.github/prepare-ci-recovery-20260905.py')
+          text=p.read_text()
+          old=r'\n(?:(?!\n  [^ ]).)*?\n    runs-on:'
+          new=r'\n(?:(?!\n  [^ ]).)*?    runs-on:'
+          assert text.count(old)==1
+          p.write_text(text.replace(old,new,1))
+          PY
+          python3 .github/prepare-ci-recovery-20260905.py
       - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
         if: always()
         with:
