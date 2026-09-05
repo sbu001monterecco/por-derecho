@@ -23,6 +23,17 @@ jobs:
         run: |
           python -m pip install cairosvg==2.8.2 pillow==11.3.0 beautifulsoup4==4.14.3 playwright==1.55.0
           python -m playwright install --with-deps chromium firefox webkit
+      - name: Bind checkpoint to the final rendered candidate
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          p=Path('scripts/prepare_cajasiete_board_visuals_20260905.py')
+          t=p.read_text()
+          old='render(x);r=check();'
+          new="render(x);subprocess.run([sys.executable,str(p),'--apply'],check=True,cwd=ROOT);subprocess.run([sys.executable,str(p),'--check'],check=True,cwd=ROOT);r=check();"
+          assert t.count(old)==1, 'unexpected preparation version'
+          p.write_text(t.replace(old,new,1))
+          PY
       - name: Prepare public-safe additive release
         run: |
           python scripts/prepare_cajasiete_board_visuals_20260905.py apply
@@ -33,7 +44,7 @@ jobs:
         run: |
           cat > scripts/check_cajasiete_board_browser_20260905.py <<'PY'
           from __future__ import annotations
-          import argparse,json,threading,functools,http.server,hashlib
+          import argparse,json,threading,functools,http.server
           from pathlib import Path
           from playwright.sync_api import sync_playwright
           from prepare_cajasiete_board_visuals_20260905 import ROOT,ROUTES,CONTROL
@@ -138,7 +149,7 @@ jobs:
           import json,subprocess
           from pathlib import Path
           r=json.loads(Path('ops/CAJASIETE_BOARD_VISUAL_ACCEPTANCE_20260905.json').read_text())
-          files=list(r['paths'])+['ops/CAJASIETE_BOARD_VISUAL_ACCEPTANCE_20260905.json','scripts/check_cajasiete_board_browser_20260905.py','.github/workflows/cajasiete-board-visuals-20260905.yml']
+          files=list(r['paths'])+['ops/CAJASIETE_BOARD_VISUAL_ACCEPTANCE_20260905.json','scripts/prepare_cajasiete_board_visuals_20260905.py','scripts/check_cajasiete_board_browser_20260905.py','.github/workflows/cajasiete-board-visuals-20260905.yml']
           subprocess.run(['git','add','--']+files,check=True)
           PY
           git config user.name 'github-actions[bot]'
@@ -153,4 +164,5 @@ jobs:
             cajasiete-board-verification/
             ops/CAJASIETE_BOARD_VISUAL_ACCEPTANCE_20260905.json
             ops/CAJASIETE_BOARD_VISUAL_CROSSWALK_20260905.json
+            ops/INSTITUTIONAL_COMMUNICATIONS_SCAN_CHECKPOINT.json
             assets/media/cajasiete-board-*
