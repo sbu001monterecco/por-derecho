@@ -48,7 +48,8 @@ def outputs(root=ROOT):
     for lang,route in ROUTES.items():
         if f'<loc>{BASE}{route}</loc>' not in text:
             other='en' if lang=='es' else 'es'
-            row=f'  <url><loc>{BASE}{route}</loc><lastmod>2026-09-05</lastmod><xhtml:link rel="alternate" hreflang="{lang}" href="{BASE}{route}"/><xhtml:link rel="alternate" hreflang="{other}" href="{BASE}{ROUTES[other]}"/></url>\n'
+            # Do not change the tail whitespace of the last inherited XML node.
+            row=f'<url><loc>{BASE}{route}</loc><lastmod>2026-09-05</lastmod><xhtml:link rel="alternate" hreflang="{lang}" href="{BASE}{route}"/><xhtml:link rel="alternate" hreflang="{other}" href="{BASE}{ROUTES[other]}"/></url>\n'
             text=text.replace('</urlset>',row+'</urlset>')
     result[path]=text
     return result
