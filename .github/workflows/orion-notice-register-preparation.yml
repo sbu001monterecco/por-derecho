@@ -1,0 +1,51 @@
+name: Orion notice register preparation
+on:
+  push:
+    branches: ['integration/orion-notice-register-20260905']
+    paths:
+      - '.github/workflows/orion-notice-register-preparation.yml'
+      - 'scripts/prepare_orion_notice_register_20260905.py'
+      - 'ops/orion-notice-register-input-20260905.json'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: orion-notice-register-preparation-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  inventory:
+    if: github.ref == 'refs/heads/integration/orion-notice-register-20260905'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          persist-credentials: false
+      - name: Inventory canonical notice register and existing projections
+        shell: python
+        run: |
+          import json, pathlib
+          root=pathlib.Path('.')
+          p=root/'assets/data/institutional-communications-register-v1.json'
+          data=json.loads(p.read_text())
+          print('REGISTER_KEYS',list(data))
+          print('EVENT_COUNT',len(data['events']))
+          for e in data['events']:
+            text=json.dumps(e,ensure_ascii=False).lower()
+            if any(s in text for s in ['cajasiete','portfolio','orion','cnmv','ricpe']):
+              print('MATCH',json.dumps({k:e[k] for k in ['event_id','event_date','record_type','layer','institution_id','institution_key','office','official_reference','public_summary_es','title','subject_category','canonical_anchor_en','canonical_anchor_es'] if k in e},ensure_ascii=False))
+          print('EVENT_KEY_UNION',sorted(set().union(*(e.keys() for e in data['events']))))
+          for directory in ['scripts','assets','.github/workflows','assets/data','.github/evidence-intelligence/records']:
+            for f in sorted((root/directory).glob('*')):
+              n=f.name.lower()
+              if f.is_file() and any(s in n for s in ['institutional','orion','cajasiete','portfolio','cnmv']):
+                print('CONTROL_FILE',str(f),f.stat().st_size)
+          for lang in ['es','en']:
+            for f in sorted((root/lang).glob('*/index.html')):
+              n=f.parent.name.lower()
+              if any(s in n for s in ['instituc','institut','cajasiete','portfolio','cnmv','ricpe','orion','financiacion','financing']):
+                print('PUBLIC_ROUTE',str(f),f.stat().st_size)
+          for key in ['institutions','sources','publication','public_routes','schema','schema_version']:
+            if key in data:
+              v=data[key]
+              print('ENVELOPE',key, json.dumps(v,ensure_ascii=False)[:6500])
