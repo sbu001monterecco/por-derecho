@@ -1,0 +1,14 @@
+{
+  "schema": "por-derecho.pinned-reference-cache.v1",
+  "control_id": "PD-JSP-INCIDENT-SUBREGISTER-20260905",
+  "source_commit": "f0590949c2d45fb2ebd9bcf8ed5347a478f633ef",
+  "is_canonical_admission": false,
+  "rule": "These byte-identical reference copies preserve already proposed source-qualified identities. They are not added to the global identity manifest. Current main identity records take precedence where the same ID is admitted. A candidate reference is never displayed as a current canonical admission or a finding of liability.",
+  "files": [
+    {"path":"organisations.json","git_blob":"e8804aff85d712f0bf3feb42d08b4a77ade13f37","count":21},
+    {"path":"people.json","git_blob":"5c176c23210f89a4895bda28d129257c3684c121","count":30},
+    {"path":"structures.json","git_blob":"750c850d4888233a7b82673291e3a420ac03bac3","count":7},
+    {"path":"proceedings.json","git_blob":"e06becd152463193e72de5ad59a5ec2980e94834","count":1}
+  ],
+  "publication_boundary": "Public-safe reference data only. No private working workbook, private source locator, withheld complainant name, signature or raw original is included. Registration status, identity certainty, dated capacity and allegation proof remain separate."
+}
