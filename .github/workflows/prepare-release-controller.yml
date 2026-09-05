@@ -1,0 +1,41 @@
+name: Prepare release controller repair
+on:
+  push:
+    branches: [worker/release-controller-preparation-20260905]
+    paths: ['.pd-stage/**', '.github/workflows/prepare-release-controller.yml']
+permissions:
+  contents: read
+concurrency:
+  group: release-controller-preparation
+  cancel-in-progress: true
+jobs:
+  prepare:
+    if: github.ref == 'refs/heads/worker/release-controller-preparation-20260905'
+    runs-on: ubuntu-latest
+    timeout-minutes: 22
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - name: Install the pinned browser and actual privacy inspector
+        run: |
+          command -v pdftotext || (sudo apt-get update -qq && sudo apt-get install -y poppler-utils)
+          python3 -m pip install playwright==1.55.0
+          python3 -m playwright install --with-deps chromium
+      - name: Prepare exact current-main candidate; fail on any required check failure
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python3 .pd-stage/prepare.py
+      - uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
+        if: always()
+        with:
+          name: release-controller-preparation-${{ github.run_id }}
+          path: |
+            /tmp/pd-preparation/
+            /tmp/pd-release-acceptance/
+            /tmp/ci-control-plane/
+          if-no-files-found: error
+          retention-days: 14
