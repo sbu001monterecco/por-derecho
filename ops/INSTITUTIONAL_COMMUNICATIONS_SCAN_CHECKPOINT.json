@@ -97,7 +97,7 @@
     "universal_completeness_claim": false
   },
   "register_path": "assets/data/institutional-communications-register-v1.json",
-  "register_sha256": "f397fc256cf21bde25c90945ebb67944762599ee4b02350830aae56fe5e7af82",
+  "register_sha256": "c480c1d7b236d0f1b3f19bd666379baf0ebca22fca47a4158fc74190e726752a",
   "schema": "por-derecho.institutional-communications-scan-checkpoint.v1",
   "source_required_and_normalisation_gates": [
     "22 later RedSARA/AGE records remain aggregate-only; no synthetic individual rows were created.",

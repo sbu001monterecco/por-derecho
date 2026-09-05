@@ -1,0 +1,41 @@
+{
+  "control_id": "PD-CAJASIETE-BOARD-VISUALS-20260905",
+  "items": [
+    {
+      "date": "2026-04-09",
+      "direction": "INBOUND_FROM_INSTITUTION",
+      "en": "Cajasiete's reporting channel acknowledged receipt of communication 6.",
+      "es": "El canal de información de Cajasiete acusó recibo de la comunicación 6.",
+      "key": "CAJASIETE-RECEIPT-20260409",
+      "limit_en": "Receipt does not establish the complete submission or attachment inventory, formal admissibility, substantive review, board circulation or the truth of allegations. Access credentials are withheld.",
+      "limit_es": "El acuse no acredita el contenido íntegro o inventario de anexos, admisión formal, examen sustantivo, circulación al consejo ni veracidad de las alegaciones. Se excluyen las credenciales de acceso.",
+      "reference": "Communication 6",
+      "type": "INSTITUTIONAL_ACKNOWLEDGEMENT"
+    },
+    {
+      "date": "2026-08-27",
+      "direction": "OUTBOUND_TO_INSTITUTION",
+      "en": "Gil separately forwarded the genuine financing meeting request through previously used institutional channels, asking for acknowledgement and internal referral to the appropriate functions.",
+      "es": "Gil reenvió separadamente la solicitud real de reunión de financiación por los canales institucionales utilizados, pidiendo acuse y remisión interna a las funciones competentes.",
+      "key": "CAJASIETE-FORWARD-20260827",
+      "limit_en": "A separate sent forwarding does not establish receipt, circulation to named officers, a meeting, a credit decision, refusal or retaliation. It remains separate from protected-channel handling.",
+      "limit_es": "El reenvío enviado no acredita recepción, circulación a los cargos indicados, reunión, decisión crediticia, denegación ni represalia. Se mantiene separado de la gestión del canal de información.",
+      "reference": "Separate forwarding of financing enquiry",
+      "type": "OUTBOUND_COMMUNICATION"
+    }
+  ],
+  "open_proof": [
+    "Complete original submission and attachment inventory",
+    "Conflict screening and reasons for inadmission",
+    "Lawful retention, anonymisation, transfer and deletion audit",
+    "Exact borrower, facility, advances, title, collateral, valuation and third-party rights",
+    "Earlier knowledge and later conduct must be separately proved; relationships do not transfer responsibility"
+  ],
+  "reused_events": [
+    "PD-SP-EVT-0168",
+    "PD-SP-EVT-0169",
+    "PD-SP-EVT-0170",
+    "PD-SP-EVT-0176"
+  ],
+  "source_boundary": "Reviewed minimised descriptors; retained native messages and access credentials are not published. Descriptor hashes are not native-message hashes."
+}

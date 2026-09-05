@@ -1,313 +1,729 @@
 {
-  "schema": "por-derecho.digital-media-asset-register.v1",
-  "register_id": "PD-DMA-REG-0001",
-  "control_date": "2026-09-02",
-  "status": "ACTIVE_CANONICAL_REGISTER",
   "caret_semantics": "A terminal caret identifies one exact byte object whose SHA-256, byte length, MIME/format and dimensions where applicable are recorded. It does not validate factual content, publication status, ownership, endorsement, knowledge, intent or legal responsibility.",
-  "namespace_separation": "PD-DMA caret references identify digital/media files. They are separate from CAEPR person/entity identity carets and must not be conflated.",
-  "governance": ".github/governance/DIGITAL_MEDIA_ASSET_CARET_IDENTITY_STANDARD_01SEP2026.md",
-  "source_claims": [
-    {
-      "id": "SRC-CH-ABOUT-20260901",
-      "source_type": "COMPANY_SELF_DESCRIPTION",
-      "publisher": "Canarian Hospitality",
-      "claim": "The company states that in five years it progressed from launch/its first hotel in 2021 to 12 hotels, approximately 2,500 rooms and more than EUR 100m in sales in 2025.",
-      "url": "https://canarianhospitality.com/quienes-somos/"
-    },
-    {
-      "id": "SRC-CINCO-DIAS-20260204",
-      "source_type": "PRESS_REPORT_OF_EXECUTIVE_STATEMENT",
-      "publisher": "Cinco Días",
-      "claim": "The 4 February 2026 article reports CEO figures of EUR 44m for 2024, around EUR 50m for 2025 and a EUR 60m forecast for 2026 for the management company.",
-      "url": "https://cincodias.elpais.com/companias/2026-02-04/la-gestora-canarian-hospitality-firma-su-noveno-hotel-en-el-archipielago-y-el-tercero-con-radisson.html"
-    },
-    {
-      "id": "SRC-CH-ROADMAP-20260902",
-      "source_type": "COMPANY_SELF_DESCRIPTION",
-      "publisher": "Canarian Hospitality",
-      "claim": "The company road map names the hotel openings and announced projects represented in the satire; the source records a commercial/operational perimeter and does not establish common ownership.",
-      "url": "https://canarianhospitality.com/"
-    },
-    {
-      "id": "SRC-BOE-B-2012-22189",
-      "source_type": "OFFICIAL_GAZETTE",
-      "publisher": "Boletín Oficial del Estado",
-      "claim": "Official notice of the 6 June 2012 appointment of Francisco de Borja Rodríguez-Batllori Laffitte as insolvency administrator in Concurso 36/2012 concerning Luchy Playa Blanca, S.L.U.",
-      "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-B-2012-22189"
-    },
-    {
-      "id": "SRC-CUYAS-TEAM-20260902",
-      "source_type": "FIRST_PARTY_PROFESSIONAL_PROFILE",
-      "publisher": "Cuyás Abogados",
-      "claim": "The firm's current public team page lists Borja Rodríguez-Batllori Laffitte as a lawyer and publishes an es.gt.com professional address; this supports the dated present professional-perimeter label only.",
-      "url": "https://www.cuyasabogados.com/"
-    },
-    {
-      "id": "SRC-RSM-SANTELMO-20240703",
-      "source_type": "FIRST_PARTY_PROFESSIONAL_ANNOUNCEMENT",
-      "publisher": "RSM Spain",
-      "claim": "RSM states that Eduardo Sánchez Iglesias joined its Tax & Legal area with the SanTelmo team in July 2024.",
-      "url": "https://www.rsm.global/spain/en/news/rsm-grows-las-palmas-incorporation-san-telmo-office"
-    },
-    {
-      "id": "SRC-RIC-CAPITAL-ENRIQUE-GUERRA-20260902",
-      "source_type": "FIRST_PARTY_PROFESSIONAL_PROFILE",
-      "publisher": "RIC Capital",
-      "claim": "The first-party profile identifies Enrique Guerra Suárez and his published legal-fiscal and investor-relations capacity.",
-      "url": "https://ric.capital/enrique-guerra-dptolegal/"
-    }
-  ],
+  "control_date": "2026-09-02",
+  "correction_rule": "A translation, crop, re-export, compression, text correction or redesign is a new exact file identity. Prior hashes remain preserved and are never silently reused.",
   "families": [
     {
-      "family_id": "PD-DMA-FAM-AMHP-001",
-      "title": "Acosta Matos / Canarian Hospitality hotel-platform satire and public-interest explanation",
-      "scope": "Visual family distinguishing hotel sales under management, the manager's own turnover, ownership/equity, management/operation, brand, capital, RIC/RICPE, construction, mandates/advice and media visibility.",
-      "current_primary_es": "PD-DMA-0003",
+      "corrected_prior_style_variants": [
+        "PD-DMA-0003",
+        "PD-DMA-0004"
+      ],
       "current_primary_en": "PD-DMA-0002",
-      "corrected_prior_style_variants": ["PD-DMA-0003", "PD-DMA-0004"],
-      "current_spanish_channel_files": ["PD-DMA-0003-WEB-EMAIL-PNG^", "PD-DMA-0003-LINKEDIN-PNG^"],
-      "mandatory_boundary": "Managed-hotel sales and the management company's own reported turnover are different measures and must not be mechanically added. Platform proximity does not establish common ownership, shared knowledge or shared responsibility."
-    }
-  ],
-  "logical_assets": [
-    {
-      "reference": "PD-DMA-0001",
+      "current_primary_es": "PD-DMA-0003",
+      "current_spanish_channel_files": [
+        "PD-DMA-0003-WEB-EMAIL-PNG^",
+        "PD-DMA-0003-LINKEDIN-PNG^"
+      ],
       "family_id": "PD-DMA-FAM-AMHP-001",
-      "title": "12 hoteles · 2.500 habitaciones · +100 M€ — No es lo mismo",
-      "language": "es",
-      "edition": "PRIMARY_SPANISH_PUBLICATION",
-      "publication_status": "PUBLIC",
-      "satire_compliance_id": "PD-SAT-AMHP-0001",
-      "web_file": "PD-DMA-0001^",
-      "outreach_png": "PD-DMA-0001-PNG^",
-      "sources": ["SRC-CH-ABOUT-20260901", "SRC-CINCO-DIAS-20260204"]
+      "mandatory_boundary": "Managed-hotel sales and the management company's own reported turnover are different measures and must not be mechanically added. Platform proximity does not establish common ownership, shared knowledge or shared responsibility.",
+      "scope": "Visual family distinguishing hotel sales under management, the manager's own turnover, ownership/equity, management/operation, brand, capital, RIC/RICPE, construction, mandates/advice and media visibility.",
+      "title": "Acosta Matos / Canarian Hospitality hotel-platform satire and public-interest explanation"
     },
     {
-      "reference": "PD-DMA-0002",
-      "family_id": "PD-DMA-FAM-AMHP-001",
-      "title": "12 hotels · 2,500 rooms · EUR 100m+ — Not the same thing",
-      "language": "en",
-      "edition": "PRIMARY_ENGLISH_PUBLICATION",
-      "publication_status": "PUBLIC",
-      "satire_compliance_id": "PD-SAT-AMHP-0001",
-      "web_file": "PD-DMA-0002^",
-      "outreach_png": "PD-DMA-0002-PNG^",
-      "sources": ["SRC-CH-ABOUT-20260901", "SRC-CINCO-DIAS-20260204"]
-    },
-    {
-      "reference": "PD-DMA-0003",
-      "family_id": "PD-DMA-FAM-AMHP-001",
-      "title": "Catálogo satírico de la plataforma hotelera",
-      "language": "es",
-      "edition": "USER_APPROVED_NAMED_PERSON_CATALOGUE",
-      "publication_status": "PUBLIC_PRIMARY_SPANISH",
-      "satire_compliance_id": "PD-SAT-AMHP-0001",
-      "web_file": "PD-DMA-0003-PAGE^",
-      "outreach_png": "PD-DMA-0003-WEB-EMAIL-PNG^",
-      "social_png": "PD-DMA-0003-LINKEDIN-PNG^",
-      "superseded_outreach_png": "PD-DMA-0003-PNG^",
-      "sources": ["SRC-CH-ABOUT-20260901", "SRC-CINCO-DIAS-20260204", "SRC-CH-ROADMAP-20260902", "SRC-BOE-B-2012-22189", "SRC-CUYAS-TEAM-20260902", "SRC-RSM-SANTELMO-20240703", "SRC-RIC-CAPITAL-ENRIQUE-GUERRA-20260902"]
-    },
-    {
-      "reference": "PD-DMA-0004",
-      "family_id": "PD-DMA-FAM-AMHP-001",
-      "title": "Gran liquidación satírica del perímetro",
-      "language": "es",
-      "edition": "CORRECTED_PRIOR_STYLE_TWO",
-      "publication_status": "PUBLIC_VARIANT",
-      "satire_compliance_id": "PD-SAT-AMHP-0001",
-      "web_file": "PD-DMA-0004^",
-      "outreach_png": "PD-DMA-0004-PNG^",
-      "sources": ["SRC-CH-ABOUT-20260901", "SRC-CINCO-DIAS-20260204"]
+      "current_primary_en": "PD-DMA-0008",
+      "current_primary_es": "PD-DMA-0005",
+      "family_id": "PD-DMA-FAM-CAJASIETE-001",
+      "mandatory_boundary": "Announced destruction is not proved destruction or illegality. Commercial enquiry and reporting-channel handling remain separate.",
+      "scope": "Assurances, receipt, inadmission, title/security reconstruction and independent response; no satire or portraits",
+      "title": "CajaSiete documentary board and compliance reader"
     }
   ],
   "files": [
     {
-      "reference": "PD-DMA-0001^",
-      "logical_asset": "PD-DMA-0001",
-      "role": "PUBLIC_WEB_VECTOR",
-      "repository_path": "assets/media/pd-dma-0001-es.svg",
-      "public_url": "/assets/media/pd-dma-0001-es.svg",
-      "mime": "image/svg+xml",
-      "viewbox_width": 1000,
-      "viewbox_height": 1250,
       "bytes": 10401,
-      "sha256": "f0b301793227e217a0c594331291096de747592ee8748eaebc0778d1522f422b",
+      "logical_asset": "PD-DMA-0001",
+      "mime": "image/svg+xml",
+      "public_url": "/assets/media/pd-dma-0001-es.svg",
+      "publication_status": "PUBLIC",
+      "reference": "PD-DMA-0001^",
       "repository_mirror": true,
-      "publication_status": "PUBLIC"
+      "repository_path": "assets/media/pd-dma-0001-es.svg",
+      "role": "PUBLIC_WEB_VECTOR",
+      "sha256": "f0b301793227e217a0c594331291096de747592ee8748eaebc0778d1522f422b",
+      "viewbox_height": 1250,
+      "viewbox_width": 1000
     },
     {
-      "reference": "PD-DMA-0001-PNG^",
-      "logical_asset": "PD-DMA-0001",
-      "role": "FULL_RESOLUTION_OUTREACH_MASTER",
-      "source_filename": "12_hotels_100m_not_the_same.png",
-      "mime": "image/png",
-      "width_px": 1122,
-      "height_px": 1402,
       "bytes": 2229301,
-      "sha256": "3958fcd906b53c43f25f469573734cb3cf6851f6b92e9bf116557a094aa3d881",
+      "height_px": 1402,
+      "intended_channels": [
+        "LinkedIn",
+        "email attachment",
+        "archive"
+      ],
+      "logical_asset": "PD-DMA-0001",
+      "mime": "image/png",
+      "reference": "PD-DMA-0001-PNG^",
       "repository_mirror": false,
       "repository_mirror_gap": "Hash-locked original is preserved outside the repository binary mirror; website serves PD-DMA-0001^.",
-      "intended_channels": ["LinkedIn", "email attachment", "archive"]
-    },
-    {
-      "reference": "PD-DMA-0002^",
-      "logical_asset": "PD-DMA-0002",
-      "role": "PUBLIC_WEB_VECTOR",
-      "repository_path": "assets/media/pd-dma-0002-en.svg",
-      "public_url": "/assets/media/pd-dma-0002-en.svg",
-      "mime": "image/svg+xml",
-      "viewbox_width": 1000,
-      "viewbox_height": 1250,
-      "bytes": 10334,
-      "sha256": "70ae7fcd9797c3f769553712416a7c1c034dad7457513dd12fefb847771abb49",
-      "repository_mirror": true,
-      "publication_status": "PUBLIC"
-    },
-    {
-      "reference": "PD-DMA-0002-PNG^",
-      "logical_asset": "PD-DMA-0002",
       "role": "FULL_RESOLUTION_OUTREACH_MASTER",
-      "source_filename": "12_hotels_100m_not_the_same_EN.png",
-      "mime": "image/png",
-      "width_px": 1200,
-      "height_px": 1500,
+      "sha256": "3958fcd906b53c43f25f469573734cb3cf6851f6b92e9bf116557a094aa3d881",
+      "source_filename": "12_hotels_100m_not_the_same.png",
+      "width_px": 1122
+    },
+    {
+      "bytes": 10334,
+      "logical_asset": "PD-DMA-0002",
+      "mime": "image/svg+xml",
+      "public_url": "/assets/media/pd-dma-0002-en.svg",
+      "publication_status": "PUBLIC",
+      "reference": "PD-DMA-0002^",
+      "repository_mirror": true,
+      "repository_path": "assets/media/pd-dma-0002-en.svg",
+      "role": "PUBLIC_WEB_VECTOR",
+      "sha256": "70ae7fcd9797c3f769553712416a7c1c034dad7457513dd12fefb847771abb49",
+      "viewbox_height": 1250,
+      "viewbox_width": 1000
+    },
+    {
       "bytes": 239753,
-      "sha256": "b0616f945d145080ad3053f5e5c08f3f1b7620d10e8ec24547043c895a6e039f",
+      "height_px": 1500,
+      "intended_channels": [
+        "LinkedIn",
+        "email attachment",
+        "archive"
+      ],
+      "logical_asset": "PD-DMA-0002",
+      "mime": "image/png",
+      "reference": "PD-DMA-0002-PNG^",
       "repository_mirror": false,
       "repository_mirror_gap": "Hash-locked original is preserved outside the repository binary mirror; website serves PD-DMA-0002^.",
-      "intended_channels": ["LinkedIn", "email attachment", "archive"]
-    },
-    {
-      "reference": "PD-DMA-0003^",
-      "logical_asset": "PD-DMA-0003",
-      "role": "PUBLIC_WEB_VECTOR",
-      "repository_path": "assets/media/pd-dma-0003-es.svg",
-      "public_url": "/assets/media/pd-dma-0003-es.svg",
-      "mime": "image/svg+xml",
-      "viewbox_width": 1000,
-      "viewbox_height": 1250,
-      "bytes": 13773,
-      "sha256": "6f2bcb6ed10b198871dcc60ea09e36b2a250b75d9959817d3e0191854f434f38",
-      "repository_mirror": true,
-      "publication_status": "PUBLIC_ARCHIVE_NOT_RENDERED_ON_CURRENT_ES_PAGE"
-    },
-    {
-      "reference": "PD-DMA-0003-PNG^",
-      "logical_asset": "PD-DMA-0003",
       "role": "FULL_RESOLUTION_OUTREACH_MASTER",
-      "source_filename": "plataforma_hotelera_catalogo_satirico_v1.png",
-      "mime": "image/png",
-      "width_px": 1200,
-      "height_px": 1500,
+      "sha256": "b0616f945d145080ad3053f5e5c08f3f1b7620d10e8ec24547043c895a6e039f",
+      "source_filename": "12_hotels_100m_not_the_same_EN.png",
+      "width_px": 1200
+    },
+    {
+      "bytes": 13773,
+      "logical_asset": "PD-DMA-0003",
+      "mime": "image/svg+xml",
+      "public_url": "/assets/media/pd-dma-0003-es.svg",
+      "publication_status": "PUBLIC_ARCHIVE_NOT_RENDERED_ON_CURRENT_ES_PAGE",
+      "reference": "PD-DMA-0003^",
+      "repository_mirror": true,
+      "repository_path": "assets/media/pd-dma-0003-es.svg",
+      "role": "PUBLIC_WEB_VECTOR",
+      "sha256": "6f2bcb6ed10b198871dcc60ea09e36b2a250b75d9959817d3e0191854f434f38",
+      "viewbox_height": 1250,
+      "viewbox_width": 1000
+    },
+    {
       "bytes": 204794,
-      "sha256": "1bd492c1858bc911d14bbd046c5bb501947d4076c91472cdfe3f655927da113b",
+      "height_px": 1500,
+      "logical_asset": "PD-DMA-0003",
+      "mime": "image/png",
+      "publication_status": "SUPERSEDED_WRONG_OUTREACH_ATTACHMENT",
+      "reference": "PD-DMA-0003-PNG^",
+      "replacement_references": [
+        "PD-DMA-0003-WEB-EMAIL-PNG^",
+        "PD-DMA-0003-LINKEDIN-PNG^"
+      ],
       "repository_mirror": false,
       "repository_mirror_gap": "Hash-locked original is preserved outside the repository binary mirror; it was attached in error on 1 September 2026 and is not an approved current outreach file.",
-      "publication_status": "SUPERSEDED_WRONG_OUTREACH_ATTACHMENT",
-      "replacement_references": ["PD-DMA-0003-WEB-EMAIL-PNG^", "PD-DMA-0003-LINKEDIN-PNG^"]
-    },
-    {
-      "reference": "PD-DMA-0003-PAGE^",
-      "logical_asset": "PD-DMA-0003",
-      "role": "PUBLIC_WEB_PRESENTATION",
-      "repository_path": "es/acosta-matos-plataforma-hotelera/index.html",
-      "public_url": "/es/acosta-matos-plataforma-hotelera/",
-      "mime": "text/html",
-      "bytes": 16654,
-      "sha256": "84cfc205e53ce15e6d54b1fecc2c02e0c0bbcc7d043c7e2fb6d4a6fe979a2f4b",
-      "repository_mirror": true,
-      "publication_status": "PUBLIC_PRIMARY_SPANISH"
-    },
-    {
-      "reference": "PD-DMA-0003-WEB-EMAIL-PNG^",
-      "logical_asset": "PD-DMA-0003",
-      "role": "PUBLIC_WEB_AND_EMAIL_MASTER",
-      "source_filename": "acosta-matos-spoof-web-email-1080x1920.png",
-      "repository_path": "assets/media/pd-dma-0003-web-email-es.png",
-      "public_url": "/assets/media/pd-dma-0003-web-email-es.png",
-      "mime": "image/png",
-      "width_px": 1080,
-      "height_px": 1920,
-      "bytes": 3284092,
-      "sha256": "2677eb53121bb6d6f39d75b3652c30403d0b1980f69ef10cd31bdca372219165",
-      "repository_mirror": true,
-      "publication_status": "PUBLIC_CURRENT_APPROVED",
-      "intended_channels": ["website", "email attachment", "email direct reference", "archive"]
-    },
-    {
-      "reference": "PD-DMA-0003-LINKEDIN-PNG^",
-      "logical_asset": "PD-DMA-0003",
-      "role": "PUBLIC_LINKEDIN_MASTER",
-      "source_filename": "acosta-matos-spoof-linkedin-1080x1350.png",
-      "repository_path": "assets/media/pd-dma-0003-linkedin-es.png",
-      "public_url": "/assets/media/pd-dma-0003-linkedin-es.png",
-      "mime": "image/png",
-      "width_px": 1080,
-      "height_px": 1350,
-      "bytes": 2425141,
-      "sha256": "6d86c54ceb5996ec2b72c00ad4d6fb405029843e34e399b929f622bd80d8f6a2",
-      "repository_mirror": true,
-      "publication_status": "PUBLIC_CURRENT_APPROVED",
-      "intended_channels": ["LinkedIn", "website", "email reference", "archive"]
-    },
-    {
-      "reference": "PD-DMA-0004^",
-      "logical_asset": "PD-DMA-0004",
-      "role": "PUBLIC_WEB_VECTOR",
-      "repository_path": "assets/media/pd-dma-0004-es.svg",
-      "public_url": "/assets/media/pd-dma-0004-es.svg",
-      "mime": "image/svg+xml",
-      "viewbox_width": 1000,
-      "viewbox_height": 1250,
-      "bytes": 12910,
-      "sha256": "204b048051026680fcbe68c764c4cfff9fe2569abf3ebfb73db2abec4996ad58",
-      "repository_mirror": true,
-      "publication_status": "PUBLIC_VARIANT"
-    },
-    {
-      "reference": "PD-DMA-0004-PNG^",
-      "logical_asset": "PD-DMA-0004",
       "role": "FULL_RESOLUTION_OUTREACH_MASTER",
-      "source_filename": "perimetro_liquidacion_satirica_v2.png",
-      "mime": "image/png",
-      "width_px": 1200,
-      "height_px": 1500,
-      "bytes": 184214,
-      "sha256": "125d1b0b07e6fffd8734e84017d9f0cc529f6a8ef6a534af2439c3cf74305c5f",
-      "repository_mirror": false,
-      "repository_mirror_gap": "Hash-locked original is preserved outside the repository binary mirror; website serves PD-DMA-0004^."
+      "sha256": "1bd492c1858bc911d14bbd046c5bb501947d4076c91472cdfe3f655927da113b",
+      "source_filename": "plataforma_hotelera_catalogo_satirico_v1.png",
+      "width_px": 1200
     },
     {
+      "bytes": 16654,
+      "logical_asset": "PD-DMA-0003",
+      "mime": "text/html",
+      "public_url": "/es/acosta-matos-plataforma-hotelera/",
+      "publication_status": "PUBLIC_PRIMARY_SPANISH",
+      "reference": "PD-DMA-0003-PAGE^",
+      "repository_mirror": true,
+      "repository_path": "es/acosta-matos-plataforma-hotelera/index.html",
+      "role": "PUBLIC_WEB_PRESENTATION",
+      "sha256": "84cfc205e53ce15e6d54b1fecc2c02e0c0bbcc7d043c7e2fb6d4a6fe979a2f4b"
+    },
+    {
+      "bytes": 3284092,
+      "height_px": 1920,
+      "intended_channels": [
+        "website",
+        "email attachment",
+        "email direct reference",
+        "archive"
+      ],
+      "logical_asset": "PD-DMA-0003",
+      "mime": "image/png",
+      "public_url": "/assets/media/pd-dma-0003-web-email-es.png",
+      "publication_status": "PUBLIC_CURRENT_APPROVED",
+      "reference": "PD-DMA-0003-WEB-EMAIL-PNG^",
+      "repository_mirror": true,
+      "repository_path": "assets/media/pd-dma-0003-web-email-es.png",
+      "role": "PUBLIC_WEB_AND_EMAIL_MASTER",
+      "sha256": "2677eb53121bb6d6f39d75b3652c30403d0b1980f69ef10cd31bdca372219165",
+      "source_filename": "acosta-matos-spoof-web-email-1080x1920.png",
+      "width_px": 1080
+    },
+    {
+      "bytes": 2425141,
+      "height_px": 1350,
+      "intended_channels": [
+        "LinkedIn",
+        "website",
+        "email reference",
+        "archive"
+      ],
+      "logical_asset": "PD-DMA-0003",
+      "mime": "image/png",
+      "public_url": "/assets/media/pd-dma-0003-linkedin-es.png",
+      "publication_status": "PUBLIC_CURRENT_APPROVED",
+      "reference": "PD-DMA-0003-LINKEDIN-PNG^",
+      "repository_mirror": true,
+      "repository_path": "assets/media/pd-dma-0003-linkedin-es.png",
+      "role": "PUBLIC_LINKEDIN_MASTER",
+      "sha256": "6d86c54ceb5996ec2b72c00ad4d6fb405029843e34e399b929f622bd80d8f6a2",
+      "source_filename": "acosta-matos-spoof-linkedin-1080x1350.png",
+      "width_px": 1080
+    },
+    {
+      "bytes": 12910,
+      "logical_asset": "PD-DMA-0004",
+      "mime": "image/svg+xml",
+      "public_url": "/assets/media/pd-dma-0004-es.svg",
+      "publication_status": "PUBLIC_VARIANT",
+      "reference": "PD-DMA-0004^",
+      "repository_mirror": true,
+      "repository_path": "assets/media/pd-dma-0004-es.svg",
+      "role": "PUBLIC_WEB_VECTOR",
+      "sha256": "204b048051026680fcbe68c764c4cfff9fe2569abf3ebfb73db2abec4996ad58",
+      "viewbox_height": 1250,
+      "viewbox_width": 1000
+    },
+    {
+      "bytes": 184214,
+      "height_px": 1500,
+      "logical_asset": "PD-DMA-0004",
+      "mime": "image/png",
+      "reference": "PD-DMA-0004-PNG^",
+      "repository_mirror": false,
+      "repository_mirror_gap": "Hash-locked original is preserved outside the repository binary mirror; website serves PD-DMA-0004^.",
+      "role": "FULL_RESOLUTION_OUTREACH_MASTER",
+      "sha256": "125d1b0b07e6fffd8734e84017d9f0cc529f6a8ef6a534af2439c3cf74305c5f",
+      "source_filename": "perimetro_liquidacion_satirica_v2.png",
+      "width_px": 1200
+    },
+    {
+      "bytes": 2367806,
+      "height_px": 1536,
+      "mime": "image/png",
+      "publication_status": "DO_NOT_PUBLISH_UNCHANGED",
+      "reason": "Earlier concept contains inherited hotel labels, portraits and apparent ownership/role implications that are not the canonical factual roster.",
       "reference": "PD-DMA-LEGACY-0001-PNG^",
       "role": "QUARANTINED_DESIGN_REFERENCE",
-      "source_filename": "a_large_high_contrast_poster_style_infographic.png",
-      "mime": "image/png",
-      "width_px": 1024,
-      "height_px": 1536,
-      "bytes": 2367806,
       "sha256": "f62c18c633fd9a3ce48944cefa3e7a4c74dbf4a388bae64e5064505049e73e33",
-      "publication_status": "DO_NOT_PUBLISH_UNCHANGED",
-      "reason": "Earlier concept contains inherited hotel labels, portraits and apparent ownership/role implications that are not the canonical factual roster."
+      "source_filename": "a_large_high_contrast_poster_style_infographic.png",
+      "width_px": 1024
     },
     {
+      "bytes": 2791925,
+      "height_px": 1402,
+      "mime": "image/png",
+      "publication_status": "DO_NOT_PUBLISH_UNCHANGED",
+      "reason": "Earlier concept may guide visual rhythm but its inherited roster, portraits and named sales-team framing are not approved factual content.",
       "reference": "PD-DMA-LEGACY-0002-PNG^",
       "role": "QUARANTINED_DESIGN_REFERENCE",
-      "source_filename": "satirical_resort_clearance_poster.png",
-      "mime": "image/png",
-      "width_px": 1122,
-      "height_px": 1402,
-      "bytes": 2791925,
       "sha256": "09da584fc4437d55c732191488d6054d8039ea86a81255577b81cbc12e6393aa",
-      "publication_status": "DO_NOT_PUBLISH_UNCHANGED",
-      "reason": "Earlier concept may guide visual rhythm but its inherited roster, portraits and named sales-team framing are not approved factual content."
+      "source_filename": "satirical_resort_clearance_poster.png",
+      "width_px": 1122
+    },
+    {
+      "bytes": 4710,
+      "factual_status": "NOT_AN_ADJUDICATED_FINDING",
+      "logical_asset": "PD-DMA-0005",
+      "mime": "image/svg+xml",
+      "public_url": "/assets/media/cajasiete-board-1-es-20260905.svg",
+      "publication_status": "PUBLICATION_AUTHORISED",
+      "reference": "PD-DMA-0005^",
+      "repository_mirror": true,
+      "repository_path": "assets/media/cajasiete-board-1-es-20260905.svg",
+      "role": "PUBLIC_WEB_VECTOR",
+      "sha256": "34ce7d4326a0ab6514d1163ef89d515ceea8a5df449400d7f5247c7c65fa7c3e",
+      "source_control": "ops/cajasiete-board-source-input-20260905.json",
+      "viewbox_height": 1640,
+      "viewbox_width": 1080
+    },
+    {
+      "bytes": 184156,
+      "factual_status": "NOT_AN_ADJUDICATED_FINDING",
+      "logical_asset": "PD-DMA-0005",
+      "mime": "image/png",
+      "public_url": "/assets/media/cajasiete-board-1-es-20260905.png",
+      "publication_status": "PUBLICATION_AUTHORISED",
+      "reference": "PD-DMA-0005-PNG^",
+      "repository_mirror": true,
+      "repository_path": "assets/media/cajasiete-board-1-es-20260905.png",
+      "role": "PUBLIC_OUTREACH_PNG",
+      "sha256": "395e5c78f10045c6a1d4db15fba6e769998de73994037f126a96f0e8ac2d5727",
+      "source_control": "ops/cajasiete-board-source-input-20260905.json",
+      "viewbox_height": 1640,
+      "viewbox_width": 1080
+    },
+    {
+      "bytes": 5201,
+      "factual_status": "NOT_AN_ADJUDICATED_FINDING",
+      "logical_asset": "PD-DMA-0006",
+      "mime": "image/svg+xml",
+      "public_url": "/assets/media/cajasiete-board-2-es-20260905.svg",
+      "publication_status": "PUBLICATION_AUTHORISED",
+      "reference": "PD-DMA-0006^",
+      "repository_mirror": true,
+      "repository_path": "assets/media/cajasiete-board-2-es-20260905.svg",
+      "role": "PUBLIC_WEB_VECTOR",
+      "sha256": "e26b7ad7610e7d1c051e4d4062855a160b4e1b19b3d8d97ddf9b8216dff60852",
+      "source_control": "ops/cajasiete-board-source-input-20260905.json",
+      "viewbox_height": 1740,
+      "viewbox_width": 1080
+    },
+    {
+      "bytes": 211715,
+      "factual_status": "NOT_AN_ADJUDICATED_FINDING",
+      "logical_asset": "PD-DMA-0006",
+      "mime": "image/png",
+      "public_url": "/assets/media/cajasiete-board-2-es-20260905.png",
+      "publication_status": "PUBLICATION_AUTHORISED",
+      "reference": "PD-DMA-0006-PNG^",
+      "repository_mirror": true,
+      "repository_path": "assets/media/cajasiete-board-2-es-20260905.png",
+      "role": "PUBLIC_OUTREACH_PNG",
+      "sha256": "112f5b9980bbed5ee3f8e15c9d533d3f402940f6fa2a67f1ce53456dc699e1d8",
+      "source_control": "ops/cajasiete-board-source-input-20260905.json",
+      "viewbox_height": 1740,
+      "viewbox_width": 1080
+    },
+    {
+      "bytes": 4311,
+      "factual_status": "NOT_AN_ADJUDICATED_FINDING",
+      "logical_asset": "PD-DMA-0007",
+      "mime": "image/svg+xml",
+      "public_url": "/assets/media/cajasiete-board-3-es-20260905.svg",
+      "publication_status": "PUBLICATION_AUTHORISED",
+      "reference": "PD-DMA-0007^",
+      "repository_mirror": true,
+      "repository_path": "assets/media/cajasiete-board-3-es-20260905.svg",
+      "role": "PUBLIC_WEB_VECTOR",
+      "sha256": "f342fbc8805932b044c53eab8e9c29d4cec504f1274f4d8d9e6b9ae2ec8c993d",
+      "source_control": "ops/cajasiete-board-source-input-20260905.json",
+      "viewbox_height": 1640,
+      "viewbox_width": 1080
+    },
+    {
+      "bytes": 165821,
+      "factual_status": "NOT_AN_ADJUDICATED_FINDING",
+      "logical_asset": "PD-DMA-0007",
+      "mime": "image/png",
+      "public_url": "/assets/media/cajasiete-board-3-es-20260905.png",
+      "publication_status": "PUBLICATION_AUTHORISED",
+      "reference": "PD-DMA-0007-PNG^",
+      "repository_mirror": true,
+      "repository_path": "assets/media/cajasiete-board-3-es-20260905.png",
+      "role": "PUBLIC_OUTREACH_PNG",
+      "sha256": "dcd5be9595e355a8c6eeaffc8977aee0308796fb41d1e4fe438033aef22d1c8a",
+      "source_control": "ops/cajasiete-board-source-input-20260905.json",
+      "viewbox_height": 1640,
+      "viewbox_width": 1080
+    },
+    {
+      "bytes": 4791,
+      "factual_status": "NOT_AN_ADJUDICATED_FINDING",
+      "logical_asset": "PD-DMA-0008",
+      "mime": "image/svg+xml",
+      "public_url": "/assets/media/cajasiete-board-1-en-20260905.svg",
+      "publication_status": "PUBLICATION_AUTHORISED",
+      "reference": "PD-DMA-0008^",
+      "repository_mirror": true,
+      "repository_path": "assets/media/cajasiete-board-1-en-20260905.svg",
+      "role": "PUBLIC_WEB_VECTOR",
+      "sha256": "86cbb89d4ef1a712a9bb2254304c70ed306687cfac1ca3e2e044e801e4c7e999",
+      "source_control": "ops/cajasiete-board-source-input-20260905.json",
+      "viewbox_height": 1640,
+      "viewbox_width": 1080
+    },
+    {
+      "bytes": 189370,
+      "factual_status": "NOT_AN_ADJUDICATED_FINDING",
+      "logical_asset": "PD-DMA-0008",
+      "mime": "image/png",
+      "public_url": "/assets/media/cajasiete-board-1-en-20260905.png",
+      "publication_status": "PUBLICATION_AUTHORISED",
+      "reference": "PD-DMA-0008-PNG^",
+      "repository_mirror": true,
+      "repository_path": "assets/media/cajasiete-board-1-en-20260905.png",
+      "role": "PUBLIC_OUTREACH_PNG",
+      "sha256": "d65ff30c916ccf912c9cc417547f384c64daaaee91519864c230e2488f811678",
+      "source_control": "ops/cajasiete-board-source-input-20260905.json",
+      "viewbox_height": 1640,
+      "viewbox_width": 1080
+    },
+    {
+      "bytes": 4759,
+      "factual_status": "NOT_AN_ADJUDICATED_FINDING",
+      "logical_asset": "PD-DMA-0009",
+      "mime": "image/svg+xml",
+      "public_url": "/assets/media/cajasiete-board-2-en-20260905.svg",
+      "publication_status": "PUBLICATION_AUTHORISED",
+      "reference": "PD-DMA-0009^",
+      "repository_mirror": true,
+      "repository_path": "assets/media/cajasiete-board-2-en-20260905.svg",
+      "role": "PUBLIC_WEB_VECTOR",
+      "sha256": "60f395fbc9dc65809789b169cfddb4fe7bcfd254081100eebf72a8e9d0b689ac",
+      "source_control": "ops/cajasiete-board-source-input-20260905.json",
+      "viewbox_height": 1740,
+      "viewbox_width": 1080
+    },
+    {
+      "bytes": 199393,
+      "factual_status": "NOT_AN_ADJUDICATED_FINDING",
+      "logical_asset": "PD-DMA-0009",
+      "mime": "image/png",
+      "public_url": "/assets/media/cajasiete-board-2-en-20260905.png",
+      "publication_status": "PUBLICATION_AUTHORISED",
+      "reference": "PD-DMA-0009-PNG^",
+      "repository_mirror": true,
+      "repository_path": "assets/media/cajasiete-board-2-en-20260905.png",
+      "role": "PUBLIC_OUTREACH_PNG",
+      "sha256": "c8967a2659d25d735323f7f5e62264b21896c368cbb19976f05e9e835f9e6507",
+      "source_control": "ops/cajasiete-board-source-input-20260905.json",
+      "viewbox_height": 1740,
+      "viewbox_width": 1080
+    },
+    {
+      "bytes": 4137,
+      "factual_status": "NOT_AN_ADJUDICATED_FINDING",
+      "logical_asset": "PD-DMA-0010",
+      "mime": "image/svg+xml",
+      "public_url": "/assets/media/cajasiete-board-3-en-20260905.svg",
+      "publication_status": "PUBLICATION_AUTHORISED",
+      "reference": "PD-DMA-0010^",
+      "repository_mirror": true,
+      "repository_path": "assets/media/cajasiete-board-3-en-20260905.svg",
+      "role": "PUBLIC_WEB_VECTOR",
+      "sha256": "a670ddeb9fc6ba7857b0aff2139a7e7267173677203bcb56b3e565b48f3bfed5",
+      "source_control": "ops/cajasiete-board-source-input-20260905.json",
+      "viewbox_height": 1640,
+      "viewbox_width": 1080
+    },
+    {
+      "bytes": 165345,
+      "factual_status": "NOT_AN_ADJUDICATED_FINDING",
+      "logical_asset": "PD-DMA-0010",
+      "mime": "image/png",
+      "public_url": "/assets/media/cajasiete-board-3-en-20260905.png",
+      "publication_status": "PUBLICATION_AUTHORISED",
+      "reference": "PD-DMA-0010-PNG^",
+      "repository_mirror": true,
+      "repository_path": "assets/media/cajasiete-board-3-en-20260905.png",
+      "role": "PUBLIC_OUTREACH_PNG",
+      "sha256": "e0450ecfce83e2bb1d4ed2c88c0966804c857d3b3c1f0a2f8a2f6d43f467bdf2",
+      "source_control": "ops/cajasiete-board-source-input-20260905.json",
+      "viewbox_height": 1640,
+      "viewbox_width": 1080
     }
   ],
+  "governance": ".github/governance/DIGITAL_MEDIA_ASSET_CARET_IDENTITY_STANDARD_01SEP2026.md",
+  "logical_assets": [
+    {
+      "edition": "PRIMARY_SPANISH_PUBLICATION",
+      "family_id": "PD-DMA-FAM-AMHP-001",
+      "language": "es",
+      "outreach_png": "PD-DMA-0001-PNG^",
+      "publication_status": "PUBLIC",
+      "reference": "PD-DMA-0001",
+      "satire_compliance_id": "PD-SAT-AMHP-0001",
+      "sources": [
+        "SRC-CH-ABOUT-20260901",
+        "SRC-CINCO-DIAS-20260204"
+      ],
+      "title": "12 hoteles · 2.500 habitaciones · +100 M€ — No es lo mismo",
+      "web_file": "PD-DMA-0001^"
+    },
+    {
+      "edition": "PRIMARY_ENGLISH_PUBLICATION",
+      "family_id": "PD-DMA-FAM-AMHP-001",
+      "language": "en",
+      "outreach_png": "PD-DMA-0002-PNG^",
+      "publication_status": "PUBLIC",
+      "reference": "PD-DMA-0002",
+      "satire_compliance_id": "PD-SAT-AMHP-0001",
+      "sources": [
+        "SRC-CH-ABOUT-20260901",
+        "SRC-CINCO-DIAS-20260204"
+      ],
+      "title": "12 hotels · 2,500 rooms · EUR 100m+ — Not the same thing",
+      "web_file": "PD-DMA-0002^"
+    },
+    {
+      "edition": "USER_APPROVED_NAMED_PERSON_CATALOGUE",
+      "family_id": "PD-DMA-FAM-AMHP-001",
+      "language": "es",
+      "outreach_png": "PD-DMA-0003-WEB-EMAIL-PNG^",
+      "publication_status": "PUBLIC_PRIMARY_SPANISH",
+      "reference": "PD-DMA-0003",
+      "satire_compliance_id": "PD-SAT-AMHP-0001",
+      "social_png": "PD-DMA-0003-LINKEDIN-PNG^",
+      "sources": [
+        "SRC-CH-ABOUT-20260901",
+        "SRC-CINCO-DIAS-20260204",
+        "SRC-CH-ROADMAP-20260902",
+        "SRC-BOE-B-2012-22189",
+        "SRC-CUYAS-TEAM-20260902",
+        "SRC-RSM-SANTELMO-20240703",
+        "SRC-RIC-CAPITAL-ENRIQUE-GUERRA-20260902"
+      ],
+      "superseded_outreach_png": "PD-DMA-0003-PNG^",
+      "title": "Catálogo satírico de la plataforma hotelera",
+      "web_file": "PD-DMA-0003-PAGE^"
+    },
+    {
+      "edition": "CORRECTED_PRIOR_STYLE_TWO",
+      "family_id": "PD-DMA-FAM-AMHP-001",
+      "language": "es",
+      "outreach_png": "PD-DMA-0004-PNG^",
+      "publication_status": "PUBLIC_VARIANT",
+      "reference": "PD-DMA-0004",
+      "satire_compliance_id": "PD-SAT-AMHP-0001",
+      "sources": [
+        "SRC-CH-ABOUT-20260901",
+        "SRC-CINCO-DIAS-20260204"
+      ],
+      "title": "Gran liquidación satírica del perímetro",
+      "web_file": "PD-DMA-0004^"
+    },
+    {
+      "correction_state": "NEW_ADDITIVE_READER",
+      "edition": "DOCUMENTARY_BOARD_COMPLIANCE_READER",
+      "factual_status": "SOURCE_BOUNDED_SUMMARIES_AND_OPEN_QUESTIONS; NOT_A_FINDING",
+      "family_id": "PD-DMA-FAM-CAJASIETE-001",
+      "generation_method": "Deterministic source-controlled SVG typesetting and CairoSVG 2.8.2 PNG rendering; no fabricated document or portrait",
+      "language": "es",
+      "material_limits": [
+        "Complete original submission and attachment inventory",
+        "Conflict screening and reasons for inadmission",
+        "Lawful retention, anonymisation, transfer and deletion audit",
+        "Exact borrower, facility, advances, title, collateral, valuation and third-party rights",
+        "Earlier knowledge and later conduct must be separately proved; relationships do not transfer responsibility"
+      ],
+      "outreach_png": "PD-DMA-0005-PNG^",
+      "parent_asset": null,
+      "publication_status": "PUBLICATION_AUTHORISED",
+      "reference": "PD-DMA-0005",
+      "required_disclaimer": "Destrucción anunciada, no acreditada. Legalidad y alcance pendientes de verificación.",
+      "sources": [
+        "PD-SP-SRC-0014",
+        "PD-SP-SRC-0015",
+        "PD-SP-SRC-0028"
+      ],
+      "title": "¿Qué se examinó antes de anunciar la destrucción?",
+      "web_file": "PD-DMA-0005^"
+    },
+    {
+      "correction_state": "NEW_ADDITIVE_READER",
+      "edition": "DOCUMENTARY_BOARD_COMPLIANCE_READER",
+      "factual_status": "SOURCE_BOUNDED_SUMMARIES_AND_OPEN_QUESTIONS; NOT_A_FINDING",
+      "family_id": "PD-DMA-FAM-CAJASIETE-001",
+      "generation_method": "Deterministic source-controlled SVG typesetting and CairoSVG 2.8.2 PNG rendering; no fabricated document or portrait",
+      "language": "es",
+      "material_limits": [
+        "Complete original submission and attachment inventory",
+        "Conflict screening and reasons for inadmission",
+        "Lawful retention, anonymisation, transfer and deletion audit",
+        "Exact borrower, facility, advances, title, collateral, valuation and third-party rights",
+        "Earlier knowledge and later conduct must be separately proved; relationships do not transfer responsibility"
+      ],
+      "outreach_png": "PD-DMA-0006-PNG^",
+      "parent_asset": null,
+      "publication_status": "PUBLICATION_AUTHORISED",
+      "reference": "PD-DMA-0006",
+      "required_disclaimer": "Hipoteca ≠ principal desembolsado. Aviso posterior ≠ conocimiento anterior. Proximidad ≠ responsabilidad.",
+      "sources": [
+        "SRC-CAJASIETE-DOSSIER-20260905",
+        "SRC-CAJASIETE-BOE-20260905"
+      ],
+      "title": "Mismo complejo hotelero. Derechos distintos.",
+      "web_file": "PD-DMA-0006^"
+    },
+    {
+      "correction_state": "NEW_ADDITIVE_READER",
+      "edition": "DOCUMENTARY_BOARD_COMPLIANCE_READER",
+      "factual_status": "SOURCE_BOUNDED_SUMMARIES_AND_OPEN_QUESTIONS; NOT_A_FINDING",
+      "family_id": "PD-DMA-FAM-CAJASIETE-001",
+      "generation_method": "Deterministic source-controlled SVG typesetting and CairoSVG 2.8.2 PNG rendering; no fabricated document or portrait",
+      "language": "es",
+      "material_limits": [
+        "Complete original submission and attachment inventory",
+        "Conflict screening and reasons for inadmission",
+        "Lawful retention, anonymisation, transfer and deletion audit",
+        "Exact borrower, facility, advances, title, collateral, valuation and third-party rights",
+        "Earlier knowledge and later conduct must be separately proved; relationships do not transfer responsibility"
+      ],
+      "outreach_png": "PD-DMA-0007-PNG^",
+      "parent_asset": null,
+      "publication_status": "PUBLICATION_AUTHORISED",
+      "reference": "PD-DMA-0007",
+      "required_disclaimer": "Evaluación independiente · respuesta motivada · preservación lícita · corrección cuando proceda.",
+      "sources": [
+        "SRC-CAJASIETE-DOSSIER-20260905",
+        "SRC-CAJASIETE-BOE-20260905"
+      ],
+      "title": "La reputación se protege con una respuesta verificable",
+      "web_file": "PD-DMA-0007^"
+    },
+    {
+      "correction_state": "NEW_ADDITIVE_READER",
+      "edition": "DOCUMENTARY_BOARD_COMPLIANCE_READER",
+      "factual_status": "SOURCE_BOUNDED_SUMMARIES_AND_OPEN_QUESTIONS; NOT_A_FINDING",
+      "family_id": "PD-DMA-FAM-CAJASIETE-001",
+      "generation_method": "Deterministic source-controlled SVG typesetting and CairoSVG 2.8.2 PNG rendering; no fabricated document or portrait",
+      "language": "en",
+      "material_limits": [
+        "Complete original submission and attachment inventory",
+        "Conflict screening and reasons for inadmission",
+        "Lawful retention, anonymisation, transfer and deletion audit",
+        "Exact borrower, facility, advances, title, collateral, valuation and third-party rights",
+        "Earlier knowledge and later conduct must be separately proved; relationships do not transfer responsibility"
+      ],
+      "outreach_png": "PD-DMA-0008-PNG^",
+      "parent_asset": null,
+      "publication_status": "PUBLICATION_AUTHORISED",
+      "reference": "PD-DMA-0008",
+      "required_disclaimer": "Destruction announced, not established. Lawfulness and scope remain to be verified.",
+      "sources": [
+        "PD-SP-SRC-0014",
+        "PD-SP-SRC-0015",
+        "PD-SP-SRC-0028"
+      ],
+      "title": "What was examined before destruction was announced?",
+      "web_file": "PD-DMA-0008^"
+    },
+    {
+      "correction_state": "NEW_ADDITIVE_READER",
+      "edition": "DOCUMENTARY_BOARD_COMPLIANCE_READER",
+      "factual_status": "SOURCE_BOUNDED_SUMMARIES_AND_OPEN_QUESTIONS; NOT_A_FINDING",
+      "family_id": "PD-DMA-FAM-CAJASIETE-001",
+      "generation_method": "Deterministic source-controlled SVG typesetting and CairoSVG 2.8.2 PNG rendering; no fabricated document or portrait",
+      "language": "en",
+      "material_limits": [
+        "Complete original submission and attachment inventory",
+        "Conflict screening and reasons for inadmission",
+        "Lawful retention, anonymisation, transfer and deletion audit",
+        "Exact borrower, facility, advances, title, collateral, valuation and third-party rights",
+        "Earlier knowledge and later conduct must be separately proved; relationships do not transfer responsibility"
+      ],
+      "outreach_png": "PD-DMA-0009-PNG^",
+      "parent_asset": null,
+      "publication_status": "PUBLICATION_AUTHORISED",
+      "reference": "PD-DMA-0009",
+      "required_disclaimer": "Mortgage ≠ cash advanced. Later notice ≠ earlier knowledge. Proximity ≠ responsibility.",
+      "sources": [
+        "SRC-CAJASIETE-DOSSIER-20260905",
+        "SRC-CAJASIETE-BOE-20260905"
+      ],
+      "title": "One hotel complex. Distinct rights.",
+      "web_file": "PD-DMA-0009^"
+    },
+    {
+      "correction_state": "NEW_ADDITIVE_READER",
+      "edition": "DOCUMENTARY_BOARD_COMPLIANCE_READER",
+      "factual_status": "SOURCE_BOUNDED_SUMMARIES_AND_OPEN_QUESTIONS; NOT_A_FINDING",
+      "family_id": "PD-DMA-FAM-CAJASIETE-001",
+      "generation_method": "Deterministic source-controlled SVG typesetting and CairoSVG 2.8.2 PNG rendering; no fabricated document or portrait",
+      "language": "en",
+      "material_limits": [
+        "Complete original submission and attachment inventory",
+        "Conflict screening and reasons for inadmission",
+        "Lawful retention, anonymisation, transfer and deletion audit",
+        "Exact borrower, facility, advances, title, collateral, valuation and third-party rights",
+        "Earlier knowledge and later conduct must be separately proved; relationships do not transfer responsibility"
+      ],
+      "outreach_png": "PD-DMA-0010-PNG^",
+      "parent_asset": null,
+      "publication_status": "PUBLICATION_AUTHORISED",
+      "reference": "PD-DMA-0010",
+      "required_disclaimer": "Independent assessment · reasoned response · lawful preservation · correction where warranted.",
+      "sources": [
+        "SRC-CAJASIETE-DOSSIER-20260905",
+        "SRC-CAJASIETE-BOE-20260905"
+      ],
+      "title": "Protect reputation with a verifiable response",
+      "web_file": "PD-DMA-0010^"
+    }
+  ],
+  "namespace_separation": "PD-DMA caret references identify digital/media files. They are separate from CAEPR person/entity identity carets and must not be conflated.",
   "public_routes": {
-    "family_es": "/es/acosta-matos-plataforma-hotelera/",
     "family_en": "/en/acosta-matos-hotel-platform/",
-    "register_es": "/es/registro-activos-digitales/",
-    "register_en": "/en/digital-media-asset-register/"
+    "family_es": "/es/acosta-matos-plataforma-hotelera/",
+    "register_en": "/en/digital-media-asset-register/",
+    "register_es": "/es/registro-activos-digitales/"
   },
-  "correction_rule": "A translation, crop, re-export, compression, text correction or redesign is a new exact file identity. Prior hashes remain preserved and are never silently reused."
+  "register_id": "PD-DMA-REG-0001",
+  "schema": "por-derecho.digital-media-asset-register.v1",
+  "source_claims": [
+    {
+      "claim": "The company states that in five years it progressed from launch/its first hotel in 2021 to 12 hotels, approximately 2,500 rooms and more than EUR 100m in sales in 2025.",
+      "id": "SRC-CH-ABOUT-20260901",
+      "publisher": "Canarian Hospitality",
+      "source_type": "COMPANY_SELF_DESCRIPTION",
+      "url": "https://canarianhospitality.com/quienes-somos/"
+    },
+    {
+      "claim": "The 4 February 2026 article reports CEO figures of EUR 44m for 2024, around EUR 50m for 2025 and a EUR 60m forecast for 2026 for the management company.",
+      "id": "SRC-CINCO-DIAS-20260204",
+      "publisher": "Cinco Días",
+      "source_type": "PRESS_REPORT_OF_EXECUTIVE_STATEMENT",
+      "url": "https://cincodias.elpais.com/companias/2026-02-04/la-gestora-canarian-hospitality-firma-su-noveno-hotel-en-el-archipielago-y-el-tercero-con-radisson.html"
+    },
+    {
+      "claim": "The company road map names the hotel openings and announced projects represented in the satire; the source records a commercial/operational perimeter and does not establish common ownership.",
+      "id": "SRC-CH-ROADMAP-20260902",
+      "publisher": "Canarian Hospitality",
+      "source_type": "COMPANY_SELF_DESCRIPTION",
+      "url": "https://canarianhospitality.com/"
+    },
+    {
+      "claim": "Official notice of the 6 June 2012 appointment of Francisco de Borja Rodríguez-Batllori Laffitte as insolvency administrator in Concurso 36/2012 concerning Luchy Playa Blanca, S.L.U.",
+      "id": "SRC-BOE-B-2012-22189",
+      "publisher": "Boletín Oficial del Estado",
+      "source_type": "OFFICIAL_GAZETTE",
+      "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-B-2012-22189"
+    },
+    {
+      "claim": "The firm's current public team page lists Borja Rodríguez-Batllori Laffitte as a lawyer and publishes an es.gt.com professional address; this supports the dated present professional-perimeter label only.",
+      "id": "SRC-CUYAS-TEAM-20260902",
+      "publisher": "Cuyás Abogados",
+      "source_type": "FIRST_PARTY_PROFESSIONAL_PROFILE",
+      "url": "https://www.cuyasabogados.com/"
+    },
+    {
+      "claim": "RSM states that Eduardo Sánchez Iglesias joined its Tax & Legal area with the SanTelmo team in July 2024.",
+      "id": "SRC-RSM-SANTELMO-20240703",
+      "publisher": "RSM Spain",
+      "source_type": "FIRST_PARTY_PROFESSIONAL_ANNOUNCEMENT",
+      "url": "https://www.rsm.global/spain/en/news/rsm-grows-las-palmas-incorporation-san-telmo-office"
+    },
+    {
+      "claim": "The first-party profile identifies Enrique Guerra Suárez and his published legal-fiscal and investor-relations capacity.",
+      "id": "SRC-RIC-CAPITAL-ENRIQUE-GUERRA-20260902",
+      "publisher": "RIC Capital",
+      "source_type": "FIRST_PARTY_PROFESSIONAL_PROFILE",
+      "url": "https://ric.capital/enrique-guerra-dptolegal/"
+    },
+    {
+      "claim": "Existing source-bounded public dossier: registry summary and separate Orion relationship; exact facility and knowledge unresolved.",
+      "id": "SRC-CAJASIETE-DOSSIER-20260905",
+      "publisher": "Por Derecho",
+      "source_type": "CONTROLLED_DOSSIER",
+      "url": "/por-derecho/es/cajasiete-sun-park-financiacion-comparabilidad/"
+    },
+    {
+      "claim": "Official Law 2/2023 reference; no case-specific breach is found.",
+      "id": "SRC-CAJASIETE-BOE-20260905",
+      "publisher": "BOE",
+      "source_type": "OFFICIAL_LEGISLATION",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2023-4513"
+    }
+  ],
+  "status": "ACTIVE_CANONICAL_REGISTER"
 }
