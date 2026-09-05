@@ -237,53 +237,524 @@
     }
   ],
   "tracks": [
-    {"id":"T01","label_es":"órgano, titularidad y cargo comunitario","label_en":"Community organ, ownership and office","criminal_question_es":"¿Quién afirmó o ejerció autoridad; con qué título, nombramiento, mandato y conocimiento de la controversia?","criminal_question_en":"Who claimed or exercised authority; under what title, appointment, mandate and knowledge of the dispute?","primary_classes":["DOC","HIP","OPEN","CONTRARY"]},
-    {"id":"T02","label_es":"convocatoria, aviso y servicio","label_en":"call, notice and service","criminal_question_es":"¿Se omitió deliberadamente a un destinatario jurídicamente correcto y quién decidió la ruta?","criminal_question_en":"Was a legally correct recipient deliberately omitted, and who selected the route?","primary_classes":["DOC","HIP","GAP","CONTRARY"]},
-    {"id":"T03","label_es":"título, coeficiente, poder, deuda y voto","label_en":"title, coefficient, proxy, debt and vote","criminal_question_es":"¿Se creó o usó conscientemente un denominador o exclusión materialmente falso?","criminal_question_en":"Was a materially false denominator or exclusion knowingly created or used?","primary_classes":["DOC","HIP","OPEN","CONTRARY"]},
-    {"id":"T04","label_es":"redacción, firma, libro, custodia y circulación del ACTA","label_en":"minutes drafting, signature, book, custody and circulation","criminal_question_es":"¿Quién produjo, certificó, alteró, custodió, circuló o reutilizó cada versión?","criminal_question_en":"Who produced, certified, altered, kept, circulated or reused each version?","primary_classes":["DOC","HIP","GAP"]},
-    {"id":"T05","label_es":"CEXP, explotación hotelera y continuidad comercial","label_en":"CEXP, hotel operation and trading continuity","criminal_question_es":"¿Se representó autoridad sobre toda la explotación sin título o mandato suficiente?","criminal_question_en":"Was authority over the whole operation represented without sufficient title or mandate?","primary_classes":["DOC","HIP","OPEN","CONTRARY"]},
-    {"id":"T06","label_es":"acceso, llaves, seguridad, posesión y control material","label_en":"access, keys, security, possession and material control","criminal_question_es":"¿Qué acto físico se ejecutó, por quién, bajo qué instrucción y con qué derecho?","criminal_question_en":"What physical act occurred, by whom, under whose instruction and under what right?","primary_classes":["DOC","HIP","ADVERSE","CONTRARY"]},
-    {"id":"T07","label_es":"denuncia, litigación y uso procesal","label_en":"complaint, litigation and procedural use","criminal_question_es":"¿Se presentó conscientemente un relato o instrumento materialmente falso y produjo una decisión?","criminal_question_en":"Was a materially false account or instrument knowingly presented and did it produce a decision?","primary_classes":["DOC","HIP","ADVERSE","OPEN"]},
-    {"id":"T08","label_es":"concurso, masa, Administración Concursal y supervisión judicial","label_en":"insolvency, estate, Insolvency Administration and judicial supervision","criminal_question_es":"¿Quién debía verificar o impedir el acto; qué sabía; qué hizo u omitió?","criminal_question_en":"Who had a duty to verify or prevent the act; what did they know; what did they do or omit?","primary_classes":["DOC","HIP","ADVERSE","CONTRARY"]},
-    {"id":"T09","label_es":"crédito, cesión, servicing y financiación","label_en":"credit, assignment, servicing and finance","criminal_question_es":"¿Qué derecho exacto se adquirió, a qué precio y con qué revelaciones, límites y conocimiento?","criminal_question_en":"What exact right was acquired, at what price, and with what disclosures, limits and knowledge?","primary_classes":["DOC","OPEN","CONTRARY"]},
-    {"id":"T10","label_es":"valoración, competencia y salida financiada","label_en":"valuation, competition and funded exit","criminal_question_es":"¿Qué datos se suministraron, verificaron u omitieron y cómo afectaron la salida?","criminal_question_en":"What inputs were supplied, checked or omitted, and how did they affect the exit?","primary_classes":["DOC","HIP","OPEN","CONTRARY"]},
-    {"id":"T11","label_es":"adjudicación, escritura, Registro y título finca por finca","label_en":"adjudication, deed, Registry and property-by-property title","criminal_question_es":"¿Qué premisa se convirtió en título, qué no decidió el juzgado y qué se inscribió realmente?","criminal_question_en":"Which premise was converted into title, what did the court not decide, and what was actually registered?","primary_classes":["DOC","ADVERSE","OPEN","CONTRARY"]},
-    {"id":"T12","label_es":"obras, reforma, HNT/MYND y explotación","label_en":"works, refurbishment, HNT/MYND and operation","criminal_question_es":"¿Qué autoridad, costes, fincas, contratos, facturas y derechos de uso sustentaron las obras y operación?","criminal_question_en":"What authority, costs, properties, contracts, invoices and use rights supported the works and operation?","primary_classes":["DOC","HIP","OPEN"]},
-    {"id":"T13","label_es":"RIC, RICPE, inversión y diligencia debida","label_en":"RIC, RICPE, investment and due diligence","criminal_question_es":"¿Qué título, conflicto, condición, dispensa, verificación y dato de elegibilidad se presentó o adoptó?","criminal_question_en":"What title, conflict, condition, waiver, verification and eligibility data was presented or adopted?","primary_classes":["DOC","OPEN","CONTRARY"]},
-    {"id":"T14","label_es":"incentivos regionales y ayudas públicas","label_en":"regional incentives and public aid","criminal_question_es":"¿Qué gasto, obra, empleo, disponibilidad, acumulación y beneficiario se certificaron?","criminal_question_en":"What expenditure, works, jobs, availability, accumulation and beneficiary were certified?","primary_classes":["DOC","OPEN","NOTICE"]},
-    {"id":"T15","label_es":"FEDER/ERDF y fondos europeos","label_en":"FEDER/ERDF and European funds","criminal_question_es":"¿Qué costes y fuentes/usos llegaron al expediente europeo y cómo fueron controlados?","criminal_question_en":"Which costs and sources/uses entered the European file and how were they controlled?","primary_classes":["DOC","OPEN","NOTICE"]},
-    {"id":"T16","label_es":"Yaiza, Cabildo, turismo, licencia y primera ocupación","label_en":"Yaiza, Cabildo, tourism, licence and first occupation","criminal_question_es":"¿Qué representación de título/autoridad se entregó y qué comprobó cada órgano?","criminal_question_en":"What title/authority representation was supplied and what did each body check?","primary_classes":["DOC","OPEN","NOTICE"]},
-    {"id":"T17","label_es":"profesionales, gatekeepers, autoridades y SAIP","label_en":"professionals, gatekeepers, authorities and SAIP","criminal_question_es":"¿Quién recibió qué aviso, con qué competencia y qué preservó, examinó, remitió o decidió?","criminal_question_en":"Who received which notice, with what competence, and what did they preserve, examine, refer or decide?","primary_classes":["NOTICE","OPEN","ADVERSE","CONTRARY"]},
-    {"id":"T18","label_es":"beneficio, ingreso, daño, causalidad, recuperación y restitución","label_en":"benefit, income, harm, causation, recovery and restitution","criminal_question_es":"¿Qué valor llegó a quién, por qué mecanismo y qué habría ocurrido sin el puente impugnado?","criminal_question_en":"What value reached whom, through which mechanism, and what would have occurred without the challenged bridge?","primary_classes":["DOC","HIP","OPEN","CONTRARY"]}
+    {
+      "id": "T01",
+      "label_es": "órgano, titularidad y cargo comunitario",
+      "label_en": "Community organ, ownership and office",
+      "criminal_question_es": "¿Quién afirmó o ejerció autoridad; con qué título, nombramiento, mandato y conocimiento de la controversia?",
+      "criminal_question_en": "Who claimed or exercised authority; under what title, appointment, mandate and knowledge of the dispute?",
+      "primary_classes": [
+        "DOC",
+        "HIP",
+        "OPEN",
+        "CONTRARY"
+      ]
+    },
+    {
+      "id": "T02",
+      "label_es": "convocatoria, aviso y servicio",
+      "label_en": "call, notice and service",
+      "criminal_question_es": "¿Se omitió deliberadamente a un destinatario jurídicamente correcto y quién decidió la ruta?",
+      "criminal_question_en": "Was a legally correct recipient deliberately omitted, and who selected the route?",
+      "primary_classes": [
+        "DOC",
+        "HIP",
+        "GAP",
+        "CONTRARY"
+      ]
+    },
+    {
+      "id": "T03",
+      "label_es": "título, coeficiente, poder, deuda y voto",
+      "label_en": "title, coefficient, proxy, debt and vote",
+      "criminal_question_es": "¿Se creó o usó conscientemente un denominador o exclusión materialmente falso?",
+      "criminal_question_en": "Was a materially false denominator or exclusion knowingly created or used?",
+      "primary_classes": [
+        "DOC",
+        "HIP",
+        "OPEN",
+        "CONTRARY"
+      ]
+    },
+    {
+      "id": "T04",
+      "label_es": "redacción, firma, libro, custodia y circulación del ACTA",
+      "label_en": "minutes drafting, signature, book, custody and circulation",
+      "criminal_question_es": "¿Quién produjo, certificó, alteró, custodió, circuló o reutilizó cada versión?",
+      "criminal_question_en": "Who produced, certified, altered, kept, circulated or reused each version?",
+      "primary_classes": [
+        "DOC",
+        "HIP",
+        "GAP"
+      ]
+    },
+    {
+      "id": "T05",
+      "label_es": "CEXP, explotación hotelera y continuidad comercial",
+      "label_en": "CEXP, hotel operation and trading continuity",
+      "criminal_question_es": "¿Se representó autoridad sobre toda la explotación sin título o mandato suficiente?",
+      "criminal_question_en": "Was authority over the whole operation represented without sufficient title or mandate?",
+      "primary_classes": [
+        "DOC",
+        "HIP",
+        "OPEN",
+        "CONTRARY"
+      ]
+    },
+    {
+      "id": "T06",
+      "label_es": "acceso, llaves, seguridad, posesión y control material",
+      "label_en": "access, keys, security, possession and material control",
+      "criminal_question_es": "¿Qué acto físico se ejecutó, por quién, bajo qué instrucción y con qué derecho?",
+      "criminal_question_en": "What physical act occurred, by whom, under whose instruction and under what right?",
+      "primary_classes": [
+        "DOC",
+        "HIP",
+        "ADVERSE",
+        "CONTRARY"
+      ]
+    },
+    {
+      "id": "T07",
+      "label_es": "denuncia, litigación y uso procesal",
+      "label_en": "complaint, litigation and procedural use",
+      "criminal_question_es": "¿Se presentó conscientemente un relato o instrumento materialmente falso y produjo una decisión?",
+      "criminal_question_en": "Was a materially false account or instrument knowingly presented and did it produce a decision?",
+      "primary_classes": [
+        "DOC",
+        "HIP",
+        "ADVERSE",
+        "OPEN"
+      ]
+    },
+    {
+      "id": "T08",
+      "label_es": "concurso, masa, Administración Concursal y supervisión judicial",
+      "label_en": "insolvency, estate, Insolvency Administration and judicial supervision",
+      "criminal_question_es": "¿Quién debía verificar o impedir el acto; qué sabía; qué hizo u omitió?",
+      "criminal_question_en": "Who had a duty to verify or prevent the act; what did they know; what did they do or omit?",
+      "primary_classes": [
+        "DOC",
+        "HIP",
+        "ADVERSE",
+        "CONTRARY"
+      ]
+    },
+    {
+      "id": "T09",
+      "label_es": "crédito, cesión, servicing y financiación",
+      "label_en": "credit, assignment, servicing and finance",
+      "criminal_question_es": "¿Qué derecho exacto se adquirió, a qué precio y con qué revelaciones, límites y conocimiento?",
+      "criminal_question_en": "What exact right was acquired, at what price, and with what disclosures, limits and knowledge?",
+      "primary_classes": [
+        "DOC",
+        "OPEN",
+        "CONTRARY"
+      ]
+    },
+    {
+      "id": "T10",
+      "label_es": "valoración, competencia y salida financiada",
+      "label_en": "valuation, competition and funded exit",
+      "criminal_question_es": "¿Qué datos se suministraron, verificaron u omitieron y cómo afectaron la salida?",
+      "criminal_question_en": "What inputs were supplied, checked or omitted, and how did they affect the exit?",
+      "primary_classes": [
+        "DOC",
+        "HIP",
+        "OPEN",
+        "CONTRARY"
+      ]
+    },
+    {
+      "id": "T11",
+      "label_es": "adjudicación, escritura, Registro y título finca por finca",
+      "label_en": "adjudication, deed, Registry and property-by-property title",
+      "criminal_question_es": "¿Qué premisa se convirtió en título, qué no decidió el juzgado y qué se inscribió realmente?",
+      "criminal_question_en": "Which premise was converted into title, what did the court not decide, and what was actually registered?",
+      "primary_classes": [
+        "DOC",
+        "ADVERSE",
+        "OPEN",
+        "CONTRARY"
+      ]
+    },
+    {
+      "id": "T12",
+      "label_es": "obras, reforma, HNT/MYND y explotación",
+      "label_en": "works, refurbishment, HNT/MYND and operation",
+      "criminal_question_es": "¿Qué autoridad, costes, fincas, contratos, facturas y derechos de uso sustentaron las obras y operación?",
+      "criminal_question_en": "What authority, costs, properties, contracts, invoices and use rights supported the works and operation?",
+      "primary_classes": [
+        "DOC",
+        "HIP",
+        "OPEN"
+      ]
+    },
+    {
+      "id": "T13",
+      "label_es": "RIC, RICPE, inversión y diligencia debida",
+      "label_en": "RIC, RICPE, investment and due diligence",
+      "criminal_question_es": "¿Qué título, conflicto, condición, dispensa, verificación y dato de elegibilidad se presentó o adoptó?",
+      "criminal_question_en": "What title, conflict, condition, waiver, verification and eligibility data was presented or adopted?",
+      "primary_classes": [
+        "DOC",
+        "OPEN",
+        "CONTRARY"
+      ]
+    },
+    {
+      "id": "T14",
+      "label_es": "incentivos regionales y ayudas públicas",
+      "label_en": "regional incentives and public aid",
+      "criminal_question_es": "¿Qué gasto, obra, empleo, disponibilidad, acumulación y beneficiario se certificaron?",
+      "criminal_question_en": "What expenditure, works, jobs, availability, accumulation and beneficiary were certified?",
+      "primary_classes": [
+        "DOC",
+        "OPEN",
+        "NOTICE"
+      ]
+    },
+    {
+      "id": "T15",
+      "label_es": "FEDER/ERDF y fondos europeos",
+      "label_en": "FEDER/ERDF and European funds",
+      "criminal_question_es": "¿Qué costes y fuentes/usos llegaron al expediente europeo y cómo fueron controlados?",
+      "criminal_question_en": "Which costs and sources/uses entered the European file and how were they controlled?",
+      "primary_classes": [
+        "DOC",
+        "OPEN",
+        "NOTICE"
+      ]
+    },
+    {
+      "id": "T16",
+      "label_es": "Yaiza, Cabildo, turismo, licencia y primera ocupación",
+      "label_en": "Yaiza, Cabildo, tourism, licence and first occupation",
+      "criminal_question_es": "¿Qué representación de título/autoridad se entregó y qué comprobó cada órgano?",
+      "criminal_question_en": "What title/authority representation was supplied and what did each body check?",
+      "primary_classes": [
+        "DOC",
+        "OPEN",
+        "NOTICE"
+      ]
+    },
+    {
+      "id": "T17",
+      "label_es": "profesionales, gatekeepers, autoridades y SAIP",
+      "label_en": "professionals, gatekeepers, authorities and SAIP",
+      "criminal_question_es": "¿Quién recibió qué aviso, con qué competencia y qué preservó, examinó, remitió o decidió?",
+      "criminal_question_en": "Who received which notice, with what competence, and what did they preserve, examine, refer or decide?",
+      "primary_classes": [
+        "NOTICE",
+        "OPEN",
+        "ADVERSE",
+        "CONTRARY"
+      ]
+    },
+    {
+      "id": "T18",
+      "label_es": "beneficio, ingreso, daño, causalidad, recuperación y restitución",
+      "label_en": "benefit, income, harm, causation, recovery and restitution",
+      "criminal_question_es": "¿Qué valor llegó a quién, por qué mecanismo y qué habría ocurrido sin el puente impugnado?",
+      "criminal_question_en": "What value reached whom, through which mechanism, and what would have occurred without the challenged bridge?",
+      "primary_classes": [
+        "DOC",
+        "HIP",
+        "OPEN",
+        "CONTRARY"
+      ]
+    }
   ],
   "reverse_chain": {
     "direction": "OUTCOME_TO_ORIGIN_THEN_FORWARD_CAUSAL_TEST",
     "nodes": [
-      {"id":"RC00","date":"pre-2008","label_es":"ACTA comunitaria anterior a 29-abr-2008","label_en":"Owners' Community ACTA before 29-Apr-2008","detail_es":"No localizada ni identificada por fecha; estatutos/título no se convierten en ACTA.","detail_en":"Not located or identified by date; statutes/title are not converted into minutes.","classes":["GAP"],"tracks":["T01","T02","T04"]},
-      {"id":"RC01","date":"2008–2010","label_es":"estructura original, venta y transición","label_en":"original structure, sale and transition","detail_es":"Separar Montelanza/JPS original, Multimatrix/LPB y sucesión documental posterior.","detail_en":"Separate original Montelanza/JPS, Multimatrix/LPB and later documentary succession.","classes":["DOC","OPEN"],"tracks":["T01","T05","T09"]},
-      {"id":"RC02","date":"2011","label_es":"C1 · autoridad, deuda y voto","label_en":"C1 · authority, debt and voting","detail_es":"Fase Montelanza/Molina–Aizpurúa/FMMM/Pamanil atribuida; actos y capacidades no se transfieren.","detail_en":"Attributed Montelanza/Molina–Aizpurúa/FMMM/Pamanil phase; acts and capacities do not transfer.","classes":["DOC","HIP","GAP","CONTRARY"],"tracks":["T01","T02","T03","T04"]},
-      {"id":"RC03","date":"2012–2017","label_es":"litigación, cargos alegados y explotación","label_en":"litigation, claimed offices and operation","detail_es":"Probar cada uso posterior de autoridad, deuda, acceso y documento.","detail_en":"Prove each later use of authority, debt, access and instrument.","classes":["DOC","HIP","ADVERSE","CONTRARY"],"tracks":["T05","T06","T07","T08"]},
-      {"id":"RC04","date":"7-jun-2018","label_es":"control material, seguridad y acceso","label_en":"material control, security and access","detail_es":"La cronología y fuentes justifican prueba; no prueban por sí solas mando común o delito.","detail_en":"Chronology and sources justify testing; they do not alone prove common command or crime.","classes":["DOC","HIP","ADVERSE","OPEN"],"tracks":["T06","T07","T08"]},
-      {"id":"RC05","date":"20-nov-2018","label_es":"giro C2 y estudio de reforma referido","label_en":"C2 turn and later-recited refurbishment study","detail_es":"ACTA, convocatoria, asistentes, voto, presupuestos y circulación autónomos no localizados.","detail_en":"Standalone minutes, notice, attendance, vote, budgets and circulation are unlocated.","classes":["HIP","GAP"],"tracks":["T01","T02","T04","T12"]},
-      {"id":"RC06","date":"4-feb-2022","label_es":"ACTA: proyecto, deuda, voto y autoridad","label_en":"ACTA: project, debt, voting and authority","detail_es":"Copia localizada; denominador, servicio, poder, conflicto, libro y cadena directa siguen abiertos.","detail_en":"Copy located; denominator, service, proxies, conflicts, book and direct chain remain open.","classes":["DOC","HIP","OPEN","CONTRARY"],"tracks":["T01","T02","T03","T04","T12"]},
-      {"id":"RC07","date":"2021–2022","label_es":"adjudicación, escritura 457 y Registro","label_en":"adjudication, deed 457 and Registry","detail_es":"Vía jurídicamente separada; 17 días y materia común permiten comparar, no inferir uso causal.","detail_en":"Legally separate lane; 17 days and common subject matter permit comparison, not causal-use inference.","classes":["DOC","ADVERSE","OPEN","CONTRARY"],"tracks":["T08","T09","T11"]},
-      {"id":"RC08","date":"2022+","label_es":"obras, reforma, HNT/MYND y explotación","label_en":"works, refurbishment, HNT/MYND and operation","detail_es":"Producir contratos, facturas, fincas, permisos, fuentes/usos e ingresos.","detail_en":"Produce contracts, invoices, properties, permissions, sources/uses and income.","classes":["DOC","HIP","OPEN"],"tracks":["T12","T18"]},
-      {"id":"RC09","date":"2022+","label_es":"RIC/RICPE, incentivos y FEDER","label_en":"RIC/RICPE, incentives and ERDF","detail_es":"Mismo activo o beneficio no prueba que un ACTA fuera suministrada, verificada o adoptada.","detail_en":"Same asset or benefit does not prove that minutes were supplied, checked or adopted.","classes":["DOC","OPEN","NOTICE","CONTRARY"],"tracks":["T13","T14","T15"]},
-      {"id":"RC10","date":"2022–2026","label_es":"Yaiza, Cabildo y entregas SAIP","label_en":"Yaiza, Cabildo and SAIP deliveries","detail_es":"Entrega/registro demuestra aviso; el expediente completo debe probar incorporación, examen, decisión y uso.","detail_en":"Delivery/registration proves notice; the complete file must prove incorporation, examination, decision and use.","classes":["NOTICE","OPEN"],"tracks":["T16","T17"]},
-      {"id":"RC11","date":"actual","label_es":"beneficio, daño, recuperación y restitución","label_en":"benefit, harm, recovery and restitution","detail_es":"Seguir valor e ingresos; separar título independiente, terceros, causalidad y no doble recuperación.","detail_en":"Trace value and income; separate independent title, third parties, causation and no double recovery.","classes":["DOC","HIP","OPEN","CONTRARY"],"tracks":["T18"]}
+      {
+        "id": "RC00",
+        "date": "pre-2008",
+        "label_es": "ACTA comunitaria anterior a 29-abr-2008",
+        "label_en": "Owners' Community ACTA before 29-Apr-2008",
+        "detail_es": "No localizada ni identificada por fecha; estatutos/título no se convierten en ACTA.",
+        "detail_en": "Not located or identified by date; statutes/title are not converted into minutes.",
+        "classes": [
+          "GAP"
+        ],
+        "tracks": [
+          "T01",
+          "T02",
+          "T04"
+        ]
+      },
+      {
+        "id": "RC01",
+        "date": "2008–2010",
+        "label_es": "estructura original, venta y transición",
+        "label_en": "original structure, sale and transition",
+        "detail_es": "Separar Montelanza/JPS original, Multimatrix/LPB y sucesión documental posterior.",
+        "detail_en": "Separate original Montelanza/JPS, Multimatrix/LPB and later documentary succession.",
+        "classes": [
+          "DOC",
+          "OPEN"
+        ],
+        "tracks": [
+          "T01",
+          "T05",
+          "T09"
+        ]
+      },
+      {
+        "id": "RC02",
+        "date": "2011",
+        "label_es": "C1 · autoridad, deuda y voto",
+        "label_en": "C1 · authority, debt and voting",
+        "detail_es": "Fase Montelanza/Molina–Aizpurúa/FMMM/Pamanil atribuida; actos y capacidades no se transfieren.",
+        "detail_en": "Attributed Montelanza/Molina–Aizpurúa/FMMM/Pamanil phase; acts and capacities do not transfer.",
+        "classes": [
+          "DOC",
+          "HIP",
+          "GAP",
+          "CONTRARY"
+        ],
+        "tracks": [
+          "T01",
+          "T02",
+          "T03",
+          "T04"
+        ]
+      },
+      {
+        "id": "RC03",
+        "date": "2012–2017",
+        "label_es": "litigación, cargos alegados y explotación",
+        "label_en": "litigation, claimed offices and operation",
+        "detail_es": "Probar cada uso posterior de autoridad, deuda, acceso y documento.",
+        "detail_en": "Prove each later use of authority, debt, access and instrument.",
+        "classes": [
+          "DOC",
+          "HIP",
+          "ADVERSE",
+          "CONTRARY"
+        ],
+        "tracks": [
+          "T05",
+          "T06",
+          "T07",
+          "T08"
+        ]
+      },
+      {
+        "id": "RC04",
+        "date": "7-jun-2018",
+        "label_es": "control material, seguridad y acceso",
+        "label_en": "material control, security and access",
+        "detail_es": "La cronología y fuentes justifican prueba; no prueban por sí solas mando común o delito.",
+        "detail_en": "Chronology and sources justify testing; they do not alone prove common command or crime.",
+        "classes": [
+          "DOC",
+          "HIP",
+          "ADVERSE",
+          "OPEN"
+        ],
+        "tracks": [
+          "T06",
+          "T07",
+          "T08"
+        ]
+      },
+      {
+        "id": "RC05",
+        "date": "20-nov-2018",
+        "label_es": "giro C2 y estudio de reforma referido",
+        "label_en": "C2 turn and later-recited refurbishment study",
+        "detail_es": "ACTA, convocatoria, asistentes, voto, presupuestos y circulación autónomos no localizados.",
+        "detail_en": "Standalone minutes, notice, attendance, vote, budgets and circulation are unlocated.",
+        "classes": [
+          "HIP",
+          "GAP"
+        ],
+        "tracks": [
+          "T01",
+          "T02",
+          "T04",
+          "T12"
+        ]
+      },
+      {
+        "id": "RC06",
+        "date": "4-feb-2022",
+        "label_es": "ACTA: proyecto, deuda, voto y autoridad",
+        "label_en": "ACTA: project, debt, voting and authority",
+        "detail_es": "Copia localizada; denominador, servicio, poder, conflicto, libro y cadena directa siguen abiertos.",
+        "detail_en": "Copy located; denominator, service, proxies, conflicts, book and direct chain remain open.",
+        "classes": [
+          "DOC",
+          "HIP",
+          "OPEN",
+          "CONTRARY"
+        ],
+        "tracks": [
+          "T01",
+          "T02",
+          "T03",
+          "T04",
+          "T12"
+        ]
+      },
+      {
+        "id": "RC07",
+        "date": "2021–2022",
+        "label_es": "adjudicación, escritura 457 y Registro",
+        "label_en": "adjudication, deed 457 and Registry",
+        "detail_es": "Vía jurídicamente separada; 17 días y materia común permiten comparar, no inferir uso causal.",
+        "detail_en": "Legally separate lane; 17 days and common subject matter permit comparison, not causal-use inference.",
+        "classes": [
+          "DOC",
+          "ADVERSE",
+          "OPEN",
+          "CONTRARY"
+        ],
+        "tracks": [
+          "T08",
+          "T09",
+          "T11"
+        ]
+      },
+      {
+        "id": "RC08",
+        "date": "2022+",
+        "label_es": "obras, reforma, HNT/MYND y explotación",
+        "label_en": "works, refurbishment, HNT/MYND and operation",
+        "detail_es": "Producir contratos, facturas, fincas, permisos, fuentes/usos e ingresos.",
+        "detail_en": "Produce contracts, invoices, properties, permissions, sources/uses and income.",
+        "classes": [
+          "DOC",
+          "HIP",
+          "OPEN"
+        ],
+        "tracks": [
+          "T12",
+          "T18"
+        ]
+      },
+      {
+        "id": "RC09",
+        "date": "2022+",
+        "label_es": "RIC/RICPE, incentivos y FEDER",
+        "label_en": "RIC/RICPE, incentives and ERDF",
+        "detail_es": "Mismo activo o beneficio no prueba que un ACTA fuera suministrada, verificada o adoptada.",
+        "detail_en": "Same asset or benefit does not prove that minutes were supplied, checked or adopted.",
+        "classes": [
+          "DOC",
+          "OPEN",
+          "NOTICE",
+          "CONTRARY"
+        ],
+        "tracks": [
+          "T13",
+          "T14",
+          "T15"
+        ]
+      },
+      {
+        "id": "RC10",
+        "date": "2022–2026",
+        "label_es": "Yaiza, Cabildo y entregas SAIP",
+        "label_en": "Yaiza, Cabildo and SAIP deliveries",
+        "detail_es": "Entrega/registro demuestra aviso; el expediente completo debe probar incorporación, examen, decisión y uso.",
+        "detail_en": "Delivery/registration proves notice; the complete file must prove incorporation, examination, decision and use.",
+        "classes": [
+          "NOTICE",
+          "OPEN"
+        ],
+        "tracks": [
+          "T16",
+          "T17"
+        ]
+      },
+      {
+        "id": "RC11",
+        "date": "actual",
+        "label_es": "beneficio, daño, recuperación y restitución",
+        "label_en": "benefit, harm, recovery and restitution",
+        "detail_es": "Seguir valor e ingresos; separar título independiente, terceros, causalidad y no doble recuperación.",
+        "detail_en": "Trace value and income; separate independent title, third parties, causation and no double recovery.",
+        "classes": [
+          "DOC",
+          "HIP",
+          "OPEN",
+          "CONTRARY"
+        ],
+        "tracks": [
+          "T18"
+        ]
+      }
     ],
     "edges": [
-      {"from":"RC00","to":"RC01","status":"OPEN","closure_gap":"PD-GAP-UCF-001"},
-      {"from":"RC01","to":"RC02","status":"OPEN","closure_gap":"PD-GAP-UCF-002"},
-      {"from":"RC02","to":"RC03","status":"HIP","closure_gap":"PD-GAP-UCF-013"},
-      {"from":"RC03","to":"RC04","status":"HIP","closure_gap":"PD-GAP-UCF-013"},
-      {"from":"RC04","to":"RC05","status":"OPEN","closure_gap":"PD-GAP-UCF-008"},
-      {"from":"RC05","to":"RC06","status":"OPEN","closure_gap":"PD-GAP-UCF-008"},
-      {"from":"RC06","to":"RC07","status":"OPEN","closure_gap":"PD-GAP-UCF-009"},
-      {"from":"RC07","to":"RC08","status":"OPEN","closure_gap":"PD-GAP-UCF-011"},
-      {"from":"RC08","to":"RC09","status":"OPEN","closure_gap":"PD-GAP-UCF-009"},
-      {"from":"RC09","to":"RC10","status":"NOTICE","closure_gap":"PD-GAP-UCF-010"},
-      {"from":"RC10","to":"RC11","status":"OPEN","closure_gap":"PD-GAP-UCF-011"}
+      {
+        "from": "RC00",
+        "to": "RC01",
+        "status": "OPEN",
+        "closure_gap": "PD-GAP-UCF-001"
+      },
+      {
+        "from": "RC01",
+        "to": "RC02",
+        "status": "OPEN",
+        "closure_gap": "PD-GAP-UCF-002"
+      },
+      {
+        "from": "RC02",
+        "to": "RC03",
+        "status": "HIP",
+        "closure_gap": "PD-GAP-UCF-013"
+      },
+      {
+        "from": "RC03",
+        "to": "RC04",
+        "status": "HIP",
+        "closure_gap": "PD-GAP-UCF-013"
+      },
+      {
+        "from": "RC04",
+        "to": "RC05",
+        "status": "OPEN",
+        "closure_gap": "PD-GAP-UCF-008"
+      },
+      {
+        "from": "RC05",
+        "to": "RC06",
+        "status": "OPEN",
+        "closure_gap": "PD-GAP-UCF-008"
+      },
+      {
+        "from": "RC06",
+        "to": "RC07",
+        "status": "OPEN",
+        "closure_gap": "PD-GAP-UCF-009"
+      },
+      {
+        "from": "RC07",
+        "to": "RC08",
+        "status": "OPEN",
+        "closure_gap": "PD-GAP-UCF-011"
+      },
+      {
+        "from": "RC08",
+        "to": "RC09",
+        "status": "OPEN",
+        "closure_gap": "PD-GAP-UCF-009"
+      },
+      {
+        "from": "RC09",
+        "to": "RC10",
+        "status": "NOTICE",
+        "closure_gap": "PD-GAP-UCF-010"
+      },
+      {
+        "from": "RC10",
+        "to": "RC11",
+        "status": "OPEN",
+        "closure_gap": "PD-GAP-UCF-011"
+      }
     ]
   },
   "authority_legitimacy_propagation": {
@@ -295,16 +766,362 @@
     "responsibility_boundary_es": "La legitimidad aparente puede ser recibida, repetida o adoptada como input. Para imputar penalmente al receptor siguen siendo indispensables recepción, conocimiento, deber/capacidad, acto u omisión, dolo, efecto y causalidad propios.",
     "responsibility_boundary_en": "Apparent legitimacy may be received, repeated or adopted as an input. Criminal attribution to a recipient still requires their own receipt, knowledge, duty/capacity, act or omission, intent, effect and causation.",
     "stages": [
-      {"id":"AUTH-UCF-001","period":"pre-2008–2011","label_es":"cargo y órgano comunitario","label_en":"Community office and organ","proposition_es":"Autoridad alegadamente asumida o disputada en nombre de la Comunidad Sun Park y continuidad entre perímetros que deben mantenerse separados.","proposition_en":"Authority allegedly assumed or disputed in the name of the Sun Park Community and continuity between perimeters that must remain distinct.","test_es":"Título, finca, nombramiento, mandato, convocatoria constitutiva, aceptación, vigencia y conocimiento de la disputa por cada actor.","test_en":"Title, property, appointment, mandate, constitutive call, acceptance, duration and knowledge of the dispute for each actor.","classes":["DOC","HIP","GAP","CONTRARY"],"tracks":["T01","T02"],"source_refs":["PD-GAP-UCF-001","SP-EVT-2011-02-02-COM-MEETING","SP-EVT-2011-06-22-COM-MEETING"],"gap_ids":["PD-GAP-UCF-001","PD-GAP-UCF-002","PD-GAP-UCF-015"],"route_es":"es/comunidad-instrumentalizacion/sala-documental-actas/control-lph-ciclo-juntas/","route_en":"en/community-instrumentalisation/acta-document-room/meeting-lifecycle-lph-control/"},
-      {"id":"AUTH-UCF-002","period":"2011–2022","label_es":"ACTAS, cargos y certificados","label_en":"ACTAs, offices and certificates","proposition_es":"La autoridad alegada se habría materializado y circulado mediante convocatorias, ACTAS, firmas, certificados, libro y versiones documentales.","proposition_en":"The alleged authority was purportedly materialised and circulated through notices, ACTAs, signatures, certificates, the minute book and documentary variants.","test_es":"Autor, firmantes, custodio, original diligenciado, metadatos, versión, circulación, objeción y cada uso posterior.","test_en":"Author, signatories, custodian, diligenced original, metadata, version, circulation, objection and every later use.","classes":["DOC","HIP","GAP"],"tracks":["T02","T04","T07"],"source_refs":["SP-SRC-ACTA-2011-02-02-A","SP-SRC-ACTA-2011-06-22-A","SP-SRC-ACTA-2022-02-04"],"gap_ids":["PD-GAP-UCF-002","PD-GAP-UCF-003","PD-GAP-UCF-007","PD-GAP-UCF-008","PD-GAP-UCF-015"],"route_es":"es/comunidad-instrumentalizacion/sala-documental-actas/","route_en":"en/community-instrumentalisation/acta-document-room/"},
-      {"id":"AUTH-UCF-003","period":"2011–2022","label_es":"deuda, coeficiente, exclusión y voto","label_en":"debt, coefficient, exclusion and voting","proposition_es":"Gil/Aweswell alegan que ACTAS y certificados habrían convertido la autoridad disputada en deuda comunitaria supuestamente fabricada o inexacta, denominadores, exclusiones y acuerdos con apariencia de legitimidad.","proposition_en":"Gil/Aweswell allege that ACTAs and certificates converted the disputed authority premise into allegedly fabricated or inaccurate Community debt, denominators, exclusions and resolutions carrying apparent legitimacy.","test_es":"Ledger por unidad, título/coeficiente, factura/pago, exigibilidad, poder, conflicto, voto por punto, certificado y beneficiario.","test_en":"Unit ledger, title/coefficient, invoice/payment, enforceability, proxy, conflict, itemised vote, certificate and beneficiary.","classes":["DOC","HIP","OPEN","CONTRARY"],"tracks":["T03","T04","T18"],"source_refs":["AX-VOTING-CONTROL","AX-DEBT-COST","PD-HYP-UCF-003"],"gap_ids":["PD-GAP-UCF-005","PD-GAP-UCF-006","PD-GAP-UCF-015"],"route_es":"es/actas-comunidad-autoridades-publicas/","route_en":"en/community-actas-public-authorities/"},
-      {"id":"AUTH-UCF-004","period":"2011+","label_es":"uso procesal fuera del concurso","label_en":"procedural use outside insolvency","proposition_es":"La hipótesis exige comprobar si relatos, ACTAS, deuda, certificados o cargos se presentaron conscientemente en denuncias o litigios para obtener una resolución: posible estafa procesal solo si se prueban todos sus elementos.","proposition_en":"The hypothesis requires testing whether accounts, ACTAs, debt, certificates or offices were knowingly presented in complaints or litigation to obtain a decision: alleged procedural fraud only if every element is proved.","test_es":"Documento/relato exacto, autor/transmisor, falsedad material, conocimiento, órgano engañado, acto de disposición/decisión, causalidad, perjuicio, beneficio y contradicción revelada.","test_en":"Exact document/account, author/transmitter, material falsity, knowledge, deceived body, dispositive act/decision, causation, harm, benefit and disclosed contrary record.","classes":["DOC","HIP","ADVERSE","CONTRARY"],"tracks":["T07","T17","T18"],"source_refs":["PD-HYP-UCF-001","PD-HYP-UCF-002","AC-DFA-KNOWING-FACILITATION-VISIBILITY-20260820"],"gap_ids":["PD-GAP-UCF-007","PD-GAP-UCF-013","PD-GAP-UCF-015"],"route_es":"es/concurso-36-2012-analisis-penal-forense-unitario/","route_en":"en/insolvency-36-2012-unitary-criminal-forensic-analysis/"},
-      {"id":"AUTH-UCF-005","period":"2012+","label_es":"concurso, masa y supervisión judicial","label_en":"insolvency, estate and judicial supervision","proposition_es":"Se alega que deuda, autoridad y control comunitarios fueron instrumentalizados dentro del Concurso 36/2012 y respecto de activos LPB formalmente sujetos a salvaguardas de administración concursal y supervisión judicial cuya efectividad práctica se discute; la estafa procesal o criminalidad concursal no se presume de una omisión o resultado adverso.","proposition_en":"Community debt, authority and control are alleged to have been instrumentalised inside Insolvency Proceeding 36/2012 and in relation to LPB assets formally subject to insolvency-administration and judicial-supervision safeguards whose practical effectiveness is disputed; procedural fraud or insolvency criminality is not presumed from an omission or adverse result.","test_es":"Deber y competencia de AC/juzgado, documento recibido, aviso contrario, verificación, acto/omisión, resolución inducida, efecto sobre masa/unidad productiva, conocimiento, dolo, causalidad y beneficio.","test_en":"IA/court duty and competence, document received, contrary notice, verification, act/omission, induced decision, estate/business-unit effect, knowledge, intent, causation and benefit.","classes":["DOC","HIP","ADVERSE","OPEN","CONTRARY"],"tracks":["T07","T08","T17","T18"],"source_refs":["AC-DFA-KNOWING-FACILITATION-VISIBILITY-20260820","CAM-CREDITOR-CONTROL-CRIMINAL-LEAD-20260823","X-INT-004"],"gap_ids":["PD-GAP-UCF-006","PD-GAP-UCF-013","PD-GAP-UCF-015","PD-GAP-UCF-016"],"route_es":"es/concurso-36-2012-analisis-penal-forense-unitario/","route_en":"en/insolvency-36-2012-unitary-criminal-forensic-analysis/"},
-      {"id":"AUTH-UCF-006","period":"7-jun-2018+","label_es":"administración de hecho o en la sombra","label_en":"de facto or shadow administration","proposition_es":"Gil/Aweswell atribuyen a actores privados funciones coordinadas sobre deuda, voto, acceso, llaves, seguridad, mantenimiento, posesión y posición concursal, con posible administración de hecho o en la sombra de activos LPB.","proposition_en":"Gil/Aweswell attribute coordinated functions over debt, voting, access, keys, security, maintenance, possession and insolvency position to private actors, potentially amounting to de facto or shadow administration of LPB assets.","test_es":"Funciones efectivas y estables, instrucciones, autonomía, capacidad de decisión, subordinación de administradores formales, conocimiento, periodo, acto, activo, efecto y beneficio por persona; la etiqueta jurídica queda abierta.","test_en":"Effective and sustained functions, instructions, autonomy, decision capacity, subordination of formal administrators, knowledge, period, act, asset, effect and benefit per person; the legal characterisation remains open.","classes":["DOC","HIP","ADVERSE","OPEN","CONTRARY"],"tracks":["T03","T06","T08","T17","T18"],"source_refs":["AC-DFA-KNOWING-FACILITATION-VISIBILITY-20260820","CAM-CREDITOR-CONTROL-CRIMINAL-LEAD-20260823","SP-EVT-2018-DP1132-IMPLEMENTATION"],"gap_ids":["PD-GAP-UCF-008","PD-GAP-UCF-013","PD-GAP-UCF-015"],"route_es":"es/administracion-de-hecho-comunidad-ac/","route_en":"en/de-facto-administration-community-ac/"},
-      {"id":"AUTH-UCF-007","period":"2021–2022","label_es":"adjudicación, escritura y título","label_en":"adjudication, deed and title","proposition_es":"Se debe probar qué premisas comunitarias, de deuda, control o elegibilidad llegaron realmente a adjudicación, testimonio, escritura, Registro y transferencia CAM→HNT.","proposition_en":"It must be proved which Community, debt, control or eligibility premises actually reached adjudication, court testimony, deed, Registry and the CAM→HNT transfer.","test_es":"Expediente e índice completos, documento transmitido, fundamento de decisión, finca por finca, límites de cosa juzgada/firmeza, aviso, tercero, uso, ingreso y beneficiario.","test_en":"Complete file and index, transmitted document, decisional basis, property-by-property analysis, finality/res-judicata limits, notice, third party, use, income and beneficiary.","classes":["DOC","ADVERSE","OPEN","CONTRARY"],"tracks":["T08","T09","T11","T18"],"source_refs":["AX-TITLE-BENEFIT","PD-HYP-UCF-004"],"gap_ids":["PD-GAP-UCF-011","PD-GAP-UCF-015"],"route_es":"es/concurso-36-2012-analisis-penal-forense-unitario/","route_en":"en/insolvency-36-2012-unitary-criminal-forensic-analysis/"},
-      {"id":"AUTH-UCF-008","period":"2022+","label_es":"reforma, RIC/RICPE e inversión","label_en":"refurbishment, RIC/RICPE and investment","proposition_es":"La hipótesis aguas abajo exige comprobar si autoridad, ACTAS, título, deuda, costes u obras fueron suministrados o adoptados en inversión, diligencia debida, RIC/RICPE, financiación y reforma.","proposition_en":"The downstream hypothesis requires testing whether authority, ACTAs, title, debt, costs or works were supplied or adopted in investment, due diligence, RIC/RICPE, finance and refurbishment.","test_es":"Solicitud/paquete, emisor, receptor, fecha, due diligence, conflicto/dispensa, elegibilidad, factura/pago, fuentes/usos, decisión, conocimiento, causalidad y beneficio.","test_en":"Application/package, sender, recipient, date, due diligence, conflict/waiver, eligibility, invoice/payment, sources/uses, decision, knowledge, causation and benefit.","classes":["DOC","HIP","OPEN","CONTRARY"],"tracks":["T12","T13","T18"],"source_refs":["AX-FUNDING","SP-REL-2022-PROJECT","PD-HYP-UCF-004"],"gap_ids":["PD-GAP-UCF-009","PD-GAP-UCF-012","PD-GAP-UCF-015"],"route_es":"es/ric-private-equity-sun-park/","route_en":"en/ric-private-equity-sun-park/"},
-      {"id":"AUTH-UCF-009","period":"2022+","label_es":"incentivos regionales y FEDER","label_en":"regional incentives and ERDF","proposition_es":"Incentivos regionales y FEDER son expedientes separados: se debe probar qué representación de título/autoridad, costes, empleo y acumulación recibió y adoptó cada órgano.","proposition_en":"Regional incentives and ERDF are separate files: the title/authority, costs, employment and cumulation representation received and adopted by each body must be proved.","test_es":"Por instrumento: solicitud, índice, anexos, resolución, coste elegible, factura/pago, empleo, cofinanciación/acumulación, control, auditoría, aviso contrario, recuperación y nexo con ACTAS.","test_en":"Per instrument: application, index, annexes, decision, eligible cost, invoice/payment, employment, co-financing/cumulation, control, audit, contrary notice, recovery and ACTA nexus.","classes":["DOC","OPEN","NOTICE","CONTRARY"],"tracks":["T14","T15","T17","T18"],"source_refs":["AX-FUNDING","X-INT-004","PD-EV-UCF-INT-184368-2026","PD-SP-EVT-0141","PD-SP-EVT-0142","PD-SP-EVT-0143","PD-SP-EVT-0144","PD-SP-EVT-0145","PD-SP-EVT-0146","PD-SP-EVT-0147","PD-SP-EVT-0148","PD-SP-EVT-0149","PD-SP-EVT-0150","PD-SP-EVT-0151","PD-SP-EVT-0152","PD-SP-EVT-0155","PD-SP-EVT-0156","PD-SP-EVT-0157"],"gap_ids":["PD-GAP-UCF-009","PD-GAP-UCF-012","PD-GAP-UCF-015","PD-GAP-UCF-016"],"route_es":"es/intervencion-general-siinf-trazabilidad/","route_en":"en/intervencion-general-siinf-traceability/"},
-      {"id":"AUTH-UCF-010","period":"2022–actual","label_es":"Yaiza, Cabildo, SAIP, explotación y beneficio","label_en":"Yaiza, Cabildo, SAIP, operation and benefit","proposition_es":"Las entregas SAIP prueban aviso o registro según cada acuse; no prueban que Yaiza, Cabildo u otro órgano incorporara, verificara o adoptara las alegaciones. La explotación y el beneficio requieren trazado independiente.","proposition_en":"SAIP deliveries prove notice or registration according to each receipt; they do not prove that Yaiza, the Cabildo or another body incorporated, checked or adopted the allegations. Operation and benefit require independent tracing.","test_es":"Solicitud/entrega exacta, entrada, routing, incorporación, informe, decisión, título/autoridad verificados, inspección, licencia/primera ocupación, ingreso, gasto, beneficiario y respuesta al aviso.","test_en":"Exact application/delivery, entry, routing, incorporation, report, decision, verified title/authority, inspection, licence/first occupation, income, cost, beneficiary and response to notice.","classes":["NOTICE","OPEN","DOC","CONTRARY"],"tracks":["T16","T17","T18"],"source_refs":["AX-AUTHORITY","LZ-CAB-025","LZ-YAI-031","PD-SP-EVT-0153","PD-SP-EVT-0154","X-INT-004"],"gap_ids":["PD-GAP-UCF-010","PD-GAP-UCF-011","PD-GAP-UCF-015","PD-GAP-UCF-016"],"route_es":"es/actas-comunidad-autoridades-publicas/","route_en":"en/community-actas-public-authorities/"}
+      {
+        "id": "AUTH-UCF-001",
+        "period": "pre-2008–2011",
+        "label_es": "cargo y órgano comunitario",
+        "label_en": "Community office and organ",
+        "proposition_es": "Autoridad alegadamente asumida o disputada en nombre de la Comunidad Sun Park y continuidad entre perímetros que deben mantenerse separados.",
+        "proposition_en": "Authority allegedly assumed or disputed in the name of the Sun Park Community and continuity between perimeters that must remain distinct.",
+        "test_es": "Título, finca, nombramiento, mandato, convocatoria constitutiva, aceptación, vigencia y conocimiento de la disputa por cada actor.",
+        "test_en": "Title, property, appointment, mandate, constitutive call, acceptance, duration and knowledge of the dispute for each actor.",
+        "classes": [
+          "DOC",
+          "HIP",
+          "GAP",
+          "CONTRARY"
+        ],
+        "tracks": [
+          "T01",
+          "T02"
+        ],
+        "source_refs": [
+          "PD-GAP-UCF-001",
+          "SP-EVT-2011-02-02-COM-MEETING",
+          "SP-EVT-2011-06-22-COM-MEETING"
+        ],
+        "gap_ids": [
+          "PD-GAP-UCF-001",
+          "PD-GAP-UCF-002",
+          "PD-GAP-UCF-015"
+        ],
+        "route_es": "es/comunidad-instrumentalizacion/sala-documental-actas/control-lph-ciclo-juntas/",
+        "route_en": "en/community-instrumentalisation/acta-document-room/meeting-lifecycle-lph-control/"
+      },
+      {
+        "id": "AUTH-UCF-002",
+        "period": "2011–2022",
+        "label_es": "ACTAS, cargos y certificados",
+        "label_en": "ACTAs, offices and certificates",
+        "proposition_es": "La autoridad alegada se habría materializado y circulado mediante convocatorias, ACTAS, firmas, certificados, libro y versiones documentales.",
+        "proposition_en": "The alleged authority was purportedly materialised and circulated through notices, ACTAs, signatures, certificates, the minute book and documentary variants.",
+        "test_es": "Autor, firmantes, custodio, original diligenciado, metadatos, versión, circulación, objeción y cada uso posterior.",
+        "test_en": "Author, signatories, custodian, diligenced original, metadata, version, circulation, objection and every later use.",
+        "classes": [
+          "DOC",
+          "HIP",
+          "GAP"
+        ],
+        "tracks": [
+          "T02",
+          "T04",
+          "T07"
+        ],
+        "source_refs": [
+          "SP-SRC-ACTA-2011-02-02-A",
+          "SP-SRC-ACTA-2011-06-22-A",
+          "SP-SRC-ACTA-2022-02-04"
+        ],
+        "gap_ids": [
+          "PD-GAP-UCF-002",
+          "PD-GAP-UCF-003",
+          "PD-GAP-UCF-007",
+          "PD-GAP-UCF-008",
+          "PD-GAP-UCF-015"
+        ],
+        "route_es": "es/comunidad-instrumentalizacion/sala-documental-actas/",
+        "route_en": "en/community-instrumentalisation/acta-document-room/"
+      },
+      {
+        "id": "AUTH-UCF-003",
+        "period": "2011–2022",
+        "label_es": "deuda, coeficiente, exclusión y voto",
+        "label_en": "debt, coefficient, exclusion and voting",
+        "proposition_es": "Gil/Aweswell alegan que ACTAS y certificados habrían convertido la autoridad disputada en deuda comunitaria supuestamente fabricada o inexacta, denominadores, exclusiones y acuerdos con apariencia de legitimidad.",
+        "proposition_en": "Gil/Aweswell allege that ACTAs and certificates converted the disputed authority premise into allegedly fabricated or inaccurate Community debt, denominators, exclusions and resolutions carrying apparent legitimacy.",
+        "test_es": "Ledger por unidad, título/coeficiente, factura/pago, exigibilidad, poder, conflicto, voto por punto, certificado y beneficiario.",
+        "test_en": "Unit ledger, title/coefficient, invoice/payment, enforceability, proxy, conflict, itemised vote, certificate and beneficiary.",
+        "classes": [
+          "DOC",
+          "HIP",
+          "OPEN",
+          "CONTRARY"
+        ],
+        "tracks": [
+          "T03",
+          "T04",
+          "T18"
+        ],
+        "source_refs": [
+          "AX-VOTING-CONTROL",
+          "AX-DEBT-COST",
+          "PD-HYP-UCF-003"
+        ],
+        "gap_ids": [
+          "PD-GAP-UCF-005",
+          "PD-GAP-UCF-006",
+          "PD-GAP-UCF-015"
+        ],
+        "route_es": "es/actas-comunidad-autoridades-publicas/",
+        "route_en": "en/community-actas-public-authorities/"
+      },
+      {
+        "id": "AUTH-UCF-004",
+        "period": "2011+",
+        "label_es": "uso procesal fuera del concurso",
+        "label_en": "procedural use outside insolvency",
+        "proposition_es": "La hipótesis exige comprobar si relatos, ACTAS, deuda, certificados o cargos se presentaron conscientemente en denuncias o litigios para obtener una resolución: posible estafa procesal solo si se prueban todos sus elementos.",
+        "proposition_en": "The hypothesis requires testing whether accounts, ACTAs, debt, certificates or offices were knowingly presented in complaints or litigation to obtain a decision: alleged procedural fraud only if every element is proved.",
+        "test_es": "Documento/relato exacto, autor/transmisor, falsedad material, conocimiento, órgano engañado, acto de disposición/decisión, causalidad, perjuicio, beneficio y contradicción revelada.",
+        "test_en": "Exact document/account, author/transmitter, material falsity, knowledge, deceived body, dispositive act/decision, causation, harm, benefit and disclosed contrary record.",
+        "classes": [
+          "DOC",
+          "HIP",
+          "ADVERSE",
+          "CONTRARY"
+        ],
+        "tracks": [
+          "T07",
+          "T17",
+          "T18"
+        ],
+        "source_refs": [
+          "PD-HYP-UCF-001",
+          "PD-HYP-UCF-002",
+          "AC-DFA-KNOWING-FACILITATION-VISIBILITY-20260820"
+        ],
+        "gap_ids": [
+          "PD-GAP-UCF-007",
+          "PD-GAP-UCF-013",
+          "PD-GAP-UCF-015"
+        ],
+        "route_es": "es/concurso-36-2012-analisis-penal-forense-unitario/",
+        "route_en": "en/insolvency-36-2012-unitary-criminal-forensic-analysis/"
+      },
+      {
+        "id": "AUTH-UCF-005",
+        "period": "2012+",
+        "label_es": "concurso, masa y supervisión judicial",
+        "label_en": "insolvency, estate and judicial supervision",
+        "proposition_es": "Se alega que deuda, autoridad y control comunitarios fueron instrumentalizados dentro del Concurso 36/2012 y respecto de activos LPB formalmente sujetos a salvaguardas de administración concursal y supervisión judicial cuya efectividad práctica se discute; la estafa procesal o criminalidad concursal no se presume de una omisión o resultado adverso.",
+        "proposition_en": "Community debt, authority and control are alleged to have been instrumentalised inside Insolvency Proceeding 36/2012 and in relation to LPB assets formally subject to insolvency-administration and judicial-supervision safeguards whose practical effectiveness is disputed; procedural fraud or insolvency criminality is not presumed from an omission or adverse result.",
+        "test_es": "Deber y competencia de AC/juzgado, documento recibido, aviso contrario, verificación, acto/omisión, resolución inducida, efecto sobre masa/unidad productiva, conocimiento, dolo, causalidad y beneficio.",
+        "test_en": "IA/court duty and competence, document received, contrary notice, verification, act/omission, induced decision, estate/business-unit effect, knowledge, intent, causation and benefit.",
+        "classes": [
+          "DOC",
+          "HIP",
+          "ADVERSE",
+          "OPEN",
+          "CONTRARY"
+        ],
+        "tracks": [
+          "T07",
+          "T08",
+          "T17",
+          "T18"
+        ],
+        "source_refs": [
+          "AC-DFA-KNOWING-FACILITATION-VISIBILITY-20260820",
+          "CAM-CREDITOR-CONTROL-CRIMINAL-LEAD-20260823",
+          "X-INT-004"
+        ],
+        "gap_ids": [
+          "PD-GAP-UCF-006",
+          "PD-GAP-UCF-013",
+          "PD-GAP-UCF-015",
+          "PD-GAP-UCF-016"
+        ],
+        "route_es": "es/concurso-36-2012-analisis-penal-forense-unitario/",
+        "route_en": "en/insolvency-36-2012-unitary-criminal-forensic-analysis/"
+      },
+      {
+        "id": "AUTH-UCF-006",
+        "period": "7-jun-2018+",
+        "label_es": "administración de hecho o en la sombra",
+        "label_en": "de facto or shadow administration",
+        "proposition_es": "Gil/Aweswell atribuyen a actores privados funciones coordinadas sobre deuda, voto, acceso, llaves, seguridad, mantenimiento, posesión y posición concursal, con posible administración de hecho o en la sombra de activos LPB.",
+        "proposition_en": "Gil/Aweswell attribute coordinated functions over debt, voting, access, keys, security, maintenance, possession and insolvency position to private actors, potentially amounting to de facto or shadow administration of LPB assets.",
+        "test_es": "Funciones efectivas y estables, instrucciones, autonomía, capacidad de decisión, subordinación de administradores formales, conocimiento, periodo, acto, activo, efecto y beneficio por persona; la etiqueta jurídica queda abierta.",
+        "test_en": "Effective and sustained functions, instructions, autonomy, decision capacity, subordination of formal administrators, knowledge, period, act, asset, effect and benefit per person; the legal characterisation remains open.",
+        "classes": [
+          "DOC",
+          "HIP",
+          "ADVERSE",
+          "OPEN",
+          "CONTRARY"
+        ],
+        "tracks": [
+          "T03",
+          "T06",
+          "T08",
+          "T17",
+          "T18"
+        ],
+        "source_refs": [
+          "AC-DFA-KNOWING-FACILITATION-VISIBILITY-20260820",
+          "CAM-CREDITOR-CONTROL-CRIMINAL-LEAD-20260823",
+          "SP-EVT-2018-DP1132-IMPLEMENTATION"
+        ],
+        "gap_ids": [
+          "PD-GAP-UCF-008",
+          "PD-GAP-UCF-013",
+          "PD-GAP-UCF-015"
+        ],
+        "route_es": "es/administracion-de-hecho-comunidad-ac/",
+        "route_en": "en/de-facto-administration-community-ac/"
+      },
+      {
+        "id": "AUTH-UCF-007",
+        "period": "2021–2022",
+        "label_es": "adjudicación, escritura y título",
+        "label_en": "adjudication, deed and title",
+        "proposition_es": "Se debe probar qué premisas comunitarias, de deuda, control o elegibilidad llegaron realmente a adjudicación, testimonio, escritura, Registro y transferencia CAM→HNT.",
+        "proposition_en": "It must be proved which Community, debt, control or eligibility premises actually reached adjudication, court testimony, deed, Registry and the CAM→HNT transfer.",
+        "test_es": "Expediente e índice completos, documento transmitido, fundamento de decisión, finca por finca, límites de cosa juzgada/firmeza, aviso, tercero, uso, ingreso y beneficiario.",
+        "test_en": "Complete file and index, transmitted document, decisional basis, property-by-property analysis, finality/res-judicata limits, notice, third party, use, income and beneficiary.",
+        "classes": [
+          "DOC",
+          "ADVERSE",
+          "OPEN",
+          "CONTRARY"
+        ],
+        "tracks": [
+          "T08",
+          "T09",
+          "T11",
+          "T18"
+        ],
+        "source_refs": [
+          "AX-TITLE-BENEFIT",
+          "PD-HYP-UCF-004"
+        ],
+        "gap_ids": [
+          "PD-GAP-UCF-011",
+          "PD-GAP-UCF-015"
+        ],
+        "route_es": "es/concurso-36-2012-analisis-penal-forense-unitario/",
+        "route_en": "en/insolvency-36-2012-unitary-criminal-forensic-analysis/"
+      },
+      {
+        "id": "AUTH-UCF-008",
+        "period": "2022+",
+        "label_es": "reforma, RIC/RICPE e inversión",
+        "label_en": "refurbishment, RIC/RICPE and investment",
+        "proposition_es": "La hipótesis aguas abajo exige comprobar si autoridad, ACTAS, título, deuda, costes u obras fueron suministrados o adoptados en inversión, diligencia debida, RIC/RICPE, financiación y reforma.",
+        "proposition_en": "The downstream hypothesis requires testing whether authority, ACTAs, title, debt, costs or works were supplied or adopted in investment, due diligence, RIC/RICPE, finance and refurbishment.",
+        "test_es": "Solicitud/paquete, emisor, receptor, fecha, due diligence, conflicto/dispensa, elegibilidad, factura/pago, fuentes/usos, decisión, conocimiento, causalidad y beneficio.",
+        "test_en": "Application/package, sender, recipient, date, due diligence, conflict/waiver, eligibility, invoice/payment, sources/uses, decision, knowledge, causation and benefit.",
+        "classes": [
+          "DOC",
+          "HIP",
+          "OPEN",
+          "CONTRARY"
+        ],
+        "tracks": [
+          "T12",
+          "T13",
+          "T18"
+        ],
+        "source_refs": [
+          "AX-FUNDING",
+          "SP-REL-2022-PROJECT",
+          "PD-HYP-UCF-004"
+        ],
+        "gap_ids": [
+          "PD-GAP-UCF-009",
+          "PD-GAP-UCF-012",
+          "PD-GAP-UCF-015"
+        ],
+        "route_es": "es/ric-private-equity-sun-park/",
+        "route_en": "en/ric-private-equity-sun-park/"
+      },
+      {
+        "id": "AUTH-UCF-009",
+        "period": "2022+",
+        "label_es": "incentivos regionales y FEDER",
+        "label_en": "regional incentives and ERDF",
+        "proposition_es": "Incentivos regionales y FEDER son expedientes separados: se debe probar qué representación de título/autoridad, costes, empleo y acumulación recibió y adoptó cada órgano.",
+        "proposition_en": "Regional incentives and ERDF are separate files: the title/authority, costs, employment and cumulation representation received and adopted by each body must be proved.",
+        "test_es": "Por instrumento: solicitud, índice, anexos, resolución, coste elegible, factura/pago, empleo, cofinanciación/acumulación, control, auditoría, aviso contrario, recuperación y nexo con ACTAS.",
+        "test_en": "Per instrument: application, index, annexes, decision, eligible cost, invoice/payment, employment, co-financing/cumulation, control, audit, contrary notice, recovery and ACTA nexus.",
+        "classes": [
+          "DOC",
+          "OPEN",
+          "NOTICE",
+          "CONTRARY"
+        ],
+        "tracks": [
+          "T14",
+          "T15",
+          "T17",
+          "T18"
+        ],
+        "source_refs": [
+          "AX-FUNDING",
+          "X-INT-004",
+          "PD-EV-UCF-INT-184368-2026",
+          "PD-SP-EVT-0141",
+          "PD-SP-EVT-0142",
+          "PD-SP-EVT-0143",
+          "PD-SP-EVT-0144",
+          "PD-SP-EVT-0145",
+          "PD-SP-EVT-0146",
+          "PD-SP-EVT-0147",
+          "PD-SP-EVT-0148",
+          "PD-SP-EVT-0149",
+          "PD-SP-EVT-0150",
+          "PD-SP-EVT-0151",
+          "PD-SP-EVT-0152",
+          "PD-SP-EVT-0155",
+          "PD-SP-EVT-0156",
+          "PD-SP-EVT-0157"
+        ],
+        "gap_ids": [
+          "PD-GAP-UCF-009",
+          "PD-GAP-UCF-012",
+          "PD-GAP-UCF-015",
+          "PD-GAP-UCF-016"
+        ],
+        "route_es": "es/intervencion-general-siinf-trazabilidad/",
+        "route_en": "en/intervencion-general-siinf-traceability/"
+      },
+      {
+        "id": "AUTH-UCF-010",
+        "period": "2022–actual",
+        "label_es": "Yaiza, Cabildo, SAIP, explotación y beneficio",
+        "label_en": "Yaiza, Cabildo, SAIP, operation and benefit",
+        "proposition_es": "Las entregas SAIP prueban aviso o registro según cada acuse; no prueban que Yaiza, Cabildo u otro órgano incorporara, verificara o adoptara las alegaciones. La explotación y el beneficio requieren trazado independiente.",
+        "proposition_en": "SAIP deliveries prove notice or registration according to each receipt; they do not prove that Yaiza, the Cabildo or another body incorporated, checked or adopted the allegations. Operation and benefit require independent tracing.",
+        "test_es": "Solicitud/entrega exacta, entrada, routing, incorporación, informe, decisión, título/autoridad verificados, inspección, licencia/primera ocupación, ingreso, gasto, beneficiario y respuesta al aviso.",
+        "test_en": "Exact application/delivery, entry, routing, incorporation, report, decision, verified title/authority, inspection, licence/first occupation, income, cost, beneficiary and response to notice.",
+        "classes": [
+          "NOTICE",
+          "OPEN",
+          "DOC",
+          "CONTRARY"
+        ],
+        "tracks": [
+          "T16",
+          "T17",
+          "T18"
+        ],
+        "source_refs": [
+          "AX-AUTHORITY",
+          "LZ-CAB-025",
+          "LZ-YAI-031",
+          "PD-SP-EVT-0153",
+          "PD-SP-EVT-0154",
+          "X-INT-004"
+        ],
+        "gap_ids": [
+          "PD-GAP-UCF-010",
+          "PD-GAP-UCF-011",
+          "PD-GAP-UCF-015",
+          "PD-GAP-UCF-016"
+        ],
+        "route_es": "es/actas-comunidad-autoridades-publicas/",
+        "route_en": "en/community-actas-public-authorities/"
+      }
     ],
     "notice_checkpoint": {
       "id": "PD-EV-UCF-INT-184368-2026",
@@ -334,9 +1151,37 @@
     },
     "public_authority_communications": {
       "source": "assets/data/community-acta-authority-interconnectivity-v1.json#public_communications",
-      "required_tier_ids": ["ES_LOCAL_MUNICIPAL", "ES_ISLAND_CABILDO", "ES_CANARY_AUTONOMOUS", "ES_STATE", "EU_SUPRANATIONAL"],
-      "checkpoint_event_ids": ["PD-SP-EVT-0004", "PD-SP-EVT-0014", "PD-SP-EVT-0141", "PD-SP-EVT-0142", "PD-SP-EVT-0143", "PD-SP-EVT-0144", "PD-SP-EVT-0145", "PD-SP-EVT-0146", "PD-SP-EVT-0147", "PD-SP-EVT-0148", "PD-SP-EVT-0149", "PD-SP-EVT-0150", "PD-SP-EVT-0151", "PD-SP-EVT-0152", "PD-SP-EVT-0153", "PD-SP-EVT-0154", "PD-SP-EVT-0155", "PD-SP-EVT-0156", "PD-SP-EVT-0157"],
-      "legacy_crosswalk": {"PD-EV-UCF-INT-184368-2026": "PD-SP-EVT-0141"},
+      "required_tier_ids": [
+        "ES_LOCAL_MUNICIPAL",
+        "ES_ISLAND_CABILDO",
+        "ES_CANARY_AUTONOMOUS",
+        "ES_STATE",
+        "EU_SUPRANATIONAL"
+      ],
+      "checkpoint_event_ids": [
+        "PD-SP-EVT-0004",
+        "PD-SP-EVT-0014",
+        "PD-SP-EVT-0141",
+        "PD-SP-EVT-0142",
+        "PD-SP-EVT-0143",
+        "PD-SP-EVT-0144",
+        "PD-SP-EVT-0145",
+        "PD-SP-EVT-0146",
+        "PD-SP-EVT-0147",
+        "PD-SP-EVT-0148",
+        "PD-SP-EVT-0149",
+        "PD-SP-EVT-0150",
+        "PD-SP-EVT-0151",
+        "PD-SP-EVT-0152",
+        "PD-SP-EVT-0153",
+        "PD-SP-EVT-0154",
+        "PD-SP-EVT-0155",
+        "PD-SP-EVT-0156",
+        "PD-SP-EVT-0157"
+      ],
+      "legacy_crosswalk": {
+        "PD-EV-UCF-INT-184368-2026": "PD-SP-EVT-0141"
+      },
       "responsibility_boundary_es": "La autoridad aparente y los documentos pueden propagarse como insumos; la responsabilidad penal nunca se propaga por ACTA, comunicación, remisión, órgano o nivel. Cada actor requiere prueba individual de conocimiento, dolo, acto, causalidad y beneficio.",
       "responsibility_boundary_en": "Apparent authority and documents may propagate as inputs; criminal responsibility never propagates through an ACTA, communication, referral, office or tier. Every actor requires individual proof of knowledge, intent, act, causation and benefit.",
       "receipt_boundary_es": "Transporte, registro, entrega, remisión, incorporación, examen, verificación, adopción, decisión, efecto y utilización son estados distintos y cada uno exige fuente propia.",
@@ -361,8 +1206,18 @@
       "contrary_en": "Legitimate debts/works, genuine owner grievances, valid unlocated notice, error, delegation or adverse civil decision.",
       "open_proof_es": "Paquetes certificados 2-feb/22-jun-2011; aviso/servicio; poderes; asistencia; deuda; votos; libro; comunicaciones; expediente de impugnación.",
       "open_proof_en": "Certified 2-Feb/22-Jun-2011 packages; notice/service; proxies; attendance; debt; votes; book; communications; challenge file.",
-      "potential_relevance": ["documentary_falsity_or_use","procedural_deception","disloyal_administration","coercion_or_unauthorised_control"],
-      "source_refs": ["SP-EVT-2011-02-02-COM-MEETING","SP-EVT-2011-06-22-NOTICE","SP-EVT-2011-06-22-COM-MEETING","SP-EVT-2011-CHALLENGE-LITIGATION"]
+      "potential_relevance": [
+        "documentary_falsity_or_use",
+        "procedural_deception",
+        "disloyal_administration",
+        "coercion_or_unauthorised_control"
+      ],
+      "source_refs": [
+        "SP-EVT-2011-02-02-COM-MEETING",
+        "SP-EVT-2011-06-22-NOTICE",
+        "SP-EVT-2011-06-22-COM-MEETING",
+        "SP-EVT-2011-CHALLENGE-LITIGATION"
+      ]
     },
     {
       "id": "PD-HYP-UCF-002",
@@ -381,8 +1236,18 @@
       "contrary_en": "Owner/creditor rights, Insolvency Administration mandate, legitimate protection, consent, error, dismissal decisions and independent title.",
       "open_proof_es": "Contrato e instrucciones de seguridad, autoridad escrita, registros de acceso/llaves/cerraduras, audiovisual, testigos, ACTA 20-nov-2018 y expedientes certificados.",
       "open_proof_en": "Security contract and instructions, written authority, access/key/lock logs, audiovisual, witnesses, 20-Nov-2018 minutes and certified files.",
-      "potential_relevance": ["coercion_or_unauthorised_control","documentary_falsity_or_use","false_complaint_or_procedural_deception","participation_or_omission"],
-      "source_refs": ["SP-EVT-2018-05-18-COM-MEETING","SP-EVT-2018-DP1132-IMPLEMENTATION","SP-EVT-2018-11-20-REFORM-STUDY","SP-SRC-RECITAL-2018-11-20"]
+      "potential_relevance": [
+        "coercion_or_unauthorised_control",
+        "documentary_falsity_or_use",
+        "false_complaint_or_procedural_deception",
+        "participation_or_omission"
+      ],
+      "source_refs": [
+        "SP-EVT-2018-05-18-COM-MEETING",
+        "SP-EVT-2018-DP1132-IMPLEMENTATION",
+        "SP-EVT-2018-11-20-REFORM-STUDY",
+        "SP-SRC-RECITAL-2018-11-20"
+      ]
     },
     {
       "id": "PD-HYP-UCF-003",
@@ -401,8 +1266,20 @@
       "contrary_en": "Service through an uncontrolled correct route, proxies hidden by redaction, second call, necessary works, enforceable debt, incremental CAM funding and lawful court-approved dación.",
       "open_proof_es": "Convocatoria/servicio nativos LPB y Matkator, padrón título-coeficiente, poderes, deuda/voto por punto, original diligenciado, libro, circulación directa y objeciones.",
       "open_proof_en": "Native LPB and Matkator notice/service, title-coefficient roll, proxies, itemised debt/voting, diligenced original, book, direct circulation and objections.",
-      "potential_relevance": ["documentary_falsity_or_use","procedural_or_economic_deception","disloyal_administration","corporate_criminal_liability_if_predicate_proved"],
-      "source_refs": ["SP-EVT-2022-02-04-COM-MEETING","SP-SRC-ACTA-2022-02-04","AX-NOTICE-LPB","AX-NOTICE-MATKATOR","AX-VOTING-CONTROL","AX-DEBT-COST"]
+      "potential_relevance": [
+        "documentary_falsity_or_use",
+        "procedural_or_economic_deception",
+        "disloyal_administration",
+        "corporate_criminal_liability_if_predicate_proved"
+      ],
+      "source_refs": [
+        "SP-EVT-2022-02-04-COM-MEETING",
+        "SP-SRC-ACTA-2022-02-04",
+        "AX-NOTICE-LPB",
+        "AX-NOTICE-MATKATOR",
+        "AX-VOTING-CONTROL",
+        "AX-DEBT-COST"
+      ]
     },
     {
       "id": "PD-HYP-UCF-004",
@@ -421,8 +1298,19 @@
       "contrary_en": "Independent title, final decision, reasonable due diligence, good faith, independent eligibility, real costs, permitted cumulation or absence of receipt/knowledge.",
       "open_proof_es": "Documento/índice transmitido, emisor y receptor, verificación/adopción, expediente de decisión, facturas/pagos/empleo, fuentes/usos, ingresos y beneficiario final.",
       "open_proof_en": "Transmitted document/index, sender and recipient, verification/adoption, decision file, invoices/payments/jobs, sources/uses, income and ultimate beneficiary.",
-      "potential_relevance": ["documentary_falsity_or_use","public_aid_or_eu_funds_offences_if_elements_fit","fraud_or_procedural_fraud","money_laundering_only_if_predicate_and_knowledge_proved","restitution_and_confiscation"],
-      "source_refs": ["AX-TITLE-BENEFIT","AX-FUNDING","AX-AUTHORITY","SP-REL-2022-PROJECT"]
+      "potential_relevance": [
+        "documentary_falsity_or_use",
+        "public_aid_or_eu_funds_offences_if_elements_fit",
+        "fraud_or_procedural_fraud",
+        "money_laundering_only_if_predicate_and_knowledge_proved",
+        "restitution_and_confiscation"
+      ],
+      "source_refs": [
+        "AX-TITLE-BENEFIT",
+        "AX-FUNDING",
+        "AX-AUTHORITY",
+        "SP-REL-2022-PROJECT"
+      ]
     },
     {
       "id": "PD-HYP-UCF-005",
@@ -441,44 +1329,647 @@
       "contrary_en": "Valid authority or mandate, genuine debt, protective conduct, independent judicial title, good faith, reasonable professional diligence, autonomous eligibility, absence of receipt/knowledge, adverse decisions and absence of a stable structure or shared criminal purpose.",
       "open_proof_es": "Ledger AUTH-UCF-001–010 completo: origen, autor, capacidad, documento/hash, transmisor, receptor, fecha, aviso contrario, verificación, adopción, decisión, efecto, causalidad, perjuicio, beneficiario, conocimiento, dolo, patrón, estructura, permanencia y explicación lícita.",
       "open_proof_en": "Complete AUTH-UCF-001–010 ledger: origin, author, capacity, document/hash, transmitter, recipient, date, contrary notice, verification, adoption, decision, effect, causation, harm, beneficiary, knowledge, intent, pattern, structure, permanence and lawful explanation.",
-      "potential_relevance": ["procedural_fraud_if_all_elements_proved","insolvency_offences_or_fraud_if_all_elements_proved","documentary_falsity_or_knowing_use","de_facto_or_shadow_administration","criminal_organisation_or_group_only_if_statutory_elements_proved","public_aid_or_eu_funds_offences_if_document_specific_nexus_proved","restitution_and_confiscation"],
-      "source_refs": ["AC-DFA-KNOWING-FACILITATION-VISIBILITY-20260820","CAM-CREDITOR-CONTROL-CRIMINAL-LEAD-20260823","PD-EV-UCF-INT-184368-2026","X-INT-004","PD-GAP-UCF-015","PD-GAP-UCF-016"]
+      "potential_relevance": [
+        "procedural_fraud_if_all_elements_proved",
+        "insolvency_offences_or_fraud_if_all_elements_proved",
+        "documentary_falsity_or_knowing_use",
+        "de_facto_or_shadow_administration",
+        "criminal_organisation_or_group_only_if_statutory_elements_proved",
+        "public_aid_or_eu_funds_offences_if_document_specific_nexus_proved",
+        "restitution_and_confiscation"
+      ],
+      "source_refs": [
+        "AC-DFA-KNOWING-FACILITATION-VISIBILITY-20260820",
+        "CAM-CREDITOR-CONTROL-CRIMINAL-LEAD-20260823",
+        "PD-EV-UCF-INT-184368-2026",
+        "X-INT-004",
+        "PD-GAP-UCF-015",
+        "PD-GAP-UCF-016"
+      ]
     }
   ],
   "gaps": [
-    {"id":"PD-GAP-UCF-001","priority":"P0","status":"UNLOCATED","title_es":"ACTA comunitaria anterior a 29-abr-2008","title_en":"Owners' Community ACTA before 29-Apr-2008","tracks":["T01","T02","T04"],"source_refs":["meeting-lineage-index-v1.json#pre_2008_owner_acta_control"],"custodian_es":"libro oficial, administradores históricos, propietarios y archivos de transmisión","custodian_en":"official book, historic administrators, owners and transmission archives","closure_es":"Localizar fuente fechada/autenticada o documentar una búsqueda finita negativa por custodio sin convertirla en inexistencia.","closure_en":"Locate a dated/authenticated source or record a finite negative custodian-by-custodian search without converting it into nonexistence."},
-    {"id":"PD-GAP-UCF-002","priority":"P0","status":"PARTIAL","title_es":"paquetes completos 2-feb y 22-jun-2011","title_en":"complete 2-Feb and 22-Jun-2011 packages","tracks":["T01","T02","T03","T04"],"source_refs":["SP-EVT-2011-02-02-COM-MEETING","SP-EVT-2011-06-22-NOTICE","SP-EVT-2011-06-22-COM-MEETING"],"custodian_es":"Comunidad, presidente/a, secretario/a-administrador/a, libro, propietarios, juzgados y correo nativo","custodian_en":"Community, chair, secretary-administrator, book, owners, courts and native mail","closure_es":"Convocatoria, agenda, lista de servicio, poderes, asistencia, título/coeficiente, deuda, voto por punto, firmas, libro, audio, circulación y expediente de impugnación reconciliados.","closure_en":"Reconcile notice, agenda, service list, proxies, attendance, title/coefficient, debt, itemised voting, signatures, book, audio, circulation and challenge file."},
-    {"id":"PD-GAP-UCF-003","priority":"P0","status":"UNLOCATED","title_es":"aviso y servicio nativos 2022 a LPB/Aweswell","title_en":"native 2022 notice and service to LPB/Aweswell","tracks":["T02","T04","T07"],"source_refs":["AX-NOTICE-LPB","SP-EVT-2022-02-04-COM-MEETING","SP-EVT-2022-05-03-10-ACTA-TRANSMISSION"],"custodian_es":"Comunidad, administración, emisor, proveedor, destinatario legal y familia Thompson","custodian_en":"Community, administration, sender, provider, lawful recipient and Thompson family","closure_es":"Cadena nativa completa de convocatoria/servicio y reenvío posterior Thompson: cabeceras, adjunto/hash, destinatario/capacidad, hora, upstream, acuse y circulación directa/indirecta.","closure_en":"Complete native notice/service and later Thompson-forward chain: headers, attachment/hash, recipient/capacity, time, upstream source, acknowledgement and direct/indirect circulation."},
-    {"id":"PD-GAP-UCF-004","priority":"P0","status":"UNLOCATED","title_es":"aviso, poder, voto y perímetro extraconcursal Matkator","title_en":"Matkator notice, proxy, vote and extraconcursal perimeter","tracks":["T02","T03","T05","T11"],"source_refs":["AX-NOTICE-MATKATOR"],"custodian_es":"Matkator, Comunidad, administradores, Registro y titulares/representantes","custodian_en":"Matkator, Community, administrators, Registry and owners/representatives","closure_es":"Calendario de fincas/título y cadena independiente de convocatoria, servicio, poder, voto, deuda, entrega de ACTA, impugnación e implementación.","closure_en":"Property/title schedule and independent notice, service, proxy, vote, debt, minutes-delivery, challenge and implementation chain."},
-    {"id":"PD-GAP-UCF-005","priority":"P0","status":"OPEN_RECONCILIATION","title_es":"denominador 2022 de titularidad, coeficiente, poder, deuda y voto","title_en":"2022 ownership, coefficient, proxy, debt and vote denominator","tracks":["T01","T03","T11"],"source_refs":["AX-VOTING-CONTROL","SP-SRC-ACTA-2022-02-04"],"custodian_es":"libro, Registro, administración comunitaria, asistentes, representados y titulares","custodian_en":"book, Registry, Community administration, attendees, principals and owners","closure_es":"Padrón fechado y diligenciado, primera/segunda convocatoria, 100% de coeficientes, poderes, conflictos/abstenciones, exclusiones por deuda y hoja de votación por acuerdo.","closure_en":"Dated diligenced roll, first/second call, 100% coefficients, proxies, conflicts/abstentions, debt exclusions and resolution-by-resolution voting sheet."},
-    {"id":"PD-GAP-UCF-006","priority":"P0","status":"OPEN_PRODUCTION","title_es":"ledger unitario de deuda y derrama de reforma","title_en":"unitary debt and refurbishment-levy ledger","tracks":["T03","T08","T12","T18"],"source_refs":["AX-DEBT-COST","SP-EVT-2022-02-04-COM-MEETING"],"custodian_es":"Comunidad, bancos, contratistas, Administración Concursal, CAM/HNT y propietarios","custodian_en":"Community, banks, contractors, Insolvency Administration, CAM/HNT and owners","closure_es":"Saldo inicial por unidad, factura, pago, resolución, servicio, certificado, reclamación, recuperación, baja, obra, presupuesto, coste real, reparto y ledger final Comunidad/concurso.","closure_en":"Unit opening balance, invoice, payment, resolution, service, certificate, claim, recovery, write-off, works, budget, actual cost, allocation and final Community/insolvency ledger."},
-    {"id":"PD-GAP-UCF-007","priority":"P0","status":"PARTIAL","title_es":"originales diligenciados, libro, metadatos y variantes","title_en":"diligenced originals, book, metadata and variants","tracks":["T04","T07","T17"],"source_refs":["SP-SRC-ACTA-2011-02-02-A","SP-SRC-ACTA-2011-06-22-A","SP-SRC-ACTA-2022-02-04","SP-SRC-ACTA-2022-02-04-ALT"],"custodian_es":"libro oficial, secretario/a, presidente/a, administración, notaría y repositorios nativos","custodian_en":"official book, secretary, chair, administration, notary and native repositories","closure_es":"Original/copia certificada, diligencia, firmas, fecha de cierre, metadatos nativos, hash, historial de versiones, anexos y comparación fuente por fuente.","closure_en":"Original/certified copy, diligence, signatures, closing date, native metadata, hash, version history, annexes and source-by-source comparison."},
-    {"id":"PD-GAP-UCF-008","priority":"P0","status":"REFERENCE_ONLY","title_es":"ACTA autónoma y ciclo completo de 20-nov-2018","title_en":"standalone 20-Nov-2018 minutes and complete lifecycle","tracks":["T01","T02","T03","T04","T12"],"source_refs":["SP-EVT-2018-11-20-REFORM-STUDY","SP-SRC-RECITAL-2018-11-20"],"custodian_es":"Comunidad, CAM/Acosta Matos, FMMM/Pamalexsha, asistentes, proyectistas y archivos de obra","custodian_en":"Community, CAM/Acosta Matos, FMMM/Pamalexsha, attendees, designers and works archives","closure_es":"Convocatoria, servicio, agenda, ACTA, asistencia, poderes, votos, presupuestos, anexos, firmas/libro, circulación, objeciones e implementación.","closure_en":"Notice, service, agenda, minutes, attendance, proxies, votes, budgets, annexes, signatures/book, circulation, objections and implementation."},
-    {"id":"PD-GAP-UCF-009","priority":"P0","status":"OPEN_DEPENDENCY","title_es":"puente documental ACTA → RIC/RICPE/incentivos/FEDER/obras","title_en":"documentary ACTA → RIC/RICPE/incentives/ERDF/works bridge","tracks":["T12","T13","T14","T15","T17"],"source_refs":["AX-FUNDING","SP-REL-2022-PROJECT"],"custodian_es":"CAM/HNT, RICPE, financiadores, asesores, órgano de incentivos, gestores FEDER y contratistas","custodian_en":"CAM/HNT, RICPE, financiers, advisers, incentives body, ERDF managers and contractors","closure_es":"Por programa: solicitud, índice/anexo, ACTA/título/autoridad transmitidos, emisor/capacidad, receptor, fecha, verificación/adopción, decisión, coste elegible, factura, pago, empleo, acumulación y control/auditoría.","closure_en":"Per programme: application, index/annex, transmitted minutes/title/authority, sender/capacity, recipient, date, verification/adoption, decision, eligible cost, invoice, payment, jobs, cumulation and control/audit."},
-    {"id":"PD-GAP-UCF-010","priority":"P0","status":"OPEN_AUTHORITY_FILE","title_es":"expedientes completos Yaiza, Cabildo y tratamiento SAIP","title_en":"complete Yaiza, Cabildo and SAIP treatment files","tracks":["T16","T17"],"source_refs":["AX-AUTHORITY","LZ-YAI-014","LZ-YAI-015","LZ-YAI-016","LZ-YAI-017","LZ-YAI-018","LZ-YAI-031","LZ-CAB-025","PD-SP-EVT-0153","PD-SP-EVT-0154"],"legacy_source_aliases":{"LZ-YAIZA-1748-2022":"LZ-YAI-014","LZ-YAIZA-7043-2022":"LZ-YAI-015","LZ-YAIZA-7059-2022":"LZ-YAI-016","LZ-YAIZA-10356-2022":"LZ-YAI-017","LZ-YAIZA-5854-2022":"LZ-YAI-018","LZ-CABILDO-614-2026":"LZ-CAB-025"},"custodian_es":"Ayuntamiento de Yaiza, Cabildo de Lanzarote, órganos turísticos, registro/SAIP y promotor","custodian_en":"Yaiza Town Council, Cabildo de Lanzarote, tourism bodies, registry/SAIP and promoter","closure_es":"Para cada expediente: solicitud firmada, índice, anexos, entrada, routing, incorporación, informes, verificación de título/autoridad, decisión, notificación, firmeza, inspección y tratamiento de cada entrega SAIP.","closure_en":"For each file: signed application, index, annexes, entry, routing, incorporation, reports, title/authority verification, decision, service, finality, inspection and treatment of every SAIP delivery."},
-    {"id":"PD-GAP-UCF-011","priority":"P0","status":"OPEN_RECONCILIATION","title_es":"título finca por finca, cancelación, uso, ingreso y beneficio","title_en":"property-by-property title, cancellation, use, income and benefit","tracks":["T09","T11","T12","T18"],"source_refs":["AX-TITLE-BENEFIT"],"custodian_es":"Juzgado, notaría, Registro, AC, CAM/HNT, operadores, bancos y contabilidad","custodian_en":"Court, notary, Registry, Insolvency Administration, CAM/HNT, operators, banks and accounting","closure_es":"Matriz finca por finca de auto, escritura, asiento, cancelación, posesión, obra, uso, ingreso, gasto, carga, transferencia CAM→HNT, distribución, beneficiario y cuenta final/remanente.","closure_en":"Property-by-property matrix of order, deed, entry, cancellation, possession, works, use, income, cost, charge, CAM→HNT transfer, distribution, beneficiary and final account/remnant."},
-    {"id":"PD-GAP-UCF-012","priority":"P1","status":"OPEN_RECONCILIATION","title_es":"fuentes/usos, doble financiación y acumulación","title_en":"sources/uses, double funding and cumulation","tracks":["T12","T13","T14","T15","T18"],"source_refs":["AX-FUNDING"],"custodian_es":"beneficiarios, inversores, bancos, contratistas, órganos de ayuda, auditores y control interno","custodian_en":"beneficiaries, investors, banks, contractors, aid bodies, auditors and internal control","closure_es":"Ledger de cada euro/coste/obra/empleo con fuente, uso, fecha, factura, pago, cofinanciación, RIC, préstamo, incentivo, FEDER, exclusiones, acumulación, auditoría y recuperación.","closure_en":"Ledger for each euro/cost/work/job with source, use, date, invoice, payment, co-financing, RIC, loan, incentive, ERDF, exclusions, cumulation, audit and recovery."},
-    {"id":"PD-GAP-UCF-013","priority":"P0","status":"OPEN_ACTOR_THRESHOLD","title_es":"prueba penal actor por actor","title_en":"actor-by-actor criminal-threshold proof","tracks":["T01","T04","T06","T07","T08","T13","T17","T18"],"source_refs":["PD-HYP-UCF-001","PD-HYP-UCF-002","PD-HYP-UCF-003","PD-HYP-UCF-004"],"custodian_es":"cada actor/capacidad, comunicaciones nativas, expedientes, actas societarias/profesionales y registros de decisión","custodian_en":"each actor/capacity, native communications, files, corporate/professional minutes and decision records","closure_es":"Para cada persona: acto, capacidad, fecha, fuente, conocimiento real, dolo, uso, receptor, efecto, causalidad, beneficio, continuidad, explicación lícita, elemento penal y prueba exculpatoria.","closure_en":"For each person: act, capacity, date, source, actual knowledge, intent, use, recipient, effect, causation, benefit, continuation, lawful explanation, offence element and exculpatory evidence."},
-    {"id":"PD-GAP-UCF-014","priority":"P1","status":"PARTIAL","title_es":"certificación OCR, audio, hablantes y alineación","title_en":"OCR, audio, speaker and alignment certification","tracks":["T04","T07","T17"],"source_refs":["SP-SRC-AUDIO-2016-06-10-AMR-PART-1","SP-SRC-AUDIO-2016-06-10-AMR-PART-2","SP-DOC-2021-HAPPY-SCRIBE-DERIVATIVES","SP-SRC-ACTA-2014-04-10"],"custodian_es":"nativos, perito/operador de transcripción, participantes y cadena de custodia","custodian_en":"native sources, transcription expert/operator, participants and custody chain","closure_es":"Autenticidad/metadatos, mapa de hablantes/capacidades, transcripción alineada por tiempo/página, verificación manual línea por línea, variantes, privilegio/confidencialidad y adopción del hablante.","closure_en":"Authenticity/metadata, speaker/capacity map, time/page-aligned transcript, manual line-by-line verification, variants, privilege/confidentiality and speaker adoption."},
-    {"id":"PD-GAP-UCF-015","priority":"P0","status":"OPEN_AUTHORITY_PROPAGATION_LEDGER","title_es":"ledger documento-a-decisión de autoridad y legitimidad aparente","title_en":"document-to-decision authority and apparent-legitimacy ledger","tracks":["T01","T03","T04","T07","T08","T11","T13","T14","T15","T16","T17","T18"],"source_refs":["AUTH-UCF-001","AUTH-UCF-002","AUTH-UCF-003","AUTH-UCF-004","AUTH-UCF-005","AUTH-UCF-006","AUTH-UCF-007","AUTH-UCF-008","AUTH-UCF-009","AUTH-UCF-010","PD-HYP-UCF-005"],"custodian_es":"Comunidad y libro; actores/transmisores; juzgados y AC; notaría/Registro; CAM/HNT/RICPE; profesionales; órganos RIC, incentivos, FEDER, Yaiza y Cabildo","custodian_en":"Community and minute book; actors/transmitters; courts and IA; notary/Registry; CAM/HNT/RICPE; professionals; RIC, incentives, ERDF, Yaiza and Cabildo bodies","closure_es":"Cerrar cada flecha AUTH-UCF con origen, documento/hash y versión, autor/capacidad, transmisor, receptor, fecha, aviso contrario, verificación, adopción, decisión, efecto, causalidad, perjuicio, beneficiario, conocimiento, dolo y explicación lícita. Una flecha abierta no puede rotularse como dependencia probada.","closure_en":"Close every AUTH-UCF arrow with origin, document/hash and version, author/capacity, transmitter, recipient, date, contrary notice, verification, adoption, decision, effect, causation, harm, beneficiary, knowledge, intent and lawful explanation. An open arrow must not be labelled as proved reliance."},
-    {"id":"PD-GAP-UCF-016","priority":"P0","status":"PARTIAL_IDENTITY_CLOSED_NOTICE_ROUTING_OPEN_MERITS","title_es":"cadena completa Intervención → Comisión → Justicia y controles por programa","title_en":"complete Intervención → Commission → Justice chain and programme controls","tracks":["T08","T14","T15","T17","T18"],"source_refs":["PD-SP-I-0043","PD-EV-UCF-INT-184368-2026","PD-SP-EVT-0141","PD-SP-EVT-0142","PD-SP-EVT-0143","PD-SP-EVT-0144","PD-SP-EVT-0145","PD-SP-EVT-0146","PD-SP-EVT-0147","PD-SP-EVT-0148","PD-SP-EVT-0149","PD-SP-EVT-0150","PD-SP-EVT-0151","PD-SP-EVT-0152","PD-SP-EVT-0155","PD-SP-EVT-0156","PD-SP-EVT-0157","X-INT-004"],"source_literals":["SALIDA 184368/2026","SALIDA 497011/2026","SALIDA 699645/2026"],"custodian_es":"Intervención General de la Comunidad Autónoma de Canarias; Comisión para Integridad Pública y Lucha contra la Corrupción; Viceconsejería de Justicia; órganos gestores y de control de cada subvención/incentivo/FEDER","custodian_en":"Intervención General of the Autonomous Community of the Canary Islands; Commission for Public Integrity and the Fight against Corruption; Vice-Ministry of Justice; management and control bodies for each grant/incentive/ERDF file","closed_component":"CAEPR institutional identity PD-SP-I-0043 established from the official Canary Government organigram on 1 September 2026.","closure_es":"Producir comunicación fuente de 15-dic-2025, registro, orden del día/acta o certificado de la Comisión de 24-feb-2026, paquete anonimizado, salida y acuse de Justicia, routing/tratamiento/decisión, y por programa solicitud, expediente, controles, pagos, auditoría y recuperación. La identidad del órgano emisor ya está cerrada como PD-SP-I-0043^; las respuestas acreditan aviso/routing, no el fondo.","closure_en":"Produce the 15-Dec-2025 source communication, registration, agenda/minutes or certificate of the 24-Feb-2026 Commission, anonymised package, Justice dispatch and receipt, routing/treatment/decision, and per programme the application, file, controls, payments, audit and recovery. The issuing-organ identity is now closed as PD-SP-I-0043^; the responses prove notice/routing, not the merits."}
+    {
+      "id": "PD-GAP-UCF-001",
+      "priority": "P0",
+      "status": "UNLOCATED",
+      "title_es": "ACTA comunitaria anterior a 29-abr-2008",
+      "title_en": "Owners' Community ACTA before 29-Apr-2008",
+      "tracks": [
+        "T01",
+        "T02",
+        "T04"
+      ],
+      "source_refs": [
+        "meeting-lineage-index-v1.json#pre_2008_owner_acta_control"
+      ],
+      "custodian_es": "libro oficial, administradores históricos, propietarios y archivos de transmisión",
+      "custodian_en": "official book, historic administrators, owners and transmission archives",
+      "closure_es": "Localizar fuente fechada/autenticada o documentar una búsqueda finita negativa por custodio sin convertirla en inexistencia.",
+      "closure_en": "Locate a dated/authenticated source or record a finite negative custodian-by-custodian search without converting it into nonexistence."
+    },
+    {
+      "id": "PD-GAP-UCF-002",
+      "priority": "P0",
+      "status": "PARTIAL",
+      "title_es": "paquetes completos 2-feb y 22-jun-2011",
+      "title_en": "complete 2-Feb and 22-Jun-2011 packages",
+      "tracks": [
+        "T01",
+        "T02",
+        "T03",
+        "T04"
+      ],
+      "source_refs": [
+        "SP-EVT-2011-02-02-COM-MEETING",
+        "SP-EVT-2011-06-22-NOTICE",
+        "SP-EVT-2011-06-22-COM-MEETING"
+      ],
+      "custodian_es": "Comunidad, presidente/a, secretario/a-administrador/a, libro, propietarios, juzgados y correo nativo",
+      "custodian_en": "Community, chair, secretary-administrator, book, owners, courts and native mail",
+      "closure_es": "Convocatoria, agenda, lista de servicio, poderes, asistencia, título/coeficiente, deuda, voto por punto, firmas, libro, audio, circulación y expediente de impugnación reconciliados.",
+      "closure_en": "Reconcile notice, agenda, service list, proxies, attendance, title/coefficient, debt, itemised voting, signatures, book, audio, circulation and challenge file."
+    },
+    {
+      "id": "PD-GAP-UCF-003",
+      "priority": "P0",
+      "status": "UNLOCATED",
+      "title_es": "aviso y servicio nativos 2022 a LPB/Aweswell",
+      "title_en": "native 2022 notice and service to LPB/Aweswell",
+      "tracks": [
+        "T02",
+        "T04",
+        "T07"
+      ],
+      "source_refs": [
+        "AX-NOTICE-LPB",
+        "SP-EVT-2022-02-04-COM-MEETING",
+        "SP-EVT-2022-05-03-10-ACTA-TRANSMISSION"
+      ],
+      "custodian_es": "Comunidad, administración, emisor, proveedor, destinatario legal y familia Thompson",
+      "custodian_en": "Community, administration, sender, provider, lawful recipient and Thompson family",
+      "closure_es": "Cadena nativa completa de convocatoria/servicio y reenvío posterior Thompson: cabeceras, adjunto/hash, destinatario/capacidad, hora, upstream, acuse y circulación directa/indirecta.",
+      "closure_en": "Complete native notice/service and later Thompson-forward chain: headers, attachment/hash, recipient/capacity, time, upstream source, acknowledgement and direct/indirect circulation."
+    },
+    {
+      "id": "PD-GAP-UCF-004",
+      "priority": "P0",
+      "status": "UNLOCATED",
+      "title_es": "aviso, poder, voto y perímetro extraconcursal Matkator",
+      "title_en": "Matkator notice, proxy, vote and extraconcursal perimeter",
+      "tracks": [
+        "T02",
+        "T03",
+        "T05",
+        "T11"
+      ],
+      "source_refs": [
+        "AX-NOTICE-MATKATOR"
+      ],
+      "custodian_es": "Matkator, Comunidad, administradores, Registro y titulares/representantes",
+      "custodian_en": "Matkator, Community, administrators, Registry and owners/representatives",
+      "closure_es": "Calendario de fincas/título y cadena independiente de convocatoria, servicio, poder, voto, deuda, entrega de ACTA, impugnación e implementación.",
+      "closure_en": "Property/title schedule and independent notice, service, proxy, vote, debt, minutes-delivery, challenge and implementation chain."
+    },
+    {
+      "id": "PD-GAP-UCF-005",
+      "priority": "P0",
+      "status": "OPEN_RECONCILIATION",
+      "title_es": "denominador 2022 de titularidad, coeficiente, poder, deuda y voto",
+      "title_en": "2022 ownership, coefficient, proxy, debt and vote denominator",
+      "tracks": [
+        "T01",
+        "T03",
+        "T11"
+      ],
+      "source_refs": [
+        "AX-VOTING-CONTROL",
+        "SP-SRC-ACTA-2022-02-04"
+      ],
+      "custodian_es": "libro, Registro, administración comunitaria, asistentes, representados y titulares",
+      "custodian_en": "book, Registry, Community administration, attendees, principals and owners",
+      "closure_es": "Padrón fechado y diligenciado, primera/segunda convocatoria, 100% de coeficientes, poderes, conflictos/abstenciones, exclusiones por deuda y hoja de votación por acuerdo.",
+      "closure_en": "Dated diligenced roll, first/second call, 100% coefficients, proxies, conflicts/abstentions, debt exclusions and resolution-by-resolution voting sheet."
+    },
+    {
+      "id": "PD-GAP-UCF-006",
+      "priority": "P0",
+      "status": "OPEN_PRODUCTION",
+      "title_es": "ledger unitario de deuda y derrama de reforma",
+      "title_en": "unitary debt and refurbishment-levy ledger",
+      "tracks": [
+        "T03",
+        "T08",
+        "T12",
+        "T18"
+      ],
+      "source_refs": [
+        "AX-DEBT-COST",
+        "SP-EVT-2022-02-04-COM-MEETING"
+      ],
+      "custodian_es": "Comunidad, bancos, contratistas, Administración Concursal, CAM/HNT y propietarios",
+      "custodian_en": "Community, banks, contractors, Insolvency Administration, CAM/HNT and owners",
+      "closure_es": "Saldo inicial por unidad, factura, pago, resolución, servicio, certificado, reclamación, recuperación, baja, obra, presupuesto, coste real, reparto y ledger final Comunidad/concurso.",
+      "closure_en": "Unit opening balance, invoice, payment, resolution, service, certificate, claim, recovery, write-off, works, budget, actual cost, allocation and final Community/insolvency ledger."
+    },
+    {
+      "id": "PD-GAP-UCF-007",
+      "priority": "P0",
+      "status": "PARTIAL",
+      "title_es": "originales diligenciados, libro, metadatos y variantes",
+      "title_en": "diligenced originals, book, metadata and variants",
+      "tracks": [
+        "T04",
+        "T07",
+        "T17"
+      ],
+      "source_refs": [
+        "SP-SRC-ACTA-2011-02-02-A",
+        "SP-SRC-ACTA-2011-06-22-A",
+        "SP-SRC-ACTA-2022-02-04",
+        "SP-SRC-ACTA-2022-02-04-ALT"
+      ],
+      "custodian_es": "libro oficial, secretario/a, presidente/a, administración, notaría y repositorios nativos",
+      "custodian_en": "official book, secretary, chair, administration, notary and native repositories",
+      "closure_es": "Original/copia certificada, diligencia, firmas, fecha de cierre, metadatos nativos, hash, historial de versiones, anexos y comparación fuente por fuente.",
+      "closure_en": "Original/certified copy, diligence, signatures, closing date, native metadata, hash, version history, annexes and source-by-source comparison."
+    },
+    {
+      "id": "PD-GAP-UCF-008",
+      "priority": "P0",
+      "status": "REFERENCE_ONLY",
+      "title_es": "ACTA autónoma y ciclo completo de 20-nov-2018",
+      "title_en": "standalone 20-Nov-2018 minutes and complete lifecycle",
+      "tracks": [
+        "T01",
+        "T02",
+        "T03",
+        "T04",
+        "T12"
+      ],
+      "source_refs": [
+        "SP-EVT-2018-11-20-REFORM-STUDY",
+        "SP-SRC-RECITAL-2018-11-20"
+      ],
+      "custodian_es": "Comunidad, CAM/Acosta Matos, FMMM/Pamalexsha, asistentes, proyectistas y archivos de obra",
+      "custodian_en": "Community, CAM/Acosta Matos, FMMM/Pamalexsha, attendees, designers and works archives",
+      "closure_es": "Convocatoria, servicio, agenda, ACTA, asistencia, poderes, votos, presupuestos, anexos, firmas/libro, circulación, objeciones e implementación.",
+      "closure_en": "Notice, service, agenda, minutes, attendance, proxies, votes, budgets, annexes, signatures/book, circulation, objections and implementation."
+    },
+    {
+      "id": "PD-GAP-UCF-009",
+      "priority": "P0",
+      "status": "OPEN_DEPENDENCY",
+      "title_es": "puente documental ACTA → RIC/RICPE/incentivos/FEDER/obras",
+      "title_en": "documentary ACTA → RIC/RICPE/incentives/ERDF/works bridge",
+      "tracks": [
+        "T12",
+        "T13",
+        "T14",
+        "T15",
+        "T17"
+      ],
+      "source_refs": [
+        "AX-FUNDING",
+        "SP-REL-2022-PROJECT"
+      ],
+      "custodian_es": "CAM/HNT, RICPE, financiadores, asesores, órgano de incentivos, gestores FEDER y contratistas",
+      "custodian_en": "CAM/HNT, RICPE, financiers, advisers, incentives body, ERDF managers and contractors",
+      "closure_es": "Por programa: solicitud, índice/anexo, ACTA/título/autoridad transmitidos, emisor/capacidad, receptor, fecha, verificación/adopción, decisión, coste elegible, factura, pago, empleo, acumulación y control/auditoría.",
+      "closure_en": "Per programme: application, index/annex, transmitted minutes/title/authority, sender/capacity, recipient, date, verification/adoption, decision, eligible cost, invoice, payment, jobs, cumulation and control/audit.",
+      "specialist_obligations": [
+        {
+          "key": "wider_connection",
+          "gap_id": "PD-GAP-UCF-009",
+          "title_en": "Connection to wider control and funding",
+          "title_es": "Conexión con control y financiación más amplios",
+          "priority": "P2",
+          "custodian_en": "Relevant court/administrator; transaction parties; financiers; programme authorities",
+          "custodian_es": "Juzgado/AC pertinente; partes; financiadores; órganos del programa",
+          "closure_en": "Exact transmitted instrument, accepted mandate, instruction/payment or decision-use link for each claimed connection. Preserve developed-rescue, historical-credit and known-response corrections; do not transfer intent through association.",
+          "closure_es": "Instrumento transmitido exacto, mandato aceptado, instrucción/pago o uso decisorio por conexión. Conservar correcciones sobre rescate desarrollado, crédito histórico y respuesta conocida; no transmitir dolo por asociación.",
+          "obligation_id": "PD-GAP-UCF-009/CR/wider_connection",
+          "status": "OPEN_SOURCE_REQUIRED",
+          "record_state": "REGISTERED_AND_LINKED",
+          "merits_closed": false,
+          "source_control": "assets/data/la-laguna-proceeding-pages-v1.json"
+        }
+      ]
+    },
+    {
+      "id": "PD-GAP-UCF-010",
+      "priority": "P0",
+      "status": "OPEN_AUTHORITY_FILE",
+      "title_es": "expedientes completos Yaiza, Cabildo y tratamiento SAIP",
+      "title_en": "complete Yaiza, Cabildo and SAIP treatment files",
+      "tracks": [
+        "T16",
+        "T17"
+      ],
+      "source_refs": [
+        "AX-AUTHORITY",
+        "LZ-YAI-014",
+        "LZ-YAI-015",
+        "LZ-YAI-016",
+        "LZ-YAI-017",
+        "LZ-YAI-018",
+        "LZ-YAI-031",
+        "LZ-CAB-025",
+        "PD-SP-EVT-0153",
+        "PD-SP-EVT-0154"
+      ],
+      "legacy_source_aliases": {
+        "LZ-YAIZA-1748-2022": "LZ-YAI-014",
+        "LZ-YAIZA-7043-2022": "LZ-YAI-015",
+        "LZ-YAIZA-7059-2022": "LZ-YAI-016",
+        "LZ-YAIZA-10356-2022": "LZ-YAI-017",
+        "LZ-YAIZA-5854-2022": "LZ-YAI-018",
+        "LZ-CABILDO-614-2026": "LZ-CAB-025"
+      },
+      "custodian_es": "Ayuntamiento de Yaiza, Cabildo de Lanzarote, órganos turísticos, registro/SAIP y promotor",
+      "custodian_en": "Yaiza Town Council, Cabildo de Lanzarote, tourism bodies, registry/SAIP and promoter",
+      "closure_es": "Para cada expediente: solicitud firmada, índice, anexos, entrada, routing, incorporación, informes, verificación de título/autoridad, decisión, notificación, firmeza, inspección y tratamiento de cada entrega SAIP.",
+      "closure_en": "For each file: signed application, index, annexes, entry, routing, incorporation, reports, title/authority verification, decision, service, finality, inspection and treatment of every SAIP delivery."
+    },
+    {
+      "id": "PD-GAP-UCF-011",
+      "priority": "P0",
+      "status": "OPEN_RECONCILIATION",
+      "title_es": "título finca por finca, cancelación, uso, ingreso y beneficio",
+      "title_en": "property-by-property title, cancellation, use, income and benefit",
+      "tracks": [
+        "T09",
+        "T11",
+        "T12",
+        "T18"
+      ],
+      "source_refs": [
+        "AX-TITLE-BENEFIT"
+      ],
+      "custodian_es": "Juzgado, notaría, Registro, AC, CAM/HNT, operadores, bancos y contabilidad",
+      "custodian_en": "Court, notary, Registry, Insolvency Administration, CAM/HNT, operators, banks and accounting",
+      "closure_es": "Matriz finca por finca de auto, escritura, asiento, cancelación, posesión, obra, uso, ingreso, gasto, carga, transferencia CAM→HNT, distribución, beneficiario y cuenta final/remanente.",
+      "closure_en": "Property-by-property matrix of order, deed, entry, cancellation, possession, works, use, income, cost, charge, CAM→HNT transfer, distribution, beneficiary and final account/remnant.",
+      "specialist_obligations": [
+        {
+          "key": "property_identity",
+          "gap_id": "PD-GAP-UCF-011",
+          "title_en": "Property, rights and estate boundaries",
+          "title_es": "Inmueble, derechos y límites de la masa",
+          "priority": "P1",
+          "custodian_en": "Registry; notary; court; owner; independent surveyor/valuer",
+          "custodian_es": "Registro; notaría; juzgado; propietario; técnico/tasador independiente",
+          "closure_en": "Certified history and physical/cadastral/registry crosswalk for each lot and right, possession, valuation and use. Keep fincas 8584/8588 and LPB/Matkator/third-party rights separate.",
+          "closure_es": "Historial certificado y correspondencia física/catastral/registral por lote y derecho, posesión, valoración y uso. Separar fincas 8584/8588 y derechos LPB/Matkator/terceros.",
+          "obligation_id": "PD-GAP-UCF-011/CR/property_identity",
+          "status": "OPEN_SOURCE_REQUIRED",
+          "record_state": "REGISTERED_AND_LINKED",
+          "merits_closed": false,
+          "source_control": "assets/data/la-laguna-proceeding-pages-v1.json"
+        },
+        {
+          "key": "beneficiary",
+          "gap_id": "PD-GAP-UCF-011",
+          "title_en": "Actual transfer, price and beneficiary",
+          "title_es": "Transmisión, precio y beneficiario efectivos",
+          "priority": "P1",
+          "custodian_en": "Court; identified assignor/assignee; notary/Registry; payment custodian",
+          "custodian_es": "Juzgado; cedente/cesionario identificado; notaría/Registro; custodio de pagos",
+          "closure_en": "Actual negotiation/assignment instrument, order, price, funding, acceptance, registration/possession and debtor credit. Preserve the possibility that no transfer occurred.",
+          "closure_es": "Instrumento real de negociación/cesión, resolución, precio, financiación, aceptación, inscripción/posesión y abono al deudor. Preservar la posibilidad de que no hubiera transmisión.",
+          "obligation_id": "PD-GAP-UCF-011/CR/beneficiary",
+          "status": "OPEN_SOURCE_REQUIRED",
+          "record_state": "REGISTERED_AND_LINKED",
+          "merits_closed": false,
+          "source_control": "assets/data/la-laguna-proceeding-pages-v1.json"
+        }
+      ]
+    },
+    {
+      "id": "PD-GAP-UCF-012",
+      "priority": "P1",
+      "status": "OPEN_RECONCILIATION",
+      "title_es": "fuentes/usos, doble financiación y acumulación",
+      "title_en": "sources/uses, double funding and cumulation",
+      "tracks": [
+        "T12",
+        "T13",
+        "T14",
+        "T15",
+        "T18"
+      ],
+      "source_refs": [
+        "AX-FUNDING"
+      ],
+      "custodian_es": "beneficiarios, inversores, bancos, contratistas, órganos de ayuda, auditores y control interno",
+      "custodian_en": "beneficiaries, investors, banks, contractors, aid bodies, auditors and internal control",
+      "closure_es": "Ledger de cada euro/coste/obra/empleo con fuente, uso, fecha, factura, pago, cofinanciación, RIC, préstamo, incentivo, FEDER, exclusiones, acumulación, auditoría y recuperación.",
+      "closure_en": "Ledger for each euro/cost/work/job with source, use, date, invoice, payment, co-financing, RIC, loan, incentive, ERDF, exclusions, cumulation, audit and recovery."
+    },
+    {
+      "id": "PD-GAP-UCF-013",
+      "priority": "P0",
+      "status": "OPEN_ACTOR_THRESHOLD",
+      "title_es": "prueba penal actor por actor",
+      "title_en": "actor-by-actor criminal-threshold proof",
+      "tracks": [
+        "T01",
+        "T04",
+        "T06",
+        "T07",
+        "T08",
+        "T13",
+        "T17",
+        "T18"
+      ],
+      "source_refs": [
+        "PD-HYP-UCF-001",
+        "PD-HYP-UCF-002",
+        "PD-HYP-UCF-003",
+        "PD-HYP-UCF-004"
+      ],
+      "custodian_es": "cada actor/capacidad, comunicaciones nativas, expedientes, actas societarias/profesionales y registros de decisión",
+      "custodian_en": "each actor/capacity, native communications, files, corporate/professional minutes and decision records",
+      "closure_es": "Para cada persona: acto, capacidad, fecha, fuente, conocimiento real, dolo, uso, receptor, efecto, causalidad, beneficio, continuidad, explicación lícita, elemento penal y prueba exculpatoria.",
+      "closure_en": "For each person: act, capacity, date, source, actual knowledge, intent, use, recipient, effect, causation, benefit, continuation, lawful explanation, offence element and exculpatory evidence.",
+      "specialist_obligations": [
+        {
+          "key": "mandate_handover",
+          "gap_id": "PD-GAP-UCF-013",
+          "title_en": "Mandates, recovery handover and information",
+          "title_es": "Mandatos, traspaso al recobro e información",
+          "priority": "P1",
+          "custodian_en": "Engagement parties; professional firm; recovery entity; lawful file custodians",
+          "custodian_es": "Partes del encargo; despacho; entidad de recobro; custodios legítimos",
+          "closure_en": "Accepted engagement, legal client, task, dated instructions, handover, file access and remuneration/conflict controls. Corporate identity does not establish the case mandate.",
+          "closure_es": "Encargo aceptado, cliente jurídico, tarea, instrucciones fechadas, traspaso, acceso y controles de remuneración/conflicto. La identidad societaria no acredita el mandato del asunto.",
+          "obligation_id": "PD-GAP-UCF-013/CR/mandate_handover",
+          "status": "OPEN_SOURCE_REQUIRED",
+          "record_state": "REGISTERED_AND_LINKED",
+          "merits_closed": false,
+          "source_control": "assets/data/la-laguna-proceeding-pages-v1.json"
+        },
+        {
+          "key": "single_satisfaction",
+          "gap_id": "PD-GAP-UCF-013",
+          "title_en": "Separate claims and single satisfaction",
+          "title_es": "Reclamaciones separadas y satisfacción única",
+          "priority": "P1",
+          "custodian_en": "Each creditor/obligor; accounts custodian; civil court",
+          "custodian_es": "Cada acreedor/obligado; custodio contable; órgano civil",
+          "closure_en": "Map each invoice/work item, note and authority to its obligor, claim, judgment, enforcement, interest/costs, payment/realization credit and residual. Confirm both dockets; a matching sum is a locator, not proof of duplication.",
+          "closure_es": "Vincular factura/trabajo, pagaré y poder con obligado, demanda, sentencia, ejecución, intereses/costas, pago/abono de realización y saldo. Confirmar ambos expedientes; coincidir en importe no prueba duplicidad.",
+          "obligation_id": "PD-GAP-UCF-013/CR/single_satisfaction",
+          "status": "OPEN_SOURCE_REQUIRED",
+          "record_state": "REGISTERED_AND_LINKED",
+          "merits_closed": false,
+          "source_control": "assets/data/la-laguna-proceeding-pages-v1.json"
+        },
+        {
+          "key": "duty_and_loss",
+          "gap_id": "PD-GAP-UCF-013",
+          "title_en": "Individual duty, counterfactual and loss",
+          "title_es": "Deber individual, contrafactual y daño",
+          "priority": "P1",
+          "custodian_en": "Engagement parties; professionals; independent accounting/valuation evidence",
+          "custodian_es": "Partes del encargo; profesionales; prueba contable/tasadora independiente",
+          "closure_en": "Actor, dated capacity, accepted task, available protective step, performance/breach, causation, claimant-specific loss and strongest lawful alternative. Avoid duplicate damages and automatic whole-hotel valuation.",
+          "closure_es": "Actor, capacidad fechada, tarea aceptada, protección disponible, cumplimiento/incumplimiento, causalidad, daño de cada reclamante y mejor explicación lícita. Evitar daños duplicados o valor automático de todo el hotel.",
+          "obligation_id": "PD-GAP-UCF-013/CR/duty_and_loss",
+          "status": "OPEN_SOURCE_REQUIRED",
+          "record_state": "REGISTERED_AND_LINKED",
+          "merits_closed": false,
+          "source_control": "assets/data/la-laguna-proceeding-pages-v1.json"
+        }
+      ]
+    },
+    {
+      "id": "PD-GAP-UCF-014",
+      "priority": "P1",
+      "status": "PARTIAL",
+      "title_es": "certificación OCR, audio, hablantes y alineación",
+      "title_en": "OCR, audio, speaker and alignment certification",
+      "tracks": [
+        "T04",
+        "T07",
+        "T17"
+      ],
+      "source_refs": [
+        "SP-SRC-AUDIO-2016-06-10-AMR-PART-1",
+        "SP-SRC-AUDIO-2016-06-10-AMR-PART-2",
+        "SP-DOC-2021-HAPPY-SCRIBE-DERIVATIVES",
+        "SP-SRC-ACTA-2014-04-10"
+      ],
+      "custodian_es": "nativos, perito/operador de transcripción, participantes y cadena de custodia",
+      "custodian_en": "native sources, transcription expert/operator, participants and custody chain",
+      "closure_es": "Autenticidad/metadatos, mapa de hablantes/capacidades, transcripción alineada por tiempo/página, verificación manual línea por línea, variantes, privilegio/confidencialidad y adopción del hablante.",
+      "closure_en": "Authenticity/metadata, speaker/capacity map, time/page-aligned transcript, manual line-by-line verification, variants, privilege/confidentiality and speaker adoption."
+    },
+    {
+      "id": "PD-GAP-UCF-015",
+      "priority": "P0",
+      "status": "OPEN_AUTHORITY_PROPAGATION_LEDGER",
+      "title_es": "ledger documento-a-decisión de autoridad y legitimidad aparente",
+      "title_en": "document-to-decision authority and apparent-legitimacy ledger",
+      "tracks": [
+        "T01",
+        "T03",
+        "T04",
+        "T07",
+        "T08",
+        "T11",
+        "T13",
+        "T14",
+        "T15",
+        "T16",
+        "T17",
+        "T18"
+      ],
+      "source_refs": [
+        "AUTH-UCF-001",
+        "AUTH-UCF-002",
+        "AUTH-UCF-003",
+        "AUTH-UCF-004",
+        "AUTH-UCF-005",
+        "AUTH-UCF-006",
+        "AUTH-UCF-007",
+        "AUTH-UCF-008",
+        "AUTH-UCF-009",
+        "AUTH-UCF-010",
+        "PD-HYP-UCF-005"
+      ],
+      "custodian_es": "Comunidad y libro; actores/transmisores; juzgados y AC; notaría/Registro; CAM/HNT/RICPE; profesionales; órganos RIC, incentivos, FEDER, Yaiza y Cabildo",
+      "custodian_en": "Community and minute book; actors/transmitters; courts and IA; notary/Registry; CAM/HNT/RICPE; professionals; RIC, incentives, ERDF, Yaiza and Cabildo bodies",
+      "closure_es": "Cerrar cada flecha AUTH-UCF con origen, documento/hash y versión, autor/capacidad, transmisor, receptor, fecha, aviso contrario, verificación, adopción, decisión, efecto, causalidad, perjuicio, beneficiario, conocimiento, dolo y explicación lícita. Una flecha abierta no puede rotularse como dependencia probada.",
+      "closure_en": "Close every AUTH-UCF arrow with origin, document/hash and version, author/capacity, transmitter, recipient, date, contrary notice, verification, adoption, decision, effect, causation, harm, beneficiary, knowledge, intent and lawful explanation. An open arrow must not be labelled as proved reliance.",
+      "specialist_obligations": [
+        {
+          "key": "current_status",
+          "gap_id": "PD-GAP-UCF-015",
+          "title_en": "Current procedure, service and decisions",
+          "title_es": "Procedimiento, notificación y decisiones actuales",
+          "priority": "P0",
+          "custodian_en": "Court/LAJ records; each party’s valid service record; instructed counsel",
+          "custodian_es": "Expediente judicial/LAJ; notificación válida de cada parte; letrado encargado",
+          "closure_en": "Certified current DP/ETJ docket; exact act and receipt; service to each party; appeal processing; actual adjudication/cession if any. Separate dispatch, receipt, notice, examination and decision.",
+          "closure_es": "Expediente DP/ETJ certificado y actual; acto y justificante; notificación a cada parte; tramitación del recurso; adjudicación/cesión efectiva, si existe. Separar envío, recepción, notificación, examen y decisión.",
+          "obligation_id": "PD-GAP-UCF-015/CR/current_status",
+          "status": "OPEN_SOURCE_REQUIRED",
+          "record_state": "REGISTERED_AND_LINKED",
+          "merits_closed": false,
+          "source_control": "assets/data/la-laguna-proceeding-pages-v1.json"
+        }
+      ]
+    },
+    {
+      "id": "PD-GAP-UCF-016",
+      "priority": "P0",
+      "status": "PARTIAL_IDENTITY_CLOSED_NOTICE_ROUTING_OPEN_MERITS",
+      "title_es": "cadena completa Intervención → Comisión → Justicia y controles por programa",
+      "title_en": "complete Intervención → Commission → Justice chain and programme controls",
+      "tracks": [
+        "T08",
+        "T14",
+        "T15",
+        "T17",
+        "T18"
+      ],
+      "source_refs": [
+        "PD-SP-I-0043",
+        "PD-EV-UCF-INT-184368-2026",
+        "PD-SP-EVT-0141",
+        "PD-SP-EVT-0142",
+        "PD-SP-EVT-0143",
+        "PD-SP-EVT-0144",
+        "PD-SP-EVT-0145",
+        "PD-SP-EVT-0146",
+        "PD-SP-EVT-0147",
+        "PD-SP-EVT-0148",
+        "PD-SP-EVT-0149",
+        "PD-SP-EVT-0150",
+        "PD-SP-EVT-0151",
+        "PD-SP-EVT-0152",
+        "PD-SP-EVT-0155",
+        "PD-SP-EVT-0156",
+        "PD-SP-EVT-0157",
+        "X-INT-004"
+      ],
+      "source_literals": [
+        "SALIDA 184368/2026",
+        "SALIDA 497011/2026",
+        "SALIDA 699645/2026"
+      ],
+      "custodian_es": "Intervención General de la Comunidad Autónoma de Canarias; Comisión para Integridad Pública y Lucha contra la Corrupción; Viceconsejería de Justicia; órganos gestores y de control de cada subvención/incentivo/FEDER",
+      "custodian_en": "Intervención General of the Autonomous Community of the Canary Islands; Commission for Public Integrity and the Fight against Corruption; Vice-Ministry of Justice; management and control bodies for each grant/incentive/ERDF file",
+      "closed_component": "CAEPR institutional identity PD-SP-I-0043 established from the official Canary Government organigram on 1 September 2026.",
+      "closure_es": "Producir comunicación fuente de 15-dic-2025, registro, orden del día/acta o certificado de la Comisión de 24-feb-2026, paquete anonimizado, salida y acuse de Justicia, routing/tratamiento/decisión, y por programa solicitud, expediente, controles, pagos, auditoría y recuperación. La identidad del órgano emisor ya está cerrada como PD-SP-I-0043^; las respuestas acreditan aviso/routing, no el fondo.",
+      "closure_en": "Produce the 15-Dec-2025 source communication, registration, agenda/minutes or certificate of the 24-Feb-2026 Commission, anonymised package, Justice dispatch and receipt, routing/treatment/decision, and per programme the application, file, controls, payments, audit and recovery. The issuing-organ identity is now closed as PD-SP-I-0043^; the responses prove notice/routing, not the merits."
+    }
   ],
   "contrary_evidence": [
-    {"id":"CTR-UCF-001","es":"Puede existir una ruta válida de convocatoria/servicio no localizada en el corpus controlado.","en":"A valid notice/service route may exist outside the controlled corpus."},
-    {"id":"CTR-UCF-002","es":"Una lista expurgada puede ocultar poder o representación válida; unanimidad de asistentes no es unanimidad de todos los propietarios.","en":"A redacted list may hide a valid proxy; attendee unanimity is not unanimity of all owners."},
-    {"id":"CTR-UCF-003","es":"Obras necesarias, deuda exigible y reparto por coeficiente pueden tener base lícita aun cuando la documentación esté incompleta.","en":"Necessary works, enforceable debt and coefficient allocation may have a lawful basis despite incomplete documentation."},
-    {"id":"CTR-UCF-004","es":"Un acreedor garantizado puede adquirir bienes mediante dación judicial; título, firmeza y derechos de terceros deben analizarse por separado.","en":"A secured creditor may lawfully acquire assets through court-approved dación; title, finality and third-party rights require separate analysis."},
-    {"id":"CTR-UCF-005","es":"RIC/RICPE, incentivos, FEDER, licencias y turismo pueden depender de títulos, verificaciones y elegibilidad independientes del ACTA comunitaria.","en":"RIC/RICPE, incentives, ERDF, licences and tourism may depend on titles, checks and eligibility independent of Community minutes."},
-    {"id":"CTR-UCF-006","es":"Error, interpretación competidora, delegación, confianza profesional razonable, buena fe y ausencia de conocimiento deben excluirse antes de inferir dolo o participación.","en":"Error, competing interpretation, delegation, reasonable professional reliance, good faith and absence of knowledge must be excluded before inferring intent or participation."},
-    {"id":"CTR-UCF-007","es":"Los archivos y resultados adversos conservados limitan el alcance de la hipótesis; no deciden necesariamente título civil, explotación turística o todo el mecanismo alegado.","en":"Preserved dismissal decisions and adverse outcomes limit the hypothesis; they do not necessarily decide civil title, tourism operation or the whole alleged mechanism."}
+    {
+      "id": "CTR-UCF-001",
+      "es": "Puede existir una ruta válida de convocatoria/servicio no localizada en el corpus controlado.",
+      "en": "A valid notice/service route may exist outside the controlled corpus."
+    },
+    {
+      "id": "CTR-UCF-002",
+      "es": "Una lista expurgada puede ocultar poder o representación válida; unanimidad de asistentes no es unanimidad de todos los propietarios.",
+      "en": "A redacted list may hide a valid proxy; attendee unanimity is not unanimity of all owners."
+    },
+    {
+      "id": "CTR-UCF-003",
+      "es": "Obras necesarias, deuda exigible y reparto por coeficiente pueden tener base lícita aun cuando la documentación esté incompleta.",
+      "en": "Necessary works, enforceable debt and coefficient allocation may have a lawful basis despite incomplete documentation."
+    },
+    {
+      "id": "CTR-UCF-004",
+      "es": "Un acreedor garantizado puede adquirir bienes mediante dación judicial; título, firmeza y derechos de terceros deben analizarse por separado.",
+      "en": "A secured creditor may lawfully acquire assets through court-approved dación; title, finality and third-party rights require separate analysis."
+    },
+    {
+      "id": "CTR-UCF-005",
+      "es": "RIC/RICPE, incentivos, FEDER, licencias y turismo pueden depender de títulos, verificaciones y elegibilidad independientes del ACTA comunitaria.",
+      "en": "RIC/RICPE, incentives, ERDF, licences and tourism may depend on titles, checks and eligibility independent of Community minutes."
+    },
+    {
+      "id": "CTR-UCF-006",
+      "es": "Error, interpretación competidora, delegación, confianza profesional razonable, buena fe y ausencia de conocimiento deben excluirse antes de inferir dolo o participación.",
+      "en": "Error, competing interpretation, delegation, reasonable professional reliance, good faith and absence of knowledge must be excluded before inferring intent or participation."
+    },
+    {
+      "id": "CTR-UCF-007",
+      "es": "Los archivos y resultados adversos conservados limitan el alcance de la hipótesis; no deciden necesariamente título civil, explotación turística o todo el mecanismo alegado.",
+      "en": "Preserved dismissal decisions and adverse outcomes limit the hypothesis; they do not necessarily decide civil title, tourism operation or the whole alleged mechanism."
+    }
   ],
   "acquisition_log": [
-    {"id":"ACQ-UCF-001","date":"2026-09-01","scope_es":"reconciliación del corpus Git controlado","scope_en":"controlled Git corpus reconciliation","universe_es":"índices ACTA, 122 objetos de ciclo, 20 paquetes públicos, 49 expedientes, siete ejes y grafo criminal previo","universe_en":"ACTA indexes, 122 lifecycle objects, 20 public packages, 49 files, seven axes and prior criminal graph","result":"RECONCILED_WITH_AUTHORISED_READ_ONLY_MAIL_AND_DRIVE_DISCOVERY","boundary_es":"La integración incluyó búsqueda autorizada de metadatos en Gmail y Drive; no envió comunicaciones, no presentó escritos y no convierte coincidencias de búsqueda en prueba de fondo.","boundary_en":"The integration included authorised read-only Gmail and Drive metadata discovery; it sent no communication, made no filing and does not turn search matches into merits evidence."},
-    {"id":"ACQ-UCF-002","date":"2026-09-01","scope_es":"lectura pública exacta de la liberación LPH histórica","scope_en":"exact public readback of the historic LPH release","universe_es":"página ES, página EN, CSS y JSON de linaje","universe_en":"ES page, EN page, CSS and lineage JSON","result":"4_OF_4_HTTP_200_EXACT_SHA256_MATCH","boundary_es":"Prueba el estado público anterior a esta liberación local; no publica ni verifica los cambios de 1-sep.","boundary_en":"Proves the public state before this local release; it neither publishes nor verifies the 1-Sep changes."},
-    {"id":"ACQ-UCF-003","date":"2026-09-01","scope_es":"fuentes privadas, certificadas e institucionales pendientes","scope_en":"pending private, certified and institutional sources","universe_es":"cuerpos y anexos nativos no adquiridos, libros, expedientes certificados, Registros, contabilidad, decisiones, facturas/pagos y portales","universe_en":"unacquired native bodies and attachments, books, certified files, Registries, accounting, decisions, invoices/payments and portals","result":"ITEM_LEVEL_ACQUISITION_AND_AUTHORITY_ACTION_REMAIN_OPEN","boundary_es":"La autorización de lectura no autorizó contacto, presentación, descarga indiscriminada, transmisión externa ni publicación de identificadores privados.","boundary_en":"Read authority did not authorise contact, filing, indiscriminate download, external transmission or publication of private identifiers."},
-    {"id":"ACQ-UCF-004","date":"2026-09-01","scope_es":"secuencia de tres respuestas de Intervención y reconciliación con el registro maestro","scope_en":"three-response Intervención sequence and master-register reconciliation","universe_es":"SALIDAS 184368/2026, 497011/2026 y 699645/2026; PD-SP-EVT-0141–0143; alias PD-EV-UCF-INT-184368-2026; X-INT-004","universe_en":"outgoings 184368/2026, 497011/2026 and 699645/2026; PD-SP-EVT-0141–0143; alias PD-EV-UCF-INT-184368-2026; X-INT-004","result":"THREE_EVENTS_RECONCILED_NOTICE_AND_ROUTING_NOT_MERITS","boundary_es":"Acredita solo lo declarado por cada respuesta; 699645/2026 impide tratar 497011/2026 como certificado universal de inexistencia. No prueba aceptación, investigación de fondo, uso indebido, conocimiento, dolo ni culpabilidad.","boundary_en":"Proves only what each response states; 699645/2026 prevents treating 497011/2026 as a universal non-existence certificate. It does not prove acceptance, merits investigation, misuse, knowledge, intent or guilt."},
-    {"id":"ACQ-UCF-005","date":"2026-09-01","scope_es":"censo finito de comunicaciones de autoridades en Gmail y Drive","scope_en":"finite Gmail and Drive public-authority communications census","universe_es":"cinco carriles paginados: fondos UE, Yaiza, Cabildo, autonómico canario y estatal español","universe_en":"five paginated lanes: EU funds, Yaiza, Cabildo, Canary autonomous and Spanish State","result":"5514_UNIQUE_MAIL_MESSAGES_326_UNIQUE_DRIVE_DOCUMENTS_METADATA_INDEXED","boundary_es":"Son denominadores de descubrimiento tras deduplicación entre carriles, no 5.840 pruebas pertinentes ni revisión de fondo individual. Los identificadores, asuntos, cuerpos, destinatarios y URLs privados no se publican.","boundary_en":"These are cross-lane-deduplicated discovery denominators, not 5,840 relevant proofs or individual merits reviews. Private identifiers, subjects, bodies, recipients and URLs are not published."},
-    {"id":"ACQ-UCF-006","date":"2026-09-01","scope_es":"registro e interconexión de comunicaciones públicas controladas","scope_en":"registration and interlinking of controlled public communications","universe_es":"19 eventos canónicos: 2 acuses UE existentes reutilizados y 17 eventos nuevos en niveles local, Cabildo, autonómico, estatal y UE","universe_en":"19 canonical events: 2 existing EU receipts reused and 17 new events across local, Cabildo, autonomous, State and EU tiers","result":"19_OF_19_CANONICAL_IDS_BILINGUAL_ANCHORS_AND_CROSS_TRACK_LINKS","boundary_es":"El registro separa materia de fondos de nivel institucional y cada paso de tratamiento. No asigna ^ a comunicaciones ni transfiere responsabilidad penal.","boundary_en":"The register separates funding subject from institutional tier and every handling step. It assigns no caret to communications and transfers no criminal responsibility."}
+    {
+      "id": "ACQ-UCF-001",
+      "date": "2026-09-01",
+      "scope_es": "reconciliación del corpus Git controlado",
+      "scope_en": "controlled Git corpus reconciliation",
+      "universe_es": "índices ACTA, 122 objetos de ciclo, 20 paquetes públicos, 49 expedientes, siete ejes y grafo criminal previo",
+      "universe_en": "ACTA indexes, 122 lifecycle objects, 20 public packages, 49 files, seven axes and prior criminal graph",
+      "result": "RECONCILED_WITH_AUTHORISED_READ_ONLY_MAIL_AND_DRIVE_DISCOVERY",
+      "boundary_es": "La integración incluyó búsqueda autorizada de metadatos en Gmail y Drive; no envió comunicaciones, no presentó escritos y no convierte coincidencias de búsqueda en prueba de fondo.",
+      "boundary_en": "The integration included authorised read-only Gmail and Drive metadata discovery; it sent no communication, made no filing and does not turn search matches into merits evidence."
+    },
+    {
+      "id": "ACQ-UCF-002",
+      "date": "2026-09-01",
+      "scope_es": "lectura pública exacta de la liberación LPH histórica",
+      "scope_en": "exact public readback of the historic LPH release",
+      "universe_es": "página ES, página EN, CSS y JSON de linaje",
+      "universe_en": "ES page, EN page, CSS and lineage JSON",
+      "result": "4_OF_4_HTTP_200_EXACT_SHA256_MATCH",
+      "boundary_es": "Prueba el estado público anterior a esta liberación local; no publica ni verifica los cambios de 1-sep.",
+      "boundary_en": "Proves the public state before this local release; it neither publishes nor verifies the 1-Sep changes."
+    },
+    {
+      "id": "ACQ-UCF-003",
+      "date": "2026-09-01",
+      "scope_es": "fuentes privadas, certificadas e institucionales pendientes",
+      "scope_en": "pending private, certified and institutional sources",
+      "universe_es": "cuerpos y anexos nativos no adquiridos, libros, expedientes certificados, Registros, contabilidad, decisiones, facturas/pagos y portales",
+      "universe_en": "unacquired native bodies and attachments, books, certified files, Registries, accounting, decisions, invoices/payments and portals",
+      "result": "ITEM_LEVEL_ACQUISITION_AND_AUTHORITY_ACTION_REMAIN_OPEN",
+      "boundary_es": "La autorización de lectura no autorizó contacto, presentación, descarga indiscriminada, transmisión externa ni publicación de identificadores privados.",
+      "boundary_en": "Read authority did not authorise contact, filing, indiscriminate download, external transmission or publication of private identifiers."
+    },
+    {
+      "id": "ACQ-UCF-004",
+      "date": "2026-09-01",
+      "scope_es": "secuencia de tres respuestas de Intervención y reconciliación con el registro maestro",
+      "scope_en": "three-response Intervención sequence and master-register reconciliation",
+      "universe_es": "SALIDAS 184368/2026, 497011/2026 y 699645/2026; PD-SP-EVT-0141–0143; alias PD-EV-UCF-INT-184368-2026; X-INT-004",
+      "universe_en": "outgoings 184368/2026, 497011/2026 and 699645/2026; PD-SP-EVT-0141–0143; alias PD-EV-UCF-INT-184368-2026; X-INT-004",
+      "result": "THREE_EVENTS_RECONCILED_NOTICE_AND_ROUTING_NOT_MERITS",
+      "boundary_es": "Acredita solo lo declarado por cada respuesta; 699645/2026 impide tratar 497011/2026 como certificado universal de inexistencia. No prueba aceptación, investigación de fondo, uso indebido, conocimiento, dolo ni culpabilidad.",
+      "boundary_en": "Proves only what each response states; 699645/2026 prevents treating 497011/2026 as a universal non-existence certificate. It does not prove acceptance, merits investigation, misuse, knowledge, intent or guilt."
+    },
+    {
+      "id": "ACQ-UCF-005",
+      "date": "2026-09-01",
+      "scope_es": "censo finito de comunicaciones de autoridades en Gmail y Drive",
+      "scope_en": "finite Gmail and Drive public-authority communications census",
+      "universe_es": "cinco carriles paginados: fondos UE, Yaiza, Cabildo, autonómico canario y estatal español",
+      "universe_en": "five paginated lanes: EU funds, Yaiza, Cabildo, Canary autonomous and Spanish State",
+      "result": "5514_UNIQUE_MAIL_MESSAGES_326_UNIQUE_DRIVE_DOCUMENTS_METADATA_INDEXED",
+      "boundary_es": "Son denominadores de descubrimiento tras deduplicación entre carriles, no 5.840 pruebas pertinentes ni revisión de fondo individual. Los identificadores, asuntos, cuerpos, destinatarios y URLs privados no se publican.",
+      "boundary_en": "These are cross-lane-deduplicated discovery denominators, not 5,840 relevant proofs or individual merits reviews. Private identifiers, subjects, bodies, recipients and URLs are not published."
+    },
+    {
+      "id": "ACQ-UCF-006",
+      "date": "2026-09-01",
+      "scope_es": "registro e interconexión de comunicaciones públicas controladas",
+      "scope_en": "registration and interlinking of controlled public communications",
+      "universe_es": "19 eventos canónicos: 2 acuses UE existentes reutilizados y 17 eventos nuevos en niveles local, Cabildo, autonómico, estatal y UE",
+      "universe_en": "19 canonical events: 2 existing EU receipts reused and 17 new events across local, Cabildo, autonomous, State and EU tiers",
+      "result": "19_OF_19_CANONICAL_IDS_BILINGUAL_ANCHORS_AND_CROSS_TRACK_LINKS",
+      "boundary_es": "El registro separa materia de fondos de nivel institucional y cada paso de tratamiento. No asigna ^ a comunicaciones ni transfiere responsabilidad penal.",
+      "boundary_en": "The register separates funding subject from institutional tier and every handling step. It assigns no caret to communications and transfers no criminal responsibility."
+    }
   ],
   "specialist_links": {
     "lph_es": "es/comunidad-instrumentalizacion/sala-documental-actas/control-lph-ciclo-juntas/",
@@ -495,5 +1986,21 @@
     "ricpe_en": "en/ric-private-equity-sun-park/",
     "intervencion_es": "es/intervencion-general-siinf-trazabilidad/",
     "intervencion_en": "en/intervencion-general-siinf-traceability/"
-  }
+  },
+  "specialist_continuity_controls": [
+    {
+      "control_id": "PD-CR-CONTINUITY-20260905-01",
+      "source_control": "assets/data/la-laguna-proceeding-pages-v1.json",
+      "obligations": [
+        "PD-GAP-UCF-015/CR/current_status",
+        "PD-GAP-UCF-013/CR/mandate_handover",
+        "PD-GAP-UCF-013/CR/single_satisfaction",
+        "PD-GAP-UCF-011/CR/property_identity",
+        "PD-GAP-UCF-011/CR/beneficiary",
+        "PD-GAP-UCF-013/CR/duty_and_loss",
+        "PD-GAP-UCF-009/CR/wider_connection"
+      ],
+      "merits_closed": false
+    }
+  ]
 }

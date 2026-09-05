@@ -108,5 +108,23 @@
   "continuity": "ops/CUATRECASAS_RAUDA_CONTINUITY_20260905.md",
   "identity_queue": "assets/data/matter-identity-operational-control-v1.json",
   "source_control": "assets/data/la-laguna-proceeding-pages-v1.json",
-  "institutional_communications_preserved": 333
+  "institutional_communications_preserved": 333,
+  "completion_record": {
+    "pull_request": 1465,
+    "merge_sha": "dc2a720f6ae6477df6ebddb081c4b9c48c6e729a",
+    "pages_run_id": 33971512322,
+    "live_verification_run_id": 33971513405,
+    "observed_at": "2026-09-05T14:22:57Z",
+    "state": "LIVE_VERIFIED",
+    "scope": "Original 24 managed pages and three controls; historical observation, not current whole-repository state."
+  },
+  "continuity_successor": {
+    "control_id": "PD-CR-CONTINUITY-20260905-01",
+    "canonical_control": "assets/data/la-laguna-proceeding-pages-v1.json",
+    "current_paths": {
+      "es": "/es/cuatrecasas-sun-park/#cr-continuity-closure-20260905",
+      "en": "/en/cuatrecasas-sun-park/#cr-continuity-closure-20260905"
+    },
+    "old_generator_policy": "RETIRED_FOR_WRITES_SUCCESSOR_SCOPED_VERIFICATION"
+  }
 }

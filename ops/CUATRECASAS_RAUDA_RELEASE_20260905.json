@@ -295,5 +295,11 @@
     "es/uria-menendez-sun-park/index.html",
     "ops/CUATRECASAS_RAUDA_CONTINUITY_20260905.md"
   ],
-  "verification_boundary": "This source manifest describes prepared deterministic outputs, not a completed merge, deployment or live verification."
+  "verification_boundary": "This source manifest describes prepared deterministic outputs, not a completed merge, deployment or live verification.",
+  "historical_preparation_snapshot": true,
+  "current_verification_control": {
+    "id": "PD-CR-CONTINUITY-20260905-01",
+    "path": "assets/data/la-laguna-proceeding-pages-v1.json",
+    "rule": "Prepared hashes remain provenance; later authorised corrections use scoped successor verification."
+  }
 }

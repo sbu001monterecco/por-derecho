@@ -245,6 +245,8 @@ def live(out):
     print(json.dumps({'result':'LIVE_VERIFIED','commit':head,'resources':len(audit['pages'])+1,'scope':'exact managed blocks and source release manifest; no merits finding'}))
 
 def main():
+    from close_cr_continuity_20260905 import legacy_entry
+    return legacy_entry()
     a=argparse.ArgumentParser();g=a.add_mutually_exclusive_group(required=True);g.add_argument('--write',action='store_true');g.add_argument('--check',action='store_true');g.add_argument('--live',action='store_true');args=a.parse_args()
     git('cat-file','-e',BASE+'^{commit}')
     out=outputs()

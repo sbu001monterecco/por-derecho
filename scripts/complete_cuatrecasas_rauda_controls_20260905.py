@@ -44,6 +44,8 @@ def check(out):
     print(json.dumps({'result':'CONTROL_COMPLETENESS_PASS','identity_queue_rows':len(new['exact_identity_queue']),'new_identity_queue_entries':1,'formal_manifest':MANIFEST,'existing_controls_preserved':True,'rauda_not_added_to_our_counsel_roster':True}))
 
 def main():
+    from close_cr_continuity_20260905 import legacy_entry
+    return legacy_entry()
     p=argparse.ArgumentParser();g=p.add_mutually_exclusive_group(required=True);g.add_argument('--write',action='store_true');g.add_argument('--check',action='store_true');g.add_argument('--live',action='store_true');a=p.parse_args();out=outputs()
     if a.write:
         assert review.git('branch','--show-current')==review.BRANCH

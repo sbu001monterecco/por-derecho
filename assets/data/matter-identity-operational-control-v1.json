@@ -127,17 +127,6 @@
       "priority": "P1",
       "question_es": "Fijar la entidad Actyus exacta, jurisdicción, función y relación contractual con Andbank y el proyecto.",
       "question_en": "Fix the exact Actyus entity, jurisdiction, function and contractual relationship with Andbank and the project."
-    },
-    {
-      "id": "PD-SP-O-0084",
-      "priority": "P1",
-      "question_es": "Identificar la entidad jurídica y forma social exactas de RAUDA que intervinieron en el recobro de 2022; separar marca, empleador de los profesionales, mandante, titular del crédito y cualquier eventual cesionario. No inferir mandato anterior, adquisición ni responsabilidad.",
-      "question_en": "Identify the exact RAUDA legal entity and legal form involved in 2022 recovery; distinguish brand, professionals employer, instructing party, debt owner and any eventual cessionary. Do not infer an earlier mandate, acquisition or liability.",
-      "source_controls": [
-        "PD-CR-COM-20220218",
-        "PD-CR-COM-20220307"
-      ],
-      "review_control": "PD-CR-20260905-01"
     }
   ],
   "proceeding_identity_corrections": [
@@ -414,5 +403,28 @@
     "es": "/es/registro-identidad-materia/",
     "en": "/en/matter-identity-registry/"
   },
-  "future_thread_rule": "Load this operational control together with the canonical registry, action matrix, convergence graph, ID-extension policy and Issues #988/#995. Update existing IDs and action IDs; never create a duplicate identity because a source uses another spelling or legal label."
+  "future_thread_rule": "Load this operational control together with the canonical registry, action matrix, convergence graph, ID-extension policy and Issues #988/#995. Update existing IDs and action IDs; never create a duplicate identity because a source uses another spelling or legal label.",
+  "completed_exact_identity_tasks": [
+    {
+      "id": "PD-SP-O-0084",
+      "closed_dimension": "CORPORATE_IDENTITY_ONLY",
+      "source_refs": [
+        "BORME-A-2021-152-08:376093",
+        "BORME-A-2026-96-08:242206"
+      ],
+      "previous_task": {
+        "id": "PD-SP-O-0084",
+        "priority": "P1",
+        "question_es": "Identificar la entidad jurídica y forma social exactas de RAUDA que intervinieron en el recobro de 2022; separar marca, empleador de los profesionales, mandante, titular del crédito y cualquier eventual cesionario. No inferir mandato anterior, adquisición ni responsabilidad.",
+        "question_en": "Identify the exact RAUDA legal entity and legal form involved in 2022 recovery; distinguish brand, professionals employer, instructing party, debt owner and any eventual cessionary. Do not infer an earlier mandate, acquisition or liability.",
+        "source_controls": [
+          "PD-CR-COM-20220218",
+          "PD-CR-COM-20220307"
+        ],
+        "review_control": "PD-CR-20260905-01"
+      },
+      "remaining_obligation": "PD-GAP-UCF-013/CR/mandate_handover",
+      "control_id": "PD-CR-CONTINUITY-20260905-01"
+    }
+  ]
 }

@@ -1,0 +1,141 @@
+{
+  "schema": "por-derecho.audited-gaps-reconciliation.v1",
+  "control_id": "PD-AUDITED-GAPS-20260905-01",
+  "source_base": "adc8c87585609709caafdd90f03ffbb4a4687d83",
+  "reviewed_worker": "c02eeef12c0eb53807f372ba46f9ab974dd74daa",
+  "state": "PREPARED_NOT_MERGED_OR_LIVE",
+  "imported_files": [
+    {
+      "path": "CHATGPT_START_HERE.md",
+      "method": "UNCHANGED_MAIN_PATH_REVIEWED_DELTA",
+      "prior_sha256": "97961aa4d63794d5e598c1506b401f44a9041949d3de1c856d7efec8bf93a925"
+    },
+    {
+      "path": "assets/data/community-acta-authority-interconnectivity-v1.json",
+      "method": "UNCHANGED_MAIN_PATH_REVIEWED_DELTA",
+      "prior_sha256": "f9acb8e803ad1b08dd7acc441adad2beb8769976604a8b5f1bddae6bd8e77bff"
+    },
+    {
+      "path": "assets/data/institutional-communications-register-v1.json",
+      "method": "UNCHANGED_MAIN_PATH_REVIEWED_DELTA",
+      "prior_sha256": "f397fc256cf21bde25c90945ebb67944762599ee4b02350830aae56fe5e7af82"
+    },
+    {
+      "path": "assets/data/la-laguna-proceeding-pages-v1.json",
+      "method": "UNCHANGED_MAIN_PATH_REVIEWED_DELTA",
+      "prior_sha256": "495deb6562c0342e1c042d67be71d6cfcb1edcd73ac5083a93399d33754eda45"
+    },
+    {
+      "path": "assets/data/matter-identity-operational-control-v1.json",
+      "method": "UNCHANGED_MAIN_PATH_REVIEWED_DELTA",
+      "prior_sha256": "a24336c142ee8fe9ab712b39ddad33bcbefb92d0f9b28d47dba9da16d9d22ac1"
+    },
+    {
+      "path": "assets/data/matter-identity-registry-v1.json",
+      "method": "UNCHANGED_MAIN_PATH_REVIEWED_DELTA",
+      "prior_sha256": "32b5fc2727888e4583193070d0b6cccaf4129f8065d69a49ad8564bbd6b2cd96"
+    },
+    {
+      "path": "assets/data/matter-identity-registry-v1.organisations.json",
+      "method": "UNCHANGED_MAIN_PATH_REVIEWED_DELTA",
+      "prior_sha256": "a42f27c40b4699e51e9b0bc1ebcb1a759ee5dd9af1f689a87cd6115d7df956c3"
+    },
+    {
+      "path": "assets/data/unitary-multitrack-criminal-first-gap-closure-v1.json",
+      "method": "UNCHANGED_MAIN_PATH_REVIEWED_DELTA",
+      "prior_sha256": "9766c4ce815e2440a907402301fb35462d9c2fd32012956d4f42c260974b0418"
+    },
+    {
+      "path": "en/cuatrecasas-sun-park/index.html",
+      "method": "UNCHANGED_MAIN_PATH_REVIEWED_DELTA",
+      "prior_sha256": "81058ca7d210c585c518982b089ac6f4f586a254d938bb745bc763c0ac9e4772"
+    },
+    {
+      "path": "en/methodology/index.html",
+      "method": "UNCHANGED_MAIN_PATH_REVIEWED_DELTA",
+      "prior_sha256": null
+    },
+    {
+      "path": "es/cuatrecasas-sun-park/index.html",
+      "method": "UNCHANGED_MAIN_PATH_REVIEWED_DELTA",
+      "prior_sha256": "62bef71b3ea8e5531d8a6fc3ad622bdebd784974af52873d4a2cc9d1a5b3d1e5"
+    },
+    {
+      "path": "es/metodologia/index.html",
+      "method": "UNCHANGED_MAIN_PATH_REVIEWED_DELTA",
+      "prior_sha256": null
+    },
+    {
+      "path": "ops/CUATRECASAS_RAUDA_CONTINUITY_20260905.md",
+      "method": "UNCHANGED_MAIN_PATH_REVIEWED_DELTA",
+      "prior_sha256": "8d1c3458c198e2df66ab1006188579c1822ac2877aa3c5b8e1b84843a430b2b9"
+    },
+    {
+      "path": "ops/CUATRECASAS_RAUDA_RELEASE_20260905.json",
+      "method": "UNCHANGED_MAIN_PATH_REVIEWED_DELTA",
+      "prior_sha256": "b222c6a701afa6160e8591d39ea7ce1c665562fb8ef4fb22490d8df14af899b5"
+    },
+    {
+      "path": "ops/RELEASE_LEDGER.json",
+      "method": "UNCHANGED_MAIN_PATH_REVIEWED_DELTA",
+      "prior_sha256": "4fd5737ab5591a79bff83efc9147a24e2e612e6ea18465abb91f6d3a3f20e453"
+    },
+    {
+      "path": "publication-manifests/cuatrecasas-rauda-recovery-review-20260905.json",
+      "method": "UNCHANGED_MAIN_PATH_REVIEWED_DELTA",
+      "prior_sha256": "1a216548f59c7e080ac3c3550845a739cf3e17dc83cf16849a3096c51b50b4f0"
+    },
+    {
+      "path": "scripts/build_cuatrecasas_rauda_20260905.py",
+      "method": "UNCHANGED_MAIN_PATH_REVIEWED_DELTA",
+      "prior_sha256": "03e17a53c5119ba46c06bd83a7e40a55b976f2de377cff218d9607f16ab42f4f"
+    },
+    {
+      "path": "scripts/check_cr_continuity_browser.py",
+      "method": "UNCHANGED_MAIN_PATH_REVIEWED_DELTA",
+      "prior_sha256": null
+    },
+    {
+      "path": "scripts/close_cr_continuity_20260905.py",
+      "method": "UNCHANGED_MAIN_PATH_REVIEWED_DELTA",
+      "prior_sha256": null
+    },
+    {
+      "path": "scripts/complete_cr_continuity_dependencies.py",
+      "method": "UNCHANGED_MAIN_PATH_REVIEWED_DELTA",
+      "prior_sha256": null
+    },
+    {
+      "path": "scripts/complete_cuatrecasas_rauda_controls_20260905.py",
+      "method": "UNCHANGED_MAIN_PATH_REVIEWED_DELTA",
+      "prior_sha256": "973f132734ffbf390502b0df225570837770f0251d5c7c98cf25e8d86c350717"
+    },
+    {
+      "path": "scripts/validate_operational_truth.py",
+      "method": "THREE_WAY_TEXT_RECONCILIATION_REQUIRES_DIFF_REVIEW",
+      "prior_sha256": "50526bdf2f5ff392d01347ffbd892d398a52dfb5fa167a0976f70741966ef457"
+    }
+  ],
+  "excluded_source_paths": [
+    ".github/workflows/cr-continuity-gapclosure.yml",
+    ".github/workflows/cuatrecasas-rauda-publication.yml",
+    "publication-manifests/historic-proceedings-authority-reintegration-20260903.json"
+  ],
+  "historical_snapshot_sha256": "0e70812d814e6d98bf39ad21e786c57a50b2c9794a778d67095d810ca0ac7254",
+  "graph_substantive_fields_changed": [],
+  "outstanding_implementation": [
+    "Website dependency and link defects",
+    "Pending-identity queue federation",
+    "Media-link worker reconciliation",
+    "Current-main workflow/browser acceptance",
+    "Active-integrator merge and exact Pages readback"
+  ],
+  "remaining_proof": "Seven CR and sixteen overlapping UCF categories remain source-gated;22 aggregate communications must not become synthetic events.",
+  "not_authorized": [
+    "Private-source publication",
+    "Email or court filing",
+    "Branch-protection changes",
+    "Unreviewed old PR bulk merge"
+  ],
+  "publication_owner": "Active lane resolved from Control Tower #1428; this worker cannot independently race it."
+}
