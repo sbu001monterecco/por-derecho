@@ -177,110 +177,42 @@
       "RAUDA"
     ]
   },
-  "counts": {
-    "total": 352,
-    "PERSON": 165,
-    "ORGANISATION": 84,
-    "STRUCTURE": 11,
-    "INSTITUTION": 49,
-    "PROCEEDING": 43
-  },
+  "counts": {"total":381,"PERSON":178,"ORGANISATION":99,"STRUCTURE":11,"INSTITUTION":49,"PROCEEDING":44},
   "parts": [
-    {
-      "path": "matter-identity-registry-v1.people.json",
-      "type": "PERSON",
-      "count": 120
-    },
-    {
-      "path": "matter-identity-registry-v1.professional-people.json",
-      "type": "PERSON",
-      "count": 27
-    },
-    {
-      "path": "matter-identity-registry-v1.joan-cruz.json",
-      "type": "PERSON",
-      "count": 1
-    },
-    {
-      "path": "matter-identity-registry-v1.la-laguna-judicial-people.json",
-      "type": "PERSON",
-      "count": 11
-    },
-    {
-      "path": "matter-identity-registry-v1.dp748-professional-people.json",
-      "type": "PERSON",
-      "count": 3
-    },
-    {
-      "path": "matter-identity-registry-v1.organisations.json",
-      "type": "ORGANISATION",
-      "count": 77
-    },
-    {
-      "path": "matter-identity-registry-v1.professional-organisations.json",
-      "type": "ORGANISATION",
-      "count": 7
-    },
-    {
-      "path": "matter-identity-registry-v1.structures.json",
-      "type": "STRUCTURE",
-      "count": 11
-    },
-    {
-      "path": "matter-identity-registry-v1.institutions.json",
-      "type": "INSTITUTION",
-      "count": 37
-    },
-    {
-      "path": "matter-identity-registry-v1.dp3205-institutions.json",
-      "type": "INSTITUTION",
-      "count": 1
-    },
-    {
-      "path": "matter-identity-registry-v1.la-laguna-judicial-institutions.json",
-      "type": "INSTITUTION",
-      "count": 5
-    },
-    {
-      "path": "matter-identity-registry-v1.court-hierarchy.json",
-      "type": "INSTITUTION",
-      "count": 2
-    },
-    {
-      "path": "matter-identity-registry-v1.proceedings.json",
-      "type": "PROCEEDING",
-      "count": 42
-    },
-    {
-      "path": "matter-identity-registry-v1.dp3205-proceedings.json",
-      "type": "PROCEEDING",
-      "count": 1
-    },
-    {
-      "path": "matter-identity-registry-v1.historic-arrecife-judicial-people-20260902.json",
-      "type": "PERSON",
-      "count": 2
-    },
-    {
-      "path": "matter-identity-registry-v1.historic-arrecife-judicial-institutions-20260902.json",
-      "type": "INSTITUTION",
-      "count": 3
-    },
-    {
-      "path": "matter-identity-registry-v1.historic-las-palmas-civil-judicial-people-20260902.json",
-      "type": "PERSON",
-      "count": 1
-    },
-    {
-      "path": "matter-identity-registry-v1.historic-las-palmas-civil-judicial-institutions-20260902.json",
-      "type": "INSTITUTION",
-      "count": 1
-    }
+    {"path":"matter-identity-registry-v1.people.json","type":"PERSON","count":120},
+    {"path":"matter-identity-registry-v1.professional-people.json","type":"PERSON","count":27},
+    {"path":"matter-identity-registry-v1.joan-cruz.json","type":"PERSON","count":1},
+    {"path":"matter-identity-registry-v1.la-laguna-judicial-people.json","type":"PERSON","count":11},
+    {"path":"matter-identity-registry-v1.dp748-professional-people.json","type":"PERSON","count":3},
+    {"path":"matter-identity-registry-v1.organisations.json","type":"ORGANISATION","count":77},
+    {"path":"matter-identity-registry-v1.professional-organisations.json","type":"ORGANISATION","count":7},
+    {"path":"matter-identity-registry-v1.structures.json","type":"STRUCTURE","count":11},
+    {"path":"matter-identity-registry-v1.institutions.json","type":"INSTITUTION","count":37},
+    {"path":"matter-identity-registry-v1.dp3205-institutions.json","type":"INSTITUTION","count":1},
+    {"path":"matter-identity-registry-v1.la-laguna-judicial-institutions.json","type":"INSTITUTION","count":5},
+    {"path":"matter-identity-registry-v1.court-hierarchy.json","type":"INSTITUTION","count":2},
+    {"path":"matter-identity-registry-v1.proceedings.json","type":"PROCEEDING","count":42},
+    {"path":"matter-identity-registry-v1.dp3205-proceedings.json","type":"PROCEEDING","count":1},
+    {"path":"matter-identity-registry-v1.historic-arrecife-judicial-people-20260902.json","type":"PERSON","count":2},
+    {"path":"matter-identity-registry-v1.historic-arrecife-judicial-institutions-20260902.json","type":"INSTITUTION","count":3},
+    {"path":"matter-identity-registry-v1.historic-las-palmas-civil-judicial-people-20260902.json","type":"PERSON","count":1},
+    {"path":"matter-identity-registry-v1.historic-las-palmas-civil-judicial-institutions-20260902.json","type":"INSTITUTION","count":1},
+    {"path":"matter-identity-registry-v1.jsp-organisations-20260905.json","type":"ORGANISATION","count":15},
+    {"path":"matter-identity-registry-v1.jsp-people-20260905.json","type":"PERSON","count":13},
+    {"path":"matter-identity-registry-v1.jsp-proceedings-20260905.json","type":"PROCEEDING","count":1}
   ],
   "recovery_identity_control": {
     "control_id": "PD-CR-20260905-01",
     "as_of": "2026-09-05",
     "identity_id": "PD-SP-O-0084",
     "state": "SOURCE_LITERAL_ONLY_NO_CARET_OR_EXACT_LEGAL_ENTITY_UPGRADE"
+  },
+  "jsp_registration_control": {
+    "control_id":"PD-JSP-2017-DOSSIER-20260905",
+    "as_of":"2026-09-05",
+    "new_records":29,
+    "publication_state":"WORKER_PENDING_INTEGRATION_AND_LIVE_VERIFICATION",
+    "scope":"2017 shareholder notice and source-qualified corporate/liquidation/insolvency bridge, not the entire historical candidate perimeter",
+    "boundary":"Preserve all pre-existing registry states. New pending records are registration dispositions, not caret confirmation; the proceeding PMR/certified-docket reconciliation remains explicit."
   }
 }
