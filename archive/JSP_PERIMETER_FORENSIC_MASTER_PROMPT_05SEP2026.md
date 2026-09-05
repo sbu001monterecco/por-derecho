@@ -186,3 +186,8 @@ Deliver the actual files or structured delta, not merely a promise. Report inspe
 - LECrim: https://www.boe.es/buscar/act.php?id=BOE-A-1882-6036
 
 Current consolidated texts are research aids; identify the effective historical wording, amendments and applicable transitional rules before a filing.
+
+
+## Additional primary-source custody lead
+
+**S07 — JSP statutory-auditor lead.** BORME entry416588, published18October2018, records reappointment of KPMG Auditores SL for José Sánchez Peñate SA, GC3655, registered5October2018. Source: https://www.boe.es/borme/dias/2018/10/18/pdfs/BORME-A-2018-201-35.pdf (PDFpage1, printed44851). Keep this formal audit role separate from the KPMG-published historical interview. Retrieve appointment terms, financial years, audit opinions and relevant working-paper custody through the lawful route. The entry does not establish that KPMG audited any Sun Park transfer or knew of any alleged irregularity. Reconcile the firm with existing canonical records rather than duplicating it.
