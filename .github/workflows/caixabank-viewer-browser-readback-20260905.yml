@@ -1,0 +1,60 @@
+name: CaixaBank public viewer browser readback
+on:
+  push:
+    branches: ['worker/caixabank-360-audit-20260905']
+    paths: ['.github/workflows/caixabank-viewer-browser-readback-20260905.yml']
+permissions:
+  contents: read
+jobs:
+  observe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - name: Install browser
+        run: |
+          python3 -m pip install playwright==1.55.0
+          python3 -m playwright install --with-deps chromium
+      - name: Observe anonymous viewer, preserve only approved public PDF bytes
+        run: |
+          python3 - <<'PY'
+          import asyncio,hashlib,json,pathlib
+          from playwright.async_api import async_playwright
+          out=pathlib.Path('/tmp/viewer');out.mkdir()
+          sources=[('claim','https://1drv.ms/b/c/bdf43392f576e62f/IQA_jgn9nZ7HS5RT7byXZwJ4AXG2kA1SGMZOfENKOQAc_80','810b5e8235d73de84d51f71c4c882b14007468e8b4cb26807b20464326497838'),('defence','https://1drv.ms/b/c/bdf43392f576e62f/IQDp2mBSGL5GQ5cNBhcEiVKrAcn8t1WXaYOaZCDghdJjo8Q','128ad71243a51562b773a23b101fde79bb8578bb9bde24da337f876363ba2ad2'),('ac','https://1drv.ms/b/c/bdf43392f576e62f/IQBAYqfoXeLLSYqnpI5fm2CDAa1iTqAOPpKsimc7sp94dZc','f2fe5eb023b71b4bf07977bbb3c425e8f85eccd70069a12089e08d129f97c0d8')]
+          async def main():
+            rows=[]
+            async with async_playwright() as p:
+              browser=await p.chromium.launch()
+              for name,url,expected in sources:
+                ctx=await browser.new_context(viewport={'width':390,'height':844},is_mobile=True,has_touch=True)
+                page=await ctx.new_page();row={'source':name,'signed_in':False,'pdf_captured':False,'response_errors':[]};tasks=[]
+                async def inspect(response):
+                  if response.status>=400: row['response_errors'].append({'status':response.status,'host':response.url.split('/')[2]})
+                  if 'application/pdf' in response.headers.get('content-type',''):
+                    try:
+                      data=await response.body();sha=hashlib.sha256(data).hexdigest()
+                      if sha==expected and data.startswith(b'%PDF-'):
+                        (out/(name+'.pdf')).write_bytes(data);row['pdf_captured']=True;row['sha256']=sha;row['bytes']=len(data)
+                      else:row['unmatched_pdf_not_preserved']=True
+                    except Exception as e:row['pdf_error']=str(e)[:200]
+                page.on('response',lambda r:tasks.append(asyncio.create_task(inspect(r))))
+                try:
+                  r=await page.goto(url,wait_until='domcontentloaded',timeout=45000);row['status']=r.status if r else None
+                  await page.wait_for_timeout(20000)
+                  row['title']=await page.title();row['visible_text']=(await page.locator('body').inner_text())[:5000]
+                  row['frames']=[{'host':f.url.split('/')[2] if f.url.startswith('http') else f.url[:40]} for f in page.frames]
+                  await page.screenshot(path=str(out/(name+'.png')),full_page=False)
+                except Exception as e:row['error']=str(e)[:300]
+                if tasks:await asyncio.gather(*tasks,return_exceptions=True)
+                rows.append(row);await ctx.close()
+              await browser.close()
+            (out/'results.json').write_text(json.dumps(rows,indent=2))
+            print(json.dumps(rows,indent=2))
+          asyncio.run(main())
+          PY
+      - uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
+        if: always()
+        with:
+          name: caixabank-public-viewer-browser
+          path: /tmp/viewer/
+          retention-days: 7
