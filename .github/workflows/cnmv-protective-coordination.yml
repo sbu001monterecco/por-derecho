@@ -1,0 +1,34 @@
+name: CNMV protective coordination
+on:
+  push:
+    branches: ['worker/cnmv-protective-coordination-20260906']
+permissions:
+  contents: read
+jobs:
+  prepare-read-only:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          persist-credentials: false
+      - name: Export public text sources for offline preparation
+        run: |
+          python3 - <<'PY'
+          import pathlib, subprocess, json, tarfile
+          root=pathlib.Path('.')
+          paths=subprocess.check_output(['git','ls-files','-z']).decode().split('\0')
+          extensions={'.md','.txt','.json','.jsonl','.html','.js','.css','.py','.yml','.yaml','.xml','.svg','.csv','.toml','.ini'}
+          out=pathlib.Path('/tmp/cnmv-source'); out.mkdir()
+          with tarfile.open(out/'public-text-sources.tar.gz','w:gz') as tar:
+              for s in paths:
+                  p=root/s
+                  if s and p.is_file() and (p.suffix.lower() in extensions or p.name in {'.nojekyll','robots.txt','package-lock.json','package.json'}):
+                      tar.add(p,arcname=s)
+          (out/'source.json').write_text(json.dumps({'sha':subprocess.check_output(['git','rev-parse','HEAD']).decode().strip(),'tree':subprocess.check_output(['git','rev-parse','HEAD^{tree}']).decode().strip(),'purpose':'public text-source transport, not full evidence backup'},indent=2))
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: cnmv-public-text-sources
+          path: /tmp/cnmv-source
+          retention-days: 7
