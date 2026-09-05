@@ -1,5 +1,33 @@
 # MEDIA CAMPAIGN — NEW THREAD START HERE
 
+## 5 September 2026 continuity and rules-management entry — PD-MEDIA-LINK-20260905-01
+
+Before using any historical queue or status below, refresh current remote `main`, apply `PD-MTCP-20260904-01`, and read Control Tower Issue #1428 and task Issue #1462. The lifecycle of this reinforcement is recorded there; a copy on a worker branch is not proof of integration, deployment or automatic Gmail enforcement.
+
+Read the complete recovery/execution prompt:
+
+`archive/prompts/MEDIA_HISTORY_REFRESH_AND_REENTRY_PROMPT_05SEP2026.md`
+
+Read it with `EMAIL_SEND_FINAL_AUTHORIZATION_RULE.md`, the existing mandatory media-core rule and `archive/OUTBOUND_WEBSITE_LINK_MANDATORY_RULE_23AUG2026.md`. The original website and media-core requirements already applied before this reinforcement. The failure was non-application, not the absence of a rule.
+
+For every renewed media package, verify the actual current body against standing requirements before comparing it with a manifest: visible Por Derecho website entrance, distinct relevant topic landing, judicial/public-authority access routes when describing those records as online, controlled webinar, both real language-correct PNG attachments and the evidential limitation. The selected documentary PDF supplements that core. Links appearing only in a PDF, quoted history, hidden HTML, an assistant response or a checklist do not satisfy the body requirement. Do not equate supporting court/authority documents with institutional endorsement or claim that complete native dockets are public without a coverage audit.
+
+**Continuity checkpoint, not a new scan:** the originating 5-September all-date domain discovery returned 100 candidate sent-message identifiers and exhausted its continuation. It did not substantively review all 100 or establish universal media coverage. The full independent person-and-outlet history/attachment review, current professional routing, individual draft preparation and fresh public-link/source checks remain open. The generic Spanish model is a template, not a recipient-cleared package. Do not allocate canonical communications/events from aggregate counts; reconcile individually supported items with existing IDs.
+
+**Corrected verification state:** a previously transmitted media package lacked mandatory website/core components. Preserve its native Sent record privately and distinguish successful transmission from package correctness: `SENT BUT NOT VERIFIED AS CORRECT`. This correction does not authorise a resend or follow-up. Historical `SENT + VERIFIED`, `AWAITING RESPONSE`, `NOT SENT` and priority headings below are dated snapshots only and never current readiness authority. Re-query Gmail before acting.
+
+Private recipient lists, provider identifiers, complete emails, attachment custody locators and unsent bodies stay outside this public repository. Recover expired source copies from the authorised original system; ask for a specific re-upload only after recovery fails. Do not republish the private preparation ZIP as a public continuity record.
+
+The offline helper is `scripts/validate_media_link_core.py`. Run its reproducible synthetic tests with:
+
+```sh
+python3 -m unittest discover -s scripts -p 'test_media_link_core.py' -v
+```
+
+It checks MIME structure, common quoted/hidden-link forms, required filenames, PNG signatures and supplied attachment hashes. A pass remains `CONTENT_GATE_PASS_ONLY`: not image decoding, complete rendering/quote analysis, source truth, public access, history completion, final authorization, sending or delivery. Inspect those separately. No new CI requirement, workflow, transport hook, protection or ruleset is activated by this entry. The active integrator must reconcile and run the repository-wide/scoped acceptance checks before merge; workers do not open competing publication lanes.
+
+## Preserved earlier bootstrap and historical snapshots
+
 Use:
 
 > **Run like the wind — Por Derecho.**
