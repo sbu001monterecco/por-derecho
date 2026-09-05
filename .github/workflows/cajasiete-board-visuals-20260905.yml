@@ -1,4 +1,4 @@
-name: Preserve CajaSiete candidate and checkpoint diagnostic
+name: Preserve CajaSiete candidate
 on:
   push:
     branches: [worker/cajasiete-board-visuals-20260905]
@@ -22,68 +22,42 @@ jobs:
         with:
           python-version: '3.12'
       - run: python -m pip install cairosvg==2.8.2 pillow==11.3.0 beautifulsoup4==4.14.3
-      - name: Generate candidate without publishing
+      - name: Generate candidate, not a deployment
         run: python scripts/prepare_cajasiete_board_visuals_20260905.py apply
-      - name: Capture exact reproducibility diagnostic without suppressing the final result
+      - name: Diagnose and preserve exact outcomes
         run: |
           python - <<'PY'
-          import json,subprocess,sys,hashlib,difflib
+          import sys,json,subprocess,hashlib,difflib
           from pathlib import Path
           sys.path.insert(0,'scripts')
           from prepare_cajasiete_board_visuals_20260905 import check,read,save,REPORT
-          cp=Path('ops/INSTITUTIONAL_COMMUNICATIONS_SCAN_CHECKPOINT.json')
-          before=cp.read_text()
-          commands=[['python','scripts/reconcile_institutional_communications.py','--apply'],['python','scripts/reconcile_institutional_communications.py','--check'],['python','scripts/validate_institutional_communications.py']]
-          outcomes=[]
-          for cmd in commands:
+          cp=Path('ops/INSTITUTIONAL_COMMUNICATIONS_SCAN_CHECKPOINT.json');before=cp.read_text();outcomes=[]
+          for cmd in [['python','scripts/reconcile_institutional_communications.py','--apply'],['python','scripts/reconcile_institutional_communications.py','--check'],['python','scripts/validate_institutional_communications.py']]:
               p=subprocess.run(cmd,text=True,capture_output=True)
               outcomes.append({'command':cmd,'returncode':p.returncode,'stdout':p.stdout[-12000:],'stderr':p.stderr[-12000:]})
               print(json.dumps(outcomes[-1],ensure_ascii=False,indent=2))
-          after=cp.read_text()
-          diff=''.join(difflib.unified_diff(before.splitlines(True),after.splitlines(True),fromfile='checkpoint-before-second-apply',tofile='checkpoint-after-second-apply'))
-          print(diff)
-          expected_diff=''
+          after=cp.read_text();diff=''.join(difflib.unified_diff(before.splitlines(True),after.splitlines(True),fromfile='before',tofile='after'))
           try:
               import reconcile_institutional_communications as m
               expected=m.build_checkpoint(hashlib.sha256(Path('assets/data/institutional-communications-register-v1.json').read_bytes()).hexdigest(),m.sha256_file(m.DEFAULT_SOURCE),m.sha256_file(m.DEFAULT_MAILBOX_INDEX))
-              expected_text=m.canonical_json_bytes(expected).decode()
-              expected_diff=''.join(difflib.unified_diff(after.splitlines(True),expected_text.splitlines(True),fromfile='actual-checkpoint',tofile='expected-from-current-builder'))
-              print(expected_diff)
-          except Exception as exc:
-              expected_diff='Introspection unavailable: '+type(exc).__name__+': '+str(exc)
-              print(expected_diff)
-          r=check();old=read(REPORT)
+              wanted=m.canonical_json_bytes(expected).decode()
+              expected_diff=''.join(difflib.unified_diff(after.splitlines(True),wanted.splitlines(True),fromfile='actual',tofile='expected'))
+          except Exception as e:expected_diff=type(e).__name__+': '+str(e)
+          print('SECOND APPLY DIFF',diff,'EXPECTED DIFF',expected_diff)
+          old=read(REPORT);r=check()
           for k in ['existing_events_preserved','open_proof']:r[k]=old[k]
           save(REPORT,r)
-          d={'control_id':'PD-CAJASIETE-BOARD-VISUALS-20260905','publication_status':'WORKER_CANDIDATE_NOT_MERGED_NOT_DEPLOYED','commands':outcomes,'second_apply_diff':diff,'expected_checkpoint_diff':expected_diff,'bounded_static_check':'PASS','browser_verification':'NOT_RUN','all_recorded_commands_pass':all(x['returncode']==0 for x in outcomes),'universal_completeness_claim':False}
+          d={'control_id':'PD-CAJASIETE-BOARD-VISUALS-20260905','publication_status':'WORKER_NOT_MERGED_NOT_DEPLOYED','commands':outcomes,'second_apply_diff':diff,'expected_checkpoint_diff':expected_diff,'static_check':'PASS','browser_check':'NOT_RUN','all_recorded_commands_pass':all(x['returncode']==0 for x in outcomes),'universal_completeness_claim':False}
           save('ops/CAJASIETE_BOARD_DIAGNOSTIC_20260905.json',d)
-          Path('archive/CAJASIETE_BOARD_VISUAL_HANDOVER_20260905.md').write_text('''# CajaSiete board/compliance visual candidate — NOT DEPLOYED
-
-Control: PD-CAJASIETE-BOARD-VISUALS-20260905.
-
-User authorised the three ES/EN documentary visuals and deployment on the existing CajaSiete routes. This worker does not race the active integration lane in Control Tower #1428. No main write, merge, Pages publication, email send or private-source disclosure has been performed by this release.
-
-Six logical graphics and twelve exact SVG/PNG files, eight additive page projections and two individual communication records are prepared. Original page bytes and existing canonical event objects are checked for preservation. Exact identities and hashes are in the crosswalk and static report; reconcile them with then-current main before integration. The original commercial enquiry remains separate from protected-channel handling. Announced deletion is not proved deletion or unlawfulness. Orion is not shown as acquiring the hotel. Later notice does not establish earlier knowledge. No private email, access credential or unsent outreach text is included.
-
-Earlier workflow runs 33985271183 and 33986031141 reported a checkpoint drift; 33985717068 failed a preparation assertion. Those failures are not waived. Read ops/CAJASIETE_BOARD_DIAGNOSTIC_20260905.json for the actual final command outcomes and exact diff. A static pass does not mean browser acceptance, final-head CI, a publication permit, merge, deployment or live verification. Browser testing remains required.
-
-Closure: reconcile current-main identities and overlapping page changes; resolve any diagnostic failure; run unchanged-tree register/media/privacy and three-engine mobile/no-JS checks; retire preparation mutation; integrate through the sole authorised lane; verify successful exact-SHA Pages deployment and actual affected route/image bytes. Do not claim universal repository completeness.
-''')
+          notes=['# CajaSiete board visual worker — NOT DEPLOYED','Control: PD-CAJASIETE-BOARD-VISUALS-20260905.','User authorised six bilingual documentary graphics on the existing CajaSiete routes. Control Tower #1428 single-integrator sequencing remains operative; this worker does not race #1469.','Six logical graphics/twelve exact PNG-SVG files, eight additive page projections and two separate communications are prepared. Existing page bytes and canonical events are preservation-checked. Exact IDs/hashes are in the crosswalk and static report; reconcile with current main before integration.','The commercial enquiry remains separate. Announced deletion is not proved deletion or unlawfulness. Orion is a separate corporate relationship, not hotel acquisition. Later notice does not establish earlier knowledge. No native private email, credentials or unsent strategy is published.','Earlier preparation failures remain recorded; read ops/CAJASIETE_BOARD_DIAGNOSTIC_20260905.json for actual current command outcomes and exact diffs. Static success is not browser, CI, permit, merge, Pages or live success.','Required closure: resolve any reported failure; reconcile current main and canonical IDs; test three browsers, mobile/no-JS and media/privacy; use the sole integration lane; verify exact-SHA Pages and actual affected public bytes. No universal completeness claim.']
+          Path('archive/CAJASIETE_BOARD_VISUAL_HANDOVER_20260905.md').write_text('\n\n'.join(notes)+'\n')
           PY
-      - name: Retire this one-shot writer to read-only diagnostics
+      - name: Retire one-shot writer
         run: |
           cat > .github/workflows/cajasiete-board-visuals-20260905.yml <<'YAML'
           name: Verify CajaSiete board candidate
           on:
             workflow_dispatch:
-            pull_request:
-              paths:
-                - 'scripts/prepare_cajasiete_board_visuals_20260905.py'
-                - 'assets/media/cajasiete-board-*'
-                - 'ops/CAJASIETE_BOARD_*'
-                - 'ops/cajasiete-board-*'
-                - 'es/cajasiete-sun-park-financiacion-comparabilidad/**'
-                - 'en/cajasiete-sun-park-financing-comparability/**'
           permissions:
             contents: read
           jobs:
@@ -101,7 +75,7 @@ Closure: reconcile current-main identities and overlapping page changes; resolve
                     python scripts/validate_institutional_communications.py
                     git diff --exit-code
           YAML
-      - name: Preserve candidate only on the exact worker head
+      - name: Preserve worker candidate only
         env:
           SEED_SHA: ${{ github.sha }}
           BRANCH: ${{ github.ref_name }}
@@ -117,7 +91,7 @@ Closure: reconcile current-main identities and overlapping page changes; resolve
           PY
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git commit -m 'Preserve CajaSiete source-controlled visual candidate and explicit unresolved acceptance state'
+          git commit -m 'Preserve CajaSiete visual candidate and explicit acceptance gaps; not deployed'
           git push origin HEAD:"$BRANCH"
       - uses: actions/upload-artifact@v4
         if: always()
@@ -135,12 +109,12 @@ Closure: reconcile current-main identities and overlapping page changes; resolve
             ops/INSTITUTIONAL_COMMUNICATIONS_SCAN_CHECKPOINT.json
             es/cajasiete-sun-park-financiacion-comparabilidad/index.html
             en/cajasiete-sun-park-financing-comparability/index.html
-      - name: Report actual validation state, not a publication success
+      - name: Fail when recorded validation fails
         run: |
           python - <<'PY'
           import json
           from pathlib import Path
           d=json.loads(Path('ops/CAJASIETE_BOARD_DIAGNOSTIC_20260905.json').read_text())
-          assert d['all_recorded_commands_pass'], 'Worker preserved; recorded validation failures remain open. NOT DEPLOYED.'
-          print('Recorded checks passed; candidate preserved. Browser/integration/deployment are NOT certified.')
+          assert d['all_recorded_commands_pass'], 'Worker preserved; validation failures remain open. NOT DEPLOYED.'
+          print('Recorded checks passed. Browser/integration/deployment NOT certified.')
           PY
