@@ -1,0 +1,50 @@
+name: JSP BOC bounded check diagnostics
+on:
+  push:
+    branches: [worker/jsp-boc-six-sections-20260905]
+    paths: ['.github/workflows/jsp-boc-diagnostic-read.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+  actions: read
+  checks: read
+jobs:
+  diagnostic:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Read exact failed run diagnostics
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          python3 - <<'PY'
+          import os,json,urllib.request,urllib.error,pathlib,re
+          base='https://api.github.com/repos/sbu001monterecco/por-derecho'
+          headers={'Authorization':'Bearer '+os.environ['GH_TOKEN'],'Accept':'application/vnd.github+json'}
+          def read(path):
+              with urllib.request.urlopen(urllib.request.Request(base+path,headers=headers),timeout=45)as r:return r.read()
+          result=[]
+          for run in [33996439135,33996439083,33996439119]:
+              jobs=json.loads(read('/actions/runs/'+str(run)+'/jobs'))['jobs']
+              for job in jobs:
+                  if job['conclusion']!='failure':continue
+                  row={'run':run,'job':job['id'],'name':job['name'],'failed_steps':[s for s in job['steps']if s['conclusion']=='failure']}
+                  try:
+                      log=read('/actions/jobs/'+str(job['id'])+'/logs').decode('utf-8','replace').splitlines()
+                      indices=[i for i,l in enumerate(log)if re.search(r'FAIL|ERROR|Traceback|AssertionError|not allowed|mismatch|uncaught|cannot|Error:',l)]
+                      selected=set(range(max(0,len(log)-100),len(log)))
+                      for i in indices:
+                          selected.update(range(max(0,i-2),min(len(log),i+6)))
+                      row['diagnostics']=[log[i]for i in sorted(selected)][-240:]
+                  except Exception as e:row['error']=str(e)
+                  result.append(row)
+          pathlib.Path('/tmp/jsp-boc-failed-checks.json').write_text(json.dumps(result,ensure_ascii=False,indent=2))
+          print(json.dumps([{k:v for k,v in r.items()if k!='diagnostics'}for r in result],indent=2))
+          PY
+      - uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
+        with:
+          name: jsp-boc-failed-checks
+          path: /tmp/jsp-boc-failed-checks.json
+          retention-days: 14
+          if-no-files-found: error
+# Read-only diagnostics: no gate bypass, check rewriting or production changes.
