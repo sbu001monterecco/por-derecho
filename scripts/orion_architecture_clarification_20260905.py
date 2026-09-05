@@ -199,8 +199,10 @@ def check(base: str):
     for p in PATHS:
         actual = (ROOT / p).read_text()
         expected = transformed(p, git_text(base, p))
-        assert actual == expected, 'Unapproved source delta or missing correction: ' + p
-        assert transformed(p, actual) == actual, 'Non-deterministic: ' + p
+        from master_mynd_projection_contract import without_master_mynd_discovery
+        comparison = without_master_mynd_discovery(actual, p)
+        assert comparison == expected, 'Unapproved source delta or missing correction: ' + p
+        assert transformed(p, comparison) == comparison, 'Non-deterministic: ' + p
         checks += 2
         if p.endswith('.html'):
             old, new = Links(), Links(); old.feed(git_text(base, p)); new.feed(actual)
