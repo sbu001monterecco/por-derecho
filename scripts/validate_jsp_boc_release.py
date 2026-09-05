@@ -92,6 +92,7 @@ def main():
                 browser=getattr(pw,engine).launch()
                 for route in roots:
                     for width,js in [(320,True),(390,True),(1440,True),(390,False)]:
+                        print('BROWSER',engine,route,width,'javascript',js,flush=True)
                         context=browser.new_context(viewport={'width':width,'height':900},java_script_enabled=js);page=context.new_page();errors=[];bad=[]
                         page.on('pageerror',lambda e:errors.append(str(e)));page.on('response',lambda r:bad.append([r.status,r.url])if r.status>=400 and r.url.startswith(base)else None)
                         r=page.goto(base+route,wait_until='networkidle',timeout=60000);require(r.status==200,'page status')
@@ -99,10 +100,15 @@ def main():
                         page.locator('#boc-308-07').scroll_into_view_if_needed()
                         for im in page.locator('#boc-308-07 img').all():
                             im.scroll_into_view_if_needed()
-                            # Native lazy loading is asynchronous, especially in Firefox.
-                            # Wait for completion but still fail on HTTP/decode errors or timeout.
-                            page.wait_for_function('(i)=>i.complete',arg=im.element_handle(),timeout=15000)
-                            require(im.evaluate('async(i)=>{if(!i.naturalWidth)return false;try{await i.decode();return i.complete&&i.naturalWidth>0;}catch(e){return false;}}'),'BOC source image decodes')
+                            # Poll from the driver, not page timers/RAF/promises that
+                            # can stall when JavaScript is disabled in a browser.
+                            for attempt in range(150):
+                                if im.evaluate('(i)=>i.complete'):break
+                                page.wait_for_timeout(100)
+                            else:raise AssertionError('BOC source image readiness timeout')
+                            # A synchronous canvas draw and pixel read force native
+                            # decoding even in the no-script case; bad images fail.
+                            require(im.evaluate('(i)=>{if(!i.complete||!i.naturalWidth)return false;try{const c=document.createElement("canvas");c.width=i.naturalWidth;c.height=i.naturalHeight;const x=c.getContext("2d");x.drawImage(i,0,0);return x.getImageData(0,0,c.width,c.height).data.length===c.width*c.height*4;}catch(e){return false;}}'),'BOC source image decodes')
                         for n in range(1,7):require(page.locator('#background-'+str(n)).inner_text().strip(),'full section visible')
                         broken=page.evaluate('''() => [...document.querySelectorAll('#jsp-boc-six-sections a[href]')].filter(a=>a.hash&&a.origin===location.origin&&a.pathname===location.pathname&&!document.getElementById(decodeURIComponent(a.hash.slice(1)))).map(a=>a.href)''');require(not broken,'in-page source anchors '+str(broken))
                         require(page.evaluate('document.documentElement.scrollWidth<=innerWidth+2'),'no horizontal overflow')
@@ -111,6 +117,7 @@ def main():
                             for anchor in ['boc-308-07','current-corrections','qualified-witnesses','full-background']:
                                 page.locator('#'+anchor).scroll_into_view_if_needed();page.screenshot(path=str(out/f'{route[:2]}-{width}-{anchor}.png'))
                         result['cases'].append({'engine':engine,'route':route,'width':width,'javascript':js,'status':'PASS'});context.close()
+                        (out/'progress.json').write_text(json.dumps(result,ensure_ascii=False,indent=2))
                 browser.close()
         require(len(result['cases'])==24,'24 exact root-reader browser cases')
         require(not subprocess.check_output(['git','status','--porcelain'],cwd=ROOT,text=True).strip(),'read-only worktree')
