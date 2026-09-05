@@ -1,0 +1,54 @@
+name: JSP reader browser acceptance
+on:
+  pull_request:
+    paths:
+      - 'es/jsp-montelanza-concurso-liquidacion/**'
+      - 'en/jsp-montelanza-insolvency-liquidation/**'
+      - 'assets/jsp-dossier-2017.*'
+      - 'assets/data/*jsp*'
+      - 'assets/evidence/jsp-2017/**'
+      - 'scripts/test_jsp_reader_browser.py'
+      - '.github/workflows/jsp-reader-browser-acceptance.yml'
+  workflow_dispatch:
+    inputs:
+      live:
+        description: Test actual production after exact Pages deployment
+        type: boolean
+        default: false
+permissions:
+  contents: read
+jobs:
+  jsp-browser-acceptance:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
+          persist-credentials: false
+      - run: |
+          python3 -m pip install playwright
+          python3 -m playwright install --with-deps chromium firefox webkit
+      - name: Test actual image decoding, full-size links, bilingual reader and no-JS fallback
+        env:
+          CHECK_LIVE: ${{ inputs.live || false }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          if test "$CHECK_LIVE" = true; then
+            python3 scripts/test_jsp_reader_browser.py --live
+          else
+            mkdir -p /tmp/jsp-browser-root
+            ln -s "$GITHUB_WORKSPACE" /tmp/jsp-browser-root/por-derecho
+            python3 -m http.server 8765 --directory /tmp/jsp-browser-root >/tmp/jsp-browser-http.log 2>&1 &
+            sleep 1
+            python3 scripts/test_jsp_reader_browser.py
+          fi
+          test -z "$(git status --porcelain)"
+      - uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
+        if: always()
+        with:
+          name: jsp-reader-browser-acceptance
+          path: /tmp/jsp-browser-report
+          retention-days: 30
+          if-no-files-found: error
