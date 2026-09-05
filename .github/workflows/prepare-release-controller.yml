@@ -28,7 +28,36 @@ jobs:
       - name: Prepare exact current-main candidate; fail on any required check failure
         env:
           GH_TOKEN: ${{ github.token }}
-        run: python3 .pd-stage/prepare.py
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import json,lzma,subprocess,sys,zipfile,difflib,re
+          out=Path('/tmp/pd-preparation');out.mkdir(exist_ok=True)
+          package=lzma.decompress(b''.join(Path('.pd-stage/part'+str(i)).read_bytes() for i in range(4)))
+          (out/'reviewed-package.json').write_bytes(package)
+          result=subprocess.run([sys.executable,'.pd-stage/prepare.py'])
+          if result.returncode:
+              paths=['scripts/check_cnmv_owned_contract.py','scripts/build_cnmv_interim_measures_20260905.py','scripts/pd_release_contract.py','assets/data/cnmv-interim-measures-20260905.json','ops/CNMV_INTERIM_PUBLICATION_AUDIT_20260905.json','en/cnmv-ricpe-verification/index.html','es/cnmv-ricpe-verificacion/index.html','en/cnmv-rsm-external-audit-business-perimeter/index.html']
+              with zipfile.ZipFile(out/'focused-failure-source.zip','w',zipfile.ZIP_DEFLATED) as archive:
+                  for path in paths:
+                      if Path(path).is_file():archive.write(path)
+              sys.path.insert(0,str(Path('scripts').resolve()))
+              import build_cnmv_interim_measures_20260905 as source
+              expected=source.prepared();report=[]
+              markers=[(source.START,source.END),(source.HSTART,source.HEND),(source.JSTART,source.JEND)]
+              for path in paths:
+                  if path not in expected or not path.endswith('.html'):continue
+                  actual=Path(path).read_text()
+                  for start,end in markers:
+                      pattern=re.escape(start)+r'.*?'+re.escape(end)
+                      old=re.findall(pattern,expected[path],re.S);new=re.findall(pattern,actual,re.S)
+                      if old!=new:
+                          diff='\n'.join(difflib.unified_diff('\n'.join(old).replace('><','>\n<').splitlines(),'\n'.join(new).replace('><','>\n<').splitlines(),fromfile='expected/'+path,tofile='actual/'+path,n=3))
+                          report.append({'path':path,'marker':start,'expected_count':len(old),'actual_count':len(new),'diff':diff})
+              (out/'owned-block-differences.json').write_text(json.dumps(report,indent=2))
+              print('OWNED_BLOCK_DIFFERENCES',json.dumps(report))
+          raise SystemExit(result.returncode)
+          PY
       - uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
         if: always()
         with:
