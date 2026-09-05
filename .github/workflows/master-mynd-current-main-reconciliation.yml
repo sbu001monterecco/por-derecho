@@ -1,0 +1,15 @@
+name: MASTER MYND current-main reconciliation receipt
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  receipt:
+    runs-on: ubuntu-latest
+    timeout-minutes: 2
+    steps:
+      - name: Preserved three-way source history
+        run: |
+          echo "This preparation is retired. No content writes, merge, download or deployment occur here."
+          echo "The CaixaBank current-main source, MASTER MYND reader and shared discovery sections were reconciled without dropping either source."
+          echo "Actual final acceptance, Pages and live readback belong to PR1473 and Control Tower1428."
