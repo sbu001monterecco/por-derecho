@@ -1,0 +1,100 @@
+name: JSP reader browser acceptance
+on:
+  pull_request:
+    paths:
+      - 'es/jsp-montelanza-concurso-liquidacion/**'
+      - 'en/jsp-montelanza-insolvency-liquidation/**'
+      - 'assets/jsp-dossier-2017.*'
+      - 'assets/data/*jsp*'
+      - '.github/workflows/jsp-reader-browser-acceptance.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  jsp-browser-acceptance:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
+          persist-credentials: false
+      - run: |
+          python3 -m pip install playwright
+          python3 -m playwright install --with-deps chromium firefox webkit
+      - name: Test actual bilingual candidate, narrow screens, no-JS and original-source fallback
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p /tmp/jsp-browser-root /tmp/jsp-browser-report
+          ln -s "$GITHUB_WORKSPACE" /tmp/jsp-browser-root/por-derecho
+          python3 -m http.server 8765 --directory /tmp/jsp-browser-root >/tmp/jsp-browser-http.log 2>&1 &
+          python3 - <<'PY'
+          import json, pathlib, subprocess, time, urllib.request
+          from playwright.sync_api import sync_playwright
+          out=pathlib.Path('/tmp/jsp-browser-report')
+          evidence=json.loads(pathlib.Path('assets/data/jsp-2017-source-relationship-register.json').read_text())
+          expected=sum(len(json.loads(pathlib.Path('assets/data',p).read_text())['records']) for p in evidence['registry_parts'])
+          report={'candidate_sha':subprocess.check_output(['git','rev-parse','HEAD'],text=True).strip(),'cases':[],'failures':[],'external_viewer_boundary':'Inline third-party rendering is browser/host dependent; official PDF bytes and always-visible source links are checked separately.'}
+          source='https://www.boe.es/borme/dias/2017/08/10/pdfs/BORME-C-2017-7368.pdf'
+          try:
+              with urllib.request.urlopen(source,timeout=45) as r: raw=r.read()
+              assert raw.startswith(b'%PDF-')
+              import hashlib
+              report['official_pdf']={'url':source,'bytes':len(raw),'sha256':hashlib.sha256(raw).hexdigest()}
+              (out/'BORME-C-2017-7368.pdf').write_bytes(raw)
+          except Exception as e: report['failures'].append('Official PDF retrieval: '+str(e))
+          routes={'es':'es/jsp-montelanza-concurso-liquidacion/','en':'en/jsp-montelanza-insolvency-liquidation/'}
+          with sync_playwright() as pw:
+              for name in ('chromium','firefox','webkit'):
+                  browser=getattr(pw,name).launch()
+                  for lang,route in routes.items():
+                      for width,js in [(320,True),(390,True),(1440,True),(390,False)]:
+                          case={'browser':name,'lang':lang,'width':width,'javascript':js,'errors':[],'external_failed_requests':[]}
+                          context=browser.new_context(viewport={'width':width,'height':1000},java_script_enabled=js)
+                          page=context.new_page()
+                          page.on('pageerror',lambda err,c=case:c['errors'].append(str(err)))
+                          page.on('requestfailed',lambda req,c=case:c['external_failed_requests'].append({'url':req.url,'failure':req.failure}) if not req.url.startswith('http://127.0.0.1:8765/') else c['errors'].append('Local request failed: '+req.url))
+                          try:
+                              response=page.goto('http://127.0.0.1:8765/por-derecho/'+route,wait_until='domcontentloaded',timeout=45000)
+                              assert response.status==200
+                              assert page.locator('h1').count()==1
+                              assert page.locator('a[href="'+source+'"]').count()>=1
+                              assert '26.82%' in page.locator('body').inner_text() or '26,82%' in page.locator('body').inner_text()
+                              if js:
+                                  page.wait_for_function("document.querySelector('#canonical-records table') !== null",timeout=30000)
+                                  assert page.locator('#canonical-records table').first.locator('tbody tr').count()==expected
+                                  assert page.locator('#official-notice-capture').count()==1
+                                  assert page.locator('#official-notice-frame').count()==1
+                                  assert 'BORME-C-2017-7368.pdf' in page.locator('#official-notice-frame').get_attribute('src')
+                                  assert page.locator('#PD-SP-O-0085').count()==1
+                                  assert page.locator('#PD-SP-O-0086').count()==1
+                                  assert page.locator('#source-records > p').count()==len(evidence['sources'])
+                                  page.locator('#official-notice-capture').scroll_into_view_if_needed()
+                                  page.screenshot(path=str(out/f'{name}-{lang}-{width}-evidence.png'))
+                              else:
+                                  assert page.locator('noscript a').count()>=3
+                              overflow=page.evaluate('document.documentElement.scrollWidth-window.innerWidth')
+                              assert overflow<=2, f'horizontal overflow: {overflow}'
+                              case['horizontal_overflow']=overflow
+                              assert not case['errors'],case['errors']
+                              case['result']='PASS'
+                          except Exception as e:
+                              case['result']='FAIL';case['error']=str(e);report['failures'].append(case.copy())
+                              page.screenshot(path=str(out/f'{name}-{lang}-{width}-{js}-failure.png'))
+                          context.close(); report['cases'].append(case)
+                  browser.close()
+          report['result']='PASS' if not report['failures'] else 'FAIL'
+          report['case_count']=len(report['cases'])
+          (out/'report.json').write_text(json.dumps(report,ensure_ascii=False,indent=2))
+          print(json.dumps(report,ensure_ascii=False,indent=2))
+          assert len(report['cases'])==24 and not report['failures']
+          PY
+          test -z "$(git status --porcelain)"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: jsp-reader-browser-acceptance
+          path: /tmp/jsp-browser-report
+          retention-days: 30
+          if-no-files-found: error
