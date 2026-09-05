@@ -1,0 +1,124 @@
+name: Import the authorised exact Puzzle original
+on:
+  push:
+    branches: [legaltech/uria-search-graph-evidence-20260904]
+    paths: [.github/workflows/puzzle-approved-original-import-20260905.yml]
+permissions:
+  contents: write
+jobs:
+  original:
+    if: github.repository == 'sbu001monterecco/por-derecho'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          ref: legaltech/uria-search-graph-evidence-20260904
+          fetch-depth: 1
+      - name: Prepare one-time sealed delivery key
+        shell: bash
+        run: |
+          python -m pip install --quiet cryptography==45.0.6 PyMuPDF==1.26.4 Pillow==11.3.0
+          umask 077
+          openssl genpkey -algorithm RSA -pkeyopt rsa_keygen_bits:3072 -out /tmp/puzzle-private.pem 2>/dev/null
+          openssl pkey -in /tmp/puzzle-private.pem -pubout -out /tmp/puzzle-public.pem
+          mkdir -p /tmp/puzzle-public-key
+          cp /tmp/puzzle-public.pem /tmp/puzzle-public-key/public.pem
+          printf '%s' "$GITHUB_RUN_ID" > /tmp/puzzle-public-key/run-id.txt
+      - name: Publish public encryption key only
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: puzzle-import-public-key
+          path: /tmp/puzzle-public-key/
+          retention-days: 1
+      - name: Import only the approved source, with no plaintext access URL in Git or logs
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: python
+        run: |
+          import os, json, time, base64, hashlib, pathlib, urllib.request, urllib.error, urllib.parse, subprocess
+          from cryptography.hazmat.primitives import serialization, hashes
+          from cryptography.hazmat.primitives.asymmetric import padding
+          from cryptography.hazmat.primitives.ciphers.aead import AESGCM
+          import fitz
+          from PIL import Image
+          branch='legaltech/uria-search-graph-evidence-20260904'
+          repo='sbu001monterecco/por-derecho'
+          expected='e441bdb368c0092d5b15ca5ee911eeac266540bde54817e424f3075f4c5fdd47'
+          private=serialization.load_pem_private_key(pathlib.Path('/tmp/puzzle-private.pem').read_bytes(),password=None)
+          endpoint='https://api.github.com/repos/'+repo+'/contents/.github/puzzle-import/sealed-20260905.json?ref='+urllib.parse.quote(branch,safe='')
+          envelope=None
+          for attempt in range(90):
+            try:
+              req=urllib.request.Request(endpoint,headers={'Authorization':'Bearer '+os.environ['GH_TOKEN'],'Accept':'application/vnd.github+json'})
+              with urllib.request.urlopen(req,timeout=15) as response:
+                record=json.load(response)
+              proposed=json.loads(base64.b64decode(record['content']))
+              if str(proposed.get('run_id'))==os.environ['GITHUB_RUN_ID']:
+                envelope=proposed
+                break
+            except (urllib.error.HTTPError, urllib.error.URLError, KeyError, ValueError):
+              pass
+            time.sleep(8)
+          if envelope is None: raise SystemExit('No matching one-time sealed delivery received; source remains absent.')
+          key=private.decrypt(base64.b64decode(envelope['key']),padding.OAEP(mgf=padding.MGF1(hashes.SHA256()),algorithm=hashes.SHA256(),label=None))
+          payload=json.loads(AESGCM(key).decrypt(base64.b64decode(envelope['nonce']),base64.b64decode(envelope['ciphertext']),os.environ['GITHUB_RUN_ID'].encode()))
+          source_url=payload['source_url']
+          parsed=urllib.parse.urlsplit(source_url)
+          if parsed.scheme!='https' or not parsed.hostname.endswith('.oaiusercontent.com') or not parsed.path.startswith('/files/'):
+            raise SystemExit('Rejected non-allowlisted transfer endpoint.')
+          class NoRedirect(urllib.request.HTTPRedirectHandler):
+            def redirect_request(self,req,fp,code,msg,headers,newurl):
+              raise RuntimeError('Redirects are not allowed for this one-time source transfer.')
+          opener=urllib.request.build_opener(NoRedirect)
+          temp=pathlib.Path('/tmp/approved-puzzle.pdf')
+          try:
+            with opener.open(source_url,timeout=90) as response, temp.open('wb') as target:
+              total=0
+              while True:
+                block=response.read(1024*1024)
+                if not block: break
+                total+=len(block)
+                if total>50046618: raise ValueError('size')
+                target.write(block)
+          except Exception:
+            raise SystemExit('Source transfer failed; access URL intentionally not logged.')
+          del source_url, payload, key, private
+          pathlib.Path('/tmp/puzzle-private.pem').unlink(missing_ok=True)
+          if temp.stat().st_size!=50046618 or hashlib.file_digest(temp.open('rb'),'sha256').hexdigest()!=expected:
+            raise SystemExit('Original size/hash mismatch. No publication allowed.')
+          doc=fitz.open(temp)
+          if len(doc)!=32 or doc.is_encrypted: raise SystemExit('Original page-count/encryption mismatch.')
+          # Refresh the branch; the resulting ordinary push is non-force and must fast-forward.
+          subprocess.run(['git','fetch','origin',branch],check=True)
+          subprocess.run(['git','checkout','-B',branch,'FETCH_HEAD'],check=True)
+          root=pathlib.Path('assets/docs/puzzle'); root.mkdir(parents=True,exist_ok=True)
+          original=root/'PUZZLE-2024-original.pdf'
+          import shutil
+          shutil.copyfile(temp,original)
+          rows=[]
+          for index,page in enumerate(doc,1):
+            pix=page.get_pixmap(matrix=fitz.Matrix(3200/page.rect.width,3200/page.rect.width),alpha=False)
+            img=Image.frombytes('RGB',[pix.width,pix.height],pix.samples)
+            large=root/f'page-{index:02d}.jpg'
+            img.save(large,'JPEG',quality=93,optimize=True,progressive=True)
+            img.thumbnail((1600,1600))
+            display=root/f'page-{index:02d}.webp'
+            img.save(display,'WEBP',quality=90,method=6)
+            rows.append({'page':index,'display':display.as_posix(),'download':large.as_posix(),'width':pix.width,'height':pix.height,'display_sha256':hashlib.sha256(display.read_bytes()).hexdigest(),'download_sha256':hashlib.sha256(large.read_bytes()).hexdigest(),'origin':'Full page rasterised from exact authorised original, no semantic edits','parent_sha256':expected})
+          manifest={'schema':'por-derecho.puzzle-assets.v2','original':{'path':original.as_posix(),'sha256':expected,'sizeBytes':50046618,'pageCount':32},'pages':rows,'status':'MATERIALISED_ON_CANDIDATE_BRANCH_NOT_YET_LIVE','source_authority':'Explicit user request to publish the authentic original in this repository; Control Tower 1428','privacy':'Temporary file-transfer URL encrypted in transit, not stored as plaintext; no Drive permissions changed','rendering':{'PyMuPDF':fitz.VersionBind,'Pillow':Image.__version__,'full_page_pixels':3200},'court_filing_status':'Not established by file identity or this import'}
+          (root/'manifest.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n')
+          subprocess.run(['git','add','--','assets/docs/puzzle'],check=True)
+          subprocess.run(['git','-c','user.name=Por Derecho controlled import','-c','user.email=299972076+sbu001monterecco@users.noreply.github.com','commit','-m','Materialise authorised exact 32-page Puzzle and source-derived page images'],check=True)
+          subprocess.run(['git','push','origin','HEAD:refs/heads/'+branch],check=True)
+          pathlib.Path('/tmp/puzzle-import-receipt.json').write_text(json.dumps({'sha256':expected,'sizeBytes':50046618,'pages':32,'commit':subprocess.check_output(['git','rev-parse','HEAD'],text=True).strip(),'status':'candidate branch only; merge and external readback remain required'},indent=2))
+      - name: Preserve source receipt, not transfer secrets
+        if: success()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: puzzle-original-import-receipt
+          path: /tmp/puzzle-import-receipt.json
+          retention-days: 14
+      - name: Destroy ephemeral private material
+        if: always()
+        run: rm -f /tmp/puzzle-private.pem /tmp/approved-puzzle.pdf
