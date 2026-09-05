@@ -1,0 +1,141 @@
+name: CR continuity gap closure
+on:
+  pull_request:
+    paths:
+      - '.github/workflows/cr-continuity-gapclosure.yml'
+      - '.github/workflows/cuatrecasas-rauda-publication.yml'
+      - 'scripts/*cr_continuity*.py'
+      - 'assets/data/la-laguna-proceeding-pages-v1.json'
+      - 'assets/data/matter-identity-registry-v1.organisations.json'
+      - 'assets/data/unitary-multitrack-criminal-first-gap-closure-v1.json'
+      - 'assets/data/community-acta-authority-interconnectivity-v1.json'
+      - 'es/cuatrecasas-sun-park/index.html'
+      - 'en/cuatrecasas-sun-park/index.html'
+      - 'es/metodologia/index.html'
+      - 'en/methodology/index.html'
+  push:
+    branches: [main, 'worker/cr-continuity-gapclosure-20260905']
+    paths:
+      - '.github/workflows/cr-continuity-gapclosure.yml'
+      - 'scripts/*cr_continuity*.py'
+      - 'assets/data/la-laguna-proceeding-pages-v1.json'
+      - 'es/cuatrecasas-sun-park/index.html'
+      - 'en/cuatrecasas-sun-park/index.html'
+      - 'es/metodologia/index.html'
+      - 'en/methodology/index.html'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: cr-continuity-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  prepare-worker-only:
+    if: github.ref == 'refs/heads/worker/cr-continuity-gapclosure-20260905' && github.event_name == 'push'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          ref: worker/cr-continuity-gapclosure-20260905
+          fetch-depth: 0
+          persist-credentials: true
+      - name: Apply guarded current-main delta and strict repair checks
+        run: |
+          git fetch --no-tags origin main:refs/remotes/origin/main
+          python -m py_compile scripts/close_cr_continuity_20260905.py
+          python scripts/close_cr_continuity_20260905.py --apply
+          python scripts/complete_cr_continuity_dependencies.py --apply
+          python scripts/validate_unitary_multitrack_gap_closure.py
+          python scripts/validate_publication_integrity.py
+          python scripts/validate_publication_integrity_v2.py
+          python scripts/validate_audience_experience.py
+          python scripts/validate_operational_identity_registry.py
+          python scripts/validate_legal_professional_register.py
+      - name: Commit only declared generated content to this worker
+        shell: python
+        run: |
+          import json,subprocess
+          from pathlib import Path
+          d=json.loads(Path('assets/data/la-laguna-proceeding-pages-v1.json').read_text())['continuity_closure']
+          allowed=[p for p in d['changed_files'] if not p.startswith('.github/')]
+          subprocess.run(['git','add','--',*allowed],check=True)
+          if subprocess.run(['git','diff','--cached','--quiet']).returncode:
+            subprocess.run(['git','config','user.name','github-actions[bot]'],check=True)
+            subprocess.run(['git','config','user.email','41898282+github-actions[bot]@users.noreply.github.com'],check=True)
+            subprocess.run(['git','commit','-m','Render CR continuity and refresh unchanged ACTA graph dependency hashes'],check=True)
+            subprocess.run(['git','push','origin','HEAD:refs/heads/worker/cr-continuity-gapclosure-20260905'],check=True)
+          print('PREPARED_HEAD',subprocess.check_output(['git','rev-parse','HEAD'],text=True).strip())
+          print('Workflow-file changes require the authorised connector, not expanded bot permissions.')
+      - name: Retain public-only generated review evidence
+        if: always()
+        shell: python
+        run: |
+          from pathlib import Path
+          import json,shutil,subprocess
+          root=Path.cwd();out=root/'diagnostics';out.mkdir(exist_ok=True)
+          c=json.loads((root/'assets/data/la-laguna-proceeding-pages-v1.json').read_text()).get('continuity_closure',{})
+          for path in c.get('changed_files',[]):
+            src=root/path;dest=out/'source'/path
+            dest.parent.mkdir(parents=True,exist_ok=True);shutil.copyfile(src,dest)
+          out.joinpath('head.txt').write_text(subprocess.check_output(['git','rev-parse','HEAD'],text=True))
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        if: always()
+        with:
+          name: cr-continuity-prepared-${{ github.run_id }}
+          path: diagnostics/
+          include-hidden-files: true
+          retention-days: 14
+  scoped-validation:
+    if: github.event_name == 'pull_request' || github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - name: Verify current scoped controls and repository safety
+        env:
+          GITHUB_BASE_SHA: ${{ github.event.pull_request.base.sha || github.event.before }}
+          GITHUB_HEAD_SHA: ${{ github.event.pull_request.head.sha || github.sha }}
+        run: |
+          git fetch --no-tags origin main:refs/remotes/origin/main
+          python scripts/close_cr_continuity_20260905.py --check
+          python scripts/build_cuatrecasas_rauda_20260905.py --check
+          python scripts/complete_cuatrecasas_rauda_controls_20260905.py --check
+          python scripts/complete_cr_continuity_dependencies.py --check
+          python scripts/validate_unitary_multitrack_gap_closure.py
+          python scripts/validate_repository_preservation.py
+          python scripts/validate_publication_integrity.py
+          python scripts/validate_publication_integrity_v2.py
+          python scripts/validate_audience_experience.py
+          python scripts/validate_operational_identity_registry.py
+          python scripts/validate_legal_professional_register.py
+      - name: Record wider operational diagnostic without certifying it closed
+        shell: python
+        run: |
+          import json,subprocess
+          from pathlib import Path
+          r=subprocess.run(['python','scripts/validate_operational_truth.py'],capture_output=True,text=True)
+          results=[{'validator':'validate_operational_truth.py','exit':r.returncode,'stdout':r.stdout,'stderr':r.stderr}]
+          Path('diagnostics').mkdir(exist_ok=True)
+          Path('diagnostics/cr-continuity-wider-diagnostics.json').write_text(json.dumps(results,ensure_ascii=False,indent=2))
+          print(json.dumps(results,ensure_ascii=False))
+      - name: Install browser runtime
+        run: |
+          python -m pip install playwright==1.55.0
+          python -m playwright install --with-deps chromium
+      - name: Verify bilingual rendered links and correction projection
+        run: python scripts/check_cr_continuity_browser.py
+      - name: Read back actual public files for this merged tree
+        if: github.ref == 'refs/heads/main'
+        run: python scripts/close_cr_continuity_20260905.py --live
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        if: always()
+        with:
+          name: cr-continuity-qa-${{ github.run_id }}
+          path: diagnostics/
+          retention-days: 14

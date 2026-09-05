@@ -374,33 +374,958 @@
     "open_evidence": [
       {
         "key": "current_status",
-        "requirement": "Current certified court status, effective service, appeal processing and any actual adjudication, assignment, registration or possession."
+        "gap_id": "PD-GAP-UCF-015",
+        "title_en": "Current procedure, service and decisions",
+        "title_es": "Procedimiento, notificación y decisiones actuales",
+        "priority": "P0",
+        "custodian_en": "Court/LAJ records; each party’s valid service record; instructed counsel",
+        "custodian_es": "Expediente judicial/LAJ; notificación válida de cada parte; letrado encargado",
+        "closure_en": "Certified current DP/ETJ docket; exact act and receipt; service to each party; appeal processing; actual adjudication/cession if any. Separate dispatch, receipt, notice, examination and decision.",
+        "closure_es": "Expediente DP/ETJ certificado y actual; acto y justificante; notificación a cada parte; tramitación del recurso; adjudicación/cesión efectiva, si existe. Separar envío, recepción, notificación, examen y decisión.",
+        "obligation_id": "PD-GAP-UCF-015/CR/current_status",
+        "status": "OPEN_SOURCE_REQUIRED",
+        "record_state": "REGISTERED_AND_LINKED",
+        "merits_closed": false,
+        "source_control": "assets/data/la-laguna-proceeding-pages-v1.json"
       },
       {
         "key": "mandate_handover",
-        "requirement": "Client, instructions, accepted work, recovery handover, personnel, access, remuneration and dated conflict controls."
+        "gap_id": "PD-GAP-UCF-013",
+        "title_en": "Mandates, recovery handover and information",
+        "title_es": "Mandatos, traspaso al recobro e información",
+        "priority": "P1",
+        "custodian_en": "Engagement parties; professional firm; recovery entity; lawful file custodians",
+        "custodian_es": "Partes del encargo; despacho; entidad de recobro; custodios legítimos",
+        "closure_en": "Accepted engagement, legal client, task, dated instructions, handover, file access and remuneration/conflict controls. Corporate identity does not establish the case mandate.",
+        "closure_es": "Encargo aceptado, cliente jurídico, tarea, instrucciones fechadas, traspaso, acceso y controles de remuneración/conflicto. La identidad societaria no acredita el mandato del asunto.",
+        "obligation_id": "PD-GAP-UCF-013/CR/mandate_handover",
+        "status": "OPEN_SOURCE_REQUIRED",
+        "record_state": "REGISTERED_AND_LINKED",
+        "merits_closed": false,
+        "source_control": "assets/data/la-laguna-proceeding-pages-v1.json"
       },
       {
         "key": "single_satisfaction",
-        "requirement": "Invoice, note, judgment, interest, costs, payment and realization reconciliation for each legally distinct obligor."
+        "gap_id": "PD-GAP-UCF-013",
+        "title_en": "Separate claims and single satisfaction",
+        "title_es": "Reclamaciones separadas y satisfacción única",
+        "priority": "P1",
+        "custodian_en": "Each creditor/obligor; accounts custodian; civil court",
+        "custodian_es": "Cada acreedor/obligado; custodio contable; órgano civil",
+        "closure_en": "Map each invoice/work item, note and authority to its obligor, claim, judgment, enforcement, interest/costs, payment/realization credit and residual. Confirm both dockets; a matching sum is a locator, not proof of duplication.",
+        "closure_es": "Vincular factura/trabajo, pagaré y poder con obligado, demanda, sentencia, ejecución, intereses/costas, pago/abono de realización y saldo. Confirmar ambos expedientes; coincidir en importe no prueba duplicidad.",
+        "obligation_id": "PD-GAP-UCF-013/CR/single_satisfaction",
+        "status": "OPEN_SOURCE_REQUIRED",
+        "record_state": "REGISTERED_AND_LINKED",
+        "merits_closed": false,
+        "source_control": "assets/data/la-laguna-proceeding-pages-v1.json"
       },
       {
         "key": "property_identity",
-        "requirement": "Certified title and independent physical, cadastral and registry crosswalk; finca 8584 remains distinct from 8588."
+        "gap_id": "PD-GAP-UCF-011",
+        "title_en": "Property, rights and estate boundaries",
+        "title_es": "Inmueble, derechos y límites de la masa",
+        "priority": "P1",
+        "custodian_en": "Registry; notary; court; owner; independent surveyor/valuer",
+        "custodian_es": "Registro; notaría; juzgado; propietario; técnico/tasador independiente",
+        "closure_en": "Certified history and physical/cadastral/registry crosswalk for each lot and right, possession, valuation and use. Keep fincas 8584/8588 and LPB/Matkator/third-party rights separate.",
+        "closure_es": "Historial certificado y correspondencia física/catastral/registral por lote y derecho, posesión, valoración y uso. Separar fincas 8584/8588 y derechos LPB/Matkator/terceros.",
+        "obligation_id": "PD-GAP-UCF-011/CR/property_identity",
+        "status": "OPEN_SOURCE_REQUIRED",
+        "record_state": "REGISTERED_AND_LINKED",
+        "merits_closed": false,
+        "source_control": "assets/data/la-laguna-proceeding-pages-v1.json"
       },
       {
         "key": "beneficiary",
-        "requirement": "Actual assignment or negotiations, price, funder, instructions and economic beneficiary; no buyer inferred from association."
+        "gap_id": "PD-GAP-UCF-011",
+        "title_en": "Actual transfer, price and beneficiary",
+        "title_es": "Transmisión, precio y beneficiario efectivos",
+        "priority": "P1",
+        "custodian_en": "Court; identified assignor/assignee; notary/Registry; payment custodian",
+        "custodian_es": "Juzgado; cedente/cesionario identificado; notaría/Registro; custodio de pagos",
+        "closure_en": "Actual negotiation/assignment instrument, order, price, funding, acceptance, registration/possession and debtor credit. Preserve the possibility that no transfer occurred.",
+        "closure_es": "Instrumento real de negociación/cesión, resolución, precio, financiación, aceptación, inscripción/posesión y abono al deudor. Preservar la posibilidad de que no hubiera transmisión.",
+        "obligation_id": "PD-GAP-UCF-011/CR/beneficiary",
+        "status": "OPEN_SOURCE_REQUIRED",
+        "record_state": "REGISTERED_AND_LINKED",
+        "merits_closed": false,
+        "source_control": "assets/data/la-laguna-proceeding-pages-v1.json"
       },
       {
         "key": "duty_and_loss",
-        "requirement": "Specific duty, available protective step, breach, counterfactual, causation and claimant-specific remedy; avoid duplicate damages."
+        "gap_id": "PD-GAP-UCF-013",
+        "title_en": "Individual duty, counterfactual and loss",
+        "title_es": "Deber individual, contrafactual y daño",
+        "priority": "P1",
+        "custodian_en": "Engagement parties; professionals; independent accounting/valuation evidence",
+        "custodian_es": "Partes del encargo; profesionales; prueba contable/tasadora independiente",
+        "closure_en": "Actor, dated capacity, accepted task, available protective step, performance/breach, causation, claimant-specific loss and strongest lawful alternative. Avoid duplicate damages and automatic whole-hotel valuation.",
+        "closure_es": "Actor, capacidad fechada, tarea aceptada, protección disponible, cumplimiento/incumplimiento, causalidad, daño de cada reclamante y mejor explicación lícita. Evitar daños duplicados o valor automático de todo el hotel.",
+        "obligation_id": "PD-GAP-UCF-013/CR/duty_and_loss",
+        "status": "OPEN_SOURCE_REQUIRED",
+        "record_state": "REGISTERED_AND_LINKED",
+        "merits_closed": false,
+        "source_control": "assets/data/la-laguna-proceeding-pages-v1.json"
       },
       {
         "key": "wider_connection",
-        "requirement": "A transaction- and actor-specific evidential link before extending attribution to other firms, regulated entities, public authorities or later beneficiaries."
+        "gap_id": "PD-GAP-UCF-009",
+        "title_en": "Connection to wider control and funding",
+        "title_es": "Conexión con control y financiación más amplios",
+        "priority": "P2",
+        "custodian_en": "Relevant court/administrator; transaction parties; financiers; programme authorities",
+        "custodian_es": "Juzgado/AC pertinente; partes; financiadores; órganos del programa",
+        "closure_en": "Exact transmitted instrument, accepted mandate, instruction/payment or decision-use link for each claimed connection. Preserve developed-rescue, historical-credit and known-response corrections; do not transfer intent through association.",
+        "closure_es": "Instrumento transmitido exacto, mandato aceptado, instrucción/pago o uso decisorio por conexión. Conservar correcciones sobre rescate desarrollado, crédito histórico y respuesta conocida; no transmitir dolo por asociación.",
+        "obligation_id": "PD-GAP-UCF-009/CR/wider_connection",
+        "status": "OPEN_SOURCE_REQUIRED",
+        "record_state": "REGISTERED_AND_LINKED",
+        "merits_closed": false,
+        "source_control": "assets/data/la-laguna-proceeding-pages-v1.json"
       }
     ],
-    "no_external_action": true
+    "no_external_action": true,
+    "identity_update": {
+      "id": "PD-SP-O-0084",
+      "corporate_identity": "CARET_CONFIRMED",
+      "case_role": "OPEN_SOURCE_REQUIRED",
+      "source_refs": [
+        "BORME-A-2021-152-08:376093",
+        "BORME-A-2026-96-08:242206"
+      ]
+    }
+  },
+  "continuity_closure": {
+    "control_id": "PD-CR-CONTINUITY-20260905-01",
+    "review_date": "2026-09-05",
+    "scope": "THIS_THREAD_REVIEW_CONTROLS_AND_PUBLICATION_GAPS_NOT_ENTIRE_REPOSITORY",
+    "source_base": "090a678ad53cd9216e673b0cfc643cd084e5286c",
+    "sources": [
+      {
+        "id": "BORME-A-2021-152-08:376093",
+        "url": "https://www.boe.es/diario_borme/txt.php?id=BORME-A-2021-152-08",
+        "issuer": "AEBOE / Registro Mercantil de Barcelona",
+        "record": "B566926 / inscription 1",
+        "registration_date": "2021-07-30",
+        "commencement_date": "2021-04-19",
+        "class": "DOC",
+        "proves": "RAUDA ALSP S.L.P. corporate identity; original sole professional shareholder and sole administrator recorded as CUATRECASAS GONCALVES PEREIRA SLP.",
+        "does_not_prove": "Current ownership, precise 2022 mandate, debt ownership, acquisition or wrongdoing."
+      },
+      {
+        "id": "BORME-A-2026-96-08:242206",
+        "url": "https://www.boe.es/diario_borme/txt.php?id=BORME-A-2026-96-08",
+        "issuer": "AEBOE / Registro Mercantil de Barcelona",
+        "record": "B566926 / inscription 6",
+        "registration_date": "2026-05-14",
+        "class": "DOC",
+        "proves": "Later RAUDA ALSP S.L.P. entry on the same registry sheet, concerning representation of the corporate administrator.",
+        "does_not_prove": "Complete current company extract, matter-specific act, client status, debt ownership or liability."
+      }
+    ],
+    "review_controls": [
+      {
+        "review_key": "PD-CR-20260905-01-C01",
+        "title_en": "Source baseline",
+        "title_es": "Base de fuentes",
+        "obligation_key": "current_status",
+        "record_state": "RECONCILED_TO_CANONICAL_CONTROL",
+        "source_class": "PRIVATE_REVIEW_CONTROL_NOT_A_NEW_PRIMARY_EVENT",
+        "publication": "MINIMIZED_CONTROL_LABEL_ONLY_PRIVATE_SOURCE_CUSTODY_RETAINED",
+        "proposition_status": "NOT_UPGRADED_BY_REGISTRATION"
+      },
+      {
+        "review_key": "PD-CR-20260905-01-C02",
+        "title_en": "Historical mandate and billing",
+        "title_es": "Mandato y facturación históricos",
+        "obligation_key": "mandate_handover",
+        "record_state": "RECONCILED_TO_CANONICAL_CONTROL",
+        "source_class": "PRIVATE_REVIEW_CONTROL_NOT_A_NEW_PRIMARY_EVENT",
+        "publication": "MINIMIZED_CONTROL_LABEL_ONLY_PRIVATE_SOURCE_CUSTODY_RETAINED",
+        "proposition_status": "NOT_UPGRADED_BY_REGISTRATION"
+      },
+      {
+        "review_key": "PD-CR-20260905-01-C03",
+        "title_en": "Actual work and advice",
+        "title_es": "Trabajo y asesoramiento realizados",
+        "obligation_key": "duty_and_loss",
+        "record_state": "RECONCILED_TO_CANONICAL_CONTROL",
+        "source_class": "PRIVATE_REVIEW_CONTROL_NOT_A_NEW_PRIMARY_EVENT",
+        "publication": "MINIMIZED_CONTROL_LABEL_ONLY_PRIVATE_SOURCE_CUSTODY_RETAINED",
+        "proposition_status": "NOT_UPGRADED_BY_REGISTRATION"
+      },
+      {
+        "review_key": "PD-CR-20260905-01-C04",
+        "title_en": "Rescue development versus completion",
+        "title_es": "Desarrollo del rescate frente a consumación",
+        "obligation_key": "duty_and_loss",
+        "record_state": "RECONCILED_TO_CANONICAL_CONTROL",
+        "source_class": "PRIVATE_REVIEW_CONTROL_NOT_A_NEW_PRIMARY_EVENT",
+        "publication": "MINIMIZED_CONTROL_LABEL_ONLY_PRIVATE_SOURCE_CUSTODY_RETAINED",
+        "proposition_status": "NOT_UPGRADED_BY_REGISTRATION"
+      },
+      {
+        "review_key": "PD-CR-20260905-01-C05",
+        "title_en": "Disclosed recovery involvement",
+        "title_es": "Intervención de recobro comunicada",
+        "obligation_key": "mandate_handover",
+        "record_state": "RECONCILED_TO_CANONICAL_CONTROL",
+        "source_class": "PRIVATE_REVIEW_CONTROL_NOT_A_NEW_PRIMARY_EVENT",
+        "publication": "MINIMIZED_CONTROL_LABEL_ONLY_PRIVATE_SOURCE_CUSTODY_RETAINED",
+        "proposition_status": "NOT_UPGRADED_BY_REGISTRATION"
+      },
+      {
+        "review_key": "PD-CR-20260905-01-C06",
+        "title_en": "Itemization referral",
+        "title_es": "Remisión de la petición de desglose",
+        "obligation_key": "single_satisfaction",
+        "record_state": "RECONCILED_TO_CANONICAL_CONTROL",
+        "source_class": "PRIVATE_REVIEW_CONTROL_NOT_A_NEW_PRIMARY_EVENT",
+        "publication": "MINIMIZED_CONTROL_LABEL_ONLY_PRIVATE_SOURCE_CUSTODY_RETAINED",
+        "proposition_status": "NOT_UPGRADED_BY_REGISTRATION"
+      },
+      {
+        "review_key": "PD-CR-20260905-01-C07",
+        "title_en": "Two claims kept distinct",
+        "title_es": "Dos reclamaciones diferenciadas",
+        "obligation_key": "single_satisfaction",
+        "record_state": "RECONCILED_TO_CANONICAL_CONTROL",
+        "source_class": "PRIVATE_REVIEW_CONTROL_NOT_A_NEW_PRIMARY_EVENT",
+        "publication": "MINIMIZED_CONTROL_LABEL_ONLY_PRIVATE_SOURCE_CUSTODY_RETAINED",
+        "proposition_status": "NOT_UPGRADED_BY_REGISTRATION"
+      },
+      {
+        "review_key": "PD-CR-20260905-01-C08",
+        "title_en": "Invoice and instrument reconciliation",
+        "title_es": "Conciliación de facturas e instrumentos",
+        "obligation_key": "single_satisfaction",
+        "record_state": "RECONCILED_TO_CANONICAL_CONTROL",
+        "source_class": "PRIVATE_REVIEW_CONTROL_NOT_A_NEW_PRIMARY_EVENT",
+        "publication": "MINIMIZED_CONTROL_LABEL_ONLY_PRIVATE_SOURCE_CUSTODY_RETAINED",
+        "proposition_status": "NOT_UPGRADED_BY_REGISTRATION"
+      },
+      {
+        "review_key": "PD-CR-20260905-01-C09",
+        "title_en": "Petition versus completed transfer",
+        "title_es": "Petición frente a transmisión consumada",
+        "obligation_key": "current_status",
+        "record_state": "RECONCILED_TO_CANONICAL_CONTROL",
+        "source_class": "PRIVATE_REVIEW_CONTROL_NOT_A_NEW_PRIMARY_EVENT",
+        "publication": "MINIMIZED_CONTROL_LABEL_ONLY_PRIVATE_SOURCE_CUSTODY_RETAINED",
+        "proposition_status": "NOT_UPGRADED_BY_REGISTRATION"
+      },
+      {
+        "review_key": "PD-CR-20260905-01-C10",
+        "title_en": "Authorship versus authentication",
+        "title_es": "Autoría frente a autenticación",
+        "obligation_key": "current_status",
+        "record_state": "RECONCILED_TO_CANONICAL_CONTROL",
+        "source_class": "PRIVATE_REVIEW_CONTROL_NOT_A_NEW_PRIMARY_EVENT",
+        "publication": "MINIMIZED_CONTROL_LABEL_ONLY_PRIVATE_SOURCE_CUSTODY_RETAINED",
+        "proposition_status": "NOT_UPGRADED_BY_REGISTRATION"
+      },
+      {
+        "review_key": "PD-CR-20260905-01-C11",
+        "title_en": "Separate property identifiers",
+        "title_es": "Identificadores inmobiliarios separados",
+        "obligation_key": "property_identity",
+        "record_state": "RECONCILED_TO_CANONICAL_CONTROL",
+        "source_class": "PRIVATE_REVIEW_CONTROL_NOT_A_NEW_PRIMARY_EVENT",
+        "publication": "MINIMIZED_CONTROL_LABEL_ONLY_PRIVATE_SOURCE_CUSTODY_RETAINED",
+        "proposition_status": "NOT_UPGRADED_BY_REGISTRATION"
+      },
+      {
+        "review_key": "PD-CR-20260905-01-C12",
+        "title_en": "Provisional dismissal retained",
+        "title_es": "Sobreseimiento provisional preservado",
+        "obligation_key": "current_status",
+        "record_state": "RECONCILED_TO_CANONICAL_CONTROL",
+        "source_class": "PRIVATE_REVIEW_CONTROL_NOT_A_NEW_PRIMARY_EVENT",
+        "publication": "MINIMIZED_CONTROL_LABEL_ONLY_PRIVATE_SOURCE_CUSTODY_RETAINED",
+        "proposition_status": "NOT_UPGRADED_BY_REGISTRATION"
+      },
+      {
+        "review_key": "PD-CR-20260905-01-C13",
+        "title_en": "Notification and time limits",
+        "title_es": "Notificación y plazos",
+        "obligation_key": "current_status",
+        "record_state": "RECONCILED_TO_CANONICAL_CONTROL",
+        "source_class": "PRIVATE_REVIEW_CONTROL_NOT_A_NEW_PRIMARY_EVENT",
+        "publication": "MINIMIZED_CONTROL_LABEL_ONLY_PRIVATE_SOURCE_CUSTODY_RETAINED",
+        "proposition_status": "NOT_UPGRADED_BY_REGISTRATION"
+      },
+      {
+        "review_key": "PD-CR-20260905-01-C14",
+        "title_en": "Chronology and knowledge test",
+        "title_es": "Test de cronología y conocimiento",
+        "obligation_key": "current_status",
+        "record_state": "RECONCILED_TO_CANONICAL_CONTROL",
+        "source_class": "PRIVATE_REVIEW_CONTROL_NOT_A_NEW_PRIMARY_EVENT",
+        "publication": "MINIMIZED_CONTROL_LABEL_ONLY_PRIVATE_SOURCE_CUSTODY_RETAINED",
+        "proposition_status": "NOT_UPGRADED_BY_REGISTRATION"
+      },
+      {
+        "review_key": "PD-CR-20260905-01-C15",
+        "title_en": "Actual cessionary requires evidence",
+        "title_es": "El cesionario real exige prueba",
+        "obligation_key": "beneficiary",
+        "record_state": "RECONCILED_TO_CANONICAL_CONTROL",
+        "source_class": "PRIVATE_REVIEW_CONTROL_NOT_A_NEW_PRIMARY_EVENT",
+        "publication": "MINIMIZED_CONTROL_LABEL_ONLY_PRIVATE_SOURCE_CUSTODY_RETAINED",
+        "proposition_status": "NOT_UPGRADED_BY_REGISTRATION"
+      },
+      {
+        "review_key": "PD-CR-20260905-01-C16",
+        "title_en": "Money-judgment countercase",
+        "title_es": "Posición contraria basada en sentencia dineraria",
+        "obligation_key": "single_satisfaction",
+        "record_state": "RECONCILED_TO_CANONICAL_CONTROL",
+        "source_class": "PRIVATE_REVIEW_CONTROL_NOT_A_NEW_PRIMARY_EVENT",
+        "publication": "MINIMIZED_CONTROL_LABEL_ONLY_PRIVATE_SOURCE_CUSTODY_RETAINED",
+        "proposition_status": "NOT_UPGRADED_BY_REGISTRATION"
+      },
+      {
+        "review_key": "PD-CR-20260905-01-C17",
+        "title_en": "Physical and legal property identity",
+        "title_es": "Identidad física y jurídica del inmueble",
+        "obligation_key": "property_identity",
+        "record_state": "RECONCILED_TO_CANONICAL_CONTROL",
+        "source_class": "PRIVATE_REVIEW_CONTROL_NOT_A_NEW_PRIMARY_EVENT",
+        "publication": "MINIMIZED_CONTROL_LABEL_ONLY_PRIVATE_SOURCE_CUSTODY_RETAINED",
+        "proposition_status": "NOT_UPGRADED_BY_REGISTRATION"
+      },
+      {
+        "review_key": "PD-CR-20260905-01-C18",
+        "title_en": "Court knowledge of disputed facts",
+        "title_es": "Conocimiento judicial de los hechos discutidos",
+        "obligation_key": "current_status",
+        "record_state": "RECONCILED_TO_CANONICAL_CONTROL",
+        "source_class": "PRIVATE_REVIEW_CONTROL_NOT_A_NEW_PRIMARY_EVENT",
+        "publication": "MINIMIZED_CONTROL_LABEL_ONLY_PRIVATE_SOURCE_CUSTODY_RETAINED",
+        "proposition_status": "NOT_UPGRADED_BY_REGISTRATION"
+      },
+      {
+        "review_key": "PD-CR-20260905-01-C19",
+        "title_en": "Complaint chronology source check",
+        "title_es": "Fuentes de cronología de denuncias",
+        "obligation_key": "current_status",
+        "record_state": "RECONCILED_TO_CANONICAL_CONTROL",
+        "source_class": "PRIVATE_REVIEW_CONTROL_NOT_A_NEW_PRIMARY_EVENT",
+        "publication": "MINIMIZED_CONTROL_LABEL_ONLY_PRIVATE_SOURCE_CUSTODY_RETAINED",
+        "proposition_status": "NOT_UPGRADED_BY_REGISTRATION"
+      },
+      {
+        "review_key": "PD-CR-20260905-01-C20",
+        "title_en": "Later acts and limitation periods",
+        "title_es": "Actos posteriores y prescripción",
+        "obligation_key": "current_status",
+        "record_state": "RECONCILED_TO_CANONICAL_CONTROL",
+        "source_class": "PRIVATE_REVIEW_CONTROL_NOT_A_NEW_PRIMARY_EVENT",
+        "publication": "MINIMIZED_CONTROL_LABEL_ONLY_PRIVATE_SOURCE_CUSTODY_RETAINED",
+        "proposition_status": "NOT_UPGRADED_BY_REGISTRATION"
+      },
+      {
+        "review_key": "PD-CR-20260905-01-C21",
+        "title_en": "Exact client and company perimeter",
+        "title_es": "Perímetro exacto de clientes y sociedades",
+        "obligation_key": "mandate_handover",
+        "record_state": "RECONCILED_TO_CANONICAL_CONTROL",
+        "source_class": "PRIVATE_REVIEW_CONTROL_NOT_A_NEW_PRIMARY_EVENT",
+        "publication": "MINIMIZED_CONTROL_LABEL_ONLY_PRIVATE_SOURCE_CUSTODY_RETAINED",
+        "proposition_status": "NOT_UPGRADED_BY_REGISTRATION"
+      },
+      {
+        "review_key": "PD-CR-20260905-01-C22",
+        "title_en": "Lawful recovery alternative",
+        "title_es": "Explicación alternativa de recobro lícito",
+        "obligation_key": "single_satisfaction",
+        "record_state": "RECONCILED_TO_CANONICAL_CONTROL",
+        "source_class": "PRIVATE_REVIEW_CONTROL_NOT_A_NEW_PRIMARY_EVENT",
+        "publication": "MINIMIZED_CONTROL_LABEL_ONLY_PRIVATE_SOURCE_CUSTODY_RETAINED",
+        "proposition_status": "NOT_UPGRADED_BY_REGISTRATION"
+      },
+      {
+        "review_key": "PD-CR-20260905-01-C23",
+        "title_en": "Access, disclosure and information use",
+        "title_es": "Acceso, revelación y uso de información",
+        "obligation_key": "mandate_handover",
+        "record_state": "RECONCILED_TO_CANONICAL_CONTROL",
+        "source_class": "PRIVATE_REVIEW_CONTROL_NOT_A_NEW_PRIMARY_EVENT",
+        "publication": "MINIMIZED_CONTROL_LABEL_ONLY_PRIVATE_SOURCE_CUSTODY_RETAINED",
+        "proposition_status": "NOT_UPGRADED_BY_REGISTRATION"
+      },
+      {
+        "review_key": "PD-CR-20260905-01-C24",
+        "title_en": "Separate professional offence tests",
+        "title_es": "Requisitos penales profesionales diferenciados",
+        "obligation_key": "duty_and_loss",
+        "record_state": "RECONCILED_TO_CANONICAL_CONTROL",
+        "source_class": "PRIVATE_REVIEW_CONTROL_NOT_A_NEW_PRIMARY_EVENT",
+        "publication": "MINIMIZED_CONTROL_LABEL_ONLY_PRIVATE_SOURCE_CUSTODY_RETAINED",
+        "proposition_status": "NOT_UPGRADED_BY_REGISTRATION"
+      },
+      {
+        "review_key": "PD-CR-20260905-01-C25",
+        "title_en": "Claimant-specific wider loss",
+        "title_es": "Daño propio de cada reclamante",
+        "obligation_key": "duty_and_loss",
+        "record_state": "RECONCILED_TO_CANONICAL_CONTROL",
+        "source_class": "PRIVATE_REVIEW_CONTROL_NOT_A_NEW_PRIMARY_EVENT",
+        "publication": "MINIMIZED_CONTROL_LABEL_ONLY_PRIVATE_SOURCE_CUSTODY_RETAINED",
+        "proposition_status": "NOT_UPGRADED_BY_REGISTRATION"
+      },
+      {
+        "review_key": "PD-CR-20260905-01-C26",
+        "title_en": "No automatic enforcement stay",
+        "title_es": "Ausencia de suspensión automática",
+        "obligation_key": "current_status",
+        "record_state": "RECONCILED_TO_CANONICAL_CONTROL",
+        "source_class": "PRIVATE_REVIEW_CONTROL_NOT_A_NEW_PRIMARY_EVENT",
+        "publication": "MINIMIZED_CONTROL_LABEL_ONLY_PRIVATE_SOURCE_CUSTODY_RETAINED",
+        "proposition_status": "NOT_UPGRADED_BY_REGISTRATION"
+      },
+      {
+        "review_key": "PD-CR-20260905-01-C27",
+        "title_en": "Property disclosure and current orders",
+        "title_es": "Información inmobiliaria y resoluciones actuales",
+        "obligation_key": "property_identity",
+        "record_state": "RECONCILED_TO_CANONICAL_CONTROL",
+        "source_class": "PRIVATE_REVIEW_CONTROL_NOT_A_NEW_PRIMARY_EVENT",
+        "publication": "MINIMIZED_CONTROL_LABEL_ONLY_PRIVATE_SOURCE_CUSTODY_RETAINED",
+        "proposition_status": "NOT_UPGRADED_BY_REGISTRATION"
+      },
+      {
+        "review_key": "PD-CR-20260905-01-C28",
+        "title_en": "Transaction-specific acquisition rules",
+        "title_es": "Reglas de adquisición por operación",
+        "obligation_key": "beneficiary",
+        "record_state": "RECONCILED_TO_CANONICAL_CONTROL",
+        "source_class": "PRIVATE_REVIEW_CONTROL_NOT_A_NEW_PRIMARY_EVENT",
+        "publication": "MINIMIZED_CONTROL_LABEL_ONLY_PRIVATE_SOURCE_CUSTODY_RETAINED",
+        "proposition_status": "NOT_UPGRADED_BY_REGISTRATION"
+      },
+      {
+        "review_key": "PD-CR-20260905-01-C29",
+        "title_en": "Other advisers: actual mandates",
+        "title_es": "Otros asesores: mandatos reales",
+        "obligation_key": "wider_connection",
+        "record_state": "RECONCILED_TO_CANONICAL_CONTROL",
+        "source_class": "PRIVATE_REVIEW_CONTROL_NOT_A_NEW_PRIMARY_EVENT",
+        "publication": "MINIMIZED_CONTROL_LABEL_ONLY_PRIVATE_SOURCE_CUSTODY_RETAINED",
+        "proposition_status": "NOT_UPGRADED_BY_REGISTRATION"
+      },
+      {
+        "review_key": "PD-CR-20260905-01-C30",
+        "title_en": "Regulator-specific competence",
+        "title_es": "Competencia específica del supervisor",
+        "obligation_key": "wider_connection",
+        "record_state": "RECONCILED_TO_CANONICAL_CONTROL",
+        "source_class": "PRIVATE_REVIEW_CONTROL_NOT_A_NEW_PRIMARY_EVENT",
+        "publication": "MINIMIZED_CONTROL_LABEL_ONLY_PRIVATE_SOURCE_CUSTODY_RETAINED",
+        "proposition_status": "NOT_UPGRADED_BY_REGISTRATION"
+      },
+      {
+        "review_key": "PD-CR-20260905-01-C31",
+        "title_en": "Separate estates and owners",
+        "title_es": "Masas y propietarios separados",
+        "obligation_key": "property_identity",
+        "record_state": "RECONCILED_TO_CANONICAL_CONTROL",
+        "source_class": "PRIVATE_REVIEW_CONTROL_NOT_A_NEW_PRIMARY_EVENT",
+        "publication": "MINIMIZED_CONTROL_LABEL_ONLY_PRIVATE_SOURCE_CUSTODY_RETAINED",
+        "proposition_status": "NOT_UPGRADED_BY_REGISTRATION"
+      },
+      {
+        "review_key": "PD-CR-20260905-01-C32",
+        "title_en": "No responsibility by association",
+        "title_es": "Sin responsabilidad por asociación",
+        "obligation_key": "wider_connection",
+        "record_state": "RECONCILED_TO_CANONICAL_CONTROL",
+        "source_class": "PRIVATE_REVIEW_CONTROL_NOT_A_NEW_PRIMARY_EVENT",
+        "publication": "MINIMIZED_CONTROL_LABEL_ONLY_PRIVATE_SOURCE_CUSTODY_RETAINED",
+        "proposition_status": "NOT_UPGRADED_BY_REGISTRATION"
+      },
+      {
+        "review_key": "PD-CR-20260905-01-C33",
+        "title_en": "Public and private custody boundary",
+        "title_es": "Límite de custodia pública y privada",
+        "obligation_key": "mandate_handover",
+        "record_state": "RECONCILED_TO_CANONICAL_CONTROL",
+        "source_class": "PRIVATE_REVIEW_CONTROL_NOT_A_NEW_PRIMARY_EVENT",
+        "publication": "MINIMIZED_CONTROL_LABEL_ONLY_PRIVATE_SOURCE_CUSTODY_RETAINED",
+        "proposition_status": "NOT_UPGRADED_BY_REGISTRATION"
+      },
+      {
+        "review_key": "PD-CR-20260905-01-C34",
+        "title_en": "Legal-name succession source check",
+        "title_es": "Fuentes de sucesión de denominación social",
+        "obligation_key": "mandate_handover",
+        "record_state": "RECONCILED_TO_CANONICAL_CONTROL",
+        "source_class": "PRIVATE_REVIEW_CONTROL_NOT_A_NEW_PRIMARY_EVENT",
+        "publication": "MINIMIZED_CONTROL_LABEL_ONLY_PRIVATE_SOURCE_CUSTODY_RETAINED",
+        "proposition_status": "NOT_UPGRADED_BY_REGISTRATION"
+      },
+      {
+        "review_key": "PD-CR-20260905-01-C35",
+        "title_en": "Disciplinary status and competence",
+        "title_es": "Estado y competencia disciplinarios",
+        "obligation_key": "current_status",
+        "record_state": "RECONCILED_TO_CANONICAL_CONTROL",
+        "source_class": "PRIVATE_REVIEW_CONTROL_NOT_A_NEW_PRIMARY_EVENT",
+        "publication": "MINIMIZED_CONTROL_LABEL_ONLY_PRIVATE_SOURCE_CUSTODY_RETAINED",
+        "proposition_status": "NOT_UPGRADED_BY_REGISTRATION"
+      },
+      {
+        "review_key": "PD-CR-20260905-01-C36",
+        "title_en": "Notification is not inferred knowledge",
+        "title_es": "Notificación no es conocimiento inferido",
+        "obligation_key": "current_status",
+        "record_state": "RECONCILED_TO_CANONICAL_CONTROL",
+        "source_class": "PRIVATE_REVIEW_CONTROL_NOT_A_NEW_PRIMARY_EVENT",
+        "publication": "MINIMIZED_CONTROL_LABEL_ONLY_PRIVATE_SOURCE_CUSTODY_RETAINED",
+        "proposition_status": "NOT_UPGRADED_BY_REGISTRATION"
+      },
+      {
+        "review_key": "PD-CR-UNITARY-20260905-01:C01",
+        "title_en": "Disclosed role versus concealed interest",
+        "title_es": "Función comunicada frente a interés oculto",
+        "obligation_key": "mandate_handover",
+        "record_state": "RECONCILED_TO_CANONICAL_CONTROL",
+        "source_class": "PRIVATE_REVIEW_CONTROL_NOT_A_NEW_PRIMARY_EVENT",
+        "publication": "MINIMIZED_CONTROL_LABEL_ONLY_PRIVATE_SOURCE_CUSTODY_RETAINED",
+        "proposition_status": "NOT_UPGRADED_BY_REGISTRATION"
+      },
+      {
+        "review_key": "PD-CR-UNITARY-20260905-01:C02",
+        "title_en": "Later affirmative procedural act",
+        "title_es": "Acto procesal positivo posterior",
+        "obligation_key": "current_status",
+        "record_state": "RECONCILED_TO_CANONICAL_CONTROL",
+        "source_class": "PRIVATE_REVIEW_CONTROL_NOT_A_NEW_PRIMARY_EVENT",
+        "publication": "MINIMIZED_CONTROL_LABEL_ONLY_PRIVATE_SOURCE_CUSTODY_RETAINED",
+        "proposition_status": "NOT_UPGRADED_BY_REGISTRATION"
+      },
+      {
+        "review_key": "PD-CR-UNITARY-20260905-01:C03",
+        "title_en": "Claim-by-claim docket allocation",
+        "title_es": "Expediente por reclamación",
+        "obligation_key": "single_satisfaction",
+        "record_state": "RECONCILED_TO_CANONICAL_CONTROL",
+        "source_class": "PRIVATE_REVIEW_CONTROL_NOT_A_NEW_PRIMARY_EVENT",
+        "publication": "MINIMIZED_CONTROL_LABEL_ONLY_PRIVATE_SOURCE_CUSTODY_RETAINED",
+        "proposition_status": "NOT_UPGRADED_BY_REGISTRATION"
+      },
+      {
+        "review_key": "PD-CR-UNITARY-20260905-01:C04",
+        "title_en": "Attempted communication versus delivery",
+        "title_es": "Intento de comunicación frente a entrega",
+        "obligation_key": "current_status",
+        "record_state": "RECONCILED_TO_CANONICAL_CONTROL",
+        "source_class": "PRIVATE_REVIEW_CONTROL_NOT_A_NEW_PRIMARY_EVENT",
+        "publication": "MINIMIZED_CONTROL_LABEL_ONLY_PRIVATE_SOURCE_CUSTODY_RETAINED",
+        "proposition_status": "NOT_UPGRADED_BY_REGISTRATION"
+      },
+      {
+        "review_key": "PD-CR-UNITARY-20260905-01:C05",
+        "title_en": "Recovery demand: finite search limits",
+        "title_es": "Requerimiento de cobro: límites de búsqueda",
+        "obligation_key": "single_satisfaction",
+        "record_state": "RECONCILED_TO_CANONICAL_CONTROL",
+        "source_class": "PRIVATE_REVIEW_CONTROL_NOT_A_NEW_PRIMARY_EVENT",
+        "publication": "MINIMIZED_CONTROL_LABEL_ONLY_PRIVATE_SOURCE_CUSTODY_RETAINED",
+        "proposition_status": "NOT_UPGRADED_BY_REGISTRATION"
+      },
+      {
+        "review_key": "PD-CR-UNITARY-20260905-01:C06",
+        "title_en": "Invoice recipient versus instrument obligor",
+        "title_es": "Destinatario de factura frente a obligado cambiario",
+        "obligation_key": "single_satisfaction",
+        "record_state": "RECONCILED_TO_CANONICAL_CONTROL",
+        "source_class": "PRIVATE_REVIEW_CONTROL_NOT_A_NEW_PRIMARY_EVENT",
+        "publication": "MINIMIZED_CONTROL_LABEL_ONLY_PRIVATE_SOURCE_CUSTODY_RETAINED",
+        "proposition_status": "NOT_UPGRADED_BY_REGISTRATION"
+      },
+      {
+        "review_key": "PD-CR-UNITARY-20260905-01:C07",
+        "title_en": "Reservation versus completed assignment",
+        "title_es": "Reserva frente a cesión consumada",
+        "obligation_key": "beneficiary",
+        "record_state": "RECONCILED_TO_CANONICAL_CONTROL",
+        "source_class": "PRIVATE_REVIEW_CONTROL_NOT_A_NEW_PRIMARY_EVENT",
+        "publication": "MINIMIZED_CONTROL_LABEL_ONLY_PRIVATE_SOURCE_CUSTODY_RETAINED",
+        "proposition_status": "NOT_UPGRADED_BY_REGISTRATION"
+      },
+      {
+        "review_key": "PD-CR-UNITARY-20260905-01:C08",
+        "title_en": "Discrepancy versus knowing deception",
+        "title_es": "Discrepancia frente a engaño consciente",
+        "obligation_key": "current_status",
+        "record_state": "RECONCILED_TO_CANONICAL_CONTROL",
+        "source_class": "PRIVATE_REVIEW_CONTROL_NOT_A_NEW_PRIMARY_EVENT",
+        "publication": "MINIMIZED_CONTROL_LABEL_ONLY_PRIVATE_SOURCE_CUSTODY_RETAINED",
+        "proposition_status": "NOT_UPGRADED_BY_REGISTRATION"
+      },
+      {
+        "review_key": "PD-CR-UNITARY-20260905-01:C09",
+        "title_en": "Do not erase work already performed",
+        "title_es": "No borrar el trabajo realizado",
+        "obligation_key": "duty_and_loss",
+        "record_state": "RECONCILED_TO_CANONICAL_CONTROL",
+        "source_class": "PRIVATE_REVIEW_CONTROL_NOT_A_NEW_PRIMARY_EVENT",
+        "publication": "MINIMIZED_CONTROL_LABEL_ONLY_PRIVATE_SOURCE_CUSTODY_RETAINED",
+        "proposition_status": "NOT_UPGRADED_BY_REGISTRATION"
+      },
+      {
+        "review_key": "PD-CR-UNITARY-20260905-01:C10",
+        "title_en": "Modification versus creditor succession",
+        "title_es": "Modificación frente a sucesión del acreedor",
+        "obligation_key": "wider_connection",
+        "record_state": "RECONCILED_TO_CANONICAL_CONTROL",
+        "source_class": "PRIVATE_REVIEW_CONTROL_NOT_A_NEW_PRIMARY_EVENT",
+        "publication": "MINIMIZED_CONTROL_LABEL_ONLY_PRIVATE_SOURCE_CUSTODY_RETAINED",
+        "proposition_status": "NOT_UPGRADED_BY_REGISTRATION"
+      },
+      {
+        "review_key": "PD-CR-UNITARY-20260905-01:C11",
+        "title_en": "Judicial amount source versus legal function",
+        "title_es": "Fuente judicial del importe frente a función jurídica",
+        "obligation_key": "wider_connection",
+        "record_state": "RECONCILED_TO_CANONICAL_CONTROL",
+        "source_class": "PRIVATE_REVIEW_CONTROL_NOT_A_NEW_PRIMARY_EVENT",
+        "publication": "MINIMIZED_CONTROL_LABEL_ONLY_PRIVATE_SOURCE_CUSTODY_RETAINED",
+        "proposition_status": "NOT_UPGRADED_BY_REGISTRATION"
+      },
+      {
+        "review_key": "PD-CR-UNITARY-20260905-01:C12",
+        "title_en": "Known response versus missing content",
+        "title_es": "Respuesta conocida frente a contenido no localizado",
+        "obligation_key": "wider_connection",
+        "record_state": "RECONCILED_TO_CANONICAL_CONTROL",
+        "source_class": "PRIVATE_REVIEW_CONTROL_NOT_A_NEW_PRIMARY_EVENT",
+        "publication": "MINIMIZED_CONTROL_LABEL_ONLY_PRIVATE_SOURCE_CUSTODY_RETAINED",
+        "proposition_status": "NOT_UPGRADED_BY_REGISTRATION"
+      },
+      {
+        "review_key": "PD-CR-UNITARY-20260905-01:C13",
+        "title_en": "Developed rescue and causal attribution",
+        "title_es": "Rescate desarrollado y atribución causal",
+        "obligation_key": "duty_and_loss",
+        "record_state": "RECONCILED_TO_CANONICAL_CONTROL",
+        "source_class": "PRIVATE_REVIEW_CONTROL_NOT_A_NEW_PRIMARY_EVENT",
+        "publication": "MINIMIZED_CONTROL_LABEL_ONLY_PRIVATE_SOURCE_CUSTODY_RETAINED",
+        "proposition_status": "NOT_UPGRADED_BY_REGISTRATION"
+      },
+      {
+        "review_key": "PD-CR-UNITARY-20260905-01:C14",
+        "title_en": "No whole-hotel estate conflation",
+        "title_es": "No confundir todo el hotel con una masa",
+        "obligation_key": "property_identity",
+        "record_state": "RECONCILED_TO_CANONICAL_CONTROL",
+        "source_class": "PRIVATE_REVIEW_CONTROL_NOT_A_NEW_PRIMARY_EVENT",
+        "publication": "MINIMIZED_CONTROL_LABEL_ONLY_PRIVATE_SOURCE_CUSTODY_RETAINED",
+        "proposition_status": "NOT_UPGRADED_BY_REGISTRATION"
+      },
+      {
+        "review_key": "PD-CR-UNITARY-20260905-01:C15",
+        "title_en": "Exact court and proceeding",
+        "title_es": "Órgano y procedimiento exactos",
+        "obligation_key": "current_status",
+        "record_state": "RECONCILED_TO_CANONICAL_CONTROL",
+        "source_class": "PRIVATE_REVIEW_CONTROL_NOT_A_NEW_PRIMARY_EVENT",
+        "publication": "MINIMIZED_CONTROL_LABEL_ONLY_PRIVATE_SOURCE_CUSTODY_RETAINED",
+        "proposition_status": "NOT_UPGRADED_BY_REGISTRATION"
+      },
+      {
+        "review_key": "PD-CR-UNITARY-20260905-01:C16",
+        "title_en": "Internal note is not filed appeal",
+        "title_es": "Nota interna no es recurso presentado",
+        "obligation_key": "current_status",
+        "record_state": "RECONCILED_TO_CANONICAL_CONTROL",
+        "source_class": "PRIVATE_REVIEW_CONTROL_NOT_A_NEW_PRIMARY_EVENT",
+        "publication": "MINIMIZED_CONTROL_LABEL_ONLY_PRIVATE_SOURCE_CUSTODY_RETAINED",
+        "proposition_status": "NOT_UPGRADED_BY_REGISTRATION"
+      },
+      {
+        "review_key": "PD-CR-UNITARY-20260905-01:C17",
+        "title_en": "RAUDA corporate identity and case role",
+        "title_es": "Identidad societaria y función de RAUDA",
+        "obligation_key": "mandate_handover",
+        "record_state": "RECONCILED_TO_CANONICAL_CONTROL",
+        "source_class": "PRIVATE_REVIEW_CONTROL_NOT_A_NEW_PRIMARY_EVENT",
+        "publication": "MINIMIZED_CONTROL_LABEL_ONLY_PRIVATE_SOURCE_CUSTODY_RETAINED",
+        "proposition_status": "NOT_UPGRADED_BY_REGISTRATION"
+      },
+      {
+        "review_key": "PD-CR-UNITARY-20260905-01:C18",
+        "title_en": "No collective liability inference",
+        "title_es": "Sin responsabilidad colectiva inferida",
+        "obligation_key": "wider_connection",
+        "record_state": "RECONCILED_TO_CANONICAL_CONTROL",
+        "source_class": "PRIVATE_REVIEW_CONTROL_NOT_A_NEW_PRIMARY_EVENT",
+        "publication": "MINIMIZED_CONTROL_LABEL_ONLY_PRIVATE_SOURCE_CUSTODY_RETAINED",
+        "proposition_status": "NOT_UPGRADED_BY_REGISTRATION"
+      },
+      {
+        "review_key": "PD-CR-UNITARY-20260905-01:C19",
+        "title_en": "Applicable historical procedural law",
+        "title_es": "Derecho procesal temporalmente aplicable",
+        "obligation_key": "current_status",
+        "record_state": "RECONCILED_TO_CANONICAL_CONTROL",
+        "source_class": "PRIVATE_REVIEW_CONTROL_NOT_A_NEW_PRIMARY_EVENT",
+        "publication": "MINIMIZED_CONTROL_LABEL_ONLY_PRIVATE_SOURCE_CUSTODY_RETAINED",
+        "proposition_status": "NOT_UPGRADED_BY_REGISTRATION"
+      },
+      {
+        "review_key": "PD-CR-UNITARY-20260905-01:C20",
+        "title_en": "No counsel adoption without source",
+        "title_es": "Sin atribuir adopción al letrado sin fuente",
+        "obligation_key": "duty_and_loss",
+        "record_state": "RECONCILED_TO_CANONICAL_CONTROL",
+        "source_class": "PRIVATE_REVIEW_CONTROL_NOT_A_NEW_PRIMARY_EVENT",
+        "publication": "MINIMIZED_CONTROL_LABEL_ONLY_PRIVATE_SOURCE_CUSTODY_RETAINED",
+        "proposition_status": "NOT_UPGRADED_BY_REGISTRATION"
+      },
+      {
+        "review_key": "PD-CR-UNITARY-20260905-01:C21",
+        "title_en": "Acquisition rules and exceptions",
+        "title_es": "Reglas de adquisición y excepciones",
+        "obligation_key": "beneficiary",
+        "record_state": "RECONCILED_TO_CANONICAL_CONTROL",
+        "source_class": "PRIVATE_REVIEW_CONTROL_NOT_A_NEW_PRIMARY_EVENT",
+        "publication": "MINIMIZED_CONTROL_LABEL_ONLY_PRIVATE_SOURCE_CUSTODY_RETAINED",
+        "proposition_status": "NOT_UPGRADED_BY_REGISTRATION"
+      },
+      {
+        "review_key": "PD-CR-UNITARY-20260905-01:C22",
+        "title_en": "Targeted review is not universal census",
+        "title_es": "Revisión dirigida no es censo universal",
+        "obligation_key": "current_status",
+        "record_state": "RECONCILED_TO_CANONICAL_CONTROL",
+        "source_class": "PRIVATE_REVIEW_CONTROL_NOT_A_NEW_PRIMARY_EVENT",
+        "publication": "MINIMIZED_CONTROL_LABEL_ONLY_PRIVATE_SOURCE_CUSTODY_RETAINED",
+        "proposition_status": "NOT_UPGRADED_BY_REGISTRATION"
+      }
+    ],
+    "review_control_denominator": {
+      "first_handoff": 36,
+      "second_handoff": 22,
+      "total": 58,
+      "registered": 58,
+      "new_primary_events_inferred": 0
+    },
+    "production_obligations": [
+      {
+        "key": "current_status",
+        "gap_id": "PD-GAP-UCF-015",
+        "title_en": "Current procedure, service and decisions",
+        "title_es": "Procedimiento, notificación y decisiones actuales",
+        "priority": "P0",
+        "custodian_en": "Court/LAJ records; each party’s valid service record; instructed counsel",
+        "custodian_es": "Expediente judicial/LAJ; notificación válida de cada parte; letrado encargado",
+        "closure_en": "Certified current DP/ETJ docket; exact act and receipt; service to each party; appeal processing; actual adjudication/cession if any. Separate dispatch, receipt, notice, examination and decision.",
+        "closure_es": "Expediente DP/ETJ certificado y actual; acto y justificante; notificación a cada parte; tramitación del recurso; adjudicación/cesión efectiva, si existe. Separar envío, recepción, notificación, examen y decisión.",
+        "obligation_id": "PD-GAP-UCF-015/CR/current_status",
+        "status": "OPEN_SOURCE_REQUIRED",
+        "record_state": "REGISTERED_AND_LINKED",
+        "merits_closed": false,
+        "source_control": "assets/data/la-laguna-proceeding-pages-v1.json"
+      },
+      {
+        "key": "mandate_handover",
+        "gap_id": "PD-GAP-UCF-013",
+        "title_en": "Mandates, recovery handover and information",
+        "title_es": "Mandatos, traspaso al recobro e información",
+        "priority": "P1",
+        "custodian_en": "Engagement parties; professional firm; recovery entity; lawful file custodians",
+        "custodian_es": "Partes del encargo; despacho; entidad de recobro; custodios legítimos",
+        "closure_en": "Accepted engagement, legal client, task, dated instructions, handover, file access and remuneration/conflict controls. Corporate identity does not establish the case mandate.",
+        "closure_es": "Encargo aceptado, cliente jurídico, tarea, instrucciones fechadas, traspaso, acceso y controles de remuneración/conflicto. La identidad societaria no acredita el mandato del asunto.",
+        "obligation_id": "PD-GAP-UCF-013/CR/mandate_handover",
+        "status": "OPEN_SOURCE_REQUIRED",
+        "record_state": "REGISTERED_AND_LINKED",
+        "merits_closed": false,
+        "source_control": "assets/data/la-laguna-proceeding-pages-v1.json"
+      },
+      {
+        "key": "single_satisfaction",
+        "gap_id": "PD-GAP-UCF-013",
+        "title_en": "Separate claims and single satisfaction",
+        "title_es": "Reclamaciones separadas y satisfacción única",
+        "priority": "P1",
+        "custodian_en": "Each creditor/obligor; accounts custodian; civil court",
+        "custodian_es": "Cada acreedor/obligado; custodio contable; órgano civil",
+        "closure_en": "Map each invoice/work item, note and authority to its obligor, claim, judgment, enforcement, interest/costs, payment/realization credit and residual. Confirm both dockets; a matching sum is a locator, not proof of duplication.",
+        "closure_es": "Vincular factura/trabajo, pagaré y poder con obligado, demanda, sentencia, ejecución, intereses/costas, pago/abono de realización y saldo. Confirmar ambos expedientes; coincidir en importe no prueba duplicidad.",
+        "obligation_id": "PD-GAP-UCF-013/CR/single_satisfaction",
+        "status": "OPEN_SOURCE_REQUIRED",
+        "record_state": "REGISTERED_AND_LINKED",
+        "merits_closed": false,
+        "source_control": "assets/data/la-laguna-proceeding-pages-v1.json"
+      },
+      {
+        "key": "property_identity",
+        "gap_id": "PD-GAP-UCF-011",
+        "title_en": "Property, rights and estate boundaries",
+        "title_es": "Inmueble, derechos y límites de la masa",
+        "priority": "P1",
+        "custodian_en": "Registry; notary; court; owner; independent surveyor/valuer",
+        "custodian_es": "Registro; notaría; juzgado; propietario; técnico/tasador independiente",
+        "closure_en": "Certified history and physical/cadastral/registry crosswalk for each lot and right, possession, valuation and use. Keep fincas 8584/8588 and LPB/Matkator/third-party rights separate.",
+        "closure_es": "Historial certificado y correspondencia física/catastral/registral por lote y derecho, posesión, valoración y uso. Separar fincas 8584/8588 y derechos LPB/Matkator/terceros.",
+        "obligation_id": "PD-GAP-UCF-011/CR/property_identity",
+        "status": "OPEN_SOURCE_REQUIRED",
+        "record_state": "REGISTERED_AND_LINKED",
+        "merits_closed": false,
+        "source_control": "assets/data/la-laguna-proceeding-pages-v1.json"
+      },
+      {
+        "key": "beneficiary",
+        "gap_id": "PD-GAP-UCF-011",
+        "title_en": "Actual transfer, price and beneficiary",
+        "title_es": "Transmisión, precio y beneficiario efectivos",
+        "priority": "P1",
+        "custodian_en": "Court; identified assignor/assignee; notary/Registry; payment custodian",
+        "custodian_es": "Juzgado; cedente/cesionario identificado; notaría/Registro; custodio de pagos",
+        "closure_en": "Actual negotiation/assignment instrument, order, price, funding, acceptance, registration/possession and debtor credit. Preserve the possibility that no transfer occurred.",
+        "closure_es": "Instrumento real de negociación/cesión, resolución, precio, financiación, aceptación, inscripción/posesión y abono al deudor. Preservar la posibilidad de que no hubiera transmisión.",
+        "obligation_id": "PD-GAP-UCF-011/CR/beneficiary",
+        "status": "OPEN_SOURCE_REQUIRED",
+        "record_state": "REGISTERED_AND_LINKED",
+        "merits_closed": false,
+        "source_control": "assets/data/la-laguna-proceeding-pages-v1.json"
+      },
+      {
+        "key": "duty_and_loss",
+        "gap_id": "PD-GAP-UCF-013",
+        "title_en": "Individual duty, counterfactual and loss",
+        "title_es": "Deber individual, contrafactual y daño",
+        "priority": "P1",
+        "custodian_en": "Engagement parties; professionals; independent accounting/valuation evidence",
+        "custodian_es": "Partes del encargo; profesionales; prueba contable/tasadora independiente",
+        "closure_en": "Actor, dated capacity, accepted task, available protective step, performance/breach, causation, claimant-specific loss and strongest lawful alternative. Avoid duplicate damages and automatic whole-hotel valuation.",
+        "closure_es": "Actor, capacidad fechada, tarea aceptada, protección disponible, cumplimiento/incumplimiento, causalidad, daño de cada reclamante y mejor explicación lícita. Evitar daños duplicados o valor automático de todo el hotel.",
+        "obligation_id": "PD-GAP-UCF-013/CR/duty_and_loss",
+        "status": "OPEN_SOURCE_REQUIRED",
+        "record_state": "REGISTERED_AND_LINKED",
+        "merits_closed": false,
+        "source_control": "assets/data/la-laguna-proceeding-pages-v1.json"
+      },
+      {
+        "key": "wider_connection",
+        "gap_id": "PD-GAP-UCF-009",
+        "title_en": "Connection to wider control and funding",
+        "title_es": "Conexión con control y financiación más amplios",
+        "priority": "P2",
+        "custodian_en": "Relevant court/administrator; transaction parties; financiers; programme authorities",
+        "custodian_es": "Juzgado/AC pertinente; partes; financiadores; órganos del programa",
+        "closure_en": "Exact transmitted instrument, accepted mandate, instruction/payment or decision-use link for each claimed connection. Preserve developed-rescue, historical-credit and known-response corrections; do not transfer intent through association.",
+        "closure_es": "Instrumento transmitido exacto, mandato aceptado, instrucción/pago o uso decisorio por conexión. Conservar correcciones sobre rescate desarrollado, crédito histórico y respuesta conocida; no transmitir dolo por asociación.",
+        "obligation_id": "PD-GAP-UCF-009/CR/wider_connection",
+        "status": "OPEN_SOURCE_REQUIRED",
+        "record_state": "REGISTERED_AND_LINKED",
+        "merits_closed": false,
+        "source_control": "assets/data/la-laguna-proceeding-pages-v1.json"
+      }
+    ],
+    "source_custody": "Both handoffs and native evidence remain in the authorised private Library/source system. Re-query by package control; no private locator or original is copied into Git.",
+    "correction_rule": "Preserve private operational corrections, attempted-versus-effective communication, chronology/knowledge limits, client/obligor separation, prior work and historical-credit corrections. A held derivative is not deleted continuity or a public fact.",
+    "prior_release": {
+      "pull_request": 1465,
+      "merge_sha": "dc2a720f6ae6477df6ebddb081c4b9c48c6e729a",
+      "pages_run": 33971512322,
+      "live_run": 33971513405,
+      "verified_at": "2026-09-05T14:22:57Z",
+      "state": "LIVE_VERIFIED_FOR_ITS_SCOPE",
+      "resources": 27
+    },
+    "later_publication_lineage": {
+      "pull_request": 1464,
+      "merged_successor": "090a678ad53cd9216e673b0cfc643cd084e5286c",
+      "meaning": "Later unified release. It was preparation lineage before it subsequently merged; do not repeat the obsolete assertion it remains unmerged."
+    },
+    "paths": {
+      "es": "/es/cuatrecasas-sun-park/#cr-continuity-closure-20260905",
+      "en": "/en/cuatrecasas-sun-park/#cr-continuity-closure-20260905"
+    },
+    "institutional_events_count": 333,
+    "institutional_events_sha256": "73744797e02d250412580790dfb0535087777e5fd435db57c5f63bb257bcf984",
+    "original_professional_roster_sha256": "6616d686c953672b764513abe962333ea85177594005787e5366cfc6318b0db5",
+    "proof_completion_claim": false,
+    "universal_caret_claim": false,
+    "changed_files": [
+      ".github/workflows/cuatrecasas-rauda-publication.yml",
+      "CHATGPT_START_HERE.md",
+      "assets/data/community-acta-authority-interconnectivity-v1.json",
+      "assets/data/institutional-communications-register-v1.json",
+      "assets/data/la-laguna-proceeding-pages-v1.json",
+      "assets/data/matter-identity-operational-control-v1.json",
+      "assets/data/matter-identity-registry-v1.json",
+      "assets/data/matter-identity-registry-v1.organisations.json",
+      "assets/data/unitary-multitrack-criminal-first-gap-closure-v1.json",
+      "en/cuatrecasas-sun-park/index.html",
+      "en/methodology/index.html",
+      "es/cuatrecasas-sun-park/index.html",
+      "es/metodologia/index.html",
+      "ops/CUATRECASAS_RAUDA_CONTINUITY_20260905.md",
+      "ops/CUATRECASAS_RAUDA_RELEASE_20260905.json",
+      "ops/RELEASE_LEDGER.json",
+      "publication-manifests/cuatrecasas-rauda-recovery-review-20260905.json",
+      "publication-manifests/historic-proceedings-authority-reintegration-20260903.json",
+      "scripts/build_cuatrecasas_rauda_20260905.py",
+      "scripts/complete_cuatrecasas_rauda_controls_20260905.py",
+      "scripts/validate_operational_truth.py"
+    ],
+    "prechange_sha256": {
+      "assets/data/matter-identity-registry-v1.organisations.json": "a42f27c40b4699e51e9b0bc1ebcb1a759ee5dd9af1f689a87cd6115d7df956c3",
+      "assets/data/matter-identity-operational-control-v1.json": "a24336c142ee8fe9ab712b39ddad33bcbefb92d0f9b28d47dba9da16d9d22ac1",
+      "assets/data/matter-identity-registry-v1.json": "32b5fc2727888e4583193070d0b6cccaf4129f8065d69a49ad8564bbd6b2cd96",
+      "assets/data/unitary-multitrack-criminal-first-gap-closure-v1.json": "9766c4ce815e2440a907402301fb35462d9c2fd32012956d4f42c260974b0418",
+      "assets/data/institutional-communications-register-v1.json": "f397fc256cf21bde25c90945ebb67944762599ee4b02350830aae56fe5e7af82",
+      "assets/data/la-laguna-proceeding-pages-v1.json": "495deb6562c0342e1c042d67be71d6cfcb1edcd73ac5083a93399d33754eda45",
+      "es/cuatrecasas-sun-park/index.html": "62bef71b3ea8e5531d8a6fc3ad622bdebd784974af52873d4a2cc9d1a5b3d1e5",
+      "en/cuatrecasas-sun-park/index.html": "81058ca7d210c585c518982b089ac6f4f586a254d938bb745bc763c0ac9e4772",
+      "es/metodologia/index.html": null,
+      "en/methodology/index.html": null,
+      "publication-manifests/historic-proceedings-authority-reintegration-20260903.json": "0e70812d814e6d98bf39ad21e786c57a50b2c9794a778d67095d810ca0ac7254",
+      "publication-manifests/cuatrecasas-rauda-recovery-review-20260905.json": "1a216548f59c7e080ac3c3550845a739cf3e17dc83cf16849a3096c51b50b4f0",
+      "ops/CUATRECASAS_RAUDA_RELEASE_20260905.json": "b222c6a701afa6160e8591d39ea7ce1c665562fb8ef4fb22490d8df14af899b5",
+      "scripts/build_cuatrecasas_rauda_20260905.py": "03e17a53c5119ba46c06bd83a7e40a55b976f2de377cff218d9607f16ab42f4f",
+      "scripts/complete_cuatrecasas_rauda_controls_20260905.py": "973f132734ffbf390502b0df225570837770f0251d5c7c98cf25e8d86c350717",
+      ".github/workflows/cuatrecasas-rauda-publication.yml": "ee2037e8cd81257f5b619fd827e1d75975dc8e5acc8d13761a4beb517b67b069",
+      "ops/CUATRECASAS_RAUDA_CONTINUITY_20260905.md": "8d1c3458c198e2df66ab1006188579c1822ac2877aa3c5b8e1b84843a430b2b9",
+      "CHATGPT_START_HERE.md": "97961aa4d63794d5e598c1506b401f44a9041949d3de1c856d7efec8bf93a925",
+      "ops/RELEASE_LEDGER.json": "4fd5737ab5591a79bff83efc9147a24e2e612e6ea18465abb91f6d3a3f20e453",
+      "assets/data/community-acta-authority-interconnectivity-v1.json": "f9acb8e803ad1b08dd7acc441adad2beb8769976604a8b5f1bddae6bd8e77bff",
+      "scripts/validate_operational_truth.py": "bfa1d57ba69f58b46fbceea66614be8cb82fd3a5a56517c0fdb40760f183474c"
+    },
+    "page_projections": {
+      "es": {
+        "path": "es/cuatrecasas-sun-park/index.html",
+        "panel_sha256": "e50b827ac02e0a9baa824d068c6547ff50b563416f223726d3270ba6fc7252ce"
+      },
+      "en": {
+        "path": "en/cuatrecasas-sun-park/index.html",
+        "panel_sha256": "bfd162c5bf6774b23f821247cb4abf51ea9ee17eca9a7be8732fe1355e147d19"
+      }
+    },
+    "new_routes": [
+      "es/metodologia/index.html",
+      "en/methodology/index.html"
+    ],
+    "projection_dependency_closure": {
+      "target": "assets/data/community-acta-authority-interconnectivity-v1.json",
+      "closed_dimension": "SOURCE_HASH_DRIFT_ONLY",
+      "substantive_fields_changed": [],
+      "meaning": "All graph nodes, relationships, coverage, allegations and limiting evidence remained identical. Canonical input hashes refreshed after the continuity metadata additions.",
+      "source_policy": "Recompute with the existing deterministic builder after future authorised canonical changes; never accept an unexplained substantive difference."
+    },
+    "operational_count_dependency_closure": {
+      "path": "scripts/validate_operational_truth.py",
+      "closed_dimension": "LIVE_CENSUS_VS_DATED_SNAPSHOT_AND_LEDGER_SELECTION",
+      "current_check": "Count every current identity part and immutable ID; reject duplicate IDs, duplicate parts, type mismatch and declared count drift.",
+      "historical_check": "Retain only the exact 2-Sep-2026 unpromoted identity candidate snapshot; unknown/misdated count mismatches still fail.",
+      "ledger_check": "Validate the dated production observation against ledger entries effective at that observation, retaining later appended historical receipts without relabelling old production as current.",
+      "does_not_certify": "Current host, all carets, procedural status, backup safety or the merits of any case."
+    }
   }
 }

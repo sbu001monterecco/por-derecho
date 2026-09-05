@@ -947,21 +947,53 @@
     {
       "id": "PD-SP-O-0084",
       "type": "ORGANISATION",
-      "name": "RAUDA",
+      "name": "RAUDA ALSP S.L.P.",
       "aliases": [
-        "Rauda"
+        "Rauda",
+        "RAUDA",
+        "RAUDA ALSP"
       ],
-      "status": "CONTROLLED_PERIMETER_LABEL_EXACT_ENTITY_MAY_REQUIRE_SOURCE",
-      "identity_resolution": "CARET_PENDING",
+      "identity_resolution": "CARET_CONFIRMED",
       "identity_sources": [
-        "PD-CR-COM-20220218",
-        "PD-CR-COM-20220307"
+        "BORME-A-2021-152-08:376093",
+        "BORME-A-2026-96-08:242206"
       ],
       "routes": {
         "es": "/es/cuatrecasas-sun-park/#cuatrecasas-rauda-revision-20260905",
         "en": "/en/cuatrecasas-sun-park/#cuatrecasas-rauda-revision-20260905"
       },
-      "capacity_boundary": "Source-literal professional recovery label from 2022 correspondence. Exact legal entity and legal-form history remain unverified. No original advisory mandate, ownership of the debt, purchaser identity, confidentiality misuse, group-wide knowledge or liability is inferred."
+      "capacity_boundary": "The company is identified by official BORME entries. Its exact 2022 mandate, employer/capacity, information flow, debt ownership, acquirer and liability remain source-dependent. No original client mandate is inferred.",
+      "registry_sheet": "Barcelona B566926",
+      "identity_scope": "CORPORATE_ENTITY_ONLY_NOT_EVERY_BRAND_ASSOCIATED_ACT",
+      "identity_resolution_history": [
+        {
+          "as_of": "2026-09-05",
+          "prior_record": {
+            "id": "PD-SP-O-0084",
+            "type": "ORGANISATION",
+            "name": "RAUDA",
+            "aliases": [
+              "Rauda"
+            ],
+            "status": "CONTROLLED_PERIMETER_LABEL_EXACT_ENTITY_MAY_REQUIRE_SOURCE",
+            "identity_resolution": "CARET_PENDING",
+            "identity_sources": [
+              "PD-CR-COM-20220218",
+              "PD-CR-COM-20220307"
+            ],
+            "routes": {
+              "es": "/es/cuatrecasas-sun-park/#cuatrecasas-rauda-revision-20260905",
+              "en": "/en/cuatrecasas-sun-park/#cuatrecasas-rauda-revision-20260905"
+            },
+            "capacity_boundary": "Source-literal professional recovery label from 2022 correspondence. Exact legal entity and legal-form history remain unverified. No original advisory mandate, ownership of the debt, purchaser identity, confidentiality misuse, group-wide knowledge or liability is inferred."
+          },
+          "superseded_only": "Corporate identity uncertainty; case role remains open",
+          "source_refs": [
+            "BORME-A-2021-152-08:376093",
+            "BORME-A-2026-96-08:242206"
+          ]
+        }
+      ]
     }
   ]
 }

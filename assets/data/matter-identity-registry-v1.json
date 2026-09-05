@@ -281,6 +281,11 @@
     "control_id": "PD-CR-20260905-01",
     "as_of": "2026-09-05",
     "identity_id": "PD-SP-O-0084",
-    "state": "SOURCE_LITERAL_ONLY_NO_CARET_OR_EXACT_LEGAL_ENTITY_UPGRADE"
+    "state": "CORPORATE_IDENTITY_CONFIRMED_CASE_ROLE_OPEN",
+    "superseding_control": "PD-CR-CONTINUITY-20260905-01",
+    "source_refs": [
+      "BORME-A-2021-152-08:376093",
+      "BORME-A-2026-96-08:242206"
+    ]
   }
 }

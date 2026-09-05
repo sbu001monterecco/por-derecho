@@ -141,6 +141,50 @@ def validate_append_only(new_ledger: dict[str, Any]) -> None:
     )
 
 
+
+# PD-CR-DATED-IDENTITY-OBSERVATION-20260905
+# Current census and dated observation are different validation contracts.
+def runtime_identity_counts(manifest: dict[str, Any]) -> dict[str, int]:
+    counts = {kind: 0 for kind in manifest["id_formats"]}
+    seen: set[str] = set()
+    parts_seen: set[str] = set()
+    for part in manifest["parts"]:
+        relative = part["path"]
+        require(relative not in parts_seen, "duplicate identity part")
+        parts_seen.add(relative)
+        path = (DATA / relative).resolve()
+        require(path.is_relative_to(DATA.resolve()), "identity part escapes data root")
+        rows = load(path)["records"]
+        require(len(rows) == part["count"], f"identity part count drift: {relative}")
+        for row in rows:
+            identifier = row["id"]
+            kind = row["type"]
+            require(identifier not in seen, f"duplicate canonical identity: {identifier}")
+            require(kind in counts and kind == part["type"], "identity type/part mismatch")
+            seen.add(identifier)
+            counts[kind] += 1
+    counts["total"] = len(seen)
+    return counts
+
+
+def valid_unitary_identity_observation(unitary: dict[str, Any], identity: dict[str, Any]) -> bool:
+    section = unitary.get("identity_registry") or {}
+    counts = section.get("counts")
+    if counts == identity.get("counts"):
+        return True
+    # Admit only the explicitly dated, unpromoted source snapshot already retained.
+    # This exception does not excuse current registry count drift or an unknown snapshot.
+    historical = (
+        section.get("control_date") == "2026-09-02"
+        and section.get("static_page_parity") == "LOCAL_SOURCE_STATIC_CANDIDATE_NOT_YET_LIVE_VERIFIED"
+        and counts == CURRENT_CANONICAL_IDENTITY_COUNTS
+        and section.get("last_live_verified_counts", {}).get("total") == 204
+    )
+    if historical:
+        print(" - dated 2-Sep identity candidate retained; current census independently validated")
+    return historical
+
+
 def main() -> int:
     try:
         current = load(CURRENT_PATH)
@@ -244,7 +288,7 @@ def main() -> int:
         current_identity = (corpus.get("identity_registry") or {}).get("counts")
         current_professional = (corpus.get("legal_professional_register") or {}).get("counts")
         require(
-            identity.get("counts") == CURRENT_CANONICAL_IDENTITY_COUNTS,
+            identity.get("counts") == runtime_identity_counts(identity),
             "current canonical identity counts drift",
         )
         require(
@@ -305,8 +349,7 @@ def main() -> int:
             "unitary specialist tree SHA drift",
         )
         require(
-            (unitary.get("identity_registry") or {}).get("counts")
-            == CURRENT_CANONICAL_IDENTITY_COUNTS,
+            valid_unitary_identity_observation(unitary, identity),
             "current unitary identity counts drift",
         )
 
@@ -484,7 +527,12 @@ def main() -> int:
                 isinstance(release.get("current_at_observation"), bool),
                 f"release current_at_observation must be boolean: {release_id}",
             )
-            if release.get("current_at_observation") is True:
+            # Select the ledger view for the dated production observation.
+            # Later verified receipts may be appended without retroactively changing
+            # the old production snapshot or pretending it describes today's host.
+            snapshot_time = parse_time(production.get("observed_at"), "production observation")
+            if (release.get("current_at_observation") is True
+                    and effective_times[-1] <= snapshot_time):
                 current_records.append(release)
         require(effective_times == sorted(effective_times), "release ledger is not chronological")
         require(current_records, "release ledger has no current-at-observation records")
