@@ -1,0 +1,120 @@
+name: Public browser Puzzle original import
+on:
+  push:
+    branches: [legaltech/uria-search-graph-evidence-20260904]
+    paths: [.github/workflows/puzzle-public-original-browser-import-20260905.yml]
+permissions:
+  contents: write
+jobs:
+  public_original:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          ref: legaltech/uria-search-graph-evidence-20260904
+          fetch-depth: 1
+      - run: python -m pip install --quiet playwright==1.55.0 PyMuPDF==1.26.4 Pillow==11.3.0 requests==2.32.5
+      - name: Anonymous browser download; no Microsoft account sign-in
+        shell: python
+        run: |
+          import pathlib,hashlib,json,shutil,re,urllib.parse,html,requests
+          from playwright.sync_api import sync_playwright
+          folder=pathlib.Path('/tmp/puzzle-public');folder.mkdir()
+          target=folder/'PUZZLE-2024-original.pdf'
+          expected='e441bdb368c0092d5b15ca5ee911eeac266540bde54817e424f3075f4c5fdd47'
+          share='https://1drv.ms/b/c/bdf43392f576e62f/IQCdnbR3Hj-qS4-0lXT2neQ0AbnAoVnTNFT7eNntXcc2gkI'
+          observations=[]; candidates=[]
+          def acceptable(u):
+            p=urllib.parse.urlsplit(u);h=p.hostname or ''
+            return p.scheme=='https' and (h.endswith('.1drv.com') or h.endswith('.onedrive.com') or h.endswith('.live.com') or h.endswith('.sharepoint.com'))
+          def collect(text):
+            text=html.unescape(text).replace('\\u0026','&').replace('\\/','/')
+            for match in re.findall(r'https://[^\s<>"\x27\\]+',text):
+              if acceptable(match) and ('download' in match.lower() or '.files.1drv.com' in match):
+                if match not in candidates:candidates.append(match)
+          session=requests.Session()
+          try:
+            response=session.get(share,timeout=30);collect(response.text)
+            q=urllib.parse.parse_qs(urllib.parse.urlsplit(response.url).query)
+            if q.get('authkey') and (q.get('resid') or q.get('id')):
+              candidates.append('https://onedrive.live.com/download?'+urllib.parse.urlencode({'resid':(q.get('resid') or q['id'])[0],'authkey':q['authkey'][0]}))
+          except Exception as exc:observations.append({'http_error':type(exc).__name__})
+          def try_candidates():
+            for u in candidates[:12]:
+              try:
+                with session.get(u,timeout=45,stream=True) as r:
+                  if r.status_code!=200:continue
+                  digest=hashlib.sha256();size=0
+                  with target.open('wb') as out:
+                    for block in r.iter_content(1024*1024):
+                      size+=len(block)
+                      if size>50046618:raise ValueError('size')
+                      digest.update(block);out.write(block)
+                  if size==50046618 and digest.hexdigest()==expected:return True
+              except Exception:pass
+            return False
+          ok=try_candidates()
+          if not ok:
+            with sync_playwright() as p:
+              executable=shutil.which('google-chrome') or shutil.which('chromium')
+              browser=p.chromium.launch(executable_path=executable,headless=True,args=['--no-sandbox'])
+              context=browser.new_context(accept_downloads=True)
+              page=context.new_page()
+              def response_seen(response):
+                try:
+                  if 'json' in response.headers.get('content-type','') and acceptable(response.url):collect(response.text())
+                except Exception:pass
+              page.on('response',response_seen)
+              page.goto(share,wait_until='domcontentloaded',timeout=60000)
+              page.wait_for_timeout(12000)
+              collect(page.content())
+              page.screenshot(path=str(folder/'anonymous-mirror.png'),full_page=False)
+              observations.append({'page_title':page.title(),'signed_in':False,'candidate_downloads':len(candidates)})
+              selectors=[page.get_by_role('button',name=re.compile('^Download$|^Descargar$',re.I)),page.get_by_role('menuitem',name=re.compile('Download|Descargar',re.I)),page.get_by_role('link',name=re.compile('Download|Descargar',re.I))]
+              for selector in selectors:
+                if selector.count():
+                  try:
+                    with page.expect_download(timeout=30000) as info:selector.first.click()
+                    info.value.save_as(str(target));break
+                  except Exception as exc:observations.append({'download_click_error':type(exc).__name__})
+              if target.exists() and target.stat().st_size==50046618 and hashlib.sha256(target.read_bytes()).hexdigest()==expected:ok=True
+              if not ok:ok=try_candidates()
+              browser.close()
+          observations.append({'exact_original_verified':ok,'sha256':expected if ok else None,'sizeBytes':target.stat().st_size if target.exists() else 0})
+          (folder/'observations.json').write_text(json.dumps(observations,indent=2))
+          print(json.dumps(observations,indent=2))
+          if not ok:raise SystemExit('No byte-exact original; no repo asset mutation.')
+      - name: Preserve original and generate labelled full-page image derivatives
+        shell: python
+        run: |
+          import pathlib,json,hashlib,subprocess,shutil,fitz
+          from PIL import Image
+          branch='legaltech/uria-search-graph-evidence-20260904'
+          source=pathlib.Path('/tmp/puzzle-public/PUZZLE-2024-original.pdf');expected=hashlib.sha256(source.read_bytes()).hexdigest()
+          doc=fitz.open(source)
+          assert len(doc)==32 and expected=='e441bdb368c0092d5b15ca5ee911eeac266540bde54817e424f3075f4c5fdd47'
+          subprocess.run(['git','fetch','origin',branch],check=True);subprocess.run(['git','checkout','-B',branch,'FETCH_HEAD'],check=True)
+          root=pathlib.Path('assets/docs/puzzle');root.mkdir(parents=True,exist_ok=True)
+          shutil.copyfile(source,root/'PUZZLE-2024-original.pdf');rows=[]
+          for index,page in enumerate(doc,1):
+            pix=page.get_pixmap(matrix=fitz.Matrix(3200/page.rect.width,3200/page.rect.width),alpha=False)
+            im=Image.frombytes('RGB',[pix.width,pix.height],pix.samples)
+            large=root/f'page-{index:02d}.jpg';im.save(large,'JPEG',quality=93,optimize=True,progressive=True)
+            im.thumbnail((1600,1600));display=root/f'page-{index:02d}.webp';im.save(display,'WEBP',quality=90,method=6)
+            rows.append({'page':index,'display':display.as_posix(),'download':large.as_posix(),'parent_sha256':expected,'display_sha256':hashlib.sha256(display.read_bytes()).hexdigest(),'download_sha256':hashlib.sha256(large.read_bytes()).hexdigest(),'width':pix.width,'height':pix.height,'origin':'Full page rasterised from exact original; no semantic editing'})
+          manifest={'schema':'por-derecho.puzzle-assets.v2','original':{'path':'assets/docs/puzzle/PUZZLE-2024-original.pdf','sha256':expected,'sizeBytes':50046618,'pageCount':32},'pages':rows,'status':'SOURCE_BYTES_VERIFIED_CANDIDATE_BRANCH','court_filing_status':'File identity is not proof of filing','publication_authority':'User request; Control Tower 1428; dedicated read-only public transfer copy'}
+          (root/'manifest.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n')
+          subprocess.run(['git','add','--','assets/docs/puzzle'],check=True)
+          subprocess.run(['git','-c','user.name=Por Derecho controlled import','-c','user.email=299972076+sbu001monterecco@users.noreply.github.com','commit','-m','Publish exact original Puzzle and 32 source-derived pages on candidate branch'],check=True)
+          subprocess.run(['git','push','origin','HEAD:refs/heads/'+branch],check=True)
+      - name: Public browser evidence
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: puzzle-anonymous-original-receipt
+          path: |
+            /tmp/puzzle-public/observations.json
+            /tmp/puzzle-public/anonymous-mirror.png
+          retention-days: 14
+          if-no-files-found: warn
