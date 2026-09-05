@@ -1,32 +1,90 @@
 #!/usr/bin/env python3
-"""Production smoke v2: preserve route checks while testing the current loader contract.
+"""Keep all legacy route tests; verify the real loader graph and deployed hashes.
 
-The legacy smoke suite remains the source of route/marker coverage.  This wrapper
-replaces only the historical global-loader assertion, which previously required
-an August Treasury loader to be referenced directly from assets/site.js even
-after the root loader became a delegated chain.
+The reviewed checkout is the expected deployment. A renamed/delegated root is
+valid only when all required modules remain reachable and every file in their
+source paths is served byte-for-byte. Source reachability does not replace the
+separate browser execution tests.
 """
 from __future__ import annotations
-
+from copy import deepcopy
+import hashlib
+from pathlib import Path
+from typing import Any
 import production_smoke_check as legacy
+from loader_graph import ROOT, find_loader_path
+
+REQUIRED_LOADERS = (
+    'assets/site-pre-treasury-154-hq-20260828.js',
+    'assets/treasury-154-hq-visual-20260828.js',
+    'assets/calificacion-criminal-misuse-thesis-20260824.js',
+    'assets/asset-recovery-preservation-20260821.js',
+    'assets/cam-direct-instruction-shadow-admin-judicial-omission-20260823.js',
+    'assets/concurso36-caret-incident-overlay-20260829.js',
+)
+ORIGINAL_CHECKS = deepcopy(legacy.CHECKS)
+ORIGINAL_ONE_PASS = legacy.one_pass
 
 
-def apply_current_loader_contract() -> None:
-    for check in legacy.CHECKS:
-        if check.get("kind") != "global_loader":
+def loader_contract(root: Path = ROOT, targets: tuple[str, ...] = REQUIRED_LOADERS) -> dict[str, dict[str, Any]]:
+    nodes: dict[str, dict[str, Any]] = {}
+    for target in targets:
+        chain = find_loader_path('assets/site.js', target, root=root)
+        if chain is None:
+            raise ValueError('Required loader is unreachable from assets/site.js: '+target)
+        for rel in chain:
+            body = (root / rel).read_bytes()
+            if not body:
+                raise ValueError('Empty loader dependency: '+rel)
+            nodes[rel] = {'sha256': hashlib.sha256(body).hexdigest(), 'bytes': len(body)}
+    return nodes
+
+
+def verify_hashes(records: list[dict[str, Any]], expected: dict[str, dict[str, Any]]) -> tuple[bool, list[dict[str, Any]]]:
+    seen: set[str] = set()
+    for row in records:
+        rel = row['path']
+        if rel not in expected:
             continue
-        check["kind"] = "global_loader_delegated_contract"
-        check["markers"] = [
-            "const load =",
-            "document.head.appendChild",
-            "loadMatkator8584Release",
-            "loadControl2224Release",
-        ]
-        check["min_bytes"] = 700
-        return
-    raise RuntimeError("legacy production smoke suite no longer exposes global_loader")
+        seen.add(rel)
+        row['expected_sha256'] = expected[rel]['sha256']
+        row['expected_bytes'] = expected[rel]['bytes']
+        row['source_hash_match'] = row.get('sha256') == expected[rel]['sha256'] and row.get('bytes') == expected[rel]['bytes']
+        row['ok'] = bool(row.get('ok')) and row['source_hash_match']
+        if not row['source_hash_match']:
+            row['error'] = row.get('error') or 'Deployed loader differs from the reviewed checkout'
+    for rel in sorted(set(expected) - seen):
+        records.append({'path': rel, 'kind': 'loader_dependency', 'ok': False, 'error': 'Required loader was not checked'})
+    return all(row.get('ok', False) for row in records), records
 
 
-if __name__ == "__main__":
-    apply_current_loader_contract()
-    raise SystemExit(legacy.main())
+def apply_current_loader_contract(root: Path = ROOT) -> None:
+    expected = loader_contract(root)
+    checks = deepcopy(ORIGINAL_CHECKS)
+    roots = [row for row in checks if row.get('kind') == 'global_loader']
+    if len(roots) != 1 or roots[0]['path'] != 'assets/site.js':
+        raise RuntimeError('Legacy smoke must declare exactly one global-loader contract')
+    # No obsolete implementation-specific substring is substituted for another.
+    # Exact file hashes below are a stronger contract than historic marker text.
+    roots[0].update(kind='global_loader', markers=[], min_bytes=1)
+    present = {row['path'] for row in checks}
+    for rel in sorted(expected):
+        if rel not in present:
+            checks.append({'path': rel, 'kind': 'loader_dependency', 'markers': [], 'min_bytes': 1})
+    legacy.CHECKS = checks
+    def current_pass(base_url: str, timeout: int, attempt: int):
+        _, rows = ORIGINAL_ONE_PASS(base_url, timeout, attempt)
+        return verify_hashes(rows, expected)
+    legacy.one_pass = current_pass
+
+
+def main() -> int:
+    try:
+        apply_current_loader_contract()
+    except (OSError, ValueError, RuntimeError) as exc:
+        print('PRODUCTION LOADER CONTRACT: FAIL —', exc)
+        return 1
+    return legacy.main()
+
+if __name__ == '__main__':
+    raise SystemExit(main())
