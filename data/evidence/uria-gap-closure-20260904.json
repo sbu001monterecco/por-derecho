@@ -1,0 +1,58 @@
+{
+  "control_id": "PD-URIA-GAP-20260904-01",
+  "date": "2026-09-04",
+  "status": "OPEN_EVIDENCE_GAPS_WITH_PUBLICATION_CORRECTIONS",
+  "canonical_routes": {
+    "es": "/es/uria-menendez/",
+    "en": "/en/uria-menendez/"
+  },
+  "superseded_duplicate_routes": [
+    "/es/uria-menendez-sun-park/",
+    "/en/uria-menendez-sun-park/"
+  ],
+  "valencia_witness_origin": {
+    "court_record": "Witness citation describes Francisco de Borja Rodríguez-Batllori Laffitte as proposed by claimant and defendant.",
+    "counsel_record_2024_10_30": "Se admitió la testifical de Borja, a petición de Caixabank, a la cual nos adherimos.",
+    "documentary_conclusion": "CaixaBank originated the witness request; Aweswell adhered.",
+    "gil_marer_present_account": "The adherence was reluctant and defensive in the context of wider procedural pressure.",
+    "limit": "The contemporaneous counsel email corroborates origin/adherence, not the stated subjective motive."
+  },
+  "unitary_allegation": {
+    "attributor": "Gil Marer",
+    "status": "ALLEGATION_INVESTIGATIVE_HYPOTHESIS",
+    "summary": "Two-directional alleged instrumentalisation involving the CaixaBank-Bankia lender/servicing/adviser perimeter, the insolvency administrator/private-actor perimeter and alleged judicial enablement; attribution must be actor-specific and notice/post-notice based.",
+    "not_a_finding_of": [
+      "collective guilt",
+      "prohibited professional conflict",
+      "collusion",
+      "procedural fraud",
+      "money laundering",
+      "criminal organisation"
+    ]
+  },
+  "priority_gaps": [
+    "2015 Uría exact client/mandate and HAYA instruction date",
+    "3 July 2015 AC-Rubio subject/client/records",
+    "Caja Canarias-Bankia/BFA-SAREB-Project Meridian-PH122/Cerberus-HAYA-CAM primary transfer chain",
+    "operative credit/claim denominator and any EUR 433,664.10 reference",
+    "actor-by-actor notice and post-notice conduct ladder",
+    "Uría RICPE matter scope/start/end and Sun Park file",
+    "Uría CaixaBank intake/conflict search/information-barrier metadata",
+    "RICPE underlying conflict register/Control Unit report/abstention mechanics",
+    "2020 representation versus 2021 ownership/LOI/DD reconciliation",
+    "RICPE ethics-channel materials reviewed and decision-maker independence",
+    "order-by-order causal chronology for allegations concerning the insolvency judge",
+    "criminal-law element matrix by actor",
+    "bilingual parity/stale trial-date audit",
+    "controlled redaction and public binary/image backfill"
+  ],
+  "mandatory_counterevidence": [
+    "30 April 2015 record says Uría did not yet have formal HAYA mandate",
+    "3 July 2015 record establishes reported AC-Uría contact, not AC representation",
+    "20 July 2021 RICPE certification qualifies the 2020 presentation",
+    "21 July 2021 CAM filing says CAM owned 54 units and did not claim sole ownership",
+    "later RICPE accounts record conflict disclosure/abstention and Control Unit process",
+    "court record says both sides proposed Borja, while counsel email clarifies CaixaBank originated the request and Aweswell adhered",
+    "27 August 2026 RICPE ethics result was preliminary inadmission without internal investigation"
+  ]
+}
