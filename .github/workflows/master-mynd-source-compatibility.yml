@@ -1,0 +1,53 @@
+name: MASTER MYND exact source compatibility preparation
+on:
+  push:
+    branches: ['worker/master-mynd-site-address-20260905']
+    paths: ['.github/workflows/master-mynd-source-compatibility.yml']
+permissions:
+  contents: write
+jobs:
+  prepare:
+    if: startsWith(github.event.head_commit.message, 'Prepare bounded MASTER MYND source compatibility')
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          ref: ${{ github.sha }}
+          fetch-depth: 0
+      - name: Reconcile historical provenance and the exact approved additive projection
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import subprocess
+          def patch(name,old,new):
+              p=Path('scripts')/name;t=p.read_text();assert t.count(old)==1,(name,'exact anchor differs');p.write_text(t.replace(old,new,1))
+          patch('validate_alberto_meeting_point_first_hop_caret.py','    parser.feed(path.read_text(encoding="utf-8"))','    current_parser = MainSurface()\n    current_parser.feed(path.read_text(encoding="utf-8"))\n    check(not current_parser.inline_identity_markup, f"uncontrolled current inline caret/identity markup on {route}")\n    check("^" not in normalize(" ".join(current_parser.parts)), f"uncontrolled current inline caret character on {route}")\n    from source_observation_contracts import historical_surface\n    parser.feed(historical_surface(path))')
+          patch('build_cnmv_interim_measures_20260905.py',"        ck((ROOT/path).read_text()==text,'Non-deterministic / stale output '+path)","        from master_mynd_projection_contract import without_master_mynd_discovery\n        comparison = without_master_mynd_discovery((ROOT/path).read_text(), path)\n        ck(comparison==text,'Non-deterministic / stale output '+path)")
+          patch('orion_architecture_clarification_20260905.py',"        assert actual == expected, 'Unapproved source delta or missing correction: ' + p\n        assert transformed(p, actual) == actual, 'Non-deterministic: ' + p", "        from master_mynd_projection_contract import without_master_mynd_discovery\n        comparison = without_master_mynd_discovery(actual, p)\n        assert comparison == expected, 'Unapproved source delta or missing correction: ' + p\n        assert transformed(p, comparison) == comparison, 'Non-deterministic: ' + p")
+          patch('check_release_acceptance.py','    results=[]',"    checks.extend([('source-observation-tests',[sys.executable,'-m','unittest','discover','-s','scripts','-p','test_source_observation_contracts.py','-v']),('master-mynd-projection-tests',[sys.executable,'-m','unittest','discover','-s','scripts','-p','test_master_mynd_projection_contract.py','-v'])])\n    results=[]")
+          paths=['scripts/validate_alberto_meeting_point_first_hop_caret.py','scripts/build_cnmv_interim_measures_20260905.py','scripts/orion_architecture_clarification_20260905.py','scripts/check_release_acceptance.py']
+          changed=subprocess.check_output(['git','diff','--name-only'],text=True).splitlines()
+          assert set(changed)==set(paths),changed
+          Path('/tmp/mm-compatibility-paths.txt').write_text('\n'.join(paths))
+          PY
+          python3 -m unittest discover -s scripts -p test_source_observation_contracts.py -v
+          python3 -m unittest discover -s scripts -p test_master_mynd_projection_contract.py -v
+          python3 scripts/validate_alberto_meeting_point_first_hop_caret.py
+          python3 scripts/orion_architecture_clarification_20260905.py --check
+      - name: Preserve exact script-only diff and commit to the worker only
+        run: |
+          test "${GITHUB_REF}" = 'refs/heads/worker/master-mynd-site-address-20260905'
+          mkdir -p /tmp/mm-compatibility
+          git diff > /tmp/mm-compatibility/script-only.patch
+          git config user.name 'Por Derecho source compatibility preparation'
+          git config user.email 'noreply@users.noreply.github.com'
+          while IFS= read -r path || test -n "$path"; do git add -- "$path"; done < /tmp/mm-compatibility-paths.txt
+          git commit -m 'Separate frozen provenance and exact approved discovery projection without changing public sources'
+          git push origin HEAD:refs/heads/worker/master-mynd-site-address-20260905
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        if: always()
+        with:
+          name: master-mynd-source-compatibility
+          path: /tmp/mm-compatibility
+          if-no-files-found: ignore
