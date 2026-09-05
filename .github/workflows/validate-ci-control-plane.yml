@@ -1,0 +1,54 @@
+name: Validate CI control plane
+on:
+  push:
+    branches: [integration/ci-rules-open-work-20260905]
+    paths: ['.github/workflows/validate-ci-control-plane.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+  actions: read
+concurrency:
+  group: ci-control-plane-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: false
+          fetch-depth: 0
+      - name: Read remaining failure evidence and relevant source assertions
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          python3 - <<'PY'
+          import io,json,os,pathlib,re,urllib.request,zipfile,subprocess,concurrent.futures
+          class Redirect(urllib.request.HTTPRedirectHandler):
+            def redirect_request(self,req,fp,code,msg,headers,newurl):
+              out=super().redirect_request(req,fp,code,msg,headers,newurl)
+              if out is not None:out.remove_header('Authorization')
+              return out
+          opener=urllib.request.build_opener(Redirect())
+          url='https://api.github.com/repos/sbu001monterecco/por-derecho/actions/artifacts/9971518671/zip'
+          req=urllib.request.Request(url,headers={'Authorization':'Bearer '+os.environ['GH_TOKEN']})
+          with opener.open(req,timeout=40) as response: archive=zipfile.ZipFile(io.BytesIO(response.read()))
+          for row in json.loads(archive.read('main-failures.json')):
+            print('FAILURE',row['workflow'])
+            for job in row['jobs']:
+              print('  STEPS',json.dumps(job.get('failed_steps',[])))
+              for error in job.get('errors',[]):print('  ERROR',error[:1500])
+          terms=('data-pre-treasury-154-site-loader','site loader does not load caret overlay','CAEPR index control date was not advanced','unexpected current canonical identity counts','community_acta_domain_reconciliation','../metodologia/')
+          for path in sorted(pathlib.Path('scripts').glob('*.py')):
+            lines=path.read_text().splitlines()
+            for i,line in enumerate(lines):
+              if any(term in line for term in terms):
+                print('SOURCE_CONTEXT',str(path),i+1)
+                for j in range(max(0,i-4),min(len(lines),i+4)):print(f'{j+1}: {lines[j]}')
+          for rel in ['es/acosta-matos-familia/index.html','en/acosta-matos-family/index.html','es/por-derecho/index.html']:
+            lines=pathlib.Path(rel).read_text().splitlines()
+            for i,line in enumerate(lines):
+              if 'metod' in line.lower() or 'method' in line.lower():print('METHOD_LINK',rel,i+1,line[:2200])
+          print('SOURCE_AUDIT_COMPLETE')
+          PY
