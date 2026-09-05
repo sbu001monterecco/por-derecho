@@ -1,46 +1,61 @@
 name: Validate CI control plane
 on:
+  pull_request:
+    branches: [main]
+    paths:
+      - '.github/workflows/**'
+      - 'scripts/**'
+      - 'schemas/**'
+      - 'assets/data/matter-identity-registry-v1*.json'
+      - 'en/matter-identity-registry/**'
+      - 'es/registro-identidad-materia/**'
+      - 'es/acosta-matos-familia/**'
+      - 'ops/CURRENT_UNITARY_STATE.json'
   push:
-    branches: [integration/ci-rules-open-work-20260905]
-    paths: ['.github/workflows/validate-ci-control-plane.yml']
+    branches: [main]
+    paths:
+      - '.github/workflows/**'
+      - 'scripts/**'
+      - 'schemas/**'
+      - 'assets/data/matter-identity-registry-v1*.json'
+      - 'en/matter-identity-registry/**'
+      - 'es/registro-identidad-materia/**'
+      - 'es/acosta-matos-familia/**'
+      - 'ops/CURRENT_UNITARY_STATE.json'
   workflow_dispatch:
 permissions:
   contents: read
 concurrency:
-  group: ci-control-plane-${{ github.ref }}
+  group: ci-control-plane-${{ github.event.pull_request.number || github.ref }}
   cancel-in-progress: true
 jobs:
   validate:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 15
+    env:
+      GITHUB_BASE_SHA: ${{ github.event.pull_request.base.sha || github.event.before }}
+      GITHUB_HEAD_SHA: ${{ github.event.pull_request.head.sha || github.sha }}
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
         with:
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
           persist-credentials: false
-          fetch-depth: 1
-      - name: Export bounded current public source and regression results
+          fetch-depth: 0
+      - name: Validate all repaired contracts, negative cases and publication boundaries
+        run: python3 scripts/validate_ci_control_plane.py
+      - name: Install pinned browser test dependency
         run: |
-          python3 - <<'PY'
-          import json,pathlib,subprocess,zipfile
-          out=pathlib.Path('/tmp/ci-source');out.mkdir()
-          command=['python3','-m','unittest','discover','-s','scripts','-p','test_ci_control_plane.py','-v']
-          test=subprocess.run(command,capture_output=True,text=True)
-          (out/'tests.log').write_text(test.stdout+test.stderr)
-          print('NEGATIVE_TESTS',test.returncode,(test.stdout+test.stderr)[-2500:])
-          paths=subprocess.check_output(['git','ls-files'],text=True).splitlines()
-          wanted=[]
-          for p in paths:
-              path=pathlib.Path(p)
-              if path.suffix.lower() in {'.py','.json','.yml','.yaml','.html','.js','.css','.md','.txt','.csv','.xml','.svg'}:
-                  wanted.append(p)
-          with zipfile.ZipFile(out/'source.zip','w',zipfile.ZIP_DEFLATED) as z:
-              for p in wanted:z.write(p)
-              z.writestr('AUDIT_SOURCE_SHA',subprocess.check_output(['git','rev-parse','HEAD'],text=True))
-          print('SOURCE_BUNDLE',len(wanted),(out/'source.zip').stat().st_size)
-          PY
-      - uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
+          python3 -m pip install playwright==1.55.0
+          python3 -m playwright install --with-deps chromium
+      - name: Verify desktop/mobile and JavaScript/no-JavaScript projections
+        run: python3 scripts/verify_ci_control_plane_browser.py
+      - name: Confirm validators did not mutate source
+        run: git diff --exit-code
+      - name: Preserve exact acceptance evidence
         if: always()
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
         with:
-          name: ci-source-final-repair
-          path: /tmp/ci-source/
-          retention-days: 7
+          name: ci-control-plane-${{ github.run_id }}
+          path: /tmp/ci-control-plane/
+          if-no-files-found: error
+          retention-days: 30
