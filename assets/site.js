@@ -37,6 +37,8 @@
     load('puzzle-hybrid-viewer-20260904.js', 'data-puzzle-hybrid-viewer-loader', '20260904a');
     load('evidence-visibility-runtime-20260904.js', 'data-evidence-visibility-runtime-loader', '20260904a');
     load('joan-cruz-multitrack-crosslinks-20260901.js', 'data-joan-cruz-multitrack-loader', '20260904a');
+    load('orion-rental-socimi-interlinks-20260905.js', 'data-orion-rental-socimi-interlinks-loader', '20260905a');
+    load('orion-rental-socimi-search-extension-20260905.js', 'data-orion-rental-socimi-search-loader', '20260905a');
   };
 
   const loadHotelFincaSystem = () => {

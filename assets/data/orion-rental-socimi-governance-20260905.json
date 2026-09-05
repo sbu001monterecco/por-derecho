@@ -1,93 +1,165 @@
 {
+  "schema": "por-derecho.orion-governance-continuity.v2",
   "control_date": "2026-09-05",
   "entity": {
-    "name": "Orion Rental SOCIMI, S.A.",
+    "id": "PD-SP-O-0027",
+    "name": "ORION Rental SOCIMI, S.A.",
     "route_en": "/en/orion-rental-socimi/",
     "route_es": "/es/orion-rental-socimi/",
     "temporal_firewall": "Constituted in June 2023; not treated as a participant in 2011-2022 Sun Park events."
   },
   "documented_edges": [
     {
+      "from": "RIC Private Equity Investment Partners SCR, S.A.",
+      "to": "ORION Rental SOCIMI, S.A.",
+      "type": "SOLE_SHAREHOLDER_AT_INCORPORATION",
+      "state": "PRIMARY_CORPORATE_RECORD",
+      "date": "2023-06-16",
+      "source": "BORME-A-2023-137-35 / entry 328651"
+    },
+    {
+      "from": "Enrique Guerra Suarez",
+      "to": "ORION Rental SOCIMI, S.A.",
+      "type": "SOLE_ADMINISTRATOR_AT_INCORPORATION_THEN_BOARD_MEMBER",
+      "state": "PRIMARY_CORPORATE_RECORD",
+      "source": "BORME-A-2023-137-35 + BORME-A-2024-69-35"
+    },
+    {
       "from": "Francisco Mario Matos Matas",
-      "to": "Orion Rental SOCIMI",
+      "to": "ORION Rental SOCIMI, S.A.",
       "type": "BOARD_MEMBERSHIP",
       "state": "DOCUMENTED",
+      "date_from": "2024-04-02",
       "source": "Orion governance + BORME-A-2024-69-35",
       "continuity_from": "Sun Park Community administration/secretary-administration record 2011-2022"
     },
     {
       "from": "Jose Daniel Acosta Matos",
-      "to": "Orion Rental SOCIMI",
+      "to": "ORION Rental SOCIMI, S.A.",
       "type": "BOARD_MEMBERSHIP",
       "state": "DOCUMENTED",
+      "date_from": "2024-04-02",
       "source": "Orion governance + BORME-A-2024-69-35",
       "continuity_from": "Sun Park 4-Feb-2022 chair/project record"
     },
     {
-      "from": "Jose Daniel Acosta Matos",
+      "from": "AGM Canary Asset Management, S.L.",
+      "to": "ORION Rental SOCIMI, S.A.",
+      "type": "ATTORNEY_AND_STRATEGIC_ASSET_MANAGEMENT",
+      "state": "DOCUMENTED",
+      "source": "BORME-A-2024-95-35 + Orion audited accounts / issuance document"
+    },
+    {
+      "from": "Francisco Mario Matos Matas",
+      "to": "Pamalexsha Servicios Integrales, S.L.",
+      "type": "33_PERCENT_INTEREST",
+      "state": "AUDITED_RELATED_PARTY_DISCLOSURE",
+      "source": "Orion audited related-party disclosure"
+    },
+    {
+      "from": "Shaila Cogolludo Ramos",
+      "to": "Pamalexsha Servicios Integrales, S.L.",
+      "type": "34_PERCENT_INTEREST",
+      "state": "AUDITED_RELATED_PARTY_DISCLOSURE",
+      "source": "Orion audited related-party disclosure"
+    },
+    {
+      "from": "Antonio Cogolludo Rojas",
+      "to": "Pamalexsha Servicios Integrales, S.L.",
+      "type": "33_PERCENT_INTEREST",
+      "state": "AUDITED_RELATED_PARTY_DISCLOSURE",
+      "source": "Orion audited related-party disclosure"
+    },
+    {
+      "from": "Pamalexsha Servicios Integrales, S.L.",
       "to": "AGM Canary Asset Management, S.L.",
-      "type": "PRESIDENCY",
-      "state": "DOCUMENTED_SELF_PUBLICATION",
-      "source": "Orion governance"
+      "type": "18_77_PERCENT_INTEREST",
+      "state": "AUDITED_RELATED_PARTY_DISCLOSURE",
+      "source": "Orion audited related-party disclosure",
+      "boundary": "Economic bridge does not prove any direct Orion office for Shaila Cogolludo or Antonio Cogolludo and does not transfer knowledge or intent."
     },
     {
       "from": "Francisco Mario Matos Matas",
       "to": "AGM Canary Asset Management, S.L.",
-      "type": "BOARD_MEMBERSHIP",
-      "state": "DOCUMENTED_SELF_PUBLICATION",
-      "source": "Orion governance"
-    },
-    {
-      "from": "Enrique Guerra Suarez",
-      "to": "Orion Rental SOCIMI",
-      "type": "BOARD_MEMBERSHIP",
+      "type": "BOARD_MEMBERSHIP_AND_INDIRECT_ECONOMIC_INTEREST",
       "state": "DOCUMENTED",
-      "source": "Orion governance + BORME-A-2024-69-35"
+      "source": "Orion governance + audited related-party disclosure"
     },
     {
-      "from": "Enrique Guerra Suarez",
-      "to": "RIC Capital Investment Partners",
-      "type": "EXECUTIVE_ROLE",
-      "state": "DOCUMENTED_SELF_PUBLICATION",
-      "source": "Orion governance / RIC public biography"
+      "from": "Jose Daniel Acosta Matos",
+      "to": "AGM Canary Asset Management, S.L.",
+      "type": "18_77_PERCENT_INTEREST_AND_GOVERNANCE_ROLE",
+      "state": "AUDITED_AND_SELF_PUBLISHED",
+      "source": "Orion 2024 audited accounts + Orion governance"
     },
     {
-      "from": "AGM Canary Asset Management, S.L.",
-      "to": "Orion Rental SOCIMI",
-      "type": "ATTORNEY_AND_MANAGEMENT",
+      "from": "Grupo Patrimonial Acosta Matos, S.L.",
+      "to": "ORION Rental SOCIMI, S.A.",
+      "type": "5_PERCENT_SHAREHOLDER_AT_2024_YEAR_END",
+      "state": "AUDITED_RELATED_PARTY_DISCLOSURE",
+      "source": "Orion 2024 audited accounts"
+    },
+    {
+      "from": "Construcciones Acosta Matos, S.L.U.",
+      "to": "ORION Rental SOCIMI, S.A.",
+      "type": "RELATED_PARTY_CONSTRUCTION_WORKS",
+      "state": "AUDITED_DISCLOSED_TRANSACTION",
+      "amount_eur": 3645525.81,
+      "period": "2024",
+      "source": "Orion 2024 audited accounts",
+      "boundary": "Disclosed transaction; not evidence of impropriety by itself."
+    },
+    {
+      "from": "Proyectos Acosta Matos, S.L.U.",
+      "to": "ORION Rental SOCIMI, S.A.",
+      "type": "RELATED_PARTY_SERVICES",
+      "state": "AUDITED_DISCLOSED_TRANSACTION",
+      "amount_eur": 140941.47,
+      "period": "2024",
+      "source": "Orion 2024 audited accounts",
+      "boundary": "Disclosed transaction; not evidence of impropriety by itself."
+    },
+    {
+      "from": "RIC Private Equity Investment Partners SCR, S.A.",
+      "to": "ORION Rental SOCIMI, S.A.",
+      "type": "FORMATION_AND_FINANCING_CONVERSION_ARCHITECTURE",
       "state": "DOCUMENTED",
-      "source": "BORME-A-2024-95-35 + RIC Orion project page"
+      "source": "BORME incorporation + Orion issuance / investor materials",
+      "boundary": "Financing or conversion architecture does not establish knowledge or adoption of Sun Park allegations."
     },
     {
-      "from": "RIC Capital",
-      "to": "Orion Rental SOCIMI / Hinojeros III",
-      "type": "RIC_INVESTMENT_PROJECT",
-      "state": "DOCUMENTED_SELF_PUBLICATION",
-      "amount_total_eur": 8500000,
-      "source": "RIC Orion project page"
-    },
-    {
-      "from": "Orion Rental SOCIMI",
-      "to": "Portfolio / Euroclear / new investors",
-      "type": "CAPITAL_MARKET_EXPANSION",
-      "state": "DOCUMENTED",
-      "source": "BORME-C-2026-3906",
-      "maximum_capital_raise_eur": 2500000.48,
-      "attribution_boundary": "No wrongdoing or knowledge is attributed to investors, Portfolio, Euroclear or other later participants absent actor-specific proof."
+      "from": "ORION Rental SOCIMI, S.A.",
+      "to": "wider board / shareholders / investors / auditors / advisers / Portfolio / Euroclear",
+      "type": "GOVERNANCE_CAPITAL_AND_REPUTATIONAL_EXPANSION",
+      "state": "DOCUMENTED_CONTEXT",
+      "source": "Orion governance, audited accounts, issuance and capital-increase records",
+      "attribution_boundary": "No wrongdoing, knowledge or duty breach is attributed to later participants absent actor-specific evidence."
     }
   ],
-  "wider_board": [
+  "wider_board_2024_borme": [
     "Victor Marti Gilabert",
     "Angel Medina Padron",
     "Francisco Lopez Gonzalez",
     "Anil Partap Harjani",
     "Oscar Diaz Melian",
+    "Manuel Medina Artiles",
     "Jesus Diaz Quintana",
     "Manuel Padron Padron",
+    "Jose Daniel Acosta Matos",
     "Francisco Mario Matos Matas",
-    "Enrique Guerra Suarez",
-    "Jose Daniel Acosta Matos"
+    "Enrique Guerra Suarez"
   ],
+  "disclosure_test": {
+    "source": "Orion November-2024 issuance document",
+    "source_position": "Issuer information is presented as complete, reality-conforming and not omitting relevant information needed for an informed investment decision; issuer/governing body responsibility and the stated limits of Portfolio/CNMV verification are separately described.",
+    "repository_boundary": "Absence of a Sun Park matter from a public document is not proof of concealment. Materiality, actual knowledge, duty/reason to disclose, presentation, reliance and causation must be proved actor by actor.",
+    "questions": [
+      "What Sun Park proceedings, disputes, complaints, appeals and actor-specific allegations existed at each Orion milestone?",
+      "Which were material to Orion, AGM, RICPE, directors, investors, auditors, advisers or market admission?",
+      "What was disclosed, rejected, corrected, considered immaterial or independently verified?",
+      "Did any proved omission cause reliance, capital, approval, reputation or leverage?"
+    ]
+  },
   "attributed_thesis": {
     "speaker": "Gil Marer",
     "status": "PARTY_ALLEGATION_AND_ANALYTICAL_THESIS",
@@ -98,39 +170,54 @@
       "non-disclosure",
       "forced collaborator",
       "shield and a sword",
-      "illicit shield and illicit sword",
+      "illicit shield and an illicit sword",
       "house of cards"
     ],
     "meaning": "Gil alleges that legacy actors may recruit new individuals/entities and thereby use their reputation, institutional credibility, capital, network, professional standing, muscle power and resources as protective and enabling layers, potentially without the new actor knowing the full underlying history.",
-    "non_finding": "The repository does not find that Orion, AGM, RIC, any director, investor, auditor, adviser, Portfolio, Euroclear or other later participant was coerced, deceived, concealed information, failed a legal duty or knowingly joined an illicit scheme."
+    "non_finding": "The repository does not find that Orion, AGM, RICPE, any director, investor, auditor, adviser, Portfolio, Euroclear or other later participant was coerced, deceived, concealed information, failed a legal duty or knowingly joined an illicit scheme."
   },
   "proof_test": [
     "legacy exposure",
-    "material fact and disclosure reason/duty",
+    "material fact plus disclosure reason or duty",
+    "actor-specific actual knowledge",
     "omission or misleading presentation",
-    "entry of new actor/resource",
+    "entry of new actor or resource",
     "reliance or enabling effect",
-    "actor-specific benefit and causation"
+    "actor-specific benefit and causation",
+    "lawful or innocent alternative"
   ],
   "internal_routes": [
     "/en/orion-rental-socimi/",
     "/es/orion-rental-socimi/",
     "/en/community-instrumentalisation/",
-    "/en/community-instrumentalisation/minutes-2011-2022/",
-    "/en/cam-creditor-control-shadow-administration-judicial-omission/",
-    "/en/sun-park-takeover-7-june-2018/",
     "/es/comunidad-instrumentalizacion/",
+    "/en/community-instrumentalisation/minutes-2011-2022/",
     "/es/comunidad-instrumentalizacion/actas-2011-2022/",
-    "/es/control-acreedor-cam-administracion-hecho-omision-judicial/",
-    "/es/acosta-matos-familia/",
-    "/es/deuda-publica-ric-canarias/"
+    "/en/francisco-mario-matos-matas/",
+    "/es/francisco-mario-matos-matas/",
+    "/en/antonio-cogolludo-rojas/",
+    "/es/antonio-cogolludo-rojas/",
+    "/en/shaila-maria-cogolludo-ramos/",
+    "/es/shaila-maria-cogolludo-ramos/",
+    "/en/pamalexsha-servicios-integrales-sl/",
+    "/es/pamalexsha-servicios-integrales-sl/",
+    "/en/ric-private-equity-sun-park/",
+    "/es/ric-private-equity-sun-park/",
+    "/en/acosta-matos-perimeter/",
+    "/es/acosta-matos-perimetro/",
+    "/en/sun-park-takeover-7-june-2018/",
+    "/es/toma-control-sun-park-7-junio-2018/"
   ],
   "public_sources": [
     "https://www.orionsocimi.com/gobierno-corporativo",
     "https://www.orionsocimi.com/inversores",
+    "https://orionsocimi.com/wp-content/uploads/2025/07/Informe-de-Auditoria-CCAA-e-Informe-de-Gestion-ORION-2024-firmadas-2.pdf",
+    "https://orionsocimi.com/wp-content/uploads/2024/12/Documento-de-Emision.pdf",
     "https://ric.capital/orion-rental-socimi/",
+    "https://www.boe.es/diario_borme/txt.php?id=BORME-A-2023-137-35",
     "https://www.boe.es/diario_borme/txt.php?id=BORME-A-2024-69-35",
     "https://www.boe.es/diario_borme/txt.php?id=BORME-A-2024-95-35",
     "https://www.boe.es/diario_borme/txt.php?id=BORME-C-2026-3906"
-  ]
+  ],
+  "right_of_reply": "All named people and entities may provide corrections, contrary evidence or exculpatory records. Silence is not admission."
 }
