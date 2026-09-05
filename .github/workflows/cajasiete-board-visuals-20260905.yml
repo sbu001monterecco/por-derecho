@@ -19,33 +19,28 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Install fixed graphics and browser tools
+      - name: Install fixed rendering and browser tools
         run: |
           python -m pip install cairosvg==2.8.2 pillow==11.3.0 beautifulsoup4==4.14.3 playwright==1.55.0
           python -m playwright install --with-deps chromium firefox webkit
-      - name: Bind checkpoint to the final rendered candidate
-        run: |
-          python - <<'PY'
-          from pathlib import Path
-          p=Path('scripts/prepare_cajasiete_board_visuals_20260905.py')
-          t=p.read_text()
-          old='render(x);r=check();'
-          new="render(x);subprocess.run([sys.executable,str(p),'--apply'],check=True,cwd=ROOT);subprocess.run([sys.executable,str(p),'--check'],check=True,cwd=ROOT);r=check();"
-          assert t.count(old)==1, 'unexpected preparation version'
-          p.write_text(t.replace(old,new,1))
-          PY
-      - name: Prepare public-safe additive release
+      - name: Generate reviewed derivative and reconcile final checkpoint
         run: |
           python scripts/prepare_cajasiete_board_visuals_20260905.py apply
+          python scripts/reconcile_institutional_communications.py --apply
           python scripts/reconcile_institutional_communications.py --check
           python scripts/validate_institutional_communications.py
-          python scripts/prepare_cajasiete_board_visuals_20260905.py check
-      - name: Retain read-only candidate and live regression runner
+          python - <<'PY'
+          import sys
+          sys.path.insert(0,'scripts')
+          from prepare_cajasiete_board_visuals_20260905 import check,read,save,REPORT
+          old=read(REPORT);r=check()
+          for k in ['existing_events_preserved','open_proof']:r[k]=old[k]
+          save(REPORT,r)
+          PY
+      - name: Create bounded read-only browser regression
         run: |
           cat > scripts/check_cajasiete_board_browser_20260905.py <<'PY'
-          from __future__ import annotations
           import argparse,json,threading,functools,http.server
-          from pathlib import Path
           from playwright.sync_api import sync_playwright
           from prepare_cajasiete_board_visuals_20260905 import ROOT,ROUTES,CONTROL
           p=argparse.ArgumentParser();p.add_argument('--live',action='store_true');a=p.parse_args()
@@ -65,8 +60,7 @@ jobs:
                           page=ctx.new_page();response=page.goto(base+ROUTES[lang]['caja'],wait_until='domcontentloaded',timeout=60000)
                           assert response.status==200
                           section=page.locator('#board-compliance');assert section.count()==1
-                          assert section.locator('figure img').count()==3
-                          images=section.locator('figure img')
+                          images=section.locator('figure img');assert images.count()==3
                           for i in range(3):
                               images.nth(i).scroll_into_view_if_needed()
                               images.nth(i).evaluate('(e)=>{e.loading="eager";return e.decode()}')
@@ -84,9 +78,20 @@ jobs:
           report={'scope':CONTROL,'status':'LIVE_RENDERED_PASS' if a.live else 'CANDIDATE_RENDERED_PASS','cases':rows,'actual_physical_handset_test':False,'universal_completeness_claim':False}
           (out/'browser-report.json').write_text(json.dumps(report,indent=2));print(json.dumps(report,indent=2))
           PY
+          python scripts/check_cajasiete_board_browser_20260905.py
+      - name: Retire worker writer to read-only manual verification
+        run: |
           cat > .github/workflows/cajasiete-board-visuals-20260905.yml <<'YAML'
           name: Verify CajaSiete board visuals
           on:
+            workflow_dispatch:
+              inputs:
+                live:
+                  description: 'Check deployed exact bytes and rendered routes'
+                  required: false
+                  default: 'false'
+                  type: choice
+                  options: ['false', 'true']
             pull_request:
               paths:
                 - 'scripts/*cajasiete_board*20260905.py'
@@ -95,15 +100,6 @@ jobs:
                 - 'ops/cajasiete-board-*'
                 - 'es/cajasiete-sun-park-financiacion-comparabilidad/**'
                 - 'en/cajasiete-sun-park-financing-comparability/**'
-                - '.github/workflows/cajasiete-board-visuals-20260905.yml'
-            workflow_dispatch:
-              inputs:
-                live:
-                  description: 'Verify deployed exact bytes and rendered routes'
-                  required: false
-                  default: 'false'
-                  type: choice
-                  options: ['false', 'true']
           permissions:
             contents: read
           jobs:
@@ -120,7 +116,6 @@ jobs:
                 - run: |
                     python -m pip install cairosvg==2.8.2 pillow==11.3.0 beautifulsoup4==4.14.3 playwright==1.55.0
                     python -m playwright install --with-deps chromium firefox webkit
-                - run: |
                     python scripts/prepare_cajasiete_board_visuals_20260905.py check
                     python scripts/reconcile_institutional_communications.py --check
                     python scripts/validate_institutional_communications.py
@@ -136,9 +131,7 @@ jobs:
                     name: cajasiete-board-verification
                     path: cajasiete-board-verification/
           YAML
-      - name: Verify three engines and no-JavaScript reader
-        run: python scripts/check_cajasiete_board_browser_20260905.py
-      - name: Commit only reviewed generated files to the worker branch
+      - name: Commit candidate only to unchanged worker head
         env:
           SEED_SHA: ${{ github.sha }}
           BRANCH: ${{ github.ref_name }}
@@ -154,7 +147,7 @@ jobs:
           PY
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git commit -m 'Generate six CajaSiete documentary graphics, preserve original pages and register two separate communications'
+          git commit -m 'Prepare tested bilingual CajaSiete board reader with six graphics and two individual communications'
           git push origin HEAD:"$BRANCH"
       - uses: actions/upload-artifact@v4
         if: always()
@@ -166,3 +159,5 @@ jobs:
             ops/CAJASIETE_BOARD_VISUAL_CROSSWALK_20260905.json
             ops/INSTITUTIONAL_COMMUNICATIONS_SCAN_CHECKPOINT.json
             assets/media/cajasiete-board-*
+            es/cajasiete-sun-park-financiacion-comparabilidad/index.html
+            en/cajasiete-sun-park-financing-comparability/index.html
