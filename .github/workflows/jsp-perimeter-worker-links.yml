@@ -7,7 +7,9 @@ on:
     paths:
       - .github/workflows/jsp-perimeter-worker-links.yml
       - scripts/prepare_jsp_perimeter_worker_20260905.py
+      - scripts/link_jsp_source_supplement_20260905.py
       - archive/JSP_PERIMETER_FORENSIC_MASTER_PROMPT_05SEP2026.md
+      - archive/JSP_SOURCE_SUPPLEMENT_05SEP2026.md
       - assets/data/jsp-perimeter-research-delta-20260905.json
       - assets/jsp-montelanza-authority-map-20260905.svg
       - es/jsp-montelanza-concurso-liquidacion/index.html
@@ -29,24 +31,36 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          fetch-depth: 0
+          fetch-depth: 1
       - name: Add bounded backlinks and verify source links
         run: |
           set -euo pipefail
+          python3 scripts/link_jsp_source_supplement_20260905.py
           python3 scripts/prepare_jsp_perimeter_worker_20260905.py --report archive/JSP_PERIMETER_WORKER_LINK_QA_05SEP2026.json
           python3 scripts/prepare_jsp_perimeter_worker_20260905.py --check
+          python3 - <<'PY'
+          import hashlib, json
+          from pathlib import Path
+          p=Path('archive/JSP_PERIMETER_WORKER_LINK_QA_05SEP2026.json')
+          d=json.loads(p.read_text())
+          s=Path('archive/JSP_SOURCE_SUPPLEMENT_05SEP2026.md')
+          d['source_supplement_records']=5
+          d['source_supplement_review_boundary']='S08, S10 and S11 official text; S09 official indexed entry only; R05 third-party edict reproduction.'
+          d['hashes'][str(s)]=hashlib.sha256(s.read_bytes()).hexdigest()
+          p.write_text(json.dumps(d,ensure_ascii=False,indent=2)+'\n')
+          PY
       - name: Save verified source delta on worker only
         run: |
           set -euo pipefail
           test "${GITHUB_REF}" = "refs/heads/worker/sun-park-history-canonical-20260905"
           git diff --stat
-          git fetch origin worker/sun-park-history-canonical-20260905
+          git fetch origin worker/sun-park-history-canonical-20260905 --depth=1
           test "$(git rev-parse FETCH_HEAD)" = "${GITHUB_SHA}"
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add es/montelanza-monte-lanza-sl/index.html en/montelanza-monte-lanza-sl/index.html es/asuncion-aizpurua-sanchez/index.html en/asuncion-aizpurua-sanchez/index.html es/jsp-montelanza-concurso-liquidacion/index.html en/jsp-montelanza-insolvency-liquidation/index.html archive/JSP_PERIMETER_FORENSIC_MASTER_PROMPT_05SEP2026.md archive/JSP_PERIMETER_WORKER_LINK_QA_05SEP2026.json
+          git add es/montelanza-monte-lanza-sl/index.html en/montelanza-monte-lanza-sl/index.html es/asuncion-aizpurua-sanchez/index.html en/asuncion-aizpurua-sanchez/index.html es/jsp-montelanza-concurso-liquidacion/index.html en/jsp-montelanza-insolvency-liquidation/index.html archive/JSP_PERIMETER_FORENSIC_MASTER_PROMPT_05SEP2026.md archive/JSP_PERIMETER_WORKER_LINK_QA_05SEP2026.json assets/data/jsp-perimeter-research-delta-20260905.json
           if ! git diff --cached --quiet; then
-            git commit -m "Link JSP research reciprocally and save bounded source QA"
+            git commit -m "Link JSP research and primary-source supplement; save bounded QA"
             git push origin HEAD:worker/sun-park-history-canonical-20260905
           fi
           {
@@ -62,6 +76,7 @@ jobs:
           name: jsp-worker-research-pages-chart-and-prompt
           path: |
             archive/JSP_PERIMETER_FORENSIC_MASTER_PROMPT_05SEP2026.md
+            archive/JSP_SOURCE_SUPPLEMENT_05SEP2026.md
             archive/JSP_PERIMETER_WORKER_LINK_QA_05SEP2026.json
             assets/data/jsp-perimeter-research-delta-20260905.json
             assets/jsp-montelanza-authority-map-20260905.svg
