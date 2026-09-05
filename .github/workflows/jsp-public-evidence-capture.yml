@@ -1,0 +1,53 @@
+name: JSP public evidence capture
+on:
+  push:
+    branches: [worker/jsp-2017-dossier-canonical-20260905]
+    paths: [.github/workflows/jsp-public-evidence-capture.yml]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  capture:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          persist-credentials: false
+      - name: Capture complete official public notices and review snapshot
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p /tmp/jsp-evidence/sources /tmp/jsp-evidence/repository
+          git archive HEAD | tar -x -C /tmp/jsp-evidence/repository
+          git rev-parse HEAD > /tmp/jsp-evidence/source-commit.txt
+          python3 - <<'PY'
+          import urllib.request, pathlib, hashlib, json
+          out=pathlib.Path('/tmp/jsp-evidence/sources')
+          urls={
+            'BORME-C-2017-7368.pdf':'https://www.boe.es/borme/dias/2017/08/10/pdfs/BORME-C-2017-7368.pdf',
+            'BORME-C-2017-7368.html':'https://www.boe.es/diario_borme/txt.php?id=BORME-C-2017-7368',
+            'BORME-A-2015-205-35.pdf':'https://www.boe.es/borme/dias/2015/10/27/pdfs/BORME-A-2015-205-35.pdf',
+            'BORME-A-2018-201-35.pdf':'https://www.boe.es/borme/dias/2018/10/18/pdfs/BORME-A-2018-201-35.pdf',
+            'BORME-A-2021-194-38.pdf':'https://www.boe.es/borme/dias/2021/10/07/pdfs/BORME-A-2021-194-38.pdf',
+            'BORME-A-2015-230-35.pdf':'https://www.boe.es/borme/dias/2015/12/02/pdfs/BORME-A-2015-230-35.pdf'
+          }
+          records=[]
+          for name,url in urls.items():
+              try:
+                  req=urllib.request.Request(url,headers={'User-Agent':'PorDerecho-SourceReview/1.0'})
+                  with urllib.request.urlopen(req,timeout=60) as r: data=r.read(); ct=r.headers.get('Content-Type','')
+                  if name.endswith('.pdf') and not data.startswith(b'%PDF-'): raise ValueError('Not PDF bytes')
+                  (out/name).write_bytes(data)
+                  records.append(dict(file=name,url=url,bytes=len(data),sha256=hashlib.sha256(data).hexdigest(),content_type=ct,status='CAPTURED'))
+              except Exception as e: records.append(dict(file=name,url=url,status='FAILED',error=str(e)))
+          (out/'capture-manifest.json').write_text(json.dumps(records,indent=2))
+          assert next(r for r in records if r['file']=='BORME-C-2017-7368.pdf')['status']=='CAPTURED'
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: jsp-official-evidence-and-review-snapshot
+          path: /tmp/jsp-evidence
+          include-hidden-files: true
+          retention-days: 30
+          if-no-files-found: error
