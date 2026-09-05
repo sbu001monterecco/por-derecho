@@ -15,7 +15,7 @@ jobs:
         with:
           ref: ${{ github.sha }}
           fetch-depth: 1
-      - name: Correct inherited white-on-light hero text without changing any source words
+      - name: Correct inherited white-on-light text while preserving the complete main HTML
         run: |
           python3 -m pip install --quiet beautifulsoup4 pillow
           python3 - <<'PY'
@@ -27,7 +27,7 @@ jobs:
           assert old.count(anchor)==1
           new=old.replace(anchor,anchor+'#master-mynd-record.hero h1,#master-mynd-record.hero p{color:inherit}',1)
           a=BeautifulSoup(old,'html.parser');b=BeautifulSoup(new,'html.parser')
-          assert str(a.main)==str(b.main),'Main HTML must remain byte-equivalent in this head-only correction'
+          assert str(a.main)==str(b.main),'Main HTML must remain identical'
           p.write_text(new)
           p=Path('data/digital-media-asset-register-v1.json');m=json.loads(p.read_text());changed=0
           for r in m['files']:
@@ -39,20 +39,9 @@ jobs:
           p=Path('scripts/check_master_mynd_browser.py');text=p.read_text()
           anchor="        if family and DISCLOSURES[language] not in body:case['errors'].append('satire disclosure missing')"
           assert text.count(anchor)==1
-          addition='''
-        if family and language=='en':
-         for selector in ['#master-mynd-record > h1','#master-mynd-record > p']:
-          for element in page.locator(selector).all():
-           if not element.inner_text().strip():continue
-           colours=element.evaluate('''+'''"""(e)=>{const rgb=s=>(s.match(/[\\d.]+/g)||[]).slice(0,3).map(Number);let b=e;while(b&&getComputedStyle(b).backgroundColor==='rgba(0, 0, 0, 0)')b=b.parentElement;return {fg:rgb(getComputedStyle(e).color),bg:b?rgb(getComputedStyle(b).backgroundColor):[255,255,255]}}"""'''+''')
-           def lum(rgb):
-            values=[c/255 for c in rgb]
-            values=[c/12.92 if c<=.04045 else ((c+.055)/1.055)**2.4 for c in values]
-            return sum(c*w for c,w in zip(values,[.2126,.7152,.0722]))
-           l1,l2=sorted([lum(colours['fg']),lum(colours['bg'])],reverse=True)
-           ratio=(l1+.05)/(l2+.05)
-           if ratio<4.5:case['errors'].append({'low_master_narrative_contrast':selector,'ratio':ratio,'colours':colours})'''
-          text=text.replace(anchor,anchor+addition,1);p.write_text(text)
+          js="(els)=>{const rgb=s=>(s.match(/[0-9.]+/g)||[]).slice(0,3).map(Number);const lum=cs=>cs.map(c=>{c/=255;return c<=.04045?c/12.92:Math.pow((c+.055)/1.055,2.4)}).reduce((s,c,i)=>s+c*[.2126,.7152,.0722][i],0);return els.filter(e=>e.innerText.trim()).flatMap(e=>{let b=e;while(b&&getComputedStyle(b).backgroundColor==='rgba(0, 0, 0, 0)')b=b.parentElement;const fg=rgb(getComputedStyle(e).color),bg=b?rgb(getComputedStyle(b).backgroundColor):[255,255,255];const a=lum(fg),z=lum(bg),ratio=(Math.max(a,z)+.05)/(Math.min(a,z)+.05);return ratio>=4.5?[]:[{low_master_narrative_contrast:e.tagName,ratio,fg,bg}]})}"
+          added="        if family and language=='en':case['errors'].extend(page.locator('#master-mynd-record > h1, #master-mynd-record > p').evaluate_all("+repr(js)+"))"
+          p.write_text(text.replace(anchor,anchor+'\n'+added,1))
           paths=[name,'data/digital-media-asset-register-v1.json',str(p)]
           assert set(subprocess.check_output(['git','diff','--name-only'],text=True).splitlines())==set(paths)
           Path('/tmp/mm-contrast').mkdir();Path('/tmp/mm-contrast/paths.txt').write_text('\n'.join(paths))
@@ -68,7 +57,7 @@ jobs:
           git config user.name 'Por Derecho contrast repair'
           git config user.email 'noreply@users.noreply.github.com'
           while IFS= read -r path || test -n "$path"; do git add -- "$path"; done < /tmp/mm-contrast/paths.txt
-          git commit -m 'Correct English MASTER MYND inherited hero contrast with unchanged narrative and a real browser regression'
+          git commit -m 'Correct English MASTER MYND inherited hero contrast with unchanged narrative and actual browser regression'
           git push origin HEAD:refs/heads/worker/master-mynd-site-address-20260905
       - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
         if: always()
