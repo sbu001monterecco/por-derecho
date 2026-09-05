@@ -16928,5 +16928,19 @@
       "source_anchor": "archive/MF_EXTRACONCURSAL_REQUERIMIENTO_31JUL2026_FULL_TEXT_20AUG2026.md",
       "synthetic_event_rows_created": 0
     }
+  ],
+  "specialist_register_links": [
+    {
+      "control_id": "PD-CR-CONTINUITY-20260905-01",
+      "path": "assets/data/la-laguna-proceeding-pages-v1.json",
+      "object_class": "PRIVATE_PROFESSIONAL_RECOVERY_COMMUNICATION",
+      "existing_ids": [
+        "PD-CR-COM-20220218",
+        "PD-CR-COM-20220307"
+      ],
+      "native_custody": "PRIVATE",
+      "institutional_event_rows_added": 0,
+      "rule": "Federated discovery only: private-professional correspondence is not relabelled as authority notice."
+    }
   ]
 }

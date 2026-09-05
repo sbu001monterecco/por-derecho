@@ -156,6 +156,23 @@
       "live_verification_job_id": 98097657687,
       "scope": "Promoted the 26 August attributed unitary-enterprise position, manifest-only Phase-A boundary, bilingual public controls and the Patricia private-source analysis prompt after successful Pages deployment and exact affected-route readback.",
       "limits": "Publication verification proves only the recorded deployment and public-route markers; it is not proof of the attributed enterprise allegation, any person's guilt, Penal Code articles 570 bis or 570 ter, an original pact, or evidential support from the Phase-A manifest. The historical PR #922 rollback anchor remains separately preserved and eligible."
+    },
+    {
+      "release_id": "PD-CR-20260905-01-PR1465",
+      "source_sha": "dc2a720f6ae6477df6ebddb081c4b9c48c6e729a",
+      "source_tree_sha": "2939f5d2a0ba96f7733775be60b05574ad828367",
+      "pull_request": 1465,
+      "state": "LIVE_VERIFIED",
+      "website_content_changed": true,
+      "current_at_observation": true,
+      "rollback_eligible": false,
+      "effective_at": "2026-09-05T14:22:57Z",
+      "observed_at": "2026-09-05T14:25:09Z",
+      "pages_run_id": 33971512322,
+      "live_verification_run_id": 33971513405,
+      "live_verification_job_id": 101321052645,
+      "scope": "24 CR managed page additions and three controls; 27 matches. Historical observation before later releases.",
+      "limits": "Not current whole-repository deployment, identity completeness, legal proof or deadline preservation."
     }
   ],
   "corrections": [

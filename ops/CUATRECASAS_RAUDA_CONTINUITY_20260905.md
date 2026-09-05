@@ -21,3 +21,19 @@ The full private handoff, raw court copies, original emails, provider locators, 
 
 ## Reuse and deployment
 Refresh current main and PD-MTCP-20260904-01 before further work. Reuse the canonical controls above; preserve the public-safe summaries and underlying private custody distinction. The builder is deterministic and integration-only for writes. Read-only CI compares broader inherited failures with the immutable baseline, tests desktop/mobile/no-script and validates the exact changed blocks. Main automation only verifies. No unrelated worker branch, history rewrite, global gate change, email or legal filing is part of this release.
+
+## Superseding continuity and source repair — PD-CR-CONTINUITY-20260905-01
+
+The preceding preparation state is historical. PR #1465 merged as dc2a720f6ae6477df6ebddb081c4b9c48c6e729a; Pages 33971512322 and live verification 33971513405 succeeded at 2026-09-05T14:22:57Z. PR #1464 subsequently merged unified successor 090a678ad53cd9216e673b0cfc643cd084e5286c; it is no longer correctly described as unmerged. Preserve later Orion/Puzzle work.
+
+Current sources, correction denominator and obligations: `assets/data/la-laguna-proceeding-pages-v1.json` / `continuity_closure`. Central obligations: `assets/data/unitary-multitrack-criminal-first-gap-closure-v1.json`. The 36 first-handoff and 22 second-handoff review keys are reconciled without inventing 58 primary events. Both full handoffs and sensitive source/strategy remain in the authorised private Library/source system. Future substantive work must retrieve those packages by control ID, not reconstruct originals from public summaries.
+
+RAUDA retains PD-SP-O-0084; official B566926 entries identify RAUDA ALSP S.L.P., not its specific case mandate. The pending record and queue task remain in history/completed tasks. Role, service, claim allocation, transfer and causation remain open obligations. Historical source literals are not silently rewritten.
+
+The user-command ^ is broader than the displayed identity caret: audit registration, provenance, relations, chronology, reciprocal links, publication and continuity. A prose mention or ID is not the complete audit. Never claim all is^ without a finite denominator and zero material exceptions.
+
+Apply PD-MTCP-20260904-01: refresh main and latest #1428 comments. Explicit single-writer ownership covers a declared branch and file scope. Workers do not append unrelated changes to that branch without integrator acceptance. An interrupted deployment is reconciled against actual successor bytes, never repaired by publishing an older tree. Already-running threads must explicitly refresh; rules do not retroactively update their memory.
+
+Old CR writers are retired. Their --check/--live use the successor verifier. Do not reset complete identity, communications or page files to the preparation snapshot. Preserve later additions while validating owned blocks, IDs and boundaries. Evidence changes only the layer actually proved.
+
+Technical closure, registration, publication and proof closure are distinct. Seven production obligations remain OPEN_SOURCE_REQUIRED with custodians and tests. Unrelated broad red jobs are not certified repaired. No new universal hard gate, protection change, external communication or filing.
