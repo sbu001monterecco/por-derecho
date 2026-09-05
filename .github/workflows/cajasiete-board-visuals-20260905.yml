@@ -1,4 +1,4 @@
-name: CajaSiete board visual preparation
+name: Preserve CajaSiete candidate and checkpoint diagnostic
 on:
   push:
     branches: [worker/cajasiete-board-visuals-20260905]
@@ -8,10 +8,12 @@ concurrency:
   group: cajasiete-board-preparation-20260905
   cancel-in-progress: false
 jobs:
-  prepare:
+  preserve:
     if: github.ref == 'refs/heads/worker/cajasiete-board-visuals-20260905' && github.actor != 'github-actions[bot]'
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 12
+    env:
+      PYTHONHASHSEED: '0'
     steps:
       - uses: actions/checkout@v4
         with:
@@ -19,82 +21,64 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Install fixed rendering and browser tools
+      - run: python -m pip install cairosvg==2.8.2 pillow==11.3.0 beautifulsoup4==4.14.3
+      - name: Generate candidate without publishing
+        run: python scripts/prepare_cajasiete_board_visuals_20260905.py apply
+      - name: Capture exact reproducibility diagnostic without suppressing the final result
         run: |
-          python -m pip install cairosvg==2.8.2 pillow==11.3.0 beautifulsoup4==4.14.3 playwright==1.55.0
-          python -m playwright install --with-deps chromium firefox webkit
-      - name: Generate reviewed derivative and reconcile final checkpoint
-        run: |
-          python scripts/prepare_cajasiete_board_visuals_20260905.py apply
-          python scripts/reconcile_institutional_communications.py --apply
-          python scripts/reconcile_institutional_communications.py --check
-          python scripts/validate_institutional_communications.py
           python - <<'PY'
-          import sys
+          import json,subprocess,sys,hashlib,difflib
+          from pathlib import Path
           sys.path.insert(0,'scripts')
           from prepare_cajasiete_board_visuals_20260905 import check,read,save,REPORT
-          old=read(REPORT);r=check()
+          cp=Path('ops/INSTITUTIONAL_COMMUNICATIONS_SCAN_CHECKPOINT.json')
+          before=cp.read_text()
+          commands=[['python','scripts/reconcile_institutional_communications.py','--apply'],['python','scripts/reconcile_institutional_communications.py','--check'],['python','scripts/validate_institutional_communications.py']]
+          outcomes=[]
+          for cmd in commands:
+              p=subprocess.run(cmd,text=True,capture_output=True)
+              outcomes.append({'command':cmd,'returncode':p.returncode,'stdout':p.stdout[-12000:],'stderr':p.stderr[-12000:]})
+              print(json.dumps(outcomes[-1],ensure_ascii=False,indent=2))
+          after=cp.read_text()
+          diff=''.join(difflib.unified_diff(before.splitlines(True),after.splitlines(True),fromfile='checkpoint-before-second-apply',tofile='checkpoint-after-second-apply'))
+          print(diff)
+          expected_diff=''
+          try:
+              import reconcile_institutional_communications as m
+              expected=m.build_checkpoint(hashlib.sha256(Path('assets/data/institutional-communications-register-v1.json').read_bytes()).hexdigest(),m.sha256_file(m.DEFAULT_SOURCE),m.sha256_file(m.DEFAULT_MAILBOX_INDEX))
+              expected_text=m.canonical_json_bytes(expected).decode()
+              expected_diff=''.join(difflib.unified_diff(after.splitlines(True),expected_text.splitlines(True),fromfile='actual-checkpoint',tofile='expected-from-current-builder'))
+              print(expected_diff)
+          except Exception as exc:
+              expected_diff='Introspection unavailable: '+type(exc).__name__+': '+str(exc)
+              print(expected_diff)
+          r=check();old=read(REPORT)
           for k in ['existing_events_preserved','open_proof']:r[k]=old[k]
           save(REPORT,r)
+          d={'control_id':'PD-CAJASIETE-BOARD-VISUALS-20260905','publication_status':'WORKER_CANDIDATE_NOT_MERGED_NOT_DEPLOYED','commands':outcomes,'second_apply_diff':diff,'expected_checkpoint_diff':expected_diff,'bounded_static_check':'PASS','browser_verification':'NOT_RUN','all_recorded_commands_pass':all(x['returncode']==0 for x in outcomes),'universal_completeness_claim':False}
+          save('ops/CAJASIETE_BOARD_DIAGNOSTIC_20260905.json',d)
+          Path('archive/CAJASIETE_BOARD_VISUAL_HANDOVER_20260905.md').write_text('''# CajaSiete board/compliance visual candidate — NOT DEPLOYED
+
+Control: PD-CAJASIETE-BOARD-VISUALS-20260905.
+
+User authorised the three ES/EN documentary visuals and deployment on the existing CajaSiete routes. This worker does not race the active integration lane in Control Tower #1428. No main write, merge, Pages publication, email send or private-source disclosure has been performed by this release.
+
+Six logical graphics and twelve exact SVG/PNG files, eight additive page projections and two individual communication records are prepared. Original page bytes and existing canonical event objects are checked for preservation. Exact identities and hashes are in the crosswalk and static report; reconcile them with then-current main before integration. The original commercial enquiry remains separate from protected-channel handling. Announced deletion is not proved deletion or unlawfulness. Orion is not shown as acquiring the hotel. Later notice does not establish earlier knowledge. No private email, access credential or unsent outreach text is included.
+
+Earlier workflow runs 33985271183 and 33986031141 reported a checkpoint drift; 33985717068 failed a preparation assertion. Those failures are not waived. Read ops/CAJASIETE_BOARD_DIAGNOSTIC_20260905.json for the actual final command outcomes and exact diff. A static pass does not mean browser acceptance, final-head CI, a publication permit, merge, deployment or live verification. Browser testing remains required.
+
+Closure: reconcile current-main identities and overlapping page changes; resolve any diagnostic failure; run unchanged-tree register/media/privacy and three-engine mobile/no-JS checks; retire preparation mutation; integrate through the sole authorised lane; verify successful exact-SHA Pages deployment and actual affected route/image bytes. Do not claim universal repository completeness.
+''')
           PY
-      - name: Create bounded read-only browser regression
-        run: |
-          cat > scripts/check_cajasiete_board_browser_20260905.py <<'PY'
-          import argparse,json,threading,functools,http.server
-          from playwright.sync_api import sync_playwright
-          from prepare_cajasiete_board_visuals_20260905 import ROOT,ROUTES,CONTROL
-          p=argparse.ArgumentParser();p.add_argument('--live',action='store_true');a=p.parse_args()
-          out=ROOT/'cajasiete-board-verification';out.mkdir(exist_ok=True)
-          if not a.live:
-              handler=functools.partial(http.server.SimpleHTTPRequestHandler,directory=str(ROOT.parent))
-              server=http.server.ThreadingHTTPServer(('127.0.0.1',8765),handler)
-              threading.Thread(target=server.serve_forever,daemon=True).start()
-          base='https://sbu001monterecco.github.io/por-derecho/' if a.live else 'http://127.0.0.1:8765/'+ROOT.name+'/'
-          rows=[]
-          with sync_playwright() as pw:
-              for engine in ['chromium','firefox','webkit']:
-                  browser=getattr(pw,engine).launch()
-                  for lang in ['es','en']:
-                      for width,js in [(390,True),(1440,True),(375,False)]:
-                          ctx=browser.new_context(viewport={'width':width,'height':900},java_script_enabled=js)
-                          page=ctx.new_page();response=page.goto(base+ROUTES[lang]['caja'],wait_until='domcontentloaded',timeout=60000)
-                          assert response.status==200
-                          section=page.locator('#board-compliance');assert section.count()==1
-                          images=section.locator('figure img');assert images.count()==3
-                          for i in range(3):
-                              images.nth(i).scroll_into_view_if_needed()
-                              images.nth(i).evaluate('(e)=>{e.loading="eager";return e.decode()}')
-                              assert images.nth(i).evaluate('(e)=>e.complete && e.naturalWidth===1080')
-                          bounds=section.bounding_box();assert bounds['x']>=-1 and bounds['x']+bounds['width']<=width+1
-                          assert section.locator('.caja-boundary').is_visible()
-                          assert page.locator('#caja-commercial-original').count()==1
-                          assert page.locator('#notice-20260905').count()==1
-                          overflow=page.evaluate('document.documentElement.scrollWidth>innerWidth')
-                          if engine=='chromium' and js:section.screenshot(path=str(out/f'{lang}-{width}.png'),timeout=60000)
-                          rows.append({'engine':engine,'language':lang,'width':width,'javascript':js,'new_component_overflow':False,'whole_document_overflow_recorded':overflow,'images_decoded':3,'status':'PASS'})
-                          ctx.close()
-                  browser.close()
-          assert len(rows)==18
-          report={'scope':CONTROL,'status':'LIVE_RENDERED_PASS' if a.live else 'CANDIDATE_RENDERED_PASS','cases':rows,'actual_physical_handset_test':False,'universal_completeness_claim':False}
-          (out/'browser-report.json').write_text(json.dumps(report,indent=2));print(json.dumps(report,indent=2))
-          PY
-          python scripts/check_cajasiete_board_browser_20260905.py
-      - name: Retire worker writer to read-only manual verification
+      - name: Retire this one-shot writer to read-only diagnostics
         run: |
           cat > .github/workflows/cajasiete-board-visuals-20260905.yml <<'YAML'
-          name: Verify CajaSiete board visuals
+          name: Verify CajaSiete board candidate
           on:
             workflow_dispatch:
-              inputs:
-                live:
-                  description: 'Check deployed exact bytes and rendered routes'
-                  required: false
-                  default: 'false'
-                  type: choice
-                  options: ['false', 'true']
             pull_request:
               paths:
-                - 'scripts/*cajasiete_board*20260905.py'
+                - 'scripts/prepare_cajasiete_board_visuals_20260905.py'
                 - 'assets/media/cajasiete-board-*'
                 - 'ops/CAJASIETE_BOARD_*'
                 - 'ops/cajasiete-board-*'
@@ -105,33 +89,19 @@ jobs:
           jobs:
             verify:
               runs-on: ubuntu-latest
-              timeout-minutes: 20
               steps:
                 - uses: actions/checkout@v4
-                  with:
-                    fetch-depth: 0
                 - uses: actions/setup-python@v5
                   with:
                     python-version: '3.12'
                 - run: |
-                    python -m pip install cairosvg==2.8.2 pillow==11.3.0 beautifulsoup4==4.14.3 playwright==1.55.0
-                    python -m playwright install --with-deps chromium firefox webkit
+                    python -m pip install cairosvg==2.8.2 pillow==11.3.0 beautifulsoup4==4.14.3
                     python scripts/prepare_cajasiete_board_visuals_20260905.py check
                     python scripts/reconcile_institutional_communications.py --check
                     python scripts/validate_institutional_communications.py
-                    python scripts/check_cajasiete_board_browser_20260905.py
                     git diff --exit-code
-                - if: github.event_name == 'workflow_dispatch' && inputs.live == 'true'
-                  run: |
-                    python scripts/prepare_cajasiete_board_visuals_20260905.py live
-                    python scripts/check_cajasiete_board_browser_20260905.py --live
-                - uses: actions/upload-artifact@v4
-                  if: always()
-                  with:
-                    name: cajasiete-board-verification
-                    path: cajasiete-board-verification/
           YAML
-      - name: Commit candidate only to unchanged worker head
+      - name: Preserve candidate only on the exact worker head
         env:
           SEED_SHA: ${{ github.sha }}
           BRANCH: ${{ github.ref_name }}
@@ -142,22 +112,35 @@ jobs:
           import json,subprocess
           from pathlib import Path
           r=json.loads(Path('ops/CAJASIETE_BOARD_VISUAL_ACCEPTANCE_20260905.json').read_text())
-          files=list(r['paths'])+['ops/CAJASIETE_BOARD_VISUAL_ACCEPTANCE_20260905.json','scripts/prepare_cajasiete_board_visuals_20260905.py','scripts/check_cajasiete_board_browser_20260905.py','.github/workflows/cajasiete-board-visuals-20260905.yml']
-          subprocess.run(['git','add','--']+files,check=True)
+          paths=list(r['paths'])+['ops/CAJASIETE_BOARD_VISUAL_ACCEPTANCE_20260905.json','ops/CAJASIETE_BOARD_DIAGNOSTIC_20260905.json','archive/CAJASIETE_BOARD_VISUAL_HANDOVER_20260905.md','.github/workflows/cajasiete-board-visuals-20260905.yml']
+          subprocess.run(['git','add','--']+paths,check=True)
           PY
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git commit -m 'Prepare tested bilingual CajaSiete board reader with six graphics and two individual communications'
+          git commit -m 'Preserve CajaSiete source-controlled visual candidate and explicit unresolved acceptance state'
           git push origin HEAD:"$BRANCH"
       - uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: cajasiete-board-candidate
+          name: cajasiete-board-preserved-candidate
           path: |
-            cajasiete-board-verification/
-            ops/CAJASIETE_BOARD_VISUAL_ACCEPTANCE_20260905.json
-            ops/CAJASIETE_BOARD_VISUAL_CROSSWALK_20260905.json
-            ops/INSTITUTIONAL_COMMUNICATIONS_SCAN_CHECKPOINT.json
+            ops/CAJASIETE_BOARD_*.json
+            ops/cajasiete-board-source-input-20260905.json
+            scripts/prepare_cajasiete_board_visuals_20260905.py
+            scripts/reconcile_institutional_communications.py
+            archive/CAJASIETE_BOARD_VISUAL_HANDOVER_20260905.md
             assets/media/cajasiete-board-*
+            assets/data/institutional-communications-register-v1.json
+            data/digital-media-asset-register-v1.json
+            ops/INSTITUTIONAL_COMMUNICATIONS_SCAN_CHECKPOINT.json
             es/cajasiete-sun-park-financiacion-comparabilidad/index.html
             en/cajasiete-sun-park-financing-comparability/index.html
+      - name: Report actual validation state, not a publication success
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          d=json.loads(Path('ops/CAJASIETE_BOARD_DIAGNOSTIC_20260905.json').read_text())
+          assert d['all_recorded_commands_pass'], 'Worker preserved; recorded validation failures remain open. NOT DEPLOYED.'
+          print('Recorded checks passed; candidate preserved. Browser/integration/deployment are NOT certified.')
+          PY
