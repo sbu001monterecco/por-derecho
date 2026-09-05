@@ -197,44 +197,60 @@
     "control_id": "PD-SP-ORION-NOTICE-20260905",
     "crosswalk": "ops/ORION_NOTICE_CANONICAL_CROSSWALK_20260905.json",
     "event_ids": [
-      "PD-SP-EVT-0159",
-      "PD-SP-EVT-0160",
+      "PD-SP-EVT-0168",
+      "PD-SP-EVT-0169",
+      "PD-SP-EVT-0170",
+      "PD-SP-EVT-0176",
       "PD-SP-EVT-0161",
+      "PD-SP-EVT-0160",
       "PD-SP-EVT-0162",
+      "PD-SP-EVT-0171",
+      "PD-SP-EVT-0173",
+      "PD-SP-EVT-0175",
+      "PD-SP-EVT-0177",
+      "PD-SP-EVT-0178",
+      "PD-SP-EVT-0159",
       "PD-SP-EVT-0163",
       "PD-SP-EVT-0164",
       "PD-SP-EVT-0165",
       "PD-SP-EVT-0166",
       "PD-SP-EVT-0167",
-      "PD-SP-EVT-0168",
-      "PD-SP-EVT-0169",
-      "PD-SP-EVT-0170",
-      "PD-SP-EVT-0171",
       "PD-SP-EVT-0172",
-      "PD-SP-EVT-0173",
-      "PD-SP-EVT-0174",
-      "PD-SP-EVT-0175",
-      "PD-SP-EVT-0176",
-      "PD-SP-EVT-0177",
-      "PD-SP-EVT-0178"
+      "PD-SP-EVT-0174"
     ],
     "evidence_boundary": "Notice, review and corporate relationships do not transfer criminal responsibility."
   },
   "notice_edges": [
     {
       "attribution_boundary": "Use the event-specific proof ceiling; receipt is not merits adoption.",
-      "event_id": "PD-SP-EVT-0159",
-      "route_en": "en/institutional-records/#communication-PD-SP-EVT-0159",
-      "route_es": "es/registros-institucionales/#communication-PD-SP-EVT-0159",
-      "source_id": "PD-SP-SRC-0004",
+      "event_id": "PD-SP-EVT-0168",
+      "route_en": "en/institutional-records/#communication-PD-SP-EVT-0168",
+      "route_es": "es/registros-institucionales/#communication-PD-SP-EVT-0168",
+      "source_id": "PD-SP-SRC-0013",
       "type": "SOURCE_TO_INDIVIDUAL_EVENT"
     },
     {
       "attribution_boundary": "Use the event-specific proof ceiling; receipt is not merits adoption.",
-      "event_id": "PD-SP-EVT-0160",
-      "route_en": "en/institutional-records/#communication-PD-SP-EVT-0160",
-      "route_es": "es/registros-institucionales/#communication-PD-SP-EVT-0160",
-      "source_id": "PD-SP-SRC-0005",
+      "event_id": "PD-SP-EVT-0169",
+      "route_en": "en/institutional-records/#communication-PD-SP-EVT-0169",
+      "route_es": "es/registros-institucionales/#communication-PD-SP-EVT-0169",
+      "source_id": "PD-SP-SRC-0014",
+      "type": "SOURCE_TO_INDIVIDUAL_EVENT"
+    },
+    {
+      "attribution_boundary": "Use the event-specific proof ceiling; receipt is not merits adoption.",
+      "event_id": "PD-SP-EVT-0170",
+      "route_en": "en/institutional-records/#communication-PD-SP-EVT-0170",
+      "route_es": "es/registros-institucionales/#communication-PD-SP-EVT-0170",
+      "source_id": "PD-SP-SRC-0015",
+      "type": "SOURCE_TO_INDIVIDUAL_EVENT"
+    },
+    {
+      "attribution_boundary": "Use the event-specific proof ceiling; receipt is not merits adoption.",
+      "event_id": "PD-SP-EVT-0176",
+      "route_en": "en/institutional-records/#communication-PD-SP-EVT-0176",
+      "route_es": "es/registros-institucionales/#communication-PD-SP-EVT-0176",
+      "source_id": "PD-SP-SRC-0019",
       "type": "SOURCE_TO_INDIVIDUAL_EVENT"
     },
     {
@@ -247,10 +263,66 @@
     },
     {
       "attribution_boundary": "Use the event-specific proof ceiling; receipt is not merits adoption.",
+      "event_id": "PD-SP-EVT-0160",
+      "route_en": "en/institutional-records/#communication-PD-SP-EVT-0160",
+      "route_es": "es/registros-institucionales/#communication-PD-SP-EVT-0160",
+      "source_id": "PD-SP-SRC-0005",
+      "type": "SOURCE_TO_INDIVIDUAL_EVENT"
+    },
+    {
+      "attribution_boundary": "Use the event-specific proof ceiling; receipt is not merits adoption.",
       "event_id": "PD-SP-EVT-0162",
       "route_en": "en/institutional-records/#communication-PD-SP-EVT-0162",
       "route_es": "es/registros-institucionales/#communication-PD-SP-EVT-0162",
       "source_id": "PD-SP-SRC-0007",
+      "type": "SOURCE_TO_INDIVIDUAL_EVENT"
+    },
+    {
+      "attribution_boundary": "Use the event-specific proof ceiling; receipt is not merits adoption.",
+      "event_id": "PD-SP-EVT-0171",
+      "route_en": "en/institutional-records/#communication-PD-SP-EVT-0171",
+      "route_es": "es/registros-institucionales/#communication-PD-SP-EVT-0171",
+      "source_id": "PD-SP-SRC-0018",
+      "type": "SOURCE_TO_INDIVIDUAL_EVENT"
+    },
+    {
+      "attribution_boundary": "Use the event-specific proof ceiling; receipt is not merits adoption.",
+      "event_id": "PD-SP-EVT-0173",
+      "route_en": "en/institutional-records/#communication-PD-SP-EVT-0173",
+      "route_es": "es/registros-institucionales/#communication-PD-SP-EVT-0173",
+      "source_id": "PD-SP-SRC-0020",
+      "type": "SOURCE_TO_INDIVIDUAL_EVENT"
+    },
+    {
+      "attribution_boundary": "Use the event-specific proof ceiling; receipt is not merits adoption.",
+      "event_id": "PD-SP-EVT-0175",
+      "route_en": "en/institutional-records/#communication-PD-SP-EVT-0175",
+      "route_es": "es/registros-institucionales/#communication-PD-SP-EVT-0175",
+      "source_id": "PD-SP-SRC-0018",
+      "type": "SOURCE_TO_INDIVIDUAL_EVENT"
+    },
+    {
+      "attribution_boundary": "Use the event-specific proof ceiling; receipt is not merits adoption.",
+      "event_id": "PD-SP-EVT-0177",
+      "route_en": "en/institutional-records/#communication-PD-SP-EVT-0177",
+      "route_es": "es/registros-institucionales/#communication-PD-SP-EVT-0177",
+      "source_id": "PD-SP-SRC-0020",
+      "type": "SOURCE_TO_INDIVIDUAL_EVENT"
+    },
+    {
+      "attribution_boundary": "Use the event-specific proof ceiling; receipt is not merits adoption.",
+      "event_id": "PD-SP-EVT-0178",
+      "route_en": "en/institutional-records/#communication-PD-SP-EVT-0178",
+      "route_es": "es/registros-institucionales/#communication-PD-SP-EVT-0178",
+      "source_id": "PD-SP-SRC-0021",
+      "type": "SOURCE_TO_INDIVIDUAL_EVENT"
+    },
+    {
+      "attribution_boundary": "Use the event-specific proof ceiling; receipt is not merits adoption.",
+      "event_id": "PD-SP-EVT-0159",
+      "route_en": "en/institutional-records/#communication-PD-SP-EVT-0159",
+      "route_es": "es/registros-institucionales/#communication-PD-SP-EVT-0159",
+      "source_id": "PD-SP-SRC-0004",
       "type": "SOURCE_TO_INDIVIDUAL_EVENT"
     },
     {
@@ -295,38 +367,6 @@
     },
     {
       "attribution_boundary": "Use the event-specific proof ceiling; receipt is not merits adoption.",
-      "event_id": "PD-SP-EVT-0168",
-      "route_en": "en/institutional-records/#communication-PD-SP-EVT-0168",
-      "route_es": "es/registros-institucionales/#communication-PD-SP-EVT-0168",
-      "source_id": "PD-SP-SRC-0013",
-      "type": "SOURCE_TO_INDIVIDUAL_EVENT"
-    },
-    {
-      "attribution_boundary": "Use the event-specific proof ceiling; receipt is not merits adoption.",
-      "event_id": "PD-SP-EVT-0169",
-      "route_en": "en/institutional-records/#communication-PD-SP-EVT-0169",
-      "route_es": "es/registros-institucionales/#communication-PD-SP-EVT-0169",
-      "source_id": "PD-SP-SRC-0014",
-      "type": "SOURCE_TO_INDIVIDUAL_EVENT"
-    },
-    {
-      "attribution_boundary": "Use the event-specific proof ceiling; receipt is not merits adoption.",
-      "event_id": "PD-SP-EVT-0170",
-      "route_en": "en/institutional-records/#communication-PD-SP-EVT-0170",
-      "route_es": "es/registros-institucionales/#communication-PD-SP-EVT-0170",
-      "source_id": "PD-SP-SRC-0015",
-      "type": "SOURCE_TO_INDIVIDUAL_EVENT"
-    },
-    {
-      "attribution_boundary": "Use the event-specific proof ceiling; receipt is not merits adoption.",
-      "event_id": "PD-SP-EVT-0171",
-      "route_en": "en/institutional-records/#communication-PD-SP-EVT-0171",
-      "route_es": "es/registros-institucionales/#communication-PD-SP-EVT-0171",
-      "source_id": "PD-SP-SRC-0018",
-      "type": "SOURCE_TO_INDIVIDUAL_EVENT"
-    },
-    {
-      "attribution_boundary": "Use the event-specific proof ceiling; receipt is not merits adoption.",
       "event_id": "PD-SP-EVT-0172",
       "route_en": "en/institutional-records/#communication-PD-SP-EVT-0172",
       "route_es": "es/registros-institucionales/#communication-PD-SP-EVT-0172",
@@ -335,50 +375,10 @@
     },
     {
       "attribution_boundary": "Use the event-specific proof ceiling; receipt is not merits adoption.",
-      "event_id": "PD-SP-EVT-0173",
-      "route_en": "en/institutional-records/#communication-PD-SP-EVT-0173",
-      "route_es": "es/registros-institucionales/#communication-PD-SP-EVT-0173",
-      "source_id": "PD-SP-SRC-0020",
-      "type": "SOURCE_TO_INDIVIDUAL_EVENT"
-    },
-    {
-      "attribution_boundary": "Use the event-specific proof ceiling; receipt is not merits adoption.",
       "event_id": "PD-SP-EVT-0174",
       "route_en": "en/institutional-records/#communication-PD-SP-EVT-0174",
       "route_es": "es/registros-institucionales/#communication-PD-SP-EVT-0174",
       "source_id": "PD-SP-SRC-0017",
-      "type": "SOURCE_TO_INDIVIDUAL_EVENT"
-    },
-    {
-      "attribution_boundary": "Use the event-specific proof ceiling; receipt is not merits adoption.",
-      "event_id": "PD-SP-EVT-0175",
-      "route_en": "en/institutional-records/#communication-PD-SP-EVT-0175",
-      "route_es": "es/registros-institucionales/#communication-PD-SP-EVT-0175",
-      "source_id": "PD-SP-SRC-0018",
-      "type": "SOURCE_TO_INDIVIDUAL_EVENT"
-    },
-    {
-      "attribution_boundary": "Use the event-specific proof ceiling; receipt is not merits adoption.",
-      "event_id": "PD-SP-EVT-0176",
-      "route_en": "en/institutional-records/#communication-PD-SP-EVT-0176",
-      "route_es": "es/registros-institucionales/#communication-PD-SP-EVT-0176",
-      "source_id": "PD-SP-SRC-0019",
-      "type": "SOURCE_TO_INDIVIDUAL_EVENT"
-    },
-    {
-      "attribution_boundary": "Use the event-specific proof ceiling; receipt is not merits adoption.",
-      "event_id": "PD-SP-EVT-0177",
-      "route_en": "en/institutional-records/#communication-PD-SP-EVT-0177",
-      "route_es": "es/registros-institucionales/#communication-PD-SP-EVT-0177",
-      "source_id": "PD-SP-SRC-0020",
-      "type": "SOURCE_TO_INDIVIDUAL_EVENT"
-    },
-    {
-      "attribution_boundary": "Use the event-specific proof ceiling; receipt is not merits adoption.",
-      "event_id": "PD-SP-EVT-0178",
-      "route_en": "en/institutional-records/#communication-PD-SP-EVT-0178",
-      "route_es": "es/registros-institucionales/#communication-PD-SP-EVT-0178",
-      "source_id": "PD-SP-SRC-0021",
       "type": "SOURCE_TO_INDIVIDUAL_EVENT"
     }
   ],

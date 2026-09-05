@@ -4,7 +4,7 @@
   "control_id": "PD-SP-ORION-NOTICE-20260905",
   "event_count": 20,
   "existing_event_rows_preserved": 313,
-  "existing_public_figures": 3,
+  "existing_public_figures": 4,
   "input_sha256": "51092f022de7c4f82a7c69972f85fac9d8339ca3dcc50d501b3e494e6ad7a9aa",
   "managed_files": [
     "en/institutional-records/index.html",
@@ -103,6 +103,6 @@
   ],
   "source_count": 24,
   "status": "SCOPED_STATIC_VALIDATION_PASS",
-  "unique_added_links_checked": 118,
+  "unique_added_links_checked": 119,
   "universal_completeness_claim": false
 }

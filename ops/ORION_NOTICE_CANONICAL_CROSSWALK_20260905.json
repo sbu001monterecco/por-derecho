@@ -162,8 +162,10 @@
       "source_kind": "EXPLANATORY_EXHIBIT; not a primary judicial or liability finding"
     },
     "A-ST-EN": {
+      "attachment_equivalence": "EXISTING_PUBLIC_FIGURE under EN filename alias; native email attachment hash equivalence not asserted",
       "native_document_identity": "NO_DUPLICATE_DOCUMENT_ID_ALLOCATED; attachment/source occurrence only",
-      "public_asset_state": "SOURCE_DESCRIPTION_ONLY; retained original not newly published",
+      "public_asset": "assets/evidence/email-used-20260822/san-telmo-ricpe-sun-park-stamp-v1-EN.png",
+      "public_asset_sha256": "2006db8fdd5684299bd166324ae749f1407f50c90485072ac34254bf73bb0c1f",
       "source_id": "PD-SP-SRC-0027",
       "source_kind": "EXPLANATORY_EXHIBIT; not a primary judicial or liability finding"
     },
