@@ -2,7 +2,7 @@
   "schema": "por-derecho.publication-runtime.v1",
   "fence": 5,
   "owner": "1474:ffd8bf81b639d85e8e29574f6059dc87bd12a0ab",
-  "phase": "DEPLOYED",
+  "phase": "VERIFIED_FOR_SCOPE",
   "pr": 1474,
   "base_sha": "01116d63e93eb1e2819ae53a4060104477883407",
   "candidate_sha": "ffd8bf81b639d85e8e29574f6059dc87bd12a0ab",
@@ -482,6 +482,107 @@
       ],
       "pending": [],
       "scope": "Changed readable public resources plus ES/EN entrypoints. Browser checks are separate premerge evidence; not a whole-site or legal-proof certificate."
+    },
+    {
+      "pr": 1474,
+      "candidate_sha": "ffd8bf81b639d85e8e29574f6059dc87bd12a0ab",
+      "at": "2026-09-05T21:08:12.872922Z",
+      "merge_sha": "65d56cec10e11f5a5c0861bb087ee87e64f5effa",
+      "pages_run_id": 33992060567,
+      "exact_matches": [
+        {
+          "path": "assets/data/jsp-2017-source-relationship-register.json",
+          "sha256": "a4c323e483a91df0e2a050a38a808566b8ea02a50aa967b5cf3e99105adde4c7",
+          "bytes": 12626
+        },
+        {
+          "path": "assets/data/jsp-official-images-provenance-20260905.json",
+          "sha256": "501270df7fcf163866f86fd51f2ad957f205104ef8d4fb17a559a736937d28c5",
+          "bytes": 3128
+        },
+        {
+          "path": "assets/data/matter-identity-registry-v1.json",
+          "sha256": "a2fb4a70a2842d330435494b9b70bb6805955af33d23a968f295b04b9e577a70",
+          "bytes": 10570
+        },
+        {
+          "path": "assets/data/matter-identity-registry-v1.jsp-organisations-20260905.json",
+          "sha256": "e4915b72c3b341311111b3522bb77b48bf55dd8f2ef9f1eb97e89fe3dea22845",
+          "bytes": 8491
+        },
+        {
+          "path": "assets/data/matter-identity-registry-v1.jsp-people-20260905.json",
+          "sha256": "8428dec2d0426319126cad78dd31adf7256e99b45ce97bda7ee81c0f83669b51",
+          "bytes": 6237
+        },
+        {
+          "path": "assets/data/matter-identity-registry-v1.jsp-proceedings-20260905.json",
+          "sha256": "1cd612303665770869b7e0e63337ce012e018437331090e2cbce64403d171f16",
+          "bytes": 1118
+        },
+        {
+          "path": "assets/evidence/jsp-2017/BORME-C-2017-7368.pdf",
+          "sha256": "78df26e04206117a5dbebaa2fc337643841c58e85455905eb53f686d7500fad9",
+          "bytes": 156956
+        },
+        {
+          "path": "assets/evidence/jsp-2017/borme-c-2017-7368-full-page.webp",
+          "sha256": "bc713c9d9e07c3f696f4583f15589df283f77bb00eb81fb47f749207022a1e8f",
+          "bytes": 71028
+        },
+        {
+          "path": "assets/evidence/jsp-2017/borme-c-2017-7368-item-five.webp",
+          "sha256": "2d83e06b6962b6e87f99ec9264303d4448ccaea8ebe2e7bc6cabd2ce555c0ff3",
+          "bytes": 7450
+        },
+        {
+          "path": "assets/jsp-dossier-2017.css",
+          "sha256": "1dc543feac34dc4088f918847ea3582b112db63c770c812376f02f5692972bd5",
+          "bytes": 3554
+        },
+        {
+          "path": "assets/jsp-dossier-2017.js",
+          "sha256": "346e0b4e77d97fc5f18705aaab50191ad1406b89511e80f205e727bb0c60c4fa",
+          "bytes": 10304
+        },
+        {
+          "path": "en/index.html",
+          "sha256": "d349550044cfbce031e78970314845e34a91944a5c7c10b7e7ecc9fdefe0c8ee",
+          "bytes": 227486
+        },
+        {
+          "path": "en/jsp-montelanza-insolvency-liquidation/index.html",
+          "sha256": "62ec41e01ac78bbbd15b3b3f80734b32266b4bf8551a04fde426332b398a0077",
+          "bytes": 14082
+        },
+        {
+          "path": "en/matter-identity-registry/index.html",
+          "sha256": "050dcc7cb36baff032e8574e4404e5aaa6746b0507c790905038a07a7d9a2162",
+          "bytes": 17753
+        },
+        {
+          "path": "es/index.html",
+          "sha256": "c47306600ffbb11fc3803c5e482a0afbdf8740d4df5031eea752878480ed7927",
+          "bytes": 236632
+        },
+        {
+          "path": "es/jsp-montelanza-concurso-liquidacion/index.html",
+          "sha256": "df47bd06537c1aa58c2a296329e2f2423ab7c52ad06d29405a97cc9e3dd0c9f3",
+          "bytes": 14678
+        },
+        {
+          "path": "es/registro-identidad-materia/index.html",
+          "sha256": "c532e468ba3fc6be89370f594c41142f814cb88e50e619968697dd740a5aa3c0",
+          "bytes": 18318
+        },
+        {
+          "path": "ops/CURRENT_UNITARY_STATE.json",
+          "sha256": "f452de17ef0b3dc791d9d3aae3456591405e2c58176503338150b2f8057aaf24",
+          "bytes": 20120
+        }
+      ],
+      "pending": [],
+      "scope": "Changed readable public resources plus ES/EN entrypoints. Browser checks are separate premerge evidence; not a whole-site or legal-proof certificate."
     }
   ],
   "checkpoints": [
@@ -524,7 +625,109 @@
         "pages_run_id": 33992060567,
         "merge_sha": "65d56cec10e11f5a5c0861bb087ee87e64f5effa"
       }
+    },
+    {
+      "phase": "VERIFIED_FOR_SCOPE",
+      "at": "2026-09-05T21:08:12.872887Z",
+      "evidence": {
+        "merge_sha": "65d56cec10e11f5a5c0861bb087ee87e64f5effa",
+        "pages_run_id": 33992060567,
+        "exact_matches": [
+          {
+            "path": "assets/data/jsp-2017-source-relationship-register.json",
+            "sha256": "a4c323e483a91df0e2a050a38a808566b8ea02a50aa967b5cf3e99105adde4c7",
+            "bytes": 12626
+          },
+          {
+            "path": "assets/data/jsp-official-images-provenance-20260905.json",
+            "sha256": "501270df7fcf163866f86fd51f2ad957f205104ef8d4fb17a559a736937d28c5",
+            "bytes": 3128
+          },
+          {
+            "path": "assets/data/matter-identity-registry-v1.json",
+            "sha256": "a2fb4a70a2842d330435494b9b70bb6805955af33d23a968f295b04b9e577a70",
+            "bytes": 10570
+          },
+          {
+            "path": "assets/data/matter-identity-registry-v1.jsp-organisations-20260905.json",
+            "sha256": "e4915b72c3b341311111b3522bb77b48bf55dd8f2ef9f1eb97e89fe3dea22845",
+            "bytes": 8491
+          },
+          {
+            "path": "assets/data/matter-identity-registry-v1.jsp-people-20260905.json",
+            "sha256": "8428dec2d0426319126cad78dd31adf7256e99b45ce97bda7ee81c0f83669b51",
+            "bytes": 6237
+          },
+          {
+            "path": "assets/data/matter-identity-registry-v1.jsp-proceedings-20260905.json",
+            "sha256": "1cd612303665770869b7e0e63337ce012e018437331090e2cbce64403d171f16",
+            "bytes": 1118
+          },
+          {
+            "path": "assets/evidence/jsp-2017/BORME-C-2017-7368.pdf",
+            "sha256": "78df26e04206117a5dbebaa2fc337643841c58e85455905eb53f686d7500fad9",
+            "bytes": 156956
+          },
+          {
+            "path": "assets/evidence/jsp-2017/borme-c-2017-7368-full-page.webp",
+            "sha256": "bc713c9d9e07c3f696f4583f15589df283f77bb00eb81fb47f749207022a1e8f",
+            "bytes": 71028
+          },
+          {
+            "path": "assets/evidence/jsp-2017/borme-c-2017-7368-item-five.webp",
+            "sha256": "2d83e06b6962b6e87f99ec9264303d4448ccaea8ebe2e7bc6cabd2ce555c0ff3",
+            "bytes": 7450
+          },
+          {
+            "path": "assets/jsp-dossier-2017.css",
+            "sha256": "1dc543feac34dc4088f918847ea3582b112db63c770c812376f02f5692972bd5",
+            "bytes": 3554
+          },
+          {
+            "path": "assets/jsp-dossier-2017.js",
+            "sha256": "346e0b4e77d97fc5f18705aaab50191ad1406b89511e80f205e727bb0c60c4fa",
+            "bytes": 10304
+          },
+          {
+            "path": "en/index.html",
+            "sha256": "d349550044cfbce031e78970314845e34a91944a5c7c10b7e7ecc9fdefe0c8ee",
+            "bytes": 227486
+          },
+          {
+            "path": "en/jsp-montelanza-insolvency-liquidation/index.html",
+            "sha256": "62ec41e01ac78bbbd15b3b3f80734b32266b4bf8551a04fde426332b398a0077",
+            "bytes": 14082
+          },
+          {
+            "path": "en/matter-identity-registry/index.html",
+            "sha256": "050dcc7cb36baff032e8574e4404e5aaa6746b0507c790905038a07a7d9a2162",
+            "bytes": 17753
+          },
+          {
+            "path": "es/index.html",
+            "sha256": "c47306600ffbb11fc3803c5e482a0afbdf8740d4df5031eea752878480ed7927",
+            "bytes": 236632
+          },
+          {
+            "path": "es/jsp-montelanza-concurso-liquidacion/index.html",
+            "sha256": "df47bd06537c1aa58c2a296329e2f2423ab7c52ad06d29405a97cc9e3dd0c9f3",
+            "bytes": 14678
+          },
+          {
+            "path": "es/registro-identidad-materia/index.html",
+            "sha256": "c532e468ba3fc6be89370f594c41142f814cb88e50e619968697dd740a5aa3c0",
+            "bytes": 18318
+          },
+          {
+            "path": "ops/CURRENT_UNITARY_STATE.json",
+            "sha256": "f452de17ef0b3dc791d9d3aae3456591405e2c58176503338150b2f8057aaf24",
+            "bytes": 20120
+          }
+        ],
+        "pending": [],
+        "scope": "Changed readable public resources plus ES/EN entrypoints. Browser checks are separate premerge evidence; not a whole-site or legal-proof certificate."
+      }
     }
   ],
-  "updated_at": "2026-09-05T21:08:01.393828Z"
+  "updated_at": "2026-09-05T21:08:12.872887Z"
 }
