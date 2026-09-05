@@ -20,8 +20,13 @@ try:
     overflow=page.evaluate('document.documentElement.scrollWidth > innerWidth + 2')
     assert not overflow, f'Overflow {langroute} {width}'
     assert response.status==200
+    if width<=650:
+     assert not page.locator('.main-nav').is_visible(), 'Mobile menu must stay closed until opened'
+    page.evaluate("document.querySelector('#media-desk').scrollIntoView({block:'start'})")
+    page.wait_for_timeout(300)
+    page.screenshot(path=str(OUT/f'{langroute[:2]}-{width}-desk-viewport.png'),full_page=False)
     page.screenshot(path=str(OUT/f'{langroute[:2]}-{width}.png'),full_page=True)
-    results.append({'route':langroute,'width':width,'status':response.status,'overflow':overflow,'page_errors':errors,'desk_cards':6})
+    results.append({'route':langroute,'width':width,'status':response.status,'overflow':overflow,'page_errors':errors,'desk_cards':6,'mobile_navigation_overlay':False if width<=650 else None})
     page.close()
   for langroute in ROUTES:
    page=browser.new_page(java_script_enabled=False,viewport={'width':390,'height':844});page.goto('http://127.0.0.1:8765/'+langroute+'#media-desk')

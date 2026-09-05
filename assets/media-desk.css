@@ -9,5 +9,5 @@
 #media-desk a:focus-visible{outline:3px solid currentColor;outline-offset:4px}
 #media-desk .media-desk-note{padding:1.2rem;border-left:4px solid currentColor;background:rgba(128,128,128,.08)}
 #media-desk .media-desk-footnote{font-size:.9rem;border-top:1px solid currentColor;padding-top:1rem}
-@media(max-width:650px){#media-desk .media-desk-grid{grid-template-columns:1fr}.media-desk-page .main-nav{display:flex}.media-desk-page .header-inner{align-items:flex-start}}
+@media(max-width:650px){#media-desk .media-desk-grid{grid-template-columns:1fr}.media-desk-page .header-inner{align-items:flex-start}}
 @media print{#media-desk .media-desk-grid{display:block}#media-desk .card{break-inside:avoid}}

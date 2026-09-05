@@ -1,0 +1,31 @@
+{
+  "schema": "por-derecho.publication-state.v1",
+  "schema_version": "1.0.0",
+  "publication_id": "PD-MEDIA-DASHBOARD-20260905-01",
+  "current_state": "REMOTE_SOURCE",
+  "owner": "Gil Marer / Por Derecho",
+  "expected_routes": {
+    "es": ["es/medios-trazabilidad-relato-publico/index.html"],
+    "en": ["en/media-public-narrative-traceability/index.html"]
+  },
+  "expected_source_files": ["assets/media-desk.css", "assets/data/unitary-route-registry-sync-20260819.json", "sitemap-discovery-navigation.xml", "ops/media-dashboard/build_release.py", "ops/media-dashboard/section-es.html", "ops/media-dashboard/section-en.html", "ops/media-dashboard/test_release.py", "ops/media-dashboard/browser_check.py", "ops/media-dashboard/RELEASE_CANDIDATE.md"],
+  "source_main": "adc8c87585609709caafdd90f03ffbb4a4687d83",
+  "source_branch": "worker/media-dashboard-plan-20260905",
+  "generated_source_commit": "0698f869a04760b811ce9daf81a1da385cc0be4f",
+  "target_fragment": "media-desk",
+  "publication_scope": "Additive bilingual public source desk on existing routes; no private contact data, correspondence, email action, authenticated service or AI implementation.",
+  "public_scope_approved": true,
+  "email_authorized": false,
+  "active_integrator_required": true,
+  "merge_sha": null,
+  "deployment_evidence": null,
+  "live_verification_evidence": null,
+  "validation": {
+    "evidence": ["https://github.com/sbu001monterecco/por-derecho/actions/runs/33982237560"],
+    "interpretation": "Historical candidate preparation:26 tests and browser/source checks. Later visual review found forced-open mobile navigation; current scoped fix must pass repeat browser and exact-diff checks. The earlier publication diagnostic inspected zero changed files and is not release-diff acceptance."
+  },
+  "pending_gates": ["Repeat browser verification of closed mobile menu and visible source desk", "Read-only publication/preservation/audience checks with non-empty declared Git range", "Current-main reconciliation through active integration lane after queued higher-priority repair", "Merged Pages deployment and actual public-byte/browser verification"],
+  "canonical_register_mutated": false,
+  "prior_preview_record": "ops/media-dashboard/README.md",
+  "implementation_record": "ops/media-dashboard/RELEASE_CANDIDATE.md"
+}
