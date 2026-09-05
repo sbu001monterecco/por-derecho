@@ -1,0 +1,118 @@
+name: Puzzle anonymous external readback
+on:
+  push:
+    branches: ['worker/puzzle-repair-verification-20260905-b']
+    paths: ['.github/workflows/puzzle-external-readback-20260905.yml']
+permissions:
+  contents: read
+concurrency:
+  group: puzzle-external-readback-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  external-readback:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install browser test dependencies
+        run: |
+          python -m pip install playwright==1.55.0 pypdf==6.0.0
+          python -m playwright install --with-deps chromium firefox webkit
+      - name: Read anonymous production routes and all tracked repository paths
+        shell: bash
+        run: |
+          mkdir -p /tmp/puzzle-readback
+          python - <<'PY'
+          import hashlib, json, os, pathlib, subprocess, urllib.request, urllib.error
+          from datetime import datetime, timezone
+          from playwright.sync_api import sync_playwright
+          out=pathlib.Path('/tmp/puzzle-readback')
+          base='https://sbu001monterecco.github.io/por-derecho/'
+          report={'recorded_at':datetime.now(timezone.utc).isoformat(),'worker_sha':os.environ['GITHUB_SHA'],'test_type':'ANONYMOUS_PUBLIC_NETWORK_AND_EMULATED_VIEWPORTS_NOT_PHYSICAL_DEVICES','devices':[],'assets':[],'errors':[]}
+          paths=subprocess.check_output(['git','ls-files','-z']).decode().split('\0')
+          paths=[p for p in paths if p]
+          report['repository_inventory']={'tracked_files':len(paths),'html_files':sum(p.endswith('.html') for p in paths),'json_files':sum(p.endswith('.json') for p in paths),'inventory_sha256':hashlib.sha256('\n'.join(sorted(paths)).encode()).hexdigest(),'scope':'every tracked path enumerated; not a substantive merits review of every file'}
+          (out/'tracked-paths.txt').write_text('\n'.join(sorted(paths)))
+          req=urllib.request.Request('https://api.github.com/repos/sbu001monterecco/por-derecho/git/ref/heads/main',headers={'User-Agent':'Por-Derecho-Puzzle-readback','Accept':'application/vnd.github+json'})
+          try:
+              with urllib.request.urlopen(req,timeout=30) as r: report['main_at_start']=json.load(r)['object']['sha']
+          except Exception as e: report['errors'].append('main read: '+str(e))
+          for path in ['assets/docs/puzzle/PUZZLE-2024-original.pdf','assets/docs/puzzle/PUZZLE-2024-web-reading-copy.pdf','assets/docs/puzzle/PUZZLE-2024-overview.jpg','data/puzzle/puzzle-reading-guide-2026.json']:
+              item={'path':path,'method':'anonymous GET'}
+              try:
+                  request=urllib.request.Request(base+path,headers={'User-Agent':'Por-Derecho-Puzzle-readback'})
+                  with urllib.request.urlopen(request,timeout=90) as r:
+                      data=r.read(); item.update(status=r.status,content_type=r.headers.get('Content-Type'),bytes=len(data),sha256=hashlib.sha256(data).hexdigest())
+                  if path.endswith('.pdf'):
+                      import io
+                      from pypdf import PdfReader
+                      item['pdf_magic']=data.startswith(b'%PDF-');item['pages']=len(PdfReader(io.BytesIO(data)).pages)
+                      if path.endswith('original.pdf'):item['exact_master_match']=item['sha256']=='e441bdb368c0092d5b15ca5ee911eeac266540bde54817e424f3075f4c5fdd47'
+              except urllib.error.HTTPError as e: item.update(status=e.code,error=str(e))
+              except Exception as e: item.update(status=None,error=str(e))
+              report['assets'].append(item)
+          with sync_playwright() as pw:
+              for engine in ['chromium','firefox','webkit']:
+                  browser=getattr(pw,engine).launch()
+                  for name,width,height in [('desktop',1440,900),('phone',390,844),('tablet',820,1180)]:
+                      for lang in ['en','es']:
+                          ctx=browser.new_context(viewport={'width':width,'height':height},has_touch=name!='desktop',locale=lang,accept_downloads=True)
+                          page=ctx.new_page();errors=[];page.on('pageerror',lambda e:errors.append(str(e)))
+                          item={'engine':engine,'browser_version':browser.version,'viewport':name,'width':width,'height':height,'lang':lang,'url':base+lang+'/puzzle/#p10'}
+                          try:
+                              resp=page.goto(item['url'],wait_until='domcontentloaded',timeout=60000);item['http_status']=resp.status if resp else None
+                              viewer=page.locator('[data-pd-puzzle-viewer]').first
+                              try:viewer.wait_for(state='visible',timeout=20000)
+                              except Exception:item['viewer_visible']=False
+                              page.wait_for_timeout(2000)
+                              item['viewer_visible']=viewer.count()>0 and viewer.is_visible()
+                              item['horizontal_overflow']=page.evaluate('document.documentElement.scrollWidth > innerWidth + 2')
+                              item['page_errors']=errors[:12]
+                              if item['viewer_visible']:
+                                  item['source_state']=viewer.get_attribute('data-pdf-state');inp=viewer.locator('[data-page-input]');item['deep_link_page']=inp.input_value()
+                                  viewer.locator('[data-action="next"]').click();item['next_page']=inp.input_value()
+                                  viewer.locator('[data-action="prev"]').click();item['previous_page']=inp.input_value()
+                                  inp.fill('32');inp.dispatch_event('change');item['direct_entry_page']=inp.input_value()
+                                  inp.fill('10');inp.dispatch_event('change')
+                                  item['original_downloads']=viewer.locator('a[data-original-pdf]').evaluate_all('(aa)=>aa.map(a=>({href:a.href,download:a.getAttribute("download"),disabled:a.getAttribute("aria-disabled")}))')
+                                  viewer.locator('[data-action="zoom-in"]').click();viewer.locator('[data-action="fit"]').click()
+                                  viewer.locator('[data-action="presentation"]').click();item['presentation_mode']=viewer.evaluate('(e)=>e.classList.contains("presentation-mode")');viewer.locator('[data-action="presentation"]').click()
+                                  if engine=='chromium' and name=='desktop':
+                                      try:
+                                          viewer.locator('[data-action="fullscreen"]').click();page.wait_for_timeout(400);item['fullscreen_entered']=page.evaluate('!!document.fullscreenElement');page.evaluate('document.fullscreenElement ? document.exitFullscreen() : null')
+                                      except Exception as e:item['fullscreen_error']=str(e)[:300]
+                                  item['image_render_count']=viewer.locator('img').evaluate_all('(aa)=>aa.filter(a=>a.complete&&a.naturalWidth>0).length')
+                                  item['iframe_source']=viewer.locator('iframe').first.get_attribute('src') if viewer.locator('iframe').count() else None
+                              page.screenshot(path=str(out/(engine+'-'+name+'-'+lang+'.png')),full_page=False)
+                          except Exception as e:item['error']=str(e)[:800]
+                          report['devices'].append(item);ctx.close()
+                  browser.close()
+          try:
+              with urllib.request.urlopen(req,timeout=30) as r: report['main_at_end']=json.load(r)['object']['sha']
+          except Exception as e: report['errors'].append('end main read: '+str(e))
+          original=next(x for x in report['assets'] if x['path'].endswith('original.pdf'))
+          report['original_download_verified']=original.get('exact_master_match') is True and original.get('pages')==32
+          report['all_viewports_show_source']=len(report['devices'])==18 and all(d.get('viewer_visible') and d.get('source_state')=='ready' for d in report['devices'])
+          report['acceptance']='FAIL_SOURCE_OR_DEVICE_GATE' if not (report['original_download_verified'] and report['all_viewports_show_source']) else 'NETWORK_AND_CONTROL_CHECKS_PASS_RENDER_REVIEW_REQUIRED'
+          (out/'report.json').write_text(json.dumps(report,ensure_ascii=False,indent=2))
+          print(json.dumps(report,ensure_ascii=False,indent=2))
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: puzzle-anonymous-readback
+          path: /tmp/puzzle-readback
+          retention-days: 7
+      - name: Enforce real-source acceptance without changing production
+        run: |
+          python - <<'PY'
+          import json
+          p=json.load(open('/tmp/puzzle-readback/report.json'))
+          assert p['original_download_verified'], 'The authentic original PDF was not verified on the public website.'
+          assert p['all_viewports_show_source'], 'At least one anonymous browser/viewport did not show the source-ready viewer.'
+          PY
