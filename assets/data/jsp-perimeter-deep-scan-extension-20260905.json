@@ -1,0 +1,154 @@
+{
+  "schema": "por-derecho.worker-delta-extension.v1",
+  "control_id": "PD-JSP-RESEARCH-20260905-V2",
+  "date": "2026-09-05",
+  "role": "WORKER",
+  "readiness": "RESEARCH_ONLY",
+  "current_main_observed": "e482e29325091bcc32af3fd2b2624335c6699e19",
+  "worker_branch": "worker/sun-park-history-canonical-20260905",
+  "master_prompt": "archive/JSP_PERIMETER_FORENSIC_MASTER_PROMPT_V2_05SEP2026.md",
+  "existing_public_candidates": {
+    "es": "es/jsp-montelanza-concurso-liquidacion/index.html",
+    "en": "en/jsp-montelanza-insolvency-liquidation/index.html",
+    "controlled_chart": "assets/jsp-montelanza-authority-map-20260905.svg"
+  },
+  "publication_boundary": "Existing JSP routes and chart are WORKER branch material. This extension does not certify merge, deployment or live readback. Do not duplicate the JSP page; deepen these existing routes during integration.",
+  "new_primary_or_official_anchors": [
+    {
+      "key": "JSP-V2-S12",
+      "type": "official_shareholder_notice",
+      "date": "2017-08-10",
+      "source": "https://www.boe.es/diario_borme/txt.php?id=BORME-C-2017-7368",
+      "proposition": "Shareholders representing more than 5% of JSP capital required explanations and clarifications about the sale of the Sun Park Complex and the majority of Explobeach shares, expanding explanations already given at previous general meetings.",
+      "limit": "Does not identify each legal seller, finca, price, completion or retained asset."
+    },
+    {
+      "key": "JSP-V2-S13",
+      "type": "official_judicial_auction_notice",
+      "date": "1995-09-29",
+      "source": "https://www.boe.es/boe/dias/1995/09/29/pdfs/B17319-17408.pdf",
+      "proposition": "JSP was claimant in enforcement 144/1993 against Maria Angeles Poveda Leon; finca 8661, Sun-Park apartment 123, was advertised as the defendant's seized property.",
+      "limit": "Does not prove JSP acquired the apartment; recover auction outcome and title chain."
+    },
+    {
+      "key": "JSP-V2-S14",
+      "type": "official_accounts_deposit_notice",
+      "year": 2008,
+      "source": "https://www.boe.es/diario_borme/txt.php?id=BORME-B-2009-192-35&lang=es",
+      "proposition": "JSP deposited consolidated accounts for 2008.",
+      "limit": "Obtain deposited accounts to identify consolidation perimeter and ownership/control basis."
+    },
+    {
+      "key": "JSP-V2-S15",
+      "type": "official_accounts_deposit_notice",
+      "year": 2009,
+      "source": "https://www.boe.es/diario_borme/txt.php?id=BORME-B-2010-198-35&lang=es",
+      "proposition": "JSP deposited consolidated accounts for 2009.",
+      "limit": "Deposit notice is not the account contents."
+    },
+    {
+      "key": "JSP-V2-S16",
+      "type": "official_accounts_deposit_notice",
+      "year": 2010,
+      "source": "https://www.boe.es/diario_borme/txt.php?id=BORME-B-2011-191-35",
+      "proposition": "JSP deposited consolidated accounts for 2010.",
+      "limit": "Deposit notice is not the account contents."
+    },
+    {
+      "key": "JSP-V2-S17",
+      "type": "official_registry_notice",
+      "date": "2015-11-23",
+      "source": "https://www.boe.es/diario_borme/txt.php?id=BORME-A-2015-230-35",
+      "proposition": "Explobeach changed from board governance to Hotel Royal Playa Blanca SL as sole administrator after recorded cessations of Jose Sanchez Rodriguez, Jose Vicente Llinares Dorta and Domingo Bello Cabrera.",
+      "limit": "Administration does not prove share ownership or the purchaser of the majority interest."
+    },
+    {
+      "key": "JSP-V2-S18",
+      "type": "official_company_law",
+      "source": "https://www.boe.es/buscar/act.php?id=BOE-A-2010-10544",
+      "proposition": "LSC 383 requires opening inventory/balance; 386 books/document/correspondence custody; 390 final balance/full report/distribution project; 395 extinction deed incorporating final balance and shareholder/quota list; 398 addresses supervening assets.",
+      "limit": "Use historical wording effective at each Monte Lanza act."
+    },
+    {
+      "key": "JSP-V2-S19",
+      "type": "official_insolvency_law_historical",
+      "source": "https://www.boe.es/buscar/act.php?id=BOE-A-2020-4859&p=20211103&tn=0",
+      "proposition": "Historical TRLC 226 used a two-year pre-declaration special rescission window; 238 preserved other general-law challenges; 2021 article 478 was narrower than the post-2022 account-rendering text.",
+      "limit": "Apply Ley 16/2022 transitional rules to later liquidation/account events."
+    },
+    {
+      "key": "JSP-V2-S20",
+      "type": "official_property_registry_doctrine",
+      "source": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2018-5027",
+      "proposition": "Community acquisition/title requires analysis of exact legal configuration because a property owners' community generally lacks ordinary legal personality while having collective procedural/patrimonial capacity.",
+      "limit": "Does not establish the Sun Park Community transaction mechanism."
+    },
+    {
+      "key": "JSP-V2-S21",
+      "type": "official_property_registry_doctrine",
+      "source": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2018-3262",
+      "proposition": "For a procomunal element registered to owners, the exact consent/disposition requirements cannot be replaced by an assumed general presidential power.",
+      "limit": "Apply only after proving the Sun Park title configuration."
+    },
+    {
+      "key": "JSP-V2-S22",
+      "type": "official_judicial_directory",
+      "source": "https://www.poderjudicial.es/cgpj/en/Services/Directory/Directory-of-judicial-bodies/Seccion-de-lo-Mercantil-del-Tribunal-de-Instancia-de-Las-Palmas-de-Gran-Canaria--Plaza-n--2",
+      "proposition": "Current directory identifies the Mercantile Section of the Las Palmas Court of Instance, Plaza 2, and lists Jose Ramon Garcia Aragon.",
+      "limit": "Does not by itself prove present personal allocation of legacy concurso 440/2021."
+    }
+  ],
+  "new_research_questions": [
+    "What exactly did JSP shareholders mean by sale of the Sun Park Complex in 2017, and which earlier meetings contained prior explanations?",
+    "Did JSP consolidated accounts classify Monte Lanza as a controlled subsidiary, associate or other interest in 2008-2010, and at what percentage/control basis?",
+    "Which Sun Park fincas or rights were expressly included, excluded, retained, released or uncompleted in the 2008 sale framework?",
+    "What did Monte Lanza's 2015 opening inventory and 2018 final balance/extinction deed show for Sun Park assets, shareholders and liquidation quotas?",
+    "What legal transaction allowed any Community acquisition of fincas 8498/8499/8500 and what authority supported onward disposition to CAM?",
+    "Were any JSP receivables, liquidation distributions, causes of action or supervening rights arising from Sun Park/Monte Lanza included or considered in concurso 440/2021?",
+    "What is the present procedural status of 440/2021 and has a final account/conclusion order been filed or made?"
+  ],
+  "new_identity_reconciliation_targets": [
+    "JOSILAC SL and date-specific natural-person representatives",
+    "Explobeach SL",
+    "Hotel Royal Playa Blanca SL",
+    "Inversiones Turisticas Playa Blanca SL",
+    "Inversiones Hoteleras Canarias SL",
+    "Francisco Sanchez Rodriguez",
+    "Julio Sanchez Rodriguez",
+    "Jose Humberto Rios Rodriguez",
+    "Rebeca Sanchez Medina",
+    "Josefa Maria Sanchez Falcon",
+    "Sabino Manuel Lopez Garcia",
+    "DECV&PARTNERS SL and representative",
+    "Pedro Casaño Martinez",
+    "Antonio Juan Perez Montenegro",
+    "Roberto Angulo Vergara",
+    "Maria Aranzazu Artal Diez",
+    "Elena Claudia Bravo de Laguna Cabrera",
+    "Maria Angeles Poveda Leon — exact identity bridge only",
+    "current judicial office/case allocation for 440/2021"
+  ],
+  "page_integration_requirements": [
+    "Highlight the 2017 shareholder Sun Park-sale information demand as a primary-source anchor.",
+    "Add the 1995 JSP-Sun Park enforcement lead with the explicit non-acquisition limitation.",
+    "Add an opening-inventory/final-balance/shareholder-quota production panel for Monte Lanza.",
+    "Add an estate-reconciliation panel for JSP 440/2021.",
+    "Show JSP-to-Monte-Lanza majority/de-facto-control only as a dashed TO PROVE edge until primary share/control evidence is recovered.",
+    "Show Community-to-CAM only as a dashed title/authority question until deeds and registry history prove the mechanism.",
+    "Keep Monte Lanza 2015-2018 and JSP 2021-later liquidation lanes visually and legally separate."
+  ],
+  "priority_production": [
+    "JSP consolidated accounts 2008, 2009, 2010 and surrounding years with auditor reports",
+    "5 September 2017 JSP AGM minutes and all prior meetings containing Sun Park-sale explanations",
+    "2008 Sun Park option/purchase/completion seller schedules and deeds",
+    "Monte Lanza opening inventory, final balance/report, extinction deed and shareholder/quota list",
+    "18 November 2016 protocol 2026 and all conditional/complementary instruments",
+    "2018 protocols 1083 and 1127 and full CAM consideration trail",
+    "440/2021 inventory/final texts, liquidation rules/reports, challenge actions, final account and conclusion status"
+  ],
+  "criminal_analysis_boundary": "Test CP 251; historical pre-2015 corporate administration provisions/current 252 as temporally applicable; 257; post-2015 259 et seq.; 290; and document/procedural falsity only element by element. Registration, economic anomaly or association alone is not criminal proof.",
+  "no_contact": true,
+  "no_filing": true,
+  "no_merge": true,
+  "no_deploy": true
+}
