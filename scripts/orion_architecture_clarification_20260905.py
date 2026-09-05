@@ -9,9 +9,7 @@ import argparse
 import collections
 import hashlib
 import json
-import re
 import subprocess
-import sys
 import time
 import urllib.request
 from html.parser import HTMLParser
@@ -26,6 +24,10 @@ GRAPH = 'assets/data/orion-rental-socimi-governance-20260905.json'
 ROUTES = {
     'en': ('en/orion-ricpe-platform-continuity/index.html', 'en/orion-rental-socimi/index.html'),
     'es': ('es/orion-ricpe-continuidad/index.html', 'es/orion-rental-socimi/index.html'),
+}
+ACOSTA = {
+    'en': 'en/acosta-matos-perimeter/index.html',
+    'es': 'es/acosta-matos-perimetro/index.html',
 }
 COPY = {
 'en': {
@@ -50,9 +52,17 @@ COPY = {
     'bridge_title': 'Documented connections, with a separate test for asset or value flows',
     'bridge': '<div class="grid"><article class="card"><h3>Pamalexsha / AGM</h3><p>The controlled audited related-party record documents FMMM’s and the Cogolludo interests in Pamalexsha and Pamalexsha’s interest in AGM. These are ownership connections, not proof of a direct Orion office for every participant or of shared intent.</p></article><article class="card"><h3>Acosta Matos / AGM / Orion</h3><p>The same record documents JDAM’s AGM interest, Grupo Patrimonial Acosta Matos’s Orion holding and disclosed Acosta-related construction and service transactions. These economic and governance links are not findings of misconduct.</p></article><article class="card"><h3>RICPE / Orion / AGM</h3><p>RICPE’s founding and financing relationship with Orion and AGM’s management role are documented. Each connection must be labelled by its function and date, rather than presented as a single ownership or money-flow chain.</p></article></div><p><strong>Two different proof questions:</strong> documented corporate and economic connections do not, by themselves, trace identifiable Sun Park assets, proceeds, fees, guarantees, collateral or other value into Orion. The latter remains an open, transaction-specific inquiry. Disclosure, conflicts and any alleged enabling conduct also require actor-specific evidence.</p>',
     'dossier_link': 'Open the audited Orion governance and related-party dossier',
+    'investors_label': 'Orion investor documents',
     'backlink': 'Read the clarified two-branch architecture',
     'panel': 'Sun Park/MYND and Orion are distinct but interconnected branches. The documented RICPE, AGM, Pamalexsha and Acosta Matos links remain within one analysis; neither a Sun Park-to-Orion asset flow nor any actor’s knowledge or liability follows automatically. The FMMM inquiry is preserved but is not the exclusive connection.',
     'reply': 'Corrections, contrary evidence and exculpatory records remain welcome. Silence is not admission.',
+    'acosta_heading_old': 'Orion: correction and boundary',
+    'acosta_heading': 'Orion: distinct but interconnected branches',
+    'acosta_lead_old': 'RICPE founded Orion and a RICPE→Orion corporate/finance architecture exists. It remains a separate branch. Later presence of related persons is not used to make Orion responsible for the Sun Park record.',
+    'acosta_lead': 'RICPE founded Orion and a RICPE→Orion corporate/finance architecture exists. Sun Park/MYND and Orion are distinct but interconnected branches, with documented RICPE, AGM, Pamalexsha and Acosta Matos connections. Those corporate and economic links do not by themselves prove an asset flow or responsibility for the Sun Park acts.',
+    'acosta_fmmm_old': 'The only Sun Park question presently developed is how',
+    'acosta_fmmm': 'One actor-specific Sun Park question remains how',
+    'acosta_guard': 'No knowledge, conduct or responsibility is attributed by association to JDAM, Shaila, Antonio, AGM or Orion. Any Sun Park/MYND→Orion patrimonial bridge must be proved specifically.',
 },
 'es': {
     'title_old': 'Orion Rental SOCIMI · rama RICPE y trayectoria de FMMM',
@@ -76,12 +86,21 @@ COPY = {
     'bridge_title': 'Vínculos documentados, con prueba separada de flujos de activos o valor',
     'bridge': '<div class="grid"><article class="card"><h3>Pamalexsha / AGM</h3><p>El registro controlado de partes vinculadas auditadas documenta las participaciones de FMMM y de los intereses Cogolludo en Pamalexsha, y la participación de Pamalexsha en AGM. Son vínculos de propiedad, no prueba de cargo directo en Orion para cada participante ni de intención compartida.</p></article><article class="card"><h3>Acosta Matos / AGM / Orion</h3><p>El mismo registro documenta la participación de JDAM en AGM, la participación de Grupo Patrimonial Acosta Matos en Orion y las operaciones declaradas de construcción y servicios vinculadas a Acosta. Estos vínculos económicos y de gobierno no constituyen hallazgos de irregularidad.</p></article><article class="card"><h3>RICPE / Orion / AGM</h3><p>La relación fundacional y financiera de RICPE con Orion y la función gestora de AGM están documentadas. Cada vínculo debe identificarse por su función y fecha, no presentarse como una única cadena de propiedad o flujo monetario.</p></article></div><p><strong>Dos cuestiones probatorias diferentes:</strong> los vínculos societarios y económicos documentados no rastrean por sí solos activos, ingresos, honorarios, garantías u otro valor identificable de Sun Park hacia Orion. Esta última cuestión sigue abierta y exige prueba operación por operación. La divulgación, los conflictos y cualquier conducta facilitadora alegada también requieren prueba individualizada.</p>',
     'dossier_link': 'Abrir el dossier auditado de gobierno y partes vinculadas de Orion',
+    'investors_label': 'Documentos para inversores de Orion',
     'backlink': 'Leer la arquitectura aclarada de las dos ramas',
     'panel': 'Sun Park/MYND y Orion son ramas distintas pero interconectadas. Los vínculos documentados RICPE, AGM, Pamalexsha y Acosta Matos permanecen dentro de un análisis conjunto; no se deduce automáticamente un flujo de activos Sun Park→Orion ni el conocimiento o la responsabilidad de ningún actor. La investigación de FMMM se conserva, pero no es el vínculo exclusivo.',
     'reply': 'Se mantienen abiertos el derecho de rectificación y la aportación de prueba contraria o exculpatoria. El silencio no implica admisión.',
+    'acosta_heading_old': 'Orion: corrección y límite',
+    'acosta_heading': 'Orion: ramas distintas pero interconectadas',
+    'acosta_lead_old': 'RICPE fundó Orion y existe una arquitectura corporativa/financiera RICPE→Orion. Se mantiene como rama separada. No se utiliza la presencia posterior de personas relacionadas para convertir Orion en responsable del expediente Sun Park.',
+    'acosta_lead': 'RICPE fundó Orion y existe una arquitectura corporativa/financiera RICPE→Orion. Sun Park/MYND y Orion son ramas distintas pero interconectadas, con vínculos documentados RICPE, AGM, Pamalexsha y Acosta Matos. Esos vínculos societarios y económicos no prueban por sí solos un flujo patrimonial ni responsabilidad por los actos de Sun Park.',
+    'acosta_fmmm_old': 'La única cuestión Sun Park que debe desarrollarse actualmente es cómo',
+    'acosta_fmmm': 'Una cuestión individual de Sun Park que sigue abierta es cómo',
+    'acosta_guard': 'No se atribuye por asociación a JDAM, Shaila, Antonio, AGM u Orion conocimiento, conducta o responsabilidad. Cualquier puente patrimonial Sun Park/MYND→Orion debe probarse específicamente.',
 }}
 
-NOTE = '''\n## Architecture clarification — 5 September 2026\n\nControl: `PD-ORION-ARCH-20260905-01`. The existing bilingual platform-continuity routes are corrected to **distinct but interconnected branches**, not an independent/unconnected Orion branch and not an FMMM-only inquiry. Sections 2–8 below remain controlling and unchanged. The audited ownership, management, related-party and RICPE formation/financing links are preserved within the unitary analysis. Every edge retains its own role, date and evidential status.\n\nDocumented corporate/economic connections are distinct from proof that identifiable Sun Park/MYND/LPB/Matkator assets, income, fees, guarantees, collateral or other value entered or supported Orion. The latter remains open and requires transaction-specific evidence. The June-2023 temporal limit prevents attribution of earlier acts to Orion itself; it does not erase earlier roles of subsequently connected individuals/entities. Knowledge, duty, conduct, disclosure, reliance, benefit and responsibility remain actor-specific. FMMM's existing professional inquiry, all attributed allegations, adverse/contrary records, lawful alternatives and the right of reply are preserved.\n\nCorrected routes: `/en/orion-ricpe-platform-continuity/` and `/es/orion-ricpe-continuidad/`; reciprocal explanatory links connect both to the existing Orion Rental SOCIMI dossiers. No new identity, event, financing figure, asset-flow finding or criminal finding is created. This clarification alone proves neither deployment nor formal service.\n'''
+NOTE = '''\n## Architecture clarification — 5 September 2026\n\nControl: `PD-ORION-ARCH-20260905-01`. The existing bilingual platform-continuity routes are corrected to **distinct but interconnected branches**, not an independent/unconnected Orion branch and not an FMMM-only inquiry. Sections 2–8 below remain controlling and unchanged. The audited ownership, management, related-party and RICPE formation/financing links are preserved within the unitary analysis. Every edge retains its own role, date and evidential status.\n\nDocumented corporate/economic connections are distinct from proof that identifiable Sun Park/MYND/LPB/Matkator assets, income, fees, guarantees, collateral or other value entered or supported Orion. The latter remains open and requires transaction-specific evidence. The June-2023 temporal limit prevents attribution of earlier acts to Orion itself; it does not erase earlier roles of subsequently connected individuals/entities. Knowledge, duty, conduct, disclosure, reliance, benefit and responsibility remain actor-specific. FMMM's existing professional inquiry, all attributed allegations, adverse/contrary records, lawful alternatives and the right of reply are preserved.\n\nCorrected routes: `/en/orion-ricpe-platform-continuity/` and `/es/orion-ricpe-continuidad/`; reciprocal explanatory links connect both to the existing Orion Rental SOCIMI dossiers. The same obsolete FMMM-only restriction is corrected in the existing bilingual Acosta Matos perimeter pages, without deleting their FMMM inquiry or their actor-specific proof warning. No new identity, event, financing figure, asset-flow finding or criminal finding is created. This clarification alone proves neither deployment nor formal service.\n'''
+PAGE_PATHS = [p for pair in ROUTES.values() for p in pair] + list(ACOSTA.values())
 ARCH = {
     'control_id': CONTROL,
     'framing_en': 'Distinct but interconnected branches',
@@ -91,7 +110,7 @@ ARCH = {
     'asset_value_flow': 'OPEN — a specific Sun Park/MYND/LPB/Matkator to Orion transfer, guarantee, collateral use or economic benefit requires separate transaction-level proof.',
     'temporal_limit': 'Orion was constituted in June 2023; earlier Sun Park acts are not attributed to Orion itself. Earlier roles of later-connected people/entities are not erased.',
     'individual_test': 'Knowledge, duties, conduct, disclosure, reliance, benefit and responsibility require actor-specific evidence; no transfer through association.',
-    'routes': ['/' + p.removesuffix('index.html') for pair in ROUTES.values() for p in pair],
+    'routes': ['/' + p.removesuffix('index.html') for p in PAGE_PATHS],
     'source_record': RECORD,
 }
 
@@ -116,7 +135,7 @@ def blocks(lang: str):
     legacy, dossier = ROUTES[lang]
     link = '../orion-rental-socimi/'
     intro = f'<div class="correction" id="{MARKER}" data-control="{CONTROL}">{c["notice"]}<p><a href="{link}">{c["dossier_link"]} →</a></p></div>'
-    bridge = f'<section class="section alt" id="documented-connections"><div class="shell record"><h2>{c["bridge_title"]}</h2>{c["bridge"]}<p><a href="{link}">{c["dossier_link"]} →</a> · <a href="https://www.boe.es/diario_borme/txt.php?id=BORME-A-2023-137-35">BORME 2023</a> · <a href="https://www.orionsocimi.com/inversores">Orion investor documents</a></p><p>{c["reply"]}</p></div></section>'
+    bridge = f'<section class="section alt" id="documented-connections"><div class="shell record"><h2>{c["bridge_title"]}</h2>{c["bridge"]}<p><a href="{link}">{c["dossier_link"]} →</a> · <a href="https://www.boe.es/diario_borme/txt.php?id=BORME-A-2023-137-35">BORME 2023</a> · <a href="https://www.orionsocimi.com/inversores">{c["investors_label"]}</a></p><p>{c["reply"]}</p></div></section>'
     back = '../' + legacy.split('/')[1] + '/#' + MARKER
     panel = f'<section class="section alt" id="{MARKER}" data-control="{CONTROL}"><div class="shell"><h2>{c["h1"]}</h2><p>{c["panel"]}</p><p><a href="{back}">{c["backlink"]} →</a></p></div></section>'
     return intro, bridge, panel
@@ -136,6 +155,16 @@ def transformed(path: str, text: str) -> str:
             if f'id="{MARKER}"' not in text:
                 text = replace_once(text, '</main>', panel + '\n</main>')
             return text
+        if path == ACOSTA[lang]:
+            before = '<section class="section"><div class="shell record"><h2>' + c['acosta_heading_old'] + '</h2>'
+            after = f'<section class="section" id="{MARKER}" data-control="{CONTROL}"><div class="shell record"><h2>' + c['acosta_heading'] + '</h2>'
+            text = replace_once(text, before, after)
+            for key in ('acosta_lead', 'acosta_fmmm'):
+                text = replace_once(text, c[key + '_old'], c[key])
+            end = '<p class="warn">' + c['acosta_guard'] + '</p></div></section>'
+            back = '../' + pair[0].split('/')[1] + '/#' + MARKER
+            linked = '<p class="warn">' + c['acosta_guard'] + f'</p><p><a href="{back}">{c["backlink"]} →</a> · <a href="../orion-rental-socimi/">{c["dossier_link"]} →</a></p></div></section>'
+            return replace_once(text, end, linked)
     if path == RECORD:
         if CONTROL not in text:
             text = replace_once(text, '\n## 2. Primary corporate chronology\n', NOTE + '\n## 2. Primary corporate chronology\n')
@@ -149,7 +178,7 @@ def transformed(path: str, text: str) -> str:
         return json.dumps(d, ensure_ascii=False, indent=2) + '\n'
     raise ValueError(path)
 
-PATHS = [p for pair in ROUTES.values() for p in pair] + [RECORD, GRAPH]
+PATHS = PAGE_PATHS + [RECORD, GRAPH]
 
 def apply():
     ref = subprocess.check_output(['git', 'branch', '--show-current'], cwd=ROOT, text=True).strip()
@@ -195,7 +224,11 @@ def check(base: str):
         assert '42/19/17/22' in text and '42/21/17/20' in text
         assert '2024136159' in text and '2024174266' in text
         checks += 3
-    # Informative finite scan; historic quoted corrections are not automatically rewritten.
+        related = (ROOT / ACOSTA[lang]).read_text()
+        assert COPY[lang]['acosta_guard'] in related
+        assert COPY[lang]['acosta_fmmm'] in related
+        assert COPY[lang]['acosta_lead'] in related
+        checks += 3
     hits = []
     for prefix in ('en', 'es', 'assets'):
         for p in (ROOT / prefix).rglob('*'):
@@ -204,13 +237,12 @@ def check(base: str):
             for term in ('independent Orion branch', 'rama Orion independiente', 'The only Sun Park question', 'La única cuestión Sun Park'):
                 if term in text: hits.append({'path': str(p.relative_to(ROOT)), 'term': term})
     print(json.dumps({'control': CONTROL, 'base': base, 'checks_passed': checks, 'other_exact_legacy_hits': hits}, ensure_ascii=False, indent=2))
-    # These exact incorrect phrases must not remain in reader-facing source or runtime data.
     assert not hits, 'Additional live-source framing contradiction requires reconciliation'
 
 def live():
     root = 'https://sbu001monterecco.github.io/por-derecho/'
     sha = subprocess.check_output(['git', 'rev-parse', 'HEAD'], cwd=ROOT, text=True).strip()
-    pending = set(PATHS[:4] + [GRAPH])
+    pending = set(PAGE_PATHS + [GRAPH])
     for attempt in range(24):
         for p in sorted(pending.copy()):
             route = p.removesuffix('index.html')
