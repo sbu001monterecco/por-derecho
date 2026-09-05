@@ -4,6 +4,8 @@
 This supplements, rather than replaces, the source/page builder. Writes remain
 integration-only. Every original operational-control field and queue row is
 preserved; a new unresolved identity must have a corresponding verification task.
+The institutional-communications register is outside this queue update and
+remains unchanged: private professional recovery is not an authority notice.
 """
 from __future__ import annotations
 import argparse,json,subprocess,time
