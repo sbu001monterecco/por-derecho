@@ -1,0 +1,111 @@
+{
+  "schema_version": "1.0.0",
+  "control_id": "PD-PUZZLE-PI-20260905-01",
+  "recorded_at": "2026-09-05",
+  "baseline": {
+    "historical_exhibit": "PUZZLE 2024 — 32-page visual map",
+    "current_reading_baseline": "21 July 2026 companion/aportación layer for DP 1956/2026 and DP 1901/2026",
+    "earlier_june_2026_sources": "Separate complaints/supplements; relevant sources but not the current PUZZLE narration baseline",
+    "filing_caution": "Document headings naming presentation on 21 July 2026 do not by themselves substitute for a registry receipt, certified court index, admission ruling or merits finding."
+  },
+  "publisher_capacity": {
+    "person": "Gil Marer",
+    "declared_roles": [
+      "directly interested person asserting personal/economic injury and affected legal/economic interests",
+      "public-interest reporter / alertador who has made reports to courts, prosecutors, regulators and public authorities"
+    ],
+    "legal_status_caution": "Declared reporting activity does not automatically establish statutory protected-informant status; each regime's personal, material, territorial and procedural conditions must be satisfied.",
+    "frameworks": [
+      {
+        "jurisdiction": "European Union",
+        "instrument": "Directive (EU) 2019/1937",
+        "status": "POTENTIALLY_RELEVANT_SUBJECT_TO_SCOPE",
+        "limit": "Reporting-person protection is structured around information acquired in a work-related context and the Directive's material/protection conditions."
+      },
+      {
+        "jurisdiction": "Spain",
+        "instrument": "Ley 2/2023, de 20 de febrero",
+        "status": "POTENTIALLY_RELEVANT_SUBJECT_TO_SCOPE",
+        "limit": "The law's personal scope is tied to information obtained in a labour/professional context and other statutory conditions; economic injury or investor status alone is not treated as sufficient."
+      },
+      {
+        "jurisdiction": "Germany",
+        "instrument": "Hinweisgeberschutzgesetz (HinSchG)",
+        "status": "POTENTIALLY_RELEVANT_ONLY_IF_GERMAN_STATUTORY_NEXUS_AND_SCOPE_MET",
+        "limit": "Protection is linked to information obtained in connection with professional activity and the Act's material/protection conditions."
+      },
+      {
+        "jurisdiction": "United Kingdom",
+        "instrument": "Employment Rights Act 1996 Part IVA / Public Interest Disclosure Act 1998",
+        "status": "POTENTIALLY_RELEVANT_ONLY_IF_WORKER_PROTECTED_DISCLOSURE_TESTS_MET",
+        "limit": "British citizenship or UK economic interest alone is not treated as creating protected-disclosure status."
+      }
+    ]
+  },
+  "foreign_investor": {
+    "entity": "Aweswell Limited",
+    "proposition": "foreign investor / UK economic-interest actor in Spain within the Por Derecho record",
+    "separation_rule": "Foreign-investor status is analytically separate from Gil Marer's asserted alertador/reporting capacity and from any statutory whistleblower protection question."
+  },
+  "public_interest_perimeter": [
+    {
+      "id": "PI-01",
+      "label": "Tax / RIC / incentive architecture",
+      "status": "OPEN_PUBLIC_FUNDS_QUESTION",
+      "question": "Which tax incentives, RIC investments, regional/state incentives, guarantees, grants or EU-linked instruments actually touched the project, which legal person received them, in what amount and on what conditions?",
+      "proof_required": ["specific instrument", "beneficiary legal person", "approval/award", "amount", "payment or tax effect", "conditions", "monitoring/recovery record"],
+      "limit": "A RIC structure, application, institutional contact or EU/regional competence does not itself prove public expenditure, loss or diversion."
+    },
+    {
+      "id": "PI-02",
+      "label": "Insolvency estate / creditor / asset-value public-interest dimension",
+      "status": "CLAIMANT_ALLEGATION",
+      "question": "Did alleged conduct reduce recoverable estate value, distort creditor treatment or obstruct funded alternatives, and what documentary counterfactual proves the amount and causation?",
+      "proof_required": ["estate perimeter", "valuations", "funded offers", "court/AC decisions", "cashflows", "creditor distributions", "causation analysis"],
+      "limit": "Loss to a private estate or investor is not automatically loss of public funds."
+    },
+    {
+      "id": "PI-03",
+      "label": "Public-authority handling and regulatory cost",
+      "status": "DOCUMENTED_INSTITUTIONAL_CONTACT",
+      "question": "What did each authority receive, verify, remit, archive, investigate or decline, and what remained outside its competence?",
+      "proof_required": ["dated submission", "receipt/reference", "authority response", "competence basis", "scope of review", "later correction"],
+      "limit": "Contact with or inaction by a public authority is not evidence that the authority agreed with Por Derecho or enabled wrongdoing."
+    },
+    {
+      "id": "PI-04",
+      "label": "Tourism, employment, taxation and local-economic effects",
+      "status": "OPEN_PUBLIC_INTEREST_QUESTION",
+      "question": "What measurable tourism, employment, tax, supplier, consumer or local-economy consequences followed from changes in possession, operation, renovation and commercialisation?",
+      "proof_required": ["employment/payroll", "tax filings", "tourism registrations", "supplier records", "occupancy/revenue", "licensing", "before/after comparator"],
+      "limit": "Economic significance is not proof of illegality or of public-fund loss."
+    },
+    {
+      "id": "PI-05",
+      "label": "Cross-border investor and EU-law dimension",
+      "status": "CONTEXT_ONLY",
+      "question": "Which cross-border investor, capital, regulatory, judicial-cooperation or EU-law rules are genuinely engaged by a UK-owned foreign investor and any German/EU-linked actors or instruments?",
+      "proof_required": ["exact investor entity", "nationality/establishment", "investment instrument", "relevant EU/national rule", "territorial nexus", "competent authority"],
+      "limit": "Cross-border status does not create a substantive breach or protection by itself."
+    }
+  ],
+  "interlink_families": [
+    "LPB / Aweswell / Oswell / Matkator / Pink Canary",
+    "CP Sun Park / CEXP / historical community actors",
+    "Caja Canarias / Bankia / BFA / SAREB / HAYA / PH122 / Cerberus / CaixaBank",
+    "CAM / Acosta Matos legal-person cluster and named actors",
+    "RICPE / PwC / San Telmo and verified professional actors",
+    "Insolvency Administrator / judicial actors / Ministerio Fiscal / public authorities",
+    "tourism/commercial operators and financing/investment actors",
+    "all materially connected proceedings and public-authority records"
+  ],
+  "voice_legend": [
+    "DOCUMENTED_FACT",
+    "COURT_OR_AUTHORITY_ACT",
+    "PARTY_POSITION",
+    "POR_DERECHO_ALLEGATION",
+    "INFERENCE_OR_HYPOTHESIS",
+    "OPEN_PRODUCTION_QUESTION",
+    "COUNTER_EVIDENCE_OR_ALTERNATIVE_EXPLANATION"
+  ]
+}
