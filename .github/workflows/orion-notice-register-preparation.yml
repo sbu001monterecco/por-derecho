@@ -54,11 +54,15 @@ jobs:
           p.write_text(text)
           p=pathlib.Path('.github/evidence-intelligence/schemas/institutional-communications.schema.json')
           text=p.read_text()
-          old='"source_batch_id": {"const": "PD-SP-AUTH-COMMS-SCAN-20260901"}'
-          new='"source_batch_id": {"enum": ["PD-SP-AUTH-COMMS-SCAN-20260901", "PD-SP-ORION-NOTICE-20260905"]}'
-          if new not in text:
-            assert text.count(old)==1
-            p.write_text(text.replace(old,new,1))
+          fixes={
+            '"source_batch_id": {"const": "PD-SP-AUTH-COMMS-SCAN-20260901"}':'"source_batch_id": {"enum": ["PD-SP-AUTH-COMMS-SCAN-20260901", "PD-SP-ORION-NOTICE-20260905"]}',
+            '"if": {"properties": {"attribution_state": {"const": "SOURCE_PROVED_SIGNATORY"}}}':'"if": {"required": ["attribution_state"], "properties": {"attribution_state": {"const": "SOURCE_PROVED_SIGNATORY"}}}'
+          }
+          for old,new in fixes.items():
+            if new in text: continue
+            assert text.count(old)==1, old
+            text=text.replace(old,new,1)
+          p.write_text(text)
       - name: Build canonical register and existing bilingual projections
         run: |
           python -m py_compile scripts/prepare_orion_notice_register_20260905.py
@@ -72,6 +76,20 @@ jobs:
           python scripts/build_redsara_age_filings_register.py --check
           python scripts/validate_redsara_authority_discovery.py
           python scripts/prepare_orion_notice_register_20260905.py check
+      - name: Verify the optional-signatory condition still rejects unproved identity
+        shell: python
+        run: |
+          import json, copy, jsonschema, pathlib
+          schema=json.loads(pathlib.Path('.github/evidence-intelligence/schemas/institutional-communications.schema.json').read_text())
+          data=json.loads(pathlib.Path('assets/data/institutional-communications-register-v1.json').read_text())
+          validator=jsonschema.Draft202012Validator(schema)
+          assert not list(validator.iter_errors(data))
+          bad=copy.deepcopy(data)
+          bad['events'][0]['attribution_state']='SOURCE_PROVED_SIGNATORY'
+          failures=list(validator.iter_errors(bad))
+          assert any('signatory_person_id' in x.message for x in failures)
+          assert any('signatory_person_label' in x.message for x in failures)
+          print('PASS: absent attribution is not invented; asserted source-proved signatory still requires both identity fields.')
       - name: Preserve only the validated canonical delta on the integration branch
         shell: python
         run: |
