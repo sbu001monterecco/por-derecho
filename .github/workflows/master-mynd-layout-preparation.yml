@@ -21,7 +21,7 @@ jobs:
           python3 - <<'PY'
           from pathlib import Path
           from bs4 import BeautifulSoup
-          import json,subprocess
+          import json,subprocess,hashlib
           paths=['en/acosta-matos-family/index.html','es/acosta-matos-familia/index.html']
           evidence=[]
           for name in paths:
@@ -42,6 +42,15 @@ jobs:
               assert [e.get('href') for e in old.main.select('a')]==[e.get('href') for e in new.main.select('a')],('link changed',name)
               assert [e.get('src') for e in old.main.select('img')]==[e.get('src') for e in new.main.select('img')],('image changed',name)
               p.write_text(text);evidence.append({'path':name,'all_main_text_ids_links_images_identical':True})
+          media_path=Path('data/digital-media-asset-register-v1.json');media=json.loads(media_path.read_text())
+          updated=[]
+          for record in media['files']:
+              name=record.get('repository_path')
+              if name in paths:
+                  record.setdefault('prior_surface_versions',[]).append({'sha256':record['sha256'],'bytes':record['bytes'],'state':'SUPERSEDED_BY_SOURCE_IDENTICAL_READING_ORDER_REPAIR','source_head':'7a07778d120ce9ef777668758b2f449785fc10b5'})
+                  data=Path(name).read_bytes();record['bytes']=len(data);record['sha256']=hashlib.sha256(data).hexdigest();updated.append(name)
+          assert set(updated)==set(paths)
+          media_path.write_text(json.dumps(media,ensure_ascii=False,indent=2)+'\n');paths.append(str(media_path))
           p=Path('scripts/check_master_mynd_browser.py');text=p.read_text()
           old="resources={'assets/data/sun-park-mynd-yaiza-site-v1.json'"
           assert text.count(old)==1
