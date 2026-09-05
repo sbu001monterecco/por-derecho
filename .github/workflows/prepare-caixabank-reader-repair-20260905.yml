@@ -1,71 +1,20 @@
-name: Prepare CaixaBank reader repair on isolated worker
+name: Retired CaixaBank preparation - read-only validation
 on:
-  push:
-    branches: ['worker/caixabank-360-audit-20260905']
-    paths: ['.github/workflows/prepare-caixabank-reader-repair-20260905.yml']
   workflow_dispatch:
 permissions:
-  contents: write
-concurrency:
-  group: prepare-caixabank-reader-repair-${{ github.ref }}
-  cancel-in-progress: false
+  contents: read
 jobs:
-  prepare:
-    if: github.ref == 'refs/heads/worker/caixabank-360-audit-20260905'
+  validate:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 5
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
         with:
           persist-credentials: false
-          fetch-depth: 0
-      - name: Verify current main ancestry and prepare checked receipt metadata only
+      - name: Validate previously prepared public derivatives only
         run: |
-          git merge-base --is-ancestor origin/main HEAD
-          python3 scripts/prepare_caixabank_receipt_reconciliation_20260905.py
-          git diff --check
-      - name: Preserve the four prepared public-safe changes on this worker only
-        env:
-          GH_TOKEN: ${{ github.token }}
-        run: |
-          python3 - <<'PY'
-          import base64,json,os,pathlib,subprocess
-          branch='worker/caixabank-360-audit-20260905'
-          assert os.environ['GITHUB_REF']=='refs/heads/'+branch
-          paths=json.loads(pathlib.Path('/tmp/caixabank-receipt-prepared-paths.json').read_text())
-          assert len(paths)==4 and all(not p.startswith('.github/') for p in paths)
-          subprocess.run(['git','add','--',*paths],check=True)
-          if subprocess.run(['git','diff','--cached','--quiet']).returncode:
-              subprocess.run(['git','config','user.name','github-actions[bot]'],check=True)
-              subprocess.run(['git','config','user.email','41898282+github-actions[bot]@users.noreply.github.com'],check=True)
-              subprocess.run(['git','commit','-m','Record checked claim receipt inventory and exact-file identity limitation'],check=True)
-              auth=base64.b64encode(('x-access-token:'+os.environ['GH_TOKEN']).encode()).decode()
-              subprocess.run(['git','-c','http.extraheader=AUTHORIZATION: basic '+auth,'push','origin','HEAD:refs/heads/'+branch],check=True)
-          pathlib.Path('/tmp/caixabank-final').mkdir(exist_ok=True)
-          pathlib.Path('/tmp/caixabank-final/tested-head.txt').write_text(subprocess.check_output(['git','rev-parse','HEAD'],text=True))
-          PY
-      - name: Install pinned verification tools
-        run: |
-          python3 -m pip install playwright==1.55.0 requests==2.32.5 beautifulsoup4==4.13.5 PyMuPDF==1.26.4 Pillow==11.3.0
-          python3 -m playwright install --with-deps chromium firefox webkit
-      - name: Validate sources and start local project-path server
-        run: |
+          python3 -m pip install beautifulsoup4==4.13.5 PyMuPDF==1.26.4 Pillow==11.3.0
           python3 scripts/validate_caixabank_reader_repair_20260905.py
-          mkdir -p /tmp/caixabank-www
-          ln -s "$GITHUB_WORKSPACE" /tmp/caixabank-www/por-derecho
-          python3 -m http.server 8899 --bind 127.0.0.1 --directory /tmp/caixabank-www >/tmp/caixabank-final/server.log 2>&1 &
-      - name: Final source, browser, HTTP and homepage-isolation acceptance
-        env:
-          PD_AUDIT_BASE: http://127.0.0.1:8899/por-derecho/
-          PD_AUDIT_OUT: /tmp/caixabank-final
-        run: |
-          python3 scripts/audit_caixabank_360_20260905.py --stage browser
-          python3 scripts/audit_caixabank_360_20260905.py --stage http
-          python3 scripts/validate_caixabank_reader_repair_20260905.py --browser-folder /tmp/caixabank-final
-          python3 scripts/check_caixabank_final_reader_review_20260905.py
-      - uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
-        if: always()
-        with:
-          name: caixabank-final-reconciled-acceptance
-          path: /tmp/caixabank-final/
-          retention-days: 7
+          git diff --exit-code
+# Preparation is complete. This entry point does not download source packages,
+# generate content, use a write token, commit or push to any branch.
