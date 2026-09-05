@@ -14,6 +14,7 @@ QUEUE='assets/data/matter-identity-operational-control-v1.json'
 TAG=re.compile(r'<(?:[A-Za-z][^<>]*?)>',re.S)
 ATTR=re.compile(r'\b(href|src|poster)\s*=\s*([\"\x27])(.*?)\2',re.S|re.I)
 MARKER='pd-audit-convergence-documentary-20260905'
+GRAPH_PAGES={'en/unitary-criminal-hypothesis-2011-present/acosta-matos-convergence/index.html','es/hipotesis-criminal-unitaria-2011-presente/convergencia-acosta-matos/index.html'}
 EXCLUDED=('caixabank','meeting-point-357','meeting-point-espana-357')
 NO_REWRITE={'es/cuatrecasas-sun-park/index.html','en/cuatrecasas-sun-park/index.html'}
 
@@ -133,8 +134,8 @@ def prepare():
    text=text[:m.start()]+replacement+text[m.end():]
    edits.append({'old':m.group(0),'new':replacement,'kind':'DUPLICATE_ANCHOR','target':path})
   for item in edits:counts[item['kind']]+=1
-  if 'data-convergence-app' in text:
-   assert MARKER not in text and text.count('</main>')==1
+  if path in GRAPH_PAGES:
+   assert MARKER not in text and text.count('</main>')==1,'Unexpected canonical graph-page structure: '+path
    text=text.replace('</main>',documentary(path.split('/')[0])+'</main>')
    edits.append({'kind':'DOCUMENTARY_FALLBACK','source':GRAPH})
   if text!=base:
