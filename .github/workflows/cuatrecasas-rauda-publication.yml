@@ -23,7 +23,7 @@ concurrency:
   cancel-in-progress: false
 jobs:
   prepare-integration-only:
-    if: github.ref == 'refs/heads/integration/cuatrecasas-rauda-20260905' && github.event_name != 'pull_request'
+    if: ${{ false }} # Historical preparation retired; generate before reviewed merge.
     runs-on: ubuntu-latest
     timeout-minutes: 15
     permissions:
@@ -131,7 +131,7 @@ jobs:
                     assert page.locator('.pd-cr-source').count()==4;checks+=1
                     for source in ['PD-CR-COM-20220218','PD-CR-COM-20220307','PD-CR-SOURCE-ETJ163-20260903','PD-CR-SOURCE-DP748-20260716']:
                       assert page.locator('#'+source).count()==1;checks+=1
-                    assert page.locator('.pd-cr-identity').get_attribute('data-caret-state')=='CARET_PENDING';checks+=1
+                    assert page.locator('.pd-cr-identity').get_attribute('data-caret-state')=='CARET_CONFIRMED';checks+=1
                     page.screenshot(path='/tmp/cr-'+row['path'].split('/')[0]+'-'+str(width)+'.png',full_page=False)
                 page.close()
               context=b.new_context(java_script_enabled=False,viewport={'width':390,'height':1000})
