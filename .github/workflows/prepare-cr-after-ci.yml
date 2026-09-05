@@ -1,0 +1,162 @@
+name: CI live closeout and CR successor preparation
+on:
+  push:
+    branches: [worker/cr-ci-reconciled-release-20260905]
+    paths: ['.github/workflows/prepare-cr-after-ci.yml']
+permissions:
+  contents: read
+concurrency:
+  group: cr-ci-successor-preparation
+  cancel-in-progress: true
+jobs:
+  verify-ci-release:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          ref: adc8c87585609709caafdd90f03ffbb4a4687d83
+          persist-credentials: false
+      - name: Read back the exact affected public resources from the merged revision
+        run: |
+          python3 - <<'PY'
+          import concurrent.futures,hashlib,json,pathlib,time,urllib.request
+          root=pathlib.Path.cwd();head='adc8c87585609709caafdd90f03ffbb4a4687d83'
+          paths=['en/matter-identity-registry/index.html','es/registro-identidad-materia/index.html','es/acosta-matos-familia/index.html']
+          paths+=['en/orion-ricpe-platform-continuity/index.html','es/orion-ricpe-continuidad/index.html','en/orion-rental-socimi/index.html','es/orion-rental-socimi/index.html','assets/data/orion-rental-socimi-governance-20260905.json']
+          pending=set(paths);results=[];deadline=time.monotonic()+480
+          def read(path):
+              url='https://sbu001monterecco.github.io/por-derecho/'+path+'?ci-release='+head
+              try:
+                  with urllib.request.urlopen(urllib.request.Request(url,headers={'Cache-Control':'no-cache'}),timeout=20) as r:body=r.read();status=r.status
+                  return {'path':path,'status':status,'sha256':hashlib.sha256(body).hexdigest(),'expected_sha256':hashlib.sha256((root/path).read_bytes()).hexdigest(),'exact_match':body==(root/path).read_bytes()}
+              except Exception as e:return {'path':path,'exact_match':False,'error':type(e).__name__}
+          while pending and time.monotonic()<deadline:
+              for row in concurrent.futures.ThreadPoolExecutor(max_workers=4).map(read,sorted(pending)):
+                  if row['exact_match']:results.append(row);pending.remove(row['path']);print('LIVE_EXACT_MATCH',row['path'],row['sha256'])
+              if pending:time.sleep(10)
+          out=pathlib.Path('/tmp/ci-live-closeout');out.mkdir()
+          (out/'readback.json').write_text(json.dumps({'source_sha':head,'results':results,'pending':sorted(pending),'scope':'Eight actual public resources; three changed projections and five retained Orion resources'},indent=2))
+          assert not pending,'Exact public readback incomplete: '+str(pending)
+          PY
+      - uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
+        if: always()
+        with:
+          name: ci-live-closeout-adc8c875
+          path: /tmp/ci-live-closeout/
+          if-no-files-found: error
+          retention-days: 30
+  prepare-cr:
+    if: github.ref == 'refs/heads/worker/cr-ci-reconciled-release-20260905'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: false
+          fetch-depth: 0
+      - name: Install real privacy and pinned browser inspection dependencies
+        run: |
+          command -v pdftotext || (sudo apt-get update -qq && sudo apt-get install -y poppler-utils)
+          python3 -m pip install playwright==1.55.0
+          python3 -m playwright install --with-deps chromium
+      - name: Reconcile the exact reviewed worker and validate the complete candidate
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          python3 - <<'PY'
+          import ast,concurrent.futures,copy,hashlib,json,os,pathlib,re,subprocess,sys,urllib.request
+          root=pathlib.Path.cwd();out=pathlib.Path('/tmp/cr-successor');out.mkdir()
+          base='adc8c87585609709caafdd90f03ffbb4a4687d83';old='090a678ad53cd9216e673b0cfc643cd084e5286c';worker='c02eeef12c0eb53807f372ba46f9ab974dd74daa'
+          hist='publication-manifests/historic-proceedings-authority-reintegration-20260903.json';canon='assets/data/la-laguna-proceeding-pages-v1.json';op='scripts/validate_operational_truth.py';crworkflow='.github/workflows/cuatrecasas-rauda-publication.yml';bootstrap='.github/workflows/prepare-cr-after-ci.yml'
+          api='https://api.github.com/repos/sbu001monterecco/por-derecho/'
+          def request(path,data=None):
+              req=urllib.request.Request(api+path,data=None if data is None else json.dumps(data).encode(),headers={'Authorization':'Bearer '+os.environ['GH_TOKEN'],'Accept':'application/vnd.github+json','Content-Type':'application/json'})
+              with urllib.request.urlopen(req,timeout=35) as r:return json.load(r)
+          def git(*args):return subprocess.check_output(['git',*args],text=True).strip()
+          def source(rev,path):return subprocess.check_output(['git','show',rev+':'+path],text=True)
+          def save(path,text):
+              p=root/path;p.parent.mkdir(parents=True,exist_ok=True);p.write_text(text,encoding='utf-8')
+          def dump(data):return json.dumps(data,ensure_ascii=False,indent=2)+'\n'
+          assert request('git/ref/heads/main')['object']['sha']==base,'Main advanced; rebase before integration'
+          assert request('pulls/1467')['head']['sha']==worker,'Reviewed worker changed'
+          subprocess.run(['git','fetch','--no-tags','origin',worker],check=True,stdout=subprocess.DEVNULL,stderr=subprocess.DEVNULL)
+          paths=git('diff','--name-only',old,worker).splitlines();assert len(paths)==25
+          for path in paths:
+              if path in (hist,op,crworkflow):continue
+              patch=subprocess.check_output(['git','diff',old,worker,'--',path])
+              subprocess.run(['git','apply','--check','-'],input=patch,check=True)
+              subprocess.run(['git','apply','-'],input=patch,check=True)
+          # The worker already retires this writer and retains its original browser suite.
+          text=source(worker,crworkflow)
+          assert 'contents: write' not in text and 'prepare-integration-only:' not in text
+          save(crworkflow,text)
+          # Combine independently valid current-source counts with the worker's
+          # dated ledger/observation semantics. The historical fallback stays fixed.
+          text=source(worker,op);tree=ast.parse(text);node=next(n for n in tree.body if isinstance(n,ast.Assign) and any(isinstance(t,ast.Name) and t.id=='CURRENT_CANONICAL_IDENTITY_COUNTS' for t in n.targets))
+          historical=ast.literal_eval(node.value);lines=text.splitlines(keepends=True)
+          replacement='from reconcile_identity_registry_projections import canonical_snapshot\nCURRENT_CANONICAL_IDENTITY_COUNTS = canonical_snapshot(ROOT)[0]\nHISTORICAL_IDENTITY_CANDIDATE_20260902 = '+repr(historical)+'\n'
+          text=''.join(lines[:node.lineno-1])+replacement+''.join(lines[node.end_lineno:])
+          assert text.count('and counts == CURRENT_CANONICAL_IDENTITY_COUNTS')==1
+          text=text.replace('and counts == CURRENT_CANONICAL_IDENTITY_COUNTS','and counts == HISTORICAL_IDENTITY_CANDIDATE_20260902',1)
+          compile(text,op,'exec');save(op,text)
+          # Retire the worker-only bootstrap. Source, role and proof assertions stay.
+          path='.github/workflows/cr-continuity-gapclosure.yml';text=(root/path).read_text();a=text.index('  prepare-worker-only:\n');b=text.index('  scoped-validation:\n',a);text=text[:a]+text[b:]
+          assert 'contents: write' not in text and 'persist-credentials: true' not in text
+          text=text.replace("branches: [main, 'worker/cr-continuity-gapclosure-20260905']","branches: [main]")
+          save(path,text)
+          # Never rewrite a dated historical transition to repair a current caller.
+          path='scripts/close_cr_continuity_20260905.py';text=(root/path).read_text()
+          text=text.replace(" assert all(k in load(HIST) for k in ['expected_routes','current_state','owner']);assert load(MANIFEST)['completion_record']['pull_request']==1465", " from historical_transition_integrity import historical_transition_bytes_match\n assert historical_transition_bytes_match(ROOT,HIST,'archive/handoffs/2026-09-03-historic-proceedings-authority-search-reintegration-live-closeout.json')\n assert load(MANIFEST)['completion_record']['pull_request']==1465")
+          assert "all(k in load(HIST)" not in text
+          start=text.index('def apply():');end=text.index('\ndef check():',start)
+          text=text[:start]+"def apply():\n raise SystemExit('Historical worker writer retired. Prepare a scoped current-main delta; do not replay old complete files or rewrite historical manifests.')\n"+text[end:]
+          save(path,text)
+          # Preserve the reviewed 58 rows, seven obligations and event/roster hashes.
+          data=json.loads((root/canon).read_text());c=data['continuity_closure'];before_controls=copy.deepcopy(c['review_controls']);before_obligations=copy.deepcopy(c['production_obligations'])
+          c['changed_files']=[p for p in c['changed_files'] if p!=hist]
+          c['prechange_sha256'].pop(hist,None)
+          c['integration_reconciliation']={'base_sha':base,'prior_ci_pull_request':1468,'reviewed_worker_pull_request':1467,'reviewed_worker_head':worker,'historical_transition':'Preserved unchanged and verified at both original/reconciled Git origins; worker compatibility-field rewrite excluded.','retired_writers':'Both historical CR writers and worker preparation job remain retired.','current_vs_dated':'Current canonical census is source-derived; the dated candidate fallback and ledger observation remain independently fixed.'}
+          save(canon,dump(data))
+          manifest='publication-manifests/cuatrecasas-rauda-recovery-review-20260905.json';m=json.loads((root/manifest).read_text());m['schema']='por-derecho.publication-state.v1';m['schema_version']='1.0.0';save(manifest,dump(m))
+          # Recompute only ACTA input hashes; any substantive graph difference stops.
+          sys.path.insert(0,str(root/'scripts'));import build_community_acta_authority_interconnectivity as graph
+          target='assets/data/community-acta-authority-interconnectivity-v1.json';before=json.loads((root/target).read_text());after=graph.build()
+          assert {k:v for k,v in before.items() if k!='sources'}=={k:v for k,v in after.items() if k!='sources'},'ACTA graph changed substantively'
+          save(target,dump(after))
+          subprocess.run(['python3','scripts/reconcile_identity_registry_projections.py','--write'],check=True)
+          assert (root/hist).read_text()==source(base,hist),'Historical transition changed'
+          assert data['continuity_closure']['review_controls']==before_controls and data['continuity_closure']['production_obligations']==before_obligations
+          (root/bootstrap).unlink()
+          changed=git('diff','--name-only',base).splitlines()+git('ls-files','--others','--exclude-standard').splitlines()
+          changed=[p for p in sorted(set(changed)) if p!=bootstrap and not p.startswith(('diagnostics/','artifacts/'))]
+          allowed=set(paths)-{hist};allowed.update(['en/matter-identity-registry/index.html','es/registro-identidad-materia/index.html','ops/CURRENT_UNITARY_STATE.json'])
+          assert set(changed)<=allowed,changed
+          subprocess.run(['git','add','--',*changed,bootstrap],check=True)
+          subprocess.run(['git','-c','user.name=CR integration preparation','-c','user.email=ci@example.invalid','commit','-qm','Validate reconciled CR successor without changing main'],check=True)
+          os.environ['GITHUB_BASE_SHA']=base;os.environ['GITHUB_HEAD_SHA']=git('rev-parse','HEAD')
+          commands=[['scripts/validate_ci_control_plane.py'],['scripts/compare_inherited_ci_diagnostics.py'],['scripts/close_cr_continuity_20260905.py','--check'],['scripts/build_cuatrecasas_rauda_20260905.py','--check'],['scripts/complete_cuatrecasas_rauda_controls_20260905.py','--check'],['scripts/complete_cr_continuity_dependencies.py','--check'],['scripts/validate_unitary_multitrack_gap_closure.py'],['scripts/validate_operational_identity_registry.py'],['scripts/validate_legal_professional_register.py'],['scripts/check_cr_continuity_browser.py']]
+          results=[]
+          for args in commands:
+              p=subprocess.run(['python3',*args],capture_output=True,text=True,timeout=360);name=pathlib.Path(args[0]).name
+              (out/(name+'.log')).write_text(p.stdout+p.stderr);results.append({'check':args,'exit':p.returncode,'tail':(p.stdout+p.stderr)[-3000:] if p.returncode else (p.stdout+p.stderr)[-400:]});print('CHECK',name,p.returncode)
+          subprocess.run(['git','diff','--exit-code'],check=True)
+          assert request('git/ref/heads/main')['object']['sha']==base,'Main advanced during preparation'
+          def blob(path):return {'path':path,'mode':'100644','type':'blob','sha':request('git/blobs',{'content':(root/path).read_text(),'encoding':'utf-8'})['sha']}
+          elements=list(concurrent.futures.ThreadPoolExecutor(max_workers=4).map(blob,changed))
+          result={'parent':base,'base_tree':git('rev-parse',base+'^{tree}'),'elements':elements,'checks':results,'state':'PREPARED_NOT_DEPLOYED','source_identity_only':True,'proof_obligations_closed':0}
+          (out/'candidate-tree.json').write_text(dump(result));print('CR_CANDIDATE_TREE',dump(result))
+          # Unreferenced blobs only: the runner never creates a tree, ref, PR or merge.
+          PY
+      - uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
+        if: always()
+        with:
+          name: cr-reconciled-after-ci
+          path: |
+            /tmp/cr-successor/
+            /tmp/ci-control-plane/
+            diagnostics/
+          if-no-files-found: error
+          retention-days: 14
