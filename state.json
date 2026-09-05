@@ -1,1 +1,14 @@
-{"schema": "por-derecho.publication-runtime.v1", "fence": 0, "phase": "ABORTED_BEFORE_MERGE", "receipts": []}
+{
+  "schema": "por-derecho.publication-runtime.v1",
+  "fence": 1,
+  "owner": "1470:0e681dcb73209779b9a81f998ff02bec01282e8f",
+  "phase": "CLAIMED",
+  "pr": 1470,
+  "base_sha": "adc8c87585609709caafdd90f03ffbb4a4687d83",
+  "candidate_sha": "0e681dcb73209779b9a81f998ff02bec01282e8f",
+  "run_id": 33982328470,
+  "claimed_at": "2026-09-05T17:53:17.985340Z",
+  "receipts": [],
+  "checkpoints": [],
+  "recovery_basis": "Explicit owner recovery of exact completed merge; not a retrospective exclusive-lock claim."
+}
