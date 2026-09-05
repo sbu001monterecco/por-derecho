@@ -1,0 +1,20 @@
+name: Audited graph source diagnostic
+on:
+  push:
+    branches: ['worker/audited-gaps-reconcile-20260905']
+    paths: ['.github/workflows/audited-graph-diagnostic.yml']
+permissions:
+  contents: read
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - name: Inspect exact source and transformed structure without repository mutation
+        run: |
+          git fetch --no-tags origin main:refs/remotes/origin/main
+          python -u scripts/prepare_audited_website_20260905.py --prepare
