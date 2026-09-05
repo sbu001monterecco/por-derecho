@@ -1,6 +1,6 @@
 (() => {
   const path = window.location.pathname.replace(/\/index\.html$/, '/');
-  if (!path.includes('/es/reclamacion-caixabank-valencia/')) return;
+  if (!path.replace(/index\.html$/, '').endsWith('/es/reclamacion-caixabank-valencia/')) return;
   if (path.includes('/senalamiento-28-enero-2027/')) return;
   if (document.getElementById('caixabank-adr-settlement-outreach')) return;
 
@@ -40,10 +40,10 @@
         <h3>Señalamiento vigente: 28 de enero de 2027 a las 10:00</h3>
         <p>La diligencia de 6 de noviembre de 2025 del <strong>Juzgado de Primera Instancia nº 27 de Valencia</strong>, en el Procedimiento Ordinario <strong>1859/2023-9</strong>, volvió a señalar la vista para el <strong>28 de enero de 2027 a las 10:00</strong>. La imagen publicada a continuación es una copia pública con datos personales y de verificación de terceros innecesarios disociados.</p>
         <figure style="margin:1rem 0 0">
-          <a href="senalamiento-28-enero-2027/" aria-label="Abrir el registro del señalamiento de 28 de enero de 2027">
-            <img src="../../assets/evidence/caixabank-valencia-1859-2023-diligencia-06nov2025-p1-publica.jpg" alt="Copia pública parcialmente disociada de la diligencia del JPI nº 27 de Valencia que señala la vista para el 28 de enero de 2027 a las 10:00" loading="lazy" style="display:block;width:100%;height:auto;border:1px solid rgba(19,37,45,.16);border-radius:12px;background:#fff">
+          <a href="/por-derecho/es/reclamacion-caixabank-valencia/senalamiento-28-enero-2027/" aria-label="Abrir el registro del señalamiento de 28 de enero de 2027">
+            <img src="/por-derecho/assets/evidence/caixabank-valencia-1859-2023-diligencia-06nov2025-p1-publica.jpg" alt="Copia pública parcialmente disociada de la diligencia del JPI nº 27 de Valencia que señala la vista para el 28 de enero de 2027 a las 10:00" loading="lazy" style="display:block;width:100%;height:auto;border:1px solid rgba(19,37,45,.16);border-radius:12px;background:#fff">
           </a>
-          <figcaption class="small" style="margin-top:.65rem">Copia pública parcialmente disociada. <a href="senalamiento-28-enero-2027/">Abrir el registro documental y la segunda página →</a></figcaption>
+          <figcaption class="small" style="margin-top:.65rem">Copia pública parcialmente disociada. <a href="/por-derecho/es/reclamacion-caixabank-valencia/senalamiento-28-enero-2027/">Abrir el registro documental y la segunda página →</a></figcaption>
         </figure>
       </article>
 

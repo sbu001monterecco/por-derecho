@@ -1,0 +1,20 @@
+name: Retired CaixaBank preparation - read-only validation
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: false
+      - name: Validate previously prepared public derivatives only
+        run: |
+          python3 -m pip install beautifulsoup4==4.13.5 PyMuPDF==1.26.4 Pillow==11.3.0
+          python3 scripts/validate_caixabank_reader_repair_20260905.py
+          git diff --exit-code
+# Preparation is complete. This entry point does not download source packages,
+# generate content, use a write token, commit or push to any branch.

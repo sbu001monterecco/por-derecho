@@ -1,0 +1,1696 @@
+{
+  "package_id": "PD-CAIXABANK-PUBLIC-REPAIR-20260905",
+  "created": "2026-09-05",
+  "status": "PREPARED_NOT_DEPLOYED",
+  "source_repository_sha": "adc8c87585609709caafdd90f03ffbb4a4687d83",
+  "files": [
+    {
+      "filename": "caixabank-ac-25ene2021-publica-20260905.pdf",
+      "path": "assets/evidence/caixabank-valencia-publica-20260905/caixabank-ac-25ene2021-publica-20260905.pdf",
+      "sha256": "a18d28741a05efdf3697eadac6830c4223abb9021093ab9aeff1810c79984827",
+      "bytes": 78349,
+      "kind": "SOURCE_DERIVED_PUBLIC_REDACTION",
+      "pages": 2
+    },
+    {
+      "filename": "caixabank-ac-25ene2021-publica-20260905.txt",
+      "path": "assets/evidence/caixabank-valencia-publica-20260905/caixabank-ac-25ene2021-publica-20260905.txt",
+      "sha256": "aea44526c496e537ed396e65b7f37dd65a51880ca52c7a3b2e6d0436ebf1d253",
+      "bytes": 3370,
+      "kind": "SOURCE_DERIVED_PUBLIC_REDACTION",
+      "pages": null
+    },
+    {
+      "filename": "caixabank-contestacion-ene2024-publica-20260905.pdf",
+      "path": "assets/evidence/caixabank-valencia-publica-20260905/caixabank-contestacion-ene2024-publica-20260905.pdf",
+      "sha256": "520ef5282999718919c116433443fe7d0223749a3391f08b5cd6ebf3cc1a7a2a",
+      "bytes": 828734,
+      "kind": "SOURCE_DERIVED_PUBLIC_REDACTION",
+      "pages": 47
+    },
+    {
+      "filename": "caixabank-contestacion-ene2024-publica-20260905.txt",
+      "path": "assets/evidence/caixabank-valencia-publica-20260905/caixabank-contestacion-ene2024-publica-20260905.txt",
+      "sha256": "20dc4f559774d77f66a3d86aa1bb5013cd9d10dbfb11df1e9730bbab708ad5a0",
+      "bytes": 109978,
+      "kind": "SOURCE_DERIVED_PUBLIC_REDACTION",
+      "pages": null
+    },
+    {
+      "filename": "caixabank-demanda-oct2023-publica-20260905.pdf",
+      "path": "assets/evidence/caixabank-valencia-publica-20260905/caixabank-demanda-oct2023-publica-20260905.pdf",
+      "sha256": "82d4474442f99a264207429004f151ef2e63a0e9af748c7a8ad2fc1c86aeaf8d",
+      "bytes": 837092,
+      "kind": "SOURCE_DERIVED_PUBLIC_REDACTION",
+      "pages": 27
+    },
+    {
+      "filename": "caixabank-demanda-oct2023-publica-20260905.txt",
+      "path": "assets/evidence/caixabank-valencia-publica-20260905/caixabank-demanda-oct2023-publica-20260905.txt",
+      "sha256": "c7ad78820788055920577c9acdaf6b88b3701f3dfd469029ef8fad4362553157",
+      "bytes": 75982,
+      "kind": "SOURCE_DERIVED_PUBLIC_REDACTION",
+      "pages": null
+    },
+    {
+      "filename": "caixabank-valencia-1859-2023-diligencia-06nov2025-p1-publica.jpg",
+      "path": "assets/evidence/caixabank-valencia-1859-2023-diligencia-06nov2025-p1-publica.jpg",
+      "sha256": "d4671fa8cdd8dca88ebdb0b589141846e7d9e8af516a2c30d6ae9530fb9325e3",
+      "bytes": 197325,
+      "kind": "SOURCE_DERIVED_PUBLIC_REDACTION",
+      "pages": null
+    },
+    {
+      "filename": "caixabank-valencia-1859-2023-diligencia-06nov2025-p2-publica.jpg",
+      "path": "assets/evidence/caixabank-valencia-1859-2023-diligencia-06nov2025-p2-publica.jpg",
+      "sha256": "d2992af3fd515e9b3eac666f964c26390f90fffbea46af54ca7e38bbf6ec86e1",
+      "bytes": 101969,
+      "kind": "SOURCE_DERIVED_PUBLIC_REDACTION",
+      "pages": null
+    },
+    {
+      "filename": "caixabank-valencia-diligencia-06nov2025-publica-20260905.pdf",
+      "path": "assets/evidence/caixabank-valencia-publica-20260905/caixabank-valencia-diligencia-06nov2025-publica-20260905.pdf",
+      "sha256": "bc8d6db0b355252a1c6bd1dcbe84a7b8df7d3f98aac73116505274b197bf1265",
+      "bytes": 148048,
+      "kind": "SOURCE_DERIVED_PUBLIC_REDACTION",
+      "pages": 2
+    },
+    {
+      "filename": "caixabank-valencia-diligencia-06nov2025-publica-20260905.txt",
+      "path": "assets/evidence/caixabank-valencia-publica-20260905/caixabank-valencia-diligencia-06nov2025-publica-20260905.txt",
+      "sha256": "9b7cf39ae9fa3ae653a9c0f3619252593edb7d27025f772c8644cea48600e2f8",
+      "bytes": 2179,
+      "kind": "SOURCE_DERIVED_PUBLIC_REDACTION",
+      "pages": null
+    }
+  ],
+  "boundaries": [
+    "Only public-safe derivatives; no private original, mailbox ID, signature or verification value.",
+    "The original signed source controls. These redactions are not digitally signed court originals.",
+    "Earlier hearing source hash and newly recovered source are distinct variants; no byte identity claim.",
+    "No collective liability or change of pleaded merits.",
+    "The old off-site public copies need their own exact-target privacy closeout; changing site links alone does not revoke them."
+  ],
+  "source_redactions": [
+    {
+      "source_filename": "Aweswell-v-CaixaBank-Demanda-13OCT2023.pdf",
+      "source_sha256": "f44121b7ac9026d2478d82974641c9da11fe497aacd999188ada3d495fe34a77",
+      "public_filename": "caixabank-demanda-oct2023-publica-20260905.pdf",
+      "sha256": "82d4474442f99a264207429004f151ef2e63a0e9af748c7a8ad2fc1c86aeaf8d",
+      "bytes": 837092,
+      "pages": 27,
+      "redaction_status": "PUBLIC_REDACTED_DERIVATIVE",
+      "removed_categories": [
+        "signature fields and personal certificate identifiers",
+        "bank deposit/operation identifiers where present",
+        "source metadata, hyperlinks and annotations"
+      ],
+      "declared_regions": [
+        {
+          "page": 27,
+          "reason": "signature",
+          "box": [
+            82.5802001953125,
+            162.57000732421875,
+            280.4490051269531,
+            233.16802978515625
+          ]
+        },
+        {
+          "page": 1,
+          "reason": "public derivative label",
+          "box": [
+            30.0,
+            820.0,
+            565.219970703125,
+            835.0
+          ]
+        },
+        {
+          "page": 2,
+          "reason": "public derivative label",
+          "box": [
+            30.0,
+            820.0,
+            565.219970703125,
+            835.0
+          ]
+        },
+        {
+          "page": 3,
+          "reason": "public derivative label",
+          "box": [
+            30.0,
+            820.0,
+            565.219970703125,
+            835.0
+          ]
+        },
+        {
+          "page": 4,
+          "reason": "public derivative label",
+          "box": [
+            30.0,
+            820.0,
+            565.219970703125,
+            835.0
+          ]
+        },
+        {
+          "page": 5,
+          "reason": "public derivative label",
+          "box": [
+            30.0,
+            820.0,
+            565.219970703125,
+            835.0
+          ]
+        },
+        {
+          "page": 6,
+          "reason": "public derivative label",
+          "box": [
+            30.0,
+            820.0,
+            565.219970703125,
+            835.0
+          ]
+        },
+        {
+          "page": 7,
+          "reason": "public derivative label",
+          "box": [
+            30.0,
+            820.0,
+            565.219970703125,
+            835.0
+          ]
+        },
+        {
+          "page": 8,
+          "reason": "public derivative label",
+          "box": [
+            30.0,
+            820.0,
+            565.219970703125,
+            835.0
+          ]
+        },
+        {
+          "page": 9,
+          "reason": "public derivative label",
+          "box": [
+            30.0,
+            820.0,
+            565.219970703125,
+            835.0
+          ]
+        },
+        {
+          "page": 10,
+          "reason": "public derivative label",
+          "box": [
+            30.0,
+            820.0,
+            565.219970703125,
+            835.0
+          ]
+        },
+        {
+          "page": 11,
+          "reason": "public derivative label",
+          "box": [
+            30.0,
+            820.0,
+            565.219970703125,
+            835.0
+          ]
+        },
+        {
+          "page": 12,
+          "reason": "public derivative label",
+          "box": [
+            30.0,
+            820.0,
+            565.219970703125,
+            835.0
+          ]
+        },
+        {
+          "page": 13,
+          "reason": "public derivative label",
+          "box": [
+            30.0,
+            820.0,
+            565.219970703125,
+            835.0
+          ]
+        },
+        {
+          "page": 14,
+          "reason": "public derivative label",
+          "box": [
+            30.0,
+            820.0,
+            565.219970703125,
+            835.0
+          ]
+        },
+        {
+          "page": 15,
+          "reason": "public derivative label",
+          "box": [
+            30.0,
+            820.0,
+            565.219970703125,
+            835.0
+          ]
+        },
+        {
+          "page": 16,
+          "reason": "public derivative label",
+          "box": [
+            30.0,
+            820.0,
+            565.219970703125,
+            835.0
+          ]
+        },
+        {
+          "page": 17,
+          "reason": "public derivative label",
+          "box": [
+            30.0,
+            820.0,
+            565.219970703125,
+            835.0
+          ]
+        },
+        {
+          "page": 18,
+          "reason": "public derivative label",
+          "box": [
+            30.0,
+            820.0,
+            565.219970703125,
+            835.0
+          ]
+        },
+        {
+          "page": 19,
+          "reason": "public derivative label",
+          "box": [
+            30.0,
+            820.0,
+            565.219970703125,
+            835.0
+          ]
+        },
+        {
+          "page": 20,
+          "reason": "public derivative label",
+          "box": [
+            30.0,
+            820.0,
+            565.219970703125,
+            835.0
+          ]
+        },
+        {
+          "page": 21,
+          "reason": "public derivative label",
+          "box": [
+            30.0,
+            820.0,
+            565.219970703125,
+            835.0
+          ]
+        },
+        {
+          "page": 22,
+          "reason": "public derivative label",
+          "box": [
+            30.0,
+            820.0,
+            565.219970703125,
+            835.0
+          ]
+        },
+        {
+          "page": 23,
+          "reason": "public derivative label",
+          "box": [
+            30.0,
+            820.0,
+            565.219970703125,
+            835.0
+          ]
+        },
+        {
+          "page": 24,
+          "reason": "public derivative label",
+          "box": [
+            30.0,
+            820.0,
+            565.219970703125,
+            835.0
+          ]
+        },
+        {
+          "page": 25,
+          "reason": "public derivative label",
+          "box": [
+            30.0,
+            820.0,
+            565.219970703125,
+            835.0
+          ]
+        },
+        {
+          "page": 26,
+          "reason": "public derivative label",
+          "box": [
+            30.0,
+            820.0,
+            565.219970703125,
+            835.0
+          ]
+        },
+        {
+          "page": 27,
+          "reason": "public derivative label",
+          "box": [
+            30.0,
+            820.0,
+            565.219970703125,
+            835.0
+          ]
+        }
+      ],
+      "render_comparison": [
+        {
+          "page": 1,
+          "max_grayscale_difference_outside_declared_regions": 0,
+          "pixels_difference_gt_2": 0
+        },
+        {
+          "page": 2,
+          "max_grayscale_difference_outside_declared_regions": 0,
+          "pixels_difference_gt_2": 0
+        },
+        {
+          "page": 3,
+          "max_grayscale_difference_outside_declared_regions": 0,
+          "pixels_difference_gt_2": 0
+        },
+        {
+          "page": 4,
+          "max_grayscale_difference_outside_declared_regions": 0,
+          "pixels_difference_gt_2": 0
+        },
+        {
+          "page": 5,
+          "max_grayscale_difference_outside_declared_regions": 0,
+          "pixels_difference_gt_2": 0
+        },
+        {
+          "page": 6,
+          "max_grayscale_difference_outside_declared_regions": 0,
+          "pixels_difference_gt_2": 0
+        },
+        {
+          "page": 7,
+          "max_grayscale_difference_outside_declared_regions": 0,
+          "pixels_difference_gt_2": 0
+        },
+        {
+          "page": 8,
+          "max_grayscale_difference_outside_declared_regions": 0,
+          "pixels_difference_gt_2": 0
+        },
+        {
+          "page": 9,
+          "max_grayscale_difference_outside_declared_regions": 0,
+          "pixels_difference_gt_2": 0
+        },
+        {
+          "page": 10,
+          "max_grayscale_difference_outside_declared_regions": 0,
+          "pixels_difference_gt_2": 0
+        },
+        {
+          "page": 11,
+          "max_grayscale_difference_outside_declared_regions": 0,
+          "pixels_difference_gt_2": 0
+        },
+        {
+          "page": 12,
+          "max_grayscale_difference_outside_declared_regions": 0,
+          "pixels_difference_gt_2": 0
+        },
+        {
+          "page": 13,
+          "max_grayscale_difference_outside_declared_regions": 0,
+          "pixels_difference_gt_2": 0
+        },
+        {
+          "page": 14,
+          "max_grayscale_difference_outside_declared_regions": 0,
+          "pixels_difference_gt_2": 0
+        },
+        {
+          "page": 15,
+          "max_grayscale_difference_outside_declared_regions": 0,
+          "pixels_difference_gt_2": 0
+        },
+        {
+          "page": 16,
+          "max_grayscale_difference_outside_declared_regions": 0,
+          "pixels_difference_gt_2": 0
+        },
+        {
+          "page": 17,
+          "max_grayscale_difference_outside_declared_regions": 0,
+          "pixels_difference_gt_2": 0
+        },
+        {
+          "page": 18,
+          "max_grayscale_difference_outside_declared_regions": 0,
+          "pixels_difference_gt_2": 0
+        },
+        {
+          "page": 19,
+          "max_grayscale_difference_outside_declared_regions": 0,
+          "pixels_difference_gt_2": 0
+        },
+        {
+          "page": 20,
+          "max_grayscale_difference_outside_declared_regions": 0,
+          "pixels_difference_gt_2": 0
+        },
+        {
+          "page": 21,
+          "max_grayscale_difference_outside_declared_regions": 0,
+          "pixels_difference_gt_2": 0
+        },
+        {
+          "page": 22,
+          "max_grayscale_difference_outside_declared_regions": 0,
+          "pixels_difference_gt_2": 0
+        },
+        {
+          "page": 23,
+          "max_grayscale_difference_outside_declared_regions": 0,
+          "pixels_difference_gt_2": 0
+        },
+        {
+          "page": 24,
+          "max_grayscale_difference_outside_declared_regions": 0,
+          "pixels_difference_gt_2": 0
+        },
+        {
+          "page": 25,
+          "max_grayscale_difference_outside_declared_regions": 0,
+          "pixels_difference_gt_2": 0
+        },
+        {
+          "page": 26,
+          "max_grayscale_difference_outside_declared_regions": 0,
+          "pixels_difference_gt_2": 0
+        },
+        {
+          "page": 27,
+          "max_grayscale_difference_outside_declared_regions": 0,
+          "pixels_difference_gt_2": 0
+        }
+      ],
+      "original_retained_privately": true,
+      "published": false
+    },
+    {
+      "source_filename": "CaixaBank-Contestacion-29ENE2024.pdf",
+      "source_sha256": "abbaf13c655058635fbd37395ad2e8699c1c91918b6ef75c8a07b90b9b97b73b",
+      "public_filename": "caixabank-contestacion-ene2024-publica-20260905.pdf",
+      "sha256": "520ef5282999718919c116433443fe7d0223749a3391f08b5cd6ebf3cc1a7a2a",
+      "bytes": 828734,
+      "pages": 47,
+      "redaction_status": "PUBLIC_REDACTED_DERIVATIVE",
+      "removed_categories": [
+        "signature fields and personal certificate identifiers",
+        "bank deposit/operation identifiers where present",
+        "source metadata, hyperlinks and annotations"
+      ],
+      "declared_regions": [
+        {
+          "page": 9,
+          "reason": "embedded table operation identifier",
+          "box": [
+            57.67949389803941,
+            577.7776621500651,
+            121.6698627129551,
+            584.4143300374349
+          ]
+        },
+        {
+          "page": 9,
+          "reason": "embedded table operation identifier",
+          "box": [
+            93.34079318551846,
+            585.4098302205404,
+            121.6698627129551,
+            591.7146647135417
+          ]
+        },
+        {
+          "page": 9,
+          "reason": "embedded table operation identifier",
+          "box": [
+            93.34079318551846,
+            593.3738316853841,
+            121.6698627129551,
+            599.6786661783854
+          ]
+        },
+        {
+          "page": 9,
+          "reason": "embedded table operation identifier",
+          "box": [
+            93.67407635642948,
+            601.0059997558594,
+            121.6698627129551,
+            607.9745010375976
+          ]
+        },
+        {
+          "page": 9,
+          "reason": "embedded table operation identifier",
+          "box": [
+            93.67407635642948,
+            620.9160034179688,
+            121.6698627129551,
+            628.2163380940756
+          ]
+        },
+        {
+          "page": 9,
+          "reason": "embedded table operation identifier",
+          "box": [
+            93.67407635642948,
+            642.1533406575521,
+            121.6698627129551,
+            649.4536753336588
+          ]
+        },
+        {
+          "page": 9,
+          "reason": "embedded table operation identifier",
+          "box": [
+            93.67407635642948,
+            650.1173421223958,
+            121.6698627129551,
+            656.7540100097656
+          ]
+        },
+        {
+          "page": 22,
+          "reason": "bank identifier",
+          "box": [
+            229.6306915283203,
+            509.0277404785156,
+            357.81719970703125,
+            522.3117065429688
+          ]
+        },
+        {
+          "page": 23,
+          "reason": "embedded table operation identifier",
+          "box": [
+            61.82445599015352,
+            569.5789947509766,
+            124.7742156452296,
+            576.1089935302734
+          ]
+        },
+        {
+          "page": 23,
+          "reason": "embedded table operation identifier",
+          "box": [
+            96.90583246459697,
+            577.088493347168,
+            124.7742156452296,
+            583.2919921875
+          ]
+        },
+        {
+          "page": 23,
+          "reason": "embedded table operation identifier",
+          "box": [
+            96.90583246459697,
+            584.9244918823242,
+            124.7742156452296,
+            591.1279907226562
+          ]
+        },
+        {
+          "page": 23,
+          "reason": "embedded table operation identifier",
+          "box": [
+            97.23369579613382,
+            592.4339904785156,
+            124.7742156452296,
+            599.2904891967773
+          ]
+        },
+        {
+          "page": 23,
+          "reason": "embedded table operation identifier",
+          "box": [
+            97.23369579613382,
+            612.0239868164062,
+            124.7742156452296,
+            619.2069854736328
+          ]
+        },
+        {
+          "page": 23,
+          "reason": "embedded table operation identifier",
+          "box": [
+            97.23369579613382,
+            632.9199829101562,
+            124.7742156452296,
+            640.1029815673828
+          ]
+        },
+        {
+          "page": 23,
+          "reason": "embedded table operation identifier",
+          "box": [
+            97.23369579613382,
+            640.7559814453125,
+            124.7742156452296,
+            647.2859802246094
+          ]
+        },
+        {
+          "page": 47,
+          "reason": "signature",
+          "box": [
+            77.67310333251953,
+            280.14697265625,
+            239.1280059814453,
+            339.49200439453125
+          ]
+        },
+        {
+          "page": 47,
+          "reason": "signature",
+          "box": [
+            353.45599365234375,
+            281.01898193359375,
+            486.1109924316406,
+            342.9830017089844
+          ]
+        },
+        {
+          "page": 47,
+          "reason": "signature",
+          "box": [
+            266.29400634765625,
+            393.8689880371094,
+            378.4989929199219,
+            471.489990234375
+          ]
+        },
+        {
+          "page": 1,
+          "reason": "public derivative label",
+          "box": [
+            30.0,
+            820.0,
+            565.219970703125,
+            835.0
+          ]
+        },
+        {
+          "page": 2,
+          "reason": "public derivative label",
+          "box": [
+            30.0,
+            820.0,
+            565.219970703125,
+            835.0
+          ]
+        },
+        {
+          "page": 3,
+          "reason": "public derivative label",
+          "box": [
+            30.0,
+            820.0,
+            565.219970703125,
+            835.0
+          ]
+        },
+        {
+          "page": 4,
+          "reason": "public derivative label",
+          "box": [
+            30.0,
+            820.0,
+            565.219970703125,
+            835.0
+          ]
+        },
+        {
+          "page": 5,
+          "reason": "public derivative label",
+          "box": [
+            30.0,
+            820.0,
+            565.219970703125,
+            835.0
+          ]
+        },
+        {
+          "page": 6,
+          "reason": "public derivative label",
+          "box": [
+            30.0,
+            820.0,
+            565.219970703125,
+            835.0
+          ]
+        },
+        {
+          "page": 7,
+          "reason": "public derivative label",
+          "box": [
+            30.0,
+            820.0,
+            565.219970703125,
+            835.0
+          ]
+        },
+        {
+          "page": 8,
+          "reason": "public derivative label",
+          "box": [
+            30.0,
+            820.0,
+            565.219970703125,
+            835.0
+          ]
+        },
+        {
+          "page": 9,
+          "reason": "public derivative label",
+          "box": [
+            30.0,
+            820.0,
+            565.219970703125,
+            835.0
+          ]
+        },
+        {
+          "page": 10,
+          "reason": "public derivative label",
+          "box": [
+            30.0,
+            820.0,
+            565.219970703125,
+            835.0
+          ]
+        },
+        {
+          "page": 11,
+          "reason": "public derivative label",
+          "box": [
+            30.0,
+            820.0,
+            565.219970703125,
+            835.0
+          ]
+        },
+        {
+          "page": 12,
+          "reason": "public derivative label",
+          "box": [
+            30.0,
+            820.0,
+            565.219970703125,
+            835.0
+          ]
+        },
+        {
+          "page": 13,
+          "reason": "public derivative label",
+          "box": [
+            30.0,
+            820.0,
+            565.219970703125,
+            835.0
+          ]
+        },
+        {
+          "page": 14,
+          "reason": "public derivative label",
+          "box": [
+            30.0,
+            820.0,
+            565.219970703125,
+            835.0
+          ]
+        },
+        {
+          "page": 15,
+          "reason": "public derivative label",
+          "box": [
+            30.0,
+            820.0,
+            565.219970703125,
+            835.0
+          ]
+        },
+        {
+          "page": 16,
+          "reason": "public derivative label",
+          "box": [
+            30.0,
+            820.0,
+            565.219970703125,
+            835.0
+          ]
+        },
+        {
+          "page": 17,
+          "reason": "public derivative label",
+          "box": [
+            30.0,
+            820.0,
+            565.219970703125,
+            835.0
+          ]
+        },
+        {
+          "page": 18,
+          "reason": "public derivative label",
+          "box": [
+            30.0,
+            820.0,
+            565.219970703125,
+            835.0
+          ]
+        },
+        {
+          "page": 19,
+          "reason": "public derivative label",
+          "box": [
+            30.0,
+            820.0,
+            565.219970703125,
+            835.0
+          ]
+        },
+        {
+          "page": 20,
+          "reason": "public derivative label",
+          "box": [
+            30.0,
+            820.0,
+            565.219970703125,
+            835.0
+          ]
+        },
+        {
+          "page": 21,
+          "reason": "public derivative label",
+          "box": [
+            30.0,
+            820.0,
+            565.219970703125,
+            835.0
+          ]
+        },
+        {
+          "page": 22,
+          "reason": "public derivative label",
+          "box": [
+            30.0,
+            820.0,
+            565.219970703125,
+            835.0
+          ]
+        },
+        {
+          "page": 23,
+          "reason": "public derivative label",
+          "box": [
+            30.0,
+            820.0,
+            565.219970703125,
+            835.0
+          ]
+        },
+        {
+          "page": 24,
+          "reason": "public derivative label",
+          "box": [
+            30.0,
+            820.0,
+            565.219970703125,
+            835.0
+          ]
+        },
+        {
+          "page": 25,
+          "reason": "public derivative label",
+          "box": [
+            30.0,
+            820.0,
+            565.219970703125,
+            835.0
+          ]
+        },
+        {
+          "page": 26,
+          "reason": "public derivative label",
+          "box": [
+            30.0,
+            820.0,
+            565.219970703125,
+            835.0
+          ]
+        },
+        {
+          "page": 27,
+          "reason": "public derivative label",
+          "box": [
+            30.0,
+            820.0,
+            565.219970703125,
+            835.0
+          ]
+        },
+        {
+          "page": 28,
+          "reason": "public derivative label",
+          "box": [
+            30.0,
+            820.0,
+            565.219970703125,
+            835.0
+          ]
+        },
+        {
+          "page": 29,
+          "reason": "public derivative label",
+          "box": [
+            30.0,
+            820.0,
+            565.219970703125,
+            835.0
+          ]
+        },
+        {
+          "page": 30,
+          "reason": "public derivative label",
+          "box": [
+            30.0,
+            820.0,
+            565.219970703125,
+            835.0
+          ]
+        },
+        {
+          "page": 31,
+          "reason": "public derivative label",
+          "box": [
+            30.0,
+            820.0,
+            565.219970703125,
+            835.0
+          ]
+        },
+        {
+          "page": 32,
+          "reason": "public derivative label",
+          "box": [
+            30.0,
+            820.0,
+            565.219970703125,
+            835.0
+          ]
+        },
+        {
+          "page": 33,
+          "reason": "public derivative label",
+          "box": [
+            30.0,
+            820.0,
+            565.219970703125,
+            835.0
+          ]
+        },
+        {
+          "page": 34,
+          "reason": "public derivative label",
+          "box": [
+            30.0,
+            820.0,
+            565.219970703125,
+            835.0
+          ]
+        },
+        {
+          "page": 35,
+          "reason": "public derivative label",
+          "box": [
+            30.0,
+            820.0,
+            565.219970703125,
+            835.0
+          ]
+        },
+        {
+          "page": 36,
+          "reason": "public derivative label",
+          "box": [
+            30.0,
+            820.0,
+            565.219970703125,
+            835.0
+          ]
+        },
+        {
+          "page": 37,
+          "reason": "public derivative label",
+          "box": [
+            30.0,
+            820.0,
+            565.219970703125,
+            835.0
+          ]
+        },
+        {
+          "page": 38,
+          "reason": "public derivative label",
+          "box": [
+            30.0,
+            820.0,
+            565.219970703125,
+            835.0
+          ]
+        },
+        {
+          "page": 39,
+          "reason": "public derivative label",
+          "box": [
+            30.0,
+            820.0,
+            565.219970703125,
+            835.0
+          ]
+        },
+        {
+          "page": 40,
+          "reason": "public derivative label",
+          "box": [
+            30.0,
+            820.0,
+            565.219970703125,
+            835.0
+          ]
+        },
+        {
+          "page": 41,
+          "reason": "public derivative label",
+          "box": [
+            30.0,
+            820.0,
+            565.219970703125,
+            835.0
+          ]
+        },
+        {
+          "page": 42,
+          "reason": "public derivative label",
+          "box": [
+            30.0,
+            820.0,
+            565.219970703125,
+            835.0
+          ]
+        },
+        {
+          "page": 43,
+          "reason": "public derivative label",
+          "box": [
+            30.0,
+            820.0,
+            565.219970703125,
+            835.0
+          ]
+        },
+        {
+          "page": 44,
+          "reason": "public derivative label",
+          "box": [
+            30.0,
+            820.0,
+            565.219970703125,
+            835.0
+          ]
+        },
+        {
+          "page": 45,
+          "reason": "public derivative label",
+          "box": [
+            30.0,
+            820.0,
+            565.219970703125,
+            835.0
+          ]
+        },
+        {
+          "page": 46,
+          "reason": "public derivative label",
+          "box": [
+            30.0,
+            820.0,
+            565.219970703125,
+            835.0
+          ]
+        },
+        {
+          "page": 47,
+          "reason": "public derivative label",
+          "box": [
+            30.0,
+            820.0,
+            565.219970703125,
+            835.0
+          ]
+        }
+      ],
+      "render_comparison": [
+        {
+          "page": 1,
+          "max_grayscale_difference_outside_declared_regions": 0,
+          "pixels_difference_gt_2": 0
+        },
+        {
+          "page": 2,
+          "max_grayscale_difference_outside_declared_regions": 0,
+          "pixels_difference_gt_2": 0
+        },
+        {
+          "page": 3,
+          "max_grayscale_difference_outside_declared_regions": 0,
+          "pixels_difference_gt_2": 0
+        },
+        {
+          "page": 4,
+          "max_grayscale_difference_outside_declared_regions": 0,
+          "pixels_difference_gt_2": 0
+        },
+        {
+          "page": 5,
+          "max_grayscale_difference_outside_declared_regions": 0,
+          "pixels_difference_gt_2": 0
+        },
+        {
+          "page": 6,
+          "max_grayscale_difference_outside_declared_regions": 0,
+          "pixels_difference_gt_2": 0
+        },
+        {
+          "page": 7,
+          "max_grayscale_difference_outside_declared_regions": 0,
+          "pixels_difference_gt_2": 0
+        },
+        {
+          "page": 8,
+          "max_grayscale_difference_outside_declared_regions": 0,
+          "pixels_difference_gt_2": 0
+        },
+        {
+          "page": 9,
+          "max_grayscale_difference_outside_declared_regions": 0,
+          "pixels_difference_gt_2": 0
+        },
+        {
+          "page": 10,
+          "max_grayscale_difference_outside_declared_regions": 0,
+          "pixels_difference_gt_2": 0
+        },
+        {
+          "page": 11,
+          "max_grayscale_difference_outside_declared_regions": 0,
+          "pixels_difference_gt_2": 0
+        },
+        {
+          "page": 12,
+          "max_grayscale_difference_outside_declared_regions": 0,
+          "pixels_difference_gt_2": 0
+        },
+        {
+          "page": 13,
+          "max_grayscale_difference_outside_declared_regions": 0,
+          "pixels_difference_gt_2": 0
+        },
+        {
+          "page": 14,
+          "max_grayscale_difference_outside_declared_regions": 0,
+          "pixels_difference_gt_2": 0
+        },
+        {
+          "page": 15,
+          "max_grayscale_difference_outside_declared_regions": 0,
+          "pixels_difference_gt_2": 0
+        },
+        {
+          "page": 16,
+          "max_grayscale_difference_outside_declared_regions": 0,
+          "pixels_difference_gt_2": 0
+        },
+        {
+          "page": 17,
+          "max_grayscale_difference_outside_declared_regions": 0,
+          "pixels_difference_gt_2": 0
+        },
+        {
+          "page": 18,
+          "max_grayscale_difference_outside_declared_regions": 0,
+          "pixels_difference_gt_2": 0
+        },
+        {
+          "page": 19,
+          "max_grayscale_difference_outside_declared_regions": 0,
+          "pixels_difference_gt_2": 0
+        },
+        {
+          "page": 20,
+          "max_grayscale_difference_outside_declared_regions": 0,
+          "pixels_difference_gt_2": 0
+        },
+        {
+          "page": 21,
+          "max_grayscale_difference_outside_declared_regions": 0,
+          "pixels_difference_gt_2": 0
+        },
+        {
+          "page": 22,
+          "max_grayscale_difference_outside_declared_regions": 0,
+          "pixels_difference_gt_2": 0
+        },
+        {
+          "page": 23,
+          "max_grayscale_difference_outside_declared_regions": 0,
+          "pixels_difference_gt_2": 0
+        },
+        {
+          "page": 24,
+          "max_grayscale_difference_outside_declared_regions": 0,
+          "pixels_difference_gt_2": 0
+        },
+        {
+          "page": 25,
+          "max_grayscale_difference_outside_declared_regions": 0,
+          "pixels_difference_gt_2": 0
+        },
+        {
+          "page": 26,
+          "max_grayscale_difference_outside_declared_regions": 0,
+          "pixels_difference_gt_2": 0
+        },
+        {
+          "page": 27,
+          "max_grayscale_difference_outside_declared_regions": 0,
+          "pixels_difference_gt_2": 0
+        },
+        {
+          "page": 28,
+          "max_grayscale_difference_outside_declared_regions": 0,
+          "pixels_difference_gt_2": 0
+        },
+        {
+          "page": 29,
+          "max_grayscale_difference_outside_declared_regions": 0,
+          "pixels_difference_gt_2": 0
+        },
+        {
+          "page": 30,
+          "max_grayscale_difference_outside_declared_regions": 0,
+          "pixels_difference_gt_2": 0
+        },
+        {
+          "page": 31,
+          "max_grayscale_difference_outside_declared_regions": 0,
+          "pixels_difference_gt_2": 0
+        },
+        {
+          "page": 32,
+          "max_grayscale_difference_outside_declared_regions": 0,
+          "pixels_difference_gt_2": 0
+        },
+        {
+          "page": 33,
+          "max_grayscale_difference_outside_declared_regions": 0,
+          "pixels_difference_gt_2": 0
+        },
+        {
+          "page": 34,
+          "max_grayscale_difference_outside_declared_regions": 0,
+          "pixels_difference_gt_2": 0
+        },
+        {
+          "page": 35,
+          "max_grayscale_difference_outside_declared_regions": 0,
+          "pixels_difference_gt_2": 0
+        },
+        {
+          "page": 36,
+          "max_grayscale_difference_outside_declared_regions": 0,
+          "pixels_difference_gt_2": 0
+        },
+        {
+          "page": 37,
+          "max_grayscale_difference_outside_declared_regions": 0,
+          "pixels_difference_gt_2": 0
+        },
+        {
+          "page": 38,
+          "max_grayscale_difference_outside_declared_regions": 0,
+          "pixels_difference_gt_2": 0
+        },
+        {
+          "page": 39,
+          "max_grayscale_difference_outside_declared_regions": 0,
+          "pixels_difference_gt_2": 0
+        },
+        {
+          "page": 40,
+          "max_grayscale_difference_outside_declared_regions": 0,
+          "pixels_difference_gt_2": 0
+        },
+        {
+          "page": 41,
+          "max_grayscale_difference_outside_declared_regions": 0,
+          "pixels_difference_gt_2": 0
+        },
+        {
+          "page": 42,
+          "max_grayscale_difference_outside_declared_regions": 0,
+          "pixels_difference_gt_2": 0
+        },
+        {
+          "page": 43,
+          "max_grayscale_difference_outside_declared_regions": 0,
+          "pixels_difference_gt_2": 0
+        },
+        {
+          "page": 44,
+          "max_grayscale_difference_outside_declared_regions": 0,
+          "pixels_difference_gt_2": 0
+        },
+        {
+          "page": 45,
+          "max_grayscale_difference_outside_declared_regions": 0,
+          "pixels_difference_gt_2": 0
+        },
+        {
+          "page": 46,
+          "max_grayscale_difference_outside_declared_regions": 0,
+          "pixels_difference_gt_2": 0
+        },
+        {
+          "page": 47,
+          "max_grayscale_difference_outside_declared_regions": 0,
+          "pixels_difference_gt_2": 0
+        }
+      ],
+      "original_retained_privately": true,
+      "published": false
+    },
+    {
+      "source_filename": "AC-25ENE2021-accion-Bankia.pdf",
+      "source_sha256": "eda97315e94bb6db549bec7d30914d70a0cb2bf08a89ff405a3937c0562ac990",
+      "public_filename": "caixabank-ac-25ene2021-publica-20260905.pdf",
+      "sha256": "a18d28741a05efdf3697eadac6830c4223abb9021093ab9aeff1810c79984827",
+      "bytes": 78349,
+      "pages": 2,
+      "redaction_status": "PUBLIC_REDACTED_DERIVATIVE",
+      "removed_categories": [
+        "signature fields and personal certificate identifiers",
+        "bank deposit/operation identifiers where present",
+        "source metadata, hyperlinks and annotations"
+      ],
+      "declared_regions": [
+        {
+          "page": 1,
+          "reason": "signature",
+          "box": [
+            10.0,
+            801.9199829101562,
+            260.0,
+            831.9199829101562
+          ]
+        },
+        {
+          "page": 2,
+          "reason": "signature",
+          "box": [
+            10.0,
+            801.9199829101562,
+            260.0,
+            831.9199829101562
+          ]
+        },
+        {
+          "page": 1,
+          "reason": "public derivative label",
+          "box": [
+            30.0,
+            819.9199829101562,
+            565.3200073242188,
+            834.9199829101562
+          ]
+        },
+        {
+          "page": 2,
+          "reason": "public derivative label",
+          "box": [
+            30.0,
+            819.9199829101562,
+            565.3200073242188,
+            834.9199829101562
+          ]
+        }
+      ],
+      "render_comparison": [
+        {
+          "page": 1,
+          "max_grayscale_difference_outside_declared_regions": 2,
+          "pixels_difference_gt_2": 0
+        },
+        {
+          "page": 2,
+          "max_grayscale_difference_outside_declared_regions": 2,
+          "pixels_difference_gt_2": 0
+        }
+      ],
+      "original_retained_privately": true,
+      "published": false
+    }
+  ],
+  "court_redaction": {
+    "source_sha256": "e87dacfd8214fd18860571112b490b27eb0bbcfd077e42eb3d6028dbbddc9103",
+    "pages": 2,
+    "redaction_test": "PASS",
+    "remaining_legacy_source_variant": "944ac006d360e37907c5f056821238ee6975c9f85a4779b30f84e59ba9952c6b",
+    "outputs": [
+      {
+        "name": "caixabank-valencia-1859-2023-diligencia-06nov2025-p1-publica.jpg",
+        "bytes": 197325,
+        "sha256": "d4671fa8cdd8dca88ebdb0b589141846e7d9e8af516a2c30d6ae9530fb9325e3"
+      },
+      {
+        "name": "caixabank-valencia-1859-2023-diligencia-06nov2025-p2-publica.jpg",
+        "bytes": 101969,
+        "sha256": "d2992af3fd515e9b3eac666f964c26390f90fffbea46af54ca7e38bbf6ec86e1"
+      },
+      {
+        "name": "caixabank-valencia-diligencia-06nov2025-publica-20260905.pdf",
+        "bytes": 148048,
+        "sha256": "bc8d6db0b355252a1c6bd1dcbe84a7b8df7d3f98aac73116505274b197bf1265"
+      },
+      {
+        "name": "caixabank-valencia-diligencia-06nov2025-publica-20260905.txt",
+        "bytes": 2247,
+        "sha256": "4ace8458c27b010207de886cb74e556f09bc50fbd6d0a39afdf02194de9a3495"
+      },
+      {
+        "name": "court-p1-mono.png",
+        "bytes": 18236,
+        "sha256": "54b1328cdef6819488ee0029085df47a8b53ddcfaadd0b76a82827ca351b6d2e"
+      },
+      {
+        "name": "court-p2-mono.png",
+        "bytes": 10862,
+        "sha256": "51b50fa0c55d296121c7f63e166673fd95d1b1300a4ff374acfd3bb43b361e7d"
+      }
+    ]
+  },
+  "text_normalization": {
+    "operation": "Remove trailing whitespace from searchable sidecars only; PDF/image bytes unchanged.",
+    "variants": [
+      {
+        "path": "assets/evidence/caixabank-valencia-publica-20260905/caixabank-ac-25ene2021-publica-20260905.txt",
+        "input_raw_extraction_sha256": "896c6da8ebea6fcb0ce5814f80343c90ab7b78e36809ea326c7d4954ec3d3e88",
+        "public_normalized_sha256": "aea44526c496e537ed396e65b7f37dd65a51880ca52c7a3b2e6d0436ebf1d253"
+      },
+      {
+        "path": "assets/evidence/caixabank-valencia-publica-20260905/caixabank-contestacion-ene2024-publica-20260905.txt",
+        "input_raw_extraction_sha256": "5439d01cc2e5670637251c8bb093276589ce5d1516bd17c0b496c21385fd3cfe",
+        "public_normalized_sha256": "20dc4f559774d77f66a3d86aa1bb5013cd9d10dbfb11df1e9730bbab708ad5a0"
+      },
+      {
+        "path": "assets/evidence/caixabank-valencia-publica-20260905/caixabank-demanda-oct2023-publica-20260905.txt",
+        "input_raw_extraction_sha256": "1d7c417ff30b9119057889aeb8c528e5540de2b1eb1bdc44575b295a5093d3ca",
+        "public_normalized_sha256": "c7ad78820788055920577c9acdaf6b88b3701f3dfd469029ef8fad4362553157"
+      },
+      {
+        "path": "assets/evidence/caixabank-valencia-publica-20260905/caixabank-valencia-diligencia-06nov2025-publica-20260905.txt",
+        "input_raw_extraction_sha256": "4ace8458c27b010207de886cb74e556f09bc50fbd6d0a39afdf02194de9a3495",
+        "public_normalized_sha256": "9b7cf39ae9fa3ae653a9c0f3619252593edb7d27025f772c8644cea48600e2f8"
+      }
+    ]
+  },
+  "claim_filing_reconciliation": {
+    "status": "RECEIPT_RECOVERED_EXACT_FILE_RECONCILIATION_OPEN",
+    "receipt": {
+      "sha256": "a522daa528c345f4ef31963e3ded6a674a5376b56bead7495cc837fb013e2312",
+      "pages": 4,
+      "bytes": 194989,
+      "native_publication": "WITHHELD_PRIVATE",
+      "dispatch_local": "2023-10-11T19:39:57",
+      "timezone": "NOT_STATED_IN_RECEIPT",
+      "generation_local": "2023-10-11T19:45",
+      "generation_precision": "minute"
+    },
+    "denominator": {
+      "principal_pdf": 1,
+      "accompanying_pdfs": 12,
+      "total": 13,
+      "annex_labels": "0 through 11"
+    },
+    "components": [
+      {
+        "component": "principal",
+        "receipt_label": "Demanda_00 - Aweswell.pdf",
+        "receipt_declared_fingerprint": "d41a44712020991475a5f3e9df5a524d262d08d5e72e680a3b2e941b29a9d91d",
+        "fingerprint_algorithm": "NOT_EXPRESSLY_STATED_IN_REVIEWED_RECEIPT",
+        "exact_native_match": "OPEN"
+      },
+      {
+        "component": "annex-0",
+        "receipt_label": "Poder pleitos",
+        "receipt_declared_fingerprint": "25f40cb5da75fdb2f0a0642804f2a8f3ca0311f41ad96bc87f6db8f82e4a04df",
+        "fingerprint_algorithm": "NOT_EXPRESSLY_STATED_IN_REVIEWED_RECEIPT",
+        "exact_native_match": "OPEN"
+      },
+      {
+        "component": "annex-1",
+        "receipt_label": "Auto aprobacion",
+        "receipt_declared_fingerprint": "42111bd5e8a000bbe21e26121e1bb7b96a01f54cf028c422fd948849b1f57b93",
+        "fingerprint_algorithm": "NOT_EXPRESSLY_STATED_IN_REVIEWED_RECEIPT",
+        "exact_native_match": "OPEN"
+      },
+      {
+        "component": "annex-2",
+        "receipt_label": "Autorizacion",
+        "receipt_declared_fingerprint": "b7f1ea811dcc70b2fa303927b3af3faa499049ff93bfad654d7422158313a355",
+        "fingerprint_algorithm": "NOT_EXPRESSLY_STATED_IN_REVIEWED_RECEIPT",
+        "exact_native_match": "OPEN"
+      },
+      {
+        "component": "annex-3",
+        "receipt_label": "Escritura primer prestamo",
+        "receipt_declared_fingerprint": "edfe20ac61ac14e90cdaca6c02b1bb54abf84d3a3da1a31786d86c6b89e4e441",
+        "fingerprint_algorithm": "NOT_EXPRESSLY_STATED_IN_REVIEWED_RECEIPT",
+        "exact_native_match": "OPEN"
+      },
+      {
+        "component": "annex-4",
+        "receipt_label": "Contrato gestion riesgos financieros",
+        "receipt_declared_fingerprint": "45ec32cfee70cb6e372ad1ecbb7040d4034a7759d2ebb3ae70adb3e96d9154b6",
+        "fingerprint_algorithm": "NOT_EXPRESSLY_STATED_IN_REVIEWED_RECEIPT",
+        "exact_native_match": "OPEN"
+      },
+      {
+        "component": "annex-5",
+        "receipt_label": "Modificacion primer prestamo",
+        "receipt_declared_fingerprint": "06ee04b65175f0aadff5c01309bccdce2fbce3b8bff2acc4f1bbed32af9166fa",
+        "fingerprint_algorithm": "NOT_EXPRESSLY_STATED_IN_REVIEWED_RECEIPT",
+        "exact_native_match": "OPEN"
+      },
+      {
+        "component": "annex-6",
+        "receipt_label": "Escritura segundo prestamo",
+        "receipt_declared_fingerprint": "486ed98dd4c688a1c1ee749fd0f0d3db464208ebe9b2580f8a02c0d78d369d02",
+        "fingerprint_algorithm": "NOT_EXPRESSLY_STATED_IN_REVIEWED_RECEIPT",
+        "exact_native_match": "OPEN"
+      },
+      {
+        "component": "annex-7",
+        "receipt_label": "Poliza pignoracion",
+        "receipt_declared_fingerprint": "c76dfda1ed51d71d2a77bf37fb5c1f3a7b530aff87b709ac7467ddbd6ed4b58a",
+        "fingerprint_algorithm": "NOT_EXPRESSLY_STATED_IN_REVIEWED_RECEIPT",
+        "exact_native_match": "OPEN"
+      },
+      {
+        "component": "annex-8",
+        "receipt_label": "Contrato servicios inversion",
+        "receipt_declared_fingerprint": "468a715b698daad2e9fe39468c1622d139384c56a82d8592ef0ba8453a5710f1",
+        "fingerprint_algorithm": "NOT_EXPRESSLY_STATED_IN_REVIEWED_RECEIPT",
+        "exact_native_match": "OPEN"
+      },
+      {
+        "component": "annex-9",
+        "receipt_label": "Cuadros economicos",
+        "receipt_declared_fingerprint": "5bb3d326d94ae3a3b2cbdfec196f65f06b8fa50e1fe7c5b39cb57dba5602e017",
+        "fingerprint_algorithm": "NOT_EXPRESSLY_STATED_IN_REVIEWED_RECEIPT",
+        "exact_native_match": "OPEN"
+      },
+      {
+        "component": "annex-10",
+        "receipt_label": "Movimiento cuentas",
+        "receipt_declared_fingerprint": "825085411eac4047fbffc11b8b22b41e908b8f02070f35a43f4c4fc428825019",
+        "fingerprint_algorithm": "NOT_EXPRESSLY_STATED_IN_REVIEWED_RECEIPT",
+        "exact_native_match": "OPEN"
+      },
+      {
+        "component": "annex-11",
+        "receipt_label": "Comunicaciones",
+        "receipt_declared_fingerprint": "f7e0e33f8b5951188f5755ac2ab4dff412053ab18b84e19dad9584f3604ae414",
+        "fingerprint_algorithm": "NOT_EXPRESSLY_STATED_IN_REVIEWED_RECEIPT",
+        "exact_native_match": "OPEN"
+      }
+    ],
+    "recovered_claim_sha256": "f44121b7ac9026d2478d82974641c9da11fe497aacd999188ada3d495fe34a77",
+    "public_claim_status": "COUNSEL_SOURCE_DERIVED_REDACTED_READING_COPY_NOT_CERTIFIED_BYTE_IDENTICAL_TO_FILED_PRINCIPAL",
+    "interpretation": "The receipt establishes dispatch and the thirteen-component inventory. Its principal fingerprint has not been reconciled with the recovered claim PDF. Different fingerprints alone do not prove substantive alteration or wrongdoing. The receipt labels annex9 as economic tables, not the Administrator filing. No exact annex attribution is invented from a filename.",
+    "date_boundary": "Legacy 13-Oct references, 11-Oct dispatch, receipt generation and any later court registration are separate events.",
+    "custodian": "Filing procurador, counsel and complete court file",
+    "closure_test": "Recover all receipt-listed files; establish fingerprint algorithm and signing/conversion history; compare bytes and content; reconcile later court registration separately; review each annex for privacy, privilege and licensed material.",
+    "no_claims": [
+      "All annexes publicly available",
+      "Every native annex fully reviewed",
+      "Exact filed-version identity proved",
+      "Court admission proved by dispatch alone",
+      "Fingerprint mismatch proves misconduct"
+    ],
+    "preparation_correction": "An earlier unexecuted preparation draft contained incorrect receipt metadata and annex labels. It was replaced after independent extraction and hashing of the mounted source, before generation, merge or site deployment."
+  }
+}
