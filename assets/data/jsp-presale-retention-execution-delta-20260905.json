@@ -1,0 +1,75 @@
+{
+  "schema": "por-derecho.worker-delta.v1",
+  "control_id": "PD-JSP-RESEARCH-20260905",
+  "task": "Executed reconstruction separating pre-sale ownership, intended whole-hotel transaction, completion, residual rights and later dispositions",
+  "date": "2026-09-05",
+  "role": "WORKER",
+  "readiness": "RESEARCH_ONLY",
+  "current_main_observed": "529d90898b7172decf46323d6bd58fbc69fb560c",
+  "readout": "archive/JSP_PRESALE_RETENTION_EXECUTION_05SEP2026.md",
+  "canonical_ids": ["PD-SP-O-0014", "PD-SP-P-0004"],
+  "identity_boundary": "Reuse existing Monte Lanza and Asuncion identities after current-register reconciliation. Research source/claim keys here are local aliases, not newly allocated canonical evidence/person/proceeding IDs.",
+  "sources": [
+    {"key":"EX-S01","label":"26 May 2008 operating-assignment contract","filename":"estatutos y contrato de la comunidad de explotacion del coomplejo sun park MAY2008.pdf","range":"pp8-12","class":"signed contract copy; title recitals, not individual registry history"},
+    {"key":"EX-S02","label":"Monte Lanza 2008 deposited accounts","filename":"Deposito Cuentas Anuales 2008 (Montelanza SL).pdf","range":"pp4-8,11-13,17-18,20-21,26-27","class":"deposited accounts and certified meeting extract; underlying contracts missing"},
+    {"key":"EX-S03","label":"Monte Lanza 2012 deposited accounts","filename":"Deposito Cuentas Anuales 2012 (Montelanza SL).pdf","range":"pp22-23,25-27","class":"retrospective accounting disclosures"},
+    {"key":"EX-S04","label":"18 November 2016 protocol2026","filename":"liuidacion montelanza.pdf","range":"all38pages; operative pp1-13","class":"simple copy of conditional notarial instrument"},
+    {"key":"EX-S05","label":"18 April 2017 informational property extracts","filenames":["Montelanza 8498.pdf","Montelanza 8499.pdf","Montelanza 8500.pdf"],"range":"p2each","class":"dated informational extracts, not full certified histories"},
+    {"key":"EX-S06","label":"29 April 2008 CEXP foundation minutes","filename":"acta comunidad sun park 29abril2008.pdf","range":"all5pages","class":"signed minutes; no universal property conveyance"},
+    {"key":"EX-S07","label":"Later party acquisition workbook","filename":"Plots Sun Park - Acquisition 2018.xlsx","bytes":32843,"range":"all4native sheets;262master rows and3subsets compared","class":"party compilation and planning labels, not certified ownership"},
+    {"key":"EX-R08","label":"Separate restricted buyer-side financial review corroboration","range":"limited review; relevant aggregate property note","class":"private source; original, private financial schedules and legal strategy withheld from public repository"}
+  ],
+  "corrections": [
+    "Keep262hotel fincas separate from Monte Lanza's40premises plus2pools and220separately owned apartments.",
+    "Do not label JSP a direct majority owner at the inspected year-end/meeting dates:26.82%,59of220shares is the dated record. Earlier/indirect/de facto control is separate.",
+    "The original signed2008option, conveyance and residual agreement remain missing, but protocol2026has now been read in full.",
+    "Finca8498is outside protocol2026;8499and8500have distinct conditional recipients.",
+    "Later JSP-labelled locals7-11 may represent post-sale acquisitions from Monte Lanza, not pre-sale direct-JSP retention; the2010dacion match is unproved.",
+    "Do not equate2010shareholder debt settlements with2015-2018final liquidation quotas.",
+    "CEXPandCommunity tax identities differ; preserve separate bodies and capacities.",
+    "Notification is not automatically substantive acceptance; informational registry snapshots are not conclusive proof conditions failed."
+  ],
+  "new_propositions": [
+    {"key":"EX-P01","type":"attributed_user_allegation","text":"Gil understands the intended sale to cover100%of the hotel/all262fincas and alleges partial breach. Contractual scope remains to be proved."},
+    {"key":"EX-P02","type":"documented_source_statement","text":"Monte Lanza accounts identify12March2008option,17Juneexercise/sale and same-day residual option over11premises until31December2010.","sources":["EX-S02"]},
+    {"key":"EX-P03","type":"documented_source_statement","text":"2012accounts disclose2009premises sales and2010transfers to shareholders against company debts/advances.","sources":["EX-S03"]},
+    {"key":"EX-P04","type":"investigative_question","text":"Did those dispositions affect any of the11premises while prior buyer rights remained effective, and how were those rights completed, released or otherwise dealt with?"},
+    {"key":"EX-P05","type":"documented_instrument_terms","text":"Protocol2026requires acceptance by all creditors and approval by Monte Lanza general meeting; complete proof of performance not recovered.","sources":["EX-S04"]}
+  ],
+  "graph_edges": [
+    {"from":"JSP","to":"Monte Lanza","relationship":"direct_shareholding","value_percent":26.82,"dated_scope":["2008year-end","June2009meeting","2012year-end"],"status":"DATED_SOURCE_RECORD","sources":["EX-S02","EX-S03"]},
+    {"from":"JSP","to":"Monte Lanza","relationship":"earlier_indirect_contractual_or_de_facto_control","status":"UNPROVED_SEPARATE_INQUIRY"},
+    {"from":"Monte Lanza","to":"8499","relationship":"pre_existing_registered_title","status":"DATED_INFORMATIONAL_SNAPSHOT_APR2017","sources":["EX-S05"]},
+    {"from":"8499","to":"Comunidad Sun Park","relationship":"adjudication_in_payment","status":"CONDITIONAL_INSTRUMENT_NOT_PERFORMANCE_PROVED","instrument":"18Nov2016protocol2026","sources":["EX-S04"]},
+    {"from":"8500","to":"Ayuntamiento de Yaiza","relationship":"undivided_adjudication_in_payment","share_percent":57.78,"status":"CONDITIONAL_INSTRUMENT_NOT_PERFORMANCE_PROVED","sources":["EX-S04"]},
+    {"from":"8500","to":"Jose Luis Molina Marrero","relationship":"undivided_adjudication_in_payment","share_percent":25.28,"status":"CONDITIONAL_INSTRUMENT_NOT_PERFORMANCE_PROVED","sources":["EX-S04"]},
+    {"from":"8500","to":"Jose Miguel Molina Petit","relationship":"undivided_adjudication_in_payment","share_percent":16.94,"status":"CONDITIONAL_INSTRUMENT_NOT_PERFORMANCE_PROVED","sources":["EX-S04"]},
+    {"from":"8498","to":"separate_sale_presentation348_diary48","relationship":"registry_pending_sale_reference","date":"2016-06-02","status":"DISTINCT_TRANSACTION_FINAL_FATE_UNRESOLVED","sources":["EX-S05"]},
+    {"from":"8499_or8500_conditional_recipient","to":"exact_CAM_acquirer","relationship":"onward_disposition","status":"UNPROVED_REQUIRES_TITLE_AUTHORITY_AND_CONSIDERATION"}
+  ],
+  "open_gaps": [
+    "Original18Februarymandate,12Marchoption,17Juneconveyance/residual agreements and amendments",
+    "Pre-sale direct JSP apartment schedule and exact legal entity bridge",
+    "Finca-specific2009sales and2010daciones, buyer-right treatment and recipient/debt evidence",
+    "JSP-labelled8503-8507acquisition/disposal and proceeds",
+    "All-creditor acceptance plus shareholder approval for2016adjudications",
+    "8498separate sale and presentation outcome",
+    "8500municipal acceptance/inventory/disposal file",
+    "Exact CAM onward conveyances, authority and full consideration",
+    "Monte Lanza final accounts/extinction instrument and custody",
+    "JSP440/2021inventory/current status/final account/conclusion",
+    "75room-label discrepancies; quota sum99.945%; no silent normalisation",
+    "Full canonical source/event/identity registration and current-main integration"
+  ],
+  "proposed_changes": [
+    "Prominent bilingual pre-sale/completion/retention separation on existing JSP routes",
+    "Correct source-controlled ownership/authority chart using dated and conditional edges above",
+    "Update earlier prompts and source supplement candidate-only statements additively",
+    "Reciprocal links to existing Monte Lanza, community, Asuncion, title-chain, LPB and proceedings material"
+  ],
+  "existing_routes": ["es/jsp-montelanza-concurso-liquidacion/index.html","en/jsp-montelanza-insolvency-liquidation/index.html"],
+  "conflicts_with_current_main": "Additive worker files only; no whole-branch merge. Prior candidate page/chart language requires semantic correction during integration. Current-main register IDs and paths must be rechecked.",
+  "verification": {"finca_count":262,"unique_fincas":262,"commercial":40,"apartments":220,"solariums":2,"row_subsets":[190,39,33],"room_label_differences":75,"quota_total_percent":99.945,"local_workbook_formula_error_scan":"no matches","global_repository_validation":"not run","public_page_readback":"not performed"},
+  "external_actions": {"email":false,"filing":false,"merge":false,"deployment":false,"live_verification":false},
+  "publication_boundary": "Public-safe minimised findings only. Originals, private financial schedules, mailbox IDs, signatures and private draft strategy are not committed. Research keys are not a certification of completed canonical registration."
+}
