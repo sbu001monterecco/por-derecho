@@ -28,8 +28,8 @@ jobs:
           python3 - <<'PY'
           import asyncio,base64,hashlib,io,json,pathlib,re,requests,zipfile
           from playwright.async_api import async_playwright
-          share='https://1drv.ms/u/c/bdf43392f576e62f/IQDMLxyBYdxYQ5L8jJeID5G9ATYXwhert9PGdfQjZP7GSrM'
-          expected='c9eaa19a484eecf828f6cb5f39ec91e157a4b924dd3fee4a94e394675689fe6c'
+          share='https://1drv.ms/u/c/bdf43392f576e62f/IQC_3pJ_-va8SbcEi8EDhJLqAfGhsEqYpGeyNeH5QjrBaSY'
+          expected='25213bce268c84a0cbb4938aa1e311bb664f9d8804105c8b118252ab183fb66e'
           token='u!'+base64.urlsafe_b64encode(share.encode()).decode().rstrip('=')
           blob=None
           candidates=[f'https://api.onedrive.com/v1.0/shares/{token}/root/content',f'https://api.onedrive.com/v1.0/shares/{token}/driveItem/content',share+'?download=1']
@@ -89,7 +89,7 @@ jobs:
           if subprocess.run(['git','diff','--cached','--quiet']).returncode:
               subprocess.run(['git','config','user.name','github-actions[bot]'],check=True)
               subprocess.run(['git','config','user.email','41898282+github-actions[bot]@users.noreply.github.com'],check=True)
-              subprocess.run(['git','commit','-m','Prepare public-redacted CaixaBank sources, mobile reader and reciprocal links'],check=True)
+              subprocess.run(['git','commit','-m','Correct homepage route leak, quick-reader contrast and AC counter-position'],check=True)
               auth=base64.b64encode(('x-access-token:'+os.environ['GH_TOKEN']).encode()).decode()
               subprocess.run(['git','-c','http.extraheader=AUTHORIZATION: basic '+auth,'push','origin','HEAD:refs/heads/'+branch],check=True)
           print('WORKER_HEAD',subprocess.check_output(['git','rev-parse','HEAD'],text=True).strip())
@@ -107,6 +107,7 @@ jobs:
           python3 scripts/audit_caixabank_360_20260905.py --stage browser
           python3 scripts/audit_caixabank_360_20260905.py --stage http
           python3 scripts/validate_caixabank_reader_repair_20260905.py --browser-folder /tmp/caixabank-candidate
+          python3 scripts/check_caixabank_final_reader_review_20260905.py
       - uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
         if: always()
         with:
