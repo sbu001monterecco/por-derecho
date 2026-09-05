@@ -1,0 +1,1869 @@
+PAGINA 1
+Juzgado de Primera Instancia nº 27 de Valencia
+Procedimiento Ordinario nº 1859/2023-9
+Contestación a la demanda
+AL JUZGADO DE PRIMERA INSTANCIA Nº 27 DE VALENCIA
+TRÁMITE:
+Contestación a la demanda
+DEMANDADA:
+CaixaBank, S.A.
+PROCURADOR:
+Dª. Silvia López Monzó
+ABOGADO:
+D. Raimon Tagliavini Sansa y D. David García Martín
+OBJETO DEL LITIGIO:
+Acción de anulabilidad por vicio en el consentimiento sobre el
+contrato de gestión de riesgos financieros de fecha 17 de junio de
+2008 (derivado de cobertura) y otras cláusulas; y acción subsidiaria
+de daños contractuales.
+___________________________________________________________________________
+EXCEPCIONES PROCESALES Y SUSTANTIVAS (PREVIAS AL FONDO DEL ASUNTO):
+(A) Falta de legitimación de la demanda ex art. 122 del TRLC.- La demandante, Aweswell
+Limited (que no es parte de los contratos), no puede invocar la legitimación subsidiaria del art.
+122 del TRLC, en tanto que (i) no es acreedora del deudor concursado (Luchy Playa Blanca,
+S.L.), (ii) no ha cumplido con las exigencias procedimentales de dicho precepto concursal, (iii)
+la acción principal de anulabilidad no puede en ningún caso ser ejercitada al amparo de dicho
+precepto y, en todo caso, (iv) constituiría una extralimitación. Remisión a las páginas 3 a 9.
+(B) Cosa Juzgada.-En el Informe presentado por la Administración Concursal en el marco del
+concurso de acreedores de Luchy Playa Blanca, S.L., fueron reconocidos en favor de la entidad
+bancaria los correspondientes créditos, entre ellos, el relativo al derivado de cobertura,
+desplegando ello, por tanto, los efectos de cosa juzgada. Remisión a las páginas 9 a 11.
+(C) Caducidad de la acción de anulabilidad.- El contrato de gestión de riesgos financieros
+(derivado de cobertura) impugnado, alcanzó su fecha pactada de terminación contractual el 7
+de enero de 2012, momento en el que dejó de producir efectos. Sin embargo, la demanda no ha
+sido interpuesta hasta el 13 de octubre de 2023, habiendo transcurrido sobradamente el plazo
+de caducidad de cuatro años, que conforme establece el TS debe computarse desde la
+terminación y agotamiento contractual (entre otras, SSTS nº 322/2023, de 28 de febrero, y nº
+356/2023, de 8 de marzo). Remisión a las páginas 26 y 27.
+(D) Prescripción de la acción de daños contractuales.- La acción subsidiaria de daños
+contractuales se encontraba prescrita al tiempo de ser interpuesta la demanda, ya que, habiendo
+expirado y concluido el contrato de gestión de riesgos financieros el 7 de enero de 2012, la
+acción de daños prescribió —a más tardar— el 28 de diciembre de 2020. Sin embargo, la
+demanda no se interpuso hasta el 13 de octubre de 2023. Remisión a las páginas 37 a 39.
+
+
+Copia publica disociada - 05-09-2026. Original firmado conservado; firma y verificadores no reproducidos.
+
+
+PAGINA 2
+
+2/47
+Dª. Silvia López Monzó, Procuradora de los Tribunales y de CaixaBank, S.A. (en lo sucesivo
+“CaixaBank o el “Banco”), cuya representación se acredita mediante escritura de poder para
+pleitos que se aporta como Documento nº 1, bajo la dirección letrada de D. Raimon Tagliavini
+Sansa y D. David García Martín, colegiados del ICAB, ante el Juzgado comparezco y, como
+mejor proceda en Derecho, DIGO:
+1. Le fue notificada a mi representada la cédula de emplazamiento dictada por este Juzgado en
+fecha 9 de noviembre de 2023, por la que (i) se le notificó la demanda interpuesta por la
+mercantil inglesa Aweswell Limited (la “Parte Actora”), quien manifiesta ser la accionista de
+la sociedad concursada Luchy Playa Blanca, S.L., y ostentar supuestamente legitimación
+subsidiaria ex art. 122 del Texto Refundido de la Ley Concursal para el ejercicio de acciones
+legales y (ii) se le emplazó por término de veinte días hábiles para su contestación.
+2. Tras poner esta parte en conocimiento del Juzgado que el emplazamiento fue defectuoso, en
+tanto que CaixaBank no había recibido copia de diversos de los documentos referidos en la
+demanda, y muchos de ellos se encontraban en un formato ilegible, el Juzgado dictó la
+Diligencia de Ordenación de fecha 11 de diciembre de 2023, por la que acordó “dar traslado a
+la demandada, de manera telemática a través de lexnet, de los documentos acompañados con
+la demanda; empezando a contar el plazo de veinte días para contestar a la demanda a partir
+de su recepción”.
+3. Habiendo recibido mi representada la referida documentación, mediante el presente escrito
+y en la representación que ostento, en cumplimiento de lo previsto en la Ley 1/2000, de 7 de
+enero, de Enjuiciamiento Civil (“LEC”), vengo a formular, en tiempo y forma,
+CONTESTACIÓN Y OPOSICIÓN A LA DEMANDA, debiéndose empezar por oponer las
+siguientes
+
+
+
+
+
+Copia publica disociada - 05-09-2026. Original firmado conservado; firma y verificadores no reproducidos.
+
+
+PAGINA 3
+
+3/47
+EXCEPCIONES PROCESALES
+PRIMERA.- FALTA DE LEGITIMACIÓN DE LA DEMANDANTE AWESWELL
+LIMITED EX ART. 122 DEL TRLC
+A.
+Consideración previa sobre el demandante y el documento nº 2 acompañado con la
+demanda:
+1.
+En primer lugar, debe destacarse que la Parte Actora no está discutiendo ninguna
+operación de la que fuera parte. La Parte Actora (Aweswell Limited) es una sociedad
+inglesa, con domicilio en ABG Accountants, 20 City Road, Londres (Reino Unido), que
+ostenta la condición de accionista de la sociedad española Luchy Playa Blanca, S.L.; siendo
+esta segunda sociedad (Luchy Playa Blanca, S.L.) la que verdaderamente suscribió y
+contrató las operaciones con Caja Canarias (ahora CaixaBank), que ahora se pretenden
+impugnar con la demanda.
+2.
+Concretamente, fue Luchy Playa Blanca, S.L. la que suscribió, entre otras, las siguientes
+operaciones:
+i.
+El contrato de gestión de riegos financieros de fecha 17 de junio de 2008
+(documento nº 2).
+ii.
+El contrato de préstamo con garantía hipotecaria de fecha 17 de junio de 2008 (doc.
+nº 3 de la demanda), que fue novado en fecha 27 de mayo de 2010 (doc. nº 5 de la
+demanda).
+iii.
+El contrato de préstamo con garantía hipotecaria de fecha 27 de mayo de 2010 (doc.
+nº 6 de la demanda).
+iv.
+La póliza de pignoración de fecha 27 de mayo de 2010 (documento nº 3).
+3.
+Dicha sociedad —Luchy Playa Blanca, S.L.— fue declarada en concurso de acreedores
+(concurso ordinario nº 36/2012) que se tramita ante el Juzgado de lo Mercantil nº 1 de Las
+Palmas de Gran Canaria.
+4.
+Según la demandante, Aweswell Limited tendría supuestamente legitimación —pese a no
+ser parte contractual— para ejercitar contra dichas operaciones una acción de anulabilidad,
+y otra subsidiaria de daños contractuales, argumentando que: “[e]sta parte está legitimada
+Copia publica disociada - 05-09-2026. Original firmado conservado; firma y verificadores no reproducidos.
+
+
+PAGINA 4
+
+4/47
+por su condición de acreedor, habiendo efectuado el requerimiento previo a la
+Administración Concursal en los términos previstos en el artículo 122 del Real Decreto
+Legislativo 1/2020, de 2 de mayo” (pág. 11 de la demanda, Fundamento de Derecho Procesal
+II, sobre legitimación). La adversa acompaña, a estos efectos, como doc. nº 2 de su demanda
+el escrito procesal que considera que acreditaría su tesis.
+5.
+Así pues, la legitimación de Aweswell Limited para interponer la demanda se basa de
+contrario exclusivamente en la pretendida aplicación del artículo 122 del Texto Refundido
+de la Ley Concursal.
+6.
+Como se razonará a continuación en esta Excepción Procesal Primera, en el caso que nos
+ocupa no se cumplen los requisitos y presupuestos de dicho precepto concursal y, por
+ello, la demanda debe ser íntegramente desestimada in limine litis, es decir, sin
+necesidad de desarrollar examen sobre el fondo de las pretensiones.
+B.
+Improcedencia de invocar la legitimación subsidiaria ex art. 122 del TRLC para el
+ejercicio de las pretensiones contenidas en la demanda:
+7.
+Extractamos, en primer lugar, el tenor literal del artículo 122 del TRLC invocado por la
+demandante Aweswell Limited:
+“Artículo 122. Legitimación subsidiaria de los acreedores.
+1. Los acreedores que hayan instado por escrito a la administración concursal el
+ejercicio de una acción de carácter patrimonial que correspondiera al concursado,
+con expresión de las concretas pretensiones en que consista y de la fundamentación
+jurídica de cada una de ellas, estarán legitimados para ejercitarla si el concursado,
+en caso de intervención, o la administración concursal, en caso de suspensión, no
+lo hiciesen dentro de los dos meses siguientes al requerimiento.
+(...) 3. Las demandas que se presenten por los acreedores conforme a lo establecido
+en los apartados anteriores deberán notificarse a la administración concursal”.
+8.
+Si se acude al contenido de dicho precepto se aprecia con facilitad que la demanda
+interpuesta por la Parte Actora (Aweswell Limited) incumple de forma directa diversas
+exigencias impuestas por el art. 122 del TRLC, cada una de las cuales impide por sí
+misma que se pueda reconocer “legitimación subsidiaria” a la demandante. En
+particular:
+
+Copia publica disociada - 05-09-2026. Original firmado conservado; firma y verificadores no reproducidos.
+
+
+PAGINA 5
+
+5/47
+(i).
+La demandante Aweswell Limited ni ha acreditado, ni es acreedora de la
+concursada Luchy Playa Blanca, S.L. Por más que Aweswell Limited sea
+accionista de la concursada, el artículo 122 del TRLC únicamente concede
+legitimación subsidiaria a los acreedores.
+No resulta admisible que Aweswell Limited afirme en la página 1 de su demanda
+que “se adjunta Auto de 16 de abril de 2018 del Juzgado de lo Mercantil N.º 1 de
+Las Palmas de Gran Canaria, en el que se refleja la condición de acreedor de la
+mercantil AWESWELL LIMITED, como DOC N.º 1”.
+Si se acude a dicho documento, puede apreciarse que el único punto en que el
+demandante Aweswell aparecería referido con el adjetivo acreedor es en el
+encabezado de partes personadas, que constituye la prototípica parte estandarizada
+de las resoluciones judiciales, y ninguna virtualidad probatoria puede tener al
+respecto:
+
+
+
+
+
+
+
+
+
+
+
+
+Copia publica disociada - 05-09-2026. Original firmado conservado; firma y verificadores no reproducidos.
+
+
+PAGINA 6
+
+6/47
+En este punto, adquiere especial relevancia el Informe que la Administración
+Concursal de Luchy Playa Blanca, S.L. presentó en el marco del concurso de
+acreedores (documento nº 4). En dicho Informe la Administración Concursal
+rechazó que Aweswell Limited (denominada en ese momento Monterecco Sun
+Park Limited1) ostentara créditos frente a la concursada Luchy Playa Blanca,
+S.L. Véase el siguiente fragmento:
+
+
+Y no solo eso, en el Informe de la AC se recogen afirmaciones como las siguientes:
+(a) “no se ha entregado a la AC ningún soporte documental que justifique la
+existencia del crédito” (pág. 26, doc. nº 4) y (b) “Por otro lado la AC puso de
+manifiesto ante el Juzgado la presunta irregularidad cometida por la concursada
+y su administrador único, consistente, en síntesis, en ceder la explotación de sus
+inmuebles y por tanto su única fuente de ingresos a una sociedad española
+("MONTERECCO SUN PARK, S.L."), cuyo capital social pertenece a la entidad
+de nacionalidad inglesa "MONTERECCO SUN PARK LIMITED", entidad que
+ostenta el 100% del capital social de "LUCHY", sin recibir por ello y hasta la
+fecha, ningún tipo de contraprestación. Es por ello por lo que se solicitó al Juzgado
+autorización para ejercer las acciones penales que, en su caso, correspondan,
+estando la AC a la espera del pronunciamiento del Juzgado” (pág. 37, doc. nº 7).
+No siendo Aweswell Limited acreedora de Luchy Playa Blanca, S.L. (así se
+concluyó en el Informe de la Administración Concursal), no puede ostentar
+legitimación ex art. 122 del TRLC.
+
+
+1 Si se acude al poder para pleitos acompañado por la demandante Aweswell Limited como documento nº 1 puede
+apreciarse el cambio de denominación social.
+Copia publica disociada - 05-09-2026. Original firmado conservado; firma y verificadores no reproducidos.
+
+
+PAGINA 7
+
+7/47
+(ii).
+Aweswell Limited tampoco ha aportado junto con su demanda la solicitud
+que remitió por escrito a la administración concursal de Luchy Playa Blanca,
+S.L. instando el ejercicio de acciones. Aunque sí consta en autos (doc. nº 2 de la
+demanda) un escrito de la administración concursal, de hace más de dos años,
+aceptando el ejercicio de algunas acciones, ello no basta; y es que quién alega tener
+legitimación subsidiaria ex art. 122 del TRLC debe aportar el escrito de solicitud
+que dirigió inicialmente a la administración concursal, de modo que se pueda
+conocer el contenido de dicha solicitud y, especialmente, “las concretas
+pretensiones en que consista y de la fundamentación jurídica de cada una de ellas”
+(art. 122 TRLC) dadas por el acreedor. Ello resulta trascendental a los efectos de
+la delimitación de la legitimación.
+(iii).
+Tampoco podría reconocerse la legitimación subsidiaria, por cuanto el
+artículo 122 del TRLC comprende “accion[es] de carácter patrimonial”; y, sin
+embargo, en la demanda se pretende ejercitar con carácter principal una
+acción de anulabilidad por vicio en el consentimiento, cuya naturaleza subjetiva
+y de índole personal, impiden que la legitimación para su ejercicio se pueda
+transferir ex lege por dicha vía.
+(iv).
+Por último, esta parte señala que el escrito de autorización de la Administración
+Concursal supeditaba dicha autorización a la asunción por Aweswell Limited de
+“los gastos derivados de la reclamación, incluidos los honorarios de letrado y
+procurador que se contraten por la AC a esos efectos”, sin que Aweswell Limited
+haya acreditado que efectivamente le hubiera proporcionado a la
+Administración Concursal una “garantía de pago” (como se decía en la pág. 2
+de la demanda), que pudiera conducir al agotamiento de la legitimación principal
+de la administración concursal (y al nacimiento de una subsidiaria), para el caso de
+inacción de la Administración Concursal.
+
+
+Copia publica disociada - 05-09-2026. Original firmado conservado; firma y verificadores no reproducidos.
+
+
+PAGINA 8
+
+8/47
+C.
+Subsidiariamente, las pretensiones ejercitadas en la demanda exceden con claridad
+del escrito de autorización de la Administración Concursal de Luchy Playa Blanca,
+S.L.
+9.
+Sin perjuicio de que las anteriores razones justifican la necesidad de desestimar de plano la
+demanda interpuesta de contrario, con carácter subsidiario debemos añadir otra
+consideración, y es que, si se atiende al contenido del doc. nº 2 acompañado de contrario con
+su demanda, se observa que la Administración Concursal de Luchy Playa Blanca, S.L. tan
+solo aceptó ejercitar alguna de las muchas acciones acumuladas en la demanda.
+10.
+Concretamente, la Administración Concursal autorizó “ejercitar contra la entidad Bankia
+la acción prevista en el art. 1.101 del CC en relación con el denominado “Contrato de
+gestión de riesgos financieros de fecha 17 de junio de 2008” (SWAP) en virtud del cual
+consta reconocido a favor de esa entidad en los textos definitivos un crédito ordinario por
+importe de 141463,86 €, con la finalidad de reclamar a dicha entidad la cantidad
+aproximada de 596.123,75 euros en concepto de daños y perjuicios, que se corresponde con
+el comportamiento del swap entre el 7 de julio de 2008 y 7 de octubre de 2011” (doc. nº 2
+de la demanda).
+11.
+Como puede apreciarse, las siguientes pretensiones ejercitadas en la demanda de
+Aweswell Limited excederían en todo caso del alcance del escrito de autorización de la
+Administración Concursal: (i) la acción de anulabilidad por vicio en el consentimiento
+respecto del contrato de gestión de riesgos financieros de fecha 17 de junio de 2008 (pág. 25
+de la demanda, Suplico), dado que el documento de autorización solamente se refería a la
+acción de daños del artículo 1101 del CC, (ii) la nulidad de “los contratos de modificación
+de las condiciones del primer préstamo hipotecario, de constitución de derecho real de
+prenda sobre el depósito a plazo por importe de 405.000 euros y de suscripción del segundo
+préstamo hipotecario por importe de 850.000 euros, por su vinculación al primero de ellos”
+(pág. 25 de la demanda, Suplico).
+12.
+Por ello, incluso si este Juzgado admitiera proseguir con la tramitación del procedimiento,
+el objeto del mismo debería verse drásticamente reducido, en tanto que, como se acaba de
+exponer, la mayor parte del Suplico de la demanda constituiría una extralimitación del
+escrito de la Administración Concursal.
+Copia publica disociada - 05-09-2026. Original firmado conservado; firma y verificadores no reproducidos.
+
+
+PAGINA 9
+
+9/47
+13.
+Trasladando lo anterior a las sumas económicas reclamadas por Aweswell Limited,
+siguiendo su planteamiento numérico (negado por esta parte), su reclamación debería
+reducirse de 1.124.445,84 euros a la cifra de 573.591,53 euros.
+SEGUNDA.- EXCEPCIÓN DE COSA JUZGADA: LA ADVERSA NO IMPUGNÓ EN
+EL CONCURSO EL CRÉDITO RECONOCIDO A CAJA CANARIAS
+(AHORA CAIXABANK) POR EL DERIVADO
+14.
+En otro orden de cosas, esta parte debe igualmente formular una Excepción de Cosa
+Juzgada en relación con la validez y exigibilidad del derivado de cobertura que fue
+contratado por Luchy Playa Blanca, S.L. (i.e. en el marco del contrato de gestión de
+riesgos financieros de fecha 17 de junio de 2008).
+15.
+Concretamente, en el documento nº 2 acompañado por Aweswell Limited a su demanda,
+se afirma que en los textos definitivos concursales de Luchy Playa Blanca, S.L. se
+reconoció un crédito ordinario en favor de Caja Canarias (ahora CaixaBank) por
+importe de 141.463,86 euros: “el denominado Contrato de gestión de riesgos
+financieros de fecha 17 de junio de 2008 (SWAP) en virtud del cual consta reconocido a
+favor de esa entidad en los textos definitivos un crédito ordinario por importe de
+141463,86 €”.
+16.
+Extractamos, a estos efectos, la correspondiente ficha con los créditos que fueron
+reconocidos a Caja Canarias (en ese momento ya Bankia, y después CaixaBank) en el
+Informe de la Administración Concursal (doc. nº 4 de la Contestación, pág. nº 68):
+
+
+
+
+
+
+Copia publica disociada - 05-09-2026. Original firmado conservado; firma y verificadores no reproducidos.
+
+
+PAGINA 10
+
+10/47
+17.
+Dicha cuestión no carece de relevancia, y es que el reconocimiento en la lista de
+acreedores del Informe de la Administración Concursal —y posteriormente, en los textos
+definitivos concursales— de los créditos de mi representada, despliega efectos de cosa
+juzgada, sobre todos aquellos contratos que ahora pretende improcedentemente
+impugnar la adversa.
+18.
+Véase, en este sentido, la Sentencia de la Audiencia Provincial de Vizcaya de 15 de
+septiembre de 2008 (JUR 2009\9103):
+“Así se considera por los motivos sustantivos ya apuntados, de que
+existe un trámite preclusivo de estricto cumplimiento para poder
+impugnar el informe de la Administración Concursal, el reflejado en
+el art. 97 LECO, dentro de los diez días siguientes a la publicación y
+comunicación de aquel, transcurrido el cual, por imperativo legal, no
+cabe posibilidad alguna de impugnación, y, por lo tanto, no se pueden
+hacer dichas variaciones dado que no van a tener relevancia ni
+reconocimiento en el procedimiento concursal” (FD 3º).
+19.
+En ese mismo sentido, véase la Sentencia de la Audiencia Provincial de Pontevedra de 14
+de octubre de 2009 (JUR 2009\468667):
+“(…) El incumplimiento de dicha carga procesal (la impugnación del
+informe de la Administración Concursal en tiempo y forma) viene
+establecido expresamente en el art. 97 LC, con la preclusión de hacerlo
+en un momento ulterior dentro del concurso” (FD 4º).
+20.
+Y, asimismo, léase a la Prof.ª Nuria Bermejo, “Comentario al art. 86 LC”, en Ángel ROJO
+y Emilio BELTRÁN (Dir.), Comentario de la Ley Concursal, Tomo I, Thomson-Civitas,
+Madrid, 2004, pp., 1542- 1558, p. 1557, que indicó lo siguiente en relación con que la
+lista definitiva de acreedores tiene la misma eficacia que una sentencia a los efectos de
+apreciar cosa juzgada:
+“La forma en que queda fijada la cuota de responsabilidad, dota a la
+lista definitiva de acreedores de una eficacia análoga a la
+correspondiente de una sentencia. Ese dato ya era puesto de
+manifiesto por la vieja jurisprudencia cuando se señalaba que ‘la
+aprobación que presta a los créditos el reconocerlos, es como una
+sentencia de naturaleza especial, contra la que sólo se da el recurso
+que expresamente se consigna en la Ley, no utilizado el cual queda
+consentida y pasada en autoridad de cosa juzgada’ (STS 4-5-1928).
+Copia publica disociada - 05-09-2026. Original firmado conservado; firma y verificadores no reproducidos.
+
+
+PAGINA 11
+
+11/47
+Esta eficacia se extiende sobre cualquiera de los créditos reconocidos,
+incluidos aquellos sujetos a reconocimiento especial (v. art. 87). Una
+vez reconocido el crédito e incluido de forma definitiva en la lista de
+acreedores, podrá privarse de eficacia al reconocimiento invocando
+cualquier circunstancia que desvirtúe la pretensión (por ejemplo, la
+concurrencia de una condición resolutoria, la no verificación de una
+condición suspensiva, la falta de legitimación del acreedor). En caso
+de oposición del acreedor, la cuestión habrá de ser planteada ante el
+juez del concurso por la administración concursal (...) El acreedor
+también podrá instar la corrección de la lista a través del trámite de
+incidentes cuando la administración concursal se niegue a tomar en
+consideración las circunstancias invocadas por éste (por ejemplo, la
+verificación de una condición suspensiva)”.
+21.
+En el caso que nos ocupa, del inciso referido en el documento nº 2 de la demanda, se
+desprende que el crédito concursal reconocido en favor de la entidad bancaria con motivo
+del derivado (i.e. el contrato de gestión de riesgos financieros) no fue impugnado de
+contrario y se incluyó el mismo en los textos definitivos concursales. Por ello, resulta
+improcedente y contrario a los efectos de la cosa juzgada, que con la demanda se
+pretenda discutir la validez y exigibilidad del referido derivado (así como del resto
+de contratos), debiéndose desestimar y archivar dicha pretensión de la adversa.
+*     *     *
+22.
+Tras desarrollar las anteriores Excepciones Procesales, que justifican por sí solas la
+necesidad de desestimar de plano la demanda, se pasa ahora a contestar a los hechos de
+la demanda que, a efectos de lo dispuesto en el artículo 405 de la LEC, se niegan siempre
+que no sean admitidos expresamente. En aras de una exposición lógica, no se seguirá
+estrictamente el orden fáctico de la demanda, sino el que conduzca a un mejor
+esclarecimiento del objeto de la presente litis.
+Copia publica disociada - 05-09-2026. Original firmado conservado; firma y verificadores no reproducidos.
+
+
+PAGINA 12
+
+12/47
+HECHOS
+PREVIO.-SÍNTESIS DE LA CONTESTACIÓN
+23.
+Para el hipotético supuesto de que este Juzgado entrara a conocer el fondo de la demanda
+interpuesta por Aweswell Limited, debemos señalar que tanto la acción de anulabilidad
+ejercitada con carácter principal, como la subsidiaria de daños no podrían prosperar, por
+adolecer de defectos de configuración y basarse en un relato fáctico y jurídico sesgado.
+A continuación enunciamos brevemente las diversas razones por las que cada una de
+dichas acciones deberá ser desestimada.
+A.
+La improcedencia de la acción de anulabilidad por vicio en el consentimiento
+respecto del derivado (swap): caducidad, inexistencia de vicio en el consentimiento
+e inexcusabilidad
+24.
+En lo que respecta a la acción de anulabilidad por vicio en el consentimiento ejercitada
+respecto del “Contrato de Gestión de Riesgos Financieros”, de fecha 7 de junio de 2008
+(doc. nº 2 de esta contestación, y doc. nº 4 de la demanda), debemos manifestar en primer
+lugar que se encontraba sobradamente caducada al tiempo de ser ejercitada.
+25.
+Esta circunstancia puede corroborarse fácilmente si se tiene en cuenta que el Swap venció
+en fecha 7 de enero de 2012 y la Demanda que ahora se contesta no ha sido interpuesta
+hasta el pasado 13 de octubre de 2023. Como puede observarse, el plazo de caducidad
+de cuatro años (en recta aplicación de la doctrina jurisprudencial que el Tribunal Supremo
+tiene en la materia) habría transcurrido sobradamente.
+26.
+Además de lo anterior, y a mayor abundamiento, en este escrito de contestación también
+justificaremos igualmente que las premisas sobre las que se construye la acción de
+anulabilidad —contratación del derivado bajo el entendimiento de haber contratado un
+producto seguro y sin riesgo—, resultan igualmente contrarias a la realidad y al proceso
+de contratación.
+27.
+Para mostrarlo nos referiremos a, entre otras, circunstancias, que (i) la sociedad Luchy
+Playa Blanca, S.L. fue expresamente constituida por la demandante Aweswell Limited
+para acometer la operación en el complejo turístico Sun Park, Yaiza (Lanzarote), (ii) en
+Copia publica disociada - 05-09-2026. Original firmado conservado; firma y verificadores no reproducidos.
+
+
+PAGINA 13
+
+13/47
+el proceso de negociación y contratación la adversa fue debidamente informada, y (iii)
+explicaremos, también, que quién intervino como administrador de la compañía (un
+reconocido empresario de origen israelí) presentaba plena experiencia internacional en
+proyectos empresariales.
+B.
+La improcedencia de la acción de daños contractuales ex art. 1101 del CC:
+prescripción y falta de viabilidad y fundamento (SSTS de 13 de julio de 2016 y 22 de
+febrero de 2017)
+28.
+En cuanto a la acción ejercitada con carácter subsidiario de daños contractuales, tampoco
+podrá prosperar por ser, en primer lugar, procesalmente improcedente. Como
+desarrollaremos en el Fundamento de Derecho VII, el reproche consistente en que una
+falta de información precontractual habría provocado desconocimiento en la parte
+contratante no puede vehicularse mediante el ejercicio de una acción indemnización por
+incumplimiento contractual (ex 1.101 CC), como ha tenido ocasión de aclarar el Tribunal
+Supremo en, entre otras, las Sentencias de 13 de julio de 2016, 22 de febrero de 2017, 23
+de marzo de 2018 y 9 de mayo de 2018.
+29.
+Así pues, la Demanda interpuesta por la Parte Actora también deberá ser desestimada de
+plano por encontrarse deficientemente configurada, ya que la acción de responsabilidad
+contractual ex artículo 1101 CC no puede ser empleado para reprochar una supuesta falta
+de información precontractual.
+30.
+Además, la acción también se encontraría sobradamente prescrita, en tanto que, como se
+decía, el Swap venció en fecha 7 de enero de 2012 y la Demanda que ahora se contesta
+no ha sido interpuesta hasta el pasado 13 de octubre de 2023. Incluso en el cómputo más
+favorable para la adversa, la fecha límite para ejercitar acciones habría sido el 28 de
+diciembre de 2020.
+31.
+En todo caso, y a mayor abundamiento, también se justificará que no concurrirían
+tampoco los requisitos de fondo de dicha acción (i) incumplimiento contractual, (ii) nexo
+causal y (iii) la producción de un daño.
+Copia publica disociada - 05-09-2026. Original firmado conservado; firma y verificadores no reproducidos.
+
+
+PAGINA 14
+
+14/47
+C.
+La improcedencia de formular reproches de abusividad basados en la normativa de
+consumidores y usuarios respecto de las cláusulas contractuales de gastos de
+constitución, comisión de apertura y suelo
+32.
+Adicionalmente a lo anterior, debemos referirnos brevemente a la improcedencia de que
+la adversa, en las páginas 7 a 9 de su demanda, invoque la normativa de consumidores y
+usuarios para sostener la abusividad de la “cláusula suelo” (párr. 22 de la demanda), de
+la cláusula relativa a la distribución de los gastos de constitución (párr. 23 de la demanda)
+y de la cláusula reguladora de la comisión de apertura (párr. 24 de la demanda).
+33.
+Como se ha justificará en el Fundamento de Derecho Séptimo, la jurisprudencia es clara
+y pacífica en el sentido de señalar que cuando concurre una finalidad empresarial en la
+suscripción de un contrato, esa finalidad excluye la aplicabilidad del régimen tuitivo de
+consumidores y usuarios y, por consiguiente, no cabe alegar la supuesta abusividad de las
+cláusulas contractuales. Dicho control se encuentra reservado exclusivamente para la
+contratación con consumidores y usuarios, y no así para empresarios, como ocurre en el
+caso que nos ocupa.
+*
+
+
+*
+
+
+*
+PRIMERO.- CONTEXTO: LA CONSTITUCIÓN DE LUCHY PLAYA BLANCA, S.L.
+Y EL PROCESO DE NEGOCIACIÓN Y CONTRATACIÓN DE LA
+FINANCIACIÓN
+A.
+La constitución ad hoc de la mercantil Luchy Playa Blanca, S.L. para realizar el
+proyecto empresarial
+34.
+Para empezar, es importante señalar que la sociedad Luchy Playa Blanca, S.L. fue
+constituida en fecha 23 de mayo de 2008 específicamente para vehicular un proyecto
+empresarial de inversión y explotación de un complejo turístico denominado Sun Park,
+en Yaiza (Lanzarote).
+35.
+Así se reconoce en la página 2 de la demanda: “La sociedad Luchy Playa Blanca se
+constituye el 23 de mayo de 2008 con el objeto de realizar la compra del complejo
+turístico Sun Park. Para la realización de esta operación, LPB elabora un detallado plan
+de negocio que, entre otros puntos, incluía la obtención de financiación con un periodo
+Copia publica disociada - 05-09-2026. Original firmado conservado; firma y verificadores no reproducidos.
+
+
+PAGINA 15
+
+15/47
+de carencia suficiente para la ejecución de las obras de mejora necesarias en el complejo
+y su reposicionamiento con carácter previo al inicio de la explotación”.
+36.
+Se reproduce a continuación una imagen del mencionado complejo:
+
+37.
+Fue en ese contexto que el empresario Sr. Uri Omid, de origen israelí, y administrador de
+la sociedad vehicula recién constituida (Luchy Playa Blanca, S.L.), se puso en contacto
+con Caja de Ahorro de Canarias para negociar y recabar la financiación destinada a
+acometer el proyecto empresarial.
+38.
+El Sr. Uri Omid, del que se acompaña como documento nº 5 información empresarial,
+es un conocido empresario israelí con experiencia internacional en los sectores
+financieros, asegurador y de inversiones.
+39.
+Así pues, no debe perderse de vista que las operaciones que ahora pretende impugnar la
+sociedad inglesa Aweswell Limited fueron el fruto de negociaciones que se sustanciaron
+a lo largo de meses, y del riguroso estudio de una operación que dio lugar a la constitución
+de una sociedad mercantil (Luchy Playa Blanca, S.L.) para llevar a cabo el proyecto
+empresarial.
+B.
+La suscripción del contrato de préstamo hipotecario de fecha 17 de junio de 2008
+40.
+En el contexto descrito, los directivos de Luchy Playa Blanca, S.L. negociaron en la
+primera mitad del año 2008 la obtención de financiación con Caja de Ahorro de Canaria
+Copia publica disociada - 05-09-2026. Original firmado conservado; firma y verificadores no reproducidos.
+
+
+PAGINA 16
+
+16/47
+y suscribieron, a esos efectos, el contrato de préstamo hipotecario de fecha 17 de junio de
+2008 (el “Préstamo de 2008”, doc. nº 3 de la demanda) con las siguientes características:
+Identificación del contrato
+Escritura de préstamo con garantía hipotecaria de
+fecha 17 de junio de 2008 otorgada ante el Notario
+D. Manuel Emilio Romero Fernández, con nº de
+protocolo 1.280.
+Importe prestado en euros
+8.600.000 euros
+Tipo de interés
+En los primeros seis meses fijo en un 6,25%.
+En lo sucesivo, variable, siendo el resultado de
+tomar el índice Euribor 12 meses y adicionarle un
+margen o diferencial de 1,5 puntos. Siempre con un
+mínimo de 3,5 puntos porcentuales.
+Fecha contratación
+17/06/2008
+Duración
+192 meses (16 años), con fecha de vencimiento final
+el 1 de julio de 2024
+Carencia de devolución de capital
+Carencia en la devolución de capital durante los
+primeros doce meses
+41.
+Adicionalmente a lo extractado, y con motivo de las alegaciones de la adversa, se deja
+constancia de que en la Cláusula 4.4. de la escritura pública del préstamo (pág. 116),
+en relación con el tipo de interés, se estableció, con una redacción sencilla y
+meridianamente clara, que Luchy Playa Blanca, S.L. abonaría, en todo caso, un
+mínimo del 3,5%:
+“4.4. Condiciones Comunes.
+En ambos supuestos de tipo ordinario o sustitutivo, el tipo nominal se
+aplicará con un mínimo del TRES COMA CINCUENTA POR CIENTO
+(3,50%) anual”.
+Copia publica disociada - 05-09-2026. Original firmado conservado; firma y verificadores no reproducidos.
+
+
+PAGINA 17
+
+17/47
+42.
+Como se justificará en el Fundamento de Derecho Sexto, ante esta estipulación
+contractual (que en la práctica judicial se ha venido definiendo como “cláusula suelo”)
+resulta improcedente su impugnación por aquellos a quienes no les resulta de aplicación
+el régimen jurídico tuitivo de consumidores y usuarios, como en el caso que nos ocupa,
+donde concurrió en su contratación una evidente finalidad empresarial.
+SEGUNDO.- LA SUSCRIPCIÓN DEL CONTRATO DE GESTIÓN DE RIESGOS
+FINANCIEROS Y SU FINALIDAD DE COBERTURA
+A.
+Consideración preliminar: el funcionamiento y finalidad de los derivados de
+cobertura
+Expuesto lo anterior, con carácter previo a abordar la suscripción y finalidad del contrato de
+gestión de riesgos financieros impugnado por la adversa, deviene necesario efectuar una
+primera descripción sobre las características y el funcionamiento de los derivados de cobertura.
+Los derivados de cobertura (habitualmente, las permutas financieras de tipo de interés o swaps)
+son contratos bancarios mediante los que las partes acuerdan realizarse, durante un período de
+tiempo determinado, pagos mutuos en la misma moneda (euros), calculados sobre un mismo
+capital nocional, siendo cada una de ellas deudora y acreedora de la otra. Estas obligaciones de
+pagos mutuos se compensan, de modo que no generan pagos cruzados, sino que el resultado de
+dicha operación determina quién es la parte obligada al pago y también la beneficiaria.
+De forma simple, los derivados de cobertura pueden ser:
+a)
+de naturaleza especulativa, cuando se contratan aisladamente –es decir, como una
+mera apuesta sobre la evolución futura de la variable subyacente (Euribor, tasa de
+inflación, precio de una divisa, precio de un activo, etc.)–, teniendo en tal caso una
+finalidad puramente inversora; o
+b)
+de mera cobertura, cuando su titular los suscribe con la intención de que el
+derivado ayude a mitigar ciertos riesgos –de incremento de los tipos de interés, de
+la inflación o del precio de un cierto activo– a los que el titular del derivado está
+expuesto.
+Así pues, el funcionamiento de un derivado (habitualmente, swap de tipos de interés) puede
+explicarse con sencillez. La concreta operativa de cada swap de tipos de interés depende de las
+Copia publica disociada - 05-09-2026. Original firmado conservado; firma y verificadores no reproducidos.
+
+
+PAGINA 18
+
+18/47
+concretas características ofrecidas pero, lógicamente, todos tienen unos elementos comunes.
+Todos los swaps de esta modalidad funcionan de la misma manera y generan obligaciones de
+pago para ambas partes contratantes: sobre la base de un nominal previamente acordado, las
+partes acuerdan que la entidad financiera abonará un tipo de interés variable (normalmente,
+Euribor a un mes, a tres meses, o a un año según el contrato, aunque cabe también pactar el
+Mibor, Libor o cualquier otro tipo de interés variable), mientras que el cliente abonará el tipo
+pactado en el contrato de permuta. Como se decía, las partes acuerdan compensar los saldos
+respectivos de modo que, tras su compensación, únicamente habrá un pago por parte de quien
+resulte con saldo deudor de dicha operación.
+De este modo:
+(a)  si el compromiso de pago del banco es superior a lo que debe pagar el cliente, la
+liquidación tendrá saldo positivo y será el cliente quien reciba en su cuenta corriente
+asociada al producto un ingreso de mi principal; pero en cambio;
+(b)  si aquello a lo que se obligó el Banco es menor a lo que debe pagar el cliente,
+ocurrirá todo lo contrario: la liquidación tendrá saldo negativo y será el Banco quien
+reciba un pago del cliente, esta vez por medio de un cargo que la entidad bancaria
+reciba en su cuenta.
+De este modo, el cliente obtendrá un ingreso en su cuenta siempre que el tipo de interés variable
+que abona la entidad financiera esté por encima del interés a cuyo pago se ha comprometido él.
+Por contra, tendrá que hacer un abono siempre que el tipo de interés variable esté por debajo
+del tipo fijo que se ha comprometido a pagar. ¿Dónde está el beneficio y riesgo para el cliente?
+Evidentemente, en recibir en cada periodo de liquidación más (beneficio por liquidación
+positiva) o menos (riesgo por liquidación negativa) de lo que tiene que pagar.
+Ahora bien, al analizar el funcionamiento de los derivados no puede olvidarse que aquellos que
+presentan vocación de cobertura (como el que es objeto de la presente litis) se hallan vinculados
+a un producto bancario sujeto a interés variable, y que su finalidad, precisamente, es mitigar las
+fluctuaciones de los citados tipos de interés variable.
+Ello implica que, si bien el descenso del tipo de interés variable resulta en una liquidación
+negativa que obliga al cliente a abonar la diferencia al Banco en el marco de un swap, determina
+a su vez la correspondiente reducción de las cuotas o liquidaciones derivadas de la financiación
+Copia publica disociada - 05-09-2026. Original firmado conservado; firma y verificadores no reproducidos.
+
+
+PAGINA 19
+
+19/47
+del cliente, siendo esta finalidad de estabilización la que en buena medida ha provocado la
+formalización del instrumento de cobertura ofrecido por la entidad financiera. En definitiva,
+ello comporta la estabilización de sus costes financieros, con independencia de que el Euribor
+suba o baje.
+B.
+La firma del contrato de gestión de riesgos financieros para estabilizar el coste
+financiero de la operación
+43.
+Como se decía en el Hecho Primero, el Préstamo de 2008 fue suscrito por Luchy Playa
+Blanca, S.L. en fecha 17 de junio de 2008, esto es, en un período en el que el índice
+Euribor (12 meses) se encontraba inmerso en una clara tendencia alcista:
+
+44.
+Precisamente por ello, con el propósito de estabilizar los costes financieros de la
+operación —y evitar sufrir un incremento en el pago de intereses en un escenario
+continuista del aumento del Euribor—, Luchy Playa Blanca, S.L. negoció y suscribió con
+Caja de Ahorros de Canarias un contrato de gestión de riesgos, también de fecha 17 de
+junio de 2008. Se acompaña como documento nº 6 el correspondiente informe interno,
+y se ha acompañado como doc. nº 2, el referido contrato.
+45.
+Si se acude al informe interno de la operación, puede observarse que, como se indicaba,
+la finalidad proyectada de su contratación era la de “proporcionar estabilidad en los
+costes financieros de la mercantil, ante posibles fluctuaciones del tipo de interés” (doc.
+nº 9 del informe).
+46.
+En efecto, en este sentido, y sin perjuicio de que los directivos de Luchy Playa Blanca,
+S.L. fueron debidamente informados del funcionamiento del referido contrato, también
+debe destacarse que el contrato explica con toda claridad que las partes se deberán
+intercambiar pagos futuros cuyo signo dependerá de la evolución de los tipos de
+Copia publica disociada - 05-09-2026. Original firmado conservado; firma y verificadores no reproducidos.
+
+
+PAGINA 20
+
+20/47
+interés. Concretamente, de los que se recogen en el siguiente cuadro del contrato de
+gestión de riesgos financieros:
+
+47.
+La ejecución del contrato de gestión de riesgos financieros se realizó de conformidad
+con lo previsto en su clausulado y hasta su fecha pactada de terminación contractual
+(el 7 de enero de 2012), dando lugar a las liquidaciones correspondientes en cada período.
+Se acompañan, a modo de ejemplo, como documento nº 7 algunas de las liquidaciones
+generadas.
+C.  La mercantil Luchy Playa Blanca, S.L. y sus directivos tenían la capacidad suficiente
+como para comprender el alcance y el contenido del contrato de gestión de riesgos
+financieros
+48.
+Hemos mostrado que la comprensión del funcionamiento de un derivado de cobertura,
+vinculado a un préstamo a interés variable, es sencilla y la explicación de su mecánica
+fácil de entender, ya que en esencia, se trata de acotar a un límite el alza del interés
+variable de su préstamo, sin que los clientes, por el contrario, se puedan beneficiar de las
+posibles bajadas (no es un seguro; no existe prima, como existiría en un seguro, y
+únicamente asegura contra las subidas del tipo de interés que afecten a su préstamo).
+Liquidación
+que debía
+abonar Luchy
+Playa Blanca,
+S.L.
+Liquidación
+que debía
+abonar Caja
+Canarias
+Copia publica disociada - 05-09-2026. Original firmado conservado; firma y verificadores no reproducidos.
+
+
+PAGINA 21
+
+21/47
+49.
+Además de lo anterior, debemos remitirnos al clarificador Informe del Banco de España
+al Senado, en el que se afirma el carácter bancario de la permuta financiera instrumentada
+como cobertura de un producto bancario; criterio confirmado en la Nota conjunta emitida
+por el Banco de España y la Comisión Nacional del Mercado de Valores, en la que se
+concluye que “en la medida en que exista una vinculación entre producto bancario e
+instrumento financiero de cobertura, el Banco de España, por la vía de la accesoriedad,
+resultará competente respecto de un servicio de inversión que aparece ofertado como
+"parte de ellos”.
+50.
+Se acompaña, como documento nº 8 de este escrito, el Informe elaborado por el Banco
+de España para el Senado, que aparece publicado en el BOCG, SENADO, ANEXO I del
+día 7 de mayo de 2010; y como documento nº 9 la Nota conjunta elaborada por el Banco
+de España y la Comisión Nacional del Mercado de Valores; documentos ambos que
+pueden consultarse en las webs de ambos Organismos y a los que nos referiremos por
+extenso más adelante.
+TERCERO.- LA NOVACIÓN DE LA FINANCIACIÓN, LA SUSCRIPCIÓN DE UN
+SEGUNDO PRÉSTAMO Y LA CONSTITUCIÓN DE UNA GARANTIA
+PIGNORATICIA
+51.
+Con posterioridad a recabar la financiación descrita, la mercantil Luchy Playa Blanca,
+S.L. no logró impulsar y explotar el complejo turístico adquirido con los resultados
+económicos que esperaba. Por ello, se puso nuevamente en contacto con la Caja de
+Ahorros de Canarias para renegociar las condiciones del Préstamo de 2008.
+52.
+Así, en fecha 27 de mayo de 2010, Luchy Playa Blanca, S.L. y Caja de Ahorros de
+Canarias, otorgaron ante el Notario D. Pedro Eugenio Botella Torres, la escritura
+de novación con nº de protocolo 1378, por la que acordaron ampliar el período de
+carencia del préstamo e incrementar el diferencia aplicable al tipo de interés, para fijarlo
+en un 2,00 puntos porcentuales (doc. nº 5 de la demanda).
+53.
+También en esa fecha, y a petición de Luchy Playa Blanca, S.L., tras la correspondiente
+negociación, dicha mercantil y Caja de Ahorros de Canarias suscribieron un
+segundo préstamo hipotecario (el “Préstamo de 2010”) con las siguientes
+características (doc. nº 6 de la demanda):
+Copia publica disociada - 05-09-2026. Original firmado conservado; firma y verificadores no reproducidos.
+
+
+PAGINA 22
+
+22/47
+Identificación del contrato
+Escritura de préstamo con garantía hipotecaria de
+fecha 27 de mayo de 2010 otorgada ante el Notario
+D. Pedro Eugenio Botella Torres, con nº de protocolo
+1.378.
+Importe prestado en euros
+850.000 euros
+Tipo de interés
+En los primeros tres meses fijo en un 3,5%.
+En lo sucesivo, variable, siendo el resultado de
+tomar el índice Euribor 12 meses y adicionarle un
+margen o diferencial de 2,00 puntos. Siempre con un
+mínimo de 3,5 puntos porcentuales.
+Fecha contratación
+27/05/2010
+Duración
+Fecha de vencimiento final el 1 de junio de 2010
+Carencia de devolución de capital
+Carencia en la devolución de capital durante los
+primeros dieciocho meses
+54.
+Asimismo, y en el marco de la firma de las operaciones referidas, Luchy Playa Blanca,
+S.L. destinó parte de los fondos recibidos a constituir en favor de la Caja de Ahorros de
+Canarias una garantía pignoraticia (prenda) sobre un depósito a plazo por importe de
+405.000 euros (depósito nº
+), para asegurar la devolución de la
+financiación y el cumplimiento del contrato de gestión de riesgos financieros. Se ha
+acompañado como doc. nº 3 la póliza de constitución de la prenda.
+CUARTO.-
+LA IMPROCEDENCIA DE LA RECLAMACIÓN SOBREVENIDA DE
+AWESWELL LIMITED: EL DEUDOR (LUCHY PLAYA BLANCA, S.L.)
+NUNCA DISCUTIÓ LOS CRÉDITOS DE MI MANDANTE, NI FUERA, NI
+DENTRO DEL CONCURSO DE ACREEDORES
+55.
+En este Hecho Cuarto debe enfatizarse, por su indudable trascendencia jurídica, que
+Luchy Playa Blanca, S.L. nunca impugnó ninguna de las operaciones que ahora,
+Aweswell Limited, pretende discutir de forma sobrevenida.
+Copia publica disociada - 05-09-2026. Original firmado conservado; firma y verificadores no reproducidos.
+
+
+PAGINA 23
+
+23/47
+56.
+Luchy Playa Blanca, S.L. conoció la evolución y las  liquidaciones del contrato de gestión
+de riesgos financieros desde su suscripción en fecha 17 de junio de 2008 y hasta su fecha
+pactada de terminación contractual (el 7 de enero de 2012), sin expresar ninguna queja
+por su funcionamiento. Al contrario, la adversa toleró la normal ejecución de los
+contratos, soportando todos sus efectos que, en este caso, se vinculan a la recepción de
+liquidaciones negativas.
+57.
+Esta circunstancia, como se justificará en los Fundamento de Derecho, determina la
+concurrencia al caso de autos de diversas instituciones y figuras jurídicas, entre ellas, la
+caducidad y confirmación de la acción principal de anulabilidad por vicio en el
+consentimiento y, desde luego, la prescripción de la acción subsidiaria de responsabilidad
+civil contractual.
+58.
+Pero no solo eso, en el caso que nos ocupa también se da la particularidad de que Luchy
+Playa Blanca, S.L. fue declarada en concurso de acreedores (con referencia de concurso
+nº 36/2012) tramitado ante el Juzgado de lo Mercantil nº 1 de Las Palmas de Gran Canaria.
+59.
+Pues bien, en dicho concurso de acreedores, y más concretamente, en el Informe de
+la Administración Concursal, le fueron reconocidos a la Caja de Ahorros de
+Canarias (en ese momento, Bankia) precisamente los créditos derivados de los
+contratos que ahora, de forma sobrevenida, Aweswell Limited pretende impugnar.
+Véase el siguiente extractos del Informe de la Administración Concursal (doc. nº 4
+de la Contestación, pág. 68):
+
+
+
+
+60.
+Como se indicaba en la Excepción Procesal Segunda de este mismo, lo anterior determina
+la aplicación de los efectos de la cosa juzgada, y es que debería haber sido en el
+concurso de acreedores, en el que, dentro del correspondiente plazo para impugnar
+Copia publica disociada - 05-09-2026. Original firmado conservado; firma y verificadores no reproducidos.
+
+
+PAGINA 24
+
+24/47
+el Informe de la Administración Concursal, el deudor concursado hubiera discutido
+los créditos de mi representada.
+QUINTO.-
+DESIGNACIÓN DE ARCHIVOS
+61.
+Al amparo de lo dispuesto en el artículo 265.2 de la LEC y a los efectos probatorios
+oportunos, esta parte deja designados los archivos y registros de cuantas personas y
+entidades se mencionan tanto en el presente escrito de contestación a la demanda como en
+los documentos que a éste se acompañan, y en particular, los de Luchy Playa Blanca, S.L.,
+del Administrador Concursal de Luchy Playa Blanca,S.L. y del Juzgado de lo Mercantil nº
+1 de Las Palmas de Gran Canaria (concurso ordinario nº 36/2012), y en particular, de las
+entidades que aparecen en los informes de Axesor y en la información registral aportada.
+62.
+A los anteriores Hechos le son de aplicación los siguientes
+*
+*
+*
+FUNDAMENTOS DE DERECHO
+PROCESALES
+I.- JURISDICCIÓN, COMPETENCIA Y PROCEDIMIENTO
+63.
+Esta parte se encuentra conforme con la tramitación ante los Juzgados de Primera
+Instancia de Valencia a través del cauce del Procedimiento Ordinario.
+II.- LEGITIMACIÓN ACTIVA Y PASIVA
+64.
+Legitimación activa. Nos remitimos a la Excepción de Falta de Legitimación
+desarrollada en las páginas 2 a 6 de este mismo escrito, y también a la Excepción de Cosa
+Juzgada desarrollada en las páginas 7 a 9 también de este escrito.
+65.
+Legitimación pasiva. Entendida como legitimación ad processum, corresponde a mi
+representado.
+Copia publica disociada - 05-09-2026. Original firmado conservado; firma y verificadores no reproducidos.
+
+
+PAGINA 25
+
+25/47
+III.- POSTULACIÓN Y DEFENSA
+66.
+Esta parte comparece por medio de Procurador legalmente habilitado para actuar ante este
+Juzgado (art. 23 LEC) y dirigida por Abogado (art. 31 LEC).
+IV.- COSTAS
+67.
+Las costas de este procedimiento deberán ser impuestas a la Parte Actora como
+consecuencia del principio objetivo del vencimiento (art. 394 de la LEC).
+MATERIALES
+V.-  IMPROCEDENCIA DE LA ACCIÓN DE ANULABILIDAD. CADUCIDAD DE
+LA
+ACCIÓN.
+INEXISTENCIA
+DE
+VICIO,
+INEXCUSABILIDAD
+Y
+CONFIRMACIÓN DEL NEGOCIO JURÍDICO
+1.
+Planteamiento
+68.
+Como hemos indicado supra, la adversa dirige su acción principal de anulabilidad por
+vicio en el consentimiento contra el contrato de riesgos financieros (derivado de
+cobertura), y la basa en la supuesta falta de información sobre el funcionamiento y los
+efectos económicos del mismo. Sostiene a estos efectos que el mismo habría sido
+presentado como si se tratara de un simple seguro de tipos de interés, que no pudiera
+generarle liquidaciones negativas.
+69.
+En este Fundamento de Derecho mostraremos que la pretensión de anulabilidad de la
+adversa no puede prosperar por múltiples motivos:
+(i).
+Caducidad de la acción: La acción de anulabilidad se encontraba sobradamente
+caducada al tiempo de ser ejercitada, dado que el contrato de gestión de riesgos
+financieros alcanzó su fecha de terminación contractual el 7 de enero de 2012 y
+la demanda no fue interpuesta hasta 13 de octubre de 2023. De conformidad
+con la consolidada doctrina jurisprudencial del Tribunal Supremo, este
+constituye el caso paradigmático de concurrencia de caducidad.
+Copia publica disociada - 05-09-2026. Original firmado conservado; firma y verificadores no reproducidos.
+
+
+PAGINA 26
+
+26/47
+(ii).
+Inexistencia de vicio del consentimiento: Ad cautelam, insistiremos en que
+Luchy Playa Blanca, S.L. y sus directivos tuvieron conocimiento del
+funcionamiento del contrato de gestión de riesgos financieros (por, entre otras
+circunstancias, el perfil cualificado, el proceso de negociación, las reuniones
+mantenidas y la claridad de la documentación).
+(iii).
+El alegado error en el consentimiento no habría sido excusable. Ad cautelam,
+nos referiremos también al hecho de que, de haber existido error éste habría sido
+perfectamente vencible con la mínima diligencia que cabe exigir al contratante
+y, más aún, si quien firma el contrato es un inversor profesional. A la vista del
+contexto en que fue contratado el derivado de cobertura, mostraremos que, en
+caso de haberse producido un vicio del consentimiento, este no habría sido
+excusable.
+(iv).
+Confirmación del Swap: Ad cautelam, explicaremos que en el caso que nos
+ocupa también concurren diversas conductas que habrían comportado la
+confirmación del negocio jurídico, incluso en el supuesto hipotético y negado de
+que hubiera existido un vicio del consentimiento.
+2.
+La acción de anulabilidad se habría encontrado caducada al tiempo de ser ejercitada
+70.
+De conformidad con el artículo 1301 del Código Civil la acción de nulidad sólo durará
+cuatro años. A estos efectos, la Excma. Sala de lo Civil del Tribunal Supremo ha
+precisado, en múltiples pronunciamientos, que en litigación relacionada con derivados de
+cobertura (Swaps) el dies a quo para el cómputo de los cuatro años de la acción de
+anulabilidad se corresponde con la fecha de extinción y agotamiento del derivado. Véase,
+por ejemplo, la Sentencia del Tribunal Supremo núm. 322/2023, de 28 de febrero, que
+establece que “se habrá de estar al vencimiento de cada uno (sentencia 89/2018, de 19
+de febrero), pues ninguno de los swap es antecedente de otro y todos ello se referencian
+a préstamos hipotecarios diferentes y tampoco relacionados”.
+71.
+Reproducimos también la Sentencia del Tribunal Supremo núm. 356/2023, de 8 de
+marzo, que señala que “En los contratos de swaps o "cobertura de hipoteca" no hay
+consumación del contrato hasta que no se produce el agotamiento o la extinción de la
+Copia publica disociada - 05-09-2026. Original firmado conservado; firma y verificadores no reproducidos.
+
+
+PAGINA 27
+
+27/47
+relación contractual, por ser entonces cuando tiene lugar el cumplimiento de las
+prestaciones por ambas partes y la efectiva producción de las consecuencias
+económicas del contrato. Ello en atención a que en estos contratos no existen
+prestaciones fijas, sino liquidaciones variables a favor de uno u otro contratante en cada
+momento en función de la evolución de los tipos de interés”.
+72.
+Siendo así, ninguna duda puede caber de que en el caso que nos ocupa la acción de
+anulabilidad se encontraría caducada, y ello en tanto que el contrato de gestión de riesgos
+impugnado (doc. nº 2), alcanzó su fecha de terminación contractual el 7 de enero de 2012
+y la demanda no fue interpuesta hasta 13 de octubre de 2023. Habría transcurrido, por
+consiguiente, más de (11) once años.
+3.
+Sobre la inverosimilitud de la tesis de la parte actora: inexistencia de error
+73.
+Sin perjuicio de que lo anterior debe comportar la desestimación de la acción, ad cautelam
+pasamos a efectuar el análisis de fondo de la pretensión de vicio del consentimiento. En
+primer lugar, y como cuestión previa, es necesario apuntar a que, tanto por el principio
+de conservación de los contratos, como por la propia excepcionalidad del error, se exige
+cumplida prueba del mismo a quién lo alega: “lo normal es estar a lo pactado, con todas
+sus consecuencias favorables o desfavorables y no utilizar la figura del error para lograr
+una desvinculación del contrato” (DÍEZ-PICAZO, L., Fundamentos del Derecho Civil
+Patrimonial I, Civit, 2007, p. 209).
+74.
+En este sentido, la jurisprudencia ha venido apreciando de esta forma restrictiva la
+concurrencia de error en el consentimiento del contratante. En este sentido, la Sentencia
+del Tribunal Supremo de 1 de febrero de 2006 (RJ 2006/2699) establece que:
+“[E]s reiterada doctrina de esta Sala la de que los vicios del consentimiento sólo son
+apreciables en juicio si existe una prueba cumplida de la existencia y realidad de los mismos,
+cuya prueba incumbe a la parte que los alega”.
+75.
+De modo que, como han señalado los tribunales, sólo podrá apreciarse la existencia de un
+error invalidante si la parte actora acredita que incurrió en el momento de la perfección
+del contrato en un error sobre un elemento esencial y, además, que ese error fue
+invencible, porque no pudo evitarse con la diligencia exigible.
+Copia publica disociada - 05-09-2026. Original firmado conservado; firma y verificadores no reproducidos.
+
+
+PAGINA 28
+
+28/47
+76.
+Así lo indica, por ejemplo, la Sentencia de la Audiencia Provincial de Madrid (Sec. 18ª)
+nº 406/2016, de 28 de octubre (JUR 2016\276542), “no basta con la mera afirmación de
+que el producto contratado sea complejo o de que la información debió de ser más
+exhaustiva para con ello obtenerse la declaración de nulidad absoluta o relativa de los
+contratos o de alguna de sus cláusulas”.
+77.
+Esta carga corresponde en exclusiva a la parte actora, que en el presente caso no ha
+cumplido con dicha obligación. Más bien al contrario, todos los elementos obrantes en
+autos conducen a la conclusión de que el error sencillamente no pudo existir.
+78.
+La demandante, Aweswell Limited, sostiene que Luchy Playa Blanca, S.L. habría
+desconocido el funcionamiento del contrato de gestión de riesgos financieros y, en
+particular, que el mismo podría generar liquidaciones negativas. Sin embargo, y como se
+ha explicado en sede de Hechos (a los que nos remitimos en aras de la brevedad), la
+prueba evidencia que no pudo existir un desconocimiento sobre las características y el
+funcionamiento del referido contrato, y ello en atención a, entre otros factores, (i) el
+proceso de estudio, análisis y de contratación ad hoc de la sociedad Luchy Playa Blanca,
+S.L. para realizar el proyecto empresarial, (ii) el perfil y experiencia internacional de los
+directivos y responsables de la sociedad, (iii) la información proporcionada y (iv) la
+claridad del documento suscrito.
+79.
+En consecuencia, debe concluirse necesariamente que Luchy Playa Blanca, S.L. no
+incurrió en ningún error en el consentimiento al suscribir el contrato de gestión de riesgos
+financieros. Por tanto, incluso si se considerase que dicha acción no había caducado antes
+de la interposición de la demanda, la misma debería ser desestimada.
+4.
+De existir algún error (quod non), este sería vencible: la inexcusabilidad del error
+80.
+Con independencia de que lo anterior resulte más que suficiente para que se desestime la
+acción de la demanda relativa al supuesto error sobre el consentimiento, se debe señalar
+que si admitiéramos –a los meros efectos dialécticos– que existió algún error sobre el
+contrato de gestión de riesgos financieros, éste habría sido perfectamente vencible con
+la mínima diligencia que cabe exigir a quién firma el contrato y, todavía con mayor
+razón, si quien firma el contrato es un inversor con conocimientos en finanzas, como
+es el caso (nos remitimos al Hecho Primero).
+Copia publica disociada - 05-09-2026. Original firmado conservado; firma y verificadores no reproducidos.
+
+
+PAGINA 29
+
+29/47
+81.
+Precisamente por ello, la Sentencia del Tribunal Supremo de 23 de junio de 2009 (RJ
+2009/4230), entre otras muchas, explica que “se niega protección a quien, con el empleo
+de la diligencia que era exigible en las circunstancias concurrentes, habría conocido lo
+que al contratar ignoraba y, en la situación de conflicto producida, se concede dicho
+amparo a la otra parte contratante, confiada en la apariencia que genera toda
+declaración negocial seriamente emitida”.
+82.
+En consecuencia, el error, de existir, sería imputable a Luchy Playa Blanca, S.L., por
+lo que no tendría eficacia invalidante. A estos efectos, debe recordarse que, de
+conformidad con una reiterada doctrina del Tribunal Supremo, el requisito de la
+excusabilidad tiene por objeto no proteger a quien ha padecido el error por su propia
+negligencia.
+5.
+En todo caso, cualquier vicio del consentimiento habría sido confirmado por la
+actuación posterior de Luchy Playa Blanca, S.L.
+83.
+Desde que suscribió la operación, Luchy Playa Blanca, S.L. siempre conoció los efectos
+económicos aparejados a la suscripción del contrato de gestión de riesgos financieros
+hasta su fecha de terminación (7 de enero de 2012), y siendo informada de las
+liquidaciones negativas.
+84.
+Y aun así, nunca mostró queja alguna ni fuera, ni dentro del concurso de acreedores,
+donde la Administración Concursal reconoció los créditos de la Caja de Ahorros de
+Canarias frente a la concursada, incluyendo el correspondiente al contrato de gestión de
+riesgos financieros. Sin duda, cuanto ha sido expuesto constituyen claros actos de
+confirmación.
+85.
+La válida confirmación que, de conformidad con el art. 1.309 del CC, extingue la acción
+de nulidad no puede ser más clara. En todo caso, debe recordarse que la confirmación del
+negocio puede ser expresa o tácita (artículo 1311 del Código Civil). Se entiende que es
+tácita cuando “con conocimiento de la causa de nulidad y habiendo ésta cesado, el que
+tuviese derecho a invocarla ejecutase un acto que implique necesariamente la voluntad
+de renunciarlo”.
+
+
+Copia publica disociada - 05-09-2026. Original firmado conservado; firma y verificadores no reproducidos.
+
+
+PAGINA 30
+
+30/47
+86.
+En este sentido, nuestra mejor doctrina (DIEZ-PICAZO, Fundamentos del Derecho Civil
+Patrimonial I, Madrid, 2007, página 607) señala que:
+“Nuestro Código identifica confirmación con renuncia de la acción. En la misma línea que
+podemos llamar voluntarista se sitúa Clavería sobre la base de no admitir en el acto
+confirmatorio las protestas o reservas expresamente realizadas por el autor de la conducta.
+El argumento sin embargo no resulta convincente y parece preferible atribuir a la
+confirmación tácita un carácter objetivo, valorando el sentido objetivo de los actos y su
+incompatibilidad con el posterior ejercicio de la acción”.
+87.
+La conducta del deudor concursado, expuesta en los Hechos, resulta contraria al ejercicio
+de una acción de anulabilidad, debiendo apreciar que la acción se habría extinguido por
+la confirmación tácita del negocio jurídico ex. arts. 1.309 y 1.311 CC.
+VI.-  IMPROCEDENCIA DE INVOCAR LA NORMATIVA DE CONSUMIDORES Y
+USUARIOS PARA FORMULAR REPROCHES DE ABUSIVIDAD RESPECTO
+DE LAS CLÁUSULAS CONTRACTUALES DE LAS ESCRITURAS SUSCRITAS
+POR LUCHY PLAYA BLANCA, S.L.
+1.
+Improcedencia de invocar la normativa de consumidores y usuarios: la finalidad
+empresarial de los contratos suscritos por Luchy Playa Blanca, S.L. excluye su
+aplicabilidad
+88.
+Como se ha adelantado, en la demanda interpuesta por Aweswell Limited frente a mi
+representada también se aduce que determinadas cláusulas contractuales de las escrituras
+suscritas por Luchy Playa Blanca, S.L. sería supuestamente abusivas. Concretamente, en
+las páginas 7 a 9 de su demanda, la adversa se refiere a la “cláusula suelo” (párr. 22 de la
+demanda), la cláusula relativa a la distribución de los gastos de constitución (párr. 23 de
+la demanda) y a la cláusula reguladora de la comisión de apertura (párr.24 de la demanda).
+89.
+Sin embargo, dichos reproches no podrían prosperar. La entidad que suscribió dichos
+contratos (Luchy Playa Blanca, S.L.) en modo alguno puede considerarse que ostentara
+la condición de consumidora, y ello porque su firma respondía a una evidente finalidad
+empresarial y, por ende, no resulta de aplicación la normativa tuitiva de
+consumidores y usuarios [Sentencia del Tribunal Supremo nº 8/2018, de 10 de enero
+(Roj: STS 3802/2017, MP: Ponente: D. Pedro José Vela Torres)].
+90.
+De conformidad con el art. 3 del Real Decreto Legislativo 1/2007, de 16 de noviembre,
+por el que se aprueba el texto refundido de la Ley General para la Defensa de los
+Copia publica disociada - 05-09-2026. Original firmado conservado; firma y verificadores no reproducidos.
+
+
+PAGINA 31
+
+31/47
+Consumidores y Usuarios y otras leyes complementarias (“TRLGDCU”): “Son también
+consumidores a efectos de esta norma las personas jurídicas y las entidades sin
+personalidad jurídica que actúen sin ánimo de lucro en un ámbito ajeno a una actividad
+comercial o empresarial”.
+91.
+Ligado con lo anterior, debe destacarse que es reiterada la jurisprudencia que confirma
+que corresponde a quien alega la condición de consumidor la carga de acreditar
+dicha condición, como por ejemplo la Audiencia Provincial de Granada (Sección 3ª) en
+sentencia núm. 499/2021, de 30 de junio (ECLI:ES:APGR:2021:1242), con amplias citas
+a sentencias de distintas Audiencias Provinciales:
+“Esta Sala ha venido considerando que, una vez controvertida por el predisponente
+la condición de consumidor del actor, concurriendo cierta base objetiva en la
+negación de dicho carácter, le corresponde a dicho prestatario la carga de probar
+que actuó como consumidor, al ser él quién impetra la aplicación de la legislación
+especial que le protege.
+Esta posición es muy mayoritaria en la jurisprudencia menor de las Audiencias
+Provinciales.
+La sentencia de la AP de Madrid, Sección 8ª, de 23 de marzo de 2017, tras reproducir
+en parte la sentencia del TS de 18 de enero de 2017, en la que se define y reitera el
+concepto de consumidor, con referencia a la sentencia del TJUE de 3 de septiembre
+de 2015, asunto C-110/14, explica que:
+"A mayor abundamiento, a la parte que alega la abusividad de la cláusula y la
+aplicación de la normativa de consumidores le incumbe la carga de la prueba de
+acreditar su condición de consumidor, lo que no concurre en el presente caso, por
+los fundamentos expuestos...
+En el mismo sentido, la sentencia de 24 de marzo de 2017 de la AP de Alicante,
+Sección 9 con referencia a otras muchas, "Por otro lado, es cierto que corresponde
+la prueba de la condición de consumidor a quien sostiene su condición de tal, como
+recoge la SAP de Córdoba de 16 de marzo de 2016 , "es una cuestión de hecho,
+presupuesto de aplicación de la normativa sectorial de tutela en su favor, que no
+solo debe ser alegada o sostenida por el mismo, sino que además le incumbe la
+carga de la prueba sobre ella, como hecho positivo que le beneficia y en virtud del
+principio de facilidad probatoria (art 217 LEC)". En el mismo sentido SAP.
+Guipúzcoa, Secc 2ª, 110/2015, de 5 de mayo y de Málaga Sección 8ª, 483/2008, de
+18 de diciembre, AAP de Jaén, de 17 de febrero de 2016 ".
+92.
+O bien el Auto núm. 161/2020 de 14 de mayo de la Audiencia Provincial de Tarragona
+(JUR 2020/165552):
+Copia publica disociada - 05-09-2026. Original firmado conservado; firma y verificadores no reproducidos.
+
+
+PAGINA 32
+
+32/47
+“Lo cierto es que la doctrina mayoritaria ha considerado que corresponde a quien alega la
+condición de consumidor la carga de acreditar dicha condición.
+En el mismo sentido la Audiencia Provincial de Guipúzcoa (sección 2ª), sentencia 5 de mayo
+de 2015: " Pero tal principio no es extrapolable a la carga de la prueba sobre la condición
+de consumidor, que corresponde a quien la alega. Así, conforme al artículo 217.1 de la Ley
+de Enjuiciamiento Civil , corresponde al actor la carga de probar la certeza de los hechos
+(en este caso la condición de consumidor) de los que ordinariamente se desprende, según
+las normas jurídicas a ellos aplicables (en este caso la normativa protectora de
+consumidores y usuarios) el efecto jurídico correspondiente a la demanda (en este caso la
+declaración de nulidad de la cláusula suelo) ".
+La Audiencia Provincial de Granada (sección 3ª), sentencia 19 de octubre de 2017: " Al no
+acreditar el actor que en él concurriera la condición de consumidor, de hecho ni se ha
+opuesto al recurso de apelación planteado por la entidad financiera, debemos considerar
+que suscribió el contrato en el ámbito de su actividad empresarial y, en consecuencia, no le
+es de aplicación la normativa protectora de los consumidores y usuarios ".
+También la sentencia de la AP de La Coruña de 20 de enero de 2017 dice: "... las reglas
+sobre distribución de la carga probatoria ( Artículo 217 de la LEC ) deben operar
+plenamente, de modo que si no queda finalmente demostrado que el demandante intervino
+en el contrato con un propósito ajeno a su actividad comercial, empresarial, oficio o
+profesión, el tribunal no podrá examinar la validez de la cláusula desde la perspectiva de
+las normas represoras de la abusividad de contenido de las condiciones generales o
+cláusulas predispuestas, ni del más específico control de transparencia de tales cláusulas
+en cuanto referidas a elementos esenciales del contrato "
+La AP Málaga (sección 5ª), en auto de 18 de septiembre de 2017: " En cualquier caso es
+que la cualidad de consumidor en el ejecutado, es una cuestión de hecho, presupuesto de
+aplicación de la normativa sectorial de tutela en su favor, que no solo debe ser alegada o
+sostenida por el mismo, sino que además le incumbe la carga de la prueba sobre ella, como
+hecho positivo que le beneficia y en virtud del principio de facilidad probatoria ( art 217
+LEC )".
+93.
+Lo anterior según sentada jurisprudencia del Tribunal Supremo, entre otras, la Sentencia
+núm. 639/2017, de 23 de noviembre (RJ 2017/6184):
+“3. No tendrán la consideración de consumidores o usuarios quienes sin constituirse en
+destinatarios finales, adquieran, almacenen, utilicen o consuman bienes o servicios, con el
+fin de integrarlos en procesos de producción, transformación, comercialización o prestación
+a terceros».
+Es decir, conforme a la Ley de Consumidores de 1984, tenían tal cualidad quienes actuaban
+como destinatarios finales de los productos o servicios, sin la finalidad de integrarlos en
+una actividad empresarial o profesional.
+A su vez, el art. 3 del TRLGCU, matizó tal concepto, al afirmar que «son consumidores o
+usuarios las personas físicas o jurídicas que actúan en un ámbito ajeno a una actividad
+empresarial o profesional».”
+Copia publica disociada - 05-09-2026. Original firmado conservado; firma y verificadores no reproducidos.
+
+
+PAGINA 33
+
+33/47
+94.
+En el caso que nos ocupa, el hecho de que la suscripción por la mercantil Luchy Playa
+Blanca, S.L. de las operaciones impugnadas respondiera a la finalidad empresarial de
+invertir, reformar y explotar el complejo turístico Sun Park, supone que no tuvo la
+condición de consumidor y, por lo tanto, (i) la ahora demandante no pueda ampararse
+ni en la Ley de Condiciones Generales de la Contratación ni en la normativa tuitiva
+de consumidores para solicitar la nulidad por abusividad de cláusulas contractuales;
+(ii) cualquier reproche relacionado con la nulidad por abusividad deba ser
+desestimado, en tanto que esta acción está restringida únicamente al ámbito de protección
+de consumidores; (iii) lo mismo que el control de transparencia, que únicamente es
+procedente en los contratos en los que el adherente tiene la condición de consumidor.
+(Cfr., a modo de ejemplo, las Sentencias nº 8/2018, de 10 de enero [Roj: STS 3802/2017,
+MP: Ponente: D. Pedro José Vela Torres] citada antes; nº 57/2017, de 30 de enero [Roj: STS
+328/2017]; nº 367/2016, de 3 de junio [Roj: STS 2550/2016]; nº 30/2017, de 18 de enero
+[Roj: STS 123/2017]; nº 41/2017, de 20 de enero [Roj: STS 124/2017]; nº 587/2017, de 2 de
+noviembre [Roj: STS 3802/2017]; y nº 639/2017, de 23 de noviembre [Roj: STS
+4116/2017]):
+95.
+De conformidad con lo anterior, los reproches formulados de contrario respecto de la
+“cláusula suelo” (párr. 22 de la demanda), la cláusula relativa a la distribución de los
+gastos de constitución (párr. 23 de la demanda) y a la cláusula reguladora de la comisión
+de apertura (párr.24 de la demanda), deberán ser rechazados. Además, si se acude al
+contenido de las respectivas cláusulas puede apreciarse como las mismas presentan una
+redacción clara y legibles para un empresario e inversor como Luchy Playa Blanca, S.L.
+y su accionista Aweswell Limited.
+2.
+Improcedencia de formular reproches respecto del Euribor con referencia a una
+investigación de la que CaixaBank no fue parte
+96.
+Por otra parte, en la demanda también se efectúan unas breves alegaciones en torno al
+índice Euribor y a una investigación de la Comisión Europea (de la que CaixaBank nunca
+fue parte), si bien la adversa no ejercita ninguna pretensión al jurídica al respecto.
+97.
+En relación con esta cuestión debemos empezar por señalar que, como han venido
+reconociendo múltiples tribunales, el índice Euribor es un índice oficial que, como tal, (i)
+ha sido revisado, supervisado y aprobado por el Banco de España, calificándolo como
+singularmente idóneo para su inclusión en los contratos de préstamo hipotecario (cfr.
+Copia publica disociada - 05-09-2026. Original firmado conservado; firma y verificadores no reproducidos.
+
+
+PAGINA 34
+
+34/47
+Disposición Final Segunda de la Orden de 5 de mayo de 1994, en relación con la Norma
+6.ª bis, apdo. 3 [g] de la Circular 8/1990; en la legislación vigente, art. 27.1 [d] de la Orden
+de 28 de octubre de 2011 y la Norma 14.ª [d] de la Circular 5/2012); y (ii) cuenta con las
+garantías propias de estos índices, entre ellas y en concreto, las garantías de objetividad,
+seguridad y difusión que resultan de la normativa bancaria y de la intervención del Banco
+de España.
+98.
+Precisamente por eso, no es posible analizar su validez conforme a la legislación de
+condiciones generales de la contratación. Así, según dispone su art. 4.2 LCGC, no resulta
+de aplicación respecto de “las condiciones generales que […] vengan reguladas
+específicamente por una disposición legal o administrativa de carácter general y que
+sean de aplicación obligatoria para los contratantes”.
+99.
+La razón de esta exclusión es clara: carece de sentido lógico-jurídico someter a control
+de validez o incorporación aspectos de un contrato cuya existencia, contenido y
+legitimidad resulta de una norma legal o reglamentaria. La lectura de las cláusulas
+contractuales que fijan el índice Euribor permite concluir que en esos pactos no se regula
+la forma de cálculo del índice Euribor. No pueden hacerlo toda vez que se trata de un
+índice oficial, regulado legal y reglamentariamente, y supervisado y controlado por las
+autoridades correspondientes.
+100. En modo alguno podría pretenderse que, con arreglo al régimen de condiciones generales
+de la contratación, se enjuicie la validez del Euribor; y de su método de cálculo.
+Extractamos, a estos efectos, la Sentencia 667/2019 de 16 de septiembre de la
+Audiencia Provincial de Córdoba:
+“En primer lugar, en abstracto, es decir, la posibilidad de manipulación del Euribor
+en función del sistema de cálculo. El recurrente viene a sostener que dicho sistema
+resulta manipulable por el grupo de entidades bancarias, en cuanto que el índice se
+determina en función de los datos suministrados por aquéllas. Desde esta
+perspectiva, el recurso debe ser desestimado, ya que tanto el Euribor, como el
+sustitutivo, son índices oficiales. Al tiempo del otorgamiento de la escritura, el
+Euribor aparecía recogido en la Circular 7/1999, de 29 de junio, a Entidades de
+crédito, sobre modificación de la Circular 8/1990, de 7 de septiembre, sobre
+transparencia de las operaciones de protección a la clientela, que lo definía como
+como la media aritmética simple de los valores diarios de los días con mercado de
+cada mes, del tipo de contado publicado por la Federación Bancaria Europea para
+las operaciones de depósito en euros a plazo de un año calculado a partir del
+Copia publica disociada - 05-09-2026. Original firmado conservado; firma y verificadores no reproducidos.
+
+
+PAGINA 35
+
+35/47
+ofertado por una muestra de bancos para operaciones entre entidades de similar
+calificación (EURIBOR)“”. En cuanto al índice sustitutivo (tipo medio de los
+préstamos hipotecarios a más de tres años del conjunto de entidades) dicha circular
+lo define como la media simple de los tipos de interés medios ponderados por los
+principales de las operaciones de préstamo con garantía hipotecaria de plazo igual
+o superior a tres años para adquisición de vivienda libre, que hayan sido iniciadas
+o renovadas en el mes a que se refiere el índice por los bancos, las cajas de ahorros
+y las sociedades de crédito hipotecario“”. A continuación establece la fórmula para
+su cálculo. Pues bien, tratándose de índices oficiales, no pueden cuestionarse los
+mismos en abstracto, puesto que nuestro ordenamiento jurídico expresamente los
+ha validado”.
+101. Sin perjuicio de lo anterior, y a mayor abundamiento, extractamos acto seguido
+fragmentos de pronunciamientos judiciales que han desestimado pretensiones de nulidad
+dirigidas contra la cláusula contractual que fija el Euribor como índice de referencia
+(todas ellas promovidas por consumidores y usuarios, dado que un empresario —como el
+contrario— no podría ejercitar dichas pretensiones), y en las que también se aludía a la
+investigación llevada a cabo por la Comisión Europea.
+102. Para empezar, debemos destacar la Sentencia de la Audiencia Provincial de Sevilla
+(Sección 5ª), núm. 75/2022, de 14 de febrero de 2022, en la que el tribunal puso de
+relieve la manifiesta falta de prueba e indeterminación de que adolecía la demanda:
+“La parte actora no ha aportado datos objetivos, sustancialmente contrastados, de
+los que se desprenda que la alegada manipulación del Euribor ha determinado, en
+perjuicio del prestatario, un cálculo erróneo de dicho índice. Las resoluciones y
+sanciones que se alegan y acreditan se basan en prácticas monopolísticas contrarias
+a la competencia, pero no se pronuncian ni especifican en que medida resultó
+afectada la tasa de referencia. De hecho, tras dicho expediente, aplicadas las
+correspondientes sanciones, los índices del Euribor se han seguido publicando
+mensualmente en el BOE con absoluta regularidad, sin que las autoridades
+administrativas competentes en esta materia hayan procedido a realizar
+rectificación alguna de los índices anteriores o posteriores a dicha sanción”.
+103. Ese mismo razonamiento se puede encontrar en otra Sentencia de la Audiencia
+Provincial de Sevilla (misma Sección 5ª), núm. 347/2018, de 12 de junio de 2018, que
+desestimó otra demanda de nulidad relacionada con la cláusula contractual relativa al
+índice Euribor:
+“La cláusula que analizamos afecta a las condiciones principales del contrato, a la
+esencial del préstamo, como es la que determina lo que el prestatario va a abonar
+de intereses a la entidad de crédito, es decir, el precio del dinero prestado, establece
+un índice de referencia reconocido y admitido por la normativa vigente al tiempo de
+Copia publica disociada - 05-09-2026. Original firmado conservado; firma y verificadores no reproducidos.
+
+
+PAGINA 36
+
+36/47
+la constitución de la hipoteca, que se recoge en la escritura y que cumple los
+requisitos de transparencia y claridad. La inclusión en el contrato de un tipo de
+referencia plenamente admitido desde siempre por la legislación, y que se publica
+mensualmente en el BOE, no puede ser contraria a la buena fe, ni causar en
+perjuicio del consumidor un desequilibrio importante de los derechos y
+obligaciones de las partes. Por todo lo cual la cláusula no puede considerarse
+abusiva. [...] Así pues, estas cláusulas no son de carácter accesorio, no constituyen
+una condición general de la contratación, sino que son uno de los factores de
+determinación del precio del contrato. Como tal constituyen el elemento decisivo a
+la hora de decantar su voluntad para contratar, el que necesariamente conocen los
+prestatarios, sobre el que reflexionan la conveniencia o no de hacer el contrato, a
+diferencia de las condiciones generales [...].
+El hecho de que las operaciones de préstamo entre ese grupo de grandes bancos,
+tengan influencia en la configuración del índice no significa que dependa
+exclusivamente de la demandada, ni por tanto que pueda manipularlo a su favor;
+por otra parte difícilmente puede interesarle un comportamiento en sus operaciones
+de préstamo orientado exclusivamente a subir artificialmente el índice, ya que ello
+supondría encarecer sus propias operaciones de préstamo, en la que se empleaban
+diversos tipos de índice, sin que lo justifique una subida de intereses generalizada,
+con la consecuente pérdida de su capacidad de competir en el mercado. De hecho
+no se aporta la más mínima prueba de la que pueda deducirse que esta manipulación
+por parte de la entidad de crédito aquí demandada se produjo o, al menos, fuera
+realmente posible que la llevara a cabo por sí sola o en concierto con otras
+entidades”.
+104. Léase también, en el mismo sentido, la Sentencia nº 650/2019 de la Audiencia
+Provincial de Málaga (Sección 6ª) de 9 de julio de 2019:
+“Que la parte pretenda, desde la citada práctica, la nulidad de una cláusula al
+amparo del artículo 82.1 TRLDCU no es el cauce a los efectos de recuperar los
+daños y perjuicios que pudieran haberse derivado de la misma. Porque en realidad
+la parte lo que señala, en su complejo alegato, es que el Euribor no funciona como
+referencia y por lo tanto cualquier cláusula que tenga esa referencia (la suya en este
+caso) es nula. Pero que la práctica durante un tiempo y por una mala actuación se
+haya o no manipulado no invalida la cláusula (sin perjuicio del derecho a recuperar
+los daños y perjuicios por la vía correspondiente) como un error en la aplicación,
+por ejemplo, de un interés diferente de la entidad financiera al préstamo concreto
+no invalidaría tampoco la cláusula de interés, sino que daría lugar a la
+responsabilidad que de ello se deriva. Al amparo del artículo 1255 CC (LEG 1889,
+27) y de la aceptación del Euribor como un índice de referencia válido en la Unión
+Europea y aceptado en España la citada cláusula (sin perjuicio de su ejecución) no
+es nula. Y ello es diferente a la referencia "prácticas no consentidas expresamente"
+a que se refiere el precepto que en realidad parten inicialmente de "no ser cláusulas
+estipuladas" para poder ser identificadas y por otro que han de realizarse contra de
+las exigencias de la buena fe y por ello causar, en perjuicio del consumidor y usuario,
+un desequilibrio importante de los derechos y obligaciones de las partes que se
+Copia publica disociada - 05-09-2026. Original firmado conservado; firma y verificadores no reproducidos.
+
+
+PAGINA 37
+
+37/47
+deriven del contrato. Por tanto, la parte yerra al considerar las mismas desde la
+normativa que fundamenta su demanda y por tanto debe desestimarse el recurso
+confirmando la sentencia”.
+105. Y también, por ejemplo, el Auto número 33/2015 de la Audiencia Provincial de
+Madrid (Sección 14ª), de 18 de febrero de 2015:
+“A la luz de estas ideas parece que no puede tacharse de abusiva la cláusula de
+interés variable referenciada al Euribor, ni menos pedir responsabilidad al banco
+acreedor que no estaba entre los manipuladores del índice. En el mejor de lo
+supuestos, para el recurrente debería probar en qué medida le perjudico la
+manipulación, cuantificar el daño realmente causado, y dirigirse contra los
+manipuladores causantes del daño”.
+106. En virtud de lo expuesto, queda acreditada la improcedencia de los reproches formulados
+de contrario entorno al índice Euribor.
+VII.-  IMPROCEDENCIA DE LA ACCIÓN DE INDEMNIZACIÓN DE DAÑOS Y
+PERJUICIOS (ART. 1101 DEL CÓDIGO CIVIL)
+1.
+La acción indemnizatoria habría prescrito
+107. Con carácter subsidiario, en la demanda se ejercita una acción de daños contractuales,
+basada en que la entidad bancaria supuestamente “incumplió las obligaciones de informar
+adecuadamente a la parte actora acerca de la naturaleza y riesgos del clausulado, de
+buena fe, diligencia e información veraz, y de prestarles asesoramiento cuidando de sus
+intereses como si fueran propios” (pág. nº 25, Suplico).
+108. Dicha acción se encontraba sobradamente prescrita al tiempo de ser ejercitada. Y
+es que, como bien es sabido, la acción de responsabilidad civil contractual del art. 1.101
+del CC se halla sometida a un plazo estricto de ejercicio, previsto en el artículo 1964.2
+del CC, que inicialmente era de quince años y que luego se vio reducido a cinco años en
+virtud de la disposición final primera de la Ley 42/2015, de 5 de octubre, de reforma de
+la Ley 1/2000, de 7 de enero, de Enjuiciamiento Civil.
+109. De conformidad con lo dispuesto en la disposición transitoria quinta de esa Ley, puesta
+en relación con el artículo 1.939 del CC (“La prescripción comenzada antes de la
+publicación de este código se regirá por las leyes anteriores al mismo; pero si desde que
+fuere puesto en observancia transcurriese todo el tiempo en él exigido para la
+Copia publica disociada - 05-09-2026. Original firmado conservado; firma y verificadores no reproducidos.
+
+
+PAGINA 38
+
+38/47
+prescripción, surtirá ésta su efecto, aunque por dichas leyes anteriores se requiriese
+mayor lapso de tiempo”), el plazo de prescripción del artículo 1964.2 del CC finalizaría
+en estos casos a los cinco años desde la entrada en vigor de la Ley 42/2015, que tuvo
+lugar el 7 de octubre de 2015 (disposición final duodécima de esa Ley), esto es, el 7 de
+octubre de 2020, como lo han considerado, de manera pacífica, el Tribunal Supremo y las
+Audiencias Provinciales2.
+110. Sin embargo, la disposición adicional cuarta del Real Decreto 463/2020, de 14 de marzo,
+por el que se declaró el estado de alarma para la gestión de la situación de crisis sanitaria
+ocasionada por el COVID-19 (el “RD 463/2020”), estableció la suspensión de los plazos de
+prescripción de cualesquiera acciones y derechos desde el día de su publicación en el
+Boletín Oficial del Estado3, lo que tuvo lugar el 14 de marzo de 2020. Esta suspensión se
+
+2 A modo de ejemplo, la Sentencia del Tribunal Supremo (Sala de lo Civil) nº 29/2020, de 20 de enero (Roj: STS
+21/2020), dispone lo siguiente:
+“3.- Como la Ley 42/2015 entró en vigor el 7 de octubre de 2015, si conjugamos lo previsto en su Disposición
+transitoria quinta con el art. 1939 CC, al que se remite, tendríamos las siguientes posibles situaciones (sobre la
+base de que no hubiera actos interruptivos de la prescripción), teniendo en cuenta que la prescripción iniciada
+antes de la referida entrada en vigor se regirá por el plazo anteriormente fijado (quince años), si bien, si desde
+dicha entrada en vigor transcurriese todo el plazo requerido por la nueva norma (cinco años) surtirá efecto la
+prescripción incluso aunque anteriormente hubiera un plazo de quince años:
+(i) Relaciones jurídicas nacidas antes del 7 de octubre de 2000: estarían prescritas a la entrada en vigor de nueva
+Ley.
+(ii) Relaciones jurídicas nacidas entre el 7 de octubre de 2000 y el 7 de octubre de 2005: se les aplica el plazo de
+15 años previsto en la redacción original del art. 1964 CC.
+(iii) Relaciones jurídicas nacidas entre el 7 de octubre de 2005 y el 7 de octubre de 2015: en aplicación de la
+regla de transitoriedad del art. 1939 CC, no prescriben hasta el 7 de octubre de 2020.
+(iv) Relaciones jurídicas nacidas después del 7 de octubre de 2015: se les aplica el nuevo plazo de cinco años,
+conforme a la vigente redacción del art. 1964 CC”.
+Para el caso de las acciones indemnizatorias sobre Valores Santander, la Sentencia de la Audiencia Provincial de
+Barcelona (Sección Decimocuarta) de 19 de enero de 2021 se pronunció del siguiente modo:
+“4. En consecuencia, es aplicable la regulación establecida de forma general o supletoria por el artículo 1.964
+del Código Civil, reformado por la Ley 42/2015, de 5 de octubre; y como quiera que se trata de una relación
+jurídica nacida en el año 2008, la prescripción no se producía hasta el día 7 de octubre de 2020, dado que, según
+la disposición transitoria quinta de la citada Ley de octubre de 2015, las relaciones jurídicas nacidas entre el 7
+de octubre de 2005 y el 7 de octubre de 2015 prescriben el día 7 de octubre de 2020, atendiendo a lo dispuesto en
+el artículo 1.939 del Código Civil, al que se remite la citada Disposición Transitoria Quinta. En este sentido se
+pronuncia la Sentencia del Tribunal Supremo 29/2020, de 20 de enero. Por tanto, como el contrató se celebró en
+fecha de 21 de enero de 2008 y la demanda se presentó el 29 de noviembre de 2017, la acción indemnizatoria no
+habría prescrito”.
+3 “Los plazos de prescripción y caducidad de cualesquiera acciones y derechos quedarán suspendidos durante el
+plazo de vigencia del estado de alarma y, en su caso, de las prórrogas que se adoptaren”.
+Copia publica disociada - 05-09-2026. Original firmado conservado; firma y verificadores no reproducidos.
+
+
+PAGINA 39
+
+39/47
+alzó con efectos desde el 4 de junio de 2020, tal como preveía el artículo 10 del Real
+Decreto 537/2020, de 22 de mayo, por el que se prorroga el estado de alarma declarado
+por el RD 463/20204.
+111. Así pues, en lo que aquí interesa, el plazo de prescripción estuvo suspendido durante 82
+días (contados desde el 14 de marzo de 2020 hasta el 3 de junio de 2020, ambos incluidos),
+lo que significa que el plazo de prescripción del artículo 1964.2 del CC finalizó el 28
+de diciembre de 2020 (82 días después del 7 de octubre de 2020).
+112. En el caso que nos ocupa una recta interpretación del régimen de la prescripción establece
+que el plazo debe empezar a computarse, en el mejor de los casos para el demandante,
+desde la fecha de terminación del contrato de gestión de riesgos financieros, esto es, desde
+el 7 de enero de 2012  momento en el que se agotaron los efectos de dicha contrato. Y
+sin embargo, la demanda que ahora se contesta no ha sido interpuesta hasta el pasado 13
+de octubre de 2023. Por ello, la acción de daños ejercitada se encuentra sobradamente
+prescrita.
+2.
+La alegación de desconocimiento por falta de información precontractual no puede
+ser vehiculada a través de la acción del art. 1101 del CC
+113. A mayor abundamiento, debe señalarse que la defectuosa configuración de esta acción
+subsidiaria también debería comportar su desestimación.
+114. El supuesto incumplimiento contractual que sirve de base a la acción se vincula en la
+demanda con obligaciones de información previas a la celebración del contrato
+impugnado. Pero un incumplimiento contractual no puede vincularse con las obligaciones
+previas a la celebración del referido contrato, que son las que la demanda reputa como
+supuestamente incumplidas.
+115. El Tribunal Supremo ha declarado que las obligaciones previas a la celebración del
+contrato no pueden dar lugar a un incumplimiento del mismo. Como indica la
+Sentencia núm. 132/2018, de 12 de junio (Roj: STS 1110/2018), “el incumplimiento de
+los deberes de información que, en contratos como el swap, competen a la entidad de
+
+4 “Con efectos desde el 4 de junio de 2020, se alzará la suspensión de los plazos de prescripción y caducidad de
+derechos y acciones”.
+Copia publica disociada - 05-09-2026. Original firmado conservado; firma y verificadores no reproducidos.
+
+
+PAGINA 40
+
+40/47
+servicios de inversión puede dar lugar a una acción de anulabilidad por error vicio del
+consentimiento, pero no a una acción de resolución contractual con base en el art. 1124
+CC” debido a que “el incumplimiento [contractual], por su propia naturaleza, debe venir
+referido a la ejecución del contrato”.
+116. Cabría contemplar un posible incumplimiento de un supuesto contrato de asesoramiento.
+Ciertas sentencias del Tribunal Supremo han entrado a conocer de acciones
+indemnizatorias sobre la base de un déficit informativo en la comercialización de un
+producto financiero, por pretendido incumplimiento de un contrato de asesoramiento.
+Pero, en este caso, la existencia de ese contrato no se ha puesto de manifiesto y acreditado
+en la demanda.
+117. Nótese, en cualquier caso, que la existencia de obligaciones de asesoramiento frente a los
+clientes que para una entidad se prevén en la Ley del Mercado de Valores no puede
+considerarse la norma general: la existencia de obligaciones de asesoramiento no se
+presume, sino que debe ser alegada y probada en cada caso. Así lo ha declarado, por
+ejemplo, la Sentencia del Tribunal Supremo (Sala de lo Civil), de 11 de mayo de 2021
+(Roj: STS 1778/2021):
+“3.- Estas son las sentencias cuya doctrina el recurrente considera vulnerada por la
+sentencia impugnada. Lo que sucede es que en el motivo ahora examinado no se explica cuál
+es el concreto incumplimiento contractual del que hace derivar la responsabilidad que
+reclama. En el caso de aquellas sentencias existía una relación de asesoramiento y de gestión
+y administración de carteras previo a la contratación de los productos litigiosos, relación
+de asesoramiento financiero y gestión que generaba obligaciones de información, diligencia
+y lealtad en la formulación de recomendaciones de inversión, cuya infracción se consideró
+título de imputación de la obligación de indemnizar el daño causado por el resultado de unas
+inversiones ruinosas.
+4.- No sucede así en el presente caso. Como señala la Audiencia, por un lado, ‘no se ha
+acreditado cuales fueron las concretas obligaciones contractuales incumplidas por BBVA’.
+Y por otro, la renegociación del préstamo para pasar de un tipo de interés variable a otro
+fijo se produjo ‘por iniciativa del legal representante de Huerto de Santa Rita S.L.’. Por
+tanto, no habiéndose acreditado la existencia de un contrato de asesoramiento o de gestión
+de carteras previo, y no habiendo partido del banco la iniciativa para la renegociación del
+préstamo, que concluyó con la introducción de un derivado implícito como medio de
+establecer un tipo de interés fijo, no puede apreciarse el incumplimiento de obligaciones de
+información y diligencia que son propias de dicha actividad de asesoramiento financiero, en
+los términos que resultan de la jurisprudencia cuya vulneración se denuncia”.
+118. La existencia de asesoramiento debe, pues, ser probada. Pero la parte actora se limita a
+afirmar que hubo asesoramiento, sin demostrar que se le hicieron recomendaciones
+particulares y en función de sus circunstancias personales. Por el contrario, los hechos
+Copia publica disociada - 05-09-2026. Original firmado conservado; firma y verificadores no reproducidos.
+
+
+PAGINA 41
+
+41/47
+acreditados en la presente contestación acreditan que no existió una recomendación
+personalizada a la parte actora.
+119. Aplicando las consideraciones expuestas al presente caso, resulta que la parte actora no
+ha identificado ningún incumplimiento de obligaciones contractuales que pueda fundar la
+acción de responsabilidad contractual ejercitada al amparo del artículo 1.101 CC.
+3.
+En cualquier caso, no concurren los presupuestos para la existencia de
+responsabilidad contractual ex artículo 1.101 del Código Civil
+120. Aunque en los anteriores apartados se ha justificado la improcedencia de la acción de
+responsabilidad civil, incluso si hipotéticamente se entrara a analizar los presupuestos
+exigidos por el artículo 1.101 CC, debería concluirse igualmente que la acción debe ser
+desestimada:
+(i) Conducta antijurídica: culpa, negligencia o morosidad en el cumplimiento de la
+obligación o incumplimiento: como ha quedado acreditado, la Caja de Ahorros de
+Canarias (CaixaBank) cumplió con las obligaciones de información que le
+resultaban exigibles al tiempo de la formalización de las operaciones discutidas.
+(ii) Prueba de los perjuicios que se reclaman: Luchy Playa Blanca, S.L. no sufrió
+ningún perjuicio patrimonial efectivo y real que resulte indemnizable. La adversa
+no toma en consideración en su demanda que las liquidaciones generadas por el
+contrato de gestión de riegos financieros, tuvieron por finalidad mitigar las
+oscilaciones del tipo de interés variable del contrato de financiación al que está
+vinculado. Un análisis del daño como el que efectúa la adversa, que omite la
+relación de dicho contrato con la financiación no puede prosperar.
+El deber de acreditar los daños contractuales reclamados —expresión en la que se
+subsumen los restantes requisitos legalmente exigidos para que nazca el derecho a
+ser indemnizado— es una exigencia sobre la que no existe controversia entre la
+doctrina científica (DIEZ-PICAZO, Luis en: “Fundamentos de Derecho Civil
+Patrimonial”, Volumen ii, Navarra: Civitas, 2010, páginas 793 y 794) y la
+jurisprudencia:
+“23. LA PRUEBA DE LOS DAÑOS CONTRACTUALES
+Copia publica disociada - 05-09-2026. Original firmado conservado; firma y verificadores no reproducidos.
+
+
+PAGINA 42
+
+42/47
+Nuestro Código no contiene norma alguna relativa al problema de la prueba de los daños,
+de manera que se aplican las reglas de distribución de la carga de la prueba del art. 1214
+cc. Al ser el daño y su cuantificación hechos constitutivos de la demanda, su prueba
+corresponde al demandante. La jurisprudencia del ts ha sido muy constante en este sentido,
+señalando que la inejecución o el incumplimiento de la obligación no acarrea por sí sólo
+daños y perjuicios y que la prueba de éstos corresponde a quien demanda indemnización”
+[subrayado añadido].
+Atendiendo a los Hechos acreditados, y a lo expuesto, debe tenerse por incumplido
+el principio relativo a la carga de la prueba (artículo 217.2 LEC). Por ello,
+corresponderá a la adversa asumir las consecuencias derivadas de su deficiente
+actividad probatoria, tal y como se recoge en la Sentencia del Tribunal Supremo de
+18 de octubre de 2004 (LA LEY 216417/2004):
+“La doctrina ha elaborado muy detalladamente esta cuestión, que, a su vez, ha
+desarrollado la jurisprudencia, reiteradamente y con claridad: se aplica cuando se
+produce una ausencia de prueba de un hecho y determina cuál de las partes debe sufrir las
+consecuencias de ello, "el problema de la carga de la prueba es el problema de la falta de
+la prueba" (sentencias de 31 de enero de 2001, 5 de julio de 2002 y 3 de octubre de 2002)
+y se resume en estos términos: "El art. 1.214 del Código Civil no contiene una regla de
+prueba por lo que no puede servir de fundamento para una valoración probatoria. La
+infracción del mismo tiene lugar cuando se aprecia la falta de prueba de un hecho y se
+atribuyen las consecuencias desfavorables a la parte a quién no le incumbía la carga de
+probarlo”.
+En todo caso, y aunque en el Suplico de su demanda la adversa únicamente
+interesa, en concepto de daños y perjuicios, aquellos que “les supuso la
+contratación del Swap” (pág.25 de la demanda), dejamos expresa constancia de
+que negamos también el resto de conceptos referidos en el cuerpo de la
+demanda y a su cuantificación, para lo que nos remitimos al resto de esta
+contestación y al Informe Pericial que se anuncia mediante Otrosí Digo
+Primero. En este sentido, en el cuerpo de la demanda la adversa incurre en
+incoherencias manifiestas, tales como (entre otras) incluir en su enumeración de
+partidas una correspondiente a la constitución de una prenda sobre un depósito de
+400.000 euros, cuando dichos fondos procedían del Préstamo de 2010 firmado por
+el actor, y que debía devolver.
+(iii) Prueba del nexo causal eficiente entre la conducta antijurídica y los daños
+producidos: no existe relación de causalidad entre el daño reclamado y la actuación
+de la Caja de Ahorros de Canarias (CaixaBank). Luchy Playa Blanca, S.L. acudió
+Copia publica disociada - 05-09-2026. Original firmado conservado; firma y verificadores no reproducidos.
+
+
+PAGINA 43
+
+43/47
+a dicha entidad interesada en obtener financiación y, tras ser adecuadamente
+informada, decidió suscribir el contrato de gestión de riesgos financieros para la
+cobertura de la fluctuación de los tipos de interés. En la medida en que el resultado
+de las liquidaciones de dicho contrato es consecuencia de la fluctuación de los tipos
+de interés —cuya oscilación se encuentran fuera del alcance de CaixaBank—, no
+cabe atribuir a mi mandante la evolución de los mismos. Como enseña la Sentencia
+del Tribunal Supremo de 29 de abril de 2003 (RJ 2003/4535):
+“Es doctrina reiterada la de que cuando en la producción de un daño puede haber incidido
+una pluralidad de causas, no es suficiente con la acreditación de que se ha sufrido
+realmente aquel detrimento personal o patrimonial para la imputación de responsabilidad
+a cualquiera de los sujetos que haya llevado a cabo una de las conductas antecedentes o a
+todos ellos, pues no todos los acontecimiento que preceden al evento dañoso tienen la
+misma relevancia.
+Se hace preciso demostrar, en efecto, la existencia de un nexo causal entre los actos
+llevados a cabo por las personas contra quien se dirige la demanda y la lesión o el perjuicio
+inferidos y que la relación de causa a efecto no ha sido interrumpida por la intervención
+de otros sujetos”.
+Esta exigencia probatoria impuesta por el Tribunal Supremo, que recae sobre la
+parte actora, se ha reiterado por nuestras Audiencias Provinciales. Se destaca la
+Sentencia de la Audiencia Provincial de Madrid de 1 de febrero de 2011 (AC
+2011\348):
+“El tribunal de instancia desestimó la demanda porque tras valorar la prueba practicada,
+y partiendo de ser el demandante quien de conformidad con lo dispuesto en el artículo 217
+LEC (RCL 2000, 34, 962 y RCL 2001, 1892)  , debía probar la concurrencia de los
+requisitos exigidos no solo por la Ley , artículos 1101 y 1104 del Código Civil (LEG 1889,
+27)  sino por la jurisprudencia, que son la existencia de una acción dañosa, haber mediado
+culpa o negligencia, haber sufrido quien acciona daños y perjuicios y existir nexo causal
+entre la acción culposa y estos últimos, llegaba a la conclusión al no estar obligado el
+demandado a obtener un resuelto sino unos medios, de conformidad con la doctrina
+jurisprudencial, que es por otra parte unánime, como se evidencia de examinar las
+sentencia del Tribunal Supremo, que no se había probado esa acción negligente, sino todo
+lo contrario, afirmaba que sí había cumplido el deber de informar -fundamento primero in
+fine- y no solo eso sino que entendía que tampoco estaban probados los daños. Y esa
+conclusión entiende este tribunal que es conforme al resultado probatorio, porque no basta
+con afirmar que hubo responsabilidad para concluir que la hubo, sino que ésta es la
+conclusión derivada de alegar y probar la concurrencia de los requisitos que la norma
+dispone, es decir, concretar el hecho dañoso, es decir, cuál fue la actividad culposa y
+probarla, y cuáles los daños sufridos no solo morales porque el recurrente reclamó por
+este concepto dos mil euros, y 3.500 euros más que se desconoce si eran por daños
+patrimoniales o por qué otro concepto distinto a los morales ya cuantificados, y el nexo
+causal.
+Copia publica disociada - 05-09-2026. Original firmado conservado; firma y verificadores no reproducidos.
+
+
+PAGINA 44
+
+44/47
+No acreditado el hecho dañoso, es decir, la negligencia, la consecuencia única es la
+desestimatoria de la demanda, porque para condenar a indemnizar por haber incurrido en
+responsabilidad, lo primero no es la realidad de los daños y los perjuicios sino la existencia
+del incumplimiento, es decir, probar la actividad dejada de realizar, y ser la misma causa
+del daño que se reclama”.
+En la misma línea se han pronunciado también la Sentencia de la Audiencia
+Provincial de Málaga de 31 de marzo de 2000 (AC 2000\915), la Sentencia de la
+Audiencia Provincial de Barcelona de 8 de mayo de 2012 (AC 2012\1011), la
+Sentencia de la Audiencia Provincial de Islas Baleares de 3 de febrero de 2011 (AC
+2011\359) y la Sentencia de la Audiencia Provincial de Alicante de 3 de mayo de
+2006 (AC 2006\993).
+121. En definitiva, sólo puede concluirse que no concurren los requisitos legales necesarios
+para que surja obligación por parte de mi mandante a indemnizar a la adversa, en los
+términos solicitados de contrario.
+Por lo expuesto,
+SUPLICO AL JUZGADO que teniendo por presentado este escrito con sus documentos y copias,
+así como con el justificante del traslado prevenido en el artículo 276 LEC, lo admita y, en su
+virtud, tenga por deducida en tiempo y forma contestación a la demanda interpuesta frente a mi
+representada CaixaBank, S.A. y, en su día, previos los trámites legales pertinentes, dicte
+sentencia por la que desestime íntegramente la demanda y condene en costas a la Parte Actora.
+En Valencia, a 24 de enero de 2024.
+*    *    *
+OTROSÍ DIGO PRIMERO que tenga por anunciada, al amparo del art. 337 LEC, la presentación
+de un dictamen pericial que se elaborará por PKF ATTEST (Documento nº 10), que tendrá por
+objeto, entre otros extremos, examinar el contexto de la contratación de las operaciones
+impugnadas en la demanda y de la financiación concedida por la entidad financiera, las
+características y el funcionamiento del contrato de gestión de riesgos financieros, el perfil de la
+entidad contratante, y un análisis económico y de cuantificación. Se aportará el informe tan
+pronto como esta parte disponga del mismo y, en todo caso, cinco días antes de iniciarse la
+audiencia previa.
+Por lo expuesto, al Juzgado
+Copia publica disociada - 05-09-2026. Original firmado conservado; firma y verificadores no reproducidos.
+
+
+PAGINA 45
+
+45/47
+SUPLICO que tenga por realizada la anterior manifestación y por anunciada la presentación del
+dictamen pericial al amparo del art. 337 LEC.
+*    *    *
+OTROSÍ DIGO SEGUNDO que esta parte formula oposición en relación con el anuncio que la parte
+actora realiza en el Otrosí Digo Cuarto de su demanda, consistente en la futura aportación de
+un dictamen pericial.
+122. En el caso que nos ocupa no concurren los requisitos para poder dilatar la aportación del
+dictamen pericial en un momento posterior a la demanda, conforme resulta del artículo
+336 de la LEC, por lo que se debe solicitar que se rechace la petición de la parte contraria
+y se inadmita el dictamen pericial anunciado.
+123. El artículo 336 de la LEC es sumamente claro: los dictámenes de que los litigantes
+dispongan, habrán de aportarse con la demanda o con la contestación, si ésta
+hubiere de realizarse en forma escrita:
+“1. Los dictámenes de que los litigantes dispongan, elaborados por peritos por ellos
+designados, y que estimen necesarios o convenientes para la defensa de sus
+derechos, habrán de aportarlos con la demanda o con la contestación, si ésta
+hubiere de realizarse en forma escrita, sin perjuicio de lo dispuesto en el artículo
+337 de la presente Ley”.
+124. El apartado 3 de este precepto dispone que, “se entenderá que al demandante le es
+posible aportar con la demanda dictámenes escritos elaborados por perito por él
+designado”. Solamente cuando el demandante justifique cumplidamente que la defensa
+de su derecho no ha permitido demorar la interposición de la demanda, estará legitimado
+para la presentación del dictamen en un momento posterior a la demanda al amparo del
+artículo 337 LEC, pero nunca en otros casos.
+125. Precisado lo anterior, en su escrito de demanda la actora no ofrece ninguna justificación
+de por qué motivo no habría podido aportar el informe pericial junto con la demanda. Se
+limita sencillamente a anunciar su aportación en el Otrosí Digo Cuarto de su escrito de
+demanda, sin detenerse a justificar nada.
+126. Esto debería ser suficiente para inadmitir la prueba pericial anunciada de contrario. En
+efecto, sin ofrecer una mínima justificación, la parte actora pretende burlar la aplicación
+imperativa de diferentes disposiciones esenciales que presiden la tramitación del proceso:
+Copia publica disociada - 05-09-2026. Original firmado conservado; firma y verificadores no reproducidos.
+
+
+PAGINA 46
+
+46/47
+(i) el artículo 217 de la LEC, que impone a demandante la carga de probar la certeza de
+los hechos de los que, en su caso, se pudiera desprender el efecto jurídico por él
+pretendido; (ii) el artículo 265.1.4º de la LEC, que declara el deber de acompañar a la
+demanda los dictámenes periciales en que las partes pretendiesen apoyar sus pretensiones;
+(iii) el artículo 269 de la LEC, que declara la imposibilidad de aportar dictámenes al
+margen del escrito de demanda; y (iv) el artículo 400 de la LEC, que impone la
+improrrogable obligación de aducir en la demanda cuantos hechos pudiesen invocarse al
+tiempo de interponerla.
+127. Lo expuesto resulta todavía más grave si se atiende a que las operaciones discutidas
+fueron contratadas entre los años 2008 y 2010, y que el contrato de gestión de riesgos
+financieros (derivado de cobertura) alcanzó su fecha de terminación contractual en el año
+2012. La realidad es que la demandante ha tenido tiempo más que suficiente para preparar
+la pericial. Es por ello que esta parte considera que la posibilidad de la adversa de
+presentar un informe pericial ha precluido y el anuncio de su futura aportación debe ser
+rechazado.
+128. Por otra parte, la estrategia de la adversa también situaría a esta parte en una manifiesta
+situación de indefensión, pues se habría visto obligada a contestar a la demanda sin
+conocer la totalidad de los datos, hechos y premisas en que la parte actora funda su
+derecho.
+129. Subsidiariamente, y para el hipotético e improbable supuesto de que este Juzgado
+admitiera el dictamen pericial anunciado de adverso, y a fin de salvaguardar el principio
+de igualdad de armas, esta parte se reserva el derecho de anunciar en el acto de la
+audiencia previa la presentación de un complemento del dictamen pericial de esta parte,
+por si su necesidad se pone de manifiesto como consecuencia de las alegaciones y
+conclusiones contenidas en el dictamen presentado por la parte actora.
+Por lo expuesto, al Juzgado
+SUPLICO que tenga por efectuadas las anteriores manifestaciones, y acuerde rechazar la
+posibilidad de que la actora aporte un dictamen pericial y, subsidiariamente, a los efectos legales
+oportunos, tenga por anunciada la aportación de dictamen pericial en los términos expuestos.
+*    *    *
+Copia publica disociada - 05-09-2026. Original firmado conservado; firma y verificadores no reproducidos.
+
+
+PAGINA 47
+
+47/47
+OTROSÍ DIGO TERCERO que esta representación ha intentado cumplir minuciosa y fielmente
+con los requisitos exigidos por la LEC que puedan resultar aplicables, tanto en lo relativo al
+fondo como a la forma, poniéndose de manifiesto expresamente la voluntad de esta parte de
+subsanar cualquier defecto en que se pudiera haber incurrido conforme a lo dispuesto en el
+artículo 231 de la LEC.
+Por lo expuesto, al Juzgado
+SUPLICO que tenga por realizada la anterior manifestación a los efectos oportunos.
+Es Justicia que reitero en el lugar y fecha arriba señalados.
+
+
+
+
+Ltdo. Raimon Tagliavini Sansa P.o.
+
+
+Ltdo. David García Martín
+
+
+
+Copia publica disociada - 05-09-2026. Original firmado conservado; firma y verificadores no reproducidos.
