@@ -1,0 +1,33 @@
+{
+  "schema": "por-derecho.publication-manifest.v1",
+  "publication_id": "PD-CNMV-INTERIM-20260905-01",
+  "owner": "Por Derecho scoped CNMV integration",
+  "control_date": "2026-09-05",
+  "current_state": "PREPARED",
+  "title": "CNMV interim measures, lawful publicity and criminal asset-recovery guide",
+  "source_base_sha": "66003743d2cb3a1807c1f3765c530bf639857da3",
+  "head_branch": "integration/cnmv-interim-measures-20260905",
+  "expected_routes": {
+    "en": [
+      "en/authorities-duties-asset-recovery/index.html",
+      "en/cnmv-ricpe-verification/index.html"
+    ],
+    "es": [
+      "es/autoridades-deberes-recuperacion-activos/index.html",
+      "es/cnmv-ricpe-verificacion/index.html"
+    ]
+  },
+  "expected_source_files": [
+    "assets/data/cnmv-interim-measures-20260905.json",
+    "assets/cnmv-interim-measures-20260905.css",
+    "assets/cnmv-interim-measures-20260905.js",
+    "scripts/build_cnmv_interim_measures_20260905.py"
+  ],
+  "authorization": {
+    "repository_and_website_publication": true,
+    "external_contact_or_delivery": false,
+    "email_action": "NOT_SENT",
+    "filing_or_portal_action": "NOT_FILED"
+  },
+  "lifecycle_note": "PREPARED is the reproducible pre-merge source state. Exact merge, Pages and live verification are independently recorded in Control Tower #1428; this manifest is not a pre-emptive deployment certificate."
+}
