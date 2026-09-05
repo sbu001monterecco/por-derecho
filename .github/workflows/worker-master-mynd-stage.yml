@@ -1,17 +1,87 @@
-name: MASTER MYND staging diagnostic — no publication authority
+name: MASTER MYND public package preparation
 on:
-  workflow_dispatch:
+  push:
+    branches: ['worker/master-mynd-site-address-20260905']
+    paths: ['.github/workflows/worker-master-mynd-stage.yml']
 permissions:
-  contents: read
+  contents: write
+concurrency:
+  group: master-mynd-worker-staging-20260905
+  cancel-in-progress: false
 jobs:
-  diagnostic-only:
+  stage-reviewed-public-package:
+    if: github.ref == 'refs/heads/worker/master-mynd-site-address-20260905' && startsWith(github.event.head_commit.message, 'stage MASTER MYND approved')
     runs-on: ubuntu-latest
-    timeout-minutes: 2
+    timeout-minutes: 12
     steps:
-      - name: Report the preserved import failure without retrying or writing
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          ref: worker/master-mynd-site-address-20260905
+          fetch-depth: 0
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
+        with:
+          python-version: '3.12'
+      - name: Import only the user-approved anonymous-read public candidate
         run: |
-          echo 'Run 33984431597 failed with HTTP403 while retrieving the public-safe candidate archive.'
-          echo 'No candidate source files were applied or committed by that run.'
-          echo 'This replacement workflow is read-only: no download, archive application, commit, merge or deployment.'
-          echo 'The 38-file candidate, original-image hashes, canonical hotel/address delta and proof gaps are recorded in Control Tower1428.'
-          echo 'Resume only through an authorised transfer and the current single integration lane; no timeout or worker takeover is implied.'
+          python - <<'PY'
+          import base64,hashlib,io,json,os,pathlib,urllib.request,zipfile
+          assert os.environ['GITHUB_REF']=='refs/heads/worker/master-mynd-site-address-20260905'
+          share='https://1drv.ms/u/c/bdf43392f576e62f/IQBsnF0I1sdxR7sQ_fUhqqAQAdLlSulkLXpskOR85Z-_sMQ'
+          encoded='u!'+base64.urlsafe_b64encode(share.encode()).decode().rstrip('=')
+          urls=['https://api.onedrive.com/v1.0/shares/'+encoded+'/root/content',share+'?download=1']
+          expected='15ad9feeffc7b6ae65eaf7dc1cba7d9ce1cc2ecf745b919a61a8fe0c6a3928a7'
+          archive=None
+          for index,url in enumerate(urls):
+              try:
+                  with urllib.request.urlopen(urllib.request.Request(url,headers={'User-Agent':'Por-Derecho-Public-Candidate-Verification'}),timeout=60) as response:
+                      data=response.read(2000000)
+                  if len(data)==641321 and hashlib.sha256(data).hexdigest()==expected:
+                      archive=data;break
+                  print('Exact-target endpoint',index,'returned nonmatching bytes; no files applied')
+              except Exception as error:
+                  print('Exact-target endpoint',index,'failed:',type(error).__name__,getattr(error,'code',''))
+          assert archive is not None,'No verified exact candidate bytes; abort before applying'
+          z=zipfile.ZipFile(io.BytesIO(archive));m=json.loads(z.read('candidate-manifest.json'))
+          assert m['base_commit']=='529d90898b7172decf46323d6bd58fbc69fb560c' and len(m['files'])==38
+          assert set(z.namelist())==({'candidate-manifest.json','verification/finite-validation.json','verification/offline-mobile-check.json','README.txt'}|{'payload/'+p for p in m['files']})
+          pending=[]
+          for name,record in m['files'].items():
+              path=pathlib.Path(name)
+              assert not path.is_absolute() and '..' not in path.parts and '.git' not in path.parts
+              assert not name.startswith(('.github/','ops/'))
+              content=z.read('payload/'+name)
+              assert len(content)==record['bytes'] and hashlib.sha256(content).hexdigest()==record['sha256'],name
+              before=hashlib.sha256(path.read_bytes()).hexdigest() if path.is_file() else None
+              assert before==record['before_sha256'],('baseline collision',name)
+              pending.append((path,content))
+          for path,content in pending:
+              path.parent.mkdir(parents=True,exist_ok=True);path.write_bytes(content)
+          pathlib.Path('/tmp/master-mynd-candidate-manifest.json').write_text(json.dumps(m,indent=2))
+          print('All38 exact reviewed paths applied to worker only; archive SHA256',expected)
+          PY
+      - name: Validate the actual candidate before committing
+        run: |
+          python -m pip install --quiet pillow beautifulsoup4
+          python scripts/validate_master_mynd.py
+          python scripts/validate_operational_identity_registry.py
+          python scripts/reconcile_identity_registry_projections.py --check
+          python scripts/validate_satire_publication_governance.py
+      - name: Commit only the verified38 paths to this worker; never main
+        run: |
+          test "${GITHUB_REF}" = 'refs/heads/worker/master-mynd-site-address-20260905'
+          git config user.name 'Por Derecho public package preparation'
+          git config user.email 'noreply@users.noreply.github.com'
+          python - <<'PY'
+          import json,subprocess
+          m=json.load(open('/tmp/master-mynd-candidate-manifest.json'))
+          subprocess.run(['git','add','--',*m['files']],check=True)
+          PY
+          git commit -m 'MASTER MYND: approved images, complete bilingual reader and canonical hotel address'
+          git push origin HEAD:refs/heads/worker/master-mynd-site-address-20260905
+      - name: Preserve exact preparation receipt
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: master-mynd-public-package-preparation
+          path: /tmp/master-mynd-candidate-manifest.json
+          if-no-files-found: ignore
