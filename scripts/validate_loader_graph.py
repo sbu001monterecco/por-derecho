@@ -40,9 +40,7 @@ def main() -> int:
     errors: list[str] = []
     paths: list[tuple[str, ...]] = []
 
-    direct = local_loader_references("assets/site.js")
-    if "assets/site-pre-matkator-8584-20260903.js" not in direct:
-        errors.append("assets/site.js does not directly preserve site-pre-matkator-8584-20260903.js")
+    # Depth may change; every preserved dependency below must still be reachable.
 
     for source, target, message in REQUIRED_PATHS:
         path = find_loader_path(source, target)

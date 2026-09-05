@@ -78,6 +78,19 @@ def apply_current_loader_contract(root: Path = ROOT) -> None:
     legacy.one_pass = current_pass
 
 
+def verified_live_loader_text(base_url: str, timeout: int = 20, root: Path = ROOT) -> str:
+    """Return only hash-verified deployed chain text for legacy live contracts."""
+    from urllib.parse import urljoin
+    expected = loader_contract(root)
+    texts = []
+    for rel, contract in expected.items():
+        response = legacy.fetch(urljoin(base_url.rstrip('/')+'/', rel)+'?pd_loader_hash='+contract['sha256'][:16], timeout)
+        if response['status'] != 200 or response['sha256'] != contract['sha256'] or response['bytes'] != contract['bytes']:
+            raise ValueError('Deployed loader-chain integrity failed: '+rel)
+        texts.append(response['text'])
+    return '\n'.join(texts)
+
+
 def main() -> int:
     try:
         apply_current_loader_contract()

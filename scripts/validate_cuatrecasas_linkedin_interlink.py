@@ -230,7 +230,8 @@ def main() -> int:
     if any(token in panel for token in forbidden_public_tokens[:4]):
         errors.append("panel exposes a received private filename or locator")
 
-    loader = SITE_LOADER.read_text(encoding="utf-8")
+    from loader_graph import reachable_loader_text
+    loader = reachable_loader_text(root=ROOT)
     if "cuatrecasas-inigo-linkedin-record-20260831.js?v=20260901b" not in loader:
         errors.append("site loader does not request the cache-busted panel revision")
     if "data-cuatrecasas-inigo-linkedin-loader', '20260901b'" not in loader:

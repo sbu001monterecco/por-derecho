@@ -17,14 +17,9 @@ CONTROL_PLANE_SNAPSHOT_COUNTS = {
     "INSTITUTION": 43,
     "PROCEEDING": 43,
 }
-CURRENT_CANONICAL_COUNTS = {
-    "total": 343,
-    "PERSON": 162,
-    "ORGANISATION": 83,
-    "STRUCTURE": 11,
-    "INSTITUTION": 44,
-    "PROCEEDING": 43,
-}
+# Validate current shards dynamically; dated historical snapshots stay fixed.
+from reconcile_identity_registry_projections import canonical_snapshot
+CURRENT_CANONICAL_COUNTS = canonical_snapshot(ROOT)[0]
 LAST_LIVE_IDENTITY_COUNTS = {
     "total": 204,
     "PERSON": 87,
@@ -103,12 +98,12 @@ def main() -> int:
         es_identity = require_markers(
             ROOT / "es/registro-identidad-materia/index.html",
             [
-                'content="Registro operativo de 343 IDs inmutables',
-                'data-static-registry-counts="343-162-83-11-44-43"',
-                'data-registry-stat="TOTAL">343',
-                'data-registry-stat="PERSON">162',
-                'data-registry-stat="ORGANISATION">83',
-                '"name":"Total","value":343',
+                'content="Registro operativo de '+str(CURRENT_CANONICAL_COUNTS['total'])+' IDs inmutables',
+                'data-static-registry-counts="'+'-'.join(str(CURRENT_CANONICAL_COUNTS[k]) for k in ('total','PERSON','ORGANISATION','STRUCTURE','INSTITUTION','PROCEEDING'))+'"',
+                'data-registry-stat="TOTAL">'+str(CURRENT_CANONICAL_COUNTS['total']),
+                'data-registry-stat="PERSON">'+str(CURRENT_CANONICAL_COUNTS['PERSON']),
+                'data-registry-stat="ORGANISATION">'+str(CURRENT_CANONICAL_COUNTS['ORGANISATION']),
+                '"name":"Total","value":'+str(CURRENT_CANONICAL_COUNTS['total']),
                 '../../ops/CURRENT_UNITARY_STATE.json',
             ],
             ['Los 159 IDs', 'data-registry-stat="TOTAL">159', '159 identidades canónicas'],
@@ -116,12 +111,12 @@ def main() -> int:
         en_identity = require_markers(
             ROOT / "en/matter-identity-registry/index.html",
             [
-                'content="Operational Por Derecho register of 343 immutable IDs',
-                'data-static-registry-counts="343-162-83-11-44-43"',
-                'data-registry-stat="TOTAL">343',
-                'data-registry-stat="PERSON">162',
-                'data-registry-stat="ORGANISATION">83',
-                '"name":"Total","value":343',
+                'content="Operational Por Derecho register of '+str(CURRENT_CANONICAL_COUNTS['total'])+' immutable IDs',
+                'data-static-registry-counts="'+'-'.join(str(CURRENT_CANONICAL_COUNTS[k]) for k in ('total','PERSON','ORGANISATION','STRUCTURE','INSTITUTION','PROCEEDING'))+'"',
+                'data-registry-stat="TOTAL">'+str(CURRENT_CANONICAL_COUNTS['total']),
+                'data-registry-stat="PERSON">'+str(CURRENT_CANONICAL_COUNTS['PERSON']),
+                'data-registry-stat="ORGANISATION">'+str(CURRENT_CANONICAL_COUNTS['ORGANISATION']),
+                '"name":"Total","value":'+str(CURRENT_CANONICAL_COUNTS['total']),
                 '../../ops/CURRENT_UNITARY_STATE.json',
             ],
             ['The 159 IDs', 'data-registry-stat="TOTAL">159', '159 canonical identities'],
@@ -396,7 +391,7 @@ def main() -> int:
     print(" - specialist status: LIVE_VERIFIED")
     print(" - operational repository/deployment state remains separate")
     print(" - dated control-plane identity denominator: 336 / 157 / 83 / 11 / 42 / 43")
-    print(" - current canonical identity denominator: 343 / 162 / 83 / 11 / 44 / 43")
+    print(" - current canonical identity denominator:", json.dumps(CURRENT_CANONICAL_COUNTS, sort_keys=True))
     print(" - latest live-verified identity snapshot: 204 / 87 / 71 / 10 / 18 / 18")
     print(" - promoted 26-Aug unitary snapshot remains 194 / 86 / 66 / 10 / 15 / 17")
     print(f" - repository latest material date: {repository_latest}")

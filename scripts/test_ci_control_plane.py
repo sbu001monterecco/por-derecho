@@ -116,4 +116,35 @@ class PublicationTests(unittest.TestCase):
     def test_machine_schema_matches_validator(self):
         errors=[];publication.validate_publication_contract(errors);self.assertEqual(errors,[])
 
+
+class HistoricalSnapshotTests(unittest.TestCase):
+    def setUp(self):
+        import subprocess
+        self.temp=tempfile.TemporaryDirectory();self.addCleanup(self.temp.cleanup)
+        self.root=Path(self.temp.name)
+        def git(*args):
+            return subprocess.check_output(['git',*args],cwd=self.root,stderr=subprocess.DEVNULL,text=True).strip()
+        self.git=git
+        git('init','-q');git('config','user.name','CI fixture');git('config','user.email','ci@example.invalid')
+        (self.root/'record.txt').write_text('historic bytes')
+        self.manifest={'transitions':[{'resource':'record.txt','candidate_sha256':hashlib.sha256(b'historic bytes').hexdigest()}],'candidate_delta_file_count':1}
+        (self.root/'snapshot.json').write_text(json.dumps(self.manifest))
+        git('add','.');git('commit','-qm','historical reviewed release');revision=git('rev-parse','HEAD')
+        (self.root/'handoff.json').write_text(json.dumps({'production_release':{'reviewed_head_sha':revision,'merge_sha':revision}}))
+        (self.root/'record.txt').write_text('legitimate later bytes')
+        git('add','.');git('commit','-qm','later reviewed change')
+    def check(self):
+        from historical_transition_integrity import historical_transition_bytes_match
+        return historical_transition_bytes_match(self.root,'snapshot.json','handoff.json')
+    def test_later_changes_do_not_rewrite_history(self):
+        self.assertTrue(self.check())
+        self.assertEqual((self.root/'record.txt').read_text(),'legitimate later bytes')
+    def test_tampered_snapshot_fails(self):
+        self.manifest['transitions'][0]['candidate_sha256']='0'*64
+        (self.root/'snapshot.json').write_text(json.dumps(self.manifest))
+        self.assertFalse(self.check())
+    def test_unresolvable_historical_source_fails(self):
+        (self.root/'handoff.json').write_text(json.dumps({'production_release':{'reviewed_head_sha':'0'*40,'merge_sha':'0'*40}}))
+        self.assertFalse(self.check())
+
 if __name__=='__main__':unittest.main()

@@ -48,7 +48,8 @@ checks = {
 }
 
 for rel, needles in checks.items():
-    text = (ROOT / rel).read_text(encoding="utf-8")
+    from loader_graph import reachable_loader_text
+    text = reachable_loader_text(root=ROOT) if rel == "assets/site.js" else (ROOT / rel).read_text(encoding="utf-8")
     for needle in needles:
         assert needle in text, f"{needle!r} missing from {rel}"
 

@@ -60,7 +60,10 @@ jobs:
           from pathlib import Path
 
           overlay = Path('assets/concurso36-caret-incident-overlay-20260829.js').read_text(encoding='utf-8')
-          site = Path('assets/site.js').read_text(encoding='utf-8')
+          import sys
+          sys.path.insert(0, str(Path('scripts').resolve()))
+          from loader_graph import reachable_loader_text
+          site = reachable_loader_text()
           required_overlay = (
               "[data-c36-court-record]",
               ".timeline .incident",
