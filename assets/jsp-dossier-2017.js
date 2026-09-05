@@ -63,3 +63,14 @@
   const target=decodeURIComponent(location.hash.slice(1));if(target&&(/^(PD-SP-|official-notice-capture|jsp-evidence-)/.test(target))){const n=document.getElementById(target);if(n)n.scrollIntoView();}
  })().catch(error=>{status.textContent=en?'The registry table could not be loaded. The static dossier remains readable; use the linked canonical JSON records.':'No se ha podido cargar la tabla registral. El dossier estático sigue disponible; consulte los JSON canónicos enlazados.';status.setAttribute('role','alert');console.error('JSP dossier:',error.message);});
 })();
+
+// PD-JSP-INCIDENT-SUBREGISTER-20260905: additive reciprocal discovery only.
+(() => {
+ const host=document.querySelector('.jsp-dossier header .actions');
+ if(!host||document.getElementById('jsp-incident-register-link'))return;
+ const en=document.documentElement.lang==='en';
+ const a=document.createElement('a');a.id='jsp-incident-register-link';a.className='button';
+ a.href=en?'incident-register/':'registro-incidente/';
+ a.textContent=en?'Incident register and complete document digest':'Registro del incidente y compendio documental completo';
+ host.append(a);
+})();
