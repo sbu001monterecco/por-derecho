@@ -1,110 +1,15 @@
-name: MASTER MYND current-main reconciliation preparation
+name: MASTER MYND current-main reconciliation receipt
 on:
-  push:
-    branches: ['worker/master-mynd-site-address-20260905']
-    paths: ['.github/workflows/master-mynd-current-main-reconciliation.yml']
+  workflow_dispatch:
 permissions:
-  contents: write
+  contents: read
 jobs:
-  reconcile:
-    if: startsWith(github.event.head_commit.message, 'Prepare current-main reconciliation')
+  receipt:
     runs-on: ubuntu-latest
-    timeout-minutes: 12
+    timeout-minutes: 2
     steps:
-      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
-        with:
-          ref: ${{ github.sha }}
-          fetch-depth: 0
-      - name: Reconcile and validate exact sources without publishing main
+      - name: Preserved three-way source history
         run: |
-          python3 -m pip install --quiet beautifulsoup4 pillow
-          python3 - <<'PY'
-          from pathlib import Path
-          import subprocess,os,re,json,hashlib
-          def git(*args,check=True,cwd=None):return subprocess.run(['git',*args],check=check,cwd=cwd,text=True,stdout=subprocess.PIPE,stderr=subprocess.PIPE)
-          base='529d90898b7172decf46323d6bd58fbc69fb560c';main='3af37e234be2454b2d6bf583a8d8895ccaa2440f';ours=os.environ['GITHUB_SHA']
-          git('fetch','origin','main');assert git('rev-parse','origin/main').stdout.strip()==main,'Main advanced; stop before source change'
-          def read(ref,path):return subprocess.check_output(['git','show',ref+':'+path])
-          def changes(ref):return set(git('diff','--name-only',base,ref).stdout.splitlines())
-          own=changes(ours);incoming=changes(main);common=own&incoming
-          git('config','user.name','Por Derecho current-main reconciliation');git('config','user.email','noreply@users.noreply.github.com')
-          merge=git('merge','--no-commit','--no-ff',main,check=False);assert merge.returncode in [0,1],merge.stderr
-          conflicts=set(git('diff','--name-only','--diff-filter=U').stdout.splitlines());resolved=[]
-          for name in sorted(common):
-              if name.startswith(('en/','es/')) and name.endswith('/index.html'):
-                  a=read(base,name).decode();o=read(ours,name).decode();n=read(main,name).decode()
-                  marker='<section class="section master-supplement" id="sun-park-canonical-site">'
-                  matches=list(re.finditer(re.escape(marker)+r'.*?</section>\n',o,re.S));assert len(matches)==1,('unexpected common reader edit',name)
-                  block=matches[0][0];assert o.replace(block,'',1)==a,('more than approved additive section',name)
-                  assert n.count('</main>')==1 and marker not in n
-                  combined=n.replace('</main>',block+'</main>',1);assert combined.replace(block,'',1)==n
-                  Path(name).write_text(combined);git('add','--',name);resolved.append({'path':name,'method':'exact current-main plus exact approved final discovery section'})
-          for name in ['scripts/validate_alberto_meeting_point_first_hop_caret.py','scripts/orion_architecture_clarification_20260905.py','scripts/source_observation_contracts.py','scripts/test_source_observation_contracts.py']:
-              assert name in common;Path(name).write_bytes(read(main,name));git('add','--',name);resolved.append({'path':name,'method':'exact published current-main source control'})
-          name='scripts/check_release_acceptance.py';text=read(main,name).decode()
-          assert text.count('    results=[]')==1 and 'source-observation-tests' in text and 'master-mynd-projection-tests' not in text
-          line="    checks.append(('master-mynd-projection-tests',[sys.executable,'-m','unittest','discover','-s','scripts','-p','test_master_mynd_projection_contract.py','-v']))\n"
-          Path(name).write_text(text.replace('    results=[]',line+'    results=[]',1));git('add','--',name)
-          assert not git('diff','--name-only','--diff-filter=U').stdout.strip(),'Unresolved merge conflict'
-          workflow='.github/workflows/master-mynd-current-main-reconciliation.yml'
-          Path(workflow).write_text('name: MASTER MYND current-main reconciliation receipt\non:\n  workflow_dispatch:\npermissions:\n  contents: read\njobs:\n  receipt:\n    runs-on: ubuntu-latest\n    timeout-minutes: 2\n    steps:\n      - name: Preserved three-way source history\n        run: |\n          echo "This preparation is retired. No content writes, merge, download or deployment occur here."\n          echo "The CaixaBank current-main source, MASTER MYND reader and shared discovery sections were reconciled without dropping either source."\n          echo "Actual final acceptance, Pages and live readback belong to PR1473 and Control Tower1428."\n')
-          git('add','--',workflow)
-          assert not git('diff','--name-only','--diff-filter=D',main).stdout.strip()
-          for name in incoming-own:assert Path(name).read_bytes()==read(main,name),('lost new-main source',name)
-          for name in own-incoming:
-              if name!=workflow:assert Path(name).read_bytes()==read(ours,name),('changed reviewed MASTER MYND source',name)
-          for name in ['en/acosta-matos-family/index.html','es/acosta-matos-familia/index.html','en/sun-park-mynd-yaiza/index.html','es/sun-park-mynd-yaiza/index.html','assets/master-mynd-acosta-matos-architect.webp','assets/acosta-matos-family-hotel-plans.jpg']:
-              assert Path(name).read_bytes()==read(ours,name)
-          git('commit','-m','Validated source-preserving reconciliation of CaixaBank and MASTER MYND')
-          out=Path('/tmp/mm-reconciled');out.mkdir()
-          receipt={'base':base,'main':main,'worker':ours,'original_conflicts':sorted(conflicts),'resolved':resolved,'all_disjoint_sources_byte_preserved':True,'all_four_master_pages_and_two_images_byte_preserved':True,'main_tree':git('rev-parse',main+'^{tree}').stdout.strip(),'validated_tree':git('rev-parse','HEAD^{tree}').stdout.strip()}
-          (out/'reconciliation.json').write_text(json.dumps(receipt,indent=2));(out/'diff.patch').write_text(git('diff',main,'HEAD').stdout)
-          PY
-          python3 scripts/validate_master_mynd.py
-          python3 scripts/validate_operational_identity_registry.py
-          python3 scripts/reconcile_identity_registry_projections.py --check
-          python3 scripts/validate_satire_publication_governance.py
-          python3 -m unittest discover -s scripts -p test_source_observation_contracts.py -v
-          python3 -m unittest discover -s scripts -p test_master_mynd_projection_contract.py -v
-          python3 scripts/validate_alberto_meeting_point_first_hop_caret.py
-          python3 scripts/orion_architecture_clarification_20260905.py --check
-          test -z "$(git status --porcelain)"
-      - name: Transfer only five newly combined non-workflow blobs by normal worker Git commit
-        run: |
-          python3 - <<'PY'
-          from pathlib import Path
-          import subprocess,json,shutil
-          out=Path('/tmp/mm-reconciled');receipt=json.loads((out/'reconciliation.json').read_text());ours=receipt['worker'];main=receipt['main']
-          def git(*args,cwd=None):return subprocess.check_output(['git',*args],cwd=cwd,text=True).strip()
-          assert git('ls-remote','origin','refs/heads/main').split()[0]==main,'Main advanced'
-          assert git('ls-remote','origin','refs/heads/worker/master-mynd-site-address-20260905').split()[0]==ours,'Worker advanced'
-          staging=Path('/tmp/mm-stage');git('worktree','add','--detach',str(staging),ours)
-          entries=[];new_paths=[]
-          for path in git('diff','--name-only',main,'HEAD').splitlines():
-              mode,kind,sha,actual=git('ls-tree','HEAD','--',path).replace('\t',' ',1).split(' ',3);assert kind=='blob' and actual==path
-              entry={'path':path,'mode':mode,'type':'blob','sha':sha};exists=False
-              for ref in [main,ours]:
-                  found=subprocess.run(['git','rev-parse',ref+':'+path],capture_output=True,text=True)
-                  if found.returncode==0 and found.stdout.strip()==sha:exists=True;break
-              if not exists and path.startswith('.github/'):
-                  assert path=='.github/workflows/master-mynd-current-main-reconciliation.yml'
-                  entry.pop('sha');entry['content']=Path(path).read_text()
-              elif not exists:
-                  assert path in ['en/acosta-matos-perimeter/index.html','en/ric-private-equity-sun-park/index.html','es/acosta-matos-perimetro/index.html','es/ric-private-equity-sun-park/index.html','scripts/check_release_acceptance.py'],path
-                  dest=staging/path;dest.parent.mkdir(parents=True,exist_ok=True);shutil.copyfile(path,dest);new_paths.append(path)
-              entries.append(entry)
-          assert len(new_paths)==5 and len(entries)==49
-          git('add','--',*new_paths,cwd=staging)
-          assert set(git('diff','--cached','--name-only',cwd=staging).splitlines())==set(new_paths)
-          git('commit','-m','Preserve five validated combined source blobs for the connector-owned current-main reconciliation',cwd=staging)
-          staged=git('rev-parse','HEAD',cwd=staging)
-          git('push','origin','HEAD:refs/heads/worker/master-mynd-site-address-20260905',cwd=staging)
-          receipt.update({'normal_transport_commit':staged,'transport_paths':new_paths,'tree_elements':entries,'connector_final_tree_pending':True,'main_not_modified':True})
-          (out/'reconciliation.json').write_text(json.dumps(receipt,ensure_ascii=False,indent=2));print(json.dumps(receipt,ensure_ascii=False,indent=2))
-          PY
-      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
-        if: always()
-        with:
-          name: master-mynd-current-main-reconciliation
-          path: /tmp/mm-reconciled
-          if-no-files-found: ignore
+          echo "This preparation is retired. No content writes, merge, download or deployment occur here."
+          echo "The CaixaBank current-main source, MASTER MYND reader and shared discovery sections were reconciled without dropping either source."
+          echo "Actual final acceptance, Pages and live readback belong to PR1473 and Control Tower1428."

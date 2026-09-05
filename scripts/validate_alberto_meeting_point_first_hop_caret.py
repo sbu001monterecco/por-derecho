@@ -174,11 +174,13 @@ for surface, route in expected_routes.items():
     except (TypeError, ValueError):
         continue
     parser = MainSurface()
-    current_parser = MainSurface()
-    current_parser.feed(path.read_text(encoding="utf-8"))
-    check(not current_parser.inline_identity_markup, f"uncontrolled current inline caret/identity markup on {route}")
-    check("^" not in normalize(" ".join(current_parser.parts)), f"uncontrolled current inline caret character on {route}")
     from source_observation_contracts import historical_surface
+    current = MainSurface()
+    current.feed(path.read_text(encoding="utf-8"))
+    current_text = normalize(" ".join(current.parts))
+    check(bool(current_text), f"empty current source route {route}")
+    check(not current.inline_identity_markup, f"uncontrolled current inline caret/identity markup on {route}")
+    check("^" not in current_text, f"uncontrolled current inline caret character on {route}")
     parser.feed(historical_surface(path))
     text = normalize(" ".join(parser.parts))
     surface_text[surface] = text

@@ -21,19 +21,19 @@
     ricpe: isEnglish ? `${prefix}en/ric-private-equity-sun-park/` : `${prefix}es/ric-private-equity-sun-park/`,
     controls: isEnglish ? `${prefix}en/ricpe-documentary-accountability/` : `${prefix}es/ricpe-responsabilidad-documental/`
   };
-  const DEFENCE = 'https://1drv.ms/b/c/bdf43392f576e62f/IQDp2mBSGL5GQ5cNBhcEiVKrAcn8t1WXaYOaZCDghdJjo8Q';
+  const DEFENCE = '/por-derecho/assets/evidence/caixabank-valencia-publica-20260905/caixabank-contestacion-ene2024-publica-20260905.pdf';
 
   const sources = isEnglish ? [
-    ['CaixaBank defence · 47 pages','abbaf13c655058635fbd37395ad2e8699c1c91918b6ef75c8a07b90b9b97b73b','PUBLIC RAW COPY',DEFENCE,'Full filed defence; controls any summary.'],
-    ['Trial diligence · 6 Nov 2025','944ac006d360e37907c5f056821238ee6975c9f85a4779b30f84e59ba9952c6b','PUBLIC REDACTED IMAGES',routes.trial,'Public derivative removes unnecessary third-party verification/personal elements.'],
+    ['CaixaBank defence · 47 pages','abbaf13c655058635fbd37395ad2e8699c1c91918b6ef75c8a07b90b9b97b73b','PUBLIC REDACTED COPY',DEFENCE,'Redacted reading copy of the filed defence. The adjacent hash identifies the privately retained source, not this derivative.'],
+    ['Trial diligence · 6 Nov 2025','944ac006d360e37907c5f056821238ee6975c9f85a4779b30f84e59ba9952c6b','PUBLIC REDACTED IMAGES · SOURCE VARIANT CHECK',routes.trial,'Public derivative removes unnecessary third-party verification/personal elements.'],
     ['RICPE certification · 20 Jul 2021','7c746d998780775542a5fe5265f02622f42b290918003f03ee20c8f367759bf8','SOURCE REGISTERED',routes.ricpe,'262-property breakdown; 54 CAM; wider acquisition conditional; no LOI; complete DD not started.'],
     ['CAM filing · 21 Jul 2021','76f5ba3210b9a78d641c318f60d214025c6231b99fe77734933f90da6ed3c8b9','SOURCE REGISTERED',routes.ricpe,'CAM says it never claimed sole ownership and owned only 54 units at that date.'],
     ['RICPE audited accounts · 2023','91d8999df59e96a08cbd3e2d97226f410d9514ab08011f4e24cbdfcc546be7c9','SOURCE REGISTERED',routes.controls,'Later MYND financing and documented formal related-party conflict process.'],
     ['RICPE ethics-channel closure · 27 Aug 2026','db9979715cac4aeb8ded81a998227cfd894144dcd0a50fe81d4b1369904c9bb4','CONTROLLED DERIVATIVE',routes.ricpe,'Raw certificate contains personal contact/system data; public site publishes the operative decision and evidentiary status, not unnecessary personal data.'],
     ['Control 21 consolidated filing · 9 Jul 2026','d13ddbc3c55c0d7f4753b25e0444275ec5bf1b21e0b378fcfd6315550ba78f09','CONTROLLED DERIVATIVE',routes.controls,'Raw filing contains personal identification data; the Uría/PwC/RICPE production request is published as a controlled proposition.']
   ] : [
-    ['Contestación CaixaBank · 47 páginas','abbaf13c655058635fbd37395ad2e8699c1c91918b6ef75c8a07b90b9b97b73b','COPIA ÍNTEGRA PÚBLICA',DEFENCE,'Escrito presentado íntegro; prevalece sobre cualquier resumen.'],
-    ['Diligencia de señalamiento · 6 nov 2025','944ac006d360e37907c5f056821238ee6975c9f85a4779b30f84e59ba9952c6b','IMÁGENES PÚBLICAS REDACCIONADAS',routes.trial,'La derivada pública elimina elementos personales/de verificación de terceros no necesarios.'],
+    ['Contestación CaixaBank · 47 páginas','abbaf13c655058635fbd37395ad2e8699c1c91918b6ef75c8a07b90b9b97b73b','COPIA PÚBLICA DISOCIADA',DEFENCE,'Copia pública disociada de la contestación. El hash contiguo identifica la fuente conservada, no esta derivada.'],
+    ['Diligencia de señalamiento · 6 nov 2025','944ac006d360e37907c5f056821238ee6975c9f85a4779b30f84e59ba9952c6b','IMÁGENES PÚBLICAS DISOCIADAS · VARIANTES REGISTRADAS',routes.trial,'La derivada pública elimina elementos personales/de verificación de terceros no necesarios.'],
     ['Certificación RICPE · 20 jul 2021','7c746d998780775542a5fe5265f02622f42b290918003f03ee20c8f367759bf8','FUENTE REGISTRADA',routes.ricpe,'262 fincas; 54 CAM; adquisición amplia condicionada; sin LOI; DD completa no iniciada.'],
     ['Escrito CAM · 21 jul 2021','76f5ba3210b9a78d641c318f60d214025c6231b99fe77734933f90da6ed3c8b9','FUENTE REGISTRADA',routes.ricpe,'CAM dice que nunca se atribuyó titularidad única y que poseía sólo 54 unidades en esa fecha.'],
     ['Cuentas auditadas RICPE · 2023','91d8999df59e96a08cbd3e2d97226f410d9514ab08011f4e24cbdfcc546be7c9','FUENTE REGISTRADA',routes.controls,'Financiación posterior MYND y proceso formal documentado de conflicto de parte vinculada.'],
