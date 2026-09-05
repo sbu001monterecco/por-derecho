@@ -2,7 +2,7 @@ name: JSP public evidence capture
 on:
   push:
     branches: [worker/jsp-2017-dossier-canonical-20260905]
-    paths: [.github/workflows/jsp-public-evidence-capture.yml]
+    paths: [.github/workflows/jsp-public-evidence-capture.yml, scripts/prepare_jsp_official_image_objects.py]
   workflow_dispatch:
 permissions:
   contents: read
@@ -63,10 +63,16 @@ jobs:
           (out/'capture-manifest.json').write_text(json.dumps(records,indent=2))
           print(json.dumps(records,indent=2))
           PY
+      - name: Prepare lossless evidence image objects without repository writes
+        run: python3 scripts/prepare_jsp_official_image_objects.py
       - uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
         with:
           name: jsp-compact-official-evidence
-          path: /tmp/jsp-evidence
+          path: |
+            /tmp/jsp-evidence
+            /tmp/jsp-official-image-objects
           include-hidden-files: true
           retention-days: 30
           if-no-files-found: error
+      - name: Verify read-only worktree
+        run: test -z "$(git status --porcelain)"
