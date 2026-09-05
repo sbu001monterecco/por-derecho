@@ -1,0 +1,66 @@
+name: Orion notice baseline comparison
+on:
+  push:
+    branches: ['integration/orion-notice-register-20260905']
+    paths: ['.github/workflows/orion-notice-baseline-audit.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+  actions: read
+env:
+  PYTHONDONTWRITEBYTECODE: '1'
+jobs:
+  baseline:
+    if: github.ref == 'refs/heads/integration/orion-notice-register-20260905'
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          fetch-depth: 1
+          persist-credentials: false
+      - name: Read CI evidence and compare base with proposed content
+        env:
+          GH_READ_TOKEN: ${{ github.token }}
+        shell: python
+        run: |
+          import json, os, urllib.request, pathlib, subprocess, tempfile, re, sys
+          base='145dd4e16773989bef1ddac6ea0428a8cca4a1ff'
+          head='f155979cef623fc8192bb59774f2164e0f1e85e3'
+          repo='sbu001monterecco/por-derecho'
+          root=pathlib.Path.cwd()
+          def get(path, raw=False):
+            req=urllib.request.Request('https://api.github.com/repos/'+repo+'/'+path,headers={'Authorization':'Bearer '+os.environ['GH_READ_TOKEN'],'Accept':'application/vnd.github+json','X-GitHub-Api-Version':'2022-11-28'})
+            with urllib.request.urlopen(req,timeout=35) as response: data=response.read()
+            return data.decode('utf-8',errors='replace') if raw else json.loads(data)
+          runs={sha:get('actions/runs?head_sha='+sha+'&per_page=100')['workflow_runs'] for sha in [base,head]}
+          base_by={r['workflow_id']:r for r in reversed(runs[base])}
+          failures=[r for r in runs[head] if r.get('conclusion')=='failure']
+          print('BASE_HEAD_WORKFLOW_COUNTS',len(runs[base]),len(runs[head]))
+          for r in failures:
+            b=base_by.get(r['workflow_id'])
+            print('CHECK_COMPARISON',json.dumps({'name':r['name'],'head_run':r['id'],'head_conclusion':r['conclusion'],'base_run':b and b['id'],'base_conclusion':b and b.get('conclusion')}))
+            jobs=get('actions/runs/'+str(r['id'])+'/jobs?per_page=100')['jobs']
+            for job in jobs:
+              if job.get('conclusion')!='failure':continue
+              print('FAILED_JOB',job['id'],job['name'],json.dumps([s.get('name') for s in job.get('steps',[]) if s.get('conclusion')=='failure']))
+              log=get('actions/jobs/'+str(job['id'])+'/logs',True)
+              useful=[line for line in log.splitlines() if re.search(r'(?i)(fail|error|drift|missing|expected|traceback|python3? .*scripts/)',line) and not re.search(r'(Downloading |Successfully installed|Requirement already|Preparing to unpack)',line)]
+              print('FAILURE_EXCERPT_BEGIN',r['name'])
+              print('\n'.join(useful[-32:])[-10000:])
+              print('FAILURE_EXCERPT_END')
+          # This check is read-only. Compare the exact base and head implementations.
+          baseline=pathlib.Path(tempfile.mkdtemp(prefix='pd-notice-baseline-'))
+          subprocess.run(['git','fetch','--depth=1','origin',base],check=True)
+          subprocess.run(['git','worktree','add','--detach',str(baseline),base],check=True)
+          if (root/'requirements-ci.txt').exists():
+            subprocess.run([sys.executable,'-m','pip','install','--quiet','-r',str(root/'requirements-ci.txt')],check=True)
+          for rel in ['scripts/validate_first_read_display.py']:
+            print('DIRECT_READ_ONLY_BASELINE',rel)
+            for name,where in [('BASE',baseline),('HEAD',root)]:
+              p=where/rel
+              if not p.exists():
+                print(name,'SCRIPT_NOT_PRESENT',rel);continue
+              result=subprocess.run([sys.executable,rel],cwd=where,text=True,stdout=subprocess.PIPE,stderr=subprocess.STDOUT,timeout=120)
+              print(name,'EXIT',result.returncode,'OUTPUT',result.stdout[-14000:])
+          print('BASELINE_COMPARISON_FINISHED_NO_REPOSITORY_WRITES')
