@@ -59,17 +59,25 @@
           "naming_form": "FULL_CANONICAL_CARET_CONFIRMED",
           "identity_state": "CARET_CONFIRMED",
           "caepr_id": "PD-SP-P-0010",
-          "source_refs": ["SRC-BOE-B-2012-22189", "SRC-CUYAS-TEAM-20260902", "PD-AMHP-3P-ID-20260901"],
+          "source_refs": [
+            "SRC-BOE-B-2012-22189",
+            "SRC-CUYAS-TEAM-20260902",
+            "PD-AMHP-3P-ID-20260901"
+          ],
           "factual_role": {
             "label": "Administrador concursal de Luchy Playa Blanca, S.L.U. en el Concurso 36/2012",
             "date_or_period": "nombramiento de 6 de junio de 2012",
-            "source_refs": ["SRC-BOE-B-2012-22189"]
+            "source_refs": [
+              "SRC-BOE-B-2012-22189"
+            ]
           },
           "affiliation": {
             "state": "CURRENT_VERIFIED_ON_DATE",
             "verified_on": "2026-09-02",
             "label": "Cuyás Abogados / perímetro profesional Grant Thornton Canarias",
-            "source_refs": ["SRC-CUYAS-TEAM-20260902"]
+            "source_refs": [
+              "SRC-CUYAS-TEAM-20260902"
+            ]
           },
           "satirical_function": {
             "state": "QUESTION",
@@ -81,16 +89,23 @@
           "naming_form": "FULL_CANONICAL_CARET_CONFIRMED",
           "identity_state": "CARET_CONFIRMED",
           "caepr_id": "PD-SP-P-0161",
-          "source_refs": ["SRC-RSM-SANTELMO-20240703", "PD-AMHP-3P-ID-20260901"],
+          "source_refs": [
+            "SRC-RSM-SANTELMO-20240703",
+            "PD-AMHP-3P-ID-20260901"
+          ],
           "factual_role": {
             "label": "Profesional incorporado con el equipo de SanTelmo al área Tax & Legal de RSM",
             "date_or_period": "julio de 2024",
-            "source_refs": ["SRC-RSM-SANTELMO-20240703"]
+            "source_refs": [
+              "SRC-RSM-SANTELMO-20240703"
+            ]
           },
           "affiliation": {
             "state": "HISTORICAL_DATED",
             "date_or_period": "SanTelmo antes de julio de 2024; incorporación al área RSM Tax & Legal en julio de 2024",
-            "source_refs": ["SRC-RSM-SANTELMO-20240703"]
+            "source_refs": [
+              "SRC-RSM-SANTELMO-20240703"
+            ]
           },
           "satirical_function": {
             "state": "QUESTION",
@@ -102,17 +117,24 @@
           "naming_form": "FULL_CANONICAL_CARET_CONFIRMED",
           "identity_state": "CARET_CONFIRMED",
           "caepr_id": "PD-SP-P-0162",
-          "source_refs": ["SRC-RIC-CAPITAL-ENRIQUE-GUERRA-20260902", "PD-AMHP-3P-ID-20260901"],
+          "source_refs": [
+            "SRC-RIC-CAPITAL-ENRIQUE-GUERRA-20260902",
+            "PD-AMHP-3P-ID-20260901"
+          ],
           "factual_role": {
             "label": "Director general, área legal-fiscal y relación con inversores según perfil profesional de RIC Capital",
             "date_or_period": "perfil público comprobado el 2 de septiembre de 2026",
-            "source_refs": ["SRC-RIC-CAPITAL-ENRIQUE-GUERRA-20260902"]
+            "source_refs": [
+              "SRC-RIC-CAPITAL-ENRIQUE-GUERRA-20260902"
+            ]
           },
           "affiliation": {
             "state": "CURRENT_VERIFIED_ON_DATE",
             "verified_on": "2026-09-02",
             "label": "RIC Capital / RIC Private Equity",
-            "source_refs": ["SRC-RIC-CAPITAL-ENRIQUE-GUERRA-20260902"]
+            "source_refs": [
+              "SRC-RIC-CAPITAL-ENRIQUE-GUERRA-20260902"
+            ]
           },
           "satirical_function": {
             "state": "QUESTION",
@@ -155,6 +177,308 @@
         "CORRECTION_REPLY_TAKEDOWN_AND_NARROW_REVERT_PATH": "PASS_ADDITIVE_CORRECTION_AND_NORMAL_REVERT_PR"
       },
       "approval_status": "PUBLIC_NAMED_PERSON_VARIANTS_USER_APPROVED_2026_09_02"
+    },
+    {
+      "publication_id": "PD-SAT-MASTER-MYND-0001",
+      "family_id": "PD-DMA-FAM-MASTER-MYND-001",
+      "title": "MASTER MYND — attributed accounts, professional record and original photograph",
+      "logical_assets": [
+        "PD-DMA-0005"
+      ],
+      "public_surfaces": [
+        {
+          "path": "es/acosta-matos-familia/index.html",
+          "language": "es",
+          "required_disclosure": "CARICATURA / REPRESENTACIÓN SATÍRICA — NO ES UN ANUNCIO REAL"
+        },
+        {
+          "path": "en/acosta-matos-family/index.html",
+          "language": "en",
+          "required_disclosure": "SATIRICAL / CARICATURE REPRESENTATION — NOT A REAL ADVERTISEMENT"
+        }
+      ],
+      "named_people": [
+        {
+          "display_name": "Gil Marer",
+          "naming_form": "FULL_CANONICAL_CARET_CONFIRMED",
+          "identity_state": "CARET_CONFIRMED",
+          "caepr_id": "PD-SP-P-0001",
+          "source_refs": [
+            "assets/data/matter-identity-registry-v1.people.json",
+            "SUN_PARK_MYND_YAIZA_SITE_ADDRESS_LOCK_05SEP2026.md"
+          ],
+          "factual_role": {
+            "label": "Author and reporting person; own allegation, not independent adjudication",
+            "date_or_period": "Source-specific historical periods stated in the retained dossier; reviewed for this edition5-Sep-2026",
+            "source_refs": [
+              "es/acosta-matos-familia/index.html",
+              "en/acosta-matos-family/index.html",
+              "SUN_PARK_MYND_YAIZA_SITE_ADDRESS_LOCK_05SEP2026.md"
+            ]
+          },
+          "affiliation": {
+            "state": "HISTORICAL_DATED",
+            "date_or_period": "Historical and source-specific; this entry makes no current-affiliation claim"
+          },
+          "satirical_function": {
+            "state": "NONE",
+            "label": "No factual guilt, endorsement or shared-liability label assigned by this composition."
+          }
+        },
+        {
+          "display_name": "Patricia Domínguez",
+          "naming_form": "FULL_CANONICAL_CARET_CONFIRMED",
+          "identity_state": "CARET_CONFIRMED",
+          "caepr_id": "PD-SP-P-0002",
+          "source_refs": [
+            "assets/data/matter-identity-registry-v1.people.json",
+            "SUN_PARK_MYND_YAIZA_SITE_ADDRESS_LOCK_05SEP2026.md"
+          ],
+          "factual_role": {
+            "label": "Previously attributed witness/recollection source; scope and adoption limits retained",
+            "date_or_period": "Source-specific historical periods stated in the retained dossier; reviewed for this edition5-Sep-2026",
+            "source_refs": [
+              "es/acosta-matos-familia/index.html",
+              "en/acosta-matos-family/index.html",
+              "SUN_PARK_MYND_YAIZA_SITE_ADDRESS_LOCK_05SEP2026.md"
+            ]
+          },
+          "affiliation": {
+            "state": "HISTORICAL_DATED",
+            "date_or_period": "Historical and source-specific; this entry makes no current-affiliation claim"
+          },
+          "satirical_function": {
+            "state": "NONE",
+            "label": "No factual guilt, endorsement or shared-liability label assigned by this composition."
+          }
+        },
+        {
+          "display_name": "José Daniel Acosta Matos",
+          "naming_form": "FULL_CANONICAL_CARET_CONFIRMED",
+          "identity_state": "CARET_CONFIRMED",
+          "caepr_id": "PD-SP-P-0011",
+          "source_refs": [
+            "assets/data/matter-identity-registry-v1.people.json",
+            "SUN_PARK_MYND_YAIZA_SITE_ADDRESS_LOCK_05SEP2026.md"
+          ],
+          "factual_role": {
+            "label": "Execution-project author in25-Feb-2022visado and subject of attributed2018accounts",
+            "date_or_period": "Source-specific historical periods stated in the retained dossier; reviewed for this edition5-Sep-2026",
+            "source_refs": [
+              "es/acosta-matos-familia/index.html",
+              "en/acosta-matos-family/index.html",
+              "SUN_PARK_MYND_YAIZA_SITE_ADDRESS_LOCK_05SEP2026.md"
+            ]
+          },
+          "affiliation": {
+            "state": "HISTORICAL_DATED",
+            "date_or_period": "Historical and source-specific; this entry makes no current-affiliation claim"
+          },
+          "satirical_function": {
+            "state": "QUESTION",
+            "label": "The Architect? is an editorial question, separate from the documented architectural role."
+          }
+        },
+        {
+          "display_name": "Laura Patricia Acosta Matos",
+          "naming_form": "FULL_CANONICAL_CARET_CONFIRMED",
+          "identity_state": "CARET_CONFIRMED",
+          "caepr_id": "PD-SP-P-0012",
+          "source_refs": [
+            "assets/data/matter-identity-registry-v1.people.json",
+            "SUN_PARK_MYND_YAIZA_SITE_ADDRESS_LOCK_05SEP2026.md"
+          ],
+          "factual_role": {
+            "label": "Subject of attributed judge/AC access account and mediated2025counter-position",
+            "date_or_period": "Source-specific historical periods stated in the retained dossier; reviewed for this edition5-Sep-2026",
+            "source_refs": [
+              "es/acosta-matos-familia/index.html",
+              "en/acosta-matos-family/index.html",
+              "SUN_PARK_MYND_YAIZA_SITE_ADDRESS_LOCK_05SEP2026.md"
+            ]
+          },
+          "affiliation": {
+            "state": "HISTORICAL_DATED",
+            "date_or_period": "Historical and source-specific; this entry makes no current-affiliation claim"
+          },
+          "satirical_function": {
+            "state": "NONE",
+            "label": "No factual guilt, endorsement or shared-liability label assigned by this composition."
+          }
+        },
+        {
+          "display_name": "Gerardo Nicanor Acosta Armas",
+          "naming_form": "FULL_CANONICAL_CARET_CONFIRMED",
+          "identity_state": "CARET_CONFIRMED",
+          "caepr_id": "PD-SP-P-0013",
+          "source_refs": [
+            "assets/data/matter-identity-registry-v1.people.json",
+            "SUN_PARK_MYND_YAIZA_SITE_ADDRESS_LOCK_05SEP2026.md"
+          ],
+          "factual_role": {
+            "label": "Founder in retained historical family/governance chronology; no inherited liability",
+            "date_or_period": "Source-specific historical periods stated in the retained dossier; reviewed for this edition5-Sep-2026",
+            "source_refs": [
+              "es/acosta-matos-familia/index.html",
+              "en/acosta-matos-family/index.html",
+              "SUN_PARK_MYND_YAIZA_SITE_ADDRESS_LOCK_05SEP2026.md"
+            ]
+          },
+          "affiliation": {
+            "state": "HISTORICAL_DATED",
+            "date_or_period": "Historical and source-specific; this entry makes no current-affiliation claim"
+          },
+          "satirical_function": {
+            "state": "NONE",
+            "label": "No factual guilt, endorsement or shared-liability label assigned by this composition."
+          }
+        },
+        {
+          "display_name": "Fernando Aguiar Acosta",
+          "naming_form": "FULL_CANONICAL_CARET_CONFIRMED",
+          "identity_state": "CARET_CONFIRMED",
+          "caepr_id": "PD-SP-P-0088",
+          "source_refs": [
+            "assets/data/matter-identity-registry-v1.people.json",
+            "SUN_PARK_MYND_YAIZA_SITE_ADDRESS_LOCK_05SEP2026.md"
+          ],
+          "factual_role": {
+            "label": "Existing proposed-witness and professional source lane; parentage/role boundaries retained",
+            "date_or_period": "Source-specific historical periods stated in the retained dossier; reviewed for this edition5-Sep-2026",
+            "source_refs": [
+              "es/acosta-matos-familia/index.html",
+              "en/acosta-matos-family/index.html",
+              "SUN_PARK_MYND_YAIZA_SITE_ADDRESS_LOCK_05SEP2026.md"
+            ]
+          },
+          "affiliation": {
+            "state": "HISTORICAL_DATED",
+            "date_or_period": "Historical and source-specific; this entry makes no current-affiliation claim"
+          },
+          "satirical_function": {
+            "state": "NONE",
+            "label": "No factual guilt, endorsement or shared-liability label assigned by this composition."
+          }
+        },
+        {
+          "display_name": "Javier Acosta Matos",
+          "naming_form": "FULL_CANONICAL_CARET_CONFIRMED",
+          "identity_state": "CARET_CONFIRMED",
+          "caepr_id": "PD-SP-P-0093",
+          "source_refs": [
+            "assets/data/matter-identity-registry-v1.people.json",
+            "SUN_PARK_MYND_YAIZA_SITE_ADDRESS_LOCK_05SEP2026.md"
+          ],
+          "factual_role": {
+            "label": "Historical family/company governance role in retained sourced section; no shared liability",
+            "date_or_period": "Source-specific historical periods stated in the retained dossier; reviewed for this edition5-Sep-2026",
+            "source_refs": [
+              "es/acosta-matos-familia/index.html",
+              "en/acosta-matos-family/index.html",
+              "SUN_PARK_MYND_YAIZA_SITE_ADDRESS_LOCK_05SEP2026.md"
+            ]
+          },
+          "affiliation": {
+            "state": "HISTORICAL_DATED",
+            "date_or_period": "Historical and source-specific; this entry makes no current-affiliation claim"
+          },
+          "satirical_function": {
+            "state": "NONE",
+            "label": "No factual guilt, endorsement or shared-liability label assigned by this composition."
+          }
+        },
+        {
+          "display_name": "Gerardo Zacarías Acosta Matos",
+          "naming_form": "FULL_CANONICAL_CARET_CONFIRMED",
+          "identity_state": "CARET_CONFIRMED",
+          "caepr_id": "PD-SP-P-0094",
+          "source_refs": [
+            "assets/data/matter-identity-registry-v1.people.json",
+            "SUN_PARK_MYND_YAIZA_SITE_ADDRESS_LOCK_05SEP2026.md"
+          ],
+          "factual_role": {
+            "label": "Historical family/company governance role in retained sourced section; distinct from father",
+            "date_or_period": "Source-specific historical periods stated in the retained dossier; reviewed for this edition5-Sep-2026",
+            "source_refs": [
+              "es/acosta-matos-familia/index.html",
+              "en/acosta-matos-family/index.html",
+              "SUN_PARK_MYND_YAIZA_SITE_ADDRESS_LOCK_05SEP2026.md"
+            ]
+          },
+          "affiliation": {
+            "state": "HISTORICAL_DATED",
+            "date_or_period": "Historical and source-specific; this entry makes no current-affiliation claim"
+          },
+          "satirical_function": {
+            "state": "NONE",
+            "label": "No factual guilt, endorsement or shared-liability label assigned by this composition."
+          }
+        },
+        {
+          "display_name": "Laura Aguiar Acosta",
+          "naming_form": "FULL_CANONICAL_CARET_CONFIRMED",
+          "identity_state": "CARET_CONFIRMED",
+          "caepr_id": "PD-SP-P-0095",
+          "source_refs": [
+            "assets/data/matter-identity-registry-v1.people.json",
+            "SUN_PARK_MYND_YAIZA_SITE_ADDRESS_LOCK_05SEP2026.md"
+          ],
+          "factual_role": {
+            "label": "Existing proposed-witness and professional source lane; parentage/role boundaries retained",
+            "date_or_period": "Source-specific historical periods stated in the retained dossier; reviewed for this edition5-Sep-2026",
+            "source_refs": [
+              "es/acosta-matos-familia/index.html",
+              "en/acosta-matos-family/index.html",
+              "SUN_PARK_MYND_YAIZA_SITE_ADDRESS_LOCK_05SEP2026.md"
+            ]
+          },
+          "affiliation": {
+            "state": "HISTORICAL_DATED",
+            "date_or_period": "Historical and source-specific; this entry makes no current-affiliation claim"
+          },
+          "satirical_function": {
+            "state": "NONE",
+            "label": "No factual guilt, endorsement or shared-liability label assigned by this composition."
+          }
+        }
+      ],
+      "named_people_boundary": "Names use their existing immutable registry identities and previously documented or explicitly attributed capacities. No person is identified from facial features. Family connection and editorial inclusion do not transfer conduct or responsibility.",
+      "factual_role_and_satirical_function_separated": true,
+      "evidence_states_present": [
+        "DOCUMENTED_FACT",
+        "SOURCE_LITERAL",
+        "ATTRIBUTED_ALLEGATION",
+        "PROJECT_SIDE_INTERPRETATION",
+        "INVESTIGATIVE_HYPOTHESIS",
+        "RHETORICAL_METAPHOR_OR_DOUBLE_MEANING",
+        "CONTRARY_RECORD_OR_LAWFUL_ALTERNATIVE",
+        "OPEN_OR_UNVERIFIED"
+      ],
+      "source_refs": [
+        "SUN_PARK_MYND_YAIZA_SITE_ADDRESS_LOCK_05SEP2026.md",
+        "SRC-MASTER-MYND-APPROVED-DRAFT-20260905",
+        "SRC-EL-ECONOMISTA-PHOTO-20210210",
+        "assets/data/jdam-architecture-documentary-node-v1.json"
+      ],
+      "material_boundaries": [
+        "NO_COMMISSION_PAYMENT_OR_RECIPIENT_PROVEN_FROM_LINE_ITEM_ALONE",
+        "NO_JUDGE_FRIEND_LITERAL_QUOTE_INVENTED",
+        "NO_JUDICIAL_CONFESSION",
+        "NO_FACE_IDENTIFICATION",
+        "AUTHOR_PLAN_IDENTIFICATION_NOT_COMPLETED_EXPERT_MATCH",
+        "IMAGE_AND_CORPORATE_PROXIMITY_NOT_LIABILITY",
+        "NATIVE_EVIDENCE_AND_TITLE_RECONCILIATION_REMAIN_OPEN"
+      ],
+      "opposing_counsel_risk_review": {
+        "HONOUR_REPUTATION_PROFESSIONAL_PRESTIGE": "Serious allegations remain attributed, dated and contradicable; strong language is not a judicial finding. No external legal clearance or zero-risk assertion.",
+        "FALSE_ENDORSEMENT_AUTHORSHIP_QUOTATION_MANDATE_OR_ROLE": "Visible non-advertisement/non-endorsement disclosure; la amiga del Juez is a characterisation, not invented literal speech.",
+        "IMAGE_LIKENESS_PERSONALITY_RIGHTS": "Reuse of explicitly approved editorial derivative and separately sourced original for this public-interest dossier only; no face identification. Image-use legal risk is not represented as eliminated.",
+        "IMPLIED_DISHONESTY_CONFLICT_CORRUPTION_ILLEGALITY_OR_CRIMINALITY": "Commission payment/recipient, contacts, audio authentication, title and plan matching remain unresolved proof questions; individual acts must be proved.",
+        "LOGO_TRADE_DRESS_OR_REAL_ADVERTISING_CONFUSION": "Exact disclosure visible adjacent to hero in both languages; corporate slogan and added question mark are distinguished.",
+        "PERSONAL_DATA_NECESSITY_AND_PROPORTIONALITY": "No private addresses, phone numbers, provider IDs or raw confidential correspondence newly published. Public hotel address is separately governed.",
+        "CORRECTION_REPLY_TAKEDOWN_AND_NARROW_REVERT_PATH": "Right of reply and documented correction retained; normal narrow corrective/revert PR through the single integration lane, not history rewrite."
+      },
+      "approval_status": "USER_EXPRESS_PUBLICATION_AUTHORITY_2026_09_05_EDITORIAL_REVIEW_NOT_EXTERNAL_LEGAL_CLEARANCE"
     }
   ]
 }

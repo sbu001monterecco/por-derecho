@@ -55,6 +55,19 @@
       "publisher": "RIC Capital",
       "claim": "The first-party profile identifies Enrique Guerra Suárez and his published legal-fiscal and investor-relations capacity.",
       "url": "https://ric.capital/enrique-guerra-dptolegal/"
+    },
+    {
+      "id": "SRC-MASTER-MYND-APPROVED-DRAFT-20260905",
+      "source_type": "USER_APPROVED_EDITORIAL_DERIVATIVE",
+      "claim": "Intact original editorial image recovered from the prior approved full English draft; not regenerated.",
+      "control": "SUN_PARK_MYND_YAIZA_SITE_ADDRESS_LOCK_05SEP2026.md"
+    },
+    {
+      "id": "SRC-EL-ECONOMISTA-PHOTO-20210210",
+      "source_type": "ARCHIVED_PUBLIC_ARTICLE_EMBEDDED_IMAGE_BYTE_MATCH",
+      "url": "https://www.eleconomista.es/canarias/noticias/11042470/02/21/El-capital-de-Canarias-calienta-motores-para-el-reseteo-con-aerolinea-y-RIC-para-renovacion-hotelera.html",
+      "reproduction_url": "https://ric.capital/el-capital-de-canarias-calienta-motores-para-el-reseteo-con-aerolinea-y-ric-para-renovacion-hotelera/",
+      "claim": "Article dated10-Feb-2021, preserved capture26-Feb-2021; embedded JPEG is byte-identical to the current canonical photograph. Not a verification of every visible plan or person."
     }
   ],
   "families": [
@@ -64,9 +77,28 @@
       "scope": "Visual family distinguishing hotel sales under management, the manager's own turnover, ownership/equity, management/operation, brand, capital, RIC/RICPE, construction, mandates/advice and media visibility.",
       "current_primary_es": "PD-DMA-0003",
       "current_primary_en": "PD-DMA-0002",
-      "corrected_prior_style_variants": ["PD-DMA-0003", "PD-DMA-0004"],
-      "current_spanish_channel_files": ["PD-DMA-0003-WEB-EMAIL-PNG^", "PD-DMA-0003-LINKEDIN-PNG^"],
+      "corrected_prior_style_variants": [
+        "PD-DMA-0003",
+        "PD-DMA-0004"
+      ],
+      "current_spanish_channel_files": [
+        "PD-DMA-0003-WEB-EMAIL-PNG^",
+        "PD-DMA-0003-LINKEDIN-PNG^"
+      ],
       "mandatory_boundary": "Managed-hotel sales and the management company's own reported turnover are different measures and must not be mechanically added. Platform proximity does not establish common ownership, shared knowledge or shared responsibility."
+    },
+    {
+      "family_id": "PD-DMA-FAM-MASTER-MYND-001",
+      "title": "MASTER MYND — editorial poster and attributed documentary narrative",
+      "scope": "Public-interest satire with explicit documentary/editorial separation; not an advertisement, finding or endorsement.",
+      "current_primary_es": "PD-DMA-0005",
+      "current_primary_en": "PD-DMA-0005",
+      "mandatory_boundary": "The original photograph, author plan identification, attributed accounts and AI-assisted editorial composition are not interchangeable."
+    },
+    {
+      "family_id": "PD-DMA-FAM-AM-PHOTO-001",
+      "title": "Original Acosta Matos corporate photograph — El Economista archive match",
+      "scope": "Original four-person photograph, without face recognition or independent plan-to-photo authentication."
     }
   ],
   "logical_assets": [
@@ -80,7 +112,10 @@
       "satire_compliance_id": "PD-SAT-AMHP-0001",
       "web_file": "PD-DMA-0001^",
       "outreach_png": "PD-DMA-0001-PNG^",
-      "sources": ["SRC-CH-ABOUT-20260901", "SRC-CINCO-DIAS-20260204"]
+      "sources": [
+        "SRC-CH-ABOUT-20260901",
+        "SRC-CINCO-DIAS-20260204"
+      ]
     },
     {
       "reference": "PD-DMA-0002",
@@ -92,7 +127,10 @@
       "satire_compliance_id": "PD-SAT-AMHP-0001",
       "web_file": "PD-DMA-0002^",
       "outreach_png": "PD-DMA-0002-PNG^",
-      "sources": ["SRC-CH-ABOUT-20260901", "SRC-CINCO-DIAS-20260204"]
+      "sources": [
+        "SRC-CH-ABOUT-20260901",
+        "SRC-CINCO-DIAS-20260204"
+      ]
     },
     {
       "reference": "PD-DMA-0003",
@@ -106,7 +144,15 @@
       "outreach_png": "PD-DMA-0003-WEB-EMAIL-PNG^",
       "social_png": "PD-DMA-0003-LINKEDIN-PNG^",
       "superseded_outreach_png": "PD-DMA-0003-PNG^",
-      "sources": ["SRC-CH-ABOUT-20260901", "SRC-CINCO-DIAS-20260204", "SRC-CH-ROADMAP-20260902", "SRC-BOE-B-2012-22189", "SRC-CUYAS-TEAM-20260902", "SRC-RSM-SANTELMO-20240703", "SRC-RIC-CAPITAL-ENRIQUE-GUERRA-20260902"]
+      "sources": [
+        "SRC-CH-ABOUT-20260901",
+        "SRC-CINCO-DIAS-20260204",
+        "SRC-CH-ROADMAP-20260902",
+        "SRC-BOE-B-2012-22189",
+        "SRC-CUYAS-TEAM-20260902",
+        "SRC-RSM-SANTELMO-20240703",
+        "SRC-RIC-CAPITAL-ENRIQUE-GUERRA-20260902"
+      ]
     },
     {
       "reference": "PD-DMA-0004",
@@ -118,7 +164,36 @@
       "satire_compliance_id": "PD-SAT-AMHP-0001",
       "web_file": "PD-DMA-0004^",
       "outreach_png": "PD-DMA-0004-PNG^",
-      "sources": ["SRC-CH-ABOUT-20260901", "SRC-CINCO-DIAS-20260204"]
+      "sources": [
+        "SRC-CH-ABOUT-20260901",
+        "SRC-CINCO-DIAS-20260204"
+      ]
+    },
+    {
+      "reference": "PD-DMA-0005",
+      "family_id": "PD-DMA-FAM-MASTER-MYND-001",
+      "title": "MASTER MYND · JDAM — THE ARCHITECT?",
+      "language": "en",
+      "edition": "APPROVED_ORIGINAL_RECOVERED",
+      "publication_status": "PUBLIC",
+      "satire_compliance_id": "PD-SAT-MASTER-MYND-0001",
+      "web_file": "PD-DMA-0005-ES-PAGE^",
+      "image_file": "PD-DMA-0005^",
+      "sources": [
+        "SRC-MASTER-MYND-APPROVED-DRAFT-20260905"
+      ]
+    },
+    {
+      "reference": "PD-DMA-0006",
+      "family_id": "PD-DMA-FAM-AM-PHOTO-001",
+      "title": "Original four-person office photograph published by El Economista",
+      "language": "not-applicable",
+      "edition": "CANONICAL_ORIGINAL_REUSED",
+      "publication_status": "PUBLIC",
+      "web_file": "PD-DMA-0006^",
+      "sources": [
+        "SRC-EL-ECONOMISTA-PHOTO-20210210"
+      ]
     }
   ],
   "files": [
@@ -148,7 +223,11 @@
       "sha256": "3958fcd906b53c43f25f469573734cb3cf6851f6b92e9bf116557a094aa3d881",
       "repository_mirror": false,
       "repository_mirror_gap": "Hash-locked original is preserved outside the repository binary mirror; website serves PD-DMA-0001^.",
-      "intended_channels": ["LinkedIn", "email attachment", "archive"]
+      "intended_channels": [
+        "LinkedIn",
+        "email attachment",
+        "archive"
+      ]
     },
     {
       "reference": "PD-DMA-0002^",
@@ -176,7 +255,11 @@
       "sha256": "b0616f945d145080ad3053f5e5c08f3f1b7620d10e8ec24547043c895a6e039f",
       "repository_mirror": false,
       "repository_mirror_gap": "Hash-locked original is preserved outside the repository binary mirror; website serves PD-DMA-0002^.",
-      "intended_channels": ["LinkedIn", "email attachment", "archive"]
+      "intended_channels": [
+        "LinkedIn",
+        "email attachment",
+        "archive"
+      ]
     },
     {
       "reference": "PD-DMA-0003^",
@@ -205,7 +288,10 @@
       "repository_mirror": false,
       "repository_mirror_gap": "Hash-locked original is preserved outside the repository binary mirror; it was attached in error on 1 September 2026 and is not an approved current outreach file.",
       "publication_status": "SUPERSEDED_WRONG_OUTREACH_ATTACHMENT",
-      "replacement_references": ["PD-DMA-0003-WEB-EMAIL-PNG^", "PD-DMA-0003-LINKEDIN-PNG^"]
+      "replacement_references": [
+        "PD-DMA-0003-WEB-EMAIL-PNG^",
+        "PD-DMA-0003-LINKEDIN-PNG^"
+      ]
     },
     {
       "reference": "PD-DMA-0003-PAGE^",
@@ -233,7 +319,12 @@
       "sha256": "2677eb53121bb6d6f39d75b3652c30403d0b1980f69ef10cd31bdca372219165",
       "repository_mirror": true,
       "publication_status": "PUBLIC_CURRENT_APPROVED",
-      "intended_channels": ["website", "email attachment", "email direct reference", "archive"]
+      "intended_channels": [
+        "website",
+        "email attachment",
+        "email direct reference",
+        "archive"
+      ]
     },
     {
       "reference": "PD-DMA-0003-LINKEDIN-PNG^",
@@ -249,7 +340,12 @@
       "sha256": "6d86c54ceb5996ec2b72c00ad4d6fb405029843e34e399b929f622bd80d8f6a2",
       "repository_mirror": true,
       "publication_status": "PUBLIC_CURRENT_APPROVED",
-      "intended_channels": ["LinkedIn", "website", "email reference", "archive"]
+      "intended_channels": [
+        "LinkedIn",
+        "website",
+        "email reference",
+        "archive"
+      ]
     },
     {
       "reference": "PD-DMA-0004^",
@@ -301,13 +397,67 @@
       "sha256": "09da584fc4437d55c732191488d6054d8039ea86a81255577b81cbc12e6393aa",
       "publication_status": "DO_NOT_PUBLISH_UNCHANGED",
       "reason": "Earlier concept may guide visual rhythm but its inherited roster, portraits and named sales-team framing are not approved factual content."
+    },
+    {
+      "reference": "PD-DMA-0005^",
+      "logical_asset": "PD-DMA-0005",
+      "role": "EDITORIAL_IMAGE_NOT_DOCUMENTARY",
+      "repository_path": "assets/master-mynd-acosta-matos-architect.webp",
+      "public_url": "/assets/master-mynd-acosta-matos-architect.webp",
+      "mime": "image/webp",
+      "bytes": 132670,
+      "sha256": "5f4299f9e536064db808bcdcb8e353ad8d382945f27e31509e97d84aabf5cdeb",
+      "repository_mirror": true,
+      "publication_status": "PUBLIC",
+      "width": 1122,
+      "height": 1402
+    },
+    {
+      "reference": "PD-DMA-0006^",
+      "logical_asset": "PD-DMA-0006",
+      "role": "ORIGINAL_CORPORATE_PHOTOGRAPH",
+      "repository_path": "assets/acosta-matos-family-hotel-plans.jpg",
+      "public_url": "/assets/acosta-matos-family-hotel-plans.jpg",
+      "mime": "image/jpeg",
+      "bytes": 41954,
+      "sha256": "aad5ebaffddf8211be21468f5936b6b1a0066c631919a43a06e9886a9061cd37",
+      "repository_mirror": true,
+      "publication_status": "PUBLIC",
+      "width": 770,
+      "height": 420
+    },
+    {
+      "reference": "PD-DMA-0005-ES-PAGE^",
+      "logical_asset": "PD-DMA-0005",
+      "role": "DISCLOSED_EDITORIAL_PUBLICATION_SURFACE",
+      "repository_path": "es/acosta-matos-familia/index.html",
+      "public_url": "/es/acosta-matos-familia/index.html",
+      "mime": "text/html",
+      "bytes": 35159,
+      "sha256": "8a520dd731eb37fbe0d27e2982d86a08f1abde4c5ffc860f88d71582c586d396",
+      "repository_mirror": true,
+      "publication_status": "PUBLIC"
+    },
+    {
+      "reference": "PD-DMA-0005-EN-PAGE^",
+      "logical_asset": "PD-DMA-0005",
+      "role": "DISCLOSED_EDITORIAL_PUBLICATION_SURFACE",
+      "repository_path": "en/acosta-matos-family/index.html",
+      "public_url": "/en/acosta-matos-family/index.html",
+      "mime": "text/html",
+      "bytes": 50325,
+      "sha256": "0bf971d54f845bcbe7984013d2937a013f3dd74939be721c96e816eeaff91ef4",
+      "repository_mirror": true,
+      "publication_status": "PUBLIC"
     }
   ],
   "public_routes": {
     "family_es": "/es/acosta-matos-plataforma-hotelera/",
     "family_en": "/en/acosta-matos-hotel-platform/",
     "register_es": "/es/registro-activos-digitales/",
-    "register_en": "/en/digital-media-asset-register/"
+    "register_en": "/en/digital-media-asset-register/",
+    "master_mynd_es": "/es/acosta-matos-familia/",
+    "master_mynd_en": "/en/acosta-matos-family/"
   },
   "correction_rule": "A translation, crop, re-export, compression, text correction or redesign is a new exact file identity. Prior hashes remain preserved and are never silently reused."
 }
