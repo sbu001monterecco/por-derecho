@@ -13,8 +13,13 @@ permissions:
 jobs:
   jsp-options-reader:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
-      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
+          fetch-depth: 0
+          persist-credentials: false
       - name: Validate bilingual reader, boundaries and repository destinations
         run: python3 scripts/validate_jsp_options.py --full-repository
       - name: Confirm validation made no tracked changes
