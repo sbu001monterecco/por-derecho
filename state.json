@@ -2,7 +2,7 @@
   "schema": "por-derecho.publication-runtime.v1",
   "fence": 2,
   "owner": "1473:7a07778d120ce9ef777668758b2f449785fc10b5",
-  "phase": "ACCEPTED",
+  "phase": "ABORTED_BEFORE_MERGE",
   "pr": 1473,
   "base_sha": "529d90898b7172decf46323d6bd58fbc69fb560c",
   "candidate_sha": "7a07778d120ce9ef777668758b2f449785fc10b5",
@@ -17,31 +17,11 @@
       "merge_sha": "529d90898b7172decf46323d6bd58fbc69fb560c",
       "pages_run_id": 33982321180,
       "exact_matches": [
-        {
-          "path": "en/index.html",
-          "sha256": "d349550044cfbce031e78970314845e34a91944a5c7c10b7e7ecc9fdefe0c8ee",
-          "bytes": 227486
-        },
-        {
-          "path": "es/index.html",
-          "sha256": "c47306600ffbb11fc3803c5e482a0afbdf8740d4df5031eea752878480ed7927",
-          "bytes": 236632
-        },
-        {
-          "path": "ops/CURRENT_COLLABORATION_STATE.json",
-          "sha256": "d22b0d5efeb797a84ee2eb35c9a89b53688bee21142afca7ee258d05b58586f9",
-          "bytes": 4425
-        },
-        {
-          "path": "ops/PUBLICATION_CONTROLLER.md",
-          "sha256": "9dce27f5f3d7810d93671119b33b34224bf8bbc4a7bae8c505f675cec06645d3",
-          "bytes": 5198
-        },
-        {
-          "path": "ops/RELEASE_AUTOMATION_STATUS.json",
-          "sha256": "85963792c4d136a15ef7514cc3e932d9c179b11e2f9a68100e37ec216ef2b3ab",
-          "bytes": 3068
-        }
+        {"path":"en/index.html","sha256":"d349550044cfbce031e78970314845e34a91944a5c7c10b7e7ecc9fdefe0c8ee","bytes":227486},
+        {"path":"es/index.html","sha256":"c47306600ffbb11fc3803c5e482a0afbdf8740d4df5031eea752878480ed7927","bytes":236632},
+        {"path":"ops/CURRENT_COLLABORATION_STATE.json","sha256":"d22b0d5efeb797a84ee2eb35c9a89b53688bee21142afca7ee258d05b58586f9","bytes":4425},
+        {"path":"ops/PUBLICATION_CONTROLLER.md","sha256":"9dce27f5f3d7810d93671119b33b34224bf8bbc4a7bae8c505f675cec06645d3","bytes":5198},
+        {"path":"ops/RELEASE_AUTOMATION_STATUS.json","sha256":"85963792c4d136a15ef7514cc3e932d9c179b11e2f9a68100e37ec216ef2b3ab","bytes":3068}
       ],
       "pending": [],
       "scope": "Changed readable public resources plus ES/EN entrypoints. Browser checks are separate premerge evidence; not a whole-site or legal-proof certificate."
@@ -51,21 +31,23 @@
     {
       "phase": "ACCEPTED",
       "at": "2026-09-05T19:35:16.858590Z",
+      "evidence": {"checks":[{"name":"publication-integrity","id":101363139020,"conclusion":"success"},{"name":"PD release acceptance","id":101363138456,"conclusion":"success"}]}
+    },
+    {
+      "phase": "ABORTED_BEFORE_MERGE",
+      "at": "2026-09-05T19:40:38Z",
       "evidence": {
-        "checks": [
-          {
-            "name": "publication-integrity",
-            "id": 101363139020,
-            "conclusion": "success"
-          },
-          {
-            "name": "PD release acceptance",
-            "id": 101363138456,
-            "conclusion": "success"
-          }
-        ]
+        "pr_unmerged": true,
+        "pr_state": "open",
+        "observed_head_sha": "0907b3ac5e6ed2a2f2993fc857ca66291c7c5c9f",
+        "main_unchanged": "529d90898b7172decf46323d6bd58fbc69fb560c",
+        "explicit_abort_command_comment": 5554297436,
+        "completed_failed_abort_run": 33987708374,
+        "recovery_method": "Authorised connected owner performed an expected-blob-SHA state-only update after independently reading the unmerged PR, unchanged main and stopped controller. The controller rejects any stale PR head before it reaches its abort branch; no old head was restored and no history was rewritten.",
+        "reason": "The first complete48-case browser report identified9 English DOM failures and the visual review found displaced first-read content. The candidate was advanced for a source-preserving layout repair. The old permit is invalidated, not reused or relabelled as browser-passed.",
+        "next_release": "Requires a new atomic claim with fresh exact-head successful release/publication checks and complete browser acceptance. This record authorises no merge and preserves all earlier receipts."
       }
     }
   ],
-  "updated_at": "2026-09-05T19:35:16.858590Z"
+  "updated_at": "2026-09-05T19:40:38Z"
 }
