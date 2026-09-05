@@ -1,0 +1,80 @@
+name: Finalize authorized San Telmo visual
+
+on:
+  pull_request:
+    branches: [main]
+    types: [opened, synchronize, reopened]
+    paths:
+      - ".asset-import/**"
+      - "scripts/import_authorized_san_telmo_assets.py"
+      - "scripts/finalize_authorized_san_telmo_visual.py"
+      - "assets/san-telmo-authorized-photo-stamp-20260819.js"
+      - ".github/workflows/finalize-authorized-san-telmo-visual.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  finalize-authorized-visual:
+    if: github.event.pull_request.head.repo.full_name == github.repository
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check out pull-request head branch
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.head_ref }}
+          fetch-depth: 0
+
+      - name: Import exact authorized binaries when staging trigger remains
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [[ -f .asset-import/trigger.txt ]]; then
+            python scripts/import_authorized_san_telmo_assets.py
+          else
+            echo "Staging already consumed; using imported repository assets."
+          fi
+
+      - name: Finalize registry, slot map, shared loader and governance
+        run: python scripts/finalize_authorized_san_telmo_visual.py
+
+      - name: Validate visual identities before commit
+        run: python scripts/validate_visual_asset_registry.py
+
+      - name: Commit finalized assets and remove one-time import machinery
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "por-derecho-asset-bot"
+          git config user.email "sbu001@monterecco.com"
+
+          git add assets/actors/eduardo-sanchez-san-telmo.webp
+          git add assets/places/sun-park-mynd-yaiza--user-authorized-20260819.jpg
+          git add assets/composites/san-telmo-ricpe-sun-park-stamp-v1.svg
+          git add assets/composites/san-telmo-ricpe-sun-park-stamp-v1.asset-map.json
+          git add assets/visual-asset-registry.json
+          git add assets/san-telmo-authorized-photo-stamp-20260819.js
+          git add assets/ricpe-identity-correction-20260815.js
+          git add archive/knowledge-project/VISUAL_ASSET_IDENTITY_GOVERNANCE_19AUG2026.md
+          git add archive/knowledge-project/THREAD_CONTINUITY_VISUAL_SURFACES_ADDENDUM_19AUG2026.md
+          git add archive/knowledge-project/VISUAL_ASSET_REJECTED_OUTPUTS_LOG.md
+          git add archive/knowledge-project/SAN_TELMO_AUTHORIZED_IMAGE_USE_RECORD_19AUG2026.md
+          git add archive/knowledge-project/SAN_TELMO_PHOTO_STAMP_IMPLEMENTATION_GATE_19AUG2026.md
+
+          rm -rf .asset-import
+          git add -A .asset-import || true
+
+          git rm -f --ignore-unmatch \
+            .github/workflows/import-authorized-san-telmo-images.yml \
+            .github/workflows/import-authorized-san-telmo-images-pr.yml \
+            scripts/import_authorized_san_telmo_assets.py \
+            scripts/finalize_authorized_san_telmo_visual.py \
+            .github/workflows/finalize-authorized-san-telmo-visual.yml
+
+          if git diff --cached --quiet; then
+            echo "No finalized changes to commit."
+            exit 0
+          fi
+          git commit -m "Activate authorized Eduardo, Sun Park and Borja visual assets"
+          git push origin HEAD:${{ github.head_ref }}
