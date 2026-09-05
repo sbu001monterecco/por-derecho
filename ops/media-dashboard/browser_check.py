@@ -13,7 +13,7 @@ try:
   for langroute in ROUTES:
    for width,height in [(390,844),(1280,900)]:
     page=browser.new_page(viewport={'width':width,'height':height}); errors=[];page.on('pageerror',lambda e:errors.append(str(e)))
-    response=page.goto('http://127.0.0.1:8765/'+langroute+'#media-desk',wait_until='domcontentloaded');page.wait_for_timeout(5000)
+    response=page.goto('http://127.0.0.1:8765/'+langroute+'#media-desk',wait_until='domcontentloaded');page.wait_for_timeout(6500)
     desk=page.locator('#media-desk');assert desk.count()==1
     assert page.locator('#media-desk article.card').count()==6
     assert page.locator('#media-desk form,#media-desk input,#media-desk script,#media-desk iframe').count()==0
@@ -22,11 +22,18 @@ try:
     assert response.status==200
     if width<=650:
      assert not page.locator('.main-nav').is_visible(), 'Mobile menu must stay closed until opened'
-    page.evaluate("document.querySelector('#media-desk').scrollIntoView({block:'start'})")
-    page.wait_for_timeout(300)
+    initial_heading=page.locator('#media-desk-title').bounding_box()
+    # The shared stylesheet uses smooth scrolling. Do not capture its intermediate animation.
+    page.evaluate("document.querySelector('#media-desk').scrollIntoView({block:'start',behavior:'instant'})")
+    page.wait_for_timeout(1000)
+    heading=page.locator('#media-desk-title').bounding_box()
+    header=page.locator('.site-header').bounding_box()
+    assert heading and heading['y']>=0 and heading['y']+heading['height']<height, 'Media heading is not in viewport'
+    assert not header or heading['y']>=header['y']+header['height']-2, 'Sticky header obscures media heading'
     page.screenshot(path=str(OUT/f'{langroute[:2]}-{width}-desk-viewport.png'),full_page=False)
+    desk.screenshot(path=str(OUT/f'{langroute[:2]}-{width}-desk-section.png'))
     page.screenshot(path=str(OUT/f'{langroute[:2]}-{width}.png'),full_page=True)
-    results.append({'route':langroute,'width':width,'status':response.status,'overflow':overflow,'page_errors':errors,'desk_cards':6,'mobile_navigation_overlay':False if width<=650 else None})
+    results.append({'route':langroute,'width':width,'status':response.status,'overflow':overflow,'page_errors':errors,'desk_cards':6,'mobile_navigation_overlay':False if width<=650 else None,'initial_hash_heading':initial_heading,'settled_heading':heading,'sticky_header':header,'fragment_capture':'explicit settled fragment after inherited runtime; initial position reported separately'})
     page.close()
   for langroute in ROUTES:
    page=browser.new_page(java_script_enabled=False,viewport={'width':390,'height':844});page.goto('http://127.0.0.1:8765/'+langroute+'#media-desk')
