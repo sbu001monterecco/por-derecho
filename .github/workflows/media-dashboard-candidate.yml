@@ -1,0 +1,122 @@
+name: Prepare bounded media worker candidate
+on:
+  push:
+    branches: [worker/media-dashboard-plan-20260905]
+    paths:
+      - ops/media-dashboard/build_release.py
+      - ops/media-dashboard/section-*.html
+      - ops/media-dashboard/test_release.py
+      - ops/media-dashboard/browser_check.py
+      - assets/media-desk.css
+      - .github/workflows/media-dashboard-candidate.yml
+permissions:
+  contents: read
+concurrency:
+  group: media-worker-candidate
+  cancel-in-progress: false
+jobs:
+  candidate:
+    if: github.ref == 'refs/heads/worker/media-dashboard-plan-20260905'
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Prepare only owned additions
+        run: |
+          python3 ops/media-dashboard/build_release.py
+          python3 ops/media-dashboard/build_release.py --check
+          python3 -m unittest discover -s ops/media-dashboard -p 'test_*.py' -v
+      - name: Verify exact inherited-content preservation
+        run: |
+          mkdir -p /tmp/media-candidate
+          python3 - <<'PY'
+          import subprocess,json,re,pathlib,xml.etree.ElementTree as ET
+          paths=['es/medios-trazabilidad-relato-publico/index.html','en/media-public-narrative-traceability/index.html','assets/data/unitary-route-registry-sync-20260819.json','sitemap-discovery-navigation.xml']
+          dirty=subprocess.check_output(['git','diff','--name-only'],text=True).splitlines()
+          assert set(dirty)<=set(paths), 'Unexpected modified tracked path'
+          marker='PD-MEDIA-DASHBOARD-20260905-01'
+          def original(t):
+            t=re.sub(r'<!-- '+marker+r':(?:head|desk|nav):START -->.*?<!-- '+marker+r':(?:head|desk|nav):END -->\n?','',t,flags=re.S)
+            return t.replace('class="dossier-page media-desk-page"','class="dossier-page"')
+          findings=[]
+          for p in paths:
+            before=subprocess.check_output(['git','show','HEAD:'+p],text=True);after=pathlib.Path(p).read_text()
+            if p.endswith('.html'):assert original(before)==original(after),p
+            elif p.endswith('.json'):
+              a=json.loads(before);b=json.loads(after);assert b[:len(a)]==a,p
+              assert len({r['path'] for r in b})==len(b),p
+            else:
+              a=ET.fromstring(before);b=ET.fromstring(after)
+              assert [ET.tostring(x) for x in b][:len(a)]==[ET.tostring(x) for x in a],p
+            findings.append({'path':p,'existing_content_preserved':True})
+          pathlib.Path('/tmp/media-candidate/preservation.json').write_text(json.dumps(findings,indent=2))
+          PY
+      - name: Install bounded browser tooling
+        run: |
+          python3 -m pip install playwright beautifulsoup4 PyYAML jsonschema
+          python3 -m playwright install --with-deps chromium
+      - name: Inspect full checkout diagnostics against observed source main
+        run: |
+          git worktree add --detach /tmp/media-baseline adc8c87585609709caafdd90f03ffbb4a4687d83
+          python3 - <<'PY'
+          import subprocess,json,pathlib
+          out=pathlib.Path('/tmp/media-candidate');records=[]
+          scripts=['scripts/validate_repository_preservation.py','scripts/validate_publication_integrity.py','scripts/validate_audience_experience.py']
+          for label,root in [('baseline','/tmp/media-baseline'),('candidate','.')]:
+            for script in scripts:
+              try:
+                p=subprocess.run(['python3',script],cwd=root,capture_output=True,text=True,timeout=240)
+                name=label+'-'+pathlib.Path(script).stem+'.txt';(out/name).write_text(p.stdout+'\n'+p.stderr)
+                records.append({'tree':label,'script':script,'exit_code':p.returncode,'log':name})
+              except subprocess.TimeoutExpired:
+                records.append({'tree':label,'script':script,'timeout':True})
+          (out/'full-tree-diagnostics.json').write_text(json.dumps({'diagnostics':records,'collection_is_not_acceptance':True},indent=2))
+          PY
+      - name: Browser and existing-public-source checks
+        run: python3 ops/media-dashboard/browser_check.py
+      - name: Preserve the four generated outputs on this worker only
+        env:
+          EXPECTED_BRANCH: worker/media-dashboard-plan-20260905
+        run: |
+          test "$GITHUB_REF" = "refs/heads/$EXPECTED_BRANCH"
+          python3 ops/media-dashboard/build_release.py --check
+          python3 - <<'PY'
+          import subprocess
+          allowed={'es/medios-trazabilidad-relato-publico/index.html','en/media-public-narrative-traceability/index.html','assets/data/unitary-route-registry-sync-20260819.json','sitemap-discovery-navigation.xml'}
+          changed=set(subprocess.check_output(['git','diff','--name-only'],text=True).splitlines())
+          assert changed<=allowed, 'Unexpected dirty path after checks'
+          PY
+          git add -- es/medios-trazabilidad-relato-publico/index.html en/media-public-narrative-traceability/index.html assets/data/unitary-route-registry-sync-20260819.json sitemap-discovery-navigation.xml
+          if ! git diff --cached --quiet; then
+            git config user.name 'github-actions[bot]'
+            git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+            git commit -m 'Preserve tested additive media-desk outputs on worker; no deployment'
+            git push origin "HEAD:refs/heads/$EXPECTED_BRANCH"
+          fi
+          git rev-parse HEAD > /tmp/media-candidate/saved-worker-head.txt
+      - name: Bundle public candidate source only
+        if: always()
+        run: |
+          mkdir -p /tmp/media-candidate
+          python3 - <<'PY'
+          import pathlib,zipfile,hashlib,json,subprocess
+          paths=['es/medios-trazabilidad-relato-publico/index.html','en/media-public-narrative-traceability/index.html','assets/data/unitary-route-registry-sync-20260819.json','sitemap-discovery-navigation.xml','assets/media-desk.css']
+          paths += [str(x) for x in pathlib.Path('ops/media-dashboard').glob('*') if x.is_file()]
+          manifest=[]
+          with zipfile.ZipFile('/tmp/media-candidate/source.zip','w',zipfile.ZIP_DEFLATED) as z:
+            for path in paths:
+              f=pathlib.Path(path)
+              if f.is_file():
+                z.write(f,path);manifest.append({'path':path,'bytes':f.stat().st_size,'sha256':hashlib.sha256(f.read_bytes()).hexdigest()})
+          pathlib.Path('/tmp/media-candidate/source-manifest.json').write_text(json.dumps({'head':subprocess.check_output(['git','rev-parse','HEAD'],text=True).strip(),'files':manifest,'deployment_verified':False},indent=2))
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: media-desk-candidate-checks
+          path: /tmp/media-candidate/
+          retention-days: 14

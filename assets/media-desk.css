@@ -1,0 +1,13 @@
+/* Scoped press-desk additions: never style unrelated routes. */
+.media-desk-page .main-nav{flex-wrap:wrap;max-width:100%;gap:.65rem}
+.media-desk-page .header-inner{flex-wrap:wrap}
+#media-desk{scroll-margin-top:6rem}
+#media-desk .shell{min-width:0}
+#media-desk .media-desk-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem;margin:1.5rem 0}
+#media-desk .card{min-width:0;overflow-wrap:anywhere}
+#media-desk a{overflow-wrap:anywhere;text-decoration:underline;text-underline-offset:.2em}
+#media-desk a:focus-visible{outline:3px solid currentColor;outline-offset:4px}
+#media-desk .media-desk-note{padding:1.2rem;border-left:4px solid currentColor;background:rgba(128,128,128,.08)}
+#media-desk .media-desk-footnote{font-size:.9rem;border-top:1px solid currentColor;padding-top:1rem}
+@media(max-width:650px){#media-desk .media-desk-grid{grid-template-columns:1fr}.media-desk-page .main-nav{display:flex}.media-desk-page .header-inner{align-items:flex-start}}
+@media print{#media-desk .media-desk-grid{display:block}#media-desk .card{break-inside:avoid}}
