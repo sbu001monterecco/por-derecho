@@ -8,6 +8,7 @@ on:
       - 'assets/data/la-laguna-proceeding-pages-v1.json'
       - 'assets/data/matter-identity-registry-v1.organisations.json'
       - 'assets/data/unitary-multitrack-criminal-first-gap-closure-v1.json'
+      - 'assets/data/community-acta-authority-interconnectivity-v1.json'
       - 'es/cuatrecasas-sun-park/index.html'
       - 'en/cuatrecasas-sun-park/index.html'
       - 'es/metodologia/index.html'
@@ -46,6 +47,8 @@ jobs:
           git fetch --no-tags origin main:refs/remotes/origin/main
           python -m py_compile scripts/close_cr_continuity_20260905.py
           python scripts/close_cr_continuity_20260905.py --apply
+          python scripts/complete_cr_continuity_dependencies.py --apply
+          python scripts/validate_unitary_multitrack_gap_closure.py
           python scripts/validate_publication_integrity.py
           python scripts/validate_publication_integrity_v2.py
           python scripts/validate_audience_experience.py
@@ -62,7 +65,7 @@ jobs:
           if subprocess.run(['git','diff','--cached','--quiet']).returncode:
             subprocess.run(['git','config','user.name','github-actions[bot]'],check=True)
             subprocess.run(['git','config','user.email','41898282+github-actions[bot]@users.noreply.github.com'],check=True)
-            subprocess.run(['git','commit','-m','Render CR continuity: 58 review controls, 7 canonical obligations and sourced RAUDA identity'],check=True)
+            subprocess.run(['git','commit','-m','Render CR continuity and refresh unchanged ACTA graph dependency hashes'],check=True)
             subprocess.run(['git','push','origin','HEAD:refs/heads/worker/cr-continuity-gapclosure-20260905'],check=True)
           print('PREPARED_HEAD',subprocess.check_output(['git','rev-parse','HEAD'],text=True).strip())
           print('Workflow-file changes require the authorised connector, not expanded bot permissions.')
@@ -103,21 +106,21 @@ jobs:
           python scripts/close_cr_continuity_20260905.py --check
           python scripts/build_cuatrecasas_rauda_20260905.py --check
           python scripts/complete_cuatrecasas_rauda_controls_20260905.py --check
+          python scripts/complete_cr_continuity_dependencies.py --check
+          python scripts/validate_unitary_multitrack_gap_closure.py
           python scripts/validate_repository_preservation.py
           python scripts/validate_publication_integrity.py
           python scripts/validate_publication_integrity_v2.py
           python scripts/validate_audience_experience.py
           python scripts/validate_operational_identity_registry.py
           python scripts/validate_legal_professional_register.py
-      - name: Record wider diagnostics without certifying them closed
+      - name: Record wider operational diagnostic without certifying it closed
         shell: python
         run: |
           import json,subprocess
           from pathlib import Path
-          results=[]
-          for name in ['validate_unitary_multitrack_gap_closure.py','validate_operational_truth.py']:
-            r=subprocess.run(['python','scripts/'+name],capture_output=True,text=True)
-            results.append({'validator':name,'exit':r.returncode,'stdout':r.stdout,'stderr':r.stderr})
+          r=subprocess.run(['python','scripts/validate_operational_truth.py'],capture_output=True,text=True)
+          results=[{'validator':'validate_operational_truth.py','exit':r.returncode,'stdout':r.stdout,'stderr':r.stderr}]
           Path('diagnostics').mkdir(exist_ok=True)
           Path('diagnostics/cr-continuity-wider-diagnostics.json').write_text(json.dumps(results,ensure_ascii=False,indent=2))
           print(json.dumps(results,ensure_ascii=False))
