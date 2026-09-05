@@ -1,0 +1,49 @@
+name: CR continuity gap closure
+on:
+  push:
+    branches: ['worker/cr-continuity-gapclosure-20260905']
+    paths: ['.github/workflows/cr-continuity-gapclosure.yml']
+permissions:
+  contents: read
+jobs:
+  baseline-audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          fetch-depth: 80
+          persist-credentials: false
+      - name: Capture current source and independent diagnostic results
+        shell: python
+        run: |
+          from pathlib import Path
+          import json,subprocess,shutil,hashlib
+          root=Path.cwd();dest=root/'diagnostics/source';dest.mkdir(parents=True)
+          paths=set()
+          for pattern in ['AGENTS.md','CHATGPT_START_HERE.md','ops/*STATE*.json','ops/RELEASE_LEDGER.json','ops/CUATRECASAS_RAUDA*','ops/CANONICAL_ENTITY_NAMES.json','assets/data/matter-identity*.json','assets/data/legal-professionals-register-v1.json','assets/data/la-laguna-proceeding-pages-v1.json','assets/data/dp748-2026-appeal-reopening-control-v1.json','assets/data/unitary-multitrack-criminal-first-gap-closure-v1.json','assets/data/institutional-communications-register-v1.json','assets/data/material-updates-v1.json','publication-manifests/*cuatrecasas*','publication-manifests/historic-proceedings-authority-reintegration-20260903.json','scripts/*.py','.github/workflows/cuatrecasas-rauda-publication.yml','.github/workflows/publication-integrity*.yml','.github/governance/*CONTINUITY*','.github/governance/*MULTI_THREAD*','.github/governance/*CAEPR*','.github/governance/*UNITARY_MULTI*','assets/content/cuatrecasas-rauda*','assets/cuatrecasas-rauda*.css','archive/UNIVERSAL_PUBLICATION_AND_THREAD_DELETION_SAFETY_PROTOCOL_18AUG2026.md']:
+            paths.update(p for p in root.glob(pattern) if p.is_file())
+          audit=json.loads((root/'ops/CUATRECASAS_RAUDA_RELEASE_20260905.json').read_text())
+          paths.update(root/x['path'] for x in audit['pages'])
+          for lang in ['es','en']:
+            paths.update(p for p in (root/lang).glob('*/index.html') if any(t in str(p) for t in ['metodolog','methodolog','acosta-matos-famil','registro-ident','identity-reg','registro-comun','communication-register']))
+          copied=[]
+          for p in sorted(paths):
+            rel=p.relative_to(root);target=dest/rel;target.parent.mkdir(parents=True,exist_ok=True);shutil.copyfile(p,target)
+            copied.append({'path':str(rel),'sha256':hashlib.sha256(p.read_bytes()).hexdigest()})
+          validators=['validate_repository_preservation.py','validate_publication_integrity.py','validate_publication_integrity_v2.py','validate_audience_experience.py','validate_operational_identity_registry.py','validate_legal_professional_register.py','validate_unitary_multitrack_gap_closure.py','validate_operational_truth.py']
+          results=[]
+          for name in validators:
+            if not (root/'scripts'/name).exists():continue
+            r=subprocess.run(['python','scripts/'+name],capture_output=True,text=True,timeout=120)
+            row={'validator':name,'exit':r.returncode,'stdout':r.stdout,'stderr':r.stderr};results.append(row)
+            print('VALIDATOR',name,'EXIT',r.returncode,r.stdout[-2500:])
+          report={'head':subprocess.check_output(['git','rev-parse','HEAD'],text=True).strip(),'base':'090a678ad53cd9216e673b0cfc643cd084e5286c','files':copied,'validators':results,'mode':'READ_ONLY_BASELINE_DIAGNOSTIC_NOT_COMPLETENESS_CERTIFICATE'}
+          Path('diagnostics/baseline.json').write_text(json.dumps(report,ensure_ascii=False,indent=2))
+          print('PUBLIC_SOURCE_FILES',len(copied))
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        if: always()
+        with:
+          name: cr-continuity-baseline-${{ github.run_id }}
+          path: diagnostics/
+          retention-days: 14
