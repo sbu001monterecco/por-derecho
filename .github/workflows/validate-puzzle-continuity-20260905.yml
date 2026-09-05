@@ -1,0 +1,25 @@
+name: Validate Puzzle continuity 20260905
+on:
+  push:
+    paths:
+      - 'assets/puzzle-*'
+      - 'data/puzzle/**'
+      - '.github/governance/PUZZLE_CONTINUITY_*'
+      - 'scripts/validate_puzzle_continuity_20260905.py'
+      - 'assets/site.js'
+  pull_request:
+    paths:
+      - 'assets/puzzle-*'
+      - 'data/puzzle/**'
+      - '.github/governance/PUZZLE_CONTINUITY_*'
+      - 'scripts/validate_puzzle_continuity_20260905.py'
+      - 'assets/site.js'
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - run: python3 scripts/validate_puzzle_continuity_20260905.py
+      - run: node --check assets/puzzle-continuity-enhancement-20260905.js
