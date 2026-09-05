@@ -1,0 +1,120 @@
+name: Prepare CI trigger contract reconciliation
+on:
+  push:
+    branches: [worker/ci-trigger-contract-finish-20260905]
+    paths: ['.github/workflows/ci-trigger-contract-finish.yml']
+permissions:
+  contents: read
+concurrency:
+  group: ci-trigger-contract-finish
+  cancel-in-progress: true
+jobs:
+  prepare:
+    if: github.ref == 'refs/heads/worker/ci-trigger-contract-finish-20260905'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: false
+          fetch-depth: 0
+      - name: Install the PDF privacy inspection dependency, without bypassing inspection
+        run: command -v pdftotext || (sudo apt-get update -qq && sudo apt-get install -y poppler-utils)
+      - name: Reconcile exact source contracts and stage unreferenced blobs only
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GITHUB_BASE_SHA: 090a678ad53cd9216e673b0cfc643cd084e5286c
+        run: |
+          python3 - <<'PY'
+          import concurrent.futures,json,os,pathlib,re,subprocess,urllib.request
+          root=pathlib.Path.cwd();out=pathlib.Path('/tmp/ci-control-plane');out.mkdir(exist_ok=True)
+          publisher='a5ac3ea72da90cf7552076f5d22d595086f755d0'
+          api='https://api.github.com/repos/sbu001monterecco/por-derecho/'
+          def request(path,data=None):
+              req=urllib.request.Request(api+path,data=None if data is None else json.dumps(data).encode(),headers={'Authorization':'Bearer '+os.environ['GH_TOKEN'],'Accept':'application/vnd.github+json','Content-Type':'application/json'})
+              with urllib.request.urlopen(req,timeout=35) as r:return json.load(r)
+          assert request('git/ref/heads/main')['object']['sha']==os.environ['GITHUB_BASE_SHA']
+          assert request('git/ref/heads/integration/ci-rules-open-work-20260905')['object']['sha']==publisher
+          changed=set()
+          def patch(path,old,new):
+              p=pathlib.Path(path);text=p.read_text();assert text.count(old)==1,(path,'anchor changed')
+              p.write_text(text.replace(old,new,1));changed.add(path)
+          helper='''
+          def production_trigger_errors(workflow_text: str) -> list[str]:
+              """Validate post-deployment monitoring and PR path coverage separately."""
+              import fnmatch
+              import re
+              errors = []
+              for marker in ("workflow_run:", "['pages build and deployment']", "types: [completed]", "branches: [main]", "workflow_run.conclusion == 'success'", "307309396", "deployed.head_sha"):
+                  if marker not in workflow_text:
+                      errors.append('Production deployment trigger lost: '+marker)
+              if re.search(r'^  push:', workflow_text, re.MULTILINE):
+                  errors.append('Production monitoring must follow successful Pages, not an unbuilt push')
+              block = re.search(r'^  pull_request:\\n(.*?)(?=^  [a-z_]+:|\\Z)', workflow_text, re.MULTILINE|re.DOTALL)
+              patterns = re.findall(r'^\\s+-\\s+[\\\'\\\"]([^\\\'\\\"]+)[\\\'\\\"]\\s*$', block[1], re.MULTILINE) if block else []
+              required = ('deployment-probes/mission-critical-hardening-20260818.json', 'assets/site.js', 'en/index.html', 'es/index.html', 'es/cnmv-ricpe-verificacion/index.html', 'en/cam-creditor-control-shadow-administration-judicial-omission/index.html', 'es/control-acreedor-cam-administracion-hecho-omision-judicial/index.html')
+              for path in required:
+                  if not any(fnmatch.fnmatchcase(path,p) for p in patterns if not p.startswith('!')) or any(fnmatch.fnmatchcase(path,p[1:]) for p in patterns if p.startswith('!')):
+                      errors.append('Production smoke PR coverage omits '+path)
+              return errors
+
+          '''
+          patch('scripts/production_smoke_check_v2.py','\ndef main() -> int:',helper+'\ndef main() -> int:')
+          p=pathlib.Path('scripts/validate_concurso36_complete_record.py');t=p.read_text()
+          start=t.index('    for trigger in (\n');end=t.index('\n\n\nclass _HTMLCollector',start)
+          assert 'production smoke workflow must trigger on push and PR' in t[start:end]
+          p.write_text(t[:start]+"    from production_smoke_check_v2 import production_trigger_errors\n    failures.extend(production_trigger_errors(smoke_workflow))"+t[end:]);changed.add(str(p))
+          patch('scripts/validate_fti_meeting_point_asset_transaction_monitor.py',
+                '    check("# v7.0.0" in text and "# v6.1.0" not in text, "setup-python pin comment does not match v7.0.0 hash")',
+                '    python_actions = [line.strip() for line in text.splitlines() if "uses: actions/setup-python@" in line]\n    check(len(python_actions) == 1 and python_actions[0].endswith("actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0"), "setup-python action line has a mismatched immutable pin/version")')
+          patch('.github/workflows/production-smoke-monitor.yml',"      - '404.html'","      - '404.html'\n      - 'deployment-probes/**'")
+          patch('.github/workflows/validate-ci-control-plane.yml',
+                '      - name: Validate all repaired contracts, negative cases and publication boundaries',
+                '      - name: Ensure fail-closed PDF privacy inspection is available\n        run: command -v pdftotext || (sudo apt-get update -qq && sudo apt-get install -y poppler-utils)\n      - name: Validate all repaired contracts, negative cases and publication boundaries')
+          tests='''
+          class ProductionTriggerTests(unittest.TestCase):
+              def text(self):
+                  return (smoke.ROOT/'.github/workflows/production-smoke-monitor.yml').read_text()
+              def test_actual_post_pages_and_pr_coverage(self):
+                  self.assertEqual(smoke.production_trigger_errors(self.text()), [])
+              def test_missing_probe_coverage_fails(self):
+                  self.assertTrue(smoke.production_trigger_errors(self.text().replace("      - 'deployment-probes/**'", '')))
+              def test_missing_success_guard_fails(self):
+                  self.assertTrue(smoke.production_trigger_errors(self.text().replace("workflow_run.conclusion == 'success'", 'true')))
+              def test_missing_pages_event_fails(self):
+                  self.assertTrue(smoke.production_trigger_errors(self.text().replace('  workflow_run:', '  unrelated:')))
+              def test_unbuilt_push_is_rejected(self):
+                  self.assertTrue(smoke.production_trigger_errors(self.text()+'\\n  push:\\n'))
+
+          '''
+          patch('scripts/test_ci_control_plane.py',"\nif __name__=='__main__':unittest.main()",'\n'+tests+"\nif __name__=='__main__':unittest.main()")
+          # Commit only inside the runner so tracked-file scanners inspect the exact
+          # candidate, without the disposable preparation workflow in its tree.
+          bootstrap='.github/workflows/ci-trigger-contract-finish.yml'
+          pathlib.Path(bootstrap).unlink()
+          subprocess.run(['git','add','--',*sorted(changed),bootstrap],check=True)
+          subprocess.run(['git','-c','user.name=CI source preparation','-c','user.email=ci@example.invalid','commit','-qm','Validate exact trigger and action-version reconciliation'],check=True)
+          results=[]
+          for script in ('validate_ci_control_plane.py','compare_inherited_ci_diagnostics.py'):
+              r=subprocess.run(['python3','scripts/'+script],capture_output=True,text=True,timeout=240)
+              (out/(script+'.combined.log')).write_text(r.stdout+r.stderr)
+              print('CHECK',script,r.returncode);print(r.stdout[-9000:]);print(r.stderr[-1500:])
+              results.append({'script':script,'exit':r.returncode})
+          subprocess.run(['git','diff','--exit-code'],check=True)
+          assert not subprocess.check_output(['git','diff',publisher,'--','assets/data','publication-manifests','evidence','archive'])
+          def blob(path):
+              return {'path':path,'mode':'100644','type':'blob','sha':request('git/blobs',{'content':pathlib.Path(path).read_text(),'encoding':'utf-8'})['sha']}
+          elements=list(concurrent.futures.ThreadPoolExecutor(max_workers=4).map(blob,sorted(changed)))
+          obj={'parent':publisher,'base_tree':subprocess.check_output(['git','rev-parse',publisher+'^{tree}'],text=True).strip(),'elements':elements,'checks':results,'state':'PREPARED_NOT_PUBLISHED'}
+          (out/'candidate-tree.json').write_text(json.dumps(obj,indent=2));print('CANDIDATE_TREE',json.dumps(obj))
+          # No ref, tree, merge, workflow publication or main update occurs here.
+          PY
+      - uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
+        if: always()
+        with:
+          name: ci-trigger-contract-candidate
+          path: /tmp/ci-control-plane/
+          if-no-files-found: error
+          retention-days: 14
