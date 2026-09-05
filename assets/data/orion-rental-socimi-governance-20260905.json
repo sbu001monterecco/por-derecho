@@ -417,5 +417,24 @@
     "Jose Daniel Acosta Matos",
     "Francisco Mario Matos Matas",
     "Enrique Guerra Suarez"
-  ]
+  ],
+  "architecture_clarification": {
+    "control_id": "PD-ORION-ARCH-20260905-01",
+    "framing_en": "Distinct but interconnected branches",
+    "framing_es": "Ramas distintas pero interconectadas",
+    "correction_scope": "Remove independent/unconnected-branch and FMMM-only framing; preserve all existing documented edges and individual proof limits.",
+    "documented_connections": "Existing dated RICPE/Orion founding and financing, AGM management, Pamalexsha and Acosta ownership/governance/related-party records remain controlling.",
+    "asset_value_flow": "OPEN — a specific Sun Park/MYND/LPB/Matkator to Orion transfer, guarantee, collateral use or economic benefit requires separate transaction-level proof.",
+    "temporal_limit": "Orion was constituted in June 2023; earlier Sun Park acts are not attributed to Orion itself. Earlier roles of later-connected people/entities are not erased.",
+    "individual_test": "Knowledge, duties, conduct, disclosure, reliance, benefit and responsibility require actor-specific evidence; no transfer through association.",
+    "routes": [
+      "/en/orion-ricpe-platform-continuity/",
+      "/en/orion-rental-socimi/",
+      "/es/orion-ricpe-continuidad/",
+      "/es/orion-rental-socimi/",
+      "/en/acosta-matos-perimeter/",
+      "/es/acosta-matos-perimetro/"
+    ],
+    "source_record": ".github/evidence-intelligence/records/PD-SP-EI-20260905-02-ORION-RENTAL-SOCIMI-GOVERNANCE.md"
+  }
 }

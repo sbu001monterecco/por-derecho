@@ -1,0 +1,168 @@
+name: Orion architecture clarification
+
+on:
+  push:
+    branches: [main, worker/orion-architecture-clarification-20260905]
+    paths:
+      - 'scripts/orion_architecture_clarification_20260905.py'
+      - '.github/workflows/orion-architecture-clarification-20260905.yml'
+      - 'en/orion-ricpe-platform-continuity/index.html'
+      - 'es/orion-ricpe-continuidad/index.html'
+      - 'en/orion-rental-socimi/index.html'
+      - 'es/orion-rental-socimi/index.html'
+      - 'en/acosta-matos-perimeter/index.html'
+      - 'es/acosta-matos-perimetro/index.html'
+      - 'assets/data/orion-rental-socimi-governance-20260905.json'
+      - '.github/evidence-intelligence/records/PD-SP-EI-20260905-02-ORION-RENTAL-SOCIMI-GOVERNANCE.md'
+  pull_request:
+    paths:
+      - 'scripts/orion_architecture_clarification_20260905.py'
+      - '.github/workflows/orion-architecture-clarification-20260905.yml'
+      - 'en/orion-ricpe-platform-continuity/index.html'
+      - 'es/orion-ricpe-continuidad/index.html'
+      - 'en/orion-rental-socimi/index.html'
+      - 'es/orion-rental-socimi/index.html'
+      - 'en/acosta-matos-perimeter/index.html'
+      - 'es/acosta-matos-perimetro/index.html'
+      - 'assets/data/orion-rental-socimi-governance-20260905.json'
+      - '.github/evidence-intelligence/records/PD-SP-EI-20260905-02-ORION-RENTAL-SOCIMI-GOVERNANCE.md'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+concurrency:
+  group: orion-architecture-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  prepare:
+    if: github.event_name == 'push' && github.ref == 'refs/heads/worker/orion-architecture-clarification-20260905'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+    outputs:
+      head: ${{ steps.prepare.outputs.head }}
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          ref: worker/orion-architecture-clarification-20260905
+          fetch-depth: 0
+      - name: Prepare only the authorised worker delta; never write main
+        id: prepare
+        run: |
+          set -euo pipefail
+          test "$(git branch --show-current)" = 'worker/orion-architecture-clarification-20260905'
+          python3 scripts/orion_architecture_clarification_20260905.py --apply
+          python3 scripts/orion_architecture_clarification_20260905.py --check
+          git add en/orion-ricpe-platform-continuity/index.html es/orion-ricpe-continuidad/index.html en/orion-rental-socimi/index.html es/orion-rental-socimi/index.html en/acosta-matos-perimeter/index.html es/acosta-matos-perimetro/index.html assets/data/orion-rental-socimi-governance-20260905.json .github/evidence-intelligence/records/PD-SP-EI-20260905-02-ORION-RENTAL-SOCIMI-GOVERNANCE.md
+          if ! git diff --cached --quiet; then
+            git config user.name 'github-actions[bot]'
+            git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+            git commit -m 'Clarify distinct interconnected Orion branches; preserve actor-specific proof'
+            git push origin HEAD:worker/orion-architecture-clarification-20260905
+          fi
+          echo "head=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+
+  validate:
+    needs: prepare
+    if: always() && (needs.prepare.result == 'success' || needs.prepare.result == 'skipped')
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          ref: ${{ needs.prepare.outputs.head || github.sha }}
+          fetch-depth: 0
+          persist-credentials: false
+      - name: Exact approved diff, links, proof boundaries and deterministic source checks
+        run: |
+          set -euo pipefail
+          mkdir -p /tmp/orion-audit
+          python3 scripts/orion_architecture_clarification_20260905.py --check | tee /tmp/orion-audit/scoped.json
+          git diff --exit-code
+          git rev-parse HEAD
+      - name: Compare broader preservation, publication and audience checks with unchanged base
+        run: |
+          python3 - <<'PY'
+          import json, os, pathlib, subprocess, sys
+          root = pathlib.Path.cwd()
+          base = pathlib.Path('/tmp/orion-base')
+          subprocess.run(['git','worktree','add','--detach',str(base),'e482e29325091bcc32af3fd2b2624335c6699e19'], check=True, stdout=subprocess.DEVNULL)
+          results = []
+          for script in ('validate_repository_preservation.py','validate_publication_integrity.py','validate_audience_experience.py'):
+              row = {'validator':script}
+              for label, cwd in (('base',base),('head',root)):
+                  p = subprocess.run([sys.executable, 'scripts/'+script], cwd=cwd, text=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
+                  text = p.stdout.replace(str(cwd),'<ROOT>')
+                  pathlib.Path('/tmp/orion-audit/'+label+'-'+script+'.log').write_text(text)
+                  row[label+'_returncode'] = p.returncode
+                  row[label+'_output'] = text
+              row['no_new_failure'] = row['head_returncode']==0 or (row['head_returncode']==row['base_returncode'] and row['head_output']==row['base_output'])
+              results.append(row)
+          pathlib.Path('/tmp/orion-audit/baseline-comparison.json').write_text(json.dumps(results,indent=2))
+          summary=[{k:v for k,v in r.items() if not k.endswith('_output')} for r in results]
+          print(json.dumps(summary,indent=2))
+          with open(os.environ['GITHUB_STEP_SUMMARY'],'a') as f:
+              f.write('## Broader baseline comparison\n\n'+json.dumps(summary,indent=2)+'\n\nInherited failures are not represented as green global validators. No gate or protection is disabled.\n')
+          if not all(r['no_new_failure'] for r in results): sys.exit(1)
+          PY
+      - name: Install pinned browser test dependency
+        run: |
+          python3 -m pip install playwright==1.55.0
+          python3 -m playwright install --with-deps chromium
+      - name: Desktop/mobile and JavaScript/no-JavaScript rendering
+        run: |
+          python3 - <<'PY'
+          import functools, http.server, importlib.util, json, pathlib, tempfile, threading
+          from playwright.sync_api import sync_playwright
+          root=pathlib.Path.cwd()
+          spec=importlib.util.spec_from_file_location('correction',root/'scripts/orion_architecture_clarification_20260905.py')
+          mod=importlib.util.module_from_spec(spec);spec.loader.exec_module(mod)
+          serve=pathlib.Path(tempfile.mkdtemp());(serve/'por-derecho').symlink_to(root,target_is_directory=True)
+          handler=functools.partial(http.server.SimpleHTTPRequestHandler,directory=str(serve))
+          server=http.server.ThreadingHTTPServer(('127.0.0.1',0),handler)
+          threading.Thread(target=server.serve_forever,daemon=True).start()
+          address='http://127.0.0.1:'+str(server.server_address[1])+'/por-derecho/'
+          rows=[]
+          with sync_playwright() as p:
+              browser=p.chromium.launch()
+              for width in (1440,390):
+                  for js in (True,False):
+                      context=browser.new_context(viewport={'width':width,'height':950},java_script_enabled=js)
+                      for file in mod.PAGE_PATHS+['en/index.html','es/index.html']:
+                          page=context.new_page();route=file.removesuffix('index.html')
+                          response=page.goto(address+route,wait_until='domcontentloaded')
+                          assert response and response.status==200, file
+                          assert page.locator('main').count()>0,file
+                          if file in mod.PAGE_PATHS:
+                              block=page.locator('#'+mod.MARKER)
+                              assert block.count()==1,file
+                              block.scroll_into_view_if_needed();assert block.is_visible(),file
+                              box=block.bounding_box();assert box and box['width']<=width+2 and box['x']>=-2,(file,box)
+                              for old in ('independent Orion branch','rama Orion independiente','The only Sun Park question','La única cuestión Sun Park'):
+                                  assert old not in page.locator('main').inner_text(),(file,old)
+                              if file in [v[0] for v in mod.ROUTES.values()]:
+                                  lang=file.split('/')[0]
+                                  assert mod.COPY[lang]['h1'] in page.locator('h1').all_text_contents(),file
+                          name=route.strip('/').replace('/','-') or 'home'
+                          page.screenshot(path='/tmp/orion-audit/'+name+'-'+str(width)+'-'+str(js)+'.png')
+                          rows.append({'route':route,'width':width,'javascript':js,'status':'PASS'})
+                          page.close()
+                      context.close()
+              browser.close()
+          server.shutdown()
+          pathlib.Path('/tmp/orion-audit/browser.json').write_text(json.dumps(rows,indent=2))
+          print(json.dumps({'browser_cases':len(rows),'status':'PASS'},indent=2))
+          PY
+      - name: Verify deployed public bytes (main only; read-only)
+        if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+        run: python3 scripts/orion_architecture_clarification_20260905.py --live | tee /tmp/orion-audit/live.txt
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        if: always()
+        with:
+          name: orion-architecture-audit-${{ github.run_id }}
+          path: /tmp/orion-audit/
+          retention-days: 14
