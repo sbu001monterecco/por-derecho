@@ -1,0 +1,81 @@
+name: Prepare source observation compatibility
+on:
+  push:
+    branches: [worker/observation-compatibility-20260905]
+    paths: ['.github/workflows/prepare-observation-compatibility.yml']
+permissions:
+  contents: read
+concurrency:
+  group: observation-compatibility-preparation
+  cancel-in-progress: true
+jobs:
+  prepare:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - name: Inspect and validate owned changes without modifying any public source
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          python3 - <<'PY'
+          import concurrent.futures,json,os,pathlib,subprocess,urllib.request
+          root=pathlib.Path.cwd();out=pathlib.Path('/tmp/observation-compatibility');out.mkdir()
+          base='4a85c1902a51d5a09a3b0f6cf8cca4d6d5509435';main='529d90898b7172decf46323d6bd58fbc69fb560c'
+          api='https://api.github.com/repos/sbu001monterecco/por-derecho/'
+          def get(path,data=None):
+              req=urllib.request.Request(api+path,data=None if data is None else json.dumps(data).encode(),headers={'Authorization':'Bearer '+os.environ['GH_TOKEN'],'Accept':'application/vnd.github+json','Content-Type':'application/json'})
+              with urllib.request.urlopen(req,timeout=40) as r:return json.load(r)
+          assert get('git/ref/heads/main')['object']['sha']==main
+          assert get('pulls/1469')['head']['sha']==base
+          def patch(path,old,new):
+              p=root/path;t=p.read_text();assert t.count(old)==1,(path,'source anchor differs');p.write_text(t.replace(old,new,1))
+          patch('scripts/orion_architecture_clarification_20260905.py',"        if actual != desired: raise RuntimeError('non-deterministic output '+path)","        if path.endswith('.html'):\n            from source_observation_contracts import preserved_owned_page\n            preserved_owned_page(path, desired, actual, MARKER)\n            if path in [pair[0] for pair in ROUTES.values()]:\n                preserved_owned_page(path, desired, actual, 'documented-connections')\n        elif actual != desired: raise RuntimeError('non-deterministic output '+path)")
+          patch('scripts/orion_architecture_clarification_20260905.py',"    if args.apply:\n        for path,text in expected(args.base).items():","    if args.apply:\n        raise SystemExit('Historical whole-file writer retired; preserve current pages and prepare scoped blocks.')\n        for path,text in expected(args.base).items():")
+          patch('scripts/validate_alberto_meeting_point_first_hop_caret.py','    parser.feed(path.read_text(encoding="utf-8"))','    from source_observation_contracts import historical_surface\n    parser.feed(historical_surface(path))')
+          path='scripts/check_release_acceptance.py';t=(root/path).read_text()
+          anchor="    checks=[('release-contract-tests'"
+          # Keep the original required set and add a required child command by insertion.
+          if anchor not in t:
+              anchor="    checks = [('release-contract-tests'"
+          assert anchor in t, 'Acceptance command anchor differs'
+          t=t.replace(anchor,anchor,1)
+          needle='    results=[]'
+          if needle not in t:needle='    results = []'
+          assert t.count(needle)==1
+          t=t.replace(needle,"    checks.append(('source-observation-tests',[sys.executable,'-m','unittest','discover','-s','scripts','-p','test_source_observation_contracts.py','-v']))\n"+needle,1);(root/path).write_text(t)
+          bootstrap='.github/workflows/prepare-observation-compatibility.yml';(root/bootstrap).unlink()
+          paths=['scripts/source_observation_contracts.py','scripts/test_source_observation_contracts.py','scripts/orion_architecture_clarification_20260905.py','scripts/validate_alberto_meeting_point_first_hop_caret.py','scripts/check_release_acceptance.py']
+          subprocess.run(['git','add','--',*paths,bootstrap],check=True)
+          subprocess.run(['git','-c','user.name=Observation compatibility preparation','-c','user.email=ci@example.invalid','commit','-qm','Validate source observation compatibility without public content changes'],check=True)
+          os.environ['GITHUB_BASE_SHA']=main;os.environ['GITHUB_HEAD_SHA']=subprocess.check_output(['git','rev-parse','HEAD'],text=True).strip()
+          commands=[['python3','scripts/check_release_acceptance.py'],['python3','scripts/orion_architecture_clarification_20260905.py','--check'],['python3','scripts/validate_alberto_meeting_point_first_hop_caret.py']]
+          results=[]
+          for command in commands:
+              r=subprocess.run(command,capture_output=True,text=True,timeout=420);name=pathlib.Path(command[1]).name
+              (out/(name+'.log')).write_text(r.stdout+r.stderr);results.append({'check':name,'exit':r.returncode,'tail':(r.stdout+r.stderr)[-10000:]});print(json.dumps(results[-1]))
+          (out/'results.json').write_text(json.dumps(results,indent=2))
+          assert all(r['exit']==0 for r in results),'Required checks failed; no accepted candidate'
+          assert not subprocess.check_output(['git','diff',base,'--','assets','en','es','ops','publication-manifests','archive','evidence']), 'Unrelated/public content changed'
+          assert get('git/ref/heads/main')['object']['sha']==main
+          assert get('pulls/1469')['head']['sha']==base
+          def blob(path):return {'path':path,'mode':'100644','type':'blob','sha':get('git/blobs',{'content':(root/path).read_text(),'encoding':'utf-8'})['sha']}
+          entries=list(concurrent.futures.ThreadPoolExecutor(max_workers=3).map(blob,paths))
+          result={'parent':base,'base_tree':'00fba1e65368acc7c86cf3e0f8c05f4e6ad2cd32','elements':entries,'state':'SOURCE_ACCEPTED_NOT_DEPLOYED'}
+          (out/'candidate-tree.json').write_text(json.dumps(result,indent=2));print('CANDIDATE_TREE',json.dumps(result))
+          PY
+      - uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
+        if: always()
+        with:
+          name: observation-compatibility-${{ github.run_id }}
+          path: |
+            /tmp/observation-compatibility/
+            /tmp/pd-release-acceptance/
+            /tmp/ci-control-plane/
+          if-no-files-found: error
+          retention-days: 14
