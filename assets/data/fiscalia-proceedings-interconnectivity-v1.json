@@ -5,7 +5,7 @@
   "status": "PUBLIC_SAFE_DERIVED_INTERCONNECTIVITY_PROJECTION",
   "canonical_sources": {
     "communications_register": "assets/data/institutional-communications-register-v1.json",
-    "communications_sha256": "04eda9a473d07419c1d1d0941b9123d1497f7329366998a9f4cf76221910bbed",
+    "communications_sha256": "f397fc256cf21bde25c90945ebb67944762599ee4b02350830aae56fe5e7af82",
     "proceedings_master": "archive/PROCEEDINGS_MASTER_REGISTER.csv",
     "proceedings_master_sha256": "c3d3d025fa69b1e8b1d3cc7ea8e8d44cd622aeba4d33f7cf3f230a4a39cf9bb9",
     "public_proceedings_projection": "assets/data/proceedings-master-public-v1.json",
