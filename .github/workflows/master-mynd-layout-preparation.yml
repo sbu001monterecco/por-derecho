@@ -1,67 +1,37 @@
-name: MASTER MYND finite contrast correction
+name: MASTER MYND first-reader structure regression
 on:
-  push:
-    branches: ['worker/master-mynd-site-address-20260905']
-    paths: ['.github/workflows/master-mynd-layout-preparation.yml']
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - 'en/acosta-matos-family/index.html'
+      - 'es/acosta-matos-familia/index.html'
+      - 'assets/master-mynd-reader-priority.js'
+      - '.github/workflows/master-mynd-layout-preparation.yml'
 permissions:
-  contents: write
+  contents: read
 jobs:
-  contrast:
-    if: startsWith(github.event.head_commit.message, 'Prepare MASTER MYND source-identical contrast')
+  verify-structure:
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
       - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
         with:
-          ref: ${{ github.sha }}
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
           fetch-depth: 1
-      - name: Correct inherited white-on-light text while preserving the complete main HTML
+          persist-credentials: false
+      - name: Preserve direct-source layout, references and image fingerprints
         run: |
           python3 -m pip install --quiet beautifulsoup4 pillow
+          node --check assets/master-mynd-reader-priority.js
+          python3 scripts/validate_master_mynd.py
           python3 - <<'PY'
           from pathlib import Path
           from bs4 import BeautifulSoup
-          import json,hashlib,subprocess
-          name='en/acosta-matos-family/index.html';p=Path(name);old=p.read_text()
-          anchor='#master-mynd-record.hero .lead{color:inherit}'
-          assert old.count(anchor)==1
-          new=old.replace(anchor,anchor+'#master-mynd-record.hero h1,#master-mynd-record.hero p{color:inherit}',1)
-          a=BeautifulSoup(old,'html.parser');b=BeautifulSoup(new,'html.parser')
-          assert str(a.main)==str(b.main),'Main HTML must remain identical'
-          p.write_text(new)
-          p=Path('data/digital-media-asset-register-v1.json');m=json.loads(p.read_text());changed=0
-          for r in m['files']:
-              if r.get('repository_path')==name:
-                  r.setdefault('prior_surface_versions',[]).append({'sha256':r['sha256'],'bytes':r['bytes'],'state':'SUPERSEDED_BY_SOURCE_IDENTICAL_CONTRAST_REPAIR','source_head':'a97c22bb16f744f18f4f287991d277902ff5dcfe'})
-                  data=Path(name).read_bytes();r['bytes']=len(data);r['sha256']=hashlib.sha256(data).hexdigest();changed+=1
-          assert changed==1
-          p.write_text(json.dumps(m,ensure_ascii=False,indent=2)+'\n')
-          p=Path('scripts/check_master_mynd_browser.py');text=p.read_text()
-          anchor="        if family and DISCLOSURES[language] not in body:case['errors'].append('satire disclosure missing')"
-          assert text.count(anchor)==1
-          js="(els)=>{const rgb=s=>(s.match(/[0-9.]+/g)||[]).slice(0,3).map(Number);const lum=cs=>cs.map(c=>{c/=255;return c<=.04045?c/12.92:Math.pow((c+.055)/1.055,2.4)}).reduce((s,c,i)=>s+c*[.2126,.7152,.0722][i],0);return els.filter(e=>e.innerText.trim()).flatMap(e=>{let b=e;while(b&&getComputedStyle(b).backgroundColor==='rgba(0, 0, 0, 0)')b=b.parentElement;const fg=rgb(getComputedStyle(e).color),bg=b?rgb(getComputedStyle(b).backgroundColor):[255,255,255];const a=lum(fg),z=lum(bg),ratio=(Math.max(a,z)+.05)/(Math.min(a,z)+.05);return ratio>=4.5?[]:[{low_master_narrative_contrast:e.tagName,ratio,fg,bg}]})}"
-          added="        if family and language=='en':case['errors'].extend(page.locator('#master-mynd-record > h1, #master-mynd-record > p').evaluate_all("+repr(js)+"))"
-          p.write_text(text.replace(anchor,anchor+'\n'+added,1))
-          paths=[name,'data/digital-media-asset-register-v1.json',str(p)]
-          assert set(subprocess.check_output(['git','diff','--name-only'],text=True).splitlines())==set(paths)
-          Path('/tmp/mm-contrast').mkdir();Path('/tmp/mm-contrast/paths.txt').write_text('\n'.join(paths))
-          Path('/tmp/mm-contrast/source-preservation.json').write_text(json.dumps({'english_main_html_unchanged':True,'historical_page_fingerprints_preserved':True,'contrast_regression_added':True}))
+          for name,expected in [('en/acosta-matos-family/index.html','master-mynd-record'),('es/acosta-matos-familia/index.html','master-mynd')]:
+              page=BeautifulSoup(Path(name).read_text(),'html.parser')
+              assert next(c for c in page.main.children if c.name).get('id')==expected
+              assert page.select_one('script[src="../../assets/master-mynd-reader-priority.js"]')
+          assert '#master-mynd-record.hero h1,#master-mynd-record.hero p{color:inherit}' in Path('en/acosta-matos-family/index.html').read_text()
+          print('Source first-read order and media fingerprints verified. Real computed contrast, image decoding and rendered behaviour are separately tested in all three engines, with and without page JavaScript.')
           PY
-          python3 -m py_compile scripts/check_master_mynd_browser.py
-          python3 scripts/validate_master_mynd.py
-          python3 scripts/validate_satire_publication_governance.py
-      - name: Commit only verified contrast, current fingerprint and regression changes
-        run: |
-          test "${GITHUB_REF}" = 'refs/heads/worker/master-mynd-site-address-20260905'
-          git diff > /tmp/mm-contrast/source-identical.patch
-          git config user.name 'Por Derecho contrast repair'
-          git config user.email 'noreply@users.noreply.github.com'
-          while IFS= read -r path || test -n "$path"; do git add -- "$path"; done < /tmp/mm-contrast/paths.txt
-          git commit -m 'Correct English MASTER MYND inherited hero contrast with unchanged narrative and actual browser regression'
-          git push origin HEAD:refs/heads/worker/master-mynd-site-address-20260905
-      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
-        if: always()
-        with:
-          name: master-mynd-contrast-preservation
-          path: /tmp/mm-contrast
-          if-no-files-found: ignore
+          test -z "$(git status --porcelain)"
