@@ -1,0 +1,81 @@
+name: MASTER MYND finite worker staging
+on:
+  push:
+    branches: ['worker/master-mynd-site-address-20260905']
+    paths: ['.github/workflows/worker-master-mynd-stage.yml']
+permissions:
+  contents: write
+concurrency:
+  group: master-mynd-worker-staging-20260905
+  cancel-in-progress: false
+jobs:
+  stage-reviewed-delta:
+    if: github.ref == 'refs/heads/worker/master-mynd-site-address-20260905' && startsWith(github.event.head_commit.message, 'stage MASTER MYND')
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: worker/master-mynd-site-address-20260905
+          fetch-depth: 1
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Apply exact reviewed public-safe archive to worker branch only
+        env:
+          CANDIDATE_URL: 'https://sdmntprnortheu.oaiusercontent.com/files/00000000-f578-81f4-8d3a-257e9ff9b1fe/raw?se=2026-09-05T18%3A37%3A43Z&sp=r&sv=2026-02-06&sr=b&scid=f963cb34-c51b-5354-b8e7-0e43cf2bf8b1&skoid=002823aa-689d-47ca-9347-108c20f4f00d&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-09-05T05%3A42%3A53Z&ske=2026-09-06T05%3A42%3A53Z&sks=b&skv=2026-02-06&sig=DxrQcDBLOrflzp%2B8mgwN/btynQNyvnIOohj5Oc45Y5A%3D'
+        run: |
+          python - <<'PY'
+          import hashlib,io,json,os,pathlib,urllib.request,zipfile
+          assert os.environ['GITHUB_REF']=='refs/heads/worker/master-mynd-site-address-20260905'
+          with urllib.request.urlopen(os.environ['CANDIDATE_URL'],timeout=60) as response:
+              archive=response.read(2000000)
+          assert len(archive)==639278
+          assert hashlib.sha256(archive).hexdigest()=='e74488f413060d572fec6095b13b134552b3f16dddba8b29a39686f2c630e72a'
+          z=zipfile.ZipFile(io.BytesIO(archive));manifest=json.loads(z.read('candidate-manifest.json'))
+          assert manifest['base_commit']=='529d90898b7172decf46323d6bd58fbc69fb560c'
+          assert len(manifest['files'])==38
+          assert set(z.namelist())=={'candidate-manifest.json'}|{'payload/'+p for p in manifest['files']}
+          pending=[]
+          for name,record in manifest['files'].items():
+              path=pathlib.Path(name)
+              assert not path.is_absolute() and '..' not in path.parts and '.git' not in path.parts
+              assert not name.startswith(('.github/','ops/'))
+              content=z.read('payload/'+name)
+              assert len(content)==record['bytes'] and hashlib.sha256(content).hexdigest()==record['sha256'],name
+              if record['before_sha256'] is None:
+                  assert not path.exists(),name
+              else:
+                  assert path.is_file() and hashlib.sha256(path.read_bytes()).hexdigest()==record['before_sha256'],('baseline collision',name)
+              pending.append((path,content))
+          for path,content in pending:
+              path.parent.mkdir(parents=True,exist_ok=True);path.write_bytes(content)
+          pathlib.Path('/tmp/master-mynd-candidate-manifest.json').write_text(json.dumps(manifest,indent=2))
+          print('38 exact reviewed paths applied; no raw private sources or permission changes; no main write.')
+          PY
+      - name: Validate before committing the worker delta
+        run: |
+          python -m pip install --quiet pillow beautifulsoup4
+          python scripts/validate_master_mynd.py
+          python scripts/validate_operational_identity_registry.py
+          python scripts/reconcile_identity_registry_projections.py --check
+          python scripts/validate_satire_publication_governance.py
+      - name: Commit to the worker branch only; no merge or deployment
+        run: |
+          test "${GITHUB_REF}" = 'refs/heads/worker/master-mynd-site-address-20260905'
+          git config user.name 'Por Derecho worker staging'
+          git config user.email 'noreply@users.noreply.github.com'
+          python - <<'PY'
+          import json,subprocess
+          m=json.load(open('/tmp/master-mynd-candidate-manifest.json'))
+          subprocess.run(['git','add','--',*m['files']],check=True)
+          PY
+          git commit -m 'MASTER MYND: recover approved original, bilingual narrative and existing hotel address record'
+          git push origin HEAD:refs/heads/worker/master-mynd-site-address-20260905
+      - name: Preserve bounded validation receipt
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: master-mynd-worker-staging-receipt
+          path: /tmp/master-mynd-candidate-manifest.json
+          if-no-files-found: ignore
