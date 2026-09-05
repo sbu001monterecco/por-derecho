@@ -10,6 +10,7 @@ import re
 import subprocess
 import tempfile
 import threading
+import traceback
 import urllib.parse
 import urllib.request
 from html.parser import HTMLParser
@@ -96,68 +97,90 @@ class QuietHandler(http.server.SimpleHTTPRequestHandler):
 
 def browser_checks(data, live):
     from playwright.sync_api import sync_playwright
-    server=None;thread=None;temp=None
+    server=None;temp=None
     if live:
         base='https://sbu001monterecco.github.io/por-derecho/'
     else:
         temp=tempfile.TemporaryDirectory();(Path(temp.name)/'por-derecho').symlink_to(ROOT,target_is_directory=True)
         server=http.server.ThreadingHTTPServer(('127.0.0.1',0),functools.partial(QuietHandler,directory=temp.name))
-        thread=threading.Thread(target=server.serve_forever,daemon=True);thread.start()
+        threading.Thread(target=server.serve_forever,daemon=True).start()
         base=f'http://127.0.0.1:{server.server_port}/por-derecho/'
     routes=[r[lang] for r in data['routes'] for lang in ('es','en')]+[data['evidence_reader']]
     static=list(data['analysis'].values())
     screenshots=OUT/'screenshots';screenshots.mkdir(exist_ok=True)
-    reports=[]
+    reports=[];diagnostics=[]
+    def save():
+        (OUT/('live-browser.json' if live else 'local-browser.json')).write_text(json.dumps(reports,indent=2))
+        (OUT/'browser-diagnostics.json').write_text(json.dumps(diagnostics,indent=2))
     try:
         with urllib.request.urlopen(base+PATH,timeout=45) as response:
             served=response.read();content_type=response.headers.get('Content-Type','')
         require(hashlib.sha256(served).hexdigest()==HASH,'Served PDF exact native bytes')
         require('pdf' in content_type.lower(),'Served PDF MIME type')
         with sync_playwright() as p:
-            browser=p.chromium.launch()
+            # One fresh browser process per case: inherited readers and PDF plugin
+            # processes must not accumulate across the 38 full-site page loads.
             for width in (390,1280):
-                context=browser.new_context(viewport={'width':width,'height':900})
                 for route in routes+static:
-                    page=context.new_page();response=page.goto(base+route,wait_until='domcontentloaded',timeout=60000)
-                    require(response is not None and response.status==200,'HTTP200 '+route)
-                    is_static=route in static
-                    selector='#ricpe-channel-analysis' if is_static else '#ricpe-original-accountability'
-                    page.locator(selector).wait_for(state='visible',timeout=45000)
-                    require(page.locator(selector).count()==1,'Single reader/panel '+route)
-                    frame=page.locator(selector+' iframe')
-                    require(frame.count()==1 and PATH in frame.get_attribute('src'),'Native iframe target '+route)
-                    if not is_static:
-                        page.locator(selector+' details').evaluate('(el)=>el.open=true')
-                        require(page.locator(selector+' a').filter(has_text=re.compile('Análisis crítico|Full critical')).count()==1,'Full analysis link '+route)
-                        page.add_script_tag(url=base+'assets/ricpe-original-accountability-20260905.js')
-                        require(page.locator(selector).count()==1,'Idempotent remount '+route)
-                    if is_static:
-                        require(page.locator('body').inner_text().find('35.2.a')>=0,'Protection qualification visible '+route)
-                        require(page.evaluate('document.documentElement.scrollWidth <= innerWidth+1'),'No static-reader horizontal overflow '+route)
-                    if route in ('es/ric-private-equity-sun-park/','en/ric-private-equity-sun-park/'):
-                        require(page.locator('[data-ricpe-historical-status]').count()==1,'Stale front status corrected '+route)
-                    if route in static or route in ('es/ric-private-equity-sun-park/','en/ricpe-perimeter-shareholders-media/'):
-                        page.screenshot(path=str(screenshots/(str(width)+'-'+route.replace('/','_')+'.png')),full_page=False,animations='disabled')
-                    reports.append({'route':route,'width':width,'browser':'chromium','javascript':True,'passed':True})
-                    page.close()
-                context.close()
+                    print('BROWSER CASE',width,route,flush=True)
+                    browser=p.chromium.launch();context=None
+                    case={'route':route,'width':width,'browser':'chromium','javascript':True}
+                    try:
+                        context=browser.new_context(viewport={'width':width,'height':900})
+                        page=context.new_page();page.set_default_timeout(45000)
+                        page.on('crash',lambda _page,c=case:diagnostics.append(dict(c,event='page-crash')))
+                        page.on('pageerror',lambda error,c=case:diagnostics.append(dict(c,event='pageerror',message=str(error))))
+                        response=page.goto(base+route,wait_until='domcontentloaded',timeout=60000)
+                        require(response is not None and response.status==200,'HTTP200 '+route)
+                        is_static=route in static
+                        selector='#ricpe-channel-analysis' if is_static else '#ricpe-original-accountability'
+                        page.locator(selector).wait_for(state='visible',timeout=45000)
+                        require(page.locator(selector).count()==1,'Single reader/panel '+route)
+                        frame=page.locator(selector+' iframe')
+                        require(frame.count()==1 and PATH in frame.get_attribute('src'),'Native iframe target '+route)
+                        if not is_static:
+                            require(page.locator(selector+' a').filter(has_text=re.compile('Análisis crítico|Full critical')).count()==1,'Full analysis link '+route)
+                            page.add_script_tag(url=base+'assets/ricpe-original-accountability-20260905.js')
+                            require(page.locator(selector).count()==1,'Idempotent remount '+route)
+                            page.locator(selector+' details').evaluate('(el)=>el.open=true')
+                            require(page.locator(selector+' details').get_attribute('open') is not None,'PDF viewer expands '+route)
+                            frame.wait_for(state='visible',timeout=30000)
+                        if is_static:
+                            require('35.2.a' in page.locator('body').inner_text(),'Protection qualification visible '+route)
+                            require(page.evaluate('document.documentElement.scrollWidth <= innerWidth+1'),'No static-reader horizontal overflow '+route)
+                        if route in ('es/ric-private-equity-sun-park/','en/ric-private-equity-sun-park/'):
+                            require(page.locator('[data-ricpe-historical-status]').count()==1,'Stale front status corrected '+route)
+                        if route in static or route in ('es/ric-private-equity-sun-park/','en/ricpe-perimeter-shareholders-media/'):
+                            page.screenshot(path=str(screenshots/(str(width)+'-'+route.replace('/','_')+'.png')),full_page=False,animations='disabled',timeout=30000)
+                        reports.append(dict(case,passed=True));save()
+                    except Exception:
+                        diagnostics.append(dict(case,event='case-failed',traceback=traceback.format_exc()));save();raise
+                    finally:
+                        if context:
+                            try:context.close()
+                            except Exception:pass
+                        try:browser.close()
+                        except Exception:pass
             # Complete static analysis and PDF links remain accessible without JavaScript.
             for kind in ('chromium','firefox'):
                 engine=p.chromium if kind=='chromium' else p.firefox
-                other=engine.launch();context=other.new_context(java_script_enabled=False,viewport={'width':390,'height':900})
                 for route in static:
-                    page=context.new_page();page.goto(base+route,wait_until='domcontentloaded')
-                    require(page.locator('#control').count()==1 and page.locator('iframe').count()==1,'No-JS complete reader '+kind+' '+route)
-                    require('35.2.a' in page.locator('body').inner_text(),'No-JS legal qualification '+kind+' '+route)
-                    reports.append({'route':route,'width':390,'browser':kind,'javascript':False,'passed':True});page.close()
-                context.close();other.close()
-            context=browser.new_context();page=context.new_page();page.goto(base+'en/puzzle/',wait_until='domcontentloaded');page.add_script_tag(url=base+'assets/ricpe-original-accountability-20260905.js')
-            require(page.locator('#ricpe-original-accountability').count()==0,'Out-of-scope page unchanged')
-            context.close();browser.close()
+                    other=engine.launch();context=other.new_context(java_script_enabled=False,viewport={'width':390,'height':900})
+                    try:
+                        page=context.new_page();page.goto(base+route,wait_until='domcontentloaded')
+                        require(page.locator('#control').count()==1 and page.locator('iframe').count()==1,'No-JS complete reader '+kind+' '+route)
+                        require('35.2.a' in page.locator('body').inner_text(),'No-JS legal qualification '+kind+' '+route)
+                        reports.append({'route':route,'width':390,'browser':kind,'javascript':False,'passed':True});save()
+                    finally:context.close();other.close()
+            browser=p.chromium.launch();context=browser.new_context()
+            try:
+                page=context.new_page();page.goto(base+'en/puzzle/',wait_until='domcontentloaded');page.add_script_tag(url=base+'assets/ricpe-original-accountability-20260905.js')
+                require(page.locator('#ricpe-original-accountability').count()==0,'Out-of-scope page unchanged')
+            finally:context.close();browser.close()
     finally:
         if server:server.shutdown();server.server_close()
         if temp:temp.cleanup()
-        (OUT/('live-browser.json' if live else 'local-browser.json')).write_text(json.dumps(reports,indent=2))
+        save()
     return reports
 
 def main():
