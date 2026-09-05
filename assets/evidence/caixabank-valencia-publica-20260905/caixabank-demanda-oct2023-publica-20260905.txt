@@ -1,0 +1,1092 @@
+PAGINA 1
+1
+AL JUZGADO DE PRIMERA INSTANCIA DE VALENCIA QUE POR TURNO
+CORRESPONDA
+DON RAMÓN BIFORCOS SANCHO, Procurador de los Tribunales, en nombre y
+representación de AWESWELL LIMITED, inscrita en el Register of Companies for England
+and Wales, el 25 de julio de 2011, con el número 07716847, con NIF N8262488C, y domicilio
+en ABG Accountants, 20 City Road, London EC1Y 2AB (Reino Unido) conforme apoderamiento
+que se acompaña como DOC N.º 0, y bajo la dirección letrada de Don Javier Sixto Seijas,
+colegiado 99.513 del Ilustre Colegio de Abogados de Madrid, ante el Juzgado comparezco y como
+mejor proceda en derecho DIGO:
+Que en la indicada representación y por medio del presente escrito formulo, al amparo del artículo
+122 del Real Decreto Legislativo 1/2020, de 5 de mayo en relación con el artículo 399 de la Ley
+de Enjuiciamiento Civil, DEMANDA DE JUICIO ORDINARIO contra CAIXABANK S.A.
+con domicilio social en 46002 Valencia, Calle Pintor Sorolla, 2-4 con NIF A08663619, inscrita
+en el Registro Mercantil de Valencia, Tomo 10370, Folio 1, Hoja V-178351, e inscrita en el
+Registro Administrativo Especial del Banco de España con el número 2100. como sucesora tanto
+de BANKIA S.A., como de la CAJA INSULAR DE AHORROS DE CANARIAS.
+I. SOBRE LOS HECHOS DE LA DEMANDA
+PREVIO. – INTERPOSICIÓN DE LA DEMANDA POR EL ACREEDOR.
+(1)
+La demandante, AWESWELL LIMITED es acreedora de la sociedad en concurso Luchy Playa
+Blanca (en adelante LPB). Se adjunta Auto de 16 de abril de 2018 del Juzgado de lo Mercantil
+N.º 1 de Las Palmas de Gran Canaria, en el que se refleja la condición de acreedor de la mercantil
+AWESWELL LIMITED, como DOC N.º 1.
+(2)
+Tras el oportuno informe de viabilidad, la Administración Concursal de LPB, envía un escrito,
+con fecha 25 de enero de 2021, al Juzgado de lo Mercantil N.º 1 de Las Palmas de Gran Canaria
+solicitando prórroga de las operaciones de liquidación en el que reconoce que la entidad Aweswell
+Ltd., ha solicitado a la AC ejercitar contra Bankia la acción prevista en el art. 1.101 del CC en
+relación con el denominado “Contrato de gestión de riesgos financieros de fecha 17 de junio de
+2008”[…] Tras aportar informe de viabilidad suscito [sic] por letrado, la AC ha aceptado la
+interposición de la reclamación por considera [sic]  que, de prosperar, puede ser beneficiosa
+Copia publica disociada - 05-09-2026. Original firmado conservado; firma y verificadores no reproducidos.
+
+
+PAGINA 2
+2
+para el concurso por motivos obvios, en los términos, esencialmente, siguiente: a) La entidad
+Aweswell, Ltd. Asumirá todos los gastos derivados de la reclamación, incluidos los honorarios
+de letrado y procurador que se contraten por la AC a esos efectos. Se adjunta escrito de la
+Administración Concursal como DOC N.º 2.
+(3)
+Sin embargo, a pesar de cumplir con la garantía de pago que exigía la Administración Concursal,
+ésta no contrató a ningún letrado para la interposición de esta demanda ni permitió, posteriormente
+y ante su inacción, la presentación de la demanda realizada por el equipo legal contratado por
+Aweswell Limited.
+(4)
+Así, cumpliendo los requisitos establecidos en el artículo 122.1 del Real Decreto Legislativo
+1/2020, de 5 de mayo -es decir, instando por escrito a la administración concursal el ejercicio de
+una acción de carácter patrimonial que corresponde al concursado, con expresión de las concretas
+pretensiones en que consistía y de la fundamentación jurídica de cada una de ellas, y no habiendo
+el Administrador Concursal interpuesto la demanda que ahora se formula - la entidad Aweswell
+Limited se ve en la necesidad de ejercitar esta acción subsidiaria a su costa y en interés de la masa.
+PRIMERO. – VISIÓN GENERAL Y COMPRENSIÓN DE LA SITUACIÓN.
+(5)
+La sociedad Luchy Playa Blanca se constituye el 23 de mayo de 2008 con el objeto de realizar la
+compra del complejo turístico Sun Park. Para la realización de esta operación, LPB elabora un
+detallado plan de negocio que, entre otros puntos, incluía la obtención de financiación con un
+periodo de carencia suficiente para la ejecución de las obras de mejora necesarias en el complejo
+y su reposicionamiento con carácter previo al inicio de la explotación. Una vez finalizadas las
+obras y las operaciones de reposicionamiento, las proyecciones financieras, en línea con los
+resultados anuales obtenidos por la explotadora existente hasta ese momento, indicaban que los
+ingresos de explotación del propio Complejo serían suficientes para cubrir las cuotas de la
+financiación.
+(6)
+De esta forma, el 17 de junio de 2008 se suscribe un préstamo con garantía hipotecaria otorgado
+por la Caja Insular de Ahorros de Canarias (en adelante la Caja) a favor de LPB por importe de
+ocho millones seiscientos mil euros (8.600.000 euros) a un tipo fijo anual del 6.25% durante los
+seis primeros meses y, posteriormente a tipo variable referenciado al EURIBOR a un año, más un
+diferencial de 1,50%, con una cláusula suelo del 3,50%, por un plazo de 16 años y un periodo de
+carencia inicial de 12 meses. Se adjunta escritura del préstamo con garantía hipotecaria como
+DOC N.º 3.
+(7)
+En esa misma fecha, se suscribe un Contrato de Gestión de Riesgos Financieros para, en
+palabras del propio contrato, optimizar el riesgo financiero al que se veía expuesto con la
+contratación de este préstamo con garantía hipotecaria. Bajo ese nombre tranquilizador, realmente
+Copia publica disociada - 05-09-2026. Original firmado conservado; firma y verificadores no reproducidos.
+
+
+PAGINA 3
+3
+se estaba contratando una permuta financiera (o swap) de tipos de interés por un nocional de cinco
+millones de euros (5.000.000 euros) con inicio el 7 de junio de 2008 y finalización el 7 de enero
+de 2012. Sin embargo, lejos de optimizar ese riesgo, este contrato supuso un sobrecoste de
+quinientos setenta y tres mil quinientos noventa y un euros con cincuenta y tres céntimos
+(573.592,53 euros). Se adjunta Contrato de Gestión de Riesgos Financieros como DOC N.º 4.
+(8)
+Ante esta situación, y sin estar el Complejo a pleno rendimiento, el 27 de mayo de 2010, LPB
+realiza una serie de operaciones de refinanciación con la Caja de Insular de Ahorros de Canarias:
+a.
+Se suscribe una ampliación del periodo de carencia del préstamo con garantía
+hipotecaria, sin modificar el plazo de vencimiento pactado, incrementando el
+diferencial sobre el EURIBOR al 2,00%. Se adjunta escritura de la modificación
+del primer préstamo hipotecario como DOC N.º 5
+b.
+Se suscribe un nuevo préstamo con garantía hipotecaria por importe de
+ochocientos cincuenta mil euros (850.000 euros), a un tipo fijo anual del 3.50%
+durante los seis primeros meses y, posteriormente a tipo variable referenciado al
+EURIBOR a un año, más un diferencial de 2,00%, con una cláusula suelo del
+3,50%, por un plazo de 14 años (coincidiendo este plazo de amortización con el
+del primer préstamo hipotecario) y un periodo de carencia inicial de 18 meses.
+Se adjunta escritura del préstamo con garantía hipotecaria como DOC N.º 6.
+c.
+Se constituye un derecho real de prenda sobre los derechos de crédito contenidos
+en un depósito a plazo por importe de cuatrocientos cinco mil euros (405.000
+euros) como garantía de los dos préstamos con garantía hipotecaria y el Contrato
+de Gestión de Riesgos Financieros. Se adjunta póliza de pignoración como DOC
+N.º 7.
+(9)
+Finalmente, debido al sobrecoste financiero inesperado y viendo limitada su capacidad de hacer
+frente a las obligaciones ocultas derivadas de esta financiación, y con el objeto de proteger la
+masa patrimonial, LPB se ve obligada, el 4 de junio de 2012, a solicitar la entrada en situación de
+concurso voluntario, el cual, bajo número 36/2012 se sustancia en el Juzgado de lo Mercantil nº1
+de Las Palmas de Gran Canaria.
+SEGUNDO. – LA CONDICIÓN DE LPB Y EL CONTEXTO EN EL QUE SUSCRIBIERON
+LOS CONTRATOS
+(10)
+En primer lugar, con carácter previo a desarrollar los pormenores de esta financiación y la
+existencia de contratos y cláusulas abusivas, creemos necesario establecer tres premisas:
+Copia publica disociada - 05-09-2026. Original firmado conservado; firma y verificadores no reproducidos.
+
+
+PAGINA 4
+4
+a.
+Dada la fecha de la contratación es plenamente aplicable la Directiva MiFID,
+cuya transposición al ordenamiento jurídico español se efectuó por la Ley
+47/2007 que modifica los artículos 78 y siguiente de la LMV, posteriormente
+desarrollados por el Real Decreto 217/2008.
+b.
+LPB ostentaba la condición de cliente minorista de acuerdo con la categoría
+MiFID. Esta condición no solo es reconocida por la propia Caja en la
+documentación aportada, sino que no resulta, en modo alguno, controvertida al
+tratase de una persona ajena a toda operativa de especulación financiera que
+ostenta el nivel máximo de protección, tanto a nivel de información y
+comprensión de los productos financieros que se están adquiriendo, como en la
+acreditación de que dicha información se ha realizado. (SAP Barcelona, de 25
+de marzo de 2013). Se adjunta contrato básico de servicios de inversión como
+DOC N.º 8; en él se observa tanto la condición de cliente minorista como la no
+realización de los test a que nos referimos en el punto siguiente
+c.
+De acuerdo, nuevamente, con la documentación aportada, la Caja reconoce que
+no se ha realizado ni el correspondiente test de conveniencia ni el test de
+idoneidad a que se refiere la citada Directiva.
+(11)
+A este respecto, conforme a la doctrina fijada a partir del marco normativo de la Directiva MiFID
+el cliente debe ser informado por el banco antes de la perfección del contrato de los riesgos que
+comporta la operación especulativa, como consecuencia del deber general de actuar conforme a
+las exigencias de la buena fe que se contienen en el artículo 7 del Código Civil, y para el
+cumplimiento de ese deber de información no basta con que esta sea imparcial, clara y no
+engañosa, sino que deberá incluir de manera comprensible información adecuada sobre los
+instrumentos financieros y las estrategias de inversión y también orientaciones y advertencias
+sobre los riesgos asociados a tales instrumentos o estrategias. (STS de 8 de julio de 2014)
+(12)
+De esta forma, para articular adecuadamente ese deber legal que se impone a la entidad
+financiera con la necesidad que el cliente minorista tiene de ser informado (conocer el producto
+financiero que contrata y los concretos riesgos que lleva asociados) y salvar así el desequilibrio
+de información que podía viciar el consentimiento por error, la normativa MiFID impone a la
+entidad financiera otros deberes que guardan relación con ese conflicto de intereses que se da
+en la comercialización de un producto financiero complejo como son la realización del test de
+conveniencia -cuando la entidad financiera opera como simple ejecutante de la voluntad del
+cliente previamente formada, dirigido a evaluar si es capaz de comprender los riesgos que
+implica el producto o servicio de inversión que va a contratar-, y el test de idoneidad cuando el
+servicio prestado es de asesoramiento financiero , dirigido además de a verificar la anterior
+Copia publica disociada - 05-09-2026. Original firmado conservado; firma y verificadores no reproducidos.
+
+
+PAGINA 5
+5
+evaluación , a efectuar un informe sobre la situación financiera y los objetivos de inversión del
+cliente para poder recomendarle ese producto. (STS de 8 de julio de 2014).
+(13)
+Con todo, como se detallará a continuación, en las sucesivas suscripciones de productos
+financieros, LPB fue objeto de un claro abuso por parte de la Caja, imponiendo condiciones y
+cláusulas totalmente abusivas y/o con una información claramente insuficiente y que, llevaron,
+en primer término, a la refinanciación del préstamo hipotecario y, finalmente, a la solicitud de
+declaración de concurso voluntario por parte de LPB.
+TERCERO. – EL CONTRATO DE GESTIÓN DE RIESGOS FINANCIEROS
+(14)
+En el momento de contratación del primer préstamo hipotecario, las entidades financieras estaban
+obligadas a informar a sus deudores hipotecarios con los que hayan suscrito préstamos a tipo de
+interés variable, sobre los instrumentos, productos o sistemas de cobertura del riesgo de
+incremento del tipo de interés que tengan disponibles, esto es, instrumentos que permitiesen
+reducir o anular las pérdidas procedentes de movimientos desfavorables en los tipos de interés.
+(15)
+Siguiendo este mandato, la Caja ofrece lo que en sus condiciones generales define como un marco
+general que le permita gestionar la totalidad o una parte de ese riesgo financiero. Un marco que,
+indica, conlleva un grado de riesgo que podría reducir e incluso anular el beneficio económico
+esperado por el Cliente. Es decir, se estaba ofreciendo un producto que permitía gestionar el
+riesgo de incremento del tipo de interés y que únicamente en un supuesto extraordinario que
+afecte a los mercados el cliente podría ver anulado el beneficio económico, sin indicar, en ningún
+caso, la posibilidad de que este producto resultase gravoso para el cliente.
+(16)
+El producto contratado, un swap de tipos de interés, es una operación de derivados en las que, el
+interesado en cubrirse de la variabilidad de estos tipos, paga unos flujos ciertos a tipo fijo a cambio
+de recibir esos flujos futuros inciertos. Es decir, la teoría es que este contrato convertiría en fijos,
+los tipos de interés variable del préstamo hipotecario. Sin embargo, si analizamos las condiciones
+económicas del contrato observamos que, a favor del cliente, efectivamente, se recibiría esos
+flujos inciertos: el EURIBOR a 3 meses. Sin embargo, a cargo del cliente el producto es más
+complejo que un simple swap de tipos de interés:
+a.
+Durante los dos primeros trimestres, el Cliente paga un tipo variable del
+EURIBOR menos 0,10%. Es decir, con la contratación de este producto, la Caja
+bonifica durante los dos primeros trimestres la hipoteca pasando, en realidad, de
+estar a un tipo variable referenciado al EURIBOR más 1,40%.
+b.
+Durante los trimestres tercero a octavo, ambos incluidos, el cliente pagaría
+EURIBOR 3 MESES – 0,15% si EURIBOR es mayor o igual al tipo del 5,55% en
+Copia publica disociada - 05-09-2026. Original firmado conservado; firma y verificadores no reproducidos.
+
+
+PAGINA 6
+6
+otro caso: 5,15%. Analizando esta cláusula resulta que, en el entorno más
+favorable para LPB, con unos tipos del 5,54% (unas cifras que, repetimos, nunca
+se alcanzaron en la serie histórica) la Caja únicamente recibiría un diferencial del
+1,11% con respecto al EURIBOR a tres meses.
+c.
+Durante los trimestres noveno a decimocuarto, ambos incluidos, el cliente
+pagaría EURIBOR A 3 MESES – 0,15% si EURIBOR es mayor o igual al tipo del
+5,55%. 5,15% si EURIBOR 3 MESES es menor al tipo del 5,55% pero es mayor
+o igual al tipo del 5,15% en otro caso: 4,85%. De igual modo que en los
+trimestres anteriores, en el entorno más favorable para LPB, con unos tipos del
+5,54%, la Caja únicamente recibiría un diferencial del 1,11% con respecto al
+EURIBOR a tres meses.
+(17)
+Sin embargo, sin adentrarnos en los escenarios más desfavorables para LPB y tomando
+únicamente las proyecciones del BCE, con unos tipos previstos del 3,90%, en realidad lo que
+estaba haciendo la Caja era imponer un sobrecoste al cliente del 1,25% durante los trimestres
+tercero a octavo y del 0,95% en los restantes; pasando en realidad, de tener un préstamos
+hipotecario referenciado al EURIBOR más 1,50% a tener un préstamo hipotecario, también
+referenciado al EURIBOR pero, en este caso más el 2,75% y el 2,45% respectivamente. A
+mayor abundamiento, la Caja siempre se reservaba el derecho a suspender el contrato cuando
+concurran circunstancias sobrevenidas en el mercado que, a juicio de La Caja, alteren
+sustancialmente la situación existente del Producto contratado.
+(18)
+Si analizamos la realidad, con unos tipos que llegaron al 0,40% (una circunstancia que,
+entendemos, alteraba sustancialmente la situación pero que, a juicio de La Caja, no lo hizo) lo
+que observamos es un sobrecoste directo, solo por la cobertura de riesgos, que era más de 12
+veces superior al coste de mercado. Además, analizando este producto en relación con el
+préstamo hipotecario y, en particular, con la cláusula suelo fijada en el 3,50%, la combinación de
+ambos productos sólo sirve para que la Caja siempre gane en una relación asimétrica y
+desequilibrada entre la Caja y LPB. Este desequilibro es tal que a gran parte del principal (cinco
+millones de euros) se le estaba aplicando una “clausula suelo” del 8,35% (el 3,5% del préstamo
+hipotecario y el 4,85% del swap), resultando en un suelo efectivo al conjunto del préstamo y sin
+estar reflejado en ninguna de las cláusulas de ninguno de los contratos del 6,35%.
+(19)
+Así, lejos de mitigar ningún riesgo, tal y como indicamos en el primer apartado, este contrato
+supuso unas pérdidas directas de quinientos setenta y tres mil quinientos noventa y un euros
+con cincuenta y tres céntimos (573.591,53 euros). Se adjunta Cuadro A con el impacto del
+swap en el DOC N.º 9. La realidad era que no se estaba contratando ningún instrumento de gestión
+de riesgos financieros sino un derivado financiero, un swap de tipos de interés, calificado como
+Copia publica disociada - 05-09-2026. Original firmado conservado; firma y verificadores no reproducidos.
+
+
+PAGINA 7
+7
+un producto tóxico que, según razona pacíficamente la jurisprudencia, […] constituyen un
+producto complejo y arriesgado en los que se aprecia […] una marcada complejidad dados los
+elementos, índices variables y conceptos económicos que los configuran, por lo que su valoración
+exige formación financiera superior a la que posee la clientela bancaria general. Con todo, ni
+era el idóneo en términos económicos ni se informó de sus riesgos inherentes, provocando
+un error inexcusable sin el cual, este producto, en ningún caso, se hubiese contratado. Por
+lo tanto, este contrato debe ser declarado nulo en su totalidad.
+CUARTO. – LOS PRÉSTAMOS CON GARANTÍAS HIPOTECARIAS: CONDICIONES
+GENERALES DE LA CONTRATACIÓN
+(20)
+La postura de esta parte con respecto a las cláusulas pre-redactadas viene resumida en la SAP de
+Cáceres de 14 de diciembre de 2022 que indica que la existencia de una regulación normativa
+bancaria en cuanto a la organización de las entidades de crédito como en cuanto a los contratos
+de préstamo hipotecarios y as normas de transparencia y protección de los consumidores, no es
+óbice para que la LCGC sea aplicable a los contratos de préstamo hipotecario objeto de esta litis
+(un contrato celebrado entre profesionales). Del mismo modo, la STS de 3 de junio de 2016 indica
+que la Exposición de Motivos de la Ley de Condiciones Generales de la Contratación indica
+claramente que el concepto de abusividad queda circunscrito a los contratos con consumidores,
+pero añade: […] esto no quiere decir que en las condiciones generales entre profesionales no
+pueda existir abuso de una posición dominante. Pero tal concepto se sujetará a las normas
+generales de nulidad contractual. Es decir, nada impide que también judicialmente pueda
+declararse la nulidad de una condición general que sea abusiva cuando se contraria a la buena
+fe y cause un desequilibrio importante entre los derechos y obligaciones de las partes, incluso
+aunque se trate de contratos entre profesionales o empresarios. Por otro lado, asumimos la
+postura de la Audiencia de esta ciudad en el carácter restrictivo de los controles de transparencia
+material cuando el cliente no ostenta la condición de consumidor.
+(21)
+Dicho lo cual, creemos necesario indicar los sobrecostes a los que LPB tuvo que hacer frente
+por cláusulas que, en caso de aplicarse la normativa de protección de Consumidores y Usuarios,
+serían declaradas nulas (STS de 24 de julio de 2020).
+(22)
+Cláusula suelo: Como indicamos en el primer apartado, tanto el préstamo con garantía
+hipotecaria suscrito el 17 de junio de 2008 como el suscrito el suscrito el 27 de mayo de 2010 a
+pesar de que indica que el tipo de interés aplicable es el resultado de la adición al índice o tipo
+de referencia ordinario o sustitutivo el diferencial convenido, lo cierto es que establecen, en una
+redacción idéntica, una condición común que indica, literalmente, que en ambos supuesto de tipo
+ordinario o sustitutivo, el tipo nominal se aplicará con un mínimo del tres coma cincuenta
+(3,50%) anual. No obstante, LPB no fue informada en modo alguno de lo que suponía la
+Copia publica disociada - 05-09-2026. Original firmado conservado; firma y verificadores no reproducidos.
+
+
+PAGINA 8
+8
+aceptación de la citada cláusula, ocultándola en una simple frase dentro de las más de 60 páginas
+de las escrituras de los préstamos hipotecarios, lo que supone un evidente desequilibrio entre las
+prestaciones de una y otra parte. De esta forma, el perjuicio económico por esta única cláusula
+supuso un total de ciento catorce mil doscientos noventa y un euros con nueve céntimos de
+euro (114.291,09 euros) hasta el uno de junio de 2012, última cuota pagada antes de la
+declaración de concurso voluntario; una cifra que ya se elevaba a cuarenta y dos mil
+cuatrocientos sesenta y seis euros con cincuenta y cinco céntimos de euro (42.466,55 euros)
+a la firma de la refinanciación el 27 de mayo de 2010. Se adjunta Cuadro B con el impacto del
+swap en el ya referenciado DOC N.º 9.
+(23)
+Gastos de constitución: Con el mismo carácter leonino de las condiciones de los préstamos
+hipotecarios, en una redacción idéntica, la escrituras de constitución de los dos préstamos indican,
+en su cláusula sexta que serán por cuenta de la parte prestataria todos los gastos de constitución
+del préstamo hipotecario, los de esta escritura y sus copias y los de cancelación y carta de pago
+en su día, tales como aranceles notariales y registrales, los relativos a la constitución,
+cancelación y modificación de la hipoteca, impuestos, arbitrios y contribuciones que afecten a
+la/s finca/s gravada/s, gastos de tramitación de la escritura ante el Registro de la Propiedad y
+Oficinas Liquidadoras, gastos de tasación del/los inmueble/s y primas de seguros de incendios y
+riesgos catastróficos y los derivados del seguro de vida de la parte prestataria cuando fueren
+aplicables. De esta forma con respecto a los Gastos de Notaría, según constan en la contabilidad
+de LPB, con FERA, S.C.P como beneficiario, LPB soportó unos gastos de veintiún mil
+cuatrocientos cincuenta y un euros con cincuenta y nueve céntimos (21.451,59 euros); de los
+cuales, la mitad, debería de haber sido abonada por la Caja, esto es diez mil setecientos
+veinticinco euros con setenta y nueve céntimos de euro (10.725,95 euros) por el primer
+préstamo hipotecario; de tres mil novecientos ochenta y cuatro euros con cuarenta y nueve
+céntimos (3.984,49 euros); de los cuales, la mitad, debería de haber sido abonada por la Caja, esto
+es mil novecientos noventa y dos euros con veinticuatro céntimos de euro (1.992,24 euros)
+por el segundo préstamos hipotecario y de tres mil trescientos cuarenta y dos euros con ochenta
+y tres céntimos (3.342,83 euros); de los cuales, la mitad, debería de haber sido abonada por la
+Caja, esto es mil seiscientos setenta y un euros con cuarenta y un céntimos de euro (1.671,41
+euros) por la modificación del primer préstamo hipotecario. Con respecto a los Gastos de
+gestoría y Registro de la Propiedad, según consta en la Escritura de constitución del préstamo,
+este cometido se le encarga a Gestoría Calzada Fiol, S.L. cuyos gastos ascendieron a cincuenta
+y un mil trescientos cincuenta y siete euros con setenta y nueve céntimos de euro (51.357,79
+euros) por el primer préstamo hipotecario y dieciséis mil doce euros con sesenta y dos céntimos
+de euro (16.012,62 euros) – encargado esta vez a Agencia Robla S.L. – por el segundo préstamo
+hipotecario y la modificación del primer préstamo.
+Copia publica disociada - 05-09-2026. Original firmado conservado; firma y verificadores no reproducidos.
+
+
+PAGINA 9
+9
+(24)
+Comisiones de apertura: La caja no justifica en ningún momento el servicio o gasto real y
+efectivo ni se conoce ni acreditó la proporcionalidad de esta comisión (STJUE de 16 de julio de
+2020). Así, LPB ha soportado un sobrecoste de cincuenta y un mil seiscientos euros (51.600
+euros) por el primer préstamo hipotecario, ocho mil quinientos euros (8.500 euros) por el
+segundo préstamo hipotecario y ocho mil euros (8.000 euros) por la modificación del primer
+préstamo hipotecario.
+(25)
+Otras comisiones y gastos sin justificación: Del estudio del extracto del primer préstamo que
+esta parte dispone, y a falta de más información que fue solicitada a la Caja y de la que no
+obtuvimos respuesta observamos dos cuestiones para las que no tenemos justificación. Así, desde
+el primer pago el uno de agosto de 2010 se empieza a cobrar una serie de comisiones y demoras
+con valores de cierta entidad, pero lo suficientemente pequeños como para quedar “camuflados”
+en la cuota del préstamo. En total, y con la información que disponemos, del 17 de junio de 2008
+al 22 de octubre de 2009 y del 1 de enero de 2010 al 1 de mayo de 2010 se han cobrado, por estas
+cantidades “ocultas” veintiocho mil quinientos setenta y dos euros con ochenta y dos céntimos
+de euro (28.572,82 euros).
+QUINTO. – CONSECUENCIAS ECONÓMICAS
+(26)
+Con todo lo expuesto hasta el momento, cabe analizar las consecuencias económicas que supuso
+para LPB padecer estos abusos por parte de la Caja. Así, en primer lugar, en el momento de la
+refinanciación, el 27 de mayo de 2010, LPB ya había soportado un sobrecoste mínimo de
+cuatrocientos veintidós mil ciento cincuenta y cuatro euros con veinte céntimos (422.154,20
+euros). De esta forma, uniendo esta cantidad al depósito de cuatrocientos cinco mil euros
+(405.000 euros) que LPB tuvo que pignorar durante la refinanciación del 27 de mayo de 2010
+arroja una cantidad de ochocientos veintisiete mil ciento cincuenta y cuatro euros con veinte
+céntimos (827.154,20 euros), una cifra muy similar al importe del segundo préstamo hipotecario.
+La deducción es muy sencilla, si no se hubiese suscrito el contrato de gestión de riesgos
+financieros, LPB no hubiese tenido que suscribir un segundo préstamo hipotecario ni
+ampliado el periodo de carencia del primero con la consecuente subida del diferencial ni, por
+supuesto, pignorar (más bien transferir directamente) cuatrocientos cinco mil euros.
+(27)
+Continuando con el argumento anterior, en el momento de la declaración del Concurso voluntario,
+el 4 de junio de 2012, LPB habría soportado un sobrecoste únicamente por el impacto del swap y
+del depósito (transferencia directa) de novecientos setenta y ocho mil quinientos noventa y un
+euros con cincuenta y tres céntimos de euro (978.591,53 euros).
+(28)
+A este respecto, entendemos conveniente resaltar que, en el momento de la refinanciación, el 27
+de mayo de 2010, LPB constituye, según lo establecido en la Póliza de elevación a público una
+Copia publica disociada - 05-09-2026. Original firmado conservado; firma y verificadores no reproducidos.
+
+
+PAGINA 10
+10
+prenda sobre el derecho de crédito que representa un depósito a plazo por importe de 405.000
+euros. Sin embargo, según se desprende del extracto bancario ese importe, en su totalidad, se
+transfiere a una cuenta titularidad del banco ese mismo día. Es decir, en realidad LPB no estaba
+suscribiendo un préstamo de 850.000 euros y aportando una garantía de 405.000 euros. En
+realidad, estaba solicitando un préstamo de 445.000 euros e ingresando, directamente al banco, la
+cantidad de 405.000 euros.  Se adjunta el movimiento de la cuenta como DOC N.º 10.
+(29)
+A esta cantidad habría que añadirle el impacto del incremento del medio punto en la
+refinanciación del primer préstamo hipotecario y a los intereses del segundo préstamo hipotecario
+hasta la entra en concurso voluntario:
+a.
+Por intereses del segundo préstamo hipotecario hasta la entrada en concurso
+voluntario sesenta y tres mil ochocientos ochenta y dos euros con noventa y
+tres céntimos (63.882,93 euros). Se adjunta Cuadro C con el impacto de estos
+intereses en el ya mencionado DOC N.º 9
+b.
+Por el incremento del medio punto al que se vio forzada a aceptar en la
+modificación del periodo de carencia del primer préstamo supuso ochenta y un
+mil novecientos setenta y un euros con treinta y ocho céntimos (81.971,38
+euros). Se adjunta Cuadro D con el impacto del medio punto en el indicado
+DOC N.º 9
+(30)
+En resumen, y con los cálculos que realiza esta representación según nuestro leal saber y entender
+y sin perjuicio de que, en caso de sentencia estimatoria, están cantidades serían determinables en
+ejecución de sentencia si fuese necesario, estimamos que el perjuicio total causado por estos
+instrumentos en LPB asciende a un millón ciento veinticuatro mil cuatrocientos cuarenta y
+cinco euros con ochenta y cuatro céntimos (1.124.445,84 euros) más los intereses y costas
+correspondientes.
+III. DOCUMENTAL
+x
+DOC Nº0: Poder de representación
+x
+DOC Nº1: Auto de aprobación del plan definitivo
+x
+DOC Nº2: Autorización de la administración concursal
+x
+DOC Nº3: Escritura del primer préstamo hipotecario
+x
+DOC Nº4: Contrato de Gestión de Riesgos Financieros.
+x
+DOC Nº5: Escritura de modificación del primer préstamo hipotecario
+x
+DOC Nº6: Escritura del segundo préstamo hipotecario
+x
+DOC Nº7: Póliza de Pignoración de Depósito
+Copia publica disociada - 05-09-2026. Original firmado conservado; firma y verificadores no reproducidos.
+
+
+PAGINA 11
+11
+x
+DOC Nº8: Contrato de Servicios de Inversión
+x
+DOC Nº9: Cuadros económicos
+x
+DOC Nº10: Movimiento de cuentas
+x
+DOC Nº11: Comunicaciones
+III. FUNDAMENTOS DE DERECHO
+I. – JURISDICCIÓN Y COMPETENCIA
+(31)
+Corresponde a la jurisdicción civil, con arreglo a lo establecido en los artículos 9.2ª. y 21. 1ª de
+la Ley Orgánica del Poder Judicial.
+II. - LEGITIMACIÓN
+(32)
+Esta parte está legitimada por su condición de acreedor, habiendo efectuado el requerimiento
+previo a la Administración Concursal en los términos previstos en el artículo 122 del Real Decreto
+Legislativo 1/2020, de 2 de mayo. La legitimación pasiva corresponde a CAIXABANK como
+parte acreditante de los contratos indicados.
+III. - PROCEDIMIENTO
+(33)
+Procede la tramitación de este procedimiento por los cauces del juicio declarativo ordinario
+(artículos 399 y siguientes de la Ley de Enjuiciamiento Civil), en virtud de lo dispuesto en el
+artículo 249.2 del mismo texto legal.
+IV. - PLAZO
+(34)
+Es de aplicación el art. 1301 del Código Civil que establece que la acción de nulidad durará cuatro
+años que comenzará a correr, en el caso de error o dolo, desde la concertación del contrato. En
+este supuesto, la acción se interpone en plazo. El Tribunal Supremo ha declarado con reiteración,
+entre las más recientes en sentencia de 9 mayo 2007, que el plazo de cuatro años que fija el artículo
+1301 del Código Civil para el ejercicio de la acción de nulidad es aplicable a las acciones
+ejercitadas para solicitar la declaración de nulidad de los contratos y, por extensión, de los demás
+negocios jurídicos que 'adolezcan de algunos de los vicios que los invalidan con arreglo a la ley'.
+Esta acción de nulidad está afectada por el instituto de la prescripción y no de caducidad. (STS
+Copia publica disociada - 05-09-2026. Original firmado conservado; firma y verificadores no reproducidos.
+
+
+PAGINA 12
+12
+de 25 de abril de 1.960, 28 de marzo de 1.965, 28 de octubre de 1.974, 27 de marzo de 1.987 y 27
+de marzo de 1.989 como las más emblemáticas) lo que conlleva, entre otras consecuencias, la
+imposibilidad de apreciar su existencia de oficio (STS de 27 de febrero de 1997), así como su
+carácter interrumpible (AP Barcelona 27-2-04).
+(35)
+En primer lugar, es necesario destacar que, a efectos del ejercicio de la acción de nulidad por
+error, la consumación de los contratos de swaps debe entenderse producida en el momento del
+agotamiento, de la extinción del contrato. En los contratos de swaps o cobertura de hipoteca no
+hay consumación del contrato hasta que no se produce el agotamiento o la extinción de la
+relación contractual, por ser entonces cuando tiene lugar el cumplimiento de las prestaciones
+por ambas partes y la efectiva producción de las consecuencias económicas del contrato. Ello en
+atención a que en estos contratos no existen prestaciones fijas, sino liquidaciones variables a
+favor de uno u otro contratante en cada momento en función de la evolución de los tipos de interés
+(STS de 25 de noviembre de 2020)
+(36)
+En segundo lugar, el Código civil no exige fórmula instrumental alguna para la reclamación
+extrajudicial como medio para interrumpir la prescripción, por lo que cualquiera de ellos puede
+servir para tal fin; el intercambio de correspondencia entre las partes es suficiente para
+fundamentar una interrupción extraprocesal del plazo de prescripción (STS de 2 de noviembre
+de 2005). A este respecto, se adjunta el DOC N.º 11 como prueba de las reclamaciones
+extrajudiciales desde el 7 de enero de 2012 (fecha de consumación del contrato) hasta el día de
+hoy, interrumpiendo la prescripción de la acción.
+V. - FONDO
+(37)
+En cuanto al fondo del asunto, resumiremos brevemente las pretensiones de mi representada, antes
+de ir detallando los preceptos legales aplicables en cada caso:
+PREVIO. - Apunte Macroeconómico
+PRIMERO. - Las obligaciones de información de las entidades financieras en la
+contratación de productos financieros complejos.
+SEGUNDO. - Error vicio del consentimiento
+TERCERO. - Consecuencias jurídicas de la anulación del contrato. Intereses.
+CUARTO. - Consecuencias jurídicas de la anulación del contrato. Vinculación de los
+productos.
+QUINTO. – Acción subsidiaria de indemnización por daños y perjuicios.
+Copia publica disociada - 05-09-2026. Original firmado conservado; firma y verificadores no reproducidos.
+
+
+PAGINA 13
+13
+PREVIO. – APUNTE MACROECONÓMICO.
+(38)
+El 17 de junio de 2008, fecha de la firma del primer préstamo hipotecario y del Contrato de
+Gestión de Riesgos Financieros, es un periodo particularmente convulso en términos
+macroeconómicos. Sin pretender realizar un informe técnico, sí creemos conveniente realizar
+varios apuntes relativos a los tipos de interés aplicados en ese momento y a las proyecciones
+existentes que resultan imprescindibles para comprender las conclusiones a las que llegaremos en
+los puntos posteriores. Además, de esta primera fecha clave, consideramos también de capital
+importancia el 27 de mayo de 2010, fecha de la refinanciación que incluye, entre otros, la
+suscripción del segundo préstamo hipotecario. Estos apuntes se centrarán en el comportamiento
+del índice EURIBOR, el Banco Central Europeo (en adelante BCE) y su tipo de referencia y el
+tipo de referencia de la Reserva Federal estadounidense (en adelante FED).
+(39)
+Tanto los préstamos hipotecarios como el Contrato de Gestión de Riesgos Financieros están
+ligados al EURIBOR que se define como un índice del interés al que un banco principal ofrece
+los depósitos interbancarios a plazo en euros a otro banco principal dentro de la zona del euro
+y se basa en las ofertas individuales de los tipos de interés de los bancos del panel, que cada uno
+de ellos considera que aplicaría un hipotético banco principal para prestar fondos a otro banco
+principal. Es decir, es un índice formado por las entidades financieras para la aplicación por parte
+de las entidades financieras. Estos bancos del panel incluyen los principales bancos europeos,
+entre ellos Cecabank, heredero desde 2012 de la CECA (Confederación Española de Cajas de
+Ahorro) y de la que formaba parte, antes de su disolución, la Caja Insular de Ahorros de Canarias.
+(40)
+Este índice, además, fue objeto de manipulación por una parte de los bancos del panel desde
+2005 a 2008. Así, la Decisión de la Comisión de 4 de diciembre de 2013, revela la restricción o
+el falseamiento de la competencia en el sector de los derivados sobre tipos de interés en euros
+relacionados con el tipo de interés de oferta en el mercado interbancario del euro (EURIBOR).
+Con esta manipulación se pretendía una alteración de las expectativas de los mercados con
+respecto a este índice.
+(41)
+Si analizamos el comportamiento del EURIBOR a 3 meses (el de referencia en la mayoría de los
+préstamos y con un comportamiento prácticamente idéntico al del EURIBOR a 12 meses, el de
+referencia en los préstamos hipotecarios concedidos a LPB) se observa un estancamiento de los
+tipos entre el 2,00% y el 2,20% desde 2003 hasta, curiosamente, el 2005, fecha de inicio de la
+manipulación de los tipos. A partir de ese momento, inicia una escalada continua hasta diciembre
+de 2007 en el que marca un pico del 4,95%. A partir de ese momento y hasta la primera fecha de
+importancia, el 27 de junio de 2008, se mantiene en ese rango con picos del 4,96% y suelos del
+4,36%. Además, en ningún momento de la serie histórica previa a la firma de los contratos se
+llega a un tipo del 5,15% que, como se detallará en los puntos siguientes, es de especial relevancia
+Copia publica disociada - 05-09-2026. Original firmado conservado; firma y verificadores no reproducidos.
+
+
+PAGINA 14
+14
+en el Contrato de Gestión de Riesgos Financieros. Con respecto a la segunda fecha de importancia,
+el 27 de mayo de 2010, el EURIBOR a 3 meses se encontraba estable, después de un fuerte
+descenso durante todo el 2009, marcando un tipo de 0,7% en esta fecha y continuando esa
+tendencia hasta el vencimiento del Contrato de Cobertura en el año 2012.
+(42)
+Aunque los contratos estuviesen ligados al EURIBOR, el índice de referencia del BCE, definido
+como la tarifa que los bancos deben abonar al obtener dinero del Banco Central Europeo en
+préstamo, está íntimamente relacionado con éste y, además, al estar libre de la volatilidad de los
+mercados es un buen indicador para las proyecciones a medio y largo plazo del comportamiento
+de los tipos de interés. A este respecto, este tipo de mantuvo estable, desde diciembre de 2007
+hasta la firma del primer préstamo hipotecario y del Contrato de Gestión de Riesgos Financieros
+en junio de 2008 en el 4,00%. Con respecto a la segunda fecha clave, el 27 de mayo de 2010, el
+tipo de referencia se mantenía estable desde mayo de 2009 en el 1,00%.
+(43)
+Por otro lado, el BCE publica trimestralmente las Proyecciones Macroeconómicas elaboradas
+por los expertos del BCE para la zona euro. En este informe de marzo de 2008 (último disponible
+en la firma del primer préstamo hipotecario) indicaban una clara tendencia bajista del
+EURIBOR observando un nivel general medio del 4,20% en el 2008 y del 3,50% en el 2009. Este
+mismo informe de marzo de 2010 (último disponible durante la refinanciación de 2010) indicaba
+un mantenimiento de los tipos de interés a corto plazo con un nivel general medio del 0,9%
+durante todo el 2010.
+(44)
+Por último, creemos necesario incluir una pequeña reseña al comportamiento del índice de
+referencia de la FED. El motivo de incluir a esta institución es la gran vinculación del índice de
+referencia del BCE a la inflación. Al igual que se está observando actualmente, en junio de 2008
+las proyecciones indicaban una inflación por encima del 2,00%, cifra crítica para el BCE, que
+fundamenta sus decisiones tomando siempre como pilar fundamental el mantenimiento de una
+inflación por debajo de este 2,00%.
+(45)
+Sin embargo, la política monetaria de la FED no tiene esta restricción y, por ello, es un muy buen
+indicador de la tendencia a medio y largo plazo de los tipos de interés. A este respecto, se puede
+observar que, históricamente, la FED se ha adelantado siempre al BCE en las tendencias alcistas
+y bajistas a medio y largo plazo de los tipos de interés. Así, el 30 de abril de 2008 la FED marca
+unos tipos de 2,00% que confirmaban la tendencia bajista iniciada con la rebaja de medio punto
+en septiembre de 2007. Estos tipos se mantienen hasta octubre de ese mismo año siendo el tipo
+de referencia en la firma del primer préstamo hipotecario en junio de 2008.  Con respecto a la
+segunda fecha clave, el 27 de mayo de 2010, los tipos se mantenían constantes en el 0% desde
+diciembre de 2008, unos tipos que se mantendrían hasta diciembre de 2015.
+Copia publica disociada - 05-09-2026. Original firmado conservado; firma y verificadores no reproducidos.
+
+
+PAGINA 15
+15
+(46)
+Como se desarrollará posteriormente, como indica la Audiencia Provincial de Madrid en su
+sentencia de 6 de noviembre de 2015, no se trata de exigir a la demandada que adivine cual será
+el comportamiento de los valores subyacentes, sino simplemente que la misma realice el análisis
+correspondiente sobre la posible evolución de los valores subyacentes para cuidar de los
+intereses del cliente como de los suyos propios. La entidad demandada, como entidad bancaria
+que se dedica a la comercialización de productos financieros, ha de poseer personal cualificado
+o departamentos especializados que puedan realizar un análisis ponderado y fundamentado de
+tales perspectivas. De esta forma, y sin los conocimientos profundos en instrumentos financieros
+que, se supone, tenía el personal de la Caja, parece obvio que, a la fecha de contratación existían
+posibilidades fundadas de que se produjese una bajada en los tipos de interés; una situación
+que, como se desarrollará en los puntos siguientes, no fue lo suficientemente informada.
+PRIMERO. – LAS OBLIGACIONES DE INFORMACIÓN DE LAS ENTIDADES
+FINANCIERAS EN LA CONTRATACIÓN DE PRODUCTOS FINANCIEROS COMPLEJOS.
+(47)
+Ordinariamente existe una desproporción entre la entidad que comercializa servicios financieros
+y su cliente, salvo que se trate de un inversor profesional. La complejidad de los productos
+financieros propicia una asimetría informativa en su contratación, lo que ha provocado la
+necesidad de proteger al inversor minorista no experimentado en su relación con el proveedor de
+servicios financieros. Como se ha puesto de manifiesto en la doctrina, esta necesidad de
+protección se acentúa cuando las entidades financieras al comercializar estos productos, debido a
+su complejidad y a la reseñada asimetría informativa, no se limitan a su distribución sino que
+prestan al cliente un servicio que va más allá de la mera y aséptica información sobre los
+instrumentos financieros, en la medida en que ayudan al cliente a interpretar esta información y a
+tomar la decisión de contratar un determinado producto.
+(48)
+En este contexto se enmarca la Ley 47/2007, de 19 de noviembre, por la que se modifica la Ley
+24/1988, de 28 de julio, del Mercado de Valores. Esta Ley tuvo como finalidad la incorporación
+al ordenamiento jurídico español de tres directivas europeas: la Directiva 2004/39/CE, la
+Directiva 2006/73/CE y la Directiva 2006/49/CE. Las dos primeras, junto con el Reglamento (CE)
+1287/2006, de directa aplicación desde su entrada en vigor el 1 de noviembre de 2007, constituyen
+lo que se conoce como normativa MiFID, que creó un marco jurídico único armonizado en toda
+la Unión Europea para los mercados de instrumentos financieros y la prestación de servicios de
+inversión.
+(49)
+Además, ha de tenerse presente que el Real Decreto 217/2008, de 15 de febrero, en su redacción
+vigente en el momento de la contratación, establece en su título IV las normas de conducta
+aplicables a quienes prestan servicios de inversión. Resumidamente, tales empresas debían actuar
+Copia publica disociada - 05-09-2026. Original firmado conservado; firma y verificadores no reproducidos.
+
+
+PAGINA 16
+16
+en el ejercicio de sus actividades con imparcialidad y buena fe, sin anteponer los intereses
+propios a los de sus clientes, en beneficio de éstos y del buen funcionamiento del mercado,
+realizando sus operaciones con cuidado y diligencia, según las estrictas instrucciones de sus
+clientes, de quienes debían solicitar información sobre su situación financiera, experiencia
+inversora y objetivos de inversión, ofreciendo y suministrando a sus clientes toda la información
+de que dispongan cuando pudiese ser relevante, debiendo ser ésta clara, correcta, precisa,
+suficiente y entrega a tiempo para evitar su incorrecta interpretación con especial relevancia en
+los riesgos que cada operación conlleva.
+(50)
+Por otro lado, la jurisprudencia del Tribunal Supremo (sentencias 769/2014, de 12 de enero de
+2015, y 676/2015, de 30 de noviembre, entre otras muchas) ha reiterado que es la empresa de
+servicios de inversión quien tiene la obligación de facilitar la información que le impone dicha
+normativa legal, y no son sus clientes - que no son profesionales del mercado financiero y de
+inversión - quienes deben averiguar las cuestiones relevantes en materia de inversión, buscar por
+su cuenta asesoramiento experto y formular las correspondientes preguntas. El cliente debe poder
+confiar en que la entidad de servicios de inversión que le asesora no está omitiendo información
+sobre ninguna cuestión relevante.
+(51)
+Siguiendo esta misma línea, la aleatoriedad característica de estos contratos impone que, como
+señaló la resolución del Servicio de Reclamaciones del Banco de España de junio de 2009, el
+producto deba ser ofrecido con el soporte informativo necesario, de manera que las entidades
+financieras estén en condiciones de acreditar que, con anterioridad a formalizarse la operación,
+se ha facilitado al cliente un documento informativo sobre el instrumento de cobertura ofrecido
+en el que se indiquen sus características principales sin omisiones significativas, considerándose
+en caso contrario que su actuación sería contraria a los principios de claridad y transparencia
+que inspiran las buenas prácticas y usos financieros.
+(52)
+Por último, resulta de aplicación la jurisprudencia establecida por el Tribunal Supremo (STS de
+16 de diciembre de 2012 y STS de 3 de febrero de 2016), indicando que la información contenida
+en los contratos, cuando se trata de un producto complejo, no es suficiente. No basta con que en
+el contrato se haga mención de que el titular asume el riesgo de que la rentabilidad final del
+producto sea negativa pues se trata de una advertencia genérica. Es preciso, tal y como refiere
+la citada jurisprudencia ilustrar los concretos riesgos con algunos ejemplos o escenarios. Dicho
+de otro modo, en el caso de un inversor no profesional, no basta con que la información aparezca
+en las cláusulas del contrato y, por lo tanto, con la mera lectura del documento; es preciso que se
+ilustre el funcionamiento del producto complejo con ejemplos que pongan en evidencia los
+concretos riesgos que asume el cliente.
+Copia publica disociada - 05-09-2026. Original firmado conservado; firma y verificadores no reproducidos.
+
+
+PAGINA 17
+17
+(53)
+Centrándose en el contrato objeto de litigio, ya el propio título contraviene los requisitos de
+claridad y precisión: Contrato de Gestión de Riesgos Financieros, un contrato cuyo objeto
+principal, según la primera cláusula de las condiciones generales era establecer un marco general
+que le permita gestionar la totalidad o parte de ese riesgo financiero. Continúa, en su cláusula
+segunda haciendo una advertencia genérica a un cierto grado de riesgo derivado de factores
+asociados al funcionamiento de los mismos que puede, en supuestos extraordinarios, reducir e
+incluso anular el beneficio económico esperado por el Cliente. Es decir, el cliente asume que,
+con la contratación de este producto, puede llegar a no tener, en supuestos extraordinarios, ningún
+beneficio económico; sin embargo, en ningún caso se advierte de forma clara, concreta y precisa
+que el contrato puede ocasionar pérdidas muy elevadas.
+(54)
+A mayor abundamiento, analizando el funcionamiento concreto del producto y las previsiones del
+BCE a que nos referimos en el Fundamento Previo, la Caja antepuso en todo momento sus propios
+intereses a los intereses del cliente. La Caja era perfectamente consciente de las previsiones de
+bajadas de tipos y del beneficio que este contrato le proporcionaría, además, si estas previsiones
+no se hubiesen complido, siempre podría suspender el contrato en virtud de la estipulación quinta
+alegando que, en caso de pérdidas para la Caja (y, por consiguiente, beneficio para LPB), ésta
+podría considerar que concurrían circunstancias sobrevenidas y suspender la contratación.
+(55)
+En resumen, no estamos ante un contrato en el que simplemente se hubiesen “suavizado” los
+riesgos o que estos no se hubiesen manifestado de forma precisa; estamos directamente ante un
+contrato que, faltando gravemente a la verdad, aparentaba ser un “seguro” ante las fluctuaciones
+de los tipos de interés, siendo en realidad un instrumento financiero tóxico, completamente
+inapropiado para el fin que perseguía LPB y que se comercializó, exclusivamente, para beneficio
+de la Caja, contraviniendo frontalmente las más elementales obligaciones de información
+en la contratación de productos financieros complejos.
+SEGUNDO. -  ERROR VICIO DEL CONSENTIMIENTO.
+(56)
+Hay engaño o dolo si la Caja hizo creer a su cliente que estaba contratando un seguro cuando en
+realidad estaban firmando una operación financiera compleja y arriesgada, si el banco hizo creer
+a su cliente que el contrato no suponía riesgos para la empresa y/o que no tendría coste para el
+cliente. En este caso, estaríamos ante un contrato civil criminalizado que sólo se diferenciaría de
+una estafa por la ausencia de dolo penal, existiendo un engaño previo, un desplazamiento
+patrimonial derivado de aquel y un dolo civil o una negligencia grave reflejada en la falta de
+transparencia o de un consentimiento informado. Del mismo modo, hay error (aunque no hubiera
+voluntad de engaño) si, debido a la insuficiente información proporcionada por la Caja a su
+cliente, este llegó a la misma conclusión. El nexo entre ambas situaciones está en la obligación
+Copia publica disociada - 05-09-2026. Original firmado conservado; firma y verificadores no reproducidos.
+
+
+PAGINA 18
+18
+legal que tiene el banco de proporcionar a sus clientes una información veraz y suficiente sobre
+los productos financieros que les ofrece. La falta de esa información equivale al engaño, pues
+supone el incumplimiento por el banco de una obligación legal. Además, si el deber de suministrar
+información es inherente a cualquier negociación precontractual, conforme a los postulados de la
+buena fe contractual (artículo 7 del Código Civil), adquiere, como detallamos en el apartado
+anterior, en la contratación bancaria y con las entidades financieras en general un carácter de
+obligación legal por la complejidad y por la posición de superioridad que en la contratación
+ostentan las entidades bancarias y financieras frente a sus clientes.
+(57)
+La regulación del error vicio del consentimiento que puede conllevar la anulación del contrato se
+halla contenida en el Código Civil, en el artículo 1266, en relación con el artículo 1265 y los
+artículos 1300 y siguientes. Sobre esta normativa legal, la Sala primera del Tribunal Supremo ha
+elaborado una consolidada doctrina jurisprudencial (Sentencias 683/2012, de 21 de noviembre,
+626/2013, de 29 de octubre y 840/2013, de 20 de enero de 2014): hay error vicio cuando la
+voluntad del contratante se forma a partir de una creencia inexacta. Es decir, cuando la
+representación mental que sirve de presupuesto para la realización del contrato es equivocada o
+errónea.
+(58)
+Esta doctrina ha sido perfectamente esquematizada en la SAP de Valencia de 17 de julio de 2019
+estableciendo cuatro pilares sobre la posible incidencia en el error que tiene el incumplimiento de
+los deberes de información en los instrumentos financieros:
+a.
+El déficit informativo puede hacer presumir el error. Así, en el caso de los
+swaps, el incumplimiento de dicha normativa, fundamentalmente en cuanto a la
+información de los riesgos inherentes a los mismo, tanto en lo que se refiere a la
+posibilidad de liquidaciones periódicas negativas en elevada cuantía como a un
+también elevado coste de cancelación puede hacer presumir el error en quien
+contrató con dicho déficit informativo.
+b.
+La obligación de informar es activa, no de mera disponibilidad: La Caja,
+como empresa de servicios de inversión, tiene la obligación -activa y no de mera
+disponibilidad- de facilitar la información que le impone dicha normativa legal,
+y no son sus clientes -que no son profesionales del mercado financiero y de
+inversión- quienes deben averiguar las cuestiones relevantes en materia de
+inversión, buscar por su cuenta asesoramiento experto y formular las
+correspondientes preguntas. Sin conocimientos expertos en el mercado de
+valores, el cliente no puede saber qué información concreta ha de requerir al
+profesional. Por el contrario, el cliente debe poder confiar en que la entidad de
+servicios de inversión que le asesora no está omitiendo información sobre
+ninguna cuestión relevante. Por ello, la parte obligada legalmente a informar
+Copia publica disociada - 05-09-2026. Original firmado conservado; firma y verificadores no reproducidos.
+
+
+PAGINA 19
+19
+correctamente no puede objetar que la parte que tenía derecho a recibir dicha
+información correcta debió tomar la iniciativa y proporcionarse la información
+por sus propios medios.
+c.
+No resulta suficiente el contenido de la documentación contractual ni el aviso
+genérico sobre los riesgos: en cuanto al aviso genérico sobre la existencia de
+riesgos, no cabe entender suplido el deber de información por el contenido del
+propio contrato de swap, la mera lectura de las estipulaciones contractuales no es
+suficiente y se requiere una actividad suplementaria del banco, realizada con
+antelación suficiente a la firma del contrato, tendente a la explicación de la
+naturaleza del contrato, el modo en que se realizarán las liquidaciones, los riesgos
+concretos que asume el cliente, como son los que se concretaron posteriormente
+en las elevadas liquidaciones negativas practicadas, y la posibilidad de un alto
+coste de cancelación anticipada. no basta una mera ilustración sobre lo obvio, es
+decir, que como se trata de un contrato aleatorio, puede haber resultados positivos
+o negativos, sino que la información tiene que ser más concreta y, en particular,
+advertir debidamente al cliente sobre los riesgos asociados a una bajada
+prolongada y abrupta de los tipos de interés; no se trata de que la Caja pudiera
+adivinar la evolución futura de los tipos de interés, sino de que ofreciera al cliente
+una información completa, suficiente y comprensible de las posibles
+consecuencias de la fluctuación al alza o a la baja de los tipos de interés. De esta
+forma, en este tipo de contratos complejos y arriesgados, como son calificados
+por la STJUE de 30 de mayo de 2013, caso Genil 48. S.L., asunto C-604/2011,
+en los que pueden producirse graves consecuencias patrimoniales para el
+cliente no profesional, de las que un cliente de este tipo no toma conciencia con
+la mera lectura de las estipulaciones contractuales, que contienen términos
+específicos de este mercado y fórmulas financieras de difícil comprensión para
+un profano, el contenido del documento resulta insuficiente y es precisa una
+actividad suplementaria del banco, realizada con antelación suficiente a la
+firma del contrato, para explicar con claridad la naturaleza aleatoria del
+contrato, cómo se realizan las liquidaciones y la cancelación anticipada, y
+cuáles son los concretos riesgos en que podría incurrir el cliente, como son los
+que luego se concretaron en las liquidaciones desproporcionadamente negativas
+para la demandante y en el elevado coste de cancelación que exigió Banco
+Santander. De ahí las obligaciones estrictas y rigurosas que la normativa
+sectorial impone a las entidades financieras respecto de la información que
+deben suministrar a sus clientes. No se trata de abrumar al cliente con fórmulas,
+datos y cifras, que más que dar información, la ocultan, sino de asegurarse de
+Copia publica disociada - 05-09-2026. Original firmado conservado; firma y verificadores no reproducidos.
+
+
+PAGINA 20
+20
+que el cliente ha comprendido la naturaleza y riesgos del producto o servicio
+mediante una explicación clara, imparcial y no engañosa de estos extremos.
+(STS de 10 de enero de 2017)
+d.
+Para poder excluir el error o su excusabilidad son necesarios conocimientos
+especializados en esta clase de productos: la formación necesaria para conocer
+la naturaleza, características y riesgos de un producto complejo y de riesgo como
+es el swap no es la del simple empresario, sino la del profesional del mercado de
+valores o, al menos, la del cliente experimentado en este tipo de productos.
+(59)
+Así, en este supuesto, y teniendo presente la condición de cliente minorista de LPB, ha de
+concluirse que mi representada no podía conocer de manera efectiva los compromisos que estaba
+asumiendo pues, por un lado, la información precontractual recibida, además de insuficiente, era
+parcial y engañosa y, por otro, la información que pudo obtener de la lectura del contrato infundía
+a confusión por la terminología usada; era insuficiente, pues ni relata de manera concreta en que
+consiste el objeto del contrato suscrito ni relata concreta y directamente cuando los actores
+asumían un riesgo económico ni como se cuantificaría el mismo.
+(60)
+A mayor abundamiento, sobre la base de la apreciación legal de la necesidad que el cliente
+minorista tiene de conocer el producto financiero que contrata y los concretos riesgos que lleva
+asociados, y del deber legal que se impone a la entidad financiera de suministrar a dicho cliente
+una información comprensible y adecuada sobre tales extremos, para salvar la asimetría
+informativa que podía viciar el consentimiento por error, la normativa MiFID impone a la entidad
+financiera otros deberes que guardan relación con el conflicto de intereses en que incurre en la
+comercialización de un producto financiero complejo y, en su caso, la prestación de asesoramiento
+financiero para su contratación. En un caso como el presente, en que el servicio prestado fue de
+asesoramiento financiero, el deber que pesaba sobre la entidad financiera no se limitaba a
+cerciorarse de que el cliente minorista conocía bien en qué consistía el swap que contrataba y los
+concretos riesgos asociados a este producto, sino que además debía haber evaluado que en
+atención a su situación financiera y al objetivo de inversión perseguido, era lo que más le
+convenía. En caso de incumplimiento de este deber, lo relevante para juzgar sobre el error vicio
+no es tanto la evaluación sobre la conveniencia de la operación, en atención a los intereses del
+cliente minorista que contrata el swap, como si al hacerlo tenía un conocimiento suficiente de este
+producto complejo y de los concretos riesgos asociados al mismo. La omisión del test que debía
+recoger esta valoración lleva a presumir en el cliente la falta del conocimiento suficiente sobre el
+producto contratado y sus riesgos asociados que vicia el consentimiento. (STS de 20 de enero de
+2014).
+(61)
+En consecuencia, LPB no prestó un consentimiento válido, consciente y eficaz, por lo
+concurre vicio del consentimiento por error en el objeto, de carácter esencial, excusable,
+Copia publica disociada - 05-09-2026. Original firmado conservado; firma y verificadores no reproducidos.
+
+
+PAGINA 21
+21
+sustancial y derivado de actos desconocidos para el que se obliga, y que no se ha podido
+evitar con una regular diligencia, fundamentado en lo dispuesto en los artículos 1261, 1265
+y 1266 del Código Civil y que da lugar a la anulación del contrato.
+TERCERO. – CONSECUENCIAS JURÍDICAS DE LA ANULACIÓN DEL CONTRATO.
+INTERESES.
+(62)
+La STS de 24 de octubre de 2016, dictada también en un caso de nulidad de un instrumento
+financiero por error vicio del consentimiento, indica que los efectos de la nulidad alcanzan a
+ambas partes, comercializadora y adquiriente. Por ello, tales efectos de la nulidad deben ser la
+restitución por la entidad comercializadora del importe de la inversión efectuada por los
+adquirentes, más el interés devengado desde que se hicieron los pagos, y el reintegro por los
+compradores de los rendimientos percibidos más los intereses desde la fecha de cada abono. Esta
+doctrina ya se había sostenido con anterioridad en especial en un caso, como el aquí enjuiciado,
+de permutas financieras de tipos de interés en la STS de 30 de diciembre de 2015.
+(63)
+Ello es así, porque los intereses constituyen en estos casos los frutos o rendimientos de un capital,
+a los que, por virtud de la presunción de productividad de éste, tiene derecho el acreedor en
+aplicación de las reglas sobre la restitución integral de las prestaciones realizadas en cumplimiento
+de contratos declarados ineficaces y la interdicción del enriquecimiento sin causa (STS de 11 de
+febrero de 2003, de 12 de mayo de 2005 y de 8 de enero de 2008, entre otras muchas). Ésta es la
+solución adoptada por los artículos 1295.1 y 1303 del Código Civil, al regular los efectos de la
+rescisión o de la declaración de la nulidad del contrato, mediante una regla que obliga a devolver
+la cosa con sus frutos y el precio con sus intereses y que se aplica, también, a otros supuestos de
+ineficacia que produzcan consecuencias restitutorias de las prestaciones realizadas (STS de 20 de
+julio de 2001, de 27 de octubre de 2005 , de 8 de enero de 2007 y de 23 de noviembre de 2011),
+como sucede, como regla general , con la resolución de las relaciones contractuales.
+(64)
+En consecuencia, declarada la anulación del contrato, deberá condenarse a la Caja a la a
+restitución de las cantidades percibidas por cada una de las cuotas devengadas desde la
+suscripción del contrato de permuta financiera incrementados con sus intereses legales desde
+la fecha de cada entrega.
+CUARTO. – CONSECUENCIAS JURÍDICAS DE LA ANULACIÓN DEL CONTRATO.
+VINCULACIÓN DE LOS PRODUCTOS.
+(65)
+ Ya desde la STS de 10 de noviembre de 1964 se admite la regla de la propagación de la
+ineficacia del contrato nulo hacia otros actos o contratos. Conforme a dicha regla, en virtud del
+Copia publica disociada - 05-09-2026. Original firmado conservado; firma y verificadores no reproducidos.
+
+
+PAGINA 22
+22
+nexo de conexión que presente la celebración de diferentes contratos cabe también que la
+ineficacia del contrato principal inicial alcance a otros contratos que con aquel se encuentran en
+una relación de conexión o dependencia. Dicha relación de conexión puede darse por razón de
+diversas circunstancias, bien porque el contrato principal o inicial constituye un presupuesto o
+una conditio iuris para que el contrato posterior realice plenamente su función práctica, o bien,
+porque en el momento de su celebración ambos contratos cooperen necesariamente para la
+consecución del resultado económico perseguido por las partes, supuestos de los negocios
+complejos y coaligados. Además de estos casos, en ocasiones puede existir otros, como el
+presente, en que la justificación de esta conexión o vinculación radique en que los contratos
+subsiguientes, en nuestro caso la ampliación del periodo de carencia del primer préstamo
+hipotecarios y la suscripción del segundo préstamo hipotecario, se hayan suscrito precisamente
+como medio para paliar los efectos negativos ya producidos por el contrato principal
+(liquidaciones negativas del swap). Por lo que, en este caso, declarada la nulidad del contrato
+principal se produce la propagación de la ineficacia resultante al contrato del segundo préstamo
+suscrito entre las partes, al contrato de refinanciación del primer préstamo hipotecario y al
+contrato de pignoración del depósito.
+(66)
+En esta línea, hay que destacar que el Tribunal Supremo en un caso similar al aquí enjuiciado,
+(STS de 13 de enero de 2017), ha declarado la nulidad del contrato de préstamo suscrito por las
+partes para que el prestatario pudiera pagar las liquidaciones negativas de varios contratos de
+swaps, en los siguientes términos: este contrato posterior presuponía la validez de los contratos
+de swap y la asunción de sus resultados económicos. Sin los contratos de swap y las pérdidas que
+originaron quedaría privada de sentido la operación económico-financiera en su totalidad,
+integrada también por el posterior contrato de préstamo que sirvió para abonar las liquidaciones
+negativas y los costes de la cancelación anticipada. Este último contrato estaba causalmente
+vinculado a los contratos de swap en virtud de un nexo funcional, pues su celebración fue
+necesaria para poder hacer frente al grave quebranto económico que los contratos de swap
+supusieron para las demandantes y permitir su exclusión de los registros de morosos y la
+continuación de su actividad empresarial. Resulta, pues, aplicable el principio según el cual
+cuando un acto se ofrece en unidad intencional como causa eficiente del posterior la nulidad del
+primero debe trascender a él, puesto que la causa se manifiesta en la intencionalidad conjunta de
+ambos contratos.
+(67)
+En consecuencia, hay que tener en cuenta que la modificación del primer préstamo hipotecario,
+la constitución en prenda del depósito de 405.000 euros y la suscripción del segundo préstamo
+hipotecario se negocian sobre la base de las liquidaciones negativas del contrato swap. Así, es
+evidente una unidad de intención, una vinculación funcional que, sin perjuicio de su respectiva
+autonomía, permite hablar de negocios coligados. Así, dada la comunicabilidad que la nulidad
+Copia publica disociada - 05-09-2026. Original firmado conservado; firma y verificadores no reproducidos.
+
+
+PAGINA 23
+23
+de un negocio jurídico supone respecto de los que con él se hallan vinculados, procede
+declarar la anulación de los contratos de modificación de las condiciones del primer
+préstamo hipotecario, de constitución de derecho real de prenda sobre el depósito a plazo
+por importe de 405.000 euros y de suscripción del segundo préstamo hipotecario por
+importe de 850.000 euros.
+QUINTO. – ACCIÓN SUBSIDIARIA DE INDEMNIZACIÓN POR DAÑOS Y PERJUICIOS.
+(68)
+Con carácter subsidiario, y para el caso de que se estime por este Juzgado la validez del contrato
+de permuta financiera, el incumplimiento del principio de buena fe que ha de presidir las
+relaciones contractuales (artículo 1258 del Código Civil), genera necesariamente una
+responsabilidad contractual, por imperativo del artículo 1101 del Código Civil, conforme al cual
+quedan sujetos a la indemnización de los daños y perjuicios causados los que en el cumplimiento
+de sus obligaciones incurrieren en dolo, negligencia o morosidad, y los que de cualquier modo
+contravinieren al tenor de aquéllas. Según ha declarado en reiteradas ocasiones el Tribunal
+Supremo (por todas, Sentencia de 19 de julio 2007), la procedencia de la indemnización de daños
+y perjuicios al amparo del artículo 1101 del Código Civil precisa de la existencia de una
+obligación, del incumplimiento o contravención de la misma por casusa imputable al deudor, de
+la producción de un daño al acreedor y de una relación de causa a efecto entre el incumplimiento
+del deudor y el daño sufrido por el acreedor.
+(69)
+Pues bien, a juicio de esta parte, los cuatro requisitos se dan cita en el supuesto de que se trata:
+a.
+En el seno de la relación de asesoramiento existente, la entidad financiera venía
+obligada a informar a mis representados de los elementos esenciales del contrato
+de permuta financiera (swap) y los riesgos que tal modalidad entrañaba para ellos.
+b.
+Como se ha acreditado, la entidad financiera incumplió el deber de información
+inherente a la relación de asesoramiento, induciendo a mis mandantes a contratar
+un producto cuyos elementos esenciales fueron sustraídos a su conocimiento,
+motivo por el cual prestaron su consentimiento en la creencia de contratar un
+producto muy diferente. Adicionalmente, ocurre que la entidad recomendó un
+producto que en modo alguno se ajustaba a los conocimientos, experiencia
+inversora previa y objetivos de constitución de este instrumento financiero, pero,
+es más durante la vida del contrato, tuvo muchas ocasiones de haber minimizado
+el daño producido a mis representados y, sin embargo, nunca recibieron
+asesoramiento en estas ocasiones acerca de cómo afectaba las oscilaciones de los
+tipos de cambio.
+Copia publica disociada - 05-09-2026. Original firmado conservado; firma y verificadores no reproducidos.
+
+
+PAGINA 24
+24
+c.
+La suscripción de la permuta financiera se ha revelado muy perjudicial para LPB,
+sufriendo una notable pérdida por razón de la contratación asesorada y
+recomendada por la propia entidad financiera.
+d.
+Finalmente, ha sido convenientemente acreditado que entre el deficiente
+asesoramiento de la entidad demandada y el daño sufrido por LPB existe una
+relación de causa a efecto. Así es, resulta inequívoco que, si el Banco hubiera
+cumplido diligentemente con las obligaciones de información que la normativa
+le imponen, mis representados y ahora demandantes nunca hubieran suscrito el
+contrato de permuta financiera, evitando así el perjuicio que se denuncia.
+(70)
+Así, para el caso de que se estime por este Juzgado la validez del contrato de permuta financiera
+debe estimarse la pretensión formulada en orden al resarcimiento de los daños y perjuicios
+sufridos por la negligencia de la entidad bancaria en el cumplimiento de los deberes de
+información con relación a la contratación del swap, cuantificando la indemnización
+reclamada en la pérdida sufrida.
+V. – CUANTÍA
+(71)
+Conforme a lo dispuesto en el artículo 251.2 de la Ley de Enjuiciamiento Civil, se fija como
+cuantía de la demanda la del valor de las liquidaciones negativas del contrato de gestión de riesgos
+financieros y las de las cantidades percibidas por cada uno de los contratos vinculados desde la
+suscripción del contrato de permuta financiera incrementados con sus intereses legales desde la
+fecha de cada entrega calculados según el informe pericial al que nos referimos en el cuarto otrosí.
+A los solos efectos de la determinación del procedimiento adecuado, se establece
+provisionalmente la cuantía de un millón ciento veinticuatro mil cuatrocientos cuarenta y
+cinco euros con ochenta y cuatro céntimos (1.124.445,84 euros).
+VI.- COSTAS
+(72)
+Procede la imposición de costas a la demandada de conformidad con lo dispuesto en el artículo
+394 de la Ley de Enjuiciamiento Civil, como consecuencia de la estimación de las pretensiones
+que se formulan en la presente demanda, incluso aunque la estimación fuese parcial, debido a la
+mala fe con que ha actuado la ésta.
+(73)
+Como declara la STS de 9 de junio de 2006, el principio del vencimiento a que se acoge el artículo
+523 LEC (hoy artículo 394) se completa por los tribunales, con evidente inspiración en la razón
+del precepto -que es la equidad, como regla de ponderación que debe observarse en la aplicación
+de las normas del Ordenamiento jurídico- y en poderosas razones prácticas, con la doctrina
+Copia publica disociada - 05-09-2026. Original firmado conservado; firma y verificadores no reproducidos.
+
+
+PAGINA 25
+25
+según la cual es procedente la imposición de costas en casos de estimación sustancial de la
+demanda (STS, entre otras, de 14 de marzo de 2003, 17 de julio de 2003, 24 de enero de 2005, 26
+de abril de 2005 y 6 de junio de 2006).
+En su virtud,
+SUPLICO AL JUZGADO que, habiendo presentado este escrito junto con los documentos que
+lo acompañan, se sirva admitirlo, darle el trámite que en Derecho corresponda, tenga por
+formulado, en tiempo y forma legal, ESCRITO DE DEMANDA a fin de que en su día se dicte
+sentencia por la que, estimándose  la demanda formulada contra CAIXABANK, S.A., se declare
+(1) la nulidad del contrato de gestión de riesgos financieros; (2) así como de los contratos de
+modificación de las condiciones del primer préstamo hipotecario, de constitución de derecho real
+de prenda sobre el depósito a plazo por importe de 405.000 euros y de suscripción del segundo
+préstamo hipotecario por importe de 850.000 euros, por su vinculación al primero de ellos; y se
+condene a la demandada a la a restitución de las cantidades percibidas por cada una de las cuotas
+devengadas desde la suscripción del contrato de permuta financiera incrementados con sus
+intereses legales desde la fecha de cada entrega, con expresa imposición de costas, todo ello a los
+efectos legales oportunos.
+Subsidiariamente de no estimarse ninguna de las anteriores, declare que la entidad demandada
+INCUMPLIÓ LAS OBLIGACIONES de informar adecuadamente a parte actora acerca de la
+naturaleza y riesgos del clausulado, de buena fe, diligencia e información veraz, y de prestarles
+asesoramiento cuidando de sus intereses como si fueran propios. En consecuencia, se condene a
+la demandada a indemnizar a los prestatarios los daños y perjuicios sufridos, sobre la base del
+perjuicio económico que les supuso la contratación del swap.
+Es Justicia,
+En Valencia, a 13 de octubre de dos mil veintitrés.
+Copia publica disociada - 05-09-2026. Original firmado conservado; firma y verificadores no reproducidos.
+
+
+PAGINA 26
+26
+PRIMER OTROSÍ DIGO que de conformidad con el artículo 438.4 de la Ley de Enjuiciamiento
+Civil, esta parte solicita expresamente la celebración de vista.
+SUPLICO AL JUZGADO que tenga por hecha la anterior manifestación.
+SEGUNDO OTROSÍ DIGO que estando la presente demanda sujeta al abono de la tasa por el
+ejercicio de la potestad jurisdiccional fijada por la Ley 10/2012, de 20 de noviembre, siendo mi
+representada persona jurídica no exenta de su pago, se acompaña a la presente demanda como la
+correspondiente autoliquidación con el ejemplar para la Administración de Justicia debidamente
+validado y en el que consta el pago de la cantidad de 300 euros correspondiente a la cuota fija,
+sin que se incluya la cuota variable prevista en el artículo 7.2 de la Ley 10/2012 al haber sido
+declarado inconstitucional y nulo por la STC 140/2016, de 21 de julio.
+SUPLICO AL JUZGADO que tenga por hecha la anterior manifestación.
+TERCER OTROSÍ DIGO que, con arreglo a lo señalado en el artículo 231 de la Ley 1/2000,
+de 7 de enero, de Enjuiciamiento Civil se hace expresa manifestación de la voluntad de esta
+representación procesal de cumplir con los requisitos legalmente exigidos.
+SUPLICO AL JUZGADO que tenga por hecha la anterior manifestación.
+CUARTO OTROSÍ DIGO que, de conformidad con lo establecido en el artículo 336.4 de la
+Ley de Enjuiciamiento Civil y en el artículo 337 del mismo cuerpo legal, se anuncia que, tan
+pronto como se disponga de él, y siempre antes de iniciarse la audiencia previa, se aportará un
+informe pericial sobre las liquidaciones efectuadas y se evidencien los daños y perjuicios sufridos
+por mi representada.
+SUPLICO AL JUZGADO que tenga por hecha la anterior manifestación.
+QUINTO OTROSÍ DIGO que, se dejan designados los archivos de todas las entidades públicas
+o privadas designadas a lo largo del escrito de demanda a los efectos probatorios correspondientes.
+Copia publica disociada - 05-09-2026. Original firmado conservado; firma y verificadores no reproducidos.
+
+
+PAGINA 27
+27
+SUPLICO AL JUZGADO que tenga por hecha la anterior manifestación.
+Es Justicia que reitero en igual lugar y fecha.
+Copia publica disociada - 05-09-2026. Original firmado conservado; firma y verificadores no reproducidos.

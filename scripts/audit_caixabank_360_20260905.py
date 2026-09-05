@@ -10,7 +10,7 @@ from bs4 import BeautifulSoup
 
 ROOT = pathlib.Path.cwd()
 OUT = pathlib.Path(os.environ.get('PD_AUDIT_OUT', '/tmp/caixabank-audit'))
-BASE = 'https://sbu001monterecco.github.io/por-derecho/'
+BASE = os.environ.get('PD_AUDIT_BASE', 'https://sbu001monterecco.github.io/por-derecho/').rstrip('/')+'/'
 REPO = 'sbu001monterecco/por-derecho'
 ROUTES = ['es/reclamacion-caixabank-valencia/', 'en/caixabank-valencia-claim/']
 for root, subs in [('es/reclamacion-caixabank-valencia/', ['documentos/', 'faq-contexto-unitario/', 'ob-rem-ac-cam-28nov2018/', 'senalamiento-28-enero-2027/']), ('en/caixabank-valencia-claim/', ['documents/', 'faq-unitary-context/', 'ob-rem-ac-cam-28nov2018/', 'hearing-28-january-2027/'])]:
@@ -113,11 +113,12 @@ async def browser_audit():
                         if w==390:
                             await page.evaluate('scrollTo({top:0,behavior:"instant"})')
                             fn=engine+'-'+route.replace('/','_')+'390.png'
-                            await page.screenshot(path=str(OUT/fn),full_page=True,timeout=45000)
+                            await page.screenshot(path=str(OUT/fn),full_page=False,timeout=45000)
                             row['screens'].append(fn)
                     if engine=='chromium':
                         (OUT/(route.replace('/','_')+'rendered.html')).write_text(await page.content(),encoding='utf-8')
                     # Test the actual menu toggle when present, without assuming a broken menu if it is absent.
+                    await page.set_viewport_size({'width':390,'height':900})
                     toggles=page.locator('.nav-toggle:visible')
                     if await toggles.count():
                         await page.set_viewport_size({'width':390,'height':900})
@@ -164,6 +165,12 @@ def http_one(url):
             fn='public-file-'+row['sha256'][:16]+'.pdf';(OUT/fn).write_bytes(r.content);row['public_binary_capture']=fn
         elif '1drv.ms' in url:
             row['is_pdf']=False;row['limitation']='Public viewer response is not verification of the PDF byte stream.'
+        if row['mime'].startswith('image/'):
+            import io
+            from PIL import Image
+            try:
+                image=Image.open(io.BytesIO(r.content));row['image_dimensions']=list(image.size);image.verify();row['image_decodes']=True
+            except Exception as e: row['image_decodes']=False;row['image_error']=str(e)
         if 'text/html' in row['mime']:
             soup=BeautifulSoup(r.content,'html.parser');row['title']=soup.title.get_text() if soup.title else ''
             row['soft_404_suspected']='404' in row['title'] or 'Page not found' in row['title']

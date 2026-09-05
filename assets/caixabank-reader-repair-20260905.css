@@ -1,0 +1,19 @@
+/* Scoped reader repair: content is reflowed, never hidden to conceal overflow. */
+.pd-caixa-reader main,.pd-caixa-reader main *{box-sizing:border-box}
+.pd-caixa-reader main :is(.shell,.record,.section-head,.source,.card,article,aside,.grid,.pd-flow,.pd-room-grid){min-width:0;max-width:100%}
+.pd-caixa-reader main :is(p,h1,h2,h3,h4,li,a,code,strong,span,td,th){overflow-wrap:anywhere}
+.pd-caixa-reader main h1{font-size:clamp(1.85rem,4.4vw,3.5rem);line-height:1.13}
+.pd-caixa-reader main .button{max-width:100%;white-space:normal;text-align:center}
+.pd-caixa-reader main :is(img,svg,video){max-width:100%;height:auto}
+.pd-caixa-reader .pd-caixa-table,.pd-caixa-reader .table-wrap{max-width:100%;overflow-x:auto;overscroll-behavior-inline:contain}
+.pd-caixa-reader .pd-caixa-table table{min-width:34rem}
+.pd-caixa-quick{margin:1rem auto;padding:1.1rem;border:1px solid #c7d1d1;border-radius:14px;background:#f6f8f8}
+.pd-caixa-quick h2{margin:.2rem 0 .6rem;font-size:1.45rem}
+.pd-caixa-quick .linkrow,.pd-caixa-return .linkrow{display:flex;flex-wrap:wrap;gap:.55rem}
+.pd-caixa-return{border-top:1px solid #c7d1d1;padding:1.25rem 0;margin-top:1.25rem}
+@media(max-width:760px){
+.pd-caixa-reader main :is(.grid,.pd-room-grid,.pd-flow,.flow,.section-head){display:grid;grid-template-columns:minmax(0,1fr)!important;gap:.85rem}
+.pd-caixa-reader main .shell{width:calc(100% - 1.5rem)}
+.pd-caixa-reader .pd-caixa-quick{width:calc(100% - 1.5rem)}
+.pd-caixa-reader main :is(th,td){overflow-wrap:anywhere}
+}
