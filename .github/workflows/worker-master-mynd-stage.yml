@@ -1,101 +1,109 @@
-name: MASTER MYND public package preparation
+name: MASTER MYND reader acceptance
 on:
+  pull_request:
+    paths:
+      - 'en/acosta-matos-family/**'
+      - 'es/acosta-matos-familia/**'
+      - 'en/sun-park-mynd-yaiza/**'
+      - 'es/sun-park-mynd-yaiza/**'
+      - 'assets/master-mynd-acosta-matos-architect.webp'
+      - 'assets/acosta-matos-family-hotel-plans.jpg'
+      - 'assets/data/sun-park-mynd-yaiza-site-v1.json'
+      - 'assets/data/matter-identity-registry-v1*'
+      - 'scripts/*master_mynd*'
+      - '.github/workflows/worker-master-mynd-stage.yml'
   push:
-    branches: ['worker/master-mynd-site-address-20260905']
-    paths: ['.github/workflows/worker-master-mynd-stage.yml']
+    branches: ['worker/master-mynd-site-address-20260905','main']
+    paths:
+      - 'en/acosta-matos-family/**'
+      - 'es/acosta-matos-familia/**'
+      - 'en/sun-park-mynd-yaiza/**'
+      - 'es/sun-park-mynd-yaiza/**'
+      - 'assets/master-mynd-acosta-matos-architect.webp'
+      - 'assets/data/sun-park-mynd-yaiza-site-v1.json'
+      - 'scripts/*master_mynd*'
+      - '.github/workflows/worker-master-mynd-stage.yml'
+  workflow_dispatch:
 permissions:
-  contents: write
+  contents: read
+  actions: read
 concurrency:
-  group: master-mynd-worker-staging-20260905
-  cancel-in-progress: false
+  group: master-mynd-reader-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
 jobs:
-  stage-reviewed-public-package:
-    if: github.ref == 'refs/heads/worker/master-mynd-site-address-20260905' && startsWith(github.event.head_commit.message, 'stage MASTER MYND approved')
+  candidate-reader:
+    name: MASTER MYND source and three-engine reader
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 18
     steps:
       - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
         with:
-          ref: worker/master-mynd-site-address-20260905
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
           fetch-depth: 1
-      - name: Retrieve only the authorised anonymous public file using a guest browser
-        run: |
-          python3 -m pip install --quiet playwright pillow beautifulsoup4
-          python3 - <<'PY'
-          import pathlib,hashlib,json,urllib.request,urllib.error
-          from playwright.sync_api import sync_playwright
-          root=pathlib.Path('/tmp/mm-transfer');root.mkdir()
-          share='https://1drv.ms/u/c/bdf43392f576e62f/IQBsnF0I1sdxR7sQ_fUhqqAQAdLlSulkLXpskOR85Z-_sMQ'
-          expected='15ad9feeffc7b6ae65eaf7dc1cba7d9ce1cc2ecf745b919a61a8fe0c6a3928a7'
-          def valid(data):return len(data)==641321 and hashlib.sha256(data).hexdigest()==expected
-          try:
-              with urllib.request.urlopen(share+'?download=1',timeout=30) as response:
-                  data=response.read(3000000);url=response.url
-              if valid(data):root.joinpath('candidate.zip').write_bytes(data)
-              else:
-                  root.joinpath('guest-response.html').write_bytes(data)
-                  print('Guest download response:',url,len(data))
-          except urllib.error.HTTPError as error:
-              root.joinpath('guest-error.txt').write_bytes(error.read(10000));print('Guest HTTP status:',error.code,'URL:',error.url)
-          if not root.joinpath('candidate.zip').exists():
-              with sync_playwright() as p:
-                  browser=p.chromium.launch(channel='chrome',headless=True)
-                  context=browser.new_context(accept_downloads=True)
-                  page=context.new_page()
-                  try:
-                      page.goto(share,wait_until='domcontentloaded',timeout=60000)
-                      page.wait_for_timeout(12000)
-                      print('Guest browser URL:',page.url)
-                      print('Guest visible text:',page.locator('body').inner_text()[:5000])
-                      root.joinpath('guest-browser.html').write_text(page.content())
-                      page.screenshot(path=str(root/'guest-browser.png'))
-                      button=page.get_by_role('button',name='Download',exact=False)
-                      if button.count()==0:button=page.get_by_role('link',name='Download',exact=False)
-                      if button.count():
-                          with page.expect_download(timeout=60000) as task:button.first.click()
-                          task.value.save_as(str(root/'candidate.zip'))
-                  finally:browser.close()
-          assert root.joinpath('candidate.zip').exists(),'No guest downloadable candidate; source not applied'
-          assert valid(root.joinpath('candidate.zip').read_bytes()),'Candidate bytes do not match approved hash'
-          print('Approved candidate archive verified:',expected)
-          PY
-      - name: Validate every baseline and apply38 exact approved paths
-        run: |
-          python3 - <<'PY'
-          import json,pathlib,zipfile,hashlib,os
-          assert os.environ['GITHUB_REF']=='refs/heads/worker/master-mynd-site-address-20260905'
-          z=zipfile.ZipFile('/tmp/mm-transfer/candidate.zip');m=json.loads(z.read('candidate-manifest.json'))
-          assert m['base_commit']=='529d90898b7172decf46323d6bd58fbc69fb560c' and len(m['files'])==38
-          pending=[]
-          for name,r in m['files'].items():
-              p=pathlib.Path(name);assert not p.is_absolute() and '..' not in p.parts and '.git' not in p.parts and not name.startswith(('.github/','ops/'))
-              data=z.read('payload/'+name);assert len(data)==r['bytes'] and hashlib.sha256(data).hexdigest()==r['sha256'],name
-              before=hashlib.sha256(p.read_bytes()).hexdigest() if p.is_file() else None
-              assert before==r['before_sha256'],('baseline collision',name)
-              pending.append((p,data))
-          for p,data in pending:p.parent.mkdir(parents=True,exist_ok=True);p.write_bytes(data)
-          pathlib.Path('/tmp/mm-transfer/candidate-manifest.json').write_text(json.dumps(m,indent=2))
-          PY
-          python3 scripts/validate_master_mynd.py
-          python3 scripts/validate_operational_identity_registry.py
-          python3 scripts/reconcile_identity_registry_projections.py --check
-          python3 scripts/validate_satire_publication_governance.py
-      - name: Commit38 reviewed paths to the worker only
-        run: |
-          test "${GITHUB_REF}" = 'refs/heads/worker/master-mynd-site-address-20260905'
-          git config user.name 'Por Derecho public package preparation'
-          git config user.email 'noreply@users.noreply.github.com'
-          python3 - <<'PY'
-          import json,subprocess
-          m=json.load(open('/tmp/mm-transfer/candidate-manifest.json'))
-          subprocess.run(['git','add','--',*m['files']],check=True)
-          PY
-          git commit -m 'MASTER MYND: approved images, complete bilingual reader and canonical hotel address'
-          git push origin HEAD:refs/heads/worker/master-mynd-site-address-20260905
-      - name: Preserve guest-transfer and hash evidence
-        if: always()
-        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+          persist-credentials: false
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
         with:
-          name: master-mynd-guest-transfer
-          path: /tmp/mm-transfer
+          python-version: '3.12'
+      - name: Install reader-test dependencies
+        run: |
+          python -m pip install --quiet playwright pillow beautifulsoup4
+          python -m playwright install --with-deps chromium firefox webkit
+      - name: Validate existing identity, source bytes and the full reader
+        run: |
+          python scripts/validate_master_mynd.py
+          python scripts/validate_operational_identity_registry.py
+          python scripts/reconcile_identity_registry_projections.py --check
+          python scripts/validate_satire_publication_governance.py
+          python scripts/check_master_mynd_browser.py
+          test -z "$(git status --porcelain)"
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        if: always()
+        with:
+          name: master-mynd-candidate-reader
+          path: /tmp/master-mynd-browser
+          if-no-files-found: ignore
+  deployed-reader:
+    name: MASTER MYND exact deployment reader
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    needs: candidate-reader
+    runs-on: ubuntu-latest
+    timeout-minutes: 22
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          ref: ${{ github.sha }}
+          fetch-depth: 1
+          persist-credentials: false
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
+        with:
+          python-version: '3.12'
+      - name: Wait for this exact GitHub Pages source commit
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          python - <<'PY'
+          import json,os,time,urllib.request
+          api='https://api.github.com/repos/'+os.environ['GITHUB_REPOSITORY']
+          headers={'Authorization':'Bearer '+os.environ['GH_TOKEN'],'Accept':'application/vnd.github+json'}
+          for attempt in range(48):
+              with urllib.request.urlopen(urllib.request.Request(api+'/actions/runs?head_sha='+os.environ['GITHUB_SHA']+'&per_page=100',headers=headers),timeout=30) as r:
+                  runs=json.load(r)['workflow_runs']
+              pages=[r for r in runs if r['name']=='pages build and deployment']
+              if pages and pages[0]['status']=='completed':
+                  assert pages[0]['conclusion']=='success',pages[0]['html_url']
+                  print('Exact Pages run',pages[0]['id']);break
+              time.sleep(10)
+          else:raise SystemExit('Exact Pages deployment not established; no live claim')
+          PY
+      - name: Inspect the actual deployed host in three browser engines
+        run: |
+          python -m pip install --quiet playwright pillow beautifulsoup4
+          python -m playwright install --with-deps chromium firefox webkit
+          python scripts/check_master_mynd_browser.py --base-url https://sbu001monterecco.github.io/por-derecho --output /tmp/master-mynd-live
+          test -z "$(git status --porcelain)"
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        if: always()
+        with:
+          name: master-mynd-live-reader
+          path: /tmp/master-mynd-live
           if-no-files-found: ignore
