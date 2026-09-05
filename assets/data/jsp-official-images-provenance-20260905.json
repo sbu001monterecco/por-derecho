@@ -1,0 +1,65 @@
+{
+  "schema": "por-derecho.official-source-image-provenance.v1",
+  "control_id": "PD-JSP-2017-OFFICIAL-IMAGES-20260905",
+  "source_id": "JSP-2017-S01",
+  "source": {
+    "path": "assets/evidence/jsp-2017/BORME-C-2017-7368.pdf",
+    "url": "https://www.boe.es/borme/dias/2017/08/10/pdfs/BORME-C-2017-7368.pdf",
+    "html_url": "https://www.boe.es/diario_borme/txt.php?id=BORME-C-2017-7368",
+    "bytes": 156956,
+    "sha256": "78df26e04206117a5dbebaa2fc337643841c58e85455905eb53f686d7500fad9",
+    "git_blob_sha": "be35c34f09acc671e9856dc666cb89e5ee9b34f6",
+    "page_count": 1,
+    "printed_page": "8556",
+    "publication_date": "2017-08-10",
+    "classification": "Byte-identical preserved BOE download; not a new certified copy"
+  },
+  "rendering": {
+    "engine": "PyMuPDF 1.28.2",
+    "encoding": "Pillow 12.3.0; RGB; lossless WebP; method 6; exact true",
+    "operation": "Unannotated PDF pixel rendering; no OCR, retyping, generative reconstruction or added marks",
+    "decoded_pixel_equality_checked": true
+  },
+  "derivatives": [
+    {
+      "id": "JSP-2017-S01-IMAGE-FULL",
+      "path": "assets/evidence/jsp-2017/borme-c-2017-7368-full-page.webp",
+      "bytes": 71028,
+      "sha256": "bc713c9d9e07c3f696f4583f15589df283f77bb00eb81fb47f749207022a1e8f",
+      "git_blob_sha": "23555e124e739ed1a4f38e8a39da4edac8494aba",
+      "pdf_page": 1,
+      "clip_points": [0, 0, 595, 842],
+      "scale": 1.5,
+      "width": 893,
+      "height": 1263,
+      "scope": "Complete official page including surrounding agenda, dates and named administrator"
+    },
+    {
+      "id": "JSP-2017-S01-IMAGE-ITEM-FIVE",
+      "path": "assets/evidence/jsp-2017/borme-c-2017-7368-item-five.webp",
+      "bytes": 7450,
+      "sha256": "2d83e06b6962b6e87f99ec9264303d4448ccaea8ebe2e7bc6cabd2ce555c0ff3",
+      "git_blob_sha": "45f1f1fe98c175ce04e9e97c5e09ffa03f7a8a16",
+      "pdf_page": 1,
+      "clip_points": [110, 484.2388000488281, 520, 530.2388305664062],
+      "scale": 2.5,
+      "width": 1025,
+      "height": 116,
+      "scope": "Complete item-five paragraph; read together with complete page"
+    }
+  ],
+  "preparation_evidence": {
+    "read_only_source_run": 33991084417,
+    "hash_locked_object_admission_run": 33991404616,
+    "object_admission_job": 101374177562,
+    "object_receipt_artifact": 9976738100,
+    "boundary": "Three fixed public source/image blobs only; connected publisher attaches their verified SHAs. The one-shot writer is retired to read-only verification before merge."
+  },
+  "excluded_images": {
+    "generated_illustrations": "Not evidence; not included",
+    "workbook_and_browser_previews": "Analytical/QA derivatives, not primary historical evidence; not substituted for originals",
+    "2013_attendance_crop": "Separate incident-subregister source and date; not admitted or visually certified by this finite release"
+  },
+  "proof_boundary": "The notice establishes the published shareholder request, not meeting occurrence, sale date/terms, ownership of each finca, completed onward conveyance or criminal guilt.",
+  "publication_state": "SOURCE_PREPARED_REQUIRES_EXACT_RELEASE_AND_LIVE_RECEIPT"
+}
