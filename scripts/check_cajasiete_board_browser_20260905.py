@@ -65,7 +65,7 @@ def run(base_url: str | None = None) -> dict:
                                         assert section.count() == 1, 'Board reader missing or duplicated'
                                         images = section.locator('figure img')
                                         assert images.count() == 3, 'Expected three language-specific figures'
-                                        for image in images.all():
+                                        for image_number, image in enumerate(images.all(), start=1):
                                             image.scroll_into_view_if_needed()
                                             deadline = time.monotonic() + 12
                                             while True:
@@ -77,7 +77,9 @@ def run(base_url: str | None = None) -> dict:
                                                 if time.monotonic() >= deadline:
                                                     raise AssertionError(f'Image did not load: {state}')
                                                 page.wait_for_timeout(150)
-                                            assert state['width'] == 1080 and state['height'] == 1350, state
+                                            expected_height = 1740 if image_number == 2 else 1640
+                                            assert state['width'] == 1080 and state['height'] == expected_height, state
+                                            assert image.get_attribute('height') == str(expected_height), 'Declared image height differs from design'
                                             assert image.get_attribute('alt'), 'Missing image alternative text'
                                             box = image.bounding_box()
                                             assert box and box['x'] >= -2 and box['x'] + box['width'] <= width + 2, 'Image extends beyond viewport'
