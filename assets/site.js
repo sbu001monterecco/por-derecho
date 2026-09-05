@@ -35,6 +35,7 @@
     load('uria-ricpe-caixabank-source-register-20260904.js', 'data-uria-ricpe-caixabank-source-register-loader', '20260904a');
     load('uria-haya-puzzle-integration-20260904.js', 'data-uria-haya-puzzle-integration-loader', '20260904b');
     load('puzzle-hybrid-viewer-20260904.js', 'data-puzzle-hybrid-viewer-loader', '20260904a');
+    load('puzzle-continuity-enhancement-20260905.js', 'data-puzzle-continuity-enhancement-loader', '20260905a');
     load('evidence-visibility-runtime-20260904.js', 'data-evidence-visibility-runtime-loader', '20260904a');
     load('joan-cruz-multitrack-crosslinks-20260901.js', 'data-joan-cruz-multitrack-loader', '20260904a');
     load('orion-rental-socimi-interlinks-20260905.js', 'data-orion-rental-socimi-interlinks-loader', '20260905a');
@@ -42,8 +43,8 @@
   };
 
   const loadHotelFincaSystem = () => {
-    load('hotel-finca-title-system-interlink-20260903.js', 'data-hotel-finca-title-system-interlink-loader', '20260903a');
-    load('hotel-finca-title-system-search-extension-20260903.js', 'data-hotel-finca-title-system-search-loader', '20260903a');
+    load('hotel-finca-title-system-interlink-20260903.js', 'data-hotel-finca-system-interlink-loader', '20260903a');
+    load('hotel-finca-title-system-search-extension-20260903.js', 'data-hotel-finca-system-search-loader', '20260903a');
   };
 
   const loadMatkator8584Release = () => {
