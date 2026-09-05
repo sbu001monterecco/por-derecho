@@ -28,6 +28,8 @@ Every proposition must distinguish: documented fact; attributed representation; 
 
 ## Public funds and tax incentives
 
+For this control, **public funds** means the evidenced or properly investigable national, regional or EU public-funding perimeter; the label does not itself establish receipt, misuse or an offence.
+
 The Puzzle must make the public-interest perimeter visible where evidence supports inquiry into tax incentives, subsidies, grants or national/regional/EU funds. It may ask whether third-party units, rooms, jobs, assets or rights were improperly or over-broadly included in eligibility, valuation, financing or benefit calculations. It must not state an autonomous subsidy-fraud or EU-financial-interests finding until the grant, beneficiary, declaration, eligibility criteria, award, amount, funding source, eligible expenditure and causal link are evidenced.
 
 ## Informant / investor status
