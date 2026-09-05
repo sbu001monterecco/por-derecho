@@ -10,6 +10,8 @@ on:
       - 'es/orion-ricpe-continuidad/index.html'
       - 'en/orion-rental-socimi/index.html'
       - 'es/orion-rental-socimi/index.html'
+      - 'en/acosta-matos-perimeter/index.html'
+      - 'es/acosta-matos-perimetro/index.html'
       - 'assets/data/orion-rental-socimi-governance-20260905.json'
       - '.github/evidence-intelligence/records/PD-SP-EI-20260905-02-ORION-RENTAL-SOCIMI-GOVERNANCE.md'
   pull_request:
@@ -20,6 +22,8 @@ on:
       - 'es/orion-ricpe-continuidad/index.html'
       - 'en/orion-rental-socimi/index.html'
       - 'es/orion-rental-socimi/index.html'
+      - 'en/acosta-matos-perimeter/index.html'
+      - 'es/acosta-matos-perimetro/index.html'
       - 'assets/data/orion-rental-socimi-governance-20260905.json'
       - '.github/evidence-intelligence/records/PD-SP-EI-20260905-02-ORION-RENTAL-SOCIMI-GOVERNANCE.md'
   workflow_dispatch:
@@ -51,7 +55,7 @@ jobs:
           test "$(git branch --show-current)" = 'worker/orion-architecture-clarification-20260905'
           python3 scripts/orion_architecture_clarification_20260905.py --apply
           python3 scripts/orion_architecture_clarification_20260905.py --check
-          git add en/orion-ricpe-platform-continuity/index.html es/orion-ricpe-continuidad/index.html en/orion-rental-socimi/index.html es/orion-rental-socimi/index.html assets/data/orion-rental-socimi-governance-20260905.json .github/evidence-intelligence/records/PD-SP-EI-20260905-02-ORION-RENTAL-SOCIMI-GOVERNANCE.md
+          git add en/orion-ricpe-platform-continuity/index.html es/orion-ricpe-continuidad/index.html en/orion-rental-socimi/index.html es/orion-rental-socimi/index.html en/acosta-matos-perimeter/index.html es/acosta-matos-perimetro/index.html assets/data/orion-rental-socimi-governance-20260905.json .github/evidence-intelligence/records/PD-SP-EI-20260905-02-ORION-RENTAL-SOCIMI-GOVERNANCE.md
           if ! git diff --cached --quiet; then
             git config user.name 'github-actions[bot]'
             git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
@@ -128,21 +132,21 @@ jobs:
               for width in (1440,390):
                   for js in (True,False):
                       context=browser.new_context(viewport={'width':width,'height':950},java_script_enabled=js)
-                      for file in mod.PATHS[:4]+['en/index.html','es/index.html']:
+                      for file in mod.PAGE_PATHS+['en/index.html','es/index.html']:
                           page=context.new_page();route=file.removesuffix('index.html')
                           response=page.goto(address+route,wait_until='domcontentloaded')
                           assert response and response.status==200, file
                           assert page.locator('main').count()>0,file
-                          if file in mod.PATHS[:4]:
+                          if file in mod.PAGE_PATHS:
                               block=page.locator('#'+mod.MARKER)
                               assert block.count()==1,file
                               block.scroll_into_view_if_needed();assert block.is_visible(),file
                               box=block.bounding_box();assert box and box['width']<=width+2 and box['x']>=-2,(file,box)
+                              for old in ('independent Orion branch','rama Orion independiente','The only Sun Park question','La única cuestión Sun Park'):
+                                  assert old not in page.locator('main').inner_text(),(file,old)
                               if file in [v[0] for v in mod.ROUTES.values()]:
                                   lang=file.split('/')[0]
                                   assert mod.COPY[lang]['h1'] in page.locator('h1').all_text_contents(),file
-                                  for old in ('independent Orion branch','rama Orion independiente','The only Sun Park question','La única cuestión Sun Park'):
-                                      assert old not in page.locator('main').inner_text(),(file,old)
                           name=route.strip('/').replace('/','-') or 'home'
                           page.screenshot(path='/tmp/orion-audit/'+name+'-'+str(width)+'-'+str(js)+'.png')
                           rows.append({'route':route,'width':width,'javascript':js,'status':'PASS'})
