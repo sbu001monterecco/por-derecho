@@ -19,6 +19,8 @@ jobs:
         with:
           fetch-depth: 0
           persist-credentials: false
+      - name: Install required fail-closed PDF inspection dependency
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq poppler-utils
       - name: Execute exact reviewed finite preparation without nested expression expansion
         env:
           GH_TOKEN: ${{ github.token }}
