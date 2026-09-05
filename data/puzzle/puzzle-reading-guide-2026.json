@@ -1,27 +1,53 @@
 {
-  "schema": "por-derecho.puzzle-reading-guide.v1",
-  "version": "2026-09-04-worker-a",
-  "sourceStatus": "FILED_COMPANION_GUIDE_WITH_POST_FILING_LAYER_SEPARATED",
+  "schema": "por-derecho.puzzle-reading-guide.v2",
+  "version": "2026-09-05-integrator-a",
+  "sourceStatus": "FOUR_LAYER_PROVENANCE_WITH_JUNE_FILED_BASELINE_AND_JULY_COMPANIONS_SEPARATED",
   "document": {
     "title": "PUZZLE 2024",
     "pageCount": 32,
     "sha256": "e441bdb368c0092d5b15ca5ee911eeac266540bde54817e424f3075f4c5fdd47",
     "sizeBytes": 50046618,
     "assetPath": "assets/docs/puzzle/PUZZLE-2024-original.pdf",
-    "assetState": "PENDING_CONTROLLED_PUBLIC_MATERIALISATION",
+    "assetState": "MATERIALISED_EXACT_PUBLIC_ORIGINAL",
+    "pageImageManifest": "assets/docs/puzzle/manifest.json",
     "presentationUrl": null
+  },
+  "originalGuide": {
+    "formalDate": "2024-06",
+    "sources": [
+      "PUZZLE - Denuncia Presunto Crimen Economico Relacionado con FTI Group 7JUN2024.pdf",
+      "PUZZLE - Intro a Denuncia Presunto Crimen Economico Relacionado con FTI Group 7JUN2024.pdf"
+    ],
+    "status": "Historical visual and explanatory navigation layer; not a pericial or judicial finding."
+  },
+  "juneFiledBaseline": {
+    "formalDate": "2026-06-25",
+    "source": "01_NEXUS_36_DENUNCIA_PENAL_ACTUALIZADA_PRESENTACION_25JUN2026.pdf",
+    "pages": 69,
+    "en": {
+      "title": "June 2026 filed baseline · Control 21",
+      "status": "Controlling June 2026 party-pleading and methodological baseline for the current Puzzle narration.",
+      "text": "Read the historic Puzzle through the 25 June 2026 filing's disciplined sequence: establish authority/title first; identify the act, payment, expenditure, possession or representation second; attribute it to the particular person and dated capacity third; and consider legal/criminal characterisation only after the evidential bridges are established. Preserve counter-evidence and lawful alternatives. Use production and certified records to confirm or discard the hypothesis rather than treating an absence in the accessible corpus as proof or requiring an accused person to prove innocence.",
+      "boundary": "The 25 June document is a party pleading and request for investigation. Filing/presentation does not establish admission, merits or the truth of alleged offences."
+    },
+    "es": {
+      "title": "Base presentada en junio de 2026 · Control 21",
+      "status": "Base metodológica y de alegación de parte presentada el 25 de junio de 2026 que controla la narración actual del Puzzle.",
+      "text": "Leer el Puzzle histórico con la secuencia disciplinada del escrito de 25 de junio de 2026: establecer primero autoridad/titularidad; después el acto, pago, gasto, posesión o representación; en tercer lugar atribuirlo a la persona concreta y a su capacidad fechada; y solo después valorar una posible calificación jurídica o penal. Conservar la prueba contraria y las explicaciones lícitas. Utilizar diligencias de producción y registros certificados para confirmar o descartar la hipótesis, sin convertir la ausencia en el corpus accesible en prueba ni trasladar al investigado la carga de acreditar su inocencia.",
+      "boundary": "El documento de 25 de junio es un escrito de parte y solicitud de investigación. Su presentación no acredita admisión, fondo ni veracidad de los delitos alegados."
+    }
   },
   "filedGuide": {
     "formalDate": "2026-07-21",
     "proceedings": ["DP 1956/2026", "DP 1901/2026"],
     "en": {
-      "title": "2026 substitute reading guide",
-      "status": "Filed/formal companion layer. It supersedes the old internal introduction as the current reading guide.",
+      "title": "21 July 2026 procedural companions",
+      "status": "Later formal/procedural companion layer. It sharpens the page-by-page use of the historic visual in DP 1956/2026 and DP 1901/2026 but is not the narration filed on 25 June 2026.",
       "boundary": "The 32-page visual is a historical navigation map of sources, versions and custodians. Its arrows, photographs, associations and earlier conclusions are not findings and are not adopted as an expert report."
     },
     "es": {
-      "title": "Guía sustitutiva de lectura 2026",
-      "status": "Capa acompañante formal/presentada. Sustituye la antigua introducción interna como guía actual de lectura.",
+      "title": "Acompañantes procesales de 21 de julio de 2026",
+      "status": "Capa formal/procesal posterior. Precisa el uso página por página del mapa histórico en DP 1956/2026 y DP 1901/2026, pero no es la narración presentada el 25 de junio de 2026.",
       "boundary": "El mapa visual de 32 páginas es una guía histórica de fuentes, versiones y custodios. Sus flechas, fotografías, asociaciones y conclusiones anteriores no son hallazgos ni se adoptan como informe pericial."
     }
   },
@@ -31,14 +57,16 @@
       "RIC is a tax incentive/materialisation mechanism; it is not by itself a grant or EU funding.",
       "A published or authorised amount is not the same thing as subscribed capital, a contracted loan, money disbursed, eligible expenditure, payment or certified cost.",
       "Failure to locate a document in the accessible corpus does not prove non-existence; it can identify a finite production target.",
-      "An authority opening, transfer or response proves only the recorded institutional act, not acceptance of the underlying allegation."
+      "An authority opening, transfer or response proves only the recorded institutional act, not acceptance of the underlying allegation.",
+      "Later evidence may refine or contradict a historic proposition but does not rewrite what the earlier document said when created or filed."
     ],
     "es": [
       "Una fotografía, aparición pública, coincidencia profesional u otro procedimiento no prueba por sí sola concierto, influencia o responsabilidad.",
       "La RIC es un incentivo fiscal/mecanismo de materialización; no equivale por sí sola a subvención ni a fondos de la UE.",
       "Una cantidad publicada o autorizada no equivale a capital suscrito, préstamo contratado, dinero desembolsado, gasto elegible, pago o coste certificado.",
       "No localizar un documento en el corpus accesible no acredita su inexistencia; puede identificar una diligencia finita de producción.",
-      "La apertura, traslado o respuesta de un organismo acredita únicamente el acto institucional registrado, no la aceptación de la alegación de fondo."
+      "La apertura, traslado o respuesta de un organismo acredita únicamente el acto institucional registrado, no la aceptación de la alegación de fondo.",
+      "La prueba posterior puede precisar o contradecir una proposición histórica, pero no reescribe lo que el documento anterior decía al crearse o presentarse."
     ]
   },
   "tracks": {
@@ -58,12 +86,12 @@
       "en": {
         "label": "DP 1901/2026 · Private actors / RIC traceability",
         "summary": "Test who created, adopted, transmitted or used each representation about title, availability, works, investment, employment and validation; to whom; what decision or benefit followed; and what the particular person knew at that date.",
-        "focus": "The filed guide calls for comparison of the 2020 representations with the July 2021 position, the December 2021 Sun Park agreement and its follow-up, the CAM → RPE → HNT → MYND chain, and the relevant commercial and institutional records."
+        "focus": "The July companion calls for comparison of the 2020 representations with the July 2021 position, the December 2021 Sun Park agreement and its follow-up, the CAM → RPE → HNT → MYND chain, and the relevant commercial and institutional records."
       },
       "es": {
         "label": "DP 1901/2026 · Actores privados / trazabilidad RIC",
         "summary": "Comprobar quién creó, adoptó, transmitió o utilizó cada representación sobre titularidad, disponibilidad, obras, inversión, empleo y validación; ante quién; qué decisión o beneficio siguió; y qué sabía la persona concreta en esa fecha.",
-        "focus": "La guía presentada pide contrastar las manifestaciones de 2020 con la posición de julio de 2021, el acuerdo Sun Park de diciembre de 2021 y su seguimiento, la cadena CAM → RPE → HNT → MYND y los registros comerciales e institucionales pertinentes."
+        "focus": "El acompañante de julio pide contrastar las manifestaciones de 2020 con la posición de julio de 2021, el acuerdo Sun Park de diciembre de 2021 y su seguimiento, la cadena CAM → RPE → HNT → MYND y los registros comerciales e institucionales pertinentes."
       }
     }
   },
@@ -113,12 +141,12 @@
   ],
   "postFiling": {
     "en": {
-      "title": "Current record · after the filed guide",
-      "text": "Later repository evidence is kept in a separate layer below this viewer. It may refine, contradict or extend a proposition, but it does not rewrite what the July 2026 companion said when filed."
+      "title": "Current record · after the June filing and July companions",
+      "text": "Later repository evidence is kept in a separate layer below this viewer. It may refine, contradict or extend a proposition, but it does not rewrite what the June filing or July companions said at their respective dates."
     },
     "es": {
-      "title": "Registro actual · posterior a la guía presentada",
-      "text": "La evidencia posterior del repositorio se mantiene en una capa separada bajo este visor. Puede precisar, contradecir o ampliar una proposición, pero no reescribe lo que decía el acompañante de julio de 2026 al presentarse."
+      "title": "Registro actual · posterior al escrito de junio y a los acompañantes de julio",
+      "text": "La evidencia posterior del repositorio se mantiene en una capa separada bajo este visor. Puede precisar, contradecir o ampliar una proposición, pero no reescribe lo que decían el escrito de junio o los acompañantes de julio en sus respectivas fechas."
     }
   }
 }
