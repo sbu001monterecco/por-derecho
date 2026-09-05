@@ -17,10 +17,11 @@
     if (/^https?:/i.test(value)) return value;
     if (value.startsWith('#')) return value;
     const path = value.replace(/^\/?por-derecho\//, '').replace(/^\//, '');
+    if (!path.includes('/') && !/\.[a-z0-9]{2,6}(?:[?#]|$)/i.test(path)) return null;
     if (path.startsWith('.github/')) return 'https://github.com/sbu001monterecco/por-derecho/blob/main/' + path;
     return '/por-derecho/' + path;
   };
-  const link = (text, value) => { const a = el('a', text); const target = url(value); if (target) a.href = target; return a; };
+  const link = (text, value) => { const target = url(value); const a = el(target ? 'a' : 'span', text); if (target) a.href = target; return a; };
   const get = async value => { const r = await fetch(value, {credentials:'omit'}); if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); };
   const graphURL = new URL(root.dataset.graphUrl, location.href);
   const loadParts = async (g, name) => {
