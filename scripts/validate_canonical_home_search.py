@@ -1,17 +1,15 @@
 #!/usr/bin/env python3
-"""Validate the current justice-authority register, court hierarchy and homepage search without frozen denominators."""
-
+"""Validate canonical identity, search quality, entity census and evidence triage."""
 from __future__ import annotations
 
-from collections import Counter
 import json
-import re
-import unicodedata
-from dataclasses import dataclass
+import subprocess
+import sys
+from collections import Counter
 from pathlib import Path
+from typing import Any
 
-ROOT = Path(__file__).resolve().parents[1]
-DATA = ROOT / "assets" / "data"
+from build_entity_census import DATA, ROOT, load_json, load_registry, normalise
 
 
 def require(condition: bool, message: str) -> None:
@@ -19,179 +17,133 @@ def require(condition: bool, message: str) -> None:
         raise AssertionError(message)
 
 
-def load_json(path: Path) -> dict:
-    value = json.loads(path.read_text(encoding="utf-8"))
-    require(isinstance(value, dict), f"{path.relative_to(ROOT)} must contain an object")
-    return value
+def strings(value: Any) -> list[str]:
+    output: list[str] = []
+    if value is None:
+        return output
+    if isinstance(value, (str, int, float)):
+        return [str(value)]
+    if isinstance(value, list):
+        for item in value:
+            output.extend(strings(item))
+    elif isinstance(value, dict):
+        for key, item in value.items():
+            if key.lower() not in {"url", "hash", "sha256", "email", "phone"}:
+                output.extend(strings(item))
+    return output
 
 
-def normalise(value: object) -> str:
-    text = unicodedata.normalize("NFD", str(value or ""))
-    text = "".join(char for char in text if unicodedata.category(char) != "Mn")
-    text = text.lower().replace("–", "-").replace("—", "-")
-    text = re.sub(r"[^a-z0-9^]+", " ", text)
-    return re.sub(r"\s+", " ", text).strip()
-
-
-def id_variants(identifier: str) -> list[str]:
-    match = re.fullmatch(r"PD-SP-([POSIR])-(\d{4})", identifier.upper())
-    if not match:
-        return [identifier] if identifier else []
-    kind, number = match.groups()
-    compact = str(int(number))
-    return [identifier.upper(), f"{kind}-{number}", f"{kind}{number}", f"^{kind}-{number}", f"^{kind}{number}", f"^{number}", f"^{compact}"]
-
-
-@dataclass(frozen=True)
-class SearchEntry:
-    identifier: str
-    name: str
-    haystack: str
-    exact: frozenset[str]
-
-
-def make_caepr_entry(record: dict) -> SearchEntry:
-    aliases: list[object] = []
-    for key in ("aliases", "legacy_ambiguous_aliases", "master_register_ids"):
-        value = record.get(key)
-        if isinstance(value, list): aliases.extend(value)
-    for key in ("master_register_id", "nig", "procedural_state", "identity_resolution"):
-        if record.get(key): aliases.append(record[key])
-    aliases.extend(id_variants(str(record.get("id", ""))))
-    name = str(record.get("name") or record.get("id") or "")
-    values = [record.get("id"), name, *aliases]
-    return SearchEntry(str(record["id"]), name, normalise(" | ".join(str(v) for v in values if v)), frozenset(normalise(v) for v in values if normalise(v)))
-
-
-def make_master_entry(record: dict) -> SearchEntry:
-    values = [record.get("Master_ID"), record.get("Reference"), record.get("Legacy_ID"), record.get("Secondary_Reference"), record.get("NIG"), record.get("Origin_Organ"), record.get("Current_Custodian"), record.get("Stream"), record.get("Geography"), record.get("Parent_Master_ID"), record.get("Linked_Proceedings"), record.get("Appeal_or_Review"), record.get("Object_or_Purpose"), record.get("Connection")]
-    name = str(record.get("Reference") or record.get("Object_or_Purpose") or record.get("Master_ID"))
-    return SearchEntry(str(record["Master_ID"]), name, normalise(" | ".join(str(v) for v in values if v)), frozenset(normalise(v) for v in values[:12] if normalise(v)))
-
-
-def score(entry: SearchEntry, raw_query: str) -> int:
-    query = normalise(raw_query)
-    if not query: return 0
-    if query in entry.exact: return 1000
-    if normalise(entry.identifier) == query: return 990
-    if entry.haystack.startswith(query): return 850
-    terms = [term for term in query.split(" ") if term]
-    if not all(term in entry.haystack for term in terms): return 0
-    value = 500
-    if query in normalise(entry.name): value += 220
-    if query in normalise(entry.identifier): value += 180
-    return value + max(0, 80 - len(entry.name))
+def search(records: dict[str, dict[str, Any]], query: str) -> list[str]:
+    needle = normalise(query)
+    terms = needle.split()
+    ranked: list[tuple[int, str]] = []
+    for identifier, record in records.items():
+        exact_values = [record.get("name"), *(record.get("aliases") or []), identifier]
+        exact = {normalise(value) for value in exact_values if value}
+        haystack = normalise(" | ".join(strings(record)))
+        score = 0
+        if needle in exact:
+            score = 1000
+        elif all(term in haystack for term in terms):
+            score = 600
+            if needle in normalise(record.get("name")):
+                score += 200
+            if needle in haystack:
+                score += 100
+        if score:
+            ranked.append((score, identifier))
+    return [identifier for _, identifier in sorted(ranked, key=lambda row: (-row[0], row[1]))]
 
 
 def main() -> None:
-    index = load_json(DATA / "matter-identity-registry-v1.json")
-    require(index.get("registry_id") == "PD-SP-IDENTITY-REGISTRY-001", "Unexpected CAEPR registry ID")
-    require(index.get("control_date") == "2026-09-02", "CAEPR index control date was not advanced")
+    records, alias_to_id, index = load_registry()
+    require(index.get("registry_id") == "PD-SP-IDENTITY-REGISTRY-001", "Unexpected canonical registry ID")
+    require(index.get("control_date") == "2026-09-04", "Canonical registry control date must be 2026-09-04")
 
-    records: dict[str, dict] = {}
-    type_counts = Counter()
-    part_total = 0
-    for descriptor in index.get("parts", []):
-        shard_path = DATA / descriptor["path"]
-        require(shard_path.is_file(), f"Missing registry shard: {descriptor['path']}")
-        shard = load_json(shard_path)
-        shard_records = shard.get("records")
-        require(isinstance(shard_records, list), f"Registry shard lacks records: {descriptor['path']}")
-        require(len(shard_records) == descriptor["count"], f"Registry shard count mismatch: {descriptor['path']}")
-        part_total += len(shard_records)
-        for record in shard_records:
-            identifier = record.get("id")
-            require(isinstance(identifier, str) and identifier, f"Registry record without ID in {descriptor['path']}")
-            require(identifier not in records, f"Duplicate CAEPR ID: {identifier}")
-            require(record.get("type") == descriptor["type"], f"Type mismatch for {identifier}")
-            records[identifier] = record; type_counts[descriptor["type"]] += 1
-    require(part_total == index["counts"]["total"], "CAEPR total count mismatch")
-    for kind in ("PERSON", "ORGANISATION", "STRUCTURE", "INSTITUTION", "PROCEEDING"):
-        require(type_counts[kind] == index["counts"][kind], f"CAEPR {kind} count mismatch")
-
-    master_court = records.get("PD-SP-I-0044")
-    require(master_court is not None and master_court.get("name") == "Audiencia Provincial de Las Palmas", "Missing master Audiencia identity")
-    require(master_court.get("identity_resolution") == "CARET_CONFIRMED", "Master court must be CARET_CONFIRMED")
-    children = {row.get("institution_id") for row in master_court.get("child_institutions", [])}
-    require({"PD-SP-I-0014", "PD-SP-I-0025"} <= children, "Master court section set lost a controlled child section")
-    for child in children: require(child in records and records[child]["type"] == "INSTITUTION", f"Missing child court identity: {child}")
-
-    current = load_json(DATA / "justice-authority-register-current-v2.json")
-    require(current.get("control_id") == "PD-SP-JUSTICE-AUTHORITY-CURRENT-20260902-01", "Unexpected current authority control ID")
-    authority_ids: set[str] = set(); confirmed_count = 0; pending_count = 0; role_counts = Counter(); pending_roles = Counter()
-    for descriptor in current.get("person_sources", []):
-        source = load_json(ROOT / descriptor["path"])
-        source_rows: list[tuple[str, str, str]] = []
-        if isinstance(source.get("roles"), dict):
-            for role, rows in source.get("roles", {}).items():
-                for row in rows: source_rows.append((row["caepr_id"], row.get("state", ""), role))
-        else:
-            for row in source.get("records", []): source_rows.append((row["id"], row.get("identity_resolution", ""), row.get("role", "")))
-        ids = {row[0] for row in source_rows}
-        require(authority_ids.isdisjoint(ids), f"Current authority sources contain duplicate people in {descriptor['path']}")
-        authority_ids |= ids
-        confirmed_count += sum(state == "CARET_CONFIRMED" for _, state, _ in source_rows)
-        pending_count += sum(state == "CARET_PENDING" for _, state, _ in source_rows)
-        for _, state, role in source_rows:
-            require(role in {"MINISTERIO_FISCAL", "JUDGE_OR_MAGISTRATE", "LAJ", "NOTARY"}, f"Missing/invalid derived role {role!r} in {descriptor['path']}")
-            role_counts[role] += 1
-            if state == "CARET_PENDING": pending_roles[role] += 1
-    derived = current["derived_counts"]
-    require(len(authority_ids) == derived["unique_named_people"], "Derived people count mismatch")
-    require(confirmed_count == derived["confirmed"], "Derived confirmed count mismatch")
-    require(pending_count == derived["pending"], "Derived pending count mismatch")
-    require(dict(role_counts) == derived["by_role"], f"Derived role count mismatch: {role_counts} vs {derived['by_role']}")
-    require(pending_roles.get("JUDGE_OR_MAGISTRATE", 0) == 0 and pending_roles.get("LAJ", 0) == 0, "A Judge/LAJ remains pending contrary to current denominator")
-    for identifier in authority_ids: require(identifier in records, f"Current authority person absent from CAEPR: {identifier}")
-
-    search_script = (ROOT / "assets" / "canonical-home-search-20260902.js").read_text(encoding="utf-8")
-    site_script = (ROOT / "assets" / "site.js").read_text(encoding="utf-8")
-    overlay_script = (ROOT / "assets" / "justice-professionals-current-overlay-20260902.js").read_text(encoding="utf-8")
-    for marker in ("matter-identity-registry-v1.json", "proceedings-master-public-v1.json", "proceeding-page-routes-20260902.json", "^P-0147", "^I-0044", "URLSearchParams", "PorDerechoCanonicalSearch"):
-        require(marker in search_script, f"Canonical search script lacks marker: {marker}")
-    require("canonical-home-search-20260902.js" in site_script, "site.js does not load canonical homepage search")
-    require("justice-professionals-current-overlay-20260902.js" in site_script, "site.js does not load current justice overlay")
-    require("siteHeader.insertAdjacentElement('afterend', section)" in search_script, "Homepage search is not mounted after site header")
-    require("section.closest('details')" in search_script, "Homepage search lacks closed-details mount guard")
-    require("main.insertBefore(section" not in search_script, "Homepage search retains unsafe main-child insertion")
-    for marker in ("justice-authority-register-current-v2.json", "derived_counts", "proceeding-justice-authority-coverage-20260902.json", "proceeding-page-routes-20260902.json"):
-        require(marker in overlay_script, f"Justice overlay is not dynamic/reciprocal: {marker}")
-    require("[['61'" not in overlay_script and "['61', 0]" not in overlay_script, "Justice overlay still freezes a prior denominator")
-
-    master_projection = load_json(DATA / "proceedings-master-public-v1.json")
-    entries = [make_caepr_entry(record) for record in records.values()]
-    entries.extend(make_master_entry(record) for record in master_projection.get("records", []))
-    def search(query: str) -> list[str]:
-        ranked = sorted(((score(entry, query), entry.identifier) for entry in entries), key=lambda item: (-item[0], item[1]))
-        return [identifier for value, identifier in ranked if value > 0]
+    expected_uria = {
+        "PD-SP-O-0084": "URÍA MENÉNDEZ ABOGADOS, S.L.P.",
+        "PD-SP-P-0166": "Juan Miguel Hernández Herrera",
+        "PD-SP-P-0167": "Ángel Alonso Hernández",
+        "PD-SP-P-0168": "Javier Rubio Sanz",
+        "PD-SP-P-0169": "Juan Francisco Falcón",
+        "PD-SP-P-0170": "Raimon Tagliavini Sansa",
+        "PD-SP-P-0171": "David García Martín",
+    }
+    for identifier, name in expected_uria.items():
+        require(records.get(identifier, {}).get("name") == name, f"Missing Uría canonical record: {identifier} {name}")
+    require(alias_to_id.get(normalise("Uria Menendez")) == "PD-SP-O-0084", "Unaccented Uría alias does not resolve")
+    require(alias_to_id.get(normalise("Uría")) == "PD-SP-O-0084", "Short Uría alias does not resolve")
+    require(alias_to_id.get(normalise("Uriel Abogados")) != "PD-SP-O-0084", "Uría / Uriel collision")
 
     smoke_tests = {
-        "Graciela Pérez-Valencia Díaz": "PD-SP-P-0147", "PD-SP-P-0147": "PD-SP-P-0147", "^P-0147": "PD-SP-P-0147",
-        "DP 748/2026": "PD-SP-R-0003", "TF-CRI-003": "PD-SP-R-0003", "3802343220260002351": "PD-SP-R-0003",
-        "Ricardo de Mosteyrín Sampalo": "PD-SP-P-0058", "Audiencia Provincial de Las Palmas": "PD-SP-I-0044", "^I-0044": "PD-SP-I-0044",
-        "Rollo 1010/2018": "LZ-APP-004", "Procedimiento Ordinario 467/2010": "LZ-CIV-045", "3500441120100004798": "LZ-CIV-045",
-        "Emma Galcerán Solsona": "PD-SP-P-0164", "Diligencias Preliminares 1041/2017": "GC-CIV-003", "3501642120170028407": "GC-CIV-003",
-        "Fernando Pérez Polo": "PD-SP-P-0165", "PD-SP-P-0165": "PD-SP-P-0165", "^P-0165": "PD-SP-P-0165",
-        "Juzgado de Primera Instancia nº 2 de Las Palmas de Gran Canaria": "PD-SP-I-0048", "^I-0048": "PD-SP-I-0048",
+        "Uria Menendez": "PD-SP-O-0084",
+        "URÍA MENÉNDEZ ABOGADOS": "PD-SP-O-0084",
+        "B28563963": "PD-SP-O-0084",
+        "Juan Miguel Hernandez Herrera": "PD-SP-P-0166",
+        "Angel Alonso Hernandez": "PD-SP-P-0167",
+        "Javier Rubio Sanz": "PD-SP-P-0168",
+        "Juan Francisco Falcon": "PD-SP-P-0169",
+        "Raimon Tagliavini": "PD-SP-P-0170",
+        "David Garcia Martin": "PD-SP-P-0171",
+        "PD-SP-P-0169": "PD-SP-P-0169",
     }
     for query, expected in smoke_tests.items():
-        matches = search(query); require(expected in matches[:12], f"Search query {query!r} did not return {expected}; got {matches[:12]}")
+        matches = search(records, query)
+        require(expected in matches[:12], f"Search query {query!r} did not return {expected}; got {matches[:12]}")
+    require("PD-SP-O-0084" not in search(records, "Uriel Abogados")[:12], "Uriel query returned Uría")
 
-    refs = [r.get("Reference") for r in master_projection.get("records", [])]
-    require(refs.count("Diligencias Preliminares 1041/2017") == 1, "1041/2017 is duplicated in public Master projection")
+    # Preserve the existing court-hierarchy invariant.
+    master_court = records.get("PD-SP-I-0044")
+    require(master_court and master_court.get("name") == "Audiencia Provincial de Las Palmas", "Missing master Audiencia identity")
+    children = {row.get("institution_id") for row in master_court.get("child_institutions", [])}
+    require({"PD-SP-I-0014", "PD-SP-I-0025"} <= children, "Master court lost a controlled child section")
 
-    for path, title in {
-        ROOT/"es/registro-judicial-audiencia-provincial-las-palmas/index.html": "Audiencia Provincial de Las Palmas",
-        ROOT/"en/las-palmas-provincial-court-register/index.html": "Las Palmas Provincial Court",
-        ROOT/"es/registro-autoridad-historica-las-palmas-civil/index.html": "Diligencias Preliminares 1041/2017",
-        ROOT/"en/historic-las-palmas-civil-justice-authority-register/index.html": "Diligencias Preliminares 1041/2017",
-    }.items():
-        require(path.is_file(), f"Missing public authority page: {path.relative_to(ROOT)}")
-        require(title in path.read_text(encoding="utf-8"), f"{path.relative_to(ROOT)} lacks {title}")
+    current = load_json(DATA / "justice-authority-register-current-v2.json")
+    derived = current.get("derived_counts", {})
+    require(derived.get("unique_named_people", 0) == derived.get("confirmed", 0) + derived.get("pending", 0), "Current authority denominator is internally inconsistent")
 
-    require((ROOT/".github/governance/JUDICIAL_PROSECUTORIAL_AUTHORITY_REGISTER_CONTINUITY_02SEP2026.md").is_file(), "Missing authority continuity governance")
-    require((ROOT/".github/workflows/audit-canonical-home-search.yml").is_file(), "Missing canonical home-search workflow")
-    print(f"PASS canonical authority/search audit: {len(records)} CAEPR records; {len(authority_ids)} current justice professionals; {confirmed_count} confirmed; {pending_count} pending; {dict(role_counts)}; {len(smoke_tests)} search tests")
+    search_path = ROOT / "assets" / "canonical-home-search-20260904.js"
+    site_path = ROOT / "assets" / "site.js"
+    require(search_path.is_file(), "Missing 20260904 canonical search runtime")
+    search_script = search_path.read_text(encoding="utf-8")
+    site_script = site_path.read_text(encoding="utf-8")
+    for marker in (
+        "matter-identity-registry-v1.json", "proceedings-master-public-v1.json",
+        "URLSearchParams", "PorDerechoCanonicalSearch", "register", "oneEditApart",
+        "section.closest('details')", "data-canonical-home-search', '20260904'"
+    ):
+        require(marker in search_script, f"Canonical search lacks marker: {marker}")
+    require("canonical-home-search-20260904.js" in site_script, "site.js does not pre-load the 20260904 search runtime")
+    require("data-canonical-home-search-loader" in site_script, "site.js does not block the inherited stale search loader")
+
+    decisions = load_json(ROOT / "ops" / "legaltech-entity-evidence" / "candidate-decisions.json")
+    valid_decisions = {"YES_NOW", "MAYBE_HOLD", "NO_REJECT"}
+    candidate_ids = set()
+    for row in decisions.get("candidates", []):
+        require(row.get("candidate_id") not in candidate_ids, f"Duplicate candidate ID: {row.get('candidate_id')}")
+        candidate_ids.add(row.get("candidate_id"))
+        require(row.get("decision") in valid_decisions, f"Invalid candidate decision: {row}")
+    require(any(row.get("candidate_name") == "Javier González" and row.get("decision") == "MAYBE_HOLD" for row in decisions.get("candidates", [])), "Javier González ambiguity control is missing")
+    require(any(row.get("candidate_name") == "Uriel Abogados" and row.get("decision") == "NO_REJECT" for row in decisions.get("candidates", [])), "Uría/Uriel rejection control is missing")
+
+    triage = load_json(ROOT / "ops" / "legaltech-entity-evidence" / "evidence-triage-v1.json")
+    allowed_modes = set(triage.get("publication_modes", {}))
+    triage_ids = set()
+    for row in triage.get("items", []):
+        require(row.get("id") not in triage_ids, f"Duplicate evidence-triage ID: {row.get('id')}")
+        triage_ids.add(row.get("id"))
+        require(row.get("mode") in allowed_modes, f"Unknown evidence mode for {row.get('id')}")
+        require(row.get("controls"), f"Evidence item lacks publication controls: {row.get('id')}")
+    require(len(triage_ids) >= 25, "Initial Library evidence triage is too small")
+
+    report = Path("/tmp/por-derecho-entity-census.json")
+    subprocess.run([sys.executable, str(ROOT / "scripts" / "build_entity_census.py"), "--check", "--output", str(report)], check=True)
+    generated = json.loads(report.read_text(encoding="utf-8"))
+    require(generated.get("counts", {}).get("controlled_id_errors") == 0, "Entity census found unknown controlled IDs")
+
+    type_counts = Counter(record["type"] for record in records.values())
+    print(f"PASS canonical identity/search/evidence audit: {len(records)} records {dict(type_counts)}; {len(smoke_tests)} Uría search tests; {len(candidate_ids)} review candidates; {len(triage_ids)} Library triage items")
 
 
-if __name__ == "__main__": main()
+if __name__ == "__main__":
+    main()

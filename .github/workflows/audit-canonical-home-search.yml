@@ -1,35 +1,30 @@
-name: Audit canonical authority register and homepage search
+name: Audit canonical identity, search and evidence intake
 
 on:
   pull_request:
     paths:
       - 'assets/site.js'
-      - 'assets/canonical-home-search-20260902.js'
-      - 'assets/justice-professionals-current-overlay-20260902.js'
+      - 'assets/canonical-home-search-20260904.js'
       - 'assets/data/matter-identity-registry-v1*.json'
-      - 'assets/data/justice-professionals-caret-audit-v1.json'
-      - 'assets/data/justice-authority-register-current-v2.json'
-      - 'assets/data/proceedings-master-public-v1.json'
-      - 'es/registro-judicial-audiencia-provincial-las-palmas/**'
-      - 'en/las-palmas-provincial-court-register/**'
-      - '.github/governance/JUDICIAL_PROSECUTORIAL_AUTHORITY_REGISTER_CONTINUITY_02SEP2026.md'
+      - 'ops/legaltech-entity-evidence/**'
+      - 'scripts/build_entity_census.py'
       - 'scripts/validate_canonical_home_search.py'
+      - 'scripts/import_email_entity_candidates.py'
       - '.github/workflows/audit-canonical-home-search.yml'
   push:
     branches: [main]
     paths:
       - 'assets/site.js'
-      - 'assets/canonical-home-search-20260902.js'
-      - 'assets/justice-professionals-current-overlay-20260902.js'
+      - 'assets/canonical-home-search-20260904.js'
       - 'assets/data/matter-identity-registry-v1*.json'
-      - 'assets/data/justice-professionals-caret-audit-v1.json'
-      - 'assets/data/justice-authority-register-current-v2.json'
-      - 'assets/data/proceedings-master-public-v1.json'
-      - 'es/registro-judicial-audiencia-provincial-las-palmas/**'
-      - 'en/las-palmas-provincial-court-register/**'
-      - '.github/governance/JUDICIAL_PROSECUTORIAL_AUTHORITY_REGISTER_CONTINUITY_02SEP2026.md'
+      - 'ops/legaltech-entity-evidence/**'
+      - 'scripts/build_entity_census.py'
       - 'scripts/validate_canonical_home_search.py'
+      - 'scripts/import_email_entity_candidates.py'
       - '.github/workflows/audit-canonical-home-search.yml'
+  schedule:
+    - cron: '17 4 * * *'
+  workflow_dispatch:
 
 permissions:
   contents: read
@@ -37,7 +32,7 @@ permissions:
 jobs:
   validate:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 12
     steps:
       - name: Check out repository
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
@@ -45,10 +40,26 @@ jobs:
         uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
         with:
           python-version: '3.12'
-      - name: Validate canonical authority register and search
+      - name: Validate canonical identity, search, review queue and Library triage
         run: python3 scripts/validate_canonical_home_search.py
+      - name: Generate scheduled entity-census report
+        run: |
+          python3 scripts/build_entity_census.py --check --output /tmp/entity-census.json
+          python3 - <<'PY' >> "$GITHUB_STEP_SUMMARY"
+          import json
+          from pathlib import Path
+          data=json.loads(Path('/tmp/entity-census.json').read_text())
+          c=data['counts']
+          print('## Entity census')
+          print(f"- Discovered patterns: {c['discovered']}")
+          print(f"- Canonically resolved: {c['registered']}")
+          print(f"- Review candidates: {c['review']}")
+          print(f"- Unknown controlled IDs: {c['controlled_id_errors']}")
+          print('\nDiscovery is not proof; unresolved candidates require the governed review queue.')
+          PY
+      - name: Validate sanitised mailbox intake
+        run: python3 scripts/import_email_entity_candidates.py ops/legaltech-entity-evidence/email-candidates-20260904.json
       - name: Check JavaScript syntax
         run: |
-          node --check assets/canonical-home-search-20260902.js
-          node --check assets/justice-professionals-current-overlay-20260902.js
+          node --check assets/canonical-home-search-20260904.js
           node --check assets/site.js

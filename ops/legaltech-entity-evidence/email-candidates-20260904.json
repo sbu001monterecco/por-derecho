@@ -1,0 +1,33 @@
+{
+  "schema": "por-derecho.sanitised-email-candidate-batch.v1",
+  "control_date": "2026-09-04",
+  "privacy_statement": "No raw body, attachment, email address, phone number or unredacted mailbox identifier is included.",
+  "records": [
+    {
+      "candidate_id": "PD-EMAIL-CAND-20260904-001",
+      "candidate_name": "Javier González",
+      "message_date": "2015-04-30",
+      "thread_locator_hash": "538668a97619c57ad73d88a19dc33b8723f4cf1d9360f03584699dc9a2992365",
+      "subject_hash": "9b1087c0e889ded398ae2faada7e314417135d453a3eef875dc5a6262bcd7bab",
+      "hit_location": "quoted_body",
+      "source_class": "QUOTED_COMMUNICATION",
+      "privacy_gate": "REDACTED_METADATA_ONLY",
+      "matter_hint": "HAYA / Uría creditor-contact chronology",
+      "fingerprint": "3f59ec8b9f0791f0d2f73b0e51363bd649798b39c08fdc422c3db30444b5d25b",
+      "notes": "Ambiguous person. The contemporaneous counter-record states that Uría did not yet have instructions to act for HAYA; no client or mandate is inferred."
+    },
+    {
+      "candidate_id": "PD-EMAIL-CAND-20260904-002",
+      "candidate_name": "Uría Menéndez — Project ICE due-diligence role",
+      "message_date": "2019-01-01",
+      "thread_locator_hash": "8ab6843b0569eb1927d6ee27d45526fb25e40b4a44596474acebca0f48044996",
+      "subject_hash": "f4eefef1d45a102765485799092f5ea58932843b6c01a1a3629763f4594bfcd2",
+      "hit_location": "attachment_text",
+      "source_class": "ATTACHMENT_PRIMARY",
+      "privacy_gate": "PRIVILEGE_REVIEW",
+      "matter_hint": "Project ICE / Palacio de Hielo — separate matter",
+      "fingerprint": "c342aa9a2764ec03f8642a9783c1fc771ca40c9c2ef55ea1728f1d9954ada485",
+      "notes": "Separate-matter candidate. Underlying document, engagement scope, client and publication basis are required before any public relationship edge."
+    }
+  ]
+}

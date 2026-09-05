@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Por Derecho · identity and evidence review queue</title>
+<style>
+:root{font-family:system-ui,sans-serif;color:#13252d;background:#eef4f2}body{margin:0}.shell{max-width:1180px;margin:auto;padding:2rem 1rem 4rem}h1{font-size:clamp(2rem,5vw,4rem);line-height:1;margin:.3rem 0 1rem}.notice{border-left:5px solid #7a4f00;background:#fff8e8;padding:1rem;border-radius:10px;max-width:90ch}.toolbar{display:flex;gap:.6rem;flex-wrap:wrap;margin:1.2rem 0}.toolbar input,.toolbar select,.toolbar button{font:inherit;padding:.7rem .8rem;border:1px solid #607873;border-radius:9px;background:#fff}.toolbar input{min-width:min(420px,100%);flex:1}.grid{display:grid;gap:.8rem}.card{background:#fff;border:1px solid #cbd9d5;border-radius:14px;padding:1rem}.card h2{font-size:1.15rem;margin:.2rem 0}.meta{font-size:.86rem;color:#52635f}.actions{display:flex;gap:.45rem;flex-wrap:wrap;margin-top:.8rem}.actions button{font:inherit;font-weight:750;padding:.55rem .7rem;border-radius:8px;border:1px solid #546963;background:#f7faf9;cursor:pointer}.actions button[data-value="YES_NOW"]{border-color:#246243}.actions button[data-value="NO_REJECT"]{border-color:#8b3b33}.tag{display:inline-block;font-size:.72rem;font-weight:800;padding:.2rem .45rem;border-radius:999px;background:#e9efed;margin-right:.35rem}pre{white-space:pre-wrap;background:#10242b;color:#eef7f4;padding:1rem;border-radius:10px;max-height:360px;overflow:auto}a{color:inherit}
+</style>
+</head>
+<body><main class="shell"><p>CONTROL · 4 SEPTEMBER 2026</p><h1>Identity and evidence review queue</h1><p class="notice"><strong>Discovery is not proof.</strong> A name hit does not establish identity, mandate, knowledge, information flow, control, conflict, intent or liability. “YES / REGISTER NOW” authorises a source review and canonical registration—not automatic publication of mailbox or Library content.</p><div class="toolbar"><input id="q" type="search" placeholder="Filter candidates"><select id="state"><option value="">All decisions</option><option>YES_NOW</option><option>MAYBE_HOLD</option><option>NO_REJECT</option></select><button id="export">Export decisions JSON</button><button id="copy">Copy JSON</button></div><div id="cards" class="grid" aria-live="polite"></div><h2>Export bundle</h2><pre id="out">Loading…</pre><p><a href="../../es/uria-menendez/">Open the Uría canonical page</a> · <a href="../../en/uria-menendez-sun-park/">Open the English documentary map</a></p></main>
+<script>
+(async()=>{
+ const source=await fetch('candidate-decisions.json',{cache:'no-store'}).then(r=>r.json());
+ const saved=JSON.parse(localStorage.getItem('pd-entity-decisions-v1')||'{}');
+ const decisions=Object.fromEntries(source.candidates.map(c=>[c.candidate_id,saved[c.candidate_id]||c.decision]));
+ const q=document.querySelector('#q'), state=document.querySelector('#state'), cards=document.querySelector('#cards'), out=document.querySelector('#out');
+ const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+ const bundle=()=>({schema:'por-derecho.entity-review-export.v1',exported_at:new Date().toISOString(),decisions:Object.entries(decisions).map(([candidate_id,decision])=>({candidate_id,decision}))});
+ const refreshOut=()=>{out.textContent=JSON.stringify(bundle(),null,2);localStorage.setItem('pd-entity-decisions-v1',JSON.stringify(decisions));};
+ const render=()=>{const needle=q.value.toLowerCase(), filter=state.value;cards.innerHTML=source.candidates.filter(c=>(!needle||JSON.stringify(c).toLowerCase().includes(needle))&&(!filter||decisions[c.candidate_id]===filter)).map(c=>`<article class="card" data-id="${esc(c.candidate_id)}"><span class="tag">${esc(c.candidate_type)}</span><span class="tag">${esc(decisions[c.candidate_id])}</span><h2>${esc(c.candidate_name)}</h2><p>${esc(c.reason)}</p><p class="meta">${esc(c.candidate_id)} · ${esc((c.source_channels||[]).join(' · '))}</p><div class="actions"><button data-value="YES_NOW">YES / REGISTER NOW</button><button data-value="MAYBE_HOLD">MAYBE / HOLD</button><button data-value="NO_REJECT">NO / REJECT</button></div></article>`).join('')||'<p>No candidates match.</p>';cards.querySelectorAll('button').forEach(btn=>btn.addEventListener('click',()=>{const id=btn.closest('[data-id]').dataset.id;decisions[id]=btn.dataset.value;render();refreshOut();}));};
+ q.addEventListener('input',render);state.addEventListener('change',render);
+ document.querySelector('#copy').addEventListener('click',()=>navigator.clipboard.writeText(JSON.stringify(bundle(),null,2)));
+ document.querySelector('#export').addEventListener('click',()=>{const blob=new Blob([JSON.stringify(bundle(),null,2)],{type:'application/json'});const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='por-derecho-entity-decisions.json';a.click();URL.revokeObjectURL(a.href);});
+ render();refreshOut();
+})().catch(err=>{document.querySelector('#out').textContent=String(err);});
+</script></body></html>

@@ -1,0 +1,335 @@
+{
+  "schema": "por-derecho.library-evidence-triage.v1",
+  "control_date": "2026-09-04",
+  "scope": "Initial high-priority source-evidence selection from the connected Library census; generated summaries, graphics, backups and duplicate exports are not treated as proof.",
+  "publication_modes": {
+    "FULL_PUBLIC_REDACTED": "Publish the complete source only after necessity, personal-data, verification-code, signature and account-data review.",
+    "EXCERPT_PUBLIC": "Publish the minimum operative passage with page/context and keep the complete original in evidence custody.",
+    "IMAGE_CAPTURE": "Publish a page/region capture where layout, signature, stamp, table or handwritten element is evidentially material.",
+    "METADATA_ONLY": "Publish title, date, provenance, hash and proposition; retain the source privately.",
+    "PRIVATE_ONLY": "Do not publish; preserve for counsel/court/authority review.",
+    "NO_EVIDENCE_USE": "Derivative, duplicate, superseded or collision item; may be retained for audit only."
+  },
+  "items": [
+    {
+      "id": "PD-LIB-EV-0001",
+      "library_title": "Cuatrecasas Emails from 2018.pdf",
+      "source_class": "PRIMARY_COMMUNICATION_BUNDLE",
+      "mode": "EXCERPT_PUBLIC",
+      "priority": "P0",
+      "propositions": ["instructions, knowledge and response chronology", "2018 finance/exit and professional-advice sequence"],
+      "interlinks": ["Cuatrecasas", "Concurso 36/2012", "ONA", "Stoneweg/Varia", "DP 748/2026"],
+      "controls": ["legal-professional privilege review", "show full header and surrounding context", "redact personal contact data", "do not publish advocacy summaries as source"]
+    },
+    {
+      "id": "PD-LIB-EV-0002",
+      "library_title": "WhatsApp Gil/Juan Cruz 2018-2022",
+      "source_class": "PRIMARY_MESSAGING_EXPORT",
+      "mode": "EXCERPT_PUBLIC",
+      "priority": "P1",
+      "propositions": ["contemporaneous operational and knowledge chronology"],
+      "interlinks": ["Joan Cruz Nuez", "Sun Park operation", "2018 takeover", "2022 continuity"],
+      "controls": ["participant/consent and privacy review", "retain native export", "publish complete conversational context around each excerpt", "redact phone numbers"]
+    },
+    {
+      "id": "PD-LIB-EV-0003",
+      "library_title": "Registration document 131 - RD CAN 181226",
+      "source_class": "OFFICIAL_REGISTRY_DOCUMENT",
+      "mode": "FULL_PUBLIC_REDACTED",
+      "priority": "P0",
+      "propositions": ["registered identity, title, charge or filing state stated by the document"],
+      "interlinks": ["title chain", "asset register", "lender-of-record"],
+      "controls": ["redact CSV/access codes and unnecessary personal identifiers", "record issuing authority and date", "hash complete original"]
+    },
+    {
+      "id": "PD-LIB-EV-0004",
+      "library_title": "Final Report of court-appointed asset administrator",
+      "source_class": "COURT_APPOINTED_REPORT",
+      "mode": "FULL_PUBLIC_REDACTED",
+      "priority": "P0",
+      "propositions": ["administrator findings, inventory, custody, income and procedural chronology as expressly stated"],
+      "interlinks": ["asset administration", "hotel income", "court record"],
+      "controls": ["separate report statements from adjudicated facts", "redact personal/account data", "capture key tables as images"]
+    },
+    {
+      "id": "PD-LIB-EV-0005",
+      "library_title": "RICPE - Uriel Abogados proposal",
+      "source_class": "COMMERCIAL_PROPOSAL",
+      "mode": "NO_EVIDENCE_USE",
+      "priority": "P2",
+      "propositions": ["possible adviser proposal only"],
+      "interlinks": ["RICPE adviser procurement"],
+      "controls": ["URIEL IS NOT URÍA", "do not use as Uría hit, alias or bridge", "retain collision fingerprint"]
+    },
+    {
+      "id": "PD-LIB-EV-0006",
+      "library_title": "Public deed Matkator",
+      "source_class": "NOTARIAL_DEED",
+      "mode": "FULL_PUBLIC_REDACTED",
+      "priority": "P0",
+      "propositions": ["legal person, representation, property and transaction terms stated in the deed"],
+      "interlinks": ["Matkator", "finca 8584", "ETJ 163/2020", "hotel-title separation"],
+      "controls": ["publish operative clauses and full deed after privacy review", "image-capture signatures/stamps only where necessary", "never merge Matkator property into LPB estate without source bridge"]
+    },
+    {
+      "id": "PD-LIB-EV-0007",
+      "library_title": "ETJ 163/2020 doc #16",
+      "source_class": "COURT_FILING_OR_ORDER",
+      "mode": "FULL_PUBLIC_REDACTED",
+      "priority": "P0",
+      "propositions": ["enforcement, remate/assignment and property identity stated in the document"],
+      "interlinks": ["ETJ 163/2020", "Matkator", "Cuatrecasas", "DP 748/2026"],
+      "controls": ["preserve exact page numbering", "redact personal identifiers", "link each proposition to the exact page"]
+    },
+    {
+      "id": "PD-LIB-EV-0008",
+      "library_title": "Judgment 102/2018 OP 219/2014",
+      "source_class": "JUDGMENT",
+      "mode": "FULL_PUBLIC_REDACTED",
+      "priority": "P0",
+      "propositions": ["holdings, findings and procedural outcome of the judgment"],
+      "interlinks": ["civil proceedings", "Sun Park chronology"],
+      "controls": ["distinguish ratio, findings, party allegations and procedural history", "publish complete dispositive section"]
+    },
+    {
+      "id": "PD-LIB-EV-0009",
+      "library_title": "RICPE - CUATRECASAS proposal",
+      "source_class": "COMMERCIAL_LEGAL_PROPOSAL",
+      "mode": "METADATA_ONLY",
+      "priority": "P1",
+      "propositions": ["proposed engagement, scope and timing only if verified from the document"],
+      "interlinks": ["RICPE", "Cuatrecasas", "professional-adviser map"],
+      "controls": ["privilege/confidentiality review", "proposal does not prove engagement or work performed", "publish excerpt only with client consent or legal basis"]
+    },
+    {
+      "id": "PD-LIB-EV-0010",
+      "library_title": "Final 180515 report Acosta Matos & WhatsApp",
+      "source_class": "MIXED_REPORT_AND_MESSAGING",
+      "mode": "EXCERPT_PUBLIC",
+      "priority": "P0",
+      "propositions": ["reported 2018 actor communications and chronology"],
+      "interlinks": ["Acosta Matos perimeter", "18 May 2018", "7 June 2018", "Community"],
+      "controls": ["separate report analysis from native messages", "publish native extracts rather than paraphrase", "redact third-party data"]
+    },
+    {
+      "id": "PD-LIB-EV-0011",
+      "library_title": "Lanzarote notary 200810",
+      "source_class": "NOTARIAL_RECORD",
+      "mode": "FULL_PUBLIC_REDACTED",
+      "priority": "P0",
+      "propositions": ["appearance, declarations, authority and transaction facts recorded by the notary"],
+      "interlinks": ["2008 acquisition", "Multimatrix", "mortgage/title chain"],
+      "controls": ["redact IDs and addresses", "capture relevant schedules/tables", "do not infer truth beyond the notarial act"]
+    },
+    {
+      "id": "PD-LIB-EV-0012",
+      "library_title": "PwC draft",
+      "source_class": "DRAFT_PROFESSIONAL_WORK_PRODUCT",
+      "mode": "PRIVATE_ONLY",
+      "priority": "P1",
+      "propositions": ["draft scope, assumptions and unresolved issues only after authenticity and privilege review"],
+      "interlinks": ["PwC", "2016 refusal", "RICPE", "due diligence"],
+      "controls": ["draft is not final opinion", "privilege and confidentiality review", "do not publish tracked changes or personal metadata"]
+    },
+    {
+      "id": "PD-LIB-EV-0013",
+      "library_title": "Commissionaire agreement",
+      "source_class": "CONTRACT",
+      "mode": "EXCERPT_PUBLIC",
+      "priority": "P1",
+      "propositions": ["contracting parties, role allocation, consideration and operative obligations"],
+      "interlinks": ["operating structure", "income rights", "CEXP"],
+      "controls": ["publish definitions and operative clauses needed for the proposition", "redact bank/contact data", "retain full signed original"]
+    },
+    {
+      "id": "PD-LIB-EV-0014",
+      "library_title": "Promissory note",
+      "source_class": "NEGOTIABLE_INSTRUMENT",
+      "mode": "IMAGE_CAPTURE",
+      "priority": "P0",
+      "propositions": ["maker, payee, amount, date and endorsement/assignment visible on the instrument"],
+      "interlinks": ["Juicio Cambiario 1048/2019", "Aweswell", "Matkator", "Cuatrecasas"],
+      "controls": ["capture front/back and endorsements", "redact account numbers", "preserve dimensions and colour scan", "do not infer underlying debt solely from instrument"]
+    },
+    {
+      "id": "PD-LIB-EV-0015",
+      "library_title": "Email Victor Conde",
+      "source_class": "PRIMARY_COMMUNICATION",
+      "mode": "EXCERPT_PUBLIC",
+      "priority": "P1",
+      "propositions": ["contemporaneous communication and stated knowledge"],
+      "interlinks": ["finance/exit chronology", "professional actors"],
+      "controls": ["authenticate sender/date/thread", "publish surrounding context", "privacy and privilege review"]
+    },
+    {
+      "id": "PD-LIB-EV-0016",
+      "library_title": "Reply Justice Department",
+      "source_class": "PUBLIC_AUTHORITY_COMMUNICATION",
+      "mode": "FULL_PUBLIC_REDACTED",
+      "priority": "P0",
+      "propositions": ["authority receipt, position, referral, action or refusal expressly stated"],
+      "interlinks": ["public-authority register", "institutional response chain"],
+      "controls": ["redact personal routing data and verification codes", "preserve complete letter and attachments list"]
+    },
+    {
+      "id": "PD-LIB-EV-0017",
+      "library_title": "RICPE Eversheds proposal",
+      "source_class": "COMMERCIAL_LEGAL_PROPOSAL",
+      "mode": "METADATA_ONLY",
+      "priority": "P2",
+      "propositions": ["proposal/selection perimeter only"],
+      "interlinks": ["RICPE adviser procurement"],
+      "controls": ["proposal does not prove engagement", "commercial confidentiality review"]
+    },
+    {
+      "id": "PD-LIB-EV-0018",
+      "library_title": "Grant Thornton proposal",
+      "source_class": "COMMERCIAL_PROPOSAL",
+      "mode": "METADATA_ONLY",
+      "priority": "P2",
+      "propositions": ["proposed scope and adviser-selection chronology only"],
+      "interlinks": ["RICPE adviser procurement", "professional perimeter"],
+      "controls": ["proposal does not prove work performed", "commercial confidentiality review"]
+    },
+    {
+      "id": "PD-LIB-EV-0019",
+      "library_title": "Email with Supreme Court Judges",
+      "source_class": "COMMUNICATION_REQUIRING_IDENTITY_REVIEW",
+      "mode": "PRIVATE_ONLY",
+      "priority": "P1",
+      "propositions": ["none for public use until exact participants, capacity and context are verified"],
+      "interlinks": ["judicial-professional directory"],
+      "controls": ["high privacy/reputational risk", "do not infer office-holder relationship", "legal review before any excerpt"]
+    },
+    {
+      "id": "PD-LIB-EV-0020",
+      "library_title": "Lloyds insurance analysis",
+      "source_class": "INSURANCE_OR_LEGAL_ANALYSIS",
+      "mode": "PRIVATE_ONLY",
+      "priority": "P2",
+      "propositions": ["coverage/strategy analysis for counsel only"],
+      "interlinks": ["insurance recovery"],
+      "controls": ["privilege and commercial confidentiality", "no public upload"]
+    },
+    {
+      "id": "PD-LIB-EV-0021",
+      "library_title": "2019 message to IA & Judge",
+      "source_class": "CONTEMPORANEOUS_NOTICE",
+      "mode": "EXCERPT_PUBLIC",
+      "priority": "P0",
+      "propositions": ["notice, requested protection and knowledge chronology"],
+      "interlinks": ["Insolvency Administrator", "concurso judge", "2018-2019 aftermath"],
+      "controls": ["publish sent/received evidence with the message", "separate allegation from fact", "redact personal details"]
+    },
+    {
+      "id": "PD-LIB-EV-0022",
+      "library_title": "ONA expression of interest",
+      "source_class": "THIRD_PARTY_COMMERCIAL_PRIMARY",
+      "mode": "FULL_PUBLIC_REDACTED",
+      "priority": "P0",
+      "propositions": ["commercial interest, proposed structure, timing and stated conditions"],
+      "interlinks": ["ONA Hotels", "2018 funded exit", "hotel operation", "causation/damages"],
+      "controls": ["confirm signature/version", "redact contacts and commercially unnecessary details", "distinguish expression of interest from binding commitment"]
+    },
+    {
+      "id": "PD-LIB-EV-0023",
+      "library_title": "draft police attestation",
+      "source_class": "DRAFT_ADVOCACY_OR_COMPLAINT",
+      "mode": "PRIVATE_ONLY",
+      "priority": "P2",
+      "propositions": ["none as independent proof"],
+      "interlinks": ["criminal complaint workstream"],
+      "controls": ["draft is not an official police act", "use underlying exhibits instead", "no public upload"]
+    },
+    {
+      "id": "PD-LIB-EV-0024",
+      "library_title": "Monterecco Information Memorandum",
+      "source_class": "CONTEMPORANEOUS_COMMERCIAL_DOCUMENT",
+      "mode": "EXCERPT_PUBLIC",
+      "priority": "P1",
+      "propositions": ["business model, asset presentation and contemporaneous financing narrative"],
+      "interlinks": ["hotel platform", "valuation", "finance attempts"],
+      "controls": ["commercial confidentiality", "label projections as projections", "publish only pages needed for chronology/value proposition"]
+    },
+    {
+      "id": "PD-LIB-EV-0025",
+      "library_title": "CaixaBank Valencia appeal mail/legal advice",
+      "source_class": "LEGAL_ADVICE_COMMUNICATION",
+      "mode": "PRIVATE_ONLY",
+      "priority": "P0",
+      "propositions": ["counsel work product and instructions for litigation team only"],
+      "interlinks": ["Procedimiento ordinario 1859/2023", "CaixaBank Valencia"],
+      "controls": ["privilege", "no public upload", "derive public chronology from filed documents and neutral metadata"]
+    },
+    {
+      "id": "PD-LIB-EV-0026",
+      "library_title": "RICPE judicial proceedings",
+      "source_class": "COURT_RECORD_BUNDLE",
+      "mode": "FULL_PUBLIC_REDACTED",
+      "priority": "P0",
+      "propositions": ["procedural acts, parties, relief and outcomes stated in filed/court documents"],
+      "interlinks": ["RICPE", "CNMV", "administrative/judicial accountability"],
+      "controls": ["publish document-by-document, not as an undifferentiated bundle", "redact identifiers", "register each proceeding separately"]
+    },
+    {
+      "id": "PD-LIB-EV-0027",
+      "library_title": "Creditors meeting vote",
+      "source_class": "INSOLVENCY_RECORD",
+      "mode": "FULL_PUBLIC_REDACTED",
+      "priority": "P0",
+      "propositions": ["participants, voting denominator, vote and recorded outcome"],
+      "interlinks": ["Concurso 36/2012", "creditor register", "texto definitivo"],
+      "controls": ["reconcile denominator and creditor identity", "publish schedules where necessary", "redact personal data"]
+    },
+    {
+      "id": "PD-LIB-EV-0028",
+      "library_title": "RICPE administrative appeal",
+      "source_class": "ADMINISTRATIVE_FILING",
+      "mode": "FULL_PUBLIC_REDACTED",
+      "priority": "P0",
+      "propositions": ["grounds, requests, documents invoked and procedural status of the appeal"],
+      "interlinks": ["RICPE", "CNMV", "public-authority register"],
+      "controls": ["party allegations remain allegations", "publish authority decision alongside appeal when available", "redact identifiers"]
+    },
+    {
+      "id": "PD-LIB-EV-0029",
+      "library_title": "PwC-CAN 74/2018 matters",
+      "source_class": "PROFESSIONAL_MATTER_RECORD",
+      "mode": "PRIVATE_ONLY",
+      "priority": "P1",
+      "propositions": ["scope, chronology and work performed only after privilege/confidentiality review"],
+      "interlinks": ["PwC", "CAN 74/2018", "2016-2018 professional chronology"],
+      "controls": ["privilege review", "publish filed/third-party independent records first", "no raw time narratives without necessity"]
+    },
+    {
+      "id": "PD-LIB-EV-0030",
+      "library_title": "Finance ministry",
+      "source_class": "PUBLIC_AUTHORITY_RECORD",
+      "mode": "FULL_PUBLIC_REDACTED",
+      "priority": "P0",
+      "propositions": ["authority receipt, competence, response and any disclosed public-fund information"],
+      "interlinks": ["Treasury", "RIC/public funds", "authority chain"],
+      "controls": ["redact personal/verification data", "retain complete annex list", "distinguish non-confirmation from exoneration"]
+    },
+    {
+      "id": "PD-LIB-EV-0031",
+      "library_title": "2018 provisional fraud processing",
+      "source_class": "COURT_OR_PROSECUTORIAL_RECORD",
+      "mode": "FULL_PUBLIC_REDACTED",
+      "priority": "P0",
+      "propositions": ["procedural act, allegations considered and outcome expressly recorded"],
+      "interlinks": ["criminal proceedings", "2018 chronology", "institutional notice"],
+      "controls": ["use exact procedural terminology", "do not describe provisional acts as final findings", "publish operative part"]
+    },
+    {
+      "id": "PD-LIB-EV-0032",
+      "library_title": "English RICPE 2020",
+      "source_class": "CORPORATE_PRESENTATION_OR_PUBLICATION",
+      "mode": "EXCERPT_PUBLIC",
+      "priority": "P0",
+      "propositions": ["what RICPE publicly represented in 2020"],
+      "interlinks": ["RICPE", "Uría Menéndez", "PwC", "Sun Park project representation"],
+      "controls": ["actor/publication representation is not independent title proof", "publish full slide/page context", "reconcile with 20 July 2021 certification"]
+    }
+  ]
+}
