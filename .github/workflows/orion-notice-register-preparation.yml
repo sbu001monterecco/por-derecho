@@ -1,51 +1,114 @@
 name: Orion notice register preparation
 on:
   push:
-    branches: ['integration/orion-notice-register-20260905']
+    branches: ['integration/orion-notice-register-20260905', main]
     paths:
       - '.github/workflows/orion-notice-register-preparation.yml'
       - 'scripts/prepare_orion_notice_register_20260905.py'
       - 'ops/orion-notice-register-input-20260905.json'
+      - 'ops/ORION_NOTICE_CANONICAL_CROSSWALK_20260905.json'
+      - 'assets/data/institutional-communications-register-v1.json'
+  pull_request:
+    paths:
+      - '.github/workflows/orion-notice-register-preparation.yml'
+      - 'scripts/prepare_orion_notice_register_20260905.py'
+      - 'ops/orion-notice-register-input-20260905.json'
+      - 'ops/ORION_NOTICE_CANONICAL_CROSSWALK_20260905.json'
+      - 'assets/data/institutional-communications-register-v1.json'
   workflow_dispatch:
 permissions:
   contents: read
 concurrency:
-  group: orion-notice-register-preparation-${{ github.ref }}
+  group: orion-notice-register-${{ github.ref }}
   cancel-in-progress: false
+env:
+  PYTHONDONTWRITEBYTECODE: '1'
 jobs:
-  inventory:
-    if: github.ref == 'refs/heads/integration/orion-notice-register-20260905'
+  prepare:
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/integration/orion-notice-register-20260905'
     runs-on: ubuntu-latest
+    timeout-minutes: 12
+    permissions:
+      contents: write
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
         with:
+          ref: integration/orion-notice-register-20260905
           fetch-depth: 1
-          persist-credentials: false
-      - name: Inventory canonical notice register and existing projections
+      - name: Complete narrowly scoped schema and source-state integration
         shell: python
         run: |
           import json, pathlib
-          root=pathlib.Path('.')
-          p=root/'assets/data/institutional-communications-register-v1.json'
-          data=json.loads(p.read_text())
-          print('REGISTER_KEYS',list(data))
-          print('EVENT_COUNT',len(data['events']))
-          for e in data['events']:
-            text=json.dumps(e,ensure_ascii=False).lower()
-            if any(s in text for s in ['cajasiete','portfolio','orion','cnmv','ricpe']):
-              print('MATCH',json.dumps({k:e[k] for k in ['event_id','event_date','record_type','layer','institution_id','institution_key','office','official_reference','public_summary_es','title','subject_category','canonical_anchor_en','canonical_anchor_es'] if k in e},ensure_ascii=False))
-          print('EVENT_KEY_UNION',sorted(set().union(*(e.keys() for e in data['events']))))
-          for directory in ['scripts','assets','.github/workflows','assets/data','.github/evidence-intelligence/records']:
-            for f in sorted((root/directory).glob('*')):
-              n=f.name.lower()
-              if f.is_file() and any(s in n for s in ['institutional','orion','cajasiete','portfolio','cnmv']):
-                print('CONTROL_FILE',str(f),f.stat().st_size)
-          for lang in ['es','en']:
-            for f in sorted((root/lang).glob('*/index.html')):
-              n=f.parent.name.lower()
-              if any(s in n for s in ['instituc','institut','cajasiete','portfolio','cnmv','ricpe','orion','financiacion','financing']):
-                print('PUBLIC_ROUTE',str(f),f.stat().st_size)
-          for key in ['institutions','sources','publication','public_routes','schema','schema_version']:
-            if key in data:
-              v=data[key]
-              print('ENVELOPE',key, json.dumps(v,ensure_ascii=False)[:6500])
+          p=pathlib.Path('scripts/prepare_orion_notice_register_20260905.py')
+          text=p.read_text()
+          fixes={
+            "i['institution'].upper().replace(' ','_')":"re.sub(r'[^A-Z0-9]+','_',i['institution'].upper()).strip('_')",
+            "e['source_pages']=i['source_pages']":"e['source_pages']=i['source_pages'].split(';',1)[0]",
+            "state['registration']=i['decision'] if i['key']=='C-20260428' else 'DOCUMENTED_OFFICIAL_ACT'":"state['registration']='CHANNEL_REFERENCE_IN_NOTICE' if i['key']=='C-20260428' else 'DOCUMENTED_OFFICIAL_ACT'",
+            "        events.append(e)":"        e.update({'attribution_state':'INSTITUTIONAL_NOTICE_NO_PERSONAL_SIGNATORY_ASSERTED','linked_transport_event_ids':[],'transport_link_state':'SEPARATE_ACT_AND_TRANSPORT_LINKS_IN_CANONICAL_CROSSWALK','proof_level':i['source_kind']})\n        events.append(e)"
+          }
+          for old,new in fixes.items():
+            if new in text: continue
+            if text.count(old)!=1: raise ValueError('Unexpected generator patch anchor: '+old)
+            text=text.replace(old,new,1)
+          p.write_text(text)
+          p=pathlib.Path('.github/evidence-intelligence/schemas/institutional-communications.schema.json')
+          text=p.read_text()
+          old='"source_batch_id": {"const": "PD-SP-AUTH-COMMS-SCAN-20260901"}'
+          new='"source_batch_id": {"enum": ["PD-SP-AUTH-COMMS-SCAN-20260901", "PD-SP-ORION-NOTICE-20260905"]}'
+          if new not in text:
+            assert text.count(old)==1
+            p.write_text(text.replace(old,new,1))
+      - name: Build canonical register and existing bilingual projections
+        run: |
+          python -m py_compile scripts/prepare_orion_notice_register_20260905.py
+          python scripts/prepare_orion_notice_register_20260905.py apply
+      - name: Validate canonical controls and regression tests
+        run: |
+          python -m pip install --quiet jsonschema
+          python scripts/reconcile_institutional_communications.py --check
+          python scripts/validate_institutional_communications.py
+          python -m unittest -v scripts/test_reconcile_institutional_communications.py
+          python scripts/build_redsara_age_filings_register.py --check
+          python scripts/validate_redsara_authority_discovery.py
+          python scripts/prepare_orion_notice_register_20260905.py check
+      - name: Preserve only the validated canonical delta on the integration branch
+        shell: python
+        run: |
+          import json, pathlib, subprocess
+          report=json.loads(pathlib.Path('ops/ORION_NOTICE_PUBLICATION_AUDIT_20260905.json').read_text())
+          allowed=set(report['managed_files']) | {'scripts/prepare_orion_notice_register_20260905.py','.github/evidence-intelligence/schemas/institutional-communications.schema.json'}
+          changed=set(subprocess.check_output(['git','diff','--name-only']).decode().splitlines())
+          changed |= set(subprocess.check_output(['git','ls-files','--others','--exclude-standard']).decode().splitlines())
+          if changed-allowed: raise ValueError('Out-of-scope files: '+str(sorted(changed-allowed)))
+          subprocess.run(['git','diff','--check'],check=True)
+          if changed:
+            subprocess.run(['git','add','--',*sorted(changed)],check=True)
+            subprocess.run(['git','-c','user.name=Por Derecho integration','-c','user.email=41898282+github-actions[bot]@users.noreply.github.com','commit','-m','Register twenty individual Orion institutional notices and interlink existing bilingual pages'],check=True)
+            subprocess.run(['git','push','origin','HEAD:refs/heads/integration/orion-notice-register-20260905'],check=True)
+          print('PREPARED_HEAD',subprocess.check_output(['git','rev-parse','HEAD']).decode().strip())
+          print('FILES',json.dumps(sorted(changed)))
+  validate:
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
+      - run: python -m pip install --quiet jsonschema
+      - run: |
+          python scripts/reconcile_institutional_communications.py --check
+          python scripts/validate_institutional_communications.py
+          python -m unittest -v scripts/test_reconcile_institutional_communications.py
+          python scripts/prepare_orion_notice_register_20260905.py check
+  verify-live:
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
+      - name: Verify deployed canonical register and affected pages without mutating main
+        run: python scripts/prepare_orion_notice_register_20260905.py live
