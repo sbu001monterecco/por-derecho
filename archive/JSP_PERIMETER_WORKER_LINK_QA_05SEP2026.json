@@ -1,31 +1,32 @@
 {
   "control_id": "PD-JSP-RESEARCH-20260905",
   "result": "PASS_SCOPED_SOURCE_LINK_CHECKS_ONLY",
-  "prompt_words": 3954,
+  "prompt_words": 4035,
   "sources": 11,
   "identity_disposition_groups": 21,
   "event_intake_rows": 17,
   "reciprocal_existing_pages": 4,
   "page_checks": {
     "es": {
-      "anchors": 29,
-      "links_checked": 49
+      "anchors": 30,
+      "links_checked": 50
     },
     "en": {
-      "anchors": 29,
-      "links_checked": 49
+      "anchors": 30,
+      "links_checked": 50
     }
   },
   "hashes": {
-    "archive/JSP_PERIMETER_FORENSIC_MASTER_PROMPT_05SEP2026.md": "0a4831d1a0fc6d579ded444ce14832b507674f453c156d4ebc2a2588d3866345",
-    "assets/data/jsp-perimeter-research-delta-20260905.json": "8356d610c56277fb2849e00af273a22bac6bdf730e366bf3f82ed318220ded39",
+    "archive/JSP_PERIMETER_FORENSIC_MASTER_PROMPT_05SEP2026.md": "8fa64f670f620bdbe793f700483eedbcacefad65ce86e8183432a052db5c8cc6",
+    "assets/data/jsp-perimeter-research-delta-20260905.json": "8029796fd391c29d80447d3698eb9bcd6012bb0ce2cf73584fa2ca138bf5dff6",
     "assets/jsp-montelanza-authority-map-20260905.svg": "cf6a1210a967c282c7bae895cffeae0430bafae8b6918b0e826cb9d11439bbf0",
-    "es/jsp-montelanza-concurso-liquidacion/index.html": "734e3097c2d2d838072f717808f1058ab32d9d683955449ff6fa9bcb2e95e299",
-    "en/jsp-montelanza-insolvency-liquidation/index.html": "11857737e3437e11000389787f76419005085201fb5df24b0eb096ed9dfbadf5",
+    "es/jsp-montelanza-concurso-liquidacion/index.html": "2c439a544aa5d322692a59d86da3284f80e845b93abcc9149d01f41dc0b56a26",
+    "en/jsp-montelanza-insolvency-liquidation/index.html": "5f40e6e34574f6fc2d17d44124dbd9d351b86d57bf812e3f4a9cfcc904551b5c",
     "es/montelanza-monte-lanza-sl/index.html": "f10244736ef013a3c6e717008c519dd4d73e25f2f34708793eb5e91a5e1e6dd4",
     "es/asuncion-aizpurua-sanchez/index.html": "eadd9b30eada46b0cab32747f60836aae1cb5ca70f1c3a240ffc88e7c9a5920b",
     "en/montelanza-monte-lanza-sl/index.html": "316aff33b7f7b15e86ffa4ad4acd80442710edc1d58a034fc3d2c53f8b11dbe0",
-    "en/asuncion-aizpurua-sanchez/index.html": "a2cf6f69debc964e79ce6ba7cf60e28fdc1c2bfd96c1c867b34727db7b82291d"
+    "en/asuncion-aizpurua-sanchez/index.html": "a2cf6f69debc964e79ce6ba7cf60e28fdc1c2bfd96c1c867b34727db7b82291d",
+    "archive/JSP_SOURCE_SUPPLEMENT_05SEP2026.md": "ba3644ee1c47ecd94482bdc4bfddd2d5be7a68ce7b539d080ef370054a89f820"
   },
   "not_certified": [
     "canonical registration complete",
@@ -36,13 +37,7 @@
     "deployed",
     "live verified"
   ],
-  "changed_files": [
-    "es/montelanza-monte-lanza-sl/index.html",
-    "es/asuncion-aizpurua-sanchez/index.html",
-    "en/montelanza-monte-lanza-sl/index.html",
-    "en/asuncion-aizpurua-sanchez/index.html",
-    "es/jsp-montelanza-concurso-liquidacion/index.html",
-    "en/jsp-montelanza-insolvency-liquidation/index.html",
-    "archive/JSP_PERIMETER_FORENSIC_MASTER_PROMPT_05SEP2026.md"
-  ]
+  "changed_files": [],
+  "source_supplement_records": 5,
+  "source_supplement_review_boundary": "S08, S10 and S11 official text; S09 official indexed entry only; R05 third-party edict reproduction."
 }

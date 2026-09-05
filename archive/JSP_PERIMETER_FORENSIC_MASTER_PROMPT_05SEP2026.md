@@ -191,3 +191,8 @@ Current consolidated texts are research aids; identify the effective historical 
 ## Additional primary-source custody lead
 
 **S07 — JSP statutory-auditor lead.** BORME entry416588, published18October2018, records reappointment of KPMG Auditores SL for José Sánchez Peñate SA, GC3655, registered5October2018. Source: https://www.boe.es/borme/dias/2018/10/18/pdfs/BORME-A-2018-201-35.pdf (PDFpage1, printed44851). Keep this formal audit role separate from the KPMG-published historical interview. Retrieve appointment terms, financial years, audit opinions and relevant working-paper custody through the lawful route. The entry does not establish that KPMG audited any Sun Park transfer or knew of any alleged irregularity. Reconcile the firm with existing canonical records rather than duplicating it.
+
+
+## Mandatory source update before execution
+
+Read [JSP_SOURCE_SUPPLEMENT_05SEP2026.md](JSP_SOURCE_SUPPLEMENT_05SEP2026.md). Official entry445948 now confirms Celgán in440/2021 and supplies the full judge name Guillermo Fernández García. Recover the exact2008 and2010 consolidated-account deposits and2020 auditor appointment identified there. Treat Rafael Franco Miranda, Fidel Blasco Miota, Román García-Varela Iglesias and the procurador/NIG details in the reproduced edict as original-document verification targets, not current certified roles. Reconcile this supplement with the earlier candidate-only passages and identity delta; no estate pooling, ownership majority or criminal participation follows automatically.
