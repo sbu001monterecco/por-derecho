@@ -1,0 +1,92 @@
+name: Puzzle external diagnostic 20260905
+on:
+  push:
+    branches: ['integration/cuatrecasas-rauda-20260905', main]
+    paths:
+      - '.github/workflows/puzzle-external-diagnostic-20260905.yml'
+      - 'assets/docs/puzzle/PUZZLE-2024-original.pdf'
+      - 'assets/puzzle-continuity-enhancement-20260905.js'
+      - 'assets/site.js'
+      - 'data/puzzle/**'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: puzzle-external-diagnostic-20260905-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Verify candidate master and capture tree
+        run: |
+          mkdir -p diagnostics
+          python - <<'PY'
+          import hashlib,json,pathlib,subprocess
+          root=pathlib.Path('.')
+          sha=subprocess.check_output(['git','rev-parse','HEAD'],text=True).strip()
+          pdf=root/'assets/docs/puzzle/PUZZLE-2024-original.pdf'
+          raw=pdf.read_bytes()
+          result={'head_sha':sha,'path':str(pdf),'size':len(raw),'sha256':hashlib.sha256(raw).hexdigest(),'pdf_magic':raw.startswith(b'%PDF-'),'expected_size':50046618,'expected_sha256':'e441bdb368c0092d5b15ca5ee911eeac266540bde54817e424f3075f4c5fdd47'}
+          result['verified']=result['size']==result['expected_size'] and result['sha256']==result['expected_sha256'] and result['pdf_magic']
+          pathlib.Path('diagnostics/master-object-check.json').write_text(json.dumps(result,indent=2))
+          print(json.dumps(result))
+          if not result['verified']: raise SystemExit('Authenticated Puzzle master mismatch')
+          PY
+      - name: Install browser runtime
+        run: |
+          python -m pip install playwright==1.55.0
+          python -m playwright install --with-deps chromium
+      - name: Unauthenticated public Puzzle readback
+        run: |
+          python - <<'PY'
+          import json,pathlib,time,urllib.request
+          from playwright.sync_api import sync_playwright
+          root=pathlib.Path('diagnostics'); results=[]
+          base='https://sbu001monterecco.github.io/por-derecho/'
+          for asset in ['assets/docs/puzzle/PUZZLE-2024-original.pdf','assets/docs/puzzle/PUZZLE-2024-web-reading-copy.pdf','assets/docs/puzzle/PUZZLE-2024-overview.jpg']:
+              row={'asset':asset}
+              try:
+                  with urllib.request.urlopen(urllib.request.Request(base+asset,method='HEAD'),timeout=30) as response:
+                      row.update({'status':response.status,'content_type':response.headers.get('Content-Type'),'size':response.headers.get('Content-Length')})
+              except Exception as exc: row['error']=str(exc)[:240]
+              results.append(row)
+          with sync_playwright() as pw:
+              browser=pw.chromium.launch()
+              for lang in ['en','es']:
+                  for label,width,height in [('desktop',1440,900),('phone',390,844),('tablet',820,1180)]:
+                      context=browser.new_context(viewport={'width':width,'height':height},is_mobile=label=='phone',has_touch=label!='desktop')
+                      page=context.new_page(); errors=[]; page.on('pageerror',lambda error: errors.append(str(error)))
+                      row={'language':lang,'device_emulation':label,'physical_device_test':False,'url':base+lang+'/puzzle/#p10'}
+                      try:
+                          started=time.monotonic(); response=page.goto(row['url'],wait_until='domcontentloaded',timeout=60000); page.wait_for_timeout(8000)
+                          row['http_status']=response.status if response else None; row['elapsed_seconds']=round(time.monotonic()-started,2)
+                          row['viewer']=page.locator('.pd-puzzle-viewer').count(); row['continuity']=page.locator('#puzzle-evidential-hierarchy-20260905').count()
+                          if row['viewer']:
+                              viewer=page.locator('.pd-puzzle-viewer').first; row['pdf_state']=viewer.get_attribute('data-pdf-state'); row['visible']=viewer.is_visible(); row['page_input']=viewer.locator('[data-page-input]').input_value(); row['iframe_source']=viewer.locator('iframe').get_attribute('src')
+                          row['horizontal_overflow']=page.evaluate('document.documentElement.scrollWidth > innerWidth + 1')
+                          page.screenshot(path=str(root/(lang+'-'+label+'.png')),full_page=False)
+                      except Exception as exc: row['error']=str(exc)[:600]
+                      row['page_errors']=errors[:12]; results.append(row); context.close()
+              browser.close()
+          root.joinpath('external-readback.json').write_text(json.dumps(results,ensure_ascii=False,indent=2))
+          print(json.dumps(results,ensure_ascii=False,indent=2))
+          if '${{ github.ref }}' == 'refs/heads/main':
+              pdf=[r for r in results if r.get('asset')=='assets/docs/puzzle/PUZZLE-2024-original.pdf'][0]
+              if pdf.get('status') != 200: raise SystemExit('Live original PDF is not publicly readable after main deployment')
+              pages=[r for r in results if 'language' in r]
+              if any(r.get('http_status')!=200 or r.get('horizontal_overflow') for r in pages): raise SystemExit('Live Puzzle route/device readback failed')
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: puzzle-external-diagnostic-20260905-${{ github.run_id }}
+          path: diagnostics/
+          retention-days: 14
