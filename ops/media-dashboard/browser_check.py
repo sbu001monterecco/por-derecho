@@ -23,14 +23,21 @@ try:
     if width<=650:
      assert not page.locator('.main-nav').is_visible(), 'Mobile menu must stay closed until opened'
     initial_heading=page.locator('#media-desk-title').bounding_box()
-    # The shared stylesheet uses smooth scrolling. Do not capture its intermediate animation.
     page.evaluate("document.querySelector('#media-desk').scrollIntoView({block:'start',behavior:'instant'})")
     page.wait_for_timeout(1000)
     heading=page.locator('#media-desk-title').bounding_box()
     header=page.locator('.site-header').bounding_box()
+    geometry=page.evaluate("""() => {
+      const section=document.querySelector('#media-desk');const title=document.querySelector('#media-desk-title');
+      const rect=n=>{const r=n.getBoundingClientRect();return {y:r.y,height:r.height,x:r.x,width:r.width}};
+      return {hash:location.hash,scrollY:scrollY,section:rect(section),title:rect(title),section_style:{display:getComputedStyle(section).display,scrollMarginTop:getComputedStyle(section).scrollMarginTop},children:[...section.children].map(n=>({tag:n.tagName,id:n.id,cls:n.className,...rect(n)})),shell_children:[...title.parentElement.children].slice(0,25).map(n=>({tag:n.tagName,id:n.id,cls:n.className,...rect(n)}))};
+    }""")
+    (OUT/f'{langroute[:2]}-{width}-geometry.json').write_text(json.dumps(geometry,indent=2))
+    (OUT/f'{langroute[:2]}-{width}-desk-dom.html').write_text(desk.evaluate('(n)=>n.outerHTML'))
+    page.screenshot(path=str(OUT/f'{langroute[:2]}-{width}-desk-viewport.png'),full_page=False)
+    print('FRAGMENT_GEOMETRY',json.dumps(geometry))
     assert heading and heading['y']>=0 and heading['y']+heading['height']<height, 'Media heading is not in viewport'
     assert not header or heading['y']>=header['y']+header['height']-2, 'Sticky header obscures media heading'
-    page.screenshot(path=str(OUT/f'{langroute[:2]}-{width}-desk-viewport.png'),full_page=False)
     desk.screenshot(path=str(OUT/f'{langroute[:2]}-{width}-desk-section.png'))
     page.screenshot(path=str(OUT/f'{langroute[:2]}-{width}.png'),full_page=True)
     results.append({'route':langroute,'width':width,'status':response.status,'overflow':overflow,'page_errors':errors,'desk_cards':6,'mobile_navigation_overlay':False if width<=650 else None,'initial_hash_heading':initial_heading,'settled_heading':heading,'sticky_header':header,'fragment_capture':'explicit settled fragment after inherited runtime; initial position reported separately'})
