@@ -43,6 +43,8 @@ jobs:
           fetch-depth: 0
       - name: Validate all repaired contracts, negative cases and publication boundaries
         run: python3 scripts/validate_ci_control_plane.py
+      - name: Reproduce outstanding specialist diagnostics on unchanged base and candidate
+        run: python3 scripts/compare_inherited_ci_diagnostics.py
       - name: Install pinned browser test dependency
         run: |
           python3 -m pip install playwright==1.55.0
