@@ -34,11 +34,17 @@ jobs:
           print('Canonical identity count:',len(records))
           PY
           if test -f scripts/validate_jsp_canonical_dossier.py; then python3 scripts/validate_jsp_canonical_dossier.py; fi
-      - name: Package existing public source files for bounded review
+      - name: Read the pinned historical JSP worker without executing its code
+        uses: actions/checkout@v4
+        with:
+          ref: 3f9738a6e0e3f5954521afa70f50847eb3560c0e
+          path: jsp-worker
+          persist-credentials: false
+      - name: Package public source files for bounded review
         run: |
           python3 - <<'PY'
           import pathlib, tarfile
-          patterns=['assets/data/matter-identity*','assets/data/jsp-*','scripts/*identity*','scripts/*jsp*','scripts/validate_publication_integrity.py','scripts/validate_repository_preservation.py','scripts/validate_audience_experience.py','ops/CANONICAL_ENTITY_NAMES.json','ops/REPOSITORY_PRESERVATION_CONTRACT.json','archive/PROCEEDINGS_MASTER_REGISTER.csv','archive/PROCEEDINGS_MASTER_REGISTER_PROTOCOL.md','es/jsp-montelanza-concurso-liquidacion/**/*','en/jsp-montelanza-insolvency-liquidation/**/*','es/montelanza-monte-lanza-sl/index.html','en/montelanza-monte-lanza-sl/index.html','jsp-canonical-inventory.json']
+          patterns=['assets/data/matter-identity*','assets/data/jsp-*','scripts/*identity*','scripts/*jsp*','scripts/validate_publication_integrity.py','scripts/validate_repository_preservation.py','scripts/validate_audience_experience.py','ops/CANONICAL_ENTITY_NAMES.json','ops/CURRENT_UNITARY_STATE.json','ops/REPOSITORY_PRESERVATION_CONTRACT.json','archive/PROCEEDINGS_MASTER_REGISTER.csv','archive/PROCEEDINGS_MASTER_REGISTER_PROTOCOL.md','es/registro-identidad-materia/index.html','en/matter-identity-registry/index.html','es/jsp-montelanza-concurso-liquidacion/**/*','en/jsp-montelanza-insolvency-liquidation/**/*','es/montelanza-monte-lanza-sl/index.html','en/montelanza-monte-lanza-sl/index.html','jsp-canonical-inventory.json','jsp-worker/archive/JSP*.md','jsp-worker/assets/data/jsp-*.json','jsp-worker/assets/jsp-montelanza-authority-map-20260905.svg','jsp-worker/es/jsp-montelanza-concurso-liquidacion/index.html','jsp-worker/en/jsp-montelanza-insolvency-liquidation/index.html']
           paths={p for pat in patterns for p in pathlib.Path('.').glob(pat) if p.is_file()}
           with tarfile.open('jsp-public-source-review.tar.gz','w:gz') as tf:
               for p in sorted(paths): tf.add(p,arcname=str(p))
