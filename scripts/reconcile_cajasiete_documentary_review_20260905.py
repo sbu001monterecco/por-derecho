@@ -1,10 +1,9 @@
 #!/usr/bin/env python3
 """Replay only the existing CajaSiete delta on actual main; never publish main.
 
-Used by the existing worker preparation lane. Requires a clean checkout, a fixed
-seed and a current-main observation. Stops on any canonical collision or remote
-movement. The final release must retire its workflow writer and pass exact-head
-acceptance before a separately authorised integrator merges it.
+Preserve current-main records and page bytes, keep fixed canonical identities,
+validate before a normal worker push, and stop if either remote ref has moved.
+A separately authorised integrator must retire the writer and verify the release.
 """
 from __future__ import annotations
 import hashlib
@@ -23,6 +22,7 @@ WORKFLOW = '.github/workflows/cajasiete-board-visuals-20260905.yml'
 CROSS = 'ops/CAJASIETE_BOARD_VISUAL_CROSSWALK_20260905.json'
 INPUT = 'ops/cajasiete-board-source-input-20260905.json'
 REG = 'assets/data/institutional-communications-register-v1.json'
+BUILDER = 'scripts/reconcile_institutional_communications.py'
 REPORT = 'ops/CAJASIETE_REVIEW_RECONCILIATION_20260905.json'
 CONTROL = 'PD-CAJASIETE-BOARD-VISUALS-20260905'
 
@@ -74,6 +74,24 @@ def patch_generator(path: Path) -> None:
     assert new in text or text.count(old) == 1
     if new not in text:
         text = text.replace(old, new, 1)
+    # Current builder writes by default; --check remains read-only.
+    text = text.replace("[sys.executable,BUILDER,'--write']", '[sys.executable,BUILDER]')
+    compile(text, str(path), 'exec')
+    path.write_text(text)
+
+def adapt_current_builder(path: Path) -> None:
+    """Use the actual canonical KEY_EVENTS reconciliation, not an obsolete loop."""
+    text = path.read_text()
+    if 'def load_cajasiete_board_events(' in text:
+        raise ValueError('CajaSiete adapter already exists: inspect before replay')
+    anchor = 'def reconcile_register(\n'
+    call = '    key_events = deepcopy(KEY_EVENTS)\n'
+    assert text.count(anchor) == text.count(call) == 1, 'Current canonical reconciliation architecture changed'
+    adapter = ('def load_cajasiete_board_events(root: Path) -> list[dict]:\n'
+               '    from prepare_cajasiete_board_visuals_20260905 import load_cajasiete_events\n'
+               '    return load_cajasiete_events(root)\n\n\n')
+    text = text.replace(anchor, adapter + anchor, 1)
+    text = text.replace(call, call + '    key_events.extend(load_cajasiete_board_events(REPO_ROOT))\n', 1)
     compile(text, str(path), 'exec')
     path.write_text(text)
 
@@ -88,10 +106,13 @@ def main() -> None:
     work = Path(os.environ['RUNNER_TEMP']) / ('cajasiete-review-' + seed[:12])
     assert not work.exists()
     subprocess.run(['git', 'worktree', 'add', '--detach', str(work), base], check=True, cwd=root)
+    artifacts = root / 'qa-cajasiete-review'
+    artifacts.mkdir(exist_ok=True)
+    write_json(artifacts / 'attempt.json', {'seed': seed, 'base': base, 'state': 'PREPARING_NOT_PUBLISHED'})
     cross = json.loads((root / CROSS).read_text())
     before = json.loads((work / REG).read_text())
     ids = {v['event_id'] for v in cross['events'].values()}
-    assert not any(e['event_id'] in ids for e in before['events']), 'Already integrated or event collision: refresh rather than duplicate'
+    assert not any(e['event_id'] in ids for e in before['events']), 'Already integrated or event collision'
     current_media = json.loads((work / 'data/digital-media-asset-register-v1.json').read_text())
     assert not set(cross['assets'].values()) & {a['reference'] for a in current_media['logical_assets']}, 'Media ID collision'
     unique = [GENERATOR, CHECKER, SELF, WORKFLOW, INPUT, CROSS]
@@ -108,17 +129,25 @@ def main() -> None:
     cross['review_base_sha'] = base
     write_json(work / CROSS, cross)
     patch_generator(work / GENERATOR)
-    for command in [
+    adapt_current_builder(work / BUILDER)
+    commands = [
         [sys.executable, GENERATOR, 'apply'],
-        [sys.executable, 'scripts/reconcile_institutional_communications.py', '--check'],
+        [sys.executable, BUILDER, '--check'],
         [sys.executable, 'scripts/validate_institutional_communications.py'],
         [sys.executable, GENERATOR, 'check'],
         [sys.executable, CHECKER],
-    ]:
-        subprocess.run(command, check=True, cwd=work)
+    ]
+    for number, command in enumerate(commands, 1):
+        result = subprocess.run(command, cwd=work, text=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
+        (artifacts / f'check-{number}.txt').write_text(result.stdout)
+        print(result.stdout, flush=True)
+        if result.returncode:
+            if (work / 'qa-cajasiete').exists():
+                shutil.copytree(work / 'qa-cajasiete', artifacts / 'screenshots', dirs_exist_ok=True)
+            raise RuntimeError(f'Validation {number} failed with exit {result.returncode}; no push')
     after = json.loads((work / REG).read_text())
     amap = {e['event_id']: e for e in after['events']}
-    assert all(amap.get(e['event_id']) == e for e in before['events'])
+    assert all(amap.get(e['event_id']) == e for e in before['events']), 'Existing canonical record changed'
     br = json.loads((work / 'ops/CAJASIETE_BOARD_BROWSER_20260905.json').read_text())
     assert br['status'] == 'PASS' and br['case_count'] == br['passed'] == 24
     acceptance = json.loads((work / 'ops/CAJASIETE_BOARD_VISUAL_ACCEPTANCE_20260905.json').read_text())
@@ -135,15 +164,14 @@ def main() -> None:
     commit = subprocess.check_output(['git','commit-tree',tree,'-p',seed,'-p',base,'-m','Reconcile CajaSiete documentary reader onto current main; preserve all sources and pass 24 browser cases'], cwd=work, text=True).strip()
     record['prepared_tree'] = tree
     record['candidate_sha'] = commit
-    (root / 'qa-cajasiete-review').mkdir(exist_ok=True)
     for path in sorted(allowed):
         src = work / path
         if src.is_file():
-            dest = root / 'qa-cajasiete-review' / path
+            dest = artifacts / path
             dest.parent.mkdir(parents=True, exist_ok=True)
             shutil.copyfile(src, dest)
-    shutil.copytree(work / 'qa-cajasiete', root / 'qa-cajasiete-review' / 'screenshots', dirs_exist_ok=True)
-    write_json(root / 'qa-cajasiete-review' / 'preparation-receipt.json', record)
+    shutil.copytree(work / 'qa-cajasiete', artifacts / 'screenshots', dirs_exist_ok=True)
+    write_json(artifacts / 'preparation-receipt.json', record)
     assert git('ls-remote','origin','refs/heads/'+BRANCH,cwd=root).split()[0] == seed, 'Concurrent worker moved: no push'
     assert git('ls-remote','origin','refs/heads/main',cwd=root).split()[0] == base, 'Main moved: preserve artifact and reconcile again'
     subprocess.run(['git','push','origin',commit+':refs/heads/'+BRANCH],cwd=root,check=True)
