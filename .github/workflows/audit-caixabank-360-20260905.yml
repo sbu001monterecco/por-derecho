@@ -1,0 +1,48 @@
+name: CaixaBank 360 source and browser audit
+on:
+  push:
+    branches: ['worker/caixabank-360-audit-20260905']
+    paths: ['scripts/audit_caixabank_360_20260905.py', '.github/workflows/audit-caixabank-360-20260905.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+  actions: read
+concurrency:
+  group: caixabank-360-audit-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: false
+          fetch-depth: 1
+      - name: Install pinned audit tools
+        run: python3 -m pip install playwright==1.55.0 requests==2.32.5 beautifulsoup4==4.13.5 PyMuPDF==1.26.4
+      - name: Read repository inventory and export public source
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python3 scripts/audit_caixabank_360_20260905.py --stage source
+      - uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
+        with:
+          name: caixabank-360-public-source
+          path: |
+            /tmp/caixabank-audit/public-source.zip
+            /tmp/caixabank-audit/source-inventory.json
+            /tmp/caixabank-audit/remote-state*.json
+          retention-days: 7
+      - name: Install Chromium Firefox and WebKit
+        run: python3 -m playwright install --with-deps chromium firefox webkit
+      - name: Observe actual public rendering and no-script routes
+        run: python3 scripts/audit_caixabank_360_20260905.py --stage browser
+      - name: Check anonymous public files and source parity
+        if: always()
+        run: python3 scripts/audit_caixabank_360_20260905.py --stage http
+      - uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
+        if: always()
+        with:
+          name: caixabank-360-browser-http-evidence
+          path: /tmp/caixabank-audit/
+          retention-days: 7

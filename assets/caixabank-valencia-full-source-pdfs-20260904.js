@@ -5,9 +5,9 @@
   const en = path.endsWith('/en/caixabank-valencia-claim/documents/');
   if (!es && !en) return;
 
-  const DEMANDA = 'https://1drv.ms/b/c/bdf43392f576e62f/IQA_jgn9nZ7HS5RT7byXZwJ4AXG2kA1SGMZOfENKOQAc_80';
-  const CONTESTACION = 'https://1drv.ms/b/c/bdf43392f576e62f/IQDp2mBSGL5GQ5cNBhcEiVKrAcn8t1WXaYOaZCDghdJjo8Q';
-  const AC2021 = 'https://1drv.ms/b/c/bdf43392f576e62f/IQBAYqfoXeLLSYqnpI5fm2CDAa1iTqAOPpKsimc7sp94dZc';
+  const DEMANDA = '/por-derecho/assets/evidence/caixabank-valencia-publica-20260905/caixabank-demanda-oct2023-publica-20260905.pdf';
+  const CONTESTACION = '/por-derecho/assets/evidence/caixabank-valencia-publica-20260905/caixabank-contestacion-ene2024-publica-20260905.pdf';
+  const AC2021 = '/por-derecho/assets/evidence/caixabank-valencia-publica-20260905/caixabank-ac-25ene2021-publica-20260905.pdf';
   const DOC8 = 'https://1drv.ms/b/c/bdf43392f576e62f/IQCDS99BESLrToUHiLW7-WvgAatOtLDaQUPRm_z-LRajyJI';
   const DOC9 = 'https://1drv.ms/b/c/bdf43392f576e62f/IQCmADXdZu4tSriWJqneZ-eHAVHg_JszZ1-zvna_pyNihg8';
 
@@ -19,7 +19,7 @@
       <div class="shell record">
         <div class="source" style="border:2px solid rgba(19,37,45,.28)">
           <p class="eyebrow">FUENTES PRIMARIAS · ABRIR EL DOCUMENTO PRESENTADO</p>
-          <h2>Los escritos principales ya pueden leerse íntegramente antes de contactar.</h2>
+          <h2>Los escritos principales pueden leerse completos, con disociación de datos, antes de contactar.</h2>
           <p>Estos enlaces son <strong>copias PDF de los escritos fuente localizados en el expediente</strong>, alojadas en modo de lectura pública. La demanda y la contestación se ofrecen para que un abogado pueda comprobar el texto completo, no sólo el resumen de esta sala.</p>
           <div class="linkrow" style="margin:.9rem 0 1rem">
             ${button(DEMANDA, 'Abrir demanda completa · 27 págs. →')}
@@ -53,7 +53,7 @@
             ${button(DOC9, 'Open Doc. 9 · joint BdE/CNMV note · 7 pp. →', 'button secondary')}
           </div>
           <div class="warn"><strong>Sources not bulk-published.</strong> The financial-risk contract, pledge and internal risk sheet expose account/operational identifiers; the 2013 AC report includes multi-creditor/third-party data; “Info Administrador” includes personal and licensed commercial-source material; and the 96-page PKF report contains third-party national-ID/contact data and provider annexes. Those records remain summarized or await a genuinely public-safe derivative rather than a misleading pseudo-redaction.</div>
-          <p class="small" style="margin-top:.8rem"><strong>Document control:</strong> source PDFs prevail over summaries. Published links are view-only with no configured expiry. Party pleadings remain contested positions.</p>
+          <p class="small" style="margin-top:.8rem"><strong>Document control:</strong> source PDFs prevail over summaries. The three core reading copies are same-site public redacted PDFs; regulatory annexes use their separately identified external viewers. Party pleadings remain contested positions.</p>
         </div>
       </div>
     </section>`;
