@@ -1,86 +1,36 @@
-name: MASTER MYND finite reader layout preparation
+name: MASTER MYND first-reader structure regression
 on:
-  push:
-    branches: ['worker/master-mynd-site-address-20260905']
-    paths: ['.github/workflows/master-mynd-layout-preparation.yml']
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - 'en/acosta-matos-family/index.html'
+      - 'es/acosta-matos-familia/index.html'
+      - 'assets/master-mynd-reader-priority.js'
+      - '.github/workflows/master-mynd-layout-preparation.yml'
 permissions:
-  contents: write
+  contents: read
 jobs:
-  prepare:
-    if: startsWith(github.event.head_commit.message, 'Prepare source-preserving MASTER MYND')
+  verify-structure:
     runs-on: ubuntu-latest
-    timeout-minutes: 6
+    timeout-minutes: 5
     steps:
       - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
         with:
-          ref: ${{ github.sha }}
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
           fetch-depth: 1
-      - name: Keep every source word, anchor and image; repair only reading-order structure
+          persist-credentials: false
+      - name: Preserve direct-source layout, references and real image fingerprints
         run: |
           python3 -m pip install --quiet beautifulsoup4 pillow
+          node --check assets/master-mynd-reader-priority.js
+          python3 scripts/validate_master_mynd.py
           python3 - <<'PY'
           from pathlib import Path
           from bs4 import BeautifulSoup
-          import json,subprocess,hashlib
-          paths=['en/acosta-matos-family/index.html','es/acosta-matos-familia/index.html']
-          evidence=[]
-          for name in paths:
-              p=Path(name);text=p.read_text();old=BeautifulSoup(text,'html.parser')
-              assert text.count('</head>')==1
-              link='<script src="../../assets/master-mynd-reader-priority.js" defer></script>'
-              if name.startswith('en/'):
-                  start='<article class="master-narrative" id="master-mynd-record">'
-                  end='</article><details class="legacy-family" id="family-source-continuity">'
-                  assert text.count(start)==1 and text.count(end)==1
-                  text=text.replace(start,'<section class="master-narrative hero" id="master-mynd-record">',1)
-                  text=text.replace(end,'</section><details class="legacy-family" id="family-source-continuity">',1)
-                  link+='<style>#master-mynd-record.hero{background:transparent;color:inherit;min-height:0}#master-mynd-record.hero .lead{color:inherit}</style>'
-              text=text.replace('</head>',link+'</head>',1)
-              new=BeautifulSoup(text,'html.parser')
-              assert old.main.get_text()==new.main.get_text(),('source text changed',name)
-              assert [e.get('id') for e in old.main.select('[id]')]==[e.get('id') for e in new.main.select('[id]')],('ID changed',name)
-              assert [e.get('href') for e in old.main.select('a')]==[e.get('href') for e in new.main.select('a')],('link changed',name)
-              assert [e.get('src') for e in old.main.select('img')]==[e.get('src') for e in new.main.select('img')],('image changed',name)
-              p.write_text(text);evidence.append({'path':name,'all_main_text_ids_links_images_identical':True})
-          media_path=Path('data/digital-media-asset-register-v1.json');media=json.loads(media_path.read_text())
-          updated=[]
-          for record in media['files']:
-              name=record.get('repository_path')
-              if name in paths:
-                  record.setdefault('prior_surface_versions',[]).append({'sha256':record['sha256'],'bytes':record['bytes'],'state':'SUPERSEDED_BY_SOURCE_IDENTICAL_READING_ORDER_REPAIR','source_head':'7a07778d120ce9ef777668758b2f449785fc10b5'})
-                  data=Path(name).read_bytes();record['bytes']=len(data);record['sha256']=hashlib.sha256(data).hexdigest();updated.append(name)
-          assert set(updated)==set(paths)
-          media_path.write_text(json.dumps(media,ensure_ascii=False,indent=2)+'\n');paths.append(str(media_path))
-          p=Path('scripts/check_master_mynd_browser.py');text=p.read_text()
-          old="resources={'assets/data/sun-park-mynd-yaiza-site-v1.json'"
-          assert text.count(old)==1
-          text=text.replace(old,"resources={'assets/master-mynd-reader-priority.js','assets/data/sun-park-mynd-yaiza-site-v1.json'",1)
-          old="        if family:\n         for image in profile['images']:"
-          assert text.count(old)==1
-          new="        if family:\n         expected_first='master-mynd-record' if language=='en' else 'master-mynd'\n         if page.locator('main').evaluate('(m)=>m.firstElementChild.id')!=expected_first:case['errors'].append('approved MASTER MYND content is not the first main section')\n         for image in profile['images']:"
-          text=text.replace(old,new,1).replace("lambda exc:exceptions.append(str(exc))","lambda exc:exceptions.append(exc.stack or str(exc))")
-          p.write_text(text);paths.append(str(p))
-          changed=subprocess.check_output(['git','diff','--name-only'],text=True).splitlines()
-          assert set(changed)==set(paths),changed
-          Path('/tmp/mm-layout').mkdir();Path('/tmp/mm-layout/source-preservation.json').write_text(json.dumps(evidence,indent=2))
-          Path('/tmp/mm-layout/paths.txt').write_text('\n'.join(paths))
+          for name,expected in [('en/acosta-matos-family/index.html','master-mynd-record'),('es/acosta-matos-familia/index.html','master-mynd')]:
+              page=BeautifulSoup(Path(name).read_text(),'html.parser')
+              assert next(c for c in page.main.children if c.name).get('id')==expected
+              assert page.select_one('script[src="../../assets/master-mynd-reader-priority.js"]')
+          print('Source first-read order, loader and media fingerprints verified; rendered behaviour is separately checked in three browser engines.')
           PY
-          node --check assets/master-mynd-reader-priority.js
-          python3 -m py_compile scripts/check_master_mynd_browser.py
-          python3 scripts/validate_master_mynd.py
-          python3 scripts/validate_satire_publication_governance.py
-      - name: Commit only the reviewed reader compatibility delta to this worker
-        run: |
-          test "${GITHUB_REF}" = 'refs/heads/worker/master-mynd-site-address-20260905'
-          git diff > /tmp/mm-layout/source-preserving.patch
-          git config user.name 'Por Derecho reader compatibility'
-          git config user.email 'noreply@users.noreply.github.com'
-          while IFS= read -r path || test -n "$path"; do git add -- "$path"; done < /tmp/mm-layout/paths.txt
-          git commit -m 'Preserve every MASTER MYND source word while repairing first-read order and direct-section compatibility'
-          git push origin HEAD:refs/heads/worker/master-mynd-site-address-20260905
-      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
-        if: always()
-        with:
-          name: master-mynd-layout-preservation
-          path: /tmp/mm-layout
-          if-no-files-found: ignore
+          test -z "$(git status --porcelain)"
