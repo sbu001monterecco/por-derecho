@@ -1,0 +1,46 @@
+name: Cuatrecasas RAUDA publication
+on:
+  push:
+    branches: ['integration/cuatrecasas-rauda-20260905']
+    paths: ['.github/workflows/cuatrecasas-rauda-publication.yml']
+permissions:
+  contents: read
+jobs:
+  inspect-current-source:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          fetch-depth: 20
+          persist-credentials: false
+      - name: Inspect source schema and exact route identities without mutation
+        shell: python
+        run: |
+          from pathlib import Path
+          import json,re,hashlib,subprocess
+          base='e482e29325091bcc32af3fd2b2624335c6699e19'
+          print('BASE',base,'HEAD',subprocess.check_output(['git','rev-parse','HEAD']).decode().strip())
+          for lang in ['es','en']:
+            for p in sorted(Path(lang).glob('*/index.html')):
+              if any(t in str(p) for t in ['cuatrecasas','ingenieria','reverse-engineer','dp-748','etj-163','cambiario','matkator','cnmv-ricpe','pwc','uria-menendez']):
+                s=p.read_text(); print('ROUTE',str(p),'bytes',len(s.encode()),'main_closes',s.lower().count('</main>'),'sha256',hashlib.sha256(s.encode()).hexdigest())
+                print('META',re.findall(r'<(?:title|link)[^>]*(?:hreflang[^>]*|rel=[\"\x27]canonical[^>]*|>[^<]*</title>)',s,re.I)[:8])
+                print('HEADINGS',re.findall(r'<h[12][^>]*>(.*?)</h[12]>',s,re.S)[:5])
+          names=['assets/data/institutional-communications-register-v1.json','assets/data/matter-identity-registry-v1.json','assets/data/legal-professionals-register-v1.json']
+          for name in names:
+            p=Path(name);d=json.loads(p.read_text());print('SCHEMA',name, list(d) if isinstance(d,dict) else 'list', 'bytes',p.stat().st_size)
+            def walk(x,path=''):
+              if isinstance(x,dict):
+                vals=' '.join(str(v) for v in x.values() if isinstance(v,(str,int,float)))
+                relevant=bool(re.search(r'RAUDA|163/2020|748/2026|1048/2019|2022-02-18|2022-03-07|2026-07-16|2026-09-03',vals,re.I))
+                if relevant and len(json.dumps(x))<20000:
+                  clean={k:v for k,v in x.items() if not re.search(r'email|message.?id|provider|locator|address|private',k,re.I)}
+                  print('MATCH',name,path,json.dumps(clean,ensure_ascii=False)[:12000]);return
+                for k,v in x.items():walk(v,path+'/'+str(k))
+              elif isinstance(x,list):
+                for i,v in enumerate(x):walk(v,path+'/'+str(i))
+            walk(d)
+          for p in sorted(Path('assets/data').glob('*')):
+            if p.is_file() and any(t in p.name.lower() for t in ['cuatrecasas','rauda','748','proceeding','source-register']): print('RELATED_DATA',str(p),p.stat().st_size)
+          print('READ_ONLY_SOURCE_INSPECTION_COMPLETE')
