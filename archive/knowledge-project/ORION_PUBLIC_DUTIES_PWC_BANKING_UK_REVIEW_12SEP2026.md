@@ -41,7 +41,7 @@ For each engagement, Portfolio should seek: contracting entity and beneficial cl
 
 ## Orion disclosures and the earlier actor perimeter
 
-The June 2026 memorandum already discloses substantial related-party relationships. Its pages 28–29 identify the management arrangement with **AGM Canary Asset Management, S.L.** and Pamalexsha's 18.77% AGM interest. The memorandum identifies FMMM's 33% indirect participation through Pamalexsha; the latter's ownership is described as FMMM 33%, Shaila María Cogolludo Ramos 34% and Antonio Cogolludo Rojas 33%. Do not confuse this with Enrique Luis Guerra's separate 18.73% AGM interest or label all three as Portfolio directors. [5]
+The June 2026 memorandum already discloses substantial related-party relationships. Its pages 28–29 identify the management arrangement with **AGM Canary Asset Management, S.L.** and Pamalexsha's 18.77% AGM interest. FMMM participates in AGM through Pamalexsha; Pamalexsha's own ownership is described as FMMM 33%, Shaila María Cogolludo Ramos 34% and Antonio Cogolludo Rojas 33%. Do not confuse this with Enrique Luis Guerra's separate 18.73% AGM interest or label all three as Portfolio directors. [5]
 
 The material question is whether existing disclosures adequately explain relevant conflicts, historical knowledge, exposures and risks, and whether later notice required correction. The record also includes RICPE lending to Orion, CAM construction billing and a July 2026 subscribed/paid capital increase. Those figures must retain their reference dates; subscription, deed, registration and trading admission are different events. The apparent June memorandum inconsistency between first-tranche share figures should be expressly reconciled. EY's unmodified 2025 audit opinion remains contrary/contextual evidence, not a ruling on every disputed title or statement.
 
@@ -69,7 +69,7 @@ The reciprocal hypothesis is specific: borrower-side representations and benefit
 
 ## Valencia: live recovery and limits on downstream conclusions
 
-The controlling 8 September reconciliation identifies **ORD 1859/2023-9**, **NIG 4625042120230049579**, and the 6 November 2025 court direction fixing **28 January 2027, 10:00**, historically JPI 27 Valencia. Earlier references to 9 October 2026, 12:00 and the other NIG are superseded. This is the latest controlled record, not a real-time court certification. [8]
+The controlling 8 September reconciliation identifies **ORD 1859/2023-9**, **NIG 4625042120230049579**, and the 6 November 2025 court direction fixing **28 January 2027, 10:00**, historically JPI 27 Valencia. Earlier references to an October 2026 hearing at noon and the other NIG are superseded. This is the latest controlled record, not a real-time court certification. [8]
 
 Aweswell's action invokes creditor standing under article 122 TRLC in LPB's estate interest. Standing and substantive liability are disputed. EUR1,124,445.84 is the located claim's provisional procedural amount, not an award, available cash or the universal limit on loss. The defendant's native defence package is strongly reconciled; the exact claimant-filed payload and expert-copy/receipt matching retain identified gaps. CaixaBank's defences concerning standing, scope, prior recognition, timing, information/consent, causation and quantum remain part of the analysis.
 
