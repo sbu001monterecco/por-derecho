@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "benchmark_id": "PD-VAULT-BENCHMARK-20260912-01",
+  "edition": "PUBLIC_SAFE_CONTROL_NOT_PRIVATE_INVENTORY",
+  "checkpoint": "INITIAL_UNVERIFIED_BASELINE_20260912",
+  "canonical_host": "GitLab",
+  "mirror_host": "GitHub",
+  "scope_version": null,
+  "whole_scope_denominator_closed": false,
+  "required_native_occurrences": null,
+  "verified_native_occurrences": null,
+  "unresolved_required_gaps": null,
+  "full": false,
+  "official_court_file_complete": false,
+  "gates": {
+    "SCOPE": "OPEN",
+    "BASELINE_ACCOUNTING": "OPEN",
+    "NATIVE_RECOVERY": "OPEN",
+    "CONTENT_IDENTITY": "OPEN",
+    "USABLE_EVIDENCE": "OPEN",
+    "PRIVATE_PROTECTION": "UNVERIFIED",
+    "INDEPENDENT_RESTORE": "UNVERIFIED",
+    "MEMORY_REHYDRATION": "UNVERIFIED",
+    "ONGOING_INTAKE": "UNVERIFIED",
+    "OFFICIAL_DOCKET": "OPEN"
+  },
+  "receipt_ids": {},
+  "runtime": {
+    "mailbox_worker_started": false,
+    "mailbox_mutations": false,
+    "encryption_provisioned_by_this_release": false,
+    "restoration_performed_by_this_release": false
+  }
+}
