@@ -177,3 +177,13 @@ Reuse PD-GAP-UCF-012 (finance/source-and-use), 013 (actor-specific proof, includ
 ## Expanded Orion/PwC/banking/public-duty review — 12 September 2026
 
 The [source-qualified expanded register](ORION_PUBLIC_DUTIES_PWC_BANKING_UK_REVIEW_12SEP2026.md) controls this additional review. It records the March 2016 project-work scope, client-originated June/July criminal instructions, separately confirmed September PwC–AC telephone contact, the 10-June recording/provenance correction, Carlos/Socios Inversores Canarios BORME connection, and CNMV-listed Grant Thornton audits of Portfolio for 2024–2025. It adds all relevant Cajasiete engagement questions, the locales/OB REM/works/title chain, corrected Valencia identity/hearing and recovery boundaries, public/non-contractual duties, the limited HMRC UK-tax link, and the conditional memorandum/exchange-notice remedies. It preserves the direct Guerra–Borja partnership and alleged PwC oral criminal conclusion as open; it does not infer knowledge or guilt through association.
+
+
+
+## 13 September 2026 — Portfolio historical governance and notice cross-reference
+
+Martin Paul Graham is included here as a historical Portfolio operator director and complaint-escalation recipient, not as an adviser to the Sun Park perimeter. BORME registration/publication records establish the historical directorship; the source-qualified December 2024–January 2025 notice sequence is reviewed separately. No professional engagement, common knowledge or responsibility is inferred from his board role. The exact-name UK officer record remains subject to a cross-register identity bridge and does not establish the location of his Portfolio conduct.
+
+Martin Paul Graham se incluye como consejero histórico del operador Portfolio y destinatario de escalado de la denuncia, no como asesor del perímetro Sun Park. Los asientos/publicaciones BORME acreditan el cargo histórico; la secuencia de avisos de diciembre de 2024–enero de 2025 se revisa por separado y con control de fuente. No se deducen encargo profesional, conocimiento común ni responsabilidad del cargo. El registro británico de nombre coincidente conserva pendiente la conexión de identidad entre registros y no acredita dónde tuvo lugar su conducta para Portfolio.
+
+[English source-qualified addendum](orion-martin-notice-20260913/MARTIN_NOTICE_EN.md) · [Adenda con control de fuentes en español](orion-martin-notice-20260913/MARTIN_NOTICE_ES.md). GitLab remains canonical; corresponding website release is in progress when this preservation addendum is prepared.
