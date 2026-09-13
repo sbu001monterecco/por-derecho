@@ -10,7 +10,7 @@ The earlier statement that the current director/shareholder disclosures did not 
 
 ## Eight separate notice events
 
-The rows use the coordinated GitLab canonical event allocation. They are public summaries of seven authenticated email records and one separately attributed user-supplied messaging transcription. They are not a second canonical communications register.
+The rows use the coordinated GitLab canonical event allocation. They are public summaries of seven native email records independently retrieved from the connected mailbox and one separately attributed user-supplied messaging transcription. Retrieval establishes source provenance; it does not certify authorship or forensic authenticity. They are not a second canonical communications register.
 
 | Event | Date / time | Source-controlled summary |
 |---|---|---|

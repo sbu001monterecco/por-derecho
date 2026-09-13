@@ -10,7 +10,7 @@ La afirmación anterior de que las publicaciones del consejo y accionistas actua
 
 ## Ocho eventos de aviso separados
 
-Las filas usan la asignación coordinada de eventos canónicos de GitLab. Son resúmenes públicos de siete registros de correo autenticados y una transcripción de mensajería aportada por el usuario y atribuida por separado. No constituyen otro registro canónico de comunicaciones.
+Las filas usan la asignación coordinada de eventos canónicos de GitLab. Son resúmenes públicos de siete registros nativos de correo recuperados independientemente del buzón conectado y una transcripción de mensajería aportada por el usuario y atribuida por separado. La recuperación acredita procedencia; no certifica autoría ni autenticidad forense. No constituyen otro registro canónico de comunicaciones.
 
 | Evento | Fecha / hora | Resumen sujeto a control de fuente |
 |---|---|---|
