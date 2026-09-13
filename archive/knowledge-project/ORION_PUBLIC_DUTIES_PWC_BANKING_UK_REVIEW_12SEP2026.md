@@ -142,3 +142,15 @@ Public sources accessed 12 September 2026; internal controls are analytical/sour
 [17] [EPPO reporting scope](https://www.eppo.europa.eu/reporting-crime-eppo_en). [18] [UK NCP complaint guidance](https://www.gov.uk/guidance/uk-national-contact-point-for-the-organisation-for-economic-co-operation-and-development-oecd-guidelines-for-multinational-enterprises). [19] [European Convention](https://www.echr.coe.int/documents/d/echr/Convention_ENG), articles 1, 34–35.
 
 [20] [Portfolio rulebook](https://portfolio.exchange/downloads/Portfolio-Reglamento_Rulebook_VF28072023_signed.pdf), section 5.2.7. Obtain the executed/applicable version for formal action.
+
+
+
+## 13 September 2026 — historical director notice and UK inquiry correction
+
+**Historical role now positively established:** BORME records Martin Paul Graham as a director of the Portfolio operator across December 2024 (appointment registered 11 October 2022; cessation registered 30 July 2025). The earlier current-director check above does not exclude this historical role. The new bounded review also recovers direct email escalation to Graham on 10 December, a separately attributed user-supplied 11 December messaging account, the native 12 December institutional acknowledgement and a 17 January 2025 renewed escalation. Sending, attributed awareness, institutional receipt, review and full-board circulation remain separate states. The UK officer-record identity bridge and actual UK conduct remain open.
+
+**Cargo histórico acreditado:** el BORME sitúa a Martin Paul Graham como consejero del operador de Portfolio durante diciembre de 2024 (nombramiento inscrito el 11 de octubre de 2022; cese inscrito el 30 de julio de 2025). La comprobación anterior de consejeros actuales no excluye ese cargo histórico. La revisión recupera además escalado directo por correo el 10 de diciembre, relato de mensajería aportado y atribuido por separado del 11, acuse institucional nativo del 12 y nuevo escalado del 17 de enero de 2025. Se mantienen separados envío, conocimiento atribuido, recepción institucional, revisión y circulación al consejo completo. Siguen abiertas la conexión de identidad con el registro británico y la conducta británica efectiva.
+
+[Complete English evidence addendum](orion-martin-notice-20260913/MARTIN_NOTICE_EN.md) · [Adenda probatoria completa en español](orion-martin-notice-20260913/MARTIN_NOTICE_ES.md).
+
+This additive GitHub preservation copy leaves earlier text and adverse/open evidence intact. Canonical editing and website deployment remain on GitLab; the corresponding Martin release is in progress at preparation. No full-repository mirror or GitHub Pages activation is asserted.
