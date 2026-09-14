@@ -1,0 +1,21 @@
+{
+  "schema": "por-derecho.publication-state.v1",
+  "schema_version": "1.0.0",
+  "publication_id": "PD-RICPE-ORIGINAL-20260905",
+  "control_date": "2026-09-05",
+  "owner": "worker/ricpe-original-pdf-accountability-20260905",
+  "current_state": "REMOTE_SOURCE",
+  "expected_routes": {
+    "es": ["es/ric-private-equity-sun-park/analisis-canal.html", "es/ric-private-equity-sun-park/index.html", "es/ricpe-responsabilidad-documental/index.html", "es/ricpe-perimetro-accionistas-medios/index.html", "es/cnmv-ricpe-verificacion/index.html", "es/ricpe-hnt-gc836-trazabilidad/index.html", "es/ricpe-idoneidad-series-f-g/index.html", "es/ricpe-idoneidad-aeat-preguntas/index.html", "es/reconstruccion-unitaria-autoridades-publicas/index.html"],
+    "en": ["en/ric-private-equity-sun-park/channel-analysis.html", "en/ric-private-equity-sun-park/index.html", "en/ricpe-documentary-accountability/index.html", "en/ricpe-perimeter-shareholders-media/index.html", "en/cnmv-ricpe-verification/index.html", "en/ricpe-hnt-gc836-traceability/index.html", "en/ricpe-idoneidad-series-f-g/index.html", "en/ricpe-idoneidad-aeat-public-questions/index.html", "en/public-authority-unitary-case-reconstruction/index.html"]
+  },
+  "shared_routes": ["evidence/ricpe-cnmv/2026-08-27/index.html"],
+  "source_inventory": "assets/data/ricpe-original-accountability-20260905.json",
+  "expected_source_files": ["assets/ricpe-original-accountability-20260905.js", "assets/ricpe-original-accountability-20260905.css", "assets/data/ricpe-original-accountability-20260905.json", "evidence/ricpe-cnmv/2026-08-27/original-authorised-20260905/RICPE_Canal_Etico_Certificado_Resolucion_27AGO2026.pdf", "operations/preservation-authorizations/RICPE_ORIGINAL_EXACT_PUBLICATION_05SEP2026.json", "archive/RICPE_ORIGINAL_ACCOUNTABILITY_05SEP2026.md"],
+  "authority": "Explicit user request to add this original file as is for PDF viewing on several pages with a source-led attributed critical analysis.",
+  "source_baseline": "65d56cec10e11f5a5c0861bb087ee87e64f5effa",
+  "implementation_boundary": "Two complete static readers; eight existing bilingual route pairs plus shared evidence hub enhanced through the existing runtime loader. Historical page source and redacted artifacts preserved. Global individual-event reconciliation remains open.",
+  "validation": {"required": ["scoped source and original-byte checks", "exact-authority negative tests", "redacted-edition privacy preservation", "19-route browser/readback", "no-JavaScript static readers", "PD release acceptance", "publication-integrity"], "status": "PENDING_ACTUAL_CANDIDATE_RUN"},
+  "completion_boundary": "This source-stage manifest does not claim merge, deployment or live verification. Subsequent exact-head CI, controller state and Control Tower1428 receipts determine actual release state.",
+  "no_email_or_filing": true
+}

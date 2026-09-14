@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Fail closed if the private RICPE communication identifier is public."""
+"""Fail closed, except for the single exact original specifically authorised on 5 Sep."""
 
 from __future__ import annotations
 
@@ -9,7 +9,7 @@ import shutil
 import subprocess
 import sys
 from pathlib import Path
-
+from ricpe_original_publication_policy import authorised_original
 
 ROOT = Path(__file__).resolve().parents[1]
 PUBLIC_FINGERPRINT = "e53bda34973e530520bde39648768a1e32a358d8984294b21258789faebe6a24"
@@ -104,8 +104,8 @@ for encoded_relative in tracked:
         data = path.read_bytes()
     except OSError:
         continue
-    if digest(data) in BANNED_BINARY_HASHES:
-        errors.append(f"known unsafe RICPE binary present in current tree: {relative}")
+    if digest(data) in BANNED_BINARY_HASHES and not authorised_original(ROOT, relative, data):
+        errors.append(f"known unsafe RICPE binary present outside exact authorisation: {relative}")
     if len(data) > 8_000_000:
         continue
     try:
@@ -161,9 +161,10 @@ if errors:
         print(f"- {error}", file=sys.stderr)
     raise SystemExit(1)
 
-print("RICPE CHANNEL IDENTIFIER PRIVACY: PASS")
+print("RICPE CHANNEL IDENTIFIER PRIVACY: PASS WITH EXACT USER-AUTHORISED ORIGINAL EXCEPTION")
 print("- approved fingerprint present in all three controlled text files")
 print("- obsolete unredacted PDF/image paths absent from the current tree")
 print("- redacted PDF and six public renders match their controlled hashes")
-print("- current-tree text and extracted public-PDF text contain no protected identifier")
-print("- extracted public-PDF text contains no email address or international phone number")
+print("- current-tree text and extracted redacted-PDF text contain no protected identifier")
+print("- redacted-PDF text contains no email address or international phone number")
+print("- any authorised native original must match the exact separate path, bytes, hash and authority record")
