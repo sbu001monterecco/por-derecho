@@ -3,7 +3,7 @@
 **Control date:** 27 August 2026  
 **Public status:** publication control for the CajaSiete financing-comparability dossier  
 **Canonical UK entity:** Aweswell Limited, company no. 07716847  
-**Forbidden generated name:** Oswell Limited
+**Naming rule:** noncanonical spelling variants must not be generated or published.
 
 ## Purpose
 
@@ -56,4 +56,4 @@ Obtain a genuine underwriting path and, where commercially possible, indicative 
 
 ## Correction protocol
 
-Any future use of `Oswell`, `OSWELL` or `Oswell Limited` as the present canonical UK entity must be corrected to **Aweswell Limited** unless the old wording is being quoted literally from a historic source. Search aliases may be retained only for evidence retrieval.
+Use **Aweswell Limited** as the current canonical company name and **Aweswell** as the contextual short form. Preserve **Monterecco Sun Park Limited** only when the historical source date requires the former registered name. Any transcription, voice-to-text or spelling error must be normalized in repository-authored narrative, labels, metadata and generated output without publishing the erroneous variant as an alias.
