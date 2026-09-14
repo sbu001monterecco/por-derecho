@@ -6,7 +6,7 @@
   <title>אפשר גם בלי וזלין — גיל מרר</title>
   <meta name="description" content="אפשר גם בלי וזלין — אוטוביוגרפיה מאת גיל מרר: קיבוץ, אנגליה, יזמות, משברים, תושייה והמשך תנועה קדימה.">
   <meta name="theme-color" content="#102d42">
-  <link rel="canonical" href="https://por-derecho.gitlab.io/por-derecho-setup-or-gitlab-setup/books/efshar-gam-bli-vaseline/">
+  <link rel="canonical" href="https://por-derecho-setup-or-gitlab-setup-c2b10f.gitlab.io/por-derecho-setup-or-gitlab-setup/books/efshar-gam-bli-vaseline/">
   <style>
     :root{--ink:#102d42;--paper:#f6f2e8;--muted:#53646d;--gold:#b58a42;--line:#d9d2c4;--white:#fff}
     *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:Arial,"Noto Sans Hebrew",sans-serif;line-height:1.75}
@@ -17,7 +17,7 @@
     .hero-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(300px,430px);gap:52px;align-items:center}
     .eyebrow{font-size:12px;letter-spacing:1.6px;font-weight:800;color:#7c6338;margin:0 0 14px}.status{display:inline-block;border:1px solid #c8b58e;border-radius:999px;padding:5px 11px;font-size:13px;background:#fff8e9;margin-bottom:18px}
     h1{font-size:clamp(45px,7vw,76px);line-height:1.02;letter-spacing:-2px;margin:0 0 18px}.lead{font-size:22px;line-height:1.55;margin:0 0 22px;max-width:720px}.author{font-size:21px;font-weight:800}.tagline{font-size:17px;color:var(--muted)}
-    .cover-wrap{margin:0;position:relative}.cover-wrap img{display:block;width:100%;height:auto;border-radius:8px;box-shadow:0 24px 55px #25313a35;background:#e6dfd0;aspect-ratio:2/3;object-fit:cover}.cover-note{font-size:12px;color:var(--muted);margin-top:10px}
+    .cover-wrap{margin:0;position:relative}.cover-wrap img{display:block;width:100%;max-width:100%;height:auto!important;max-height:none!important;border-radius:8px;box-shadow:0 24px 55px #25313a35;background:#e6dfd0;object-fit:contain;object-position:center;image-rendering:auto}.cover-note{font-size:12px;color:var(--muted);margin-top:10px}
     .section{padding:48px 0;border-top:1px solid var(--line)}.section h2{font-size:34px;margin:0 0 18px}.section p{font-size:18px;margin:0 0 18px;max-width:860px}.quote{font-size:28px!important;line-height:1.45!important;font-weight:750;border-right:4px solid var(--gold);padding:10px 22px;margin:26px 0!important}
     .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:24px}.card{background:var(--white);border:1px solid var(--line);border-radius:10px;padding:22px}.card h3{margin:0 0 8px;font-size:20px}.card p{font-size:15px;margin:0;color:var(--muted)}
     .notice{background:#fff;border:1px solid var(--line);border-radius:9px;padding:20px 22px;margin-top:25px;font-size:14px;color:var(--muted)}footer{padding:28px 0 40px;border-top:1px solid var(--line);font-size:13px;color:var(--muted)}
@@ -25,7 +25,7 @@
   </style>
 </head>
 <body>
-<header><div class="shell head"><a class="brand" href="../../">Por Derecho · גיל מרר</a><nav class="smallnav"><a href="../../en/books/">ספרים</a><a href="../../en/about/">אודות</a><a href="https://sbu001monterecco.github.io/por-derecho/books/efshar-gam-bli-vaseline/">GitHub mirror</a></nav></div></header>
+<header><div class="shell head"><a class="brand" href="../../">Por Derecho · גיל מרר</a><nav class="smallnav"><a href="../../en/books/">ספרים</a><a href="../../en/about/">אודות</a><a href="https://por-derecho-setup-or-gitlab-setup-c2b10f.gitlab.io/por-derecho-setup-or-gitlab-setup/books/efshar-gam-bli-vaseline/">GitLab canonical</a></nav></div></header>
 <main>
   <section class="hero"><div class="shell hero-grid">
     <div>
@@ -37,7 +37,7 @@
       <p class="tagline">אוטוביוגרפיה של יזמות, התחדשות והאמונה שאפשר אחרת.</p>
     </div>
     <figure class="cover-wrap">
-      <img id="memoir-cover" alt="כריכת אפשר גם בלי וזלין מאת גיל מרר" loading="eager">
+      <img id="memoir-cover" alt="כריכת אפשר גם בלי וזלין מאת גיל מרר" loading="eager" decoding="async">
       <figcaption class="cover-note">כריכה מערכתית בסיוע בינה מלאכותית, המבוססת על תצלום שסיפק גיל מרר. מהדורת קונספט · 14 בספטמבר 2026.</figcaption>
     </figure>
   </div></section>
@@ -67,12 +67,25 @@
 <script>
 (async()=>{
   const names=['cover.part01.b64','cover.part02.b64','cover.part03.b64','cover.part04.b64','cover.part05.b64','cover.part06.b64'];
+  const img=document.getElementById('memoir-cover');
   try{
-    const parts=await Promise.all(names.map(n=>fetch(n,{cache:'force-cache'}).then(r=>{if(!r.ok)throw new Error(n);return r.text();})));
-    document.getElementById('memoir-cover').src='data:image/webp;base64,'+parts.join('');
+    const texts=await Promise.all(names.map(n=>fetch(n,{cache:'no-store'}).then(r=>{if(!r.ok)throw new Error(n);return r.text();})));
+    const arrays=texts.map(text=>{
+      const binary=atob(text.trim());
+      const bytes=new Uint8Array(binary.length);
+      for(let i=0;i<binary.length;i++)bytes[i]=binary.charCodeAt(i);
+      return bytes;
+    });
+    const length=arrays.reduce((n,a)=>n+a.length,0);
+    const joined=new Uint8Array(length);
+    let offset=0;
+    for(const a of arrays){joined.set(a,offset);offset+=a.length;}
+    const blob=new Blob([joined],{type:'image/webp'});
+    const url=URL.createObjectURL(blob);
+    img.addEventListener('load',()=>URL.revokeObjectURL(url),{once:true});
+    img.src=url;
   }catch(e){
-    const img=document.getElementById('memoir-cover');
-    img.alt='כריכת הספר זמינה בגרסת המאגר; טעינת התמונה נכשלה.';
+    img.alt='כריכת הספר זמינה בגרסה הקנונית ב-GitLab; טעינת התמונה במראה נכשלה.';
   }
 })();
 </script>
