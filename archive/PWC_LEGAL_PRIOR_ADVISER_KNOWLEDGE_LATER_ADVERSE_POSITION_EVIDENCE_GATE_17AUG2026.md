@@ -44,7 +44,7 @@ The appendix is headed **“Personal involucrado: PwC - Carlos Saavedra y Miguel
 - 4 May: review of Community documentation and legal reports on the legal situation of the owners in the CCPP Sun Park, together with analysis of legal strategy; limitation periods for unpaid Community charges; mortgage-enforcement effects; holiday-home / common-area legal regime; and evidence to be proved in proceedings against owners;
 - 9 May: internal meeting on issues identified in the legal analysis;
 - 13 May: analysis of owners, Registry documentation and Community charges;
-- 16 May: analysis of a possible **conflict connected with the parent company of Luchy**, transcribed in the appendix as `Oswell`;
+- 16 May: analysis of a possible **conflict connected with the parent company of Luchy**, Aweswell Limited;
 - 18–20 May: meetings/calls with Project-side principals concerning conflicts, Community majority/minority lawyers, Sun Park and the Luchy insolvency proceeding;
 - 23–25 May: urgent work concerning the loan/credit position, internal PwC conflict assessment and calls among the Tenerife professionals and Project-side participants;
 - 26 May: `REUNIÓN EN MADRID. RIESGO CLIENTE`;
@@ -62,7 +62,9 @@ The preserved 11 June 2016 meeting transcript is to be referred to in derived/pu
 
 Do **not** reproduce the recorder’s personal name in derived/public titles, captions, filenames, summaries or quotations merely because it appears in the original source filename.
 
-Two Google Drive transcript derivatives were recovered, including a long HappyScribe transcription and a separate transcript derivative. A PDF transcript derivative was also located. The long transcription opens with a Project-side speaker explaining, in substance, that they were working at the level of an investment company transcribed as **“Oswell”**, that a company transcribed as **“Macatos”** had contracted them, and that they had been sent by “Oswell”. Given the surrounding corporate record, these spellings are treated as **transcription candidates for Aweswell and Matkator, not silently corrected quotations**.
+Two Google Drive transcript derivatives were recovered, including a long HappyScribe transcription and a separate transcript derivative. A PDF transcript derivative was also located. The long transcription opens with a Project-side speaker explaining, in substance, that they were working at the level of the investment company **Aweswell**, that a company transcribed as **“Macatos”** had contracted them, and that they had been sent by Aweswell. This is a paraphrase using the corrected canonical company name, not a verbatim quotation. The separate spelling “Macatos” remains a **transcription candidate for Matkator**.
+
+**Spelling control — 14 September 2026:** **Aweswell Limited** is the only canonical company name. Native source material contains a company-name transcription error. Native evidential originals remain unchanged for source fidelity; repository-authored narrative, labels, metadata and derivatives must use **Aweswell Limited** and must not reproduce the erroneous spelling.
 
 This is important because it supports contemporaneous understanding of a wider parent/investor mandate perimeter rather than a simplistic rule that the invoice addressee alone was the whole client/matter universe.
 
@@ -129,7 +131,7 @@ A separate later PwC UK relationship exists in the project record. Do not collap
 
 The repository should use the following distinction:
 
-> **Verified:** PwC Canarias/Tenerife provided paid legal/advisory services billed to Matkator, S.L. while contemporaneous work records and the 11 June meeting record show that the substantive matter and known mandate perimeter extended to Luchy Playa Blanca, Sun Park/its Community and the parent/investor perimeter transcribed as “Oswell”. This is strong evidence against treating Matkator’s name on the invoice as the outer limit of PwC’s known client/matter context.
+> **Verified:** PwC Canarias/Tenerife provided paid legal/advisory services billed to Matkator, S.L. while contemporaneous work records and the 11 June meeting record show that the substantive matter and known mandate perimeter extended to Luchy Playa Blanca, Sun Park/its Community and the Aweswell parent/investor perimeter. This is strong evidence against treating Matkator’s name on the invoice as the outer limit of PwC’s known client/matter context.
 >
 > **Still to prove conclusively:** the exact contractual client(s), engagement parties and privilege/confidentiality holders for each workstream. The engagement letter, KYC/client-acceptance and conflict file are priority documents.
 
