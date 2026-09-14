@@ -1,0 +1,223 @@
+{
+  "control_id": "PD-JSP-BOC-SIX-20260905",
+  "state": "PREPARED_EXACT_BYTES_NOT_LIVE_CERTIFICATE",
+  "sources": {
+    "BOC": {
+      "path": "assets/evidence/jsp-2017/BOC-2008-245-4927.pdf",
+      "sha256": "21d92223ac38b894054cc4ef70d7073df7d81de8da8ed2d53cc813e159041fc0",
+      "bytes": 49291
+    },
+    "BORME": {
+      "path": "assets/evidence/jsp-2017/BORME-C-2017-7368.pdf",
+      "sha256": "78df26e04206117a5dbebaa2fc337643841c58e85455905eb53f686d7500fad9"
+    }
+  },
+  "event_ids": [
+    "PD-SP-EVT-0179",
+    "PD-SP-EVT-0180",
+    "PD-SP-EVT-0181",
+    "PD-SP-EVT-0182",
+    "PD-SP-EVT-0183",
+    "PD-SP-EVT-0184",
+    "PD-SP-EVT-0185",
+    "PD-SP-EVT-0186",
+    "PD-SP-EVT-0187",
+    "PD-SP-EVT-0188",
+    "PD-SP-EVT-0189",
+    "PD-SP-EVT-0190"
+  ],
+  "counts": {
+    "preserved_reference_index": 64,
+    "additional_source_references": 5,
+    "combined_reference_count": 69,
+    "historical_events": 12,
+    "proposed_components": 4,
+    "evidence_targets": 22,
+    "identity_admissions": 0,
+    "full_dd_or_claims_exhaustion": false
+  },
+  "pages": [
+    "es/jsp-montelanza-concurso-liquidacion/index.html",
+    "en/jsp-montelanza-insolvency-liquidation/index.html",
+    "es/jsp-montelanza-concurso-liquidacion/registro-incidente/index.html",
+    "en/jsp-montelanza-insolvency-liquidation/incident-register/index.html",
+    "es/jsp-montelanza-concurso-liquidacion/opciones-multimatrix.html",
+    "en/jsp-montelanza-insolvency-liquidation/multimatrix-options.html"
+  ],
+  "files": [
+    {
+      "path": "archive/JSP_BOC_SIX_SECTION_EXECUTION_05SEP2026.md",
+      "bytes": 4124,
+      "sha256": "b20198a82afc17de61cd825621e9f99a16ce9a722c94fd17b17405ca7e945d6d",
+      "git_blob": "510f93b05244e9f3e8226b095d1fc6588cc94852"
+    },
+    {
+      "path": "assets/data/institutional-communications-register-v1.json",
+      "bytes": 925824,
+      "sha256": "f2cf0aa80b46a7b3eebdc85d57aa4516f6e21861e10c406102c9cf918bfdcf3e",
+      "git_blob": "848c2523ef26b44e25dfc722d32e6d02c5dfaa4e"
+    },
+    {
+      "path": "assets/data/jsp-incident-tourism-roster-supplement-20260905.json",
+      "bytes": 29572,
+      "sha256": "682e5897e0e323d3808be6d8e2bc66a8f72a93c5b004c850ee215a97c79dba31",
+      "git_blob": "4ff2f646c1c1a3bb19a501f7ca51448f0f41b1ac"
+    },
+    {
+      "path": "assets/evidence/jsp-2017/BOC-2008-245-4927.pdf",
+      "bytes": 49291,
+      "sha256": "21d92223ac38b894054cc4ef70d7073df7d81de8da8ed2d53cc813e159041fc0",
+      "git_blob": "82fdd55eec7d7e9242a1b3816816d36a65c2dc20"
+    },
+    {
+      "path": "assets/evidence/jsp-2017/boc-2008-245-4927-identification.webp",
+      "bytes": 9642,
+      "sha256": "b4f3398728b0b9aa03bc5b62700541fbe55814f7d5c5d2c0b5081c6444d129ee",
+      "git_blob": "a49854084a9d9e1260f5df8f5e172aaa3a75d969"
+    },
+    {
+      "path": "assets/evidence/jsp-2017/boc-2008-245-4927-proposal.webp",
+      "bytes": 17340,
+      "sha256": "11ab3b8b9b92ce11dfe8ac4bee7a3be1cdde0cf77bef6e0bb283b986c6e8e21e",
+      "git_blob": "7b408c3ad9515abe3580ac21eaa0c5b5a4b57975"
+    },
+    {
+      "path": "assets/jsp-boc-six-sections.css",
+      "bytes": 1492,
+      "sha256": "7faf32f7b9af4b9584b8425c0dc2fff623690e15f9cfa315453ae9924f3e5522",
+      "git_blob": "55cbfed2353180aba29cd9661492a87ebc04325f"
+    },
+    {
+      "path": "en/antonio-cogolludo-rojas/index.html",
+      "bytes": 23246,
+      "sha256": "f91f934e09a5ea22ab3e475f1711587637d9e5388a90c490a128cda5a1c849fb",
+      "git_blob": "94f6ea533fb87372e1d48199b72ec1eab69af5e0"
+    },
+    {
+      "path": "en/asuncion-aizpurua-sanchez/index.html",
+      "bytes": 20355,
+      "sha256": "55a7d09c119c87916b8e522ee472d3914413e90bdf17b90e0c5b06fed5e9f123",
+      "git_blob": "e99c3ec591e4027cd642eaea28823212ea98ac4c"
+    },
+    {
+      "path": "en/community-instrumentalisation/index.html",
+      "bytes": 58004,
+      "sha256": "566322eb5b6a7686fcd915b35f1e7f28cef9f7f790800a4010376c312cd412f0",
+      "git_blob": "4b01a3901f0656d01621c3e5a9e9480013b38426"
+    },
+    {
+      "path": "en/francisco-mario-matos-matas/index.html",
+      "bytes": 24852,
+      "sha256": "c36d55b86df62042e429fae7a4528066684f578221e2f6433d5203f6c1e7a302",
+      "git_blob": "3730e4a40e2069911ed4b5b1d784dad5a4b0c3c7"
+    },
+    {
+      "path": "en/jsp-montelanza-insolvency-liquidation/incident-register/index.html",
+      "bytes": 9400,
+      "sha256": "66ac71583f77699f4733cd6a72d3035c3488235c3d859465f2a6763576c119ab",
+      "git_blob": "f2601cd160015bfcf342c3af8e93edbe486faa22"
+    },
+    {
+      "path": "en/jsp-montelanza-insolvency-liquidation/index.html",
+      "bytes": 61492,
+      "sha256": "d123500c51fcf57c989a5da20467f83397151a34dfa1bd0729b39d3444e64e11",
+      "git_blob": "380dad24cf60e63cbb2b1562d67f84efc92101f2"
+    },
+    {
+      "path": "en/jsp-montelanza-insolvency-liquidation/multimatrix-options.html",
+      "bytes": 13651,
+      "sha256": "d967aabc9fd9e9628976939acc8dadb9bd7c8adbc7b1c9e428bc3a57f8fccf2f",
+      "git_blob": "3108b6cef91d226d60d4e08b348843697fddef8e"
+    },
+    {
+      "path": "en/montelanza-monte-lanza-sl/index.html",
+      "bytes": 16284,
+      "sha256": "5b6346f84bf58d1f9b7b0118a53b2191ddc3cc9e9e725dabbe12b70801b3d1ec",
+      "git_blob": "da3ddcb30e4364381df17645c58c813c5a92c9b9"
+    },
+    {
+      "path": "en/shaila-maria-cogolludo-ramos/index.html",
+      "bytes": 21655,
+      "sha256": "df11cf52b8d1cb193bdb82da38e3ac61da04b25230ebb6f01f8b7ea7f90e4b1c",
+      "git_blob": "edc209db1a0f9920364479b34d195236a8258cbb"
+    },
+    {
+      "path": "es/antonio-cogolludo-rojas/index.html",
+      "bytes": 23501,
+      "sha256": "ca62b256c99266d0d3a6a5699cbd6d4f1a47f53bd43e63bb88c67eb337901ce1",
+      "git_blob": "4b6d77ea25efd2146591430887426fcfd679a78a"
+    },
+    {
+      "path": "es/asuncion-aizpurua-sanchez/index.html",
+      "bytes": 20763,
+      "sha256": "1544906f4677dd4cf0b591f839d56ce6ac6a9f6d57f038c0f4a7b3107cabecc1",
+      "git_blob": "520e9b3f62235514380dac68091f0896e25eba39"
+    },
+    {
+      "path": "es/comunidad-instrumentalizacion/index.html",
+      "bytes": 61133,
+      "sha256": "5cc1ea7bfb591d7aa3b46134ee77f53490020a70195433aeb35d5d9160350dc8",
+      "git_blob": "bf6ea06b60c98c57e3058746230239d068f33041"
+    },
+    {
+      "path": "es/francisco-mario-matos-matas/index.html",
+      "bytes": 25215,
+      "sha256": "9d1cebb653823a1c4c68d4966a6ea9c59004b4b4385960083f9a9124177671e2",
+      "git_blob": "b95ea2b9ec643b1a32befe9532c47c405b2850c5"
+    },
+    {
+      "path": "es/jsp-montelanza-concurso-liquidacion/index.html",
+      "bytes": 64505,
+      "sha256": "644c28b6b3bc56858f11086cb1228059305fd521a5c1efbcf432f1b61ef01638",
+      "git_blob": "ef753f77641a8899d93bae56aed1427fdc77795b"
+    },
+    {
+      "path": "es/jsp-montelanza-concurso-liquidacion/opciones-multimatrix.html",
+      "bytes": 14263,
+      "sha256": "be975208610a7a14e70289257c87d895efbdfad9c01aa8f1280df2b7f2f705a4",
+      "git_blob": "6c710118348e373445bbc4c8a9189eb451d1ed1e"
+    },
+    {
+      "path": "es/jsp-montelanza-concurso-liquidacion/registro-incidente/index.html",
+      "bytes": 9654,
+      "sha256": "5954c59c33dc4483d37a687c8e9c55feaf265eee5c85a8177981b79cb77a6a18",
+      "git_blob": "8f7806704ddea9c464fea46e381d4357999f1474"
+    },
+    {
+      "path": "es/montelanza-monte-lanza-sl/index.html",
+      "bytes": 16474,
+      "sha256": "688b327e409a990ddc6b2806a44752bf8d7c809270c162fda289cdb427dfe131",
+      "git_blob": "12804ed7d77b814545408801d63e1f6921d79e85"
+    },
+    {
+      "path": "es/shaila-maria-cogolludo-ramos/index.html",
+      "bytes": 21900,
+      "sha256": "88a2d757855ee614bfddaa93d329c4c1e9883ec58d82200c347ae319e3334d6c",
+      "git_blob": "3092366cb74bd251807b16534de93d5b2c0e9cef"
+    },
+    {
+      "path": "scripts/prepare_jsp_boc_release.py",
+      "bytes": 31136,
+      "sha256": "78fcadd9beaf9fbbe7e3bab8233b49a914c35e753b4eee1e41a92eb2a0ef946b",
+      "git_blob": "14f5ecab7c717b4ab8928f784473d2f6fda9aea7"
+    },
+    {
+      "path": "assets/jsp-incident-reader.js",
+      "bytes": 12195,
+      "sha256": "80b91f8810a39b907c921e38f4ef39b6e3eac855740237d026569fa158dde830",
+      "git_blob": "c5961f8ed694ba7b09df1fae4f6fa09cf4365bc3"
+    },
+    {
+      "path": "scripts/validate_jsp_incident_reader.py",
+      "bytes": 15755,
+      "sha256": "160e5b5ac3472d6d2012eaa966348da6cabe6d161bac60f3d271192ddcd81fb9",
+      "git_blob": "4833edd00a7c9f5f5f21f14d44d90b75fa2905f1"
+    },
+    {
+      "path": "scripts/validate_jsp_2017_dossier.py",
+      "bytes": 11881,
+      "sha256": "0a93c83ee036436d24aebe6f89ab2226f134ccecf7996db6b6b11c4c2170c644",
+      "git_blob": "667392e089dae7fc93b3331441fa1d6268e27596"
+    }
+  ]
+}

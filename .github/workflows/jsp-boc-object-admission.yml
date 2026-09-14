@@ -1,0 +1,36 @@
+name: JSP BOC exact object integrity
+on:
+  pull_request:
+    paths:
+      - 'assets/data/jsp-boc-release-manifest-20260905.json'
+      - 'assets/evidence/jsp-2017/**'
+      - 'assets/jsp-boc-six-sections.css'
+      - 'assets/data/jsp-incident-tourism-roster-supplement-20260905.json'
+      - '.github/workflows/jsp-boc-object-admission.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  exact-object-integrity:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
+          persist-credentials: false
+      - name: Verify reviewed public files without mutation
+        run: |
+          python3 - <<'PY'
+          import pathlib,json,hashlib
+          root=pathlib.Path('.');m=json.loads((root/'assets/data/jsp-boc-release-manifest-20260905.json').read_text())
+          assert m['control_id']=='PD-JSP-BOC-SIX-20260905'
+          for r in m['files']:
+              b=(root/r['path']).read_bytes()
+              assert len(b)==r['bytes'] and hashlib.sha256(b).hexdigest()==r['sha256'],r['path']
+          print('Exact reviewed files verified:',len(m['files']))
+          PY
+          test -z "$(git status --porcelain)"
+# Fixed unreferenced-blob admission completed in run33996283745.
+# The writer is retired. No token, POST endpoint, tree/commit/ref mutation,
+# branch change, publication, contact, signature or filing remains here.

@@ -51,6 +51,19 @@ def main() -> int:
         if not condition: report['failures'].append({'check': label, 'details': details})
     before = json.loads(git('show', f'{base}:{MANIFEST}'))
     manifest = load(ROOT / MANIFEST)
+    maintenance = any(p['path'].startswith('matter-identity-registry-v1.jsp-') for p in before['parts'])
+    maintenance_paths = set()
+    if maintenance:
+        check('maintenance keeps the complete identity manifest unchanged', manifest == before)
+        frozen='assets/data/jsp-2017-source-relationship-register.json'
+        check('maintenance preserves all eight sources and eighteen original edges byte-for-byte', subprocess.check_output(['git','show',f'{base}:{frozen}'],cwd=ROOT)==(ROOT/frozen).read_bytes())
+        release=load(ROOT/'assets/data/jsp-boc-release-manifest-20260905.json')
+        check('explicit maintenance scope and no identity admissions', release['control_id']=='PD-JSP-BOC-SIX-20260905' and release['counts']['identity_admissions']==0)
+        import hashlib
+        for item in release['files']:
+            check('reviewed maintenance bytes '+item['path'], hashlib.sha256((ROOT/item['path']).read_bytes()).hexdigest()==item['sha256'])
+            maintenance_paths.add(item['path'])
+        maintenance_paths.update({'assets/jsp-dossier-2017.js','scripts/validate_jsp_2017_dossier.py'})
     for key, value in before.items():
         if key not in ('parts', 'counts', 'control_date'):
             check('preserve manifest field ' + key, manifest.get(key) == value)
@@ -98,8 +111,8 @@ def main() -> int:
     check('Community to CAM unproved', all(e['status'] == 'UNPROVED_RESEARCH_QUESTION' for e in evidence['edges'] if e['from'] == 'PD-SP-O-0005' and e['to'] == 'PD-SP-O-0007'))
     check('finca 8499 conditional', any(e['relation'] == 'FINCA_8499_CONDITIONAL_ALLOCATION' and e['status'] == 'CONDITIONAL_FULFILMENT_UNPROVED' for e in evidence['edges']))
     check('no fake meeting-held event', all('HELD' not in e['kind'] or 'NOT_PROVED_HELD' in e['kind'] for e in evidence['events']))
-    check('new scoped denominator after duplicate reconciliation', len(new_records) == 27)
-    check('typed scoped denominator', dict(collections.Counter(r['type'] for r in new_records)) == {'PERSON':11,'ORGANISATION':15,'PROCEEDING':1})
+    check('new scoped denominator after duplicate reconciliation', len(new_records) == (0 if maintenance else 27))
+    check('typed scoped denominator', dict(collections.Counter(r['type'] for r in new_records)) == ({} if maintenance else {'PERSON':11,'ORGANISATION':15,'PROCEEDING':1}))
     check('reused denominator after duplicate reconciliation', len(evidence['existing_id_reuse']) == 18)
     check('finite source event edge scope', len(evidence['sources']) == 8 and len(evidence['events']) == 7 and len(evidence['edges']) == 18)
     pages = {}
@@ -125,7 +138,7 @@ def main() -> int:
     for row in changed:
         status, path = row.split('\t', 1)
         check('no deletion/rename ' + path, status in ('A', 'M'))
-        check('existing changes restricted to manifest and its derived projections ' + path, status != 'M' or path in ({MANIFEST} | PROJECTIONS))
+        check('existing changes restricted to manifest and its derived projections ' + path, status != 'M' or path in ({MANIFEST} | PROJECTIONS | maintenance_paths))
     projection = subprocess.run(['python3','scripts/reconcile_identity_registry_projections.py','--check'],cwd=ROOT,text=True,capture_output=True)
     check('deterministic projection idempotency', projection.returncode == 0, projection.stdout + projection.stderr)
     subprocess.run(['node', '--check', str(ROOT / 'assets/jsp-dossier-2017.js')], check=True)

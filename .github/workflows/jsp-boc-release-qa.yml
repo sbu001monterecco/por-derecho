@@ -1,0 +1,68 @@
+name: JSP BOC release and live acceptance
+on:
+  pull_request:
+    paths:
+      - 'archive/jsp-six-section-source-20260905.*.md'
+      - 'archive/jsp-boc-execution-spec-20260905.json'
+      - 'archive/JSP_BOC_SIX_SECTION_EXECUTION_05SEP2026.md'
+      - 'assets/data/jsp-incident*'
+      - 'assets/data/jsp-boc-release-manifest-20260905.json'
+      - 'assets/evidence/jsp-2017/**'
+      - 'assets/jsp-boc-six-sections.css'
+      - 'assets/data/institutional-communications-register-v1.json'
+      - 'es/jsp-montelanza-concurso-liquidacion/**'
+      - 'en/jsp-montelanza-insolvency-liquidation/**'
+      - 'scripts/validate_jsp_boc_release.py'
+      - '.github/workflows/jsp-boc-release-qa.yml'
+  workflow_run:
+    workflows: ['pages build and deployment']
+    types: [completed]
+  workflow_dispatch:
+    inputs:
+      live:
+        description: Verify actual deployed bytes and readers
+        type: boolean
+        default: false
+permissions:
+  contents: read
+jobs:
+  jsp-boc-acceptance:
+    if: github.event_name != 'workflow_run' || (github.event.workflow_run.conclusion == 'success' && github.event.workflow_run.head_branch == 'main')
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+          ref: ${{ github.event.pull_request.head.sha || github.event.workflow_run.head_sha || github.sha }}
+      - run: python3 -m pip install pymupdf==1.28.2 pillow==12.3.0 markdown beautifulsoup4 jsonschema playwright
+      - run: python3 -m playwright install --with-deps chromium firefox webkit
+      - name: Check exact source, complete text, register and browser projection
+        env:
+          LIVE_CHECK: ${{ github.event_name == 'workflow_run' || inputs.live == true }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          if test "$LIVE_CHECK" = true; then
+            passed=false
+            for attempt in 1 2 3 4; do
+              if python3 scripts/validate_jsp_boc_release.py --live; then passed=true; break; fi
+              sleep 20
+            done
+            test "$passed" = true
+            python3 scripts/validate_jsp_incident_reader.py --url https://sbu001monterecco.github.io/por-derecho/ --output /tmp/jsp-incident-qa
+          else
+            python3 scripts/validate_jsp_boc_release.py
+          fi
+          test -z "$(git status --porcelain)"
+      - uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
+        if: always()
+        with:
+          name: jsp-boc-release-acceptance
+          path: |
+            /tmp/jsp-boc-qa
+            /tmp/jsp-incident-qa
+          retention-days: 30
+          if-no-files-found: warn
+# Read-only. No repairs on main, publication, contact, signing or submission.
