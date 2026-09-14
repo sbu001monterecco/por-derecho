@@ -1,0 +1,1 @@
+Authorized by Gil Marer on 19 August 2026: import the user-supplied Eduardo Sánchez portrait and Sun Park aerial image, preserve Borja's existing canonical repository image, and build the corrected San Telmo / RICPE / Sun Park visual.
