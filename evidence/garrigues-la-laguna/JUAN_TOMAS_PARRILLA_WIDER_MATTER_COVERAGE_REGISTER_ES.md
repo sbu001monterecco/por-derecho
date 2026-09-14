@@ -36,7 +36,6 @@ El núcleo de mandato verificado está en 2012: reestructuración Bankia, ejecuc
 
 - La carta de encargo de 24 enero 2012 define conjuntamente a **Monterecco Sun Park Limited** y **Luchy Playa Blanca, S.L. (LPB)** como cliente; la facturación ordinaria se dirigía a LPB y existían garantías separadas.
 - **Monterecco Sun Park Limited** pasó a denominarse **Aweswell Limited** en 2014. Esa continuidad de nombre no autoriza a renombrar retrospectivamente cada asiento de 2012 como pago de Aweswell.
-- **OSWELL 426 S.L.** es una entidad formal distinta. No debe confundirse con Aweswell Limited ni con LPB.
 - El mayor de proveedor de LPB utiliza descriptores históricos Monterecco y HAVAVIDA. Es evidencia contable del cliente, no prueba bancaria independiente del ordenante o de la cuenta de adeudo.
 
 ## Honorarios de Parrilla: control documental
