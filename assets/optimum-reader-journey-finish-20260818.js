@@ -167,6 +167,8 @@
     if (!location.hash) return;
     const target = document.getElementById(decodeURIComponent(location.hash.slice(1)));
     if (!target) return;
+    // The media desk owns this new fragment and cancels restoration on reader input.
+    if (target.id === 'media-desk' && document.body.classList.contains('media-desk-page')) return;
     requestAnimationFrame(() => target.scrollIntoView({ block: 'start', behavior: 'auto' }));
   };
 

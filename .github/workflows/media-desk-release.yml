@@ -1,0 +1,110 @@
+name: Media desk release checks
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - ops/media-dashboard/**
+      - assets/media-desk.*
+      - assets/optimum-reader-journey-finish-20260818.js
+      - es/medios-trazabilidad-relato-publico/index.html
+      - en/media-public-narrative-traceability/index.html
+      - publication-manifests/media-desk-20260905.json
+      - .github/workflows/media-desk-release.yml
+  push:
+    branches: [main]
+    paths:
+      - ops/media-dashboard/**
+      - assets/media-desk.*
+      - assets/optimum-reader-journey-finish-20260818.js
+      - es/medios-trazabilidad-relato-publico/index.html
+      - en/media-public-narrative-traceability/index.html
+      - publication-manifests/media-desk-20260905.json
+      - .github/workflows/media-desk-release.yml
+permissions:
+  contents: read
+concurrency:
+  group: media-desk-release-${{ github.event_name }}-${{ github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+jobs:
+  media-desk-scope:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      GITHUB_BASE_SHA: ${{ github.event.pull_request.base.sha || github.event.before }}
+      GITHUB_HEAD_SHA: ${{ github.event.pull_request.head.sha || github.sha }}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - name: Determinism and preservation contracts
+        run: |
+          mkdir -p /tmp/media-release
+          python3 ops/media-dashboard/build_release.py --check
+          python3 -m unittest discover -s ops/media-dashboard -p 'test_*.py' -v 2>&1 | tee /tmp/media-release/unit-tests.txt
+          node --check assets/media-desk.js
+          node --check assets/optimum-reader-journey-finish-20260818.js
+          git diff --exit-code
+      - name: Install validators
+        run: python3 -m pip install beautifulsoup4 PyYAML jsonschema
+      - name: Non-empty exact-range publication checks
+        run: |
+          test -n "$(git diff --name-only "$GITHUB_BASE_SHA" "$GITHUB_HEAD_SHA")"
+          python3 scripts/validate_repository_preservation.py 2>&1 | tee /tmp/media-release/preservation.txt
+          python3 scripts/validate_publication_integrity.py 2>&1 | tee /tmp/media-release/publication.txt
+          python3 scripts/validate_audience_experience.py 2>&1 | tee /tmp/media-release/audience.txt
+          git diff --exit-code
+      - name: Install pre-merge browser engines
+        if: github.event_name == 'pull_request'
+        run: |
+          python3 -m pip install playwright==1.62.0
+          python3 -m playwright install --with-deps chromium firefox webkit
+      - name: Three-engine source browser acceptance
+        if: github.event_name == 'pull_request'
+        run: python3 ops/media-dashboard/browser_check.py
+      - name: Record exact public candidate source
+        if: always()
+        run: |
+          python3 - <<'PY'
+          import pathlib,json,subprocess,hashlib,zipfile
+          out=pathlib.Path('/tmp/media-release');out.mkdir(exist_ok=True)
+          paths=['assets/media-desk.css','assets/media-desk.js','assets/optimum-reader-journey-finish-20260818.js','es/medios-trazabilidad-relato-publico/index.html','en/media-public-narrative-traceability/index.html','assets/data/unitary-route-registry-sync-20260819.json','sitemap-discovery-navigation.xml','publication-manifests/media-desk-20260905.json','.github/workflows/media-desk-release.yml']
+          paths += [str(p) for p in pathlib.Path('ops/media-dashboard').glob('*') if p.is_file()]
+          rows=[]
+          with zipfile.ZipFile(out/'public-source.zip','w',zipfile.ZIP_DEFLATED) as z:
+            for p in sorted(set(paths)):
+              f=pathlib.Path(p);z.write(f,p);rows.append({'path':p,'bytes':f.stat().st_size,'sha256':hashlib.sha256(f.read_bytes()).hexdigest()})
+          (out/'source-manifest.json').write_text(json.dumps({'checkout':subprocess.check_output(['git','rev-parse','HEAD'],text=True).strip(),'files':rows,'tracked_tree_unchanged':not subprocess.check_output(['git','diff','--name-only'],text=True).strip(),'source_checks_are_not_deployment':True},indent=2))
+          PY
+      - uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
+        if: always()
+        with:
+          name: media-desk-source-checks
+          path: /tmp/media-release/
+          retention-days: 14
+  live-media-desk:
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    needs: media-desk-scope
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: false
+      - name: Exact deployed resources and thirteen source links
+        run: python3 ops/media-dashboard/verify_live.py
+      - name: Install browser engines
+        run: |
+          python3 -m pip install playwright==1.62.0
+          python3 -m playwright install --with-deps chromium firefox webkit
+      - name: Actual public host browser acceptance
+        env:
+          MEDIA_BASE_URL: https://sbu001monterecco.github.io/por-derecho/
+          MEDIA_AUDIT_OUT: /tmp/media-release/live/browser
+        run: python3 ops/media-dashboard/browser_check.py
+      - uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
+        if: always()
+        with:
+          name: media-desk-live-verification
+          path: /tmp/media-release/live/
+          retention-days: 14
