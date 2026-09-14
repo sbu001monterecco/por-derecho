@@ -56,10 +56,10 @@ Selected entries:
 - 29/04/2016 — 1.4 h — call with Juan Tomás Parrilla re Ordinary Community meeting and prior review of documents.
 - 06/05/2016 — 1.5 h — meeting at Juan Tomás Parrilla's office.
 - 11/05/2016 — 2.5 h — meeting with Patricia; preparatory lawyers' meeting reviewing client documentation including amounts prepared by Jonathan.
-- 16/05/2016 — 0.5 h — call with Patricia about conflict related to **LUCHY's parent company**, written as `Oswell` in the appendix.
+- 16/05/2016 — 0.5 h — call with Patricia about conflict related to **LUCHY's parent company**, Aweswell Limited.
 - 17/05/2016 — 1.0 h — introductory call with Cuatrecasas lawyer Pedro Campaña; review of Thompson-family draft re November 2015 General Meeting; meeting with Gil/Patricia.
 
-**Control on `Oswell`:** preserve the source spelling. The wider project identifies Aweswell Limited as the UK HoldCo. Do not silently amend a quoted source term without source reconciliation.
+**Spelling control — 14 September 2026:** **Aweswell Limited** is the only canonical company name. The native appendix contains a company-name transcription error. The native evidential source remains unchanged for source fidelity; repository-authored narrative, labels, metadata and derivatives must use **Aweswell Limited** and must not reproduce the erroneous spelling.
 
 ### Elena Santos Ramos
 Appendix identifier: `Santos Ramos Elena (ES058314)`.
