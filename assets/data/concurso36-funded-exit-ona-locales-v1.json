@@ -1,0 +1,147 @@
+{
+  "schema": "por-derecho.concurso36-funded-exit-ona-locales.v1",
+  "control_id": "PD-C36-FUNDED-EXIT-001",
+  "control_date": "2026-09-03",
+  "scope": "Public-safe machine-searchable source bridge for the 2018 ONA-centred funded exit, debt quantum, separate locales transaction and 2019 non-convalidation in Concurso 36/2012.",
+  "rules": [
+    "Keep the wider Sun Park hotel-mobbing, Concurso 36/2012, CAM/private-actor and AC-authority tracks unitary but procedurally distinct.",
+    "Contemporaneous email recollection is not a judicial finding.",
+    "The 24 October 2019 signed Auto is the controlling judicial source for non-convalidation.",
+    "Deliberate funded-exit sabotage is an allegation/analytical hypothesis unless competent authority establishes intent.",
+    "The EUR 350,000 commission/payment allegation remains unproved absent payer/recipient/banking/accounting evidence.",
+    "Use Sun Park -> Hotel New Trend -> MYND Yaiza; do not substitute Melia absent later primary proof."
+  ],
+  "anchor_asset": {
+    "status": "ANALYTICAL_HYPOTHESIS",
+    "formulation": "Sun Park appears as a foundational or anchor asset in the later investment, hotel-transformation and incentive perimeter. The repository is testing transaction-by-transaction the extent to which value, capital, investment capacity, incentives, track record or financing derived from Sun Park contributed to subsequent projects."
+  },
+  "events": [
+    {
+      "id": "FE-20180606-ONA-LEASE",
+      "date": "2018-06-06",
+      "status": "PRIMARY_DOCUMENTED",
+      "actors": ["ONA Hotels/Ona Corporation", "Luchy Playa Blanca, S.L.U.", "Aweswell", "Carlos Sanz/Pledge", "Cuatrecasas"],
+      "proposition": "Advanced and signed ONA-centred industry lease/operating documentation existed by 6 June 2018 as part of preserving Sun Park as an operating hotel/business unit.",
+      "source_locators": ["gmail:163d04fea45656d3", "gmail:163d4474ce405125", "gmail:163ef9138a5024c0"],
+      "source_files": ["18_06_06_4147-8650-9331 v 10 LUCHY PLAYA - Contrato Arrendamiento de Industria DEF_ FIRMADO.pdf", "18_06_06_4157-2803-0228 v 2 LUCHY PLAYA - Anexo Comtrato de Arrendamiento de Industria (condiciones suspensivas) def_FIRMADO.pdf"],
+      "limit": "Publication records existence, date and evidential role; raw private communications and unnecessary personal data are not reproduced."
+    },
+    {
+      "id": "FE-20180612-STONEWEG-OFFER",
+      "date": "2018-06-12",
+      "status": "PRIMARY_DOCUMENTED",
+      "actors": ["Stoneweg", "Carlos Sanz/Pledge", "ONA", "Cuatrecasas", "Aweswell"],
+      "proposition": "Stoneweg circulated an Oferta Vinculante with discussed conditions within the Sun Park financing workstream.",
+      "source_locators": ["gmail:163f5f716be1235a"],
+      "source_files": ["2018-06-12 Oferta Vinculante Ptmo. Hipotecario AWESWELL LTD.pdf"],
+      "limit": "This source directly verifies Stoneweg and binding-offer terminology; other financing participants remain source-specific."
+    },
+    {
+      "id": "FE-20180912-FUNDING-APPROVED",
+      "date": "2018-09-12",
+      "status": "CONTEMPORANEOUS_THIRD_PARTY_EVIDENCE",
+      "actors": ["Daniel Irigoyen", "judge of Concurso 36/2012", "Administracion Concursal"],
+      "proposition": "Daniel Irigoyen recorded that he had conveyed approved financing for an exit through payment/consignment to creditors and sought procedural coordination.",
+      "source_locators": ["gmail:166179f731369485"],
+      "limit": "Daniel's contemporaneous account, not a judicial finding."
+    },
+    {
+      "id": "FE-20180926-DEBT-QUANTUM",
+      "date": "2018-09-26",
+      "status": "CONTEMPORANEOUS_THIRD_PARTY_EVIDENCE",
+      "actors": ["Daniel Irigoyen", "Francisco de Borja Rodriguez-Batllori Laffitte", "judge of Concurso 36/2012", "Juan Tomas Parrilla", "CAM"],
+      "proposition": "Daniel's same-day meeting notes record agreement that the CAM EUR 13.1m calculation was erroneous, attribute to the AC a failure to inform the court when CAM supplied that figure and a statement that the amount did not matter in a dacion/liquidation context, and record Daniel's objection that the figure affected third-party bids. The notes also record a pay/consign-and-conclude route.",
+      "source_locators": ["gmail:166179f731369485"],
+      "limit": "Attribution in Daniel's contemporaneous notes; not a judicial finding of unlawful withholding or intent."
+    },
+    {
+      "id": "FE-20181128-LOCALES-CAM",
+      "date": "2018-11-28",
+      "status": "DOCUMENTED_COURT_RECORDED_EVENT",
+      "actors": ["Administracion Concursal", "Construcciones Acosta Matos"],
+      "proposition": "Relevant locales/fincas and hotel/common infrastructure were separately disposed of to CAM; legal convalidation/effect is controlled by the later signed 24 October 2019 Auto.",
+      "limit": "Exact finca-to-function mapping remains source-specific."
+    },
+    {
+      "id": "FE-20181224-DANIEL-WARNING",
+      "date": "2018-12-24",
+      "status": "CONTEMPORANEOUS_THIRD_PARTY_EVIDENCE",
+      "actors": ["Daniel Irigoyen", "Francisco de Borja Rodriguez-Batllori Laffitte"],
+      "proposition": "Daniel recorded that he warned the AC that disregarding the unitary business and separately disposing of common/hotel elements damaged both the debt-payment operation and a future auction/bidding route.",
+      "source_locators": ["gmail:167dfa8678c6778b"],
+      "source_quote": "Le daba igual lo de la unidad de negocio. Le dije que asi se fastidiaba toda la operacion tanto de pago de la deuda como de una futura subasta.",
+      "limit": "Daniel's own later sentence inferring an AC/CAM movement is an allegation/inference, not an established fact."
+    },
+    {
+      "id": "FE-20190221-ONA-ADDENDUM",
+      "date": "2019-02-21",
+      "status": "PRIMARY_DOCUMENTED",
+      "actors": ["ONA Hotels/Ona Corporation", "Aweswell", "Carlos Sanz/Pledge"],
+      "proposition": "ONA sent a further addendum to the Sun Park rental/operating agreement, demonstrating continuing engagement after November 2018.",
+      "source_locators": ["gmail:16910acd101db16b"],
+      "source_files": ["20190221_Contrato Arrendamiento_SUNPARK ADENDA.docx"]
+    },
+    {
+      "id": "FE-20191024-NONCONVALIDATION",
+      "date": "2019-10-24",
+      "status": "JUDICIAL_FINDING",
+      "actors": ["court in Concurso 36/2012", "Administracion Concursal", "Construcciones Acosta Matos"],
+      "proposition": "The signed Auto held in substance that the separate sale was incompatible with the unitary liquidation architecture/Audiencia interpretation, should not have proceeded separately while the appeal was pending, was not convalidated, and reopened the path for third-party improved offers.",
+      "source": "Signed 24 October 2019 Auto already controlled in the repository source bundle.",
+      "limit": "Use the signed Auto for exact operative/legal wording."
+    },
+    {
+      "id": "FE-20191030-CUATRECASAS-RESCUE",
+      "date": "2019-10-30",
+      "status": "CONTEMPORANEOUS_PROFESSIONAL_COMMUNICATION",
+      "actors": ["Rosa Gual", "Cuatrecasas", "Aweswell"],
+      "proposition": "Rosa Gual wrote after the favourable Auto that the result might allow Aweswell to 'quizas salvar el Complejo'.",
+      "source_locators": ["gmail:16e1d34c505eaeea"],
+      "limit": "Professional contemporaneous reaction, not a judicial finding."
+    }
+  ],
+  "funded_exit_architecture": [
+    "preserve operating hotel",
+    "ONA operator/lease solution",
+    "due diligence and valuation",
+    "Stoneweg and other source-confirmed financing workstreams",
+    "demonstrate financing for concursal liabilities",
+    "quantify and pay/consign creditors",
+    "conclude/lift Concurso 36/2012",
+    "subsequent mortgage/refinance of LPB assets"
+  ],
+  "classification": {
+    "funded_exit_existed": "DOCUMENTED_FACT",
+    "pay_consign_exit_route": "DOCUMENTED_AND_CONTEMPORANEOUS_PROFESSIONAL_EVIDENCE",
+    "stoneweg_binding_offer": "DOCUMENTED_FACT",
+    "separate_locales_disposal": "DOCUMENTED_COURT_RECORDED_EVENT",
+    "daniel_warning": "CONTEMPORANEOUS_THIRD_PARTY_EVIDENCE",
+    "2019_nonconvalidation": "JUDICIAL_FINDING",
+    "deliberate_sabotage": "SERIOUS_ALLEGATION_ANALYTICAL_HYPOTHESIS_NOT_ESTABLISHED_INTENT_OR_CRIME"
+  },
+  "proceedings_crosswalk": {
+    "DP_1956_2026": "Separate AC/concurso route; formally instituted and provisionally dismissed at threshold; requested finite evidential investigation not undertaken; no substantive merits exoneration.",
+    "DP_1901_2026": "Separate private-actor/CAM route; latest located primary judicial material is the 12 July 2026 Providencia referring admission to Fiscalia for five days; no later signed termination located in controlled review.",
+    "DIP_80_2026": "ICALPA deontological review opened concerning the AC; opening is not a misconduct finding.",
+    "RPL_3304_2025": "Removal/separation appeal family after accumulation of RPL 3319/2025; no later merits result asserted absent signed primary source."
+  },
+  "commission_350k": {
+    "amount_eur": 350000,
+    "status": "WITNESS_SUPPORTED_ALLEGATION_WITH_CONTEMPORANEOUS_CORROBORATIVE_EMAIL_PAYMENT_NOT_PROVED",
+    "email_proposition": "24 January 2018 email to JDAM contains Intermediacion/Comisiones (3%) but does not identify the AC as recipient.",
+    "witness_proposition": "Patricia later records that JDAM attributed the amount to the AC concerning intermediation/management of acquisition of the credit from Promontoria.",
+    "targeted_search_2026_09_03": "No independent banking/payment proof recovered in two targeted Gmail searches.",
+    "needed_proof": ["banking", "invoices", "accounting", "contracts", "tax records", "professional records", "conflict disclosures", "CAM records", "AC/professional-entity records"]
+  },
+  "residual_evidentiary_gaps": [
+    "EUR 350,000 payment trail and recipient/purpose/accounting proof or disproof",
+    "complete funding-closing ledger and condition-precedent state by date",
+    "complete finca-to-function map for locales/common facilities",
+    "complete restitution/accounting trail after non-convalidation",
+    "certified current result if any in RPL 3304/2025",
+    "signed post-12-Jul-2026 termination/admission act if any in DP 1901/2026",
+    "later act if any changing DP 1956/2026 provisional-dismissal state",
+    "transaction-specific Sun Park value/capital tracing into RICPE/RIC/incentive downstream projects"
+  ],
+  "archive_control": "/archive/AC_FUNDED_EXIT_ONA_LOCALES_NONCONVALIDATION_SOURCE_GAP_CLOSURE_03SEP2026.md"
+}
