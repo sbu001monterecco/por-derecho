@@ -50,15 +50,17 @@ The contemporaneous PDF `ANEXO FRA. MATKATOR FACTURA MAYO 2016.pdf`, recovered f
 - litigation evidence;
 - Registry documentation and Community debts;
 - the Luchy insolvency proceeding;
-- possible conflicts connected with Luchy’s parent, transcribed as `Oswell`;
+- possible conflicts connected with Luchy’s parent, Aweswell Limited;
 - internal PwC conflict/risk assessment; and
 - a Madrid client-risk meeting.
 
 ### Transcript opening
 
-The long 11 June transcript opens with a Project-side speaker explaining, in substance, that the work was being conducted at the level of an investment company transcribed as `Oswell`, that a company transcribed as `Macatos` had contracted them, and that they had been sent by `Oswell`.
+The long 11 June transcript opens with a Project-side speaker explaining, in substance, that the work was being conducted at the level of the investment company Aweswell, that a company transcribed as `Macatos` had contracted them, and that they had been sent by Aweswell. This is a paraphrase using the corrected canonical company name, not a verbatim quotation.
 
-**Evidence-controlled conclusion:** Matkator is the verified invoice addressee/billing vehicle, but the primary 2016 record supports a substantively wider PwC-known matter/mandate perimeter embracing **Luchy Playa Blanca, Sun Park/Community and the parent/investor perimeter**. The transcript spellings `Oswell` / `Macatos` are transcription candidates for Aweswell / Matkator and must not be silently corrected when presented as quotations.
+**Evidence-controlled conclusion:** Matkator is the verified invoice addressee/billing vehicle, but the primary 2016 record supports a substantively wider PwC-known matter/mandate perimeter embracing **Luchy Playa Blanca, Sun Park/Community and the parent/investor perimeter**. The separate transcript spelling `Macatos` remains a transcription candidate for Matkator and must not be silently corrected when presented as a quotation.
+
+**Spelling control — 14 September 2026:** **Aweswell Limited** is the only canonical company name. The native appendix and transcript derivatives contain a company-name transcription error. Native evidential originals remain unchanged for source fidelity; repository-authored narrative, labels, metadata and derivatives must use **Aweswell Limited** and must not reproduce the erroneous spelling.
 
 **Remaining legal-evidence gap:** exact contractual client(s), engagement parties and privilege/confidentiality holders must be established from the engagement letter, KYC/client-acceptance and conflict records. Do not overstate this as a conclusive contractual finding that Aweswell alone was “the client”; equally, do not reduce the known PwC mandate to Matkator merely because Matkator received the invoice.
 
