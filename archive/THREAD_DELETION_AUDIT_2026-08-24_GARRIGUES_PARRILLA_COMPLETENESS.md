@@ -42,7 +42,7 @@ Fresh no-cache public retrieval returned HTTP 200 and matched the reviewed repos
 
 Private email bodies, message/thread identifiers, private addresses, personal identifiers, bank details, signatures, privileged advice, unsent correspondence and unredacted native court records were not published. The public pages contain controlled summaries and aggregate retrieval counts only.
 
-The historical 2012 source identity is preserved: Monterecco Sun Park Limited was later renamed Aweswell Limited. `OSWELL 426 S.L.` is a separate entity and is not used as a retrospective payer label.
+The historical 2012 source identity is preserved: Monterecco Sun Park Limited was later renamed Aweswell Limited. Historical accounting descriptors must not be converted into retrospective payer labels without a separate entity-and-bank evidential bridge.
 
 ## 5. Remaining evidence
 
