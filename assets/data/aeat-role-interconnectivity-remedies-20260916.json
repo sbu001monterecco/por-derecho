@@ -1,0 +1,61 @@
+{
+  "schema":"por-derecho.aeat-role-interconnectivity-remedies.v1",
+  "control_date":"2026-09-16",
+  "repository_authority":"GitLab main",
+  "public_safe":true,
+  "core_position":{
+    "evidenced_role":"AEAT is a material knowledge, routing, investigation and decision node across the Pink/Patricia and later Sun Park/RICPE/HNT-MYND chronology.",
+    "user_allegation":"Later adverse treatment affecting Pink and Patricia may amount to direct/indirect harm within Gil Marer's protected relational/economic perimeter and may have indirectly harmed Gil himself.",
+    "not_established":["retaliatory intent","criminal complicity","unlawful favoritism","causal file-crossing","full contents/scope of reported 17-Nov-2022 AEAT binding report"]
+  },
+  "chronology_lock":[
+    {"date":"2020-07-29","event":"Pink included in inspection plan","class":"controlled chronology"},
+    {"date":"2020-11-30/2020-12-02","event":"Pink inspection commenced","class":"controlled chronology"},
+    {"date":"2021-01-13","event":"Gil AEAT complaint concerning RICPE/Sun Park and claimed RIC/title issues","class":"recovered source"},
+    {"date":"2021-10-07","event":"Provisional zero-result proposal A02-73355153","class":"controlled chronology"},
+    {"date":"2022-03-22/2022-04-06","event":"AEAT/Vigilancia Aduanera ownership/exploitation inquiries","class":"official-source checkpoint"},
+    {"date":"2022-11-17","event":"Reported AEAT binding report/material referenced in RPE/MYND project material","class":"production target; exact native scope open"},
+    {"date":"2024-12-07","event":"RGE994072472024 received by AEAT Regional Inspection Canarias and treated as art.114 LGT complaint","class":"AEAT admission + native receipt"},
+    {"date":"2025-12-05","event":"RGE449073832025 entered AEAT Ley 2/2023 internal channel at 13:27","class":"AEAT admission"},
+    {"date":"2025-12-12","event":"RGE449073832025 transferred to AEAT Special Delegation Canarias and treated as art.114 complaint","class":"AEAT admission"},
+    {"date":"2026-07-07","event":"AEAT/ONIF complaint REGAGE26e00062869818 and AEAT access filing REGAGE26e00062944142","class":"registry-controlled"},
+    {"date":"2026-08-24","event":"AEAT/RICPE-MYND supplemental access filing REGAGE26e00075135386","class":"native REGAGE-controlled"},
+    {"date":"2026-09-16","event":"Two CTBG complaints filed REGAGE26e00081191241 and REGAGE26e00081194039","class":"registry-controlled"}
+  ],
+  "critical_correction":"The 2021-01-13 AEAT alert post-dates the opening of the Pink inspection and cannot have caused the original inspection.",
+  "causal_bridge":["ATTRIBUTED_PRIVATE_SOURCE","STATEMENT","TRANSMISSION_OR_INCORPORATION","AEAT_USE","TAX_ACT","DERIVATION_OR_ENFORCEMENT","HARM","POSSIBLE_PRIVATE_BENEFIT"],
+  "causation_rule":"Chronological sequence alone does not establish any causal arrow.",
+  "interinstitutional_tracks":[
+    {"authority":"CNMV","supports":"notice/routing/supervisory traceability to extent of source","does_not_support":"automatic merits finding or fraud finding"},
+    {"authority":"Intervencion General","supports":"competence/routing/public-finance control context","does_not_support":"completed fraud audit"},
+    {"authority":"SNCA/IGAE/FEDER/Fondos Europeos","supports":"public-funds/anti-fraud control track and production targets","does_not_support":"fraud finding or AEAT retaliation finding"},
+    {"authority":"Canarias7","supports":"external public context in separate commercial matter","does_not_support":"conviction or proof of Sun Park allegations"}
+  ],
+  "live_routes":[
+    {"route":"CTBG/LTAIBG","status":"two complaints filed; common evidence follow-on prepared","relief":"severable administrative traceability/partial access"},
+    {"route":"Ley 2/2023/AIPI","status":"reserved; statutory predicates must be proved","anchors":["art.3.4","art.35","art.36.2-36.5","art.38.4","art.63.1(b)","Additional Provision Six"],"note":"AIPI sanctioning procedure is ex officio; distinguish protection/support from sanctions and damages."},
+    {"route":"Ley 40/2015 + Ley 39/2015 art.67","status":"reserved claimant-specific patrimonial route","requirements":["effective injury","economically assessable","individualized","causal link","no legal duty to bear","limitation/accrual control"]},
+    {"route":"pending tax/contentious-administrative","status":"live in relevant Pink/Patricia proceedings","relief":"annulment/nullity/merits relief according to each proceeding"},
+    {"route":"criminal/civil ex delicto","status":"separate; only if evidential threshold met","rule":"do not infer from regulator receipt, delay or chronology alone"}
+  ],
+  "claimant_separation":["Gil personal direct loss","Aweswell own corporate loss","Pink own assessment/sanction/enforcement loss","Patricia own derivation/enforcement/personal loss","other entities own individualized loss only"],
+  "priority_evidence_targets":[
+    "13-Jan-2021 AEAT registration/unit/internal routing",
+    "cross-reference into Pink assessment/sanction/collection/Patricia files",
+    "reasons for zero-result proposal to later adverse replacement outcome",
+    "Patricia derivation act/date/legal basis/decision-makers",
+    "native 17-Nov-2022 AEAT report identity/unit/scope",
+    "AEAT treatment of REGAGE26e00062869818 and later supplements",
+    "reparto/forwarding/access-audit/file-association metadata",
+    "objective comparator consistency/asymmetry evidence",
+    "claimant-specific harm ledger and article 67 limitation triggers"
+  ],
+  "hard_no_overclaim":[
+    "Do not say the 2021 alert caused the original Pink inspection.",
+    "Do not say the 17-Nov-2022 report proves favoritism or illegality.",
+    "Do not equate no internal-channel hit with no receipt of RGE994072472024.",
+    "Do not declare the 2025 re-routing unlawful before source/channel scope is tested.",
+    "Do not convert regulator/public-body receipt into a merits endorsement.",
+    "Do not infer retaliation, causation or criminality from chronology alone."
+  ]
+}
