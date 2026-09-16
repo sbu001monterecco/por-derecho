@@ -1,0 +1,123 @@
+{
+  "schema": "por-derecho.aeat-transparency-resolutions.v2",
+  "control_date": "2026-09-16",
+  "canonical_repository": "GitLab main",
+  "public_privacy_boundary": "No native AEAT/CTBG PDFs, raw REGAGE receipts, DNI/NIE, home address, telephone/email, CSVs, authenticated notification links, raw email bodies or provider message IDs are published.",
+  "portal_files": [
+    {
+      "portal_exp": "00001-00112793",
+      "aeat_exp": "001-0112793",
+      "decision_object": "AEAT-RES-20260916-A",
+      "rge": "RGE994072472024"
+    },
+    {
+      "portal_exp": "00001-00113066",
+      "aeat_exp": "001-0113066",
+      "decision_object": "AEAT-RES-20260916-A",
+      "rge": "RGE994072472024"
+    },
+    {
+      "portal_exp": "00001-00113069",
+      "aeat_exp": "001-0113069",
+      "decision_object": "AEAT-RES-20260916-B",
+      "rge": "RGE449073832025"
+    }
+  ],
+  "decision_objects": [
+    {
+      "id": "AEAT-RES-20260916-A",
+      "kind": "joint_resolution",
+      "pages": 9,
+      "bytes": 238900,
+      "sha256": "07384303de12325afe44ce01f03d54511e9b9982dd67291571eacf7806985e78",
+      "covers": ["001-0112793", "001-0113066"],
+      "key_admissions": [
+        "No Internal Information Channel entry located under cited RGE994072472024 reference.",
+        "Written communication received 2024-12-07 by Regional Inspection in the Canary Islands.",
+        "AEAT states it was handled as an article 114 LGT public tax complaint."
+      ],
+      "operative_access_status": "denied_for_remaining_access"
+    },
+    {
+      "id": "AEAT-RES-20260916-B",
+      "kind": "resolution",
+      "pages": 8,
+      "bytes": 163525,
+      "sha256": "31b21134d253c416bff9e8fe701a3acd7b16cf4d8700bdc51f5b020d64d39beb",
+      "covers": ["001-0113069"],
+      "key_admissions": [
+        "RGE449073832025 entered AEAT Internal Information Channel 2025-12-05 at 13:27.",
+        "Communication sent 2025-12-12 to AEAT Special Delegation in the Canary Islands.",
+        "AEAT states it was classified as an article 114 LGT public tax complaint outside the internal-channel competence."
+      ],
+      "wording_tension": ["CONCEDE PARCIALMENTE", "DENEGAR a trámite la solicitud"]
+    }
+  ],
+  "duplicate_relation": {
+    "attachment_count": 3,
+    "unique_decision_count": 2,
+    "duplicate_sha256": "07384303de12325afe44ce01f03d54511e9b9982dd67291571eacf7806985e78"
+  },
+  "gesat2_notices_cest": [
+    {"portal_exp":"00001-00112793","time":"17:19:37"},
+    {"portal_exp":"00001-00113066","time":"17:25:37"},
+    {"portal_exp":"00001-00113069","time":"17:34:17"}
+  ],
+  "ctbg_filings": [
+    {
+      "id": "CTBG-AEAT-20260916-B",
+      "regage": "REGAGE26e00081191241",
+      "filed_date": "2026-09-16",
+      "filed_time_local": "20:10",
+      "destination_dir3": "EA0040111",
+      "against": ["001-0113069"],
+      "decision_object": "AEAT-RES-20260916-B",
+      "attachment_count": 5,
+      "requests_accumulation": true,
+      "status": "filed"
+    },
+    {
+      "id": "CTBG-AEAT-20260916-A",
+      "regage": "REGAGE26e00081194039",
+      "filed_date": "2026-09-16",
+      "filed_time_local": "20:25",
+      "destination_dir3": "EA0040111",
+      "against": ["001-0112793", "001-0113066"],
+      "decision_object": "AEAT-RES-20260916-A",
+      "attachment_count": 5,
+      "cross_references": ["REGAGE26e00081191241"],
+      "requests_accumulation": true,
+      "status": "filed"
+    }
+  ],
+  "source_chain": {
+    "aeat_2021_alert": {
+      "date": "2021-01-13",
+      "subject": "RICPE / Sun Park / claimed RIC-investment irregularities",
+      "status": "native complaint recovered",
+      "causation_boundary": "Pink inspection predated this communication; do not claim it caused the original inspection."
+    },
+    "aeat_onif_2026": {
+      "date": "2026-07-07",
+      "regage": "REGAGE26e00062869818",
+      "status": "received"
+    },
+    "aeat_binding_report_access_2026": {
+      "initial_regage": "REGAGE26e00062944142",
+      "supplement_regage": "REGAGE26e00075135386",
+      "supplement_date": "2026-08-24",
+      "target_material": "reported AEAT binding report/material dated 2022-11-17 concerning RICPE / MYND Yaiza",
+      "status": "access/traceability route active"
+    }
+  },
+  "legal_response": {
+    "recommended_ctbg_complaints": 2,
+    "complaint_grouping": [["001-0112793", "001-0113066"], ["001-0113069"]],
+    "complaints_filed": 2,
+    "common_supplement": "prepared_linked_follow_on",
+    "do_not_seek": "Protected merits/results of any ongoing tax investigation.",
+    "preserve": "Exact notification/access proof and complete AEAT routing record.",
+    "current_ctbg_authority": "R CTBG 0072/2026, 26 January 2026",
+    "reserved_routes": ["Ley 2/2023 protection/anti-retaliation", "Ley 40/2015 patrimonial liability"]
+  }
+}
