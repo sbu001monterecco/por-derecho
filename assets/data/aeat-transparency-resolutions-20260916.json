@@ -1,0 +1,98 @@
+{
+  "schema": "por-derecho.aeat-transparency-resolutions.v1",
+  "control_date": "2026-09-16",
+  "canonical_repository": "GitLab main",
+  "public_privacy_boundary": "No native PDFs, DNI/NIE, CSVs, authenticated notification links, raw email bodies or provider message IDs are published.",
+  "portal_files": [
+    {
+      "portal_exp": "00001-00112793",
+      "aeat_exp": "001-0112793",
+      "decision_object": "AEAT-RES-20260916-A",
+      "rge": "RGE994072472024"
+    },
+    {
+      "portal_exp": "00001-00113066",
+      "aeat_exp": "001-0113066",
+      "decision_object": "AEAT-RES-20260916-A",
+      "rge": "RGE994072472024"
+    },
+    {
+      "portal_exp": "00001-00113069",
+      "aeat_exp": "001-0113069",
+      "decision_object": "AEAT-RES-20260916-B",
+      "rge": "RGE449073832025"
+    }
+  ],
+  "decision_objects": [
+    {
+      "id": "AEAT-RES-20260916-A",
+      "kind": "joint_resolution",
+      "pages": 9,
+      "bytes": 238900,
+      "sha256": "07384303de12325afe44ce01f03d54511e9b9982dd67291571eacf7806985e78",
+      "covers": [
+        "001-0112793",
+        "001-0113066"
+      ],
+      "key_admissions": [
+        "No Internal Information Channel entry located under cited RGE994072472024 reference.",
+        "Written communication received 2024-12-07 by Regional Inspection in the Canary Islands.",
+        "AEAT states it was handled as an article 114 LGT public tax complaint."
+      ],
+      "operative_access_status": "denied_for_remaining_access"
+    },
+    {
+      "id": "AEAT-RES-20260916-B",
+      "kind": "resolution",
+      "pages": 8,
+      "bytes": 163525,
+      "sha256": "31b21134d253c416bff9e8fe701a3acd7b16cf4d8700bdc51f5b020d64d39beb",
+      "covers": [
+        "001-0113069"
+      ],
+      "key_admissions": [
+        "RGE449073832025 entered AEAT Internal Information Channel 2025-12-05 at 13:27.",
+        "Communication sent 2025-12-12 to AEAT Special Delegation in the Canary Islands.",
+        "AEAT states it was classified as an article 114 LGT public tax complaint outside the internal-channel competence."
+      ],
+      "wording_tension": [
+        "CONCEDE PARCIALMENTE",
+        "DENEGAR a trámite la solicitud"
+      ]
+    }
+  ],
+  "duplicate_relation": {
+    "attachment_count": 3,
+    "unique_decision_count": 2,
+    "duplicate_sha256": "07384303de12325afe44ce01f03d54511e9b9982dd67291571eacf7806985e78"
+  },
+  "gesat2_notices_cest": [
+    {
+      "portal_exp": "00001-00112793",
+      "time": "17:19:37"
+    },
+    {
+      "portal_exp": "00001-00113066",
+      "time": "17:25:37"
+    },
+    {
+      "portal_exp": "00001-00113069",
+      "time": "17:34:17"
+    }
+  ],
+  "legal_response": {
+    "recommended_ctbg_complaints": 2,
+    "complaint_grouping": [
+      [
+        "001-0112793",
+        "001-0113066"
+      ],
+      [
+        "001-0113069"
+      ]
+    ],
+    "do_not_seek": "Protected merits/results of any ongoing tax investigation.",
+    "preserve": "Exact notification/access proof before calculating deadline.",
+    "current_ctbg_authority": "R CTBG 0072/2026, 26 January 2026"
+  }
+}
