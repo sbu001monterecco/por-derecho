@@ -241,4 +241,12 @@
       </div>
     </div>`;
   hero.after(section);
+
+  if (!document.querySelector('script[data-home-future-institutional-loader]')) {
+    const futureScript = document.createElement('script');
+    futureScript.src = '/por-derecho/assets/home-future-institutional-20260916.js?v=20260916a';
+    futureScript.async = false;
+    futureScript.setAttribute('data-home-future-institutional-loader', '20260916a');
+    document.head.appendChild(futureScript);
+  }
 })();
