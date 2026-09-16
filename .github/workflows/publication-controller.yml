@@ -23,7 +23,84 @@ jobs:
           ref: main
           fetch-depth: 1
           persist-credentials: false
+      - name: Materialize exact Cajasiete PNG on reviewed mirror branch
+        if: ${{ startsWith(github.event.comment.body, '/pd-release materialize-cajasiete ') }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+          COMMAND_BODY: ${{ github.event.comment.body }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p /tmp/pd-release-controller
+          if [[ "$COMMAND_BODY" =~ ^/pd-release\ materialize-cajasiete\ mirror/cajasiete-final-20260916\ ([a-f0-9]{40})$ ]]; then
+            expected_head="${BASH_REMATCH[1]}"
+          else
+            echo "Refusing non-exact Cajasiete materialization command" >&2
+            exit 1
+          fi
+          branch='mirror/cajasiete-final-20260916'
+          asset='assets/cajasiete-independent-records-20260916.png'
+          source='https://por-derecho-setup-or-gitlab-setup-c2b10f.gitlab.io/por-derecho-setup-or-gitlab-setup/assets/cajasiete-independent-records-20260916.png'
+          expected_sha256='b9ec46c279d64abd29b0583ae076390a3ef8ea99f3455463f9c54aa71aa4d403'
+          expected_bytes='2599733'
+          actual_head="$(gh api "repos/$GITHUB_REPOSITORY/git/ref/heads/$branch" --jq '.object.sha')"
+          test "$actual_head" = "$expected_head" || { echo "Mirror branch moved: $actual_head" >&2; exit 1; }
+          if gh api "repos/$GITHUB_REPOSITORY/contents/$asset?ref=$branch" >/dev/null 2>&1; then
+            echo "Target asset already exists; refusing replay" >&2
+            exit 1
+          fi
+          curl --fail --location --silent --show-error --retry 3 --retry-all-errors \
+            --connect-timeout 15 --max-time 120 \
+            -H 'Cache-Control: no-cache' \
+            "$source?pd_release=$expected_head" \
+            -o /tmp/cajasiete-independent-records-20260916.png
+          observed_bytes="$(wc -c < /tmp/cajasiete-independent-records-20260916.png | tr -d ' ')"
+          test "$observed_bytes" = "$expected_bytes" || { echo "Unexpected byte count: $observed_bytes" >&2; exit 1; }
+          printf '%s  %s\n' "$expected_sha256" /tmp/cajasiete-independent-records-20260916.png | sha256sum --check --strict -
+          python3 - <<'PY'
+          from pathlib import Path
+          import struct
+          p=Path('/tmp/cajasiete-independent-records-20260916.png')
+          raw=p.read_bytes()
+          if raw[:8] != b'\x89PNG\r\n\x1a\n' or raw[12:16] != b'IHDR':
+              raise SystemExit('Not the required PNG/IHDR structure')
+          dims=struct.unpack('>II', raw[16:24])
+          if dims != (1122,1402):
+              raise SystemExit(f'Unexpected PNG dimensions: {dims!r}')
+          PY
+          python3 - <<'PY'
+          import base64, json, os
+          raw=open('/tmp/cajasiete-independent-records-20260916.png','rb').read()
+          payload={
+            'message':'Mirror canonical exact Cajasiete PNG from live-verified GitLab',
+            'branch':'mirror/cajasiete-final-20260916',
+            'content':base64.b64encode(raw).decode('ascii'),
+          }
+          with open('/tmp/cajasiete-payload.json','w') as f:
+              json.dump(payload,f,separators=(',',':'))
+          PY
+          gh api --method PUT "repos/$GITHUB_REPOSITORY/contents/$asset" \
+            --input /tmp/cajasiete-payload.json > /tmp/cajasiete-result.json
+          new_head="$(python3 -c 'import json; print(json.load(open("/tmp/cajasiete-result.json"))["commit"]["sha"])')"
+          served_head="$(gh api "repos/$GITHUB_REPOSITORY/git/ref/heads/$branch" --jq '.object.sha')"
+          test "$new_head" = "$served_head" || { echo "Branch head mismatch after materialization" >&2; exit 1; }
+          python3 - <<PY
+          import json
+          json.dump({
+            'status':'EXACT_CAJASIETE_PNG_MATERIALIZED',
+            'branch':'$branch',
+            'prior_head':'$expected_head',
+            'new_head':'$new_head',
+            'path':'$asset',
+            'bytes':2599733,
+            'sha256':'$expected_sha256',
+            'width':1122,
+            'height':1402,
+            'source':'$source',
+          },open('/tmp/pd-release-controller/materialize-cajasiete.json','w'),indent=2)
+          PY
       - name: Process authenticated exact-SHA permit or recovery; never merge main
+        if: ${{ !startsWith(github.event.comment.body, '/pd-release materialize-cajasiete ') }}
         env:
           GH_TOKEN: ${{ github.token }}
         run: python3 scripts/pd_release_controller.py
