@@ -1,0 +1,89 @@
+name: RICPE original PDF accountability
+on:
+  push:
+    branches: [worker/ricpe-original-pdf-accountability-20260905, main]
+    paths:
+      - '.github/workflows/ricpe-original-pdf-accountability.yml'
+      - 'scripts/*ricpe*'
+      - 'assets/*ricpe*'
+      - 'assets/data/ricpe-original-accountability-20260905.json'
+      - 'evidence/ricpe-cnmv/2026-08-27/**'
+      - 'operations/preservation-authorizations/RICPE_ORIGINAL_EXACT_PUBLICATION_05SEP2026.json'
+      - 'es/ric-private-equity-sun-park/analisis-canal.html'
+      - 'en/ric-private-equity-sun-park/channel-analysis.html'
+      - 'es/ricpe-perimetro-accionistas-medios/index.html'
+      - 'en/ricpe-perimeter-shareholders-media/index.html'
+  pull_request:
+    paths:
+      - '.github/workflows/ricpe-original-pdf-accountability.yml'
+      - 'scripts/*ricpe*'
+      - 'assets/*ricpe*'
+      - 'assets/data/ricpe-original-accountability-20260905.json'
+      - 'evidence/ricpe-cnmv/2026-08-27/**'
+      - 'es/ric-private-equity-sun-park/analisis-canal.html'
+      - 'en/ric-private-equity-sun-park/channel-analysis.html'
+      - 'es/ricpe-perimetro-accionistas-medios/index.html'
+      - 'en/ricpe-perimeter-shareholders-media/index.html'
+permissions:
+  contents: read
+concurrency:
+  group: ricpe-original-accountability-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+jobs:
+  audit:
+    name: RICPE original source and browser acceptance
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
+          fetch-depth: 0
+          persist-credentials: false
+      - name: Fail early on missing entrypoints or changed inherited standalone bodies
+        run: python3 scripts/validate_ricpe_original_entrypoints.py
+      - name: Install bounded browser and PDF inspection dependencies
+        run: |
+          command -v pdfinfo || (sudo apt-get update -qq && sudo apt-get install -y poppler-utils)
+          python3 -m pip install --disable-pip-version-check playwright==1.55.0
+          python3 -m playwright install --with-deps chromium firefox
+      - name: Inspect actual source and browsers without repository writes
+        run: python3 scripts/validate_ricpe_original_accountability.py --browser
+      - name: Verify exact native PDF and all public entry routes after main deployment
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        run: |
+          python3 - <<'PY'
+          import time,urllib.request,pathlib
+          url='https://sbu001monterecco.github.io/por-derecho/assets/data/ricpe-original-accountability-20260905.json'
+          expected=pathlib.Path('assets/data/ricpe-original-accountability-20260905.json').read_bytes()
+          for attempt in range(40):
+              try:
+                  if urllib.request.urlopen(url+'?ricpe_live=${{ github.sha }}',timeout=20).read()==expected:break
+              except OSError:pass
+              time.sleep(10)
+          else:raise SystemExit('Exact deployed source did not appear; no live acceptance')
+          PY
+          python3 scripts/validate_ricpe_original_accountability.py --live
+      - name: Preserve scoped source snapshot as a read-only review artifact
+        if: always()
+        run: |
+          python3 - <<'PY'
+          import pathlib,subprocess,zipfile
+          root=pathlib.Path('.');out=pathlib.Path('/tmp/ricpe-accountability');out.mkdir(exist_ok=True)
+          paths=subprocess.check_output(['git','ls-files'],text=True).splitlines()
+          (out/'repository-paths.txt').write_text('\n'.join(paths))
+          extra=('assets/site.js','scripts/validate_ricpe_channel_identifier_privacy.py','es/ricpe-perimetro-accionistas-medios/index.html','en/ricpe-perimeter-shareholders-media/index.html','evidence/ricpe-cnmv/2026-08-27/index.html')
+          with zipfile.ZipFile(out/'candidate-source.zip','w',zipfile.ZIP_DEFLATED) as z:
+              for p in paths:
+                  if ('ricpe-original' in p or 'ricpe_original' in p or p in extra or 'analisis-canal.html' in p or 'channel-analysis.html' in p or 'RICPE_ORIGINAL' in p or 'PD-RICPE-ORIGINAL' in p):z.write(p,p)
+          PY
+      - name: Confirm validation did not edit source
+        if: always()
+        run: git diff --exit-code
+      - uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
+        if: always()
+        with:
+          name: ricpe-accountability-${{ github.run_id }}
+          path: /tmp/ricpe-accountability/
+          retention-days: 14
+          if-no-files-found: error

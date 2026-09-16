@@ -1,0 +1,17 @@
+{
+  "authorization_id": "PD-RICPE-ORIGINAL-20260905",
+  "date": "2026-09-05",
+  "authority": "Gil Marer expressly requests publication of this file as is, viewable as a PDF on multiple relevant website pages.",
+  "scope": "Exactly one unchanged six-page resolution certificate; not raw email, a secret channel password, another native document, or general relaxation of publication controls.",
+  "path": "evidence/ricpe-cnmv/2026-08-27/original-authorised-20260905/RICPE_Canal_Etico_Certificado_Resolucion_27AGO2026.pdf",
+  "sha256": "db9979715cac4aeb8ded81a998227cfd894144dcd0a50fe81d4b1369904c9bb4",
+  "git_blob_sha": "f2e7b33e433136800a58702032319d2e04df19c1",
+  "bytes": 444759,
+  "pages": 6,
+  "unaltered_original": true,
+  "personal_data_boundary": "The original contains the reporting person's contact details and communication identifier. The specific as-is instruction authorises this exact original. These values are not separately transcribed into public HTML, JSON or logs. No secret password is included.",
+  "supersession": "Narrow prospective exception to the earlier original-binary exclusion. The historical 27-August remediation, manifest, redacted PDF and six redacted page images remain unchanged and valid as historical records and alternative editions.",
+  "limits": "Integrity of a platform export does not establish completeness of the internal case file, truth of allegations, decision-maker identity, internal circulation or criminal intent.",
+  "coordination": "https://github.com/sbu001monterecco/por-derecho/issues/1428#issuecomment-5555222590",
+  "no_outbound_action": true
+}

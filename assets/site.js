@@ -40,6 +40,7 @@
     load('joan-cruz-multitrack-crosslinks-20260901.js', 'data-joan-cruz-multitrack-loader', '20260904a');
     load('orion-rental-socimi-interlinks-20260905.js', 'data-orion-rental-socimi-interlinks-loader', '20260905a');
     load('orion-rental-socimi-search-extension-20260905.js', 'data-orion-rental-socimi-search-loader', '20260905a');
+    load('ricpe-original-accountability-20260905.js', 'data-ricpe-original-accountability-loader', '20260905a');
   };
 
   const loadHotelFincaSystem = () => {
