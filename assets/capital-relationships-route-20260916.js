@@ -37,7 +37,7 @@
     const a = document.createElement('a');
     a.href = capitalPath;
     a.className = 'cr-nav-link';
-    a.textContent = isEN ? 'Capital' : 'Capital';
+    a.textContent = 'Capital';
     const language = nav.querySelector('.language-link');
     if (language) nav.insertBefore(a, language); else nav.appendChild(a);
   }
@@ -60,7 +60,7 @@
       card.dataset.capitalCollab = '20260916';
       card.innerHTML = isEN ? `
         <span class="collab-call-index">04A</span><div><div class="collab-call-meta"><span>The Future</span><span class="open">Selective</span></div><h3>Private capital relationship</h3><p>For a principal, single-family office, hotel-owning family, institutional/professional capital provider or trusted introducer who wants to test fit without a public securities offer or public investment terms.</p></div><div class="collab-call-details"><div><strong>Useful position</strong><span>Actual principal/decision-maker or a trusted person able to make a specific introduction</span></div><div><strong>Working boundary</strong><span>Public architecture first; role, jurisdiction and communication basis checked before restricted material</span></div></div><a href="${capitalPath}">Open the capital-relationship gateway →</a>` : `
-        <span class="collab-call-index">04A</span><div><div class="collab-call-meta"><span>El Futuro</span><span class="open">Selectivo</span></div><h3>Relación privada de capital</h3><p>Para un principal, single-family office, familia propietaria de hoteles, proveedor institucional/profesional de capital o introductor de confianza que quiera comprobar el encaje sin oferta pública de valores ni condiciones públicas de inversión.</p></div><div class="collab-call-details"><div><strong>Posición útil</strong><span>Principal/decisor real o persona de confianza capaz de realizar una introducción concreta</span></div><div><strong>Límite de trabajo</strong><span>Primero arquitectura pública; función, jurisdicción y base de comunicación antes de material restringido</span></div></div><a href="${capitalPath}">Abrir la puerta de relaciones de capital →</a>`;
+        <span class="collab-call-index">04A</span><div><div class="collab-call-meta"><span>El Futuro</span><span class="open">Selectivo</span></div><h3>Relación privada de capital</h3><p>Para un principal, single-family office, familia propietaria de hoteles, proveedor institucional/profesional de capital o introductor de confianza que quiera comprobar el encaje sin oferta pública de valores ni condiciones públicas de inversión.</p></div><div class="collab-call-details"><div><strong>Posición útil</strong><span>Principal/decisor real o persona de confianza capaz de realizar una introducción concreta</span></div><div class="collab-call-details"><strong>Límite de trabajo</strong><span>Primero arquitectura pública; función, jurisdicción y base de comunicación antes de material restringido</span></div></div><a href="${capitalPath}">Abrir la puerta de relaciones de capital →</a>`;
       const future = document.querySelector('#future-calls');
       if (future) future.after(card); else calls.appendChild(card);
     }
@@ -94,6 +94,10 @@
   ];
   const match = selectors.find(([slug]) => path.includes(`/${slug}/`));
   const anchor = match ? document.querySelector(match[1]) : null;
-  if (anchor) anchor.insertAdjacentElement('afterend', box);
-  else document.querySelector('main')?.insertAdjacentElement('afterbegin', box);
+  if (anchor) {
+    const placement = path.includes('/montana-roja/') ? (anchor.closest('section') || anchor) : anchor;
+    placement.insertAdjacentElement('afterend', box);
+  } else {
+    document.querySelector('main')?.insertAdjacentElement('afterbegin', box);
+  }
 })();
