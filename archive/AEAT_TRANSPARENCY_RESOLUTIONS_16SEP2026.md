@@ -52,7 +52,7 @@ These admissions establish receipt/routing facts. They do **not** establish the 
 
 ## CTBG complaints filed — 16 September 2026
 
-Both complaints were filed through REG-AGE / RedSARA to the Consejo de Transparparencia y Buen Gobierno, DIR3 `EA0040111`.
+Both complaints were filed through REG-AGE / RedSARA to the Consejo de Transparencia y Buen Gobierno, DIR3 `EA0040111`.
 
 | Filing | Decision challenged | REGAGE | Filed | Controlled architecture |
 |---|---|---|---|---|
