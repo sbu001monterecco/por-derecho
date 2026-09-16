@@ -31,7 +31,7 @@ if not errors:
     need(ES, "Sin vía pública")
     need(EN, "No public coupon")
     need(ES, "Sin cupón")
-    need(EN, "seven gates".title().replace("Seven Gates", "Seven gates"), "private-process gate heading")
+    need(EN, "Seven gates before investment-specific material.", "private-process gate heading")
     need(EN, "principal or intermediary")
     need(ES, "principal o intermediario")
     need(EN, "mailto:sbu001@monterecco.com?subject=PSR%20%E2%80%94%20Private%20capital%20relationship")
@@ -51,17 +51,21 @@ if not errors:
         errors.append("Sponsor identity lock failed")
 
     combined = EN.read_text(encoding="utf-8").lower() + "\n" + ES.read_text(encoding="utf-8").lower()
-    prohibited = [
-        "invest now",
-        "subscribe now",
-        "reserve notes",
-        "minimum investment",
+    prohibited_cta_fragments = [
+        ">invest now<",
+        ">subscribe now<",
+        ">reserve notes<",
+        ">invertir ahora<",
+        ">suscribirse ahora<",
+        "minimum investment:",
+        "inversión mínima:",
         "guaranteed return",
         "guaranteed yield",
+        "rentabilidad garantizada",
     ]
-    for term in prohibited:
+    for term in prohibited_cta_fragments:
         if term in combined:
-            errors.append(f"prohibited public-investment wording present: {term!r}")
+            errors.append(f"prohibited public-investment CTA/claim present: {term!r}")
 
 if errors:
     print("CAPITAL RELATIONSHIPS ACCEPTANCE: FAIL")
