@@ -1,8 +1,8 @@
 # AEAT transparency resolutions — 16 September 2026
 
-**Status:** current source-controlled institutional intake and legal-response analysis  
+**Status:** two CTBG complaints filed 16 September 2026; common evidential supplementation prepared as a linked follow-on.  
 **Repository authority:** GitLab `main` is canonical; GitHub is secondary/recovery only.  
-**Public/privacy boundary:** this record does **not** publish the signed native PDFs, raw email bodies, DNI/NIE, CSV verification codes, authenticated notification links, Gmail message IDs or private routing metadata. Native signed PDFs remain preserved in the source mailbox/self-sent carrier; this public-safe record preserves cryptographic identity, provenance, chronology and substantive content.
+**Public/privacy boundary:** this record does **not** publish the signed native AEAT PDFs, CTBG filing PDFs, raw REGAGE receipts, DNI/NIE, home address, telephone/email, CSV verification codes, authenticated notification links, Gmail/provider message IDs or one-time security codes. Native/source documents remain preserved in the controlled private record. This public-safe record preserves cryptographic identity, chronology, public registry references and substantive propositions.
 
 ## Executive correction: 3 portal files / 2 unique signed decisions
 
@@ -12,7 +12,7 @@ Three AGE Transparency Portal expediente notices were issued on 16 September 202
 2. `00001-00113066`
 3. `00001-00113069`
 
-The recovered carrier email contains three PDF attachments, but the second and third attachments are byte-identical. The evidential structure is therefore:
+The recovered carrier email contained three PDF attachments, but the second and third attachments are byte-identical. The evidential structure is therefore:
 
 - **Decision A:** one 9-page **joint AEAT resolution** for `001-0112793` + `001-0113066` (portal files `00001-00112793` + `00001-00113066`), concerning `RGE994072472024`.
 - **Decision B:** one 8-page AEAT resolution for `001-0113069` (portal file `00001-00113069`), concerning `RGE449073832025`.
@@ -93,13 +93,69 @@ AEAT states:
 - however, it **does find a written communication received on 7 December 2024 by the Regional Inspection Department in the Canary Islands**;
 - that communication was handled as a **public tax complaint under article 114 LGT**.
 
-AEAT then applies the same articles 114/95 LGT confidentiality reasoning and refuses the remainder of the transparency request.
+The native AEAT presentation receipt separately records `RGE994072472024` on **7 December 2024 at 12:30:55**, route `ZZ061 - Denuncia Ordinaria` / procedure `ZZ06 - Denuncia tributaria`, with the underlying complaint attached. That receipt is preserved privately and is not published here because it contains personal identifiers.
 
 ### Controlled English summary
 
 > AEAT says it cannot locate an internal-channel entry under the cited `RGE994072472024` reference, but it confirms that a written communication was received by Regional Inspection in the Canary Islands on 7 December 2024 and was treated as an article 114 General Tax Law public complaint. AEAT refuses further access to the follow-up record by relying on tax confidentiality and the complainant's non-party status.
 
 The correct evidential proposition is therefore **not** “AEAT never received the 2024 communication.” It is: **no internal-channel entry was located under the cited reference, while AEAT expressly confirms receipt of the underlying 7 December 2024 communication by Regional Inspection in the Canary Islands.**
+
+---
+
+## CTBG complaints filed — 16 September 2026
+
+The two-complaint architecture was executed the same day through **REG-AGE / RedSARA** to the **Consejo de Transparencia y Buen Gobierno, DIR3 `EA0040111`**.
+
+### Filing 1 — Decision B / `001-0113069`
+
+- **REGAGE:** `REGAGE26e00081191241`
+- **Filed:** 16 September 2026, 20:10 local registry timestamp
+- **Object:** article 24 LTAIBG complaint against the standalone 16 September resolution for `001-0113069`
+- **Architecture:** five attachments: principal CTBG complaint; appealed resolution; controlled SAIP/registry evidence; controlled notification evidence; `RGE449073832025` origin/routing evidence.
+- **Request:** partial/severable access to administrative traceability and an express request for accumulation with the companion CTBG complaint.
+
+### Filing 2 — Decision A / joint `001-0112793` + `001-0113066`
+
+- **REGAGE:** `REGAGE26e00081194039`
+- **Filed:** 16 September 2026, 20:25 local registry timestamp
+- **Object:** article 24 LTAIBG complaint against the joint 16 September resolution for `001-0112793` + `001-0113066`
+- **Architecture:** five attachments: principal CTBG complaint; joint appealed resolution; controlled SAIP/registry evidence; controlled notification evidence; native `RGE994072472024` complaint + AEAT receipt evidence.
+- **Cross-reference:** expressly identifies `REGAGE26e00081191241` and requests accumulation under article 57 Ley 39/2015.
+
+### Procedural posture after filing
+
+The preferred architecture is now implemented:
+
+`ONE FACTUAL / LEGAL CASE → TWO CTBG REGISTRATIONS → EXPRESS ACCUMULATION REQUEST → COMMON SUPPLEMENTAL EVIDENCE`
+
+There are **two complaints, not three**. The duplicate portal PDF does not create a third appealable act.
+
+The two principal filings deliberately ask CTBG to decide **access and administrative traceability**, not retaliation, tax fraud, criminal liability or patrimonial damages. Ley 2/2023 anti-retaliation and Ley 40/2015 patrimonial-liability routes remain separately reserved.
+
+---
+
+## Common evidence / continuity layer
+
+A linked common evidential submission is prepared to be associated with both principal REGAGE numbers rather than treated as a new complaint. The controlled five-slot architecture is:
+
+1. common supplemental pleading cross-referencing both CTBG REGAGE numbers;
+2. **AEAT Vigilancia Aduanera diligence of 6 April 2022** concerning `titularidad y explotación` of Sun Park;
+3. institutional-context bundle: **CNMV, Intervención General, SNCA/IGAE/FEDER, Fondos Europeos and Canarias7**, with express evidential limitations;
+4. **13 January 2021 AEAT complaint** concerning RICPE / Sun Park / claimed RIC-investment issues;
+5. later AEAT chain: **7 July 2026 AEAT/ONIF complaint** (`REGAGE26e00062869818`) plus the **24 August 2026 RICPE/MYND transparency supplementation** (`REGAGE26e00075135386`) concerning the reported **17 November 2022 AEAT binding report/material**.
+
+### Critical chronology correction
+
+The Pink inspection **predated** the 13 January 2021 AEAT communication. The public-safe theory must therefore remain:
+
+`pre-existing Pink inspection → 13-Jan-2021 AEAT alert → later Pink developments → 2022 ownership/exploitation inquiries → later assessment/sanction/Patricia-related enforcement → later CAM/RICPE/MYND communications`
+
+Do **not** state that the 2021 alert caused the original Pink inspection. Any retaliation/discriminatory-treatment issue concerns later acts, escalation, file-crossing, omissions and objective justification and remains to be established in the competent route.
+
+### Institutional-context boundary
+
+The Canarias7 article of 30 May 2022 is retained only as **external context in a different commercial matter**. It is not a conviction and is not proof of the Sun Park allegations. CNMV, Intervención, SNCA/IGAE/FEDER and other public-body records prove receipt/routing or the existence of separate control tracks only to the extent stated in their own documents; they are not converted into findings of fraud or criminality.
 
 ---
 
@@ -120,7 +176,7 @@ On 26 January 2026 the Consejo de Transparencia y Buen Gobierno issued **R CTBG 
 Official CTBG source:
 `https://consejodetransparencia.es/content/dam/ctransparencia/portal-ctbg/reclamaciones/nuestras-resoluciones/resoluciones-%C3%A1mbito-estatal/2026/01--enero/ESTIMADAS/R_CTBG_0072-2026_Resolucion%20Expte.1496-2024__Censurado.pdf`
 
-That 2026 authority is directly relevant to AEAT's 16 September 2026 blanket use of articles 114/95 and should be put before CTBG.
+That 2026 authority is directly relevant to AEAT's 16 September 2026 blanket use of articles 114/95 and was placed at the centre of the CTBG filing strategy.
 
 ### 2. Partial-access and item-by-item treatment remain important
 
@@ -142,7 +198,7 @@ Ley 2/2023 article 13 requires public investigative bodies to distinguish at lea
 - an internal channel for wrongdoing of the body/its staff; and
 - an external channel for third-party infringements within the body's investigative competence.
 
-AEAT itself publicly maintains a **Ley 2/2023 external channel** for tax-related information obtained in a work/professional context, handled by its Inspection Department. Whether either original communication qualified for that route must be decided from the original source and context; it is **not** established merely by today's resolutions.
+AEAT itself publicly maintains a **Ley 2/2023 external channel** for tax-related information obtained in a work/professional context, handled by its Inspection Department. Whether either original communication qualified for that route must be decided from the original source and context; it is **not** established merely by the 16 September resolutions.
 
 Official AEAT sources:
 - `https://sede.agenciatributaria.gob.es/Sede/procedimientos/ZZ55.shtml`
@@ -150,61 +206,9 @@ Official AEAT sources:
 
 ---
 
-## Immediate action plan
-
-### P0 — preserve notification proof and calculate the real deadline
-
-Preserve:
-- the two unique signed resolutions;
-- the duplicate relation;
-- the three GESAT2 resolution-issued notices;
-- the corresponding Notifica/DEHú notices;
-- the self-sent three-PDF carrier;
-- the first legally effective access/service timestamp for each notification.
-
-Do **not** calculate the appeal deadline solely from the email-alert timestamp. The resolutions state:
-- optional CTBG complaint: **one month** from the day after notification;
-- direct contentious-administrative appeal: **two months** from the day after notification.
-
-### P0 — prepare **two CTBG complaints, not three**
-
-1. **Joint complaint** against the joint resolution covering `001-0112793` + `001-0113066` / portal `00001-00112793` + `00001-00113066`.
-2. **Separate complaint** against `001-0113069` / portal `00001-00113069`.
-
-Primary relief should be narrow and source-specific:
-- confirm exact registration/reference mapping;
-- supply non-protected routing/classification metadata;
-- identify relevant administrative units and dates;
-- provide the classification/re-routing act or a redacted extract;
-- provide public/general channel scope, triage and retention/traceability protocols;
-- require an item-by-item answer and partial access;
-- apply R CTBG 0072/2026 and exclude protected third-party tax data rather than refusing the whole request.
-
-Do **not** frame the CTBG complaint as a demand for the substantive result of a tax investigation.
-
-### P0 — preserve the Ley 2/2023 channel issue separately
-
-For `RGE449073832025`, preserve the admitted chain:
-`05-Dec-2025 13:27 internal channel → 12-Dec-2025 AEAT Canary Islands → art.114 classification`.
-
-For the 2024 communication, preserve:
-`no internal-channel hit under cited RGE → 07-Dec-2024 Regional Inspection Canary Islands receipt → art.114 treatment`.
-
-Then compare the two original communications with AEAT's published internal/external Ley 2/2023 channel rules before alleging that the routing was legally wrong.
-
-### P1 — send a preservation/traceability request separately from the CTBG appeals
-
-A narrowly framed communication to the responsible AEAT channel function should request preservation of:
-- registration and reclassification logs;
-- routing metadata;
-- channel-entry and transfer timestamps;
-- the administrative record establishing the 12 December transfer;
-- the applicable channel procedure/version at each date.
-
-This is preservation/traceability, not a demand for protected tax-investigation merits.
-
 ## Status boundaries
 
-- **Verified:** three portal resolution notices; two unique signed decisions; hashes; three-to-two mapping; express AEAT admissions quoted/summarised above.
-- **Not established:** outcome of any tax investigation; unlawfulness of re-routing; wrongdoing by an AEAT official; completeness of the underlying tax file.
-- **Appeal posture:** live; deadline must be docketed from verified legal notification/access evidence.
+- **Verified:** three portal resolution notices; two unique signed decisions; hashes; three-to-two mapping; express AEAT admissions; two CTBG complaints filed on 16 September 2026; both REGAGE identifiers; native AEAT receipt for the 7 December 2024 complaint; recovered 13 January 2021 AEAT complaint; later AEAT/ONIF and 24 August 2026 traceability registrations.
+- **Prepared / follow-on:** common evidential supplementation linked to the two CTBG registrations.
+- **Not established:** outcome of any tax investigation; unlawfulness of re-routing; retaliatory intent; wrongdoing by an AEAT official; completeness of the underlying tax file; criminal liability of any person/entity.
+- **Appeal posture:** live before CTBG; Ley 2/2023 protection/anti-retaliation and Ley 40/2015 patrimonial-liability routes separately reserved.
