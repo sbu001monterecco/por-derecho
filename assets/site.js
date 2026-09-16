@@ -30,7 +30,7 @@
     load('caixabank-valencia-lawyer-dataroom-deeplinks-20260904.js', 'data-caixabank-valencia-lawyer-dataroom-deeplinks-loader', '20260904a');
     load('caixabank-valencia-unitary-inbound-interlinks-20260904.js', 'data-caixabank-valencia-unitary-inbound-interlinks-loader', '20260904a');
     load('caixabank-valencia-full-source-pdfs-20260904.js', 'data-caixabank-valencia-full-source-pdfs-loader', '20260905repair');
-    load('caixabank-borja-witness-claimant-clarification-20260904.js', 'data-borja-witness-claimant-clarification-loader', '20260904a');
+    load('caixabank-borja-witness-claimant-clarification-20260904.js', 'data-caixabank-borja-witness-claimant-clarification-loader', '20260904a');
     load('ricpe-cam-conflict-substance-claimant-statement-20260904.js', 'data-ricpe-cam-conflict-substance-statement-loader', '20260904a');
     load('uria-ricpe-caixabank-source-register-20260904.js', 'data-uria-ricpe-caixabank-source-register-loader', '20260905repair');
     load('uria-haya-puzzle-integration-20260904.js', 'data-uria-haya-puzzle-integration-loader', '20260904b');
@@ -40,7 +40,6 @@
     load('joan-cruz-multitrack-crosslinks-20260901.js', 'data-joan-cruz-multitrack-loader', '20260904a');
     load('orion-rental-socimi-interlinks-20260905.js', 'data-orion-rental-socimi-interlinks-loader', '20260905a');
     load('orion-rental-socimi-search-extension-20260905.js', 'data-orion-rental-socimi-search-loader', '20260905a');
-    load('capital-relationships-route-20260916.js', 'data-capital-relationships-route-loader', '20260916a');
   };
 
   const loadHotelFincaSystem = () => {
