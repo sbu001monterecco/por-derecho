@@ -8,6 +8,9 @@
    * site-pre-matkator-8584-20260903.js transitively executes the preserved
    * site-pre-treasury-154-hq-20260828.js?v=20260828a release; do not load it
    * a second time here because that would duplicate inherited runtime modules.
+   * The inherited visual chain also continues to load
+   * cuatrecasas-mandate-ric-inbound-20260902.js transitively; keep that
+   * source-integrity marker visible without duplicating the runtime module.
    */
 
   const load = (file, marker, version) => {
@@ -17,6 +20,27 @@
     script.async = false;
     script.setAttribute(marker, version);
     document.head.appendChild(script);
+  };
+
+  const loadCapitalRelationships = () => {
+    const path = location.pathname.replace(/index\.html$/, '').replace(/\/+$/, '/');
+    const routes = new Set([
+      '/por-derecho/en/strategic-financial-relationship/',
+      '/por-derecho/en/platform-scale/',
+      '/por-derecho/en/montana-roja/',
+      '/por-derecho/en/open-letter-lanzarote/',
+      '/por-derecho/en/collaborate/',
+      '/por-derecho/en/capital-relationships/',
+      '/por-derecho/es/relacion-financiera-estrategica/',
+      '/por-derecho/es/escala-plataforma/',
+      '/por-derecho/es/montana-roja/',
+      '/por-derecho/es/carta-abierta-lanzarote/',
+      '/por-derecho/es/colaborar/',
+      '/por-derecho/es/relaciones-de-capital/'
+    ]);
+    if (routes.has(path)) {
+      load('capital-relationships-route-20260916.js', 'data-capital-relationships-route-loader', '20260916a');
+    }
   };
 
   const loadControl2224Release = () => {
@@ -40,6 +64,7 @@
     load('joan-cruz-multitrack-crosslinks-20260901.js', 'data-joan-cruz-multitrack-loader', '20260904a');
     load('orion-rental-socimi-interlinks-20260905.js', 'data-orion-rental-socimi-interlinks-loader', '20260905a');
     load('orion-rental-socimi-search-extension-20260905.js', 'data-orion-rental-socimi-search-loader', '20260905a');
+    loadCapitalRelationships();
   };
 
   const loadHotelFincaSystem = () => {
