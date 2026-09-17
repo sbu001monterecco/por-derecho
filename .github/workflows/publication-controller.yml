@@ -198,8 +198,136 @@ jobs:
           served_head="$(gh api "repos/$GITHUB_REPOSITORY/git/ref/heads/$branch" --jq '.object.sha')"
           receipt_head="$(python3 -c 'import json; print(json.load(open("/tmp/pd-release-controller/materialize-cnmv-cajasiete.json"))["new_head"])')"
           test "$served_head" = "$receipt_head" || { echo "Branch head mismatch after CNMV materialization" >&2; exit 1; }
+      - name: Materialize exact live-verified AEAT / RICPE / MYND semantic visual
+        if: ${{ startsWith(github.event.comment.body, '/pd-release materialize-aeat-visual ') }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+          COMMAND_BODY: ${{ github.event.comment.body }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p /tmp/pd-release-controller /tmp/pd-aeat-visual
+          if [[ "$COMMAND_BODY" =~ ^/pd-release\ materialize-aeat-visual\ mirror/aeat-ricpe-mynd-visual-20260917\ ([a-f0-9]{40})$ ]]; then
+            expected_head="${BASH_REMATCH[1]}"
+          else
+            echo "Refusing non-exact AEAT visual materialization command" >&2
+            exit 1
+          fi
+          branch='mirror/aeat-ricpe-mynd-visual-20260917'
+          canonical_gitlab_main='a901005930fb8f289a0621ed3f1c26184bc0304f'
+          source_root='https://por-derecho-setup-or-gitlab-setup-c2b10f.gitlab.io/por-derecho-setup-or-gitlab-setup/'
+          actual_head="$(gh api "repos/$GITHUB_REPOSITORY/git/ref/heads/$branch" --jq '.object.sha')"
+          test "$actual_head" = "$expected_head" || { echo "Mirror branch moved: $actual_head" >&2; exit 1; }
+          export GITHUB_REPOSITORY branch actual_head canonical_gitlab_main source_root
+          python3 - <<'PY'
+          import base64, hashlib, json, os, subprocess, urllib.request
+          from pathlib import Path
+
+          repo=os.environ['GITHUB_REPOSITORY']
+          branch=os.environ['branch']
+          expected_head=os.environ['actual_head']
+          source_root=os.environ['source_root']
+          source_sha=os.environ['canonical_gitlab_main']
+          marker='data-pd-asset-id="visual.aeat-ricpe-mynd-accountability-20260916.es"'
+          routes={
+            'es/cadena-instrumentalizacion-ric-fondos-incentivos/index.html':'<section class="hero">',
+            'es/ricpe-idoneidad-series-f-g/index.html':'<section class="hero-q">',
+            'es/patron-efectos-favorables-acosta-matos/index.html':'<section class="hero">',
+          }
+          required=(
+            'Alegación de Project Sun Rock · síntesis visual · no hallazgo oficial',
+            'AEAT / RICPE / MYND YAIZA',
+            'la inspección original de Pink comenzó antes',
+            'no declara colusión, favoritismo, represalia, delito ni responsabilidad individual',
+          )
+
+          def gh_json(args, payload=None):
+              cmd=['gh','api']+args
+              if payload is not None:
+                  p=Path('/tmp/pd-aeat-visual/payload.json')
+                  p.write_text(json.dumps(payload,separators=(',',':')))
+                  cmd += ['--input',str(p)]
+              return json.loads(subprocess.check_output(cmd,text=True))
+
+          entries=[]
+          receipt_rows=[]
+          for path,hero in routes.items():
+              req=urllib.request.Request(source_root+path+'?pd_release='+source_sha,
+                  headers={'Cache-Control':'no-cache','User-Agent':'PorDerecho-Mirror-Materializer'})
+              with urllib.request.urlopen(req,timeout=40) as response:
+                  canonical=response.read().decode('utf-8')
+              if canonical.count(marker)!=1:
+                  raise SystemExit('Canonical live visual marker count differs: '+path)
+              pos=canonical.index(marker)
+              start=canonical.rfind('<section',0,pos)
+              end=canonical.find('</section>',pos)
+              if start<0 or end<0:
+                  raise SystemExit('Cannot bound canonical visual section: '+path)
+              end += len('</section>')
+              fragment=canonical[start:end]
+              for text in required:
+                  if text not in fragment:
+                      raise SystemExit('Canonical visual boundary missing in '+path+': '+text)
+              if any(token in fragment for token in ('libfile_','/Por Derecho/Project Sun Rock/Visual Assets/','private-email','<script')):
+                  raise SystemExit('Private/non-semantic material leaked into visual fragment: '+path)
+              current=gh_json([f'repos/{repo}/contents/{path}?ref={branch}'])
+              if current.get('encoding')!='base64':
+                  raise SystemExit('GitHub route cannot be read as exact bytes: '+path)
+              raw=base64.b64decode(current['content']).decode('utf-8')
+              if marker in raw:
+                  raise SystemExit('AEAT visual already present; refusing replay: '+path)
+              if raw.count(hero)!=1:
+                  raise SystemExit('GitHub hero marker differs: '+path)
+              hstart=raw.index(hero)
+              hend=raw.find('</section>',hstart)
+              if hend<0:
+                  raise SystemExit('Cannot locate GitHub hero close: '+path)
+              hend += len('</section>')
+              updated=raw[:hend]+'\n'+fragment+'\n'+raw[hend:]
+              if updated.count(marker)!=1:
+                  raise SystemExit('Updated route marker count differs: '+path)
+              blob=gh_json(['--method','POST',f'repos/{repo}/git/blobs'],{
+                  'content':base64.b64encode(updated.encode()).decode('ascii'),'encoding':'base64'})
+              entries.append({'path':path,'mode':'100644','type':'blob','sha':blob['sha']})
+              receipt_rows.append({
+                  'path':path,
+                  'git_blob_sha':blob['sha'],
+                  'fragment_bytes':len(fragment.encode()),
+                  'fragment_sha256':hashlib.sha256(fragment.encode()).hexdigest(),
+              })
+
+          base_commit=gh_json([f'repos/{repo}/git/commits/{expected_head}'])
+          tree=gh_json(['--method','POST',f'repos/{repo}/git/trees'],{
+              'base_tree':base_commit['tree']['sha'],'tree':entries})
+          commit=gh_json(['--method','POST',f'repos/{repo}/git/commits'],{
+              'message':'Mirror live-verified AEAT / RICPE / MYND semantic visual',
+              'tree':tree['sha'],'parents':[expected_head]})
+          current_ref=gh_json([f'repos/{repo}/git/ref/heads/{branch}'])['object']['sha']
+          if current_ref!=expected_head:
+              raise SystemExit('Mirror branch moved during AEAT visual materialization')
+          gh_json(['--method','PATCH',f'repos/{repo}/git/refs/heads/{branch}'],{
+              'sha':commit['sha'],'force':False})
+          receipt={
+              'status':'EXACT_LIVE_VERIFIED_AEAT_RICPE_MYND_SEMANTIC_VISUAL_MATERIALIZED',
+              'canonical_gitlab_main':source_sha,
+              'canonical_gitlab_pipeline':2856131784,
+              'canonical_live_verify_job':16549983937,
+              'source_root':source_root,
+              'branch':branch,
+              'prior_head':expected_head,
+              'new_head':commit['sha'],
+              'asset_id':'visual.aeat-ricpe-mynd-accountability-20260916.es',
+              'source_raster_copied':False,
+              'files':receipt_rows,
+          }
+          Path('/tmp/pd-release-controller/materialize-aeat-visual.json').write_text(json.dumps(receipt,indent=2)+'\n')
+          print(json.dumps(receipt))
+          PY
+          served_head="$(gh api "repos/$GITHUB_REPOSITORY/git/ref/heads/$branch" --jq '.object.sha')"
+          receipt_head="$(python3 -c 'import json; print(json.load(open("/tmp/pd-release-controller/materialize-aeat-visual.json"))["new_head"])')"
+          test "$served_head" = "$receipt_head" || { echo "Branch head mismatch after AEAT visual materialization" >&2; exit 1; }
       - name: Process authenticated exact-SHA permit or recovery; never merge main
-        if: ${{ !startsWith(github.event.comment.body, '/pd-release materialize-cajasiete ') && !startsWith(github.event.comment.body, '/pd-release materialize-cnmv-cajasiete ') }}
+        if: ${{ !startsWith(github.event.comment.body, '/pd-release materialize-cajasiete ') && !startsWith(github.event.comment.body, '/pd-release materialize-cnmv-cajasiete ') && !startsWith(github.event.comment.body, '/pd-release materialize-aeat-visual ') }}
         env:
           GH_TOKEN: ${{ github.token }}
         run: python3 scripts/pd_release_controller.py
