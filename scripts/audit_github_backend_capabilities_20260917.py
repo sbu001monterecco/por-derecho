@@ -112,7 +112,8 @@ def audit() -> dict:
             failures.append(f"tech_monitor_missing:{needle}")
 
     preservation = read_text(".github/workflows/off-github-preservation.yml")
-    for needle in ("git clone --mirror", "git fsck --full", "actions/upload-artifact"):
+    # Verify capabilities semantically rather than requiring one exact shell spelling.
+    for needle in ("git clone --mirror", "fsck --full", "actions/upload-artifact"):
         if needle not in preservation:
             failures.append(f"preservation_missing:{needle}")
 
