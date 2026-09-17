@@ -1,30 +1,37 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "1.1",
   "control_date": "2026-09-17",
   "authority": "Cabildo de Lanzarote",
   "canonical_repository": {
     "system": "GitLab",
     "project_id": 86151898,
-    "status": "canonical_authority_access_temporarily_blocked"
+    "status": "canonical_authority_access_temporarily_blocked",
+    "reconciliation_rule": "On reinstatement fetch current GitLab main and reconcile additively; do not recreate GitLab-native MR, Duo or pipeline state from memory."
   },
   "continuity_repository": {
     "system": "GitHub",
+    "repository": "sbu001monterecco/por-derecho",
+    "branch": "continuity/cabildo-april-september-2026",
     "role": "bounded_outage_continuity_mirror",
     "reconcile_to_gitlab_main": true
   },
-  "public_repo_privacy_rule": "Native disclosures containing personal data, signatures, addresses or notification metadata are not published. Use privacy-reviewed derivatives only.",
+  "public_repo_privacy_rule": "Native disclosure ZIPs stay in private custody. Public GitHub publication is limited to privacy-reviewed PDF derivatives and viewer/index material; a filename marked redacted is not by itself proof of safe redaction.",
+  "binary_publication_state": "PENDING_APPROVED_GIT_BINARY_TRANSPORT_AND_DOCUMENT_LEVEL_PRIVACY_VERIFICATION",
   "april_2026_native_families": [
     {
       "file": "3671_2022.zip",
       "proceeding": "3671/2022",
       "master_id": "LZ-CAB-019",
       "size_bytes": 356624754,
-      "sha256": null,
-      "sha256_status": "pending_direct_intact_source_calculation",
-      "native_status": "intact_private_onedrive_authority",
-      "excluded_copy": "tablet_copy_structurally_corrupt_or_truncated",
-      "member_count": null,
-      "member_inventory_status": "partial_extracted_set_available_full_native_inventory_pending",
+      "sha256": "2e81c98b09d496a41e1258e3117e33d56faad351506ea9eca9cd22839ee6c8c5",
+      "sha256_status": "verified_from_intact_google_drive_native_2026-09-17",
+      "zip_integrity": "clean",
+      "zip_entries": 94,
+      "file_entries": 93,
+      "pdf_occurrences": 91,
+      "other_members": ["05Notas Informativas. 1.rar", "05Notas Informativas. 2.rar"],
+      "native_status": "intact_private_authority_copy_recovered_from_google_drive_and_cross-consistent_with_known_onedrive_size",
+      "excluded_copy": "earlier_tablet_copy_structurally_corrupt_or_truncated",
       "public_native_uploaded": false
     },
     {
@@ -33,9 +40,10 @@
       "master_id": "LZ-CAB-020",
       "size_bytes": 33557662,
       "sha256": "c1f596511d95fd62ebdc4bf79e27e1a553a1a559177ac3eb06650524e53c76d5",
-      "sha256_status": "verified_against_recovered_april_native",
-      "native_status": "zip_integrity_clean_private_custody",
-      "member_count": 14,
+      "sha256_status": "verified_from_google_drive_native_2026-09-17",
+      "zip_integrity": "clean",
+      "zip_entries": 14,
+      "pdf_occurrences": 14,
       "public_native_uploaded": false
     },
     {
@@ -44,55 +52,83 @@
       "master_id": "LZ-CAB-021",
       "size_bytes": 25698372,
       "sha256": "78d638e6f06f12e25384f7d237abe01ef538df5030a8f7f86cdbe4cefb158176",
-      "sha256_status": "verified_against_recovered_april_native",
-      "native_status": "zip_integrity_clean_private_custody",
-      "member_count": 21,
+      "sha256_status": "verified_from_google_drive_native_2026-09-17",
+      "zip_integrity": "clean",
+      "zip_entries": 21,
+      "pdf_occurrences": 21,
       "public_native_uploaded": false
     },
     {
       "file": "19995_2023.zip",
       "proceeding": "19995/2023",
       "master_id": "LZ-CAB-022",
-      "status": "april_family_identified_deep_digest_pending_in_this_control"
+      "size_bytes": 144162159,
+      "sha256": "25eff1af541194fc22ae89b7da1ee569e1abf499c46609a22fc4579827240a50",
+      "sha256_status": "verified_from_google_drive_native_2026-09-17",
+      "zip_integrity": "clean",
+      "zip_entries": 22,
+      "file_entries": 21,
+      "pdf_occurrences": 21,
+      "public_native_uploaded": false
     },
     {
       "file": "7206_2024.zip",
       "proceeding": "7206/2024",
       "master_id": "LZ-CAB-023",
-      "status": "april_family_identified_deep_digest_pending_in_this_control"
+      "size_bytes": 143812869,
+      "sha256": "edbabb8c5f7e33ae9f4446a927b736d6dec5683f87287131e3acc7e72d6ea7c5",
+      "sha256_status": "verified_from_google_drive_native_2026-09-17",
+      "zip_integrity": "clean",
+      "zip_entries": 31,
+      "file_entries": 30,
+      "pdf_occurrences": 30,
+      "public_native_uploaded": false
     },
     {
       "file": "4887_2025.zip",
       "proceeding": "4887/2025",
       "master_id": "LZ-CAB-024",
-      "status": "april_family_identified_deep_digest_pending_in_this_control"
+      "size_bytes": 76856333,
+      "sha256": "d1b820a382bfbd8366985299ebb496705203380df9b64b5e9fec4f2bd9060f63",
+      "sha256_status": "verified_from_google_drive_native_2026-09-17",
+      "zip_integrity": "clean",
+      "zip_entries": 15,
+      "file_entries": 14,
+      "pdf_occurrences": 14,
+      "public_native_uploaded": false
     }
   ],
-  "deduplication": {
-    "rule": "Repeated copies of the same underlying source are not independent corroboration.",
-    "2984_17070": {
-      "exact_binary_duplicate_confirmed": "HNT corporate identification document",
-      "near_identical_underlying_sources_with_different_pdf_bytes": [
-        "16 December 2022 segregation deed",
-        "28 February 2022 HNT incorporation instrument"
+  "pdf_corpus": {
+    "occurrence_count": 191,
+    "unique_binary_count": 190,
+    "exact_cross_family_duplicate_count": 1,
+    "exact_cross_family_duplicate": {
+      "sha256": "a80a1142e04e608f1c2868f548d13be5cf651cbc359403cdc9b1997aab249913",
+      "occurrences": [
+        "2984_2023/02. HOTEL NEW TREND SL - CIF DEFINITIVO.PDF",
+        "17070_2023/02. HOTELN1.PDF"
       ],
-      "foreign_or_misfiled_member_in_17070": true,
-      "foreign_member_treatment": "not_corrobative_absent_relevant_provenance"
-    }
+      "corroboration_rule": "same binary appearing twice is one evidence object with two occurrences, not independent corroboration"
+    },
+    "privacy_review": "document-by-document visual verification required before public PDF publication",
+    "viewer_rule": "viewer may be marked live only after the exact privacy-reviewed PDF bytes exist at the referenced repository path"
   },
   "transformation_chain": [
     "498/2020_547/2020_21219/2021_baseline",
-    "3671/2022_all_units_request",
-    "2984/2023_HNT_segregation_change_request",
-    "17070/2023_holder_name_modification",
-    "19995/2023_project_material",
-    "7206/2024_activity_works_completion",
-    "4887/2025_301_unit_four_star_configuration"
+    "3671/2022_all_units_request_and_adverse_Yaiza_5944_2022_compatibility_input",
+    "2984/2023_HNT_4star_220unit_660place_request_and_documentary_deficiency_path",
+    "17070/2023_holder_name_modification_to_HNT_MYND_with_existing_category_capacity_path",
+    "19995/2023_4star_252unit_238_in_operation_660_477_request_and_renewal_project",
+    "7206/2024_start_activity_path_expressly_pending_3671_and_2984_and_later_verification",
+    "4887/2025_declared_301unit_299_in_operation_660_598_modification_request"
   ],
   "key_boundaries": {
-    "3671_final_effect": "open_from_presently_accessible_extracted_set_after_adverse_Yaiza_5944_2022_report",
-    "2984_final_effect": "no_later_compliance_or_final_act_present_in_disclosed_native_corpus",
-    "17070_rgt": "2023-T15093_2023-10-18_HNT_MYND_one_star",
+    "3671_notice_after_yaiza": "Cabildo communicated the adverse Yaiza compatibility report and hearing step in March 2023; Hotel New Trend electronically accessed its 27 March 2023 notification. No later final merits resolution has yet been located in the six-ZIP corpus.",
+    "2984_final_effect": "no later compliance submission or final merits act located in the disclosed 2984 native corpus",
+    "17070_rgt": "RGT 2023-T15093 dated 2023-10-18 records HNT / MYND Yaiza / one-star holder-name data; tourism registration does not establish each finca title",
+    "19995_effect": "source records request/declaration and project for 4-star 252-unit configuration; later toma de conocimiento is not treated as final technical verification",
+    "7206_effect": "source expressly records 3671/2022 and 2984/2023 as pending/related and later Cabildo notice states verification visit/resolution remained to be performed",
+    "4887_effect": "301 units / 299 in exploitation / 660 places / 598 in exploitation is treated as applicant-declared/requested configuration unless a later Cabildo verification/final act is sourced",
     "segregation_value_eur": 10213382.82,
     "tourism_record_does_not_establish_each_finca_title": true,
     "fresh_registry_required_for_current_2026_title_claims": true,
