@@ -1,0 +1,59 @@
+name: Outage backend parity
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - continuity/gitlab-block-working-lane-20260917
+    paths:
+      - '.github/copilot-instructions.md'
+      - '.github/workflows/outage-backend-parity.yml'
+      - 'ops/continuity/GITHUB_OPERATIONAL_BACKEND_RECOVERY_20260917.md'
+      - 'ops/continuity/GITHUB_OPERATIONAL_BACKEND_PARITY_20260917.json'
+      - 'ops/continuity/GITLAB_EXACT_RECOVERY_QUEUE_20260917.json'
+      - 'scripts/classify_public_impact_shadow_20260917.py'
+      - 'tests/test_github_outage_backend_20260917.py'
+  pull_request:
+    paths:
+      - '.github/copilot-instructions.md'
+      - '.github/workflows/outage-backend-parity.yml'
+      - 'ops/continuity/GITHUB_OPERATIONAL_BACKEND_RECOVERY_20260917.md'
+      - 'ops/continuity/GITHUB_OPERATIONAL_BACKEND_PARITY_20260917.json'
+      - 'ops/continuity/GITLAB_EXACT_RECOVERY_QUEUE_20260917.json'
+      - 'scripts/classify_public_impact_shadow_20260917.py'
+      - 'tests/test_github_outage_backend_20260917.py'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: outage-backend-parity-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - name: Set up Python
+        uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v6.1.0
+        with:
+          python-version: '3.11'
+      - name: Validate outage backend controls
+        run: python3 -m unittest discover -s tests -p 'test_github_outage_backend_20260917.py' -v
+      - name: Exercise advisory classifier
+        run: >-
+          python3 scripts/classify_public_impact_shadow_20260917.py
+          --paths
+          scripts/classify_public_impact_shadow_20260917.py
+          tests/test_github_outage_backend_20260917.py
+          .github/copilot-instructions.md
+      - name: Parse machine controls
+        run: >-
+          python3 -c "import json,pathlib;
+          [json.loads(pathlib.Path(p).read_text(encoding='utf-8')) for p in [
+          'ops/continuity/GITHUB_OPERATIONAL_BACKEND_PARITY_20260917.json',
+          'ops/continuity/GITLAB_EXACT_RECOVERY_QUEUE_20260917.json']];
+          print('machine controls parse: PASS')"
