@@ -1,11 +1,13 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "1.1",
   "control_date": "2026-09-17",
   "canonical_target": "GitLab project 86151898 main after reinstatement and reconciliation",
   "github_role": "bounded_outage_continuity",
   "native_zip_publication": "PRIVATE_ONLY",
   "pdf_viewer_objective": "Publish every appropriate document as a complete searchable privacy-reviewed PDF with a working bilingual viewer.",
-  "current_binary_transport": "BINARY_PUBLICATION_PENDING_APPROVED_GIT_TRANSPORT",
+  "current_binary_transport": "BINARY_PUBLICATION_PENDING_APPROVED_AUTHENTICATED_GIT_TRANSPORT",
+  "source_drive_visibility": "PRIVATE_NOT_ANONYMOUSLY_INGESTIBLE",
+  "source_drive_acl_rule": "Do not broaden Google Drive sharing merely to enable GitHub ingestion; preserve private custody and use authenticated transfer after review.",
   "viewer_activation_rule": "Do not mark a viewer LIVE until the exact reviewed PDF bytes exist in the repository path and render verification has passed.",
   "privacy_rule": "Filename labels such as redacted/censurado are not sufficient; document-level visual verification is mandatory.",
   "corpus": {
