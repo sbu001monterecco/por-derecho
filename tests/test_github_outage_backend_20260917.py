@@ -3,6 +3,7 @@
 import importlib.util
 import json
 import pathlib
+import sys
 import unittest
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
@@ -16,6 +17,7 @@ REGISTRY = ROOT / "assets" / "data" / "matter-identity-registry-v1.json"
 spec = importlib.util.spec_from_file_location("pd_public_impact_shadow", CLASSIFIER_PATH)
 mod = importlib.util.module_from_spec(spec)
 assert spec.loader is not None
+sys.modules[spec.name] = mod
 spec.loader.exec_module(mod)
 
 
