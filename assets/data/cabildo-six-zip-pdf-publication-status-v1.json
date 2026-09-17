@@ -1,0 +1,30 @@
+{
+  "schema_version": "1.0",
+  "control_date": "2026-09-17",
+  "canonical_target": "GitLab project 86151898 main after reinstatement and reconciliation",
+  "github_role": "bounded_outage_continuity",
+  "native_zip_publication": "PRIVATE_ONLY",
+  "pdf_viewer_objective": "Publish every appropriate document as a complete searchable privacy-reviewed PDF with a working bilingual viewer.",
+  "current_binary_transport": "BINARY_PUBLICATION_PENDING_APPROVED_GIT_TRANSPORT",
+  "viewer_activation_rule": "Do not mark a viewer LIVE until the exact reviewed PDF bytes exist in the repository path and render verification has passed.",
+  "privacy_rule": "Filename labels such as redacted/censurado are not sufficient; document-level visual verification is mandatory.",
+  "corpus": {
+    "pdf_occurrences": 191,
+    "unique_pdf_binaries": 190,
+    "exact_cross_family_duplicate_binaries": 1,
+    "exact_duplicate_sha256": "a80a1142e04e608f1c2868f548d13be5cf651cbc359403cdc9b1997aab249913"
+  },
+  "families": [
+    {"proceeding":"3671/2022","master_id":"LZ-CAB-019","pdf_occurrences":91,"native_sha256":"2e81c98b09d496a41e1258e3117e33d56faad351506ea9eca9cd22839ee6c8c5","publication_status":"DOCUMENT_LEVEL_PRIVACY_REVIEW_AND_BINARY_PUBLICATION_PENDING"},
+    {"proceeding":"2984/2023","master_id":"LZ-CAB-020","pdf_occurrences":14,"native_sha256":"c1f596511d95fd62ebdc4bf79e27e1a553a1a559177ac3eb06650524e53c76d5","publication_status":"DOCUMENT_LEVEL_PRIVACY_REVIEW_AND_BINARY_PUBLICATION_PENDING"},
+    {"proceeding":"17070/2023","master_id":"LZ-CAB-021","pdf_occurrences":21,"native_sha256":"78d638e6f06f12e25384f7d237abe01ef538df5030a8f7f86cdbe4cefb158176","publication_status":"DOCUMENT_LEVEL_PRIVACY_REVIEW_AND_BINARY_PUBLICATION_PENDING"},
+    {"proceeding":"19995/2023","master_id":"LZ-CAB-022","pdf_occurrences":21,"native_sha256":"25eff1af541194fc22ae89b7da1ee569e1abf499c46609a22fc4579827240a50","publication_status":"DOCUMENT_LEVEL_PRIVACY_REVIEW_AND_BINARY_PUBLICATION_PENDING"},
+    {"proceeding":"7206/2024","master_id":"LZ-CAB-023","pdf_occurrences":30,"native_sha256":"edbabb8c5f7e33ae9f4446a927b736d6dec5683f87287131e3acc7e72d6ea7c5","publication_status":"DOCUMENT_LEVEL_PRIVACY_REVIEW_AND_BINARY_PUBLICATION_PENDING"},
+    {"proceeding":"4887/2025","master_id":"LZ-CAB-024","pdf_occurrences":14,"native_sha256":"d1b820a382bfbd8366985299ebb496705203380df9b64b5e9fec4f2bd9060f63","publication_status":"DOCUMENT_LEVEL_PRIVACY_REVIEW_AND_BINARY_PUBLICATION_PENDING"}
+  ],
+  "gitlab_reconciliation": {
+    "required": true,
+    "rule": "Fetch then-current GitLab main, preserve later canonical work, reconcile this GitHub continuity set additively, rerun validators, and verify exact public bytes after canonical deployment.",
+    "do_not_recreate_from_memory": ["GitLab merge requests","GitLab Duo state","GitLab pipelines","GitLab approvals","GitLab deployment state"]
+  }
+}
