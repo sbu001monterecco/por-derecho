@@ -1,0 +1,128 @@
+name: Portable operational backend bundle
+
+on:
+  push:
+    branches:
+      - continuity/portable-operational-backend-20260917
+    paths:
+      - '.github/workflows/portable-operational-backend-20260917.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: portable-operational-backend-20260917
+  cancel-in-progress: true
+
+jobs:
+  bundle:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Check out exact repository state
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          fetch-depth: 1
+
+      - name: Build public-safe operational backend package
+        shell: bash
+        run: |
+          set -euo pipefail
+          ROOT="$RUNNER_TEMP/pd-operational-backend"
+          OUT="$RUNNER_TEMP/pd-operational-backend-upload"
+          mkdir -p "$ROOT" "$OUT"
+
+          python3 - <<'PY'
+          from pathlib import Path
+          import subprocess
+
+          prefixes = (
+              '.github/evidence-intelligence/',
+              '.github/governance/',
+              '.github/workflows/',
+              'assets/data/',
+              'data/',
+              'ops/',
+              'scripts/',
+              'tests/',
+              'research/por-derecho/second-pair-of-eyes/',
+              'publication-manifests/',
+              'docs/deletion-audits/',
+          )
+          exact = {
+              'AGENTS.md',
+              'CHATGPT_START_HERE.md',
+              'CURRENT_UNITARY_STATE.md',
+              '.github/CODEOWNERS',
+              '.github/copilot-instructions.md',
+              'archive/PROCEEDINGS_MASTER_REGISTER.csv',
+          }
+          suffixes = {
+              '.md', '.json', '.csv', '.py', '.js', '.mjs', '.yml', '.yaml',
+              '.txt', '.xml', '.html', '.toml', '.ini', '.cfg', '.sh'
+          }
+          files = subprocess.check_output(['git','ls-files'], text=True).splitlines()
+          selected = []
+          for f in files:
+              p = Path(f)
+              if f in exact or any(f.startswith(prefix) for prefix in prefixes):
+                  if p.suffix.lower() in suffixes or f in exact:
+                      selected.append(f)
+          selected = sorted(set(selected))
+          Path('/tmp/pd-backend-files.txt').write_text('\n'.join(selected) + '\n', encoding='utf-8')
+          print(f'selected_files={len(selected)}')
+          PY
+
+          cp /tmp/pd-backend-files.txt "$ROOT/FILE-LIST.txt"
+          printf '%s\n' "$GITHUB_SHA" > "$ROOT/GITHUB-SHA.txt"
+          git log -1 --format=fuller > "$ROOT/COMMIT.txt"
+          git status --porcelain=v1 > "$ROOT/GIT-STATUS.txt"
+
+          tar -czf "$OUT/por-derecho-operational-backend-${GITHUB_SHA}.tar.gz" \
+            -T /tmp/pd-backend-files.txt
+
+          (
+            cd "$OUT"
+            sha256sum "por-derecho-operational-backend-${GITHUB_SHA}.tar.gz" \
+              > "por-derecho-operational-backend-${GITHUB_SHA}.tar.gz.sha256"
+          )
+
+          cp "$ROOT/FILE-LIST.txt" "$OUT/FILE-LIST.txt"
+          cp "$ROOT/GITHUB-SHA.txt" "$OUT/GITHUB-SHA.txt"
+          cp "$ROOT/COMMIT.txt" "$OUT/COMMIT.txt"
+          cp "$ROOT/GIT-STATUS.txt" "$OUT/GIT-STATUS.txt"
+
+          cat > "$OUT/README.txt" <<EOF
+          POR DERECHO / PROJECT SUN ROCK — PORTABLE OPERATIONAL BACKEND
+          ============================================================
+          Source repository: sbu001monterecco/por-derecho
+          Source SHA: ${GITHUB_SHA}
+          Purpose: cross-provider disaster-recovery copy of public-safe operational backend controls.
+
+          INCLUDED CLASSES
+          ----------------
+          Canonical machine registries and data controls; proceedings master register;
+          evidence-intelligence schemas/scripts/records; governance and agent instructions;
+          GitHub Actions workflows; publication/release/continuity controls; validators/tests;
+          Second Pair of Eyes research controls; publication manifests; deletion-audit controls.
+
+          EXCLUDED BY DESIGN
+          ------------------
+          Native/private evidence, credentials, provider IDs/private locators, privileged material,
+          large media/PDF evidence binaries, and GitHub/GitLab platform-native database objects.
+          This package is an operational-backend recovery layer, not a complete evidence corpus.
+          EOF
+
+          du -sh "$OUT"/*
+          test -s "$OUT/por-derecho-operational-backend-${GITHUB_SHA}.tar.gz"
+          test -s "$OUT/por-derecho-operational-backend-${GITHUB_SHA}.tar.gz.sha256"
+
+      - name: Upload portable backend artifact
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: por-derecho-portable-operational-backend-${{ github.run_id }}
+          path: ${{ runner.temp }}/pd-operational-backend-upload/
+          if-no-files-found: error
+          retention-days: 90
+          compression-level: 0
