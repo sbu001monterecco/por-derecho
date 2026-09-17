@@ -2,6 +2,17 @@ name: Outage backend parity
 
 on:
   workflow_dispatch:
+  push:
+    branches:
+      - continuity/gitlab-block-working-lane-20260917
+    paths:
+      - '.github/copilot-instructions.md'
+      - '.github/workflows/outage-backend-parity.yml'
+      - 'ops/continuity/GITHUB_OPERATIONAL_BACKEND_RECOVERY_20260917.md'
+      - 'ops/continuity/GITHUB_OPERATIONAL_BACKEND_PARITY_20260917.json'
+      - 'ops/continuity/GITLAB_EXACT_RECOVERY_QUEUE_20260917.json'
+      - 'scripts/classify_public_impact_shadow_20260917.py'
+      - 'tests/test_github_outage_backend_20260917.py'
   pull_request:
     paths:
       - '.github/copilot-instructions.md'
