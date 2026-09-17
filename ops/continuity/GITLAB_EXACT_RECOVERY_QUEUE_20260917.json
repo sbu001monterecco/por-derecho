@@ -1,0 +1,68 @@
+{
+  "schema": "por-derecho.gitlab-exact-recovery-queue.v1",
+  "control_id": "PD-GITLAB-EXACT-RECOVERY-20260917-01",
+  "control_date": "2026-09-17",
+  "status": "OPEN_BLOCKED_BY_GITLAB_AUTHENTICATION",
+  "last_verified_gitlab_main_sha": "7d086d098676eecc2c1647ed09b348d8dc0bdc69",
+  "items": [
+    {
+      "id": "GL-EXACT-001",
+      "path": ".gitlab/duo/agent-config.yml",
+      "state": "EXACT_BYTES_PENDING",
+      "known": "Present on last verified GitLab main; Duo review accepted final configuration; exact bytes not recovered.",
+      "recovery": "Fetch exact file from restored GitLab main and compare before any GitHub archival copy."
+    },
+    {
+      "id": "GL-EXACT-002",
+      "path": ".gitlab/duo/mr-review-instructions.yaml",
+      "state": "EXACT_BYTES_PENDING",
+      "known": "Present on last verified GitLab main and reviewed by GitLab Duo; exact bytes not recovered.",
+      "recovery": "Fetch exact file from restored GitLab main and preserve GitLab-specific semantics separately from GitHub agent instructions."
+    },
+    {
+      "id": "GL-EXACT-003",
+      "path": "tests/test_release_bundle_20260914.py",
+      "state": "EXACT_BYTES_PENDING",
+      "known": "Duo Developer ran 14/14 tests successfully on last verified GitLab main.",
+      "recovery": "Fetch exact source and execute unchanged before mapping any GitHub substitute to it."
+    },
+    {
+      "id": "GL-EXACT-004",
+      "object": "GitLab MR !529 public-impact shadow classifier",
+      "state": "BRANCH_EXACT_DELTA_PENDING",
+      "last_known_passing_commit": "738ab3ddb7d4c7ea91da705cf19045378b8d235f",
+      "known": "Pipeline #2857394442 passed immediately before the block.",
+      "recovery": "Fetch complete MR diff, discussions and exact head; compare with GitHub functional classifier; never overwrite authenticated GitLab work with the substitute."
+    },
+    {
+      "id": "GL-EXACT-005",
+      "object": "GitLab MR !528 institutional finance reusable overlay backend",
+      "state": "RESIDUAL_DELTA_PENDING",
+      "known": "Public institutional roadmap was mirrored to GitHub, but GitLab retained additional reusable template/test logic under Duo review.",
+      "recovery": "Fetch complete MR diff/head/discussions and isolate material not already mirrored."
+    },
+    {
+      "id": "GL-NATIVE-001",
+      "object": "GitLab native operational metadata",
+      "state": "PLATFORM_EXPORT_REQUIRED",
+      "components": [
+        "merge requests and discussions",
+        "approvals",
+        "issues/work items",
+        "Duo reviews and Developer sessions",
+        "pipelines/jobs/logs/artifacts",
+        "CI variables and protected settings",
+        "runner/environment configuration",
+        "project/group settings",
+        "Orbit/index state where available"
+      ],
+      "recovery": "Export or snapshot through authenticated GitLab APIs/UI after reinstatement; Git history cannot reconstruct these objects."
+    }
+  ],
+  "rules": [
+    "No queue item may be marked recovered from chat memory alone.",
+    "Exact GitLab bytes and platform metadata outrank functional substitutes once authenticated.",
+    "Outage-period GitHub work must be reconciled additively; do not reset or force-push it away.",
+    "Every imported GitLab item must record source SHA, object ID/path, retrieval date and parity result."
+  ]
+}
