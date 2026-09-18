@@ -1405,22 +1405,22 @@
       "profile_id": "FISCALIA-RESPONSE-dp1901-2026",
       "episode_id": "dp1901-2026",
       "master_id": "GC-CRI-008",
-      "date": "12 julio 2026",
+      "date": "12 julio–14 septiembre 2026",
       "title_en": "DP 1901/2026 — prosecution service inside court proceedings",
       "title_es": "DP 1901/2026 — Fiscalía dentro del procedimiento judicial",
-      "source_authored_known_summary_en": "A 12 July 2026 court order, NIG 3501643220260016977, transferred the matter to the prosecution service for five days to report on admission, in connection with DIP 2/2026.",
-      "source_authored_known_summary_es": "Una providencia judicial de 12 julio 2026, NIG 3501643220260016977, dio traslado al Ministerio Fiscal por cinco días para informar sobre la admisión, en conexión con DIP 2/2026.",
+      "source_authored_known_summary_en": "The 12 July 2026 order, NIG 3501643220260016977, transferred the admission question to the prosecution service for five days in connection with DIP 2/2026. The 14 September order additionally records a 29 July prosecution report seeking dismissal and orders final dismissal/archive.",
+      "source_authored_known_summary_es": "La providencia de 12 julio 2026, NIG 3501643220260016977, dio traslado al Ministerio Fiscal por cinco días para informar sobre admisión en conexión con DIP 2/2026. El Auto de 14 septiembre registra además un informe Fiscal de 29 julio interesando el archivo y acuerda sobreseimiento libre y archivo.",
       "source_authored_request_summary_en": "Prosecution report required by the court.",
       "source_authored_request_summary_es": "Informe del Ministerio Fiscal requerido por el tribunal.",
-      "institutional_response_en": "The signed report has not yet been incorporated into the reviewed record.",
-      "institutional_response_es": "El informe firmado no está aún incorporado al registro revisado.",
-      "open_question_en": "Authoring prosecutor, materials available, position taken and subsequent judicial decision.",
-      "open_question_es": "Fiscal autor, material disponible, posición adoptada y resolución judicial posterior.",
-      "later_event_en": "No outcome is published until the report and subsequent court decision are incorporated.",
-      "later_event_es": "No se publica un resultado hasta incorporar el informe y la resolución posterior.",
-      "contrary_or_limiting_record_en": "Not yet assessable.",
-      "contrary_or_limiting_record_es": "No evaluable aún.",
-      "causation_status": "OPEN_EVIDENTIAL_GAP",
+      "institutional_response_en": "A concrete dated prosecutorial intervention now exists: a 29 July report seeking dismissal. The signed report itself has not yet been incorporated into the reviewed record.",
+      "institutional_response_es": "Existe una intervención fiscal concreta y fechada: informe de 29 julio interesando archivo. El informe firmado no está aún incorporado al registro revisado.",
+      "open_question_en": "Authoring prosecutor, assignment, source corpus, reasoning, any review/instruction, transmission index and Control 21 / Control 24 / DIP 2 routing; legal notice of the order also remains open.",
+      "open_question_es": "Fiscal autor, reparto/asignación, corpus recibido, razonamiento, eventual visado/instrucción, índice de remisión y trazabilidad Control 21 / Control 24 / DIP 2; también notificación legal del Auto.",
+      "later_event_en": "Obtain the 29 July report, certified file/index and Control 21/24 allocation trail; integrate the supervening event into the E.G. 745 reconsideration before filing.",
+      "later_event_es": "Obtener informe de 29 julio, expediente/índice certificado y reparto de Control 21/24; incorporar el hecho sobrevenido a la reposición E.G. 745 antes de presentar.",
+      "contrary_or_limiting_record_en": "The prosecutorial act is documented through the court order's reference, but the dismissal request does not by itself prove capture, prevarication, coordination, bad faith or causation.",
+      "contrary_or_limiting_record_es": "El acto Fiscal está documentado por la referencia del Auto, pero la petición de archivo no prueba por sí sola captura, prevaricación, coordinación, mala fe o causalidad.",
+      "causation_status": "DATED_FISCAL_ACT_DOCUMENTED_CONTENT_AUTHOR_OPEN",
       "institutional_axes": {
         "transmission_status": "ROUTING_DOCUMENTED",
         "registration_status": "NOT_LOCATED",
@@ -1441,8 +1441,8 @@
         "transmission_status": {
           "status": "ROUTING_DOCUMENTED",
           "basis_kind": "ANALYTICAL_GRADE_FROM_SOURCE_AUTHORED_EPISODE_FIELD",
-          "basis_en": "A 12 July 2026 court order, NIG 3501643220260016977, transferred the matter to the prosecution service for five days to report on admission, in connection with DIP 2/2026.",
-          "basis_es": "Una providencia judicial de 12 julio 2026, NIG 3501643220260016977, dio traslado al Ministerio Fiscal por cinco días para informar sobre la admisión, en conexión con DIP 2/2026.",
+          "basis_en": "The 12 July 2026 order, NIG 3501643220260016977, transferred the admission question to the prosecution service for five days in connection with DIP 2/2026. The 14 September order additionally records a 29 July prosecution report seeking dismissal and orders final dismissal/archive.",
+          "basis_es": "La providencia de 12 julio 2026, NIG 3501643220260016977, dio traslado al Ministerio Fiscal por cinco días para informar sobre admisión en conexión con DIP 2/2026. El Auto de 14 septiembre registra además un informe Fiscal de 29 julio interesando el archivo y acuerda sobreseimiento libre y archivo.",
           "limitation_en": "Transmission does not by itself prove destination receipt, completeness, incorporation or examination.",
           "limitation_es": "La transmisión no acredita por sí sola recepción en destino, integridad, incorporación ni examen.",
           "source": {
@@ -1456,8 +1456,8 @@
         "material_received_status": {
           "status": "NOT_LOCATED",
           "basis_kind": "CONTROLLED_CORPUS_GAP_STATEMENT",
-          "basis_en": "The reviewed episode does not establish material received at a stronger grade. Open source-controlled question: Authoring prosecutor, materials available, position taken and subsequent judicial decision.",
-          "basis_es": "El episodio revisado no acredita material recibido con un grado más fuerte. Pregunta abierta controlada por fuente: Fiscal autor, material disponible, posición adoptada y resolución judicial posterior.",
+          "basis_en": "The reviewed episode does not establish material received at a stronger grade. Open source-controlled question: Authoring prosecutor, assignment, source corpus, reasoning, any review/instruction, transmission index and Control 21 / Control 24 / DIP 2 routing; legal notice of the order also remains open.",
+          "basis_es": "El episodio revisado no acredita material recibido con un grado más fuerte. Pregunta abierta controlada por fuente: Fiscal autor, reparto/asignación, corpus recibido, razonamiento, eventual visado/instrucción, índice de remisión y trazabilidad Control 21 / Control 24 / DIP 2; también notificación legal del Auto.",
           "limitation_en": "A received-material grade does not establish a complete inventory, incorporation, examination or decision use.",
           "limitation_es": "El grado de material recibido no acredita inventario completo, incorporación, examen ni uso decisorio.",
           "source": {
@@ -1471,8 +1471,8 @@
         "referral_status": {
           "status": "ROUTING_DOCUMENTED",
           "basis_kind": "ANALYTICAL_GRADE_FROM_SOURCE_AUTHORED_EPISODE_FIELD",
-          "basis_en": "A 12 July 2026 court order, NIG 3501643220260016977, transferred the matter to the prosecution service for five days to report on admission, in connection with DIP 2/2026.",
-          "basis_es": "Una providencia judicial de 12 julio 2026, NIG 3501643220260016977, dio traslado al Ministerio Fiscal por cinco días para informar sobre la admisión, en conexión con DIP 2/2026.",
+          "basis_en": "The 12 July 2026 order, NIG 3501643220260016977, transferred the admission question to the prosecution service for five days in connection with DIP 2/2026. The 14 September order additionally records a 29 July prosecution report seeking dismissal and orders final dismissal/archive.",
+          "basis_es": "La providencia de 12 julio 2026, NIG 3501643220260016977, dio traslado al Ministerio Fiscal por cinco días para informar sobre admisión en conexión con DIP 2/2026. El Auto de 14 septiembre registra además un informe Fiscal de 29 julio interesando el archivo y acuerda sobreseimiento libre y archivo.",
           "limitation_en": "Referral does not by itself prove destination receipt, acceptance of competence, incorporation or merits review.",
           "limitation_es": "La remisión no acredita por sí sola recepción en destino, aceptación de competencia, incorporación ni examen de fondo.",
           "source": {
@@ -1486,8 +1486,8 @@
         "registration_status": {
           "status": "NOT_LOCATED",
           "basis_kind": "CONTROLLED_CORPUS_GAP_STATEMENT",
-          "basis_en": "The reviewed episode does not establish registration at a stronger grade. Open source-controlled question: Authoring prosecutor, materials available, position taken and subsequent judicial decision.",
-          "basis_es": "El episodio revisado no acredita registro con un grado más fuerte. Pregunta abierta controlada por fuente: Fiscal autor, material disponible, posición adoptada y resolución judicial posterior.",
+          "basis_en": "The reviewed episode does not establish registration at a stronger grade. Open source-controlled question: Authoring prosecutor, assignment, source corpus, reasoning, any review/instruction, transmission index and Control 21 / Control 24 / DIP 2 routing; legal notice of the order also remains open.",
+          "basis_es": "El episodio revisado no acredita registro con un grado más fuerte. Pregunta abierta controlada por fuente: Fiscal autor, reparto/asignación, corpus recibido, razonamiento, eventual visado/instrucción, índice de remisión y trazabilidad Control 21 / Control 24 / DIP 2; también notificación legal del Auto.",
           "limitation_en": "Registration does not by itself prove file incorporation, examination, reliance or personal knowledge.",
           "limitation_es": "El registro no acredita por sí solo incorporación, examen, uso ni conocimiento personal.",
           "source": {
@@ -1501,8 +1501,8 @@
         "file_incorporation_status": {
           "status": "NOT_LOCATED",
           "basis_kind": "CONTROLLED_CORPUS_GAP_STATEMENT",
-          "basis_en": "The reviewed episode does not establish file incorporation at a stronger grade. Open source-controlled question: Authoring prosecutor, materials available, position taken and subsequent judicial decision.",
-          "basis_es": "El episodio revisado no acredita incorporación al expediente con un grado más fuerte. Pregunta abierta controlada por fuente: Fiscal autor, material disponible, posición adoptada y resolución judicial posterior.",
+          "basis_en": "The reviewed episode does not establish file incorporation at a stronger grade. Open source-controlled question: Authoring prosecutor, assignment, source corpus, reasoning, any review/instruction, transmission index and Control 21 / Control 24 / DIP 2 routing; legal notice of the order also remains open.",
+          "basis_es": "El episodio revisado no acredita incorporación al expediente con un grado más fuerte. Pregunta abierta controlada por fuente: Fiscal autor, reparto/asignación, corpus recibido, razonamiento, eventual visado/instrucción, índice de remisión y trazabilidad Control 21 / Control 24 / DIP 2; también notificación legal del Auto.",
           "limitation_en": "File incorporation does not by itself prove substantive examination, reliance or legal correctness.",
           "limitation_es": "La incorporación al expediente no acredita por sí sola examen sustantivo, uso ni corrección jurídica.",
           "source": {
@@ -1516,8 +1516,8 @@
         "recipient_attribution_status": {
           "status": "NOT_LOCATED",
           "basis_kind": "CONTROLLED_CORPUS_GAP_STATEMENT",
-          "basis_en": "The reviewed episode does not establish recipient attribution at a stronger grade. Open source-controlled question: Authoring prosecutor, materials available, position taken and subsequent judicial decision.",
-          "basis_es": "El episodio revisado no acredita atribución del destinatario con un grado más fuerte. Pregunta abierta controlada por fuente: Fiscal autor, material disponible, posición adoptada y resolución judicial posterior.",
+          "basis_en": "The reviewed episode does not establish recipient attribution at a stronger grade. Open source-controlled question: Authoring prosecutor, assignment, source corpus, reasoning, any review/instruction, transmission index and Control 21 / Control 24 / DIP 2 routing; legal notice of the order also remains open.",
+          "basis_es": "El episodio revisado no acredita atribución del destinatario con un grado más fuerte. Pregunta abierta controlada por fuente: Fiscal autor, reparto/asignación, corpus recibido, razonamiento, eventual visado/instrucción, índice de remisión y trazabilidad Control 21 / Control 24 / DIP 2; también notificación legal del Auto.",
           "limitation_en": "Institutional or signatory attribution does not prove personal receipt, reading, understanding or knowledge of every item.",
           "limitation_es": "La atribución institucional o de firma no prueba recepción, lectura, comprensión o conocimiento personal de cada elemento.",
           "source": {
@@ -1531,8 +1531,8 @@
         "substantive_examination_status": {
           "status": "NOT_LOCATED",
           "basis_kind": "CONTROLLED_CORPUS_GAP_STATEMENT",
-          "basis_en": "The reviewed episode does not establish substantive examination at a stronger grade. Open source-controlled question: Authoring prosecutor, materials available, position taken and subsequent judicial decision.",
-          "basis_es": "El episodio revisado no acredita examen sustantivo con un grado más fuerte. Pregunta abierta controlada por fuente: Fiscal autor, material disponible, posición adoptada y resolución judicial posterior.",
+          "basis_en": "The reviewed episode does not establish substantive examination at a stronger grade. Open source-controlled question: Authoring prosecutor, assignment, source corpus, reasoning, any review/instruction, transmission index and Control 21 / Control 24 / DIP 2 routing; legal notice of the order also remains open.",
+          "basis_es": "El episodio revisado no acredita examen sustantivo con un grado más fuerte. Pregunta abierta controlada por fuente: Fiscal autor, reparto/asignación, corpus recibido, razonamiento, eventual visado/instrucción, índice de remisión y trazabilidad Control 21 / Control 24 / DIP 2; también notificación legal del Auto.",
           "limitation_en": "A bounded examination grade does not prove that every item was examined, correctly assessed or known by a named person.",
           "limitation_es": "Un grado limitado de examen no acredita que cada elemento fuera examinado, correctamente valorado o conocido por una persona identificada.",
           "source": {
@@ -1546,8 +1546,8 @@
         "decision_use_status": {
           "status": "NOT_LOCATED",
           "basis_kind": "CONTROLLED_CORPUS_GAP_STATEMENT",
-          "basis_en": "The reviewed episode does not establish decision use at a stronger grade. Open source-controlled question: Authoring prosecutor, materials available, position taken and subsequent judicial decision.",
-          "basis_es": "El episodio revisado no acredita uso en decisión con un grado más fuerte. Pregunta abierta controlada por fuente: Fiscal autor, material disponible, posición adoptada y resolución judicial posterior.",
+          "basis_en": "The reviewed episode does not establish decision use at a stronger grade. Open source-controlled question: Authoring prosecutor, assignment, source corpus, reasoning, any review/instruction, transmission index and Control 21 / Control 24 / DIP 2 routing; legal notice of the order also remains open.",
+          "basis_es": "El episodio revisado no acredita uso en decisión con un grado más fuerte. Pregunta abierta controlada por fuente: Fiscal autor, reparto/asignación, corpus recibido, razonamiento, eventual visado/instrucción, índice de remisión y trazabilidad Control 21 / Control 24 / DIP 2; también notificación legal del Auto.",
           "limitation_en": "A documented decision does not by itself prove which materials were relied on, legal correctness, intent or wrongdoing.",
           "limitation_es": "Una decisión documentada no acredita por sí sola qué materiales se utilizaron, corrección jurídica, intención ni ilicitud.",
           "source": {
@@ -1561,8 +1561,8 @@
         "cross_file_acknowledgement_status": {
           "status": "DOCUMENTED",
           "basis_kind": "ANALYTICAL_GRADE_FROM_SOURCE_AUTHORED_EPISODE_FIELD",
-          "basis_en": "A 12 July 2026 court order, NIG 3501643220260016977, transferred the matter to the prosecution service for five days to report on admission, in connection with DIP 2/2026.",
-          "basis_es": "Una providencia judicial de 12 julio 2026, NIG 3501643220260016977, dio traslado al Ministerio Fiscal por cinco días para informar sobre la admisión, en conexión con DIP 2/2026.",
+          "basis_en": "The 12 July 2026 order, NIG 3501643220260016977, transferred the admission question to the prosecution service for five days in connection with DIP 2/2026. The 14 September order additionally records a 29 July prosecution report seeking dismissal and orders final dismissal/archive.",
+          "basis_es": "La providencia de 12 julio 2026, NIG 3501643220260016977, dio traslado al Ministerio Fiscal por cinco días para informar sobre admisión en conexión con DIP 2/2026. El Auto de 14 septiembre registra además un informe Fiscal de 29 julio interesando el archivo y acuerda sobreseimiento libre y archivo.",
           "limitation_en": "A cross-file reference is not a unitary acknowledgement, complete comparison or procedural joinder.",
           "limitation_es": "Una referencia entre expedientes no equivale a reconocimiento unitario, comparación completa ni acumulación procesal.",
           "source": {
@@ -1588,10 +1588,10 @@
       "source_authored_request_summary_es": "Reconstrucción de recepción, reparto, examen, informe, aprobación, firma, incorporación, exclusión, remisión y archivo; preservación y producción del expediente.",
       "institutional_response_en": "Global closure with reconsideration and contentious-review routes. No individualized disposition of the 12 requests or inventory of the six files examined has been located.",
       "institutional_response_es": "Archivo global con rutas de reposición y revisión contenciosa. No se ha localizado disposición individual de las 12 solicitudes ni inventario de los seis expedientes examinados.",
-      "open_question_en": "Complete file/index, 2/3 August traces, functional decision-makers, corpus, referrals, preservation and native verifiable act.",
-      "open_question_es": "Expediente/índice completo, trazas 2/3 agosto, decisores funcionales, corpus, remisiones, preservación y documento nativo verificable.",
-      "later_event_en": "Reconsideration prepared but not verified as filed; route and effective date under counsel control; separate access/preservation request.",
-      "later_event_es": "Reposición preparada pero no verificada como presentada; elección de vía y fecha efectiva bajo control letrado; petición separada de acceso/preservación.",
+      "open_question_en": "Complete file/index, 2/3 August traces, functional decision-makers, corpus, referrals, preservation and native verifiable act.; integrate the DP 1901 supervening event and require author/corpus/assignment for the 29 July report.",
+      "open_question_es": "Expediente/índice completo, trazas 2/3 agosto, decisores funcionales, corpus, remisiones, preservación y documento nativo verificable.; integrar el hecho sobrevenido DP 1901 y exigir autor/corpus/reparto del informe de 29 julio.",
+      "later_event_en": "The 12 September reconsideration version remains unfiled and requires a successor integrating the 14 September DP 1901 order and 29 July prosecution report before filing; separate access/preservation remains pending.",
+      "later_event_es": "La versión de reposición de 12 septiembre sigue no presentada y debe tener sucesor que incorpore el Auto DP 1901 de 14 septiembre y el informe Fiscal de 29 julio antes de presentar; petición separada de acceso/preservación continúa.",
       "contrary_or_limiting_record_en": "The source–Decree discrepancy and production omissions are review grounds, not proof of obstruction, prevarication or criminality.",
       "contrary_or_limiting_record_es": "La discrepancia fuente–Decreto y las omisiones de producción son motivos de revisión, no prueba de obstrucción, prevaricación o criminalidad.",
       "causation_status": "REVIEW_AND_PRODUCTION_GAPS",
@@ -1645,8 +1645,8 @@
         "referral_status": {
           "status": "NOT_LOCATED",
           "basis_kind": "CONTROLLED_CORPUS_GAP_STATEMENT",
-          "basis_en": "The reviewed episode does not establish referral at a stronger grade. Open source-controlled question: Complete file/index, 2/3 August traces, functional decision-makers, corpus, referrals, preservation and native verifiable act.",
-          "basis_es": "El episodio revisado no acredita remisión con un grado más fuerte. Pregunta abierta controlada por fuente: Expediente/índice completo, trazas 2/3 agosto, decisores funcionales, corpus, remisiones, preservación y documento nativo verificable.",
+          "basis_en": "The reviewed episode does not establish referral at a stronger grade. Open source-controlled question: Complete file/index, 2/3 August traces, functional decision-makers, corpus, referrals, preservation and native verifiable act.; integrate the DP 1901 supervening event and require author/corpus/assignment for the 29 July report.",
+          "basis_es": "El episodio revisado no acredita remisión con un grado más fuerte. Pregunta abierta controlada por fuente: Expediente/índice completo, trazas 2/3 agosto, decisores funcionales, corpus, remisiones, preservación y documento nativo verificable.; integrar el hecho sobrevenido DP 1901 y exigir autor/corpus/reparto del informe de 29 julio.",
           "limitation_en": "Referral does not by itself prove destination receipt, acceptance of competence, incorporation or merits review.",
           "limitation_es": "La remisión no acredita por sí sola recepción en destino, aceptación de competencia, incorporación ni examen de fondo.",
           "source": {
@@ -1690,8 +1690,8 @@
         "recipient_attribution_status": {
           "status": "NOT_LOCATED",
           "basis_kind": "CONTROLLED_CORPUS_GAP_STATEMENT",
-          "basis_en": "The reviewed episode does not establish recipient attribution at a stronger grade. Open source-controlled question: Complete file/index, 2/3 August traces, functional decision-makers, corpus, referrals, preservation and native verifiable act.",
-          "basis_es": "El episodio revisado no acredita atribución del destinatario con un grado más fuerte. Pregunta abierta controlada por fuente: Expediente/índice completo, trazas 2/3 agosto, decisores funcionales, corpus, remisiones, preservación y documento nativo verificable.",
+          "basis_en": "The reviewed episode does not establish recipient attribution at a stronger grade. Open source-controlled question: Complete file/index, 2/3 August traces, functional decision-makers, corpus, referrals, preservation and native verifiable act.; integrate the DP 1901 supervening event and require author/corpus/assignment for the 29 July report.",
+          "basis_es": "El episodio revisado no acredita atribución del destinatario con un grado más fuerte. Pregunta abierta controlada por fuente: Expediente/índice completo, trazas 2/3 agosto, decisores funcionales, corpus, remisiones, preservación y documento nativo verificable.; integrar el hecho sobrevenido DP 1901 y exigir autor/corpus/reparto del informe de 29 julio.",
           "limitation_en": "Institutional or signatory attribution does not prove personal receipt, reading, understanding or knowledge of every item.",
           "limitation_es": "La atribución institucional o de firma no prueba recepción, lectura, comprensión o conocimiento personal de cada elemento.",
           "source": {
@@ -1735,8 +1735,8 @@
         "cross_file_acknowledgement_status": {
           "status": "STATUS_UNRESOLVED",
           "basis_kind": "CONTROLLED_CORPUS_GAP_STATEMENT",
-          "basis_en": "The reviewed episode does not establish cross-file acknowledgement at a stronger grade. Open source-controlled question: Complete file/index, 2/3 August traces, functional decision-makers, corpus, referrals, preservation and native verifiable act.",
-          "basis_es": "El episodio revisado no acredita reconocimiento entre expedientes con un grado más fuerte. Pregunta abierta controlada por fuente: Expediente/índice completo, trazas 2/3 agosto, decisores funcionales, corpus, remisiones, preservación y documento nativo verificable.",
+          "basis_en": "The reviewed episode does not establish cross-file acknowledgement at a stronger grade. Open source-controlled question: Complete file/index, 2/3 August traces, functional decision-makers, corpus, referrals, preservation and native verifiable act.; integrate the DP 1901 supervening event and require author/corpus/assignment for the 29 July report.",
+          "basis_es": "El episodio revisado no acredita reconocimiento entre expedientes con un grado más fuerte. Pregunta abierta controlada por fuente: Expediente/índice completo, trazas 2/3 agosto, decisores funcionales, corpus, remisiones, preservación y documento nativo verificable.; integrar el hecho sobrevenido DP 1901 y exigir autor/corpus/reparto del informe de 29 julio.",
           "limitation_en": "A cross-file reference is not a unitary acknowledgement, complete comparison or procedural joinder.",
           "limitation_es": "Una referencia entre expedientes no equivale a reconocimiento unitario, comparación completa ni acumulación procesal.",
           "source": {
@@ -3833,7 +3833,7 @@
       "is_proceeding": "TRUE",
       "record_type": "FISCALIA_FILE",
       "date_or_period": "20 enero–11 marzo 2026",
-      "source_status": "VERIFIED_PRIMARY",
+      "source_status": "VERIFIED_PRIMARY_AVAILABLE_CORPUS_FULL_TEXT",
       "profile_status": "SOURCE_CONTROLLED_PROFILE",
       "source_profile_ids": [
         "FISCALIA-RESPONSE-dip2-2026"
@@ -6070,8 +6070,8 @@
         "referral_status": {
           "status": "NOT_LOCATED",
           "basis_kind": "CONTROLLED_CORPUS_GAP_STATEMENT",
-          "basis_en": "The reviewed episode does not establish referral at a stronger grade. Open source-controlled question: Complete file/index, 2/3 August traces, functional decision-makers, corpus, referrals, preservation and native verifiable act.",
-          "basis_es": "El episodio revisado no acredita remisión con un grado más fuerte. Pregunta abierta controlada por fuente: Expediente/índice completo, trazas 2/3 agosto, decisores funcionales, corpus, remisiones, preservación y documento nativo verificable.",
+          "basis_en": "The reviewed episode does not establish referral at a stronger grade. Open source-controlled question: Complete file/index, 2/3 August traces, functional decision-makers, corpus, referrals, preservation and native verifiable act.; integrate the DP 1901 supervening event and require author/corpus/assignment for the 29 July report.",
+          "basis_es": "El episodio revisado no acredita remisión con un grado más fuerte. Pregunta abierta controlada por fuente: Expediente/índice completo, trazas 2/3 agosto, decisores funcionales, corpus, remisiones, preservación y documento nativo verificable.; integrar el hecho sobrevenido DP 1901 y exigir autor/corpus/reparto del informe de 29 julio.",
           "limitation_en": "Referral does not by itself prove destination receipt, acceptance of competence, incorporation or merits review.",
           "limitation_es": "La remisión no acredita por sí sola recepción en destino, aceptación de competencia, incorporación ni examen de fondo.",
           "source": {
@@ -6115,8 +6115,8 @@
         "recipient_attribution_status": {
           "status": "NOT_LOCATED",
           "basis_kind": "CONTROLLED_CORPUS_GAP_STATEMENT",
-          "basis_en": "The reviewed episode does not establish recipient attribution at a stronger grade. Open source-controlled question: Complete file/index, 2/3 August traces, functional decision-makers, corpus, referrals, preservation and native verifiable act.",
-          "basis_es": "El episodio revisado no acredita atribución del destinatario con un grado más fuerte. Pregunta abierta controlada por fuente: Expediente/índice completo, trazas 2/3 agosto, decisores funcionales, corpus, remisiones, preservación y documento nativo verificable.",
+          "basis_en": "The reviewed episode does not establish recipient attribution at a stronger grade. Open source-controlled question: Complete file/index, 2/3 August traces, functional decision-makers, corpus, referrals, preservation and native verifiable act.; integrate the DP 1901 supervening event and require author/corpus/assignment for the 29 July report.",
+          "basis_es": "El episodio revisado no acredita atribución del destinatario con un grado más fuerte. Pregunta abierta controlada por fuente: Expediente/índice completo, trazas 2/3 agosto, decisores funcionales, corpus, remisiones, preservación y documento nativo verificable.; integrar el hecho sobrevenido DP 1901 y exigir autor/corpus/reparto del informe de 29 julio.",
           "limitation_en": "Institutional or signatory attribution does not prove personal receipt, reading, understanding or knowledge of every item.",
           "limitation_es": "La atribución institucional o de firma no prueba recepción, lectura, comprensión o conocimiento personal de cada elemento.",
           "source": {
@@ -6160,8 +6160,8 @@
         "cross_file_acknowledgement_status": {
           "status": "STATUS_UNRESOLVED",
           "basis_kind": "CONTROLLED_CORPUS_GAP_STATEMENT",
-          "basis_en": "The reviewed episode does not establish cross-file acknowledgement at a stronger grade. Open source-controlled question: Complete file/index, 2/3 August traces, functional decision-makers, corpus, referrals, preservation and native verifiable act.",
-          "basis_es": "El episodio revisado no acredita reconocimiento entre expedientes con un grado más fuerte. Pregunta abierta controlada por fuente: Expediente/índice completo, trazas 2/3 agosto, decisores funcionales, corpus, remisiones, preservación y documento nativo verificable.",
+          "basis_en": "The reviewed episode does not establish cross-file acknowledgement at a stronger grade. Open source-controlled question: Complete file/index, 2/3 August traces, functional decision-makers, corpus, referrals, preservation and native verifiable act.; integrate the DP 1901 supervening event and require author/corpus/assignment for the 29 July report.",
+          "basis_es": "El episodio revisado no acredita reconocimiento entre expedientes con un grado más fuerte. Pregunta abierta controlada por fuente: Expediente/índice completo, trazas 2/3 agosto, decisores funcionales, corpus, remisiones, preservación y documento nativo verificable.; integrar el hecho sobrevenido DP 1901 y exigir autor/corpus/reparto del informe de 29 julio.",
           "limitation_en": "A cross-file reference is not a unitary acknowledgement, complete comparison or procedural joinder.",
           "limitation_es": "Una referencia entre expedientes no equivale a reconocimiento unitario, comparación completa ni acumulación procesal.",
           "source": {
@@ -6178,8 +6178,8 @@
         "es": "La oficina pudo acotar, remitir o resolver lícitamente el material dentro de su competencia; la ausencia de inventario público no acredita que no existiera revisión interna."
       },
       "unanswered_or_source_gap": {
-        "en": "Complete file/index, 2/3 August traces, functional decision-makers, corpus, referrals, preservation and native verifiable act.",
-        "es": "Expediente/índice completo, trazas 2/3 agosto, decisores funcionales, corpus, remisiones, preservación y documento nativo verificable."
+        "en": "Complete file/index, 2/3 August traces, functional decision-makers, corpus, referrals, preservation and native verifiable act.; integrate the DP 1901 supervening event and require author/corpus/assignment for the 29 July report.",
+        "es": "Expediente/índice completo, trazas 2/3 agosto, decisores funcionales, corpus, remisiones, preservación y documento nativo verificable.; integrar el hecho sobrevenido DP 1901 y exigir autor/corpus/reparto del informe de 29 julio."
       },
       "boundary_en": "This row does not infer receipt, incorporation, examination or cross-file acknowledgement from raw matter references.",
       "boundary_es": "Esta fila no infiere recepción, incorporación, examen ni reconocimiento entre expedientes a partir de referencias de asunto sin controlar."
@@ -23440,7 +23440,7 @@
             {
               "profile_id": "FISCALIA-RESPONSE-dp1901-2026",
               "event_id": "dp1901-2026",
-              "date": "12 julio 2026",
+              "date": "12 julio–14 septiembre 2026",
               "source_kind": "CONTROLLED_FISCALIA_RESPONSE_EPISODE",
               "proves_en": "A source-controlled institutional episode profile is mapped to this exact Master ID at the stated evidential grades.",
               "proves_es": "Un perfil institucional de episodio controlado por fuente está asociado a este Master ID exacto con los grados probatorios indicados.",
@@ -23460,8 +23460,8 @@
             "transmission_status": {
               "status": "ROUTING_DOCUMENTED",
               "basis_kind": "ANALYTICAL_GRADE_FROM_SOURCE_AUTHORED_EPISODE_FIELD",
-              "basis_en": "A 12 July 2026 court order, NIG 3501643220260016977, transferred the matter to the prosecution service for five days to report on admission, in connection with DIP 2/2026.",
-              "basis_es": "Una providencia judicial de 12 julio 2026, NIG 3501643220260016977, dio traslado al Ministerio Fiscal por cinco días para informar sobre la admisión, en conexión con DIP 2/2026.",
+              "basis_en": "The 12 July 2026 order, NIG 3501643220260016977, transferred the admission question to the prosecution service for five days in connection with DIP 2/2026. The 14 September order additionally records a 29 July prosecution report seeking dismissal and orders final dismissal/archive.",
+              "basis_es": "La providencia de 12 julio 2026, NIG 3501643220260016977, dio traslado al Ministerio Fiscal por cinco días para informar sobre admisión en conexión con DIP 2/2026. El Auto de 14 septiembre registra además un informe Fiscal de 29 julio interesando el archivo y acuerda sobreseimiento libre y archivo.",
               "limitation_en": "Transmission does not by itself prove destination receipt, completeness, incorporation or examination.",
               "limitation_es": "La transmisión no acredita por sí sola recepción en destino, integridad, incorporación ni examen.",
               "source": {
@@ -23475,8 +23475,8 @@
             "material_received_status": {
               "status": "NOT_LOCATED",
               "basis_kind": "CONTROLLED_CORPUS_GAP_STATEMENT",
-              "basis_en": "The reviewed episode does not establish material received at a stronger grade. Open source-controlled question: Authoring prosecutor, materials available, position taken and subsequent judicial decision.",
-              "basis_es": "El episodio revisado no acredita material recibido con un grado más fuerte. Pregunta abierta controlada por fuente: Fiscal autor, material disponible, posición adoptada y resolución judicial posterior.",
+              "basis_en": "The reviewed episode does not establish material received at a stronger grade. Open source-controlled question: Authoring prosecutor, assignment, source corpus, reasoning, any review/instruction, transmission index and Control 21 / Control 24 / DIP 2 routing; legal notice of the order also remains open.",
+              "basis_es": "El episodio revisado no acredita material recibido con un grado más fuerte. Pregunta abierta controlada por fuente: Fiscal autor, reparto/asignación, corpus recibido, razonamiento, eventual visado/instrucción, índice de remisión y trazabilidad Control 21 / Control 24 / DIP 2; también notificación legal del Auto.",
               "limitation_en": "A received-material grade does not establish a complete inventory, incorporation, examination or decision use.",
               "limitation_es": "El grado de material recibido no acredita inventario completo, incorporación, examen ni uso decisorio.",
               "source": {
@@ -23490,8 +23490,8 @@
             "referral_status": {
               "status": "ROUTING_DOCUMENTED",
               "basis_kind": "ANALYTICAL_GRADE_FROM_SOURCE_AUTHORED_EPISODE_FIELD",
-              "basis_en": "A 12 July 2026 court order, NIG 3501643220260016977, transferred the matter to the prosecution service for five days to report on admission, in connection with DIP 2/2026.",
-              "basis_es": "Una providencia judicial de 12 julio 2026, NIG 3501643220260016977, dio traslado al Ministerio Fiscal por cinco días para informar sobre la admisión, en conexión con DIP 2/2026.",
+              "basis_en": "The 12 July 2026 order, NIG 3501643220260016977, transferred the admission question to the prosecution service for five days in connection with DIP 2/2026. The 14 September order additionally records a 29 July prosecution report seeking dismissal and orders final dismissal/archive.",
+              "basis_es": "La providencia de 12 julio 2026, NIG 3501643220260016977, dio traslado al Ministerio Fiscal por cinco días para informar sobre admisión en conexión con DIP 2/2026. El Auto de 14 septiembre registra además un informe Fiscal de 29 julio interesando el archivo y acuerda sobreseimiento libre y archivo.",
               "limitation_en": "Referral does not by itself prove destination receipt, acceptance of competence, incorporation or merits review.",
               "limitation_es": "La remisión no acredita por sí sola recepción en destino, aceptación de competencia, incorporación ni examen de fondo.",
               "source": {
@@ -23505,8 +23505,8 @@
             "registration_status": {
               "status": "NOT_LOCATED",
               "basis_kind": "CONTROLLED_CORPUS_GAP_STATEMENT",
-              "basis_en": "The reviewed episode does not establish registration at a stronger grade. Open source-controlled question: Authoring prosecutor, materials available, position taken and subsequent judicial decision.",
-              "basis_es": "El episodio revisado no acredita registro con un grado más fuerte. Pregunta abierta controlada por fuente: Fiscal autor, material disponible, posición adoptada y resolución judicial posterior.",
+              "basis_en": "The reviewed episode does not establish registration at a stronger grade. Open source-controlled question: Authoring prosecutor, assignment, source corpus, reasoning, any review/instruction, transmission index and Control 21 / Control 24 / DIP 2 routing; legal notice of the order also remains open.",
+              "basis_es": "El episodio revisado no acredita registro con un grado más fuerte. Pregunta abierta controlada por fuente: Fiscal autor, reparto/asignación, corpus recibido, razonamiento, eventual visado/instrucción, índice de remisión y trazabilidad Control 21 / Control 24 / DIP 2; también notificación legal del Auto.",
               "limitation_en": "Registration does not by itself prove file incorporation, examination, reliance or personal knowledge.",
               "limitation_es": "El registro no acredita por sí solo incorporación, examen, uso ni conocimiento personal.",
               "source": {
@@ -23520,8 +23520,8 @@
             "file_incorporation_status": {
               "status": "NOT_LOCATED",
               "basis_kind": "CONTROLLED_CORPUS_GAP_STATEMENT",
-              "basis_en": "The reviewed episode does not establish file incorporation at a stronger grade. Open source-controlled question: Authoring prosecutor, materials available, position taken and subsequent judicial decision.",
-              "basis_es": "El episodio revisado no acredita incorporación al expediente con un grado más fuerte. Pregunta abierta controlada por fuente: Fiscal autor, material disponible, posición adoptada y resolución judicial posterior.",
+              "basis_en": "The reviewed episode does not establish file incorporation at a stronger grade. Open source-controlled question: Authoring prosecutor, assignment, source corpus, reasoning, any review/instruction, transmission index and Control 21 / Control 24 / DIP 2 routing; legal notice of the order also remains open.",
+              "basis_es": "El episodio revisado no acredita incorporación al expediente con un grado más fuerte. Pregunta abierta controlada por fuente: Fiscal autor, reparto/asignación, corpus recibido, razonamiento, eventual visado/instrucción, índice de remisión y trazabilidad Control 21 / Control 24 / DIP 2; también notificación legal del Auto.",
               "limitation_en": "File incorporation does not by itself prove substantive examination, reliance or legal correctness.",
               "limitation_es": "La incorporación al expediente no acredita por sí sola examen sustantivo, uso ni corrección jurídica.",
               "source": {
@@ -23535,8 +23535,8 @@
             "recipient_attribution_status": {
               "status": "NOT_LOCATED",
               "basis_kind": "CONTROLLED_CORPUS_GAP_STATEMENT",
-              "basis_en": "The reviewed episode does not establish recipient attribution at a stronger grade. Open source-controlled question: Authoring prosecutor, materials available, position taken and subsequent judicial decision.",
-              "basis_es": "El episodio revisado no acredita atribución del destinatario con un grado más fuerte. Pregunta abierta controlada por fuente: Fiscal autor, material disponible, posición adoptada y resolución judicial posterior.",
+              "basis_en": "The reviewed episode does not establish recipient attribution at a stronger grade. Open source-controlled question: Authoring prosecutor, assignment, source corpus, reasoning, any review/instruction, transmission index and Control 21 / Control 24 / DIP 2 routing; legal notice of the order also remains open.",
+              "basis_es": "El episodio revisado no acredita atribución del destinatario con un grado más fuerte. Pregunta abierta controlada por fuente: Fiscal autor, reparto/asignación, corpus recibido, razonamiento, eventual visado/instrucción, índice de remisión y trazabilidad Control 21 / Control 24 / DIP 2; también notificación legal del Auto.",
               "limitation_en": "Institutional or signatory attribution does not prove personal receipt, reading, understanding or knowledge of every item.",
               "limitation_es": "La atribución institucional o de firma no prueba recepción, lectura, comprensión o conocimiento personal de cada elemento.",
               "source": {
@@ -23550,8 +23550,8 @@
             "substantive_examination_status": {
               "status": "NOT_LOCATED",
               "basis_kind": "CONTROLLED_CORPUS_GAP_STATEMENT",
-              "basis_en": "The reviewed episode does not establish substantive examination at a stronger grade. Open source-controlled question: Authoring prosecutor, materials available, position taken and subsequent judicial decision.",
-              "basis_es": "El episodio revisado no acredita examen sustantivo con un grado más fuerte. Pregunta abierta controlada por fuente: Fiscal autor, material disponible, posición adoptada y resolución judicial posterior.",
+              "basis_en": "The reviewed episode does not establish substantive examination at a stronger grade. Open source-controlled question: Authoring prosecutor, assignment, source corpus, reasoning, any review/instruction, transmission index and Control 21 / Control 24 / DIP 2 routing; legal notice of the order also remains open.",
+              "basis_es": "El episodio revisado no acredita examen sustantivo con un grado más fuerte. Pregunta abierta controlada por fuente: Fiscal autor, reparto/asignación, corpus recibido, razonamiento, eventual visado/instrucción, índice de remisión y trazabilidad Control 21 / Control 24 / DIP 2; también notificación legal del Auto.",
               "limitation_en": "A bounded examination grade does not prove that every item was examined, correctly assessed or known by a named person.",
               "limitation_es": "Un grado limitado de examen no acredita que cada elemento fuera examinado, correctamente valorado o conocido por una persona identificada.",
               "source": {
@@ -23565,8 +23565,8 @@
             "decision_use_status": {
               "status": "NOT_LOCATED",
               "basis_kind": "CONTROLLED_CORPUS_GAP_STATEMENT",
-              "basis_en": "The reviewed episode does not establish decision use at a stronger grade. Open source-controlled question: Authoring prosecutor, materials available, position taken and subsequent judicial decision.",
-              "basis_es": "El episodio revisado no acredita uso en decisión con un grado más fuerte. Pregunta abierta controlada por fuente: Fiscal autor, material disponible, posición adoptada y resolución judicial posterior.",
+              "basis_en": "The reviewed episode does not establish decision use at a stronger grade. Open source-controlled question: Authoring prosecutor, assignment, source corpus, reasoning, any review/instruction, transmission index and Control 21 / Control 24 / DIP 2 routing; legal notice of the order also remains open.",
+              "basis_es": "El episodio revisado no acredita uso en decisión con un grado más fuerte. Pregunta abierta controlada por fuente: Fiscal autor, reparto/asignación, corpus recibido, razonamiento, eventual visado/instrucción, índice de remisión y trazabilidad Control 21 / Control 24 / DIP 2; también notificación legal del Auto.",
               "limitation_en": "A documented decision does not by itself prove which materials were relied on, legal correctness, intent or wrongdoing.",
               "limitation_es": "Una decisión documentada no acredita por sí sola qué materiales se utilizaron, corrección jurídica, intención ni ilicitud.",
               "source": {
@@ -23580,8 +23580,8 @@
             "cross_file_acknowledgement_status": {
               "status": "DOCUMENTED",
               "basis_kind": "ANALYTICAL_GRADE_FROM_SOURCE_AUTHORED_EPISODE_FIELD",
-              "basis_en": "A 12 July 2026 court order, NIG 3501643220260016977, transferred the matter to the prosecution service for five days to report on admission, in connection with DIP 2/2026.",
-              "basis_es": "Una providencia judicial de 12 julio 2026, NIG 3501643220260016977, dio traslado al Ministerio Fiscal por cinco días para informar sobre la admisión, en conexión con DIP 2/2026.",
+              "basis_en": "The 12 July 2026 order, NIG 3501643220260016977, transferred the admission question to the prosecution service for five days in connection with DIP 2/2026. The 14 September order additionally records a 29 July prosecution report seeking dismissal and orders final dismissal/archive.",
+              "basis_es": "La providencia de 12 julio 2026, NIG 3501643220260016977, dio traslado al Ministerio Fiscal por cinco días para informar sobre admisión en conexión con DIP 2/2026. El Auto de 14 septiembre registra además un informe Fiscal de 29 julio interesando el archivo y acuerda sobreseimiento libre y archivo.",
               "limitation_en": "A cross-file reference is not a unitary acknowledgement, complete comparison or procedural joinder.",
               "limitation_es": "Una referencia entre expedientes no equivale a reconocimiento unitario, comparación completa ni acumulación procesal.",
               "source": {
@@ -39603,8 +39603,8 @@
             "referral_status": {
               "status": "NOT_LOCATED",
               "basis_kind": "CONTROLLED_CORPUS_GAP_STATEMENT",
-              "basis_en": "The reviewed episode does not establish referral at a stronger grade. Open source-controlled question: Complete file/index, 2/3 August traces, functional decision-makers, corpus, referrals, preservation and native verifiable act.",
-              "basis_es": "El episodio revisado no acredita remisión con un grado más fuerte. Pregunta abierta controlada por fuente: Expediente/índice completo, trazas 2/3 agosto, decisores funcionales, corpus, remisiones, preservación y documento nativo verificable.",
+              "basis_en": "The reviewed episode does not establish referral at a stronger grade. Open source-controlled question: Complete file/index, 2/3 August traces, functional decision-makers, corpus, referrals, preservation and native verifiable act.; integrate the DP 1901 supervening event and require author/corpus/assignment for the 29 July report.",
+              "basis_es": "El episodio revisado no acredita remisión con un grado más fuerte. Pregunta abierta controlada por fuente: Expediente/índice completo, trazas 2/3 agosto, decisores funcionales, corpus, remisiones, preservación y documento nativo verificable.; integrar el hecho sobrevenido DP 1901 y exigir autor/corpus/reparto del informe de 29 julio.",
               "limitation_en": "Referral does not by itself prove destination receipt, acceptance of competence, incorporation or merits review.",
               "limitation_es": "La remisión no acredita por sí sola recepción en destino, aceptación de competencia, incorporación ni examen de fondo.",
               "source": {
@@ -39648,8 +39648,8 @@
             "recipient_attribution_status": {
               "status": "NOT_LOCATED",
               "basis_kind": "CONTROLLED_CORPUS_GAP_STATEMENT",
-              "basis_en": "The reviewed episode does not establish recipient attribution at a stronger grade. Open source-controlled question: Complete file/index, 2/3 August traces, functional decision-makers, corpus, referrals, preservation and native verifiable act.",
-              "basis_es": "El episodio revisado no acredita atribución del destinatario con un grado más fuerte. Pregunta abierta controlada por fuente: Expediente/índice completo, trazas 2/3 agosto, decisores funcionales, corpus, remisiones, preservación y documento nativo verificable.",
+              "basis_en": "The reviewed episode does not establish recipient attribution at a stronger grade. Open source-controlled question: Complete file/index, 2/3 August traces, functional decision-makers, corpus, referrals, preservation and native verifiable act.; integrate the DP 1901 supervening event and require author/corpus/assignment for the 29 July report.",
+              "basis_es": "El episodio revisado no acredita atribución del destinatario con un grado más fuerte. Pregunta abierta controlada por fuente: Expediente/índice completo, trazas 2/3 agosto, decisores funcionales, corpus, remisiones, preservación y documento nativo verificable.; integrar el hecho sobrevenido DP 1901 y exigir autor/corpus/reparto del informe de 29 julio.",
               "limitation_en": "Institutional or signatory attribution does not prove personal receipt, reading, understanding or knowledge of every item.",
               "limitation_es": "La atribución institucional o de firma no prueba recepción, lectura, comprensión o conocimiento personal de cada elemento.",
               "source": {
@@ -39693,8 +39693,8 @@
             "cross_file_acknowledgement_status": {
               "status": "STATUS_UNRESOLVED",
               "basis_kind": "CONTROLLED_CORPUS_GAP_STATEMENT",
-              "basis_en": "The reviewed episode does not establish cross-file acknowledgement at a stronger grade. Open source-controlled question: Complete file/index, 2/3 August traces, functional decision-makers, corpus, referrals, preservation and native verifiable act.",
-              "basis_es": "El episodio revisado no acredita reconocimiento entre expedientes con un grado más fuerte. Pregunta abierta controlada por fuente: Expediente/índice completo, trazas 2/3 agosto, decisores funcionales, corpus, remisiones, preservación y documento nativo verificable.",
+              "basis_en": "The reviewed episode does not establish cross-file acknowledgement at a stronger grade. Open source-controlled question: Complete file/index, 2/3 August traces, functional decision-makers, corpus, referrals, preservation and native verifiable act.; integrate the DP 1901 supervening event and require author/corpus/assignment for the 29 July report.",
+              "basis_es": "El episodio revisado no acredita reconocimiento entre expedientes con un grado más fuerte. Pregunta abierta controlada por fuente: Expediente/índice completo, trazas 2/3 agosto, decisores funcionales, corpus, remisiones, preservación y documento nativo verificable.; integrar el hecho sobrevenido DP 1901 y exigir autor/corpus/reparto del informe de 29 julio.",
               "limitation_en": "A cross-file reference is not a unitary acknowledgement, complete comparison or procedural joinder.",
               "limitation_es": "Una referencia entre expedientes no equivale a reconocimiento unitario, comparación completa ni acumulación procesal.",
               "source": {
