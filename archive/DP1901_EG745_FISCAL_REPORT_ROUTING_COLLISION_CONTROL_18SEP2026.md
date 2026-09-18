@@ -37,21 +37,45 @@ The new order does **not** disclose or establish:
 - a formal joinder, reassignment, segregation or accumulation act explaining the Control 21 / Control 24 collision;
 - the legal notification date from which any remedy period runs.
 
-## 4. Procedural-identity collision
+## 4. Procedural-identity collision — source closure materially strengthened
 
-The controlled record preserves two autonomous June complaints:
+The source-closure record is now:
 
-- **Control 24**: judge / judicial-conduct complaint, addressed to the Sala de lo Civil y Penal del TSJ de Canarias and expressly framed as denuncia / notitia criminis.
-- **Control 21**: separate 25 June complaint against private actors.
+`evidence/judicial/dp-1901-2026/PROCEDURAL_IDENTITY_SOURCE_CLOSURE_18SEP2026.md`
 
-Contemporaneous July records then treated **DP 1901/2026** as the private-actor/CAM/Community route, while the 12 July court providencia linked the same DP to **DIP 2/2026** and the 14 September order now describes the proceeding as one for alleged judicial prevarication.
+It hash-locks six connected source images and separates stamped presentation evidence, ATLANTE fields, contemporaneous correspondence and later judicial acts.
 
-The repository must therefore record **ROUTING_IDENTITY_COLLISION_OPEN** and must not publish either of these as proved without the reparto/index sources:
+### 4.1 June separation is directly evidenced
 
-- that Control 24 was added to a DP originally opened for Control 21; or
-- that Control 21 material was mistakenly directed into a DP originally opened for Control 24.
+- **18 June / daily reference 24:** the stamped judge-complaint cover concerns Alberto López Villarrubia, is addressed to the Sala de lo Civil y Penal del TSJ de Canarias and expressly describes the filing as denuncia/notitia criminis rather than formal querella.
+- **25 June / daily reference 21:** the stamped cover describes a new autonomous complaint against five private actors.
+- **25 June / daily reference 24 supplement:** a separate stamped 13-page document expressly asks to be joined to the 18-Jun daily-reference-24 judge complaint. It does not present itself as an amplification of daily reference 21.
+- Contemporaneous 25-Jun correspondence reports that daily reference 24 was still physically at Decanato and had not yet been sent to its destination. This is a party's contemporaneous report, not an official reparto certificate.
 
-A third possibility — a formal but presently unlocated joinder/reassignment — remains open.
+### 4.2 July private-actor → DP 1901 operational association is directly stronger
+
+- the 9-Jul ATLANTE image officially shows Gil Marer as denunciante in **DP 1901/2026, Plaza 6** and **DP 1956/2026, Plaza 1**; ATLANTE itself does not name defendants or subject matter;
+- a separate 9-Jul Decanato-stamped cover expressly tenders an amplification/documentary contribution under **DP 1901/2026, Plaza 6** for the private-actor lane;
+- contemporaneous correspondence to the procuradora and counsel records the then-operational understanding that 1901 was the CAM/private/Community complaint and 1956 the AC complaint;
+- a 12-Jul contemporaneous email to counsel reports that Gil had returned to Plaza 6 on the preceding Friday regarding “la denuncia contra CAM y la CP” identified as 1901/2026 and that court staff said a providencia giving traslado to Fiscalía awaited signature. This is contemporaneous reporting of court-office interaction, not an official certification.
+
+### 4.3 Official court acts then point to the judge/DIP2 lane
+
+The signed 12-Jul providencia in the same DP/NIG/IUP formally sends the admission question to Ministerio Fiscal **in relation to DIP 2/2026**. The 14-Sep Auto later says DP 1901 was opened on a complaint for alleged judicial prevaricación.
+
+The source set therefore materially strengthens the existence of a real **procedural-identity/routing collision** and narrows the unexplained interval to the June/early-July allocation and ingestion history.
+
+The canonical state is:
+
+**PROCEDURAL_IDENTITY_COLLISION_OPEN — DIRECTION NOT CERTIFIED.**
+
+Do not publish as proved:
+
+- that daily reference 21 generated DP 1901 and daily reference 24 was later misrouted/merged into it;
+- that daily reference 24 generated DP 1901 and the private-actor material was mistakenly tendered into it; or
+- that a formal joinder/reassignment occurred.
+
+A formal but presently unlocated allocation/joinder/reassignment/segregation act, or another administrative explanation, remains possible. Only the certified initiating document, reparto/index and ingestion history can close direction.
 
 ## 5. E.G. 745/2026 consequence
 

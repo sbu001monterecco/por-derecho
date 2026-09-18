@@ -31,7 +31,19 @@ La matriz controlante es `evidence/fiscalia/2026/DIP2_INACCURACY_ANALYTICAL_ERRO
 
 Add:
 
-The 14 September order makes the identity question more acute rather than resolving it. Control 21 was contemporaneously documented as an autonomous 25 June complaint against private actors; Control 24 was a separate 18 June complaint concerning judicial conduct and directed to the TSJC. July communications treated DP 1901 as the former while the court's 12 July order linked it to DIP 2/2026 and the 14 September order now treats it as the latter. Inspection should obtain the official reparto/index record and any joinder, reassignment or segregation act before treating “judicialisation” as a complete answer for distinct factual modules.
+The 14 September order makes the identity question more acute rather than resolving it. The June/July source closure now permits a more precise statement:
+
+- the 18 June stamped daily-reference-24 cover is a separate judge/judicial-conduct complaint intended for the TSJC Civil/Criminal route;
+- the 25 June stamped daily-reference-21 cover is a new autonomous five-private-actor complaint;
+- the separate 25 June 13-page supplement expressly belongs to daily reference 24;
+- contemporaneous 25 June correspondence reported daily reference 24 still at Decanato; this remains a party report, not an official reparto certificate;
+- on 9 July ATLANTE officially displayed DP 1901/Plaza 6 and DP 1956/Plaza 1 with Gil Marer as denunciante, without identifying defendants/subject;
+- a separate Decanato-stamped 9 July cover proves that private-actor amplification/documentary material was physically tendered under DP 1901/Plaza 6;
+- contemporaneous 12 July counsel correspondence reports that Plaza 6 was being approached regarding “la denuncia contra CAM y la CP” identified as 1901/2026;
+- the signed 12 July providencia nevertheless linked that same DP/NIG/IUP to DIP 2/2026;
+- the 14 September Auto later treats DP 1901 as alleged judicial prevaricación.
+
+This materially proves a procedural-identity collision but still does not certify its direction. Inspección should obtain the initiating document, official reparto/index, scan/ingestion metadata, document-to-NIG association history and every joinder/reassignment/segregation event before treating “judicialisation” as a complete answer for distinct factual modules.
 
 ## D. Ground Six — independence / circularity
 
@@ -47,6 +59,7 @@ The 29 July report is a later prosecutorial act that can now be individually loc
 - **D39** — certified DP 1901 docket/index + initiating document + Control 21 / Control 24 reparto trace; OPEN.
 - **D40** — corpus digitalizado DIP 2/2026: denuncia 13 enero, ampliación 8 febrero, Decreto 6 marzo, oficio 9 marzo, actualización 11 marzo y REGAGE26e00026303869; fuentes controladas individualmente.
 - **D41** — matriz de inexactitudes/errores analíticos DIP 2 de 18 septiembre; documento de trabajo que distingue discrepancia probada, crítica atribuida y gaps probatorios.
+- **D42** — cierre de fuentes junio/julio DP 1901: seis imágenes conectadas hash-controladas (portadas selladas refs. 22/24/21, ampliación ref. 24, ATLANTE 9 julio y portada sellada de aportación privada bajo DP 1901/Plaza 6) + cronología contemporánea; acredita separación de escritos y presentación física de material privado en 1901, pero no la dirección certificada del reparto. Control: `evidence/judicial/dp-1901-2026/PROCEDURAL_IDENTITY_SOURCE_CLOSURE_18SEP2026.md`.
 
 ## F. Additional relief
 
@@ -58,13 +71,14 @@ Request expressly:
 4. any review/visado/instruction;
 5. certified DP 1901 docket;
 6. initiating document and reparto;
-7. reparto/destination records for Control 21 and Control 24;
+7. reparto/destination records for daily references 21 and 24, including the 18-Jun–12-Jul scan/ingestion and document-to-NIG association history;
 8. every joinder, reassignment, accumulation or segregation act;
 9. the 29 July report's treatment of the DIP 2/2026 appeal-history correction;
 10. preservation of relevant ATLANTE/registry/email routing traces;
 11. complete certified DIP 2/2026 file and separate 11 February opening decree;
 12. evidence of receipt, incorporation, handler/access and substantive treatment of REGAGE26e00026303869;
-13. certification of exactly which DIP 2 materials, including any correction, were transmitted or made available in DP 1901 before the 29 July Fiscal report.
+13. certification of exactly which DIP 2 materials, including any correction, were transmitted or made available in DP 1901 before the 29 July Fiscal report;
+14. certified confirmation of whether the 9-Jul private-actor amplification was electronically incorporated, what parent complaint it was associated with, and whether it formed part of the corpus supplied to the Fiscal.
 
 ## G. Attribution boundary
 

@@ -9,7 +9,7 @@
 Keep three routes separate but evidentially coordinated:
 
 1. **DP 1956/2026** — actor-specific criminal investigation of the **Administrador Concursal (AC), Francisco de Borja Rodríguez-Batllori Laffitte**. Use private-actor evidence only to test the AC's own knowledge, duties, authorisations, omissions, implementation, restoration/correction and accounting/rendition.
-2. **DP 1901/2026** — the proper criminal route for the alleged culpability of **JDAM, LPAM, CAM / Acosta Matos entities, FMMM, Antonio Cogolludo Rojas, Shaila Cogolludo Ramos and other private actors** identified there. Do not duplicate their culpability case inside DP 1956.
+2. **DP 1901/2026 — PROCEDURAL IDENTITY COLLISION OPEN.** The 18-Sep source closure proves that the five-private-actor complaint was an autonomous 25-Jun filing and that private-actor amplification material was physically tendered under DP 1901/Plaza 6 on 9-Jul. The signed 12-Jul providencia links that same DP to DIP 2/2026 and the 14-Sep Auto treats it as alleged judicial prevaricación. Therefore do **not** describe DP 1901 as definitively the private-actor cause until the initiating document/reparto/index/ingestion record is certified. Private-actor culpability remains an autonomous actor-specific lane and must not be duplicated inside DP 1956.
 3. **Judicial-accountability routes** — separate from DP 1956:
    - the criminal complaint presented **18 June 2026** concerning identified judicial resolutions/conduct, plus its later ampliación; both were registered/linked through the Decanato under the **daily reference n.º 24** for that presentation chain;
    - **DI 169/2026** before CGPJ, archived 14 May 2026, with the appeal formally being processed as **Recurso de alzada 286/2026**; CGPJ confirmed on 16 July 2026 that the appeal entered the CGPJ on 18 June and that the 15 July traceability filing was joined to it.
@@ -70,7 +70,7 @@ Current working theory for cross-proceeding use:
 - a pre-existing Community/service-provider apparatus involving FMMM, PAMANIL/PAMALEXSHA, Antonio Cogolludo, Shaila Cogolludo and related owners/representatives existed before CAM's decisive entry;
 - CAM / JDAM may have later known, adopted, used, escalated or benefited from that apparatus;
 - later economic/societary convergence (including PAMALEXSHA/AGM/Orion relationships) is relevant to discovery, conflict, continuity and possible adoption/benefit but **does not retroactively prove agency, common plan or collective culpability**;
-- DP 1901 is the forum to prove or disprove private culpability actor-by-actor;
+- the autonomous private-actor complaint lane is the forum to prove or disprove private culpability actor-by-actor; material from that lane was tendered under DP 1901 on 9-Jul, but the formal DP mapping/origin remains under certified-reparto audit;
 - DP 1956 uses those facts only to ask what the AC knew, authorised, adopted, maintained, failed to restore/correct, or accounted for.
 
 Keep PAMANIL and PAMALEXSHA legally separate. Do not infer succession or interchangeability without contracts, corporate records, invoices, payroll/service evidence, appointment/substitution records and custody evidence.
@@ -273,7 +273,7 @@ Current counsel communications remain privileged/internal by default under the e
 No public-site wording should be changed merely to mirror pleading rhetoric. If/when public pages are updated, the highest-value surgical corrections are:
 
 - replace any use of `Control 24` as though it were a formal case number with the safe `daily reference n.º 24` formulation above;
-- keep DP 1901 private-actor culpability and DP 1956 AC culpability explicitly separate;
+- keep the autonomous private-actor culpability lane and DP 1956 AC culpability explicitly separate; do not use the shorthand “DP 1901 = private-actor cause” while the procedural-identity collision remains uncertified;
 - describe judicial-accountability routes as autonomous, not as part of DP 1956;
 - distinguish CAM's admitted 2018 works in several owned units from the stronger but still investigative inference of project-wide anticipatory implementation;
 - state that unity of exploitation concerns unitary tourist operation, not necessarily unitary registered ownership;

@@ -6,6 +6,23 @@
 **Canonical machine state:** `assets/data/control-21-22-24-continuity-v1.json`  
 **Governance:** `.github/governance/CONTROL_21_22_24_CONTINUITY_INTERLINK_PROTOCOL_04SEP2026.md`
 
+## Successor source correction — 18 September 2026
+
+This handoff remains a dated continuity record, but later recovered primary sources supersede two shorthand propositions:
+
+1. the 25-Jun dependent judicial supplement is **13 pages**, not 10; and
+2. DP 1901/2026 is **not** to be treated as a settled private-actor route.
+
+Current controlled source family:
+- 25-Jun private-actor complaint: autonomous daily-reference-21 filing; operative source **86 pages**;
+- 26-Jun immediate private-actor amplification: **26 pages**;
+- 9-Jul final signed private-actor amplification: **19 pages**, with a separate stamped cover proving physical tender under DP 1901/Plaza 6;
+- 18-Jun judge complaint: separate daily-reference-24 filing; **79-page total package**, with a **31-page principal-document bundle = 4 pages front matter + 27-page pleading**;
+- 25-Jun dependent judge supplement: **13 pages**;
+- DP 1901 procedural identity: **PROCEDURAL_IDENTITY_COLLISION_OPEN — DIRECTION NOT CERTIFIED**.
+
+Use CR-160–CR-162 and `evidence/judicial/dp-1901-2026/PROCEDURAL_IDENTITY_SOURCE_CLOSURE_18SEP2026.md` before reusing the older graph shorthand below.
+
 ## Purpose
 
 Preserve the June 2026 filing/proceeding perimeter as a typed, interlinked and successor-readable graph without collapsing intake references, criminal proceedings, judicial-governance routes or prosecutorial routes into one legal file.
