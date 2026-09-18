@@ -2,7 +2,7 @@
   "schema": "por-derecho.authority-access-received.v1",
   "control_id": "PD-AUTH-RX-CAB-20260918-01",
   "control_date": "2026-09-18",
-  "status": "GRANT_SCOPE_ACQUIRED_PUBLICATION_REVIEW_OPEN_GITLAB_RECONCILIATION_PENDING",
+  "status": "GRANT_SCOPE_ACQUIRED_SIX_ZIP_INTEGRITY_CLOSED_PUBLICATION_REVIEW_OPEN_GITLAB_RECONCILIATION_PENDING",
   "provenance_class": "GITHUB_OUTAGE_CONTINUITY_MATERIAL",
   "github_authoring_base_sha": "e79d4233b172d45baf27964e8a5165447fe3b0c1",
   "canonical_repository": {
@@ -175,43 +175,60 @@
     }
   ],
   "separate_april_2026_custody_reconciliation": {
-    "status": "SEPARATE_FROM_13811_2026_GRANT",
-    "note": "Project custody records a six-ZIP April disclosure including 3671_2022.zip. The current open item is native-byte verification of the intact 3671 archive through connected tooling, not an assertion that the April disclosure omitted 3671/2022.",
-    "five_verified_archives": [
+    "status": "SIX_NATIVE_ZIPS_INTEGRITY_CLOSED_SEPARATE_FROM_13811_2026_GRANT",
+    "note": "Project custody now integrity-closes the complete April six-ZIP disclosure, including the intact 3671_2022.zip. 3671 was supplied in April; its absence from the 17-Sep 6999 re-delivery is not treated as non-delivery.",
+    "archives": [
+      {
+        "name": "3671_2022.zip",
+        "size_bytes": 356624754,
+        "sha256": "2e81c98b09d496a41e1258e3117e33d56faad351506ea9eca9cd22839ee6c8c5",
+        "pdf_occurrences": 91
+      },
       {
         "name": "2984_2023.zip",
-        "sha256": "c1f596511d95fd62ebdc4bf79e27e1a553a1a559177ac3eb06650524e53c76d5"
+        "size_bytes": 33557662,
+        "sha256": "c1f596511d95fd62ebdc4bf79e27e1a553a1a559177ac3eb06650524e53c76d5",
+        "pdf_occurrences": 14
       },
       {
         "name": "17070_2023.zip",
-        "sha256": "78d638e6f06f12e25384f7d237abe01ef538df5030a8f7f86cdbe4cefb158176"
+        "size_bytes": 25698372,
+        "sha256": "78d638e6f06f12e25384f7d237abe01ef538df5030a8f7f86cdbe4cefb158176",
+        "pdf_occurrences": 21
       },
       {
         "name": "19995_2023.zip",
-        "sha256": "25eff1af541194fc22ae89b7da1ee569e1abf499c46609a22fc4579827240a50"
+        "size_bytes": 144162159,
+        "sha256": "25eff1af541194fc22ae89b7da1ee569e1abf499c46609a22fc4579827240a50",
+        "pdf_occurrences": 21
       },
       {
         "name": "7206_2024.zip",
-        "sha256": "edbabb8c5f7e33ae9f4446a927b736d6dec5683f87287131e3acc7e72d6ea7c5"
+        "size_bytes": 143812869,
+        "sha256": "edbabb8c5f7e33ae9f4446a927b736d6dec5683f87287131e3acc7e72d6ea7c5",
+        "pdf_occurrences": 30
       },
       {
         "name": "4887_2025.zip",
-        "sha256": "d1b820a382bfbd8366985299ebb496705203380df9b64b5e9fec4f2bd9060f63"
+        "size_bytes": 76856333,
+        "sha256": "d1b820a382bfbd8366985299ebb496705203380df9b64b5e9fec4f2bd9060f63",
+        "pdf_occurrences": 14
       }
     ],
-    "verified_subset": {
-      "pdf_files": 100,
-      "pages": 1828,
-      "image_only_pdfs": 25,
-      "partially_searchable_pdfs": 9,
-      "exact_cross_archive_duplicate_groups": 1
+    "corpus": {
+      "pdf_occurrences": 191,
+      "unique_pdf_binaries": 190,
+      "exact_cross_family_duplicate_binaries": 1,
+      "register": "assets/data/cabildo-six-zip-register-index-v1.json"
     },
-    "open_native_archive": {
-      "name": "3671_2022.zip",
-      "size_bytes": 356624754,
-      "sha256": null,
-      "state": "INTACT_CONNECTED_SOURCE_VISIBLE_NATIVE_DOWNLOAD_BLOCKED_BY_256_MIB_CONNECTOR_LIMIT",
-      "safety": "A structurally corrupt tablet-uploaded copy is excluded from evidential authority."
+    "nested_rar_boundary": {
+      "count": 2,
+      "status": "HASH_REGISTERED_INNER_EXTRACTION_PENDING",
+      "note": "Do not describe the 3671 registry/title sub-corpus as exhaustively closed until the two RAR members are extracted and indexed."
+    },
+    "criminal_context": {
+      "map": "assets/data/cabildo-saip-criminal-evidence-map-v1.json",
+      "publication_control": "archive/CABILDO_SAIP_CRIMINAL_EVIDENCE_PUBLICATION_CONTROL_18SEP2026.md"
     }
   },
   "existing_aeat_controls_reused": [
