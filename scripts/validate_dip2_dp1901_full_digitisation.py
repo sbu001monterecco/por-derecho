@@ -133,14 +133,14 @@ def main() -> None:
         if not any(marker in page.casefold() for marker in ["crítica", "critique"]):
             fail(f"{rel}: missing contextual critique layer")
 
-    for rel in [
-        "es/dp-1901-2026-auto-14-septiembre-2026/index.html",
-        "en/dp-1901-2026-order-14-september-2026/index.html",
+    for rel, source_boundary_marker in [
+        ("es/dp-1901-2026-auto-14-septiembre-2026/index.html", "nativo"),
+        ("en/dp-1901-2026-order-14-september-2026/index.html", "native"),
     ]:
         page=(ROOT/rel).read_text(encoding="utf-8")
         if "auto-14sep2026-public-controlled-transcription.pdf" not in page:
             fail(f"{rel}: missing embedded DP1901 PDF derivative")
-        if "native" not in page.casefold():
+        if source_boundary_marker not in page.casefold():
             fail(f"{rel}: missing non-native source boundary")
         if not any(marker in page.casefold() for marker in ["crítica", "critique"]):
             fail(f"{rel}: missing contextual critique layer")
