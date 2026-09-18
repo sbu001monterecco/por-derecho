@@ -1073,15 +1073,15 @@
       "Secondary_Reference": "",
       "NIG": "3501643220260016977",
       "Date_or_Period": "2026",
-      "Connection": "Private-actor/CAM documents; title/accounting; DIP 2 link; finite AC cross-evidence only",
-      "Object_or_Purpose": "Separate criminal/documentary verification and admission-control route",
-      "Status": "Providencia 12 Jul 2026 gave Fiscalía five days on admission; later act not located",
-      "Latest_Known_Event": "",
+      "Connection": "Procedural-identity collision: July private-actor/Control-21 mapping versus DIP2/prevarication treatment; exact intake/reparto bridge open",
+      "Object_or_Purpose": "Criminal proceeding now disposed by 14-Sep order; scope/provenance and autonomous private-actor lane require certification",
+      "Status": "Auto 14 Sep 2026 treats proceeding as alleged prevaricación; records Fiscal report of 29 Jul seeking archive; orders sobreseimiento libre/archive",
+      "Latest_Known_Event": "Full 3-page public transcription created 18 Sep from source photographs",
       "Appeal_or_Review": "",
       "Parent_Master_ID": "",
-      "Linked_Proceedings": "",
-      "Source_Status": "VERIFIED_PRIMARY",
-      "Open_Reference_Gap": "Fiscal report, later order, docket and annex index"
+      "Linked_Proceedings": "GC-FIS-017; NAT-FIS-004",
+      "Source_Status": "VERIFIED_PRIMARY_COPY_PHOTOGRAPH_TRANSCRIPTION",
+      "Open_Reference_Gap": "Signed 29-Jul Fiscal report; native/certified 14-Sep order; legal notification metadata; initiating document; certified docket/index; Control 21/daily-reference-24 reparto and any joinder/reassignment act"
     },
     {
       "Master_ID": "GC-CRI-009",
