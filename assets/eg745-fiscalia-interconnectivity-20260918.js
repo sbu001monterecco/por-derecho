@@ -17,6 +17,7 @@
   const es=lang==='es';
   const links=es?[
     ['Respuesta EG 745','../eg-745-respuesta-inminente-matriz-fiscalia/'],
+    ['PDF Fiscalía','../ministerio-fiscal-documentos-pdf/'],
     ['E.G. 745/2026','../fiscalia-inspeccion-exp-gub-745-2026/'],
     ['Ministerio Fiscal','../carta-abierta-ministerio-fiscal/'],
     ['DP 1901/2026','../dp-1901-2026-auto-14-septiembre-2026/'],
@@ -26,6 +27,7 @@
     ['Mapa de procedimientos','../mapa-procedimientos/#case-prism']
   ]:[
     ['E.G. 745 response','../eg-745-imminent-response-prosecution-matrix/'],
+    ['Prosecution PDFs','../public-prosecution-pdf-document-room/'],
     ['E.G. 745/2026','../public-prosecution-inspection-exp-gub-745-2026/'],
     ['Public Prosecution','../open-letter-public-prosecution-service/'],
     ['DP 1901/2026','../dp-1901-2026-order-14-september-2026/'],
