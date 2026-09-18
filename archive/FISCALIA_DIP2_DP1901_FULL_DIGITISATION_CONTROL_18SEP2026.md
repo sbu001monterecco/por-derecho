@@ -13,7 +13,7 @@ The repository now carries searchable, page-accounted public-safe transcriptions
 3. 6 March 2026 signed archive decree - 10 pages (previously digitised).
 4. 9 March 2026 signed notice - 1 page (previously digitised).
 5. 11 March 2026 update/correction communication - 4 pages.
-6. 11 March 2026 REGAGE receipt - 2 pages.
+6. 11 March 2026 REGAGE receipt - 2 pages.\n7. Automated registry-processing trace: the same registration is reported as passed\n   to Registro General Fiscalía de la Comunidad Autónoma de Canarias at 08:25:36 on\n   12 March 2026; the 14 March email expressly states that it is informational and has\n   no legal value.
 
 The 6 March decree records that a separate opening decree was issued on 11 February 2026. That opening decree is still not located and therefore prevents any claim that the **entire certified Fiscalía file** is complete.
 
@@ -90,7 +90,7 @@ Update together:
 
 1. Separate 11 February 2026 DIP 2 opening decree.
 2. Complete certified DIP 2 docket/index.
-3. Proof of incorporation/handling of REGAGE26e00026303869.
+3. Substantive incorporation/handling of REGAGE26e00026303869. Formal registry\n   routing to the Fiscalía CAC registry office is now documented, but case-file\n   incorporation, handler/access, merits treatment and reconsideration remain open.
 4. Signed 29 July 2026 DP 1901 Fiscal report, author, assignment, corpus and reasoning.
 5. Native/certified 14 September DP 1901 order and legal notification metadata.
 6. Certified Control 21 / daily-reference-24 reparto trail and any joinder/reassignment act.
@@ -98,3 +98,4 @@ Update together:
 ## 8. Publication and liability boundary
 
 Digitisation preserves what documents say. It does not convert allegations into facts, an adverse decision into criminality, or a source discrepancy into proof of intent. Any allegation of prevaricación, capture, coordination or institutional protection remains actor-specific and must be tested against the complete source corpus and lawful alternative explanations.
+\n\n## 9. Public comparator divergence\n\nThe 18 September read-only scan of GitLab public Pages found materially stale DP 1901 / E.G. 745 status text. The controlled divergence note is `ops/GITLAB_PUBLIC_PAGES_DIVERGENCE_18SEP2026.md`. No authenticated GitLab action was attempted while account access remains blocked.\n
