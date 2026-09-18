@@ -3,7 +3,7 @@
   "publication_id": "FISCALIA_DIP2_DP1901_FULL_DIGITISATION_20260918",
   "owner": "Gil Marer / Por Derecho",
   "control_date": "2026-09-18",
-  "status": "BRANCH_IMPLEMENTATION_PENDING_PR_MERGE_DEPLOYMENT",
+  "status": "SOURCE_ROOM_COMPLETE_FOR_LOCATED_CORPUS",
   "scope": [
     "DIP 2/2026 available-corpus full-text digitisation",
     "11 March 2026 correction and REGAGE trace",
@@ -96,5 +96,30 @@
     "The appeal-status discrepancy does not by itself prove deliberate falsehood or prosecutorial misconduct.",
     "The 29 July dismissal request does not by itself prove capture, prevaricacion, coordination or criminality.",
     "Control 21 and daily reference no. 24 remain separate intake records until certified reparto evidence resolves the DP 1901 mapping."
-  ]
+  ],
+  "branch": "update/dip2-dp1901-full-digitisation-18sep2026",
+  "current_state": "BRANCH_IMPLEMENTATION_COMPLETE_PR_PENDING",
+  "expected_source_files": [
+    "evidence/fiscalia/dip-2-2026/README.md",
+    "evidence/fiscalia/dip-2-2026/full-text/denuncia-inicial-13ene2026-public-transcription.md",
+    "evidence/fiscalia/dip-2-2026/full-text/ampliacion-08feb2026-public-transcription.md",
+    "evidence/fiscalia/dip-2-2026/full-text/decreto-archivo-dip-2-2026-06mar2026-public-transcription.md",
+    "evidence/fiscalia/dip-2-2026/full-text/oficio-notificacion-dip-2-2026-09mar2026-public-transcription.md",
+    "evidence/fiscalia/dip-2-2026/full-text/actualizacion-11mar2026-public-transcription.md",
+    "evidence/fiscalia/dip-2-2026/full-text/registro-11mar2026-public-transcription.md",
+    "evidence/fiscalia/2026/DIP2_INACCURACY_ANALYTICAL_ERROR_LEDGER_18SEP2026.md",
+    "evidence/judicial/dp-1901-2026/full-text/auto-14sep2026-public-transcription.md",
+    "archive/FISCALIA_DIP2_DP1901_FULL_DIGITISATION_CONTROL_18SEP2026.md",
+    "scripts/validate_dip2_dp1901_full_digitisation.py"
+  ],
+  "validation": {
+    "status": "CI_PENDING_PR",
+    "dedicated_workflow": ".github/workflows/validate-dip2-dp1901-full-digitisation.yml",
+    "required_boundaries": [
+      "available located DIP2 corpus fully digitised; complete certified file not claimed",
+      "DP1901 order transcribed from photographs; native court PDF not claimed",
+      "appeal discrepancy does not prove deliberate falsehood",
+      "29-Jul dismissal request does not prove criminality"
+    ]
+  }
 }
