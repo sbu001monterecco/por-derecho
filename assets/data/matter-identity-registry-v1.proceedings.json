@@ -104,7 +104,7 @@
       ],
       "competent_organ": "PD-SP-I-0028",
       "nig": "3501670220260000245",
-      "procedural_state": "ARCHIVED_6_MARCH_2026_APPEAL_STATUS_PREMISE_CORRECTED_11_MARCH",
+      "procedural_state": "ARCHIVED_6_MARCH_2026; APPEAL_STATUS_CORRECTION_COMMUNICATED_11_MARCH; POST_CORRECTION_TREATMENT_NOT_LOCATED; DP1901_PROPAGATION_AUDIT_OPEN",
       "related_master_register_ids": [
         "GC-CRI-008",
         "GC-FIS-033"
@@ -112,7 +112,16 @@
       "identity_sources": [
         "archive/FISCALIA_DIP2_2026_OFFICIAL_RECORD_PUBLICATION_CONTROL_25AUG2026.md"
       ],
-      "identity_boundary": "Exact superior-office file, NIG and located archive/correction sequence only. The corrected appeal-status premise does not prove deliberate falsehood, require a different result or establish wrongdoing."
+      "identity_boundary": "Exact superior-office file, NIG and located archive/correction sequence only. The corrected appeal-status premise does not prove deliberate falsehood, require a different result or establish wrongdoing.",
+      "source_status": "VERIFIED_PRIMARY_PLUS_REGISTERED_CORRECTION",
+      "open_evidence": [
+        "complete certified DIP 2/2026 file",
+        "separate 11 February opening decree",
+        "ATLANTE 2 March query/audit trail and exact extracted documents",
+        "incorporation/examination/reconsideration after REGAGE26e00026303869",
+        "transmission bridge into DP 1901/2026",
+        "signed 29 July 2026 DP 1901 Fiscal report and source corpus"
+      ]
     },
     {
       "id": "PD-SP-R-0007",

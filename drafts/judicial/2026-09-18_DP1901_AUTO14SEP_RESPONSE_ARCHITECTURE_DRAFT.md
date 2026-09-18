@@ -6,7 +6,7 @@
 
 ## Controlling source event
 
-The 14 September 2026 order in DP 1901/2026 (NIG 3501643220260016977; IUP LI2026017152) states that the proceeding was opened on a complaint for alleged judicial prevarication, records that a Ministerio Fiscal report dated 29 July 2026 sought archive, and orders sobreseimiento libre/archive.
+The 14 September 2026 order in DP 1901/2026 (NIG 3501643220260016977; IUP LI2026017152), now fully transcribed from the three source photographs with page-level SHA-256 control, states that the proceeding was opened on a complaint for alleged judicial prevarication, records that a Ministerio Fiscal report dated 29 July 2026 sought archive, and orders sobreseimiento libre/archive.
 
 This draft does not treat the underlying Fiscal report as produced and does not fix any appeal deadline from the order date alone.
 
@@ -43,7 +43,8 @@ The report is no longer hypothetical. Demand:
 - any visado, hierarchical instruction or review;
 - exact reasoning for archive;
 - treatment of Control 21 / daily reference 24 / DIP 2;
-- treatment of the appeal-history correction.
+- treatment of the appeal-history discrepancy and the registered 11 March DIP 2 correction;
+- whether the Fiscal received the 6-Mar DIP 2 Decree, the 11-Mar update, the later appeal record, or only a subset.
 
 The dismissal request alone is not proof of misconduct.
 
@@ -85,3 +86,12 @@ Subject to counsel and remedy selection:
 ## Filing / publication boundary
 
 This document is an internal response architecture. It is not a filed recurso, not service, not legal advice to third parties, and not proof that any person committed prevaricación or that Ministerio Fiscal acted unlawfully.
+
+
+## Source-control links
+
+- `evidence/judicial/dp-1901-2026/full-text/auto-14sep2026-photo-transcription.md`
+- `evidence/fiscalia/dip-2-2026/full-text/decreto-archivo-dip-2-2026-06mar2026-public-transcription.md`
+- `evidence/fiscalia/dip-2-2026/full-text/oficio-notificacion-dip-2-2026-09mar2026-public-transcription.md`
+- `evidence/fiscalia/dip-2-2026/full-text/comunicacion-actualizacion-dip-2-2026-11mar2026-transcription.md`
+- `evidence/fiscalia/dip-2-2026/DIP2_INACCURACIES_ERRORS_AUDIT_18SEP2026.md`
