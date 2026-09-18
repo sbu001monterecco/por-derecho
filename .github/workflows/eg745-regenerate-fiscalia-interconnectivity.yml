@@ -17,7 +17,7 @@ jobs:
         with:
           python-version: "3.12"
       - name: Regenerate Fiscalia interconnectivity projection
-        run: python scripts/build_fiscalia_proceedings_interconnectivity.py
+        run: python scripts/build_fiscalia_proceedings_interconnectivity.py --apply
       - name: Verify deterministic projection
         run: python scripts/build_fiscalia_proceedings_interconnectivity.py --check
       - name: Validate Fiscalia interconnectivity
