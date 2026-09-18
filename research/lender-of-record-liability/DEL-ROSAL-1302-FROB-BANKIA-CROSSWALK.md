@@ -12,7 +12,6 @@ The controlled position is now:
 
 - substantive **pre-engagement** review and meetings are documented in 2022;
 - DRAS classified and ordered a substantial Concurso 36/2012 corpus and identified a later penal-analysis phase;
-- the project records that funding constraints prevented a retained engagement being concluded;
 - no public page should describe Bernardo del Rosal, Félix Adame or Natalia García as former retained counsel on this matter;
 - private correspondence, billing and native source identifiers remain private.
 
