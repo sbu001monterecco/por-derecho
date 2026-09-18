@@ -1,0 +1,67 @@
+{
+  "schema": "por-derecho.cabildo-six-zip-register-index.v1",
+  "control_date": "2026-09-18",
+  "source": "Cabildo de Lanzarote April 2026 SAIP production",
+  "pdf_occurrences": 191,
+  "unique_pdf_binaries": 190,
+  "exact_cross_family_duplicate": {
+    "evidence_id": "PD-CAB-SAIP-PDF-0002",
+    "sha256": "a80a1142e04e608f1c2868f548d13be5cf651cbc359403cdc9b1997aab249913",
+    "rule": "two occurrences of one binary are not independent corroboration"
+  },
+  "nested_rar_members": [
+    {
+      "family": "3671/2022",
+      "member": "3671_2022/18. 05Notas Informativas. 1.rar",
+      "size_bytes": 1868009,
+      "sha256": "fcd3bc424af6c2316585c7055385eb86061b7c14bbbde71bd7c9c58a2a08d5ef",
+      "status": "REGISTERED_EXTRACTION_PENDING_TOOLING"
+    },
+    {
+      "family": "3671/2022",
+      "member": "3671_2022/19. 05Notas Informativas. 2.rar",
+      "size_bytes": 36393233,
+      "sha256": "6d44b8d3b500d62f900ee035af3bfb9d4dacc5ef11bd78621e045cf083f0ca47",
+      "status": "REGISTERED_EXTRACTION_PENDING_TOOLING"
+    }
+  ],
+  "registers": [
+    {
+      "family": "3671/2022",
+      "path": "cabildo-six-zip-register/3671_2022.csv",
+      "occurrences": 91
+    },
+    {
+      "family": "2984/2023",
+      "path": "cabildo-six-zip-register/2984_2023.csv",
+      "occurrences": 14
+    },
+    {
+      "family": "17070/2023",
+      "path": "cabildo-six-zip-register/17070_2023.csv",
+      "occurrences": 21
+    },
+    {
+      "family": "19995/2023",
+      "path": "cabildo-six-zip-register/19995_2023.csv",
+      "occurrences": 21
+    },
+    {
+      "family": "7206/2024",
+      "path": "cabildo-six-zip-register/7206_2024.csv",
+      "occurrences": 30
+    },
+    {
+      "family": "4887/2025",
+      "path": "cabildo-six-zip-register/4887_2025.csv",
+      "occurrences": 14
+    }
+  ],
+  "publication_rule": "Every native source is registered by hash. Public PDF publication is a separate state requiring privacy review; contextual criminal annotations never alter the source PDF.",
+  "canonical_repository": {
+    "system": "GitLab",
+    "project_id": 86151898,
+    "status": "CANONICAL_AUTHORITY_AUTHENTICATED_ACCESS_BLOCKED",
+    "rule": "GitHub is outage-continuity; reconcile additively against then-current GitLab main after reinstatement."
+  }
+}
