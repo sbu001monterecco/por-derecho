@@ -1,6 +1,8 @@
 # Comunicación de actualización — DIP 2/2026 — 11 marzo 2026
 
-- Evidence ID: `EVID-2026-FISCALIA-DIP2-ACTUALIZACION-003`
+> **Legacy path control:** this path was created by the partial 18-September continuity update. The canonical validated transcription is `actualizacion-11mar2026-public-transcription.md`. Both refer to the same native PDF (SHA-256 `0c3116c35b7dea1976dd39ee043898d0aa6b5b1164c36c9b014b4c3ca70d85b9`) and the same canonical evidence ID `EVID-2026-FISCALIA-DIP2-ACTUALIZACION-11MAR-005`; they must not be counted as two sources.
+
+- Evidence ID: `EVID-2026-FISCALIA-DIP2-ACTUALIZACION-11MAR-005`
 - Source date: 11 de marzo de 2026
 - Author / signatory: Gil Marer
 - Addressee: Fiscalía de la Comunidad Autónoma de Canarias (Fiscalía Superior de Canarias)
