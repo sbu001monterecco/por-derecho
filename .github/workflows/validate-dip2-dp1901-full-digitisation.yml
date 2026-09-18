@@ -7,7 +7,7 @@ on:
       - 'evidence/fiscalia/2026/DIP2_INACCURACY_ANALYTICAL_ERROR_LEDGER_18SEP2026.md'
       - 'evidence/judicial/dp-1901-2026/**'
       - 'archive/FISCALIA_DIP2_DP1901_FULL_DIGITISATION_CONTROL_18SEP2026.md'
-      - 'publication-manifests/fiscalia-dip2-dp1901-full-digitisation-20260918.json'
+      - 'evidence/fiscalia/2026/DIP2_DP1901_FULL_DIGITISATION_STATE_18SEP2026.json'
       - 'scripts/validate_dip2_dp1901_full_digitisation.py'
       - 'es/fiscalia-dip-2-2026/**'
       - 'en/fiscalia-dip-2-2026/**'
@@ -20,7 +20,7 @@ on:
       - 'evidence/fiscalia/2026/DIP2_INACCURACY_ANALYTICAL_ERROR_LEDGER_18SEP2026.md'
       - 'evidence/judicial/dp-1901-2026/**'
       - 'archive/FISCALIA_DIP2_DP1901_FULL_DIGITISATION_CONTROL_18SEP2026.md'
-      - 'publication-manifests/fiscalia-dip2-dp1901-full-digitisation-20260918.json'
+      - 'evidence/fiscalia/2026/DIP2_DP1901_FULL_DIGITISATION_STATE_18SEP2026.json'
       - 'scripts/validate_dip2_dp1901_full_digitisation.py'
       - 'es/fiscalia-dip-2-2026/**'
       - 'en/fiscalia-dip-2-2026/**'
@@ -47,7 +47,7 @@ jobs:
           import json, xml.etree.ElementTree as ET
           from pathlib import Path
           for p in [
-            'publication-manifests/fiscalia-dip2-dp1901-full-digitisation-20260918.json',
+            'evidence/fiscalia/2026/DIP2_DP1901_FULL_DIGITISATION_STATE_18SEP2026.json',
             'assets/data/fiscalia-response-correspondence.json',
             'assets/data/fiscalia-proceedings-link-assertions-v1.json',
             'assets/data/ministerio-fiscal-directory-v1.json',
