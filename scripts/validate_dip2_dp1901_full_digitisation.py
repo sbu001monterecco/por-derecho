@@ -59,6 +59,7 @@ FILES = {
 }
 
 AUTO_PDF = "evidence/judicial/dp-1901-2026/public-pdfs/auto-14sep2026-public-controlled-transcription.pdf"
+SOURCE_CLOSURE = "evidence/judicial/dp-1901-2026/PROCEDURAL_IDENTITY_SOURCE_CLOSURE_18SEP2026.md"
 
 PUBLIC_PAGES = [
     "es/fiscalia-dip-2-2026/index.html",
@@ -104,6 +105,23 @@ def main() -> None:
     if not (ROOT/AUTO_PDF).is_file():
         fail(f"missing DP1901 public PDF derivative: {AUTO_PDF}")
 
+    source_closure_path=ROOT/SOURCE_CLOSURE
+    if not source_closure_path.is_file():
+        fail(f"missing DP1901 procedural-identity source closure: {SOURCE_CLOSURE}")
+    source_closure=source_closure_path.read_text(encoding="utf-8")
+    for marker in [
+        "PROCEDURAL_IDENTITY_COLLISION_OPEN — DIRECTION NOT CERTIFIED",
+        "dfad6f405b7a2ec047a98a7183a9cbfd0698427d3925d02b2a50b4de76de8f71",
+        "2f9b7015598094c68f6408b68a776073de1d7d2fa248169be46fd57bf3bad6c3",
+        "8ee03884d32b6b3d9e8377a646eca3d79a7ae199aebc8cc378a9180ba2aef846",
+        "does **not** prove",
+    ]:
+        if marker not in source_closure:
+            fail(f"source closure missing marker {marker!r}")
+    for token in FORBIDDEN_PUBLIC:
+        if token.casefold() in source_closure.casefold():
+            fail(f"{SOURCE_CLOSURE}: forbidden private token leaked: {token}")
+
     for rel in PUBLIC_PAGES:
         p=ROOT/rel
         if not p.is_file():
@@ -144,6 +162,8 @@ def main() -> None:
             fail(f"{rel}: missing non-native source boundary")
         if not any(marker in page.casefold() for marker in ["crítica", "critique"]):
             fail(f"{rel}: missing contextual critique layer")
+        if "PROCEDURAL_IDENTITY_SOURCE_CLOSURE_18SEP2026.md" not in page:
+            fail(f"{rel}: missing DP1901 source-closure link")
 
     divergence=(ROOT/"ops/GITLAB_PUBLIC_PAGES_DIVERGENCE_18SEP2026.md").read_text(encoding="utf-8")
     for marker in ["PROCEDURAL_IDENTITY_COLLISION_OPEN", "29 July 2026", "read-only comparator"]:
@@ -154,6 +174,41 @@ def main() -> None:
     for marker in ["DIP2-ERR-01","DOCUMENTED SOURCE-TO-PREMISE DISCREPANCY","PROPAGATION QUESTION"]:
         if marker not in ledger:
             fail(f"error ledger missing {marker!r}")
+
+    three_track=json.loads((ROOT/"data/three-track-full-digitisation-20260904.json").read_text(encoding="utf-8"))
+    tracks={item["track_id"]: item for item in three_track.get("tracks", [])}
+    private_track=tracks.get("DP1901-C21", {})
+    if private_track.get("base_filing",{}).get("pages") != 86:
+        fail("three-track DP1901 private base source must be 86 pages")
+    if private_track.get("immediate_amplification",{}).get("pages") != 26:
+        fail("three-track DP1901 immediate amplification must be 26 pages")
+    if private_track.get("expansion",{}).get("pages") != 19:
+        fail("three-track DP1901 9-Jul amplification must be 19 pages")
+    judge_track=tracks.get("C24-JUDGE", {})
+    if judge_track.get("base_filing",{}).get("pages") != 79:
+        fail("three-track judge package must be 79 pages total")
+    if judge_track.get("base_filing",{}).get("principal_document_bundle_pages") != 31:
+        fail("three-track judge principal document bundle must be 31 pages")
+    if judge_track.get("base_filing",{}).get("principal_pleading_pages") != 27:
+        fail("three-track judge pleading must be 27 pages")
+    if judge_track.get("base_filing",{}).get("presentation_front_matter_pages") != 4:
+        fail("three-track judge front matter must be 4 pages")
+    if judge_track.get("supplement",{}).get("pages") != 13:
+        fail("three-track judge dependent supplement must be 13 pages")
+    if "DIRECTION NOT CERTIFIED" not in judge_track.get("status_control",{}).get("supervening_status_20260918",""):
+        fail("three-track judge/DP1901 collision direction must remain uncertified")
+
+    for rel in [
+        "es/dp-1901-2026/index.html",
+        "en/dp-1901-2026/index.html",
+    ]:
+        gateway=(ROOT/rel).read_text(encoding="utf-8")
+        if "PROCEDURAL_IDENTITY_SOURCE_CLOSURE_18SEP2026.md" not in gateway:
+            fail(f"{rel}: missing DP1901 source-closure link")
+        if "principally a private-actor/CAM route" in gateway:
+            fail(f"{rel}: stale settled private-actor route assertion")
+        if "principalmente una vía privada/CAM" in gateway:
+            fail(f"{rel}: stale settled private-actor route assertion")
 
     manifest=json.loads((ROOT/"evidence/fiscalia/2026/DIP2_DP1901_FULL_DIGITISATION_STATE_18SEP2026.json").read_text(encoding="utf-8"))
     if manifest.get("publication_id")!="FISCALIA_DIP2_DP1901_FULL_DIGITISATION_20260918":
