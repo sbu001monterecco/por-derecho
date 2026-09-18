@@ -165,7 +165,7 @@ Gil Marer requests acknowledgment, independent investigation and a reasoned answ
 
 The broader materiality scope expressly requested on 12 September supersedes any historical shorthand limiting Orion relevance exclusively to FMMM. It preserves the core correction: Sun Park/MYND and Orion are separate RICPE branches; no asset/fund/security transfer or duplicated funding is presumed. The direct attributed criminal theory remains, with actor-specific proof and contrary evidence.
 
-Portfolio's 11 September response is registered as PD-SP-EVT-0180 in the canonical communications register. It states incorporation, review/understanding and onward submission to CNMV; it is not a merits finding or independent CNMV receipt. No email was sent by this update. Raw mail, private locators and privileged advice remain outside Git.
+SUPERSEDED REFERENCE — an earlier draft associated Portfolio's 11 September response with `PD-SP-EVT-0180`. That identifier is now reserved in the live canonical register for CajaSiete's 18 September 2026 institutional response. Do not reuse `0180` for Portfolio. The Portfolio 11 September event must be read through the later Orion/Martin reconciliation and its own source-controlled identity; this archive deliberately does not invent or reallocate a replacement ID. The underlying statement about incorporation/review/onward submission remains a source claim subject to the corrected reconciliation. Raw mail, private locators and privileged advice remain outside Git.
 
 ### Acquisition limits and continuity
 
