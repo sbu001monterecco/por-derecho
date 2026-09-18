@@ -44,6 +44,12 @@ FILES = {
         "pages": 2,
         "required": ["REGAGE26e00026303869", "## Página 2 de 2", "391e7e2b85dc51caa1e71ecfcfb121668edb6cb4b6f5d9fe20a6dd64d21f154df45c9ed753b15b7993ae23a1cd774340c1e1f00c9ba3a1f426941c6b8a3b6578"],
     },
+    "evidence/fiscalia/dip-2-2026/full-text/registro-tramitacion-12mar2026-email-public-transcription.md": {
+        "id": "EVID-2026-FISCALIA-DIP2-REGAGE-TRAMITACION-007",
+        "hash": None,
+        "pages": 0,
+        "required": ["08:25:36", "informational and has no legal", "does **not** establish"],
+    },
     "evidence/judicial/dp-1901-2026/full-text/auto-14sep2026-public-transcription.md": {
         "id": "EVID-2026-DP1901-AUTO-14SEP-001",
         "hash": None,
@@ -104,10 +110,24 @@ def main() -> None:
         "EVID-2026-FISCALIA-DIP2-AMPLIACION-08FEB-002",
         "EVID-2026-FISCALIA-DIP2-ACTUALIZACION-11MAR-005",
         "EVID-2026-FISCALIA-DIP2-REGAGE-11MAR-006",
+        "EVID-2026-FISCALIA-DIP2-REGAGE-TRAMITACION-007",
         "full digitisation of the **available located corpus**",
     ]:
         if marker not in readme:
             fail(f"DIP2 README missing {marker!r}")
+
+    for rel in [
+        "es/fiscalia-dip-2-2026/index.html",
+        "en/fiscalia-dip-2-2026/index.html",
+    ]:
+        page=(ROOT/rel).read_text(encoding="utf-8")
+        if "registro-tramitacion-12mar2026-email-public-transcription.md" not in page:
+            fail(f"{rel}: missing registry-processing trace link")
+
+    divergence=(ROOT/"ops/GITLAB_PUBLIC_PAGES_DIVERGENCE_18SEP2026.md").read_text(encoding="utf-8")
+    for marker in ["PROCEDURAL_IDENTITY_COLLISION_OPEN", "29 July 2026", "read-only comparator"]:
+        if marker not in divergence:
+            fail(f"GitLab divergence control missing {marker!r}")
 
     ledger=(ROOT/"evidence/fiscalia/2026/DIP2_INACCURACY_ANALYTICAL_ERROR_LEDGER_18SEP2026.md").read_text(encoding="utf-8")
     for marker in ["DIP2-ERR-01","DOCUMENTED SOURCE-TO-PREMISE DISCREPANCY","PROPAGATION QUESTION"]:
