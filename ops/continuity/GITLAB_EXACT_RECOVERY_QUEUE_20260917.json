@@ -72,6 +72,20 @@
       ],
       "known": "Public-safe outage continuity records Cabildo 13811/2026 / Decreto 2026-6999 grant acquisition, 13817/2026 / Decreto 2026-7000, Comisionado incoming register 2612/2026, privacy hold and the separate 3671/2022 native-byte custody gap. Raw private evidence was not published.",
       "recovery": "After GitLab restoration, inspect then-current canonical evidence/event/CAEPR/communications controls and the existing dedicated authority-evidence-received page. Reconcile additively, preserve newer GitLab work, assign any canonical event/CAEPR identifiers only from the current registry, and record exact GitHub source and GitLab destination SHAs."
+    },
+    {
+      "id": "GL-OUTAGE-002",
+      "object": "ChatGPT matter-workspace ingestion control — 18 September 2026",
+      "state": "GITHUB_OUTAGE_DELTA_PENDING_CANONICAL_RECONCILIATION",
+      "github_branch": "continuity/chatgpt-workspace-ingestion-20260918",
+      "github_paths": [
+        "archive/intelligence/CHATGPT_WORKSPACE_INGESTION_CONTROL_20260918.md",
+        "ops/continuity/CHATGPT_WORKSPACE_INGESTION_REGISTER_20260918.json",
+        "CURRENT_START_HERE.md",
+        "archive/intelligence/DELETION_AND_CONTINUITY_GATE.md"
+      ],
+      "known": "User paused deletion and directed all matter-related retrievable ChatGPT/workspace intelligence to be incorporated into GitHub now, excluding clearly unrelated personal/commercial material. Public/private separation and independent filing-proof rules remain in force.",
+      "recovery": "After GitLab restoration, reconcile the final merged GitHub control additively into then-current canonical GitLab continuity/governance files; preserve newer GitLab work; do not reconstruct GitLab-native state from chat memory."
     }
   ],
   "rules": [

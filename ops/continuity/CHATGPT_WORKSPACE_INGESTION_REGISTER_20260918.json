@@ -1,0 +1,200 @@
+{
+  "schema": "por-derecho.chatgpt-workspace-ingestion.v1",
+  "control_id": "PD-CHATGPT-INGEST-20260918-01",
+  "control_date": "2026-09-18",
+  "status": "ACTIVE_INGESTION_NO_DELETION",
+  "repository": "sbu001monterecco/por-derecho",
+  "canonical_authority": {
+    "platform": "GitLab",
+    "project_id": 86151898,
+    "status": "CANONICAL_BUT_AUTHENTICATED_ACCESS_BLOCKED"
+  },
+  "active_backend": "GitHub",
+  "source_scope": {
+    "basis": [
+      "retrievable ChatGPT history",
+      "user-supplied thread/workspace names",
+      "current GitHub state",
+      "existing continuity controls"
+    ],
+    "chatgpt_ui_inventory_complete": false,
+    "rule": "Verdict covers retrievable history and supplied names; it does not claim visibility of the ChatGPT app open/archive/sidebar UI."
+  },
+  "deletion_policy": {
+    "authorised_now": false,
+    "rule": "Retirement audit is an ingestion map, not a deletion map. No audited matter thread/workspace is authorised for deletion by this control."
+  },
+  "inclusion_rule": "Include material directly connected to Project Sun Rock / Por Derecho / Sun Park / Concurso 36/2012, connected proceedings, evidence, authorities, professionals/counterparties, repository continuity, source custody, public-site work and matter-specific communications.",
+  "exclusion_rule": "Exclude clearly unrelated personal/commercial material; for mixed threads ingest only the matter-specific delta.",
+  "inclusion_families": [
+    {
+      "id": "REPOSITORY_CONTINUITY",
+      "examples": [
+        "GitLab Safe Congestion Cleanup",
+        "GitLab Thread Status",
+        "Consolidation checkpoint update",
+        "GitLab scan summary / Sprint Reassessment",
+        "Por Derecho 84h Continuity",
+        "Overnight GitLab Watchdog",
+        "Duo Swarm Checkpoint",
+        "cross-thread master control",
+        "workspace persistence"
+      ],
+      "canonical_destinations": [
+        "ops/continuity/GITHUB_FIRST_48H_PLUS_36H_CONTINUITY_PLAN_20260917.md",
+        "ops/continuity/GITLAB_EXACT_RECOVERY_QUEUE_20260917.json",
+        "archive/intelligence/DELETION_AND_CONTINUITY_GATE.md",
+        "CURRENT_START_HERE.md",
+        "ops/CURRENT_COLLABORATION_STATE.json",
+        "docs/WORKSPACE_PERSISTENCE_RUNBOOK.md",
+        "data/workspace-register-v1.json"
+      ]
+    },
+    {
+      "id": "EVIDENCE_SOURCE_RECONSTRUCTION",
+      "examples": [
+        "Storytelling/documentary pilot",
+        "media/JDAM custody",
+        "Final Five",
+        "Mirror Account / CaixaBank",
+        "HJT / Treasury / Canary tax",
+        "PwC / Official Hotel",
+        "Five Actors",
+        "ACTUA",
+        "7 June 2018 / Fiscalía / ONA",
+        "Fiscalía corpus digitisation",
+        "RPE/MYND",
+        "AEAT",
+        "Google evidence/cooperation",
+        "Hotel Income 360",
+        "UGent matter material",
+        "Cabildo/Yaiza evidence reconstruction"
+      ]
+    },
+    {
+      "id": "PROCEEDINGS_AND_AUTHORITIES",
+      "examples": [
+        "EG 745/2026",
+        "DP 748/2026",
+        "JC 1048/2019",
+        "ETJ 163/2020",
+        "RPL 2523/2025",
+        "RPL 3304/2025",
+        "RPL 3319/2025",
+        "DP 1901/2026",
+        "1956/2026",
+        "169/2026",
+        "Cabildo",
+        "Yaiza",
+        "Comisionado",
+        "AEAT",
+        "Fiscalía",
+        "CGPJ"
+      ],
+      "external_action_boundary": "Repository continuity does not prove filing/service/submission. Require exact filed bytes plus official receipt/registration evidence."
+    },
+    {
+      "id": "PROFESSIONAL_FINANCIAL_COUNTERPARTY",
+      "examples": [
+        "Uría Menéndez",
+        "PwC",
+        "Cuatrecasas",
+        "Del Rosal / FROB-BFA-Bankia",
+        "CajaSiete / Orion / RICPE",
+        "Bankia / SAREB / Promontoria / Cerberus",
+        "Ona / Stoneweg / Varia / Elaia",
+        "ACTUA / Gesvalt",
+        "RSM / Grant Thornton / San Telmo"
+      ]
+    },
+    {
+      "id": "MATTER_COMMUNICATIONS",
+      "examples": [
+        "matter-specific LinkedIn/Cambiante",
+        "PwC outreach",
+        "Del Rosal outreach",
+        "authority/media outreach",
+        "bilingual public pages/readers"
+      ],
+      "state_separation": [
+        "DRAFT",
+        "APPROVED",
+        "SCHEDULED",
+        "SENT_OR_PUBLISHED",
+        "RECEIVED",
+        "RESPONDED"
+      ]
+    },
+    {
+      "id": "PRIVATE_CUSTODY_ONLY",
+      "examples": [
+        "raw complaint/filing PDFs",
+        "private counsel correspondence",
+        "private professional emails",
+        "Concurso native source residency",
+        "ACTUA private originals",
+        "matter-related email-security/anomaly evidence",
+        "protected whistleblower/source identity"
+      ],
+      "public_git_rule": "Store only public-safe metadata, hashes, custody/status controls, bounded summaries and retrieval obligations."
+    }
+  ],
+  "exclusions": [
+    "vehicle shopping",
+    "exercise/fitness/health planning",
+    "generic unrelated translation or language questions",
+    "generic AI/legal-ethics news not tied to a matter control",
+    "new-hotel acquisition or wealth-management outreach separate from Sun Park and the historic funded-exit evidence chain",
+    "unrelated investment/product/company research"
+  ],
+  "mixed_thread_rule": "Ingest only the matter-specific delta.",
+  "eg745_boundary": {
+    "repository_continuity": "IN_SCOPE",
+    "filing_state": "SEPARATE_EXTERNAL_PROCEDURAL_FACT",
+    "filing_proof_required": [
+      "exact signed/filed bytes",
+      "official registry/filing receipt or equivalent",
+      "timestamp/status evidence"
+    ],
+    "no_inference_from_repository": true
+  },
+  "gitlab_recovery": {
+    "last_verified_main_sha": "7d086d098676eecc2c1647ed09b348d8dc0bdc69",
+    "exact_recovery_control": "ops/continuity/GITLAB_EXACT_RECOVERY_QUEUE_20260917.json",
+    "legacy_mr_references_from_audit": [
+      "!196",
+      "!214",
+      "!311",
+      "!324",
+      "!332",
+      "!350",
+      "!417",
+      "!419",
+      "!422",
+      "!423",
+      "!432",
+      "!441",
+      "!442",
+      "!455",
+      "!459",
+      "!464",
+      "!470",
+      "!492",
+      "!495",
+      "!498-!506",
+      "!519",
+      "!522-!526"
+    ],
+    "reference_status": "AUDIT_DERIVED_PENDING_EXACT_GITLAB_VERIFICATION",
+    "rule": "Do not reconstruct unavailable GitLab-native bytes or metadata from chat memory."
+  },
+  "next_actions": [
+    "Continue source-by-source ingestion for all in-scope thread families.",
+    "Verify independent private custody for unique non-public sources.",
+    "Reconcile all outage-period GitHub work additively into then-current GitLab main after access restoration.",
+    "Resolve materially open source-residency/publication gaps before any future deletion decision.",
+    "Keep EG745 and all other external filing states independently evidenced.",
+    "Run a fresh-thread recovery test only after ingestion/reconciliation is complete.",
+    "Require a later explicit user instruction before deleting any audited matter thread."
+  ]
+}

@@ -1,5 +1,7 @@
 # CURRENT START HERE — Por Derecho
 
+> **18-Sep-2026 ChatGPT workspace ingestion hold:** the retirement audit is now an **ingestion map, not a deletion map**. Do not delete audited matter threads/workspaces. Read `archive/intelligence/CHATGPT_WORKSPACE_INGESTION_CONTROL_20260918.md` and `ops/continuity/CHATGPT_WORKSPACE_INGESTION_REGISTER_20260918.json`. Ingest matter-specific reusable intelligence into existing canonical controls; exclude clearly unrelated personal/commercial material; keep private sources private; and keep repository continuity separate from proof of an external filing such as EG 745/2026.
+
 **Routing status:** CURRENT 04-SEP-2026 MULTI-THREAD COLLABORATION / SINGLE-INTEGRATION CONTROL  
 **Current operational truth:** `ops/CURRENT_STATE.json`  
 **Current collaboration routing:** `ops/CURRENT_COLLABORATION_STATE.json`  
