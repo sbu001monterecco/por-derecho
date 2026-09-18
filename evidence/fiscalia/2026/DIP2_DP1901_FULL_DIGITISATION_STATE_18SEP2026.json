@@ -85,7 +85,13 @@
         "legal notification metadata",
         "29-Jul signed Fiscal report",
         "Control21/daily-ref-24 reparto bridge"
-      ]
+      ],
+      "public_pdf_derivative": {
+        "path": "evidence/judicial/dp-1901-2026/public-pdfs/auto-14sep2026-public-controlled-transcription.pdf",
+        "pages": 3,
+        "sha256": "2cb0944b50a20b890def32638dd44a7a0add6ce6bdca7681b63e46a4e997f557",
+        "source_relation": "generated from canonical public transcription checked against the three source photographs; not native court PDF"
+      }
     }
   },
   "privacy": {
