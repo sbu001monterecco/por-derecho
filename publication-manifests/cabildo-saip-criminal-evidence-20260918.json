@@ -1,0 +1,68 @@
+{
+  "schema": "por-derecho.publication-manifest.v1",
+  "control_date": "2026-09-18",
+  "release": "cabildo-saip-criminal-evidence",
+  "repository_role": "GitHub outage continuity; canonical GitLab project 86151898 remains blocked and requires additive reconciliation after reinstatement.",
+  "source_denominator": {
+    "zip_families": 6,
+    "pdf_occurrences": 191,
+    "unique_pdf_binaries": 190,
+    "cross_family_exact_duplicates": 1,
+    "nested_rars_registered": 2
+  },
+  "public_routes": [
+    "es/evidencia-recibida-cabildo-lanzarote/index.html",
+    "en/evidence-received-cabildo-lanzarote/index.html",
+    "es/cabildo-lanzarote-mapa-penal/index.html",
+    "en/cabildo-lanzarote-criminal-evidence-map/index.html",
+    "es/evidencia-recibida-cabildo-lanzarote/visor-pdf.html",
+    "en/evidence-received-cabildo-lanzarote/pdf-viewer.html"
+  ],
+  "updated_routes": [
+    "es/cabildo-lanzarote-turismo-trazabilidad/index.html",
+    "en/cabildo-lanzarote-tourism-traceability/index.html",
+    "es/procedimientos/lz-cab-019/index.html",
+    "en/proceedings/lz-cab-019/index.html",
+    "es/procedimientos/lz-cab-020/index.html",
+    "en/proceedings/lz-cab-020/index.html",
+    "es/procedimientos/lz-cab-021/index.html",
+    "en/proceedings/lz-cab-021/index.html",
+    "es/procedimientos/lz-cab-022/index.html",
+    "en/proceedings/lz-cab-022/index.html",
+    "es/procedimientos/lz-cab-023/index.html",
+    "en/proceedings/lz-cab-023/index.html",
+    "es/procedimientos/lz-cab-024/index.html",
+    "en/proceedings/lz-cab-024/index.html"
+  ],
+  "machine_controls": [
+    "assets/data/cabildo-six-zip-register-index-v1.json",
+    "assets/data/cabildo-saip-criminal-evidence-map-v1.json",
+    "assets/data/cabildo-public-pdf-manifest-v2.json",
+    "assets/data/cabildo-authority-access-received-20260918.json",
+    "archive/PROCEEDINGS_MASTER_REGISTER.csv",
+    "assets/data/proceedings-master-public-v1.json",
+    "archive/MISSING_EVIDENCE_REGISTER.md"
+  ],
+  "public_pdf_state": {
+    "reviewed_derivatives": 10,
+    "viewer_live": 0,
+    "binary_transport": "PENDING_AUTHENTICATED_MOUNTED_FILE_HANDOFF",
+    "held_derivative": "PD-CAB-SAIP-PDF-0086",
+    "rule": "No viewer is marked live until exact reviewed bytes exist in GitHub."
+  },
+  "legal_boundary": "Criminal routes are attributed allegations/possible legal characterisations, not findings of guilt. SAIP administrative sources are kept separate from court-only reserved investigative material.",
+  "required_canonical_reconciliation": [
+    "fetch then-current GitLab main and record SHA",
+    "compare GitHub release additively",
+    "preserve newer canonical work",
+    "import stable evidence IDs/hashes/public derivatives",
+    "rerun canonical validators and public readback"
+  ],
+  "github_integration": {
+    "successor_pr": 1551,
+    "predecessor_draft_pr": 1528,
+    "branch": "continuity/cabildo-saip-criminal-evidence-20260918",
+    "base": "main",
+    "merge_state": "CHECKS_AND_CONFLICT_RECONCILIATION"
+  }
+}
