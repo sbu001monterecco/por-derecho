@@ -56,6 +56,19 @@ Counsel is being asked urgently to assess and, if appropriate:
 4. seek only finite, source-defined investigative measures rather than a general review of the civil proceeding;
 5. examine whether the civil-restitution dimension of the criminal case supports any appropriate property-preservation or Registry measure if the legal requirements are met.
 
+## 3A. Counsel handoff status — 18 September
+
+A four-part urgent working package was delivered to current counsel for review on 18 September. The public-safe proposition is limited:
+
+- it contains working drafts for an Article 215.2 complement request, contribution of the 17 September ETJ order to DP 748, an ETJ certification/traceability request, a separate Cuatrecasas preservation/actual-notice communication, and a 24-hour action note;
+- the working materials remain **drafts for counsel review** unless and until a signed filing, presentation receipt, formal notice or court act proves the next status;
+- the private binder, editable files, counsel advice and email content are not published;
+- no public statement should say that the Article 215.2 request, DP 748 contribution, ETJ certification request or Cuatrecasas preservation notice has been filed/sent merely because the working package was delivered to counsel.
+
+### Deadline control
+
+The working note flags the five-day Article 215.2 LEC period and asks counsel to verify the complete notification record immediately. **No final expiry date is calculated or published here.** The legal computation must be made by counsel from the complete service record and applicable procedural rules.
+
 ## 4. Public notice concerning any third-party remate recipient
 
 No present source identifies an actual assignee or ultimate beneficiary.

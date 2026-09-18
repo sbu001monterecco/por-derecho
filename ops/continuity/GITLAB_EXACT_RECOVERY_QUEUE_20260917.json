@@ -72,6 +72,32 @@
       ],
       "known": "Public-safe outage continuity records Cabildo 13811/2026 / Decreto 2026-6999 grant acquisition, 13817/2026 / Decreto 2026-7000, Comisionado incoming register 2612/2026, privacy hold and the separate 3671/2022 native-byte custody gap. Raw private evidence was not published.",
       "recovery": "After GitLab restoration, inspect then-current canonical evidence/event/CAEPR/communications controls and the existing dedicated authority-evidence-received page. Reconcile additively, preserve newer GitLab work, assign any canonical event/CAEPR identifiers only from the current registry, and record exact GitHub source and GitLab destination SHAs."
+    },
+    {
+      "id": "GL-OUTAGE-002",
+      "object": "ETJ 163/2020 / DP 748/2026 18-Sep source-safe procedural and custody reconciliation",
+      "state": "GITHUB_OUTAGE_DELTA_PENDING_CANONICAL_RECONCILIATION",
+      "github_base_sha": "b909f5fe39486ec0f5e792b544713c94b02d7360",
+      "github_branch": "continuity/etj-dp748-18sep-gapclose",
+      "github_pull_request": 1565,
+      "github_paths": [
+        "assets/data/dp748-2026-appeal-reopening-control-v1.json",
+        "assets/data/la-laguna-concurso-public-bridge-20260903.json",
+        "assets/data/proceedings-interlinkability-v1.json",
+        "assets/data/fiscalia-proceedings-interconnectivity-v1.json",
+        "archive/CUATRECASAS_ETJ163_DP748_PUBLIC_STRATEGY_AND_NOTICE_18SEP2026.md",
+        "archive/CUATRECASAS_CRITICAL_GAP_CLOSURE_CONTROL_20AUG2026.md",
+        "en/etj-163-2020/index.html",
+        "es/etj-163-2020/index.html",
+        "en/dp-748-2026/index.html",
+        "es/dp-748-2026/index.html",
+        "en/cuatrecasas-etj163-dp748-18-september-2026/index.html",
+        "es/cuatrecasas-etj163-dp748-18-septiembre-2026/index.html",
+        "en/la-laguna-concurso-map-2026/index.html",
+        "es/la-laguna-concurso-mapa-2026/index.html"
+      ],
+      "known": "GitHub outage-continuity delta records the signed 17-Sep ETJ suspension-reconsideration order, 18-Sep private-native service provenance hashes, 9/16-Sep DP748 subsidiary-appeal processing, counsel working-package handoff, and downstream adjudication/cession/Fiscal/Audiencia gaps. Raw LexNET wrapper/cover and counsel work product remain private.",
+      "recovery": "After GitLab restoration, inspect then-current canonical evidence/event/CAEPR/communications/proceedings controls and existing ETJ/DP748 public pages. Reconcile additively, preserve newer GitLab work, carry only missing or better-supported public-safe changes, and record exact GitHub source commit plus GitLab destination commit/MR and parity result."
     }
   ],
   "rules": [

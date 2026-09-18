@@ -30,6 +30,10 @@ EXPECTED_EVENTS = 296
 EXPECTED_MATTER_LINKED_EVENTS = 117
 EXPECTED_FISCALIA_EXACT = 23
 EXPECTED_FISCALIA_UNRESOLVED = 3
+NON_FISCALIA_SOURCE_BATCHES = {
+    "PD-SP-ORION-NOTICE-20260905",
+    "PD-CAJASIETE-ACCOUNTABILITY-20260918",
+}
 SUPPORT_REFERENCE_PREFIXES = ("REGAGE",)
 FISCALIA_RECORD_TYPES = {"FISCALIA_FILE", "UNRESOLVED_REFERENCE"}
 
@@ -168,12 +172,13 @@ def build() -> dict[str, Any]:
     non_fiscalia_authority_ids = set(
         communications.get("authority_scan_control", {}).get("new_event_ids", [])
     )
-    # The separately controlled Orion/financial-notice cohort has no
-    # source-allocated Fiscalia proceeding in this release. It remains fully
-    # registered and interlinked in the institutional/Orion projections.
+    # Separately controlled financial/accountability notice cohorts have no
+    # source-allocated Fiscalia proceeding in this release. They remain fully
+    # registered in their institutional/financial projections and must not
+    # inflate the Ministerio Fiscal proceedings denominator.
     non_fiscalia_notice_ids = {
         event["event_id"] for event in communications["events"]
-        if event.get("source_batch_id") == "PD-SP-ORION-NOTICE-20260905"
+        if event.get("source_batch_id") in NON_FISCALIA_SOURCE_BATCHES
     }
     events = [
         event

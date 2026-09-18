@@ -28554,7 +28554,7 @@
       "why_es": "Al menos una relación directa está respaldada por un campo canónico expreso Parent_Master_ID, Linked_Proceedings o Appeal_or_Review.",
       "limitations_en": "This disposition controls navigation only. It does not prove joinder, receipt, admissibility, knowledge, agreement, causation, wrongdoing or liability.",
       "limitations_es": "Esta clasificación controla solo la navegación. No prueba acumulación, recepción, admisibilidad, conocimiento, acuerdo, causalidad, ilicitud ni responsabilidad.",
-      "next_source_needed_en": "Certified complete docket; correlated receipts/resolutions; adjudication/assignment/registration/possession; historic/current registry and expert crosswalk",
+      "next_source_needed_en": "Post-17-Sep docket certification; adjudication/assignment/registration/possession; assignee/payment trail; historic/current registry and expert crosswalk",
       "next_source_needed_es": "Expediente completo, documentos de remate o adjudicación y estado actual de la ejecución y del título.",
       "source_status": "VERIFIED_PRIMARY",
       "basis": {
@@ -28577,7 +28577,7 @@
         "recorded_object": "Civil enforcement underlying DP 748/2026",
         "attribution": "DOCUMENTED_PROCEDURAL_RECORD_WITH_OPEN_COMPLETION",
         "source_needed": {
-          "en": "Certified complete docket; correlated receipts/resolutions; adjudication/assignment/registration/possession; historic/current registry and expert crosswalk",
+          "en": "Post-17-Sep docket certification; adjudication/assignment/registration/possession; assignee/payment trail; historic/current registry and expert crosswalk",
           "es": "Expediente completo, documentos de remate o adjudicación y estado actual de la ejecución y del título."
         },
         "current_source_status": "VERIFIED_PRIMARY",
@@ -28863,7 +28863,7 @@
       "why_es": "Al menos una relación directa está respaldada por un campo canónico expreso Parent_Master_ID, Linked_Proceedings o Appeal_or_Review.",
       "limitations_en": "This disposition controls navigation only. It does not prove joinder, receipt, admissibility, knowledge, agreement, causation, wrongdoing or liability.",
       "limitations_es": "Esta clasificación controla solo la navegación. No prueba acumulación, recepción, admisibilidad, conocimiento, acuerdo, causalidad, ilicitud ni responsabilidad.",
-      "next_source_needed_en": "P0 protective allegations; last-notification certificate; Article 766.4 processing; remittal/roll; signed original of 24-Mar Auto; finite actor-finca-effect evidence",
+      "next_source_needed_en": "Ministerio Fiscal submission after 16-Sep; further transfers; Audiencia remittal/roll; signed original of 24-Mar Auto; finite actor-finca-effect evidence",
       "next_source_needed_es": "Denuncia completa, auto de archivo, recurso de reforma, informe de Fiscalía, apelación y estado actual.",
       "source_status": "VERIFIED_PRIMARY",
       "basis": {
@@ -28886,7 +28886,7 @@
         "recorded_object": "Diligencias Previas; provisional dismissal and appeal/reopening lane",
         "attribution": "DOCUMENTED_PROCEDURAL_RECORD_WITH_OPEN_COMPLETION",
         "source_needed": {
-          "en": "P0 protective allegations; last-notification certificate; Article 766.4 processing; remittal/roll; signed original of 24-Mar Auto; finite actor-finca-effect evidence",
+          "en": "Ministerio Fiscal submission after 16-Sep; further transfers; Audiencia remittal/roll; signed original of 24-Mar Auto; finite actor-finca-effect evidence",
           "es": "Denuncia completa, auto de archivo, recurso de reforma, informe de Fiscalía, apelación y estado actual."
         },
         "current_source_status": "VERIFIED_PRIMARY",

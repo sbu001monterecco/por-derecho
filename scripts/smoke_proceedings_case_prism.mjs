@@ -6,14 +6,14 @@ const routes = [
     lang: 'en', path: '/en/proceedings-map/', contrary: 'Strongest contrary', sourceScope: 'proposition-level audit path',
     outsideSelected: 'Outside the selected file', antiJoinder: 'joinder', nextSource: 'Next source needed', notExact: 'not an exact proceeding',
     auditBoundary: 'Audit coverage means', positiveEvidence: 'Separate positive evidence', receiptBoundary: 'RECEIVED ≠ INCORPORATED IN FILE ≠ EXAMINED ≠ USED IN A DECISION',
-    actorBoundary: 'Institutional receipt does not by itself prove', noUnitaryAcknowledgement: 'No unitary acknowledgement has been located in the controlled corpus.', headlineFinite: '97 of 97', headlineForbidden: 'Every materially connected file',
+    actorBoundary: 'Institutional receipt does not by itself prove', noUnitaryAcknowledgement: 'No unitary acknowledgement has been located in the controlled corpus.', headlineForbidden: 'Every materially connected file',
     basisDisclosure: 'Grade basis and limitation',
   },
   {
     lang: 'es', path: '/es/mapa-procedimientos/', contrary: 'Explicación / registro contrario', sourceScope: 'ruta de auditoría de la proposición',
     outsideSelected: 'Fuera del expediente seleccionado', antiJoinder: 'acumulación', nextSource: 'Siguiente fuente necesaria', notExact: 'no es un procedimiento exacto',
     auditBoundary: 'La cobertura de auditoría significa', positiveEvidence: 'Prueba positiva separada', receiptBoundary: 'RECIBIDO ≠ INCORPORADO AL EXPEDIENTE ≠ EXAMINADO ≠ UTILIZADO EN UNA DECISIÓN',
-    actorBoundary: 'La recepción institucional no prueba por sí sola', noUnitaryAcknowledgement: 'No se ha localizado un reconocimiento unitario en el corpus controlado.', headlineFinite: '97 de 97', headlineForbidden: 'Todos los expedientes materialmente conectados',
+    actorBoundary: 'La recepción institucional no prueba por sí sola', noUnitaryAcknowledgement: 'No se ha localizado un reconocimiento unitario en el corpus controlado.', headlineForbidden: 'Todos los expedientes materialmente conectados',
     basisDisclosure: 'Base y límite del grado',
   },
 ];
@@ -532,8 +532,8 @@ async function assertFiniteTestFailClosedMutations(browser, interlinks) {
     if (!response?.ok()) throw new Error(`${label} mutation route failed with ${response?.status()}`);
     await page.waitForSelector(`[data-isolation-reconnection] [data-finite-test-panel][data-master-id="${mutationId}"][data-finite-test-status="INCOMPLETE"]`);
     const finiteCoverage = page.locator('.pdim-finite-coverage[data-finite-test-coverage]');
-    if (await finiteCoverage.getAttribute('data-audit-count') !== '96') {
-      throw new Error(`${label} did not reduce the audited finite-test denominator to 96/97`);
+    if (await finiteCoverage.getAttribute('data-audit-count') !== '105') {
+      throw new Error(`${label} did not reduce the audited finite-test denominator to 105/106`);
     }
     const option = page.locator(`[data-isolation-id] option[value="${mutationId}"]`);
     if (await option.getAttribute('data-finite-test-coverage') !== 'unavailable') {
@@ -551,11 +551,11 @@ try {
   if (!projectionResponse.ok()) throw new Error(`public proceedings projection failed with ${projectionResponse.status()}`);
   const projection = await projectionResponse.json();
   const publicRecords = Array.isArray(projection.records) ? projection.records : [];
-  if (publicRecords.length !== 121) throw new Error(`expected 121 controlled public records, found ${publicRecords.length}`);
+  if (publicRecords.length !== 130) throw new Error(`expected 130 controlled public records, found ${publicRecords.length}`);
   const exactRecords = publicRecords.filter((record) => String(record.Is_Proceeding || '').trim().toUpperCase() === 'TRUE');
   const exactIds = exactRecords.map((record) => record.Master_ID);
   const exactIdSet = new Set(exactIds);
-  if (exactIds.length !== 97) throw new Error(`expected 97 exact public proceedings after aggregate-family repair, found ${exactIds.length}`);
+  if (exactIds.length !== 106) throw new Error(`expected 106 exact public proceedings after aggregate-family repair, found ${exactIds.length}`);
   if (exactRecords.some((record) => /FAMILY|AGGREGATE/i.test(`${record.Record_Type || ''} ${record.Proceeding_Class || ''}`))) {
     throw new Error('public exact-proceeding denominator admits an aggregate/family object');
   }
@@ -650,8 +650,8 @@ try {
     familyId, dispositions.filter((item) => item.finite_test.family_template_id === familyId).length,
   ]).filter(([, count]) => count));
   const expectedFamilyCounts = {
-    OMBUDSMAN_RECONSIDERATION: 1, CRIMINAL_FILE_DECISION: 11, CIVIL_FILE_DECISION: 19,
-    FISCALIA_INSTITUTIONAL_MEMORY: 21, PROFESSIONAL_SUPERVISION: 8,
+    OMBUDSMAN_RECONSIDERATION: 1, CRIMINAL_FILE_DECISION: 14, CIVIL_FILE_DECISION: 23,
+    FISCALIA_INSTITUTIONAL_MEMORY: 23, PROFESSIONAL_SUPERVISION: 8,
     ADMIN_AUTHORITY_TITLE_SOURCE: 26, TAX_CONTENTIOUS_CHAIN: 4, REGULATORY_PUBLIC_ROUTE: 7,
   };
   if (JSON.stringify(actualFamilyCounts) !== JSON.stringify(expectedFamilyCounts)
@@ -719,7 +719,7 @@ try {
   }
 
   const fiscaliaMatrixContract = interlinks.fiscalia_office_file_matrix_contract || {};
-  if (fiscaliaMatrixContract.row_denominator !== 24
+  if (fiscaliaMatrixContract.row_denominator !== 26
       || fiscaliaMatrixContract.referral_is_not_transmission !== true
       || fiscaliaMatrixContract.direct_context_and_assets_are_separate !== true
       || fiscaliaMatrixContract.material_summary_is_not_received_inventory !== true
@@ -736,7 +736,7 @@ try {
   ], 'Fiscalía matrix substantive columns');
   const fiscaliaMatrix = Array.isArray(interlinks.fiscalia_office_file_matrix) ? interlinks.fiscalia_office_file_matrix : [];
   const publicFiscaliaRows = publicRecords.filter((record) => String(record.Stream || '').toUpperCase().includes('FISCAL'));
-  if (fiscaliaMatrix.length !== 24) throw new Error(`expected 24 public Fiscalía office/file rows, found ${fiscaliaMatrix.length}`);
+  if (fiscaliaMatrix.length !== 26) throw new Error(`expected 26 public Fiscalía office/file rows, found ${fiscaliaMatrix.length}`);
   assertSameValues(fiscaliaMatrix.map((row) => row.master_id), publicFiscaliaRows.map((record) => record.Master_ID), 'Fiscalía office/file public-row denominator');
   const publicFiscaliaById = new Map(publicFiscaliaRows.map((record) => [record.Master_ID, record]));
   const profileById = new Map(fiscaliaProfiles.map((profile) => [profile.profile_id, profile]));
@@ -804,15 +804,15 @@ try {
       }
     }
   }
-  if (fiscaliaMatrix.filter((row) => row.is_proceeding === 'TRUE').length !== 21
+  if (fiscaliaMatrix.filter((row) => row.is_proceeding === 'TRUE').length !== 23
       || fiscaliaMatrix.filter((row) => row.is_proceeding === 'UNVERIFIED').length !== 3
       || matrixProfileIds.length !== 8) {
-    throw new Error('Fiscalía matrix must remain 21 exact + 3 unverified rows, with eight source-profiled matrix rows');
+    throw new Error('Fiscalía matrix must remain 23 exact + 3 unverified rows, with eight source-profiled matrix rows');
   }
   const outsideMatrixProfiles = fiscaliaProfiles.filter((profile) => !matrixProfileIds.includes(profile.profile_id));
   if (outsideMatrixProfiles.length !== 1 || outsideMatrixProfiles[0].episode_id !== 'dp1901-2026'
       || outsideMatrixProfiles[0].master_id !== 'GC-CRI-008') {
-    throw new Error('the ninth controlled Fiscalía episode must remain dp1901-2026 → GC-CRI-008 outside the 24-row Fiscalía matrix');
+    throw new Error('the ninth controlled Fiscalía episode must remain dp1901-2026 → GC-CRI-008 outside the 26-row Fiscalía matrix');
   }
   const gub86Row = fiscaliaMatrix.find((row) => row.master_id === 'LZ-FIS-007');
   if (gub86Row?.material_received_status !== 'NOT_LOCATED'
@@ -828,34 +828,42 @@ try {
   }
 
   const coverage = interlinks.coverage || {};
+  const exactProceedingCount = exactIds.length;
+  const casePrismCoveredCount = Number(coverage.case_prism_exact_proceeding_covered_count);
+  const casePrismUncoveredCount = exactProceedingCount - casePrismCoveredCount;
+  if (!Number.isInteger(casePrismCoveredCount) || casePrismCoveredCount < 0 || casePrismCoveredCount > exactProceedingCount) {
+    throw new Error(`invalid controlled Case Prism coverage denominator (${coverage.case_prism_exact_proceeding_covered_count}/${exactProceedingCount})`);
+  }
+  const exactCoverageToken = `VERIFIED_${exactProceedingCount}_OF_${exactProceedingCount}`;
+  const sharedCoverageToken = `GAP_${casePrismCoveredCount}_OF_${exactProceedingCount}`;
   const requiredCoverage = {
-    public_exact_proceeding_count: 97,
-    case_prism_exact_proceeding_covered_count: 43,
-    case_prism_exact_proceeding_uncovered_count: 54,
-    decision_dependency_exact_coverage: 'VERIFIED_97_OF_97',
+    public_exact_proceeding_count: exactProceedingCount,
+    case_prism_exact_proceeding_covered_count: casePrismCoveredCount,
+    case_prism_exact_proceeding_uncovered_count: casePrismUncoveredCount,
+    decision_dependency_exact_coverage: exactCoverageToken,
     decision_dependency_exact_coverage_scope: 'PUBLIC_EXACT_FILE_FINITE_TEST_REGISTER',
-    shared_case_prism_proposition_membership_coverage: 'GAP_43_OF_97',
+    shared_case_prism_proposition_membership_coverage: sharedCoverageToken,
     shared_case_prism_proposition_membership_scope: 'SHARED_CASE_PRISM_PROPOSITION_MEMBERSHIP_ONLY',
-    exact_file_decision_dependency_actionability_count: 97,
-    exact_file_decision_dependency_actionability_coverage: 'VERIFIED_97_OF_97',
-    exact_proceeding_full_finite_test_count: 97,
-    exact_proceeding_full_finite_test_coverage: 'VERIFIED_97_OF_97',
-    receipt_knowledge_classification_count: 97,
-    receipt_knowledge_classification_coverage: 'VERIFIED_97_OF_97',
-    receipt_knowledge_axis_provenance_count: 97,
-    receipt_knowledge_axis_provenance_coverage: 'VERIFIED_97_OF_97',
+    exact_file_decision_dependency_actionability_count: exactProceedingCount,
+    exact_file_decision_dependency_actionability_coverage: exactCoverageToken,
+    exact_proceeding_full_finite_test_count: exactProceedingCount,
+    exact_proceeding_full_finite_test_coverage: exactCoverageToken,
+    receipt_knowledge_classification_count: exactProceedingCount,
+    receipt_knowledge_classification_coverage: exactCoverageToken,
+    receipt_knowledge_axis_provenance_count: exactProceedingCount,
+    receipt_knowledge_axis_provenance_coverage: exactCoverageToken,
     receipt_knowledge_positive_source_profile_count: 9,
-    fiscalia_office_file_matrix_count: 24,
-    fiscalia_office_file_matrix_coverage: 'VERIFIED_24_OF_24',
-    fiscalia_office_file_matrix_substantive_column_count: 24,
-    fiscalia_office_file_matrix_substantive_column_coverage: 'VERIFIED_24_OF_24',
-    fiscalia_office_file_matrix_exact_count: 21,
+    fiscalia_office_file_matrix_count: 26,
+    fiscalia_office_file_matrix_coverage: 'VERIFIED_26_OF_26',
+    fiscalia_office_file_matrix_substantive_column_count: 26,
+    fiscalia_office_file_matrix_substantive_column_coverage: 'VERIFIED_26_OF_26',
+    fiscalia_office_file_matrix_exact_count: 23,
     fiscalia_office_file_matrix_unverified_count: 3,
     fiscalia_response_episode_profile_count: 9,
     fiscalia_office_file_matrix_source_profiled_record_count: 8,
-    controlled_trace_route_count: 97,
-    controlled_isolation_route_count: 97,
-    controlled_navigation_coverage: 'VERIFIED_97_OF_97',
+    controlled_trace_route_count: exactProceedingCount,
+    controlled_isolation_route_count: exactProceedingCount,
+    controlled_navigation_coverage: exactCoverageToken,
     dedicated_narrative_dossier_coverage: 'PARTIAL_NOT_INFERRED',
   };
   for (const [field, expected] of Object.entries(requiredCoverage)) {
@@ -910,7 +918,7 @@ try {
       cell.status === 'OUTSIDE' ? [] : (cell.master_ids || []).filter((id) => exactIdSet.has(id))
     )
   ));
-  if (prismCoveredIds.size !== 43 || exactIds.length - prismCoveredIds.size !== 54) {
+  if (prismCoveredIds.size !== casePrismCoveredCount || exactProceedingCount - prismCoveredIds.size !== casePrismUncoveredCount) {
     throw new Error(`Case Prism exact-file content denominator mismatch (${prismCoveredIds.size}/${exactIds.length})`);
   }
   const expectedIsolationById = new Map(exactIds.map((masterId) => [
@@ -937,9 +945,10 @@ try {
     if (await tabs.count() !== 6) throw new Error(`${route.lang}: expected six semantic tabs`);
     if (await page.locator('[data-proceedings-map="20260831e"]').count() !== 1) throw new Error(`${route.lang}: live renderer marker is not 20260831e`);
     const staticPrismText = await page.locator('#case-prism').innerText();
-    if (!staticPrismText.includes('43') || !staticPrismText.includes('54') || !staticPrismText.includes(route.headlineFinite)
+    const headlineFinite = route.lang === 'en' ? `${exactProceedingCount} of ${exactProceedingCount}` : `${exactProceedingCount} de ${exactProceedingCount}`;
+    if (!staticPrismText.includes(String(casePrismCoveredCount)) || !staticPrismText.includes(String(casePrismUncoveredCount)) || !staticPrismText.includes(headlineFinite)
         || staticPrismText.includes(route.headlineForbidden)) {
-      throw new Error(`${route.lang}: static Case Prism introduction misstates the 43/97 shared-proposition denominator`);
+      throw new Error(`${route.lang}: static Case Prism introduction misstates the ${casePrismCoveredCount}/${exactProceedingCount} shared-proposition denominator`);
     }
     if (await page.locator('a[href="#isolation-test"]').count() < 1) throw new Error(`${route.lang}: exact-file finite-test CTA missing`);
     await assertFilterScope(page, true, route, 'map');
@@ -988,8 +997,8 @@ try {
     if (await exactDecisionRegister.count() !== 1
         || await exactDecisionRegister.getAttribute('data-exact-count') !== String(exactIds.length)
         || await exactDecisionRegister.getAttribute('data-audited-count') !== String(exactIds.length)
-        || await exactDecisionRegister.getAttribute('data-shared-proposition-count') !== '43') {
-      throw new Error(`${route.lang}: exact-file decision-dependency register does not distinguish 97/97 actionability from 43/97 shared-proposition membership`);
+        || await exactDecisionRegister.getAttribute('data-shared-proposition-count') !== String(casePrismCoveredCount)) {
+      throw new Error(`${route.lang}: exact-file decision-dependency register does not distinguish ${exactProceedingCount}/${exactProceedingCount} actionability from ${casePrismCoveredCount}/${exactProceedingCount} shared-proposition membership`);
     }
     const detailIsAdjacentToMatrix = await page.evaluate(() => {
       const matrix = document.querySelector('.pdim-prism-table-wrap');
@@ -999,7 +1008,7 @@ try {
       return Boolean(matrix.compareDocumentPosition(detail) & Node.DOCUMENT_POSITION_FOLLOWING)
         && Boolean(detail.compareDocumentPosition(register) & Node.DOCUMENT_POSITION_FOLLOWING);
     });
-    if (!detailIsAdjacentToMatrix) throw new Error(`${route.lang}: matrix detail must precede the 97-file register so a selected cell is revealed immediately`);
+    if (!detailIsAdjacentToMatrix) throw new Error(`${route.lang}: matrix detail must precede the 106-file register so a selected cell is revealed immediately`);
     if (await exactDecisionRegister.locator('[data-exact-decision-entry]').count() !== exactIds.length
         || await exactDecisionRegister.locator('[data-exact-decision-entry][data-model-status="AUDITED"]').count() !== exactIds.length) {
       throw new Error(`${route.lang}: exact-file decision-dependency register is not exhaustively audited`);
@@ -1047,14 +1056,14 @@ try {
     if (!sourceResponse.ok()) throw new Error(`${route.lang}: source route returned ${sourceResponse.status()}`);
     const fiscaliaMatrixView = detail.locator('[data-fiscalia-office-file-matrix]');
     if (await fiscaliaMatrixView.count() !== 1) throw new Error(`${route.lang}: P05 detail omits the Fiscalía office/file matrix`);
-    if (await fiscaliaMatrixView.getAttribute('data-row-count') !== '24'
-        || await fiscaliaMatrixView.getAttribute('data-exact-count') !== '21'
+    if (await fiscaliaMatrixView.getAttribute('data-row-count') !== '26'
+        || await fiscaliaMatrixView.getAttribute('data-exact-count') !== '23'
         || await fiscaliaMatrixView.getAttribute('data-unverified-count') !== '3'
         || await fiscaliaMatrixView.getAttribute('data-profiled-count') !== '8'
         || await fiscaliaMatrixView.getAttribute('data-response-episode-count') !== '9') {
-      throw new Error(`${route.lang}: Fiscalía matrix must distinguish 24 rows, 21 exact, three unresolved, eight profiled and nine total response episodes`);
+      throw new Error(`${route.lang}: Fiscalía matrix must distinguish 26 rows, 23 exact, three unresolved, eight profiled and nine total response episodes`);
     }
-    if (await fiscaliaMatrixView.locator('[data-fiscalia-row]').count() !== 24) throw new Error(`${route.lang}: Fiscalía matrix does not render 24 rows`);
+    if (await fiscaliaMatrixView.locator('[data-fiscalia-row]').count() !== 26) throw new Error(`${route.lang}: Fiscalía matrix does not render 26 rows`);
     const fiscaliaRenderedIds = await fiscaliaMatrixView.locator('[data-fiscalia-row]').evaluateAll((rows) => rows.map((row) => row.dataset.masterId));
     assertSameValues(fiscaliaRenderedIds, fiscaliaMatrix.map((row) => row.master_id), `${route.lang}: Fiscalía rendered row denominator`);
     for (const row of fiscaliaMatrix) {
@@ -1198,25 +1207,25 @@ try {
       const expectedStatus = prismCoveredIds.has(masterId) ? 'covered' : 'unresolved';
       if (status !== expectedStatus) throw new Error(`${route.lang}/${masterId}: Case Prism coverage label is ${status}, expected ${expectedStatus}`);
     }
-    if (renderedCoverage.filter(([, status]) => status === 'covered').length !== 43 || renderedCoverage.filter(([, status]) => status === 'unresolved').length !== 54) {
-      throw new Error(`${route.lang}: visible Case Prism content coverage must remain 43 covered / 54 unresolved`);
+    if (renderedCoverage.filter(([, status]) => status === 'covered').length !== casePrismCoveredCount || renderedCoverage.filter(([, status]) => status === 'unresolved').length !== casePrismUncoveredCount) {
+      throw new Error(`${route.lang}: visible Case Prism content coverage must remain ${casePrismCoveredCount} covered / ${casePrismUncoveredCount} unresolved`);
     }
     if (await isolation.locator('option[value="GC-APP-007"]').count()) throw new Error(`${route.lang}: aggregate removal-appeal family admitted to isolation`);
     const coverageText = await page.locator('[data-isolation-coverage]').innerText();
-    if (!coverageText.includes(`43/${exactIds.length}`) || !coverageText.includes('54')) throw new Error(`${route.lang}: finite 43/97 Case Prism content denominator is not visible`);
+    if (!coverageText.includes(`${casePrismCoveredCount}/${exactProceedingCount}`) || !coverageText.includes(String(casePrismUncoveredCount))) throw new Error(`${route.lang}: finite ${casePrismCoveredCount}/${exactProceedingCount} Case Prism content denominator is not visible`);
     const finiteCoverage = page.locator('.pdim-finite-coverage[data-finite-test-coverage]');
     if (await finiteCoverage.count() !== 1
-        || await finiteCoverage.getAttribute('data-audit-count') !== '97'
+        || await finiteCoverage.getAttribute('data-audit-count') !== String(exactProceedingCount)
         || await finiteCoverage.getAttribute('data-positive-evidence-count') !== '9') {
-      throw new Error(`${route.lang}: finite-test coverage must distinguish 97 audited models from nine files with positive institutional evidence`);
+      throw new Error(`${route.lang}: finite-test coverage must distinguish ${exactProceedingCount} audited models from nine files with positive institutional evidence`);
     }
     const finiteCoverageText = await finiteCoverage.innerText();
-    if (!finiteCoverageText.includes('97/97') || !finiteCoverageText.includes(route.auditBoundary) || !finiteCoverageText.includes(route.positiveEvidence)) {
+    if (!finiteCoverageText.includes(`${exactProceedingCount}/${exactProceedingCount}`) || !finiteCoverageText.includes(route.auditBoundary) || !finiteCoverageText.includes(route.positiveEvidence)) {
       throw new Error(`${route.lang}: finite audit/positive-evidence boundary is not visible`);
     }
     const finiteOptionCoverage = await isolation.locator('option[value]:not([value="__FULL__"])').evaluateAll((options) => options.map((option) => [option.value, option.dataset.finiteTestCoverage]));
-    if (finiteOptionCoverage.length !== 97 || finiteOptionCoverage.some(([, status]) => status !== 'audited')) {
-      throw new Error(`${route.lang}: all 97 exact options must expose audited finite-test coverage`);
+    if (finiteOptionCoverage.length !== exactProceedingCount || finiteOptionCoverage.some(([, status]) => status !== 'audited')) {
+      throw new Error(`${route.lang}: all ${exactProceedingCount} exact options must expose audited finite-test coverage`);
     }
     const fullCorpusLabels = await page.locator('.pdim-isolation-map button[aria-label]').evaluateAll((elements) => elements.map((element) => element.getAttribute('aria-label') || ''));
     if (fullCorpusLabels.some((label) => label.includes(route.outsideSelected))) throw new Error(`${route.lang}: full-corpus cells are announced as outside a selected file`);
@@ -1551,7 +1560,7 @@ try {
     await masterPage.waitForSelector('tr[data-master-id]');
     const renderedMasterIds = await masterPage.locator('tr[data-master-id]').evaluateAll((rows) => rows.map((row) => row.dataset.masterId));
     assertSameValues(renderedMasterIds, publicRecords.map((record) => record.Master_ID), `${route.lang}: Master Register public denominator`);
-    if (renderedMasterIds.length !== 121) throw new Error(`${route.lang}: Master Register must render 121 controlled public rows`);
+    if (renderedMasterIds.length !== 130) throw new Error(`${route.lang}: Master Register must render 130 controlled public rows`);
     const masterTraceLinks = await masterPage.locator('tr[data-master-id]').evaluateAll((rows) => rows.map((row) => ({
       masterId: row.dataset.masterId,
       href: row.querySelector('a.pd-ref')?.href || '',
