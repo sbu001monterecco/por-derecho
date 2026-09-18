@@ -83,12 +83,7 @@
   "restoration_status": {
     "checked_date": "2026-09-18",
     "authenticated_access": "BLOCKED_ACCOUNT_LEVEL_403",
-    "support_case": "753341",
-    "support_case_state": "OPEN",
-    "trust_and_safety_reference": "1297",
-    "trust_and_safety_state": "REVIEW_PENDING",
-    "automatic_unlock_guidance_result": "DID_NOT_RESTORE_ACCESS",
-    "verification_code_state": "NO_6_DIGIT_UNLOCK_EMAIL_LOCATED_AT_LAST_MAILBOX_CHECK",
-    "current_action": "HUMAN_REVIEW_REQUESTED"
+    "current_action": "HUMAN_REVIEW_IN_PROGRESS",
+    "public_boundary": "Support-ticket identifiers, email addresses, verification-channel details and private provider metadata remain outside the public repository."
   }
 }
