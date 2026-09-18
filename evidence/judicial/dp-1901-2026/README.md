@@ -26,11 +26,17 @@ The native electronic court PDF and the legally operative notification metadata 
 - it orders **sobreseimiento libre y archivo**;
 - it states reform/apelación/victim appeal routes in the terms reproduced in the transcription.
 
+## Procedural-identity source closure
+
+- [18 September June/July source-closure addendum](PROCEDURAL_IDENTITY_SOURCE_CLOSURE_18SEP2026.md) hash-locks the connected stamped filing covers, ATLANTE image and 9-Jul DP1901 filing receipt, and separates official source fields from contemporaneous party reporting.
+- The source set proves separate June complaint packages and proves that private-actor amplification material was physically tendered under DP 1901/Plaza 6 on 9 July.
+- It does **not** prove which June complaint originally generated DP 1901 or the direction of any routing error. Certified reparto/docket/ingestion evidence remains required.
+
 ## What remains open
 
 - the signed 29 July Fiscal report, author, assignment/reparto, corpus and reasoning;
 - the initiating document that generated DP 1901;
-- the certified Control-21 / daily-reference-24 routing history;
+- the certified daily-reference-21 / daily-reference-24 reparto history and initiating document; June/July source evidence now materially narrows but does not close direction;
 - any joinder/reassignment/segregation act;
 - the native electronic order and legal notification timestamp.
 
