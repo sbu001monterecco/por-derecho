@@ -59,10 +59,12 @@
     "rerun canonical validators and public readback"
   ],
   "github_integration": {
-    "successor_pr": 1551,
+    "successor_pr": 1552,
+    "superseded_pr": 1551,
     "predecessor_draft_pr": 1528,
-    "branch": "continuity/cabildo-saip-criminal-evidence-20260918",
+    "branch": "continuity/cabildo-saip-criminal-evidence-20260918-v2",
     "base": "main",
-    "merge_state": "CHECKS_AND_CONFLICT_RECONCILIATION"
+    "base_sha": "9a8d5968975fd5e343ff29c54d3f702c71693e09",
+    "merge_state": "OPEN_CHECKS_PENDING"
   }
 }
