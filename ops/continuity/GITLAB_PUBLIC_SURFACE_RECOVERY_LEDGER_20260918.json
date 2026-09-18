@@ -5,7 +5,7 @@
   "status": "ACTIVE_PUBLIC_ONLY",
   "authenticated_gitlab_restoration_verified": false,
   "last_verified_gitlab_main_sha": "7d086d098676eecc2c1647ed09b348d8dc0bdc69",
-  "github_main_at_observation": "4d7a8f4caaadc208fc373cd7475ee52752519ce6",
+  "github_main_at_observation": "d19ff93ea52b4f81c3fd2b8a4d99a53559ec7557",
   "items": [
     {
       "id": "GL-PUB-001",
@@ -114,6 +114,23 @@
       "source_level_state": "PENDING_GITLAB_RESTORATION",
       "provenance": "Anonymous GitLab Pages registry rendering compared with current GitHub source/Pages on 18 September 2026; issue #1535 tracks exact-source reconciliation.",
       "boundary": "Rendered counts establish a deployment freshness discrepancy only. They do not reveal exact GitLab registry source bytes, the producing commit, or the identities comprising the delta; never synthesize or import missing entries from rendered HTML or snippets."
+    },
+    {
+      "id": "GL-PUB-008",
+      "surface_type": "GITLAB_PAGES_RENDERED_ROUTE",
+      "gitlab_public_url": "https://por-derecho-setup-or-gitlab-setup-c2b10f.gitlab.io/por-derecho-setup-or-gitlab-setup/es/busqueda-texto/index.html",
+      "observed_publicly_accessible_date": "2026-09-18",
+      "classification": "FUNCTIONAL_GITHUB_EQUIVALENT",
+      "corresponding_github_url": null,
+      "github_match_state": "NOT_LOCATED_BY_DEFAULT_BRANCH_CODE_SEARCH",
+      "rendered_observation": {
+        "page_count": 850,
+        "directed_link_count": 10572,
+        "observation_state": "VOLATILE_RENDERED_COUNTERS"
+      },
+      "source_level_state": "PENDING_GITLAB_RESTORATION",
+      "provenance": "Direct anonymous fetch of the public GitLab Pages Spanish text-and-connections explorer on 18 September 2026 reported 850 public pages and 10,572 directed links; the same route had been indexed earlier with lower counters, demonstrating that these rendered counters are a changing deployment observation. GitHub default-branch code search did not locate the route string.",
+      "boundary": "The rendered explorer proves a public deployment and reports only its current rendered index/link counters. Those counters may change as the public deployment changes. They do not establish the producing GitLab source files, build inputs, commit SHA, exact index dataset, or authenticated project restoration; do not reconstruct unavailable bytes or infer source-level deltas from the counters."
     }
   ],
   "allowed_classifications": [
