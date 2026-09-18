@@ -2,7 +2,7 @@
   "schema_version": "1.0.0",
   "dataset": "por-derecho.public-proceedings-projection",
   "canonical_source_id": "PROCEEDINGS_MASTER_REGISTER",
-  "derivation": "DETERMINISTIC_ALLOWLIST",
+  "derivation": "Public subset derived from PROCEEDINGS_MASTER_REGISTER.csv; six Cabildo tourism rows updated on 18-Sep-2026 from authority SAIP source corpus during GitHub outage continuity.",
   "canonical_source_sha256": "c3d3d025fa69b1e8b1d3cc7ea8e8d44cd622aeba4d33f7cf3f230a4a39cf9bb9",
   "publication_policy": {
     "eligibility_field": "Public_Treatment",
@@ -520,16 +520,16 @@
       "Reference": "3671/2022",
       "Secondary_Reference": "",
       "NIG": "",
-      "Date_or_Period": "2022",
+      "Date_or_Period": "2022-2023",
       "Connection": "Sun Park / operator / title / works / transparency perimeter",
-      "Object_or_Purpose": "Tourism/operator perimeter; totalidad de las unidades alojativas",
-      "Status": "Priority file",
-      "Latest_Known_Event": "",
+      "Object_or_Purpose": "Tourism/operator perimeter; all-units / title-authority route",
+      "Status": "SAIP corpus received; adverse Yaiza compatibility input located; final merits act not located",
+      "Latest_Known_Event": "27 Mar 2023: HNT accessed notice carrying adverse definitive Yaiza compatibility report / hearing step",
       "Appeal_or_Review": "",
       "Parent_Master_ID": "",
       "Linked_Proceedings": "",
-      "Source_Status": "VERIFIED_PRIMARY",
-      "Open_Reference_Gap": "Complete file, declarant, authority, unit list, title, checks and final act"
+      "Source_Status": "VERIFIED_PRIMARY_COPY",
+      "Open_Reference_Gap": "Later final act if any; unit-by-unit title/authority closure; two nested RARs; current Registry cross-check"
     },
     {
       "Master_ID": "LZ-CAB-020",
@@ -546,14 +546,14 @@
       "NIG": "",
       "Date_or_Period": "2023-2026",
       "Connection": "Sun Park / operator / title / works / transparency perimeter",
-      "Object_or_Purpose": "Tourism file",
-      "Status": "Reported pending 13 Mar 2026",
-      "Latest_Known_Event": "",
+      "Object_or_Purpose": "HNT holder/property/exploitation and 4-star 220/660 request",
+      "Status": "SAIP corpus received; title/classification requirement located; later compliance/final merits act not located",
+      "Latest_Known_Event": "Feb 2023: HNT requested 4-star / 220 / 660; Cabildo required sufficient property title and classification",
       "Appeal_or_Review": "",
       "Parent_Master_ID": "",
       "Linked_Proceedings": "",
-      "Source_Status": "VERIFIED_PRIMARY",
-      "Open_Reference_Gap": "Current index/status and final act"
+      "Source_Status": "VERIFIED_PRIMARY_COPY",
+      "Open_Reference_Gap": "Later compliance; title accepted; final merits act if any"
     },
     {
       "Master_ID": "LZ-CAB-021",
@@ -570,14 +570,14 @@
       "NIG": "",
       "Date_or_Period": "2023",
       "Connection": "Sun Park / operator / title / works / transparency perimeter",
-      "Object_or_Purpose": "Tourism file",
-      "Status": "Identified in Resolution 2026-2735",
-      "Latest_Known_Event": "",
+      "Object_or_Purpose": "Holder/name modification; RGT HNT / MYND",
+      "Status": "RGT 2023-T15093 located; HNT/MYND recorded at 1-star / 159 / 477",
+      "Latest_Known_Event": "18 Oct 2023: RGT 2023-T15093 holder/name modification",
       "Appeal_or_Review": "",
       "Parent_Master_ID": "",
       "Linked_Proceedings": "",
-      "Source_Status": "VERIFIED_PRIMARY",
-      "Open_Reference_Gap": "Complete index, object, parties and final act"
+      "Source_Status": "VERIFIED_PRIMARY_COPY",
+      "Open_Reference_Gap": "Any separate act said to establish wider civil title, 4-star status or higher capacity"
     },
     {
       "Master_ID": "LZ-CAB-022",
@@ -592,16 +592,16 @@
       "Reference": "19995/2023",
       "Secondary_Reference": "",
       "NIG": "",
-      "Date_or_Period": "2023",
+      "Date_or_Period": "2023-2024",
       "Connection": "Sun Park / operator / title / works / transparency perimeter",
-      "Object_or_Purpose": "Tourism file",
-      "Status": "Identified in Resolution 2026-2735",
-      "Latest_Known_Event": "",
+      "Object_or_Purpose": "4-star reform/responsible-declaration route 252/238/660/477",
+      "Status": "SAIP corpus received; responsible declaration and toma de conocimiento located; final technical verification open",
+      "Latest_Known_Event": "5 Apr 2024: Cabildo toma de conocimiento of responsible-declaration/project route",
       "Appeal_or_Review": "",
       "Parent_Master_ID": "",
       "Linked_Proceedings": "",
-      "Source_Status": "VERIFIED_PRIMARY",
-      "Open_Reference_Gap": "Complete index, object, parties and final act"
+      "Source_Status": "VERIFIED_PRIMARY_COPY",
+      "Open_Reference_Gap": "Later technical check/final resolution; relation to earlier title/authority requirements"
     },
     {
       "Master_ID": "LZ-CAB-023",
@@ -616,16 +616,16 @@
       "Reference": "7206/2024",
       "Secondary_Reference": "",
       "NIG": "",
-      "Date_or_Period": "2024-2026",
+      "Date_or_Period": "2024-2025",
       "Connection": "Sun Park / operator / title / works / transparency perimeter",
-      "Object_or_Purpose": "Tourism file",
-      "Status": "Reported pending 13 Mar 2026",
-      "Latest_Known_Event": "",
+      "Object_or_Purpose": "Start/activity/RGT route; earlier-file and verification checkpoint",
+      "Status": "SAIP corpus received; 3671 and 2984 expressly pending/related; visit/resolution still pending Feb 2025",
+      "Latest_Known_Event": "18 Feb 2025: Cabildo communicated RGT and stated verification visit and corresponding resolution would be performed",
       "Appeal_or_Review": "",
       "Parent_Master_ID": "",
       "Linked_Proceedings": "",
-      "Source_Status": "VERIFIED_PRIMARY",
-      "Open_Reference_Gap": "Current status and final act"
+      "Source_Status": "VERIFIED_PRIMARY_COPY",
+      "Open_Reference_Gap": "Verification visit act; completed checks; later resolution; treatment of pending 3671/2984"
     },
     {
       "Master_ID": "LZ-CAB-024",
@@ -642,14 +642,14 @@
       "NIG": "",
       "Date_or_Period": "2025",
       "Connection": "Sun Park / operator / title / works / transparency perimeter",
-      "Object_or_Purpose": "Tourism file",
-      "Status": "Reference identified",
-      "Latest_Known_Event": "",
+      "Object_or_Purpose": "Later capacity modification: applicant-declared 301/299/660/598",
+      "Status": "SAIP corpus received; 301/299/660/598 declaration located; final act not located",
+      "Latest_Known_Event": "Mar 2025: HNT declaration/request for 4-star / 301 / 299 / 660 / 598",
       "Appeal_or_Review": "",
       "Parent_Master_ID": "",
       "Linked_Proceedings": "",
-      "Source_Status": "VERIFIED_PRIMARY",
-      "Open_Reference_Gap": "Complete index, object, parties and final act"
+      "Source_Status": "VERIFIED_PRIMARY_COPY",
+      "Open_Reference_Gap": "Final Cabildo act; capacity verification; title/authority basis for added units; reconcile 252/258 inconsistency"
     },
     {
       "Master_ID": "LZ-CAB-025",
@@ -3171,5 +3171,6 @@
       "Source_Status": "CORPUS_REPORTED_PRIMARY_PENDING",
       "Open_Reference_Gap": "NIG; exact final signed resolution; panel/Judge identities if judicial act applicable; LAJ; service/finality"
     }
-  ]
+  ],
+  "outage_continuity_source": "archive/CABILDO_SAIP_CRIMINAL_EVIDENCE_PUBLICATION_CONTROL_18SEP2026.md"
 }
