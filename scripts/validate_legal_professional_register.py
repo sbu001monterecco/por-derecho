@@ -207,11 +207,11 @@ def main() -> int:
         for crosswalk_path, markers in {
             ROOT / "es" / "bernardo-del-rosal-frob-bankia-sun-rock" / "index.html": [
                 "Del Rosal / FROB–BFA–Bankia ↔ Sun Rock", "PRE_ENGAGEMENT_REVIEW", "LA LENTE COMÚN",
-                "Bankia → SAREB → PH122 → CAM", "escisión total posterior",
+                "Bankia → SAREB → PH122 → CAM", "escisión total posterior", "La conexión estaba latente",
             ],
             ROOT / "en" / "bernardo-del-rosal-frob-bankia-sun-rock" / "index.html": [
                 "Del Rosal / FROB–BFA–Bankia ↔ Sun Rock", "PRE_ENGAGEMENT_REVIEW", "THE COMMON LENS",
-                "Bankia → SAREB → PH122 → CAM", "later total demerger",
+                "Bankia → SAREB → PH122 → CAM", "later total demerger", "The connection was already latent",
             ],
             ROOT / "sitemap-lender-liability.xml": [
                 "es/bernardo-del-rosal-frob-bankia-sun-rock/", "en/bernardo-del-rosal-frob-bankia-sun-rock/",
