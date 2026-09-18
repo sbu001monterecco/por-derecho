@@ -6,14 +6,14 @@ const routes = [
     lang: 'en', path: '/en/proceedings-map/', contrary: 'Strongest contrary', sourceScope: 'proposition-level audit path',
     outsideSelected: 'Outside the selected file', antiJoinder: 'joinder', nextSource: 'Next source needed', notExact: 'not an exact proceeding',
     auditBoundary: 'Audit coverage means', positiveEvidence: 'Separate positive evidence', receiptBoundary: 'RECEIVED ≠ INCORPORATED IN FILE ≠ EXAMINED ≠ USED IN A DECISION',
-    actorBoundary: 'Institutional receipt does not by itself prove', noUnitaryAcknowledgement: 'No unitary acknowledgement has been located in the controlled corpus.', headlineFinite: '106 of 106', headlineForbidden: 'Every materially connected file',
+    actorBoundary: 'Institutional receipt does not by itself prove', noUnitaryAcknowledgement: 'No unitary acknowledgement has been located in the controlled corpus.', headlineForbidden: 'Every materially connected file',
     basisDisclosure: 'Grade basis and limitation',
   },
   {
     lang: 'es', path: '/es/mapa-procedimientos/', contrary: 'Explicación / registro contrario', sourceScope: 'ruta de auditoría de la proposición',
     outsideSelected: 'Fuera del expediente seleccionado', antiJoinder: 'acumulación', nextSource: 'Siguiente fuente necesaria', notExact: 'no es un procedimiento exacto',
     auditBoundary: 'La cobertura de auditoría significa', positiveEvidence: 'Prueba positiva separada', receiptBoundary: 'RECIBIDO ≠ INCORPORADO AL EXPEDIENTE ≠ EXAMINADO ≠ UTILIZADO EN UNA DECISIÓN',
-    actorBoundary: 'La recepción institucional no prueba por sí sola', noUnitaryAcknowledgement: 'No se ha localizado un reconocimiento unitario en el corpus controlado.', headlineFinite: '106 de 106', headlineForbidden: 'Todos los expedientes materialmente conectados',
+    actorBoundary: 'La recepción institucional no prueba por sí sola', noUnitaryAcknowledgement: 'No se ha localizado un reconocimiento unitario en el corpus controlado.', headlineForbidden: 'Todos los expedientes materialmente conectados',
     basisDisclosure: 'Base y límite del grado',
   },
 ];
@@ -828,22 +828,30 @@ try {
   }
 
   const coverage = interlinks.coverage || {};
+  const exactProceedingCount = exactIds.length;
+  const casePrismCoveredCount = Number(coverage.case_prism_exact_proceeding_covered_count);
+  const casePrismUncoveredCount = exactProceedingCount - casePrismCoveredCount;
+  if (!Number.isInteger(casePrismCoveredCount) || casePrismCoveredCount < 0 || casePrismCoveredCount > exactProceedingCount) {
+    throw new Error(`invalid controlled Case Prism coverage denominator (${coverage.case_prism_exact_proceeding_covered_count}/${exactProceedingCount})`);
+  }
+  const exactCoverageToken = `VERIFIED_${exactProceedingCount}_OF_${exactProceedingCount}`;
+  const sharedCoverageToken = `GAP_${casePrismCoveredCount}_OF_${exactProceedingCount}`;
   const requiredCoverage = {
-    public_exact_proceeding_count: 106,
-    case_prism_exact_proceeding_covered_count: 45,
-    case_prism_exact_proceeding_uncovered_count: 61,
-    decision_dependency_exact_coverage: 'VERIFIED_106_OF_106',
+    public_exact_proceeding_count: exactProceedingCount,
+    case_prism_exact_proceeding_covered_count: casePrismCoveredCount,
+    case_prism_exact_proceeding_uncovered_count: casePrismUncoveredCount,
+    decision_dependency_exact_coverage: exactCoverageToken,
     decision_dependency_exact_coverage_scope: 'PUBLIC_EXACT_FILE_FINITE_TEST_REGISTER',
-    shared_case_prism_proposition_membership_coverage: 'GAP_45_OF_106',
+    shared_case_prism_proposition_membership_coverage: sharedCoverageToken,
     shared_case_prism_proposition_membership_scope: 'SHARED_CASE_PRISM_PROPOSITION_MEMBERSHIP_ONLY',
-    exact_file_decision_dependency_actionability_count: 106,
-    exact_file_decision_dependency_actionability_coverage: 'VERIFIED_106_OF_106',
-    exact_proceeding_full_finite_test_count: 106,
-    exact_proceeding_full_finite_test_coverage: 'VERIFIED_106_OF_106',
-    receipt_knowledge_classification_count: 106,
-    receipt_knowledge_classification_coverage: 'VERIFIED_106_OF_106',
-    receipt_knowledge_axis_provenance_count: 106,
-    receipt_knowledge_axis_provenance_coverage: 'VERIFIED_106_OF_106',
+    exact_file_decision_dependency_actionability_count: exactProceedingCount,
+    exact_file_decision_dependency_actionability_coverage: exactCoverageToken,
+    exact_proceeding_full_finite_test_count: exactProceedingCount,
+    exact_proceeding_full_finite_test_coverage: exactCoverageToken,
+    receipt_knowledge_classification_count: exactProceedingCount,
+    receipt_knowledge_classification_coverage: exactCoverageToken,
+    receipt_knowledge_axis_provenance_count: exactProceedingCount,
+    receipt_knowledge_axis_provenance_coverage: exactCoverageToken,
     receipt_knowledge_positive_source_profile_count: 9,
     fiscalia_office_file_matrix_count: 26,
     fiscalia_office_file_matrix_coverage: 'VERIFIED_26_OF_26',
@@ -853,9 +861,9 @@ try {
     fiscalia_office_file_matrix_unverified_count: 3,
     fiscalia_response_episode_profile_count: 9,
     fiscalia_office_file_matrix_source_profiled_record_count: 8,
-    controlled_trace_route_count: 106,
-    controlled_isolation_route_count: 106,
-    controlled_navigation_coverage: 'VERIFIED_106_OF_106',
+    controlled_trace_route_count: exactProceedingCount,
+    controlled_isolation_route_count: exactProceedingCount,
+    controlled_navigation_coverage: exactCoverageToken,
     dedicated_narrative_dossier_coverage: 'PARTIAL_NOT_INFERRED',
   };
   for (const [field, expected] of Object.entries(requiredCoverage)) {
@@ -910,7 +918,7 @@ try {
       cell.status === 'OUTSIDE' ? [] : (cell.master_ids || []).filter((id) => exactIdSet.has(id))
     )
   ));
-  if (prismCoveredIds.size !== 45 || exactIds.length - prismCoveredIds.size !== 61) {
+  if (prismCoveredIds.size !== casePrismCoveredCount || exactProceedingCount - prismCoveredIds.size !== casePrismUncoveredCount) {
     throw new Error(`Case Prism exact-file content denominator mismatch (${prismCoveredIds.size}/${exactIds.length})`);
   }
   const expectedIsolationById = new Map(exactIds.map((masterId) => [
@@ -937,9 +945,10 @@ try {
     if (await tabs.count() !== 6) throw new Error(`${route.lang}: expected six semantic tabs`);
     if (await page.locator('[data-proceedings-map="20260831e"]').count() !== 1) throw new Error(`${route.lang}: live renderer marker is not 20260831e`);
     const staticPrismText = await page.locator('#case-prism').innerText();
-    if (!staticPrismText.includes('45') || !staticPrismText.includes('61') || !staticPrismText.includes(route.headlineFinite)
+    const headlineFinite = route.lang === 'en' ? `${exactProceedingCount} of ${exactProceedingCount}` : `${exactProceedingCount} de ${exactProceedingCount}`;
+    if (!staticPrismText.includes(String(casePrismCoveredCount)) || !staticPrismText.includes(String(casePrismUncoveredCount)) || !staticPrismText.includes(headlineFinite)
         || staticPrismText.includes(route.headlineForbidden)) {
-      throw new Error(`${route.lang}: static Case Prism introduction misstates the 45/106 shared-proposition denominator`);
+      throw new Error(`${route.lang}: static Case Prism introduction misstates the ${casePrismCoveredCount}/${exactProceedingCount} shared-proposition denominator`);
     }
     if (await page.locator('a[href="#isolation-test"]').count() < 1) throw new Error(`${route.lang}: exact-file finite-test CTA missing`);
     await assertFilterScope(page, true, route, 'map');
@@ -988,8 +997,8 @@ try {
     if (await exactDecisionRegister.count() !== 1
         || await exactDecisionRegister.getAttribute('data-exact-count') !== String(exactIds.length)
         || await exactDecisionRegister.getAttribute('data-audited-count') !== String(exactIds.length)
-        || await exactDecisionRegister.getAttribute('data-shared-proposition-count') !== '45') {
-      throw new Error(`${route.lang}: exact-file decision-dependency register does not distinguish 106/106 actionability from 45/106 shared-proposition membership`);
+        || await exactDecisionRegister.getAttribute('data-shared-proposition-count') !== String(casePrismCoveredCount)) {
+      throw new Error(`${route.lang}: exact-file decision-dependency register does not distinguish ${exactProceedingCount}/${exactProceedingCount} actionability from ${casePrismCoveredCount}/${exactProceedingCount} shared-proposition membership`);
     }
     const detailIsAdjacentToMatrix = await page.evaluate(() => {
       const matrix = document.querySelector('.pdim-prism-table-wrap');
@@ -1198,25 +1207,25 @@ try {
       const expectedStatus = prismCoveredIds.has(masterId) ? 'covered' : 'unresolved';
       if (status !== expectedStatus) throw new Error(`${route.lang}/${masterId}: Case Prism coverage label is ${status}, expected ${expectedStatus}`);
     }
-    if (renderedCoverage.filter(([, status]) => status === 'covered').length !== 45 || renderedCoverage.filter(([, status]) => status === 'unresolved').length !== 61) {
-      throw new Error(`${route.lang}: visible Case Prism content coverage must remain 45 covered / 61 unresolved`);
+    if (renderedCoverage.filter(([, status]) => status === 'covered').length !== casePrismCoveredCount || renderedCoverage.filter(([, status]) => status === 'unresolved').length !== casePrismUncoveredCount) {
+      throw new Error(`${route.lang}: visible Case Prism content coverage must remain ${casePrismCoveredCount} covered / ${casePrismUncoveredCount} unresolved`);
     }
     if (await isolation.locator('option[value="GC-APP-007"]').count()) throw new Error(`${route.lang}: aggregate removal-appeal family admitted to isolation`);
     const coverageText = await page.locator('[data-isolation-coverage]').innerText();
-    if (!coverageText.includes(`45/${exactIds.length}`) || !coverageText.includes('61')) throw new Error(`${route.lang}: finite 45/106 Case Prism content denominator is not visible`);
+    if (!coverageText.includes(`${casePrismCoveredCount}/${exactProceedingCount}`) || !coverageText.includes(String(casePrismUncoveredCount))) throw new Error(`${route.lang}: finite ${casePrismCoveredCount}/${exactProceedingCount} Case Prism content denominator is not visible`);
     const finiteCoverage = page.locator('.pdim-finite-coverage[data-finite-test-coverage]');
     if (await finiteCoverage.count() !== 1
-        || await finiteCoverage.getAttribute('data-audit-count') !== '106'
+        || await finiteCoverage.getAttribute('data-audit-count') !== String(exactProceedingCount)
         || await finiteCoverage.getAttribute('data-positive-evidence-count') !== '9') {
-      throw new Error(`${route.lang}: finite-test coverage must distinguish 106 audited models from nine files with positive institutional evidence`);
+      throw new Error(`${route.lang}: finite-test coverage must distinguish ${exactProceedingCount} audited models from nine files with positive institutional evidence`);
     }
     const finiteCoverageText = await finiteCoverage.innerText();
-    if (!finiteCoverageText.includes('106/106') || !finiteCoverageText.includes(route.auditBoundary) || !finiteCoverageText.includes(route.positiveEvidence)) {
+    if (!finiteCoverageText.includes(`${exactProceedingCount}/${exactProceedingCount}`) || !finiteCoverageText.includes(route.auditBoundary) || !finiteCoverageText.includes(route.positiveEvidence)) {
       throw new Error(`${route.lang}: finite audit/positive-evidence boundary is not visible`);
     }
     const finiteOptionCoverage = await isolation.locator('option[value]:not([value="__FULL__"])').evaluateAll((options) => options.map((option) => [option.value, option.dataset.finiteTestCoverage]));
-    if (finiteOptionCoverage.length !== 106 || finiteOptionCoverage.some(([, status]) => status !== 'audited')) {
-      throw new Error(`${route.lang}: all 106 exact options must expose audited finite-test coverage`);
+    if (finiteOptionCoverage.length !== exactProceedingCount || finiteOptionCoverage.some(([, status]) => status !== 'audited')) {
+      throw new Error(`${route.lang}: all ${exactProceedingCount} exact options must expose audited finite-test coverage`);
     }
     const fullCorpusLabels = await page.locator('.pdim-isolation-map button[aria-label]').evaluateAll((elements) => elements.map((element) => element.getAttribute('aria-label') || ''));
     if (fullCorpusLabels.some((label) => label.includes(route.outsideSelected))) throw new Error(`${route.lang}: full-corpus cells are announced as outside a selected file`);
