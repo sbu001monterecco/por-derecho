@@ -20,7 +20,7 @@ audit the decisions.
 | `EVID-2026-FISCALIA-DIP2-DECRETO-002` | Decreto de resolución y archivo, 6 Mar 2026, 10 pages, Juan Manuel González-Casanova Ruiz, Fiscal | signed official PDF located and read | `7d7be3516fd691de5da0d05081e5d4916b6e3141804891abf5742df82007a452` | public redacted PDF + full text |
 | `EVID-2026-FISCALIA-DIP2-OFICIO-001` | Oficio de notificación, 9 Mar 2026, 1 page, Ernesto Vieira Morante, Fiscal | signed official PDF located and read | `dc4d6d8b5843e0f052cbfd8025466bb1a25ae2d0634c31d6186383263168f261` | public redacted PDF + full text |
 | `EVID-2026-FISCALIA-DIP2-ACTUALIZACION-11MAR-005` | Comunicación de actualización/corrección, 11 Mar 2026, 4 pages | signed party source located and fully transcribed | `0c3116c35b7dea1976dd39ee043898d0aa6b5b1164c36c9b014b4c3ca70d85b9` | public-safe full text |
-| `EVID-2026-FISCALIA-DIP2-REGAGE-11MAR-006` | REGAGE26e00026303869, 11 Mar 2026, 2 pages | official presentation receipt located and fully transcribed | `102d2f407cc33f0398d45239d94fe56a80246e645191e5e987e430b5c533b289` | public-safe full text |
+| `EVID-2026-FISCALIA-DIP2-REGAGE-11MAR-006` | REGAGE26e00026303869, 11 Mar 2026, 2 pages | official presentation receipt located and fully transcribed | `102d2f407cc33f0398d45239d94fe56a80246e645191e5e987e430b5c533b289` | public-safe full text |\n| `EVID-2026-FISCALIA-DIP2-REGAGE-TRAMITACION-007` | automated registry-routing notice; event 12 Mar, email 14 Mar | reports passage to Registro General Fiscalía de la Comunidad Autónoma de Canarias; email expressly says informational/no legal value | n/a | public-safe text trace |
 
 ## Public derivatives and full text
 
@@ -31,7 +31,7 @@ audit the decisions.
 - [Oficio de notificación - public redacted PDF](public-pdfs/oficio-notificacion-dip-2-2026-09mar2026-public-redacted.pdf)
 - [Oficio de notificación - page-accounted full text](full-text/oficio-notificacion-dip-2-2026-09mar2026-public-transcription.md)
 - [11 Mar update/correction - page-accounted public text](full-text/actualizacion-11mar2026-public-transcription.md)
-- [11 Mar REGAGE receipt - page-accounted public text](full-text/registro-11mar2026-public-transcription.md)
+- [11 Mar REGAGE receipt - page-accounted public text](full-text/registro-11mar2026-public-transcription.md)\n- [12 Mar registry-processing trace - public-safe email transcription](full-text/registro-tramitacion-12mar2026-email-public-transcription.md)
 
 The public PDFs retain searchable text. The transcription files preserve source
 line breaks and page boundaries to support repository search and accessibility.
