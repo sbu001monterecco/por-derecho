@@ -57,5 +57,12 @@
     "preserve newer canonical work",
     "import stable evidence IDs/hashes/public derivatives",
     "rerun canonical validators and public readback"
-  ]
+  ],
+  "github_integration": {
+    "successor_pr": 1551,
+    "predecessor_draft_pr": 1528,
+    "branch": "continuity/cabildo-saip-criminal-evidence-20260918",
+    "base": "main",
+    "merge_state": "CHECKS_AND_CONFLICT_RECONCILIATION"
+  }
 }
