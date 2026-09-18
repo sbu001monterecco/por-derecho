@@ -1,80 +1,82 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1500" viewBox="0 0 1200 1500" role="img" aria-labelledby="t d">
-<title id="t">Un hotel. Una ejecución. Una pregunta más amplia.</title>
-<desc id="d">Visual explicativo basado en fuentes que utiliza la fotografía actual de Sun Park. Las unidades de Matkator se resaltan en el Bloque 5 conforme a la posición de ubicación física de la parte cliente; la conciliación exacta finca↔unidad sigue bajo revisión.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" width="1448" height="1086" viewBox="0 0 1448 1086" role="img" aria-labelledby="title desc">
+<title id="title">Un hotel. Una ejecución. Una pregunta más amplia.</title>
+<desc id="desc">Visual explicativo sobre la fotografía real de Sun Park. Se resalta el Bloque 5 conforme a la posición de ubicación física de Matkator de la parte cliente. También preserva la tesis de continuidad de la parte cliente respecto de otras fincas hoteleras del antiguo perímetro vendedor/minoritario Montelanza/Molina, la operación Montelanza a Multimatrix de 2008 y una posterior convergencia alegada con el perímetro Acosta Matos. Son alegaciones y cuestiones probatorias abiertas, no pronunciamientos judiciales.</desc>
 <defs>
-  <linearGradient id="shade" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0d1c22" stop-opacity=".08"/><stop offset=".64" stop-color="#0d1c22" stop-opacity=".10"/><stop offset="1" stop-color="#0d1c22" stop-opacity=".86"/></linearGradient>
-  <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#111d23"/><stop offset="1" stop-color="#081015"/></linearGradient>
+  <linearGradient id="top" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#f4f0e8"/><stop offset="1" stop-color="#fbfaf7"/></linearGradient>
+  <linearGradient id="dark" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#131a1f"/><stop offset="1" stop-color="#06090c"/></linearGradient>
+  <linearGradient id="red" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#8d1111"/><stop offset="1" stop-color="#3f0606"/></linearGradient>
   <style>
     .sans{font-family:Arial,Helvetica,sans-serif}.serif{font-family:Georgia,'Times New Roman',serif}
-    .white{fill:#fff}.dark{fill:#13252d}.red{fill:#b71c1c}.gold{fill:#d5a342}.muted{fill:#d7e0df}
-    .small{font-size:22px}.tiny{font-size:18px}.mid{font-size:30px}.big{font-size:54px;font-weight:800}.huge{font-size:68px;font-weight:900}
-    .label{fill:#fff;font-size:26px;font-weight:800;text-anchor:middle}.labelbox{fill:#143643;stroke:#dce6e6;stroke-width:2;rx:8}
+    .white{fill:#fff}.darktxt{fill:#13252d}.redtxt{fill:#a20d0d}.gold{fill:#d8aa43}.muted{fill:#c9d2d3}
+    .tiny{font-size:16px}.small{font-size:20px}.mid{font-size:27px}.big{font-size:42px;font-weight:800}.huge{font-size:58px;font-weight:900}
+    .block{fill:#143843;stroke:#fff;stroke-width:2}.blocktxt{fill:#fff;font-size:26px;font-weight:900;text-anchor:middle}
   </style>
 </defs>
-<rect width="1200" height="1500" fill="#f6f2e9"/>
-<rect x="0" y="0" width="1200" height="162" fill="#f6f2e9"/>
-<text x="600" y="40" class="sans dark small" text-anchor="middle">PROJECT SUN ROCK / POR DERECHO · VISUAL EXPLICATIVO PÚBLICO</text>
-<text x="600" y="102" class="sans dark huge" text-anchor="middle">UN HOTEL. <tspan fill="#b71c1c">UNA EJECUCIÓN.</tspan></text>
-<text x="600" y="145" class="serif dark mid" text-anchor="middle">Por qué una ejecución activa puede afectar a un perímetro hotelero y de recuperación más amplio</text>
+<rect width="1448" height="1086" fill="#f6f2ea"/>
+<rect width="1448" height="126" fill="url(#top)"/>
+<text x="724" y="28" class="sans darktxt tiny" text-anchor="middle" letter-spacing="1">PROJECT SUN ROCK / POR DERECHO · VISUAL EXPLICATIVO PÚBLICO</text>
+<text x="724" y="76" class="sans darktxt huge" text-anchor="middle">UN HOTEL. <tspan fill="#a20d0d">UNA EJECUCIÓN.</tspan> UNA PREGUNTA MÁS AMPLIA.</text>
+<text x="724" y="111" class="serif darktxt mid" text-anchor="middle">Cómo una ejecución activa puede afectar a un perímetro más amplio de derechos hoteleros y recuperación</text>
 
-<image href="/por-derecho/assets/sun-park-mynd-yaiza.jpg" x="0" y="162" width="1200" height="760" preserveAspectRatio="xMidYMid slice"/>
-<rect x="0" y="162" width="1200" height="760" fill="url(#shade)"/>
+<image href="/por-derecho/assets/sun-park-mynd-yaiza.jpg" x="236" y="128" width="976" height="646" preserveAspectRatio="xMidYMid slice"/>
+<rect x="236" y="128" width="976" height="646" fill="#0b1115" fill-opacity=".06"/>
 
-<rect x="330" y="182" width="540" height="88" rx="12" fill="#fff" fill-opacity=".92"/>
-<text x="600" y="222" class="sans dark big" text-anchor="middle">SUN PARK · PLAYA BLANCA</text>
-<text x="600" y="255" class="sans dark small" text-anchor="middle">NUEVE BLOQUES · 262 FINCAS · UNA EXPLOTACIÓN HOTELERA</text>
+<rect x="0" y="128" width="236" height="646" fill="url(#red)"/>
+<text x="24" y="177" class="serif white big">Qué está activo ahora</text>
+<line x1="24" y1="196" x2="210" y2="196" stroke="#ff2e2e" stroke-width="4"/>
+<text x="28" y="246" class="serif white mid">ETJ 163/2020</text>
+<text x="28" y="301" class="serif white small">Ejecución centrada</text><text x="28" y="327" class="serif white small">en la finca 8.584</text>
+<text x="28" y="383" class="serif white small">La finca 8.588 también</text><text x="28" y="409" class="serif white small">aparece en la cadena de embargo</text>
+<text x="28" y="466" class="serif white small">Un remate no agota</text><text x="28" y="492" class="serif white small">toda la exposición.</text>
+<text x="28" y="555" class="serif gold mid" font-style="italic">«La ejecución no sucede</text><text x="28" y="586" class="serif gold mid" font-style="italic">de forma aislada».</text>
+<text x="24" y="720" class="sans muted tiny" letter-spacing="2">MISMO HOTEL · MISMA ESTRUCTURA · MAYORES IMPLICACIONES</text>
+
+<rect x="1212" y="128" width="236" height="646" fill="url(#dark)"/>
+<text x="1238" y="177" class="serif white big">Por qué el impacto</text><text x="1238" y="216" class="serif white big">puede ser mayor</text>
+<line x1="1238" y1="234" x2="1422" y2="234" stroke="#ff2e2e" stroke-width="4"/>
+<text x="1240" y="286" class="serif white small">Derechos de Matkator dentro</text><text x="1240" y="312" class="serif white small">del mismo perímetro hotelero</text>
+<text x="1240" y="364" class="serif white small">Estructura y lógica</text><text x="1240" y="390" class="serif white small">de explotación compartidas</text>
+<text x="1240" y="442" class="serif white small">Presión potencial sobre</text><text x="1240" y="468" class="serif white small">otros activos/derechos Matkator</text>
+<text x="1240" y="520" class="serif white small">Las consecuencias económicas</text><text x="1240" y="546" class="serif white small">pueden superar una sola unidad</text>
+<text x="1240" y="610" class="serif gold mid" font-style="italic">«Una sola ejecución puede</text><text x="1240" y="642" class="serif gold mid" font-style="italic">cambiar la ecuación para muchos».</text>
+
+<rect x="495" y="157" width="460" height="78" rx="12" fill="#fff" fill-opacity=".93"/>
+<text x="725" y="190" class="sans darktxt big" text-anchor="middle">SUN PARK HOTEL</text>
+<text x="725" y="220" class="sans darktxt small" text-anchor="middle" letter-spacing="2">PLAYA BLANCA · LANZAROTE · NUEVE BLOQUES · UNA EXPLOTACIÓN HOTELERA</text>
 
 <g class="sans">
- <rect class="labelbox" x="475" y="285" width="250" height="50"/><text x="600" y="319" class="label">7</text>
- <rect class="labelbox" x="285" y="350" width="110" height="50"/><text x="340" y="384" class="label">6</text>
- <rect class="labelbox" x="805" y="350" width="110" height="50"/><text x="860" y="384" class="label">8</text>
- <rect x="210" y="455" width="150" height="138" rx="14" fill="#b71c1c" fill-opacity=".52" stroke="#ffdbd8" stroke-width="5"/>
- <rect x="222" y="466" width="126" height="48" rx="8" fill="#b71c1c"/><text x="285" y="500" class="label">5</text>
- <rect class="labelbox" x="850" y="455" width="110" height="50"/><text x="905" y="489" class="label">1</text>
- <rect class="labelbox" x="270" y="620" width="110" height="50"/><text x="325" y="654" class="label">4</text>
- <rect class="labelbox" x="820" y="620" width="110" height="50"/><text x="875" y="654" class="label">2</text>
- <rect class="labelbox" x="500" y="505" width="200" height="50"/><text x="600" y="539" class="label">9</text>
- <rect class="labelbox" x="500" y="760" width="200" height="50"/><text x="600" y="794" class="label">3</text>
+  <rect class="block" x="650" y="252" width="130" height="42" rx="7"/><text x="715" y="282" class="blocktxt">7</text>
+  <rect class="block" x="460" y="317" width="92" height="42" rx="7"/><text x="506" y="347" class="blocktxt">6</text>
+  <rect class="block" x="891" y="317" width="92" height="42" rx="7"/><text x="937" y="347" class="blocktxt">8</text>
+  <rect x="342" y="391" width="176" height="150" rx="10" fill="#b10d0d" fill-opacity=".42" stroke="#ffb7b7" stroke-width="4"/>
+  <rect x="376" y="413" width="102" height="42" rx="7" fill="#a20d0d"/><text x="427" y="443" class="blocktxt">5</text>
+  <rect class="block" x="1008" y="405" width="92" height="42" rx="7"/><text x="1054" y="435" class="blocktxt">1</text>
+  <rect class="block" x="462" y="545" width="92" height="42" rx="7"/><text x="508" y="575" class="blocktxt">4</text>
+  <rect class="block" x="900" y="545" width="92" height="42" rx="7"/><text x="946" y="575" class="blocktxt">2</text>
+  <rect class="block" x="664" y="435" width="120" height="42" rx="7"/><text x="724" y="465" class="blocktxt">9</text>
+  <rect class="block" x="663" y="660" width="120" height="42" rx="7"/><text x="723" y="690" class="blocktxt">3</text>
 </g>
 
-<path d="M 350 540 C 250 650, 235 715, 245 748" fill="none" stroke="#fff" stroke-width="8"/>
-<path d="M 350 540 C 250 650, 235 715, 245 748" fill="none" stroke="#b71c1c" stroke-width="4" stroke-dasharray="12 8"/>
-<rect x="55" y="735" width="390" height="130" rx="14" fill="#a80f0f" stroke="#fff" stroke-width="3"/>
-<text x="250" y="780" class="sans white mid" text-anchor="middle" font-weight="800">FINCA 8.584 · BLOQUE 5</text>
-<text x="250" y="815" class="serif white small" text-anchor="middle">ubicación física sostenida por la parte cliente</text>
-<text x="250" y="847" class="serif white tiny" text-anchor="middle">la conciliación exacta finca↔unidad sigue bajo revisión</text>
+<path d="M 433 487 C 374 565, 350 625, 349 674" fill="none" stroke="#fff" stroke-width="8"/>
+<path d="M 433 487 C 374 565, 350 625, 349 674" fill="none" stroke="#a20d0d" stroke-width="4" stroke-dasharray="10 8"/>
+<rect x="282" y="666" width="336" height="90" rx="12" fill="#a20d0d" stroke="#fff" stroke-width="3"/>
+<text x="450" y="702" class="sans white mid" text-anchor="middle" font-weight="800">FINCA 8.584 — BLOQUE 5</text>
+<text x="450" y="731" class="serif white tiny" text-anchor="middle">ubicación física según la parte cliente; conciliación exacta bajo revisión</text>
+<text x="1168" y="388" class="sans darktxt tiny" transform="rotate(72 1168 388)">CALLE JANUBIO</text>
 
-<rect x="790" y="712" width="350" height="154" rx="14" fill="#0b1115" fill-opacity=".93" stroke="#d5a342" stroke-width="3"/>
-<text x="815" y="754" class="sans white mid" font-weight="800">QUÉ ESTÁ ACTIVO AHORA</text>
-<text x="815" y="795" class="serif white small">ETJ 163/2020 · finca 8.584</text>
-<text x="815" y="829" class="serif white small">la finca 8.588 figura en la cadena de embargo</text>
-<text x="815" y="860" class="serif" fill="#f1cf75" font-size="21">Un remate no agota toda la exposición.</text>
+<rect x="236" y="774" width="976" height="116" fill="#f7f2e8"/>
+<text x="724" y="810" class="serif darktxt big" text-anchor="middle">Perímetros separados, pero conectados</text>
+<rect x="285" y="827" width="240" height="48" rx="10" fill="#fff" stroke="#a20d0d" stroke-width="2"/><text x="405" y="858" class="sans redtxt mid" text-anchor="middle" font-weight="800">Matkator, S.L.</text>
+<rect x="604" y="827" width="240" height="48" rx="10" fill="#edf2f1" stroke="#344b53" stroke-width="2"/><text x="724" y="858" class="sans darktxt mid" text-anchor="middle" font-weight="800">Aweswell Limited</text>
+<rect x="923" y="827" width="240" height="48" rx="10" fill="#fff8e6" stroke="#b58b2d" stroke-width="2"/><text x="1043" y="858" class="sans darktxt mid" text-anchor="middle" font-weight="800">Hotel Sun Park</text>
 
-<rect x="0" y="922" width="1200" height="578" fill="url(#panel)"/>
-<text x="600" y="982" class="sans white big" text-anchor="middle">PERÍMETROS SEPARADOS, PERO CONECTADOS</text>
+<rect x="32" y="902" width="1384" height="112" rx="14" fill="#4a0909"/>
+<text x="56" y="935" class="sans white mid" font-weight="800">CUESTIÓN DE CONTINUIDAD MÁS AMPLIA</text>
+<text x="56" y="967" class="serif white small">Otras fincas hoteleras del antiguo perímetro vendedor/minoritario Montelanza / Molina forman parte de la teoría de la parte cliente sobre</text>
+<text x="56" y="993" class="serif white small">el presunto incumplimiento o falta de consumación de la operación Montelanza → Multimatrix de 2008 y una posterior convergencia alegada con el perímetro Acosta Matos.</text>
+<text x="56" y="1017" class="sans" fill="#f0c765" font-size="15">Tesis causal atribuida a Gil Marer. No es un pronunciamiento judicial; vendedor, finca, obligación, actor, conocimiento y efecto deben probarse individualmente.</text>
 
-<rect x="70" y="1018" width="320" height="150" rx="18" fill="#fff" fill-opacity=".96"/>
-<text x="230" y="1066" class="sans red mid" text-anchor="middle" font-weight="800">MATKATOR, S.L.</text>
-<text x="230" y="1105" class="serif dark small" text-anchor="middle">activo ejecutado / exposición de derechos</text>
-<text x="230" y="1142" class="serif dark tiny" text-anchor="middle">finca 8.584 · finca 8.588 · otros bienes Matkator</text>
-
-<rect x="440" y="1018" width="320" height="150" rx="18" fill="#eef3f2"/>
-<text x="600" y="1066" class="sans dark mid" text-anchor="middle" font-weight="800">AWESWELL LIMITED</text>
-<text x="600" y="1105" class="serif dark small" text-anchor="middle">antigua cliente · perímetro holding / recuperación</text>
-<text x="600" y="1142" class="serif dark tiny" text-anchor="middle">jurídicamente separada de Matkator y LPB</text>
-
-<rect x="810" y="1018" width="320" height="150" rx="18" fill="#fff8e6"/>
-<text x="970" y="1066" class="sans dark mid" text-anchor="middle" font-weight="800">HOTEL SUN PARK</text>
-<text x="970" y="1105" class="serif dark small" text-anchor="middle">explotación hotelera integrada</text>
-<text x="970" y="1142" class="serif dark tiny" text-anchor="middle">accesos · infraestructura común · ingresos · valor operativo</text>
-
-<path d="M390 1095 H440" stroke="#d5a342" stroke-width="7"/><path d="M760 1095 H810" stroke="#d5a342" stroke-width="7"/>
-
-<text x="600" y="1238" class="serif white" font-size="40" text-anchor="middle">La cuestión no es sólo un apartamento.</text>
-<text x="600" y="1292" class="serif gold" font-size="40" text-anchor="middle" font-weight="700">Una cadena de ejecución puede afectar a poder negociador, valor,</text>
-<text x="600" y="1342" class="serif gold" font-size="40" text-anchor="middle" font-weight="700">recuperación y derechos hoteleros más allá de la finca ejecutada.</text>
-
-<rect x="105" y="1384" width="990" height="74" rx="12" fill="#fff" fill-opacity=".10" stroke="#75888d"/>
-<text x="600" y="1415" class="sans white tiny" text-anchor="middle">LÍMITE DE FUENTE · Este visual presenta alegaciones, preguntas basadas en fuentes y contexto procesal documentado.</text>
-<text x="600" y="1443" class="sans muted tiny" text-anchor="middle">No acredita responsabilidad penal, cesión consumada, identidad de cesionario ni una correspondencia finca↔apartamento cerrada.</text>
+<rect x="0" y="1028" width="1448" height="58" fill="#10171b"/>
+<text x="724" y="1054" class="serif white mid" text-anchor="middle">La cuestión no es sólo un apartamento. Es si una cadena de ejecución puede remodelar valor dentro de un perímetro hotelero interconectado.</text>
+<text x="724" y="1078" class="sans muted tiny" text-anchor="middle">Visual explicativo basado en fuentes · las alegaciones siguen siendo alegaciones · no se afirma como probada cesión consumada, identidad de cesionario ni responsabilidad penal.</text>
 </svg>
