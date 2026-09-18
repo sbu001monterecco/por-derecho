@@ -60,15 +60,25 @@ The order:
 
 That last proposition must be handled with precision: the repository documents RPL 3304/2025 and RPL 3319/2025 as appeals by the relevant companies. Whether the order intended to speak only of Gil personally, or more broadly of the availability/use of appeal, is an interpretation issue to be confronted with the certified appellate record.
 
-## 5. Control 21 / daily-reference-24 identity collision
+## 5. Daily-reference-21 / daily-reference-24 identity collision — source closure strengthened
 
-The new full-text order increases the need for provenance reconstruction:
+The source record now includes `evidence/judicial/dp-1901-2026/PROCEDURAL_IDENTITY_SOURCE_CLOSURE_18SEP2026.md`, which hash-locks six connected image sources.
 
-- July records associated DP 1901 with the private-actor filing lane;
-- the 12 July providencia linked DP 1901 to DIP 2/2026;
-- the 14 September order treats DP 1901 as alleged judicial prevarication.
+It establishes:
 
-No formal joinder/reassignment/segregation bridge has been located. The direction of any routing error remains open.
+- 18-Jun daily reference 24 was a separate judge/judicial-conduct complaint intended for the TSJC Civil/Criminal route;
+- 25-Jun daily reference 21 was a new autonomous complaint against five private actors;
+- the separate 25-Jun 13-page supplement expressly belonged to daily reference 24;
+- contemporaneous 25-Jun correspondence reported daily reference 24 still at Decanato; this remains a party report, not an official reparto certificate;
+- 9-Jul ATLANTE officially displayed DP 1901/Plaza 6 and DP 1956/Plaza 1 with Gil as complainant but did not identify subject matter;
+- a separate stamped 9-Jul cover physically tendered private-actor amplification material under DP 1901/Plaza 6;
+- a 12-Jul contemporaneous counsel email reports the operational understanding that Plaza 6/1901 concerned the CAM/Community complaint and that court staff described a forthcoming traslado to Fiscalía;
+- the signed 12-Jul providencia nevertheless linked the same DP to DIP 2/2026;
+- the 14-Sep Auto later treats DP 1901 as alleged judicial prevaricación.
+
+This closes the generic proposition that “July records associated DP 1901 with the private-actor lane” with identified primary/contemporaneous sources. It does **not** close the direction of the collision.
+
+No certified initiating document, reparto chain or formal joinder/reassignment/segregation bridge has been located. Canonical state remains **PROCEDURAL_IDENTITY_COLLISION_OPEN — DIRECTION NOT CERTIFIED**.
 
 ## 6. Required propagation
 
