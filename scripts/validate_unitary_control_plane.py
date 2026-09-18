@@ -170,22 +170,26 @@ def main() -> int:
             isinstance(last_live, str) and last_live <= repository_latest,
             "last live-verified material date exceeds repository material date",
         )
-        expected_parity = (
-            f"{repository_latest}_LIVE_VERIFIED"
-            if last_live == repository_latest
-            else f"REPOSITORY_{repository_latest}_PENDING_PUBLICATION_LAST_LIVE_VERIFIED_{last_live}"
-        )
-        require(
-            material.get("public_parity") == expected_parity,
-            "repository/live material parity boundary drift",
-        )
-        if last_live != repository_latest:
+        if last_live == repository_latest:
+            expected_parity = f"{repository_latest}_LIVE_VERIFIED"
+        else:
             pending = material.get("pending_publication") or {}
             require(
                 pending.get("control_id") == "PD-CUATRECASAS-ETJ-DP748-20260918-01",
                 "pending 18-Sep Cuatrecasas/La Laguna material control missing",
             )
-            require(pending.get("state") == "PREPARED_PENDING_MERGE", "pending material state drift")
+            pending_state = pending.get("state")
+            require(
+                pending_state in {"PREPARED_PENDING_MERGE", "MERGED_AWAITING_PAGES_READBACK"},
+                "pending material state drift",
+            )
+            expected_parity = (
+                f"REPOSITORY_{repository_latest}_{pending_state}_LAST_LIVE_VERIFIED_{last_live}"
+            )
+        require(
+            material.get("public_parity") == expected_parity,
+            "repository/live material parity boundary drift",
+        )
         repository = state.get("repository") or {}
         require(repository.get("current_main_sha_at_preparation") == MERGE_SHA, "unitary merge SHA drift")
         require(repository.get("source_publication_merge_sha") == MERGE_SHA, "publication merge SHA drift")
@@ -201,7 +205,7 @@ def main() -> int:
             == "publication-manifests/unitary-enterprise-rdm-manifest-analysis-20260826.json",
             "promoted 26-Aug publication manifest missing",
         )
-        require(promoted.get("pages_run_id") == PAGES_RUN_ID, "promoted Pages run drift")
+        require(promoted.get("pages_run_id") == PAGES_RUN_ID, "promoted manifest Pages run drift")
         require(promoted.get("live_verification_run_id") == UNITARY_VERIFY_RUN, "promoted verifier drift")
         require(promoted.get("live_verification_job_id") == UNITARY_VERIFY_JOB, "promoted verifier job drift")
         require(
