@@ -1,6 +1,6 @@
 {
   "schema": "por-derecho.ministerio-fiscal-adverse-party-full-notice.v1",
-  "control_date": "2026-08-31",
+  "control_date": "2026-09-18",
   "owner": "Gil Marer / Por Derecho",
   "operating_posture": "ADVERSE_INSTITUTIONAL_ACTOR_OR_COUNTERPARTY_FOR_PRESERVATION_NOTICE_AND_RECOVERY",
   "formal_finding": false,
@@ -11,16 +11,26 @@
   "dp1901": {
     "proceeding": "DP 1901/2026",
     "nig": "3501643220260016977",
-    "documented": "A primary order dated 12 July 2026 transferred the admission question to Ministerio Fiscal for a five-day report, expressly in connection with DIP 2/2026.",
+    "documented": "A 12 July 2026 order transferred the admission question to Ministerio Fiscal in connection with DIP 2/2026. A later order dated 14 September 2026 records a prosecution report dated 29 July 2026 seeking dismissal and itself orders sobreseimiento libre/archive.",
     "open": [
-      "signed Fiscal report",
+      "signed 29 July 2026 Fiscal report",
       "authoring prosecutor",
       "complete source corpus supplied",
-      "position adopted",
-      "later judicial order and current status"
+      "assignment/reparto and any review/instruction",
+      "reasoning for the dismissal request",
+      "Control 21 / Control 24 / DIP 2 routing trace",
+      "native court order and legal-notice metadata"
     ],
     "warning_es": "Fiscalia queda expresamente advertida de la alegacion de Gil: cualquier acto u omision informado que suprima, fragmente, reclasifique, neutralice o deje sin investigar las alegaciones actor-especificas de delitos economicos de DP 1901/2026 puede habilitar activamente el esquema alegado, proteger a sus presuntos beneficiarios y contribuir al dano patrimonial continuado.",
-    "warning_en": "Fiscalia is expressly warned of Gil's allegation: any informed act or omission that suppresses, fragments, reclassifies, neutralises or leaves uninvestigated the actor-specific economic-crime allegations in DP 1901/2026 may actively enable the alleged scheme, protect its alleged beneficiaries and contribute to continuing patrimonial harm."
+    "warning_en": "Fiscalia is expressly warned of Gil's allegation: any informed act or omission that suppresses, fragments, reclassifies, neutralises or leaves uninvestigated the actor-specific economic-crime allegations in DP 1901/2026 may actively enable the alleged scheme, protect its alleged beneficiaries and contribute to continuing patrimonial harm.",
+    "supervening_event": {
+      "order_date": "2026-09-14",
+      "received_copy_control_date": "2026-09-18",
+      "fiscal_report_date": "2026-07-29",
+      "fiscal_requested_outcome": "archive",
+      "routing_identity_status": "CONTROL21_CONTROL24_COLLISION_OPEN",
+      "boundary": "The dismissal request is a concrete dated prosecutorial act; it is not by itself proof of capture, prevarication, coordination or criminal liability."
+    }
   },
   "notice_states": {
     "position_adopted": true,
@@ -38,17 +48,18 @@
     "parallel_lanes": [
       "E.G. 745 reconsideration",
       "access and preservation",
-      "DP 1901 signed-report/source-corpus/later-order production",
+      "DP 1901 29-Jul report/author/source-corpus/routing production and 14-Sep order provenance",
       "actor-specific accountability",
       "RPL 2523 and claimant-specific recovery",
       "public notice and right of reply"
-    ]
+    ],
+    "reconsideration_successor": "12_SEP_VERSION_REQUIRES_18SEP_DP1901_SUPERVENING_EVENT_UPDATE_BEFORE_FILING"
   },
   "evidence_boundaries": [
     "Public publication is not proof of formal service, institutional receipt or personal access.",
     "Institutional receipt of earlier submissions is not automatic personal knowledge by Ricardo de Mosteyrín or another prosecutor.",
     "DP 1901/2026 remains separate from Calificacion, DP 1956/2026, DIP 2/2026, RPL 2523/2025, Madrid DP 913/2025 and judicial or disciplinary routes.",
-    "The signed DP 1901 prosecution report and later judicial decision are not located in the controlled public record.",
+    "The 14 September DP 1901 order records a 29 July prosecution report seeking dismissal and supplies the later judicial disposition; the signed prosecution report, author, source corpus, reasoning, routing trace and notice metadata remain unlocated in the controlled public record.",
     "The adverse first-instance Judgment 163/2023 and unresolved RPL 2523/2025 appeal remain visible.",
     "No guilt, common design, personal coordination, active enablement, causation or criminal liability is presented as adjudicated fact."
   ],

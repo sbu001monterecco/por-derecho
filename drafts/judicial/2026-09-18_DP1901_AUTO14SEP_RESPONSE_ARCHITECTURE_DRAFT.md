@@ -1,0 +1,87 @@
+# DP 1901/2026 — response architecture to 14 September 2026 order
+
+**Control date:** 18 September 2026  
+**Status:** DRAFT / NOT FILED / COUNSEL-REVIEW REQUIRED  
+**Purpose:** preserve the fullest source-led response architecture while notification date, complete docket and the 29 July Fiscal report remain outstanding.
+
+## Controlling source event
+
+The 14 September 2026 order in DP 1901/2026 (NIG 3501643220260016977; IUP LI2026017152) states that the proceeding was opened on a complaint for alleged judicial prevarication, records that a Ministerio Fiscal report dated 29 July 2026 sought archive, and orders sobreseimiento libre/archive.
+
+This draft does not treat the underlying Fiscal report as produced and does not fix any appeal deadline from the order date alone.
+
+## Ground 1 — procedural identity and provenance before merits
+
+Require the court record to identify:
+
+1. the exact document that generated DP 1901/2026;
+2. the Decanato entry and reparto that created the NIG/IUP;
+3. the destination/reparto of the autonomous 25 June private-actor filing (daily reference 21);
+4. the destination/reparto of the 18 June judge-related filing (daily reference 24) and its 25 June dependent supplement;
+5. the filing and electronic incorporation status of the 9 July private-actor amplification;
+6. every act of joinder, reassignment, accumulation or segregation.
+
+The response should state an **identity collision**, not assume the direction of error.
+
+## Ground 2 — competence if the object decided is judicial prevarication
+
+If the order is substantively deciding alleged judicial prevarication by a judge for acts in office, preserve the objective/functional-competence objection and the TSJC route identified in the originating judge-related complaint and DIP 2/2026 materials.
+
+This ground must distinguish:
+- a denuncia/notitia criminis from a formal querella;
+- administrative/reparto routing from the tribunal legally competent to decide the judicial-offence route;
+- a request for lawful transmission/competence determination from any assertion that the TSJC had already admitted the matter.
+
+## Ground 3 — produce and confront the 29 July Fiscal report
+
+The report is no longer hypothetical. Demand:
+- signed report;
+- author/signatory;
+- assignment/reparto;
+- complete corpus supplied;
+- remitting cover/index;
+- any visado, hierarchical instruction or review;
+- exact reasoning for archive;
+- treatment of Control 21 / daily reference 24 / DIP 2;
+- treatment of the appeal-history correction.
+
+The dismissal request alone is not proof of misconduct.
+
+## Ground 4 — protect the autonomous private-actor complaint
+
+If any Control-21/private-actor material is in DP 1901, require an express statement whether the 14 September disposition purports to decide it. A judicial-prevarication analysis must not silently extinguish a distinct private-actor complaint without identification, reasoning and competence.
+
+## Ground 5 — RPL 3304/2025 / 3319/2025 appeal-history precision
+
+Do not overstate the order's sentence that no appeal is shown.
+
+The controlled record establishes insolvency appeals by LPB/Aweswell concerning the 11 November 2025 separation decision, including RPL 3304/2025 and RPL 3319/2025 and later accumulation material. If the order means only that Gil personally did not appeal, challenge the relevance of that proposition to the criminal complaint. If it implies the underlying judicial decisions were not appealed, confront it with the certified appellate record.
+
+## Ground 6 — sobreseimiento libre versus evidential-insufficiency reasoning
+
+Preserve the argument that the order uses language concerning absence of a minimum objective evidential basis while choosing sobreseimiento libre. Require a reasoned explanation of why the alleged conduct is legally incapable of constituting an offence, rather than merely insufficiently supported at the present evidential stage.
+
+Do not assume the legal consequence; preserve the distinction for counsel and appellate determination.
+
+## Ground 7 — actor-specific merits and contrary explanations
+
+If the reviewing court reaches merits, preserve:
+- adverse judicial rulings are not themselves prevarication;
+- the criminal threshold requires the applicable objective and subjective elements;
+- every allegation must be tied to a signed act/omission, information then available, duty/power, lawful alternative, reasoning and causal effect;
+- contrary judicial explanations and adverse outcomes remain visible.
+
+## Relief architecture
+
+Subject to counsel and remedy selection:
+1. set aside or delimit the disposition where procedural identity/competence is unresolved;
+2. obtain/certify the initiating document, complete docket/index and reparto chain;
+3. produce the 29 July Fiscal report and its corpus;
+4. identify and protect any autonomous private-actor complaint;
+5. preserve the correct competent route for the judge-related allegation;
+6. alternatively require a reasoned, actor-specific determination after the provenance record is fixed;
+7. preserve all ordinary appeal/nullity arguments without treating an exceptional nullity incident as a substitute for an available ordinary remedy.
+
+## Filing / publication boundary
+
+This document is an internal response architecture. It is not a filed recurso, not service, not legal advice to third parties, and not proof that any person committed prevaricación or that Ministerio Fiscal acted unlawfully.

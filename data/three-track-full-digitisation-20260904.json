@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.1",
+  "schema_version": "1.0.2",
   "control_id": "PD-THREE-TRACK-DIGITISATION-20260904-01",
   "created": "2026-09-04",
   "base_main_sha": "b8ded173b06f17aaf91569f051dd11e621b139ae",
@@ -15,7 +15,8 @@
         "control": "CONTROL-21",
         "proceeding": "GC-CRI-008",
         "bridge_status": "UNVERIFIED_CANDIDATE_BRIDGE",
-        "do_not_infer": "Do not state that daily reference 21 became DP 1901/2026 without a source-certified intake/reparto bridge."
+        "do_not_infer": "Do not state that Control 21 became DP 1901/2026 as a settled fact. The 14 September order treats DP 1901 as alleged judicial prevarication; certified intake/reparto/index evidence is required.",
+        "identity_collision_status": "OPEN_AFTER_14SEP2026_ORDER"
       },
       "DP1956-C22": {
         "control": "CONTROL-22",
@@ -29,7 +30,8 @@
         "canonical_record": "GC-HC-010",
         "formal_destination_status": "UNKNOWN",
         "bridge_status": "UNVERIFIED_CANDIDATE_BRIDGE",
-        "do_not_infer": "Daily reference 24 is not a NIG, DP number, certified reparto, admission, dismissal, archive or merits outcome."
+        "do_not_infer": "Daily reference 24 is not itself a NIG or DP. The 14 September DP 1901 order creates a serious routing-identity question but does not prove that Control 24 generated, was joined to, or was reassigned into DP 1901.",
+        "identity_collision_status": "OPEN_CANDIDATE_DP1901_RECONCILIATION_AFTER_14SEP2026_ORDER"
       }
     },
     "same_date_safeguard": {
@@ -37,6 +39,16 @@
       "control_24_amplification": "CONTROL-24-AMPLIACION-20260625",
       "bridge_status": "NO_BRIDGE",
       "rule": "The two potentially distinct 25 June 2026 document objects remain separate unless a primary source proves identity."
+    },
+    "supervening_event_20260918": {
+      "order_date": "2026-09-14",
+      "dp": "DP 1901/2026",
+      "nig": "3501643220260016977",
+      "iup": "LI2026017152",
+      "fiscal_report_date": "2026-07-29",
+      "fiscal_requested_outcome": "archive",
+      "status": "PROCEDURAL_IDENTITY_COLLISION_OPEN",
+      "rule": "The 14 September order treats DP 1901 as alleged judicial prevarication. July reader records associated DP 1901 with Control 21/private actors. Do not resolve the Control 21 / Control 24 mapping without certified reparto/index evidence."
     }
   },
   "global_boundary": [
@@ -50,7 +62,7 @@
     {
       "track_id": "DP1901-C21",
       "procedure": "DP 1901/2026",
-      "layer": "private actors / NEXUS 36",
+      "layer": "Control 21 private-actor complaint material / DP 1901 mapping under audit",
       "base_filing": {
         "reported_filing_date": "2026-06-25",
         "source_filename": "01_NEXUS_36_DENUNCIA_PENAL_ACTUALIZADA_PRESENTACION_25JUN2026.pdf",
@@ -72,8 +84,9 @@
       "official_status_control": {
         "nig": "3501643220260016977",
         "court_position": "Plaza n.º 6, Sección de Instrucción, Tribunal de Instancia de Las Palmas de Gran Canaria",
-        "latest_primary_event_on_public_page": "Providencia signed 2026-07-12: five-day transfer to Ministerio Fiscal concerning admission in relation to DIP 2/2026",
-        "boundary": "The providencia is not itself a later merits decision or proof of admission, dismissal or guilt."
+        "latest_primary_event_on_public_page": "Auto dated 2026-09-14: proceeding described as alleged prevarication; records Ministerio Fiscal report dated 2026-07-29 seeking archive; orders sobreseimiento libre/archive",
+        "boundary": "This later order proves the court's treatment of DP 1901 and the existence/date/requested outcome of a Fiscal report. It does not resolve which intake complaint originally generated DP 1901 or prove lawful joinder/reassignment; signed Fiscal report and certified reparto/index remain open.",
+        "routing_identity_status": "CONTROL21_CONTROL24_COLLISION_OPEN"
       },
       "base_sections": [
         "I. Personas denunciadas y entidades relacionadas",
@@ -185,7 +198,9 @@
         "nig": null,
         "assigned_court": null,
         "current_status": "FILED/PRESENTED — FORMAL ALLOCATION AND CURRENT STATUS NOT YET PRIMARY-VERIFIED",
-        "cgpj_relation": "reported to CGPJ within the 169/2026 appeal record; remains a separate institutional route"
+        "cgpj_relation": "reported to CGPJ within the 169/2026 appeal record; remains a separate institutional route",
+        "dp1901_collision": "The 14 September order treats DP 1901 as alleged prevarication; this creates an open candidate bridge to Control 24 but does not prove identity, joinder or reassignment.",
+        "supervening_status_20260918": "DESTINATION/ALLOCATION REQUIRES RECONCILIATION WITH DP 1901 AFTER 14-SEP ORDER"
       },
       "principal_modules": [
         "Funded exit and judicial knowledge",
@@ -243,5 +258,6 @@
     }
   ],
   "reader_model": "ACTOR → CAPACITY → EVENT → SOURCE → DECISION/OMISSION → ASSET/RIGHT → CONSEQUENCE → CONTRARY/ALTERNATIVE → OPEN PROOF",
-  "release_scope": "Additive public presentation and structured context only; no court filing, email, authority contact, or publication of raw private evidence is authorised by this record."
+  "release_scope": "Additive public presentation and structured context only; no court filing, email, authority contact, or publication of raw private evidence is authorised by this record.",
+  "updated": "2026-09-18"
 }
