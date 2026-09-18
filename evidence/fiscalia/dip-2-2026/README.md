@@ -17,6 +17,7 @@ audit the decisions.
 |---|---|---|---|---|
 | `EVID-2026-FISCALIA-DIP2-DECRETO-002` | Decreto de resolución y archivo, 6 March 2026, 10 pages, signed by Juan Manuel González-Casanova Ruiz, Fiscal | signed official PDF located and read | `7d7be3516fd691de5da0d05081e5d4916b6e3141804891abf5742df82007a452` | `8b3c01b179e3ad88b2b9782f523cfdcd4ac3d450eda756a59c26dd90cfaf1f68` |
 | `EVID-2026-FISCALIA-DIP2-OFICIO-001` | Oficio de notificación al denunciante, 9 March 2026, 1 page, signed by Ernesto Vieira Morante, Fiscal | signed official PDF located and read | `dc4d6d8b5843e0f052cbfd8025466bb1a25ae2d0634c31d6186383263168f261` | `666a778d4e3b3d1e7ded6a3682d102ec85cc230f75bbb0be3d7488397da6a451` |
+| `EVID-2026-FISCALIA-DIP2-ACTUALIZACION-003` | Registered update, 11 March 2026, 4 pages, signed by Gil Marer; informs Fiscalía that the 12-Sep and 11-Nov orders were under appeal | signed source PDF located and read; party communication, not an official decision | `0c3116c35b7dea1976dd39ee043898d0aa6b5b1164c36c9b014b4c3ca70d85b9` | n/a |
 
 ## Public derivatives and full text
 
@@ -24,6 +25,8 @@ audit the decisions.
 - [Decreto de archivo - page-accounted full text](full-text/decreto-archivo-dip-2-2026-06mar2026-public-transcription.md)
 - [Oficio de notificación - public redacted PDF](public-pdfs/oficio-notificacion-dip-2-2026-09mar2026-public-redacted.pdf)
 - [Oficio de notificación - page-accounted full text](full-text/oficio-notificacion-dip-2-2026-09mar2026-public-transcription.md)
+- [11 March registered update - page-accounted full text](full-text/comunicacion-actualizacion-dip-2-2026-11mar2026-transcription.md)
+- [18 September inaccuracies / alleged-errors audit](DIP2_INACCURACIES_ERRORS_AUDIT_18SEP2026.md)
 
 The public PDFs retain searchable text. The transcription files preserve source
 line breaks and page boundaries to support repository search and accessibility.
@@ -39,6 +42,7 @@ line breaks and page boundaries to support repository search and accessibility.
    before the competent court.
 4. The 9 March notice communicated the closure, enclosed the resolution and
    repeated the Article 773 LECrim judicial-route notice.
+5. On 11 March the complainant formally informed Fiscalía that the 12 September and 11 November 2025 orders had been appealed and asked that the update be incorporated into DIP 2/2026. The filing proves the correction was communicated; it does not prove substantive examination by a particular Fiscal.
 
 ## Limits and open evidence
 
