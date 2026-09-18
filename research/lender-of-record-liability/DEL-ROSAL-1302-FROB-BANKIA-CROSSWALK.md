@@ -33,6 +33,19 @@ Official BFA-Bankia restructuring source:
 - FROB resolution / BOE, 26-Dec-2012: https://www.boe.es/diario_boe/txt.php?id=BOE-A-2012-15642
 - Bankia instruments / BFA-Bankia restructuring plan: https://www.boe.es/diario_boe/txt.php?id=BOE-A-2012-15638
 
+## 2A. The overlap was latent in the record
+
+### 12 September 2018
+The party complaint in the DI 248/2018 source family already set out a chain through **Caja Insular / BFA / FROB / Bankia → SAREB → Promontoria / Project Meridian → CAM**. Treat that as a party allegation and historical source, not a Fiscalía or judicial finding.
+
+The 2018 filing used a broader legal proposition about the Bankia→SAREB transfer and the hotel/tourism nature of the collateral. The controlling 2026 position is narrower: do not state categorical illegality from the collateral label alone. Close the exact RD 1559/2012 art. 48 eligibility route, threshold, classification, valuation, transferred data and asset schedule.
+
+### 2022
+The pre-engagement DRAS review received material expressly carrying **Bankia → SAREB → Promontoria → CAM**. No public source presently establishes that the BFA/FROB wording or the Del Rosal/Lightowler 2018 article was consciously connected to the Sun Rock facts during that preliminary work. Do not imply retrospective endorsement.
+
+### 18 September 2026
+The doctrinal crosswalk is now made expressly: distinguish **asset assignment**, **own later conduct of each assignee**, and **legal-person structural succession** before applying CP 31 bis / CP 130.2 or civil ex delicto consequences.
+
 ## 3. Why this overlaps with Sun Rock
 
 The overlap is not “Bankia appears in both matters”. It is the need to distinguish **asset succession** from **legal-person succession** and then apply corporate criminal-liability rules only after a predicate legal-person responsibility is established.
