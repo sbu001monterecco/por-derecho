@@ -12,6 +12,7 @@
 | P0 | Control 21 / daily ref. 24 | Reconcile both intake trails and 9-Jul amplification | Decanato/reparto + electronic docket | REQUEST TO PREPARE |
 | P0 | E.G. 745 | Replace 12-Sep filing version with successor incorporating D36–D39 | 18-Sep successor patch | PREPARED / NOT FILED |
 | P0 | E.G. 745 | Sign and register only final successor; preserve exact bytes and REG-AGE receipt | final PDF + annex + receipt | USER TARGET 19-SEP; NOT A LEGAL-DEADLINE STATEMENT |
+| P0 | E.G. 745 interconnectivity | Use the bilingual filing matrix + eight-node graph so DI248/DI113/DI22/DIP2/DP1901/calificación/routing evidence resolve into one source chain | `assets/data/eg745-fiscalia-interconnectivity-20260918.json` + filing hubs | SOURCE-CONTROLLED / FILING SUPPORT |
 | P1 | E.G. 745 access/preservation | Request complete file/index, native decree, routing and finite preservation | protective request | NOT FILED |
 | P1 | CGPJ Alzada 286 | Prepare supervening-event supplement: DP1901 report/order + routing collision | current CGPJ file already asked for DP1901 report/order | PREPARE ONLY |
 | P1 | TSJC / Tribunal de Instancia governance | Prepare finite reparto/provenance request, not merits lobbying | LOPJ governance/reparto record | PREPARE ONLY |
@@ -33,3 +34,7 @@ No actor moves from allegation to liability merely because the act is adverse.
 ## User-authorised objective
 
 The working objective is to have the E.G. 745 response updated and ready for the user's intended filing on 19 September 2026. That target is operational only; it is not represented as the legal deadline.
+
+## Eight-hour positive-exhaustion control
+
+Use `archive/EG745_FISCALIA_INTERCONNECTIVITY_EXHAUSTION_CONTROL_18SEP2026.md`. Gap closure must be source-backed: PROVED / DISPROVED / BOUNDED-NOT-LOCATED / AUTHORITY-ONLY / CONFLICT-VARIANT. Empty search results never equal non-existence.

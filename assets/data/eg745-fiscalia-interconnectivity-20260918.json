@@ -1,0 +1,65 @@
+{
+  "schema": "por-derecho.eg745-fiscalia-interconnectivity.v1",
+  "control_date": "2026-09-18",
+  "filing_status": "PREPARED_NOT_VERIFIED_FILED",
+  "predecessor": "12SEP2026",
+  "successor_patch": "drafts/fiscalia/2026-09-18_EG745_DP1901_SUPERVENING_EVENT_PATCH_DRAFT.md",
+  "thesis": {
+    "attributed": "Documented asymmetric prosecutorial treatment with an alleged de facto protective effect for the private-actor perimeter.",
+    "boundary": "No source-controlled record presently establishes collective guilt, corrupt intent, capture or coordination; responsibility remains actor-specific."
+  },
+  "nodes": [
+    {
+      "id": "GC-FIS-013",
+      "label": "DI 248/2018",
+      "fact": "7-May-2019 archive; adverse calificacion position cross-referenced; CAM framed through privileged-creditor/judicial-supervision reasoning.",
+      "gap": "Certified complete file and requested-versus-performed diligences."
+    },
+    {
+      "id": "GC-CAL-002",
+      "label": "Calificacion 2019–2023",
+      "fact": "12-Mar-2019 Fiscal opinion sought culpability, 15-year disqualification, damages and deficit; 2023 judgment retained serious adverse findings but rejected/narrowed important branches and criticised unexplained deficit request.",
+      "gap": "Complete source/review chain; 2023 individual Fiscal attendance/position."
+    },
+    {
+      "id": "GC-FIS-014",
+      "label": "DI 113/2022",
+      "fact": "8-Feb-2023 decree formally records 7-Jun-2018 possession/demolition/public-ownership allegation against CAM/JDAM and archives/remits through prior judicialisation.",
+      "gap": "Complete file, diligences and exact identity matrix."
+    },
+    {
+      "id": "GC-FIS-016",
+      "label": "DI 22/2026",
+      "fact": "11-Feb archive characterises submissions as repetitive/civil-concursal and states future same-fact complaints will be joined with archive maintained; later submissions were joined.",
+      "gap": "Source-by-source actor/asset/date identity and treatment matrix."
+    },
+    {
+      "id": "GC-FIS-017",
+      "label": "DIP 2/2026",
+      "fact": "6-Mar archive used a 2-Mar ATLANTE no-appeal premise; 11-Mar registered update stated appeals existed; later appellate record confirms appeal architecture.",
+      "gap": "ATLANTE audit trail and post-11-Mar substantive treatment."
+    },
+    {
+      "id": "GC-CRI-008",
+      "label": "DP 1901/2026",
+      "fact": "14-Sep order records Ministerio Fiscal report dated 29-Jul-2026 requesting archive; author/text/corpus/reparto remain missing.",
+      "gap": "D38 signed report; D39 certified docket/reparto and Control 21/24 bridge."
+    },
+    {
+      "id": "NAT-FIS-004",
+      "label": "E.G. 745/2026",
+      "fact": "Inspection archive says no sufficiently concrete irregularity by a particular Fiscal in a particular matter; source filing named six proceedings and requested institutional attribution.",
+      "gap": "Complete EG 745 expediente, routing, corpus examined, request-by-request treatment."
+    },
+    {
+      "id": "FGE-ROUTING",
+      "label": "20/21-Aug central routing",
+      "fact": "FGE Technical Secretariat acknowledged central receipt and promised corresponding management.",
+      "gap": "Proof of transfer/incorporation into Inspection before 26-Aug decision."
+    }
+  ],
+  "reader_routes": {
+    "es": "/por-derecho/es/eg-745-respuesta-inminente-matriz-fiscalia/",
+    "en": "/por-derecho/en/eg-745-imminent-response-prosecution-matrix/"
+  }
+}
