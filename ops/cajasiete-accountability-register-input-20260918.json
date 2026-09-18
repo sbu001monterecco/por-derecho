@@ -1,0 +1,36 @@
+{
+  "release_id": "PD-CAJASIETE-ACCOUNTABILITY-20260918",
+  "control_date": "2026-09-18",
+  "purpose": "Public-safe continuity input for CajaSiete Communication 6 supplemental submission and 18 September institutional response.",
+  "private_source_boundary": "Native emails are retained outside the public repository. No access credentials, sensitive identifiers or unnecessary personal data are included here.",
+  "sources": [
+    {
+      "source_id": "PD-SP-SRC-0028",
+      "date": "2026-09-05",
+      "type": "RETAINED_SENT_EMAIL_WITH_OFFICIAL_ATTACHMENTS",
+      "public_summary_es": "Gil remitió al Canal Ético dos documentos oficiales de CNMV, pidió su incorporación a la comunicación 6, identificación del órgano independiente, análisis de conflictos y trazabilidad de conservación/anonimización/supresión.",
+      "public_summary_en": "Gil sent two official CNMV documents to the Ethics Channel, asked that they be incorporated into Communication 6, and requested identification of the independent reviewing function, conflict analysis and preservation/anonymisation/deletion traceability."
+    },
+    {
+      "source_id": "PD-SP-SRC-0029",
+      "date": "2026-09-18",
+      "type": "RETAINED_RECEIVED_EMAIL",
+      "public_summary_es": "«Gestor del Canal Cajasiete» acusó recibo, afirmó que la documentación fue incorporada y no alteraba la decisión de abril, y dijo que quedaba registrada con confidencialidad y acceso restringido. No identificó al decisor ni respondió el análisis de conflictos/audit trail solicitado.",
+      "public_summary_en": "“Gestor del Canal Cajasiete” acknowledged receipt, said the material was incorporated and did not alter the April decision, and stated it remained registered with confidentiality/restricted access. It did not identify the decision owner or answer the requested conflict/audit-trail questions."
+    }
+  ],
+  "events": [
+    {
+      "event_id": "PD-SP-EVT-0179",
+      "source_id": "PD-SP-SRC-0028",
+      "date": "2026-09-05",
+      "record_type": "OUTBOUND_COMMUNICATION"
+    },
+    {
+      "event_id": "PD-SP-EVT-0180",
+      "source_id": "PD-SP-SRC-0029",
+      "date": "2026-09-18",
+      "record_type": "INSTITUTIONAL_REVIEW_RESPONSE"
+    }
+  ]
+}
