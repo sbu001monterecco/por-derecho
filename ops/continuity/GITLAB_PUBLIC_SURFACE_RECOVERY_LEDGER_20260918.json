@@ -124,12 +124,13 @@
       "corresponding_github_url": null,
       "github_match_state": "NOT_LOCATED_BY_DEFAULT_BRANCH_CODE_SEARCH",
       "rendered_observation": {
-        "page_count": 750,
-        "directed_link_count": 9144
+        "page_count": 850,
+        "directed_link_count": 10572,
+        "observation_state": "VOLATILE_RENDERED_COUNTERS"
       },
       "source_level_state": "PENDING_GITLAB_RESTORATION",
-      "provenance": "Anonymous GitLab Pages Spanish public-page text-and-connections explorer returned by public web indexing on 18 September 2026; GitHub default-branch code search for the route and rendered counters returned no match.",
-      "boundary": "The rendered explorer proves a public deployment and reports its own published index/link counts only. It does not establish the producing GitLab source files, build inputs, commit SHA, exact index dataset, or authenticated project restoration; do not reconstruct those unavailable bytes from the rendered interface."
+      "provenance": "Direct anonymous fetch of the public GitLab Pages Spanish text-and-connections explorer on 18 September 2026 reported 850 public pages and 10,572 directed links; the same route had been indexed earlier with lower counters, demonstrating that these rendered counters are a changing deployment observation. GitHub default-branch code search did not locate the route string.",
+      "boundary": "The rendered explorer proves a public deployment and reports only its current rendered index/link counters. Those counters may change as the public deployment changes. They do not establish the producing GitLab source files, build inputs, commit SHA, exact index dataset, or authenticated project restoration; do not reconstruct unavailable bytes or infer source-level deltas from the counters."
     }
   ],
   "allowed_classifications": [
