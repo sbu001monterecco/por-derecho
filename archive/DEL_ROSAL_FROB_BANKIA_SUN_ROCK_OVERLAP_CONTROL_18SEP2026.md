@@ -10,7 +10,7 @@ The public professional register previously described Bernardo del Rosal Blasco 
 
 **PRE_ENGAGEMENT_REVIEW — NO RETAINED MANDATE ESTABLISHED.**
 
-Documented 2022 preliminary review, meetings and document-classification work are preserved. The project records that funding constraints prevented a retained engagement being concluded.
+Documented 2022 preliminary review, meetings and document-classification work are preserved.
 
 ## Dedicated public routes
 
