@@ -58,6 +58,8 @@ FILES = {
     },
 }
 
+AUTO_PDF = "evidence/judicial/dp-1901-2026/public-pdfs/auto-14sep2026-public-controlled-transcription.pdf"
+
 PUBLIC_PAGES = [
     "es/fiscalia-dip-2-2026/index.html",
     "en/fiscalia-dip-2-2026/index.html",
@@ -99,6 +101,9 @@ def main() -> None:
             if token.casefold() in text.casefold():
                 fail(f"{rel}: forbidden private token leaked: {token}")
 
+    if not (ROOT/AUTO_PDF).is_file():
+        fail(f"missing DP1901 public PDF derivative: {AUTO_PDF}")
+
     for rel in PUBLIC_PAGES:
         p=ROOT/rel
         if not p.is_file():
@@ -123,6 +128,22 @@ def main() -> None:
         page=(ROOT/rel).read_text(encoding="utf-8")
         if "registro-tramitacion-12mar2026-email-public-transcription.md" not in page:
             fail(f"{rel}: missing registry-processing trace link")
+        if "decreto-archivo-dip-2-2026-06mar2026-public-redacted.pdf" not in page:
+            fail(f"{rel}: missing embedded DIP2 Decree PDF")
+        if not any(marker in page.casefold() for marker in ["crítica", "critique"]):
+            fail(f"{rel}: missing contextual critique layer")
+
+    for rel in [
+        "es/dp-1901-2026-auto-14-septiembre-2026/index.html",
+        "en/dp-1901-2026-order-14-september-2026/index.html",
+    ]:
+        page=(ROOT/rel).read_text(encoding="utf-8")
+        if "auto-14sep2026-public-controlled-transcription.pdf" not in page:
+            fail(f"{rel}: missing embedded DP1901 PDF derivative")
+        if "native" not in page.casefold():
+            fail(f"{rel}: missing non-native source boundary")
+        if not any(marker in page.casefold() for marker in ["crítica", "critique"]):
+            fail(f"{rel}: missing contextual critique layer")
 
     divergence=(ROOT/"ops/GITLAB_PUBLIC_PAGES_DIVERGENCE_18SEP2026.md").read_text(encoding="utf-8")
     for marker in ["PROCEDURAL_IDENTITY_COLLISION_OPEN", "29 July 2026", "read-only comparator"]:
