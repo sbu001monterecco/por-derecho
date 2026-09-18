@@ -231,3 +231,16 @@ On every new reference or primary act:
 4. propagate corrections before public wording;
 5. update public ES/EN pages only after reference, status, scope and limits are verified;
 6. preserve any evidence that narrows or defeats the working thesis.
+
+
+---
+
+## 18 September 2026 addendum — Cabildo six-ZIP SAIP source completion
+
+This 15-Aug register is preserved as a dated historical snapshot. It is **not** the current source-completeness state for `LZ-CAB-019` through `LZ-CAB-024`.
+
+The April 2026 Cabildo production has since been integrity-closed as six native ZIP families: `3671/2022`, `2984/2023`, `17070/2023`, `19995/2023`, `7206/2024` and `4887/2025`. The source corpus contains **191 PDF occurrences / 190 unique PDF binaries**. Exact occurrence-level registers, SHA-256 values, page counts and the one cross-family duplicate are controlled by `assets/data/cabildo-six-zip-register-index-v1.json` and its six CSV registers.
+
+Accordingly, the older rows saying “complete file/index/object/parties” remained generally missing are superseded on source availability. The open gaps are now narrower: any later final act for 3671/2984/4887; the 7206 verification visit and later resolution; unit-by-unit title/authority closure; extraction/indexing of the two nested 3671 RARs; and fresh Registry evidence before current-title claims.
+
+The public-safe current reconstruction and attributed criminal-significance analysis are controlled by `archive/CABILDO_SAIP_CRIMINAL_EVIDENCE_PUBLICATION_CONTROL_18SEP2026.md`. This addendum does not convert party assertions into authority findings or criminal allegations into adjudicated facts.
