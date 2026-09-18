@@ -6,7 +6,7 @@
   "status": "SOURCE_ROOM_COMPLETE_FOR_LOCATED_CORPUS",
   "scope": [
     "DIP 2/2026 available-corpus full-text digitisation",
-    "11 March 2026 correction and REGAGE trace",
+    "11 March 2026 correction, REGAGE receipt and 12 March registry-routing trace",
     "DP 1901/2026 14 September order full-text transcription from three photographs",
     "cross-proceeding source-status propagation"
   ],
@@ -50,12 +50,22 @@
           "date": "2026-03-11",
           "pages": 2,
           "sha256": "102d2f407cc33f0398d45239d94fe56a80246e645191e5e987e430b5c533b289"
+        },
+        {
+          "id": "EVID-2026-FISCALIA-DIP2-REGAGE-TRAMITACION-007",
+          "event_date": "2026-03-12",
+          "notification_date": "2026-03-14",
+          "pages": null,
+          "sha256": null,
+          "source_type": "automated registry-routing email; informational/no legal value",
+          "proves": "system-reported passage to Registro General Fiscalía de la Comunidad Autónoma de Canarias for processing",
+          "does_not_prove": "substantive DIP2 incorporation, personal review, reconsideration or downstream transmission"
         }
       ],
       "open": [
         "separate 11-Feb opening decree",
         "complete certified file/index",
-        "post-11-Mar handling/correction record"
+        "substantive post-11-Mar case-file incorporation, handler/access, correction/reconsideration and downstream transmission; formal registry-office routing now documented"
       ]
     },
     "dp1901": {
@@ -98,7 +108,7 @@
     "Control 21 and daily reference no. 24 remain separate intake records until certified reparto evidence resolves the DP 1901 mapping."
   ],
   "branch": "update/dip2-dp1901-full-digitisation-18sep2026",
-  "current_state": "PR_OPEN_CI_PENDING",
+  "current_state": "PR_1570_RECONCILED_CI_GATE",
   "expected_source_files": [
     "evidence/fiscalia/dip-2-2026/README.md",
     "evidence/fiscalia/dip-2-2026/full-text/denuncia-inicial-13ene2026-public-transcription.md",
@@ -110,16 +120,20 @@
     "evidence/fiscalia/2026/DIP2_INACCURACY_ANALYTICAL_ERROR_LEDGER_18SEP2026.md",
     "evidence/judicial/dp-1901-2026/full-text/auto-14sep2026-public-transcription.md",
     "archive/FISCALIA_DIP2_DP1901_FULL_DIGITISATION_CONTROL_18SEP2026.md",
-    "scripts/validate_dip2_dp1901_full_digitisation.py"
+    "scripts/validate_dip2_dp1901_full_digitisation.py",
+    "evidence/fiscalia/dip-2-2026/full-text/registro-tramitacion-12mar2026-email-public-transcription.md",
+    "ops/GITLAB_PUBLIC_PAGES_DIVERGENCE_18SEP2026.md"
   ],
   "validation": {
-    "status": "CI_PENDING_PR_1570",
+    "status": "DEDICATED_CI_REQUIRED_BEFORE_MERGE",
     "dedicated_workflow": ".github/workflows/validate-dip2-dp1901-full-digitisation.yml",
     "required_boundaries": [
       "available located DIP2 corpus fully digitised; complete certified file not claimed",
       "DP1901 order transcribed from photographs; native court PDF not claimed",
       "appeal discrepancy does not prove deliberate falsehood",
-      "29-Jul dismissal request does not prove criminality"
+      "29-Jul dismissal request does not prove criminality",
+      "registry-office routing trace does not prove substantive incorporation or review",
+      "GitLab public Pages remains a read-only comparator while stale DP1901/EG745 text is unreconciled"
     ]
   },
   "pull_request": 1570,
