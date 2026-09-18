@@ -47,9 +47,9 @@ REQUIRED_ORGANISATIONS = {
     "Del Rosal, Adame & Segrelles",
     "DPM Abogados",
 }
-ALLOWED_CLASSIFICATIONS = {"OUR_CURRENT_PROFESSIONAL", "OUR_FORMER_PROFESSIONAL"}
+ALLOWED_CLASSIFICATIONS = {"OUR_CURRENT_PROFESSIONAL", "PRE_ENGAGEMENT_PROJECT_SIDE_PROFESSIONAL", "OUR_FORMER_PROFESSIONAL"}
 ALLOWED_TRACKS = {
-    "CURRENT_COUNSEL", "FORMER_COUNSEL", "FORMER_COUNSEL_COLLABORATOR",
+    "CURRENT_COUNSEL", "PRE_ENGAGEMENT_REVIEW", "FORMER_COUNSEL", "FORMER_COUNSEL_COLLABORATOR",
     "FORMER_COUNSEL_ROLE_REVIEW", "PROCURADOR_CURRENT", "PROCURADOR_FORMER",
 }
 
@@ -154,7 +154,8 @@ def main() -> int:
         computed = {
             "total": len(records),
             "current_counsel": sum(r["track"] == "CURRENT_COUNSEL" for r in records),
-            "former_or_review_counsel": sum(r["track"] not in {"CURRENT_COUNSEL", "PROCURADOR_CURRENT", "PROCURADOR_FORMER"} for r in records),
+            "former_or_review_counsel": sum(r["track"] not in {"CURRENT_COUNSEL", "PRE_ENGAGEMENT_REVIEW", "PROCURADOR_CURRENT", "PROCURADOR_FORMER"} for r in records),
+            "pre_engagement_review": sum(r["track"] == "PRE_ENGAGEMENT_REVIEW" for r in records),
             "current_procuradores": sum(r["track"] == "PROCURADOR_CURRENT" for r in records),
             "former_procuradores": sum(r["track"] == "PROCURADOR_FORMER" for r in records),
         }
@@ -163,12 +164,22 @@ def main() -> int:
         require(computed == {
             "total": 40,
             "current_counsel": 3,
-            "former_or_review_counsel": 31,
+            "former_or_review_counsel": 28,
+            "pre_engagement_review": 3,
             "current_procuradores": 2,
             "former_procuradores": 4,
         }, f"unexpected corrected professional totals: {computed}")
 
         by_id = {record["identity_id"]: record for record in records}
+        bernardo = by_id["PD-SP-P-0079"]
+        require(bernardo.get("track") == "PRE_ENGAGEMENT_REVIEW", "Bernardo del Rosal must not be classified as former counsel")
+        require(bernardo.get("classification") == "PRE_ENGAGEMENT_PROJECT_SIDE_PROFESSIONAL", "Bernardo del Rosal pre-engagement classification missing")
+        require("No retained mandate is established" in bernardo.get("matter_scope", ""), "Bernardo del Rosal non-retainer boundary missing")
+        require(bernardo.get("routes", {}).get("es") == "/es/bernardo-del-rosal-frob-bankia-sun-rock/", "Bernardo del Rosal ES crosswalk route missing")
+
+        for pid in ("PD-SP-P-0080", "PD-SP-P-0081"):
+            require(by_id[pid].get("track") == "PRE_ENGAGEMENT_REVIEW", f"DRAS team member {pid} must remain pre-engagement, not former counsel")
+
         adriana = by_id["PD-SP-P-0067"]
         require(adriana.get("role") == "Procuradora", "Adriana Hernández Díaz must be classified as procuradora")
         require(adriana.get("track") == "PROCURADOR_CURRENT", "Adriana Hernández Díaz has wrong track")
