@@ -114,7 +114,7 @@ The connected mailbox was re-opened and the native sources were re-controlled. T
 - 6-Mar Decree: `7d7be3516fd691de5da0d05081e5d4916b6e3141804891abf5742df82007a452`;
 - 9-Mar notice: `dc4d6d8b5843e0f052cbfd8025466bb1a25ae2d0634c31d6186383263168f261`.
 
-The signed 11-Mar party update is now also fully digitised under `EVID-2026-FISCALIA-DIP2-ACTUALIZACION-003`, native SHA-256 `0c3116c35b7dea1976dd39ee043898d0aa6b5b1164c36c9b014b4c3ca70d85b9`.
+The signed 11-Mar party update is now also fully digitised under `EVID-2026-FISCALIA-DIP2-ACTUALIZACION-11MAR-005`, native SHA-256 `0c3116c35b7dea1976dd39ee043898d0aa6b5b1164c36c9b014b4c3ca70d85b9`.
 
 The prior shorthand “appeal-status premise corrected 11 March” is refined. What is source-proved is that the complainant **communicated the correction on 11 March** and requested incorporation. A substantive institutional correction/reconsideration after receipt has not yet been located.
 
@@ -128,6 +128,8 @@ The 18-Sep audit now classifies:
 7. possible propagation into DP 1901 as an open question only.
 
 The 14-Sep DP 1901 order is separately digitised from three source photographs in:
-`evidence/judicial/dp-1901-2026/full-text/auto-14sep2026-photo-transcription.md`.
+`evidence/judicial/dp-1901-2026/full-text/auto-14sep2026-public-transcription.md` (canonical validated path; the earlier `auto-14sep2026-photo-transcription.md` path is retained as a same-source legacy transcription).
 
 No inference of deliberate falsehood, capture, prevaricación, coordination or criminality is created by this update.
+
+The 12-March registry-routing notification is now separately controlled as `EVID-2026-FISCALIA-DIP2-REGAGE-TRAMITACION-007`. It reports passage to the Registro General Fiscalía de la Comunidad Autónoma de Canarias for processing; the email itself says it is informational and has no legal value, so substantive file incorporation/review remains open.
