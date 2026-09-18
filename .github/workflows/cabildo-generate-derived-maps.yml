@@ -1,0 +1,49 @@
+name: Cabildo generate derived maps
+on:
+  pull_request:
+    paths:
+      - 'archive/PROCEEDINGS_MASTER_REGISTER.csv'
+      - 'assets/data/proceedings-master-public-v1.json'
+      - 'scripts/build_proceedings_interlinkability_v1.py'
+      - 'scripts/build_public_proceedings_projection.py'
+      - '.github/workflows/cabildo-generate-derived-maps.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: '3.12'
+      - name: Generate deterministic proceedings derivatives
+        run: |
+          python3 scripts/build_public_proceedings_projection.py
+          python3 scripts/build_proceedings_interlinkability_v1.py
+          mkdir -p artifacts/cabildo-derived
+          cp assets/data/proceedings-master-public-v1.json artifacts/cabildo-derived/
+          cp assets/data/proceedings-interlinkability-v1.json artifacts/cabildo-derived/
+          sha256sum artifacts/cabildo-derived/* > artifacts/cabildo-derived/SHA256SUMS
+      - name: Emit generated interlinkability bytes in bounded transport chunks
+        run: |
+          python3 - <<'PY'
+          import base64, hashlib
+          from pathlib import Path
+          raw=Path('assets/data/proceedings-interlinkability-v1.json').read_bytes()
+          encoded=base64.b64encode(raw).decode('ascii')
+          width=48000
+          print('PD_INTERLINK_META:'+str(len(raw))+':'+hashlib.sha256(raw).hexdigest()+':'+str((len(encoded)+width-1)//width))
+          for i in range(0,len(encoded),width):
+              print(f'PD_INTERLINK_CHUNK:{i//width:05d}:'+encoded[i:i+width])
+          print('PD_INTERLINK_END')
+          PY
+      - uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: cabildo-derived-maps
+          path: artifacts/cabildo-derived/

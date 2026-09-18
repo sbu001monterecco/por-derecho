@@ -1,0 +1,149 @@
+{
+  "schema": "por-derecho.cabildo-saip-criminal-evidence-map.v1",
+  "control_date": "2026-09-18",
+  "status_boundary": "These are Gil Marer's allegations and evidential hypotheses. No page declares criminal guilt or substitutes for a competent judicial determination.",
+  "method": [
+    "SOURCE FACT",
+    "PARTY ASSERTION",
+    "AUTHORITY REQUIREMENT",
+    "CONTRARY OFFICIAL RECORD",
+    "KNOWLEDGE CHECKPOINT",
+    "LATER USE",
+    "ADMINISTRATIVE_OR_ECONOMIC_EFFECT",
+    "POTENTIAL_CRIMINAL_SIGNIFICANCE",
+    "CONTRARY_EVIDENCE",
+    "OPEN_PROOF"
+  ],
+  "chain": [
+    {
+      "file": "3671/2022",
+      "master_id": "LZ-CAB-019",
+      "configuration": "1 star / requested 220 units / 660 places",
+      "facts": "Community route sought incorporation of the full accommodation perimeter; Cabildo required procedure-specific authority, unit/finca identification, own-unit deeds and owner-issued enabling title for remaining units; Yaiza issued an adverse definitive compatibility report.",
+      "criminal_question": "Who asserted authority over which units, what independent title supported it, what was known after the requirements/adverse report, and where was the same authority proposition later reused?",
+      "key_evidence": [
+        "PD-CAB-SAIP-PDF-0064",
+        "PD-CAB-SAIP-PDF-0086",
+        "PD-CAB-SAIP-PDF-0142"
+      ]
+    },
+    {
+      "file": "2984/2023",
+      "master_id": "LZ-CAB-020",
+      "configuration": "HNT request: 4 star / 220 / 660",
+      "facts": "HNT advanced a holder/property/exploitation route; Cabildo recorded the existing 1-star / 159 / 477 position and required sufficient property title/classification material.",
+      "criminal_question": "Was any later representation of complete property/availability knowingly made before the title requirement was satisfied, and what effect did it seek?",
+      "key_evidence": [
+        "PD-CAB-SAIP-PDF-0043",
+        "PD-CAB-SAIP-PDF-0049",
+        "PD-CAB-SAIP-PDF-0050",
+        "PD-CAB-SAIP-PDF-0053"
+      ]
+    },
+    {
+      "file": "17070/2023",
+      "master_id": "LZ-CAB-021",
+      "configuration": "HNT / MYND holder-name change at 1 star / 159 / 477",
+      "facts": "RGT entry 2023-T15093 dated 18 October 2023 records Hotel New Trend, S.L. and MYND Yaiza while preserving the then-recorded category/capacity.",
+      "criminal_question": "Was this limited administrative effect later presented as proof of wider title, authority or capacity that the act itself did not establish?",
+      "key_evidence": [
+        "PD-CAB-SAIP-PDF-0012",
+        "PD-CAB-SAIP-PDF-0014",
+        "PD-CAB-SAIP-PDF-0015"
+      ]
+    },
+    {
+      "file": "19995/2023",
+      "master_id": "LZ-CAB-022",
+      "configuration": "4 star / 252 units / 238 operating / 660 places / 477 operating",
+      "facts": "HNT project/responsible-declaration route was followed by Cabildo toma de conocimiento; the act is treated as an enabling/provisional procedural effect rather than final technical verification.",
+      "criminal_question": "Which underlying representations were repeated, what verification remained outstanding, and what later public/investor/funding use was made of the resulting administrative posture?",
+      "key_evidence": [
+        "PD-CAB-SAIP-PDF-0026",
+        "PD-CAB-SAIP-PDF-0039",
+        "PD-CAB-SAIP-PDF-0042"
+      ]
+    },
+    {
+      "file": "7206/2024",
+      "master_id": "LZ-CAB-023",
+      "configuration": "start/activity route; earlier 3671 and 2984 expressly pending",
+      "facts": "The executive record states 3671/2022 and 2984/2023 were pending/related; February 2025 communications state a verification visit and corresponding resolution remained to be performed.",
+      "criminal_question": "If later actors represented the relevant title/authority/configuration as conclusively regularised, who knew these pending checkpoints, what was said, to whom, and with what effect?",
+      "key_evidence": [
+        "PD-CAB-SAIP-PDF-0173",
+        "PD-CAB-SAIP-PDF-0186",
+        "PD-CAB-SAIP-PDF-0187"
+      ]
+    },
+    {
+      "file": "4887/2025",
+      "master_id": "LZ-CAB-024",
+      "configuration": "applicant-declared 4 star / 301 units / 299 operating / 660 places / 598 operating",
+      "facts": "The configuration is treated as applicant-declared/requested unless and until a later Cabildo verification/final act is sourced.",
+      "criminal_question": "What title/authority basis supported the enlarged perimeter, and was the declared status knowingly used elsewhere as if it were finally verified?",
+      "key_evidence": [
+        "PD-CAB-SAIP-PDF-0152",
+        "PD-CAB-SAIP-PDF-0158"
+      ]
+    }
+  ],
+  "criminal_routes": [
+    {
+      "label": "Falsedad documental / uso",
+      "articles": "CP 390, 392, 393",
+      "test": "alteration/simulation or knowing use of a false public, official, mercantile or private document; exact article depends on author/document/use"
+    },
+    {
+      "label": "Estafa / estafa procesal",
+      "articles": "CP 248 ff.",
+      "test": "sufficient deception + error + disposition/effect + patrimonial prejudice + profit motive; procedural use must be proved, not inferred from inconsistency"
+    },
+    {
+      "label": "Administración desleal",
+      "articles": "CP 252",
+      "test": "entrusted management power + excess/breach + patrimonial harm"
+    },
+    {
+      "label": "Frustración de la ejecución",
+      "articles": "CP 257",
+      "test": "asset disposition/obligation designed to prejudice creditors or impede foreseeable enforcement"
+    },
+    {
+      "label": "Insolvencia punible",
+      "articles": "CP 259 ff.",
+      "test": "specific insolvency conduct affecting assets/creditors; not every insolvency irregularity is criminal"
+    },
+    {
+      "label": "Organización / grupo criminal",
+      "articles": "CP 570 bis/ter",
+      "test": "more than multiple actors: stable/coordinated division of functions for committing crimes must be proved actor by actor"
+    },
+    {
+      "label": "Deber de denuncia / omisión pública",
+      "articles": "LECrim 262; CP 408",
+      "test": "professional/office reporting duty and, for CP 408, intentional failure by authority/public official to promote prosecution of known offences"
+    }
+  ],
+  "procedural_sources": [
+    {
+      "label": "2023 Audiencia Nacional querella",
+      "route": "historical criminal pleading",
+      "status": "alleged coacciones, usurpación, estafa/estafa procesal, administración desleal, falsedad, investment/publicity fraud and other offences; pleading is not proof"
+    },
+    {
+      "label": "25 June 2026 Las Palmas complaint",
+      "route": "autonomous private-actor documentary complaint",
+      "status": "reformulates the alleged manufactured-document/authority/debt/control thesis and demands non-circular source verification"
+    },
+    {
+      "label": "DP 1901/2026",
+      "route": "current criminal verification lane",
+      "status": "12 July 2026 providencia referred admission issue to Fiscalía for five days in relation to DIP 2/26; this does not establish admission or guilt"
+    }
+  ],
+  "official_law": [
+    "https://www.boe.es/eli/es/lo/1995/11/23/10/con",
+    "https://www.boe.es/buscar/act.php?id=BOE-A-1882-6036"
+  ]
+}
