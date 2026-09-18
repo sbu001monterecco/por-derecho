@@ -13,9 +13,9 @@
       "public_size_bytes": 299887,
       "pages": 2,
       "raster_only": true,
-      "viewer_live": true,
-      "status": "PUBLIC_RASTER_DERIVATIVE_RENDER_REVIEWED_READY_FOR_GITHUB",
-      "public_path": "evidence/cabildo-lanzarote/saip-april-2026/public-pdfs/PD-CAB-SAIP-PDF-0064-public-redacted.pdf"
+      "viewer_live": false,
+      "status": "PUBLIC_RASTER_DERIVATIVE_RENDER_REVIEWED_BINARY_TRANSPORT_PENDING",
+      "prepared_public_path": "evidence/cabildo-lanzarote/saip-april-2026/public-pdfs/PD-CAB-SAIP-PDF-0064-public-redacted.pdf"
     },
     {
       "evidence_id": "PD-CAB-SAIP-PDF-0086",
@@ -41,9 +41,9 @@
       "public_size_bytes": 179610,
       "pages": 2,
       "raster_only": true,
-      "viewer_live": true,
-      "status": "PUBLIC_RASTER_DERIVATIVE_RENDER_REVIEWED_READY_FOR_GITHUB",
-      "public_path": "evidence/cabildo-lanzarote/saip-april-2026/public-pdfs/PD-CAB-SAIP-PDF-0142-public-redacted.pdf"
+      "viewer_live": false,
+      "status": "PUBLIC_RASTER_DERIVATIVE_RENDER_REVIEWED_BINARY_TRANSPORT_PENDING",
+      "prepared_public_path": "evidence/cabildo-lanzarote/saip-april-2026/public-pdfs/PD-CAB-SAIP-PDF-0142-public-redacted.pdf"
     },
     {
       "evidence_id": "PD-CAB-SAIP-PDF-0015",
@@ -55,9 +55,9 @@
       "public_size_bytes": 124816,
       "pages": 1,
       "raster_only": true,
-      "viewer_live": true,
-      "status": "PUBLIC_RASTER_DERIVATIVE_RENDER_REVIEWED_READY_FOR_GITHUB",
-      "public_path": "evidence/cabildo-lanzarote/saip-april-2026/public-pdfs/PD-CAB-SAIP-PDF-0015-public-redacted.pdf"
+      "viewer_live": false,
+      "status": "PUBLIC_RASTER_DERIVATIVE_RENDER_REVIEWED_BINARY_TRANSPORT_PENDING",
+      "prepared_public_path": "evidence/cabildo-lanzarote/saip-april-2026/public-pdfs/PD-CAB-SAIP-PDF-0015-public-redacted.pdf"
     },
     {
       "evidence_id": "PD-CAB-SAIP-PDF-0026",
@@ -69,9 +69,9 @@
       "public_size_bytes": 387690,
       "pages": 2,
       "raster_only": true,
-      "viewer_live": true,
-      "status": "PUBLIC_RASTER_DERIVATIVE_RENDER_REVIEWED_READY_FOR_GITHUB",
-      "public_path": "evidence/cabildo-lanzarote/saip-april-2026/public-pdfs/PD-CAB-SAIP-PDF-0026-public-redacted.pdf"
+      "viewer_live": false,
+      "status": "PUBLIC_RASTER_DERIVATIVE_RENDER_REVIEWED_BINARY_TRANSPORT_PENDING",
+      "prepared_public_path": "evidence/cabildo-lanzarote/saip-april-2026/public-pdfs/PD-CAB-SAIP-PDF-0026-public-redacted.pdf"
     },
     {
       "evidence_id": "PD-CAB-SAIP-PDF-0042",
@@ -83,9 +83,9 @@
       "public_size_bytes": 490695,
       "pages": 2,
       "raster_only": true,
-      "viewer_live": true,
-      "status": "PUBLIC_RASTER_DERIVATIVE_RENDER_REVIEWED_READY_FOR_GITHUB",
-      "public_path": "evidence/cabildo-lanzarote/saip-april-2026/public-pdfs/PD-CAB-SAIP-PDF-0042-public-redacted.pdf"
+      "viewer_live": false,
+      "status": "PUBLIC_RASTER_DERIVATIVE_RENDER_REVIEWED_BINARY_TRANSPORT_PENDING",
+      "prepared_public_path": "evidence/cabildo-lanzarote/saip-april-2026/public-pdfs/PD-CAB-SAIP-PDF-0042-public-redacted.pdf"
     },
     {
       "evidence_id": "PD-CAB-SAIP-PDF-0173",
@@ -97,9 +97,9 @@
       "public_size_bytes": 153408,
       "pages": 1,
       "raster_only": true,
-      "viewer_live": true,
-      "status": "PUBLIC_RASTER_DERIVATIVE_RENDER_REVIEWED_READY_FOR_GITHUB",
-      "public_path": "evidence/cabildo-lanzarote/saip-april-2026/public-pdfs/PD-CAB-SAIP-PDF-0173-public-redacted.pdf"
+      "viewer_live": false,
+      "status": "PUBLIC_RASTER_DERIVATIVE_RENDER_REVIEWED_BINARY_TRANSPORT_PENDING",
+      "prepared_public_path": "evidence/cabildo-lanzarote/saip-april-2026/public-pdfs/PD-CAB-SAIP-PDF-0173-public-redacted.pdf"
     },
     {
       "evidence_id": "PD-CAB-SAIP-PDF-0186",
@@ -111,9 +111,9 @@
       "public_size_bytes": 118527,
       "pages": 1,
       "raster_only": true,
-      "viewer_live": true,
-      "status": "PUBLIC_RASTER_DERIVATIVE_RENDER_REVIEWED_READY_FOR_GITHUB",
-      "public_path": "evidence/cabildo-lanzarote/saip-april-2026/public-pdfs/PD-CAB-SAIP-PDF-0186-public-redacted.pdf"
+      "viewer_live": false,
+      "status": "PUBLIC_RASTER_DERIVATIVE_RENDER_REVIEWED_BINARY_TRANSPORT_PENDING",
+      "prepared_public_path": "evidence/cabildo-lanzarote/saip-april-2026/public-pdfs/PD-CAB-SAIP-PDF-0186-public-redacted.pdf"
     },
     {
       "evidence_id": "PD-CAB-SAIP-PDF-0187",
@@ -125,9 +125,9 @@
       "public_size_bytes": 201175,
       "pages": 1,
       "raster_only": true,
-      "viewer_live": true,
-      "status": "PUBLIC_RASTER_DERIVATIVE_RENDER_REVIEWED_READY_FOR_GITHUB",
-      "public_path": "evidence/cabildo-lanzarote/saip-april-2026/public-pdfs/PD-CAB-SAIP-PDF-0187-public-redacted.pdf"
+      "viewer_live": false,
+      "status": "PUBLIC_RASTER_DERIVATIVE_RENDER_REVIEWED_BINARY_TRANSPORT_PENDING",
+      "prepared_public_path": "evidence/cabildo-lanzarote/saip-april-2026/public-pdfs/PD-CAB-SAIP-PDF-0187-public-redacted.pdf"
     },
     {
       "evidence_id": "PD-CAB-SAIP-PDF-0152",
@@ -139,9 +139,9 @@
       "public_size_bytes": 394333,
       "pages": 2,
       "raster_only": true,
-      "viewer_live": true,
-      "status": "PUBLIC_RASTER_DERIVATIVE_RENDER_REVIEWED_READY_FOR_GITHUB",
-      "public_path": "evidence/cabildo-lanzarote/saip-april-2026/public-pdfs/PD-CAB-SAIP-PDF-0152-public-redacted.pdf"
+      "viewer_live": false,
+      "status": "PUBLIC_RASTER_DERIVATIVE_RENDER_REVIEWED_BINARY_TRANSPORT_PENDING",
+      "prepared_public_path": "evidence/cabildo-lanzarote/saip-april-2026/public-pdfs/PD-CAB-SAIP-PDF-0152-public-redacted.pdf"
     },
     {
       "evidence_id": "PD-CAB-SAIP-PDF-0158",
@@ -153,9 +153,9 @@
       "public_size_bytes": 101941,
       "pages": 1,
       "raster_only": true,
-      "viewer_live": true,
-      "status": "PUBLIC_RASTER_DERIVATIVE_RENDER_REVIEWED_READY_FOR_GITHUB",
-      "public_path": "evidence/cabildo-lanzarote/saip-april-2026/public-pdfs/PD-CAB-SAIP-PDF-0158-public-redacted.pdf"
+      "viewer_live": false,
+      "status": "PUBLIC_RASTER_DERIVATIVE_RENDER_REVIEWED_BINARY_TRANSPORT_PENDING",
+      "prepared_public_path": "evidence/cabildo-lanzarote/saip-april-2026/public-pdfs/PD-CAB-SAIP-PDF-0158-public-redacted.pdf"
     }
   ]
 }
