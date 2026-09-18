@@ -871,7 +871,14 @@ if not errors:
         Counter(actual_source_assertions) == Counter(expected_source_assertions),
         "direct relationship source assertions do not exactly preserve the canonical-field assertion multiset",
     )
-    source_verified_statuses = {"VERIFIED_PRIMARY", "VERIFIED_PRIMARY_COPY", "VERIFIED_PROCEDURAL"}
+    source_verified_statuses = {
+        "VERIFIED_PRIMARY",
+        "VERIFIED_PRIMARY_COPY",
+        "VERIFIED_PRIMARY_COPY_PHOTOGRAPH_TRANSCRIPTION",
+        "VERIFIED_PRIMARY_AVAILABLE_CORPUS_FULL_TEXT",
+        "VERIFIED_PRIMARY_IDENTITY_COPY",
+        "VERIFIED_PROCEDURAL",
+    }
     source_verified_pair_count = sum(
         all(
             assertion.get("evidence_status") in source_verified_statuses
