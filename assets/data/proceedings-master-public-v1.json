@@ -2,8 +2,8 @@
   "schema_version": "1.0.0",
   "dataset": "por-derecho.public-proceedings-projection",
   "canonical_source_id": "PROCEEDINGS_MASTER_REGISTER",
-  "derivation": "Public subset derived from PROCEEDINGS_MASTER_REGISTER.csv; six Cabildo tourism rows updated on 18-Sep-2026 from authority SAIP source corpus during GitHub outage continuity.",
-  "canonical_source_sha256": "c3d3d025fa69b1e8b1d3cc7ea8e8d44cd622aeba4d33f7cf3f230a4a39cf9bb9",
+  "derivation": "Public subset derived from the current master proceedings register; six Cabildo tourism rows updated on 18-Sep-2026 from authority SAIP source corpus during GitHub outage continuity.",
+  "canonical_source_sha256": "13866af39632d5097d8496cf5b7c787437d659fff6d0ee258636f9f5ee81a409",
   "publication_policy": {
     "eligibility_field": "Public_Treatment",
     "public_treatment_allowlist": [
@@ -1555,13 +1555,13 @@
       "Date_or_Period": "2020-present",
       "Connection": "Cuatrecasas/Matkator execution, auction, adjudication, assignment and title",
       "Object_or_Purpose": "Civil enforcement underlying DP 748/2026",
-      "Status": "Live; adjudication/assignment/registration/possession status open",
-      "Latest_Known_Event": "Reposición of 26-Jun-2026 admitted and five-day transfer ordered 28-Jul-2026; later result not located",
-      "Appeal_or_Review": "Reposición against 19-Jun suspension denial remains outcome-open",
+      "Status": "Live; 17-Sep-2026 reposición against suspension denial dismissed; adjudication/assignment/registration/possession status still open",
+      "Latest_Known_Event": "17-Sep-2026 order dismisses reposición; received 18-Sep-2026; no later patrimonial disposition located",
+      "Appeal_or_Review": "Order states no appeal lies; Article 215.2 complement regarding separately pleaded subsidiary irreversible-acts relief is under counsel review",
       "Parent_Master_ID": "TF-CIV-001",
       "Linked_Proceedings": "TF-CIV-001; TF-CRI-003; TF-APP-004",
       "Source_Status": "VERIFIED_PRIMARY",
-      "Open_Reference_Gap": "Certified complete docket; correlated receipts/resolutions; adjudication/assignment/registration/possession; historic/current registry and expert crosswalk"
+      "Open_Reference_Gap": "Post-17-Sep docket certification; adjudication/assignment/registration/possession; assignee/payment trail; historic/current registry and expert crosswalk"
     },
     {
       "Master_ID": "TF-CRI-003",
@@ -1579,13 +1579,13 @@
       "Date_or_Period": "2026",
       "Connection": "Alleged autonomous conduct in ETJ 163/2020; criminality not established",
       "Object_or_Purpose": "Diligencias Previas; provisional dismissal and appeal/reopening lane",
-      "Status": "Provisional dismissal maintained 16-Jul-2026 after reform partly upheld for lack of reasons; order non-final; reopening expressly preserved",
-      "Latest_Known_Event": "Located LexNET packet communicated 01-Sep-2026",
-      "Appeal_or_Review": "17-Apr reform and subsidiary appeal recorded in time and form on 20-May; Article 766.4 transfer, remittal and roll not located",
+      "Status": "Provisional dismissal maintained 16-Jul-2026; subsidiary appeal origin-processing verified 16-Sep-2026; five-day Ministerio Fiscal transfer active; outcome open",
+      "Latest_Known_Event": "09-Sep appellant filed impulse/ad cautelam allegations and 03-Sep ETJ document; 16-Sep LAJ gives Ministerio Fiscal five days",
+      "Appeal_or_Review": "17-Apr reform and subsidiary appeal recorded in time and form on 20-May; 09-Sep appellant allegations filed; 16-Sep origin processing verified; Audiencia remittal/roll not located",
       "Parent_Master_ID": "",
       "Linked_Proceedings": "TF-CIV-001; TF-CIV-002; TF-FIS-008; TF-XFR-005; TF-APP-004",
       "Source_Status": "VERIFIED_PRIMARY",
-      "Open_Reference_Gap": "P0 protective allegations; last-notification certificate; Article 766.4 processing; remittal/roll; signed original of 24-Mar Auto; finite actor-finca-effect evidence"
+      "Open_Reference_Gap": "Ministerio Fiscal submission after 16-Sep; further transfers; Audiencia remittal/roll; signed original of 24-Mar Auto; finite actor-finca-effect evidence"
     },
     {
       "Master_ID": "TF-APP-004",
@@ -1601,15 +1601,15 @@
       "Secondary_Reference": "",
       "NIG": "",
       "Date_or_Period": "2026",
-      "Connection": "DP 748 appeal-processing placeholder",
-      "Object_or_Purpose": "Unverified appellate placeholder",
-      "Status": "Subsidiary appeal admitted at origin; separate appellate proceeding not verified",
-      "Latest_Known_Event": "No Article 766.4 transfer, remittal or Audiencia roll located as of 01-Sep-2026",
-      "Appeal_or_Review": "17-Apr subsidiary appeal exists; do not equate origin-court admission with a verified appellate roll",
+      "Connection": "DP 748 appeal-processing lane",
+      "Object_or_Purpose": "Unverified separate appellate placeholder",
+      "Status": "Article 766.4 origin-stage processing verified 16-Sep-2026; separate Audiencia proceeding not verified",
+      "Latest_Known_Event": "16-Sep-2026 LAJ order gives Ministerio Fiscal five days; remittal/roll not located",
+      "Appeal_or_Review": "Origin-stage processing verified; do not equate with verified remittal or a separate Audiencia roll",
       "Parent_Master_ID": "TF-CRI-003",
       "Linked_Proceedings": "TF-CRI-003; TF-CIV-002",
       "Source_Status": "OPEN_REFERENCE",
-      "Open_Reference_Gap": "Certified Article 766.4 processing, remittal, assigned roll, appellate organ, parties, panel/LAJ and outcome"
+      "Open_Reference_Gap": "Ministerio Fiscal submission; remittal; assigned roll; appellate organ; parties; panel/LAJ; outcome"
     },
     {
       "Master_ID": "TF-XFR-005",
