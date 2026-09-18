@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1500" viewBox="0 0 1200 1500" role="img" aria-labelledby="t d">
+<title id="t">One hotel. One execution. A wider question.</title>
+<desc id="d">Source-led explanatory visual using the current Sun Park hotel photograph. Matkator units are highlighted in Block 5 according to the client-side physical-placement position; the exact finca-to-unit crosswalk remains under review.</desc>
+<defs>
+  <linearGradient id="shade" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0d1c22" stop-opacity=".08"/><stop offset=".64" stop-color="#0d1c22" stop-opacity=".10"/><stop offset="1" stop-color="#0d1c22" stop-opacity=".86"/></linearGradient>
+  <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#111d23"/><stop offset="1" stop-color="#081015"/></linearGradient>
+  <style>
+    .sans{font-family:Arial,Helvetica,sans-serif}.serif{font-family:Georgia,'Times New Roman',serif}
+    .white{fill:#fff}.dark{fill:#13252d}.red{fill:#b71c1c}.gold{fill:#d5a342}.muted{fill:#d7e0df}
+    .small{font-size:22px}.tiny{font-size:18px}.mid{font-size:30px}.big{font-size:54px;font-weight:800}.huge{font-size:72px;font-weight:900}
+    .label{fill:#fff;font-size:26px;font-weight:800;text-anchor:middle}.labelbox{fill:#143643;stroke:#dce6e6;stroke-width:2;rx:8}
+  </style>
+</defs>
+<rect width="1200" height="1500" fill="#f6f2e9"/>
+<rect x="0" y="0" width="1200" height="162" fill="#f6f2e9"/>
+<text x="600" y="40" class="sans dark small" text-anchor="middle">PROJECT SUN ROCK / POR DERECHO · PUBLIC EXPLANATORY VISUAL</text>
+<text x="600" y="102" class="sans dark huge" text-anchor="middle">ONE HOTEL. <tspan fill="#b71c1c">ONE EXECUTION.</tspan></text>
+<text x="600" y="145" class="serif dark mid" text-anchor="middle">Why one active enforcement may affect a wider hotel-rights and recovery perimeter</text>
+
+<image href="/por-derecho/assets/sun-park-mynd-yaiza.jpg" x="0" y="162" width="1200" height="760" preserveAspectRatio="xMidYMid slice"/>
+<rect x="0" y="162" width="1200" height="760" fill="url(#shade)"/>
+
+<!-- hotel title -->
+<rect x="330" y="182" width="540" height="88" rx="12" fill="#fff" fill-opacity=".92"/>
+<text x="600" y="222" class="sans dark big" text-anchor="middle">SUN PARK · PLAYA BLANCA</text>
+<text x="600" y="255" class="sans dark small" text-anchor="middle">NINE BLOCKS · 262 FINCAS · ONE HOTEL OPERATION</text>
+
+<!-- block labels, visual orientation only -->
+<g class="sans">
+ <rect class="labelbox" x="475" y="285" width="250" height="50"/><text x="600" y="319" class="label">7</text>
+ <rect class="labelbox" x="285" y="350" width="110" height="50"/><text x="340" y="384" class="label">6</text>
+ <rect class="labelbox" x="805" y="350" width="110" height="50"/><text x="860" y="384" class="label">8</text>
+ <rect x="210" y="455" width="150" height="138" rx="14" fill="#b71c1c" fill-opacity=".52" stroke="#ffdbd8" stroke-width="5"/>
+ <rect x="222" y="466" width="126" height="48" rx="8" fill="#b71c1c"/><text x="285" y="500" class="label">5</text>
+ <rect class="labelbox" x="850" y="455" width="110" height="50"/><text x="905" y="489" class="label">1</text>
+ <rect class="labelbox" x="270" y="620" width="110" height="50"/><text x="325" y="654" class="label">4</text>
+ <rect class="labelbox" x="820" y="620" width="110" height="50"/><text x="875" y="654" class="label">2</text>
+ <rect class="labelbox" x="500" y="505" width="200" height="50"/><text x="600" y="539" class="label">9</text>
+ <rect class="labelbox" x="500" y="760" width="200" height="50"/><text x="600" y="794" class="label">3</text>
+</g>
+
+<!-- callout -->
+<path d="M 350 540 C 250 650, 235 715, 245 748" fill="none" stroke="#fff" stroke-width="8"/>
+<path d="M 350 540 C 250 650, 235 715, 245 748" fill="none" stroke="#b71c1c" stroke-width="4" stroke-dasharray="12 8"/>
+<rect x="55" y="735" width="390" height="130" rx="14" fill="#a80f0f" stroke="#fff" stroke-width="3"/>
+<text x="250" y="780" class="sans white mid" text-anchor="middle" font-weight="800">FINCA 8,584 · BLOCK 5</text>
+<text x="250" y="815" class="serif white small" text-anchor="middle">client-side physical placement</text>
+<text x="250" y="847" class="serif white tiny" text-anchor="middle">exact finca↔unit crosswalk remains under review</text>
+
+<!-- current status -->
+<rect x="790" y="712" width="350" height="154" rx="14" fill="#0b1115" fill-opacity=".93" stroke="#d5a342" stroke-width="3"/>
+<text x="815" y="754" class="sans white mid" font-weight="800">WHAT IS ACTIVE NOW</text>
+<text x="815" y="795" class="serif white small">ETJ 163/2020 · finca 8,584</text>
+<text x="815" y="829" class="serif white small">finca 8,588 appears in the attachment chain</text>
+<text x="815" y="860" class="serif" fill="#f1cf75" font-size="21">One remate is not the whole exposure.</text>
+
+<!-- lower information panel -->
+<rect x="0" y="922" width="1200" height="578" fill="url(#panel)"/>
+<text x="600" y="982" class="sans white big" text-anchor="middle">SEPARATE, BUT CONNECTED, PERIMETERS</text>
+
+<rect x="70" y="1018" width="320" height="150" rx="18" fill="#fff" fill-opacity=".96"/>
+<text x="230" y="1066" class="sans red mid" text-anchor="middle" font-weight="800">MATKATOR, S.L.</text>
+<text x="230" y="1105" class="serif dark small" text-anchor="middle">executed asset / property-right exposure</text>
+<text x="230" y="1142" class="serif dark tiny" text-anchor="middle">finca 8,584 · finca 8,588 · other Matkator assets</text>
+
+<rect x="440" y="1018" width="320" height="150" rx="18" fill="#eef3f2"/>
+<text x="600" y="1066" class="sans dark mid" text-anchor="middle" font-weight="800">AWESWELL LIMITED</text>
+<text x="600" y="1105" class="serif dark small" text-anchor="middle">former client · wider holding / recovery perimeter</text>
+<text x="600" y="1142" class="serif dark tiny" text-anchor="middle">legally separate from Matkator and LPB</text>
+
+<rect x="810" y="1018" width="320" height="150" rx="18" fill="#fff8e6"/>
+<text x="970" y="1066" class="sans dark mid" text-anchor="middle" font-weight="800">SUN PARK HOTEL</text>
+<text x="970" y="1105" class="serif dark small" text-anchor="middle">integrated hotel operation</text>
+<text x="970" y="1142" class="serif dark tiny" text-anchor="middle">access · common infrastructure · income · operating value</text>
+
+<path d="M390 1095 H440" stroke="#d5a342" stroke-width="7"/><path d="M760 1095 H810" stroke="#d5a342" stroke-width="7"/>
+
+<text x="600" y="1238" class="serif white" font-size="40" text-anchor="middle">The issue is not just one apartment.</text>
+<text x="600" y="1292" class="serif gold" font-size="42" text-anchor="middle" font-weight="700">One enforcement chain can affect bargaining power, value,</text>
+<text x="600" y="1342" class="serif gold" font-size="42" text-anchor="middle" font-weight="700">recovery and hotel-linked rights beyond the executed finca.</text>
+
+<rect x="105" y="1384" width="990" height="74" rx="12" fill="#fff" fill-opacity=".10" stroke="#75888d"/>
+<text x="600" y="1415" class="sans white tiny" text-anchor="middle">SOURCE BOUNDARY · This visual presents allegations, source-based questions and documented procedural context.</text>
+<text x="600" y="1443" class="sans muted tiny" text-anchor="middle">It does not establish criminal liability, a completed cession, the identity of any assignee, or a settled finca↔apartment crosswalk.</text>
+</svg>
