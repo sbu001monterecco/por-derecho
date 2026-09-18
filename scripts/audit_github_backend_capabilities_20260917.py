@@ -49,8 +49,10 @@ CAPABILITIES: dict[str, tuple[str, ...]] = {
         "ops/continuity/GITLAB_EXACT_RECOVERY_QUEUE_20260917.json",
         "ops/continuity/GITHUB_FIRST_48H_PLUS_36H_CONTINUITY_PLAN_20260917.md",
         "ops/continuity/GITHUB_FIRST_48H_PLUS_36H_CONTINUITY_PLAN_20260917.json",
+        "ops/continuity/GITLAB_PUBLIC_SURFACE_RECOVERY_LEDGER_20260918.json",
         "scripts/classify_public_impact_shadow_20260917.py",
         "scripts/validate_continuity_horizon_20260917.py",
+        "scripts/validate_gitlab_public_surface_recovery_20260918.py",
         ".github/workflows/outage-backend-parity.yml",
     ),
 }
@@ -115,6 +117,14 @@ def audit() -> dict:
     if horizon.get("total_hours") != 84:
         failures.append("continuity_horizon_duration_drift")
 
+    public_recovery = json.loads(read_text("ops/continuity/GITLAB_PUBLIC_SURFACE_RECOVERY_LEDGER_20260918.json"))
+    if public_recovery.get("status") != "ACTIVE_PUBLIC_ONLY":
+        failures.append("gitlab_public_surface_ledger_not_active")
+    if public_recovery.get("authenticated_gitlab_restoration_verified") is not False:
+        failures.append("gitlab_public_surface_ledger_claims_auth_restoration")
+    if not public_recovery.get("items"):
+        failures.append("gitlab_public_surface_ledger_empty")
+
     tech_monitor = read_text(".github/workflows/tech-platform-monitor.yml")
     for needle in ("validate_identity_compatibility.py", "run_rpl2523_retrieval_pilot.py", "monitor_tech_platform.py"):
         if needle not in tech_monitor:
@@ -138,6 +148,8 @@ def audit() -> dict:
         failures.append("capability_audit_not_wired")
     if "validate_continuity_horizon_20260917.py" not in outage_workflow:
         failures.append("continuity_horizon_not_wired")
+    if "validate_gitlab_public_surface_recovery_20260918.py" not in outage_workflow:
+        failures.append("gitlab_public_surface_validation_not_wired")
 
     report = {
         "schema": "por-derecho.github-backend-capability-audit.v1",

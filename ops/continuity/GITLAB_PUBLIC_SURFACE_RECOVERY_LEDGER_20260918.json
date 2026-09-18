@@ -1,0 +1,47 @@
+{
+  "schema": "por-derecho.gitlab-public-surface-recovery-ledger.v1",
+  "control_id": "PD-GL-PUBLIC-SURFACE-20260918-01",
+  "control_date": "2026-09-18",
+  "status": "ACTIVE_PUBLIC_ONLY",
+  "authenticated_gitlab_restoration_verified": false,
+  "last_verified_gitlab_main_sha": "7d086d098676eecc2c1647ed09b348d8dc0bdc69",
+  "github_main_at_observation": "cbffd8eec8bd174fbebe5e1f3667629d90656e7f",
+  "items": [
+    {
+      "id": "GL-PUB-001",
+      "surface_type": "GITLAB_PAGES_RENDERED_ROUTE",
+      "gitlab_public_url": "https://por-derecho-setup-or-gitlab-setup-c2b10f.gitlab.io/por-derecho-setup-or-gitlab-setup/en/sun-park-takeover-7-june-2018/",
+      "observed_publicly_accessible_date": "2026-09-17",
+      "classification": "FUNCTIONAL_GITHUB_EQUIVALENT",
+      "corresponding_github_url": "https://sbu001monterecco.github.io/por-derecho/en/sun-park-takeover-7-june-2018/",
+      "source_level_state": "PENDING_GITLAB_RESTORATION",
+      "provenance": "Anonymous public GitLab Pages route; continuity issue #1532 records the rendered-page comparison boundary.",
+      "boundary": "Rendered HTML is comparison input only. It is not exact GitLab source/template/commit recovery without independently verifiable GitLab object identity."
+    },
+    {
+      "id": "GL-PUB-002",
+      "surface_type": "GITLAB_PAGES_RENDERED_ROUTE",
+      "gitlab_public_url": "https://por-derecho-setup-or-gitlab-setup-c2b10f.gitlab.io/por-derecho-setup-or-gitlab-setup/es/puzzle-register/",
+      "observed_publicly_accessible_date": "2026-09-18",
+      "classification": "FUNCTIONAL_GITHUB_EQUIVALENT",
+      "corresponding_github_url": null,
+      "github_match_state": "NOT_LOCATED_BY_DEFAULT_BRANCH_CODE_SEARCH",
+      "source_level_state": "PENDING_GITLAB_RESTORATION",
+      "provenance": "Anonymous public GitLab Pages route returned by public web indexing on 18 September 2026.",
+      "boundary": "The rendered page proves anonymous public deployment availability only. It does not prove the producing GitLab commit, template bytes, authenticated project access, or exact parity with GitHub."
+    }
+  ],
+  "allowed_classifications": [
+    "EXACT_GITLAB_RECOVERY",
+    "EXACT_ALREADY_MIRRORED",
+    "FUNCTIONAL_GITHUB_EQUIVALENT",
+    "PENDING_GITLAB_RESTORATION"
+  ],
+  "rules": [
+    "Anonymous public availability does not establish authenticated GitLab restoration.",
+    "Rendered GitLab Pages output is not exact source recovery unless a verifiable GitLab source object and byte identity are independently established.",
+    "Never reconstruct unavailable GitLab source/template bytes from rendered HTML, search snippets, chat memory, or screenshots.",
+    "If exact GitLab provenance is later recovered, record the GitLab object path/id, source SHA, retrieval date and byte/parity result before upgrading classification.",
+    "Outage-period GitHub work is reconciled additively and is never force-reset away when GitLab returns."
+  ]
+}

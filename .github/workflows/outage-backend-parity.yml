@@ -28,6 +28,7 @@ on:
       - 'scripts/classify_public_impact_shadow_20260917.py'
       - 'scripts/audit_github_backend_capabilities_20260917.py'
       - 'scripts/validate_continuity_horizon_20260917.py'
+      - 'scripts/validate_gitlab_public_surface_recovery_20260918.py'
       - 'tests/test_github_outage_backend_20260917.py'
       - 'tests/test_github_backend_hardening_20260917.py'
   pull_request:
@@ -52,6 +53,7 @@ on:
       - 'scripts/classify_public_impact_shadow_20260917.py'
       - 'scripts/audit_github_backend_capabilities_20260917.py'
       - 'scripts/validate_continuity_horizon_20260917.py'
+      - 'scripts/validate_gitlab_public_surface_recovery_20260918.py'
       - 'tests/test_github_outage_backend_20260917.py'
       - 'tests/test_github_backend_hardening_20260917.py'
 
@@ -81,6 +83,8 @@ jobs:
         run: python3 scripts/audit_github_backend_capabilities_20260917.py
       - name: Validate 48h plus 36h continuity horizon
         run: python3 scripts/validate_continuity_horizon_20260917.py
+      - name: Validate public GitLab recovery classifications
+        run: python3 scripts/validate_gitlab_public_surface_recovery_20260918.py
       - name: Exercise advisory classifier
         run: >-
           python3 scripts/classify_public_impact_shadow_20260917.py
@@ -88,6 +92,7 @@ jobs:
           scripts/classify_public_impact_shadow_20260917.py
           scripts/audit_github_backend_capabilities_20260917.py
           scripts/validate_continuity_horizon_20260917.py
+          scripts/validate_gitlab_public_surface_recovery_20260918.py
           tests/test_github_outage_backend_20260917.py
           tests/test_github_backend_hardening_20260917.py
           .github/copilot-instructions.md
@@ -97,5 +102,6 @@ jobs:
           [json.loads(pathlib.Path(p).read_text(encoding='utf-8')) for p in [
           'ops/continuity/GITHUB_OPERATIONAL_BACKEND_PARITY_20260917.json',
           'ops/continuity/GITLAB_EXACT_RECOVERY_QUEUE_20260917.json',
-          'ops/continuity/GITHUB_FIRST_48H_PLUS_36H_CONTINUITY_PLAN_20260917.json']];
+          'ops/continuity/GITHUB_FIRST_48H_PLUS_36H_CONTINUITY_PLAN_20260917.json',
+          'ops/continuity/GITLAB_PUBLIC_SURFACE_RECOVERY_LEDGER_20260918.json']];
           print('machine controls parse: PASS')"
