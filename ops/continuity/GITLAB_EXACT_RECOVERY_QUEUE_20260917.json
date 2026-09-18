@@ -2,7 +2,7 @@
   "schema": "por-derecho.gitlab-exact-recovery-queue.v1",
   "control_id": "PD-GITLAB-EXACT-RECOVERY-20260917-01",
   "control_date": "2026-09-18",
-  "status": "OPEN_BLOCKED_BY_GITLAB_AUTHENTICATION_WITH_GITHUB_OUTAGE_DELTA",
+  "status": "OPEN_BLOCKED_BY_GITLAB_AUTHENTICATION",
   "last_verified_gitlab_main_sha": "7d086d098676eecc2c1647ed09b348d8dc0bdc69",
   "items": [
     {
