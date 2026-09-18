@@ -305,7 +305,7 @@
       "/es/actualizaciones/",
       "/en/updates/"
     ],
-    "public_parity": "REPOSITORY_2026-09-18_PENDING_PUBLICATION_LAST_LIVE_VERIFIED_2026-08-28",
+    "public_parity": "REPOSITORY_2026-09-18_MERGED_AWAITING_PAGES_READBACK_LAST_LIVE_VERIFIED_2026-08-28",
     "latest_live_verified_publication": {
       "control_id": "PD-SP-AEAT-PINK-DILIGENCE-20260828-01",
       "state": "LIVE_VERIFIED",
@@ -322,7 +322,7 @@
     },
     "pending_publication": {
       "control_id": "PD-CUATRECASAS-ETJ-DP748-20260918-01",
-      "state": "PREPARED_PENDING_MERGE",
+      "state": "MERGED_AWAITING_PAGES_READBACK",
       "material_date": "2026-09-18",
       "routes": [
         "/en/cuatrecasas-etj163-dp748-18-september-2026/",
@@ -330,7 +330,10 @@
         "/en/updates/",
         "/es/actualizaciones/"
       ],
-      "rule": "Do not call the 18-Sep material live verified until merge, Pages deployment and public readback are observed."
+      "rule": "Do not call the 18-Sep material live verified until a public GitHub Pages readback is observed.",
+      "controlling_pr": 1548,
+      "merge_sha": "cf73bd7cffd65ad08f48d3cc850b692fc17aec23",
+      "merged_to": "main"
     }
   },
   "procedural_checkpoints": {
