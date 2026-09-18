@@ -16,7 +16,7 @@ The native electronic court PDF and the legally operative notification metadata 
 
 ## Public PDF and full text
 
-- [Public controlled PDF derivative](public-pdfs/auto-14sep2026-public-controlled-transcription.pdf) — 3-page reproducible PDF generated from the canonical transcription; **not** the native electronic court PDF.
+- [Public controlled PDF derivative](public-pdfs/auto-14sep2026-public-controlled-transcription.pdf) — 3-page reproducible PDF generated from the canonical transcription; **not** the native electronic court PDF. SHA-256: `2cb0944b50a20b890def32638dd44a7a0add6ce6bdca7681b63e46a4e997f557`.
 - [Canonical CI-validated page-accounted transcription](full-text/auto-14sep2026-public-transcription.md)\n- [Legacy same-source path retained for link stability](full-text/auto-14sep2026-photo-transcription.md)
 
 ## What the photographed order establishes
