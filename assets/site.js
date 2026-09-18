@@ -43,6 +43,11 @@
     }
   };
 
+  /* MASTER_PROCEEDINGS_PUBLICATION_GATE */
+  const loadMasterProceedingsPublication = () => {
+    load('master-proceedings-publication-20260830.js', 'data-master-proceedings-publication-loader', '20260831e');
+  };
+
   const loadControl2224Release = () => {
     load('control-22-24-interlink-20260904.js', 'data-control-22-24-interlink-loader', '20260904a');
     load('control-22-24-search-extension-20260904.js', 'data-control-22-24-search-loader', '20260904a');
@@ -73,6 +78,7 @@
   };
 
   const loadMatkator8584Release = () => {
+    loadMasterProceedingsPublication();
     load('matkator-8584-hotel-title-multitrack-20260903.js', 'data-matkator-8584-multitrack-loader', '20260903a');
     load('matkator-8584-search-extension-20260903.js', 'data-matkator-8584-search-loader', '20260903a');
     loadHotelFincaSystem();
