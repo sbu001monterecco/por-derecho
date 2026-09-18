@@ -1,44 +1,40 @@
-# Comunicación de actualización — DIP 2/2026 — 11 marzo 2026
-
-> **Legacy path control:** this path was created by the partial 18-September continuity update. The canonical validated transcription is `actualizacion-11mar2026-public-transcription.md`. Both refer to the same native PDF (SHA-256 `0c3116c35b7dea1976dd39ee043898d0aa6b5b1164c36c9b014b4c3ca70d85b9`) and the same canonical evidence ID `EVID-2026-FISCALIA-DIP2-ACTUALIZACION-11MAR-005`; they must not be counted as two sources.
+# Comunicación de actualización de 11 de marzo de 2026 - transcripción pública controlada
 
 - Evidence ID: `EVID-2026-FISCALIA-DIP2-ACTUALIZACION-11MAR-005`
 - Source date: 11 de marzo de 2026
-- Author / signatory: Gil Marer
-- Addressee: Fiscalía de la Comunidad Autónoma de Canarias (Fiscalía Superior de Canarias)
-- Procedure referenced: Diligencias de Investigación Preprocesal n.º 2/2026
-- Registration reference: `REGAGE26e00026303869`
-- Native SHA-256: `0c3116c35b7dea1976dd39ee043898d0aa6b5b1164c36c9b014b4c3ca70d85b9`
 - Source pages: 4
-- Status: page-accounted transcription from the signed source PDF recovered from the connected mailbox
-- Source class: party communication; it proves what was communicated, not that a particular prosecutor personally read or accepted it
+- Source SHA-256: `0c3116c35b7dea1976dd39ee043898d0aa6b5b1164c36c9b014b4c3ca70d85b9`
+- Registered receipt: REGAGE26e00026303869
+- Destination: Fiscalía de la Comunidad Autónoma de Canarias
+- Privacy: NIE/firma-identificador omitidos; texto sustantivo conservado
+- Status: source PDF located and fully text-extracted
 
-> Editorial note: direct identity/contact details are not repeated here. The native PDF controls layout and signature presentation.
+> Esta comunicación es especialmente relevante porque contradice formalmente, cinco días después del Decreto de archivo, la premisa de que no existía apelación contra las resoluciones de separación. Su recepción no identifica por sí sola quién la leyó ni qué tratamiento sustantivo recibió.
 
 ## Página 1 de 4
 
-**COMUNICACIÓN A LA FISCALÍA DE LA COMUNIDAD AUTÓNOMA DE CANARIAS**  
-*(Fiscalía Superior de Canarias)*
+COMUNICACIÓN A LA FISCALÍA DE LA COMUNIDAD AUTÓNOMA DE CANARIAS  
+(Fiscalía Superior de Canarias)
 
-**ASUNTO: Comunicación informativa sobre efectos patrimoniales e institucionales en relación con las Diligencias de Investigación Preprocesal nº 2/2026**
+ASUNTO: Comunicación informativa sobre efectos patrimoniales e institucionales en relación con las Diligencias de Investigación Preprocesal nº 2/2026
 
-D. GIL MARER, mayor de edad, actuando en su propio nombre y derecho, comparece ante esa Fiscalía y, como mejor proceda en Derecho,
+D. GIL MARER, mayor de edad, [IDENTIFICADOR PERSONAL OMITIDO], actuando en su propio nombre y derecho, comparece ante esa Fiscalía y, como mejor proceda en Derecho,
 
-**EXPONE**
+EXPONE
 
-**PRIMERO**
+### PRIMERO
 
 Con fecha 9 de marzo de 2026 fue notificada a esta parte comunicación procedente de esa Fiscalía relativa al Decreto de archivo de fecha 6 de marzo de 2026, dictado en el marco de las Diligencias de Investigación Preprocesal nº 2/2026, incoadas a raíz de la denuncia presentada el 13 de enero de 2026 y ampliada mediante escrito de 8 de febrero de 2026, relativas a determinadas actuaciones judiciales producidas en el Concurso Ordinario nº 36/2012, seguido ante el Juzgado de lo Mercantil nº 1 de Las Palmas de Gran Canaria.
 
-**SEGUNDO**
+### SEGUNDO
 
-Mediante el presente escrito se pone en conocimiento de esa Fiscalía, a efectos meramente informativos y de actualización del estado procesal, que las resoluciones judiciales mencionadas en el referido Decreto —en particular el Auto de 12 de septiembre de 2025 y el Auto de 11 de noviembre de 2025, relativos a la solicitud de separación de la Administración Concursal— han sido recurridas en apelación ante la Audiencia Provincial de Las Palmas, encontrándose actualmente pendientes de resolución.
+Mediante el presente escrito se pone en conocimiento de esa Fiscalía, a efectos meramente informativos y de actualización del estado procesal, que las resoluciones judiciales mencionadas en el referido Decreto -en particular el Auto de 12 de septiembre de 2025 y el Auto de 11 de noviembre de 2025, relativos a la solicitud de separación de la Administración Concursal- han sido recurridas en apelación ante la Audiencia Provincial de Las Palmas, encontrándose actualmente pendientes de resolución.
 
 Asimismo, otras actuaciones judiciales relacionadas con el control y supervisión de la Administración Concursal dentro del mismo procedimiento concursal, incluyendo las relativas a la reclamación de honorarios de la Administración Concursal, han sido igualmente recurridas ante la Audiencia Provincial, encontrándose también pendientes de resolución.
 
-**TERCERO**
+### TERCERO
 
-La presente comunicación se formula igualmente con carácter aclaratorio y complementario, con el objeto de facilitar una mejor comprensión institucional del contexto patrimonial, económico y administrativo en el que se sitúa el activo turístico conocido como SUN PARK / MYND YAIZA, situado en Playa Blanca, municipio de Yaiza (Lanzarote).
+La presente comunicación se formula igualmente con carácter aclaratorio y complementario, con el objeto de facilitar una mejor comprensión institucional del contexto patrimonial, económico y administrativo en el que se sitúa el activo turístico conocido como SUN PARK / MYND YAIZA, situado en Calle Janubio nº 3, Playa Blanca, municipio de Yaiza (Lanzarote).
 
 El citado activo hotelero se encuentra vinculado al grupo inversor encabezado por AWESWELL LIMITED, sociedad constituida en el Reino Unido, que actúa como titular del interés económico último asociado al complejo turístico, manteniendo derechos patrimoniales relevantes vinculados al mismo a través de sus sociedades participadas LUCHY PLAYA BLANCA S.L.U. y MATKATOR S.L., cuyos activos y derechos forman parte del perímetro histórico del complejo hotelero mencionado.
 
@@ -48,7 +44,7 @@ Debe señalarse que las circunstancias descritas no se limitan al ámbito estric
 
 inciden sobre el conjunto del patrimonio empresarial del inversor y no únicamente sobre la participación societaria directa en MATKATOR S.L.
 
-**CUARTO**
+### CUARTO
 
 El activo económico referido ha sido objeto de diversas actuaciones económicas, societarias y administrativas desarrolladas tanto dentro como fuera del procedimiento concursal nº 36/2012, circunstancia que ha generado una situación de riesgo patrimonial potencialmente significativo para el inversor extranjero titular del interés económico último.
 
@@ -58,7 +54,7 @@ Según resulta de diversa documentación administrativa previamente trasladada p
 
 Asimismo, determinadas circunstancias relacionadas con la situación descrita han sido objeto de comunicaciones institucionales previas dirigidas a distintas autoridades públicas, entre ellas órganos del Gobierno de Canarias, la Intervención General de la Comunidad Autónoma, así como autoridades con competencias en materia de supervisión financiera y mercados de valores, con el fin de facilitar el adecuado conocimiento institucional de los hechos y de sus posibles implicaciones económicas.
 
-**QUINTO**
+### QUINTO
 
 En este contexto, el compareciente ha trasladado en distintas ocasiones comunicaciones administrativas relativas a determinadas circunstancias económicas cuya incidencia sobre el citado activo turístico podría requerir, en su caso, verificación por las autoridades competentes, particularmente en relación con su eventual utilización en operaciones económicas o societarias vinculadas a incentivos fiscales, inversiones turísticas o instrumentos de financiación pública.
 
@@ -94,7 +90,7 @@ Asimismo, determinadas comunicaciones administrativas relacionadas con estas cir
 
 La presente referencia se formula sin prejuzgar la legalidad de las actuaciones descritas ni atribuir responsabilidad alguna a persona o institución determinada, y exclusivamente con el objeto de facilitar la adecuada comprensión institucional del contexto en el que se sitúan los hechos comunicados.
 
-**SEXTO**
+### SEXTO
 
 La presente comunicación tiene igualmente por objeto dejar constancia institucional de que los efectos patrimoniales derivados de las circunstancias descritas continúan produciéndose en la actualidad, mientras las cuestiones judiciales anteriormente mencionadas permanecen pendientes de resolución ante la Audiencia Provincial de Las Palmas.
 
@@ -110,7 +106,7 @@ La presente referencia se formula únicamente a efectos de contextualización in
 
 La presente comunicación se formula con carácter meramente informativo y colaborativo, con el único propósito de facilitar el adecuado conocimiento institucional de las circunstancias descritas y de su posible incidencia económica.
 
-**SOLICITA**
+### SOLICITA
 
 Que se tenga por presentado el presente escrito y se acuerde incorporar esta comunicación al expediente correspondiente a las Diligencias de Investigación Preprocesal nº 2/2026, a efectos de dejar constancia:
 
@@ -123,4 +119,5 @@ Todo ello a los efectos oportunos.
 
 En San Cristóbal de La Laguna, a 11 de marzo de 2026.
 
-Fdo.: GIL MARER
+Fdo.: GIL MARER  
+[IDENTIFICADOR PERSONAL Y DATOS DE FIRMA DIGITAL OMITIDOS]
