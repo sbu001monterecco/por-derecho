@@ -7,10 +7,10 @@
     "communications_register": "assets/data/institutional-communications-register-v1.json",
     "communications_sha256": "4f1eb857497a9449b172be368edf8bdce59a869ca7725e23e47b1f8c86ce7798",
     "proceedings_master": "archive/PROCEEDINGS_MASTER_REGISTER.csv",
-    "proceedings_master_sha256": "13866af39632d5097d8496cf5b7c787437d659fff6d0ee258636f9f5ee81a409",
+    "proceedings_master_sha256": "587b419d1a62a01fba85bfe2656ab1ea67be8b580fa34ddb002d935fc9e98296",
     "public_proceedings_projection": "assets/data/proceedings-master-public-v1.json",
     "link_assertions": "assets/data/fiscalia-proceedings-link-assertions-v1.json",
-    "link_assertions_sha256": "18427814dd0a8d412f989458c7058ca2ae490fbf80ae35535042a6e113fa0392"
+    "link_assertions_sha256": "f9697bf09d28ae1d47359b5a7619739df7dbc69c3b02aa72a22a400d31904fec"
   },
   "boundaries": {
     "en": "A link records only the proposition stated by its relationship type and cited sources. Registration is not delivery beyond the receipt, receipt is not examination, chronology is not causation, and institutional possession is not personal knowledge, agreement, intent, wrongdoing or liability.",
@@ -11940,10 +11940,10 @@
       "secondary_reference": "",
       "office": "Fiscalía de la Comunidad Autónoma de Canarias",
       "geography": "Gran Canaria / national",
-      "status": "Opened 11 Feb 2026 as recorded in the 6 Mar decree; archived 6 Mar; notice 9 Mar; appeal-status premise corrected 11 Mar",
-      "latest_known_event": "Registered correction REGAGE26e00026303869 filed 11 Mar 2026",
-      "source_status": "VERIFIED_PRIMARY",
-      "open_reference_gap": "Complete certified file, separate 11-Feb opening decree, incorporation/reconsideration after correction and transmission record",
+      "status": "Opened 11 Feb 2026 as recorded in 6 Mar decree; archived 6 Mar; notice 9 Mar; appeal-status premise formally corrected by registered 11 Mar filing",
+      "latest_known_event": "14 Sep 2026 DP 1901 order records a 29 Jul Ministerio Fiscal report seeking archive; order fully transcribed from source photographs on 18 Sep",
+      "source_status": "VERIFIED_PRIMARY_AVAILABLE_CORPUS_FULL_TEXT",
+      "open_reference_gap": "Separate 11-Feb opening decree; complete certified DIP 2 file/index; post-11-Mar handling/correction record; signed 29-Jul DP1901 Fiscal report and source corpus; transmission/reparto bridge into DP1901",
       "linked_event_ids": [
         "PD-SP-EVT-0078",
         "PD-SP-EVT-0079",
@@ -12993,17 +12993,20 @@
     {
       "chain_id": "MF-CHAIN-05-DIP2-DP1901",
       "period": "2026",
-      "title_en": "DIP 2/2026, correction treatment and DP 1901/2026 report request",
-      "title_es": "DIP 2/2026, tratamiento de la corrección y petición de informe en DP 1901/2026",
+      "title_en": "DIP 2/2026 correction trail, full available-corpus digitisation and DP 1901/2026 29-Jul report / 14-Sep order",
+      "title_es": "DIP 2/2026: corrección, digitalización del corpus disponible e informe 29-jul / Auto 14-sep de DP 1901/2026",
       "master_ids": [
         "GC-FIS-017",
         "GC-CRI-008",
         "GC-FIS-033"
       ],
-      "relationship_status": "DOCUMENTED_COURT_TO_FISCALIA_REQUEST_REPORT_MISSING",
+      "relationship_status": "DOCUMENTED_DIPSOURCE_CORRECTION_AND_DP1901_FISCAL_REPORT_REFERENCED_CONTENT_AUTHOR_OPEN",
       "source_ids": [
-        "assets/data/fiscalia-response-correspondence.json",
-        "evidence/fiscalia/2026/MINISTERIO_FISCAL_WIDER_MATTER_EG745_UNITARY_EVIDENCE_ACTION_DIGEST_31AUG2026.md"
+        "evidence/fiscalia/dip-2-2026/README.md",
+        "evidence/fiscalia/dip-2-2026/full-text/actualizacion-11mar2026-public-transcription.md",
+        "evidence/fiscalia/dip-2-2026/full-text/registro-11mar2026-public-transcription.md",
+        "evidence/judicial/dp-1901-2026/full-text/auto-14sep2026-public-transcription.md",
+        "assets/data/fiscalia-response-correspondence.json"
       ],
       "event_ids": [
         "PD-SP-EVT-0078",
