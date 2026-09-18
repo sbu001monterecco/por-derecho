@@ -8,9 +8,9 @@
 
 The public professional register previously described Bernardo del Rosal Blasco and identified DRAS team members as former counsel. The controlled correction is:
 
-**PRE_ENGAGEMENT_REVIEW — NO RETAINED MANDATE ESTABLISHED.**
+**HISTORIC_PROFESSIONAL_REVIEW — SUBSTANTIVE PROFESSIONAL WORK DOCUMENTED.**
 
-Documented 2022 preliminary review, meetings and document-classification work are preserved.
+Documented 2022 substantive professional work, meetings and document-classification work are preserved. No current mandate is asserted; the precise contractual/retainer status is not characterised publicly.
 
 ## Dedicated public routes
 

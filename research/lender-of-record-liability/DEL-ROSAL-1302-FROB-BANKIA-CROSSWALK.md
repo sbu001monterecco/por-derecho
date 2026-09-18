@@ -10,12 +10,12 @@ The project-side professional register previously classified **Bernardo del Rosa
 
 The controlled position is now:
 
-- substantive **pre-engagement** review and meetings are documented in 2022;
+- substantive historic professional review/work and meetings are documented in 2022;
 - DRAS classified and ordered a substantial Concurso 36/2012 corpus and identified a later penal-analysis phase;
 - no public page should describe Bernardo del Rosal, Félix Adame or Natalia García as former retained counsel on this matter;
 - private correspondence, billing and native source identifiers remain private.
 
-Public classification: **PRE_ENGAGEMENT_REVIEW — NO RETAINED MANDATE ESTABLISHED**.
+Public classification: **HISTORIC_PROFESSIONAL_REVIEW — SUBSTANTIVE PROFESSIONAL WORK DOCUMENTED; NO CURRENT MANDATE ASSERTED; PRECISE CONTRACTUAL STATUS NOT CHARACTERISED PUBLICLY**.
 
 ## 2. The Del Rosal / Lightowler doctrinal source
 
@@ -41,7 +41,7 @@ The party complaint in the DI 248/2018 source family already set out a chain thr
 The 2018 filing used a broader legal proposition about the Bankia→SAREB transfer and the hotel/tourism nature of the collateral. The controlling 2026 position is narrower: do not state categorical illegality from the collateral label alone. Close the exact RD 1559/2012 art. 48 eligibility route, threshold, classification, valuation, transferred data and asset schedule.
 
 ### 2022
-The pre-engagement DRAS review received material expressly carrying **Bankia → SAREB → Promontoria → CAM**. No public source presently establishes that the BFA/FROB wording or the Del Rosal/Lightowler 2018 article was consciously connected to the Sun Rock facts during that preliminary work. Do not imply retrospective endorsement.
+The 2022 DRAS professional review/work received material expressly carrying **Bankia → SAREB → Promontoria → CAM**. No public source presently establishes that the BFA/FROB wording or the Del Rosal/Lightowler 2018 article was consciously connected to the Sun Rock facts during that preliminary work. Do not imply retrospective endorsement.
 
 ### 18 September 2026
 The doctrinal crosswalk is now made expressly: distinguish **asset assignment**, **own later conduct of each assignee**, and **legal-person structural succession** before applying CP 31 bis / CP 130.2 or civil ex delicto consequences.

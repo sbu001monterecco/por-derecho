@@ -7,16 +7,16 @@
     loading:'Cargando registro profesional…', failure:'No se pudo cargar el registro profesional.',
     showing:(n,t)=>`Mostrando ${n} de ${t} profesionales autorizados.`, none:'Sin resultados.',
     firm:'Firma / práctica', role:'Función', status:'Estado de evidencia', scope:'Ámbito documentado', id:'ID inmutable',
-    groups:{CURRENT_COUNSEL:'Abogados actuales',PRE_ENGAGEMENT_REVIEW:'Revisión pre-engagement · sin mandato retenido acreditado',FORMER_COUNSEL:'Abogados anteriores',FORMER_COUNSEL_COLLABORATOR:'Colaboradores jurídicos anteriores',FORMER_COUNSEL_ROLE_REVIEW:'Profesionales anteriores — alcance del mandato en revisión',PROCURADOR_CURRENT:'Procuradoras actuales',PROCURADOR_FORMER:'Procuradores/as anteriores'},
-    classifications:{OUR_CURRENT_PROFESSIONAL:'Profesional actual de nuestro lado',PRE_ENGAGEMENT_PROJECT_SIDE_PROFESSIONAL:'Profesional de revisión preliminar · sin mandato retenido acreditado',OUR_FORMER_PROFESSIONAL:'Profesional anterior de nuestro lado'},
-    note:'La inclusión en esta lista acredita una función profesional documentada, una revisión preliminar pre-engagement o una conexión profesional expresamente marcada como pendiente de cierre. PRE_ENGAGEMENT_REVIEW no equivale a abogado contratado o anterior. No convierte al profesional en parte del perímetro de propiedad/reclamación ni transfiere conducta o responsabilidad del cliente.'
+    groups:{CURRENT_COUNSEL:'Abogados actuales',HISTORIC_PROFESSIONAL_REVIEW:'Revisión profesional histórica · estatus contractual no caracterizado',FORMER_COUNSEL:'Abogados anteriores',FORMER_COUNSEL_COLLABORATOR:'Colaboradores jurídicos anteriores',FORMER_COUNSEL_ROLE_REVIEW:'Profesionales anteriores — alcance del mandato en revisión',PROCURADOR_CURRENT:'Procuradoras actuales',PROCURADOR_FORMER:'Procuradores/as anteriores'},
+    classifications:{OUR_CURRENT_PROFESSIONAL:'Profesional actual de nuestro lado',PROJECT_SIDE_HISTORIC_PROFESSIONAL:'Profesional histórico del lado del proyecto · alcance contractual no caracterizado',OUR_FORMER_PROFESSIONAL:'Profesional anterior de nuestro lado'},
+    note:'La inclusión en esta lista acredita una función profesional documentada, trabajo/revisión profesional histórica o una conexión profesional expresamente marcada como pendiente de cierre. HISTORIC_PROFESSIONAL_REVIEW no se presenta como mandato actual ni caracteriza públicamente el estatus contractual preciso. No convierte al profesional en parte del perímetro de propiedad/reclamación ni transfiere conducta o responsabilidad del cliente.'
   } : {
     loading:'Loading professional register…', failure:'The professional register could not be loaded.',
     showing:(n,t)=>`Showing ${n} of ${t} authorised professionals.`, none:'No results.',
     firm:'Firm / practice', role:'Role', status:'Evidence status', scope:'Documented scope', id:'Immutable ID',
-    groups:{CURRENT_COUNSEL:'Current lawyers',PRE_ENGAGEMENT_REVIEW:'Pre-engagement review · no retained mandate established',FORMER_COUNSEL:'Former lawyers',FORMER_COUNSEL_COLLABORATOR:'Former legal collaborators',FORMER_COUNSEL_ROLE_REVIEW:'Former professionals — mandate scope under review',PROCURADOR_CURRENT:'Current procuradoras',PROCURADOR_FORMER:'Former procuradores'},
-    classifications:{OUR_CURRENT_PROFESSIONAL:'Current project-side professional',PRE_ENGAGEMENT_PROJECT_SIDE_PROFESSIONAL:'Pre-engagement project-side professional · no retained mandate established',OUR_FORMER_PROFESSIONAL:'Former project-side professional'},
-    note:'Inclusion in this list records a documented professional role, a pre-engagement preliminary review or a professional connection expressly marked as awaiting closure. PRE_ENGAGEMENT_REVIEW does not mean retained or former counsel. It does not place the professional in the ownership/claimant perimeter and does not transfer client conduct or responsibility.'
+    groups:{CURRENT_COUNSEL:'Current lawyers',HISTORIC_PROFESSIONAL_REVIEW:'Historic professional review · contractual status not publicly characterised',FORMER_COUNSEL:'Former lawyers',FORMER_COUNSEL_COLLABORATOR:'Former legal collaborators',FORMER_COUNSEL_ROLE_REVIEW:'Former professionals — mandate scope under review',PROCURADOR_CURRENT:'Current procuradoras',PROCURADOR_FORMER:'Former procuradores'},
+    classifications:{OUR_CURRENT_PROFESSIONAL:'Current project-side professional',PROJECT_SIDE_HISTORIC_PROFESSIONAL:'Historic project-side professional · contractual status not publicly characterised',OUR_FORMER_PROFESSIONAL:'Former project-side professional'},
+    note:'Inclusion in this list records a documented professional role, documented historic professional work/review or a professional connection expressly marked as awaiting closure. HISTORIC_PROFESSIONAL_REVIEW does not assert a current mandate and does not publicly characterise the precise contractual status. It does not place the professional in the ownership/claimant perimeter and does not transfer client conduct or responsibility.'
   };
   const status = root.querySelector('[data-prof-status]');
   const search = root.querySelector('[data-prof-search]');
@@ -35,12 +35,12 @@
     const q = norm(search?.value || '');
     const records = (register.records || []).filter(r => !q || norm([r.public_name,r.role,r.track,r.evidence_status,r.matter_scope,...(r.firm_ids||[]).map(id=>organisationById.get(id)?.name||id)].join(' ')).includes(q));
     status.textContent = copy.showing(records.length, register.records.length);
-    const counts = {TOTAL:register.records.length,CURRENT_COUNSEL:0,PRE_ENGAGEMENT_REVIEW:0,FORMER_COUNSEL:0,PROCURADOR_CURRENT:0,PROCURADOR_FORMER:0};
-    register.records.forEach(r=>{if(r.track==='CURRENT_COUNSEL')counts.CURRENT_COUNSEL++;else if(r.track==='PRE_ENGAGEMENT_REVIEW')counts.PRE_ENGAGEMENT_REVIEW++;else if(r.track==='PROCURADOR_CURRENT')counts.PROCURADOR_CURRENT++;else if(r.track==='PROCURADOR_FORMER')counts.PROCURADOR_FORMER++;else counts.FORMER_COUNSEL++;});
+    const counts = {TOTAL:register.records.length,CURRENT_COUNSEL:0,HISTORIC_PROFESSIONAL_REVIEW:0,FORMER_COUNSEL:0,PROCURADOR_CURRENT:0,PROCURADOR_FORMER:0};
+    register.records.forEach(r=>{if(r.track==='CURRENT_COUNSEL')counts.CURRENT_COUNSEL++;else if(r.track==='HISTORIC_PROFESSIONAL_REVIEW')counts.HISTORIC_PROFESSIONAL_REVIEW++;else if(r.track==='PROCURADOR_CURRENT')counts.PROCURADOR_CURRENT++;else if(r.track==='PROCURADOR_FORMER')counts.PROCURADOR_FORMER++;else counts.FORMER_COUNSEL++;});
     stats.forEach(node=>node.textContent=counts[node.dataset.profStat]??0);
     list.replaceChildren();
     if (!records.length) { const p=document.createElement('p'); p.className='prof-empty'; p.textContent=copy.none; list.appendChild(p); return; }
-    const order=['CURRENT_COUNSEL','PRE_ENGAGEMENT_REVIEW','FORMER_COUNSEL','FORMER_COUNSEL_COLLABORATOR','FORMER_COUNSEL_ROLE_REVIEW','PROCURADOR_CURRENT','PROCURADOR_FORMER'];
+    const order=['CURRENT_COUNSEL','HISTORIC_PROFESSIONAL_REVIEW','FORMER_COUNSEL','FORMER_COUNSEL_COLLABORATOR','FORMER_COUNSEL_ROLE_REVIEW','PROCURADOR_CURRENT','PROCURADOR_FORMER'];
     for (const track of order) {
       const rows=records.filter(r=>r.track===track); if(!rows.length) continue;
       const section=document.createElement('section'); section.className='prof-group';
