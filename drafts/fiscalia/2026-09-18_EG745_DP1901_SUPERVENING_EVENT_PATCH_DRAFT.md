@@ -69,3 +69,29 @@ Request expressly:
 ## G. Attribution boundary
 
 Gil Marer and Aweswell Limited maintain their attributed adverse posture toward Ministerio Fiscal/Fiscalía and allege a wider institutional-neutralisation/protection mechanism. The repository and filing should state this allegation directly while preserving that the 29 July dismissal request, without its underlying report and corpus, is not itself proof of capture, prevaricación, coordination or criminal guilt.
+
+
+## H. Ground One bis — lack of a complainant-supplied name is not necessarily the end of attribution
+
+Add:
+
+The Decreto recurrido's concern about the absence of an irregularity attributable to a particular Fiscal should be reconciled with Articles 163, 164.1.b and 167 of the Reglamento del Ministerio Fiscal. Article 167 defines diligencias informativas as indispensable acts capable, among other purposes, of determining the identity of the presumed author or authors, and Article 167.3 permits Inspección to obtain documents and order appropriate steps. The appellant does not contend that opening such diligencias was automatic or mandatory. He requests a reasoned determination of why that identity-finding mechanism was or was not applicable where the registered source named six proceedings, specified functional acts and asked the institution holding reparto/routing records to identify the responsible actors.
+
+Official legal source: https://www.boe.es/buscar/act.php?id=BOE-A-2022-7184
+
+## I. Ground Six bis — asymmetric treatment / alleged de facto shielding effect
+
+Add:
+
+The source chain should be tested for institutional asymmetry, not merely outcome disagreement. DI 248/2018 evaluated the complaint against AC/CAM while expressly using the Ministerio Fiscal's already-adopted adverse Calificación position against the complainant and relying on judicial-supervision/privileged-creditor explanations. DI 113/2022 recorded the 7-Jun-2018 private-actor control/demolition/ownership allegations but channelled them through prior judicialisation/no-new-evidence reasoning. DI 22/2026 then adopted a prospective joinder-and-maintained-archive rule for later complaints described as the same facts. DIP 2/2026 used the 2-Mar ATLANTE no-appeal premise and the 11-Mar correction requires a treatment trace. DP 1901 now supplies a concrete 29-Jul prosecutorial archive request.
+
+Gil Marer/Aweswell allege that the cumulative practical effect operated as a prosecutorial shield for the private-actor perimeter. The controlled filing formulation is narrower: **documented asymmetric prosecutorial treatment with an alleged de facto protective effect**, requiring examination of whether the effect resulted from lawful disagreement, competence limits, error, institutional path dependence, negligence, improper partiality, instruction, conflict or knowing protection. No motive or liability is inferred from the pattern alone.
+
+The controlling cross-file matrix is:
+`evidence/fiscalia/2026/EG745_IMMINENT_FILING_INTERCONNECTIVITY_CONTROL_18SEP2026.md`.
+
+## J. Pre-sign interconnectivity and filing lock
+
+Before signature, confirm reciprocal source links across E.G. 745, DIP 2, DP 1901, the Ministerio Fiscal unitary/open-letter record and the Calificación parallel-lives record. Interconnectivity is navigation/evidence context, not procedural merger.
+
+**Do not file the 12-Sep predecessor unchanged. Do not mark the successor filed until the exact signed bytes and official receipt are preserved.**
