@@ -204,6 +204,24 @@ def main() -> int:
         if re.search(r"\b[0-9a-f]{16}\b", public_blob, re.I):
             fail("probable private Gmail/source identifier leaked into public register")
 
+        for crosswalk_path, markers in {
+            ROOT / "es" / "bernardo-del-rosal-frob-bankia-sun-rock" / "index.html": [
+                "Del Rosal / FROB–BFA–Bankia ↔ Sun Rock", "PRE_ENGAGEMENT_REVIEW", "LA LENTE COMÚN",
+                "Bankia → SAREB → PH122 → CAM", "escisión total posterior",
+            ],
+            ROOT / "en" / "bernardo-del-rosal-frob-bankia-sun-rock" / "index.html": [
+                "Del Rosal / FROB–BFA–Bankia ↔ Sun Rock", "PRE_ENGAGEMENT_REVIEW", "THE COMMON LENS",
+                "Bankia → SAREB → PH122 → CAM", "later total demerger",
+            ],
+            ROOT / "sitemap-lender-liability.xml": [
+                "es/bernardo-del-rosal-frob-bankia-sun-rock/", "en/bernardo-del-rosal-frob-bankia-sun-rock/",
+            ],
+        }.items():
+            require(crosswalk_path.is_file(), f"missing Del Rosal crosswalk publication: {crosswalk_path}")
+            blob = crosswalk_path.read_text(encoding="utf-8")
+            for marker in markers:
+                require(marker in blob, f"missing Del Rosal crosswalk marker {marker!r} in {crosswalk_path}")
+
         for path, markers in {
             ROOT / "es" / "profesionales-representantes" / "index.html": [
                 "PD-SP-LEGAL-PROF-001", "Profesionales y representantes", "legal-professionals-register-v1.json",
