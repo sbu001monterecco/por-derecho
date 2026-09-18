@@ -104,7 +104,14 @@ Continuity control: `archive/THREAD_DELETION_CONTINUITY_AUDIT_CEXP_MONTERECCO_PI
 - Ask for legal name, tax ID, recorded capacity, effective date, units/beds, source act and procedural status where those fields exist; distinguish establishment holder from operating undertaking.
 - Distinguish Montelanza, S.L.; Comunidad de Explotación del Complejo Sun Park (CEXP, H35997568); Monterecco Sun Park SL/Pink Canary Services SL (B76564517); and Comunidad de Propietarios del Complejo Sun Park (H76013184).
 - For GE-014212/2014, ask whether the party filing caused any Cabildo entry or act; if so, obtain that entry/act. If no corresponding record is held, request a formal certificate or signed statement of that limited absence.
-- For 3671/2022, 2984/2023, 17070/2023, 19995/2023, 7206/2024 and 4887/2025, request current procedural status and any existing final act. The 13 March 2026 report said only that 2984/2023 and 7206/2024 were pending then.
+- **18 Sep 2026 SAIP source completion:** the April disclosure has now been integrity-closed as six native ZIP families covering 3671/2022, 2984/2023, 17070/2023, 19995/2023, 7206/2024 and 4887/2025: 191 PDF occurrences / 190 unique binaries. The full occurrence register, hashes and criminal-context map are source-controlled under `assets/data/cabildo-six-zip-register-index-v1.json` and `assets/data/cabildo-saip-criminal-evidence-map-v1.json`.
+- 3671: title/authority requirements and adverse definitive Yaiza compatibility input are now located; no later final merits act is located in the six-ZIP corpus.
+- 2984: HNT's 4-star / 220-unit / 660-place request and Cabildo title/classification requirement are located; later compliance/final merits act remains unlocated.
+- 17070: RGT 2023-T15093 of 18 Oct 2023 records HNT/MYND at the then-recorded 1-star / 159-unit / 477-place configuration; do not expand that effect into universal finca title.
+- 19995: 4-star / 252 / 238 / 660 / 477 declaration/project and later toma de conocimiento are located; final technical verification remains separate.
+- 7206: the disclosed file expressly records 3671 and 2984 as pending/related and February 2025 communications state that a verification visit and corresponding resolution remained to be performed.
+- 4887: 301 / 299 / 660 / 598 is source-controlled as applicant-declared/requested absent a later verified final act.
+- Remaining requests should now be finite: missing final acts/verification, unit-by-unit title/authority closure, the two nested 3671 RARs, and fresh Registry evidence where current title is asserted.
 - If Cabildo is not competent for a requested record, ask it to identify or forward the request to the competent organ.
 
 ### Canary Islands tourism register / inspection
