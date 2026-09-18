@@ -74,13 +74,23 @@ def main() -> int:
     actual_notices = {event["event_id"]: event for event in communications["events"]
                       if event.get("source_batch_id") == "PD-SP-ORION-NOTICE-20260905"}
     require(actual_notices == expected_notices, "financial notice source cohort mismatch", errors)
-    event_ids = canonical_event_ids - excluded_authority_ids - set(expected_notices)
+    cajasiete_notice_ids = {
+        event["event_id"] for event in communications["events"]
+        if event.get("source_batch_id") == "PD-CAJASIETE-ACCOUNTABILITY-20260918"
+    }
+    require(
+        cajasiete_notice_ids == {"PD-SP-EVT-0179", "PD-SP-EVT-0180"},
+        "Cajasiete accountability source cohort mismatch",
+        errors,
+    )
+    event_ids = canonical_event_ids - excluded_authority_ids - set(expected_notices) - cajasiete_notice_ids
     projected_ids = {event["event_id"] for event in payload["events"]}
 
     require(payload.get("schema_version") == "1.0.0", "schema version changed", errors)
     require(payload.get("status") == "PUBLIC_SAFE_DERIVED_INTERCONNECTIVITY_PROJECTION", "projection status changed", errors)
     require(
-        len(canonical_event_ids) == 313 + len(expected_notices)
+        len(canonical_event_ids) == 313 + len(expected_notices) + len(cajasiete_notice_ids)
+        and len(cajasiete_notice_ids) == 2
         and len(excluded_authority_ids) == 17
         and excluded_authority_ids <= canonical_event_ids
         and len(event_ids) == len(projected_ids) == 296
