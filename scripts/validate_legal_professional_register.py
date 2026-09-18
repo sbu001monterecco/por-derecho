@@ -256,7 +256,7 @@ def main() -> int:
             f"({counts['PERSON']} people; {counts['ORGANISATION']} organisations)"
         )
         print(" - professional roster: 40")
-        print(" - current lawyers: 3; former/review lawyers: 31")
+        print(" - current lawyers: 3; former/review lawyers: 28; pre-engagement review: 3")
         print(" - procuradores/as: 2 current + 4 former")
         print(" - Adriana Hernández Díaz: court-record-verified procuradora")
         print(" - source-name variants: preserved")
