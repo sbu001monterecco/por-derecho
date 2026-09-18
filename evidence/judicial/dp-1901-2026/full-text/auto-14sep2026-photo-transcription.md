@@ -1,5 +1,7 @@
 # Auto de 14 de septiembre de 2026 — DP 1901/2026
 
+> **Legacy path control:** this same-source transcription was created by the partial 18-September continuity update. The canonical CI-validated public transcription is `auto-14sep2026-public-transcription.md`. Both carry evidence ID `EVID-2026-DP1901-AUTO-14SEP-001` and the same three source-photo SHA-256 values; they must not be counted as separate evidence.
+
 - Evidence ID: `EVID-2026-DP1901-AUTO-14SEP-001`
 - Court: Plaza n.º 6 del Tribunal de Instancia (Sección Instrucción), Las Palmas de Gran Canaria
 - Procedure: Diligencias Previas 1901/2026
