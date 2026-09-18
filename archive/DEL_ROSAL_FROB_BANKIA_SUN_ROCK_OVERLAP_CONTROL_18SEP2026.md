@@ -2,7 +2,7 @@
 
 **Date:** 18 September 2026  
 **Correction:** CR-159  
-**Status:** prepared on GitHub branch for review and merge.
+**Status:** publication control; merge and public-edge verification are recorded separately in the repository deployment history.
 
 ## Corrected relationship status
 
