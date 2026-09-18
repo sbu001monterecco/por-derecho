@@ -1,0 +1,120 @@
+name: JSP BOC register closure review
+on:
+  push:
+    branches: [worker/jsp-boc-six-sections-20260905]
+    paths: ['.github/workflows/jsp-boc-register-closure-review.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  closure-review:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - run: python3 -m pip install jsonschema beautifulsoup4 markdown pymupdf==1.28.2 pillow==12.3.0
+      - run: command -v pdftotext || (sudo apt-get update -qq && sudo apt-get install -y poppler-utils)
+      - name: Prepare isolated reconciliation and prove all event objects preserved
+        run: |
+          mkdir -p /tmp/jsp-boc-closure
+          git worktree add --detach /tmp/jsp-boc-closure/qa HEAD
+          python3 - <<'PY'
+          import pathlib,sys,subprocess,json,hashlib,copy,difflib
+          root=pathlib.Path('/tmp/jsp-boc-closure/qa');out=root.parent/'files';out.mkdir();sys.path.insert(0,str(root/'scripts'))
+          path=root/'scripts/reconcile_institutional_communications.py';before=path.read_text();needle='KEY_EVENTS.extend(load_notice_events(REPO_ROOT))'
+          assert before.count(needle)==1 and 'load_boc_notice_events' not in before
+          after=before.replace(needle,needle+'\n\n# BOC308/07: fixed source-reported historical cohort; no new filing.\nfrom load_jsp_boc_notice_events import load_boc_notice_events\nKEY_EVENTS.extend(load_boc_notice_events(REPO_ROOT))')
+          path.write_text(after);diffs=list(difflib.unified_diff(before.splitlines(True),after.splitlines(True),fromfile=str(path),tofile=str(path)))
+          from load_jsp_boc_notice_events import load_boc_notice_events
+          source_events=load_boc_notice_events(root)
+          reg_path=root/'assets/data/institutional-communications-register-v1.json';old=json.loads(reg_path.read_text());old_by_id={e['event_id']:e for e in old['events']}
+          assert len(source_events)==12 and all(old_by_id[e['event_id']]==e for e in source_events),'source-derived BOC rows differ from reviewed rows'
+          cp_path=root/'ops/INSTITUTIONAL_COMMUNICATIONS_SCAN_CHECKPOINT.json';old_cp=json.loads(cp_path.read_text())
+          subprocess.run(['python3','scripts/reconcile_institutional_communications.py','--apply'],cwd=root,check=True)
+          new=json.loads(reg_path.read_text());new_by_id={e['event_id']:e for e in new['events']}
+          assert old_by_id==new_by_id,'Never drop or change any previously reviewed event'
+          a=copy.deepcopy(old);b=copy.deepcopy(new);a.pop('events');b.pop('events');assert a==b,'Only deterministic order may change the register envelope'
+          new_cp=json.loads(cp_path.read_text());a=copy.deepcopy(old_cp);b=copy.deepcopy(new_cp);a.pop('register_sha256');b.pop('register_sha256');assert a==b,'No scan history or unrelated checkpoint fact may change'
+          # Preserve all 333 baseline rows and every envelope field; allow only
+          # the 12 historical events independently reproduced from the BOC source.
+          cnmv=root/'scripts/build_cnmv_interim_measures_20260905.py';c_before=cnmv.read_text()
+          needle="    ck(reg==original(D['canonical_register']),'Canonical register modified')\n    ck(len(json.loads(reg)['events'])==333,'Canonical event count')"
+          replacement='\n'.join([
+            "    baseline_reg=json.loads(original(D['canonical_register']))",
+            "    current_reg=json.loads(reg)",
+            "    ck(len(baseline_reg['events'])==333,'Frozen CNMV event count')",
+            "    allowed_reg=json.loads(json.dumps(baseline_reg))",
+            "    extension=[]",
+            "    if current_reg!=baseline_reg:",
+            "        from load_jsp_boc_notice_events import load_boc_notice_events",
+            "        extension=load_boc_notice_events(ROOT)",
+            "        ck(len(extension)==12,'Reviewed BOC extension count')",
+            "        ck(not ({e['event_id'] for e in baseline_reg['events']} & {e['event_id'] for e in extension}),'BOC ID collision')",
+            "        allowed_reg['events']=sorted(baseline_reg['events']+extension,key=lambda e:e['event_id'])",
+            "        allowed_reg['denominator_control']['event_rows_total']+=len(extension)",
+            "        allowed_reg['denominator_control']['curated_source_proved_events']+=len(extension)",
+            "    ck(current_reg==allowed_reg,'Canonical register modified')",
+            "    ck(len(current_reg['events'])==333+len(extension),'Canonical event count')"
+          ])
+          assert needle in c_before;c_after=c_before.replace(needle,replacement);compile(c_after,str(cnmv),'exec');cnmv.write_text(c_after)
+          diffs.extend(difflib.unified_diff(c_before.splitlines(True),c_after.splitlines(True),fromfile=str(cnmv),tofile=str(cnmv)))
+          frozen=json.loads(subprocess.check_output(['git','show','66003743d2cb3a1807c1f3765c530bf639857da3:assets/data/institutional-communications-register-v1.json'],cwd=root,text=True))
+          expected=copy.deepcopy(frozen);expected['events']=sorted(frozen['events']+source_events,key=lambda e:e['event_id']);expected['denominator_control']['event_rows_total']+=12;expected['denominator_control']['curated_source_proved_events']+=12
+          assert expected==new and len(frozen['events'])==333
+          mutants=[]
+          bad=copy.deepcopy(new);bad['events'][0]['public_summary']='ALTERED';mutants.append(bad)
+          bad=copy.deepcopy(new);bad['events'].pop();mutants.append(bad)
+          bad=copy.deepcopy(new);next(e for e in bad['events']if e['event_id']=='PD-SP-EVT-0188')['evidence_state']['merits']='FINAL_SANCTION';mutants.append(bad)
+          bad=copy.deepcopy(new);bad['authority_scan_control']['universal_completeness_claim']=True;mutants.append(bad)
+          assert all(bad!=expected for bad in mutants)
+          manifest_path=root/'assets/data/jsp-boc-release-manifest-20260905.json';manifest=json.loads(manifest_path.read_text())
+          def row(rel):
+              data=(root/rel).read_bytes();return {'path':rel,'bytes':len(data),'sha256':hashlib.sha256(data).hexdigest(),'git_blob':hashlib.sha1(b'blob '+str(len(data)).encode()+b'\0'+data).hexdigest()}
+          edits=['scripts/reconcile_institutional_communications.py','assets/data/institutional-communications-register-v1.json','ops/INSTITUTIONAL_COMMUNICATIONS_SCAN_CHECKPOINT.json','scripts/build_cnmv_interim_measures_20260905.py']
+          for rel in edits:
+              manifest['files']=[r for r in manifest['files']if r['path']!=rel];manifest['files'].append(row(rel))
+          manifest_path.write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n')
+          edits.append('assets/data/jsp-boc-release-manifest-20260905.json');objects=[]
+          for rel in edits:
+              target=out/rel;target.parent.mkdir(parents=True,exist_ok=True);target.write_bytes((root/rel).read_bytes());objects.append(row(rel))
+          (out/'OBJECTS.json').write_text(json.dumps(objects,indent=2)+'\n')
+          (root.parent/'closure-proof.json').write_text(json.dumps({'source_events':12,'event_objects_preserved':len(new_by_id),'new_ids':False,'prior_event_content_changes':0,'prior_envelope_changes':0,'checkpoint_change':'register_sha256 only','negative_mutations_rejected':len(mutants),'frozen_cnmv_rows_preserved':333,'register_sha256':new_cp['register_sha256'],'objects':objects},indent=2))
+          (root.parent/'reconciler.diff').write_text(''.join(diffs))
+          PY
+          git -C /tmp/jsp-boc-closure/qa -c user.name='Local review only' -c user.email='review@example.invalid' add -A
+          git -C /tmp/jsp-boc-closure/qa -c user.name='Local review only' -c user.email='review@example.invalid' commit -m 'Isolated deterministic checkpoint closure review; not pushed'
+      - name: Run unchanged communications and required publication/release gates
+        run: |
+          cd /tmp/jsp-boc-closure/qa
+          python3 - <<'PY'
+          import pathlib,subprocess,json,os
+          root=pathlib.Path.cwd();out=root.parent/'checks';out.mkdir();env=dict(os.environ)
+          env['GITHUB_BASE_SHA']=subprocess.check_output(['git','rev-parse','origin/main'],text=True).strip();env['GITHUB_HEAD_SHA']=subprocess.check_output(['git','rev-parse','HEAD'],text=True).strip();env['BASE_SHA']=env['GITHUB_BASE_SHA']
+          jobs=[['python3','scripts/reconcile_institutional_communications.py','--check'],['python3','scripts/validate_institutional_communications.py'],['python3','scripts/validate_publication_integrity.py'],['python3','scripts/check_release_acceptance.py']]
+          results=[]
+          for command in jobs:
+              p=subprocess.run(command,cwd=root,text=True,capture_output=True,env=env);name=pathlib.Path(command[1]).stem;(out/(name+'.log')).write_text(p.stdout+'\n'+p.stderr);results.append({'check':name,'exit':p.returncode,'tail':(p.stdout+'\n'+p.stderr)[-6000:]})
+          (out/'summary.json').write_text(json.dumps(results,indent=2));print(json.dumps(results,indent=2))
+          assert all(r['exit']==0 for r in results),'Review failed; artifact records failures and is not a publication permit'
+          PY
+      - name: Prove primary checkout unchanged
+        if: always()
+        run: git diff --exit-code && git diff --cached --exit-code
+      - uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
+        if: always()
+        with:
+          name: jsp-boc-register-closure
+          path: |
+            /tmp/jsp-boc-closure/files
+            /tmp/jsp-boc-closure/checks
+            /tmp/jsp-boc-closure/closure-proof.json
+            /tmp/jsp-boc-closure/reconciler.diff
+            /tmp/pd-release-acceptance
+            /tmp/ci-control-plane
+          retention-days: 30
+          if-no-files-found: error
+# No authenticated mutation. Five prepared files require reviewed exact-object
+# admission, actual PR checks, a controller permit, merge and live readback.

@@ -46,10 +46,10 @@
   "control_date": "2026-09-01",
   "denominator_control": {
     "arithmetic_check": "75 detailed + 22 metadata-only = 97 reported total",
-    "curated_source_proved_events": 102,
+    "curated_source_proved_events": 114,
     "detailed_baseline_receipt_rows_expected": 75,
     "detailed_baseline_receipt_rows_registered": 75,
-    "event_rows_total": 333,
+    "event_rows_total": 345,
     "mailbox_draft_rows": 3,
     "mailbox_inbound_email_rows": 101,
     "mailbox_outbound_email_rows": 42,
@@ -16858,6 +16858,558 @@
       "subject_text_published": false,
       "transport_link_state": "THIS_ROW_IS_THE_TRANSPORT_LAYER",
       "transport_state": "RECEIVED_EMAIL_LOCATED"
+    },
+    {
+      "event_id": "PD-SP-EVT-0179",
+      "cohort": "CURATED_SOURCE_PROVED_EVENT",
+      "layer": "OFFICIAL_ACT_OR_CORRESPONDENCE",
+      "source_key": "BOC:2008/245/4927:inspection-20754",
+      "record_type": "OFFICIAL_ACT_UNCLASSIFIED",
+      "event_date": "2006-09-20",
+      "direction": "INBOUND_FROM_INSTITUTION",
+      "channel": "HISTORICAL_OFFICIAL_GAZETTE_RECITAL_NOT_DELIVERY_TO_GIL",
+      "office": "Historical Dirección General de Ordenación y Promoción Turística — Canarias",
+      "official_reference": "BOC245/2008 notice4927; expediente308/07; inspection-20754",
+      "matter_references": [
+        "PD-JSP-INC-2017-01",
+        "JSP-DOC-017",
+        "308/07"
+      ],
+      "source_integrity": {
+        "status": "NATIVE_OFFICIAL_GAZETTE_CAPTURE_WITH_REPORTED_UNDERLYING_ACTS",
+        "repository_anchor": "assets/evidence/jsp-2017/BOC-2008-245-4927.pdf",
+        "sha256": "21d92223ac38b894054cc4ef70d7073df7d81de8da8ed2d53cc813e159041fc0"
+      },
+      "evidence_state": {
+        "transmission": "OFFICIAL_PUBLICATION_LOCATED; UNDERLYING ACT AS REPORTED",
+        "registration": "NO_SEPARATE_RECEIPT_INFERRED",
+        "filing": "HISTORICAL_SOURCE_RECITAL_NOT_A_NEW_FILING",
+        "destination": "HISTORICAL_TOURISM_FILE_AND_MONTE_LANZA; NOT_GIL",
+        "delivery": "NO_SERVICE_ON_GIL_OR_NEW_SERVICE_CLAIM",
+        "internal_association": "ONLY_THE_308_07_ASSOCIATION_IN_THE_NOTICE",
+        "substantive_examination": "ONLY_AS_RECORDED_IN_THE_PROPOSAL",
+        "merits": "PROPOSED_SANCTION_NOT_FINAL_OUTCOME"
+      },
+      "proves": [
+        "The official notice records this dated act; original inspection/representation records remain separately recoverable."
+      ],
+      "does_not_prove": [
+        "Final sanction, service on Gil, guilt, complete source dossier, current office, later ownership or responsibility of related people."
+      ],
+      "public_summary": "Inspection 20754, reported in the notice",
+      "public_summary_es": "Inspección 20754, referida en el anuncio",
+      "attribution_state": "INSTITUTIONAL_NOTICE_NO_PERSONAL_SIGNATORY_ASSERTED",
+      "linked_transport_event_ids": [],
+      "transport_link_state": "HISTORICAL_RECITAL_NOT_MAILBOX_TRANSPORT",
+      "proof_level": "OFFICIAL_NOTICE_DIRECT; UNDERLYING_RECORD_NOT_NEWLY_OBTAINED",
+      "canonical_anchor_es": "es/jsp-montelanza-concurso-liquidacion/#communication-PD-SP-EVT-0179",
+      "canonical_anchor_en": "en/jsp-montelanza-insolvency-liquidation/#communication-PD-SP-EVT-0179"
+    },
+    {
+      "event_id": "PD-SP-EVT-0180",
+      "cohort": "CURATED_SOURCE_PROVED_EVENT",
+      "layer": "OFFICIAL_ACT_OR_CORRESPONDENCE",
+      "source_key": "BOC:2008/245/4927:inspection-21200",
+      "record_type": "OFFICIAL_ACT_UNCLASSIFIED",
+      "event_date": "2007-01-24",
+      "direction": "INBOUND_FROM_INSTITUTION",
+      "channel": "HISTORICAL_OFFICIAL_GAZETTE_RECITAL_NOT_DELIVERY_TO_GIL",
+      "office": "Historical Dirección General de Ordenación y Promoción Turística — Canarias",
+      "official_reference": "BOC245/2008 notice4927; expediente308/07; inspection-21200",
+      "matter_references": [
+        "PD-JSP-INC-2017-01",
+        "JSP-DOC-017",
+        "308/07"
+      ],
+      "source_integrity": {
+        "status": "NATIVE_OFFICIAL_GAZETTE_CAPTURE_WITH_REPORTED_UNDERLYING_ACTS",
+        "repository_anchor": "assets/evidence/jsp-2017/BOC-2008-245-4927.pdf",
+        "sha256": "21d92223ac38b894054cc4ef70d7073df7d81de8da8ed2d53cc813e159041fc0"
+      },
+      "evidence_state": {
+        "transmission": "OFFICIAL_PUBLICATION_LOCATED; UNDERLYING ACT AS REPORTED",
+        "registration": "NO_SEPARATE_RECEIPT_INFERRED",
+        "filing": "HISTORICAL_SOURCE_RECITAL_NOT_A_NEW_FILING",
+        "destination": "HISTORICAL_TOURISM_FILE_AND_MONTE_LANZA; NOT_GIL",
+        "delivery": "NO_SERVICE_ON_GIL_OR_NEW_SERVICE_CLAIM",
+        "internal_association": "ONLY_THE_308_07_ASSOCIATION_IN_THE_NOTICE",
+        "substantive_examination": "ONLY_AS_RECORDED_IN_THE_PROPOSAL",
+        "merits": "PROPOSED_SANCTION_NOT_FINAL_OUTCOME"
+      },
+      "proves": [
+        "The official notice records this dated act; original inspection/representation records remain separately recoverable."
+      ],
+      "does_not_prove": [
+        "Final sanction, service on Gil, guilt, complete source dossier, current office, later ownership or responsibility of related people."
+      ],
+      "public_summary": "Inspection 21200, reported in the notice",
+      "public_summary_es": "Inspección 21200, referida en el anuncio",
+      "attribution_state": "INSTITUTIONAL_NOTICE_NO_PERSONAL_SIGNATORY_ASSERTED",
+      "linked_transport_event_ids": [],
+      "transport_link_state": "HISTORICAL_RECITAL_NOT_MAILBOX_TRANSPORT",
+      "proof_level": "OFFICIAL_NOTICE_DIRECT; UNDERLYING_RECORD_NOT_NEWLY_OBTAINED",
+      "canonical_anchor_es": "es/jsp-montelanza-concurso-liquidacion/#communication-PD-SP-EVT-0180",
+      "canonical_anchor_en": "en/jsp-montelanza-insolvency-liquidation/#communication-PD-SP-EVT-0180"
+    },
+    {
+      "event_id": "PD-SP-EVT-0181",
+      "cohort": "CURATED_SOURCE_PROVED_EVENT",
+      "layer": "OFFICIAL_ACT_OR_CORRESPONDENCE",
+      "source_key": "BOC:2008/245/4927:inspection-21016",
+      "record_type": "OFFICIAL_ACT_UNCLASSIFIED",
+      "event_date": "2007-02-13",
+      "direction": "INBOUND_FROM_INSTITUTION",
+      "channel": "HISTORICAL_OFFICIAL_GAZETTE_RECITAL_NOT_DELIVERY_TO_GIL",
+      "office": "Historical Dirección General de Ordenación y Promoción Turística — Canarias",
+      "official_reference": "BOC245/2008 notice4927; expediente308/07; inspection-21016",
+      "matter_references": [
+        "PD-JSP-INC-2017-01",
+        "JSP-DOC-017",
+        "308/07"
+      ],
+      "source_integrity": {
+        "status": "NATIVE_OFFICIAL_GAZETTE_CAPTURE_WITH_REPORTED_UNDERLYING_ACTS",
+        "repository_anchor": "assets/evidence/jsp-2017/BOC-2008-245-4927.pdf",
+        "sha256": "21d92223ac38b894054cc4ef70d7073df7d81de8da8ed2d53cc813e159041fc0"
+      },
+      "evidence_state": {
+        "transmission": "OFFICIAL_PUBLICATION_LOCATED; UNDERLYING ACT AS REPORTED",
+        "registration": "NO_SEPARATE_RECEIPT_INFERRED",
+        "filing": "HISTORICAL_SOURCE_RECITAL_NOT_A_NEW_FILING",
+        "destination": "HISTORICAL_TOURISM_FILE_AND_MONTE_LANZA; NOT_GIL",
+        "delivery": "NO_SERVICE_ON_GIL_OR_NEW_SERVICE_CLAIM",
+        "internal_association": "ONLY_THE_308_07_ASSOCIATION_IN_THE_NOTICE",
+        "substantive_examination": "ONLY_AS_RECORDED_IN_THE_PROPOSAL",
+        "merits": "PROPOSED_SANCTION_NOT_FINAL_OUTCOME"
+      },
+      "proves": [
+        "The official notice records this dated act; original inspection/representation records remain separately recoverable."
+      ],
+      "does_not_prove": [
+        "Final sanction, service on Gil, guilt, complete source dossier, current office, later ownership or responsibility of related people."
+      ],
+      "public_summary": "Inspection 21016 and Viajes Marsans document request",
+      "public_summary_es": "Inspección 21016 y requerimiento documental Viajes Marsans",
+      "attribution_state": "INSTITUTIONAL_NOTICE_NO_PERSONAL_SIGNATORY_ASSERTED",
+      "linked_transport_event_ids": [],
+      "transport_link_state": "HISTORICAL_RECITAL_NOT_MAILBOX_TRANSPORT",
+      "proof_level": "OFFICIAL_NOTICE_DIRECT; UNDERLYING_RECORD_NOT_NEWLY_OBTAINED",
+      "canonical_anchor_es": "es/jsp-montelanza-concurso-liquidacion/#communication-PD-SP-EVT-0181",
+      "canonical_anchor_en": "en/jsp-montelanza-insolvency-liquidation/#communication-PD-SP-EVT-0181"
+    },
+    {
+      "event_id": "PD-SP-EVT-0182",
+      "cohort": "CURATED_SOURCE_PROVED_EVENT",
+      "layer": "OFFICIAL_ACT_OR_CORRESPONDENCE",
+      "source_key": "BOC:2008/245/4927:inspection-21417",
+      "record_type": "OFFICIAL_ACT_UNCLASSIFIED",
+      "event_date": "2007-04-11",
+      "direction": "INBOUND_FROM_INSTITUTION",
+      "channel": "HISTORICAL_OFFICIAL_GAZETTE_RECITAL_NOT_DELIVERY_TO_GIL",
+      "office": "Historical Dirección General de Ordenación y Promoción Turística — Canarias",
+      "official_reference": "BOC245/2008 notice4927; expediente308/07; inspection-21417",
+      "matter_references": [
+        "PD-JSP-INC-2017-01",
+        "JSP-DOC-017",
+        "308/07"
+      ],
+      "source_integrity": {
+        "status": "NATIVE_OFFICIAL_GAZETTE_CAPTURE_WITH_REPORTED_UNDERLYING_ACTS",
+        "repository_anchor": "assets/evidence/jsp-2017/BOC-2008-245-4927.pdf",
+        "sha256": "21d92223ac38b894054cc4ef70d7073df7d81de8da8ed2d53cc813e159041fc0"
+      },
+      "evidence_state": {
+        "transmission": "OFFICIAL_PUBLICATION_LOCATED; UNDERLYING ACT AS REPORTED",
+        "registration": "NO_SEPARATE_RECEIPT_INFERRED",
+        "filing": "HISTORICAL_SOURCE_RECITAL_NOT_A_NEW_FILING",
+        "destination": "HISTORICAL_TOURISM_FILE_AND_MONTE_LANZA; NOT_GIL",
+        "delivery": "NO_SERVICE_ON_GIL_OR_NEW_SERVICE_CLAIM",
+        "internal_association": "ONLY_THE_308_07_ASSOCIATION_IN_THE_NOTICE",
+        "substantive_examination": "ONLY_AS_RECORDED_IN_THE_PROPOSAL",
+        "merits": "PROPOSED_SANCTION_NOT_FINAL_OUTCOME"
+      },
+      "proves": [
+        "The official notice records this dated act; original inspection/representation records remain separately recoverable."
+      ],
+      "does_not_prove": [
+        "Final sanction, service on Gil, guilt, complete source dossier, current office, later ownership or responsibility of related people."
+      ],
+      "public_summary": "Inspection 21417, reported in the notice",
+      "public_summary_es": "Inspección 21417, referida en el anuncio",
+      "attribution_state": "INSTITUTIONAL_NOTICE_NO_PERSONAL_SIGNATORY_ASSERTED",
+      "linked_transport_event_ids": [],
+      "transport_link_state": "HISTORICAL_RECITAL_NOT_MAILBOX_TRANSPORT",
+      "proof_level": "OFFICIAL_NOTICE_DIRECT; UNDERLYING_RECORD_NOT_NEWLY_OBTAINED",
+      "canonical_anchor_es": "es/jsp-montelanza-concurso-liquidacion/#communication-PD-SP-EVT-0182",
+      "canonical_anchor_en": "en/jsp-montelanza-insolvency-liquidation/#communication-PD-SP-EVT-0182"
+    },
+    {
+      "event_id": "PD-SP-EVT-0183",
+      "cohort": "CURATED_SOURCE_PROVED_EVENT",
+      "layer": "OFFICIAL_ACT_OR_CORRESPONDENCE",
+      "source_key": "BOC:2008/245/4927:inspection-21878",
+      "record_type": "OFFICIAL_ACT_UNCLASSIFIED",
+      "event_date": "2007-07-04",
+      "direction": "INBOUND_FROM_INSTITUTION",
+      "channel": "HISTORICAL_OFFICIAL_GAZETTE_RECITAL_NOT_DELIVERY_TO_GIL",
+      "office": "Historical Dirección General de Ordenación y Promoción Turística — Canarias",
+      "official_reference": "BOC245/2008 notice4927; expediente308/07; inspection-21878",
+      "matter_references": [
+        "PD-JSP-INC-2017-01",
+        "JSP-DOC-017",
+        "308/07"
+      ],
+      "source_integrity": {
+        "status": "NATIVE_OFFICIAL_GAZETTE_CAPTURE_WITH_REPORTED_UNDERLYING_ACTS",
+        "repository_anchor": "assets/evidence/jsp-2017/BOC-2008-245-4927.pdf",
+        "sha256": "21d92223ac38b894054cc4ef70d7073df7d81de8da8ed2d53cc813e159041fc0"
+      },
+      "evidence_state": {
+        "transmission": "OFFICIAL_PUBLICATION_LOCATED; UNDERLYING ACT AS REPORTED",
+        "registration": "NO_SEPARATE_RECEIPT_INFERRED",
+        "filing": "HISTORICAL_SOURCE_RECITAL_NOT_A_NEW_FILING",
+        "destination": "HISTORICAL_TOURISM_FILE_AND_MONTE_LANZA; NOT_GIL",
+        "delivery": "NO_SERVICE_ON_GIL_OR_NEW_SERVICE_CLAIM",
+        "internal_association": "ONLY_THE_308_07_ASSOCIATION_IN_THE_NOTICE",
+        "substantive_examination": "ONLY_AS_RECORDED_IN_THE_PROPOSAL",
+        "merits": "PROPOSED_SANCTION_NOT_FINAL_OUTCOME"
+      },
+      "proves": [
+        "The official notice records this dated act; original inspection/representation records remain separately recoverable."
+      ],
+      "does_not_prove": [
+        "Final sanction, service on Gil, guilt, complete source dossier, current office, later ownership or responsibility of related people."
+      ],
+      "public_summary": "Inspection 21878, reported in the notice",
+      "public_summary_es": "Inspección 21878, referida en el anuncio",
+      "attribution_state": "INSTITUTIONAL_NOTICE_NO_PERSONAL_SIGNATORY_ASSERTED",
+      "linked_transport_event_ids": [],
+      "transport_link_state": "HISTORICAL_RECITAL_NOT_MAILBOX_TRANSPORT",
+      "proof_level": "OFFICIAL_NOTICE_DIRECT; UNDERLYING_RECORD_NOT_NEWLY_OBTAINED",
+      "canonical_anchor_es": "es/jsp-montelanza-concurso-liquidacion/#communication-PD-SP-EVT-0183",
+      "canonical_anchor_en": "en/jsp-montelanza-insolvency-liquidation/#communication-PD-SP-EVT-0183"
+    },
+    {
+      "event_id": "PD-SP-EVT-0184",
+      "cohort": "CURATED_SOURCE_PROVED_EVENT",
+      "layer": "OFFICIAL_ACT_OR_CORRESPONDENCE",
+      "source_key": "BOC:2008/245/4927:inspection-22715",
+      "record_type": "OFFICIAL_ACT_UNCLASSIFIED",
+      "event_date": "2008-02-14",
+      "direction": "INBOUND_FROM_INSTITUTION",
+      "channel": "HISTORICAL_OFFICIAL_GAZETTE_RECITAL_NOT_DELIVERY_TO_GIL",
+      "office": "Historical Dirección General de Ordenación y Promoción Turística — Canarias",
+      "official_reference": "BOC245/2008 notice4927; expediente308/07; inspection-22715",
+      "matter_references": [
+        "PD-JSP-INC-2017-01",
+        "JSP-DOC-017",
+        "308/07"
+      ],
+      "source_integrity": {
+        "status": "NATIVE_OFFICIAL_GAZETTE_CAPTURE_WITH_REPORTED_UNDERLYING_ACTS",
+        "repository_anchor": "assets/evidence/jsp-2017/BOC-2008-245-4927.pdf",
+        "sha256": "21d92223ac38b894054cc4ef70d7073df7d81de8da8ed2d53cc813e159041fc0"
+      },
+      "evidence_state": {
+        "transmission": "OFFICIAL_PUBLICATION_LOCATED; UNDERLYING ACT AS REPORTED",
+        "registration": "NO_SEPARATE_RECEIPT_INFERRED",
+        "filing": "HISTORICAL_SOURCE_RECITAL_NOT_A_NEW_FILING",
+        "destination": "HISTORICAL_TOURISM_FILE_AND_MONTE_LANZA; NOT_GIL",
+        "delivery": "NO_SERVICE_ON_GIL_OR_NEW_SERVICE_CLAIM",
+        "internal_association": "ONLY_THE_308_07_ASSOCIATION_IN_THE_NOTICE",
+        "substantive_examination": "ONLY_AS_RECORDED_IN_THE_PROPOSAL",
+        "merits": "PROPOSED_SANCTION_NOT_FINAL_OUTCOME"
+      },
+      "proves": [
+        "The official notice records this dated act; original inspection/representation records remain separately recoverable."
+      ],
+      "does_not_prove": [
+        "Final sanction, service on Gil, guilt, complete source dossier, current office, later ownership or responsibility of related people."
+      ],
+      "public_summary": "Inspection 22715, reported in the notice",
+      "public_summary_es": "Inspección 22715, referida en el anuncio",
+      "attribution_state": "INSTITUTIONAL_NOTICE_NO_PERSONAL_SIGNATORY_ASSERTED",
+      "linked_transport_event_ids": [],
+      "transport_link_state": "HISTORICAL_RECITAL_NOT_MAILBOX_TRANSPORT",
+      "proof_level": "OFFICIAL_NOTICE_DIRECT; UNDERLYING_RECORD_NOT_NEWLY_OBTAINED",
+      "canonical_anchor_es": "es/jsp-montelanza-concurso-liquidacion/#communication-PD-SP-EVT-0184",
+      "canonical_anchor_en": "en/jsp-montelanza-insolvency-liquidation/#communication-PD-SP-EVT-0184"
+    },
+    {
+      "event_id": "PD-SP-EVT-0185",
+      "cohort": "CURATED_SOURCE_PROVED_EVENT",
+      "layer": "OFFICIAL_ACT_OR_CORRESPONDENCE",
+      "source_key": "BOC:2008/245/4927:initiation",
+      "record_type": "OFFICIAL_ACT_UNCLASSIFIED",
+      "event_date": "2008-08-04",
+      "direction": "INBOUND_FROM_INSTITUTION",
+      "channel": "HISTORICAL_OFFICIAL_GAZETTE_RECITAL_NOT_DELIVERY_TO_GIL",
+      "office": "Historical Dirección General de Ordenación y Promoción Turística — Canarias",
+      "official_reference": "BOC245/2008 notice4927; expediente308/07; initiation",
+      "matter_references": [
+        "PD-JSP-INC-2017-01",
+        "JSP-DOC-017",
+        "308/07"
+      ],
+      "source_integrity": {
+        "status": "NATIVE_OFFICIAL_GAZETTE_CAPTURE_WITH_REPORTED_UNDERLYING_ACTS",
+        "repository_anchor": "assets/evidence/jsp-2017/BOC-2008-245-4927.pdf",
+        "sha256": "21d92223ac38b894054cc4ef70d7073df7d81de8da8ed2d53cc813e159041fc0"
+      },
+      "evidence_state": {
+        "transmission": "OFFICIAL_PUBLICATION_LOCATED; UNDERLYING ACT AS REPORTED",
+        "registration": "NO_SEPARATE_RECEIPT_INFERRED",
+        "filing": "HISTORICAL_SOURCE_RECITAL_NOT_A_NEW_FILING",
+        "destination": "HISTORICAL_TOURISM_FILE_AND_MONTE_LANZA; NOT_GIL",
+        "delivery": "NO_SERVICE_ON_GIL_OR_NEW_SERVICE_CLAIM",
+        "internal_association": "ONLY_THE_308_07_ASSOCIATION_IN_THE_NOTICE",
+        "substantive_examination": "ONLY_AS_RECORDED_IN_THE_PROPOSAL",
+        "merits": "PROPOSED_SANCTION_NOT_FINAL_OUTCOME"
+      },
+      "proves": [
+        "The official notice records this dated act; original inspection/representation records remain separately recoverable."
+      ],
+      "does_not_prove": [
+        "Final sanction, service on Gil, guilt, complete source dossier, current office, later ownership or responsibility of related people."
+      ],
+      "public_summary": "Initiation of case308/07, reported in the notice",
+      "public_summary_es": "Resolución de iniciación del expediente 308/07, referida en el anuncio",
+      "attribution_state": "INSTITUTIONAL_NOTICE_NO_PERSONAL_SIGNATORY_ASSERTED",
+      "linked_transport_event_ids": [],
+      "transport_link_state": "HISTORICAL_RECITAL_NOT_MAILBOX_TRANSPORT",
+      "proof_level": "OFFICIAL_NOTICE_DIRECT; UNDERLYING_RECORD_NOT_NEWLY_OBTAINED",
+      "canonical_anchor_es": "es/jsp-montelanza-concurso-liquidacion/#communication-PD-SP-EVT-0185",
+      "canonical_anchor_en": "en/jsp-montelanza-insolvency-liquidation/#communication-PD-SP-EVT-0185"
+    },
+    {
+      "event_id": "PD-SP-EVT-0186",
+      "cohort": "CURATED_SOURCE_PROVED_EVENT",
+      "layer": "OFFICIAL_ACT_OR_CORRESPONDENCE",
+      "source_key": "BOC:2008/245/4927:defence-date",
+      "record_type": "OFFICIAL_ACT_UNCLASSIFIED",
+      "event_date": "2008-08-17",
+      "direction": "OUTBOUND_TO_INSTITUTION",
+      "channel": "HISTORICAL_OFFICIAL_GAZETTE_RECITAL_NOT_DELIVERY_TO_GIL",
+      "office": "Historical Dirección General de Ordenación y Promoción Turística — Canarias",
+      "official_reference": "BOC245/2008 notice4927; expediente308/07; defence-date",
+      "matter_references": [
+        "PD-JSP-INC-2017-01",
+        "JSP-DOC-017",
+        "308/07"
+      ],
+      "source_integrity": {
+        "status": "NATIVE_OFFICIAL_GAZETTE_CAPTURE_WITH_REPORTED_UNDERLYING_ACTS",
+        "repository_anchor": "assets/evidence/jsp-2017/BOC-2008-245-4927.pdf",
+        "sha256": "21d92223ac38b894054cc4ef70d7073df7d81de8da8ed2d53cc813e159041fc0"
+      },
+      "evidence_state": {
+        "transmission": "OFFICIAL_PUBLICATION_LOCATED; UNDERLYING ACT AS REPORTED",
+        "registration": "NO_SEPARATE_RECEIPT_INFERRED",
+        "filing": "HISTORICAL_SOURCE_RECITAL_NOT_A_NEW_FILING",
+        "destination": "HISTORICAL_TOURISM_FILE_AND_MONTE_LANZA; NOT_GIL",
+        "delivery": "NO_SERVICE_ON_GIL_OR_NEW_SERVICE_CLAIM",
+        "internal_association": "ONLY_THE_308_07_ASSOCIATION_IN_THE_NOTICE",
+        "substantive_examination": "ONLY_AS_RECORDED_IN_THE_PROPOSAL",
+        "merits": "PROPOSED_SANCTION_NOT_FINAL_OUTCOME"
+      },
+      "proves": [
+        "The official notice records this dated act; original inspection/representation records remain separately recoverable."
+      ],
+      "does_not_prove": [
+        "Final sanction, service on Gil, guilt, complete source dossier, current office, later ownership or responsibility of related people."
+      ],
+      "public_summary": "Date of Montelanza's representations, according to the notice",
+      "public_summary_es": "Fecha del escrito de alegaciones de Montelanza, según el anuncio",
+      "attribution_state": "INSTITUTIONAL_NOTICE_NO_PERSONAL_SIGNATORY_ASSERTED",
+      "linked_transport_event_ids": [],
+      "transport_link_state": "HISTORICAL_RECITAL_NOT_MAILBOX_TRANSPORT",
+      "proof_level": "OFFICIAL_NOTICE_DIRECT; UNDERLYING_RECORD_NOT_NEWLY_OBTAINED",
+      "canonical_anchor_es": "es/jsp-montelanza-concurso-liquidacion/#communication-PD-SP-EVT-0186",
+      "canonical_anchor_en": "en/jsp-montelanza-insolvency-liquidation/#communication-PD-SP-EVT-0186"
+    },
+    {
+      "event_id": "PD-SP-EVT-0187",
+      "cohort": "CURATED_SOURCE_PROVED_EVENT",
+      "layer": "OFFICIAL_ACT_OR_CORRESPONDENCE",
+      "source_key": "BOC:2008/245/4927:defence-receipt",
+      "record_type": "OFFICIAL_ACT_UNCLASSIFIED",
+      "event_date": "2008-08-28",
+      "direction": "OUTBOUND_TO_INSTITUTION",
+      "channel": "HISTORICAL_OFFICIAL_GAZETTE_RECITAL_NOT_DELIVERY_TO_GIL",
+      "office": "Historical Dirección General de Ordenación y Promoción Turística — Canarias",
+      "official_reference": "BOC245/2008 notice4927; expediente308/07; defence-receipt",
+      "matter_references": [
+        "PD-JSP-INC-2017-01",
+        "JSP-DOC-017",
+        "308/07"
+      ],
+      "source_integrity": {
+        "status": "NATIVE_OFFICIAL_GAZETTE_CAPTURE_WITH_REPORTED_UNDERLYING_ACTS",
+        "repository_anchor": "assets/evidence/jsp-2017/BOC-2008-245-4927.pdf",
+        "sha256": "21d92223ac38b894054cc4ef70d7073df7d81de8da8ed2d53cc813e159041fc0"
+      },
+      "evidence_state": {
+        "transmission": "OFFICIAL_PUBLICATION_LOCATED; UNDERLYING ACT AS REPORTED",
+        "registration": "1140075 ONLY FOR THE REPORTED DEFENCE RECEIPT",
+        "filing": "HISTORICAL_SOURCE_RECITAL_NOT_A_NEW_FILING",
+        "destination": "HISTORICAL_TOURISM_FILE_AND_MONTE_LANZA; NOT_GIL",
+        "delivery": "NO_SERVICE_ON_GIL_OR_NEW_SERVICE_CLAIM",
+        "internal_association": "ONLY_THE_308_07_ASSOCIATION_IN_THE_NOTICE",
+        "substantive_examination": "ONLY_AS_RECORDED_IN_THE_PROPOSAL",
+        "merits": "PROPOSED_SANCTION_NOT_FINAL_OUTCOME"
+      },
+      "proves": [
+        "The official notice records this dated act; original inspection/representation records remain separately recoverable."
+      ],
+      "does_not_prove": [
+        "Final sanction, service on Gil, guilt, complete source dossier, current office, later ownership or responsibility of related people."
+      ],
+      "public_summary": "Representations received; register1140075, according to the notice",
+      "public_summary_es": "Recepción de alegaciones; registro1140075, según el anuncio",
+      "attribution_state": "INSTITUTIONAL_NOTICE_NO_PERSONAL_SIGNATORY_ASSERTED",
+      "linked_transport_event_ids": [],
+      "transport_link_state": "HISTORICAL_RECITAL_NOT_MAILBOX_TRANSPORT",
+      "proof_level": "OFFICIAL_NOTICE_DIRECT; UNDERLYING_RECORD_NOT_NEWLY_OBTAINED",
+      "canonical_anchor_es": "es/jsp-montelanza-concurso-liquidacion/#communication-PD-SP-EVT-0187",
+      "canonical_anchor_en": "en/jsp-montelanza-insolvency-liquidation/#communication-PD-SP-EVT-0187"
+    },
+    {
+      "event_id": "PD-SP-EVT-0188",
+      "cohort": "CURATED_SOURCE_PROVED_EVENT",
+      "layer": "OFFICIAL_ACT_OR_CORRESPONDENCE",
+      "source_key": "BOC:2008/245/4927:proposal",
+      "record_type": "OFFICIAL_ACT_UNCLASSIFIED",
+      "event_date": "2008-10-16",
+      "direction": "INBOUND_FROM_INSTITUTION",
+      "channel": "HISTORICAL_OFFICIAL_GAZETTE_RECITAL_NOT_DELIVERY_TO_GIL",
+      "office": "Historical Dirección General de Ordenación y Promoción Turística — Canarias",
+      "official_reference": "BOC245/2008 notice4927; expediente308/07; proposal",
+      "matter_references": [
+        "PD-JSP-INC-2017-01",
+        "JSP-DOC-017",
+        "308/07"
+      ],
+      "source_integrity": {
+        "status": "NATIVE_OFFICIAL_GAZETTE_CAPTURE_WITH_REPORTED_UNDERLYING_ACTS",
+        "repository_anchor": "assets/evidence/jsp-2017/BOC-2008-245-4927.pdf",
+        "sha256": "21d92223ac38b894054cc4ef70d7073df7d81de8da8ed2d53cc813e159041fc0"
+      },
+      "evidence_state": {
+        "transmission": "OFFICIAL_PUBLICATION_LOCATED; UNDERLYING ACT AS REPORTED",
+        "registration": "NO_SEPARATE_RECEIPT_INFERRED",
+        "filing": "HISTORICAL_SOURCE_RECITAL_NOT_A_NEW_FILING",
+        "destination": "HISTORICAL_TOURISM_FILE_AND_MONTE_LANZA; NOT_GIL",
+        "delivery": "NO_SERVICE_ON_GIL_OR_NEW_SERVICE_CLAIM",
+        "internal_association": "ONLY_THE_308_07_ASSOCIATION_IN_THE_NOTICE",
+        "substantive_examination": "ONLY_AS_RECORDED_IN_THE_PROPOSAL",
+        "merits": "PROPOSED_SANCTION_NOT_FINAL_OUTCOME"
+      },
+      "proves": [
+        "The official notice records this dated act; original inspection/representation records remain separately recoverable."
+      ],
+      "does_not_prove": [
+        "Final sanction, service on Gil, guilt, complete source dossier, current office, later ownership or responsibility of related people."
+      ],
+      "public_summary": "Proposed decision; the publication names María Izquierdo Bello",
+      "public_summary_es": "Propuesta de resolución; la publicación nombra a María Izquierdo Bello",
+      "attribution_state": "INSTITUTIONAL_NOTICE_NO_PERSONAL_SIGNATORY_ASSERTED",
+      "linked_transport_event_ids": [],
+      "transport_link_state": "HISTORICAL_RECITAL_NOT_MAILBOX_TRANSPORT",
+      "proof_level": "OFFICIAL_NOTICE_DIRECT; UNDERLYING_RECORD_NOT_NEWLY_OBTAINED",
+      "canonical_anchor_es": "es/jsp-montelanza-concurso-liquidacion/#communication-PD-SP-EVT-0188",
+      "canonical_anchor_en": "en/jsp-montelanza-insolvency-liquidation/#communication-PD-SP-EVT-0188"
+    },
+    {
+      "event_id": "PD-SP-EVT-0189",
+      "cohort": "CURATED_SOURCE_PROVED_EVENT",
+      "layer": "OFFICIAL_ACT_OR_CORRESPONDENCE",
+      "source_key": "BOC:2008/245/4927:publication-resolution",
+      "record_type": "OFFICIAL_ACT_UNCLASSIFIED",
+      "event_date": "2008-11-25",
+      "direction": "INBOUND_FROM_INSTITUTION",
+      "channel": "HISTORICAL_OFFICIAL_GAZETTE_RECITAL_NOT_DELIVERY_TO_GIL",
+      "office": "Historical Dirección General de Ordenación y Promoción Turística — Canarias",
+      "official_reference": "BOC245/2008 notice4927; expediente308/07; publication-resolution",
+      "matter_references": [
+        "PD-JSP-INC-2017-01",
+        "JSP-DOC-017",
+        "308/07"
+      ],
+      "source_integrity": {
+        "status": "NATIVE_OFFICIAL_GAZETTE_CAPTURE_WITH_REPORTED_UNDERLYING_ACTS",
+        "repository_anchor": "assets/evidence/jsp-2017/BOC-2008-245-4927.pdf",
+        "sha256": "21d92223ac38b894054cc4ef70d7073df7d81de8da8ed2d53cc813e159041fc0"
+      },
+      "evidence_state": {
+        "transmission": "OFFICIAL_PUBLICATION_LOCATED; UNDERLYING ACT AS REPORTED",
+        "registration": "NO_SEPARATE_RECEIPT_INFERRED",
+        "filing": "HISTORICAL_SOURCE_RECITAL_NOT_A_NEW_FILING",
+        "destination": "HISTORICAL_TOURISM_FILE_AND_MONTE_LANZA; NOT_GIL",
+        "delivery": "NO_SERVICE_ON_GIL_OR_NEW_SERVICE_CLAIM",
+        "internal_association": "ONLY_THE_308_07_ASSOCIATION_IN_THE_NOTICE",
+        "substantive_examination": "ONLY_AS_RECORDED_IN_THE_PROPOSAL",
+        "merits": "PROPOSED_SANCTION_NOT_FINAL_OUTCOME"
+      },
+      "proves": [
+        "The official notice records this dated act; original inspection/representation records remain separately recoverable."
+      ],
+      "does_not_prove": [
+        "Final sanction, service on Gil, guilt, complete source dossier, current office, later ownership or responsibility of related people."
+      ],
+      "public_summary": "Publication resolution; the notice names Sandra González Franquis",
+      "public_summary_es": "Resolución de publicación; el anuncio nombra a Sandra González Franquis",
+      "attribution_state": "INSTITUTIONAL_NOTICE_NO_PERSONAL_SIGNATORY_ASSERTED",
+      "linked_transport_event_ids": [],
+      "transport_link_state": "HISTORICAL_RECITAL_NOT_MAILBOX_TRANSPORT",
+      "proof_level": "OFFICIAL_NOTICE_DIRECT; UNDERLYING_RECORD_NOT_NEWLY_OBTAINED",
+      "canonical_anchor_es": "es/jsp-montelanza-concurso-liquidacion/#communication-PD-SP-EVT-0189",
+      "canonical_anchor_en": "en/jsp-montelanza-insolvency-liquidation/#communication-PD-SP-EVT-0189"
+    },
+    {
+      "event_id": "PD-SP-EVT-0190",
+      "cohort": "CURATED_SOURCE_PROVED_EVENT",
+      "layer": "OFFICIAL_ACT_OR_CORRESPONDENCE",
+      "source_key": "BOC:2008/245/4927:publication",
+      "record_type": "OFFICIAL_NOTIFICATION",
+      "event_date": "2008-12-09",
+      "direction": "INBOUND_FROM_INSTITUTION",
+      "channel": "HISTORICAL_OFFICIAL_GAZETTE_RECITAL_NOT_DELIVERY_TO_GIL",
+      "office": "Historical Dirección General de Ordenación y Promoción Turística — Canarias",
+      "official_reference": "BOC245/2008 notice4927; expediente308/07; publication",
+      "matter_references": [
+        "PD-JSP-INC-2017-01",
+        "JSP-DOC-017",
+        "308/07"
+      ],
+      "source_integrity": {
+        "status": "NATIVE_OFFICIAL_GAZETTE_CAPTURE_WITH_REPORTED_UNDERLYING_ACTS",
+        "repository_anchor": "assets/evidence/jsp-2017/BOC-2008-245-4927.pdf",
+        "sha256": "21d92223ac38b894054cc4ef70d7073df7d81de8da8ed2d53cc813e159041fc0"
+      },
+      "evidence_state": {
+        "transmission": "OFFICIAL_PUBLICATION_LOCATED; UNDERLYING ACT AS REPORTED",
+        "registration": "NO_SEPARATE_RECEIPT_INFERRED",
+        "filing": "HISTORICAL_SOURCE_RECITAL_NOT_A_NEW_FILING",
+        "destination": "HISTORICAL_TOURISM_FILE_AND_MONTE_LANZA; NOT_GIL",
+        "delivery": "NO_SERVICE_ON_GIL_OR_NEW_SERVICE_CLAIM",
+        "internal_association": "ONLY_THE_308_07_ASSOCIATION_IN_THE_NOTICE",
+        "substantive_examination": "ONLY_AS_RECORDED_IN_THE_PROPOSAL",
+        "merits": "PROPOSED_SANCTION_NOT_FINAL_OUTCOME"
+      },
+      "proves": [
+        "The official notice records this dated act; original inspection/representation records remain separately recoverable."
+      ],
+      "does_not_prove": [
+        "Final sanction, service on Gil, guilt, complete source dossier, current office, later ownership or responsibility of related people."
+      ],
+      "public_summary": "Publication in BOC245, notice4927, case308/07",
+      "public_summary_es": "Publicación BOC245, anuncio4927, expediente308/07",
+      "attribution_state": "INSTITUTIONAL_NOTICE_NO_PERSONAL_SIGNATORY_ASSERTED",
+      "linked_transport_event_ids": [],
+      "transport_link_state": "HISTORICAL_RECITAL_NOT_MAILBOX_TRANSPORT",
+      "proof_level": "OFFICIAL_NOTICE_DIRECT; UNDERLYING_RECORD_NOT_NEWLY_OBTAINED",
+      "canonical_anchor_es": "es/jsp-montelanza-concurso-liquidacion/#communication-PD-SP-EVT-0190",
+      "canonical_anchor_en": "en/jsp-montelanza-insolvency-liquidation/#communication-PD-SP-EVT-0190"
     }
   ],
   "id_allocation": {

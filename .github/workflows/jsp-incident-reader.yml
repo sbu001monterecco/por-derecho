@@ -1,0 +1,56 @@
+name: JSP incident reader acceptance
+on:
+  push:
+    branches: [worker/jsp-incident-subregister-20260905, main]
+    paths:
+      - 'assets/jsp-incident-reader.*'
+      - 'assets/data/jsp-incident-**'
+      - 'assets/data/jsp-incident-reference/**'
+      - 'archive/JSP_INCIDENT_**'
+      - 'es/jsp-montelanza-concurso-liquidacion/registro-incidente/**'
+      - 'en/jsp-montelanza-insolvency-liquidation/incident-register/**'
+      - 'scripts/validate_jsp_incident_reader.py'
+      - '.github/workflows/jsp-incident-reader.yml'
+  pull_request:
+    paths:
+      - 'assets/jsp-incident-reader.*'
+      - 'assets/data/jsp-incident-**'
+      - 'assets/data/jsp-incident-reference/**'
+      - 'archive/JSP_INCIDENT_**'
+      - 'es/jsp-montelanza-concurso-liquidacion/registro-incidente/**'
+      - 'en/jsp-montelanza-insolvency-liquidation/incident-register/**'
+      - 'scripts/validate_jsp_incident_reader.py'
+      - '.github/workflows/jsp-incident-reader.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: jsp-incident-reader-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  read-only-acceptance:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - name: Install pinned browser acceptance tools
+        run: |
+          python3 -m pip install playwright==1.55.0 Pillow==11.3.0
+          python3 -m playwright install --with-deps chromium firefox webkit
+      - name: Validate source, reference and actual browser contract
+        run: python3 scripts/validate_jsp_incident_reader.py --base origin/main --output /tmp/jsp-incident-candidate
+      - name: Verify deployed public bytes and browsers after main publication
+        if: github.ref == 'refs/heads/main'
+        run: python3 scripts/validate_jsp_incident_reader.py --base origin/main --url https://sbu001monterecco.github.io/por-derecho/ --wait-live --output /tmp/jsp-incident-live
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        if: always()
+        with:
+          name: jsp-incident-reader-${{ github.run_id }}
+          path: |
+            /tmp/jsp-incident-candidate
+            /tmp/jsp-incident-live
+          if-no-files-found: error
+          retention-days: 30

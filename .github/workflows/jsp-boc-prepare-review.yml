@@ -1,0 +1,32 @@
+name: JSP BOC prepared review
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  prepared-byte-review:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - name: Inspect immutable prepared scope, not regenerate old publication
+        run: |
+          python3 - <<'PY'
+          import pathlib,json,hashlib
+          p=pathlib.Path('assets/data/jsp-boc-release-manifest-20260905.json');m=json.loads(p.read_text())
+          for r in m['files']:
+              b=pathlib.Path(r['path']).read_bytes();assert hashlib.sha256(b).hexdigest()==r['sha256'],r['path']
+          pathlib.Path('/tmp/jsp-boc-prepared-review.json').write_text(json.dumps({'control':m['control_id'],'files':len(m['files']),'counts':m['counts'],'publication_claim':False},indent=2))
+          PY
+          test -z "$(git status --porcelain)"
+      - uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
+        with:
+          name: jsp-boc-prepared-byte-review
+          path: /tmp/jsp-boc-prepared-review.json
+          retention-days: 30
+# Preparation runs33995777487/33996069209 remain historical audit records.
+# The one-shot generator/repair choreography is retired; this job only reads
+# admitted exact bytes. Candidate and live browser acceptance run separately.

@@ -1,0 +1,76 @@
+name: JSP BOC read-only execution capture
+on:
+  push:
+    branches: [worker/jsp-boc-six-sections-20260905]
+    paths: ['.github/workflows/jsp-boc-execution-capture.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  capture:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - run: python3 -m pip install pymupdf pillow
+      - name: Preserve exact public source workspace and capture official notices
+        run: |
+          mkdir -p /tmp/jsp-boc-capture
+          python3 - <<'PY'
+          import pathlib,subprocess,json,zipfile,urllib.request,hashlib,concurrent.futures,fitz
+          root=pathlib.Path('/tmp/jsp-boc-capture')
+          entries=subprocess.check_output(['git','ls-tree','-r','HEAD'],text=True)
+          (root/'git-tree.txt').write_text(entries)
+          (root/'head.txt').write_text(subprocess.check_output(['git','rev-parse','HEAD'],text=True))
+          with zipfile.ZipFile(root/'workspace-text.zip','w',zipfile.ZIP_DEFLATED) as z:
+              for line in entries.splitlines():
+                  p=pathlib.Path(line.split('\t',1)[1])
+                  if p.suffix.lower() in {'.md','.json','.csv','.py','.yml','.yaml','.html','.js','.css','.txt','.toml','.ini'} and p.is_file():
+                      z.write(p,str(p))
+          for ref,label in [('worker/jsp-incident-subregister-20260905','incident'),('worker/jsp-options-frustration-20260905','options'),('worker/jsp-canonical-dossier-20260905','expanded')]:
+              try:
+                  subprocess.run(['git','fetch','--no-tags','origin',ref],check=True,capture_output=True)
+                  sha=subprocess.check_output(['git','rev-parse','FETCH_HEAD'],text=True).strip()
+                  tree=subprocess.check_output(['git','ls-tree','-r',sha],text=True)
+                  (root/(label+'-tree.txt')).write_text(tree)
+                  (root/(label+'-head.txt')).write_text(sha)
+                  subprocess.run(['git','archive','--format=zip','--output='+str(root/(label+'-delta.zip')),sha,'archive','assets/data','es/jsp-montelanza-concurso-liquidacion','en/jsp-montelanza-insolvency-liquidation'],check=True,capture_output=True)
+              except Exception as e: (root/(label+'-error.txt')).write_text(str(e))
+          urls={
+            'BOC-2008-245-4927.pdf':'https://www.gobiernodecanarias.org/boc/2008/245/boc-2008-245-033.pdf',
+            'BOC-2008-245-4927.html':'https://www.gobiernodecanarias.org/boc/2008/245/033.html',
+            'BORME-C-2017-7368.pdf':'https://www.boe.es/borme/dias/2017/08/10/pdfs/BORME-C-2017-7368.pdf'
+          }
+          out=root/'sources';out.mkdir()
+          def capture(item):
+              name,url=item
+              try:
+                  with urllib.request.urlopen(urllib.request.Request(url,headers={'User-Agent':'PorDerecho-EvidenceReview/1.0'}),timeout=60) as r:data=r.read()
+                  if name.endswith('.pdf') and not data.startswith(b'%PDF-'):raise ValueError('Not PDF bytes')
+                  (out/name).write_bytes(data)
+                  row={'name':name,'url':url,'sha256':hashlib.sha256(data).hexdigest(),'bytes':len(data),'status':'CAPTURED'}
+                  if name.endswith('.pdf'):
+                      doc=fitz.open(stream=data,filetype='pdf');row['pages']=len(doc)
+                      for i,page in enumerate(doc):
+                          page.get_pixmap(matrix=fitz.Matrix(1.5,1.5),alpha=False).save(out/(name+f'.p{i+1}.png'))
+                          (out/(name+f'.p{i+1}.txt')).write_text(page.get_text())
+                  return row
+              except Exception as e:return {'name':name,'url':url,'status':'FAILED','error':str(e)}
+          with concurrent.futures.ThreadPoolExecutor(max_workers=3) as pool:rows=list(pool.map(capture,urls.items()))
+          (root/'source-capture.json').write_text(json.dumps(rows,ensure_ascii=False,indent=2))
+          print(json.dumps(rows,ensure_ascii=False,indent=2))
+          PY
+      - name: Assert no tracked change
+        run: git diff --exit-code && git diff --cached --exit-code
+      - uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
+        if: always()
+        with:
+          name: jsp-boc-read-only-capture
+          path: /tmp/jsp-boc-capture
+          retention-days: 30
+          if-no-files-found: error
+# This workflow reads public records and produces a review artifact only.
+# It has no push, Contents mutation, blob writer, filing or contact operation.
