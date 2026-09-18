@@ -142,5 +142,49 @@
     "summary": "Registro público seguro derivado de fuente de presentaciones Red SARA/AGE individualizadas, índice de adjuntos indicados en justificantes y respuestas institucionales entrantes.",
     "tags": ["Red SARA", "AGE", "REGAGE", "respuesta de autoridad", "índice de adjuntos"],
     "aliases": ["Intervención General", "184368/2026", "497011/2026", "699645/2026", "REGAGE", "RedSARA"]
-  }
+  },
+{
+  "lang": "es",
+  "path": "es/medios-trazabilidad-relato-publico/",
+  "title": "Sala de prensa documental y trazabilidad editorial",
+  "type": "evidence",
+  "summary": "Fuentes públicas para periodistas, lectura de resoluciones, límites probatorios, correcciones y consultas privadas. Sin directorio ni historial de contactos.",
+  "tags": [
+    "media",
+    "press",
+    "prensa",
+    "periodistas",
+    "dashboard"
+  ],
+  "aliases": [
+    "sala de prensa",
+    "media dashboard",
+    "press desk",
+    "journalist briefing",
+    "Pregunta al expediente",
+    "Ask the Record"
+  ]
+},
+{
+  "lang": "en",
+  "path": "en/media-public-narrative-traceability/",
+  "title": "Documentary press desk and editorial traceability",
+  "type": "evidence",
+  "summary": "Public sources for journalists, court-decision reading, evidence limits, corrections and private enquiries. No contact directory or correspondence history.",
+  "tags": [
+    "media",
+    "press",
+    "prensa",
+    "periodistas",
+    "dashboard"
+  ],
+  "aliases": [
+    "sala de prensa",
+    "media dashboard",
+    "press desk",
+    "journalist briefing",
+    "Pregunta al expediente",
+    "Ask the Record"
+  ]
+}
 ]

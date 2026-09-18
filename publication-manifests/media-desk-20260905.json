@@ -1,0 +1,30 @@
+{
+  "schema": "por-derecho.publication-state.v1",
+  "schema_version": "1.0.0",
+  "publication_id": "PD-MEDIA-DASHBOARD-20260905-01",
+  "current_state": "REMOTE_SOURCE",
+  "owner": "Gil Marer / Por Derecho",
+  "source_main": "65d56cec10e11f5a5c0861bb087ee87e64f5effa",
+  "source_branch": "worker/media-desk-deploy-20260905",
+  "proposal_provenance": "61745a557c0a666452cb71f152753c676fa70686",
+  "expected_routes": {
+    "es": ["es/medios-trazabilidad-relato-publico/index.html"],
+    "en": ["en/media-public-narrative-traceability/index.html"]
+  },
+  "expected_source_files": ["assets/media-desk.css", "assets/media-desk.js", "assets/optimum-reader-journey-finish-20260818.js", "assets/data/unitary-route-registry-sync-20260819.json", "sitemap-discovery-navigation.xml", "ops/media-dashboard/build_release.py", "ops/media-dashboard/section-es.html", "ops/media-dashboard/section-en.html", "ops/media-dashboard/test_release.py", "ops/media-dashboard/test_preservation.py", "ops/media-dashboard/browser_check.py", "ops/media-dashboard/verify_live.py", "ops/media-dashboard/RELEASE_CANDIDATE.md", ".github/workflows/media-desk-release.yml"],
+  "target_fragment": "media-desk",
+  "publication_scope": "Additive bilingual source entrance on existing routes and finite input-aware fragment repair; existing editorial content preserved. No private directory, new case event, email or authenticated service.",
+  "public_scope_approved": true,
+  "email_authorized": false,
+  "canonical_register_mutated": false,
+  "active_integrator_required": true,
+  "merge_sha": null,
+  "deployment_evidence": null,
+  "live_verification_evidence": null,
+  "validation": {
+    "diagnostic_evidence": ["https://github.com/sbu001monterecco/por-derecho/actions/runs/33996371471"],
+    "interpretation": "Diagnostic establishes a legacy late scrollIntoView call after reader input. It is not final candidate acceptance. Exact-head source/browser and postmerge live receipts must be inspected separately."
+  },
+  "pending_gates": ["Current candidate source and browser acceptance", "Current-main and active-lane reconciliation", "Exact-head controller permit and normal merge", "Exact merge Pages and real-host byte/browser verification"],
+  "implementation_record": "ops/media-dashboard/RELEASE_CANDIDATE.md"
+}

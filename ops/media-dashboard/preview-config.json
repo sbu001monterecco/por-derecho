@@ -1,0 +1,14 @@
+{
+  "language": "es",
+  "as_of": "2026-09-05",
+  "resource_ids": [
+    "website_es",
+    "website_en",
+    "sunpark_ricpe",
+    "court_authority_context",
+    "institutional_records",
+    "webinar"
+  ],
+  "release_approved": false,
+  "approval_record": ""
+}
