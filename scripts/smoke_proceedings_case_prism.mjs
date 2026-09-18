@@ -1047,14 +1047,14 @@ try {
     if (!sourceResponse.ok()) throw new Error(`${route.lang}: source route returned ${sourceResponse.status()}`);
     const fiscaliaMatrixView = detail.locator('[data-fiscalia-office-file-matrix]');
     if (await fiscaliaMatrixView.count() !== 1) throw new Error(`${route.lang}: P05 detail omits the Fiscalía office/file matrix`);
-    if (await fiscaliaMatrixView.getAttribute('data-row-count') !== '24'
-        || await fiscaliaMatrixView.getAttribute('data-exact-count') !== '21'
+    if (await fiscaliaMatrixView.getAttribute('data-row-count') !== '26'
+        || await fiscaliaMatrixView.getAttribute('data-exact-count') !== '23'
         || await fiscaliaMatrixView.getAttribute('data-unverified-count') !== '3'
         || await fiscaliaMatrixView.getAttribute('data-profiled-count') !== '8'
         || await fiscaliaMatrixView.getAttribute('data-response-episode-count') !== '9') {
-      throw new Error(`${route.lang}: Fiscalía matrix must distinguish 24 rows, 21 exact, three unresolved, eight profiled and nine total response episodes`);
+      throw new Error(`${route.lang}: Fiscalía matrix must distinguish 26 rows, 23 exact, three unresolved, eight profiled and nine total response episodes`);
     }
-    if (await fiscaliaMatrixView.locator('[data-fiscalia-row]').count() !== 24) throw new Error(`${route.lang}: Fiscalía matrix does not render 24 rows`);
+    if (await fiscaliaMatrixView.locator('[data-fiscalia-row]').count() !== 26) throw new Error(`${route.lang}: Fiscalía matrix does not render 26 rows`);
     const fiscaliaRenderedIds = await fiscaliaMatrixView.locator('[data-fiscalia-row]').evaluateAll((rows) => rows.map((row) => row.dataset.masterId));
     assertSameValues(fiscaliaRenderedIds, fiscaliaMatrix.map((row) => row.master_id), `${route.lang}: Fiscalía rendered row denominator`);
     for (const row of fiscaliaMatrix) {
