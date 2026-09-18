@@ -29,6 +29,54 @@
       "source_level_state": "PENDING_GITLAB_RESTORATION",
       "provenance": "Anonymous public GitLab Pages route returned by public web indexing on 18 September 2026.",
       "boundary": "The rendered page proves anonymous public deployment availability only. It does not prove the producing GitLab commit, template bytes, authenticated project access, or exact parity with GitHub."
+    },
+    {
+      "id": "GL-PUB-003",
+      "surface_type": "GITLAB_PAGES_RENDERED_ROUTE",
+      "gitlab_public_url": "https://por-derecho-setup-or-gitlab-setup-c2b10f.gitlab.io/por-derecho-setup-or-gitlab-setup/en/recovery-command-center/",
+      "observed_publicly_accessible_date": "2026-09-18",
+      "classification": "FUNCTIONAL_GITHUB_EQUIVALENT",
+      "corresponding_github_url": null,
+      "github_match_state": "NOT_LOCATED_BY_DEFAULT_BRANCH_CODE_SEARCH",
+      "source_level_state": "PENDING_GITLAB_RESTORATION",
+      "provenance": "Anonymous public GitLab Pages recovery-command-center route returned by public web indexing on 18 September 2026; GitHub default-branch code search did not locate the route string.",
+      "boundary": "Treat this as a public deployment delta and future reconciliation target only. Do not recreate the unavailable GitLab source from rendered HTML or search snippets."
+    },
+    {
+      "id": "GL-PUB-004",
+      "surface_type": "GITLAB_PAGES_RENDERED_ROUTE",
+      "gitlab_public_url": "https://por-derecho-setup-or-gitlab-setup-c2b10f.gitlab.io/por-derecho-setup-or-gitlab-setup/es/centro-mando-recuperacion/",
+      "observed_publicly_accessible_date": "2026-09-18",
+      "classification": "FUNCTIONAL_GITHUB_EQUIVALENT",
+      "corresponding_github_url": null,
+      "github_match_state": "NOT_LOCATED_BY_DEFAULT_BRANCH_CODE_SEARCH",
+      "source_level_state": "PENDING_GITLAB_RESTORATION",
+      "provenance": "Anonymous public GitLab Pages Spanish recovery-command-center route returned by public web indexing on 18 September 2026; GitHub default-branch code search did not locate the route string.",
+      "boundary": "Treat this as a public deployment delta and future reconciliation target only. Do not recreate the unavailable GitLab source from rendered HTML or search snippets."
+    },
+    {
+      "id": "GL-PUB-005",
+      "surface_type": "GITLAB_PAGES_RENDERED_ROUTE",
+      "gitlab_public_url": "https://por-derecho-setup-or-gitlab-setup-c2b10f.gitlab.io/por-derecho-setup-or-gitlab-setup/en/asset-recovery-situation-room/",
+      "observed_publicly_accessible_date": "2026-09-18",
+      "classification": "FUNCTIONAL_GITHUB_EQUIVALENT",
+      "corresponding_github_url": null,
+      "github_match_state": "NOT_LOCATED_BY_DEFAULT_BRANCH_CODE_SEARCH",
+      "source_level_state": "PENDING_GITLAB_RESTORATION",
+      "provenance": "Anonymous public GitLab Pages Asset Recovery Situation Room route returned by public web indexing on 18 September 2026; GitHub default-branch code search did not locate the route string.",
+      "boundary": "Preserve this as a rendered public deployment and future reconciliation target. The route does not establish its producing GitLab source commit or template bytes and must not be reconstructed from rendered output."
+    },
+    {
+      "id": "GL-PUB-006",
+      "surface_type": "GITLAB_PAGES_RENDERED_ROUTE",
+      "gitlab_public_url": "https://por-derecho-setup-or-gitlab-setup-c2b10f.gitlab.io/por-derecho-setup-or-gitlab-setup/es/sala-situacion-recuperacion-activos/",
+      "observed_publicly_accessible_date": "2026-09-18",
+      "classification": "FUNCTIONAL_GITHUB_EQUIVALENT",
+      "corresponding_github_url": null,
+      "github_match_state": "NOT_LOCATED_BY_DEFAULT_BRANCH_CODE_SEARCH",
+      "source_level_state": "PENDING_GITLAB_RESTORATION",
+      "provenance": "Anonymous public GitLab Pages Spanish Asset Recovery Situation Room route returned by public web indexing on 18 September 2026; GitHub default-branch code search did not locate the route string.",
+      "boundary": "Preserve this as a rendered public deployment and future reconciliation target. The route does not establish its producing GitLab source commit or template bytes and must not be reconstructed from rendered output."
     }
   ],
   "allowed_classifications": [
