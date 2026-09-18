@@ -41,7 +41,7 @@ UNITARY_VERIFY_RUN = 32942975508
 UNITARY_VERIFY_RUN_NUMBER = 4
 UNITARY_VERIFY_JOB = 98097657687
 UNITARY_VERIFY_COMPLETED_AT = "2026-08-26T07:29:55Z"
-REPOSITORY_LATEST_MATERIAL_DATE = "2026-08-28"
+REPOSITORY_LATEST_MATERIAL_DATE = "2026-09-18"
 
 
 def load_json(path: Path):
@@ -137,11 +137,11 @@ def main() -> int:
         )
         require_markers(
             ROOT / "es/actualizaciones/index.html",
-            ["Última actualización material", "<strong>28 agosto 2026</strong>", "ALG-ENT-018"],
+            ["Última actualización material", "<strong>18 septiembre 2026</strong>", "ALG-ENT-018", "cuatrecasas-etj-dp748-18sep"],
         )
         require_markers(
             ROOT / "en/updates/index.html",
-            ["Latest material update", "<strong>28 August 2026</strong>", "ALG-ENT-018"],
+            ["Latest material update", "<strong>18 September 2026</strong>", "ALG-ENT-018", "cuatrecasas-etj-dp748-18sep"],
         )
 
         state = load_json(ROOT / "ops/CURRENT_UNITARY_STATE.json")
@@ -182,8 +182,8 @@ def main() -> int:
         if last_live != repository_latest:
             pending = material.get("pending_publication") or {}
             require(
-                pending.get("control_id") == "PD-SP-AEAT-PINK-DILIGENCE-20260828-01",
-                "pending AEAT/Pink material control missing",
+                pending.get("control_id") == "PD-CUATRECASAS-ETJ-DP748-20260918-01",
+                "pending 18-Sep Cuatrecasas/La Laguna material control missing",
             )
             require(pending.get("state") == "PREPARED_PENDING_MERGE", "pending material state drift")
         repository = state.get("repository") or {}

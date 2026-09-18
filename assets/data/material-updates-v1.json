@@ -1,9 +1,12 @@
 {
   "schema": "por-derecho.material-updates.v1",
   "control_id": "PD-MATERIAL-UPDATES-001",
-  "control_date": "2026-08-28",
-  "latest_material_date": "2026-08-28",
-  "languages": ["es", "en"],
+  "control_date": "2026-09-18",
+  "latest_material_date": "2026-09-18",
+  "languages": [
+    "es",
+    "en"
+  ],
   "public_routes": {
     "es": "/es/actualizaciones/",
     "en": "/en/updates/"
@@ -15,6 +18,32 @@
     "The homepage, ES/EN updates pages, feed, state controls and sitemap metadata must use the same latest material date."
   ],
   "entries": [
+    {
+      "update_id": "MU-20260918-CUATRECASAS-ETJ-DP748",
+      "date": "2026-09-18",
+      "type": "PROCEDURAL_UPDATE_PRIMARY_COURT_SOURCES_AND_AUTHORISED_PUBLIC_STRATEGY",
+      "title_es": "Cuatrecasas / ETJ 163 / DP 748: suspensión civil denegada y apelación penal en tramitación",
+      "title_en": "Cuatrecasas / ETJ 163 / DP 748: civil suspension refused and criminal appeal processing verified",
+      "affected_routes": [
+        "/es/cuatrecasas-etj163-dp748-18-septiembre-2026/",
+        "/en/cuatrecasas-etj163-dp748-18-september-2026/",
+        "/es/cuatrecasas-dp748-accion-civil/",
+        "/en/cuatrecasas-dp748-civil-action/",
+        "/es/cuatrecasas-sun-park/",
+        "/en/cuatrecasas-sun-park/",
+        "/es/procedimientos/tf-civ-002/",
+        "/en/proceedings/tf-civ-002/",
+        "/es/procedimientos/tf-cri-003/",
+        "/en/proceedings/tf-cri-003/",
+        "/es/procedimientos/tf-app-004/",
+        "/en/proceedings/tf-app-004/",
+        "/es/actualizaciones/",
+        "/en/updates/"
+      ],
+      "source_status": "SIGNED_16SEP_DP748_LAJ_ORDER_PLUS_SIGNED_17SEP_ETJ_ORDER_PLUS_FILED_09SEP_APPEAL_IMPULSE",
+      "what_changed": "The 16 September DP 748 LAJ order verifies origin-court processing of the subsidiary appeal and gives the Ministerio Fiscal five days for submissions. The 17 September ETJ order dismisses Matkator's reconsideration application against refusal to suspend and states no appeal lies; it was received 18 September. The public site now discloses the authorised intended next steps: Article 215.2 complement analysis concerning separately pleaded subsidiary irreversible-act relief, incorporation of the 17 September order in DP 748 as supervening material, immediate remate/cession traceability and a separate preservation / actual-notice communication to Cuatrecasas.",
+      "what_did_not_change": "The 17 September order does not decide DP 748, criminal liability, the criminal lawfulness of the Cambiario/ETJ chain or the identity of any adjudicatee/assignee. No source presently proves completed adjudication, cession, registration or possession. No prospective third party is accused merely by considering or receiving a cession. Audiencia remittal, a separate appellate roll and appellate outcome remain unverified."
+    },
     {
       "update_id": "MU-20260828-AEAT-PINK-DILIGENCE",
       "date": "2026-08-28",

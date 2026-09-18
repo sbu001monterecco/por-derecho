@@ -255,8 +255,13 @@ jobs:
               material=state.get('material_updates',{})
               assert material.get('latest_material_date')==current_material_date
               assert material.get('repository_latest_material_date')==current_material_date
-              assert material.get('last_live_verified_material_date')==current_material_date
-              assert material.get('public_parity')==expected_public_parity
+              # Source state may honestly remain PREPARED_PENDING_MERGE while this
+              # push job is itself performing the first live readback of the new material.
+              # Require the served state to match the repository declaration exactly;
+              # a later metadata-only promotion may mark the newly observed release live.
+              source_material=source_state.get('material_updates',{})
+              assert material.get('last_live_verified_material_date')==source_material.get('last_live_verified_material_date')
+              assert material.get('public_parity')==source_material.get('public_parity')
               publication=state.get('publication',{})
               pages=publication.get('last_pages_deployment',{})
               assert pages.get('sha')==historical_promotion_merge_sha and pages.get('tree_sha')==historical_promotion_tree_sha

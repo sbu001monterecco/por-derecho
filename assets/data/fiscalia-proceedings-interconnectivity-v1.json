@@ -7,7 +7,7 @@
     "communications_register": "assets/data/institutional-communications-register-v1.json",
     "communications_sha256": "f397fc256cf21bde25c90945ebb67944762599ee4b02350830aae56fe5e7af82",
     "proceedings_master": "archive/PROCEEDINGS_MASTER_REGISTER.csv",
-    "proceedings_master_sha256": "c3d3d025fa69b1e8b1d3cc7ea8e8d44cd622aeba4d33f7cf3f230a4a39cf9bb9",
+    "proceedings_master_sha256": "13866af39632d5097d8496cf5b7c787437d659fff6d0ee258636f9f5ee81a409",
     "public_proceedings_projection": "assets/data/proceedings-master-public-v1.json",
     "link_assertions": "assets/data/fiscalia-proceedings-link-assertions-v1.json",
     "link_assertions_sha256": "18427814dd0a8d412f989458c7058ca2ae490fbf80ae35535042a6e113fa0392"
