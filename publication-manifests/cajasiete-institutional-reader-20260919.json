@@ -31,6 +31,7 @@
   "notes": {
     "design_boundary": "Institutionally adjacent, visually independent; no CajaSiete affiliation or official-author appearance.",
     "gitlab_parity": "Pending restoration of canonical GitLab account access.",
-    "reporting_boundary": "2021 RICPE/Sun Park/RIC reporting is not backfilled with later GC/836/P06 or FEDER/ERDF evidence."
+    "reporting_boundary": "2021 RICPE/Sun Park/RIC reporting is not backfilled with later GC/836/P06 or FEDER/ERDF evidence.",
+    "deploy_gate_fix": "Manifest repaired in place; protected-path preservation retained; nested public snapshot links made absolute; locked 47-route smoke contract restored."
   }
 }
