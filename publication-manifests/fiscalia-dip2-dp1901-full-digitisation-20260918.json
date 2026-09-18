@@ -1,0 +1,100 @@
+{
+  "schema_version": "1.0",
+  "publication_id": "FISCALIA_DIP2_DP1901_FULL_DIGITISATION_20260918",
+  "owner": "Gil Marer / Por Derecho",
+  "control_date": "2026-09-18",
+  "status": "BRANCH_IMPLEMENTATION_PENDING_PR_MERGE_DEPLOYMENT",
+  "scope": [
+    "DIP 2/2026 available-corpus full-text digitisation",
+    "11 March 2026 correction and REGAGE trace",
+    "DP 1901/2026 14 September order full-text transcription from three photographs",
+    "cross-proceeding source-status propagation"
+  ],
+  "evidence": {
+    "dip2": {
+      "master_id": "GC-FIS-017",
+      "nig": "3501670220260000245",
+      "sources": [
+        {
+          "id": "EVID-2026-FISCALIA-DIP2-DENUNCIA-013JAN-001",
+          "date": "2026-01-13",
+          "pages": 5,
+          "sha256": "d42051eea0ff28bc230ef58315333729a84454b8376b23ad7bbc5db35e3a77a4"
+        },
+        {
+          "id": "EVID-2026-FISCALIA-DIP2-AMPLIACION-08FEB-002",
+          "date": "2026-02-08",
+          "pages": 5,
+          "sha256": "07dc79179397f680f0201075618d6782af31a6432c823a1addf341a0f75bf1be"
+        },
+        {
+          "id": "EVID-2026-FISCALIA-DIP2-DECRETO-002",
+          "date": "2026-03-06",
+          "pages": 10,
+          "sha256": "7d7be3516fd691de5da0d05081e5d4916b6e3141804891abf5742df82007a452"
+        },
+        {
+          "id": "EVID-2026-FISCALIA-DIP2-OFICIO-001",
+          "date": "2026-03-09",
+          "pages": 1,
+          "sha256": "dc4d6d8b5843e0f052cbfd8025466bb1a25ae2d0634c31d6186383263168f261"
+        },
+        {
+          "id": "EVID-2026-FISCALIA-DIP2-ACTUALIZACION-11MAR-005",
+          "date": "2026-03-11",
+          "pages": 4,
+          "sha256": "0c3116c35b7dea1976dd39ee043898d0aa6b5b1164c36c9b014b4c3ca70d85b9"
+        },
+        {
+          "id": "EVID-2026-FISCALIA-DIP2-REGAGE-11MAR-006",
+          "date": "2026-03-11",
+          "pages": 2,
+          "sha256": "102d2f407cc33f0398d45239d94fe56a80246e645191e5e987e430b5c533b289"
+        }
+      ],
+      "open": [
+        "separate 11-Feb opening decree",
+        "complete certified file/index",
+        "post-11-Mar handling/correction record"
+      ]
+    },
+    "dp1901": {
+      "master_id": "GC-CRI-008",
+      "nig": "3501643220260016977",
+      "iup": "LI2026017152",
+      "order_date": "2026-09-14",
+      "source_type": "three photographs; native court PDF not yet located",
+      "image_sha256": [
+        "b4259b179e36a263a2c16818d2f90543105ea400fffdda532c43a342bb513513",
+        "ea9f363e5eca27f110ee42dedc971ed0fedb8a4d72fbd1c1ce582d27c8ff7e43",
+        "7dac86c0b2cc7a8ac4f0974125328a8c095980652f32f573a7850c9518db603f"
+      ],
+      "open": [
+        "native/certified order",
+        "legal notification metadata",
+        "29-Jul signed Fiscal report",
+        "Control21/daily-ref-24 reparto bridge"
+      ]
+    }
+  },
+  "privacy": {
+    "direct_personal_identifiers_redacted_from_public_transcriptions": true,
+    "verification_codes_omitted": true,
+    "substantive_text_preserved": true,
+    "raw_private_native_sources_committed": false
+  },
+  "required_routes": [
+    "es/fiscalia-dip-2-2026/index.html",
+    "en/fiscalia-dip-2-2026/index.html",
+    "es/dp-1901-2026-auto-14-septiembre-2026/index.html",
+    "en/dp-1901-2026-order-14-september-2026/index.html",
+    "es/procedimientos/gc-fis-017/index.html",
+    "en/proceedings/gc-fis-017/index.html"
+  ],
+  "boundaries": [
+    "A transcription proves document content, not truth of an allegation.",
+    "The appeal-status discrepancy does not by itself prove deliberate falsehood or prosecutorial misconduct.",
+    "The 29 July dismissal request does not by itself prove capture, prevaricacion, coordination or criminality.",
+    "Control 21 and daily reference no. 24 remain separate intake records until certified reparto evidence resolves the DP 1901 mapping."
+  ]
+}
