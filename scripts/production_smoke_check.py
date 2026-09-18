@@ -151,7 +151,7 @@ CHECKS = [
      "markers": ["Del Rosal / FROB–BFA–Bankia ↔ Sun Rock", "PRE_ENGAGEMENT_REVIEW", "THE COMMON LENS"],
      "kind": "del_rosal_overlap_en", "min_bytes": 12000},
     {"path": "sitemap-lender-liability.xml",
-     "markers": ["pacto-comisorio-credit-to-title-architecture", "perimetro-ph122-cerberus-haya-bankia-externo", "administrador-concursal-puerta-credito-titulo"],
+     "markers": ["pacto-comisorio-credit-to-title-architecture", "perimetro-ph122-cerberus-haya-bankia-externo", "administrador-concursal-puerta-credito-titulo", "bernardo-del-rosal-frob-bankia-sun-rock"],
      "kind": "lender_liability_sitemap", "min_bytes": 500},
     {"path": "assets/site.js", "markers": ["site-pre-treasury-154-hq-20260828.js?v=20260828a", "treasury-154-hq-visual-20260828.js?v=20260828c", "data-pre-treasury-154-site-loader"],
      "kind": "global_loader", "min_bytes": 700},
