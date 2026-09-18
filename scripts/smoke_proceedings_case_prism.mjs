@@ -650,8 +650,8 @@ try {
     familyId, dispositions.filter((item) => item.finite_test.family_template_id === familyId).length,
   ]).filter(([, count]) => count));
   const expectedFamilyCounts = {
-    OMBUDSMAN_RECONSIDERATION: 1, CRIMINAL_FILE_DECISION: 11, CIVIL_FILE_DECISION: 19,
-    FISCALIA_INSTITUTIONAL_MEMORY: 21, PROFESSIONAL_SUPERVISION: 8,
+    OMBUDSMAN_RECONSIDERATION: 1, CRIMINAL_FILE_DECISION: 14, CIVIL_FILE_DECISION: 23,
+    FISCALIA_INSTITUTIONAL_MEMORY: 23, PROFESSIONAL_SUPERVISION: 8,
     ADMIN_AUTHORITY_TITLE_SOURCE: 26, TAX_CONTENTIOUS_CHAIN: 4, REGULATORY_PUBLIC_ROUTE: 7,
   };
   if (JSON.stringify(actualFamilyCounts) !== JSON.stringify(expectedFamilyCounts)
