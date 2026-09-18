@@ -53,7 +53,7 @@
       "RPL 2523 and claimant-specific recovery",
       "public notice and right of reply"
     ],
-    "reconsideration_successor": "12_SEP_VERSION_REQUIRES_18SEP_DP1901_SUPERVENING_EVENT_UPDATE_BEFORE_FILING"
+    "reconsideration_successor": "18SEP_SUCCESSOR_REQUIRES_DP1901_D36_D41_IDENTITY_FINDING_AND_ASYMMETRY_INTERCONNECTIVITY_BEFORE_FILING"
   },
   "evidence_boundaries": [
     "Public publication is not proof of formal service, institutional receipt or personal access.",
@@ -70,7 +70,10 @@
       "/por-derecho/es/fiscalia-inspeccion-exp-gub-745-2026/",
       "/por-derecho/es/ricardo-de-mosteyrin-sampalo/",
       "/por-derecho/es/carta-abierta-ministerio-fiscal/",
-      "/por-derecho/es/justicia-registro-institucional/"
+      "/por-derecho/es/justicia-registro-institucional/",
+      "/por-derecho/es/fiscalia-dip-2-2026/",
+      "/por-derecho/es/dp-1901-2026-auto-14-septiembre-2026/",
+      "/por-derecho/es/calificacion-concurso-36-2012-vidas-paralelas/"
     ],
     "en": [
       "/por-derecho/en/insolvency-classification-criminal-misuse-thesis/",
@@ -78,7 +81,28 @@
       "/por-derecho/en/public-prosecution-inspection-exp-gub-745-2026/",
       "/por-derecho/en/ricardo-de-mosteyrin-sampalo/",
       "/por-derecho/en/open-letter-public-prosecution-service/",
-      "/por-derecho/en/justice-institutional-record/"
+      "/por-derecho/en/justice-institutional-record/",
+      "/por-derecho/en/fiscalia-dip-2-2026/",
+      "/por-derecho/en/dp-1901-2026-order-14-september-2026/",
+      "/por-derecho/en/insolvency-classification-parallel-lives/"
     ]
+  },
+  "eg745_filing_support": {
+    "state": "SUCCESSOR_PREPARED_NOT_VERIFIED_FILED",
+    "controlling_formulation": "DOCUMENTED_ASYMMETRIC_PROSECUTORIAL_TREATMENT_WITH_ATTRIBUTED_DE_FACTO_PROTECTIVE_EFFECT",
+    "attributed_stronger_allegation": "Gil Marer / Aweswell allege that the cumulative effect operated as a prosecutorial shield for the private-actor perimeter.",
+    "proof_boundary": "The pattern does not itself establish capture, improper instruction, agreement, knowing suppression, corrupt motive, causation or criminal liability.",
+    "legal_control": {
+      "source": "Real Decreto 305/2022 — Reglamento del Ministerio Fiscal",
+      "articles": [
+        "163",
+        "164.1.b",
+        "167.1",
+        "167.3"
+      ],
+      "proposition": "Diligencias informativas may be used, where the statutory threshold is otherwise met, to determine the identity of the presumed author or authors; this control does not state that opening them in E.G. 745 was mandatory."
+    },
+    "supervening_timing": "The 29-Jul-2026 DP1901 Fiscal report recorded by the 14-Sep order existed before the 31-Jul/2-Aug E.G.745 source filing.",
+    "control_file": "evidence/fiscalia/2026/EG745_IMMINENT_FILING_INTERCONNECTIVITY_CONTROL_18SEP2026.md"
   }
 }

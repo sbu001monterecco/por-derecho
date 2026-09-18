@@ -212,6 +212,16 @@ Maintenance rule: preserve the public, private-RICPE, regional-incentive and ord
 
 Maintenance rule: do not revert to neutral-recipient language for operational handling, but do not convert adverse posture into collective or adjudicated guilt. Any status change must update both public languages, machine-readable controls, correspondence data, corrections/gaps, publication manifest and deployment log. No outbound contact is authorised by repository publication.
 
+
+### E.G. 745 imminent-filing interconnectivity — 18 Sep 2026
+
+| Track | Public routes | Canonical control | Current state | Open production / next action |
+|---|---|---|---|---|
+| E.G. 745 successor / Fiscalía asymmetry-shield test | ES/EN E.G. 745 hub + DIP 2 + DP 1901 + Fiscalía open letter + Calificación parallel-lives/criminal-misuse + justice record | `evidence/fiscalia/2026/EG745_IMMINENT_FILING_INTERCONNECTIVITY_CONTROL_18SEP2026.md` + 18-Sep successor patch + MF shortcomings matrix + machine notice record | **SUCCESSOR PREPARED / NOT VERIFIED FILED.** DP1901 14-Sep order now establishes existence/date/requested archive outcome of the 29-Jul Fiscal report; DIP2 correction chain is fully digitised. Controlled formulation: documented asymmetric prosecutorial treatment with an attributed allegation of a de facto protective effect. | obtain signed D38 report/author/corpus/reparto/visado; D39 docket/initiating document/Control21-24 reparto; E.G.745 complete file and 20/21-Aug routing; DIP2 post-correction handling; DI248 requested-vs-performed diligences; then sign/file only the final successor and preserve exact receipt. |
+
+Maintenance rule: every one of the listed public nodes must link back to the E.G. 745 hub and to its direct source neighbour. Interconnectivity does not merge proceedings, transfer personal knowledge or establish motive/guilt. The 12-Sep predecessor is retained but is not the filing version.
+
+
 ### Ricardo de Mosteyrín / named justice-professionals caret coverage — 31 Aug 2026
 
 | Track | Public routes | Canonical control | Current state | Open production |

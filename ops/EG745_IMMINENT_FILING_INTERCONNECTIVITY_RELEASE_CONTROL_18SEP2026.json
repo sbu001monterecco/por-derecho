@@ -1,0 +1,48 @@
+{
+  "schema": "por-derecho.publication-manifest.v1",
+  "publication_id": "eg745-imminent-filing-interconnectivity-20260918",
+  "control_date": "2026-09-18",
+  "release_state": "PREPARED_BRANCH_NOT_LIVE",
+  "filing_state": "SUCCESSOR_PREPARED_NOT_VERIFIED_FILED",
+  "purpose": "Strengthen E.G. 745 successor filing support and reciprocal interconnectivity without performing any external filing or service.",
+  "controlling_proposition": "Documented asymmetric prosecutorial treatment with an attributed allegation of a de facto protective/shielding effect; motive and liability remain actor-specific and unproved.",
+  "core_controls": [
+    "evidence/fiscalia/2026/EG745_IMMINENT_FILING_INTERCONNECTIVITY_CONTROL_18SEP2026.md",
+    "drafts/fiscalia/2026-09-18_EG745_DP1901_SUPERVENING_EVENT_PATCH_DRAFT.md",
+    "evidence/fiscalia/2026/MF_SHORTCOMINGS_DP1901_EG745_PRODUCTION_MATRIX_18SEP2026.md",
+    "evidence/fiscalia/2026/EG_745_2026_ERROR_OMISSION_MISCLASSIFICATION_REGISTER_31AUG2026.md",
+    "ops/DP1901_EG745_MF_IMMEDIATE_ACTION_MATRIX_18SEP2026.md",
+    "assets/data/ministerio-fiscal-adverse-party-full-notice-v1.json"
+  ],
+  "public_routes": {
+    "es": [
+      "es/fiscalia-inspeccion-exp-gub-745-2026/index.html",
+      "es/fiscalia-dip-2-2026/index.html",
+      "es/dp-1901-2026/index.html",
+      "es/carta-abierta-ministerio-fiscal/index.html",
+      "es/tesis-uso-criminal-procedimiento-calificacion/index.html",
+      "es/calificacion-concurso-36-2012-vidas-paralelas/index.html",
+      "es/justicia-registro-institucional/index.html"
+    ],
+    "en": [
+      "en/public-prosecution-inspection-exp-gub-745-2026/index.html",
+      "en/fiscalia-dip-2-2026/index.html",
+      "en/dp-1901-2026/index.html",
+      "en/open-letter-public-prosecution-service/index.html",
+      "en/insolvency-classification-criminal-misuse-thesis/index.html",
+      "en/insolvency-classification-parallel-lives/index.html",
+      "en/justice-institutional-record/index.html"
+    ]
+  },
+  "boundaries": [
+    "Repository/publication state is not filing, service, institutional receipt or personal access.",
+    "The 29 July dismissal request is a concrete dated prosecutorial act but is not by itself proof of capture, prevarication, coordination or guilt.",
+    "Article 164/167 supplies a possible identity-finding mechanism; this manifest does not assert that opening diligencias informativas was mandatory.",
+    "Every proceeding remains procedurally separate unless a primary source proves a defined bridge."
+  ],
+  "release_notes": [
+    "E.G. 745 public status updated to 18-Sep successor prepared / not verified filed.",
+    "DP 1901 English gateway stale later-order statement corrected.",
+    "Reciprocal graph spans E.G. 745, DIP 2, DP 1901, Fiscalía open letter, Calificación thesis/parallel lives and Justice record."
+  ]
+}
