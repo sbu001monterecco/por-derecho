@@ -1,5 +1,11 @@
 # Conversation deletion and continuity gate
 
+## 18 September 2026 — deletion pause / ingestion-first supersession
+
+Gil Marer has expressly paused deletion. The current retirement audit is to be used as an **ingestion map**: matter-related reusable intelligence must first be incorporated/reconciled into the active GitHub continuity layer and later additively into canonical GitLab after access restoration. Clearly unrelated personal/commercial material is excluded. This pause supersedes any earlier operational assumption that a thread should now be deleted merely because an earlier continuity threshold appeared satisfied. The detailed current control is `CHATGPT_WORKSPACE_INGESTION_CONTROL_20260918.md`; machine-readable routing is `ops/continuity/CHATGPT_WORKSPACE_INGESTION_REGISTER_20260918.json`.
+
+The public/private firewall remains unchanged. Repository preservation also remains distinct from proof that EG 745/2026 or any other external filing, service or submission actually occurred.
+
 ## Purpose
 
 This checklist defines when a source ChatGPT conversation may be treated as non-essential to project continuity. It does **not** guarantee that every sentence from a conversation has been reproduced. The objective is preservation of material reusable intelligence, decisions, architecture and pointers to underlying evidence while respecting privacy and privilege.
