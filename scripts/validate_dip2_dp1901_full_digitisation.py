@@ -134,7 +134,7 @@ def main() -> None:
         if marker not in ledger:
             fail(f"error ledger missing {marker!r}")
 
-    manifest=json.loads((ROOT/"publication-manifests/fiscalia-dip2-dp1901-full-digitisation-20260918.json").read_text(encoding="utf-8"))
+    manifest=json.loads((ROOT/"evidence/fiscalia/2026/DIP2_DP1901_FULL_DIGITISATION_STATE_18SEP2026.json").read_text(encoding="utf-8"))
     if manifest.get("publication_id")!="FISCALIA_DIP2_DP1901_FULL_DIGITISATION_20260918":
         fail("unexpected publication manifest ID")
     if manifest.get("privacy",{}).get("raw_private_native_sources_committed") is not False:
