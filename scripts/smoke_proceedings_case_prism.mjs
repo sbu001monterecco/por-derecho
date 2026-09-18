@@ -719,7 +719,7 @@ try {
   }
 
   const fiscaliaMatrixContract = interlinks.fiscalia_office_file_matrix_contract || {};
-  if (fiscaliaMatrixContract.row_denominator !== 24
+  if (fiscaliaMatrixContract.row_denominator !== 26
       || fiscaliaMatrixContract.referral_is_not_transmission !== true
       || fiscaliaMatrixContract.direct_context_and_assets_are_separate !== true
       || fiscaliaMatrixContract.material_summary_is_not_received_inventory !== true
@@ -736,7 +736,7 @@ try {
   ], 'Fiscalía matrix substantive columns');
   const fiscaliaMatrix = Array.isArray(interlinks.fiscalia_office_file_matrix) ? interlinks.fiscalia_office_file_matrix : [];
   const publicFiscaliaRows = publicRecords.filter((record) => String(record.Stream || '').toUpperCase().includes('FISCAL'));
-  if (fiscaliaMatrix.length !== 24) throw new Error(`expected 24 public Fiscalía office/file rows, found ${fiscaliaMatrix.length}`);
+  if (fiscaliaMatrix.length !== 26) throw new Error(`expected 26 public Fiscalía office/file rows, found ${fiscaliaMatrix.length}`);
   assertSameValues(fiscaliaMatrix.map((row) => row.master_id), publicFiscaliaRows.map((record) => record.Master_ID), 'Fiscalía office/file public-row denominator');
   const publicFiscaliaById = new Map(publicFiscaliaRows.map((record) => [record.Master_ID, record]));
   const profileById = new Map(fiscaliaProfiles.map((profile) => [profile.profile_id, profile]));
