@@ -8610,6 +8610,98 @@
       "supporting_assertion_count": 2
     },
     {
+      "id": "REL-LINKED_PROCEEDING-GC-CRI-008-GC-FIS-017",
+      "from_master_id": "GC-CRI-008",
+      "to_master_id": "GC-FIS-017",
+      "relationship_class": "DIRECT_PROCEDURAL_EDGE",
+      "relationship_type": "LINKED_PROCEEDING",
+      "direction": "FORWARD",
+      "why_en": "GC-CRI-008 names GC-FIS-017 in Linked_Proceedings. The canonical link is preserved without inferring joinder or shared merits.",
+      "why_es": "GC-CRI-008 identifica GC-FIS-017 en Linked_Proceedings. Se conserva el enlace canónico sin inferir acumulación ni fondo común.",
+      "source": {
+        "kind": "MASTER_REGISTER_FIELD",
+        "source_id": "PROCEEDINGS_MASTER_REGISTER",
+        "record_master_id": "GC-CRI-008",
+        "field": "Linked_Proceedings",
+        "value_token": "GC-FIS-017",
+        "evidence_status": "VERIFIED_PRIMARY_COPY_PHOTOGRAPH_TRANSCRIPTION"
+      },
+      "source_assertions": [
+        {
+          "source_id": "PROCEEDINGS_MASTER_REGISTER",
+          "source_record_master_id": "GC-CRI-008",
+          "field": "Linked_Proceedings",
+          "value_token": "GC-FIS-017",
+          "evidence_status": "VERIFIED_PRIMARY_COPY_PHOTOGRAPH_TRANSCRIPTION",
+          "assertion_relationship_type": "LINKED_PROCEEDING",
+          "assertion_direction": "FORWARD",
+          "assertion_from_master_id": "GC-CRI-008",
+          "assertion_to_master_id": "GC-FIS-017"
+        },
+        {
+          "source_id": "PROCEEDINGS_MASTER_REGISTER",
+          "source_record_master_id": "GC-FIS-017",
+          "field": "Linked_Proceedings",
+          "value_token": "GC-CRI-008",
+          "evidence_status": "VERIFIED_PRIMARY_AVAILABLE_CORPUS_FULL_TEXT",
+          "assertion_relationship_type": "LINKED_PROCEEDING",
+          "assertion_direction": "FORWARD",
+          "assertion_from_master_id": "GC-FIS-017",
+          "assertion_to_master_id": "GC-CRI-008"
+        }
+      ],
+      "limitations_en": "Reverse navigation may be derived from this recorded field. The edge does not establish joinder, notice, admissibility, knowledge, agreement, wrongdoing or liability.",
+      "limitations_es": "Puede derivarse navegación inversa de este campo registrado. El enlace no acredita acumulación, conocimiento formal, admisibilidad, conocimiento personal, acuerdo, ilicitud ni responsabilidad.",
+      "public_safe": true,
+      "supporting_assertion_count": 2
+    },
+    {
+      "id": "REL-LINKED_PROCEEDING-GC-CRI-008-NAT-FIS-004",
+      "from_master_id": "GC-CRI-008",
+      "to_master_id": "NAT-FIS-004",
+      "relationship_class": "DIRECT_PROCEDURAL_EDGE",
+      "relationship_type": "LINKED_PROCEEDING",
+      "direction": "FORWARD",
+      "why_en": "GC-CRI-008 names NAT-FIS-004 in Linked_Proceedings. The canonical link is preserved without inferring joinder or shared merits.",
+      "why_es": "GC-CRI-008 identifica NAT-FIS-004 en Linked_Proceedings. Se conserva el enlace canónico sin inferir acumulación ni fondo común.",
+      "source": {
+        "kind": "MASTER_REGISTER_FIELD",
+        "source_id": "PROCEEDINGS_MASTER_REGISTER",
+        "record_master_id": "GC-CRI-008",
+        "field": "Linked_Proceedings",
+        "value_token": "NAT-FIS-004",
+        "evidence_status": "VERIFIED_PRIMARY_COPY_PHOTOGRAPH_TRANSCRIPTION"
+      },
+      "source_assertions": [
+        {
+          "source_id": "PROCEEDINGS_MASTER_REGISTER",
+          "source_record_master_id": "GC-CRI-008",
+          "field": "Linked_Proceedings",
+          "value_token": "NAT-FIS-004",
+          "evidence_status": "VERIFIED_PRIMARY_COPY_PHOTOGRAPH_TRANSCRIPTION",
+          "assertion_relationship_type": "LINKED_PROCEEDING",
+          "assertion_direction": "FORWARD",
+          "assertion_from_master_id": "GC-CRI-008",
+          "assertion_to_master_id": "NAT-FIS-004"
+        },
+        {
+          "source_id": "PROCEEDINGS_MASTER_REGISTER",
+          "source_record_master_id": "NAT-FIS-004",
+          "field": "Linked_Proceedings",
+          "value_token": "GC-CRI-008",
+          "evidence_status": "VERIFIED_PRIMARY",
+          "assertion_relationship_type": "LINKED_PROCEEDING",
+          "assertion_direction": "FORWARD",
+          "assertion_from_master_id": "NAT-FIS-004",
+          "assertion_to_master_id": "GC-CRI-008"
+        }
+      ],
+      "limitations_en": "Reverse navigation may be derived from this recorded field. The edge does not establish joinder, notice, admissibility, knowledge, agreement, wrongdoing or liability.",
+      "limitations_es": "Puede derivarse navegación inversa de este campo registrado. El enlace no acredita acumulación, conocimiento formal, admisibilidad, conocimiento personal, acuerdo, ilicitud ni responsabilidad.",
+      "public_safe": true,
+      "supporting_assertion_count": 2
+    },
+    {
       "id": "REL-LINKED_PROCEEDING-GC-FIS-013-GC-CAL-002",
       "from_master_id": "GC-FIS-013",
       "to_master_id": "GC-CAL-002",
@@ -8772,41 +8864,6 @@
       "supporting_assertion_count": 2
     },
     {
-      "id": "REL-LINKED_PROCEEDING-GC-FIS-017-GC-CRI-008",
-      "from_master_id": "GC-FIS-017",
-      "to_master_id": "GC-CRI-008",
-      "relationship_class": "DIRECT_PROCEDURAL_EDGE",
-      "relationship_type": "LINKED_PROCEEDING",
-      "direction": "FORWARD",
-      "why_en": "GC-FIS-017 names GC-CRI-008 in Linked_Proceedings. The canonical link is preserved without inferring joinder or shared merits.",
-      "why_es": "GC-FIS-017 identifica GC-CRI-008 en Linked_Proceedings. Se conserva el enlace canónico sin inferir acumulación ni fondo común.",
-      "source": {
-        "kind": "MASTER_REGISTER_FIELD",
-        "source_id": "PROCEEDINGS_MASTER_REGISTER",
-        "record_master_id": "GC-FIS-017",
-        "field": "Linked_Proceedings",
-        "value_token": "GC-CRI-008",
-        "evidence_status": "VERIFIED_PRIMARY"
-      },
-      "source_assertions": [
-        {
-          "source_id": "PROCEEDINGS_MASTER_REGISTER",
-          "source_record_master_id": "GC-FIS-017",
-          "field": "Linked_Proceedings",
-          "value_token": "GC-CRI-008",
-          "evidence_status": "VERIFIED_PRIMARY",
-          "assertion_relationship_type": "LINKED_PROCEEDING",
-          "assertion_direction": "FORWARD",
-          "assertion_from_master_id": "GC-FIS-017",
-          "assertion_to_master_id": "GC-CRI-008"
-        }
-      ],
-      "limitations_en": "Reverse navigation may be derived from this recorded field. The edge does not establish joinder, notice, admissibility, knowledge, agreement, wrongdoing or liability.",
-      "limitations_es": "Puede derivarse navegación inversa de este campo registrado. El enlace no acredita acumulación, conocimiento formal, admisibilidad, conocimiento personal, acuerdo, ilicitud ni responsabilidad.",
-      "public_safe": true,
-      "supporting_assertion_count": 1
-    },
-    {
       "id": "REL-LINKED_PROCEEDING-GC-FIS-017-GC-FIS-033",
       "from_master_id": "GC-FIS-017",
       "to_master_id": "GC-FIS-033",
@@ -8821,7 +8878,7 @@
         "record_master_id": "GC-FIS-017",
         "field": "Linked_Proceedings",
         "value_token": "GC-FIS-033",
-        "evidence_status": "VERIFIED_PRIMARY"
+        "evidence_status": "VERIFIED_PRIMARY_AVAILABLE_CORPUS_FULL_TEXT"
       },
       "source_assertions": [
         {
@@ -8829,7 +8886,7 @@
           "source_record_master_id": "GC-FIS-017",
           "field": "Linked_Proceedings",
           "value_token": "GC-FIS-033",
-          "evidence_status": "VERIFIED_PRIMARY",
+          "evidence_status": "VERIFIED_PRIMARY_AVAILABLE_CORPUS_FULL_TEXT",
           "assertion_relationship_type": "LINKED_PROCEEDING",
           "assertion_direction": "FORWARD",
           "assertion_from_master_id": "GC-FIS-017",
@@ -8844,6 +8901,52 @@
           "assertion_relationship_type": "LINKED_PROCEEDING",
           "assertion_direction": "FORWARD",
           "assertion_from_master_id": "GC-FIS-033",
+          "assertion_to_master_id": "GC-FIS-017"
+        }
+      ],
+      "limitations_en": "Reverse navigation may be derived from this recorded field. The edge does not establish joinder, notice, admissibility, knowledge, agreement, wrongdoing or liability.",
+      "limitations_es": "Puede derivarse navegación inversa de este campo registrado. El enlace no acredita acumulación, conocimiento formal, admisibilidad, conocimiento personal, acuerdo, ilicitud ni responsabilidad.",
+      "public_safe": true,
+      "supporting_assertion_count": 2
+    },
+    {
+      "id": "REL-LINKED_PROCEEDING-GC-FIS-017-NAT-FIS-004",
+      "from_master_id": "GC-FIS-017",
+      "to_master_id": "NAT-FIS-004",
+      "relationship_class": "DIRECT_PROCEDURAL_EDGE",
+      "relationship_type": "LINKED_PROCEEDING",
+      "direction": "FORWARD",
+      "why_en": "GC-FIS-017 names NAT-FIS-004 in Linked_Proceedings. The canonical link is preserved without inferring joinder or shared merits.",
+      "why_es": "GC-FIS-017 identifica NAT-FIS-004 en Linked_Proceedings. Se conserva el enlace canónico sin inferir acumulación ni fondo común.",
+      "source": {
+        "kind": "MASTER_REGISTER_FIELD",
+        "source_id": "PROCEEDINGS_MASTER_REGISTER",
+        "record_master_id": "GC-FIS-017",
+        "field": "Linked_Proceedings",
+        "value_token": "NAT-FIS-004",
+        "evidence_status": "VERIFIED_PRIMARY_AVAILABLE_CORPUS_FULL_TEXT"
+      },
+      "source_assertions": [
+        {
+          "source_id": "PROCEEDINGS_MASTER_REGISTER",
+          "source_record_master_id": "GC-FIS-017",
+          "field": "Linked_Proceedings",
+          "value_token": "NAT-FIS-004",
+          "evidence_status": "VERIFIED_PRIMARY_AVAILABLE_CORPUS_FULL_TEXT",
+          "assertion_relationship_type": "LINKED_PROCEEDING",
+          "assertion_direction": "FORWARD",
+          "assertion_from_master_id": "GC-FIS-017",
+          "assertion_to_master_id": "NAT-FIS-004"
+        },
+        {
+          "source_id": "PROCEEDINGS_MASTER_REGISTER",
+          "source_record_master_id": "NAT-FIS-004",
+          "field": "Linked_Proceedings",
+          "value_token": "GC-FIS-017",
+          "evidence_status": "VERIFIED_PRIMARY",
+          "assertion_relationship_type": "LINKED_PROCEEDING",
+          "assertion_direction": "FORWARD",
+          "assertion_from_master_id": "NAT-FIS-004",
           "assertion_to_master_id": "GC-FIS-017"
         }
       ],
@@ -9433,41 +9536,6 @@
       "supporting_assertion_count": 1
     },
     {
-      "id": "REL-LINKED_PROCEEDING-NAT-FIS-004-GC-CRI-008",
-      "from_master_id": "NAT-FIS-004",
-      "to_master_id": "GC-CRI-008",
-      "relationship_class": "DIRECT_PROCEDURAL_EDGE",
-      "relationship_type": "LINKED_PROCEEDING",
-      "direction": "FORWARD",
-      "why_en": "NAT-FIS-004 names GC-CRI-008 in Linked_Proceedings. The canonical link is preserved without inferring joinder or shared merits.",
-      "why_es": "NAT-FIS-004 identifica GC-CRI-008 en Linked_Proceedings. Se conserva el enlace canónico sin inferir acumulación ni fondo común.",
-      "source": {
-        "kind": "MASTER_REGISTER_FIELD",
-        "source_id": "PROCEEDINGS_MASTER_REGISTER",
-        "record_master_id": "NAT-FIS-004",
-        "field": "Linked_Proceedings",
-        "value_token": "GC-CRI-008",
-        "evidence_status": "VERIFIED_PRIMARY"
-      },
-      "source_assertions": [
-        {
-          "source_id": "PROCEEDINGS_MASTER_REGISTER",
-          "source_record_master_id": "NAT-FIS-004",
-          "field": "Linked_Proceedings",
-          "value_token": "GC-CRI-008",
-          "evidence_status": "VERIFIED_PRIMARY",
-          "assertion_relationship_type": "LINKED_PROCEEDING",
-          "assertion_direction": "FORWARD",
-          "assertion_from_master_id": "NAT-FIS-004",
-          "assertion_to_master_id": "GC-CRI-008"
-        }
-      ],
-      "limitations_en": "Reverse navigation may be derived from this recorded field. The edge does not establish joinder, notice, admissibility, knowledge, agreement, wrongdoing or liability.",
-      "limitations_es": "Puede derivarse navegación inversa de este campo registrado. El enlace no acredita acumulación, conocimiento formal, admisibilidad, conocimiento personal, acuerdo, ilicitud ni responsabilidad.",
-      "public_safe": true,
-      "supporting_assertion_count": 1
-    },
-    {
       "id": "REL-LINKED_PROCEEDING-NAT-FIS-004-GC-FIS-013",
       "from_master_id": "NAT-FIS-004",
       "to_master_id": "GC-FIS-013",
@@ -9565,41 +9633,6 @@
           "assertion_direction": "FORWARD",
           "assertion_from_master_id": "NAT-FIS-004",
           "assertion_to_master_id": "GC-FIS-016"
-        }
-      ],
-      "limitations_en": "Reverse navigation may be derived from this recorded field. The edge does not establish joinder, notice, admissibility, knowledge, agreement, wrongdoing or liability.",
-      "limitations_es": "Puede derivarse navegación inversa de este campo registrado. El enlace no acredita acumulación, conocimiento formal, admisibilidad, conocimiento personal, acuerdo, ilicitud ni responsabilidad.",
-      "public_safe": true,
-      "supporting_assertion_count": 1
-    },
-    {
-      "id": "REL-LINKED_PROCEEDING-NAT-FIS-004-GC-FIS-017",
-      "from_master_id": "NAT-FIS-004",
-      "to_master_id": "GC-FIS-017",
-      "relationship_class": "DIRECT_PROCEDURAL_EDGE",
-      "relationship_type": "LINKED_PROCEEDING",
-      "direction": "FORWARD",
-      "why_en": "NAT-FIS-004 names GC-FIS-017 in Linked_Proceedings. The canonical link is preserved without inferring joinder or shared merits.",
-      "why_es": "NAT-FIS-004 identifica GC-FIS-017 en Linked_Proceedings. Se conserva el enlace canónico sin inferir acumulación ni fondo común.",
-      "source": {
-        "kind": "MASTER_REGISTER_FIELD",
-        "source_id": "PROCEEDINGS_MASTER_REGISTER",
-        "record_master_id": "NAT-FIS-004",
-        "field": "Linked_Proceedings",
-        "value_token": "GC-FIS-017",
-        "evidence_status": "VERIFIED_PRIMARY"
-      },
-      "source_assertions": [
-        {
-          "source_id": "PROCEEDINGS_MASTER_REGISTER",
-          "source_record_master_id": "NAT-FIS-004",
-          "field": "Linked_Proceedings",
-          "value_token": "GC-FIS-017",
-          "evidence_status": "VERIFIED_PRIMARY",
-          "assertion_relationship_type": "LINKED_PROCEEDING",
-          "assertion_direction": "FORWARD",
-          "assertion_from_master_id": "NAT-FIS-004",
-          "assertion_to_master_id": "GC-FIS-017"
         }
       ],
       "limitations_en": "Reverse navigation may be derived from this recorded field. The edge does not establish joinder, notice, admissibility, knowledge, agreement, wrongdoing or liability.",
@@ -23331,22 +23364,22 @@
       "master_id": "GC-CRI-008",
       "primary_classification": "DIRECT_PROCEDURAL_EDGE",
       "relationship_ids": [
-        "REL-LINKED_PROCEEDING-GC-FIS-017-GC-CRI-008",
-        "REL-LINKED_PROCEEDING-NAT-FIS-004-GC-CRI-008"
+        "REL-LINKED_PROCEEDING-GC-CRI-008-GC-FIS-017",
+        "REL-LINKED_PROCEEDING-GC-CRI-008-NAT-FIS-004"
       ],
       "context_cluster_ids": [],
       "why_en": "At least one direct relationship is supported by an explicit canonical Parent_Master_ID, Linked_Proceedings or Appeal_or_Review field.",
       "why_es": "Al menos una relación directa está respaldada por un campo canónico expreso Parent_Master_ID, Linked_Proceedings o Appeal_or_Review.",
       "limitations_en": "This disposition controls navigation only. It does not prove joinder, receipt, admissibility, knowledge, agreement, causation, wrongdoing or liability.",
       "limitations_es": "Esta clasificación controla solo la navegación. No prueba acumulación, recepción, admisibilidad, conocimiento, acuerdo, causalidad, ilicitud ni responsabilidad.",
-      "next_source_needed_en": "Fiscal report, later order, docket and annex index",
+      "next_source_needed_en": "Signed 29-Jul Fiscal report; native/certified 14-Sep order; legal notification metadata; initiating document; certified docket/index; Control 21/daily-reference-24 reparto and any joinder/reassignment act",
       "next_source_needed_es": "Informe del Ministerio Fiscal, resolución posterior, expediente e índice de anexos.",
-      "source_status": "VERIFIED_PRIMARY",
+      "source_status": "VERIFIED_PRIMARY_COPY_PHOTOGRAPH_TRANSCRIPTION",
       "basis": {
         "kind": "DIRECT_RELATIONSHIP_MEMBERSHIP",
         "relationship_ids": [
-          "REL-LINKED_PROCEEDING-GC-FIS-017-GC-CRI-008",
-          "REL-LINKED_PROCEEDING-NAT-FIS-004-GC-CRI-008"
+          "REL-LINKED_PROCEEDING-GC-CRI-008-GC-FIS-017",
+          "REL-LINKED_PROCEEDING-GC-CRI-008-NAT-FIS-004"
         ]
       },
       "finite_test": {
@@ -23355,16 +23388,16 @@
         "family_template_id": "CRIMINAL_FILE_DECISION",
         "family_taxonomy_only": true,
         "question": {
-          "en": "For DP 1901/2026, what exact source establishes Separate criminal/documentary verification and admission-control route; what complaint, evidence and prosecution/court material was before Juzgado de Instrucción Plaza 6 Las Palmas; what was decided or referred; and what is the current review/finality status?",
+          "en": "For DP 1901/2026, what exact source establishes Criminal proceeding now disposed by 14-Sep order; scope/provenance and autonomous private-actor lane require certification; what complaint, evidence and prosecution/court material was before Juzgado de Instrucción Plaza 6 Las Palmas; what was decided or referred; and what is the current review/finality status?",
           "es": "Para DP 1901/2026, ¿qué fuente exacta acredita el objeto registrado; qué denuncia, prueba y material fiscal/judicial estuvo ante Juzgado de Instrucción Plaza 6 Las Palmas; qué se decidió o remitió; y cuál es el estado actual de revisión/firmeza?"
         },
-        "recorded_object": "Separate criminal/documentary verification and admission-control route",
+        "recorded_object": "Criminal proceeding now disposed by 14-Sep order; scope/provenance and autonomous private-actor lane require certification",
         "attribution": "DOCUMENTED_PROCEDURAL_RECORD_WITH_OPEN_COMPLETION",
         "source_needed": {
-          "en": "Fiscal report, later order, docket and annex index",
+          "en": "Signed 29-Jul Fiscal report; native/certified 14-Sep order; legal notification metadata; initiating document; certified docket/index; Control 21/daily-reference-24 reparto and any joinder/reassignment act",
           "es": "Informe del Ministerio Fiscal, resolución posterior, expediente e índice de anexos."
         },
-        "current_source_status": "VERIFIED_PRIMARY",
+        "current_source_status": "VERIFIED_PRIMARY_COPY_PHOTOGRAPH_TRANSCRIPTION",
         "source_needed_status": "STATUS_UNRESOLVED",
         "source_refs": [
           {
@@ -23412,16 +23445,16 @@
           "es": "La disponibilidad lícita, admisibilidad o inclusión en el ámbito de otro expediente o fuente debe determinarse en el procedimiento seleccionado; este modelo de navegación no infiere disponibilidad ni deber de examen."
         },
         "decision_dependency": {
-          "en": "For DP 1901/2026, the finite decision question is whether the legally competent organ must determine whether the complete criminal file supports its admission, investigative steps, closure, review and current finality for the recorded object “Separate criminal/documentary verification and admission-control route”. Juzgado de Instrucción Plaza 6 Las Palmas is only the recorded custodian/organ candidate and is not treated here as legally competent or obliged to act. Controlled navigation currently identifies direct files [GC-FIS-017, NAT-FIS-004] and contextual files [none currently admitted]. Their presence does not establish receipt, admissibility or a duty to consider them.",
-          "es": "Para DP 1901/2026, la cuestión decisoria finita es si el órgano legalmente competente debe determinar si el expediente penal completo sustenta su admisión, diligencias, archivo, revisión y firmeza actual respecto del objeto registrado «Separate criminal/documentary verification and admission-control route». Juzgado de Instrucción Plaza 6 Las Palmas es solo el candidato registrado como custodio/órgano y aquí no se le atribuye competencia jurídica ni obligación de actuar. La navegación controlada identifica actualmente expedientes directos [GC-FIS-017, NAT-FIS-004] y contextuales [ninguno admitido actualmente]. Su presencia no acredita recepción, admisibilidad ni deber de examinarlos."
+          "en": "For DP 1901/2026, the finite decision question is whether the legally competent organ must determine whether the complete criminal file supports its admission, investigative steps, closure, review and current finality for the recorded object “Criminal proceeding now disposed by 14-Sep order; scope/provenance and autonomous private-actor lane require certification”. Juzgado de Instrucción Plaza 6 Las Palmas is only the recorded custodian/organ candidate and is not treated here as legally competent or obliged to act. Controlled navigation currently identifies direct files [GC-FIS-017, NAT-FIS-004] and contextual files [none currently admitted]. Their presence does not establish receipt, admissibility or a duty to consider them.",
+          "es": "Para DP 1901/2026, la cuestión decisoria finita es si el órgano legalmente competente debe determinar si el expediente penal completo sustenta su admisión, diligencias, archivo, revisión y firmeza actual respecto del objeto registrado «Criminal proceeding now disposed by 14-Sep order; scope/provenance and autonomous private-actor lane require certification». Juzgado de Instrucción Plaza 6 Las Palmas es solo el candidato registrado como custodio/órgano y aquí no se le atribuye competencia jurídica ni obligación de actuar. La navegación controlada identifica actualmente expedientes directos [GC-FIS-017, NAT-FIS-004] y contextuales [ninguno admitido actualmente]. Su presencia no acredita recepción, admisibilidad ni deber de examinarlos."
         },
         "contrary_explanation": {
-          "en": "For DP 1901/2026, the strongest hypothetical innocent or contrary explanation could be a lawful application of competence, duplication or judicialisation rules, the criminal threshold, admissibility, evidential sufficiency or procedural finality, but only if the primary record establishes that the legally competent organ applied it to “Separate criminal/documentary verification and admission-control route”. No act is attributed by this model to the recorded candidate Juzgado de Instrucción Plaza 6 Las Palmas. A different treatment, missing public inventory or related-file membership alone does not establish concealment, coordination, error or wrongdoing.",
-          "es": "Para DP 1901/2026, la explicación inocente o contraria hipotética más fuerte podría ser una aplicación lícita de reglas de competencia, duplicidad o judicialización, umbral penal, admisibilidad, suficiencia probatoria o firmeza procesal, pero solo si la fuente primaria acredita que el órgano legalmente competente la aplicó a «Separate criminal/documentary verification and admission-control route». Este modelo no atribuye actuación alguna al candidato registrado Juzgado de Instrucción Plaza 6 Las Palmas. Un tratamiento distinto, la falta de inventario público o la pertenencia a expedientes relacionados no acreditan por sí solos ocultación, coordinación, error ni ilicitud."
+          "en": "For DP 1901/2026, the strongest hypothetical innocent or contrary explanation could be a lawful application of competence, duplication or judicialisation rules, the criminal threshold, admissibility, evidential sufficiency or procedural finality, but only if the primary record establishes that the legally competent organ applied it to “Criminal proceeding now disposed by 14-Sep order; scope/provenance and autonomous private-actor lane require certification”. No act is attributed by this model to the recorded candidate Juzgado de Instrucción Plaza 6 Las Palmas. A different treatment, missing public inventory or related-file membership alone does not establish concealment, coordination, error or wrongdoing.",
+          "es": "Para DP 1901/2026, la explicación inocente o contraria hipotética más fuerte podría ser una aplicación lícita de reglas de competencia, duplicidad o judicialización, umbral penal, admisibilidad, suficiencia probatoria o firmeza procesal, pero solo si la fuente primaria acredita que el órgano legalmente competente la aplicó a «Criminal proceeding now disposed by 14-Sep order; scope/provenance and autonomous private-actor lane require certification». Este modelo no atribuye actuación alguna al candidato registrado Juzgado de Instrucción Plaza 6 Las Palmas. Un tratamiento distinto, la falta de inventario público o la pertenencia a expedientes relacionados no acreditan por sí solos ocultación, coordinación, error ni ilicitud."
         },
         "strongest_contrary_or_innocent_explanation": {
-          "en": "For DP 1901/2026, the strongest hypothetical innocent or contrary explanation could be a lawful application of competence, duplication or judicialisation rules, the criminal threshold, admissibility, evidential sufficiency or procedural finality, but only if the primary record establishes that the legally competent organ applied it to “Separate criminal/documentary verification and admission-control route”. No act is attributed by this model to the recorded candidate Juzgado de Instrucción Plaza 6 Las Palmas. A different treatment, missing public inventory or related-file membership alone does not establish concealment, coordination, error or wrongdoing.",
-          "es": "Para DP 1901/2026, la explicación inocente o contraria hipotética más fuerte podría ser una aplicación lícita de reglas de competencia, duplicidad o judicialización, umbral penal, admisibilidad, suficiencia probatoria o firmeza procesal, pero solo si la fuente primaria acredita que el órgano legalmente competente la aplicó a «Separate criminal/documentary verification and admission-control route». Este modelo no atribuye actuación alguna al candidato registrado Juzgado de Instrucción Plaza 6 Las Palmas. Un tratamiento distinto, la falta de inventario público o la pertenencia a expedientes relacionados no acreditan por sí solos ocultación, coordinación, error ni ilicitud."
+          "en": "For DP 1901/2026, the strongest hypothetical innocent or contrary explanation could be a lawful application of competence, duplication or judicialisation rules, the criminal threshold, admissibility, evidential sufficiency or procedural finality, but only if the primary record establishes that the legally competent organ applied it to “Criminal proceeding now disposed by 14-Sep order; scope/provenance and autonomous private-actor lane require certification”. No act is attributed by this model to the recorded candidate Juzgado de Instrucción Plaza 6 Las Palmas. A different treatment, missing public inventory or related-file membership alone does not establish concealment, coordination, error or wrongdoing.",
+          "es": "Para DP 1901/2026, la explicación inocente o contraria hipotética más fuerte podría ser una aplicación lícita de reglas de competencia, duplicidad o judicialización, umbral penal, admisibilidad, suficiencia probatoria o firmeza procesal, pero solo si la fuente primaria acredita que el órgano legalmente competente la aplicó a «Criminal proceeding now disposed by 14-Sep order; scope/provenance and autonomous private-actor lane require certification». Este modelo no atribuye actuación alguna al candidato registrado Juzgado de Instrucción Plaza 6 Las Palmas. Un tratamiento distinto, la falta de inventario público o la pertenencia a expedientes relacionados no acreditan por sí solos ocultación, coordinación, error ni ilicitud."
         },
         "if_confirmed": {
           "en": "If the requested primary record confirms the recorded object, treatment and current status in DP 1901/2026, the legally competent organ could determine within its powers whether to retain or revise the recorded admission/investigation/closure/review treatment and identify any next investigative or judicial step. The recorded candidate Juzgado de Instrucción Plaza 6 Las Palmas is not treated as competent merely because it is named in the register. Confirmation remains file-specific and does not establish another file's treatment, personal knowledge, causation, wrongdoing or liability.",
@@ -25933,9 +25966,9 @@
       "master_id": "GC-FIS-017",
       "primary_classification": "DIRECT_PROCEDURAL_EDGE",
       "relationship_ids": [
-        "REL-LINKED_PROCEEDING-GC-FIS-017-GC-CRI-008",
+        "REL-LINKED_PROCEEDING-GC-CRI-008-GC-FIS-017",
         "REL-LINKED_PROCEEDING-GC-FIS-017-GC-FIS-033",
-        "REL-LINKED_PROCEEDING-NAT-FIS-004-GC-FIS-017"
+        "REL-LINKED_PROCEEDING-GC-FIS-017-NAT-FIS-004"
       ],
       "context_cluster_ids": [
         "CTX-PRISM-P01",
@@ -25949,15 +25982,15 @@
       "why_es": "Al menos una relación directa está respaldada por un campo canónico expreso Parent_Master_ID, Linked_Proceedings o Appeal_or_Review.",
       "limitations_en": "This disposition controls navigation only. It does not prove joinder, receipt, admissibility, knowledge, agreement, causation, wrongdoing or liability.",
       "limitations_es": "Esta clasificación controla solo la navegación. No prueba acumulación, recepción, admisibilidad, conocimiento, acuerdo, causalidad, ilicitud ni responsabilidad.",
-      "next_source_needed_en": "Complete certified file, separate 11-Feb opening decree, incorporation/reconsideration after correction and transmission record",
+      "next_source_needed_en": "Separate 11-Feb opening decree; complete certified DIP 2 file/index; post-11-Mar handling/correction record; signed 29-Jul DP1901 Fiscal report and source corpus; transmission/reparto bridge into DP1901",
       "next_source_needed_es": "Expediente certificado completo, decreto separado de incoación de 11 de febrero, tratamiento posterior a la corrección y remisión.",
-      "source_status": "VERIFIED_PRIMARY",
+      "source_status": "VERIFIED_PRIMARY_AVAILABLE_CORPUS_FULL_TEXT",
       "basis": {
         "kind": "DIRECT_RELATIONSHIP_MEMBERSHIP",
         "relationship_ids": [
-          "REL-LINKED_PROCEEDING-GC-FIS-017-GC-CRI-008",
+          "REL-LINKED_PROCEEDING-GC-CRI-008-GC-FIS-017",
           "REL-LINKED_PROCEEDING-GC-FIS-017-GC-FIS-033",
-          "REL-LINKED_PROCEEDING-NAT-FIS-004-GC-FIS-017"
+          "REL-LINKED_PROCEEDING-GC-FIS-017-NAT-FIS-004"
         ]
       },
       "finite_test": {
@@ -25972,10 +26005,10 @@
         "recorded_object": "Fiscalía pre-procedural investigation",
         "attribution": "DOCUMENTED_PROCEDURAL_RECORD_WITH_OPEN_COMPLETION",
         "source_needed": {
-          "en": "Complete certified file, separate 11-Feb opening decree, incorporation/reconsideration after correction and transmission record",
+          "en": "Separate 11-Feb opening decree; complete certified DIP 2 file/index; post-11-Mar handling/correction record; signed 29-Jul DP1901 Fiscal report and source corpus; transmission/reparto bridge into DP1901",
           "es": "Expediente certificado completo, decreto separado de incoación de 11 de febrero, tratamiento posterior a la corrección y remisión."
         },
-        "current_source_status": "VERIFIED_PRIMARY",
+        "current_source_status": "VERIFIED_PRIMARY_AVAILABLE_CORPUS_FULL_TEXT",
         "source_needed_status": "STATUS_UNRESOLVED",
         "source_refs": [
           {
@@ -39369,11 +39402,11 @@
       "master_id": "NAT-FIS-004",
       "primary_classification": "DIRECT_PROCEDURAL_EDGE",
       "relationship_ids": [
-        "REL-LINKED_PROCEEDING-NAT-FIS-004-GC-CRI-008",
+        "REL-LINKED_PROCEEDING-GC-CRI-008-NAT-FIS-004",
+        "REL-LINKED_PROCEEDING-GC-FIS-017-NAT-FIS-004",
         "REL-LINKED_PROCEEDING-NAT-FIS-004-GC-FIS-013",
         "REL-LINKED_PROCEEDING-NAT-FIS-004-GC-FIS-014",
         "REL-LINKED_PROCEEDING-NAT-FIS-004-GC-FIS-016",
-        "REL-LINKED_PROCEEDING-NAT-FIS-004-GC-FIS-017",
         "REL-LINKED_PROCEEDING-NAT-FIS-004-GC-FIS-018"
       ],
       "context_cluster_ids": [
@@ -39389,11 +39422,11 @@
       "basis": {
         "kind": "DIRECT_RELATIONSHIP_MEMBERSHIP",
         "relationship_ids": [
-          "REL-LINKED_PROCEEDING-NAT-FIS-004-GC-CRI-008",
+          "REL-LINKED_PROCEEDING-GC-CRI-008-NAT-FIS-004",
+          "REL-LINKED_PROCEEDING-GC-FIS-017-NAT-FIS-004",
           "REL-LINKED_PROCEEDING-NAT-FIS-004-GC-FIS-013",
           "REL-LINKED_PROCEEDING-NAT-FIS-004-GC-FIS-014",
           "REL-LINKED_PROCEEDING-NAT-FIS-004-GC-FIS-016",
-          "REL-LINKED_PROCEEDING-NAT-FIS-004-GC-FIS-017",
           "REL-LINKED_PROCEEDING-NAT-FIS-004-GC-FIS-018"
         ]
       },
@@ -43428,11 +43461,11 @@
     },
     "node_disposition_count": 106,
     "direct_relationship_count": 39,
-    "direct_relationship_source_verified_pair_count": 34,
-    "direct_relationship_source_reported_pending_pair_count": 5,
-    "direct_source_assertion_count": 54,
-    "direct_source_verified_assertion_count": 47,
-    "direct_source_reported_pending_assertion_count": 7,
+    "direct_relationship_source_verified_pair_count": 30,
+    "direct_relationship_source_reported_pending_pair_count": 9,
+    "direct_source_assertion_count": 57,
+    "direct_source_verified_assertion_count": 45,
+    "direct_source_reported_pending_assertion_count": 12,
     "context_cluster_count": 26,
     "recorded_connection_cluster_count": 7,
     "recorded_stream_cluster_count": 0,
