@@ -14,8 +14,9 @@
       "DP1901-C21": {
         "control": "CONTROL-21",
         "proceeding": "GC-CRI-008",
-        "bridge_status": "PROCEDURAL_IDENTITY_COLLISION_OPEN_AFTER_14SEP2026_ORDER",
-        "do_not_infer": "Do not state that Control 21 became DP 1901/2026 as a settled fact. The 14 September order treats DP 1901 as alleged judicial prevarication; certified intake/reparto/index evidence is required."
+        "bridge_status": "UNVERIFIED_CANDIDATE_BRIDGE",
+        "do_not_infer": "Do not state that Control 21 became DP 1901/2026 as a settled fact. The 14 September order treats DP 1901 as alleged judicial prevarication; certified intake/reparto/index evidence is required.",
+        "identity_collision_status": "OPEN_AFTER_14SEP2026_ORDER"
       },
       "DP1956-C22": {
         "control": "CONTROL-22",
@@ -27,9 +28,10 @@
       "C24-JUDGE": {
         "control": "CONTROL-24",
         "canonical_record": "GC-HC-010",
-        "formal_destination_status": "OPEN_RECONCILIATION_WITH_DP1901_AFTER_14SEP2026_ORDER",
-        "bridge_status": "PROCEDURAL_IDENTITY_COLLISION_OPEN_AFTER_14SEP2026_ORDER",
-        "do_not_infer": "Daily reference 24 is not itself a NIG or DP. The 14 September DP 1901 order creates a serious routing-identity question but does not prove that Control 24 generated, was joined to, or was reassigned into DP 1901."
+        "formal_destination_status": "UNKNOWN",
+        "bridge_status": "UNVERIFIED_CANDIDATE_BRIDGE",
+        "do_not_infer": "Daily reference 24 is not itself a NIG or DP. The 14 September DP 1901 order creates a serious routing-identity question but does not prove that Control 24 generated, was joined to, or was reassigned into DP 1901.",
+        "identity_collision_status": "OPEN_CANDIDATE_DP1901_RECONCILIATION_AFTER_14SEP2026_ORDER"
       }
     },
     "same_date_safeguard": {
