@@ -185,7 +185,16 @@ def main() -> int:
                 pending.get("control_id") == "PD-CUATRECASAS-ETJ-DP748-20260918-01",
                 "pending 18-Sep Cuatrecasas/La Laguna material control missing",
             )
-            require(pending.get("state") == "PREPARED_PENDING_MERGE", "pending material state drift")
+            require(
+                pending.get("state") in {"PREPARED_PENDING_MERGE", "MERGED_AWAITING_PAGES_READBACK"},
+                "pending material state drift",
+            )
+            if pending.get("state") == "MERGED_AWAITING_PAGES_READBACK":
+                require(
+                    re.fullmatch(r"[0-9a-f]{40}", str(pending.get("merge_sha", ""))) is not None,
+                    "merged-awaiting-readback state lacks a valid merge SHA",
+                )
+                require(pending.get("merged_to") == "main", "merged-awaiting-readback state must identify main")
         repository = state.get("repository") or {}
         require(repository.get("current_main_sha_at_preparation") == MERGE_SHA, "unitary merge SHA drift")
         require(repository.get("source_publication_merge_sha") == MERGE_SHA, "publication merge SHA drift")
