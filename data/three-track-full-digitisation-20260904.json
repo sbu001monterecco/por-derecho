@@ -197,9 +197,10 @@
         "official_case_number": null,
         "nig": null,
         "assigned_court": null,
-        "current_status": "FILED/PRESENTED — DESTINATION/ALLOCATION NOW REQUIRES RECONCILIATION WITH DP 1901 AFTER 14-SEP ORDER",
+        "current_status": "FILED/PRESENTED — FORMAL ALLOCATION AND CURRENT STATUS NOT YET PRIMARY-VERIFIED",
         "cgpj_relation": "reported to CGPJ within the 169/2026 appeal record; remains a separate institutional route",
-        "dp1901_collision": "The 14 September order treats DP 1901 as alleged prevarication; this creates an open candidate bridge to Control 24 but does not prove identity, joinder or reassignment."
+        "dp1901_collision": "The 14 September order treats DP 1901 as alleged prevarication; this creates an open candidate bridge to Control 24 but does not prove identity, joinder or reassignment.",
+        "supervening_status_20260918": "DESTINATION/ALLOCATION REQUIRES RECONCILIATION WITH DP 1901 AFTER 14-SEP ORDER"
       },
       "principal_modules": [
         "Funded exit and judicial knowledge",
