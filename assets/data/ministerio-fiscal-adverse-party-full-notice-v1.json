@@ -42,7 +42,7 @@
     "substantively_answered": false
   },
   "eg745_parallel_response": {
-    "reconsideration": "12_SEP_VERSION_PREPARED_NOT_FILED_SUCCESSOR_REQUIRED_FOR_DP1901_EVENT",
+    "reconsideration": "PREPARED_OUTSTANDING_NOT_VERIFIED_FILED",
     "access_preservation": "DRAFT_PREPARED_NOT_VERIFIED_FILED",
     "direct_contentious_route": "DEFERRED_PREFERENCE_DEADLINE_STANDING_AND_REPRESENTATION_COUNSEL_VERIFY",
     "parallel_lanes": [
@@ -52,7 +52,8 @@
       "actor-specific accountability",
       "RPL 2523 and claimant-specific recovery",
       "public notice and right of reply"
-    ]
+    ],
+    "reconsideration_successor": "12_SEP_VERSION_REQUIRES_18SEP_DP1901_SUPERVENING_EVENT_UPDATE_BEFORE_FILING"
   },
   "evidence_boundaries": [
     "Public publication is not proof of formal service, institutional receipt or personal access.",
