@@ -1,45 +1,37 @@
 {
-  "control_id": "PD-CAJASIETE-INSTITUTIONAL-READER-20260919-01",
-  "status": "GITHUB_RELEASE_CANDIDATE",
-  "repository_role": "GitHub recovery/public mirror while canonical GitLab account access is blocked",
-  "objective": "Rebuild the CajaSiete email-linked landing experience as an independent institutional reader, preserving commercial separation, 2021 reporting-person continuity, legal-scope safeguards, finite governance questions, and immutable sent-page snapshots.",
-  "routes": {
-    "primary_es": "/es/cajasiete-responsabilidad-cumplimiento-trazabilidad/",
-    "primary_en": "/en/cajasiete-accountability-compliance-traceability/",
-    "commercial_es": "/es/cajasiete-sun-park-financiacion-comparabilidad/",
-    "commercial_en": "/en/cajasiete-sun-park-financing-comparability/",
-    "register_es": "/es/registros-institucionales/",
-    "register_en": "/en/institutional-records/",
-    "snapshot_es": "/es/cajasiete-responsabilidad-cumplimiento-trazabilidad/snapshots/2026-09-18-1716/",
-    "snapshot_en": "/en/cajasiete-accountability-compliance-traceability/snapshots/2026-09-18-1716/"
-  },
-  "design_boundary": {
-    "principle": "Institutionally adjacent, visually independent",
-    "prohibited": "No CajaSiete logo, wordmark, distinctive brand lockup, or claim/impression of affiliation or official authorship",
-    "explicit_label": "Independent public record / not a CajaSiete website"
-  },
-  "legal_position": {
-    "capacities": [
-      "directly affected/injured party",
-      "stated reporting person / whistleblower since 2021"
+  "schema": "por-derecho.publication-state.v1",
+  "schema_version": "1.0.0",
+  "publication_id": "PD-CAJASIETE-INSTITUTIONAL-READER-20260919-01",
+  "control_date": "2026-09-19",
+  "current_state": "MERGED",
+  "owner": "Project Sun Rock / Por Derecho",
+  "expected_routes": {
+    "es": [
+      "es/cajasiete-responsabilidad-cumplimiento-trazabilidad/index.html",
+      "es/cajasiete-sun-park-financiacion-comparabilidad/index.html",
+      "es/registros-institucionales/index.html",
+      "es/cajasiete-responsabilidad-cumplimiento-trazabilidad/snapshots/2026-09-18-1716/index.html"
     ],
-    "safeguard": "Protected status is not presented as universal or automatically adjudicated; applicability is communication-specific and jurisdiction-specific.",
-    "temporal_boundary": "2021 RICPE/Sun Park/RIC notice history is not backfilled with later-discovered GC/836/P06 or FEDER/ERDF evidence."
+    "en": [
+      "en/cajasiete-accountability-compliance-traceability/index.html",
+      "en/cajasiete-sun-park-financing-comparability/index.html",
+      "en/institutional-records/index.html",
+      "en/cajasiete-accountability-compliance-traceability/snapshots/2026-09-18-1716/index.html"
+    ]
   },
-  "core_questions": [
-    "decision ownership",
-    "conflict/independence check",
-    "audit trail",
-    "distribution/routing",
-    "owner of consolidated response"
-  ],
-  "traceability_repairs": [
-    "Immutable public snapshot of the 18 Sep 2026 email-linked page state",
-    "Superseded stale archive statement assigning Portfolio's 11 Sep response to PD-SP-EVT-0180; live canonical 0180 remains CajaSiete 18 Sep 2026"
-  ],
-  "validation": [
-    "scripts/validate_cajasiete_institutional_reader.py",
-    "scripts/production_smoke_check.py"
-  ],
-  "gitlab_parity": "PENDING_ACCESS_RESTORATION; do not overwrite newer GitHub recovery work with older public GitLab Pages state."
+  "validation": {
+    "evidence": [
+      "PR #1584 merged",
+      "scripts/validate_cajasiete_institutional_reader.py",
+      "audience-experience source/link validation",
+      "publication-integrity gate"
+    ]
+  },
+  "merge_sha": "b88fdfa9e63f943f9ff1fc7bafbaaa660464edeb",
+  "notes": {
+    "design_boundary": "Institutionally adjacent, visually independent; no CajaSiete affiliation or official-author appearance.",
+    "gitlab_parity": "Pending restoration of canonical GitLab account access.",
+    "reporting_boundary": "2021 RICPE/Sun Park/RIC reporting is not backfilled with later GC/836/P06 or FEDER/ERDF evidence.",
+    "deploy_gate_fix": "Manifest repaired in place; protected-path preservation retained; nested public snapshot links made absolute; locked 47-route smoke contract restored."
+  }
 }
