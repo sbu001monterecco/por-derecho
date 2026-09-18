@@ -804,15 +804,15 @@ try {
       }
     }
   }
-  if (fiscaliaMatrix.filter((row) => row.is_proceeding === 'TRUE').length !== 21
+  if (fiscaliaMatrix.filter((row) => row.is_proceeding === 'TRUE').length !== 23
       || fiscaliaMatrix.filter((row) => row.is_proceeding === 'UNVERIFIED').length !== 3
       || matrixProfileIds.length !== 8) {
-    throw new Error('Fiscalía matrix must remain 21 exact + 3 unverified rows, with eight source-profiled matrix rows');
+    throw new Error('Fiscalía matrix must remain 23 exact + 3 unverified rows, with eight source-profiled matrix rows');
   }
   const outsideMatrixProfiles = fiscaliaProfiles.filter((profile) => !matrixProfileIds.includes(profile.profile_id));
   if (outsideMatrixProfiles.length !== 1 || outsideMatrixProfiles[0].episode_id !== 'dp1901-2026'
       || outsideMatrixProfiles[0].master_id !== 'GC-CRI-008') {
-    throw new Error('the ninth controlled Fiscalía episode must remain dp1901-2026 → GC-CRI-008 outside the 24-row Fiscalía matrix');
+    throw new Error('the ninth controlled Fiscalía episode must remain dp1901-2026 → GC-CRI-008 outside the 26-row Fiscalía matrix');
   }
   const gub86Row = fiscaliaMatrix.find((row) => row.master_id === 'LZ-FIS-007');
   if (gub86Row?.material_received_status !== 'NOT_LOCATED'
@@ -829,33 +829,33 @@ try {
 
   const coverage = interlinks.coverage || {};
   const requiredCoverage = {
-    public_exact_proceeding_count: 97,
-    case_prism_exact_proceeding_covered_count: 43,
-    case_prism_exact_proceeding_uncovered_count: 54,
-    decision_dependency_exact_coverage: 'VERIFIED_97_OF_97',
+    public_exact_proceeding_count: 106,
+    case_prism_exact_proceeding_covered_count: 45,
+    case_prism_exact_proceeding_uncovered_count: 61,
+    decision_dependency_exact_coverage: 'VERIFIED_106_OF_106',
     decision_dependency_exact_coverage_scope: 'PUBLIC_EXACT_FILE_FINITE_TEST_REGISTER',
-    shared_case_prism_proposition_membership_coverage: 'GAP_43_OF_97',
+    shared_case_prism_proposition_membership_coverage: 'GAP_45_OF_106',
     shared_case_prism_proposition_membership_scope: 'SHARED_CASE_PRISM_PROPOSITION_MEMBERSHIP_ONLY',
-    exact_file_decision_dependency_actionability_count: 97,
-    exact_file_decision_dependency_actionability_coverage: 'VERIFIED_97_OF_97',
-    exact_proceeding_full_finite_test_count: 97,
-    exact_proceeding_full_finite_test_coverage: 'VERIFIED_97_OF_97',
-    receipt_knowledge_classification_count: 97,
-    receipt_knowledge_classification_coverage: 'VERIFIED_97_OF_97',
-    receipt_knowledge_axis_provenance_count: 97,
-    receipt_knowledge_axis_provenance_coverage: 'VERIFIED_97_OF_97',
+    exact_file_decision_dependency_actionability_count: 106,
+    exact_file_decision_dependency_actionability_coverage: 'VERIFIED_106_OF_106',
+    exact_proceeding_full_finite_test_count: 106,
+    exact_proceeding_full_finite_test_coverage: 'VERIFIED_106_OF_106',
+    receipt_knowledge_classification_count: 106,
+    receipt_knowledge_classification_coverage: 'VERIFIED_106_OF_106',
+    receipt_knowledge_axis_provenance_count: 106,
+    receipt_knowledge_axis_provenance_coverage: 'VERIFIED_106_OF_106',
     receipt_knowledge_positive_source_profile_count: 9,
-    fiscalia_office_file_matrix_count: 24,
-    fiscalia_office_file_matrix_coverage: 'VERIFIED_24_OF_24',
-    fiscalia_office_file_matrix_substantive_column_count: 24,
-    fiscalia_office_file_matrix_substantive_column_coverage: 'VERIFIED_24_OF_24',
-    fiscalia_office_file_matrix_exact_count: 21,
+    fiscalia_office_file_matrix_count: 26,
+    fiscalia_office_file_matrix_coverage: 'VERIFIED_26_OF_26',
+    fiscalia_office_file_matrix_substantive_column_count: 26,
+    fiscalia_office_file_matrix_substantive_column_coverage: 'VERIFIED_26_OF_26',
+    fiscalia_office_file_matrix_exact_count: 23,
     fiscalia_office_file_matrix_unverified_count: 3,
     fiscalia_response_episode_profile_count: 9,
     fiscalia_office_file_matrix_source_profiled_record_count: 8,
-    controlled_trace_route_count: 97,
-    controlled_isolation_route_count: 97,
-    controlled_navigation_coverage: 'VERIFIED_97_OF_97',
+    controlled_trace_route_count: 106,
+    controlled_isolation_route_count: 106,
+    controlled_navigation_coverage: 'VERIFIED_106_OF_106',
     dedicated_narrative_dossier_coverage: 'PARTIAL_NOT_INFERRED',
   };
   for (const [field, expected] of Object.entries(requiredCoverage)) {
@@ -910,7 +910,7 @@ try {
       cell.status === 'OUTSIDE' ? [] : (cell.master_ids || []).filter((id) => exactIdSet.has(id))
     )
   ));
-  if (prismCoveredIds.size !== 43 || exactIds.length - prismCoveredIds.size !== 54) {
+  if (prismCoveredIds.size !== 45 || exactIds.length - prismCoveredIds.size !== 61) {
     throw new Error(`Case Prism exact-file content denominator mismatch (${prismCoveredIds.size}/${exactIds.length})`);
   }
   const expectedIsolationById = new Map(exactIds.map((masterId) => [
