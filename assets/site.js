@@ -44,6 +44,7 @@
   };
 
   /* MASTER_PROCEEDINGS_PUBLICATION_GATE */
+  // Compatibility/cache-bust contract: master-proceedings-publication-20260830.js?v=20260831e
   const loadMasterProceedingsPublication = () => {
     load('master-proceedings-publication-20260830.js', 'data-master-proceedings-publication-loader', '20260831e');
   };
