@@ -9,7 +9,7 @@
 
 Con posterioridad a la versión de control de 12 de septiembre de 2026, el recurrente ha recibido copia de un Auto de 14 de septiembre de 2026 dictado en DP 1901/2026, NIG 3501643220260016977 e IUP LI2026017152. El Auto declara que el procedimiento se incoó por denuncia de presunta prevaricación y hace constar expresamente que el Ministerio Fiscal, mediante informe de 29 de julio de 2026, interesó el archivo de la causa. El propio Auto acuerda sobreseimiento libre y archivo.
 
-Este hecho modifica una cuestión probatoria concreta del recurso: ya no es hipotética la existencia de una intervención fiscal en DP 1901. Quedan pendientes de producción e identificación el autor del informe, su texto íntegro, el reparto o asignación, el corpus puesto a su disposición, cualquier índice u oficio de remisión, el razonamiento seguido, cualquier visado o instrucción y la trazabilidad que explique la relación entre Control 21, Control 24 y DIP 2/2026.
+Este hecho modifica una cuestión probatoria concreta del recurso: ya no es hipotética la existencia de una intervención fiscal en DP 1901. Quedan pendientes de producción e identificación el autor del informe, su texto íntegro, el reparto o asignación, el corpus puesto a su disposición, cualquier índice u oficio de remisión, el razonamiento seguido, cualquier visado o instrucción y la trazabilidad que explique la relación entre la referencia diaria 21, la referencia diaria n.º 24 y DIP 2/2026. El Auto de 14 de septiembre está ahora transcrito íntegramente página por página desde las tres fotografías fuente, con SHA-256 individual, y la actualización registrada de DIP 2/2026 de 11 de marzo también está íntegramente digitalizada.
 
 La existencia de una petición fiscal de archivo no prueba por sí sola infracción, captura, prevaricación, coordinación ni mala fe. Sí constituye un acto fiscal concreto, fechado y atribuible funcionalmente a una persona identificable desde los registros institucionales, precisamente el tipo de individualización que el Decreto recurrido consideró ausente.
 
@@ -23,7 +23,7 @@ Replace every formulation equivalent to “identificar al autor y contenido del 
 
 Add:
 
-The 14 September order makes the identity question more acute rather than resolving it. Control 21 was contemporaneously documented as an autonomous 25 June complaint against private actors; Control 24 was a separate 18 June complaint concerning judicial conduct and directed to the TSJC. July communications treated DP 1901 as the former while the court's 12 July order linked it to DIP 2/2026 and the 14 September order now treats it as the latter. Inspection should obtain the official reparto/index record and any joinder, reassignment or segregation act before treating “judicialisation” as a complete answer for distinct factual modules.
+The 14 September order makes the identity question more acute rather than resolving it. The repository now also contains a full source-controlled transcription of the 14 September order and a full transcription of the 11 March DIP 2 update. Control 21 was contemporaneously documented as an autonomous 25 June complaint against private actors; Control 24 was a separate 18 June complaint concerning judicial conduct and directed to the TSJC. July communications treated DP 1901 as the former while the court's 12 July order linked it to DIP 2/2026 and the 14 September order now treats it as the latter. Inspection should obtain the official reparto/index record and any joinder, reassignment or segregation act before treating “judicialisation” as a complete answer for distinct factual modules.
 
 ## D. Ground Six — independence / circularity
 
@@ -33,7 +33,7 @@ The 29 July report is a later prosecutorial act that can now be individually loc
 
 ## E. New evidential references
 
-- **D36** — Auto DP 1901/2026 dated 14 September 2026; current source: received copy/image; native/certified court file still to be obtained.
+- **D36** — Auto DP 1901/2026 dated 14 September 2026; three photographed pages fully transcribed and hash-controlled in `evidence/judicial/dp-1901-2026/full-text/auto-14sep2026-photo-transcription.md`; native/certified court file still to be obtained.
 - **D37** — legal notification/receipt metadata for D36; OPEN.
 - **D38** — signed Ministerio Fiscal report dated 29 July 2026; OPEN / EXISTENCE-DATE-REQUESTED-OUTCOME ESTABLISHED BY D36, CONTENT/AUTHOR/CORPUS NOT YET PRODUCED.
 - **D39** — certified DP 1901 docket/index + initiating document + Control 21 / Control 24 reparto trace; OPEN.
@@ -50,7 +50,7 @@ Request expressly:
 6. initiating document and reparto;
 7. reparto/destination records for Control 21 and Control 24;
 8. every joinder, reassignment, accumulation or segregation act;
-9. the 29 July report's treatment of the DIP 2/2026 appeal-history correction;
+9. the 29 July report's treatment of the DIP 2/2026 appeal-history discrepancy and the registered 11-March correction; obtain the ATLANTE 2-March audit trail and source-to-conclusion index;
 10. preservation of relevant ATLANTE/registry/email routing traces.
 
 ## G. Attribution boundary
