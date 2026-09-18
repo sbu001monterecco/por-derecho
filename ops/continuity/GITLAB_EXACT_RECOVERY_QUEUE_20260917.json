@@ -1,7 +1,7 @@
 {
   "schema": "por-derecho.gitlab-exact-recovery-queue.v1",
   "control_id": "PD-GITLAB-EXACT-RECOVERY-20260917-01",
-  "control_date": "2026-09-17",
+  "control_date": "2026-09-18",
   "status": "OPEN_BLOCKED_BY_GITLAB_AUTHENTICATION",
   "last_verified_gitlab_main_sha": "7d086d098676eecc2c1647ed09b348d8dc0bdc69",
   "items": [
@@ -57,6 +57,21 @@
         "Orbit/index state where available"
       ],
       "recovery": "Export or snapshot through authenticated GitLab APIs/UI after reinstatement; Git history cannot reconstruct these objects."
+    },
+    {
+      "id": "GL-OUTAGE-001",
+      "object": "Cabildo authority-access receipt continuity delta — 17–18 September 2026",
+      "state": "GITHUB_OUTAGE_DELTA_PENDING_CANONICAL_RECONCILIATION",
+      "github_base_sha": "e79d4233b172d45baf27964e8a5165447fe3b0c1",
+      "github_branch": "continuity/authority-access-20260918",
+      "github_paths": [
+        "assets/data/cabildo-authority-access-received-20260918.json",
+        "ops/authority-access/CABILDO_AUTHORITY_ACCESS_RECEIVED_20260918.md",
+        "en/cabildo-lanzarote-tourism-traceability/index.html",
+        "es/cabildo-lanzarote-turismo-trazabilidad/index.html"
+      ],
+      "known": "Public-safe outage continuity records Cabildo 13811/2026 / Decreto 2026-6999 grant acquisition, 13817/2026 / Decreto 2026-7000, Comisionado incoming register 2612/2026, privacy hold and the separate 3671/2022 native-byte custody gap. Raw private evidence was not published.",
+      "recovery": "After GitLab restoration, inspect then-current canonical evidence/event/CAEPR/communications controls and the existing dedicated authority-evidence-received page. Reconcile additively, preserve newer GitLab work, assign any canonical event/CAEPR identifiers only from the current registry, and record exact GitHub source and GitLab destination SHAs."
     }
   ],
   "rules": [
@@ -64,5 +79,11 @@
     "Exact GitLab bytes and platform metadata outrank functional substitutes once authenticated.",
     "Outage-period GitHub work must be reconciled additively; do not reset or force-push it away.",
     "Every imported GitLab item must record source SHA, object ID/path, retrieval date and parity result."
-  ]
+  ],
+  "restoration_status": {
+    "checked_date": "2026-09-18",
+    "authenticated_access": "BLOCKED_ACCOUNT_LEVEL_403",
+    "current_action": "HUMAN_REVIEW_IN_PROGRESS",
+    "public_boundary": "Support-ticket identifiers, email addresses, verification-channel details and private provider metadata remain outside the public repository."
+  }
 }
