@@ -2,7 +2,7 @@
   "schema_version": "1.0.0",
   "dataset": "por-derecho.public-proceedings-projection",
   "canonical_source_id": "PROCEEDINGS_MASTER_REGISTER",
-  "derivation": "DETERMINISTIC_ALLOWLIST",
+  "derivation": "DETERMINISTIC_ALLOWLIST Updated 18 Sep 2026 for DIP 2 available-corpus full-text completion and DP 1901 downstream source.",
   "canonical_source_sha256": "13866af39632d5097d8496cf5b7c787437d659fff6d0ee258636f9f5ee81a409",
   "publication_policy": {
     "eligibility_field": "Public_Treatment",
@@ -1291,13 +1291,13 @@
       "Date_or_Period": "2026",
       "Connection": "Superior-Fiscalía judge-related aforado module linked to DP 1901/2026",
       "Object_or_Purpose": "Fiscalía pre-procedural investigation",
-      "Status": "Opened 11 Feb 2026 as recorded in the 6 Mar decree; archived 6 Mar; notice 9 Mar; appeal-status premise corrected 11 Mar",
-      "Latest_Known_Event": "Registered correction REGAGE26e00026303869 filed 11 Mar 2026",
+      "Status": "Opened 11 Feb 2026 as recorded in the 6 Mar decree; archived 6 Mar; notice 9 Mar; appeal-status premise formally corrected by registered 11 Mar filing",
+      "Latest_Known_Event": "14 Sep 2026 DP 1901 order records a 29 Jul Ministerio Fiscal report seeking archive; order fully transcribed from source photographs on 18 Sep",
       "Appeal_or_Review": "",
       "Parent_Master_ID": "",
-      "Linked_Proceedings": "GC-CRI-008; GC-FIS-033",
-      "Source_Status": "VERIFIED_PRIMARY",
-      "Open_Reference_Gap": "Complete certified file, separate 11-Feb opening decree, incorporation/reconsideration after correction and transmission record"
+      "Linked_Proceedings": "GC-CRI-008; GC-FIS-033; NAT-FIS-004",
+      "Source_Status": "VERIFIED_PRIMARY_AVAILABLE_CORPUS_FULL_TEXT",
+      "Open_Reference_Gap": "Separate 11-Feb opening decree; complete certified DIP 2 file/index; post-11-Mar handling/correction record; signed 29-Jul DP1901 Fiscal report and source corpus; transmission/reparto bridge into DP1901"
     },
     {
       "Master_ID": "GC-FIS-018",
