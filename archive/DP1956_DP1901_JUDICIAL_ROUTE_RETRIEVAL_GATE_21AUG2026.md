@@ -4,6 +4,21 @@
 
 **Read first:** `archive/CORRECTION_REGISTER_DP1956_DP1901_JUDICIAL_ROUTE_ADDENDUM_21AUG2026.md`.
 
+
+## 18 September 2026 successor correction — controls all older DP 1901 private-route shorthand
+
+Read `evidence/judicial/dp-1901-2026/PROCEDURAL_IDENTITY_SOURCE_CLOSURE_18SEP2026.md` and CR-160/CR-161 before reusing this gate.
+
+The current source state is:
+
+- the 18-Jun judge complaint and 25-Jun five-private-actor complaint are physically distinct autonomous filings;
+- the 25-Jun 13-page judicial supplement expressly belongs to daily reference 24;
+- private-actor amplification/documentary material was physically tendered under DP 1901/Plaza 6 on 9-Jul;
+- the signed 12-Jul providencia linked that same DP/NIG/IUP to DIP 2/2026;
+- the 14-Sep Auto treats DP 1901 as alleged judicial prevaricación.
+
+Therefore every older heading or sentence below that calls DP 1901 simply “private actors” or the settled private-actor route is now historical shorthand only. The controlling state is **PROCEDURAL_IDENTITY_COLLISION_OPEN — DIRECTION NOT CERTIFIED**. Private-actor allegations remain a separate actor-specific lane, but the certified initiating/reparto bridge to DP 1901 remains an authority-production question.
+
 ## 1. Procedural division of labour
 
 ### DP 1956/2026 — AC-specific

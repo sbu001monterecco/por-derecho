@@ -17,9 +17,9 @@
       "candidate_proceeding": "GC-CRI-008",
       "candidate_reference": "DP 1901/2026",
       "bridge_status": "UNVERIFIED_CANDIDATE_BRIDGE",
-      "evidential_state": "ATTRIBUTED_ALLEGATION",
-      "do_not_infer": "Do not state that daily reference 21 became DP 1901/2026 without a source-certified intake/reparto bridge. The 14 September order treats DP 1901 as alleged judicial prevarication, increasing rather than resolving the identity question. Do not merge this object with the judge-related 25 June supplement merely because the dates coincide.",
-      "identity_collision_status": "OPEN_AFTER_14SEP2026_ORDER"
+      "evidential_state": "DOCUMENTED",
+      "do_not_infer": "The 25-Jun daily-reference-21 private-actor filing is now documented by a stamped cover, and a 9-Jul stamped cover proves private-actor amplification material was physically tendered under DP 1901/Plaza 6. Do not state that daily reference 21 originally generated DP 1901 without the certified initiating document/reparto/index/ingestion bridge. The 12-Jul providencia links DP 1901 to DIP 2/2026 and the 14-Sep order treats it as alleged judicial prevarication.",
+      "identity_collision_status": "PROCEDURAL_IDENTITY_COLLISION_OPEN_DIRECTION_NOT_CERTIFIED"
     },
     {
       "id": "CONTROL-22",
@@ -51,8 +51,9 @@
       "trace_rule": "The fact of filing through the Decanato under Reg. No. 24 may be stated and used as a filing, chronology and provenance fact. The fact that the post-intake route remains untraced may likewise be stated as the current status gap. The presumed TSJC route must not be promoted into verified allocation, origin or custody without primary proof.",
       "bridge_status": "UNVERIFIED_CANDIDATE_BRIDGE",
       "evidential_state": "DOCUMENTED",
-      "do_not_infer": "Daily registration no. 24 is not a NIG or DP number. The 14 September DP 1901 order creates a serious candidate routing/identity question because it treats that DP as alleged judicial prevarication, but it does not prove that Control 24 generated, was joined to, or was reassigned into DP 1901. Do not split the 25 June supplement into an autonomous proceeding or promote the TSJC route into verified allocation without primary proof.",
-      "identity_collision_status": "OPEN_CANDIDATE_DP1901_RECONCILIATION_AFTER_14SEP2026_ORDER"
+      "do_not_infer": "Daily registration no. 24 is not a NIG or DP number. Its 18-Jun stamped judge filing and 25-Jun 13-page dependent supplement are now documented. The 14-Sep DP 1901 order creates a serious candidate routing/identity question, but the source closure does not prove that daily reference 24 generated, was joined to, or was reassigned into DP 1901.",
+      "identity_collision_status": "PROCEDURAL_IDENTITY_COLLISION_OPEN_DIRECTION_NOT_CERTIFIED",
+      "judge_amplification_pages": 13
     }
   ],
   "nodes": [
@@ -377,7 +378,7 @@
     "READER_CONTROL-24_ES": "/es/control-24-denuncia-juez-concurso-36-2012/"
   },
   "open_gaps": [
-    "Source-certified Control-21 to DP 1901/2026 bridge",
+    "Certified DP 1901/2026 initiating document, complete docket/index, 18-Jun–12-Jul ingestion history and direction of the daily-reference-21 / daily-reference-24 routing collision",
     "Source-certified Control-22 to DP 1956/2026 bridge",
     "Certified reparto/current destination for Control 24",
     "Response/trace confirmation from Decanato, TSJC and CGPJ identifying the post-intake route, present location and treatment of Reg. No. 24",
@@ -385,7 +386,6 @@
     "Exact CGPJ 169/2026 document nomenclature, annex reference and treatment",
     "Canonical registration of any missing stamped source files, transcriptions/OCR derivatives and hashes",
     "Signed 29 July 2026 Ministerio Fiscal report in DP 1901/2026: author, text, corpus, assignment and reasoning",
-    "Certified DP 1901/2026 initiating document, complete docket/index and Control 21 / Control 24 reparto reconciliation",
     "Native/certified 14 September 2026 DP 1901 order and legal notification metadata"
   ],
   "supervening_event_20260918": {
@@ -396,7 +396,24 @@
     "order_treatment": "proceeding described as initiated for alleged prevaricacion",
     "fiscal_report_date": "2026-07-29",
     "fiscal_requested_outcome": "archive",
-    "consequence": "Control 21 / Control 24 mapping to DP 1901 requires certified reparto/index reconciliation",
-    "non_finding": "The order does not itself prove which intake control generated DP 1901, any formal joinder/reassignment, or the content/author of the Fiscal report."
+    "consequence": "June/July source closure now proves separate intake filings and a 9-Jul private-actor tender under DP1901; certified initiating/reparto/ingestion evidence is still required to determine the collision's direction.",
+    "non_finding": "Neither the 14-Sep order nor the June/July source closure proves which intake filing originally generated DP 1901 or any formal joinder/reassignment."
+  },
+  "source_closure_20260918": {
+    "path": "evidence/judicial/dp-1901-2026/PROCEDURAL_IDENTITY_SOURCE_CLOSURE_18SEP2026.md",
+    "state": "PROCEDURAL_IDENTITY_COLLISION_OPEN — DIRECTION NOT CERTIFIED",
+    "documented": [
+      "separate stamped 18-Jun judge filing (daily reference 24)",
+      "separate stamped 25-Jun five-private-actor filing (daily reference 21)",
+      "stamped 25-Jun 13-page dependent supplement to daily reference 24",
+      "9-Jul ATLANTE listing DP1901/Plaza6 and DP1956/Plaza1",
+      "9-Jul stamped private-actor tender under DP1901/Plaza6"
+    ],
+    "authority_only_open": [
+      "initiating document/reparto that generated DP1901",
+      "electronic ingestion/document-to-NIG history",
+      "joinder/reassignment/remittal/segregation acts",
+      "exact corpus transmitted to Ministerio Fiscal"
+    ]
   }
 }
