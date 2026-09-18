@@ -108,8 +108,10 @@ def main() -> None:
     c21 = controls["CONTROL-21"]
     if c21.get("bridge_status") != "UNVERIFIED_CANDIDATE_BRIDGE":
         fail("Control 21 -> DP 1901 bridge must remain unverified until source-certified")
-    if c21.get("evidential_state") != "ATTRIBUTED_ALLEGATION":
-        fail("Control 21 current intake/date claim must remain attributed, not promoted to documented fact")
+    if c21.get("evidential_state") != "DOCUMENTED":
+        fail("Control 21 stamped intake/date evidence must remain documented")
+    if "physically tendered under DP 1901/Plaza 6" not in c21.get("do_not_infer", ""):
+        fail("Control 21 must preserve the documented 9-Jul physical tender while keeping the original DP bridge unverified")
 
     c22 = controls["CONTROL-22"]
     if c22.get("bridge_status") != "UNVERIFIED_CANDIDATE_BRIDGE":
@@ -124,6 +126,8 @@ def main() -> None:
         fail("Control 24 must retain GC-HC-010 as its canonical control record")
     if c24.get("judge_amplification_date") != "2026-06-25":
         fail("Control 24 judge-related supplement date must remain explicit")
+    if c24.get("judge_amplification_pages") != 13:
+        fail("Control 24 dependent supplement must remain 13 pages")
     if c24.get("supplement_status") != "DEPENDENT_SAME_RECORD":
         fail("25 June Control 24 supplement must remain dependent within the same Reg. No. 24 record")
     if "one Reg. No. 24" not in c24.get("canonical_identity_rule", ""):
