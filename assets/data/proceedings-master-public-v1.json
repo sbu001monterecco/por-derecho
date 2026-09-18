@@ -3,7 +3,7 @@
   "dataset": "por-derecho.public-proceedings-projection",
   "canonical_source_id": "PROCEEDINGS_MASTER_REGISTER",
   "derivation": "DETERMINISTIC_ALLOWLIST",
-  "canonical_source_sha256": "c3d3d025fa69b1e8b1d3cc7ea8e8d44cd622aeba4d33f7cf3f230a4a39cf9bb9",
+  "canonical_source_sha256": "13866af39632d5097d8496cf5b7c787437d659fff6d0ee258636f9f5ee81a409",
   "publication_policy": {
     "eligibility_field": "Public_Treatment",
     "public_treatment_allowlist": [
