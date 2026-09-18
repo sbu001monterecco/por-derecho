@@ -12,11 +12,11 @@ The source presently consists of three camera photographs supplied by the compla
 | 2 | `ea9f363e5eca27f110ee42dedc971ed0fedb8a4d72fbd1c1ce582d27c8ff7e43` |
 | 3 | `7dac86c0b2cc7a8ac4f0974125328a8c095980652f32f573a7850c9518db603f` |
 
-The native electronic court PDF and the legally operative notification metadata are not yet controlled.
+The native electronic court PDF and the legally operative notification metadata are not yet controlled. Both transcription paths carry the same evidence ID and source-photo hashes; the legacy path is not a second evidential item.
 
 ## Full text
 
-- [Page-accounted transcription](full-text/auto-14sep2026-photo-transcription.md)
+- [Canonical CI-validated page-accounted transcription](full-text/auto-14sep2026-public-transcription.md)\n- [Legacy same-source path retained for link stability](full-text/auto-14sep2026-photo-transcription.md)
 
 ## What the photographed order establishes
 
