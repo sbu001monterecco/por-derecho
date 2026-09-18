@@ -98,7 +98,7 @@
     "Control 21 and daily reference no. 24 remain separate intake records until certified reparto evidence resolves the DP 1901 mapping."
   ],
   "branch": "update/dip2-dp1901-full-digitisation-18sep2026",
-  "current_state": "BRANCH_IMPLEMENTATION_COMPLETE_PR_PENDING",
+  "current_state": "PR_OPEN_CI_PENDING",
   "expected_source_files": [
     "evidence/fiscalia/dip-2-2026/README.md",
     "evidence/fiscalia/dip-2-2026/full-text/denuncia-inicial-13ene2026-public-transcription.md",
@@ -113,7 +113,7 @@
     "scripts/validate_dip2_dp1901_full_digitisation.py"
   ],
   "validation": {
-    "status": "CI_PENDING_PR",
+    "status": "CI_PENDING_PR_1570",
     "dedicated_workflow": ".github/workflows/validate-dip2-dp1901-full-digitisation.yml",
     "required_boundaries": [
       "available located DIP2 corpus fully digitised; complete certified file not claimed",
@@ -121,5 +121,7 @@
       "appeal discrepancy does not prove deliberate falsehood",
       "29-Jul dismissal request does not prove criminality"
     ]
-  }
+  },
+  "pull_request": 1570,
+  "pull_request_url": "https://github.com/sbu001monterecco/por-derecho/pull/1570"
 }
