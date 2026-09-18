@@ -1,0 +1,38 @@
+name: Cabildo SAIP evidence controls
+on:
+  pull_request:
+    paths:
+      - 'assets/data/cabildo-six-zip-register/**'
+      - 'assets/data/cabildo-six-zip-register-index-v1.json'
+      - 'assets/data/cabildo-saip-criminal-evidence-map-v1.json'
+      - 'assets/data/cabildo-public-pdf-manifest-v2.json'
+      - 'es/evidencia-recibida-cabildo-lanzarote/**'
+      - 'en/evidence-received-cabildo-lanzarote/**'
+      - 'es/cabildo-lanzarote-mapa-penal/**'
+      - 'en/cabildo-lanzarote-criminal-evidence-map/**'
+      - 'archive/CABILDO_SAIP_CRIMINAL_EVIDENCE_PUBLICATION_CONTROL_18SEP2026.md'
+      - 'scripts/validate_cabildo_saip_criminal_evidence.py'
+      - '.github/workflows/cabildo-saip-evidence.yml'
+  push:
+    branches: [ main ]
+    paths:
+      - 'assets/data/cabildo-six-zip-register/**'
+      - 'assets/data/cabildo-six-zip-register-index-v1.json'
+      - 'assets/data/cabildo-saip-criminal-evidence-map-v1.json'
+      - 'assets/data/cabildo-public-pdf-manifest-v2.json'
+      - 'es/evidencia-recibida-cabildo-lanzarote/**'
+      - 'en/evidence-received-cabildo-lanzarote/**'
+      - 'es/cabildo-lanzarote-mapa-penal/**'
+      - 'en/cabildo-lanzarote-criminal-evidence-map/**'
+      - 'archive/CABILDO_SAIP_CRIMINAL_EVIDENCE_PUBLICATION_CONTROL_18SEP2026.md'
+      - 'scripts/validate_cabildo_saip_criminal_evidence.py'
+      - '.github/workflows/cabildo-saip-evidence.yml'
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python scripts/validate_cabildo_saip_criminal_evidence.py
