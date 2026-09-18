@@ -551,11 +551,11 @@ try {
   if (!projectionResponse.ok()) throw new Error(`public proceedings projection failed with ${projectionResponse.status()}`);
   const projection = await projectionResponse.json();
   const publicRecords = Array.isArray(projection.records) ? projection.records : [];
-  if (publicRecords.length !== 121) throw new Error(`expected 121 controlled public records, found ${publicRecords.length}`);
+  if (publicRecords.length !== 130) throw new Error(`expected 130 controlled public records, found ${publicRecords.length}`);
   const exactRecords = publicRecords.filter((record) => String(record.Is_Proceeding || '').trim().toUpperCase() === 'TRUE');
   const exactIds = exactRecords.map((record) => record.Master_ID);
   const exactIdSet = new Set(exactIds);
-  if (exactIds.length !== 97) throw new Error(`expected 97 exact public proceedings after aggregate-family repair, found ${exactIds.length}`);
+  if (exactIds.length !== 106) throw new Error(`expected 106 exact public proceedings after aggregate-family repair, found ${exactIds.length}`);
   if (exactRecords.some((record) => /FAMILY|AGGREGATE/i.test(`${record.Record_Type || ''} ${record.Proceeding_Class || ''}`))) {
     throw new Error('public exact-proceeding denominator admits an aggregate/family object');
   }
@@ -1551,7 +1551,7 @@ try {
     await masterPage.waitForSelector('tr[data-master-id]');
     const renderedMasterIds = await masterPage.locator('tr[data-master-id]').evaluateAll((rows) => rows.map((row) => row.dataset.masterId));
     assertSameValues(renderedMasterIds, publicRecords.map((record) => record.Master_ID), `${route.lang}: Master Register public denominator`);
-    if (renderedMasterIds.length !== 121) throw new Error(`${route.lang}: Master Register must render 121 controlled public rows`);
+    if (renderedMasterIds.length !== 130) throw new Error(`${route.lang}: Master Register must render 130 controlled public rows`);
     const masterTraceLinks = await masterPage.locator('tr[data-master-id]').evaluateAll((rows) => rows.map((row) => ({
       masterId: row.dataset.masterId,
       href: row.querySelector('a.pd-ref')?.href || '',
