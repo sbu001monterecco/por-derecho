@@ -1,7 +1,7 @@
 # DP 1901/2026 — procedural-identity source closure from June/July primary and contemporaneous records
 
 **Control date:** 19 September 2026 (18 September source closure, strengthened by clearer paper copies and contemporaneous-email recheck)  
-**Status:** SOURCE-CLOSURE ADDENDUM / ROUTING DIRECTION STILL NOT CERTIFIED  
+**Status:** SOURCE-CLOSURE ADDENDUM / REF. 21 → DP 1901 CONTEMPORANEOUSLY CORROBORATED / OFFICIAL REPARTO CERTIFICATION OUTSTANDING  
 **Purpose:** preserve the strongest presently located evidence about the relationship between the 18 June judge-related filing (daily reference 24), the 25 June private-actor filing (daily reference 21), and DP 1901/2026.
 
 ## Evidential rule
@@ -44,7 +44,7 @@ The stamped private-actor cover establishes a new autonomous five-private-actor 
 
 The separate 13-page stamped supplement expressly says it is to be joined to the **18 June daily-reference-24 judge complaint**. This excludes treating the supplement as an amplification of daily reference 21 or 22.
 
-Contemporaneous correspondence sent the same day reports that Decanato staff said daily reference 24 was **still at Decanato and had not yet been sent to its destination**. That report is relevant to the routing chronology but remains a party's contemporaneous account, not an official reparto certificate.
+A contemporaneous email sent at **11:23 on 25 June to Procuradora María Díaz Vecino** records that Gil had just filed a **third, autonomous and separate private-actor complaint under daily reference 21**, attached its stamped cover for tracking, and separately filed the dependent Ref. 24 supplement. The same email reports Ref. 24 still at Decanato and not yet remitted. This is contemporaneous evidence of the filing identity and Gil's understanding on the filing day; it is not a substitute for the court's certified electronic reparto log.
 
 ### 9 July — private-actor material was physically tendered under DP 1901 / Plaza 6
 
@@ -68,7 +68,7 @@ A contemporaneous 12-Jul email to counsel reports that Gil had returned to **Juz
 
 The signed paper providencia now re-photographed on 19-Sep identifies the same DP 1901/NIG/IUP, is electronically signed by Luis Francisco Galván Mesa on 12-Jul-2026, and formally sends the admission question to Ministerio Fiscal for five days **in relation to DIP 2/2026**. Gil states that a paper copy was made available informally by the court office while he was following DP 1901 as the CAM/private-actor matter; no formal service/receipt is inferred from that account.
 
-The email is a contemporaneous account of court-office interaction, not an official certification of the proceeding's legal identity. The providencia controls as to its text. The combined evidence materially strengthens the July operational mapping while still leaving the initiating/reparto direction uncertified.
+The email chain is contemporaneous evidence of the filing identity and operational mapping, not an official electronic reparto certificate. Read together, the 25 June email to Procuradora María Díaz Vecino, the stamped Ref. 21 cover, the 9 July private-actor tender under DP 1901 and the 9 July correspondence expressly recording `1901: Contra CAM y otras partes de la Comunidad de Propietarios` materially corroborate Gil's firsthand statement that Ref. 21 became DP 1901. The signed providencia controls as to its own 12 July text. What remains uncertified is the court's internal electronic creation/association event trail and the later mechanism by which the Ref. 24 judge material came to be treated within DP 1901.
 
 ### 14 September — the later Auto expressly characterises DP 1901 as alleged judicial prevaricación
 
@@ -86,24 +86,26 @@ The source set now supports all of the following without relying on hindsight:
 6. the 14-Sep Auto later characterised DP 1901 as alleged judicial prevaricación;
 7. the July record now contains a source-to-source state transition: contemporaneous private-actor identification immediately before an official DIP2-linked providencia, with no produced bridge act explaining the change.
 
-This materially strengthens the existence of a **procedural-identity/routing collision**.
+This establishes a materially asymmetric evidential position: **Ref. 21 → DP 1901 is the complainant's firsthand chronology and is contemporaneously corroborated by the 25 June procuradora email and 9 July operational mapping; the later Ref. 24 → DP 1901 association mechanism remains unexplained in the produced official record.**
 
 ## What remains unproved
 
-The source set still does **not** prove which of the following occurred:
+The source set still does **not** independently certify:
 
-- daily reference 21 generated DP 1901 and daily reference 24 was later routed/merged into it;
-- daily reference 24 generated DP 1901 and the private-actor 9-Jul material was mistakenly tendered into it;
-- a formal joinder/reassignment/segregation occurred but its act has not yet been produced;
-- another administrative/reparto explanation reconciles the sources.
+- the exact court-system creation/reparto event that converted the Ref. 21 intake into DP 1901/NIG/IUP;
+- when, by whom and under what recorded authority the separate Ref. 24 judge material was later associated with, joined to, reassigned into or otherwise treated within DP 1901;
+- whether that later treatment resulted from a formal joinder/reassignment/segregation act, an administrative association, another lawful procedural mechanism or an error; or
+- any improper intent, manipulation or criminal responsibility arising from that event history.
 
-Therefore the canonical state remains:
+Therefore the canonical state is:
 
-**PROCEDURAL_IDENTITY_COLLISION_OPEN — DIRECTION NOT CERTIFIED.**
+**REF21_TO_DP1901_CONTEMPORANEOUSLY_CORROBORATED — OFFICIAL_REPARTO_AND_REF24_ASSOCIATION_HISTORY_OUTSTANDING.**
+
+This permits the repository to state that Gil filed the autonomous private-actor complaint on 25 June under daily reference 21 and that his contemporaneous record treated that complaint as the matter that became DP 1901. It does **not** permit the repository to claim that it has independently inspected or certified the court's electronic creation/reparto event or the precise later act that associated the judge-related material with DP 1901.
 
 ## Residual authority-only production required
 
-To close direction, obtain:
+To close the remaining official event-history gap, obtain:
 
 1. the exact initiating document that generated DP 1901/NIG/IUP;
 2. certified Decanato/reparto records for daily references 21 and 24;
