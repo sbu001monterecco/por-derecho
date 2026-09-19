@@ -112,5 +112,28 @@
     "state_branch": "pd-publication-state",
     "exclusive_server_enforcement": false,
     "rule": "Owner commands in existing issue1428; exact-SHA atomic permit, normal connector merge and explicit verification/recovery. Administrative enforcement remains pending."
+  },
+  "active_integration_assignment": {
+    "control_date": "2026-09-19",
+    "owner": "DP1901-EG745-20SEP-CONTINUITY",
+    "mode": "SOLE_INTEGRATOR",
+    "authority": "Gil Marer current instruction to transfer this thread and adopt the entire existing schedule",
+    "control_tower_receipt": "https://github.com/sbu001monterecco/por-derecho/issues/1428#issuecomment-5744093096",
+    "schedule_receipt": "https://github.com/sbu001monterecco/por-derecho/issues/1621#issuecomment-5744107378",
+    "programme_queue": 1621,
+    "branch": "integration/dp1901-eg745-20sep-programme-20260919",
+    "base_main": "e22cd1a349b57fc81420105c9e1611afb65efd2a",
+    "prior_outage_branch": "continuity/gitlab-block-working-lane-20260917",
+    "prior_branch_preserved": true,
+    "successor_reason": "Outage branch diverged: nine unique commits preserved, 432 commits behind current main comparison; narrow current-main successor avoids wholesale stale replay.",
+    "other_threads": "READ_ONLY_FOR_THIS_SCOPE; preserve exact unfinished deltas; no independent publication",
+    "acknowledgement_from_prior_chat": "NOT_OBSERVED; repository notice is not technical interruption",
+    "response_target": {
+      "date": "2026-09-20",
+      "period": "EVENING_AT_LATEST",
+      "timezone": "Atlantic/Canary",
+      "is_legal_deadline": false
+    },
+    "runtime_rule": "Refresh main, tower, queue, PRs and controller state before each write/merge; this dated record is not an irrevocable lease."
   }
 }

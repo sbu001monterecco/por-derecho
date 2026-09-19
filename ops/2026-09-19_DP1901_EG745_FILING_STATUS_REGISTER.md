@@ -17,3 +17,15 @@ Repository state: GitHub additive package; GitLab blocked/read-only comparator; 
 No “filed”, “submitted”, “incorporated” or “served” claim without exact bytes, hash, annex inventory, destination, official receipt, date/time and association evidence where relevant.
 
 The three outputs remain distinct: DP1901 court remedy; Fiscal Superior territorial attribution/preservation; E.G.745 wider accountability.
+
+## 19-September instruction — responses by 20 September evening
+
+Gil Marer expressly sets **20 September 2026 evening, Canary Islands time, at the latest** as the operational target for the personally available DP1901 response programme and the distinct E.G.745 successor. The exact hour is not specified. This target is **not a certified legal deadline**; actual judicial/administrative periods retain their own source-controlled computation.
+
+The three principal tracks are not a count of personal filings. The recovered working census has 13 direct personal-request candidates and 20 connected economic/access/recovery routes. The complete historical total remains unverified; 33 must not be presented as 33 necessary new submissions. Conditional referrals, duplicate copies, already registered matters and missing file identities retain their own status. Machine control: `assets/data/dp1901-eg745-fiscal-superior-action-state-20260919.json`, `personal_action_census`.
+
+Finish the personally controllable DP1901 packages and delimit finite residuals; freeze a reusable fact → source → established proposition → open point → EG745 relevance → finite request module; then complete the EG745 successor within the same operational target without waiting indefinitely for authority replies. Judicial-remedy review remains urgent in parallel.
+
+**COUNSEL-DEPENDENT — JAVIER SIXTO / CARLOS LLAMAS SANZ REVIEW/FILING LANE:** the DP1901 judicial remedy is excluded from the personal count. No new response is FILED merely because this control or the website is updated. Preserve exact signed/submitted bytes and official receipt before any filing-state upgrade.
+
+The economic/criminal hypothesis, actor-specific proof, contrary explanations and proportionate asset-preservation/recovery requests must travel with the relevant response; a procedural defect does not prove criminal guilt. The 29 July signed report, author/assignment/corpus, official Ref21/Ref24 bridge, native judicial Auto and operative notification remain production targets, not fabricated annexes.

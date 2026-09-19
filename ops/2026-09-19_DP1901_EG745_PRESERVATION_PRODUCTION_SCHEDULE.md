@@ -20,3 +20,21 @@ Status: ACTIVE CONTROL / REQUESTS DRAFT / NOT FILED
 Preservation wording: “Se solicita la preservación finita, durante el plazo legalmente procedente y con las limitaciones de acceso aplicables, de los registros definidos. La solicitud no afirma borrado o destrucción; pretende evitar pérdida, sobrescritura, alteración o falta de trazabilidad mientras se determina la autoridad competente.”
 
 No record is PRODUCED merely because its existence is mentioned. Track existence, author, date, native bytes, hash, recipient, receipt, incorporation, access and substantive treatment separately.
+
+
+## Operational timetable adopted after integrator transfer
+
+Source: Control Tower #1428 comment5744093096 and Fiscalía queue #1621 comment5744107378. The new integrator is `DP1901-EG745-20SEP-CONTINUITY`; the existing programme continues.
+
+| Window — Canary time | Required output | Dependency / boundary |
+|---|---|---|
+| 19 September, current session | Reconcile/publish the prepared bilingual programme, recover outstanding drafts and census status | Exact-head acceptance and affected rendered/live checks; no stale branch replay |
+| 19 September 23:05 | Existing 48-hour hardening checkpoint | Report residuals; do not restart the clock or claim complete equilibrium |
+| Before EG745 drafting finish | Complete/delimit personally controlled DP1901 programme and freeze reusable evidential module | Official records not held remain finite production requests; exhaustive action count still to reconcile |
+| Urgently in parallel | DP1901 judicial remedy review by Javier Sixto / Carlos Llamas Sanz | Counsel determines operative notification, deadline, standing, representation and filing |
+| 20 September evening, at latest | Personally available DP1901 responses and separate EG745 successor | User's operational target; not a certified legal deadline. Actual filing requires exact submitted bytes and official receipt |
+| Through 21 September 11:05 | Existing 36-hour stabilization and reconciliation-readiness phase | Preserve material main once; keep independent-copy/admin/GitLab dependencies visible |
+
+The 13 items in the deliverable index are work products, not 13 external submissions. The separate working census has 13 direct personal-action candidates and 20 connected routes; neither three nor 33 is an established exhaustive new-filing count.
+
+Retain the all-office Fiscalía corpus mission, DI113 remittal/execution gaps, seven August REGAGE routes, E.G.58 same-hash incorporation comparator, DI22 supervening act, DIP2 correction and calificación record. The 12-September EG745 draft remains a predecessor requiring the controlled successor, not a filing-ready final by date alone. Workflow optimization and unrelated publication backlog must not displace the responses.
