@@ -90,8 +90,13 @@ def validate() -> list[str]:
             failures.append(f"deep_text_search_not_loaded:{route}")
 
     specialist=items["SPECIALIST_SEPTEMBER_PRESENTATION_ROUTES"]
-    if specialist.get("status")!="PENDING_GITLAB_RESTORATION":
-        failures.append("specialist_routes_must_remain_pending")
+    if specialist.get("status")!="FUNCTIONAL_GITHUB_EQUIVALENT":
+        failures.append("specialist_routes_not_functional")
+    if specialist.get("exact_gitlab_source_state")!="PENDING_GITLAB_RESTORATION":
+        failures.append("specialist_exact_gitlab_source_state_not_pending")
+    specialist_control=ROOT/specialist.get("github_control","")
+    if not specialist_control.is_file():
+        failures.append("specialist_route_control_missing")
     native=items["GITLAB_NATIVE_PLATFORM_STATE"]
     if native.get("status")!="PENDING_GITLAB_RESTORATION":
         failures.append("gitlab_native_state_must_remain_pending")

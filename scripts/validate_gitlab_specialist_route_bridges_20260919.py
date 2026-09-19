@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate specialist public GitLab route continuity bridges."""
+"""Validate specialist GitLab-visible route continuity successors."""
 from __future__ import annotations
 
 import json
@@ -29,7 +29,7 @@ def validate() -> list[str]:
 
     if data.get("schema") != "por-derecho.gitlab-specialist-route-bridges.v1":
         failures.append("schema_mismatch")
-    if data.get("status") != "FUNCTIONAL_GITHUB_BRIDGES_EXACT_GITLAB_SOURCE_PENDING":
+    if data.get("status") != "FUNCTIONAL_GITHUB_SUCCESSORS_EXACT_GITLAB_SOURCE_PENDING":
         failures.append("status_mismatch")
     if data.get("authenticated_gitlab_restoration_verified") is not False:
         failures.append("authenticated_gitlab_restoration_must_remain_false")
@@ -43,6 +43,10 @@ def validate() -> list[str]:
         slug = item.get("slug", "")
         if item.get("status") != "FUNCTIONAL_GITHUB_EQUIVALENT":
             failures.append(f"status_not_functional:{slug}")
+        if item.get("mode") != "SOURCE_LED_GITHUB_FUNCTIONAL_SUCCESSOR":
+            failures.append(f"successor_mode_missing:{slug}")
+        if item.get("exact_gitlab_source_state") != "PENDING_GITLAB_RESTORATION":
+            failures.append(f"exact_gitlab_source_state_not_pending:{slug}")
         en_target = item.get("canonical_en", "")
         es_target = item.get("canonical_es", "")
         for lang, target in (("en", en_target), ("es", es_target)):
@@ -55,19 +59,25 @@ def validate() -> list[str]:
 
         bridge = ROOT / "en" / slug / "index.html"
         if not bridge.is_file():
-            failures.append(f"bridge_missing:{slug}")
+            failures.append(f"successor_missing:{slug}")
             continue
         text = bridge.read_text(encoding="utf-8")
         if 'meta name="robots" content="noindex,follow"' not in text:
-            failures.append(f"bridge_not_noindex:{slug}")
+            failures.append(f"successor_not_noindex:{slug}")
         expected_canonical = BASE + en_target
         match = re.search(r'<link rel="canonical" href="([^"]+)">', text)
         if not match or match.group(1) != expected_canonical:
-            failures.append(f"bridge_canonical_mismatch:{slug}")
+            failures.append(f"successor_canonical_mismatch:{slug}")
         if BOUNDARY.lower() not in text.lower():
-            failures.append(f"bridge_boundary_missing:{slug}")
+            failures.append(f"successor_boundary_missing:{slug}")
         if "exact GitLab source recovery" in text and "does not" not in text.lower():
-            failures.append(f"bridge_exact_recovery_claim:{slug}")
+            failures.append(f"successor_exact_recovery_claim:{slug}")
+        if 'data-github-functional-successor="true"' not in text:
+            failures.append(f"functional_successor_marker_missing:{slug}")
+        if "GitHub source controls used for this successor" not in text:
+            failures.append(f"source_control_section_missing:{slug}")
+        if "does not import rendered GitLab HTML" not in text:
+            failures.append(f"rendered_gitlab_import_boundary_missing:{slug}")
 
     for path in (
         ROOT / "en" / "gitlab-public-gap-map" / "index.html",
