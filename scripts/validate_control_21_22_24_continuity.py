@@ -106,12 +106,17 @@ def main() -> None:
         fail("exact Control 21/22/24 control set not preserved")
 
     c21 = controls["CONTROL-21"]
-    if c21.get("bridge_status") != "UNVERIFIED_CANDIDATE_BRIDGE":
-        fail("Control 21 -> DP 1901 bridge must remain unverified until source-certified")
-    if c21.get("evidential_state") != "DOCUMENTED":
-        fail("Control 21 stamped intake/date evidence must remain documented")
-    if "physically tendered under DP 1901/Plaza 6" not in c21.get("do_not_infer", ""):
-        fail("Control 21 must preserve the documented 9-Jul physical tender while keeping the original DP bridge unverified")
+    if c21.get("bridge_status") != "CONTEMPORANEOUSLY_CORROBORATED_OFFICIAL_REPARTO_OPEN":
+        fail("Control 21 -> DP 1901 must preserve contemporaneous corroboration while official reparto remains open")
+    if c21.get("evidential_state") != "DOCUMENTED_AND_CONTEMPORANEOUSLY_MAPPED_TO_DP1901":
+        fail("Control 21 must preserve documented intake plus contemporaneous DP1901 mapping")
+    c21_ev = c21.get("contemporaneous_july_evidence", {})
+    if "email_20260625_to_procuradora" not in c21_ev:
+        fail("Control 21 must preserve the 25-Jun contemporaneous procuradora email")
+    if "tendered under DP1901/Plaza6" not in c21.get("do_not_infer", ""):
+        fail("Control 21 must preserve the documented 9-Jul private-actor tender under DP1901")
+    if "electronic initiating/reparto event" not in c21.get("do_not_infer", ""):
+        fail("Control 21 must preserve the boundary that official court-system creation/reparto remains uncertified")
 
     c22 = controls["CONTROL-22"]
     if c22.get("bridge_status") != "UNVERIFIED_CANDIDATE_BRIDGE":
