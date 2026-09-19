@@ -52,6 +52,22 @@
       "source": "assets/data/matter-identity-registry-v1.jsp-proceedings-20260905.json",
       "control": "assets/data/matter-identity-operational-control-v1.json",
       "boundary": "The canonical proceeding was already CARET_PENDING; the repair only adds its immutable existing ID to the operational pending-proceeding queue and does not change the proceeding identity or infer a merits outcome."
+    },
+    {
+      "id": "AM357_N07_RECIPROCAL_LINK_RECONCILIATION",
+      "state": "DETERMINISTIC_PROJECTION_REPAIR",
+      "source": "assets/data/alberto-meeting-point-357-multidirectional-evidence-v1.json",
+      "routes": [
+        "en/legal-notebook/meeting-point-357-2024-judicial-traceability/",
+        "es/cuaderno-juridico/meeting-point-357-2024-trazabilidad-judicial/"
+      ],
+      "edge_ids": [
+        "AM357-E08",
+        "AM357-E09",
+        "AM357-E10",
+        "AM357-E11"
+      ],
+      "boundary": "The canonical matrix already defined all four N07 incident edges and the opposite endpoints already rendered their reciprocal halves. This repair restores the missing N07 reciprocal navigation only; every lane remains an investigative test with the bridge unproved."
     }
   ],
   "still_pending": [
