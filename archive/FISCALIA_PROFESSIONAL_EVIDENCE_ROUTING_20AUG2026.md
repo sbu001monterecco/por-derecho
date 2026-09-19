@@ -2,7 +2,7 @@
 
 **PwC · Grant Thornton · RSM / San Telmo**  
 **Control date:** 20 August 2026  
-**Status:** `MAILBOX RESCANNED / SEVEN REGAGE BASELINE VERIFIED / NINE PERSONALISED EMAILS SENT / ANTICORRUPTION SIGNATURE CURE OPEN / RECEIVING REFERENCES PENDING`
+**Status:** `NINE PERSONALISED EMAILS SENT / ONE CLARIFICATION DECISION / ONE CURE REQUEST / ONE CENTRAL RECEIPT CHECKPOINT / EG112 IMMEDIATE RESPONSE — SEND STATUS: PREPARED — NOT SENT`
 
 ## 1. Purpose
 
@@ -43,27 +43,32 @@ Current result:
 - every controlling communication carried the same two Spanish visual source indexes and the controlled webinar link;
 - no delivery failure was located for the controlling institutional destinations;
 - Anticorruption acknowledged receipt but required an electronically signed filing before admission;
-- no other substantive institutional response was located at this control point;
+- Fiscalía Superior's clarification decree dated 23 August and notified 25 August was located; it maintains closure of EG 112/2026 and states a territorial route for the later civil/mercantile matters;
+- FGE Technical Secretariat acknowledged central receipt on 21 August of the communication addressed to Inspection and stated that it would be submitted to the corresponding management; this does not prove transfer to Inspection, E.G. 745 association or examination;
+- no substantive response from the other six institutional destinations was located in the control documented through 25 August;
 - PwC and Grant Thornton produced only automatic absence replies to the latest supplements;
-- no substantive later answer from PwC, Grant Thornton or RSM was located.
+- the public record does not establish a later substantive answer from PwC, Grant Thornton or RSM.
 
 An open response period or silence is not an adverse finding.
 
-## 3. Principal operational addresses
+## 3. Principal functions and native-route rule
 
-| Institution / function | Controlling address used | Reference or purpose |
-|---|---|---|
-| Fiscalía Superior de Canarias | `fiscalia.cac@justiciaencanarias.org` | EG 112/2026 |
-| Fiscalía CAC — diligencias preprocesales | `fiscaliacacdiligenciaspreproc@justiciaencanarias.org` | DIP 2/2026 notifications |
-| Fiscalía Provincial de Las Palmas | `fiscaliaprov.lp@justiciaencanarias.org` | Provincial control and REGAGE26e00070237051 |
-| Provincial gubernativo / notification | `fisgub.lpa@justiciaencanarias.org` | DI 22/2026 |
-| Fiscalía de Área de Arrecife | `fi.arreprosario@justiciaencanarias.org` | Exp. Gub. 86/2026 territorial route |
-| Fiscalía de la Audiencia Nacional | `fiscalia.an@fiscal.es` | Exp. Gub. 86/2026 referral traceability |
-| FGE Secretaría Técnica | `fge.secretariatecnica@fiscal.es` | ST 104/2025, ST 553/2026 and central transfers |
-| FGE Atención al Ciudadano | `fge.atencionalciudadano@fiscal.es` | Central receipt / FGE route |
-| Fiscalía Anticorrupción complaints | `fiscalia.anticorrupcion.denuncias@fiscal.es` | Exp. Gub. 352/2025 / specialist route |
+| Institution / function | Reference or purpose |
+|---|---|
+| Fiscalía Superior de Canarias | EG 112/2026 |
+| Fiscalía CAC — diligencias preprocesales | DIP 2/2026 notifications |
+| Fiscalía Provincial de Las Palmas | Provincial control and REGAGE26e00070237051 |
+| Provincial governmental / notification function | DI 22/2026 |
+| Fiscalía de Área de Arrecife | Exp. Gub. 86/2026 territorial route |
+| Fiscalía de la Audiencia Nacional | Exp. Gub. 86/2026 referral traceability |
+| FGE Secretaría Técnica | ST 104/2025, ST 553/2026 and central transfers |
+| FGE citizen-receipt function | Central receipt / FGE route |
+| Fiscalía Anticorrupción complaints function | Exp. Gub. 352/2025 / specialist route |
 
-Historical control: `anticorrupcion@fiscal.es` produced a delivery failure and is not the controlling address.
+Exact operational addresses, invalid historical routes and recipient-resolution
+notes remain in the native mailbox evidence and are not published here. Before
+any future communication, re-query the native mailbox and verify the current
+route; do not reconstruct an address from this repository.
 
 ## 4. Seven prior REGAGE routes
 
@@ -87,10 +92,14 @@ The later emails therefore identify genuinely later evidence and destination-spe
 
 ## 5. Common evidence set used on 20 August
 
-Every controlling substantive email attached:
+Every controlling substantive email carried the two visual-source categories
+below. The public assets bind the explanatory content without publishing a
+private attachment manifest:
 
-1. `pwc-five-actors-plus-ac-2016-knowledge-checkpoint-ES.png`
-2. `san-telmo-ricpe-sun-park-stamp-v1-ES.png`
+| Public source asset | SHA-256 | Size |
+|---|---|---:|
+| `assets/evidence/email-used-20260822/pwc-five-actors-plus-ac-2016-knowledge-checkpoint-ES.png` | `6b3dfac14865f8bd9cdaf6eda6b610ff67175a96761f9d5ab7a0819b935643bf` | 489,983 bytes |
+| `assets/evidence/email-used-20260822/san-telmo-ricpe-sun-park-stamp-v1-ES.png` | `f50790d29a0dc55521e03693b9023d55241212bbb4fd78977187dbe8bf544add` | 827,315 bytes |
 
 Every controlling substantive email linked to:
 
@@ -157,7 +166,13 @@ That module must be separated from the private and economic mechanism.
 
 It does not prove an offence and does not automatically place all facts before the special forum.
 
-EG 112/2026 requires clarification because it states that no aforado person is identified while invoking DIP 2/2026 and the judge-related proceedings to characterise the later filing’s real object.
+EG 112/2026 has now been clarified by the signed 23 August decree notified on
+25 August. The decree recognises the historic DIP 2/2026 module, maintains
+closure because it identifies no new or similar criminal accusation against the
+Magistrate, and states a territorial route for the later civil/mercantile
+matters. The remaining controlled questions concern referral traceability and
+the separate disposition of the economic, professional, public-funds and
+preservation modules.
 
 ## 8. Nine personalised communications completed
 
@@ -165,15 +180,18 @@ EG 112/2026 requires clarification because it states that no aforado person is i
 |---:|---|---|---|
 | 1 | Arrecife | Exp. Gub. 86/2026, territorial preservation and local evidence | Sent; reference pending |
 | 2 | Las Palmas Provincial | DI 22/2026, DP 1901/2026 corpus, custody and Arrecife coordination | Controlling version sent; duplicate corrected |
-| 3 | Fiscalía Superior | EG 112/2026 errors, aforamiento, object separation and referral | Controlling version sent; duplicate corrected; traceability notice sent |
-| 4 | Inspección Fiscal | Classification, custody, routing and institutional coherence | Sent through central FGE channels |
+| 3 | Fiscalía Superior | EG 112/2026 errors, aforamiento, object separation and referral | Clarification decree dated 23 August notified 25 August; closure maintained and territorial route stated |
+| 4 | Inspección Fiscal | Classification, custody, routing and institutional coherence | Central receipt acknowledged by FGE Technical Secretariat on 21 August; transfer to Inspection, E.G. 745 association and examination remain unproved |
 | 5 | Fiscalía General del Estado | Central ownership and avoidance of circular referral | Sent |
 | 6 | Secretaría Técnica | ST association and technical destination | Sent |
 | 7 | Delitos Económicos | Transaction, information and beneficiary matrices | Sent through central channels |
 | 8 | Anticorrupción | Updated competence and public-finance/economic perimeter | Receipt acknowledged; electronic-signature cure required |
 | 9 | Fiscalía Audiencia Nacional | Exp. Gub. 86/2026 referral traceability and Pink/AEAT provenance | Sent; association/forwarding proof pending |
 
-The exact message IDs, times, subjects and correction sequence are preserved in the canonical dispatch control and CSV register.
+Exact provider IDs, timestamps, subjects, addresses and private thread metadata
+remain in the native mailbox evidence. The public dispatch control and CSV
+retain only the minimum sequence and public-safe references required for
+continuity.
 
 ## 9. Version control
 
@@ -195,12 +213,18 @@ Do not silently delete the duplicate history or present it as an unresolved ambi
 
 Anticorruption acknowledged receipt and said the communication was pending admission because a written telematic complaint must carry an accepted electronic signature.
 
-Next step:
+Proposed planning sequence — not an instruction to execute:
 
 - produce a signed supplement referencing Exp. Gub. 352/2025 and REGAGE26e00070236245;
 - file it through an accepted signed electronic route;
 - return the receipt into the same email thread;
 - request confirmation of association/admission.
+
+**Planning-only lock:** `FILING STATUS: PROPOSED — NOT DRAFTED / NOT FILED`;
+`SEND STATUS: PROPOSED — NOT DRAFTED / NOT SENT`. No drafting, filing, thread reply or other
+email action is authorised by this sequence. Apply
+`ops/continuity/FISCALIA_EG112_IMMEDIATE_RESPONSE_GITHUB_HANDOFF_20260919.md`
+and obtain the separate exact authorisation required there.
 
 This is a formal cure request, not a merits dismissal.
 
@@ -223,7 +247,7 @@ See:
 1. Cure the Anticorruption signature requirement.
 2. Obtain Arrecife receiving reference.
 3. Obtain Provincial association/corpus answer.
-4. Obtain EG 112 correction, aforamiento and referral response.
+4. Record the EG 112 clarification and obtain traceability for any transfer or association with Fiscalía Provincial de Las Palmas while keeping each module separate.
 5. Confirm central registration/functional transfer for Inspection, FGE, ST and Economic Crimes.
 6. Confirm Audiencia Nacional outgoing referral index and delivery.
 7. Track professional-firm response windows.

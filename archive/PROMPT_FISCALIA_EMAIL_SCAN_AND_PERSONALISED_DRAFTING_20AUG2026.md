@@ -2,6 +2,16 @@
 
 **Control date:** 20 August 2026
 
+> **SUPERSEDED EXECUTION CONTROL — DO NOT REPLAY.** The send-order language in
+> this historical prompt was executed on 20 August 2026 and is not a current
+> instruction to send, resend, forward or follow up. Before any new outbound
+> action, read
+> `ops/continuity/FISCALIA_EG112_IMMEDIATE_RESPONSE_GITHUB_HANDOFF_20260919.md`,
+> `EMAIL_SEND_FINAL_AUTHORIZATION_RULE.md` and
+> `archive/PRE_SEND_GMAIL_PERSON_OUTLET_HISTORY_GATE_23AUG2026.md`; complete the
+> fresh pagination-exhausted dual Gmail history gate and obtain exact final
+> authorisation. **EG112 IMMEDIATE RESPONSE — SEND STATUS: PREPARED — NOT SENT.**
+
 ```text
 MASTER EXECUTION PROMPT
 
@@ -58,25 +68,18 @@ III. GMAIL SEARCH UNIVERSE
 
 Run exact searches, then refine by proceeding and named entity.
 
-A. Official-domain and operational-address search
+A. Official-domain and operational-route search
 
-Search all time, excluding spam and trash, for messages to/from:
+Search all time, excluding spam and trash, across the native Ministerio Fiscal
+address universe and the verified threads for Superior, pre-procedural,
+Provincial, governmental-notification, Arrecife, Tenerife, Technical
+Secretariat, central receipt, Economic Crime, Anticorruption and National Court
+functions.
 
-- @fiscal.es;
-- fiscalia.cac@justiciaencanarias.org;
-- fiscaliacacdiligenciaspreproc@justiciaencanarias.org;
-- fiscaliaprov.lp@justiciaencanarias.org;
-- fisgub.lpa@justiciaencanarias.org;
-- fi.arreprosario@justiciaencanarias.org;
-- fis.tenerife@justiciaencanarias.org;
-- fge.secretariatecnica@fiscal.es;
-- fge.atencionalciudadano@fiscal.es;
-- fge.delitosadministracion@fiscal.es;
-- fiscalia.anticorrupcion.denuncias@fiscal.es;
-- fiscalia.an@fiscal.es.
-
-Preserve historical delivery failures and do not use invalid addresses as
-controlling contact routes.
+Resolve exact addresses from the current native mailbox and authoritative
+directory at execution time. Do not reconstruct them from the public
+repository. Preserve historical delivery failures and do not use an invalid or
+superseded route as the controlling contact route.
 
 B. Proceeding/reference search
 
@@ -306,17 +309,14 @@ TIER 2 — offer on request or link:
 
 Do not attach hundreds of pages unless the recipient needs the full corpus.
 
-X. DECISION RULE
+X. HISTORICAL DECISION RECORD — SUPERSEDED / DO NOT EXECUTE
 
-Recommend:
-
-- SEND FIRST: Arrecife, because of territorial competence and Exp. Gub.
-  86/2026 referral;
-- SEND SECOND: Provincial Las Palmas, as a separate custody/coordination
-  communication connected to DI 22/2026 and REGAGE26e00070237051;
-- REVIEW BEFORE SENDING: Fiscalía Superior EG 112/2026 response;
-- HOLD: FGE/Inspección, Delitos Económicos, Anticorrupción and Audiencia
-  Nacional unless their specific trigger is met.
+The original 20 August recommendation sequenced Arrecife first, Provincial Las
+Palmas second and Fiscalía Superior after review, while holding the remaining
+functions for their specific triggers. The nine personalised communications
+were subsequently sent. This historical ordering is evidence of the earlier
+decision process only; it is not a current instruction or authority to replay
+any message.
 
 Do not send any email automatically. Create drafts only if expressly
 instructed or if the execution mandate includes reversible preparation.
