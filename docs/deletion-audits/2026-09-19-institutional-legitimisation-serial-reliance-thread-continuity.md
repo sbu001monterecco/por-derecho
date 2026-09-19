@@ -4,7 +4,7 @@
 **Thread scope:** terminology and systems analysis arising from the expression “to legitimise the illegitimate” / progressive institutional normalisation, applied to Project Sun Rock / Por Derecho  
 **Repository:** `sbu001monterecco/por-derecho`  
 **Languages preserved:** English and Spanish only  
-**Status after this ingest:** deletion-safe for the analytical content of this thread once this branch is merged into `main`
+**Status after this ingest:** **DELETION_SAFE — MERGED TO `main`**
 
 ## 1. Material preserved
 
@@ -82,11 +82,11 @@ The preservation file does not establish that:
 
 Each material proposition remains actor-, capacity-, date-, act-, source-, knowledge-, reliance-, effect- and causation-specific.
 
-## 4. Deletion-safety rule
+## 4. Deletion-safety closeout
 
-This thread is safe to retire **only after** the branch containing both this audit and the governance protocol is merged into `main`.
+The branch containing this audit and the governance protocol was merged through **PR #1592** into `main` as merge commit **`41a9b3aaad2410746136beeec0377ad86e43a768`** on 19 September 2026.
 
-The repository files, not conversational memory, are the durable continuity source for this terminology.
+The analytical content covered by this audit is therefore **DELETION_SAFE**. The repository files, not conversational memory, are the durable continuity source for this terminology.
 
 ## 5. Language rule
 
