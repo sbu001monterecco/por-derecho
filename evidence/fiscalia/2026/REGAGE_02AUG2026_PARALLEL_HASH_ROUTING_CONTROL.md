@@ -22,11 +22,21 @@ The Arrecife and Las Palmas Provincial receipts were directly re-read during the
 
 The Delitos Económicos receipt identifies the same attachment/hash and the later 8-September E.G. 58/2026 act expressly records that documentation under external registration REGAGE26e00070236543 / FGE internal REGAGE26e00070299872 was joined to E.G. 58/2026 after the Unit took knowledge of it.
 
+## Later REC processing-status notices for the territorial routes
+
+Two official informational messages from `Informa REC <reg@correo.gob.es>` add a bounded routing checkpoint beyond mere electronic presentation:
+
+- for `REGAGE26e00070236749`, REC states that the registration “ha pasado a ser tramitada por la oficina de registro Reg. Gral. de la Fiscalía de Área de Arrecife de Lanzarote-Puerto del Rosario” on 3 August 2026 at 11:41:22;
+- for `REGAGE26e00070237051`, REC states that the registration “ha pasado a ser tramitada por la oficina de registro Registro General de la Fiscalía Provincial de Las Palmas” on 4 August 2026 at 11:40:21.
+
+Each REC email expressly says it is an informational communication “sin valor legal”. It is therefore used only as `AUTHORITY-ONLY` transport/routing evidence: it supports a registry-office processing handoff/status checkpoint, but does **not** prove assignment to a Fiscal, incorporation into DI 22/2026 or another expediente, opening/reading of the attachment, merits examination, or any downstream decision.
+
 ## Classification and proof boundary
 
 - `PROVED`: seven separately registered 2–3 August routes and identity of their sole PDF attachment by filename and SHA-512.
 - `PROVED`: the 8-Sep E.G. 58 act expressly establishes joinder/knowledge for the Delitos Económicos route.
-- `AUTHORITY-ONLY` / `BOUNDED-NOT-LOCATED`: a REGAGE receipt for another route proves presentation/registration to the identified destination, but does not alone prove later internal incorporation, reading, merits examination or use by a particular decision-maker. Those downstream acts require their own routing/incorporation evidence.
+- `AUTHORITY-ONLY`: REC later reported that the Arrecife and Las Palmas Provincial registrations had passed to processing by their respective registry offices at the times stated above; the notices themselves disclaim legal value.
+- `AUTHORITY-ONLY` / `BOUNDED-NOT-LOCATED`: a REGAGE receipt or REC status notice for another route does not alone prove later internal incorporation, reading, merits examination or use by a particular decision-maker. Those downstream acts require their own routing/incorporation evidence.
 
 The repository already contained the Arrecife and Las Palmas registrations in the institutional communications register/validator. The earlier five-route wording in this control note was therefore a bounded-subset description and is superseded by this seven-route reconciliation; it was not evidence that the two territorial registrations were absent.
 
@@ -40,10 +50,10 @@ The Arrecife receipt separately proves the midnight boundary: presentation occur
 
 The Inspección route is no longer merely inferred from a central FGE receipt: the native REGAGE receipt directly proves a separate 2-Aug presentation expressly directed to Inspección Fiscal, with the same uniquely hashed PDF later expressly joined in E.G. 58 through the Delitos Económicos route.
 
-The seven-route reconciliation adds a useful bounded comparator: the same immutable document was registered not only centrally but also with Fiscalía Superior/CAC, Anticorrupción, Arrecife and Fiscalía Provincial de Las Palmas. This does **not** prove that any one of those offices internally incorporated or considered the PDF, and it does not prove coordination between decision-makers. It makes the production question finite and route-specific: for each registration, identify internal destination, incorporation/association reference, access/handling and downstream disposition.
+The seven-route reconciliation adds a useful bounded comparator: the same immutable document was registered not only centrally but also with Fiscalía Superior/CAC, Anticorrupción, Arrecife and Fiscalía Provincial de Las Palmas. The later REC notices additionally show a registry-office processing-status checkpoint for the Arrecife and Provincial routes. This does **not** prove that any one of those offices internally incorporated or considered the PDF, and it does not prove coordination between decision-makers. It makes the production question finite and route-specific: for each registration, identify internal destination, incorporation/association reference, access/handling and downstream disposition.
 
 For E.G. 745 specifically, ask where REGAGE26e00070235775 was routed internally, whether the uniquely hashed PDF was incorporated into E.G. 745/2026, who had access to it, and whether it formed part of the corpus actually considered before the 26-Aug archive. The Delitos Económicos E.G. 58 joinder is a comparison point, not proof of equivalent Inspección treatment.
 
 ## Publication boundary
 
-The native receipts expose private identifying/contact information. They remain outside the public PDF room. A public-safe derivative may be prepared later with identity/contact/credential review; any publication must update the PDF registry, both bilingual rooms, contextual/evidential-limit links and validator atomically.
+The native receipts expose private identifying/contact information. They remain outside the public PDF room. The REC emails are private mailbox records and are not transformed into public evidence merely because the sender is an official registration service. A public-safe derivative may be prepared later with identity/contact/credential review; any publication must update the PDF registry, both bilingual rooms, contextual/evidential-limit links and validator atomically.
