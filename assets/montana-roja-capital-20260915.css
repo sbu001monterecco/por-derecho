@@ -23,3 +23,27 @@
 .mr-private-capital .mr-risk{font-weight:800;color:#694631}
 @media(max-width:900px){.mr-structure{grid-template-columns:1fr 1fr}.mr-structure-card:not(:last-child)::after{display:none}}
 @media(max-width:700px){.mr-structure,.mr-readiness{grid-template-columns:1fr}.mr-readiness-item{grid-template-columns:1fr;gap:.25rem}.mr-hero-poster{margin-top:1.1rem}}
+
+
+/* 2026-09-19 · Montaña Roja public-safe capital stack + execution roadmap */
+.mr-capital-map,.mr-roadmap{margin:2rem 0;padding:1.5rem;border:1px solid rgba(13,47,56,.16);border-radius:20px;background:rgba(255,255,255,.82);box-shadow:0 16px 40px rgba(13,47,56,.07)}
+.mr-capital-head{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(260px,.9fr);gap:1.5rem;align-items:end;margin-bottom:1.25rem}
+.mr-capital-head h3{margin:.25rem 0 0;font-size:clamp(1.55rem,3vw,2.3rem);line-height:1.08}
+.mr-capital-head>p{margin:0;color:var(--muted,#53656b)}
+.mr-stack{display:grid;gap:.7rem}
+.mr-stack-layer{position:relative;padding:1rem 1.1rem 1rem 1.25rem;border-radius:14px;border:1px solid rgba(13,47,56,.15);background:#fff}
+.mr-stack-layer:before{content:"";position:absolute;left:0;top:0;bottom:0;width:6px;border-radius:14px 0 0 14px;background:#6b7f86}
+.mr-stack-layer.sponsor:before{background:#b1842b}.mr-stack-layer.senior:before{background:#1d6669}.mr-stack-layer.seller:before{background:#7d607d}.mr-stack-layer.development:before{background:#284a63}
+.mr-stack-layer span{display:block;font-size:.75rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#52646b}
+.mr-stack-layer strong{display:block;margin:.18rem 0 .2rem;font-size:1.08rem;color:#0d2f38}
+.mr-stack-layer p{margin:0;color:#53656b}
+.mr-stack-controls{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.8rem;margin:1rem 0}
+.mr-stack-controls>div{padding:1rem;border-radius:14px;background:#0d2f38;color:#fff}
+.mr-stack-controls span,.mr-stack-controls small{display:block}.mr-stack-controls span{font-size:.72rem;text-transform:uppercase;letter-spacing:.08em;opacity:.72}.mr-stack-controls strong{display:block;margin:.2rem 0}.mr-stack-controls small{opacity:.82;line-height:1.4}
+.mr-roadmap-grid{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(7,minmax(160px,1fr));gap:.65rem;overflow-x:auto;padding-bottom:.35rem}
+.mr-roadmap-grid li{min-height:180px;padding:1rem;border-radius:14px;border:1px solid rgba(13,47,56,.14);background:linear-gradient(180deg,#fff,#f5f8f7)}
+.mr-roadmap-grid li:first-child{background:#eaf5ef;border-color:#91b9a1}
+.mr-roadmap-grid span{display:block;font-size:.72rem;font-weight:800;letter-spacing:.07em;text-transform:uppercase;color:#4e666e}
+.mr-roadmap-grid strong{display:block;margin:.3rem 0 .45rem;color:#0d2f38}
+.mr-roadmap-grid p{margin:0;font-size:.9rem;line-height:1.45;color:#53656b}
+@media(max-width:900px){.mr-capital-head{grid-template-columns:1fr}.mr-stack-controls{grid-template-columns:1fr}.mr-roadmap-grid{grid-template-columns:repeat(7,220px)}}
