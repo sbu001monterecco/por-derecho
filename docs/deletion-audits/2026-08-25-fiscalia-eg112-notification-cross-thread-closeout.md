@@ -97,7 +97,8 @@ A future agent must begin from current remote `main` and read, in order:
 5. `archive/FISCALIA_DIP2_JUDICIAL_COMPLAINT_REF24_PUBLICATION_CONTROL_25AUG2026.md`;
 6. `evidence/fiscalia/dip-2-2026/README.md`;
 7. `evidence/judicial-governance/decanato-reference-24/README.md`; and
-8. both canonical public pages.
+8. both canonical public pages; and
+9. `ops/continuity/FISCALIA_EG112_IMMEDIATE_RESPONSE_GITHUB_HANDOFF_20260919.md` for the later prepared-response, no-send and GitHub/GitLab controls.
 
 Before editing, compare current `origin/main`, the latest Pages deployment and the live routes. Preserve bilingual parity, evidence IDs, redaction rules, open-evidence boundaries and additive history. Do not declare a future update live until `Git → CI → main → Pages → live readback` is complete.
 
