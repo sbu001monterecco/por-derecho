@@ -1,0 +1,73 @@
+{
+  "publication_id": "PD-MONTELANZA-2012-ACCOUNTS-20260919",
+  "owner": "Gil Marer / Por Derecho",
+  "current_state": "REMOTE_SOURCE",
+  "coordination_role": "WORKER_READY_TO_INTEGRATE",
+  "source_branch": "evidence/montelanza-accounts-github-only-19sep2026",
+  "source_main_at_branch_creation": "1e96f0d97323ba4c10ad0b7341d28017d6fa26dd",
+  "gitlab_status": "TEMPORARILY_BLOCKED_NOT_REQUIRED_FOR_THIS_RELEASE",
+  "routes": {
+    "es": [
+      "/es/cuentas-monte-lanza-2012/"
+    ],
+    "en": [
+      "/en/monte-lanza-2012-accounts/"
+    ],
+    "connected_existing_es": [
+      "/es/montelanza-cuentas-2008/",
+      "/es/comunidad-instrumentalizacion/",
+      "/es/actores-partes-abogados-representantes/"
+    ],
+    "connected_existing_en": [
+      "/en/montelanza-accounts-2008/",
+      "/en/community-instrumentalisation/",
+      "/en/actors-parties-lawyers-representatives/"
+    ]
+  },
+  "expected_sources": [
+    "assets/documents/montelanza-accounts-2012/CCAA_MONTELANZA.pdf",
+    "assets/documents/montelanza-accounts-2012/README.md",
+    "assets/documents/montelanza-accounts-2012/digitisation-manifest.json",
+    "assets/documents/montelanza-accounts-2012/ocr/part-01-pages-01-05.txt",
+    "assets/documents/montelanza-accounts-2012/ocr/part-02-pages-06-10.txt",
+    "assets/documents/montelanza-accounts-2012/ocr/part-03-pages-11-15.txt",
+    "assets/documents/montelanza-accounts-2012/ocr/part-04-pages-16-20.txt",
+    "assets/documents/montelanza-accounts-2012/ocr/part-05-pages-21-25.txt",
+    "assets/documents/montelanza-accounts-2012/ocr/part-06-pages-26-30.txt"
+  ],
+  "source_integrity": {
+    "title": "CCAA Montelanza.pdf",
+    "drive_id": "0Bz7jASkyqTDaaFFSOUhjUnhJVU0",
+    "bytes": 1349645,
+    "pages": 30,
+    "sha256": "3dcc618ee4840bcc0057c1bd4b0d65e4f30c99078d5cb09c82134623221d0baf",
+    "repository_binary_copy": true
+  },
+  "public_boundary": {
+    "proved": "Monte Lanza's deposited accounting material contains the company's own retrospective statement that the 17 June 2008 EUR 1.368m sale, alongside apartment sales by certain shareholders, meant cessation of its activity and placement of transferred assets at the purchaser's disposal for exploitation.",
+    "not_proved": [
+      "title chain for every Sun Park unit",
+      "authority or validity of later Community/CEXP acts",
+      "fraud, intent, collusion or criminal liability",
+      "later CAM/HNT authority or possession"
+    ]
+  },
+  "validation": {
+    "scoped_script": "python scripts/validate_montelanza_2012_accounts.py",
+    "repository_preservation": "python3 scripts/validate_repository_preservation.py",
+    "publication_integrity": "python3 scripts/validate_publication_integrity.py",
+    "audience_experience": "python3 scripts/validate_audience_experience.py",
+    "ci_green": false,
+    "note": "Worker branch is not an independent integration lane. CI_GREEN must be established in the active integrator release."
+  },
+  "merge_sha": null,
+  "deployment_evidence": null,
+  "live_verification": null,
+  "deletion_record": "archive/THREAD_DELETION_AUDIT_MONTELANZA_GITHUB_ONLY_19SEP2026.md",
+  "open_evidence": [
+    "17-Mar-2008 option and 17-Jun-2008 deeds/property schedules",
+    "exact purchaser/title perimeter for every transferred asset",
+    "later Community/CEXP authority chain source by source",
+    "reconciliation with the already digitised 2008 Montelanza accounts package"
+  ]
+}
