@@ -68,7 +68,7 @@ def project_page(text: str, counts: dict, stamp: str, lang: str) -> str:
     # canonical registry data. Remove/reinsert it around numeric projection so
     # the canonical count substitutions cannot rewrite the 515-vs-379 boundary.
     text = re.sub(
-        r'<div class="id-note" id="(?:gitlab-public-registry-gap|brecha-registro-publico-gitlab)">.*?</div>\\n?',
+        r'<div class="id-note" id="(?:gitlab-public-registry-gap|brecha-registro-publico-gitlab)">.*?</div>\n?',
         '',
         text,
         count=1,
@@ -103,7 +103,7 @@ def project_page(text: str, counts: dict, stamp: str, lang: str) -> str:
         for value in measured:
             value['value'] = counts[mapping[value['name']]]
         return match[1]+json.dumps(data,ensure_ascii=False,separators=(',',':'))+match[3]
-    text = once(text, r'(<script type="application/ld\\+json">)(\\{.*?"identifier":"PD-SP-IDENTITY-REGISTRY-001".*?\\})(</script>)', dataset, lang+' Dataset')
+    text = once(text, r'(<script type="application/ld\+json">)(\{.*?"identifier":"PD-SP-IDENTITY-REGISTRY-001".*?\})(</script>)', dataset, lang+' Dataset')
     if lang == 'en':
         gap = '<div class="id-note" id="gitlab-public-registry-gap"><strong>Verified public freshness gap · 19 September 2026.</strong> Anonymous GitLab Pages renders a later 7 September registry with <strong>515 aggregate IDs</strong> (256 people, 119 organisations, 12 structures, 68 institutions and 60 proceedings). Those aggregate counts prove a deployment freshness difference only. The identities and exact source bytes comprising the 136-ID delta have not been recovered with GitLab object identity, so this GitHub register remains at its source-controlled 379 IDs. <a href="https://github.com/sbu001monterecco/por-derecho/issues/1535">Reconciliation control #1535 →</a></div>'
     else:
@@ -111,7 +111,7 @@ def project_page(text: str, counts: dict, stamp: str, lang: str) -> str:
     text = once(
         text,
         r'(<div class="id-boundary">.*?</div>)',
-        lambda m: m[1] + '\\n' + gap,
+        lambda m: m[1] + '\n' + gap,
         lang+' public GitLab freshness gap',
     )
     return text
