@@ -40,7 +40,23 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
+  pr-source-contract:
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: Validate changed source surfaces without querying production
+        run: |
+          grep -Fq 'Appeals: five-file package + two later annexes + audiovisual link incorporated' en/cgpj-public-prosecution-routing-update-20-august-2026/index.html
+          grep -Fq 'Recursos: paquete de cinco archivos + dos anexos posteriores + enlace audiovisual incorporados' es/actualizacion-cgpj-fiscalia-20-agosto-2026/index.html
+          test -f assets/dp1901-routing-collision-20260919.js
+          test -f assets/data/dp1901-routing-collision-v1.json
+
   verify:
+    if: github.event_name != 'pull_request'
     runs-on: ubuntu-latest
     timeout-minutes: 12
     steps:
