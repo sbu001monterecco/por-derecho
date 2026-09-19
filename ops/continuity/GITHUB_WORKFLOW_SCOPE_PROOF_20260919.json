@@ -166,7 +166,11 @@
         "evidence/**",
         "drafts/**",
         "publication-manifests/**",
-        "scripts/**",
+        "scripts/validate_ministerio_fiscal_adverse_party_full_notice.py",
+        "scripts/validate_calificacion_criminal_misuse_thesis.py",
+        "scripts/validate_calificacion_position_objectives.py",
+        "scripts/validate_calificacion_rpl2523_evidence_map.py",
+        "scripts/render_calificacion_criminal_misuse_thesis.mjs",
         ".github/governance/**",
         "docs/**",
         "ops/CURRENT_STATE.json",
@@ -177,7 +181,7 @@
         ".github/workflows/validate-calificacion-criminal-misuse-thesis.yml"
       ],
       "dependency_uncovered": [],
-      "script_change_always_triggers": true
+      "all_five_executed_or_inspected_script_changes_trigger": true
     },
     {
       "workflow": ".github/workflows/validate-calificacion-criminal-misuse-thesis.yml",
@@ -191,7 +195,11 @@
         "evidence/**",
         "drafts/**",
         "publication-manifests/**",
-        "scripts/**",
+        "scripts/validate_ministerio_fiscal_adverse_party_full_notice.py",
+        "scripts/validate_calificacion_criminal_misuse_thesis.py",
+        "scripts/validate_calificacion_position_objectives.py",
+        "scripts/validate_calificacion_rpl2523_evidence_map.py",
+        "scripts/render_calificacion_criminal_misuse_thesis.mjs",
         ".github/governance/**",
         "docs/**",
         "ops/CURRENT_STATE.json",
@@ -202,7 +210,7 @@
         ".github/workflows/validate-calificacion-criminal-misuse-thesis.yml"
       ],
       "dependency_uncovered": [],
-      "script_change_always_triggers": true
+      "all_five_executed_or_inspected_script_changes_trigger": true
     }
   ],
   "remaining_global_checks": [

@@ -89,7 +89,7 @@ Two specialist workflows (Fiscal adverse-party notice and Calificación thesis)
 receive the same conservative dependency union. Source inspection plus actual
 successful read/stat tracing of their four Python validators identified143
 dependency paths, all covered. All ES/EN pages, assets, evidence, drafts,
-archive, manifests, scripts, governance, documentation, relevant current-state
+archive, manifests, the five executed/inspected scripts, governance, documentation, relevant current-state
 JSON, package files and sitemaps remain in scope. Their own workflow definitions
 also trigger validation. Browser/runtime assets retain broad coverage. No
 validator, browser assertion, preservation gate or publication check changes.
