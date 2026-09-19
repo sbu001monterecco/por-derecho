@@ -58,3 +58,27 @@ Use `archive/EG745_FISCALIA_INTERCONNECTIVITY_EXHAUSTION_CONTROL_18SEP2026.md`. 
 ## Interconnectivity reconciliation — 19 September 2026
 
 The current canonical proceedings register now projects **57 direct source assertions** across the unchanged **39 direct pairs**: **50 verified / 7 reported-primary-pending assertions**, with the pair split remaining **34 verified / 5 pending**. The DP 1901 and DIP 2 finite-test records and DIP 2 Fiscalía matrix provenance have been regenerated against their current canonical source fields. This is a data-governance reconciliation only; it does not upgrade any unresolved reparto, incorporation, authorship, knowledge, causation or liability proposition.
+
+
+## 19 September 2026 — immediate Fiscal Superior escalation lane
+
+A separate urgent notice is now prepared for formal registration to the Fiscal Superior de la Fiscalía de la Comunidad Autónoma de Canarias, verified on 19 September 2026 as Jaime Serrano-Jover González. A separate FGE/Inspección cover requests formal incorporation by reference into E.G.745. Neither is filed until exact bytes and official receipts are controlled.
+
+The three outputs remain distinct:
+
+- DP1901: court identity, competence, scope and judicial remedy;
+- Fiscal Superior: territorial hierarchy, fiscal attribution, preservation and internal review;
+- E.G.745: wider 2018–2026 accountability and actor-specific reconstruction.
+
+New 19-Sep work package:
+- urgent Fiscal Superior notice;
+- FGE/Inspección incorporation cover;
+- E.G.745 successor;
+- DP1901 reform/subsidiary appeal draft;
+- 29-Jul Fiscal identification branches;
+- Ref.21/Ref.24 double-prejudice map;
+- preservation/production schedule;
+- filing-status register;
+- red-team audit.
+
+All remain DRAFT / NOT FILED. GitLab sync remains queued until access is restored.
