@@ -2019,8 +2019,17 @@
     "title": "Sala documental · Tesoro, deuda y RIC 2022–2025",
     "type": "evidence-room",
     "summary": "Ocho derivados OCR públicos redactados, 734 páginas fuente, transcripciones secuenciadas, omisiones, índice y hashes; custodia nativa protegida.",
-    "tags": ["Tesoro de Canarias", "deuda RIC", "734 páginas", "Resolución 154/2026", "OCR público redactado"],
-    "aliases": ["CAN-RIC-TREAS-001–008", "sala documental RIC 2022–2025"]
+    "tags": [
+      "Tesoro de Canarias",
+      "deuda RIC",
+      "734 páginas",
+      "Resolución 154/2026",
+      "OCR público redactado"
+    ],
+    "aliases": [
+      "CAN-RIC-TREAS-001–008",
+      "sala documental RIC 2022–2025"
+    ]
   },
   {
     "lang": "en",
@@ -2028,8 +2037,17 @@
     "title": "Document room · Treasury, debt and RIC 2022–2025",
     "type": "evidence-room",
     "summary": "Eight public-redacted OCR derivatives, 734 source pages, page-sequenced transcripts, omission logs, index and hashes; protected native custody.",
-    "tags": ["Canary Treasury", "RIC debt", "734 pages", "Resolution 154/2026", "public-redacted OCR"],
-    "aliases": ["CAN-RIC-TREAS-001–008", "RIC 2022–2025 document room"]
+    "tags": [
+      "Canary Treasury",
+      "RIC debt",
+      "734 pages",
+      "Resolution 154/2026",
+      "public-redacted OCR"
+    ],
+    "aliases": [
+      "CAN-RIC-TREAS-001–008",
+      "RIC 2022–2025 document room"
+    ]
   },
   {
     "lang": "en",
@@ -2037,8 +2055,26 @@
     "title": "Red SARA/AGE filings and public-authority responses — controlled register",
     "type": "institution",
     "summary": "Source-derived public-safe register of individually controlled Red SARA/AGE filing events, receipt-listed attachment index and incoming institutional responses. A receipt or notice is not proof of substantive handling.",
-    "tags": ["Red SARA", "AGE", "REGAGE", "public-authority responses", "institutional communications", "attachment index"],
-    "aliases": ["Intervención General", "184368/2026", "497011/2026", "699645/2026", "Yaiza", "Cabildo de Lanzarote", "REGAGE26e00072883405", "SNCA", "141-2026-IRR02", "RedSARA register"]
+    "tags": [
+      "Red SARA",
+      "AGE",
+      "REGAGE",
+      "public-authority responses",
+      "institutional communications",
+      "attachment index"
+    ],
+    "aliases": [
+      "Intervención General",
+      "184368/2026",
+      "497011/2026",
+      "699645/2026",
+      "Yaiza",
+      "Cabildo de Lanzarote",
+      "REGAGE26e00072883405",
+      "SNCA",
+      "141-2026-IRR02",
+      "RedSARA register"
+    ]
   },
   {
     "lang": "es",
@@ -2046,8 +2082,26 @@
     "title": "Registros Red SARA/AGE y respuestas de autoridades públicas — registro controlado",
     "type": "institution",
     "summary": "Registro público seguro derivado de fuente de presentaciones Red SARA/AGE individualizadas, índice de adjuntos indicados en justificantes y respuestas institucionales entrantes. Un justificante o aviso no prueba tramitación de fondo.",
-    "tags": ["Red SARA", "AGE", "REGAGE", "respuestas de autoridades", "comunicaciones institucionales", "índice de adjuntos"],
-    "aliases": ["Intervención General", "184368/2026", "497011/2026", "699645/2026", "Yaiza", "Cabildo de Lanzarote", "REGAGE26e00072883405", "SNCA", "141-2026-IRR02", "registro RedSARA"]
+    "tags": [
+      "Red SARA",
+      "AGE",
+      "REGAGE",
+      "respuestas de autoridades",
+      "comunicaciones institucionales",
+      "índice de adjuntos"
+    ],
+    "aliases": [
+      "Intervención General",
+      "184368/2026",
+      "497011/2026",
+      "699645/2026",
+      "Yaiza",
+      "Cabildo de Lanzarote",
+      "REGAGE26e00072883405",
+      "SNCA",
+      "141-2026-IRR02",
+      "registro RedSARA"
+    ]
   },
   {
     "lang": "en",
@@ -2055,8 +2109,19 @@
     "title": "Authority / Red SARA deletion-safety and caret closeout",
     "type": "governance",
     "summary": "Independent 24/24 preservation audit, exact live-byte readback and finite 1/3 CAEPR caret census, with evidence-dependent gaps preserved open.",
-    "tags": ["deletion safety", "continuity", "CAEPR", "caret", "Red SARA", "Intervención General"],
-    "aliases": ["PD-AUTH-REDSARA-DELETE-CARET-20260901-01", "PD-SP-I-0043", "authority closeout"]
+    "tags": [
+      "deletion safety",
+      "continuity",
+      "CAEPR",
+      "caret",
+      "Red SARA",
+      "Intervención General"
+    ],
+    "aliases": [
+      "PD-AUTH-REDSARA-DELETE-CARET-20260901-01",
+      "PD-SP-I-0043",
+      "authority closeout"
+    ]
   },
   {
     "lang": "es",
@@ -2064,7 +2129,54 @@
     "title": "Cierre de seguridad de borrado y caret · autoridades / Red SARA",
     "type": "governance",
     "summary": "Auditoría independiente de preservación 24/24, relectura exacta de bytes y censo CAEPR finito 1/3, manteniendo abiertas las brechas dependientes de fuente.",
-    "tags": ["seguridad de borrado", "continuidad", "CAEPR", "caret", "Red SARA", "Intervención General"],
-    "aliases": ["PD-AUTH-REDSARA-DELETE-CARET-20260901-01", "PD-SP-I-0043", "cierre autoridades"]
+    "tags": [
+      "seguridad de borrado",
+      "continuidad",
+      "CAEPR",
+      "caret",
+      "Red SARA",
+      "Intervención General"
+    ],
+    "aliases": [
+      "PD-AUTH-REDSARA-DELETE-CARET-20260901-01",
+      "PD-SP-I-0043",
+      "cierre autoridades"
+    ]
+  },
+  {
+    "lang": "en",
+    "path": "en/recovery-command-center/",
+    "title": "Recovery Command Center",
+    "type": "case",
+    "summary": "GitHub-native continuity command layer connecting trace, preservation, protection, recovery and exact-source reconciliation.",
+    "tags": [
+      "recovery",
+      "continuity",
+      "GitHub",
+      "GitLab"
+    ],
+    "aliases": [
+      "recovery command center",
+      "outage recovery",
+      "continuity command"
+    ]
+  },
+  {
+    "lang": "es",
+    "path": "es/centro-mando-recuperacion/",
+    "title": "Centro de Mando de Recuperación",
+    "type": "case",
+    "summary": "Capa de mando nativa de GitHub para traza, preservación, protección, recuperación y reconciliación de fuente exacta.",
+    "tags": [
+      "recuperación",
+      "continuidad",
+      "GitHub",
+      "GitLab"
+    ],
+    "aliases": [
+      "centro mando recuperacion",
+      "mando continuidad",
+      "recuperacion outage"
+    ]
   }
 ]
