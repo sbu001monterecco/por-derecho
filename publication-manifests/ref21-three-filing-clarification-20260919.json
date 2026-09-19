@@ -6,7 +6,7 @@
   "current_state": "DRAFT",
   "owner": "Project Sun Rock / Por Derecho",
   "audit_base_main_sha": "d1cf97096eeab0c61128b85e3543abcac1fde59d",
-  "controlling_substantive_state": "PROCEDURAL_IDENTITY_COLLISION_OPEN — DIRECTION NOT CERTIFIED",
+  "controlling_substantive_state": "REF21_TO_DP1901_CONTEMPORANEOUSLY_CORROBORATED — OFFICIAL_REPARTO_AND_REF24_ASSOCIATION_HISTORY_OUTSTANDING",
   "expected_routes": {
     "es": [
       "es/control-21-denuncia-actores-privados-25-junio-2026/index.html",
@@ -55,7 +55,7 @@
   },
   "proof_boundary": {
     "account": "User expressly affirms his source account as truth and fact; editorial summary is neither signed nor sworn and no independent electronic audit is claimed",
-    "private_actor_first": "Gil categorical position preserved separately from certification",
+    "private_actor_first": "Gil's categorical Ref21→DP1901 position is contemporaneously corroborated by the 25-Jun procuradora email and 9-Jul operational mapping; court-system creation/reparto and later Ref24 association history remain uncertified.",
     "ac_confirmation_date": "25 June or shortly afterwards",
     "paper_custody": "Explicit testimony: Ref24 untouched/unscanned/unallocated on25June; earlier scanning hypothesis expressly disputed; official event-history corroboration outstanding",
     "contrary_record": "14-Sep Auto characterises origin as prevaricacion"
@@ -83,6 +83,9 @@
     "independent_official_no_scan_reply": "NOT_LOCATED",
     "ac25june": "Remitted; completion of registration/numbering awaited in contemporary email",
     "current_main_reconciled": "fff298ce10454e5c14f0c7f906f2c794fd688c70",
-    "main_overlap": "No overlap: two unrelated additive continuity files preserved"
+    "main_overlap": "No overlap: two unrelated additive continuity files preserved",
+    "procuradora_25june": "11:23 email to María Díaz Vecino records third autonomous private-actor complaint filed under Ref21 and separate Ref24 supplement.",
+    "july9_mapping": "Contemporaneous correspondence records 1901 as CAM/private Community matter and 1956 as AC matter.",
+    "auto14_provenance": "Paper copy received by post on 18-Sep; photographed/uploaded by complainant; native electronic court PDF remains outstanding."
   }
 }

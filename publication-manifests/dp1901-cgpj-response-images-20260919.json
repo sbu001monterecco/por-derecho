@@ -92,7 +92,9 @@
     "25-Jun Ref.21 autonomous private-actor complaint and a separate Ref.24 supplement.",
     "User firsthand statement: Ref.24 remained untouched, unscanned and unallocated at Decanato on 25-Jun.",
     "Handwritten 25→18 and added 24 are recorded as a contemporaneous handling description, not an independently proved falsification/backdating allegation.",
-    "User categorical factual position: DP1901 originated for private actors and Ref.24 was associated later; independent electronic creation/association certification remains outstanding."
+    "User categorical factual position: DP1901 originated for private actors and Ref.24 was associated later; independent electronic creation/association certification remains outstanding.",
+    "25-Jun 11:23 contemporaneous email to Procuradora María Díaz Vecino records the third autonomous private-actor complaint as filed that day under Ref.21; 9-Jul correspondence operationally maps 1901 to CAM/private Community actors and 1956 to the AC. This corroborates Gil's Ref21→DP1901 chronology while official electronic reparto/association history remains outstanding.",
+    "Auto 14-Sep paper copy was received by post on 18-Sep; Gil photographed that paper copy with a device and uploaded the page images. Native electronic court PDF remains outstanding."
   ],
   "source_boundaries": [
     "Located June text does not itself use the word unscanned; that proposition is the user's current firsthand affirmation.",
@@ -145,7 +147,10 @@
     "native_source_completeness": false,
     "note": "Publication package is merged on main. Do not state that 100% of every native source file is on GitHub: original recovered image bytes remain preserved outside Git; the native/certified 14-Sep-2026 judicial order, operative service metadata, native CGPJ attachment verification, signed 29-Jul Ministerio Fiscal report/corpus, and certified electronic creation/reparto history remain outstanding.",
     "publication_state_normalized": "MERGED",
-    "state_boundary": "PR #1637 is merged at the recorded merge SHA; no DEPLOYED or LIVE_VERIFIED state is inferred by this normalization."
+    "state_boundary": "PR #1637 is merged at the recorded merge SHA; no DEPLOYED or LIVE_VERIFIED state is inferred by this normalization.",
+    "ref21_origin_weighting": "CONTEMPORANEOUSLY_CORROBORATED; official court electronic creation/reparto and later Ref24 association event history remain outstanding.",
+    "auto_source_provenance": "Paper copy received by post 18-Sep-2026; photographed/uploaded by complainant; native electronic court PDF outstanding.",
+    "source_correction_20260919": "25-Jun 11:23 email to Procuradora María Díaz Vecino and 9-Jul operational mapping contemporaneously corroborate Ref21→DP1901; official court electronic creation/reparto and later Ref24 association history remain outstanding."
   },
   "merge_sha": "53ee6b0b08e9bcfc2f3cf19ce5aff72f0620165c",
   "validation": {

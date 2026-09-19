@@ -38,7 +38,7 @@ for n in ["no constituyo el objeto delimitado","y ello pese que reconocía","arg
     if n not in trans: errors.append(f"transcription missing {n!r}")
 
 graph=json.loads((ROOT/"assets/data/dp1901-routing-collision-v1.json").read_text(encoding="utf-8"))
-if graph.get("controlling_state")!="PROCEDURAL_IDENTITY_COLLISION_OPEN_DIRECTION_NOT_CERTIFIED": errors.append("routing graph controlling state")
+if graph.get("controlling_state")!="REF21_TO_DP1901_CONTEMPORANEOUSLY_CORROBORATED_OFFICIAL_REPARTO_AND_REF24_ASSOCIATION_HISTORY_OUTSTANDING": errors.append("routing graph controlling state")
 node_ids={n["id"] for n in graph.get("nodes",[])}
 for n in ["REF21","REF24","DP1901","DIP2","FISCAL29","AUTO14","ALZADA286","EXPGUB38"]:
     if n not in node_ids: errors.append(f"routing graph missing node {n}")
@@ -46,6 +46,10 @@ for n in ["REF21","REF24","DP1901","DIP2","FISCAL29","AUTO14","ALZADA286","EXPGU
 continuity=json.loads((ROOT/"assets/data/control-21-22-24-continuity-v1.json").read_text(encoding="utf-8"))
 if continuity.get("as_of")!="2026-09-19": errors.append("continuity as_of not 2026-09-19")
 if "state_transition_audit_20260919" not in continuity: errors.append("missing state transition audit")
+control21=next((x for x in continuity.get("controls",[]) if x.get("id")=="CONTROL-21"),{})
+if control21.get("bridge_status")!="UNVERIFIED_CANDIDATE_BRIDGE": errors.append("Control21 formal bridge must remain uncertified")
+if control21.get("origin_chronology_evidential_state")!="CONTEMPORANEOUSLY_CORROBORATED": errors.append("Control21 origin chronology support missing")
+if "email_20260625_to_procuradora" not in control21.get("contemporaneous_july_evidence",{}): errors.append("Control21 missing 25-Jun procuradora support")
 
 svg=(ROOT/"assets/visuals/dp1901-routing-collision-20260919.svg").read_text(encoding="utf-8")
 for n in ["REF. 21","REF. 24","DP 1901/2026","DOCUMENTO / EVENTO PUENTE NO LOCALIZADO","29 JUL 2026","14 SEP 2026"]:

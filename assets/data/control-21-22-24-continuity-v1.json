@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.5",
+  "schema_version": "1.0.6",
   "control_id": "PD-C212224-001",
   "as_of": "2026-09-19",
   "repository": "sbu001monterecco/por-derecho",
@@ -11,20 +11,22 @@
   "controls": [
     {
       "id": "CONTROL-21",
-      "label": "Daily reference 21 — user-reported private-actor filing control",
+      "label": "Daily reference 21 — private-actor filing control",
       "claimed_filing_date": "2026-06-25",
       "canonical_repository_object": null,
       "candidate_proceeding": "GC-CRI-008",
       "candidate_reference": "DP 1901/2026",
       "bridge_status": "UNVERIFIED_CANDIDATE_BRIDGE",
       "evidential_state": "DOCUMENTED",
-      "do_not_infer": "The 25-Jun daily-reference-21 private-actor filing is now documented by a stamped cover, and a 9-Jul stamped cover proves private-actor amplification material was physically tendered under DP 1901/Plaza 6. Do not state that daily reference 21 originally generated DP 1901 without the certified initiating document/reparto/index/ingestion bridge. The 12-Jul providencia links DP 1901 to DIP 2/2026 and the 14-Sep order treats it as alleged judicial prevarication.",
-      "identity_collision_status": "PROCEDURAL_IDENTITY_COLLISION_OPEN_DIRECTION_NOT_CERTIFIED",
+      "do_not_infer": "The 25-Jun daily-reference-21 private-actor filing is documented by its stamped cover and Gil's same-day 11:23 email to Procuradora María Díaz Vecino. A stamped 9-Jul cover proves private-actor amplification material was physically tendered under DP 1901/Plaza 6, and contemporaneous 9-Jul correspondence records `1901: Contra CAM y otras partes de la Comunidad de Propietarios` and `1956: Contra la AC`. This contemporaneously corroborates Gil's Ref21 → DP1901 chronology. The formal procedural bridge remains UNVERIFIED_CANDIDATE_BRIDGE because the court's electronic initiating/reparto event and later Ref24 association mechanism have not been independently certified.",
+      "identity_collision_status": "REF21_TO_DP1901_CONTEMPORANEOUSLY_CORROBORATED_OFFICIAL_REPARTO_AND_REF24_ASSOCIATION_HISTORY_OUTSTANDING",
       "contemporaneous_july_evidence": {
         "email_20260709": "Counsel email records: `1901: Contra CAM y otras partes de la Comunidad de Propietarios`; `1956: Contra la AC`.",
         "court_followup_20260712": "Contemporaneous counsel email records Plaza 6 follow-up concerning `la denuncia contra CAM y la CP` identified as 1901/2026.",
-        "limit": "Contemporaneous operational identification; not a certified initiating/reparto record."
-      }
+        "limit": "Contemporaneous filing identity and operational mapping; not a certified court-system creation/reparto audit trail.",
+        "email_20260625_to_procuradora": "11:23 same-day email records a third autonomous private-actor complaint filed under daily reference 21 and a separate Ref24 supplement."
+      },
+      "origin_chronology_evidential_state": "CONTEMPORANEOUSLY_CORROBORATED"
     },
     {
       "id": "CONTROL-22",
@@ -187,10 +189,10 @@
     {
       "from": "CONTROL-21",
       "to": "GC-CRI-008",
-      "relation": "CANDIDATE_LATER_PROCEEDING",
+      "relation": "CONTEMPORANEOUSLY_CORROBORATED_LATER_PROCEEDING",
       "bidirectional": true,
       "bridge_status": "UNVERIFIED_CANDIDATE_BRIDGE",
-      "evidential_status": "OPEN"
+      "evidential_status": "CONTEMPORANEOUS_CHRONOLOGY_CORROBORATED_OFFICIAL_BRIDGE_OPEN"
     },
     {
       "from": "CONTROL-22",
@@ -319,9 +321,9 @@
       "path": "data/three-track-full-digitisation-20260904.json",
       "introduced_on_main_sha": "92b254ca03caf8f5ff4a418a9bfacb92b5bdd04f",
       "relationship": "BOUND_READER_LAYER",
-      "governance_precedence": "PD-C212224-001 controls procedural identity and bridge status. The 14 September DP 1901 order is a supervening source that opens a Control 21 / Control 24 identity-reconciliation question but does not upgrade either bridge without certified reparto/index evidence.",
+      "governance_precedence": "PD-C212224-001 controls procedural identity. Ref21 → DP1901 is Gil's firsthand chronology contemporaneously corroborated by the 25-Jun procuradora email and 9-Jul operational mapping. The 14-Sep order remains a contrary later characterisation. Official electronic creation/reparto and later Ref24 association history remain authority-production gaps.",
       "track_bindings": {
-        "DP1901-C21": "CONTROL-21 ↔ GC-CRI-008 / UNVERIFIED_CANDIDATE_BRIDGE / IDENTITY_COLLISION_OPEN_AFTER_14SEP2026_ORDER",
+        "DP1901-C21": "CONTROL-21 ↔ GC-CRI-008 / UNVERIFIED_CANDIDATE_BRIDGE / Ref21→DP1901 chronology contemporaneously corroborated",
         "DP1956-C22": "CONTROL-22 ↔ GC-CRI-009 / UNVERIFIED_CANDIDATE_BRIDGE",
         "C24-JUDGE": "CONTROL-24 ↔ GC-HC-010 / one Reg. No. 24 record / formal destination UNKNOWN / DP1901 reconciliation OPEN after 14-Sep order"
       }
@@ -391,7 +393,7 @@
     "CONTROL-21-DOSSIER_EN": "/en/control-21-private-actors-complaint-25-june-2026/"
   },
   "open_gaps": [
-    "Certified DP 1901/2026 initiating document, complete docket/index, 18-Jun–12-Jul ingestion history and direction of the daily-reference-21 / daily-reference-24 routing collision",
+    "Certified DP 1901/2026 initiating document, complete docket/index and electronic creation/reparto history confirming the contemporaneously corroborated Ref21 → DP1901 mapping, plus the later Ref24 association mechanism",
     "Source-certified Control-22 to DP 1956/2026 bridge",
     "Certified reparto/current destination for Control 24",
     "Response/trace confirmation from Decanato, TSJC and CGPJ identifying the post-intake route, present location and treatment of Reg. No. 24",
@@ -403,19 +405,20 @@
     "Comparative certified creation/reparto timestamps for Ref22/DP1956, Ref24 and Ref21/DP1901, preserving Gil's 19-Sep firsthand account separately from internal electronic events"
   ],
   "supervening_event_20260918": {
-    "source": "DP 1901/2026 order dated 2026-09-14, received copy controlled 2026-09-18",
+    "source": "DP 1901/2026 order dated 2026-09-14; paper copy received by post on 2026-09-18 and photographed/uploaded by the complainant",
     "dp": "DP 1901/2026",
     "nig": "3501643220260016977",
     "iup": "LI2026017152",
     "order_treatment": "proceeding described as initiated for alleged prevaricacion",
     "fiscal_report_date": "2026-07-29",
     "fiscal_requested_outcome": "archive",
-    "consequence": "June/July source closure now proves separate intake filings and a 9-Jul private-actor tender under DP1901; certified initiating/reparto/ingestion evidence is still required to determine the collision's direction.",
-    "non_finding": "Neither the 14-Sep order nor the June/July source closure proves which intake filing originally generated DP 1901 or any formal joinder/reassignment."
+    "consequence": "June/July source closure plus the 25-Jun procuradora email and 9-Jul operational mapping contemporaneously corroborate Ref21 → DP1901. Official court electronic creation/reparto certification and the later Ref24 association mechanism remain outstanding.",
+    "non_finding": "The record does not establish the precise court-system creation event, the act/user that later associated Ref24 material with DP1901, or any unlawful intent.",
+    "paper_copy_provenance": "Received by post on 18-Sep-2026; photographed with a device and uploaded as page images; native electronic court PDF remains outstanding."
   },
   "source_closure_20260918": {
     "path": "evidence/judicial/dp-1901-2026/PROCEDURAL_IDENTITY_SOURCE_CLOSURE_18SEP2026.md",
-    "state": "PROCEDURAL_IDENTITY_COLLISION_OPEN — DIRECTION NOT CERTIFIED",
+    "state": "REF21_TO_DP1901_CONTEMPORANEOUSLY_CORROBORATED — OFFICIAL_REPARTO_AND_REF24_ASSOCIATION_HISTORY_OUTSTANDING",
     "documented": [
       "separate stamped 18-Jun judge filing (daily reference 24)",
       "separate stamped 25-Jun five-private-actor filing (daily reference 21)",
@@ -486,14 +489,15 @@
         "daily_reference": 21,
         "subject": "autonomous private-actor complaint",
         "later_proceeding": "GC-CRI-008",
-        "bridge_certification": "UNVERIFIED_CANDIDATE_BRIDGE"
+        "bridge_certification": "UNVERIFIED_CANDIDATE_BRIDGE",
+        "chronology_support": "CONTEMPORANEOUSLY_CORROBORATED_BY_25JUN_PROCURADORA_EMAIL_AND_09JUL_MAPPING"
       }
     ],
     "direct_observation_reported": "On 25 June Gil says Ref24 was untouched, unscanned and unallocated; he states that he checked this with Decanato and TSJC. He saw staff attach the supplement to the 18-June/Ref24 package.",
     "ac_confirmation_date_precision": "25 June or shortly afterwards; exact date not fixed by this account",
     "ac_sequence_position": "Gil states Ref22/DP1956 was processed/opened first.",
     "dp1901_sequence_position": "Gil categorically maintains private-actor-first and subsequent judge-material association, disputing joint-opening and judge-first alternatives.",
-    "independent_certification": "ORIGIN_AND_ASSOCIATION_TIMESTAMPS_STILL_REQUIRED",
+    "independent_certification": "OFFICIAL_ELECTRONIC_CREATION_REPARTO_AND_REF24_ASSOCIATION_TIMESTAMPS_STILL_REQUIRED",
     "contrary_record": "14-Sep Auto describes DP1901 as initiated for alleged prevaricacion; 12-Jul providencia links DIP2.",
     "paper_electronic_boundary": "Earlier possibility of pre-25-June scanning/registration expressly disputed by affirmative user testimony; not retained as an unopposed alternative in his account. Independent official electronic-history verification remains outstanding.",
     "burden_boundary": "Absence of a contrary record does not certify the asserted sequence or reverse the burden of proof.",
@@ -506,6 +510,10 @@
       "official_no_scan_confirmation": "NOT_LOCATED_IN_BOUNDED_SEARCH",
       "source_control": "archive/DP1901_EG745_FISCAL_REPORT_ROUTING_COLLISION_CONTROL_18SEP2026.md#further-19-september-affirmation--unscannedunallocated-status-expressly-asserted",
       "additional_tsjc_enquiry": "User reports TSJC said document had to arrive rather than be called for; date and staff identity unresolved"
+    },
+    "contemporaneous_support": {
+      "procuradora_email_20260625": "11:23 email to María Díaz Vecino records same-day Ref21 autonomous private-actor filing and separate Ref24 supplement.",
+      "mapping_20260709": "Contemporaneous correspondence records 1901 as CAM/private Community matter and 1956 as AC matter."
     }
   }
 }
