@@ -1,0 +1,55 @@
+name: MF native custody transfer 20260919
+on:
+  push:
+    branches: [mf-native-preservation-viewers-20260919]
+    paths:
+      - .github/workflows/mf-native-transfer-20260919.yml
+permissions:
+  contents: write
+jobs:
+  transfer:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: mf-native-preservation-viewers-20260919
+      - name: Download encrypted custody carriers and public-safe PDFs
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p evidence/fiscalia/native-custody/2026-09-19
+          mkdir -p evidence/fiscalia/historical-2014-2019/public-pdfs
+          mkdir -p evidence/fiscalia/di-248-2018/public-pdfs
+          curl -fL 'https://cdn.websitepublisher.ai/custom/wid27709/custody/native-mf-workspace-2014-2026-carrier-01-of-03.pdf' -o evidence/fiscalia/native-custody/2026-09-19/native-mf-workspace-2014-2026-carrier-01-of-03.pdf
+          curl -fL 'https://cdn.websitepublisher.ai/custom/wid27709/custody/native-mf-workspace-2014-2026-carrier-02-of-03.pdf' -o evidence/fiscalia/native-custody/2026-09-19/native-mf-workspace-2014-2026-carrier-02-of-03.pdf
+          curl -fL 'https://cdn.websitepublisher.ai/custom/wid27709/custody/native-mf-workspace-2014-2026-carrier-03-of-03.pdf' -o evidence/fiscalia/native-custody/2026-09-19/native-mf-workspace-2014-2026-carrier-03-of-03.pdf
+          curl -fL 'https://cdn.websitepublisher.ai/custom/wid27709/transfer/denuncia-fiscalia-2014-desahucio-public-redacted.pdf' -o evidence/fiscalia/historical-2014-2019/public-pdfs/denuncia-fiscalia-2014-desahucio-public-redacted.pdf
+          curl -fL 'https://cdn.websitepublisher.ai/custom/wid27709/transfer/personacion-raymond-22ago2016-public.pdf' -o evidence/fiscalia/historical-2014-2019/public-pdfs/personacion-raymond-22ago2016-public.pdf
+          curl -fL 'https://cdn.websitepublisher.ai/custom/wid27709/transfer/denuncia-fiscalia-ac-cam-2018-public-redacted.pdf' -o evidence/fiscalia/di-248-2018/public-pdfs/denuncia-fiscalia-ac-cam-2018-public-redacted.pdf
+          curl -fL 'https://cdn.websitepublisher.ai/custom/wid27709/transfer/denuncia-fiscalia-302-2018-sellada-public-redacted.pdf' -o evidence/fiscalia/di-248-2018/public-pdfs/denuncia-fiscalia-302-2018-sellada-public-redacted.pdf
+          curl -fL 'https://cdn.websitepublisher.ai/custom/wid27709/transfer/ampliacion-di248-14ene2019-public-redacted.pdf' -o evidence/fiscalia/di-248-2018/public-pdfs/ampliacion-di248-14ene2019-public-redacted.pdf
+      - name: Verify exact transfer hashes
+        shell: bash
+        run: |
+          set -euo pipefail
+          echo 'd81838efaeee1a6a28179c2e78e328164cdaeb9e7bf343b453c4747deddc57ca  evidence/fiscalia/native-custody/2026-09-19/native-mf-workspace-2014-2026-carrier-01-of-03.pdf' | sha256sum -c -
+          echo 'aa1c0e8ae77be3e7028d5258c93c02f64ed24db400fa1b01b9d6314a34d29c24  evidence/fiscalia/native-custody/2026-09-19/native-mf-workspace-2014-2026-carrier-02-of-03.pdf' | sha256sum -c -
+          echo '399885a1e5c1592db797f32e5d338f68f87b3106a2a4d9668bd69541f0af6365  evidence/fiscalia/native-custody/2026-09-19/native-mf-workspace-2014-2026-carrier-03-of-03.pdf' | sha256sum -c -
+          echo '6c4cac6859dff5d18f667a8a474f6373416db8bfa2d6bd2765219d4260717b08  evidence/fiscalia/historical-2014-2019/public-pdfs/denuncia-fiscalia-2014-desahucio-public-redacted.pdf' | sha256sum -c -
+          echo '213df7df20343f48368f1ce9ae87f103c857f1bd35206f827c4c0376b2fb908e  evidence/fiscalia/historical-2014-2019/public-pdfs/personacion-raymond-22ago2016-public.pdf' | sha256sum -c -
+          echo 'e0e21d32db59d66c3f8ba7ab0e937b77dee9830d9e264fca51f2893e203543fa  evidence/fiscalia/di-248-2018/public-pdfs/denuncia-fiscalia-ac-cam-2018-public-redacted.pdf' | sha256sum -c -
+          echo '8e36fe611ea6f9ef26cdd32b1c148e4d5a4760f36cfe1af161525d6e2c26c969  evidence/fiscalia/di-248-2018/public-pdfs/denuncia-fiscalia-302-2018-sellada-public-redacted.pdf' | sha256sum -c -
+          echo 'fa6074c6cbbc9b3ced057fe7a16902a6bbb527630a15154ee842ac3111d701e7  evidence/fiscalia/di-248-2018/public-pdfs/ampliacion-di248-14ene2019-public-redacted.pdf' | sha256sum -c -
+      - name: Commit custody and viewer binaries
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add evidence/fiscalia/native-custody/2026-09-19 evidence/fiscalia/historical-2014-2019/public-pdfs evidence/fiscalia/di-248-2018/public-pdfs
+          if git diff --cached --quiet; then
+            echo 'No binary delta to commit.'
+            exit 0
+          fi
+          git commit -m 'Ministerio Fiscal: preserve native custody carriers and public-safe PDFs'
+          git push origin HEAD:mf-native-preservation-viewers-20260919
