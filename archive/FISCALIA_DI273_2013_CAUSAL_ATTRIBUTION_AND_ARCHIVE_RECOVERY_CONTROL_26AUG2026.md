@@ -138,6 +138,8 @@ No separate entity, case or actor named **Armata** or **Armada** was located in 
 
 ## 14. Early personación and declaration reconstruction — 19 September 2026 worker delta
 
+**Newest primary recovery:** §16 supersedes the personación, inhibition-instrument, substitution and January-date gaps below. Earlier retrieval states remain historical; actual April 2015 attendance is still unproved.
+
 **Later recovery:** read §15 for subsequently recovered native PDFs, resolved 2016 header roles and visible 2018 signatory/date markings. The initial retrieval limits below are retained as audit history.
 
 **Integration owner:** existing [Fiscalía control issue #1621](https://github.com/sbu001monterecco/por-derecho/issues/1621). This additive evidence control does not certify a complete docket, deployment, or primary attendance finding. Sections 1–13 remain operative.
@@ -205,6 +207,8 @@ The pass covered targeted searches across all three connected mailboxes, Drive, 
 
 
 ## 15. Native-PDF recovery and exact representation rows — 19 September 2026 follow-up
+
+**Newest primary recovery:** §16 supersedes the personación, inhibition-instrument, substitution and January-date gaps below. Earlier retrieval states remain historical; actual April 2015 attendance is still unproved.
 
 **Supersession notice:** this section resolves the native-retrieval and layout limits recorded in §14.2, and the previously unknown 2018 pleading signatory/visible date markings. It does **not** resolve the 24 February 2015 personación or 14 April 2015 attendance gaps. The earlier failed signed-URL download is a historical retrieval event; direct connector binary retrieval subsequently succeeded. Both pages of each two-page PDF and the single-page 2017 copy were visually inspected.
 
@@ -288,3 +292,107 @@ A separately reviewed 15 April 2015 private email exchange concerns defence assi
 **HIGH-PRIORITY LINKAGE EVENT — PARTY RECOLLECTION + COUNSEL CORROBORATION; PRIMARY DECLARATION MINUTES STILL REQUIRED.**
 
 This follow-up updates the evidence-control branch and issue #1621. It does not claim changes to main, public viewers, bilingual cards, reciprocal live links or deployment. Those remain one atomic integration task, including redacted derivatives and the existing required checks.
+
+
+## 16. Exact 2015 personación recovered; transfer refusal and representation lifecycle — 19 September 2026
+
+**Controlling update:** the 24 February 2015 primary personación gap in §§14–15 is now closed by a located court-copy providencia. The April declaration minutes/actual attendees remain open. The July 2017 inhibition instrument and September refusal are now both recovered; a completed DP 3017 → DP 332 merger must not be inferred.
+
+The recovered private archive contains **30 PDF objects / 42 pages**. Its exact binary SHA-256 is `3330e91ae2141bcb862ff9c5b02c71e38c98b603dd07f05c02b75527988e5dbd` (4,016,986 bytes). It was preserved with its originating communication and safely extracted. The [file-by-file inventory](../evidence/fiscalia/dp-332-2014/recovered-court-copy-inventory-20260919.json) records each original PDF's hash, page count, proceeding and review level. The archive is counsel's selected corpus, **not a certified complete docket**. Four image-dominant files have provisional OCR sidecars; visually verified source wording controls.
+
+### 16.1 The 24 February 2015 event is now primary-record proved
+
+The one-page providencia identifies JI nº 3 Arrecife, DP 0000332/2014, NIG 3500443220140001497, and **Rafael Lis Estévez** as the magistrate issuing this act. Its operative text admits:
+
+| Side | Representative admitted | Represented parties expressly named |
+|---|---|---|
+| Acusación particular | **José Ramos Saavedra** | **Roque Prieto S.L., literal AMENEN S.L., Inversiones Salinetas S.L.** |
+| Defence | **Manuela Cabrera** | **Gil Marer and Patricia Isabel Domínguez Montelongo** |
+
+It orders the querellados to be summoned through their representation for **14 April 2015 at 10:30**, and an oficio for an **English interpreter**.
+
+**PROVED:** all three private companies' admission through Ramos Saavedra on this date, alongside the defence appearance and declaration scheduling. This supersedes the earlier pronoun-only inference that foregrounded two companies: **Roque Prieto is expressly included by the primary operative text**.
+
+The source describes Gil and Patricia with corporate-representative parentheticals. Preserve those literal court descriptions without treating them as independently verified corporate mandates, merging the UK/Spanish entities, or changing their personal accused status. The title's abbreviated notification reference is not a separately verified service receipt.
+
+**Not proved:** which lawyer or procurador physically attended, whether the English interpreter attended, whether the listed magistrate took the statements, or the absence of the AC/Fiscalía. A party's admission does not prove hearing attendance.
+
+Source: inventory item 25, SHA-256 `c916d1768dfcd60670010ad7d98ed62741c14d9e99351bb120057854eac4e743`.
+
+### 16.2 A same-day 14 April order is recovered; the declarations are not
+
+The one-page providencia dated **14 April 2015**, naming Rafael Lis Estévez, orders the proceedings sent to **Ministerio Fiscal for the appropriate report**. The visible copy bears a notification marking **17 April 2015** and reception marking **20 April**. Keep act, notification annotation and receipt annotation separate.
+
+This official routing act supports that aspect of the 29 April counsel account. It contains **no attendance list, declaration transcript, judicial criticism, or finding of non-attendance**. The name of defence counsel on a transmitted copy is not an attendance record.
+
+Source: item 30, SHA-256 `118588aa6cb46c193a1acc190425cb87022c7eceeea8006df1c22374a3458160`.
+
+### 16.3 The professional substitution is documented, not merely inferred
+
+| Date/source | Act recorded | Limit |
+|---|---|---|
+| 9 January 2017 professional-college certificate | Certifies José Ramos Saavedra's retirement effective **31 December 2016**. | Date/capacity evidence; private identifiers and signature remain unpublished. |
+| 16 August 2017 DP 332 providencia | Requires the companies formerly represented by Ramos to appoint a new procurador within ten days, with warning of exclusion as private accusation. | Does not itself appoint the successor. |
+| Pleading dated **11 September 2017**, traslado marking **13 September** | Soledad Tello Checa seeks substitution for Ramos on retirement for Roque Prieto, Inversiones Salinetas and literal AMENEN. It bears a Juan Carlos Prieto Puente signature appearance dated 11 September. | Party representation request; cryptographic signature validation not performed. |
+| **25 September 2017** diligencia, Antonio Vázquez Soto | Records completed apud-acta appearance in favour of Soledad Tello and refers the matter to the judge. | The underlying full power/apud-acta instrument is still required for its entire scope. |
+
+The September pleading moves the **Prieto Puente / Tello professional pairing in DP 332 back to September 2017**, rather than beginning with the January 2018 pleading. It still does not identify the April 2015 lawyer.
+
+The June 2017 DP 168 header names Ramos despite the certificate's December 2016 retirement date. Preserve these as differently scoped sources: a dated header entry is not proof that he continued practising after retirement. Do not infer improper practice or silently overwrite either source.
+
+### 16.4 DP 3017 → DP 332: ordered inhibition followed by express refusal
+
+**2 July 2017**, JI nº 4 Arrecife, **Auto 001925/2017**, magistrate Ricardo Fiestras Gil: the DP 3017/2014 order directs inhibition in favour of JI nº 3 for accumulation into DP 332/2014, with remittal once final, on its stated same-facts rationale. The copy bears a **6 July** notification annotation.
+
+**25 September 2017**, JI nº 3, magistrate Rafael Lis Estévez: the court **expressly refuses the inhibition**, stating that Fiscalía reports that the facts differ, and treats the resolution as the first communication for a possible competence dispute. The copy bears a **3 October** notification annotation. The underlying Fiscalía report and any subsequent competence-resolution/finality record are not recovered here.
+
+**PROVED:** the outgoing inhibition decision and receiving-court refusal. **DISPROVED as an account of these two acts:** that the July order alone establishes an accepted/completed merger into DP 332. Later disposition of the competence dispute remains **BOUNDED-NOT-LOCATED**.
+
+Reuse **LZ-JUD-047 ↔ LZ-JUD-002** with dated, typed edges: `inhibition_ordered` and `inhibition_refused`. Do not convert them into `accumulation_completed`. The separate **DP 168 / LZ-REF-038** June consultation remains the event controlled in §15.4. Repeated or combined names in administrative headers do not override the operative refusal.
+
+Source hashes: item 01 `bd12a276a3765182527bc78ce7c5eeefec6c28d7d53589073272d8c5a816f74c`; item 02 `d094a7e7ca8f2bef284c938484b485021d9eb725fac9cd3bdd386df2423e04fe`.
+
+### 16.5 New primary Fiscalía acts and the unresolved complexity history
+
+- **25 May 2016:** located Fiscalía request names **Jorge Pobre Menguy**, Economic Crime section, requesting declaration of complexity. The one-page request does not itself state an eighteen-month number; the 31 May court order recites that period. Its result remains the exceptional twelve-month extension, not a complexity declaration.
+- **29 October 2018:** a located Fiscalía report bears the signature block of **Jorge Pobre Menguy**, dated that day. It requests compliance with point QUINTO nº 2ª of the querella, refers to an earlier **8 May 2015 report**, and seeks eighteen further months using wording that assumes complexity had been declared. The 8 May 2015 report is a new precise production target.
+- The 2018 wording conflicts with treating the located May 2016 order as a complexity declaration. An intervening order may explain the later wording; no such order is established by this archive. Do not infer knowing falsity or an unlawful extension without the complete procedural sequence.
+- **21 January 2019:** Rafael Lis Estévez's providencia gives the other parties five days to respond to Fiscalía's request; **4 February 2019:** Antonio Vázquez Soto's diligencia passes the matter to the judge. Neither is the eventual extension decision.
+
+Keep the 2018 report's **act/signature date** distinct from its attachment to a January 2019 notification. Reuse the existing Fiscalía/proceeding objects and reconcile the fiscal's identity before allocating a new canonical person record. These acts do not establish that this fiscal attended or failed to attend in April 2015.
+
+### 16.6 January date correction and July 2018 use of the declarations
+
+The actual **15 January 2018 providencia**, Rafael Lis Estévez, requires the AC to comply with the 4 July 2017 production requirement under warning of possible disobedience. The copy bears notification **19 January 2018**. The later private pleading's literal **15.01.2017** must be preserved with the source-fidelity rule, but the court-act chronology can now use **15 January 2018**, supported by the recovered order. This is a resolved cross-source date discrepancy, not permission to alter the original pleading.
+
+A **12 July 2018** pleading by Tello for the same three source-form companies, also bearing Prieto Puente's signature appearance, seeks procedural progress and AC testimony. It refers to an AC enlargement pending admission and reproduces extracts attributed to Gil and Patricia's declarations about the AC's knowledge of the financial arrangements.
+
+**PROVED:** the private accusation relied on those attributed statements and asked to confront them with the AC's account. **Not proved by this pleading:** a complete or accurate transcript, the date/attendees of the quoted declarations, truth of either account, admission of the AC enlargement, or the AC's actual knowledge. The primary declaration records remain essential.
+
+### 16.7 October 2020: witness summons, private withdrawal and Fiscalía referral
+
+- **7 October 2020 providencia**, José Luis Ruiz Martínez: summons the AC **as witness for 28 October at 12:15**. It proves scheduling, not completed testimony.
+- **15 October 2020 providencia**, same magistrate: records the AC's written request and directs arrangements for the ordered diligence via Cisco Webex. The underlying request and hearing record remain needed.
+- **14 October 2020 withdrawal pleading**, Tello for Roque Prieto / Salinetas / literal AMENEN, with Prieto Puente signature appearance: requests their withdrawal from the private accusation, stating that they sold their properties and consequently lack a continuing direct/legitimate interest. This rationale is **party assertion**, not independent proof of each sale or legal standing. The bundled LexNET record supports filing on 14 October; court acceptance is a separate act.
+- **28 October 2020 providencia**, José Luis Ruiz Martínez, with LAJ María Belén Bouzas Santas signature block dated 29 October: treats Tello as withdrawn on behalf of the private accusation and sends the proceedings to the Economic Crime fiscal for the stated Article 779 purpose. Bundled LexNET transmission/collection and notification annotations concern 29–30 October.
+
+**This is not an archive order, acquittal or merits exoneration.** The apparent continuation to Fiscalía and the later reported 2021 archive must remain separate. The final disposition, service, appeals and finality gap in §7 remains open.
+
+### 16.8 Publication and remaining gap control
+
+Create a distinct **BLUE / PURPLE primary personación panel** for 24 February 2015 naming the three companies, Ramos, defence representation, court/date/source hash and limited effect. It can now state that private accusation joined the AC-originating criminal proceeding on that date. It must not infer a common plan, improper coordination, AC disloyalty, or hearing attendance.
+
+Retain a **separate** April-attendance panel:
+
+**HIGH-PRIORITY LINKAGE EVENT — PARTY RECOLLECTION + COUNSEL CORROBORATION; PRIMARY DECLARATION MINUTES STILL REQUIRED.**
+
+The finite next retrieval queue is now:
+
+1. Both **14 April 2015 declarations**, signatures/attendance/interpreter record and audiovisual material.
+2. The **15 April 2015 AC-testimony request** and **8 May 2015 Fiscalía report**, now identified by later source references.
+3. Complete admitted personación applications and powers; underlying September 2017 apud-acta; exact lawyer appointments at each date.
+4. Underlying Fiscalía competence report, any competence-dispute resolution and final accumulation disposition.
+5. Any intervening complexity/extension orders; actual October 2020 AC testimony and its recording.
+6. Signed final DP 332 disposition, notice, appeal and finality.
+
+The 30-object recovery closes specific earlier gaps; it does not certify an exhaustive court file. Four image-only or image-dominant items were OCR-assisted using the available English model; Spanish wording was checked visually where relied on here. Public PDF derivatives, bilingual viewers/cards, search/register changes and reciprocal live links remain an atomic task through issue #1621. No raw source publication, CI acceptance, merge or deployment is claimed.
