@@ -1,4 +1,4 @@
-name: MF native custody transfer 20260919
+name: MF final native custody transfer 20260919
 on:
   push:
     branches: [mf-native-preservation-viewers-20260919]
@@ -13,43 +13,114 @@ jobs:
       - uses: actions/checkout@v4
         with:
           ref: mf-native-preservation-viewers-20260919
-      - name: Download encrypted custody carriers and public-safe PDFs
+      - name: Download final encrypted custody carriers
         shell: bash
         run: |
           set -euo pipefail
-          mkdir -p evidence/fiscalia/native-custody/2026-09-19
-          mkdir -p evidence/fiscalia/historical-2014-2019/public-pdfs
-          mkdir -p evidence/fiscalia/di-248-2018/public-pdfs
-          curl -fL 'https://cdn.websitepublisher.ai/custom/wid27709/custody/native-mf-workspace-2014-2026-carrier-01-of-03.pdf' -o evidence/fiscalia/native-custody/2026-09-19/native-mf-workspace-2014-2026-carrier-01-of-03.pdf
-          curl -fL 'https://cdn.websitepublisher.ai/custom/wid27709/custody/native-mf-workspace-2014-2026-carrier-02-of-03.pdf' -o evidence/fiscalia/native-custody/2026-09-19/native-mf-workspace-2014-2026-carrier-02-of-03.pdf
-          curl -fL 'https://cdn.websitepublisher.ai/custom/wid27709/custody/native-mf-workspace-2014-2026-carrier-03-of-03.pdf' -o evidence/fiscalia/native-custody/2026-09-19/native-mf-workspace-2014-2026-carrier-03-of-03.pdf
-          curl -fL 'https://cdn.websitepublisher.ai/custom/wid27709/transfer/denuncia-fiscalia-2014-desahucio-public-redacted.pdf' -o evidence/fiscalia/historical-2014-2019/public-pdfs/denuncia-fiscalia-2014-desahucio-public-redacted.pdf
-          curl -fL 'https://cdn.websitepublisher.ai/custom/wid27709/transfer/personacion-raymond-22ago2016-public.pdf' -o evidence/fiscalia/historical-2014-2019/public-pdfs/personacion-raymond-22ago2016-public.pdf
-          curl -fL 'https://cdn.websitepublisher.ai/custom/wid27709/transfer/denuncia-fiscalia-ac-cam-2018-public-redacted.pdf' -o evidence/fiscalia/di-248-2018/public-pdfs/denuncia-fiscalia-ac-cam-2018-public-redacted.pdf
-          curl -fL 'https://cdn.websitepublisher.ai/custom/wid27709/transfer/denuncia-fiscalia-302-2018-sellada-public-redacted.pdf' -o evidence/fiscalia/di-248-2018/public-pdfs/denuncia-fiscalia-302-2018-sellada-public-redacted.pdf
-          curl -fL 'https://cdn.websitepublisher.ai/custom/wid27709/transfer/ampliacion-di248-14ene2019-public-redacted.pdf' -o evidence/fiscalia/di-248-2018/public-pdfs/ampliacion-di248-14ene2019-public-redacted.pdf
-      - name: Verify exact transfer hashes
+          rm -rf evidence/fiscalia/native-custody/2026-09-19/final
+          mkdir -p evidence/fiscalia/native-custody/2026-09-19/final
+          for i in $(seq -w 1 15); do
+            curl -fL "https://cdn.websitepublisher.ai/custom/wid27709/custody/final-20260919/native-authority-custody-carrier-${i}-of-15.pdf" \
+              -o "evidence/fiscalia/native-custody/2026-09-19/final/native-authority-custody-carrier-${i}-of-15.pdf"
+          done
+      - name: Verify carrier byte identity
         shell: bash
         run: |
           set -euo pipefail
-          echo 'd81838efaeee1a6a28179c2e78e328164cdaeb9e7bf343b453c4747deddc57ca  evidence/fiscalia/native-custody/2026-09-19/native-mf-workspace-2014-2026-carrier-01-of-03.pdf' | sha256sum -c -
-          echo 'aa1c0e8ae77be3e7028d5258c93c02f64ed24db400fa1b01b9d6314a34d29c24  evidence/fiscalia/native-custody/2026-09-19/native-mf-workspace-2014-2026-carrier-02-of-03.pdf' | sha256sum -c -
-          echo '399885a1e5c1592db797f32e5d338f68f87b3106a2a4d9668bd69541f0af6365  evidence/fiscalia/native-custody/2026-09-19/native-mf-workspace-2014-2026-carrier-03-of-03.pdf' | sha256sum -c -
-          echo '6c4cac6859dff5d18f667a8a474f6373416db8bfa2d6bd2765219d4260717b08  evidence/fiscalia/historical-2014-2019/public-pdfs/denuncia-fiscalia-2014-desahucio-public-redacted.pdf' | sha256sum -c -
-          echo '213df7df20343f48368f1ce9ae87f103c857f1bd35206f827c4c0376b2fb908e  evidence/fiscalia/historical-2014-2019/public-pdfs/personacion-raymond-22ago2016-public.pdf' | sha256sum -c -
-          echo 'e0e21d32db59d66c3f8ba7ab0e937b77dee9830d9e264fca51f2893e203543fa  evidence/fiscalia/di-248-2018/public-pdfs/denuncia-fiscalia-ac-cam-2018-public-redacted.pdf' | sha256sum -c -
-          echo '8e36fe611ea6f9ef26cdd32b1c148e4d5a4760f36cfe1af161525d6e2c26c969  evidence/fiscalia/di-248-2018/public-pdfs/denuncia-fiscalia-302-2018-sellada-public-redacted.pdf' | sha256sum -c -
-          echo 'fa6074c6cbbc9b3ced057fe7a16902a6bbb527630a15154ee842ac3111d701e7  evidence/fiscalia/di-248-2018/public-pdfs/ampliacion-di248-14ene2019-public-redacted.pdf' | sha256sum -c -
-      - name: Commit custody and viewer binaries
+          echo '432e327290ef8ae4a85cdc55c46abd0d613bcfc472905cf351a6a1085729ff2b  evidence/fiscalia/native-custody/2026-09-19/final/native-authority-custody-carrier-01-of-15.pdf' | sha256sum -c -
+          echo '657fa8563dc6b72f872ccb80a34dedb7c1445514a88eacb0410f8b08021205e7  evidence/fiscalia/native-custody/2026-09-19/final/native-authority-custody-carrier-02-of-15.pdf' | sha256sum -c -
+          echo 'ac7888d7a5853ad97b4e9edda8ea048cfb2e5d4eb5f02abe02b03f5c1e32a102  evidence/fiscalia/native-custody/2026-09-19/final/native-authority-custody-carrier-03-of-15.pdf' | sha256sum -c -
+          echo '6cfc5c0d4a0a02dce5beeca8dd157007a75a869fdb17ffd5f924c204e84689f7  evidence/fiscalia/native-custody/2026-09-19/final/native-authority-custody-carrier-04-of-15.pdf' | sha256sum -c -
+          echo '87c313c76e65082720fd41ce8c851d37b2d4110e9d394b436d8f976f6f914c66  evidence/fiscalia/native-custody/2026-09-19/final/native-authority-custody-carrier-05-of-15.pdf' | sha256sum -c -
+          echo '9f4da1907e3424c2c29a6e8a5b4da3e3bbe06c2578abdfe38bd0bdd69e9636e0  evidence/fiscalia/native-custody/2026-09-19/final/native-authority-custody-carrier-06-of-15.pdf' | sha256sum -c -
+          echo 'e3939b43ea434d38f5a2d640f192503e8752d1e18b363f99ee2ff7a999106478  evidence/fiscalia/native-custody/2026-09-19/final/native-authority-custody-carrier-07-of-15.pdf' | sha256sum -c -
+          echo 'ac1036023eaf1eb6ff02d327327cdf64ccfe16b2ef8eb2bab2c55a9849a80cef  evidence/fiscalia/native-custody/2026-09-19/final/native-authority-custody-carrier-08-of-15.pdf' | sha256sum -c -
+          echo 'e18702abb16275848aaeb9340272a5adc2f721247a0bf1306855f783fd62a297  evidence/fiscalia/native-custody/2026-09-19/final/native-authority-custody-carrier-09-of-15.pdf' | sha256sum -c -
+          echo '536b63c687a340b5ef9c84116639eefa29e5568620eb1eb5e1264482cca44f84  evidence/fiscalia/native-custody/2026-09-19/final/native-authority-custody-carrier-10-of-15.pdf' | sha256sum -c -
+          echo '53910051b3c8b85e6d2893905a49409d0e6e5fa6dc4660e5799348dcd2a0fe37  evidence/fiscalia/native-custody/2026-09-19/final/native-authority-custody-carrier-11-of-15.pdf' | sha256sum -c -
+          echo '4b73fa5a5ea603e61d3ab95f5c2c332ab096b318aea7f3d8fe4e8966c9cf2316  evidence/fiscalia/native-custody/2026-09-19/final/native-authority-custody-carrier-12-of-15.pdf' | sha256sum -c -
+          echo '4ba7a6d9b62aef145c324040cc69474c768f587f402c49a50d2d602e7632194b  evidence/fiscalia/native-custody/2026-09-19/final/native-authority-custody-carrier-13-of-15.pdf' | sha256sum -c -
+          echo '8ac59df8dfe43f68d8dbb0661f6d4dd6c65c5f53daacbf54ab343ae870518d4e  evidence/fiscalia/native-custody/2026-09-19/final/native-authority-custody-carrier-14-of-15.pdf' | sha256sum -c -
+          echo 'a0931e9a9855bea6c21338c5fc1b9e3c8f7a733e9613586c923556caa9c88c32  evidence/fiscalia/native-custody/2026-09-19/final/native-authority-custody-carrier-15-of-15.pdf' | sha256sum -c -
+      - name: Verify embedded encrypted package
+        shell: bash
+        run: |
+          set -euo pipefail
+          python -m pip install --quiet pymupdf
+          python - <<'PY'
+          import fitz, pathlib, hashlib
+          root=pathlib.Path("evidence/fiscalia/native-custody/2026-09-19/final")
+          out=pathlib.Path("/tmp/por-derecho-authority-native-custody-20260919.tar.gz.aes")
+          with out.open("wb") as w:
+              for i in range(1,16):
+                  p=root/f"native-authority-custody-carrier-{i:02d}-of-15.pdf"
+                  d=fitz.open(p)
+                  names=d.embfile_names()
+                  if len(names)!=1:
+                      raise SystemExit(f"{p}: expected 1 embedded part, got {names}")
+                  w.write(d.embfile_get(names[0]))
+                  d.close()
+          h=hashlib.sha256(out.read_bytes()).hexdigest()
+          expected="f37a1adb720c48b97a2b468bfc7bd658da42df07de26a6b8695f5d381c95117c"
+          if h!=expected:
+              raise SystemExit(f"encrypted package SHA mismatch: {h}")
+          if out.stat().st_size != 46152704:
+              raise SystemExit(f"encrypted package size mismatch: {out.stat().st_size}")
+          print("PASS final encrypted package",h,out.stat().st_size)
+          PY
+      - name: Write source-safe custody control
+        shell: bash
+        run: |
+          cat > evidence/fiscalia/native-custody/2026-09-19/final/CUSTODY_CONTROL.json <<'JSON'
+          {
+            "schema": "por-derecho.native-authority-custody-control.v2",
+            "control_date": "2026-09-19",
+            "status": "FINAL_ENCRYPTED_GITHUB_CUSTODY",
+            "scope": "Bounded authority-email attachment census across three connected Gmail accounts plus historical Fiscalia sources recovered in the thread.",
+            "alias_records": 137,
+            "authority_census_aliases": 106,
+            "historical_aliases": 31,
+            "unique_native_sha256_objects": 118,
+            "authority_pdf_aliases": 92,
+            "authority_non_pdf_aliases": 14,
+            "encrypted_package_bytes": 46152704,
+            "encrypted_package_sha256": "f37a1adb720c48b97a2b468bfc7bd658da42df07de26a6b8695f5d381c95117c",
+            "plaintext_tar_sha256": "a3c94fdecff37eb94048050600655fc4b15c561e825152abc96062bb0ab71248",
+            "carrier_count": 15,
+            "privacy": "No plaintext native evidential objects are exposed by these carriers. The decryption key is deliberately held outside the public GitHub repository.",
+            "supersedes": "Earlier 3-carrier partial Ministerio Fiscal package on this working branch."
+          }
+          JSON
+          cat > evidence/fiscalia/native-custody/2026-09-19/final/README.md <<'MD'
+          # Final encrypted native authority custody - 19 September 2026
+
+          These 15 PDF carriers reconstruct one encrypted archive containing the exact native-byte corpus controlled by the 19 September 2026 authority-source preservation audit.
+
+          - 137 source aliases
+          - 106 authority-mail attachment signatures
+          - 31 historical Fiscalía source aliases
+          - 118 unique SHA-256 native objects
+          - 92 authority PDF aliases and 14 non-PDF authority aliases
+          - encrypted package SHA-256: f37a1adb720c48b97a2b468bfc7bd658da42df07de26a6b8695f5d381c95117c
+
+          The carriers expose no plaintext source material. The decryption key is kept separately outside this public repository.
+          MD
+      - name: Remove superseded partial carriers
+        shell: bash
+        run: |
+          rm -f evidence/fiscalia/native-custody/2026-09-19/native-mf-workspace-2014-2026-carrier-01-of-03.pdf
+          rm -f evidence/fiscalia/native-custody/2026-09-19/native-mf-workspace-2014-2026-carrier-02-of-03.pdf
+          rm -f evidence/fiscalia/native-custody/2026-09-19/native-mf-workspace-2014-2026-carrier-03-of-03.pdf
+      - name: Commit final encrypted custody
         shell: bash
         run: |
           set -euo pipefail
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add evidence/fiscalia/native-custody/2026-09-19 evidence/fiscalia/historical-2014-2019/public-pdfs evidence/fiscalia/di-248-2018/public-pdfs
+          git add -A evidence/fiscalia/native-custody/2026-09-19
           if git diff --cached --quiet; then
-            echo 'No binary delta to commit.'
+            echo 'No custody delta to commit.'
             exit 0
           fi
-          git commit -m 'Ministerio Fiscal: preserve native custody carriers and public-safe PDFs'
+          git commit -m 'Authority sources: finalize encrypted native custody'
           git push origin HEAD:mf-native-preservation-viewers-20260919
