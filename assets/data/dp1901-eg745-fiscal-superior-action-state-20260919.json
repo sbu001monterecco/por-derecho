@@ -23,7 +23,7 @@
     "article_22_4": "Fiscal Superior heads and represents Ministerio Fiscal in the Autonomous Community",
     "article_22_7": "Provincial Fiscal chiefs are hierarchically subordinate to Fiscal Superior"
   },
-  "controlling_dp1901_state": "PROCEDURAL_IDENTITY_COLLISION_OPEN_DIRECTION_NOT_CERTIFIED",
+  "controlling_dp1901_state": "REF21_TO_DP1901_CONTEMPORANEOUSLY_CORROBORATED_OFFICIAL_REPARTO_AND_REF24_ASSOCIATION_HISTORY_OUTSTANDING",
   "three_tracks": [
     "DP1901 judicial response",
     "urgent Fiscal Superior competence/preservation/attribution notice",
@@ -57,5 +57,14 @@
   "gitlab_sync": {
     "state": "QUEUED_WHILE_ACCOUNT_BLOCKED",
     "rule": "GitHub current layer controls until GitLab access is restored; public GitLab Pages is comparator only."
+  },
+  "ref21_origin_control": {
+    "status": "CONTEMPORANEOUSLY_CORROBORATED",
+    "basis": [
+      "25-Jun 11:23 email to Procuradora María Díaz Vecino records autonomous Ref21 private-actor filing",
+      "9-Jul correspondence maps 1901 to CAM/private Community matter and 1956 to AC matter",
+      "9-Jul stamped private-actor tender under DP1901/Plaza6"
+    ],
+    "open": "Official court electronic creation/reparto event and later Ref24 association mechanism"
   }
 }
