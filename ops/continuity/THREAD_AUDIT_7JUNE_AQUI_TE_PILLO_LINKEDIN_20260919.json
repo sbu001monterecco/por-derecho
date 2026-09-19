@@ -1,0 +1,45 @@
+{
+  "schema": "por-derecho.thread-preservation-audit.v1",
+  "control_date": "2026-09-19",
+  "repository": "sbu001monterecco/por-derecho",
+  "audited_main_sha": "3ae96645d975c4b62dfa3216ff8be6f78a9810d3",
+  "thread_id": "7june-aqui-te-pillo-matos-linkedin",
+  "status": "PRESERVED_TEXT_GITHUB_BINARY_CUSTODY_GAP_OPEN",
+  "deletion_safe": false,
+  "masters": [
+    {
+      "id": "7june-2018-toma-control",
+      "dimensions": "1122x1402",
+      "sha256": "b9e1f721230911a6d448e2bdd590c19e3691732bb03b88c23ebd325ea275ec38",
+      "github_bytes_present": false
+    },
+    {
+      "id": "7june-2018-aqui-te-pillo-matos",
+      "dimensions": "1222x1287",
+      "sha256": "00cf77d44e35a9d4bcbcb4a9c96da3516e9a797d04fb363a8ae44e56319ebdf8",
+      "github_bytes_present": false
+    }
+  ],
+  "verified_github_missing_paths": [
+    "assets/composites/7june-2018-editorial-visuals-20260910.asset-map.json",
+    "assets/editorial/7june-2018-aqui-te-pillo-matos-20260910-p01.webp",
+    "assets/editorial/7june-2018-toma-control-20260910-p01.webp",
+    "assets/7june-editorial-visuals-20260910.js",
+    "ops/recovery-cross-thread/AQUI_TE_PILLO_MATOS_THREAD_CONTINUITY_AND_LINKEDIN_READINESS_20260910.md",
+    "publication-copy/linkedin-aqui-te-pillo-matos-two-angle-drafts-20260910.md"
+  ],
+  "historical_gitlab": {
+    "browser_render_repair_mr": 229,
+    "live_readback_repair_mr": 231,
+    "governance_readiness_mr": 235,
+    "governance_merge_sha": "4fbc4595b3e83d62fdfce3951f9515d237be318d",
+    "live_status": "LIVE_STATIC_VISUALS_VERIFIED"
+  },
+  "linkedin": {
+    "architecture": "TWO_POSTS_ONE_IMAGE_EACH",
+    "copy_status": "REVIEW_READY_RECONSTRUCTABLE_FROM_AUDIT",
+    "social_derivatives": "REQUIRED_1080x1350",
+    "external_publication_authorized": false
+  },
+  "next_gate": "ADMIT_EXACT_MASTER_BYTES_AND_PROVENANCE_TO_GITHUB_OR_VERIFIED_CONTROLLED_CUSTODY_THEN_REAUDIT"
+}
