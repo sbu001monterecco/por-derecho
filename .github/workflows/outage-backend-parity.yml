@@ -120,6 +120,7 @@ concurrency:
 
 jobs:
   validate:
+    name: Outage backend parity / validate
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
