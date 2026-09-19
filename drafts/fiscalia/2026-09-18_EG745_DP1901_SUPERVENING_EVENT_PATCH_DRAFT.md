@@ -83,3 +83,9 @@ Request expressly:
 ## G. Attribution boundary
 
 Gil Marer and Aweswell Limited maintain their attributed adverse posture toward Ministerio Fiscal/Fiscalía and allege a wider institutional-neutralisation/protection mechanism. The repository and filing should state this allegation directly while preserving that the 29 July dismissal request, without its underlying report and corpus, is not itself proof of capture, prevaricación, coordination or criminal guilt.
+
+
+
+## 19 September clarification — factual continuity only
+
+Read the 19-September presenter's-clarification addendum in `archive/DP1901_EG745_FISCAL_REPORT_ROUTING_COLLISION_CONTROL_18SEP2026.md` and the `presenter_clarification_20260919` field in the existing three-track control. Preserve Gil's firsthand paper-custody account, his categorical private-actor-first position, the uncertainty in the date of his AC-opening confirmation, and the separate missing official electronic chronology. Include Ref22/DP1956 in the comparative production scope without alleging that it was the correct destination for Ref24. Keep the 14-Sep Auto's contrary origin characterisation visible. This source update is not filing, service, counsel adoption or a deadline determination.

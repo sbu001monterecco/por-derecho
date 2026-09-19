@@ -15,6 +15,7 @@
     .trim()
     .replace(/\s+/g, ' ');
 
+  const c21Terms = ['control 21','ref 21','daily reference 21','referencia diaria 21','25 junio 2026','25 june 2026','private actors complaint','denuncia actores privados','dp1901','dp 1901'];
   const c22Terms = [
     'control 22','dp 1956','1956 2026','nig 3501643220260016826','iup li2026016921',
     'denuncia administrador concursal','insolvency administrator complaint','borja rodriguez batllori',
@@ -41,6 +42,11 @@
   };
 
   const definitions = lang === 'en' ? [
+    { id: 'CONTROL-21-PRIVATE-20260919', terms: c21Terms.concat(sharedTerms),
+      href: '/por-derecho/en/control-21-private-actors-complaint-25-june-2026/',
+      badge: 'Autonomous complaint', code: 'CONTROL 21 · 25 JUNE 2026',
+      title: 'Daily reference 21 · autonomous private-actor complaint',
+      summary: '86-page complaint, 26-page and 19-page amplifications; July operational DP1901 mapping, with original allocation and association sequence still uncertified.' },
     {
       id: 'CONTROL-22-DP1956-20260904',
       terms: c22Terms.concat(sharedTerms),
@@ -60,6 +66,11 @@
       summary: '79-page signed package, 25 June supplement, five documentary modules, official allocation/outcome still unconfirmed, and formal private-complaint boundary.'
     }
   ] : [
+    { id: 'CONTROL-21-PRIVATE-20260919', terms: c21Terms.concat(sharedTerms),
+      href: '/por-derecho/es/control-21-denuncia-actores-privados-25-junio-2026/',
+      badge: 'Denuncia autónoma', code: 'CONTROL 21 · 25 JUNIO 2026',
+      title: 'Referencia diaria 21 · denuncia autónoma contra actores privados',
+      summary: 'Denuncia de 86 páginas, ampliaciones de 26 y 19 páginas; uso operativo de DP1901 en julio, con reparto originario y secuencia de asociación aún sin certificar.' },
     {
       id: 'CONTROL-22-DP1956-20260904',
       terms: c22Terms.concat(sharedTerms),
@@ -107,8 +118,8 @@
     if (added > 0) {
       results.hidden = false;
       if (status) status.textContent = lang === 'en'
-        ? 'Control 22 / Control 24 records located.'
-        : 'Registros Control 22 / Control 24 localizados.';
+        ? 'Control 21 / Control 22 / Control 24 records located.'
+        : 'Registros Control 21 / Control 22 / Control 24 localizados.';
     }
     return true;
   };
@@ -127,3 +138,4 @@
 
   install();
 })();
+

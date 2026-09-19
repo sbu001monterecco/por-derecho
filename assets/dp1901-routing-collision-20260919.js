@@ -13,33 +13,39 @@
   const copy = es ? {
     kicker:'TRAZABILIDAD COMÚN · DP 1901/2026',
     title:'Dos escritos autónomos. Un expediente con dos identidades documentadas. Falta el puente.',
-    intro:'La separación de Ref. 21 y Ref. 24 está documentada. También lo están la presentación de material privado bajo DP 1901 el 9 de julio, la vinculación oficial con DIP 2 el 12 de julio, el informe Fiscal de 29 de julio y el Auto de 14 de septiembre. Lo que no está producido es el acto o evento que explique cómo se relacionaron ambos carriles dentro de DP 1901.',
-    boundary:'Este módulo no atribuye autoría, intención, manipulación ni irregularidad penal. La dirección de la colisión sigue sin certificarse.',
+    intro:'La separación de Ref. 21 y Ref. 24 está documentada. También lo están la presentación de material privado bajo DP 1901 el 9 de julio, la vinculación oficial con DIP 2 el 12 de julio, el informe Fiscal de 29 de julio y el Auto de 14 de septiembre. Lo que no está producido es el acto o evento que explique la relación entre ambos carriles y DP 1901.',
+    boundary:'Este módulo no atribuye autoría, intención, manipulación ni irregularidad penal. La dirección de la colisión sigue sin certificarse. La afirmación de que Ref. 24 seguía intacta, sin escanear y sin asignar el 25 de junio es la declaración presencial expresa del compareciente; no sustituye la certificación electrónica pendiente.',
     links:[
+      ['Ref. 21 · denuncia autónoma de actores privados','/es/control-21-denuncia-actores-privados-25-junio-2026/'],
       ['DP 1901 · expediente central','/es/dp-1901-2026/'],
       ['Auto 14 septiembre','/es/dp-1901-2026-auto-14-septiembre-2026/'],
-      ['Ref. 24 · denuncia al juez','/es/control-24-denuncia-juez-concurso-36-2012/'],
+      ['Respuesta CGPJ propuesta · 19 sep','/es/dp-1901-2026-auto-14-septiembre-2026/#response-full'],
+      ['E.G. 745/2026','/es/fiscalia-inspeccion-exp-gub-745-2026/'],
+      ['Ref. 24 · notitia dirigida al TSJC','/es/control-24-denuncia-juez-concurso-36-2012/'],
       ['DIP 2/2026','/es/fiscalia-dip-2-2026/'],
       ['CGPJ · Comisión Permanente','/es/cgpj-comision-permanente-sala-lectura/'],
       ['TSJC · Exp. Gub. 38/2026','/es/tsj-canarias-exp-gub-38-2026/'],
       ['Actores privados','/es/actores-privados-per-comunero-administracion-de-hecho/']
     ],
-    asks:['¿Qué escrito creó DP 1901?','¿Qué objeto constaba en el sistema el 9, 12 y 29 de julio y el 14 de septiembre?','¿Qué corpus exacto recibió Fiscalía?','¿Dónde quedó la denuncia autónoma de Ref. 21?','¿Qué ocurrió con Ref. 24 y por qué terminó asociada al mismo DP?']
+    asks:['¿Qué escrito creó DP 1901 y cuándo se asoció cada documento?','¿Qué diferencia documentada hubo con Ref. 22 / DP 1956, y qué ocurrió con la ruta TSJC de Ref. 24?','¿Qué objeto constaba en el sistema el 9, 12 y 29 de julio y el 14 de septiembre?','¿Qué corpus exacto recibió Fiscalía?','¿Dónde quedó la denuncia autónoma de Ref. 21?','¿Qué ocurrió con Ref. 24 y por qué terminó asociada al mismo DP?']
   } : {
     kicker:'COMMON TRACEABILITY · DP 1901/2026',
     title:'Two autonomous filings. One case with two documented identities. The bridge is still missing.',
-    intro:'The separation of Ref. 21 and Ref. 24 is documented. So are the 9 July physical tender of private-actor material under DP 1901, the official 12 July DIP 2 linkage, the 29 July prosecution report and the 14 September order. What is not produced is the act or system event explaining how the two lanes came to coexist inside DP 1901.',
-    boundary:'This module does not attribute authorship, intent, manipulation or criminal wrongdoing. The direction of the collision remains uncertified.',
+    intro:'The separation of Ref. 21 and Ref. 24 is documented. So are the 9 July physical tender of private-actor material under DP 1901, the official 12 July DIP 2 linkage, the 29 July prosecution report and the 14 September order. What is not produced is the act or system event explaining the relationship between the two lanes and DP 1901.',
+    boundary:'This module does not attribute authorship, intent, manipulation or criminal wrongdoing. The direction of the collision remains uncertified. The statement that Ref. 24 remained untouched, unscanned and unallocated on 25 June is the complainant’s express firsthand account; it does not replace the outstanding electronic-history certification.',
     links:[
+      ['Ref. 21 · autonomous private-actor complaint','/en/control-21-private-actors-complaint-25-june-2026/'],
       ['DP 1901 · central file','/en/dp-1901-2026/'],
       ['14 September order','/en/dp-1901-2026-order-14-september-2026/'],
-      ['Ref. 24 · judge complaint','/en/control-24-insolvency-judge-complaint-36-2012/'],
+      ['Proposed CGPJ response · 19 Sep','/en/dp-1901-2026-order-14-september-2026/#response-full'],
+      ['E.G. 745/2026','/en/public-prosecution-inspection-exp-gub-745-2026/'],
+      ['Ref. 24 · TSJC-directed notitia','/en/control-24-insolvency-judge-complaint-36-2012/'],
       ['DIP 2/2026','/en/fiscalia-dip-2-2026/'],
       ['CGPJ · Permanent Commission','/en/cgpj-permanent-commission-reader-room/'],
       ['TSJC · Exp. Gub. 38/2026','/en/tsj-canarias-exp-gub-38-2026/'],
       ['Private-actor layer','/en/private-actors-per-community-member-de-facto-administration/']
     ],
-    asks:['Which filing created DP 1901?','What object did the system record on 9, 12 and 29 July and 14 September?','What exact corpus did the Public Prosecution Service receive?','Where did the autonomous Ref. 21 complaint go?','What happened to Ref. 24 and why did it become associated with the same DP?']
+    asks:['Which filing created DP 1901 and when was each document associated?','What recorded difference explains Ref. 22 / DP 1956 handling and what happened to Ref. 24’s TSJC route?','What object did the system record on 9, 12 and 29 July and 14 September?','What exact corpus did the Public Prosecution Service receive?','Where did the autonomous Ref. 21 complaint go?','What happened to Ref. 24 and why did it become associated with the same DP?']
   };
   const section = document.createElement('section');
   section.dataset.dp1901RoutingCollision = marker;
@@ -76,3 +82,4 @@
   if (hero && hero.parentNode === target) hero.insertAdjacentElement('afterend', section);
   else target.insertBefore(section, target.firstChild);
 })();
+

@@ -1,0 +1,88 @@
+{
+  "schema": "por-derecho.publication-state.v1",
+  "schema_version": "1.0.0",
+  "publication_id": "PD-REF21-THREE-FILING-CLARIFICATION-20260919-01",
+  "control_date": "2026-09-19",
+  "current_state": "DRAFT",
+  "owner": "Project Sun Rock / Por Derecho",
+  "audit_base_main_sha": "d1cf97096eeab0c61128b85e3543abcac1fde59d",
+  "controlling_substantive_state": "PROCEDURAL_IDENTITY_COLLISION_OPEN — DIRECTION NOT CERTIFIED",
+  "expected_routes": {
+    "es": [
+      "es/control-21-denuncia-actores-privados-25-junio-2026/index.html",
+      "es/control-24-denuncia-juez-concurso-36-2012/index.html"
+    ],
+    "en": [
+      "en/control-21-private-actors-complaint-25-june-2026/index.html",
+      "en/control-24-insolvency-judge-complaint-36-2012/index.html"
+    ]
+  },
+  "expected_sources": [
+    "archive/DP1901_EG745_FISCAL_REPORT_ROUTING_COLLISION_CONTROL_18SEP2026.md",
+    "assets/data/control-21-22-24-continuity-v1.json",
+    "assets/data/dp1901-routing-collision-v1.json",
+    "assets/dp1901-routing-collision-20260919.js",
+    "assets/control-22-24-search-extension-20260904.js",
+    "assets/three-track-page-enhancement-20260904.js",
+    "es/control-24-denuncia-juez-concurso-36-2012/index.html",
+    "en/control-24-insolvency-judge-complaint-36-2012/index.html",
+    "drafts/judicial/2026-09-18_DP1901_AUTO14SEP_RESPONSE_ARCHITECTURE_DRAFT.md",
+    "drafts/fiscalia/2026-09-18_EG745_DP1901_SUPERVENING_EVENT_PATCH_DRAFT.md",
+    "sitemap-control-22-24.xml",
+    "en/control-21-private-actors-complaint-25-june-2026/index.html",
+    "es/control-21-denuncia-actores-privados-25-junio-2026/index.html"
+  ],
+  "coordination": {
+    "role": "WORKER",
+    "queue_issue": 1621,
+    "control_tower": 1428,
+    "merge_authority": "EXISTING_SINGLE_FISCALIA_INTEGRATION_LANE",
+    "no_competing_publication_lane": true
+  },
+  "validation": {
+    "evidence": [
+      "Local existing DP1901 routing validator: PASS (18 reciprocal surfaces)",
+      "Local existing Control21/22/24 continuity validator: PASS",
+      "Changed JavaScript syntax: PASS",
+      "New Ref21 local references validated against full base tree plus delta: PASS"
+    ],
+    "required_before_merge": [
+      "Full repository preservation and publication-integrity gates",
+      "Audience and rendered browser checks",
+      "Current-main reconciliation by existing integrator"
+    ],
+    "rendered_local_check": "NOT_RUN — installed Playwright package has no browser binary; no rendered pass claimed"
+  },
+  "proof_boundary": {
+    "account": "User expressly affirms his source account as truth and fact; editorial summary is neither signed nor sworn and no independent electronic audit is claimed",
+    "private_actor_first": "Gil categorical position preserved separately from certification",
+    "ac_confirmation_date": "25 June or shortly afterwards",
+    "paper_custody": "Explicit testimony: Ref24 untouched/unscanned/unallocated on25June; earlier scanning hypothesis expressly disputed; official event-history corroboration outstanding",
+    "contrary_record": "14-Sep Auto characterises origin as prevaricacion"
+  },
+  "open_delivery_items": [
+    "Reviewed public PDF derivatives for 86-page complaint, 26-page and 19-page amplifications and stamped cover",
+    "Original prior-thread raster illustrations required before editing; existing neutral SVG retained",
+    "Full proposed CGPJ source document not mounted; source-safe questions preserved in existing control for its next revision",
+    "Exact merge/deployment/live readback through existing integration lane"
+  ],
+  "privacy": {
+    "native_audio_supplied": false,
+    "raw_private_sources_added": false,
+    "new_private_email_bodies_added": false
+  },
+  "legal_work_product": {
+    "filed": false,
+    "served": false,
+    "deadline_computed": false
+  },
+  "followup_source_review": {
+    "cgpj_text_date": "2026-06-25",
+    "available_extraction_pages_reviewed": "Relevant substantive pp1-6",
+    "native_download_status": "HTTP403; no native-image or fresh hash verification",
+    "independent_official_no_scan_reply": "NOT_LOCATED",
+    "ac25june": "Remitted; completion of registration/numbering awaited in contemporary email",
+    "current_main_reconciled": "fff298ce10454e5c14f0c7f906f2c794fd688c70",
+    "main_overlap": "No overlap: two unrelated additive continuity files preserved"
+  }
+}
