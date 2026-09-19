@@ -120,3 +120,7 @@ Rationale:
 - remaining open governance items are independently tracked elsewhere.
 
 Do not use retirement of this chat as authority to delete repository history, PRs, Actions artifacts, publication-controller state, GitHub issues, GitLab recovery material, Gmail, Drive or other source custody.
+
+## Integration-time current-main reconciliation
+
+While PR #1627 checks were running, `main` advanced from the audit baseline `593acd70d39ba7f0253e7f86177a104b17bc2e90` to `4cec76c73331ff3986017f8ac2a13e02d867a2c0`. The audit branch was reconciled by a normal merge of that newer `main` before publication claim; no force update or rollback was used. The earlier baseline remains preserved above as the state first observed when the audit began.
