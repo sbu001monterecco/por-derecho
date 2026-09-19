@@ -19,7 +19,7 @@ def validate()->list[str]:
     except Exception as exc:
         return [f"ledger_unreadable:{exc}"]
     if data.get("schema")!="por-derecho.github-public-gap-closure.v1": f.append("schema_mismatch")
-    if data.get("status")!="IMPLEMENTED_ON_SUCCESSOR_PENDING_EXACT_HEAD_ACCEPTANCE": f.append("status_mismatch")
+    if data.get("status")!="ACTIVE_GITHUB_NATIVE_GAP_CLOSURE": f.append("status_mismatch")
     if data.get("base_main_sha")!="bebedf4cc1d1321f00072d2d2d53536505611363": f.append("base_sha_drift")
     closures={x.get("id"):x for x in data.get("closures",[])}
     for ident in ("REGISTRY_FRESHNESS_DISCLOSURE","PORTFOLIO_SEPTEMBER_STATUS","RICPE_27AUG_RESOLVER_IDENTITY","RECOVERY_COMMAND_CENTER","DEEP_TEXT_CONNECTION_SCAN","POR_DERECHO_OPERATING_STANDARD"):
