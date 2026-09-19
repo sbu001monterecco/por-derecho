@@ -72,18 +72,20 @@ jobs:
             "en/dp-1901-2026/index.html":[
               "PROCEDURAL_IDENTITY_SOURCE_CLOSURE_18SEP2026.md",
               "private-actor material was physically tendered",
-              "direction remains open",
+              "contemporaneously corroborated",
+              "remain unproduced",
               "29 July 2026",
             ],
             "es/dp-1901-2026-auto-14-septiembre-2026/index.html":[
               "PROCEDURAL_IDENTITY_SOURCE_CLOSURE_18SEP2026.md",
-              "la colisión está mejor probada",
-              "dirección sigue abierta",
+              "corroborada contemporáneamente",
+              "Siguen faltando el evento electrónico oficial de creación/reparto",
             ],
             "en/dp-1901-2026-order-14-september-2026/index.html":[
               "PROCEDURAL_IDENTITY_SOURCE_CLOSURE_18SEP2026.md",
-              "the collision is better evidenced",
-              "direction remains open",
+              "the initiating document, certified allocation trail and any joinder/reassignment/segregation act remain missing",
+              "contemporaneously corroborated",
+              "remain unproduced",
             ],
             "es/fiscalia-dip-2-2026/index.html":[
               "REGAGE26e00026303869",
@@ -113,7 +115,8 @@ jobs:
 
           source_closure=(root/"evidence/judicial/dp-1901-2026/PROCEDURAL_IDENTITY_SOURCE_CLOSURE_18SEP2026.md").read_text(encoding="utf-8")
           for marker in [
-            "PROCEDURAL_IDENTITY_COLLISION_OPEN — DIRECTION NOT CERTIFIED",
+            "REF. 21 → DP 1901 CONTEMPORANEOUSLY CORROBORATED / OFFICIAL REPARTO CERTIFICATION OUTSTANDING",
+            "the later Ref. 24 → DP 1901 association mechanism remains unexplained in the produced official record",
             "dfad6f405b7a2ec047a98a7183a9cbfd0698427d3925d02b2a50b4de76de8f71",
             "2f9b7015598094c68f6408b68a776073de1d7d2fa248169be46fd57bf3bad6c3",
             "8ee03884d32b6b3d9e8377a646eca3d79a7ae199aebc8cc378a9180ba2aef846",
