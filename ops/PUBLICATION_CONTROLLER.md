@@ -31,6 +31,14 @@ missing deployment/readback retains recovery-required status. A replaced owner
 cannot update state with an old blob SHA. A merged release cannot be aborted as
 though it never happened. Never roll main back to satisfy a historical hash.
 
+If a merged release reached a successful exact-SHA Pages deployment but its
+scoped byte readback did not complete, and a later legitimate `main` has since
+advanced, `/pd-release recover` may close only the stale ownership fence as
+`SUPERSEDED_WITH_OPEN_READBACK`. The controller must prove the held merge is an
+ancestor of current `main` and revalidate the recorded exact Pages run. The
+unresolved readback gap remains explicit, no `VERIFIED_FOR_SCOPE` receipt is
+created, and no historical bytes are rewritten or inferred.
+
 `queue: max` serializes participating workflow commands; compare-and-swap guards
 state. It does **not** prevent independent API merges with another credential.
 The controller uses contents write only to persist `pd-publication-state`.
