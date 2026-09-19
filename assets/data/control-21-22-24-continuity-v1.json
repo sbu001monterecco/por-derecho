@@ -16,16 +16,17 @@
       "canonical_repository_object": null,
       "candidate_proceeding": "GC-CRI-008",
       "candidate_reference": "DP 1901/2026",
-      "bridge_status": "CONTEMPORANEOUSLY_CORROBORATED_OFFICIAL_REPARTO_OPEN",
-      "evidential_state": "DOCUMENTED_AND_CONTEMPORANEOUSLY_MAPPED_TO_DP1901",
-      "do_not_infer": "The 25-Jun daily-reference-21 private-actor filing is documented by its stamped cover and Gil's same-day 11:23 email to Procuradora María Díaz Vecino. The 9-Jul correspondence expressly records `1901: Contra CAM y otras partes de la Comunidad de Propietarios` and `1956: Contra la AC`, and a stamped 9-Jul cover proves private-actor amplification material was tendered under DP1901/Plaza6. This supports Ref21 → DP1901 as Gil's firsthand chronology with contemporaneous corroboration. Do not claim that the repository has independently certified the court's electronic initiating/reparto event or the later mechanism associating Ref24 with DP1901.",
+      "bridge_status": "UNVERIFIED_CANDIDATE_BRIDGE",
+      "evidential_state": "DOCUMENTED",
+      "do_not_infer": "The 25-Jun daily-reference-21 private-actor filing is documented by its stamped cover and Gil's same-day 11:23 email to Procuradora María Díaz Vecino. A stamped 9-Jul cover proves private-actor amplification material was physically tendered under DP 1901/Plaza 6, and contemporaneous 9-Jul correspondence records `1901: Contra CAM y otras partes de la Comunidad de Propietarios` and `1956: Contra la AC`. This contemporaneously corroborates Gil's Ref21 → DP1901 chronology. The formal procedural bridge remains UNVERIFIED_CANDIDATE_BRIDGE because the court's electronic initiating/reparto event and later Ref24 association mechanism have not been independently certified.",
       "identity_collision_status": "REF21_TO_DP1901_CONTEMPORANEOUSLY_CORROBORATED_OFFICIAL_REPARTO_AND_REF24_ASSOCIATION_HISTORY_OUTSTANDING",
       "contemporaneous_july_evidence": {
         "email_20260709": "Counsel email records: `1901: Contra CAM y otras partes de la Comunidad de Propietarios`; `1956: Contra la AC`.",
         "court_followup_20260712": "Contemporaneous counsel email records Plaza 6 follow-up concerning `la denuncia contra CAM y la CP` identified as 1901/2026.",
         "limit": "Contemporaneous filing identity and operational mapping; not a certified court-system creation/reparto audit trail.",
         "email_20260625_to_procuradora": "11:23 same-day email records a third autonomous private-actor complaint filed under daily reference 21 and a separate Ref24 supplement."
-      }
+      },
+      "origin_chronology_evidential_state": "CONTEMPORANEOUSLY_CORROBORATED"
     },
     {
       "id": "CONTROL-22",
@@ -190,8 +191,8 @@
       "to": "GC-CRI-008",
       "relation": "CONTEMPORANEOUSLY_CORROBORATED_LATER_PROCEEDING",
       "bidirectional": true,
-      "bridge_status": "CONTEMPORANEOUSLY_CORROBORATED_OFFICIAL_REPARTO_OPEN",
-      "evidential_status": "CORROBORATED"
+      "bridge_status": "UNVERIFIED_CANDIDATE_BRIDGE",
+      "evidential_status": "CONTEMPORANEOUS_CHRONOLOGY_CORROBORATED_OFFICIAL_BRIDGE_OPEN"
     },
     {
       "from": "CONTROL-22",
@@ -322,7 +323,7 @@
       "relationship": "BOUND_READER_LAYER",
       "governance_precedence": "PD-C212224-001 controls procedural identity. Ref21 → DP1901 is Gil's firsthand chronology contemporaneously corroborated by the 25-Jun procuradora email and 9-Jul operational mapping. The 14-Sep order remains a contrary later characterisation. Official electronic creation/reparto and later Ref24 association history remain authority-production gaps.",
       "track_bindings": {
-        "DP1901-C21": "CONTROL-21 ↔ GC-CRI-008 / CONTEMPORANEOUSLY_CORROBORATED / OFFICIAL_REPARTO_OPEN",
+        "DP1901-C21": "CONTROL-21 ↔ GC-CRI-008 / UNVERIFIED_CANDIDATE_BRIDGE / Ref21→DP1901 chronology contemporaneously corroborated",
         "DP1956-C22": "CONTROL-22 ↔ GC-CRI-009 / UNVERIFIED_CANDIDATE_BRIDGE",
         "C24-JUDGE": "CONTROL-24 ↔ GC-HC-010 / one Reg. No. 24 record / formal destination UNKNOWN / DP1901 reconciliation OPEN after 14-Sep order"
       }
@@ -488,7 +489,8 @@
         "daily_reference": 21,
         "subject": "autonomous private-actor complaint",
         "later_proceeding": "GC-CRI-008",
-        "bridge_certification": "CONTEMPORANEOUSLY_CORROBORATED_OFFICIAL_REPARTO_OPEN"
+        "bridge_certification": "UNVERIFIED_CANDIDATE_BRIDGE",
+        "chronology_support": "CONTEMPORANEOUSLY_CORROBORATED_BY_25JUN_PROCURADORA_EMAIL_AND_09JUL_MAPPING"
       }
     ],
     "direct_observation_reported": "On 25 June Gil says Ref24 was untouched, unscanned and unallocated; he states that he checked this with Decanato and TSJC. He saw staff attach the supplement to the 18-June/Ref24 package.",
