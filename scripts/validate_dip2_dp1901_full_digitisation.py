@@ -195,8 +195,10 @@ def main() -> None:
         fail("three-track judge front matter must be 4 pages")
     if judge_track.get("supplement",{}).get("pages") != 13:
         fail("three-track judge dependent supplement must be 13 pages")
-    if "DIRECTION NOT CERTIFIED" not in judge_track.get("status_control",{}).get("supervening_status_20260918",""):
-        fail("three-track judge/DP1901 collision direction must remain uncertified")
+    if "REF21_TO_DP1901_CONTEMPORANEOUSLY_CORROBORATED" not in judge_track.get("status_control",{}).get("supervening_status_20260918",""):
+        fail("three-track judge/DP1901 state must preserve Ref21 contemporaneous corroboration")
+    if "REF24_ASSOCIATION_HISTORY_OUTSTANDING" not in judge_track.get("status_control",{}).get("supervening_status_20260918",""):
+        fail("three-track judge/DP1901 state must preserve the outstanding later Ref24 association history")
 
     for rel in [
         "es/dp-1901-2026/index.html",
