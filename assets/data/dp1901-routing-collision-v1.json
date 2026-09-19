@@ -1,0 +1,112 @@
+{
+  "schema": "por-derecho.dp1901-routing-collision.v1",
+  "as_of": "2026-09-19",
+  "controlling_state": "PROCEDURAL_IDENTITY_COLLISION_OPEN_DIRECTION_NOT_CERTIFIED",
+  "nodes": [
+    {
+      "id": "REF21",
+      "label": "Daily reference 21",
+      "date": "2026-06-25",
+      "type": "AUTONOMOUS_PRIVATE_ACTOR_FILING",
+      "status": "DOCUMENTED"
+    },
+    {
+      "id": "REF24",
+      "label": "Daily reference 24",
+      "date": "2026-06-18",
+      "type": "JUDGE_RELATED_NOTITIA",
+      "status": "DOCUMENTED"
+    },
+    {
+      "id": "DP1901",
+      "label": "DP 1901/2026",
+      "type": "JUDICIAL_PROCEEDING",
+      "status": "DOCUMENTED"
+    },
+    {
+      "id": "DIP2",
+      "label": "DIP 2/2026",
+      "type": "PROSECUTORIAL_ROUTE",
+      "status": "DOCUMENTED"
+    },
+    {
+      "id": "FISCAL29",
+      "label": "Fiscal report 29 Jul 2026",
+      "type": "PROSECUTORIAL_ACT",
+      "status": "EXISTENCE_DATE_OUTCOME_DOCUMENTED_CONTENT_OPEN"
+    },
+    {
+      "id": "AUTO14",
+      "label": "Auto 14 Sep 2026",
+      "type": "JUDICIAL_ACT",
+      "status": "PHOTOGRAPHIC_COPY_CONTROLLED_NATIVE_OPEN"
+    },
+    {
+      "id": "ALZADA286",
+      "label": "CGPJ Alzada 286/2026",
+      "type": "GOVERNANCE_APPEAL",
+      "status": "IN_PROGRESS_LAST_CONFIRMED_2026-08-21"
+    },
+    {
+      "id": "EXPGUB38",
+      "label": "TSJC Exp. Gub. 38/2026",
+      "type": "COURT_OFFICE_SUPERVISION",
+      "status": "DOCUMENTED"
+    }
+  ],
+  "edges": [
+    {
+      "from": "REF21",
+      "to": "DP1901",
+      "relation": "PHYSICAL_TENDER_UNDER_DP1901_09JUL",
+      "evidence": "STAMPED_COVER",
+      "bridge": "ORIGIN_NOT_CERTIFIED"
+    },
+    {
+      "from": "REF24",
+      "to": "DP1901",
+      "relation": "CANDIDATE_IDENTITY_RECONCILIATION_AFTER_14SEP",
+      "evidence": "AUTO_PLUS_CONTEMPORANEOUS_CHAIN",
+      "bridge": "UNPRODUCED"
+    },
+    {
+      "from": "DP1901",
+      "to": "DIP2",
+      "relation": "OFFICIAL_LINK_12JUL",
+      "evidence": "SIGNED_PROVIDENCIA"
+    },
+    {
+      "from": "DP1901",
+      "to": "FISCAL29",
+      "relation": "REPORT_REQUESTED_AND_ARCHIVE_SOUGHT",
+      "evidence": "AUTO14"
+    },
+    {
+      "from": "FISCAL29",
+      "to": "AUTO14",
+      "relation": "DOWNSTREAM_JUDICIAL_DISPOSITION"
+    },
+    {
+      "from": "REF24",
+      "to": "ALZADA286",
+      "relation": "TRACEABILITY_REPORTED_TO_CGPJ",
+      "bridge": "SEPARATE_GOVERNANCE_ROUTE"
+    },
+    {
+      "from": "REF24",
+      "to": "EXPGUB38",
+      "relation": "COURT_OFFICE_TRACEABILITY_CONTEXT",
+      "bridge": "SEPARATE_SUPERVISION_ROUTE"
+    }
+  ],
+  "open_production": [
+    "exact initiating document for DP1901/NIG/IUP",
+    "certified reparto for daily references 21 and 24",
+    "document-to-case association and metadata history",
+    "every joinder/remittal/reassignment/segregation act",
+    "exact corpus sent to Ministerio Fiscal",
+    "signed 29-Jul Fiscal report and assignment",
+    "native/certified 14-Sep Auto and operative notification metadata"
+  ],
+  "visual": "/assets/visuals/dp1901-routing-collision-20260919.svg"
+}
