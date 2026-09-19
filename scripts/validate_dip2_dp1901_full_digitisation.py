@@ -110,7 +110,7 @@ def main() -> None:
         fail(f"missing DP1901 procedural-identity source closure: {SOURCE_CLOSURE}")
     source_closure=source_closure_path.read_text(encoding="utf-8")
     for marker in [
-        "PROCEDURAL_IDENTITY_COLLISION_OPEN — DIRECTION NOT CERTIFIED",
+        "REF21_TO_DP1901_CONTEMPORANEOUSLY_CORROBORATED — OFFICIAL_REPARTO_AND_REF24_ASSOCIATION_HISTORY_OUTSTANDING",
         "dfad6f405b7a2ec047a98a7183a9cbfd0698427d3925d02b2a50b4de76de8f71",
         "2f9b7015598094c68f6408b68a776073de1d7d2fa248169be46fd57bf3bad6c3",
         "8ee03884d32b6b3d9e8377a646eca3d79a7ae199aebc8cc378a9180ba2aef846",
