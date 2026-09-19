@@ -7,7 +7,7 @@
 
 ### HECHO SOBREVINIENTE — DP 1901/2026
 
-Con posterioridad a la versión de control de 12 de septiembre de 2026, el recurrente ha recibido copia de un Auto de 14 de septiembre de 2026 dictado en DP 1901/2026, NIG 3501643220260016977 e IUP LI2026017152. El Auto declara que el procedimiento se incoó por denuncia de presunta prevaricación y hace constar expresamente que el Ministerio Fiscal, mediante informe de 29 de julio de 2026, interesó el archivo de la causa. El propio Auto acuerda sobreseimiento libre y archivo.
+Con posterioridad a la versión de control de 12 de septiembre de 2026, el recurrente recibió el 18 de septiembre de 2026 una copia en papel —no una copia electrónica auténtica ni una notificación electrónica acreditada— de un Auto de 14 de septiembre de 2026 dictado en DP 1901/2026, NIG 3501643220260016977 e IUP LI2026017152. El Auto declara que el procedimiento se incoó por denuncia de presunta prevaricación y hace constar expresamente que el Ministerio Fiscal, mediante informe de 29 de julio de 2026, interesó el archivo de la causa. El propio Auto acuerda sobreseimiento libre y archivo.
 
 Este hecho modifica una cuestión probatoria concreta del recurso: ya no es hipotética la existencia de una intervención fiscal en DP 1901. Quedan pendientes de producción e identificación el autor del informe, su texto íntegro, el reparto o asignación, el corpus puesto a su disposición, cualquier índice u oficio de remisión, el razonamiento seguido, cualquier visado o instrucción y la trazabilidad que explique la relación entre Control 21, Control 24 y DIP 2/2026.
 
@@ -39,6 +39,7 @@ The 14 September order makes the identity question more acute rather than resolv
 - contemporaneous 25 June correspondence reported daily reference 24 still at Decanato; this remains a party report, not an official reparto certificate;
 - on 9 July ATLANTE officially displayed DP 1901/Plaza 6 and DP 1956/Plaza 1 with Gil Marer as denunciante, without identifying defendants/subject;
 - a separate Decanato-stamped 9 July cover proves that private-actor amplification/documentary material was physically tendered under DP 1901/Plaza 6;
+- contemporaneous 9 July counsel correspondence records the then-operational mapping literally as `1901: Contra CAM y otras partes de la Comunidad de Propietarios` and `1956: Contra la AC`;
 - contemporaneous 12 July counsel correspondence reports that Plaza 6 was being approached regarding “la denuncia contra CAM y la CP” identified as 1901/2026;
 - the signed 12 July providencia nevertheless linked that same DP/NIG/IUP to DIP 2/2026;
 - the 14 September Auto later treats DP 1901 as alleged judicial prevaricación.
@@ -78,7 +79,9 @@ Request expressly:
 11. complete certified DIP 2/2026 file and separate 11 February opening decree;
 12. evidence of receipt, incorporation, handler/access and substantive treatment of REGAGE26e00026303869;
 13. certification of exactly which DIP 2 materials, including any correction, were transmitted or made available in DP 1901 before the 29 July Fiscal report;
-14. certified confirmation of whether the 9-Jul private-actor amplification was electronically incorporated, what parent complaint it was associated with, and whether it formed part of the corpus supplied to the Fiscal.
+14. certified confirmation of whether the 9-Jul private-actor amplification was electronically incorporated, what parent complaint it was associated with, and whether it formed part of the corpus supplied to the Fiscal;
+15. DP 1901 object/party metadata at creation and on 9 Jul, 12 Jul, 29 Jul and 14 Sep, including change-event/user audit trail;
+16. the exact object description, cover/index and remitting metadata by which Plaza 6 referred the matter to Ministerio Fiscal.
 
 ## G. Attribution boundary
 
