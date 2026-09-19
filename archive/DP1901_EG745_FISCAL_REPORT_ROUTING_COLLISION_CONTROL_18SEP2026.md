@@ -16,7 +16,7 @@ A three-page court order supplied on 18 September 2026 is dated **14 September 2
 
 The order states that the proceeding was opened following a complaint for alleged **prevaricación**, records that **the Ministerio Fiscal, in a report dated 29 July 2026, requested archive of the case**, and orders **sobreseimiento libre y archivo**.
 
-The supplied copy is a court-order copy/image. The repository does **not** yet possess the native court PDF, the notification metadata or the signed Fiscal report itself.
+The supplied source derives from a **paper copy received by post on 18 September 2026**, which Gil photographed with a device and uploaded as page images. The repository does **not** yet possess the native electronic court PDF, the operative notification metadata or the signed Fiscal report itself.
 
 ## 2. What this establishes
 
@@ -67,13 +67,13 @@ The source set therefore materially strengthens the existence of a real **proced
 
 The canonical state is:
 
-**PROCEDURAL_IDENTITY_COLLISION_OPEN — DIRECTION NOT CERTIFIED.**
+**REF21_TO_DP1901_CONTEMPORANEOUSLY_CORROBORATED — OFFICIAL_REPARTO_AND_REF24_ASSOCIATION_HISTORY_OUTSTANDING.**
 
 Do not publish as proved:
 
-- that daily reference 21 generated DP 1901 and daily reference 24 was later misrouted/merged into it;
-- that daily reference 24 generated DP 1901 and the private-actor material was mistakenly tendered into it; or
-- that a formal joinder/reassignment occurred.
+- that the repository possesses a certified court-system event proving the exact electronic creation timestamp of DP 1901 from Ref. 21;
+- that the precise later mechanism associating Ref. 24 with DP 1901 has been established; or
+- that any association, joinder or reassignment was intentional, unlawful or attributable to a named person.
 
 A formal but presently unlocated allocation/joinder/reassignment/segregation act, or another administrative explanation, remains possible. Only the certified initiating document, reparto/index and ingestion history can close direction.
 
@@ -139,7 +139,7 @@ The 29 July request for archive may have a lawful prosecutorial explanation. The
 
 ### Effect on the existing control
 
-The categorical party account and the open certification state coexist. Preserve both: **Gil's position is private-actor-first; PROCEDURAL_IDENTITY_COLLISION_OPEN — DIRECTION NOT CERTIFIED remains the documentary certification status.** Do not reduce his direct observation to a mere hypothesis, and do not describe observation of paper custody as observation of an electronic case-creation event.
+The categorical party account and the open certification state coexist. Preserve both: **Gil's position is private-actor-first and is contemporaneously corroborated; the remaining documentary certification gap concerns the court's internal electronic creation/reparto event and the later Ref. 24 association mechanism.** Do not reduce his direct observation to a mere hypothesis, and do not describe observation of paper custody as observation of an electronic case-creation event.
 
 The original three filings remain separate. Court numbers 1956 and 1901, assigned to different plazas, are not evidence of their comparative creation times. No adverse inference or reversal of the burden of proof follows merely because an alternative has not yet been disproved.
 
