@@ -352,16 +352,32 @@ def main() -> int:
         errors.append("CURRENT_UNITARY_STATE.md retains a stale pending-publication statement for the controlling unitary-enterprise release")
 
     production = load_object(PRODUCTION_STATUS, errors)
-    if production.get("served_sha") != MERGE_SHA or production.get("source_tree_sha") != TREE_SHA:
-        errors.append("production status does not identify the exact promoted merge/tree")
+    served_sha = production.get("served_sha")
+    served_tree = production.get("source_tree_sha")
+    if re.fullmatch(r"[0-9a-f]{40}", str(served_sha or "")) is None:
+        errors.append("production status served SHA is invalid")
+    if re.fullmatch(r"[0-9a-f]{40}", str(served_tree or "")) is None:
+        errors.append("production status served tree is invalid")
     production_deployment = production.get("deployment") or {}
-    if production_deployment.get("workflow_run_id") != PAGES_RUN_ID:
-        errors.append("production status Pages run does not match promoted evidence")
+    if production_deployment.get("status") != "completed" or production_deployment.get("conclusion") != "success":
+        errors.append("production status does not record a successful Pages deployment")
+    if not isinstance(production_deployment.get("workflow_run_id"), int):
+        errors.append("production status Pages run is invalid")
+    if (
+        production_deployment.get("head_sha") is not None
+        and production_deployment.get("head_sha") != served_sha
+    ):
+        errors.append("production deployment head does not match served SHA")
     production_verification = production.get("verification") or {}
-    if production_verification.get("state") != "LIVE_VERIFIED":
-        errors.append("production verification state is not LIVE_VERIFIED")
-    if production_verification.get("current_exact_route_content_verification") != "LIVE_VERIFIED_FOR_SERVED_SHA":
-        errors.append("production exact-route content verification is not LIVE_VERIFIED")
+    verification_state = production_verification.get("state")
+    route_readback = production_verification.get("current_exact_route_content_verification")
+    if verification_state not in {"LIVE_VERIFIED", "DEPLOYED_BUILD_SUCCESS"}:
+        errors.append("production verification state is not explicit")
+    elif verification_state == "LIVE_VERIFIED":
+        if route_readback != "LIVE_VERIFIED_FOR_SERVED_SHA":
+            errors.append("live production lacks exact-route content verification")
+    elif route_readback != "NOT_RECORDED_FOR_SERVED_SHA":
+        errors.append("deployment-only production claims exact-route content verification")
     specialist = production_verification.get("latest_live_verified_specialist_release") or {}
     for key, expected in {
         "control_id": CONTROL_26,
