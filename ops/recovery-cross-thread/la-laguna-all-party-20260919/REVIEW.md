@@ -1,6 +1,6 @@
 # La Laguna: all-party recovery and 19 September receipt correction
 
-Status: worker delta for the existing canonical controls; integration and publication remain with the active Control Tower lane under PD-MTCP-20260904-01. GitHub base: `aab59b554898fa0be799fc3a4386093612bf5f9e`.
+Status: reviewed worker delta for the existing canonical controls; integration and publication remain with the active Control Tower lane under PD-MTCP-20260904-01. The recovered 106-path comparison and intake were calculated against exact baseline `aab59b554898fa0be799fc3a4386093612bf5f9e`; PR integration was reconciled to current main `bf0a427a0340987b2d301a4698abf781c41fb6b5`. The baseline recorded inside `comparison.json` and `intake.json` is therefore provenance for that finite comparison, not a claim that it remains current `main`.
 
 ## Criminal/prosecutorial sequence
 
