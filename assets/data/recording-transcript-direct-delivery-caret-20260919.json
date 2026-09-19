@@ -1,0 +1,53 @@
+{
+  "schema": "por-derecho.recording-transcript-direct-delivery-caret.v1",
+  "control_date": "2026-09-19",
+  "repository_mode": "github_first_while_gitlab_blocked",
+  "scope_note": "Recipient-side direct-delivery provenance and scoped identity reconciliation only. This does not replace independent native-device, metadata, voice-biometric or forensic-laboratory authentication.",
+  "families": [
+    {
+      "evidence_family_id": "SP-TR-2018-02-26-01",
+      "underlying_event_date": "2018-02-26",
+      "certified_replay_capture_date": "2018-03-22",
+      "deliverer": {
+        "canonical_id": "PD-SP-P-0241",
+        "name": "Miguel Barreiro Cano",
+        "scoped_status": "CARET_CONFIRMED",
+        "scope": "direct delivery to project/client of the recording/transcript family"
+      },
+      "attributed_other_speaker": {
+        "canonical_id": "PD-SP-P-0011",
+        "name": "José Daniel Acosta Matos"
+      },
+      "boundaries": [
+        "Burovoz/Logalty generic speaker labels do not independently identify the natural persons.",
+        "The 22 March 2018 certified replay/capture must not be conflated with the reported 26 February 2018 underlying call.",
+        "Direct delivery and client/project authentication are distinct from independent voice or device forensics.",
+        "Captured words do not by themselves prove the truth of every proposition."
+      ]
+    },
+    {
+      "evidence_family_id": "SP-TR-2016-06-10",
+      "canonical_event_date": "2016-06-10",
+      "legacy_derivative_label": "11JUN2016",
+      "deliverer": {
+        "canonical_id": "PD-SP-P-0055",
+        "name": "Cristo Ayose Suárez Pimentel",
+        "scoped_status": "CARET_CONFIRMED",
+        "scope": "direct delivery to project/client of the recorded-meeting transcript family"
+      },
+      "known_derivative_state": {
+        "transcript_pages": 149,
+        "timestamped_intervention_headers": 1223,
+        "public_contextual_index_entries": 176,
+        "two_located_amr_combined_display": "approximately 126m36.4s",
+        "later_derivative_stated_duration": "144 min"
+      },
+      "boundaries": [
+        "10 June 2016 is the canonical meeting date; 11JUN2016 is retained only as derivative/version history.",
+        "The public 176-entry index is an analytical subset, not the complete 1,223-intervention transcript ledger.",
+        "The 144-minute derivative label conflicts with measured located AMR duration and remains controlled as a discrepancy.",
+        "Direct delivery does not close native-audio, device-metadata, privilege/privacy, speaker-capacity or line-by-line audio alignment questions."
+      ]
+    }
+  ]
+}
