@@ -1,0 +1,26 @@
+name: GitHub free agent pilot
+
+on:
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - 'ops/continuity/GITHUB_FREE_AGENT_PILOT_20260919.json'
+      - 'scripts/audit_github_free_agent_pilot_20260919.py'
+      - '.github/workflows/github-free-agent-pilot.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  advisory-audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+      - name: Set up Python
+        uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
+        with:
+          python-version: '3.11'
+      - name: Audit zero-cost agent pilot
+        run: python3 scripts/audit_github_free_agent_pilot_20260919.py
