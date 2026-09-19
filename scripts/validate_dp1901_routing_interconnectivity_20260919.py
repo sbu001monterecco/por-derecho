@@ -48,8 +48,8 @@ shared_pages=[
 for path in shared_pages:
     need(path,"dp1901-routing-collision-20260919.js","data-dp1901-collision")
 
-need("en/daily-reference-21-private-actor-complaint/index.html","DP 1901","Daily Ref. 24","data-dp1901-collision")
-need("es/referencia-21-denuncia-actores-privados/index.html","DP 1901","Ref. diaria 24","data-dp1901-collision")
+need("en/daily-reference-21-private-actor-complaint/index.html","DP 1901","control-24-insolvency-judge-complaint-36-2012","data-dp1901-collision")
+need("es/referencia-21-denuncia-actores-privados/index.html","DP 1901","control-24-denuncia-juez-concurso-36-2012","data-dp1901-collision")
 need("sitemap-control-22-24.xml","daily-reference-21-private-actor-complaint","referencia-21-denuncia-actores-privados")
 need("assets/control-22-24-search-extension-20260904.js","CONTROL-21-PRIVATE-20260919")
 
