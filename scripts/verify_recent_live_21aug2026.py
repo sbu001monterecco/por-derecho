@@ -100,7 +100,8 @@ CHECKS: list[dict[str, Any]] = [
         "kind": "global_site_loader_chain",
         "markers": [
             "site-pre-treasury-154-hq-20260828.js?v=",
-            "data-pre-treasury-154-site-loader",
+            "site-pre-matkator-8584-20260903.js?v=",
+            "data-pre-matkator-8584-site-loader",
         ],
         "min_bytes": 500,
     },
