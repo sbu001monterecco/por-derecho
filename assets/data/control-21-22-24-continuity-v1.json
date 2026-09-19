@@ -1,7 +1,7 @@
 {
-  "schema_version": "1.0.4",
+  "schema_version": "1.0.5",
   "control_id": "PD-C212224-001",
-  "as_of": "2026-09-18",
+  "as_of": "2026-09-19",
   "repository": "sbu001monterecco/por-derecho",
   "baseline_main_sha": "b8ded173b06f17aaf91569f051dd11e621b139ae",
   "canonical_nucleus": {
@@ -19,7 +19,12 @@
       "bridge_status": "UNVERIFIED_CANDIDATE_BRIDGE",
       "evidential_state": "DOCUMENTED",
       "do_not_infer": "The 25-Jun daily-reference-21 private-actor filing is now documented by a stamped cover, and a 9-Jul stamped cover proves private-actor amplification material was physically tendered under DP 1901/Plaza 6. Do not state that daily reference 21 originally generated DP 1901 without the certified initiating document/reparto/index/ingestion bridge. The 12-Jul providencia links DP 1901 to DIP 2/2026 and the 14-Sep order treats it as alleged judicial prevarication.",
-      "identity_collision_status": "PROCEDURAL_IDENTITY_COLLISION_OPEN_DIRECTION_NOT_CERTIFIED"
+      "identity_collision_status": "PROCEDURAL_IDENTITY_COLLISION_OPEN_DIRECTION_NOT_CERTIFIED",
+      "contemporaneous_july_evidence": {
+        "email_20260709": "Counsel email records: `1901: Contra CAM y otras partes de la Comunidad de Propietarios`; `1956: Contra la AC`.",
+        "court_followup_20260712": "Contemporaneous counsel email records Plaza 6 follow-up concerning `la denuncia contra CAM y la CP` identified as 1901/2026.",
+        "limit": "Contemporaneous operational identification; not a certified initiating/reparto record."
+      }
     },
     {
       "id": "CONTROL-22",
@@ -53,7 +58,11 @@
       "evidential_state": "DOCUMENTED",
       "do_not_infer": "Daily registration no. 24 is not a NIG or DP number. Its 18-Jun stamped judge filing and 25-Jun 13-page dependent supplement are now documented. The 14-Sep DP 1901 order creates a serious candidate routing/identity question, but the source closure does not prove that daily reference 24 generated, was joined to, or was reassigned into DP 1901.",
       "identity_collision_status": "PROCEDURAL_IDENTITY_COLLISION_OPEN_DIRECTION_NOT_CERTIFIED",
-      "judge_amplification_pages": 13
+      "judge_amplification_pages": 13,
+      "judge_principal_document_bundle_pages": 31,
+      "judge_front_matter_pages": 4,
+      "judge_principal_pleading_pages": 27,
+      "supervening_dp1901_state": "14-Sep Auto describes DP1901 as alleged prevaricacion; candidate Ref24↔DP1901 identity/routing relationship open, direction not certified."
     }
   ],
   "nodes": [
@@ -375,7 +384,9 @@
     "READER_DP-1956_EN": "/en/dp-1956-2026/",
     "READER_DP-1956_ES": "/es/dp-1956-2026/",
     "READER_CONTROL-24_EN": "/en/control-24-insolvency-judge-complaint-36-2012/",
-    "READER_CONTROL-24_ES": "/es/control-24-denuncia-juez-concurso-36-2012/"
+    "READER_CONTROL-24_ES": "/es/control-24-denuncia-juez-concurso-36-2012/",
+    "ROUTING_COLLISION_GRAPH": "/assets/data/dp1901-routing-collision-v1.json",
+    "ROUTING_COLLISION_VISUAL": "/assets/visuals/dp1901-routing-collision-20260919.svg"
   },
   "open_gaps": [
     "Certified DP 1901/2026 initiating document, complete docket/index, 18-Jun–12-Jul ingestion history and direction of the daily-reference-21 / daily-reference-24 routing collision",
@@ -415,5 +426,34 @@
       "joinder/reassignment/remittal/segregation acts",
       "exact corpus transmitted to Ministerio Fiscal"
     ]
+  },
+  "state_transition_audit_20260919": {
+    "question": "What was the registered object/subject of DP1901 at creation and at each material transition?",
+    "checkpoints": [
+      {
+        "date": "2026-07-09",
+        "state": "private-actor material physically tendered under DP1901; contemporaneous operational identification as CAM/private/Community lane"
+      },
+      {
+        "date": "2026-07-12",
+        "state": "official providencia sends admission question to Ministerio Fiscal in relation to DIP2/2026"
+      },
+      {
+        "date": "2026-07-29",
+        "state": "Fiscal report later recorded as seeking archive; exact object/corpus received remains open"
+      },
+      {
+        "date": "2026-09-14",
+        "state": "Auto describes DP1901 as initiated for alleged prevaricacion and orders sobreseimiento libre/archive"
+      }
+    ],
+    "authority_only_required": [
+      "initiating document and NIG creation event",
+      "object/subject/party metadata at each checkpoint",
+      "document-to-case association history and audit events",
+      "formal joinder/remittal/reassignment/segregation acts",
+      "exact corpus/remitting metadata sent to Ministerio Fiscal"
+    ],
+    "non_finding": "No current source proves who caused the transition, whether it was deliberate, or whether a lawful administrative explanation exists."
   }
 }

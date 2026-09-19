@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="t d">
+<title id="t">DP 1901/2026 — procedural identity collision</title>
+<desc id="d">Two autonomous June filings converge on DP 1901 through an unproduced bridge; later official acts link DP 1901 to DIP 2, a prosecution report and the 14 September order.</desc>
+<style>
+  .bg{fill:#f7f5ef}.ink{fill:#16242b}.muted{fill:#5d6a70}.ochre{fill:#b27a25}.blue{fill:#526f87}.char{fill:#283238}.grey{fill:#dfe5e7}.red{fill:#9d2d2d}.white{fill:#fff}
+  .box{rx:20;ry:20;stroke:#b7c1c4;stroke-width:2}.h{font:700 42px system-ui,sans-serif}.k{font:700 28px system-ui,sans-serif}.p{font:500 23px system-ui,sans-serif}.s{font:500 18px system-ui,sans-serif}
+  .arrow{stroke:#44535a;stroke-width:8;fill:none;marker-end:url(#m)} .dash{stroke:#9d2d2d;stroke-width:8;stroke-dasharray:18 14;fill:none;marker-end:url(#mr)}
+</style>
+<defs><marker id="m" markerWidth="12" markerHeight="12" refX="10" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 z" class="ink"/></marker><marker id="mr" markerWidth="12" markerHeight="12" refX="10" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 z" class="red"/></marker></defs>
+<rect width="1600" height="900" class="bg"/>
+<text x="80" y="80" class="h ink">DP 1901/2026 · trazabilidad de dos escritos autónomos</text>
+<text x="80" y="120" class="p muted">Hechos conocidos a ambos lados · acto puente todavía no producido</text>
+<rect x="70" y="180" width="390" height="210" class="box" fill="#f0dfc4"/><text x="105" y="230" class="k ochre">REF. 21 · 25 JUN 2026</text><text x="105" y="275" class="p ink">Denuncia penal autónoma</text><text x="105" y="310" class="p ink">5 actores privados</text><text x="105" y="350" class="s muted">9 Jul: material privado presentado</text><text x="105" y="377" class="s muted">físicamente bajo DP 1901 / Plaza 6</text>
+<rect x="70" y="500" width="390" height="210" class="box" fill="#dfe7ed"/><text x="105" y="550" class="k blue">REF. 24 · 18 JUN 2026</text><text x="105" y="595" class="p ink">Denuncia / notitia criminis</text><text x="105" y="630" class="p ink">relativa al magistrado</text><text x="105" y="670" class="s muted">Destino escrito: Sala Civil y Penal TSJC</text><text x="105" y="697" class="s muted">vía Decanato · no querella formal</text>
+<rect x="610" y="300" width="360" height="220" class="box char"/><text x="680" y="365" class="h white">DP 1901/2026</text><text x="655" y="415" class="p white">NIG 3501643220260016977</text><text x="670" y="455" class="p white">Plaza 6 · Instrucción</text><text x="660" y="492" class="s white">identidad procesal por certificar</text>
+<path d="M460 285 C535 285 555 335 610 365" class="arrow"/>
+<path d="M460 605 C535 605 555 515 610 470" class="dash"/>
+<rect x="490" y="705" width="600" height="105" class="box" fill="#fff4f2" stroke="#9d2d2d"/><text x="535" y="750" class="k red">DOCUMENTO / EVENTO PUENTE NO LOCALIZADO</text><text x="535" y="785" class="s ink">reparto · remisión · unión · reasignación · segregación · asociación electrónica</text>
+<rect x="1120" y="150" width="380" height="130" class="box grey"/><text x="1160" y="202" class="k ink">12 JUL 2026</text><text x="1160" y="242" class="p ink">DP 1901 ↔ DIP 2/2026</text>
+<rect x="1120" y="355" width="380" height="130" class="box grey"/><text x="1160" y="407" class="k ink">29 JUL 2026</text><text x="1160" y="447" class="p ink">Informe Fiscal pide archivo</text>
+<rect x="1120" y="560" width="380" height="160" class="box" fill="#ece8df"/><text x="1160" y="612" class="k ink">14 SEP 2026</text><text x="1160" y="652" class="p ink">Auto: presunta prevaricación</text><text x="1160" y="690" class="p ink">sobreseimiento libre / archivo</text>
+<path d="M970 375 C1030 330 1060 245 1120 220" class="arrow"/><path d="M1310 280 L1310 355" class="arrow"/><path d="M1310 485 L1310 560" class="arrow"/>
+<text x="80" y="860" class="s muted">Visual explicativo. No atribuye autoría, intención ni alteración ilícita. El puente debe acreditarse con el registro oficial.</text>
+</svg>

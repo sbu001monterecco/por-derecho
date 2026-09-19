@@ -1,6 +1,6 @@
 # DP 1901/2026 — procedural-identity source closure from June/July primary and contemporaneous records
 
-**Control date:** 18 September 2026  
+**Control date:** 19 September 2026 (18 September source closure, strengthened by clearer paper copies and contemporaneous-email recheck)  
 **Status:** SOURCE-CLOSURE ADDENDUM / ROUTING DIRECTION STILL NOT CERTIFIED  
 **Purpose:** preserve the strongest presently located evidence about the relationship between the 18 June judge-related filing (daily reference 24), the 25 June private-actor filing (daily reference 21), and DP 1901/2026.
 
@@ -60,15 +60,15 @@ Contemporaneous correspondence to the procuradora and counsel describes the oper
 - 1901: CAM/private/Community complaint;
 - 1956: AC complaint.
 
-That correspondence proves the contemporaneous understanding/information being acted on; it is not a substitute for the certified initiating document.
+The 9-Jul email to counsel is more specific than the earlier summary: it records `1901: Contra CAM y otras partes de la Comunidad de Propietarios` and `1956: Contra la AC`. A same-day email to the procuradora records that Gil had returned personally to the Decanato, tendered the CAM/private-actor amplification and was supplied an ATLANTE copy showing the two already-opened matters. These are contemporaneous party/counsel communications and therefore evidence of the operational understanding then being acted on; they remain distinct from a certified initiating/reparto record.
 
 ### 10–12 July — contemporaneous court-contact account and the signed providencia diverge in subject characterisation
 
-A contemporaneous 12-Jul email to counsel reports that on the preceding Friday Gil had returned to **Juzgado de Instrucción n.º 6** regarding “la denuncia contra CAM y la CP” identified as 1901/2026; staff reportedly confirmed a providencia existed and would give traslado to Fiscalía when signed.
+A contemporaneous 12-Jul email to counsel reports that Gil had returned to **Juzgado de Instrucción n.º 6** regarding “la denuncia contra CAM y la CP” identified as 1901/2026; staff reportedly confirmed a providencia existed, would be made available once signed and would give traslado to Fiscalía.
 
-The signed 12-Jul providencia in DP 1901/NIG/IUP then formally sent the admission question to Ministerio Fiscal for five days **in relation to DIP 2/2026**.
+The signed paper providencia now re-photographed on 19-Sep identifies the same DP 1901/NIG/IUP, is electronically signed by Luis Francisco Galván Mesa on 12-Jul-2026, and formally sends the admission question to Ministerio Fiscal for five days **in relation to DIP 2/2026**. Gil states that a paper copy was made available informally by the court office while he was following DP 1901 as the CAM/private-actor matter; no formal service/receipt is inferred from that account.
 
-The email is a contemporaneous account of court-office interaction, not an official certification of the proceeding's legal identity. The providencia is the controlling official act as to what it says.
+The email is a contemporaneous account of court-office interaction, not an official certification of the proceeding's legal identity. The providencia controls as to its text. The combined evidence materially strengthens the July operational mapping while still leaving the initiating/reparto direction uncertified.
 
 ### 14 September — the later Auto expressly characterises DP 1901 as alleged judicial prevaricación
 
@@ -83,7 +83,8 @@ The source set now supports all of the following without relying on hindsight:
 3. private-actor material was physically tendered under DP 1901/Plaza 6 on 9 Jul;
 4. contemporaneous July communications treated DP 1901 operationally as the CAM/private/Community lane;
 5. the official 12-Jul providencia nevertheless linked DP 1901 to DIP 2/2026;
-6. the 14-Sep Auto later characterised DP 1901 as alleged judicial prevaricación.
+6. the 14-Sep Auto later characterised DP 1901 as alleged judicial prevaricación;
+7. the July record now contains a source-to-source state transition: contemporaneous private-actor identification immediately before an official DIP2-linked providencia, with no produced bridge act explaining the change.
 
 This materially strengthens the existence of a **procedural-identity/routing collision**.
 
@@ -111,7 +112,8 @@ To close direction, obtain:
 5. every act of joinder, reassignment, accumulation, remisión or segregation;
 6. the exact electronic corpus/index sent to Ministerio Fiscal before the 29-Jul report;
 7. the signed 29-Jul Fiscal report, author, assignment, reasoning and any review/visado;
-8. native/certified 14-Sep Auto and legally operative notification/access metadata.
+8. native/certified 14-Sep Auto and legally operative notification/access metadata;
+9. the DP1901 object/subject/party metadata at creation and at 9-Jul, 12-Jul, 29-Jul and 14-Sep, including every user-visible or audit-log change to those fields.
 
 ## Litigation consequence
 
