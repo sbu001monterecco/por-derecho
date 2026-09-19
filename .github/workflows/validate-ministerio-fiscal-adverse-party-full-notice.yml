@@ -3,8 +3,48 @@ name: Validate Ministerio Fiscal adverse-party full notice
 on:
   pull_request:
     branches: [main]
+    # Conservative dependency union; see ops/continuity/GITHUB_CONGESTION_WINDOW_20260919.md.
+    paths:
+      - 'AGENTS.md'
+      - '.github/copilot-instructions.md'
+      - 'en/**'
+      - 'es/**'
+      - 'assets/**'
+      - 'archive/**'
+      - 'evidence/**'
+      - 'drafts/**'
+      - 'publication-manifests/**'
+      - 'scripts/**'
+      - '.github/governance/**'
+      - 'docs/**'
+      - 'ops/CURRENT_STATE.json'
+      - 'ops/CURRENT_UNITARY_STATE.json'
+      - 'sitemap*.xml'
+      - 'package*.json'
+      - '.github/workflows/validate-ministerio-fiscal-adverse-party-full-notice.yml'
+      - '.github/workflows/validate-calificacion-criminal-misuse-thesis.yml'
   push:
     branches: [main]
+    # Conservative dependency union; see ops/continuity/GITHUB_CONGESTION_WINDOW_20260919.md.
+    paths:
+      - 'AGENTS.md'
+      - '.github/copilot-instructions.md'
+      - 'en/**'
+      - 'es/**'
+      - 'assets/**'
+      - 'archive/**'
+      - 'evidence/**'
+      - 'drafts/**'
+      - 'publication-manifests/**'
+      - 'scripts/**'
+      - '.github/governance/**'
+      - 'docs/**'
+      - 'ops/CURRENT_STATE.json'
+      - 'ops/CURRENT_UNITARY_STATE.json'
+      - 'sitemap*.xml'
+      - 'package*.json'
+      - '.github/workflows/validate-ministerio-fiscal-adverse-party-full-notice.yml'
+      - '.github/workflows/validate-calificacion-criminal-misuse-thesis.yml'
 
 permissions:
   contents: read

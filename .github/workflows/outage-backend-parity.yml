@@ -16,6 +16,8 @@ on:
       - '.github/workflows/publication-integrity-gate.yml'
       - '.github/workflows/verify-unitary-enterprise-attribution-live.yml'
       - '.github/workflows/off-github-preservation.yml'
+      - 'scripts/preservation_snapshot_plan.py'
+      - 'scripts/test_preservation_snapshot_plan.py'
       - 'ops/PUBLICATION_CONTROLLER.md'
       - 'ops/CURRENT_UNITARY_STATE.json'
       - 'ops/duo/**'
@@ -66,6 +68,8 @@ on:
       - '.github/workflows/publication-integrity-gate.yml'
       - '.github/workflows/verify-unitary-enterprise-attribution-live.yml'
       - '.github/workflows/off-github-preservation.yml'
+      - 'scripts/preservation_snapshot_plan.py'
+      - 'scripts/test_preservation_snapshot_plan.py'
       - 'ops/PUBLICATION_CONTROLLER.md'
       - 'ops/CURRENT_UNITARY_STATE.json'
       - 'ops/duo/**'
@@ -129,6 +133,8 @@ jobs:
         run: python3 -m unittest discover -s tests -p 'test_github_outage_backend_20260917.py' -v
       - name: Validate backend hardening controls
         run: python3 -m unittest discover -s tests -p 'test_github_backend_hardening_20260917.py' -v
+      - name: Verify exact-main preservation reuse and rejection cases
+        run: python3 -m unittest discover -s scripts -p test_preservation_snapshot_plan.py -v
       - name: Audit reconstructible backend capabilities
         run: python3 scripts/audit_github_backend_capabilities_20260917.py
       - name: Validate 48h plus 36h continuity horizon
