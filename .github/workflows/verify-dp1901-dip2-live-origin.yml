@@ -150,13 +150,13 @@ jobs:
           PY
 
   exact-live-readback:
-    if: github.event_name == 'push'
+    if: github.event_name == 'push' || github.event_name == 'pull_request'
     needs: source-contract
     runs-on: ubuntu-latest
     timeout-minutes: 20
     env:
       GH_TOKEN: ${{ github.token }}
-      TARGET_SHA: ${{ github.sha }}
+      TARGET_SHA: ${{ github.event_name == 'pull_request' && github.event.pull_request.base.sha || github.sha }}
       REPOSITORY: ${{ github.repository }}
       RUN_ID: ${{ github.run_id }}
     steps:
@@ -173,6 +173,7 @@ jobs:
           import hashlib
           import json
           import os
+          import subprocess
           import time
           import urllib.parse
           import urllib.request
@@ -232,7 +233,10 @@ jobs:
             "evidence/judicial/dp-1901-2026/public-pdfs/auto-14sep2026-public-controlled-transcription.pdf":f"{base}/evidence/judicial/dp-1901-2026/public-pdfs/auto-14sep2026-public-controlled-transcription.pdf",
             "evidence/fiscalia/dip-2-2026/public-pdfs/decreto-archivo-dip-2-2026-06mar2026-public-redacted.pdf":f"{base}/evidence/fiscalia/dip-2-2026/public-pdfs/decreto-archivo-dip-2-2026-06mar2026-public-redacted.pdf",
           }
-          expected={path:Path(path).read_bytes() for path in targets}
+          expected={
+            path: subprocess.check_output(["git","show",f"{target_sha}:{path}"])
+            for path in targets
+          }
           pending=set(targets)
           observed={}
           for attempt in range(1,25):
@@ -304,7 +308,7 @@ jobs:
         if: always()
         uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
         with:
-          name: dp1901-dip2-live-${{ github.sha }}
+          name: dp1901-dip2-live-${{ env.TARGET_SHA }}
           path: artifacts/dp1901-dip2-live/
           if-no-files-found: error
           retention-days: 30
