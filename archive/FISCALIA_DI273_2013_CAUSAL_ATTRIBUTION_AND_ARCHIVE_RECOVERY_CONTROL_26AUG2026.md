@@ -134,3 +134,69 @@ No separate entity, case or actor named **Armata** or **Armada** was located in 
 - label every proposition as official act, AC assertion, prosecution hypothesis, party allegation, later expert evidence, appealed finding or unresolved gap;
 - preserve a visible correction/right-of-reply route;
 - never infer Patricia's adoption of Gil's current “misuse” characterization merely because both were accused or joined earlier pleadings.
+
+
+## 14. Early personación and declaration reconstruction — 19 September 2026 worker delta
+
+**Integration owner:** existing [Fiscalía control issue #1621](https://github.com/sbu001monterecco/por-derecho/issues/1621). This additive evidence control does not certify a complete docket, deployment, or primary attendance finding. Sections 1–13 remain operative.
+
+### 14.1 Source and status discipline
+
+**PROVED** below means the identified source records the stated act or assertion; it does not adopt a party's allegations as true. **DISPROVED** is limited to the specified proposition contradicted by the located record. **BOUNDED-NOT-LOCATED** describes this retrieval pass, not non-existence. **AUTHORITY-ONLY** does not prove exercise of the authority. **CONFLICT-VARIANT** preserves unresolved wording, date or identity differences.
+
+| Event/source | Controlled finding | Status and boundary |
+|---|---|---|
+| 12 March 2013 counsel communication forwarding court resolutions | Reports authority for the AC to bring civil/criminal action concerning the operating contract. | **AUTHORITY-ONLY** at the underlying-act level; the communication does not independently establish the exact 6 March order or prove when authority was exercised. |
+| 27 December 2013 DI 273/2013 querella | Fiscal Tomás Fernández de Páiz adopts an official accusatory route following AC-supplied material. | **PROVED**, official accusatory act already controlled in sections 2 and 8; factual allegations remain hypotheses. |
+| 31 May 2016 court order, retrospective procedural history | JI nº 3 Arrecife (antiguo Mixto nº 8), DP 0000332/2014; registered 31 January 2014 and opened 13 June 2014. NIG 3500443220140001497; IUP AI2014000474. | **PROVED** as statements in the located court-copy text. Original 2014 registry/opening acts not separately recovered in this pass. |
+| 30 January 2015 counsel report | Describes the DI 273/2013 → DP 332/2014 transition and defence representation for Gil and Patricia. | **PROVED** as counsel's report; defence personación must not be merged with the later private-party event. |
+| 24 February 2015 personación, recounted by counsel on 20 November 2018 | The preceding paragraph identifies AMENE S.L. and Inversiones Salinetas S.L.; these are the strongest textual antecedents of the later plural pronoun. | **BOUNDED-NOT-LOCATED** for the primary providencia, exact admitted parties, lawyers and procuradores. Pronoun resolution is analytical inference, not a primary identity finding; Roque Prieto cannot be added to this date from a 2018 pleading. |
+| 13 April 2015 contemporaneous correspondence | Patricia reports next-day declarations in Arrecife arising from the AC complaint; counsel discusses their personal accused capacities. | **PROVED** as contemporary communication. Its informal reference to Fiscalía does not change the established court identity. Private advice is excluded from public reproduction. |
+| 14 April 2015 declarations | Counsel's 20 November 2018 chronology gives separate declarations by Patricia and Gil on this date; the 13 April correspondence supports the scheduling. | **BOUNDED-NOT-LOCATED** for each declaration record, signatures, attendance and audiovisual record. Date supported by counsel evidence, not substituted primary minutes. |
+| 15 April 2015 request for AC testimony | The later DP 332/2014 party pleading says this party had requested the AC's testimony in a filing presented that day. | **PROVED** as a reference in a party document; **BOUNDED-NOT-LOCATED** for the underlying filing and receipt. A concrete new retrieval target, one day after the reported declarations. |
+| 29 April 2015 contemporaneous counsel communication | Counsel reports having spoken with the court, anticipated referral to Fiscalía, and an apparent judicial reaction to prosecutorial non-attendance at declarations. | **PROVED** as counsel's report; the judge's reaction is reported/impression evidence. It is not an official judicial complaint, a signed judicial statement or an attendee list. |
+| 16 November 2018 party recollection | Patricia recalls absence of the AC and Fiscalía and attendance of a lawyer she associated with the Molina side. | **PROVED** as recollection, not as the underlying attendance proposition. Counsel's April report corroborates only the prosecutorial non-attendance concern, not AC absence or the unnamed lawyer's identity. |
+| 31 May 2016 extension order | Fiscalía requested complexity and 18 months; the court expressly rejected the statutory complexity grounds and granted an exceptional 12-month extension. Pino Esther Hormiga Franco signs this order. | **DISPROVED**, limited to describing this order as a declaration of complexity. Do not infer that this was the judge at the April 2015 declarations. |
+| January 2018 party pleading (24 January appears in custody filename only) | Soledad Tello Checa states she represents Roque Prieto S.L., Inversiones Salinetas S.L. and literal AMENEN S.L. in DP 332/2014. She requests that document production be directed to Gil/Patricia rather than the AC and reiterates AC testimony. | **PROVED** as the document's representation statement and requested relief. Court acceptance, filing date/receipt, attorney pairing, correctness of the allegations and actual possession of records remain unproved. |
+| 2021 reported archive | No signed final disposition, service record or finality record recovered in this pass. | **BOUNDED-NOT-LOCATED**; section 7's reconciliation with contemporary reactivation reports remains mandatory. |
+
+### 14.2 Unresolved source variants and layout boundary
+
+- The January 2018 pleading's extracted text gives notification on **19 January 2018**, literal providencia date **15.01.2017**, and underlying oficio **4 July 2017**. This is a **CONFLICT-VARIANT**; do not silently change 2017 to 2018. The filename's 24 January date is not a body-verified signature or filing date.
+- The 2016 order gives Fiscalía's report as **25 May 2016** and the complainant representation's adhesion as **24 May 2016**. Preserve both source dates and flag the sequence; no corrective date has been proved.
+- The pleading extraction says **AMENEN S.L.** and counsel's later summary says **AMENE S.L.** Keep both as source-form variants until native image and corporate identity are reconciled. Neither establishes a new entity or authorizes a silent canonical merge.
+- Preserve the standing source-fidelity rule: **Malkator [sic] (Matkator S.L.)** when reproducing that supplied source form. This does not resolve any separate corporate-suffix discrepancy in an existing canonical register.
+- The 2016 header names Gil, Patricia, Borja Rodríguez-Batllori Laffitte, Roque Prieto and José Ramos Saavedra, with professional details flattened by extraction. **No exact row pairing or Ramos lawyer capacity is established here.** Native layout must be read before assigning capacities. A descriptive custody filename is not evidence of those capacities.
+- The 2016 order and 2018 pleading were readable as connector-extracted text. Native download attempts returned HTTP 403. No new native-file hash, image-layout verification, certification or public derivative is claimed.
+
+### 14.3 Representation convergence: bounded linkage
+
+The 2018 DP 332/2014 pleading connects **Soledad Tello Checa** to three named private parties as their stated procuradora and records a request protecting the AC from the particular document demand by redirecting it to the investigated parties. This is evidence of a stated representation and litigation position potentially relevant to a duty/conflict analysis. It does not establish improper coordination, the truth of the pleading's assertions, or appearance by that procuradora or any identified lawyer on 14 April 2015.
+
+Reuse **PD-SP-P-0101** / **PROC-SOLEDAD-TELLO-CHECA**; do not create another professional identity. The existing [Rollo 1010/2018 / Auto 804 control](ROLLO_1010_2018_AUTO_804_CARET_INTERLINK_CONTROL_30AUG2026.md) separately records her on the 13 November 2018 appellate cover for Antonio Cogolludo Rojas and Shaila María Cogolludo Ramos, paired there with Juan Carlos Prieto Puente (**PD-SP-P-0005**). That is a separate dated professional recurrence. It neither identifies the April 2015 lawyer nor makes Juan Carlos Prieto Puente the same person as Juan Carlos Roque Prieto.
+
+No actor-specific primary evidence recovered in this pass establishes the April 2015 role of José Ramos Saavedra, Juan Carlos Roque Prieto, Esteban Noriega or Álvaro Campanario. The reported DP 3017/2014 → DP 332/2014 inhibition is a separate primary-bridge target; do not conflate it with DI 39/2014 or other criminal proceedings.
+
+### 14.4 Integration-ready visual and interlink specification
+
+**HIGH-PRIORITY LINKAGE EVENT — PARTY RECOLLECTION + COUNSEL CORROBORATION; PRIMARY DECLARATION MINUTES STILL REQUIRED.**
+
+Use a **PURPLE** linkage card for the bounded 2018 representation statement; **GREEN** identifies the distinct supporting counsel sources. **BLUE** applies to the facts actually recorded by the 2016 court order, subject to extraction/layout limits. **ORANGE** may identify unresolved duty/conflict questions, never a finding. **GREY** is context. Do not apply **RED** merely because actors are connected.
+
+The pending April card must name Gil and Patricia, DP 332/2014, the reported 14 April 2015 declarations, each source class, the unnamed status of the recalled private-side lawyer, and the absence of primary attendance proof. Its limits must expressly say that AC absence, exact representatives and any improper coordination remain unproved.
+
+The 2018 card must name the three source-form entities and Soledad Tello Checa, distinguish the filename date from verified text, describe her stated procuradora capacity and requested relief, and retain the filing/identity limits above. Existing proceeding and person IDs must be reused.
+
+Integration should connect this control reciprocally to the existing Fiscalía/DI 273 record, **LZ-JUD-002** (DP 332/2014), Concurso 36/2012 and the AC record; separately connect the dated professional recurrence to **LZ-JUD-003 → LZ-APP-004**. DI 39/2014, later criminal routes, calificación and E.G.745 are contextual comparison links unless their exact procedural bridge is independently proved. A link is not joinder, incorporation or proof of shared responsibility.
+
+This section is an integration specification, not a claim that cards, reciprocal website links or new PDF viewers are deployed. New public PDFs remain subject to the atomic redaction/hash, bilingual viewer/context/limits, register, search/sitemap and validator requirements in issue #1621.
+
+### 14.5 Finite recovery queue and search boundary
+
+1. Certified 24 February 2015 providencia plus personación applications, powers/apud-acta, party list, lawyer/procurador details and service.
+2. Separate 14 April 2015 declaration records for Gil and Patricia, attendance/signature pages, any audiovisual record and any recorded response to absence.
+3. The **15 April 2015 AC-testimony request**, its filing receipt, signatories and court response.
+4. Native 2016 order layout and the underlying 24/25 May submissions; native 2018 pleading and the referenced January providencia / 4 July oficio.
+5. Exact primary inhibition bridge for the separately reported DP 3017/2014 route, and the signed DP 332 final disposition, notifications, appeals and finality.
+
+The pass covered targeted searches across all three connected mailboxes, Drive, private Library results, current-main repository controls and public-source queries. Some broad result sets were capped or paginated; no entire archive, mailbox or certified docket was exhausted. The exact primary personación, declarations and attendee identification remain **BOUNDED-NOT-LOCATED**. Six selected source emails were acquired in raw-message form for private preservation; no private message body, address, subject, attachment locator or raw court copy is added to Git.
