@@ -1,0 +1,102 @@
+{
+  "schema": "por-derecho.dp1901-cgpj-response-publication-package.v1",
+  "control_date": "2026-09-19",
+  "status": "WORKER_PREPARED_PENDING_SOLE_INTEGRATOR",
+  "base_main": "1652baa6b4be0afcd9f8890aa06ab6406ed22eef",
+  "branch": "worker/ref21-three-filing-clarification-20260919",
+  "publication_is_filing": false,
+  "separation_control": {
+    "cgpj": "Proposed Alzada 286/2026 supervening-event submission; not filed or sent.",
+    "judicial_auto": "Any judicial challenge to the 14-Sep-2026 order is a distinct lane and is not lodged by publication.",
+    "eg745": "E.G. 745/2026 response remains a distinct Fiscalía lane and is not filed by publication."
+  },
+  "response_files": [
+    {
+      "path": "drafts/cgpj/2026-09-19_DP1901_CGPJ_RESPONSE_PROPOSED.docx",
+      "bytes": 48709,
+      "sha256": "81e9d6afaabeab00a343fc9e96d372e0ae88f78b734f1a72e1edb94b33d14ffc",
+      "status": "PROPOSED_NOT_FILED"
+    },
+    {
+      "path": "drafts/cgpj/2026-09-19_DP1901_CGPJ_RESPONSE_PROPOSED.pdf",
+      "bytes": 121140,
+      "sha256": "cc72caa9884b1cd362687525c7d086533f8c0a2ab5e0621a68b025975dd9586c",
+      "pages": 8,
+      "status": "PROPOSED_NOT_FILED"
+    },
+    {
+      "path": "drafts/cgpj/2026-09-19_DP1901_CGPJ_RESPONSE_PROPOSED.md",
+      "bytes": 26180,
+      "sha256": "5264a784d74da5da51e779a08dee086e21234d1e837aeed2e5932178a05eb2b1",
+      "status": "PROPOSED_NOT_FILED"
+    }
+  ],
+  "visual_control": {
+    "lead": "assets/visuals/dp1901-routing-collision-20260919.svg",
+    "gallery": [
+      {
+        "logical_asset": "PD-DMA-0007",
+        "path": "assets/visuals/dp1901-20260919/01-single-grave.png",
+        "source_filename": "El expediente en una sola fosa.png",
+        "source_sha256": "8da695b160844a206e5d9dd1899f8042026aba6bf329f13268f201a1289ca1eb",
+        "web_sha256": "a6bbe9e4f53fd2e1c6566454bd9d32b7860ffdee78eded2394be8d8244cf6dea",
+        "correction": "Grave image is an editorial metaphor about files/case folders; it is not proof of destruction, intent or extinction of any complaint. Institutional settings do not indicate official authorship."
+      },
+      {
+        "logical_asset": "PD-DMA-0008",
+        "path": "assets/visuals/dp1901-20260919/02-decanato.png",
+        "source_filename": "image-gen-1(20260919-002338).png",
+        "source_sha256": "1ae0a45bdba267d66e961d8da10bd56c3bae311bff75361d1286c54a63848307",
+        "web_sha256": "9d06dc1340f8aa050ae71780eb24a265b7b5ce467e9178c7b1aa976a4ddfd54a",
+        "correction": "Conceptual illustration depicts Catalonia rather than the Canary Islands. Ref. 24 is 18-Jun-2026; its supplement was filed 25-Jun-2026. Not an official image."
+      },
+      {
+        "logical_asset": "PD-DMA-0009",
+        "path": "assets/visuals/dp1901-20260919/03-fiscal-corpus.png",
+        "source_filename": "image-gen-2(20260919-002341).png",
+        "source_sha256": "6e339890a23c28ca06f8573273027df5dd65f8817661ccaf4fe2acdf83a71194",
+        "web_sha256": "c3c5c5783f949f0e6b8af7010313ccc5e30e708e98e64ba4e59bf23ca7657b88",
+        "correction": "Image incorrectly expands DIP as Diligencias de Investigación Previas; the 14-Sep order says Diligencias de Investigación Preprocesales. Incoming arrows do not establish the actual corpus received by Fiscalía."
+      },
+      {
+        "logical_asset": "PD-DMA-0010",
+        "path": "assets/visuals/dp1901-20260919/04-atlante.png",
+        "source_filename": "image-gen-3(20260919-002347).png",
+        "source_sha256": "c891d29b4a865911e096e68cdacfa24a5beabfe83e52726b73a1e9186a4d4513",
+        "web_sha256": "ddbc5e4a5f25f025d5577b7efcd0f7fb84dd36d65732a915288db3a608305e4e",
+        "correction": "The 8–17 July band does not prove the date or cause of any association. Certified system history remains outstanding. Not an official ATLANTE capture."
+      },
+      {
+        "logical_asset": "PD-DMA-0011",
+        "path": "assets/visuals/dp1901-20260919/05-composite-annex.png",
+        "source_filename": "Anexo Gráfico de Apoyo: Trazabilidad Documental.png",
+        "source_sha256": "deee9e08e9bbda111fd2b665dd5cfa061b84f24655fcf6e5951256ade3c9f1d4",
+        "web_sha256": "329eb2050a8ba0f5a15138d34261cf73d4f257f18cd5ed3f1b8ec5f3e472b554",
+        "correction": "Composite panel 2 is mislabeled: the judge-related folder is Ref. 24 / 18-Jun-2026 with supplement 25-Jun-2026, not Ref. 21 / 25-Jun-2026. Not an approved formal evidentiary annex."
+      },
+      {
+        "logical_asset": "PD-DMA-0012",
+        "path": "assets/visuals/dp1901-20260919/06-traceability-overview.png",
+        "source_filename": "Trazabilidad de Dos Denuncias Autónomas.png",
+        "source_sha256": "5392a0ce4c4986b68b5e8b43e34ac7df9ebae80d5088a45f876bd94e2029193a",
+        "web_sha256": "0a196b6cf699a9171ad98b44b00bc12faf87e86bc33cf1b09ba3795e18c92ee9",
+        "correction": "Earlier explanatory overview only. Arrows and dates do not replace certified entries, indexes or metadata; crests do not indicate institutional authorship."
+      }
+    ],
+    "originals_preserved_outside_git": true,
+    "formal_evidentiary_annex": false
+  },
+  "factual_control": [
+    "18-Jun Ref.22 AC complaint; processed first and later identified as DP1956/2026, Plaza 1; this comparison does not certify that route was legally correct or its exact electronic opening date.",
+    "18-Jun Ref.24 judge-related notitia intended for TSJC.",
+    "25-Jun Ref.21 autonomous private-actor complaint and a separate Ref.24 supplement.",
+    "User firsthand statement: Ref.24 remained untouched, unscanned and unallocated at Decanato on 25-Jun.",
+    "Handwritten 25→18 and added 24 are recorded as a contemporaneous handling description, not an independently proved falsification/backdating allegation.",
+    "User categorical factual position: DP1901 originated for private actors and Ref.24 was associated later; independent electronic creation/association certification remains outstanding."
+  ],
+  "source_boundaries": [
+    "Located June text does not itself use the word unscanned; that proposition is the user's current firsthand affirmation.",
+    "Native CGPJ attachment download previously returned 403 and full native-file/image verification remains outstanding.",
+    "Signed 29-Jul Fiscal report, author/assignment, exact corpus, complete electronic history, native judicial order and operative service metadata remain outstanding."
+  ]
+}
