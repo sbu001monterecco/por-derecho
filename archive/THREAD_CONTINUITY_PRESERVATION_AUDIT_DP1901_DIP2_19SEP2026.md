@@ -5,7 +5,7 @@
 **Repository:** `sbu001monterecco/por-derecho`  
 **Scope:** June 2026 complaint lanes, DIP 2/2026, DP 1901/2026, 29 July Fiscal intervention, 14 September Auto, E.G. 745 successor inputs, CGPJ continuity and the associated GitHub publication/preservation controls.  
 **Audit base main:** `1218d40864e735fee22b9c3fcae78b95018605b0`  
-**Status at creation:** **SUBSTANTIVE_CONTINUITY_PRESERVED / GITHUB SOURCE STATE MERGED / EXACT-LIVE VERIFIER ADDED BY THIS AUDIT**.
+**Status:** **SUBSTANTIVE_CONTINUITY_PRESERVED / SOURCE-PUBLICATION LIVE_VERIFIED / THREAD_DELETION_SAFE**.
 
 ## 1. Controlling substantive state
 
@@ -96,6 +96,23 @@ On every relevant push to `main`, it fails closed unless:
 2. the six bilingual HTML routes plus the two central public PDF sources are byte-identical to the checked-out source files at that same SHA.
 
 This is deliberately stronger than search-engine or crawler readback.
+
+## 5A. Exact GitHub Pages deployment attestation — 19 September 2026
+
+The source/publication state was verified against the exact deployed main SHA:
+
+- source/deployment SHA: `fd9baa22040218c95a887aab41032d1d74b00195`;
+- GitHub Pages run: **#1588**, run ID **35411598728**, successful;
+- dedicated verifier: **Verify DP1901 DIP2 live origin #9**, run ID **35411734472**, successful;
+- result: **LIVE_BYTES_VERIFIED**;
+- byte-identical controlled resources: **8/8**.
+
+The eight resources were the six bilingual DP1901/DIP2 HTML routes listed above plus:
+
+1. `evidence/judicial/dp-1901-2026/public-pdfs/auto-14sep2026-public-controlled-transcription.pdf`;
+2. `evidence/fiscalia/dip-2-2026/public-pdfs/decreto-archivo-dip-2-2026-06mar2026-public-redacted.pdf`.
+
+PR #1597 makes this exact-main deployment attestation visible during pull-request CI without granting CI write permission. It is a verification-only successor and does not modify the eight controlled source resources.
 
 ## 6. Private-source custody / Evidence Manifest
 
@@ -193,8 +210,12 @@ The relevant reviewed PRs include successful Off-GitHub Preservation Snapshot ch
 
 ### Deployment
 
-The permanent exact-SHA verifier added by this audit supplies the controlling deployment proof. The release is fully deployed only when GitHub reports `pages-propagation/dp1901-dip2 = success` for the final `main` SHA.
+**PASS — LIVE_VERIFIED.**
+
+GitHub Pages run #1588 / 35411598728 successfully deployed exact SHA `fd9baa22040218c95a887aab41032d1d74b00195`. Dedicated verifier run 35411734472 then confirmed **8/8 byte-identical controlled public resources**. The verifier remains fail-closed for future relevant pushes.
 
 ### Thread retirement
 
-Once this audit file is merged and the final-main deployment status is green, this thread is **THREAD_DELETION_SAFE_FOR_SUBSTANTIVE_PROJECT_CONTINUITY**. Deleting the chat would not remove the sole record of a material source, correction, repository action, open obligation or deployment rule.
+**THREAD_DELETION_SAFE_FOR_SUBSTANTIVE_PROJECT_CONTINUITY.**
+
+The source/publication state is merged, preservation-controlled and exact-live verified. Deleting the chat would not remove the sole record of a material source, correction, repository action, open obligation or deployment rule. Authority-only gaps and unfiled legal work products remain explicitly recorded outside the chat.

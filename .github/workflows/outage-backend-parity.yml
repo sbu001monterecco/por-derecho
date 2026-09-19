@@ -34,6 +34,11 @@ on:
       - 'scripts/audit_github_backend_capabilities_20260917.py'
       - 'scripts/validate_continuity_horizon_20260917.py'
       - 'scripts/validate_gitlab_public_surface_recovery_20260918.py'
+      - 'scripts/validate_gitlab_backend_recovery_20260919.py'
+      - 'scripts/validate_github_gitlab_public_gap_closure_20260919.py'
+      - 'assets/connected-search-20260919.js'
+      - 'en/search/**'
+      - 'es/buscar/**'
       - 'tests/test_github_outage_backend_20260917.py'
       - 'tests/test_github_backend_hardening_20260917.py'
   pull_request:
@@ -64,6 +69,11 @@ on:
       - 'scripts/audit_github_backend_capabilities_20260917.py'
       - 'scripts/validate_continuity_horizon_20260917.py'
       - 'scripts/validate_gitlab_public_surface_recovery_20260918.py'
+      - 'scripts/validate_gitlab_backend_recovery_20260919.py'
+      - 'scripts/validate_github_gitlab_public_gap_closure_20260919.py'
+      - 'assets/connected-search-20260919.js'
+      - 'en/search/**'
+      - 'es/buscar/**'
       - 'tests/test_github_outage_backend_20260917.py'
       - 'tests/test_github_backend_hardening_20260917.py'
 
@@ -95,6 +105,12 @@ jobs:
         run: python3 scripts/validate_continuity_horizon_20260917.py
       - name: Validate public GitLab recovery classifications
         run: python3 scripts/validate_gitlab_public_surface_recovery_20260918.py
+      - name: Validate GitLab backend recovery ledger
+        run: python3 scripts/validate_gitlab_backend_recovery_20260919.py
+      - name: Validate GitHub public gap closure
+        run: python3 scripts/validate_github_gitlab_public_gap_closure_20260919.py
+      - name: Validate deep-search JavaScript syntax
+        run: node --check assets/connected-search-20260919.js
       - name: Exercise advisory classifier
         run: >-
           python3 scripts/classify_public_impact_shadow_20260917.py
@@ -103,6 +119,8 @@ jobs:
           scripts/audit_github_backend_capabilities_20260917.py
           scripts/validate_continuity_horizon_20260917.py
           scripts/validate_gitlab_public_surface_recovery_20260918.py
+          scripts/validate_gitlab_backend_recovery_20260919.py
+          scripts/validate_github_gitlab_public_gap_closure_20260919.py
           tests/test_github_outage_backend_20260917.py
           tests/test_github_backend_hardening_20260917.py
           .github/copilot-instructions.md
@@ -113,5 +131,7 @@ jobs:
           'ops/continuity/GITHUB_OPERATIONAL_BACKEND_PARITY_20260917.json',
           'ops/continuity/GITLAB_EXACT_RECOVERY_QUEUE_20260917.json',
           'ops/continuity/GITHUB_FIRST_48H_PLUS_36H_CONTINUITY_PLAN_20260917.json',
-          'ops/continuity/GITLAB_PUBLIC_SURFACE_RECOVERY_LEDGER_20260918.json']];
+          'ops/continuity/GITLAB_PUBLIC_SURFACE_RECOVERY_LEDGER_20260918.json',
+          'ops/continuity/GITLAB_BACKEND_RECOVERY_LEDGER_20260919.json',
+          'ops/continuity/GITHUB_GITLAB_PUBLIC_GAP_CLOSURE_20260919.json']];
           print('machine controls parse: PASS')"
