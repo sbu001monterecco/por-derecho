@@ -63,7 +63,7 @@
     {
       "track_id": "DP1901-C21",
       "procedure": "DP 1901/2026",
-      "layer": "Autonomous private-actor complaint material physically tendered under DP 1901 on 9-Jul / formal DP origin and mapping under certified-reparto audit",
+      "layer": "Autonomous private-actor complaint filed under Ref.21 on 25-Jun and contemporaneously mapped to DP1901; official court-system creation/reparto audit remains open",
       "base_filing": {
         "reported_filing_date": "2026-06-25",
         "source_filename": "DENUNCIA_PENAL_DOCUMENTADA_FINAL_25JUN2026.pdf",
@@ -88,7 +88,7 @@
         "nig": "3501643220260016977",
         "court_position": "Plaza n.º 6, Sección de Instrucción, Tribunal de Instancia de Las Palmas de Gran Canaria",
         "latest_primary_event_on_public_page": "Auto dated 2026-09-14: proceeding described as alleged prevarication; records Ministerio Fiscal report dated 2026-07-29 seeking archive; orders sobreseimiento libre/archive",
-        "boundary": "The 14-Sep order proves the court's later prevaricación treatment of DP1901 and the existence/date/archive request of a Fiscal report. The June/July source closure separately proves autonomous private/judge filings and a 9-Jul private-actor tender under DP1901. None of this certifies which June filing originally generated DP1901 or any lawful joinder/reassignment; signed Fiscal report and certified initiating/reparto/index/ingestion records remain open.",
+        "boundary": "The 25-Jun stamped Ref21 filing, same-day 11:23 email to Procuradora María Díaz Vecino, 9-Jul correspondence mapping 1901 to CAM/private Community actors and the 9-Jul stamped private-actor tender under DP1901 contemporaneously corroborate Gil's Ref21 → DP1901 chronology. The 12-Jul providencia and 14-Sep order prove later judicial treatment involving DIP2/prevaricación. The official electronic creation/reparto event and the later Ref24 association mechanism remain authority-production gaps; the signed Fiscal report also remains open.",
         "routing_identity_status": "REF21_TO_DP1901_CONTEMPORANEOUSLY_CORROBORATED_OFFICIAL_REPARTO_AND_REF24_ASSOCIATION_HISTORY_OUTSTANDING"
       },
       "base_sections": [
@@ -214,8 +214,8 @@
         "assigned_court": null,
         "current_status": "FILED/PRESENTED — FORMAL ALLOCATION AND CURRENT STATUS NOT YET PRIMARY-VERIFIED",
         "cgpj_relation": "reported to CGPJ within the 169/2026 appeal record; remains a separate institutional route",
-        "dp1901_collision": "June/July source closure proves the judge filing remained a distinct intake record while private-actor material was tendered under DP1901 on 9-Jul; the later 12-Jul DIP2 link and 14-Sep prevaricación Auto create a direction-uncertified procedural-identity collision.",
-        "supervening_status_20260918": "PROCEDURAL_IDENTITY_COLLISION_OPEN — DIRECTION NOT CERTIFIED"
+        "dp1901_collision": "Ref24 remains a distinct judge-related intake record. Ref21 → DP1901 is contemporaneously corroborated; the later mechanism associating Ref24 material with DP1901 is not produced in the official event history.",
+        "supervening_status_20260918": "REF21_TO_DP1901_CONTEMPORANEOUSLY_CORROBORATED — OFFICIAL_REPARTO_AND_REF24_ASSOCIATION_HISTORY_OUTSTANDING"
       },
       "principal_modules": [
         "Funded exit and judicial knowledge",
