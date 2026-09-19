@@ -1,0 +1,63 @@
+{
+  "schema": "por-derecho.github-public-gap-closure.v1",
+  "control_id": "PD-GH-PUBLIC-GAP-CLOSURE-20260919-01",
+  "control_date": "2026-09-19",
+  "status": "IMPLEMENTED_ON_SUCCESSOR_PENDING_EXACT_HEAD_ACCEPTANCE",
+  "base_main_sha": "bebedf4cc1d1321f00072d2d2d53536505611363",
+  "closures": [
+    {
+      "id": "REGISTRY_FRESHNESS_DISCLOSURE",
+      "state": "FUNCTIONAL_GITHUB_EQUIVALENT",
+      "github_canonical_count": 379,
+      "gitlab_public_rendered_count": 515,
+      "delta": 136,
+      "boundary": "No missing identity is admitted or synthesised from rendered counts; issue #1535 remains open for exact-source reconciliation."
+    },
+    {
+      "id": "PORTFOLIO_SEPTEMBER_STATUS",
+      "state": "SOURCE_CONTROLLED_GITHUB_UPDATE",
+      "source": "archive/knowledge-project/ORION_PUBLIC_DUTIES_PWC_BANKING_UK_REVIEW_12SEP2026.md",
+      "fact_boundary": "The source-controlled review records a Portfolio reply dated 11 September 2026 confirming receipt of four September documents, incorporation in the December 2024 file, relevant internal review and reported transmission of their content to CNMV; it does not prove independent CNMV receipt of the exact package, merits decision or full-board circulation."
+    },
+    {
+      "id": "RICPE_27AUG_RESOLVER_IDENTITY",
+      "state": "SOURCE_CONTROLLED_GITHUB_UPDATE",
+      "source": "archive/RICPE_27AUG2026_RESOLVER_IDENTITY_ACCESS_CONTROL_NPL_CONTINUUM_ADDENDUM.md",
+      "fact_boundary": "The outward closure record does not identify the natural-person decision-maker; this does not prove unauthorised access or interference and leaves the native audit trail as the controlling next source."
+    },
+    {
+      "id": "RECOVERY_COMMAND_CENTER",
+      "state": "FUNCTIONAL_GITHUB_EQUIVALENT",
+      "routes": [
+        "en/recovery-command-center/",
+        "es/centro-mando-recuperacion/"
+      ],
+      "boundary": "GitHub-native operating surface built from current GitHub controls; not a reconstruction of GitLab template/source bytes."
+    },
+    {
+      "id": "DEEP_TEXT_CONNECTION_SCAN",
+      "state": "FUNCTIONAL_GITHUB_EQUIVALENT",
+      "asset": "assets/connected-search-20260919.js",
+      "boundary": "Opt-in browser-side same-origin scan of currently deployed GitHub Pages routes. It does not query GitLab, private sources or external indexes."
+    },
+    {
+      "id": "POR_DERECHO_OPERATING_STANDARD",
+      "state": "FUNCTIONAL_GITHUB_EQUIVALENT",
+      "boundary": "Current GitHub method pages will surface recovery, contradiction, source/custody and reopening controls using existing GitHub Second Pair of Eyes and continuity governance."
+    }
+  ],
+  "still_pending": [
+    "Exact source-level reconciliation of the 515-ID GitLab registry",
+    "Exact GitLab source/template bytes for GitLab-only presentation routes",
+    "GitLab-native MR discussions/approvals, pipeline/job database state, variables, runners, environments, settings, Duo sessions and Orbit/index",
+    "Server-side required status enforcement tracked by issue #1525",
+    "Independent non-GitHub preservation copy tracked by issue #1572"
+  ],
+  "rules": [
+    "No private recovery corpus or evidence is published.",
+    "No unavailable GitLab bytes are reconstructed from rendered HTML, snippets, screenshots or memory.",
+    "GitHub-native successors are labelled functional equivalents rather than exact GitLab recoveries.",
+    "Source-controlled September factual updates must preserve their stated limitations and contrary possibilities.",
+    "Merge requires exact-head Outage backend parity, PD release acceptance, Publication integrity and this gap-closure validator."
+  ]
+}
