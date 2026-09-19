@@ -1,0 +1,48 @@
+name: Validate DP1901 routing interconnectivity
+
+on:
+  pull_request:
+    paths:
+      - 'assets/data/dp1901-routing-collision-v1.json'
+      - 'assets/dp1901-routing-collision-20260919.js'
+      - 'assets/visuals/dp1901-*.svg'
+      - 'en/dp-1901-2026/**'
+      - 'es/dp-1901-2026/**'
+      - 'en/daily-reference-21-private-actor-complaint/**'
+      - 'es/referencia-21-denuncia-actores-privados/**'
+      - 'en/control-24-insolvency-judge-complaint-36-2012/**'
+      - 'es/control-24-denuncia-juez-concurso-36-2012/**'
+      - 'en/fiscalia-dip-2-2026/**'
+      - 'es/fiscalia-dip-2-2026/**'
+      - 'en/cgpj-*/**'
+      - 'es/cgpj-*/**'
+      - 'en/tsj-canarias-exp-gub-38-2026*/**'
+      - 'es/tsj-canarias-exp-gub-38-2026*/**'
+      - 'en/proceedings/gc-cri-008/**'
+      - 'es/procedimientos/gc-cri-008/**'
+      - 'en/proceedings/gc-hc-010/**'
+      - 'es/procedimientos/gc-hc-010/**'
+      - 'evidence/judicial/dp-1901-2026/**'
+      - 'sitemap-control-22-24.xml'
+      - 'assets/control-22-24-search-extension-20260904.js'
+      - 'publication-manifests/dp1901-routing-interconnectivity-20260919.json'
+      - 'scripts/validate_dp1901_routing_interconnectivity_20260919.py'
+  push:
+    branches: [main]
+    paths:
+      - 'assets/data/dp1901-routing-collision-v1.json'
+      - 'assets/dp1901-routing-collision-20260919.js'
+      - 'assets/visuals/dp1901-*.svg'
+      - 'en/daily-reference-21-private-actor-complaint/**'
+      - 'es/referencia-21-denuncia-actores-privados/**'
+      - 'evidence/judicial/dp-1901-2026/**'
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python scripts/validate_dp1901_routing_interconnectivity_20260919.py
