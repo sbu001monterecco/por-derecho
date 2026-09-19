@@ -15,8 +15,8 @@
         "control": "CONTROL-21",
         "proceeding": "GC-CRI-008",
         "bridge_status": "UNVERIFIED_CANDIDATE_BRIDGE",
-        "do_not_infer": "The 25-Jun private-actor complaint is documented and its 9-Jul amplification was physically tendered under DP1901/Plaza6. Do not state that daily reference 21 originally generated DP1901: the signed 12-Jul providencia links that DP to DIP2 and the 14-Sep Auto treats it as alleged judicial prevarication. Certified initiating/reparto/index/ingestion evidence is required.",
-        "identity_collision_status": "PROCEDURAL_IDENTITY_COLLISION_OPEN_DIRECTION_NOT_CERTIFIED"
+        "do_not_infer": "The 25-Jun private-actor complaint is documented and its 9-Jul amplification was physically tendered under DP1901/Plaza6. The 25-Jun Ref21 filing and 9-Jul mapping contemporaneously corroborate Gil's statement that Ref21 became DP1901. Do not state that the court's electronic initiating/reparto event or later Ref24 association mechanism is independently certified; those authority-controlled records remain required.",
+        "identity_collision_status": "REF21_TO_DP1901_CONTEMPORANEOUSLY_CORROBORATED_OFFICIAL_REPARTO_AND_REF24_ASSOCIATION_HISTORY_OUTSTANDING"
       },
       "DP1956-C22": {
         "control": "CONTROL-22",
@@ -31,7 +31,7 @@
         "formal_destination_status": "UNKNOWN",
         "bridge_status": "UNVERIFIED_CANDIDATE_BRIDGE",
         "do_not_infer": "Daily reference 24 is not itself a NIG or DP. Its separate 18-Jun judge filing and 25-Jun 13-page dependent supplement are documented, but the 14-Sep DP1901 order does not prove that daily reference 24 generated, was joined to or was reassigned into DP1901.",
-        "identity_collision_status": "PROCEDURAL_IDENTITY_COLLISION_OPEN_DIRECTION_NOT_CERTIFIED"
+        "identity_collision_status": "REF21_TO_DP1901_CONTEMPORANEOUSLY_CORROBORATED_OFFICIAL_REPARTO_AND_REF24_ASSOCIATION_HISTORY_OUTSTANDING"
       }
     },
     "same_date_safeguard": {
@@ -89,7 +89,7 @@
         "court_position": "Plaza n.º 6, Sección de Instrucción, Tribunal de Instancia de Las Palmas de Gran Canaria",
         "latest_primary_event_on_public_page": "Auto dated 2026-09-14: proceeding described as alleged prevarication; records Ministerio Fiscal report dated 2026-07-29 seeking archive; orders sobreseimiento libre/archive",
         "boundary": "The 14-Sep order proves the court's later prevaricación treatment of DP1901 and the existence/date/archive request of a Fiscal report. The June/July source closure separately proves autonomous private/judge filings and a 9-Jul private-actor tender under DP1901. None of this certifies which June filing originally generated DP1901 or any lawful joinder/reassignment; signed Fiscal report and certified initiating/reparto/index/ingestion records remain open.",
-        "routing_identity_status": "PROCEDURAL_IDENTITY_COLLISION_OPEN_DIRECTION_NOT_CERTIFIED"
+        "routing_identity_status": "REF21_TO_DP1901_CONTEMPORANEOUSLY_CORROBORATED_OFFICIAL_REPARTO_AND_REF24_ASSOCIATION_HISTORY_OUTSTANDING"
       },
       "base_sections": [
         "I. Personas denunciadas y entidades relacionadas",
