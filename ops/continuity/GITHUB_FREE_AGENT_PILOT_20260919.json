@@ -1,0 +1,63 @@
+{
+  "schema": "por-derecho.github-free-agent-pilot.v1",
+  "date": "2026-09-19",
+  "issue": 1613,
+  "branch": "pilot/github-free-agent-control-20260919",
+  "phase": "PHASE_1_ADVISORY",
+  "cost_policy": {
+    "maximum_authorised_spend": "0",
+    "currency_scope": ["EUR", "USD"],
+    "standard_public_repository_actions_only": true,
+    "larger_runners": false,
+    "paid_copilot_upgrade": false,
+    "paid_third_party_agents": false,
+    "billable_service_activation": false
+  },
+  "authority_boundary": {
+    "autonomous_merge_to_main": false,
+    "substantive_legal_or_evidential_rewriting": false,
+    "private_source_publication": false,
+    "ruleset_or_account_security_change": false,
+    "external_contact": false,
+    "new_required_repository_wide_gate": false
+  },
+  "logical_workers": {
+    "continuity": [
+      ".github/workflows/outage-backend-parity.yml",
+      ".github/workflows/validate-operational-truth.yml"
+    ],
+    "publication": [
+      ".github/workflows/release-acceptance.yml",
+      ".github/workflows/publication-integrity-gate.yml",
+      ".github/workflows/verify-publication-live.yml"
+    ],
+    "preservation": [
+      ".github/workflows/off-github-preservation.yml",
+      ".github/workflows/repository-backup-bundle.yml"
+    ],
+    "security": [
+      ".github/dependabot.yml",
+      "AGENTS.md",
+      ".github/copilot-instructions.md"
+    ],
+    "recovery": [
+      ".github/workflows/outage-backend-parity.yml",
+      ".github/workflows/tech-platform-monitor.yml",
+      "ops/continuity/GITHUB_OPERATIONAL_BACKEND_RECOVERY_20260917.md"
+    ]
+  },
+  "account_level_checks_not_proved_by_repository_source": [
+    "Copilot Free enrolment and remaining allowance",
+    "CodeQL default-setup state",
+    "GitHub secret-scanning account/repository setting state",
+    "repository ruleset and branch-protection UI state"
+  ],
+  "phase_1_success_criteria": [
+    "pilot audit is deterministic",
+    "pilot workflow has contents-read permissions only",
+    "pilot workflow performs no repository write or push",
+    "existing outage-backend controls are exercised by the pull request",
+    "no public route or substantive proposition is changed",
+    "result is recorded before automation is expanded"
+  ]
+}
