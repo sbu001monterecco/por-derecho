@@ -2,11 +2,11 @@
   "schema": "por-derecho.publication-runtime.v1",
   "fence": 6,
   "owner": "1512:fe30811213b374597b968cf9f6e42014369c0f41",
-  "phase": "RECOVERY_REQUIRED",
+  "phase": "SUPERSEDED_WITH_OPEN_READBACK",
   "pr": 1512,
   "base_sha": "7b338508119d2929f5e03f6e04a0858e4164d905",
   "candidate_sha": "fe30811213b374597b968cf9f6e42014369c0f41",
-  "run_id": 35165634537,
+  "run_id": 35418854782,
   "claimed_at": "2026-09-17T00:13:17.308182Z",
   "receipts": [
     {
@@ -632,8 +632,20 @@
       "evidence": {
         "failed_run": "35165634537"
       }
+    },
+    {
+      "phase": "SUPERSEDED_WITH_OPEN_READBACK",
+      "at": "2026-09-19T03:33:16.864234Z",
+      "evidence": {
+        "prior_merge_sha": "e7baa9dd52152a954cfdc7337341d404e572cadc",
+        "current_main_sha": "b470fd7927edc91de3346694ef76e2c8ed9225c6",
+        "pages_run_id": 35165546330,
+        "readback_verified": false,
+        "verification_gap_preserved": true,
+        "reason": "Later legitimate main superseded the deployed release before exact scoped byte readback completed; no verified receipt is inferred."
+      }
     }
   ],
   "recovery_basis": "Explicit owner recovery of exact completed merge; not a retrospective exclusive-lock claim.",
-  "updated_at": "2026-09-17T00:13:24.125972Z"
+  "updated_at": "2026-09-19T03:33:16.864234Z"
 }
