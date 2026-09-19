@@ -1,0 +1,108 @@
+{
+  "schema": "por-derecho.dp332-linkage.v1",
+  "updated": "2026-09-19",
+  "proceeding": {
+    "master_id": "LZ-JUD-002",
+    "reference": "DP 332/2014",
+    "nig": "3500443220140001497",
+    "iup": "AI2014000474",
+    "organ": "Juzgado de Instrucción nº 3 de Arrecife"
+  },
+  "upstream": [
+    {
+      "master_id": "GC-FIS-011",
+      "reference": "DI 273/2013",
+      "relation": "prosecutorial querella continued into DP 332/2014"
+    }
+  ],
+  "controlled_evidence": [
+    {
+      "id": "EVID-2013-FISCALIA-DI273-QUERELLA-001",
+      "type": "PROSECUTORIAL_ACT",
+      "date": "2013-12-27",
+      "status": "PUBLIC_VIEWER_LIVE"
+    },
+    {
+      "id": "EVID-2016-DP332-AUTO-PRORROGA-001",
+      "type": "COURT_DECISION",
+      "date": "2016-05-31",
+      "status": "PUBLIC_DERIVATIVE_READY_ON_INTEGRATION_BRANCH",
+      "native_sha256": "2effd2f225797e013939a36d2cee255755873790c023aba3ec53f5deabc4473c",
+      "public_sha256": "acf37ad9fc4901548d8efeb44d0333efdc5c5379f34d19839dc6765d2c08d22a"
+    }
+  ],
+  "actors": [
+    {
+      "name": "Gil Marer",
+      "capacity": "Denunciado in 31-May-2016 header",
+      "proof": "PRIMARY_COURT_ACT"
+    },
+    {
+      "name": "Patricia Isabel Domínguez Montelongo",
+      "capacity": "Denunciado in 31-May-2016 header",
+      "proof": "PRIMARY_COURT_ACT"
+    },
+    {
+      "name": "Francisco de Borja Rodríguez-Batllori Laffitte",
+      "capacity": "Denunciante in 31-May-2016 header; insolvency administrator in Concurso 36/2012",
+      "proof": "PRIMARY_COURT_ACT + SEPARATE_INSOLVENCY_RECORD"
+    },
+    {
+      "name": "ROQUE PRIETO S.L.",
+      "capacity": "Denunciante in 31-May-2016 header",
+      "proof": "PRIMARY_COURT_ACT"
+    },
+    {
+      "name": "Pino Esther Hormiga Franco",
+      "capacity": "Judge signing 31-May-2016 order",
+      "proof": "PRIMARY_COURT_ACT"
+    },
+    {
+      "name": "Tomás Fernández de Páiz",
+      "capacity": "Fiscal signing DI 273/2013 querella",
+      "proof": "PRIMARY_PROSECUTORIAL_ACT"
+    }
+  ],
+  "linkage_event": {
+    "label": "HIGH-PRIORITY LINKAGE EVENT",
+    "chain": [
+      "AC complaint/source",
+      "Fiscalía DI 273/2013 querella",
+      "DP 332/2014",
+      "private-side personation",
+      "14-Apr-2015 statements",
+      "later court/prosecution steps"
+    ],
+    "support": [
+      "13-Apr-2015 contemporaneous email: statements described as resulting from AC complaint",
+      "29-Apr-2015 contemporaneous counsel report: judge reportedly displeased that Fiscalía sent matter and did not attend statements",
+      "2018 party recollection: neither Fiscalía nor AC attended; only lawyer for Molina side appeared",
+      "20-Nov-2018 counsel reconstruction: 24-Feb-2015 personation and 14-Apr-2015 statements"
+    ],
+    "boundary": "Primary 24-Feb-2015 personation order and 14-Apr-2015 statement/attendance records remain required before identity/attendance can be treated as proved."
+  },
+  "possible_legal_relevance": [
+    "representation convergence",
+    "procedural overlap",
+    "conflict/duty audit",
+    "non-neutrality audit",
+    "instrumentalisation audit"
+  ],
+  "not_established": [
+    "conspiracy",
+    "corrupt coordination",
+    "criminal complicity",
+    "breach of duty",
+    "disloyal administration",
+    "intentional instrumentalisation",
+    "guilt"
+  ],
+  "open_gaps": [
+    "24-Feb-2015 personation order",
+    "14-Apr-2015 statement minutes/attendance sheets",
+    "identity/capacity of private-side lawyer",
+    "official proof of Fiscalía and AC attendance/non-attendance",
+    "complete certified docket",
+    "signed final disposition/service/finality"
+  ]
+}
