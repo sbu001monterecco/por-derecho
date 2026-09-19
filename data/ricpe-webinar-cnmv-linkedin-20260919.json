@@ -1,0 +1,52 @@
+{
+  "schema_version": "1.0",
+  "control_id": "PD-RICPE-LI-20260919",
+  "date": "2026-09-19",
+  "status": "REVIEW_READY_NOT_POSTED",
+  "thesis": "Compare the 4-Jun-2020 RICPE brochure and 11-Nov-2020 webinar representations with the 20-Jul-2021 RICPE certification, then distinguish acknowledged CNMV supervision from any public corrective/enforcement outcome.",
+  "sources": [
+    {
+      "date": "2020-06-04",
+      "type": "RICPE investor brochure",
+      "proposition": "Sun Park listed; Construcciones Acosta Matos, S.A. identified as 'sociedad titular'; project also marked 'en estudio'.",
+      "boundary": "RICPE document representation; exact authorship/approval chain remains to be produced."
+    },
+    {
+      "date": "2020-11-11",
+      "type": "RICPE webinar",
+      "proposition": "Sun Park presented as 220 apartments, four-star conversion, approx. EUR12m; preserved record attributes own-funds purchase, company ownership and no-charges language to José Acosta.",
+      "boundary": "Speaker representation, not independent title fact."
+    },
+    {
+      "date": "2021-07-20",
+      "type": "RICPE certification",
+      "proposition": "262 properties: 54 CAM, 190 LPB, 18 third parties; no signed LOI; comprehensive DD not yet started; transaction could still fail.",
+      "boundary": "Primary internal documentary control point; does not itself prove intent or prior knowledge."
+    },
+    {
+      "date": "2026-09-19",
+      "type": "CNMV public-status synthesis",
+      "proposition": "Supervisory activity acknowledged; public-information route active; no public sanction or intervention naming RICPE located in bounded public-source review.",
+      "boundary": "Absence from public search does not prove absence of confidential supervisory action."
+    }
+  ],
+  "people": [
+    {
+      "name": "Enrique Luis Guerra Suárez",
+      "display": "Enrique Guerra",
+      "role_boundary": "RICPE leadership / webinar participant; do not attribute José Acosta's ownership wording to him without a source.",
+      "portrait_source": "https://ric.capital/cms/uploads/e791f8a83e910a4ddf0b1169bbc42f58-800-q78zhc.jpg",
+      "profile_source": "https://ric.capital/enrique-guerra/"
+    },
+    {
+      "name": "José Daniel Acosta Matos",
+      "display": "José Daniel Acosta Matos",
+      "role_boundary": "CAM / RICPE project-promoter/director context; ownership wording attributed to him in preserved webinar record.",
+      "portrait_source": "https://assets.ey.com/content/dam/ey-sites/ey-com/es_es/news/2023/ganador-pea-canarias-2022.jpg",
+      "profile_source": "https://www.ey.com/es_es/newsroom/2023/02/jose-daniel-acosta-matos-presidente-grupo-acosta-matos-xxvi-premio-emprendedor-ano-ey-canarias"
+    }
+  ],
+  "privacy_rule": "No home/street/postal address, identity number, private email, private phone, signature or security code may appear in public derivatives unless strictly necessary and expressly authorised.",
+  "landing_es": "/es/actualizaciones/ricpe-webinar-cnmv-19-septiembre-2026/",
+  "landing_en": "/en/updates/ricpe-webinar-cnmv-19-september-2026/"
+}
