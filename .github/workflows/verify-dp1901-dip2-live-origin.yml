@@ -1,0 +1,356 @@
+name: Verify DP1901 DIP2 live origin
+
+on:
+  pull_request:
+    paths:
+      - ".github/workflows/verify-dp1901-dip2-live-origin.yml"
+      - "archive/THREAD_CONTINUITY_PRESERVATION_AUDIT_DP1901_DIP2_19SEP2026.md"
+      - "publication-manifests/dp1901-dip2-source-closure-20260919.json"
+      - "archive/CORRECTION_REGISTER.md"
+      - "archive/DP1901_EG745_FISCAL_REPORT_ROUTING_COLLISION_CONTROL_18SEP2026.md"
+      - "evidence/judicial/dp-1901-2026/**"
+      - "evidence/fiscalia/dip-2-2026/**"
+      - "evidence/fiscalia/2026/DIP2_DP1901_FULL_DIGITISATION_STATE_18SEP2026.json"
+      - "assets/data/control-21-22-24-continuity-v1.json"
+      - "data/three-track-full-digitisation-20260904.json"
+      - "es/dp-1901-2026/**"
+      - "en/dp-1901-2026/**"
+      - "es/dp-1901-2026-auto-14-septiembre-2026/**"
+      - "en/dp-1901-2026-order-14-september-2026/**"
+      - "es/fiscalia-dip-2-2026/**"
+      - "en/fiscalia-dip-2-2026/**"
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/verify-dp1901-dip2-live-origin.yml"
+      - "archive/THREAD_CONTINUITY_PRESERVATION_AUDIT_DP1901_DIP2_19SEP2026.md"
+      - "publication-manifests/dp1901-dip2-source-closure-20260919.json"
+      - "archive/CORRECTION_REGISTER.md"
+      - "archive/DP1901_EG745_FISCAL_REPORT_ROUTING_COLLISION_CONTROL_18SEP2026.md"
+      - "evidence/judicial/dp-1901-2026/**"
+      - "evidence/fiscalia/dip-2-2026/**"
+      - "evidence/fiscalia/2026/DIP2_DP1901_FULL_DIGITISATION_STATE_18SEP2026.json"
+      - "assets/data/control-21-22-24-continuity-v1.json"
+      - "data/three-track-full-digitisation-20260904.json"
+      - "es/dp-1901-2026/**"
+      - "en/dp-1901-2026/**"
+      - "es/dp-1901-2026-auto-14-septiembre-2026/**"
+      - "en/dp-1901-2026-order-14-september-2026/**"
+      - "es/fiscalia-dip-2-2026/**"
+      - "en/fiscalia-dip-2-2026/**"
+  workflow_dispatch:
+
+permissions:
+  actions: read
+  contents: read
+  statuses: write
+
+concurrency:
+  group: verify-dp1901-dip2-live-origin-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  source-contract:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: Validate DP1901 / DIP2 source and continuity contract
+        run: |
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+
+          root=Path(".")
+          checks={
+            "es/dp-1901-2026/index.html":[
+              "PROCEDURAL_IDENTITY_SOURCE_CLOSURE_18SEP2026.md",
+              "colisión de identidad abierta y fuente-a-fuente",
+              "29 de julio de 2026",
+            ],
+            "en/dp-1901-2026/index.html":[
+              "PROCEDURAL_IDENTITY_SOURCE_CLOSURE_18SEP2026.md",
+              "private-actor material was physically tendered",
+              "direction remains open",
+              "29 July 2026",
+            ],
+            "es/dp-1901-2026-auto-14-septiembre-2026/index.html":[
+              "PROCEDURAL_IDENTITY_SOURCE_CLOSURE_18SEP2026.md",
+              "la colisión está mejor probada",
+              "dirección sigue abierta",
+            ],
+            "en/dp-1901-2026-order-14-september-2026/index.html":[
+              "PROCEDURAL_IDENTITY_SOURCE_CLOSURE_18SEP2026.md",
+              "the collision is better evidenced",
+              "direction remains open",
+            ],
+            "es/fiscalia-dip-2-2026/index.html":[
+              "REGAGE26e00026303869",
+              "13 páginas",
+              "ACTUALIZACIÓN CONTROLANTE",
+            ],
+            "en/fiscalia-dip-2-2026/index.html":[
+              "REGAGE26e00026303869",
+              "13 pages",
+            ],
+          }
+          for rel, markers in checks.items():
+            p=root/rel
+            if not p.is_file():
+              raise SystemExit(f"missing source route: {rel}")
+            text=p.read_text(encoding="utf-8")
+            for marker in markers:
+              if marker not in text:
+                raise SystemExit(f"{rel}: missing marker {marker!r}")
+
+          stale=[
+            ("es/dp-1901-2026/index.html","DP 1901/2026 es una vía principalmente privada/CAM"),
+            ("en/dp-1901-2026/index.html","DP 1901/2026 is principally a private-actor/CAM route"),
+          ]
+          for rel, phrase in stale:
+            if phrase in (root/rel).read_text(encoding="utf-8"):
+              raise SystemExit(f"{rel}: stale settled-route assertion returned")
+
+          source_closure=(root/"evidence/judicial/dp-1901-2026/PROCEDURAL_IDENTITY_SOURCE_CLOSURE_18SEP2026.md").read_text(encoding="utf-8")
+          for marker in [
+            "PROCEDURAL_IDENTITY_COLLISION_OPEN — DIRECTION NOT CERTIFIED",
+            "dfad6f405b7a2ec047a98a7183a9cbfd0698427d3925d02b2a50b4de76de8f71",
+            "2f9b7015598094c68f6408b68a776073de1d7d2fa248169be46fd57bf3bad6c3",
+            "8ee03884d32b6b3d9e8377a646eca3d79a7ae199aebc8cc378a9180ba2aef846",
+          ]:
+            if marker not in source_closure:
+              raise SystemExit(f"source closure missing {marker!r}")
+
+          corrections=(root/"archive/CORRECTION_REGISTER.md").read_text(encoding="utf-8")
+          for marker in ["CR-160","CR-161","CR-162"]:
+            if marker not in corrections:
+              raise SystemExit(f"correction register missing {marker}")
+
+          d=json.loads((root/"data/three-track-full-digitisation-20260904.json").read_text(encoding="utf-8"))
+          t={x["track_id"]:x for x in d["tracks"]}
+          if t["DP1901-C21"]["base_filing"]["pages"] != 86:
+            raise SystemExit("private-actor base denominator drift")
+          if t["DP1901-C21"]["immediate_amplification"]["pages"] != 26:
+            raise SystemExit("26-Jun amplification denominator drift")
+          if t["DP1901-C21"]["expansion"]["pages"] != 19:
+            raise SystemExit("9-Jul amplification denominator drift")
+          j=t["C24-JUDGE"]
+          expected=(j["base_filing"]["pages"],j["base_filing"]["principal_document_bundle_pages"],j["base_filing"]["principal_pleading_pages"],j["base_filing"]["presentation_front_matter_pages"],j["supplement"]["pages"])
+          if expected != (79,31,27,4,13):
+            raise SystemExit(f"judge-route denominator drift: {expected!r}")
+
+          for rel in [
+            "evidence/judicial/dp-1901-2026/public-pdfs/auto-14sep2026-public-controlled-transcription.pdf",
+            "evidence/fiscalia/dip-2-2026/public-pdfs/decreto-archivo-dip-2-2026-06mar2026-public-redacted.pdf",
+          ]:
+            if not (root/rel).is_file():
+              raise SystemExit(f"missing public PDF: {rel}")
+
+          print("DP1901/DIP2 SOURCE CONTRACT: PASS")
+          PY
+
+  exact-live-readback:
+    if: github.event_name == 'push'
+    needs: source-contract
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      GH_TOKEN: ${{ github.token }}
+      TARGET_SHA: ${{ github.sha }}
+      REPOSITORY: ${{ github.repository }}
+      RUN_ID: ${{ github.run_id }}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+
+      - name: Wait for exact-SHA Pages deployment and verify live bytes
+        id: verify_live
+        continue-on-error: true
+        run: |
+          python3 - <<'PY'
+          import hashlib
+          import json
+          import os
+          import time
+          import urllib.parse
+          import urllib.request
+          from pathlib import Path
+
+          repository=os.environ["REPOSITORY"]
+          target_sha=os.environ["TARGET_SHA"]
+          token=os.environ["GH_TOKEN"]
+          run_id=os.environ["RUN_ID"]
+          base="https://sbu001monterecco.github.io/por-derecho"
+          api=f"https://api.github.com/repos/{repository}/actions/runs?head_sha={target_sha}&per_page=100"
+
+          def api_json(url):
+            req=urllib.request.Request(url,headers={
+              "Accept":"application/vnd.github+json",
+              "Authorization":f"Bearer {token}",
+              "X-GitHub-Api-Version":"2022-11-28",
+              "User-Agent":"Por-Derecho-DP1901-DIP2-Live-Verifier/1.0",
+            })
+            with urllib.request.urlopen(req,timeout=30) as response:
+              return json.load(response)
+
+          pages=None
+          last_runs=[]
+          for attempt in range(1,61):
+            payload=api_json(api)
+            candidates=[
+              r for r in payload.get("workflow_runs",[])
+              if r.get("name")=="pages build and deployment"
+              and r.get("path")=="dynamic/pages/pages-build-deployment"
+              and r.get("head_sha")==target_sha
+            ]
+            last_runs=[{
+              "id":r.get("id"),"run_number":r.get("run_number"),
+              "status":r.get("status"),"conclusion":r.get("conclusion"),
+              "html_url":r.get("html_url")
+            } for r in candidates]
+            pages=next((r for r in candidates if r.get("status")=="completed" and r.get("conclusion")=="success"),None)
+            if pages:
+              break
+            print(f"Pages attempt {attempt}/60 pending for {target_sha}",flush=True)
+            if attempt < 60:
+              time.sleep(10)
+          if not pages:
+            Path("artifacts/dp1901-dip2-live").mkdir(parents=True,exist_ok=True)
+            report={"state":"EXACT_PAGES_RUN_NOT_ATTESTED","target_sha":target_sha,"last_runs":last_runs}
+            Path("artifacts/dp1901-dip2-live/report.json").write_text(json.dumps(report,indent=2)+"\n",encoding="utf-8")
+            raise SystemExit(f"no successful exact-SHA Pages run for {target_sha}")
+
+          targets={
+            "es/dp-1901-2026/index.html":f"{base}/es/dp-1901-2026/",
+            "en/dp-1901-2026/index.html":f"{base}/en/dp-1901-2026/",
+            "es/dp-1901-2026-auto-14-septiembre-2026/index.html":f"{base}/es/dp-1901-2026-auto-14-septiembre-2026/",
+            "en/dp-1901-2026-order-14-september-2026/index.html":f"{base}/en/dp-1901-2026-order-14-september-2026/",
+            "es/fiscalia-dip-2-2026/index.html":f"{base}/es/fiscalia-dip-2-2026/",
+            "en/fiscalia-dip-2-2026/index.html":f"{base}/en/fiscalia-dip-2-2026/",
+            "evidence/judicial/dp-1901-2026/public-pdfs/auto-14sep2026-public-controlled-transcription.pdf":f"{base}/evidence/judicial/dp-1901-2026/public-pdfs/auto-14sep2026-public-controlled-transcription.pdf",
+            "evidence/fiscalia/dip-2-2026/public-pdfs/decreto-archivo-dip-2-2026-06mar2026-public-redacted.pdf":f"{base}/evidence/fiscalia/dip-2-2026/public-pdfs/decreto-archivo-dip-2-2026-06mar2026-public-redacted.pdf",
+          }
+          expected={path:Path(path).read_bytes() for path in targets}
+          pending=set(targets)
+          observed={}
+          for attempt in range(1,25):
+            for path in list(sorted(pending)):
+              url=targets[path]+"?"+urllib.parse.urlencode({
+                "source_sha":target_sha[:12],
+                "run_id":run_id,
+                "attempt":attempt,
+                "nonce":time.time_ns(),
+              })
+              try:
+                req=urllib.request.Request(url,headers={
+                  "Cache-Control":"no-cache, no-store, max-age=0",
+                  "Pragma":"no-cache",
+                  "User-Agent":"Por-Derecho-DP1901-DIP2-Live-Verifier/1.0",
+                })
+                with urllib.request.urlopen(req,timeout=30) as response:
+                  body=response.read()
+                  status=response.status
+                  headers=dict(response.headers)
+                got=hashlib.sha256(body).hexdigest()
+                want=hashlib.sha256(expected[path]).hexdigest()
+                observed[path]={
+                  "url":url,"http_status":status,
+                  "live_bytes":len(body),"source_bytes":len(expected[path]),
+                  "live_sha256":got,"source_sha256":want,
+                  "etag":headers.get("ETag"),"last_modified":headers.get("Last-Modified"),
+                  "byte_identical":status==200 and body==expected[path],
+                }
+                if observed[path]["byte_identical"]:
+                  pending.discard(path)
+              except Exception as exc:
+                observed[path]={"url":url,"error":repr(exc),"byte_identical":False}
+            print(json.dumps({"attempt":attempt,"verified":len(targets)-len(pending),"pending":sorted(pending)}),flush=True)
+            if not pending:
+              break
+            if attempt < 24:
+              time.sleep(10)
+
+          report={
+            "schema":"por-derecho.dp1901-dip2-live-readback.v1",
+            "state":"LIVE_BYTES_VERIFIED" if not pending else "LIVE_BYTES_NOT_VERIFIED",
+            "target_sha":target_sha,
+            "verified_at_epoch":time.time(),
+            "pages_run":{
+              "id":pages.get("id"),"run_number":pages.get("run_number"),
+              "head_sha":pages.get("head_sha"),"status":pages.get("status"),
+              "conclusion":pages.get("conclusion"),"html_url":pages.get("html_url"),
+              "created_at":pages.get("created_at"),"updated_at":pages.get("updated_at"),
+            },
+            "files":observed,
+            "pending":sorted(pending),
+          }
+          Path("artifacts/dp1901-dip2-live").mkdir(parents=True,exist_ok=True)
+          Path("artifacts/dp1901-dip2-live/report.json").write_text(json.dumps(report,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
+          print(json.dumps({
+            "state":report["state"],
+            "target_sha":target_sha,
+            "pages_run_id":pages.get("id"),
+            "pages_run_number":pages.get("run_number"),
+            "verified_files":len(targets)-len(pending),
+            "total_files":len(targets),
+          },sort_keys=True))
+          if pending:
+            raise SystemExit("live byte mismatches: "+", ".join(sorted(pending)))
+          PY
+
+      - name: Publish DP1901/DIP2 deployment commit status
+        if: always()
+        env:
+          VERIFY_OUTCOME: ${{ steps.verify_live.outcome }}
+        run: |
+          python3 - <<'PY'
+          import json
+          import os
+          import urllib.request
+
+          ok=os.environ["VERIFY_OUTCOME"]=="success"
+          repository=os.environ["REPOSITORY"]
+          sha=os.environ["TARGET_SHA"]
+          run_id=os.environ["RUN_ID"]
+          payload={
+            "state":"success" if ok else "failure",
+            "target_url":f"https://github.com/{repository}/actions/runs/{run_id}",
+            "description":(
+              "DP1901/DIP2 exact Pages SHA and 8 public source bytes verified"
+              if ok else
+              "DP1901/DIP2 exact Pages/live-byte verification failed"
+            ),
+            "context":"pages-propagation/dp1901-dip2",
+          }
+          req=urllib.request.Request(
+            f"https://api.github.com/repos/{repository}/statuses/{sha}",
+            data=json.dumps(payload).encode("utf-8"),
+            method="POST",
+            headers={
+              "Accept":"application/vnd.github+json",
+              "Authorization":f"Bearer {os.environ['GH_TOKEN']}",
+              "Content-Type":"application/json",
+              "X-GitHub-Api-Version":"2022-11-28",
+              "User-Agent":"Por-Derecho-DP1901-DIP2-Live-Verifier/1.0",
+            },
+          )
+          with urllib.request.urlopen(req,timeout=30) as response:
+            print(response.read().decode("utf-8","replace"))
+          PY
+
+      - name: Upload deployment readback evidence
+        if: always()
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: dp1901-dip2-live-${{ github.sha }}
+          path: artifacts/dp1901-dip2-live/
+          if-no-files-found: error
+          retention-days: 30
+
+      - name: Fail when exact deployment/readback did not verify
+        if: steps.verify_live.outcome != 'success'
+        run: exit 1
