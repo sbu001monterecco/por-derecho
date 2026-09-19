@@ -8,7 +8,7 @@ PR #1600 passed all checked release, publication-integrity, privacy/governance, 
 
 ## What was searched / read in this pass
 
-Targeted searches were repeated across the three connected Gmail accounts, connected Google Drive, ChatGPT Library and current GitHub, with particular attention to DP 1956/2026, DI 113/2022, DIP 2/2026, E.G. 112/2026, E.G. 352/2025, E.G. 745/2026 and the missing signed 29-July DP 1901 Fiscal report. Empty or noisy search results are bounded search outcomes only and are never converted into non-existence.
+Targeted searches were repeated across the three connected Gmail accounts, connected Google Drive, ChatGPT Library, current GitHub and the public GitLab Pages site, with particular attention to DP 1956/2026, DI 113/2022, DIP 2/2026, E.G. 112/2026, E.G. 352/2025, E.G. 745/2026 and the missing signed 29-July DP 1901 Fiscal report. Empty or noisy search results are bounded search outcomes only and are never converted into non-existence.
 
 Primary/native records newly re-read in this pass:
 
@@ -16,6 +16,10 @@ Primary/native records newly re-read in this pass:
 - `REGAGE26e00070237051` — Fiscalía Provincial de Las Palmas; presentation 3-Aug-2026 00:05:47; sole attachment has the same SHA-512 and the receipt expressly enumerates the six earlier routes before making its own registration.
 
 These two receipts close a reconciliation defect in the immediately preceding exhaustion note: the repository's older institutional-communications controls already carried a **seven-destination** 2–3 August receipt family, while the later focused routing note had described only the five central/superior routes directly read in that sub-pass. The correct denominator is seven; the earlier five-route wording was a bounded subset, not evidence of absence.
+
+## Public GitLab Pages comparator
+
+Fresh public-web retrieval confirms that the GitLab Pages comparator remains materially behind current GitHub source state. Its DI 22/2026 page still reports later joinder notices only through 10 July 2026 and says named-authority coverage has not yet been incorporated; it therefore does not include the 15-September Beatriz Sánchez Carreras act now controlled in GitHub. Its DP 1901/2026 page still says the latest status is the 12-July providencia sending admission to Fiscalía and that the Fiscal report/later order are missing; it therefore does not reflect the 14-September court act proving the existence/date/archive request of the 29-July Fiscal report. This staleness is `PROVED` as a comparator-state fact only; it is not evidence that later records do not exist.
 
 ## Reconciled seven-destination family
 
@@ -45,6 +49,7 @@ All identify the same attachment family; the native receipts read for the six in
 | DI 113/2022 complete file/remittal/diligences | `BOUNDED-NOT-LOCATED` beyond already controlled primary archive chain | Targeted Drive/Library search returned controlled reports/registers rather than a newly located complete native file. |
 | E.G. 112/2026 | `PROVED` | Connected Gmail again exposes the signed 19-Aug opening/archive decree/destination act and 25-Aug clarification; current GitHub already has the controlled public-safe EG112 evidence/build/validator. No new substantive gap closure in this pass. |
 | E.G. 352/2025 / Anticorrupción | `PROVED` + `AUTHORITY-ONLY` | Existing 19-Sep-2025 remittal chain remains controlled; the 2-Aug same-hash Anticorrupción filing is part of the seven-route family. Destination outcome still requires its own authority act. |
+| Public GitLab comparator | `PROVED` as stale comparator | DI 22 remains pre-15-Sep; DP 1901 remains pre-14-Sep. Comparator staleness does not prove record non-existence. |
 | Public PDF-room denominator | `PROVED` unchanged | No newly read native receipt is public-safe as-is because it exposes identifying/contact information. No registry/viewer/validator expansion is made merely to manufacture coverage. |
 
 ## E.G. 745/2026 filing consequence
