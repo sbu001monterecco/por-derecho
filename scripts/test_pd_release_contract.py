@@ -132,6 +132,21 @@ class ControllerTests(unittest.TestCase):
         s=c.advance(self.state(),'MERGE_PENDING',self.state()['owner'],3)
         s=c.advance(s,'RECOVERY_REQUIRED',s['owner'],3)
         self.assertNotIn(s['phase'],c.TERMINAL)
+    def test_superseded_open_readback_is_terminal_without_verified_receipt(self):
+        s=c.advance(self.state(),'MERGE_PENDING',self.state()['owner'],3)
+        s=c.advance(s,'RECOVERY_REQUIRED',s['owner'],3)
+        evidence={'prior_merge_sha':'1'*40,'current_main_sha':'2'*40,'pages_run_id':123,
+                  'readback_verified':False,'verification_gap_preserved':True}
+        s=c.advance(s,'SUPERSEDED_WITH_OPEN_READBACK',s['owner'],3,evidence)
+        self.assertIn(s['phase'],c.TERMINAL)
+        self.assertEqual(s['phase'],'SUPERSEDED_WITH_OPEN_READBACK')
+        self.assertFalse(s['checkpoints'][-1]['evidence']['readback_verified'])
+    def test_superseded_open_readback_requires_explicit_gap(self):
+        s=c.advance(self.state(),'MERGE_PENDING',self.state()['owner'],3)
+        s=c.advance(s,'RECOVERY_REQUIRED',s['owner'],3)
+        with self.assertRaises(ValueError):
+            c.advance(s,'SUPERSEDED_WITH_OPEN_READBACK',s['owner'],3,
+                      {'prior_merge_sha':'1'*40,'current_main_sha':'2'*40,'pages_run_id':123})
     def test_merge_requires_evidence(self):
         s=c.advance(self.state(),'MERGE_PENDING',self.state()['owner'],3)
         with self.assertRaises(ValueError):c.advance(s,'MERGED',s['owner'],3)
