@@ -138,6 +138,8 @@ No separate entity, case or actor named **Armata** or **Armada** was located in 
 
 ## 14. Early personación and declaration reconstruction — 19 September 2026 worker delta
 
+**Later recovery:** read §15 for subsequently recovered native PDFs, resolved 2016 header roles and visible 2018 signatory/date markings. The initial retrieval limits below are retained as audit history.
+
 **Integration owner:** existing [Fiscalía control issue #1621](https://github.com/sbu001monterecco/por-derecho/issues/1621). This additive evidence control does not certify a complete docket, deployment, or primary attendance finding. Sections 1–13 remain operative.
 
 ### 14.1 Source and status discipline
@@ -200,3 +202,89 @@ This section is an integration specification, not a claim that cards, reciprocal
 5. Exact primary inhibition bridge for the separately reported DP 3017/2014 route, and the signed DP 332 final disposition, notifications, appeals and finality.
 
 The pass covered targeted searches across all three connected mailboxes, Drive, private Library results, current-main repository controls and public-source queries. Some broad result sets were capped or paginated; no entire archive, mailbox or certified docket was exhausted. The exact primary personación, declarations and attendee identification remain **BOUNDED-NOT-LOCATED**. Six selected source emails were acquired in raw-message form for private preservation; no private message body, address, subject, attachment locator or raw court copy is added to Git.
+
+
+## 15. Native-PDF recovery and exact representation rows — 19 September 2026 follow-up
+
+**Supersession notice:** this section resolves the native-retrieval and layout limits recorded in §14.2, and the previously unknown 2018 pleading signatory/visible date markings. It does **not** resolve the 24 February 2015 personación or 14 April 2015 attendance gaps. The earlier failed signed-URL download is a historical retrieval event; direct connector binary retrieval subsequently succeeded. Both pages of each two-page PDF and the single-page 2017 copy were visually inspected.
+
+### 15.1 Privately preserved native-file custody
+
+| Located source copy | Pages | Bytes | Native SHA-256 |
+|---|---:|---:|---|
+| DP 332/2014 Auto, 31 May 2016 | 2 | 653543 | `2effd2f225797e013939a36d2cee255755873790c023aba3ec53f5deabc4473c` |
+| DP 332/2014 private-party pleading, visible signature date 23 January 2018 / traslado marking 24 January 2018 | 2 | 337143 | `1d9e52e1845ee09a19eafc9955cd63393cd9a6d117ebc8d901887ae660580cef` |
+| DP 168/2015 providencia, 15 June 2017; scan labelled 20 June | 1 | 524940 | `7b2d7b18679c076194933a59b621609874ee61eae1d6e27277411ee3c0c826b4` |
+
+These hashes identify the retrieved private files, not certified court originals or public derivatives. No raw PDF, private source locator, national identity number or signature image is published here. Visible signature appearances have not been cryptographically validated.
+
+### 15.2 DP 332/2014: the 2016 court header resolves capacities
+
+The native first page has distinct **Intervención / Interviniente / Abogado / Procurador** columns. Its exact dated pairings are:
+
+| Person/entity | Court-header intervention | Lawyer column | Procurador column |
+|---|---|---|---|
+| Gil Marer | Denunciado | blank | Manuela María Dolores Cabrera de la Cruz |
+| Patricia Isabel Domínguez Montelongo | Denunciado | blank | Manuela María Dolores Cabrera de la Cruz |
+| Borja Rodríguez-Batllori Laffitte | Denunciante | blank | blank |
+| Roque Prieto S.L. | Denunciante | blank | José Ramos Saavedra |
+
+**PROVED:** the 31 May 2016 court-copy header records both the AC and Roque Prieto as complainants in the same DP 332/2014 proceeding, and José Ramos Saavedra as **Roque Prieto's procurador**. He is not listed in the lawyer column and is not a separate complainant row. Blank cells establish only that this header does not name a professional there; they do not establish absence of representation or non-attendance.
+
+This is a primary-record procedural linkage relevant to the requested representation-overlap audit. It does not establish the date Roque Prieto entered, common instructions, improper coordination, AC disloyalty or attendance in April 2015. The native second page also confirms the exceptional twelve-month extension and express rejection of the complexity grounds.
+
+### 15.3 DP 332/2014: the 2018 pleading names another signatory
+
+The native PDF adds information omitted from connector text extraction:
+
+- Page 1 visibly bears **TRASLADO 24/01/2018**. The 24 January date is therefore no longer filename-only; it is a visible traslado marking on the copy. It is not by itself a certified filing/service receipt.
+- Page 1 retains Soledad Tello Checa's statement that she represents Roque Prieto S.L., Inversiones Salinetas S.L. and literal **AMENEN S.L.** Her signature appearance is present.
+- Page 2 contains a digital-signature appearance naming **Juan Carlos Prieto Puente**, timestamped **23 January 2018, 14:01:46**. This is **PROVED** as a visible named signatory on the pleading. Cryptographic validity, the underlying mandate and the complete filing receipt remain unverified.
+- Page 2 visually confirms the reference to the **15 April 2015 AC-testimony request**.
+- The native image confirms literal **15.01.2017** against notification in January 2018 and the July 2017 oficio. That source-date conflict remains; it is not an OCR-only error.
+
+Reuse Juan Carlos Prieto Puente **PD-SP-P-0005** and Soledad Tello Checa **PD-SP-P-0101**. The same two professional identities appear together in the separately controlled November 2018 appellate cover described in §14.3. The January signature and November cover establish dated professional recurrence; they do not identify either professional as the April 2015 attendee.
+
+### 15.4 DP 168/2015: a distinct primary representation and proposed-accumulation event
+
+A located one-page court-copy providencia dated **15 June 2017**, Juzgado de Instrucción nº 4 de Arrecife, identifies:
+
+- **DP 0000168/2015**, **NIG 3500443220150000762**, **IUP AI2015000207**;
+- named magistrate **Ricardo Fiestras Gil**, for this act only;
+- the following native header rows.
+
+| Party | Court-header intervention | Lawyer | Procurador |
+|---|---|---|---|
+| Gil Marer | Querellado | Cristo Ayose Suárez Pimentel | blank |
+| Raymond Edwards Thompson | Querellado | Cristo Ayose Suárez Pimentel | blank |
+| Amenem S.L. | Querellante | Esteban López Noriega | José Ramos Saavedra |
+| Inversiones Salinetas S.L. | Querellante | Juan Carlos Prieto Puente | José Ramos Saavedra |
+
+**PROVED:** this copy records those dated representation pairings. Its operative text invites the represented parties and Ministerio Fiscal to state whether they agree to accumulation into **querella 3017/14**, with a decision to follow their response. It records the court's same-facts rationale for seeking their positions. It **does not itself order completed accumulation**, identify a resulting transfer to DP 332/2014 or show who attended in April 2015.
+
+The distinction is material: the scan/custody title uses 20 June, whereas the court act is dated **15 June 2017**. The existing master page's open reference to a **15 July 2017** accumulation/extension act is a separate unverified target; this June providencia must not silently replace it or be described as the final accumulation order.
+
+Reuse existing **LZ-REF-038** for DP 168/2015 and **LZ-JUD-047** for DP 3017/2014. The source now supports enriching DP 168's previously corpus-only identity with its exact primary-copy NIG, IUP, court and dated judicial/professional roles. Preserve its existing identity during reconciliation rather than creating another proceeding. For navigation, connect the existing [Esteban López Noriega profile](../en/esteban-lopez-noriega/index.html) and [Juan Carlos Prieto Puente profile](../en/juan-carlos-prieto-puente/index.html); professional links carry no inference of wrongdoing.
+
+The source form **Amenem S.L.** adds a third spelling to the 2018 AMENEN / counsel AMENE variants. These texts must be reconciled against corporate records; the shared co-party and professionals do not, by themselves, authorize an entity merge.
+
+### 15.5 Public linkage treatment and remaining production targets
+
+A **BLUE** fact panel can now reproduce the 2016 court-header capacities with a **PURPLE** linkage marker joining the AC and Roque Prieto in DP 332/2014. A separate purple representation panel can show:
+
+| Date / proceeding | Documented link | Limit |
+|---|---|---|
+| 31 May 2016 / DP 332 | Roque Prieto → procurador José Ramos Saavedra; AC also listed as complainant | no April 2015 attendance or entry-date finding |
+| 15 June 2017 / DP 168 | Amenem → Esteban López Noriega; Salinetas → Juan Carlos Prieto Puente; both → procurador José Ramos Saavedra | proposed accumulation consultation only |
+| January 2018 / DP 332 | three source-form companies → stated procuradora Soledad Tello Checa; pleading also bears Juan Carlos Prieto Puente signature appearance | filing/mandate/signature validation and April attendance remain open |
+| 13 November 2018 / Rollo 1010 | Cogolludo parties → Juan Carlos Prieto Puente / Soledad Tello Checa, per separately controlled cover | separate proceeding and capacities |
+
+This strengthens documented procedural/professional overlap, potentially relevant to Gil's non-neutrality/instrumentalisation allegation. It does not prove that allegation. Do not apply red solely to shared representation.
+
+**Still required:** 24 February 2015 providencia and applications; each 14 April declaration/attendance record; the 15 April 2015 testimony filing; responses and final order following the 15 June 2017 consultation; the exact DP 3017 → DP 332 inhibition instrument; appointment/substitution records explaining the dated procurador entries; and final DP 332 disposition/service/finality.
+
+A separately reviewed 15 April 2015 private email exchange concerns defence assistance and arrangements. It is not the private complainants' AC-testimony filing; no attorney attendance inference or private strategy is published.
+
+**HIGH-PRIORITY LINKAGE EVENT — PARTY RECOLLECTION + COUNSEL CORROBORATION; PRIMARY DECLARATION MINUTES STILL REQUIRED.**
+
+This follow-up updates the evidence-control branch and issue #1621. It does not claim changes to main, public viewers, bilingual cards, reciprocal live links or deployment. Those remain one atomic integration task, including redacted derivatives and the existing required checks.
