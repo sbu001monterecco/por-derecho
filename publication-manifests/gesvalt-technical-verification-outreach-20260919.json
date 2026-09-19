@@ -1,4 +1,6 @@
 {
+  "schema": "por-derecho.publication-state.v1",
+  "schema_version": "1.0.0",
   "publication_id": "GESVALT-TECHNICAL-VERIFICATION-OUTREACH-20260919",
   "owner": "Gil Marer / Project Sun Rock",
   "control_date": "2026-09-19",
