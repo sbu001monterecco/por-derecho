@@ -90,12 +90,12 @@ This establishes a materially asymmetric evidential position: **Ref. 21 → DP 1
 
 ## What remains unproved
 
-The source set still does **not** prove which of the following occurred:
+The source set still does **not** independently certify:
 
-- daily reference 21 generated DP 1901 and daily reference 24 was later routed/merged into it;
-- daily reference 24 generated DP 1901 and the private-actor 9-Jul material was mistakenly tendered into it;
-- a formal joinder/reassignment/segregation occurred but its act has not yet been produced;
-- another administrative/reparto explanation reconciles the sources.
+- the exact court-system creation/reparto event that converted the Ref. 21 intake into DP 1901/NIG/IUP;
+- when, by whom and under what recorded authority the separate Ref. 24 judge material was later associated with, joined to, reassigned into or otherwise treated within DP 1901;
+- whether that later treatment resulted from a formal joinder/reassignment/segregation act, an administrative association, another lawful procedural mechanism or an error; or
+- any improper intent, manipulation or criminal responsibility arising from that event history.
 
 Therefore the canonical state is:
 
