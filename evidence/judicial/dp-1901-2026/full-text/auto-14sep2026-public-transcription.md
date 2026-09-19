@@ -7,12 +7,12 @@
 - IUP: `LI2026017152`
 - Date: 14 de septiembre de 2026
 - Magistrado-Juez: Luis Francisco Galván Mesa
-- Source: three photographs supplied in conversation on 18 September 2026; native court PDF has not yet been located
+- Source: paper copy received by post on 18 September 2026; the complainant photographed that paper copy with a device and uploaded the page images; native electronic court PDF has not yet been located
 - Source-image SHA-256:
   - page 1 photo: `b4259b179e36a263a2c16818d2f90543105ea400fffdda532c43a342bb513513`
   - page 2 photo: `ea9f363e5eca27f110ee42dedc971ed0fedb8a4d72fbd1c1ce582d27c8ff7e43`
   - page 3 photo: `7dac86c0b2cc7a8ac4f0974125328a8c095980652f32f573a7850c9518db603f`
-- Public transcription status: manually checked against the three source photographs; re-checked in the early hours of 19 September 2026 against five clearer re-uploaded photographs of the same three paper pages; paper copy received on 18 September 2026
+- Public transcription status: manually checked against the three source photographs; re-checked in the early hours of 19 September 2026 against five clearer re-uploaded photographs of the same three paper pages; paper copy received on 18 September 2026 by post
 - Privacy/redaction: court direct contact details and electronic-verification code omitted; substantive and procedural text retained
 - Native-source boundary: this transcription does not replace the signed/native court PDF or legal-notification metadata
 - Re-upload/control set received 19 Sep 2026 (same paper pages, different uploaded bytes):
