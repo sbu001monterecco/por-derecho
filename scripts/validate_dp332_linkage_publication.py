@@ -6,7 +6,8 @@ ROOT=Path(__file__).resolve().parents[1]
 PDF=ROOT/"evidence/courts/dp-332-2014/public-pdfs/dp332-auto-31may2016-public-transcription.pdf"
 README=ROOT/"evidence/courts/dp-332-2014/README.md"
 GOV=ROOT/".github/governance/SOURCE_FIDELITY_LINKAGE_VISUAL_RULE_19SEP2026.md"
-MAN=ROOT/"ops/continuity/THREAD_FILE_PRESERVATION_DP332_20260919.json"\nLINK=ROOT/"assets/data/dp332-di273-linkage-20260919.json"
+MAN=ROOT/"ops/continuity/THREAD_FILE_PRESERVATION_DP332_20260919.json"
+LINK=ROOT/"assets/data/dp332-di273-linkage-20260919.json"
 ES=ROOT/"es/procedimientos/lz-jud-002/index.html"
 EN=ROOT/"en/proceedings/lz-jud-002/index.html"
 
@@ -34,7 +35,12 @@ for page in (ES,EN):
         for marker in ("dp332-auto-31may2016-public-transcription.pdf","LINKAGE","3500443220140001497","2effd2f225797e013939a36d2cee255755873790c023aba3ec53f5deabc4473c"):
             if marker not in s: errors.append(f"{page.relative_to(ROOT)} missing {marker}")
 
-if LINK.exists():\n    data=json.loads(LINK.read_text())\n    if data.get("proceeding",{}).get("nig")!="3500443220140001497": errors.append("linkage NIG mismatch")\n    if "conspiracy" not in data.get("not_established",[]): errors.append("linkage proof boundary missing")\n\nif GOV.exists():
+if LINK.exists():
+    data=json.loads(LINK.read_text())
+    if data.get("proceeding",{}).get("nig")!="3500443220140001497": errors.append("linkage NIG mismatch")
+    if "conspiracy" not in data.get("not_established",[]): errors.append("linkage proof boundary missing")
+
+if GOV.exists():
     s=GOV.read_text()
     for marker in ("Malkator [sic] (Matkator S.L.)","LINKAGE / JOINING","RED","PURPLE"):
         if marker not in s: errors.append(f"governance missing {marker}")
