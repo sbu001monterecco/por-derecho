@@ -101,7 +101,7 @@
   ],
   "schema_version": "1.0.0",
   "publication_id": "PD-DP1901-CGPJ-RESPONSE-20260919-01",
-  "current_state": "MERGED_ON_MAIN",
+  "current_state": "MERGED",
   "owner": "Project Sun Rock / Por Derecho",
   "expected_routes": {
     "es": [
@@ -143,6 +143,16 @@
   "audit_20260919": {
     "substantive_package_complete_on_github": true,
     "native_source_completeness": false,
-    "note": "Publication package is merged on main. Do not state that 100% of every native source file is on GitHub: original recovered image bytes remain preserved outside Git; the native/certified 14-Sep-2026 judicial order, operative service metadata, native CGPJ attachment verification, signed 29-Jul Ministerio Fiscal report/corpus, and certified electronic creation/reparto history remain outstanding."
+    "note": "Publication package is merged on main. Do not state that 100% of every native source file is on GitHub: original recovered image bytes remain preserved outside Git; the native/certified 14-Sep-2026 judicial order, operative service metadata, native CGPJ attachment verification, signed 29-Jul Ministerio Fiscal report/corpus, and certified electronic creation/reparto history remain outstanding.",
+    "publication_state_normalized": "MERGED",
+    "state_boundary": "PR #1637 is merged at the recorded merge SHA; no DEPLOYED or LIVE_VERIFIED state is inferred by this normalization."
+  },
+  "merge_sha": "53ee6b0b08e9bcfc2f3cf19ce5aff72f0620165c",
+  "validation": {
+    "evidence": [
+      "PR #1637 exact candidate def444afed408263837b920fb19dc01c0ed088ca — Validate DP1901 CGPJ response package: success (run 35440656858)",
+      "PR #1637 exact candidate def444afed408263837b920fb19dc01c0ed088ca — Publication integrity gate: success (run 35440656948)",
+      "PR #1637 exact candidate def444afed408263837b920fb19dc01c0ed088ca — Release acceptance: success (run 35440656908)"
+    ]
   }
 }

@@ -69,3 +69,14 @@ Use source-safe language such as:
 - possible instrumentalisation indicator.
 
 Do not state conspiracy, corrupt coordination, criminal complicity, breach of duty, disloyal administration, non-neutrality or intentional instrumentalisation as established unless actor-specific evidence supports the proposition.
+
+
+## 6. Public-repository preservation completeness
+
+For a **public** repository, continuity/deletion-safety does not require publishing private Gmail/provider/native bytes or non-evidential connector/render derivatives.
+
+A thread file object is **canonically preserved for continuity** when a material private/native source has exact byte size, SHA-256, provenance/source relationship and a durable public-safe/canonical representation where publication is appropriate; or when a non-evidential tooling derivative has exact identity, size, SHA-256 and classification, with duplicates explicitly deduplicated.
+
+Raw public byte parity is **not** a completion requirement where it would expose private source material or duplicate non-evidential tooling output. The repository must say so explicitly; it may not claim that raw private bytes are public when they are not.
+
+`ops/continuity/THREAD_FILE_PRESERVATION_DP332_20260919.json` is the machine control for the seven ChatGPT file objects in this workspace. Its completion state means **no material intelligence depends on retaining the chat**, not that every private native is published in cleartext in the public Git tree.

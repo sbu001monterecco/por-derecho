@@ -66,3 +66,34 @@ Those propositions require their own primary or corroborating sources.
 Until those are recovered, the attendance/representation event is controlled as:
 
 `HIGH-PRIORITY LINKAGE EVENT — PARTY RECOLLECTION + CONTEMPORANEOUS COUNSEL CORROBORATION; PRIMARY DECLARATION/PERSONACIÓN MINUTES STILL REQUIRED.`
+
+
+## 24 February 2015 personación — primary record recovered
+
+A one-page court-copy providencia closes the earlier pronoun-only personation gap.
+
+- act date: **24 February 2015**
+- court: Juzgado de Instrucción nº 3 de Arrecife · DP 332/2014
+- judge: **Rafael Lis Estévez**
+- SHA-256: `c916d1768dfcd60670010ad7d98ed62741c14d9e99351bb120057854eac4e743`
+- private accusation admitted through **José Ramos Saavedra** for **Roque Prieto S.L.**, literal source form **AMENEN S.L.**, and **Inversiones Salinetas S.L.**
+- defence admitted through **Manuela Cabrera** for Gil Marer and Patricia Isabel Domínguez Montelongo
+- statements scheduled for **14 April 2015 at 10:30**; an English interpreter was ordered
+
+**PROVED:** personation/admission, represented parties, defence representation and scheduling.  
+**NOT PROVED:** who physically attended on 14 April; interpreter attendance; Fiscalía/AC attendance; or the identity/capacity of the lawyer Patricia later recalled as appearing for the Molina side.
+
+The April-attendance event remains separately controlled as:
+
+`HIGH-PRIORITY LINKAGE EVENT — PARTY RECOLLECTION + CONTEMPORANEOUS COUNSEL CORROBORATION; PRIMARY DECLARATION MINUTES STILL REQUIRED.`
+
+The controlled **30-PDF / 42-page** counsel-selected archive (not a certified complete docket) is inventoried at `evidence/fiscalia/dp-332-2014/recovered-court-copy-inventory-20260919.json` with per-object hashes/review levels. It also proves a 2-Jul-2017 inhibition order followed by an express 25-Sep-2017 refusal by the receiving court; completed accumulation cannot be inferred from the July order alone.
+
+### Updated finite production targets
+
+1. Both 14-Apr-2015 declarations, signatures/attendance/interpreter/audiovisual record.
+2. 15-Apr-2015 AC-testimony request and referenced 8-May-2015 Fiscalía report.
+3. Complete personation applications/powers, September-2017 apud-acta and exact lawyer appointments.
+4. Underlying Fiscalía competence report and final competence-dispute/accumulation resolution.
+5. Intervening complexity/extension orders and actual October-2020 AC testimony/recording.
+6. Signed final DP332 disposition, notice, appeals and finality.
