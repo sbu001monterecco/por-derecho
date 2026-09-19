@@ -23,14 +23,18 @@
       "Off-GitHub Preservation Snapshot — success"
     ]
   },
-  "expected_routes": [
-    "es/dp-1901-2026/index.html",
-    "en/dp-1901-2026/index.html",
-    "es/dp-1901-2026-auto-14-septiembre-2026/index.html",
-    "en/dp-1901-2026-order-14-september-2026/index.html",
-    "es/fiscalia-dip-2-2026/index.html",
-    "en/fiscalia-dip-2-2026/index.html"
-  ],
+  "expected_routes": {
+    "es": [
+      "es/dp-1901-2026/index.html",
+      "es/dp-1901-2026-auto-14-septiembre-2026/index.html",
+      "es/fiscalia-dip-2-2026/index.html"
+    ],
+    "en": [
+      "en/dp-1901-2026/index.html",
+      "en/dp-1901-2026-order-14-september-2026/index.html",
+      "en/fiscalia-dip-2-2026/index.html"
+    ]
+  },
   "public_binary_sources": [
     "evidence/judicial/dp-1901-2026/public-pdfs/auto-14sep2026-public-controlled-transcription.pdf",
     "evidence/fiscalia/dip-2-2026/public-pdfs/decreto-archivo-dip-2-2026-06mar2026-public-redacted.pdf"
