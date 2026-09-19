@@ -16,13 +16,14 @@
       "canonical_repository_object": "CONTROL-21",
       "candidate_proceeding": "GC-CRI-008",
       "candidate_reference": "DP 1901/2026",
-      "bridge_status": "UNVERIFIED_CANDIDATE_BRIDGE_WITH_DOCUMENTED_JULY_OPERATIONAL_MAPPING",
+      "bridge_status": "UNVERIFIED_CANDIDATE_BRIDGE",
       "evidential_state": "DOCUMENTED",
       "do_not_infer": "The 25-Jun daily-reference-21 private-actor filing is now documented by a stamped cover, and a 9-Jul stamped cover proves private-actor amplification material was physically tendered under DP 1901/Plaza 6. Do not state that daily reference 21 originally generated DP 1901 without the certified initiating document/reparto/index/ingestion bridge. The 12-Jul providencia links DP 1901 to DIP 2/2026 and the 14-Sep order treats it as alleged judicial prevarication.",
       "identity_collision_status": "PROCEDURAL_IDENTITY_COLLISION_OPEN_DIRECTION_NOT_CERTIFIED",
       "public_route_en": "/en/daily-reference-21-private-actor-complaint/",
       "public_route_es": "/es/referencia-21-denuncia-actores-privados/",
-      "operational_july_mapping": "Contemporaneous 9-Jul counsel email recorded `1901: Contra CAM y otras partes de la Comunidad de Propietarios`; 12-Jul counsel email again treated Plaza 6 / 1901 as the CAM/Community complaint. This supports operational mapping, not certified original reparto."
+      "operational_july_mapping": "Contemporaneous 9-Jul counsel email recorded `1901: Contra CAM y otras partes de la Comunidad de Propietarios`; 12-Jul counsel email again treated Plaza 6 / 1901 as the CAM/Community complaint. This supports operational mapping, not certified original reparto.",
+      "operational_mapping_status": "DOCUMENTED_JULY_OPERATIONAL_MAPPING_WITHOUT_CERTIFIED_ORIGIN_BRIDGE"
     },
     {
       "id": "CONTROL-22",
