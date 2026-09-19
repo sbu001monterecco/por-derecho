@@ -1,13 +1,13 @@
 {
   "schema": "por-derecho.publication-runtime.v1",
-  "fence": 16,
-  "owner": "1659:dae84577f0120896500ebf4ab5a5cf2fbdd5eeec",
-  "phase": "VERIFIED_FOR_SCOPE",
-  "pr": 1659,
-  "base_sha": "1b0469659509c3357cf6345fd4c0b37b28044bd0",
-  "candidate_sha": "dae84577f0120896500ebf4ab5a5cf2fbdd5eeec",
-  "run_id": 35463750107,
-  "claimed_at": "2026-09-19T19:14:05.298921Z",
+  "fence": 17,
+  "owner": "1665:083ef5390b4bcf2e746dd73d219f1ba348d23633",
+  "phase": "CLAIMED",
+  "pr": 1665,
+  "base_sha": "68b0672127a872ebc35c39ddbcc9ab7d6227f7dd",
+  "candidate_sha": "083ef5390b4bcf2e746dd73d219f1ba348d23633",
+  "run_id": 35464426353,
+  "claimed_at": "2026-09-19T19:28:22.833598Z",
   "expiry_policy": "Never silently expire into free; recover after inspecting actual merge/deployment.",
   "receipts": [
     {
@@ -1225,119 +1225,5 @@
       "scope": "Changed readable public resources plus ES/EN entrypoints. Browser checks are separate premerge evidence; not a whole-site or legal-proof certificate."
     }
   ],
-  "checkpoints": [
-    {
-      "phase": "ACCEPTED",
-      "at": "2026-09-19T19:14:06.211313Z",
-      "evidence": {
-        "checks": [
-          {
-            "name": "publication-integrity",
-            "id": 105950543729,
-            "conclusion": "success"
-          },
-          {
-            "name": "PD release acceptance",
-            "id": 105950543600,
-            "conclusion": "success"
-          }
-        ]
-      }
-    },
-    {
-      "phase": "MERGE_PENDING",
-      "at": "2026-09-19T19:15:29.314262Z",
-      "evidence": {
-        "pr": 1659
-      }
-    },
-    {
-      "phase": "MERGED",
-      "at": "2026-09-19T19:15:30.136721Z",
-      "evidence": {
-        "merge_sha": "68b0672127a872ebc35c39ddbcc9ab7d6227f7dd"
-      }
-    },
-    {
-      "phase": "DEPLOYED",
-      "at": "2026-09-19T19:16:24.556737Z",
-      "evidence": {
-        "pages_run_id": 35463745242,
-        "merge_sha": "68b0672127a872ebc35c39ddbcc9ab7d6227f7dd"
-      }
-    },
-    {
-      "phase": "VERIFIED_FOR_SCOPE",
-      "at": "2026-09-19T19:16:28.079909Z",
-      "evidence": {
-        "merge_sha": "68b0672127a872ebc35c39ddbcc9ab7d6227f7dd",
-        "pages_run_id": 35463745242,
-        "exact_matches": [
-          {
-            "path": "assets/data/caepr-caret-pwc-carlos-saavedra-first-hop-v1.json",
-            "sha256": "5ba5709fa4e3ef9eb6ea3c5c3da549ff906d5f197d2f7483419a1800eb6aabca",
-            "bytes": 29783
-          },
-          {
-            "path": "assets/data/counsel-filing-register-v1.json",
-            "sha256": "0b49bd7c33d71842e737e4e28e0e4d49c7071c03ba5c463911a41187e4ae9736",
-            "bytes": 30486
-          },
-          {
-            "path": "assets/data/counsel-procurador-gap-register-v1.json",
-            "sha256": "c36567279e5a0febec1f59209ddf2e306647ceed70986162ef701d27bc0225d4",
-            "bytes": 23927
-          },
-          {
-            "path": "assets/data/matter-identity-operational-control-v1.json",
-            "sha256": "998b0828c5d9ce914e027766432d5fb7b8bb4965c1d925dc5970d0c556a35bf4",
-            "bytes": 22119
-          },
-          {
-            "path": "assets/satire/satire-caricature-good-people-tree-coffins-20260919.webp",
-            "sha256": "e32e861bb78f9dad60360b711e144d045898a25109de97a62b0bedf868555217",
-            "bytes": 36460
-          },
-          {
-            "path": "en/index.html",
-            "sha256": "c048d21d4c94e3cb6896e4c74d69a9ab73f84c3426d40fe815370b40fe1ba109",
-            "bytes": 228197
-          },
-          {
-            "path": "en/pwc-canarias-carlos-saavedra-sun-park/index.html",
-            "sha256": "d071b7a641fef979af5a0806e56423f5c01489557d220b0e851e6a23acbdb50c",
-            "bytes": 60074
-          },
-          {
-            "path": "es/index.html",
-            "sha256": "48a7ebf0751867525f140cf3e70c34f8fe22a1c6edd7aeb0b3178e788da95dda",
-            "bytes": 237351
-          },
-          {
-            "path": "es/pwc-canarias-carlos-saavedra-sun-park/index.html",
-            "sha256": "3801037e3ca8faec18a4ce2eb64ce92f47944f6e77bf41465c169e6e8474a42e",
-            "bytes": 62837
-          },
-          {
-            "path": "ops/recovery-cross-thread/la-laguna-all-party-20260919/REVIEW.md",
-            "sha256": "3031e3c1eeb77aaa529d64881d0a87d5346201a9cfc8714d191ae33875cbc57d",
-            "bytes": 6336
-          },
-          {
-            "path": "ops/recovery-cross-thread/la-laguna-all-party-20260919/comparison.json",
-            "sha256": "d2ea751da87e25128edf794970f39e5b289d9d003e6e799dc3b4736992b9828b",
-            "bytes": 40171
-          },
-          {
-            "path": "ops/recovery-cross-thread/la-laguna-all-party-20260919/intake.json",
-            "sha256": "6dd64f9dd6234084728070bcd01f676b95b9adf9f8e7165c4c89ccdd8b640f9c",
-            "bytes": 196510
-          }
-        ],
-        "pending": [],
-        "scope": "Changed readable public resources plus ES/EN entrypoints. Browser checks are separate premerge evidence; not a whole-site or legal-proof certificate."
-      }
-    }
-  ],
-  "updated_at": "2026-09-19T19:16:28.079909Z"
+  "checkpoints": []
 }
