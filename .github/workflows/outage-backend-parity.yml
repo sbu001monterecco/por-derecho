@@ -36,6 +36,9 @@ on:
       - 'scripts/validate_gitlab_public_surface_recovery_20260918.py'
       - 'scripts/validate_gitlab_backend_recovery_20260919.py'
       - 'scripts/validate_github_gitlab_public_gap_closure_20260919.py'
+      - 'assets/connected-search-20260919.js'
+      - 'en/search/**'
+      - 'es/buscar/**'
       - 'tests/test_github_outage_backend_20260917.py'
       - 'tests/test_github_backend_hardening_20260917.py'
   pull_request:
@@ -68,6 +71,9 @@ on:
       - 'scripts/validate_gitlab_public_surface_recovery_20260918.py'
       - 'scripts/validate_gitlab_backend_recovery_20260919.py'
       - 'scripts/validate_github_gitlab_public_gap_closure_20260919.py'
+      - 'assets/connected-search-20260919.js'
+      - 'en/search/**'
+      - 'es/buscar/**'
       - 'tests/test_github_outage_backend_20260917.py'
       - 'tests/test_github_backend_hardening_20260917.py'
 
@@ -103,6 +109,8 @@ jobs:
         run: python3 scripts/validate_gitlab_backend_recovery_20260919.py
       - name: Validate GitHub public gap closure
         run: python3 scripts/validate_github_gitlab_public_gap_closure_20260919.py
+      - name: Validate deep-search JavaScript syntax
+        run: node --check assets/connected-search-20260919.js
       - name: Exercise advisory classifier
         run: >-
           python3 scripts/classify_public_impact_shadow_20260917.py
