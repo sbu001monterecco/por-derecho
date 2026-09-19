@@ -10,7 +10,7 @@ Repository state: GitHub additive package; GitLab blocked/read-only comparator; 
 | FGE/Inspección cover | E.G.745/Inspección | DRAFT / NOT FILED | formal registration and association receipt |
 | E.G.745 successor | FGE/Inspección | DRAFT / NOT FILED | exact bytes, annex inventory, receipt |
 | preservation/production requests | destination-specific | DRAFT / NOT FILED | signed PDF and official receipt |
-| GitHub implementation | draft PR #1643 | OPEN DRAFT PR / NOT MERGED | review, CI, merge, deployment |
+| GitHub implementation | PR #1643 | OPEN PR / NOT MERGED | review, CI, merge, deployment |
 | GitLab reconciliation | blocked account | QUEUED | restore access; reconcile from newer GitHub |
 | Gmail copies | supplementary only | NOT SENT | formal route first; separate send authorization |
 
