@@ -2,7 +2,7 @@
   "schema": "por-derecho.github-public-gap-closure.v1",
   "control_id": "PD-GH-PUBLIC-GAP-CLOSURE-20260919-01",
   "control_date": "2026-09-19",
-  "status": "IMPLEMENTED_ON_SUCCESSOR_PENDING_EXACT_HEAD_ACCEPTANCE",
+  "status": "ACTIVE_GITHUB_NATIVE_GAP_CLOSURE",
   "base_main_sha": "bebedf4cc1d1321f00072d2d2d53536505611363",
   "closures": [
     {
