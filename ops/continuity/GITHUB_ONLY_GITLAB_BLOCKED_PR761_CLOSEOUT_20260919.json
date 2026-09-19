@@ -1,0 +1,16 @@
+{
+  "control_date": "2026-09-19",
+  "repository": "sbu001monterecco/por-derecho",
+  "gitlab_status": "TEMPORARILY_BLOCKED",
+  "active_control_plane": "GitHub + GitHub Pages + connected primary-source systems",
+  "pr_761": {
+    "number": 761,
+    "title": "Integrate Declaration 004 source-status controls (current main)",
+    "state": "closed",
+    "merged": false,
+    "closure_reason": "Superseded by later main-state work; current main already carries Declaration 004/source-class controls through successor files and the stale branch was thousands of commits behind.",
+    "audit_comment_id": 5745630302,
+    "rule": "Do not reopen/merge stale PR 761. Preserve as audit history only."
+  },
+  "resynchronisation_rule": "When GitLab access returns, reconcile one-way from then-current GitHub main to GitLab after diff/audit. Do not overwrite newer GitHub state from a stale GitLab copy."
+}
