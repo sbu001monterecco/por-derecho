@@ -1,0 +1,69 @@
+{
+  "schema": "por-derecho.publication-manifest.v1",
+  "publication_id": "PD-DP1901-ROUTING-INTERCONNECTIVITY-20260919-01",
+  "control_date": "2026-09-19",
+  "current_state": "PREPARED_PENDING_MERGE",
+  "source_base_sha": "502f818495cf46836286bc4eed6cd9d2b1b8abc4",
+  "branch": "integration/dp1901-routing-interconnectivity-20260919",
+  "purpose": "Make DP1901, Daily Ref.21, Daily Ref.24, DIP2, CGPJ Appeal 286 and TSJC Exp.Gub.38 read as one source-controlled traceability system without collapsing their legal identities.",
+  "controlling_state": "PROCEDURAL_IDENTITY_COLLISION_OPEN_DIRECTION_NOT_CERTIFIED",
+  "new_routes": [
+    "en/daily-reference-21-private-actor-complaint/index.html",
+    "es/referencia-21-denuncia-actores-privados/index.html"
+  ],
+  "shared_assets": [
+    "assets/data/dp1901-routing-collision-v1.json",
+    "assets/dp1901-routing-collision-20260919.js",
+    "assets/visuals/dp1901-double-file-grave.svg",
+    "assets/visuals/dp1901-registry-routing.svg",
+    "assets/visuals/dp1901-fiscal-corpus.svg",
+    "assets/visuals/dp1901-atlante-black-box.svg"
+  ],
+  "controlled_routes": [
+    "en/dp-1901-2026/index.html",
+    "es/dp-1901-2026/index.html",
+    "en/dp-1901-2026-order-14-september-2026/index.html",
+    "es/dp-1901-2026-auto-14-septiembre-2026/index.html",
+    "en/fiscalia-dip-2-2026/index.html",
+    "es/fiscalia-dip-2-2026/index.html",
+    "en/control-24-insolvency-judge-complaint-36-2012/index.html",
+    "es/control-24-denuncia-juez-concurso-36-2012/index.html",
+    "en/proceedings/gc-hc-010/index.html",
+    "es/procedimientos/gc-hc-010/index.html",
+    "en/proceedings/gc-cri-008/index.html",
+    "es/procedimientos/gc-cri-008/index.html",
+    "en/cgpj-permanent-commission-reader-room/index.html",
+    "es/cgpj-comision-permanente-sala-lectura/index.html",
+    "en/cgpj-public-prosecution-routing-update-20-august-2026/index.html",
+    "es/actualizacion-cgpj-fiscalia-20-agosto-2026/index.html",
+    "en/tsj-canarias-exp-gub-38-2026/index.html",
+    "es/tsj-canarias-exp-gub-38-2026/index.html"
+  ],
+  "source_corrections": [
+    "14-Sep Auto transcription rechecked against clearer paper photographs",
+    "Ref24 supplement denominator corrected to 13 pages",
+    "Ref24 principal pleading denominator separated: 27-page pleading + 4-page front matter = 31-page principal-document bundle",
+    "9-Jul contemporaneous mapping preserved as operational evidence, not certified reparto",
+    "Paper copy receipt fixed at 18 Sep 2026; native electronic copy still outstanding"
+  ],
+  "boundaries": [
+    "No source identifies who caused the procedural-identity collision.",
+    "No hacking, deliberate manipulation, unlawful joinder or judicial/prosecutorial criminality is inferred from the collision.",
+    "Daily Ref.21 is not promoted to the certified origin of DP1901 without the initiating/reparto record.",
+    "Daily Ref.24 is not promoted to a certified DP1901 bridge without authority records.",
+    "CGPJ oversight route remains distinct from judicial remedies against the 14-Sep order."
+  ],
+  "external_actions": {
+    "emails_sent": false,
+    "registry_filing": false,
+    "cgpj_filing": false,
+    "court_filing": false
+  },
+  "expected_validation": [
+    "scripts/validate_dp1901_routing_interconnectivity_20260919.py",
+    ".github/workflows/validate-dp1901-routing-interconnectivity.yml",
+    "Release acceptance",
+    "Publication integrity gate",
+    "GitHub Pages exact-sha deployment after merge"
+  ]
+}
