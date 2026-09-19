@@ -47,8 +47,8 @@
       "iup": "LI2026017152",
       "fiscal_report_date": "2026-07-29",
       "fiscal_requested_outcome": "archive",
-      "status": "PROCEDURAL_IDENTITY_COLLISION_OPEN",
-      "rule": "June/July source closure proves separate daily-reference-21 and daily-reference-24 filings and a 9-Jul private-actor tender under DP1901/Plaza6. The signed 12-Jul DIP2 link and 14-Sep prevaricación treatment leave the collision direction uncertified; do not resolve it without the initiating/reparto/index/ingestion record.",
+      "status": "REF21_TO_DP1901_CHRONOLOGY_CONTEMPORANEOUSLY_CORROBORATED_OFFICIAL_BRIDGE_OPEN",
+      "rule": "The 25-Jun Ref21 filing, same-day procuradora email, 9-Jul private-actor tender under DP1901/Plaza6 and 9-Jul operational mapping contemporaneously corroborate Gil's Ref21 → DP1901 chronology. The formal Control21→DP1901 bridge remains UNVERIFIED_CANDIDATE_BRIDGE until the court's electronic initiating/reparto event is certified; the later Ref24 association mechanism also remains open.",
       "source_closure": "evidence/judicial/dp-1901-2026/PROCEDURAL_IDENTITY_SOURCE_CLOSURE_18SEP2026.md"
     }
   },
