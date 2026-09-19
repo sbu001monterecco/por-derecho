@@ -1,0 +1,111 @@
+name: Final activate and merge authorized San Telmo visual
+
+on:
+  pull_request:
+    branches: [main]
+    types: [opened, synchronize, reopened]
+    paths:
+      - ".asset-import/**"
+      - "assets/actors/eduardo-sanchez-san-telmo.webp"
+      - "assets/places/sun-park-mynd-yaiza--user-authorized-20260819.jpg"
+      - "assets/composites/san-telmo-ricpe-sun-park-stamp-v1.svg"
+      - "assets/visual-asset-registry.json"
+      - "assets/san-telmo-authorized-photo-stamp-20260819.js"
+      - "scripts/import_authorized_san_telmo_assets.py"
+      - "scripts/finalize_authorized_san_telmo_visual.py"
+      - ".github/workflows/final-activate-and-merge-san-telmo-visual.yml"
+
+permissions:
+  contents: write
+  pull-requests: write
+  actions: read
+
+jobs:
+  activate-validate-merge:
+    if: github.event.pull_request.head.repo.full_name == github.repository
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      GH_TOKEN: ${{ github.token }}
+      PR_NUMBER: ${{ github.event.pull_request.number }}
+    steps:
+      - name: Check out pull-request head branch
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.head_ref }}
+          fetch-depth: 0
+
+      - name: Complete import and finalization when still pending
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [[ -f .asset-import/trigger.txt ]]; then
+            python scripts/import_authorized_san_telmo_assets.py
+          fi
+          if [[ -f scripts/finalize_authorized_san_telmo_visual.py ]]; then
+            python scripts/finalize_authorized_san_telmo_visual.py
+          fi
+
+      - name: Assert exact image identities and READY slot map
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -s assets/actors/eduardo-sanchez-san-telmo.webp
+          test -s assets/places/sun-park-mynd-yaiza--user-authorized-20260819.jpg
+          test -s assets/actors/francisco-de-borja-rodriguez-batllori.jpg
+          test -s assets/composites/san-telmo-ricpe-sun-park-stamp-v1.svg
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          registry=json.loads(Path('assets/visual-asset-registry.json').read_text(encoding='utf-8'))
+          sidecar=json.loads(Path('assets/composites/san-telmo-ricpe-sun-park-stamp-v1.asset-map.json').read_text(encoding='utf-8'))
+          assets=registry['assets']
+          assert assets['person.eduardo-sanchez-san-telmo.primary']['identity_status']=='LOCKED_CANONICAL_REPOSITORY_ASSET'
+          assert assets['person.eduardo-sanchez-san-telmo.primary']['path']=='assets/actors/eduardo-sanchez-san-telmo.webp'
+          assert assets['person.francisco-de-borja-rodriguez-batllori.primary']['path']=='assets/actors/francisco-de-borja-rodriguez-batllori.jpg'
+          assert sidecar['publication_status']=='READY'
+          assert sidecar['slots']=={
+            'left_portrait_eduardo_sanchez':'person.eduardo-sanchez-san-telmo.primary',
+            'centre_same_asset_sun_park':'place.sun-park-mynd-yaiza.user-authorized-20260819',
+            'right_portrait_borja_ac':'person.francisco-de-borja-rodriguez-batllori.primary'
+          }
+          svg=Path('assets/composites/san-telmo-ricpe-sun-park-stamp-v1.svg').read_text(encoding='utf-8')
+          assert 'San Telmo partner Eduardo Sánchez stated that “el despacho”' in svg
+          assert 'put clients into the RICPE investment connected to Sun Park.' in svg
+          PY
+
+      - name: Run repository gates
+        shell: bash
+        run: |
+          set -euo pipefail
+          python scripts/validate_visual_asset_registry.py
+          python scripts/validate_publication_integrity.py
+          python scripts/validate_operational_items.py
+          python scripts/validate_mission_critical_repo.py
+
+      - name: Remove one-time staging and automation, then commit final state
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "por-derecho-asset-bot"
+          git config user.email "sbu001@monterecco.com"
+          rm -rf .asset-import
+          git add -A .asset-import || true
+          git rm -f --ignore-unmatch \
+            .github/workflows/import-authorized-san-telmo-images.yml \
+            .github/workflows/import-authorized-san-telmo-images-pr.yml \
+            .github/workflows/finalize-authorized-san-telmo-visual.yml \
+            .github/workflows/final-activate-and-merge-san-telmo-visual.yml \
+            scripts/import_authorized_san_telmo_assets.py \
+            scripts/finalize_authorized_san_telmo_visual.py
+          git add -A
+          if ! git diff --cached --quiet; then
+            git commit -m "Finalize authorized Eduardo, Sun Park and Borja visual"
+            git push origin HEAD:${{ github.head_ref }}
+          fi
+
+      - name: Merge PR after successful source and identity gates
+        shell: bash
+        run: |
+          set -euo pipefail
+          gh pr merge "$PR_NUMBER" --repo "$GITHUB_REPOSITORY" --merge --delete-branch
