@@ -108,3 +108,35 @@ Open source gaps:
 - final Catastro alert/complaint response, if any.
 
 This audit preserves scope and instructions only. It does not supersede current main, does not merge unrelated work and does not authorise external submission.
+
+
+## 10. 19-Sep-2026 GitHub-first preservation refresh
+
+**Operational repository rule while GitLab is blocked:** GitHub is the active preservation and implementation surface. Do not depend on authenticated GitLab access for continuity. When GitLab access is restored, reconcile from the source-qualified GitHub state rather than overwriting newer GitHub work with stale GitLab content.
+
+Latest user instruction preserved:
+
+- design and deploy a dedicated page for the AC2000001007594 incident;
+- fully digitise the underlying State access application and the 10-Sep-2026 inadmissibility/rejection response;
+- provide inline PDF viewing for both source documents;
+- publish a narrow, source-qualified explanation of the planned CTBG challenge, including direct/interested-party and alertador status without collapsing those routes;
+- prepare the appeal for immediate RedSARA/AGE filing, signed by the user with his digital certificate and ending “Fdo.: D. Gil Marer”;
+- after filing, add the exact RedSARA/REGAGE receipt, timestamp, final filed bytes/hash and change status from PREPARED/NOT FILED to FILED only after receipt verification;
+- identify and select contextual annexes from Intervención General, CNMV, RICPE/RIC, GC/836/P06, Catastro, workforce/ERTE/ERE/Social Court and prosecutorial-status records;
+- consider the removed Canarias7 article as contextual historical-media evidence only, with provenance/removal status and an explicit boundary that an article reporting allegations is not itself proof of criminal conduct;
+- provide the CTBG and other competent authorities a public link to the source-controlled page and state that further lawful source access can be provided on request, without treating the website as a substitute for the formally filed annexes.
+
+### Current GitHub parity finding
+
+At current GitHub `main` `3ae96645d975c4b62dfa3216ff8be6f78a9810d3`, the older AC2000001007594 transfer page exists, but this audit has **not** located on `main` the dedicated 10-Sep inadmissibility page, the two public PDF viewers, or the final CTBG appeal package. Therefore the thread is preserved, but implementation/publication parity is incomplete.
+
+### Preservation decision
+
+- Existing PR #1648 is the single worker continuity lane for this thread; do not create a competing continuity PR.
+- The branch is one commit ahead of the audited main and zero behind at this refresh point.
+- Preserve the legal/evidential distinction between: verified administrative acts; user allegations requiring proof; institutional questions; and proposed criminal characterisations requiring actor-specific evidence.
+- No statement in this audit converts “same perimeter”, “modus operandi”, “collusion”, “wilful blindness”, “shadow administrator” or related formulations into an adjudicated fact.
+
+### Deletion-safety refresh
+
+**THREAD_DELETION_SAFE remains NO.** The unique instructions are now preserved in GitHub, but byte-level preservation and public implementation of the September application/decision, final appeal, annex set and eventual RedSARA receipt remain open. The thread should not be deleted until those are independently recoverable from GitHub/private controlled custody and the final filing status is recorded.
