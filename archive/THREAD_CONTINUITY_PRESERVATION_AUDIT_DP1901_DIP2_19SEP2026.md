@@ -19,6 +19,8 @@ The available record now establishes, without resolving the direction of the col
 - a separate five-private-actor complaint was presented on **25 June 2026** under daily reference **21**;
 - the dependent judge supplement presented on **25 June** expressly belongs to the daily-reference-24 complaint;
 - on **9 July 2026**, private-actor amplification/documentary material was physically tendered under **DP 1901/2026, Plaza 6**;
+- a contemporaneous 9-Jul counsel email literally records the then-operational mapping `1901: Contra CAM y otras partes de la Comunidad de Propietarios` and `1956: Contra la AC`;
+- a contemporaneous 12-Jul counsel email again describes Plaza 6 / 1901 as the CAM/Community complaint while reporting the forthcoming Fiscalía referral;
 - the signed **12 July** providencia in that same DP/NIG/IUP sent the admission question to Ministerio Fiscal in relation to **DIP 2/2026**;
 - the **14 September 2026 Auto** treats DP 1901 as a proceeding for alleged judicial prevaricación, records a Ministerio Fiscal report dated **29 July 2026** seeking archive, and orders `sobreseimiento libre y archivo`.
 
@@ -219,3 +221,9 @@ GitHub Pages run #1588 / 35411598728 successfully deployed exact SHA `fd9baa2204
 **THREAD_DELETION_SAFE_FOR_SUBSTANTIVE_PROJECT_CONTINUITY.**
 
 The source/publication state is merged, preservation-controlled and exact-live verified. Deleting the chat would not remove the sole record of a material source, correction, repository action, open obligation or deployment rule. Authority-only gaps and unfiled legal work products remain explicitly recorded outside the chat.
+
+## 13. DP1901 routing interconnectivity release — 19 September 2026
+
+A successor integration branch now binds Daily Ref.21, Daily Ref.24, DP1901, DIP2, the 29-Jul Fiscal-report gap, the 14-Sep Auto, CGPJ Alzada 286 and TSJC Exp.Gub.38 through one shared source-controlled graph and neutral visual grammar. The release adds bilingual Ref.21 pages, reciprocal navigation, common five-question traceability controls and four non-evidential SVG diagrams. It does not upgrade any candidate bridge or represent any external filing as sent.
+
+The intended public rule is: **two autonomous filings → one DP with two documented identities → bridge not produced**. The actor/cause of the collision remains open to certified authority records.
