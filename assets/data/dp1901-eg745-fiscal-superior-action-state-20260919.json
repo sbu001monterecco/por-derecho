@@ -1,0 +1,61 @@
+{
+  "schema": "por-derecho.dp1901-eg745-fiscal-superior-action-state.v1",
+  "control_date": "2026-09-19",
+  "repository_layer": "github-active-during-gitlab-block",
+  "filing_status": {
+    "dp1901_judicial_response": "NOT_VERIFIED_FILED",
+    "fiscal_superior_notice": "DRAFT_NOT_FILED",
+    "fge_inspeccion_incorporation_copy": "DRAFT_NOT_FILED",
+    "eg745_successor": "PREPARED_NOT_VERIFIED_FILED"
+  },
+  "current_fiscal_superior": {
+    "name": "Jaime Serrano-Jover González",
+    "status": "SOURCE_VERIFIED_CURRENT_OFFICE_HOLDER",
+    "appointment": "Real Decreto 428/2026, 27 May 2026",
+    "sources": [
+      "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-11484",
+      "https://www.fiscal.es/w/fiscal-superior-canarias"
+    ]
+  },
+  "institutional_basis": {
+    "eomf": "https://www.boe.es/buscar/act.php?id=BOE-A-1982-837",
+    "article_13_2": "Fiscal Superior exercises ordinary inspection of Fiscalías in territorial area",
+    "article_22_4": "Fiscal Superior heads and represents Ministerio Fiscal in the Autonomous Community",
+    "article_22_7": "Provincial Fiscal chiefs are hierarchically subordinate to Fiscal Superior"
+  },
+  "controlling_dp1901_state": "PROCEDURAL_IDENTITY_COLLISION_OPEN_DIRECTION_NOT_CERTIFIED",
+  "three_tracks": [
+    "DP1901 judicial response",
+    "urgent Fiscal Superior competence/preservation/attribution notice",
+    "EG745 successor response with FGE/Inspection incorporation"
+  ],
+  "core_questions": [
+    "Who authored the 29 July Fiscal report?",
+    "Which Fiscalía and what assignment authorised the act?",
+    "What corpus did the Fiscal receive?",
+    "How was Article 73.3.b LOPJ / aforamiento treated?",
+    "What is the certified origin and current destination of Ref21?",
+    "How and when did Ref24/DIP2 become associated with DP1901?",
+    "What exact allegations does the 14 September sobreseimiento libre purport to extinguish?"
+  ],
+  "analytical_posture": {
+    "no_presumption_of_neutrality": true,
+    "no_presumption_of_regular_operation": true,
+    "no_presumption_of_good_faith": true,
+    "no_presumption_of_absence_of_external_influence": true,
+    "no_presumption_of_criminal_guilt": true,
+    "actor_specific_proof_required": true
+  },
+  "linked_files": [
+    "ops/DP1901_EG745_MF_IMMEDIATE_ACTION_MATRIX_18SEP2026.md",
+    "prompts/DP1901_EG745_FISCAL_SUPERIOR_MASTER_WORK_PROMPT_19SEP2026.md",
+    "drafts/fiscalia/2026-09-19_FISCAL_SUPERIOR_DP1901_URGENT_NOTICE_DRAFT.md",
+    "drafts/fiscalia/2026-09-19_EG745_FISCAL_SUPERIOR_INCORPORATION_COVER_DRAFT.md",
+    "evidence/fiscalia/2026/DP1901_FISCAL_SUPERIOR_COMPETENCE_CULPABILITY_MATRIX_19SEP2026.md",
+    "drafts/fiscalia/2026-09-18_EG745_DP1901_SUPERVENING_EVENT_PATCH_DRAFT.md"
+  ],
+  "gitlab_sync": {
+    "state": "QUEUED_WHILE_ACCOUNT_BLOCKED",
+    "rule": "GitHub current layer controls until GitLab access is restored; public GitLab Pages is comparator only."
+  }
+}
