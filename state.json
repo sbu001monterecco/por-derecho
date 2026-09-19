@@ -1,13 +1,13 @@
 {
   "schema": "por-derecho.publication-runtime.v1",
-  "fence": 10,
-  "owner": "1632:a1b81f4707e442c3fdddf410c9aef7b04a22e689",
-  "phase": "VERIFIED_FOR_SCOPE",
-  "pr": 1632,
-  "base_sha": "32f8b84e436a36d5eb237320eabd376e5ca319d3",
-  "candidate_sha": "a1b81f4707e442c3fdddf410c9aef7b04a22e689",
-  "run_id": 35439889334,
-  "claimed_at": "2026-09-19T11:20:59.659378Z",
+  "fence": 11,
+  "owner": "1637:def444afed408263837b920fb19dc01c0ed088ca",
+  "phase": "CLAIMED",
+  "pr": 1637,
+  "base_sha": "e5878637cbd9c1df4f203cd480961c22004d299b",
+  "candidate_sha": "def444afed408263837b920fb19dc01c0ed088ca",
+  "run_id": 35440759012,
+  "claimed_at": "2026-09-19T11:40:51.309642Z",
   "expiry_policy": "Never silently expire into free; recover after inspecting actual merge/deployment.",
   "receipts": [
     {
@@ -699,89 +699,5 @@
       "scope": "Changed readable public resources plus ES/EN entrypoints. Browser checks are separate premerge evidence; not a whole-site or legal-proof certificate."
     }
   ],
-  "checkpoints": [
-    {
-      "phase": "ACCEPTED",
-      "at": "2026-09-19T11:21:00.614869Z",
-      "evidence": {
-        "checks": [
-          {
-            "name": "PD release acceptance",
-            "id": 105888241114,
-            "conclusion": "success"
-          },
-          {
-            "name": "publication-integrity",
-            "id": 105888220506,
-            "conclusion": "success"
-          }
-        ]
-      }
-    },
-    {
-      "phase": "MERGE_PENDING",
-      "at": "2026-09-19T11:22:01.289781Z",
-      "evidence": {
-        "pr": 1632
-      }
-    },
-    {
-      "phase": "MERGED",
-      "at": "2026-09-19T11:22:02.196282Z",
-      "evidence": {
-        "merge_sha": "a141ccaef64e5e876495eec4a4695d4619565d51"
-      }
-    },
-    {
-      "phase": "DEPLOYED",
-      "at": "2026-09-19T11:22:25.645289Z",
-      "evidence": {
-        "pages_run_id": 35439883639,
-        "merge_sha": "a141ccaef64e5e876495eec4a4695d4619565d51"
-      }
-    },
-    {
-      "phase": "VERIFIED_FOR_SCOPE",
-      "at": "2026-09-19T11:22:29.334815Z",
-      "evidence": {
-        "merge_sha": "a141ccaef64e5e876495eec4a4695d4619565d51",
-        "pages_run_id": 35439883639,
-        "exact_matches": [
-          {
-            "path": "assets/data/dp332-di273-linkage-20260919.json",
-            "sha256": "b4728267ff395e54f4145ccac02ef713c12c81f619b47bd3cf2ea67cf67744e7",
-            "bytes": 3615
-          },
-          {
-            "path": "en/index.html",
-            "sha256": "c048d21d4c94e3cb6896e4c74d69a9ab73f84c3426d40fe815370b40fe1ba109",
-            "bytes": 228197
-          },
-          {
-            "path": "en/proceedings/lz-jud-002/index.html",
-            "sha256": "c767bbe03f481fd68e420e3dd7d970453517bba368c9373fa6221162012b6c25",
-            "bytes": 13599
-          },
-          {
-            "path": "es/index.html",
-            "sha256": "48a7ebf0751867525f140cf3e70c34f8fe22a1c6edd7aeb0b3178e788da95dda",
-            "bytes": 237351
-          },
-          {
-            "path": "es/procedimientos/lz-jud-002/index.html",
-            "sha256": "9d4c96de56f1b1c01d3d6462ada38c95e890190b38c415e72d76b2caafb39a76",
-            "bytes": 13783
-          },
-          {
-            "path": "ops/continuity/THREAD_FILE_PRESERVATION_DP332_20260919.json",
-            "sha256": "24d05039ad7ee7c1bbbcbc2cbf56e32458f6f89ea7575ad7a671283978f81489",
-            "bytes": 3009
-          }
-        ],
-        "pending": [],
-        "scope": "Changed readable public resources plus ES/EN entrypoints. Browser checks are separate premerge evidence; not a whole-site or legal-proof certificate."
-      }
-    }
-  ],
-  "updated_at": "2026-09-19T11:22:29.334815Z"
+  "checkpoints": []
 }
