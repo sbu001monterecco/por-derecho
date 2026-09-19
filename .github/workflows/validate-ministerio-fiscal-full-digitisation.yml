@@ -1,0 +1,41 @@
+name: Validate Ministerio Fiscal full digitisation
+on:
+  pull_request:
+    paths:
+      - 'assets/data/ministerio-fiscal-office-digitisation-20260919.json'
+      - 'assets/data/ministerio-fiscal-pdf-room-20260918.json'
+      - 'evidence/fiscalia/**'
+      - 'es/ministerio-fiscal-documentos-pdf/**'
+      - 'en/public-prosecution-pdf-document-room/**'
+      - 'es/ministerio-fiscal-cobertura-oficinas/**'
+      - 'en/public-prosecution-office-coverage/**'
+      - 'ops/fiscalia-corpus/**'
+      - 'scripts/validate_ministerio_fiscal_pdf_room.py'
+      - 'scripts/validate_ministerio_fiscal_full_digitisation.py'
+      - 'sitemap-prosecution-evidence.xml'
+  push:
+    branches: [main]
+    paths:
+      - 'assets/data/ministerio-fiscal-office-digitisation-20260919.json'
+      - 'assets/data/ministerio-fiscal-pdf-room-20260918.json'
+      - 'evidence/fiscalia/**'
+      - 'es/ministerio-fiscal-documentos-pdf/**'
+      - 'en/public-prosecution-pdf-document-room/**'
+      - 'es/ministerio-fiscal-cobertura-oficinas/**'
+      - 'en/public-prosecution-office-coverage/**'
+      - 'ops/fiscalia-corpus/**'
+      - 'scripts/validate_ministerio_fiscal_pdf_room.py'
+      - 'scripts/validate_ministerio_fiscal_full_digitisation.py'
+      - 'sitemap-prosecution-evidence.xml'
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
+        with:
+          python-version: '3.12'
+      - run: python3 scripts/validate_ministerio_fiscal_full_digitisation.py
