@@ -44,6 +44,14 @@
       "id": "POR_DERECHO_OPERATING_STANDARD",
       "state": "FUNCTIONAL_GITHUB_EQUIVALENT",
       "boundary": "Current GitHub method pages will surface recovery, contradiction, source/custody and reopening controls using existing GitHub Second Pair of Eyes and continuity governance."
+    },
+    {
+      "id": "OPERATIONAL_IDENTITY_QUEUE_RECONCILIATION",
+      "state": "DETERMINISTIC_CONTROL_REPAIR",
+      "canonical_id": "PD-SP-R-0044",
+      "source": "assets/data/matter-identity-registry-v1.jsp-proceedings-20260905.json",
+      "control": "assets/data/matter-identity-operational-control-v1.json",
+      "boundary": "The canonical proceeding was already CARET_PENDING; the repair only adds its immutable existing ID to the operational pending-proceeding queue and does not change the proceeding identity or infer a merits outcome."
     }
   ],
   "still_pending": [
