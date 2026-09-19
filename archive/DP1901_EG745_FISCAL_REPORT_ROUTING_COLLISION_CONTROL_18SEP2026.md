@@ -105,6 +105,19 @@ Gil Marer and Aweswell Limited maintain their attributed position that Ministeri
 - Require complete certified DP 1901 docket/index and reparto provenance for Controls 21 and 24.
 - Preserve the separate RPL 3304/2025 and 3319/2025 appellate record when discussing the order's statement concerning appeal history.
 
+## 6A. GitHub implementation state — 19 September 2026
+
+The repository/publication actions in §6 have now been implemented on GitHub main through **PR #1574** (merge commit `3f9b73232083b2fc9fb99e49a69909dfbeaef510`), including:
+
+- June/July source-closure record;
+- corrected DP 1901 ES/EN gateway and 14-September Auto pages;
+- E.G. 745 successor patch;
+- Ministerio Fiscal production matrix;
+- complaint-denominator corrections and continuity machine state;
+- regression controls preserving the unresolved direction of the routing collision.
+
+This implementation is repository/publication state only. It is **not** court filing, service, notification, production by Fiscalía/Decanato/TSJC, or a merits decision.
+
 ## 7. Non-finding boundary
 
 The 29 July request for archive may have a lawful prosecutorial explanation. The evidential question is **why, on what record, in what procedurally identified matter, and with what reasoning**. The repository must preserve contrary and exculpatory explanations and must not turn the request for archive, standing alone, into proof of capture, prevarication or collective guilt.

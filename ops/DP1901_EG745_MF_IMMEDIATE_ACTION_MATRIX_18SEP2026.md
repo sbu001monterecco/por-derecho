@@ -17,9 +17,18 @@
 | P1 | CGPJ Alzada 286 | Prepare supervening-event supplement: DP1901 report/order + routing collision | current CGPJ file already asked for DP1901 report/order | PREPARE ONLY |
 | P1 | TSJC / Tribunal de Instancia governance | Prepare finite reparto/provenance request, not merits lobbying | LOPJ governance/reparto record | PREPARE ONLY |
 | P1 | Ministerio Fiscal wider record | Update DI248/DI113/DI22/DIP2/DP1901 production matrix | shortcomings matrix | REPOSITORY UPDATED |
-| P1 | Website | Correct all stale DP1901 private-only descriptions and expose source limits | bilingual pages + machine state | MERGED IN PR #1570; source-closure addendum pending this successor |
+| P1 | Website | Correct stale DP1901 private-only descriptions and expose source limits | bilingual pages + machine state | COMPLETE ON GITHUB MAIN — PR #1574 merged; source-closure addendum included |
 | P2 | RPL separation appeals | Attach certified RPL 3304/3319/Decreto 222 evidence only where proposition requires | appellate originals | SOURCE CONTROL |
-| P2 | Public accountability | Publish dated act + missing-source demand, not capture/prevaricación as proved fact | DP1901 bilingual update | IN PR |
+| P2 | Public accountability | Publish dated act + missing-source demand, not capture/prevaricación as proved fact | DP1901 bilingual update | COMPLETE ON GITHUB MAIN — PR #1574 merged |
+
+## Post-merge GitHub state — 19 September 2026
+
+- DP 1901 June/July source closure and complaint-denominator reconciliation were merged through **PR #1574**.
+- PR #1574 merge commit: `3f9b73232083b2fc9fb99e49a69909dfbeaef510`.
+- The repository now preserves the controlling state **PROCEDURAL_IDENTITY_COLLISION_OPEN — DIRECTION NOT CERTIFIED**.
+- Current main also contains the regenerated DIP 2 / proceedings-interconnectivity projection and the corrected CajaSiete publication-state/snapshot controls.
+- GitHub completion does **not** close the external evidence gaps: native notification metadata, initiating/reparto/ingestion records, signed 29-Jul Fiscal report, native/certified 14-Sep Auto, complete DIP2 file/index and the 11-Feb opening decree remain authority-production items.
+- No recurso, E.G. 745 successor filing, CGPJ supervening-event submission or production request is treated as filed merely because its architecture exists in the repository.
 
 ## Escalation logic
 

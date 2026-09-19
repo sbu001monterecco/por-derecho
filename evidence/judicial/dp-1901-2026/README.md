@@ -32,6 +32,10 @@ The native electronic court PDF and the legally operative notification metadata 
 - The source set proves separate June complaint packages and proves that private-actor amplification material was physically tendered under DP 1901/Plaza 6 on 9 July.
 - It does **not** prove which June complaint originally generated DP 1901 or the direction of any routing error. Certified reparto/docket/ingestion evidence remains required.
 
+## Repository implementation state
+
+The June/July procedural-identity source closure, corrected complaint denominators and bilingual DP 1901 publication layer were merged to GitHub main through **PR #1574** on 19 September 2026. The repository merge does not alter the evidential boundary: the direction of the procedural-identity collision remains uncertified pending official reparto/index/ingestion records.
+
 ## What remains open
 
 - the signed 29 July Fiscal report, author, assignment/reparto, corpus and reasoning;
