@@ -3,7 +3,7 @@
   "schema_version": "1.0.0",
   "publication_id": "PD-DP1901-DIP2-SOURCE-CLOSURE-20260919-01",
   "control_date": "2026-09-19",
-  "current_state": "MERGED",
+  "current_state": "PR_OPEN",
   "owner": "Project Sun Rock / Por Derecho",
   "audit_base_main_sha": "1218d40864e735fee22b9c3fcae78b95018605b0",
   "controlling_substantive_state": "PROCEDURAL_IDENTITY_COLLISION_OPEN — DIRECTION NOT CERTIFIED",
@@ -82,5 +82,18 @@
   ],
   "continuity_audit": "archive/THREAD_CONTINUITY_PRESERVATION_AUDIT_DP1901_DIP2_19SEP2026.md",
   "gitlab_parity": "PENDING_ACCESS_RESTORATION — newer GitHub state controls recovery until reviewed reconciliation",
-  "state": "SOURCE_PRESERVED_LIVE_VERIFIER_ENFORCED"
+  "state": "SOURCE_PRESERVED_LIVE_VERIFIER_PENDING_MERGE",
+  "validation": {
+    "evidence": [
+      "PR #1574 merged DP1901/DIP2 source closure and routing reconciliation",
+      "PR #1587 merged deterministic Fiscalía/proceedings interconnectivity refresh",
+      "PR #1587 reviewed head: Release acceptance success",
+      "PR #1587 reviewed head: Publication integrity gate success",
+      "PR #1587 reviewed head: Validate Fiscalía proceedings interconnectivity success",
+      "PR #1587 reviewed head: Validate audience experience success",
+      "PR #1587 reviewed head: Off-GitHub Preservation Snapshot success",
+      "PR #1592 later continuity reviewed head: Release acceptance, Publication integrity and Off-GitHub Preservation success",
+      ".github/workflows/verify-dp1901-dip2-live-origin.yml"
+    ]
+  }
 }
