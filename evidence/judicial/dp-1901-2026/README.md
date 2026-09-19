@@ -4,7 +4,7 @@ This directory preserves the public-safe text layer for the three-page court ord
 
 ## Controlled source
 
-The source presently consists of three camera photographs supplied by the complainant on 18 September 2026.
+The complainant states that the paper copy of the 14 September 2026 Auto was received by post on 18 September 2026. He photographed that paper copy with a device and uploaded the resulting page images. The controlled source presently consists of those photographs of the received paper copy; the native electronic court PDF remains outstanding.
 
 | Page | SHA-256 |
 |---|---|
@@ -34,13 +34,13 @@ The native electronic court PDF and the legally operative notification metadata 
 
 ## Repository implementation state
 
-The June/July procedural-identity source closure, corrected complaint denominators and bilingual DP 1901 publication layer were merged to GitHub main through **PR #1574** on 19 September 2026. The repository merge does not alter the evidential boundary: the direction of the procedural-identity collision remains uncertified pending official reparto/index/ingestion records.
+The June/July procedural-identity source closure, corrected complaint denominators and bilingual DP 1901 publication layer were merged to GitHub main through **PR #1574** on 19 September 2026. The repository merge does not alter the evidential boundary: the complainant's Ref. 21 → DP 1901 chronology is now supported by contemporaneous correspondence: his 25 June 11:23 email to Procuradora María Díaz Vecino records the newly filed autonomous private-actor complaint under daily reference 21, and the 9 July correspondence operationally identifies 1901 as the CAM/private-actor matter and 1956 as the AC matter. The official court initiating/reparto/association event history remains outstanding.
 
 ## What remains open
 
 - the signed 29 July Fiscal report, author, assignment/reparto, corpus and reasoning;
 - the initiating document that generated DP 1901;
-- the certified daily-reference-21 / daily-reference-24 reparto history and initiating document; June/July source evidence now materially narrows but does not close direction;
+- the certified daily-reference-21 / daily-reference-24 reparto history and initiating document; the user-firsthand and contemporaneous-email record supports Ref. 21 → DP 1901, while official electronic creation/association certification remains outstanding;
 - any joinder/reassignment/segregation act;
 - the native electronic order and legal notification timestamp.
 
