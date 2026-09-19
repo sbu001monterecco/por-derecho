@@ -1,0 +1,971 @@
+{
+  "as_of": "2026-09-19",
+  "status": "WORKER_RECONCILIATION_NOT_GITLAB_REPLAY",
+  "github_base": "aab59b554898fa0be799fc3a4386093612bf5f9e",
+  "historical_gitlab_merge": "d8a6d31f5e4323244c8d33716a20cf62133735f2",
+  "historical_gitlab_mr": 35,
+  "comparison_scope": "All 106 paths from the recovered final 7 September change manifest, against the complete current GitHub tree; byte equality is Git blob equality, not substantive currency.",
+  "counts": {
+    "EXACT": 44,
+    "ABSENT": 28,
+    "DIFFERENT_REVIEW_REQUIRED": 34
+  },
+  "rows": [
+    {
+      "path": ".github/evidence-intelligence/id-extension-policy.json",
+      "action": "create",
+      "bytes": 1732,
+      "sha256": "f27e50b8afa9259cc31f8c3ac46953ffd6f1f20cbd5197dc7f295361fb6f9fbd",
+      "git_blob": "4d35028cd4ce42421b1247a44b47f3bb0ef85867",
+      "github_blob": "4d35028cd4ce42421b1247a44b47f3bb0ef85867",
+      "comparison": "EXACT"
+    },
+    {
+      "path": ".github/governance/CAEPR_CARET_IDENTITY_AND_ALL_IS_VERIFICATION_PROTOCOL_26AUG2026.md",
+      "action": "create",
+      "bytes": 14850,
+      "sha256": "478704a0a63c2b6a2f665319d2d3be06c6fba7fb0bce50b827ebabc377f7db0a",
+      "git_blob": "0139ea0efef97cbe161bc1b4e408d06f404a67dd",
+      "github_blob": "0139ea0efef97cbe161bc1b4e408d06f404a67dd",
+      "comparison": "EXACT"
+    },
+    {
+      "path": ".github/governance/UNITARY_MULTI_TRACK_CRIMINAL_FIRST_PROSECUTORIAL_FORENSIC_PROTOCOL_01SEP2026.md",
+      "action": "create",
+      "bytes": 26855,
+      "sha256": "fd2aeafed5ee7632709b9286a46e530e32e42a21e0b45e7319ef17f0c506dd4f",
+      "git_blob": "17781dec48ec03c41c6ee7f0c7341a69455026f6",
+      "github_blob": "17781dec48ec03c41c6ee7f0c7341a69455026f6",
+      "comparison": "EXACT"
+    },
+    {
+      "path": ".gitlab-ci.yml",
+      "action": "update",
+      "bytes": 9379,
+      "sha256": "af28d13e20c02324314793f4330309c664a606d5f8984cdab4a073642d68df02",
+      "git_blob": "58f6e0b851b07106ce6f71c339ec0c2dd9efa98b",
+      "github_blob": null,
+      "comparison": "ABSENT"
+    },
+    {
+      "path": "CHATGPT_START_HERE.md",
+      "action": "update",
+      "bytes": 29230,
+      "sha256": "467c8107d559a202e64f17d45bbcae4f770ad5c17f3977380656c4556dd9abb2",
+      "git_blob": "ef9e40fa99104b0d285198b93b0c6364b3503901",
+      "github_blob": "2f4d05a4e763803f0b85fa761a248baa192993b7",
+      "comparison": "DIFFERENT_REVIEW_REQUIRED"
+    },
+    {
+      "path": "archive/ALL_PARTIES_FILING_AND_IDENTITY_SCAN_07SEP2026.md",
+      "action": "create",
+      "bytes": 21662,
+      "sha256": "30d6602782abaf5efdc3faed48042282bbae702c3e2e3f31319e67ecfcd5ff18",
+      "git_blob": "5ec44db43e1b1a1ce925356898c012beb2b10593",
+      "github_blob": null,
+      "comparison": "ABSENT"
+    },
+    {
+      "path": "archive/CAEPR_CARET_UNITARY_DIGEST_VERIFICATION_26AUG2026.md",
+      "action": "create",
+      "bytes": 9503,
+      "sha256": "551b9f2c762b4679e376a18d73edcc24b0ec7729c8dc39cf2ff627918f0d6888",
+      "git_blob": "9a3d8421b69188eb749c5acccb7182691e8fe1a2",
+      "github_blob": "9a3d8421b69188eb749c5acccb7182691e8fe1a2",
+      "comparison": "EXACT"
+    },
+    {
+      "path": "archive/CAEPR_PROCEEDINGS_CANONICALISATION_CONTINUITY_CONTROL_27AUG2026.md",
+      "action": "create",
+      "bytes": 13688,
+      "sha256": "ebaf9d0a1196c02748bc2893846d0e6c277f0bc01bc1a2db09bb59e3b502b350",
+      "git_blob": "099b1153e869deda3b4fdaa4a61335b638686bb8",
+      "github_blob": "099b1153e869deda3b4fdaa4a61335b638686bb8",
+      "comparison": "EXACT"
+    },
+    {
+      "path": "archive/CONTINUOUS_MAINTENANCE_MATRIX.md",
+      "action": "update",
+      "bytes": 27274,
+      "sha256": "7bafcde2bcbcd9e8e16342d3ac8e657ce7b953cf107d9d59d46313b4b7607440",
+      "git_blob": "644aee111dd3cc0d912cff4e64aa8c3550e9c8fc",
+      "github_blob": "95ad94ee3bf735c5e459c885a224f80c6749809a",
+      "comparison": "DIFFERENT_REVIEW_REQUIRED"
+    },
+    {
+      "path": "archive/CORRECTION_REGISTER.md",
+      "action": "update",
+      "bytes": 36438,
+      "sha256": "9073d5b30c8bb5d29916c1e11a39fa8fbd2387405027c7713077a5a11c0eab2b",
+      "git_blob": "59f200e7d0c47bdd94ac6107ede5b8e1877ea395",
+      "github_blob": "e571612d3e3004e05071864e2bc4b53062f86cf9",
+      "comparison": "DIFFERENT_REVIEW_REQUIRED"
+    },
+    {
+      "path": "archive/COUNSEL_PROCURADOR_FILING_LINEAGE_GOVERNANCE_30AUG2026.md",
+      "action": "create",
+      "bytes": 15645,
+      "sha256": "8c68c4f745df4492f143a40498e5b259a02be221d76118564d8e24c86bd00a90",
+      "git_blob": "da90f437521f2e0f6224ba61e5626222a2c361c9",
+      "github_blob": "da90f437521f2e0f6224ba61e5626222a2c361c9",
+      "comparison": "EXACT"
+    },
+    {
+      "path": "archive/EG745_EXPERT_NOTICE_INTERLINK_REVIEW_07SEP2026.md",
+      "action": "create",
+      "bytes": 15910,
+      "sha256": "cff19823ab17247a4da5777a29d88f037a4c90a3cedc59ad160ece9fefd11890",
+      "git_blob": "0fcd13e7a47e406d547bdfe4bedb6d61ab75e58a",
+      "github_blob": null,
+      "comparison": "ABSENT"
+    },
+    {
+      "path": "archive/LA_LAGUNA_CONCURSO_UNITARY_360_REVIEW_07SEP2026.md",
+      "action": "update",
+      "bytes": 20997,
+      "sha256": "34a247de7bfaaef43748775d909a9fe6f4b802c66732fad0ff1bb9546fe69846",
+      "git_blob": "45d169fef71010f56c2c0dac3bde1c9541e16f48",
+      "github_blob": null,
+      "comparison": "ABSENT"
+    },
+    {
+      "path": "archive/LA_LAGUNA_FILING_CONTROL_20260907.json",
+      "action": "update",
+      "bytes": 5807,
+      "sha256": "a57aed112948dcaed24e6a5c5ed3efaf64470b4ab64512340fcb233f2c4ce58d",
+      "git_blob": "fff80e8f49d03007171bf9f905286ef653721dc6",
+      "github_blob": null,
+      "comparison": "ABSENT"
+    },
+    {
+      "path": "archive/LA_LAGUNA_JUDICIAL_ACTORS_CAEPR_CLOSEOUT_01SEP2026.md",
+      "action": "create",
+      "bytes": 7276,
+      "sha256": "72852cd49aa7949cda414f830d38b0c58b34c8bac0a681af8062e4714220f0e7",
+      "git_blob": "6ff9ffb88c6be9cec8a4e34bf7d5080279ac97a0",
+      "github_blob": "6ff9ffb88c6be9cec8a4e34bf7d5080279ac97a0",
+      "comparison": "EXACT"
+    },
+    {
+      "path": "archive/LA_LAGUNA_REMATE_BENEFICIARY_CONTROL_07SEP2026.md",
+      "action": "update",
+      "bytes": 15554,
+      "sha256": "9d71287a29927bb195c27cb2fd47c18bfb6f922f477ea09245aa615b05799055",
+      "git_blob": "eba2de1d827904bb49c614a091b91c0f6601ddbf",
+      "github_blob": null,
+      "comparison": "ABSENT"
+    },
+    {
+      "path": "archive/MASTER_PROCEEDINGS_PUBLICATION_GOVERNANCE_30AUG2026.md",
+      "action": "create",
+      "bytes": 7337,
+      "sha256": "4bcfb869792899c20a7b62ab3f5dc74a8faff837682b84a489fd6765d5406dc4",
+      "git_blob": "1c14445f162ef6bb77db7be749a598dc092cd281",
+      "github_blob": "1c14445f162ef6bb77db7be749a598dc092cd281",
+      "comparison": "EXACT"
+    },
+    {
+      "path": "archive/OPEN_SOURCE_INTELLIGENCE_NAMED_PERSON_ENTITY_PROTOCOL_25AUG2026.md",
+      "action": "create",
+      "bytes": 7356,
+      "sha256": "72378ded6f1d9f971736fd53cb9cc30f96efd70ae8d550bb73e46cba74a2ef2c",
+      "git_blob": "908666880a06644cdeaca98c4cd8ea61a46f2ec4",
+      "github_blob": "908666880a06644cdeaca98c4cd8ea61a46f2ec4",
+      "comparison": "EXACT"
+    },
+    {
+      "path": "archive/PROCEEDINGS_FULL_IDENTITY_STORYING_GOVERNANCE_30AUG2026.md",
+      "action": "create",
+      "bytes": 8415,
+      "sha256": "f57f2637ff900329fd50f6dcd4a1b43cb8aaa46e95e9703f2d9f98658158cb7d",
+      "git_blob": "a20fd5beeb4de9cb3790ef585d6e9459ea565770",
+      "github_blob": "a20fd5beeb4de9cb3790ef585d6e9459ea565770",
+      "comparison": "EXACT"
+    },
+    {
+      "path": "archive/PROCEEDINGS_MASTER_REGISTER_PROTOCOL.md",
+      "action": "update",
+      "bytes": 16385,
+      "sha256": "fe6321d0d80f4a6ef0385dea439edff84d1ae18af6445b51fdcaa4c0e72849dd",
+      "git_blob": "69731199b98ef20d16cc5439ca82ed1ca7eb6cb9",
+      "github_blob": "2aabcc47f7e6d459dba348f7c66272eaa26a5bc1",
+      "comparison": "DIFFERENT_REVIEW_REQUIRED"
+    },
+    {
+      "path": "archive/ROLLO_1010_2018_AUTO_804_CARET_INTERLINK_CONTROL_30AUG2026.md",
+      "action": "create",
+      "bytes": 6148,
+      "sha256": "4e3539de4f11eb73d70767ad278168bab0de37304431b452bb553a3f4ff72446",
+      "git_blob": "6cbe1b852f688b1416d76429f8ec1b4b6f37e37b",
+      "github_blob": "6cbe1b852f688b1416d76429f8ec1b4b6f37e37b",
+      "comparison": "EXACT"
+    },
+    {
+      "path": "archive/knowledge-project/SUN_PARK_CANONICAL_ENTITY_REGISTER.md",
+      "action": "update",
+      "bytes": 13433,
+      "sha256": "bc4ad6606b4c2aa408e784eb15582496ef9a87a6c2d6011f6c0704b5ea1b2e99",
+      "git_blob": "8fbc58f7921fabdb0c0060651393637b0bc2af39",
+      "github_blob": "b7528aedf845d78c9a75e6d09c27aa8585bc1c99",
+      "comparison": "DIFFERENT_REVIEW_REQUIRED"
+    },
+    {
+      "path": "assets/data/acosta-matos-functional-convergence-map-v2.edges-direct-1.json",
+      "action": "create",
+      "bytes": 6627,
+      "sha256": "d23904ca5d0a263094ccb648ac9c0801b59ea6b7e27cf9a6bf24e2abc39ed969",
+      "git_blob": "ffc6228d7a4c276f4aa4c8a14e55678796eeae7b",
+      "github_blob": "ffc6228d7a4c276f4aa4c8a14e55678796eeae7b",
+      "comparison": "EXACT"
+    },
+    {
+      "path": "assets/data/acosta-matos-functional-convergence-map-v2.edges-direct-2.json",
+      "action": "create",
+      "bytes": 9253,
+      "sha256": "c0111c5201913e593377316de5080c7e36621f10e7068c0edf1d9f7cac9793ac",
+      "git_blob": "9e63a19bb57e1152f0fb284e49def9065bbb7f11",
+      "github_blob": "9e63a19bb57e1152f0fb284e49def9065bbb7f11",
+      "comparison": "EXACT"
+    },
+    {
+      "path": "assets/data/acosta-matos-functional-convergence-map-v2.edges-direct-3.json",
+      "action": "create",
+      "bytes": 5273,
+      "sha256": "5f8de28ff85e5de6151bed933ddf1b739d11ca7a8a6312b4e54ba7e298be9c5a",
+      "git_blob": "8cfdc3a349a5d11c271a4d956e9c0b92b686c130",
+      "github_blob": "8cfdc3a349a5d11c271a4d956e9c0b92b686c130",
+      "comparison": "EXACT"
+    },
+    {
+      "path": "assets/data/acosta-matos-functional-convergence-map-v2.edges-functional.json",
+      "action": "create",
+      "bytes": 8342,
+      "sha256": "d8b9f5bb2f106eea1e64d2e0954102dedca38cef261a2d63f9fc3b303d2c7ae5",
+      "git_blob": "de41585863ccce60090c337d82e19dc3b88b5bcf",
+      "github_blob": "de41585863ccce60090c337d82e19dc3b88b5bcf",
+      "comparison": "EXACT"
+    },
+    {
+      "path": "assets/data/acosta-matos-functional-convergence-map-v2.edges-inference-open.json",
+      "action": "create",
+      "bytes": 4594,
+      "sha256": "06cc590ac9676af45b4ce28671aa34318bd86b877659db5419059a5d3b04cb16",
+      "git_blob": "eee0d9027cae2916f97051a330406026a1281e2b",
+      "github_blob": "eee0d9027cae2916f97051a330406026a1281e2b",
+      "comparison": "EXACT"
+    },
+    {
+      "path": "assets/data/acosta-matos-functional-convergence-map-v2.json",
+      "action": "create",
+      "bytes": 5836,
+      "sha256": "98cdabbc8374be232990cf1b3cd13390074d3ef6f015ff5b02de203504ba686a",
+      "git_blob": "438da74cc8839171a94882d7efc86f08e087aa87",
+      "github_blob": "438da74cc8839171a94882d7efc86f08e087aa87",
+      "comparison": "EXACT"
+    },
+    {
+      "path": "assets/data/acosta-matos-functional-convergence-map-v2.nodes-stage-1.json",
+      "action": "create",
+      "bytes": 1804,
+      "sha256": "9f397e5b652732b1e59f39740310137321ac2034c652653deaca06ae34d8dd5e",
+      "git_blob": "09fdfbd5f295affc32ff81e24399936fb9104927",
+      "github_blob": "09fdfbd5f295affc32ff81e24399936fb9104927",
+      "comparison": "EXACT"
+    },
+    {
+      "path": "assets/data/acosta-matos-functional-convergence-map-v2.nodes-stage-2.json",
+      "action": "create",
+      "bytes": 4165,
+      "sha256": "4026731e1233015e9ce6b61dc35d1f4262c0c35c30f90eb746a63c8d32d30d74",
+      "git_blob": "58c6bfc88bdf915fa39662bd7cd845fcaf3c53f4",
+      "github_blob": "58c6bfc88bdf915fa39662bd7cd845fcaf3c53f4",
+      "comparison": "EXACT"
+    },
+    {
+      "path": "assets/data/acosta-matos-functional-convergence-map-v2.nodes-stage-3.json",
+      "action": "create",
+      "bytes": 2818,
+      "sha256": "eef6ef5ef9432def9b7770998ec596beed18ccd2b85e696ba14bf1b2a69cb8d9",
+      "git_blob": "7d785bd12b41d6228c08a5dca4affec63a8cfe92",
+      "github_blob": "7d785bd12b41d6228c08a5dca4affec63a8cfe92",
+      "comparison": "EXACT"
+    },
+    {
+      "path": "assets/data/acosta-matos-functional-convergence-map-v2.nodes-stage-4.json",
+      "action": "create",
+      "bytes": 2782,
+      "sha256": "40dd241a77537f41274f09a1fb936528a4e5feeaa0b3445a45d52d809765f52d",
+      "git_blob": "adbd21ef6330389492caa39246c478afad1b7c8e",
+      "github_blob": "adbd21ef6330389492caa39246c478afad1b7c8e",
+      "comparison": "EXACT"
+    },
+    {
+      "path": "assets/data/all-parties-source-discrepancies-20260907.json",
+      "action": "create",
+      "bytes": 7894,
+      "sha256": "02b6ae4b319c39560c0b7b99f92b5b07941c6c815aa14c010522e169fc823ec3",
+      "git_blob": "dfbbb5668f1be5ade5bf87c1eee1ae51471233f6",
+      "github_blob": null,
+      "comparison": "ABSENT"
+    },
+    {
+      "path": "assets/data/all-parties-source-index-20260907.json",
+      "action": "create",
+      "bytes": 33785,
+      "sha256": "deb40e897905b4835474a4d55bba8a601344d105b6d31736e94a1f5453af0e50",
+      "git_blob": "a52c138c103c9f8ad63fd3484be4d52a0c79e1c5",
+      "github_blob": null,
+      "comparison": "ABSENT"
+    },
+    {
+      "path": "assets/data/all-parties-source-register-20260907.json",
+      "action": "create",
+      "bytes": 5096,
+      "sha256": "7aa117a1ecdff58446b08cfa693c89338845d3e833c4ab2bbd395017bb3da507",
+      "git_blob": "2a70ad910af3c7c59a88ec92167a6f4c83d30b2c",
+      "github_blob": null,
+      "comparison": "ABSENT"
+    },
+    {
+      "path": "assets/data/caepr-caret-irea-ricpe-colliers-continuity-v1.json",
+      "action": "create",
+      "bytes": 5440,
+      "sha256": "6daba4ea0a2e37ce154696b5b64f49ea40a5557162ae812d1b49fad810961ae2",
+      "git_blob": "08b6008872a4b055a547953ad5c06eff76495fdc",
+      "github_blob": "bd72b9bb3f0ead16ba1c38acca9af5cac04e3db7",
+      "comparison": "DIFFERENT_REVIEW_REQUIRED"
+    },
+    {
+      "path": "assets/data/concurso36-ac-removal-fees-production-gaps-v1.json",
+      "action": "create",
+      "bytes": 6319,
+      "sha256": "4a61ac77341a7fcd7ba2fa5a6f9c370b8567ec0bd814dfe17c4409bce0cd888d",
+      "git_blob": "d72f35450a7f7c20bbc1f3f93c3a1e61cd21099b",
+      "github_blob": "d72f35450a7f7c20bbc1f3f93c3a1e61cd21099b",
+      "comparison": "EXACT"
+    },
+    {
+      "path": "assets/data/concurso36-ac-remuneration-quantitative-ledger-v1.json",
+      "action": "create",
+      "bytes": 9631,
+      "sha256": "328e87ebde8d476c691e820c996fdc41d24590e93da6b401486cbb9a30b3ec73",
+      "git_blob": "dcf069ab4f86a656be48e99c721d2bbff5a9138a",
+      "github_blob": "dcf069ab4f86a656be48e99c721d2bbff5a9138a",
+      "comparison": "EXACT"
+    },
+    {
+      "path": "assets/data/concurso36-complete-record-v1.json",
+      "action": "create",
+      "bytes": 186582,
+      "sha256": "073c275627ec39326f84121001edcf393a692967cde30180eeefb691317b9475",
+      "git_blob": "57ad3c795089f7a4697b7aff2f146bdb9ef632d5",
+      "github_blob": "57ad3c795089f7a4697b7aff2f146bdb9ef632d5",
+      "comparison": "EXACT"
+    },
+    {
+      "path": "assets/data/concurso36-decision-continuity-2014-2026-v1.json",
+      "action": "create",
+      "bytes": 87188,
+      "sha256": "71d869ca4f7d6376a72bffc12a15c63184efeb0499878597a61f020c8875c799",
+      "git_blob": "144fd3b084f278e8b2c0cd3ec424288b93c5a946",
+      "github_blob": "144fd3b084f278e8b2c0cd3ec424288b93c5a946",
+      "comparison": "EXACT"
+    },
+    {
+      "path": "assets/data/counsel-filing-register-v1.json",
+      "action": "create",
+      "bytes": 256514,
+      "sha256": "8543d1779e1ccfe2a09352edb5b9772f5302fc84f85e86b5793a2aa8f6823010",
+      "git_blob": "5135b07382e13d1a43f5375db54f207485bbca40",
+      "github_blob": "e042fc7a8d85713375d53efa40555c66f29e95e4",
+      "comparison": "DIFFERENT_REVIEW_REQUIRED"
+    },
+    {
+      "path": "assets/data/counsel-procurador-gap-register-v1.json",
+      "action": "create",
+      "bytes": 26753,
+      "sha256": "071719d5b4f3c08fffba3f9b2ba31e67835e3255bb6cb9245afd56153873b0b1",
+      "git_blob": "f52143b2e7213b31d319f8f35b285e53bd008ff4",
+      "github_blob": "e333c3a79a5b6fc3ad70d015e6e7a8d1d3e0be78",
+      "comparison": "DIFFERENT_REVIEW_REQUIRED"
+    },
+    {
+      "path": "assets/data/counsel-procurador-perimeter-register-v1.json",
+      "action": "create",
+      "bytes": 13726,
+      "sha256": "a6359da833b31eb4b416347e36d1e2ce136a1f78c3a26b91dda3ea01f34b9a4f",
+      "git_blob": "8ce22ccd2358b2df8c91283d3df6ac956aae05e7",
+      "github_blob": "54d744fa47c7d7c3f2e95a178c3261fcf1ca4647",
+      "comparison": "DIFFERENT_REVIEW_REQUIRED"
+    },
+    {
+      "path": "assets/data/criminal-first-institutional-action-matrix-v1.json",
+      "action": "create",
+      "bytes": 14917,
+      "sha256": "095dc9857d9bef69da1ae8b7128fd4265b4d80ddfa0df2cae36fe5dda4d6bd11",
+      "git_blob": "28350da2c40cb6357dde4d59d7a5fae2f5c01bdf",
+      "github_blob": "28350da2c40cb6357dde4d59d7a5fae2f5c01bdf",
+      "comparison": "EXACT"
+    },
+    {
+      "path": "assets/data/dp748-2026-appeal-reopening-control-v1.json",
+      "action": "create",
+      "bytes": 17357,
+      "sha256": "b03f43234769e85dc530c85699316c9aec4415af8de189c7afde941d7b3176d7",
+      "git_blob": "cac53668198992837ccf972dd6945947e48c1c58",
+      "github_blob": "396332e9004a12c9f7ff63f12ab0dd2423846ee9",
+      "comparison": "DIFFERENT_REVIEW_REQUIRED"
+    },
+    {
+      "path": "assets/data/eg745-expert-notice-links-20260907.json",
+      "action": "create",
+      "bytes": 11334,
+      "sha256": "c208673741f45ce69ab404a92cf3f8af9e0bf79729064fd97e7739b10f95a22f",
+      "git_blob": "0d6a68dcb3315e052f014130d55aa426a1dcd197",
+      "github_blob": null,
+      "comparison": "ABSENT"
+    },
+    {
+      "path": "assets/data/institutional-communications-register-v1.json",
+      "action": "create",
+      "bytes": 848434,
+      "sha256": "1969a339bf8f2ca012ce32bde6b89d5203f05cfac922912c800702eaf6350260",
+      "git_blob": "2a0707064aaad9780f880078bf923d0acd91b69b",
+      "github_blob": "06d80bf6d8e7ec187e90ba5624de60d273c4bc36",
+      "comparison": "DIFFERENT_REVIEW_REQUIRED"
+    },
+    {
+      "path": "assets/data/irea-colliers-meridian-sun-park-unitary-v1.json",
+      "action": "create",
+      "bytes": 15807,
+      "sha256": "144fdc7b281fd8e4722dcd009bbf9a9a4c823486412240b7439d8563b398c49f",
+      "git_blob": "80cfdd6c916024feebc03d128e56c9630ec3e255",
+      "github_blob": "80cfdd6c916024feebc03d128e56c9630ec3e255",
+      "comparison": "EXACT"
+    },
+    {
+      "path": "assets/data/justice-professionals-caret-audit-v1.json",
+      "action": "create",
+      "bytes": 9551,
+      "sha256": "d366722d03f87835abc0b80ea8fc4eb9ace2dc505865dae1d762eac2ab99f971",
+      "git_blob": "af34e48fb09491474fcd08119372abe3dd7574ec",
+      "github_blob": "af34e48fb09491474fcd08119372abe3dd7574ec",
+      "comparison": "EXACT"
+    },
+    {
+      "path": "assets/data/justice-professionals-evidence-production-queue-v1.json",
+      "action": "create",
+      "bytes": 25432,
+      "sha256": "243fb7005aeb9503e0fe10b5eeebf5cd017e7a0e3b9f908f949b5c9e34ba9ec7",
+      "git_blob": "8ea2016628c62e2efdeb5f87e8bb450c06dbc82c",
+      "github_blob": "8ea2016628c62e2efdeb5f87e8bb450c06dbc82c",
+      "comparison": "EXACT"
+    },
+    {
+      "path": "assets/data/la-laguna-judicial-actors-canonical-interlink-control-v1.json",
+      "action": "create",
+      "bytes": 7479,
+      "sha256": "1c66aa23718c186441c0fc94ef1a08a3165d58e46a543ce351b0d85723c94d89",
+      "git_blob": "3089a9128a479802edaf080ce03c42d23b61492c",
+      "github_blob": "3089a9128a479802edaf080ce03c42d23b61492c",
+      "comparison": "EXACT"
+    },
+    {
+      "path": "assets/data/la-laguna-judicial-actors-gap-closure-audit-v1.json",
+      "action": "create",
+      "bytes": 4920,
+      "sha256": "1377eda4580bd729d72cf3053da3cfbed908e11d64a68b029efcbe98ad432bdb",
+      "git_blob": "4860c01aef45c3287d2a3b120b08515797587f28",
+      "github_blob": "4860c01aef45c3287d2a3b120b08515797587f28",
+      "comparison": "EXACT"
+    },
+    {
+      "path": "assets/data/legal-professionals-register-v1.json",
+      "action": "create",
+      "bytes": 14842,
+      "sha256": "dddc1de3acecf70948b185189c38889b4d8a7c076e3586083f64ae490b976d1c",
+      "git_blob": "3fe64f12abfe64ebb6996e1a8c5eb13131f54b8e",
+      "github_blob": "df519ebbf09214720c88adef773370ecac9885e1",
+      "comparison": "DIFFERENT_REVIEW_REQUIRED"
+    },
+    {
+      "path": "assets/data/matter-identity-filing-index-20260907.json",
+      "action": "create",
+      "bytes": 416687,
+      "sha256": "c6f655598e9be1323ac4ee30470bd845720908e143dad3c987a44d1a2722452b",
+      "git_blob": "5849d9f26ebaf92965066482022aae584fd3a79c",
+      "github_blob": null,
+      "comparison": "ABSENT"
+    },
+    {
+      "path": "assets/data/matter-identity-legacy-crosswalk-20260907.json",
+      "action": "create",
+      "bytes": 85363,
+      "sha256": "038021590c9116d3b6e483c2af0834040dfe8841ab2b3bdcdfeefb69be1df9ce",
+      "git_blob": "21975c1c0b5d8d6f770cc1c0d00102cfcec13052",
+      "github_blob": null,
+      "comparison": "ABSENT"
+    },
+    {
+      "path": "assets/data/matter-identity-operational-control-v1.json",
+      "action": "create",
+      "bytes": 81295,
+      "sha256": "86dbbc2c55a9e68f0ef7ff4846f49fc3c32aa134c27e5cfad932bf7f64b95df0",
+      "git_blob": "ef3e666bfee1146848c64b93cbea207b930619ca",
+      "github_blob": "d20b1dc5cf5f75cd653ad36e5ba4d9c1c3833822",
+      "comparison": "DIFFERENT_REVIEW_REQUIRED"
+    },
+    {
+      "path": "assets/data/matter-identity-registry-v1.dp3205-institutions.json",
+      "action": "create",
+      "bytes": 1536,
+      "sha256": "bc56667fbe617544b51c9999442165e0f52bec6e35d0fb9531abbe33af97759d",
+      "git_blob": "71568899db9be195cdd1e66d76f16dca710db6ea",
+      "github_blob": "71568899db9be195cdd1e66d76f16dca710db6ea",
+      "comparison": "EXACT"
+    },
+    {
+      "path": "assets/data/matter-identity-registry-v1.dp3205-proceedings.json",
+      "action": "create",
+      "bytes": 1264,
+      "sha256": "1496b7132453858451619d8d8d4fcf1cc2b527c14121071fc94f45bf38476641",
+      "git_blob": "adc6a53177d8600fecbb3d0c97794d06731faf30",
+      "github_blob": "7061af95a3827478fc785f65bff55bfec475f520",
+      "comparison": "DIFFERENT_REVIEW_REQUIRED"
+    },
+    {
+      "path": "assets/data/matter-identity-registry-v1.dp748-professional-people.json",
+      "action": "create",
+      "bytes": 4267,
+      "sha256": "43be01fe575063656c8953f99197963a5bb54bf1add6b470c0240027f116a50e",
+      "git_blob": "52d59b244accfe023f4c5cc44fc75db8ee103c35",
+      "github_blob": "dc7df4d673e66f75d0d4cf07b7f799e95c9522a1",
+      "comparison": "DIFFERENT_REVIEW_REQUIRED"
+    },
+    {
+      "path": "assets/data/matter-identity-registry-v1.institutions.json",
+      "action": "create",
+      "bytes": 34211,
+      "sha256": "e2e704890087473450a28b2570f9e635a60b3f4f93799a2273d2d7cf947303be",
+      "git_blob": "ec71821b7b2e0fc0a93d66133f8dd3e23ef37727",
+      "github_blob": "fc4510cd1036a7338b61abc0c1a607f17676c12b",
+      "comparison": "DIFFERENT_REVIEW_REQUIRED"
+    },
+    {
+      "path": "assets/data/matter-identity-registry-v1.joan-cruz.json",
+      "action": "create",
+      "bytes": 1000,
+      "sha256": "5f1effaab4bc1b2d59427e173c35f2c9a436c4a1dcc999b88512bf8cb4799877",
+      "git_blob": "cc882ff2a55138409889a3b023ae5954597eb5a9",
+      "github_blob": "cc882ff2a55138409889a3b023ae5954597eb5a9",
+      "comparison": "EXACT"
+    },
+    {
+      "path": "assets/data/matter-identity-registry-v1.json",
+      "action": "create",
+      "bytes": 10225,
+      "sha256": "f8ecb65e45eae3894a80af2e0ec1077a130b10f80f5592be33bf38534fa673d0",
+      "git_blob": "35cd88953219f05ec72438d342f9376c97669c94",
+      "github_blob": "c5c895c5b55bf17ce033128bdc3b66abced3d049",
+      "comparison": "DIFFERENT_REVIEW_REQUIRED"
+    },
+    {
+      "path": "assets/data/matter-identity-registry-v1.la-laguna-judicial-institutions.json",
+      "action": "create",
+      "bytes": 6540,
+      "sha256": "3f9901d9ec635b44051592789e6e0f17fab91cc032e92272985cacb1822a0dac",
+      "git_blob": "d34b5d6bcb93ac966a67dd1fdcce722539f0d2a0",
+      "github_blob": "3a3876c8bd3545df1b567ea1492f075642b3833f",
+      "comparison": "DIFFERENT_REVIEW_REQUIRED"
+    },
+    {
+      "path": "assets/data/matter-identity-registry-v1.la-laguna-judicial-people.json",
+      "action": "create",
+      "bytes": 14712,
+      "sha256": "279d19a2383a1e95eae26861b43409bbb28c99a1353bdbb02a43d48ed701c3ce",
+      "git_blob": "7fff2ff2cce2d10c5e9fa0186bd81096290d858a",
+      "github_blob": "ddd1fd647e9cfdfd1d5c9664e131443defcbb7f4",
+      "comparison": "DIFFERENT_REVIEW_REQUIRED"
+    },
+    {
+      "path": "assets/data/matter-identity-registry-v1.organisations.json",
+      "action": "update",
+      "bytes": 70408,
+      "sha256": "b5ae38a29f4c69689ec368f80ee3267e889ae27c328270bdcd7e70a03395e1cb",
+      "git_blob": "461010e7d9e12b0c9adc8c7cb8f2e514e7de380d",
+      "github_blob": "27612b4affee1f0c581d40f7bdb94863de279d83",
+      "comparison": "DIFFERENT_REVIEW_REQUIRED"
+    },
+    {
+      "path": "assets/data/matter-identity-registry-v1.people.json",
+      "action": "create",
+      "bytes": 98851,
+      "sha256": "cb5791e6bc35781833ee646ecc79663fe06ee27ab480bd0bf42fb6a1c9035f05",
+      "git_blob": "f40e7f0948aa9e8615122a8e68dd35261125be7f",
+      "github_blob": "4334603b6777ae6f9d401d4491f0953dcdd977b3",
+      "comparison": "DIFFERENT_REVIEW_REQUIRED"
+    },
+    {
+      "path": "assets/data/matter-identity-registry-v1.proceedings.json",
+      "action": "create",
+      "bytes": 36062,
+      "sha256": "202bd5b9bc43caa4244869d5ff4c2ab57ebff19f4f3d4c3f9f34ccae1181d192",
+      "git_blob": "43b89218d589f64b3b6e88dbebc8483cd9cf4a1b",
+      "github_blob": "e4b185e1533ffbddfcbd90a2a9d4a2639f85f94a",
+      "comparison": "DIFFERENT_REVIEW_REQUIRED"
+    },
+    {
+      "path": "assets/data/matter-identity-registry-v1.professional-organisations.json",
+      "action": "create",
+      "bytes": 2249,
+      "sha256": "e77758809721cc3eff7a38be47d36189728a83ae133c8bd9ed55d8fa8385a675",
+      "git_blob": "3125e342d652fada8353a37bfaaa660453faf2ec",
+      "github_blob": "17e841ff5cd3b381dd05c7d76115a8ef9615f033",
+      "comparison": "DIFFERENT_REVIEW_REQUIRED"
+    },
+    {
+      "path": "assets/data/matter-identity-registry-v1.professional-people.json",
+      "action": "create",
+      "bytes": 13558,
+      "sha256": "0de4eed6af8bcda4e31c91ff75833c795834dd2f36bd5b669ea8ea359c08fde8",
+      "git_blob": "eed8146284339109da91fcda0906737a915afc1d",
+      "github_blob": "f327a8c73f2167326b4277ad1a0f052bb2d2367e",
+      "comparison": "DIFFERENT_REVIEW_REQUIRED"
+    },
+    {
+      "path": "assets/data/matter-identity-registry-v1.scan-20260907-institution.json",
+      "action": "create",
+      "bytes": 28343,
+      "sha256": "9cfc09a9bdd448cf128be768204ab326f357a5e9deeaea8670f0040b0f451349",
+      "git_blob": "f3ce655b0b7476ec6c47f7241763525ea71163b4",
+      "github_blob": null,
+      "comparison": "ABSENT"
+    },
+    {
+      "path": "assets/data/matter-identity-registry-v1.scan-20260907-organisation.json",
+      "action": "create",
+      "bytes": 40354,
+      "sha256": "3ceff465dbc81b366c0e37a7da47bcca2779acfe6b1b4a5c98d3187f67069796",
+      "git_blob": "b345eb99b87981e800918ae22396365ea5d8c631",
+      "github_blob": null,
+      "comparison": "ABSENT"
+    },
+    {
+      "path": "assets/data/matter-identity-registry-v1.scan-20260907-person.json",
+      "action": "create",
+      "bytes": 103694,
+      "sha256": "fa49e42fd765b8fdcfc495bd4273d9b7d03155584d45cc298bf0827ae4f7221b",
+      "git_blob": "95981b7333d04c50558963dcbe25736029ecd115",
+      "github_blob": null,
+      "comparison": "ABSENT"
+    },
+    {
+      "path": "assets/data/matter-identity-registry-v1.scan-20260907-proceeding.json",
+      "action": "create",
+      "bytes": 15582,
+      "sha256": "645e3e2e02786b4fc0eb313ca9f7084936a70e194930c11bdd0a19ac0dbeda6d",
+      "git_blob": "4fb643f280297c6ece953420e0750759dedb41bf",
+      "github_blob": null,
+      "comparison": "ABSENT"
+    },
+    {
+      "path": "assets/data/matter-identity-registry-v1.scan-20260907-structure.json",
+      "action": "create",
+      "bytes": 1402,
+      "sha256": "e84c66513a55085b5b242fdf2d5e8ae73edbb516749136c03da37c97ea709fb4",
+      "git_blob": "f8f151ad0cf6d8f3f9ab8260af8105807ceae136",
+      "github_blob": null,
+      "comparison": "ABSENT"
+    },
+    {
+      "path": "assets/data/matter-identity-registry-v1.structures.json",
+      "action": "create",
+      "bytes": 2721,
+      "sha256": "ef9fa99d804b03a6950c35427bd5052a761ca1fba52f9aad633d63a6127e8390",
+      "git_blob": "20f98dd7fc87599a489dc3990acb9a4ee6bf0920",
+      "github_blob": "9cec698e748a0b2c38bdc0c98351c9d12c9e4405",
+      "comparison": "DIFFERENT_REVIEW_REQUIRED"
+    },
+    {
+      "path": "assets/data/matter-identity-source-intake-20260907.json",
+      "action": "create",
+      "bytes": 170750,
+      "sha256": "c6d08702ed16f580b34886523f2a28b6be0b19ca997b4ceaa85becb23c38a0b1",
+      "git_blob": "533aef717c1ead97c930c34b1452c6e76e06090b",
+      "github_blob": null,
+      "comparison": "ABSENT"
+    },
+    {
+      "path": "assets/data/procurador-master-register-v1.json",
+      "action": "create",
+      "bytes": 31552,
+      "sha256": "408b3e377ec9492ca440640e038af297b2f949d0de1e2a0b669d1884f3e67174",
+      "git_blob": "bf9f2c0b398d073af40006311fee65478fa972d4",
+      "github_blob": "cec44a1de35e83448e056f57913aef3e6b018cee",
+      "comparison": "DIFFERENT_REVIEW_REQUIRED"
+    },
+    {
+      "path": "assets/data/unitary-multitrack-criminal-first-gap-closure-v1.json",
+      "action": "create",
+      "bytes": 105451,
+      "sha256": "f4511cd28c60ee084f2e443d010b967d87a797b2123216f3d5a20fd1c9b80219",
+      "git_blob": "79a5bfe1fb9a7505469664684448f8f97df4419a",
+      "github_blob": "9eb312c2602df86c525319b9066e578a86994d1f",
+      "comparison": "DIFFERENT_REVIEW_REQUIRED"
+    },
+    {
+      "path": "assets/matter-identity-registry.css",
+      "action": "create",
+      "bytes": 11477,
+      "sha256": "ced08bea0a69f68b70374f63ab1ac629bad1a635c5a9c802f3642b92b85441fd",
+      "git_blob": "0cf3da01a27186e8acb99e3d0adfbc7f9fd174b7",
+      "github_blob": "05549d01eef173604255f0fa5ea87a068ae704a7",
+      "comparison": "DIFFERENT_REVIEW_REQUIRED"
+    },
+    {
+      "path": "assets/matter-identity-registry.js",
+      "action": "create",
+      "bytes": 39090,
+      "sha256": "9ab9c6ff74a3422f129187d13d225b26af50d0e9d492b63199d440e0f7ca7a26",
+      "git_blob": "b6746062665722c084a2dcf0213976a99fcb0a02",
+      "github_blob": "b3b3ca1ca4ed831f3cf9a33b2cb31c6fd65adc4f",
+      "comparison": "DIFFERENT_REVIEW_REQUIRED"
+    },
+    {
+      "path": "en/insolvency-36-2012-orders-decisions/index.html",
+      "action": "create",
+      "bytes": 190813,
+      "sha256": "47a9ad65b8f7b3cb0d23051d26ec47bce886e76e635032dbb9a3fe508946f7c1",
+      "git_blob": "e9b817771b9d19efc8d358e4d64fe63fba858fd3",
+      "github_blob": "e9b817771b9d19efc8d358e4d64fe63fba858fd3",
+      "comparison": "EXACT"
+    },
+    {
+      "path": "en/irea-colliers-meridian-sun-park/index.html",
+      "action": "create",
+      "bytes": 33666,
+      "sha256": "6d30d3cb527d55e15abc0b82a7a83df14c6d1ce6fbd136b365a0e598e962cac1",
+      "git_blob": "6e79146f8495100bd5b4315811917668641b27e8",
+      "github_blob": "6e79146f8495100bd5b4315811917668641b27e8",
+      "comparison": "EXACT"
+    },
+    {
+      "path": "en/justice-professionals-identity-register/index.html",
+      "action": "create",
+      "bytes": 15996,
+      "sha256": "0deba74fa297b55e502f6b601319e9dcaabb4e6bc8383322e7f1c33ea65acc5f",
+      "git_blob": "9e34e3cb63defde932099081659db6139595665f",
+      "github_blob": "9e34e3cb63defde932099081659db6139595665f",
+      "comparison": "EXACT"
+    },
+    {
+      "path": "en/la-laguna-judicial-register/index.html",
+      "action": "create",
+      "bytes": 5734,
+      "sha256": "b00795d70d1b0aac0593dfdeb4bf1818380acc7a6adfde752b0c3e1d3c261f44",
+      "git_blob": "4d2ce4bdd41a01f66ace64b263f892c17a4f04bf",
+      "github_blob": "4d2ce4bdd41a01f66ace64b263f892c17a4f04bf",
+      "comparison": "EXACT"
+    },
+    {
+      "path": "en/matter-identity-registry/index.html",
+      "action": "create",
+      "bytes": 18588,
+      "sha256": "0f89c87245a011b2bbfeec9ef59cbcf760d920b82488f8ba70f55856dfb1e02a",
+      "git_blob": "a4cf7e9197e9eb7805cb48e67f5b3d211748b6a7",
+      "github_blob": "c2d0d7a6c11c4f166adf6d9cc5c0f1cb71d825c8",
+      "comparison": "DIFFERENT_REVIEW_REQUIRED"
+    },
+    {
+      "path": "es/concurso-36-2012-autos-resoluciones/index.html",
+      "action": "create",
+      "bytes": 192946,
+      "sha256": "5b5507ddf60bb82a38e13bec5d0d4353b81cdad824ad3b05613340d7e20ec330",
+      "git_blob": "bb47c9d844f56adf5de416db1a471b1ffe45a825",
+      "github_blob": "bb47c9d844f56adf5de416db1a471b1ffe45a825",
+      "comparison": "EXACT"
+    },
+    {
+      "path": "es/irea-colliers-meridian-sun-park/index.html",
+      "action": "create",
+      "bytes": 35165,
+      "sha256": "8b8e782ef523cee07477aa28027ee55253b63a4334640378d126d7a45a1ce39e",
+      "git_blob": "324166ade08a10c776c5d63849d6336e317b26f7",
+      "github_blob": "324166ade08a10c776c5d63849d6336e317b26f7",
+      "comparison": "EXACT"
+    },
+    {
+      "path": "es/registro-identidad-materia/index.html",
+      "action": "create",
+      "bytes": 19239,
+      "sha256": "3d51b9c49dad9bbf978b99f98496a7ea1b85ca17ba03261679db5be07fa94cf6",
+      "git_blob": "cf9e1673afeb8875200b705d8ed27f2f3ac723f3",
+      "github_blob": "189e0481b745cbecc206fb46833cee4b8430f463",
+      "comparison": "DIFFERENT_REVIEW_REQUIRED"
+    },
+    {
+      "path": "es/registro-identidad-profesionales-justicia/index.html",
+      "action": "create",
+      "bytes": 16390,
+      "sha256": "e262d428f2f00cc343001cce2ca00259f8b0afc61c29f719a812e7e85660daee",
+      "git_blob": "89017f09bc3ce78db6b4b32d1bfea84eb6ac25cf",
+      "github_blob": "89017f09bc3ce78db6b4b32d1bfea84eb6ac25cf",
+      "comparison": "EXACT"
+    },
+    {
+      "path": "es/registro-judicial-la-laguna/index.html",
+      "action": "create",
+      "bytes": 5859,
+      "sha256": "1e4478db4ce0204915877af13ff04a0c6d1d3e4e293cd3995296dfb083b9be9f",
+      "git_blob": "675e0cb8eca9acfcaacc34955d1f991cdf0033e7",
+      "github_blob": "675e0cb8eca9acfcaacc34955d1f991cdf0033e7",
+      "comparison": "EXACT"
+    },
+    {
+      "path": "ops/CANONICAL_ENTITY_NAMES.json",
+      "action": "create",
+      "bytes": 29159,
+      "sha256": "aa6af6b13404317b459c04054fba57f3f1ef0a30b22a8884076368148aeec23c",
+      "git_blob": "5f18282e376ceeeab06d467023c3f6c6d159259d",
+      "github_blob": "5f18282e376ceeeab06d467023c3f6c6d159259d",
+      "comparison": "EXACT"
+    },
+    {
+      "path": "ops/eg745/RECOVERY_AND_INTERLINK_VERIFICATION_07SEP2026.json",
+      "action": "create",
+      "bytes": 9832,
+      "sha256": "e9bee9fbd507d39691db2a49ccef9d895cf8345ed451f1e66f3950b91bdf9987",
+      "git_blob": "97af0b836fed47125f433e9636c9ee5bb12cc596",
+      "github_blob": null,
+      "comparison": "ABSENT"
+    },
+    {
+      "path": "ops/recovery-cross-thread/ALL_PARTIES_REVIEWED_SUCCESSORS_20260907.json",
+      "action": "create",
+      "bytes": 2548,
+      "sha256": "9794c89ff05da791c6e2a69ec358344ab0ab80a081e17644261a4b4d1f5884c1",
+      "git_blob": "af0a20f58ec0999dc2d747633bc74227b949034b",
+      "github_blob": null,
+      "comparison": "ABSENT"
+    },
+    {
+      "path": "ops/recovery-cross-thread/ALL_PARTIES_SCAN_COVERAGE_20260907.json",
+      "action": "create",
+      "bytes": 7145,
+      "sha256": "761ab37e07376d13396d7551ea24b2dfc1f0a23eb379139128281151be5dc86e",
+      "git_blob": "46b2038ef06bfe98084c4c0d5cab78676ac94bba",
+      "github_blob": null,
+      "comparison": "ABSENT"
+    },
+    {
+      "path": "ops/recovery-cross-thread/KNOWLEDGE_CONTINUITY_07SEP2026.md",
+      "action": "update",
+      "bytes": 10128,
+      "sha256": "5654430d081f45e9a9fe971058e3d1e8e2dc19d9612e357b0f85d4a9f5bfe95e",
+      "git_blob": "e2d5713cf978437d3ed9e2b2da939c6ef3dbd142",
+      "github_blob": null,
+      "comparison": "ABSENT"
+    },
+    {
+      "path": "ops/recovery-cross-thread/UNITARY_360_SOURCE_COVERAGE_20260907.json",
+      "action": "update",
+      "bytes": 3806,
+      "sha256": "33ae242bca527c7be4882879eafc6f653ff236ca72dbffad20b698ed69d3768a",
+      "git_blob": "dffa26fb944835eda1455f65d1469205731a670d",
+      "github_blob": null,
+      "comparison": "ABSENT"
+    },
+    {
+      "path": "publication-manifests/matter-identity-operational-registry-20260825.json",
+      "action": "create",
+      "bytes": 9887,
+      "sha256": "9b41ef30ad5092e12f6d585a63abdc00d4daa0eeff7c5764e90d4835934fa3ee",
+      "git_blob": "c44b0854713f273aaf8af1e62b8a8eeaeff9e325",
+      "github_blob": "409343da09ef64a474a587a7ff581e7ba167fa60",
+      "comparison": "DIFFERENT_REVIEW_REQUIRED"
+    },
+    {
+      "path": "recovery_tests/test_all_parties_successor.py",
+      "action": "create",
+      "bytes": 1982,
+      "sha256": "0040130935e8344f4baa4f2af0f21b4973b7e0e0a9cbd678d68fb728b6acb75b",
+      "git_blob": "418d66d651ce7e31488979d78e5bef69e2915fc7",
+      "github_blob": null,
+      "comparison": "ABSENT"
+    },
+    {
+      "path": "recovery_tools/all_parties_successor.py",
+      "action": "create",
+      "bytes": 3449,
+      "sha256": "da93547258c8a8332a82404cfca7f92f7aa19bd3071192a37a554be6105acc86",
+      "git_blob": "ac05cb55e9f982e3b65c9873c345e77c1ce140b6",
+      "github_blob": null,
+      "comparison": "ABSENT"
+    },
+    {
+      "path": "recovery_tools/verify_private_incorporation.py",
+      "action": "update",
+      "bytes": 6583,
+      "sha256": "50f3d2c61868dd53d1430f573452968fc7040164bef02e18aaf4a4d29141fd17",
+      "git_blob": "376e2900ddf37341cd5f12cd2f0c504c8a6bdd8d",
+      "github_blob": null,
+      "comparison": "ABSENT"
+    },
+    {
+      "path": "robots.txt",
+      "action": "update",
+      "bytes": 2409,
+      "sha256": "27f5e1f78044e81c30d9e1e8086afec157f814ec40830f659d3452b57ceb4a2d",
+      "git_blob": "8a94684d0ceb1393a5e2171c8e58572659159210",
+      "github_blob": "310f8bb17470bef742d8ad9ad62e0d5f5880d5c1",
+      "comparison": "DIFFERENT_REVIEW_REQUIRED"
+    },
+    {
+      "path": "scripts/audit_counsel_procurador_governance.py",
+      "action": "create",
+      "bytes": 16244,
+      "sha256": "8d96b3595aa486937e4afa05185a5fd95b998306f0d3291dc9f9abf9fb66b512",
+      "git_blob": "96580b3b678b9fdea863603ffe46f061806cfee3",
+      "github_blob": "9b73857796123a514329af5e778028bd46a7be37",
+      "comparison": "DIFFERENT_REVIEW_REQUIRED"
+    },
+    {
+      "path": "scripts/build_identity_filing_index.py",
+      "action": "create",
+      "bytes": 6709,
+      "sha256": "e8b989f22bdba8a10da2dd5b1bee07675d1274611740fe175e5a22b229a0edfc",
+      "git_blob": "64781ab6eeebe7f665fb2487040e772559dcbdb7",
+      "github_blob": null,
+      "comparison": "ABSENT"
+    },
+    {
+      "path": "scripts/check_identity_filing_browser.py",
+      "action": "create",
+      "bytes": 3870,
+      "sha256": "86a9bc63b970ebacf28ba5dd2afe1b2cf2cb19ba10f51eefa464ba1406797716",
+      "git_blob": "0ca175a84979a65ec3a164597e8d55c26d6ea3bf",
+      "github_blob": null,
+      "comparison": "ABSENT"
+    },
+    {
+      "path": "scripts/validate_operational_identity_registry.py",
+      "action": "create",
+      "bytes": 27322,
+      "sha256": "8af64d3d392e7b14ca652a3062def3fd33d6eb48a4a1db338b25d52fa1763a06",
+      "git_blob": "d7281d815f307e7b0940e57bf6d67a6eaf856cee",
+      "github_blob": "d7281d815f307e7b0940e57bf6d67a6eaf856cee",
+      "comparison": "EXACT"
+    },
+    {
+      "path": "sitemap-matter-identity-operational.xml",
+      "action": "create",
+      "bytes": 2642,
+      "sha256": "14198c15f79a61d99a1a55778053c059414e08e26235f9b7115ccd89a80ae687",
+      "git_blob": "8eff96e895f5741bbc89892902e6cf623770edac",
+      "github_blob": "8eff96e895f5741bbc89892902e6cf623770edac",
+      "comparison": "EXACT"
+    }
+  ],
+  "sync_back": "BLOCKED_PENDING_GITLAB_ACCESS_AND_TWO_WAY_RECONCILIATION",
+  "boundary": "The missing 28 final files were not recovered verbatim. Recovered source candidates do not reconstruct the historical 515-ID registry or 62-act ledger. Differing files must preserve newer GitHub changes."
+}
