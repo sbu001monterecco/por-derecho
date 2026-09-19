@@ -43,7 +43,6 @@ on:
 permissions:
   actions: read
   contents: read
-  statuses: write
 
 concurrency:
   group: verify-dp1901-dip2-live-origin-${{ github.ref }}
@@ -299,46 +298,6 @@ jobs:
           },sort_keys=True))
           if pending:
             raise SystemExit("live byte mismatches: "+", ".join(sorted(pending)))
-          PY
-
-      - name: Publish DP1901/DIP2 deployment commit status
-        if: always()
-        env:
-          VERIFY_OUTCOME: ${{ steps.verify_live.outcome }}
-        run: |
-          python3 - <<'PY'
-          import json
-          import os
-          import urllib.request
-
-          ok=os.environ["VERIFY_OUTCOME"]=="success"
-          repository=os.environ["REPOSITORY"]
-          sha=os.environ["TARGET_SHA"]
-          run_id=os.environ["RUN_ID"]
-          payload={
-            "state":"success" if ok else "failure",
-            "target_url":f"https://github.com/{repository}/actions/runs/{run_id}",
-            "description":(
-              "DP1901/DIP2 exact Pages SHA and 8 public source bytes verified"
-              if ok else
-              "DP1901/DIP2 exact Pages/live-byte verification failed"
-            ),
-            "context":"pages-propagation/dp1901-dip2",
-          }
-          req=urllib.request.Request(
-            f"https://api.github.com/repos/{repository}/statuses/{sha}",
-            data=json.dumps(payload).encode("utf-8"),
-            method="POST",
-            headers={
-              "Accept":"application/vnd.github+json",
-              "Authorization":f"Bearer {os.environ['GH_TOKEN']}",
-              "Content-Type":"application/json",
-              "X-GitHub-Api-Version":"2022-11-28",
-              "User-Agent":"Por-Derecho-DP1901-DIP2-Live-Verifier/1.0",
-            },
-          )
-          with urllib.request.urlopen(req,timeout=30) as response:
-            print(response.read().decode("utf-8","replace"))
           PY
 
       - name: Upload deployment readback evidence
