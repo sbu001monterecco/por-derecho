@@ -21,7 +21,7 @@
   - page 2 primary: `f2d9643127b131dd0bbe51523ab0f77099e38bc767f14b5c9f9b33a1d933699c`
   - page 3 primary: `98c9607be6ed7769ed60b7162a8ffb424ee5653a8e32b0c82e5d437ffa634251`
   - page 3 alternate: `714a4044a0ce3ca02887b232e012f8eb05153036340ab324a7b89d4f45a16ba8`
-- Re-check corrections: the paper reads `no constituyó` (not `no constituyen`) and `objetivable` (not `objetivado`).
+- Re-check corrections from the clearer 19-Sep photographs: the paper reads literally `no constituyo` (without accent, not `no constituyen`), `y ello pese que` (not `y ello pese a que`), `objetivable` (not `objetivado`) and `ante este Órgano Judicial` (not `ante éste Órgano Judicial`). The transcription preserves the visible source wording rather than normalising grammar or orthography.
 
 ## Página 1 de 3
 
@@ -35,9 +35,9 @@ En Las Palmas de Gran Canaria, a 14 de septiembre de 2026.
 
 ### FUNDAMENTOS DE DERECHO
 
-PRIMERO.- Cuestiona el denunciante en el concurso Ordinario nº 36/12 de la Plaza de lo Mercantil nº 1 de esta Ciudad las resoluciones judiciales consistentes en, el auto de 12 de Septiembre de 2025 que desestima la solicitud de separación de la Administración Concursal formulada por Aweswell Limited porque no entró a analizar ninguno de los hechos que exponía por haber estimado el Magistrado una supuesta falta de legitimación activa de Aweswell Limited y ello pese a que reconocía en el auto que la separación del administrador concursal puede acordarse de oficio y, pese a que el juez del concurso ostenta funciones de tutela y supervisión declinó examinar el fondo de las alegaciones, y el auto de fecha 11 de Noviembre de 2025, por el que se desestiman los recursos de reposición interpuestos por Luchy Playa Blanca S.L.U. y Aweswell Limited confirmando el anterior, porque entiende que el Magistrado se aparta deliberadamente del deber legal de supervisión que impone el Texto refundido de la Ley Concursal.
+PRIMERO.- Cuestiona el denunciante en el concurso Ordinario nº 36/12 de la Plaza de lo Mercantil nº 1 de esta Ciudad las resoluciones judiciales consistentes en, el auto de 12 de Septiembre de 2025 que desestima la solicitud de separación de la Administración Concursal formulada por Aweswell Limited porque no entró a analizar ninguno de los hechos que exponía por haber estimado el Magistrado una supuesta falta de legitimación activa de Aweswell Limited y ello pese que reconocía en el auto que la separación del administrador concursal puede acordarse de oficio y, pese a que el juez del concurso ostenta funciones de tutela y supervisión declinó examinar el fondo de las alegaciones, y el auto de fecha 11 de Noviembre de 2025, por el que se desestiman los recursos de reposición interpuestos por Luchy Playa Blanca S.L.U. y Aweswell Limited confirmando el anterior, porque entiende que el Magistrado se aparta deliberadamente del deber legal de supervisión que impone el Texto refundido de la Ley Concursal.
 
-Además aporta y ordena un núcleo cronológico y documental más amplio, anterior a 2025, que no constituyó el objeto delimitado de las Diligencias de Investigación Preprocesales nº 2/26 incoadas por Decreto de 11 de Febrero de 2026 archivadas por Decreto de 6 de Marzo de 2026.
+Además aporta y ordena un núcleo cronológico y documental más amplio, anterior a 2025, que no constituyo el objeto delimitado de las Diligencias de Investigación Preprocesales nº 2/26 incoadas por Decreto de 11 de Febrero de 2026 archivadas por Decreto de 6 de Marzo de 2026.
 
 SEGUNDO.- El delito de prevaricación del artículo 446 del actual Código Penal, exige como requisitos:
 
@@ -71,7 +71,7 @@ SE DECRETA EL SOBRESEIMIENTO LIBRE Y EL ARCHIVO DE LAS PRESENTES DILIGENCIAS.
 
 ### MODO DE IMPUGNACIÓN
 
-Notifíquese a las partes, a quienes pueda causar perjuicio y al M. Fiscal, haciéndoles saber que contra el auto cabe interponer, ante éste Órgano Judicial, RECURSO DE REFORMA en el plazo de los TRES DÍAS siguientes a su notificación y/o RECURSO DE APELACIÓN, subsidiariamente con el de reforma o por separado, en este caso, dentro de los CINCO DÍAS siguientes a la notificación, previniendo a las víctimas que podrán recurrir este Auto de sobreseimiento dentro del plazo de VEINTE DÍAS, aunque no se hubieran mostrado como parte en la causa, una vez firme, archívense las presentes actuaciones.
+Notifíquese a las partes, a quienes pueda causar perjuicio y al M. Fiscal, haciéndoles saber que contra el auto cabe interponer, ante este Órgano Judicial, RECURSO DE REFORMA en el plazo de los TRES DÍAS siguientes a su notificación y/o RECURSO DE APELACIÓN, subsidiariamente con el de reforma o por separado, en este caso, dentro de los CINCO DÍAS siguientes a la notificación, previniendo a las víctimas que podrán recurrir este Auto de sobreseimiento dentro del plazo de VEINTE DÍAS, aunque no se hubieran mostrado como parte en la causa, una vez firme, archívense las presentes actuaciones.
 
 Así lo dispone, manda y firma D./Dña. LUIS FRANCISCO GALVÁN MESA, Magistrado-Juez de la Plaza Nº 6 del Tribunal de Instancia (Sección Instrucción) de Las Palmas de Gran Canaria.
 
