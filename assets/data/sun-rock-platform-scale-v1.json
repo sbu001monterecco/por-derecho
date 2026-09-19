@@ -1,11 +1,14 @@
 {
   "schema": "por-derecho.sun-rock-platform-scale.v1",
-  "control_date": "2026-09-16",
+  "control_date": "2026-09-19",
   "status": "ILLUSTRATIVE_STABILISED_MANAGEMENT_SCENARIO_NOT_FORECAST",
   "purpose": "Public-safe scale model for the prospective Sun Rock two-hotel platform and its institutional-banking / private-capital logic.",
   "architecture": {
-    "platform": "Sun Rock",
-    "uk_holdco_sponsor": "Aweswell Limited",
+    "legal_uk_holdco_sponsor": "Aweswell Limited",
+    "commercial_group_platform": "Sun Rock",
+    "sun_rock_legal_status": "Commercial hospitality and investment group/platform identity; not represented as a separate incorporated parent company or automatic borrower",
+    "project_sun_rock_public_programme": "Public programme/site umbrella coordinating recovery, future-business and public-interest narratives; not an asset-owning or financing vehicle",
+    "project_structure": "Individual ring-fenced hotel ProjectCos with separate equity, debt, assets, accounts, cash flows, security, governance and underwriting",
     "new_hotel_route": "Montaña Roja / Playa Blanca preferred current route, subject to transaction, planning, technical and financing work",
     "recovery_route": "Sun Park / MYND Yaiza recovery pursued separately and only consolidated if and to the extent lawful control/economic rights are restored"
   },
@@ -25,7 +28,7 @@
       "sun_park_revenue": 16,
       "combined_revenue": 40,
       "combined_operating_ebitda": 10,
-      "combined_ebitda_margin_percent": 25.0,
+      "combined_ebitda_margin_percent": 25,
       "indicative_gross_hotel_asset_base": 125
     },
     "central": {
@@ -41,7 +44,7 @@
       "sun_park_revenue": 24,
       "combined_revenue": 58,
       "combined_operating_ebitda": 18,
-      "combined_ebitda_margin_percent": 31.0,
+      "combined_ebitda_margin_percent": 31,
       "indicative_gross_hotel_asset_base": 200
     }
   },
@@ -97,5 +100,6 @@
     "Do not treat a future five-star 300-unit concept as a current planning entitlement or approved room count.",
     "Do not use future scale as a substitute for current lender/investor security.",
     "Keep the Sun Park recovery and Montaña Roja development tracks legally and financially separate until a lawful basis exists to consolidate them."
-  ]
+  ],
+  "terminology_rule": "Aweswell Limited is the legal UK HoldCo/Sponsor. Sun Rock is the commercial hospitality and investment group/platform identity. Individual hotels use their own legal ProjectCos. Project Sun Rock is the wider public programme/site umbrella."
 }
