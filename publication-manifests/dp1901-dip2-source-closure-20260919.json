@@ -3,7 +3,7 @@
   "schema_version": "1.0.0",
   "publication_id": "PD-DP1901-DIP2-SOURCE-CLOSURE-20260919-01",
   "control_date": "2026-09-19",
-  "current_state": "PR_OPEN",
+  "current_state": "LIVE_VERIFIED",
   "owner": "Project Sun Rock / Por Derecho",
   "audit_base_main_sha": "1218d40864e735fee22b9c3fcae78b95018605b0",
   "controlling_substantive_state": "PROCEDURAL_IDENTITY_COLLISION_OPEN — DIRECTION NOT CERTIFIED",
@@ -82,7 +82,7 @@
   ],
   "continuity_audit": "archive/THREAD_CONTINUITY_PRESERVATION_AUDIT_DP1901_DIP2_19SEP2026.md",
   "gitlab_parity": "PENDING_ACCESS_RESTORATION — newer GitHub state controls recovery until reviewed reconciliation",
-  "state": "SOURCE_PRESERVED_LIVE_VERIFIER_PENDING_MERGE",
+  "state": "LIVE_VERIFIED_SOURCE_ROUTES_EXACT_BYTES",
   "validation": {
     "evidence": [
       "PR #1574 merged DP1901/DIP2 source closure and routing reconciliation",
@@ -93,7 +93,37 @@
       "PR #1587 reviewed head: Validate audience experience success",
       "PR #1587 reviewed head: Off-GitHub Preservation Snapshot success",
       "PR #1592 later continuity reviewed head: Release acceptance, Publication integrity and Off-GitHub Preservation success",
-      ".github/workflows/verify-dp1901-dip2-live-origin.yml"
+      ".github/workflows/verify-dp1901-dip2-live-origin.yml",
+      "Verify DP1901 DIP2 live origin run 35411734472 / #9 — success",
+      "GitHub Pages exact-SHA run 35411598728 / #1588 for fd9baa22040218c95a887aab41032d1d74b00195 — success",
+      "Exact live readback — 8/8 controlled resources byte-identical to source"
     ]
+  },
+  "merge_sha": "fd9baa22040218c95a887aab41032d1d74b00195",
+  "deployment_evidence": {
+    "platform": "GitHub Pages",
+    "target_sha": "fd9baa22040218c95a887aab41032d1d74b00195",
+    "pages_run_id": 35411598728,
+    "pages_run_number": 1588,
+    "pages_conclusion": "success",
+    "verifier_workflow": "Verify DP1901 DIP2 live origin",
+    "verifier_run_id": 35411734472,
+    "verifier_run_number": 9,
+    "verifier_conclusion": "success",
+    "live_state": "LIVE_BYTES_VERIFIED",
+    "verified_resources": 8,
+    "total_resources": 8,
+    "verified_scope": [
+      "Spanish DP 1901 main page",
+      "English DP 1901 main page",
+      "Spanish 14-Sep DP1901 Auto page",
+      "English 14-Sep DP1901 order page",
+      "Spanish DIP 2/2026 page",
+      "English DIP 2/2026 page",
+      "DP1901 public controlled transcription PDF",
+      "DIP2 6-Mar public redacted decree PDF"
+    ],
+    "verification_successor_pr": 1597,
+    "boundary": "Exact live-byte verification proves deployment identity of the controlled public resources; it does not prove allegations, liability, authority-file completeness or legal filing/service."
   }
 }
