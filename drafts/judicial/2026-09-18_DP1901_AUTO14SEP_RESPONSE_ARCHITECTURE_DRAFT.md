@@ -128,3 +128,9 @@ This document is an internal response architecture. It is not a filed recurso, n
 - `evidence/fiscalia/dip-2-2026/full-text/oficio-notificacion-dip-2-2026-09mar2026-public-transcription.md`
 - `evidence/fiscalia/dip-2-2026/full-text/comunicacion-actualizacion-dip-2-2026-11mar2026-transcription.md`
 - `evidence/fiscalia/dip-2-2026/DIP2_INACCURACIES_ERRORS_AUDIT_18SEP2026.md`
+
+
+
+## 19 September clarification — factual continuity only
+
+Read the 19-September presenter's-clarification addendum in `archive/DP1901_EG745_FISCAL_REPORT_ROUTING_COLLISION_CONTROL_18SEP2026.md` and the `presenter_clarification_20260919` field in the existing three-track control. Preserve Gil's firsthand paper-custody account, his categorical private-actor-first position, the uncertainty in the date of his AC-opening confirmation, and the separate missing official electronic chronology. Include Ref22/DP1956 in the comparative production scope without alleging that it was the correct destination for Ref24. Keep the 14-Sep Auto's contrary origin characterisation visible. This source update is not filing, service, counsel adoption or a deadline determination.
