@@ -301,7 +301,43 @@
           "appeal_followup_status": "Fiscal_submission_and_Audiencia_remittal_roll_open",
           "timeline_event_ref": "DP748-2026-20260909-IMPULSO-APELACION",
           "source_confidence": "high_primary_procedural_source",
-          "verification_status": "signed_filing_and_signed_16sep_court_processing_act_verified"
+          "verification_status": "signed_filing_and_signed_16sep_court_processing_act_verified",
+          "receipt_reconciliation_20260919": {
+            "review_date": "2026-09-19",
+            "status": "TWO_NATIVE_LEXNET_RECEIPTS_VERIFIED_PRINCIPAL_BYTE_LINK_OPEN",
+            "source_note": "ops/recovery-cross-thread/la-laguna-all-party-20260919/REVIEW.md",
+            "proceeding": "DP 748/2026",
+            "court": "Plaza nº 4, Sección Instrucción, Tribunal de Instancia de San Cristóbal de La Laguna",
+            "receipts": [
+              {
+                "receipt_sha256": "04818561aa74fb0a89baa2a7f416a9ad7ba8d4c5360ea688aab4bd82134199f5",
+                "receipt_bytes": 177856,
+                "transmission_datetime_source": "2026-09-09 15:06:30",
+                "time_basis": "LexNET peninsular time",
+                "principal_hash_printed": "858041ffc8eda308d75b41b90bc7a8e9f915d888ad668bcbbe3ac87408338748",
+                "listed_document_roles": [
+                  "principal"
+                ]
+              },
+              {
+                "receipt_sha256": "61f2f41aa9b0e70ecd821987c03a4b74640d9e244228f825d4d28eb21d6698bf",
+                "receipt_bytes": 177999,
+                "transmission_datetime_source": "2026-09-09 16:36:40",
+                "time_basis": "LexNET peninsular time",
+                "principal_hash_printed": "1f64b1d425e13fda1bfb365ecfc1cdf405a285aeae6a39c8e67582b404996f29",
+                "annex_hash_printed": "39b1d3bb535070c039e05cd4fc2774ba76440f00da2582830cc385ce95ed4d9f",
+                "listed_document_roles": [
+                  "principal",
+                  "annex"
+                ]
+              }
+            ],
+            "existing_signed_copy_sha256": "d501087730c3f276d3bc6afecd5d1250ccb548f3059f2b57eeb8a174c25087cd",
+            "match_to_existing_signed_copy": "NEITHER_PRINTED_PRINCIPAL_HASH_EQUALS_EXISTING_SIGNED_COPY_SHA256",
+            "review_method": "Original RFC2822 transport recovered through authorised read; both native PDF attachments hashed; all four pages text-extracted; page-one tables visually verified. Cryptographic signature/certificate validation not performed.",
+            "boundary": "The two receipts evidence two transmissions. They do not by themselves identify either complete eight-page principal with the differently hashed current signed copy, or prove Audiencia remittal, roll, merits or outcome. Portal classification as appeal does not convert an impulso of an existing subsidiary appeal into a new appeal.",
+            "next_step": "Recover both exact receipt-listed native principals and the later annex; compare full texts and hashes, retaining variants and transmission sequence."
+          }
         }
       ]
     },

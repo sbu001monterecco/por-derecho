@@ -218,13 +218,24 @@
       "professional": null,
       "proceeding_id": "ETJ 163/2020",
       "priority": "P0",
-      "what_missing": "Current certified status of the 26-Jun reposición, any adjudication decree, assignment of remate, registration, possession, payment/deposit and resulting balance.",
+      "what_missing": "Current certified adjudication, remate assignment and recipient, registration, possession, payment/deposit and resulting balance. The 26-Jun reposición was dismissed by the located 17-Sep-2026 Auto; that decision is no longer missing.",
       "why_it_matters": "Judicial error, harmful resolution, completion, loss and available civil remedies cannot be assessed from requests alone.",
       "existence_evidence_ref": "ETJ163-SRC-CUATRECASAS-20260210; ETJ163-SRC-DIOR-20260728",
       "likely_source": "certified ETJ docket, court testimony, LexNET notifications and Registro nº 1 de Tías",
-      "search_performed": "Sources through the 28-Jul admission/transfer act reviewed; no later decision located.",
-      "next_retrieval_route": "Request certified procedural index and testimony of every post-28-Jul act plus current registry status.",
-      "status": "OPEN"
+      "search_performed": "19-Sep reconciliation: current DP748 control records the 17-Sep ETJ Auto, received 18-Sep, dismissing the reposición against refusal to suspend. Earlier no-later-decision wording is preserved in history_20260919. No completed adjudication/cession/registration/possession is inferred.",
+      "next_retrieval_route": "Obtain a certified post-28-Jul procedural index including the 17-Sep decision, subsequent acts and current property-registry status, with the assignment, recipient, consideration, balance and possession chain.",
+      "status": "OPEN",
+      "history_20260919": {
+        "prior_as_of": "2026-09-01",
+        "previous_fields": {
+          "what_missing": "Current certified status of the 26-Jun reposición, any adjudication decree, assignment of remate, registration, possession, payment/deposit and resulting balance.",
+          "existence_evidence_ref": "ETJ163-SRC-CUATRECASAS-20260210; ETJ163-SRC-DIOR-20260728",
+          "search_performed": "Sources through the 28-Jul admission/transfer act reviewed; no later decision located.",
+          "next_retrieval_route": "Request certified procedural index and testimony of every post-28-Jul act plus current registry status."
+        },
+        "correction_basis": "assets/data/dp748-2026-appeal-reopening-control-v1.json; 17-Sep-2026 ETJ Auto received 18-Sep-2026, SHA256 020b5313c93565cbb536d5eb40feca0e0e7755c20a5e0bada3b91d863a0c6652"
+      },
+      "reconciliation_ref": "ops/recovery-cross-thread/la-laguna-all-party-20260919/REVIEW.md"
     },
     {
       "gap_id": "CP-GAP-017",
@@ -254,5 +265,11 @@
       "next_retrieval_route": "Obtain both complete certified files and build a separate mandate-duty-causation-loss limitation/MASC matrix.",
       "status": "OPEN"
     }
-  ]
+  ],
+  "scoped_update_20260919": {
+    "changed_gap_ids": [
+      "CP-GAP-016"
+    ],
+    "boundary": "Other entries retain their own historical review dates and status. No global completeness or closure is claimed."
+  }
 }
