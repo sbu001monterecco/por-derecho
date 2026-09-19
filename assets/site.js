@@ -95,3 +95,15 @@
   legacy.addEventListener('error', loadMatkator8584Release, {once:true});
   document.head.appendChild(legacy);
 })();
+
+
+/* MONTELANZA-ACCOUNTS-DISCOVERY-20260919 */
+(() => {
+  const current = document.currentScript;
+  if (!current || document.querySelector('script[data-montelanza-accounts-discovery-loader]')) return;
+  const module = document.createElement('script');
+  module.src = new URL('montelanza-accounts-discovery-20260919.js?v=20260919a', current.src).href;
+  module.async = false;
+  module.setAttribute('data-montelanza-accounts-discovery-loader', '20260919');
+  document.head.appendChild(module);
+})();
