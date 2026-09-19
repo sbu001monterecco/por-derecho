@@ -22,6 +22,8 @@ GitLab `main` remains the canonical Por Derecho repository when it is accessible
 - `es/ministerio-fiscal/registro-canonico/index.html`
 - `en/public-prosecution-service/canonical-register/index.html`
 - `scripts/validate_ministerio_fiscal_canonical_register_20260919.py`
+- `docs/deletion-audits/2026-09-19-ministerio-fiscal-canonical-register-thread-continuity.md`
+- `archive/MINISTERIO_FISCAL_THREAD_PRESERVATION_MANIFEST_19SEP2026.json`
 - hub navigation updates pointing to the new register
 - any subsequent corrections committed to the same GitHub lineage before GitLab restoration
 
