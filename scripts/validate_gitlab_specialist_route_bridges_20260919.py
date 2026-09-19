@@ -81,7 +81,7 @@ def validate() -> list[str]:
         "not exact gitlab source recovery",
         "noindex",
         "rendered gitlab html",
-        "newer github source-controlled corrections",
+        "current github source-controlled facts supersede",
         "authenticated restoration",
     ):
         if token not in rules:
