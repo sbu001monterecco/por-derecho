@@ -107,14 +107,14 @@ jobs:
               return Path(path).read_text(encoding='utf-8').casefold()
 
           checks = [
-              ('Control 22 locator boundary ES', 'es/control-22-denuncia-administrador-concursal/index.html', 'control 22 ≠ dp 1956/2026'),
-              ('Control 22 locator boundary EN', 'en/control-22-insolvency-administrator-complaint/index.html', 'control 22 ≠ dp 1956/2026'),
+              ('Control 22 locator boundary ES', 'es/control-22-denuncia-administrador-concursal/index.html', 'referencia diaria n.º 22 no es el número de dp'),
+              ('Control 22 locator boundary EN', 'en/control-22-insolvency-administrator-complaint/index.html', 'daily reference no. 22 is not the dp number'),
               ('Control 22 adjudicative boundary ES', 'es/control-22-denuncia-administrador-concursal/index.html', 'no afirma que el administrador concursal haya cometido delito'),
               ('Control 22 adjudicative boundary EN', 'en/control-22-insolvency-administrator-complaint/index.html', 'does not state that the insolvency administrator committed an offence'),
-              ('Control 24 not querella ES', 'es/control-24-denuncia-juez-concurso-36-2012/index.html', 'control 24 ≠ querella'),
-              ('Control 24 not formal complaint EN', 'en/control-24-insolvency-judge-complaint-36-2012/index.html', 'control 24 ≠ formal private-prosecution complaint'),
-              ('Control 24 official status gap ES', 'es/control-24-denuncia-juez-concurso-36-2012/index.html', 'reparto/admisión/archivo: no verificados'),
-              ('Control 24 official status gap EN', 'en/control-24-insolvency-judge-complaint-36-2012/index.html', 'allocation/admission/dismissal: unverified'),
+              ('Daily reference 24 not querella ES', 'es/control-24-denuncia-juez-concurso-36-2012/index.html', 'referencia diaria n.º 24 ≠ querella'),
+              ('Daily reference 24 not formal complaint EN', 'en/control-24-insolvency-judge-complaint-36-2012/index.html', 'daily reference no. 24 ≠ formal private-prosecution complaint'),
+              ('Daily reference 24 status gap ES', 'es/control-24-denuncia-juez-concurso-36-2012/index.html', 'ruta original no verificada'),
+              ('Daily reference 24 status gap EN', 'en/control-24-insolvency-judge-complaint-36-2012/index.html', 'original route unverified'),
               ('shared evidence boundary register', 'data/control-22-24-interconnection-register.json', 'shared evidence does not equal shared responsibility'),
               ('filing proof boundary register', 'data/control-22-24-interconnection-register.json', 'prepared, reviewed or sent to counsel does not equal filed')
           ]

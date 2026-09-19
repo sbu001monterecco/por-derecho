@@ -12,7 +12,7 @@ The underlying source-closure and routing-reconciliation work is now merged on G
 
 The 14 September 2026 order in DP 1901/2026 (NIG 3501643220260016977; IUP LI2026017152), now fully transcribed from the three source photographs with page-level SHA-256 control, states that the proceeding was opened on a complaint for alleged judicial prevarication, records that a Ministerio Fiscal report dated 29 July 2026 sought archive, and orders sobreseimiento libre/archive.
 
-This draft does not treat the underlying Fiscal report as produced and does not fix any appeal deadline from the order date alone.
+This draft does not treat the underlying Fiscal report as produced and does not fix any appeal deadline from the order date alone. The paper copy of the Auto was received on **18 September 2026**, not electronically; the photographic reproduction is not a substitute for the authentic electronic copy or formal service metadata.
 
 ## Ground 1 — procedural identity and provenance before merits
 
@@ -23,7 +23,9 @@ Require the court record to identify:
 3. the destination/reparto of the autonomous 25 June private-actor filing (daily reference 21);
 4. the destination/reparto of the 18 June judge-related filing (daily reference 24) and its 25 June dependent supplement;
 5. the filing and electronic incorporation status of the 9 July private-actor amplification;
-6. every act of joinder, reassignment, accumulation or segregation.
+6. every act of joinder, reassignment, accumulation or segregation;
+7. the electronic object/party classification of DP 1901 at creation and on 9 Jul, 12 Jul, 29 Jul and 14 Sep, including every metadata change and the responsible user/account/event;
+8. the exact object description and remitting metadata supplied to Ministerio Fiscal.
 
 The response should state an **identity collision**, not assume the direction of error.
 
@@ -36,6 +38,7 @@ The June/July source closure materially strengthens this ground and should be pl
 - **25 Jun:** separate stamped 13-page supplement expressly requests joinder to the 18-Jun daily-reference-24 judge complaint.
 - **25 Jun contemporaneous report:** reference 24 was reportedly still at Decanato and had not yet been sent to destination. Attribute this to the contemporaneous account; do not present it as an official reparto certificate.
 - **9 Jul:** ATLANTE officially shows DP 1901/Plaza 6 and DP 1956/Plaza 1 with Gil as denunciante; it does not state the defendants/subject.
+- **9-Jul literal contemporaneous mapping:** an email to counsel records the then-operational understanding as `1901: Contra CAM y otras partes de la Comunidad de Propietarios` and `1956: Contra la AC`. This is contemporaneous party evidence, not a certified reparto record.
 - **9 Jul:** separate stamped cover expressly tenders private-actor amplification material under DP 1901/Plaza 6.
 - **10–12 Jul contemporaneous report:** Plaza 6 was being approached about “la denuncia contra CAM y la CP” identified as 1901/2026, and court staff reportedly described a forthcoming providencia/traslado to Fiscalía.
 - **12 Jul official providencia:** the same DP/NIG/IUP sends the admission question to Fiscalía in relation to DIP 2/2026.

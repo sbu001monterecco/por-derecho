@@ -15,6 +15,11 @@
     .trim()
     .replace(/\s+/g, ' ');
 
+  const c21Terms = [
+    'control 21','referencia 21','daily reference 21','private actor complaint','denuncia actores privados',
+    'cinco actores privados','five private actors','cam comunidad 1901','1901 cam comunidad',
+    '25 junio 2026 actores privados','9 julio 1901 actores privados'
+  ];
   const c22Terms = [
     'control 22','dp 1956','1956 2026','nig 3501643220260016826','iup li2026016921',
     'denuncia administrador concursal','insolvency administrator complaint','borja rodriguez batllori',
@@ -42,6 +47,15 @@
 
   const definitions = lang === 'en' ? [
     {
+      id: 'CONTROL-21-PRIVATE-20260919',
+      terms: c21Terms.concat(sharedTerms),
+      href: '/por-derecho/en/daily-reference-21-private-actor-complaint/',
+      badge: 'Autonomous filing',
+      code: 'DAILY REF. 21 · 25 JUN 2026',
+      title: 'Daily Ref. 21 · five-private-actor complaint',
+      summary: 'Autonomous 25 June filing; private material tendered under DP 1901 on 9 July; original reparto bridge remains uncertified.'
+    },
+    {
       id: 'CONTROL-22-DP1956-20260904',
       terms: c22Terms.concat(sharedTerms),
       href: '/por-derecho/en/control-22-insolvency-administrator-complaint/',
@@ -60,6 +74,15 @@
       summary: '79-page signed package, 25 June supplement, five documentary modules, official allocation/outcome still unconfirmed, and formal private-complaint boundary.'
     }
   ] : [
+    {
+      id: 'CONTROL-21-PRIVATE-20260919',
+      terms: c21Terms.concat(sharedTerms),
+      href: '/por-derecho/es/referencia-21-denuncia-actores-privados/',
+      badge: 'Presentación autónoma',
+      code: 'REF. DIARIA 21 · 25 JUN 2026',
+      title: 'Referencia diaria 21 · denuncia contra cinco actores privados',
+      summary: 'Presentación autónoma de 25 de junio; material privado presentado bajo DP 1901 el 9 de julio; puente de reparto original no certificado.'
+    },
     {
       id: 'CONTROL-22-DP1956-20260904',
       terms: c22Terms.concat(sharedTerms),
@@ -107,8 +130,8 @@
     if (added > 0) {
       results.hidden = false;
       if (status) status.textContent = lang === 'en'
-        ? 'Control 22 / Control 24 records located.'
-        : 'Registros Control 22 / Control 24 localizados.';
+        ? 'Control 21 / Control 22 / Control 24 records located.'
+        : 'Registros Control 21 / Control 22 / Control 24 localizados.';
     }
     return true;
   };

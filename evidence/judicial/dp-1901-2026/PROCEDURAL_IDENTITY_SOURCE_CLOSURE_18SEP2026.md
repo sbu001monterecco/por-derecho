@@ -64,7 +64,10 @@ That correspondence proves the contemporaneous understanding/information being a
 
 ### 10–12 July — contemporaneous court-contact account and the signed providencia diverge in subject characterisation
 
-A contemporaneous 12-Jul email to counsel reports that on the preceding Friday Gil had returned to **Juzgado de Instrucción n.º 6** regarding “la denuncia contra CAM y la CP” identified as 1901/2026; staff reportedly confirmed a providencia existed and would give traslado to Fiscalía when signed.
+The contemporaneous record is now stronger than a generic later recollection. In an email sent on **9 July 2026** to counsel, the then-operational mapping was written expressly as **“1901: Contra CAM y otras partes de la Comunidad de Propietarios”** and **“1956: Contra la AC.”** A separate 9-Jul email to the procuradora reported that the Decanato had supplied an ATLANTE copy showing the two already-opened complaints and sought the formal notification of opening. These are contemporaneous party communications, not a certified reparto certificate, but they fix what was being understood and acted upon at the time.
+
+
+A contemporaneous 12-Jul email to counsel reports that on the preceding Friday Gil had returned to **Juzgado de Instrucción n.º 6** regarding “la denuncia contra CAM y la CP” identified as 1901/2026; staff reportedly confirmed a providencia existed and would give traslado to Fiscalía when signed. The paper providencia later supplied from the court office is the same DP 1901/NIG/IUP and bears the electronic signature of Luis Francisco Galván Mesa. Gil's account that the paper copy was handed over informally by the office, without formal service or receipt signature, is preserved as a party account and not promoted to a notification fact.
 
 The signed 12-Jul providencia in DP 1901/NIG/IUP then formally sent the admission question to Ministerio Fiscal for five days **in relation to DIP 2/2026**.
 
@@ -81,7 +84,7 @@ The source set now supports all of the following without relying on hindsight:
 1. the 18-Jun judge complaint and 25-Jun private-actor complaint were autonomous filings;
 2. the 25-Jun judge supplement expressly belonged to daily reference 24;
 3. private-actor material was physically tendered under DP 1901/Plaza 6 on 9 Jul;
-4. contemporaneous July communications treated DP 1901 operationally as the CAM/private/Community lane;
+4. contemporaneous July communications treated DP 1901 operationally as the CAM/private/Community lane, including the literal 9-Jul mapping `1901: Contra CAM y otras partes de la Comunidad de Propietarios`;
 5. the official 12-Jul providencia nevertheless linked DP 1901 to DIP 2/2026;
 6. the 14-Sep Auto later characterised DP 1901 as alleged judicial prevaricación.
 
@@ -111,7 +114,9 @@ To close direction, obtain:
 5. every act of joinder, reassignment, accumulation, remisión or segregation;
 6. the exact electronic corpus/index sent to Ministerio Fiscal before the 29-Jul report;
 7. the signed 29-Jul Fiscal report, author, assignment, reasoning and any review/visado;
-8. native/certified 14-Sep Auto and legally operative notification/access metadata.
+8. native/certified 14-Sep Auto and legally operative notification/access metadata;
+9. the DP 1901 electronic object/party classification at creation and on 9 Jul, 12 Jul, 29 Jul and 14 Sep, including every metadata change and the responsible user/account/event;
+10. the exact remitting metadata by which Plaza 6 described DP 1901 when sending the admission question/corpus to Ministerio Fiscal.
 
 ## Litigation consequence
 
