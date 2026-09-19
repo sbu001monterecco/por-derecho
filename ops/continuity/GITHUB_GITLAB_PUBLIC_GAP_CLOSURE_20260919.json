@@ -61,6 +61,16 @@
       "boundary": "Current GitHub route and live outbound-link explorer. It does not recreate GitLab's full-text/link dataset or counters."
     },
     {
+      "id": "DEEP_TEXT_SEARCH",
+      "status": "FUNCTIONAL_GITHUB_EQUIVALENT",
+      "github_routes": [
+        "en/search/index.html",
+        "es/buscar/index.html"
+      ],
+      "github_control": "assets/connected-search-20260919.js",
+      "boundary": "Opt-in same-origin scan reads only currently deployed GitHub Pages visible text and same-project links. It does not query GitLab or private sources, does not recreate GitLab index bytes/counters, and remains a discovery aid rather than an evidential finding."
+    },
+    {
       "id": "POR_DERECHO_OPERATING_STANDARD",
       "status": "FUNCTIONAL_GITHUB_EQUIVALENT",
       "github_routes": [
