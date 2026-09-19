@@ -1,0 +1,77 @@
+{
+  "schema": "por-derecho.publication-state.v1",
+  "schema_version": "1.0.0",
+  "publication_id": "PD-DP1901-DIP2-SOURCE-CLOSURE-20260919-01",
+  "control_date": "2026-09-19",
+  "current_state": "SOURCE_PRESERVED_LIVE_VERIFICATION_ENFORCED",
+  "owner": "Project Sun Rock / Por Derecho",
+  "audit_base_main_sha": "1218d40864e735fee22b9c3fcae78b95018605b0",
+  "controlling_substantive_state": "PROCEDURAL_IDENTITY_COLLISION_OPEN — DIRECTION NOT CERTIFIED",
+  "source_release": {
+    "pr": 1574,
+    "merge_sha": "3f9b73232083b2fc9fb99e49a69909dfbeaef510"
+  },
+  "interconnectivity_refresh": {
+    "pr": 1587,
+    "merge_sha": "3511759f4d2751229dce6a6c6e293011cf549ad5",
+    "validated_head": "d0deaab4f673b8a9c280e52cdd0e630352961e33",
+    "gates": [
+      "Release acceptance — success",
+      "Publication integrity gate — success",
+      "Validate Fiscalía proceedings interconnectivity — success",
+      "Validate audience experience — success",
+      "Off-GitHub Preservation Snapshot — success"
+    ]
+  },
+  "expected_routes": [
+    "es/dp-1901-2026/index.html",
+    "en/dp-1901-2026/index.html",
+    "es/dp-1901-2026-auto-14-septiembre-2026/index.html",
+    "en/dp-1901-2026-order-14-september-2026/index.html",
+    "es/fiscalia-dip-2-2026/index.html",
+    "en/fiscalia-dip-2-2026/index.html"
+  ],
+  "public_binary_sources": [
+    "evidence/judicial/dp-1901-2026/public-pdfs/auto-14sep2026-public-controlled-transcription.pdf",
+    "evidence/fiscalia/dip-2-2026/public-pdfs/decreto-archivo-dip-2-2026-06mar2026-public-redacted.pdf"
+  ],
+  "source_denominators": {
+    "private_actor_lane_pages": [86, 26, 19],
+    "judge_total_package_pages": 79,
+    "judge_principal_document_bundle_pages": 31,
+    "judge_principal_pleading_pages": 27,
+    "judge_front_matter_pages": 4,
+    "judge_dependent_supplement_pages": 13
+  },
+  "deployment_control": {
+    "platform": "GitHub Pages",
+    "workflow_name": "Verify DP1901 DIP2 live origin",
+    "workflow_file": ".github/workflows/verify-dp1901-dip2-live-origin.yml",
+    "commit_status_context": "pages-propagation/dp1901-dip2",
+    "verification_rule": "Successful exact-SHA Pages deployment plus byte-identical readback of six HTML routes and two public PDF sources.",
+    "evidence_retention": "30-day GitHub Actions artifact per verification run"
+  },
+  "privacy": {
+    "raw_private_native_sources_committed": false,
+    "private_originals_remain_in_connected_custody": true,
+    "public_derivatives_are_not_substitutes_for_native_authority_records": true
+  },
+  "legal_work_product": {
+    "dp1901_response_architecture_filed": false,
+    "eg745_successor_filed": false,
+    "cgpj_supervening_event_supplement_filed": false,
+    "ordinary_remedy_deadline_fixed_from_order_date_alone": false
+  },
+  "authority_only_open": [
+    "11-Feb DIP2 opening decree",
+    "complete certified DIP2 file/index and post-11-Mar handling",
+    "DP1901 initiating document and certified reparto/ingestion history",
+    "formal joinder/reassignment/remittal/accumulation/segregation acts",
+    "9-Jul private-actor electronic-incorporation status",
+    "exact corpus/index sent to Ministerio Fiscal",
+    "signed 29-Jul Fiscal report, author, assignment and reasoning",
+    "native/certified 14-Sep Auto and legal notification/access metadata"
+  ],
+  "continuity_audit": "archive/THREAD_CONTINUITY_PRESERVATION_AUDIT_DP1901_DIP2_19SEP2026.md",
+  "gitlab_parity": "PENDING_ACCESS_RESTORATION — newer GitHub state controls recovery until reviewed reconciliation"
+}
