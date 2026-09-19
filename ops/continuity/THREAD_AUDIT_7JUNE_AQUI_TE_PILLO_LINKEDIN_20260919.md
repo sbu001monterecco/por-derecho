@@ -60,7 +60,7 @@ GitHub current main was inspected first. The following expected 10-Sep GitLab-er
 
 Default-branch code search also returned no `Aquí te pillo` / 7-June editorial-visual readiness record.
 
-**Finding:** GitHub does not presently contain the durable 10-Sep visual/readiness package at path parity. Therefore this thread is **NOT deletion-safe at full GitHub-preservation parity** until the exact binary masters (or a source-verifiable equivalent custody route), the provenance map, web derivatives or reconstructable controlled derivatives, and LinkedIn copy are admitted to current GitHub through the active integration lane.
+**Finding:** GitHub does not presently contain the durable 10-Sep visual/readiness package at path parity. Full GitHub byte parity therefore remains open. However, the deletion-safety blocker has now been separately closed by exact-byte preservation of both locked PNG masters in persistent private ChatGPT Library custody, with post-upload SHA-256 and dimensions reverified byte-for-byte. GitHub carries the hashes, provenance, custody receipt and reconstruction rules; the private Library carries the exact binary masters.
 
 ## 4. What is preserved now
 
@@ -76,7 +76,7 @@ This audit itself preserves on GitHub:
 - the remaining UX/social-safety tasks;
 - the rule that the locked masters are immutable and future social/web derivatives are separate assets.
 
-The active ChatGPT runtime also still contains exact-byte copies matching both locked master hashes, but runtime availability is **not** a durable repository custody substitute.
+Exact-byte master custody is now independent of this chat/runtime. Both PNG masters were copied into persistent private ChatGPT Library folder `/Por Derecho/Preservation/7-June-2018-Aqui-te-Pillo/` and then rematerialized and rehashed. Verification results: Toma de control = 2,748,782 bytes, 1122×1402, SHA-256 `b9e1f721230911a6d448e2bdd590c19e3691732bb03b88c23ebd325ea275ec38`; Aquí te pillo = 2,453,636 bytes, 1222×1287, SHA-256 `00cf77d44e35a9d4bcbcb4a9c96da3516e9a797d04fb363a8ae44e56319ebdf8`. This closes the thread-dependent binary-custody blocker without claiming the public GitHub repository itself contains the PNG bytes.
 
 ## 5. Website UX improvement state
 
@@ -117,14 +117,17 @@ The Cambiante LinkedIn draft action observed in the 10-Sep thread accepted one i
 
 No LinkedIn post from this specific two-image sequence was published by the audited thread.
 
-## 7. Preservation gates still open
+## 7. Preservation gates / follow-on work
 
-**P0 — binary custody**
-- admit both exact master PNG bytes to GitHub/private controlled custody or create a source-verifiable equivalent custody record;
-- verify SHA-256 after admission;
-- never silently replace either master.
+**CLOSED — P0 binary custody**
+- both exact master PNG bytes are preserved in persistent private controlled Library custody;
+- both were rematerialized after upload and SHA-256/dimensions reverified;
+- neither locked master may ever be silently replaced.
 
-**P0 — provenance**
+**CLOSED — P0 thread continuity**
+- this GitHub audit plus the machine-readable custody receipt preserve the full thread-specific logic, release history, boundaries, master identities, UX backlog and LinkedIn architecture independently of the chat.
+
+**OPEN — GitHub public-byte parity / provenance reconstruction**
 - restore/admit the 10-Sep visual provenance map (or a current GitHub successor) linking master → derivative(s) → page/social use;
 - record the final Laura-reference treatment as provenance only.
 
@@ -132,26 +135,26 @@ No LinkedIn post from this specific two-image sequence was published by the audi
 - admit exact/reviewed website derivatives or a deterministic reconstruction path;
 - do not call GitHub and historical GitLab byte-equivalent until verified.
 
-**P1 — LinkedIn package**
+**OPEN — P1 LinkedIn package**
 - restore/admit exact final copy;
 - create separate 1080×1350 controlled derivatives;
 - preserve their hashes and parent-master relationship;
 - require owner review before scheduling/publishing.
 
-**P1 — cross-repository reconciliation**
+**OPEN — P1 cross-repository reconciliation**
 - when authenticated GitLab is again available, compare current GitHub against GitLab rather than allowing either historical snapshot to silently overwrite newer work.
 
 ## 8. Continuity/governance verdict
 
 - reasoning continuity: **PASS**
-- exact master identity continuity: **PASS BY HASH / BYTES NOT YET DURABLY ADMITTED TO GITHUB**
+- exact master identity continuity: **PASS — HASH + INDEPENDENT EXACT-BYTE PRIVATE CUSTODY**
 - GitLab historical release continuity: **PASS**
 - GitHub text/governance continuity after this audit: **PASS**
-- GitHub binary/publication parity: **FAIL / OPEN P0**
+- GitHub public binary/publication parity: **OPEN FOLLOW-ON — NOT A THREAD-DELETION BLOCKER**
 - LinkedIn publication readiness: **AMBER — copy/architecture ready; social-safe derivatives still required**
 - external publication authorisation: **NO**
-- thread deletion safety: **HOLD — NOT SAFE TO DELETE IF THIS CHAT IS THE ONLY REMAINING ACCESS TO THE TWO EXACT MASTER BYTES**
+- thread deletion safety: **PASS — SAFE TO DELETE THIS CHAT THREAD**
 
 ## 9. Governance rule for next thread
 
-Start from current GitHub `main`, read `AGENTS.md`, `.github/copilot-instructions.md`, `CURRENT_START_HERE.md`, `ops/CURRENT_COLLABORATION_STATE.json`, Control Tower #1428 and this audit. Work as a worker unless the Control Tower establishes this lane as integrator. Do not publish independently. Preserve the locked master hashes above and close the binary custody gap before declaring this thread fully deletion-safe.
+Start from current GitHub `main`, read `AGENTS.md`, `.github/copilot-instructions.md`, `CURRENT_START_HERE.md`, `ops/CURRENT_COLLABORATION_STATE.json`, Control Tower #1428, this audit and `ops/continuity/7JUNE_EDITORIAL_MASTER_CUSTODY_20260919.json`. Work as a worker unless the Control Tower establishes this lane as integrator. Do not publish independently. The chat thread is no longer required for exact master recovery or continuity.
