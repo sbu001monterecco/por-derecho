@@ -13,6 +13,7 @@ on:
       - 'scripts/validate_audience_experience.py'
       - 'scripts/validate_cam_creditor_control_criminal_lead.py'
       - 'scripts/render_audience_experience.mjs'
+      - 'scripts/render_dp1901_eg745_response_programme.cjs'
       - '.github/workflows/validate-audience-experience.yml'
       - '.github/workflows/validate-cam-creditor-control-criminal-lead.yml'
   push:
@@ -28,6 +29,7 @@ on:
       - 'scripts/validate_audience_experience.py'
       - 'scripts/validate_cam_creditor_control_criminal_lead.py'
       - 'scripts/render_audience_experience.mjs'
+      - 'scripts/render_dp1901_eg745_response_programme.cjs'
       - '.github/workflows/validate-audience-experience.yml'
       - '.github/workflows/validate-cam-creditor-control-criminal-lead.yml'
 
@@ -83,6 +85,11 @@ jobs:
           PSR_BASE_URL: http://127.0.0.1:8000/por-derecho
           PSR_SCREENSHOT_DIR: artifacts/audience-experience-20260823
         run: node scripts/render_audience_experience.mjs
+      - name: Render DP1901 and EG745 response programme on all affected layouts
+        env:
+          PSR_BASE_URL: http://127.0.0.1:8000/por-derecho
+          PSR_RESPONSE_SCREENSHOT_DIR: artifacts/audience-experience-20260823/response-programme
+        run: node scripts/render_dp1901_eg745_response_programme.cjs
       - name: Upload screenshots and metrics
         if: always()
         uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
