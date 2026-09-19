@@ -101,7 +101,7 @@ Therefore the canonical state is:
 
 **REF21_TO_DP1901_CONTEMPORANEOUSLY_CORROBORATED — OFFICIAL_REPARTO_AND_REF24_ASSOCIATION_HISTORY_OUTSTANDING.**
 
-This permits the repository to state that Gil filed the autonomous private-actor complaint on 25 June under daily reference 21 and that his contemporaneous record treated that complaint as the matter that became DP 1901. It does **not** permit the repository to claim that it has independently inspected or certified the court's electronic creation/reparto event or the precise later act that associated the judge-related material with DP 1901.
+This permits the repository to state that Gil filed the autonomous private-actor complaint on 25 June under daily reference 21 and that his contemporaneous record treated that complaint as the matter that became DP 1901. The source set does **not** prove the exact court-system creation/reparto event or the precise later Ref. 24 association mechanism; those remain authority-controlled production targets. It does **not** permit the repository to claim that it has independently inspected or certified the court's electronic creation/reparto event or the precise later act that associated the judge-related material with DP 1901.
 
 ## Residual authority-only production required
 
