@@ -1,0 +1,48 @@
+{
+  "publication_id": "sun-rock-institutional-security-20260919",
+  "owner": "Sun Rock institutional worker / Control Tower 1428",
+  "current_state": "DRAFT",
+  "expected_routes": {
+    "en": [
+      "en/montana-roja/index.html",
+      "en/capital-relationships/index.html",
+      "en/strategic-financial-relationship/index.html",
+      "en/index.html"
+    ],
+    "es": [
+      "es/montana-roja/index.html",
+      "es/relaciones-de-capital/index.html",
+      "es/relacion-financiera-estrategica/index.html",
+      "es/index.html"
+    ]
+  },
+  "expected_source_files": [
+    "assets/montana-roja-capital-20260915.css",
+    "assets/home-future-institutional-20260916.js",
+    "assets/data/sun-rock-capital-relationships-v1.json",
+    "ops/GITLAB_PUBLIC_PARITY_SUN_ROCK_GROUP_20260919.md"
+  ],
+  "boundaries": [
+    "Authorised public architecture only; no private transaction sources.",
+    "Worker delta; existing single integration lane retains publication responsibility.",
+    "Existing baseline public bytes verified; refinement not merged or deployed.",
+    "No project-completion or financing-commitment claims."
+  ],
+  "validation": {
+    "evidence": [
+      "Local repository preservation: PASS",
+      "Local audience experience: PASS",
+      "Local capital relationship acceptance: PASS",
+      "Local private-source governance: PASS",
+      "Chromium at 1440 and 390px: all 10 scoped baseline/refinement routes have no horizontal overflow; institutional pages have no page errors; unchanged homepage Matkator error recorded in parity note."
+    ]
+  },
+  "open_gaps": [
+    "Premerge exact-head CI and rendered verification.",
+    "Controlled merge, exact-SHA Pages and affected-route readback.",
+    "GitLab reconciliation after access is restored."
+  ],
+  "schema": "por-derecho.publication-state.v1",
+  "schema_version": "1.0.0",
+  "control_date": "2026-09-19"
+}

@@ -49,3 +49,77 @@ Default rule:
 ## GitLab return action
 
 When GitLab repository access is restored, reconcile this terminology proposition-by-proposition into canonical GitLab `main` after rescanning current GitLab state. Do not overwrite newer GitLab work and do not weaken its protected release controls.
+
+
+## Direct public-host rescan and refinement — 19 September 2026
+
+This later observation expands the earlier indexed-homepage-only comparison.
+All ten scoped public routes returned HTTP 200 on both hosts. GitHub served bytes
+matched main `32f8b84e436a36d5eb237320eabd376e5ca319d3` for the EN/ES homepages,
+Montaña Roja, Capital Relationships, Strategic Financial Relationship and Platform
+Scale. This verifies the baseline; it does not claim the proposed refinement is live.
+GitLab repository/account access was not attempted.
+
+Public hosts:
+- GitHub: https://sbu001monterecco.github.io/por-derecho/
+- GitLab read-only: https://por-derecho-setup-or-gitlab-setup-c2b10f.gitlab.io/
+
+| Proposition / surface | GitLab public observation | GitHub reconciliation / proposed refinement |
+| --- | --- | --- |
+| Homepages EN/ES | Older public-programme definition; no HoldCo terminology in the fetched static HTML | Existing legal Sponsor / commercial platform distinction retained; future-business module gains qualified GREEN status |
+| Montaña Roja EN/ES | GREEN / VERDE already prominent, with non-completion boundaries | Preserve that proposition; make it first-read in GitHub too |
+| Acquisition capital / roadmap | No capital-stack or roadmap sections in the retrieved GitLab HTML | Preserve GitHub PR1628; separate Phase 2 finance from acquisition ranking and distinguish all eight roadmap positions |
+| Security perimeter | No corresponding detailed perimeter diagram | Project security first; defined Sponsor support; five outside-perimeter categories; subject to negotiated documents |
+| Capital Relationships EN/ES | Public/private process present; Aweswell absent from visible wording | Preserve GitHub's named legal Sponsor; link to project security rather than duplicate the diagram |
+| Strategic Financial Relationship EN/ES | Family → Aweswell → Sun Rock → ProjectCos already present | Preserve the common hierarchy; retain richer GitHub explanation and add the project-security link |
+| Platform Scale EN/ES | Same future ranges and contingent scenario boundaries | No model change needed; preserve current GitHub source and future-scale/non-collateral qualification |
+
+The inspected ten-route scope contains no `Oswell` spelling. This is a bounded
+finding, not a repository-wide identity audit. GitLab's existing GREEN status must
+not be reported missing. HTTP reachability does not imply identical content.
+
+### Proposed public-safe delta
+
+- Aweswell → Sun Rock → ProjectCo → asset order in the project diagram.
+- First-loss Sponsor equity, subordinated seller consideration and senior debt
+  shown with explicit relative priority; visual sizes do not encode amounts.
+- Development finance shown as a later transition that may refinance, replace,
+  restructure or coexist with acquisition finance.
+- Project-level security and limited Sponsor support shown separately; no
+  automatic cross-collateralisation of other ProjectCos, private assets,
+  uncommitted Aweswell assets, future opportunities or unresolved Sun Park rights.
+- GREEN is an owner-authorised execution status. Stages 1–7 are conditional;
+  no acquisition, permission, committed financing or construction is upgraded.
+- No seller identities, site specifics, economics, named-financier discussions,
+  private advice, correspondence or restricted eligibility material added.
+
+### Integration / return control
+
+This is a worker delta under the existing Control Tower #1428 / Fiscalía #1621
+single-writer direction, not a competing publisher. Current-main source and
+branch/PR checks must be refreshed by the integrator. Preserve the existing
+capital/private-process controls and all routes. Merge, exact-SHA Pages deployment
+and live readback remain distinct acceptance steps. GitLab catch-up must reconcile
+each row above against then-current GitLab; never blindly copy whole files.
+
+
+### Bounded validation findings
+
+Repository preservation, audience experience, capital-gateway acceptance and
+private-source governance passed locally. The proposed ES/EN project pages retain
+all prior anchors, with unique IDs, valid local fragments, one current roadmap
+stage and no newly disclosed private transaction details.
+Chromium checked the ten-route set at 1440px and 390px: no horizontal overflow;
+the eight institutional direct-route cases at each width had no page errors.
+The unchanged homepage module `assets/matkator-asset-rights-inbound-20260902.js`
+throws an `insertBefore` error at line 56 on both homepages. It remains outside
+this content delta. The home future module still loads and writes its content.
+Global legal banners also precede institutional content through inherited site
+loaders; no such source or route is removed by this worker. Their placement needs
+separate preservation-aware review. A scoped navigation-background correction
+makes the Montaña Roja header readable against its existing light link text.
+
+Baseline main `32f8b84` has successful Pages run `35438208166`, Publication
+integrity `35438208823` and Release acceptance `35438208790`. These results concern
+the baseline only. Candidate CI, controlled merge, deployed SHA and live readback
+must be recorded on the worker PR / Control Tower before final publication claims.

@@ -18,7 +18,7 @@
   };
 
   const t = isEN ? {
-    intro: 'Sun Rock has made the strategic decision to re-establish a hotel position in Playa Blanca. Montaña Roja is the preferred current route being actively pursued; the transaction and delivery route still have to be proven. The wider platform is built asset by asset, with Aweswell Limited as UK HoldCo / Sponsor and ring-fenced ProjectCos beneath Sun Rock.',
+    intro: 'Sun Rock has made the strategic decision to re-establish a hotel position in Playa Blanca. Montaña Roja is GREEN / active execution, the preferred current route being actively pursued; the transaction and delivery route still have to be proven. The wider platform is built asset by asset, with Aweswell Limited as UK HoldCo / Sponsor, Sun Rock as the hospitality and investment platform and independently underwritten hotel ProjectCos. GREEN describes authorised pursuit, not acquisition, planning permission or committed finance.',
     kicker: 'CURRENT STRATEGIC DIRECTION · PLAYA BLANCA · PLATFORM · RELATIONSHIP',
     title: 'The intention is clear. Execution remains disciplined.',
     cards: [
@@ -35,7 +35,7 @@
     capitalButton: 'Capital relationships',
     relationshipButton: 'Strategic financial relationship'
   } : {
-    intro: 'Sun Rock ha tomado la decisión estratégica de restablecer una posición hotelera en Playa Blanca. Montaña Roja es la vía preferente actual que se está impulsando activamente; la operación y la vía de ejecución todavía deben demostrarse. La plataforma se construye activo por activo, con Aweswell Limited como HoldCo británica / Sponsor y ProjectCos segregadas bajo Sun Rock.',
+    intro: 'Sun Rock ha tomado la decisión estratégica de restablecer una posición hotelera en Playa Blanca. Montaña Roja está en GREEN / ejecución activa, como vía preferente actual; la operación y la vía de ejecución todavía deben demostrarse. La plataforma se construye activo por activo, con Aweswell Limited como HoldCo británica / Sponsor, Sun Rock como plataforma hotelera y de inversión y ProjectCos hoteleras segregadas y analizadas por separado. GREEN expresa impulso autorizado, no adquisición, licencia urbanística ni financiación comprometida.',
     kicker: 'DIRECCIÓN ESTRATÉGICA ACTUAL · PLAYA BLANCA · PLATAFORMA · RELACIÓN',
     title: 'La intención es clara. La ejecución sigue siendo disciplinada.',
     cards: [

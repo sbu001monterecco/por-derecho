@@ -73,5 +73,17 @@
   "commercial_group_platform": "Sun Rock",
   "group_platform_legal_status": "Sun Rock is the commercial hospitality and investment group/platform identity; it is not presented as a separate incorporated parent company, issuer or automatic borrower.",
   "project_structure": "Individual ring-fenced hotel ProjectCos with transaction-specific legal borrowers/issuers, equity, debt, accounts, security and underwriting.",
-  "terminology_rule": "Rights, financing obligations and security attach to the actual legal entity and documents. The Sun Rock brand/platform does not itself create recourse to Aweswell or other ProjectCos."
+  "terminology_rule": "Rights, financing obligations and security attach to the actual legal entity and documents. The Sun Rock brand/platform does not itself create recourse to Aweswell or other ProjectCos.",
+  "active_project_public_status": {
+    "project": "Montaña Roja",
+    "status": "GREEN_PROCEED_ACTIVE_EXECUTION",
+    "as_of": "2026-09-19",
+    "meaning": "Owner-authorised strategic pursuit, transaction diligence and financing preparation; no acquisition, accepted seller price, signed definitive SPA, planning permission, operator appointment, financing commitment, lender endorsement or construction start is represented.",
+    "canonical_architecture_routes": [
+      "en/montana-roja/index.html#capital-stack",
+      "es/montana-roja/index.html#capital-stack"
+    ],
+    "security_fragment": "security-perimeter",
+    "roadmap_fragment": "roadmap"
+  }
 }
