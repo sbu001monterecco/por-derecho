@@ -7,6 +7,11 @@
 **Pages:** 30  
 **OCR status:** assistive derivative only.
 
+## Canonical PDF
+
+- [CCAA_MONTELANZA.pdf](./CCAA_MONTELANZA.pdf) — repository-hosted public copy; SHA-256 `3dcc618ee4840bcc0057c1bd4b0d65e4f30c99078d5cb09c82134623221d0baf`.
+- The connected Drive copy remains a provenance/custody backup, not the only public delivery path.
+
 ## OCR parts
 
 - [Pages 1–5](./ocr/part-01-pages-01-05.txt)
