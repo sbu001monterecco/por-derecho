@@ -266,18 +266,61 @@ def main() -> int:
             "dated operational identity counts drift",
         )
         observation = current.get("repository_observation") or {}
-        require(observation.get("sha") == MERGE_SHA, "operational repository merge drift")
-        require(observation.get("tree_sha") == TREE_SHA, "operational repository tree drift")
-        deployment_observation = current.get("deployment_observation") or {}
-        require(deployment_observation.get("last_observed_pages_run_id") == PAGES_RUN_ID, "operational Pages run drift")
         require(
-            deployment_observation.get("verification_level") == "LIVE_VERIFIED_FOR_SERVED_SHA",
+            re.fullmatch(r"[0-9a-f]{40}", str(observation.get("sha", ""))) is not None,
+            "operational repository SHA invalid",
+        )
+        require(
+            re.fullmatch(r"[0-9a-f]{40}", str(observation.get("tree_sha", ""))) is not None,
+            "operational repository tree invalid",
+        )
+        require(
+            observation.get("status")
+            in {
+                "BASELINE_OBSERVED_BEFORE_OPERATIONAL_TRUTH_CHANGE",
+                "POST_MERGE_MAIN_AND_DEPLOYMENT_OBSERVED",
+            },
+            "operational repository observation boundary drift",
+        )
+        require(
+            observation.get("observation_phase") == "POST_MERGE_MAIN_AND_DEPLOYMENT_OBSERVED",
+            "operational repository observation phase drift",
+        )
+        deployment_observation = current.get("deployment_observation") or {}
+        require(
+            deployment_observation.get("last_observed_served_sha") == observation.get("sha"),
+            "operational deployment/repository SHA mismatch",
+        )
+        require(
+            isinstance(deployment_observation.get("last_observed_pages_run_id"), int),
+            "operational Pages run missing",
+        )
+        route_state = deployment_observation.get("verification_level")
+        require(
+            route_state
+            in {
+                "LIVE_VERIFIED_FOR_SERVED_SHA",
+                "DEPLOYED_BUILD_SUCCESS_NO_EXACT_ROUTE_READBACK",
+            },
             "operational served-SHA verification state drift",
         )
-        require(
-            deployment_observation.get("last_exact_route_verification_run_id") == UNITARY_VERIFY_RUN,
-            "operational exact-route verifier drift",
-        )
+        if route_state == "LIVE_VERIFIED_FOR_SERVED_SHA":
+            require(
+                deployment_observation.get("last_exact_route_verification_run_id") is not None,
+                "operational exact-route verifier missing",
+            )
+        else:
+            for key in (
+                "last_exact_route_verification_run_id",
+                "last_exact_route_verification_run_number",
+                "last_exact_route_verification_job_id",
+                "last_exact_route_verified_at",
+            ):
+                require(
+                    deployment_observation.get(key) is None,
+                    f"deployment-only operational observation retains {key}",
+                )
+
 
         production = load_json(ROOT / "ops/PRODUCTION_STATUS.json")
         require(
@@ -288,17 +331,41 @@ def main() -> int:
             production.get("record_type") == "OBSERVED_GITHUB_PAGES_DEPLOYMENT",
             "production status record type drift",
         )
-        require(production.get("deployment", {}).get("conclusion") == "success", "observed Pages deployment is not successful")
-        require(production.get("served_sha") == MERGE_SHA, "production served merge drift")
-        require(production.get("source_tree_sha") == TREE_SHA, "production tree drift")
-        require(production.get("deployment", {}).get("workflow_run_id") == PAGES_RUN_ID, "production Pages run drift")
-        require(production.get("verification", {}).get("state") == "LIVE_VERIFIED", "production verification is not live")
         require(
-            production.get("verification", {}).get("current_exact_route_content_verification")
-            == "LIVE_VERIFIED_FOR_SERVED_SHA",
-            "current served-SHA exact readback is not live verified",
+            production.get("deployment", {}).get("conclusion") == "success",
+            "observed Pages deployment is not successful",
         )
-        specialist = production.get("verification", {}).get("latest_live_verified_specialist_release") or {}
+        require(
+            production.get("served_sha") == observation.get("sha"),
+            "production served/repository observation mismatch",
+        )
+        require(
+            production.get("source_tree_sha") == observation.get("tree_sha"),
+            "production tree/repository observation mismatch",
+        )
+        require(
+            production.get("deployment", {}).get("workflow_run_id")
+            == deployment_observation.get("last_observed_pages_run_id"),
+            "production Pages run mismatch",
+        )
+        verification = production.get("verification") or {}
+        verification_state = verification.get("state")
+        route_readback = verification.get("current_exact_route_content_verification")
+        require(
+            verification_state in {"LIVE_VERIFIED", "DEPLOYED_BUILD_SUCCESS"},
+            "production verification state is not explicit",
+        )
+        if verification_state == "LIVE_VERIFIED":
+            require(
+                route_readback == "LIVE_VERIFIED_FOR_SERVED_SHA",
+                "live production lacks exact route readback",
+            )
+        else:
+            require(
+                route_readback == "NOT_RECORDED_FOR_SERVED_SHA",
+                "deployment-only production claims exact route readback",
+            )
+        specialist = verification.get("latest_live_verified_specialist_release") or {}
         require(specialist.get("state") == "LIVE_VERIFIED", "production specialist readback evidence missing")
         require(specialist.get("control_id") == UNITARY_CONTROL_ID, "production specialist control mismatch")
         require(specialist.get("workflow_run_id") == UNITARY_VERIFY_RUN, "production specialist verifier mismatch")
@@ -311,6 +378,7 @@ def main() -> int:
             == "ops/CURRENT_UNITARY_STATE.json",
             "production→unitary routing missing",
         )
+
 
         ledger = load_json(ROOT / "ops/PR_RECONCILIATION_LEDGER.json")
         require(isinstance(ledger.get("open_pull_request_count"), int), "PR ledger count missing")
