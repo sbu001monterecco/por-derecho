@@ -27,6 +27,7 @@ def validate() -> list[str]:
         "RECOVERY_COMMAND_CENTER",
         "ASSET_RECOVERY_SITUATION_ROOM",
         "CONNECTIONS_EXPLORER",
+        "DEEP_TEXT_SEARCH",
         "POR_DERECHO_OPERATING_STANDARD",
         "SPECIALIST_SEPTEMBER_PRESENTATION_ROUTES",
         "GITLAB_NATIVE_PLATFORM_STATE",
@@ -71,6 +72,22 @@ def validate() -> list[str]:
         text=(ROOT/route).read_text(encoding="utf-8").lower()
         if "gitlab" not in text or ("byte" not in text and "bytes" not in text):
             failures.append(f"truth_boundary_missing:{route}")
+
+    deep=items["DEEP_TEXT_SEARCH"]
+    if deep.get("status")!="FUNCTIONAL_GITHUB_EQUIVALENT":
+        failures.append("deep_text_search_status_invalid")
+    deep_control=ROOT/deep.get("github_control","")
+    if not deep_control.is_file():
+        failures.append("deep_text_search_control_missing")
+    else:
+        deep_text=deep_control.read_text(encoding="utf-8").lower()
+        for token in ("does not query gitlab", "discovery aid", "same-project links"):
+            if token not in deep_text:
+                failures.append(f"deep_text_search_boundary_missing:{token}")
+    for route in ("en/search/index.html","es/buscar/index.html"):
+        text=(ROOT/route).read_text(encoding="utf-8")
+        if "connected-search-20260919.js" not in text:
+            failures.append(f"deep_text_search_not_loaded:{route}")
 
     specialist=items["SPECIALIST_SEPTEMBER_PRESENTATION_ROUTES"]
     if specialist.get("status")!="PENDING_GITLAB_RESTORATION":
