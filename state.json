@@ -2,7 +2,7 @@
   "schema": "por-derecho.publication-runtime.v1",
   "fence": 11,
   "owner": "1637:def444afed408263837b920fb19dc01c0ed088ca",
-  "phase": "DEPLOYED",
+  "phase": "VERIFIED_FOR_SCOPE",
   "pr": 1637,
   "base_sha": "e5878637cbd9c1df4f203cd480961c22004d299b",
   "candidate_sha": "def444afed408263837b920fb19dc01c0ed088ca",
@@ -697,6 +697,162 @@
       ],
       "pending": [],
       "scope": "Changed readable public resources plus ES/EN entrypoints. Browser checks are separate premerge evidence; not a whole-site or legal-proof certificate."
+    },
+    {
+      "pr": 1637,
+      "candidate_sha": "def444afed408263837b920fb19dc01c0ed088ca",
+      "at": "2026-09-19T11:42:58.097441Z",
+      "merge_sha": "53ee6b0b08e9bcfc2f3cf19ce5aff72f0620165c",
+      "pages_run_id": 35440808510,
+      "exact_matches": [
+        {
+          "path": "assets/control-22-24-search-extension-20260904.js",
+          "sha256": "5a87a47e9f29e058b9a365b7920a294309d3f244aea25950d7234656b5252f67",
+          "bytes": 6876
+        },
+        {
+          "path": "assets/data/control-21-22-24-continuity-v1.json",
+          "sha256": "bc98b4d4e73e2c75d3fa0f921e98fb7baac411fae1cda01055236fc42c74ca01",
+          "bytes": 22299
+        },
+        {
+          "path": "assets/data/dp1901-routing-collision-v1.json",
+          "sha256": "12720025e65323614475f48b1321fd2f7095dbc8d47e2124c63252eeaa8fddd2",
+          "bytes": 3760
+        },
+        {
+          "path": "assets/dp1901-cgpj-response-reader-20260919.js",
+          "sha256": "ae5856cb1920aaa1b35e0ca6199f22cc88288a1b671ae72e3ee13b2ae9d92c1a",
+          "bytes": 12094
+        },
+        {
+          "path": "assets/dp1901-routing-collision-20260919.js",
+          "sha256": "85bedc41aa5166db4e51b9284d7f40c981e9d333fd09dd6aaa8eedc9b4004113",
+          "bytes": 7201
+        },
+        {
+          "path": "assets/eg745-fiscalia-interconnectivity-20260918.js",
+          "sha256": "564839d807dab36e23d68e7f732ac5a616e7bda2090a72ff411b1fe1ab5f4328",
+          "bytes": 5229
+        },
+        {
+          "path": "assets/three-track-page-enhancement-20260904.js",
+          "sha256": "5747980b538e318e939d1ba2a8da0a0e9a9c17232891e21cfb5ee840bcd5b49b",
+          "bytes": 10166
+        },
+        {
+          "path": "assets/visuals/dp1901-20260919/01-single-grave.png",
+          "sha256": "a6bbe9e4f53fd2e1c6566454bd9d32b7860ffdee78eded2394be8d8244cf6dea",
+          "bytes": 218403
+        },
+        {
+          "path": "assets/visuals/dp1901-20260919/02-decanato.png",
+          "sha256": "9d06dc1340f8aa050ae71780eb24a265b7b5ce467e9178c7b1aa976a4ddfd54a",
+          "bytes": 183231
+        },
+        {
+          "path": "assets/visuals/dp1901-20260919/03-fiscal-corpus.png",
+          "sha256": "c3c5c5783f949f0e6b8af7010313ccc5e30e708e98e64ba4e59bf23ca7657b88",
+          "bytes": 220664
+        },
+        {
+          "path": "assets/visuals/dp1901-20260919/04-atlante.png",
+          "sha256": "ddbc5e4a5f25f025d5577b7efcd0f7fb84dd36d65732a915288db3a608305e4e",
+          "bytes": 211203
+        },
+        {
+          "path": "assets/visuals/dp1901-20260919/05-composite-annex.png",
+          "sha256": "329eb2050a8ba0f5a15138d34261cf73d4f257f18cd5ed3f1b8ec5f3e472b554",
+          "bytes": 258624
+        },
+        {
+          "path": "assets/visuals/dp1901-20260919/06-traceability-overview.png",
+          "sha256": "0a196b6cf699a9171ad98b44b00bc12faf87e86bc33cf1b09ba3795e18c92ee9",
+          "bytes": 233480
+        },
+        {
+          "path": "en/cgpj-permanent-commission-reader-room/index.html",
+          "sha256": "37ca5567d3b8e800496311503ffe5338a3644d9cd220b3b2b4e657bd2f9a1d31",
+          "bytes": 21437
+        },
+        {
+          "path": "en/control-21-private-actors-complaint-25-june-2026/index.html",
+          "sha256": "a73040b62edea7a88f1f8619640ad1a8671c02979db0c820d885d98d6e66e6a8",
+          "bytes": 21650
+        },
+        {
+          "path": "en/control-24-insolvency-judge-complaint-36-2012/index.html",
+          "sha256": "6202c156a55824b7ecc119c24ebf9d13ac3be6be515805daada141f69d3e1e17",
+          "bytes": 23375
+        },
+        {
+          "path": "en/dp-1901-2026-order-14-september-2026/index.html",
+          "sha256": "234e29b98eb9e69c32d33f7475fb88e80a9d5ea36173132ba0fbef524ff1d40b",
+          "bytes": 16459
+        },
+        {
+          "path": "en/dp-1901-2026/index.html",
+          "sha256": "9b36429d2b97de92edd0bc6c63d8f3ad8daaa5f1113f392c15b21c060ce64fad",
+          "bytes": 12084
+        },
+        {
+          "path": "en/index.html",
+          "sha256": "c048d21d4c94e3cb6896e4c74d69a9ab73f84c3426d40fe815370b40fe1ba109",
+          "bytes": 228197
+        },
+        {
+          "path": "en/proceedings/gc-gov-020/index.html",
+          "sha256": "658f7727ea4672cc3d57247ba9e1eda9f0c635a3083fa9a317f8f6ff37ff9827",
+          "bytes": 6296
+        },
+        {
+          "path": "es/cgpj-comision-permanente-sala-lectura/index.html",
+          "sha256": "78eff5724c05b92ab6c86c270acdd6e1790dba167f689d961d41707e13337e9b",
+          "bytes": 21896
+        },
+        {
+          "path": "es/control-21-denuncia-actores-privados-25-junio-2026/index.html",
+          "sha256": "1c07b929b3605361b063a50066074237fbc2aad3b3c0072f8817a2d7649eb37e",
+          "bytes": 22796
+        },
+        {
+          "path": "es/control-24-denuncia-juez-concurso-36-2012/index.html",
+          "sha256": "2bea9dff7dcda5e5e885e72dde9325e9ed8aa87e3b4d62c2f3e048777065a4c2",
+          "bytes": 24151
+        },
+        {
+          "path": "es/dp-1901-2026-auto-14-septiembre-2026/index.html",
+          "sha256": "c098ad8f01a376ffd07daeb1294e1a102124880de9bac5d84533e89a9f0331be",
+          "bytes": 17143
+        },
+        {
+          "path": "es/dp-1901-2026/index.html",
+          "sha256": "1d2ff072615eb2d7e7c0f6c64fd6f25e840df944638c123d6b46918c4435bb1a",
+          "bytes": 20744
+        },
+        {
+          "path": "es/index.html",
+          "sha256": "48a7ebf0751867525f140cf3e70c34f8fe22a1c6edd7aeb0b3178e788da95dda",
+          "bytes": 237351
+        },
+        {
+          "path": "es/procedimientos/gc-gov-020/index.html",
+          "sha256": "d58625a281ad5f5cecc24f8b2bf71006ecd56d2743a669450fbd5dee9a49eb04",
+          "bytes": 6434
+        },
+        {
+          "path": "publication-manifests/dp1901-cgpj-response-images-20260919.json",
+          "sha256": "acba787fa1b0d642299586bf4c6b60dc1eb78af30c3a3f16e3460fda2e3f4e38",
+          "bytes": 8046
+        },
+        {
+          "path": "publication-manifests/ref21-three-filing-clarification-20260919.json",
+          "sha256": "db5798c8ae23b401dca99746573f9e6f4413248447a331448626fbc70e842aff",
+          "bytes": 4338
+        }
+      ],
+      "pending": [],
+      "scope": "Changed readable public resources plus ES/EN entrypoints. Browser checks are separate premerge evidence; not a whole-site or legal-proof certificate."
     }
   ],
   "checkpoints": [
@@ -739,7 +895,164 @@
         "pages_run_id": 35440808510,
         "merge_sha": "53ee6b0b08e9bcfc2f3cf19ce5aff72f0620165c"
       }
+    },
+    {
+      "phase": "VERIFIED_FOR_SCOPE",
+      "at": "2026-09-19T11:42:58.097405Z",
+      "evidence": {
+        "merge_sha": "53ee6b0b08e9bcfc2f3cf19ce5aff72f0620165c",
+        "pages_run_id": 35440808510,
+        "exact_matches": [
+          {
+            "path": "assets/control-22-24-search-extension-20260904.js",
+            "sha256": "5a87a47e9f29e058b9a365b7920a294309d3f244aea25950d7234656b5252f67",
+            "bytes": 6876
+          },
+          {
+            "path": "assets/data/control-21-22-24-continuity-v1.json",
+            "sha256": "bc98b4d4e73e2c75d3fa0f921e98fb7baac411fae1cda01055236fc42c74ca01",
+            "bytes": 22299
+          },
+          {
+            "path": "assets/data/dp1901-routing-collision-v1.json",
+            "sha256": "12720025e65323614475f48b1321fd2f7095dbc8d47e2124c63252eeaa8fddd2",
+            "bytes": 3760
+          },
+          {
+            "path": "assets/dp1901-cgpj-response-reader-20260919.js",
+            "sha256": "ae5856cb1920aaa1b35e0ca6199f22cc88288a1b671ae72e3ee13b2ae9d92c1a",
+            "bytes": 12094
+          },
+          {
+            "path": "assets/dp1901-routing-collision-20260919.js",
+            "sha256": "85bedc41aa5166db4e51b9284d7f40c981e9d333fd09dd6aaa8eedc9b4004113",
+            "bytes": 7201
+          },
+          {
+            "path": "assets/eg745-fiscalia-interconnectivity-20260918.js",
+            "sha256": "564839d807dab36e23d68e7f732ac5a616e7bda2090a72ff411b1fe1ab5f4328",
+            "bytes": 5229
+          },
+          {
+            "path": "assets/three-track-page-enhancement-20260904.js",
+            "sha256": "5747980b538e318e939d1ba2a8da0a0e9a9c17232891e21cfb5ee840bcd5b49b",
+            "bytes": 10166
+          },
+          {
+            "path": "assets/visuals/dp1901-20260919/01-single-grave.png",
+            "sha256": "a6bbe9e4f53fd2e1c6566454bd9d32b7860ffdee78eded2394be8d8244cf6dea",
+            "bytes": 218403
+          },
+          {
+            "path": "assets/visuals/dp1901-20260919/02-decanato.png",
+            "sha256": "9d06dc1340f8aa050ae71780eb24a265b7b5ce467e9178c7b1aa976a4ddfd54a",
+            "bytes": 183231
+          },
+          {
+            "path": "assets/visuals/dp1901-20260919/03-fiscal-corpus.png",
+            "sha256": "c3c5c5783f949f0e6b8af7010313ccc5e30e708e98e64ba4e59bf23ca7657b88",
+            "bytes": 220664
+          },
+          {
+            "path": "assets/visuals/dp1901-20260919/04-atlante.png",
+            "sha256": "ddbc5e4a5f25f025d5577b7efcd0f7fb84dd36d65732a915288db3a608305e4e",
+            "bytes": 211203
+          },
+          {
+            "path": "assets/visuals/dp1901-20260919/05-composite-annex.png",
+            "sha256": "329eb2050a8ba0f5a15138d34261cf73d4f257f18cd5ed3f1b8ec5f3e472b554",
+            "bytes": 258624
+          },
+          {
+            "path": "assets/visuals/dp1901-20260919/06-traceability-overview.png",
+            "sha256": "0a196b6cf699a9171ad98b44b00bc12faf87e86bc33cf1b09ba3795e18c92ee9",
+            "bytes": 233480
+          },
+          {
+            "path": "en/cgpj-permanent-commission-reader-room/index.html",
+            "sha256": "37ca5567d3b8e800496311503ffe5338a3644d9cd220b3b2b4e657bd2f9a1d31",
+            "bytes": 21437
+          },
+          {
+            "path": "en/control-21-private-actors-complaint-25-june-2026/index.html",
+            "sha256": "a73040b62edea7a88f1f8619640ad1a8671c02979db0c820d885d98d6e66e6a8",
+            "bytes": 21650
+          },
+          {
+            "path": "en/control-24-insolvency-judge-complaint-36-2012/index.html",
+            "sha256": "6202c156a55824b7ecc119c24ebf9d13ac3be6be515805daada141f69d3e1e17",
+            "bytes": 23375
+          },
+          {
+            "path": "en/dp-1901-2026-order-14-september-2026/index.html",
+            "sha256": "234e29b98eb9e69c32d33f7475fb88e80a9d5ea36173132ba0fbef524ff1d40b",
+            "bytes": 16459
+          },
+          {
+            "path": "en/dp-1901-2026/index.html",
+            "sha256": "9b36429d2b97de92edd0bc6c63d8f3ad8daaa5f1113f392c15b21c060ce64fad",
+            "bytes": 12084
+          },
+          {
+            "path": "en/index.html",
+            "sha256": "c048d21d4c94e3cb6896e4c74d69a9ab73f84c3426d40fe815370b40fe1ba109",
+            "bytes": 228197
+          },
+          {
+            "path": "en/proceedings/gc-gov-020/index.html",
+            "sha256": "658f7727ea4672cc3d57247ba9e1eda9f0c635a3083fa9a317f8f6ff37ff9827",
+            "bytes": 6296
+          },
+          {
+            "path": "es/cgpj-comision-permanente-sala-lectura/index.html",
+            "sha256": "78eff5724c05b92ab6c86c270acdd6e1790dba167f689d961d41707e13337e9b",
+            "bytes": 21896
+          },
+          {
+            "path": "es/control-21-denuncia-actores-privados-25-junio-2026/index.html",
+            "sha256": "1c07b929b3605361b063a50066074237fbc2aad3b3c0072f8817a2d7649eb37e",
+            "bytes": 22796
+          },
+          {
+            "path": "es/control-24-denuncia-juez-concurso-36-2012/index.html",
+            "sha256": "2bea9dff7dcda5e5e885e72dde9325e9ed8aa87e3b4d62c2f3e048777065a4c2",
+            "bytes": 24151
+          },
+          {
+            "path": "es/dp-1901-2026-auto-14-septiembre-2026/index.html",
+            "sha256": "c098ad8f01a376ffd07daeb1294e1a102124880de9bac5d84533e89a9f0331be",
+            "bytes": 17143
+          },
+          {
+            "path": "es/dp-1901-2026/index.html",
+            "sha256": "1d2ff072615eb2d7e7c0f6c64fd6f25e840df944638c123d6b46918c4435bb1a",
+            "bytes": 20744
+          },
+          {
+            "path": "es/index.html",
+            "sha256": "48a7ebf0751867525f140cf3e70c34f8fe22a1c6edd7aeb0b3178e788da95dda",
+            "bytes": 237351
+          },
+          {
+            "path": "es/procedimientos/gc-gov-020/index.html",
+            "sha256": "d58625a281ad5f5cecc24f8b2bf71006ecd56d2743a669450fbd5dee9a49eb04",
+            "bytes": 6434
+          },
+          {
+            "path": "publication-manifests/dp1901-cgpj-response-images-20260919.json",
+            "sha256": "acba787fa1b0d642299586bf4c6b60dc1eb78af30c3a3f16e3460fda2e3f4e38",
+            "bytes": 8046
+          },
+          {
+            "path": "publication-manifests/ref21-three-filing-clarification-20260919.json",
+            "sha256": "db5798c8ae23b401dca99746573f9e6f4413248447a331448626fbc70e842aff",
+            "bytes": 4338
+          }
+        ],
+        "pending": [],
+        "scope": "Changed readable public resources plus ES/EN entrypoints. Browser checks are separate premerge evidence; not a whole-site or legal-proof certificate."
+      }
     }
   ],
-  "updated_at": "2026-09-19T11:42:52.406825Z"
+  "updated_at": "2026-09-19T11:42:58.097405Z"
 }
