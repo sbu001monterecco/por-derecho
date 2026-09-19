@@ -26,9 +26,31 @@
       "id": "EVID-2016-DP332-AUTO-PRORROGA-001",
       "type": "COURT_DECISION",
       "date": "2016-05-31",
-      "status": "PUBLIC_DERIVATIVE_READY_ON_INTEGRATION_BRANCH",
+      "status": "PUBLIC_VIEWER_LIVE",
       "native_sha256": "2effd2f225797e013939a36d2cee255755873790c023aba3ec53f5deabc4473c",
       "public_sha256": "acf37ad9fc4901548d8efeb44d0333efdc5c5379f34d19839dc6765d2c08d22a"
+    },
+    {
+      "id": "EVID-2015-DP332-PERSONACION-001",
+      "type": "COURT_PROCEDURAL_ACT",
+      "date": "2015-02-24",
+      "status": "PRIMARY_PRIVATE_COPY_CONTROLLED",
+      "sha256": "c916d1768dfcd60670010ad7d98ed62741c14d9e99351bb120057854eac4e743",
+      "effect": "PERSONATION_PROVED_ATTENDANCE_NOT_PROVED",
+      "judge": "Rafael Lis Estévez",
+      "private_accusation_representative": "José Ramos Saavedra",
+      "represented_parties": [
+        "Roque Prieto S.L.",
+        "AMENEN S.L. (literal source form)",
+        "Inversiones Salinetas S.L."
+      ],
+      "defence_representative": "Manuela Cabrera",
+      "accused": [
+        "Gil Marer",
+        "Patricia Isabel Domínguez Montelongo"
+      ],
+      "scheduling": "14 April 2015 at 10:30; English interpreter ordered",
+      "boundary": "Admission/personation and scheduling are proved; actual hearing attendance, interpreter attendance, Fiscalía/AC attendance and identity of any lawyer physically present are not proved by this act."
     }
   ],
   "actors": [
@@ -79,7 +101,7 @@
       "2018 party recollection: neither Fiscalía nor AC attended; only lawyer for Molina side appeared",
       "20-Nov-2018 counsel reconstruction: 24-Feb-2015 personation and 14-Apr-2015 statements"
     ],
-    "boundary": "Primary 24-Feb-2015 personation order and 14-Apr-2015 statement/attendance records remain required before identity/attendance can be treated as proved."
+    "boundary": "The 24-Feb-2015 personation is now primary-record proved for Roque Prieto S.L., literal-source-form AMENEN S.L. and Inversiones Salinetas S.L. through José Ramos Saavedra, with defence through Manuela Cabrera. Actual 14-Apr-2015 attendance and declaration minutes remain required."
   },
   "possible_legal_relevance": [
     "representation convergence",
@@ -98,11 +120,49 @@
     "guilt"
   ],
   "open_gaps": [
-    "24-Feb-2015 personation order",
-    "14-Apr-2015 statement minutes/attendance sheets",
-    "identity/capacity of private-side lawyer",
-    "official proof of Fiscalía and AC attendance/non-attendance",
+    "14-Apr-2015 statement minutes/signatures/attendance/interpreter/audiovisual record",
+    "15-Apr-2015 AC-testimony request",
+    "8-May-2015 Fiscalía report",
+    "complete personation applications/powers and exact lawyer appointments",
+    "underlying Fiscalía competence report and final competence-dispute resolution",
+    "intervening complexity/extension orders",
+    "actual October-2020 AC testimony/recording",
     "complete certified docket",
-    "signed final disposition/service/finality"
+    "signed final disposition/service/appeals/finality"
+  ],
+  "procedural_edges": [
+    {
+      "from": "LZ-JUD-047",
+      "to": "LZ-JUD-002",
+      "type": "inhibition_ordered",
+      "date": "2017-07-02",
+      "proof": "PRIMARY_COURT_ACT",
+      "boundary": "Remittal/accumulation was ordered subject to finality; completion is not established by this act."
+    },
+    {
+      "from": "LZ-JUD-002",
+      "to": "LZ-JUD-047",
+      "type": "inhibition_refused",
+      "date": "2017-09-25",
+      "proof": "PRIMARY_COURT_ACT",
+      "boundary": "JI3 expressly refused the proposed inhibition citing Fiscalía's different-facts position; later competence-dispute resolution remains open."
+    }
+  ],
+  "fiscalia_acts": [
+    {
+      "date": "2016-05-25",
+      "actor": "Jorge Pobre Menguy",
+      "office": "Economic Crime section",
+      "act": "Request for declaration of complexity",
+      "proof": "PRIMARY_FISCALIA_COPY",
+      "boundary": "Does not prove April 2015 attendance."
+    },
+    {
+      "date": "2018-10-29",
+      "actor": "Jorge Pobre Menguy",
+      "act": "Fiscal report requesting further steps/extension and referring to an 8-May-2015 report",
+      "proof": "PRIMARY_FISCALIA_COPY",
+      "boundary": "The referenced 8-May-2015 report remains a production target; no knowing falsity is inferred."
+    }
   ]
 }
