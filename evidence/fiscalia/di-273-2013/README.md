@@ -36,3 +36,10 @@ Page map:
 ## Linked controlled digest
 
 See `archive/FISCALIA_DI273_2013_CAUSAL_ATTRIBUTION_AND_ARCHIVE_RECOVERY_CONTROL_26AUG2026.md` for the actor/date/capacity matrix, later counter-evidence, archive-recovery hashes, adverse evidence and unresolved outcome controls.
+
+
+## DP 332/2014 controlled court-act continuation
+
+The linked judicial proceeding now has a separately controlled source record at `evidence/courts/dp-332-2014/README.md`, including the 31 May 2016 Auto, NIG `3500443220140001497`, judge Pino Esther Hormiga Franco, the native SHA-256, a public verified transcription derivative, the April-2015 attendance/personation gap and the explicit linkage/proof boundary.
+
+This connection records procedural continuity and overlap. It does **not** by itself prove shared knowledge, unlawful coordination, conflict, breach of duty, non-neutrality, instrumentalisation or criminal responsibility.
