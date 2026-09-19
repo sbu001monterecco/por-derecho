@@ -196,6 +196,13 @@
       "state": "OPEN",
       "question_es": "Obtener una fuente institucional primaria de EG 58/2026 que establezca si es un expediente distinto y, en su caso, su órgano, clase, NIG, objeto, fechas, actos, firmantes, relaciones, estado y resultado.",
       "question_en": "Obtain a primary institutional source for EG 58/2026 establishing whether it is a distinct file and, if so, its office, class, NIG, subject, dates, acts, signatories, relationships, status and outcome."
+    },
+    {
+      "id": "PD-SP-R-0044",
+      "priority": "P1",
+      "state": "OPEN",
+      "question_es": "Obtener el expediente o índice certificado de concurso 440/2021 para fijar NIG, asignación procesal actual, representantes, actos posteriores, estado/conclusión y reconciliación exacta con el registro maestro; no inferir acumulación de masas, extinción ni culpabilidad individual.",
+      "question_en": "Obtain the certified docket or file for concurso 440/2021 to establish the NIG, current procedural allocation, representatives, later acts, status/conclusion and exact master-register reconciliation; do not infer estate pooling, extinction or individual culpability."
     }
   ],
   "distinction_controls": [

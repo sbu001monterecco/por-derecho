@@ -142,5 +142,59 @@
     "summary": "Registro público seguro derivado de fuente de presentaciones Red SARA/AGE individualizadas, índice de adjuntos indicados en justificantes y respuestas institucionales entrantes.",
     "tags": ["Red SARA", "AGE", "REGAGE", "respuesta de autoridad", "índice de adjuntos"],
     "aliases": ["Intervención General", "184368/2026", "497011/2026", "699645/2026", "REGAGE", "RedSARA"]
+  },
+  {
+    "lang": "en",
+    "path": "en/recovery-command-center/",
+    "title": "Recovery Command Center",
+    "type": "case",
+    "summary": "GitHub-native recovery operating surface joining trace, preservation, protection, recovery, restoration and human decision gates.",
+    "tags": ["recovery", "preservation", "restoration", "command center"],
+    "aliases": ["recovery command", "asset recovery control", "trace preserve protect recover restore"]
+  },
+  {
+    "lang": "es",
+    "path": "es/centro-mando-recuperacion/",
+    "title": "Centro de Mando de Recuperación",
+    "type": "case",
+    "summary": "Superficie operativa GitHub que une trazabilidad, preservación, protección, recuperación, restitución y puertas de decisión humana.",
+    "tags": ["recuperación", "preservación", "restitución", "centro de mando"],
+    "aliases": ["mando recuperación", "control recuperación activos", "trazar preservar proteger recuperar restaurar"]
+  },
+  {
+    "lang": "en",
+    "path": "en/connections-explorer/",
+    "title": "Connections Explorer",
+    "type": "case",
+    "summary": "Current-GitHub route and same-site outbound-link explorer built without reconstructing GitLab index bytes.",
+    "tags": ["search", "connections", "routes", "navigation"],
+    "aliases": ["connection graph", "route explorer", "link explorer"]
+  },
+  {
+    "lang": "es",
+    "path": "es/explorador-conexiones/",
+    "title": "Explorador de conexiones",
+    "type": "case",
+    "summary": "Explorador de rutas y enlaces internos del GitHub actual sin reconstruir los bytes del índice GitLab.",
+    "tags": ["búsqueda", "conexiones", "rutas", "navegación"],
+    "aliases": ["grafo conexiones", "explorador rutas", "explorador enlaces"]
+  },
+  {
+    "lang": "en",
+    "path": "en/asset-recovery-situation-room/",
+    "title": "Asset Recovery Situation Room",
+    "type": "case",
+    "summary": "Adversarial evidence surface for competing hypotheses, contrary evidence, decisive tests and recovery consequences.",
+    "tags": ["asset recovery", "competing hypotheses", "contrary evidence", "decisive tests"],
+    "aliases": ["situation room", "recovery analysis", "case prism"]
+  },
+  {
+    "lang": "es",
+    "path": "es/sala-situacion-recuperacion-activos/",
+    "title": "Sala de Situación de Recuperación de Activos",
+    "type": "case",
+    "summary": "Superficie adversarial para hipótesis competidoras, prueba contraria, pruebas decisivas y consecuencias de recuperación.",
+    "tags": ["recuperación de activos", "hipótesis", "prueba contraria", "pruebas decisivas"],
+    "aliases": ["sala situación", "análisis recuperación", "case prism"]
   }
 ]
