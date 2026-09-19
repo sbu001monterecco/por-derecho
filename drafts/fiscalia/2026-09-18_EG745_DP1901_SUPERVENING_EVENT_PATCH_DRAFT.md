@@ -89,3 +89,97 @@ Gil Marer and Aweswell Limited maintain their attributed adverse posture toward 
 ## 19 September clarification — factual continuity only
 
 Read the 19-September presenter's-clarification addendum in `archive/DP1901_EG745_FISCAL_REPORT_ROUTING_COLLISION_CONTROL_18SEP2026.md` and the `presenter_clarification_20260919` field in the existing three-track control. Preserve Gil's firsthand paper-custody account, his categorical private-actor-first position, the uncertainty in the date of his AC-opening confirmation, and the separate missing official electronic chronology. Include Ref22/DP1956 in the comparative production scope without alleging that it was the correct destination for Ref24. Keep the 14-Sep Auto's contrary origin characterisation visible. This source update is not filing, service, counsel adoption or a deadline determination.
+
+
+## H. 19 September successor — competence + Fiscal Superior escalation
+
+### H.1 No presumption of regularity
+
+For the successor filing, do not start from a factual presumption that the DP1901 Fiscal act, Plaza6 treatment, Provincial Fiscalía conduct, Community Fiscalía conduct or internal routing were neutral, lawful, independent, in good faith or free from influence. Those are matters to be established from actor-specific records.
+
+Likewise, do not convert suspicion into adjudicated criminal guilt. The test is:
+
+**ACT → AUTHOR → OFFICE → ASSIGNMENT → CORPUS → DUTY/COMPETENCE → KNOWLEDGE → CONTRADICTION → NOTICE → POST-NOTICE CONDUCT → REASONING → LAWFUL ALTERNATIVE → EFFECT → BENEFICIARY → EXCULPATORY EVIDENCE → CULPABILITY INFERENCE.**
+
+### H.2 Prior institutional competence position
+
+DIP2/2026 is now a central prior institutional competence source, not a background reference. Its 6-Mar Decreto records the TSJC/aforamiento route for alleged in-office criminal conduct by the Concurso judge and states that the competent Fiscalía is the Fiscalía corresponding to the tribunal of aforamiento.
+
+The E.G.745 successor should therefore require an explanation of the later DP1901 sequence:
+- Ref24 was a separate judge-related filing addressed to TSJC Sala Civil y Penal;
+- Ref21 was a separate private-actor complaint;
+- July sources operationally mapped DP1901 to the private-actor lane;
+- 12-Jul Plaza6 linked DP1901 with DIP2;
+- 29-Jul a Fiscal requested merits archive;
+- 14-Sep Plaza6 treated DP1901 as alleged prevaricación and ordered sobreseimiento libre.
+
+### H.3 Three-branch identification of the 29-Jul Fiscal
+
+**Branch A — Fiscalía Provincial de Las Palmas:** require author, assignment, legal/functional basis, corpus, competence analysis, and any delegation/substitution/instruction.
+
+**Branch B — Fiscalía de la Comunidad Autónoma de Canarias:** require author, assignment, corpus and explanation why the office that articulated the aforamiento rule in DIP2 later sought merits archive from Plaza6 without a produced competence bridge.
+
+**Branch C — another Fiscal/Fiscalía:** require identity, office, assignment authority, statutory basis, corpus, reasoning, visado/instructions and relationship to DIP2.
+
+Across all branches ask:
+
+> ¿Por qué interesó el Ministerio Fiscal un archivo sobre el fondo en DP1901 antes de que conste reconciliada la identidad procesal y la competencia objetiva del procedimiento?
+
+### H.4 Double prejudice
+
+E.G.745 must expressly examine both possible harms:
+
+1. **Ref24 / judge lane:** possible departure from the TSJC/aforamiento route and merits disposal without a produced competence bridge.
+2. **Ref21 / private-actor lane:** possible absorption, shadowing, reclassification, fragmentation, segregation without accessible record, or ambiguous exposure to the sobreseimiento libre.
+
+Do not allow the answer “DP1901 was judicialised” to substitute for certified identification of the initiating document, object, parties and current destination of Ref21.
+
+### H.5 Immediate Fiscal Superior communication
+
+A separate urgent notice is now a coordinated track:
+
+`drafts/fiscalia/2026-09-19_FISCAL_SUPERIOR_DP1901_URGENT_NOTICE_DRAFT.md`
+
+Current Fiscal Superior is source-verified as **Jaime Serrano-Jover González** (Real Decreto 428/2026, 27 May 2026).
+
+The EOMF controls cited for the escalation are:
+- art.13.2 — ordinary inspection of Fiscalías in the territorial area;
+- art.22.4 — representation and headship of Ministerio Fiscal throughout the Autonomous Community;
+- art.22.7 — hierarchical subordination of Provincial Fiscal chiefs to the Fiscal Superior.
+
+Official sources:
+- https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-11484
+- https://www.fiscal.es/w/fiscal-superior-canarias
+- https://www.boe.es/buscar/act.php?id=BOE-A-1982-837
+
+The notice is **DRAFT / NOT FILED** unless an official receipt proves otherwise.
+
+### H.6 FGE/Inspección incorporation cover
+
+Use:
+`drafts/fiscalia/2026-09-19_EG745_FISCAL_SUPERIOR_INCORPORATION_COVER_DRAFT.md`
+
+It should request association/incorporation into E.G.745 as a supervening event but state expressly that it is not the E.G.745 merits response itself.
+
+### H.7 Additional production/preservation
+
+Add requests for:
+15. identity and office of the 29-Jul Fiscal;
+16. assignment/reparto and assigning authority;
+17. any delegation, substitution, avocación, visado or superior instruction;
+18. explicit competence analysis, if any;
+19. complete object/party metadata history of DP1901;
+20. certified current destination/status of Ref21;
+21. preservation of any inter-office Fiscalía transmission linking DIP2, Provincial Fiscalía and DP1901;
+22. preservation of relevant institutional email headers/attachments and system access/routing metadata where lawfully retained;
+23. confirmation whether the 11-Mar DIP2 correction was available to the 29-Jul Fiscal;
+24. a non-circular independent review of the act, rather than sole reliance on the same decision chain under examination.
+
+## I. Controlling linked files — 19 September
+
+- `prompts/DP1901_EG745_FISCAL_SUPERIOR_MASTER_WORK_PROMPT_19SEP2026.md`
+- `evidence/fiscalia/2026/DP1901_FISCAL_SUPERIOR_COMPETENCE_CULPABILITY_MATRIX_19SEP2026.md`
+- `assets/data/dp1901-eg745-fiscal-superior-action-state-20260919.json`
+- `ops/DP1901_EG745_MF_IMMEDIATE_ACTION_MATRIX_18SEP2026.md`
+
+Repository publication or a GitHub commit does not establish service, receipt, incorporation, knowledge by an official or legal filing.
