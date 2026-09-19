@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.4",
   "control_id": "PD-C212224-001",
-  "as_of": "2026-09-18",
+  "as_of": "2026-09-19",
   "repository": "sbu001monterecco/por-derecho",
   "baseline_main_sha": "b8ded173b06f17aaf91569f051dd11e621b139ae",
   "canonical_nucleus": {
@@ -11,15 +11,18 @@
   "controls": [
     {
       "id": "CONTROL-21",
-      "label": "Daily reference 21 — user-reported private-actor filing control",
+      "label": "Daily reference 21 — documented autonomous private-actor filing",
       "claimed_filing_date": "2026-06-25",
-      "canonical_repository_object": null,
+      "canonical_repository_object": "CONTROL-21",
       "candidate_proceeding": "GC-CRI-008",
       "candidate_reference": "DP 1901/2026",
-      "bridge_status": "UNVERIFIED_CANDIDATE_BRIDGE",
+      "bridge_status": "UNVERIFIED_CANDIDATE_BRIDGE_WITH_DOCUMENTED_JULY_OPERATIONAL_MAPPING",
       "evidential_state": "DOCUMENTED",
       "do_not_infer": "The 25-Jun daily-reference-21 private-actor filing is now documented by a stamped cover, and a 9-Jul stamped cover proves private-actor amplification material was physically tendered under DP 1901/Plaza 6. Do not state that daily reference 21 originally generated DP 1901 without the certified initiating document/reparto/index/ingestion bridge. The 12-Jul providencia links DP 1901 to DIP 2/2026 and the 14-Sep order treats it as alleged judicial prevarication.",
-      "identity_collision_status": "PROCEDURAL_IDENTITY_COLLISION_OPEN_DIRECTION_NOT_CERTIFIED"
+      "identity_collision_status": "PROCEDURAL_IDENTITY_COLLISION_OPEN_DIRECTION_NOT_CERTIFIED",
+      "public_route_en": "/en/daily-reference-21-private-actor-complaint/",
+      "public_route_es": "/es/referencia-21-denuncia-actores-privados/",
+      "operational_july_mapping": "Contemporaneous 9-Jul counsel email recorded `1901: Contra CAM y otras partes de la Comunidad de Propietarios`; 12-Jul counsel email again treated Plaza 6 / 1901 as the CAM/Community complaint. This supports operational mapping, not certified original reparto."
     },
     {
       "id": "CONTROL-22",
@@ -53,7 +56,8 @@
       "evidential_state": "DOCUMENTED",
       "do_not_infer": "Daily registration no. 24 is not a NIG or DP number. Its 18-Jun stamped judge filing and 25-Jun 13-page dependent supplement are now documented. The 14-Sep DP 1901 order creates a serious candidate routing/identity question, but the source closure does not prove that daily reference 24 generated, was joined to, or was reassigned into DP 1901.",
       "identity_collision_status": "PROCEDURAL_IDENTITY_COLLISION_OPEN_DIRECTION_NOT_CERTIFIED",
-      "judge_amplification_pages": 13
+      "judge_amplification_pages": 13,
+      "dp1901_supervening_status": "14-Sep DP 1901 order treats that proceeding as alleged judicial prevaricación; candidate Ref24↔DP1901 identity/routing relationship is open and direction remains uncertified."
     }
   ],
   "nodes": [
@@ -151,6 +155,11 @@
       "id": "AC-SEPARATION-ROUTE",
       "type": "INSOLVENCY_ROUTE",
       "label": "Insolvency Administrator separation/removal route"
+    },
+    {
+      "id": "DP1901-ROUTING-COLLISION",
+      "type": "TRACEABILITY_CONTROL",
+      "label": "DP 1901 / Ref.21 / Ref.24 procedural-identity collision"
     }
   ],
   "edges": [
@@ -302,6 +311,22 @@
       "bidirectional": true,
       "bridge_status": "UNVERIFIED_CANDIDATE_BRIDGE",
       "evidential_status": "OPEN"
+    },
+    {
+      "from": "CONTROL-21",
+      "to": "DP1901-ROUTING-COLLISION",
+      "relation": "DOCUMENTED_JULY_OPERATIONAL_MAPPING",
+      "bidirectional": true,
+      "bridge_status": "DIRECTION_NOT_CERTIFIED",
+      "evidential_status": "DOCUMENTED_CONTEMPORANEOUS_PLUS_PHYSICAL_TENDER"
+    },
+    {
+      "from": "CONTROL-24",
+      "to": "DP1901-ROUTING-COLLISION",
+      "relation": "CANDIDATE_IDENTITY_RECONCILIATION",
+      "bidirectional": true,
+      "bridge_status": "DIRECTION_NOT_CERTIFIED",
+      "evidential_status": "OPEN"
     }
   ],
   "reader_layers": [
@@ -375,7 +400,9 @@
     "READER_DP-1956_EN": "/en/dp-1956-2026/",
     "READER_DP-1956_ES": "/es/dp-1956-2026/",
     "READER_CONTROL-24_EN": "/en/control-24-insolvency-judge-complaint-36-2012/",
-    "READER_CONTROL-24_ES": "/es/control-24-denuncia-juez-concurso-36-2012/"
+    "READER_CONTROL-24_ES": "/es/control-24-denuncia-juez-concurso-36-2012/",
+    "CONTROL-21_EN": "/en/daily-reference-21-private-actor-complaint/",
+    "CONTROL-21_ES": "/es/referencia-21-denuncia-actores-privados/"
   },
   "open_gaps": [
     "Certified DP 1901/2026 initiating document, complete docket/index, 18-Jun–12-Jul ingestion history and direction of the daily-reference-21 / daily-reference-24 routing collision",
@@ -386,7 +413,9 @@
     "Exact CGPJ 169/2026 document nomenclature, annex reference and treatment",
     "Canonical registration of any missing stamped source files, transcriptions/OCR derivatives and hashes",
     "Signed 29 July 2026 Ministerio Fiscal report in DP 1901/2026: author, text, corpus, assignment and reasoning",
-    "Native/certified 14 September 2026 DP 1901 order and legal notification metadata"
+    "Native/certified 14 September 2026 DP 1901 order and legal notification metadata",
+    "DP 1901 object/party metadata at creation, 9 Jul, 12 Jul, 29 Jul and 14 Sep, including change-event/user audit trail",
+    "Exact remitting object description and corpus/index sent to Ministerio Fiscal before the 29-Jul report"
   ],
   "supervening_event_20260918": {
     "source": "DP 1901/2026 order dated 2026-09-14, received copy controlled 2026-09-18",
