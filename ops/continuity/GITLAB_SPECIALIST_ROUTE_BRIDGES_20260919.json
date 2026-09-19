@@ -1,0 +1,78 @@
+{
+  "schema": "por-derecho.gitlab-specialist-route-bridges.v1",
+  "control_id": "PD-GL-SPECIALIST-BRIDGES-20260919-01",
+  "control_date": "2026-09-19",
+  "status": "FUNCTIONAL_GITHUB_BRIDGES_EXACT_GITLAB_SOURCE_PENDING",
+  "authenticated_gitlab_restoration_verified": false,
+  "items": [
+    {
+      "slug": "orion-transparency-memorandum",
+      "label": "Orion transparency memorandum",
+      "canonical_en": "en/portfolio-orion-traceability/",
+      "canonical_es": "es/portfolio-orion-trazabilidad/",
+      "status": "FUNCTIONAL_GITHUB_EQUIVALENT"
+    },
+    {
+      "slug": "portfolio-international-nexus",
+      "label": "Portfolio international nexus",
+      "canonical_en": "en/portfolio-orion-traceability/",
+      "canonical_es": "es/portfolio-orion-trazabilidad/",
+      "secondary_en": "en/why-the-uk-should-care/",
+      "secondary_es": "es/por-que-debe-importar-al-reino-unido/",
+      "status": "FUNCTIONAL_GITHUB_EQUIVALENT"
+    },
+    {
+      "slug": "portfolio-board-open-letter",
+      "label": "Portfolio board open letter",
+      "canonical_en": "en/portfolio-orion-traceability/",
+      "canonical_es": "es/portfolio-orion-trazabilidad/",
+      "status": "FUNCTIONAL_GITHUB_EQUIVALENT"
+    },
+    {
+      "slug": "canary-presidency-records-coordination",
+      "label": "Canary Presidency records coordination",
+      "canonical_en": "en/public-authority-unitary-case-reconstruction/",
+      "canonical_es": "es/reconstruccion-unitaria-autoridades-publicas/",
+      "status": "FUNCTIONAL_GITHUB_EQUIVALENT"
+    },
+    {
+      "slug": "media-travel-asset-recovery",
+      "label": "Media / travel / asset recovery",
+      "canonical_en": "en/bbc-rip-off-britain-sun-park-provenance/",
+      "canonical_es": "es/bbc-rip-off-britain-sun-park-proveniencia/",
+      "status": "FUNCTIONAL_GITHUB_EQUIVALENT"
+    },
+    {
+      "slug": "new-horizons-source-images",
+      "label": "New Horizons source images",
+      "canonical_en": "en/sun-park-takeover-7-june-2018/camel-travel-lanzarote-information/",
+      "canonical_es": "es/toma-control-sun-park-7-junio-2018/camel-travel-lanzarote-information/",
+      "status": "FUNCTIONAL_GITHUB_EQUIVALENT"
+    },
+    {
+      "slug": "actua-to-title-documentary-journey",
+      "label": "ACTUA to title documentary journey",
+      "canonical_en": "en/actua-gesvalt-2018-valuation-comparison/",
+      "canonical_es": "es/comparativa-tasaciones-actua-gesvalt-2018/",
+      "secondary_en": "en/land-registry-implementation-property-by-property/",
+      "secondary_es": "es/implementacion-registral-finca-por-finca/",
+      "status": "FUNCTIONAL_GITHUB_EQUIVALENT"
+    },
+    {
+      "slug": "sun-park-history",
+      "label": "Sun Park history",
+      "canonical_en": "en/case-control-room/",
+      "canonical_es": "es/sala-control-caso/",
+      "secondary_en": "en/sun-park-takeover-7-june-2018/",
+      "secondary_es": "es/toma-control-sun-park-7-junio-2018/",
+      "status": "FUNCTIONAL_GITHUB_EQUIVALENT"
+    }
+  ],
+  "rules": [
+    "Each bridge is navigation continuity, not exact GitLab source recovery.",
+    "Bridge pages are noindex and canonicalize to a current GitHub dossier.",
+    "No bridge imports rendered GitLab HTML or invents unavailable GitLab source bytes.",
+    "Current GitHub source-controlled facts supersede stale rendered GitLab procedural formulations.",
+    "Exact GitLab source reconciliation remains pending authenticated restoration."
+  ]
+}
