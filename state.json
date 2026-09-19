@@ -1,13 +1,13 @@
 {
   "schema": "por-derecho.publication-runtime.v1",
-  "fence": 7,
-  "owner": "1608:2d4e756b4020266263fe1bd0b18bbcd393b5fe80",
-  "phase": "VERIFIED_FOR_SCOPE",
-  "pr": 1608,
-  "base_sha": "b470fd7927edc91de3346694ef76e2c8ed9225c6",
-  "candidate_sha": "2d4e756b4020266263fe1bd0b18bbcd393b5fe80",
-  "run_id": 35419035593,
-  "claimed_at": "2026-09-19T03:36:21.351543Z",
+  "fence": 8,
+  "owner": "1610:8210c6e25a85b737a7e8350fdc78aff3c6113927",
+  "phase": "CLAIMED",
+  "pr": 1610,
+  "base_sha": "502f818495cf46836286bc4eed6cd9d2b1b8abc4",
+  "candidate_sha": "8210c6e25a85b737a7e8350fdc78aff3c6113927",
+  "run_id": 35419389676,
+  "claimed_at": "2026-09-19T03:44:30.098684Z",
   "expiry_policy": "Never silently expire into free; recover after inspecting actual merge/deployment.",
   "receipts": [
     {
@@ -616,79 +616,5 @@
       "scope": "Changed readable public resources plus ES/EN entrypoints. Browser checks are separate premerge evidence; not a whole-site or legal-proof certificate."
     }
   ],
-  "checkpoints": [
-    {
-      "phase": "ACCEPTED",
-      "at": "2026-09-19T03:36:22.413460Z",
-      "evidence": {
-        "checks": [
-          {
-            "name": "publication-integrity",
-            "id": 105832777436,
-            "conclusion": "success"
-          },
-          {
-            "name": "PD release acceptance",
-            "id": 105832777336,
-            "conclusion": "success"
-          }
-        ]
-      }
-    },
-    {
-      "phase": "MERGE_PENDING",
-      "at": "2026-09-19T03:37:20.517763Z",
-      "evidence": {
-        "pr": 1608
-      }
-    },
-    {
-      "phase": "MERGED",
-      "at": "2026-09-19T03:37:21.521798Z",
-      "evidence": {
-        "merge_sha": "502f818495cf46836286bc4eed6cd9d2b1b8abc4"
-      }
-    },
-    {
-      "phase": "DEPLOYED",
-      "at": "2026-09-19T03:37:44.989464Z",
-      "evidence": {
-        "pages_run_id": 35419029936,
-        "merge_sha": "502f818495cf46836286bc4eed6cd9d2b1b8abc4"
-      }
-    },
-    {
-      "phase": "VERIFIED_FOR_SCOPE",
-      "at": "2026-09-19T03:37:48.343389Z",
-      "evidence": {
-        "merge_sha": "502f818495cf46836286bc4eed6cd9d2b1b8abc4",
-        "pages_run_id": 35419029936,
-        "exact_matches": [
-          {
-            "path": "en/index.html",
-            "sha256": "f4c30a7470174448a1bc2e8b7aac8140eb89c9e09e7c4c06f5a2640eeb89a58e",
-            "bytes": 227677
-          },
-          {
-            "path": "en/legal-notebook/meeting-point-357-2024-judicial-traceability/index.html",
-            "sha256": "cfe997d4b3c898bf9233cfff0e43477ddcdd1c88b3045e9ef6bb961af004089c",
-            "bytes": 19378
-          },
-          {
-            "path": "es/cuaderno-juridico/meeting-point-357-2024-trazabilidad-judicial/index.html",
-            "sha256": "b4eb33e81831889038495a9fae14a2f7dc61dd3d1366ef5c54179dfed6c6b3af",
-            "bytes": 20310
-          },
-          {
-            "path": "es/index.html",
-            "sha256": "c0e39aa73d888a07038299128a3f7286c9632b258d4a988017464bf957741a7f",
-            "bytes": 236823
-          }
-        ],
-        "pending": [],
-        "scope": "Changed readable public resources plus ES/EN entrypoints. Browser checks are separate premerge evidence; not a whole-site or legal-proof certificate."
-      }
-    }
-  ],
-  "updated_at": "2026-09-19T03:37:48.343389Z"
+  "checkpoints": []
 }
