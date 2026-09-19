@@ -120,6 +120,7 @@ jobs:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
         with:
           persist-credentials: false
+          fetch-depth: 0
       - name: Validate digest controls
         run: python3 scripts/validate_current_reverse_engineered_digest.py
       - name: Validate first-hop rendered caret provenance
