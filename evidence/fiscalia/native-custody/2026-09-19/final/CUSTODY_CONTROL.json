@@ -1,0 +1,18 @@
+{
+  "schema": "por-derecho.native-authority-custody-control.v2",
+  "control_date": "2026-09-19",
+  "status": "FINAL_ENCRYPTED_GITHUB_CUSTODY",
+  "scope": "Bounded authority-email attachment census across three connected Gmail accounts plus historical Fiscalia sources recovered in the thread.",
+  "alias_records": 137,
+  "authority_census_aliases": 106,
+  "historical_aliases": 31,
+  "unique_native_sha256_objects": 118,
+  "authority_pdf_aliases": 92,
+  "authority_non_pdf_aliases": 14,
+  "encrypted_package_bytes": 46152704,
+  "encrypted_package_sha256": "f37a1adb720c48b97a2b468bfc7bd658da42df07de26a6b8695f5d381c95117c",
+  "plaintext_tar_sha256": "a3c94fdecff37eb94048050600655fc4b15c561e825152abc96062bb0ab71248",
+  "carrier_count": 15,
+  "privacy": "No plaintext native evidential objects are exposed by these carriers. The decryption key is deliberately held outside the public GitHub repository.",
+  "supersedes": "Earlier 3-carrier partial Ministerio Fiscal package on this working branch."
+}
