@@ -62,5 +62,23 @@
     }
   ],
   "deletion_safety_rule": "Deletion-safe requires every material source to have controlled provenance/hash and a durable canonical/public-safe representation. Temporary extraction/render derivatives need identity/hash registration, not duplicate byte publication.",
-  "public_repo_privacy_rule": "Do not upload private Gmail/provider extraction artifacts merely to claim byte parity."
+  "public_repo_privacy_rule": "Do not upload private Gmail/provider extraction artifacts merely to claim byte parity.",
+  "github_accounting_complete": true,
+  "thread_exclusive_material_gap": false,
+  "all_seven_file_objects_identity_hash_classification_in_github": true,
+  "continuity_standard": {
+    "status": "COMPLETE_UNDER_PUBLIC_REPO_PRIVACY_GOVERNANCE",
+    "material_primary_sources": "Exact native size, SHA-256, provenance/source relationship and durable canonical/public-safe representation are controlled; raw private bytes remain in source custody rather than being exposed in this public repository.",
+    "non_evidential_tool_derivatives": "Exact identity, size, SHA-256 and classification are controlled; duplicate renders are deduplicated and connector-extraction JSON is not treated as independent evidence.",
+    "raw_public_byte_parity_required": false,
+    "thread_dependency_remaining": false
+  },
+  "latest_dp332_recovery": {
+    "selected_counsel_archive_sha256": "3330e91ae2141bcb862ff9c5b02c71e38c98b603dd07f05c02b75527988e5dbd",
+    "selected_counsel_archive_bytes": 4016986,
+    "pdf_objects": 30,
+    "total_pages": 42,
+    "inventory_path": "evidence/fiscalia/dp-332-2014/recovered-court-copy-inventory-20260919.json",
+    "certified_complete_docket": false
+  }
 }
