@@ -1,0 +1,2005 @@
+{
+  "schema": "por-derecho.authority-native-source-census.v1",
+  "control_date": "2026-09-19",
+  "scope": "Gmail authority-domain attachment census across connected SBU, Gil and Patricia accounts; domains justiciaencanarias.org, fiscal.es and justicia.es. Historical separately recovered Fiscalía files outside this bounded domain search remain controlled in the thread preservation manifest.",
+  "denominator": {
+    "attachment_occurrences": 163,
+    "distinct_file_signatures": 101,
+    "pdfs": 87,
+    "other": 14,
+    "connector_supported": 99,
+    "raw_mime_fallback": 2
+  },
+  "identity_rule": "Distinct signature = filename + MIME type + provider-reported byte size. Hash identity supersedes this provisional signature after native bytes are ingested.",
+  "viewer_rule": "Every authority PDF sent or received must have a public-safe viewable derivative or an explicit privacy-blocked derivative task; native private bytes are never published merely to satisfy custody.",
+  "records": [
+    {
+      "signature": "01_RICPE_Comunicacion_17AGO2026.pdf|application/pdf|447975",
+      "filename": "01_RICPE_Comunicacion_17AGO2026.pdf",
+      "mime": "application/pdf",
+      "size_bytes": 447975,
+      "supported": true,
+      "viewer_required": true,
+      "occurrences": [
+        {
+          "account": "SBU",
+          "date": "2026-08-27",
+          "subject": "HECHO SOBREVENIDO 27/08/2026 — Exp. Gub. 86/2026 — RICPE / Sun Park–MYND Yaiza — preservación",
+          "direction": "SENT"
+        },
+        {
+          "account": "SBU",
+          "date": "2026-08-27",
+          "subject": "Re: ACTUALIZACIÓN 26/08/2026 — DI 22/2026 / REGAGE26e00070237051 — notificación oficial FEDER Sun Park–MYND y preservación",
+          "direction": "SENT"
+        }
+      ]
+    },
+    {
+      "signature": "01. Decreto de incoación y archivo (21.08.2026).pdf|application/pdf|72605",
+      "filename": "01. Decreto de incoación y archivo (21.08.2026).pdf",
+      "mime": "application/pdf",
+      "size_bytes": 72605,
+      "supported": true,
+      "viewer_required": true,
+      "occurrences": [
+        {
+          "account": "SBU",
+          "date": "2026-08-21",
+          "subject": "Fiscalia Tenerife: Notificación Decreto (21/08/2026)",
+          "direction": "RECEIVED"
+        }
+      ]
+    },
+    {
+      "signature": "02_RICPE_Cierre_27AGO2026.pdf|application/pdf|444759",
+      "filename": "02_RICPE_Cierre_27AGO2026.pdf",
+      "mime": "application/pdf",
+      "size_bytes": 444759,
+      "supported": true,
+      "viewer_required": true,
+      "occurrences": [
+        {
+          "account": "SBU",
+          "date": "2026-08-27",
+          "subject": "HECHO SOBREVENIDO 27/08/2026 — Exp. Gub. 86/2026 — RICPE / Sun Park–MYND Yaiza — preservación",
+          "direction": "SENT"
+        },
+        {
+          "account": "SBU",
+          "date": "2026-08-27",
+          "subject": "Re: ACTUALIZACIÓN 26/08/2026 — DI 22/2026 / REGAGE26e00070237051 — notificación oficial FEDER Sun Park–MYND y preservación",
+          "direction": "SENT"
+        }
+      ]
+    },
+    {
+      "signature": "03_RICPE_Certificacion_20JUL2021.pdf|application/pdf|190098",
+      "filename": "03_RICPE_Certificacion_20JUL2021.pdf",
+      "mime": "application/pdf",
+      "size_bytes": 190098,
+      "supported": true,
+      "viewer_required": true,
+      "occurrences": [
+        {
+          "account": "SBU",
+          "date": "2026-08-27",
+          "subject": "HECHO SOBREVENIDO 27/08/2026 — Exp. Gub. 86/2026 — RICPE / Sun Park–MYND Yaiza — preservación",
+          "direction": "SENT"
+        },
+        {
+          "account": "SBU",
+          "date": "2026-08-27",
+          "subject": "Re: ACTUALIZACIÓN 26/08/2026 — DI 22/2026 / REGAGE26e00070237051 — notificación oficial FEDER Sun Park–MYND y preservación",
+          "direction": "SENT"
+        }
+      ]
+    },
+    {
+      "signature": "04_CAM_Escrito_21JUL2021.pdf|application/pdf|418156",
+      "filename": "04_CAM_Escrito_21JUL2021.pdf",
+      "mime": "application/pdf",
+      "size_bytes": 418156,
+      "supported": true,
+      "viewer_required": true,
+      "occurrences": [
+        {
+          "account": "SBU",
+          "date": "2026-08-27",
+          "subject": "HECHO SOBREVENIDO 27/08/2026 — Exp. Gub. 86/2026 — RICPE / Sun Park–MYND Yaiza — preservación",
+          "direction": "SENT"
+        },
+        {
+          "account": "SBU",
+          "date": "2026-08-27",
+          "subject": "Re: ACTUALIZACIÓN 26/08/2026 — DI 22/2026 / REGAGE26e00070237051 — notificación oficial FEDER Sun Park–MYND y preservación",
+          "direction": "SENT"
+        }
+      ]
+    },
+    {
+      "signature": "05_RICPE_Webinar_11NOV2020.pdf|application/pdf|7493026",
+      "filename": "05_RICPE_Webinar_11NOV2020.pdf",
+      "mime": "application/pdf",
+      "size_bytes": 7493026,
+      "supported": true,
+      "viewer_required": true,
+      "occurrences": [
+        {
+          "account": "SBU",
+          "date": "2026-08-27",
+          "subject": "HECHO SOBREVENIDO 27/08/2026 — Exp. Gub. 86/2026 — RICPE / Sun Park–MYND Yaiza — preservación",
+          "direction": "SENT"
+        },
+        {
+          "account": "SBU",
+          "date": "2026-08-27",
+          "subject": "Re: ACTUALIZACIÓN 26/08/2026 — DI 22/2026 / REGAGE26e00070237051 — notificación oficial FEDER Sun Park–MYND y preservación",
+          "direction": "SENT"
+        }
+      ]
+    },
+    {
+      "signature": "06_AAFC_Evidence_Pack_25AGO2026.pdf|application/pdf|3915943",
+      "filename": "06_AAFC_Evidence_Pack_25AGO2026.pdf",
+      "mime": "application/pdf",
+      "size_bytes": 3915943,
+      "supported": true,
+      "viewer_required": true,
+      "occurrences": [
+        {
+          "account": "SBU",
+          "date": "2026-08-27",
+          "subject": "HECHO SOBREVENIDO 27/08/2026 — Exp. Gub. 86/2026 — RICPE / Sun Park–MYND Yaiza — preservación",
+          "direction": "SENT"
+        },
+        {
+          "account": "SBU",
+          "date": "2026-08-27",
+          "subject": "Re: ACTUALIZACIÓN 26/08/2026 — DI 22/2026 / REGAGE26e00070237051 — notificación oficial FEDER Sun Park–MYND y preservación",
+          "direction": "SENT"
+        }
+      ]
+    },
+    {
+      "signature": "07_AAFC_Preservacion_25AGO2026.pdf|application/pdf|54527",
+      "filename": "07_AAFC_Preservacion_25AGO2026.pdf",
+      "mime": "application/pdf",
+      "size_bytes": 54527,
+      "supported": true,
+      "viewer_required": true,
+      "occurrences": [
+        {
+          "account": "SBU",
+          "date": "2026-08-27",
+          "subject": "HECHO SOBREVENIDO 27/08/2026 — Exp. Gub. 86/2026 — RICPE / Sun Park–MYND Yaiza — preservación",
+          "direction": "SENT"
+        },
+        {
+          "account": "SBU",
+          "date": "2026-08-27",
+          "subject": "Re: ACTUALIZACIÓN 26/08/2026 — DI 22/2026 / REGAGE26e00070237051 — notificación oficial FEDER Sun Park–MYND y preservación",
+          "direction": "SENT"
+        }
+      ]
+    },
+    {
+      "signature": "08_San_Telmo_RICPE_Sun_Park.png|image/png|827315",
+      "filename": "08_San_Telmo_RICPE_Sun_Park.png",
+      "mime": "image/png",
+      "size_bytes": 827315,
+      "supported": true,
+      "viewer_required": false,
+      "occurrences": [
+        {
+          "account": "SBU",
+          "date": "2026-08-27",
+          "subject": "HECHO SOBREVENIDO 27/08/2026 — Exp. Gub. 86/2026 — RICPE / Sun Park–MYND Yaiza — preservación",
+          "direction": "SENT"
+        },
+        {
+          "account": "SBU",
+          "date": "2026-08-27",
+          "subject": "Re: ACTUALIZACIÓN 26/08/2026 — DI 22/2026 / REGAGE26e00070237051 — notificación oficial FEDER Sun Park–MYND y preservación",
+          "direction": "SENT"
+        }
+      ]
+    },
+    {
+      "signature": "09_PwC_Cinco_Actores.png|image/png|489983",
+      "filename": "09_PwC_Cinco_Actores.png",
+      "mime": "image/png",
+      "size_bytes": 489983,
+      "supported": true,
+      "viewer_required": false,
+      "occurrences": [
+        {
+          "account": "SBU",
+          "date": "2026-08-27",
+          "subject": "HECHO SOBREVENIDO 27/08/2026 — Exp. Gub. 86/2026 — RICPE / Sun Park–MYND Yaiza — preservación",
+          "direction": "SENT"
+        },
+        {
+          "account": "SBU",
+          "date": "2026-08-27",
+          "subject": "Re: ACTUALIZACIÓN 26/08/2026 — DI 22/2026 / REGAGE26e00070237051 — notificación oficial FEDER Sun Park–MYND y preservación",
+          "direction": "SENT"
+        }
+      ]
+    },
+    {
+      "signature": "1. 2026_03_30 DECRETO INCOACIÓN Y ARCHIVO.pdf|application/pdf|172236",
+      "filename": "1. 2026_03_30 DECRETO INCOACIÓN Y ARCHIVO.pdf",
+      "mime": "application/pdf",
+      "size_bytes": 172236,
+      "supported": true,
+      "viewer_required": true,
+      "occurrences": [
+        {
+          "account": "SBU",
+          "date": "2026-03-30",
+          "subject": "E.G. 44/2026",
+          "direction": "RECEIVED"
+        }
+      ]
+    },
+    {
+      "signature": "1. 2026_08_19 DECRETO INCOACIÓN Y ARCHIVO_signed.pdf|application/pdf|148509",
+      "filename": "1. 2026_08_19 DECRETO INCOACIÓN Y ARCHIVO_signed.pdf",
+      "mime": "application/pdf",
+      "size_bytes": 148509,
+      "supported": true,
+      "viewer_required": true,
+      "occurrences": [
+        {
+          "account": "SBU",
+          "date": "2026-08-20",
+          "subject": "Exp.G. 112/2026",
+          "direction": "RECEIVED"
+        }
+      ]
+    },
+    {
+      "signature": "2. 2026_03_30 DILIGENCIA A DENUNCIANTE DESTINATARIO.pdf|application/pdf|174784",
+      "filename": "2. 2026_03_30 DILIGENCIA A DENUNCIANTE DESTINATARIO.pdf",
+      "mime": "application/pdf",
+      "size_bytes": 174784,
+      "supported": true,
+      "viewer_required": true,
+      "occurrences": [
+        {
+          "account": "SBU",
+          "date": "2026-03-30",
+          "subject": "E.G. 44/2026",
+          "direction": "RECEIVED"
+        }
+      ]
+    },
+    {
+      "signature": "2. 2026_08_19 DILIGENCIA DESTINATARIO_signed.pdf|application/pdf|143146",
+      "filename": "2. 2026_08_19 DILIGENCIA DESTINATARIO_signed.pdf",
+      "mime": "application/pdf",
+      "size_bytes": 143146,
+      "supported": true,
+      "viewer_required": true,
+      "occurrences": [
+        {
+          "account": "SBU",
+          "date": "2026-08-20",
+          "subject": "Exp.G. 112/2026",
+          "direction": "RECEIVED"
+        }
+      ]
+    },
+    {
+      "signature": "2. COMUNICACIÓN DNCTE junio 2026_signed.pdf|application/pdf|181684",
+      "filename": "2. COMUNICACIÓN DNCTE junio 2026_signed.pdf",
+      "mime": "application/pdf",
+      "size_bytes": 181684,
+      "supported": true,
+      "viewer_required": true,
+      "occurrences": [
+        {
+          "account": "SBU",
+          "date": "2026-06-04",
+          "subject": "Expediente Gubernativo 58/2026",
+          "direction": "RECEIVED"
+        }
+      ]
+    },
+    {
+      "signature": "2026 07 02_ST 553.26_Acuse escrito a particular FIRMADO.pdf|application/pdf|395265",
+      "filename": "2026 07 02_ST 553.26_Acuse escrito a particular FIRMADO.pdf",
+      "mime": "application/pdf",
+      "size_bytes": 395265,
+      "supported": true,
+      "viewer_required": true,
+      "occurrences": [
+        {
+          "account": "SBU",
+          "date": "2026-07-06",
+          "subject": "N.Ref ST 553/2026",
+          "direction": "RECEIVED"
+        }
+      ]
+    },
+    {
+      "signature": "20260114105035.pdf|application/pdf|179373",
+      "filename": "20260114105035.pdf",
+      "mime": "application/pdf",
+      "size_bytes": 179373,
+      "supported": true,
+      "viewer_required": true,
+      "occurrences": [
+        {
+          "account": "SBU",
+          "date": "2026-01-14",
+          "subject": "NOTIFICACIÓN DECRETO",
+          "direction": "RECEIVED"
+        }
+      ]
+    },
+    {
+      "signature": "ACTUALIZACIÓN 26/08/2026 — Exp. Gub. 86/2026 — nueva notificación oficial FEDER Sun Park–MYND.eml|message/rfc822|2076055",
+      "filename": "ACTUALIZACIÓN 26/08/2026 — Exp. Gub. 86/2026 — nueva notificación oficial FEDER Sun Park–MYND.eml",
+      "mime": "message/rfc822",
+      "size_bytes": 2076055,
+      "supported": true,
+      "viewer_required": false,
+      "occurrences": [
+        {
+          "account": "SBU",
+          "date": "2026-09-01",
+          "subject": "RE: Exp. Gub. 86/2026 — trazabilidad de la remisión a Arrecife; Pink/AEAT y fuentes profesionales sobrevenidas",
+          "direction": "RECEIVED"
+        }
+      ]
+    },
+    {
+      "signature": "ACUERDO RESOLUTORIO EXP. GUB. 38-26_firmado.pdf|application/pdf|293270",
+      "filename": "ACUERDO RESOLUTORIO EXP. GUB. 38-26_firmado.pdf",
+      "mime": "application/pdf",
+      "size_bytes": 293270,
+      "supported": true,
+      "viewer_required": true,
+      "occurrences": [
+        {
+          "account": "SBU",
+          "date": "2026-08-20",
+          "subject": "Notificación Acuerdo Resolutorio EXP. GUB 28/2026",
+          "direction": "RECEIVED"
+        }
+      ]
+    },
+    {
+      "signature": "C7F-C29M22.pdf|application/pdf|1939751",
+      "filename": "C7F-C29M22.pdf",
+      "mime": "application/pdf",
+      "size_bytes": 1939751,
+      "supported": true,
+      "viewer_required": true,
+      "occurrences": [
+        {
+          "account": "SBU",
+          "date": "2025-01-20",
+          "subject": "Fiscalía Anticorrupción - Comunicación de alerta pertinente a alegaciones de fraude y corrupción en Canarias 20ENE2025",
+          "direction": "SENT"
+        }
+      ]
+    },
+    {
+      "signature": "CITA Colegio Abogados de Madrid (Mensaje 2022-02-21 at 10.28.14).jpeg|image/jpeg|51031",
+      "filename": "CITA Colegio Abogados de Madrid (Mensaje 2022-02-21 at 10.28.14).jpeg",
+      "mime": "image/jpeg",
+      "size_bytes": 51031,
+      "supported": true,
+      "viewer_required": false,
+      "occurrences": [
+        {
+          "account": "Gil",
+          "date": "2022-02-21",
+          "subject": "REITERACIÓN SOLICITUD DE SUSPENSIÓN - CONCURSO ORDINARIO 36/2012-06 (SU)",
+          "direction": "SENT"
+        }
+      ]
+    },
+    {
+      "signature": "CNYPPS~G.PDF|application/pdf|184170",
+      "filename": "CNYPPS~G.PDF",
+      "mime": "application/pdf",
+      "size_bytes": 184170,
+      "supported": true,
+      "viewer_required": true,
+      "occurrences": [
+        {
+          "account": "SBU",
+          "date": "2026-09-09",
+          "subject": "Nueva comunicación EG 58/2026",
+          "direction": "RECEIVED"
+        }
+      ]
+    },
+    {
+      "signature": "COMUNICACIÓN DNCTE 58-2026_signed.pdf|application/pdf|104445",
+      "filename": "COMUNICACIÓN DNCTE 58-2026_signed.pdf",
+      "mime": "application/pdf",
+      "size_bytes": 104445,
+      "supported": true,
+      "viewer_required": true,
+      "occurrences": [
+        {
+          "account": "SBU",
+          "date": "2026-02-11",
+          "subject": "EXPEDIENTE GUBERNATIVO 58/2026 UNIDAD DELITOS ECONÓMICOS",
+          "direction": "RECEIVED"
+        }
+      ]
+    },
+    {
+      "signature": "comunicacion-transparencia-16-2026-0825121919-redactada.png|image/png|186193",
+      "filename": "comunicacion-transparencia-16-2026-0825121919-redactada.png",
+      "mime": "image/png",
+      "size_bytes": 186193,
+      "supported": true,
+      "viewer_required": false,
+      "occurrences": [
+        {
+          "account": "SBU",
+          "date": "2026-09-01",
+          "subject": "RE: Exp. Gub. 86/2026 — trazabilidad de la remisión a Arrecife; Pink/AEAT y fuentes profesionales sobrevenidas",
+          "direction": "RECEIVED"
+        },
+        {
+          "account": "SBU",
+          "date": "2026-08-26",
+          "subject": "ACTUALIZACIÓN 26/08/2026 — Exp. Gub. 86/2026 — nueva notificación oficial FEDER Sun Park–MYND",
+          "direction": "SENT"
+        },
+        {
+          "account": "SBU",
+          "date": "2026-08-26",
+          "subject": "ACTUALIZACIÓN 26/08/2026 — Exp. Gub. 86/2026 — notificación oficial FEDER Sun Park–MYND y preservación",
+          "direction": "SENT"
+        },
+        {
+          "account": "SBU",
+          "date": "2026-08-26",
+          "subject": "ACTUALIZACIÓN 26/08/2026 — DI 22/2026 / REGAGE26e00070237051 — notificación oficial FEDER Sun Park–MYND y preservación",
+          "direction": "SENT"
+        }
+      ]
+    },
+    {
+      "signature": "decreto 22-26.pdf|application/pdf|132536",
+      "filename": "decreto 22-26.pdf",
+      "mime": "application/pdf",
+      "size_bytes": 132536,
+      "supported": true,
+      "viewer_required": true,
+      "occurrences": [
+        {
+          "account": "SBU",
+          "date": "2026-07-10",
+          "subject": "notificacion decreto 10.07.2026",
+          "direction": "RECEIVED"
+        }
+      ]
+    },
+    {
+      "signature": "DECRETO ACLARACIÓN_signed.pdf|application/pdf|140963",
+      "filename": "DECRETO ACLARACIÓN_signed.pdf",
+      "mime": "application/pdf",
+      "size_bytes": 140963,
+      "supported": true,
+      "viewer_required": true,
+      "occurrences": [
+        {
+          "account": "SBU",
+          "date": "2026-08-25",
+          "subject": "E.G. 112/2026",
+          "direction": "RECEIVED"
+        }
+      ]
+    },
+    {
+      "signature": "decreto archivo D.Investigación 22-2026.pdf|application/pdf|248623",
+      "filename": "decreto archivo D.Investigación 22-2026.pdf",
+      "mime": "application/pdf",
+      "size_bytes": 248623,
+      "supported": true,
+      "viewer_required": true,
+      "occurrences": [
+        {
+          "account": "SBU",
+          "date": "2026-02-13",
+          "subject": "Notificación oficio y decreto archivo a la parte denunciante D. Investigación 22/2026",
+          "direction": "RECEIVED"
+        }
+      ]
+    },
+    {
+      "signature": "decreto archivo de 08-02-2023 D. Investigación 113-2022.pdf|application/pdf|256042",
+      "filename": "decreto archivo de 08-02-2023 D. Investigación 113-2022.pdf",
+      "mime": "application/pdf",
+      "size_bytes": 256042,
+      "supported": true,
+      "viewer_required": true,
+      "occurrences": [
+        {
+          "account": "SBU",
+          "date": "2026-02-25",
+          "subject": "Notificación oficio y decreto , D.Investigación 113/2022",
+          "direction": "RECEIVED"
+        }
+      ]
+    },
+    {
+      "signature": "DECRETO D DARCHIVO DE 06-03-2026 DIP Nº 2-2026.pdf|application/pdf|327548",
+      "filename": "DECRETO D DARCHIVO DE 06-03-2026 DIP Nº 2-2026.pdf",
+      "mime": "application/pdf",
+      "size_bytes": 327548,
+      "supported": true,
+      "viewer_required": true,
+      "occurrences": [
+        {
+          "account": "SBU",
+          "date": "2026-03-09",
+          "subject": "NOTIFICACIÓN DECRETO DE ARCHIVO DE 06.03.2026 DILIGENCIAS DE INVESTIGACIÓN PREPROCESALES Nº 2/2026",
+          "direction": "RECEIVED"
+        }
+      ]
+    },
+    {
+      "signature": "DECRETO D.I 22-26 (02-03-26).pdf|application/pdf|233724",
+      "filename": "DECRETO D.I 22-26 (02-03-26).pdf",
+      "mime": "application/pdf",
+      "size_bytes": 233724,
+      "supported": true,
+      "viewer_required": true,
+      "occurrences": [
+        {
+          "account": "SBU",
+          "date": "2026-03-03",
+          "subject": "NOTIFICACION DI.22-26",
+          "direction": "RECEIVED"
+        }
+      ]
+    },
+    {
+      "signature": "DECRETO D.I 22-26 (3.03.2026).pdf|application/pdf|230546",
+      "filename": "DECRETO D.I 22-26 (3.03.2026).pdf",
+      "mime": "application/pdf",
+      "size_bytes": 230546,
+      "supported": true,
+      "viewer_required": true,
+      "occurrences": [
+        {
+          "account": "SBU",
+          "date": "2026-03-03",
+          "subject": "NOTIFICACION DI.22-26",
+          "direction": "RECEIVED"
+        }
+      ]
+    },
+    {
+      "signature": "DECRETO D.I. 22-26.pdf|application/pdf|131282",
+      "filename": "DECRETO D.I. 22-26.pdf",
+      "mime": "application/pdf",
+      "size_bytes": 131282,
+      "supported": true,
+      "viewer_required": true,
+      "occurrences": [
+        {
+          "account": "SBU",
+          "date": "2026-06-03",
+          "subject": "NOTIFICACIÓN D.I. 22-26",
+          "direction": "RECEIVED"
+        }
+      ]
+    },
+    {
+      "signature": "decreto D.Investigación 113-2022.pdf|application/pdf|225397",
+      "filename": "decreto D.Investigación 113-2022.pdf",
+      "mime": "application/pdf",
+      "size_bytes": 225397,
+      "supported": true,
+      "viewer_required": true,
+      "occurrences": [
+        {
+          "account": "SBU",
+          "date": "2026-02-25",
+          "subject": "Notificación oficio y decreto , D.Investigación 113/2022",
+          "direction": "RECEIVED"
+        }
+      ]
+    },
+    {
+      "signature": "decreto de 15-09-2026 D.Ivestigación 22-26.pdf|application/pdf|231183",
+      "filename": "decreto de 15-09-2026 D.Ivestigación 22-26.pdf",
+      "mime": "application/pdf",
+      "size_bytes": 231183,
+      "supported": true,
+      "viewer_required": true,
+      "occurrences": [
+        {
+          "account": "SBU",
+          "date": "2026-09-16",
+          "subject": "Notificación oficio+ decreto de 15/09/2026 dictado en las D.Investigación nº22/2026",
+          "direction": "RECEIVED"
+        }
+      ]
+    },
+    {
+      "signature": "decreto de fecha 11-02-2026 D.Investigación 22-2026.pdf|application/pdf|226623",
+      "filename": "decreto de fecha 11-02-2026 D.Investigación 22-2026.pdf",
+      "mime": "application/pdf",
+      "size_bytes": 226623,
+      "supported": true,
+      "viewer_required": true,
+      "occurrences": [
+        {
+          "account": "SBU",
+          "date": "2026-02-13",
+          "subject": "Notificación oficio y decreto archivo a la parte denunciante D. Investigación 22/2026",
+          "direction": "RECEIVED"
+        }
+      ]
+    },
+    {
+      "signature": "decreto de fecha 13-02-2026 (2) D.Investigación 22-2026.pdf|application/pdf|233721",
+      "filename": "decreto de fecha 13-02-2026 (2) D.Investigación 22-2026.pdf",
+      "mime": "application/pdf",
+      "size_bytes": 233721,
+      "supported": true,
+      "viewer_required": true,
+      "occurrences": [
+        {
+          "account": "SBU",
+          "date": "2026-02-13",
+          "subject": "Notificación oficio y dos decretos de fecha 13/02/2026, D.Investigación 22/2026",
+          "direction": "RECEIVED"
+        }
+      ]
+    },
+    {
+      "signature": "decreto de fecha 13-02-2026 D.Investigación 22-2026.pdf|application/pdf|232695",
+      "filename": "decreto de fecha 13-02-2026 D.Investigación 22-2026.pdf",
+      "mime": "application/pdf",
+      "size_bytes": 232695,
+      "supported": true,
+      "viewer_required": true,
+      "occurrences": [
+        {
+          "account": "SBU",
+          "date": "2026-02-13",
+          "subject": "Notificación oficio y dos decretos de fecha 13/02/2026, D.Investigación 22/2026",
+          "direction": "RECEIVED"
+        }
+      ]
+    },
+    {
+      "signature": "decreto de fecha 19-02-2026 D.Investigación 22-2026.pdf|application/pdf|234196",
+      "filename": "decreto de fecha 19-02-2026 D.Investigación 22-2026.pdf",
+      "mime": "application/pdf",
+      "size_bytes": 234196,
+      "supported": true,
+      "viewer_required": true,
+      "occurrences": [
+        {
+          "account": "SBU",
+          "date": "2026-02-19",
+          "subject": "Notificación oficio y decreto de fecha 19/02/2026, D.Investigación 22/2026",
+          "direction": "RECEIVED"
+        }
+      ]
+    },
+    {
+      "signature": "DECRETO DI 22-26.pdf|application/pdf|132885",
+      "filename": "DECRETO DI 22-26.pdf",
+      "mime": "application/pdf",
+      "size_bytes": 132885,
+      "supported": true,
+      "viewer_required": true,
+      "occurrences": [
+        {
+          "account": "SBU",
+          "date": "2026-07-02",
+          "subject": "notificacion decreto 30.06.2026 d.i. 22-26",
+          "direction": "RECEIVED"
+        }
+      ]
+    },
+    {
+      "signature": "Denuncia ante Fiscalia Especial contra la Corrupcion (GM 25JUL2025).pdf|application/pdf|375842",
+      "filename": "Denuncia ante Fiscalia Especial contra la Corrupcion (GM 25JUL2025).pdf",
+      "mime": "application/pdf",
+      "size_bytes": 375842,
+      "supported": true,
+      "viewer_required": true,
+      "occurrences": [
+        {
+          "account": "SBU",
+          "date": "2025-07-25",
+          "subject": "Presentación de denuncia por posibles delitos con Documentación soporte",
+          "direction": "SENT"
+        }
+      ]
+    },
+    {
+      "signature": "document - 2026-01-30T111156.445.pdf|application/pdf|142760",
+      "filename": "document - 2026-01-30T111156.445.pdf",
+      "mime": "application/pdf",
+      "size_bytes": 142760,
+      "supported": true,
+      "viewer_required": true,
+      "occurrences": [
+        {
+          "account": "Gil",
+          "date": "2026-01-30",
+          "subject": "DIP 20/2026",
+          "direction": "RECEIVED"
+        }
+      ]
+    },
+    {
+      "signature": "document - 2026-01-30T111243.132.pdf|application/pdf|141639",
+      "filename": "document - 2026-01-30T111243.132.pdf",
+      "mime": "application/pdf",
+      "size_bytes": 141639,
+      "supported": true,
+      "viewer_required": true,
+      "occurrences": [
+        {
+          "account": "Gil",
+          "date": "2026-01-30",
+          "subject": "DIP 20/2026",
+          "direction": "RECEIVED"
+        }
+      ]
+    },
+    {
+      "signature": "document (18).pdf|application/pdf|265430",
+      "filename": "document (18).pdf",
+      "mime": "application/pdf",
+      "size_bytes": 265430,
+      "supported": true,
+      "viewer_required": true,
+      "occurrences": [
+        {
+          "account": "Gil",
+          "date": "2023-05-26",
+          "subject": "Fwd: vista concurso ordinario 36/1212-06 (SU)",
+          "direction": "RECEIVED"
+        },
+        {
+          "account": "Gil",
+          "date": "2023-04-03",
+          "subject": "vista concurso ordinario 36/1212-06 (SU)",
+          "direction": "RECEIVED"
+        }
+      ]
+    },
+    {
+      "signature": "document (19).pdf|application/pdf|423635",
+      "filename": "document (19).pdf",
+      "mime": "application/pdf",
+      "size_bytes": 423635,
+      "supported": true,
+      "viewer_required": true,
+      "occurrences": [
+        {
+          "account": "Gil",
+          "date": "2023-09-29",
+          "subject": "CONCURSO ORDINARIO 36/2012-06 (SU)",
+          "direction": "RECEIVED"
+        }
+      ]
+    },
+    {
+      "signature": "document (34).pdf|application/pdf|202199",
+      "filename": "document (34).pdf",
+      "mime": "application/pdf",
+      "size_bytes": 202199,
+      "supported": true,
+      "viewer_required": true,
+      "occurrences": [
+        {
+          "account": "SBU",
+          "date": "2023-03-23",
+          "subject": "RE: WEBEX CONCURSO 36/2012-06 (SU)",
+          "direction": "RECEIVED"
+        }
+      ]
+    },
+    {
+      "signature": "document (36).pdf|application/pdf|312153",
+      "filename": "document (36).pdf",
+      "mime": "application/pdf",
+      "size_bytes": 312153,
+      "supported": true,
+      "viewer_required": true,
+      "occurrences": [
+        {
+          "account": "Gil",
+          "date": "2022-02-16",
+          "subject": "WEBEX CONCURSO ORDINARIO 36/2012-06 (SU)",
+          "direction": "RECEIVED"
+        }
+      ]
+    },
+    {
+      "signature": "document (40).pdf|application/pdf|249612",
+      "filename": "document (40).pdf",
+      "mime": "application/pdf",
+      "size_bytes": 249612,
+      "supported": true,
+      "viewer_required": true,
+      "occurrences": [
+        {
+          "account": "Gil",
+          "date": "2022-02-21",
+          "subject": "Fwd: SUSPENSIÓN VISTA DE MAÑANA DÍA 22/2/2022 A LAS 9:30 HORAS",
+          "direction": "RECEIVED"
+        },
+        {
+          "account": "Gil",
+          "date": "2022-02-21",
+          "subject": "Re: REITERACIÓN SOLICITUD DE SUSPENSIÓN - CONCURSO ORDINARIO 36/2012-06 (SU)",
+          "direction": "RECEIVED"
+        }
+      ]
+    },
+    {
+      "signature": "document (6).pdf|application/pdf|262293",
+      "filename": "document (6).pdf",
+      "mime": "application/pdf",
+      "size_bytes": 262293,
+      "supported": true,
+      "viewer_required": true,
+      "occurrences": [
+        {
+          "account": "Gil",
+          "date": "2023-05-26",
+          "subject": "Fwd: vista concurso ordinario 36/1212-06 (SU)",
+          "direction": "RECEIVED"
+        },
+        {
+          "account": "Gil",
+          "date": "2023-04-03",
+          "subject": "vista concurso ordinario 36/1212-06 (SU)",
+          "direction": "RECEIVED"
+        }
+      ]
+    },
+    {
+      "signature": "document (65).pdf|application/pdf|246226",
+      "filename": "document (65).pdf",
+      "mime": "application/pdf",
+      "size_bytes": 246226,
+      "supported": true,
+      "viewer_required": true,
+      "occurrences": [
+        {
+          "account": "Gil",
+          "date": "2022-04-01",
+          "subject": "CONCURSO ORDINARIO 36/2012-06 (SU)",
+          "direction": "RECEIVED"
+        }
+      ]
+    },
+    {
+      "signature": "document (66).pdf|application/pdf|260692",
+      "filename": "document (66).pdf",
+      "mime": "application/pdf",
+      "size_bytes": 260692,
+      "supported": true,
+      "viewer_required": true,
+      "occurrences": [
+        {
+          "account": "Gil",
+          "date": "2022-04-01",
+          "subject": "CONCURSO ORDINARIO 36/2012-06 (SU)",
+          "direction": "RECEIVED"
+        }
+      ]
+    },
+    {
+      "signature": "document (67).pdf|application/pdf|810151",
+      "filename": "document (67).pdf",
+      "mime": "application/pdf",
+      "size_bytes": 810151,
+      "supported": true,
+      "viewer_required": true,
+      "occurrences": [
+        {
+          "account": "Gil",
+          "date": "2022-04-01",
+          "subject": "CONCURSO ORDINARIO 36/2012-06 (SU)",
+          "direction": "RECEIVED"
+        }
+      ]
+    },
+    {
+      "signature": "EG 49-26  DECRETO - NO ACCEDER A LO SOLICITADO y ARCHIVO.pdf|application/pdf|176080",
+      "filename": "EG 49-26  DECRETO - NO ACCEDER A LO SOLICITADO y ARCHIVO.pdf",
+      "mime": "application/pdf",
+      "size_bytes": 176080,
+      "supported": true,
+      "viewer_required": true,
+      "occurrences": [
+        {
+          "account": "SBU",
+          "date": "2026-06-04",
+          "subject": "EG 49/2026 - Comunicación Decreto",
+          "direction": "RECEIVED"
+        }
+      ]
+    },
+    {
+      "signature": "EG 49-26 DECRETO REAPERTURA -NO ACCEDER A NUEVA SOLICITUD - ARCHIVO.pdf|application/pdf|213806",
+      "filename": "EG 49-26 DECRETO REAPERTURA -NO ACCEDER A NUEVA SOLICITUD - ARCHIVO.pdf",
+      "mime": "application/pdf",
+      "size_bytes": 213806,
+      "supported": true,
+      "viewer_required": true,
+      "occurrences": [
+        {
+          "account": "SBU",
+          "date": "2026-06-10",
+          "subject": "EG 49/2026 - Comunicación Decreto de fecha 09/06/2026",
+          "direction": "RECEIVED"
+        }
+      ]
+    },
+    {
+      "signature": "Email Colegio Abogados LPGC 20FEB2022.pdf|application/pdf|673819",
+      "filename": "Email Colegio Abogados LPGC 20FEB2022.pdf",
+      "mime": "application/pdf",
+      "size_bytes": 673819,
+      "supported": true,
+      "viewer_required": true,
+      "occurrences": [
+        {
+          "account": "Gil",
+          "date": "2022-02-21",
+          "subject": "SOLICITUD DE SUSPENSIÓN - Re: WEBEX CONCURSO ORDINARIO 36/2012-06 (SU)",
+          "direction": "SENT"
+        }
+      ]
+    },
+    {
+      "signature": "Email Colegio Abogados LPGC denegacion 18FEB2022.pdf|application/pdf|687279",
+      "filename": "Email Colegio Abogados LPGC denegacion 18FEB2022.pdf",
+      "mime": "application/pdf",
+      "size_bytes": 687279,
+      "supported": true,
+      "viewer_required": true,
+      "occurrences": [
+        {
+          "account": "Gil",
+          "date": "2022-02-21",
+          "subject": "REITERACIÓN SOLICITUD DE SUSPENSIÓN - CONCURSO ORDINARIO 36/2012-06 (SU)",
+          "direction": "SENT"
+        }
+      ]
+    },
+    {
+      "signature": "Email Mercantil 1 LPGC 20FEB2022.pdf|application/pdf|580975",
+      "filename": "Email Mercantil 1 LPGC 20FEB2022.pdf",
+      "mime": "application/pdf",
+      "size_bytes": 580975,
+      "supported": true,
+      "viewer_required": true,
+      "occurrences": [
+        {
+          "account": "Gil",
+          "date": "2022-02-21",
+          "subject": "SOLICITUD DE SUSPENSIÓN - Re: WEBEX CONCURSO ORDINARIO 36/2012-06 (SU)",
+          "direction": "SENT"
+        }
+      ]
+    },
+    {
+      "signature": "Fiscalia Anticorrupcion - Comunicacion de alerta pertinente a alegaciones de fraude y corrupcion en Canarias 20ENE2025.pdf|application/pdf|271698",
+      "filename": "Fiscalia Anticorrupcion - Comunicacion de alerta pertinente a alegaciones de fraude y corrupcion en Canarias 20ENE2025.pdf",
+      "mime": "application/pdf",
+      "size_bytes": 271698,
+      "supported": true,
+      "viewer_required": true,
+      "occurrences": [
+        {
+          "account": "SBU",
+          "date": "2025-01-20",
+          "subject": "Fiscalía Anticorrupción - Comunicación de alerta pertinente a alegaciones de fraude y corrupción en Canarias 20ENE2025",
+          "direction": "SENT"
+        },
+        {
+          "account": "SBU",
+          "date": "2025-01-20",
+          "subject": "Fiscalía Anticorrupción - Comunicación de alerta pertinente a alegaciones de fraude y corrupción en Canarias 20ENE2025",
+          "direction": "SENT"
+        },
+        {
+          "account": "SBU",
+          "date": "2025-01-20",
+          "subject": "Fiscalía Anticorrupción - Comunicación de alerta pertinente a alegaciones de fraude y corrupción en Canarias 20ENE2025",
+          "direction": "SENT"
+        }
+      ]
+    },
+    {
+      "signature": "Fiscalía de la Comunidad Autónoma de Canarias 4 Febrero 2025.pdf|application/pdf|3917036",
+      "filename": "Fiscalía de la Comunidad Autónoma de Canarias 4 Febrero 2025.pdf",
+      "mime": "application/pdf",
+      "size_bytes": 3917036,
+      "supported": true,
+      "viewer_required": true,
+      "occurrences": [
+        {
+          "account": "SBU",
+          "date": "2025-02-04",
+          "subject": "Fwd: Fiscalía Anticorrupción - Comunicación de alerta pertinente a alegaciones de fraude y corrupción en Canarias 20ENE2025",
+          "direction": "SENT"
+        }
+      ]
+    },
+    {
+      "signature": "GIL MARER.pdf|application/pdf|2028766",
+      "filename": "GIL MARER.pdf",
+      "mime": "application/pdf",
+      "size_bytes": 2028766,
+      "supported": true,
+      "viewer_required": true,
+      "occurrences": [
+        {
+          "account": "SBU",
+          "date": "2025-09-26",
+          "subject": "DENUNCIA N.R. 1353//(LM) EXP. GUB.352/2025 - R.S. 1542",
+          "direction": "RECEIVED"
+        }
+      ]
+    },
+    {
+      "signature": "GM Letter to FGS 5JUN2025_250605_214144.pdf|application/pdf|231273",
+      "filename": "GM Letter to FGS 5JUN2025_250605_214144.pdf",
+      "mime": "application/pdf",
+      "size_bytes": 231273,
+      "supported": true,
+      "viewer_required": true,
+      "occurrences": [
+        {
+          "account": "SBU",
+          "date": "2025-06-11",
+          "subject": "Fwd: N.Ref ST 104-25 - Respuesta urgente – Comunicación estructural a la Fiscalía General",
+          "direction": "SENT"
+        },
+        {
+          "account": "SBU",
+          "date": "2025-06-09",
+          "subject": "N.Ref ST 104-25 - Respuesta urgente – Comunicación estructural a la Fiscalía General",
+          "direction": "SENT"
+        },
+        {
+          "account": "SBU",
+          "date": "2025-06-05",
+          "subject": "Re: N.Ref ST 104-25 - Respuesta urgente – Comunicación estructural a la Fiscalía General",
+          "direction": "SENT"
+        }
+      ]
+    },
+    {
+      "signature": "GUB 0086_2026 - Trámite de Inicio y Archivo - _DECRETO EXP. GUB. 86.2026.pdf__firmado.pdf|application/pdf|271911",
+      "filename": "GUB 0086_2026 - Trámite de Inicio y Archivo - _DECRETO EXP. GUB. 86.2026.pdf__firmado.pdf",
+      "mime": "application/pdf",
+      "size_bytes": 271911,
+      "supported": true,
+      "viewer_required": true,
+      "occurrences": [
+        {
+          "account": "SBU",
+          "date": "2026-08-10",
+          "subject": "COMUNICACION EXP. GUB. 86.2026",
+          "direction": "RECEIVED"
+        }
+      ]
+    },
+    {
+      "signature": "image001.png|image/png|21458",
+      "filename": "image001.png",
+      "mime": "image/png",
+      "size_bytes": 21458,
+      "supported": true,
+      "viewer_required": false,
+      "occurrences": [
+        {
+          "account": "SBU",
+          "date": "2025-06-13",
+          "subject": "Re: N.Ref ST 104-25",
+          "direction": "SENT"
+        }
+      ]
+    },
+    {
+      "signature": "image001.png|image/png|6532",
+      "filename": "image001.png",
+      "mime": "image/png",
+      "size_bytes": 6532,
+      "supported": true,
+      "viewer_required": false,
+      "occurrences": [
+        {
+          "account": "SBU",
+          "date": "2025-06-11",
+          "subject": "Fwd: N.Ref ST 104-25 - Respuesta urgente – Comunicación estructural a la Fiscalía General",
+          "direction": "SENT"
+        },
+        {
+          "account": "SBU",
+          "date": "2025-06-09",
+          "subject": "N.Ref ST 104-25 - Respuesta urgente – Comunicación estructural a la Fiscalía General",
+          "direction": "SENT"
+        },
+        {
+          "account": "SBU",
+          "date": "2025-06-05",
+          "subject": "Re: N.Ref ST 104-25 - Respuesta urgente – Comunicación estructural a la Fiscalía General",
+          "direction": "SENT"
+        }
+      ]
+    },
+    {
+      "signature": "image002.png|image/png|14812",
+      "filename": "image002.png",
+      "mime": "image/png",
+      "size_bytes": 14812,
+      "supported": true,
+      "viewer_required": false,
+      "occurrences": [
+        {
+          "account": "Gil",
+          "date": "2022-02-21",
+          "subject": "REITERACIÓN SOLICITUD DE SUSPENSIÓN - CONCURSO ORDINARIO 36/2012-06 (SU)",
+          "direction": "SENT"
+        }
+      ]
+    },
+    {
+      "signature": "Incoación Expediente.doc|application/octet-stream|64512",
+      "filename": "Incoación Expediente.doc",
+      "mime": "application/octet-stream",
+      "size_bytes": 64512,
+      "supported": false,
+      "viewer_required": false,
+      "occurrences": [
+        {
+          "account": "SBU",
+          "date": "2025-03-03",
+          "subject": "E.G. 33-25",
+          "direction": "RECEIVED"
+        }
+      ]
+    },
+    {
+      "signature": "J00003864_COMUNICACION_PENAL_ACOSTA_MATOS_AEAT_RIC_UE_Y_ANEXO_02AGO2026.pdf|application/pdf|5543053",
+      "filename": "J00003864_COMUNICACION_PENAL_ACOSTA_MATOS_AEAT_RIC_UE_Y_ANEXO_02AGO2026.pdf",
+      "mime": "application/pdf",
+      "size_bytes": 5543053,
+      "supported": true,
+      "viewer_required": true,
+      "occurrences": [
+        {
+          "account": "SBU",
+          "date": "2026-08-10",
+          "subject": "COMUNICACION EXP. GUB. 86.2026",
+          "direction": "RECEIVED"
+        }
+      ]
+    },
+    {
+      "signature": "Justificante de Presentación REG.pdf|application/pdf|84919",
+      "filename": "Justificante de Presentación REG.pdf",
+      "mime": "application/pdf",
+      "size_bytes": 84919,
+      "supported": true,
+      "viewer_required": true,
+      "occurrences": [
+        {
+          "account": "SBU",
+          "date": "2026-01-07",
+          "subject": "RV: INFORMES DEL MINISTERIO FISCAL EN DP 91/2023 JCI Nº 3 y ROLLO DE SALA 120/2024 SECCIÓN 3ª SALA DE LO PENAL AN",
+          "direction": "RECEIVED"
+        }
+      ]
+    },
+    {
+      "signature": "Justificante de Presentación REG.pdf|application/pdf|85411",
+      "filename": "Justificante de Presentación REG.pdf",
+      "mime": "application/pdf",
+      "size_bytes": 85411,
+      "supported": true,
+      "viewer_required": true,
+      "occurrences": [
+        {
+          "account": "SBU",
+          "date": "2026-06-10",
+          "subject": "EG 49/2026 - Comunicación Decreto de fecha 09/06/2026",
+          "direction": "RECEIVED"
+        }
+      ]
+    },
+    {
+      "signature": "Justificante de Presentación REG.pdf|application/pdf|85583",
+      "filename": "Justificante de Presentación REG.pdf",
+      "mime": "application/pdf",
+      "size_bytes": 85583,
+      "supported": true,
+      "viewer_required": true,
+      "occurrences": [
+        {
+          "account": "SBU",
+          "date": "2026-06-04",
+          "subject": "EG 49/2026 - Comunicación Decreto",
+          "direction": "RECEIVED"
+        }
+      ]
+    },
+    {
+      "signature": "Justificante de Presentación REG.pdf|application/pdf|86099",
+      "filename": "Justificante de Presentación REG.pdf",
+      "mime": "application/pdf",
+      "size_bytes": 86099,
+      "supported": true,
+      "viewer_required": true,
+      "occurrences": [
+        {
+          "account": "SBU",
+          "date": "2026-08-10",
+          "subject": "COMUNICACION EXP. GUB. 86.2026",
+          "direction": "RECEIVED"
+        }
+      ]
+    },
+    {
+      "signature": "LA_B_20022022_ES (Gil Marer Solicitud de Cita para Abogado de Oficio) 20FEB2022.pdf|application/pdf|141145",
+      "filename": "LA_B_20022022_ES (Gil Marer Solicitud de Cita para Abogado de Oficio) 20FEB2022.pdf",
+      "mime": "application/pdf",
+      "size_bytes": 141145,
+      "supported": true,
+      "viewer_required": true,
+      "occurrences": [
+        {
+          "account": "Gil",
+          "date": "2022-02-20",
+          "subject": "Fwd: Procedimiento 36/2012 - Fwd: [European e-Justice Portal] Formulario cumplimentado – Impresos para solicitar la asistencia jurídica gratuita – Formulario para la transmisión de solicitudes de asistencia jurídica gratuita – 20/02/2022 23:08:04",
+          "direction": "SENT"
+        },
+        {
+          "account": "Gil",
+          "date": "2022-02-20",
+          "subject": "Procedimiento 36/2012 - Fwd: [European e-Justice Portal] Formulario cumplimentado – Impresos para solicitar la asistencia jurídica gratuita – Formulario para la transmisión de solicitudes de asistencia jurídica gratuita – 20/02/2022 23:08:04",
+          "direction": "SENT"
+        }
+      ]
+    },
+    {
+      "signature": "LA_B_20022022_ES (Gil Marer Solicitud de Cita para Abogado de Oficio) 20FEB2022.pdf|application/pdf|238908",
+      "filename": "LA_B_20022022_ES (Gil Marer Solicitud de Cita para Abogado de Oficio) 20FEB2022.pdf",
+      "mime": "application/pdf",
+      "size_bytes": 238908,
+      "supported": true,
+      "viewer_required": true,
+      "occurrences": [
+        {
+          "account": "Gil",
+          "date": "2022-02-21",
+          "subject": "REITERACIÓN SOLICITUD DE SUSPENSIÓN - CONCURSO ORDINARIO 36/2012-06 (SU)",
+          "direction": "SENT"
+        },
+        {
+          "account": "Gil",
+          "date": "2022-02-21",
+          "subject": "SOLICITUD DE SUSPENSIÓN - Re: WEBEX CONCURSO ORDINARIO 36/2012-06 (SU)",
+          "direction": "SENT"
+        }
+      ]
+    },
+    {
+      "signature": "Nueva documentación E.G.58/2026.eml|message/rfc822|15808",
+      "filename": "Nueva documentación E.G.58/2026.eml",
+      "mime": "message/rfc822",
+      "size_bytes": 15808,
+      "supported": true,
+      "viewer_required": false,
+      "occurrences": [
+        {
+          "account": "SBU",
+          "date": "2026-09-08",
+          "subject": "RV: Nueva documentación E.G.58/2026",
+          "direction": "RECEIVED"
+        }
+      ]
+    },
+    {
+      "signature": "OFCIO DENUNCIANTE EXP. GUB. 86.2026.pdf|application/pdf|240111",
+      "filename": "OFCIO DENUNCIANTE EXP. GUB. 86.2026.pdf",
+      "mime": "application/pdf",
+      "size_bytes": 240111,
+      "supported": true,
+      "viewer_required": true,
+      "occurrences": [
+        {
+          "account": "SBU",
+          "date": "2026-08-10",
+          "subject": "COMUNICACION EXP. GUB. 86.2026",
+          "direction": "RECEIVED"
+        }
+      ]
+    },
+    {
+      "signature": "oficio 19-02-2026 D.Investigación 22-2026.pdf|application/pdf|233994",
+      "filename": "oficio 19-02-2026 D.Investigación 22-2026.pdf",
+      "mime": "application/pdf",
+      "size_bytes": 233994,
+      "supported": true,
+      "viewer_required": true,
+      "occurrences": [
+        {
+          "account": "SBU",
+          "date": "2026-02-19",
+          "subject": "Notificación oficio y decreto de fecha 19/02/2026, D.Investigación 22/2026",
+          "direction": "RECEIVED"
+        }
+      ]
+    },
+    {
+      "signature": "oficio 22-26.pdf|application/pdf|235348",
+      "filename": "oficio 22-26.pdf",
+      "mime": "application/pdf",
+      "size_bytes": 235348,
+      "supported": true,
+      "viewer_required": true,
+      "occurrences": [
+        {
+          "account": "SBU",
+          "date": "2026-03-03",
+          "subject": "NOTIFICACION DI.22-26",
+          "direction": "RECEIVED"
+        }
+      ]
+    },
+    {
+      "signature": "oficio 22.26.pdf|application/pdf|230183",
+      "filename": "oficio 22.26.pdf",
+      "mime": "application/pdf",
+      "size_bytes": 230183,
+      "supported": true,
+      "viewer_required": true,
+      "occurrences": [
+        {
+          "account": "SBU",
+          "date": "2026-07-10",
+          "subject": "notificacion decreto 10.07.2026",
+          "direction": "RECEIVED"
+        }
+      ]
+    },
+    {
+      "signature": "OFICIO D.I. 22-26.pdf|application/pdf|230276",
+      "filename": "OFICIO D.I. 22-26.pdf",
+      "mime": "application/pdf",
+      "size_bytes": 230276,
+      "supported": true,
+      "viewer_required": true,
+      "occurrences": [
+        {
+          "account": "SBU",
+          "date": "2026-06-03",
+          "subject": "NOTIFICACIÓN D.I. 22-26",
+          "direction": "RECEIVED"
+        }
+      ]
+    },
+    {
+      "signature": "oficio de 15-09-26 D.Investigación nº22-26.pdf|application/pdf|231137",
+      "filename": "oficio de 15-09-26 D.Investigación nº22-26.pdf",
+      "mime": "application/pdf",
+      "size_bytes": 231137,
+      "supported": true,
+      "viewer_required": true,
+      "occurrences": [
+        {
+          "account": "SBU",
+          "date": "2026-09-16",
+          "subject": "Notificación oficio+ decreto de 15/09/2026 dictado en las D.Investigación nº22/2026",
+          "direction": "RECEIVED"
+        }
+      ]
+    },
+    {
+      "signature": "OFICIO DI 22-26.pdf|application/pdf|230988",
+      "filename": "OFICIO DI 22-26.pdf",
+      "mime": "application/pdf",
+      "size_bytes": 230988,
+      "supported": true,
+      "viewer_required": true,
+      "occurrences": [
+        {
+          "account": "SBU",
+          "date": "2026-07-02",
+          "subject": "notificacion decreto 30.06.2026 d.i. 22-26",
+          "direction": "RECEIVED"
+        }
+      ]
+    },
+    {
+      "signature": "oficio notificación a denunciante D.Investigación 113-2022.pdf|application/pdf|234332",
+      "filename": "oficio notificación a denunciante D.Investigación 113-2022.pdf",
+      "mime": "application/pdf",
+      "size_bytes": 234332,
+      "supported": true,
+      "viewer_required": true,
+      "occurrences": [
+        {
+          "account": "SBU",
+          "date": "2026-02-25",
+          "subject": "Notificación oficio y decreto , D.Investigación 113/2022",
+          "direction": "RECEIVED"
+        }
+      ]
+    },
+    {
+      "signature": "OFICIO NOTIFICACIÓN AL DENUNCIANTE 09.03.2026 DIP Nº 2-2026.pdf|application/pdf|248997",
+      "filename": "OFICIO NOTIFICACIÓN AL DENUNCIANTE 09.03.2026 DIP Nº 2-2026.pdf",
+      "mime": "application/pdf",
+      "size_bytes": 248997,
+      "supported": true,
+      "viewer_required": true,
+      "occurrences": [
+        {
+          "account": "SBU",
+          "date": "2026-03-09",
+          "subject": "NOTIFICACIÓN DECRETO DE ARCHIVO DE 06.03.2026 DILIGENCIAS DE INVESTIGACIÓN PREPROCESALES Nº 2/2026",
+          "direction": "RECEIVED"
+        }
+      ]
+    },
+    {
+      "signature": "oficio notificación archivo denunciante D.Investigación 22-2026.pdf|application/pdf|245133",
+      "filename": "oficio notificación archivo denunciante D.Investigación 22-2026.pdf",
+      "mime": "application/pdf",
+      "size_bytes": 245133,
+      "supported": true,
+      "viewer_required": true,
+      "occurrences": [
+        {
+          "account": "SBU",
+          "date": "2026-02-13",
+          "subject": "Notificación oficio y decreto archivo a la parte denunciante D. Investigación 22/2026",
+          "direction": "RECEIVED"
+        }
+      ]
+    },
+    {
+      "signature": "oficio notificación decretos de 13-02-2026, D. Investigación 22-2026.pdf|application/pdf|245047",
+      "filename": "oficio notificación decretos de 13-02-2026, D. Investigación 22-2026.pdf",
+      "mime": "application/pdf",
+      "size_bytes": 245047,
+      "supported": true,
+      "viewer_required": true,
+      "occurrences": [
+        {
+          "account": "SBU",
+          "date": "2026-02-13",
+          "subject": "Notificación oficio y dos decretos de fecha 13/02/2026, D.Investigación 22/2026",
+          "direction": "RECEIVED"
+        }
+      ]
+    },
+    {
+      "signature": "OFICIO Y DECRETO EXP. 745-26.pdf|application/pdf|1111997",
+      "filename": "OFICIO Y DECRETO EXP. 745-26.pdf",
+      "mime": "application/pdf",
+      "size_bytes": 1111997,
+      "supported": true,
+      "viewer_required": true,
+      "occurrences": [
+        {
+          "account": "SBU",
+          "date": "2026-08-26",
+          "subject": "NOTIFICACIÓN OFICIO Y DECRETO EXP. GUB. 745/2026",
+          "direction": "RECEIVED"
+        }
+      ]
+    },
+    {
+      "signature": "Oposicion a la Transferencia de Denuncia y Solicitud Urgente de Revisión 5 Febrero 2025.pdf|application/pdf|65169",
+      "filename": "Oposicion a la Transferencia de Denuncia y Solicitud Urgente de Revisión 5 Febrero 2025.pdf",
+      "mime": "application/pdf",
+      "size_bytes": 65169,
+      "supported": true,
+      "viewer_required": true,
+      "occurrences": [
+        {
+          "account": "SBU",
+          "date": "2025-02-05",
+          "subject": "Re: Fiscalía Anticorrupción - Comunicación de alerta pertinente a alegaciones de fraude y corrupción en Canarias 20ENE2025",
+          "direction": "SENT"
+        }
+      ]
+    },
+    {
+      "signature": "Providencia Declaracion por Webex 15FEB2022.pdf|application/pdf|326758",
+      "filename": "Providencia Declaracion por Webex 15FEB2022.pdf",
+      "mime": "application/pdf",
+      "size_bytes": 326758,
+      "supported": true,
+      "viewer_required": true,
+      "occurrences": [
+        {
+          "account": "Gil",
+          "date": "2022-02-20",
+          "subject": "Fwd: Procedimiento 36/2012 - Fwd: [European e-Justice Portal] Formulario cumplimentado – Impresos para solicitar la asistencia jurídica gratuita – Formulario para la transmisión de solicitudes de asistencia jurídica gratuita – 20/02/2022 23:08:04",
+          "direction": "SENT"
+        },
+        {
+          "account": "Gil",
+          "date": "2022-02-20",
+          "subject": "Procedimiento 36/2012 - Fwd: [European e-Justice Portal] Formulario cumplimentado – Impresos para solicitar la asistencia jurídica gratuita – Formulario para la transmisión de solicitudes de asistencia jurídica gratuita – 20/02/2022 23:08:04",
+          "direction": "SENT"
+        }
+      ]
+    },
+    {
+      "signature": "pwc-five-actors-plus-ac-2016-knowledge-checkpoint-ES.png|image/png|489983",
+      "filename": "pwc-five-actors-plus-ac-2016-knowledge-checkpoint-ES.png",
+      "mime": "image/png",
+      "size_bytes": 489983,
+      "supported": true,
+      "viewer_required": false,
+      "occurrences": [
+        {
+          "account": "SBU",
+          "date": "2026-09-01",
+          "subject": "RE: Exp. Gub. 86/2026 — trazabilidad de la remisión a Arrecife; Pink/AEAT y fuentes profesionales sobrevenidas",
+          "direction": "RECEIVED"
+        },
+        {
+          "account": "SBU",
+          "date": "2026-08-26",
+          "subject": "ACTUALIZACIÓN 26/08/2026 — Exp. Gub. 86/2026 — nueva notificación oficial FEDER Sun Park–MYND",
+          "direction": "SENT"
+        },
+        {
+          "account": "SBU",
+          "date": "2026-08-26",
+          "subject": "ACTUALIZACIÓN 26/08/2026 — Exp. Gub. 86/2026 — notificación oficial FEDER Sun Park–MYND y preservación",
+          "direction": "SENT"
+        },
+        {
+          "account": "SBU",
+          "date": "2026-08-26",
+          "subject": "ACTUALIZACIÓN 26/08/2026 — DI 22/2026 / REGAGE26e00070237051 — notificación oficial FEDER Sun Park–MYND y preservación",
+          "direction": "SENT"
+        },
+        {
+          "account": "SBU",
+          "date": "2026-08-25",
+          "subject": "Re: E.G. 112/2026 — aclaración, remisión trazable y preservación inmediata",
+          "direction": "SENT"
+        },
+        {
+          "account": "SBU",
+          "date": "2026-08-20",
+          "subject": "DP 748/2026 · ETJ 163/2020 · Matkator / Cuatrecasas — aportación sobrevenida, diligencias finitas y continuidad con denuncia previa",
+          "direction": "SENT"
+        },
+        {
+          "account": "SBU",
+          "date": "2026-08-20",
+          "subject": "Exp. Gub. 86/2026 — trazabilidad de la remisión a Arrecife; Pink/AEAT y fuentes profesionales sobrevenidas",
+          "direction": "SENT"
+        },
+        {
+          "account": "SBU",
+          "date": "2026-08-20",
+          "subject": "Exp. Gub. 352/2025 / REGAGE26e00070236245 — aportación sobrevenida, aforamiento separado y perímetro profesional/económico Sun Park",
+          "direction": "SENT"
+        },
+        {
+          "account": "SBU",
+          "date": "2026-08-20",
+          "subject": "A la atención del Fiscal de Sala Coordinador de Delitos Económicos — Sun Park: matriz económica, módulo aforado y fuentes profesionales",
+          "direction": "SENT"
+        },
+        {
+          "account": "SBU",
+          "date": "2026-08-20",
+          "subject": "ST 553/2026 / ST 104/2025 — módulo aforado, expansión profesional y solicitud de asociación técnica",
+          "direction": "SENT"
+        },
+        {
+          "account": "SBU",
+          "date": "2026-08-20",
+          "subject": "A la Fiscal General del Estado — coordinación central, módulo aforado y expansión profesional/económica Sun Park",
+          "direction": "SENT"
+        },
+        {
+          "account": "SBU",
+          "date": "2026-08-20",
+          "subject": "A la atención de la Fiscal de Sala Jefa de la Inspección Fiscal — aforamiento, trazabilidad y fuentes profesionales Sun Park",
+          "direction": "SENT"
+        },
+        {
+          "account": "SBU",
+          "date": "2026-08-20",
+          "subject": "DI 22/2026 / REGAGE26e00070237051 — módulo aforado separado, fuentes profesionales y coordinación con Arrecife",
+          "direction": "SENT"
+        },
+        {
+          "account": "SBU",
+          "date": "2026-08-20",
+          "subject": "Re: Exp.G. 112/2026",
+          "direction": "SENT"
+        },
+        {
+          "account": "SBU",
+          "date": "2026-08-20",
+          "subject": "EG 112/2026 — precisión sobre aforamiento, objeto separado y fuentes sobrevenidas",
+          "direction": "SENT"
+        },
+        {
+          "account": "SBU",
+          "date": "2026-08-20",
+          "subject": "DI 22/2026 / REGAGE26e00070237051 — módulo aforado separado, fuentes profesionales y coordinación con Arrecife",
+          "direction": "SENT"
+        },
+        {
+          "account": "SBU",
+          "date": "2026-08-20",
+          "subject": "Exp. Gub. 86/2026 — aportación sobrevenida, módulo aforado separado y preservación PwC/Grant Thornton/RSM",
+          "direction": "SENT"
+        },
+        {
+          "account": "SBU",
+          "date": "2026-08-20",
+          "subject": "Exp. Gub. 86/2026 — trazabilidad de la remisión a Arrecife y fuentes sobrevenidas de la dimensión fiscal/profesional",
+          "direction": "SENT"
+        },
+        {
+          "account": "SBU",
+          "date": "2026-08-20",
+          "subject": "DI 22/2026 / REGAGE26e00070237051 — aportación sobrevenida, custodia y coordinación con Arrecife",
+          "direction": "SENT"
+        },
+        {
+          "account": "SBU",
+          "date": "2026-08-20",
+          "subject": "Exp. Gub. 86/2026 — aportación sobrevenida y preservación de fuentes PwC, Grant Thornton y RSM/San Telmo",
+          "direction": "SENT"
+        }
+      ]
+    },
+    {
+      "signature": "RESPUESTA INMEDIATA A FGE – RECHAZO FORMAL Y ESCALACIÓN 20FEB2025.pdf|application/pdf|189482",
+      "filename": "RESPUESTA INMEDIATA A FGE – RECHAZO FORMAL Y ESCALACIÓN 20FEB2025.pdf",
+      "mime": "application/pdf",
+      "size_bytes": 189482,
+      "supported": true,
+      "viewer_required": true,
+      "occurrences": [
+        {
+          "account": "SBU",
+          "date": "2025-02-20",
+          "subject": "Re: N.Ref ST 104-25",
+          "direction": "SENT"
+        }
+      ]
+    },
+    {
+      "signature": "san-telmo-ricpe-sun-park-stamp-v1 (2).png|image/png|617049",
+      "filename": "san-telmo-ricpe-sun-park-stamp-v1 (2).png",
+      "mime": "image/png",
+      "size_bytes": 617049,
+      "supported": true,
+      "viewer_required": false,
+      "occurrences": [
+        {
+          "account": "SBU",
+          "date": "2026-08-20",
+          "subject": "DP 748/2026 · ETJ 163/2020 · Matkator / Cuatrecasas — aportación sobrevenida, diligencias finitas y continuidad con denuncia previa",
+          "direction": "SENT"
+        }
+      ]
+    },
+    {
+      "signature": "san-telmo-ricpe-sun-park-stamp-v1-ES.png|image/png|827315",
+      "filename": "san-telmo-ricpe-sun-park-stamp-v1-ES.png",
+      "mime": "image/png",
+      "size_bytes": 827315,
+      "supported": true,
+      "viewer_required": false,
+      "occurrences": [
+        {
+          "account": "SBU",
+          "date": "2026-09-01",
+          "subject": "RE: Exp. Gub. 86/2026 — trazabilidad de la remisión a Arrecife; Pink/AEAT y fuentes profesionales sobrevenidas",
+          "direction": "RECEIVED"
+        },
+        {
+          "account": "SBU",
+          "date": "2026-08-26",
+          "subject": "ACTUALIZACIÓN 26/08/2026 — Exp. Gub. 86/2026 — nueva notificación oficial FEDER Sun Park–MYND",
+          "direction": "SENT"
+        },
+        {
+          "account": "SBU",
+          "date": "2026-08-26",
+          "subject": "ACTUALIZACIÓN 26/08/2026 — Exp. Gub. 86/2026 — notificación oficial FEDER Sun Park–MYND y preservación",
+          "direction": "SENT"
+        },
+        {
+          "account": "SBU",
+          "date": "2026-08-26",
+          "subject": "ACTUALIZACIÓN 26/08/2026 — DI 22/2026 / REGAGE26e00070237051 — notificación oficial FEDER Sun Park–MYND y preservación",
+          "direction": "SENT"
+        },
+        {
+          "account": "SBU",
+          "date": "2026-08-25",
+          "subject": "Re: E.G. 112/2026 — aclaración, remisión trazable y preservación inmediata",
+          "direction": "SENT"
+        },
+        {
+          "account": "SBU",
+          "date": "2026-08-20",
+          "subject": "Exp. Gub. 86/2026 — trazabilidad de la remisión a Arrecife; Pink/AEAT y fuentes profesionales sobrevenidas",
+          "direction": "SENT"
+        },
+        {
+          "account": "SBU",
+          "date": "2026-08-20",
+          "subject": "Exp. Gub. 352/2025 / REGAGE26e00070236245 — aportación sobrevenida, aforamiento separado y perímetro profesional/económico Sun Park",
+          "direction": "SENT"
+        },
+        {
+          "account": "SBU",
+          "date": "2026-08-20",
+          "subject": "A la atención del Fiscal de Sala Coordinador de Delitos Económicos — Sun Park: matriz económica, módulo aforado y fuentes profesionales",
+          "direction": "SENT"
+        },
+        {
+          "account": "SBU",
+          "date": "2026-08-20",
+          "subject": "ST 553/2026 / ST 104/2025 — módulo aforado, expansión profesional y solicitud de asociación técnica",
+          "direction": "SENT"
+        },
+        {
+          "account": "SBU",
+          "date": "2026-08-20",
+          "subject": "A la Fiscal General del Estado — coordinación central, módulo aforado y expansión profesional/económica Sun Park",
+          "direction": "SENT"
+        },
+        {
+          "account": "SBU",
+          "date": "2026-08-20",
+          "subject": "A la atención de la Fiscal de Sala Jefa de la Inspección Fiscal — aforamiento, trazabilidad y fuentes profesionales Sun Park",
+          "direction": "SENT"
+        },
+        {
+          "account": "SBU",
+          "date": "2026-08-20",
+          "subject": "DI 22/2026 / REGAGE26e00070237051 — módulo aforado separado, fuentes profesionales y coordinación con Arrecife",
+          "direction": "SENT"
+        },
+        {
+          "account": "SBU",
+          "date": "2026-08-20",
+          "subject": "Re: Exp.G. 112/2026",
+          "direction": "SENT"
+        },
+        {
+          "account": "SBU",
+          "date": "2026-08-20",
+          "subject": "EG 112/2026 — precisión sobre aforamiento, objeto separado y fuentes sobrevenidas",
+          "direction": "SENT"
+        },
+        {
+          "account": "SBU",
+          "date": "2026-08-20",
+          "subject": "DI 22/2026 / REGAGE26e00070237051 — módulo aforado separado, fuentes profesionales y coordinación con Arrecife",
+          "direction": "SENT"
+        },
+        {
+          "account": "SBU",
+          "date": "2026-08-20",
+          "subject": "Exp. Gub. 86/2026 — aportación sobrevenida, módulo aforado separado y preservación PwC/Grant Thornton/RSM",
+          "direction": "SENT"
+        },
+        {
+          "account": "SBU",
+          "date": "2026-08-20",
+          "subject": "Exp. Gub. 86/2026 — trazabilidad de la remisión a Arrecife y fuentes sobrevenidas de la dimensión fiscal/profesional",
+          "direction": "SENT"
+        },
+        {
+          "account": "SBU",
+          "date": "2026-08-20",
+          "subject": "DI 22/2026 / REGAGE26e00070237051 — aportación sobrevenida, custodia y coordinación con Arrecife",
+          "direction": "SENT"
+        },
+        {
+          "account": "SBU",
+          "date": "2026-08-20",
+          "subject": "Exp. Gub. 86/2026 — aportación sobrevenida y preservación de fuentes PwC, Grant Thornton y RSM/San Telmo",
+          "direction": "SENT"
+        }
+      ]
+    },
+    {
+      "signature": "Solicitud Abogado Oficio 17FEB2022.pdf|application/pdf|1268663",
+      "filename": "Solicitud Abogado Oficio 17FEB2022.pdf",
+      "mime": "application/pdf",
+      "size_bytes": 1268663,
+      "supported": true,
+      "viewer_required": true,
+      "occurrences": [
+        {
+          "account": "Gil",
+          "date": "2022-02-17",
+          "subject": "Solicitud Asistencia Legal CONCURSO ORDINARIO 36/2012-06",
+          "direction": "SENT"
+        }
+      ]
+    },
+    {
+      "signature": "SOLICITUD ASISTENCIA GRATUITA GIL MARER 17FEB2022.pdf|application/pdf|126118",
+      "filename": "SOLICITUD ASISTENCIA GRATUITA GIL MARER 17FEB2022.pdf",
+      "mime": "application/pdf",
+      "size_bytes": 126118,
+      "supported": true,
+      "viewer_required": true,
+      "occurrences": [
+        {
+          "account": "Gil",
+          "date": "2022-02-17",
+          "subject": "Solicitud Asistencia Legal CONCURSO ORDINARIO 36/2012-06",
+          "direction": "SENT"
+        }
+      ]
+    },
+    {
+      "signature": "SOLICITUD DE SUSPENSION 36-2012 Gil Marer 20FEB2022.pdf|application/pdf|251913",
+      "filename": "SOLICITUD DE SUSPENSION 36-2012 Gil Marer 20FEB2022.pdf",
+      "mime": "application/pdf",
+      "size_bytes": 251913,
+      "supported": true,
+      "viewer_required": true,
+      "occurrences": [
+        {
+          "account": "Gil",
+          "date": "2022-02-21",
+          "subject": "REITERACIÓN SOLICITUD DE SUSPENSIÓN - CONCURSO ORDINARIO 36/2012-06 (SU)",
+          "direction": "SENT"
+        },
+        {
+          "account": "Gil",
+          "date": "2022-02-21",
+          "subject": "SOLICITUD DE SUSPENSIÓN - Re: WEBEX CONCURSO ORDINARIO 36/2012-06 (SU)",
+          "direction": "SENT"
+        }
+      ]
+    },
+    {
+      "signature": "Solicitud declaracion por videoconferencia-juzgado (Concurso Ordinario 36-2012) 14FEB2022.pdf|application/pdf|130424",
+      "filename": "Solicitud declaracion por videoconferencia-juzgado (Concurso Ordinario 36-2012) 14FEB2022.pdf",
+      "mime": "application/pdf",
+      "size_bytes": 130424,
+      "supported": true,
+      "viewer_required": true,
+      "occurrences": [
+        {
+          "account": "Gil",
+          "date": "2022-02-14",
+          "subject": "Solicitud de declaracion por videoconferencia o Juzgado en Madrid - Concurso Ordinario 36/2012",
+          "direction": "SENT"
+        }
+      ]
+    },
+    {
+      "signature": "ST 104-25 ACUSE PARTICULAR 06-06-25 FIRMADO.pdf|application/pdf|353472",
+      "filename": "ST 104-25 ACUSE PARTICULAR 06-06-25 FIRMADO.pdf",
+      "mime": "application/pdf",
+      "size_bytes": 353472,
+      "supported": true,
+      "viewer_required": true,
+      "occurrences": [
+        {
+          "account": "SBU",
+          "date": "2025-06-13",
+          "subject": "N.Ref ST 104-25",
+          "direction": "RECEIVED"
+        }
+      ]
+    },
+    {
+      "signature": "ST 104-25 ACUSE PARTICULAR 10-06-25 FIRMADO.pdf|application/pdf|362525",
+      "filename": "ST 104-25 ACUSE PARTICULAR 10-06-25 FIRMADO.pdf",
+      "mime": "application/pdf",
+      "size_bytes": 362525,
+      "supported": true,
+      "viewer_required": true,
+      "occurrences": [
+        {
+          "account": "SBU",
+          "date": "2025-06-13",
+          "subject": "N.Ref ST 104-25",
+          "direction": "RECEIVED"
+        }
+      ]
+    },
+    {
+      "signature": "ST 104-25 ACUSE PARTICULAR 17-12-25 FIRMADO.pdf|application/pdf|753737",
+      "filename": "ST 104-25 ACUSE PARTICULAR 17-12-25 FIRMADO.pdf",
+      "mime": "application/pdf",
+      "size_bytes": 753737,
+      "supported": true,
+      "viewer_required": true,
+      "occurrences": [
+        {
+          "account": "SBU",
+          "date": "2025-12-18",
+          "subject": "N.Ref ST 104-25",
+          "direction": "RECEIVED"
+        }
+      ]
+    },
+    {
+      "signature": "ST 104-25 ACUSE PARTICULAR 21-02-25 FIRMADO.pdf|application/pdf|530330",
+      "filename": "ST 104-25 ACUSE PARTICULAR 21-02-25 FIRMADO.pdf",
+      "mime": "application/pdf",
+      "size_bytes": 530330,
+      "supported": true,
+      "viewer_required": true,
+      "occurrences": [
+        {
+          "account": "SBU",
+          "date": "2025-02-27",
+          "subject": "N.Ref ST 104-25",
+          "direction": "RECEIVED"
+        }
+      ]
+    },
+    {
+      "signature": "ST 104-25 acuse recibo a particular firmado.pdf|application/pdf|496528",
+      "filename": "ST 104-25 acuse recibo a particular firmado.pdf",
+      "mime": "application/pdf",
+      "size_bytes": 496528,
+      "supported": true,
+      "viewer_required": true,
+      "occurrences": [
+        {
+          "account": "SBU",
+          "date": "2025-02-20",
+          "subject": "N.Ref ST 104-25",
+          "direction": "RECEIVED"
+        }
+      ]
+    },
+    {
+      "signature": "winmail.dat|application/ms-tnef|6667",
+      "filename": "winmail.dat",
+      "mime": "application/ms-tnef",
+      "size_bytes": 6667,
+      "supported": false,
+      "viewer_required": false,
+      "occurrences": [
+        {
+          "account": "SBU",
+          "date": "2025-07-28",
+          "subject": "Leído: Presentación de denuncia por posibles delitos con Documentación soporte",
+          "direction": "RECEIVED"
+        }
+      ]
+    }
+  ]
+}
