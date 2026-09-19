@@ -80,3 +80,34 @@ Priority search families:
 - GitLab public Pages is currently a comparator during the account block, not the freshest procedural source.
 - No absence-of-search-result is converted into non-existence.
 - No adverse outcome is converted into criminal intent.
+
+
+## 19 September P0 escalation additions
+
+The positive-exhaustion definition now includes a separate **Fiscal Superior / competence / attribution** lane.
+
+P0 authority-production targets:
+- signed 29-Jul DP1901 Fiscal report;
+- author name, post and Fiscalía of assignment;
+- reparto/assignment date and assigning authority;
+- any delegation/substitution/avocación;
+- visado/review/instruction;
+- exact corpus and transmission index;
+- explicit competence analysis, if any;
+- certified Ref21 current destination/status;
+- certified Ref24 → DP1901/DIP2 association history;
+- whether REGAGE26e00026303869 / 11-Mar DIP2 correction was available to the 29-Jul Fiscal;
+- any inter-office Fiscalía transmission needed to reconstruct Provincial ↔ Community ↔ court handling;
+- evidence of any later independent review by the Fiscal Superior or FGE/Inspección once formally notified.
+
+The active three-track order is:
+1. DP1901 judicial remedy;
+2. Fiscal Superior urgent notice;
+3. E.G.745 successor + FGE/Inspección incorporation.
+
+Do not infer that the Fiscal Superior had prior personal knowledge merely from office. Once a formal notice is actually registered, future analysis must separately track **receipt → assignment → preservation → review/remittal → response**.
+
+Repository-control sources:
+- `prompts/DP1901_EG745_FISCAL_SUPERIOR_MASTER_WORK_PROMPT_19SEP2026.md`
+- `archive/DP1901_EG745_FISCAL_SUPERIOR_WORKSPACE_INGESTION_19SEP2026.md`
+- `assets/data/dp1901-eg745-fiscal-superior-action-state-20260919.json`
