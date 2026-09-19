@@ -1,5 +1,5 @@
 {
-  "schema": "por-derecho.publication-manifest.v1",
+  "schema": "por-derecho.publication-state.v1",
   "publication_id": "PD-DP1901-ROUTING-INTERCONNECTIVITY-20260919-01",
   "control_date": "2026-09-19",
   "current_state": "PREPARED_PENDING_MERGE",
@@ -65,5 +65,30 @@
     "Release acceptance",
     "Publication integrity gate",
     "GitHub Pages exact-sha deployment after merge"
-  ]
+  ],
+  "schema_version": "1.0.0",
+  "owner": "Project Sun Rock / Por Derecho",
+  "expected_routes": {
+    "es": [
+      "es/referencia-21-denuncia-actores-privados/index.html",
+      "es/control-24-denuncia-juez-concurso-36-2012/index.html",
+      "es/dp-1901-2026/index.html",
+      "es/dp-1901-2026-auto-14-septiembre-2026/index.html",
+      "es/fiscalia-dip-2-2026/index.html",
+      "es/cgpj-comision-permanente-sala-lectura/index.html",
+      "es/actualizacion-cgpj-fiscalia-20-agosto-2026/index.html",
+      "es/tsj-canarias-exp-gub-38-2026/index.html"
+    ],
+    "en": [
+      "en/daily-reference-21-private-actor-complaint/index.html",
+      "en/control-24-insolvency-judge-complaint-36-2012/index.html",
+      "en/dp-1901-2026/index.html",
+      "en/dp-1901-2026-order-14-september-2026/index.html",
+      "en/fiscalia-dip-2-2026/index.html",
+      "en/cgpj-permanent-commission-reader-room/index.html",
+      "en/cgpj-public-prosecution-routing-update-20-august-2026/index.html",
+      "en/tsj-canarias-exp-gub-38-2026/index.html"
+    ]
+  },
+  "merge_sha": null
 }
