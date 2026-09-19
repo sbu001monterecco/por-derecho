@@ -99,3 +99,12 @@ See:
 - `drafts/fiscalia/2026-09-19_EG745_FISCAL_SUPERIOR_INCORPORATION_COVER_DRAFT.md`
 - `evidence/fiscalia/2026/DP1901_FISCAL_SUPERIOR_COMPETENCE_CULPABILITY_MATRIX_19SEP2026.md`
 - `assets/data/dp1901-eg745-fiscal-superior-action-state-20260919.json`
+
+
+## 19 September 2026 — immediate Fiscal Superior escalation lane
+
+A separate urgent notice is prepared for formal registration to the Fiscal Superior de la Fiscalía de la Comunidad Autónoma de Canarias, verified on 19 September 2026 as Jaime Serrano-Jover González. A separate FGE/Inspección cover requests formal incorporation by reference into E.G.745. Neither is filed until exact bytes and official receipts are controlled.
+
+The three outputs remain distinct: DP1901 court identity/competence/remedy; Fiscal Superior territorial attribution/preservation/review; E.G.745 wider accountability and actor-specific reconstruction.
+
+All legal outputs remain DRAFT / NOT FILED. GitLab sync remains queued until access is restored.
