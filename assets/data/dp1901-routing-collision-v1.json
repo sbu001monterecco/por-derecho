@@ -1,0 +1,189 @@
+{
+  "schema": "por-derecho.dp1901-routing-collision.v1",
+  "control_date": "2026-09-19",
+  "status": "PROCEDURAL_IDENTITY_COLLISION_OPEN_DIRECTION_NOT_CERTIFIED",
+  "summary": {
+    "en": "Two autonomous June filings are documented. Private-actor material was physically tendered under DP 1901 on 9 July; the 12 July court direction linked the same DP/NIG/IUP to DIP 2/2026; the 14 September order treated DP 1901 as alleged judicial prevarication and ordered final dismissal/archive. The official bridge remains unproduced.",
+    "es": "Se documentan dos escritos autónomos de junio. El 9 de julio se presentó físicamente material del carril de actores privados bajo DP 1901; la providencia de 12 de julio vinculó el mismo DP/NIG/IUP con DIP 2/2026; el Auto de 14 de septiembre trató DP 1901 como presunta prevaricación y acordó sobreseimiento libre/archivo. El puente oficial sigue sin producirse."
+  },
+  "nodes": [
+    {
+      "id": "REF24",
+      "date": "2026-06-18",
+      "tone": "blue",
+      "label_en": "Daily Ref. 24",
+      "label_es": "Ref. diaria 24",
+      "detail_en": "Judge-related complaint / notitia criminis; addressed to TSJC Civil & Criminal Chamber via Decanato.",
+      "detail_es": "Denuncia/notitia relativa al magistrado; dirigida a la Sala Civil y Penal del TSJC vía Decanato.",
+      "route_en": "/en/control-24-insolvency-judge-complaint-36-2012/",
+      "route_es": "/es/control-24-denuncia-juez-concurso-36-2012/"
+    },
+    {
+      "id": "REF21",
+      "date": "2026-06-25",
+      "tone": "ochre",
+      "label_en": "Daily Ref. 21",
+      "label_es": "Ref. diaria 21",
+      "detail_en": "Autonomous criminal complaint against five private actors.",
+      "detail_es": "Denuncia penal autónoma contra cinco actores privados.",
+      "route_en": "/en/daily-reference-21-private-actor-complaint/",
+      "route_es": "/es/referencia-21-denuncia-actores-privados/"
+    },
+    {
+      "id": "DP1901_JUL9",
+      "date": "2026-07-09",
+      "tone": "ochre",
+      "label_en": "DP 1901 · private material",
+      "label_es": "DP 1901 · material privado",
+      "detail_en": "Stamped private-actor amplification physically tendered under DP 1901 / Plaza 6. ATLANTE itself did not identify defendants or subject.",
+      "detail_es": "Aportación sellada del carril privado presentada físicamente bajo DP 1901 / Plaza 6. ATLANTE no identificaba denunciados ni objeto.",
+      "route_en": "/en/dp-1901-2026/",
+      "route_es": "/es/dp-1901-2026/"
+    },
+    {
+      "id": "DP1901_JUL12",
+      "date": "2026-07-12",
+      "tone": "grey",
+      "label_en": "DP 1901 ↔ DIP 2",
+      "label_es": "DP 1901 ↔ DIP 2",
+      "detail_en": "Signed court direction gave Fiscalía five days to report on admission in relation to DIP 2/2026.",
+      "detail_es": "Providencia firmada dio cinco días a Fiscalía para informar sobre admisión en relación con DIP 2/2026.",
+      "route_en": "/en/dp-1901-2026/",
+      "route_es": "/es/dp-1901-2026/"
+    },
+    {
+      "id": "FISCAL29",
+      "date": "2026-07-29",
+      "tone": "grey",
+      "label_en": "Fiscal report",
+      "label_es": "Informe Fiscal",
+      "detail_en": "Existence/date/archive request recorded by the later order; signed report, author and exact corpus remain unproduced.",
+      "detail_es": "Existencia/fecha/petición de archivo constan en el Auto posterior; informe firmado, autor y corpus exacto siguen sin producirse.",
+      "route_en": "/en/dp-1901-2026-order-14-september-2026/",
+      "route_es": "/es/dp-1901-2026-auto-14-septiembre-2026/"
+    },
+    {
+      "id": "AUTO14",
+      "date": "2026-09-14",
+      "tone": "charcoal",
+      "label_en": "14 Sep order",
+      "label_es": "Auto 14 Sep",
+      "detail_en": "Treats DP 1901 as alleged judicial prevarication and orders final dismissal/archive. Paper copy received 18 September; native electronic copy remains requested.",
+      "detail_es": "Trata DP 1901 como presunta prevaricación y acuerda sobreseimiento libre/archivo. Copia en papel recibida el 18 de septiembre; copia electrónica nativa sigue solicitada.",
+      "route_en": "/en/dp-1901-2026-order-14-september-2026/",
+      "route_es": "/es/dp-1901-2026-auto-14-septiembre-2026/"
+    },
+    {
+      "id": "CGPJ286",
+      "date": "2026-09-19",
+      "tone": "navy",
+      "label_en": "CGPJ Appeal 286",
+      "label_es": "CGPJ Alzada 286",
+      "detail_en": "Supervening traceability issue: CGPJ is asked to reconcile the administrative/judicial route, not to act as the criminal appellate court.",
+      "detail_es": "Hecho sobrevenido de trazabilidad: se pide al CGPJ reconciliar la ruta administrativa/judicial, no actuar como tribunal penal de apelación.",
+      "route_en": "/en/cgpj-permanent-commission-reader-room/",
+      "route_es": "/es/cgpj-comision-permanente-sala-lectura/"
+    },
+    {
+      "id": "TSJGUB38",
+      "date": "2026-08-20",
+      "tone": "navy",
+      "label_en": "TSJC Exp. Gub. 38/2026",
+      "label_es": "TSJC Exp. Gub. 38/2026",
+      "detail_en": "Separate court-office/ATLANTE traceability route; relevant to preservation and transmission, not merits.",
+      "detail_es": "Vía separada de Oficina Judicial/trazabilidad ATLANTE; relevante para preservación y transmisión, no para el fondo.",
+      "route_en": "/en/tsj-canarias-exp-gub-38-2026/",
+      "route_es": "/es/tsj-canarias-exp-gub-38-2026/"
+    }
+  ],
+  "edges": [
+    {
+      "from": "REF21",
+      "to": "DP1901_JUL9",
+      "type": "PHYSICAL_TENDER_PROVED",
+      "status": "DOCUMENTED"
+    },
+    {
+      "from": "REF24",
+      "to": "DP1901_JUL12",
+      "type": "CANDIDATE_ROUTING_BRIDGE",
+      "status": "OPEN"
+    },
+    {
+      "from": "DP1901_JUL9",
+      "to": "DP1901_JUL12",
+      "type": "STATE_TRANSITION",
+      "status": "BRIDGE_NOT_PRODUCED"
+    },
+    {
+      "from": "DP1901_JUL12",
+      "to": "FISCAL29",
+      "type": "OFFICIAL_PROSECUTION_REFERRAL",
+      "status": "DOCUMENTED_IN_PART"
+    },
+    {
+      "from": "FISCAL29",
+      "to": "AUTO14",
+      "type": "RECORDED_BY_ORDER",
+      "status": "DOCUMENTED"
+    },
+    {
+      "from": "AUTO14",
+      "to": "CGPJ286",
+      "type": "SUPERVENING_OVERSIGHT_EVENT",
+      "status": "PREPARED_NOT_FILED"
+    },
+    {
+      "from": "REF24",
+      "to": "TSJGUB38",
+      "type": "TRACEABILITY_CONTEXT",
+      "status": "RELATED_SEPARATE_ROUTE"
+    }
+  ],
+  "questions": {
+    "en": [
+      "Which exact filing created DP 1901 / NIG / IUP?",
+      "What object/party fields did the electronic file show at creation, 9 July, 12 July, 29 July and 14 September?",
+      "What act or system event joined, reassigned, remitted, relabelled or segregated the two autonomous filing lanes?",
+      "What exact corpus and object description were sent to Fiscalía before the 29 July report?",
+      "Where is the autonomous private-actor complaint now?"
+    ],
+    "es": [
+      "¿Qué escrito exacto creó DP 1901 / NIG / IUP?",
+      "¿Qué campos de objeto/partes mostraba el expediente electrónico al crearse, el 9 de julio, 12 de julio, 29 de julio y 14 de septiembre?",
+      "¿Qué acto o evento del sistema unió, reasignó, remitió, reclasificó o segregó los dos carriles autónomos?",
+      "¿Qué corpus exacto y qué descripción de objeto se remitieron a Fiscalía antes del informe de 29 de julio?",
+      "¿Dónde está ahora la denuncia autónoma contra los actores privados?"
+    ]
+  },
+  "visuals": [
+    {
+      "id": "double-file-grave",
+      "src": "/assets/visuals/dp1901-double-file-grave.svg",
+      "label_en": "Two autonomous files, one unexplained procedural container",
+      "label_es": "Dos escritos autónomos, un contenedor procesal no explicado"
+    },
+    {
+      "id": "registry-routing",
+      "src": "/assets/visuals/dp1901-registry-routing.svg",
+      "label_en": "Registry / allocation question",
+      "label_es": "Pregunta de registro / reparto"
+    },
+    {
+      "id": "fiscal-corpus",
+      "src": "/assets/visuals/dp1901-fiscal-corpus.svg",
+      "label_en": "What corpus reached Fiscalía?",
+      "label_es": "¿Qué corpus llegó a Fiscalía?"
+    },
+    {
+      "id": "atlante-black-box",
+      "src": "/assets/visuals/dp1901-atlante-black-box.svg",
+      "label_en": "ATLANTE state-transition audit",
+      "label_es": "Auditoría de transición de estado en ATLANTE"
+    }
+  ],
+  "boundaries": {
+    "en": "This graph does not identify who caused the collision, prove intentional manipulation, or establish that either June filing formally generated DP 1901. The missing bridge must come from certified registry, reparto, docket and audit records.",
+    "es": "Este grafo no identifica quién causó la colisión, no prueba manipulación intencional ni acredita que uno u otro escrito de junio generara formalmente DP 1901. El puente debe resultar de registros certificados de entrada, reparto, expediente y auditoría."
+  }
+}
