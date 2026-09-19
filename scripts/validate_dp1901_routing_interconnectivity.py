@@ -47,7 +47,8 @@ continuity=json.loads((ROOT/"assets/data/control-21-22-24-continuity-v1.json").r
 if continuity.get("as_of")!="2026-09-19": errors.append("continuity as_of not 2026-09-19")
 if "state_transition_audit_20260919" not in continuity: errors.append("missing state transition audit")
 control21=next((x for x in continuity.get("controls",[]) if x.get("id")=="CONTROL-21"),{})
-if control21.get("bridge_status")!="CONTEMPORANEOUSLY_CORROBORATED_OFFICIAL_REPARTO_OPEN": errors.append("Control21 bridge weighting stale")
+if control21.get("bridge_status")!="UNVERIFIED_CANDIDATE_BRIDGE": errors.append("Control21 formal bridge must remain uncertified")
+if control21.get("origin_chronology_evidential_state")!="CONTEMPORANEOUSLY_CORROBORATED": errors.append("Control21 origin chronology support missing")
 if "email_20260625_to_procuradora" not in control21.get("contemporaneous_july_evidence",{}): errors.append("Control21 missing 25-Jun procuradora support")
 
 svg=(ROOT/"assets/visuals/dp1901-routing-collision-20260919.svg").read_text(encoding="utf-8")
