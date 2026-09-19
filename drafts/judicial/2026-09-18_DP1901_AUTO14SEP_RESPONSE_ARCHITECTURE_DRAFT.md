@@ -1,8 +1,12 @@
 # DP 1901/2026 — response architecture to 14 September 2026 order
 
 **Control date:** 18 September 2026  
-**Status:** DRAFT / NOT FILED / COUNSEL-REVIEW REQUIRED  
+**Status:** DRAFT RESPONSE ARCHITECTURE / SOURCE LAYER MERGED TO GITHUB / NOT FILED / COUNSEL-REVIEW REQUIRED  
 **Purpose:** preserve the fullest source-led response architecture while notification date, complete docket and the 29 July Fiscal report remain outstanding.
+
+## 19 September implementation note
+
+The underlying source-closure and routing-reconciliation work is now merged on GitHub main via PR #1574. The next legal-work product is the actual Spanish `recurso de reforma + subsidiaria apelación`; this file remains an internal architecture and must not be described as filed or served.
 
 ## Controlling source event
 
