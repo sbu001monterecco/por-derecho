@@ -1,7 +1,7 @@
 {
-  "schema_version": "1.0.4",
+  "schema_version": "1.0.5",
   "control_id": "PD-C212224-001",
-  "as_of": "2026-09-18",
+  "as_of": "2026-09-19",
   "repository": "sbu001monterecco/por-derecho",
   "baseline_main_sha": "b8ded173b06f17aaf91569f051dd11e621b139ae",
   "canonical_nucleus": {
@@ -11,15 +11,20 @@
   "controls": [
     {
       "id": "CONTROL-21",
-      "label": "Daily reference 21 — user-reported private-actor filing control",
+      "label": "Daily reference 21 — documented autonomous five-private-actor filing",
       "claimed_filing_date": "2026-06-25",
-      "canonical_repository_object": null,
+      "canonical_repository_object": "GC-REF-030",
       "candidate_proceeding": "GC-CRI-008",
       "candidate_reference": "DP 1901/2026",
-      "bridge_status": "UNVERIFIED_CANDIDATE_BRIDGE",
-      "evidential_state": "DOCUMENTED",
-      "do_not_infer": "The 25-Jun daily-reference-21 private-actor filing is now documented by a stamped cover, and a 9-Jul stamped cover proves private-actor amplification material was physically tendered under DP 1901/Plaza 6. Do not state that daily reference 21 originally generated DP 1901 without the certified initiating document/reparto/index/ingestion bridge. The 12-Jul providencia links DP 1901 to DIP 2/2026 and the 14-Sep order treats it as alleged judicial prevarication.",
-      "identity_collision_status": "PROCEDURAL_IDENTITY_COLLISION_OPEN_DIRECTION_NOT_CERTIFIED"
+      "bridge_status": "PROVEN_INTAKE_OBJECT__DP1901_BRIDGE_UNVERIFIED",
+      "evidential_state": "DOCUMENTED_PRIMARY_PLUS_CONTEMPORANEOUS",
+      "do_not_infer": "Daily reference 21 is now a canonical intake object (GC-REF-030). The stamped 25-Jun cover proves an autonomous five-private-actor filing and the 9-Jul stamped cover proves private-actor material was physically tendered under DP 1901/Plaza 6. Contemporaneous 9-12 Jul correspondence treated 1901 operationally as the CAM/private/Community complaint. Do not state that daily reference 21 originally generated DP 1901 without the certified initiating document/reparto/object history.",
+      "identity_collision_status": "PROCEDURAL_IDENTITY_COLLISION_OPEN_DIRECTION_NOT_CERTIFIED",
+      "contemporaneous_support": [
+        "9-Jul-2026 email to counsel records: 1901 = CAM / other Community parties; 1956 = AC",
+        "12-Jul-2026 email to counsel records follow-up at Plaza 6 regarding la denuncia contra CAM y la CP identified as 1901/2026",
+        "12-Jul-2026 signed providencia in DP1901 links the same DP/NIG/IUP to DIP 2/2026"
+      ]
     },
     {
       "id": "CONTROL-22",
@@ -151,6 +156,11 @@
       "id": "AC-SEPARATION-ROUTE",
       "type": "INSOLVENCY_ROUTE",
       "label": "Insolvency Administrator separation/removal route"
+    },
+    {
+      "id": "GC-REF-030",
+      "type": "INTAKE_REFERENCE",
+      "label": "Daily reference 21 — autonomous five-private-actor complaint"
     }
   ],
   "edges": [
@@ -178,10 +188,10 @@
     {
       "from": "CONTROL-21",
       "to": "GC-CRI-008",
-      "relation": "CANDIDATE_LATER_PROCEEDING",
+      "relation": "CANDIDATE_LATER_PROCEEDING_WITH_CONTEMPORANEOUS_SUPPORT",
       "bidirectional": true,
-      "bridge_status": "UNVERIFIED_CANDIDATE_BRIDGE",
-      "evidential_status": "OPEN"
+      "bridge_status": "UNVERIFIED_ORIGIN_BRIDGE__LATER_TENDER_DOCUMENTED",
+      "evidential_status": "OPEN_DIRECTION__STRONG_CONTEMPORANEOUS_SUPPORT"
     },
     {
       "from": "CONTROL-22",
@@ -302,6 +312,22 @@
       "bidirectional": true,
       "bridge_status": "UNVERIFIED_CANDIDATE_BRIDGE",
       "evidential_status": "OPEN"
+    },
+    {
+      "from": "CONTROL-21",
+      "to": "GC-REF-030",
+      "relation": "CANONICAL_INTAKE_OBJECT",
+      "bidirectional": true,
+      "bridge_status": "PROVEN_DOCUMENTARY_BRIDGE",
+      "evidential_status": "DOCUMENTED"
+    },
+    {
+      "from": "GC-REF-030",
+      "to": "GC-CRI-008",
+      "relation": "CANDIDATE_PROCEEDING_BRIDGE",
+      "bidirectional": true,
+      "bridge_status": "UNVERIFIED_ORIGIN_BRIDGE__LATER_TENDER_DOCUMENTED",
+      "evidential_status": "OPEN_DIRECTION__STRONG_CONTEMPORANEOUS_SUPPORT"
     }
   ],
   "reader_layers": [
@@ -375,9 +401,14 @@
     "READER_DP-1956_EN": "/en/dp-1956-2026/",
     "READER_DP-1956_ES": "/es/dp-1956-2026/",
     "READER_CONTROL-24_EN": "/en/control-24-insolvency-judge-complaint-36-2012/",
-    "READER_CONTROL-24_ES": "/es/control-24-denuncia-juez-concurso-36-2012/"
+    "READER_CONTROL-24_ES": "/es/control-24-denuncia-juez-concurso-36-2012/",
+    "CONTROL-21_EN": "/en/proceedings/gc-ref-030/",
+    "CONTROL-21_ES": "/es/procedimientos/gc-ref-030/",
+    "CONTROL-21-DOSSIER_EN": "/en/daily-reference-21-private-actor-complaint-25-june-2026/",
+    "CONTROL-21-DOSSIER_ES": "/es/referencia-21-denuncia-actores-privados-25-junio-2026/"
   },
   "open_gaps": [
+    "Certified DP 1901 state-transition history: initiating document, creation/reparto, registered object/denunciados at creation and on 9 Jul / 12 Jul / 29 Jul / 14 Sep, document association events, users/timestamps and any joinder/reassignment/remittal/segregation act",
     "Certified DP 1901/2026 initiating document, complete docket/index, 18-Jun–12-Jul ingestion history and direction of the daily-reference-21 / daily-reference-24 routing collision",
     "Source-certified Control-22 to DP 1956/2026 bridge",
     "Certified reparto/current destination for Control 24",
