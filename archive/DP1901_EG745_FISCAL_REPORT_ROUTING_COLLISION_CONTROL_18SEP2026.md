@@ -75,7 +75,7 @@ Do not publish as proved:
 - that the precise later mechanism associating Ref. 24 with DP 1901 has been established; or
 - that any association, joinder or reassignment was intentional, unlawful or attributable to a named person.
 
-A formal but presently unlocated allocation/joinder/reassignment/segregation act, or another administrative explanation, remains possible. Only the certified initiating document, reparto/index and ingestion history can close direction.
+A formal but presently unlocated allocation/association/joinder/reassignment/segregation act, or another administrative explanation for the later Ref. 24 treatment, remains possible. The certified initiating document, reparto/index and audit history remain required to certify the internal electronic event chain.
 
 ## 5. E.G. 745/2026 consequence
 
@@ -93,7 +93,7 @@ Gil Marer and Aweswell Limited maintain their attributed position that Ministeri
 ## 6. Immediate repository/publication actions
 
 ### P0
-- Correct DP 1901 public pages: remove the categorical description of DP 1901 as only/principally the private-actor route.
+- Correct DP 1901 public pages to preserve the contemporaneously corroborated Ref. 21 → DP 1901 chronology while keeping the official electronic reparto and later Ref. 24 association history open.
 - Publish the 14 September order event and the 29 July Fiscal-report fact with the missing-report boundary.
 - Update E.G. 745 public pages: mark the 12 September filing draft as requiring a successor update before filing.
 - Update Ministerio Fiscal adverse-notice pages: replace "report not yet located / existence unknown" with "existence/date/archive request now recorded by the court; underlying report still missing".
@@ -188,4 +188,4 @@ The located contemporary wording supports continued custody, non-remittance, phy
 
 On Gil's expressly affirmed chronology, the question concerns subsequent handling of a Ref24 package still unscanned/unallocated on 25 June: when it left that state, which office processed it, what destination and object were recorded, and how it later came to be associated with DP1901 rather than reaching the TSJC-directed route. Investigate the reported 18-June handwritten routing instruction as well as later electronic events. Compare Ref22/DP1956 handling without asserting that joining the judge matter to that file would have been legally correct.
 
-The documentary certification state remains PROCEDURAL_IDENTITY_COLLISION_OPEN — DIRECTION NOT CERTIFIED. That label describes the missing official creation/association history; it must not conceal the declarant's explicit testimony about the 25-June state.
+The documentary certification state is **REF21_TO_DP1901_CONTEMPORANEOUSLY_CORROBORATED — OFFICIAL_REPARTO_AND_REF24_ASSOCIATION_HISTORY_OUTSTANDING**. That label records both the contemporaneous Ref. 21 → DP 1901 support and the still-missing official creation/association history; it must not conceal the declarant's explicit testimony about the 25-June Ref. 24 state.
