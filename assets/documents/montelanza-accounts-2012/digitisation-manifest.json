@@ -21,8 +21,7 @@
   },
   "digitisation": {
     "canonical_source": "external-connected-evidence-store",
-    "repository_binary_copy": false,
-    "reason": "Current GitHub connector path does not accept a local binary file reference. The complete canonical PDF is embedded/linked from the public page and controlled by file ID + SHA-256.",
+    "repository_binary_copy": true,
     "assistive_ocr": [
       "ocr/part-01-pages-01-05.txt",
       "ocr/part-02-pages-06-10.txt",
@@ -31,7 +30,9 @@
       "ocr/part-05-pages-21-25.txt",
       "ocr/part-06-pages-26-30.txt"
     ],
-    "ocr_rule": "Assistive only; disputed wording/names/figures must be checked against the PDF/page image."
+    "ocr_rule": "Assistive only; disputed wording/names/figures must be checked against the PDF/page image.",
+    "repository_path": "assets/documents/montelanza-accounts-2012/CCAA_MONTELANZA.pdf",
+    "website_delivery": "GitHub Pages local PDF + connected-source provenance backup"
   },
   "key_primary_source_propositions": [
     {
