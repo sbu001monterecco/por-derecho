@@ -81,7 +81,7 @@
     },
     {
       "id": "SPECIALIST_SEPTEMBER_PRESENTATION_ROUTES",
-      "status": "PENDING_GITLAB_RESTORATION",
+      "status": "FUNCTIONAL_GITHUB_EQUIVALENT",
       "known_gitlab_route_families": [
         "orion-transparency-memorandum",
         "portfolio-international-nexus",
@@ -92,7 +92,10 @@
         "actua-to-title-documentary-journey",
         "sun-park-history"
       ],
-      "boundary": "Do not recreate route-by-route from rendered GitLab output. Reconcile unique still-current source content against existing GitHub canonical routes after exact source recovery."
+      "boundary": "The eight GitLab-visible specialist route families now have source-led GitHub functional successors built only from current GitHub-controlled dossiers. Exact GitLab source/template bytes and producing commits remain pending authenticated restoration.",
+      "github_control": "ops/continuity/GITLAB_SPECIALIST_ROUTE_BRIDGES_20260919.json",
+      "exact_gitlab_source_state": "PENDING_GITLAB_RESTORATION",
+      "action": "SOURCE_LED_GITHUB_SUCCESSORS_ADDED"
     },
     {
       "id": "GITLAB_NATIVE_PLATFORM_STATE",
