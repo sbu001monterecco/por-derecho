@@ -36,7 +36,7 @@ on:
       - 'scripts/validate_gitlab_public_surface_recovery_20260918.py'
       - 'scripts/validate_gitlab_backend_recovery_20260919.py'
       - 'tests/test_github_outage_backend_20260917.py'
-      - 'tests/test_github_backend_hardening_20260917.py'
+      - 'tests/test_github_backend_hardening_20260917.py'\n      - 'ops/continuity/GITHUB_PUBLIC_GAP_CLOSURE_20260919.json'\n      - 'scripts/validate_github_public_gap_closure_20260919.py'\n      - 'assets/connected-search-20260919.js'\n      - 'en/recovery-command-center/**'\n      - 'es/centro-mando-recuperacion/**'\n      - 'en/search/**'\n      - 'es/buscar/**'\n      - 'en/matter-identity-registry/**'\n      - 'es/registro-identidad-materia/**'\n      - 'en/portfolio-orion-traceability/**'\n      - 'es/portfolio-orion-trazabilidad/**'\n      - 'en/ric-private-equity-sun-park/**'\n      - 'es/ric-private-equity-sun-park/**'\n      - 'en/por-derecho/**'\n      - 'es/por-derecho/**'\n      - 'assets/data/unitary-route-registry-v1.json'\n      - 'sitemap-unitary-shell.xml'
   pull_request:
     paths:
       - 'AGENTS.md'
@@ -67,7 +67,7 @@ on:
       - 'scripts/validate_gitlab_public_surface_recovery_20260918.py'
       - 'scripts/validate_gitlab_backend_recovery_20260919.py'
       - 'tests/test_github_outage_backend_20260917.py'
-      - 'tests/test_github_backend_hardening_20260917.py'
+      - 'tests/test_github_backend_hardening_20260917.py'\n      - 'ops/continuity/GITHUB_PUBLIC_GAP_CLOSURE_20260919.json'\n      - 'scripts/validate_github_public_gap_closure_20260919.py'\n      - 'assets/connected-search-20260919.js'\n      - 'en/recovery-command-center/**'\n      - 'es/centro-mando-recuperacion/**'\n      - 'en/search/**'\n      - 'es/buscar/**'\n      - 'en/matter-identity-registry/**'\n      - 'es/registro-identidad-materia/**'\n      - 'en/portfolio-orion-traceability/**'\n      - 'es/portfolio-orion-trazabilidad/**'\n      - 'en/ric-private-equity-sun-park/**'\n      - 'es/ric-private-equity-sun-park/**'\n      - 'en/por-derecho/**'\n      - 'es/por-derecho/**'\n      - 'assets/data/unitary-route-registry-v1.json'\n      - 'sitemap-unitary-shell.xml'
 
 permissions:
   contents: read
@@ -119,5 +119,5 @@ jobs:
           'ops/continuity/GITLAB_EXACT_RECOVERY_QUEUE_20260917.json',
           'ops/continuity/GITHUB_FIRST_48H_PLUS_36H_CONTINUITY_PLAN_20260917.json',
           'ops/continuity/GITLAB_PUBLIC_SURFACE_RECOVERY_LEDGER_20260918.json',
-          'ops/continuity/GITLAB_BACKEND_RECOVERY_LEDGER_20260919.json']];
+          'ops/continuity/GITLAB_BACKEND_RECOVERY_LEDGER_20260919.json',\n          'ops/continuity/GITHUB_PUBLIC_GAP_CLOSURE_20260919.json']];
           print('machine controls parse: PASS')"
