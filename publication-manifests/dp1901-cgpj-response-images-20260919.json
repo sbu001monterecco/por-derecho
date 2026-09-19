@@ -101,7 +101,7 @@
   ],
   "schema_version": "1.0.0",
   "publication_id": "PD-DP1901-CGPJ-RESPONSE-20260919-01",
-  "current_state": "PR_OPEN",
+  "current_state": "MERGED_ON_MAIN",
   "owner": "Project Sun Rock / Por Derecho",
   "expected_routes": {
     "es": [
@@ -136,6 +136,13 @@
   ],
   "pr": {
     "number": 1637,
-    "branch": "integration/fiscalia-dp1901-cgpj-20260919"
+    "branch": "integration/fiscalia-dp1901-cgpj-20260919",
+    "state": "MERGED",
+    "merge_commit_sha": "53ee6b0b08e9bcfc2f3cf19ce5aff72f0620165c"
+  },
+  "audit_20260919": {
+    "substantive_package_complete_on_github": true,
+    "native_source_completeness": false,
+    "note": "Publication package is merged on main. Do not state that 100% of every native source file is on GitHub: original recovered image bytes remain preserved outside Git; the native/certified 14-Sep-2026 judicial order, operative service metadata, native CGPJ attachment verification, signed 29-Jul Ministerio Fiscal report/corpus, and certified electronic creation/reparto history remain outstanding."
   }
 }
