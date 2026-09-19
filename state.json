@@ -2,7 +2,7 @@
   "schema": "por-derecho.publication-runtime.v1",
   "fence": 14,
   "owner": "1653:a06a6d667cb470b1c2260578f8faa5badf64e46b",
-  "phase": "DEPLOYED",
+  "phase": "VERIFIED_FOR_SCOPE",
   "pr": 1653,
   "base_sha": "e22cd1a349b57fc81420105c9e1611afb65efd2a",
   "candidate_sha": "a06a6d667cb470b1c2260578f8faa5badf64e46b",
@@ -940,6 +940,177 @@
       ],
       "pending": [],
       "scope": "Changed readable public resources plus ES/EN entrypoints. Browser checks are separate premerge evidence; not a whole-site or legal-proof certificate."
+    },
+    {
+      "pr": 1653,
+      "candidate_sha": "a06a6d667cb470b1c2260578f8faa5badf64e46b",
+      "at": "2026-09-19T18:12:06.689961Z",
+      "merge_sha": "aab59b554898fa0be799fc3a4386093612bf5f9e",
+      "pages_run_id": 35460358988,
+      "exact_matches": [
+        {
+          "path": "assets/data/dp1901-eg745-fiscal-superior-action-state-20260919.json",
+          "sha256": "271e299c60041be9c06284bf78b4cf7c73407189e40cbd4e4d75fb020823f19e",
+          "bytes": 27925
+        },
+        {
+          "path": "assets/dp1901-eg745-response-programme-20260920.css",
+          "sha256": "931b5f7b72b4100b32b49d293461a662bba3f3ce5599d195e66e267b8c622fa7",
+          "bytes": 2341
+        },
+        {
+          "path": "en/asset-recovery-intervention-confiscation/index.html",
+          "sha256": "ba50e5109b33db939ee593bda19438c3756bba70a6a602f2c52afc5d00c8e6f7",
+          "bytes": 17206
+        },
+        {
+          "path": "en/cgpj-permanent-commission-reader-room/index.html",
+          "sha256": "59acd9ae83e83cddf0c975f60c96ccaf65d2a234377d288582b5ed818c9ad6e2",
+          "bytes": 24975
+        },
+        {
+          "path": "en/control-21-private-actors-complaint-25-june-2026/index.html",
+          "sha256": "f64a3c370ade8564c2246ef3df165740c759928ec9bcf610f4595d1dddd9b0fa",
+          "bytes": 25259
+        },
+        {
+          "path": "en/control-24-insolvency-judge-complaint-36-2012/index.html",
+          "sha256": "8b31fce68ff097ed1f7291135c5307b7dca0c7d6449b51d26d492cab677db298",
+          "bytes": 26913
+        },
+        {
+          "path": "en/dp-1901-2026-order-14-september-2026/index.html",
+          "sha256": "ee0a374affc26db1b2ade8a4f3bb9a027296793695d8dc8af068367f683844e3",
+          "bytes": 20872
+        },
+        {
+          "path": "en/dp-1901-2026/index.html",
+          "sha256": "c4a5c14cfea53a4ffe539ceb57d0531eab810127dcda8241abd06404f21985f0",
+          "bytes": 21321
+        },
+        {
+          "path": "en/eg-745-imminent-response-prosecution-matrix/index.html",
+          "sha256": "4588a8f6bbbeaf328de35d29de46e5a3240a35e22e1a8e4bea5d1b8a3bc2a709",
+          "bytes": 10211
+        },
+        {
+          "path": "en/fiscalia-dip-2-2026/index.html",
+          "sha256": "106d5a1de183406b13797084c3e6b96f2004f4cce9e3f23d8db5cf09cf01867b",
+          "bytes": 77872
+        },
+        {
+          "path": "en/index.html",
+          "sha256": "c048d21d4c94e3cb6896e4c74d69a9ab73f84c3426d40fe815370b40fe1ba109",
+          "bytes": 228197
+        },
+        {
+          "path": "en/ministerio-fiscal/index.html",
+          "sha256": "71d11aae5484d440ca8e36445e21cc9bd0a9be53e60cec91502fffb065b7b9dd",
+          "bytes": 6778
+        },
+        {
+          "path": "en/public-prosecution-inspection-exp-gub-745-2026/index.html",
+          "sha256": "266ffd22c1442ec49da10161fbe4688ce4ad54e5451363d25e9300ffa47a31db",
+          "bytes": 26937
+        },
+        {
+          "path": "en/tsj-canarias-exp-gub-38-2026/index.html",
+          "sha256": "ec3f206aa743cd1c863b87ac894c3db4bba2b625b14eb52486291ae2259b95b9",
+          "bytes": 35924
+        },
+        {
+          "path": "es/cgpj-comision-permanente-sala-lectura/index.html",
+          "sha256": "93eccdf934be95653e1468da32cc2a9d86bcbf20131885961d743936e811586f",
+          "bytes": 25675
+        },
+        {
+          "path": "es/control-21-denuncia-actores-privados-25-junio-2026/index.html",
+          "sha256": "9d8b0c364587eeae6cdb1a4956be382e6fc387397a5c9868515986e8a5e5311f",
+          "bytes": 26664
+        },
+        {
+          "path": "es/control-24-denuncia-juez-concurso-36-2012/index.html",
+          "sha256": "e6407a804b85a4662da36ef483f7edda146b42a14d932d6381a6c51365d4cf41",
+          "bytes": 27930
+        },
+        {
+          "path": "es/dp-1901-2026-auto-14-septiembre-2026/index.html",
+          "sha256": "72e43e300782483ba65160a2ee70e8ee2a33d55c196308b5d29169179b4d249e",
+          "bytes": 21859
+        },
+        {
+          "path": "es/dp-1901-2026/index.html",
+          "sha256": "b7bc2f323236e60c702f9fdf385a53c034003a9b1fb51f190cca7a8920ac352f",
+          "bytes": 28870
+        },
+        {
+          "path": "es/eg-745-respuesta-inminente-matriz-fiscalia/index.html",
+          "sha256": "49a57e01ba322b698934e2f110d1e25fc963b170be2a49b9850a69e3b86b4c6a",
+          "bytes": 10664
+        },
+        {
+          "path": "es/fiscalia-dip-2-2026/index.html",
+          "sha256": "d106be593c39590888e5c874580127e890d9afed10cb0c2303388f9be2a2c2e9",
+          "bytes": 79600
+        },
+        {
+          "path": "es/fiscalia-inspeccion-exp-gub-745-2026/index.html",
+          "sha256": "d30492f33587a0105a64dd7e83b01a4134757dcbd36323a07b443efeecb75b42",
+          "bytes": 28681
+        },
+        {
+          "path": "es/index.html",
+          "sha256": "48a7ebf0751867525f140cf3e70c34f8fe22a1c6edd7aeb0b3178e788da95dda",
+          "bytes": 237351
+        },
+        {
+          "path": "es/ministerio-fiscal/index.html",
+          "sha256": "f8919ec124e14dd133c7ea0d8215f518dc56fe014b67dad0d67536b9f4133da6",
+          "bytes": 8438
+        },
+        {
+          "path": "es/recuperacion-activos-intervencion-decomiso/index.html",
+          "sha256": "fe52c91b6504849f3b880f71d8aa2fd763e9bdd0a0fe79dc7c86c423f71578f8",
+          "bytes": 17950
+        },
+        {
+          "path": "es/tsj-canarias-exp-gub-38-2026/index.html",
+          "sha256": "e6f3a2fc3891de1abb9d66e1e9fc2dc23a19e98e6255ec02d549ea3bde91eaa0",
+          "bytes": 37330
+        },
+        {
+          "path": "ops/2026-09-19_DP1901_EG745_FILING_STATUS_REGISTER.md",
+          "sha256": "6c155945a5df1d0dcda7a51cf69390b5a5cf353e330c21bef66e8b6857be7cc4",
+          "bytes": 3623
+        },
+        {
+          "path": "ops/2026-09-19_DP1901_EG745_PRESERVATION_PRODUCTION_SCHEDULE.md",
+          "sha256": "dcb1dd7db5238e82059e24ca32db7d65cfc30b87819d93766a6f4a31cac07bc7",
+          "bytes": 4251
+        },
+        {
+          "path": "ops/CURRENT_COLLABORATION_STATE.json",
+          "sha256": "9d62cff8f351376fac22e8b1f0394073f3b6f0973c5db7336ebaef9ba5e727ba",
+          "bytes": 5903
+        },
+        {
+          "path": "ops/DP1901_EG745_MF_IMMEDIATE_ACTION_MATRIX_18SEP2026.md",
+          "sha256": "d5b140e52bc3a3115fb33564c95520800c00da7df0ce48ffa810e837f5d91d7e",
+          "bytes": 12955
+        },
+        {
+          "path": "ops/continuity/GITHUB_FIRST_48H_PLUS_36H_CONTINUITY_PLAN_20260917.json",
+          "sha256": "bd0ac6822a48cd4d49d42a883fa6f136852d9b4aa306463b1fa425a73acfe0e7",
+          "bytes": 3684
+        },
+        {
+          "path": "publication-manifests/dp1901-eg745-response-programme-20260920.json",
+          "sha256": "c5c84a98229b5a633598ee213a95bf9ed13107568e340e0b36aff04bb1e85c13",
+          "bytes": 3506
+        }
+      ],
+      "pending": [],
+      "scope": "Changed readable public resources plus ES/EN entrypoints. Browser checks are separate premerge evidence; not a whole-site or legal-proof certificate."
     }
   ],
   "checkpoints": [
@@ -982,7 +1153,179 @@
         "pages_run_id": 35460358988,
         "merge_sha": "aab59b554898fa0be799fc3a4386093612bf5f9e"
       }
+    },
+    {
+      "phase": "VERIFIED_FOR_SCOPE",
+      "at": "2026-09-19T18:12:06.689932Z",
+      "evidence": {
+        "merge_sha": "aab59b554898fa0be799fc3a4386093612bf5f9e",
+        "pages_run_id": 35460358988,
+        "exact_matches": [
+          {
+            "path": "assets/data/dp1901-eg745-fiscal-superior-action-state-20260919.json",
+            "sha256": "271e299c60041be9c06284bf78b4cf7c73407189e40cbd4e4d75fb020823f19e",
+            "bytes": 27925
+          },
+          {
+            "path": "assets/dp1901-eg745-response-programme-20260920.css",
+            "sha256": "931b5f7b72b4100b32b49d293461a662bba3f3ce5599d195e66e267b8c622fa7",
+            "bytes": 2341
+          },
+          {
+            "path": "en/asset-recovery-intervention-confiscation/index.html",
+            "sha256": "ba50e5109b33db939ee593bda19438c3756bba70a6a602f2c52afc5d00c8e6f7",
+            "bytes": 17206
+          },
+          {
+            "path": "en/cgpj-permanent-commission-reader-room/index.html",
+            "sha256": "59acd9ae83e83cddf0c975f60c96ccaf65d2a234377d288582b5ed818c9ad6e2",
+            "bytes": 24975
+          },
+          {
+            "path": "en/control-21-private-actors-complaint-25-june-2026/index.html",
+            "sha256": "f64a3c370ade8564c2246ef3df165740c759928ec9bcf610f4595d1dddd9b0fa",
+            "bytes": 25259
+          },
+          {
+            "path": "en/control-24-insolvency-judge-complaint-36-2012/index.html",
+            "sha256": "8b31fce68ff097ed1f7291135c5307b7dca0c7d6449b51d26d492cab677db298",
+            "bytes": 26913
+          },
+          {
+            "path": "en/dp-1901-2026-order-14-september-2026/index.html",
+            "sha256": "ee0a374affc26db1b2ade8a4f3bb9a027296793695d8dc8af068367f683844e3",
+            "bytes": 20872
+          },
+          {
+            "path": "en/dp-1901-2026/index.html",
+            "sha256": "c4a5c14cfea53a4ffe539ceb57d0531eab810127dcda8241abd06404f21985f0",
+            "bytes": 21321
+          },
+          {
+            "path": "en/eg-745-imminent-response-prosecution-matrix/index.html",
+            "sha256": "4588a8f6bbbeaf328de35d29de46e5a3240a35e22e1a8e4bea5d1b8a3bc2a709",
+            "bytes": 10211
+          },
+          {
+            "path": "en/fiscalia-dip-2-2026/index.html",
+            "sha256": "106d5a1de183406b13797084c3e6b96f2004f4cce9e3f23d8db5cf09cf01867b",
+            "bytes": 77872
+          },
+          {
+            "path": "en/index.html",
+            "sha256": "c048d21d4c94e3cb6896e4c74d69a9ab73f84c3426d40fe815370b40fe1ba109",
+            "bytes": 228197
+          },
+          {
+            "path": "en/ministerio-fiscal/index.html",
+            "sha256": "71d11aae5484d440ca8e36445e21cc9bd0a9be53e60cec91502fffb065b7b9dd",
+            "bytes": 6778
+          },
+          {
+            "path": "en/public-prosecution-inspection-exp-gub-745-2026/index.html",
+            "sha256": "266ffd22c1442ec49da10161fbe4688ce4ad54e5451363d25e9300ffa47a31db",
+            "bytes": 26937
+          },
+          {
+            "path": "en/tsj-canarias-exp-gub-38-2026/index.html",
+            "sha256": "ec3f206aa743cd1c863b87ac894c3db4bba2b625b14eb52486291ae2259b95b9",
+            "bytes": 35924
+          },
+          {
+            "path": "es/cgpj-comision-permanente-sala-lectura/index.html",
+            "sha256": "93eccdf934be95653e1468da32cc2a9d86bcbf20131885961d743936e811586f",
+            "bytes": 25675
+          },
+          {
+            "path": "es/control-21-denuncia-actores-privados-25-junio-2026/index.html",
+            "sha256": "9d8b0c364587eeae6cdb1a4956be382e6fc387397a5c9868515986e8a5e5311f",
+            "bytes": 26664
+          },
+          {
+            "path": "es/control-24-denuncia-juez-concurso-36-2012/index.html",
+            "sha256": "e6407a804b85a4662da36ef483f7edda146b42a14d932d6381a6c51365d4cf41",
+            "bytes": 27930
+          },
+          {
+            "path": "es/dp-1901-2026-auto-14-septiembre-2026/index.html",
+            "sha256": "72e43e300782483ba65160a2ee70e8ee2a33d55c196308b5d29169179b4d249e",
+            "bytes": 21859
+          },
+          {
+            "path": "es/dp-1901-2026/index.html",
+            "sha256": "b7bc2f323236e60c702f9fdf385a53c034003a9b1fb51f190cca7a8920ac352f",
+            "bytes": 28870
+          },
+          {
+            "path": "es/eg-745-respuesta-inminente-matriz-fiscalia/index.html",
+            "sha256": "49a57e01ba322b698934e2f110d1e25fc963b170be2a49b9850a69e3b86b4c6a",
+            "bytes": 10664
+          },
+          {
+            "path": "es/fiscalia-dip-2-2026/index.html",
+            "sha256": "d106be593c39590888e5c874580127e890d9afed10cb0c2303388f9be2a2c2e9",
+            "bytes": 79600
+          },
+          {
+            "path": "es/fiscalia-inspeccion-exp-gub-745-2026/index.html",
+            "sha256": "d30492f33587a0105a64dd7e83b01a4134757dcbd36323a07b443efeecb75b42",
+            "bytes": 28681
+          },
+          {
+            "path": "es/index.html",
+            "sha256": "48a7ebf0751867525f140cf3e70c34f8fe22a1c6edd7aeb0b3178e788da95dda",
+            "bytes": 237351
+          },
+          {
+            "path": "es/ministerio-fiscal/index.html",
+            "sha256": "f8919ec124e14dd133c7ea0d8215f518dc56fe014b67dad0d67536b9f4133da6",
+            "bytes": 8438
+          },
+          {
+            "path": "es/recuperacion-activos-intervencion-decomiso/index.html",
+            "sha256": "fe52c91b6504849f3b880f71d8aa2fd763e9bdd0a0fe79dc7c86c423f71578f8",
+            "bytes": 17950
+          },
+          {
+            "path": "es/tsj-canarias-exp-gub-38-2026/index.html",
+            "sha256": "e6f3a2fc3891de1abb9d66e1e9fc2dc23a19e98e6255ec02d549ea3bde91eaa0",
+            "bytes": 37330
+          },
+          {
+            "path": "ops/2026-09-19_DP1901_EG745_FILING_STATUS_REGISTER.md",
+            "sha256": "6c155945a5df1d0dcda7a51cf69390b5a5cf353e330c21bef66e8b6857be7cc4",
+            "bytes": 3623
+          },
+          {
+            "path": "ops/2026-09-19_DP1901_EG745_PRESERVATION_PRODUCTION_SCHEDULE.md",
+            "sha256": "dcb1dd7db5238e82059e24ca32db7d65cfc30b87819d93766a6f4a31cac07bc7",
+            "bytes": 4251
+          },
+          {
+            "path": "ops/CURRENT_COLLABORATION_STATE.json",
+            "sha256": "9d62cff8f351376fac22e8b1f0394073f3b6f0973c5db7336ebaef9ba5e727ba",
+            "bytes": 5903
+          },
+          {
+            "path": "ops/DP1901_EG745_MF_IMMEDIATE_ACTION_MATRIX_18SEP2026.md",
+            "sha256": "d5b140e52bc3a3115fb33564c95520800c00da7df0ce48ffa810e837f5d91d7e",
+            "bytes": 12955
+          },
+          {
+            "path": "ops/continuity/GITHUB_FIRST_48H_PLUS_36H_CONTINUITY_PLAN_20260917.json",
+            "sha256": "bd0ac6822a48cd4d49d42a883fa6f136852d9b4aa306463b1fa425a73acfe0e7",
+            "bytes": 3684
+          },
+          {
+            "path": "publication-manifests/dp1901-eg745-response-programme-20260920.json",
+            "sha256": "c5c84a98229b5a633598ee213a95bf9ed13107568e340e0b36aff04bb1e85c13",
+            "bytes": 3506
+          }
+        ],
+        "pending": [],
+        "scope": "Changed readable public resources plus ES/EN entrypoints. Browser checks are separate premerge evidence; not a whole-site or legal-proof certificate."
+      }
     }
   ],
-  "updated_at": "2026-09-19T18:11:54.215174Z"
+  "updated_at": "2026-09-19T18:12:06.689932Z"
 }
