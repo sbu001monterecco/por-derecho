@@ -1,5 +1,7 @@
 # CHATGPT START HERE — Project Sun Rock / Por Derecho
 
+> **19-Sep-2026 operational availability:** GitLab is temporarily blocked. Use GitHub/GitHub Pages plus connected primary-source systems as the active control plane. Read `archive/CURRENT_GITHUB_ONLY_HANDOVER_19SEP2026.md` before attempting repository/site continuity. Do not claim GitLab sync/deployment until access is restored and verified.
+
 This is the root operating entry point for any ChatGPT thread maintaining this repository, Depository or live site.
 
 ## Mission
