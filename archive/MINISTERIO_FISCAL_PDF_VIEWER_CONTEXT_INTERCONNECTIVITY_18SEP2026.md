@@ -57,3 +57,11 @@ The “go next” links must include at least one proceeding-specific route and 
 ## Future rule
 
 Any future source-controlled public-safe Ministerio Fiscal/Fiscalía PDF must be added to the register and room in the same change set that commits the PDF. The CI gate is intended to prevent orphan PDFs, direct-download-only publication, and PDFs without context.
+
+## 19 September all-office extension
+
+The public PDF room remains a **public-safe derivative denominator**, not the complete prosecutorial corpus. The wider office-by-office control is now `assets/data/ministerio-fiscal-office-digitisation-20260919.json` with bilingual coverage pages at `/es/ministerio-fiscal-cobertura-oficinas/` and `/en/public-prosecution-office-coverage/`.
+
+The extension separates office/file discovery, native custody, text extraction/OCR, substantive review, public-derivative readiness, viewer-live status and certified-file completeness. A source may be fully digitised in private custody while still being absent from the public room; that is a privacy/publication boundary, not a missing-source claim.
+
+All future public-safe PDFs remain subject to the existing atomic rule: PDF + registry + both bilingual viewers + context + evidential boundary + related links + sitemap/search + validation in one reviewed change.
