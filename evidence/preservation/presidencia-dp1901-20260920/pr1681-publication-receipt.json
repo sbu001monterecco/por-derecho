@@ -1,0 +1,71 @@
+{
+  "pr": 1681,
+  "candidate_sha": "0af6ecb4ecf2d586ff9e88456622d46de244d1fa",
+  "at": "2026-09-20T21:28:29.716486Z",
+  "merge_sha": "a9110f5d2a3de64ae7cf470ae06ca1cfde297f4a",
+  "pages_run_id": 35538619156,
+  "exact_matches": [
+    {
+      "path": "assets/data/dp1901-platform-recovery-nexus-20260920.json",
+      "sha256": "d1a81137468df15541f07086b1b80c9c5d17b01bdceb58362c2d2dfa444889f8",
+      "bytes": 20297
+    },
+    {
+      "path": "assets/data/dp1901-routing-collision-v1.json",
+      "sha256": "c8fcff30c546ab98df068380b44090b780a01bf775522fc7e774b1d715b3f5e1",
+      "bytes": 5084
+    },
+    {
+      "path": "assets/dp1901-platform-recovery-nexus-20260920.css",
+      "sha256": "40563ca6831f99fbf43d88ceba3bab0182201bf86c79538811d65ca83130b057",
+      "bytes": 1938
+    },
+    {
+      "path": "assets/dp1901-platform-recovery-nexus-20260920.js",
+      "sha256": "1cb050504ebebb8a4c18850bcf92fbaacdfa76549bd24595d7f2748362ef2e41",
+      "bytes": 4752
+    },
+    {
+      "path": "assets/site.js",
+      "sha256": "eae1136569ca57be36090683deba95716f3ddaa5d5ba51d04c6d0d65a1da13d0",
+      "bytes": 8185
+    },
+    {
+      "path": "en/dp-1901-platform-recovery/index.html",
+      "sha256": "8ec56b67053186d09cb87813f7110309e269128b9bbfb4d749099b71d375ec45",
+      "bytes": 10881
+    },
+    {
+      "path": "en/index.html",
+      "sha256": "c048d21d4c94e3cb6896e4c74d69a9ab73f84c3426d40fe815370b40fe1ba109",
+      "bytes": 228197
+    },
+    {
+      "path": "en/presidencia-platform-group-recovery/index.html",
+      "sha256": "9065a1b07e78930d9ef7c338267da0684e0f572f26417809faae8d7abc159b01",
+      "bytes": 14073
+    },
+    {
+      "path": "es/dp-1901-plataforma-recuperacion/index.html",
+      "sha256": "2022081f0a0d5ed9bba88f2a4e33e25ba8405a79f7203ce350bc85ff1bf74827",
+      "bytes": 11194
+    },
+    {
+      "path": "es/index.html",
+      "sha256": "48a7ebf0751867525f140cf3e70c34f8fe22a1c6edd7aeb0b3178e788da95dda",
+      "bytes": 237351
+    },
+    {
+      "path": "es/presidencia-plataforma-grupo-recuperacion/index.html",
+      "sha256": "cefb9c9d3168a1a46ab4ccb56d67688896be7206764ecf06078c167aada75a0b",
+      "bytes": 14815
+    },
+    {
+      "path": "publication-manifests/dp1901-platform-recovery-nexus-20260920.json",
+      "sha256": "fb685c79e95f44865de27165b1a70f92451f47c6dd12525a717d3c118ce58f2c",
+      "bytes": 6190
+    }
+  ],
+  "pending": [],
+  "scope": "Changed readable public resources plus ES/EN entrypoints. Browser checks are separate premerge evidence; not a whole-site or legal-proof certificate."
+}
