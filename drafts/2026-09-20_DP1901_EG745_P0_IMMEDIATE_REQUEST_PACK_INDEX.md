@@ -5,7 +5,8 @@
 **Court remedy:** separate, counsel-dependent.
 
 ## Core responses already patched
-- `drafts/cgpj/2026-09-19_DP1901_CGPJ_RESPONSE_PROPOSED.md`
+- `drafts/cgpj/2026-09-19_DP1901_CGPJ_RESPONSE_PROPOSED.md` — hash-locked 19-Sep package, restored unchanged
+- `drafts/cgpj/2026-09-20_DP1901_CGPJ_CROSS_INSTITUTIONAL_ADDENDUM_DRAFT.md` — separate 20-Sep cross-institutional addendum
 - `drafts/fiscalia/2026-09-18_EG745_DP1901_SUPERVENING_EVENT_PATCH_DRAFT.md`
 - `drafts/fiscalia/2026-09-19_FISCAL_SUPERIOR_CANARIAS_URGENT_NOTICE_DRAFT.md`
 
