@@ -1,7 +1,7 @@
 {
   "schema": "por-derecho.dp1901-eg745-cross-institutional-matrix.v1",
   "control_date": "2026-09-20",
-  "state": "11_REGISTERED_2_HELD_EG745_SUBSTANTIVE_RESPONSE_PENDING",
+  "state": "13_REGISTERED_POST_FILING_FOLLOWUP_OPEN_EG745_SUBSTANTIVE_RESPONSE_PENDING",
   "rules": {
     "unitary": "one factual spine; separate competences; no jurisdictional dead end",
     "attribution": "actor-specific proof; institution-held identity records should be requested before treating anonymity as terminal",
@@ -52,11 +52,8 @@
   "direct_action_state": {
     "source": "assets/data/dp1901-direct-action-state-20260920.json",
     "candidates": 13,
-    "registered": 11,
-    "held": [
-      "A06",
-      "A13"
-    ],
+    "registered": 13,
+    "held": [],
     "registrations": [
       "REGAGE26e00082034813",
       "S000000000000144968",
@@ -69,12 +66,16 @@
       "REGAGE26e00082032153",
       "REGAGE26e00082033336",
       "REGAGE26e00082052687",
-      "REGAGE26e00082055212"
+      "REGAGE26e00082055212",
+      "REGAGE26e00082058165",
+      "REGAGE26e00082060401"
     ],
     "caveats": [
       "A02 supplemental receipt has no document hash",
       "A12 filed-text field contains an extraneous operational tail",
-      "A10 is not the substantive E.G.745 response"
+      "A10 is not the substantive E.G.745 response",
+      "A06 earlier rejection remains disclosed; substantive handling and separate prior national alzada registration are unproved",
+      "A13 formalisation/admission remains a post-filing follow-up despite receipt-controlled registration"
     ]
   }
 }

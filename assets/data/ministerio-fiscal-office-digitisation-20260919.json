@@ -7,7 +7,11 @@
     "registry": "assets/data/ministerio-fiscal-pdf-room-20260918.json",
     "es": "/es/ministerio-fiscal-documentos-pdf/",
     "en": "/en/public-prosecution-pdf-document-room/",
-    "current_public_pdf_count": 5
+    "current_public_pdf_count": 7,
+    "classification_counts": {
+      "official_act_derivatives": 5,
+      "party_illustration_versions": 2
+    }
   },
   "existing_proceedings_matrix_note": "The wider proceedings interconnectivity model maintains a Fiscalía office/file matrix with a controlled row denominator; this coverage ledger does not equate matrix rows with certified-file completeness.",
   "states": [
@@ -42,7 +46,7 @@
       "id": "MF-FGE-INSPECCION",
       "name": "Fiscalía General del Estado — Inspección Fiscal",
       "evidence_state": "PUBLIC_VIEWER_LIVE",
-      "public_viewer_pdfs": 1,
+      "public_viewer_pdfs": 3,
       "known_lane": "E.G. 745/2026",
       "open_gap": "Complete internal corpus, access/handling trail and disposition beyond the controlled decree.",
       "links_es": [
@@ -52,7 +56,12 @@
       "links_en": [
         "../public-prosecution-inspection-exp-gub-745-2026/",
         "../eg-745-imminent-response-prosecution-matrix/"
-      ]
+      ],
+      "public_viewer_breakdown": {
+        "official_act_derivatives": 1,
+        "party_illustration_versions_unsigned_unfiled": 2
+      },
+      "viewer_count_boundary": "Three publicly hosted PDFs linked to this subject: one official-act derivative and two versions of party-authored illustrations. The illustrations are not attributed to the office and no official filing/incorporation is inferred."
     },
     {
       "id": "MF-FGE-DELITOS-ECONOMICOS",

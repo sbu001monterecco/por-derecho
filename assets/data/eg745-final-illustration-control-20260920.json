@@ -1,0 +1,336 @@
+{
+  "schema": "por-derecho.eg745-final-illustration-control.v1",
+  "status": "PREPARED_UNSIGNED_NOT_FILED",
+  "source_image_count": 22,
+  "source_pixels_modified": false,
+  "items": [
+    {
+      "id": "L1",
+      "source_bytes": 2616052,
+      "source_sha256": "92347a9310fca70503f125a5b11f6ced2e017fa3c08871064cd868cfecab2d29",
+      "dimensions": [
+        1491,
+        1055
+      ],
+      "pixel_sha256": "db95bf6227746c32b20c45cce47fcf22f1a4b7bfaa4b3e097c2d7a9862910bd7",
+      "pdf_decoded_rgb_equal_source": true,
+      "classification": "PUBLIC_SAFE_EXPLANATORY_IMAGE",
+      "label": "Dos denuncias autónomas: metáfora de una sola fosa",
+      "public_path": "assets/visuals/eg745-working-20260920/l1.png",
+      "caption_es": "Ilustración de parte. Ref. 21 corresponde a la presentación sobre actores privados de 25/06/2026; Ref. 24, a la notitia criminis de 18/06/2026 dirigida al TSJ de Canarias. La asociación con DP1901 y el acto que la explica deben certificarse. La fosa es una metáfora, no prueba de destrucción, acumulación ni culpabilidad."
+    },
+    {
+      "id": "L2",
+      "source_bytes": 2130349,
+      "source_sha256": "2700c9522544ce1319ddc4d1255a2df10d817e177709e387399b14e05a518fd6",
+      "dimensions": [
+        1448,
+        1086
+      ],
+      "pixel_sha256": "27ae29404fddaa1ea5b21aa6cb4711746f128cc6fa9c06f1ae2fa8eb09daf981",
+      "pdf_decoded_rgb_equal_source": true,
+      "classification": "PUBLIC_SAFE_EXPLANATORY_IMAGE",
+      "label": "Registro, reparto y remisión",
+      "public_path": "assets/visuals/eg745-working-20260920/l2.png",
+      "caption_es": "Ilustración explicativa de las dos presentaciones autónomas y de una ampliación dependiente de Ref. 24. El mostrador y las flechas son elementos gráficos. No identifican una oficina concreta ni acreditan un acto de reparto, una fecha de asociación o un traslado de documentos."
+    },
+    {
+      "id": "L3",
+      "source_bytes": 2204512,
+      "source_sha256": "966ed03ad2f2d59b920a09657f360b3963de89a842d9fe6744f6627f12299ed2",
+      "dimensions": [
+        1448,
+        1086
+      ],
+      "pixel_sha256": "cf272706c4e0b44cd0f0d96c3033651a7abf46c63c418cf918f177c9a1bf5080",
+      "pdf_decoded_rgb_equal_source": true,
+      "classification": "PUBLIC_SAFE_EXPLANATORY_IMAGE",
+      "label": "El corpus recibido por Fiscalía",
+      "public_path": "assets/visuals/eg745-working-20260920/l3.png",
+      "caption_es": "La existencia del informe fiscal de 29/07/2026 que solicita el archivo consta por referencia en el Auto de 14/09/2026. Esta lámina no reproduce el informe firmado ni certifica su autor, asignación o corpus. Se solicita el informe íntegro, el índice y el traslado que permitan verificar qué examinó Fiscalía."
+    },
+    {
+      "id": "L4",
+      "source_bytes": 2445736,
+      "source_sha256": "33596c0f55e68ddbd07c8a3c1a467347c04acb095453234368c48c0aa0fde5ff",
+      "dimensions": [
+        1448,
+        1086
+      ],
+      "pixel_sha256": "f79b9035f022d96b660818a2f5b62e2939d744538d51990aa12845cfb630d0f4",
+      "pdf_decoded_rgb_equal_source": true,
+      "classification": "PUBLIC_SAFE_EXPLANATORY_IMAGE",
+      "label": "Trazabilidad física y electrónica",
+      "public_path": "assets/visuals/eg745-working-20260920/l4.png",
+      "caption_es": "La entrega física sellada de 09/07/2026 y la incorporación electrónica son estados distintos. La lámina no convierte el contexto ATLANTE de 8-17 de julio en causa o fecha de la asociación. La cronología distingue hechos visibles en las fuentes, referencias de la resolución y actuaciones cuya certificación sigue solicitándose."
+    },
+    {
+      "id": "L5",
+      "source_bytes": 2367680,
+      "source_sha256": "5a0c398604651d7d9cb1c6613b2a9024a77feb18a3c9b8f579ad45c6144cb05a",
+      "dimensions": [
+        1055,
+        1491
+      ],
+      "pixel_sha256": "1945eb28c5a7869a1c6c03b87d613ffef723b7b15b3347e438659853689bb2c1",
+      "pdf_decoded_rgb_equal_source": true,
+      "classification": "PUBLIC_SAFE_EXPLANATORY_IMAGE",
+      "label": "Síntesis de las cuatro preguntas documentales",
+      "public_path": "assets/visuals/eg745-working-20260920/l5.png",
+      "caption_es": "Composición explicativa de parte: identidad de las dos denuncias, registro y reparto, corpus fiscal y trazabilidad. Se mantiene la referencia correcta de la presentación sobre actuación judicial: Ref. 24. Las escenas y los documentos dibujados no son reproducciones de actuaciones oficiales."
+    },
+    {
+      "id": "L6",
+      "source_bytes": 2026125,
+      "source_sha256": "1e8b19bcca00e09ae5238fa6d7adae47282bc97765b70052a425416723d8d745",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "pixel_sha256": "f860f78d4d885fc86be2224e4ad199377977db5c18f5382ff8968436cef2392c",
+      "pdf_decoded_rgb_equal_source": true,
+      "classification": "PUBLIC_SAFE_EXPLANATORY_IMAGE",
+      "label": "Visión conjunta y cinco preguntas para el historial",
+      "public_path": "assets/visuals/eg745-working-20260920/l6.png",
+      "caption_es": "Resumen explicativo de parte. Los tres hitos seleccionados no constituyen una cronología completa. Las preguntas sobre documento iniciador, remisiones, acto de asociación, corpus fiscal y objeto del Auto se mantienen abiertas hasta su contraste con los registros y documentos íntegros."
+    },
+    {
+      "id": "L7",
+      "source_bytes": 489983,
+      "source_sha256": "6b3dfac14865f8bd9cdaf6eda6b610ff67175a96761f9d5ab7a0819b935643bf",
+      "dimensions": [
+        1800,
+        1200
+      ],
+      "pixel_sha256": "93399012bc991d82fb2f2ff9a8f667707f5e9d9a498381fb40e854ea83cac011",
+      "pdf_decoded_rgb_equal_source": true,
+      "classification": "EXISTING_PUBLIC_SOURCE_IMAGE_EXACT_HASH_MATCH",
+      "label": "Cinco actores privados y administrador concursal: antecedente PwC",
+      "public_path": "assets/evidence/email-used-20260822/pwc-five-actors-plus-ac-2016-knowledge-checkpoint-ES.png",
+      "caption_es": "Original histórico de parte. El encabezamiento sobre conocimiento de criminalidad expresa la tesis del compareciente: instrucción del cliente de seguir la vía penal, acuse y contacto posterior PwC-AC. No se presenta como conclusión independiente de PwC de que los nombrados cometieron delitos. Cada función, periodo y eventual acto exige prueba individual."
+    },
+    {
+      "id": "L8",
+      "source_bytes": 827315,
+      "source_sha256": "f50790d29a0dc55521e03693b9023d55241212bbb4fd78977187dbe8bf544add",
+      "dimensions": [
+        1800,
+        1200
+      ],
+      "pixel_sha256": "7e8b992c74ecda4a334e753f0471b96b1ce9975204297df405542311e1dffeed",
+      "pdf_decoded_rgb_equal_source": true,
+      "classification": "EXISTING_PUBLIC_SOURCE_IMAGE_EXACT_HASH_MATCH",
+      "label": "San Telmo, RICPE y Sun Park: manifestación y preguntas",
+      "public_path": "assets/evidence/email-used-20260822/san-telmo-ricpe-sun-park-stamp-v1-ES.png",
+      "caption_es": "La lámina reproduce una manifestación pública atribuida a Eduardo Sánchez sobre clientes introducidos en una inversión RICPE vinculada a Sun Park. Su fuente debe examinarse en contexto, 07:57-08:27. La proximidad profesional y el mismo activo no prueban coordinación, transmisión de información concursal, ilicitud ni responsabilidad."
+    },
+    {
+      "id": "V01",
+      "source_bytes": 266948,
+      "source_sha256": "8e9bbaba481b4b86939ea32b3c7a6892772350948c1c20f37d119dcfc6ddaca3",
+      "dimensions": [
+        720,
+        405
+      ],
+      "pixel_sha256": "dbc1404743d16c6b2277d837a8c76496fc2841a619c3abec8ec5e1479ab196c1",
+      "pdf_decoded_rgb_equal_source": true,
+      "classification": "PUBLIC_SOURCE_EXCERPT",
+      "label": "Contexto fotográfico: puertas y cadenas",
+      "public_path": "assets/visuals/eg745-working-20260920/v01.webp",
+      "caption_es": "Página 9 del dossier fotográfico de 2018: puertas acristaladas con cadenas y candados. El encabezamiento del compilador contiene una imputación que debe atribuirse expresamente; las fotografías no acreditan por sí solas autor, fecha, autoridad ni ilicitud."
+    },
+    {
+      "id": "V02",
+      "source_bytes": 18970,
+      "source_sha256": "1cf4312c039bcdb40161fa55b180919ce1dea5769b0863006e0fc69404c7390a",
+      "dimensions": [
+        1133,
+        550
+      ],
+      "pixel_sha256": "d1408c26a1e26ea18cbc4cf8ef21161eda6f8e025c768dc0fcf50228b001969b",
+      "pdf_decoded_rgb_equal_source": true,
+      "classification": "PRIVATE_SOURCE_DERIVATIVE_WITHHELD",
+      "description": "Restricted source excerpt; original and full caption retained privately."
+    },
+    {
+      "id": "V03",
+      "source_bytes": 23092,
+      "source_sha256": "1e85391b8bcbb314a2f93895abccfd5b27b84c65be285e35d8c1ecf4c793a99f",
+      "dimensions": [
+        1333,
+        352
+      ],
+      "pixel_sha256": "3be9d9951a22aa1478540ca0e081c52eabc5bbf66b5fa266caf5507f76151700",
+      "pdf_decoded_rgb_equal_source": true,
+      "classification": "PRIVATE_SOURCE_DERIVATIVE_WITHHELD",
+      "description": "Restricted source excerpt; original and full caption retained privately."
+    },
+    {
+      "id": "V04",
+      "source_bytes": 9880,
+      "source_sha256": "80bc15387ebaf17098fb8d617f216026191c96b26f3c18cba87cf217d32a16ea",
+      "dimensions": [
+        1333,
+        196
+      ],
+      "pixel_sha256": "6e0af41ecda4fd65837f86b116255d6727cf88d59b90a57c8e2761df4efe72ea",
+      "pdf_decoded_rgb_equal_source": true,
+      "classification": "PRIVATE_SOURCE_DERIVATIVE_WITHHELD",
+      "description": "Restricted source excerpt; original and full caption retained privately."
+    },
+    {
+      "id": "V05",
+      "source_bytes": 21446,
+      "source_sha256": "3af5abb9b05840bd0b115485b4fcad2877b6f35e306d9d3a9f817a4659776aa8",
+      "dimensions": [
+        1094,
+        643
+      ],
+      "pixel_sha256": "afa24fbb6942c96bd15cda9db266aa86d3a15404b023e2619b9803e61f1dec36",
+      "pdf_decoded_rgb_equal_source": true,
+      "classification": "PRIVATE_SOURCE_DERIVATIVE_WITHHELD",
+      "description": "Restricted source excerpt; original and full caption retained privately."
+    },
+    {
+      "id": "V06",
+      "source_bytes": 31560,
+      "source_sha256": "d973cee869354847a08054d06cc46118245c80400f680d9e87ebd419d786c719",
+      "dimensions": [
+        627,
+        366
+      ],
+      "pixel_sha256": "7ce49c9b2007cb40de9e663132a5862a761f351be209ea0883dc2bcdde029877",
+      "pdf_decoded_rgb_equal_source": true,
+      "classification": "PRIVATE_SOURCE_DERIVATIVE_WITHHELD",
+      "description": "Restricted source excerpt; original and full caption retained privately."
+    },
+    {
+      "id": "V07",
+      "source_bytes": 13734,
+      "source_sha256": "068c45d39f438e7e551f74164a11e10f784c472cb2ea913fc9649d2971c36f7f",
+      "dimensions": [
+        1502,
+        124
+      ],
+      "pixel_sha256": "24e28ba0de7f61285d4835c837ba16f998519cbe56e2feafa3610e7d85cbcdbb",
+      "pdf_decoded_rgb_equal_source": true,
+      "classification": "PRIVATE_SOURCE_DERIVATIVE_WITHHELD",
+      "description": "Restricted source excerpt; original and full caption retained privately."
+    },
+    {
+      "id": "V08",
+      "source_bytes": 27528,
+      "source_sha256": "a98211d6a6f7acda23e1b3adf1cb1f3997f23b524a0bfccbb45c4f4e79f8235c",
+      "dimensions": [
+        638,
+        363
+      ],
+      "pixel_sha256": "6564b64fe95afac831e2b3ac9bd1bd9e1c9a1006a2bba6b72633c86103c8d7cb",
+      "pdf_decoded_rgb_equal_source": true,
+      "classification": "PRIVATE_SOURCE_DERIVATIVE_WITHHELD",
+      "description": "Restricted source excerpt; original and full caption retained privately."
+    },
+    {
+      "id": "V09",
+      "source_bytes": 16350,
+      "source_sha256": "9f28c42700b9e211435d069e7f287bcb9e37aa7b96ebf6f056bdd89cb9889af1",
+      "dimensions": [
+        1518,
+        105
+      ],
+      "pixel_sha256": "d7060380e70c5cababc687f754258a5336fabad995b87bea5f61ba0c9c47ce10",
+      "pdf_decoded_rgb_equal_source": true,
+      "classification": "PRIVATE_SOURCE_DERIVATIVE_WITHHELD",
+      "description": "Restricted source excerpt; original and full caption retained privately."
+    },
+    {
+      "id": "V10",
+      "source_bytes": 19746,
+      "source_sha256": "b84aea1254fb607bc92295e059442889b4197c26c839d1d0fd3f3e69e837bf65",
+      "dimensions": [
+        788,
+        436
+      ],
+      "pixel_sha256": "ba0d2f98ce1990d81cc3f5e0e0066393c7387891eab4e6fdc3f58401371bf648",
+      "pdf_decoded_rgb_equal_source": true,
+      "classification": "PRIVATE_SOURCE_DERIVATIVE_WITHHELD",
+      "description": "Restricted source excerpt; original and full caption retained privately."
+    },
+    {
+      "id": "V11",
+      "source_bytes": 12108,
+      "source_sha256": "e1c2737ed2cd0fe128b3929fd68f9180c9c741de21c17a3a26b23a479ab93703",
+      "dimensions": [
+        625,
+        199
+      ],
+      "pixel_sha256": "f8c546e7cf80161fca2a3dd1cdc357dfd9f00c141583fc98b9817d09efc0181a",
+      "pdf_decoded_rgb_equal_source": true,
+      "classification": "PRIVATE_SOURCE_DERIVATIVE_WITHHELD",
+      "description": "Restricted source excerpt; original and full caption retained privately."
+    },
+    {
+      "id": "V12",
+      "source_bytes": 11400,
+      "source_sha256": "00caea2e26a9920e7f5316ff290ab0c068c06c13eaab0c48e231bec07ba86df2",
+      "dimensions": [
+        1115,
+        108
+      ],
+      "pixel_sha256": "f70d31905f13aae2377992cb96991182b929c5244e2c9fef5f370b766c62970a",
+      "pdf_decoded_rgb_equal_source": true,
+      "classification": "PUBLIC_SOURCE_EXCERPT",
+      "label": "Aviso sobre otras fuentes de actualización",
+      "public_path": "assets/visuals/eg745-working-20260920/v12.webp",
+      "caption_es": "Aviso preservado de Google sobre información actualizada por usuarios u otras fuentes, incluido en el dossier de octubre de 2021, página 15. Resaltado preexistente. Advierte de fuentes alternativas; no identifica quién causó un cierre posterior."
+    },
+    {
+      "id": "V13",
+      "source_bytes": 1067431,
+      "source_sha256": "7d6ce948c0fd7785f30ec735f0fa5c0f5b2f089c54d2c11dd3350f5ee5a8105d",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "pixel_sha256": "4bf4635a7682818db8b07db2956779a8a3c1c80cd64bb9ea6f8bed5141729f81",
+      "pdf_decoded_rgb_equal_source": true,
+      "classification": "PUBLIC_SOURCE_EXCERPT",
+      "label": "Representaciones comerciales: Club Sei, Lava Verde y RIC",
+      "public_path": "assets/visuals/eg745-working-20260920/v13.png",
+      "caption_es": "Captura comparativa de escritorio con fecha visible 02/11/2021: Club Sei, representación web Hotel Lava Verde de Acosta Matos y folleto RIC. El folleto advierte que los proyectos están en estudio y pueden dejar de ser proyectos de la sociedad. Se reproducen publicaciones y sus reservas; no acredita por sí sola título, propiedad actual, identidad entre empresas ni consumación del proyecto. No es el documento D48 de enero de 2019."
+    },
+    {
+      "id": "L9",
+      "source_bytes": 149926,
+      "source_sha256": "eec5e9af962e5546fcbef92aa1f0a60883b94ee2ac89f523e99764325db7f2a3",
+      "dimensions": [
+        1733,
+        908
+      ],
+      "pixel_sha256": "9c185c1985d0f5c0fe196a3b98db356e4dc8344f7ebb6eda0169d347ef5403c8",
+      "pdf_decoded_rgb_equal_source": true,
+      "classification": "PUBLIC_SAFE_EDITORIAL_SOURCE_COPY",
+      "description": "Restricted source excerpt; original and full caption retained privately.",
+      "public_path": "assets/visuals/eg745-final-20260920/five-actors-v2.webp",
+      "caption_es": "Ilustración editorial de parte: tres personas del perímetro privado, un administrador concursal y un juez, con funciones distintas. No son cinco sujetos privados. La composición no prueba concierto ni culpabilidad por asociación. La identificación judicial alude al Ilmo. Sr. D. Alberto López Villarrubia, Magistrado-Juez del entonces Juzgado de lo Mercantil n.º 1 de Las Palmas de Gran Canaria. Las conductas individuales y sus fuentes documentales deben examinarse por separado."
+    }
+  ],
+  "public_final_part_1": {
+    "path": "evidence/fiscalia/2026/eg745-final-20260920/visual-annex-part-1.pdf",
+    "bytes": 9355099,
+    "pages": 5,
+    "sha256": "f37a803f06eaa1f6e04f597f3bb4c1e91b23f2a94b008b5496d59ac4631bdd8d"
+  },
+  "historical_part_1": {
+    "path": "evidence/fiscalia/2026/eg745-working-20260920/visual-annex-part-1.pdf",
+    "sha256": "f9d4bf09a85d33e08777aff51fc9fc8e8417895863b3993e5cd88023d2fd6069"
+  },
+  "part_2": {
+    "classification": "PRIVATE_HASH_ONLY",
+    "pages": 19,
+    "bytes": 9314342,
+    "sha256": "ded8887dd51561af9a11483c48207da5a9d1d1e5dada2055f6d647f4dc08b73b",
+    "reason": "Contains private correspondence/account/profile source excerpts; full composite not published."
+  },
+  "proof_limit": "The grave scene is a labelled metaphor, not evidence of destruction, merger of proceedings or guilt. Ref.21 private-actor complaint and Ref.24 judicial-conduct notice remain distinct; original certified records control."
+}
