@@ -606,6 +606,19 @@
       "Secretaría de Gobierno / Coordinación Provincial LAJ",
       "Canary ATLANTE technical custodian"
     ],
-    "anti_fragmentation": "separate competences; preserve common fact spine; reason and trace lawful onward referrals"
+    "anti_fragmentation": "separate competences; preserve common fact spine; reason and trace lawful onward referrals",
+    "p0_request_pack": {
+      "status": "PREPARED_NOT_FILED",
+      "index": "drafts/2026-09-20_DP1901_EG745_P0_IMMEDIATE_REQUEST_PACK_INDEX.md",
+      "drafts": [
+        "drafts/judicial-admin/2026-09-20_DECANATO_REPARTO_DP1901_CERTIFICATION_REQUEST_DRAFT.md",
+        "drafts/judicial-admin/2026-09-20_PLAZA6_LAJ_DP1901_FILE_PRODUCTION_REQUEST_DRAFT.md",
+        "drafts/judicial-admin/2026-09-20_TSJC_SECRETARIA_GOBIERNO_DP1901_SUPPLEMENT_DRAFT.md",
+        "drafts/judicial-admin/2026-09-20_COORDINACION_PROVINCIAL_LAJ_DP1901_REQUEST_DRAFT.md",
+        "drafts/canarias/2026-09-20_ATLANTE_DP1901_PRESERVATION_REQUEST_DRAFT.md",
+        "drafts/fiscalia/2026-09-20_FISCALIA_PROVINCIAL_DP1901_REPORT_IDENTIFICATION_REQUEST_DRAFT.md",
+        "drafts/judicial-admin/2026-09-20_TSJC_SALA_GOBIERNO_REPARTO_RULES_REQUEST_DRAFT.md"
+      ]
+    }
   }
 }
