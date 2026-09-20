@@ -1,31 +1,50 @@
 # DP1901 / E.G.745 / Fiscal Superior — filing-status register
 
-Control date: 19 September 2026  
-Repository state: GitHub additive package; GitLab blocked/read-only comparator; no item is filed merely because it exists in GitHub.
+Control date: 20 September 2026  
+Control timezone for receipt timestamps: Atlantic/Canary as the working programme timezone; times below are transcribed as printed.  
+Repository state: public-safe receipt reconciliation. Private originals remain outside GitHub.
 
-| Work product | Destination | State | Gate |
+## Current result
+
+**11 of 13 direct personal-action candidates are registered. A06 and A13 remain held and must not be repeated without resolving their documented prerequisites.**
+
+| ID | Destination / function | Registration evidence | Controlled state |
 |---|---|---|---|
-| DP1901 recurso reforma + subsidiario apelación | Plaza 6/competent court route | DRAFT / NOT FILED | notice date, standing, signed bytes, annexes, receipt |
-| Fiscal Superior urgent notice | Fiscalía Comunidad Autónoma Canarias | DRAFT / NOT FILED | formal registration and receipt |
-| FGE/Inspección cover | E.G.745/Inspección | DRAFT / NOT FILED | formal registration and association receipt |
-| E.G.745 successor | FGE/Inspección | DRAFT / NOT FILED | exact bytes, annex inventory, receipt |
-| preservation/production requests | destination-specific | DRAFT / NOT FILED | signed PDF and official receipt |
-| GitHub implementation | PR #1643 | OPEN PR / NOT MERGED | review, CI, merge, deployment |
-| GitLab reconciliation | blocked account | QUEUED | restore access; reconcile from newer GitHub |
-| Gmail copies | supplementary only | NOT SENT | formal route first; separate send authorization |
+| A01 | Decanato / Registro y Reparto via DGRAJ | `REGAGE26e00082034813` | REGISTERED_RECEIPT_VERIFIED |
+| A02 | Plaza 6 / DP 1901/2026 | `S000000000000144968` + supplement `S000000000000144972` | REGISTERED_WITH_SUPPLEMENT |
+| A03 | CGPJ — Alzada 286/2026 | `REGAGE26e00082030716` | REGISTERED_RECEIPT_VERIFIED |
+| A04 | Secretaría de Gobierno del TSJC | `REGAGE26e00082039117` | REGISTERED_RECEIPT_VERIFIED |
+| A05 | Coordinación Provincial de LAJ | `REGAGE26e00082040006` | REGISTERED_RECEIPT_VERIFIED |
+| A06 | National LAJ / Ministry route | rejected attempt `REGAGE26e00073341477` | HELD_NOT_FILED |
+| A07 | Canary Justice Administration / ATLANTE | `REGAGE26e00082038176` | REGISTERED_RECEIPT_VERIFIED |
+| A08 | Fiscalía Provincial de Las Palmas | `REGAGE26e00082044751` | REGISTERED_RECEIPT_HASH_VERIFIED |
+| A09 | Fiscal Superior de Canarias | `REGAGE26e00082032153` | REGISTERED_RECEIPT_VERIFIED |
+| A10 | FGE / Inspección Fiscal | `REGAGE26e00082033336` | REGISTERED_RECEIPT_VERIFIED |
+| A11 | Sala de Gobierno via Secretaría de Gobierno del TSJC | `REGAGE26e00082052687` | REGISTERED_RECEIPT_HASH_VERIFIED |
+| A12 | Defensor del Pueblo | `REGAGE26e00082055212` | REGISTERED_RECEIPT_HASH_VERIFIED_WITH_TEXT_DISCREPANCY |
+| A13 | Fiscalía Anticorrupción | none | HELD_NOT_FILED |
 
-No “filed”, “submitted”, “incorporated” or “served” claim without exact bytes, hash, annex inventory, destination, official receipt, date/time and association evidence where relevant.
+## Receipt-specific controls
 
-The three outputs remain distinct: DP1901 court remedy; Fiscal Superior territorial attribution/preservation; E.G.745 wider accountability.
+- **A02:** the principal receipt proves a four-page filing only. It did not list the two planned annexes. A separate supplemental registration records the named eleven-page combined annex PDF, but the receipt contains no document hash; it therefore does not prove byte identity.
+- **A08:** the receipt records four attachments and matching SHA-512 values. The request is a bounded custody/allocation search and does not presume Provincial authorship of the 29 July report.
+- **A09:** two private copies of the same receipt were recovered. They represent one action, not two.
+- **A10:** this is limited incorporation/preservation of the DP1901 fact in E.G.745. It is not the separate substantive E.G.745 response.
+- **A11:** two PDFs, fifteen pages, and both SHA-512 values match the receipt. It is a Sala de Gobierno/reparto request, separate from A04 and not an appeal.
+- **A12:** four PDFs, thirty-five pages, and all SHA-512 values match the receipt. The filed-text field also contains an extraneous operational tail. Its legal effect and any need for correction are not determined; no corrective filing is evidenced.
 
-## 19-September instruction — responses by 20 September evening
+## Proof ceiling
 
-Gil Marer expressly sets **20 September 2026 evening, Canary Islands time, at the latest** as the operational target for the personally available DP1901 response programme and the distinct E.G.745 successor. The exact hour is not specified. This target is **not a certified legal deadline**; actual judicial/administrative periods retain their own source-controlled computation.
+An official registration receipt proves the recorded presentation/registration event and, where supplied, the listed document hashes. It does **not** by itself prove onward transmission, admission, incorporation, examination, agreement, response or institutional action.
 
-The three principal tracks are not a count of personal filings. The recovered working census has 13 direct personal-request candidates and 20 connected economic/access/recovery routes. The complete historical total remains unverified; 33 must not be presented as 33 necessary new submissions. Conditional referrals, duplicate copies, already registered matters and missing file identities retain their own status. Machine control: `assets/data/dp1901-eg745-fiscal-superior-action-state-20260919.json`, `personal_action_census`.
+Repository publication is not filing or service. The private receipt PDFs, addresses, identity numbers, signatures, private email material and native private filenames remain outside the public repository.
 
-Finish the personally controllable DP1901 packages and delimit finite residuals; freeze a reusable fact → source → established proposition → open point → EG745 relevance → finite request module; then complete the EG745 successor within the same operational target without waiting indefinitely for authority replies. Judicial-remedy review remains urgent in parallel.
+## Remaining programme separation
 
-**COUNSEL-DEPENDENT — JAVIER SIXTO / CARLOS LLAMAS SANZ REVIEW/FILING LANE:** the DP1901 judicial remedy is excluded from the personal count. No new response is FILED merely because this control or the website is updated. Preserve exact signed/submitted bytes and official receipt before any filing-state upgrade.
+- **A06 — held/not filed:** rejected attempt `REGAGE26e00073341477`; exact rejection reason/history and a valid national review route remain unresolved.
+- **A13 — held/not filed:** signature/formalisation/admission in Exp.Gub.352/2025 and the Article 266 channel restriction remain unresolved.
+- **Counsel-dependent judicial remedy:** separate; excluded from the personal-action count.
+- **Substantive E.G.745 response:** separate from A10 and still pending.
+- **Provincial email follow-up:** supplementary only; sending/delivery and filing are distinct states.
 
-The economic/criminal hypothesis, actor-specific proof, contrary explanations and proportionate asset-preservation/recovery requests must travel with the relevant response; a procedural defect does not prove criminal guilt. The 29 July signed report, author/assignment/corpus, official Ref21/Ref24 bridge, native judicial Auto and operative notification remain production targets, not fabricated annexes.
+Machine control: `assets/data/dp1901-direct-action-state-20260920.json`.

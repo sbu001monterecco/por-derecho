@@ -1,7 +1,7 @@
 {
-  "publication_id": "PD-DP1901-EG745-20SEP-PROGRAMME-20260919",
-  "current_state": "PREPARED_PENDING_MERGE",
-  "owner": "DP1901-EG745-20SEP-CONTINUITY",
+  "publication_id": "PD-DP1901-11OF13-FILING-STATE-20260920",
+  "current_state": "PUBLICATION_CANDIDATE_REQUIRES_MERGE_AND_LIVE_VERIFY",
+  "owner": "DP1901-11OF13-PUBLICATION-20260920",
   "expected_routes": {
     "es": [
       "es/fiscalia-inspeccion-exp-gub-745-2026/index.html",
@@ -31,21 +31,25 @@
     ]
   },
   "expected_source_files": [
-    "assets/dp1901-eg745-response-programme-20260920.css",
-    "assets/data/dp1901-eg745-fiscal-superior-action-state-20260919.json",
-    "ops/DP1901_EG745_MF_IMMEDIATE_ACTION_MATRIX_18SEP2026.md",
-    "ops/2026-09-19_DP1901_EG745_FILING_STATUS_REGISTER.md"
+    "assets/data/dp1901-direct-action-state-20260920.json",
+    "assets/data/dp1901-eg745-cross-institutional-matrix-20260920.json",
+    "ops/2026-09-19_DP1901_EG745_FILING_STATUS_REGISTER.md",
+    "evidence/judicial/dp-1901-2026/README.md",
+    "es/dp-1901-2026/index.html",
+    "en/dp-1901-2026/index.html"
   ],
-  "source_base_sha": "e22cd1a349b57fc81420105c9e1611afb65efd2a",
+  "source_base_sha": "cac2616d695d6158d67ad4b677ef73a433270a51",
   "authority": "Current user repository/page publication and sole-integrator-transfer instructions",
-  "control_tower_receipt": "https://github.com/sbu001monterecco/por-derecho/issues/1428#issuecomment-5744093096",
+  "control_tower_receipt": "https://github.com/sbu001monterecco/por-derecho/issues/1428#issuecomment-5751869403",
   "schedule_receipt": "https://github.com/sbu001monterecco/por-derecho/issues/1621#issuecomment-5744107378",
   "preservation": "Additive page sections and stylesheet link only; previous JSON values preserved. No source, route, image, PDF, ID, link, script or contrary record removed.",
   "evidence_limits": [
-    "13 direct candidates /20 connected routes is a provisional working census, not exhaustive personal total or33 new required filings",
-    "20 September evening is an operational target, not legal-deadline certification",
-    "No legal filing or authority email is asserted",
-    "Native Auto/service metadata, signed Fiscal report/corpus and official Ref21/Ref24 bridge remain open"
+    "Eleven direct personal actions have official registration receipts; A06 and A13 remain held/not filed",
+    "A02 supplemental receipt names the combined annex PDF but contains no document hash, so byte identity is not proved",
+    "A12 receipt matches all four attachment hashes but its filed-text field includes an extraneous operational tail; legal effect and correction need are undetermined",
+    "Registration does not prove onward delivery, admission, incorporation, examination, response or institutional action",
+    "A10 is not the separate substantive E.G.745 response",
+    "Counsel-dependent judicial remedies remain separate"
   ],
   "verification_repair": {
     "path": ".github/workflows/verify-dp1901-dip2-live-origin.yml",
@@ -59,11 +63,15 @@
   },
   "validation": {
     "evidence": [
-      "Local additive-content/hash/link checks and clean patch application; full checks recorded in PR/Actions when run"
+      "JSON parse and 13-action/11-registered/2-held invariant",
+      "unique registration identifiers",
+      "bilingual marker cardinality and action-row parity",
+      "private-data exclusion scan"
     ],
     "browser": "PENDING",
     "release": "PENDING"
   },
   "schema": "por-derecho.publication-state.v1",
-  "schema_version": "1.0.0"
+  "schema_version": "1.0.0",
+  "privacy": "Public-safe metadata and receipt-proved hashes only; no private receipts, addresses, identifiers, signatures, private email or filing bodies."
 }
