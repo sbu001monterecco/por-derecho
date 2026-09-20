@@ -2,6 +2,14 @@
 
 Estado: DRAFT / NOT FILED / successor to 12-September predecessor
 
+## READER SUMMARY — WHAT HAPPENED, WHY IT MATTERS, AND WHAT IS REQUESTED
+
+This successor response addresses a finite problem that has become more concrete since the earlier E.G.745 submission. The 14 September DP1901 order identifies a specific Ministerio Fiscal act: a report dated 29 July 2026 requesting archive in DP1901. The report's author, office, assignment, signed text and source corpus remain held or identifiable through institutional records. At the same time, the controlled record shows an unresolved procedural-identity collision between the private-actor Ref.21 track and the judge/prevaricación track reflected in DIP2/Ref.24, while DIP2 had already recorded the Article 73.3.b LOPJ / TSJ competence framework.
+
+The decisive issue is therefore not whether prosecutorial misconduct is already proved. It is whether a merits archive was requested before the object of DP1901, objective competence, the Fiscal's source corpus and the relationship between the autonomous complaints were reconciled; and whether Inspección can maintain a lack-of-individualisation objection when the identity and allocation of the 29 July Fiscal are themselves institution-controlled facts expressly requested from it.
+
+The requested steps are limited: identify the Fiscal and assignment; produce/preserve the signed report and corpus; reconstruct Ref.21/Ref.24/DIP2 routing and any joinder, reassignment or segregation; examine the competence issue; carry out actor-specific, non-circular review; refer matters outside competence with traceability; and give a reasoned response. These requests do not ask Inspección to revoke the court order or treat routing gaps as proof of criminal intent.
+
 ## I. Concrete supervening act
 
 The 14-Sep DP1901 Auto identifies a specific Fiscal act: report dated 29 July, requesting archive, in a specific proceeding. The author is identifiable from institutional reparto/assignment records. Inspección cannot rely upon the complainant's inability to name a Fiscal where the individual's identity lies uniquely or predominantly in institutional records controlled by Ministerio Fiscal and has been expressly requested.
