@@ -2,11 +2,11 @@
   "schema": "por-derecho.publication-runtime.v1",
   "fence": 23,
   "owner": "1684:d068133026ab28d4e689553a461bc29016f08858",
-  "phase": "ACCEPTED",
+  "phase": "MERGE_PENDING",
   "pr": 1684,
   "base_sha": "dfbde5ef285da6253158dc2d0806e7ec05242725",
   "candidate_sha": "d068133026ab28d4e689553a461bc29016f08858",
-  "run_id": 35544129635,
+  "run_id": 35544214539,
   "claimed_at": "2026-09-20T23:16:52.010535Z",
   "expiry_policy": "Never silently expire into free; recover after inspecting actual merge/deployment.",
   "receipts": [
@@ -1509,7 +1509,14 @@
           }
         ]
       }
+    },
+    {
+      "phase": "MERGE_PENDING",
+      "at": "2026-09-20T23:18:18.648430Z",
+      "evidence": {
+        "pr": 1684
+      }
     }
   ],
-  "updated_at": "2026-09-20T23:16:53.136626Z"
+  "updated_at": "2026-09-20T23:18:18.648430Z"
 }
