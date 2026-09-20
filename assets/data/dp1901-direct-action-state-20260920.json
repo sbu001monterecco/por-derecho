@@ -1,0 +1,211 @@
+{
+  "schema": "por-derecho.dp1901-direct-action-state.v1",
+  "control_date": "2026-09-20",
+  "control_timezone": "Atlantic/Canary",
+  "status": "11_REGISTERED_2_HELD",
+  "counts": {
+    "candidates": 13,
+    "registered_actions": 11,
+    "held_not_filed": 2,
+    "registration_events": 12
+  },
+  "legal_effect": {
+    "receipt_proves": "Presentation/registration metadata and, where expressly stated, listed attachment hashes.",
+    "receipt_does_not_prove": [
+      "delivery beyond the named registration recipient",
+      "admission",
+      "incorporation into a case file",
+      "examination",
+      "agreement with the merits",
+      "institutional action or response"
+    ],
+    "publication_does_not_prove": "Filing, service, delivery or any authority action."
+  },
+  "privacy": {
+    "public_record": "Redacted filing metadata, proof limits and receipt-proved hashes only.",
+    "excluded": [
+      "private receipt PDFs",
+      "personal address",
+      "personal identity numbers",
+      "private email address",
+      "signatures",
+      "authentication material",
+      "native private filenames",
+      "unredacted filing bodies"
+    ]
+  },
+  "separation": {
+    "counsel_dependent_judicial_remedy": "Outside the 13 personal-action count.",
+    "substantive_eg745_response": "Separate from A10 and still pending.",
+    "provincial_email_follow_up": "Supplementary communication; not a filing and not evidence of delivery or institutional action."
+  },
+  "actions": [
+    {
+      "id": "A01",
+      "state": "REGISTERED_RECEIPT_VERIFIED",
+      "destination": "Decanato / Registro y Reparto via DGRAJ",
+      "dir3": "A05003250",
+      "registration": "REGAGE26e00082034813",
+      "presented_at": "2026-09-20 13:51:39",
+      "registered_at": "2026-09-20 13:51:42",
+      "purpose": "Onward routing to Decanato / Registro y Reparto for initiating-document, reparto and association traceability.",
+      "proof": "Receipt proves registration to the stated recipient; onward delivery, association and institutional action remain unproved."
+    },
+    {
+      "id": "A02",
+      "state": "REGISTERED_WITH_SUPPLEMENT",
+      "destination": "Plaza 6 / DP 1901/2026",
+      "registration": "S000000000000144968",
+      "presented_at": "2026-09-20 17:52",
+      "supplement_registration": "S000000000000144972",
+      "supplement_presented_at": "2026-09-20 18:07",
+      "purpose": "Access and production request for docket/index, corpus, signed Fiscal report, native order and service metadata.",
+      "proof": "Principal receipt proves a four-page principal filing. The planned annexes were not listed there. A separate supplemental receipt records an eleven-page combined annex PDF, but supplies no document hash; byte identity is therefore not proved by that receipt."
+    },
+    {
+      "id": "A03",
+      "state": "REGISTERED_RECEIPT_VERIFIED",
+      "destination": "CGPJ — Alzada 286/2026",
+      "dir3": "I00005220",
+      "registration": "REGAGE26e00082030716",
+      "presented_at": "2026-09-20 12:32:17",
+      "registered_at": "2026-09-20 12:32:19",
+      "purpose": "Supervening fact, preservation and functional classification.",
+      "proof": "Receipt proves registration; classification, admission, examination and action remain unproved."
+    },
+    {
+      "id": "A04",
+      "state": "REGISTERED_RECEIPT_VERIFIED",
+      "destination": "Secretaría de Gobierno del TSJC",
+      "dir3": "J00023418",
+      "registration": "REGAGE26e00082039117",
+      "presented_at": "2026-09-20 15:35:50",
+      "registered_at": "2026-09-20 15:35:59",
+      "purpose": "Territorial Office-of-Justice supervision and traceability in Exp.Gub.38/2026.",
+      "proof": "Receipt proves registration; transmission, incorporation, examination and action remain unproved."
+    },
+    {
+      "id": "A05",
+      "state": "REGISTERED_RECEIPT_VERIFIED",
+      "destination": "Coordinación Provincial de LAJ",
+      "dir3": "J00022837",
+      "registration": "REGAGE26e00082040006",
+      "presented_at": "2026-09-20 15:58:54",
+      "registered_at": "2026-09-20 15:58:57",
+      "purpose": "Identification and coordination of services that received, digitised and routed the material.",
+      "proof": "Receipt proves registration; the separately authorised email follow-up is supplementary and does not change filing proof."
+    },
+    {
+      "id": "A06",
+      "state": "HELD_NOT_FILED",
+      "destination": "National LAJ / Ministry route",
+      "rejected_registration": "REGAGE26e00073341477",
+      "purpose": "National supervisory incorporation within lawful competence.",
+      "proof": "A prior attempt was rejected. The exact reason/history and a valid national administrative-review route remain unresolved; do not repeat."
+    },
+    {
+      "id": "A07",
+      "state": "REGISTERED_RECEIPT_VERIFIED",
+      "destination": "Canary Justice Administration / ATLANTE",
+      "dir3": "A05003250",
+      "registration": "REGAGE26e00082038176",
+      "presented_at": "2026-09-20 15:13:38",
+      "registered_at": "2026-09-20 15:13:55",
+      "purpose": "Technical custody, log preservation and clarification of documented incidents.",
+      "proof": "Receipt proves registration; preservation, production and technical findings remain unproved."
+    },
+    {
+      "id": "A08",
+      "state": "REGISTERED_RECEIPT_HASH_VERIFIED",
+      "destination": "Fiscalía Provincial de Las Palmas",
+      "dir3": "J00001657",
+      "registration": "REGAGE26e00082044751",
+      "presented_at": "2026-09-20 17:52:59",
+      "registered_at": "2026-09-20 17:53:02",
+      "purpose": "Bounded custody/allocation search for the 29 July report, author, assignment and corpus; no Provincial authorship is presumed.",
+      "attachments": {
+        "count": 4,
+        "pages": null,
+        "receipt_hash_match": true,
+        "sha512": [
+          "a36ced70df001b3f65584de668bdf2389424f3cc8525f68ddf3e7d3e29a9c07e5e4518bd4e396269cfb92f7538086df0a7c3f8a47c946abec5b34458fdc61a0d",
+          "bc1cd22d0bd0dddd1c43552ef5e3cc4e379941fb93134acffcc472d2c86987df5e3e9b6a5c58f46530012adbb2982f25581d7203f1ce252d64c14bbd31320a7e",
+          "cb43ebdcf42fdcb11d2074739e6d7a5b39a4d9f8751d4a4e2f4c1f426a80bfead58df9d75611089c88eb588f95cedf7bf1481576046fa3fd246274b0ac7ce936",
+          "69fa0e27f5ff7289ba4bb09c69954c436eff30af2ad55a554440e55d5da8dcdc96e48b47a6ca81c10cc2f2212fb7f4ec0457533c1d4a26acc88bb30e99a08923"
+        ]
+      },
+      "proof": "Receipt proves registration and the four attachment hashes. Authorship, allocation, corpus location and institutional action remain unproved."
+    },
+    {
+      "id": "A09",
+      "state": "REGISTERED_RECEIPT_VERIFIED",
+      "destination": "Fiscal Superior de Canarias",
+      "dir3": "J00015401",
+      "registration": "REGAGE26e00082032153",
+      "presented_at": "2026-09-20 13:01:40",
+      "registered_at": "2026-09-20 13:01:52",
+      "purpose": "Territorial competence, attribution, DIP 2/2026 and preservation review.",
+      "proof": "One action only: duplicate private receipt copies do not create a second filing. Registration does not prove examination or action."
+    },
+    {
+      "id": "A10",
+      "state": "REGISTERED_RECEIPT_VERIFIED",
+      "destination": "FGE / Inspección Fiscal",
+      "dir3": "J00003992",
+      "registration": "REGAGE26e00082033336",
+      "presented_at": "2026-09-20 13:25:00",
+      "registered_at": "2026-09-20 13:25:03",
+      "purpose": "Limited incorporation and preservation of a supervening DP1901 fact in E.G.745.",
+      "proof": "Not the separate substantive E.G.745 response. Receipt proves registration only."
+    },
+    {
+      "id": "A11",
+      "state": "REGISTERED_RECEIPT_HASH_VERIFIED",
+      "destination": "Sala de Gobierno via Secretaría de Gobierno del TSJC",
+      "dir3": "J00023418",
+      "registration": "REGAGE26e00082052687",
+      "presented_at": "2026-09-20 19:51:53",
+      "registered_at": "2026-09-20 19:52:07",
+      "purpose": "General reparto rules, approval/ratification, exceptions, publicity, Tribunal-de-Instancia mapping and written routing instructions.",
+      "attachments": {
+        "count": 2,
+        "pages": 15,
+        "receipt_hash_match": true,
+        "sha512": [
+          "37e5a7118470d389f5548a201f9edd6414f127a1c6a06440a72d5be024a54345975d12b2b4c0a203fb31f4a98092bfb4186c1f09e3f2cedd80655f40efcf9b15",
+          "eda604ff54d4f4babf76bc48ff070f2da36ff4d3c8afdd970c36c5290ec7b0411230328bf9e95ee11edc3e466924fd85665d9aee142b33bfc8f048142f0fdcda"
+        ]
+      },
+      "proof": "Separate from A04 and not an appeal. Receipt proves registration and matching hashes, not transmission, admission, examination or response."
+    },
+    {
+      "id": "A12",
+      "state": "REGISTERED_RECEIPT_HASH_VERIFIED_WITH_TEXT_DISCREPANCY",
+      "destination": "Defensor del Pueblo",
+      "dir3": "I00000001",
+      "registration": "REGAGE26e00082055212",
+      "presented_at": "2026-09-20 20:30:22",
+      "registered_at": "2026-09-20 20:30:25",
+      "purpose": "General administrative traceability safeguards; judicial merits remain outside this lane.",
+      "attachments": {
+        "count": 4,
+        "pages": 35,
+        "receipt_hash_match": true,
+        "sha512": [
+          "ead1c398795de28ec92d93cc086f47e741fdd6034339a2bf59e229dbc62bd0a466857314737b10e4e0b7f24606603f5e3d4a0b60c7f14861f30bef1f8b13c393",
+          "854a877fb5ca31146131f1baf225b967c4e25d7f9326fbe4e63b3991be08ed2dd43309e634f2a969107ec1b6d022f1c7ed503b4cad7775d7f7c446ccde3c4003",
+          "77da9c36aae18c32b42e698cdd9352c46feea2f284f0621f9bc94d0b652fdcc6fffcaa945daa4b4d85167809c69c7ee7ecbdce9867c04f1d782df49f68f2cbd3",
+          "eda604ff54d4f4babf76bc48ff070f2da36ff4d3c8afdd970c36c5290ec7b0411230328bf9e95ee11edc3e466924fd85665d9aee142b33bfc8f048142f0fdcda"
+        ]
+      },
+      "proof": "Receipt contains the intended requests and all four attachments, but also an extraneous operational-text tail. Legal effect and need for correction are undetermined; no correction is evidenced. Registration is not admission, handling or response."
+    },
+    {
+      "id": "A13",
+      "state": "HELD_NOT_FILED",
+      "destination": "Fiscalía Anticorrupción",
+      "purpose": "Status/subsanation of the existing communication, competent examination of the economic module and preservation.",
+      "proof": "Actual signature/formalisation/admission in Exp.Gub.352/2025 and the Article 266 channel restriction remain unresolved; do not file until reconciled."
+    }
+  ]
+}
