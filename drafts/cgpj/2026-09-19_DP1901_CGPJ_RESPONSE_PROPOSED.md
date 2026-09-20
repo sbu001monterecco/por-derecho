@@ -195,3 +195,36 @@ En San Cristóbal de La Laguna, a 19 de septiembre de 2026.
 Pdo.
 
 Gil Marer
+
+
+<!-- cross-institutional-20260920:start -->
+## ADDENDUM DE CONTROL — 20 SEPTIEMBRE 2026  
+### COORDINACIÓN CGPJ–FGE, OFICINA JUDICIAL, ATLANTE Y REGLA DE NO FRAGMENTACIÓN
+
+**Estado:** integración propuesta en este borrador; NO PRESENTADO.
+
+46. La cuestión sobrevenida presenta tres capas que deben mantenerse diferenciadas: (i) actos jurisdiccionales atribuidos a los Magistrados que los firman; (ii) actuación del Ministerio Fiscal, incluido el informe de 29 de julio de 2026; y (iii) actos de Decanato, reparto, Oficina Judicial, LAJ y sistemas tecnológicos que determinan qué documento fue incorporado, asociado, transmitido y puesto a disposición de cada decisor. La verificación de la tercera capa puede confirmar una explicación técnica o administrativa, excluirla o revelar otra secuencia; no se presume ninguna.
+
+47. Consta en fuente pública oficial del Gobierno de Canarias que el **8 de julio de 2026** se detectó una incidencia de rendimiento de ATLANTE en la provincia de Las Palmas, dada por resuelta el **17 de julio de 2026**, permaneciendo el sistema operativo según dicha comunicación. Esa ventana coincide temporalmente con la presentación de material privado bajo DP 1901 el 9 de julio y con la providencia de 12 de julio. La coincidencia **no prueba causalidad, manipulación ni irregularidad**. Justifica una comprobación técnica delimitada capaz de distinguir ralentización/reintentos/reindexación/colas u otros eventos documentados de decisiones humanas de reparto, asociación o transmisión.
+
+48. La Ley Orgánica del Poder Judicial atribuye al CGPJ la superior inspección y vigilancia de Juzgados y Tribunales para comprobar y controlar el funcionamiento de la Administración de Justicia (art. 171). La misma arquitectura legal diferencia las funciones de los Secretarios de Gobierno sobre los servicios responsabilidad de los LAJ (art. 465) y, tras la reforma organizativa, el reparto se realiza por el LAJ bajo supervisión de la Presidencia del Tribunal de Instancia, conforme a las normas aprobadas por la Sala de Gobierno.
+
+49. Existe además un **Convenio CGPJ–Fiscalía General del Estado sobre inspección coordinada de órganos jurisdiccionales y Fiscalías**, suscrito el 19 de septiembre de 2019 y prorrogado en 2023 hasta el **19 de septiembre de 2027**. No se afirma que el compareciente tenga un derecho subjetivo a imponer una inspección conjunta. Se solicita que el Consejo valore expresamente si el problema común de interfaz —qué expediente se transmitió, qué corpus recibió Fiscalía y cómo se devolvió el resultado al órgano judicial— justifica activar o utilizar ese mecanismo de coordinación dentro de sus competencias respectivas.
+
+50. **NO FRAGMENTACIÓN / REMISIÓN TRAZABLE.** No se solicita al CGPJ que ejerza potestad disciplinaria sobre Fiscales ni a Fiscalía que ejerza potestad disciplinaria sobre jueces o LAJ. Se solicita que cada institución preserve y determine la materia comprendida en sus funciones; identifique y motive cualquier extremo ajeno; y, cuando el ordenamiento lo permita o imponga, lo remita o coordine con el órgano competente dejando constancia de remitente, receptor, fecha, referencia y objeto. La pluralidad de competencias no debe destruir la trazabilidad del mismo hecho fuente.
+
+### SOLICITUDES ADICIONALES DEL ADDENDUM
+
+A. Que se valore expresamente la utilización del Convenio CGPJ–FGE de inspección coordinada para la **interfaz funcional común**, sin confundirla con la responsabilidad disciplinaria individual de cada carrera.
+
+B. Que se recabe o preserve, por la vía competencial procedente, el historial objetivo de reparto e incorporación: documento iniciador, referencias 21/22/24, fechas de escaneo/ingestión, NIG/IUP, asociaciones/reasociaciones, segregaciones y transmisiones.
+
+C. Que se interese de la autoridad técnica competente en Canarias la preservación de los registros relativos a la incidencia ATLANTE 8–17 julio de 2026 y, dentro de los límites legales, la certificación de si el NIG/IUP de DP 1901 registró durante esa ventana cualquier evento técnico relevante.
+
+D. Que cualquier extremo que no pueda examinarse en Alzada 286/2026 sea **desglosado/remitido con trazabilidad**, preservando fecha, documentos y referencia, en lugar de considerarse globalmente ajeno al Consejo.
+
+E. Que la respuesta diferencie expresamente: mérito jurisdiccional; funcionamiento/Inspección; reparto y Oficina Judicial; disciplina judicial; disciplina/inspección fiscal; y eventual traslado penal bajo el régimen legal aplicable.
+
+**Fuente de control transversal:** `ops/2026-09-20_DP1901_EG745_COMMON_TRACEABILITY_REFERRAL_MATRIX.md`.
+<!-- cross-institutional-20260920:end -->
+

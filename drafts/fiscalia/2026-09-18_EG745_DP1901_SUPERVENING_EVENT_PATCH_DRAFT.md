@@ -183,3 +183,54 @@ Add requests for:
 - `ops/DP1901_EG745_MF_IMMEDIATE_ACTION_MATRIX_18SEP2026.md`
 
 Repository publication or a GitHub commit does not establish service, receipt, incorporation, knowledge by an official or legal filing.
+
+
+<!-- cross-institutional-20260920:start -->
+## E. ADDENDUM 20 SEP 2026 — IDENTIFICACIÓN INSTITUCIONALMENTE DETERMINABLE Y NO FRAGMENTACIÓN
+
+**Estado:** DRAFT / NOT FILED.
+
+### 1. Un acto Fiscal ya individualizable por fecha, expediente y efecto solicitado
+
+El Auto de 14 de septiembre identifica un acto Fiscal concreto: **informe de 29 de julio de 2026 interesando el archivo de DP 1901/2026**. Permanecen abiertos autor, Fiscalía de adscripción, título de asignación, corpus, índice de remisión, versiones, visado/instrucción y transmisión de salida.
+
+La cuestión ya no puede formularse sólo como ausencia de un nombre aportado por el denunciante. La institución dispone, en principio, de registros capaces de identificar quién recibió/asumió el asunto y quién emitió el informe. Esa identidad debe solicitarse y comprobarse antes de convertir la falta de atribución externa en una razón terminal.
+
+### 2. Reglamento del Ministerio Fiscal — mecanismo específico cuando la identidad no está cerrada
+
+Los artículos 163 a 167 del Reglamento del Ministerio Fiscal (RD 305/2022) distinguen recepción, examen preliminar, diligencias informativas y remisión. En particular:
+
+- art. 164.1.b permite diligencias informativas cuando pudieran existir indicios pero no consten suficientemente la identidad u otros elementos necesarios;
+- art. 167 limita esas diligencias a lo imprescindible para comprobar verosimilitud, concretar el posible carácter disciplinario y **determinar la identidad** del presunto autor o autores, pudiendo reclamarse documentos y practicarse diligencias pertinentes;
+- art. 165 permite archivo motivado, expediente gubernativo o **remisión al órgano competente** según naturaleza y objeto;
+- art. 164.2 remite al art. 144 cuando del examen resulten indicios de delito.
+
+No se afirma que esos presupuestos estén ya cumplidos ni que un Fiscal haya cometido infracción. Se solicita que Inspección explique, petición por petición, por qué no procede utilizar los mecanismos de identificación que el propio Reglamento contempla.
+
+### 3. Incidencia ATLANTE — explicación técnica alternativa que debe preservarse
+
+El Gobierno de Canarias comunicó oficialmente que una incidencia de rendimiento de ATLANTE en Las Palmas fue detectada el **8 de julio de 2026** y dada por resuelta el **17 de julio**, permaneciendo el sistema operativo. Esa ventana coincide con el material privado presentado bajo DP1901 el 9 de julio y la providencia de 12 de julio.
+
+La incidencia **no se presenta como prueba de alteración o irregularidad**. Se pide preservar y obtener de la autoridad técnica competente los registros capaces de determinar si produjo un efecto documentado sobre el exacto NIG/IUP, o si la colisión debe explicarse por otra causa.
+
+### 4. Coordinación con CGPJ sin invasión de competencias
+
+El Convenio CGPJ–FGE sobre inspección coordinada de órganos jurisdiccionales y Fiscalías, firmado el 19 de septiembre de 2019 y prorrogado hasta el 19 de septiembre de 2027, ofrece un marco institucional para problemas comunes de funcionamiento. Se pide que Inspección valore expresamente su pertinencia respecto de la interfaz **órgano judicial → corpus remitido → Fiscalía → informe → órgano judicial**, manteniendo separadas las potestades disciplinarias de cada institución.
+
+### 5. Petición anti-fragmentación
+
+> **NO FRAGMENTACIÓN / REMISIÓN TRAZABLE.** Se interesa que Inspección determine íntegramente la materia comprendida en sus funciones; identifique y motive cualquier extremo que considere ajeno; que, cuando proceda, lo remita al órgano competente; y que haga constar órgano remitente, receptor, fecha, referencia y objeto. No se solicita que Fiscalía revise el mérito del Auto ni que asuma potestades disciplinarias sobre la Carrera Judicial.
+
+### 6. Peticiones nuevas concretas
+
+1. Identificar desde los registros institucionales al autor del informe Fiscal de 29-jul y su cadena de asignación.
+2. Producir o identificar el corpus exacto recibido y remitido.
+3. Explicar el tratamiento de Ref.21, Ref.24, su ampliación y DIP2 dentro de ese corpus.
+4. Registrar el resultado de cualquier búsqueda negativa de forma delimitada, indicando repositorios/unidades consultados.
+5. Remitir con trazabilidad los componentes ajenos a Inspección en lugar de archivarlos globalmente por incompetencia.
+6. Valorar coordinación CGPJ–FGE para la interfaz común y preservar la separación de competencias individuales.
+7. Incorporar la incidencia ATLANTE como hipótesis técnica alternativa a comprobar, sin inferencia adversa.
+
+**Fuente de control transversal:** `ops/2026-09-20_DP1901_EG745_COMMON_TRACEABILITY_REFERRAL_MATRIX.md`.
+<!-- cross-institutional-20260920:end -->
+

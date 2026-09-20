@@ -63,3 +63,29 @@ This notice is simultaneously placed before FGE Inspection and will be incorpora
 
 En [lugar], a [fecha].  
 [Firma]
+
+
+<!-- cross-institutional-20260920:start -->
+## 7. Addendum 20 Sep 2026 — coordinación, identificación y preservación ATLANTE
+
+**Estado:** DRAFT / NOT FILED.
+
+La comunicación debe añadir tres extremos sin convertirlos en acusación:
+
+1. **Identificación institucionalmente determinable.** El informe Fiscal de 29 de julio es un acto fechado y vinculado a DP1901. Se solicita identificar autor, Fiscalía, asignación, corpus, visado/instrucción, transmisión y tratamiento de DIP2/Ref.21/Ref.24 desde los registros internos competentes.
+
+2. **Incidencia ATLANTE 8–17 julio.** La fuente oficial del Gobierno de Canarias acredita una ralentización en Las Palmas durante la ventana crítica. No se afirma que causara la colisión. Se solicita coordinación con la autoridad técnica para preservar y esclarecer si produjo algún evento relevante en el NIG/IUP concreto.
+
+3. **No fragmentación.** Cualquier extremo ajeno a la jefatura/inspección territorial deberá, cuando proceda legalmente, remitirse o identificarse con destino, fecha, referencia y objeto; no se pide al Fiscal Superior revisar el mérito del Auto.
+
+### Solicitud adicional de coordinación
+
+Se solicita valorar si la interfaz común órgano judicial–Fiscalía requiere poner el asunto en conocimiento de FGE/Inspección dentro del **Convenio CGPJ–FGE de inspección coordinada**, vigente por prórroga hasta 19 de septiembre de 2027, sin prejuzgar que proceda una inspección conjunta ni invadir las competencias disciplinarias de la Carrera Judicial.
+
+### Texto controlado de remisión trazable
+
+> Cuando una parte de los hechos comunicados quede fuera de la competencia propia, se interesa que no se produzca un archivo global por esa sola razón, sino su clasificación, preservación y, cuando el ordenamiento lo permita o imponga, remisión al órgano competente, con constancia de remitente, receptor, fecha, referencia y objeto.
+
+**Control:** `ops/2026-09-20_DP1901_EG745_COMMON_TRACEABILITY_REFERRAL_MATRIX.md`.
+<!-- cross-institutional-20260920:end -->
+

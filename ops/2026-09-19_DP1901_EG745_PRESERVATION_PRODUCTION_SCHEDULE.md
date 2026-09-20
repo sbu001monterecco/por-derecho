@@ -38,3 +38,23 @@ Source: Control Tower #1428 comment5744093096 and Fiscalía queue #1621 comment5
 The 13 items in the deliverable index are work products, not 13 external submissions. The separate working census has 13 direct personal-action candidates and 20 connected routes; neither three nor 33 is an established exhaustive new-filing count.
 
 Retain the all-office Fiscalía corpus mission, DI113 remittal/execution gaps, seven August REGAGE routes, E.G.58 same-hash incorporation comparator, DI22 supervening act, DIP2 correction and calificación record. The 12-September EG745 draft remains a predecessor requiring the controlled successor, not a filing-ready final by date alone. Workflow optimization and unrelated publication backlog must not displace the responses.
+
+
+<!-- cross-institutional-20260920:start -->
+## 20 September cross-institutional upgrade
+
+| Priority | Finite record | Custodian/route | Purpose | State |
+|---|---|---|---|---|
+| P0 | ATLANTE incident scope 8–17 Jul 2026 + exact NIG/IUP event history where retained | Canary DG Relations with Administration of Justice / ATLANTE technical governance | test technical slowdown/retry/reindex/queue/association as a competing explanation | OPEN — preservation request required |
+| P0 | reparto rules + exceptions + supervisory handling for Ref.21/Ref.24/DP1901 | Presidency / Sala de Gobierno TSJC | identify lawful reparto framework and any gubernative correction | OPEN |
+| P0 | LAJ/common-service inspection and routing handoffs | Secretaría de Gobierno / Coordinación Provincial LAJ | distinguish Office/LAJ acts from judicial merits | OPEN |
+| P0 | coordinated-interface classification | CGPJ + FGE/Inspección | consider 2019 coordinated-inspection agreement, extended to 19-Sep-2027 | OPEN — no private right to compel assumed |
+| P0 | author determination using institution-held records | FGE/Inspección + relevant Fiscalía | apply arts.164/167 logic before treating missing external attribution as terminal | OPEN |
+
+**ATLANTE boundary:** official 8–17 Jul slowdown is evidence of a system incident, not evidence that DP1901 was affected and not evidence of manipulation. Require the exact NIG/IUP bridge.
+
+**Anti-fragmentation rule:** no recipient is asked to exercise another institution's powers. Where lawful, record onward referral as sender → recipient → date → reference → object.
+
+Canonical cross-institutional control: `ops/2026-09-20_DP1901_EG745_COMMON_TRACEABILITY_REFERRAL_MATRIX.md`.
+<!-- cross-institutional-20260920:end -->
+

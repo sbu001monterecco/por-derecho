@@ -574,5 +574,60 @@
       "en/cgpj-permanent-commission-reader-room/"
     ],
     "meaning": "Informational programme, not filing evidence"
+  },
+  "cross_institutional_upgrade_20260920": {
+    "status": "IMPLEMENTED_IN_WORKING_BRANCH_NOT_FILED_EXTERNALLY",
+    "canonical_matrix": "ops/2026-09-20_DP1901_EG745_COMMON_TRACEABILITY_REFERRAL_MATRIX.md",
+    "atlante_incident": {
+      "official_window": "2026-07-08/2026-07-17",
+      "location": "Las Palmas province",
+      "official_characterisation": "performance slowdown; system reportedly remained operational",
+      "evidential_rule": "competing technical explanation to test; no causal or manipulation inference without exact NIG/IUP logs"
+    },
+    "coordinated_inspection": {
+      "instrument": "CGPJ–FGE coordinated inspection agreement signed 2019-09-19",
+      "extension_until": "2027-09-19",
+      "use": "request express consideration for common institutional interface; no private right to compel assumed"
+    },
+    "fiscal_identification": {
+      "rules": [
+        "RMF 163",
+        "RMF 164",
+        "RMF 165",
+        "RMF 167",
+        "RMF 144 if criminal indicia arise"
+      ],
+      "point": "29-Jul Fiscal act is institutionally identifiable from allocation and file records; request internal reconstruction before treating absent external name as terminal"
+    },
+    "judicial_office_layer": [
+      "Decanato / Registro y Reparto",
+      "LAJ / Oficina Judicial Plaza 6",
+      "Presidencia / Sala de Gobierno TSJC",
+      "Secretaría de Gobierno / Coordinación Provincial LAJ",
+      "Canary ATLANTE technical custodian"
+    ],
+    "anti_fragmentation": "separate competences; preserve common fact spine; reason and trace lawful onward referrals",
+    "p0_request_pack": {
+      "status": "PREPARED_NOT_FILED",
+      "index": "drafts/2026-09-20_DP1901_EG745_P0_IMMEDIATE_REQUEST_PACK_INDEX.md",
+      "drafts": [
+        "drafts/judicial-admin/2026-09-20_DECANATO_REPARTO_DP1901_CERTIFICATION_REQUEST_DRAFT.md",
+        "drafts/judicial-admin/2026-09-20_PLAZA6_LAJ_DP1901_FILE_PRODUCTION_REQUEST_DRAFT.md",
+        "drafts/judicial-admin/2026-09-20_TSJC_SECRETARIA_GOBIERNO_DP1901_SUPPLEMENT_DRAFT.md",
+        "drafts/judicial-admin/2026-09-20_COORDINACION_PROVINCIAL_LAJ_DP1901_REQUEST_DRAFT.md",
+        "drafts/canarias/2026-09-20_ATLANTE_DP1901_PRESERVATION_REQUEST_DRAFT.md",
+        "drafts/fiscalia/2026-09-20_FISCALIA_PROVINCIAL_DP1901_REPORT_IDENTIFICATION_REQUEST_DRAFT.md",
+        "drafts/judicial-admin/2026-09-20_TSJC_SALA_GOBIERNO_REPARTO_RULES_REQUEST_DRAFT.md"
+      ],
+      "direct_candidate_census": {
+        "status": "13_OF_13_WORKING_CANDIDATES_HAVE_PREPARED_CORE_OR_RECIPIENT_DRAFT",
+        "warning": "preparedness count; not all are necessarily new filings or simultaneously appropriate",
+        "additional_drafts": [
+          "drafts/judicial-admin/2026-09-20_MINJUSTICIA_LAJ_DP1901_SUPERVISORY_SUPPLEMENT_DRAFT.md",
+          "drafts/institutions/2026-09-20_DEFENSOR_PUEBLO_DP1901_ADMIN_SERVICE_DRAFT.md",
+          "drafts/fiscalia/2026-09-20_ANTICORRUPCION_DP1901_SCOPED_UPDATE_DRAFT.md"
+        ]
+      }
+    }
   }
 }

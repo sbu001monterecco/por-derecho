@@ -1,0 +1,52 @@
+{
+  "schema": "por-derecho.dp1901-eg745-cross-institutional-matrix.v1",
+  "control_date": "2026-09-20",
+  "state": "ACTIVE_CONTROL_DRAFT_NOT_FILED",
+  "rules": {
+    "unitary": "one factual spine; separate competences; no jurisdictional dead end",
+    "attribution": "actor-specific proof; institution-held identity records should be requested before treating anonymity as terminal",
+    "atlante": "8-17 July 2026 incident is a competing technical explanation to test, not evidence of manipulation",
+    "filing": "draft or publication is not filing; exact submitted bytes + official receipt required"
+  },
+  "p0": [
+    "Decanato / Registro y Reparto",
+    "LAJ / Oficina Judicial Plaza 6",
+    "CGPJ Alzada 286/2026 + functional classification to Inspection/Promotor",
+    "Secretaría de Gobierno TSJC / Coordinación Provincial LAJ",
+    "Gobierno de Canarias DG Relaciones con la Administración de Justicia / ATLANTE",
+    "Fiscalía Provincial de Las Palmas bounded author/corpus search",
+    "Fiscal Superior de Canarias",
+    "FGE / Inspección Fiscal — E.G.745 successor"
+  ],
+  "counsel": [
+    "Judicial remedy against Auto 14 September 2026"
+  ],
+  "connected_evidence_routes": [
+    "Yaiza",
+    "Cabildo de Lanzarote",
+    "Canary tourism register/inspection",
+    "AEAT/CTBG",
+    "RIC/regional incentives/FEDER/Intervención",
+    "CNMV/RICPE/Portfolio",
+    "SEPI/FASEE",
+    "professional bodies/private custodians"
+  ],
+  "conditional": [
+    "AIPI",
+    "OLAF",
+    "EPPO",
+    "Tribunal de Cuentas",
+    "SNCA/IGAE",
+    "SEPBLAC",
+    "UCO/UDEF"
+  ],
+  "sources": {
+    "lopj": "https://www.boe.es/buscar/act.php?id=BOE-A-1985-12666",
+    "lo_1_2025": "https://www.boe.es/buscar/act.php?id=BOE-A-2025-76",
+    "fiscal_regulation": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-7184",
+    "ley_40_2015": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-10566",
+    "cgpj_fge_extension": "https://www.poderjudicial.es/stfls/CGPJ/SECRETAR%C3%8DA%20GENERAL/ACUERDOS%20DE%20LA%20COMISI%C3%93N%20PERMANENTE/FICHERO/20230601%20BoletinesAcuerdosCP%20v2.pdf",
+    "atlante_incident": "https://www3.gobiernodecanarias.org/noticias/la-direccion-general-de-justicia-da-por-resuelta-la-incidencia-que-afectaba-al-rendimiento-de-atlante-en-las-palmas/",
+    "canary_justice_competence": "https://www.gobiernodecanarias.org/boc/2024/156/2519.html"
+  }
+}
