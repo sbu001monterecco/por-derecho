@@ -1,5 +1,8 @@
 # Presidencia — public thesis and EXPONE / SOLICITA architecture
 
+> **Actualización DP1901 / DP1901 substantive update — 20 September 2026.** Leer esta arquitectura con [el nexo probatorio, procesal y de recuperación](DP1901_PLATFORM_RECOVERY_NEXUS_THESIS_20SEP2026.md). Ref.21 y sus materiales complementarios ya describen autoridad comunitaria, desplazamiento, financiación y beneficios posteriores. Debe determinarse si ese objeto privado recibió decisión propia o fue desplazado por el objeto judicial de Ref.24, y cómo se trató también el núcleo anterior a 2025 de esa denuncia judicial. Se pide preservar y reconstruir corpus, reparto, asociación, remisión fiscal y decisiones, sin presumir dolo ni confundir procedimientos. **Read the existing E05–E11 and S04–S12 with the linked source-paged addendum:** the issue is possible impairment of an already articulated platform-investigation and recovery route, not simply a wrong file number. The original twelve/fourteen-point architecture and all its limits remain below.
+
+
 **Date:** 20 September 2026  
 **Control:** PD-PRESIDENCIA-THREAD-20260920-01  
 **Status:** PUBLIC PREPARATION OUTLINE — NOT AN OUTBOUND LETTER — NOT SENT / NOT FILED. No signature, recipient email, private annex or service claim is created here.
