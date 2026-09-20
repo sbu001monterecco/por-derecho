@@ -479,6 +479,194 @@
         "CORRECTION_REPLY_TAKEDOWN_AND_NARROW_REVERT_PATH": "Right of reply and documented correction retained; normal narrow corrective/revert PR through the single integration lane, not history rewrite."
       },
       "approval_status": "USER_EXPRESS_PUBLICATION_AUTHORITY_2026_09_05_EDITORIAL_REVIEW_NOT_EXTERNAL_LEGAL_CLEARANCE"
+    },
+    {
+      "publication_id": "PD-SAT-DP1901-SHAME-20260921",
+      "family_id": "PD-DMA-FAM-DP1901-SHAME-001",
+      "title": "Shame has left the building / La vergüenza ha salido del edificio",
+      "logical_assets": [
+        "PD-DMA-0013"
+      ],
+      "public_surfaces": [
+        {
+          "path": "en/dp-1901-2026/index.html",
+          "language": "en",
+          "required_disclosure": "SATIRICAL / CARICATURE REPRESENTATION — NOT A REAL ADVERTISEMENT"
+        },
+        {
+          "path": "es/dp-1901-2026/index.html",
+          "language": "es",
+          "required_disclosure": "CARICATURA / REPRESENTACIÓN SATÍRICA — NO ES UN ANUNCIO REAL"
+        }
+      ],
+      "named_people": [
+        {
+          "display_name": "Gil Marer",
+          "naming_form": "FULL_CANONICAL_CARET_CONFIRMED",
+          "identity_state": "CARET_CONFIRMED",
+          "caepr_id": "PD-SP-P-0001",
+          "source_refs": [
+            "en/dp-1901-2026/index.html",
+            "es/dp-1901-2026/index.html"
+          ],
+          "factual_role": {
+            "label": "Named author or person in the pre-existing source-led dossier. Not identified as a figure in this image. No existing factual role is changed.",
+            "date_or_period": "Dated source material in the unchanged documentary dossier; editorial addition prepared 20 September 2026",
+            "source_refs": [
+              "en/dp-1901-2026/index.html",
+              "es/dp-1901-2026/index.html"
+            ]
+          },
+          "affiliation": {
+            "state": "NOT_APPLICABLE"
+          },
+          "satirical_function": {
+            "state": "NONE",
+            "label": "No person-specific likeness or satirical attribution is added."
+          }
+        },
+        {
+          "display_name": "Ricardo de Mosteyrín Sampalo",
+          "naming_form": "FULL_CANONICAL_CARET_CONFIRMED",
+          "identity_state": "CARET_CONFIRMED",
+          "caepr_id": "PD-SP-P-0058",
+          "source_refs": [
+            "en/dp-1901-2026/index.html",
+            "es/dp-1901-2026/index.html"
+          ],
+          "factual_role": {
+            "label": "Named author or person in the pre-existing source-led dossier. Not identified as a figure in this image. No existing factual role is changed.",
+            "date_or_period": "Dated source material in the unchanged documentary dossier; editorial addition prepared 20 September 2026",
+            "source_refs": [
+              "en/dp-1901-2026/index.html",
+              "es/dp-1901-2026/index.html"
+            ]
+          },
+          "affiliation": {
+            "state": "NOT_APPLICABLE"
+          },
+          "satirical_function": {
+            "state": "NONE",
+            "label": "No person-specific likeness or satirical attribution is added."
+          }
+        },
+        {
+          "display_name": "Luis Francisco Galván Mesa",
+          "naming_form": "FULL_CANONICAL_CARET_CONFIRMED",
+          "identity_state": "CARET_CONFIRMED",
+          "caepr_id": "PD-SP-P-0119",
+          "source_refs": [
+            "en/dp-1901-2026/index.html",
+            "es/dp-1901-2026/index.html"
+          ],
+          "factual_role": {
+            "label": "Named author or person in the pre-existing source-led dossier. Not identified as a figure in this image. No existing factual role is changed.",
+            "date_or_period": "Dated source material in the unchanged documentary dossier; editorial addition prepared 20 September 2026",
+            "source_refs": [
+              "en/dp-1901-2026/index.html",
+              "es/dp-1901-2026/index.html"
+            ]
+          },
+          "affiliation": {
+            "state": "NOT_APPLICABLE"
+          },
+          "satirical_function": {
+            "state": "NONE",
+            "label": "No person-specific likeness or satirical attribution is added."
+          }
+        },
+        {
+          "display_name": "Águeda Reyes Almeida",
+          "naming_form": "FULL_CANONICAL_CARET_CONFIRMED",
+          "identity_state": "CARET_CONFIRMED",
+          "caepr_id": "PD-SP-P-0120",
+          "source_refs": [
+            "en/dp-1901-2026/index.html",
+            "es/dp-1901-2026/index.html"
+          ],
+          "factual_role": {
+            "label": "Named author or person in the pre-existing source-led dossier. Not identified as a figure in this image. No existing factual role is changed.",
+            "date_or_period": "Dated source material in the unchanged documentary dossier; editorial addition prepared 20 September 2026",
+            "source_refs": [
+              "en/dp-1901-2026/index.html",
+              "es/dp-1901-2026/index.html"
+            ]
+          },
+          "affiliation": {
+            "state": "NOT_APPLICABLE"
+          },
+          "satirical_function": {
+            "state": "NONE",
+            "label": "No person-specific likeness or satirical attribution is added."
+          }
+        },
+        {
+          "display_name": "Eduardo José Rebollo Sanz",
+          "naming_form": "FULL_CANONICAL_CARET_CONFIRMED",
+          "identity_state": "CARET_CONFIRMED",
+          "caepr_id": "PD-SP-P-0121",
+          "source_refs": [
+            "en/dp-1901-2026/index.html",
+            "es/dp-1901-2026/index.html"
+          ],
+          "factual_role": {
+            "label": "Named author or person in the pre-existing source-led dossier. Not identified as a figure in this image. No existing factual role is changed.",
+            "date_or_period": "Dated source material in the unchanged documentary dossier; editorial addition prepared 20 September 2026",
+            "source_refs": [
+              "en/dp-1901-2026/index.html",
+              "es/dp-1901-2026/index.html"
+            ]
+          },
+          "affiliation": {
+            "state": "NOT_APPLICABLE"
+          },
+          "satirical_function": {
+            "state": "NONE",
+            "label": "No person-specific likeness or satirical attribution is added."
+          }
+        },
+        {
+          "display_name": "María Teresa Oliver Guerra",
+          "naming_form": "FULL_CANONICAL_CARET_CONFIRMED",
+          "identity_state": "CARET_CONFIRMED",
+          "caepr_id": "PD-SP-P-0122",
+          "source_refs": [
+            "en/dp-1901-2026/index.html",
+            "es/dp-1901-2026/index.html"
+          ],
+          "factual_role": {
+            "label": "Named author or person in the pre-existing source-led dossier. Not identified as a figure in this image. No existing factual role is changed.",
+            "date_or_period": "Dated source material in the unchanged documentary dossier; editorial addition prepared 20 September 2026",
+            "source_refs": [
+              "en/dp-1901-2026/index.html",
+              "es/dp-1901-2026/index.html"
+            ]
+          },
+          "affiliation": {
+            "state": "NOT_APPLICABLE"
+          },
+          "satirical_function": {
+            "state": "NONE",
+            "label": "No person-specific likeness or satirical attribution is added."
+          }
+        }
+      ],
+      "factual_role_and_satirical_function_separated": true,
+      "source_refs": [
+        "evidence/judicial/dp-1901-2026/PROCEDURAL_IDENTITY_SOURCE_CLOSURE_18SEP2026.md",
+        "evidence/judicial/dp-1901-2026/full-text/auto-14sep2026-public-transcription.md",
+        "data/three-track-full-digitisation-20260904.json",
+        "assets/data/dp1901-shame-linkedin-20260921.json"
+      ],
+      "opposing_counsel_risk_review": {
+        "HONOUR_REPUTATION_PROFESSIONAL_PRESTIGE": "Institutional satire with generic figures; actual adverse outcome retained and criticism expressly attributed to the complainant. No guilt finding.",
+        "FALSE_ENDORSEMENT_AUTHORSHIP_QUOTATION_MANDATE_OR_ROLE": "No fabricated official quotation. Inscription and architecture are identified as artistic, not real features or institutional endorsements.",
+        "IMAGE_LIKENESS_PERSONALITY_RIGHTS": "User-generated symbolic figures; no purported identification of a real judge or prosecutor.",
+        "IMPLIED_DISHONESTY_CONFLICT_CORRUPTION_ILLEGALITY_OR_CRIMINALITY": "Literal destruction, coordinated misconduct and culpability are not asserted. The full post retains open evidence and contrary judicial assessment.",
+        "LOGO_TRADE_DRESS_OR_REAL_ADVERTISING_CONFUSION": "Image includes stylised institutional symbols. Visible canonical non-advertisement disclosure and no-official-endorsement clarification.",
+        "PERSONAL_DATA_NECESSITY_AND_PROPORTIONALITY": "Only the user-approved image, public post and existing public evidence links. No private source records or new private personal data.",
+        "CORRECTION_REPLY_TAKEDOWN_AND_NARROW_REVERT_PATH": "Additive changes and exact asset can be corrected by normal PR without removing the previous dossier. No assurance of zero legal risk."
+      }
     }
   ]
 }
