@@ -1,0 +1,52 @@
+{
+  "control_id": "PD-PLATFORM-20260920-01",
+  "control_date": "2026-09-20",
+  "status": "STANDING_ANALYTICAL_RULE_ATTRIBUTED_ALLEGATION_NOT_ADJUDICATED",
+  "scope": ["whole-platform displacement", "asset recovery", "continuing patrimonial harm", "anti-corruption", "European funds", "Presidencia", "foreign-investor interests"],
+  "protocol": ".github/governance/PLATFORM_DISPLACEMENT_PATRIMONIAL_HARM_FOREIGN_INVESTOR_RULE_20SEP2026.md",
+  "source_review": ".github/governance/records/PLATFORM_DISPLACEMENT_SOURCE_REVIEW_20SEP2026.md",
+  "existing_parent_control": "PD-UCF-20260901-01",
+  "existing_graph_only": true,
+  "no_new_enforcement_gate": true,
+  "controlling_position": {
+    "attributed_to": "Gil Marer",
+    "period": "approximately 2018 onward, with relevant earlier preparation",
+    "english": "Alleged de facto, substantively inequitable displacement and instrumentalisation of the group's whole business platform, at the direct expense and with continuing injury to Aweswell Limited and the respective affected rights-holders.",
+    "spanish": "Alegado desplazamiento de facto e instrumentalización sustancialmente inequitativa de la plataforma empresarial del grupo, a costa directa y con perjuicio continuado de Aweswell Limited y de los respectivos titulares afectados.",
+    "no_reduction_to": ["LPB estate alone", "individual hotel units", "hotel rent", "direct bank transfers alone"],
+    "benefit_enquiry": ["operator participation", "commercial commitments", "parallel and successive funding", "rights and opportunities", "security and represented availability", "construction and management mandates", "fees and equity", "refinancing", "transformed and reinvested value"]
+  },
+  "company": {
+    "legal_name": "AWESWELL LIMITED",
+    "company_number": "07716847",
+    "registry_checked": "2026-09-20",
+    "source": "https://find-and-update.company-information.service.gov.uk/company/07716847",
+    "registry_status": "Active",
+    "context": "British holding company and foreign investor in Spain through the documented group investment",
+    "limit": "Companies House identity/status does not prove every Spanish right, shareholder chain, loss or legal entitlement."
+  },
+  "required_ledgers": ["claimant_loss", "recipient_gain", "current_recoverable_property_or_value"],
+  "transaction_fields": ["existing_evidence_or_event_id", "rights_holder", "right_or_opportunity", "actor", "capacity", "date", "source", "represented_entitlement", "recipient", "reliance", "conditions", "commitment", "disbursement", "use", "benefit", "onward_disposition", "claimant_injury", "causal_and_legal_basis", "contrary_record", "open_proof", "deadline", "filing_state"],
+  "public_liability_fields": ["claimant_and_right", "administration_and_function", "act_or_omission", "competence_and_duty", "notice_and_knowledge", "corrective_opportunity", "original_or_incremental_harm", "causation", "alternative_explanation", "valuation", "event_manifestation_stabilisation_dates", "procedure", "limitation_calendar", "actual_filing_and_receipt"],
+  "legal_routes": {
+    "ordinary_public_service": "Ley 40/2015 arts. 32-37, with prerequisites and exclusions",
+    "judicial_administration": "Art. 32.7; LOPJ arts. 292-297, particularly art. 293",
+    "limitation_and_claim_particulars": "Ley 39/2015 art. 67",
+    "criminal_dependency": "Art. 37.2: no automatic suspension; assess statutory exception",
+    "private_actors": "Separate civil, corporate, insolvency, professional and criminal predicates",
+    "equity": "Comparative, forum/duty/remedy-specific; constructive terminology alone creates no trust or proprietary entitlement"
+  },
+  "must_preserve": ["direct attributed criminal allegation", "correct claimant and representation", "foreign-investor context", "ongoing-harm allegation", "historical law", "contrary and adverse evidence", "innocent third-party rights", "no double recovery", "funding-instrument distinctions", "separate proceedings and institutional powers"],
+  "must_not_infer": ["all downstream wealth derives from Sun Park", "association establishes guilt", "causation alone establishes ownership", "a financing commitment equals disbursement", "RIC equals EU funds", "award equals payment", "EU project connection equals proved EU loss", "foreign incorporation creates treaty arbitration", "ongoing effects automatically restart prescription", "generic reservation or SAIP protects all deadlines", "publication equals filing or service", "blocked GitLab repository is synchronised"],
+  "implementation_boundary": {
+    "type": "GOVERNANCE_ONLY",
+    "public_repository": true,
+    "rendered_html_or_runtime_changed": false,
+    "existing_source_records_changed": false,
+    "historic_filing_status_changed": false,
+    "external_communications_authorised": false,
+    "gitlab_repository_accessed": false,
+    "gitlab_public_pages": "READ_ONLY_THEMATIC_REVIEW",
+    "gitlab_parity": "UNVERIFIED"
+  }
+}
