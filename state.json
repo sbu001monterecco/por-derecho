@@ -1,13 +1,13 @@
 {
   "schema": "por-derecho.publication-runtime.v1",
-  "fence": 22,
-  "owner": "1683:0a946c404f668305b159c3d7b86d312caa412d82",
-  "phase": "VERIFIED_FOR_SCOPE",
-  "pr": 1683,
-  "base_sha": "6c94efacb4cc3f46f3c385ed404538eaeede203a",
-  "candidate_sha": "0a946c404f668305b159c3d7b86d312caa412d82",
-  "run_id": 35542680464,
-  "claimed_at": "2026-09-20T22:45:58.885379Z",
+  "fence": 23,
+  "owner": "1684:d068133026ab28d4e689553a461bc29016f08858",
+  "phase": "CLAIMED",
+  "pr": 1684,
+  "base_sha": "dfbde5ef285da6253158dc2d0806e7ec05242725",
+  "candidate_sha": "d068133026ab28d4e689553a461bc29016f08858",
+  "run_id": 35544129635,
+  "claimed_at": "2026-09-20T23:16:52.010535Z",
   "expiry_policy": "Never silently expire into free; recover after inspecting actual merge/deployment.",
   "receipts": [
     {
@@ -1491,74 +1491,5 @@
       "scope": "Changed readable public resources plus ES/EN entrypoints. Browser checks are separate premerge evidence; not a whole-site or legal-proof certificate."
     }
   ],
-  "checkpoints": [
-    {
-      "phase": "ACCEPTED",
-      "at": "2026-09-20T22:45:59.675350Z",
-      "evidence": {
-        "checks": [
-          {
-            "name": "publication-integrity",
-            "id": 106162630252,
-            "conclusion": "success"
-          },
-          {
-            "name": "PD release acceptance",
-            "id": 106162630123,
-            "conclusion": "success"
-          }
-        ]
-      }
-    },
-    {
-      "phase": "MERGE_PENDING",
-      "at": "2026-09-20T22:46:46.606900Z",
-      "evidence": {
-        "pr": 1683
-      }
-    },
-    {
-      "phase": "MERGED",
-      "at": "2026-09-20T22:46:47.591118Z",
-      "evidence": {
-        "merge_sha": "dfbde5ef285da6253158dc2d0806e7ec05242725"
-      }
-    },
-    {
-      "phase": "DEPLOYED",
-      "at": "2026-09-20T22:47:30.846787Z",
-      "evidence": {
-        "pages_run_id": 35542669689,
-        "merge_sha": "dfbde5ef285da6253158dc2d0806e7ec05242725"
-      }
-    },
-    {
-      "phase": "VERIFIED_FOR_SCOPE",
-      "at": "2026-09-20T22:47:32.798400Z",
-      "evidence": {
-        "merge_sha": "dfbde5ef285da6253158dc2d0806e7ec05242725",
-        "pages_run_id": 35542669689,
-        "exact_matches": [
-          {
-            "path": "en/index.html",
-            "sha256": "c048d21d4c94e3cb6896e4c74d69a9ab73f84c3426d40fe815370b40fe1ba109",
-            "bytes": 228197
-          },
-          {
-            "path": "es/index.html",
-            "sha256": "48a7ebf0751867525f140cf3e70c34f8fe22a1c6edd7aeb0b3178e788da95dda",
-            "bytes": 237351
-          },
-          {
-            "path": "publication-manifests/presidencia-dp1901-custody-20260920.json",
-            "sha256": "4d952a7aa9891f85dd2a4382c71248a6ad283800966544ca1c699c19a406c8d9",
-            "bytes": 4384
-          }
-        ],
-        "pending": [],
-        "scope": "Changed readable public resources plus ES/EN entrypoints. Browser checks are separate premerge evidence; not a whole-site or legal-proof certificate."
-      }
-    }
-  ],
-  "updated_at": "2026-09-20T22:47:32.798400Z"
+  "checkpoints": []
 }
