@@ -1,0 +1,362 @@
+{
+  "schema": "eg745-public-site-research-index/v1",
+  "date": "2026-09-20",
+  "scope": "Public GitLab Pages and selected linked external primary/public sources; no GitLab repository access.",
+  "counts": {
+    "round3_distinct_gitlab_urls": 24,
+    "gitlab_success_html": 21,
+    "gitlab_success_json": 1,
+    "gitlab_unavailable": 2,
+    "gitlab_full_main_html": 4,
+    "gitlab_focal_html": 17,
+    "gitlab_focal_json": 1,
+    "external_distinct_urls": 13,
+    "external_full_main_html": 3,
+    "external_focal": 8,
+    "external_navigation_only": 1,
+    "external_retrieved_uninspected": 1,
+    "pdfs_retrieved": 3,
+    "total_pdf_pages_retrieved_not_full_read": 121,
+    "one_pdf_auditor_report_pages_read": 6,
+    "prior_distinct_gitlab_urls": 70,
+    "combined_distinct_gitlab_urls": 94
+  },
+  "sources": [
+    {
+      "id": "G301",
+      "url": "https://por-derecho-setup-or-gitlab-setup-c2b10f.gitlab.io/por-derecho-setup-or-gitlab-setup/es/orion-ricpe-continuidad/",
+      "kind": "html",
+      "depth": "full_main",
+      "note": "Historical financial continuity; FMMM-only boundary stale against current issuer.",
+      "extent": "75 lines",
+      "group": "gitlab_public"
+    },
+    {
+      "id": "G302",
+      "url": "https://por-derecho-setup-or-gitlab-setup-c2b10f.gitlab.io/por-derecho-setup-or-gitlab-setup/es/cadena-instrumentalizacion-ric-fondos-incentivos/",
+      "kind": "html",
+      "depth": "focal",
+      "note": "Separate instruments and AEAT chronology; inspection predates alert.",
+      "extent": "174 lines",
+      "group": "gitlab_public"
+    },
+    {
+      "id": "G303",
+      "url": "https://por-derecho-setup-or-gitlab-setup-c2b10f.gitlab.io/por-derecho-setup-or-gitlab-setup/es/portfolio-orion-trazabilidad/",
+      "kind": "html",
+      "depth": "focal",
+      "note": "11 September 2026 response acknowledged; review and referral distinct from findings.",
+      "extent": "147 lines",
+      "group": "gitlab_public"
+    },
+    {
+      "id": "G304",
+      "url": "https://por-derecho-setup-or-gitlab-setup-c2b10f.gitlab.io/por-derecho-setup-or-gitlab-setup/es/orion-rental-socimi/",
+      "kind": "html",
+      "depth": "focal",
+      "note": "Current board, financing and dated relationships, not a single-person bridge.",
+      "extent": "178 lines",
+      "group": "gitlab_public"
+    },
+    {
+      "id": "G305",
+      "url": "https://por-derecho-setup-or-gitlab-setup-c2b10f.gitlab.io/es/san-telmo-ricpe-sun-park/",
+      "kind": "html",
+      "depth": "full_main",
+      "note": "Public introduction-of-clients statement; assignment and fees need original records.",
+      "extent": "80 lines",
+      "group": "gitlab_public"
+    },
+    {
+      "id": "G306",
+      "url": "https://por-derecho-setup-or-gitlab-setup-c2b10f.gitlab.io/por-derecho-setup-or-gitlab-setup/es/oferta-acosta-matos-2018-plan-liquidacion/",
+      "kind": "html",
+      "depth": "focal",
+      "note": "Two acquisition branches; condonation and later debt require reconciliation.",
+      "extent": "191 lines",
+      "group": "gitlab_public"
+    },
+    {
+      "id": "G307",
+      "url": "https://por-derecho-setup-or-gitlab-setup-c2b10f.gitlab.io/por-derecho-setup-or-gitlab-setup/es/cajasiete-sun-park-financiacion-comparabilidad/",
+      "kind": "html",
+      "depth": "focal",
+      "note": "Mortgage liability is not cash disbursement; participation dated.",
+      "extent": "177 lines",
+      "group": "gitlab_public"
+    },
+    {
+      "id": "G308",
+      "url": "https://por-derecho-setup-or-gitlab-setup-c2b10f.gitlab.io/por-derecho-setup-or-gitlab-setup/es/portfolio-carta-abierta-consejo/",
+      "kind": "html",
+      "depth": "focal",
+      "note": "Public letter preparation is not proven transmission; board review request.",
+      "extent": "104 lines",
+      "group": "gitlab_public"
+    },
+    {
+      "id": "G309",
+      "url": "https://por-derecho-setup-or-gitlab-setup-c2b10f.gitlab.io/por-derecho-setup-or-gitlab-setup/es/cuatrecasas-sun-park/",
+      "kind": "html",
+      "depth": "focal",
+      "note": "Work performed, fee dispute and adverse criminal outcomes retained.",
+      "extent": "475 lines; opening and final substantive sections",
+      "group": "gitlab_public"
+    },
+    {
+      "id": "G310",
+      "url": "https://por-derecho-setup-or-gitlab-setup-c2b10f.gitlab.io/por-derecho-setup-or-gitlab-setup/es/mismo-hotel-multiples-vidas-financieras/",
+      "kind": "html",
+      "depth": "focal",
+      "note": "Different financing and asset metrics cannot be summed as damage.",
+      "extent": "159 lines",
+      "group": "gitlab_public"
+    },
+    {
+      "id": "G311",
+      "url": "https://por-derecho-setup-or-gitlab-setup-c2b10f.gitlab.io/por-derecho-setup-or-gitlab-setup/es/ricpe-responsabilidad-documental/",
+      "kind": "html",
+      "depth": "focal",
+      "note": "Dated intake, director roles and due diligence questions.",
+      "extent": "135 lines",
+      "group": "gitlab_public"
+    },
+    {
+      "id": "G312",
+      "url": "https://por-derecho-setup-or-gitlab-setup-c2b10f.gitlab.io/por-derecho-setup-or-gitlab-setup/es/jonathan-simo-testigo-contable/",
+      "kind": "html",
+      "depth": "focal",
+      "note": "Contemporaneous accountant records; preparation is not actual testimony.",
+      "extent": "122 lines; first 76 focal",
+      "group": "gitlab_public"
+    },
+    {
+      "id": "G313",
+      "url": "https://por-derecho-setup-or-gitlab-setup-c2b10f.gitlab.io/por-derecho-setup-or-gitlab-setup/es/hipotesis-criminal-unitaria-2011-presente/",
+      "kind": "unavailable",
+      "depth": "none",
+      "note": "Tool internal error; no HTTP status inferred.",
+      "extent": "No content",
+      "group": "gitlab_public"
+    },
+    {
+      "id": "G314",
+      "url": "https://por-derecho-setup-or-gitlab-setup-c2b10f.gitlab.io/por-derecho-setup-or-gitlab-setup/en/authorities-duties-asset-recovery/",
+      "kind": "html",
+      "depth": "focal",
+      "note": "Coordination/remedies inventory; website legal assertions not independently adopted.",
+      "extent": "823 lines; selected sections only",
+      "group": "gitlab_public"
+    },
+    {
+      "id": "G315",
+      "url": "https://por-derecho-setup-or-gitlab-setup-c2b10f.gitlab.io/es/portfolio-nexos-internacionales/",
+      "kind": "html",
+      "depth": "focal",
+      "note": "Dated governance; historical roles and foreign links narrowly bounded.",
+      "extent": "163 lines",
+      "group": "gitlab_public"
+    },
+    {
+      "id": "G316",
+      "url": "https://por-derecho-setup-or-gitlab-setup-c2b10f.gitlab.io/por-derecho-setup-or-gitlab-setup/es/retracto-credito-litigioso-1041-2017/",
+      "kind": "html",
+      "depth": "focal",
+      "note": "Counsel termination and procedural withdrawal distinguished from unlawful motive.",
+      "extent": "112 lines; through substantive chronology/analysis",
+      "group": "gitlab_public"
+    },
+    {
+      "id": "G317",
+      "url": "https://por-derecho-setup-or-gitlab-setup-c2b10f.gitlab.io/por-derecho-setup-or-gitlab-setup/es/ona-hotels-salida-concurso-36-2012/",
+      "kind": "html",
+      "depth": "focal",
+      "note": "Conditional rescue alternatives; actual replies and conditions retained.",
+      "extent": "332/335 retrieved lines",
+      "group": "gitlab_public"
+    },
+    {
+      "id": "G318",
+      "url": "https://por-derecho-setup-or-gitlab-setup-c2b10f.gitlab.io/por-derecho-setup-or-gitlab-setup/es/pwc-canarias-carlos-saavedra-sun-park/",
+      "kind": "html",
+      "depth": "focal",
+      "note": "2016 knowledge and later mandates; witness non-practice requires procedural file.",
+      "extent": "288 lines",
+      "group": "gitlab_public"
+    },
+    {
+      "id": "G319",
+      "url": "https://por-derecho-setup-or-gitlab-setup-c2b10f.gitlab.io/es/administrador-concursal-puerta-credito-titulo/",
+      "kind": "html",
+      "depth": "full_main",
+      "note": "Defined procedural gateways and strongest lawful alternative.",
+      "extent": "80 lines",
+      "group": "gitlab_public"
+    },
+    {
+      "id": "G320",
+      "url": "https://por-derecho-setup-or-gitlab-setup-c2b10f.gitlab.io/es/comparativa-tasaciones-actua-gesvalt-2018/",
+      "kind": "html",
+      "depth": "focal",
+      "note": "Filed annex hash claims, corrected photo theory, chronology and contrary decisions.",
+      "extent": "383 lines; substantive comparison and evidence sections",
+      "group": "gitlab_public"
+    },
+    {
+      "id": "G321",
+      "url": "https://por-derecho-setup-or-gitlab-setup-c2b10f.gitlab.io/es/caso-insignia-jv1260-2011-ap89-2014/",
+      "kind": "html",
+      "depth": "focal",
+      "note": "18-unit litigation, adverse appeal and distinct later use.",
+      "extent": "580 lines; opening, substantive use matrix and source IDs",
+      "group": "gitlab_public"
+    },
+    {
+      "id": "G322",
+      "url": "https://por-derecho-setup-or-gitlab-setup-c2b10f.gitlab.io/assets/data/sun-park-valuation-document-use-audit-20260912.json",
+      "kind": "json",
+      "depth": "focal",
+      "note": "Source identifiers and custody limits; natives remain private.",
+      "extent": "584 lines; actor and source records selected",
+      "group": "gitlab_public"
+    },
+    {
+      "id": "G323",
+      "url": "https://por-derecho-setup-or-gitlab-setup-c2b10f.gitlab.io/por-derecho-setup-or-gitlab-setup/es/grant-thornton/cuyas-canarias/",
+      "kind": "html",
+      "depth": "full_main",
+      "note": "2020 conflict check and NDA versus subsequent commercial relationship.",
+      "extent": "154 lines; previously seen in earlier A13 work, new to 70-URL manifests",
+      "group": "gitlab_public"
+    },
+    {
+      "id": "G324",
+      "url": "https://por-derecho-setup-or-gitlab-setup-c2b10f.gitlab.io/por-derecho-setup-or-gitlab-setup/en/grant-thornton/2024-04/",
+      "kind": "unavailable",
+      "depth": "none",
+      "note": "Current retrieval internal error; do not infer closure status from failed page.",
+      "extent": "Earlier A13 source, live unavailable",
+      "group": "gitlab_public"
+    },
+    {
+      "id": "P301",
+      "url": "https://czxyudfoqcvnnoianyfv.supabase.co/storage/v1/object/public/investor-docs/emision/1787042954079-9a968257-e4a0-4de2-ab62-05842772ad74.pdf",
+      "kind": "pdf",
+      "depth": "focal",
+      "note": "Issuer updated emission document, 30 June 2026; financial and related-party sections.",
+      "pages": 45,
+      "group": "external"
+    },
+    {
+      "id": "P302",
+      "url": "https://www.orionsocimi.com/inversores",
+      "kind": "html",
+      "depth": "navigation",
+      "note": "Issuer links to accounts, emission and capital notices.",
+      "pages": null,
+      "group": "external"
+    },
+    {
+      "id": "P303",
+      "url": "https://www.cnmv.es/portal/consultas/ecr/sociedad?fs=24/11/2019&lang=es&nif=A76335900&vista=4",
+      "kind": "html",
+      "depth": "focal",
+      "note": "Historical official RICPE director register.",
+      "pages": null,
+      "group": "external"
+    },
+    {
+      "id": "P304",
+      "url": "https://www.rsm.global/spain/es/news/rsm-crece-en-las-palmas-con-la-incorporacion-del-despacho-san-telmo",
+      "kind": "html",
+      "depth": "full_main",
+      "note": "Firm's own San Telmo incorporation announcement.",
+      "pages": null,
+      "group": "external"
+    },
+    {
+      "id": "P305",
+      "url": "https://www.cuyasabogados.com/",
+      "kind": "html",
+      "depth": "focal",
+      "note": "Firm's own lawyer and professional relationship listing.",
+      "pages": null,
+      "group": "external"
+    },
+    {
+      "id": "P306",
+      "url": "https://www.cnmv.es/portal/consultas/esi/esis?lang=es&nif=A88474713&vista=38",
+      "kind": "html",
+      "depth": "focal",
+      "note": "Official Portfolio operator auditor history.",
+      "pages": null,
+      "group": "external"
+    },
+    {
+      "id": "P307",
+      "url": "https://www.boe.es/diario_borme/txt.php?id=BORME-C-2022-7271",
+      "kind": "html",
+      "depth": "retrieved_uninspected",
+      "note": "Initial 92-line retrieval; body follow-ups failed, no segregation proposition independently adopted here.",
+      "pages": null,
+      "group": "external"
+    },
+    {
+      "id": "P308",
+      "url": "https://czxyudfoqcvnnoianyfv.supabase.co/storage/v1/object/public/investor-docs/hechos/1787128252701-0821b5d5-c94e-46e6-849b-67f53e2af43e.pdf",
+      "kind": "pdf",
+      "depth": "focal",
+      "note": "EY report 18 May 2026, first 6 physical pages read; remaining 53 account pages not visually inspected.",
+      "pages": 59,
+      "group": "external"
+    },
+    {
+      "id": "P309",
+      "url": "https://ric.capital/enrique-guerra/",
+      "kind": "html",
+      "depth": "full_main",
+      "note": "Current corporate biography; previous PwC role is historical.",
+      "pages": null,
+      "group": "external"
+    },
+    {
+      "id": "P310",
+      "url": "https://ric.capital/el-capital-de-canarias-calienta-motores-para-el-reseteo-con-aerolinea-y-ric-para-renovacion-hotelera/",
+      "kind": "html",
+      "depth": "focal",
+      "note": "Corporate republication of 10 February 2021 article; derivative press report hosted by subject.",
+      "pages": null,
+      "group": "external"
+    },
+    {
+      "id": "P311",
+      "url": "https://ric.capital/compania/nuestra-historia/",
+      "kind": "html",
+      "depth": "full_main",
+      "note": "Company's attributed organizational history; similarly named A&G entities distinct.",
+      "pages": null,
+      "group": "external"
+    },
+    {
+      "id": "P312",
+      "url": "https://ric.capital/cms/uploads/1632316250-2021-Informe%20Trimestral%201T.pdf",
+      "kind": "pdf",
+      "depth": "focal",
+      "note": "RICPE Q1 2021 report; Merlín PwC tax due diligence and Uría investment-contract preparation.",
+      "pages": 17,
+      "group": "external"
+    },
+    {
+      "id": "P313",
+      "url": "https://www.boe.es/diario_borme/txt.php?id=BORME-A-2026-32-35",
+      "kind": "html",
+      "depth": "focal",
+      "note": "Act 82277, registered 11 February 2026; Carlos secretary and Grupo Acosta Matos board representative.",
+      "pages": null,
+      "group": "external"
+    }
+  ],
+  "publication_status": "RESEARCH_NOT_FILED",
+  "source_classification": "PUBLIC_URLS_AND_BOUNDED_DERIVATIVE_REVIEW",
+  "limit": "Source IDs are index rows, not new canonical historical events. Review depth is stated per source. Neither retrieval nor hashing proves every source assertion."
+}
