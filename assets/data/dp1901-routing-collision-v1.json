@@ -1,4 +1,12 @@
 {
+  "substantive_recovery_nexus": {
+    "control_id": "PD-DP1901-PLATFORM-NEXUS-20260920-01",
+    "data": "assets/data/dp1901-platform-recovery-nexus-20260920.json",
+    "thesis": "archive/DP1901_PLATFORM_RECOVERY_NEXUS_THESIS_20SEP2026.md",
+    "es": "es/dp-1901-plataforma-recuperacion/",
+    "en": "en/dp-1901-platform-recovery/",
+    "boundary": "Typed substantive links supplement the routing graph; original nodes, evidential weighting and filing states remain unchanged."
+  },
   "schema": "por-derecho.dp1901-routing-collision.v1",
   "as_of": "2026-09-19",
   "controlling_state": "REF21_TO_DP1901_CONTEMPORANEOUSLY_CORROBORATED_OFFICIAL_REPARTO_AND_REF24_ASSOCIATION_HISTORY_OUTSTANDING",
