@@ -1,5 +1,5 @@
 {
-  "schema": "por-derecho.research-publication-manifest.v1",
+  "schema": "por-derecho.publication-state.v1",
   "research_control": "PD-RESEARCH-TROLLEY-MEDIA-20260920",
   "cut_off": "2026-09-20",
   "base_commit": "0029415c77035785ea65ecf71655f96843ed4036",
@@ -132,5 +132,37 @@
     "Run normal preservation, publication integrity and audience checks plus affected gates",
     "Use the active integration PR and exact-head controller permit",
     "Verify exact merge deployment and changed public routes before LIVE_VERIFIED"
-  ]
+  ],
+  "research_schema": "por-derecho.research-publication-manifest.v1",
+  "schema_version": "1.0.0",
+  "publication_id": "PD-TROLLEY-MEDIA-SOURCE-20260920",
+  "current_state": "REMOTE_SOURCE",
+  "owner": "TROLLEY-MEDIA-RESEARCH-20260920",
+  "expected_routes": {
+    "es": [
+      "es/acosta-matos-medios-propiedad-remedios/index.html"
+    ],
+    "en": [
+      "en/acosta-matos-media-property-remedies/index.html"
+    ]
+  },
+  "expected_source_files": [
+    "archive/research/trolley-media-20260920/ACOSTA_MATOS_CANARY_MEDIA_2010_2026_SOURCE_REGISTER.md",
+    "archive/research/trolley-media-20260920/CROSS_SOURCE_SCAN_PUBLIC_ES_EN.md",
+    "archive/research/trolley-media-20260920/MEDIA_CHRONOLOGY_ES_EN.md",
+    "archive/research/trolley-media-20260920/README.md",
+    "archive/research/trolley-media-20260920/TROLLEY_ORIGINS_AND_LEGAL_SCOPE_ES_EN.md",
+    "archive/research/trolley-media-20260920/TROLLEY_PROPERTY_REMEDY_ANALYSIS_ES_EN.md",
+    "assets/data/acosta-matos-media-trolley-research-20260920.json",
+    "en/acosta-matos-media-property-remedies/index.html",
+    "es/acosta-matos-medios-propiedad-remedios/index.html"
+  ],
+  "manifest_format_correction": {
+    "original_worker_commit": "0f028563eee9dc55103c22a36cf0c5469e4a7d0c",
+    "original_manifest_blob": "6a816f31640c2944a08e5b708da18e4a20707af1",
+    "original_manifest_sha256": "3a2a0e13ade57f07a41d3809f75c6fca0707839ac0ae7b1d4f80373ca266681c",
+    "reason": "Exact-head publication check at cd21fa991404bfc769915216cf846a47d35dd3ba rejected heterogeneous schema in publication-manifests. This derivative uses the existing supported publication-state contract, preserves all previous research/provenance fields with original schema under research_schema, and adds actual source/route/owner/state declarations. The immutable worker commit preserves the exact original manifest.",
+    "content_integrity": "All nine referenced research/data/reader files remain byte-identical to the worker. Only publication-manifest metadata is normalised.",
+    "state_scope": "REMOTE_SOURCE certifies the source present in Git; it does not certify CI, merge or live deployment. Historical prepared-time status and integration tasks below remain provenance; the integration record and PR/controller closeout supersede them."
+  }
 }
