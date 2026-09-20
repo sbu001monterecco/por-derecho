@@ -1,0 +1,504 @@
+{
+  "schema": "eg745-github-preservation-closeout/v1",
+  "date": "2026-09-20",
+  "repository": "sbu001monterecco/por-derecho",
+  "repository_visibility": "public",
+  "status": "PUBLIC_SAFE_WORKER_PRESERVED_MAIN_INTEGRATION_PENDING",
+  "worker_branch": "worker/eg745-13of13-source-preservation-20260920",
+  "head_sha": "b0846586c7b6a9ee05e4f54bdfead06c714da250",
+  "tree_sha": "377efd17a58a1709ffb7794d5213d1cd4096373b",
+  "historical_base_sha": "0029415c77035785ea65ecf71655f96843ed4036",
+  "latest_main_read_sha": "a9110f5d2a3de64ae7cf470ae06ca1cfde297f4a",
+  "latest_main_filing_state": "11_REGISTERED_2_HELD",
+  "worker_filing_state": "13_REGISTERED_0_UNREGISTERED",
+  "worker_commit_sequence": [
+    "ea0feb0bae75e58deb4114bdd36a040fde335a0b",
+    "893e17ee1fe3f3bfd78707fbcdbce2610af2838f",
+    "3dcf0f6c55cd6d8e83ec5443fe6082c314d2ca80",
+    "b0846586c7b6a9ee05e4f54bdfead06c714da250"
+  ],
+  "stats": {
+    "files": 29,
+    "additions": 3287,
+    "deletions": 35
+  },
+  "live_compare": {
+    "status": "diverged",
+    "ahead_by": 4,
+    "behind_by": 2
+  },
+  "integration": {
+    "mode": "WORKER",
+    "active_lane": "integration/trolley-media-research-20260920",
+    "authority_url": "https://github.com/sbu001monterecco/por-derecho/issues/1428#issuecomment-5752808212",
+    "handoff_url": "https://github.com/sbu001monterecco/por-derecho/issues/1428#issuecomment-5752847142",
+    "release_claim_by_this_worker": false,
+    "main_write_by_this_worker": false,
+    "pr_created_by_this_worker": false,
+    "merge_or_deployment_by_this_worker": false,
+    "required_next": "Single integrator replay/reconciliation on current main, scoped validation, exact-head controller, merge/deploy/verify."
+  },
+  "verification": {
+    "text_readbacks": [
+      {
+        "path": "assets/data/dp1901-direct-action-state-20260920.json",
+        "sha": "9091b8a2276e18f13f3c4745fc9745239c3a484c",
+        "exact_content_match": true
+      },
+      {
+        "path": "assets/data/dp1901-eg745-cross-institutional-matrix-20260920.json",
+        "sha": "9ac21d3f502e77976542cfefe901c301e7e3d361",
+        "exact_content_match": true
+      },
+      {
+        "path": "en/dp-1901-2026/index.html",
+        "sha": "a5483c4dd91e258d7c1c871c3584cbd454fab473",
+        "exact_content_match": true
+      },
+      {
+        "path": "es/dp-1901-2026/index.html",
+        "sha": "56a3f29d52f9a6ede19fc2530ce74f520ffa82b4",
+        "exact_content_match": true
+      },
+      {
+        "path": "evidence/judicial/dp-1901-2026/README.md",
+        "sha": "694937c2960aa76b62815b776c33dde2db216d41",
+        "exact_content_match": true
+      },
+      {
+        "path": "ops/2026-09-19_DP1901_EG745_FILING_STATUS_REGISTER.md",
+        "sha": "251f0f9b3e0205f4c35b65bfb5a249822b918b55",
+        "exact_content_match": true
+      },
+      {
+        "path": "publication-manifests/dp1901-13of13-receipt-reconciliation-20260920.json",
+        "sha": "c705f49c2a4518b5e261f12342c79a49338f4be6",
+        "exact_content_match": true
+      },
+      {
+        "path": "archive/EG745_PR1680_SOURCE_AND_STATUS_REVIEW_20SEP2026.md",
+        "sha": "834280e7ea84d2f2eebd9bc59834fd88505bbc63",
+        "exact_content_match": true
+      },
+      {
+        "path": "archive/EG745_NETWORK_WEALTH_SOURCE_REVIEW_20SEP2026.md",
+        "sha": "85a8399c1332003d4d2c13e09e07bf68c161e6b6",
+        "exact_content_match": true
+      },
+      {
+        "path": "assets/data/eg745-repository-source-review-index-20260920.json",
+        "sha": "9b988f4d9a435b256e71b0101bf16c9d5a6f9bf2",
+        "exact_content_match": true
+      },
+      {
+        "path": "archive/EG745_PUBLIC_RESPONSE_PREPARATION_20SEP2026.md",
+        "sha": "3803cbaede83034ac66b7f1cd454be97068dcf83",
+        "exact_content_match": true
+      },
+      {
+        "path": "archive/EG745_PUBLIC_SITE_NETWORK_BENEFIT_REVIEW_20SEP2026.md",
+        "sha": "4f91eb740c5258394e25aa7ebcfb3673b7f6e5ef",
+        "exact_content_match": true
+      },
+      {
+        "path": "assets/data/eg745-public-site-research-index-20260920.json",
+        "sha": "98dc8083485f4b364f431a34d4b89dc05526cc71",
+        "exact_content_match": true
+      },
+      {
+        "path": "assets/data/eg745-illustration-preservation-20260920.json",
+        "sha": "3b3073658e51ad8cbe33d7183a562d94da1f58cb",
+        "exact_content_match": true
+      },
+      {
+        "path": "evidence/fiscalia/2026/eg745-working-20260920/README.md",
+        "sha": "e615c24f26c7a475f3b13ff1472a5b35f70dd90c",
+        "exact_content_match": true
+      },
+      {
+        "path": "assets/data/eg745-private-source-custody-index-20260920.json",
+        "sha": "252e3225d8c2768282fee21a447a7287ef56130b",
+        "exact_content_match": true
+      },
+      {
+        "path": "archive/EG745_HISTORICAL_FACT_ROWS_20SEP2026.md",
+        "sha": "750492fbdb6d9c97a51d8cb7f07b59ab88f1633a",
+        "exact_content_match": true
+      },
+      {
+        "path": "assets/data/eg745-historical-fact-rows-20260920.json",
+        "sha": "486554a7424c43014775508876d88d60a2674918",
+        "exact_content_match": true
+      },
+      {
+        "path": "assets/data/eg745-concurrent-source-review-20260920.json",
+        "sha": "7cd763249c665ccab1555ad2c52328f64632f03f",
+        "exact_content_match": true
+      }
+    ],
+    "binary_readbacks": [
+      {
+        "path": "assets/visuals/eg745-working-20260920/l1.png",
+        "bytes": 2616052,
+        "sha": "c15768652ed86b734a4de16ad6582a9cf38099ea",
+        "exact_local_blob_match": true,
+        "remote_tree_verified": true
+      },
+      {
+        "path": "assets/visuals/eg745-working-20260920/l2.png",
+        "bytes": 2130349,
+        "sha": "d1118fb41b3cae51f640db45ff70d1d4be8c61fa",
+        "exact_local_blob_match": true,
+        "remote_tree_verified": true
+      },
+      {
+        "path": "assets/visuals/eg745-working-20260920/l3.png",
+        "bytes": 2204512,
+        "sha": "9629ac2bcd0b4e8267bb9976df89d4223408a9ff",
+        "exact_local_blob_match": true,
+        "remote_tree_verified": true
+      },
+      {
+        "path": "assets/visuals/eg745-working-20260920/l4.png",
+        "bytes": 2445736,
+        "sha": "f5466fb99a572d6d1d2787a1b404dadaa60a830e",
+        "exact_local_blob_match": true,
+        "remote_tree_verified": true
+      },
+      {
+        "path": "assets/visuals/eg745-working-20260920/l5.png",
+        "bytes": 2367680,
+        "sha": "48608127ce653ed21e23b76787c32f9652cb25ea",
+        "exact_local_blob_match": true,
+        "remote_tree_verified": true
+      },
+      {
+        "path": "assets/visuals/eg745-working-20260920/l6.png",
+        "bytes": 2026125,
+        "sha": "7c33dfe3b0ed6cd8a04289ba575594206ab5adc3",
+        "exact_local_blob_match": true,
+        "remote_tree_verified": true
+      },
+      {
+        "path": "assets/visuals/eg745-working-20260920/v01.webp",
+        "bytes": 266948,
+        "sha": "59128ded250c13171579606fa515390a5dea3d47",
+        "exact_local_blob_match": true,
+        "remote_tree_verified": true
+      },
+      {
+        "path": "assets/visuals/eg745-working-20260920/v12.webp",
+        "bytes": 11400,
+        "sha": "743677ff41c5249195af862f25b4f1267e0d3385",
+        "exact_local_blob_match": true,
+        "remote_tree_verified": true
+      },
+      {
+        "path": "assets/visuals/eg745-working-20260920/v13.png",
+        "bytes": 1067431,
+        "sha": "1ec785e98d03a09e26916d1fb1df98958ef2f54a",
+        "exact_local_blob_match": true,
+        "remote_tree_verified": true
+      },
+      {
+        "path": "evidence/fiscalia/2026/eg745-working-20260920/visual-annex-part-1.pdf",
+        "bytes": 9354932,
+        "sha": "f9ad92f3dd951bfb81e9eb1f28a847f6ebf8cb67",
+        "exact_local_blob_match": true,
+        "remote_tree_verified": true
+      }
+    ],
+    "all_19_text_contents_equal_local": true,
+    "all_10_binary_blobs_and_sizes_equal_local": true,
+    "new_binary_bytes": 24491165,
+    "scope_validation": "Native hash verification, explicit privacy/classification review, exact remote text and binary identity checks; release CI/controller remains for integration."
+  },
+  "source_coverage": {
+    "prior_repository_sources": 27,
+    "concurrent_repository_sources": 18,
+    "public_site_review_rows": 114,
+    "public_site_distinct_urls": 108,
+    "gitlab_public_target_urls": 94,
+    "private_custody_index_records": 41,
+    "native_pdf_attachments": 14,
+    "native_mime_messages": 9,
+    "supplied_financial_pdfs": 6,
+    "selected_full_message_reads": 41,
+    "distinct_email_queries": 44,
+    "email_query_calls": 46,
+    "unique_header_search_results": 1051
+  },
+  "private_boundary": {
+    "originals_publicly_uploaded": false,
+    "principal_publicly_uploaded": false,
+    "mixed_visual_part2_publicly_uploaded": false,
+    "withheld_source_index": "assets/data/eg745-private-source-custody-index-20260920.json",
+    "source_classes_hashes_status_only": true,
+    "durable_private_custody": "NOT_CONFIRMED: parent prepared a private save batch, but the execution environment disconnected before upload was invoked. Private local copies and existing prior custody must not be represented as newly durably saved."
+  },
+  "principal": {
+    "status": "WORKING_DRAFT_NOT_SIGNED_NOT_FILED",
+    "pages": 26,
+    "words": 15050,
+    "grounds": 8,
+    "requests": 7,
+    "otrosies": 3,
+    "annex_set_closed": false,
+    "md_sha256": "12304274001ff095f1bf54177632e541977319790ef2ddbe5a3966a0e6d97bb4",
+    "docx_sha256": "3f24c91043bf9b4bfb2752571e5163b6c7a53ff5afdf94b563de31bdcc098ac8",
+    "pdf_sha256": "6c7381fc9c4b293108da0ae37ab2d2d4a98a3e3cb835dea9c54a22a65abd3f8d"
+  },
+  "important_limits": [
+    "A13 registration does not resolve formalisation/admission; retained as post-filing follow-up.",
+    "A12's extraneous operational-text tail remains undetermined; no correction evidenced.",
+    "Receipt identity does not prove official delivery, incorporation, reading, merits or preservation.",
+    "Five-Actors-v2 original unavailable; historical PwC/other images not substitutes.",
+    "Native capture does not mean every attachment page received full substantive review.",
+    "No blocked GitLab repository probe or bypass; public-page source review distinct.",
+    "Current main includes PR1681 nexus, but not this worker's 13/13 correction at final read.",
+    "No full private principal, native correspondence, provider identifiers or sensitive source screenshots published."
+  ],
+  "files": [
+    {
+      "filename": "archive/EG745_HISTORICAL_FACT_ROWS_20SEP2026.md",
+      "status": "added",
+      "additions": 22,
+      "deletions": 0,
+      "changes": 22,
+      "previous_filename": null
+    },
+    {
+      "filename": "archive/EG745_NETWORK_WEALTH_SOURCE_REVIEW_20SEP2026.md",
+      "status": "added",
+      "additions": 57,
+      "deletions": 0,
+      "changes": 57,
+      "previous_filename": null
+    },
+    {
+      "filename": "archive/EG745_PR1680_SOURCE_AND_STATUS_REVIEW_20SEP2026.md",
+      "status": "added",
+      "additions": 88,
+      "deletions": 0,
+      "changes": 88,
+      "previous_filename": null
+    },
+    {
+      "filename": "archive/EG745_PUBLIC_RESPONSE_PREPARATION_20SEP2026.md",
+      "status": "added",
+      "additions": 37,
+      "deletions": 0,
+      "changes": 37,
+      "previous_filename": null
+    },
+    {
+      "filename": "archive/EG745_PUBLIC_SITE_NETWORK_BENEFIT_REVIEW_20SEP2026.md",
+      "status": "added",
+      "additions": 80,
+      "deletions": 0,
+      "changes": 80,
+      "previous_filename": null
+    },
+    {
+      "filename": "assets/data/dp1901-direct-action-state-20260920.json",
+      "status": "modified",
+      "additions": 160,
+      "deletions": 10,
+      "changes": 170,
+      "previous_filename": null
+    },
+    {
+      "filename": "assets/data/dp1901-eg745-cross-institutional-matrix-20260920.json",
+      "status": "modified",
+      "additions": 9,
+      "deletions": 8,
+      "changes": 17,
+      "previous_filename": null
+    },
+    {
+      "filename": "assets/data/eg745-concurrent-source-review-20260920.json",
+      "status": "added",
+      "additions": 217,
+      "deletions": 0,
+      "changes": 217,
+      "previous_filename": null
+    },
+    {
+      "filename": "assets/data/eg745-historical-fact-rows-20260920.json",
+      "status": "added",
+      "additions": 156,
+      "deletions": 0,
+      "changes": 156,
+      "previous_filename": null
+    },
+    {
+      "filename": "assets/data/eg745-illustration-preservation-20260920.json",
+      "status": "added",
+      "additions": 361,
+      "deletions": 0,
+      "changes": 361,
+      "previous_filename": null
+    },
+    {
+      "filename": "assets/data/eg745-private-source-custody-index-20260920.json",
+      "status": "added",
+      "additions": 444,
+      "deletions": 0,
+      "changes": 444,
+      "previous_filename": null
+    },
+    {
+      "filename": "assets/data/eg745-public-site-research-index-20260920.json",
+      "status": "added",
+      "additions": 1277,
+      "deletions": 0,
+      "changes": 1277,
+      "previous_filename": null
+    },
+    {
+      "filename": "assets/data/eg745-repository-source-review-index-20260920.json",
+      "status": "added",
+      "additions": 284,
+      "deletions": 0,
+      "changes": 284,
+      "previous_filename": null
+    },
+    {
+      "filename": "assets/visuals/eg745-working-20260920/l1.png",
+      "status": "added",
+      "additions": 0,
+      "deletions": 0,
+      "changes": 0,
+      "previous_filename": null
+    },
+    {
+      "filename": "assets/visuals/eg745-working-20260920/l2.png",
+      "status": "added",
+      "additions": 0,
+      "deletions": 0,
+      "changes": 0,
+      "previous_filename": null
+    },
+    {
+      "filename": "assets/visuals/eg745-working-20260920/l3.png",
+      "status": "added",
+      "additions": 0,
+      "deletions": 0,
+      "changes": 0,
+      "previous_filename": null
+    },
+    {
+      "filename": "assets/visuals/eg745-working-20260920/l4.png",
+      "status": "added",
+      "additions": 0,
+      "deletions": 0,
+      "changes": 0,
+      "previous_filename": null
+    },
+    {
+      "filename": "assets/visuals/eg745-working-20260920/l5.png",
+      "status": "added",
+      "additions": 0,
+      "deletions": 0,
+      "changes": 0,
+      "previous_filename": null
+    },
+    {
+      "filename": "assets/visuals/eg745-working-20260920/l6.png",
+      "status": "added",
+      "additions": 0,
+      "deletions": 0,
+      "changes": 0,
+      "previous_filename": null
+    },
+    {
+      "filename": "assets/visuals/eg745-working-20260920/v01.webp",
+      "status": "added",
+      "additions": 0,
+      "deletions": 0,
+      "changes": 0,
+      "previous_filename": null
+    },
+    {
+      "filename": "assets/visuals/eg745-working-20260920/v12.webp",
+      "status": "added",
+      "additions": 0,
+      "deletions": 0,
+      "changes": 0,
+      "previous_filename": null
+    },
+    {
+      "filename": "assets/visuals/eg745-working-20260920/v13.png",
+      "status": "added",
+      "additions": 0,
+      "deletions": 0,
+      "changes": 0,
+      "previous_filename": null
+    },
+    {
+      "filename": "en/dp-1901-2026/index.html",
+      "status": "modified",
+      "additions": 6,
+      "deletions": 5,
+      "changes": 11,
+      "previous_filename": null
+    },
+    {
+      "filename": "es/dp-1901-2026/index.html",
+      "status": "modified",
+      "additions": 6,
+      "deletions": 5,
+      "changes": 11,
+      "previous_filename": null
+    },
+    {
+      "filename": "evidence/fiscalia/2026/eg745-working-20260920/README.md",
+      "status": "added",
+      "additions": 27,
+      "deletions": 0,
+      "changes": 27,
+      "previous_filename": null
+    },
+    {
+      "filename": "evidence/fiscalia/2026/eg745-working-20260920/visual-annex-part-1.pdf",
+      "status": "added",
+      "additions": 0,
+      "deletions": 0,
+      "changes": 0,
+      "previous_filename": null
+    },
+    {
+      "filename": "evidence/judicial/dp-1901-2026/README.md",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 2,
+      "changes": 4,
+      "previous_filename": null
+    },
+    {
+      "filename": "ops/2026-09-19_DP1901_EG745_FILING_STATUS_REGISTER.md",
+      "status": "modified",
+      "additions": 9,
+      "deletions": 5,
+      "changes": 14,
+      "previous_filename": null
+    },
+    {
+      "filename": "publication-manifests/dp1901-13of13-receipt-reconciliation-20260920.json",
+      "status": "added",
+      "additions": 45,
+      "deletions": 0,
+      "changes": 45,
+      "previous_filename": null
+    }
+  ],
+  "key_urls": {
+    "entry": "https://github.com/sbu001monterecco/por-derecho/blob/b0846586c7b6a9ee05e4f54bdfead06c714da250/evidence/fiscalia/2026/eg745-working-20260920/README.md",
+    "public_response": "https://github.com/sbu001monterecco/por-derecho/blob/b0846586c7b6a9ee05e4f54bdfead06c714da250/archive/EG745_PUBLIC_RESPONSE_PREPARATION_20SEP2026.md",
+    "custody_index": "https://github.com/sbu001monterecco/por-derecho/blob/b0846586c7b6a9ee05e4f54bdfead06c714da250/assets/data/eg745-private-source-custody-index-20260920.json",
+    "source_index": "https://github.com/sbu001monterecco/por-derecho/blob/b0846586c7b6a9ee05e4f54bdfead06c714da250/assets/data/eg745-public-site-research-index-20260920.json",
+    "compare": "https://github.com/sbu001monterecco/por-derecho/compare/0029415c77035785ea65ecf71655f96843ed4036...b0846586c7b6a9ee05e4f54bdfead06c714da250"
+  },
+  "report_scope": "Verified substantive payload at b0846586c7b6a9ee05e4f54bdfead06c714da250; this audit snapshot is appended in a later commit.",
+  "closeout_artifact_storage": "Local report creation failed when the execution environment became unavailable; this safe audit snapshot is preserved directly on the same GitHub worker branch."
+}
