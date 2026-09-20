@@ -74,6 +74,12 @@
       "source_type": "USER_RECOVERED_EDITORIAL_CONCEPTS",
       "claim": "Six previously generated DP 1901/2026 explanatory images recovered from controlled user Library custody on 19-Sep-2026. Original bytes remain preserved outside Git; repository copies are web derivatives. Each image is published only with an item-specific correction/evidence-status notice.",
       "control": "publication-manifests/dp1901-cgpj-response-images-20260919.json"
+    },
+    {
+      "id": "SRC-DP1901-SHAME-GENERATED-20260920",
+      "source_type": "USER_APPROVED_AI_GENERATED_EDITORIAL_SATIRE",
+      "claim": "Exact image generated and approved for the bilingual DP1901 public landing. It does not depict observed physical acts or identify real officials.",
+      "control": "assets/data/dp1901-shame-linkedin-20260921.json"
     }
   ],
   "families": [
@@ -113,6 +119,13 @@
       "current_primary_es": "PD-DMA-0012",
       "current_primary_en": "PD-DMA-0012",
       "mandatory_boundary": "The neutral SVG assets/visuals/dp1901-routing-collision-20260919.svg is the current precise lead visual. The six recovered concepts require the correction captions recorded in the publication manifest; arrows, crests, dates, institutional settings and the grave metaphor do not establish official authorship, certified system history, corpus transmission, destruction, intent or wrongdoing."
+    },
+    {
+      "family_id": "PD-DMA-FAM-DP1901-SHAME-001",
+      "title": "Shame expelled / Justice buried — DP1901 editorial satire",
+      "scope": "Original editorial satire and bilingual source-linked public post; no finding of culpability.",
+      "current_primary_en": "PD-DMA-0013",
+      "current_primary_es": "PD-DMA-0013"
     }
   ],
   "logical_assets": [
@@ -286,6 +299,20 @@
         "SRC-DP1901-EDITORIAL-CONCEPTS-20260919"
       ],
       "correction_control": "Earlier explanatory overview only. Arrows and dates do not replace certified entries, indexes or metadata; crests do not indicate institutional authorship."
+    },
+    {
+      "reference": "PD-DMA-0013",
+      "family_id": "PD-DMA-FAM-DP1901-SHAME-001",
+      "title": "Shame has left the building",
+      "language": "en",
+      "edition": "EXACT_ORIGINAL_WITH_BILINGUAL_PAGE_CONTEXT",
+      "publication_status": "PREPARED_FOR_PUBLICATION",
+      "satire_compliance_id": "PD-SAT-DP1901-SHAME-20260921",
+      "web_file": "PD-DMA-0013-EN-PAGE^",
+      "image_file": "PD-DMA-0013-PNG^",
+      "sources": [
+        "SRC-DP1901-SHAME-GENERATED-20260920"
+      ]
     }
   ],
   "files": [
@@ -677,6 +704,48 @@
       "sha256": "0a196b6cf699a9171ad98b44b00bc12faf87e86bc33cf1b09ba3795e18c92ee9",
       "repository_mirror": true,
       "publication_status": "PUBLIC_WITH_CONTEXTUAL_CORRECTION"
+    },
+    {
+      "reference": "PD-DMA-0013-EN-PAGE^",
+      "logical_asset": "PD-DMA-0013",
+      "role": "PUBLIC_CONTEXT_PAGE",
+      "repository_path": "en/dp-1901-2026/index.html",
+      "public_url": "https://sbu001monterecco.github.io/por-derecho/en/dp-1901-2026/",
+      "mime": "text/html",
+      "bytes": 27243,
+      "sha256": "6526afb6a51d184a5f30136ec4be4968cf29227850e3459b662e49666288954a",
+      "repository_mirror": true,
+      "publication_status": "PREPARED_FOR_PUBLICATION"
+    },
+    {
+      "reference": "PD-DMA-0013-ES-PAGE^",
+      "logical_asset": "PD-DMA-0013",
+      "role": "PUBLIC_CONTEXT_PAGE",
+      "repository_path": "es/dp-1901-2026/index.html",
+      "public_url": "https://sbu001monterecco.github.io/por-derecho/es/dp-1901-2026/",
+      "mime": "text/html",
+      "bytes": 36183,
+      "sha256": "80733fc5b4ca4ea750d59884d77cf9c8883f8a52c28396230281073bee3cf508",
+      "repository_mirror": true,
+      "publication_status": "PREPARED_FOR_PUBLICATION"
+    },
+    {
+      "reference": "PD-DMA-0013-PNG^",
+      "logical_asset": "PD-DMA-0013",
+      "role": "FULL_RESOLUTION_EDITORIAL_ORIGINAL",
+      "repository_path": "assets/visuals/dp1901-shame-20260921/shame-exits-the-courthouse.png",
+      "public_url": "https://sbu001monterecco.github.io/por-derecho/assets/visuals/dp1901-shame-20260921/shame-exits-the-courthouse.png",
+      "mime": "image/png",
+      "width_px": 1055,
+      "height_px": 1491,
+      "bytes": 2590908,
+      "sha256": "ca301b92c670abcaa691bbd5b569dfb971034595c300238369e265f861fe947d",
+      "repository_mirror": true,
+      "publication_status": "PREPARED_FOR_PUBLICATION",
+      "intended_channels": [
+        "LinkedIn",
+        "bilingual landing page"
+      ]
     }
   ],
   "public_routes": {
