@@ -618,7 +618,16 @@
         "drafts/canarias/2026-09-20_ATLANTE_DP1901_PRESERVATION_REQUEST_DRAFT.md",
         "drafts/fiscalia/2026-09-20_FISCALIA_PROVINCIAL_DP1901_REPORT_IDENTIFICATION_REQUEST_DRAFT.md",
         "drafts/judicial-admin/2026-09-20_TSJC_SALA_GOBIERNO_REPARTO_RULES_REQUEST_DRAFT.md"
-      ]
+      ],
+      "direct_candidate_census": {
+        "status": "13_OF_13_WORKING_CANDIDATES_HAVE_PREPARED_CORE_OR_RECIPIENT_DRAFT",
+        "warning": "preparedness count; not all are necessarily new filings or simultaneously appropriate",
+        "additional_drafts": [
+          "drafts/judicial-admin/2026-09-20_MINJUSTICIA_LAJ_DP1901_SUPERVISORY_SUPPLEMENT_DRAFT.md",
+          "drafts/institutions/2026-09-20_DEFENSOR_PUEBLO_DP1901_ADMIN_SERVICE_DRAFT.md",
+          "drafts/fiscalia/2026-09-20_ANTICORRUPCION_DP1901_SCOPED_UPDATE_DRAFT.md"
+        ]
+      }
     }
   }
 }
