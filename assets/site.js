@@ -95,3 +95,19 @@
   legacy.addEventListener('error', loadMatkator8584Release, {once:true});
   document.head.appendChild(legacy);
 })();
+
+// PD-CUATRECASAS-EDGEWORTH-PUBLICATION-20260916
+// Narrow route hook for the Edgeworth–Sun Rock editorial comparison and LinkedIn publication text.
+(() => {
+  'use strict';
+  const current = document.currentScript;
+  if (!current) return;
+  const path = location.pathname.replace(/index\.html$/, '').replace(/\/+$/, '/');
+  if (path !== '/por-derecho/en/' && path !== '/por-derecho/en/cuatrecasas-sun-park/') return;
+  if (document.querySelector('script[data-cuatrecasas-edgeworth-publication-loader]')) return;
+  const script = document.createElement('script');
+  script.src = new URL('cuatrecasas-edgeworth-linkedin-20260916.js?v=20260916b', current.src).href;
+  script.async = false;
+  script.setAttribute('data-cuatrecasas-edgeworth-publication-loader', '20260916b');
+  document.head.appendChild(script);
+})();
