@@ -262,10 +262,16 @@
     {
       "artifact_id": "EG745-FINAL-SAVED-033",
       "format": "md",
-      "bytes": 8729,
-      "sha256": "cc252b39ee43850377a587403e726483f98bbf70d960ed880df5b80b991a046a",
+      "bytes": 8702,
+      "sha256": "968120e7452bdf91e3a6f7ea0b5b88ec5216b8419aaa536300ec99f03553849d",
       "save_status": "SUCCEEDED",
-      "public_scope": "Fingerprint only unless separately identified as an approved public copy"
+      "public_scope": "Fingerprint only unless separately identified as an approved public copy",
+      "previous_prepared_version": {
+        "bytes": 8729,
+        "sha256": "cc252b39ee43850377a587403e726483f98bbf70d960ed880df5b80b991a046a",
+        "status": "Previously saved; superseded by formatting-only revision"
+      },
+      "revision_note": "Markdown table-row whitespace corrected; no PDF or filing-text change."
     },
     {
       "artifact_id": "EG745-FINAL-SAVED-034",
