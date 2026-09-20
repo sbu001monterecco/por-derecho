@@ -9,7 +9,7 @@
   "base_tree": "76a8ba53f1726e4550bd37e923b7bb41e90388d8",
   "worker_commit": "0f028563eee9dc55103c22a36cf0c5469e4a7d0c",
   "worker_integrity_manifest": "publication-manifests/trolley-media-research-20260920.json",
-  "scope": "Ten worker files preserved unchanged; three additive incoming links; this integration record. No existing source prose, image, filing-state object or route removed.",
+  "scope": "Ten worker files preserved unchanged; three additive incoming links including paired in-page navigation; this integration record. No existing source prose, image, filing-state object or route removed.",
   "historical_status_rule": "Worker files and the worker manifest retain their preparation-time status, owner and base. They are historical provenance, not assertions of the live release state. Actual integration, CI, merge and deployment are evidenced by the PR, current main and controller readback, not inferred from a source-file label.",
   "expected_paths": [
     "archive/research/trolley-media-20260920/README.md",
@@ -31,18 +31,18 @@
     {
       "path": "en/acosta-matos-hotel-platform/index.html",
       "original_blob": "c3ecf4d2ac948210d882e3569c23371d90ef16ff",
-      "candidate_blob": "93d3a6f5efddf56d0ff56ea887a2b5ba0723ece4",
+      "candidate_blob": "23c3c99f437bcc7df043f384b4a6dab4ae13d896",
       "marker": "trolley-media-research-20260920",
       "target": "../acosta-matos-media-property-remedies/",
-      "preservation_test": "Remove only the inserted newline and section before main close; remaining bytes must hash to original_blob."
+      "preservation_test": "Remove only the added main-nav Media research anchor and the inserted newline/section before main close; remaining bytes must hash to original_blob. Original absence of EOF newline retained."
     },
     {
       "path": "es/acosta-matos-plataforma-hotelera/index.html",
       "original_blob": "8066b32df260ca2521829100d6b1d428a70e826b",
-      "candidate_blob": "250223be67f1f9034832ce62cd6efaccec3d690c",
+      "candidate_blob": "39d13e4a3d421db696d0e106152b6f4eba4e3a5e",
       "marker": "trolley-media-research-20260920",
       "target": "../acosta-matos-medios-propiedad-remedios/",
-      "preservation_test": "Remove only the inserted newline and section before main close; remaining bytes must hash to original_blob."
+      "preservation_test": "Remove only the added main-nav Estudio de medios anchor and the inserted newline/section before main close; remaining bytes must hash to original_blob. Original EOF newline restored."
     },
     {
       "path": "archive/ACOSTA_MATOS_WEALTH_TRAJECTORY_REVIEW_20SEP2026.md",
@@ -62,7 +62,8 @@
     "ten_worker_blob_identities": "Matched to local prepared Git hashes",
     "source_register": "Exact original research-artifact bytes; not publisher-original article bytes",
     "paired_reader_local_checks": "36 anchors and URLs each; valid JSON and HTML; authored HTML rendered at390/1280 in both languages without document horizontal overflow",
-    "existing_parent_preservation": "To verify against the exact PR diff and original blobs before merge",
+    "existing_parent_preservation": "Reviewed initial exact PR patches: append-only wealth section and added research sections; Spanish EOF discrepancy corrected in successor. Verify successor patch before merge.",
+    "initial_ci": "Initial publication-integrity run35539260031 job106153814868 at b7b4a7951f9a22bfc100d2394f308267968e17fb flagged NEW_CONTENT_NOT_ROUTED in the English platform page. Successor adds a functional in-page main-navigation anchor to the research section in both languages; no validator or workflow is weakened.",
     "full_repository_checks": "Must pass normal exact-head release/publication and applicable gates; not run locally without complete repository",
     "controller": "Claim only after exact-head checks; normal protected merge; verify exact-SHA Pages and affected public bytes",
     "live_state": "Not inferred from preparation. Consult actual PR/controller closeout."
