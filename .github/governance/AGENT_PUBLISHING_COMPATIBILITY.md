@@ -214,3 +214,27 @@ root `AGENTS.md` control route; neither is added to site navigation or loaded by
 the rendered site. The test does not certify the legal merits of legacy content,
 close legacy privacy debt, verify an unmerged change on Pages or grant authority
 to publish.
+
+## Standing substantive rule: whole-platform displacement — 20 September 2026
+
+For work on Sun Park asset recovery, continuing patrimonial harm, alleged
+anti-corruption failures, European funds, Presidencia or Aweswell's foreign
+investment, read and apply
+`.github/governance/PLATFORM_DISPLACEMENT_PATRIMONIAL_HARM_FOREIGN_INVESTOR_RULE_20SEP2026.md`
+(`PD-PLATFORM-20260920-01`) together with the existing unitary criminal-first
+protocol. Its source review and machine-readable scope are under
+`.github/governance/records/` with the same date/control ID.
+
+Do not reduce the attributed de facto inequitable displacement and use of the
+whole business platform to LPB property, direct cash transfers or hotel rent.
+Examine repeated commercial use, parallel/successive capital formation and
+benefit alongside the original rights-holders' loss. Preserve AWESWELL LIMITED
+(07716847), British-company/foreign-investor context, separate claimants and
+Articles 32–37 of Ley 40/2015 where applicable, with Article 32.7/LOPJ and
+Article 67 of Ley 39/2015 route/prescription safeguards. No collective guilt,
+automatic proprietary entitlement or deadline protection follows from the rule.
+
+This is an additive analytical/drafting instruction, not a new CI hard gate,
+rendered-site change, filing, service, authority contact or authorisation to
+publish private material. GitLab public Pages remains a read-only comparator
+while authenticated repository access is blocked. Do not imply synchronisation.
