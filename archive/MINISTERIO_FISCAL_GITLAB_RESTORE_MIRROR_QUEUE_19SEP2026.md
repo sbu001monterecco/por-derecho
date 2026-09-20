@@ -44,6 +44,9 @@ Provider message IDs, Gmail thread IDs and private custody locators stay outside
 
 ## Explain-First restoration requirement
 
+Independent Google Drive handover pointer: **Por Derecho — Explain-First Filing Governance Rule — 20 Sep 2026**. Use the Drive copy as a restoration cross-check, not as authority to overwrite newer GitLab state.
+
+
 The GitLab restoration pass must make the Explain-First rule discoverable from the GitLab bootstrap/agent controls after reconciling against then-current GitLab main. Do not blind-copy GitHub. Preserve newer GitLab governance, port the net rule/template delta, run the applicable validators and record the resulting GitLab commit/MR/pipeline identities.
 
 ## Completion condition
