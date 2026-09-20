@@ -8,6 +8,14 @@
 
 > This draft is an urgent preservation/competence/attribution notice. It does not replace the judicial remedy against the 14-Sep Auto or the E.G. 745 response/reposición.
 
+## RESUMEN PARA EL LECTOR — QUÉ HA OCURRIDO, POR QUÉ IMPORTA Y QUÉ SE SOLICITA
+
+Este escrito plantea un problema institucional concreto surgido del Auto de 14 de septiembre de 2026 en DP 1901/2026. El Auto identifica un informe del Ministerio Fiscal de 29 de julio que interesó el archivo y describe DP 1901 como causa por presunta prevaricación judicial. Sin embargo, no se ha producido todavía el informe firmado, su autor, Fiscalía de adscripción, reparto, corpus examinado ni tratamiento de la competencia; y, paralelamente, existen actuaciones contemporáneas que relacionan DP 1901 con una denuncia autónoma contra actores privados presentada bajo Ref.21.
+
+El punto decisivo no es afirmar de antemano irregularidad o responsabilidad penal. Es determinar qué objeto recibió realmente el Fiscal, quién lo examinó, con qué competencia y con qué documentación, y cuál fue el destino separado de las denuncias Ref.21 y Ref.24. Esta cuestión importa al Fiscal Superior porque DIP 2/2026 ya había identificado expresamente el marco de aforamiento/TSJ aplicable a posibles delitos cometidos por jueces o magistrados en el ejercicio del cargo.
+
+Se solicita, de forma finita, identificar al autor y su asignación; preservar y producir el informe y su corpus; reconstruir reparto y trazabilidad; aclarar el tratamiento de la competencia; certificar el destino de Ref.21/Ref.24; y remitir motivadamente cualquier extremo que corresponda a otro órgano. La solicitud de reconstrucción no convierte por sí sola la colisión procesal en prueba de conducta ilícita.
+
 ## AL FISCAL SUPERIOR DE LA FISCALÍA DE LA COMUNIDAD AUTÓNOMA DE CANARIAS
 
 D. **Gil Marer**, cuyos datos identificativos constan en las comunicaciones y expedientes ya remitidos al Ministerio Fiscal, comparece y, como mejor proceda,
