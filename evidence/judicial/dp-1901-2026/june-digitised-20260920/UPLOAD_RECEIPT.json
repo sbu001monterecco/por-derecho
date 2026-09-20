@@ -1,0 +1,133 @@
+{
+  "schema": "pd-june-upload-receipt-v1",
+  "state": "VERIFIED_FILES_COMMITTED_IN_THIS_TREE",
+  "repository": "sbu001monterecco/por-derecho",
+  "branch": "worker/dp1901-june-source-satire-preservation-20260920",
+  "parent_sha": "10f60dbfb4e22adc769e48dd60d698437bd7a8b6",
+  "run_id": "35539795934",
+  "imported_at_utc": "2026-09-20T21:49:39.930456+00:00",
+  "zip_sha256": "dfbc37aa17637d04fbeef509f33b795e85a5e4a591fec345b58de262657af736",
+  "zip_bytes": 54172687,
+  "files_verified": 18,
+  "pdf_files": 7,
+  "page_accounted_text_files": 7,
+  "source_page_instances": 680,
+  "public_pdf_pages_including_covers": 687,
+  "withheld_source_page_instances": 31,
+  "per_file_sha256_and_git_blob_verified": true,
+  "files": [
+    {
+      "path": "evidence/judicial/dp-1901-2026/june-digitised-20260920/README.md",
+      "sha256": "03113adc944927d5052a33a3604b6f8f3a9428e060bd89959d19973f290ccc76",
+      "bytes": 6648,
+      "git_blob_sha": "4807a0a158186d9cceeda97bf763ec16d4e60731"
+    },
+    {
+      "path": "evidence/judicial/dp-1901-2026/june-digitised-20260920/SHA256SUMS.txt",
+      "sha256": "11a30ba6775cd3b0e29f1347e6689b811b3a9525043c92c4c6a2fc9657595539",
+      "bytes": 1746,
+      "git_blob_sha": "e6819f889f147b5a92d07416fce55908bc815947"
+    },
+    {
+      "path": "evidence/judicial/dp-1901-2026/june-digitised-20260920/full-text/c21-impresion-202-es.md",
+      "sha256": "6f5ccd7e8d30508aeb8646507d01e1474d2ee7b8defd408b5422e9837bfb7a0b",
+      "bytes": 511839,
+      "git_blob_sha": "97722d614cc3175c0748f78a049a4d4b597a896d"
+    },
+    {
+      "path": "evidence/judicial/dp-1901-2026/june-digitised-20260920/full-text/c21-predecesor-163-es.md",
+      "sha256": "5f87a0bdab562a25c66f0b816c62b8de6a1d9355db17da877708eb99c651cf1d",
+      "bytes": 430205,
+      "git_blob_sha": "5fa37bdf800d8f769e1f4224e68cd62acf7047f8"
+    },
+    {
+      "path": "evidence/judicial/dp-1901-2026/june-digitised-20260920/full-text/c21-principal-86-es.md",
+      "sha256": "4bd189ec7fb2e4371280ed4ce3b5bc16ea4bd154735df677704d73a17636adf4",
+      "bytes": 266683,
+      "git_blob_sha": "a6d0793bbb2ec652aae7a13672d35168d88ae383"
+    },
+    {
+      "path": "evidence/judicial/dp-1901-2026/june-digitised-20260920/full-text/c22-predecesor-82-es.md",
+      "sha256": "d7a71b12f774732b3543f63c81d897cc9f1551be1b16c2d9ade5e723d6e05807",
+      "bytes": 267853,
+      "git_blob_sha": "f037007b63a3ac5ba5e68e7eeaa13e4103c50b5c"
+    },
+    {
+      "path": "evidence/judicial/dp-1901-2026/june-digitised-20260920/full-text/c22-principal-55-es.md",
+      "sha256": "f7c4a51ceed20ed4bd8b934137f1de7f2f80a11809dbfc133f2bc52e71a3f08b",
+      "bytes": 206158,
+      "git_blob_sha": "eed762af01ffa12fc539b04361735aab63a3ac69"
+    },
+    {
+      "path": "evidence/judicial/dp-1901-2026/june-digitised-20260920/full-text/c24-ampliacion-13-es.md",
+      "sha256": "ee0a357ede0e7d48d19b856b3c60f1dec8ee50b1b8ab13e6427efaae531a7415",
+      "bytes": 45992,
+      "git_blob_sha": "9942fe70a1264aa7570abe22cc455173aa125047"
+    },
+    {
+      "path": "evidence/judicial/dp-1901-2026/june-digitised-20260920/full-text/c24-paquete-79-es.md",
+      "sha256": "82632f09635cad36a31c57481ede4bb248f18bc57b8f138bb4f11d29b5aa30e3",
+      "bytes": 205722,
+      "git_blob_sha": "ace154e75fd15b635e2e68c4234f7f2fbeb49f9a"
+    },
+    {
+      "path": "evidence/judicial/dp-1901-2026/june-digitised-20260920/manifest.json",
+      "sha256": "cc297b7616a5266cf735e13d3ddff8f6521af53664d1e142cc7b516844ab20d6",
+      "bytes": 334582,
+      "git_blob_sha": "76a561b5d3ccafa1a2b2678427ced5522e902e6d"
+    },
+    {
+      "path": "evidence/judicial/dp-1901-2026/june-digitised-20260920/public-pdfs/c21-impresion-202-public-redacted.pdf",
+      "sha256": "cbd8ade16cd0ab5e6fa32a61a200be0ab12ec12f033d64f8c4014f5dbc6e1b91",
+      "bytes": 25853927,
+      "git_blob_sha": "4aee034afbd9ab71a0f9241f496d62636f6f84cc"
+    },
+    {
+      "path": "evidence/judicial/dp-1901-2026/june-digitised-20260920/public-pdfs/c21-predecesor-163-public-redacted.pdf",
+      "sha256": "f610da83ca58594b4a6fc1824594476401dccdd45b5fc888f962ba6add33401c",
+      "bytes": 23896939,
+      "git_blob_sha": "0d92b4e610a7efddfa3fa9fd20c7cb8ab84249eb"
+    },
+    {
+      "path": "evidence/judicial/dp-1901-2026/june-digitised-20260920/public-pdfs/c21-principal-86-public-redacted.pdf",
+      "sha256": "0fda64fbe6daba2ed5d396a32fafff0517e2a4b0222053a0dfad4fd426f9790b",
+      "bytes": 485949,
+      "git_blob_sha": "aff2a79ca2a1108234764fe0891c50644b0637fd"
+    },
+    {
+      "path": "evidence/judicial/dp-1901-2026/june-digitised-20260920/public-pdfs/c22-predecesor-82-public-redacted.pdf",
+      "sha256": "051d95b45d7c72bd300c9b079c28960b9c34b4f3bb2aa9a23ac92233577d6fdb",
+      "bytes": 1083880,
+      "git_blob_sha": "d79aad8bd0489b69dbee281adeaa60f00fbcfc39"
+    },
+    {
+      "path": "evidence/judicial/dp-1901-2026/june-digitised-20260920/public-pdfs/c22-principal-55-public-redacted.pdf",
+      "sha256": "445a8573c54b22f51979065d2b228fb8e7232fc171c1555b0484314c36601849",
+      "bytes": 715743,
+      "git_blob_sha": "08fda8721f2746e6d929e5130937aa7fb1926020"
+    },
+    {
+      "path": "evidence/judicial/dp-1901-2026/june-digitised-20260920/public-pdfs/c24-ampliacion-13-public-redacted.pdf",
+      "sha256": "b177d8ca50ab83a841d57a162bda867328029587442940f5833f5facbfe76def",
+      "bytes": 123655,
+      "git_blob_sha": "f083415039c8ee49b8b4838c1d44c8557dd50da5"
+    },
+    {
+      "path": "evidence/judicial/dp-1901-2026/june-digitised-20260920/public-pdfs/c24-paquete-79-public-redacted.pdf",
+      "sha256": "96e1d3ef2161bfe1e83319cca9804c9cad2f58cac52936ded7197c514ea93d31",
+      "bytes": 2438940,
+      "git_blob_sha": "68d855a7c3788e8d1b5446fe43510a2e5e24315f"
+    },
+    {
+      "path": "evidence/judicial/dp-1901-2026/june-digitised-20260920/quality-checks.json",
+      "sha256": "21254787b882180904c21063e0b51f0c9ab163a667d50483320b0890f3461eee",
+      "bytes": 4495,
+      "git_blob_sha": "9034cb9400c34a2ba15ccca3ad93639efce4ba3e"
+    }
+  ],
+  "native_unredacted_originals_uploaded": false,
+  "main_merged": false,
+  "website_deployed": false,
+  "image_generated": false,
+  "limits": "Digitisation and hash verification do not certify source authenticity, court incorporation, legal findings or full public disclosure of privacy-withheld pages. This receipt must be paired with successful remote branch verification."
+}
