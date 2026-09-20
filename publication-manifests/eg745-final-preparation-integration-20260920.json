@@ -10,10 +10,14 @@
   "worker_commit": "eae85c3b5766fda542b5ded0f98a2eaa9bd2d995",
   "expected_routes": {
     "es": [
-      "es/dp-1901-2026/index.html"
+      "es/dp-1901-2026/index.html",
+      "es/ministerio-fiscal-documentos-pdf/index.html",
+      "es/ministerio-fiscal-cobertura-oficinas/index.html"
     ],
     "en": [
-      "en/dp-1901-2026/index.html"
+      "en/dp-1901-2026/index.html",
+      "en/public-prosecution-pdf-document-room/index.html",
+      "en/public-prosecution-office-coverage/index.html"
     ]
   },
   "expected_source_files": [
@@ -35,6 +39,8 @@
     "assets/data/eg745-public-site-research-index-20260920.json",
     "assets/data/eg745-recovered-source-fingerprints-20260920.json",
     "assets/data/eg745-repository-source-review-index-20260920.json",
+    "assets/data/ministerio-fiscal-office-digitisation-20260919.json",
+    "assets/data/ministerio-fiscal-pdf-room-20260918.json",
     "assets/visuals/eg745-final-20260920/five-actors-v2.webp",
     "assets/visuals/eg745-working-20260920/l1.png",
     "assets/visuals/eg745-working-20260920/l2.png",
@@ -73,6 +79,8 @@
     "assets/data/eg745-public-site-research-index-20260920.json",
     "assets/data/eg745-recovered-source-fingerprints-20260920.json",
     "assets/data/eg745-repository-source-review-index-20260920.json",
+    "assets/data/ministerio-fiscal-office-digitisation-20260919.json",
+    "assets/data/ministerio-fiscal-pdf-room-20260918.json",
     "assets/visuals/eg745-final-20260920/five-actors-v2.webp",
     "assets/visuals/eg745-working-20260920/l1.png",
     "assets/visuals/eg745-working-20260920/l2.png",
@@ -84,7 +92,11 @@
     "assets/visuals/eg745-working-20260920/v12.webp",
     "assets/visuals/eg745-working-20260920/v13.png",
     "en/dp-1901-2026/index.html",
+    "en/public-prosecution-office-coverage/index.html",
+    "en/public-prosecution-pdf-document-room/index.html",
     "es/dp-1901-2026/index.html",
+    "es/ministerio-fiscal-cobertura-oficinas/index.html",
+    "es/ministerio-fiscal-documentos-pdf/index.html",
     "evidence/fiscalia/2026/eg745-final-20260920/README.md",
     "evidence/fiscalia/2026/eg745-final-20260920/visual-annex-part-1.pdf",
     "evidence/fiscalia/2026/eg745-working-20260920/README.md",
@@ -110,5 +122,6 @@
     "Private originals and full restricted derivatives preserved privately, represented publicly only by permitted metadata",
     "June digitisation worker remains separately owned",
     "Controller, protected merge, exact-SHA deployment and scoped readback must be recorded by actual runtime evidence"
-  ]
+  ],
+  "required_pdf_room_dependency": "Add both historical and final visual PDF versions to bilingual viewers and counts, preserving five official-act derivatives separately from two unsigned/unfiled party illustration versions; no new official event or office ID is created."
 }
