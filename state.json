@@ -1,13 +1,13 @@
 {
   "schema": "por-derecho.publication-runtime.v1",
-  "fence": 21,
-  "owner": "1682:93a1b0a7dadb175816eac5a9b2325b2a299c55e5",
-  "phase": "VERIFIED_FOR_SCOPE",
-  "pr": 1682,
-  "base_sha": "a9110f5d2a3de64ae7cf470ae06ca1cfde297f4a",
-  "candidate_sha": "93a1b0a7dadb175816eac5a9b2325b2a299c55e5",
-  "run_id": 35541989182,
-  "claimed_at": "2026-09-20T22:29:30.239103Z",
+  "fence": 22,
+  "owner": "1683:0a946c404f668305b159c3d7b86d312caa412d82",
+  "phase": "CLAIMED",
+  "pr": 1683,
+  "base_sha": "6c94efacb4cc3f46f3c385ed404538eaeede203a",
+  "candidate_sha": "0a946c404f668305b159c3d7b86d312caa412d82",
+  "run_id": 35542638077,
+  "claimed_at": "2026-09-20T22:45:58.885379Z",
   "expiry_policy": "Never silently expire into free; recover after inspecting actual merge/deployment.",
   "receipts": [
     {
@@ -1465,104 +1465,5 @@
       "scope": "Changed readable public resources plus ES/EN entrypoints. Browser checks are separate premerge evidence; not a whole-site or legal-proof certificate."
     }
   ],
-  "checkpoints": [
-    {
-      "phase": "ACCEPTED",
-      "at": "2026-09-20T22:29:31.292146Z",
-      "evidence": {
-        "checks": [
-          {
-            "name": "PD release acceptance",
-            "id": 106155947521,
-            "conclusion": "success"
-          },
-          {
-            "name": "publication-integrity",
-            "id": 106155947062,
-            "conclusion": "success"
-          }
-        ]
-      }
-    },
-    {
-      "phase": "MERGE_PENDING",
-      "at": "2026-09-20T22:32:30.342779Z",
-      "evidence": {
-        "pr": 1682
-      }
-    },
-    {
-      "phase": "MERGED",
-      "at": "2026-09-20T22:32:31.247351Z",
-      "evidence": {
-        "merge_sha": "6c94efacb4cc3f46f3c385ed404538eaeede203a"
-      }
-    },
-    {
-      "phase": "DEPLOYED",
-      "at": "2026-09-20T22:33:26.203490Z",
-      "evidence": {
-        "pages_run_id": 35541983893,
-        "merge_sha": "6c94efacb4cc3f46f3c385ed404538eaeede203a"
-      }
-    },
-    {
-      "phase": "VERIFIED_FOR_SCOPE",
-      "at": "2026-09-20T22:33:31.768343Z",
-      "evidence": {
-        "merge_sha": "6c94efacb4cc3f46f3c385ed404538eaeede203a",
-        "pages_run_id": 35541983893,
-        "exact_matches": [
-          {
-            "path": "assets/data/acosta-matos-media-trolley-research-20260920.json",
-            "sha256": "67ca08a63d6e6e7a980fc229f05755b94e75911a6b18f6dcdb54d3ee543fe9d6",
-            "bytes": 10028
-          },
-          {
-            "path": "en/acosta-matos-hotel-platform/index.html",
-            "sha256": "eb519f62b29b1d260e5406c824821b21f6a9f3c2b3394afc9838009de71555de",
-            "bytes": 15300
-          },
-          {
-            "path": "en/acosta-matos-media-property-remedies/index.html",
-            "sha256": "5d5af3e3ad62936b6617a3acbbccbc211a7459ece7ebc3c3c8bfa715496126eb",
-            "bytes": 14853
-          },
-          {
-            "path": "en/index.html",
-            "sha256": "c048d21d4c94e3cb6896e4c74d69a9ab73f84c3426d40fe815370b40fe1ba109",
-            "bytes": 228197
-          },
-          {
-            "path": "es/acosta-matos-medios-propiedad-remedios/index.html",
-            "sha256": "f0d992c25c92f5b3b79d70a1c1a2d0bf2ec603df39795d7546635b25f1f433e0",
-            "bytes": 14970
-          },
-          {
-            "path": "es/acosta-matos-plataforma-hotelera/index.html",
-            "sha256": "e37069c541503a8a39a15b87a0a5412572309c5b2f5eb8f2d09dc9b23fa85f4d",
-            "bytes": 17274
-          },
-          {
-            "path": "es/index.html",
-            "sha256": "48a7ebf0751867525f140cf3e70c34f8fe22a1c6edd7aeb0b3178e788da95dda",
-            "bytes": 237351
-          },
-          {
-            "path": "publication-manifests/trolley-media-integration-20260920.json",
-            "sha256": "02597f2dac565de51ba28e1015ef4ca23acff79c891a61324ca958a8ea66254f",
-            "bytes": 8548
-          },
-          {
-            "path": "publication-manifests/trolley-media-research-20260920.json",
-            "sha256": "d0a1401dfe68d35b1117172a7ce15eeb06819b0b8e2bf5987034eee28692edba",
-            "bytes": 9839
-          }
-        ],
-        "pending": [],
-        "scope": "Changed readable public resources plus ES/EN entrypoints. Browser checks are separate premerge evidence; not a whole-site or legal-proof certificate."
-      }
-    }
-  ],
-  "updated_at": "2026-09-20T22:33:31.768343Z"
+  "checkpoints": []
 }
