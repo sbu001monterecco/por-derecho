@@ -48,9 +48,9 @@ The order does not itself prove the direction of any routing error, prosecutoria
 
 ## 20 September filing-state reconciliation
 
-The public-safe filing-state control records eleven registered personal actions out of thirteen candidates. It does not publish the private receipt PDFs or filing bodies.
+The public-safe filing-state control records thirteen registered personal actions out of thirteen working candidates, after reconciliation of the later A06/A13 receipts. It does not publish the private receipt PDFs or filing bodies.
 
 - Canonical machine record: [`assets/data/dp1901-direct-action-state-20260920.json`](../../../assets/data/dp1901-direct-action-state-20260920.json)
 - Narrative register: [`ops/2026-09-19_DP1901_EG745_FILING_STATUS_REGISTER.md`](../../../ops/2026-09-19_DP1901_EG745_FILING_STATUS_REGISTER.md)
 
-A02 has a principal and supplemental registration, with the supplemental receipt lacking a document hash. A12 has receipt-matching hashes for four attachments but an extraneous operational-text tail in the filed-text field. A06 and A13 remain held/not filed. Registration is not admission, examination or institutional action.
+A02 has a principal and supplemental registration, with the supplemental receipt lacking a document hash. A12 has receipt-matching hashes for four attachments but an extraneous operational-text tail in the filed-text field. A06 is registered under REGAGE26e00082058165 with four hash-matched PDFs; A13 is registered under REGAGE26e00082060401 with five. The earlier A06 rejection and A13 formalisation/admission questions remain disclosed as post-filing follow-ups. Registration is not admission, examination or institutional action.
