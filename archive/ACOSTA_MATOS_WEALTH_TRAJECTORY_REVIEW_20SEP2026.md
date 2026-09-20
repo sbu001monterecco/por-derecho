@@ -103,3 +103,7 @@ The inference preserved from the thread is that reputation and demonstrated proj
 Reconstruct consolidated accounts and ownership; demerger schedules; HNT revenues, management/construction contracts and distributions; funding drawdowns and uses; security/release/refinancing; intercompany transactions; project/award payments and eligible costs; investor and lender decision records; and exact knowledge/notice at each transaction. Run forward tracing and backward decision-input analysis together.
 
 The purpose is not to manufacture a family-fortune number. It is to identify each legally attributable benefit, loss and presently reachable asset without excluding a non-cash connection in advance and without treating association as proof. Read with the [accounts/group review](AWESWELL_2025_ACCOUNTS_WIDER_GROUP_REVIEW_20SEP2026.md) to preserve the original enterprise's reciprocal displacement and injury.
+
+## 9. Additional media and property/remedy research
+
+The [36-source media and trolley/property research supplement](research/trolley-media-20260920/README.md) preserves the thread's selected 2010–2026 bibliography, bilingual chronology, legal-origin study, cross-source audit derivative and the limits of the analogy. It supplements, rather than replaces, the richer financial and issuer record above. The original source register, forecasts, contrary evidence and unresolved causal connections remain distinct. [English reader](../en/acosta-matos-media-property-remedies/index.html) · [Lector español](../es/acosta-matos-medios-propiedad-remedios/index.html).
