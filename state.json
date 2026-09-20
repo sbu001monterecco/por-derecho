@@ -2,7 +2,7 @@
   "schema": "por-derecho.publication-runtime.v1",
   "fence": 18,
   "owner": "1679:bfa34cbb9de80a3fb2ce2c9758ee4b3cafb8e26c",
-  "phase": "DEPLOYED",
+  "phase": "VERIFIED_FOR_SCOPE",
   "pr": 1679,
   "base_sha": "cac2616d695d6158d67ad4b677ef73a433270a51",
   "candidate_sha": "bfa34cbb9de80a3fb2ce2c9758ee4b3cafb8e26c",
@@ -1244,6 +1244,62 @@
       ],
       "pending": [],
       "scope": "Changed readable public resources plus ES/EN entrypoints. Browser checks are separate premerge evidence; not a whole-site or legal-proof certificate."
+    },
+    {
+      "pr": 1679,
+      "candidate_sha": "bfa34cbb9de80a3fb2ce2c9758ee4b3cafb8e26c",
+      "at": "2026-09-20T19:16:27.566374Z",
+      "merge_sha": "254254530f2ebf4053a9e11bc414278c5d78f818",
+      "pages_run_id": 35531501854,
+      "exact_matches": [
+        {
+          "path": "assets/data/dp1901-direct-action-state-20260920.json",
+          "sha256": "d229607d5b23bc28d1cc9613f0e6c71f84f2ecc2e9f18b3d9832efdf30c0e07e",
+          "bytes": 10479
+        },
+        {
+          "path": "assets/data/dp1901-eg745-cross-institutional-matrix-20260920.json",
+          "sha256": "66ba9ab442fc902fc337ae276ca59399cf6f27f3d65dfb2bf35216a7700ed646",
+          "bytes": 3236
+        },
+        {
+          "path": "en/dp-1901-2026/index.html",
+          "sha256": "46ca85d1c5bec50c233cc742ce230b15af4b7339de8f57a576e9c2f172f397bf",
+          "bytes": 20658
+        },
+        {
+          "path": "en/index.html",
+          "sha256": "c048d21d4c94e3cb6896e4c74d69a9ab73f84c3426d40fe815370b40fe1ba109",
+          "bytes": 228197
+        },
+        {
+          "path": "es/dp-1901-2026/index.html",
+          "sha256": "96338a9e4e6771e74a29677917cb496c1e0a83339cb2e980312bf1261c5b1e24",
+          "bytes": 29192
+        },
+        {
+          "path": "es/index.html",
+          "sha256": "48a7ebf0751867525f140cf3e70c34f8fe22a1c6edd7aeb0b3178e788da95dda",
+          "bytes": 237351
+        },
+        {
+          "path": "ops/2026-09-19_DP1901_EG745_FILING_STATUS_REGISTER.md",
+          "sha256": "48bc65c4522d6b770fb605a4ec054ff123d0962500849e5805481d2f06d38645",
+          "bytes": 4228
+        },
+        {
+          "path": "ops/CURRENT_COLLABORATION_STATE.json",
+          "sha256": "3991df85457ec6d22198985ba2000802210d548c7ee77c07efff6fedbc120584",
+          "bytes": 5579
+        },
+        {
+          "path": "publication-manifests/dp1901-eg745-response-programme-20260920.json",
+          "sha256": "896fe07fd11b53dec1bfdb09954f957aac5edbbbad99f0e833b1d4b03b459811",
+          "bytes": 4056
+        }
+      ],
+      "pending": [],
+      "scope": "Changed readable public resources plus ES/EN entrypoints. Browser checks are separate premerge evidence; not a whole-site or legal-proof certificate."
     }
   ],
   "checkpoints": [
@@ -1286,7 +1342,64 @@
         "pages_run_id": 35531501854,
         "merge_sha": "254254530f2ebf4053a9e11bc414278c5d78f818"
       }
+    },
+    {
+      "phase": "VERIFIED_FOR_SCOPE",
+      "at": "2026-09-20T19:16:27.566340Z",
+      "evidence": {
+        "merge_sha": "254254530f2ebf4053a9e11bc414278c5d78f818",
+        "pages_run_id": 35531501854,
+        "exact_matches": [
+          {
+            "path": "assets/data/dp1901-direct-action-state-20260920.json",
+            "sha256": "d229607d5b23bc28d1cc9613f0e6c71f84f2ecc2e9f18b3d9832efdf30c0e07e",
+            "bytes": 10479
+          },
+          {
+            "path": "assets/data/dp1901-eg745-cross-institutional-matrix-20260920.json",
+            "sha256": "66ba9ab442fc902fc337ae276ca59399cf6f27f3d65dfb2bf35216a7700ed646",
+            "bytes": 3236
+          },
+          {
+            "path": "en/dp-1901-2026/index.html",
+            "sha256": "46ca85d1c5bec50c233cc742ce230b15af4b7339de8f57a576e9c2f172f397bf",
+            "bytes": 20658
+          },
+          {
+            "path": "en/index.html",
+            "sha256": "c048d21d4c94e3cb6896e4c74d69a9ab73f84c3426d40fe815370b40fe1ba109",
+            "bytes": 228197
+          },
+          {
+            "path": "es/dp-1901-2026/index.html",
+            "sha256": "96338a9e4e6771e74a29677917cb496c1e0a83339cb2e980312bf1261c5b1e24",
+            "bytes": 29192
+          },
+          {
+            "path": "es/index.html",
+            "sha256": "48a7ebf0751867525f140cf3e70c34f8fe22a1c6edd7aeb0b3178e788da95dda",
+            "bytes": 237351
+          },
+          {
+            "path": "ops/2026-09-19_DP1901_EG745_FILING_STATUS_REGISTER.md",
+            "sha256": "48bc65c4522d6b770fb605a4ec054ff123d0962500849e5805481d2f06d38645",
+            "bytes": 4228
+          },
+          {
+            "path": "ops/CURRENT_COLLABORATION_STATE.json",
+            "sha256": "3991df85457ec6d22198985ba2000802210d548c7ee77c07efff6fedbc120584",
+            "bytes": 5579
+          },
+          {
+            "path": "publication-manifests/dp1901-eg745-response-programme-20260920.json",
+            "sha256": "896fe07fd11b53dec1bfdb09954f957aac5edbbbad99f0e833b1d4b03b459811",
+            "bytes": 4056
+          }
+        ],
+        "pending": [],
+        "scope": "Changed readable public resources plus ES/EN entrypoints. Browser checks are separate premerge evidence; not a whole-site or legal-proof certificate."
+      }
     }
   ],
-  "updated_at": "2026-09-20T19:16:22.631642Z"
+  "updated_at": "2026-09-20T19:16:27.566340Z"
 }
