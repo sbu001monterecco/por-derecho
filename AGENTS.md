@@ -2,6 +2,10 @@
 
 These rules apply to every human or automated change in this repository. They preserve the public record; they do not turn allegations into findings.
 
+### Mandatory Explain-First filing gate
+
+For every new substantive filing, or material revision of a filing, apply .github/governance/EXPLAIN_FIRST_FILING_PROTOCOL_20SEP2026.md before detailed drafting. Use templates/EXPLAIN_FIRST_FILING_SUMMARY_TEMPLATE_ES_EN.md. The first page must let a competent first-time reader understand the immediate issue, minimum sequence, decisive distinction or contradiction, why the recipient is concerned, the minimum evidence anchors and the exact finite action requested. The normal target is 150–250 words and no more than one page. Do not use the summary to collapse evidential states, enlarge competence, transfer guilt or prove the entire case. **Explain first. Prove second. Connect third. Ask precisely.**
+
 ## 0. Mandatory first-turn scope and continuity gate
 
 This is the **first substantive action** for every new ChatGPT Chat, ChatGPT Work,
