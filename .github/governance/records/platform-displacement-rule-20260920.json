@@ -1,4 +1,16 @@
 {
+  "thread_consolidation": {
+    "control_id": "PD-PRESIDENCIA-THREAD-20260920-01",
+    "date": "2026-09-20",
+    "index": "archive/PRESIDENCIA_PLATFORM_RECOVERY_THREAD_20SEP2026.md",
+    "whole_wealth_supplement": ".github/governance/WHOLE_WEALTH_AND_PREDECESSOR_RIGHTS_RECOVERY_RULE_20SEP2026.md",
+    "public_outline": "archive/PRESIDENCIA_PUBLIC_THESIS_EXPONE_SOLICITA_20SEP2026.md",
+    "accounts_group_review": "archive/AWESWELL_2025_ACCOUNTS_WIDER_GROUP_REVIEW_20SEP2026.md",
+    "source_correction_crosswalk": ".github/governance/records/presidencia-thread-consolidation-20260920.json",
+    "public_readers": ["es/presidencia-plataforma-grupo-recuperacion/index.html", "en/presidencia-platform-group-recovery/index.html"],
+    "instruction": "Read the linked supplement and source reviews for whole-wealth recovery, the 2008 original obligations, later Community adoption, Aweswell's wider group and the updated Presidencia/SAIP architecture. Preserve current canonical filing status and distinct evidence/claimant/remedy boundaries.",
+    "boundary": "This later additive release includes new public reader pages. The implementation_boundary below records the original PR1678 governance-only release and is preserved unchanged; neither release is an official communication, filing or liability finding."
+  },
   "control_id": "PD-PLATFORM-20260920-01",
   "control_date": "2026-09-20",
   "status": "STANDING_ANALYTICAL_RULE_ATTRIBUTED_ALLEGATION_NOT_ADJUDICATED",
