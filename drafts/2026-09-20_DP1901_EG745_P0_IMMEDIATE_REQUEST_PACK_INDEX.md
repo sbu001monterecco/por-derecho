@@ -18,6 +18,13 @@
 6. **Fiscalía Provincial bounded 29-Jul report search** — `drafts/fiscalia/2026-09-20_FISCALIA_PROVINCIAL_DP1901_REPORT_IDENTIFICATION_REQUEST_DRAFT.md`
 7. **Presidencia / Sala de Gobierno TSJC — reparto rules** — `drafts/judicial-admin/2026-09-20_TSJC_SALA_GOBIERNO_REPARTO_RULES_REQUEST_DRAFT.md`
 
+## Remaining direct-candidate drafts completed
+8. **National LAJ / Ministry of Justice supervisory chain** — `drafts/judicial-admin/2026-09-20_MINJUSTICIA_LAJ_DP1901_SUPERVISORY_SUPPLEMENT_DRAFT.md`
+9. **Defensor del Pueblo — administrative-service scope only** — `drafts/institutions/2026-09-20_DEFENSOR_PUEBLO_DP1901_ADMIN_SERVICE_DRAFT.md`
+10. **Fiscalía Anticorrupción — scoped update to existing route** — `drafts/fiscalia/2026-09-20_ANTICORRUPCION_DP1901_SCOPED_UPDATE_DRAFT.md`
+
+Together with the three patched core responses (CGPJ, Fiscal Superior, FGE/Inspection E.G.745), these complete the current **13 direct personal-action candidate** working census. This is a preparedness count, not a conclusion that 13 new filings should all be sent.
+
 ## Common controlling material
 - `ops/2026-09-20_DP1901_EG745_COMMON_TRACEABILITY_REFERRAL_MATRIX.md`
 - `ops/2026-09-19_DP1901_EG745_PRESERVATION_PRODUCTION_SCHEDULE.md`
