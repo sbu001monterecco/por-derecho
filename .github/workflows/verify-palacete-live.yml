@@ -1,19 +1,16 @@
-# SCRATCH TRANSPORT ONLY. This branch must never be merged.
-# Reuses an existing dispatchable workflow filename only in an isolated worker ref.
-# No branch/main writes, no deployment, no change to the production verifier.
+# SCRATCH TRANSPORT ONLY — never merge this branch.
+# The short-lived download capability below contains only the image expressly
+# authorized for public publication; no private legal records are transferred.
+# Final publication keeps neither this workflow nor the temporary URL.
 name: Scratch DP1901 exact image transfer
 on:
-  workflow_dispatch:
-    inputs:
-      image_source:
-        description: 'Temporary source for the expressly authorized public illustration'
-        required: true
-        type: string
+  push:
+    branches: ['worker/dp1901-image-transfer-20260921']
 permissions:
   contents: read
 jobs:
   transfer:
-    if: github.repository == 'sbu001monterecco/por-derecho' && github.ref == 'refs/heads/worker/dp1901-image-transfer-20260921' && github.actor == 'sbu001monterecco'
+    if: github.repository == 'sbu001monterecco/por-derecho' && github.ref == 'refs/heads/worker/dp1901-image-transfer-20260921'
     permissions:
       contents: write
     runs-on: ubuntu-latest
@@ -21,7 +18,7 @@ jobs:
     steps:
       - name: Import exact public illustration as immutable blob only
         env:
-          IMAGE_SOURCE: ${{ inputs.image_source }}
+          IMAGE_SOURCE: 'https://sdmntprnortheu.oaiusercontent.com/files/00000000-e45c-81f4-a142-8da971bdba2a/raw?se=2026-09-20T23%3A56%3A43Z&sp=r&sv=2026-02-06&sr=b&scid=3b342bc0-b8bf-5b1f-aa7a-394c7e7f8e08&skoid=002823aa-689d-47ca-9347-108c20f4f00d&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-09-20T15%3A42%3A30Z&ske=2026-09-21T15%3A42%3A30Z&sks=b&skv=2026-02-06&sig=z7IKsyWCGqJozaHqdnXEOmZsALno1CH1Gq8TUXMJbfw%3D'
           GH_TOKEN: ${{ github.token }}
         run: |
           python3 - <<'PY'
@@ -29,15 +26,9 @@ jobs:
           source = os.environ['IMAGE_SOURCE']
           print('::add-mask::' + source)
           p = urllib.parse.urlparse(source)
-          assert p.scheme == 'https' and p.hostname and p.hostname.endswith('.oaiusercontent.com'), 'Unapproved image source host'
-          class SafeRedirect(urllib.request.HTTPRedirectHandler):
-              def redirect_request(self, req, fp, code, msg, headers, newurl):
-                  h = urllib.parse.urlparse(newurl)
-                  assert h.scheme == 'https' and h.hostname and h.hostname.endswith('.oaiusercontent.com'), 'Redirect host rejected'
-                  return super().redirect_request(req, fp, code, msg, headers, newurl)
-          opener = urllib.request.build_opener(SafeRedirect())
+          assert p.scheme == 'https' and p.hostname and p.hostname.endswith('.oaiusercontent.com')
           try:
-              with opener.open(source, timeout=40) as response:
+              with urllib.request.urlopen(source, timeout=40) as response:
                   image = response.read(4000000)
           except Exception:
               raise SystemExit('IMAGE_TRANSFER_DOWNLOAD_FAILED; source URL withheld')
@@ -49,5 +40,5 @@ jobs:
           with urllib.request.urlopen(request, timeout=60) as response:
               result = json.load(response)
           assert result['sha'] == git_sha, 'Remote blob mismatch'
-          print(json.dumps({'status':'EXACT_IMAGE_BLOB_STORED', 'bytes':len(image), 'sha256':expected, 'git_blob_sha':git_sha, 'branches_changed':False, 'deployment_performed':False}))
+          print(json.dumps({'status':'EXACT_IMAGE_BLOB_STORED','bytes':len(image),'sha256':expected,'git_blob_sha':git_sha,'branches_changed':False,'deployment_performed':False}))
           PY
