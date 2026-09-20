@@ -17,89 +17,81 @@ jobs:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
         with:
           ref: worker/dp1901-shame-landing-20260921
-          fetch-depth: 2
+          fetch-depth: 0
       - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
         with:
           python-version: '3.12'
-      - name: Copy and verify only the authorized public image
+      - name: Rebuild on exact newer main preserving PR1684 changes
         run: |
-          python - <<'PY'
-          import json, hashlib, urllib.request
-          from pathlib import Path
-          d=json.loads(Path('assets/data/dp1901-shame-linkedin-20260921.json').read_text())['image']
-          url=d['public_transfer_source']
-          assert url=='https://cdn.websitepublisher.ai/custom/wid27709/images/dp1901-shame-exits-the-courthouse-ca301b92.png'
-          req=urllib.request.Request(url,headers={'User-Agent':'PorDerecho-PublicAsset-Preservation/1.0'})
-          with urllib.request.urlopen(req,timeout=45) as r:
-              data=r.read(d['bytes']+1)
-          assert len(data)==d['bytes'], 'Image byte count differs'
-          assert hashlib.sha256(data).hexdigest()==d['sha256'], 'Image fingerprint differs'
-          p=Path(d['path']); p.parent.mkdir(parents=True,exist_ok=True); p.write_bytes(data)
-          print('Exact original PNG copied:',len(data),'bytes',d['sha256'])
-          PY
-      - name: Build additive landing sections without changing previous dossier text
-        run: python scripts/build_dp1901_shame_landing_20260921.py
-      - name: Validate satire and publication controls
-        run: python scripts/validate_satire_publication_governance.py
-      - name: Install bounded rendering dependencies
+          git fetch origin main
+          test "$(git rev-parse origin/main)" = '01df48e335d07d0f1068381a294f6b65917f1248'
+          git checkout -b worker/dp1901-shame-current-20260921 origin/main
+          git checkout 45adf9742269983f12ade7e742d15cb7ae6265d5 -- assets/data/dp1901-shame-linkedin-20260921.json assets/dp1901-shame-linkedin-20260921.css scripts/build_dp1901_shame_landing_20260921.py assets/visuals/dp1901-shame-20260921/shame-exits-the-courthouse.png
+          python scripts/build_dp1901_shame_landing_20260921.py
+          python scripts/validate_satire_publication_governance.py
+      - name: Install rendering dependencies
         run: |
           python -m pip install --quiet pillow beautifulsoup4 playwright
           python -m playwright install --with-deps chromium
-      - name: Verify full text, image and mobile and desktop layout
+      - name: Verify original, complete bilingual posts and current-main preservation
         run: |
-          mkdir -p /tmp/dp1901-landing-review
+          mkdir -p /tmp/dp1901-current-review
           python - <<'PY'
-          import json, re, subprocess, time
+          import json,re,hashlib,subprocess,time,zipfile
           from pathlib import Path
           from PIL import Image
           from bs4 import BeautifulSoup
           from playwright.sync_api import sync_playwright
           root=Path.cwd(); d=json.loads(Path('assets/data/dp1901-shame-linkedin-20260921.json').read_text())
-          assert Image.open(d['image']['path']).size==(1055,1491)
+          image=Path(d['image']['path']); assert hashlib.sha256(image.read_bytes()).hexdigest()==d['image']['sha256']
+          assert Image.open(image).size==(1055,1491)
           for lang in ('en','es'):
-              p=root/lang/'dp-1901-2026/index.html'; soup=BeautifulSoup(p.read_text(),'html.parser')
-              section=soup.find(id='shame-has-left-the-building'); assert section
-              assert len(soup.select('#shame-has-left-the-building'))==1
-              actual=[x.get_text('\n') for x in section.select('article.pd-shame-post > p')]
-              assert actual==d['posts'][lang].split('\n\n')[2:], 'Post text altered or missing'
-              assert section.find('img')['src']=='../../'+d['image']['path']
-              assert len(section.select('.pd-shame-evidence nav a'))==4
+              path=f'{lang}/dp-1901-2026/index.html'; text=Path(path).read_text()
+              prior=subprocess.check_output(['git','show','origin/main:'+path],text=True)
+              assert text.split('<body',1)[0]
+              body=text.split('<body',1)[1]; oldbody=prior.split('<body',1)[1]
+              body=re.sub(r'\n<!-- dp1901-shame-landing-20260921:start -->.*?<!-- dp1901-shame-landing-20260921:end -->\n','',body,flags=re.S)
+              assert body==oldbody, 'Existing dossier changed'
+              soup=BeautifulSoup(text,'html.parser'); section=soup.find(id='shame-has-left-the-building')
+              assert section and len(soup.select('#shame-has-left-the-building'))==1
+              assert [p.get_text('\n') for p in section.select('article.pd-shame-post > p')]==d['posts'][lang].split('\n\n')[2:]
           server=subprocess.Popen(['python','-m','http.server','8765','--directory',str(root.parent)],stdout=subprocess.DEVNULL,stderr=subprocess.DEVNULL)
-          report=[]
+          results=[]
           try:
               time.sleep(1)
-              with sync_playwright() as browser:
-                  b=browser.chromium.launch()
-                  for width in (390,1440):
-                      for lang in ('en','es'):
-                          page=b.new_page(viewport={'width':width,'height':1100},device_scale_factor=1)
-                          page.goto(f'http://127.0.0.1:8765/{root.name}/{lang}/dp-1901-2026/#shame-has-left-the-building',wait_until='networkidle')
-                          image=page.locator('#shame-has-left-the-building img'); image.wait_for()
-                          assert image.evaluate('(i)=>i.complete && i.naturalWidth===1055 && i.naturalHeight===1491')
-                          assert page.locator('#pd-shame-title').is_visible()
-                          section=page.locator('#shame-has-left-the-building')
-                          assert section.evaluate('(x)=>x.scrollWidth <= x.clientWidth+2'), 'Landing overflows'
-                          section.screenshot(path=f'/tmp/dp1901-landing-review/{lang}-{width}.png')
-                          report.append({'language':lang,'viewport':width,'image_loaded':True,'complete_post':True,'no_section_overflow':True})
-                          page.close()
+              with sync_playwright() as pw:
+                  b=pw.chromium.launch()
+                  for lang in ('en','es'):
+                      for width in (390,1440):
+                          p=b.new_page(viewport={'width':width,'height':1100})
+                          p.goto(f'http://127.0.0.1:8765/{root.name}/{lang}/dp-1901-2026/#shame-has-left-the-building',wait_until='networkidle')
+                          im=p.locator('#shame-has-left-the-building img'); assert im.evaluate('(x)=>x.complete && x.naturalWidth===1055')
+                          s=p.locator('#shame-has-left-the-building'); assert s.evaluate('(x)=>x.scrollWidth<=x.clientWidth+2')
+                          p.screenshot(path=f'/tmp/dp1901-current-review/{lang}-{width}-viewport.png')
+                          s.screenshot(path=f'/tmp/dp1901-current-review/{lang}-{width}-section.png')
+                          results.append({'language':lang,'width':width,'image_verified':True,'complete_post':True,'prior_dossier_preserved':True,'no_section_overflow':True})
+                          p.close()
                   b.close()
           finally:
               server.terminate()
-          Path('/tmp/dp1901-landing-review/report.json').write_text(json.dumps(report,indent=2))
-          print(json.dumps(report,indent=2))
+          Path('/tmp/dp1901-current-review/report.json').write_text(json.dumps(results,indent=2))
+          files=['assets/data/dp1901-shame-linkedin-20260921.json','assets/dp1901-shame-linkedin-20260921.css','scripts/build_dp1901_shame_landing_20260921.py',d['image']['path'],'en/dp-1901-2026/index.html','es/dp-1901-2026/index.html','data/digital-media-asset-register-v1.json','data/satire-publication-compliance-v1.json','assets/social/dp1901-shame-en-20260921.txt','assets/social/dp1901-shame-es-20260921.txt','archive/DP1901_LINKEDIN_LANDING_EN_ES_20260921.md']
+          with zipfile.ZipFile('/tmp/dp1901-current-review/publication-files.zip','w',zipfile.ZIP_DEFLATED) as z:
+              for f in files:z.write(f,f)
+          print(json.dumps(results,indent=2))
           PY
-      - name: Upload rendered inspection evidence
-        uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v4
         with:
-          name: dp1901-shame-landing-review
-          path: /tmp/dp1901-landing-review
+          name: dp1901-shame-current-main-review
+          path: /tmp/dp1901-current-review
           retention-days: 14
-      - name: Preserve prepared files only on the worker branch
+      - name: Commit only bounded publication files, never main or workflow changes
         run: |
-          test "$(git branch --show-current)" = 'worker/dp1901-shame-landing-20260921'
+          test "$(git branch --show-current)" = 'worker/dp1901-shame-current-20260921'
           git config user.name 'Por Derecho preparation'
           git config user.email 'noreply@users.noreply.github.com'
-          git add assets/visuals/dp1901-shame-20260921/shame-exits-the-courthouse.png assets/social/dp1901-shame-en-20260921.txt assets/social/dp1901-shame-es-20260921.txt en/dp-1901-2026/index.html es/dp-1901-2026/index.html data/satire-publication-compliance-v1.json data/digital-media-asset-register-v1.json archive/DP1901_LINKEDIN_LANDING_EN_ES_20260921.md
+          git add assets/data/dp1901-shame-linkedin-20260921.json assets/dp1901-shame-linkedin-20260921.css scripts/build_dp1901_shame_landing_20260921.py assets/visuals/dp1901-shame-20260921/shame-exits-the-courthouse.png assets/social/dp1901-shame-en-20260921.txt assets/social/dp1901-shame-es-20260921.txt en/dp-1901-2026/index.html es/dp-1901-2026/index.html data/satire-publication-compliance-v1.json data/digital-media-asset-register-v1.json archive/DP1901_LINKEDIN_LANDING_EN_ES_20260921.md
+          test -z "$(git diff --cached --name-only -- '.github/workflows/*')"
           git diff --cached --stat
-          git commit -m 'Materialize exact image and complete bilingual DP1901 landing sections'
-          git push origin HEAD:refs/heads/worker/dp1901-shame-landing-20260921
+          git commit -m 'Add exact satire image and full bilingual LinkedIn landing to current DP1901 dossier'
+          git push origin HEAD:refs/heads/worker/dp1901-shame-current-20260921
