@@ -628,6 +628,13 @@
           "drafts/fiscalia/2026-09-20_ANTICORRUPCION_DP1901_SCOPED_UPDATE_DRAFT.md"
         ]
       }
+    },
+    "cgpj_package_control": {
+      "locked_package": "drafts/cgpj/2026-09-19_DP1901_CGPJ_RESPONSE_PROPOSED.md",
+      "locked_package_state": "RESTORED_BYTE_IDENTICAL_TO_VALIDATED_19SEP_PACKAGE",
+      "addendum": "drafts/cgpj/2026-09-20_DP1901_CGPJ_CROSS_INSTITUTIONAL_ADDENDUM_DRAFT.md",
+      "addendum_state": "DRAFT_NOT_FILED",
+      "rule": "never mutate the hash-locked 19-Sep Markdown/PDF/DOCX package; later material travels as a separate addendum"
     }
   }
 }
