@@ -2,12 +2,12 @@
   "schema": "por-derecho.dp1901-direct-action-state.v1",
   "control_date": "2026-09-20",
   "control_timezone": "Atlantic/Canary",
-  "status": "11_REGISTERED_2_HELD",
+  "status": "13_REGISTERED_POST_FILING_FOLLOWUP_OPEN",
   "counts": {
     "candidates": 13,
-    "registered_actions": 11,
-    "held_not_filed": 2,
-    "registration_events": 12
+    "registered_actions": 13,
+    "held_not_filed": 0,
+    "registration_events": 14
   },
   "legal_effect": {
     "receipt_proves": "Presentation/registration metadata and, where expressly stated, listed attachment hashes.",
@@ -97,11 +97,74 @@
     },
     {
       "id": "A06",
-      "state": "HELD_NOT_FILED",
-      "destination": "National LAJ / Ministry route",
+      "state": "REGISTERED_RECEIPT_HASH_VERIFIED_HANDLING_PENDING",
+      "destination": "Secretaría General para la Innovación y Calidad del Servicio Público de Justicia",
       "rejected_registration": "REGAGE26e00073341477",
       "purpose": "National supervisory incorporation within lawful competence.",
-      "proof": "A prior attempt was rejected. The exact reason/history and a valid national administrative-review route remain unresolved; do not repeat."
+      "proof": "Receipt proves registration and all four attachment hashes: forty-five pages. The earlier rejected attempt remains disclosed. Substantive admission, incorporation, preservation and response remain unproved; this receipt does not prove registration of a separate earlier national alzada.",
+      "prior_pre_filing_snapshot": {
+        "id": "A06",
+        "state": "HELD_NOT_FILED",
+        "destination": "National LAJ / Ministry route",
+        "rejected_registration": "REGAGE26e00073341477",
+        "purpose": "National supervisory incorporation within lawful competence.",
+        "proof": "A prior attempt was rejected. The exact reason/history and a valid national administrative-review route remain unresolved; do not repeat."
+      },
+      "dir3": "E05077001",
+      "registration": "REGAGE26e00082058165",
+      "presented_at": "2026-09-20 21:19:02",
+      "registered_at": "2026-09-20 21:19:12",
+      "timestamps_as_printed_no_conversion": true,
+      "receipt_sha256": "554f1f48ef3d402bdf00836a1e846aafdd930c6518acd2641ebd6c5753ede3cf",
+      "receipt_custody": "Native official receipt preserved in the authorised private source system; recover by this action and registration reference. No private locator is published.",
+      "attachments": {
+        "count": 4,
+        "pages": 45,
+        "total_bytes": 13348195,
+        "receipt_hash_match": true,
+        "sha512": [
+          "5a1a865e753c43a8e549f006aa6cc87ae107b6841b3bb4144eba8f8a21f3efed65036c821da6cbfc3f2befa0206d9a01fde504138abcfaf32c29e24a96e8f2e5",
+          "0eee6b447d646dacc9d12964df6a3ea8b37fc716a91ad336dbcc26c9f4b57311e6c4e4f77a537b3c0bac98360ffa4b3a3c62ffe1e2dd54e59f854cfd33422b24",
+          "f2fe6c24a5aa1e87db2eb562a7b6f03319bd3b202d4cfc639b339565f1d1e45fea09f4342ada04c39c49a7fc6ff794677ac874dddc4affb003c95a49f598c523",
+          "eefb8ce3a92952544aca907c6086274782e798eb01f36e2aa72aa4e8aade56c4124616e5acd33c7abf569072592eeed16d82fdfd8dbdbfcc3fc92c739536e613"
+        ],
+        "items": [
+          {
+            "ordinal": 1,
+            "bytes": 88416,
+            "pages": 7,
+            "sha256": "9905a171e0ca25777a6a4d09fa5930bbe1178a42a61af5a6a5fd6abe7debe585",
+            "sha512": "5a1a865e753c43a8e549f006aa6cc87ae107b6841b3bb4144eba8f8a21f3efed65036c821da6cbfc3f2befa0206d9a01fde504138abcfaf32c29e24a96e8f2e5",
+            "custody": "Private exact submitted binary; use action, registration and hash to resolve through the controlled custody manifest."
+          },
+          {
+            "ordinal": 2,
+            "bytes": 3391369,
+            "pages": 21,
+            "sha256": "62851eb13e3820221e058c00690387a8a55d524b7660e1f8992bfd78b4b9ab2b",
+            "sha512": "0eee6b447d646dacc9d12964df6a3ea8b37fc716a91ad336dbcc26c9f4b57311e6c4e4f77a537b3c0bac98360ffa4b3a3c62ffe1e2dd54e59f854cfd33422b24",
+            "custody": "Private exact submitted binary; use action, registration and hash to resolve through the controlled custody manifest."
+          },
+          {
+            "ordinal": 3,
+            "bytes": 7300355,
+            "pages": 10,
+            "sha256": "0ab281c789c7af912994b732242c594f4eeb47b58dac9034d3f7373a226a1cd7",
+            "sha512": "f2fe6c24a5aa1e87db2eb562a7b6f03319bd3b202d4cfc639b339565f1d1e45fea09f4342ada04c39c49a7fc6ff794677ac874dddc4affb003c95a49f598c523",
+            "custody": "Private exact submitted binary; use action, registration and hash to resolve through the controlled custody manifest."
+          },
+          {
+            "ordinal": 4,
+            "bytes": 2568055,
+            "pages": 7,
+            "sha256": "bc003ba474a913b020aebfa8d43a704abf61839a547f70941016f5ed8b98b794",
+            "sha512": "eefb8ce3a92952544aca907c6086274782e798eb01f36e2aa72aa4e8aade56c4124616e5acd33c7abf569072592eeed16d82fdfd8dbdbfcc3fc92c739536e613",
+            "custody": "Private exact submitted binary; use action, registration and hash to resolve through the controlled custody manifest."
+          }
+        ],
+        "illustration_count": 6
+      },
+      "do_not_repeat_whole_filing": true
     },
     {
       "id": "A07",
@@ -202,10 +265,97 @@
     },
     {
       "id": "A13",
-      "state": "HELD_NOT_FILED",
+      "state": "REGISTERED_RECEIPT_HASH_VERIFIED_FORMALISATION_ADMISSION_PENDING",
       "destination": "Fiscalía Anticorrupción",
       "purpose": "Status/subsanation of the existing communication, competent examination of the economic module and preservation.",
-      "proof": "Actual signature/formalisation/admission in Exp.Gub.352/2025 and the Article 266 channel restriction remain unresolved; do not file until reconciled."
+      "proof": "Receipt proves registration and all five attachment hashes: fifty pages. Formalisation, admission, onward receipt, incorporation and preservation remain unproved. The existing signature/channel questions continue as post-filing follow-up and do not erase this registration.",
+      "prior_pre_filing_snapshot": {
+        "id": "A13",
+        "state": "HELD_NOT_FILED",
+        "destination": "Fiscalía Anticorrupción",
+        "purpose": "Status/subsanation of the existing communication, competent examination of the economic module and preservation.",
+        "proof": "Actual signature/formalisation/admission in Exp.Gub.352/2025 and the Article 266 channel restriction remain unresolved; do not file until reconciled."
+      },
+      "dir3": "J00004991",
+      "registration": "REGAGE26e00082060401",
+      "presented_at": "2026-09-20 22:07:33",
+      "registered_at": "2026-09-20 22:07:42",
+      "timestamps_as_printed_no_conversion": true,
+      "receipt_sha256": "2b120710b656d69981db1c632ad22b395d6a8e57288a8a5369f36a6261655d11",
+      "receipt_custody": "Native official receipt preserved in the authorised private source system; recover by this action and registration reference. No private locator is published.",
+      "attachments": {
+        "count": 5,
+        "pages": 50,
+        "total_bytes": 13811556,
+        "receipt_hash_match": true,
+        "sha512": [
+          "d7be223ce7a6078a98611bf7a955e31001950b15be69550d1df5e680c1ab2f160b5577da3b74811b47a5bc8d50c6d96b7233bd0be489a0763385bda9143a243d",
+          "904b6596b70e31e3dadef462728519b3bcd5f54ace5cc7d28acb3e848d2928cdbde87c457a4ce2bee97dcf55c8c4ca37c8db991c240563052c1e3a99b859bf4f",
+          "eecadbe8dbc4a8c902033ae0cda24c5cc05a5a4119a393646270cc8218107f4f76961ae302aa52713104d65d1ea46197b534312ddec9e2e4a5222f4decd781a5",
+          "7042c07081a616b18639ac15744657c2d2cae17332bc0d18a96515264d493fb4759b9bec04e60aa4bfb0a5607c80235d279d16d6ecd0fe7d58821f40de81649d",
+          "237b7fb035e8db6a2922019465b9eafde9b45a9bd0e46eeea82d81b65a8e8eafb95dc9754470d06f5b5cf0cedc977e656b2b323122ca0ba71036332daa68ae28"
+        ],
+        "items": [
+          {
+            "ordinal": 1,
+            "bytes": 3884258,
+            "pages": 9,
+            "sha256": "1fbbcd416613ca913ded64c736be2664b8aa691094aba73da1e09d3033bf6ce8",
+            "sha512": "d7be223ce7a6078a98611bf7a955e31001950b15be69550d1df5e680c1ab2f160b5577da3b74811b47a5bc8d50c6d96b7233bd0be489a0763385bda9143a243d",
+            "custody": "Private exact submitted binary; use action, registration and hash to resolve through the controlled custody manifest."
+          },
+          {
+            "ordinal": 2,
+            "bytes": 94873,
+            "pages": 9,
+            "sha256": "f54e55233c201482402ce48b6eb296eff6e73f973c7bb69993c1b0ba92f906da",
+            "sha512": "904b6596b70e31e3dadef462728519b3bcd5f54ace5cc7d28acb3e848d2928cdbde87c457a4ce2bee97dcf55c8c4ca37c8db991c240563052c1e3a99b859bf4f",
+            "custody": "Private exact submitted binary; use action, registration and hash to resolve through the controlled custody manifest."
+          },
+          {
+            "ordinal": 3,
+            "bytes": 2346440,
+            "pages": 15,
+            "sha256": "17909652d05590b1ca047471dfe6d322d86148ceeb6c1eacc97db41cfb6c85d0",
+            "sha512": "eecadbe8dbc4a8c902033ae0cda24c5cc05a5a4119a393646270cc8218107f4f76961ae302aa52713104d65d1ea46197b534312ddec9e2e4a5222f4decd781a5",
+            "custody": "Private exact submitted binary; use action, registration and hash to resolve through the controlled custody manifest."
+          },
+          {
+            "ordinal": 4,
+            "bytes": 2904784,
+            "pages": 7,
+            "sha256": "11940ff214f1f29b20ee02e423fa9a59bcec39b0a028d455b33b312491205d74",
+            "sha512": "7042c07081a616b18639ac15744657c2d2cae17332bc0d18a96515264d493fb4759b9bec04e60aa4bfb0a5607c80235d279d16d6ecd0fe7d58821f40de81649d",
+            "custody": "Private exact submitted binary; use action, registration and hash to resolve through the controlled custody manifest."
+          },
+          {
+            "ordinal": 5,
+            "bytes": 4581201,
+            "pages": 10,
+            "sha256": "aebfa4bdceaf8fee0f50ec86efa705dc069879e0b8348c718b08c6e55546488c",
+            "sha512": "237b7fb035e8db6a2922019465b9eafde9b45a9bd0e46eeea82d81b65a8e8eafb95dc9754470d06f5b5cf0cedc977e656b2b323122ca0ba71036332daa68ae28",
+            "custody": "Private exact submitted binary; use action, registration and hash to resolve through the controlled custody manifest."
+          }
+        ],
+        "illustration_count": 8
+      },
+      "do_not_repeat_whole_filing": true,
+      "existing_reference": "Exp.Gub.352/2025",
+      "formalisation_resolved": false,
+      "admission_proved": false,
+      "prior_hold_now_post_filing_followup": true
     }
-  ]
+  ],
+  "reconciliation": {
+    "prior_public_base_sha": "0029415c77035785ea65ecf71655f96843ed4036",
+    "prior_registered_actions": 11,
+    "newly_receipt_reconciled_actions": [
+      "A06",
+      "A13"
+    ],
+    "working_census_complete": true,
+    "all_possible_historical_actions_exhaustive": false,
+    "post_filing_followups_remain": true,
+    "rule": "This completes registration of the thirteen working candidates only. It does not prove admission, incorporation, substantive handling, preservation or completion of separate legal routes."
+  }
 }
