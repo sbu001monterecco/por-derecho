@@ -10,13 +10,19 @@ Repository state: GitHub additive package; GitLab blocked/read-only comparator; 
 | FGE/Inspección cover | E.G.745/Inspección | DRAFT / NOT FILED | formal registration and association receipt |
 | E.G.745 successor | FGE/Inspección | DRAFT / NOT FILED | exact bytes, annex inventory, receipt |
 | preservation/production requests | destination-specific | DRAFT / NOT FILED | signed PDF and official receipt |
-| GitHub implementation | PR #1643 | OPEN PR / NOT MERGED | review, CI, merge, deployment |
+| GitHub implementation | PR #1653 integration lane | OPEN / INTEGRATION ACTIVE | review, CI, merge, deployment |
 | GitLab reconciliation | blocked account | QUEUED | restore access; reconcile from newer GitHub |
 | Gmail copies | supplementary only | NOT SENT | formal route first; separate send authorization |
 
 No “filed”, “submitted”, “incorporated” or “served” claim without exact bytes, hash, annex inventory, destination, official receipt, date/time and association evidence where relevant.
 
 The three outputs remain distinct: DP1901 court remedy; Fiscal Superior territorial attribution/preservation; E.G.745 wider accountability.
+
+## 20-September Explain-First implementation
+
+Every personally controlled output in this programme must now begin with the mandatory reader-first summary governed by .github/governance/EXPLAIN_FIRST_FILING_PROTOCOL_20SEP2026.md. The summary must state the immediate problem, minimum sequence, decisive distinction/contradiction, why the recipient is concerned, minimum documentary anchors and finite requested action before the longer chronology or legal/evidential architecture.
+
+For DP1901 / Fiscal Superior / E.G.745, the first-read problem is institutional and finite: whether the identified allegations/evidence and institution-held questions of routing, authorship, competence and source corpus were actually examined by the competent authority. Routing, archive, omission, adverse action or unresolved production gaps are not by themselves proof of institutional wrongdoing or criminal intent.
 
 ## 19-September instruction — responses by 20 September evening
 
