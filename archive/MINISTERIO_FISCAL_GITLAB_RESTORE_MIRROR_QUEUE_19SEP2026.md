@@ -26,6 +26,9 @@ GitLab `main` remains the canonical Por Derecho repository when it is accessible
 - `archive/MINISTERIO_FISCAL_THREAD_PRESERVATION_MANIFEST_19SEP2026.json`
 - hub navigation updates pointing to the new register
 - any subsequent corrections committed to the same GitHub lineage before GitLab restoration
+- .github/governance/EXPLAIN_FIRST_FILING_PROTOCOL_20SEP2026.md
+- templates/EXPLAIN_FIRST_FILING_SUMMARY_TEMPLATE_ES_EN.md
+- bootstrap/agent references that make Explain-First mandatory for new and materially revised filings
 
 ## Canonical identity rules to preserve
 
@@ -38,6 +41,10 @@ GitLab `main` remains the canonical Por Derecho repository when it is accessible
 ## Privacy / source rule
 
 Provider message IDs, Gmail thread IDs and private custody locators stay outside the public register. Public pages may identify the existence, class, date and proof function of a private source without exposing the provider locator.
+
+## Explain-First restoration requirement
+
+The GitLab restoration pass must make the Explain-First rule discoverable from the GitLab bootstrap/agent controls after reconciling against then-current GitLab main. Do not blind-copy GitHub. Preserve newer GitLab governance, port the net rule/template delta, run the applicable validators and record the resulting GitLab commit/MR/pipeline identities.
 
 ## Completion condition
 
