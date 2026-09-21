@@ -1,5 +1,5 @@
 window.PD_RPL3304_PUBLIC_SIDECAR = {
-  version: "1.0.0",
+  version: "1.1.0",
   documentId: "C36-SPECIALIST-R33",
   pages: 22,
   pdf: "/por-derecho/evidence/insolvency-36-2012/concurso-autos/pdfs/R33-ac-oposicion-apelacion-lpb-septiembre-2026.pdf",
@@ -55,11 +55,13 @@ window.PD_RPL3304_PUBLIC_SIDECAR = {
     },
     {
       id:"p05-counsel-generalisation", page:5, category:"NARROWING", status:"PARTIAL",
-      title:{es:"Una renuncia documentada no prueba por sí sola el motivo de todos los demás letrados",en:"One documented withdrawal does not by itself prove why every other lawyer ceased acting"},
-      quote:{es:"«Cabe razonablemente sospechar… es también razonable pensar… optaron por apartarse…»",en:"“It is reasonable to suspect… it is also reasonable to think… they chose to withdraw…”"},
-      commentary:{es:"El propio lenguaje es inferencial. La prueba correcta es letrado por letrado: fecha, motivo contemporáneo, alcance y qué dijo exactamente cada profesional que podía o no podía sostener.",en:"The wording is expressly inferential. The proper test is lawyer by lawyer: date, contemporaneous reason, scope, and what each professional actually said could or could not be maintained."},
-      boundary:{es:"No convertir la renuncia de 2020 en una explicación colectiva sin fuentes contemporáneas para los demás cambios.",en:"Do not turn the 2020 withdrawal into a collective explanation without contemporaneous sources for the other changes."},
+      title:{es:"La renuncia que el AC cita es la de Joaquín Ruiz de Infante; una fuente no explica a todos los demás letrados",en:"The withdrawal cited by the AC is Joaquín Ruiz de Infante’s; one source does not explain every other lawyer"},
+      quote:{es:"«…reitera las disculpas… al Administrador Concursal…»",en:"“…reiterates the apologies… to the Insolvency Administrator…”"},
+      commentary:{es:"El escrito judicial subyacente de 21/09/2020 identifica y firma a Joaquín Ruiz de Infante Abella. Registros contemporáneos muestran además colaboración con Armando Betancor, de despacho distinto: instrucciones canalizadas por Armando, borradores con propuesta de firma de Joaquín y la renuncia de Joaquín remitida con Armando en copia. El propio lenguaje del AC sobre los demás profesionales sigue siendo inferencial.",en:"The underlying court filing dated 21 September 2020 identifies and is signed by Joaquín Ruiz de Infante Abella. Contemporaneous records also show collaboration with Armando Betancor, from a separate firm: instructions channelled through Armando, drafts proposing Joaquín’s signature, and Joaquín’s withdrawal copied to Armando. The AC’s language about the other professionals remains inferential."},
+      boundary:{es:"Colaboración no significa identidad de despacho; la disculpa de Joaquín no adjudica el fondo ni demuestra el motivo de todos los demás cambios de abogado.",en:"Collaboration does not mean the same law firm; Joaquín’s apology does not adjudicate the merits or prove the reason for every other change of counsel."},
       links:[
+        {es:"Pág. 5 · Joaquín ↔ Armando",en:"Page 5 · Joaquín ↔ Armando",hrefEs:"/por-derecho/es/concurso-36-2012-oposicion-ac-apelacion-lpb-septiembre-2026/#joaquin-armando-2020",hrefEn:"/por-derecho/en/insolvency-36-2012-ac-opposition-lpb-appeal-september-2026/"},
+        {es:"Cronología de separación 2012–2026",en:"Removal chronology 2012–2026",hrefEs:"/por-derecho/es/concurso-36-2012-separacion-administrador-concursal-rpl-3304-2025/#historia-separacion",hrefEn:"/por-derecho/en/insolvency-36-2012-administrator-removal-rpl-3304-2025/"},
         {es:"Continuidad de defensa",en:"Counsel defence continuity",hrefEs:"/por-derecho/es/continuidad-defensa-letrados/",hrefEn:"/por-derecho/en/counsel-defence-continuity/"}
       ]
     },
