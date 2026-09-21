@@ -2,7 +2,7 @@
   "schema": "por-derecho.publication-runtime.v1",
   "fence": 25,
   "owner": "1688:99d197cb83538d783599f839be7138e22088b3e2",
-  "phase": "DEPLOYED",
+  "phase": "VERIFIED_FOR_SCOPE",
   "pr": 1688,
   "base_sha": "2e2e0aaf7ca83c4d3cf91322d16f71919f7bc1a0",
   "candidate_sha": "99d197cb83538d783599f839be7138e22088b3e2",
@@ -1555,6 +1555,152 @@
       ],
       "pending": [],
       "scope": "Changed readable public resources plus ES/EN entrypoints. Browser checks are separate premerge evidence; not a whole-site or legal-proof certificate."
+    },
+    {
+      "pr": 1688,
+      "candidate_sha": "99d197cb83538d783599f839be7138e22088b3e2",
+      "at": "2026-09-21T06:13:48.234772Z",
+      "merge_sha": "aa28a06c99e2ccca6f847467e657bc816249340b",
+      "pages_run_id": 35567244363,
+      "exact_matches": [
+        {
+          "path": "assets/data/dp1901-direct-action-state-20260920.json",
+          "sha256": "7ced1383f47c4a9106c910192f4b2e1b46605c7ea833287d143712248e5613d8",
+          "bytes": 20673
+        },
+        {
+          "path": "assets/data/dp1901-eg745-cross-institutional-matrix-20260920.json",
+          "sha256": "8798600277e3fe8770eb966a4e47734d9c392b54920056b63b69824abfba50cb",
+          "bytes": 3956
+        },
+        {
+          "path": "assets/data/eg745-final-artifact-fingerprints-20260920.json",
+          "sha256": "c02bcad8d3ca1b68a29615e1241c702fb050fcc4c14cc5206a69a5606e258205",
+          "bytes": 27302
+        },
+        {
+          "path": "assets/data/eg745-final-delivery-control-20260920.json",
+          "sha256": "b48b5c37f252c72050f7d067e699e8dbb2036fd91941d7a49274f53c547dfe96",
+          "bytes": 38551
+        },
+        {
+          "path": "assets/data/eg745-final-illustration-control-20260920.json",
+          "sha256": "2db2a4c2a134361d94f1dee0315b39a0444d5c5ac8aaaf23cfee34babf6e4861",
+          "bytes": 17229
+        },
+        {
+          "path": "assets/data/fiscalia-proceedings-interconnectivity-v1.json",
+          "sha256": "83d5b82ebe9431219faee1e4b8bfcd9ef46b7a38c1ffc24440338a7e7d7a8764",
+          "bytes": 679330
+        },
+        {
+          "path": "assets/data/institutional-communications-register-v1.json",
+          "sha256": "236e3336b35df04525c5cc4e5abc4a3fa969f44ebca1f1323797ae3b7b86260a",
+          "bytes": 1809933
+        },
+        {
+          "path": "assets/data/ministerio-fiscal-office-digitisation-20260919.json",
+          "sha256": "751c2599cd010825ef3538f1b8267bfc480c4173468f0f9aa0926a37dd96ad97",
+          "bytes": 8203
+        },
+        {
+          "path": "assets/data/ministerio-fiscal-pdf-room-20260918.json",
+          "sha256": "8cc78efbdb03ea8f2350791db293f7c66c0d32c38e3b1d308ad7593996b37382",
+          "bytes": 17556
+        },
+        {
+          "path": "assets/data/redsara-age-filings-register-v1.json",
+          "sha256": "f9ecaf6a79703690a0ddb45a9462f9bbcba7e7e11789d3db2e003c5ea89af92a",
+          "bytes": 960610
+        },
+        {
+          "path": "en/dp-1901-2026/index.html",
+          "sha256": "5a99afb2136a1939fdead482df938b4cabdfac230e2d88e9004f42529c981400",
+          "bytes": 22949
+        },
+        {
+          "path": "en/index.html",
+          "sha256": "c048d21d4c94e3cb6896e4c74d69a9ab73f84c3426d40fe815370b40fe1ba109",
+          "bytes": 228197
+        },
+        {
+          "path": "en/public-prosecution-inspection-exp-gub-745-2026/index.html",
+          "sha256": "98d1447965529022394b61e6c5d48ea6ff4c7a12760a01f757e361d114b9e630",
+          "bytes": 30435
+        },
+        {
+          "path": "en/public-prosecution-office-coverage/index.html",
+          "sha256": "a3165d0f58c532b4519a12b524f95b03e95ad0f1e96ba1033e6e10b2f5db100b",
+          "bytes": 8644
+        },
+        {
+          "path": "en/public-prosecution-pdf-document-room/index.html",
+          "sha256": "710137a3caa01df58aa281ceab0c9f427139048be2b0c9f80c605c640a7b7d03",
+          "bytes": 17156
+        },
+        {
+          "path": "es/dp-1901-2026/index.html",
+          "sha256": "4828a974fa8e316ecf5bf8f3898f91cab9d3058a2db1ea788142b1422f84f712",
+          "bytes": 31577
+        },
+        {
+          "path": "es/fiscalia-inspeccion-exp-gub-745-2026/index.html",
+          "sha256": "1d61bf449bd7029e8670dfc5748145dcdb6a6d6ac772ae187406394c3548b901",
+          "bytes": 32277
+        },
+        {
+          "path": "es/index.html",
+          "sha256": "48a7ebf0751867525f140cf3e70c34f8fe22a1c6edd7aeb0b3178e788da95dda",
+          "bytes": 237351
+        },
+        {
+          "path": "es/ministerio-fiscal-cobertura-oficinas/index.html",
+          "sha256": "034381fa1a6c07771f1d6015308b05ef1b4ff60a7a6a4cc8773b4e5cd1e23d69",
+          "bytes": 8700
+        },
+        {
+          "path": "es/ministerio-fiscal-documentos-pdf/index.html",
+          "sha256": "a9c1a9e02c749002e3e71291e87c8f43ea9f52153b8e03cccfffedd22559aaa3",
+          "bytes": 17472
+        },
+        {
+          "path": "ops/2026-09-19_DP1901_EG745_FILING_STATUS_REGISTER.md",
+          "sha256": "b1902d368389c087f8e4649b6dd5f170fd00c979643cde86ad8c1dbde683fdd3",
+          "bytes": 7441
+        },
+        {
+          "path": "ops/INSTITUTIONAL_COMMUNICATIONS_SCAN_CHECKPOINT.json",
+          "sha256": "2a62113d91cd10c99bca2d84015d000d3c6cb0560ac75f43de6daa642de4d6b9",
+          "bytes": 6662
+        },
+        {
+          "path": "ops/cajasiete-accountability-register-input-20260918.json",
+          "sha256": "2e7d8e643056610869652016a8925f4b2964735af99681c9c358036c20297589",
+          "bytes": 9566
+        },
+        {
+          "path": "ops/dp1901-eg745-registration-input-20260921.json",
+          "sha256": "0c5954a3c8bddde6531808dc3a9d648dabec2955d3614e1b9ea482c86f9be9ea",
+          "bytes": 34858
+        },
+        {
+          "path": "ops/regage-status-export-input-20260921.json",
+          "sha256": "e3a78582c79a6d020fa5707f2f9cda40e33a4b7ce936c8d8a3279fcb74c9cd6a",
+          "bytes": 135317
+        },
+        {
+          "path": "publication-manifests/dp1901-eg745-complete-registrations-20260921.json",
+          "sha256": "f1ced82988f52e07b84946829c1223a89ab38739419cb8bac752d55b247b715e",
+          "bytes": 8835
+        },
+        {
+          "path": "publication-manifests/eg745-redsara-revision-worker-20260921.json",
+          "sha256": "0c39d5e30cd741f5eda422ba841d88ed426f72cb07556692271973060ea85cd7",
+          "bytes": 2500
+        }
+      ],
+      "pending": [],
+      "scope": "Changed readable public resources plus ES/EN entrypoints. Browser checks are separate premerge evidence; not a whole-site or legal-proof certificate."
     }
   ],
   "checkpoints": [
@@ -1597,7 +1743,154 @@
         "pages_run_id": 35567244363,
         "merge_sha": "aa28a06c99e2ccca6f847467e657bc816249340b"
       }
+    },
+    {
+      "phase": "VERIFIED_FOR_SCOPE",
+      "at": "2026-09-21T06:13:48.234736Z",
+      "evidence": {
+        "merge_sha": "aa28a06c99e2ccca6f847467e657bc816249340b",
+        "pages_run_id": 35567244363,
+        "exact_matches": [
+          {
+            "path": "assets/data/dp1901-direct-action-state-20260920.json",
+            "sha256": "7ced1383f47c4a9106c910192f4b2e1b46605c7ea833287d143712248e5613d8",
+            "bytes": 20673
+          },
+          {
+            "path": "assets/data/dp1901-eg745-cross-institutional-matrix-20260920.json",
+            "sha256": "8798600277e3fe8770eb966a4e47734d9c392b54920056b63b69824abfba50cb",
+            "bytes": 3956
+          },
+          {
+            "path": "assets/data/eg745-final-artifact-fingerprints-20260920.json",
+            "sha256": "c02bcad8d3ca1b68a29615e1241c702fb050fcc4c14cc5206a69a5606e258205",
+            "bytes": 27302
+          },
+          {
+            "path": "assets/data/eg745-final-delivery-control-20260920.json",
+            "sha256": "b48b5c37f252c72050f7d067e699e8dbb2036fd91941d7a49274f53c547dfe96",
+            "bytes": 38551
+          },
+          {
+            "path": "assets/data/eg745-final-illustration-control-20260920.json",
+            "sha256": "2db2a4c2a134361d94f1dee0315b39a0444d5c5ac8aaaf23cfee34babf6e4861",
+            "bytes": 17229
+          },
+          {
+            "path": "assets/data/fiscalia-proceedings-interconnectivity-v1.json",
+            "sha256": "83d5b82ebe9431219faee1e4b8bfcd9ef46b7a38c1ffc24440338a7e7d7a8764",
+            "bytes": 679330
+          },
+          {
+            "path": "assets/data/institutional-communications-register-v1.json",
+            "sha256": "236e3336b35df04525c5cc4e5abc4a3fa969f44ebca1f1323797ae3b7b86260a",
+            "bytes": 1809933
+          },
+          {
+            "path": "assets/data/ministerio-fiscal-office-digitisation-20260919.json",
+            "sha256": "751c2599cd010825ef3538f1b8267bfc480c4173468f0f9aa0926a37dd96ad97",
+            "bytes": 8203
+          },
+          {
+            "path": "assets/data/ministerio-fiscal-pdf-room-20260918.json",
+            "sha256": "8cc78efbdb03ea8f2350791db293f7c66c0d32c38e3b1d308ad7593996b37382",
+            "bytes": 17556
+          },
+          {
+            "path": "assets/data/redsara-age-filings-register-v1.json",
+            "sha256": "f9ecaf6a79703690a0ddb45a9462f9bbcba7e7e11789d3db2e003c5ea89af92a",
+            "bytes": 960610
+          },
+          {
+            "path": "en/dp-1901-2026/index.html",
+            "sha256": "5a99afb2136a1939fdead482df938b4cabdfac230e2d88e9004f42529c981400",
+            "bytes": 22949
+          },
+          {
+            "path": "en/index.html",
+            "sha256": "c048d21d4c94e3cb6896e4c74d69a9ab73f84c3426d40fe815370b40fe1ba109",
+            "bytes": 228197
+          },
+          {
+            "path": "en/public-prosecution-inspection-exp-gub-745-2026/index.html",
+            "sha256": "98d1447965529022394b61e6c5d48ea6ff4c7a12760a01f757e361d114b9e630",
+            "bytes": 30435
+          },
+          {
+            "path": "en/public-prosecution-office-coverage/index.html",
+            "sha256": "a3165d0f58c532b4519a12b524f95b03e95ad0f1e96ba1033e6e10b2f5db100b",
+            "bytes": 8644
+          },
+          {
+            "path": "en/public-prosecution-pdf-document-room/index.html",
+            "sha256": "710137a3caa01df58aa281ceab0c9f427139048be2b0c9f80c605c640a7b7d03",
+            "bytes": 17156
+          },
+          {
+            "path": "es/dp-1901-2026/index.html",
+            "sha256": "4828a974fa8e316ecf5bf8f3898f91cab9d3058a2db1ea788142b1422f84f712",
+            "bytes": 31577
+          },
+          {
+            "path": "es/fiscalia-inspeccion-exp-gub-745-2026/index.html",
+            "sha256": "1d61bf449bd7029e8670dfc5748145dcdb6a6d6ac772ae187406394c3548b901",
+            "bytes": 32277
+          },
+          {
+            "path": "es/index.html",
+            "sha256": "48a7ebf0751867525f140cf3e70c34f8fe22a1c6edd7aeb0b3178e788da95dda",
+            "bytes": 237351
+          },
+          {
+            "path": "es/ministerio-fiscal-cobertura-oficinas/index.html",
+            "sha256": "034381fa1a6c07771f1d6015308b05ef1b4ff60a7a6a4cc8773b4e5cd1e23d69",
+            "bytes": 8700
+          },
+          {
+            "path": "es/ministerio-fiscal-documentos-pdf/index.html",
+            "sha256": "a9c1a9e02c749002e3e71291e87c8f43ea9f52153b8e03cccfffedd22559aaa3",
+            "bytes": 17472
+          },
+          {
+            "path": "ops/2026-09-19_DP1901_EG745_FILING_STATUS_REGISTER.md",
+            "sha256": "b1902d368389c087f8e4649b6dd5f170fd00c979643cde86ad8c1dbde683fdd3",
+            "bytes": 7441
+          },
+          {
+            "path": "ops/INSTITUTIONAL_COMMUNICATIONS_SCAN_CHECKPOINT.json",
+            "sha256": "2a62113d91cd10c99bca2d84015d000d3c6cb0560ac75f43de6daa642de4d6b9",
+            "bytes": 6662
+          },
+          {
+            "path": "ops/cajasiete-accountability-register-input-20260918.json",
+            "sha256": "2e7d8e643056610869652016a8925f4b2964735af99681c9c358036c20297589",
+            "bytes": 9566
+          },
+          {
+            "path": "ops/dp1901-eg745-registration-input-20260921.json",
+            "sha256": "0c5954a3c8bddde6531808dc3a9d648dabec2955d3614e1b9ea482c86f9be9ea",
+            "bytes": 34858
+          },
+          {
+            "path": "ops/regage-status-export-input-20260921.json",
+            "sha256": "e3a78582c79a6d020fa5707f2f9cda40e33a4b7ce936c8d8a3279fcb74c9cd6a",
+            "bytes": 135317
+          },
+          {
+            "path": "publication-manifests/dp1901-eg745-complete-registrations-20260921.json",
+            "sha256": "f1ced82988f52e07b84946829c1223a89ab38739419cb8bac752d55b247b715e",
+            "bytes": 8835
+          },
+          {
+            "path": "publication-manifests/eg745-redsara-revision-worker-20260921.json",
+            "sha256": "0c39d5e30cd741f5eda422ba841d88ed426f72cb07556692271973060ea85cd7",
+            "bytes": 2500
+          }
+        ],
+        "pending": [],
+        "scope": "Changed readable public resources plus ES/EN entrypoints. Browser checks are separate premerge evidence; not a whole-site or legal-proof certificate."
+      }
     }
   ],
-  "updated_at": "2026-09-21T06:13:32.085975Z"
+  "updated_at": "2026-09-21T06:13:48.234736Z"
 }
