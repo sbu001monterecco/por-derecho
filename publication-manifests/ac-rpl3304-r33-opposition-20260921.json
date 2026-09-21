@@ -1,9 +1,20 @@
 {
-  "schema": "por-derecho.publication-manifest.v1",
-  "control_id": "PD-AC-RPL3304-R33-20260921",
-  "title": "RPL 3304/2025 — Insolvency Administrator opposition — dedicated source page and forensic/prosecutorial checkpoint",
+  "schema": "por-derecho.publication-state.v1",
+  "schema_version": "1.0.0",
+  "publication_id": "PD-AC-RPL3304-R33-20260921",
   "control_date": "2026-09-21",
+  "owner": "Por Derecho / Project Sun Rock",
+  "current_state": "PR_OPEN",
+  "expected_routes": {
+    "es": [
+      "/es/concurso-36-2012-oposicion-ac-apelacion-lpb-septiembre-2026/"
+    ],
+    "en": [
+      "/en/insolvency-36-2012-ac-opposition-lpb-appeal-september-2026/"
+    ]
+  },
   "predecessor_pr": 1696,
+  "pull_request": 1725,
   "source": {
     "id": "C36-SPECIALIST-R33",
     "date": "2026-09-14",
@@ -38,10 +49,6 @@
     "pinpoint_contradiction_or_narrowing_relations": 4,
     "rule": "No automated lie, intent or criminal-guilt finding; private JSON and locators remain outside public Git."
   },
-  "routes": {
-    "es": "/es/concurso-36-2012-oposicion-ac-apelacion-lpb-septiembre-2026/",
-    "en": "/en/insolvency-36-2012-ac-opposition-lpb-appeal-september-2026/"
-  },
   "publication_boundaries": [
     "The filing proves what the Insolvency Administrator states and what source material he reproduces; it does not prove every characterization true.",
     "Contradiction or narrowing does not by itself establish knowing falsity, intent, coordination or criminal responsibility.",
@@ -50,11 +57,12 @@
   ],
   "integrated_surfaces": [
     "Spanish and English dedicated R33 pages",
-    "Spanish and English judicial writings corpus",
     "Spanish and English insolvency-administrator/removal dossiers",
     "Spanish and English PwC evidence-custodian crosslinks",
-    "canonical Concurso specialist and complete-record JSON",
+    "R33 controlled extracts",
     "site sitemap"
   ],
-  "state": "INTEGRATION_CANDIDATE_NOT_MERGED_NOT_DEPLOYED"
+  "frozen_corpus_boundary": "The Aug-23 fixed 50-specialist / 127-complete-record catalogues remain unchanged; R33 is a post-cutoff additive source page, not silently inserted into those frozen denominators.",
+  "authority": "Gil Marer instruction: take over and do it now.",
+  "state_note": "Open current-main-based PR; not merged, deployed or live-verified."
 }
