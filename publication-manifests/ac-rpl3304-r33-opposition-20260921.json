@@ -4,7 +4,7 @@
   "publication_id": "PD-AC-RPL3304-R33-20260921",
   "control_date": "2026-09-21",
   "owner": "Por Derecho / Project Sun Rock",
-  "current_state": "PR_OPEN",
+  "current_state": "LIVE_VERIFIED",
   "expected_routes": {
     "es": [
       "es/concurso-36-2012-oposicion-ac-apelacion-lpb-septiembre-2026/index.html"
@@ -14,7 +14,7 @@
     ]
   },
   "predecessor_pr": 1696,
-  "pull_request": 1725,
+  "pull_request": 1732,
   "source": {
     "id": "C36-SPECIALIST-R33",
     "date": "2026-09-14",
@@ -63,7 +63,7 @@
   ],
   "frozen_corpus_boundary": "The Aug-23 fixed 50-specialist / 127-complete-record catalogues remain unchanged; R33 is a post-cutoff additive source page, not silently inserted into those frozen denominators.",
   "authority": "Gil Marer instruction: take over and do it now.",
-  "state_note": "Open current-main-based PR; not merged, deployed or live-verified.",
+  "state_note": "Source-page PR #1725 and split forensic-sidecar PR #1732 are merged. The current public R33 pages are deployed and controller-verified for scope. Current main may subsequently advance through unrelated releases.",
   "controlled_extract_path": "evidence/insolvency-36-2012/rpl-3304-2025/R33-oposicion-ac-apelacion-lpb-septiembre-2026-controlled-extracts.md",
   "sitemap_state": "Not manually edited in this release; dedicated routes are reachable through reciprocal in-site links. Global sitemap remains generator-owned.",
   "viewer_upgrade": {
@@ -92,5 +92,40 @@
     ],
     "boundary": "Colours are review categories, not truth percentages. NARROWING does not mean lie; NOTICE requires evidence of receipt/knowledge. Private 482-record case data remains outside public Git."
   },
-  "native_source_boundary": "Signed native source remains separately preserved and unchanged; public web viewer uses the visually equivalent public-safe 22-page derivative and does not expose interactive signature certificate identifiers."
+  "native_source_boundary": "Signed native source remains separately preserved and unchanged; public web viewer uses the visually equivalent public-safe 22-page derivative and does not expose interactive signature certificate identifiers.",
+  "source_page_pr": 1725,
+  "viewer_upgrade_pr": 1732,
+  "merge_sha": "96e2e9b1e020ff32779ea35a2c3c7b33cf8c58fd",
+  "deployment_evidence": {
+    "pages_run_id": 35667186111,
+    "pages_run_number": 1678,
+    "conclusion": "success",
+    "merge_sha": "96e2e9b1e020ff32779ea35a2c3c7b33cf8c58fd"
+  },
+  "live_urls": [
+    "https://sbu001monterecco.github.io/por-derecho/es/concurso-36-2012-oposicion-ac-apelacion-lpb-septiembre-2026/",
+    "https://sbu001monterecco.github.io/por-derecho/en/insolvency-36-2012-ac-opposition-lpb-appeal-september-2026/",
+    "https://sbu001monterecco.github.io/por-derecho/evidence/insolvency-36-2012/concurso-autos/pdfs/R33-ac-oposicion-apelacion-lpb-septiembre-2026.pdf"
+  ],
+  "live_verification_evidence": {
+    "controller_run_id": 35667198114,
+    "controller_fence": 39,
+    "phase": "VERIFIED_FOR_SCOPE",
+    "pending": [],
+    "checked_paths": [
+      "assets/ac-rpl3304-forensic-sidecar.css",
+      "assets/ac-rpl3304-forensic-sidecar.js",
+      "assets/data/ac-rpl3304-public-sidecar-v1.js",
+      "en/insolvency-36-2012-ac-opposition-lpb-appeal-september-2026/index.html",
+      "es/concurso-36-2012-oposicion-ac-apelacion-lpb-septiembre-2026/index.html"
+    ]
+  },
+  "continuity_audit": {
+    "control_date": "2026-09-22",
+    "native_sha256": "5e0728185cf9b686abd723497d2a53a2656a5e0de4d323a734ed02880eb1d711",
+    "public_pdf_sha256": "df43ba1d044c59177a85dea18c98f64b0c9c826ec7ba030c332a1e9cfb7abd14",
+    "private_v3_preserved_outside_public_git": true,
+    "predecessor_pr_1696": "CLOSED_UNMERGED_PRESERVED",
+    "rule": "Resume from the live R33 routes and PR #1732 lineage. Do not revive PR #1696 or publish private forensic case data."
+  }
 }
