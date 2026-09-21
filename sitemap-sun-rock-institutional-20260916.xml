@@ -58,16 +58,30 @@
   </url>
   <url>
     <loc>https://sbu001monterecco.github.io/por-derecho/es/relaciones-de-capital/</loc>
-    <lastmod>2026-09-16</lastmod>
+    <lastmod>2026-09-21</lastmod>
     <xhtml:link rel="alternate" hreflang="es" href="https://sbu001monterecco.github.io/por-derecho/es/relaciones-de-capital/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://sbu001monterecco.github.io/por-derecho/en/capital-relationships/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://sbu001monterecco.github.io/por-derecho/en/capital-relationships/" />
   </url>
   <url>
     <loc>https://sbu001monterecco.github.io/por-derecho/en/capital-relationships/</loc>
-    <lastmod>2026-09-16</lastmod>
+    <lastmod>2026-09-21</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://sbu001monterecco.github.io/por-derecho/en/capital-relationships/" />
     <xhtml:link rel="alternate" hreflang="es" href="https://sbu001monterecco.github.io/por-derecho/es/relaciones-de-capital/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://sbu001monterecco.github.io/por-derecho/en/capital-relationships/" />
+  </url>
+  <url>
+    <loc>https://sbu001monterecco.github.io/por-derecho/es/capital-institucional/</loc>
+    <lastmod>2026-09-21</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sbu001monterecco.github.io/por-derecho/es/capital-institucional/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://sbu001monterecco.github.io/por-derecho/en/institutional-capital/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sbu001monterecco.github.io/por-derecho/en/institutional-capital/" />
+  </url>
+  <url>
+    <loc>https://sbu001monterecco.github.io/por-derecho/en/institutional-capital/</loc>
+    <lastmod>2026-09-21</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sbu001monterecco.github.io/por-derecho/en/institutional-capital/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://sbu001monterecco.github.io/por-derecho/es/capital-institucional/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sbu001monterecco.github.io/por-derecho/en/institutional-capital/" />
   </url>
 </urlset>
