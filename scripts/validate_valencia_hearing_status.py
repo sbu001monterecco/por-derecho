@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import json
 from pathlib import Path
+import re
 import sys
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -47,13 +48,16 @@ REQUIRED = {
     "es/actualizaciones/index.html": ("cronologia-vista-valencia-24ago", "28 de enero de 2027 a las 10:00"),
 }
 
-FORBIDDEN = (
-    "9 October 2026",
-    "9 de octubre de 2026",
-    "9-Oct-2026",
-    "9 octubre 2026",
-    "46250-42-1-2023-0057718",
-    "Juzgado de Primera Instancia e Instrucción nº 27 de Valencia",
+FORBIDDEN_PATTERNS = (
+    (r"(?<!\d)9 October 2026(?!\d)", "9 October 2026"),
+    (r"(?<!\d)9 de octubre de 2026(?!\d)", "9 de octubre de 2026"),
+    (r"(?<!\d)9-Oct-2026(?!\d)", "9-Oct-2026"),
+    (r"(?<!\d)9 octubre 2026(?!\d)", "9 octubre 2026"),
+    (r"46250-42-1-2023-0057718", "46250-42-1-2023-0057718"),
+    (
+        r"Juzgado de Primera Instancia e Instrucción nº 27 de Valencia",
+        "Juzgado de Primera Instancia e Instrucción nº 27 de Valencia",
+    ),
 )
 
 TEXT_SUFFIXES = {".html", ".js", ".json", ".md", ".xml", ".yml", ".yaml", ".txt", ".csv"}
@@ -88,8 +92,8 @@ def main() -> int:
             continue
         scanned += 1
         text = path.read_text(encoding="utf-8", errors="replace")
-        for marker in FORBIDDEN:
-            if marker in text:
+        for pattern, marker in FORBIDDEN_PATTERNS:
+            if re.search(pattern, text):
                 errors.append(f"{path.relative_to(ROOT)}: forbidden superseded marker {marker!r}")
 
     if errors:
