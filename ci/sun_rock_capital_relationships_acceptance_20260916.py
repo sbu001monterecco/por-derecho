@@ -5,6 +5,9 @@ import sys
 ROOT = Path(__file__).resolve().parents[1]
 EN = ROOT / "en/capital-relationships/index.html"
 ES = ROOT / "es/relaciones-de-capital/index.html"
+IC_EN = ROOT / "en/institutional-capital/index.html"
+IC_ES = ROOT / "es/capital-institucional/index.html"
+PROCESS = ROOT / "assets/data/sun-rock-capital-process-v1.json"
 DATA = ROOT / "assets/data/sun-rock-capital-relationships-v1.json"
 ROUTE = ROOT / "assets/capital-relationships-route-20260916.js"
 SITE = ROOT / "assets/site.js"
@@ -20,7 +23,7 @@ def need(path, needle, label=None, case_sensitive=True):
     if target not in haystack:
         errors.append(f"{path.relative_to(ROOT)} missing {label or needle!r}")
 
-required = [EN, ES, DATA, ROUTE, SITE, HOME, SITEMAP]
+required = [EN, ES, IC_EN, IC_ES, PROCESS, DATA, ROUTE, SITE, HOME, SITEMAP]
 for p in required:
     if not p.exists():
         errors.append(f"missing required file: {p.relative_to(ROOT)}")
@@ -51,6 +54,24 @@ if not errors:
     need(HOME, "RELACIONES DE CAPITAL")
     need(SITEMAP, "/en/capital-relationships/")
     need(SITEMAP, "/es/relaciones-de-capital/")
+    need(SITEMAP, "/en/institutional-capital/")
+    need(SITEMAP, "/es/capital-institucional/")
+    need(EN, "../institutional-capital/")
+    need(ES, "../capital-institucional/")
+    need(IC_EN, "Capital built for progression, not publicity.")
+    need(IC_ES, "Capital diseñado para avanzar, no para publicitar.")
+    need(IC_EN, "From an email to an investable decision.")
+    need(IC_ES, "De un email a una decisión invertible.")
+    need(IC_EN, "Committed financing / definitive offer")
+    need(IC_ES, "Financiación comprometida / oferta definitiva")
+
+    process = json.loads(PROCESS.read_text(encoding="utf-8"))
+    if process.get("public_status") != "INSTITUTIONAL_CONVERSATIONS_ACTIVE_NO_COMMITTED_FINANCING":
+        errors.append("institutional capital process status is not fail-closed")
+    if process.get("capital_lanes", {}).get("project_montana_roja", {}).get("committed_financing") is not False:
+        errors.append("Montaña Roja committed-financing boundary failed")
+    if process.get("capital_lanes", {}).get("project_montana_roja", {}).get("definitive_offer") is not False:
+        errors.append("Montaña Roja definitive-offer boundary failed")
 
     data = json.loads(DATA.read_text(encoding="utf-8"))
     if data.get("status") != "PUBLIC_SAFE_GATEWAY_NOT_OFFER_NOT_COMMITMENT":
@@ -58,7 +79,7 @@ if not errors:
     if data.get("sponsor") != "Aweswell Limited":
         errors.append("Sponsor identity lock failed")
 
-    combined = EN.read_text(encoding="utf-8").lower() + "\n" + ES.read_text(encoding="utf-8").lower()
+    combined = "\n".join([EN.read_text(encoding="utf-8").lower(), ES.read_text(encoding="utf-8").lower(), IC_EN.read_text(encoding="utf-8").lower(), IC_ES.read_text(encoding="utf-8").lower()])
     prohibited_cta_fragments = [
         ">invest now<",
         ">subscribe now<",
