@@ -22,6 +22,23 @@ El AC describe la conducta de Gil/Aweswell/LPB mediante expresiones como “torp
 
 **Control analítico:** son caracterizaciones argumentales del AC. No se publican como hallazgos judiciales sobre la motivación, veracidad o legitimidad de esas comunicaciones.
 
+## Página 5 · renuncia citada: identidad del letrado y colaboración documental
+
+El escrito del AC reproduce una renuncia fechada el **21 de septiembre de 2020** y destaca que el letrado había reiterado disculpas al Administrador Concursal por manifestaciones que le atribuían una actuación deshonesta.
+
+**Identificación controlada:** el escrito judicial subyacente de esa misma fecha está firmado por **Joaquín Ruiz de Infante Abella** como letrado de Gil Marer.
+
+**Vínculo profesional con Armando Betancor, sin fusionar despachos:**
+
+- 3 enero 2019: un correo dirigido a Joaquín explica que se le escribe siguiendo indicaciones de Armando.
+- 11 enero 2019: Armando circula un borrador y plantea que Cristo y Joaquín lo firmen conjuntamente.
+- 21 septiembre 2020: el correo de renuncia de Joaquín lleva a Armando en copia.
+- Ese mismo día Armando circula una comunicación separada de renuncia del asesoramiento de su propio perímetro profesional.
+
+**Control analítico:** estos registros prueban colaboración en el mismo asunto entre profesionales de despachos distintos. No prueban que Armando dirigiera o compartiera la disculpa concreta de Joaquín, que la renuncia validara la versión material del AC, ni que todos los demás cambios de abogado respondieran al mismo motivo.
+
+**Conexión histórica:** la renuncia de 2020 no debe aislarse del rastro de separación/remoción: una tarea explícita de «remoción por causa justa» aparece en septiembre de 2018; un borrador judicial de enero de 2019 reserva acciones de separación; en mayo de 2020 Daniel Jiménez trata el «escrito de remoción del cargo» como workstream activo; y en enero de 2021 se vuelve a instruir expresamente presentar la separación en el concurso.
+
 ## Páginas 19–20 · origen 2011 frente a conocimiento 2016
 
 El AC sostiene que los conflictos acreditados con actas de 2011 eran anteriores al concurso y a su designación, y por ello no pudo intervenir en su origen.
