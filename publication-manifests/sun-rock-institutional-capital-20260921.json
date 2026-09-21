@@ -1,5 +1,19 @@
 {
-  "schema": "por-derecho.publication-manifest.v1",
+  "schema": "por-derecho.publication-state.v1",
+  "schema_version": "1.0.0",
+  "publication_id": "PD-SR-CAPITAL-20260921-01",
+  "owner": "SUN-ROCK-CAPITAL-PROGRAMME-INTEGRATOR-20260921",
+  "current_state": "PR_OPEN",
+  "expected_routes": {
+    "en": [
+      "/en/institutional-capital/",
+      "/en/capital-relationships/"
+    ],
+    "es": [
+      "/es/capital-institucional/",
+      "/es/relaciones-de-capital/"
+    ]
+  },
   "control_id": "PD-SR-CAPITAL-20260921-01",
   "control_date": "2026-09-21",
   "status": "PREPARED_PENDING_PR_VALIDATION",
