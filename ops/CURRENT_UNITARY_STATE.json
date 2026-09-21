@@ -232,14 +232,14 @@
   ],
   "identity_registry": {
     "registry_id": "PD-SP-IDENTITY-REGISTRY-001",
-    "control_date": "2026-09-03",
+    "control_date": "2026-09-05",
     "counts": {
-      "total": 352,
-      "PERSON": 165,
-      "ORGANISATION": 84,
+      "total": 379,
+      "PERSON": 176,
+      "ORGANISATION": 99,
       "STRUCTURE": 11,
       "INSTITUTION": 49,
-      "PROCEEDING": 43
+      "PROCEEDING": 44
     },
     "archive_backfill": "OPEN",
     "static_page_parity": "LOCAL_SOURCE_STATIC_CANDIDATE_NOT_YET_LIVE_VERIFIED",
@@ -288,14 +288,14 @@
       }
     },
     "governing_boundary": "Identity resolves identity only; it does not transfer knowledge, intention, control, benefit, responsibility or liability.",
-    "total": 352,
+    "total": 379,
     "INSTITUTION": 49,
-    "PROCEEDING": 43
+    "PROCEEDING": 44
   },
   "material_updates": {
     "canonical_source": "assets/data/material-updates-v1.json",
-    "latest_material_date": "2026-08-28",
-    "repository_latest_material_date": "2026-08-28",
+    "latest_material_date": "2026-09-18",
+    "repository_latest_material_date": "2026-09-18",
     "last_live_verified_material_date": "2026-08-28",
     "languages": [
       "es",
@@ -305,7 +305,7 @@
       "/es/actualizaciones/",
       "/en/updates/"
     ],
-    "public_parity": "2026-08-28_LIVE_VERIFIED",
+    "public_parity": "REPOSITORY_2026-09-18_PENDING_PUBLICATION_LAST_LIVE_VERIFIED_2026-08-28",
     "latest_live_verified_publication": {
       "control_id": "PD-SP-AEAT-PINK-DILIGENCE-20260828-01",
       "state": "LIVE_VERIFIED",
@@ -319,6 +319,21 @@
       "live_verified_at": "2026-08-28T19:46:16Z",
       "verified_url_count": 33,
       "manifest": "publication-manifests/aeat-pink-vigilancia-aduanera-20220406-publication-20260828.json"
+    },
+    "pending_publication": {
+      "control_id": "PD-CUATRECASAS-ETJ-DP748-20260918-01",
+      "state": "MERGED_AWAITING_PAGES_READBACK",
+      "material_date": "2026-09-18",
+      "routes": [
+        "/en/cuatrecasas-etj163-dp748-18-september-2026/",
+        "/es/cuatrecasas-etj163-dp748-18-septiembre-2026/",
+        "/en/updates/",
+        "/es/actualizaciones/"
+      ],
+      "rule": "Do not call the 18-Sep material live verified until a public GitHub Pages readback is observed.",
+      "controlling_pr": 1548,
+      "merge_sha": "cf73bd7cffd65ad08f48d3cc850b692fc17aec23",
+      "merged_to": "main"
     }
   },
   "procedural_checkpoints": {

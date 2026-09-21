@@ -102,11 +102,13 @@ def main() -> int:
         p0.get("subsidiary_appeal_admitted") == "VERIFIED_BY_20MAY_PROVIDENCIA_INTERPOSED_IN_TIME_AND_FORM",
         "20-May admission state not locked",
     )
-    require(p0.get("article_766_4_transfer_to_appellant") == "NOT_LOCATED", "Article 766.4 gap was silently closed")
+    require(p0.get("appellant_article_766_4_allegations") == "FILED_AD_CAUTELAM_09SEP2026", "09-Sep appellant allegations not locked")
+    require(p0.get("article_766_4_processing_at_origin") == "VERIFIED_16SEP_DIOR_FIVE_DAY_TRANSFER_TO_MINISTERIO_FISCAL", "16-Sep origin appeal processing not locked")
+    require("NOT_EXPRESSLY_ORDERED" in p0.get("article_766_4_transfer_to_appellant", ""), "16-Sep order must not be misdescribed as appellant transfer")
     require(p0.get("transmission_to_audiencia") == "NOT_LOCATED", "Audiencia transmission was invented")
     require(p0.get("appellate_roll") == "NOT_LOCATED", "appellate roll was invented")
     require(p0.get("tf_app_004") == "UNVERIFIED_PLACEHOLDER", "TF-APP-004 was over-promoted")
-    require(p0.get("protective_operational_deadline") == "FILE_04SEP2026_OR_EARLIER", "protective deadline drift")
+    require(p0.get("current_action", "").startswith("Obtain Fiscal submission"), "current post-16-Sep action drift")
 
     deficiency = {row.get("deficiency"): row for row in control.get("judicial_deficiency_matrix", [])}
     require(deficiency.get("exact_act", {}).get("record_before_criminal_court") == "PARTIAL", "exact-act assessment drift")
@@ -187,7 +189,7 @@ def finish(errors: list[str]) -> int:
             print(f"ERROR: {error}")
         return 1
     print("DP 748 appeal/reopening control: PASS")
-    print(" - admitted subsidiary appeal preserved; Article 766.4/remittal/roll gaps remain open")
+    print(" - subsidiary appeal preserved; 09-Sep allegations and 16-Sep origin processing verified; Audiencia remittal/roll remain open")
     print(" - canonical actors, filings, properties, source hashes and Master links reconcile")
     print(" - TF-APP-004 remains an unverified placeholder")
     print(" - source-safe public boundary passed")

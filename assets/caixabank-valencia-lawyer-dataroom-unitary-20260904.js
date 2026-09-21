@@ -88,7 +88,7 @@
 
           <div class="pd-criminal" style="margin-top:1rem"><p class="kicker">POR DERECHO ALLEGATION · CRIMINAL-FIRST · NOT A JUDICIAL FINDING</p><strong>Functional-agent / enabling-gatekeeper hypothesis.</strong> Por Derecho alleges that the Insolvency Administrator disloyally instrumentalised his office in a way that functionally benefited the CAM/Acosta Matos perimeter and harmed LPB and its perimeter. This is an investigative allegation, not a finding; it requires actor-specific proof of power/duty, knowledge, act/omission, intent where required, causation, loss, benefit and any necessary instruction/concert. <a href="faq-unitary-context/">Read the evidential test →</a></div>
 
-          <p class="linkrow" style="margin-top:1rem"><a class="button secondary" href="../../es/reclamacion-caixabank-valencia/documentos/" lang="es">Spanish source room</a><a class="button secondary" href="../lender-of-record/">Lender chain</a><a class="button secondary" href="../insolvency-lpb/">LPB insolvency</a></p>
+          <p class="linkrow" style="margin-top:1rem"><a class="button secondary" href="../../es/reclamacion-caixabank-valencia/documentos/" lang="es">Spanish source room</a><a class="button secondary" href="../lender-of-record/">Lender chain</a><a class="button secondary" href="../lpb-insolvency/">LPB insolvency</a></p>
         </div>`;
     }
 

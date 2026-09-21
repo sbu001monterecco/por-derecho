@@ -1,0 +1,49 @@
+/* Montaña Roja: visual, readiness and private-capital presentation layer */
+.mr-hero-poster{margin:1.5rem 0 0;max-width:46rem;border:1px solid rgba(255,255,255,.24);border-radius:1rem;overflow:hidden;background:rgba(8,31,34,.35);box-shadow:0 1.2rem 3rem rgba(0,0,0,.2)}
+.mr-hero-poster img{display:block;width:100%;height:auto;background:#e9dcc4}
+.mr-hero-poster figcaption{padding:.7rem .85rem;color:#d8e6e3;font-size:.7rem;line-height:1.45}
+.mr-hero-poster a{color:#f5d5a3;font-weight:800;text-underline-offset:.16em}
+.mr-structure{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1.55rem;margin:1.35rem 0 1.2rem;align-items:stretch}
+.mr-structure-card{position:relative;padding:1.1rem;border:1px solid #d7d2c8;border-radius:.85rem;background:#fffdfa;box-shadow:0 .5rem 1.4rem rgba(31,49,47,.05)}
+.mr-structure-card:not(:last-child)::after{content:"→";position:absolute;right:-1.18rem;top:50%;transform:translateY(-50%);color:#9b7445;font-size:1.2rem;font-weight:900}
+.mr-structure-card span{display:block;color:#8b6a43;font-size:.62rem;font-weight:900;letter-spacing:.09em;text-transform:uppercase}
+.mr-structure-card strong{display:block;margin:.35rem 0;color:#204b50;font:500 1.15rem/1.08 Georgia,serif}
+.mr-structure-card small{display:block;color:#657779;font-size:.72rem;line-height:1.45}
+.mr-readiness{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.7rem;margin:1.2rem 0}
+.mr-readiness-item{display:grid;grid-template-columns:minmax(8.5rem,.78fr) minmax(0,1.22fr);gap:.8rem;align-items:center;padding:.8rem .9rem;border:1px solid #d9d4ca;border-radius:.7rem;background:#fbf7ef}
+.mr-readiness-item strong{color:#254b4f;font-size:.79rem}
+.mr-readiness-item span{color:#607173;font-size:.77rem;line-height:1.4}
+.mr-readiness-item b{display:inline-block;margin-left:.35rem;padding:.12rem .38rem;border-radius:999px;background:#e3eee9;color:#17676a;font-size:.58rem;letter-spacing:.06em;text-transform:uppercase}
+.mr-readiness-item b.caution{background:#f1e2cf;color:#8b542f}
+.mr-private-capital{margin-top:1.35rem;padding:1.15rem 1.25rem;border:1px solid #c7d6d1;border-left:.35rem solid #1b7477;border-radius:0 .8rem .8rem 0;background:#edf4f1;color:#3e5557}
+.mr-private-capital>strong{display:block;margin-bottom:.45rem;color:#175f62;font:600 1.05rem/1.2 Georgia,serif}
+.mr-private-capital p{margin:.45rem 0;font-size:.79rem;line-height:1.58}
+.mr-private-capital .mr-legal{color:#667779;font-size:.68rem}
+.mr-private-capital a{color:#0e666a;font-weight:800;text-underline-offset:.16em}
+.mr-private-capital .mr-risk{font-weight:800;color:#694631}
+@media(max-width:900px){.mr-structure{grid-template-columns:1fr 1fr}.mr-structure-card:not(:last-child)::after{display:none}}
+@media(max-width:700px){.mr-structure,.mr-readiness{grid-template-columns:1fr}.mr-readiness-item{grid-template-columns:1fr;gap:.25rem}.mr-hero-poster{margin-top:1.1rem}}
+
+
+/* 2026-09-19 · Montaña Roja public-safe capital stack + execution roadmap */
+.mr-capital-map,.mr-roadmap{margin:2rem 0;padding:1.5rem;border:1px solid rgba(13,47,56,.16);border-radius:20px;background:rgba(255,255,255,.82);box-shadow:0 16px 40px rgba(13,47,56,.07)}
+.mr-capital-head{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(260px,.9fr);gap:1.5rem;align-items:end;margin-bottom:1.25rem}
+.mr-capital-head h3{margin:.25rem 0 0;font-size:clamp(1.55rem,3vw,2.3rem);line-height:1.08}
+.mr-capital-head>p{margin:0;color:var(--muted,#53656b)}
+.mr-stack{display:grid;gap:.7rem}
+.mr-stack-layer{position:relative;padding:1rem 1.1rem 1rem 1.25rem;border-radius:14px;border:1px solid rgba(13,47,56,.15);background:#fff}
+.mr-stack-layer:before{content:"";position:absolute;left:0;top:0;bottom:0;width:6px;border-radius:14px 0 0 14px;background:#6b7f86}
+.mr-stack-layer.sponsor:before{background:#b1842b}.mr-stack-layer.senior:before{background:#1d6669}.mr-stack-layer.seller:before{background:#7d607d}.mr-stack-layer.development:before{background:#284a63}
+.mr-stack-layer span{display:block;font-size:.75rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#52646b}
+.mr-stack-layer strong{display:block;margin:.18rem 0 .2rem;font-size:1.08rem;color:#0d2f38}
+.mr-stack-layer p{margin:0;color:#53656b}
+.mr-stack-controls{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.8rem;margin:1rem 0}
+.mr-stack-controls>div{padding:1rem;border-radius:14px;background:#0d2f38;color:#fff}
+.mr-stack-controls span,.mr-stack-controls small{display:block}.mr-stack-controls span{font-size:.72rem;text-transform:uppercase;letter-spacing:.08em;opacity:.72}.mr-stack-controls strong{display:block;margin:.2rem 0}.mr-stack-controls small{opacity:.82;line-height:1.4}
+.mr-roadmap-grid{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(7,minmax(160px,1fr));gap:.65rem;overflow-x:auto;padding-bottom:.35rem}
+.mr-roadmap-grid li{min-height:180px;padding:1rem;border-radius:14px;border:1px solid rgba(13,47,56,.14);background:linear-gradient(180deg,#fff,#f5f8f7)}
+.mr-roadmap-grid li:first-child{background:#eaf5ef;border-color:#91b9a1}
+.mr-roadmap-grid span{display:block;font-size:.72rem;font-weight:800;letter-spacing:.07em;text-transform:uppercase;color:#4e666e}
+.mr-roadmap-grid strong{display:block;margin:.3rem 0 .45rem;color:#0d2f38}
+.mr-roadmap-grid p{margin:0;font-size:.9rem;line-height:1.45;color:#53656b}
+@media(max-width:900px){.mr-capital-head{grid-template-columns:1fr}.mr-stack-controls{grid-template-columns:1fr}.mr-roadmap-grid{grid-template-columns:repeat(7,220px)}}

@@ -1,7 +1,7 @@
 {
   "schema": "por-derecho.dp748-2026-appeal-reopening-control.v1",
-  "as_of": "2026-09-01",
-  "status": "P0_RIGHTS_PRESERVATION_PACKAGE_PREPARED_SUBSIDIARY_APPEAL_ADMITTED_PROCESSING_OPEN",
+  "as_of": "2026-09-18",
+  "status": "P0_SUBSIDIARY_APPEAL_ART7664_PROCESSING_VERIFIED_FISCAL_TRANSFER_ACTIVE_AP_ROLL_UNVERIFIED",
   "governance": [
     ".github/governance/CAEPR_CARET_IDENTITY_AND_ALL_IS_VERIFICATION_PROTOCOL_26AUG2026.md",
     "archive/PROCEEDINGS_MASTER_REGISTER_PROTOCOL.md",
@@ -41,8 +41,8 @@
       "procuradora_caepr_id": "PD-SP-P-0067",
       "procurador_register_id": "PROC-ADRIANA-HERNANDEZ-DIAZ",
       "proceeding": "DP 748/2026",
-      "verified_period": "2026-04-17 through 2026-09-01",
-      "basis": "Signed pleading, LexNET filing receipt, 20-May Providencia, 16-Jul Auto and 01-Sep notification lane",
+      "verified_period": "2026-04-17 through 2026-09-16",
+      "basis": "Signed pleadings, LexNET filing receipts, 20-May Providencia, 16-Jul Auto, 01-Sep notification lane, 09-Sep appeal-impulse filing and 16-Sep LAJ processing order",
       "boundary": "Proceeding- and period-specific; no permanent pairing is inferred."
     },
     {
@@ -53,8 +53,8 @@
       "procuradora_caepr_id": "PD-SP-P-0067",
       "procurador_register_id": "PROC-ADRIANA-HERNANDEZ-DIAZ",
       "proceeding": "ETJ 163/2020",
-      "verified_act": "Recurso de reposición dated 26-Jun-2026 and later admission/transfer act",
-      "boundary": "Act-specific; underlying poder/apud-acta remains a separate gap."
+      "verified_act": "Recurso de reposición dated 26-Jun-2026; 28-Jul admission/transfer; 17-Sep-2026 dismissal order received 18-Sep",
+      "boundary": "Act-specific; 17-Sep order decides suspension reposición only. Adjudication/cession/registration/possession remain separate open questions."
     },
     {
       "party": "Cuatrecasas, Gonçalves Pereira, S.L.P.",
@@ -167,19 +167,34 @@
       "event": "Located LexNET packet sent, distributed and collected on 01-Sep-2026",
       "verification": "PRIMARY_LEXNET_PACKET",
       "laj_caepr_id": "PD-SP-P-0148"
+    },
+    {
+      "event_id": "DP748-2026-20260909-IMPULSO-APELACION",
+      "date": "2026-09-09",
+      "event": "Appellant files impulse of the already-lodged subsidiary appeal, Article 766.4 allegations ad cautelam and Cuatrecasas 03-Sep ETJ opposition as a supervening document",
+      "verification": "PRIMARY_SIGNED_FILED_PLEADING",
+      "filing_id": "DP748-2026-GIL-20260909-IMPULSO-APELACION"
+    },
+    {
+      "event_id": "DP748-2026-20260916-DIOR-APELACION",
+      "date": "2026-09-16",
+      "time": "09:12:12",
+      "event": "LAJ joins the new filings and, noting the subsidiary appeal and partly unsuccessful reform, gives Ministerio Fiscal five days to make submissions",
+      "verification": "PRIMARY_SIGNED_COURT_ACT",
+      "laj_caepr_id": "PD-SP-P-0148"
     }
   ],
   "p0_appeal_control": {
     "subsidiary_appeal_filed": "VERIFIED",
     "subsidiary_appeal_admitted": "VERIFIED_BY_20MAY_PROVIDENCIA_INTERPOSED_IN_TIME_AND_FORM",
-    "article_766_4_transfer_to_appellant": "NOT_LOCATED",
+    "appellant_article_766_4_allegations": "FILED_AD_CAUTELAM_09SEP2026",
+    "article_766_4_processing_at_origin": "VERIFIED_16SEP_DIOR_FIVE_DAY_TRANSFER_TO_MINISTERIO_FISCAL",
+    "article_766_4_transfer_to_appellant": "NOT_EXPRESSLY_ORDERED_IN_16SEP_DIOR_APPELLANT_HAD_ALREADY_FILED_ALLEGATIONS_09SEP",
     "transmission_to_audiencia": "NOT_LOCATED",
     "appellate_roll": "NOT_LOCATED",
     "tf_app_004": "UNVERIFIED_PLACEHOLDER",
-    "best_supported_service_analysis": "College service received 01-Sep; Article 151.2 LEC deemed notification 02-Sep; count starts 03-Sep; Article 201 LECrim treats all days as enabled for instruction appeals; fifth day 07-Sep-2026.",
-    "protective_operational_deadline": "FILE_04SEP2026_OR_EARLIER",
-    "protective_filing": "Assert continuity of the admitted subsidiary appeal; file Article 766.4 allegations; subsidiarily interpose direct appeal against the 16-Jul Auto without waiver or novation; request certification of last notifications, procedural admission/status, transmission and any roll.",
-    "calculation_boundary": "Counsel must verify the live LexNET/court docket and the last notification. Do not rely on Article 135 LEC or a later unverified notification."
+    "current_action": "Obtain Fiscal submission and subsequent transfer/remittal record; preserve 17-Sep ETJ order as supervening material; do not promote TF-APP-004 until Audiencia source is located.",
+    "calculation_boundary": "The 16-Sep order is primary evidence of origin-court processing. It is not evidence that the file has been remitted to or docketed by the Audiencia Provincial."
   },
   "judicial_deficiency_matrix": [
     {
@@ -221,8 +236,8 @@
       "auction_status": "ONLY_LOCATED_LOT",
       "auction_value_eur": "111200.00",
       "requested_70_percent_eur": "77840.00",
-      "current_adjudication_cession_registration_possession": "OPEN_GAP",
-      "needed": "Historic/current certification, correlated ETJ orders and independent physical-registry-cadastral crosswalk"
+      "current_adjudication_cession_registration_possession": "OPEN_GAP_AFTER_17SEP_SUSPENSION_REPOSICION_DISMISSED",
+      "needed": "Immediate post-17-Sep docket certification; adjudication/cession/registration/possession; historic/current certification; independent physical-registry-cadastral crosswalk"
     },
     {
       "property": "Finca 8588",
@@ -345,6 +360,36 @@
       "sha256": "6c8fdcf5f0a8d1e68d3144916979197aaa5b10e655d7907a708d72f0abc97127",
       "source_class": "COURT_ACT",
       "limited_proposition": "Reposición admitted and five-day transfer ordered; later result open."
+    },
+    {
+      "source_id": "DP748-SRC-IMPULSO-APELACION-20260909",
+      "sha256": "d501087730c3f276d3bc6afecd5d1250ccb548f3059f2b57eeb8a174c25087cd",
+      "source_class": "SIGNED_FILED_PLEADING",
+      "limited_proposition": "Appellant's 09-Sep appeal-processing request, ad cautelam allegations and supervening-document submission; not truth of allegations."
+    },
+    {
+      "source_id": "DP748-SRC-DIOR-APELACION-20260916",
+      "sha256": "fdf9f251f4440accf785b511e75039a7c6ba89406ad92de956bc55bbb44b3788",
+      "source_class": "SIGNED_COURT_ACT",
+      "limited_proposition": "Origin-court subsidiary appeal processing and five-day transfer to Ministerio Fiscal."
+    },
+    {
+      "source_id": "ETJ163-SRC-AUTO-REPOSICION-20260917",
+      "sha256": "020b5313c93565cbb536d5eb40feca0e0e7755c20a5e0bada3b91d863a0c6652",
+      "source_class": "SIGNED_COURT_ORDER",
+      "limited_proposition": "Dismissal of Matkator reposición against refusal to suspend; no appeal stated; no criminal merits or assignee finding."
+    },
+    {
+      "source_id": "ETJ163-SRC-NOTIFICATION-SUMMARY-20260918",
+      "sha256": "28e616f984f44728b4a174227f89c1cc399c65126041557e4f87ec42f5777f4a",
+      "source_class": "PRIVATE_NATIVE_NOTIFICATION_SUMMARY",
+      "limited_proposition": "Native service-summary wrapper preserved; authenticates notification transport metadata and declared document hashes only. Raw copy remains private."
+    },
+    {
+      "source_id": "ETJ163-SRC-NOTIFICATION-COVER-20260918",
+      "sha256": "693999b0e3bf4f3ca681faa2ebb321f0a32773fd6b482dc7336eb107ea916702",
+      "source_class": "PRIVATE_NATIVE_COURT_COMMUNICATION_COVER",
+      "limited_proposition": "Native court communication cover preserved; its SHA-256 matches the hash declared by the service-summary wrapper. Raw copy remains private under the confidentiality/data-protection boundary."
     }
   ],
   "open_gaps": [
@@ -376,7 +421,7 @@
     },
     {
       "master_id": "TF-APP-004",
-      "relation": "UNVERIFIED_APPEAL_PLACEHOLDER"
+      "relation": "ORIGIN_APPEAL_PROCESSING_VERIFIED_AUDIENCIA_ROLL_UNVERIFIED"
     }
   ],
   "publication_boundary": {
@@ -386,6 +431,24 @@
     "personal_contact_or_identity_numbers": false,
     "signed_download_links": false,
     "allegation_status_rule": "No allegation is converted into a finding of crime, intent, professional misconduct or civil liability.",
-    "procedural_status_rule": "The 16-Jul order is a maintained provisional dismissal, not acquittal, sobreseimiento libre or final merits adjudication."
+    "procedural_status_rule": "The 16-Jul order maintained provisional dismissal; the 16-Sep LAJ order verifies origin-court processing of the subsidiary appeal with five-day transfer to Ministerio Fiscal; no Audiencia roll or appellate outcome is inferred. The 17-Sep ETJ order decides suspension only."
+  },
+  "post_appeal_cross_proceeding_update": {
+    "date": "2026-09-17",
+    "proceeding": "ETJ 163/2020",
+    "event": "Civil court dismisses Matkator's reposición against 19-Jun refusal to suspend; order states no appeal lies",
+    "received": "2026-09-18",
+    "boundary": "Does not decide DP 748, criminal liability, assignee identity, or completion of adjudication/cession/registration/possession"
+  },
+  "etj_17sep_notification_provenance": {
+    "service_date": "2026-09-18",
+    "native_summary_sha256": "28e616f984f44728b4a174227f89c1cc399c65126041557e4f87ec42f5777f4a",
+    "native_cover_sha256": "693999b0e3bf4f3ca681faa2ebb321f0a32773fd6b482dc7336eb107ea916702",
+    "served_order_sha256": "020b5313c93565cbb536d5eb40feca0e0e7755c20a5e0bada3b91d863a0c6652",
+    "integrity_state": "COVER_AND_ORDER_HASHES_MATCH_NATIVE_NOTIFICATION_SUMMARY",
+    "searchability": "ALL_THREE_NATIVE_PDFS_SEARCHABLE_NO_OCR_REQUIRED",
+    "public_copy_state": "RAW_NOTIFICATION_WRAPPER_AND_COVER_WITHHELD_CONFIDENTIALITY_AND_DATA_PROTECTION_BOUNDARY",
+    "deadline_control": "No final Article 215.2 expiry is calculated in this public control. Counsel must verify the legal computation from the complete notification record.",
+    "limited_proposition": "The native notification bundle proves service transport and byte identity of the served court documents. It does not decide the criminal merits, adjudication/cession status or the legal viability/timeliness of a complement request."
   }
 }

@@ -51,7 +51,17 @@
       "identity_state": "THREE_OF_THREE_PERSON_IDENTITIES_CARET_CONFIRMED_EXACT_FIRM_LEGAL_PERSON_GAPS_OPEN",
       "portrait_register": "data/pd-dma-three-professionals-portrait-source-register-20260901.json",
       "identity_reconciliation": "data/amph-three-professionals-identity-and-firm-reconciliation-20260901.json",
-      "next_target_mode": "CLOSE_EXACT_FIRM_AND_DATE_SPECIFIC_AFFILIATION_GAPS_THEN_DEEP_SOURCE_SCAN_THEN_USER_AUTHORISED_IMAGE_PAGE_LINKEDIN_RELEASE"
+      "next_target_mode": "CLOSE_EXACT_FIRM_AND_DATE_SPECIFIC_AFFILIATION_GAPS_THEN_DEEP_SOURCE_SCAN_THEN_USER_AUTHORISED_IMAGE_PAGE_LINKEDIN_RELEASE",
+      "continuations": [
+        {
+          "date": "2026-09-05",
+          "label": "MASTER MYND — Acosta Matos family / Sun Park / MYND Yaiza — evidential architecture, JDAM/LPAM attributed statements, El Economista image, Sun Park plans, professional architecture record and criminal-first perimeter analysis.",
+          "control": "SUN_PARK_MYND_YAIZA_SITE_ADDRESS_LOCK_05SEP2026.md",
+          "canonical_site_id": "PD-SP-O-0042",
+          "profile": "assets/data/sun-park-mynd-yaiza-site-v1.json",
+          "publication_truth": "Exact current PR/Actions/Control Tower receipt; source file is not a live verification."
+        }
+      ]
     },
     {
       "workspace_id": "PD-WS-20260901-0002",

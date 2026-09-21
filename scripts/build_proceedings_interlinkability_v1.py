@@ -53,6 +53,9 @@ DIRECT_TYPE_PRIORITY = {
 DIRECT_SOURCE_VERIFIED_STATUSES = {
     "VERIFIED_PRIMARY",
     "VERIFIED_PRIMARY_COPY",
+    "VERIFIED_PRIMARY_COPY_PHOTOGRAPH_TRANSCRIPTION",
+    "VERIFIED_PRIMARY_AVAILABLE_CORPUS_FULL_TEXT",
+    "VERIFIED_PRIMARY_IDENTITY_COPY",
     "VERIFIED_PROCEDURAL",
 }
 
@@ -285,7 +288,7 @@ GAP_ES = {
     "GC-CIV-003": "Auto firmado de 19 de diciembre de 2017, producción, decreto de 5 de marzo de 2018 y anexos.",
     "GC-CIV-027": "Expediente certificado que concilie 134/2024, 582/2024 y 641/2024; decreto citado de 1 de septiembre de 2025 que falta; firmeza.",
     "GC-CONT-025": "Originales firmados de 18 de septiembre y 24 de octubre, trazabilidad del reparto, expediente completo de los tres deudores y cualquier nexo real con una operación de Sun Park.",
-    "GC-CRI-008": "Informe del Ministerio Fiscal, resolución posterior, expediente e índice de anexos.",
+    "GC-CRI-008": "Informe Fiscal firmado de 29 de julio; Auto nativo/certificado de 14 de septiembre; metadatos de notificación legal; documento iniciador; expediente/índice certificado; reparto de las referencias diarias 21/24 y cualquier acto de unión o reasignación.",
     "GC-CRI-009": "Auto firmado de sobreseimiento provisional, denuncia y anexos, y certificación del estado actual y la firmeza.",
     "GC-APP-004": "Rollo completo, acto recurrido, partes, expediente remitido y respuestas.",
     "GC-APP-005": "Rollo certificado completo, decisión sobre documentación posterior, resolución sobre el fondo y firmeza.",
@@ -298,7 +301,7 @@ GAP_ES = {
     "GC-FIS-014": "Expediente nativo, oficina, objeto, material recibido y resolución.",
     "GC-FIS-015": "Resolución o remisión nativa, decisor, destino y resultado.",
     "GC-FIS-016": "Expediente completo, decreto de archivo y tratamiento de hechos posteriores o nuevos.",
-    "GC-FIS-017": "Expediente certificado completo, decreto separado de incoación de 11 de febrero, tratamiento posterior a la corrección y remisión.",
+    "GC-FIS-017": "Decreto separado de incoación de 11 de febrero; expediente/índice certificado completo de DIP 2; tratamiento/corrección posterior al 11 de marzo; informe Fiscal firmado de 29 de julio de DP 1901 y su corpus fuente; puente de transmisión/reparto hacia DP 1901.",
     "GC-FIS-018": "Resolución nativa, material puesto ante el decisor, remisiones y tratamiento posterior.",
     "GC-GOV-019": "Expediente administrativo completo y material examinado.",
     "GC-GOV-020": "Expediente completo del recurso, informes y resolución final.",

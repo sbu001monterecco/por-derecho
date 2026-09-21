@@ -1,0 +1,64 @@
+{
+  "schema": "por-derecho.publication-state.v1",
+  "schema_version": "1.0.0",
+  "publication_id": "PD-PRESIDENCIA-THREAD-20260920-01",
+  "current_state": "PREPARED_PENDING_MERGE",
+  "owner": "PRESIDENCIA-PLATFORM-GROUP-20260920",
+  "source_base_sha": "254254530f2ebf4053a9e11bc414278c5d78f818",
+  "authority": "Gil Marer's current instruction to update GitHub fully with this thread's work; bounded public-safe consolidation through branch, PR, protected merge and verification",
+  "control_tower_receipt": "https://github.com/sbu001monterecco/por-derecho/issues/1428#issuecomment-5752302928",
+  "expected_routes": {
+    "es": ["es/presidencia-plataforma-grupo-recuperacion/index.html"],
+    "en": ["en/presidencia-platform-group-recovery/index.html"]
+  },
+  "expected_source_files": [
+    "archive/PRESIDENCIA_PLATFORM_RECOVERY_THREAD_20SEP2026.md",
+    "archive/PRESIDENCIA_PUBLIC_THESIS_EXPONE_SOLICITA_20SEP2026.md",
+    "archive/AWESWELL_2025_ACCOUNTS_WIDER_GROUP_REVIEW_20SEP2026.md",
+    "archive/MONTELANZA_2008_AND_COMMUNITY_ADOPTION_REVIEW_20SEP2026.md",
+    "archive/ACOSTA_MATOS_WEALTH_TRAJECTORY_REVIEW_20SEP2026.md",
+    ".github/governance/WHOLE_WEALTH_AND_PREDECESSOR_RIGHTS_RECOVERY_RULE_20SEP2026.md",
+    ".github/governance/records/presidencia-thread-consolidation-20260920.json",
+    ".github/governance/records/platform-displacement-rule-20260920.json"
+  ],
+  "changed_path_count": 11,
+  "preservation": "Ten new public-safe files and one additive JSON discovery-field update. Preserve every previous platform-rule value. No existing HTML, image, source exhibit, canonical event/proceeding, historic filing state, workflow, deployment configuration, home page, route or private original is removed or replaced.",
+  "scope": [
+    "Evolved institutional thesis with twelve EXPONE and fourteen SOLICITA points in both languages",
+    "Separate existing-records SAIP plan identifying the urgent letter after its actual registration",
+    "Whole-platform displacement and reciprocal claimant loss/recipient gain",
+    "Whole-wealth investigation with remedy-specific recovery and third-party safeguards",
+    "2008 intended transaction, Alimarket corrections, recovered instrument clauses and later Community adoption",
+    "Media/investment trajectory with ownership, management, financial-measure and evidence distinctions",
+    "Aweswell 40/69-page accounts review and wider parent/creditor/funder/operating-interest/business-platform position",
+    "Historical registration audit and September institutional corrections without overriding PR1679's newer filing state",
+    "Source, correction, coverage and open-production crosswalk using existing canonical records",
+    "New reciprocal English/Spanish reader pages and existing-rule discovery pointer"
+  ],
+  "evidence_limits": [
+    "Party allegations, directors statements, public reporting and primary outcomes retain different status",
+    "Exact Companies House deposited version, accounting conformity, creditor recognition and current valuations are not independently certified",
+    "Original sale obligations, notarial default, specific performance, successor liability and limitation require transaction-specific proof",
+    "Whole-wealth investigation is not an asset encumbrance, criminal-proceeds finding or blanket liability",
+    "Eleven of thirteen direct actions are registered on current canonical main; earlier seven-entry export is historical",
+    "Registration is not delivery, admission, incorporation, examination, decision or the substantive E.G.745 response",
+    "No universal mailbox, source, event or private-custody completeness claim",
+    "No authenticated GitLab access, mutation or parity claim",
+    "No official letter, SAIP, compensation claim, email or judicial remedy filed by this publication"
+  ],
+  "validation": {
+    "planned": [
+      "Complete eleven-file diff with no deletion and original platform JSON values preserved",
+      "JSON parse, linked source paths, twelve/fourteen bilingual outline cardinality",
+      "HTML language/canonical/alternate and local-fragment checks",
+      "Relevant repository preservation, publication, release and outage acceptance on exact candidate",
+      "Controller permit, exact-head protected merge and exact-SHA deployment/readback"
+    ],
+    "local_full_repository": "NOT_RUN_CONTAINER_NETWORK_UNAVAILABLE",
+    "candidate_ci": "PENDING",
+    "deployment": "PENDING",
+    "live_readback": "PENDING"
+  },
+  "privacy": "No native private emails, provider identifiers, private receipts, signatures, personal addresses, account PDFs, privileged advice or unannounced transaction-development material. The public outline is preparation, not a signed outbound letter.",
+  "closeout_rule": "The immutable preparation manifest does not self-certify deployment. Actual PR/check/controller/Pages/readback outcomes are recorded in the PR and Control Tower. Do not infer deletion safety or independent-backup completeness from this package."
+}

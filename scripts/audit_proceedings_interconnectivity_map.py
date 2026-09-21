@@ -176,9 +176,9 @@ CURRENT_CASE_PRISM_EXACT_UNCOVERED = 61
 CURRENT_DIRECT_PAIRS = 39
 CURRENT_VERIFIED_DIRECT_PAIRS = 34
 CURRENT_PENDING_DIRECT_PAIRS = 5
-CURRENT_DIRECT_ASSERTIONS = 54
-CURRENT_VERIFIED_DIRECT_ASSERTIONS = 47
-CURRENT_PENDING_DIRECT_ASSERTIONS = 7
+CURRENT_DIRECT_ASSERTIONS = 57
+CURRENT_VERIFIED_DIRECT_ASSERTIONS = 51
+CURRENT_PENDING_DIRECT_ASSERTIONS = 6
 # Immutable 31-August substantive-gap deployment denominator.  The current
 # DP 748 successor adds explicit links but does not rewrite this live snapshot.
 HISTORICAL_SUBSTANTIVE_GAP_DIRECT_PAIRS = 33
@@ -871,7 +871,14 @@ if not errors:
         Counter(actual_source_assertions) == Counter(expected_source_assertions),
         "direct relationship source assertions do not exactly preserve the canonical-field assertion multiset",
     )
-    source_verified_statuses = {"VERIFIED_PRIMARY", "VERIFIED_PRIMARY_COPY", "VERIFIED_PROCEDURAL"}
+    source_verified_statuses = {
+        "VERIFIED_PRIMARY",
+        "VERIFIED_PRIMARY_COPY",
+        "VERIFIED_PRIMARY_COPY_PHOTOGRAPH_TRANSCRIPTION",
+        "VERIFIED_PRIMARY_AVAILABLE_CORPUS_FULL_TEXT",
+        "VERIFIED_PRIMARY_IDENTITY_COPY",
+        "VERIFIED_PROCEDURAL",
+    }
     source_verified_pair_count = sum(
         all(
             assertion.get("evidence_status") in source_verified_statuses

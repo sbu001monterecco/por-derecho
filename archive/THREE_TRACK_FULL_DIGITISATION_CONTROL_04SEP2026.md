@@ -6,6 +6,18 @@
 **Working branch:** `chatgpt/three-track-full-digitisation-20260904`  
 **Publication state at creation:** branch implementation; PR/merge/deployment/live readback pending.
 
+## Successor correction — 18 September 2026
+
+This 4-September release control is retained as history. The later primary-source reconciliation controls any conflicting denominator or route shorthand below:
+
+- private-actor operative source family: **86-page 25-Jun complaint** (SHA-256 `3f4bd2bbbc963605e4cc94bc73d116157e2bf4a2266e2285b013f38de9e90736`) + **26-page 26-Jun amplification** (`a7f057fd99d0bdf1a891cf4610f69ed19788d2e40f9f23a6ff66fc6255d97846`) + **19-page 9-Jul amplification** (`0d42dcbe30679331c557f4c3750e478e592a9a449c6b5ecb84e32f6fa56ad16f`);
+- a separate 9-Jul stamped cover proves private-actor amplification/documentary material was physically tendered under **DP 1901/2026, Plaza 6**; it does not certify which June filing originally generated that DP;
+- the signed judge package is **79 pages total**; its presentation/manifiesto describes a **31-page principal-document bundle**, consisting of **4 pages of presentation/manifiesto front matter + a pleading internally paginated 27 pages**;
+- the dependent judicial supplement presented 25 June is **13 pages**, not 10;
+- DP 1901 must not be described as definitively the private-actor cause. Canonical state: **PROCEDURAL_IDENTITY_COLLISION_OPEN — DIRECTION NOT CERTIFIED**.
+
+Controls: CR-160–CR-162 and `evidence/judicial/dp-1901-2026/PROCEDURAL_IDENTITY_SOURCE_CLOSURE_18SEP2026.md`.
+
 ## 1. Purpose
 
 This control implements one public reader layer across three separate procedural tracks arising from the same Sun Park / Concurso Ordinario 36/2012 evidential matrix:

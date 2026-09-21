@@ -295,9 +295,9 @@
     "exact_direct_relationship_pair_denominator": 39,
     "exact_direct_relationship_source_verified_pair_denominator": 34,
     "exact_direct_relationship_source_reported_pending_pair_denominator": 5,
-    "exact_direct_source_assertion_denominator": 54,
-    "exact_direct_source_verified_assertion_denominator": 47,
-    "exact_direct_source_reported_pending_assertion_denominator": 7,
+    "exact_direct_source_assertion_denominator": 57,
+    "exact_direct_source_verified_assertion_denominator": 51,
+    "exact_direct_source_reported_pending_assertion_denominator": 6,
     "material_context_cluster_denominator": 26,
     "material_context_types": [
       "RECORDED_CONNECTION",

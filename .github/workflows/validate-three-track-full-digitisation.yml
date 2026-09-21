@@ -89,14 +89,20 @@ jobs:
           import json
           d=json.load(open('data/three-track-full-digitisation-20260904.json',encoding='utf-8'))
           t={x['track_id']:x for x in d['tracks']}
-          assert t['DP1901-C21']['base_filing']['pages']==69
-          assert t['DP1901-C21']['base_filing']['sha256']=='cb2ea7e6a206be97e30d28e92c330f3e40ece1d18d9964b38f9a5fd05a36c3f1'
-          assert t['DP1901-C21']['expansion']['pages']==7
-          assert t['DP1901-C21']['expansion']['sha256']=='436ffdddd8c9584a1e907cb25f1fbd9f27b82e7c6976c785fdcf09f535f3c9b9'
+          assert t['DP1901-C21']['base_filing']['pages']==86
+          assert t['DP1901-C21']['base_filing']['sha256']=='3f4bd2bbbc963605e4cc94bc73d116157e2bf4a2266e2285b013f38de9e90736'
+          assert t['DP1901-C21']['immediate_amplification']['pages']==26
+          assert t['DP1901-C21']['immediate_amplification']['sha256']=='a7f057fd99d0bdf1a891cf4610f69ed19788d2e40f9f23a6ff66fc6255d97846'
+          assert t['DP1901-C21']['expansion']['pages']==19
+          assert t['DP1901-C21']['expansion']['sha256']=='0d42dcbe30679331c557f4c3750e478e592a9a449c6b5ecb84e32f6fa56ad16f'
           assert t['DP1956-C22']['base_filing']['pages']==55
           assert t['DP1956-C22']['base_filing']['sha256']=='b11f10e7410f922a8cd1796ea462ea7ea20d555b7308e4481f2cb23732b1002b'
           assert t['C24-JUDGE']['base_filing']['pages']==79
-          assert t['C24-JUDGE']['supplement']['pages']==10
+          assert t['C24-JUDGE']['base_filing']['principal_document_bundle_pages']==31
+          assert t['C24-JUDGE']['base_filing']['presentation_front_matter_pages']==4
+          assert t['C24-JUDGE']['base_filing']['principal_pleading_pages']==27
+          assert t['C24-JUDGE']['supplement']['pages']==13
+          assert t['C24-JUDGE']['supplement']['sha256']=='04051e33000f830c32ba06e31996ba4e6812c7d54c199ee03696b85e68589679'
           print('source identity invariants valid')
           PY
 

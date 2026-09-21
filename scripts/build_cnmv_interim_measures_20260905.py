@@ -269,7 +269,9 @@ def validate(outputs):
     ck(len(json.loads(reg)['events'])==333,'Canonical event count')
     for path,text in outputs.items():
         ck((ROOT/path).exists(),'Missing output '+path)
-        ck((ROOT/path).read_text()==text,'Non-deterministic / stale output '+path)
+        from master_mynd_projection_contract import without_master_mynd_discovery
+        comparison = without_master_mynd_discovery((ROOT/path).read_text(), path)
+        ck(comparison==text,'Non-deterministic / stale output '+path)
         if path.endswith('.html'):
             parsed=Parser(text)
             if path in ROUTES.values():

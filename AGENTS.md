@@ -588,3 +588,8 @@ Yaiza/Cabildo, SAIP, benefit, harm or recovery.
   deleting a properly attributed falsifiable allegation.
 - `scripts/validate_unitary_multitrack_gap_closure.py` and its workflow remain
   advisory/shadow until expressly promoted under the enforcement-change rules.
+
+
+## MASTER MYND / Sun Park hotel address continuation — 5 September 2026
+
+Before changing the Sun Park/MYND Yaiza address or either Acosta Matos family edition, read [`SUN_PARK_MYND_YAIZA_SITE_ADDRESS_LOCK_05SEP2026.md`](SUN_PARK_MYND_YAIZA_SITE_ADDRESS_LOCK_05SEP2026.md) and `assets/data/sun-park-mynd-yaiza-site-v1.json`. Reuse existing hotel/site identity `PD-SP-O-0042`; canonical project address **Calle Janubio 3, Playa Blanca, Lanzarote 35580, Spain**. Preserve historical and current-source Avenida/Avda. Janubio s/n variants as source literals. Original four-person El Economista photograph and MASTER MYND editorial poster are separate byte-locked assets. Existing workspace `PD-WS-20260901-0001`; full workspace search label: MASTER MYND — Acosta Matos family / Sun Park / MYND Yaiza — evidential architecture, JDAM/LPAM attributed statements, El Economista image, Sun Park plans, professional architecture record and criminal-first perimeter analysis. Follow current main / Control Tower1428 and the active single integration lane; this continuation is not authority to merge concurrently.

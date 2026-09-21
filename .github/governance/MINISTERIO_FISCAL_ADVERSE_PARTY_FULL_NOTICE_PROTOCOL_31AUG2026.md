@@ -98,3 +98,23 @@ The controlling public routes are:
 - the bilingual Ministerio Fiscal open-letter/justice-register routes.
 
 Any future change to the strength, date, actor, knowledge claim, causal claim, DP 1901 status or delivery state must update the machine-readable notice control, both language routes, correction/gap controls and a publication manifest. Do not call the notice `LIVE`, `SERVED`, `RECEIVED` or `ANSWERED` without the corresponding evidence.
+
+
+## Public PDF publication rule — 18 September 2026
+
+Any new **public-safe** Ministerio Fiscal/Fiscalía PDF committed under `evidence/fiscalia/**` must be published as part of the same change set with:
+
+1. an embedded in-page PDF viewer;
+2. a contextual explanation stating why the document matters;
+3. an explicit evidential boundary stating what the document does **not** establish;
+4. links to the relevant proceeding/actor route and the wider Ministerio Fiscal / E.G. 745 route where applicable; and
+5. registration in `assets/data/ministerio-fiscal-pdf-room-20260918.json`.
+
+The bilingual document rooms are:
+
+- `/es/ministerio-fiscal-documentos-pdf/`
+- `/en/public-prosecution-pdf-document-room/`
+
+This rule does not authorise publication of private native PDFs merely to satisfy a viewer requirement. A native source containing personal data, contact/certificate material or other protected content remains outside public Git until a controlled public-safe derivative is intentionally created and validated.
+
+The CI gate `scripts/validate_ministerio_fiscal_pdf_room.py` must fail if a PDF is added under `evidence/fiscalia/**` without register/viewer/context/interconnectivity coverage.

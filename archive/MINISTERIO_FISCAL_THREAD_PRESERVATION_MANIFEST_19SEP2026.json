@@ -1,0 +1,58 @@
+{
+  "schema": "por-derecho.thread-preservation-manifest.v1",
+  "control_date": "2026-09-19",
+  "thread_scope": "Ministerio Fiscal organogram, canonical register, GitHub update, continuity and preservation audit",
+  "repository": "sbu001monterecco/por-derecho",
+  "implementation_pr": 1638,
+  "implementation_merge_commit": "d22c71b0136aca91009a5eb59c6a1af46ea7f99d",
+  "thread_created_paths": [
+    "assets/data/ministerio-fiscal-canonical-register-20260919.json",
+    "es/ministerio-fiscal/registro-canonico/index.html",
+    "en/public-prosecution-service/canonical-register/index.html",
+    "archive/MINISTERIO_FISCAL_GITLAB_RESTORE_MIRROR_QUEUE_19SEP2026.md",
+    "scripts/validate_ministerio_fiscal_canonical_register_20260919.py",
+    "deployment-probes/ministerio-fiscal-canonical-register-20260919.json"
+  ],
+  "thread_modified_paths": [
+    "es/ministerio-fiscal/index.html",
+    "en/public-prosecution-service/index.html",
+    "es/ministerio-fiscal-cobertura-oficinas/index.html",
+    "en/public-prosecution-office-coverage/index.html"
+  ],
+  "historical_native_binary_gaps": [
+    {
+      "audit_id": "MF-THR-BIN-001",
+      "filename": "DenPenFISCALIA 2014 Desahucio DOCUMENTO.pdf",
+      "size_bytes": 214283,
+      "sha256": "d90871143be51cf4865091380719dbdee679a7e14a3a743537c35f4140f5ea1c",
+      "state": "MATERIALISED_HASH_LOCKED_NOT_YET_GITHUB_BINARY"
+    },
+    {
+      "audit_id": "MF-THR-BIN-002",
+      "filename": "ampliacionfiscalialaspalmas.pdf",
+      "size_bytes": 399533,
+      "sha256": "7e0ac2d60725660e18b76f939771659cb2f66402c6ade5148f4feadd9144a64f",
+      "state": "MATERIALISED_HASH_LOCKED_NOT_YET_GITHUB_BINARY"
+    },
+    {
+      "audit_id": "MF-THR-BIN-003",
+      "filename": "BORJAFISCALIAOK.pdf",
+      "size_bytes": 352646,
+      "sha256": "6d1da3c44a3de3d54f399ef742412a1d96d6b9e2d7b1a14d503824d633897d98",
+      "state": "MATERIALISED_HASH_LOCKED_NOT_YET_GITHUB_BINARY"
+    },
+    {
+      "audit_id": "MF-THR-BIN-004",
+      "filename": "Personacion Raymond..pdf",
+      "size_bytes": 35083,
+      "sha256": "213df7df20343f48368f1ce9ae87f103c857f1bd35206f827c4c0376b2fb908e",
+      "state": "MATERIALISED_HASH_LOCKED_NOT_YET_GITHUB_BINARY"
+    }
+  ],
+  "audit_result": {
+    "repository_continuity": "PASS",
+    "thread_created_work_product_on_github": "PASS",
+    "all_native_historical_files_on_github": "FAIL_OPEN",
+    "deletion_safe_for_full_native_file_preservation": false
+  }
+}
