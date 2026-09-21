@@ -10,10 +10,10 @@ try {
   const dataResponse = await context.request.get(`${base}/assets/data/fiscalia-proceedings-interconnectivity-v1.json`);
   if (!dataResponse.ok()) fail(`interconnectivity data returned ${dataResponse.status()}`);
   const data = await dataResponse.json();
-  if (data.coverage.communication_events !== 296) fail('communication denominator is not 296');
-  if (data.coverage.matter_linked_events !== 117) fail('matter-linked denominator is not 117');
+  if (data.coverage.communication_events !== 320) fail('communication denominator is not 320');
+  if (data.coverage.matter_linked_events !== 141) fail('matter-linked denominator is not 141');
   if (data.coverage.fiscalia_exact_files !== 23 || data.coverage.fiscalia_unresolved_references !== 3) fail('Fiscalía identity denominator is not 23 + 3');
-  if (data.event_proceeding_edges.length !== 139 || data.event_event_edges.length !== 84) fail('graph edge denominator changed');
+  if (data.event_proceeding_edges.length !== 164 || data.event_event_edges.length !== 84) fail('graph edge denominator changed');
   if (data.priority_chains.length !== 9) fail('priority-chain denominator is not nine');
   await context.close();
 

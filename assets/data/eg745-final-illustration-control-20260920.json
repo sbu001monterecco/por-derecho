@@ -1,6 +1,6 @@
 {
   "schema": "por-derecho.eg745-final-illustration-control.v1",
-  "status": "PREPARED_UNSIGNED_NOT_FILED",
+  "status": "ALL_22_ILLUSTRATIONS_REGISTERED_IN_DELIVERIES_1_AND_2",
   "source_image_count": 22,
   "source_pixels_modified": false,
   "items": [
@@ -332,5 +332,11 @@
     "sha256": "ded8887dd51561af9a11483c48207da5a9d1d1e5dada2055f6d647f4dc08b73b",
     "reason": "Contains private correspondence/account/profile source excerpts; full composite not published."
   },
-  "proof_limit": "The grave scene is a labelled metaphor, not evidence of destruction, merger of proceedings or guilt. Ref.21 private-actor complaint and Ref.24 judicial-conduct notice remain distinct; original certified records control."
+  "proof_limit": "The grave scene is a labelled metaphor, not evidence of destruction, merger of proceedings or guilt. Ref.21 private-actor complaint and Ref.24 judicial-conduct notice remain distinct; original certified records control.",
+  "registration_proof": {
+    "part_1": "REGAGE26e00082068814",
+    "part_2": "REGAGE26e00082069039",
+    "receipt_fingerprints_match": true,
+    "delivery_control": "assets/data/eg745-final-delivery-control-20260920.json"
+  }
 }

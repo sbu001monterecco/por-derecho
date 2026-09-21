@@ -1,0 +1,89 @@
+{
+  "status": "REGISTERED_SUBMISSION_01_OF_10_RECEIPT_VERIFIED",
+  "reference": "E.G.745/2026",
+  "registration": "REGAGE26e00082068814",
+  "presentation_datetime_literal": "21/09/2026 01:54:19",
+  "registration_datetime_literal": "21/09/2026 01:54:23",
+  "timezone": "Not specified in printed receipt; preserve literal portal time",
+  "recipient_dir3": "J00003992",
+  "recipient": "Fiscalía General del Estado",
+  "attention": "Inspección Fiscal",
+  "receipt_pages": 3,
+  "receipt_sha256": "18dfc06cccd8122008e1aaa3c9a6a797413da375c32f2f111f5662fa9aa69e63",
+  "all5_exact_fingerprints_verified": true,
+  "substantive_appeal_registered": true,
+  "annex_submissions_verified": 1,
+  "annex_submissions_planned": 10,
+  "remaining_submission_numbers": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "admission_or_substantive_examination_proved": false,
+  "attachments": [
+    {
+      "filename": "06_EG745_VISUALES_1.pdf",
+      "pages": 5,
+      "bytes": 9355099,
+      "receipt_sha512": "927f4818d63d9c3734e9db4c3fe66f179370c50edee0e3b9d19b35124b350af7c2792660bf72da0c7ae14cbd7d75b6e9956f1d090c6690e2d449bf4fc91ad823",
+      "sha256": "f37a803f06eaa1f6e04f597f3bb4c1e91b23f2a94b008b5496d59ac4631bdd8d",
+      "exact_match": true,
+      "prepared_raw_sha256": "f37a803f06eaa1f6e04f597f3bb4c1e91b23f2a94b008b5496d59ac4631bdd8d",
+      "served_copy_differs_from_raw": false
+    },
+    {
+      "filename": "01_EG745_RECURSO_REPOSICION.pdf",
+      "pages": 20,
+      "bytes": 261097,
+      "receipt_sha512": "583007f2e01872ba4913a8d1a349db27bfe72bfe2da77c4be600dada2acf4d22ea4f92f2ef58a59d6fdc22ee5312101d0374be2c46d4476836b46a775e3c199e",
+      "sha256": "8aaff100478a394b4a06c419666a56baa9dcd3dc649af9950b72ef07d720c3cd",
+      "exact_match": true,
+      "prepared_raw_sha256": "3d1300b31e75da8832b446d7fd9d7c530af6285957236a7dce15751c2c728e9b",
+      "served_copy_differs_from_raw": true
+    },
+    {
+      "filename": "02_EG745_ANEXO_ANALITICO.pdf",
+      "pages": 28,
+      "bytes": 701362,
+      "receipt_sha512": "82848fbd8622862c1dfaf20d11c63cea95fac5660c1d1790505c78b56a1468e435812537991e009c57752d50f6d0a574bfa06b82e7e023325c7702a50919a819",
+      "sha256": "5f800cd7b2e344ca5a9d17f2bb4aba39f73f8b3034c2e87b3308ad2be1470510",
+      "exact_match": true,
+      "prepared_raw_sha256": "5f800cd7b2e344ca5a9d17f2bb4aba39f73f8b3034c2e87b3308ad2be1470510",
+      "served_copy_differs_from_raw": false
+    },
+    {
+      "filename": "03_EG745_INDICE_APORTACION.pdf",
+      "pages": 6,
+      "bytes": 87008,
+      "receipt_sha512": "76ba8b92c7a0f730573bdae869a29c1eb34ce669199f78b8945c0f04e9e7f1cb8fa0928607cc06a02332e9b3496bef6ee3766c34982cb92cf27da0706f49d825",
+      "sha256": "474a272cf7d4cd1e56b564cfc19df2af3c34aa61ef0f524af9622f39aa527486",
+      "exact_match": true,
+      "prepared_raw_sha256": "7fc4eec91f84979cd6a993c3ec0c8dd918eef4c0100f8fe8e888da2dcfddc844",
+      "served_copy_differs_from_raw": true
+    },
+    {
+      "filename": "EG745_DOCUMENTOS_NUCLEO_D1_D7_SUP01_05.pdf",
+      "pages": 44,
+      "bytes": 2968107,
+      "receipt_sha512": "75161915adf83806fed55c78823186d17b270ee8d3c26c60054d603bf5f05044291b88be36b3f2f43bf08fb397ebc55001048a91c1338e86903a25cee6326817",
+      "sha256": "aac46664f3028d0c1b1494ddb356cec90e2978941cd72309702398c9aabc01e4",
+      "exact_match": true,
+      "prepared_raw_sha256": "aac46664f3028d0c1b1494ddb356cec90e2978941cd72309702398c9aabc01e4",
+      "served_copy_differs_from_raw": false
+    }
+  ],
+  "scope": "Public-safe registry and attachment fingerprint verification. Native receipt, private PDF bodies and private identifiers remain outside public Git.",
+  "canonical_communications_register": "assets/data/institutional-communications-register-v1.json",
+  "canonical_event_allocation": "Allocated in this current-main-based canonical integration candidate; effective on main only after governed merge.",
+  "preparation_revision_commit": "7ec56599dadb67018c363121899e7cc4534a675c",
+  "main_integration": "Pending held publication controller; worker preservation only",
+  "canonical_event_id": "PD-SP-EVT-0203",
+  "canonical_anchor_en": "en/institutional-records/#communication-PD-SP-EVT-0203",
+  "canonical_anchor_es": "es/registros-institucionales/#communication-PD-SP-EVT-0203"
+}
