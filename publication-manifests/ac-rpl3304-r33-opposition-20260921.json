@@ -7,10 +7,10 @@
   "current_state": "PR_OPEN",
   "expected_routes": {
     "es": [
-      "/es/concurso-36-2012-oposicion-ac-apelacion-lpb-septiembre-2026/"
+      "es/concurso-36-2012-oposicion-ac-apelacion-lpb-septiembre-2026/index.html"
     ],
     "en": [
-      "/en/insolvency-36-2012-ac-opposition-lpb-appeal-september-2026/"
+      "en/insolvency-36-2012-ac-opposition-lpb-appeal-september-2026/index.html"
     ]
   },
   "predecessor_pr": 1696,
@@ -64,5 +64,6 @@
   ],
   "frozen_corpus_boundary": "The Aug-23 fixed 50-specialist / 127-complete-record catalogues remain unchanged; R33 is a post-cutoff additive source page, not silently inserted into those frozen denominators.",
   "authority": "Gil Marer instruction: take over and do it now.",
-  "state_note": "Open current-main-based PR; not merged, deployed or live-verified."
+  "state_note": "Open current-main-based PR; not merged, deployed or live-verified.",
+  "controlled_extract_path": "evidence/insolvency-36-2012/rpl-3304-2025/R33-oposicion-ac-apelacion-lpb-septiembre-2026-controlled-extracts.md"
 }
