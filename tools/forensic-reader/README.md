@@ -16,6 +16,21 @@ VERIFY = factual proposition to check; CONTRADICTED = identified documentary con
 
 A red contradiction requires a source identifier and pinpoint. This is a structural guard, not an automated assessment of the evidence. Reviewed status requires an identified reviewer. Repetition, benefit, shared actors or a hyperlink alone does not establish knowledge, intent or coordination.
 
+## Truth reconstruction / “Liar Liar” mode
+
+Version 1.1 adds a human-reviewed **evidence-constrained restatement** layer on top of the unchanged source and existing annotations. The satire is the entry point; the evidential rule is serious: the tool does **not** decide that an author lied and does not calculate a truth percentage.
+
+For a selected passage the reviewer can record one atomic claim, its current status (`UNTESTED / SUPPORTED / PARTIAL / CONTRADICTED / UNRESOLVED / RHETORICAL_OR_LEGAL`), material omitted context, the real actor/power/capacity question, a knowledge state, the causal bridge and a proposed minimum restatement. A restatement can be `PROPOSED / ACCEPTED / EDITED / REJECTED / UNRESOLVED`.
+
+Fail-closed controls:
+- `CONTRADICTED` requires a pinpointed `CONTRADICTS` evidence relation.
+- `ACCEPTED` or `EDITED` requires `REVIEWED` status, an identified reviewer and non-empty restatement text.
+- The Truth Delta is a count of review states and evidential flags, never a numerical “truth score”.
+- Unresolved propositions remain unresolved. The tool must prefer an explicit uncertainty statement over an invented correction.
+- AI-generated claim decomposition or restatements, when added later, must enter as proposals only and cannot promote themselves into reviewed case facts.
+
+The current public implementation is deliberately dependency-free and zero-network. A future AI adapter may use local browser inference, a local desktop service, or an explicitly approved remote model, but the evidence/review contract remains the same. See `research/forensic-working-documents-20260921/LIAR_LIAR_READINESS.md`.
+
 ## Privacy and limits
 
 No dependencies, analytics, remote upload, automatic source search, cloud synchronization or credential storage. Outbound evidence links open only on user action. Preserve private sources, working analysis and private locators outside public Git, including public branches and PRs. Do not mistake `noindex` or an unlinked path for access control.
