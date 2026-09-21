@@ -187,3 +187,14 @@ The 13-page Control 24 canonical source is `APORTACION_COMPLEMENTARIA_CONTROL_24
 All three ES dossiers and all three EN dossiers now link to the same six-document manifest and to each other. The validator `scripts/validate_control_21_22_24_reader_binding.py` fails closed if a page count, source hash, total, corpus binding or reciprocal dossier link drifts.
 
 The publication boundary remains precise: **full digitisation in Git** means exact source identity + complete page coverage + controlled searchable/indexed representation + reciprocal repository linkage. It does not by itself certify byte-identical court ingestion or require public exposure of every unredacted raw source binary.
+
+
+## 12. Frozen/current text architecture
+
+The three-track digitisation is now backed by complete text files stored in Git. The frozen layer is immutable and page-marked; the current layer is separately maintainable and contains the complete text plus editorial overlay.
+
+- Control 21 frozen coverage: **86 + 26 + 19 = 131 pages**; current coverage: **131 page markers**.
+- Control 22 frozen coverage: **55 pages**; current coverage: **55 page markers**.
+- Control 24 frozen coverage: **79 + 13 = 92 pages**; current coverage: **92 page markers**.
+
+Canonical text paths are registered in `data/control-21-22-24-source-corpus-20260921.json`. The PDFs remain source-hash authorities but do not need to be publicly published.
