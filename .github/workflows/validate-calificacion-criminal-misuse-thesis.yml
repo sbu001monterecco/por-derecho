@@ -3,8 +3,56 @@ name: Validate Calificacion criminal-misuse thesis
 on:
   pull_request:
     branches: [main]
+    # Conservative dependency union; see ops/continuity/GITHUB_CONGESTION_WINDOW_20260919.md.
+    paths:
+      - 'AGENTS.md'
+      - '.github/copilot-instructions.md'
+      - 'en/**'
+      - 'es/**'
+      - 'assets/**'
+      - 'archive/**'
+      - 'evidence/**'
+      - 'drafts/**'
+      - 'publication-manifests/**'
+      - 'scripts/validate_ministerio_fiscal_adverse_party_full_notice.py'
+      - 'scripts/validate_calificacion_criminal_misuse_thesis.py'
+      - 'scripts/validate_calificacion_position_objectives.py'
+      - 'scripts/validate_calificacion_rpl2523_evidence_map.py'
+      - 'scripts/render_calificacion_criminal_misuse_thesis.mjs'
+      - '.github/governance/**'
+      - 'docs/**'
+      - 'ops/CURRENT_STATE.json'
+      - 'ops/CURRENT_UNITARY_STATE.json'
+      - 'sitemap*.xml'
+      - 'package*.json'
+      - '.github/workflows/validate-ministerio-fiscal-adverse-party-full-notice.yml'
+      - '.github/workflows/validate-calificacion-criminal-misuse-thesis.yml'
   push:
     branches: [main]
+    # Conservative dependency union; see ops/continuity/GITHUB_CONGESTION_WINDOW_20260919.md.
+    paths:
+      - 'AGENTS.md'
+      - '.github/copilot-instructions.md'
+      - 'en/**'
+      - 'es/**'
+      - 'assets/**'
+      - 'archive/**'
+      - 'evidence/**'
+      - 'drafts/**'
+      - 'publication-manifests/**'
+      - 'scripts/validate_ministerio_fiscal_adverse_party_full_notice.py'
+      - 'scripts/validate_calificacion_criminal_misuse_thesis.py'
+      - 'scripts/validate_calificacion_position_objectives.py'
+      - 'scripts/validate_calificacion_rpl2523_evidence_map.py'
+      - 'scripts/render_calificacion_criminal_misuse_thesis.mjs'
+      - '.github/governance/**'
+      - 'docs/**'
+      - 'ops/CURRENT_STATE.json'
+      - 'ops/CURRENT_UNITARY_STATE.json'
+      - 'sitemap*.xml'
+      - 'package*.json'
+      - '.github/workflows/validate-ministerio-fiscal-adverse-party-full-notice.yml'
+      - '.github/workflows/validate-calificacion-criminal-misuse-thesis.yml'
 
 permissions:
   contents: read

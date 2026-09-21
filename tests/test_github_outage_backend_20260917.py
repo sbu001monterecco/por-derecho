@@ -7,6 +7,7 @@ import sys
 import unittest
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
+WORKFLOW_PATH = ROOT / ".github" / "workflows" / "outage-backend-parity.yml"
 CLASSIFIER_PATH = ROOT / "scripts" / "classify_public_impact_shadow_20260917.py"
 PARITY = ROOT / "ops" / "continuity" / "GITHUB_OPERATIONAL_BACKEND_PARITY_20260917.json"
 RECOVERY = ROOT / "ops" / "continuity" / "GITHUB_OPERATIONAL_BACKEND_RECOVERY_20260917.md"
@@ -23,8 +24,14 @@ spec.loader.exec_module(mod)
 
 class OutageBackendParityTests(unittest.TestCase):
     def test_required_recovery_controls_exist(self):
-        for path in (CLASSIFIER_PATH, PARITY, RECOVERY, COPILOT, DUO_PROTOCOL, REGISTRY):
+        for path in (WORKFLOW_PATH, CLASSIFIER_PATH, PARITY, RECOVERY, COPILOT, DUO_PROTOCOL, REGISTRY):
             self.assertTrue(path.is_file(), path)
+
+    def test_required_outage_context_runs_on_every_pull_request(self):
+        workflow = WORKFLOW_PATH.read_text(encoding="utf-8")
+        pull_request_block = workflow.split("  pull_request:", 1)[1].split("\n\npermissions:", 1)[0]
+        self.assertNotIn("paths:", pull_request_block)
+        self.assertIn("name: Outage backend parity / validate", workflow)
 
     def test_parity_manifest_anchors_are_exact(self):
         data = json.loads(PARITY.read_text(encoding="utf-8"))

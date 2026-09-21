@@ -1,0 +1,70 @@
+{
+  "schema": "por-derecho.publication-state.v1",
+  "schema_version": "1.0.0",
+  "publication_id": "PD-DP1901-PLATFORM-NEXUS-20260920-01",
+  "current_state": "PREPARED_PENDING_MERGE",
+  "owner": "DP1901-PLATFORM-RECOVERY-NEXUS-20260920",
+  "source_base_sha": "0029415c77035785ea65ecf71655f96843ed4036",
+  "authority": "Current user instruction to interlink the complete thread with the DP1901 handling problem, scan the sources and update the thesis",
+  "control_tower_receipt": "https://github.com/sbu001monterecco/por-derecho/issues/1428#issuecomment-5752598831",
+  "expected_routes": {
+    "es": ["es/dp-1901-plataforma-recuperacion/index.html", "es/presidencia-plataforma-grupo-recuperacion/index.html", "es/dp-1901-2026/index.html"],
+    "en": ["en/dp-1901-platform-recovery/index.html", "en/presidencia-platform-group-recovery/index.html", "en/dp-1901-2026/index.html"]
+  },
+  "full_affected_route_inventory": "assets/data/dp1901-platform-recovery-nexus-20260920.json",
+  "scope_counts": {"existing_routes":42,"new_central_routes":2,"typed_nodes":21,"typed_edges":21,"native_source_copies":3,"source_pages":131,"expone":12,"solicita":14},
+  "expected_source_files": [
+    "archive/DP1901_PLATFORM_RECOVERY_NEXUS_THESIS_20SEP2026.md",
+    "archive/PRESIDENCIA_PUBLIC_THESIS_EXPONE_SOLICITA_20SEP2026.md",
+    "assets/data/dp1901-platform-recovery-nexus-20260920.json",
+    "assets/data/dp1901-routing-collision-v1.json",
+    "assets/dp1901-platform-recovery-nexus-20260920.js",
+    "assets/dp1901-platform-recovery-nexus-20260920.css",
+    "assets/site.js",
+    "en/dp-1901-platform-recovery/index.html",
+    "es/dp-1901-plataforma-recuperacion/index.html",
+    "en/presidencia-platform-group-recovery/index.html",
+    "es/presidencia-plataforma-grupo-recuperacion/index.html",
+    "scripts/validate_dp1901_platform_nexus.py",
+    "scripts/render_dp1901_platform_nexus.mjs",
+    ".github/workflows/validate-dp1901-platform-nexus.yml"
+  ],
+  "changed_path_count":15,
+  "preservation": "Additive reader sections through a route-scoped module, two new central readers, exact original site.js prefix preserved, one script insertion in each Presidencia reader, one outline addendum and one routing-data field. All original routing nodes, evidence weighting, filing states, source bodies, images and prior outline points remain. No private original or new historical event ID.",
+  "scope": [
+    "Connect an already articulated private platform/finance/recovery subject to the DP1901 object/disposition question",
+    "Preserve the separate Ref21-private versus Ref24-judge subject issue and Ref24's own broader-pre2025 versus 2025-reasoning issue",
+    "Reconcile three recovered source copies with the existing canonical inventory without upgrading receipt/incorporation/examination",
+    "Connect Fiscal29, Auto14, DIP2, E.G.745 and DI22 through their actual distinct acts and open corpus questions",
+    "Reciprocal typed links across the group, Community, document authority, digital identity, RICPE, funds, multiple financial uses, recovery and Presidencia",
+    "Update the twelve/fourteen-point institutional outline without rewriting earlier content or creating a signed filing",
+    "Add a narrowly scoped read-only static/browser workflow using the existing pinned stack; no new server-required check or changed permissions"
+  ],
+  "validation": {
+    "local_static": "PASS: 21 nodes,21 edges,42 existing routes,2 central routes,3 copies/131 pages,12 EXPONE/14 SOLICITA",
+    "local_preservation": "PASS: current Pages artifact baseline; every modified original source retained, original routing object equal after removing additive field",
+    "javascript_syntax": "PASS for loader, scoped module and browser script",
+    "local_url_browser": "BLOCKED_BY_ENVIRONMENT_POLICY; not passed and not treated as a source defect",
+    "offline_layout": "Both new reader HTML documents rendered through set_content; Spanish screenshot visually inspected. This is not URL navigation or runtime verification.",
+    "candidate_browser": "PENDING: all44 routes on desktop/mobile,88 cases, reports/screenshots",
+    "candidate_acceptance": "PENDING exact-head required release/publication/outage and affected checks",
+    "deployment_and_readback": "PENDING controller permit, normal protected merge and exact-SHA verification"
+  },
+  "evidence_limits": [
+    "Matching source copies do not establish the actual court index, incorporation, Fiscal corpus, examination or truth of the allegations",
+    "The26-June supplement is a working source, not an independently verified filing",
+    "Ref21-origin has contemporaneous corroboration; official creation/reparto and laterRef24 association remain unproduced",
+    "The29-July report's author and corpus cannot be inferred from the separate DI22 decree",
+    "The order is sobreseimiento libre; finality, notifications and personal/corporate remedy positions require separate verification",
+    "No refusal to investigate is automatically criminal or proves a particular compensable loss",
+    "Whole-wealth investigation is not all-wealth taint, a blanket freeze or automatic proprietary recovery",
+    "The substantive correction does not rewrite the original criminal charging choices or merge proceedings",
+    "GitLab public fetch limitations are not proof of deletion or parity; no authenticated blocked-repository access",
+    "No exhaustive source, annex, email, court-file or independent-backup completeness claim"
+  ],
+  "filing_state_source": "assets/data/dp1901-direct-action-state-20260920.json",
+  "filing_states_changed":false,
+  "privacy": "No native private complaints, email bodies/provider identifiers, personal identity data, signatures, privileged advice or unannounced transaction material. Minimized source hashes/counts and source-derived propositions only.",
+  "external_actions": {"official_filing":false,"email":false,"authority_contact":false,"asset_restriction":false,"gitlab_repository_mutation":false},
+  "closeout_rule": "This preparation manifest does not self-certify release. Exact candidate, checks, controller fence, merge, Pages and scoped readback results must be recorded in the PR and Control Tower."
+}

@@ -1,0 +1,343 @@
+{
+  "schema": "por-derecho.research-bibliography-crosswalk.v1",
+  "research_control": "PD-RESEARCH-TROLLEY-MEDIA-20260920",
+  "cut_off": "2026-09-20",
+  "base_sha": "0029415c77035785ea65ecf71655f96843ed4036",
+  "status": "WORKER_SOURCE_NOT_MERGED_OR_DEPLOYED",
+  "source_register": {
+    "path": "archive/research/trolley-media-20260920/ACOSTA_MATOS_CANARY_MEDIA_2010_2026_SOURCE_REGISTER.md",
+    "sha256": "8bbee2e749fce7af522f1e40ab0c4ef682457650d26b85adfba038dd928906c5",
+    "bytes": 17426,
+    "count": 36,
+    "date_and_url_source": "S01-S36 entries in the unchanged source register"
+  },
+  "semantics": "Local bibliography crosswalk, not a parallel canonical event register. Null IDs mean canonical matching remains open, not that the underlying source is nonexistent. Context classes identify research subjects, not proved relationships for every item. Do not allocate duplicate source/event IDs.",
+  "existing_relationship_taxonomy": "data/acosta-matos-hotel-platform-page-foundation-20260901.json",
+  "context_routes": {
+    "earlier": [
+      "archive/ACOSTA_MATOS_WEALTH_TRAJECTORY_REVIEW_20SEP2026.md"
+    ],
+    "capital": [
+      "archive/ACOSTA_MATOS_WEALTH_TRAJECTORY_REVIEW_20SEP2026.md",
+      "es/ric-private-equity-sun-park/index.html",
+      "en/ric-private-equity-sun-park/index.html"
+    ],
+    "hospitality": [
+      "es/acosta-matos-plataforma-hotelera/index.html",
+      "en/acosta-matos-hotel-platform/index.html"
+    ],
+    "sunpark": [
+      "archive/PRESIDENCIA_PLATFORM_RECOVERY_THREAD_20SEP2026.md",
+      "es/ricpe-hnt-gc836-trazabilidad/index.html",
+      "en/ricpe-hnt-gc836-traceability/index.html"
+    ],
+    "network": [
+      "es/acosta-matos-perimetro/index.html",
+      "en/acosta-matos-perimeter/index.html"
+    ],
+    "archive": [
+      "es/canarias7-articulo-30mayo2022/index.html"
+    ]
+  },
+  "context_relationship_questions": {
+    "earlier": [
+      "DEVELOPER_BUILDER_REHABILITATOR",
+      "MEDIA_REPORTING_VISIBILITY"
+    ],
+    "capital": [
+      "RICPE_FINANCING",
+      "GOVERNANCE_BOARD_OFFICER",
+      "OPEN_OR_UNVERIFIED_RELATION"
+    ],
+    "hospitality": [
+      "HOTEL_MANAGER_OPERATOR_LESSEE",
+      "DEVELOPER_BUILDER_REHABILITATOR",
+      "FRANCHISE_OR_GLOBAL_BRAND"
+    ],
+    "sunpark": [
+      "OWNERSHIP_TITLE",
+      "RICPE_FINANCING",
+      "DEVELOPER_BUILDER_REHABILITATOR"
+    ],
+    "network": [
+      "GOVERNANCE_BOARD_OFFICER",
+      "CO_INVESTOR_EXACT_PERCENTAGE_OPEN",
+      "REPUTATIONAL_ASSOCIATION"
+    ],
+    "archive": [
+      "MEDIA_REPORTING_VISIBILITY",
+      "OPEN_OR_UNVERIFIED_RELATION"
+    ]
+  },
+  "items": [
+    {
+      "id": "S01",
+      "context": "earlier",
+      "access": "Regional media; indexed text.",
+      "canonical_source_id": null,
+      "canonical_event_id": null
+    },
+    {
+      "id": "S02",
+      "context": "earlier",
+      "access": "Judgment text; opened.",
+      "canonical_source_id": null,
+      "canonical_event_id": null
+    },
+    {
+      "id": "S03",
+      "context": "earlier",
+      "access": "Judgment text; search extract.",
+      "canonical_source_id": null,
+      "canonical_event_id": null
+    },
+    {
+      "id": "S04",
+      "context": "earlier",
+      "access": "Corporate primary statement; opened.",
+      "canonical_source_id": null,
+      "canonical_event_id": null
+    },
+    {
+      "id": "S05",
+      "context": "hospitality",
+      "access": "News agency; opened.",
+      "canonical_source_id": null,
+      "canonical_event_id": null
+    },
+    {
+      "id": "S06",
+      "context": "capital",
+      "access": "Regional media; opened.",
+      "canonical_source_id": null,
+      "canonical_event_id": null
+    },
+    {
+      "id": "S07",
+      "context": "hospitality",
+      "access": "Regional media; indexed text.",
+      "canonical_source_id": null,
+      "canonical_event_id": null
+    },
+    {
+      "id": "S08",
+      "context": "capital",
+      "access": "Regional media; opened.",
+      "canonical_source_id": null,
+      "canonical_event_id": null
+    },
+    {
+      "id": "S09",
+      "context": "hospitality",
+      "access": "Regional media; opened.",
+      "canonical_source_id": null,
+      "canonical_event_id": null
+    },
+    {
+      "id": "S10",
+      "context": "hospitality",
+      "access": "Tourism trade media; indexed text.",
+      "canonical_source_id": null,
+      "canonical_event_id": null
+    },
+    {
+      "id": "S11",
+      "context": "sunpark",
+      "access": "Official corporate notice; opened.",
+      "canonical_source_id": null,
+      "canonical_event_id": null
+    },
+    {
+      "id": "S12",
+      "context": "sunpark",
+      "access": "Regional media; opened.",
+      "canonical_source_id": null,
+      "canonical_event_id": null
+    },
+    {
+      "id": "S13",
+      "context": "capital",
+      "access": "Agency report expressly based on company release; opened.",
+      "canonical_source_id": null,
+      "canonical_event_id": null
+    },
+    {
+      "id": "S14",
+      "context": "network",
+      "access": "Regional media; indexed text.",
+      "canonical_source_id": null,
+      "canonical_event_id": null
+    },
+    {
+      "id": "S15",
+      "context": "hospitality",
+      "access": "Regional media; opened.",
+      "canonical_source_id": null,
+      "canonical_event_id": null
+    },
+    {
+      "id": "S16",
+      "context": "capital",
+      "access": "Regional media; opened / indexed passage.",
+      "canonical_source_id": null,
+      "canonical_event_id": null
+    },
+    {
+      "id": "S17",
+      "context": "capital",
+      "access": "Regional media; indexed text.",
+      "canonical_source_id": null,
+      "canonical_event_id": null
+    },
+    {
+      "id": "S18",
+      "context": "hospitality",
+      "access": "News agency; indexed text.",
+      "canonical_source_id": null,
+      "canonical_event_id": null
+    },
+    {
+      "id": "S19",
+      "context": "capital",
+      "access": "National financial media supplement; opened.",
+      "canonical_source_id": null,
+      "canonical_event_id": null
+    },
+    {
+      "id": "S20",
+      "context": "hospitality",
+      "access": "News agency; opened.",
+      "canonical_source_id": null,
+      "canonical_event_id": null
+    },
+    {
+      "id": "S21",
+      "context": "hospitality",
+      "access": "Regional media; indexed text only.",
+      "canonical_source_id": null,
+      "canonical_event_id": null
+    },
+    {
+      "id": "S22",
+      "context": "network",
+      "access": "Regional radio/media; opened.",
+      "canonical_source_id": null,
+      "canonical_event_id": null
+    },
+    {
+      "id": "S23",
+      "context": "hospitality",
+      "access": "Executive interview; opened.",
+      "canonical_source_id": null,
+      "canonical_event_id": null
+    },
+    {
+      "id": "S24",
+      "context": "capital",
+      "access": "Opinion article; opened.",
+      "canonical_source_id": null,
+      "canonical_event_id": null
+    },
+    {
+      "id": "S25",
+      "context": "hospitality",
+      "access": "Agency/company announcement; opened.",
+      "canonical_source_id": null,
+      "canonical_event_id": null
+    },
+    {
+      "id": "S26",
+      "context": "network",
+      "access": "Regional media with evaluative commentary; opened.",
+      "canonical_source_id": null,
+      "canonical_event_id": null
+    },
+    {
+      "id": "S27",
+      "context": "network",
+      "access": "Official corporate notice; opened.",
+      "canonical_source_id": null,
+      "canonical_event_id": null
+    },
+    {
+      "id": "S28",
+      "context": "network",
+      "access": "Regional radio/media; opened.",
+      "canonical_source_id": null,
+      "canonical_event_id": null
+    },
+    {
+      "id": "S29",
+      "context": "network",
+      "access": "Corporate primary announcement; retrieved.",
+      "canonical_source_id": null,
+      "canonical_event_id": null
+    },
+    {
+      "id": "S30",
+      "context": "network",
+      "access": "Regional media; indexed text.",
+      "canonical_source_id": null,
+      "canonical_event_id": null
+    },
+    {
+      "id": "S31",
+      "context": "capital",
+      "access": "Derivative English republication; opened; original fetch failed.",
+      "canonical_source_id": null,
+      "canonical_event_id": null
+    },
+    {
+      "id": "S32",
+      "context": "capital",
+      "access": "Corporate primary description; retrieved.",
+      "canonical_source_id": null,
+      "canonical_event_id": null
+    },
+    {
+      "id": "S33",
+      "context": "capital",
+      "access": "Corporate primary description; opened.",
+      "canonical_source_id": null,
+      "canonical_event_id": null
+    },
+    {
+      "id": "S34",
+      "context": "network",
+      "access": "Foundation primary report; opened.",
+      "canonical_source_id": null,
+      "canonical_event_id": null
+    },
+    {
+      "id": "S35",
+      "context": "archive",
+      "access": "User archive; search extract; original not independently recovered.",
+      "canonical_source_id": null,
+      "canonical_event_id": null
+    },
+    {
+      "id": "S36",
+      "context": "capital",
+      "access": "Corporate primary description; retrieved.",
+      "canonical_source_id": null,
+      "canonical_event_id": null
+    }
+  ],
+  "readers": {
+    "en": "en/acosta-matos-media-property-remedies/index.html",
+    "es": "es/acosta-matos-medios-propiedad-remedios/index.html"
+  },
+  "open_work": [
+    "Contemporaneous 2010-2017 press coverage",
+    "Original German/Foot/Thomson texts and direct comparative-case application",
+    "Canonical source identity matching and reciprocal parent-page integration",
+    "Original Canarias7 publication and court outcome",
+    "Precise ownership and completed shipping subscriptions",
+    "Project, portfolio, capital, revenue and valuation denominators",
+    "Dated decision-input, financial and non-cash opportunity tracing"
+  ],
+  "filing_state_dependency": "ea0feb0bae75e58deb4114bdd36a040fde335a0b",
+  "private_sources_published": false,
+  "new_historical_event_ids_allocated": false,
+  "universal_completeness_claim": false
+}
