@@ -65,5 +65,32 @@
   "authority": "Gil Marer instruction: take over and do it now.",
   "state_note": "Open current-main-based PR; not merged, deployed or live-verified.",
   "controlled_extract_path": "evidence/insolvency-36-2012/rpl-3304-2025/R33-oposicion-ac-apelacion-lpb-septiembre-2026-controlled-extracts.md",
-  "sitemap_state": "Not manually edited in this release; dedicated routes are reachable through reciprocal in-site links. Global sitemap remains generator-owned."
+  "sitemap_state": "Not manually edited in this release; dedicated routes are reachable through reciprocal in-site links. Global sitemap remains generator-owned.",
+  "viewer_upgrade": {
+    "version": "1.0.0",
+    "mode": "SPLIT_PDF_FORENSIC_SIDECAR",
+    "assets": [
+      "assets/ac-rpl3304-forensic-sidecar.css",
+      "assets/ac-rpl3304-forensic-sidecar.js",
+      "assets/data/ac-rpl3304-public-sidecar-v1.js"
+    ],
+    "behaviour": [
+      "scrollable embedded 22-page public-safe PDF",
+      "page-linked commentary cards",
+      "category filters and search",
+      "visual category summary",
+      "deep links to related Por Derecho dossiers"
+    ],
+    "public_commentary_items": 13,
+    "categories": [
+      "RHETORIC",
+      "CONTEXT",
+      "NOTICE",
+      "VERIFY",
+      "NARROWING",
+      "SUPPORTED"
+    ],
+    "boundary": "Colours are review categories, not truth percentages. NARROWING does not mean lie; NOTICE requires evidence of receipt/knowledge. Private 482-record case data remains outside public Git."
+  },
+  "native_source_boundary": "Signed native source remains separately preserved and unchanged; public web viewer uses the visually equivalent public-safe 22-page derivative and does not expose interactive signature certificate identifiers."
 }
