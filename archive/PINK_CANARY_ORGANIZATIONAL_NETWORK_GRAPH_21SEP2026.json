@@ -1,0 +1,108 @@
+{
+  "control": "PD-PINK-ORG-GRAPH-20260921-01",
+  "status": "INVESTIGATIVE_NETWORK_MODEL_NO_CRIMINAL_ORGANIZATION_FINDING",
+  "analytical_modes": [
+    "INDIVIDUAL",
+    "NETWORK_ORGANIZATIONAL"
+  ],
+  "actor_layers": {
+    "private_actors": [
+      "Construcciones Acosta Matos SA",
+      "Jose Daniel Acosta Matos",
+      "Laura Patricia Acosta Matos",
+      "Francisco Mario Matos Matas",
+      "source-specific Community/CEXP/minority/private actors"
+    ],
+    "insolvency_administration": [
+      "Francisco de Borja Rodriguez-Batllori Laffitte"
+    ],
+    "judicial": [
+      "Alberto Lopez Villarrubia"
+    ],
+    "institutional": [
+      "Ministerio Fiscal",
+      "LAJ/court office",
+      "Audiencia Provincial",
+      "AEAT",
+      "CNMV",
+      "other source-specific authorities"
+    ]
+  },
+  "edge_types": [
+    "COMMUNICATION",
+    "DOCUMENT_TRANSFER",
+    "FORMAL_FILING",
+    "CERTIFICATION",
+    "COMMUNITY_VOTE",
+    "ACCESS_AUTHORIZATION",
+    "POSSESSION_ACT",
+    "SECURITY_MAINTENANCE_ACT",
+    "AC_REPORT",
+    "PARTY_PLEADING",
+    "JUDICIAL_RULING",
+    "APPELLATE_RULING",
+    "CREDIT_TRANSFER",
+    "PROPERTY_TRANSFER",
+    "BID",
+    "ADJUDICATION",
+    "FINANCING",
+    "REGULATORY_DISCLOSURE",
+    "MEDIA_TRANSFER",
+    "ECONOMIC_BENEFIT"
+  ],
+  "coordination_scale": {
+    "0": "NO_LINK_SHOWN",
+    "1": "COMMON_SUBJECT_ONLY",
+    "2": "DOCUMENT_INFORMATION_CONTACT",
+    "3": "MUTUAL_KNOWLEDGE",
+    "4": "COORDINATED_ACT",
+    "5": "SHARED_OBJECTIVE_EVIDENCED",
+    "6": "OFFENCE_SPECIFIC_COMMON_PLAN_EVIDENCED"
+  },
+  "key_flows": [
+    [
+      "CEXP_COMMUNITY",
+      "LPB_PINK",
+      "AC",
+      "CIVIL_RENT_LITIGATION",
+      "JUDGMENT_EXECUTION",
+      "CALIFICACION",
+      "SENTENCIA_163_2023",
+      "SEPT_2026_REMOVAL_DEFENCE"
+    ],
+    [
+      "COMMUNITY_PRIVATE_ACTORS",
+      "ACCESS_SECURITY_MAINTENANCE",
+      "AC_AUTHORIZATION_INTERPRETATION",
+      "PRACTICAL_CONTROL",
+      "VALUATION_LIQUIDATION_ADJUDICATION",
+      "LATER_PRIVATE_BENEFIT"
+    ],
+    [
+      "SENTENCIA_163_2023",
+      "PRIVATE_EXTERNAL_TRANSFER",
+      "MEDIA_REGULATORY_REPUTATIONAL_EFFECT"
+    ]
+  ],
+  "mandatory_per_edge": [
+    "source",
+    "date",
+    "capacity",
+    "exact_proposition_or_act",
+    "receipt",
+    "adoption",
+    "reliance",
+    "effect",
+    "beneficiary",
+    "contrary_evidence",
+    "lawful_alternative"
+  ],
+  "no_inference_rules": [
+    "No guilt by association",
+    "No criminal organization finding from network structure alone",
+    "No judge knowledge from AC knowledge",
+    "No common plan from later benefit",
+    "No intent from adverse outcome",
+    "No adoption from mere receipt"
+  ]
+}
