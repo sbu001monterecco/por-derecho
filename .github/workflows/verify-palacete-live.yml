@@ -1,45 +1,90 @@
-# SCRATCH TRANSPORT ONLY — never merge this branch.
-# Production verifier remains unchanged on main. No ref/main writes or deploys.
-name: Scratch DP1901 exact image assembly
+# SCRATCH EXECUTION ONLY. Never merge this branch or this transport workflow.
+name: Scratch DP1901 bilingual landing build
 on:
   push:
     branches: ['worker/dp1901-image-transfer-20260921']
 permissions:
   contents: read
 jobs:
-  transfer:
+  prepare:
     if: github.repository == 'sbu001monterecco/por-derecho' && github.ref == 'refs/heads/worker/dp1901-image-transfer-20260921'
     permissions:
       contents: write
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 12
     steps:
-      - name: Install pinned image decoder
-        run: python3 -m pip install --quiet Pillow==11.3.0
-      - name: Assemble hash-controlled public image and create immutable delivery blobs
+      - uses: actions/checkout@v4
+        with:
+          ref: 832cff56e0b793af82472098c3296ccfd4d03ff0
+          fetch-depth: 2
+          persist-credentials: false
+      - name: Retrieve exact public image renditions
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
           python3 - <<'PY'
-          import base64, hashlib, io, json, os, urllib.request
-          from PIL import Image
-          api='https://api.github.com/repos/sbu001monterecco/por-derecho'
-          headers={'Authorization':'Bearer '+os.environ['GH_TOKEN'],'Accept':'application/vnd.github+json','Content-Type':'application/json','X-GitHub-Api-Version':'2022-11-28'}
-          def request(path, data=None):
-              req=urllib.request.Request(api+path,data=None if data is None else json.dumps(data).encode(),headers=headers,method='GET' if data is None else 'POST')
-              with urllib.request.urlopen(req,timeout=60) as r: return json.load(r)
-          segments=['886eb0f80f4308232c7d0e9d60973d157c11edd8','e6dea9d8700fa5a915b32e9e6c11f24b419088ba','c9a4d1db6af27ddd7ee164915b70ae022f82cfe7','3d81768fd8d6ad8f9c6e4a3de2abd03c7fef20d6','47ed0ef8360bbee9069cd3d624f4a601aac796eb','bd56bf9c03bd6ee93da7456df3ad8fe935f407ac','ee93d6dbeef45dadfa5344548836797b19a3c927','8a5569d87284040c265160552e408c5402739332']
-          image=b''.join(base64.b64decode(request('/git/blobs/'+sha)['content']) for sha in segments)
-          assert len(image)==59248
-          assert hashlib.sha256(image).hexdigest()=='24d6993e0d546903248c83d5da273d26a91817663c6ea3329d1dd332919f4997'
-          decoded=Image.open(io.BytesIO(image)); decoded.load(); assert decoded.size==(1055,1491)
-          def store(data,label):
-              sha=hashlib.sha1(b'blob '+str(len(data)).encode()+b'\0'+data).hexdigest()
-              result=request('/git/blobs',{'content':base64.b64encode(data).decode(),'encoding':'base64'})
-              assert result['sha']==sha
-              print(json.dumps({'asset':label,'git_blob_sha':sha,'sha256':hashlib.sha256(data).hexdigest(),'bytes':len(data),'dimensions':list(decoded.size)}))
-          store(image,'optimized-avif-rendition')
-          jpeg=io.BytesIO(); decoded.convert('RGB').save(jpeg,format='JPEG',quality=94,optimize=True,progressive=True)
-          store(jpeg.getvalue(),'jpeg-share-rendition-from-avif')
-          print('VERIFIED_PUBLIC_IMAGE_BLOBS_CREATED; NO_BRANCH_MUTATION_OR_DEPLOYMENT')
+          import base64,hashlib,json,os,pathlib,urllib.request
+          root=pathlib.Path('assets/visuals/dp1901-shame-20260921');root.mkdir(parents=True,exist_ok=True)
+          for ext,blob,digest in [('avif','66e44ab2f11d52ca36e6af1c07e111d041fae9cc','24d6993e0d546903248c83d5da273d26a91817663c6ea3329d1dd332919f4997'),('jpg','d51cad7c1db8fa674b54a885a42078eed247b2ef','839e2353c14fe3f7cef9fbd663b9f73acf6ece2e8f98a10993c66ce6c8e02b55')]:
+              req=urllib.request.Request('https://api.github.com/repos/sbu001monterecco/por-derecho/git/blobs/'+blob,headers={'Authorization':'Bearer '+os.environ['GH_TOKEN'],'Accept':'application/vnd.github+json'})
+              with urllib.request.urlopen(req,timeout=60) as r:data=base64.b64decode(json.load(r)['content'])
+              assert hashlib.sha256(data).hexdigest()==digest
+              (root/('shame-exits-the-courthouse.'+ext)).write_bytes(data)
           PY
+      - name: Generate additive pages, texts and source registers
+        run: python3 scripts/build_dp1901_satire_landing_20260921.py
+      - name: Run repository and specialist checks
+        run: |
+          mkdir -p /tmp/dp1901-publication-checks
+          python3 - <<'PY'
+          import json,pathlib,subprocess
+          out=pathlib.Path('/tmp/dp1901-publication-checks');results={}
+          for name in ['validate_repository_preservation','validate_publication_integrity','validate_audience_experience','validate_satire_publication_governance']:
+              r=subprocess.run(['python3','scripts/'+name+'.py'],capture_output=True,text=True,timeout=150)
+              (out/(name+'.log')).write_text(r.stdout+'\n'+r.stderr)
+              results[name]={'returncode':r.returncode,'output_tail':(r.stdout+'\n'+r.stderr)[-4500:]}
+          (out/'checks.json').write_text(json.dumps(results,indent=2))
+          print(json.dumps(results,indent=2))
+          PY
+      - name: Create immutable candidate commit only
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          python3 - <<'PY'
+          import base64,hashlib,json,os,pathlib,subprocess,urllib.request
+          root=pathlib.Path('.');m=json.loads((root/'publication-manifests/dp1901-shame-landing-20260921.json').read_text())
+          paths=[x['path'] for x in m['files']]+['publication-manifests/dp1901-shame-landing-20260921.json']
+          assert len(paths)==13 and len(set(paths))==13
+          assert not any(p.startswith('.github/') for p in paths)
+          allowed=set(paths);changed=set(subprocess.check_output(['git','diff','--name-only'],text=True).splitlines())
+          assert changed<=allowed,changed-allowed
+          api='https://api.github.com/repos/sbu001monterecco/por-derecho'
+          headers={'Authorization':'Bearer '+os.environ['GH_TOKEN'],'Accept':'application/vnd.github+json','Content-Type':'application/json'}
+          def req(path,value=None):
+              q=urllib.request.Request(api+path,data=None if value is None else json.dumps(value).encode(),headers=headers,method='GET' if value is None else 'POST')
+              with urllib.request.urlopen(q,timeout=60) as r:return json.load(r)
+          parent='832cff56e0b793af82472098c3296ccfd4d03ff0';base=req('/git/commits/'+parent)['tree']['sha'];entries=[]
+          for p in paths:
+              data=(root/p).read_bytes();blob=req('/git/blobs',{'content':base64.b64encode(data).decode(),'encoding':'base64'})['sha']
+              assert blob==hashlib.sha1(b'blob '+str(len(data)).encode()+b'\0'+data).hexdigest()
+              entries.append({'path':p,'mode':'100644','type':'blob','sha':blob})
+          tree=req('/git/trees',{'base_tree':base,'tree':entries})['sha']
+          commit=req('/git/commits',{'message':'Add English and Spanish DP1901 editorial landing pages, image renditions and manual LinkedIn posts','tree':tree,'parents':[parent]})['sha']
+          record={'status':'CANDIDATE_COMMIT_CREATED_NOT_MERGED_OR_DEPLOYED','commit':commit,'tree':tree,'parent':parent,'files':paths,'scratch_workflow_included':False,'social_posted':False}
+          pathlib.Path('/tmp/dp1901-publication-checks/candidate.json').write_text(json.dumps(record,indent=2));print(json.dumps(record,indent=2))
+          PY
+      - name: Bundle public candidate for inspection
+        run: |
+          python3 - <<'PY'
+          import json,pathlib,zipfile
+          m=json.loads(pathlib.Path('publication-manifests/dp1901-shame-landing-20260921.json').read_text())
+          with zipfile.ZipFile('/tmp/dp1901-publication-checks/public-candidate.zip','w',zipfile.ZIP_DEFLATED) as z:
+              for item in m['files']:z.write(item['path'],item['path'])
+              for p in ['publication-manifests/dp1901-shame-landing-20260921.json','scripts/build_dp1901_satire_landing_20260921.py']:z.write(p,p)
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: dp1901-bilingual-landing-candidate
+          path: /tmp/dp1901-publication-checks/
+          retention-days: 7
