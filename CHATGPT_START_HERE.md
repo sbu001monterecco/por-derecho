@@ -236,7 +236,9 @@ Locked source state:
 
 For Consejo Canario, ICALPA DIP 79/2026, DIP 80/2026, ICATF, ICAM→Tenerife or CGAE drafting, first read `archive/ICALPA_ICATF_CORRESPONDENCE_INDEPENDENCE_CONTROL_21SEP2026.md` and `assets/data/icalpa-icatf-correspondence-register-20260921.json`.
 
-Bounded connected-mail census: **61 ICALPA/Las Palmas events + 7 ICATF/Tenerife events**. Do not silently drop receipts, automatic replies or superseded drafts.
+Bounded connected-mail census: **62 ICALPA/Las Palmas events + 7 ICATF/Tenerife events**. Do not silently drop receipts, automatic replies or superseded drafts.
+
+The 62-event ICALPA denominator includes the 23-Dec-2025 historical `informacion@icalpa.com` general-route enquiry; do not treat that legacy route, or the historic professional mailboxes `3077@icalpa.com` / `icalpa3077@icalpa.com`, as proof of current institutional registration.
 
 Current ICALPA official-submission lock: `registro@icalpa.org`; the 3-Sep-2026 ICALPA routing response states that this mailbox performs formal entry registration and internal transfer. Keep deontologia / notification / RedAbogacía lanes distinct.
 
