@@ -8,7 +8,8 @@
     "icalpa_message_events": 61,
     "icatf_query": "to:(registro@icatf.es OR secretaria@icatf.es OR informa@icatf.es OR info@icatf.es OR delegacionnorte@icatf.es) OR from:(registro@icatf.es OR secretaria@icatf.es OR informa@icatf.es OR info@icatf.es OR delegacionnorte@icatf.es)",
     "icatf_message_events": 7,
-    "note": "Counts are the complete results returned for the bounded institutional-address queries at scan time. Duplicates, auto-replies and superseded drafts are retained as separate events rather than silently removed."
+    "note": "Counts are the complete results returned for the bounded institutional-address queries at scan time. Duplicates, auto-replies and superseded drafts are retained as separate events rather than silently removed.",
+    "direction_note": "Inbound registration receipts and automatic routing/absence replies are classified by event type where the Gmail connector omits a parsed From field."
   },
   "routing": {
     "icalpa_current": [
@@ -34,11 +35,11 @@
   "icalpa": [
     {
       "date": "2025-12-26T12:26:39",
-      "direction": "OUTBOUND",
+      "direction": "INBOUND",
       "subject": "Registro de Entrada ICA Las Palmas RE-017363/2025",
       "to": [],
       "cc": [],
-      "classification": "OTHER_INSTITUTIONAL",
+      "classification": "INBOUND_REGISTRATION_RECEIPT",
       "attachments": [
         "smime.p7s"
       ],
@@ -92,11 +93,11 @@
     },
     {
       "date": "2026-02-16T09:39:52",
-      "direction": "OUTBOUND",
+      "direction": "INBOUND",
       "subject": "Registro de ENTRADA ICA Las Palmas RE-002261/2026",
       "to": [],
       "cc": [],
-      "classification": "OTHER_INSTITUTIONAL",
+      "classification": "INBOUND_REGISTRATION_RECEIPT",
       "attachments": [
         "smime.p7s"
       ],
@@ -121,11 +122,11 @@
     },
     {
       "date": "2026-02-20T11:03:34",
-      "direction": "OUTBOUND",
+      "direction": "INBOUND",
       "subject": "Registro de ENTRADA ICA Las Palmas RE-002494/2026",
       "to": [],
       "cc": [],
-      "classification": "OTHER_INSTITUTIONAL",
+      "classification": "INBOUND_REGISTRATION_RECEIPT",
       "attachments": [
         "smime.p7s"
       ],
@@ -187,11 +188,11 @@
     },
     {
       "date": "2026-03-27T09:02:12",
-      "direction": "OUTBOUND",
+      "direction": "INBOUND",
       "subject": "Registro de ENTRADA ICA Las Palmas RE-004323/2026",
       "to": [],
       "cc": [],
-      "classification": "OTHER_INSTITUTIONAL",
+      "classification": "INBOUND_REGISTRATION_RECEIPT",
       "attachments": [
         "smime.p7s"
       ],
@@ -292,7 +293,7 @@
     },
     {
       "date": "2026-05-21T20:47:17",
-      "direction": "OUTBOUND",
+      "direction": "INBOUND",
       "subject": "RESPUESTA NOTIFICACIONES",
       "to": [],
       "cc": [],
@@ -303,11 +304,11 @@
     },
     {
       "date": "2026-05-22T10:58:08",
-      "direction": "OUTBOUND",
+      "direction": "INBOUND",
       "subject": "Registro de ENTRADA ICA Las Palmas RE-007028/2026",
       "to": [],
       "cc": [],
-      "classification": "OTHER_INSTITUTIONAL",
+      "classification": "INBOUND_REGISTRATION_RECEIPT",
       "attachments": [
         "smime.p7s"
       ],
@@ -338,11 +339,11 @@
     },
     {
       "date": "2026-05-26T11:35:35",
-      "direction": "OUTBOUND",
+      "direction": "INBOUND",
       "subject": "Registro de ENTRADA ICA Las Palmas RE-007200/2026",
       "to": [],
       "cc": [],
-      "classification": "OTHER_INSTITUTIONAL",
+      "classification": "INBOUND_REGISTRATION_RECEIPT",
       "attachments": [
         "smime.p7s"
       ],
@@ -414,11 +415,11 @@
     },
     {
       "date": "2026-05-29T10:11:13",
-      "direction": "OUTBOUND",
+      "direction": "INBOUND",
       "subject": "Registro de ENTRADA ICA Las Palmas RE-007421/2026",
       "to": [],
       "cc": [],
-      "classification": "OTHER_INSTITUTIONAL",
+      "classification": "INBOUND_REGISTRATION_RECEIPT",
       "attachments": [
         "smime.p7s"
       ],
@@ -427,11 +428,11 @@
     },
     {
       "date": "2026-05-29T10:22:24",
-      "direction": "OUTBOUND",
+      "direction": "INBOUND",
       "subject": "Registro de ENTRADA ICA Las Palmas RE-007423/2026",
       "to": [],
       "cc": [],
-      "classification": "OTHER_INSTITUTIONAL",
+      "classification": "INBOUND_REGISTRATION_RECEIPT",
       "attachments": [
         "smime.p7s"
       ],
@@ -455,11 +456,11 @@
     },
     {
       "date": "2026-06-01T10:14:02",
-      "direction": "OUTBOUND",
+      "direction": "INBOUND",
       "subject": "Registro de ENTRADA ICA Las Palmas RE-007476/2026",
       "to": [],
       "cc": [],
-      "classification": "OTHER_INSTITUTIONAL",
+      "classification": "INBOUND_REGISTRATION_RECEIPT",
       "attachments": [
         "smime.p7s"
       ],
@@ -485,11 +486,11 @@
     },
     {
       "date": "2026-06-01T12:03:31",
-      "direction": "OUTBOUND",
+      "direction": "INBOUND",
       "subject": "Registro de ENTRADA ICA Las Palmas RE-007499/2026",
       "to": [],
       "cc": [],
-      "classification": "OTHER_INSTITUTIONAL",
+      "classification": "INBOUND_REGISTRATION_RECEIPT",
       "attachments": [
         "smime.p7s"
       ],
@@ -540,11 +541,11 @@
     },
     {
       "date": "2026-06-10T12:11:16",
-      "direction": "OUTBOUND",
+      "direction": "INBOUND",
       "subject": "Registro de ENTRADA ICA Las Palmas RE-008079/2026",
       "to": [],
       "cc": [],
-      "classification": "OTHER_INSTITUTIONAL",
+      "classification": "INBOUND_REGISTRATION_RECEIPT",
       "attachments": [
         "smime.p7s"
       ],
@@ -553,11 +554,11 @@
     },
     {
       "date": "2026-06-10T12:43:28",
-      "direction": "OUTBOUND",
+      "direction": "INBOUND",
       "subject": "Registro de ENTRADA ICA Las Palmas RE-008087/2026",
       "to": [],
       "cc": [],
-      "classification": "OTHER_INSTITUTIONAL",
+      "classification": "INBOUND_REGISTRATION_RECEIPT",
       "attachments": [
         "smime.p7s"
       ],
@@ -596,11 +597,11 @@
     },
     {
       "date": "2026-06-15T11:12:04",
-      "direction": "OUTBOUND",
+      "direction": "INBOUND",
       "subject": "Registro de ENTRADA ICA Las Palmas RE-008248/2026",
       "to": [],
       "cc": [],
-      "classification": "OTHER_INSTITUTIONAL",
+      "classification": "INBOUND_REGISTRATION_RECEIPT",
       "attachments": [
         "smime.p7s"
       ],
@@ -609,11 +610,11 @@
     },
     {
       "date": "2026-06-15T11:13:50",
-      "direction": "OUTBOUND",
+      "direction": "INBOUND",
       "subject": "Registro de ENTRADA ICA Las Palmas RE-008249/2026",
       "to": [],
       "cc": [],
-      "classification": "OTHER_INSTITUTIONAL",
+      "classification": "INBOUND_REGISTRATION_RECEIPT",
       "attachments": [
         "smime.p7s"
       ],
@@ -669,11 +670,11 @@
     },
     {
       "date": "2026-06-26T10:30:24",
-      "direction": "OUTBOUND",
+      "direction": "INBOUND",
       "subject": "Registro de ENTRADA ICA Las Palmas RE-008887/2026",
       "to": [],
       "cc": [],
-      "classification": "OTHER_INSTITUTIONAL",
+      "classification": "INBOUND_REGISTRATION_RECEIPT",
       "attachments": [
         "smime.p7s"
       ],
@@ -712,11 +713,11 @@
     },
     {
       "date": "2026-07-14T08:58:46",
-      "direction": "OUTBOUND",
+      "direction": "INBOUND",
       "subject": "Registro de ENTRADA ICA Las Palmas RE-009765/2026",
       "to": [],
       "cc": [],
-      "classification": "OTHER_INSTITUTIONAL",
+      "classification": "INBOUND_REGISTRATION_RECEIPT",
       "attachments": [
         "smime.p7s"
       ],
@@ -725,11 +726,11 @@
     },
     {
       "date": "2026-07-14T09:30:09",
-      "direction": "OUTBOUND",
+      "direction": "INBOUND",
       "subject": "Registro de ENTRADA ICA Las Palmas RE-009768/2026",
       "to": [],
       "cc": [],
-      "classification": "OTHER_INSTITUTIONAL",
+      "classification": "INBOUND_REGISTRATION_RECEIPT",
       "attachments": [
         "smime.p7s"
       ],
@@ -775,7 +776,7 @@
     },
     {
       "date": "2026-08-20T09:37:18",
-      "direction": "OUTBOUND",
+      "direction": "INBOUND",
       "subject": "RESPUESTA NOTIFICACIONES",
       "to": [],
       "cc": [],
@@ -803,11 +804,11 @@
     },
     {
       "date": "2026-08-20T10:12:51",
-      "direction": "OUTBOUND",
+      "direction": "INBOUND",
       "subject": "Registro de entrada ICA Las Palmas RE-011301/2026",
       "to": [],
       "cc": [],
-      "classification": "OTHER_INSTITUTIONAL",
+      "classification": "INBOUND_REGISTRATION_RECEIPT",
       "attachments": [
         "smime.p7s"
       ],
@@ -816,11 +817,11 @@
     },
     {
       "date": "2026-08-20T10:15:44",
-      "direction": "OUTBOUND",
+      "direction": "INBOUND",
       "subject": "Registro de entrada ICA Las Palmas RE-011302/2026",
       "to": [],
       "cc": [],
-      "classification": "OTHER_INSTITUTIONAL",
+      "classification": "INBOUND_REGISTRATION_RECEIPT",
       "attachments": [
         "smime.p7s"
       ],
@@ -853,11 +854,11 @@
     },
     {
       "date": "2026-08-20T12:42:15",
-      "direction": "OUTBOUND",
+      "direction": "INBOUND",
       "subject": "Registro de entrada ICA Las Palmas RE-011307/2026",
       "to": [],
       "cc": [],
-      "classification": "OTHER_INSTITUTIONAL",
+      "classification": "INBOUND_REGISTRATION_RECEIPT",
       "attachments": [
         "smime.p7s"
       ],
@@ -883,11 +884,11 @@
     },
     {
       "date": "2026-08-21T07:58:07",
-      "direction": "OUTBOUND",
+      "direction": "INBOUND",
       "subject": "Registro de ENTRADA ICA Las Palmas RE-011311/2026",
       "to": [],
       "cc": [],
-      "classification": "OTHER_INSTITUTIONAL",
+      "classification": "INBOUND_REGISTRATION_RECEIPT",
       "attachments": [
         "smime.p7s"
       ],
@@ -932,7 +933,7 @@
     },
     {
       "date": "2026-09-03T11:05:47",
-      "direction": "OUTBOUND",
+      "direction": "INBOUND",
       "subject": "RESPUESTA NOTIFICACIONES",
       "to": [],
       "cc": [],
@@ -943,11 +944,11 @@
     },
     {
       "date": "2026-09-03T11:24:28",
-      "direction": "OUTBOUND",
+      "direction": "INBOUND",
       "subject": "Registro de ENTRADA ICA Las Palmas RE-011678/2026",
       "to": [],
       "cc": [],
-      "classification": "OTHER_INSTITUTIONAL",
+      "classification": "INBOUND_REGISTRATION_RECEIPT",
       "attachments": [
         "smime.p7s"
       ],
@@ -964,7 +965,7 @@
         "info@icatf.es"
       ],
       "cc": [],
-      "classification": "OTHER_INSTITUTIONAL",
+      "classification": "ICATF_GENERAL_COMPETENCE_QUERY",
       "attachments": [],
       "synopsis": "Institutional communication in the identified Bar-routing universe; full raw mailbox original retained privately.",
       "raw_mailbox_original": "PRIVATE_NOT_PUBLISHED"
@@ -978,7 +979,7 @@
         "info@icatf.es"
       ],
       "cc": [],
-      "classification": "OTHER_INSTITUTIONAL",
+      "classification": "ICATF_GENERAL_COMPETENCE_QUERY",
       "attachments": [],
       "synopsis": "Institutional communication in the identified Bar-routing universe; full raw mailbox original retained privately.",
       "raw_mailbox_original": "PRIVATE_NOT_PUBLISHED"
@@ -996,7 +997,7 @@
         "info@icatf.es",
         "delegacionnorte@icatf.es"
       ],
-      "classification": "DIP80",
+      "classification": "ICATF_TRACEABILITY_OR_PROFESSIONAL",
       "attachments": [
         "san-telmo-ricpe-sun-park-stamp-v1-ES.png",
         "pwc-five-actors-plus-ac-2016-knowledge-checkpoint-ES.png"
@@ -1006,33 +1007,33 @@
     },
     {
       "date": "2026-08-21T13:57:47",
-      "direction": "OUTBOUND",
+      "direction": "INBOUND",
       "subject": "Respuesta automática - por ausencia temporal Re: PUESTA EN CONOCIMIENTO, PRESERVACIÓN Y CERTIFICACIÓN URGENTES - 2647-ICATF - D. Cristo Ayose Suárez Pimentel (col. 4968) / DP 1041/2017 - contexto DIP 80/2026, DP 1901/2026 y DP 748/2026 - art. 262 LECrim y posible relevancia del art. 262 CP",
       "to": [],
       "cc": [],
-      "classification": "AUTO_OR_ROUTING_REPLY",
+      "classification": "ICATF_TRACEABILITY_OR_PROFESSIONAL",
       "attachments": [],
       "synopsis": "First specific Tenerife communication concerning Cristo Suárez Pimentel / DP 1041/2017; asks preservation and certification of any Bar-channel use, pressure or territorial activity.",
       "raw_mailbox_original": "PRIVATE_NOT_PUBLISHED"
     },
     {
       "date": "2026-08-21T13:57:47",
-      "direction": "OUTBOUND",
+      "direction": "INBOUND",
       "subject": "Ausencia temporal Re: PUESTA EN CONOCIMIENTO, PRESERVACIÓN Y CERTIFICACIÓN URGENTES - 2647-ICATF - D. Cristo Ayose Suárez Pimentel (col. 4968) / DP 1041/2017 - contexto DIP 80/2026, DP 1901/2026 y DP 748/2026 - art. 262 LECrim y posible relevancia del art. 262 CP",
       "to": [],
       "cc": [],
-      "classification": "AUTO_OR_ROUTING_REPLY",
+      "classification": "ICATF_TRACEABILITY_OR_PROFESSIONAL",
       "attachments": [],
       "synopsis": "First specific Tenerife communication concerning Cristo Suárez Pimentel / DP 1041/2017; asks preservation and certification of any Bar-channel use, pressure or territorial activity.",
       "raw_mailbox_original": "PRIVATE_NOT_PUBLISHED"
     },
     {
       "date": "2026-08-21T13:57:50",
-      "direction": "OUTBOUND",
+      "direction": "INBOUND",
       "subject": "Respuesta automática - Ausencia temporal Re: PUESTA EN CONOCIMIENTO, PRESERVACIÓN Y CERTIFICACIÓN URGENTES - 2647-ICATF - D. Cristo Ayose Suárez Pimentel (col. 4968) / DP 1041/2017 - contexto DIP 80/2026, DP 1901/2026 y DP 748/2026 - art. 262 LECrim y posible relevancia del art. 262 CP",
       "to": [],
       "cc": [],
-      "classification": "AUTO_OR_ROUTING_REPLY",
+      "classification": "ICATF_TRACEABILITY_OR_PROFESSIONAL",
       "attachments": [],
       "synopsis": "First specific Tenerife communication concerning Cristo Suárez Pimentel / DP 1041/2017; asks preservation and certification of any Bar-channel use, pressure or territorial activity.",
       "raw_mailbox_original": "PRIVATE_NOT_PUBLISHED"
@@ -1047,7 +1048,7 @@
       "cc": [
         "secretaria@icatf.es"
       ],
-      "classification": "AUTO_OR_ROUTING_REPLY",
+      "classification": "ICATF_TRACEABILITY_OR_PROFESSIONAL",
       "attachments": [],
       "synopsis": "Traceability request separating three Tenerife chains: ICAM 1487/26 referral, 2647-ICATF, and the 21-Aug-2026 specific communication.",
       "raw_mailbox_original": "PRIVATE_NOT_PUBLISHED"
