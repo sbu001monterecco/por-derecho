@@ -55,5 +55,10 @@
     "filing": false,
     "social": false,
     "third_party_contact": false
-  }
+  },
+  "private_drive_handoff": {
+    "status": "PRESENT_IN_APPROVED_PRIVATE_CUSTODY",
+    "public_locator_recorded": false
+  },
+  "github_pr": 1701
 }
