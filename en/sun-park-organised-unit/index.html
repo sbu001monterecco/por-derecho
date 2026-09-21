@@ -71,8 +71,26 @@
     .ou-method h3{margin:0 0 .55rem;font-size:1.35rem}.ou-method p{margin:0;color:var(--muted);font-size:.84rem}
     .ou-data-link{margin-top:1.5rem;padding:1rem;border:1px dashed #9f957f;border-radius:.75rem;background:#f8f3e9;font-size:.8rem}
     .ou-data-link a{color:var(--teal);font-weight:850}
-    @media(max-width:980px){.ou-five,.ou-continuity{grid-template-columns:repeat(2,1fr)}.ou-core-rail{grid-template-columns:1fr}.ou-notclaim{grid-template-columns:1fr}.ou-node.community{grid-template-columns:auto 1fr}}
-    @media(max-width:680px){.ou-five,.ou-continuity,.ou-source-grid,.ou-method{grid-template-columns:1fr}.ou-timeline li{grid-template-columns:1fr}.ou-node.community{grid-template-columns:1fr}.csp-emblem{width:6.5rem;min-width:6.5rem}}
+
+    .ou-witness-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:.75rem}
+    .ou-witness{padding:1rem;border:1px solid var(--line);border-radius:.85rem;background:var(--white)}
+    .ou-witness.critical{grid-column:span 2;border:.16rem solid #8b632e;background:#fffaf0}
+    .ou-witness .type{display:inline-flex;padding:.25rem .48rem;border-radius:999px;background:#e7ecec;color:#31585d;font-size:.62rem;font-weight:900;letter-spacing:.075em;text-transform:uppercase}
+    .ou-witness.critical .type{background:#ead8b7;color:#5f3c10}
+    .ou-witness h3{margin:.75rem 0 .55rem;font-size:1.35rem}
+    .ou-witness p{margin:.45rem 0;color:var(--muted);font-size:.8rem}
+    .ou-witness .limit{padding-top:.65rem;border-top:1px solid var(--line);color:#654841;font-size:.73rem}
+    .ou-witness a{display:inline-block;margin-top:.55rem;color:var(--teal);font-size:.75rem;font-weight:850}
+    .ou-ref-audit{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.8rem}
+    .ou-ref-card{padding:1.05rem;border:1px solid var(--line);border-radius:.85rem;background:#fff}
+    .ou-ref-card .state{display:inline-flex;padding:.24rem .5rem;border-radius:999px;background:#f4dfd8;color:#72362e;font-size:.62rem;font-weight:900;letter-spacing:.06em;text-transform:uppercase}
+    .ou-ref-card h3{margin:.7rem 0 .45rem;font-size:1.45rem}
+    .ou-ref-card p{margin:.4rem 0;color:var(--muted);font-size:.8rem}
+    .ou-ref-card strong{color:var(--ink)}
+    .ou-ref-warning{margin-top:1rem;padding:1rem 1.15rem;border-left:.3rem solid #a34d3f;background:#fff4ef}
+    .ou-ref-warning strong{display:block;margin-bottom:.3rem}
+    @media(max-width:980px){.ou-five,.ou-continuity,.ou-witness-grid{grid-template-columns:repeat(2,1fr)}.ou-witness.critical{grid-column:span 2}.ou-ref-audit{grid-template-columns:1fr}.ou-core-rail{grid-template-columns:1fr}.ou-notclaim{grid-template-columns:1fr}.ou-node.community{grid-template-columns:auto 1fr}}
+    @media(max-width:680px){.ou-five,.ou-continuity,.ou-witness-grid,.ou-source-grid,.ou-method{grid-template-columns:1fr}.ou-witness.critical{grid-column:span 1}.ou-timeline li{grid-template-columns:1fr}.ou-node.community{grid-template-columns:1fr}.csp-emblem{width:6.5rem;min-width:6.5rem}}
   </style>
 </head>
 <body class="dossier-page">
@@ -84,7 +102,7 @@
       <nav class="main-nav" id="main-nav" aria-label="Page navigation">
         <a href="#map">Map</a>
         <a href="#continuity">Later nodes</a>
-        <a href="#timeline">Timeline</a>
+        <a href="#witnesses">Witnesses</a>\n        <a href="#reference-audit">Refs 21/22/24</a>\n        <a href="#timeline">Timeline</a>
         <a href="#sources">Sources</a>
         <a href="#method">Method</a>
         <a href="../community-instrumentalisation/">Community</a>
@@ -104,7 +122,7 @@
           <span class="ou-pill">1 Community organ</span>
           <span class="ou-pill">1 Insolvency Administrator</span>
           <span class="ou-pill">1 judicial layer</span>
-          <span class="ou-pill">5 later continuity nodes</span>
+          <span class="ou-pill">5 later continuity nodes</span>\n          <span class="ou-pill">8 witness / custodian nodes</span>
         </div>
         <aside class="ou-boundary">
           <strong>Definition used on this page.</strong>
@@ -257,6 +275,109 @@
       </div>
     </section>
 
+
+    <section class="section" id="witnesses">
+      <div class="shell">
+        <div class="section-head">
+          <div><p class="kicker">Outside the alleged unit · witness and custody perimeter</p><h2>Professional, banking and media records that can test the case.</h2></div>
+          <p>These organisations are not added as members of the alleged organised operational unit. They are added because their contemporaneous files, professional work, banking records, internal reviews or publication records may confirm, narrow or disprove material parts of the chronology. The role is different for each one.</p>
+        </div>
+        <div class="ou-witness-grid">
+          <article class="ou-witness critical">
+            <span class="type">Critical contemporaneous witness · 2015/2016+</span>
+            <h3>PwC / Landwell-PwC</h3>
+            <p><strong>Why critical:</strong> the surviving record places the PwC team inside the Sun Park legal, Community, accounting, unit/title and strategy work before the later RICPE/Acosta project. The strongest criminality-knowledge checkpoint is June–July 2016: the client expressly redirected the response to the penal route; Miguel Hernández/PwC acknowledged that decision with Carlos Saavedra copied. In September 2016 PwC confirmed a direct, general telephone conversation with the Insolvency Administrator.</p>
+            <p>This makes PwC a critical contemporary witness and document custodian for what was known, analysed, instructed, communicated to the AC, and later retained or used. The earlier 2015 professional/capacity record is relevant background; the direct penal-route evidence is 2016.</p>
+            <p class="limit"><strong>Boundary:</strong> “PwC 2016 criminality-knowledge checkpoint” means the client's contemporaneous penal-route determination/instruction plus PwC's documented knowledge. It does not mean PwC independently found a crime, committed a crime, assisted wrongdoing, breached confidentiality or misused information.</p>
+            <a href="../pwc-canarias-carlos-saavedra-sun-park/">PwC / Carlos Saavedra record →</a>
+          </article>
+          <article class="ou-witness">
+            <span class="type">Later institutional custodian</span>
+            <h3>RSM Spain / San Telmo history</h3>
+            <p>The historical source is Eduardo Sánchez's 30 November 2021 San Telmo statement that “the firm” introduced clients into the first RICPE investment being discussed. RSM later integrated the San Telmo team and the current record tracks ethics/independence review NNR4-1025C2F66.</p>
+            <p class="limit"><strong>Boundary:</strong> later RSM integration does not transfer historical San Telmo liability. The source does not prove Borja–Eduardo coordination, information transfer, breach or unlawfulness.</p>
+            <a href="../rsm/nnr4-1025c2f66/">RSM review record →</a>
+          </article>
+          <article class="ou-witness">
+            <span class="type">Professional documentary custodian</span>
+            <h3>Grant Thornton / Cuyás Canarias</h3>
+            <p>The record contains a 2020 Sun Park / Concurso 36/2012 conflict-confidentiality and forensic-proposal process, plus later professional-continuity material and the 2024_04 internal review correspondence. Those files can test conflict, matter separation, access and preservation questions.</p>
+            <p class="limit"><strong>Boundary:</strong> a proposal, conflict check or later professional relationship does not prove that the forensic engagement was executed, information moved, or Grant Thornton participated in wrongdoing.</p>
+            <a href="../grant-thornton/cuyas-canarias/">Grant Thornton / Cuyás record →</a>
+          </article>
+          <article class="ou-witness">
+            <span class="type">Banking / witness-origin node</span>
+            <h3>CaixaBank</h3>
+            <p>The controlled Valencia record says the Insolvency Administrator's testimony was admitted at CaixaBank's request and Aweswell adhered. CaixaBank is also a separate banking/credit and later hotel-finance record custodian whose material may test what information, independence/conflict analysis and asset history were before the bank.</p>
+            <p class="limit"><strong>Boundary:</strong> do not rewrite this as two independent witness requests. CaixaBank initiated the request; Aweswell adhered. Witness testimony, financing or litigation do not establish collusion, partiality, conflict or criminal liability.</p>
+            <a href="../caixabank-valencia-claim/">CaixaBank / Valencia dossier →</a>
+          </article>
+          <article class="ou-witness">
+            <span class="type">Material documentary witness</span>
+            <h3>Uría Menéndez</h3>
+            <p>The public map preserves a reported 3 July 2015 AC–Rubio contact, Uría's named place in the 2020 RICPE professional/DD architecture, the July 2021 certification boundary on full due diligence, and later production requests on title, encumbrances, suitability, risks and project scope.</p>
+            <p class="limit"><strong>Boundary:</strong> professional involvement or reported contact is not a finding of conflict, breach, liability or wrongdoing. Mandate, client, scope, knowledge and actual work product remain document questions.</p>
+            <a href="../uria-menendez-sun-park/">Uría Menéndez witness map →</a>
+          </article>
+          <article class="ou-witness">
+            <span class="type">Bank / internal-review custodian</span>
+            <h3>Cajasiete</h3>
+            <p>Cajasiete is relevant as a financing-comparability and internal-review custodian. Its 18 September 2026 response states that supplemental material was incorporated, the earlier decision was unchanged, and the record remained registered with confidentiality and restricted access.</p>
+            <p class="limit"><strong>Boundary:</strong> the record does not establish knowing participation in wrongdoing. The finite questions concern the underlying banking records, conflicts, KYC/risk inputs, valuations, guarantees, decision ownership and preservation trail.</p>
+            <a href="../cajasiete-accountability-compliance-traceability/">Cajasiete accountability record →</a>
+          </article>
+          <article class="ou-witness">
+            <span class="type">Media / publication-trace witness</span>
+            <h3>CANARIAS7</h3>
+            <p>The archive preserves the 30 May 2022 publication as a public chronology checkpoint, a later same-URL availability/404 record, and 2026 journalist exchanges in which the evidence was resubmitted and clarified. Those records are relevant to what was public, when, and what later remained accessible.</p>
+            <p class="limit"><strong>Boundary:</strong> publication, disappearance, a 404 or later journalist contact does not prove censorship, influence, complicity, knowledge of the full case or wrongdoing by CANARIAS7.</p>
+            <a href="../media-public-narrative-traceability/">Media and public-narrative traceability →</a>
+          </article>
+          <article class="ou-witness">
+            <span class="type">Media / editorial-record witness</span>
+            <h3>elEconomista / Javier Romera</h3>
+            <p>The direct January 2025 record documents advanced pre-publication verification. On 17 January Romera said the story had to be “bien atada” and recorded that he had been asked to wait for judicial orders. On 20 January he confirmed receiving an adverse LPB judgment and wrote that with it the outlet could not publish.</p>
+            <p class="limit"><strong>Boundary:</strong> no current controlled evidence establishes collusion, censorship, bad faith, criminality or knowing mischaracterisation by Romera or elEconomista. The physical sender, native transmission and framing of the judgment remain unresolved.</p>
+            <a href="../meeting-point-fti-eleconomista-reconciliation/">elEconomista reconciliation ledger →</a>
+          </article>
+        </div>
+        <aside class="ou-branch-note"><strong>Witness/custodian ≠ accused actor.</strong> A firm, bank or newsroom can be evidentially critical because it holds contemporaneous records or received material without being alleged to have joined the earlier conduct. Each node can confirm the case, contradict it, or supply a lawful explanation.</aside>
+      </div>
+    </section>
+
+    <section class="section alt" id="reference-audit">
+      <div class="shell">
+        <div class="section-head">
+          <div><p class="kicker">Publication audit · 21 September 2026</p><h2>Ref21, Ref22 and Ref24: digitised does not mean fully public.</h2></div>
+          <p>The GitHub control plane records complete text-layer processing of the principal filings. That is not the same state as publishing the raw private filed PDFs or making complete public-safe reading copies downloadable from the GitLab website. Those states are kept separate.</p>
+        </div>
+        <div class="ou-ref-audit">
+          <article class="ou-ref-card">
+            <span class="state">GitLab full download: not verified</span>
+            <h3>Ref21 / Control 21</h3>
+            <p><strong>GitHub digitisation:</strong> base filing 86/86 pages processed; immediate amplification 26/26; 9 July expansion 19/19. The canonical control expressly records <code>public_raw_pdf: false</code>.</p>
+            <p><strong>Live GitLab:</strong> the DP 1901 English route is a controlled gateway. A complete downloadable public-safe copy of the full Ref21 filing package was not verified.</p>
+            <p><strong>Identity boundary:</strong> the Ref21 ↔ DP1901 relationship is materially supported in the working record, but exact official reparto/association remains a certification question.</p>
+          </article>
+          <article class="ou-ref-card">
+            <span class="state">GitLab full download: not verified</span>
+            <h3>Ref22 / Control 22</h3>
+            <p><strong>GitHub digitisation:</strong> the base AC complaint is recorded as 55/55 pages text-layer processed; canonical control records <code>public_raw_pdf: false</code>.</p>
+            <p><strong>Live GitLab:</strong> DP 1956 publishes the procedural/status dossier, but a complete downloadable Ref22 filing PDF was not verified.</p>
+            <p><strong>Identity boundary:</strong> the live page itself says the official allocation document proving that the handwritten Ref22 complaint became DP 1956/2026 has not been located.</p>
+          </article>
+          <article class="ou-ref-card">
+            <span class="state">GitLab page needs correction</span>
+            <h3>Ref24 / Control 24</h3>
+            <p><strong>GitHub digitisation:</strong> 79-page signed principal package plus a <strong>13-page</strong> 25 June supplement in the current canonical control; raw private PDF publication remains false.</p>
+            <p><strong>Live GitLab:</strong> the page correctly identifies the 79-page package, but currently states that the supplement is <strong>10 pages</strong>. That is stale against the current canonical 13-page control. A complete downloadable public-safe package was not verified.</p>
+            <p><strong>Procedural boundary:</strong> Control 24 is a daily/internal locator, not a NIG or DP; official destination/allocation/outcome remain unconfirmed.</p>
+          </article>
+        </div>
+        <aside class="ou-ref-warning"><strong>Current conclusion: do not claim all three are fully viewable and downloadable from GitLab.</strong> What can presently be confirmed is full text-layer digitisation in the GitHub control record, subject to source/publication boundaries. GitLab publication is incomplete for this purpose and Control 24 contains a stale page-count statement that should be corrected when GitLab write access is restored.</aside>
+      </div>
+    </section>
+
     <section class="section" id="timeline">
       <div class="shell">
         <div class="section-head">
@@ -291,7 +412,7 @@
           <a href="../ric-private-equity-sun-park/"><strong>RIC Private Equity / Sun Park</strong><span>Investor presentation, title/control chronology and later finance/investment questions.</span></a>
           <a href="../lava-verde-club-sei-meeting-point/"><strong>Lava Verde / Club SEI / Meeting Point</strong><span>Public project and commercialisation chronology with contracting/title/revenue gaps preserved.</span></a>
           <a href="../orion-rental-socimi/"><strong>Orion Rental SOCIMI</strong><span>Later governance and disclosure node, with a strict June-2023 temporal firewall.</span></a>
-          <a href="../acosta-matos-perimeter/"><strong>Acosta Matos perimeter</strong><span>Actor/entity distinctions, later corporate relationships and the prohibition on guilt by association.</span></a>
+          <a href="../acosta-matos-perimeter/"><strong>Acosta Matos perimeter</strong><span>Actor/entity distinctions, later corporate relationships and the prohibition on guilt by association.</span></a>\n          <a href="../pwc-canarias-carlos-saavedra-sun-park/"><strong>PwC / 2016 knowledge checkpoint</strong><span>Contemporaneous professional work, penal-route notice, PwC acknowledgement and AC-contact boundary.</span></a>\n          <a href="../uria-menendez-sun-park/"><strong>Uría Menéndez witness map</strong><span>Reported 2015 contact, later RICPE professional architecture and finite production targets.</span></a>\n          <a href="../cajasiete-accountability-compliance-traceability/"><strong>Cajasiete institutional review</strong><span>Banking/compliance response and the limits of what its current record proves.</span></a>\n          <a href="../meeting-point-fti-eleconomista-reconciliation/"><strong>elEconomista reconciliation</strong><span>Direct January 2025 editorial sequence, with the newsroom non-collusion boundary preserved.</span></a>
         </div>
       </div>
     </section>
