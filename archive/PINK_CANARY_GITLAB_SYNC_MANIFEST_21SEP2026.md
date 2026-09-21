@@ -94,3 +94,14 @@ Native Google Doc mirror created and verified:
 - parent: `Pink Canary Unitary Prosecutorial Review 21SEP2026`
 
 The canonical raw Markdown and JSON remain GitHub-controlled; the Drive document is a preservation/review mirror.
+
+
+## Full-thread / organizational re-ingest sync set
+
+Add to future GitLab reconciliation:
+- `archive/PINK_CANARY_THREAD_FULL_INTEGRATED_HANDOFF_21SEP2026.md`
+- `archive/PINK_CANARY_ORGANIZATIONAL_NETWORK_PROSECUTORIAL_MODEL_21SEP2026.md`
+- `archive/PINK_CANARY_ORGANIZATIONAL_NETWORK_GRAPH_21SEP2026.json`
+- `archive/PINK_CANARY_REINGEST_PROMPT_21SEP2026.md`
+
+These files are canonical private controls for re-running the case through the non-fragmented criminal/prosecutorial-first intelligence model. They are not public guilt findings.
