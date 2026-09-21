@@ -125,3 +125,46 @@ Future work on Consejo Canario, ICALPA/ICATF coordination, the ICAM→Tenerife r
 - `archive/POR_DERECHO_UNITARY_CASE_RECONSTRUCTION_MULTIDISCIPLINARY_CRIMINAL_FORENSIC_PROTOCOL_17AUG2026.md`.
 
 Update the existing control/register rather than creating a disconnected competing map.
+
+## 22 September 2026 — DIP 80 procedural-accountability update
+
+Read together with `archive/ICALPA_DIP80_PROCEDURAL_ACCOUNTABILITY_CONTROL_22SEP2026.md`.
+
+The regional coordination thesis is strengthened by a new asymmetry of visibility, but the wording must remain procedural and non-accusatory.
+
+- ICALPA confirmed territorial competence in January 2026.
+- The formal complaint concerning Francisco de Borja Rodríguez-Batllori Laffitte was registered in February.
+- DIP 80/2026 opened as preliminary information on 27 May 2026 with a named rapporteur.
+- Multiple later submissions were registered.
+- The bounded external record still does not identify archive, formal disciplinary opening, suspension, transfer/reclassification or another substantive outcome of the preliminary-information stage.
+- In his September 2026 opposition before the Audiencia Provincial, the concerned professional expressly identifies ICALPA among the institutions approached by Gil Marer. This proves awareness of the route, not the source of that awareness or any particular ICALPA act.
+
+### Regional request now controlled
+
+The Consejo Canario communication should ask for the proper regional mechanism to certify the procedural state of DIP 80 without asking the Council to decide its merits in place of ICALPA.
+
+The minimum status questions are:
+1. preliminary information still open?;
+2. archive?;
+3. formal disciplinary file?;
+4. same-facts criminal suspension?;
+5. referral/accumulation/reclassification?;
+6. latest substantive rapporteur act?;
+7. next expected step?;
+8. conflict/abstention safeguards?
+
+### National CGAE route now controlled
+
+A separate national draft now exists at:
+- `/es/cgae-coordinacion-deontologica-nacional-2026/`
+- `/en/cgae-national-deontological-coordination-2026/`
+
+It expressly respects RS-001022/2026. It does not ask CGAE to hear an ordinary first-instance complaint. It asks about national/inter-Bar coordination, competence conflicts, deontological consultation/unification, professional independence and preliminary-information traceability.
+
+### Transmission sequence
+
+**Not sent.** Recommended execution order:
+1. transmit/register the Consejo Canario communication;
+2. obtain or at least request a written regional reference;
+3. immediately send the separate CGAE communication, attaching or linking the regional communication and stating only that the regional route has been activated.
+
