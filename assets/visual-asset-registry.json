@@ -417,6 +417,23 @@
       },
       "storage_mode": "repository-byte-locked",
       "publication_boundary": "Identity/relationship aid only. The image does not prove Community authority, corporate mandate, knowledge, coordination, wrongdoing, causation or liability."
+    },
+    "person.gil-marer.about-page-webp-legacy": {
+      "subject_type": "person",
+      "canonical_name": "Gil Marer",
+      "short_label": "Gil Marer / superseded About-page WebP retained for preservation",
+      "path": "assets/actors/gil-marer--about-page--20260921.webp",
+      "git_blob_sha": "577b78c9949a45cb41b493c4091c718f2cd64b6a",
+      "identity_status": "LOCKED_CANONICAL_REPOSITORY_ASSET",
+      "identity_basis": "Superseded user-approved Gil Marer About-page WebP retained solely for repository preservation and provenance after the live delivery was replaced by the PNG variant. No facial-identification inference performed.",
+      "alt_en": "Gil Marer — superseded About-page WebP retained for provenance",
+      "alt_es": "Gil Marer — WebP anterior de la página Sobre nosotros conservado por trazabilidad",
+      "variant_of": "person.gil-marer.official-base",
+      "approved_contexts": [
+        "repository preservation and provenance only"
+      ],
+      "storage_mode": "repository-byte-locked",
+      "publication_rule": "Do not use for current About-page publication; current website variant is person.gil-marer.about-page."
     }
   },
   "rejected_or_prohibited_mappings": [
