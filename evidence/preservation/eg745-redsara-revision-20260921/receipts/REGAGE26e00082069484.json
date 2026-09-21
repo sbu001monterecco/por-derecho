@@ -1,0 +1,73 @@
+{
+  "status": "REGISTERED_SUBMISSION_05_OF_10_RECEIPT_VERIFIED",
+  "reference": "E.G.745/2026",
+  "registration": "REGAGE26e00082069484",
+  "linked_principal_registration": "REGAGE26e00082068814",
+  "presentation_datetime_literal": "21/09/2026 02:40:37",
+  "registration_datetime_literal": "21/09/2026 02:40:48",
+  "timezone": "Not specified in printed receipt; preserve literal portal time",
+  "recipient_dir3": "J00003992",
+  "recipient": "Fiscalía General del Estado",
+  "attention": "Inspección Fiscal",
+  "receipt_pages": 2,
+  "receipt_sha256": "b96240f13699c9c03648591ccc2e5a53ea432c1bc6aa41b942a4ac7ac467a302",
+  "attachments": [
+    {
+      "filename": "EG745_HISTORICO_D22_PARTE_01.pdf",
+      "pages": 46,
+      "bytes": 8564025,
+      "sha256": "119e355e835adf5d225141ba9de4c37ce9ebdabcb21145eb3c76ced03bd21310",
+      "receipt_sha512": "b222442f3ae48e581a5109ec306ef8d21b240f32b668b49fcf595be7d9084c1a89adea1594c318dfd46eb2e338bda5ce263d970df438cc4e99300bdfcab9860a",
+      "exact_match": true
+    },
+    {
+      "filename": "08_EG745_DP1901.pdf",
+      "pages": 9,
+      "bytes": 3190685,
+      "sha256": "1f4cd4d2febd6340254ec87a19edca447b30db56e1b3c078c631974b76f74990",
+      "receipt_sha512": "de28c6a73a4cb21e8e651b2ba7276f56f5261229be382f7fc0fae99ef0e5465be07a4cd5c59434b5d7527307a55d8594b63bf7a49bb8b90829bcd78df95548ae",
+      "exact_match": true
+    },
+    {
+      "filename": "EG745_D3_ORIGINAL_REGISTRADO.pdf",
+      "pages": 8,
+      "bytes": 181451,
+      "sha256": "4f94669e40a4cd14ca48da32b67edd9b4fa65cea3e3096dcb9f8170dfa901dc4",
+      "receipt_sha512": "352677fed18bd52659b87e68f40ba9793e1844fcc160caca50cab345ddfd06f709afbbbaaa8912458cb067d6df74d309db7c235429302171b51f7ca327bab635",
+      "exact_match": true
+    },
+    {
+      "filename": "EG745_SUP20_FUENTES_PUBLICAS.pdf",
+      "pages": 7,
+      "bytes": 164035,
+      "sha256": "762660c7674dd5d54735a05c9294a8a6f47a170de4bacd604b196d4eb32e163c",
+      "receipt_sha512": "074ee01e7337d2af36d14b527f6ab2cf07e7844ca12d9f23e1b962aa6cbd6f9d86a7bae6b5524b793ffb4e83ed5502eae625adc175d04187aed838791cea2ac4",
+      "exact_match": true
+    },
+    {
+      "filename": "EG745_ANEXO_FUENTES_DIGITALES_Y_TECNICAS_20SEP2026.pdf",
+      "pages": 21,
+      "bytes": 94024,
+      "sha256": "90e1f7a0a61541a54dbd137a593e4973de26c2d321d243c67fefd0225a8441dc",
+      "receipt_sha512": "99e4999527619b112ce4cbe299f224b6e6563001bd17f262ae667e2a20215b0d82136fc0dbad4941a9fb5dc04cdee8c31dadacc9592feb013ffe268c577eae5d",
+      "exact_match": true
+    }
+  ],
+  "all_expected_attachments_verified": true,
+  "verified_delivery_count": 5,
+  "planned_delivery_count": 10,
+  "remaining_submission_numbers": [
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "all22_illustrations_registered_across_deliveries1_and2": true,
+  "admission_or_substantive_examination_proved": false,
+  "assistant_filed_or_emailed": false,
+  "scope": "Public-safe receipt metadata and attachment fingerprints only. Native private receipt and private documents are not published.",
+  "canonical_communications_register": "assets/data/institutional-communications-register-v1.json",
+  "canonical_event_allocation": "Pending integration; reuse existing registry identity if already allocated",
+  "main_integration": "Pending held controller; worker preservation only"
+}
