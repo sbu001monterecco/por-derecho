@@ -1,0 +1,63 @@
+{
+  "schema": "por-derecho.github-drive-gitlab-dual-write.v1",
+  "control_id": "PD-DUALWRITE-20260921-01",
+  "control_date": "2026-09-21",
+  "status": "ACTIVE_OUTAGE_CONTINUITY",
+  "public_github_control": ".github/governance/GITHUB_DRIVE_GITLAB_DUAL_WRITE_CONTINUITY_21SEP2026.md",
+  "private_drive_control_mirror": {
+    "status": "PRESENT_IN_APPROVED_PRIVATE_CUSTODY",
+    "public_locator_recorded": false
+  },
+  "layers": {
+    "github_public_safe_canonical": {
+      "required": true,
+      "private_native_bytes_allowed_in_public_git": false
+    },
+    "private_drive_native_custody": {
+      "required_for_private_or_restricted_sources": true,
+      "exact_native_preservation": true,
+      "public_locator_recorded": false
+    },
+    "gitlab_replay_queue": {
+      "required_during_block": true,
+      "restoration_mode": "ADDITIVE_RECONCILIATION_ONLY"
+    }
+  },
+  "recovery_classes": [
+    "EXACT_GITLAB_RECOVERY",
+    "ALREADY_ON_GITHUB",
+    "GITHUB_NEWER_OR_EQUIVALENT",
+    "CONFLICT_NEEDS_REVIEW",
+    "PRIVATE_OR_RESTRICTED",
+    "PLATFORM_NATIVE_PENDING"
+  ],
+  "source_perimeter": [
+    "SBU_BUSINESS_EMAIL",
+    "GIL_AUTHORISED_PRIVATE_EMAIL",
+    "PATRICIA_AUTHORISED_PRIVATE_EMAIL",
+    "AUTHORISED_GOOGLE_DRIVE",
+    "AUTHORISED_LIBRARY_PRIVATE_CUSTODY"
+  ],
+  "state_dimensions": [
+    "SEARCH_COVERAGE",
+    "CURSOR_PAGINATION",
+    "NATIVE_MESSAGE_ACQUISITION",
+    "ATTACHMENT_ACQUISITION",
+    "DEDUPLICATION",
+    "SUBSTANTIVE_REVIEW",
+    "DIGITISATION_OCR",
+    "CANONICAL_LINKING",
+    "PUBLIC_SAFE_DERIVATIVE",
+    "CERTIFIED_FILE_COMPLETENESS"
+  ],
+  "restoration_rules": [
+    "Freeze exact GitHub and GitLab heads before reconciliation.",
+    "Preserve newer GitLab work.",
+    "Port only source-proved net deltas.",
+    "Never overwrite either host wholesale.",
+    "Run GitLab validators and verify affected Pages routes.",
+    "Keep private source bytes outside public Git."
+  ],
+  "completion_rule": "A material item is continuity-complete only when the applicable GitHub, private-custody and GitLab-replay states are explicit.",
+  "external_action_authority": false
+}
