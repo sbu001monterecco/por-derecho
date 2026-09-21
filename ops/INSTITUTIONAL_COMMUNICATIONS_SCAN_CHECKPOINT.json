@@ -109,11 +109,29 @@
     "scope_status": "BOUNDED_METADATA_CENSUS_COMPLETE_ITEM_LEVEL_MERITS_REVIEW_OPEN",
     "universal_completeness_claim": false
   },
+  "regage_status_export_2026_09_21": {
+    "new_event_id_range": [
+      "PD-SP-EVT-0213",
+      "PD-SP-EVT-0496"
+    ],
+    "new_formal_events": 284,
+    "proof_boundary": "Literal registry status only; no onward delivery, routing, incorporation, admission, examination, merits or criminal responsibility inferred.",
+    "raw_source_committed": false,
+    "raw_source_sha256": "5cc7eaa867b248b0bff7e9cd19e5093dfe2df494fae8ca84c8f12c15382016a3",
+    "records": 398,
+    "reused_existing_formal_events": 114,
+    "source_input": "ops/regage-status-export-input-20260921.json",
+    "status_literal_es": {
+      "Enviado": 36,
+      "Rechazado": 26,
+      "Recibido": 336
+    }
+  },
   "register_path": "assets/data/institutional-communications-register-v1.json",
-  "register_sha256": "99ecfe185bedf54de4ecb294227053471977c4046e5e3b8572252ff283b80851",
+  "register_sha256": "08e53b46bae787a3b04112cb0ea370b0337c4ffdbd0541588780688b0629e541",
   "schema": "por-derecho.institutional-communications-scan-checkpoint.v1",
   "source_required_and_normalisation_gates": [
-    "22 later RedSARA/AGE records remain aggregate-only; no synthetic individual rows were created.",
+    "Historical 22-record RedSARA/AGE aggregate is retained as provenance; the current denominator is the 398-row individual status export of 21 September 2026.",
     "EG 58/2026 discrete official act remains source-required.",
     "DP 1901/2026 signed Fiscal report and later judicial act remain source-required.",
     "EG 6/2026 underlying act substantive digest remains pending.",
