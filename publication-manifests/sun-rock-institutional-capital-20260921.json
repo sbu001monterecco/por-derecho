@@ -1,35 +1,28 @@
 {
   "schema": "por-derecho.publication-state.v1",
   "schema_version": "1.0.0",
-  "publication_id": "PD-SR-CAPITAL-20260921-01",
-  "owner": "SUN-ROCK-CAPITAL-PROGRAMME-INTEGRATOR-20260921",
+  "publication_id": "PD-SR-INSTITUTIONAL-CAPITAL-20260921-01",
+  "owner": "Sun Rock / Aweswell institutional-capital integration",
+  "control_date": "2026-09-21",
   "current_state": "PR_OPEN",
   "expected_routes": {
-    "en": [
-      "en/institutional-capital/index.html",
-      "en/capital-relationships/index.html"
-    ],
     "es": [
-      "es/capital-institucional/index.html",
-      "es/relaciones-de-capital/index.html"
+      "/es/capital-institucional/",
+      "/es/relaciones-de-capital/"
+    ],
+    "en": [
+      "/en/institutional-capital/",
+      "/en/capital-relationships/"
     ]
   },
-  "control_id": "PD-SR-CAPITAL-20260921-01",
-  "control_date": "2026-09-21",
-  "status": "PREPARED_PENDING_PR_VALIDATION",
   "authority": "Gil Marer current instruction to update GitHub and private Google Drive now and preserve an additive GitLab recovery path.",
   "repository": "sbu001monterecco/por-derecho",
   "base_main": "a5e7b2fd50b41fe3dc1e533a5231e08be687dacb",
   "branch": "integration/sun-rock-capital-programme-20260921",
-  "routes": {
-    "en": [
-      "/en/institutional-capital/",
-      "/en/capital-relationships/"
-    ],
-    "es": [
-      "/es/capital-institucional/",
-      "/es/relaciones-de-capital/"
-    ]
+  "github_pr": 1701,
+  "private_drive_handoff": {
+    "status": "PRESENT_IN_APPROVED_PRIVATE_CUSTODY",
+    "public_locator_recorded": false
   },
   "canonical_architecture": [
     "Aweswell Limited UK HoldCo/Sponsor",
@@ -70,9 +63,26 @@
     "social": false,
     "third_party_contact": false
   },
-  "private_drive_handoff": {
-    "status": "PRESENT_IN_APPROVED_PRIVATE_CUSTODY",
-    "public_locator_recorded": false
-  },
-  "github_pr": 1701
+  "expected_paths": [
+    "en/institutional-capital/index.html",
+    "es/capital-institucional/index.html",
+    "assets/institutional-capital-20260921.css",
+    "assets/data/sun-rock-capital-process-v1.json",
+    "en/capital-relationships/index.html",
+    "es/relaciones-de-capital/index.html",
+    "sitemap-sun-rock-institutional-20260916.xml",
+    "ops/capital/INSTITUTIONAL_RESPONSE_PLAYBOOK_20260921.md",
+    "ops/capital/SUN_ROCK_CAPITAL_PROGRAMME_CONTINUITY_20260921.md",
+    "CURRENT_HANDOVER_PRINCIPAL_FINANCIAL_RELATIONSHIPS_17SEP2026.md",
+    ".github/workflows/sun-rock-capital-relationships.yml",
+    "ci/sun_rock_capital_relationships_acceptance_20260916.py",
+    "ops/continuity/GITHUB_DRIVE_GITLAB_RECOVERY_QUEUE_20260921.json",
+    "publication-manifests/sun-rock-institutional-capital-20260921.json"
+  ],
+  "limits": [
+    "No named institution is represented as having committed capital, approved financing, issued a term sheet or made an offer.",
+    "Recipient-level campaign state remains private in Gmail and the Master Principal Capital Providers Sheet.",
+    "Montaña Roja GREEN / active execution is not acquisition, planning entitlement, operator appointment, construction start or committed financing.",
+    "GitLab replay remains pending authenticated access and must be additive, never a wholesale overwrite."
+  ]
 }
