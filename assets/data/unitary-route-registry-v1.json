@@ -2304,5 +2304,49 @@
       "ICATF register",
       "Tenerife Bar correspondence"
     ]
+  },
+  {
+    "lang": "es",
+    "path": "es/icalpa-icatf-correspondencia-2025-2026/",
+    "title": "ICALPA / ICATF — registro completo de correspondencia 2025–2026",
+    "type": "institution",
+    "summary": "Censo público-seguro de 61 eventos ICALPA y 7 ICATF, con rutas institucionales, asuntos, anexos, estado y precedentes sobre independencia del ponente.",
+    "tags": [
+      "ICALPA",
+      "ICATF",
+      "correspondencia",
+      "DIP 79/2026",
+      "DIP 80/2026",
+      "ponente",
+      "independencia"
+    ],
+    "aliases": [
+      "registro ICALPA",
+      "registro ICATF",
+      "Las Palmas correspondence",
+      "Tenerife correspondence"
+    ]
+  },
+  {
+    "lang": "en",
+    "path": "en/icalpa-icatf-correspondence-2025-2026/",
+    "title": "ICALPA / ICATF — complete correspondence register 2025–2026",
+    "type": "institution",
+    "summary": "Public-safe census of 61 ICALPA and 7 ICATF message events, institutional routes, subjects, attachments, status and rapporteur-independence precedents.",
+    "tags": [
+      "ICALPA",
+      "ICATF",
+      "correspondence",
+      "DIP 79/2026",
+      "DIP 80/2026",
+      "rapporteur",
+      "independence"
+    ],
+    "aliases": [
+      "ICALPA register",
+      "ICATF register",
+      "Las Palmas correspondence",
+      "Tenerife correspondence"
+    ]
   }
 ]
