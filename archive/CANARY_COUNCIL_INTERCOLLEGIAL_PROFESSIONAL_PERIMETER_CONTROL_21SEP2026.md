@@ -43,13 +43,38 @@ ICAM's 1-Jul-2026 decision in 1487/26 ordered the decision and a copy of the fil
 
 This is the strongest current proof that the cross-Bar dimension is operational rather than theoretical.
 
+## Cristo Ayose Suárez Pimentel — protection / traceability / restoration rule
+
+Cristo is controlled as **our former project-side counsel**, not as an adverse professional and not as the subject of a Por Derecho/Aweswell misconduct allegation.
+
+The source-controlled position is:
+
+- Cristo acted for LPB in DP 1041/2017. The 19-Dec-2017 court order admitted the requested preliminary diligence seeking CAM's complete credit-assignment deed, including price, payment date and transaction costs.
+- On 18-Jan-2018 the Insolvency Administrator warned several lawyers, including Cristo, that unauthorised acts would be put before Fiscalía and the Bar.
+- On 25-Jan-2018 the Insolvency Administrator wrote specifically to Cristo that he would report the matter to the Bar `a los efectos que correspondan`; terminated the specific professional relationship with LPB; requested *venia*; required him to stop acting for LPB; warned of judicial action; and instructed the procurador not to file Cristo's papers without IA authorisation.
+- No voluntary resignation by Cristo from that specific LPB mandate has been located.
+- Cristo continued broader Sun Park legal work after January 2018. The specific LPB mandate termination must therefore not be rewritten as a general voluntary departure from the project.
+- On 4-Feb-2023 Cristo recovered the 25-Jan-2018 email and described it as `el otro email relativo a la queja en el Colegio de Abogado y demás amenazas`. That description is evidence of Cristo's own characterisation, not proof that the Bar opened a file.
+- The 21-Aug-2026 ICATF communication is expressly **not a complaint against Cristo**. Its purpose is preservation and certification: determine whether the documented 2018 threat became a complaint, preliminary information, hearing, disciplinary file, inter-Bar communication or other institutional action.
+
+**Restoration objective:** recover any institutional record, identify any evidenced professional, reputational or procedural consequence, and give Cristo the material needed to understand, correct or rehabilitate any record or consequence where the certified evidence warrants it. Por Derecho/Aweswell's current position is supportive of Cristo.
+
+**Hard boundaries:**
+
+- The documented threat, specific mandate termination, venia request, judicial warning and procurador restriction do not prove that ICATF actually opened or decided a complaint/file.
+- No current source establishes an ICATF sanction against Cristo.
+- The sources do not yet establish as fact that the IA's pressure was legally unlawful or unethical; that requires separate legal/professional assessment.
+- The sources do not establish that the pressure alone caused LPB's later discontinuance of DP 1041/2017.
+- Do not publish raw Gmail provider IDs, private contact data or privileged material merely to prove this chain.
+- Do not place Cristo visually or analytically in an adverse-professional bucket. His public treatment must remain visibly distinct: **former project-side counsel / documented pressure / traceability / restoration**.
+
 ## Professional perimeter
 
 The controlled public register now separates the following nodes by function and evidential status:
 
 - Francisco de Borja Rodríguez-Batllori Laffitte — ICALPA DIP 80/2026; historic Insolvency Administrator role; historic/later professional environments remain separate.
 - María del Carmen Ramírez de Prada — ICALPA DIP 79/2026; CAM representation in Concurso 36/2012.
-- Cristo Ayose Suárez Pimentel — ICATF/matter nexus; former Aweswell/LPB counsel; historic custody and 1041/2017 questions.
+- Cristo Ayose Suárez Pimentel — **former project-side counsel / protection-restoration lane**; DP 1041/2017; specific LPB mandate termination and Bar/judicial pressure documented on 18/25-Jan-2018; ICATF route seeks traceability of any action directed at him, not discipline against him by Por Derecho/Aweswell.
 - Juan Tomás Parrilla Suárez — ICATF/matter nexus; former counsel; payment/withdrawal chronology requires source, timing, authority and causation reconstruction.
 - San Telmo Abogados y Economistas → RSM Spain — historic/later integration, custody, migration, conflict and preservation questions; integration does not transfer historic liability.
 - Garrigues — historic Community/LPB and Canary-proceeding mandate/custody lane; individual acts remain source-specific.
@@ -94,11 +119,12 @@ This package does **not** establish:
 
 ## Finite evidence gaps
 
-1. ICAM outgoing + ICATF incoming record for 1487/26.
-2. Substantive content behind the March–June 2026 CGAE ethical-channel track.
-3. Exact Bar verification for additional historic lawyers where only the matter nexus is currently source-controlled.
-4. Later mandate/conflict/custody files for PwC, RSM/San Telmo, Garrigues and Cuatrecasas.
-5. Primary payment/payer/source-of-funds proof for disputed professional-payment episodes.
+1. Cristo restoration gap: certify whether the January 2018 Bar threat became an ICATF complaint, preliminary information, hearing, file, decision or closure record and recover any evidenced consequence.
+2. ICAM outgoing + ICATF incoming record for 1487/26.
+3. Substantive content behind the March–June 2026 CGAE ethical-channel track.
+4. Exact Bar verification for additional historic lawyers where only the matter nexus is currently source-controlled.
+5. Later mandate/conflict/custody files for PwC, RSM/San Telmo, Garrigues and Cuatrecasas.
+6. Primary payment/payer/source-of-funds proof for disputed professional-payment episodes.
 
 ## GitLab recovery rule
 
