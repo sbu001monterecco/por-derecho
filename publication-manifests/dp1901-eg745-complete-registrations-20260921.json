@@ -1,35 +1,8 @@
 {
-  "schema": "por-derecho.publication-state.v1",
-  "schema_version": "1.0.0",
-  "publication_id": "PD-DP1901-EG745-COMPLETE-REGISTRATIONS-20260921",
-  "current_state": "BLOCKED_RECOVERY",
-  "owner": "DP1901-EG745-COMPLETE-SYNC-WORKER-20260921",
-  "base_commit": "01df48e335d07d0f1068381a294f6b65917f1248",
-  "worker_parent": "b8d8e37267932041ff31057b11279d6a51431296",
-  "worker_branch": "worker/eg745-complete-sync-20260921",
   "authority": "Gil Marer: ensure both update github full, update google drive. Scope here is authorised public-safe GitHub preservation and current filing state.",
+  "base_commit": "01df48e335d07d0f1068381a294f6b65917f1248",
   "blocking_reason": "Existing PR1684 controller fence23 is RECOVERY_REQUIRED; installed Contents-only reader cannot verify L1 above1MB. This candidate does not claim or release the lane.",
-  "recovery_requirements": [
-    "Adopt a legitimate owner-approved controller repair route; review narrow repair PR1687 with twelve passing byte-verification tests.",
-    "Recover held PR1684 under installed repaired verifier and preserve unresolved historical readback honestly.",
-    "Refresh main, reconcile this worker, pass exact-head checks, claim permit, merge normally, verify exact deployment and scoped routes."
-  ],
-  "expected_routes": {
-    "en": [
-      "en/dp-1901-2026/index.html",
-      "en/public-prosecution-inspection-exp-gub-745-2026/index.html",
-      "en/public-prosecution-pdf-document-room/index.html",
-      "en/public-prosecution-office-coverage/index.html",
-      "en/institutional-records/index.html"
-    ],
-    "es": [
-      "es/dp-1901-2026/index.html",
-      "es/fiscalia-inspeccion-exp-gub-745-2026/index.html",
-      "es/ministerio-fiscal-documentos-pdf/index.html",
-      "es/ministerio-fiscal-cobertura-oficinas/index.html",
-      "es/registros-institucionales/index.html"
-    ]
-  },
+  "current_state": "BLOCKED_RECOVERY",
   "expected_paths": [
     "assets/data/dp1901-direct-action-state-20260920.json",
     "assets/data/dp1901-eg745-cross-institutional-matrix-20260920.json",
@@ -68,8 +41,26 @@
     "publication-manifests/dp1901-eg745-complete-registrations-20260921.json",
     "publication-manifests/eg745-redsara-revision-worker-20260921.json",
     "scripts/load_completed_filings_20260921.py",
-    "scripts/reconcile_institutional_communications.py"
+    "scripts/reconcile_institutional_communications.py",
+    "ops/regage-status-export-input-20260921.json",
+    "reports/REGAGE_STATUS_EXPORT_RECONCILIATION_21SEP2026.md"
   ],
+  "expected_routes": {
+    "en": [
+      "en/dp-1901-2026/index.html",
+      "en/public-prosecution-inspection-exp-gub-745-2026/index.html",
+      "en/public-prosecution-pdf-document-room/index.html",
+      "en/public-prosecution-office-coverage/index.html",
+      "en/institutional-records/index.html"
+    ],
+    "es": [
+      "es/dp-1901-2026/index.html",
+      "es/fiscalia-inspeccion-exp-gub-745-2026/index.html",
+      "es/ministerio-fiscal-documentos-pdf/index.html",
+      "es/ministerio-fiscal-cobertura-oficinas/index.html",
+      "es/registros-institucionales/index.html"
+    ]
+  },
   "expected_source_files": [
     "assets/data/dp1901-direct-action-state-20260920.json",
     "assets/data/dp1901-eg745-cross-institutional-matrix-20260920.json",
@@ -100,28 +91,45 @@
     "publication-manifests/dp1901-eg745-complete-registrations-20260921.json",
     "publication-manifests/eg745-redsara-revision-worker-20260921.json",
     "scripts/load_completed_filings_20260921.py",
-    "scripts/reconcile_institutional_communications.py"
+    "scripts/reconcile_institutional_communications.py",
+    "ops/regage-status-export-input-20260921.json",
+    "reports/REGAGE_STATUS_EXPORT_RECONCILIATION_21SEP2026.md"
   ],
-  "scope_denominator": {
-    "dp1901_actions": 13,
-    "dp1901_registration_events": 14,
-    "eg745_registration_events": 10,
-    "new_canonical_events": 24,
-    "eg745_registered_pdfs": 27,
-    "eg745_page_instances": 1272,
-    "eg745_illustrations": 22,
-    "prior_canonical_rows_preserved": 335,
-    "canonical_rows_after": 359
-  },
-  "privacy": "No native private receipts, full filing bodies, correspondence, identity numbers, signatures, private provider locators or credentials published. Only permitted metadata/hashes and public views.",
-  "proof_limit": "Registered is distinct from admitted, routed, incorporated, examined, preserved or decided. No merits acceptance or criminal finding inferred.",
-  "history": "Old preparation byte identities, source controls, adverse outcomes and A02/A06/A12/A13 limitations preserved. Cajasiete generator input repairs an existing drift by retaining verbatim source-controlled rows0179/0180, not by rewriting historical objects.",
-  "public_effect": "Once legitimately deployed, bilingual DP1901/EG745 status and PDF rooms display actual receipt-controlled registration progress. Worker source does not itself change live Pages.",
   "external_actions": {
     "assistant_filed": false,
     "email_sent": false,
-    "social_posted": false,
     "main_merged": false,
-    "pages_deployed": false
-  }
+    "pages_deployed": false,
+    "social_posted": false
+  },
+  "history": "Old preparation byte identities, source controls, adverse outcomes and A02/A06/A12/A13 limitations preserved. Cajasiete generator input repairs an existing drift by retaining verbatim source-controlled rows0179/0180, not by rewriting historical objects.",
+  "owner": "DP1901-EG745-COMPLETE-SYNC-WORKER-20260921",
+  "privacy": "No native private receipts, full filing bodies, correspondence, identity numbers, signatures, private provider locators or credentials published. Only permitted metadata/hashes and public views.",
+  "proof_limit": "Registered/status-recorded is distinct from admitted, routed, incorporated, examined, preserved or decided. Literal Recibido/Enviado/Rechazado states are preserved without upgrading their legal effect. No merits acceptance or criminal finding inferred.",
+  "public_effect": "Once legitimately deployed, bilingual DP1901/EG745 status and PDF rooms display actual receipt-controlled registration progress. Worker source does not itself change live Pages.",
+  "publication_id": "PD-DP1901-EG745-COMPLETE-REGISTRATIONS-20260921",
+  "recovery_requirements": [
+    "Adopt a legitimate owner-approved controller repair route; review narrow repair PR1687 with twelve passing byte-verification tests.",
+    "Recover held PR1684 under installed repaired verifier and preserve unresolved historical readback honestly.",
+    "Refresh main, reconcile this worker, pass exact-head checks, claim permit, merge normally, verify exact deployment and scoped routes."
+  ],
+  "schema": "por-derecho.publication-state.v1",
+  "schema_version": "1.0.0",
+  "scope_denominator": {
+    "canonical_rows_after": 643,
+    "dp1901_actions": 13,
+    "dp1901_registration_events": 14,
+    "eg745_illustrations": 22,
+    "eg745_page_instances": 1272,
+    "eg745_registered_pdfs": 27,
+    "eg745_registration_events": 10,
+    "new_canonical_events": 24,
+    "new_canonical_events_including_status_export": 308,
+    "prior_canonical_rows_preserved": 335,
+    "regage_status_export_new_formal_events": 284,
+    "regage_status_export_records": 398,
+    "regage_status_export_reused_formal_events": 114
+  },
+  "worker_branch": "worker/eg745-complete-sync-20260921",
+  "worker_parent": "b8d8e37267932041ff31057b11279d6a51431296"
 }
