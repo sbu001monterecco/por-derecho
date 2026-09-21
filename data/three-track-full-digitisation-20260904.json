@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.3",
+  "schema_version": "1.0.4",
   "control_id": "PD-THREE-TRACK-DIGITISATION-20260904-01",
   "created": "2026-09-04",
   "base_main_sha": "b8ded173b06f17aaf91569f051dd11e621b139ae",
@@ -72,7 +72,8 @@
         "text_layer_processed": "86/86 pages",
         "source_role": "operative final complaint source; same-date stamped daily-reference-21 cover proves presentation of an autonomous five-private-actor complaint, while exact byte-for-byte filed-payload identity remains to be certified",
         "stamped_cover_sha256": "8ee03884d32b6b3d9e8377a646eca3d79a7ae199aebc8cc378a9180ba2aef846",
-        "public_raw_pdf": false
+        "public_raw_pdf": false,
+        "repository_digitisation_status": "FULL_PAGE_AWARE_DIGITISATION_IN_GIT"
       },
       "expansion": {
         "reported_filing_date": "2026-07-09",
@@ -82,7 +83,8 @@
         "text_layer_processed": "19/19 pages",
         "source_role": "final signed 9-Jul amplification source; separate stamped cover proves private-actor amplification/documentary material was physically tendered under DP1901/Plaza6, while electronic incorporation and exact Fiscal corpus remain open",
         "stamped_dp1901_tender_sha256": "dfad6f405b7a2ec047a98a7183a9cbfd0698427d3925d02b2a50b4de76de8f71",
-        "public_raw_pdf": false
+        "public_raw_pdf": false,
+        "repository_digitisation_status": "FULL_PAGE_AWARE_DIGITISATION_IN_GIT"
       },
       "official_status_control": {
         "nig": "3501643220260016977",
@@ -135,7 +137,8 @@
         "sha256": "a7f057fd99d0bdf1a891cf4610f69ed19788d2e40f9f23a6ff66fc6255d97846",
         "text_layer_processed": "26/26 pages",
         "source_role": "controlled immediate amplification source; filing/ingestion receipt should be kept distinct from source-byte identity",
-        "public_raw_pdf": false
+        "public_raw_pdf": false,
+        "repository_digitisation_status": "FULL_PAGE_AWARE_DIGITISATION_IN_GIT"
       }
     },
     {
@@ -149,7 +152,8 @@
         "sha256": "b11f10e7410f922a8cd1796ea462ea7ea20d555b7308e4481f2cb23732b1002b",
         "text_layer_processed": "55/55 pages",
         "source_role": "operative Control 22 complaint candidate / reported filed copy",
-        "public_raw_pdf": false
+        "public_raw_pdf": false,
+        "repository_digitisation_status": "FULL_PAGE_AWARE_DIGITISATION_IN_GIT"
       },
       "official_status_control": {
         "nig": "3501643220260016826",
@@ -197,7 +201,10 @@
         "public_raw_pdf": false,
         "principal_pleading_pages": 27,
         "presentation_front_matter_pages": 4,
-        "principal_document_bundle_pages": 31
+        "principal_document_bundle_pages": 31,
+        "text_layer_processed": "79/79 pages",
+        "repository_digitisation_status": "FULL_PAGE_AWARE_DIGITISATION_IN_GIT",
+        "public_principal_transcription": "evidence/judicial-governance/decanato-reference-24/full-text/denuncia-magistrado-18jun2026-public-transcription.md"
       },
       "supplement": {
         "reported_filing_date": "2026-06-25",
@@ -205,7 +212,10 @@
         "pages": 13,
         "sha256": "04051e33000f830c32ba06e31996ba4e6812c7d54c199ee03696b85e68589679",
         "stamped_cover_sha256": "724caf532c25159ead6ae4cfd88c21acbc2d1f202e2bc08cfd713ad07c0376f1",
-        "relationship": "dependent supplement expressly requested to be joined to the separate 18-Jun daily-reference-24 judge complaint; daily reference is not a proceeding number"
+        "relationship": "dependent supplement expressly requested to be joined to the separate 18-Jun daily-reference-24 judge complaint; daily reference is not a proceeding number",
+        "text_layer_processed": "13/13 pages",
+        "repository_digitisation_status": "FULL_PAGE_AWARE_DIGITISATION_IN_GIT",
+        "public_transcription_with_stamped_cover": "evidence/judicial-governance/decanato-reference-24/full-text/ampliacion-denuncia-magistrado-25jun2026-public-transcription.md"
       },
       "status_control": {
         "decanato_daily_locator": "24",
@@ -274,5 +284,12 @@
   ],
   "reader_model": "ACTOR → CAPACITY → EVENT → SOURCE → DECISION/OMISSION → ASSET/RIGHT → CONSEQUENCE → CONTRARY/ALTERNATIVE → OPEN PROOF",
   "release_scope": "Additive public presentation and structured context only; no court filing, email, authority contact, or publication of raw private evidence is authorised by this record.",
-  "updated": "2026-09-18"
+  "updated": "2026-09-21",
+  "source_corpus_control": {
+    "control_id": "PD-C212224-SOURCE-CORPUS-20260921-01",
+    "path": "data/control-21-22-24-source-corpus-20260921.json",
+    "documents": 6,
+    "source_pages": 278,
+    "status": "FULL_PAGE_AWARE_DIGITISATION_COMPLETE_AND_INTERLINKED"
+  }
 }
