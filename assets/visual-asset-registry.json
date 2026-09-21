@@ -346,7 +346,7 @@
         "Founder and public voice · Por Derecho",
         "Principal sponsor · Project Sun Rock / Aweswell"
       ],
-      "path": "assets/gil-marer.webp",
+      "path": "assets/actors/gil-marer--about-page--20260921.webp",
       "git_blob_sha": "577b78c9949a45cb41b493c4091c718f2cd64b6a",
       "identity_status": "LOCKED_CANONICAL_REPOSITORY_ASSET",
       "identity_basis": "Website derivative of the user-approved official Gil Marer portrait. The user expressly instructed on 21 September 2026 that the stylised version be used on the About page, principally to remove the wine/bar background and make the portrait fit the website better. No facial-identification inference performed.",
@@ -366,12 +366,14 @@
         "repository_derivative_dimensions": "800x800",
         "repository_derivative_bytes": 66140,
         "repository_derivative_format": "webp",
-        "previous_about_blob_sha": "5f8fb1013fdce7953a5fdf3cb3083861c9e4576f",
         "background_treatment": "Warm neutral editorial backdrop; no wine bottles, bar shelves or identifiable hospitality-background clutter.",
-        "user_approval_date": "2026-09-21"
+        "user_approval_date": "2026-09-21",
+        "legacy_about_path": "assets/gil-marer.webp",
+        "legacy_about_blob_sha": "5f8fb1013fdce7953a5fdf3cb3083861c9e4576f"
       },
       "storage_mode": "repository-byte-locked",
-      "usage_note": "Website-facing About-page derivative; the official base portrait remains person.gil-marer.official-base."
+      "usage_note": "Website-facing About-page derivative; the official base portrait remains person.gil-marer.official-base.",
+      "variant_of": "person.gil-marer.official-base"
     }
   },
   "rejected_or_prohibited_mappings": [
