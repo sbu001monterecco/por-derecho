@@ -219,3 +219,15 @@ Locked drafting state:
 - Gil's belief that CAM/Acosta Matos was financially weak in 2017–2018 is preserved as an allegation; the current corpus proves a smaller hospitality/investment footprint but not financial distress.
 - Every serious communication must contain a short past → bridge → present → future context paragraph before the recipient-specific request.
 - Never transfer culpability to employees, investors, brands, advisers, public bodies or other third parties by association.
+
+## ICALPA / ICATF correspondence and rapporteur-independence control — 21 September 2026
+
+For any work on ICALPA, ICATF, Consejo Canario, DIP 79/2026, DIP 80/2026 or rapporteur/instructor independence, first read `archive/ICALPA_ICATF_CORRESPONDENCE_AND_RAPPORTEUR_INDEPENDENCE_CONTROL_21SEP2026.md` plus the two correspondence JSON registers.
+
+Locked source state:
+- ICALPA institutional-route census: 62 unique messages; 30 outgoing / 32 incoming; 24 substantive outgoing; 29 registry receipts.
+- ICATF direct census: 7 unique messages; 4 outgoing / 3 incoming.
+- 10-Jun-2026 ICALPA correspondence already raised the preventive structural-pressure / ponente-protection issue without alleging that pressure had occurred.
+- Consejo Canario drafting must ask for a conflict-cleared, actually/apparently independent ponente/instructor, formal logging of materially relevant external approaches, and formal/traceable/contradictable entry of substantive communications.
+- Do not infer institutional ICALPA notice from lawyer-specific 3077@icalpa.com / icalpa3077@icalpa.com mailboxes.
+- Raw provider IDs/private contact data remain outside the public repository.

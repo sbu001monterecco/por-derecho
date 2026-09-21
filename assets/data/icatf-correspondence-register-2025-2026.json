@@ -1,0 +1,153 @@
+{
+  "schema": "por-derecho.icatf-correspondence-register.v1",
+  "control_id": "PD-ICATF-CORR-20260921-01",
+  "control_date": "2026-09-21",
+  "source": "Connected SBU Gmail search/readback",
+  "routes": [
+    "registro@icatf.es",
+    "secretaria@icatf.es",
+    "informa@icatf.es",
+    "info@icatf.es",
+    "delegacionnorte@icatf.es"
+  ],
+  "counts": {
+    "unique_messages": 7,
+    "outgoing": 4,
+    "incoming": 3
+  },
+  "messages": [
+    {
+      "date": "2025-12-23T21:52:00",
+      "direction": "OUTGOING",
+      "kind": "SUBSTANTIVE",
+      "subject": "Asunto: Consulta urgente — competencia y trámite para posible queja deontológica (asunto concursal “Sun Park”)",
+      "institutional_to": [
+        "info@icatf.es"
+      ],
+      "institutional_cc": [],
+      "attachments": [],
+      "themes": [
+        "TRACEABILITY",
+        "COMPETENCE"
+      ],
+      "full_body_preserved_in_source_mailbox": true,
+      "public_body_policy": "Original body not reproduced in machine register; public digest preserves material institutional content without private metadata."
+    },
+    {
+      "date": "2025-12-31T10:46:55",
+      "direction": "OUTGOING",
+      "kind": "SUBSTANTIVE",
+      "subject": "Fwd: Asunto: Consulta urgente — competencia y trámite para posible queja deontológica (asunto concursal “Sun Park”)",
+      "institutional_to": [
+        "delegacionnorte@icatf.es",
+        "info@icatf.es"
+      ],
+      "institutional_cc": [],
+      "attachments": [],
+      "themes": [
+        "TRACEABILITY",
+        "COMPETENCE"
+      ],
+      "full_body_preserved_in_source_mailbox": true,
+      "public_body_policy": "Original body not reproduced in machine register; public digest preserves material institutional content without private metadata."
+    },
+    {
+      "date": "2026-08-21T13:57:40",
+      "direction": "OUTGOING",
+      "kind": "SUBSTANTIVE",
+      "subject": "PUESTA EN CONOCIMIENTO, PRESERVACIÓN Y CERTIFICACIÓN URGENTES - 2647-ICATF - D. Cristo Ayose Suárez Pimentel (col. 4968) / DP 1041/2017 - contexto DIP 80/2026, DP 1901/2026 y DP 748/2026 - art. 262 LECrim y posible relevancia del art. 262 CP",
+      "institutional_to": [
+        "registro@icatf.es"
+      ],
+      "institutional_cc": [
+        "secretaria@icatf.es",
+        "informa@icatf.es",
+        "info@icatf.es",
+        "delegacionnorte@icatf.es"
+      ],
+      "attachments": [
+        "san-telmo-ricpe-sun-park-stamp-v1-ES.png",
+        "pwc-five-actors-plus-ac-2016-knowledge-checkpoint-ES.png"
+      ],
+      "themes": [
+        "ICATF_2647",
+        "CRISTO",
+        "PRESERVATION",
+        "TRACEABILITY",
+        "COMPETENCE"
+      ],
+      "full_body_preserved_in_source_mailbox": true,
+      "public_body_policy": "Original body not reproduced in machine register; public digest preserves material institutional content without private metadata."
+    },
+    {
+      "date": "2026-08-21T13:57:47",
+      "direction": "INCOMING",
+      "kind": "AUTOMATED_ROUTE_NOTICE",
+      "subject": "Respuesta automática - por ausencia temporal Re: PUESTA EN CONOCIMIENTO, PRESERVACIÓN Y CERTIFICACIÓN URGENTES - 2647-ICATF - D. Cristo Ayose Suárez Pimentel (col. 4968) / DP 1041/2017 - contexto DIP 80/2026, DP 1901/2026 y DP 748/2026 - art. 262 LECrim y posible relevancia del art. 262 CP",
+      "institutional_to": [],
+      "institutional_cc": [],
+      "attachments": [],
+      "themes": [
+        "ICATF_2647",
+        "CRISTO",
+        "PRESERVATION"
+      ],
+      "full_body_preserved_in_source_mailbox": true,
+      "public_body_policy": "Original body not reproduced in machine register; public digest preserves material institutional content without private metadata."
+    },
+    {
+      "date": "2026-08-21T13:57:47",
+      "direction": "INCOMING",
+      "kind": "AUTOMATED_ROUTE_NOTICE",
+      "subject": "Ausencia temporal Re: PUESTA EN CONOCIMIENTO, PRESERVACIÓN Y CERTIFICACIÓN URGENTES - 2647-ICATF - D. Cristo Ayose Suárez Pimentel (col. 4968) / DP 1041/2017 - contexto DIP 80/2026, DP 1901/2026 y DP 748/2026 - art. 262 LECrim y posible relevancia del art. 262 CP",
+      "institutional_to": [],
+      "institutional_cc": [],
+      "attachments": [],
+      "themes": [
+        "ICATF_2647",
+        "CRISTO",
+        "PRESERVATION"
+      ],
+      "full_body_preserved_in_source_mailbox": true,
+      "public_body_policy": "Original body not reproduced in machine register; public digest preserves material institutional content without private metadata."
+    },
+    {
+      "date": "2026-08-21T13:57:50",
+      "direction": "INCOMING",
+      "kind": "AUTOMATED_ROUTE_NOTICE",
+      "subject": "Respuesta automática - Ausencia temporal Re: PUESTA EN CONOCIMIENTO, PRESERVACIÓN Y CERTIFICACIÓN URGENTES - 2647-ICATF - D. Cristo Ayose Suárez Pimentel (col. 4968) / DP 1041/2017 - contexto DIP 80/2026, DP 1901/2026 y DP 748/2026 - art. 262 LECrim y posible relevancia del art. 262 CP",
+      "institutional_to": [],
+      "institutional_cc": [],
+      "attachments": [],
+      "themes": [
+        "ICATF_2647",
+        "CRISTO",
+        "PRESERVATION"
+      ],
+      "full_body_preserved_in_source_mailbox": true,
+      "public_body_policy": "Original body not reproduced in machine register; public digest preserves material institutional content without private metadata."
+    },
+    {
+      "date": "2026-08-25T21:54:45",
+      "direction": "OUTGOING",
+      "kind": "SUBSTANTIVE",
+      "subject": "Solicitud de trazabilidad y copia — ICAM 1487/26, 2647-ICATF y escrito de 21/08/2026",
+      "institutional_to": [
+        "registro@icatf.es"
+      ],
+      "institutional_cc": [
+        "secretaria@icatf.es"
+      ],
+      "attachments": [],
+      "themes": [
+        "ICAM_1487_26",
+        "ICATF_2647",
+        "CRISTO",
+        "TRACEABILITY",
+        "COMPETENCE"
+      ],
+      "full_body_preserved_in_source_mailbox": true,
+      "public_body_policy": "Original body not reproduced in machine register; public digest preserves material institutional content without private metadata."
+    }
+  ]
+}
