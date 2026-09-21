@@ -6,8 +6,9 @@
 
 ## 1. Complete bounded census
 
-- ICALPA / Las Palmas: **61 message events**.
+- ICALPA / Las Palmas: **62 message events**.
 - ICATF / Tenerife: **7 message events**.
+- The ICALPA denominator includes the 23-Dec-2025 institutional enquiry sent to the earlier general route `informacion@icalpa.com`; that route is historical and is not presented as the current formal-submission mailbox.
 - Duplicates, registration receipts, automatic replies and superseded drafts remain separate events.
 - Raw Gmail IDs, provider metadata and unrelated private material are not published.
 
