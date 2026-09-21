@@ -118,3 +118,16 @@ A dependency exists where the later proposition would materially weaken if the u
 - Do not equate modelled profitability with actual Pink cash.
 - Do not equate €3,032,010.34 with bare rent.
 - Do not transfer conduct, knowledge, intent or guilt between actors by association.
+
+
+## Continuation — unitary prosecutorial-first package
+
+The evidential checkpoint now routes into the following canonical continuation files:
+
+- `archive/PINK_CANARY_UNITARY_PROSECUTORIAL_FIRST_MASTER_21SEP2026.md`
+- `archive/PINK_CANARY_SUPERINTELLIGENCE_INGEST_21SEP2026.md`
+- `archive/PINK_CANARY_SOURCE_AND_GAP_REGISTER_21SEP2026.md`
+- `archive/PINK_CANARY_GITLAB_SYNC_MANIFEST_21SEP2026.md`
+
+The continuation applies a criminal/prosecutorial-first **analytical routing rule** while retaining the existing evidential safeguards. It also preserves Gil Marer's assertion that the Pink judgment was later instrumentalised for and on behalf of private actors described as the Acosta Matos perimeter as a falsifiable investigative thesis, not a proved fact.
+
