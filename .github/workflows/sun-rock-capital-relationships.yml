@@ -5,6 +5,10 @@ on:
     paths:
       - 'en/capital-relationships/**'
       - 'es/relaciones-de-capital/**'
+      - 'en/institutional-capital/**'
+      - 'es/capital-institucional/**'
+      - 'assets/institutional-capital-20260921.css'
+      - 'assets/data/sun-rock-capital-process-v1.json'
       - 'assets/capital-relationships-20260916.css'
       - 'assets/capital-relationships-route-20260916.js'
       - 'assets/data/sun-rock-capital-relationships-v1.json'
@@ -18,6 +22,10 @@ on:
     paths:
       - 'en/capital-relationships/**'
       - 'es/relaciones-de-capital/**'
+      - 'en/institutional-capital/**'
+      - 'es/capital-institucional/**'
+      - 'assets/institutional-capital-20260921.css'
+      - 'assets/data/sun-rock-capital-process-v1.json'
       - 'assets/capital-relationships-20260916.css'
       - 'assets/capital-relationships-route-20260916.js'
       - 'assets/data/sun-rock-capital-relationships-v1.json'
