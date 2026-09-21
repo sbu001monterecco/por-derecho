@@ -1,6 +1,6 @@
 # Ref24 — dynamic living dossier
 
-Updated: 21 September 2026
+Updated: 22 September 2026
 
 Ref24 is the separate judge-related denuncia/notitia criminis presented on 18 June 2026 concerning Alberto López Villarrubia and judicial acts in Concurso 36/2012.
 
@@ -8,11 +8,16 @@ The printed principal was addressed to the **Sala de lo Civil y Penal del Tribun
 
 The 25 June dependent supplement is addressed through Instrucción/Decanato, asks to be joined to the original Ref24, preserves Ref22 as separate, and states that the separately presented private-actor complaint is not incorporated. It requests remittal to the TSJC if competent.
 
+## Filing-name control
+
+The 25 June judicial **APORTACIÓN COMPLEMENTARIA AUTOSUFICIENTE** is the same dependent Ref24 document that later records sometimes call the **ampliación**. Count it once. A separate 25 June **CGPJ / DI 169/2026 aportación urgente** concerns institutional traceability of Ref24; it is linked evidence, not a second Ref24 judicial pleading.
+
 ## Frozen sources
 
 - [18-Jun complete public-safe complaint transcription](../../judicial-governance/decanato-reference-24/full-text/denuncia-magistrado-18jun2026-public-transcription.md)
 - [25-Jun complete dependent supplement transcription](../../judicial-governance/decanato-reference-24/full-text/ampliacion-denuncia-magistrado-25jun2026-public-transcription.md)
 - [source/hashes/redaction inventory](../../judicial-governance/decanato-reference-24/README.md)
+- [CGPJ / DI 169 frozen traceability contribution, 25-Jun](../frozen-linked/di169-ref24-traceability-aportacion-25jun2026.md) — separate institutional route
 
 Native 79-page package SHA-256: `1cae1912a20202c5f5779db07e77c7e1d3f0ae514676e07d3ace4dd56f6f76a0`.  
 Dependent supplement SHA-256: `04051e33000f830c32ba06e31996ba4e6812c7d54c199ee03696b85e68589679`.

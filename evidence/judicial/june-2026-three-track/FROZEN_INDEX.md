@@ -43,3 +43,15 @@ The frozen Ref24 material already exists and is reused rather than duplicated:
 
 Native package SHA-256: `1cae1912a20202c5f5779db07e77c7e1d3f0ae514676e07d3ace4dd56f6f76a0`.  
 Dependent supplement SHA-256: `04051e33000f830c32ba06e31996ba4e6812c7d54c199ee03696b85e68589679`.
+
+
+## Linked institutional traceability — CGPJ / DI 169/2026, 25 June 2026
+
+This is **not** a second Ref24 judicial pleading. It is the separate CGPJ urgent contribution concerning Ref24 traceability.
+
+- [complete public-safe frozen transcription](frozen-linked/di169-ref24-traceability-aportacion-25jun2026.md)
+
+Source SHA-256: `4c1be5637c4cf58f18dcbea657c2200658394360ffb9c2302a6ef1a0cb34cbe9`.  
+Source pages: 9.
+
+The two final source pages are photographic annexes showing the 18-June Ref24 stamped presentation cover and the first page of the 25-June dependent judicial contribution. The CGPJ filing itself says it does not reproduce the complete complaint or complete judicial ampliación.
