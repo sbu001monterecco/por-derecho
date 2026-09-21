@@ -114,3 +114,36 @@ Gil Marer calls on Fiscalía and ICALPA to take notice, preserve/obtain the comp
 - native 25 January 2018 AC/Cristo communication and later DP1041 docket;
 - proceeding-by-proceeding mandate map for Gil, LPB, Aweswell, Matkator, Pink and related parties;
 - verification and inclusion/exclusion decision for every B-series professional.
+
+---
+
+## 21 September 2026 — unitary re-read: distinct mechanisms, one continuity question
+
+**Superseding control for this update:** `archive/AC_COUNSEL_INTERFERENCE_UNITARY_REDIGEST_21SEP2026.md` and `assets/data/ac-counsel-interference-unitary-v1.json`.
+
+The 21-Sep re-read does not convert A1–A8 into one common-cause theory. It strengthens the register by separating four mechanisms:
+
+1. **Cristo Ayose Suárez Pimentel — direct defined-mandate displacement.** The 25-Jan-2018 AC communication itself terminated the LPB mandate in DP 1041/2017, requested venia/abstention, announced Bar recourse, warned of judicial action and imposed a filing-authorisation gate. For that narrow mandate, the prior generic `C0` exit reading is superseded by direct AC termination. Cristo continued other Sun Park work, so this is not total departure.
+2. **Juan Tomás Parrilla Suárez — payment/intermediation during client-initiated transition.** The direct 28-May-2020 chain records Parrilla contemplating an immediate €25,000 AC payment and further estate recognition while the client and incoming counsel disputed the fee/cost treatment. The same transition records Parrilla conveying the AC contact request. The 31-May substitution remains a client decision framed as mutual loss of confidence. The 1-Jun Jiménez report then records “peace”, possible complaint withdrawal, payment assurance for Parrilla/procurator and praise of Parrilla.
+3. **Joaquín Ruiz de Infante / Alas — personal-exposure pressure around the defence pleading.** The 19-Feb-2020 Article 215.2 providencia created the procedural possibility of a complaint against Gil, the procurator and Joaquín. Cristo's 27-Feb contemporaneous view was that the initiative appeared designed to frighten lawyers from continuing to denounce. Joaquín's 21-Sep withdrawal, lawyer-client-breakdown reason and apology/withdrawal of subjective dishonesty characterisations remain strong contrary evidence.
+4. **Daniel Jiménez / SLJ — access to incoming counsel.** The 28-May warning against off-record intermediation, the 1-Jun AC call and the 5-Jun reported CAM-lawyer request through the AC support an attempted-influence inference. Jiménez's resistance and his strategy/client-direction/non-payment withdrawal reasons remain contrary evidence.
+
+### Parrilla: criminal allegation boundary
+
+Gil Marer now expressly characterises the payment/“peace” combination as an **illicit inducement or effective open bribe** and says it put a final wedge into an already deteriorated lawyer-client relationship. He further alleges that the later €26,750 estate payment derived from the liquidity created by the non-convalidated €400,000 transaction.
+
+The register does **not** publish bribery or criminal proceeds as established facts. The documentary state is:
+
+- the €400,000 sale, LPB account and AC self-payment are reported by the AC;
+- the 24-Oct-2019 order refused convalidation;
+- the May/June-2020 fee/intermediation/peace sequence is documented;
+- the later AC report records €26,750 for Parrilla;
+- Gil states the sale liquidity was then the only available source;
+- the matching bank debit, invoice, authority, IGIC/cost allocation and complete estate ledger remain open.
+
+Accordingly, the supported publication state is **criminal/prosecutorial allegation + material documentary basis + decisive money-trace gates open**. Receipt alone does not establish Parrilla's criminal knowledge or participation.
+
+### Global non-transfer rule
+
+The same institutional actor appearing across several lawyer transitions can justify a pattern investigation. It does not allow knowledge, intent, liability or causation to be transferred from one lawyer, payment, threat or proceeding to another.
+
