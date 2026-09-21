@@ -127,5 +127,13 @@
     "private_v3_preserved_outside_public_git": true,
     "predecessor_pr_1696": "CLOSED_UNMERGED_PRESERVED",
     "rule": "Resume from the live R33 routes and PR #1732 lineage. Do not revive PR #1696 or publish private forensic case data."
+  },
+  "validation": {
+    "evidence": [
+      "PR #1732 exact-head Release acceptance succeeded on candidate eca867a95e0c26b718b4999b719d93ef10e9f61b.",
+      "PR #1732 Publication integrity and private-source/OSINT governance checks succeeded.",
+      "GitHub Pages run 35667186111 (#1678) succeeded for merge 96e2e9b1e020ff32779ea35a2c3c7b33cf8c58fd.",
+      "Publication controller run 35667198114 recorded VERIFIED_FOR_SCOPE at fence 39 with pending=[]."
+    ]
   }
 }
