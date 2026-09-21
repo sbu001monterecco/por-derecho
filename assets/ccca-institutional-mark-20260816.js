@@ -24,7 +24,7 @@
     const aria = isEs
       ? 'Abrir el registro de Project Sun Rock, controlado por fuentes, sobre el Consejo Canario de Colegios de Abogados'
       : 'Open Project Sun Rock’s source-controlled record for the Canary Council of Bar Associations';
-    const status = isEs ? 'Sin comunicación recibida hasta la fecha' : 'No communication received to date';
+    const status = isEs ? 'Sin comunicación directa recibida del Consejo sobre esta coordinación' : 'No direct Council communication received on this coordination question';
 
     const card = make(`
       <a class="identity-logo-card" data-institution="ccca" href="${href}" aria-label="${aria}">
@@ -53,34 +53,6 @@
       ));
     }
 
-    const coagcIndex = index && index.querySelector('a[href="#coagc"] span');
-    const coalzIndex = index && index.querySelector('a[href="#coa-lanzarote"] span');
-    if (coagcIndex) coagcIndex.textContent = '11';
-    if (coalzIndex) coalzIndex.textContent = '12';
-
-    const coagcNumber = document.querySelector('#coagc .ir-number');
-    const coalzNumber = document.querySelector('#coa-lanzarote .ir-number');
-    if (coagcNumber) coagcNumber.textContent = '11';
-    if (coalzNumber) coalzNumber.textContent = '12';
-
-    const navRecords = document.querySelector('.institutional-records-page .main-nav a[href="#records"]');
-    if (navRecords) navRecords.textContent = isEs ? 'Doce registros' : 'Twelve records';
-
-    const eyebrow = document.querySelector('.institutional-records-page .ir-hero .eyebrow');
-    if (eyebrow) eyebrow.textContent = isEs
-      ? 'Registro controlado por fuentes · verificado hasta 16 agosto 2026'
-      : 'Source-controlled record · verified through 16 August 2026';
-
-    const lead = document.querySelector('.institutional-records-page .ir-hero .lead');
-    if (lead) lead.textContent = isEs
-      ? 'Doce registros estables consolidan comunicaciones clave y referencias técnicas delimitadas relativas a los organismos públicos y corporaciones profesionales de derecho público del mapa de control. Cada uno separa competencia, hitos trazables, límites probatorios y una acción finita pendiente.'
-      : 'Twelve stable records consolidate key communications and bounded technical references concerning the public authorities and public-law professional corporations in the accountability map. Each separates competence, traceable milestones, evidential limits and one finite pending action.';
-
-    const scope = document.querySelector('.institutional-records-page .ir-status div:first-child strong');
-    if (scope) scope.textContent = isEs
-      ? 'Doce registros de organismos públicos y corporaciones profesionales de derecho público'
-      : 'Twelve records for public authorities and public-law professional corporations';
-
     const article = make(isEs ? spanishRecord() : englishRecord());
     icalpa.insertAdjacentElement('afterend', article);
   };
@@ -94,8 +66,8 @@
           <p><strong>Competencia:</strong> corporación de derecho público de ámbito canario que representa y coordina a los Colegios de Abogados de Canarias dentro de las funciones atribuidas por su normativa y Estatutos. Se mantiene separada de ICALPA y de cualquier expediente colegial de primera instancia.</p>
         </div>
         <div class="ir-meta">
-          <div><span>Última verificación</span><strong>16 agosto 2026</strong></div>
-          <div><span>Estado</span><strong>Sin comunicación recibida del Consejo hasta la fecha</strong></div>
+          <div><span>Última verificación</span><strong>21 septiembre 2026</strong></div>
+          <div><span>Estado</span><strong>Sin comunicación directa recibida sobre esta coordinación</strong></div>
         </div>
       </div>
       <div class="ir-controls">
@@ -103,8 +75,8 @@
         <div class="ir-control limit"><strong>No acredita</strong>La inclusión de esta marca ni la ausencia de comunicación recibida acreditan posición, admisión, archivo, resolución, infracción profesional o decisión sobre el fondo. El silencio no es una decisión de mérito.</div>
         <div class="ir-control action"><strong>Acción finita pendiente</strong>Incorporar cualquier comunicación oficial que se reciba con fecha, referencia, alcance, estado procedimental y límite probatorio, manteniendo separado el carril del Consejo de los expedientes ICALPA.</div>
       </div>
-      <div class="ir-links"><a class="official" href="https://consejocanariodeabogados.es/" rel="external noopener">Sitio oficial del Consejo ↗</a></div>
-      <p class="ir-source-note">Estado actualizado a 16 agosto 2026: no se publica inferencia alguna a partir de la ausencia de comunicación recibida.</p>
+      <div class="ir-links"><a href="../consejo-canario-coordinacion-deontologica-2026/">Registro de coordinación profesional →</a><a class="official" href="https://consejocanariodeabogados.es/" rel="external noopener">Sitio oficial del Consejo ↗</a></div>
+      <p class="ir-source-note">Estado actualizado a 21 septiembre 2026: no se publica inferencia alguna a partir de la ausencia de comunicación directa del Consejo.</p>
     </article>
   `;
 
@@ -117,8 +89,8 @@
           <p><strong>Competence:</strong> a Canary Islands public-law corporation representing and coordinating the Bar Associations of the Canary Islands within the functions assigned by its governing law and statutes. It is kept separate from ICALPA and from any first-instance Bar disciplinary file.</p>
         </div>
         <div class="ir-meta">
-          <div><span>Last verified</span><strong>16 August 2026</strong></div>
-          <div><span>Status</span><strong>No communication received from the Council to date</strong></div>
+          <div><span>Last verified</span><strong>21 September 2026</strong></div>
+          <div><span>Status</span><strong>No direct Council communication received on this coordination question</strong></div>
         </div>
       </div>
       <div class="ir-controls">
@@ -126,8 +98,8 @@
         <div class="ir-control limit"><strong>Does not prove</strong>Neither inclusion of this identifier nor the absence of a received communication establishes a position, admission, closure, decision, professional breach or merits outcome. Silence is not a merits decision.</div>
         <div class="ir-control action"><strong>Finite pending action</strong>Add any official communication received with its date, reference, scope, procedural status and evidential limit, keeping the Council track separate from the ICALPA files.</div>
       </div>
-      <div class="ir-links"><a class="official" href="https://consejocanariodeabogados.es/" rel="external noopener">Official Council website ↗</a></div>
-      <p class="ir-source-note">Status updated 16 August 2026: no inference is published from the absence of a received communication.</p>
+      <div class="ir-links"><a href="../canary-council-deontological-coordination-2026/">Professional coordination record →</a><a class="official" href="https://consejocanariodeabogados.es/" rel="external noopener">Official Council website ↗</a></div>
+      <p class="ir-source-note">Status updated 21 September 2026: no inference is published from the absence of direct Council communication.</p>
     </article>
   `;
 

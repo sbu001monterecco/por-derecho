@@ -160,3 +160,7 @@ Concurso 36/2012 decision-family gaps from 2014 through 2026 continue in `MISSIN
 ## Namespaced continuation — 3205/2014
 
 The finite docket, authority, identity, incident-corroboration, counsel/procurador, continuity/perimeter and outcome gaps for 3205/2014 continue in `MISSING_EVIDENCE_REGISTER_DP3205_2014_APPEND_30AUG2026.md` under IDs `ME-DP3205-01` through `ME-DP3205-17`. The contemporaneous complaint and summons are located; the remaining gaps must not be described as if the primary records were still wholly absent, and no missing item may be converted into an adverse inference.
+
+## Namespaced continuation — 21 September 2026 — Canary Council
+
+Consejo Canario / inter-Colegio / professional-perimeter gaps continue in `MISSING_EVIDENCE_REGISTER_CANARY_COUNCIL_ADDENDUM_21SEP2026.md` under IDs `ME-CCCA-001`–`005`: ICAM→Tenerife execution/receipt, CGAE ethical-channel substantive response, exact additional lawyer Colegio membership, later firm mandate/conflict/custody records and professional-payment source/timing/accounting proof.

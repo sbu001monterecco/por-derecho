@@ -200,3 +200,43 @@ Before drafting any new ICAM / CCACM / ICALPA / ICATF communication:
 ---
 
 **Core control sentence:** Madrid and Canary professional-regulation routes form a unitary evidential map but remain legally and procedurally distinct. Cross-link them for chronology and competence; never collapse them into one proceeding.
+
+## 13. 21 September 2026 — Canary Council / CGAE coordination addendum
+
+The 25-Aug four-body control remains historical and is not deleted. The current institutional map now adds two distinct levels:
+
+- **Consejo Canario de Colegios de Abogados (CCCA)** — Canary autonomous professional body; distinct from ICALPA, ICATF and Madrid **CCACM**.
+- **Consejo General de la Abogacía Española (CGAE)** — national professional body. RS-001022/2026 states that ordinary lawyer complaints are not heard by CGAE at first instance.
+
+**Current hard rule:** `ICAM != CCACM != ICALPA != ICATF != CCCA != CGAE`.
+
+### Inter-Colegio bridge now controlled
+
+ICAM's 1-Jul-2026 decision in 1487/26 ordered the decision and a copy of the preliminary file sent to the territorially competent Tenerife body for acts considered outside Madrid. This proves an ordered Madrid→Tenerife referral. It does **not** prove actual transmission, ICATF receipt, a Tenerife file number or a merits decision. Those remain under `ME-CCCA-001`.
+
+### Professional-perimeter layer
+
+The current source-controlled professional map adds, with separate roles and boundaries:
+
+- Rodríguez-Batllori / DIP 80 / historic AC role;
+- Carmen Ramírez de Prada / DIP 79 / CAM representation;
+- Cristo Ayose Suárez Pimentel / ICATF and historic-custody questions;
+- Juan Tomás Parrilla Suárez / ICATF and payment/withdrawal chronology;
+- San Telmo → RSM as integration/custody/conflict node without transferred historic liability;
+- Garrigues historic mandate/custody lane;
+- PwC/Carlos Saavedra 2015–2016 knowledge plus later finite conflict/mandate questions;
+- Cuyás / Grant Thornton later professional environment;
+- Cuatrecasas / ICAM with the ordered Tenerife territorial component; and
+- Prieto Puente / López Noriega / MILLAN AND MINERS as a historic Community-side professional network whose exact Bar route remains to be verified where necessary.
+
+### Controlling 21-Sep records
+
+Read:
+- `archive/CANARY_COUNCIL_INTERCOLLEGIAL_PROFESSIONAL_PERIMETER_CONTROL_21SEP2026.md`
+- `assets/data/canary-professional-intercollegial-perimeter-v1.json`
+- `archive/CORRECTION_REGISTER_CANARY_COUNCIL_ADDENDUM_21SEP2026.md`
+- `archive/MISSING_EVIDENCE_REGISTER_CANARY_COUNCIL_ADDENDUM_21SEP2026.md`
+- `/es/consejo-canario-coordinacion-deontologica-2026/`
+- `/en/canary-council-deontological-coordination-2026/`
+
+**Core rule:** separate responsibility does not mean separate reality. Keep individual files and culpability separate while preserving common evidence, economic context and competence-routing history.

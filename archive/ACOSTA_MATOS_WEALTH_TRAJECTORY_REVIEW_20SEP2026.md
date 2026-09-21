@@ -107,3 +107,21 @@ The purpose is not to manufacture a family-fortune number. It is to identify eac
 ## 9. Additional media and property/remedy research
 
 The [36-source media and trolley/property research supplement](research/trolley-media-20260920/README.md) preserves the thread's selected 2010–2026 bibliography, bilingual chronology, legal-origin study, cross-source audit derivative and the limits of the analogy. It supplements, rather than replaces, the richer financial and issuer record above. The original source register, forecasts, contrary evidence and unresolved causal connections remain distinct. [English reader](../en/acosta-matos-media-property-remedies/index.html) · [Lector español](../es/acosta-matos-medios-propiedad-remedios/index.html).
+
+## 10. 21 September refresh — growth matrix plus attributed provenance position
+
+Fresh Canary/Spanish media, corporate, CNMV/RICPE, Gmail, Drive, Library and public-GitLab-site review strengthens the hotel/investment growth series and the **pre-2022 commercial-use chronology**.
+
+The strongest corrected baseline is:
+
+- do **not** call the entire Acosta Matos group “near zero” in 2017–2018; it already had construction/property activity;
+- the modern hotel-management / RICPE investment platform is the dramatic step-change;
+- Canarian Hospitality did not exist before 2021;
+- the source record nevertheless places Sun Park inside Acosta Matos-side economic/project activity well before 2022 through 2018 control allegations, the preserved 31-Jan-2019 “Hotel Lava Verde” self-presentation at Calle Janubio 3, 2019/20 pilots, 2020 whole-hotel discussions and the 11-Nov-2020 RICPE presentation;
+- therefore 2022 is a later formalisation/title/corporate layer, not the beginning of every commercial or investor-facing use.
+
+Gil Marer's controlling party allegation is now fixed at **100%**: he alleges that all present assets, income, relationships, influence/access and capital-raising advantages of the Acosta Matos / RICPE-linked perimeter are directly or indirectly illicit downstream fruits/substitutes of the displaced Aweswell/Sun Park platform. The current corpus does not yet prove that 100% causal/provenance result; it defines the investigation scope.
+
+The separate claim that CAM/Acosta Matos was financially weak in 2017–2018 remains evidentially open. The present source set proves a far smaller hospitality/investment footprint, not financial distress. Close it from primary accounts/liquidity/debt/source-of-funds records before publicising it as a fact.
+
+Google Drive staging: the 21-Sep growth-trajectory matrix preserves year-by-year hotels, rooms, employment, revenue and RICPE capital/investment figures with denominator boundaries.

@@ -105,9 +105,39 @@
     {
       "id": "PD-SP-I-0013",
       "type": "INSTITUTION",
-      "name": "Consejo Canario de Colegios de la Abogacía",
+      "name": "Consejo Canario de Colegios de Abogados",
       "aliases": [
-        "CCACM"
+        "CCCA",
+        "Consejo Canario"
+      ],
+      "identity_resolution": "CARET_CONFIRMED",
+      "routes": {
+        "es": "/es/consejo-canario-coordinacion-deontologica-2026/",
+        "en": "/en/canary-council-deontological-coordination-2026/"
+      },
+      "identity_sources": [
+        "Official Consejo Canario de Colegios de Abogados institutional website and statutes",
+        "Por Derecho institutional control verified 21-Sep-2026"
+      ],
+      "identity_boundary": "Canary autonomous professional-law corporation only. It is distinct from ICALPA, ICATF, the Madrid CCACM and CGAE; its exact competence must be determined issue by issue.",
+      "identity_resolution_history": [
+        {
+          "prior_record": {
+            "id": "PD-SP-I-0013",
+            "type": "INSTITUTION",
+            "name": "Consejo Canario de Colegios de la Abogacía",
+            "aliases": [
+              "CCACM"
+            ]
+          },
+          "source_refs": [
+            "https://consejocanariodeabogados.es/",
+            "archive/CORRECTION_REGISTER_CANARY_COUNCIL_ADDENDUM_21SEP2026.md#cr-ccca-001"
+          ],
+          "superseded_only": "identity",
+          "correction_date": "2026-09-21",
+          "note": "Prior repository record is retained verbatim for identity provenance. The old CCACM alias is superseded only for the Canary institution; CCACM remains the Madrid council."
+        }
       ]
     },
     {

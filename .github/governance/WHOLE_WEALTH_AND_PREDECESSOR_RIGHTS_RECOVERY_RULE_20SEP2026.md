@@ -95,3 +95,13 @@ Spanish counterpart:
 > Investigar el patrimonio íntegro jurídicamente relevante; individualizar la responsabilidad de cada interviniente; identificar los bienes originarios, los valores de sustitución y los beneficios jurídicamente atribuibles; y preservar la efectividad de la recuperación sobre los bienes que legalmente puedan asegurar o satisfacer las obligaciones resultantes, incluido el patrimonio general del obligado cuando proceda.
 
 The public institutional outline remains **PREPARATION / NOT SENT / NOT FILED**. A separate SAIP concerns existing handling records; neither is a blanket compensation claim. Apply all current privacy, adverse-evidence, source and publication controls.
+
+## 8. 21 September 2026 — attributed 100% platform-provenance supplement
+
+Read `archive/ATTRIBUTED_100_PERCENT_PLATFORM_PROVENANCE_CONTROL_21SEP2026.md` and `assets/data/acosta-matos-platform-provenance-allegation-20260921.json`.
+
+Gil Marer now expressly fixes his party position at **100%**: he alleges that the present assets, income, commercial relationships, reputational/institutional influence, investor/capital access and other economic advantages of the Acosta Matos / RICPE-linked perimeter derive directly or indirectly from the alleged staged displacement and exploitation of the Aweswell / LPB / Matkator / Sun Park platform from 2018. Preserve “100%” as his attributed causal/provenance position; do not dilute it into an unspecified connection.
+
+This supplement does **not** alter the proof/remedy disciplines above. It does not establish a 100% traced-funds result, proprietary ownership of all downstream assets, a confiscation entitlement or collective guilt. The current record materially supports pre-2022 economic use — 2018 control allegations, preserved 2019 Hotel Lava Verde self-presentation at the Sun Park address, 2019–2020 pilots/whole-hotel project work and the 2020 RICPE presentation — while project-by-project causal provenance remains to be proved.
+
+The separate proposition that CAM/Acosta Matos was in poor financial shape in 2017–2018 remains Gil's attributed belief. The current corpus supports a much smaller hospitality/investment footprint but does not yet prove distress; obtain the finite financial records listed in the 21-Sep control.
