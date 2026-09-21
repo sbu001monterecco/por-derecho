@@ -1,0 +1,37 @@
+{
+  "status": "REGISTERED_SUBMISSION_09_OF_10_RECEIPT_VERIFIED",
+  "reference": "E.G.745/2026",
+  "registration": "REGAGE26e00082069917",
+  "linked_principal_registration": "REGAGE26e00082068814",
+  "presentation_datetime_literal": "21/09/2026 03:10:04",
+  "registration_datetime_literal": "21/09/2026 03:10:09",
+  "timezone": "Not specified in printed receipt; preserve literal portal time",
+  "recipient_dir3": "J00003992",
+  "recipient": "Fiscalía General del Estado",
+  "attention": "Inspección Fiscal",
+  "receipt_pages": 2,
+  "receipt_sha256": "7b88a34dca2685ce6d618775cd42787c55f773a26b3a404f9f0a67d8edfce73b",
+  "attachments": [
+    {
+      "filename": "EG745_HISTORICO_D10_D19_D21_D23_D24.pdf",
+      "pages": 125,
+      "bytes": 7659415,
+      "sha256": "0b79002c5365763cf0028b8c613748eda3a92fddf41fbb07064a0c95f44190ed",
+      "receipt_sha512": "5a07a0e70e4a1a528aa3590bc8f564e0f64b9f6209eca938b2f0517c9b61e0bb63b77fda236b2bc0714c3fe52a1bfeb12597fef46b5bb4b3af349eda1dc89fc7",
+      "exact_match": true
+    }
+  ],
+  "all_expected_attachments_verified": true,
+  "verified_delivery_count": 9,
+  "planned_delivery_count": 10,
+  "remaining_submission_numbers": [
+    10
+  ],
+  "all22_illustrations_registered_across_deliveries1_and2": true,
+  "admission_or_substantive_examination_proved": false,
+  "assistant_filed_or_emailed": false,
+  "scope": "Public-safe receipt metadata and attachment fingerprints only. Native private receipt and private documents are not published.",
+  "canonical_communications_register": "assets/data/institutional-communications-register-v1.json",
+  "canonical_event_allocation": "Pending integration; reuse existing registry identity if already allocated",
+  "main_integration": "Pending held controller; worker preservation only"
+}
