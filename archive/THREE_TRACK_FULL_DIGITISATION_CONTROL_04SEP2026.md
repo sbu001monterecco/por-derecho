@@ -165,3 +165,25 @@ Primary routes:
 - structured public-safe control: created;
 - contextual visual layer: updated;
 - PR/merge/Pages/live readback: **pending at the time of this record**.
+
+
+## 11. 21 September 2026 — six-document corpus closure
+
+This control is now supplemented by `PD-C212224-SOURCE-CORPUS-20260921-01`:
+
+- `data/control-21-22-24-source-corpus-20260921.json`
+- `archive/CONTROL_21_22_24_FULL_DIGITISATION_AND_INTERLINK_AUDIT_21SEP2026.md`
+- ES hub: `/es/control-21-22-24-corpus-integridad/`
+- EN hub: `/en/control-21-22-24-corpus-integrity/`
+
+The locked corpus is **6 source documents / 278 source pages**:
+
+- Control 21: **86/86 + 26/26 + 19/19**;
+- Control 22: **55/55**;
+- Control 24: **79/79 + 13/13**.
+
+The 13-page Control 24 canonical source is `APORTACION_COMPLEMENTARIA_CONTROL_24_AUTOSUFICIENTE_SIN_ANEXOS_25JUN2026.pdf`, SHA-256 `04051e33000f830c32ba06e31996ba4e6812c7d54c199ee03696b85e68589679`. A separate 10-page working/source variant exists in the wider archive and must not replace or be conflated with the canonical 13-page source.
+
+All three ES dossiers and all three EN dossiers now link to the same six-document manifest and to each other. The validator `scripts/validate_control_21_22_24_reader_binding.py` fails closed if a page count, source hash, total, corpus binding or reciprocal dossier link drifts.
+
+The publication boundary remains precise: **full digitisation in Git** means exact source identity + complete page coverage + controlled searchable/indexed representation + reciprocal repository linkage. It does not by itself certify byte-identical court ingestion or require public exposure of every unredacted raw source binary.
