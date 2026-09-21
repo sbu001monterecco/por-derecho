@@ -1,0 +1,183 @@
+{
+  "control_id": "PD-SP-OU-20260921-01",
+  "title": "Sun Park alleged organised operational unit — narrow functional map",
+  "date": "2026-09-21",
+  "status": "ATTRIBUTED_THESIS_WITH_DOCUMENTED_EDGES_NOT_ADJUDICATED_GROUP",
+  "definition": "For this page only, organised operational unit means Gil Marer / Project Sun Rock's attributed allegation that distinct private actors, the Sun Park Community organ, the insolvency-administration interface and the judicial-supervision layer converged functionally around specified acts, documents, authority claims and outcomes. It does not assert one legal person, one company, a criminal organisation, a conspiracy, shared intent, or automatic responsibility.",
+  "status_codes": {
+    "DOC": "Documented proposition or role supported by the linked public/official-safe record.",
+    "ATTRIBUTED": "Direct allegation or characterisation attributed to Gil Marer / Project Sun Rock.",
+    "OPEN": "Material proposition still requiring actor-specific or transaction-specific proof.",
+    "CONTRARY": "Material contrary, corrective or exculpatory record that must remain visible.",
+    "LATER": "Later continuity/context node; not retroactively a participant in earlier events."
+  },
+  "core_frame": {
+    "label": "ALLEGED_ORGANISED_OPERATIONAL_UNIT_NARROW_FUNCTIONAL_FRAME",
+    "members_are_not_legal_group_membership": true,
+    "private_actors": [
+      {
+        "id": "PD-SP-P-0009",
+        "name": "Francisco Mario Matos Matas",
+        "short": "FMMM",
+        "lane": "Community administration / records / debt-vote / custody",
+        "earliest_page_checkpoint": "2011",
+        "status": ["DOC","ATTRIBUTED","OPEN"],
+        "route": "/por-derecho/en/francisco-mario-matos-matas/"
+      },
+      {
+        "id": "PD-SP-P-0007",
+        "name": "Antonio Cogolludo Rojas",
+        "lane": "Community representation / security-access implementation",
+        "earliest_page_checkpoint": "2014",
+        "status": ["DOC","ATTRIBUTED","OPEN"],
+        "route": "/por-derecho/en/antonio-cogolludo-rojas/"
+      },
+      {
+        "id": "PD-SP-P-0008",
+        "name": "Shaila María Cogolludo Ramos",
+        "lane": "Community/Pamanil communications / administration / treasury-custody",
+        "earliest_page_checkpoint": "2014",
+        "status": ["DOC","ATTRIBUTED","OPEN"],
+        "route": "/por-derecho/en/shaila-maria-cogolludo-ramos/"
+      },
+      {
+        "id": "PD-SP-P-0011",
+        "name": "José Daniel Acosta Matos",
+        "short": "JDAM",
+        "lane": "Acosta Matos project / creditor-title / later Community-project interface",
+        "earliest_page_checkpoint": "2017–2018",
+        "status": ["DOC","ATTRIBUTED","OPEN"],
+        "route": "/por-derecho/en/sun-park-takeover-7-june-2018/"
+      },
+      {
+        "id": "PD-SP-P-0012",
+        "name": "Laura Patricia Acosta Matos",
+        "short": "LPAM",
+        "lane": "Acosta Matos legal-insolvency / access / project interface",
+        "earliest_page_checkpoint": "2017–2018",
+        "status": ["DOC","ATTRIBUTED","OPEN"],
+        "route": "/por-derecho/en/sun-park-takeover-7-june-2018/"
+      }
+    ],
+    "community_organ": {
+      "name": "Comunidad Sun Park",
+      "display_name": "Sun Park Owners' Community / Comunidad de Propietarios Sun Park",
+      "type": "ORGAN_NOT_PERSON",
+      "lane": "Common-element governance; disputed debt, voting, certification, records, security and access consequences",
+      "status": ["DOC","ATTRIBUTED","OPEN"],
+      "route": "/por-derecho/en/community-instrumentalisation/",
+      "site_emblem": {
+        "text": "CSP",
+        "meaning": "Site-only evidential/navigation identifier",
+        "not_official_logo": true,
+        "not_marketing_mark": true,
+        "not_claimed_adopted_by_community": true
+      }
+    },
+    "institutional_nodes": [
+      {
+        "id": "PD-SP-P-0010",
+        "name": "Francisco de Borja Rodríguez-Batllori Laffitte",
+        "capacity": "Administrador Concursal / Insolvency Administrator, Concurso 36/2012",
+        "lane": "Insolvency-administration interface and control point",
+        "status": ["DOC","ATTRIBUTED","OPEN","CONTRARY"],
+        "route": "/por-derecho/en/francisco-de-borja-rodriguez-batllori-laffitte/"
+      },
+      {
+        "name": "Alberto López Villarrubia",
+        "capacity": "Magistrate-Judge in documented Concurso 36/2012 acts",
+        "lane": "Judicial-supervision and decision layer",
+        "status": ["DOC","ATTRIBUTED","OPEN","CONTRARY"],
+        "route": "/por-derecho/en/insolvency-36-2012-orders-decisions/"
+      }
+    ]
+  },
+  "core_connectors": [
+    {
+      "from": "Comunidad Sun Park",
+      "to": "Five private actors",
+      "status": ["DOC","ATTRIBUTED","OPEN"],
+      "meaning": "Actor-specific Community roles, communications, debt/vote, records and 2018 security/access functions; no automatic collective attribution."
+    },
+    {
+      "from": "Five private actors",
+      "to": "Administrador Concursal",
+      "status": ["DOC","ATTRIBUTED","OPEN","CONTRARY"],
+      "meaning": "Requests, communications, authority/access/security and Community-input interfaces require person-by-person proof; lawful narrow-authority explanations remain material."
+    },
+    {
+      "from": "Comunidad Sun Park",
+      "to": "Administrador Concursal",
+      "status": ["DOC","ATTRIBUTED","OPEN","CONTRARY"],
+      "meaning": "Community/security/access and debt-certificate routes are documented interfaces; mandate, scope, verification, knowledge and intent remain proposition-specific."
+    },
+    {
+      "from": "Administrador Concursal",
+      "to": "Concurso judicial layer",
+      "status": ["DOC","ATTRIBUTED","OPEN","CONTRARY"],
+      "meaning": "Formal insolvency filings, reports, requests, supervision and rulings; this is an institutional relationship, not proof of coordination or shared criminal purpose."
+    }
+  ],
+  "continuity_nodes": [
+    {
+      "name": "RIC Private Equity",
+      "period": "2020+",
+      "status": ["DOC","LATER","OPEN"],
+      "role": "Investment / RIC financing and project-presentation layer",
+      "route": "/por-derecho/en/ric-private-equity-sun-park/",
+      "boundary": "Investment, advice or presentation does not itself establish knowledge of or participation in earlier alleged misconduct."
+    },
+    {
+      "name": "Lava Verde",
+      "period": "2018–2020 project-publication period",
+      "status": ["DOC","LATER","OPEN"],
+      "role": "Later project identity/public presentation associated with the Sun Park site",
+      "route": "/por-derecho/en/lava-verde-club-sei-meeting-point/",
+      "boundary": "A project name is not a legal-person identity or proof of title."
+    },
+    {
+      "name": "Club SEI Lanzarote",
+      "period": "2019–2020 commercial-publication period",
+      "status": ["DOC","LATER","OPEN"],
+      "role": "Meeting Point / FTI commercial-tourism identity tied in public material to the site/project",
+      "route": "/por-derecho/en/lava-verde-club-sei-meeting-point/",
+      "boundary": "Public marketing does not by itself prove the exact contracting entity, completed bookings, revenue, title, advance agreement or criminal intent."
+    },
+    {
+      "name": "MYND Yaiza",
+      "period": "2022+",
+      "status": ["DOC","LATER","OPEN"],
+      "role": "Later hotel operating/brand identity at Calle Janubio 3, Playa Blanca, Lanzarote 35580, Spain",
+      "route": "/por-derecho/en/",
+      "boundary": "Current operation and branding do not retroactively establish the legality of every earlier authority, possession, title or project representation."
+    },
+    {
+      "name": "Orion Rental SOCIMI, S.A.",
+      "period": "constituted June 2023; later governance node",
+      "status": ["DOC","LATER","OPEN"],
+      "role": "Separate later corporate/governance/disclosure node linked through documented later RICPE/AGM/FMMM/JDAM relationships",
+      "route": "/por-derecho/en/orion-rental-socimi/",
+      "boundary": "Temporal firewall: Orion cannot be treated as a participant in 2011–2022 Sun Park events. No Sun Park-to-Orion asset or cash flow is established by relationship alone."
+    }
+  ],
+  "timeline": [
+    {"date":"2011-06-22","label":"First located Community governance matrix","status":["DOC"],"note":"Debt, voting, administration/custody and litigation functions require source-by-source review."},
+    {"date":"2014","label":"Community / representation / communications checkpoints","status":["DOC","OPEN"],"note":"Private actors appear in distinct capacities; capacities are not interchangeable."},
+    {"date":"2016","label":"Community/PwC knowledge checkpoint","status":["DOC","OPEN"],"note":"Used as a knowledge and architecture checkpoint, not proof of later common purpose."},
+    {"date":"2017-2018","label":"CAM creditor/title/project entry and convergence","status":["DOC","ATTRIBUTED","OPEN"],"note":"Credit, isolated title, project planning and whole-hotel authority must remain distinct."},
+    {"date":"2018-05-18","label":"Community security/authority route","status":["DOC","ATTRIBUTED","OPEN","CONTRARY"],"note":"Scope, mandate, implementation and recipient understanding remain contested."},
+    {"date":"2018-06-07","label":"Material-control threshold","status":["DOC","ATTRIBUTED","OPEN","CONTRARY"],"note":"Access, locks, security and representations are investigated actor by actor."},
+    {"date":"2018-06-26","label":"Judicial suspension","status":["CONTRARY","DOC"],"note":"Mandatory countervailing record; prevents a one-direction description of the judicial track."},
+    {"date":"2020-2022","label":"Project, investor and later title/adjudication period","status":["DOC","ATTRIBUTED","OPEN","CONTRARY"],"note":"Representations, title, finance, adjudication and operation require dated reconciliation."},
+    {"date":"2023+","label":"Orion later-governance branch","status":["DOC","LATER","OPEN"],"note":"Distinct branch with a strict temporal firewall against retroactive attribution."}
+  ],
+  "publication_boundaries": [
+    "No node acquires another node's act, knowledge, intent, benefit or liability by association.",
+    "The Community organ is not treated as owner of the hotel or as an unlimited authority over private units.",
+    "The Insolvency Administrator and Judge remain institutionally and legally distinct from the five private actors.",
+    "The functional frame is an attributed analytical hypothesis, not an adjudicated finding of a criminal organisation, conspiracy or common enterprise.",
+    "RICPE, Lava Verde, Club SEI, MYND Yaiza and Orion are continuity/context nodes unless a source establishes a narrower transaction-specific role.",
+    "The 26 June 2018 suspension and other corrective/adverse records remain visible beside the allegations.",
+    "Right of reply, correction and exculpatory evidence remain open."
+  ]
+}
