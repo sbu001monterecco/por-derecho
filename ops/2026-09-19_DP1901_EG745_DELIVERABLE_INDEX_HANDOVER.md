@@ -21,6 +21,20 @@ Status: additive GitHub package / none filed
 
 Files are in the corresponding drafts, ops, evidence and archive paths under the 19-09-2026 naming prefix.
 
+## Counsel-update control — 21 September 2026
+
+Before finalising the separate personalised updates to **Sixto Abogados (Javier Sixto Seijas / Estefanía Sixto Seijas)** and **Carlos Llamas Sanz**, read:
+
+`ops/2026-09-21_COUNSEL_UPDATE_JUNE_LAS_PALMAS_THREE_TRACKS.md`
+
+The counsel update must explain the June three-track filing architecture before requesting action on the 14 September DP1901 Auto:
+
+- Ref.22 -> DP1956 / Administrador Concursal: already known to counsel; provisionally dismissed.
+- Ref.21 / private actors: autonomous June filing not previously known to counsel; contemporaneously associated with DP1901, subject to the outstanding official routing history.
+- Ref.24 / Magistrate-Judge: autonomous June denuncia/notitia criminis addressed to the TSJC, not previously known to counsel.
+
+Do not promise DP1956 reopening. Preserve the client's expectation that forthcoming Audiencia Provincial developments may provide material to support a reopening request, for counsel to assess.
+
 ## Governance locks
 
 Ref.22, Ref.24 and Ref.21 remain autonomous. PROCEDURAL_IDENTITY_COLLISION_OPEN — DIRECTION NOT CERTIFIED remains controlling. Luis Francisco Galván Mesa is not Alberto López Villarrubia. The 29-Jul Fiscal remains unidentified until institutional production. No neutrality, culpability, outside influence or coordination is presumed either way. No email is formal incorporation without an official receipt. No GitLab update is inferred while blocked. Reconcile from newer GitHub after restoration.
