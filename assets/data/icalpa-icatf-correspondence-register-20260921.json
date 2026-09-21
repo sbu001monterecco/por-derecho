@@ -1,0 +1,1056 @@
+{
+  "schema": "por-derecho.bar-correspondence-register.v1",
+  "control_date": "2026-09-21",
+  "status": "PUBLIC_SAFE_COMPLETE_MESSAGE_EVENT_CENSUS",
+  "source": "Connected SBU Gmail bounded search; raw provider identifiers and unrelated private material excluded from public register.",
+  "completeness": {
+    "icalpa_query": "to:(registro@icalpa.org OR deontologia@icalpa.org OR notificaciones_secretaria@icalpa.com OR servicios@redabogacia.org) OR from:(registro@icalpa.org OR deontologia@icalpa.org OR notificaciones_secretaria@icalpa.com OR servicios@redabogacia.org)",
+    "icalpa_message_events": 61,
+    "icatf_query": "to:(registro@icatf.es OR secretaria@icatf.es OR informa@icatf.es OR info@icatf.es OR delegacionnorte@icatf.es) OR from:(registro@icatf.es OR secretaria@icatf.es OR informa@icatf.es OR info@icatf.es OR delegacionnorte@icatf.es)",
+    "icatf_message_events": 7,
+    "note": "Counts are the complete results returned for the bounded institutional-address queries at scan time. Duplicates, auto-replies and superseded drafts are retained as separate events rather than silently removed."
+  },
+  "routing": {
+    "icalpa_current": [
+      "registro@icalpa.org",
+      "deontologia@icalpa.org",
+      "notificaciones_secretaria@icalpa.com",
+      "servicios@redabogacia.org"
+    ],
+    "icalpa_official_submission_rule": "ICALPA's 3-Sep-2026 routing reply states that official submissions should go to registro@icalpa.org for formal entry registration and internal transfer.",
+    "icatf_current": [
+      "registro@icatf.es",
+      "secretaria@icatf.es",
+      "informa@icatf.es",
+      "info@icatf.es",
+      "delegacionnorte@icatf.es"
+    ]
+  },
+  "prior_independence_language": {
+    "dip80_20aug": "No se pretende ejercer presión impropia sobre el ponente ni exigir una sanción. Se pretende que ... el Colegio ejerza visiblemente su función mediante una decisión motivada o un plan finito, fechado y responsable.",
+    "dip79_20aug": "La mejor protección para la independencia de la Abogacía y para el derecho de defensa es precisamente que exista una regla clara antes de que esa situación se produzca.",
+    "proposed_regional_extension": "Request a conflict-cleared rapporteur with sufficient independence, institutional mandate and continuity to take the matter to a reasoned outcome; any attempted informal contact, call, representation or pressure outside the file should be logged and routed into the formal record."
+  },
+  "icalpa": [
+    {
+      "date": "2025-12-26T12:26:39",
+      "direction": "OUTBOUND",
+      "subject": "Registro de Entrada ICA Las Palmas RE-017363/2025",
+      "to": [],
+      "cc": [],
+      "classification": "OTHER_INSTITUTIONAL",
+      "attachments": [
+        "smime.p7s"
+      ],
+      "synopsis": "Institutional communication in the identified Bar-routing universe; full raw mailbox original retained privately.",
+      "raw_mailbox_original": "PRIVATE_NOT_PUBLISHED"
+    },
+    {
+      "date": "2026-01-14T16:04:01",
+      "direction": "OUTBOUND",
+      "subject": "CONSULTA SOBRE COMPETENCIA DE ESTE COLEGIO RESPECTO ACTUACION",
+      "to": [],
+      "cc": [],
+      "classification": "OTHER_INSTITUTIONAL",
+      "attachments": [],
+      "synopsis": "Institutional communication in the identified Bar-routing universe; full raw mailbox original retained privately.",
+      "raw_mailbox_original": "PRIVATE_NOT_PUBLISHED"
+    },
+    {
+      "date": "2026-01-14T22:19:15",
+      "direction": "OUTBOUND",
+      "subject": "Re: CONSULTA SOBRE COMPETENCIA DE ESTE COLEGIO RESPECTO ACTUACION",
+      "to": [
+        "deontologia@icalpa.org"
+      ],
+      "cc": [],
+      "classification": "OTHER_INSTITUTIONAL",
+      "attachments": [
+        "Outlook-tw4ywcvf.png",
+        "Outlook-MEDIO AMBI.png"
+      ],
+      "synopsis": "Institutional communication in the identified Bar-routing universe; full raw mailbox original retained privately.",
+      "raw_mailbox_original": "PRIVATE_NOT_PUBLISHED"
+    },
+    {
+      "date": "2026-02-14T21:07:16",
+      "direction": "OUTBOUND",
+      "subject": "Presentación de denuncia deontológica – RE-017363/2025",
+      "to": [
+        "deontologia@icalpa.org",
+        "registro@icalpa.org"
+      ],
+      "cc": [],
+      "classification": "OTHER_INSTITUTIONAL",
+      "attachments": [
+        "Denuncia_Deontologica_Administrador_Concursal_ICALPA_RE-017363-2025_14FEB2026.PDF",
+        "Outlook-tw4ywcvf.png",
+        "Outlook-MEDIO AMBI.png"
+      ],
+      "synopsis": "Institutional communication in the identified Bar-routing universe; full raw mailbox original retained privately.",
+      "raw_mailbox_original": "PRIVATE_NOT_PUBLISHED"
+    },
+    {
+      "date": "2026-02-16T09:39:52",
+      "direction": "OUTBOUND",
+      "subject": "Registro de ENTRADA ICA Las Palmas RE-002261/2026",
+      "to": [],
+      "cc": [],
+      "classification": "OTHER_INSTITUTIONAL",
+      "attachments": [
+        "smime.p7s"
+      ],
+      "synopsis": "Institutional communication in the identified Bar-routing universe; full raw mailbox original retained privately.",
+      "raw_mailbox_original": "PRIVATE_NOT_PUBLISHED"
+    },
+    {
+      "date": "2026-02-19T16:19:42",
+      "direction": "OUTBOUND",
+      "subject": "Presentación de denuncia deontológica (Letrada CAM) – Conexión con Expte. RE-002261 / RE-017363/2025",
+      "to": [
+        "deontologia@icalpa.org",
+        "registro@icalpa.org"
+      ],
+      "cc": [],
+      "classification": "OTHER_INSTITUTIONAL",
+      "attachments": [
+        "DENUNCIA_DEONTOLOGICA_ICALPA_Letrada_CAM_Concurso_36-2012_Gil_Marer_2026.PDF"
+      ],
+      "synopsis": "Institutional communication in the identified Bar-routing universe; full raw mailbox original retained privately.",
+      "raw_mailbox_original": "PRIVATE_NOT_PUBLISHED"
+    },
+    {
+      "date": "2026-02-20T11:03:34",
+      "direction": "OUTBOUND",
+      "subject": "Registro de ENTRADA ICA Las Palmas RE-002494/2026",
+      "to": [],
+      "cc": [],
+      "classification": "OTHER_INSTITUTIONAL",
+      "attachments": [
+        "smime.p7s"
+      ],
+      "synopsis": "Institutional communication in the identified Bar-routing universe; full raw mailbox original retained privately.",
+      "raw_mailbox_original": "PRIVATE_NOT_PUBLISHED"
+    },
+    {
+      "date": "2026-03-26T16:26:39",
+      "direction": "OUTBOUND",
+      "subject": "Re: Registro de ENTRADA ICA Las Palmas RE-002261/2026",
+      "to": [
+        "servicios@redabogacia.org",
+        "deontologia@icalpa.org",
+        "registro@icalpa.org"
+      ],
+      "cc": [],
+      "classification": "OTHER_INSTITUTIONAL",
+      "attachments": [
+        "ENTREVISTA SANTELMO (Parcial) 30NOV2021 (1).pdf",
+        "ANEXO_1_Comunicacion_IntervencionGeneral_ComisionIntegridad_05MAR2026.pdf",
+        "requerimiento ratificacion denunciante169.pdf",
+        "Comunicacion_institucional_CGPJ_supervision_concursal_LPB_36-2012 10MAR2026 (1).pdf",
+        "ANEXOS Comunicacion_institucional_CGPJ_supervision_concursal_LPB_36-2012 (1).pdf",
+        "DENUNCIA_FISCALIA_ESPECIAL_CORRUPCION_OPERACION_SUN_PARK_02ENE2026 (2).PDF",
+        "ANEXO_3_Respuesta_CNMV_RIC_PrivateEquity_22ENE2026.pdf"
+      ],
+      "synopsis": "Institutional communication in the identified Bar-routing universe; full raw mailbox original retained privately.",
+      "raw_mailbox_original": "PRIVATE_NOT_PUBLISHED"
+    },
+    {
+      "date": "2026-03-26T16:27:29",
+      "direction": "OUTBOUND",
+      "subject": "Automatic reply: Registro de ENTRADA ICA Las Palmas RE-002261/2026",
+      "to": [],
+      "cc": [],
+      "classification": "AUTO_OR_ROUTING_REPLY",
+      "attachments": [],
+      "synopsis": "Institutional communication in the identified Bar-routing universe; full raw mailbox original retained privately.",
+      "raw_mailbox_original": "PRIVATE_NOT_PUBLISHED"
+    },
+    {
+      "date": "2026-03-26T16:41:38",
+      "direction": "OUTBOUND",
+      "subject": "Re: Registro de ENTRADA ICA Las Palmas RE-002494/2026",
+      "to": [
+        "servicios@redabogacia.org",
+        "registro@icalpa.org"
+      ],
+      "cc": [],
+      "classification": "OTHER_INSTITUTIONAL",
+      "attachments": [
+        "ENTREVISTA SANTELMO (Parcial) 30NOV2021 (1).pdf",
+        "DENUNCIA_FISCALIA_ESPECIAL_CORRUPCION_OPERACION_SUN_PARK_02ENE2026 (2).PDF",
+        "ANEXO_1_Comunicacion_IntervencionGeneral_ComisionIntegridad_05MAR2026.pdf",
+        "ANEXO_3_Respuesta_CNMV_RIC_PrivateEquity_22ENE2026.pdf"
+      ],
+      "synopsis": "Institutional communication in the identified Bar-routing universe; full raw mailbox original retained privately.",
+      "raw_mailbox_original": "PRIVATE_NOT_PUBLISHED"
+    },
+    {
+      "date": "2026-03-27T09:02:12",
+      "direction": "OUTBOUND",
+      "subject": "Registro de ENTRADA ICA Las Palmas RE-004323/2026",
+      "to": [],
+      "cc": [],
+      "classification": "OTHER_INSTITUTIONAL",
+      "attachments": [
+        "smime.p7s"
+      ],
+      "synopsis": "Institutional communication in the identified Bar-routing universe; full raw mailbox original retained privately.",
+      "raw_mailbox_original": "PRIVATE_NOT_PUBLISHED"
+    },
+    {
+      "date": "2026-03-27T09:03:29",
+      "direction": "OUTBOUND",
+      "subject": "Registro de Salida ICA Las Palmas RE-004324/2026",
+      "to": [],
+      "cc": [],
+      "classification": "OTHER_INSTITUTIONAL",
+      "attachments": [
+        "smime.p7s"
+      ],
+      "synopsis": "Institutional communication in the identified Bar-routing universe; full raw mailbox original retained privately.",
+      "raw_mailbox_original": "PRIVATE_NOT_PUBLISHED"
+    },
+    {
+      "date": "2026-03-27T09:23:13",
+      "direction": "OUTBOUND",
+      "subject": "Re: Registro de ENTRADA ICA Las Palmas RE-004323/2026",
+      "to": [
+        "servicios@redabogacia.org",
+        "deontologia@icalpa.org",
+        "registro@icalpa.org"
+      ],
+      "cc": [],
+      "classification": "OTHER_INSTITUTIONAL",
+      "attachments": [],
+      "synopsis": "Institutional communication in the identified Bar-routing universe; full raw mailbox original retained privately.",
+      "raw_mailbox_original": "PRIVATE_NOT_PUBLISHED"
+    },
+    {
+      "date": "2026-03-27T09:31:45",
+      "direction": "OUTBOUND",
+      "subject": "RE: Registro de ENTRADA ICA Las Palmas RE-004323/2026",
+      "to": [],
+      "cc": [],
+      "classification": "OTHER_INSTITUTIONAL",
+      "attachments": [],
+      "synopsis": "Institutional communication in the identified Bar-routing universe; full raw mailbox original retained privately.",
+      "raw_mailbox_original": "PRIVATE_NOT_PUBLISHED"
+    },
+    {
+      "date": "2026-03-27T18:03:48",
+      "direction": "OUTBOUND",
+      "subject": "Re: Registro de ENTRADA ICA Las Palmas RE-004323/2026",
+      "to": [
+        "registro@icalpa.org"
+      ],
+      "cc": [],
+      "classification": "OTHER_INSTITUTIONAL",
+      "attachments": [
+        "Outlook-Presentaci.png"
+      ],
+      "synopsis": "Institutional communication in the identified Bar-routing universe; full raw mailbox original retained privately.",
+      "raw_mailbox_original": "PRIVATE_NOT_PUBLISHED"
+    },
+    {
+      "date": "2026-05-20T07:45:56",
+      "direction": "OUTBOUND",
+      "subject": "REQUERIMIENTO GIL MARER -",
+      "to": [],
+      "cc": [],
+      "classification": "OTHER_INSTITUTIONAL",
+      "attachments": [],
+      "synopsis": "Institutional communication in the identified Bar-routing universe; full raw mailbox original retained privately.",
+      "raw_mailbox_original": "PRIVATE_NOT_PUBLISHED"
+    },
+    {
+      "date": "2026-05-21T20:46:44",
+      "direction": "OUTBOUND",
+      "subject": "Re: REQUERIMIENTO GIL MARER - Nº Registro de Salida RS-002398",
+      "to": [
+        "notificaciones_secretaria@icalpa.com",
+        "registro@icalpa.org",
+        "servicios@redabogacia.org",
+        "deontologia@icalpa.org"
+      ],
+      "cc": [],
+      "classification": "OTHER_INSTITUTIONAL",
+      "attachments": [
+        "ESCRITURA PUBLICIDAD CAMBIO SOCIO 03ENE2012.pdf",
+        "Aweswell Limited filed accounts.pdf",
+        "Representacion MATKATOR (Pag33).pdf",
+        "Certificado de Incorporación Companies House MONTERECCO LT 25JUL2011.pdf",
+        "LUCHY CAMBIO ADMON UNICO GIL 2012.pdf",
+        "Gil Marer Compnay Director Aweswell Limited 06MAR2026.pdf",
+        "Traducción Jurada Certificado de Aweswell y Apostilla 22ENE2018 (1).pdf",
+        "CERTIFICADO CAMBIO DENOMINACION MONTERECCO - AWESWELL 2JUN2014.pdf",
+        "Gil Marer Director Aweswell Limited 06MAR2026.pdf",
+        "ESCRITURA LPB PUBLICIDAD CAMBIO SOCIO 03ENE2012.pdf"
+      ],
+      "synopsis": "Institutional communication in the identified Bar-routing universe; full raw mailbox original retained privately.",
+      "raw_mailbox_original": "PRIVATE_NOT_PUBLISHED"
+    },
+    {
+      "date": "2026-05-21T20:47:17",
+      "direction": "OUTBOUND",
+      "subject": "RESPUESTA NOTIFICACIONES",
+      "to": [],
+      "cc": [],
+      "classification": "AUTO_OR_ROUTING_REPLY",
+      "attachments": [],
+      "synopsis": "ICALPA routing reply stating that official submissions must be sent to registro@icalpa.org for formal entry registration and internal transfer.",
+      "raw_mailbox_original": "PRIVATE_NOT_PUBLISHED"
+    },
+    {
+      "date": "2026-05-22T10:58:08",
+      "direction": "OUTBOUND",
+      "subject": "Registro de ENTRADA ICA Las Palmas RE-007028/2026",
+      "to": [],
+      "cc": [],
+      "classification": "OTHER_INSTITUTIONAL",
+      "attachments": [
+        "smime.p7s"
+      ],
+      "synopsis": "Institutional communication in the identified Bar-routing universe; full raw mailbox original retained privately.",
+      "raw_mailbox_original": "PRIVATE_NOT_PUBLISHED"
+    },
+    {
+      "date": "2026-05-25T18:38:31",
+      "direction": "OUTBOUND",
+      "subject": "Aportación complementaria — Queja deontológica D. Francisco de Borja Rodríguez-Batllori Laffitte — RE-007028/2026",
+      "to": [
+        "servicios@redabogacia.org",
+        "deontologia@icalpa.org",
+        "registro@icalpa.org"
+      ],
+      "cc": [],
+      "classification": "OTHER_INSTITUTIONAL",
+      "attachments": [
+        "Justificante de Presentación REG (6).pdf",
+        "ANEXO III.pdf",
+        "ANEXO IV.pdf",
+        "ANEXO II.pdf",
+        "ANEXO I.pdf",
+        "COMUNICACION INSTITUCIONAL URGENTE 23MAY2026.pdf"
+      ],
+      "synopsis": "Institutional communication in the identified Bar-routing universe; full raw mailbox original retained privately.",
+      "raw_mailbox_original": "PRIVATE_NOT_PUBLISHED"
+    },
+    {
+      "date": "2026-05-26T11:35:35",
+      "direction": "OUTBOUND",
+      "subject": "Registro de ENTRADA ICA Las Palmas RE-007200/2026",
+      "to": [],
+      "cc": [],
+      "classification": "OTHER_INSTITUTIONAL",
+      "attachments": [
+        "smime.p7s"
+      ],
+      "synopsis": "Institutional communication in the identified Bar-routing universe; full raw mailbox original retained privately.",
+      "raw_mailbox_original": "PRIVATE_NOT_PUBLISHED"
+    },
+    {
+      "date": "2026-05-28T06:55:16",
+      "direction": "OUTBOUND",
+      "subject": "APERTURA DIP 80/2026 -",
+      "to": [],
+      "cc": [],
+      "classification": "DIP80",
+      "attachments": [],
+      "synopsis": "Institutional communication in the identified Bar-routing universe; full raw mailbox original retained privately.",
+      "raw_mailbox_original": "PRIVATE_NOT_PUBLISHED"
+    },
+    {
+      "date": "2026-05-28T07:18:17",
+      "direction": "OUTBOUND",
+      "subject": "APERTURA DIP 79/2026 -",
+      "to": [],
+      "cc": [],
+      "classification": "DIP79",
+      "attachments": [],
+      "synopsis": "Institutional communication in the identified Bar-routing universe; full raw mailbox original retained privately.",
+      "raw_mailbox_original": "PRIVATE_NOT_PUBLISHED"
+    },
+    {
+      "date": "2026-05-29T07:57:16",
+      "direction": "OUTBOUND",
+      "subject": "Asunto: DIP 80/2026 – Aportación complementaria: CGPJ DI 169/2026 y contexto San Telmo / RIC Private Equity",
+      "to": [
+        "registro@icalpa.org",
+        "deontologia@icalpa.org",
+        "servicios@redabogacia.org"
+      ],
+      "cc": [],
+      "classification": "DIP80",
+      "attachments": [
+        "ENTREVISTA SANTELMO (Parcial) 30NOV2021 (1).pdf",
+        "DENUNCIA_FISCALIA_ESPECIAL_CORRUPCION_OPERACION_SUN_PARK_02ENE2026 (2).PDF",
+        "Justificante de Presentación REG (12).pdf"
+      ],
+      "synopsis": "Institutional communication in the identified Bar-routing universe; full raw mailbox original retained privately.",
+      "raw_mailbox_original": "PRIVATE_NOT_PUBLISHED"
+    },
+    {
+      "date": "2026-05-29T08:40:27",
+      "direction": "OUTBOUND",
+      "subject": "Asunto: DIP 79/2026 – Aportación complementaria: matriz documental CAM / Comunidad / RIC / Sun Park",
+      "to": [
+        "registro@icalpa.org",
+        "deontologia@icalpa.org",
+        "servicios@redabogacia.org"
+      ],
+      "cc": [],
+      "classification": "DIP79",
+      "attachments": [
+        "ANEXO III (1).pdf",
+        "ANEXO IV (1).pdf",
+        "ANEXO II (1).pdf",
+        "ANEXO I (1).pdf",
+        "COMUNICACION INSTITUCIONAL URGENTE 23MAY2026 (1).pdf",
+        "REGAGE26e00049434557.pdf"
+      ],
+      "synopsis": "Institutional communication in the identified Bar-routing universe; full raw mailbox original retained privately.",
+      "raw_mailbox_original": "PRIVATE_NOT_PUBLISHED"
+    },
+    {
+      "date": "2026-05-29T10:11:13",
+      "direction": "OUTBOUND",
+      "subject": "Registro de ENTRADA ICA Las Palmas RE-007421/2026",
+      "to": [],
+      "cc": [],
+      "classification": "OTHER_INSTITUTIONAL",
+      "attachments": [
+        "smime.p7s"
+      ],
+      "synopsis": "Institutional communication in the identified Bar-routing universe; full raw mailbox original retained privately.",
+      "raw_mailbox_original": "PRIVATE_NOT_PUBLISHED"
+    },
+    {
+      "date": "2026-05-29T10:22:24",
+      "direction": "OUTBOUND",
+      "subject": "Registro de ENTRADA ICA Las Palmas RE-007423/2026",
+      "to": [],
+      "cc": [],
+      "classification": "OTHER_INSTITUTIONAL",
+      "attachments": [
+        "smime.p7s"
+      ],
+      "synopsis": "Institutional communication in the identified Bar-routing universe; full raw mailbox original retained privately.",
+      "raw_mailbox_original": "PRIVATE_NOT_PUBLISHED"
+    },
+    {
+      "date": "2026-05-30T13:06:47",
+      "direction": "OUTBOUND",
+      "subject": "Asunto: DIP 79/2026 – Precisión aclaratoria sobre posible condición de CAM como persona especialmente relacionada / acreedor especialmente conflictuado",
+      "to": [
+        "registro@icalpa.org",
+        "deontologia@icalpa.org",
+        "servicios@redabogacia.org"
+      ],
+      "cc": [],
+      "classification": "DIP79",
+      "attachments": [],
+      "synopsis": "Institutional communication in the identified Bar-routing universe; full raw mailbox original retained privately.",
+      "raw_mailbox_original": "PRIVATE_NOT_PUBLISHED"
+    },
+    {
+      "date": "2026-06-01T10:14:02",
+      "direction": "OUTBOUND",
+      "subject": "Registro de ENTRADA ICA Las Palmas RE-007476/2026",
+      "to": [],
+      "cc": [],
+      "classification": "OTHER_INSTITUTIONAL",
+      "attachments": [
+        "smime.p7s"
+      ],
+      "synopsis": "Institutional communication in the identified Bar-routing universe; full raw mailbox original retained privately.",
+      "raw_mailbox_original": "PRIVATE_NOT_PUBLISHED"
+    },
+    {
+      "date": "2026-06-01T11:20:36",
+      "direction": "OUTBOUND",
+      "subject": "Asunto: DIP 80/2026 – Precisión aclaratoria sobre deber del Administrador Concursal de escrutinio reforzado de la posición de CAM",
+      "to": [
+        "registro@icalpa.org",
+        "deontologia@icalpa.org",
+        "servicios@redabogacia.org"
+      ],
+      "cc": [],
+      "classification": "DIP80",
+      "attachments": [
+        "1780308838201_RE_007476_26.pdf"
+      ],
+      "synopsis": "Institutional communication in the identified Bar-routing universe; full raw mailbox original retained privately.",
+      "raw_mailbox_original": "PRIVATE_NOT_PUBLISHED"
+    },
+    {
+      "date": "2026-06-01T12:03:31",
+      "direction": "OUTBOUND",
+      "subject": "Registro de ENTRADA ICA Las Palmas RE-007499/2026",
+      "to": [],
+      "cc": [],
+      "classification": "OTHER_INSTITUTIONAL",
+      "attachments": [
+        "smime.p7s"
+      ],
+      "synopsis": "Institutional communication in the identified Bar-routing universe; full raw mailbox original retained privately.",
+      "raw_mailbox_original": "PRIVATE_NOT_PUBLISHED"
+    },
+    {
+      "date": "2026-06-10T11:40:30",
+      "direction": "OUTBOUND",
+      "subject": "DIP 79/2026 – Aportación preventiva urgente sobre integridad, instrumentalización procesal, Comunidad, moral hazard y cautelas reforzadas",
+      "to": [
+        "registro@icalpa.org",
+        "deontologia@icalpa.org",
+        "servicios@redabogacia.org"
+      ],
+      "cc": [],
+      "classification": "DIP79",
+      "attachments": [
+        "Grabacion Reunión PwC Simo y Cristo con Prieto Puente y Matos Matas (1) 11JUN2016 (2).pdf",
+        "Transcripcion Conversacion Telefonica CAM-Trabajdor SP (1).pdf",
+        "ANEXO 4 RedSARA Ministerio Fiscal Comunicaciones Registradas.pdf",
+        "C7F-C29M22.pdf"
+      ],
+      "synopsis": "Institutional communication in the identified Bar-routing universe; full raw mailbox original retained privately.",
+      "raw_mailbox_original": "PRIVATE_NOT_PUBLISHED"
+    },
+    {
+      "date": "2026-06-10T12:04:10",
+      "direction": "OUTBOUND",
+      "subject": "DIP 80/2026 – Aportación preventiva urgente sobre Administrador Concursal, conclusión viable, Comunidad, testimonio Daniel Irigoyen, moral hazard y cautelas reforzadas",
+      "to": [
+        "registro@icalpa.org",
+        "deontologia@icalpa.org",
+        "servicios@redabogacia.org"
+      ],
+      "cc": [],
+      "classification": "DIP80",
+      "attachments": [
+        "Daniel Irigoyen meeting with Judge and AC 13 June 2018 (3).PDF",
+        "Gmail - Laura Friend of Judge.PDF",
+        "ANEXO 4 RedSARA Ministerio Fiscal Comunicaciones Registradas.pdf",
+        "Grabacion Reunión PwC Simo y Cristo con Prieto Puente y Matos Matas (1) 11JUN2016 (1).pdf",
+        "Transcripcion Conversacion Telefonica CAM-Trabajdor SP.pdf",
+        "C7F-C29M22.pdf"
+      ],
+      "synopsis": "Institutional communication in the identified Bar-routing universe; full raw mailbox original retained privately.",
+      "raw_mailbox_original": "PRIVATE_NOT_PUBLISHED"
+    },
+    {
+      "date": "2026-06-10T12:11:16",
+      "direction": "OUTBOUND",
+      "subject": "Registro de ENTRADA ICA Las Palmas RE-008079/2026",
+      "to": [],
+      "cc": [],
+      "classification": "OTHER_INSTITUTIONAL",
+      "attachments": [
+        "smime.p7s"
+      ],
+      "synopsis": "Institutional communication in the identified Bar-routing universe; full raw mailbox original retained privately.",
+      "raw_mailbox_original": "PRIVATE_NOT_PUBLISHED"
+    },
+    {
+      "date": "2026-06-10T12:43:28",
+      "direction": "OUTBOUND",
+      "subject": "Registro de ENTRADA ICA Las Palmas RE-008087/2026",
+      "to": [],
+      "cc": [],
+      "classification": "OTHER_INSTITUTIONAL",
+      "attachments": [
+        "smime.p7s"
+      ],
+      "synopsis": "Institutional communication in the identified Bar-routing universe; full raw mailbox original retained privately.",
+      "raw_mailbox_original": "PRIVATE_NOT_PUBLISHED"
+    },
+    {
+      "date": "2026-06-14T22:36:47",
+      "direction": "OUTBOUND",
+      "subject": "DIP 80/2026 – Ampliación sobre canales profesionales, acciones patrimoniales de LPB y separación del Administrador Concursal",
+      "to": [
+        "registro@icalpa.org",
+        "deontologia@icalpa.org",
+        "servicios@redabogacia.org"
+      ],
+      "cc": [],
+      "classification": "DIP80",
+      "attachments": [],
+      "synopsis": "Institutional communication in the identified Bar-routing universe; full raw mailbox original retained privately.",
+      "raw_mailbox_original": "PRIVATE_NOT_PUBLISHED"
+    },
+    {
+      "date": "2026-06-14T23:09:15",
+      "direction": "OUTBOUND",
+      "subject": "Solicitud de orientación institucional y acceso a representación independiente",
+      "to": [
+        "registro@icalpa.org",
+        "deontologia@icalpa.org",
+        "servicios@redabogacia.org"
+      ],
+      "cc": [],
+      "classification": "OTHER_INSTITUTIONAL",
+      "attachments": [],
+      "synopsis": "Institutional communication in the identified Bar-routing universe; full raw mailbox original retained privately.",
+      "raw_mailbox_original": "PRIVATE_NOT_PUBLISHED"
+    },
+    {
+      "date": "2026-06-15T11:12:04",
+      "direction": "OUTBOUND",
+      "subject": "Registro de ENTRADA ICA Las Palmas RE-008248/2026",
+      "to": [],
+      "cc": [],
+      "classification": "OTHER_INSTITUTIONAL",
+      "attachments": [
+        "smime.p7s"
+      ],
+      "synopsis": "Institutional communication in the identified Bar-routing universe; full raw mailbox original retained privately.",
+      "raw_mailbox_original": "PRIVATE_NOT_PUBLISHED"
+    },
+    {
+      "date": "2026-06-15T11:13:50",
+      "direction": "OUTBOUND",
+      "subject": "Registro de ENTRADA ICA Las Palmas RE-008249/2026",
+      "to": [],
+      "cc": [],
+      "classification": "OTHER_INSTITUTIONAL",
+      "attachments": [
+        "smime.p7s"
+      ],
+      "synopsis": "Institutional communication in the identified Bar-routing universe; full raw mailbox original retained privately.",
+      "raw_mailbox_original": "PRIVATE_NOT_PUBLISHED"
+    },
+    {
+      "date": "2026-06-18T10:43:26",
+      "direction": "OUTBOUND",
+      "subject": "Subject: Aportación complementaria a DIP 80/2026 – Presentación presencial de denuncia penal contra el Administrador Concursal",
+      "to": [
+        "registro@icalpa.org",
+        "deontologia@icalpa.org",
+        "servicios@redabogacia.org"
+      ],
+      "cc": [],
+      "classification": "DIP80",
+      "attachments": [],
+      "synopsis": "Institutional communication in the identified Bar-routing universe; full raw mailbox original retained privately.",
+      "raw_mailbox_original": "PRIVATE_NOT_PUBLISHED"
+    },
+    {
+      "date": "2026-06-18T10:45:48",
+      "direction": "OUTBOUND",
+      "subject": "Aportación complementaria a DIP 80/2026 – Presentación presencial de denuncia penal relativa a resoluciones dictadas en el Concurso Ordinario 36/2012",
+      "to": [
+        "registro@icalpa.org",
+        "deontologia@icalpa.org",
+        "servicios@redabogacia.org"
+      ],
+      "cc": [],
+      "classification": "DIP80",
+      "attachments": [],
+      "synopsis": "Institutional communication in the identified Bar-routing universe; full raw mailbox original retained privately.",
+      "raw_mailbox_original": "PRIVATE_NOT_PUBLISHED"
+    },
+    {
+      "date": "2026-06-25T23:27:44",
+      "direction": "OUTBOUND",
+      "subject": "DIP 80/2026 – Aportación de escrito y solicitud de acuse de recibo",
+      "to": [
+        "registro@icalpa.org",
+        "deontologia@icalpa.org",
+        "servicios@redabogacia.org"
+      ],
+      "cc": [],
+      "classification": "DIP80",
+      "attachments": [
+        "DIP_80_2026_Solicitud_impulso_Control_22_26JUN2026_firma_azul.pdf"
+      ],
+      "synopsis": "Institutional communication in the identified Bar-routing universe; full raw mailbox original retained privately.",
+      "raw_mailbox_original": "PRIVATE_NOT_PUBLISHED"
+    },
+    {
+      "date": "2026-06-26T10:30:24",
+      "direction": "OUTBOUND",
+      "subject": "Registro de ENTRADA ICA Las Palmas RE-008887/2026",
+      "to": [],
+      "cc": [],
+      "classification": "OTHER_INSTITUTIONAL",
+      "attachments": [
+        "smime.p7s"
+      ],
+      "synopsis": "Institutional communication in the identified Bar-routing universe; full raw mailbox original retained privately.",
+      "raw_mailbox_original": "PRIVATE_NOT_PUBLISHED"
+    },
+    {
+      "date": "2026-07-13T15:47:08",
+      "direction": "OUTBOUND",
+      "subject": "DIP 80/2026 – comunicación de procedimiento penal 1956/2026 y solicitud de impulso y decisión",
+      "to": [
+        "registro@icalpa.org",
+        "deontologia@icalpa.org",
+        "servicios@redabogacia.org"
+      ],
+      "cc": [],
+      "classification": "DIP80",
+      "attachments": [],
+      "synopsis": "Institutional communication in the identified Bar-routing universe; full raw mailbox original retained privately.",
+      "raw_mailbox_original": "PRIVATE_NOT_PUBLISHED"
+    },
+    {
+      "date": "2026-07-13T16:08:30",
+      "direction": "OUTBOUND",
+      "subject": "DIP 79/2026 – actualización procesal sobre 1901/2026 y solicitud de comprobaciones concretas",
+      "to": [
+        "registro@icalpa.org",
+        "deontologia@icalpa.org",
+        "servicios@redabogacia.org"
+      ],
+      "cc": [],
+      "classification": "DIP79",
+      "attachments": [],
+      "synopsis": "Institutional communication in the identified Bar-routing universe; full raw mailbox original retained privately.",
+      "raw_mailbox_original": "PRIVATE_NOT_PUBLISHED"
+    },
+    {
+      "date": "2026-07-14T08:58:46",
+      "direction": "OUTBOUND",
+      "subject": "Registro de ENTRADA ICA Las Palmas RE-009765/2026",
+      "to": [],
+      "cc": [],
+      "classification": "OTHER_INSTITUTIONAL",
+      "attachments": [
+        "smime.p7s"
+      ],
+      "synopsis": "Institutional communication in the identified Bar-routing universe; full raw mailbox original retained privately.",
+      "raw_mailbox_original": "PRIVATE_NOT_PUBLISHED"
+    },
+    {
+      "date": "2026-07-14T09:30:09",
+      "direction": "OUTBOUND",
+      "subject": "Registro de ENTRADA ICA Las Palmas RE-009768/2026",
+      "to": [],
+      "cc": [],
+      "classification": "OTHER_INSTITUTIONAL",
+      "attachments": [
+        "smime.p7s"
+      ],
+      "synopsis": "Institutional communication in the identified Bar-routing universe; full raw mailbox original retained privately.",
+      "raw_mailbox_original": "PRIVATE_NOT_PUBLISHED"
+    },
+    {
+      "date": "2026-08-20T09:24:28",
+      "direction": "OUTBOUND",
+      "subject": "NO ENVIAR — BORRADOR SUSTITUIDO — DIP 80/2026",
+      "to": [
+        "deontologia@icalpa.org",
+        "registro@icalpa.org"
+      ],
+      "cc": [
+        "servicios@redabogacia.org",
+        "notificaciones_secretaria@icalpa.com"
+      ],
+      "classification": "SUPERSEDED_DRAFT",
+      "attachments": [],
+      "synopsis": "Institutional communication in the identified Bar-routing universe; full raw mailbox original retained privately.",
+      "raw_mailbox_original": "PRIVATE_NOT_PUBLISHED"
+    },
+    {
+      "date": "2026-08-20T09:37:06",
+      "direction": "OUTBOUND",
+      "subject": "DIP 80/2026 – requerimiento institucional urgente de decisión motivada, preservación probatoria y contención del riesgo profesional",
+      "to": [
+        "deontologia@icalpa.org",
+        "registro@icalpa.org"
+      ],
+      "cc": [
+        "servicios@redabogacia.org",
+        "notificaciones_secretaria@icalpa.com"
+      ],
+      "classification": "AUTO_OR_ROUTING_REPLY",
+      "attachments": [
+        "san-telmo-ricpe-sun-park-stamp-v1-ES.png",
+        "pwc-five-actors-plus-ac-2016-knowledge-checkpoint-ES.png"
+      ],
+      "synopsis": "Urgent institutional request for a human, competent, traceable and reasoned DIP 80 route, evidential preservation and professional-risk containment; expressly disclaims improper pressure on the ponente.",
+      "raw_mailbox_original": "PRIVATE_NOT_PUBLISHED"
+    },
+    {
+      "date": "2026-08-20T09:37:18",
+      "direction": "OUTBOUND",
+      "subject": "RESPUESTA NOTIFICACIONES",
+      "to": [],
+      "cc": [],
+      "classification": "AUTO_OR_ROUTING_REPLY",
+      "attachments": [],
+      "synopsis": "ICALPA routing reply stating that official submissions must be sent to registro@icalpa.org for formal entry registration and internal transfer.",
+      "raw_mailbox_original": "PRIVATE_NOT_PUBLISHED"
+    },
+    {
+      "date": "2026-08-20T09:43:05",
+      "direction": "OUTBOUND",
+      "subject": "Re: DIP 80/2026 – requerimiento institucional urgente de decisión motivada, preservación probatoria y contención del riesgo profesional",
+      "to": [
+        "deontologia@icalpa.org",
+        "registro@icalpa.org"
+      ],
+      "cc": [
+        "servicios@redabogacia.org",
+        "notificaciones_secretaria@icalpa.com"
+      ],
+      "classification": "AUTO_OR_ROUTING_REPLY",
+      "attachments": [],
+      "synopsis": "Urgent institutional request for a human, competent, traceable and reasoned DIP 80 route, evidential preservation and professional-risk containment; expressly disclaims improper pressure on the ponente.",
+      "raw_mailbox_original": "PRIVATE_NOT_PUBLISHED"
+    },
+    {
+      "date": "2026-08-20T10:12:51",
+      "direction": "OUTBOUND",
+      "subject": "Registro de entrada ICA Las Palmas RE-011301/2026",
+      "to": [],
+      "cc": [],
+      "classification": "OTHER_INSTITUTIONAL",
+      "attachments": [
+        "smime.p7s"
+      ],
+      "synopsis": "Institutional communication in the identified Bar-routing universe; full raw mailbox original retained privately.",
+      "raw_mailbox_original": "PRIVATE_NOT_PUBLISHED"
+    },
+    {
+      "date": "2026-08-20T10:15:44",
+      "direction": "OUTBOUND",
+      "subject": "Registro de entrada ICA Las Palmas RE-011302/2026",
+      "to": [],
+      "cc": [],
+      "classification": "OTHER_INSTITUTIONAL",
+      "attachments": [
+        "smime.p7s"
+      ],
+      "synopsis": "Institutional communication in the identified Bar-routing universe; full raw mailbox original retained privately.",
+      "raw_mailbox_original": "PRIVATE_NOT_PUBLISHED"
+    },
+    {
+      "date": "2026-08-20T12:00:42",
+      "direction": "OUTBOUND",
+      "subject": "DIP 79/2026 – requerimiento urgente de decisión motivada, verificación de documentación judicial cuestionada y preservación de sus efectos extraconcursales",
+      "to": [
+        "deontologia@icalpa.org",
+        "registro@icalpa.org"
+      ],
+      "cc": [
+        "servicios@redabogacia.org",
+        "notificaciones_secretaria@icalpa.com"
+      ],
+      "classification": "DIP79",
+      "attachments": [
+        "CERTIFICACION%20de%20Enrique%20Guerra%20Suarez%2021JUL2021.pdf",
+        "ESCRITO%20de%20CAM%20ref%20RIC%20PE%20y%20Enrique%20Guerra%20Suarez%2021JUL2021.pdf",
+        "21-2-15%20DOC_%201_firmado%281%29.pdf",
+        "Escrito%20de%20CAM%20ref%20Reforma%20Integral%202018%20%28entrada%20en%20funcionamiento%29%2015FEB2021.pdf",
+        "san-telmo-ricpe-sun-park-stamp-v1-ES.png",
+        "pwc-five-actors-plus-ac-2016-knowledge-checkpoint-ES.png"
+      ],
+      "synopsis": "Urgent DIP 79 submission seeking a reasoned decision, verification of disputed judicial materials, preservation of extraconcursal effects and separate treatment from DIP 80.",
+      "raw_mailbox_original": "PRIVATE_NOT_PUBLISHED"
+    },
+    {
+      "date": "2026-08-20T12:42:15",
+      "direction": "OUTBOUND",
+      "subject": "Registro de entrada ICA Las Palmas RE-011307/2026",
+      "to": [],
+      "cc": [],
+      "classification": "OTHER_INSTITUTIONAL",
+      "attachments": [
+        "smime.p7s"
+      ],
+      "synopsis": "Institutional communication in the identified Bar-routing universe; full raw mailbox original retained privately.",
+      "raw_mailbox_original": "PRIVATE_NOT_PUBLISHED"
+    },
+    {
+      "date": "2026-08-20T19:47:46",
+      "direction": "OUTBOUND",
+      "subject": "DIP 79/2026 — ampliación sobre procedencia de fondos y solicitud de consulta/dictamen deontológico general respecto de abogados del perímetro CAM / Acosta Matos",
+      "to": [
+        "deontologia@icalpa.org",
+        "registro@icalpa.org"
+      ],
+      "cc": [
+        "servicios@redabogacia.org",
+        "notificaciones_secretaria@icalpa.com"
+      ],
+      "classification": "DIP79",
+      "attachments": [],
+      "synopsis": "DIP 79 expansion on source-of-funds issues plus request for a general deontological opinion applicable to lawyers in materially equivalent circumstances.",
+      "raw_mailbox_original": "PRIVATE_NOT_PUBLISHED"
+    },
+    {
+      "date": "2026-08-21T07:58:07",
+      "direction": "OUTBOUND",
+      "subject": "Registro de ENTRADA ICA Las Palmas RE-011311/2026",
+      "to": [],
+      "cc": [],
+      "classification": "OTHER_INSTITUTIONAL",
+      "attachments": [
+        "smime.p7s"
+      ],
+      "synopsis": "Institutional communication in the identified Bar-routing universe; full raw mailbox original retained privately.",
+      "raw_mailbox_original": "PRIVATE_NOT_PUBLISHED"
+    },
+    {
+      "date": "2026-08-22T12:14:47",
+      "direction": "OUTBOUND",
+      "subject": "DIP 80/2026 — aportación delimitada y preservación: correo de 21 de abril de 2016",
+      "to": [
+        "deontologia@icalpa.org",
+        "registro@icalpa.org"
+      ],
+      "cc": [
+        "notificaciones_secretaria@icalpa.com"
+      ],
+      "classification": "DIP80",
+      "attachments": [],
+      "synopsis": "Bounded DIP 80 preservation submission concerning the attributed 21-Apr-2016 AC email and the contemporaneous independence/remuneration context.",
+      "raw_mailbox_original": "PRIVATE_NOT_PUBLISHED"
+    },
+    {
+      "date": "2026-09-03T11:05:30",
+      "direction": "OUTBOUND",
+      "subject": "DIP 80/2026 — Ponente — hecho procesal sobrevenido 01/09/2026: separación del AC pendiente ante la Audiencia Provincial — GC-CIV-003, derecho de defensa y solicitud de investigación y decisión",
+      "to": [
+        "registro@icalpa.org",
+        "deontologia@icalpa.org",
+        "servicios@redabogacia.org"
+      ],
+      "cc": [
+        "notificaciones_secretaria@icalpa.com"
+      ],
+      "classification": "DIP80",
+      "attachments": [
+        "ANEXO_2_GC_CIV_003_intervencion_AC_desistimiento_retracto_ES.png",
+        "ANEXO_1_AP_Las_Palmas_Decreto_000222_2026_RPL_3319_2025_01SEP2026.pdf"
+      ],
+      "synopsis": "Direct submission to DIP 80 ponente on the live AC-removal appeal, GC-CIV-003, right of defence, finite investigation questions, independence, conflicts and a request for a reasoned decision.",
+      "raw_mailbox_original": "PRIVATE_NOT_PUBLISHED"
+    },
+    {
+      "date": "2026-09-03T11:05:47",
+      "direction": "OUTBOUND",
+      "subject": "RESPUESTA NOTIFICACIONES",
+      "to": [],
+      "cc": [],
+      "classification": "AUTO_OR_ROUTING_REPLY",
+      "attachments": [],
+      "synopsis": "ICALPA routing reply stating that official submissions must be sent to registro@icalpa.org for formal entry registration and internal transfer.",
+      "raw_mailbox_original": "PRIVATE_NOT_PUBLISHED"
+    },
+    {
+      "date": "2026-09-03T11:24:28",
+      "direction": "OUTBOUND",
+      "subject": "Registro de ENTRADA ICA Las Palmas RE-011678/2026",
+      "to": [],
+      "cc": [],
+      "classification": "OTHER_INSTITUTIONAL",
+      "attachments": [
+        "smime.p7s"
+      ],
+      "synopsis": "Institutional communication in the identified Bar-routing universe; full raw mailbox original retained privately.",
+      "raw_mailbox_original": "PRIVATE_NOT_PUBLISHED"
+    }
+  ],
+  "icatf": [
+    {
+      "date": "2025-12-23T21:52:00",
+      "direction": "OUTBOUND",
+      "subject": "Asunto: Consulta urgente — competencia y trámite para posible queja deontológica (asunto concursal “Sun Park”)",
+      "to": [
+        "info@icatf.es"
+      ],
+      "cc": [],
+      "classification": "OTHER_INSTITUTIONAL",
+      "attachments": [],
+      "synopsis": "Institutional communication in the identified Bar-routing universe; full raw mailbox original retained privately.",
+      "raw_mailbox_original": "PRIVATE_NOT_PUBLISHED"
+    },
+    {
+      "date": "2025-12-31T10:46:55",
+      "direction": "OUTBOUND",
+      "subject": "Fwd: Asunto: Consulta urgente — competencia y trámite para posible queja deontológica (asunto concursal “Sun Park”)",
+      "to": [
+        "delegacionnorte@icatf.es",
+        "info@icatf.es"
+      ],
+      "cc": [],
+      "classification": "OTHER_INSTITUTIONAL",
+      "attachments": [],
+      "synopsis": "Institutional communication in the identified Bar-routing universe; full raw mailbox original retained privately.",
+      "raw_mailbox_original": "PRIVATE_NOT_PUBLISHED"
+    },
+    {
+      "date": "2026-08-21T13:57:40",
+      "direction": "OUTBOUND",
+      "subject": "PUESTA EN CONOCIMIENTO, PRESERVACIÓN Y CERTIFICACIÓN URGENTES - 2647-ICATF - D. Cristo Ayose Suárez Pimentel (col. 4968) / DP 1041/2017 - contexto DIP 80/2026, DP 1901/2026 y DP 748/2026 - art. 262 LECrim y posible relevancia del art. 262 CP",
+      "to": [
+        "registro@icatf.es"
+      ],
+      "cc": [
+        "secretaria@icatf.es",
+        "informa@icatf.es",
+        "info@icatf.es",
+        "delegacionnorte@icatf.es"
+      ],
+      "classification": "DIP80",
+      "attachments": [
+        "san-telmo-ricpe-sun-park-stamp-v1-ES.png",
+        "pwc-five-actors-plus-ac-2016-knowledge-checkpoint-ES.png"
+      ],
+      "synopsis": "First specific Tenerife communication concerning Cristo Suárez Pimentel / DP 1041/2017; asks preservation and certification of any Bar-channel use, pressure or territorial activity.",
+      "raw_mailbox_original": "PRIVATE_NOT_PUBLISHED"
+    },
+    {
+      "date": "2026-08-21T13:57:47",
+      "direction": "OUTBOUND",
+      "subject": "Respuesta automática - por ausencia temporal Re: PUESTA EN CONOCIMIENTO, PRESERVACIÓN Y CERTIFICACIÓN URGENTES - 2647-ICATF - D. Cristo Ayose Suárez Pimentel (col. 4968) / DP 1041/2017 - contexto DIP 80/2026, DP 1901/2026 y DP 748/2026 - art. 262 LECrim y posible relevancia del art. 262 CP",
+      "to": [],
+      "cc": [],
+      "classification": "AUTO_OR_ROUTING_REPLY",
+      "attachments": [],
+      "synopsis": "First specific Tenerife communication concerning Cristo Suárez Pimentel / DP 1041/2017; asks preservation and certification of any Bar-channel use, pressure or territorial activity.",
+      "raw_mailbox_original": "PRIVATE_NOT_PUBLISHED"
+    },
+    {
+      "date": "2026-08-21T13:57:47",
+      "direction": "OUTBOUND",
+      "subject": "Ausencia temporal Re: PUESTA EN CONOCIMIENTO, PRESERVACIÓN Y CERTIFICACIÓN URGENTES - 2647-ICATF - D. Cristo Ayose Suárez Pimentel (col. 4968) / DP 1041/2017 - contexto DIP 80/2026, DP 1901/2026 y DP 748/2026 - art. 262 LECrim y posible relevancia del art. 262 CP",
+      "to": [],
+      "cc": [],
+      "classification": "AUTO_OR_ROUTING_REPLY",
+      "attachments": [],
+      "synopsis": "First specific Tenerife communication concerning Cristo Suárez Pimentel / DP 1041/2017; asks preservation and certification of any Bar-channel use, pressure or territorial activity.",
+      "raw_mailbox_original": "PRIVATE_NOT_PUBLISHED"
+    },
+    {
+      "date": "2026-08-21T13:57:50",
+      "direction": "OUTBOUND",
+      "subject": "Respuesta automática - Ausencia temporal Re: PUESTA EN CONOCIMIENTO, PRESERVACIÓN Y CERTIFICACIÓN URGENTES - 2647-ICATF - D. Cristo Ayose Suárez Pimentel (col. 4968) / DP 1041/2017 - contexto DIP 80/2026, DP 1901/2026 y DP 748/2026 - art. 262 LECrim y posible relevancia del art. 262 CP",
+      "to": [],
+      "cc": [],
+      "classification": "AUTO_OR_ROUTING_REPLY",
+      "attachments": [],
+      "synopsis": "First specific Tenerife communication concerning Cristo Suárez Pimentel / DP 1041/2017; asks preservation and certification of any Bar-channel use, pressure or territorial activity.",
+      "raw_mailbox_original": "PRIVATE_NOT_PUBLISHED"
+    },
+    {
+      "date": "2026-08-25T21:54:45",
+      "direction": "OUTBOUND",
+      "subject": "Solicitud de trazabilidad y copia — ICAM 1487/26, 2647-ICATF y escrito de 21/08/2026",
+      "to": [
+        "registro@icatf.es"
+      ],
+      "cc": [
+        "secretaria@icatf.es"
+      ],
+      "classification": "AUTO_OR_ROUTING_REPLY",
+      "attachments": [],
+      "synopsis": "Traceability request separating three Tenerife chains: ICAM 1487/26 referral, 2647-ICATF, and the 21-Aug-2026 specific communication.",
+      "raw_mailbox_original": "PRIVATE_NOT_PUBLISHED"
+    }
+  ]
+}
