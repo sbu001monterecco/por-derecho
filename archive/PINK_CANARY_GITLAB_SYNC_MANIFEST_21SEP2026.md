@@ -75,3 +75,12 @@ Also preserved:
 The Drive mirror additionally contains:
 - `PINK_CANARY_DRIVE_MIRROR_COMPLETION_NOTE_21SEP2026.md`;
 - `PINK_CANARY_UNITARY_GITLAB_RECOVERY_BUNDLE_21SEP2026_v3.zip`, which is the preferred current recovery bundle.
+
+
+## Narrative rescan sync target — 21 September 2026
+
+New canonical files:
+- `archive/PINK_CANARY_NARRATIVE_PROPAGATION_PROSECUTORIAL_RESCAN_21SEP2026.md`
+- `archive/PINK_CANARY_NARRATIVE_PROPAGATION_GRAPH_21SEP2026.json`
+
+Public GitLab Pages currently exposes an RPL 3304/2025 record that predates the recovered 17-September-2026 AC opposition. When GitLab repository access returns, reconcile and add the new filing without overwriting GitLab-only work.
