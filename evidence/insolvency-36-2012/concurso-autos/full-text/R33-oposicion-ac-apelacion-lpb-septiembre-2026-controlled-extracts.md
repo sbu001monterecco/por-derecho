@@ -8,7 +8,7 @@
 **SHA-256 original recibido:** \`5e0728185cf9b686abd723497d2a53a2656a5e0de4d323a734ed02880eb1d711\`  
 **SHA-256 copia optimizada para visor preparada:** \`b1f795fd54a203cd648f8a7f7bcae7eb9e334740c788569eb1f1a5a0661f424d\`
 
-> Control: estos extractos preservan la literalidad de los pasajes decisivos de la copia localizada. La futura publicación del PDF controla cualquier discrepancia. El escrito acredita la posición procesal de su autor y los textos que reproduce; no acredita por sí mismo la verdad de todas sus caracterizaciones.
+> Control: estos extractos preservan la literalidad de los pasajes decisivos de la copia localizada. El PDF público y el original firmado bajo custodia se controlan por huellas separadas; el original firmado prevalece para autenticidad y firma. El escrito acredita la posición procesal de su autor y los textos que reproduce; no acredita por sí mismo la verdad de todas sus caracterizaciones.
 
 ## Página 2 · apelación pendiente y condena de primera instancia
 
@@ -51,3 +51,21 @@ Sobre la sentencia de 21 de enero de 2026 en el procedimiento ordinario 641/2024
 ## Regla de uso
 
 No extraer una frase de agradecimiento del correo de 2016 sin conservar las afirmaciones sustantivas que el mismo correo contiene. No presentar las afirmaciones sustantivas como hechos probados: son aviso/documento contemporáneo que debe contrastarse con cuentas, actas, informes, comunicaciones PwC↔AC y decisiones posteriores.
+
+
+## Paso forense/procesal ampliado · 21 septiembre 2026
+
+La revisión de trabajo descompuso la fuente en **206 bloques**, **276 proposiciones a nivel de enunciado** y **206 composiciones de párrafo**. Son registros de revisión provisional, no hallazgos de mentira, dolo o culpabilidad.
+
+Puntos de contraste promovidos a la página pública:
+
+- **Motivo y sucesión de letrados:** separar la renuncia documentada de 2020 de la inferencia general sobre las razones de otros profesionales; comprobar cada cambio por su fuente contemporánea.
+- **Cuentas anuales:** el AC reconoce el deber y atribuye la imposibilidad a falta de documentación; comprobar requerimientos, entrega real, faltantes, reiteraciones y material utilizado después.
+- **SWAP/CaixaBank:** fijar originales de cronología, naturaleza de la acción, condición de costes/garantía, demanda completa y causa de negativa al poder; conservar la explicación lícita de control de representación y costes.
+- **Artículo 1535 CC:** distinguir la decisión jurídica sobre crédito litigioso/retracto del precio económico de cesión y su conocimiento posterior.
+- **ACTÚA / 400.000 €:** separar valoración, escritura, no-convalidación, autorización posterior, pago, contabilización, restitución y título final.
+- **Grant Thornton:** la negativa del escrito se refiere a Grant Thornton Advisory, S.L.P.; la relación con otras entidades/capacidades requiere reconciliación separada.
+- **Estado final de la masa:** las afirmaciones sobre ausencia de bienes, acciones y tesorería se preservan como proposiciones verificables contra inventario, bancos, litigios y rendición final.
+- **Capturas de Por Derecho/LinkedIn:** el propio escrito incorpora tanto las acusaciones como reservas de “no probado todavía”; acreditan aviso/conocimiento del contenido publicado, no verdad material de la acusación.
+
+**Regla:** una contradicción documental no se transforma automáticamente en conocimiento de falsedad ni intención criminal. Cada salto subjetivo requiere prueba propia.
