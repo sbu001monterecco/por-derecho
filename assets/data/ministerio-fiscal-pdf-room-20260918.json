@@ -226,8 +226,8 @@
       "document_class": "PARTY_AUTHORED_EXPLANATORY_DERIVATIVE_NOT_OFFICIAL_ACT",
       "context_es": "Portada y láminas L1–L4 sobre dos denuncias autónomas, registro y reparto, corpus fiscal y trazabilidad física/electrónica. La metáfora de la fosa está en la página 2. Se conserva como versión histórica; la versión final preparada se muestra separadamente.",
       "context_en": "Cover and L1–L4 illustrations concerning two autonomous complaints, registration/allocation, the prosecution corpus and physical/electronic traceability. The grave metaphor is on page 2. Preserved historical version; the final prepared version is shown separately.",
-      "boundary_es": "Ilustraciones de parte, no actos de Fiscalía ni prueba de destrucción, acumulación, concierto o culpabilidad. Ref.21 y Ref.24 son presentaciones distintas. El escrito sustantivo sigue sin firma y no presentado. La presencia en esta sala no acredita incorporación al expediente oficial.",
-      "boundary_en": "Party illustrations, not prosecution acts or proof of destruction, joinder, agreement or guilt. Ref.21 and Ref.24 are distinct submissions. The substantive response remains unsigned and unfiled. Inclusion in this room does not establish incorporation into an official file.",
+      "boundary_es": "Ilustraciones de parte, no actos de Fiscalía ni prueba de destrucción, acumulación, concierto o culpabilidad. Ref.21 y Ref.24 son presentaciones distintas. La respuesta sustantiva sucesora se registró el 21 de septiembre de 2026 en diez entregas enlazadas; la versión histórica de trabajo no es la presentada. La presencia en esta sala no acredita incorporación al expediente oficial.",
+      "boundary_en": "Party illustrations, not prosecution acts or proof of destruction, joinder, agreement or guilt. Ref.21 and Ref.24 are distinct submissions. The successor substantive response was registered on 21 September 2026 in ten linked deliveries; the historical working version is not the filed version. Inclusion in this room does not establish incorporation into an official file.",
       "related_es": [
         {
           "label": "E.G.745/2026",
@@ -259,18 +259,18 @@
     },
     {
       "id": "EG745-PARTY-VISUAL-P1-FINAL-20260920",
-      "title_es": "E.G.745 — anexo visual de parte, parte 1 (versión final preparada)",
-      "title_en": "E.G.745 — party visual annex, Part 1 (final prepared version)",
+      "title_es": "E.G.745 — anexo visual de parte, parte 1 (versión registrada)",
+      "title_en": "E.G.745 — party visual annex, Part 1 (registered version)",
       "pdf_path": "evidence/fiscalia/2026/eg745-final-20260920/visual-annex-part-1.pdf",
       "pages": 5,
       "authority": "Party-authored illustration; not an official prosecutorial act",
       "date": "2026-09-20",
-      "signatory": "Unsigned preparation; not filed",
+      "signatory": "Party illustration; registered as attachment under REGAGE26e00082068814; not an official act",
       "document_class": "PARTY_AUTHORED_EXPLANATORY_DERIVATIVE_NOT_OFFICIAL_ACT",
-      "context_es": "Portada y láminas L1–L4 sobre dos denuncias autónomas, registro y reparto, corpus fiscal y trazabilidad física/electrónica. La metáfora de la fosa está en la página 2. Versión preparada con leyenda actualizada; se conserva también la versión histórica.",
-      "context_en": "Cover and L1–L4 illustrations concerning two autonomous complaints, registration/allocation, the prosecution corpus and physical/electronic traceability. The grave metaphor is on page 2. Prepared version with updated legend; the historical version is also retained.",
-      "boundary_es": "Ilustraciones de parte, no actos de Fiscalía ni prueba de destrucción, acumulación, concierto o culpabilidad. Ref.21 y Ref.24 son presentaciones distintas. El escrito sustantivo sigue sin firma y no presentado. La presencia en esta sala no acredita incorporación al expediente oficial.",
-      "boundary_en": "Party illustrations, not prosecution acts or proof of destruction, joinder, agreement or guilt. Ref.21 and Ref.24 are distinct submissions. The substantive response remains unsigned and unfiled. Inclusion in this room does not establish incorporation into an official file.",
+      "context_es": "Portada y láminas L1–L4 sobre dos denuncias autónomas, registro y reparto, corpus fiscal y trazabilidad física/electrónica. La metáfora de la fosa está en la página 2. Versión registrada con leyenda actualizada; se conserva también la versión histórica.",
+      "context_en": "Cover and L1–L4 illustrations concerning two autonomous complaints, registration/allocation, the prosecution corpus and physical/electronic traceability. The grave metaphor is on page 2. Registered version with updated legend; the historical version is also retained.",
+      "boundary_es": "Ilustraciones de parte, no actos de Fiscalía ni prueba de destrucción, acumulación, concierto o culpabilidad. Ref.21 y Ref.24 son presentaciones distintas. La respuesta sustantiva sucesora se registró el 21 de septiembre de 2026 en diez entregas enlazadas; la versión histórica de trabajo no es la presentada. La presencia en esta sala no acredita incorporación al expediente oficial.",
+      "boundary_en": "Party illustrations, not prosecution acts or proof of destruction, joinder, agreement or guilt. Ref.21 and Ref.24 are distinct submissions. The successor substantive response was registered on 21 September 2026 in ten linked deliveries; the historical working version is not the filed version. Inclusion in this room does not establish incorporation into an official file.",
       "related_es": [
         {
           "label": "E.G.745/2026",
@@ -298,7 +298,8 @@
           "label": "Prepared-packet control",
           "href": "../../evidence/fiscalia/2026/eg745-final-20260920/README.md"
         }
-      ]
+      ],
+      "registration": "REGAGE26e00082068814"
     }
   ],
   "private_or_not_yet_public_safe_examples": [

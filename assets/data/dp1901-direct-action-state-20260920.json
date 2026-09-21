@@ -1,6 +1,6 @@
 {
   "schema": "por-derecho.dp1901-direct-action-state.v1",
-  "control_date": "2026-09-20",
+  "control_date": "2026-09-21",
   "control_timezone": "Atlantic/Canary",
   "status": "13_REGISTERED_POST_FILING_FOLLOWUP_OPEN",
   "counts": {
@@ -36,8 +36,9 @@
   },
   "separation": {
     "counsel_dependent_judicial_remedy": "Outside the 13 personal-action count.",
-    "substantive_eg745_response": "Separate from A10 and still pending.",
-    "provincial_email_follow_up": "Supplementary communication; not a filing and not evidence of delivery or institutional action."
+    "substantive_eg745_response": "Separate from A10: now registered in ten linked deliveries, principal REGAGE26e00082068814; all 27 PDF fingerprints verified. Admission/incorporation/examination remain unverified.",
+    "provincial_email_follow_up": "Supplementary communication; not a filing and not evidence of delivery or institutional action.",
+    "eg745_delivery_control": "assets/data/eg745-final-delivery-control-20260920.json"
   },
   "actions": [
     {
@@ -49,7 +50,8 @@
       "presented_at": "2026-09-20 13:51:39",
       "registered_at": "2026-09-20 13:51:42",
       "purpose": "Onward routing to Decanato / Registro y Reparto for initiating-document, reparto and association traceability.",
-      "proof": "Receipt proves registration to the stated recipient; onward delivery, association and institutional action remain unproved."
+      "proof": "Receipt proves registration to the stated recipient; onward delivery, association and institutional action remain unproved.",
+      "canonical_event_id": "PD-SP-EVT-0181"
     },
     {
       "id": "A02",
@@ -60,7 +62,9 @@
       "supplement_registration": "S000000000000144972",
       "supplement_presented_at": "2026-09-20 18:07",
       "purpose": "Access and production request for docket/index, corpus, signed Fiscal report, native order and service metadata.",
-      "proof": "Principal receipt proves a four-page principal filing. The planned annexes were not listed there. A separate supplemental receipt records an eleven-page combined annex PDF, but supplies no document hash; byte identity is therefore not proved by that receipt."
+      "proof": "Principal receipt proves a four-page principal filing. The planned annexes were not listed there. A separate supplemental receipt records an eleven-page combined annex PDF, but supplies no document hash; byte identity is therefore not proved by that receipt.",
+      "canonical_event_id": "PD-SP-EVT-0182",
+      "supplement_canonical_event_id": "PD-SP-EVT-0183"
     },
     {
       "id": "A03",
@@ -71,7 +75,8 @@
       "presented_at": "2026-09-20 12:32:17",
       "registered_at": "2026-09-20 12:32:19",
       "purpose": "Supervening fact, preservation and functional classification.",
-      "proof": "Receipt proves registration; classification, admission, examination and action remain unproved."
+      "proof": "Receipt proves registration; classification, admission, examination and action remain unproved.",
+      "canonical_event_id": "PD-SP-EVT-0184"
     },
     {
       "id": "A04",
@@ -82,7 +87,8 @@
       "presented_at": "2026-09-20 15:35:50",
       "registered_at": "2026-09-20 15:35:59",
       "purpose": "Territorial Office-of-Justice supervision and traceability in Exp.Gub.38/2026.",
-      "proof": "Receipt proves registration; transmission, incorporation, examination and action remain unproved."
+      "proof": "Receipt proves registration; transmission, incorporation, examination and action remain unproved.",
+      "canonical_event_id": "PD-SP-EVT-0185"
     },
     {
       "id": "A05",
@@ -93,7 +99,8 @@
       "presented_at": "2026-09-20 15:58:54",
       "registered_at": "2026-09-20 15:58:57",
       "purpose": "Identification and coordination of services that received, digitised and routed the material.",
-      "proof": "Receipt proves registration; the separately authorised email follow-up is supplementary and does not change filing proof."
+      "proof": "Receipt proves registration; the separately authorised email follow-up is supplementary and does not change filing proof.",
+      "canonical_event_id": "PD-SP-EVT-0186"
     },
     {
       "id": "A06",
@@ -164,7 +171,8 @@
         ],
         "illustration_count": 6
       },
-      "do_not_repeat_whole_filing": true
+      "do_not_repeat_whole_filing": true,
+      "canonical_event_id": "PD-SP-EVT-0187"
     },
     {
       "id": "A07",
@@ -175,7 +183,8 @@
       "presented_at": "2026-09-20 15:13:38",
       "registered_at": "2026-09-20 15:13:55",
       "purpose": "Technical custody, log preservation and clarification of documented incidents.",
-      "proof": "Receipt proves registration; preservation, production and technical findings remain unproved."
+      "proof": "Receipt proves registration; preservation, production and technical findings remain unproved.",
+      "canonical_event_id": "PD-SP-EVT-0188"
     },
     {
       "id": "A08",
@@ -197,7 +206,8 @@
           "69fa0e27f5ff7289ba4bb09c69954c436eff30af2ad55a554440e55d5da8dcdc96e48b47a6ca81c10cc2f2212fb7f4ec0457533c1d4a26acc88bb30e99a08923"
         ]
       },
-      "proof": "Receipt proves registration and the four attachment hashes. Authorship, allocation, corpus location and institutional action remain unproved."
+      "proof": "Receipt proves registration and the four attachment hashes. Authorship, allocation, corpus location and institutional action remain unproved.",
+      "canonical_event_id": "PD-SP-EVT-0189"
     },
     {
       "id": "A09",
@@ -208,7 +218,8 @@
       "presented_at": "2026-09-20 13:01:40",
       "registered_at": "2026-09-20 13:01:52",
       "purpose": "Territorial competence, attribution, DIP 2/2026 and preservation review.",
-      "proof": "One action only: duplicate private receipt copies do not create a second filing. Registration does not prove examination or action."
+      "proof": "One action only: duplicate private receipt copies do not create a second filing. Registration does not prove examination or action.",
+      "canonical_event_id": "PD-SP-EVT-0190"
     },
     {
       "id": "A10",
@@ -219,7 +230,8 @@
       "presented_at": "2026-09-20 13:25:00",
       "registered_at": "2026-09-20 13:25:03",
       "purpose": "Limited incorporation and preservation of a supervening DP1901 fact in E.G.745.",
-      "proof": "Not the separate substantive E.G.745 response. Receipt proves registration only."
+      "proof": "Not the separate substantive E.G.745 response. Receipt proves registration only.",
+      "canonical_event_id": "PD-SP-EVT-0199"
     },
     {
       "id": "A11",
@@ -239,7 +251,8 @@
           "eda604ff54d4f4babf76bc48ff070f2da36ff4d3c8afdd970c36c5290ec7b0411230328bf9e95ee11edc3e466924fd85665d9aee142b33bfc8f048142f0fdcda"
         ]
       },
-      "proof": "Separate from A04 and not an appeal. Receipt proves registration and matching hashes, not transmission, admission, examination or response."
+      "proof": "Separate from A04 and not an appeal. Receipt proves registration and matching hashes, not transmission, admission, examination or response.",
+      "canonical_event_id": "PD-SP-EVT-0200"
     },
     {
       "id": "A12",
@@ -261,7 +274,8 @@
           "eda604ff54d4f4babf76bc48ff070f2da36ff4d3c8afdd970c36c5290ec7b0411230328bf9e95ee11edc3e466924fd85665d9aee142b33bfc8f048142f0fdcda"
         ]
       },
-      "proof": "Receipt contains the intended requests and all four attachments, but also an extraneous operational-text tail. Legal effect and need for correction are undetermined; no correction is evidenced. Registration is not admission, handling or response."
+      "proof": "Receipt contains the intended requests and all four attachments, but also an extraneous operational-text tail. Legal effect and need for correction are undetermined; no correction is evidenced. Registration is not admission, handling or response.",
+      "canonical_event_id": "PD-SP-EVT-0201"
     },
     {
       "id": "A13",
@@ -343,7 +357,8 @@
       "existing_reference": "Exp.Gub.352/2025",
       "formalisation_resolved": false,
       "admission_proved": false,
-      "prior_hold_now_post_filing_followup": true
+      "prior_hold_now_post_filing_followup": true,
+      "canonical_event_id": "PD-SP-EVT-0202"
     }
   ],
   "reconciliation": {

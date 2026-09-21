@@ -1,202 +1,474 @@
 {
-  "status": "PREPARED_UNSIGNED_NOT_FILED",
+  "status": "ALL_10_LINKED_DELIVERIES_REGISTERED_AND_RECEIPTS_VERIFIED",
   "pdf_count": 27,
-  "page_instances": 1270,
-  "bytes": 112931303,
+  "page_instances": 1272,
+  "bytes": 112992926,
   "registrations": 10,
   "illustrations": 22,
-  "principal_words": 12429,
+  "principal_words": 12427,
   "source_recovery": "85 successful ordered source-preservation writes, including four version-guarded replacements; counts describe write operations, not unique originals.",
-  "no_external_filing_or_email": true,
+  "no_external_filing_or_email": false,
   "artifacts": [
     {
       "artifact": "EG745-F01",
       "filename": "01_EG745_RECURSO_REPOSICION.pdf",
-      "pages": 18,
-      "bytes": 224771,
-      "sha256": "aafe6c05c3191658dfb749ae0172feb87c096fecfd221b2dc5cc212dea45596a"
+      "pages": 20,
+      "bytes": 261097,
+      "sha256": "8aaff100478a394b4a06c419666a56baa9dcd3dc649af9950b72ef07d720c3cd",
+      "prior_preparation": {
+        "artifact": "EG745-F01",
+        "filename": "01_EG745_RECURSO_REPOSICION.pdf",
+        "pages": 18,
+        "bytes": 224771,
+        "sha256": "aafe6c05c3191658dfb749ae0172feb87c096fecfd221b2dc5cc212dea45596a"
+      },
+      "receipt_sha512": "583007f2e01872ba4913a8d1a349db27bfe72bfe2da77c4be600dada2acf4d22ea4f92f2ef58a59d6fdc22ee5312101d0374be2c46d4476836b46a775e3c199e",
+      "registration": "REGAGE26e00082068814",
+      "receipt_hash_match": true,
+      "prepared_raw_sha256": "3d1300b31e75da8832b446d7fd9d7c530af6285957236a7dce15751c2c728e9b"
     },
     {
       "artifact": "EG745-F02",
       "filename": "03_EG745_INDICE_APORTACION.pdf",
       "pages": 6,
-      "bytes": 61711,
-      "sha256": "7d26396fdb9a21b7c0b3d3a8f20ee3cac4edcc9254a5b435410fb30cd0d93417"
+      "bytes": 87008,
+      "sha256": "474a272cf7d4cd1e56b564cfc19df2af3c34aa61ef0f524af9622f39aa527486",
+      "prior_preparation": {
+        "artifact": "EG745-F02",
+        "filename": "03_EG745_INDICE_APORTACION.pdf",
+        "pages": 6,
+        "bytes": 61711,
+        "sha256": "7d26396fdb9a21b7c0b3d3a8f20ee3cac4edcc9254a5b435410fb30cd0d93417"
+      },
+      "receipt_sha512": "76ba8b92c7a0f730573bdae869a29c1eb34ce669199f78b8945c0f04e9e7f1cb8fa0928607cc06a02332e9b3496bef6ee3766c34982cb92cf27da0706f49d825",
+      "registration": "REGAGE26e00082068814",
+      "receipt_hash_match": true,
+      "prepared_raw_sha256": "7fc4eec91f84979cd6a993c3ec0c8dd918eef4c0100f8fe8e888da2dcfddc844"
     },
     {
       "artifact": "EG745-F03",
       "filename": "02_EG745_ANEXO_ANALITICO.pdf",
       "pages": 28,
       "bytes": 701362,
-      "sha256": "5f800cd7b2e344ca5a9d17f2bb4aba39f73f8b3034c2e87b3308ad2be1470510"
+      "sha256": "5f800cd7b2e344ca5a9d17f2bb4aba39f73f8b3034c2e87b3308ad2be1470510",
+      "prior_preparation": {
+        "artifact": "EG745-F03",
+        "filename": "02_EG745_ANEXO_ANALITICO.pdf",
+        "pages": 28,
+        "bytes": 701362,
+        "sha256": "5f800cd7b2e344ca5a9d17f2bb4aba39f73f8b3034c2e87b3308ad2be1470510"
+      },
+      "receipt_sha512": "82848fbd8622862c1dfaf20d11c63cea95fac5660c1d1790505c78b56a1468e435812537991e009c57752d50f6d0a574bfa06b82e7e023325c7702a50919a819",
+      "registration": "REGAGE26e00082068814",
+      "receipt_hash_match": true
     },
     {
       "artifact": "EG745-F04",
       "filename": "EG745_DOCUMENTOS_NUCLEO_D1_D7_SUP01_05.pdf",
       "pages": 44,
       "bytes": 2968107,
-      "sha256": "aac46664f3028d0c1b1494ddb356cec90e2978941cd72309702398c9aabc01e4"
+      "sha256": "aac46664f3028d0c1b1494ddb356cec90e2978941cd72309702398c9aabc01e4",
+      "prior_preparation": {
+        "artifact": "EG745-F04",
+        "filename": "EG745_DOCUMENTOS_NUCLEO_D1_D7_SUP01_05.pdf",
+        "pages": 44,
+        "bytes": 2968107,
+        "sha256": "aac46664f3028d0c1b1494ddb356cec90e2978941cd72309702398c9aabc01e4"
+      },
+      "receipt_sha512": "75161915adf83806fed55c78823186d17b270ee8d3c26c60054d603bf5f05044291b88be36b3f2f43bf08fb397ebc55001048a91c1338e86903a25cee6326817",
+      "registration": "REGAGE26e00082068814",
+      "receipt_hash_match": true
     },
     {
       "artifact": "EG745-F05",
       "filename": "06_EG745_VISUALES_1.pdf",
       "pages": 5,
       "bytes": 9355099,
-      "sha256": "f37a803f06eaa1f6e04f597f3bb4c1e91b23f2a94b008b5496d59ac4631bdd8d"
+      "sha256": "f37a803f06eaa1f6e04f597f3bb4c1e91b23f2a94b008b5496d59ac4631bdd8d",
+      "prior_preparation": {
+        "artifact": "EG745-F05",
+        "filename": "06_EG745_VISUALES_1.pdf",
+        "pages": 5,
+        "bytes": 9355099,
+        "sha256": "f37a803f06eaa1f6e04f597f3bb4c1e91b23f2a94b008b5496d59ac4631bdd8d"
+      },
+      "receipt_sha512": "927f4818d63d9c3734e9db4c3fe66f179370c50edee0e3b9d19b35124b350af7c2792660bf72da0c7ae14cbd7d75b6e9956f1d090c6690e2d449bf4fc91ad823",
+      "registration": "REGAGE26e00082068814",
+      "receipt_hash_match": true
     },
     {
       "artifact": "EG745-F06",
       "filename": "07_EG745_VISUALES_2.pdf",
       "pages": 19,
       "bytes": 9314342,
-      "sha256": "ded8887dd51561af9a11483c48207da5a9d1d1e5dada2055f6d647f4dc08b73b"
+      "sha256": "ded8887dd51561af9a11483c48207da5a9d1d1e5dada2055f6d647f4dc08b73b",
+      "prior_preparation": {
+        "artifact": "EG745-F06",
+        "filename": "07_EG745_VISUALES_2.pdf",
+        "pages": 19,
+        "bytes": 9314342,
+        "sha256": "ded8887dd51561af9a11483c48207da5a9d1d1e5dada2055f6d647f4dc08b73b"
+      },
+      "receipt_sha512": "a3027ad3a883315b3f3cb575a930c382f0458c3cecf528b2f5b09ff77568c66102561b5e1082ebf37a0d4cfada800ab0cc849a05c26d5fb58e7b9b65ffe61a44",
+      "registration": "REGAGE26e00082069039",
+      "receipt_hash_match": true
     },
     {
       "artifact": "EG745-F07",
       "filename": "EG745_DOCUMENTOS_PROFESIONALES_SUP13B_19.pdf",
       "pages": 120,
       "bytes": 4265170,
-      "sha256": "f77b68ea4a09051ee95a372f3dc11bdd7a915926374139d110c6867745ff6273"
+      "sha256": "f77b68ea4a09051ee95a372f3dc11bdd7a915926374139d110c6867745ff6273",
+      "prior_preparation": {
+        "artifact": "EG745-F07",
+        "filename": "EG745_DOCUMENTOS_PROFESIONALES_SUP13B_19.pdf",
+        "pages": 120,
+        "bytes": 4265170,
+        "sha256": "f77b68ea4a09051ee95a372f3dc11bdd7a915926374139d110c6867745ff6273"
+      },
+      "receipt_sha512": "57b68606f5290f695b8d9bb47aefef76cb291b754de70a9f8d00503ff2d1345febf77a51954fdcf6c2975660d71e5da08f72c4a70ae3e836a1b307859ba2216f",
+      "registration": "REGAGE26e00082069039",
+      "receipt_hash_match": true
     },
     {
       "artifact": "EG745-F08",
       "filename": "EG745_HISTORICO_D20_PARTE_01.pdf",
       "pages": 167,
       "bytes": 8760050,
-      "sha256": "c9fcf78a777af55c6bbb6af67388140be1508cc07334348f44bd7b9679b53e8a"
+      "sha256": "c9fcf78a777af55c6bbb6af67388140be1508cc07334348f44bd7b9679b53e8a",
+      "prior_preparation": {
+        "artifact": "EG745-F08",
+        "filename": "EG745_HISTORICO_D20_PARTE_01.pdf",
+        "pages": 167,
+        "bytes": 8760050,
+        "sha256": "c9fcf78a777af55c6bbb6af67388140be1508cc07334348f44bd7b9679b53e8a"
+      },
+      "receipt_sha512": "8d97d7c8aa2ac251f349164e76eb6e6f77bdb3eef97201f572e7623881e8f8e204b1b68574a0b55371878e3331ea2b94c91fd936b0718adf24c93749623103f3",
+      "registration": "REGAGE26e00082069185",
+      "receipt_hash_match": true
     },
     {
       "artifact": "EG745-F09",
       "filename": "EG745_SUP08_ADJUNTOS_RICPE_AAFC.pdf",
       "pages": 54,
       "bytes": 5461555,
-      "sha256": "911d00e8c0a3bc53fd3e0e05fcf1519ac8e548fa01125fe59e3b8fc769771e88"
+      "sha256": "911d00e8c0a3bc53fd3e0e05fcf1519ac8e548fa01125fe59e3b8fc769771e88",
+      "prior_preparation": {
+        "artifact": "EG745-F09",
+        "filename": "EG745_SUP08_ADJUNTOS_RICPE_AAFC.pdf",
+        "pages": 54,
+        "bytes": 5461555,
+        "sha256": "911d00e8c0a3bc53fd3e0e05fcf1519ac8e548fa01125fe59e3b8fc769771e88"
+      },
+      "receipt_sha512": "ba922f9963156b4178876fc102a2b437673ebd0c1bfca1f043ca1d8016744605aae18c4500da14ad701fc9a4f25b2ad4c06222d3f21e205b8cc48792abd0e5c2",
+      "registration": "REGAGE26e00082069185",
+      "receipt_hash_match": true
     },
     {
       "artifact": "EG745-F10",
       "filename": "EG745_HISTORICO_D20_PARTE_02.pdf",
       "pages": 117,
       "bytes": 8725720,
-      "sha256": "c2e74fb2725d37d759c6d22750fd9d51d8fa1641d88c20781d5a01215cc00881"
+      "sha256": "c2e74fb2725d37d759c6d22750fd9d51d8fa1641d88c20781d5a01215cc00881",
+      "prior_preparation": {
+        "artifact": "EG745-F10",
+        "filename": "EG745_HISTORICO_D20_PARTE_02.pdf",
+        "pages": 117,
+        "bytes": 8725720,
+        "sha256": "c2e74fb2725d37d759c6d22750fd9d51d8fa1641d88c20781d5a01215cc00881"
+      },
+      "receipt_sha512": "ad5465a30df7e939558f79ce199a9ecaecb9fa571c0321f6b4657333cc4c040d5ec4345449033087e7681a73c3de4cd247bb6e79d3c18d019a51346cef04de1a",
+      "registration": "REGAGE26e00082069355",
+      "receipt_hash_match": true
     },
     {
       "artifact": "EG745-F11",
       "filename": "EG745_HISTORICO_D25_D30.pdf",
       "pages": 39,
       "bytes": 3296818,
-      "sha256": "269b7adba374d23c0d5d87a9b829b25d698286f5973157f49e0f9cf3fda93ea9"
+      "sha256": "269b7adba374d23c0d5d87a9b829b25d698286f5973157f49e0f9cf3fda93ea9",
+      "prior_preparation": {
+        "artifact": "EG745-F11",
+        "filename": "EG745_HISTORICO_D25_D30.pdf",
+        "pages": 39,
+        "bytes": 3296818,
+        "sha256": "269b7adba374d23c0d5d87a9b829b25d698286f5973157f49e0f9cf3fda93ea9"
+      },
+      "receipt_sha512": "66ef7327e512c1a7a677a2a69e743d920c6e52257f7d153b68914511da4696ba8aee97690e09fc35781cef9371eb4f54343e005158a52621d25044b9b9e2ac5d",
+      "registration": "REGAGE26e00082069355",
+      "receipt_hash_match": true
     },
     {
       "artifact": "EG745-F12",
       "filename": "EG745_HISTORICO_D29_EXTRACTOS.pdf",
       "pages": 3,
       "bytes": 90735,
-      "sha256": "dc1666a8c530c56a30739d2999f18d3509aed239919b08d21b2c08db5d208c87"
+      "sha256": "dc1666a8c530c56a30739d2999f18d3509aed239919b08d21b2c08db5d208c87",
+      "prior_preparation": {
+        "artifact": "EG745-F12",
+        "filename": "EG745_HISTORICO_D29_EXTRACTOS.pdf",
+        "pages": 3,
+        "bytes": 90735,
+        "sha256": "dc1666a8c530c56a30739d2999f18d3509aed239919b08d21b2c08db5d208c87"
+      },
+      "receipt_sha512": "c7bd59071a73b1e12a9f9bffa13240670823d1b168c2b22b96774251f8b9ba5147b83e78322b669e185f5f20155e7bee605eddb602b6529f053a2b84b9ba517c",
+      "registration": "REGAGE26e00082069355",
+      "receipt_hash_match": true
     },
     {
       "artifact": "EG745-F13",
       "filename": "EG745_ANEXO_CORREOS_INTEGROS_20SEP2026.pdf",
       "pages": 40,
       "bytes": 149185,
-      "sha256": "843dbb8f8a46878abb572bbb0fe567c939d404a20f0648d5df2dc14941e23f51"
+      "sha256": "843dbb8f8a46878abb572bbb0fe567c939d404a20f0648d5df2dc14941e23f51",
+      "prior_preparation": {
+        "artifact": "EG745-F13",
+        "filename": "EG745_ANEXO_CORREOS_INTEGROS_20SEP2026.pdf",
+        "pages": 40,
+        "bytes": 149185,
+        "sha256": "843dbb8f8a46878abb572bbb0fe567c939d404a20f0648d5df2dc14941e23f51"
+      },
+      "receipt_sha512": "1d1fe258e780770683c4de7d357b0e8a677bebc7908b6fa7eae3baf24216d541ba3ad923831c082478a978af82ca1d0eb5eff97f0558031006f96aaff2983d7b",
+      "registration": "REGAGE26e00082069355",
+      "receipt_hash_match": true
     },
     {
       "artifact": "EG745-F14",
       "filename": "EG745_D47D_PRESUPUESTO_ECI.pdf",
       "pages": 4,
       "bytes": 105931,
-      "sha256": "490fd8d76e54e54b7ec2a93854780ddefb51b7eed6b9cbd0f3660449932fc099"
+      "sha256": "490fd8d76e54e54b7ec2a93854780ddefb51b7eed6b9cbd0f3660449932fc099",
+      "prior_preparation": {
+        "artifact": "EG745-F14",
+        "filename": "EG745_D47D_PRESUPUESTO_ECI.pdf",
+        "pages": 4,
+        "bytes": 105931,
+        "sha256": "490fd8d76e54e54b7ec2a93854780ddefb51b7eed6b9cbd0f3660449932fc099"
+      },
+      "receipt_sha512": "a625959845de09280b0cd07f3523d36e383cac3027eff148ec145a6dc1052d2c4517615fb992eeb016ccd473dbf48e7cd4df074ae838e2e8639e7eee38ce4b1f",
+      "registration": "REGAGE26e00082069355",
+      "receipt_hash_match": true
     },
     {
       "artifact": "EG745-F15",
       "filename": "EG745_HISTORICO_D22_PARTE_01.pdf",
       "pages": 46,
       "bytes": 8564025,
-      "sha256": "119e355e835adf5d225141ba9de4c37ce9ebdabcb21145eb3c76ced03bd21310"
+      "sha256": "119e355e835adf5d225141ba9de4c37ce9ebdabcb21145eb3c76ced03bd21310",
+      "prior_preparation": {
+        "artifact": "EG745-F15",
+        "filename": "EG745_HISTORICO_D22_PARTE_01.pdf",
+        "pages": 46,
+        "bytes": 8564025,
+        "sha256": "119e355e835adf5d225141ba9de4c37ce9ebdabcb21145eb3c76ced03bd21310"
+      },
+      "receipt_sha512": "b222442f3ae48e581a5109ec306ef8d21b240f32b668b49fcf595be7d9084c1a89adea1594c318dfd46eb2e338bda5ce263d970df438cc4e99300bdfcab9860a",
+      "registration": "REGAGE26e00082069484",
+      "receipt_hash_match": true
     },
     {
       "artifact": "EG745-F16",
       "filename": "08_EG745_DP1901.pdf",
       "pages": 9,
       "bytes": 3190685,
-      "sha256": "1f4cd4d2febd6340254ec87a19edca447b30db56e1b3c078c631974b76f74990"
+      "sha256": "1f4cd4d2febd6340254ec87a19edca447b30db56e1b3c078c631974b76f74990",
+      "prior_preparation": {
+        "artifact": "EG745-F16",
+        "filename": "08_EG745_DP1901.pdf",
+        "pages": 9,
+        "bytes": 3190685,
+        "sha256": "1f4cd4d2febd6340254ec87a19edca447b30db56e1b3c078c631974b76f74990"
+      },
+      "receipt_sha512": "de28c6a73a4cb21e8e651b2ba7276f56f5261229be382f7fc0fae99ef0e5465be07a4cd5c59434b5d7527307a55d8594b63bf7a49bb8b90829bcd78df95548ae",
+      "registration": "REGAGE26e00082069484",
+      "receipt_hash_match": true
     },
     {
       "artifact": "EG745-F17",
       "filename": "EG745_D3_ORIGINAL_REGISTRADO.pdf",
       "pages": 8,
       "bytes": 181451,
-      "sha256": "4f94669e40a4cd14ca48da32b67edd9b4fa65cea3e3096dcb9f8170dfa901dc4"
+      "sha256": "4f94669e40a4cd14ca48da32b67edd9b4fa65cea3e3096dcb9f8170dfa901dc4",
+      "prior_preparation": {
+        "artifact": "EG745-F17",
+        "filename": "EG745_D3_ORIGINAL_REGISTRADO.pdf",
+        "pages": 8,
+        "bytes": 181451,
+        "sha256": "4f94669e40a4cd14ca48da32b67edd9b4fa65cea3e3096dcb9f8170dfa901dc4"
+      },
+      "receipt_sha512": "352677fed18bd52659b87e68f40ba9793e1844fcc160caca50cab345ddfd06f709afbbbaaa8912458cb067d6df74d309db7c235429302171b51f7ca327bab635",
+      "registration": "REGAGE26e00082069484",
+      "receipt_hash_match": true
     },
     {
       "artifact": "EG745-F18",
       "filename": "EG745_SUP20_FUENTES_PUBLICAS.pdf",
       "pages": 7,
       "bytes": 164035,
-      "sha256": "762660c7674dd5d54735a05c9294a8a6f47a170de4bacd604b196d4eb32e163c"
+      "sha256": "762660c7674dd5d54735a05c9294a8a6f47a170de4bacd604b196d4eb32e163c",
+      "prior_preparation": {
+        "artifact": "EG745-F18",
+        "filename": "EG745_SUP20_FUENTES_PUBLICAS.pdf",
+        "pages": 7,
+        "bytes": 164035,
+        "sha256": "762660c7674dd5d54735a05c9294a8a6f47a170de4bacd604b196d4eb32e163c"
+      },
+      "receipt_sha512": "074ee01e7337d2af36d14b527f6ab2cf07e7844ca12d9f23e1b962aa6cbd6f9d86a7bae6b5524b793ffb4e83ed5502eae625adc175d04187aed838791cea2ac4",
+      "registration": "REGAGE26e00082069484",
+      "receipt_hash_match": true
     },
     {
       "artifact": "EG745-F19",
       "filename": "EG745_ANEXO_FUENTES_DIGITALES_Y_TECNICAS_20SEP2026.pdf",
       "pages": 21,
       "bytes": 94024,
-      "sha256": "90e1f7a0a61541a54dbd137a593e4973de26c2d321d243c67fefd0225a8441dc"
+      "sha256": "90e1f7a0a61541a54dbd137a593e4973de26c2d321d243c67fefd0225a8441dc",
+      "prior_preparation": {
+        "artifact": "EG745-F19",
+        "filename": "EG745_ANEXO_FUENTES_DIGITALES_Y_TECNICAS_20SEP2026.pdf",
+        "pages": 21,
+        "bytes": 94024,
+        "sha256": "90e1f7a0a61541a54dbd137a593e4973de26c2d321d243c67fefd0225a8441dc"
+      },
+      "receipt_sha512": "99e4999527619b112ce4cbe299f224b6e6563001bd17f262ae667e2a20215b0d82136fc0dbad4941a9fb5dc04cdee8c31dadacc9592feb013ffe268c577eae5d",
+      "registration": "REGAGE26e00082069484",
+      "receipt_hash_match": true
     },
     {
       "artifact": "EG745-F20",
       "filename": "EG745_HISTORICO_D22_PARTE_02.pdf",
       "pages": 29,
       "bytes": 8591593,
-      "sha256": "6ecc0b3bd856bdffc83275a530bae556c56ad7f070ec2e5666956dc2be3f5bdf"
+      "sha256": "6ecc0b3bd856bdffc83275a530bae556c56ad7f070ec2e5666956dc2be3f5bdf",
+      "prior_preparation": {
+        "artifact": "EG745-F20",
+        "filename": "EG745_HISTORICO_D22_PARTE_02.pdf",
+        "pages": 29,
+        "bytes": 8591593,
+        "sha256": "6ecc0b3bd856bdffc83275a530bae556c56ad7f070ec2e5666956dc2be3f5bdf"
+      },
+      "receipt_sha512": "ed668b3161a7d1b120cbf5e55beb14e1977d3fb959c09dd4d93fe0cc053932584ac24250f66e719ab309abf31a6376ac751a788e6fc559d33215d6fe4ed40fb6",
+      "registration": "REGAGE26e00082069581",
+      "receipt_hash_match": true
     },
     {
       "artifact": "EG745-F21",
       "filename": "EG745_HISTORICO_D22_PARTE_03.pdf",
       "pages": 4,
       "bytes": 1038091,
-      "sha256": "48c1d48ff5ae1e1f0a794fcb7bc6dff91d70014dea8ee02da7f1a8b61c74e288"
+      "sha256": "48c1d48ff5ae1e1f0a794fcb7bc6dff91d70014dea8ee02da7f1a8b61c74e288",
+      "prior_preparation": {
+        "artifact": "EG745-F21",
+        "filename": "EG745_HISTORICO_D22_PARTE_03.pdf",
+        "pages": 4,
+        "bytes": 1038091,
+        "sha256": "48c1d48ff5ae1e1f0a794fcb7bc6dff91d70014dea8ee02da7f1a8b61c74e288"
+      },
+      "receipt_sha512": "eaf33d9cc09c5bc31387c0c1ffe9b5eb473f51a69ce080af5d3d5273c5498c353bc21086851245c916367710bf8e4fc9ee8f8afbd83223599633758eca2c9946",
+      "registration": "REGAGE26e00082069581",
+      "receipt_hash_match": true
     },
     {
       "artifact": "EG745-F22",
       "filename": "EG745_RESOLUCIONES_CONTRASTE_SUP21B_23.pdf",
       "pages": 31,
       "bytes": 446855,
-      "sha256": "0e4ab98613e85cf1948e181206df7a555da43c09ab305c5c4822f67e46b0395e"
+      "sha256": "0e4ab98613e85cf1948e181206df7a555da43c09ab305c5c4822f67e46b0395e",
+      "prior_preparation": {
+        "artifact": "EG745-F22",
+        "filename": "EG745_RESOLUCIONES_CONTRASTE_SUP21B_23.pdf",
+        "pages": 31,
+        "bytes": 446855,
+        "sha256": "0e4ab98613e85cf1948e181206df7a555da43c09ab305c5c4822f67e46b0395e"
+      },
+      "receipt_sha512": "2fdb0379cadadeec4273ada744d03b3e5fed7a7e4bee621caf03a8b35fc90833155dc2292bbd3b00de154eb788da26c6e293001b17e50a2bfe28e175d0bee3bf",
+      "registration": "REGAGE26e00082069581",
+      "receipt_hash_match": true
     },
     {
       "artifact": "EG745-F23",
       "filename": "EG745_SUP20_GESVALT_COMPLETA.pdf",
       "pages": 127,
       "bytes": 8145125,
-      "sha256": "6d7719d5bf90052113574dd231bb967e310e3c9021dca7e7773bc028f30b4ee4"
+      "sha256": "6d7719d5bf90052113574dd231bb967e310e3c9021dca7e7773bc028f30b4ee4",
+      "prior_preparation": {
+        "artifact": "EG745-F23",
+        "filename": "EG745_SUP20_GESVALT_COMPLETA.pdf",
+        "pages": 127,
+        "bytes": 8145125,
+        "sha256": "6d7719d5bf90052113574dd231bb967e310e3c9021dca7e7773bc028f30b4ee4"
+      },
+      "receipt_sha512": "32ce60f7b7a2309f3202f56c4b7d46715b06702de77aeb142a7d80bc008164b263dcc22dfc9e551442e88515e9033c0e90507a1fa5aa166038e537c20aca2fa5",
+      "registration": "REGAGE26e00082069631",
+      "receipt_hash_match": true
     },
     {
       "artifact": "EG745-F24",
       "filename": "09_EG745_TRAZABILIDAD.pdf",
       "pages": 138,
       "bytes": 7791897,
-      "sha256": "2a17431bb8147e54a26c8a710ca6950fab8e0b571b3084f427eaecc71b60c777"
+      "sha256": "2a17431bb8147e54a26c8a710ca6950fab8e0b571b3084f427eaecc71b60c777",
+      "prior_preparation": {
+        "artifact": "EG745-F24",
+        "filename": "09_EG745_TRAZABILIDAD.pdf",
+        "pages": 138,
+        "bytes": 7791897,
+        "sha256": "2a17431bb8147e54a26c8a710ca6950fab8e0b571b3084f427eaecc71b60c777"
+      },
+      "receipt_sha512": "af7e9ed0ad2a989f1e7ce60d6322a2648c44d2ebd0f6a28d8033d7a70fc036162bc6d6682c3ef74985f620a2a442002c2d3aa057b973f417d5dd28645247d0fd",
+      "registration": "REGAGE26e00082069746",
+      "receipt_hash_match": true
     },
     {
       "artifact": "EG745-F25",
       "filename": "EG745_HISTORICO_D16_DECLARACION_AC.pdf",
       "pages": 12,
       "bytes": 6108115,
-      "sha256": "55dc0a73f0eb62b2659bca445092044ceefab02c61379a2de79f7a8365664ed1"
+      "sha256": "55dc0a73f0eb62b2659bca445092044ceefab02c61379a2de79f7a8365664ed1",
+      "prior_preparation": {
+        "artifact": "EG745-F25",
+        "filename": "EG745_HISTORICO_D16_DECLARACION_AC.pdf",
+        "pages": 12,
+        "bytes": 6108115,
+        "sha256": "55dc0a73f0eb62b2659bca445092044ceefab02c61379a2de79f7a8365664ed1"
+      },
+      "receipt_sha512": "3c8a11305c3442b6cd96ddedf215207b97429e3231d54b78fca8a5da9423502a2592222ee79ec9535ead15701c07a91b9ecaaed135bcf347a67dde58f6da3828",
+      "registration": "REGAGE26e00082069746",
+      "receipt_hash_match": true
     },
     {
       "artifact": "EG745-F26",
       "filename": "EG745_HISTORICO_D10_D19_D21_D23_D24.pdf",
       "pages": 125,
       "bytes": 7659415,
-      "sha256": "0b79002c5365763cf0028b8c613748eda3a92fddf41fbb07064a0c95f44190ed"
+      "sha256": "0b79002c5365763cf0028b8c613748eda3a92fddf41fbb07064a0c95f44190ed",
+      "prior_preparation": {
+        "artifact": "EG745-F26",
+        "filename": "EG745_HISTORICO_D10_D19_D21_D23_D24.pdf",
+        "pages": 125,
+        "bytes": 7659415,
+        "sha256": "0b79002c5365763cf0028b8c613748eda3a92fddf41fbb07064a0c95f44190ed"
+      },
+      "receipt_sha512": "5a07a0e70e4a1a528aa3590bc8f564e0f64b9f6209eca938b2f0517c9b61e0bb63b77fda236b2bc0714c3fe52a1bfeb12597fef46b5bb4b3af349eda1dc89fc7",
+      "registration": "REGAGE26e00082069917",
+      "receipt_hash_match": true
     },
     {
       "artifact": "EG745-F27",
       "filename": "EG745_SUP08_WEBINAR_RICPE.pdf",
       "pages": 49,
       "bytes": 7475436,
-      "sha256": "d83746beb978412fb865b6e4bb09b02f01868139a4d2499011bf41828eac1144"
+      "sha256": "d83746beb978412fb865b6e4bb09b02f01868139a4d2499011bf41828eac1144",
+      "prior_preparation": {
+        "artifact": "EG745-F27",
+        "filename": "EG745_SUP08_WEBINAR_RICPE.pdf",
+        "pages": 49,
+        "bytes": 7475436,
+        "sha256": "d83746beb978412fb865b6e4bb09b02f01868139a4d2499011bf41828eac1144"
+      },
+      "receipt_sha512": "20cc5f637a051e00979da6b977d1056c73ea8d3ba3c0363bac6f2625486ad424cdd70978b41a324632613ab2ba3e4ba5b36b99a35b8a1c20123145b10c7d62c4",
+      "registration": "REGAGE26e00082070021",
+      "receipt_hash_match": true
     }
   ],
   "schema": "por-derecho.eg745-final-delivery-control.v1",
@@ -205,13 +477,461 @@
     "explicit_successes": 83,
     "scope": "The 83 frozen final artifacts in the private delivery save-result were saved successfully. No private provider identifiers or source locators are published."
   },
-  "proof_limit": "Prepared and saved is not signed, filed, admitted or examined. The ten registration groups are a proposed filing sequence, not ten completed registration events. The 1270 page instances include overlaps and repeated sources.",
-  "prior_lost_draft": "The earlier 15050-word draft was not durably recovered. The current 12429-word, 18-page principal is a newly reconstructed and reviewed successor, identified by its own hash.",
+  "proof_limit": "Ten official receipts establish presentation/registration and all 27 matching attachment fingerprints. Admission, onward routing, incorporation, examination, preservation and merits acceptance remain unverified. The 1,272 page instances include overlapping sources.",
+  "prior_lost_draft": "The historical lost draft remains unrecovered. The 20-page principal dated 21 September is the revised reconstructed successor. The registered/downloaded principal and index carry additional PDF metadata; their exact registered fingerprints are retained separately from the preparation bytes.",
   "sequence": [
-    "13-of-13 personal-action registration reconciliation",
-    "Substantive E.G.745/2026 response",
-    "New substantive communication to Presidencia",
-    "Lawyers update and next steps"
+    "DP1901: 13 of 13 personal actions registered, fourteen registration events",
+    "E.G.745: substantive response and nine linked annex deliveries registered",
+    "New substantive Presidencia communication remains next",
+    "Consolidated lawyers package and update remain subsequent"
   ],
-  "source_and_illustration_limits": "The network/perimeter theory and illicit-origin thesis are attributed allegations requiring individual conduct, financial tracing and certified records. Neither common affiliation, professional engagement, photographs nor registration proves guilt or coordination."
+  "source_and_illustration_limits": "The network/perimeter theory and illicit-origin thesis are attributed allegations requiring individual conduct, financial tracing and certified records. Neither common affiliation, professional engagement, photographs nor registration proves guilt or coordination.",
+  "control_date": "2026-09-21",
+  "principal_pages": 20,
+  "registered_delivery_count": 10,
+  "principal_registration": "REGAGE26e00082068814",
+  "final_registration": "REGAGE26e00082070021",
+  "assistant_filed_or_emailed": false,
+  "prior_preparation_snapshot": {
+    "status": "PREPARED_UNSIGNED_NOT_FILED",
+    "pdf_count": 27,
+    "page_instances": 1270,
+    "bytes": 112931303,
+    "registrations": 10,
+    "illustrations": 22,
+    "principal_words": 12429,
+    "source_recovery": "85 successful ordered source-preservation writes, including four version-guarded replacements; counts describe write operations, not unique originals.",
+    "no_external_filing_or_email": true,
+    "artifacts": [
+      {
+        "artifact": "EG745-F01",
+        "filename": "01_EG745_RECURSO_REPOSICION.pdf",
+        "pages": 18,
+        "bytes": 224771,
+        "sha256": "aafe6c05c3191658dfb749ae0172feb87c096fecfd221b2dc5cc212dea45596a"
+      },
+      {
+        "artifact": "EG745-F02",
+        "filename": "03_EG745_INDICE_APORTACION.pdf",
+        "pages": 6,
+        "bytes": 61711,
+        "sha256": "7d26396fdb9a21b7c0b3d3a8f20ee3cac4edcc9254a5b435410fb30cd0d93417"
+      },
+      {
+        "artifact": "EG745-F03",
+        "filename": "02_EG745_ANEXO_ANALITICO.pdf",
+        "pages": 28,
+        "bytes": 701362,
+        "sha256": "5f800cd7b2e344ca5a9d17f2bb4aba39f73f8b3034c2e87b3308ad2be1470510"
+      },
+      {
+        "artifact": "EG745-F04",
+        "filename": "EG745_DOCUMENTOS_NUCLEO_D1_D7_SUP01_05.pdf",
+        "pages": 44,
+        "bytes": 2968107,
+        "sha256": "aac46664f3028d0c1b1494ddb356cec90e2978941cd72309702398c9aabc01e4"
+      },
+      {
+        "artifact": "EG745-F05",
+        "filename": "06_EG745_VISUALES_1.pdf",
+        "pages": 5,
+        "bytes": 9355099,
+        "sha256": "f37a803f06eaa1f6e04f597f3bb4c1e91b23f2a94b008b5496d59ac4631bdd8d"
+      },
+      {
+        "artifact": "EG745-F06",
+        "filename": "07_EG745_VISUALES_2.pdf",
+        "pages": 19,
+        "bytes": 9314342,
+        "sha256": "ded8887dd51561af9a11483c48207da5a9d1d1e5dada2055f6d647f4dc08b73b"
+      },
+      {
+        "artifact": "EG745-F07",
+        "filename": "EG745_DOCUMENTOS_PROFESIONALES_SUP13B_19.pdf",
+        "pages": 120,
+        "bytes": 4265170,
+        "sha256": "f77b68ea4a09051ee95a372f3dc11bdd7a915926374139d110c6867745ff6273"
+      },
+      {
+        "artifact": "EG745-F08",
+        "filename": "EG745_HISTORICO_D20_PARTE_01.pdf",
+        "pages": 167,
+        "bytes": 8760050,
+        "sha256": "c9fcf78a777af55c6bbb6af67388140be1508cc07334348f44bd7b9679b53e8a"
+      },
+      {
+        "artifact": "EG745-F09",
+        "filename": "EG745_SUP08_ADJUNTOS_RICPE_AAFC.pdf",
+        "pages": 54,
+        "bytes": 5461555,
+        "sha256": "911d00e8c0a3bc53fd3e0e05fcf1519ac8e548fa01125fe59e3b8fc769771e88"
+      },
+      {
+        "artifact": "EG745-F10",
+        "filename": "EG745_HISTORICO_D20_PARTE_02.pdf",
+        "pages": 117,
+        "bytes": 8725720,
+        "sha256": "c2e74fb2725d37d759c6d22750fd9d51d8fa1641d88c20781d5a01215cc00881"
+      },
+      {
+        "artifact": "EG745-F11",
+        "filename": "EG745_HISTORICO_D25_D30.pdf",
+        "pages": 39,
+        "bytes": 3296818,
+        "sha256": "269b7adba374d23c0d5d87a9b829b25d698286f5973157f49e0f9cf3fda93ea9"
+      },
+      {
+        "artifact": "EG745-F12",
+        "filename": "EG745_HISTORICO_D29_EXTRACTOS.pdf",
+        "pages": 3,
+        "bytes": 90735,
+        "sha256": "dc1666a8c530c56a30739d2999f18d3509aed239919b08d21b2c08db5d208c87"
+      },
+      {
+        "artifact": "EG745-F13",
+        "filename": "EG745_ANEXO_CORREOS_INTEGROS_20SEP2026.pdf",
+        "pages": 40,
+        "bytes": 149185,
+        "sha256": "843dbb8f8a46878abb572bbb0fe567c939d404a20f0648d5df2dc14941e23f51"
+      },
+      {
+        "artifact": "EG745-F14",
+        "filename": "EG745_D47D_PRESUPUESTO_ECI.pdf",
+        "pages": 4,
+        "bytes": 105931,
+        "sha256": "490fd8d76e54e54b7ec2a93854780ddefb51b7eed6b9cbd0f3660449932fc099"
+      },
+      {
+        "artifact": "EG745-F15",
+        "filename": "EG745_HISTORICO_D22_PARTE_01.pdf",
+        "pages": 46,
+        "bytes": 8564025,
+        "sha256": "119e355e835adf5d225141ba9de4c37ce9ebdabcb21145eb3c76ced03bd21310"
+      },
+      {
+        "artifact": "EG745-F16",
+        "filename": "08_EG745_DP1901.pdf",
+        "pages": 9,
+        "bytes": 3190685,
+        "sha256": "1f4cd4d2febd6340254ec87a19edca447b30db56e1b3c078c631974b76f74990"
+      },
+      {
+        "artifact": "EG745-F17",
+        "filename": "EG745_D3_ORIGINAL_REGISTRADO.pdf",
+        "pages": 8,
+        "bytes": 181451,
+        "sha256": "4f94669e40a4cd14ca48da32b67edd9b4fa65cea3e3096dcb9f8170dfa901dc4"
+      },
+      {
+        "artifact": "EG745-F18",
+        "filename": "EG745_SUP20_FUENTES_PUBLICAS.pdf",
+        "pages": 7,
+        "bytes": 164035,
+        "sha256": "762660c7674dd5d54735a05c9294a8a6f47a170de4bacd604b196d4eb32e163c"
+      },
+      {
+        "artifact": "EG745-F19",
+        "filename": "EG745_ANEXO_FUENTES_DIGITALES_Y_TECNICAS_20SEP2026.pdf",
+        "pages": 21,
+        "bytes": 94024,
+        "sha256": "90e1f7a0a61541a54dbd137a593e4973de26c2d321d243c67fefd0225a8441dc"
+      },
+      {
+        "artifact": "EG745-F20",
+        "filename": "EG745_HISTORICO_D22_PARTE_02.pdf",
+        "pages": 29,
+        "bytes": 8591593,
+        "sha256": "6ecc0b3bd856bdffc83275a530bae556c56ad7f070ec2e5666956dc2be3f5bdf"
+      },
+      {
+        "artifact": "EG745-F21",
+        "filename": "EG745_HISTORICO_D22_PARTE_03.pdf",
+        "pages": 4,
+        "bytes": 1038091,
+        "sha256": "48c1d48ff5ae1e1f0a794fcb7bc6dff91d70014dea8ee02da7f1a8b61c74e288"
+      },
+      {
+        "artifact": "EG745-F22",
+        "filename": "EG745_RESOLUCIONES_CONTRASTE_SUP21B_23.pdf",
+        "pages": 31,
+        "bytes": 446855,
+        "sha256": "0e4ab98613e85cf1948e181206df7a555da43c09ab305c5c4822f67e46b0395e"
+      },
+      {
+        "artifact": "EG745-F23",
+        "filename": "EG745_SUP20_GESVALT_COMPLETA.pdf",
+        "pages": 127,
+        "bytes": 8145125,
+        "sha256": "6d7719d5bf90052113574dd231bb967e310e3c9021dca7e7773bc028f30b4ee4"
+      },
+      {
+        "artifact": "EG745-F24",
+        "filename": "09_EG745_TRAZABILIDAD.pdf",
+        "pages": 138,
+        "bytes": 7791897,
+        "sha256": "2a17431bb8147e54a26c8a710ca6950fab8e0b571b3084f427eaecc71b60c777"
+      },
+      {
+        "artifact": "EG745-F25",
+        "filename": "EG745_HISTORICO_D16_DECLARACION_AC.pdf",
+        "pages": 12,
+        "bytes": 6108115,
+        "sha256": "55dc0a73f0eb62b2659bca445092044ceefab02c61379a2de79f7a8365664ed1"
+      },
+      {
+        "artifact": "EG745-F26",
+        "filename": "EG745_HISTORICO_D10_D19_D21_D23_D24.pdf",
+        "pages": 125,
+        "bytes": 7659415,
+        "sha256": "0b79002c5365763cf0028b8c613748eda3a92fddf41fbb07064a0c95f44190ed"
+      },
+      {
+        "artifact": "EG745-F27",
+        "filename": "EG745_SUP08_WEBINAR_RICPE.pdf",
+        "pages": 49,
+        "bytes": 7475436,
+        "sha256": "d83746beb978412fb865b6e4bb09b02f01868139a4d2499011bf41828eac1144"
+      }
+    ],
+    "schema": "por-derecho.eg745-final-delivery-control.v1",
+    "final_persistence": {
+      "write_operations": 83,
+      "explicit_successes": 83,
+      "scope": "The 83 frozen final artifacts in the private delivery save-result were saved successfully. No private provider identifiers or source locators are published."
+    },
+    "proof_limit": "Prepared and saved is not signed, filed, admitted or examined. The ten registration groups are a proposed filing sequence, not ten completed registration events. The 1270 page instances include overlaps and repeated sources.",
+    "prior_lost_draft": "The earlier 15050-word draft was not durably recovered. The current 12429-word, 18-page principal is a newly reconstructed and reviewed successor, identified by its own hash.",
+    "sequence": [
+      "13-of-13 personal-action registration reconciliation",
+      "Substantive E.G.745/2026 response",
+      "New substantive communication to Presidencia",
+      "Lawyers update and next steps"
+    ],
+    "source_and_illustration_limits": "The network/perimeter theory and illicit-origin thesis are attributed allegations requiring individual conduct, financial tracing and certified records. Neither common affiliation, professional engagement, photographs nor registration proves guilt or coordination."
+  },
+  "receipt_records": [
+    {
+      "delivery": 1,
+      "registration": "REGAGE26e00082068814",
+      "path": "evidence/preservation/eg745-redsara-revision-20260921/receipts/REGAGE26e00082068814.json",
+      "canonical_event_id": "PD-SP-EVT-0203"
+    },
+    {
+      "delivery": 2,
+      "registration": "REGAGE26e00082069039",
+      "path": "evidence/preservation/eg745-redsara-revision-20260921/receipts/REGAGE26e00082069039.json",
+      "canonical_event_id": "PD-SP-EVT-0204"
+    },
+    {
+      "delivery": 3,
+      "registration": "REGAGE26e00082069185",
+      "path": "evidence/preservation/eg745-redsara-revision-20260921/receipts/REGAGE26e00082069185.json",
+      "canonical_event_id": "PD-SP-EVT-0205"
+    },
+    {
+      "delivery": 4,
+      "registration": "REGAGE26e00082069355",
+      "path": "evidence/preservation/eg745-redsara-revision-20260921/receipts/REGAGE26e00082069355.json",
+      "canonical_event_id": "PD-SP-EVT-0206"
+    },
+    {
+      "delivery": 5,
+      "registration": "REGAGE26e00082069484",
+      "path": "evidence/preservation/eg745-redsara-revision-20260921/receipts/REGAGE26e00082069484.json",
+      "canonical_event_id": "PD-SP-EVT-0207"
+    },
+    {
+      "delivery": 6,
+      "registration": "REGAGE26e00082069581",
+      "path": "evidence/preservation/eg745-redsara-revision-20260921/receipts/REGAGE26e00082069581.json",
+      "canonical_event_id": "PD-SP-EVT-0208"
+    },
+    {
+      "delivery": 7,
+      "registration": "REGAGE26e00082069631",
+      "path": "evidence/preservation/eg745-redsara-revision-20260921/receipts/REGAGE26e00082069631.json",
+      "canonical_event_id": "PD-SP-EVT-0209"
+    },
+    {
+      "delivery": 8,
+      "registration": "REGAGE26e00082069746",
+      "path": "evidence/preservation/eg745-redsara-revision-20260921/receipts/REGAGE26e00082069746.json",
+      "canonical_event_id": "PD-SP-EVT-0210"
+    },
+    {
+      "delivery": 9,
+      "registration": "REGAGE26e00082069917",
+      "path": "evidence/preservation/eg745-redsara-revision-20260921/receipts/REGAGE26e00082069917.json",
+      "canonical_event_id": "PD-SP-EVT-0211"
+    },
+    {
+      "delivery": 10,
+      "registration": "REGAGE26e00082070021",
+      "path": "evidence/preservation/eg745-redsara-revision-20260921/receipts/REGAGE26e00082070021.json",
+      "canonical_event_id": "PD-SP-EVT-0212"
+    }
+  ],
+  "complete_delivery_reconciliation": {
+    "status": "ALL_10_LINKED_DELIVERIES_REGISTERED_AND_RECEIPTS_VERIFIED",
+    "principal_registration": "REGAGE26e00082068814",
+    "final_registration": "REGAGE26e00082070021",
+    "recipient_dir3": "J00003992",
+    "recipient": "Fiscalía General del Estado",
+    "attention": "Inspección Fiscal; E.G.745/2026 — IF/MCS",
+    "registered_delivery_count": 10,
+    "registered_distinct_pdf_count": 27,
+    "registered_pdf_pages": 1272,
+    "registered_pdf_bytes": 112992926,
+    "illustration_count": 22,
+    "all_illustrations_registered_in_deliveries_1_and_2": true,
+    "all_attachment_fingerprints_verified": true,
+    "all_annex_deliveries_link_principal": true,
+    "missing_attachments": [],
+    "duplicate_attachments": [],
+    "remaining_delivery_numbers": [],
+    "registrations": [
+      {
+        "submission": 1,
+        "registration": "REGAGE26e00082068814",
+        "presentation_datetime_literal": "21/09/2026 01:54:19",
+        "registration_datetime_literal": "21/09/2026 01:54:23",
+        "attachment_count": 5,
+        "attachment_names": [
+          "06_EG745_VISUALES_1.pdf",
+          "01_EG745_RECURSO_REPOSICION.pdf",
+          "02_EG745_ANEXO_ANALITICO.pdf",
+          "03_EG745_INDICE_APORTACION.pdf",
+          "EG745_DOCUMENTOS_NUCLEO_D1_D7_SUP01_05.pdf"
+        ],
+        "pages": 103,
+        "all_attachment_fingerprints_verified": true
+      },
+      {
+        "submission": 2,
+        "registration": "REGAGE26e00082069039",
+        "presentation_datetime_literal": "21/09/2026 02:06:04",
+        "registration_datetime_literal": "21/09/2026 02:06:09",
+        "attachment_count": 2,
+        "attachment_names": [
+          "EG745_DOCUMENTOS_PROFESIONALES_SUP13B_19.pdf",
+          "07_EG745_VISUALES_2.pdf"
+        ],
+        "pages": 139,
+        "all_attachment_fingerprints_verified": true
+      },
+      {
+        "submission": 3,
+        "registration": "REGAGE26e00082069185",
+        "presentation_datetime_literal": "21/09/2026 02:14:20",
+        "registration_datetime_literal": "21/09/2026 02:14:24",
+        "attachment_count": 2,
+        "attachment_names": [
+          "EG745_HISTORICO_D20_PARTE_01.pdf",
+          "EG745_SUP08_ADJUNTOS_RICPE_AAFC.pdf"
+        ],
+        "pages": 221,
+        "all_attachment_fingerprints_verified": true
+      },
+      {
+        "submission": 4,
+        "registration": "REGAGE26e00082069355",
+        "presentation_datetime_literal": "21/09/2026 02:29:13",
+        "registration_datetime_literal": "21/09/2026 02:29:20",
+        "attachment_count": 5,
+        "attachment_names": [
+          "EG745_HISTORICO_D20_PARTE_02.pdf",
+          "EG745_HISTORICO_D25_D30.pdf",
+          "EG745_HISTORICO_D29_EXTRACTOS.pdf",
+          "EG745_ANEXO_CORREOS_INTEGROS_20SEP2026.pdf",
+          "EG745_D47D_PRESUPUESTO_ECI.pdf"
+        ],
+        "pages": 203,
+        "all_attachment_fingerprints_verified": true
+      },
+      {
+        "submission": 5,
+        "registration": "REGAGE26e00082069484",
+        "presentation_datetime_literal": "21/09/2026 02:40:37",
+        "registration_datetime_literal": "21/09/2026 02:40:48",
+        "attachment_count": 5,
+        "attachment_names": [
+          "EG745_HISTORICO_D22_PARTE_01.pdf",
+          "08_EG745_DP1901.pdf",
+          "EG745_D3_ORIGINAL_REGISTRADO.pdf",
+          "EG745_SUP20_FUENTES_PUBLICAS.pdf",
+          "EG745_ANEXO_FUENTES_DIGITALES_Y_TECNICAS_20SEP2026.pdf"
+        ],
+        "pages": 91,
+        "all_attachment_fingerprints_verified": true
+      },
+      {
+        "submission": 6,
+        "registration": "REGAGE26e00082069581",
+        "presentation_datetime_literal": "21/09/2026 02:49:34",
+        "registration_datetime_literal": "21/09/2026 02:49:39",
+        "attachment_count": 3,
+        "attachment_names": [
+          "EG745_HISTORICO_D22_PARTE_02.pdf",
+          "EG745_HISTORICO_D22_PARTE_03.pdf",
+          "EG745_RESOLUCIONES_CONTRASTE_SUP21B_23.pdf"
+        ],
+        "pages": 64,
+        "all_attachment_fingerprints_verified": true
+      },
+      {
+        "submission": 7,
+        "registration": "REGAGE26e00082069631",
+        "presentation_datetime_literal": "21/09/2026 02:55:43",
+        "registration_datetime_literal": "21/09/2026 02:55:47",
+        "attachment_count": 1,
+        "attachment_names": [
+          "EG745_SUP20_GESVALT_COMPLETA.pdf"
+        ],
+        "pages": 127,
+        "all_attachment_fingerprints_verified": true
+      },
+      {
+        "submission": 8,
+        "registration": "REGAGE26e00082069746",
+        "presentation_datetime_literal": "21/09/2026 03:03:37",
+        "registration_datetime_literal": "21/09/2026 03:03:42",
+        "attachment_count": 2,
+        "attachment_names": [
+          "09_EG745_TRAZABILIDAD.pdf",
+          "EG745_HISTORICO_D16_DECLARACION_AC.pdf"
+        ],
+        "pages": 150,
+        "all_attachment_fingerprints_verified": true
+      },
+      {
+        "submission": 9,
+        "registration": "REGAGE26e00082069917",
+        "presentation_datetime_literal": "21/09/2026 03:10:04",
+        "registration_datetime_literal": "21/09/2026 03:10:09",
+        "attachment_count": 1,
+        "attachment_names": [
+          "EG745_HISTORICO_D10_D19_D21_D23_D24.pdf"
+        ],
+        "pages": 125,
+        "all_attachment_fingerprints_verified": true
+      },
+      {
+        "submission": 10,
+        "registration": "REGAGE26e00082070021",
+        "presentation_datetime_literal": "21/09/2026 03:17:11",
+        "registration_datetime_literal": "21/09/2026 03:17:18",
+        "attachment_count": 1,
+        "attachment_names": [
+          "EG745_SUP08_WEBINAR_RICPE.pdf"
+        ],
+        "pages": 49,
+        "all_attachment_fingerprints_verified": true
+      }
+    ],
+    "receipt_total_pages": 21,
+    "admission_incorporation_or_substantive_examination_proved": false,
+    "next_programme_stage": "NEW_SUBSTANTIVE_PRESIDENCIA_COMMUNICATION",
+    "lawyers_package": "After substantive Presidencia; no lawyers email sent by this closeout",
+    "github_main_integration": "Pending held controller; verified public-safe records preserved on worker branch"
+  }
 }

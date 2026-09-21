@@ -5,7 +5,7 @@
   "status": "PUBLIC_SAFE_DERIVED_INTERCONNECTIVITY_PROJECTION",
   "canonical_sources": {
     "communications_register": "assets/data/institutional-communications-register-v1.json",
-    "communications_sha256": "4f1eb857497a9449b172be368edf8bdce59a869ca7725e23e47b1f8c86ce7798",
+    "communications_sha256": "236e3336b35df04525c5cc4e5abc4a3fa969f44ebca1f1323797ae3b7b86260a",
     "proceedings_master": "archive/PROCEEDINGS_MASTER_REGISTER.csv",
     "proceedings_master_sha256": "587b419d1a62a01fba85bfe2656ab1ea67be8b580fa34ddb002d935fc9e98296",
     "public_proceedings_projection": "assets/data/proceedings-master-public-v1.json",
@@ -17,28 +17,28 @@
     "es": "Un enlace registra únicamente la proposición indicada por su tipo de relación y fuentes citadas. Registro no equivale a entrega más allá del justificante, recepción no equivale a examen, cronología no equivale a causalidad y posesión institucional no equivale a conocimiento personal, acuerdo, intención, ilicitud o responsabilidad."
   },
   "coverage": {
-    "communication_events": 296,
-    "matter_linked_events": 117,
-    "proceeding_linked_events": 112,
+    "communication_events": 320,
+    "matter_linked_events": 141,
+    "proceeding_linked_events": 136,
     "support_reference_only_events": 2,
-    "event_proceeding_edges": 139,
+    "event_proceeding_edges": 164,
     "event_event_edges": 84,
     "fiscalia_exact_files": 23,
     "fiscalia_unresolved_references": 3,
     "fiscalia_identity_total": 26,
     "allocation_counts": {
       "DRAFT": 3,
-      "PROCEEDING_LINKED": 107,
+      "PROCEEDING_LINKED": 131,
       "SELF_ARCHIVE": 10,
       "SUPPORT_REFERENCE_ONLY": 2,
       "UNALLOCATED_FORMAL_REGISTRATION": 75,
       "UNALLOCATED_TRANSPORT": 99
     },
     "scope_counts": {
-      "CROSS_FILE_BRIDGE": 4,
-      "INSIDE_JUDICIAL_PROCEEDING": 10,
+      "CROSS_FILE_BRIDGE": 5,
+      "INSIDE_JUDICIAL_PROCEEDING": 23,
       "NO_PROCEEDING_LINK": 179,
-      "OUTSIDE_JUDICIAL_PROCEEDING": 98,
+      "OUTSIDE_JUDICIAL_PROCEEDING": 108,
       "SUPPORT_REFERENCE_ONLY": 5
     },
     "unresolved_matter_reference_literals": []
@@ -4364,6 +4364,931 @@
       ],
       "supporting_references": [
         "REGAGE26e00070237051"
+      ],
+      "unresolved_matter_references": []
+    },
+    {
+      "event_id": "PD-SP-EVT-0181",
+      "event_date": "2026-09-20",
+      "direction": "OUTBOUND_TO_INSTITUTION",
+      "record_type": "REGISTRATION_RECEIPT",
+      "channel": "REGAGE",
+      "layer": "FORMAL_REGISTRATION",
+      "office": "Decanato / Registro y Reparto via DGRAJ",
+      "official_reference": "REGAGE26e00082034813",
+      "matter_references": [
+        "DP 1901/2026",
+        "A01"
+      ],
+      "public_summary": "Registered REGAGE26e00082034813: Onward routing to Decanato / Registro y Reparto for initiating-document, reparto and association traceability.",
+      "proof_level": "REGISTRATION_RECEIPT_VERIFIED",
+      "proves": [
+        "Registered REGAGE26e00082034813: Onward routing to Decanato / Registro y Reparto for initiating-document, reparto and association traceability.",
+        "The receipt records presentation to the stated registry destination."
+      ],
+      "does_not_prove": [
+        "Receipt proves registration to the stated recipient; onward delivery, association and institutional action remain unproved.",
+        "Registration does not establish downstream delivery, admission, incorporation, substantive examination, criminal responsibility or the merits of allegations."
+      ],
+      "source": {
+        "repository_anchor": "assets/data/dp1901-direct-action-state-20260920.json",
+        "status": "RECEIPT_VERIFIED_PUBLIC_SAFE_DERIVATIVE"
+      },
+      "allocation_state": "PROCEEDING_LINKED",
+      "interconnectivity_scope": "INSIDE_JUDICIAL_PROCEEDING",
+      "master_ids": [
+        "GC-CRI-008"
+      ],
+      "supporting_references": [
+        "A01"
+      ],
+      "unresolved_matter_references": []
+    },
+    {
+      "event_id": "PD-SP-EVT-0182",
+      "event_date": "2026-09-20",
+      "direction": "OUTBOUND_TO_INSTITUTION",
+      "record_type": "REGISTRATION_RECEIPT",
+      "channel": "CANARY_JUDICIAL_PORTAL",
+      "layer": "FORMAL_REGISTRATION",
+      "office": "Plaza 6 / DP 1901/2026",
+      "official_reference": "S000000000000144968",
+      "matter_references": [
+        "DP 1901/2026",
+        "A02"
+      ],
+      "public_summary": "Registered S000000000000144968: Access and production request for docket/index, corpus, signed Fiscal report, native order and service metadata.",
+      "proof_level": "REGISTRATION_RECEIPT_VERIFIED",
+      "proves": [
+        "Registered S000000000000144968: Access and production request for docket/index, corpus, signed Fiscal report, native order and service metadata.",
+        "The receipt records presentation to the stated registry destination."
+      ],
+      "does_not_prove": [
+        "Principal receipt proves a four-page principal filing. The planned annexes were not listed there. A separate supplemental receipt records an eleven-page combined annex PDF, but supplies no document hash; byte identity is therefore not proved by that receipt.",
+        "Registration does not establish downstream delivery, admission, incorporation, substantive examination, criminal responsibility or the merits of allegations."
+      ],
+      "source": {
+        "repository_anchor": "assets/data/dp1901-direct-action-state-20260920.json",
+        "status": "RECEIPT_VERIFIED_PUBLIC_SAFE_DERIVATIVE"
+      },
+      "allocation_state": "PROCEEDING_LINKED",
+      "interconnectivity_scope": "INSIDE_JUDICIAL_PROCEEDING",
+      "master_ids": [
+        "GC-CRI-008"
+      ],
+      "supporting_references": [
+        "A02"
+      ],
+      "unresolved_matter_references": []
+    },
+    {
+      "event_id": "PD-SP-EVT-0183",
+      "event_date": "2026-09-20",
+      "direction": "OUTBOUND_TO_INSTITUTION",
+      "record_type": "REGISTRATION_RECEIPT",
+      "channel": "CANARY_JUDICIAL_PORTAL",
+      "layer": "FORMAL_REGISTRATION",
+      "office": "Plaza 6 / DP 1901/2026",
+      "official_reference": "S000000000000144972",
+      "matter_references": [
+        "DP 1901/2026",
+        "A02"
+      ],
+      "public_summary": "Registered S000000000000144972: Separate supplemental filing of the combined annex PDF for the A02 access and production request.",
+      "proof_level": "REGISTRATION_RECEIPT_VERIFIED",
+      "proves": [
+        "Registered S000000000000144972: Separate supplemental filing of the combined annex PDF for the A02 access and production request.",
+        "The receipt records presentation to the stated registry destination."
+      ],
+      "does_not_prove": [
+        "Principal receipt proves a four-page principal filing. The planned annexes were not listed there. A separate supplemental receipt records an eleven-page combined annex PDF, but supplies no document hash; byte identity is therefore not proved by that receipt.",
+        "Registration does not establish downstream delivery, admission, incorporation, substantive examination, criminal responsibility or the merits of allegations."
+      ],
+      "source": {
+        "repository_anchor": "assets/data/dp1901-direct-action-state-20260920.json",
+        "status": "RECEIPT_VERIFIED_PUBLIC_SAFE_DERIVATIVE"
+      },
+      "allocation_state": "PROCEEDING_LINKED",
+      "interconnectivity_scope": "INSIDE_JUDICIAL_PROCEEDING",
+      "master_ids": [
+        "GC-CRI-008"
+      ],
+      "supporting_references": [
+        "A02"
+      ],
+      "unresolved_matter_references": []
+    },
+    {
+      "event_id": "PD-SP-EVT-0184",
+      "event_date": "2026-09-20",
+      "direction": "OUTBOUND_TO_INSTITUTION",
+      "record_type": "REGISTRATION_RECEIPT",
+      "channel": "REGAGE",
+      "layer": "FORMAL_REGISTRATION",
+      "office": "CGPJ — Alzada 286/2026",
+      "official_reference": "REGAGE26e00082030716",
+      "matter_references": [
+        "DP 1901/2026",
+        "A03"
+      ],
+      "public_summary": "Registered REGAGE26e00082030716: Supervening fact, preservation and functional classification.",
+      "proof_level": "REGISTRATION_RECEIPT_VERIFIED",
+      "proves": [
+        "Registered REGAGE26e00082030716: Supervening fact, preservation and functional classification.",
+        "The receipt records presentation to the stated registry destination."
+      ],
+      "does_not_prove": [
+        "Receipt proves registration; classification, admission, examination and action remain unproved.",
+        "Registration does not establish downstream delivery, admission, incorporation, substantive examination, criminal responsibility or the merits of allegations."
+      ],
+      "source": {
+        "repository_anchor": "assets/data/dp1901-direct-action-state-20260920.json",
+        "status": "RECEIPT_VERIFIED_PUBLIC_SAFE_DERIVATIVE"
+      },
+      "allocation_state": "PROCEEDING_LINKED",
+      "interconnectivity_scope": "INSIDE_JUDICIAL_PROCEEDING",
+      "master_ids": [
+        "GC-CRI-008"
+      ],
+      "supporting_references": [
+        "A03"
+      ],
+      "unresolved_matter_references": []
+    },
+    {
+      "event_id": "PD-SP-EVT-0185",
+      "event_date": "2026-09-20",
+      "direction": "OUTBOUND_TO_INSTITUTION",
+      "record_type": "REGISTRATION_RECEIPT",
+      "channel": "REGAGE",
+      "layer": "FORMAL_REGISTRATION",
+      "office": "Secretaría de Gobierno del TSJC",
+      "official_reference": "REGAGE26e00082039117",
+      "matter_references": [
+        "DP 1901/2026",
+        "A04"
+      ],
+      "public_summary": "Registered REGAGE26e00082039117: Territorial Office-of-Justice supervision and traceability in Exp.Gub.38/2026.",
+      "proof_level": "REGISTRATION_RECEIPT_VERIFIED",
+      "proves": [
+        "Registered REGAGE26e00082039117: Territorial Office-of-Justice supervision and traceability in Exp.Gub.38/2026.",
+        "The receipt records presentation to the stated registry destination."
+      ],
+      "does_not_prove": [
+        "Receipt proves registration; transmission, incorporation, examination and action remain unproved.",
+        "Registration does not establish downstream delivery, admission, incorporation, substantive examination, criminal responsibility or the merits of allegations."
+      ],
+      "source": {
+        "repository_anchor": "assets/data/dp1901-direct-action-state-20260920.json",
+        "status": "RECEIPT_VERIFIED_PUBLIC_SAFE_DERIVATIVE"
+      },
+      "allocation_state": "PROCEEDING_LINKED",
+      "interconnectivity_scope": "INSIDE_JUDICIAL_PROCEEDING",
+      "master_ids": [
+        "GC-CRI-008"
+      ],
+      "supporting_references": [
+        "A04"
+      ],
+      "unresolved_matter_references": []
+    },
+    {
+      "event_id": "PD-SP-EVT-0186",
+      "event_date": "2026-09-20",
+      "direction": "OUTBOUND_TO_INSTITUTION",
+      "record_type": "REGISTRATION_RECEIPT",
+      "channel": "REGAGE",
+      "layer": "FORMAL_REGISTRATION",
+      "office": "Coordinación Provincial de LAJ",
+      "official_reference": "REGAGE26e00082040006",
+      "matter_references": [
+        "DP 1901/2026",
+        "A05"
+      ],
+      "public_summary": "Registered REGAGE26e00082040006: Identification and coordination of services that received, digitised and routed the material.",
+      "proof_level": "REGISTRATION_RECEIPT_VERIFIED",
+      "proves": [
+        "Registered REGAGE26e00082040006: Identification and coordination of services that received, digitised and routed the material.",
+        "The receipt records presentation to the stated registry destination."
+      ],
+      "does_not_prove": [
+        "Receipt proves registration; the separately authorised email follow-up is supplementary and does not change filing proof.",
+        "Registration does not establish downstream delivery, admission, incorporation, substantive examination, criminal responsibility or the merits of allegations."
+      ],
+      "source": {
+        "repository_anchor": "assets/data/dp1901-direct-action-state-20260920.json",
+        "status": "RECEIPT_VERIFIED_PUBLIC_SAFE_DERIVATIVE"
+      },
+      "allocation_state": "PROCEEDING_LINKED",
+      "interconnectivity_scope": "INSIDE_JUDICIAL_PROCEEDING",
+      "master_ids": [
+        "GC-CRI-008"
+      ],
+      "supporting_references": [
+        "A05"
+      ],
+      "unresolved_matter_references": []
+    },
+    {
+      "event_id": "PD-SP-EVT-0187",
+      "event_date": "2026-09-20",
+      "direction": "OUTBOUND_TO_INSTITUTION",
+      "record_type": "REGISTRATION_RECEIPT",
+      "channel": "REGAGE",
+      "layer": "FORMAL_REGISTRATION",
+      "office": "Secretaría General para la Innovación y Calidad del Servicio Público de Justicia",
+      "official_reference": "REGAGE26e00082058165",
+      "matter_references": [
+        "DP 1901/2026",
+        "A06"
+      ],
+      "public_summary": "Registered REGAGE26e00082058165: National supervisory incorporation within lawful competence.",
+      "proof_level": "REGISTRATION_RECEIPT_AND_ATTACHMENT_HASHES_VERIFIED",
+      "proves": [
+        "Registered REGAGE26e00082058165: National supervisory incorporation within lawful competence.",
+        "The receipt records presentation to the stated registry destination.",
+        "The listed attachment fingerprints match the retained submitted files."
+      ],
+      "does_not_prove": [
+        "Receipt proves registration and all four attachment hashes: forty-five pages. The earlier rejected attempt remains disclosed. Substantive admission, incorporation, preservation and response remain unproved; this receipt does not prove registration of a separate earlier national alzada.",
+        "Registration does not establish downstream delivery, admission, incorporation, substantive examination, criminal responsibility or the merits of allegations."
+      ],
+      "source": {
+        "repository_anchor": "assets/data/dp1901-direct-action-state-20260920.json",
+        "status": "RECEIPT_VERIFIED_PUBLIC_SAFE_DERIVATIVE"
+      },
+      "allocation_state": "PROCEEDING_LINKED",
+      "interconnectivity_scope": "INSIDE_JUDICIAL_PROCEEDING",
+      "master_ids": [
+        "GC-CRI-008"
+      ],
+      "supporting_references": [
+        "A06"
+      ],
+      "unresolved_matter_references": []
+    },
+    {
+      "event_id": "PD-SP-EVT-0188",
+      "event_date": "2026-09-20",
+      "direction": "OUTBOUND_TO_INSTITUTION",
+      "record_type": "REGISTRATION_RECEIPT",
+      "channel": "REGAGE",
+      "layer": "FORMAL_REGISTRATION",
+      "office": "Canary Justice Administration / ATLANTE",
+      "official_reference": "REGAGE26e00082038176",
+      "matter_references": [
+        "DP 1901/2026",
+        "A07"
+      ],
+      "public_summary": "Registered REGAGE26e00082038176: Technical custody, log preservation and clarification of documented incidents.",
+      "proof_level": "REGISTRATION_RECEIPT_VERIFIED",
+      "proves": [
+        "Registered REGAGE26e00082038176: Technical custody, log preservation and clarification of documented incidents.",
+        "The receipt records presentation to the stated registry destination."
+      ],
+      "does_not_prove": [
+        "Receipt proves registration; preservation, production and technical findings remain unproved.",
+        "Registration does not establish downstream delivery, admission, incorporation, substantive examination, criminal responsibility or the merits of allegations."
+      ],
+      "source": {
+        "repository_anchor": "assets/data/dp1901-direct-action-state-20260920.json",
+        "status": "RECEIPT_VERIFIED_PUBLIC_SAFE_DERIVATIVE"
+      },
+      "allocation_state": "PROCEEDING_LINKED",
+      "interconnectivity_scope": "INSIDE_JUDICIAL_PROCEEDING",
+      "master_ids": [
+        "GC-CRI-008"
+      ],
+      "supporting_references": [
+        "A07"
+      ],
+      "unresolved_matter_references": []
+    },
+    {
+      "event_id": "PD-SP-EVT-0189",
+      "event_date": "2026-09-20",
+      "direction": "OUTBOUND_TO_INSTITUTION",
+      "record_type": "REGISTRATION_RECEIPT",
+      "channel": "REGAGE",
+      "layer": "FORMAL_REGISTRATION",
+      "office": "Fiscalía Provincial de Las Palmas",
+      "official_reference": "REGAGE26e00082044751",
+      "matter_references": [
+        "DP 1901/2026",
+        "A08"
+      ],
+      "public_summary": "Registered REGAGE26e00082044751: Bounded custody/allocation search for the 29 July report, author, assignment and corpus; no Provincial authorship is presumed.",
+      "proof_level": "REGISTRATION_RECEIPT_AND_ATTACHMENT_HASHES_VERIFIED",
+      "proves": [
+        "Registered REGAGE26e00082044751: Bounded custody/allocation search for the 29 July report, author, assignment and corpus; no Provincial authorship is presumed.",
+        "The receipt records presentation to the stated registry destination.",
+        "The listed attachment fingerprints match the retained submitted files."
+      ],
+      "does_not_prove": [
+        "Receipt proves registration and the four attachment hashes. Authorship, allocation, corpus location and institutional action remain unproved.",
+        "Registration does not establish downstream delivery, admission, incorporation, substantive examination, criminal responsibility or the merits of allegations."
+      ],
+      "source": {
+        "repository_anchor": "assets/data/dp1901-direct-action-state-20260920.json",
+        "status": "RECEIPT_VERIFIED_PUBLIC_SAFE_DERIVATIVE"
+      },
+      "allocation_state": "PROCEEDING_LINKED",
+      "interconnectivity_scope": "INSIDE_JUDICIAL_PROCEEDING",
+      "master_ids": [
+        "GC-CRI-008"
+      ],
+      "supporting_references": [
+        "A08"
+      ],
+      "unresolved_matter_references": []
+    },
+    {
+      "event_id": "PD-SP-EVT-0190",
+      "event_date": "2026-09-20",
+      "direction": "OUTBOUND_TO_INSTITUTION",
+      "record_type": "REGISTRATION_RECEIPT",
+      "channel": "REGAGE",
+      "layer": "FORMAL_REGISTRATION",
+      "office": "Fiscal Superior de Canarias",
+      "official_reference": "REGAGE26e00082032153",
+      "matter_references": [
+        "DP 1901/2026",
+        "A09"
+      ],
+      "public_summary": "Registered REGAGE26e00082032153: Territorial competence, attribution, DIP 2/2026 and preservation review.",
+      "proof_level": "REGISTRATION_RECEIPT_VERIFIED",
+      "proves": [
+        "Registered REGAGE26e00082032153: Territorial competence, attribution, DIP 2/2026 and preservation review.",
+        "The receipt records presentation to the stated registry destination."
+      ],
+      "does_not_prove": [
+        "One action only: duplicate private receipt copies do not create a second filing. Registration does not prove examination or action.",
+        "Registration does not establish downstream delivery, admission, incorporation, substantive examination, criminal responsibility or the merits of allegations."
+      ],
+      "source": {
+        "repository_anchor": "assets/data/dp1901-direct-action-state-20260920.json",
+        "status": "RECEIPT_VERIFIED_PUBLIC_SAFE_DERIVATIVE"
+      },
+      "allocation_state": "PROCEEDING_LINKED",
+      "interconnectivity_scope": "INSIDE_JUDICIAL_PROCEEDING",
+      "master_ids": [
+        "GC-CRI-008"
+      ],
+      "supporting_references": [
+        "A09"
+      ],
+      "unresolved_matter_references": []
+    },
+    {
+      "event_id": "PD-SP-EVT-0199",
+      "event_date": "2026-09-20",
+      "direction": "OUTBOUND_TO_INSTITUTION",
+      "record_type": "REGISTRATION_RECEIPT",
+      "channel": "REGAGE",
+      "layer": "FORMAL_REGISTRATION",
+      "office": "FGE / Inspección Fiscal",
+      "official_reference": "REGAGE26e00082033336",
+      "matter_references": [
+        "DP 1901/2026",
+        "A10",
+        "E.G.745/2026"
+      ],
+      "public_summary": "Registered REGAGE26e00082033336: Limited incorporation and preservation of a supervening DP1901 fact in E.G.745.",
+      "proof_level": "REGISTRATION_RECEIPT_VERIFIED",
+      "proves": [
+        "Registered REGAGE26e00082033336: Limited incorporation and preservation of a supervening DP1901 fact in E.G.745.",
+        "The receipt records presentation to the stated registry destination."
+      ],
+      "does_not_prove": [
+        "Not the separate substantive E.G.745 response. Receipt proves registration only.",
+        "Registration does not establish downstream delivery, admission, incorporation, substantive examination, criminal responsibility or the merits of allegations."
+      ],
+      "source": {
+        "repository_anchor": "assets/data/dp1901-direct-action-state-20260920.json",
+        "status": "RECEIPT_VERIFIED_PUBLIC_SAFE_DERIVATIVE"
+      },
+      "allocation_state": "PROCEEDING_LINKED",
+      "interconnectivity_scope": "CROSS_FILE_BRIDGE",
+      "master_ids": [
+        "GC-CRI-008",
+        "NAT-FIS-004"
+      ],
+      "supporting_references": [
+        "A10"
+      ],
+      "unresolved_matter_references": []
+    },
+    {
+      "event_id": "PD-SP-EVT-0200",
+      "event_date": "2026-09-20",
+      "direction": "OUTBOUND_TO_INSTITUTION",
+      "record_type": "REGISTRATION_RECEIPT",
+      "channel": "REGAGE",
+      "layer": "FORMAL_REGISTRATION",
+      "office": "Sala de Gobierno via Secretaría de Gobierno del TSJC",
+      "official_reference": "REGAGE26e00082052687",
+      "matter_references": [
+        "DP 1901/2026",
+        "A11"
+      ],
+      "public_summary": "Registered REGAGE26e00082052687: General reparto rules, approval/ratification, exceptions, publicity, Tribunal-de-Instancia mapping and written routing instructions.",
+      "proof_level": "REGISTRATION_RECEIPT_AND_ATTACHMENT_HASHES_VERIFIED",
+      "proves": [
+        "Registered REGAGE26e00082052687: General reparto rules, approval/ratification, exceptions, publicity, Tribunal-de-Instancia mapping and written routing instructions.",
+        "The receipt records presentation to the stated registry destination.",
+        "The listed attachment fingerprints match the retained submitted files."
+      ],
+      "does_not_prove": [
+        "Separate from A04 and not an appeal. Receipt proves registration and matching hashes, not transmission, admission, examination or response.",
+        "Registration does not establish downstream delivery, admission, incorporation, substantive examination, criminal responsibility or the merits of allegations."
+      ],
+      "source": {
+        "repository_anchor": "assets/data/dp1901-direct-action-state-20260920.json",
+        "status": "RECEIPT_VERIFIED_PUBLIC_SAFE_DERIVATIVE"
+      },
+      "allocation_state": "PROCEEDING_LINKED",
+      "interconnectivity_scope": "INSIDE_JUDICIAL_PROCEEDING",
+      "master_ids": [
+        "GC-CRI-008"
+      ],
+      "supporting_references": [
+        "A11"
+      ],
+      "unresolved_matter_references": []
+    },
+    {
+      "event_id": "PD-SP-EVT-0201",
+      "event_date": "2026-09-20",
+      "direction": "OUTBOUND_TO_INSTITUTION",
+      "record_type": "REGISTRATION_RECEIPT",
+      "channel": "REGAGE",
+      "layer": "FORMAL_REGISTRATION",
+      "office": "Defensor del Pueblo",
+      "official_reference": "REGAGE26e00082055212",
+      "matter_references": [
+        "DP 1901/2026",
+        "A12"
+      ],
+      "public_summary": "Registered REGAGE26e00082055212: General administrative traceability safeguards; judicial merits remain outside this lane.",
+      "proof_level": "REGISTRATION_RECEIPT_AND_ATTACHMENT_HASHES_VERIFIED",
+      "proves": [
+        "Registered REGAGE26e00082055212: General administrative traceability safeguards; judicial merits remain outside this lane.",
+        "The receipt records presentation to the stated registry destination.",
+        "The listed attachment fingerprints match the retained submitted files."
+      ],
+      "does_not_prove": [
+        "Receipt contains the intended requests and all four attachments, but also an extraneous operational-text tail. Legal effect and need for correction are undetermined; no correction is evidenced. Registration is not admission, handling or response.",
+        "Registration does not establish downstream delivery, admission, incorporation, substantive examination, criminal responsibility or the merits of allegations."
+      ],
+      "source": {
+        "repository_anchor": "assets/data/dp1901-direct-action-state-20260920.json",
+        "status": "RECEIPT_VERIFIED_PUBLIC_SAFE_DERIVATIVE"
+      },
+      "allocation_state": "PROCEEDING_LINKED",
+      "interconnectivity_scope": "INSIDE_JUDICIAL_PROCEEDING",
+      "master_ids": [
+        "GC-CRI-008"
+      ],
+      "supporting_references": [
+        "A12"
+      ],
+      "unresolved_matter_references": []
+    },
+    {
+      "event_id": "PD-SP-EVT-0202",
+      "event_date": "2026-09-20",
+      "direction": "OUTBOUND_TO_INSTITUTION",
+      "record_type": "REGISTRATION_RECEIPT",
+      "channel": "REGAGE",
+      "layer": "FORMAL_REGISTRATION",
+      "office": "Fiscalía Anticorrupción",
+      "official_reference": "REGAGE26e00082060401",
+      "matter_references": [
+        "DP 1901/2026",
+        "A13"
+      ],
+      "public_summary": "Registered REGAGE26e00082060401: Status/subsanation of the existing communication, competent examination of the economic module and preservation.",
+      "proof_level": "REGISTRATION_RECEIPT_AND_ATTACHMENT_HASHES_VERIFIED",
+      "proves": [
+        "Registered REGAGE26e00082060401: Status/subsanation of the existing communication, competent examination of the economic module and preservation.",
+        "The receipt records presentation to the stated registry destination.",
+        "The listed attachment fingerprints match the retained submitted files."
+      ],
+      "does_not_prove": [
+        "Receipt proves registration and all five attachment hashes: fifty pages. Formalisation, admission, onward receipt, incorporation and preservation remain unproved. The existing signature/channel questions continue as post-filing follow-up and do not erase this registration.",
+        "Registration does not establish downstream delivery, admission, incorporation, substantive examination, criminal responsibility or the merits of allegations."
+      ],
+      "source": {
+        "repository_anchor": "assets/data/dp1901-direct-action-state-20260920.json",
+        "status": "RECEIPT_VERIFIED_PUBLIC_SAFE_DERIVATIVE"
+      },
+      "allocation_state": "PROCEEDING_LINKED",
+      "interconnectivity_scope": "INSIDE_JUDICIAL_PROCEEDING",
+      "master_ids": [
+        "GC-CRI-008"
+      ],
+      "supporting_references": [
+        "A13"
+      ],
+      "unresolved_matter_references": []
+    },
+    {
+      "event_id": "PD-SP-EVT-0203",
+      "event_date": "2026-09-21",
+      "direction": "OUTBOUND_TO_INSTITUTION",
+      "record_type": "REGISTRATION_RECEIPT",
+      "channel": "REGAGE",
+      "layer": "FORMAL_REGISTRATION",
+      "office": "Fiscalía General del Estado — Inspección Fiscal",
+      "official_reference": "REGAGE26e00082068814",
+      "matter_references": [
+        "E.G.745/2026",
+        "IF/MCS",
+        "REGAGE26e00082068814"
+      ],
+      "public_summary": "Registered REGAGE26e00082068814: Principal substantive reposición and initial documents for E.G.745/2026.",
+      "proof_level": "REGISTRATION_RECEIPT_AND_ATTACHMENT_HASHES_VERIFIED",
+      "proves": [
+        "Registered REGAGE26e00082068814: Principal substantive reposición and initial documents for E.G.745/2026.",
+        "The receipt records presentation to the stated registry destination.",
+        "The listed attachment fingerprints match the retained submitted files."
+      ],
+      "does_not_prove": [
+        "Registration and matching attachment fingerprints do not prove admission, incorporation, onward delivery, preservation or substantive examination. Annex deliveries are linked components of the principal filing, not separate appeals.",
+        "Registration does not establish downstream delivery, admission, incorporation, substantive examination, criminal responsibility or the merits of allegations."
+      ],
+      "source": {
+        "repository_anchor": "evidence/preservation/eg745-redsara-revision-20260921/receipts/REGAGE26e00082068814.json",
+        "status": "RECEIPT_VERIFIED_PUBLIC_SAFE_DERIVATIVE"
+      },
+      "allocation_state": "PROCEEDING_LINKED",
+      "interconnectivity_scope": "OUTSIDE_JUDICIAL_PROCEEDING",
+      "master_ids": [
+        "NAT-FIS-004"
+      ],
+      "supporting_references": [
+        "IF/MCS",
+        "REGAGE26e00082068814"
+      ],
+      "unresolved_matter_references": []
+    },
+    {
+      "event_id": "PD-SP-EVT-0204",
+      "event_date": "2026-09-21",
+      "direction": "OUTBOUND_TO_INSTITUTION",
+      "record_type": "REGISTRATION_RECEIPT",
+      "channel": "REGAGE",
+      "layer": "FORMAL_REGISTRATION",
+      "office": "Fiscalía General del Estado — Inspección Fiscal",
+      "official_reference": "REGAGE26e00082069039",
+      "matter_references": [
+        "E.G.745/2026",
+        "IF/MCS",
+        "REGAGE26e00082068814"
+      ],
+      "public_summary": "Registered REGAGE26e00082069039: Linked annex delivery 2/10 for the principal E.G.745/2026 reposición registered as REGAGE26e00082068814.",
+      "proof_level": "REGISTRATION_RECEIPT_AND_ATTACHMENT_HASHES_VERIFIED",
+      "proves": [
+        "Registered REGAGE26e00082069039: Linked annex delivery 2/10 for the principal E.G.745/2026 reposición registered as REGAGE26e00082068814.",
+        "The receipt records presentation to the stated registry destination.",
+        "The listed attachment fingerprints match the retained submitted files."
+      ],
+      "does_not_prove": [
+        "Registration and matching attachment fingerprints do not prove admission, incorporation, onward delivery, preservation or substantive examination. Annex deliveries are linked components of the principal filing, not separate appeals.",
+        "Registration does not establish downstream delivery, admission, incorporation, substantive examination, criminal responsibility or the merits of allegations."
+      ],
+      "source": {
+        "repository_anchor": "evidence/preservation/eg745-redsara-revision-20260921/receipts/REGAGE26e00082069039.json",
+        "status": "RECEIPT_VERIFIED_PUBLIC_SAFE_DERIVATIVE"
+      },
+      "allocation_state": "PROCEEDING_LINKED",
+      "interconnectivity_scope": "OUTSIDE_JUDICIAL_PROCEEDING",
+      "master_ids": [
+        "NAT-FIS-004"
+      ],
+      "supporting_references": [
+        "IF/MCS",
+        "REGAGE26e00082068814"
+      ],
+      "unresolved_matter_references": []
+    },
+    {
+      "event_id": "PD-SP-EVT-0205",
+      "event_date": "2026-09-21",
+      "direction": "OUTBOUND_TO_INSTITUTION",
+      "record_type": "REGISTRATION_RECEIPT",
+      "channel": "REGAGE",
+      "layer": "FORMAL_REGISTRATION",
+      "office": "Fiscalía General del Estado — Inspección Fiscal",
+      "official_reference": "REGAGE26e00082069185",
+      "matter_references": [
+        "E.G.745/2026",
+        "IF/MCS",
+        "REGAGE26e00082068814"
+      ],
+      "public_summary": "Registered REGAGE26e00082069185: Linked annex delivery 3/10 for the principal E.G.745/2026 reposición registered as REGAGE26e00082068814.",
+      "proof_level": "REGISTRATION_RECEIPT_AND_ATTACHMENT_HASHES_VERIFIED",
+      "proves": [
+        "Registered REGAGE26e00082069185: Linked annex delivery 3/10 for the principal E.G.745/2026 reposición registered as REGAGE26e00082068814.",
+        "The receipt records presentation to the stated registry destination.",
+        "The listed attachment fingerprints match the retained submitted files."
+      ],
+      "does_not_prove": [
+        "Registration and matching attachment fingerprints do not prove admission, incorporation, onward delivery, preservation or substantive examination. Annex deliveries are linked components of the principal filing, not separate appeals.",
+        "Registration does not establish downstream delivery, admission, incorporation, substantive examination, criminal responsibility or the merits of allegations."
+      ],
+      "source": {
+        "repository_anchor": "evidence/preservation/eg745-redsara-revision-20260921/receipts/REGAGE26e00082069185.json",
+        "status": "RECEIPT_VERIFIED_PUBLIC_SAFE_DERIVATIVE"
+      },
+      "allocation_state": "PROCEEDING_LINKED",
+      "interconnectivity_scope": "OUTSIDE_JUDICIAL_PROCEEDING",
+      "master_ids": [
+        "NAT-FIS-004"
+      ],
+      "supporting_references": [
+        "IF/MCS",
+        "REGAGE26e00082068814"
+      ],
+      "unresolved_matter_references": []
+    },
+    {
+      "event_id": "PD-SP-EVT-0206",
+      "event_date": "2026-09-21",
+      "direction": "OUTBOUND_TO_INSTITUTION",
+      "record_type": "REGISTRATION_RECEIPT",
+      "channel": "REGAGE",
+      "layer": "FORMAL_REGISTRATION",
+      "office": "Fiscalía General del Estado — Inspección Fiscal",
+      "official_reference": "REGAGE26e00082069355",
+      "matter_references": [
+        "E.G.745/2026",
+        "IF/MCS",
+        "REGAGE26e00082068814"
+      ],
+      "public_summary": "Registered REGAGE26e00082069355: Linked annex delivery 4/10 for the principal E.G.745/2026 reposición registered as REGAGE26e00082068814.",
+      "proof_level": "REGISTRATION_RECEIPT_AND_ATTACHMENT_HASHES_VERIFIED",
+      "proves": [
+        "Registered REGAGE26e00082069355: Linked annex delivery 4/10 for the principal E.G.745/2026 reposición registered as REGAGE26e00082068814.",
+        "The receipt records presentation to the stated registry destination.",
+        "The listed attachment fingerprints match the retained submitted files."
+      ],
+      "does_not_prove": [
+        "Registration and matching attachment fingerprints do not prove admission, incorporation, onward delivery, preservation or substantive examination. Annex deliveries are linked components of the principal filing, not separate appeals.",
+        "Registration does not establish downstream delivery, admission, incorporation, substantive examination, criminal responsibility or the merits of allegations."
+      ],
+      "source": {
+        "repository_anchor": "evidence/preservation/eg745-redsara-revision-20260921/receipts/REGAGE26e00082069355.json",
+        "status": "RECEIPT_VERIFIED_PUBLIC_SAFE_DERIVATIVE"
+      },
+      "allocation_state": "PROCEEDING_LINKED",
+      "interconnectivity_scope": "OUTSIDE_JUDICIAL_PROCEEDING",
+      "master_ids": [
+        "NAT-FIS-004"
+      ],
+      "supporting_references": [
+        "IF/MCS",
+        "REGAGE26e00082068814"
+      ],
+      "unresolved_matter_references": []
+    },
+    {
+      "event_id": "PD-SP-EVT-0207",
+      "event_date": "2026-09-21",
+      "direction": "OUTBOUND_TO_INSTITUTION",
+      "record_type": "REGISTRATION_RECEIPT",
+      "channel": "REGAGE",
+      "layer": "FORMAL_REGISTRATION",
+      "office": "Fiscalía General del Estado — Inspección Fiscal",
+      "official_reference": "REGAGE26e00082069484",
+      "matter_references": [
+        "E.G.745/2026",
+        "IF/MCS",
+        "REGAGE26e00082068814"
+      ],
+      "public_summary": "Registered REGAGE26e00082069484: Linked annex delivery 5/10 for the principal E.G.745/2026 reposición registered as REGAGE26e00082068814.",
+      "proof_level": "REGISTRATION_RECEIPT_AND_ATTACHMENT_HASHES_VERIFIED",
+      "proves": [
+        "Registered REGAGE26e00082069484: Linked annex delivery 5/10 for the principal E.G.745/2026 reposición registered as REGAGE26e00082068814.",
+        "The receipt records presentation to the stated registry destination.",
+        "The listed attachment fingerprints match the retained submitted files."
+      ],
+      "does_not_prove": [
+        "Registration and matching attachment fingerprints do not prove admission, incorporation, onward delivery, preservation or substantive examination. Annex deliveries are linked components of the principal filing, not separate appeals.",
+        "Registration does not establish downstream delivery, admission, incorporation, substantive examination, criminal responsibility or the merits of allegations."
+      ],
+      "source": {
+        "repository_anchor": "evidence/preservation/eg745-redsara-revision-20260921/receipts/REGAGE26e00082069484.json",
+        "status": "RECEIPT_VERIFIED_PUBLIC_SAFE_DERIVATIVE"
+      },
+      "allocation_state": "PROCEEDING_LINKED",
+      "interconnectivity_scope": "OUTSIDE_JUDICIAL_PROCEEDING",
+      "master_ids": [
+        "NAT-FIS-004"
+      ],
+      "supporting_references": [
+        "IF/MCS",
+        "REGAGE26e00082068814"
+      ],
+      "unresolved_matter_references": []
+    },
+    {
+      "event_id": "PD-SP-EVT-0208",
+      "event_date": "2026-09-21",
+      "direction": "OUTBOUND_TO_INSTITUTION",
+      "record_type": "REGISTRATION_RECEIPT",
+      "channel": "REGAGE",
+      "layer": "FORMAL_REGISTRATION",
+      "office": "Fiscalía General del Estado — Inspección Fiscal",
+      "official_reference": "REGAGE26e00082069581",
+      "matter_references": [
+        "E.G.745/2026",
+        "IF/MCS",
+        "REGAGE26e00082068814"
+      ],
+      "public_summary": "Registered REGAGE26e00082069581: Linked annex delivery 6/10 for the principal E.G.745/2026 reposición registered as REGAGE26e00082068814.",
+      "proof_level": "REGISTRATION_RECEIPT_AND_ATTACHMENT_HASHES_VERIFIED",
+      "proves": [
+        "Registered REGAGE26e00082069581: Linked annex delivery 6/10 for the principal E.G.745/2026 reposición registered as REGAGE26e00082068814.",
+        "The receipt records presentation to the stated registry destination.",
+        "The listed attachment fingerprints match the retained submitted files."
+      ],
+      "does_not_prove": [
+        "Registration and matching attachment fingerprints do not prove admission, incorporation, onward delivery, preservation or substantive examination. Annex deliveries are linked components of the principal filing, not separate appeals.",
+        "Registration does not establish downstream delivery, admission, incorporation, substantive examination, criminal responsibility or the merits of allegations."
+      ],
+      "source": {
+        "repository_anchor": "evidence/preservation/eg745-redsara-revision-20260921/receipts/REGAGE26e00082069581.json",
+        "status": "RECEIPT_VERIFIED_PUBLIC_SAFE_DERIVATIVE"
+      },
+      "allocation_state": "PROCEEDING_LINKED",
+      "interconnectivity_scope": "OUTSIDE_JUDICIAL_PROCEEDING",
+      "master_ids": [
+        "NAT-FIS-004"
+      ],
+      "supporting_references": [
+        "IF/MCS",
+        "REGAGE26e00082068814"
+      ],
+      "unresolved_matter_references": []
+    },
+    {
+      "event_id": "PD-SP-EVT-0209",
+      "event_date": "2026-09-21",
+      "direction": "OUTBOUND_TO_INSTITUTION",
+      "record_type": "REGISTRATION_RECEIPT",
+      "channel": "REGAGE",
+      "layer": "FORMAL_REGISTRATION",
+      "office": "Fiscalía General del Estado — Inspección Fiscal",
+      "official_reference": "REGAGE26e00082069631",
+      "matter_references": [
+        "E.G.745/2026",
+        "IF/MCS",
+        "REGAGE26e00082068814"
+      ],
+      "public_summary": "Registered REGAGE26e00082069631: Linked annex delivery 7/10 for the principal E.G.745/2026 reposición registered as REGAGE26e00082068814.",
+      "proof_level": "REGISTRATION_RECEIPT_AND_ATTACHMENT_HASHES_VERIFIED",
+      "proves": [
+        "Registered REGAGE26e00082069631: Linked annex delivery 7/10 for the principal E.G.745/2026 reposición registered as REGAGE26e00082068814.",
+        "The receipt records presentation to the stated registry destination.",
+        "The listed attachment fingerprints match the retained submitted files."
+      ],
+      "does_not_prove": [
+        "Registration and matching attachment fingerprints do not prove admission, incorporation, onward delivery, preservation or substantive examination. Annex deliveries are linked components of the principal filing, not separate appeals.",
+        "Registration does not establish downstream delivery, admission, incorporation, substantive examination, criminal responsibility or the merits of allegations."
+      ],
+      "source": {
+        "repository_anchor": "evidence/preservation/eg745-redsara-revision-20260921/receipts/REGAGE26e00082069631.json",
+        "status": "RECEIPT_VERIFIED_PUBLIC_SAFE_DERIVATIVE"
+      },
+      "allocation_state": "PROCEEDING_LINKED",
+      "interconnectivity_scope": "OUTSIDE_JUDICIAL_PROCEEDING",
+      "master_ids": [
+        "NAT-FIS-004"
+      ],
+      "supporting_references": [
+        "IF/MCS",
+        "REGAGE26e00082068814"
+      ],
+      "unresolved_matter_references": []
+    },
+    {
+      "event_id": "PD-SP-EVT-0210",
+      "event_date": "2026-09-21",
+      "direction": "OUTBOUND_TO_INSTITUTION",
+      "record_type": "REGISTRATION_RECEIPT",
+      "channel": "REGAGE",
+      "layer": "FORMAL_REGISTRATION",
+      "office": "Fiscalía General del Estado — Inspección Fiscal",
+      "official_reference": "REGAGE26e00082069746",
+      "matter_references": [
+        "E.G.745/2026",
+        "IF/MCS",
+        "REGAGE26e00082068814"
+      ],
+      "public_summary": "Registered REGAGE26e00082069746: Linked annex delivery 8/10 for the principal E.G.745/2026 reposición registered as REGAGE26e00082068814.",
+      "proof_level": "REGISTRATION_RECEIPT_AND_ATTACHMENT_HASHES_VERIFIED",
+      "proves": [
+        "Registered REGAGE26e00082069746: Linked annex delivery 8/10 for the principal E.G.745/2026 reposición registered as REGAGE26e00082068814.",
+        "The receipt records presentation to the stated registry destination.",
+        "The listed attachment fingerprints match the retained submitted files."
+      ],
+      "does_not_prove": [
+        "Registration and matching attachment fingerprints do not prove admission, incorporation, onward delivery, preservation or substantive examination. Annex deliveries are linked components of the principal filing, not separate appeals.",
+        "Registration does not establish downstream delivery, admission, incorporation, substantive examination, criminal responsibility or the merits of allegations."
+      ],
+      "source": {
+        "repository_anchor": "evidence/preservation/eg745-redsara-revision-20260921/receipts/REGAGE26e00082069746.json",
+        "status": "RECEIPT_VERIFIED_PUBLIC_SAFE_DERIVATIVE"
+      },
+      "allocation_state": "PROCEEDING_LINKED",
+      "interconnectivity_scope": "OUTSIDE_JUDICIAL_PROCEEDING",
+      "master_ids": [
+        "NAT-FIS-004"
+      ],
+      "supporting_references": [
+        "IF/MCS",
+        "REGAGE26e00082068814"
+      ],
+      "unresolved_matter_references": []
+    },
+    {
+      "event_id": "PD-SP-EVT-0211",
+      "event_date": "2026-09-21",
+      "direction": "OUTBOUND_TO_INSTITUTION",
+      "record_type": "REGISTRATION_RECEIPT",
+      "channel": "REGAGE",
+      "layer": "FORMAL_REGISTRATION",
+      "office": "Fiscalía General del Estado — Inspección Fiscal",
+      "official_reference": "REGAGE26e00082069917",
+      "matter_references": [
+        "E.G.745/2026",
+        "IF/MCS",
+        "REGAGE26e00082068814"
+      ],
+      "public_summary": "Registered REGAGE26e00082069917: Linked annex delivery 9/10 for the principal E.G.745/2026 reposición registered as REGAGE26e00082068814.",
+      "proof_level": "REGISTRATION_RECEIPT_AND_ATTACHMENT_HASHES_VERIFIED",
+      "proves": [
+        "Registered REGAGE26e00082069917: Linked annex delivery 9/10 for the principal E.G.745/2026 reposición registered as REGAGE26e00082068814.",
+        "The receipt records presentation to the stated registry destination.",
+        "The listed attachment fingerprints match the retained submitted files."
+      ],
+      "does_not_prove": [
+        "Registration and matching attachment fingerprints do not prove admission, incorporation, onward delivery, preservation or substantive examination. Annex deliveries are linked components of the principal filing, not separate appeals.",
+        "Registration does not establish downstream delivery, admission, incorporation, substantive examination, criminal responsibility or the merits of allegations."
+      ],
+      "source": {
+        "repository_anchor": "evidence/preservation/eg745-redsara-revision-20260921/receipts/REGAGE26e00082069917.json",
+        "status": "RECEIPT_VERIFIED_PUBLIC_SAFE_DERIVATIVE"
+      },
+      "allocation_state": "PROCEEDING_LINKED",
+      "interconnectivity_scope": "OUTSIDE_JUDICIAL_PROCEEDING",
+      "master_ids": [
+        "NAT-FIS-004"
+      ],
+      "supporting_references": [
+        "IF/MCS",
+        "REGAGE26e00082068814"
+      ],
+      "unresolved_matter_references": []
+    },
+    {
+      "event_id": "PD-SP-EVT-0212",
+      "event_date": "2026-09-21",
+      "direction": "OUTBOUND_TO_INSTITUTION",
+      "record_type": "REGISTRATION_RECEIPT",
+      "channel": "REGAGE",
+      "layer": "FORMAL_REGISTRATION",
+      "office": "Fiscalía General del Estado — Inspección Fiscal",
+      "official_reference": "REGAGE26e00082070021",
+      "matter_references": [
+        "E.G.745/2026",
+        "IF/MCS",
+        "REGAGE26e00082068814"
+      ],
+      "public_summary": "Registered REGAGE26e00082070021: Linked annex delivery 10/10 for the principal E.G.745/2026 reposición registered as REGAGE26e00082068814.",
+      "proof_level": "REGISTRATION_RECEIPT_AND_ATTACHMENT_HASHES_VERIFIED",
+      "proves": [
+        "Registered REGAGE26e00082070021: Linked annex delivery 10/10 for the principal E.G.745/2026 reposición registered as REGAGE26e00082068814.",
+        "The receipt records presentation to the stated registry destination.",
+        "The listed attachment fingerprints match the retained submitted files."
+      ],
+      "does_not_prove": [
+        "Registration and matching attachment fingerprints do not prove admission, incorporation, onward delivery, preservation or substantive examination. Annex deliveries are linked components of the principal filing, not separate appeals.",
+        "Registration does not establish downstream delivery, admission, incorporation, substantive examination, criminal responsibility or the merits of allegations."
+      ],
+      "source": {
+        "repository_anchor": "evidence/preservation/eg745-redsara-revision-20260921/receipts/REGAGE26e00082070021.json",
+        "status": "RECEIPT_VERIFIED_PUBLIC_SAFE_DERIVATIVE"
+      },
+      "allocation_state": "PROCEEDING_LINKED",
+      "interconnectivity_scope": "OUTSIDE_JUDICIAL_PROCEEDING",
+      "master_ids": [
+        "NAT-FIS-004"
+      ],
+      "supporting_references": [
+        "IF/MCS",
+        "REGAGE26e00082068814"
       ],
       "unresolved_matter_references": []
     },
@@ -10095,6 +11020,356 @@
       "boundary_es": "El enlace prueba únicamente que este evento identifica la referencia canónica en la función indicada."
     },
     {
+      "edge_id": "MF-EDGE-PD-SP-EVT-0181-GC-CRI-008",
+      "event_id": "PD-SP-EVT-0181",
+      "master_id": "GC-CRI-008",
+      "reference_literals": [
+        "DP 1901/2026"
+      ],
+      "match_method": "EXACT_NORMALISED_REFERENCE_OR_CONTROLLED_OVERRIDE",
+      "relationship_type": "SUBMISSION_REFERENCES_PROCEEDING",
+      "relationship_strength": "CONTEXT_OR_CITATION",
+      "operational_scope": "INSIDE_JUDICIAL_PROCEEDING",
+      "boundary_en": "The edge proves only that this event names the canonical reference in the stated role.",
+      "boundary_es": "El enlace prueba únicamente que este evento identifica la referencia canónica en la función indicada."
+    },
+    {
+      "edge_id": "MF-EDGE-PD-SP-EVT-0182-GC-CRI-008",
+      "event_id": "PD-SP-EVT-0182",
+      "master_id": "GC-CRI-008",
+      "reference_literals": [
+        "DP 1901/2026"
+      ],
+      "match_method": "EXACT_NORMALISED_REFERENCE_OR_CONTROLLED_OVERRIDE",
+      "relationship_type": "SUBMISSION_REFERENCES_PROCEEDING",
+      "relationship_strength": "CONTEXT_OR_CITATION",
+      "operational_scope": "INSIDE_JUDICIAL_PROCEEDING",
+      "boundary_en": "The edge proves only that this event names the canonical reference in the stated role.",
+      "boundary_es": "El enlace prueba únicamente que este evento identifica la referencia canónica en la función indicada."
+    },
+    {
+      "edge_id": "MF-EDGE-PD-SP-EVT-0183-GC-CRI-008",
+      "event_id": "PD-SP-EVT-0183",
+      "master_id": "GC-CRI-008",
+      "reference_literals": [
+        "DP 1901/2026"
+      ],
+      "match_method": "EXACT_NORMALISED_REFERENCE_OR_CONTROLLED_OVERRIDE",
+      "relationship_type": "SUBMISSION_REFERENCES_PROCEEDING",
+      "relationship_strength": "CONTEXT_OR_CITATION",
+      "operational_scope": "INSIDE_JUDICIAL_PROCEEDING",
+      "boundary_en": "The edge proves only that this event names the canonical reference in the stated role.",
+      "boundary_es": "El enlace prueba únicamente que este evento identifica la referencia canónica en la función indicada."
+    },
+    {
+      "edge_id": "MF-EDGE-PD-SP-EVT-0184-GC-CRI-008",
+      "event_id": "PD-SP-EVT-0184",
+      "master_id": "GC-CRI-008",
+      "reference_literals": [
+        "DP 1901/2026"
+      ],
+      "match_method": "EXACT_NORMALISED_REFERENCE_OR_CONTROLLED_OVERRIDE",
+      "relationship_type": "SUBMISSION_REFERENCES_PROCEEDING",
+      "relationship_strength": "CONTEXT_OR_CITATION",
+      "operational_scope": "INSIDE_JUDICIAL_PROCEEDING",
+      "boundary_en": "The edge proves only that this event names the canonical reference in the stated role.",
+      "boundary_es": "El enlace prueba únicamente que este evento identifica la referencia canónica en la función indicada."
+    },
+    {
+      "edge_id": "MF-EDGE-PD-SP-EVT-0185-GC-CRI-008",
+      "event_id": "PD-SP-EVT-0185",
+      "master_id": "GC-CRI-008",
+      "reference_literals": [
+        "DP 1901/2026"
+      ],
+      "match_method": "EXACT_NORMALISED_REFERENCE_OR_CONTROLLED_OVERRIDE",
+      "relationship_type": "SUBMISSION_REFERENCES_PROCEEDING",
+      "relationship_strength": "CONTEXT_OR_CITATION",
+      "operational_scope": "INSIDE_JUDICIAL_PROCEEDING",
+      "boundary_en": "The edge proves only that this event names the canonical reference in the stated role.",
+      "boundary_es": "El enlace prueba únicamente que este evento identifica la referencia canónica en la función indicada."
+    },
+    {
+      "edge_id": "MF-EDGE-PD-SP-EVT-0186-GC-CRI-008",
+      "event_id": "PD-SP-EVT-0186",
+      "master_id": "GC-CRI-008",
+      "reference_literals": [
+        "DP 1901/2026"
+      ],
+      "match_method": "EXACT_NORMALISED_REFERENCE_OR_CONTROLLED_OVERRIDE",
+      "relationship_type": "SUBMISSION_REFERENCES_PROCEEDING",
+      "relationship_strength": "CONTEXT_OR_CITATION",
+      "operational_scope": "INSIDE_JUDICIAL_PROCEEDING",
+      "boundary_en": "The edge proves only that this event names the canonical reference in the stated role.",
+      "boundary_es": "El enlace prueba únicamente que este evento identifica la referencia canónica en la función indicada."
+    },
+    {
+      "edge_id": "MF-EDGE-PD-SP-EVT-0187-GC-CRI-008",
+      "event_id": "PD-SP-EVT-0187",
+      "master_id": "GC-CRI-008",
+      "reference_literals": [
+        "DP 1901/2026"
+      ],
+      "match_method": "EXACT_NORMALISED_REFERENCE_OR_CONTROLLED_OVERRIDE",
+      "relationship_type": "SUBMISSION_REFERENCES_PROCEEDING",
+      "relationship_strength": "CONTEXT_OR_CITATION",
+      "operational_scope": "INSIDE_JUDICIAL_PROCEEDING",
+      "boundary_en": "The edge proves only that this event names the canonical reference in the stated role.",
+      "boundary_es": "El enlace prueba únicamente que este evento identifica la referencia canónica en la función indicada."
+    },
+    {
+      "edge_id": "MF-EDGE-PD-SP-EVT-0188-GC-CRI-008",
+      "event_id": "PD-SP-EVT-0188",
+      "master_id": "GC-CRI-008",
+      "reference_literals": [
+        "DP 1901/2026"
+      ],
+      "match_method": "EXACT_NORMALISED_REFERENCE_OR_CONTROLLED_OVERRIDE",
+      "relationship_type": "SUBMISSION_REFERENCES_PROCEEDING",
+      "relationship_strength": "CONTEXT_OR_CITATION",
+      "operational_scope": "INSIDE_JUDICIAL_PROCEEDING",
+      "boundary_en": "The edge proves only that this event names the canonical reference in the stated role.",
+      "boundary_es": "El enlace prueba únicamente que este evento identifica la referencia canónica en la función indicada."
+    },
+    {
+      "edge_id": "MF-EDGE-PD-SP-EVT-0189-GC-CRI-008",
+      "event_id": "PD-SP-EVT-0189",
+      "master_id": "GC-CRI-008",
+      "reference_literals": [
+        "DP 1901/2026"
+      ],
+      "match_method": "EXACT_NORMALISED_REFERENCE_OR_CONTROLLED_OVERRIDE",
+      "relationship_type": "SUBMISSION_REFERENCES_PROCEEDING",
+      "relationship_strength": "CONTEXT_OR_CITATION",
+      "operational_scope": "INSIDE_JUDICIAL_PROCEEDING",
+      "boundary_en": "The edge proves only that this event names the canonical reference in the stated role.",
+      "boundary_es": "El enlace prueba únicamente que este evento identifica la referencia canónica en la función indicada."
+    },
+    {
+      "edge_id": "MF-EDGE-PD-SP-EVT-0190-GC-CRI-008",
+      "event_id": "PD-SP-EVT-0190",
+      "master_id": "GC-CRI-008",
+      "reference_literals": [
+        "DP 1901/2026"
+      ],
+      "match_method": "EXACT_NORMALISED_REFERENCE_OR_CONTROLLED_OVERRIDE",
+      "relationship_type": "SUBMISSION_REFERENCES_PROCEEDING",
+      "relationship_strength": "CONTEXT_OR_CITATION",
+      "operational_scope": "INSIDE_JUDICIAL_PROCEEDING",
+      "boundary_en": "The edge proves only that this event names the canonical reference in the stated role.",
+      "boundary_es": "El enlace prueba únicamente que este evento identifica la referencia canónica en la función indicada."
+    },
+    {
+      "edge_id": "MF-EDGE-PD-SP-EVT-0199-GC-CRI-008",
+      "event_id": "PD-SP-EVT-0199",
+      "master_id": "GC-CRI-008",
+      "reference_literals": [
+        "DP 1901/2026"
+      ],
+      "match_method": "EXACT_NORMALISED_REFERENCE_OR_CONTROLLED_OVERRIDE",
+      "relationship_type": "SUBMISSION_REFERENCES_PROCEEDING",
+      "relationship_strength": "CONTEXT_OR_CITATION",
+      "operational_scope": "INSIDE_JUDICIAL_PROCEEDING",
+      "boundary_en": "The edge proves only that this event names the canonical reference in the stated role.",
+      "boundary_es": "El enlace prueba únicamente que este evento identifica la referencia canónica en la función indicada."
+    },
+    {
+      "edge_id": "MF-EDGE-PD-SP-EVT-0199-NAT-FIS-004",
+      "event_id": "PD-SP-EVT-0199",
+      "master_id": "NAT-FIS-004",
+      "reference_literals": [
+        "E.G.745/2026"
+      ],
+      "match_method": "EXACT_NORMALISED_REFERENCE_OR_CONTROLLED_OVERRIDE",
+      "relationship_type": "SUBMISSION_REFERENCES_PROCEEDING",
+      "relationship_strength": "CONTEXT_OR_CITATION",
+      "operational_scope": "OUTSIDE_JUDICIAL_PROCEEDING",
+      "boundary_en": "The edge proves only that this event names the canonical reference in the stated role.",
+      "boundary_es": "El enlace prueba únicamente que este evento identifica la referencia canónica en la función indicada."
+    },
+    {
+      "edge_id": "MF-EDGE-PD-SP-EVT-0200-GC-CRI-008",
+      "event_id": "PD-SP-EVT-0200",
+      "master_id": "GC-CRI-008",
+      "reference_literals": [
+        "DP 1901/2026"
+      ],
+      "match_method": "EXACT_NORMALISED_REFERENCE_OR_CONTROLLED_OVERRIDE",
+      "relationship_type": "SUBMISSION_REFERENCES_PROCEEDING",
+      "relationship_strength": "CONTEXT_OR_CITATION",
+      "operational_scope": "INSIDE_JUDICIAL_PROCEEDING",
+      "boundary_en": "The edge proves only that this event names the canonical reference in the stated role.",
+      "boundary_es": "El enlace prueba únicamente que este evento identifica la referencia canónica en la función indicada."
+    },
+    {
+      "edge_id": "MF-EDGE-PD-SP-EVT-0201-GC-CRI-008",
+      "event_id": "PD-SP-EVT-0201",
+      "master_id": "GC-CRI-008",
+      "reference_literals": [
+        "DP 1901/2026"
+      ],
+      "match_method": "EXACT_NORMALISED_REFERENCE_OR_CONTROLLED_OVERRIDE",
+      "relationship_type": "SUBMISSION_REFERENCES_PROCEEDING",
+      "relationship_strength": "CONTEXT_OR_CITATION",
+      "operational_scope": "INSIDE_JUDICIAL_PROCEEDING",
+      "boundary_en": "The edge proves only that this event names the canonical reference in the stated role.",
+      "boundary_es": "El enlace prueba únicamente que este evento identifica la referencia canónica en la función indicada."
+    },
+    {
+      "edge_id": "MF-EDGE-PD-SP-EVT-0202-GC-CRI-008",
+      "event_id": "PD-SP-EVT-0202",
+      "master_id": "GC-CRI-008",
+      "reference_literals": [
+        "DP 1901/2026"
+      ],
+      "match_method": "EXACT_NORMALISED_REFERENCE_OR_CONTROLLED_OVERRIDE",
+      "relationship_type": "SUBMISSION_REFERENCES_PROCEEDING",
+      "relationship_strength": "CONTEXT_OR_CITATION",
+      "operational_scope": "INSIDE_JUDICIAL_PROCEEDING",
+      "boundary_en": "The edge proves only that this event names the canonical reference in the stated role.",
+      "boundary_es": "El enlace prueba únicamente que este evento identifica la referencia canónica en la función indicada."
+    },
+    {
+      "edge_id": "MF-EDGE-PD-SP-EVT-0203-NAT-FIS-004",
+      "event_id": "PD-SP-EVT-0203",
+      "master_id": "NAT-FIS-004",
+      "reference_literals": [
+        "E.G.745/2026"
+      ],
+      "match_method": "EXACT_NORMALISED_REFERENCE_OR_CONTROLLED_OVERRIDE",
+      "relationship_type": "SUBMISSION_REFERENCES_PROCEEDING",
+      "relationship_strength": "CONTEXT_OR_CITATION",
+      "operational_scope": "OUTSIDE_JUDICIAL_PROCEEDING",
+      "boundary_en": "The edge proves only that this event names the canonical reference in the stated role.",
+      "boundary_es": "El enlace prueba únicamente que este evento identifica la referencia canónica en la función indicada."
+    },
+    {
+      "edge_id": "MF-EDGE-PD-SP-EVT-0204-NAT-FIS-004",
+      "event_id": "PD-SP-EVT-0204",
+      "master_id": "NAT-FIS-004",
+      "reference_literals": [
+        "E.G.745/2026"
+      ],
+      "match_method": "EXACT_NORMALISED_REFERENCE_OR_CONTROLLED_OVERRIDE",
+      "relationship_type": "SUBMISSION_REFERENCES_PROCEEDING",
+      "relationship_strength": "CONTEXT_OR_CITATION",
+      "operational_scope": "OUTSIDE_JUDICIAL_PROCEEDING",
+      "boundary_en": "The edge proves only that this event names the canonical reference in the stated role.",
+      "boundary_es": "El enlace prueba únicamente que este evento identifica la referencia canónica en la función indicada."
+    },
+    {
+      "edge_id": "MF-EDGE-PD-SP-EVT-0205-NAT-FIS-004",
+      "event_id": "PD-SP-EVT-0205",
+      "master_id": "NAT-FIS-004",
+      "reference_literals": [
+        "E.G.745/2026"
+      ],
+      "match_method": "EXACT_NORMALISED_REFERENCE_OR_CONTROLLED_OVERRIDE",
+      "relationship_type": "SUBMISSION_REFERENCES_PROCEEDING",
+      "relationship_strength": "CONTEXT_OR_CITATION",
+      "operational_scope": "OUTSIDE_JUDICIAL_PROCEEDING",
+      "boundary_en": "The edge proves only that this event names the canonical reference in the stated role.",
+      "boundary_es": "El enlace prueba únicamente que este evento identifica la referencia canónica en la función indicada."
+    },
+    {
+      "edge_id": "MF-EDGE-PD-SP-EVT-0206-NAT-FIS-004",
+      "event_id": "PD-SP-EVT-0206",
+      "master_id": "NAT-FIS-004",
+      "reference_literals": [
+        "E.G.745/2026"
+      ],
+      "match_method": "EXACT_NORMALISED_REFERENCE_OR_CONTROLLED_OVERRIDE",
+      "relationship_type": "SUBMISSION_REFERENCES_PROCEEDING",
+      "relationship_strength": "CONTEXT_OR_CITATION",
+      "operational_scope": "OUTSIDE_JUDICIAL_PROCEEDING",
+      "boundary_en": "The edge proves only that this event names the canonical reference in the stated role.",
+      "boundary_es": "El enlace prueba únicamente que este evento identifica la referencia canónica en la función indicada."
+    },
+    {
+      "edge_id": "MF-EDGE-PD-SP-EVT-0207-NAT-FIS-004",
+      "event_id": "PD-SP-EVT-0207",
+      "master_id": "NAT-FIS-004",
+      "reference_literals": [
+        "E.G.745/2026"
+      ],
+      "match_method": "EXACT_NORMALISED_REFERENCE_OR_CONTROLLED_OVERRIDE",
+      "relationship_type": "SUBMISSION_REFERENCES_PROCEEDING",
+      "relationship_strength": "CONTEXT_OR_CITATION",
+      "operational_scope": "OUTSIDE_JUDICIAL_PROCEEDING",
+      "boundary_en": "The edge proves only that this event names the canonical reference in the stated role.",
+      "boundary_es": "El enlace prueba únicamente que este evento identifica la referencia canónica en la función indicada."
+    },
+    {
+      "edge_id": "MF-EDGE-PD-SP-EVT-0208-NAT-FIS-004",
+      "event_id": "PD-SP-EVT-0208",
+      "master_id": "NAT-FIS-004",
+      "reference_literals": [
+        "E.G.745/2026"
+      ],
+      "match_method": "EXACT_NORMALISED_REFERENCE_OR_CONTROLLED_OVERRIDE",
+      "relationship_type": "SUBMISSION_REFERENCES_PROCEEDING",
+      "relationship_strength": "CONTEXT_OR_CITATION",
+      "operational_scope": "OUTSIDE_JUDICIAL_PROCEEDING",
+      "boundary_en": "The edge proves only that this event names the canonical reference in the stated role.",
+      "boundary_es": "El enlace prueba únicamente que este evento identifica la referencia canónica en la función indicada."
+    },
+    {
+      "edge_id": "MF-EDGE-PD-SP-EVT-0209-NAT-FIS-004",
+      "event_id": "PD-SP-EVT-0209",
+      "master_id": "NAT-FIS-004",
+      "reference_literals": [
+        "E.G.745/2026"
+      ],
+      "match_method": "EXACT_NORMALISED_REFERENCE_OR_CONTROLLED_OVERRIDE",
+      "relationship_type": "SUBMISSION_REFERENCES_PROCEEDING",
+      "relationship_strength": "CONTEXT_OR_CITATION",
+      "operational_scope": "OUTSIDE_JUDICIAL_PROCEEDING",
+      "boundary_en": "The edge proves only that this event names the canonical reference in the stated role.",
+      "boundary_es": "El enlace prueba únicamente que este evento identifica la referencia canónica en la función indicada."
+    },
+    {
+      "edge_id": "MF-EDGE-PD-SP-EVT-0210-NAT-FIS-004",
+      "event_id": "PD-SP-EVT-0210",
+      "master_id": "NAT-FIS-004",
+      "reference_literals": [
+        "E.G.745/2026"
+      ],
+      "match_method": "EXACT_NORMALISED_REFERENCE_OR_CONTROLLED_OVERRIDE",
+      "relationship_type": "SUBMISSION_REFERENCES_PROCEEDING",
+      "relationship_strength": "CONTEXT_OR_CITATION",
+      "operational_scope": "OUTSIDE_JUDICIAL_PROCEEDING",
+      "boundary_en": "The edge proves only that this event names the canonical reference in the stated role.",
+      "boundary_es": "El enlace prueba únicamente que este evento identifica la referencia canónica en la función indicada."
+    },
+    {
+      "edge_id": "MF-EDGE-PD-SP-EVT-0211-NAT-FIS-004",
+      "event_id": "PD-SP-EVT-0211",
+      "master_id": "NAT-FIS-004",
+      "reference_literals": [
+        "E.G.745/2026"
+      ],
+      "match_method": "EXACT_NORMALISED_REFERENCE_OR_CONTROLLED_OVERRIDE",
+      "relationship_type": "SUBMISSION_REFERENCES_PROCEEDING",
+      "relationship_strength": "CONTEXT_OR_CITATION",
+      "operational_scope": "OUTSIDE_JUDICIAL_PROCEEDING",
+      "boundary_en": "The edge proves only that this event names the canonical reference in the stated role.",
+      "boundary_es": "El enlace prueba únicamente que este evento identifica la referencia canónica en la función indicada."
+    },
+    {
+      "edge_id": "MF-EDGE-PD-SP-EVT-0212-NAT-FIS-004",
+      "event_id": "PD-SP-EVT-0212",
+      "master_id": "NAT-FIS-004",
+      "reference_literals": [
+        "E.G.745/2026"
+      ],
+      "match_method": "EXACT_NORMALISED_REFERENCE_OR_CONTROLLED_OVERRIDE",
+      "relationship_type": "SUBMISSION_REFERENCES_PROCEEDING",
+      "relationship_strength": "CONTEXT_OR_CITATION",
+      "operational_scope": "OUTSIDE_JUDICIAL_PROCEEDING",
+      "boundary_en": "The edge proves only that this event names the canonical reference in the stated role.",
+      "boundary_es": "El enlace prueba únicamente que este evento identifica la referencia canónica en la función indicada."
+    },
+    {
       "edge_id": "MF-EDGE-PD-SP-EVT-1012-GC-FIS-016",
       "event_id": "PD-SP-EVT-1012",
       "master_id": "GC-FIS-016",
@@ -12187,6 +13462,17 @@
         "PD-SP-EVT-0138",
         "PD-SP-EVT-0139",
         "PD-SP-EVT-0140",
+        "PD-SP-EVT-0199",
+        "PD-SP-EVT-0203",
+        "PD-SP-EVT-0204",
+        "PD-SP-EVT-0205",
+        "PD-SP-EVT-0206",
+        "PD-SP-EVT-0207",
+        "PD-SP-EVT-0208",
+        "PD-SP-EVT-0209",
+        "PD-SP-EVT-0210",
+        "PD-SP-EVT-0211",
+        "PD-SP-EVT-0212",
         "PD-SP-EVT-1034",
         "PD-SP-EVT-1035",
         "PD-SP-EVT-1036",
@@ -12201,8 +13487,8 @@
         "GC-CRI-008"
       ],
       "counts": {
-        "events": 20,
-        "outbound": 8,
+        "events": 31,
+        "outbound": 19,
         "inbound": 12,
         "institution_to_institution": 0,
         "official_acts_or_decisions": 2,
@@ -12481,6 +13767,20 @@
       "event_ids": [
         "PD-SP-EVT-0082",
         "PD-SP-EVT-0083",
+        "PD-SP-EVT-0181",
+        "PD-SP-EVT-0182",
+        "PD-SP-EVT-0183",
+        "PD-SP-EVT-0184",
+        "PD-SP-EVT-0185",
+        "PD-SP-EVT-0186",
+        "PD-SP-EVT-0187",
+        "PD-SP-EVT-0188",
+        "PD-SP-EVT-0189",
+        "PD-SP-EVT-0190",
+        "PD-SP-EVT-0199",
+        "PD-SP-EVT-0200",
+        "PD-SP-EVT-0201",
+        "PD-SP-EVT-0202",
         "PD-SP-EVT-1020",
         "PD-SP-EVT-1021",
         "PD-SP-EVT-1022",
@@ -12488,9 +13788,9 @@
         "PD-SP-EVT-1024",
         "PD-SP-EVT-1025"
       ],
-      "event_count": 8,
+      "event_count": 22,
       "direct_edge_count": 7,
-      "context_edge_count": 1,
+      "context_edge_count": 15,
       "fiscalia_route_en": "/en/public-prosecution-communications-proceedings/#file=GC-CRI-008",
       "fiscalia_route_es": "/es/fiscalia-comunicaciones-procedimientos/#file=GC-CRI-008"
     },
@@ -12765,6 +14065,17 @@
         "PD-SP-EVT-0138",
         "PD-SP-EVT-0139",
         "PD-SP-EVT-0140",
+        "PD-SP-EVT-0199",
+        "PD-SP-EVT-0203",
+        "PD-SP-EVT-0204",
+        "PD-SP-EVT-0205",
+        "PD-SP-EVT-0206",
+        "PD-SP-EVT-0207",
+        "PD-SP-EVT-0208",
+        "PD-SP-EVT-0209",
+        "PD-SP-EVT-0210",
+        "PD-SP-EVT-0211",
+        "PD-SP-EVT-0212",
         "PD-SP-EVT-1034",
         "PD-SP-EVT-1035",
         "PD-SP-EVT-1036",
@@ -12775,9 +14086,9 @@
         "PD-SP-EVT-1041",
         "PD-SP-EVT-1042"
       ],
-      "event_count": 20,
+      "event_count": 31,
       "direct_edge_count": 14,
-      "context_edge_count": 6,
+      "context_edge_count": 17,
       "fiscalia_route_en": "/en/public-prosecution-communications-proceedings/#file=NAT-FIS-004",
       "fiscalia_route_es": "/es/fiscalia-comunicaciones-procedimientos/#file=NAT-FIS-004"
     },
@@ -13016,6 +14327,20 @@
         "PD-SP-EVT-0125",
         "PD-SP-EVT-0126",
         "PD-SP-EVT-0127",
+        "PD-SP-EVT-0181",
+        "PD-SP-EVT-0182",
+        "PD-SP-EVT-0183",
+        "PD-SP-EVT-0184",
+        "PD-SP-EVT-0185",
+        "PD-SP-EVT-0186",
+        "PD-SP-EVT-0187",
+        "PD-SP-EVT-0188",
+        "PD-SP-EVT-0189",
+        "PD-SP-EVT-0190",
+        "PD-SP-EVT-0199",
+        "PD-SP-EVT-0200",
+        "PD-SP-EVT-0201",
+        "PD-SP-EVT-0202",
         "PD-SP-EVT-1020",
         "PD-SP-EVT-1021",
         "PD-SP-EVT-1022",
@@ -13028,7 +14353,7 @@
         "PD-SP-EVT-1045",
         "PD-SP-EVT-1046"
       ],
-      "event_count": 18
+      "event_count": 32
     },
     {
       "chain_id": "MF-CHAIN-06-CENTRAL-SUPERVISION",
@@ -13063,6 +14388,17 @@
         "PD-SP-EVT-0138",
         "PD-SP-EVT-0139",
         "PD-SP-EVT-0140",
+        "PD-SP-EVT-0199",
+        "PD-SP-EVT-0203",
+        "PD-SP-EVT-0204",
+        "PD-SP-EVT-0205",
+        "PD-SP-EVT-0206",
+        "PD-SP-EVT-0207",
+        "PD-SP-EVT-0208",
+        "PD-SP-EVT-0209",
+        "PD-SP-EVT-0210",
+        "PD-SP-EVT-0211",
+        "PD-SP-EVT-0212",
         "PD-SP-EVT-1030",
         "PD-SP-EVT-1031",
         "PD-SP-EVT-1034",
@@ -13080,7 +14416,7 @@
         "PD-SP-EVT-1047",
         "PD-SP-EVT-1048"
       ],
-      "event_count": 34
+      "event_count": 45
     },
     {
       "chain_id": "MF-CHAIN-07-EG86-ARRECIFE",
