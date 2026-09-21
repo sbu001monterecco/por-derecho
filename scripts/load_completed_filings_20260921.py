@@ -27,7 +27,6 @@ def load_existing_cajasiete_events(root: Path) -> list[dict]:
     rows = deepcopy(data['canonical_event_rows'])
     if [row['event_id'] for row in rows] != ['PD-SP-EVT-0179', 'PD-SP-EVT-0180']:
         raise ValueError('Existing Cajasiete identity preservation drift')
-    rows[1]['record_type'] = 'INSTITUTIONAL_ACKNOWLEDGEMENT'
     return rows
 
 

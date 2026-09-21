@@ -9183,7 +9183,7 @@
       "public_derivative_state": "PUBLIC_SAFE_MINIMISED_DERIVATIVE",
       "public_summary": "Cajasiete stated on 18 September that the new material was incorporated and did not alter the April decision; the response remained institutionally signed and did not identify the decision owner or answer the requested conflict/audit-trail questions.",
       "public_summary_es": "Cajasiete afirmó el 18 de septiembre que el nuevo material fue incorporado y no alteraba la decisión de abril; la respuesta siguió firmada institucionalmente y no identificó al decisor ni contestó las preguntas de conflicto/audit trail.",
-      "record_type": "INSTITUTIONAL_ACKNOWLEDGEMENT",
+      "record_type": "INSTITUTIONAL_REVIEW_RESPONSE",
       "source_batch_id": "PD-CAJASIETE-ACCOUNTABILITY-20260918",
       "source_integrity": {
         "repository_anchor": "ops/cajasiete-accountability-register-input-20260918.json",
