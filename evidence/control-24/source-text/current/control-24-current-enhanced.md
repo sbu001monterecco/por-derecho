@@ -309,7 +309,7 @@ Página 3 de 27
 
 DENUNCIA PENAL DIRECTA — CONCURSO ORDINARIO 36/2012 — TSJ CANARIAS
 D. GIL MARER, mayor de edad, con NIE [IDENTIFICADOR PERSONAL OMITIDO], con domicilio a efectos de notificaciones en
-Calle Pozo Cabildo nº 34, San Cristóbal de La Laguna, Santa Cruz de Tenerife, C.P. 38208, y
+[DOMICILIO PERSONAL OMITIDO], y
 correo electrónico [CORREO ELECTRÓNICO OMITIDO], actuando en su propio nombre y derecho, como
 perjudicado directo e inversor afectado y dejando constancia de su conexión societaria, patrimonial
 y procesal con AWESWELL LIMITED, LUCHY PLAYA BLANCA, S.L.U. y MATKATOR, S.L.,
