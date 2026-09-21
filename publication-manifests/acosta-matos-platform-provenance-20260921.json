@@ -1,0 +1,57 @@
+{
+  "schema": "por-derecho.publication-state.v1",
+  "schema_version": "1.0.0",
+  "publication_id": "PD-PLATFORM-PROVENANCE-20260921-01",
+  "control_date": "2026-09-21",
+  "current_state": "PR_OPEN",
+  "owner": "Por Derecho / Project Sun Rock",
+  "authority": "Gil Marer — lock and wire the 100% attributed provenance allegation; update GitHub/Drive and prepare GitLab recovery",
+  "branch": "chatgpt/consejo-canario-professional-perimeter-20260921",
+  "pull_request": 1708,
+  "publication_boundary": "The 100% figure is Gil Marer's attributed causal/provenance allegation. It is not a model probability, an adjudicated tracing result, a finding of personal net worth, a determination that every later asset is illicit proceeds, or a present confiscation/proprietary entitlement.",
+  "expected_routes": {
+    "es": [
+      "es/tesis-proveniencia-plataforma-acosta-matos/index.html",
+      "es/acosta-matos-plataforma-hotelera/index.html"
+    ],
+    "en": [
+      "en/acosta-matos-platform-provenance-thesis/index.html",
+      "en/acosta-matos-hotel-platform/index.html"
+    ]
+  },
+  "expected_source_files": [
+    "assets/data/acosta-matos-platform-provenance-allegation-20260921.json",
+    "archive/ATTRIBUTED_100_PERCENT_PLATFORM_PROVENANCE_CONTROL_21SEP2026.md",
+    ".github/governance/PLATFORM_DISPLACEMENT_PATRIMONIAL_HARM_FOREIGN_INVESTOR_RULE_20SEP2026.md",
+    ".github/governance/WHOLE_WEALTH_AND_PREDECESSOR_RIGHTS_RECOVERY_RULE_20SEP2026.md",
+    "archive/ACOSTA_MATOS_WEALTH_TRAJECTORY_REVIEW_20SEP2026.md",
+    "assets/data/unitary-route-registry-v1.json",
+    "sitemap.xml",
+    "CHATGPT_START_HERE.md",
+    "archive/CONTINUOUS_MAINTENANCE_MATRIX.md"
+  ],
+  "validation": {
+    "evidence": [
+      "Public GitLab-hosted source snapshot dated 21-Sep-2026 preserves the pre-2022 Sun Park/RICPE chronology.",
+      "Gmail includes direct February 2020 pilot-room correspondence and a contemporaneous 12-Jun-2020 project/witness memo.",
+      "Library/Control 21 material preserves the 31-Jan-2019 Acosta Matos Hotel Lava Verde page at Calle Janubio 3.",
+      "Drive contains 2020 Project Playa Blanca, Sun Park transformation and NEXUS/control materials.",
+      "Financial-distress proposition remains a stated allegation pending 2016–2018 primary financial records.",
+      "Merge, deployment and live readback remain pending."
+    ]
+  },
+  "open_evidence": [
+    "2016–2018 CAM/Acosta Matos financial statements, liquidity, debt, facilities and acquisition source-of-funds",
+    "native 2018–2020 pilot/refurbishment contracts, invoices, payer and access-authority records",
+    "Meeting Point / Club Sei / Lava Verde commercialisation, allotment, booking and channel-manager records",
+    "RICPE 2019–2021 committee, due-diligence, subscription, series, drawdown and use-of-funds records",
+    "project-by-project causal decision-input analysis for later assets, mandates, relationships and capital access",
+    "consolidated accounts, demerger schedules and intercompany flows"
+  ],
+  "gitlab_recovery": "When access returns, reconcile additively against actual GitLab main; preserve divergent history; port the control, public routes and machine record; keep 100% expressly attributed; retain all evidential/third-party boundaries; run GitLab validators before live status.",
+  "drive_controls": [
+    "https://docs.google.com/document/d/1S1Mxr062IE0BlMtCZGUUSBViS7Txz703G4PhlrDbxIE/edit",
+    "https://docs.google.com/document/d/1UIfH5QcPs76-KndH-1lWQGNPfbVXBhSKxI9I6_AdR2k/edit",
+    "https://docs.google.com/document/d/1_aDMF6L8wa9pvdmKSYXdoyktosOeBVKY8f7hBMMKgiQ/edit"
+  ]
+}
