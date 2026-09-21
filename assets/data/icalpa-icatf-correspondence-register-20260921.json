@@ -25,7 +25,11 @@
       "informa@icatf.es",
       "info@icatf.es",
       "delegacionnorte@icatf.es"
-    ]
+    ],
+    "icalpa_legacy_observed": [
+      "3077@icalpa.com"
+    ],
+    "legacy_note": "Legacy/individual ICALPA-domain addresses were also used historically. They are not treated as current official submission channels; 3077@icalpa.com is preserved as a historic lawyer/colegiado-domain address in the source record."
   },
   "prior_independence_language": {
     "dip80_20aug": "No se pretende ejercer presión impropia sobre el ponente ni exigir una sanción. Se pretende que ... el Colegio ejerza visiblemente su función mediante una decisión motivada o un plan finito, fechado y responsable.",
