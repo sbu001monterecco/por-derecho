@@ -3,6 +3,15 @@
 **Estado:** análisis interno de evidencia / control de publicación.  
 **Regla:** hipótesis penal, no sentencia de culpabilidad. Separar HECHO VERIFICADO / POSICIÓN DE PARTE / INFERENCIA / PRUEBA ABIERTA.
 
+
+## Revalidación forense/procesal v3 · 21SEP2026
+
+El documento fue procesado de forma privada con el lector forense ya desplegado: **22 páginas, 206 bloques lógicos, 276 proposiciones de enunciado, 206 composiciones de párrafo y 482 registros de reconstrucción de verdad**. Todos permanecen **PROPOSED / PROVISIONAL**. La herramienta no asigna porcentajes de verdad y no promueve por sí sola una contradicción a mentira, dolo o responsabilidad penal.
+
+El pase aisló cuatro relaciones de contradicción/estrechamiento con soporte identificado; tres se refieren a la amplitud de la narrativa de falta de colaboración/documentación y una a la explicación general sobre la sucesión de letrados. El resto se mantiene como parcial, no resuelto, apoyado o retórico/jurídico según la evidencia disponible. La publicación no expone el JSON privado ni los localizadores de fuentes privadas; proyecta sólo controles fuente-seguros.
+
+El original firmado permanece bajo custodia con SHA-256 `5e0728185cf9b686abd723497d2a53a2656a5e0de4d323a734ed02880eb1d711`. El visor público usa un derivado de 22 páginas, SHA-256 `df43ba1d044c59177a85dea18c98f64b0c9c826ec7ba030c332a1e9cfb7abd14`, que conserva el contenido visible y el sello visual de firma pero elimina formulario, anotaciones y certificado digital embebido con identificadores no necesarios.
+
 ## Tesis depurada
 
 La “inversión de la verdad” no debe presentarse como una etiqueta psicológica ni como prueba automática de conspiración. El mecanismo documental que debe probarse o refutarse es:
