@@ -12,6 +12,7 @@ required=[
  BASE/"frozen/ref21-25jun2026-pages-001-030.md",BASE/"frozen/ref21-25jun2026-pages-031-060.md",BASE/"frozen/ref21-25jun2026-pages-061-086.md",
  BASE/"frozen/ref21-26jun2026-working-pages-001-026.md",BASE/"frozen/ref21-09jul2026-ampliacion-pages-001-019.md",
  BASE/"frozen/ref22-18jun2026-pages-001-030.md",BASE/"frozen/ref22-18jun2026-pages-031-055.md",
+ BASE/"frozen-linked/di169-ref24-traceability-aportacion-25jun2026.md",
  ROOT/"evidence/judicial-governance/decanato-reference-24/full-text/denuncia-magistrado-18jun2026-public-transcription.md",
  ROOT/"evidence/judicial-governance/decanato-reference-24/full-text/ampliacion-denuncia-magistrado-25jun2026-public-transcription.md",
 ]
@@ -25,6 +26,8 @@ if not fail:
  if data["tracks"]["REF21"]["frozen"].get("ampliacion_pages")!=19: fail.append("ref21_09jul_pages")
  if data["tracks"]["REF22"]["frozen"].get("pages")!=55: fail.append("ref22_pages")
  if data["tracks"]["REF24"]["frozen"].get("supplement_pages")!=13: fail.append("ref24_supplement_pages")
+ if data["tracks"]["REF24"].get("linked_institutional_traceability",{}).get("pages")!=9: fail.append("ref24_cgpj_trace_pages")
+ if data["tracks"]["REF24"].get("linked_institutional_traceability",{}).get("relationship")!="SEPARATE_INSTITUTIONAL_ROUTE_NOT_SECOND_REF24_JUDICIAL_PLEADING": fail.append("ref24_cgpj_route_separation")
 
  pii_patterns=[r"Y2231410X",r"sbu001@",r"Pozo Cabildo",r"\+34\s*648",r"\+44\s*7748"]
  for p in (BASE/"frozen").glob("*.md"):
