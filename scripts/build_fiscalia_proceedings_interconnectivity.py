@@ -26,8 +26,8 @@ PUBLIC_MASTER = ROOT / "assets/data/proceedings-master-public-v1.json"
 ASSERTIONS = ROOT / "assets/data/fiscalia-proceedings-link-assertions-v1.json"
 TARGET = ROOT / "assets/data/fiscalia-proceedings-interconnectivity-v1.json"
 
-EXPECTED_EVENTS = 296
-EXPECTED_MATTER_LINKED_EVENTS = 117
+EXPECTED_EVENTS = 320
+EXPECTED_MATTER_LINKED_EVENTS = 141
 EXPECTED_FISCALIA_EXACT = 23
 EXPECTED_FISCALIA_UNRESOLVED = 3
 NON_FISCALIA_SOURCE_BATCHES = {
@@ -35,6 +35,7 @@ NON_FISCALIA_SOURCE_BATCHES = {
     "PD-CAJASIETE-ACCOUNTABILITY-20260918",
 }
 SUPPORT_REFERENCE_PREFIXES = ("REGAGE",)
+STATUS_EXPORT_SOURCE_PREFIX = "REGAGE_STATUS_EXPORT_20260921:"
 FISCALIA_RECORD_TYPES = {"FISCALIA_FILE", "UNRESOLVED_REFERENCE"}
 
 
@@ -184,6 +185,7 @@ def build() -> dict[str, Any]:
         event
         for event in communications["events"]
         if event.get("event_id") not in non_fiscalia_authority_ids | non_fiscalia_notice_ids
+        and not str(event.get("source_key", "")).startswith(STATUS_EXPORT_SOURCE_PREFIX)
     ]
 
     if len(events) != EXPECTED_EVENTS:

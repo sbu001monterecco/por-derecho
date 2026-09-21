@@ -1,5 +1,6 @@
 {
   "aggregate_only_control": {
+    "current_status_export_supersedes_as_current_denominator": true,
     "reported_rows": 22,
     "representation": "MF-UNRESOLVED-BATCH-001",
     "synthetic_event_rows": 0
@@ -29,7 +30,7 @@
     "registration_events_added": 24,
     "source_input": "ops/dp1901-eg745-registration-input-20260921.json"
   },
-  "control_date": "2026-09-01",
+  "control_date": "2026-09-21",
   "incremental_refresh_2026_08_31": {
     "already_indexed_in_scope_events": 7,
     "excluded_automated_repository_notifications": 4,
@@ -110,17 +111,19 @@
     "universal_completeness_claim": false
   },
   "regage_status_export_2026_09_21": {
-    "new_event_id_range": [
+    "added_status_events": 284,
+    "generic_event_id_range": [
       "PD-SP-EVT-0213",
       "PD-SP-EVT-0496"
     ],
-    "new_formal_events": 284,
+    "generic_id_additions": 284,
     "proof_boundary": "Literal registry status only; no onward delivery, routing, incorporation, admission, examination, merits or criminal responsibility inferred.",
     "raw_source_committed": false,
     "raw_source_sha256": "5cc7eaa867b248b0bff7e9cd19e5093dfe2df494fae8ca84c8f12c15382016a3",
+    "receipt_controlled_overlap_events": 22,
     "records": 398,
     "reused_existing_formal_events": 114,
-    "source_input": "ops/regage-status-export-input-20260921.json",
+    "source_path": "ops/regage-status-export-input-20260921.json",
     "status_literal_es": {
       "Enviado": 36,
       "Rechazado": 26,
@@ -128,15 +131,15 @@
     }
   },
   "register_path": "assets/data/institutional-communications-register-v1.json",
-  "register_sha256": "08e53b46bae787a3b04112cb0ea370b0337c4ffdbd0541588780688b0629e541",
+  "register_sha256": "e15f9fdc2595c174a05f984e460a94c50246369606a41d1340bb20e492ad3a9b",
   "schema": "por-derecho.institutional-communications-scan-checkpoint.v1",
   "source_required_and_normalisation_gates": [
-    "Historical 22-record RedSARA/AGE aggregate is retained as provenance; the current denominator is the 398-row individual status export of 21 September 2026.",
+    "Historical 22-record RedSARA/AGE aggregate remains provenance; the current 398-row status export is represented individually without inferring a one-to-one legacy mapping.",
     "EG 58/2026 discrete official act remains source-required.",
     "DP 1901/2026 signed Fiscal report and later judicial act remain source-required.",
     "EG 6/2026 underlying act substantive digest remains pending.",
     "Six August-family receipt rows await one-to-one public destination-label normalisation; no destination is guessed.",
     "81 mailbox rows retain ROUTE_NOT_PUBLICLY_ATTESTED pending a primary bridge.",
-    "Historical 31-Aug scan found no post-notification E.G.745 reposición receipt; superseded by the separately verified 21-Sep principal and nine linked annex registrations below."
+    "Historical 31-Aug scan found no post-notification E.G. 745 native receipt; superseded by the separately verified 21-Sep principal and nine linked annex registrations."
   ]
 }

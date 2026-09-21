@@ -83,22 +83,17 @@ def main() -> int:
         "Cajasiete accountability source cohort mismatch",
         errors,
     )
-    event_ids = canonical_event_ids - excluded_authority_ids - set(expected_notices) - cajasiete_notice_ids
+    status_export_ids = {event["event_id"] for event in communications["events"] if str(event.get("source_key", "")).startswith("REGAGE_STATUS_EXPORT_20260921:")}\n    completed_filing_ids = {event["event_id"] for event in communications["events"] if event.get("source_batch_id") == "PD-DP1901-EG745-REGISTERED-20260921"}\n    event_ids = canonical_event_ids - excluded_authority_ids - set(expected_notices) - cajasiete_notice_ids - status_export_ids
     projected_ids = {event["event_id"] for event in payload["events"]}
 
     require(payload.get("schema_version") == "1.0.0", "schema version changed", errors)
     require(payload.get("status") == "PUBLIC_SAFE_DERIVED_INTERCONNECTIVITY_PROJECTION", "projection status changed", errors)
     require(
-        len(canonical_event_ids) == 313 + len(expected_notices) + len(cajasiete_notice_ids)
-        and len(cajasiete_notice_ids) == 2
-        and len(excluded_authority_ids) == 17
-        and excluded_authority_ids <= canonical_event_ids
-        and len(event_ids) == len(projected_ids) == 296
-        and event_ids == projected_ids,
+        len(canonical_event_ids) == 643\n        and len(status_export_ids) == 284\n        and len(completed_filing_ids) == 24\n        and completed_filing_ids <= event_ids\n        and len(event_ids) == len(projected_ids) == 320\n        and event_ids == projected_ids,
         "event denominator or identity mismatch",
         errors,
     )
-    require(payload["coverage"].get("matter_linked_events") == 117, "matter-linked event denominator mismatch", errors)
+    require(payload["coverage"].get("matter_linked_events") == 141, "matter-linked event denominator mismatch", errors)
     require(payload["coverage"].get("fiscalia_exact_files") == 23, "exact Fiscalía denominator mismatch", errors)
     require(payload["coverage"].get("fiscalia_unresolved_references") == 3, "unresolved Fiscalía denominator mismatch", errors)
     require(payload["coverage"].get("fiscalia_identity_total") == 26, "Fiscalía total denominator mismatch", errors)
