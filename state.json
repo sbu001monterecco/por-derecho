@@ -2,7 +2,7 @@
   "schema": "por-derecho.publication-runtime.v1",
   "fence": 29,
   "owner": "1670:c5ac37113a24ffce72765a2b4ba6efc07c1a4113",
-  "phase": "DEPLOYED",
+  "phase": "VERIFIED_FOR_SCOPE",
   "pr": 1670,
   "base_sha": "1d64a8681489c802b31183b0d4d155137b19a193",
   "candidate_sha": "c5ac37113a24ffce72765a2b4ba6efc07c1a4113",
@@ -1774,6 +1774,32 @@
       ],
       "pending": [],
       "scope": "Changed readable public resources plus ES/EN entrypoints. Browser checks are separate premerge evidence; not a whole-site or legal-proof certificate."
+    },
+    {
+      "pr": 1670,
+      "candidate_sha": "c5ac37113a24ffce72765a2b4ba6efc07c1a4113",
+      "at": "2026-09-21T12:15:29.433601Z",
+      "merge_sha": "85e78e5b1942f1d568b490bfb459d69f55bf83d8",
+      "pages_run_id": 35598355948,
+      "exact_matches": [
+        {
+          "path": "en/index.html",
+          "sha256": "c048d21d4c94e3cb6896e4c74d69a9ab73f84c3426d40fe815370b40fe1ba109",
+          "bytes": 228197
+        },
+        {
+          "path": "es/index.html",
+          "sha256": "48a7ebf0751867525f140cf3e70c34f8fe22a1c6edd7aeb0b3178e788da95dda",
+          "bytes": 237351
+        },
+        {
+          "path": "ops/continuity/GITHUB_ACCESS_PATH_AND_CURRENT_MAIN_SCAN_20260919.md",
+          "sha256": "e6f0f87cc1824cb55429ee796383384f511d8340db9b852b63e9030a74312754",
+          "bytes": 6991
+        }
+      ],
+      "pending": [],
+      "scope": "Changed readable public resources plus ES/EN entrypoints. Browser checks are separate premerge evidence; not a whole-site or legal-proof certificate."
     }
   ],
   "checkpoints": [
@@ -1816,7 +1842,34 @@
         "pages_run_id": 35598355948,
         "merge_sha": "85e78e5b1942f1d568b490bfb459d69f55bf83d8"
       }
+    },
+    {
+      "phase": "VERIFIED_FOR_SCOPE",
+      "at": "2026-09-21T12:15:29.433568Z",
+      "evidence": {
+        "merge_sha": "85e78e5b1942f1d568b490bfb459d69f55bf83d8",
+        "pages_run_id": 35598355948,
+        "exact_matches": [
+          {
+            "path": "en/index.html",
+            "sha256": "c048d21d4c94e3cb6896e4c74d69a9ab73f84c3426d40fe815370b40fe1ba109",
+            "bytes": 228197
+          },
+          {
+            "path": "es/index.html",
+            "sha256": "48a7ebf0751867525f140cf3e70c34f8fe22a1c6edd7aeb0b3178e788da95dda",
+            "bytes": 237351
+          },
+          {
+            "path": "ops/continuity/GITHUB_ACCESS_PATH_AND_CURRENT_MAIN_SCAN_20260919.md",
+            "sha256": "e6f0f87cc1824cb55429ee796383384f511d8340db9b852b63e9030a74312754",
+            "bytes": 6991
+          }
+        ],
+        "pending": [],
+        "scope": "Changed readable public resources plus ES/EN entrypoints. Browser checks are separate premerge evidence; not a whole-site or legal-proof certificate."
+      }
     }
   ],
-  "updated_at": "2026-09-21T12:15:26.248502Z"
+  "updated_at": "2026-09-21T12:15:29.433568Z"
 }
