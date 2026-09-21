@@ -84,3 +84,13 @@ New canonical files:
 - `archive/PINK_CANARY_NARRATIVE_PROPAGATION_GRAPH_21SEP2026.json`
 
 Public GitLab Pages currently exposes an RPL 3304/2025 record that predates the recovered 17-September-2026 AC opposition. When GitLab repository access returns, reconcile and add the new filing without overwriting GitLab-only work.
+
+
+## Drive mirror — narrative rescan
+
+Native Google Doc mirror created and verified:
+- title: `PINK_CANARY_NARRATIVE_PROPAGATION_PROSECUTORIAL_RESCAN_21SEP2026`
+- Drive file ID: `1BdWFw8jMyB9NHjJ_P5sqMjAqG3SqmaviTGBaNMAc2cM`
+- parent: `Pink Canary Unitary Prosecutorial Review 21SEP2026`
+
+The canonical raw Markdown and JSON remain GitHub-controlled; the Drive document is a preservation/review mirror.
