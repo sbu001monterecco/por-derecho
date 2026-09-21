@@ -9,7 +9,7 @@ Delivery rule: prepare and send as two separate, personalised lawyer communicati
 
 The next lawyer updates concerning DP 1901/2026 and the immediate response programme must give counsel the missing procedural background from the June 2026 Las Palmas filings before asking them to act.
 
-The explanatory objective is simple: counsel already knew the Administrator Concursal criminal track, but they did not previously know the other two June tracks. The update must therefore reconstruct the three filings in a short chronological sequence, explain what each one concerned, and then show why the 14 September DP 1901 Auto makes the identity/routing issue urgent.
+The explanatory objective is simple: counsel already knew the Administrator Concursal track and, as the July correspondence now confirms, both lawyer groups were also informed contemporaneously of the CAM/private-actor lane being handled as DP 1901. What they were not sent, on the evidence currently located, is the separate Ref.24 judge/TSJC complaint itself. The update must therefore reconstruct the three filings in a short chronology, remind counsel of what they were already told in July, disclose the previously unseen Ref.24 material, and then show why the 14 September DP 1901 Auto creates an urgent identity/routing problem.
 
 Use an explanation-first structure. Do not overwhelm counsel with every later institutional filing or every evidential annex before they understand the three-track architecture.
 
@@ -34,15 +34,18 @@ The desired reaction is not agreement with the client's interpretation. The desi
 
 ### What counsel had and had not received before this update
 
-The knowledge boundary must be stated explicitly in both personalised emails:
+The Gmail recheck on 21 September materially corrects the earlier assumed knowledge boundary. Both personalised emails must preserve this corrected state:
 
-- Both Sixto Abogados and Carlos Llamas Sanz already knew of the **Administrador Concursal complaint / DP 1956/2026** and its provisional dismissal.
-- They had **not received the Ref.21 private-actor complaint** filed in June.
-- They had **not received the Ref.24 judge-related denuncia/notitia criminis** filed in June and directed to the TSJC.
-- They had **not received the 14 September 2026 DP 1901 Auto**, received by the client in paper form on 18 September 2026. The forthcoming email is the first time counsel are being given that resolution.
-- They had also **not received the earlier one-page DP 1901 court paper/providencia from the summer**. That paper should now be sent with the new Auto because it is part of the before/after chronology.
+- Both Sixto Abogados and Carlos Llamas Sanz already knew of the **Administrador Concursal complaint / DP 1956/2026**.
+- **Sixto Abogados were expressly informed on 9 July that the then-operational mapping was “1901: Contra CAM y otras partes de la Comunidad de Propietarios” and “1956: Contra la AC”.** The 9 July email attached the stamped private-actor DP1901 cover and ATLANTE image.
+- On 12 July Sixto were again told that Plaza 6 was being approached about **“la denuncia contra CAM y la CP”**, identified as 1901/2026, and that staff reported a providencia giving traslado to Fiscalía.
+- **Carlos Llamas Sanz was likewise informed on 9 July** that the Las Palmas complaints against AC and CAM+Comunidad had appeared as opened, and was sent the stamped DP1901 private-actor cover and ATLANTE image. On 20 July he was again told that Plaza 6 was handling the CAM/CP complaint as 1901/2026 and was sent the substantive private-actor complaint package.
+- Therefore **do not present Ref.21 / the private-actor DP1901 lane as new information to either lawyer group.** Their contemporaneous receipt of that information is itself important evidence that the private-actor identity is not a reconstruction invented after the September Auto.
+- On the targeted Gmail searches performed to date, **no transmission to either lawyer group has been located of the separate Ref.24 judge-related denuncia/notitia criminis package or its 25 June dependent supplement.** This remains the genuinely new June filing to explain, subject to any later contrary source.
+- The **14 September 2026 DP 1901 Auto**, received by the client in paper form on 18 September, is to be supplied now as the new adverse development.
+- Counsel knew in July that a providencia/traslado to Fiscalía was expected, because this was reported to them contemporaneously. The current update should supply the actual one-page signed 12 July providencia if they did not previously receive the document itself; do not imply they were unaware of its reported existence.
 
-Do not write as though counsel had been following DP 1901 during the summer. Their prior awareness of DP 1956 must not be allowed to imply awareness of Ref.21, Ref.24, the July DP1901 processing, or the 14 September Auto.
+The email should therefore say, in substance: **“You already knew that in July we were treating DP1901 as the CAM/private-actor case. What you did not have was the separate judge/TSJC Ref.24 filing. The new Auto now describes that same DP1901 as having been opened for judicial prevaricación.”**
 
 ### Track A — Administrator Concursal — known to counsel
 
@@ -52,12 +55,12 @@ Do not write as though counsel had been following DP 1901 during the summer. The
 - DP 1956 was provisionally dismissed / archived. Preserve that distinction: do not describe it as a sobreseimiento libre or as final res judicata.
 - The client presently expects forthcoming Audiencia Provincial appellate developments to provide material capable of supporting a request to reopen DP 1956. This is a client expectation and litigation strategy point, not an already-established future judicial outcome. Counsel should assess reopening when the relevant appellate decision(s) and resulting evidence are available.
 
-### Track B — private actors / Acosta Matos perimeter — not previously known to counsel as a June autonomous complaint
+### Track B — private actors / Acosta Matos perimeter — known to counsel in July as the DP1901 lane
 
 - 25 June 2026: autonomous complaint against private actors, controlled as Ref.21.
 - The controlled record contemporaneously associates this private-actor track with DP 1901/2026, including later private-actor material tendered under DP 1901.
 - The 9 July stamped private-actor material and the client's 9–12 July contemporaneous communications are important because they show that, at the time, the client was treating and following DP 1901 as the private-actor / CAM-Community matter.
-- Sixto Abogados and Carlos Llamas Sanz are to be told explicitly that this was a separate June complaint from the AC complaint.
+- The lawyer updates should remind Sixto Abogados and Carlos Llamas Sanz that they were already told in July that this was separate from the AC complaint and was being handled operationally as DP1901. Use their contemporaneous emails as a chronology anchor, not as certified reparto proof.
 - The official electronic creation/reparto record and the later Ref.24 association mechanism remain outstanding. Do not convert the contemporaneous Ref.21 -> DP 1901 position into a certified court-routing fact until the official history is produced.
 
 ### Track C — Magistrate / judicial-conduct notitia criminis — not previously known to counsel
@@ -101,10 +104,10 @@ Each email should be individually written for its recipient relationship but sho
 - appreciation and concise context;
 - an early, non-defensive acknowledgement that Javier had previously warned against steps that might backfire or mis-trigger, coupled with a concise explanation that the purpose of the update is to show exactly what was filed and what happened afterwards;
 - a short **"what I did / what I did not do"** clarification: three separate presentations; no claim that Ref.24 was a formal querella; no request that the ordinary Plaza 6 court acquire TSJC competence; no attempt to merge Ref.21 and Ref.24;
-- a short **"what you had not previously seen"** paragraph: neither Ref.21 nor Ref.24 had been sent to counsel; neither the summer one-page DP1901 court paper nor the 14 September Auto had previously been sent to them; the present email is their first complete briefing on those materials;
+- a short **"what you already knew / what is genuinely new"** paragraph: remind them that in July they were told and sent materials showing DP1901 as the CAM/private-actor lane; explain that the separate Ref.24 judge/TSJC filing itself was not located in the material previously sent to them; supply the signed 12 July providencia document if not previously provided and the new 14 September Auto;
 - immediate focus: the 14 September DP 1901 Auto and action required;
 - one short paragraph reminding counsel of the known Ref.22 -> DP 1956 AC track and its provisional dismissal;
-- one short paragraph introducing the previously unknown Ref.21 private-actor complaint;
+- one short paragraph reminding them of the Ref.21/private-actor complaint and their July receipt of the DP1901/CAM mapping;
 - one short paragraph introducing the previously unknown Ref.24 judge notitia criminis directed to the TSJC;
 - a simple three-track chronology;
 - explanation of the later DP 1901 identity/routing collision;
