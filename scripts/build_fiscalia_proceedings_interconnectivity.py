@@ -97,7 +97,12 @@ def build_alias_index(
 
 
 def is_support_reference(reference: str) -> bool:
-    return normalise_reference(reference).startswith(SUPPORT_REFERENCE_PREFIXES)
+    normalised = normalise_reference(reference)
+    return (
+        normalised.startswith(SUPPORT_REFERENCE_PREFIXES)
+        or bool(re.fullmatch(r"A(?:0[1-9]|1[0-3])", normalised))
+        or normalised == "IFMCS"
+    )
 
 
 def relation_type(event: dict[str, Any], direct: bool) -> str:

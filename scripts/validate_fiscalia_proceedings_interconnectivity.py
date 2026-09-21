@@ -83,13 +83,26 @@ def main() -> int:
         "Cajasiete accountability source cohort mismatch",
         errors,
     )
-    status_export_ids = {event["event_id"] for event in communications["events"] if str(event.get("source_key", "")).startswith("REGAGE_STATUS_EXPORT_20260921:")}\n    completed_filing_ids = {event["event_id"] for event in communications["events"] if event.get("source_batch_id") == "PD-DP1901-EG745-REGISTERED-20260921"}\n    event_ids = canonical_event_ids - excluded_authority_ids - set(expected_notices) - cajasiete_notice_ids - status_export_ids
+    status_export_ids = {
+        event["event_id"] for event in communications["events"]
+        if str(event.get("source_key", "")).startswith("REGAGE_STATUS_EXPORT_20260921:")
+    }
+    completed_filing_ids = {
+        event["event_id"] for event in communications["events"]
+        if event.get("source_batch_id") == "PD-DP1901-EG745-REGISTERED-20260921"
+    }
+    event_ids = canonical_event_ids - excluded_authority_ids - set(expected_notices) - cajasiete_notice_ids - status_export_ids
     projected_ids = {event["event_id"] for event in payload["events"]}
 
     require(payload.get("schema_version") == "1.0.0", "schema version changed", errors)
     require(payload.get("status") == "PUBLIC_SAFE_DERIVED_INTERCONNECTIVITY_PROJECTION", "projection status changed", errors)
     require(
-        len(canonical_event_ids) == 643\n        and len(status_export_ids) == 284\n        and len(completed_filing_ids) == 24\n        and completed_filing_ids <= event_ids\n        and len(event_ids) == len(projected_ids) == 320\n        and event_ids == projected_ids,
+        len(canonical_event_ids) == 643
+        and len(status_export_ids) == 284
+        and len(completed_filing_ids) == 24
+        and completed_filing_ids <= event_ids
+        and len(event_ids) == len(projected_ids) == 320
+        and event_ids == projected_ids,
         "event denominator or identity mismatch",
         errors,
     )

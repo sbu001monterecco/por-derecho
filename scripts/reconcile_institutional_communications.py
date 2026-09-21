@@ -1804,7 +1804,20 @@ def build_checkpoint(register_sha256: str, source_sha256: str, mailbox_index_sha
             "synthetic_event_rows": 0,
             "current_status_export_supersedes_as_current_denominator": True,
         },
-        "completed_filings_2026_09_21": {\n            "control_date": "2026-09-21",\n            "source_input": "ops/dp1901-eg745-registration-input-20260921.json",\n            "registration_events_added": 24,\n            "dp1901_actions": 13,\n            "dp1901_registration_events": 14,\n            "eg745_linked_registrations": 10,\n            "eg745_principal_registration": "REGAGE26e00082068814",\n            "eg745_final_registration": "REGAGE26e00082070021",\n            "admission_incorporation_or_examination_proved": False,\n            "historical_mail_scan_results_retained_as_dated_findings": True,\n            "new_mail_scan_performed": False,\n        },\n        "regage_status_export_2026_09_21": {
+        "completed_filings_2026_09_21": {
+            "control_date": "2026-09-21",
+            "source_input": "ops/dp1901-eg745-registration-input-20260921.json",
+            "registration_events_added": 24,
+            "dp1901_actions": 13,
+            "dp1901_registration_events": 14,
+            "eg745_linked_registrations": 10,
+            "eg745_principal_registration": "REGAGE26e00082068814",
+            "eg745_final_registration": "REGAGE26e00082070021",
+            "admission_incorporation_or_examination_proved": False,
+            "historical_mail_scan_results_retained_as_dated_findings": True,
+            "new_mail_scan_performed": False,
+        },
+        "regage_status_export_2026_09_21": {
             "source_path": "ops/regage-status-export-input-20260921.json",
             "raw_source_sha256": REGAGE_STATUS_EXPORT_RAW_SHA256,
             "raw_source_committed": False,
