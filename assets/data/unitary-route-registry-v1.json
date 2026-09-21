@@ -2184,5 +2184,49 @@
       "CCCA",
       "professional perimeter"
     ]
+  },
+  {
+    "lang": "es",
+    "path": "es/tesis-proveniencia-plataforma-acosta-matos/",
+    "title": "Tesis atribuida de proveniencia de plataforma — Acosta Matos / RICPE",
+    "type": "analysis",
+    "summary": "Cronología 2018–2022 de uso económico pre-formalización y alegación atribuida de Gil Marer de proveniencia del 100% de beneficios posteriores, con límites probatorios explícitos.",
+    "tags": [
+      "Acosta Matos",
+      "RICPE",
+      "Sun Park",
+      "Lava Verde",
+      "proveniencia",
+      "desplazamiento patrimonial",
+      "2018",
+      "2022"
+    ],
+    "aliases": [
+      "100% provenance allegation",
+      "commercialisation before adjudication",
+      "patrimonial displacement"
+    ]
+  },
+  {
+    "lang": "en",
+    "path": "en/acosta-matos-platform-provenance-thesis/",
+    "title": "Attributed platform-provenance thesis — Acosta Matos / RICPE",
+    "type": "analysis",
+    "summary": "2018–2022 pre-formalisation economic-use chronology and Gil Marer's attributed 100% provenance allegation concerning later benefits, with explicit evidential boundaries.",
+    "tags": [
+      "Acosta Matos",
+      "RICPE",
+      "Sun Park",
+      "Lava Verde",
+      "provenance",
+      "patrimonial displacement",
+      "2018",
+      "2022"
+    ],
+    "aliases": [
+      "100% provenance allegation",
+      "commercialisation before adjudication",
+      "patrimonial displacement"
+    ]
   }
 ]
