@@ -88,7 +88,7 @@ ASUNTO: Denuncia penal sobre la actuación del Administrador Concursal de LPB en
 activa, la salida financiada de 2018, el desplazamiento del control material y económico de Sun Park y
 determinadas operaciones posteriores de liquidación.
 D. GIL MARER, mayor de edad, con NIE [IDENTIFICADOR PERSONAL OMITIDO], con domicilio a efectos de notificaciones en
-Calle Pozo Cabildo nº 34, San Cristóbal de La Laguna, Santa Cruz de Tenerife, C.P. 38208, correo
+[DOMICILIO PERSONAL OMITIDO], correo
 electrónico [CORREO ELECTRÓNICO OMITIDO] y teléfono complementario [TELÉFONO OMITIDO], compareciendo
 PERSONALMENTE, sin intervención formal de abogado ni procurador en este acto, actuando en su
 propio nombre y derecho y dejando constancia de su conexión societaria, patrimonial, económica y
