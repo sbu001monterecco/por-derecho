@@ -7,12 +7,12 @@
   "current_state": "PR_OPEN",
   "expected_routes": {
     "es": [
-      "/es/capital-institucional/",
-      "/es/relaciones-de-capital/"
+      "es/capital-institucional/index.html",
+      "es/relaciones-de-capital/index.html"
     ],
     "en": [
-      "/en/institutional-capital/",
-      "/en/capital-relationships/"
+      "en/institutional-capital/index.html",
+      "en/capital-relationships/index.html"
     ]
   },
   "authority": "Gil Marer current instruction to update GitHub and private Google Drive now and preserve an additive GitLab recovery path.",
