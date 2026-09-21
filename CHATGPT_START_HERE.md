@@ -231,3 +231,13 @@ Locked source state:
 - Consejo Canario drafting must ask for a conflict-cleared, actually/apparently independent ponente/instructor, formal logging of materially relevant external approaches, and formal/traceable/contradictable entry of substantive communications.
 - Do not infer institutional ICALPA notice from lawyer-specific 3077@icalpa.com / icalpa3077@icalpa.com mailboxes.
 - Raw provider IDs/private contact data remain outside the public repository.
+
+## ICALPA / ICATF correspondence census and ponente independence — 21 September 2026
+
+For Consejo Canario, ICALPA DIP 79/2026, DIP 80/2026, ICATF, ICAM→Tenerife or CGAE drafting, first read `archive/ICALPA_ICATF_CORRESPONDENCE_INDEPENDENCE_CONTROL_21SEP2026.md` and `assets/data/icalpa-icatf-correspondence-register-20260921.json`.
+
+Bounded connected-mail census: **61 ICALPA/Las Palmas events + 7 ICATF/Tenerife events**. Do not silently drop receipts, automatic replies or superseded drafts.
+
+Current ICALPA official-submission lock: `registro@icalpa.org`; the 3-Sep-2026 ICALPA routing response states that this mailbox performs formal entry registration and internal transfer. Keep deontologia / notification / RedAbogacía lanes distinct.
+
+Standing regional safeguard: request a conflict-cleared rapporteur/instructor with sufficient independence, continuity, time and institutional backing to reach a reasoned outcome; any attempted informal call, approach, representation or pressure outside the file should be logged and routed into the formal record. This is preventive traceability, not an assertion that pressure will occur.
