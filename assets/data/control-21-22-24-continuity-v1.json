@@ -390,7 +390,9 @@
     "ROUTING_COLLISION_GRAPH": "/assets/data/dp1901-routing-collision-v1.json",
     "ROUTING_COLLISION_VISUAL": "/assets/visuals/dp1901-routing-collision-20260919.svg",
     "CONTROL-21-DOSSIER_ES": "/es/control-21-denuncia-actores-privados-25-junio-2026/",
-    "CONTROL-21-DOSSIER_EN": "/en/control-21-private-actors-complaint-25-june-2026/"
+    "CONTROL-21-DOSSIER_EN": "/en/control-21-private-actors-complaint-25-june-2026/",
+    "SOURCE-CORPUS-ES": "/es/control-21-22-24-corpus-integridad/",
+    "SOURCE-CORPUS-EN": "/en/control-21-22-24-corpus-integrity/"
   },
   "open_gaps": [
     "Certified DP 1901/2026 initiating document, complete docket/index and electronic creation/reparto history confirming the contemporaneously corroborated Ref21 → DP1901 mapping, plus the later Ref24 association mechanism",
@@ -515,5 +517,18 @@
       "procuradora_email_20260625": "11:23 email to María Díaz Vecino records same-day Ref21 autonomous private-actor filing and separate Ref24 supplement.",
       "mapping_20260709": "Contemporaneous correspondence records 1901 as CAM/private Community matter and 1956 as AC matter."
     }
+  },
+  "source_corpus_20260921": {
+    "control_id": "PD-C212224-SOURCE-CORPUS-20260921-01",
+    "path": "data/control-21-22-24-source-corpus-20260921.json",
+    "documents": 6,
+    "source_pages": 278,
+    "coverage": [
+      "CONTROL-21:86/86+26/26+19/19",
+      "CONTROL-22:55/55",
+      "CONTROL-24:79/79+13/13"
+    ],
+    "relationship": "BOUND_SOURCE_CORPUS",
+    "rule": "Shared evidence does not transfer procedural identity, knowledge, intent, causation or liability."
   }
 }

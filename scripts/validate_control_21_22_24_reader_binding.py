@@ -9,6 +9,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 CANONICAL = ROOT / "assets/data/control-21-22-24-continuity-v1.json"
 READER = ROOT / "data/three-track-full-digitisation-20260904.json"
+CORPUS = ROOT / "data/control-21-22-24-source-corpus-20260921.json"
 
 
 def fail(message: str) -> None:
@@ -32,6 +33,7 @@ def route(path: str) -> str:
 def main() -> None:
     canonical = load(CANONICAL)
     reader = load(READER)
+    corpus = load(CORPUS)
 
     if canonical.get("control_id") != "PD-C212224-001":
         fail("unexpected canonical control_id")
@@ -119,6 +121,53 @@ def main() -> None:
         fail("reader layer immediate private-actor amplification must remain 26 pages")
     if tracks["DP1901-C21"].get("expansion", {}).get("pages") != 19:
         fail("reader layer 9-Jul private-actor amplification must remain 19 pages")
+    if tracks["DP1956-C22"].get("base_filing", {}).get("pages") != 55:
+        fail("reader layer Control 22 base complaint must remain 55 pages")
+    if tracks["C24-JUDGE"].get("base_filing", {}).get("pages") != 79:
+        fail("reader layer Control 24 signed package must remain 79 pages")
+    if tracks["C24-JUDGE"].get("base_filing", {}).get("text_layer_processed") != "79/79 pages":
+        fail("reader layer Control 24 signed package must remain processed 79/79")
+    if tracks["C24-JUDGE"].get("supplement", {}).get("text_layer_processed") != "13/13 pages":
+        fail("reader layer Control 24 supplement must remain processed 13/13")
+
+    expected_sources = {
+        "C21-BASE-20260625": (86, "3f4bd2bbbc963605e4cc94bc73d116157e2bf4a2266e2285b013f38de9e90736", "86/86 pages"),
+        "C21-AMP-20260626": (26, "a7f057fd99d0bdf1a891cf4610f69ed19788d2e40f9f23a6ff66fc6255d97846", "26/26 pages"),
+        "C21-EXP-20260709": (19, "0d42dcbe30679331c557f4c3750e478e592a9a449c6b5ecb84e32f6fa56ad16f", "19/19 pages"),
+        "C22-BASE-20260618": (55, "b11f10e7410f922a8cd1796ea462ea7ea20d555b7308e4481f2cb23732b1002b", "55/55 pages"),
+        "C24-BASE-20260618": (79, "1cae1912a20202c5f5779db07e77c7e1d3f0ae514676e07d3ace4dd56f6f76a0", "79/79 pages"),
+        "C24-SUPP-20260625": (13, "04051e33000f830c32ba06e31996ba4e6812c7d54c199ee03696b85e68589679", "13/13 pages"),
+    }
+    if corpus.get("control_id") != "PD-C212224-SOURCE-CORPUS-20260921-01":
+        fail("unexpected six-source corpus control_id")
+    if corpus.get("totals") != {"documents": 6, "source_pages": 278, "controls": 3}:
+        fail("six-source corpus totals drifted")
+    docs = {item.get("id"): item for item in corpus.get("documents", [])}
+    if set(docs) != set(expected_sources):
+        fail("six-source corpus document set drifted")
+    for doc_id, (pages, digest, processed) in expected_sources.items():
+        doc = docs[doc_id]
+        if doc.get("pages") != pages or doc.get("sha256") != digest or doc.get("text_layer_processed") != processed:
+            fail(f"source corpus identity/coverage drift for {doc_id}")
+        if doc.get("digitisation_in_git") is not True:
+            fail(f"source corpus digitisation-in-git flag missing for {doc_id}")
+
+    dossier_paths = [
+        ROOT / "es/control-21-denuncia-actores-privados-25-junio-2026/index.html",
+        ROOT / "es/control-22-denuncia-administrador-concursal/index.html",
+        ROOT / "es/control-24-denuncia-juez-concurso-36-2012/index.html",
+        ROOT / "en/control-21-private-actors-complaint-25-june-2026/index.html",
+        ROOT / "en/control-22-insolvency-administrator-complaint/index.html",
+        ROOT / "en/control-24-insolvency-judge-complaint-36-2012/index.html",
+    ]
+    for path in dossier_paths:
+        if not path.is_file():
+            fail(f"missing interlinked dossier: {path.relative_to(ROOT)}")
+        body = path.read_text(encoding="utf-8")
+        if "control-21-22-24-source-corpus-20260921.json" not in body:
+            fail(f"source-corpus manifest link missing from {path.relative_to(ROOT)}")
+        if "86/86 + 26/26 + 19/19" not in body or "55/55" not in body or "79/79 + 13/13" not in body:
+            fail(f"six-document coverage summary missing from {path.relative_to(ROOT)}")
 
     aliases = set(canonical.get("aliases", []))
     for alias in ("DP1901-C21", "DP1956-C22", "C24-JUDGE", "PD-THREE-TRACK-DIGITISATION-20260904-01"):
@@ -138,7 +187,7 @@ def main() -> None:
         if routes.get(key) != value:
             fail(f"canonical/reader route drift for {key}: {routes.get(key)!r} != {value!r}")
 
-    print("PASS: PD-C212224-001 and PD-THREE-TRACK-DIGITISATION-20260904-01 are mutually bound while Reg. No. 24 remains filed-but-untraced, TSJC presumed/unverified, and Control 21/22 bridges remain unverified")
+    print("PASS: canonical continuity, three-track reader and six-source 278-page corpus are mutually bound; all six dossiers are reciprocally interlinked while procedural bridges remain source-controlled")
 
 
 if __name__ == "__main__":
