@@ -1,4 +1,6 @@
 {
+  "schema": "por-derecho.publication-state.v1",
+  "schema_version": "1.0.0",
   "publication_id": "PD-DP1901-SHAME-LANDING-20260921",
   "current_state": "PREPARED_PENDING_MERGE",
   "owner": "DP1901_SHAME_LANDING_INTEGRATION_20260921",
