@@ -1,13 +1,13 @@
 {
   "schema": "por-derecho.publication-runtime.v1",
-  "fence": 28,
-  "owner": "1563:4c3f3492432beb1405811e92cf89c4194e51f7f0",
-  "phase": "VERIFIED_FOR_SCOPE",
-  "pr": 1563,
-  "base_sha": "5ca676145b871fee98be0546fae49576f7214ee2",
-  "candidate_sha": "4c3f3492432beb1405811e92cf89c4194e51f7f0",
-  "run_id": 35568934816,
-  "claimed_at": "2026-09-21T06:29:33.031174Z",
+  "fence": 29,
+  "owner": "1670:c5ac37113a24ffce72765a2b4ba6efc07c1a4113",
+  "phase": "CLAIMED",
+  "pr": 1670,
+  "base_sha": "1d64a8681489c802b31183b0d4d155137b19a193",
+  "candidate_sha": "c5ac37113a24ffce72765a2b4ba6efc07c1a4113",
+  "run_id": 35568981106,
+  "claimed_at": "2026-09-21T06:33:33.076410Z",
   "expiry_policy": "Never silently expire into free; recover after inspecting actual merge/deployment.",
   "receipts": [
     {
@@ -1776,74 +1776,5 @@
       "scope": "Changed readable public resources plus ES/EN entrypoints. Browser checks are separate premerge evidence; not a whole-site or legal-proof certificate."
     }
   ],
-  "checkpoints": [
-    {
-      "phase": "ACCEPTED",
-      "at": "2026-09-21T06:29:34.077535Z",
-      "evidence": {
-        "checks": [
-          {
-            "name": "PD release acceptance",
-            "id": 106234958563,
-            "conclusion": "success"
-          },
-          {
-            "name": "publication-integrity",
-            "id": 106234958367,
-            "conclusion": "success"
-          }
-        ]
-      }
-    },
-    {
-      "phase": "MERGE_PENDING",
-      "at": "2026-09-21T06:32:48.731281Z",
-      "evidence": {
-        "pr": 1563
-      }
-    },
-    {
-      "phase": "MERGED",
-      "at": "2026-09-21T06:32:49.677166Z",
-      "evidence": {
-        "merge_sha": "1d64a8681489c802b31183b0d4d155137b19a193"
-      }
-    },
-    {
-      "phase": "DEPLOYED",
-      "at": "2026-09-21T06:32:51.562873Z",
-      "evidence": {
-        "pages_run_id": 35568763719,
-        "merge_sha": "1d64a8681489c802b31183b0d4d155137b19a193"
-      }
-    },
-    {
-      "phase": "VERIFIED_FOR_SCOPE",
-      "at": "2026-09-21T06:32:53.784131Z",
-      "evidence": {
-        "merge_sha": "1d64a8681489c802b31183b0d4d155137b19a193",
-        "pages_run_id": 35568763719,
-        "exact_matches": [
-          {
-            "path": "en/index.html",
-            "sha256": "c048d21d4c94e3cb6896e4c74d69a9ab73f84c3426d40fe815370b40fe1ba109",
-            "bytes": 228197
-          },
-          {
-            "path": "en/snca-european-funds-traceability/index.html",
-            "sha256": "d30602502b2db6f15488c16b52e31f760097d2b10626924b318cb72bdbeed2d0",
-            "bytes": 617
-          },
-          {
-            "path": "es/index.html",
-            "sha256": "48a7ebf0751867525f140cf3e70c34f8fe22a1c6edd7aeb0b3178e788da95dda",
-            "bytes": 237351
-          }
-        ],
-        "pending": [],
-        "scope": "Changed readable public resources plus ES/EN entrypoints. Browser checks are separate premerge evidence; not a whole-site or legal-proof certificate."
-      }
-    }
-  ],
-  "updated_at": "2026-09-21T06:32:53.784131Z"
+  "checkpoints": []
 }
