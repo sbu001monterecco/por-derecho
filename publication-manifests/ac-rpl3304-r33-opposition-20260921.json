@@ -4,7 +4,7 @@
   "publication_id": "PD-AC-RPL3304-R33-20260921",
   "control_date": "2026-09-21",
   "owner": "Por Derecho / Project Sun Rock",
-  "current_state": "PR_OPEN",
+  "current_state": "PR_OPEN_REPAIRED_SITEMAP_BOUNDARY",
   "expected_routes": {
     "es": [
       "es/concurso-36-2012-oposicion-ac-apelacion-lpb-septiembre-2026/index.html"
@@ -59,11 +59,11 @@
     "Spanish and English dedicated R33 pages",
     "Spanish and English insolvency-administrator/removal dossiers",
     "Spanish and English PwC evidence-custodian crosslinks",
-    "R33 controlled extracts",
-    "site sitemap"
+    "R33 controlled extracts"
   ],
   "frozen_corpus_boundary": "The Aug-23 fixed 50-specialist / 127-complete-record catalogues remain unchanged; R33 is a post-cutoff additive source page, not silently inserted into those frozen denominators.",
   "authority": "Gil Marer instruction: take over and do it now.",
   "state_note": "Open current-main-based PR; not merged, deployed or live-verified.",
-  "controlled_extract_path": "evidence/insolvency-36-2012/rpl-3304-2025/R33-oposicion-ac-apelacion-lpb-septiembre-2026-controlled-extracts.md"
+  "controlled_extract_path": "evidence/insolvency-36-2012/rpl-3304-2025/R33-oposicion-ac-apelacion-lpb-septiembre-2026-controlled-extracts.md",
+  "sitemap_state": "Not manually edited in this release; dedicated routes are reachable through reciprocal in-site links. Global sitemap remains generator-owned."
 }
