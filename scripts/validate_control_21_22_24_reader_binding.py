@@ -169,6 +169,42 @@ def main() -> None:
         if "86/86 + 26/26 + 19/19" not in body or "55/55" not in body or "79/79 + 13/13" not in body:
             fail(f"six-document coverage summary missing from {path.relative_to(ROOT)}")
 
+
+    frozen_expectations = {
+        "C21-BASE-20260625": ("evidence/control-21/source-text/frozen/2026-06-25-ref21-base-86p.md", 86),
+        "C21-AMP-20260626": ("evidence/control-21/source-text/frozen/2026-06-26-ref21-immediate-amplification-26p.md", 26),
+        "C21-EXP-20260709": ("evidence/control-21/source-text/frozen/2026-07-09-ref21-expansion-19p.md", 19),
+        "C22-BASE-20260618": ("evidence/control-22/source-text/frozen/2026-06-18-ref22-ac-complaint-55p.md", 55),
+        "C24-BASE-20260618": ("evidence/control-24/source-text/frozen/2026-06-18-ref24-signed-package-79p.md", 79),
+        "C24-SUPP-20260625": ("evidence/control-24/source-text/frozen/2026-06-25-ref24-supplement-13p.md", 13),
+    }
+    current_expectations = {
+        "CONTROL-21": ("evidence/control-21/source-text/current/control-21-current-enhanced.md", 131),
+        "CONTROL-22": ("evidence/control-22/source-text/current/control-22-current-enhanced.md", 55),
+        "CONTROL-24": ("evidence/control-24/source-text/current/control-24-current-enhanced.md", 92),
+    }
+    for doc_id, (rel, pages) in frozen_expectations.items():
+        path = ROOT / rel
+        if not path.is_file():
+            fail(f"missing frozen source text: {rel}")
+        body = path.read_text(encoding="utf-8")
+        if body.count("## Source page ") != pages:
+            fail(f"frozen page-marker coverage drift for {doc_id}")
+        doc = docs[doc_id]
+        if doc.get("github_frozen_text") != rel or doc.get("source_text_stored_in_git") is not True:
+            fail(f"frozen corpus binding missing for {doc_id}")
+        if "IMMUTABLE FROZEN LAYER" not in body:
+            fail(f"frozen immutability marker missing for {doc_id}")
+    for control, (rel, pages) in current_expectations.items():
+        path = ROOT / rel
+        if not path.is_file():
+            fail(f"missing living current text: {rel}")
+        body = path.read_text(encoding="utf-8")
+        if body.count("## Source page ") != pages:
+            fail(f"living full-text page-marker coverage drift for {control}")
+        if "LIVING LAYER" not in body:
+            fail(f"living-layer marker missing for {control}")
+
     aliases = set(canonical.get("aliases", []))
     for alias in ("DP1901-C21", "DP1956-C22", "C24-JUDGE", "PD-THREE-TRACK-DIGITISATION-20260904-01"):
         if alias not in aliases:

@@ -71,3 +71,25 @@ Digitisation completeness does not close:
 - the certified Ref22 → DP1956 bridge;
 - the certified post-intake route/current custodian for Ref24;
 - the later mechanism by which judge-related material came to be treated in DP1901.
+
+
+## Frozen/current text closure
+
+The corpus is now stored in Git as actual full page-marked text, not only as page-count/hash metadata.
+
+### Frozen immutable paths
+
+- `evidence/control-21/source-text/frozen/2026-06-25-ref21-base-86p.md` — 86 markers.
+- `evidence/control-21/source-text/frozen/2026-06-26-ref21-immediate-amplification-26p.md` — 26 markers.
+- `evidence/control-21/source-text/frozen/2026-07-09-ref21-expansion-19p.md` — 19 markers.
+- `evidence/control-22/source-text/frozen/2026-06-18-ref22-ac-complaint-55p.md` — 55 markers.
+- `evidence/control-24/source-text/frozen/2026-06-18-ref24-signed-package-79p.md` — 79 markers.
+- `evidence/control-24/source-text/frozen/2026-06-25-ref24-supplement-13p.md` — 13 markers.
+
+### Current living paths
+
+- `evidence/control-21/source-text/current/control-21-current-enhanced.md` — 131 markers.
+- `evidence/control-22/source-text/current/control-22-current-enhanced.md` — 55 markers.
+- `evidence/control-24/source-text/current/control-24-current-enhanced.md` — 92 markers.
+
+The frozen text may receive explicit privacy omissions but no substantive historical correction. All substantive correction, canonicalisation, later procedural context and cross-linking belongs in the separate current layer. Raw source PDFs are not required for public Git publication.
