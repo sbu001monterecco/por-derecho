@@ -2148,14 +2148,15 @@
     "path": "es/consejo-canario-coordinacion-deontologica-2026/",
     "title": "Consejo Canario — coordinación deontológica e intercolegial 2026",
     "type": "institution",
-    "summary": "Mapa fuente-controlado de ICALPA, ICATF, ICAM, CCACM, Consejo Canario, CGAE y el perímetro profesional compartido, sin atribución colectiva.",
+    "summary": "Mapa fuente-controlado de coordinación canaria y perímetro profesional, actualizado con la rendición procedimental de DIP 80/2026 y la ruta nacional CGAE, sin atribución colectiva.",
     "tags": [
       "Consejo Canario",
       "ICALPA",
       "ICATF",
       "deontología",
       "intercolegial",
-      "profesionales"
+      "profesionales",
+      "DIP 80 accountability"
     ],
     "aliases": [
       "coordinación colegial",
@@ -2169,14 +2170,15 @@
     "path": "en/canary-council-deontological-coordination-2026/",
     "title": "Canary Council — deontological and inter-Bar coordination 2026",
     "type": "institution",
-    "summary": "Source-controlled map of ICALPA, ICATF, ICAM, CCACM, the Canary Council, CGAE and the shared professional perimeter without collective attribution.",
+    "summary": "Source-controlled Canary coordination and professional-perimeter map, updated with DIP 80/2026 procedural accountability and the separate national CGAE route without collective attribution.",
     "tags": [
       "Canary Council",
       "ICALPA",
       "ICATF",
       "professional conduct",
       "inter-Bar",
-      "professional perimeter"
+      "professional perimeter",
+      "DIP 80 accountability"
     ],
     "aliases": [
       "bar coordination",
@@ -2347,6 +2349,48 @@
       "ICATF register",
       "Las Palmas correspondence",
       "Tenerife correspondence"
+    ]
+  },
+  {
+    "lang": "es",
+    "path": "es/cgae-coordinacion-deontologica-nacional-2026/",
+    "title": "CGAE — coordinación deontológica nacional e intercolegial 2026",
+    "type": "institution",
+    "summary": "Borrador nacional fuente-controlado sobre coordinación intercolegial, conflictos de competencia, independencia profesional, trazabilidad de informaciones previas y criterios deontológicos comunes.",
+    "tags": [
+      "CGAE",
+      "deontología",
+      "intercolegial",
+      "DIP 80",
+      "trazabilidad",
+      "independencia"
+    ],
+    "aliases": [
+      "Consejo General Abogacía",
+      "coordinación nacional",
+      "RS-001022/2026",
+      "información previa"
+    ]
+  },
+  {
+    "lang": "en",
+    "path": "en/cgae-national-deontological-coordination-2026/",
+    "title": "CGAE — national and inter-Bar deontological coordination 2026",
+    "type": "institution",
+    "summary": "Source-controlled national draft on inter-Bar coordination, competence conflicts, lawyer independence, preliminary-information traceability and common deontological criteria.",
+    "tags": [
+      "CGAE",
+      "professional conduct",
+      "inter-Bar",
+      "DIP 80",
+      "traceability",
+      "independence"
+    ],
+    "aliases": [
+      "Consejo General Abogacía",
+      "national coordination",
+      "RS-001022/2026",
+      "preliminary information"
     ]
   }
 ]
