@@ -1,0 +1,85 @@
+{
+  "id": "PD-ICALPA-DIP80-ACCOUNTABILITY-20260922-01",
+  "date": "2026-09-22",
+  "status": "SOURCE_CONTROLLED_DRAFT_NOT_SENT",
+  "matter": "ICALPA DIP 80/2026 procedural accountability and regional/national coordination",
+  "timeline": [
+    {
+      "date": "2025-12-23",
+      "event": "competence-routing request",
+      "state": "SENT"
+    },
+    {
+      "date": "2025-12-26",
+      "event": "RE-017363/2025",
+      "state": "REGISTERED"
+    },
+    {
+      "date": "2026-01-14",
+      "event": "ICALPA competence confirmation",
+      "state": "SUBSTANTIVE_RESPONSE"
+    },
+    {
+      "date": "2026-02-16",
+      "event": "formal complaint",
+      "state": "REGISTERED"
+    },
+    {
+      "date": "2026-05-27",
+      "event": "DIP 80/2026 preliminary information opened",
+      "state": "OFFICIAL_OPENING"
+    },
+    {
+      "date": "2026-05-28",
+      "event": "certified opening notice",
+      "state": "NOTIFIED"
+    },
+    {
+      "date": "2026-06-10",
+      "event": "preventive independence safeguard communication",
+      "state": "REGISTERED_CHAIN"
+    },
+    {
+      "date": "2026-06-18",
+      "event": "criminal-track developments notified",
+      "state": "SUBMITTED"
+    },
+    {
+      "date": "2026-09",
+      "event": "Administrator opposition expressly references ICALPA complaints",
+      "state": "RESPONDENT_AWARENESS_PROVED_ROUTE_OF_NOTICE_OPEN"
+    }
+  ],
+  "current_external_state": {
+    "preliminary_opening": true,
+    "formal_disciplinary_opening_located": false,
+    "archive_located": false,
+    "suspension_located": false,
+    "transfer_or_reclassification_located": false,
+    "later_substantive_icalpa_decision_located": false,
+    "repeated_registry_receipts": true
+  },
+  "accountability_questions": [
+    "preliminary_information_still_open",
+    "archive",
+    "formal_disciplinary_opening",
+    "criminal_same_facts_suspension",
+    "transfer_accumulation_reclassification",
+    "latest_substantive_act",
+    "respondent_representations_exist_date_only",
+    "third_party_enquiries",
+    "next_procedural_act",
+    "conflict_abstention_safeguards"
+  ],
+  "publication_boundary": [
+    "Do not infer protection or bad faith from silence.",
+    "Do not infer how the respondent learned of the ICALPA route.",
+    "Do not treat registration receipts as merits handling.",
+    "Do not treat preliminary opening as a disciplinary finding."
+  ],
+  "send_sequence": {
+    "canary_council": "FIRST",
+    "cgae": "SEPARATE_IMMEDIATELY_AFTER_REGIONAL_ACTIVATION",
+    "external_transmission_authorised": false
+  }
+}

@@ -1,7 +1,7 @@
 {
   "id": "PD-CAN-BAR-PERIMETER-20260921-01",
-  "version": "2026-09-21",
-  "status": "PUBLIC_SAFE_SOURCE_CONTROLLED_UPDATE",
+  "version": "2026-09-22",
+  "status": "PUBLIC_SAFE_SOURCE_CONTROLLED_ACCOUNTABILITY_UPDATE",
   "scope": "Professional-regulation and inter-Colegio coordination map for the Sun Park / MYND Yaiza matter.",
   "rule_en": "Separate responsibility does not mean separate reality. Individual professional responsibility remains actor-specific; common evidence and economic context may require coordinated preservation and institutional treatment without collective attribution.",
   "rule_es": "La responsabilidad separada no significa una realidad separada. La responsabilidad profesional sigue siendo individual; la prueba común y el contexto económico pueden exigir preservación coordinada y tratamiento institucional sin atribución colectiva.",
@@ -32,12 +32,12 @@
       "id": "ICALPA",
       "jurisdiction": "Las Palmas",
       "role": "territorial_first_instance",
-      "state": "active_source_record",
+      "state": "active_preliminary_files_with_DIP80_procedural_accountability_open",
       "references": [
         "DIP 79/2026",
         "DIP 80/2026"
       ],
-      "boundary": "DIP 79 and DIP 80 remain separate preliminary matters."
+      "boundary": "DIP 79 and DIP 80 remain separate preliminary matters. For DIP 80, opening is proved but no later external record has been located identifying archive, formal disciplinary opening, same-facts criminal suspension, referral or another substantive procedural outcome."
     },
     {
       "id": "ICATF",
@@ -55,20 +55,25 @@
       "name": "Consejo Canario de Colegios de Abogados",
       "jurisdiction": "Canary Islands",
       "role": "autonomous_coordination_and_appellate_layer",
-      "state": "pre_escalation_no_direct_correspondence_located",
-      "boundary": "Regional coordinating/appellate competence must be determined issue by issue; no merits position is inferred from absence of correspondence."
+      "state": "regional_communication_send_ready_draft_not_sent",
+      "boundary": "Regional request concerns coordination, competence, preservation, conflict safeguards and procedural traceability; it does not ask CCCA to decide DIP 80 merits in place of ICALPA.",
+      "references": [
+        "22-Sep-2026 living regional draft",
+        "DIP 80 procedural-accountability matrix"
+      ]
     },
     {
       "id": "CGAE",
       "name": "Consejo General de la Abogacía Española",
       "jurisdiction": "Spain",
       "role": "national_professional_body",
-      "state": "prior_contact_documented",
+      "state": "national_communication_content_ready_pending_regional_activation",
       "references": [
         "CGAE response RS-001022/2026",
-        "separate 2026 ethical-channel track"
+        "separate 2026 ethical-channel track",
+        "22-Sep-2026 national/inter-Bar living draft"
       ],
-      "boundary": "CGAE stated it does not hear ordinary individual lawyer complaints at first instance; the inter-Colegio/systemic route remains a distinct question."
+      "boundary": "CGAE is not asked to hear ordinary individual complaints at first instance. National questions are coordination, competence conflicts, deontological consultation/unification, lawyer independence and traceability standards."
     }
   ],
   "professional_nodes": [
@@ -171,9 +176,18 @@
       "reference": "coordination thesis",
       "proved": "Multiple distinct professional routes now touch Las Palmas, Tenerife and Madrid.",
       "open": "Competent regional coordination mechanism, abstention safeguards, preservation and any lawful national referral route."
+    },
+    {
+      "date": "2026-09-22",
+      "from": "DIP 80 external-status reconstruction",
+      "to": "Consejo Canario / CGAE",
+      "reference": "DIP80 procedural accountability",
+      "proved": "ICALPA competence confirmation, formal complaint, 27-May preliminary opening and repeated later registrations are documented; the September Administrator opposition expressly acknowledges ICALPA among the institutions approached by Gil Marer.",
+      "open": "Current DIP 80 procedural state, latest substantive rapporteur act, any formal disciplinary opening/archive/suspension/referral and the route of respondent awareness."
     }
   ],
   "open_gaps": [
+    "Certify DIP 80/2026 current procedural state: preliminary information, archive, formal disciplinary file, criminal-concurrence suspension, referral/accumulation or another reasoned state; identify latest substantive act and next expected step.",
     "Certify whether ICAM actually transmitted 1487/26 to ICATF and whether ICATF assigned a local reference.",
     "Recover the substantive response behind the separate March–June 2026 CGAE ethical-channel track.",
     "Complete individual Colegio verification where the present record establishes a matter nexus but not the exact Bar route.",
@@ -188,6 +202,10 @@
     "es/pwc-canarias-carlos-saavedra-sun-park/",
     "es/san-telmo-ricpe-sun-park/",
     "es/rsm/nnr4-1025c2f66/",
-    "es/cuatrecasas-icam-ccacm-2026/"
+    "es/cuatrecasas-icam-ccacm-2026/",
+    "archive/ICALPA_DIP80_PROCEDURAL_ACCOUNTABILITY_CONTROL_22SEP2026.md",
+    "assets/data/icalpa-dip80-procedural-accountability-v1.json",
+    "es/cgae-coordinacion-deontologica-nacional-2026/",
+    "en/cgae-national-deontological-coordination-2026/"
   ]
 }
