@@ -79,11 +79,14 @@
         "ops/capital/SUN_ROCK_CAPITAL_PROGRAMME_CONTINUITY_20260921.md",
         "CURRENT_HANDOVER_PRINCIPAL_FINANCIAL_RELATIONSHIPS_17SEP2026.md",
         ".github/workflows/sun-rock-capital-relationships.yml",
-        "ci/sun_rock_capital_relationships_acceptance_20260916.py"
+        "ci/sun_rock_capital_relationships_acceptance_20260916.py",
+        "publication-manifests/sun-rock-institutional-capital-20260921.json"
       ],
-      "private_drive_handoff": "REQUIRED_THIS_TRANSACTION_LOCATOR_NOT_PUBLIC",
+      "private_drive_handoff": "PRESENT_IN_APPROVED_PRIVATE_CUSTODY_LOCATOR_NOT_PUBLIC",
       "gitlab_state": "PENDING_AUTHENTICATED_ACCESS",
-      "replay_rule": "Freeze GitHub/GitLab heads, preserve newer GitLab work, port only the source-proved net public-safe delta, run GitLab validators/pipeline, verify affected Pages routes, and record residual conflicts."
+      "replay_rule": "Freeze GitHub/GitLab heads, preserve newer GitLab work, port only the source-proved net public-safe delta, run GitLab validators/pipeline, verify affected Pages routes, and record residual conflicts.",
+      "github_pr": 1701,
+      "github_prepared_head": "1b993927f4ed26875ba6bd28901e9231aa8fc7f4"
     }
   ]
 }
