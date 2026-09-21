@@ -1,3 +1,6 @@
+> **SUPERSEDED FOR CURRENT CAMPAIGN STATE — 21 SEPTEMBER 2026.**  
+> Preserve this file as historical provenance only. It is no longer the current recipient queue or next-action authority. Current public-safe programme continuity is `ops/capital/SUN_ROCK_CAPITAL_PROGRAMME_CONTINUITY_20260921.md`; recipient-level truth remains in connected Gmail and the private `Sun Rock - Master Principal Capital Providers` Sheet. Do not propagate the named 17-Sep queue into public GitHub.
+
 # CURRENT HANDOVER — PRINCIPAL FINANCIAL RELATIONSHIPS — 17 SEPTEMBER 2026
 
 **Status:** current public-safe continuity record for the Sun Rock / Aweswell principal-financial-institution programme.  
