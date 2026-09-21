@@ -207,3 +207,15 @@ Before changing the Sun Park/MYND Yaiza address or either Acosta Matos family ed
 ## Consejo Canario / professional inter-Colegio continuation — 21 September 2026
 
 For any work involving ICALPA DIP 79/2026, ICALPA DIP 80/2026, ICATF/2647-ICATF, the ICAM 1487/26 Tenerife referral, Consejo Canario, CGAE, RSM/San Telmo, Garrigues, PwC, Cuyás/Grant Thornton, Cuatrecasas, Juan Tomás Parrilla, Cristo Ayose Suárez Pimentel or professional-payment/source-of-funds questions, first read `archive/CANARY_COUNCIL_INTERCOLLEGIAL_PROFESSIONAL_PERIMETER_CONTROL_21SEP2026.md`, `assets/data/canary-professional-intercollegial-perimeter-v1.json`, the two 21-Sep correction/missing-evidence addenda and the bilingual coordination routes. Preserve the rule: **separate responsibility does not mean separate reality**. Keep files and liability individual, but do not fragment common evidence or the inter-Colegio competence map. Use **Consejo Canario de Colegios de Abogados (CCCA)**; **CCACM** remains Madrid.
+
+## 100% platform-provenance allegation / pre-title commercialisation — 21 September 2026
+
+For Acosta Matos wealth/growth, RICPE, Sun Park→MYND, whole-platform recovery, Consejo Canario context or moral-hazard drafting, first read `archive/ATTRIBUTED_100_PERCENT_PLATFORM_PROVENANCE_CONTROL_21SEP2026.md` and `assets/data/acosta-matos-platform-provenance-allegation-20260921.json` together with the 20-Sep platform/whole-wealth rules.
+
+Locked drafting state:
+- Gil Marer's attributed provenance position is **100%**, not an estimated evidential percentage.
+- Do not present 100% as adjudicated or already traced.
+- Do not describe 2022 as the beginning of commercial use: preserve the 2018 control → 2019 Lava Verde → 2019/20 pilots/project → 2020 RICPE → 2021 platform → 2022 formalisation chain.
+- Gil's belief that CAM/Acosta Matos was financially weak in 2017–2018 is preserved as an allegation; the current corpus proves a smaller hospitality/investment footprint but not financial distress.
+- Every serious communication must contain a short past → bridge → present → future context paragraph before the recipient-specific request.
+- Never transfer culpability to employees, investors, brands, advisers, public bodies or other third parties by association.
