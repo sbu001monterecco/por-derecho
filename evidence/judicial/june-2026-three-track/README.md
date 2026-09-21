@@ -24,6 +24,12 @@ The dynamic layer **never overwrites the frozen source**.
 | Ref22 | separate complaint concerning the Insolvency Administrator | 55-page controlled principal | [living dossier](dynamic/ref22-living-dossier.md) |
 | Ref24 | separate judge-related denuncia/notitia criminis | existing complete public-safe complaint + complete dependent supplement | [living dossier](dynamic/ref24-living-dossier.md) |
 
+## Ref24 naming and institutional-route distinction
+
+The 25 June judicial document is one dependent pleading whose source title is **“APORTACIÓN COMPLEMENTARIA AUTOSUFICIENTE”**. Later records sometimes refer to that same judicial document as the Ref24 **ampliación**. It is not two separate Ref24 judicial pleadings.
+
+A separate 25 June document addressed to the **CGPJ / DI 169/2026** is an **aportación urgente de hecho sobrevenido** about Ref24 traceability. It belongs to the CGPJ institutional route, not to the frozen Ref24 judicial pleading. Its public-safe frozen transcription is preserved at [`frozen-linked/di169-ref24-traceability-aportacion-25jun2026.md`](frozen-linked/di169-ref24-traceability-aportacion-25jun2026.md).
+
 ## Procedural boundaries
 
 - Ref21, Ref22 and Ref24 were drafted as separate June presentations.
