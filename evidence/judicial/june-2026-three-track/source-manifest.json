@@ -14,7 +14,18 @@
         "ampliacion_pages": 19,
         "ampliacion_status": "PHYSICAL_TENDER_CORROBORATED_ELECTRONIC_INGESTION_OPEN"
       },
-      "dynamic": "dynamic/ref21-living-dossier.md"
+      "dynamic": "dynamic/ref21-living-dossier.md",
+      "version_candidates": {
+        "observed_199_page_package": {
+          "sha256": "ad3f6aea269649a46212967ddb05225fa160b6e93393e8896e001aa3570e5c08",
+          "status": "CONTROLLED_LIBRARY_COPY_VERSION_CANDIDATE_NOT_COURT_INGESTION_PROOF"
+        },
+        "observed_202_page_package": {
+          "sha256": "28c238e719dace2197a7e30655a4727bf26ad01e7d6e73832e75e81582179b8e",
+          "status": "RECOVERED_HISTORICAL_PRINT_PACKAGE_VERSION_CANDIDATE_NOT_COURT_INGESTION_PROOF"
+        },
+        "rule": "Retain all variants; filename/page-count similarity does not establish exact filed payload."
+      }
     },
     "REF22": {
       "frozen": {
