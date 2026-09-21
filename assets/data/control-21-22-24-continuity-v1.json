@@ -1,7 +1,7 @@
 {
-  "schema_version": "1.0.3",
+  "schema_version": "1.0.6",
   "control_id": "PD-C212224-001",
-  "as_of": "2026-09-04",
+  "as_of": "2026-09-19",
   "repository": "sbu001monterecco/por-derecho",
   "baseline_main_sha": "b8ded173b06f17aaf91569f051dd11e621b139ae",
   "canonical_nucleus": {
@@ -11,14 +11,22 @@
   "controls": [
     {
       "id": "CONTROL-21",
-      "label": "Daily reference 21 — user-reported private-actor filing control",
+      "label": "Daily reference 21 — private-actor filing control",
       "claimed_filing_date": "2026-06-25",
       "canonical_repository_object": null,
       "candidate_proceeding": "GC-CRI-008",
       "candidate_reference": "DP 1901/2026",
       "bridge_status": "UNVERIFIED_CANDIDATE_BRIDGE",
-      "evidential_state": "ATTRIBUTED_ALLEGATION",
-      "do_not_infer": "Do not state that daily reference 21 became DP 1901/2026 without a source-certified intake/reparto bridge. Do not merge this object with the judge-related 25 June supplement merely because the dates coincide."
+      "evidential_state": "DOCUMENTED",
+      "do_not_infer": "The 25-Jun daily-reference-21 private-actor filing is documented by its stamped cover and Gil's same-day 11:23 email to Procuradora María Díaz Vecino. A stamped 9-Jul cover proves private-actor amplification material was physically tendered under DP 1901/Plaza 6, and contemporaneous 9-Jul correspondence records `1901: Contra CAM y otras partes de la Comunidad de Propietarios` and `1956: Contra la AC`. This contemporaneously corroborates Gil's Ref21 → DP1901 chronology. The formal procedural bridge remains UNVERIFIED_CANDIDATE_BRIDGE because the court's electronic initiating/reparto event and later Ref24 association mechanism have not been independently certified.",
+      "identity_collision_status": "REF21_TO_DP1901_CONTEMPORANEOUSLY_CORROBORATED_OFFICIAL_REPARTO_AND_REF24_ASSOCIATION_HISTORY_OUTSTANDING",
+      "contemporaneous_july_evidence": {
+        "email_20260709": "Counsel email records: `1901: Contra CAM y otras partes de la Comunidad de Propietarios`; `1956: Contra la AC`.",
+        "court_followup_20260712": "Contemporaneous counsel email records Plaza 6 follow-up concerning `la denuncia contra CAM y la CP` identified as 1901/2026.",
+        "limit": "Contemporaneous filing identity and operational mapping; not a certified court-system creation/reparto audit trail.",
+        "email_20260625_to_procuradora": "11:23 same-day email records a third autonomous private-actor complaint filed under daily reference 21 and a separate Ref24 supplement."
+      },
+      "origin_chronology_evidential_state": "CONTEMPORANEOUSLY_CORROBORATED"
     },
     {
       "id": "CONTROL-22",
@@ -50,49 +58,262 @@
       "trace_rule": "The fact of filing through the Decanato under Reg. No. 24 may be stated and used as a filing, chronology and provenance fact. The fact that the post-intake route remains untraced may likewise be stated as the current status gap. The presumed TSJC route must not be promoted into verified allocation, origin or custody without primary proof.",
       "bridge_status": "UNVERIFIED_CANDIDATE_BRIDGE",
       "evidential_state": "DOCUMENTED",
-      "do_not_infer": "Daily registration no. 24 is not a NIG, DP number, certified reparto, admission, dismissal, archive or merits outcome. Do not split the 25 June supplement into an autonomous proceeding. Do not convert the expected/presumed TSJC route into a verified originating organ, assigned court or current custodian."
+      "do_not_infer": "Daily registration no. 24 is not a NIG or DP number. Its 18-Jun stamped judge filing and 25-Jun 13-page dependent supplement are now documented. The 14-Sep DP 1901 order creates a serious candidate routing/identity question, but the source closure does not prove that daily reference 24 generated, was joined to, or was reassigned into DP 1901.",
+      "identity_collision_status": "PROCEDURAL_IDENTITY_COLLISION_OPEN_DIRECTION_NOT_CERTIFIED",
+      "judge_amplification_pages": 13,
+      "judge_principal_document_bundle_pages": 31,
+      "judge_front_matter_pages": 4,
+      "judge_principal_pleading_pages": 27,
+      "supervening_dp1901_state": "14-Sep Auto describes DP1901 as alleged prevaricacion; candidate Ref24↔DP1901 identity/routing relationship open, direction not certified."
     }
   ],
   "nodes": [
-    {"id":"CONCURSO-36-2012","type":"PROCEEDING_NUCLEUS","label":"Concurso Ordinario 36/2012"},
-    {"id":"CONTROL-21","type":"FILING_CONTROL","label":"Daily reference 21 — claimed private-actor filing control"},
-    {"id":"CONTROL-22","type":"FILING_CONTROL","label":"Daily reference 22 — Insolvency Administrator filing control"},
-    {"id":"CONTROL-24","type":"FILING_CONTROL","label":"Reg. No. 24 / Control 24 — one filing record"},
-    {"id":"GC-CRI-008","type":"JUDICIAL_PROCEEDING","label":"DP 1901/2026"},
-    {"id":"GC-CRI-009","type":"JUDICIAL_PROCEEDING","label":"DP 1956/2026"},
-    {"id":"GC-REF-029","type":"INTAKE_REFERENCE","label":"Daily intake/reference 22"},
-    {"id":"GC-HC-010","type":"FILING_CONTROL_RECORD","label":"Reg. No. 24 / complaint concerning Concurso judge"},
-    {"id":"CONTROL-24-AMPLIACION-20260625","type":"DEPENDENT_FILING_EVENT","label":"Dependent Reg. No. 24 supplement presented 25 June 2026"},
-    {"id":"CONTROL-21-OBJECT-20260625","type":"UNRESOLVED_FILING_OBJECT","label":"User-reported private-actor filing object dated 25 June 2026"},
-    {"id":"GC-GOV-019","type":"GOVERNANCE_ROUTE","label":"169/2026 CGPJ control requiring exact nomenclature reconciliation"},
-    {"id":"ALZADA-286-2026","type":"APPEAL_REVIEW_ROUTE","label":"Alzada 286/2026"},
-    {"id":"GC-FIS-017","type":"PROSECUTORIAL_ROUTE","label":"DIP 2/2026"},
-    {"id":"GC-APP-005","type":"APPEAL","label":"RPL 3304/2025"},
-    {"id":"GC-APP-006","type":"APPEAL","label":"RPL 3319/2025"},
-    {"id":"RPL-2523-2025","type":"APPEAL","label":"RPL 2523/2025"},
-    {"id":"RPL-421-2026","type":"APPEAL","label":"RPL 421/2026"},
-    {"id":"ICALPA-80-2026","type":"DISCIPLINARY_ROUTE","label":"ICALPA/DIP 80/2026"},
-    {"id":"AC-SEPARATION-ROUTE","type":"INSOLVENCY_ROUTE","label":"Insolvency Administrator separation/removal route"}
+    {
+      "id": "CONCURSO-36-2012",
+      "type": "PROCEEDING_NUCLEUS",
+      "label": "Concurso Ordinario 36/2012"
+    },
+    {
+      "id": "CONTROL-21",
+      "type": "FILING_CONTROL",
+      "label": "Daily reference 21 — claimed private-actor filing control"
+    },
+    {
+      "id": "CONTROL-22",
+      "type": "FILING_CONTROL",
+      "label": "Daily reference 22 — Insolvency Administrator filing control"
+    },
+    {
+      "id": "CONTROL-24",
+      "type": "FILING_CONTROL",
+      "label": "Reg. No. 24 / Control 24 — one filing record"
+    },
+    {
+      "id": "GC-CRI-008",
+      "type": "JUDICIAL_PROCEEDING",
+      "label": "DP 1901/2026"
+    },
+    {
+      "id": "GC-CRI-009",
+      "type": "JUDICIAL_PROCEEDING",
+      "label": "DP 1956/2026"
+    },
+    {
+      "id": "GC-REF-029",
+      "type": "INTAKE_REFERENCE",
+      "label": "Daily intake/reference 22"
+    },
+    {
+      "id": "GC-HC-010",
+      "type": "FILING_CONTROL_RECORD",
+      "label": "Reg. No. 24 / complaint concerning Concurso judge"
+    },
+    {
+      "id": "CONTROL-24-AMPLIACION-20260625",
+      "type": "DEPENDENT_FILING_EVENT",
+      "label": "Dependent Reg. No. 24 supplement presented 25 June 2026"
+    },
+    {
+      "id": "CONTROL-21-OBJECT-20260625",
+      "type": "UNRESOLVED_FILING_OBJECT",
+      "label": "User-reported private-actor filing object dated 25 June 2026"
+    },
+    {
+      "id": "GC-GOV-019",
+      "type": "GOVERNANCE_ROUTE",
+      "label": "169/2026 CGPJ control requiring exact nomenclature reconciliation"
+    },
+    {
+      "id": "ALZADA-286-2026",
+      "type": "APPEAL_REVIEW_ROUTE",
+      "label": "Alzada 286/2026"
+    },
+    {
+      "id": "GC-FIS-017",
+      "type": "PROSECUTORIAL_ROUTE",
+      "label": "DIP 2/2026"
+    },
+    {
+      "id": "GC-APP-005",
+      "type": "APPEAL",
+      "label": "RPL 3304/2025"
+    },
+    {
+      "id": "GC-APP-006",
+      "type": "APPEAL",
+      "label": "RPL 3319/2025"
+    },
+    {
+      "id": "RPL-2523-2025",
+      "type": "APPEAL",
+      "label": "RPL 2523/2025"
+    },
+    {
+      "id": "RPL-421-2026",
+      "type": "APPEAL",
+      "label": "RPL 421/2026"
+    },
+    {
+      "id": "ICALPA-80-2026",
+      "type": "DISCIPLINARY_ROUTE",
+      "label": "ICALPA/DIP 80/2026"
+    },
+    {
+      "id": "AC-SEPARATION-ROUTE",
+      "type": "INSOLVENCY_ROUTE",
+      "label": "Insolvency Administrator separation/removal route"
+    }
   ],
   "edges": [
-    {"from":"CONCURSO-36-2012","to":"CONTROL-21","relation":"COMMON_FACTUAL_NUCLEUS","bidirectional":true,"evidential_status":"ATTRIBUTED_ALLEGATION"},
-    {"from":"CONCURSO-36-2012","to":"CONTROL-22","relation":"COMMON_FACTUAL_NUCLEUS","bidirectional":true,"evidential_status":"DOCUMENTED"},
-    {"from":"CONCURSO-36-2012","to":"CONTROL-24","relation":"COMMON_FACTUAL_NUCLEUS","bidirectional":true,"evidential_status":"DOCUMENTED"},
-    {"from":"CONTROL-21","to":"GC-CRI-008","relation":"CANDIDATE_LATER_PROCEEDING","bidirectional":true,"bridge_status":"UNVERIFIED_CANDIDATE_BRIDGE","evidential_status":"OPEN"},
-    {"from":"CONTROL-22","to":"GC-REF-029","relation":"CANONICAL_INTAKE_OBJECT","bidirectional":true,"bridge_status":"PROVEN_DOCUMENTARY_BRIDGE","evidential_status":"DOCUMENTED"},
-    {"from":"CONTROL-22","to":"GC-CRI-009","relation":"CANDIDATE_LATER_PROCEEDING","bidirectional":true,"bridge_status":"UNVERIFIED_CANDIDATE_BRIDGE","evidential_status":"OPEN"},
-    {"from":"CONTROL-24","to":"GC-HC-010","relation":"CANONICAL_CONTROL_RECORD","bidirectional":true,"bridge_status":"PROVEN_DOCUMENTARY_BRIDGE","evidential_status":"DOCUMENTED"},
-    {"from":"CONTROL-24","to":"CONTROL-24-AMPLIACION-20260625","relation":"DEPENDENT_SUPPLEMENT_SAME_REGISTRATION_RECORD","bidirectional":true,"bridge_status":"PROVEN_SAME_RECORD_DEPENDENT_SUPPLEMENT","evidential_status":"DOCUMENTED"},
-    {"from":"CONTROL-24","to":"GC-GOV-019","relation":"REPORTED_TO_GOVERNANCE_REVIEW","bidirectional":true,"bridge_status":"RELATED_SEPARATE_ROUTE","evidential_status":"ATTRIBUTED_ALLEGATION"},
-    {"from":"GC-GOV-019","to":"ALZADA-286-2026","relation":"APPEAL_REVIEW_LINEAGE","bidirectional":true,"bridge_status":"RELATED_SEPARATE_ROUTE","evidential_status":"DOCUMENTED"},
-    {"from":"CONTROL-24","to":"GC-FIS-017","relation":"RELATED_PROSECUTORIAL_ROUTE","bidirectional":true,"bridge_status":"RELATED_SEPARATE_ROUTE","evidential_status":"DOCUMENTED"},
-    {"from":"CONTROL-21-OBJECT-20260625","to":"CONTROL-24-AMPLIACION-20260625","relation":"SAME_DATE_DISTINCT_DOCUMENTS","bidirectional":true,"bridge_status":"NO_BRIDGE","evidential_status":"OPEN"},
-    {"from":"GC-REF-029","to":"GC-APP-005","relation":"CONTEXTUAL_AC_SEPARATION_PERIMETER","bidirectional":true,"bridge_status":"RELATED_SEPARATE_ROUTE","evidential_status":"DOCUMENTED"},
-    {"from":"GC-REF-029","to":"GC-APP-006","relation":"CONTEXTUAL_AC_SEPARATION_PERIMETER","bidirectional":true,"bridge_status":"RELATED_SEPARATE_ROUTE","evidential_status":"DOCUMENTED"},
-    {"from":"GC-CRI-009","to":"ICALPA-80-2026","relation":"AC_ACCOUNTABILITY_PERIMETER","bidirectional":true,"bridge_status":"RELATED_SEPARATE_ROUTE","evidential_status":"OPEN"},
-    {"from":"GC-CRI-009","to":"AC-SEPARATION-ROUTE","relation":"AC_ACCOUNTABILITY_PERIMETER","bidirectional":true,"bridge_status":"RELATED_SEPARATE_ROUTE","evidential_status":"DOCUMENTED"},
-    {"from":"AC-SEPARATION-ROUTE","to":"RPL-421-2026","relation":"RELATED_REMUNERATION_APPEAL_PERIMETER","bidirectional":true,"bridge_status":"RELATED_SEPARATE_ROUTE","evidential_status":"DOCUMENTED"},
-    {"from":"CONCURSO-36-2012","to":"RPL-2523-2025","relation":"CLASSIFICATION_APPEAL","bidirectional":true,"bridge_status":"RELATED_SEPARATE_ROUTE","evidential_status":"DOCUMENTED"}
+    {
+      "from": "CONCURSO-36-2012",
+      "to": "CONTROL-21",
+      "relation": "COMMON_FACTUAL_NUCLEUS",
+      "bidirectional": true,
+      "evidential_status": "ATTRIBUTED_ALLEGATION"
+    },
+    {
+      "from": "CONCURSO-36-2012",
+      "to": "CONTROL-22",
+      "relation": "COMMON_FACTUAL_NUCLEUS",
+      "bidirectional": true,
+      "evidential_status": "DOCUMENTED"
+    },
+    {
+      "from": "CONCURSO-36-2012",
+      "to": "CONTROL-24",
+      "relation": "COMMON_FACTUAL_NUCLEUS",
+      "bidirectional": true,
+      "evidential_status": "DOCUMENTED"
+    },
+    {
+      "from": "CONTROL-21",
+      "to": "GC-CRI-008",
+      "relation": "CONTEMPORANEOUSLY_CORROBORATED_LATER_PROCEEDING",
+      "bidirectional": true,
+      "bridge_status": "UNVERIFIED_CANDIDATE_BRIDGE",
+      "evidential_status": "CONTEMPORANEOUS_CHRONOLOGY_CORROBORATED_OFFICIAL_BRIDGE_OPEN"
+    },
+    {
+      "from": "CONTROL-22",
+      "to": "GC-REF-029",
+      "relation": "CANONICAL_INTAKE_OBJECT",
+      "bidirectional": true,
+      "bridge_status": "PROVEN_DOCUMENTARY_BRIDGE",
+      "evidential_status": "DOCUMENTED"
+    },
+    {
+      "from": "CONTROL-22",
+      "to": "GC-CRI-009",
+      "relation": "CANDIDATE_LATER_PROCEEDING",
+      "bidirectional": true,
+      "bridge_status": "UNVERIFIED_CANDIDATE_BRIDGE",
+      "evidential_status": "OPEN"
+    },
+    {
+      "from": "CONTROL-24",
+      "to": "GC-HC-010",
+      "relation": "CANONICAL_CONTROL_RECORD",
+      "bidirectional": true,
+      "bridge_status": "PROVEN_DOCUMENTARY_BRIDGE",
+      "evidential_status": "DOCUMENTED"
+    },
+    {
+      "from": "CONTROL-24",
+      "to": "CONTROL-24-AMPLIACION-20260625",
+      "relation": "DEPENDENT_SUPPLEMENT_SAME_REGISTRATION_RECORD",
+      "bidirectional": true,
+      "bridge_status": "PROVEN_SAME_RECORD_DEPENDENT_SUPPLEMENT",
+      "evidential_status": "DOCUMENTED"
+    },
+    {
+      "from": "CONTROL-24",
+      "to": "GC-GOV-019",
+      "relation": "REPORTED_TO_GOVERNANCE_REVIEW",
+      "bidirectional": true,
+      "bridge_status": "RELATED_SEPARATE_ROUTE",
+      "evidential_status": "ATTRIBUTED_ALLEGATION"
+    },
+    {
+      "from": "GC-GOV-019",
+      "to": "ALZADA-286-2026",
+      "relation": "APPEAL_REVIEW_LINEAGE",
+      "bidirectional": true,
+      "bridge_status": "RELATED_SEPARATE_ROUTE",
+      "evidential_status": "DOCUMENTED"
+    },
+    {
+      "from": "CONTROL-24",
+      "to": "GC-FIS-017",
+      "relation": "RELATED_PROSECUTORIAL_ROUTE",
+      "bidirectional": true,
+      "bridge_status": "RELATED_SEPARATE_ROUTE",
+      "evidential_status": "DOCUMENTED"
+    },
+    {
+      "from": "CONTROL-21-OBJECT-20260625",
+      "to": "CONTROL-24-AMPLIACION-20260625",
+      "relation": "SAME_DATE_DISTINCT_DOCUMENTS",
+      "bidirectional": true,
+      "bridge_status": "NO_BRIDGE",
+      "evidential_status": "OPEN"
+    },
+    {
+      "from": "GC-REF-029",
+      "to": "GC-APP-005",
+      "relation": "CONTEXTUAL_AC_SEPARATION_PERIMETER",
+      "bidirectional": true,
+      "bridge_status": "RELATED_SEPARATE_ROUTE",
+      "evidential_status": "DOCUMENTED"
+    },
+    {
+      "from": "GC-REF-029",
+      "to": "GC-APP-006",
+      "relation": "CONTEXTUAL_AC_SEPARATION_PERIMETER",
+      "bidirectional": true,
+      "bridge_status": "RELATED_SEPARATE_ROUTE",
+      "evidential_status": "DOCUMENTED"
+    },
+    {
+      "from": "GC-CRI-009",
+      "to": "ICALPA-80-2026",
+      "relation": "AC_ACCOUNTABILITY_PERIMETER",
+      "bidirectional": true,
+      "bridge_status": "RELATED_SEPARATE_ROUTE",
+      "evidential_status": "OPEN"
+    },
+    {
+      "from": "GC-CRI-009",
+      "to": "AC-SEPARATION-ROUTE",
+      "relation": "AC_ACCOUNTABILITY_PERIMETER",
+      "bidirectional": true,
+      "bridge_status": "RELATED_SEPARATE_ROUTE",
+      "evidential_status": "DOCUMENTED"
+    },
+    {
+      "from": "AC-SEPARATION-ROUTE",
+      "to": "RPL-421-2026",
+      "relation": "RELATED_REMUNERATION_APPEAL_PERIMETER",
+      "bidirectional": true,
+      "bridge_status": "RELATED_SEPARATE_ROUTE",
+      "evidential_status": "DOCUMENTED"
+    },
+    {
+      "from": "CONCURSO-36-2012",
+      "to": "RPL-2523-2025",
+      "relation": "CLASSIFICATION_APPEAL",
+      "bidirectional": true,
+      "bridge_status": "RELATED_SEPARATE_ROUTE",
+      "evidential_status": "DOCUMENTED"
+    },
+    {
+      "from": "CONTROL-24",
+      "to": "GC-CRI-008",
+      "relation": "CANDIDATE_IDENTITY_RECONCILIATION_AFTER_14SEP2026_ORDER",
+      "bidirectional": true,
+      "bridge_status": "UNVERIFIED_CANDIDATE_BRIDGE",
+      "evidential_status": "OPEN"
+    }
   ],
   "reader_layers": [
     {
@@ -100,16 +321,54 @@
       "path": "data/three-track-full-digitisation-20260904.json",
       "introduced_on_main_sha": "92b254ca03caf8f5ff4a418a9bfacb92b5bdd04f",
       "relationship": "BOUND_READER_LAYER",
-      "governance_precedence": "PD-C212224-001 controls procedural identity and bridge status. The reader layer may add source-complete public-safe presentation but cannot upgrade a bridge by label, filename or narrative proximity, and it cannot weaken the Reg. No. 24 filed-but-untraced / presumed-TSJC-only safeguards.",
+      "governance_precedence": "PD-C212224-001 controls procedural identity. Ref21 → DP1901 is Gil's firsthand chronology contemporaneously corroborated by the 25-Jun procuradora email and 9-Jul operational mapping. The 14-Sep order remains a contrary later characterisation. Official electronic creation/reparto and later Ref24 association history remain authority-production gaps.",
       "track_bindings": {
-        "DP1901-C21": "CONTROL-21 ↔ GC-CRI-008 / UNVERIFIED_CANDIDATE_BRIDGE",
+        "DP1901-C21": "CONTROL-21 ↔ GC-CRI-008 / UNVERIFIED_CANDIDATE_BRIDGE / Ref21→DP1901 chronology contemporaneously corroborated",
         "DP1956-C22": "CONTROL-22 ↔ GC-CRI-009 / UNVERIFIED_CANDIDATE_BRIDGE",
-        "C24-JUDGE": "CONTROL-24 ↔ GC-HC-010 / one Reg. No. 24 record / formal destination UNKNOWN / TSJC presumed-unverified"
+        "C24-JUDGE": "CONTROL-24 ↔ GC-HC-010 / one Reg. No. 24 record / formal destination UNKNOWN / DP1901 reconciliation OPEN after 14-Sep order"
       }
     }
   ],
   "aliases": [
-    "Control 21","Control 22","Control 24","Reg. No. 24","Registro n.º 24","daily 21","daily 22","daily 24","daily reference 21","daily reference 22","daily reference 24","DP 1901/2026","DP 1956/2026","GC-CRI-008","GC-CRI-009","GC-REF-029","GC-HC-010","DI 169/2026","CGPJ 169/2026","Alzada 286/2026","DIP 2/2026","ICALPA 80/2026","RPL 2523/2025","RPL 3304/2025","RPL 3319/2025","RPL 421/2026","18 June 2026","25 June 2026","18 junio 2026","25 junio 2026","supplement 25 June 2026","ampliación 25 junio 2026","TSJ Canarias","TSJC","Concurso 36/2012","DP1901-C21","DP1956-C22","C24-JUDGE","PD-THREE-TRACK-DIGITISATION-20260904-01"
+    "Control 21",
+    "Control 22",
+    "Control 24",
+    "Reg. No. 24",
+    "Registro n.º 24",
+    "daily 21",
+    "daily 22",
+    "daily 24",
+    "daily reference 21",
+    "daily reference 22",
+    "daily reference 24",
+    "DP 1901/2026",
+    "DP 1956/2026",
+    "GC-CRI-008",
+    "GC-CRI-009",
+    "GC-REF-029",
+    "GC-HC-010",
+    "DI 169/2026",
+    "CGPJ 169/2026",
+    "Alzada 286/2026",
+    "DIP 2/2026",
+    "ICALPA 80/2026",
+    "RPL 2523/2025",
+    "RPL 3304/2025",
+    "RPL 3319/2025",
+    "RPL 421/2026",
+    "18 June 2026",
+    "25 June 2026",
+    "18 junio 2026",
+    "25 junio 2026",
+    "supplement 25 June 2026",
+    "ampliación 25 junio 2026",
+    "TSJ Canarias",
+    "TSJC",
+    "Concurso 36/2012",
+    "DP1901-C21",
+    "DP1956-C22",
+    "C24-JUDGE",
+    "PD-THREE-TRACK-DIGITISATION-20260904-01"
   ],
   "public_routes": {
     "CONTROL-22_EN": "/en/proceedings/gc-ref-029/",
@@ -127,15 +386,134 @@
     "READER_DP-1956_EN": "/en/dp-1956-2026/",
     "READER_DP-1956_ES": "/es/dp-1956-2026/",
     "READER_CONTROL-24_EN": "/en/control-24-insolvency-judge-complaint-36-2012/",
-    "READER_CONTROL-24_ES": "/es/control-24-denuncia-juez-concurso-36-2012/"
+    "READER_CONTROL-24_ES": "/es/control-24-denuncia-juez-concurso-36-2012/",
+    "ROUTING_COLLISION_GRAPH": "/assets/data/dp1901-routing-collision-v1.json",
+    "ROUTING_COLLISION_VISUAL": "/assets/visuals/dp1901-routing-collision-20260919.svg",
+    "CONTROL-21-DOSSIER_ES": "/es/control-21-denuncia-actores-privados-25-junio-2026/",
+    "CONTROL-21-DOSSIER_EN": "/en/control-21-private-actors-complaint-25-june-2026/"
   },
   "open_gaps": [
-    "Source-certified Control-21 to DP 1901/2026 bridge",
+    "Certified DP 1901/2026 initiating document, complete docket/index and electronic creation/reparto history confirming the contemporaneously corroborated Ref21 → DP1901 mapping, plus the later Ref24 association mechanism",
     "Source-certified Control-22 to DP 1956/2026 bridge",
     "Certified reparto/current destination for Control 24",
     "Response/trace confirmation from Decanato, TSJC and CGPJ identifying the post-intake route, present location and treatment of Reg. No. 24",
     "Certified electronic joinder/remittal metadata for the 25 June Reg. No. 24 supplement",
     "Exact CGPJ 169/2026 document nomenclature, annex reference and treatment",
-    "Canonical registration of any missing stamped source files, transcriptions/OCR derivatives and hashes"
-  ]
+    "Canonical registration of any missing stamped source files, transcriptions/OCR derivatives and hashes",
+    "Signed 29 July 2026 Ministerio Fiscal report in DP 1901/2026: author, text, corpus, assignment and reasoning",
+    "Native/certified 14 September 2026 DP 1901 order and legal notification metadata",
+    "Comparative certified creation/reparto timestamps for Ref22/DP1956, Ref24 and Ref21/DP1901, preserving Gil's 19-Sep firsthand account separately from internal electronic events"
+  ],
+  "supervening_event_20260918": {
+    "source": "DP 1901/2026 order dated 2026-09-14; paper copy received by post on 2026-09-18 and photographed/uploaded by the complainant",
+    "dp": "DP 1901/2026",
+    "nig": "3501643220260016977",
+    "iup": "LI2026017152",
+    "order_treatment": "proceeding described as initiated for alleged prevaricacion",
+    "fiscal_report_date": "2026-07-29",
+    "fiscal_requested_outcome": "archive",
+    "consequence": "June/July source closure plus the 25-Jun procuradora email and 9-Jul operational mapping contemporaneously corroborate Ref21 → DP1901. Official court electronic creation/reparto certification and the later Ref24 association mechanism remain outstanding.",
+    "non_finding": "The record does not establish the precise court-system creation event, the act/user that later associated Ref24 material with DP1901, or any unlawful intent.",
+    "paper_copy_provenance": "Received by post on 18-Sep-2026; photographed with a device and uploaded as page images; native electronic court PDF remains outstanding."
+  },
+  "source_closure_20260918": {
+    "path": "evidence/judicial/dp-1901-2026/PROCEDURAL_IDENTITY_SOURCE_CLOSURE_18SEP2026.md",
+    "state": "REF21_TO_DP1901_CONTEMPORANEOUSLY_CORROBORATED — OFFICIAL_REPARTO_AND_REF24_ASSOCIATION_HISTORY_OUTSTANDING",
+    "documented": [
+      "separate stamped 18-Jun judge filing (daily reference 24)",
+      "separate stamped 25-Jun five-private-actor filing (daily reference 21)",
+      "stamped 25-Jun 13-page dependent supplement to daily reference 24",
+      "9-Jul ATLANTE listing DP1901/Plaza6 and DP1956/Plaza1",
+      "9-Jul stamped private-actor tender under DP1901/Plaza6"
+    ],
+    "authority_only_open": [
+      "initiating document/reparto that generated DP1901",
+      "electronic ingestion/document-to-NIG history",
+      "joinder/reassignment/remittal/segregation acts",
+      "exact corpus transmitted to Ministerio Fiscal"
+    ]
+  },
+  "state_transition_audit_20260919": {
+    "question": "What was the registered object/subject of DP1901 at creation and at each material transition?",
+    "checkpoints": [
+      {
+        "date": "2026-07-09",
+        "state": "private-actor material physically tendered under DP1901; contemporaneous operational identification as CAM/private/Community lane"
+      },
+      {
+        "date": "2026-07-12",
+        "state": "official providencia sends admission question to Ministerio Fiscal in relation to DIP2/2026"
+      },
+      {
+        "date": "2026-07-29",
+        "state": "Fiscal report later recorded as seeking archive; exact object/corpus received remains open"
+      },
+      {
+        "date": "2026-09-14",
+        "state": "Auto describes DP1901 as initiated for alleged prevaricacion and orders sobreseimiento libre/archive"
+      }
+    ],
+    "authority_only_required": [
+      "initiating document and NIG creation event",
+      "object/subject/party metadata at each checkpoint",
+      "document-to-case association history and audit events",
+      "formal joinder/remittal/reassignment/segregation acts",
+      "exact corpus/remitting metadata sent to Ministerio Fiscal"
+    ],
+    "non_finding": "No current source proves who caused the transition, whether it was deliberate, or whether a lawful administrative explanation exists."
+  },
+  "presenter_clarification_20260919": {
+    "source_type": "AUTHENTICATED_USER_CLARIFICATION_EDITORIAL_PUBLIC_SAFE_SUMMARY",
+    "recorded_on": "2026-09-19",
+    "source_control": "archive/DP1901_EG745_FISCAL_REPORT_ROUTING_COLLISION_CONTROL_18SEP2026.md#19-september-2026--presenters-clarification-three-filings-and-differential-routing",
+    "adoption_status": "USER_EXPRESSLY_AFFIRMS_UNDERLYING_ACCOUNT_AS_TRUTH_AND_FACT; EDITORIAL_SUMMARY_NOT_SIGNED_OR_SWORN",
+    "native_audio_status": "NOT_SUPPLIED",
+    "filing_map": [
+      {
+        "control": "CONTROL-22",
+        "date": "2026-06-18",
+        "daily_reference": 22,
+        "subject": "AC complaint",
+        "later_proceeding": "GC-CRI-009",
+        "bridge_certification": "UNVERIFIED_CANDIDATE_BRIDGE"
+      },
+      {
+        "control": "CONTROL-24",
+        "date": "2026-06-18",
+        "daily_reference": 24,
+        "subject": "TSJC-directed judge notitia"
+      },
+      {
+        "control": "CONTROL-21",
+        "date": "2026-06-25",
+        "daily_reference": 21,
+        "subject": "autonomous private-actor complaint",
+        "later_proceeding": "GC-CRI-008",
+        "bridge_certification": "UNVERIFIED_CANDIDATE_BRIDGE",
+        "chronology_support": "CONTEMPORANEOUSLY_CORROBORATED_BY_25JUN_PROCURADORA_EMAIL_AND_09JUL_MAPPING"
+      }
+    ],
+    "direct_observation_reported": "On 25 June Gil says Ref24 was untouched, unscanned and unallocated; he states that he checked this with Decanato and TSJC. He saw staff attach the supplement to the 18-June/Ref24 package.",
+    "ac_confirmation_date_precision": "25 June or shortly afterwards; exact date not fixed by this account",
+    "ac_sequence_position": "Gil states Ref22/DP1956 was processed/opened first.",
+    "dp1901_sequence_position": "Gil categorically maintains private-actor-first and subsequent judge-material association, disputing joint-opening and judge-first alternatives.",
+    "independent_certification": "OFFICIAL_ELECTRONIC_CREATION_REPARTO_AND_REF24_ASSOCIATION_TIMESTAMPS_STILL_REQUIRED",
+    "contrary_record": "14-Sep Auto describes DP1901 as initiated for alleged prevaricacion; 12-Jul providencia links DIP2.",
+    "paper_electronic_boundary": "Earlier possibility of pre-25-June scanning/registration expressly disputed by affirmative user testimony; not retained as an unopposed alternative in his account. Independent official electronic-history verification remains outstanding.",
+    "burden_boundary": "Absence of a contrary record does not certify the asserted sequence or reverse the burden of proof.",
+    "further_affirmation_20260919": {
+      "source_adoption": "User calls his own account a statement of truth and fact; no formal oath or signature inferred",
+      "possible_further_weeks": "USER_UNCERTAIN_INFERENCE_NOT_FIXED_DATE",
+      "contemporaneous_cgpj_text": "25-June DI169 urgent submission: available extraction pp2-4 supports custody/non-remittance, supplement annotations and TSJC/Decanato enquiries; no express unscanned wording",
+      "routing_intervention_18june": "Contemporaneous account says staff required Al Juzgado de Instruccion que por turno corresponda while TSJC heading remained",
+      "ac25june_stage": "Already sent to court; 11:23 email says registration/numbering completion pending",
+      "official_no_scan_confirmation": "NOT_LOCATED_IN_BOUNDED_SEARCH",
+      "source_control": "archive/DP1901_EG745_FISCAL_REPORT_ROUTING_COLLISION_CONTROL_18SEP2026.md#further-19-september-affirmation--unscannedunallocated-status-expressly-asserted",
+      "additional_tsjc_enquiry": "User reports TSJC said document had to arrive rather than be called for; date and staff identity unresolved"
+    },
+    "contemporaneous_support": {
+      "procuradora_email_20260625": "11:23 email to María Díaz Vecino records same-day Ref21 autonomous private-actor filing and separate Ref24 supplement.",
+      "mapping_20260709": "Contemporaneous correspondence records 1901 as CAM/private Community matter and 1956 as AC matter."
+    }
+  }
 }

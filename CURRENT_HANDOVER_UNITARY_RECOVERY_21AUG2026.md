@@ -69,7 +69,7 @@ intent, sole causation or actor liability without the seller/finca/act/capacity 
 4. The 12 July 2016 burofax was sent, received and supported by delivery proof.
    It proves notice of the dispute, not the truth of every allegation. Public
    Community/minutes/update wording saying delivery proof is missing is stale.
-5. DP 1956/2026 is the AC-specific route; DP 1901/2026 is the private-actor route;
+5. DP 1956/2026 remains the AC-specific route. For DP 1901/2026, the 18-Sep source closure proves that private-actor material was physically tendered under DP 1901/Plaza 6 on 9-Jul, while the 12-Jul providencia linked the same DP to DIP 2/2026 and the 14-Sep Auto treats it as alleged judicial prevaricación. Treat Ref21 → DP1901 as Gil's firsthand chronology now contemporaneously corroborated by the 25-Jun procuradora email and 9-Jul operational mapping. The official electronic creation/reparto event and the later Ref24 association mechanism remain uncertified authority-production gaps;
    judicial-accountability routes remain separate. The identified final 31-page
    DP 1956 document is printed/intended, not verified filed without a receipt.
 6. The complaint presented on 18 June 2026 and later expansion were linked under

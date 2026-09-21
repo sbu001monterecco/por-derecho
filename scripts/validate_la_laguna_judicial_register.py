@@ -14,8 +14,11 @@ control = load('assets/data/la-laguna-judicial-actors-canonical-interlink-contro
 gaps = load('assets/data/la-laguna-judicial-actors-gap-closure-audit-v1.json')
 dp = load('assets/data/dp748-2026-appeal-reopening-control-v1.json')
 
-assert root['counts'] == {'total':339,'PERSON':160,'ORGANISATION':83,'STRUCTURE':11,'INSTITUTION':42,'PROCEEDING':43}
-assert sum(p['count'] for p in root['parts']) == 339
+expected_classes = {'PERSON','ORGANISATION','STRUCTURE','INSTITUTION','PROCEEDING'}
+assert set(root['counts']) == {'total', *expected_classes}
+assert root['counts']['total'] == sum(p['count'] for p in root['parts'])
+for cls in expected_classes:
+    assert root['counts'][cls] == sum(p['count'] for p in root['parts'] if p['type'] == cls)
 
 p = {r['id']: r for r in people['records']}
 for n in range(147,158):

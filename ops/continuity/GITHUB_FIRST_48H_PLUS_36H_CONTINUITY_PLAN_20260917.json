@@ -1,0 +1,106 @@
+{
+  "schema": "por-derecho.github-first-continuity-horizon.v1",
+  "control_id": "PD-GH-CONTINUITY-HORIZON-20260917-01",
+  "status": "ACTIVE",
+  "control_date": "2026-09-17",
+  "baseline_github_main_sha": "240441b56818dd0659206d9b054a959d39961bce",
+  "start_utc": "2026-09-17T22:05:00Z",
+  "end_utc": "2026-09-21T10:05:00Z",
+  "total_hours": 84,
+  "phases": [
+    {
+      "id": "GITHUB_FIRST_HARDENING",
+      "duration_hours": 48,
+      "start_utc": "2026-09-17T22:05:00Z",
+      "end_utc": "2026-09-19T22:05:00Z",
+      "primary_backend": "github",
+      "mode": "strengthen_and_monitor"
+    },
+    {
+      "id": "STABILIZATION_RECONCILIATION_READINESS",
+      "duration_hours": 36,
+      "start_utc": "2026-09-19T22:05:00Z",
+      "end_utc": "2026-09-21T10:05:00Z",
+      "primary_backend": "github",
+      "mode": "stabilize_preserve_prepare_reconciliation"
+    }
+  ],
+  "required_exact_head_gates": [
+    "Outage backend parity / validate",
+    "PD release acceptance",
+    "Publication integrity gate / publication-integrity"
+  ],
+  "recovery_classes": [
+    "EXACT_GITLAB_RECOVERY",
+    "EXACT_ALREADY_MIRRORED",
+    "FUNCTIONAL_GITHUB_EQUIVALENT",
+    "PENDING_GITLAB_RESTORATION"
+  ],
+  "gitlab_probe_policy": {
+    "authenticated_probe_before_clear_restoration_signal": false,
+    "anonymous_public_and_connected_source_monitoring_allowed": true,
+    "bounded_authenticated_verification_after_clear_signal": true
+  },
+  "preservation_policy": {
+    "checkpoint_after_material_main_change": true,
+    "off_github_snapshot_once_per_material_main_sha": true,
+    "duplicate_compute_prohibited": true
+  },
+  "merge_policy": {
+    "branches_and_prs_required": true,
+    "exact_head_gates_required": true,
+    "force_push_allowed": false,
+    "history_deletion_allowed": false,
+    "mass_merge_stale_prs_allowed": false,
+    "weaken_controls_to_merge_allowed": false
+  },
+  "evidence_policy": {
+    "private_evidence_publication_allowed": false,
+    "exact_gitlab_bytes_from_memory_or_snippets_allowed": false,
+    "source_provenance_required_for_recovery": true
+  },
+  "gitlab_native_pending": [
+    "Duo configuration",
+    "MR discussions and approvals",
+    "pipelines jobs logs and non-mirrored artifacts",
+    "CI variables",
+    "runners and environments",
+    "project and group settings",
+    "Orbit and index state"
+  ],
+  "current_issue_controls": {
+    "administrator_enforcement_gap": 1525,
+    "discovery_review": 1529,
+    "publication_review": 1530
+  },
+  "response_priority_update_20260919": {
+    "source": "GIL_MARER_EXPRESS_CURRENT_INSTRUCTION",
+    "schedule_receipt": "https://github.com/sbu001monterecco/por-derecho/issues/1621#issuecomment-5744107378",
+    "inherited_phase_timestamps_unchanged": true,
+    "target": "2026-09-20 evening, Atlantic/Canary; exact hour not specified",
+    "is_legal_deadline": false,
+    "priority_order": [
+      "DP1901 personally controllable programme: finish census, drafting, annex/source/route/status control",
+      "Freeze finite DP1901 fact/source/open-point/request module",
+      "Distinct EG745 successor within the same evening target, without waiting indefinitely for authority replies"
+    ],
+    "parallel_urgent_counsel_lane": [
+      "Javier Sixto",
+      "Carlos Llamas Sanz"
+    ],
+    "counsel_filing_excluded_from_personal_count": true,
+    "source_exhaustion": "Continue finite missing-record work under1621; authority-only gaps do not prevent completing requests for their production",
+    "backend_queue": [
+      1525,
+      1539,
+      1572,
+      1620
+    ],
+    "source_publication_review_queue": [
+      1529,
+      1530
+    ],
+    "do_not_restart_clock": true,
+    "no_filing_claim": true
+  }
+}

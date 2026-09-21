@@ -1,5 +1,8 @@
 # CALIFICACIÓN + RECOVERY — CANONICAL ACTIVATION / SEARCH ENTRY
 
+> **CONTROLLING VALENCIA CORRECTION — 12 SEPTEMBER 2026.** The older Valencia paragraph below is retained as version history and is superseded by `archive/CAIXABANK_VALENCIA_NATIVE_RECONCILIATION_08SEP2026.md`. Current controlled identity: **ORD 1859/2023-9; NIG 4625042120230049579**. The 6-Nov-2025 court direction fixes **28-Jan-2027 at 10:00**, historically JPI 27 Valencia; **the older October-2026/noon date and the 0057718 NIG are superseded**. The located defendant expert report is signed 17-Oct-2024, not the older 18-Jun-2024 shorthand; exact expert-copy/receipt and claimant-payload matching remain qualified. The provisional EUR1,124,445.84 amount is neither an award nor freely available Aweswell cash. The article 122 TRLC estate-interest basis, contested standing and correct beneficiary must govern recovery/net-loss analysis. This is the latest controlled source, not a live court certificate. The unitary criminal/agency thesis, contrary decisions and distinct procedural routes remain intact. See also `archive/knowledge-project/ORION_PUBLIC_DUTIES_PWC_BANKING_UK_REVIEW_12SEP2026.md`.
+
+
 **Date:** 16 August 2026  
 **Status:** `CONTROLLING SEARCH / PROPAGATION ENTRY FOR FUTURE CHATGPT THREADS`
 

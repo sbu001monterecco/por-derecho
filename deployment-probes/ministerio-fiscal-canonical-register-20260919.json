@@ -1,0 +1,13 @@
+{
+  "publication_id": "MINISTERIO-FISCAL-CANONICAL-REGISTER-20260919",
+  "control_date": "2026-09-19",
+  "source_state": "GITHUB_BRANCH_CREATED_GITLAB_MIRROR_PENDING",
+  "branch": "mf-canonical-register-20260919",
+  "expected_routes": [
+    "/por-derecho/es/ministerio-fiscal/registro-canonico/",
+    "/por-derecho/en/public-prosecution-service/canonical-register/"
+  ],
+  "data_path": "assets/data/ministerio-fiscal-canonical-register-20260919.json",
+  "gitlab_restore_queue": "archive/MINISTERIO_FISCAL_GITLAB_RESTORE_MIRROR_QUEUE_19SEP2026.md",
+  "live_verification_required_after_merge": true
+}

@@ -1,0 +1,41 @@
+name: Validate DP332 linkage publication
+
+on:
+  pull_request:
+    paths:
+      - 'evidence/courts/dp-332-2014/**'
+      - 'evidence/fiscalia/di-273-2013/README.md'
+      - 'es/procedimientos/lz-jud-002/index.html'
+      - 'en/proceedings/lz-jud-002/index.html'
+      - 'assets/data/dp332-di273-linkage-20260919.json'
+      - 'ops/continuity/THREAD_FILE_PRESERVATION_DP332_20260919.json'
+      - '.github/governance/SOURCE_FIDELITY_LINKAGE_VISUAL_RULE_19SEP2026.md'
+      - 'scripts/validate_dp332_linkage_publication.py'
+      - '.github/workflows/validate-dp332-linkage.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'evidence/courts/dp-332-2014/**'
+      - 'evidence/fiscalia/di-273-2013/README.md'
+      - 'es/procedimientos/lz-jud-002/index.html'
+      - 'en/proceedings/lz-jud-002/index.html'
+      - 'assets/data/dp332-di273-linkage-20260919.json'
+      - 'ops/continuity/THREAD_FILE_PRESERVATION_DP332_20260919.json'
+      - '.github/governance/SOURCE_FIDELITY_LINKAGE_VISUAL_RULE_19SEP2026.md'
+      - 'scripts/validate_dp332_linkage_publication.py'
+      - '.github/workflows/validate-dp332-linkage.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
+        with:
+          python-version: '3.12'
+      - name: Validate DP332 thread preservation and linkage publication
+        run: python scripts/validate_dp332_linkage_publication.py

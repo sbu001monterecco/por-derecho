@@ -1,11 +1,11 @@
 {
   "schema": "por-derecho.operational-truth.release-ledger.v1",
   "record_type": "APPEND_ONLY_RELEASE_LEDGER",
-  "control_date": "2026-08-26",
+  "control_date": "2026-09-19",
   "append_only": true,
-  "coverage": "Seeded with the controlling rollback anchor and the principal observed releases from 24–26 August 2026. Earlier release backfill remains open.",
+  "coverage": "Seeded with the controlling rollback anchor and principal observed releases from 24–26 August 2026; appended with the 19 September 2026 current-main observation. Earlier release backfill remains open.",
   "ordering": "Records are chronological by effective_at. Existing records must not be silently removed or rewritten; corrections are appended below and identify the affected release_id. current_at_observation records that a release was current at its own observation time, so multiple historical entries may retain true; latest_observation_release_id identifies the latest observation.",
-  "latest_observation_release_id": "unitary-enterprise-attribution-rdm-manifest-20260826-pr1046",
+  "latest_observation_release_id": "operational-truth-observation-20260919-main-1e96f0d",
   "releases": [
     {
       "release_id": "five-actor-preservation-guard-20260824-pr922",
@@ -156,6 +156,25 @@
       "live_verification_job_id": 98097657687,
       "scope": "Promoted the 26 August attributed unitary-enterprise position, manifest-only Phase-A boundary, bilingual public controls and the Patricia private-source analysis prompt after successful Pages deployment and exact affected-route readback.",
       "limits": "Publication verification proves only the recorded deployment and public-route markers; it is not proof of the attributed enterprise allegation, any person's guilt, Penal Code articles 570 bis or 570 ter, an original pact, or evidential support from the Phase-A manifest. The historical PR #922 rollback anchor remains separately preserved and eligible."
+    },
+    {
+      "release_id": "operational-truth-observation-20260919-main-1e96f0d",
+      "source_sha": "1e96f0d97323ba4c10ad0b7341d28017d6fa26dd",
+      "source_tree_sha": "78384988b8840479dd194ed559e1cc7990a25a3e",
+      "pull_request": 1668,
+      "state": "DEPLOYED_BUILD_SUCCESS",
+      "website_content_changed": true,
+      "current_at_observation": true,
+      "rollback_eligible": false,
+      "effective_at": "2026-09-19T21:13:29Z",
+      "observed_at": "2026-09-19T22:01:42Z",
+      "pages_run_id": 35469702999,
+      "pages_run_number": 1630,
+      "live_verification_run_id": null,
+      "live_verification_run_number": null,
+      "live_verification_job_id": null,
+      "scope": "Observed the 19 September current-main deployment after PR #1668. The release itself includes a public continuity module; this ledger entry is an operational observation, not a new specialist verification.",
+      "limits": "GitHub recorded a successful Pages deployment for the stated SHA. No exact route-content readback is recorded in this operational refresh; it is not proof of a public route's byte content, any case allegation, legal status, guilt, or GitLab recovery/parity."
     }
   ],
   "corrections": [

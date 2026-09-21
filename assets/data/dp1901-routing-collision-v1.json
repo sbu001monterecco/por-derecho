@@ -1,0 +1,137 @@
+{
+  "substantive_recovery_nexus": {
+    "control_id": "PD-DP1901-PLATFORM-NEXUS-20260920-01",
+    "data": "assets/data/dp1901-platform-recovery-nexus-20260920.json",
+    "thesis": "archive/DP1901_PLATFORM_RECOVERY_NEXUS_THESIS_20SEP2026.md",
+    "es": "es/dp-1901-plataforma-recuperacion/",
+    "en": "en/dp-1901-platform-recovery/",
+    "boundary": "Typed substantive links supplement the routing graph; original nodes, evidential weighting and filing states remain unchanged."
+  },
+  "schema": "por-derecho.dp1901-routing-collision.v1",
+  "as_of": "2026-09-19",
+  "controlling_state": "REF21_TO_DP1901_CONTEMPORANEOUSLY_CORROBORATED_OFFICIAL_REPARTO_AND_REF24_ASSOCIATION_HISTORY_OUTSTANDING",
+  "nodes": [
+    {
+      "id": "REF21",
+      "label": "Daily reference 21",
+      "date": "2026-06-25",
+      "type": "AUTONOMOUS_PRIVATE_ACTOR_FILING",
+      "status": "DOCUMENTED"
+    },
+    {
+      "id": "REF24",
+      "label": "Daily reference 24",
+      "date": "2026-06-18",
+      "type": "JUDGE_RELATED_NOTITIA",
+      "status": "DOCUMENTED"
+    },
+    {
+      "id": "DP1901",
+      "label": "DP 1901/2026",
+      "type": "JUDICIAL_PROCEEDING",
+      "status": "DOCUMENTED"
+    },
+    {
+      "id": "DIP2",
+      "label": "DIP 2/2026",
+      "type": "PROSECUTORIAL_ROUTE",
+      "status": "DOCUMENTED"
+    },
+    {
+      "id": "FISCAL29",
+      "label": "Fiscal report 29 Jul 2026",
+      "type": "PROSECUTORIAL_ACT",
+      "status": "EXISTENCE_DATE_OUTCOME_DOCUMENTED_CONTENT_OPEN"
+    },
+    {
+      "id": "AUTO14",
+      "label": "Auto 14 Sep 2026",
+      "type": "JUDICIAL_ACT",
+      "status": "POSTAL_PAPER_COPY_RECEIVED_18SEP_PHOTOGRAPHED_CONTROLLED_NATIVE_ELECTRONIC_OPEN"
+    },
+    {
+      "id": "ALZADA286",
+      "label": "CGPJ Alzada 286/2026",
+      "type": "GOVERNANCE_APPEAL",
+      "status": "IN_PROGRESS_LAST_CONFIRMED_2026-08-21"
+    },
+    {
+      "id": "EXPGUB38",
+      "label": "TSJC Exp. Gub. 38/2026",
+      "type": "COURT_OFFICE_SUPERVISION",
+      "status": "DOCUMENTED"
+    }
+  ],
+  "edges": [
+    {
+      "from": "REF21",
+      "to": "DP1901",
+      "relation": "FIRSTHAND_ORIGIN_ACCOUNT_PLUS_CONTEMPORANEOUS_25JUN_AND_09JUL_CORROBORATION",
+      "evidence": "STAMPED_REF21_COVER_PLUS_25JUN_PROCURADORA_EMAIL_PLUS_09JUL_OPERATIONAL_MAPPING",
+      "bridge": "UNVERIFIED_CANDIDATE_BRIDGE",
+      "chronology_support": "CONTEMPORANEOUSLY_CORROBORATED_BY_25JUN_PROCURADORA_EMAIL_AND_09JUL_MAPPING",
+      "official_event_history": "OUTSTANDING"
+    },
+    {
+      "from": "REF24",
+      "to": "DP1901",
+      "relation": "CANDIDATE_IDENTITY_RECONCILIATION_AFTER_14SEP",
+      "evidence": "AUTO_PLUS_CONTEMPORANEOUS_CHAIN",
+      "bridge": "UNPRODUCED"
+    },
+    {
+      "from": "DP1901",
+      "to": "DIP2",
+      "relation": "OFFICIAL_LINK_12JUL",
+      "evidence": "SIGNED_PROVIDENCIA"
+    },
+    {
+      "from": "DP1901",
+      "to": "FISCAL29",
+      "relation": "REPORT_REQUESTED_AND_ARCHIVE_SOUGHT",
+      "evidence": "AUTO14"
+    },
+    {
+      "from": "FISCAL29",
+      "to": "AUTO14",
+      "relation": "DOWNSTREAM_JUDICIAL_DISPOSITION"
+    },
+    {
+      "from": "REF24",
+      "to": "ALZADA286",
+      "relation": "TRACEABILITY_REPORTED_TO_CGPJ",
+      "bridge": "SEPARATE_GOVERNANCE_ROUTE"
+    },
+    {
+      "from": "REF24",
+      "to": "EXPGUB38",
+      "relation": "COURT_OFFICE_TRACEABILITY_CONTEXT",
+      "bridge": "SEPARATE_SUPERVISION_ROUTE"
+    }
+  ],
+  "open_production": [
+    "exact initiating document for DP1901/NIG/IUP",
+    "certified reparto for daily references 21 and 24",
+    "document-to-case association and metadata history",
+    "every joinder/remittal/reassignment/segregation act",
+    "exact corpus sent to Ministerio Fiscal",
+    "signed 29-Jul Fiscal report and assignment",
+    "native/certified 14-Sep Auto and operative notification metadata",
+    "comparative Ref22/DP1956 creation/reparto record; physical Ref24 custody must be separated from electronic event history"
+  ],
+  "visual": "/assets/visuals/dp1901-routing-collision-20260919.svg",
+  "presenter_clarification_20260919": {
+    "control": "assets/data/control-21-22-24-continuity-v1.json",
+    "field": "presenter_clarification_20260919",
+    "party_position": "PRIVATE_ACTOR_FIRST_JUDGE_MATERIAL_LATER",
+    "certification": "REF21_ORIGIN_CONTEMPORANEOUSLY_CORROBORATED_OFFICIAL_ELECTRONIC_EVENT_HISTORY_OUTSTANDING",
+    "no_scan_status": "EXPLICITLY_AFFIRMED_FIRSTHAND_ACCOUNT_NO_SCAN_NO_ALLOCATION_ON_25JUNE; INDEPENDENT_SYSTEM_CORROBORATION_OUTSTANDING",
+    "procuradora_email_20260625": "11:23 email to María Díaz Vecino records same-day autonomous private-actor filing under daily reference 21 and separate Ref24 supplement.",
+    "july_mapping": "9-Jul correspondence records 1901 as CAM/private Community matter and 1956 as AC matter.",
+    "auto_source": "Paper copy received by post on 18-Sep-2026; complainant photographed that paper copy and uploaded page images."
+  },
+  "ref21_readers": {
+    "es": "/es/control-21-denuncia-actores-privados-25-junio-2026/",
+    "en": "/en/control-21-private-actors-complaint-25-june-2026/"
+  }
+}

@@ -1,0 +1,37 @@
+name: MASTER MYND first-reader structure regression
+on:
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - 'en/acosta-matos-family/index.html'
+      - 'es/acosta-matos-familia/index.html'
+      - 'assets/master-mynd-reader-priority.js'
+      - '.github/workflows/master-mynd-layout-preparation.yml'
+permissions:
+  contents: read
+jobs:
+  verify-structure:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
+          fetch-depth: 1
+          persist-credentials: false
+      - name: Preserve direct-source layout, references and image fingerprints
+        run: |
+          python3 -m pip install --quiet beautifulsoup4 pillow
+          node --check assets/master-mynd-reader-priority.js
+          python3 scripts/validate_master_mynd.py
+          python3 - <<'PY'
+          from pathlib import Path
+          from bs4 import BeautifulSoup
+          for name,expected in [('en/acosta-matos-family/index.html','master-mynd-record'),('es/acosta-matos-familia/index.html','master-mynd')]:
+              page=BeautifulSoup(Path(name).read_text(),'html.parser')
+              assert next(c for c in page.main.children if c.name).get('id')==expected
+              assert page.select_one('script[src="../../assets/master-mynd-reader-priority.js"]')
+          assert '#master-mynd-record.hero h1,#master-mynd-record.hero p{color:inherit}' in Path('en/acosta-matos-family/index.html').read_text()
+          print('Source first-read order and media fingerprints verified. Real computed contrast, image decoding and rendered behaviour are separately tested in all three engines, with and without page JavaScript.')
+          PY
+          test -z "$(git status --porcelain)"

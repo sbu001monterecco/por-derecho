@@ -1,0 +1,124 @@
+{
+  "schema": "por-derecho.sun-rock-strategic-financial-relationship.v1",
+  "control_date": "2026-09-19",
+  "status": "PUBLIC_SAFE_RELATIONSHIP_ARCHITECTURE_NOT_OFFER_NOT_COMMITMENT",
+  "purpose": "Describe the long-term institutional financial relationship architecture around the Sponsor family, Aweswell Limited, Sun Rock and independently underwritten hotel ProjectCos without publishing private family balance-sheet data or implying committed financing.",
+  "brand_architecture": {
+    "family_layer": "Sponsor family / private wealth — detailed balance sheet remains restricted and is not stated on the public website",
+    "legal_uk_holdco_sponsor": "Aweswell Limited",
+    "commercial_group_platform": "Sun Rock",
+    "sun_rock_legal_status": "Commercial hospitality and investment group/platform identity; not represented as a separate incorporated parent company or automatic borrower",
+    "project_sun_rock_public_programme": "Public programme/site umbrella; not an asset owner, borrower, fund or securities issuer",
+    "project_structure": "Individual ring-fenced hotel ProjectCos",
+    "operating_layer": "Separately underwritten hotel and operating assets",
+    "liquidity_loop": "Refinancing, distributions and realised liquidity may support private wealth and recycled Sponsor capital without automatic cross-collateralisation"
+  },
+  "relationship_reasons": [
+    {
+      "lane": "FAMILY_PRIVATE_WEALTH",
+      "scope": [
+        "liquidity",
+        "custody",
+        "investments",
+        "lending",
+        "family balance-sheet advice",
+        "future liquidity events",
+        "governance and succession where appropriate"
+      ]
+    },
+    {
+      "lane": "AWESWELL_SUN_ROCK",
+      "scope": [
+        "treasury",
+        "banking",
+        "payments",
+        "FX",
+        "HoldCo liquidity",
+        "corporate finance",
+        "Sponsor capital",
+        "recurring hospitality opportunities"
+      ]
+    },
+    {
+      "lane": "PROJECTCOS",
+      "scope": [
+        "acquisition finance",
+        "development finance",
+        "senior hotel debt",
+        "preferred capital",
+        "private credit",
+        "co-investment",
+        "refinancing",
+        "recapitalisation",
+        "eventual M&A or asset sale"
+      ]
+    }
+  ],
+  "current_legitimate_work": [
+    "Relationship onboarding, governance and KYC/AML preparation",
+    "Sponsor/HoldCo treasury and corporate-banking architecture",
+    "Restricted family financial map and liquidity planning",
+    "Montaña Roja transaction and capital-structure preparation",
+    "ProjectCo ring-fencing and security design",
+    "Identification of debt, equity, preferred and co-investment routes without representing commitment"
+  ],
+  "possible_3_to_10_year_relationship": [
+    "Acquisition and development financing for independently underwritten hotels",
+    "Construction and operating banking",
+    "Stabilised senior debt and refinancing",
+    "Hedging, treasury and working-capital services",
+    "Private wealth custody and investment of realised distributions or other lawful liquidity",
+    "Capital recycling into later hospitality opportunities"
+  ],
+  "platform_scale_reference": {
+    "source": "assets/data/sun-rock-platform-scale-v1.json",
+    "status": "ILLUSTRATIVE_STABILISED_MANAGEMENT_SCENARIO_NOT_FORECAST",
+    "combined_units": "approximately 560-600",
+    "annual_revenue_eur_millions": "40-58",
+    "operating_ebitda_eur_millions": "10-18",
+    "indicative_gross_hotel_asset_base_eur_millions": "125-200",
+    "headline": "A EUR 150m-class hospitality platform in the making"
+  },
+  "project_finance_rules": [
+    "Each ProjectCo should be independently governed and underwritten.",
+    "Avoid unnecessary cross-collateralisation that could impair future ProjectCo bankability.",
+    "One institutional relationship does not imply that every desk, fund or capital pool will invest.",
+    "Future platform scale is context and is not present collateral.",
+    "No unresolved recovery or damages claim is ordinary project debt-service support or present collateral."
+  ],
+  "recovery_boundary": {
+    "sun_park_recovery_separate_from_montana_roja": true,
+    "unresolved_recoveries_in_public_hotel_asset_range": false,
+    "rule": "Only realised or sufficiently recognised recoveries should later strengthen cash, recognised net assets, debt repayment capacity, Sponsor capital or investable family liquidity."
+  },
+  "public_private_boundary": {
+    "public_page_includes": [
+      "relationship architecture",
+      "institutional capability map",
+      "ring-fencing principles",
+      "illustrative platform-scale context",
+      "public financing and recovery boundaries"
+    ],
+    "public_page_excludes": [
+      "current family NAV",
+      "current family AUM",
+      "private account balances",
+      "liabilities",
+      "guarantees",
+      "security details",
+      "private bank names",
+      "private transaction terms",
+      "investment subscription route"
+    ],
+    "public_securities_offer": false,
+    "retail_distribution_intended": false
+  },
+  "publication_rules": [
+    "Do not name banks or investors as counterparties unless a separately verified public mandate or commitment exists.",
+    "Do not represent Montaña Roja as acquired, approved or financed before those events occur.",
+    "Do not represent Sun Park / MYND Yaiza operating accounts or cash flow as presently controlled by Sun Rock.",
+    "Do not present illustrative platform-scale numbers as current NAV, audited accounts, forecast, collateral or financing commitment.",
+    "Keep detailed family balance-sheet and liquidity information restricted and outside the public repository."
+  ],
+  "terminology_rule": "Institutional relationship may be coordinated at group level, but legal obligations, credit, security and cash flows remain attached to the relevant Aweswell or ProjectCo entity."
+}

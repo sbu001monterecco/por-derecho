@@ -18,12 +18,14 @@ class FiscaliaInterconnectivityBuilderTest(unittest.TestCase):
 
     def test_supporting_receipts_are_not_promoted_to_proceedings(self):
         self.assertTrue(builder.is_support_reference("REGAGE26e00070235775"))
+        self.assertTrue(builder.is_support_reference("A01"))
+        self.assertTrue(builder.is_support_reference("IF/MCS"))
         self.assertFalse(builder.is_support_reference("EG 745/2026"))
 
     def test_complete_deterministic_denominators(self):
         payload = builder.build()
-        self.assertEqual(payload["coverage"]["communication_events"], 296)
-        self.assertEqual(payload["coverage"]["matter_linked_events"], 117)
+        self.assertEqual(payload["coverage"]["communication_events"], 320)
+        self.assertEqual(payload["coverage"]["matter_linked_events"], 141)
         self.assertEqual(payload["coverage"]["fiscalia_identity_total"], 26)
         self.assertEqual(len(payload["priority_chains"]), 9)
         self.assertFalse(payload["coverage"]["unresolved_matter_reference_literals"])

@@ -157,10 +157,31 @@ jobs:
           base = os.environ['BASE'].rstrip('/')
           with open('assets/data/material-updates-v1.json', encoding='utf-8') as stream:
               source_material_updates = json.load(stream)
+          with open('ops/CURRENT_UNITARY_STATE.json', encoding='utf-8') as stream:
+              source_state = json.load(stream)
           expected_material_date = source_material_updates.get('latest_material_date')
           if not isinstance(expected_material_date, str) or len(expected_material_date) != 10:
               raise SystemExit('Canonical latest_material_date is missing or malformed')
-          expected_public_parity = f'{expected_material_date}_LIVE_VERIFIED'
+          source_material = source_state.get('material_updates', {})
+          source_last_live = source_material.get('last_live_verified_material_date')
+          source_public_parity = source_material.get('public_parity')
+          if not isinstance(source_last_live, str) or source_last_live > expected_material_date:
+              raise SystemExit('Source last_live_verified_material_date is missing or invalid')
+          expected_source_parity = (
+              f'{expected_material_date}_LIVE_VERIFIED'
+              if source_last_live == expected_material_date
+              else f'REPOSITORY_{expected_material_date}_PENDING_PUBLICATION_LAST_LIVE_VERIFIED_{source_last_live}'
+          )
+          if source_public_parity != expected_source_parity:
+              raise SystemExit('Source public_parity does not match the declared material lifecycle')
+          pending_source = source_material.get('pending_publication') or {}
+          if source_last_live != expected_material_date:
+              if pending_source.get('control_id') != 'PD-CUATRECASAS-ETJ-DP748-20260918-01':
+                  raise SystemExit('Pending 18-Sep material control is missing')
+              if pending_source.get('state') != 'MERGED_AWAITING_PAGES_READBACK':
+                  raise SystemExit('Pending 18-Sep material must remain MERGED_AWAITING_PAGES_READBACK until metadata promotion')
+              if pending_source.get('merged_to') != 'main':
+                  raise SystemExit('Pending 18-Sep material does not identify main as merge target')
           en = 'Gil Marer and Aweswell allege one continuing economic-criminal enterprise, advanced through successive adoption and divided functions.'
           es = 'Gil Marer y Aweswell alegan una sola empresa continuada de criminalidad económica, desarrollada mediante adopción sucesiva y división de funciones.'
           en_time = 'This is only a factual allegation of connection: it does not characterise the conduct as a continuing or permanent offence or alter completion, any participation window or limitation period for any specific offence.'
@@ -199,6 +220,15 @@ jobs:
           targets['/archive/prompts/RDM_PRIVATE_MAILBOX_UNITARY_CRIMINAL_ENTERPRISE_ANALYSIS_PROMPT_26AUG2026.md'] = [
               'MANIFEST-ONLY PHASE A', 'NATIVE PHASE B OPEN', 'ALG-ENT-018', 'NOT YET TESTABLE FROM MANIFEST',
           ]
+          if source_last_live != expected_material_date:
+              targets['/en/cuatrecasas-etj163-dp748-18-september-2026/'] = [
+                  'Cuatrecasas', 'ETJ 163/2020', 'DP 748/2026', '18 September 2026',
+                  '16 September', '17 September',
+              ]
+              targets['/es/cuatrecasas-etj163-dp748-18-septiembre-2026/'] = [
+                  'Cuatrecasas', 'ETJ 163/2020', 'DP 748/2026', '18 septiembre 2026',
+                  '16 septiembre', '17 septiembre',
+              ]
 
           def fetch(route, attempt):
               url = f"{base}{route}{'&' if '?' in route else '?'}pdue={int(time.time())}-{attempt}"
@@ -238,6 +268,34 @@ jobs:
           merge_sha = '77e2ba300af45a953947160af63283a64512e876'
           tree_sha = '4f0ac26c5548ae44c68933306c68165cbb6c973e'
 
+          def valid_material_lifecycle(material):
+              if material.get('latest_material_date') != expected_material_date:
+                  return False
+              if material.get('repository_latest_material_date') != expected_material_date:
+                  return False
+              if material.get('last_live_verified_material_date') != source_last_live:
+                  return False
+              if material.get('public_parity') != source_public_parity:
+                  return False
+              if source_last_live == expected_material_date:
+                  return True
+              pending = material.get('pending_publication') or {}
+              merge_sha = str(pending.get('merge_sha', ''))
+              routes = set(pending.get('routes') or [])
+              return (
+                  pending.get('control_id') == 'PD-CUATRECASAS-ETJ-DP748-20260918-01'
+                  and pending.get('state') == 'MERGED_AWAITING_PAGES_READBACK'
+                  and pending.get('merged_to') == 'main'
+                  and len(merge_sha) == 40
+                  and all(ch in '0123456789abcdef' for ch in merge_sha)
+                  and {
+                      '/en/cuatrecasas-etj163-dp748-18-september-2026/',
+                      '/es/cuatrecasas-etj163-dp748-18-septiembre-2026/',
+                      '/en/updates/',
+                      '/es/actualizaciones/',
+                  }.issubset(routes)
+              )
+
           def valid_state(value):
               repository = value.get('repository', {})
               material = value.get('material_updates', {})
@@ -257,10 +315,7 @@ jobs:
                   and promoted.get('pages_run_id') == 32942972472
                   and promoted.get('live_verification_run_id') == 32942975508
                   and promoted.get('live_verification_job_id') == 98097657687
-                  and material.get('latest_material_date') == expected_material_date
-                  and material.get('repository_latest_material_date') == expected_material_date
-                  and material.get('last_live_verified_material_date') == expected_material_date
-                  and material.get('public_parity') == expected_public_parity
+                  and valid_material_lifecycle(material)
                   and pages.get('sha') == merge_sha
                   and pages.get('tree_sha') == tree_sha
                   and pages.get('run_id') == 32942972472
@@ -340,7 +395,8 @@ jobs:
             echo "- SHA: $GITHUB_SHA"
             echo '- Source gate: 18 exact same-block ES/EN attributions, read only.'
             echo '- Allegation: `ALG-ENT-018`; `ALG-ORG-011` remains retired.'
-            echo '- State: `PD-UNITARY-STATE-20260826-01 / LIVE_VERIFIED` at exact merge, Pages run and no-cache verifier evidence.'
+            echo '- State: `PD-UNITARY-STATE-20260826-01 / LIVE_VERIFIED` preserves the exact 26-Aug promoted baseline.'
+            echo '- Current material lifecycle is validated exactly as declared; pending 18-Sep routes are read back without cache before a pending state is accepted.'
             if [ "$GITHUB_EVENT_NAME" = 'pull_request' ]; then
               echo '- Public edge readback is reserved for the post-merge main push.'
             else

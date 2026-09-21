@@ -14,6 +14,8 @@ EN = ROOT / "en" / "ricpe-outstanding-actions-now" / "index.html"
 OPS = ROOT / "operations" / "RICPE_SAIP_BATCH_24AUG2026.md"
 MODULE = ROOT / "assets" / "ricpe-saip-batch-status-20260824.js"
 SITE = ROOT / "assets" / "site.js"
+DELEGATED_SITE = ROOT / "assets" / "site-pre-matkator-8584-20260903.js"
+LEGACY_SITE = ROOT / "assets" / "site-pre-treasury-154-hq-20260828.js"
 
 EXPECTED = [
     "REGAGE26e00075132698",
@@ -52,7 +54,7 @@ def contains_private_phrase(value: str) -> bool:
     return False
 
 
-for path in [DATA, ES, EN, OPS, MODULE, SITE]:
+for path in [DATA, ES, EN, OPS, MODULE, SITE, DELEGATED_SITE, LEGACY_SITE]:
     if not path.exists():
         fail(f"missing {path.relative_to(ROOT)}")
 
@@ -94,14 +96,21 @@ for path in PUBLIC_FILES:
         fail(f"digest-matched private street fragment found in {path.relative_to(ROOT)}")
 
 site = SITE.read_text(encoding="utf-8")
-if "ricpe-saip-batch-status-20260824.js" not in site:
-    fail("site.js does not load the batch status module")
+delegated_site = DELEGATED_SITE.read_text(encoding="utf-8")
+legacy_site = LEGACY_SITE.read_text(encoding="utf-8")
+loader_graph = "\n".join((site, delegated_site, legacy_site))
+if "site-pre-matkator-8584-20260903.js" not in site:
+    fail("site.js does not delegate to the preserved pre-Matkator loader chain")
+if "site-pre-treasury-154-hq-20260828.js" not in delegated_site:
+    fail("delegated site loader does not preserve the pre-Treasury chain")
+if "ricpe-saip-batch-status-20260824.js" not in legacy_site:
+    fail("delegated loader graph does not load the RICPE SAIP batch status module")
 for inherited in [
     "SOURCE-OF-FUNDS-NOTICE-20260820",
     "AC-COMMUNITY-DE-FACTO-ADMINISTRATION-LOADERS-20260824",
     "CALIFICACION-CRIMINAL-MISUSE-THESIS-20260824",
 ]:
-    if inherited not in site:
-        fail(f"inherited site loader marker missing: {inherited}")
+    if inherited not in loader_graph:
+        fail(f"inherited loader graph marker missing: {inherited}")
 
 print("RICPE SAIP batch validation passed: 8 filings, 5 new requests, 3 supplements, privacy, parity and inherited-loader controls OK.")

@@ -47,9 +47,9 @@ REQUIRED_ORGANISATIONS = {
     "Del Rosal, Adame & Segrelles",
     "DPM Abogados",
 }
-ALLOWED_CLASSIFICATIONS = {"OUR_CURRENT_PROFESSIONAL", "OUR_FORMER_PROFESSIONAL"}
+ALLOWED_CLASSIFICATIONS = {"OUR_CURRENT_PROFESSIONAL", "PROJECT_SIDE_HISTORIC_PROFESSIONAL", "OUR_FORMER_PROFESSIONAL"}
 ALLOWED_TRACKS = {
-    "CURRENT_COUNSEL", "FORMER_COUNSEL", "FORMER_COUNSEL_COLLABORATOR",
+    "CURRENT_COUNSEL", "HISTORIC_PROFESSIONAL_REVIEW", "FORMER_COUNSEL", "FORMER_COUNSEL_COLLABORATOR",
     "FORMER_COUNSEL_ROLE_REVIEW", "PROCURADOR_CURRENT", "PROCURADOR_FORMER",
 }
 
@@ -154,7 +154,8 @@ def main() -> int:
         computed = {
             "total": len(records),
             "current_counsel": sum(r["track"] == "CURRENT_COUNSEL" for r in records),
-            "former_or_review_counsel": sum(r["track"] not in {"CURRENT_COUNSEL", "PROCURADOR_CURRENT", "PROCURADOR_FORMER"} for r in records),
+            "former_or_review_counsel": sum(r["track"] not in {"CURRENT_COUNSEL", "HISTORIC_PROFESSIONAL_REVIEW", "PROCURADOR_CURRENT", "PROCURADOR_FORMER"} for r in records),
+            "historic_professional_review": sum(r["track"] == "HISTORIC_PROFESSIONAL_REVIEW" for r in records),
             "current_procuradores": sum(r["track"] == "PROCURADOR_CURRENT" for r in records),
             "former_procuradores": sum(r["track"] == "PROCURADOR_FORMER" for r in records),
         }
@@ -163,12 +164,23 @@ def main() -> int:
         require(computed == {
             "total": 40,
             "current_counsel": 3,
-            "former_or_review_counsel": 31,
+            "former_or_review_counsel": 28,
+            "historic_professional_review": 3,
             "current_procuradores": 2,
             "former_procuradores": 4,
         }, f"unexpected corrected professional totals: {computed}")
 
         by_id = {record["identity_id"]: record for record in records}
+        bernardo = by_id["PD-SP-P-0079"]
+        require(bernardo.get("track") == "HISTORIC_PROFESSIONAL_REVIEW", "Bernardo del Rosal must not be classified as former counsel")
+        require(bernardo.get("classification") == "PROJECT_SIDE_HISTORIC_PROFESSIONAL", "Bernardo del Rosal historic-professional classification missing")
+        require("No current mandate is asserted" in bernardo.get("matter_scope", ""), "Bernardo del Rosal current-mandate boundary missing")
+        require("not characterised publicly" in bernardo.get("matter_scope", ""), "Bernardo del Rosal contractual-status boundary missing")
+        require(bernardo.get("routes", {}).get("es") == "/es/bernardo-del-rosal-frob-bankia-sun-rock/", "Bernardo del Rosal ES crosswalk route missing")
+
+        for pid in ("PD-SP-P-0080", "PD-SP-P-0081"):
+            require(by_id[pid].get("track") == "HISTORIC_PROFESSIONAL_REVIEW", f"DRAS team member {pid} must remain historic professional review, not former counsel")
+
         adriana = by_id["PD-SP-P-0067"]
         require(adriana.get("role") == "Procuradora", "Adriana Hernández Díaz must be classified as procuradora")
         require(adriana.get("track") == "PROCURADOR_CURRENT", "Adriana Hernández Díaz has wrong track")
@@ -192,6 +204,24 @@ def main() -> int:
             fail("private-source locator leaked into public professional register")
         if re.search(r"\b[0-9a-f]{16}\b", public_blob, re.I):
             fail("probable private Gmail/source identifier leaked into public register")
+
+        for crosswalk_path, markers in {
+            ROOT / "es" / "bernardo-del-rosal-frob-bankia-sun-rock" / "index.html": [
+                "Del Rosal / FROB–BFA–Bankia ↔ Sun Rock", "HISTORIC_PROFESSIONAL_REVIEW", "LA LENTE COMÚN",
+                "Bankia → SAREB → PH122 → CAM", "escisión total posterior", "La conexión estaba latente",
+            ],
+            ROOT / "en" / "bernardo-del-rosal-frob-bankia-sun-rock" / "index.html": [
+                "Del Rosal / FROB–BFA–Bankia ↔ Sun Rock", "HISTORIC_PROFESSIONAL_REVIEW", "THE COMMON LENS",
+                "Bankia → SAREB → PH122 → CAM", "later total demerger", "The connection was already latent",
+            ],
+            ROOT / "sitemap-lender-liability.xml": [
+                "es/bernardo-del-rosal-frob-bankia-sun-rock/", "en/bernardo-del-rosal-frob-bankia-sun-rock/",
+            ],
+        }.items():
+            require(crosswalk_path.is_file(), f"missing Del Rosal crosswalk publication: {crosswalk_path}")
+            blob = crosswalk_path.read_text(encoding="utf-8")
+            for marker in markers:
+                require(marker in blob, f"missing Del Rosal crosswalk marker {marker!r} in {crosswalk_path}")
 
         for path, markers in {
             ROOT / "es" / "profesionales-representantes" / "index.html": [
@@ -227,7 +257,7 @@ def main() -> int:
             f"({counts['PERSON']} people; {counts['ORGANISATION']} organisations)"
         )
         print(" - professional roster: 40")
-        print(" - current lawyers: 3; former/review lawyers: 31")
+        print(" - current lawyers: 3; former/review lawyers: 28; historic professional review: 3")
         print(" - procuradores/as: 2 current + 4 former")
         print(" - Adriana Hernández Díaz: court-record-verified procuradora")
         print(" - source-name variants: preserved")

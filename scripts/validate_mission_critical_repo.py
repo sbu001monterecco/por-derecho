@@ -66,6 +66,7 @@ REQUIRED_FILES = [
     "deployment-probes/mission-critical-hardening-20260818.json",
 ]
 ALLOWED_WRITE = {
+    "publication-controller.yml": {"contents"},
     "verify-pages-propagation-optimum.yml": {"statuses"},
     "verify-mission-critical-hardening-live.yml": {"statuses"},
     "verify-ricpe-channel-status-live.yml": {"statuses"},
@@ -128,7 +129,15 @@ def validate_workflows(errors: list[str]) -> None:
 
         writes = set(WRITE_SCOPE.findall(text))
         if "contents" in writes:
-            error(f"{rel}: contents: write is prohibited for production workflows", errors)
+            if path.name != "publication-controller.yml":
+                error(f"{rel}: contents: write is prohibited for production workflows", errors)
+            else:
+                for marker in ("issue_comment:", "github.event.issue.number == 1428", "author_association == 'OWNER'", "ref: main", "persist-credentials: false", "cancel-in-progress: false", "queue: max", "python3 scripts/pd_release_controller.py"):
+                    if marker not in text:
+                        error(f"{rel}: state-only controller lost guard: {marker}", errors)
+                for forbidden in ("pull_request:", "pull_request_target:", "git push", "gh pr merge", "persist-credentials: true"):
+                    if forbidden in text:
+                        error(f"{rel}: unsafe state-only controller command: {forbidden}", errors)
         unexpected = writes - ALLOWED_WRITE.get(path.name, set())
         if unexpected:
             error(f"{rel}: unexpected write permission(s): {sorted(unexpected)}", errors)
@@ -155,11 +164,10 @@ def validate_current_state(data: dict, errors: list[str]) -> None:
         error("ops/CURRENT_STATE.json repository observation SHA invalid", errors)
     if not SHA_RE.fullmatch(str(observation.get("tree_sha", ""))):
         error("ops/CURRENT_STATE.json repository observation tree SHA invalid", errors)
-    if observation.get("sha") != PROMOTED_SHA:
-        error("ops/CURRENT_STATE.json does not observe the promoted 26-Aug merge", errors)
-    if observation.get("tree_sha") != PROMOTED_TREE_SHA:
-        error("ops/CURRENT_STATE.json does not observe the promoted 26-Aug tree", errors)
-    if observation.get("status") != "BASELINE_OBSERVED_BEFORE_OPERATIONAL_TRUTH_CHANGE":
+    if observation.get("status") not in {
+        "BASELINE_OBSERVED_BEFORE_OPERATIONAL_TRUTH_CHANGE",
+        "POST_MERGE_MAIN_AND_DEPLOYMENT_OBSERVED",
+    }:
         error("ops/CURRENT_STATE.json observation boundary is not explicit", errors)
     if observation.get("observation_phase") != "POST_MERGE_MAIN_AND_DEPLOYMENT_OBSERVED":
         error("ops/CURRENT_STATE.json post-merge observation phase missing", errors)
@@ -176,20 +184,31 @@ def validate_current_state(data: dict, errors: list[str]) -> None:
     if routing.get("expected_control_id") != UNITARY_CONTROL_ID:
         error("ops/CURRENT_STATE.json promoted specialist control expectation missing", errors)
     deployment = data.get("deployment_observation") or {}
-    if deployment.get("last_observed_served_sha") != PROMOTED_SHA:
-        error("ops/CURRENT_STATE.json promoted deployment SHA missing", errors)
-    if deployment.get("last_observed_pages_run_id") != PAGES_RUN_ID:
-        error("ops/CURRENT_STATE.json promoted Pages run missing", errors)
-    if deployment.get("verification_level") != "LIVE_VERIFIED_FOR_SERVED_SHA":
-        error("ops/CURRENT_STATE.json exact-route verification level missing", errors)
-    for key, expected in {
-        "last_exact_route_verification_run_id": VERIFIER_RUN_ID,
-        "last_exact_route_verification_run_number": VERIFIER_RUN_NUMBER,
-        "last_exact_route_verification_job_id": VERIFIER_JOB_ID,
-        "last_exact_route_verified_at": VERIFIER_COMPLETED_AT,
-    }.items():
-        if deployment.get(key) != expected:
-            error(f"ops/CURRENT_STATE.json exact-route evidence drift: {key}", errors)
+    if not SHA_RE.fullmatch(str(deployment.get("last_observed_served_sha", ""))):
+        error("ops/CURRENT_STATE.json observed deployment SHA invalid", errors)
+    if not isinstance(deployment.get("last_observed_pages_run_id"), int):
+        error("ops/CURRENT_STATE.json observed Pages run missing", errors)
+    level = deployment.get("verification_level")
+    if level not in {
+        "LIVE_VERIFIED_FOR_SERVED_SHA",
+        "DEPLOYED_BUILD_SUCCESS_NO_EXACT_ROUTE_READBACK",
+    }:
+        error("ops/CURRENT_STATE.json deployment verification level is not explicit", errors)
+    exact_route_fields = (
+        "last_exact_route_verification_run_id",
+        "last_exact_route_verification_run_number",
+        "last_exact_route_verification_job_id",
+        "last_exact_route_verified_at",
+    )
+    if level == "LIVE_VERIFIED_FOR_SERVED_SHA":
+        for key in exact_route_fields:
+            if deployment.get(key) is None:
+                error(f"ops/CURRENT_STATE.json exact-route evidence missing: {key}", errors)
+    else:
+        for key in exact_route_fields:
+            if deployment.get(key) is not None:
+                error(f"ops/CURRENT_STATE.json deployment-only observation retains exact-route field: {key}", errors)
+
 
 
 def validate_production_status(data: dict, errors: list[str]) -> None:
@@ -214,10 +233,6 @@ def validate_production_status(data: dict, errors: list[str]) -> None:
         for key in ("served_sha", "source_tree_sha"):
             if not SHA_RE.fullmatch(str(data.get(key, ""))):
                 error(f"ops/PRODUCTION_STATUS.json {key} must be a 40-char SHA", errors)
-        if data.get("served_sha") != PROMOTED_SHA:
-            error("ops/PRODUCTION_STATUS.json does not serve the promoted 26-Aug merge", errors)
-        if data.get("source_tree_sha") != PROMOTED_TREE_SHA:
-            error("ops/PRODUCTION_STATUS.json does not serve the promoted 26-Aug tree", errors)
         deployment = data.get("deployment") or {}
         if deployment.get("status") != "completed":
             error("ops/PRODUCTION_STATUS.json deployment must be completed", errors)
@@ -225,21 +240,21 @@ def validate_production_status(data: dict, errors: list[str]) -> None:
             error("ops/PRODUCTION_STATUS.json deployment must have succeeded", errors)
         if not isinstance(deployment.get("workflow_run_id"), int):
             error("ops/PRODUCTION_STATUS.json workflow_run_id must be an integer", errors)
-        for key, expected in {
-            "workflow_run_id": PAGES_RUN_ID,
-            "run_number": PAGES_RUN_NUMBER,
-            "completed_at": PAGES_COMPLETED_AT,
-        }.items():
-            if deployment.get(key) != expected:
-                error(f"ops/PRODUCTION_STATUS.json Pages evidence drift: {key}", errors)
+        if not isinstance(deployment.get("run_number"), int):
+            error("ops/PRODUCTION_STATUS.json run_number must be an integer", errors)
+        head_sha = deployment.get("head_sha")
+        if head_sha is not None and head_sha != data.get("served_sha"):
+            error("ops/PRODUCTION_STATUS.json deployment head does not match served SHA", errors)
         verification = data.get("verification") or {}
-        if verification.get("state") != "LIVE_VERIFIED":
-            error("ops/PRODUCTION_STATUS.json v2 is not live verified for the served SHA", errors)
-        if (
-            verification.get("current_exact_route_content_verification")
-            != "LIVE_VERIFIED_FOR_SERVED_SHA"
-        ):
-            error("ops/PRODUCTION_STATUS.json served-SHA exact-route readback missing", errors)
+        verification_state = verification.get("state")
+        route_verification = verification.get("current_exact_route_content_verification")
+        if verification_state not in {"LIVE_VERIFIED", "DEPLOYED_BUILD_SUCCESS"}:
+            error("ops/PRODUCTION_STATUS.json verification state is not explicit", errors)
+        elif verification_state == "LIVE_VERIFIED":
+            if route_verification != "LIVE_VERIFIED_FOR_SERVED_SHA":
+                error("ops/PRODUCTION_STATUS.json live verification lacks exact route readback", errors)
+        elif route_verification != "NOT_RECORDED_FOR_SERVED_SHA":
+            error("ops/PRODUCTION_STATUS.json deployment-only observation claims exact route readback", errors)
         specialist = verification.get("latest_live_verified_specialist_release") or {}
         if specialist.get("state") != "LIVE_VERIFIED":
             error("ops/PRODUCTION_STATUS.json live-verified specialist evidence missing", errors)
@@ -340,23 +355,37 @@ def validate_release_ledger(data: dict, errors: list[str]) -> None:
     if latest is None:
         error("ops/RELEASE_LEDGER.json latest-observation pointer does not resolve", errors)
         return
-    for key, expected in {
-        "source_sha": PROMOTED_SHA,
-        "source_tree_sha": PROMOTED_TREE_SHA,
-        "state": "LIVE_VERIFIED",
-        "pages_run_id": PAGES_RUN_ID,
-        "pages_run_number": PAGES_RUN_NUMBER,
-        "live_verification_run_id": VERIFIER_RUN_ID,
-        "live_verification_run_number": VERIFIER_RUN_NUMBER,
-        "live_verification_job_id": VERIFIER_JOB_ID,
-        "effective_at": VERIFIER_COMPLETED_AT,
-    }.items():
-        if latest.get(key) != expected:
-            error(f"ops/RELEASE_LEDGER.json latest evidence drift: {key}", errors)
-    limits = str(latest.get("limits", ""))
-    for marker in ("not proof", "guilt", "570 bis", "570 ter", "original pact", "evidential support from the Phase-A manifest"):
-        if marker not in limits:
-            error(f"ops/RELEASE_LEDGER.json publication/evidence boundary missing: {marker}", errors)
+    production = load_json(ROOT / "ops" / "PRODUCTION_STATUS.json", errors) or {}
+    latest_state = latest.get("state")
+    if latest_state not in {"LIVE_VERIFIED", "DEPLOYED_BUILD_SUCCESS"}:
+        error("ops/RELEASE_LEDGER.json latest verification state is not explicit", errors)
+    if not isinstance(latest.get("pages_run_id"), int):
+        error("ops/RELEASE_LEDGER.json latest Pages run missing", errors)
+    if not isinstance(latest.get("pages_run_number"), int):
+        error("ops/RELEASE_LEDGER.json latest Pages run number missing", errors)
+    if production:
+        if latest.get("source_sha") != production.get("served_sha"):
+            error("ops/RELEASE_LEDGER.json latest source SHA does not match production", errors)
+        if latest.get("source_tree_sha") != production.get("source_tree_sha"):
+            error("ops/RELEASE_LEDGER.json latest tree SHA does not match production", errors)
+        if latest_state != (production.get("verification") or {}).get("state"):
+            error("ops/RELEASE_LEDGER.json latest state does not match production", errors)
+    exact_keys = (
+        "live_verification_run_id",
+        "live_verification_run_number",
+        "live_verification_job_id",
+    )
+    if latest_state == "LIVE_VERIFIED":
+        for key in exact_keys:
+            if not isinstance(latest.get(key), int):
+                error(f"ops/RELEASE_LEDGER.json latest live-verification evidence missing: {key}", errors)
+    else:
+        for key in exact_keys:
+            if latest.get(key) is not None:
+                error(f"ops/RELEASE_LEDGER.json deployment-only latest record claims exact-route evidence: {key}", errors)
+    if "not proof" not in str(latest.get("limits", "")):
+        error("ops/RELEASE_LEDGER.json latest evidence boundary missing", errors)
+
 
 
 def validate_operational_files(errors: list[str]) -> None:

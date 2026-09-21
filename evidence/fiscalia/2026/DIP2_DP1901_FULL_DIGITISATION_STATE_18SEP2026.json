@@ -1,0 +1,187 @@
+{
+  "schema_version": "1.0",
+  "publication_id": "FISCALIA_DIP2_DP1901_FULL_DIGITISATION_20260918",
+  "owner": "Gil Marer / Por Derecho",
+  "control_date": "2026-09-18",
+  "status": "SOURCE_ROOM_COMPLETE_FOR_LOCATED_CORPUS",
+  "scope": [
+    "DIP 2/2026 available-corpus full-text digitisation",
+    "11 March 2026 correction, REGAGE receipt and 12 March registry-routing trace",
+    "DP 1901/2026 14 September order full-text transcription from three photographs",
+    "cross-proceeding source-status propagation",
+    "embedded PDF readers and contextual/interconnected critique for DIP2 Decree and 14-Sep DP1901 order",
+    "June/July DP 1901 procedural-identity source closure and live custody-manifest reconciliation"
+  ],
+  "evidence": {
+    "dip2": {
+      "master_id": "GC-FIS-017",
+      "nig": "3501670220260000245",
+      "sources": [
+        {
+          "id": "EVID-2026-FISCALIA-DIP2-DENUNCIA-013JAN-001",
+          "date": "2026-01-13",
+          "pages": 5,
+          "sha256": "d42051eea0ff28bc230ef58315333729a84454b8376b23ad7bbc5db35e3a77a4"
+        },
+        {
+          "id": "EVID-2026-FISCALIA-DIP2-AMPLIACION-08FEB-002",
+          "date": "2026-02-08",
+          "pages": 5,
+          "sha256": "07dc79179397f680f0201075618d6782af31a6432c823a1addf341a0f75bf1be"
+        },
+        {
+          "id": "EVID-2026-FISCALIA-DIP2-DECRETO-002",
+          "date": "2026-03-06",
+          "pages": 10,
+          "sha256": "7d7be3516fd691de5da0d05081e5d4916b6e3141804891abf5742df82007a452"
+        },
+        {
+          "id": "EVID-2026-FISCALIA-DIP2-OFICIO-001",
+          "date": "2026-03-09",
+          "pages": 1,
+          "sha256": "dc4d6d8b5843e0f052cbfd8025466bb1a25ae2d0634c31d6186383263168f261"
+        },
+        {
+          "id": "EVID-2026-FISCALIA-DIP2-ACTUALIZACION-11MAR-005",
+          "date": "2026-03-11",
+          "pages": 4,
+          "sha256": "0c3116c35b7dea1976dd39ee043898d0aa6b5b1164c36c9b014b4c3ca70d85b9"
+        },
+        {
+          "id": "EVID-2026-FISCALIA-DIP2-REGAGE-11MAR-006",
+          "date": "2026-03-11",
+          "pages": 2,
+          "sha256": "102d2f407cc33f0398d45239d94fe56a80246e645191e5e987e430b5c533b289"
+        },
+        {
+          "id": "EVID-2026-FISCALIA-DIP2-REGAGE-TRAMITACION-007",
+          "event_date": "2026-03-12",
+          "notification_date": "2026-03-14",
+          "pages": null,
+          "sha256": null,
+          "source_type": "automated registry-routing email; informational/no legal value",
+          "proves": "system-reported passage to Registro General Fiscalía de la Comunidad Autónoma de Canarias for processing",
+          "does_not_prove": "substantive DIP2 incorporation, personal review, reconsideration or downstream transmission"
+        }
+      ],
+      "open": [
+        "separate 11-Feb opening decree",
+        "complete certified file/index",
+        "substantive post-11-Mar case-file incorporation, handler/access, correction/reconsideration and downstream transmission; formal registry-office routing now documented"
+      ]
+    },
+    "dp1901": {
+      "master_id": "GC-CRI-008",
+      "nig": "3501643220260016977",
+      "iup": "LI2026017152",
+      "order_date": "2026-09-14",
+      "source_type": "three photographs; native court PDF not yet located",
+      "image_sha256": [
+        "b4259b179e36a263a2c16818d2f90543105ea400fffdda532c43a342bb513513",
+        "ea9f363e5eca27f110ee42dedc971ed0fedb8a4d72fbd1c1ce582d27c8ff7e43",
+        "7dac86c0b2cc7a8ac4f0974125328a8c095980652f32f573a7850c9518db603f"
+      ],
+      "open": [
+        "native/certified order",
+        "legal notification metadata",
+        "29-Jul signed Fiscal report, author, assignment, corpus and reasoning",
+        "exact initiating document and certified daily-reference-21 / daily-reference-24 reparto/ingestion bridge",
+        "any formal joinder/reassignment/remittal/segregation/accumulation act"
+      ],
+      "public_pdf_derivative": {
+        "path": "evidence/judicial/dp-1901-2026/public-pdfs/auto-14sep2026-public-controlled-transcription.pdf",
+        "pages": 3,
+        "sha256": "2cb0944b50a20b890def32638dd44a7a0add6ce6bdca7681b63e46a4e997f557",
+        "source_relation": "generated from canonical public transcription checked against the three source photographs; not native court PDF"
+      },
+      "procedural_identity_source_closure": {
+        "path": "evidence/judicial/dp-1901-2026/PROCEDURAL_IDENTITY_SOURCE_CLOSURE_18SEP2026.md",
+        "state": "PROCEDURAL_IDENTITY_COLLISION_OPEN — DIRECTION NOT CERTIFIED",
+        "closed_from_connected_corpus": [
+          "18-Jun daily-reference-24 judge complaint is a separate stamped filing intended for TSJC Civil/Criminal route",
+          "25-Jun daily-reference-21 five-private-actor complaint is a separate stamped filing",
+          "25-Jun 13-page supplement expressly belongs to daily reference 24",
+          "9-Jul ATLANTE displays DP1901/Plaza6 and DP1956/Plaza1 with Gil Marer as complainant but not subject matter",
+          "9-Jul stamped cover proves private-actor amplification/documentary material was physically tendered under DP1901/Plaza6",
+          "contemporaneous July correspondence records operational private-actor treatment of DP1901 before the signed DIP2-linked providencia"
+        ],
+        "residual_authority_only": [
+          "exact initiating document that generated DP1901/NIG/IUP",
+          "certified daily-reference-21 / daily-reference-24 reparto and destination history",
+          "18-Jun–12-Jul scan/ingestion and document-to-NIG association history",
+          "every joinder/reassignment/remittal/segregation/accumulation act",
+          "exact corpus/index sent to Ministerio Fiscal before the 29-Jul report"
+        ],
+        "source_hashes": {
+          "18jun_ref22_ac_cover": "c377ecb9a0a7a83c9b6b62ac6009affb27e26da61a33eb92d25b3b8c7bcd3b7d",
+          "18jun_ref24_judge_cover": "2f9b7015598094c68f6408b68a776073de1d7d2fa248169be46fd57bf3bad6c3",
+          "25jun_ref21_private_cover": "8ee03884d32b6b3d9e8377a646eca3d79a7ae199aebc8cc378a9180ba2aef846",
+          "25jun_ref24_supplement_cover": "724caf532c25159ead6ae4cfd88c21acbc2d1f202e2bc08cfd713ad07c0376f1",
+          "09jul_atlante": "af51c3fd744eae415a5818543e996f656709552b3b3c1c0750c31f7403274042",
+          "09jul_dp1901_private_tender": "dfad6f405b7a2ec047a98a7183a9cbfd0698427d3925d02b2a50b4de76de8f71"
+        }
+      }
+    }
+  },
+  "privacy": {
+    "direct_personal_identifiers_redacted_from_public_transcriptions": true,
+    "verification_codes_omitted": true,
+    "substantive_text_preserved": true,
+    "raw_private_native_sources_committed": false
+  },
+  "required_routes": [
+    "es/fiscalia-dip-2-2026/index.html",
+    "en/fiscalia-dip-2-2026/index.html",
+    "es/dp-1901-2026-auto-14-septiembre-2026/index.html",
+    "en/dp-1901-2026-order-14-september-2026/index.html",
+    "es/procedimientos/gc-fis-017/index.html",
+    "en/proceedings/gc-fis-017/index.html"
+  ],
+  "boundaries": [
+    "A transcription proves document content, not truth of an allegation.",
+    "The appeal-status discrepancy does not by itself prove deliberate falsehood or prosecutorial misconduct.",
+    "The 29 July dismissal request does not by itself prove capture, prevaricacion, coordination or criminality.",
+    "Control 21 and daily reference no. 24 remain separate intake records until certified reparto evidence resolves the DP 1901 mapping.",
+    "The DP1901 public PDF is transcription-derived from controlled photographs and is not the native electronic court PDF.",
+    "June/July connected sources materially prove the collision but do not certify which filing originally generated DP1901."
+  ],
+  "branch": "update/dip2-dp1901-full-digitisation-18sep2026",
+  "current_state": "SUCCESSOR_ROUTING_SOURCE_CLOSURE_18SEP2026",
+  "expected_source_files": [
+    "evidence/fiscalia/dip-2-2026/README.md",
+    "evidence/fiscalia/dip-2-2026/full-text/denuncia-inicial-13ene2026-public-transcription.md",
+    "evidence/fiscalia/dip-2-2026/full-text/ampliacion-08feb2026-public-transcription.md",
+    "evidence/fiscalia/dip-2-2026/full-text/decreto-archivo-dip-2-2026-06mar2026-public-transcription.md",
+    "evidence/fiscalia/dip-2-2026/full-text/oficio-notificacion-dip-2-2026-09mar2026-public-transcription.md",
+    "evidence/fiscalia/dip-2-2026/full-text/actualizacion-11mar2026-public-transcription.md",
+    "evidence/fiscalia/dip-2-2026/full-text/registro-11mar2026-public-transcription.md",
+    "evidence/fiscalia/2026/DIP2_INACCURACY_ANALYTICAL_ERROR_LEDGER_18SEP2026.md",
+    "evidence/judicial/dp-1901-2026/full-text/auto-14sep2026-public-transcription.md",
+    "archive/FISCALIA_DIP2_DP1901_FULL_DIGITISATION_CONTROL_18SEP2026.md",
+    "scripts/validate_dip2_dp1901_full_digitisation.py",
+    "evidence/fiscalia/dip-2-2026/full-text/registro-tramitacion-12mar2026-email-public-transcription.md",
+    "ops/GITLAB_PUBLIC_PAGES_DIVERGENCE_18SEP2026.md",
+    "evidence/judicial/dp-1901-2026/public-pdfs/auto-14sep2026-public-controlled-transcription.pdf",
+    "evidence/judicial/dp-1901-2026/PROCEDURAL_IDENTITY_SOURCE_CLOSURE_18SEP2026.md"
+  ],
+  "validation": {
+    "status": "DEDICATED_CI_REQUIRED_BEFORE_MERGE",
+    "dedicated_workflow": ".github/workflows/validate-dip2-dp1901-full-digitisation.yml",
+    "required_boundaries": [
+      "available located DIP2 corpus fully digitised; complete certified file not claimed",
+      "DP1901 order transcribed from photographs; native court PDF not claimed",
+      "appeal discrepancy does not prove deliberate falsehood",
+      "29-Jul dismissal request does not prove criminality",
+      "registry-office routing trace does not prove substantive incorporation or review",
+      "GitLab public Pages remains a read-only comparator while stale DP1901/EG745 text is unreconciled",
+      "DIP2 dedicated page embeds the controlled Decree PDF and keeps critique separate from official text",
+      "DP1901 dedicated page embeds a transcription-derived PDF clearly labelled non-native and keeps critique bounded",
+      "DP1901 source-closure file must preserve PROCEDURAL identity collision without asserting its direction"
+    ]
+  },
+  "pull_request": 1570,
+  "pull_request_url": "https://github.com/sbu001monterecco/por-derecho/pull/1570",
+  "document_class": "EVIDENCE_SOURCE_ROOM_STATE",
+  "governance_note": "Machine-readable evidence/digitisation state. This is not a deployment/publication-state manifest and therefore lives under the evidence namespace.",
+  "successor_branch": "update/dp1901-routing-gap-closure-18sep2026"
+}

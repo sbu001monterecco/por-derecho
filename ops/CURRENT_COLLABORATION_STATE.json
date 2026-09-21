@@ -76,7 +76,11 @@
   ],
   "post_merge_policy": {
     "normal_content_mutation_by_ci": false,
-    "normal_role": ["deploy", "verify", "report"],
+    "normal_role": [
+      "deploy",
+      "verify",
+      "report"
+    ],
     "legacy_mutating_workflows": "MIGRATION_DEBT_NOT_A_PATTERN_FOR_NEW_WORK"
   },
   "legacy_pr_policy": {
@@ -100,5 +104,28 @@
     "authority_contact": false,
     "journalist_contact": false,
     "social_publication": false
+  },
+  "publication_controller": {
+    "workflow": ".github/workflows/publication-controller.yml",
+    "manual": "ops/PUBLICATION_CONTROLLER.md",
+    "acceptance": "PD release acceptance",
+    "state_branch": "pd-publication-state",
+    "exclusive_server_enforcement": false,
+    "rule": "Owner commands in existing issue1428; exact-SHA atomic permit, normal connector merge and explicit verification/recovery. Administrative enforcement remains pending."
+  },
+  "active_integration_assignment": {
+    "control_date": "2026-09-20",
+    "owner": "DP1901-11OF13-PUBLICATION-20260920",
+    "mode": "SOLE_INTEGRATOR",
+    "authority": "Gil Marer current instruction to update fully to GitHub",
+    "control_tower_receipt": "https://github.com/sbu001monterecco/por-derecho/issues/1428#issuecomment-5751869403",
+    "branch": "integration/dp1901-11-of-13-filings-20260920",
+    "base_main": "cac2616d695d6158d67ad4b677ef73a433270a51",
+    "prior_branch": "integration/dp1901-eg745-20sep-programme-20260919",
+    "prior_branch_preserved": true,
+    "scope": "Public-safe 11-of-13 DP1901 filing-state reconciliation; A06/A13 held; E.G.745 substantive response and counsel-dependent remedy remain separate.",
+    "privacy_boundary": "No private receipt PDFs, addresses, personal identifiers, signatures, private email, authentication material, native private filenames or unredacted filing bodies.",
+    "other_threads": "READ_ONLY_FOR_THIS_SCOPE; no independent publication",
+    "runtime_rule": "Refresh main, tower, PR and controller state before merge; exact-head checks and post-deployment verification required."
   }
 }

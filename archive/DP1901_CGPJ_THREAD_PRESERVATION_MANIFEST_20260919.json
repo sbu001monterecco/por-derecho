@@ -1,0 +1,52 @@
+{
+  "schema": "por-derecho.thread-preservation.v1",
+  "audit_date": "2026-09-19",
+  "scope": "DP1901 / Ref21 / Ref24 / CGPJ response publication thread",
+  "github": {
+    "repository": "sbu001monterecco/por-derecho",
+    "live_baseline_sha": "53ee6b0b08e9bcfc2f3cf19ce5aff72f0620165c",
+    "integration_pr": 1637,
+    "reviewed_candidate_sha": "def444afed408263837b920fb19dc01c0ed088ca",
+    "pages_run_id": 35440808510,
+    "pages_run_number": 1613,
+    "live_verifier_run_id": 35440809176,
+    "controller_run_id": 35440818318,
+    "controller_phase": "VERIFIED_FOR_SCOPE"
+  },
+  "google_drive": {
+    "folder_id": "1Kg8LhvFbMAQEo7tLDKB8mgUnQG27E1tU",
+    "folder_url": "https://drive.google.com/drive/folders/1Kg8LhvFbMAQEo7tLDKB8mgUnQG27E1tU",
+    "parent": "Por Derecho Backups",
+    "visibility": "owner-only at audit time",
+    "readback_file_count": 17
+  },
+  "response_sha256": {
+    "docx": "81e9d6afaabeab00a343fc9e96d372e0ae88f78b734f1a72e1edb94b33d14ffc",
+    "pdf": "cc72caa9884b1cd362687525c7d086533f8c0a2ab5e0621a68b025975dd9586c",
+    "markdown": "5264a784d74da5da51e779a08dee086e21234d1e837aeed2e5932178a05eb2b1"
+  },
+  "source_image_sha256": [
+    "8da695b160844a206e5d9dd1899f8042026aba6bf329f13268f201a1289ca1eb",
+    "1ae0a45bdba267d66e961d8da10bd56c3bae311bff75361d1286c54a63848307",
+    "6e339890a23c28ca06f8573273027df5dd65f8817661ccaf4fe2acdf83a71194",
+    "c891d29b4a865911e096e68cdacfa24a5beabfe83e52726b73a1e9186a4d4513",
+    "deee9e08e9bbda111fd2b665dd5cfa061b84f24655fcf6e5951256ade3c9f1d4",
+    "5392a0ce4c4986b68b5e8b43e34ac7df9ebae80d5088a45f876bd94e2029193a"
+  ],
+  "web_image_sha256": [
+    "a6bbe9e4f53fd2e1c6566454bd9d32b7860ffdee78eded2394be8d8244cf6dea",
+    "9d06dc1340f8aa050ae71780eb24a265b7b5ce467e9178c7b1aa976a4ddfd54a",
+    "c3c5c5783f949f0e6b8af7010313ccc5e30e708e98e64ba4e59bf23ca7657b88",
+    "ddbc5e4a5f25f025d5577b7efcd0f7fb84dd36d65732a915288db3a608305e4e",
+    "329eb2050a8ba0f5a15138d34261cf73d4f257f18cd5ed3f1b8ec5f3e472b554",
+    "0a196b6cf699a9171ad98b44b00bc12faf87e86bc33cf1b09ba3795e18c92ee9"
+  ],
+  "procedural_boundary": {
+    "published_not_filed": true,
+    "cgpj_filing_performed": false,
+    "judicial_appeal_filed": false,
+    "eg745_response_filed": false,
+    "authority_email_or_portal_action": false
+  },
+  "drive_residue_note": "At least one TEMP_DP1901_* transfer file was visible at Drive root; it is not relied upon and was not deleted by this audit."
+}

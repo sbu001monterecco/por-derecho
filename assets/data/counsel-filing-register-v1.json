@@ -207,7 +207,7 @@
           "court_laj_response_status": "20-May Providencia records reform and subsidiary appeal as interposed in time and form; 16-Jul Auto partly upholds reform for lack of reasons and otherwise maintains provisional dismissal",
           "result": "reforma_partly_upheld_reasoning_defect_archive_provisional_maintained",
           "appeal_followup_ref": "TF-APP-004; CP-GAP-012",
-          "appeal_followup_status": "subsidiary_appeal_admitted_but_article_766_4_transfer_transmission_and_roll_not_located",
+          "appeal_followup_status": "09-Sep appellant allegations filed ad cautelam; 16-Sep LAJ order verifies origin processing and five-day transfer to Ministerio Fiscal; Audiencia remittal/roll not located",
           "timeline_event_ref": "DP748-2026-20260417-REFORMA-SUB-APELACION",
           "source_confidence": "high_primary_procedural_source",
           "verification_status": "signed_filing_lexnet_presentation_and_court_admission_verified"
@@ -262,16 +262,82 @@
             "ETJ163-SRC-AUTO-20260619",
             "ETJ163-SRC-REPOSICION-20260626",
             "primary ETJ LexNET receipt presented 26-Jun-2026 14:40:08",
-            "ETJ163-SRC-DIOR-20260728"
+            "ETJ163-SRC-DIOR-20260728",
+            "ETJ163-SRC-AUTO-REPOSICION-20260917"
           ],
-          "court_laj_response_ref": "ETJ163-SRC-DIOR-20260728",
-          "court_laj_response_status": "reposicion admitted and five-day transfer ordered; later determination not located",
-          "result": "admitted_pending_later_determination",
+          "court_laj_response_ref": "ETJ163-SRC-AUTO-REPOSICION-20260917",
+          "court_laj_response_status": "17-Sep-2026 order dismisses reposición; order states no appeal lies; subsidiary irreversible-acts prayer has no differentiated ruling in the located order",
+          "result": "reposicion_dismissed_17sep2026",
           "appeal_followup_ref": "CP-GAP-016",
-          "appeal_followup_status": "later_opposition_resolution_and_current_enforcement_status_open",
+          "appeal_followup_status": "Article_215_2_complement_under_counsel_review; current_adjudication_cession_registration_possession_status_open",
           "timeline_event_ref": "ETJ163-2020-20260626-REPOSICION",
           "source_confidence": "high_primary_procedural_source",
           "verification_status": "signed_filing_lexnet_presentation_and_admission_verified"
+        },
+        {
+          "filing_id": "DP748-2026-GIL-20260909-IMPULSO-APELACION",
+          "lawyer": "Carlos Llamas Sanz",
+          "side_perimeter": "our_counsel",
+          "client_party": "Gil Marer",
+          "procurador": "Adriana Hernández Díaz",
+          "procurador_status": "verified_in_signed_pleading",
+          "authority_personacion_status": "proceeding representation already verified in DP 748 control",
+          "proceeding_id": "DP 748/2026",
+          "pieza_incidente": "subsidiary_appeal_processing_and_supervening_document",
+          "court_body": "Plaza nº 4 del Tribunal de Instancia (Sección Instrucción) de San Cristóbal de La Laguna",
+          "filing_date": "2026-09-09",
+          "presentation_datetime": null,
+          "filing_title": "Impulso de apelación subsidiaria, alegaciones ad cautelam y hecho nuevo",
+          "document_ref": "DP748-SRC-IMPULSO-APELACION-20260909",
+          "position_relief": "Requests processing of the already-lodged subsidiary appeal, submits Article 766.4 allegations ad cautelam, and adds the 03-Sep Cuatrecasas ETJ opposition as supervening material.",
+          "evidence_refs": [
+            "DP748-SRC-IMPULSO-APELACION-20260909",
+            "DP748-SRC-DIOR-APELACION-20260916"
+          ],
+          "court_laj_response_ref": "DP748-SRC-DIOR-APELACION-20260916",
+          "court_laj_response_status": "16-Sep LAJ order joins filings and gives Ministerio Fiscal five days for submissions",
+          "result": "origin_appeal_processing_verified",
+          "appeal_followup_ref": "TF-APP-004",
+          "appeal_followup_status": "Fiscal_submission_and_Audiencia_remittal_roll_open",
+          "timeline_event_ref": "DP748-2026-20260909-IMPULSO-APELACION",
+          "source_confidence": "high_primary_procedural_source",
+          "verification_status": "signed_filing_and_signed_16sep_court_processing_act_verified",
+          "receipt_reconciliation_20260919": {
+            "review_date": "2026-09-19",
+            "status": "TWO_NATIVE_LEXNET_RECEIPTS_VERIFIED_PRINCIPAL_BYTE_LINK_OPEN",
+            "source_note": "ops/recovery-cross-thread/la-laguna-all-party-20260919/REVIEW.md",
+            "proceeding": "DP 748/2026",
+            "court": "Plaza nº 4, Sección Instrucción, Tribunal de Instancia de San Cristóbal de La Laguna",
+            "receipts": [
+              {
+                "receipt_sha256": "04818561aa74fb0a89baa2a7f416a9ad7ba8d4c5360ea688aab4bd82134199f5",
+                "receipt_bytes": 177856,
+                "transmission_datetime_source": "2026-09-09 15:06:30",
+                "time_basis": "LexNET peninsular time",
+                "principal_hash_printed": "858041ffc8eda308d75b41b90bc7a8e9f915d888ad668bcbbe3ac87408338748",
+                "listed_document_roles": [
+                  "principal"
+                ]
+              },
+              {
+                "receipt_sha256": "61f2f41aa9b0e70ecd821987c03a4b74640d9e244228f825d4d28eb21d6698bf",
+                "receipt_bytes": 177999,
+                "transmission_datetime_source": "2026-09-09 16:36:40",
+                "time_basis": "LexNET peninsular time",
+                "principal_hash_printed": "1f64b1d425e13fda1bfb365ecfc1cdf405a285aeae6a39c8e67582b404996f29",
+                "annex_hash_printed": "39b1d3bb535070c039e05cd4fc2774ba76440f00da2582830cc385ce95ed4d9f",
+                "listed_document_roles": [
+                  "principal",
+                  "annex"
+                ]
+              }
+            ],
+            "existing_signed_copy_sha256": "d501087730c3f276d3bc6afecd5d1250ccb548f3059f2b57eeb8a174c25087cd",
+            "match_to_existing_signed_copy": "NEITHER_PRINTED_PRINCIPAL_HASH_EQUALS_EXISTING_SIGNED_COPY_SHA256",
+            "review_method": "Original RFC2822 transport recovered through authorised read; both native PDF attachments hashed; all four pages text-extracted; page-one tables visually verified. Cryptographic signature/certificate validation not performed.",
+            "boundary": "The two receipts evidence two transmissions. They do not by themselves identify either complete eight-page principal with the differently hashed current signed copy, or prove Audiencia remittal, roll, merits or outcome. Portal classification as appeal does not convert an impulso of an existing subsidiary appeal into a new appeal.",
+            "next_step": "Recover both exact receipt-listed native principals and the later annex; compare full texts and hashes, retaining variants and transmission sequence."
+          }
         }
       ]
     },
@@ -417,26 +483,56 @@
       "filings": []
     },
     {
-      "display_name": "Juan Daniel Fajardo Expósito", "side_perimeter": "external_or_party_specific_counsel", "our_perimeter": false,
+      "display_name": "Juan Daniel Fajardo Expósito",
+      "side_perimeter": "external_or_party_specific_counsel",
+      "our_perimeter": false,
       "register_status": "Rollo_1010_2018_cover_appearance_located_filings_and_authority_open",
-      "located_appearances": [{"proceeding_id":"Rollo 1010/2018","client_party":"Gil Marer","procurador":"Andrés Castellano Rivero","source_ref":"archive/ROLLO_1010_2018_AUTO_804_CARET_INTERLINK_CONTROL_30AUG2026.md"}], "filings": []
+      "located_appearances": [
+        {
+          "proceeding_id": "Rollo 1010/2018",
+          "client_party": "Gil Marer",
+          "procurador": "Andrés Castellano Rivero",
+          "source_ref": "archive/ROLLO_1010_2018_AUTO_804_CARET_INTERLINK_CONTROL_30AUG2026.md"
+        }
+      ],
+      "filings": []
     },
     {
-      "display_name": "Ignacio Manuel Martín Marrero", "side_perimeter": "external_or_party_specific_counsel", "our_perimeter": false,
+      "display_name": "Ignacio Manuel Martín Marrero",
+      "side_perimeter": "external_or_party_specific_counsel",
+      "our_perimeter": false,
       "register_status": "Rollo_1010_2018_cover_appearance_located_filings_and_authority_open",
-      "located_appearances": [{"proceeding_id":"Rollo 1010/2018","client_party":"Constructora Acosta Matos; Laura Patricia Acosta Matos; José Daniel Acosta Matos","procurador":"José Ángel Rodríguez Gil","source_ref":"archive/ROLLO_1010_2018_AUTO_804_CARET_INTERLINK_CONTROL_30AUG2026.md"}], "filings": []
+      "located_appearances": [
+        {
+          "proceeding_id": "Rollo 1010/2018",
+          "client_party": "Constructora Acosta Matos; Laura Patricia Acosta Matos; José Daniel Acosta Matos",
+          "procurador": "José Ángel Rodríguez Gil",
+          "source_ref": "archive/ROLLO_1010_2018_AUTO_804_CARET_INTERLINK_CONTROL_30AUG2026.md"
+        }
+      ],
+      "filings": []
     },
     {
-      "display_name": "Juan Carlos Prieto Puente", "side_perimeter": "external_opposing_dissident_side", "our_perimeter": false,
+      "display_name": "Juan Carlos Prieto Puente",
+      "side_perimeter": "external_opposing_dissident_side",
+      "our_perimeter": false,
       "register_status": "Rollo_1010_2018_cover_appearance_located_filings_and_authority_open",
-      "located_appearances": [{"proceeding_id":"Rollo 1010/2018","client_party":"Antonio Cogolludo Rojas; Shaila María Cogolludo Ramos","procurador":"Soledad Tello Checa","source_ref":"archive/ROLLO_1010_2018_AUTO_804_CARET_INTERLINK_CONTROL_30AUG2026.md"}], "filings": []
+      "located_appearances": [
+        {
+          "proceeding_id": "Rollo 1010/2018",
+          "client_party": "Antonio Cogolludo Rojas; Shaila María Cogolludo Ramos",
+          "procurador": "Soledad Tello Checa",
+          "source_ref": "archive/ROLLO_1010_2018_AUTO_804_CARET_INTERLINK_CONTROL_30AUG2026.md"
+        }
+      ],
+      "filings": []
     }
   ],
   "global_scan_status": {
     "complete_lawyer_denominator": false,
     "complete_filing_denominator": false,
     "complete_procurador_denominator": false,
-    "verified_filing_count_in_this_register": 9,
-    "reason": "Source population includes two verified RPL 3304/2025 filings attributed to Javier Sixto Seijas, three source-verified DP 748/ETJ filings attributed to Carlos Llamas Sanz, four signed ETJ filings attributed to Teresa Morenés Basabe, and three lawyer appearances on the Rollo 1010/2018 cover. The Teresa entries verify signed pleadings while presentation times and correlated court effects remain open. Cover appearances are not promoted as filings. Full primary-source corpus ingestion and reconciliation remains required before any denominator-completeness claim."
+    "verified_filing_count_in_this_register": 10,
+    "reason": "Register now includes the 09-Sep-2026 DP 748 appeal-processing filing and 16-Sep court response, plus the 17-Sep ETJ resolution of the 26-Jun reposición. Full primary-source denominator reconciliation remains required."
   }
 }

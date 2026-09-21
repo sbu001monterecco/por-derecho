@@ -3,7 +3,7 @@
 
   const path = window.location.pathname.replace(/\/index\.html$/, '/');
   const isEN = document.documentElement.lang?.toLowerCase().startsWith('en') || path.includes('/en/');
-  const isHome = /\/(?:por-derecho\/)?(?:es\/|en\/)?$/.test(path);
+  const isHome = /^\/(?:por-derecho\/)?(?:es\/|en\/)?$/.test(path);
   if (!isHome || document.querySelector('[data-pd-home-mission="20260904"]')) return;
 
   const root = '/por-derecho/' + (isEN ? 'en/' : 'es/');
@@ -36,9 +36,9 @@
     caseTitle: 'Shared storyline. Separate attribution.',
     caseIntro: 'Read horizontally through time, then vertically through the legal lane. The same event can be relevant to different actors for different reasons; the bridge must be proved separately each time.',
     lanes: [
-      ['PRIVATE ACTORS','DP 1901/2026 · Control 21','Who created, used, transmitted or monetised apparent authority, access, project value or downstream benefit?',routes.dp1901],
+      ['PRIVATE ACTORS','Control 21 · DP 1901 mapping under audit','Who created, used, transmitted or monetised apparent authority, access, project value or downstream benefit — while the official DP 1901 allocation identity is reconstructed?',routes.dp1901],
       ['INSOLVENCY ADMINISTRATOR','DP 1956/2026 · Control 22','What did the administrator know, verify, protect, report, implement, account for or leave uncorrected within his own duties?',routes.dp1956],
-      ['JUDICIAL LAYER','Control 24','What reached the court, which resolutions followed, and what documentary bridge explains their effects?',routes.c24]
+      ['JUDICIAL LAYER','Control 24 · DP 1901 mapping under audit','What reached the court, which resolutions followed, and what reparto / routing bridge explains why the 14 September order treats DP 1901 as alleged prevarication?',routes.c24]
     ],
     timelineTitle: 'Shared factual spine',
     timeline: [
@@ -81,9 +81,9 @@
     caseTitle: 'Storyline compartido. Atribución separada.',
     caseIntro: 'Lea horizontalmente a través del tiempo y luego verticalmente por carril jurídico. Un mismo hecho puede ser relevante para actores distintos por razones distintas; el puente debe probarse separadamente cada vez.',
     lanes: [
-      ['ACTORES PRIVADOS','DP 1901/2026 · Control 21','¿Quién creó, usó, transmitió o monetizó autoridad aparente, acceso, valor de proyecto o beneficio posterior?',routes.dp1901],
+      ['ACTORES PRIVADOS','Control 21 · mapeo DP 1901 en auditoría','¿Quién creó, usó, transmitió o monetizó autoridad aparente, acceso, valor de proyecto o beneficio posterior, mientras se reconstruye la identidad oficial de reparto de DP 1901?',routes.dp1901],
       ['ADMINISTRADOR CONCURSAL','DP 1956/2026 · Control 22','¿Qué conoció, verificó, protegió, comunicó, implementó, contabilizó o dejó sin corregir el Administrador dentro de sus propios deberes?',routes.dp1956],
-      ['CAPA JUDICIAL','Control 24','¿Qué llegó al órgano judicial, qué resoluciones siguieron y qué puente documental explica sus efectos?',routes.c24]
+      ['CAPA JUDICIAL','Control 24 · mapeo DP 1901 en auditoría','¿Qué llegó al órgano judicial, qué resoluciones siguieron y qué puente de reparto/routing explica que el Auto de 14 septiembre trate DP 1901 como prevaricación?',routes.c24]
     ],
     timelineTitle: 'Columna factual compartida',
     timeline: [
@@ -241,4 +241,12 @@
       </div>
     </div>`;
   hero.after(section);
+
+  if (!document.querySelector('script[data-home-future-institutional-loader]')) {
+    const futureScript = document.createElement('script');
+    futureScript.src = '/por-derecho/assets/home-future-institutional-20260916.js?v=20260916a';
+    futureScript.async = false;
+    futureScript.setAttribute('data-home-future-institutional-loader', '20260916a');
+    document.head.appendChild(futureScript);
+  }
 })();

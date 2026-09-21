@@ -1,7 +1,7 @@
 {
   "schema": "por-derecho.operational-truth.current-state.v2",
   "record_type": "CURRENT_STATE_CONTRACT_WITH_LAST_OBSERVATION",
-  "control_date": "2026-08-26",
+  "control_date": "2026-09-19",
   "purpose": "Authoritative routing for repository, deployment and rollback state. Specialist case, evidence, procedural and reader-facing facts remain authoritative in their own controlled state files.",
   "authority": {
     "current_repository_truth": "Resolve refs/heads/main dynamically through GitHub or local git at execution time.",
@@ -29,31 +29,31 @@
   "repository_observation": {
     "repository": "sbu001monterecco/por-derecho",
     "ref": "refs/heads/main",
-    "sha": "77e2ba300af45a953947160af63283a64512e876",
-    "tree_sha": "4f0ac26c5548ae44c68933306c68165cbb6c973e",
-    "commit_time": "2026-08-26T07:28:56Z",
-    "observed_at": "2026-08-26T07:32:47Z",
-    "status": "BASELINE_OBSERVED_BEFORE_OPERATIONAL_TRUTH_CHANGE",
+    "sha": "1e96f0d97323ba4c10ad0b7341d28017d6fa26dd",
+    "tree_sha": "78384988b8840479dd194ed559e1cc7990a25a3e",
+    "commit_time": "2026-09-19T21:12:18Z",
+    "observed_at": "2026-09-19T22:01:42Z",
+    "status": "POST_MERGE_MAIN_AND_DEPLOYMENT_OBSERVED",
     "observation_phase": "POST_MERGE_MAIN_AND_DEPLOYMENT_OBSERVED",
-    "legacy_status_compatibility": "The status value is retained temporarily for mission-critical validator compatibility; observation_phase carries the accurate lifecycle state.",
+    "legacy_status_compatibility": "The checked-in values are a dated, source-backed observation; dynamically resolved GitHub state remains current repository truth.",
     "relationship_rule": "The observed SHA must remain an ancestor of the checked-out commit. A live runtime report supersedes this last observation."
   },
   "deployment_observation": {
     "status_file": "ops/PRODUCTION_STATUS.json",
-    "last_observed_served_sha": "77e2ba300af45a953947160af63283a64512e876",
-    "last_observed_pages_run_id": 32942972472,
-    "last_observed_at": "2026-08-26T07:32:47Z",
-    "verification_level": "LIVE_VERIFIED_FOR_SERVED_SHA",
-    "last_exact_route_verification_run_id": 32942975508,
-    "last_exact_route_verification_run_number": 4,
-    "last_exact_route_verification_job_id": 98097657687,
-    "last_exact_route_verified_at": "2026-08-26T07:29:55Z"
+    "last_observed_served_sha": "1e96f0d97323ba4c10ad0b7341d28017d6fa26dd",
+    "last_observed_pages_run_id": 35469702999,
+    "last_observed_at": "2026-09-19T22:01:42Z",
+    "verification_level": "DEPLOYED_BUILD_SUCCESS_NO_EXACT_ROUTE_READBACK",
+    "last_exact_route_verification_run_id": null,
+    "last_exact_route_verification_run_number": null,
+    "last_exact_route_verification_job_id": null,
+    "last_exact_route_verified_at": null
   },
   "repository_inventory_observation": {
-    "open_pull_requests": 36,
-    "observed_at": "2026-08-26T05:50:53Z",
+    "open_pull_requests": 61,
+    "observed_at": "2026-09-19T22:01:42Z",
     "source": "GitHub search API: repo:sbu001monterecco/por-derecho is:pr is:open",
-    "meaning": "Observation only; always re-query before triage or merge decisions."
+    "meaning": "Observation only; dynamically re-query before triage, merge or release decisions."
   },
   "corpus": {
     "identity_registry": {
@@ -83,7 +83,8 @@
       "counts": {
         "total": 40,
         "current_counsel": 3,
-        "former_or_review_counsel": 31,
+        "former_or_review_counsel": 28,
+        "historic_professional_review": 3,
         "current_procuradores": 2,
         "former_procuradores": 4
       }
@@ -115,5 +116,18 @@
     "Open pull requests are candidate deltas, not repository truth.",
     "Operational metadata does not establish any case allegation, procedural status or private-source conclusion.",
     "Publication verification proves only the recorded deployment and public-route markers; it is not proof of the attributed enterprise allegation, any person's guilt, Penal Code articles 570 bis or 570 ter, an original pact, or evidential support from the Phase-A manifest."
-  ]
+  ],
+  "platform_access_boundary": {
+    "github": {
+      "state": "ACTIVE_AS_OBSERVED",
+      "basis": "Current main, protected-branch metadata, pull requests, Actions and Pages deployment were read through the connected GitHub integration at the observation time.",
+      "limits": "This does not certify any separate browser, account or future-access path."
+    },
+    "gitlab": {
+      "state": "TEMPORARILY_UNAVAILABLE_BY_USER_REPORT",
+      "reported_at": "2026-09-19T22:01:42Z",
+      "basis": "User reported that the GitLab account is temporarily blocked. No independent GitLab access probe was performed in this refresh.",
+      "rule": "Use GitHub as the active continuity/update path while GitLab access is unavailable. Do not infer cause, duration, recovery, repository parity or authority to bypass access controls."
+    }
+  }
 }

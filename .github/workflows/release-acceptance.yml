@@ -1,0 +1,41 @@
+name: Release acceptance
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: release-acceptance-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+jobs:
+  acceptance:
+    name: PD release acceptance
+    runs-on: ubuntu-latest
+    timeout-minutes: 18
+    env:
+      GITHUB_BASE_SHA: ${{ github.event.pull_request.base.sha || github.event.before }}
+      GITHUB_HEAD_SHA: ${{ github.event.pull_request.head.sha || github.sha }}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
+          fetch-depth: 0
+          persist-credentials: false
+      - name: Ensure PDF inspection dependency exists
+        run: command -v pdftotext || (sudo apt-get update -qq && sudo apt-get install -y poppler-utils)
+      - name: Execute all required source checks and reject any incomplete result
+        run: python3 scripts/check_release_acceptance.py
+      - name: Prove validators did not alter source
+        run: git diff --exit-code
+      - uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
+        if: always()
+        with:
+          name: release-acceptance-${{ github.run_id }}
+          path: |
+            /tmp/pd-release-acceptance/
+            /tmp/ci-control-plane/
+          if-no-files-found: error
+          retention-days: 30

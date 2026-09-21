@@ -465,11 +465,56 @@
       "type": "ORGANISATION",
       "name": "MYND Yaiza",
       "aliases": [
-        "MYND"
+        "MYND",
+        "Sun Park",
+        "Hotel Sun Park"
       ],
       "legacy": [
         "ricpe_hnt_mynd"
-      ]
+      ],
+      "canonical_site_name": "Sun Park",
+      "current_commercial_name": "MYND Yaiza",
+      "object_kind": "HOTEL_ESTABLISHMENT_AND_PHYSICAL_SITE",
+      "profile_ref": "assets/data/sun-park-mynd-yaiza-site-v1.json",
+      "routes": {
+        "es": "/es/sun-park-mynd-yaiza/",
+        "en": "/en/sun-park-mynd-yaiza/"
+      },
+      "canonical_address": {
+        "display": "Calle Janubio 3, Playa Blanca, Lanzarote 35580, Spain",
+        "street": "Calle Janubio 3",
+        "locality": "Playa Blanca",
+        "municipality": "Yaiza",
+        "island": "Lanzarote",
+        "postal_code": "35580",
+        "province": "Las Palmas",
+        "region": "Canary Islands",
+        "country": "Spain",
+        "locked_on": "2026-09-05",
+        "rule": "SUN_PARK_MYND_YAIZA_SITE_ADDRESS_LOCK_05SEP2026.md",
+        "authority": "Explicit project address lock, corroborated by the indexed official Lanzarote tourism accommodation listing; not a new cadastral/title certification."
+      },
+      "historical_address_variants": [
+        {
+          "literal": "AVENIDA JANUBIO s/n-URB. SUN PARK- Playa Blanca-T.M. YAIZA- 35580, Lanzarote",
+          "source": "COA Lanzarote Hoja de Dirección, 25/02/2022, 22/000036/7800",
+          "status": "HISTORICAL_DOCUMENT_LITERAL_PRESERVED"
+        },
+        {
+          "literal": "Avda. Janubio S/N, 35580 Playa Blanca - Lanzarote",
+          "source_url": "https://www.myndhotels.com/en/hotels/lanzarote/mynd-yaiza/map/",
+          "checked_on": "2026-09-05",
+          "status": "CURRENT_OPERATOR_SOURCE_VARIANT_PRESERVED_NOT_SILENTLY_REWRITTEN"
+        }
+      ],
+      "cadastral_reference": {
+        "literal": "5137001FS1953N",
+        "status": "DOCUMENTED_PROJECT_REFERENCE",
+        "source": "COA Lanzarote 22/000036/7800, first sheet",
+        "boundary": "Not a cadastral validation of all individual fincas, ownership, the estate perimeter, or comprehensive current boundaries."
+      },
+      "capacity_boundary": "Connections enable navigation and actor-specific source review; they do not merge people, companies, estates, proceedings, ownership, authority, knowledge or responsibility. The hotel site has no assigned single legal owner in this record.",
+      "record_semantics": "Enrichment of the existing hotel/establishment identity, not a new registry or a new legal person. Immutable legacy ORGANISATION storage category is retained; object_kind controls site interpretation."
     },
     {
       "id": "PD-SP-O-0043",

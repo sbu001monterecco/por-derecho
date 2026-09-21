@@ -4,7 +4,7 @@
 This validator deliberately separates human semantic census work from what a
 machine can attest.  It proves the exact 18 rendered ``<main>`` snapshots, a
 body occurrence anchor for each of the 130 deduplicated objects, state parity,
-and the no-inline-caret occurrence guards.  It does not pretend to perform
+and the historical no-inline-caret occurrence guards, while allowing the two\nN07 routes' separately controlled successor markup.  It does not pretend to perform
 named-entity recognition or to turn identity reconciliation into conduct proof.
 """
 
@@ -36,6 +36,15 @@ EXPECTED_GUARDS = {
     "Irigoyen": ("DANIEL_IRIGOYEN", "CARET_CONFIRMED"),
     "Laura Acosta Matos": ("LAURA_PATRICIA_ACOSTA_MATOS", "CARET_CONFIRMED"),
     "Community / Comunidad": ("BARE_COMMUNITY", "CARET_PENDING"),
+}
+
+# The 27–28 August first-hop record is frozen and remains no-inline-caret.
+# N07 has a later, separately controlled public-surface successor that is
+# validated by validate_caret_public_surface.py.  These are the only current
+# first-hop routes permitted to carry inline CAEPR identity/caret markup.
+SUCCESSOR_INLINE_CARET_ROUTES = {
+    "/es/cuaderno-juridico/meeting-point-357-2024-trazabilidad-judicial/",
+    "/en/legal-notebook/meeting-point-357-2024-judicial-traceability/",
 }
 
 
@@ -174,7 +183,22 @@ for surface, route in expected_routes.items():
     except (TypeError, ValueError):
         continue
     parser = MainSurface()
-    parser.feed(path.read_text(encoding="utf-8"))
+    from source_observation_contracts import historical_surface
+    current = MainSurface()
+    current.feed(path.read_text(encoding="utf-8"))
+    current_text = normalize(" ".join(current.parts))
+    check(bool(current_text), f"empty current source route {route}")
+    if route in SUCCESSOR_INLINE_CARET_ROUTES:
+        # This exception is current-surface only.  The historical snapshot below
+        # is still read from frozen source_observation_contracts and must remain
+        # caret-free.  Exact IDs, hrefs, states, names and visible carets are
+        # enforced by the dedicated successor validator.
+        check(bool(current.inline_identity_markup), f"missing controlled successor inline caret/identity markup on {route}")
+        check("^" in current_text, f"missing controlled successor inline caret character on {route}")
+    else:
+        check(not current.inline_identity_markup, f"uncontrolled current inline caret/identity markup on {route}")
+        check("^" not in current_text, f"uncontrolled current inline caret character on {route}")
+    parser.feed(historical_surface(path))
     text = normalize(" ".join(parser.parts))
     surface_text[surface] = text
     snapshot = snapshot_by_surface.get(surface) or {}
