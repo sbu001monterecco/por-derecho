@@ -2228,5 +2228,81 @@
       "commercialisation before adjudication",
       "patrimonial displacement"
     ]
+  },
+  {
+    "lang": "es",
+    "path": "es/icalpa-correspondencia-2025-2026/",
+    "title": "ICALPA — correspondencia institucional 2025–2026",
+    "type": "institution",
+    "summary": "Censo público-seguro completo de la correspondencia localizada con ICALPA en las rutas de Registro, Deontología, notificaciones y RedAbogacía, con control de independencia del ponente.",
+    "tags": [
+      "ICALPA",
+      "correspondencia",
+      "DIP 79/2026",
+      "DIP 80/2026",
+      "ponente",
+      "independencia"
+    ],
+    "aliases": [
+      "registro ICALPA",
+      "correspondencia Las Palmas",
+      "cautelas ponente"
+    ]
+  },
+  {
+    "lang": "en",
+    "path": "en/icalpa-correspondence-2025-2026/",
+    "title": "ICALPA — institutional correspondence 2025–2026",
+    "type": "institution",
+    "summary": "Complete public-safe census of located ICALPA correspondence across Registry, Deontology, notification and RedAbogacía routes, including rapporteur-independence safeguards.",
+    "tags": [
+      "ICALPA",
+      "correspondence",
+      "DIP 79/2026",
+      "DIP 80/2026",
+      "rapporteur",
+      "independence"
+    ],
+    "aliases": [
+      "ICALPA register",
+      "Las Palmas correspondence",
+      "rapporteur safeguards"
+    ]
+  },
+  {
+    "lang": "es",
+    "path": "es/icatf-correspondencia-2025-2026/",
+    "title": "ICATF — correspondencia y trazabilidad 2025–2026",
+    "type": "institution",
+    "summary": "Registro público-seguro de las rutas ICATF, consulta 2647-ICATF, comunicación de 21 agosto y solicitud de trazabilidad de ICAM 1487/26.",
+    "tags": [
+      "ICATF",
+      "2647-ICATF",
+      "ICAM 1487/26",
+      "Tenerife",
+      "correspondencia"
+    ],
+    "aliases": [
+      "registro ICATF",
+      "Tenerife Bar correspondence"
+    ]
+  },
+  {
+    "lang": "en",
+    "path": "en/icatf-correspondence-2025-2026/",
+    "title": "ICATF — correspondence and traceability 2025–2026",
+    "type": "institution",
+    "summary": "Public-safe register of ICATF routes, 2647-ICATF, the 21 August communication and ICAM 1487/26 traceability request.",
+    "tags": [
+      "ICATF",
+      "2647-ICATF",
+      "ICAM 1487/26",
+      "Tenerife",
+      "correspondence"
+    ],
+    "aliases": [
+      "ICATF register",
+      "Tenerife Bar correspondence"
+    ]
   }
 ]
