@@ -1,13 +1,13 @@
 {
   "schema": "por-derecho.publication-runtime.v1",
-  "fence": 33,
-  "owner": "1701:0ebd634332b6290719cf12aae1842c1b83841a63",
-  "phase": "VERIFIED_FOR_SCOPE",
-  "pr": 1701,
-  "base_sha": "a5e7b2fd50b41fe3dc1e533a5231e08be687dacb",
-  "candidate_sha": "0ebd634332b6290719cf12aae1842c1b83841a63",
-  "run_id": 35620945114,
-  "claimed_at": "2026-09-21T15:43:13.483339Z",
+  "fence": 34,
+  "owner": "1709:b7c96631fd64daf2876c9aefaac903999eb6432d",
+  "phase": "CLAIMED",
+  "pr": 1709,
+  "base_sha": "8354af9935c66054388f70072e380eb46b2fdc39",
+  "candidate_sha": "b7c96631fd64daf2876c9aefaac903999eb6432d",
+  "run_id": 35639411906,
+  "claimed_at": "2026-09-21T18:39:01.914231Z",
   "expiry_policy": "Never silently expire into free; recover after inspecting actual merge/deployment.",
   "receipts": [
     {
@@ -1966,119 +1966,5 @@
       "scope": "Changed readable public resources plus ES/EN entrypoints. Browser checks are separate premerge evidence; not a whole-site or legal-proof certificate."
     }
   ],
-  "checkpoints": [
-    {
-      "phase": "ACCEPTED",
-      "at": "2026-09-21T15:43:14.864618Z",
-      "evidence": {
-        "checks": [
-          {
-            "name": "PD release acceptance",
-            "id": 106401835130,
-            "conclusion": "success"
-          },
-          {
-            "name": "publication-integrity",
-            "id": 106401391735,
-            "conclusion": "success"
-          }
-        ]
-      }
-    },
-    {
-      "phase": "MERGE_PENDING",
-      "at": "2026-09-21T15:44:31.740877Z",
-      "evidence": {
-        "pr": 1701
-      }
-    },
-    {
-      "phase": "MERGED",
-      "at": "2026-09-21T15:44:32.806820Z",
-      "evidence": {
-        "merge_sha": "71d499a7000ac2765e617f9d7323dd0f4f788d50"
-      }
-    },
-    {
-      "phase": "DEPLOYED",
-      "at": "2026-09-21T15:52:17.279876Z",
-      "evidence": {
-        "pages_run_id": 35620872194,
-        "merge_sha": "71d499a7000ac2765e617f9d7323dd0f4f788d50"
-      }
-    },
-    {
-      "phase": "VERIFIED_FOR_SCOPE",
-      "at": "2026-09-21T15:52:22.899115Z",
-      "evidence": {
-        "merge_sha": "71d499a7000ac2765e617f9d7323dd0f4f788d50",
-        "pages_run_id": 35620872194,
-        "exact_matches": [
-          {
-            "path": "assets/data/sun-rock-capital-process-v1.json",
-            "sha256": "b4aedb05bcc95c9aa7547c4d0676b64f5c393dbf15560830cca6bab32d845380",
-            "bytes": 3259
-          },
-          {
-            "path": "assets/institutional-capital-20260921.css",
-            "sha256": "2df9d952595289751fedc586421a1533ef700c6857d9ad376b63b703db0cb3de",
-            "bytes": 3114
-          },
-          {
-            "path": "en/capital-relationships/index.html",
-            "sha256": "81653f247232103833d97f1e99b49d497311c23d13a8c0646ddea0f411a959ec",
-            "bytes": 17292
-          },
-          {
-            "path": "en/index.html",
-            "sha256": "c048d21d4c94e3cb6896e4c74d69a9ab73f84c3426d40fe815370b40fe1ba109",
-            "bytes": 228197
-          },
-          {
-            "path": "en/institutional-capital/index.html",
-            "sha256": "b1449590d44cd99def2bc4dbd2280624b137cb443475fba38df9ab23e8a62008",
-            "bytes": 15022
-          },
-          {
-            "path": "es/capital-institucional/index.html",
-            "sha256": "545145bd73b6608c70767f1b33512883d7690c9091f06b967b8107a0c1b7c7ef",
-            "bytes": 15696
-          },
-          {
-            "path": "es/index.html",
-            "sha256": "48a7ebf0751867525f140cf3e70c34f8fe22a1c6edd7aeb0b3178e788da95dda",
-            "bytes": 237351
-          },
-          {
-            "path": "es/relaciones-de-capital/index.html",
-            "sha256": "88681de4baf51295fb171b308407ed199d54ccefcc83c3386c3549e8cfecbcc5",
-            "bytes": 18256
-          },
-          {
-            "path": "ops/capital/INSTITUTIONAL_RESPONSE_PLAYBOOK_20260921.md",
-            "sha256": "86da3fffd28a588d4dfa2faf513426743a1fb96748d5d3a0f26906e4e587b8d8",
-            "bytes": 5334
-          },
-          {
-            "path": "ops/capital/SUN_ROCK_CAPITAL_PROGRAMME_CONTINUITY_20260921.md",
-            "sha256": "6f4077ed436f6944b41a5664a7db8d9b093685eb49d6245f024197b6580ed3dd",
-            "bytes": 5691
-          },
-          {
-            "path": "ops/continuity/GITHUB_DRIVE_GITLAB_RECOVERY_QUEUE_20260921.json",
-            "sha256": "f43e77984d9050c2c62f86191f22200243122d5da8596e0440573d1329c02780",
-            "bytes": 3709
-          },
-          {
-            "path": "publication-manifests/sun-rock-institutional-capital-20260921.json",
-            "sha256": "718dab169ab91f21d53d1babff804ed968718fdf05c4f50d1331d760f5ca1fa8",
-            "bytes": 3523
-          }
-        ],
-        "pending": [],
-        "scope": "Changed readable public resources plus ES/EN entrypoints. Browser checks are separate premerge evidence; not a whole-site or legal-proof certificate."
-      }
-    }
-  ],
-  "updated_at": "2026-09-21T15:52:22.899115Z"
+  "checkpoints": []
 }
