@@ -10,6 +10,18 @@ CAJASIETE_INPUT = 'ops/cajasiete-accountability-register-input-20260918.json'
 CONTROL = 'PD-DP1901-EG745-REGISTERED-20260921'
 
 
+def normalise_presented_local(value: str) -> str:
+    import re
+    value = str(value)
+    match = re.fullmatch(r'(\d{4}-\d{2}-\d{2})[ T](\d{2}:\d{2})(?::(\d{2}))?', value)
+    if match:
+        return f"{match.group(1)}T{match.group(2)}:{match.group(3) or '00'}"
+    match = re.fullmatch(r'(\d{2})/(\d{2})/(\d{4}) (\d{2}:\d{2}:\d{2})', value)
+    if match:
+        return f"{match.group(3)}-{match.group(2)}-{match.group(1)}T{match.group(4)}"
+    raise ValueError(f'Unsupported filing receipt timestamp: {value}')
+
+
 def load_existing_cajasiete_events(root: Path) -> list[dict]:
     data = json.loads((root / CAJASIETE_INPUT).read_text())
     rows = deepcopy(data['canonical_event_rows'])
@@ -38,7 +50,7 @@ def load_completed_filing_events(root: Path, receipt_boundary: dict) -> list[dic
             'event_id': i['event_id'], 'cohort': 'CURATED_SOURCE_PROVED_EVENT', 'layer': 'FORMAL_REGISTRATION',
             'source_key': f"REGISTERED-20260921:{i['reference']}", 'record_type': 'REGISTRATION_RECEIPT',
             'event_date': i['date'], 'direction': 'OUTBOUND_TO_INSTITUTION', 'channel': i['channel'],
-            'office': i['office'], 'official_reference': i['reference'], 'presented_local': i['presented_literal'],
+            'office': i['office'], 'official_reference': i['reference'], 'presented_local': normalise_presented_local(i['presented_literal']),
             'source_timezone': 'NOT_STATED; receipt time preserved literally without conversion',
             'matter_references': i['matter_references'], 'source_batch_id': CONTROL,
             'source_integrity': {'status': 'RECEIPT_VERIFIED_PUBLIC_SAFE_DERIVATIVE', 'repository_anchor': i['source_anchor'], 'sha256': input_sha},

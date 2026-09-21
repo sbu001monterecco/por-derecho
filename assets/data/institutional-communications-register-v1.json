@@ -9226,7 +9226,7 @@
       ],
       "office": "Decanato / Registro y Reparto via DGRAJ",
       "official_reference": "REGAGE26e00082034813",
-      "presented_local": "2026-09-20 13:51:39",
+      "presented_local": "2026-09-20T13:51:39",
       "proof_level": "REGISTRATION_RECEIPT_VERIFIED",
       "proves": [
         "Registered REGAGE26e00082034813: Onward routing to Decanato / Registro y Reparto for initiating-document, reparto and association traceability.",
@@ -9282,7 +9282,7 @@
       ],
       "office": "Plaza 6 / DP 1901/2026",
       "official_reference": "S000000000000144968",
-      "presented_local": "2026-09-20 17:52",
+      "presented_local": "2026-09-20T17:52:00",
       "proof_level": "REGISTRATION_RECEIPT_VERIFIED",
       "proves": [
         "Registered S000000000000144968: Access and production request for docket/index, corpus, signed Fiscal report, native order and service metadata.",
@@ -9337,7 +9337,7 @@
       ],
       "office": "Plaza 6 / DP 1901/2026",
       "official_reference": "S000000000000144972",
-      "presented_local": "2026-09-20 18:07",
+      "presented_local": "2026-09-20T18:07:00",
       "proof_level": "REGISTRATION_RECEIPT_VERIFIED",
       "proves": [
         "Registered S000000000000144972: Separate supplemental filing of the combined annex PDF for the A02 access and production request.",
@@ -9391,7 +9391,7 @@
       ],
       "office": "CGPJ — Alzada 286/2026",
       "official_reference": "REGAGE26e00082030716",
-      "presented_local": "2026-09-20 12:32:17",
+      "presented_local": "2026-09-20T12:32:17",
       "proof_level": "REGISTRATION_RECEIPT_VERIFIED",
       "proves": [
         "Registered REGAGE26e00082030716: Supervening fact, preservation and functional classification.",
@@ -9446,7 +9446,7 @@
       ],
       "office": "Secretaría de Gobierno del TSJC",
       "official_reference": "REGAGE26e00082039117",
-      "presented_local": "2026-09-20 15:35:50",
+      "presented_local": "2026-09-20T15:35:50",
       "proof_level": "REGISTRATION_RECEIPT_VERIFIED",
       "proves": [
         "Registered REGAGE26e00082039117: Territorial Office-of-Justice supervision and traceability in Exp.Gub.38/2026.",
@@ -9501,7 +9501,7 @@
       ],
       "office": "Coordinación Provincial de LAJ",
       "official_reference": "REGAGE26e00082040006",
-      "presented_local": "2026-09-20 15:58:54",
+      "presented_local": "2026-09-20T15:58:54",
       "proof_level": "REGISTRATION_RECEIPT_VERIFIED",
       "proves": [
         "Registered REGAGE26e00082040006: Identification and coordination of services that received, digitised and routed the material.",
@@ -9557,7 +9557,7 @@
       ],
       "office": "Secretaría General para la Innovación y Calidad del Servicio Público de Justicia",
       "official_reference": "REGAGE26e00082058165",
-      "presented_local": "2026-09-20 21:19:02",
+      "presented_local": "2026-09-20T21:19:02",
       "proof_level": "REGISTRATION_RECEIPT_AND_ATTACHMENT_HASHES_VERIFIED",
       "proves": [
         "Registered REGAGE26e00082058165: National supervisory incorporation within lawful competence.",
@@ -9614,7 +9614,7 @@
       ],
       "office": "Canary Justice Administration / ATLANTE",
       "official_reference": "REGAGE26e00082038176",
-      "presented_local": "2026-09-20 15:13:38",
+      "presented_local": "2026-09-20T15:13:38",
       "proof_level": "REGISTRATION_RECEIPT_VERIFIED",
       "proves": [
         "Registered REGAGE26e00082038176: Technical custody, log preservation and clarification of documented incidents.",
@@ -9670,7 +9670,7 @@
       ],
       "office": "Fiscalía Provincial de Las Palmas",
       "official_reference": "REGAGE26e00082044751",
-      "presented_local": "2026-09-20 17:52:59",
+      "presented_local": "2026-09-20T17:52:59",
       "proof_level": "REGISTRATION_RECEIPT_AND_ATTACHMENT_HASHES_VERIFIED",
       "proves": [
         "Registered REGAGE26e00082044751: Bounded custody/allocation search for the 29 July report, author, assignment and corpus; no Provincial authorship is presumed.",
@@ -9726,7 +9726,7 @@
       ],
       "office": "Fiscal Superior de Canarias",
       "official_reference": "REGAGE26e00082032153",
-      "presented_local": "2026-09-20 13:01:40",
+      "presented_local": "2026-09-20T13:01:40",
       "proof_level": "REGISTRATION_RECEIPT_VERIFIED",
       "proves": [
         "Registered REGAGE26e00082032153: Territorial competence, attribution, DIP 2/2026 and preservation review.",
@@ -9782,7 +9782,7 @@
       ],
       "office": "FGE / Inspección Fiscal",
       "official_reference": "REGAGE26e00082033336",
-      "presented_local": "2026-09-20 13:25:00",
+      "presented_local": "2026-09-20T13:25:00",
       "proof_level": "REGISTRATION_RECEIPT_VERIFIED",
       "proves": [
         "Registered REGAGE26e00082033336: Limited incorporation and preservation of a supervening DP1901 fact in E.G.745.",
@@ -9838,7 +9838,7 @@
       ],
       "office": "Sala de Gobierno via Secretaría de Gobierno del TSJC",
       "official_reference": "REGAGE26e00082052687",
-      "presented_local": "2026-09-20 19:51:53",
+      "presented_local": "2026-09-20T19:51:53",
       "proof_level": "REGISTRATION_RECEIPT_AND_ATTACHMENT_HASHES_VERIFIED",
       "proves": [
         "Registered REGAGE26e00082052687: General reparto rules, approval/ratification, exceptions, publicity, Tribunal-de-Instancia mapping and written routing instructions.",
@@ -9895,7 +9895,7 @@
       ],
       "office": "Defensor del Pueblo",
       "official_reference": "REGAGE26e00082055212",
-      "presented_local": "2026-09-20 20:30:22",
+      "presented_local": "2026-09-20T20:30:22",
       "proof_level": "REGISTRATION_RECEIPT_AND_ATTACHMENT_HASHES_VERIFIED",
       "proves": [
         "Registered REGAGE26e00082055212: General administrative traceability safeguards; judicial merits remain outside this lane.",
@@ -9952,7 +9952,7 @@
       ],
       "office": "Fiscalía Anticorrupción",
       "official_reference": "REGAGE26e00082060401",
-      "presented_local": "2026-09-20 22:07:33",
+      "presented_local": "2026-09-20T22:07:33",
       "proof_level": "REGISTRATION_RECEIPT_AND_ATTACHMENT_HASHES_VERIFIED",
       "proves": [
         "Registered REGAGE26e00082060401: Status/subsanation of the existing communication, competent examination of the economic module and preservation.",
@@ -10011,7 +10011,7 @@
       ],
       "office": "Fiscalía General del Estado — Inspección Fiscal",
       "official_reference": "REGAGE26e00082068814",
-      "presented_local": "21/09/2026 01:54:19",
+      "presented_local": "2026-09-21T01:54:19",
       "proof_level": "REGISTRATION_RECEIPT_AND_ATTACHMENT_HASHES_VERIFIED",
       "proves": [
         "Registered REGAGE26e00082068814: Principal substantive reposición and initial documents for E.G.745/2026.",
@@ -10070,7 +10070,7 @@
       ],
       "office": "Fiscalía General del Estado — Inspección Fiscal",
       "official_reference": "REGAGE26e00082069039",
-      "presented_local": "21/09/2026 02:06:04",
+      "presented_local": "2026-09-21T02:06:04",
       "proof_level": "REGISTRATION_RECEIPT_AND_ATTACHMENT_HASHES_VERIFIED",
       "proves": [
         "Registered REGAGE26e00082069039: Linked annex delivery 2/10 for the principal E.G.745/2026 reposición registered as REGAGE26e00082068814.",
@@ -10129,7 +10129,7 @@
       ],
       "office": "Fiscalía General del Estado — Inspección Fiscal",
       "official_reference": "REGAGE26e00082069185",
-      "presented_local": "21/09/2026 02:14:20",
+      "presented_local": "2026-09-21T02:14:20",
       "proof_level": "REGISTRATION_RECEIPT_AND_ATTACHMENT_HASHES_VERIFIED",
       "proves": [
         "Registered REGAGE26e00082069185: Linked annex delivery 3/10 for the principal E.G.745/2026 reposición registered as REGAGE26e00082068814.",
@@ -10188,7 +10188,7 @@
       ],
       "office": "Fiscalía General del Estado — Inspección Fiscal",
       "official_reference": "REGAGE26e00082069355",
-      "presented_local": "21/09/2026 02:29:13",
+      "presented_local": "2026-09-21T02:29:13",
       "proof_level": "REGISTRATION_RECEIPT_AND_ATTACHMENT_HASHES_VERIFIED",
       "proves": [
         "Registered REGAGE26e00082069355: Linked annex delivery 4/10 for the principal E.G.745/2026 reposición registered as REGAGE26e00082068814.",
@@ -10247,7 +10247,7 @@
       ],
       "office": "Fiscalía General del Estado — Inspección Fiscal",
       "official_reference": "REGAGE26e00082069484",
-      "presented_local": "21/09/2026 02:40:37",
+      "presented_local": "2026-09-21T02:40:37",
       "proof_level": "REGISTRATION_RECEIPT_AND_ATTACHMENT_HASHES_VERIFIED",
       "proves": [
         "Registered REGAGE26e00082069484: Linked annex delivery 5/10 for the principal E.G.745/2026 reposición registered as REGAGE26e00082068814.",
@@ -10306,7 +10306,7 @@
       ],
       "office": "Fiscalía General del Estado — Inspección Fiscal",
       "official_reference": "REGAGE26e00082069581",
-      "presented_local": "21/09/2026 02:49:34",
+      "presented_local": "2026-09-21T02:49:34",
       "proof_level": "REGISTRATION_RECEIPT_AND_ATTACHMENT_HASHES_VERIFIED",
       "proves": [
         "Registered REGAGE26e00082069581: Linked annex delivery 6/10 for the principal E.G.745/2026 reposición registered as REGAGE26e00082068814.",
@@ -10365,7 +10365,7 @@
       ],
       "office": "Fiscalía General del Estado — Inspección Fiscal",
       "official_reference": "REGAGE26e00082069631",
-      "presented_local": "21/09/2026 02:55:43",
+      "presented_local": "2026-09-21T02:55:43",
       "proof_level": "REGISTRATION_RECEIPT_AND_ATTACHMENT_HASHES_VERIFIED",
       "proves": [
         "Registered REGAGE26e00082069631: Linked annex delivery 7/10 for the principal E.G.745/2026 reposición registered as REGAGE26e00082068814.",
@@ -10424,7 +10424,7 @@
       ],
       "office": "Fiscalía General del Estado — Inspección Fiscal",
       "official_reference": "REGAGE26e00082069746",
-      "presented_local": "21/09/2026 03:03:37",
+      "presented_local": "2026-09-21T03:03:37",
       "proof_level": "REGISTRATION_RECEIPT_AND_ATTACHMENT_HASHES_VERIFIED",
       "proves": [
         "Registered REGAGE26e00082069746: Linked annex delivery 8/10 for the principal E.G.745/2026 reposición registered as REGAGE26e00082068814.",
@@ -10483,7 +10483,7 @@
       ],
       "office": "Fiscalía General del Estado — Inspección Fiscal",
       "official_reference": "REGAGE26e00082069917",
-      "presented_local": "21/09/2026 03:10:04",
+      "presented_local": "2026-09-21T03:10:04",
       "proof_level": "REGISTRATION_RECEIPT_AND_ATTACHMENT_HASHES_VERIFIED",
       "proves": [
         "Registered REGAGE26e00082069917: Linked annex delivery 9/10 for the principal E.G.745/2026 reposición registered as REGAGE26e00082068814.",
@@ -10542,7 +10542,7 @@
       ],
       "office": "Fiscalía General del Estado — Inspección Fiscal",
       "official_reference": "REGAGE26e00082070021",
-      "presented_local": "21/09/2026 03:17:11",
+      "presented_local": "2026-09-21T03:17:11",
       "proof_level": "REGISTRATION_RECEIPT_AND_ATTACHMENT_HASHES_VERIFIED",
       "proves": [
         "Registered REGAGE26e00082070021: Linked annex delivery 10/10 for the principal E.G.745/2026 reposición registered as REGAGE26e00082068814.",

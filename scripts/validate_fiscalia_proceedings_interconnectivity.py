@@ -113,7 +113,7 @@ def main() -> int:
     require(len(payload.get("priority_chains", [])) == 9, "priority chain denominator mismatch", errors)
     require(not payload["coverage"].get("unresolved_matter_reference_literals"), "matter references remain orphaned", errors)
     require(all(event.get("allocation_state") and event.get("interconnectivity_scope") for event in payload["events"]), "an event lacks allocation/scope", errors)
-    require(sum(bool(event.get("matter_references")) for event in payload["events"]) == 117, "projected matter-linked denominator mismatch", errors)
+    require(sum(bool(event.get("matter_references")) for event in payload["events"]) == 141, "projected matter-linked denominator mismatch", errors)
 
     projected_fiscal_ids = {file["master_id"] for file in payload["fiscalia_files"]}
     require(projected_fiscal_ids == EXPECTED_FISCALIA_IDS, f"Fiscalía identity set mismatch: {sorted(projected_fiscal_ids ^ EXPECTED_FISCALIA_IDS)}", errors)
