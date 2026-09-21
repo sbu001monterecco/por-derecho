@@ -17,7 +17,7 @@ The five imported files are preserved **byte-for-byte from their dated worker he
 - PR #1633 @ `1ed428fbedfa4f36f5cfeb57451796a7b2b18fd6` → symposium continuity record.
 - PR #1634 @ `6e675160c8a78602e41738b4c5fe0c05a22dd039` → Uría/CaixaBank thread continuity audit.
 - PR #1648 @ `8f4be0a652f10860ac007a3f78e412612fe4bbc6` → CTBG/GC836/Catastro/workforce continuity record.
-- PR #1650 @ `18164276fdd063568d06d45d0c96af5e608d1546` → visual-evidence governance rule and Joan Cruz continuity record.
+- PR #1650 @ `18164276fdd063568d06d45d0c96af5e608d1546` → Joan Cruz continuity record only; its separate visual-evidence governance rule remains an explicit residual on source PR #1650.
 
 ## Boundaries
 
@@ -27,4 +27,4 @@ The five imported files are preserved **byte-for-byte from their dated worker he
 - They do not upgrade any filing from prepared/sent/registered to admitted, examined or decided.
 - Private source bodies/locators are not added by this successor.
 
-After this successor is merged and exact-head acceptance is complete, the four source PRs may be closed as `SUPERSEDED_BY_SUCCESSOR` with their branches retained.
+After this successor is merged and exact-head acceptance is complete, PRs #1633, #1634 and #1648 may be closed as `SUPERSEDED_BY_SUCCESSOR` with their branches retained. PR #1650 remains open only for the separate visual-evidence governance-rule residual.
