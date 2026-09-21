@@ -1,8 +1,8 @@
 {
   "schema": "por-derecho.material-updates.v1",
   "control_id": "PD-MATERIAL-UPDATES-001",
-  "control_date": "2026-09-21",
-  "latest_material_date": "2026-09-21",
+  "control_date": "2026-09-18",
+  "latest_material_date": "2026-09-18",
   "languages": [
     "es",
     "en"
@@ -18,24 +18,6 @@
     "The homepage, ES/EN updates pages, feed, state controls and sitemap metadata must use the same latest material date."
   ],
   "entries": [
-    {
-      "update_id": "MU-20260921-CANARY-COUNCIL-INTERBAR",
-      "date": "2026-09-21",
-      "type": "INSTITUTIONAL_IDENTITY_CORRECTION_AND_INTERBAR_COORDINATION",
-      "title_es": "Consejo Canario: mapa intercolegial y perímetro profesional actualizados",
-      "title_en": "Canary Council: inter-Bar map and professional perimeter updated",
-      "affected_routes": [
-        "/es/consejo-canario-coordinacion-deontologica-2026/",
-        "/en/canary-council-deontological-coordination-2026/",
-        "/es/registros-institucionales-colegios-abogacia-2026/",
-        "/en/institutional-records-bar-bodies-2026/",
-        "/es/actualizaciones/",
-        "/en/updates/"
-      ],
-      "source_status": "SOURCE_CONTROLLED_GMAIL_LIBRARY_GITHUB_PUBLIC_GITLAB_AND_DRIVE_RECONSTRUCTION",
-      "what_changed": "The professional-regulation map now separates ICAM, CCACM, ICALPA, ICATF, the Consejo Canario de Colegios de Abogados (CCCA) and CGAE; records ICAM 1487/26 as an ordered Madrid-to-Tenerife referral; adds the RSM/San Telmo, Garrigues, PwC, Cuyás/Grant Thornton, Cuatrecasas, Parrilla and Cristo professional/custody lanes; and corrects the canonical Canary Council identity that had unsafe CCACM naming.",
-      "what_did_not_change": "No professional or criminal liability is found. ICAM's referral order does not prove Tenerife receipt. RSM integration does not transfer San Telmo liability; PwC later convergence does not prove conflict or misuse; the Parrilla payment chronology does not prove bribery; CGAE remains outside ordinary individual first-instance complaints."
-    },
     {
       "update_id": "MU-20260918-CUATRECASAS-ETJ-DP748",
       "date": "2026-09-18",
