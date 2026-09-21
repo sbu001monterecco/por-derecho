@@ -1,9 +1,9 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "1.1.0",
   "control_id": "PD-C212224-SOURCE-CORPUS-20260921-01",
   "control_date": "2026-09-21",
-  "status": "FULL_PAGE_AWARE_DIGITISATION_COMPLETE_AND_INTERLINKED",
-  "definition": "Full digitisation means exact source identity and SHA-256 are locked, every source page is processed into the controlled text/index layer, and the source is reachable through the three-track repository graph. This status does not by itself certify court receipt, electronic incorporation or judicial reading, and does not require publication of every unredacted raw binary.",
+  "status": "FROZEN_AND_LIVING_FULL_TEXT_STORED_AND_INTERLINKED",
+  "definition": "Full digitisation requires complete page-marked source text stored in Git: an immutable frozen public-safe transcription bound to the source PDF hash, plus a separate living/current full-text layer that may be corrected, annotated and enhanced without changing the frozen historical record.",
   "totals": {
     "documents": 6,
     "source_pages": 278,
@@ -22,7 +22,12 @@
       "raw_source_pdf_public": false,
       "reader_control": "data/three-track-full-digitisation-20260904.json",
       "dossier_es": "es/control-21-denuncia-actores-privados-25-junio-2026/index.html",
-      "dossier_en": "en/control-21-private-actors-complaint-25-june-2026/index.html"
+      "dossier_en": "en/control-21-private-actors-complaint-25-june-2026/index.html",
+      "github_frozen_text": "evidence/control-21/source-text/frozen/2026-06-25-ref21-base-86p.md",
+      "github_current_text": "evidence/control-21/source-text/current/control-21-current-enhanced.md",
+      "frozen_rule": "IMMUTABLE_SOURCE_TRANSCRIPTION",
+      "current_rule": "LIVING_EDITORIAL_LAYER",
+      "source_text_stored_in_git": true
     },
     {
       "id": "C21-AMP-20260626",
@@ -36,7 +41,12 @@
       "raw_source_pdf_public": false,
       "reader_control": "data/three-track-full-digitisation-20260904.json",
       "dossier_es": "es/control-21-denuncia-actores-privados-25-junio-2026/index.html",
-      "dossier_en": "en/control-21-private-actors-complaint-25-june-2026/index.html"
+      "dossier_en": "en/control-21-private-actors-complaint-25-june-2026/index.html",
+      "github_frozen_text": "evidence/control-21/source-text/frozen/2026-06-26-ref21-immediate-amplification-26p.md",
+      "github_current_text": "evidence/control-21/source-text/current/control-21-current-enhanced.md",
+      "frozen_rule": "IMMUTABLE_SOURCE_TRANSCRIPTION",
+      "current_rule": "LIVING_EDITORIAL_LAYER",
+      "source_text_stored_in_git": true
     },
     {
       "id": "C21-EXP-20260709",
@@ -50,7 +60,12 @@
       "raw_source_pdf_public": false,
       "reader_control": "data/three-track-full-digitisation-20260904.json",
       "dossier_es": "es/control-21-denuncia-actores-privados-25-junio-2026/index.html",
-      "dossier_en": "en/control-21-private-actors-complaint-25-june-2026/index.html"
+      "dossier_en": "en/control-21-private-actors-complaint-25-june-2026/index.html",
+      "github_frozen_text": "evidence/control-21/source-text/frozen/2026-07-09-ref21-expansion-19p.md",
+      "github_current_text": "evidence/control-21/source-text/current/control-21-current-enhanced.md",
+      "frozen_rule": "IMMUTABLE_SOURCE_TRANSCRIPTION",
+      "current_rule": "LIVING_EDITORIAL_LAYER",
+      "source_text_stored_in_git": true
     },
     {
       "id": "C22-BASE-20260618",
@@ -64,7 +79,12 @@
       "raw_source_pdf_public": false,
       "reader_control": "data/three-track-full-digitisation-20260904.json",
       "dossier_es": "es/control-22-denuncia-administrador-concursal/index.html",
-      "dossier_en": "en/control-22-insolvency-administrator-complaint/index.html"
+      "dossier_en": "en/control-22-insolvency-administrator-complaint/index.html",
+      "github_frozen_text": "evidence/control-22/source-text/frozen/2026-06-18-ref22-ac-complaint-55p.md",
+      "github_current_text": "evidence/control-22/source-text/current/control-22-current-enhanced.md",
+      "frozen_rule": "IMMUTABLE_SOURCE_TRANSCRIPTION",
+      "current_rule": "LIVING_EDITORIAL_LAYER",
+      "source_text_stored_in_git": true
     },
     {
       "id": "C24-BASE-20260618",
@@ -80,7 +100,12 @@
       "public_principal_transcription": "evidence/judicial-governance/decanato-reference-24/full-text/denuncia-magistrado-18jun2026-public-transcription.md",
       "note": "The signed source package is 79 pages. The existing public principal transcription is a 31-page public-safe presentation/principal layer; the package-level digitisation control accounts for all 79 source pages including annexes.",
       "dossier_es": "es/control-24-denuncia-juez-concurso-36-2012/index.html",
-      "dossier_en": "en/control-24-insolvency-judge-complaint-36-2012/index.html"
+      "dossier_en": "en/control-24-insolvency-judge-complaint-36-2012/index.html",
+      "github_frozen_text": "evidence/control-24/source-text/frozen/2026-06-18-ref24-signed-package-79p.md",
+      "github_current_text": "evidence/control-24/source-text/current/control-24-current-enhanced.md",
+      "frozen_rule": "IMMUTABLE_SOURCE_TRANSCRIPTION",
+      "current_rule": "LIVING_EDITORIAL_LAYER",
+      "source_text_stored_in_git": true
     },
     {
       "id": "C24-SUPP-20260625",
@@ -96,7 +121,12 @@
       "public_transcription_with_stamped_cover": "evidence/judicial-governance/decanato-reference-24/full-text/ampliacion-denuncia-magistrado-25jun2026-public-transcription.md",
       "note": "The controlled source is 13 pages. The public transcription has 14 public pages because it prepends the separately preserved stamped presentation cover.",
       "dossier_es": "es/control-24-denuncia-juez-concurso-36-2012/index.html",
-      "dossier_en": "en/control-24-insolvency-judge-complaint-36-2012/index.html"
+      "dossier_en": "en/control-24-insolvency-judge-complaint-36-2012/index.html",
+      "github_frozen_text": "evidence/control-24/source-text/frozen/2026-06-25-ref24-supplement-13p.md",
+      "github_current_text": "evidence/control-24/source-text/current/control-24-current-enhanced.md",
+      "frozen_rule": "IMMUTABLE_SOURCE_TRANSCRIPTION",
+      "current_rule": "LIVING_EDITORIAL_LAYER",
+      "source_text_stored_in_git": true
     }
   ],
   "interconnection": {
@@ -138,5 +168,10 @@
   },
   "canonical_reader": "data/three-track-full-digitisation-20260904.json",
   "canonical_continuity_graph": "assets/data/control-21-22-24-continuity-v1.json",
-  "audit": "archive/CONTROL_21_22_24_FULL_DIGITISATION_AND_INTERLINK_AUDIT_21SEP2026.md"
+  "audit": "archive/CONTROL_21_22_24_FULL_DIGITISATION_AND_INTERLINK_AUDIT_21SEP2026.md",
+  "text_layer_architecture": {
+    "frozen": "Immutable page-by-page transcription. Historical wording is never corrected in place. Privacy-only omissions are explicit and the controlling source PDF SHA-256 remains recorded.",
+    "current": "Separate living full-text version. May add corrections, canonical names, context, links and later procedural developments. Must preserve a backlink to frozen source text.",
+    "public_pdf_requirement": "NONE — raw source PDFs do not need to be published in GitHub."
+  }
 }
