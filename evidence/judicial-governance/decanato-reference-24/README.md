@@ -133,3 +133,8 @@ Run `scripts/build_decanato_reference24_public_evidence.py` with the four
 controlled native inputs. The script validates source page counts, builds the
 two privacy-safe PDFs, generates page-accounted transcriptions, scrubs metadata
 and fails if controlled private strings remain extractable.
+
+
+## Dual-version integration — 21 September 2026
+
+This Ref24 corpus is the frozen source layer reused by the June three-track dual-version archive. The living Ref24 reader is [`../../judicial/june-2026-three-track/dynamic/ref24-living-dossier.md`](../../judicial/june-2026-three-track/dynamic/ref24-living-dossier.md). Later traceability material may update that dynamic reader but must not rewrite these frozen transcriptions.
