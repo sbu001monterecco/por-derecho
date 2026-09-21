@@ -2,7 +2,7 @@
   "schema": "por-derecho.publication-runtime.v1",
   "fence": 35,
   "owner": "1711:7536cb94220207dbf8f1fa686e09d0972c644d1f",
-  "phase": "DEPLOYED",
+  "phase": "VERIFIED_FOR_SCOPE",
   "pr": 1711,
   "base_sha": "c4fa90c6c33f56ade3c258e740574b518c0c03bb",
   "candidate_sha": "7536cb94220207dbf8f1fa686e09d0972c644d1f",
@@ -2000,6 +2000,72 @@
       ],
       "pending": [],
       "scope": "Changed readable public resources plus ES/EN entrypoints. Browser checks are separate premerge evidence; not a whole-site or legal-proof certificate."
+    },
+    {
+      "pr": 1711,
+      "candidate_sha": "7536cb94220207dbf8f1fa686e09d0972c644d1f",
+      "at": "2026-09-21T19:26:36.010874Z",
+      "merge_sha": "c481cc2fd6a806663819af107e0f13bda4649621",
+      "pages_run_id": 35644462383,
+      "exact_matches": [
+        {
+          "path": "en/control-21-22-24-corpus-integrity/index.html",
+          "sha256": "b4a21de32763089edc2b2f8b40eba0eacfcac63df32b5ae87e6ac544149b4441",
+          "bytes": 2172
+        },
+        {
+          "path": "en/control-21-private-actors-complaint-25-june-2026/index.html",
+          "sha256": "273786951b09c9ca4aa5922599e54e6f74cb753c2ca27b7b536f9df6d8cee709",
+          "bytes": 26474
+        },
+        {
+          "path": "en/control-22-insolvency-administrator-complaint/index.html",
+          "sha256": "8b6db7233d2ea8f0f31c856d51803b1ac0554cb45dc3f4900495a7bde2d8a9ab",
+          "bytes": 14385
+        },
+        {
+          "path": "en/control-24-insolvency-judge-complaint-36-2012/index.html",
+          "sha256": "7126e7d4441046607b4ac5d0014315c88d22ccb6982d47282d69f43954fa4800",
+          "bytes": 28128
+        },
+        {
+          "path": "en/index.html",
+          "sha256": "c048d21d4c94e3cb6896e4c74d69a9ab73f84c3426d40fe815370b40fe1ba109",
+          "bytes": 228197
+        },
+        {
+          "path": "en/sun-park-organised-unit/index.html",
+          "sha256": "b314d2498405e021e49f48b3612fcf522f79052d7a3e4d72ce281d5c554befd4",
+          "bytes": 44628
+        },
+        {
+          "path": "es/control-21-22-24-corpus-integridad/index.html",
+          "sha256": "f3db8c68846416c0578892a6b1f109dffe828402f5413e7d704a01aed723ee05",
+          "bytes": 2209
+        },
+        {
+          "path": "es/control-21-denuncia-actores-privados-25-junio-2026/index.html",
+          "sha256": "d0b0788affde74c0cd263e752bee7c924069917673dd763f9514b03cbb91de88",
+          "bytes": 27928
+        },
+        {
+          "path": "es/control-22-denuncia-administrador-concursal/index.html",
+          "sha256": "58608e7e7f1f52540c35a2549d86400450b8097c8652effab094eff47856821f",
+          "bytes": 14993
+        },
+        {
+          "path": "es/control-24-denuncia-juez-concurso-36-2012/index.html",
+          "sha256": "1a5219e1ef6c3ec47224e7336bca5a79addf70af36faffdcc2e6963040c562df",
+          "bytes": 29194
+        },
+        {
+          "path": "es/index.html",
+          "sha256": "48a7ebf0751867525f140cf3e70c34f8fe22a1c6edd7aeb0b3178e788da95dda",
+          "bytes": 237351
+        }
+      ],
+      "pending": [],
+      "scope": "Changed readable public resources plus ES/EN entrypoints. Browser checks are separate premerge evidence; not a whole-site or legal-proof certificate."
     }
   ],
   "checkpoints": [
@@ -2042,7 +2108,74 @@
         "pages_run_id": 35644462383,
         "merge_sha": "c481cc2fd6a806663819af107e0f13bda4649621"
       }
+    },
+    {
+      "phase": "VERIFIED_FOR_SCOPE",
+      "at": "2026-09-21T19:26:36.010827Z",
+      "evidence": {
+        "merge_sha": "c481cc2fd6a806663819af107e0f13bda4649621",
+        "pages_run_id": 35644462383,
+        "exact_matches": [
+          {
+            "path": "en/control-21-22-24-corpus-integrity/index.html",
+            "sha256": "b4a21de32763089edc2b2f8b40eba0eacfcac63df32b5ae87e6ac544149b4441",
+            "bytes": 2172
+          },
+          {
+            "path": "en/control-21-private-actors-complaint-25-june-2026/index.html",
+            "sha256": "273786951b09c9ca4aa5922599e54e6f74cb753c2ca27b7b536f9df6d8cee709",
+            "bytes": 26474
+          },
+          {
+            "path": "en/control-22-insolvency-administrator-complaint/index.html",
+            "sha256": "8b6db7233d2ea8f0f31c856d51803b1ac0554cb45dc3f4900495a7bde2d8a9ab",
+            "bytes": 14385
+          },
+          {
+            "path": "en/control-24-insolvency-judge-complaint-36-2012/index.html",
+            "sha256": "7126e7d4441046607b4ac5d0014315c88d22ccb6982d47282d69f43954fa4800",
+            "bytes": 28128
+          },
+          {
+            "path": "en/index.html",
+            "sha256": "c048d21d4c94e3cb6896e4c74d69a9ab73f84c3426d40fe815370b40fe1ba109",
+            "bytes": 228197
+          },
+          {
+            "path": "en/sun-park-organised-unit/index.html",
+            "sha256": "b314d2498405e021e49f48b3612fcf522f79052d7a3e4d72ce281d5c554befd4",
+            "bytes": 44628
+          },
+          {
+            "path": "es/control-21-22-24-corpus-integridad/index.html",
+            "sha256": "f3db8c68846416c0578892a6b1f109dffe828402f5413e7d704a01aed723ee05",
+            "bytes": 2209
+          },
+          {
+            "path": "es/control-21-denuncia-actores-privados-25-junio-2026/index.html",
+            "sha256": "d0b0788affde74c0cd263e752bee7c924069917673dd763f9514b03cbb91de88",
+            "bytes": 27928
+          },
+          {
+            "path": "es/control-22-denuncia-administrador-concursal/index.html",
+            "sha256": "58608e7e7f1f52540c35a2549d86400450b8097c8652effab094eff47856821f",
+            "bytes": 14993
+          },
+          {
+            "path": "es/control-24-denuncia-juez-concurso-36-2012/index.html",
+            "sha256": "1a5219e1ef6c3ec47224e7336bca5a79addf70af36faffdcc2e6963040c562df",
+            "bytes": 29194
+          },
+          {
+            "path": "es/index.html",
+            "sha256": "48a7ebf0751867525f140cf3e70c34f8fe22a1c6edd7aeb0b3178e788da95dda",
+            "bytes": 237351
+          }
+        ],
+        "pending": [],
+        "scope": "Changed readable public resources plus ES/EN entrypoints. Browser checks are separate premerge evidence; not a whole-site or legal-proof certificate."
+      }
     }
   ],
-  "updated_at": "2026-09-21T19:26:28.096039Z"
+  "updated_at": "2026-09-21T19:26:36.010827Z"
 }
