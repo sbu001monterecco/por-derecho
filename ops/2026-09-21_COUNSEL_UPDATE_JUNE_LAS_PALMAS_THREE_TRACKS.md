@@ -1,13 +1,13 @@
 # Counsel update control — June 2026 Las Palmas three-track filings
 
 Control date: 21 September 2026  
-Status: INTERNAL OPERATIONAL CONTROL — lawyer-update preparation  
+Status: ACTIVE CONTROL — Sixto follow-up sent; Carlos lane remains separate/open  
 Applies to: Sixto Abogados (Javier Sixto Seijas / Estefanía Sixto Seijas) and Carlos Llamas Sanz  
 Delivery rule: prepare and send as two separate, personalised lawyer communications. Do not collapse the recipient groups into one generic email.
 
 ## Purpose
 
-The next lawyer updates concerning DP 1901/2026 and the immediate response programme must give counsel the missing procedural background from the June 2026 Las Palmas filings before asking them to act.
+The Sixto follow-up concerning DP 1901/2026 was sent on 21 September 2026 with a deliberately limited 11-page Ref21/Ref24 identification extract. The separate Carlos communication remains its own lane. This control now preserves what was sent, what remains requested, and the June three-track background without treating correspondence as a judicial filing.
 
 The explanatory objective is simple: counsel already knew the Administrator Concursal track and, as the July correspondence now confirms, both lawyer groups were also informed contemporaneously of the CAM/private-actor lane being handled as DP 1901. What they were not sent, on the evidence currently located, is the separate Ref.24 judge/TSJC complaint itself. The update must therefore reconstruct the three filings in a short chronology, remind counsel of what they were already told in July, disclose the previously unseen Ref.24 material, and then show why the 14 September DP 1901 Auto creates an urgent identity/routing problem.
 
@@ -179,3 +179,13 @@ A 21 September 2026 voice instruction referred to the private-actor proceeding a
 ## Handoff instruction
 
 Any thread preparing the Sixto Abogados and Carlos Llamas Sanz updates should read this control together with the current DP1901 routing-collision materials and the controlled 14 September Auto before finalising either email.
+
+
+## 21 September sent-state update
+
+- Javier Sixto and Estefanía Sixto were sent a follow-up in the existing DP1901 thread.
+- The attachment was a limited 11-page consultation extract covering Ref21/Ref24 addressee, object, request and separation; it was not the whole CGPJ archive and did not replace stamped receipts or notification evidence.
+- The email clarified that the 21 September Decanato citizen-information reply concerned presentation/routing instructions, not a new judicial decision or withdrawal of the 14 September Auto.
+- Counsel-dependent notification/deadline assessment and any judicial response remain open until evidenced by counsel/court records.
+- Private email bodies, message identifiers and the lawyer consultation PDF remain outside public Git; only this public-safe status is preserved here.
+- The complete source-time/dynamic Ref21/22/24 dual-version archive is now rooted at `evidence/judicial/june-2026-three-track/`.
