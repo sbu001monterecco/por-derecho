@@ -50,9 +50,19 @@ def main() -> int:
         if len(intervention.get("source_urls", [])) < 2:
             errors.append("PD-SP-I-0043 must retain two official source URLs")
 
+    # The master registry is intentionally additive. Validate its declared counts
+    # against the canonical shard manifest instead of pinning this specialist
+    # validator to a historical whole-registry census.
     counts = master.get("counts", {})
-    if counts != {"total": 343, "PERSON": 162, "ORGANISATION": 83, "STRUCTURE": 11, "INSTITUTION": 44, "PROCEEDING": 43}:
-        errors.append(f"canonical count drift: {counts}")
+    expected_by_type: dict[str, int] = {}
+    for part in master.get("parts", []):
+        record_type = part.get("type")
+        count = part.get("count")
+        if record_type and isinstance(count, int):
+            expected_by_type[record_type] = expected_by_type.get(record_type, 0) + count
+    expected_counts = {"total": sum(expected_by_type.values()), **expected_by_type}
+    if counts != expected_counts:
+        errors.append(f"canonical count/shard drift: declared={counts} expected={expected_counts}")
 
     evidence = gaps.get("authority_legitimacy_propagation", {}).get("notice_checkpoint", {})
     if evidence.get("issuing_institution_caepr_id") != "PD-SP-I-0043":
