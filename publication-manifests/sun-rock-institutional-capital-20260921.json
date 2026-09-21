@@ -1,0 +1,59 @@
+{
+  "schema": "por-derecho.publication-manifest.v1",
+  "control_id": "PD-SR-CAPITAL-20260921-01",
+  "control_date": "2026-09-21",
+  "status": "PREPARED_PENDING_PR_VALIDATION",
+  "authority": "Gil Marer current instruction to update GitHub and private Google Drive now and preserve an additive GitLab recovery path.",
+  "repository": "sbu001monterecco/por-derecho",
+  "base_main": "a5e7b2fd50b41fe3dc1e533a5231e08be687dacb",
+  "branch": "integration/sun-rock-capital-programme-20260921",
+  "routes": {
+    "en": [
+      "/en/institutional-capital/",
+      "/en/capital-relationships/"
+    ],
+    "es": [
+      "/es/capital-institucional/",
+      "/es/relaciones-de-capital/"
+    ]
+  },
+  "canonical_architecture": [
+    "Aweswell Limited UK HoldCo/Sponsor",
+    "Sun Rock hospitality and investment platform",
+    "ring-fenced hotel ProjectCos",
+    "independently underwritten hotel assets"
+  ],
+  "public_private_boundary": {
+    "public": [
+      "Sponsor/platform/ProjectCo architecture",
+      "capital lanes",
+      "Montana Roja readiness status",
+      "bottom-up underwriting method",
+      "institutional progression process",
+      "general diligence categories"
+    ],
+    "private": [
+      "recipient and email addresses",
+      "named counterparty response or interest status",
+      "private correspondence and call notes",
+      "seller economics",
+      "pricing leverage and security values",
+      "family balance-sheet data",
+      "private legal advice",
+      "restricted investment memoranda and models",
+      "private Drive locators"
+    ]
+  },
+  "gitlab_recovery": {
+    "control": "PD-DUALWRITE-20260921-01",
+    "class": "EXACT_GITLAB_RECOVERY",
+    "state": "PENDING_AUTHENTICATED_ACCESS",
+    "mode": "ADDITIVE_RECONCILIATION_ONLY"
+  },
+  "external_actions": {
+    "email": false,
+    "filing": false,
+    "social": false,
+    "third_party_contact": false
+  }
+}
