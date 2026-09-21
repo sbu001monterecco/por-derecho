@@ -63,17 +63,25 @@ The email should therefore say, in substance: **“You already knew that in July
 - The lawyer updates should remind Sixto Abogados and Carlos Llamas Sanz that they were already told in July that this was separate from the AC complaint and was being handled operationally as DP1901. Use their contemporaneous emails as a chronology anchor, not as certified reparto proof.
 - The official electronic creation/reparto record and the later Ref.24 association mechanism remain outstanding. Do not convert the contemporaneous Ref.21 -> DP 1901 position into a certified court-routing fact until the official history is produced.
 
-### Track C — Magistrate / judicial-conduct notitia criminis — not previously known to counsel
+### Track C — Magistrate / judicial-conduct notitia criminis — genuinely new to counsel on the targeted mailbox review
 
 - 18 June 2026: autonomous written denuncia / notitia criminis concerning Magistrate-Judge Alberto López Villarrubia, controlled as Ref.24.
 - It was expressly addressed to the Sala de lo Civil y Penal del Tribunal Superior de Justicia de Canarias.
 - It was not presented as a formal querella and did not purport to constitute personation as an accusation.
 - It followed the DIP 2/2026 Fiscalía route, in which the controlled record identifies Article 73.3(b) LOPJ / TSJC competence as the relevant judicial route for alleged offences by judges or magistrates committed in office, subject to any Supreme Court competence.
 - Counsel are to be told that this Ref.24 judicial track was separate from both Ref.22/DP1956 and Ref.21/private actors.
+- Targeted searches of the connected work mailbox did not locate a message sending the Ref.24 / TSJC judge complaint package to Sixto Abogados or Carlos Llamas Sanz. Treat this as a bounded mailbox-search result, not an absolute proof of non-receipt through every possible channel.
 
 ## Why this matters now
 
 The 14 September 2026 Auto in DP 1901 characterises DP 1901 as a proceeding opened on a complaint for alleged judicial prevaricación and orders SOBRESEIMIENTO LIBRE, while the controlled June/July record contemporaneously associates DP 1901 with the autonomous Ref.21 private-actor complaint.
+
+The source chronology should be explained in two layers:
+
+- **Contemporaneous operational layer:** 25-Jun Ref.21 private-actor filing; 25-Jun report that Ref.24 remained at Decanato and had not yet been remitted; 9-Jul ATLANTE printout showing DP1901/Plaza6 and DP1956/Plaza1; 9-Jul private-actor material physically tendered under DP1901; 9-Jul and 12-Jul communications to counsel treating DP1901 as the CAM/private/Community complaint.
+- **Formal later court layer:** the signed 12-Jul providencia in that same DP/NIG/IUP formally sends the admission question to Ministerio Fiscal for five days **in relation to DIP 2/2026**. The 14-Sep Auto then describes DP1901 as alleged judicial prevaricación.
+
+This distinction is critical. Do **not** state that the signed 12-Jul providencia itself referred the private-actor complaint to Fiscalía. The contemporaneous belief was that DP1901 was the private-actor case; the signed providencia is instead the earliest located primary court act that formally links that same case number to the judge/DIP2 lane. The missing issue is the procedural bridge between those states.
 
 The summer one-page court paper/providencia should be shown to counsel together with the 14 September Auto. Its evidential role must be described precisely:
 
@@ -106,15 +114,32 @@ Each email should be individually written for its recipient relationship but sho
 - a short **"what I did / what I did not do"** clarification: three separate presentations; no claim that Ref.24 was a formal querella; no request that the ordinary Plaza 6 court acquire TSJC competence; no attempt to merge Ref.21 and Ref.24;
 - a short **"what you already knew / what is genuinely new"** paragraph: remind them that in July they were told and sent materials showing DP1901 as the CAM/private-actor lane; explain that the separate Ref.24 judge/TSJC filing itself was not located in the material previously sent to them; supply the signed 12 July providencia document if not previously provided and the new 14 September Auto;
 - immediate focus: the 14 September DP 1901 Auto and action required;
+- make clear that targeted searches after receipt of the paper Auto found no email sending that Auto to Javier/Estefanía or Carlos; this is therefore the first planned direct lawyer transmission of the 14-Sep Auto on the reviewed mailbox record;
 - one short paragraph reminding counsel of the known Ref.22 -> DP 1956 AC track and its provisional dismissal;
 - one short paragraph reminding them of the Ref.21/private-actor complaint and their July receipt of the DP1901/CAM mapping;
-- one short paragraph introducing the previously unknown Ref.24 judge notitia criminis directed to the TSJC;
+- one short paragraph introducing, for the first time on the targeted mailbox record, the separate Ref.24 judge notitia criminis directed to the TSJC;
 - a simple three-track chronology;
 - explanation of the later DP 1901 identity/routing collision;
 - brief mention of E.G.745 only as contextual parallel, without allowing it to obscure the immediate judicial task;
 - the precise action requested from counsel;
 - links/attachments only after the explanation, with a small controlled core rather than an indiscriminate document dump;
 - a small explanatory visual set, introduced as orientation aids rather than evidence substitutes.
+
+## Source reconstruction for counsel knowledge and DP1901 origin
+
+The following controlled source points should govern the lawyer emails:
+
+1. **25 June — Procuradora email:** Gil reported filing a third autonomous private-actor complaint under daily Ref.21, separately filing the Ref.24 supplement, and reported that Ref.24 was still at Decanato and had not yet been remitted to its destination. The email itself does not use the words “unscanned” or “unallocated”; those stronger details remain Gil's direct firsthand account and should be labelled as such.
+2. **9 July — ATLANTE printout:** the one-page ATLANTE “Listado de certificaciones para información al ciudadano” shows Gil as denunciante in DP1901/2026, Plaza 6, and DP1956/2026, Plaza 1. The printout itself does not identify defendants or subject matter.
+3. **9 July — stamped private-actor tender:** a separate Decanato-stamped cover identifies Plaza 6 / DP1901/2026 for an amplification/documentary contribution associated contemporaneously with the private-actor lane.
+4. **9 July — Sixto email:** the contemporaneous email expressly maps “1901: Contra CAM y otras partes de la Comunidad de Propietarios” and “1956: Contra la AC”.
+5. **12 July — Sixto email:** the update says Gil returned to Juzgado de Instrucción n.º 6 about “la denuncia contra CAM y la CP” under 1901/2026 and was told a providencia existed / would give traslado to Fiscalía.
+6. **20 July — Carlos email:** Carlos received the same private-actor complaint PDF and the same operational account that 1901 was the CAM/CP complaint.
+7. **Signed 12 July providencia:** the primary court act controls as to its own wording and links DP1901 to DIP2/2026 for a five-day Ministerio Fiscal admission report. This is the first located formal act that diverges from the private-actor operational mapping.
+8. **14 September Auto:** later describes DP1901 as initiated for alleged prevaricación and orders sobreseimiento libre/archive.
+9. **Counsel transmission state:** targeted mailbox searches located the July private-actor complaint transmissions to both lawyer groups, but did not locate a transmission of the Ref.24 judge complaint or a post-18-Sep transmission of the 14-Sep Auto to either lawyer group.
+
+Canonical explanation: **Ref.21 → DP1901 is contemporaneously corroborated; the formal 12-Jul DIP2 linkage and 14-Sep prevaricación characterisation create the identity collision; the official creation/reparto and later Ref.24 association history remain to be produced.**
 
 ## Visuals required for the lawyer updates
 
