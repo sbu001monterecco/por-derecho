@@ -72,5 +72,35 @@
     "administrator_enforcement_gap": 1525,
     "discovery_review": 1529,
     "publication_review": 1530
+  },
+  "response_priority_update_20260919": {
+    "source": "GIL_MARER_EXPRESS_CURRENT_INSTRUCTION",
+    "schedule_receipt": "https://github.com/sbu001monterecco/por-derecho/issues/1621#issuecomment-5744107378",
+    "inherited_phase_timestamps_unchanged": true,
+    "target": "2026-09-20 evening, Atlantic/Canary; exact hour not specified",
+    "is_legal_deadline": false,
+    "priority_order": [
+      "DP1901 personally controllable programme: finish census, drafting, annex/source/route/status control",
+      "Freeze finite DP1901 fact/source/open-point/request module",
+      "Distinct EG745 successor within the same evening target, without waiting indefinitely for authority replies"
+    ],
+    "parallel_urgent_counsel_lane": [
+      "Javier Sixto",
+      "Carlos Llamas Sanz"
+    ],
+    "counsel_filing_excluded_from_personal_count": true,
+    "source_exhaustion": "Continue finite missing-record work under1621; authority-only gaps do not prevent completing requests for their production",
+    "backend_queue": [
+      1525,
+      1539,
+      1572,
+      1620
+    ],
+    "source_publication_review_queue": [
+      1529,
+      1530
+    ],
+    "do_not_restart_clock": true,
+    "no_filing_claim": true
   }
 }

@@ -1,0 +1,43 @@
+{
+  "schema": "por-derecho.publication-state.v1",
+  "schema_version": "1.0.0",
+  "publication_id": "PD-PRESIDENCIA-DP1901-CUSTODY-20260920-01",
+  "current_state": "PREPARED_PENDING_MERGE",
+  "owner": "PRESIDENCIA-DP1901-CUSTODY-20260920",
+  "authority": "Current user instruction: Ensure all discovered files and info is uploaded and preserved in Github.",
+  "source_base_sha": "6c94efacb4cc3f46f3c385ed404538eaeede203a",
+  "source_worker_sha": "a3f090b27f58a238720f383fc04b49d48a2b62dd",
+  "source_worker_base_sha": "a9110f5d2a3de64ae7cf470ae06ca1cfde297f4a",
+  "control_tower_receipt": "https://github.com/sbu001monterecco/por-derecho/issues/1428#issuecomment-5753200944",
+  "index": "evidence/preservation/presidencia-dp1901-20260920/README.md",
+  "expected_routes": {"es": ["es/index.html"], "en": ["en/index.html"]},
+  "expected_source_files": [
+    "evidence/preservation/presidencia-dp1901-20260920/README.md",
+    "evidence/preservation/presidencia-dp1901-20260920/artifact-members.json",
+    "evidence/preservation/presidencia-dp1901-20260920/custody-index.json",
+    "evidence/preservation/presidencia-dp1901-20260920/pr1680-publication-receipt.json",
+    "evidence/preservation/presidencia-dp1901-20260920/pr1681-browser-report.json",
+    "evidence/preservation/presidencia-dp1901-20260920/pr1681-publication-receipt.json"
+  ],
+  "changed_path_count": 7,
+  "scope": "Six exact worker files plus this integration manifest. No existing source, route, runtime, workflow, filing state or substantive thesis changes. Markdown/JSON are public-readable repository files; they are not loaded into site runtime.",
+  "worker_snapshot_interpretation": "README and custody index preserve their preparation-stage observations. PR1682 was subsequently verified merged before this integration. The pending-public-receipt labels are superseded only by actual Git upload/readback; every private-native gap remains open.",
+  "counts": {"audited_artifacts":28,"conversation_artifacts":25,"additional_recovered_library_copies":3,"restricted_artifacts":22,"restricted_pdf_files":11,"restricted_pdf_pages":291,"public_proof_and_source_artifacts":6,"source_members_in_public_artifact_inventory":17,"browser_cases_preserved":88,"browser_routes":44,"previous_research_paths_from_pr1680_pr1681":23},
+  "validation": {
+    "worker_transfer": "All six locally recomputed Git blob hashes and sizes match remote directory at worker SHA; README read back; JSON parsing and full browser object equality checked.",
+    "private_recovery_zip": "Integrity and each included source-member SHA256 checked; current conversation package only, not GitHub or Library custody.",
+    "public_verification_zip": "Integrity checked; preserves artifact wrappers separately from the committed receipts and compact JSON report.",
+    "candidate_checks": "PENDING exact-head required release/publication/outage checks",
+    "merge_and_deployment": "PENDING controller permission, protected merge and scope readback"
+  },
+  "private_source_boundary": {"private_repository_exposed":false,"private_native_files_uploaded_to_github":false,"private_bundle_uploaded_to_library":false,"all_discovered_native_files_in_github":false,"thread_deletion_safe":false,"independent_disaster_recovery_safe":false},
+  "open_work": [
+    "Connect an authorised private GitHub evidence repository for the exact restricted native bytes, private locator crosswalk and remote digest verification.",
+    "Recover or re-upload earlier inaccessible originals; existing summaries, hashes or redacted variants are not substitutions.",
+    "Other EG745 and June digitisation worker branches remain separate and are not silently merged by this seven-file delta.",
+    "Original workflow wrappers/screenshots remain separately packaged; their fingerprints do not mean every binary is committed here.",
+    "Inherited Community projection fingerprint issue remains disclosed, not repaired by this custody update."
+  ],
+  "action_boundary": {"official_filing":false,"email_sent":false,"authority_contact":false,"asset_restriction":false,"gitlab_access":false,"new_legal_allegation":false},
+  "closeout_rule": "The preparation manifest does not certify its own merge or deployment. Exact PR/head/check/controller/merge/readback outcomes are recorded in the PR and Control Tower. No completion claim may override the explicit private-native custody gaps."
+}

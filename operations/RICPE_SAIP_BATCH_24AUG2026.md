@@ -76,7 +76,10 @@ Los ocho justificantes originales contienen NIE, domicilio y correo privado. Per
 - **Anexo:** `06_SAIP_GobCan_FEDER_MYND_Yaiza_24AGO2026.pdf`
 - **SHA-512:** `82b201aa657b032b7f9a5d4dcddc491a5ac28431bf98bcfe238f6cd26bf6575c90f570211986c13af440fe7460cb606e50f6fdc4a363704ef833589c0afb9da0`
 - **Entregable solicitado:** código y periodo; beneficiario; organismo intermedio; expediente de selección; importe/gasto; verificaciones; auditorías; acumulación y correcciones.
-- **Siguiente control:** identificar operación, periodo y unidad/organismo intermedio competente; confirmar remisión si procede.
+- **Actualización 21 septiembre 2026 — RUTA CONFIRMADA:** expediente de acceso `21/2026-0921081108`. La URIP de Hacienda informa que, conforme al artículo 36 LTAIP, la solicitud ha sido remitida a la **Viceconsejería de Hacienda y Relaciones con la Unión Europea** para que resuelva sobre el acceso, al entender que la información puede obrar en su poder.
+- **Trazabilidad oficial de la actualización:** comunicación interna `328557 / 2026`; firma electrónica Luisa Gómez Lucena — Responsable URIP Hacienda / Jefatura de Servicio, 21/09/2026 08:26:29; SALIDA `776732 / 2026`, registrada 08:27:34; puesta a disposición 08:29:15; NDE `RP001-000CRaZbAfGL3YrAzNqbii3sg==`; identificador de notificación `4822c73e-3970-4362-ba16-ec747205e2b1`.
+- **Límite probatorio:** la asignación identifica el centro decisor y cierra el hueco de routing. No es una resolución sustantiva, no confirma por sí sola operación/pago FEDER ni acredita irregularidad.
+- **Siguiente control:** resolución sustantiva de acceso; identificación/producción de operación y periodo FEDER, beneficiario, organismo intermedio, importes, gasto, pagos, verificaciones, auditorías, acumulación y correcciones.
 
 ### 07 — Nueva SAIP — `REGAGE26e00075136691`
 - **Destinatario registral:** E05001502 — Dirección General de Fondos Europeos

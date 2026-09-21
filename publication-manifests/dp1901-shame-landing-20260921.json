@@ -1,0 +1,64 @@
+{
+  "schema": "por-derecho.publication-state.v1",
+  "schema_version": "1.0.0",
+  "publication_id": "PD-DP1901-SHAME-LANDING-20260921",
+  "current_state": "PREPARED_PENDING_MERGE",
+  "owner": "DP1901_SHAME_LANDING_INTEGRATION_20260921",
+  "base_sha": "ba8e83ee69ec48da17d505bf3d832c217da22ce2",
+  "prior_candidate": "acc431c766dab0d63fd1bd6b815bee5ea48431b4",
+  "expected_routes": {
+    "en": ["en/dp-1901-2026/shame-has-left-the-building/index.html"],
+    "es": ["es/dp-1901-2026/la-verguenza-no-se-fue/index.html"]
+  },
+  "scope": "User-authorised bilingual courthouse-satire landing release with separately approved Spanish image, Spanish page/post/caption/thumbnail/sharing metadata, reciprocal dossier links and source-led correction of the stale Spanish routing qualification. English page, post, image and teaser are unchanged from the previous candidate. No social posting.",
+  "manual_posting_order": ["en", "es"],
+  "cambiante_used": false,
+  "social_posted": false,
+  "social_scheduled": false,
+  "original_image_sha256": "ca301b92c670abcaa691bbd5b569dfb971034595c300238369e265f861fe947d",
+  "image_derivative_sha256": "0e0e8fe8dae69f05c3bc79e4a5c0285534f4bf77e2bb2be9fd5628308e4a33a0",
+  "spanish_original_image_sha256": "628dfe0b3ddbb8d8cab45beb0768ec63d4bf39a9cf121de3ef959aca500f5ab4",
+  "spanish_image_derivative_sha256": "dcf2af713f28c6804b4a209ee06012ae54128f0fa2e575ec9e227db2a3de92ee",
+  "spanish_headline": "LA VERGÜENZA NO SE FUE.",
+  "spanish_subheading": "LA ECHARON A PATADAS.",
+  "boundary": "Illustration is not evidence of literal acts, authorship, destruction or coordination. Generic figures and stylised architecture are not portraits or an architectural record. Added inscriptions are not verified official quotations. Source, contrary-record and official-outcome qualifications are retained.",
+  "upstream_gate_at_initial_preparation": "PR1684 fence23 was RECOVERY_REQUIRED; preserved as historical preparation state only.",
+  "upstream_gate_at_continuation": "Fence23 is terminal SUPERSEDED_WITH_OPEN_READBACK following the owner-authorised controller repair. Its old readback gap remains unverified. A new normal exact-head permit and scoped verification are required for this release.",
+  "files": [
+    {"path":"assets/dp1901-routing-collision-20260919.js","git_blob":"ec5cafc7ee928d72888cab66176c27dbd3cc16dd","sha256":"2ed5f3379d1a855b443acd2da982c9d7043f45190ebe1bca47bcf903e6fd5d01","bytes":11286},
+    {"path":"assets/dp1901-shame-landing-20260921.css","git_blob":"74a16df9c028b710d4ebbdf89bae83440a7dee68","sha256":"113ef35c178ba93da19bed6450941974e9faf5ebcf17dd224fca2011d5184e89","bytes":4053},
+    {"path":"assets/visuals/dp1901-shame-20260921/shame-has-left-the-building.avif","git_blob":"38be5233118d64ff154d50251047f97671c215c3","sha256":"0e0e8fe8dae69f05c3bc79e4a5c0285534f4bf77e2bb2be9fd5628308e4a33a0","bytes":47812},
+    {"path":"assets/visuals/dp1901-shame-20260921/la-verguenza-no-se-fue.avif","git_blob":"0a18f6e82ac075b37639a2168e03b299da91cdf6","sha256":"dcf2af713f28c6804b4a209ee06012ae54128f0fa2e575ec9e227db2a3de92ee","bytes":44609},
+    {"path":"data/digital-media-asset-register-v1.json","git_blob":"b3d1fbea10bf12fdc829690e41bc2aa5db743ee5","note":"Registers the Spanish artwork and ES page as variants of PD-DMA-0013; remote Git blob is the exact upload identity."},
+    {"path":"data/satire-publication-compliance-v1.json","git_blob":"f8a1322906acdd5a0e01706d8519e8b7ccdf8031","sha256":"006e9bf21200f4e507a47e7902635b97c83da6c6108ed1107928ea7a1b5979b9","bytes":20637},
+    {"path":"en/dp-1901-2026/shame-has-left-the-building/index.html","git_blob":"9ada092bb4f97ac1049c4afb70df99efa8e7872a","sha256":"223aa0181050d8b6e0cd136b1e6e114fc74b32b8670fbbee4c131d30d401e4d6","bytes":13165},
+    {"path":"en/dp-1901-2026/shame-has-left-the-building/linkedin-post.txt","git_blob":"2468ef393cf151125122567c1059c8d31e534e84","sha256":"4ccad1dbc212d13debecb6d14f74aa24942cf7e4ebc1427133aed409b2687f2e","bytes":2546},
+    {"path":"es/dp-1901-2026/la-verguenza-no-se-fue/index.html","git_blob":"5e751e4a420aaf7b163ca07741ab1ec1eeef54e6","sha256":"3572309809765999b9224ee36112a58ad14c04d63afa8ba16af69250c1ac6f57","bytes":14574},
+    {"path":"es/dp-1901-2026/la-verguenza-no-se-fue/linkedin-post.txt","git_blob":"3918442022975f1e8e7a80ab1ba1e040a9f770e8","sha256":"68cfc7be6d38785938c279b5eab872a4891edb342ab99200b73f6df0e9b2b600","bytes":2673}
+  ],
+  "dossier_links": [
+    "/por-derecho/en/dp-1901-2026/#shame-editorial-20260921",
+    "/por-derecho/es/dp-1901-2026/#shame-editorial-20260921"
+  ],
+  "correction": {
+    "source":"evidence/judicial/dp-1901-2026/PROCEDURAL_IDENTITY_SOURCE_CLOSURE_18SEP2026.md",
+    "surface":"assets/dp1901-routing-collision-20260919.js",
+    "change":"Spanish evidence boundary now explicitly preserves the contemporaneously corroborated Ref21-to-DP1901 chronology, the still-unproduced official electronic creation/reparto and later Ref24 association history, and the complainant's firsthand unscanned/unallocated account.",
+    "limit":"No new allegation or certified court-system history is inferred. English wording is unchanged."
+  },
+  "validation": {
+    "scope":"In-memory Chromium rendering and source checks; final exact-head CI, merge and live delivery are separate checks recorded in PR1686 and the controller receipt.",
+    "browser_cases":4,
+    "viewports":[1440,390],
+    "languages":["en","es"],
+    "image_natural_dimensions":[1055,1491],
+    "horizontal_overflow":false,
+    "page_javascript_errors":0,
+    "copy_handler_and_fallback":"PASS",
+    "route_selector_and_idempotence_cases":6,
+    "english_payloads":"Prior English HTML, plaintext, image, CSS and teaser preserved",
+    "routing_prefix":"Original prefix preserved except for the explicit source-led Spanish qualification correction recorded above",
+    "prior_register_entries":"Previous entries retained; Spanish exact variants added under the existing logical family",
+    "live_verification":"NOT_CLAIMED_BY_THIS_PREMERGE_MANIFEST"
+  }
+}

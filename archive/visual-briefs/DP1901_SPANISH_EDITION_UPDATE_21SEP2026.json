@@ -1,0 +1,56 @@
+{
+  "record_type": "SPANISH_EDITION_UPLOAD_AND_TEST_RECORD_NOT_LIVE_VERIFICATION",
+  "date": "2026-09-21",
+  "pr": 1686,
+  "base_main": "ba8e83ee69ec48da17d505bf3d832c217da22ce2",
+  "prior_candidate": "acc431c766dab0d63fd1bd6b815bee5ea48431b4",
+  "authority": "User: use and update ES page; then Take the next steps to update.",
+  "scope": "Use the approved Spanish artwork, update Spanish landing and copyable/plain-text post, caption, preview metadata and Spanish dossier teaser. Preserve English page/post/image and all unrelated current-main files.",
+  "headline": "LA VERGÜENZA NO SE FUE.",
+  "subheading": "LA ECHARON A PATADAS.",
+  "spanish_artwork": {
+    "path": "assets/visuals/dp1901-shame-20260921/la-verguenza-no-se-fue.avif",
+    "git_blob": "0a18f6e82ac075b37639a2168e03b299da91cdf6",
+    "sha256": "dcf2af713f28c6804b4a209ee06012ae54128f0fa2e575ec9e227db2a3de92ee",
+    "bytes": 44609,
+    "width": 1055,
+    "height": 1491,
+    "original_png_sha256": "628dfe0b3ddbb8d8cab45beb0768ec63d4bf39a9cf121de3ef959aca500f5ab4",
+    "original_png_bytes": 2449422,
+    "derivative": "Lossy web rendition of the approved Spanish illustration, not byte-identical to its original PNG. No image regeneration in this update.",
+    "logical_family": "PD-DMA-0013",
+    "language": "es-ES",
+    "classification": "AI_GENERATED_EDITORIAL_SATIRE_NOT_PRIMARY_EVIDENCE"
+  },
+  "english_unchanged": [
+    "en/dp-1901-2026/shame-has-left-the-building/index.html",
+    "en/dp-1901-2026/shame-has-left-the-building/linkedin-post.txt",
+    "assets/visuals/dp1901-shame-20260921/shame-has-left-the-building.avif",
+    "assets/dp1901-shame-landing-20260921.css"
+  ],
+  "local_checks": {
+    "mode": "In-memory Chromium render with embedded copies of the exact CSS/image; not a live HTTP test.",
+    "browser_cases": 4,
+    "languages": ["en", "es"],
+    "viewport_widths": [1440, 390],
+    "image_decoding": "1055x1491 in all four cases",
+    "horizontal_overflow": 0,
+    "page_script_errors": 0,
+    "copy_feedback_and_textarea_vs_plaintext": "PASS in all four cases",
+    "english_protected_payloads": "Byte-identical to previous candidate",
+    "existing_routing_prefix": "7588 bytes preserved",
+    "prior_register_entries": "Preserved in the previous candidate register payloads reused here"
+  },
+  "remaining_release_work": [
+    "Reconcile the pre-existing media-reference and satire/publication CI failures rather than bypassing them.",
+    "Update canonical media/index and final publication manifest for the Spanish variant before claiming acceptance.",
+    "Run exact-head required checks, obtain normal controller permit, merge and verify Pages and the affected routes."
+  ],
+  "prior_hold": "Fence 23 released as SUPERSEDED_WITH_OPEN_READBACK; its historical unverified readback remains recorded, not upgraded.",
+  "live": false,
+  "linked_in_posted": false,
+  "linked_in_scheduled": false,
+  "cambiante_used": false,
+  "manual_publication_order": ["English by user", "Spanish by user afterwards"],
+  "boundaries": "Generic institutional archetypes, illustrative architecture and inscriptions, no claim of observed physical burial or criminal findings; contrary court record and open documentary questions remain visible."
+}

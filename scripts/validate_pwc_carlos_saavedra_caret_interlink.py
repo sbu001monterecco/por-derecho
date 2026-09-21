@@ -20,14 +20,14 @@ EXPECTED = {
     "identity_confirmed": 32,
     "identity_pending": 3,
     "identity_suspended": 0,
-    "events_registered": 20,
-    "evidence_records_registered": 19,
+    "events_registered": 24,
+    "evidence_records_registered": 23,
     "visual_assets_registered": 1,
 }
 VERDICT = (
     "FINITE PWC / CARLOS SAAVEDRA FIRST-HOP CENSUS COMPLETE; "
     "32/35 CARET_CONFIRMED; 3 CARET_PENDING; 0 CARET_SUSPENDED; "
-    "20 EVENTS, 19 EVIDENCE RECORDS AND 1 CANONICAL VISUAL ASSET REGISTERED; "
+    "24 EVENTS, 23 EVIDENCE RECORDS AND 1 CANONICAL VISUAL ASSET REGISTERED; "
     "PARTIAL — NOT ALL IS^"
 )
 
@@ -81,8 +81,8 @@ def validate() -> None:
     evidence = data.get("evidence_records", [])
     visual_assets = data.get("visual_assets", [])
     check(len(identities) == 35, "identity record length mismatch")
-    check(len(events) == 20, "event record length mismatch")
-    check(len(evidence) == 19, "evidence record length mismatch")
+    check(len(events) == 24, "event record length mismatch")
+    check(len(evidence) == 23, "evidence record length mismatch")
     check(len(visual_assets) == 1, "visual asset length mismatch")
     check(sum(r.get("state") == "CARET_CONFIRMED" for r in identities) == 32, "confirmed identity count mismatch")
     check(sum(r.get("state") == "CARET_PENDING" for r in identities) == 3, "pending identity count mismatch")
@@ -171,6 +171,8 @@ def validate() -> None:
             "carlos-saavedra--linkedin-profile--20260901.jpg",
             "https://es.linkedin.com/in/carlos-saavedra-b71418a8",
             "PD-SP-P-0036 · CARET_CONFIRMED · ACTIVO VISUAL CANÓNICO",
+            "CONTINUIDAD DEL LADO CLIENTE · 2016–2026",
+            "falló la dirección utilizada para Agnes Quashie",
         ),
         "en": (
             'id="caret-register"',
@@ -184,6 +186,8 @@ def validate() -> None:
             "carlos-saavedra--linkedin-profile--20260901.jpg",
             "https://es.linkedin.com/in/carlos-saavedra-b71418a8",
             "PD-SP-P-0036 · CARET_CONFIRMED · CANONICAL VISUAL ASSET",
+            "MULTIYEAR CLIENT-SIDE CONTINUITY · 2016–2026",
+            "the address used for Agnes Quashie failed",
         ),
     }
     forbidden = (
