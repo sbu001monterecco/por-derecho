@@ -2,7 +2,7 @@
   "schema": "por-derecho.publication-runtime.v1",
   "fence": 30,
   "owner": "1693:4671cd7d7fc5e2826edb0c11ff648fb5d60767a7",
-  "phase": "DEPLOYED",
+  "phase": "VERIFIED_FOR_SCOPE",
   "pr": 1693,
   "base_sha": "ef47cfaaa87e93e9ee6c265d08498bc6a981dc49",
   "candidate_sha": "4671cd7d7fc5e2826edb0c11ff648fb5d60767a7",
@@ -1800,6 +1800,47 @@
       ],
       "pending": [],
       "scope": "Changed readable public resources plus ES/EN entrypoints. Browser checks are separate premerge evidence; not a whole-site or legal-proof certificate."
+    },
+    {
+      "pr": 1693,
+      "candidate_sha": "4671cd7d7fc5e2826edb0c11ff648fb5d60767a7",
+      "at": "2026-09-21T13:53:09.309933Z",
+      "merge_sha": "5f1021c6572eaaba64afae301c622374a9ee8ffc",
+      "pages_run_id": 35608256432,
+      "exact_matches": [
+        {
+          "path": "en/index.html",
+          "sha256": "c048d21d4c94e3cb6896e4c74d69a9ab73f84c3426d40fe815370b40fe1ba109",
+          "bytes": 228197
+        },
+        {
+          "path": "es/index.html",
+          "sha256": "48a7ebf0751867525f140cf3e70c34f8fe22a1c6edd7aeb0b3178e788da95dda",
+          "bytes": 237351
+        },
+        {
+          "path": "ops/continuity/CONTINUITY_BACKLOG_SOURCE_PRESERVATION_21SEP2026.md",
+          "sha256": "b913b3e05ca7d53f6dd3695b5084dccb9d6108ee031562418464afc58e8328c6",
+          "bytes": 2183
+        },
+        {
+          "path": "ops/continuity/JOAN_CRUZ_HKI_MEETING_POINT_BLUESEA_ACOSTA_MATOS_20260919.md",
+          "sha256": "aeb60e3c9efb3196e7b199674f91c8de73502bbc8cc18183e9e6cfe957fc0bac",
+          "bytes": 6203
+        },
+        {
+          "path": "ops/continuity/SYMPOSIUM_THREAD_CONTINUITY_PRESERVATION_20260919.md",
+          "sha256": "30d6334e8784930a2bdf205ac4f89be72e656bf12e824392def0f50043a078c6",
+          "bytes": 13029
+        },
+        {
+          "path": "ops/continuity/THREAD_CTBG_GC836_CATASTRO_WORKFORCE_PRESERVATION_20260919.md",
+          "sha256": "a5aa973baaffa6370d2c5b7acc274b5ee1145a273462e8d3f7f94202596b4e7e",
+          "bytes": 15242
+        }
+      ],
+      "pending": [],
+      "scope": "Changed readable public resources plus ES/EN entrypoints. Browser checks are separate premerge evidence; not a whole-site or legal-proof certificate."
     }
   ],
   "checkpoints": [
@@ -1842,7 +1883,49 @@
         "pages_run_id": 35608256432,
         "merge_sha": "5f1021c6572eaaba64afae301c622374a9ee8ffc"
       }
+    },
+    {
+      "phase": "VERIFIED_FOR_SCOPE",
+      "at": "2026-09-21T13:53:09.309881Z",
+      "evidence": {
+        "merge_sha": "5f1021c6572eaaba64afae301c622374a9ee8ffc",
+        "pages_run_id": 35608256432,
+        "exact_matches": [
+          {
+            "path": "en/index.html",
+            "sha256": "c048d21d4c94e3cb6896e4c74d69a9ab73f84c3426d40fe815370b40fe1ba109",
+            "bytes": 228197
+          },
+          {
+            "path": "es/index.html",
+            "sha256": "48a7ebf0751867525f140cf3e70c34f8fe22a1c6edd7aeb0b3178e788da95dda",
+            "bytes": 237351
+          },
+          {
+            "path": "ops/continuity/CONTINUITY_BACKLOG_SOURCE_PRESERVATION_21SEP2026.md",
+            "sha256": "b913b3e05ca7d53f6dd3695b5084dccb9d6108ee031562418464afc58e8328c6",
+            "bytes": 2183
+          },
+          {
+            "path": "ops/continuity/JOAN_CRUZ_HKI_MEETING_POINT_BLUESEA_ACOSTA_MATOS_20260919.md",
+            "sha256": "aeb60e3c9efb3196e7b199674f91c8de73502bbc8cc18183e9e6cfe957fc0bac",
+            "bytes": 6203
+          },
+          {
+            "path": "ops/continuity/SYMPOSIUM_THREAD_CONTINUITY_PRESERVATION_20260919.md",
+            "sha256": "30d6334e8784930a2bdf205ac4f89be72e656bf12e824392def0f50043a078c6",
+            "bytes": 13029
+          },
+          {
+            "path": "ops/continuity/THREAD_CTBG_GC836_CATASTRO_WORKFORCE_PRESERVATION_20260919.md",
+            "sha256": "a5aa973baaffa6370d2c5b7acc274b5ee1145a273462e8d3f7f94202596b4e7e",
+            "bytes": 15242
+          }
+        ],
+        "pending": [],
+        "scope": "Changed readable public resources plus ES/EN entrypoints. Browser checks are separate premerge evidence; not a whole-site or legal-proof certificate."
+      }
     }
   ],
-  "updated_at": "2026-09-21T13:53:05.672462Z"
+  "updated_at": "2026-09-21T13:53:09.309881Z"
 }
