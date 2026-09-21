@@ -2,7 +2,7 @@
   "schema": "por-derecho.publication-runtime.v1",
   "fence": 32,
   "owner": "1697:11c5b3f500bffa47de3697c9db713c16cdc540b3",
-  "phase": "DEPLOYED",
+  "phase": "VERIFIED_FOR_SCOPE",
   "pr": 1697,
   "base_sha": "d95b5b24f855cac33aa0900789d69189d7b597e8",
   "candidate_sha": "11c5b3f500bffa47de3697c9db713c16cdc540b3",
@@ -1862,6 +1862,37 @@
       ],
       "pending": [],
       "scope": "Changed readable public resources plus ES/EN entrypoints. Browser checks are separate premerge evidence; not a whole-site or legal-proof certificate."
+    },
+    {
+      "pr": 1697,
+      "candidate_sha": "11c5b3f500bffa47de3697c9db713c16cdc540b3",
+      "at": "2026-09-21T14:42:21.297912Z",
+      "merge_sha": "4a2e1d3a7ccfd4613b4f5e50427c9ca3129abef4",
+      "pages_run_id": 35613778982,
+      "exact_matches": [
+        {
+          "path": "assets/data/sun-park-organised-operational-unit-v1.json",
+          "sha256": "2586c79c10e756cfa20157eb85229b08cbc3af4f41a256e5898fb21a009abab9",
+          "bytes": 22954
+        },
+        {
+          "path": "en/index.html",
+          "sha256": "c048d21d4c94e3cb6896e4c74d69a9ab73f84c3426d40fe815370b40fe1ba109",
+          "bytes": 228197
+        },
+        {
+          "path": "en/sun-park-organised-unit/index.html",
+          "sha256": "bff2a444233837b813a5a402902ccf62f7c8733dcbe71a96018533ca3cf9c95e",
+          "bytes": 44620
+        },
+        {
+          "path": "es/index.html",
+          "sha256": "48a7ebf0751867525f140cf3e70c34f8fe22a1c6edd7aeb0b3178e788da95dda",
+          "bytes": 237351
+        }
+      ],
+      "pending": [],
+      "scope": "Changed readable public resources plus ES/EN entrypoints. Browser checks are separate premerge evidence; not a whole-site or legal-proof certificate."
     }
   ],
   "checkpoints": [
@@ -1904,7 +1935,39 @@
         "pages_run_id": 35613778982,
         "merge_sha": "4a2e1d3a7ccfd4613b4f5e50427c9ca3129abef4"
       }
+    },
+    {
+      "phase": "VERIFIED_FOR_SCOPE",
+      "at": "2026-09-21T14:42:21.297855Z",
+      "evidence": {
+        "merge_sha": "4a2e1d3a7ccfd4613b4f5e50427c9ca3129abef4",
+        "pages_run_id": 35613778982,
+        "exact_matches": [
+          {
+            "path": "assets/data/sun-park-organised-operational-unit-v1.json",
+            "sha256": "2586c79c10e756cfa20157eb85229b08cbc3af4f41a256e5898fb21a009abab9",
+            "bytes": 22954
+          },
+          {
+            "path": "en/index.html",
+            "sha256": "c048d21d4c94e3cb6896e4c74d69a9ab73f84c3426d40fe815370b40fe1ba109",
+            "bytes": 228197
+          },
+          {
+            "path": "en/sun-park-organised-unit/index.html",
+            "sha256": "bff2a444233837b813a5a402902ccf62f7c8733dcbe71a96018533ca3cf9c95e",
+            "bytes": 44620
+          },
+          {
+            "path": "es/index.html",
+            "sha256": "48a7ebf0751867525f140cf3e70c34f8fe22a1c6edd7aeb0b3178e788da95dda",
+            "bytes": 237351
+          }
+        ],
+        "pending": [],
+        "scope": "Changed readable public resources plus ES/EN entrypoints. Browser checks are separate premerge evidence; not a whole-site or legal-proof certificate."
+      }
     }
   ],
-  "updated_at": "2026-09-21T14:42:17.855938Z"
+  "updated_at": "2026-09-21T14:42:21.297855Z"
 }
