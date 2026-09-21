@@ -1,0 +1,32 @@
+.ic-page .ic-shell{width:min(1180px,calc(100% - 40px));margin:0 auto}
+.ic-page .ic-hero{padding:72px 0 44px}
+.ic-page .ic-hero-grid{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(280px,.7fr);gap:32px;align-items:start}
+.ic-page .ic-hero h1{max-width:900px;margin:.3rem 0 1rem}
+.ic-page .ic-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:22px}
+.ic-page .ic-actions a{display:inline-block;padding:11px 16px;border:1px solid currentColor;border-radius:4px;text-decoration:none}
+.ic-page .ic-actions a.primary{font-weight:700}
+.ic-page .ic-panel{border:1px solid rgba(13,47,56,.2);border-radius:8px;padding:22px;background:rgba(255,255,255,.75)}
+.ic-page .ic-panel span,.ic-page .ic-kicker{font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;font-weight:700}
+.ic-page .ic-status{border-top:1px solid rgba(13,47,56,.15);border-bottom:1px solid rgba(13,47,56,.15)}
+.ic-page .ic-status .ic-shell{display:grid;grid-template-columns:repeat(4,1fr)}
+.ic-page .ic-status div{padding:16px;border-right:1px solid rgba(13,47,56,.12)}
+.ic-page .ic-status div:last-child{border-right:0}
+.ic-page .ic-status span{display:block;font-size:.72rem;text-transform:uppercase;letter-spacing:.06em}
+.ic-page .ic-section{padding:54px 0}
+.ic-page .ic-section.alt{background:rgba(13,47,56,.035)}
+.ic-page .ic-head{display:grid;grid-template-columns:minmax(0,1fr) minmax(260px,.75fr);gap:30px;align-items:start;margin-bottom:24px}
+.ic-page .ic-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.ic-page .ic-grid.three{grid-template-columns:repeat(3,minmax(0,1fr))}
+.ic-page .ic-card{border:1px solid rgba(13,47,56,.18);border-radius:8px;padding:22px;background:#fff}
+.ic-page .ic-card h3{margin:.35rem 0 .7rem}
+.ic-page .ic-flow{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;counter-reset:step}
+.ic-page .ic-step{border-left:3px solid rgba(13,47,56,.35);padding:14px 14px 14px 18px;background:#fff}
+.ic-page .ic-step strong{display:block;margin-bottom:6px}
+.ic-page .ic-matrix{width:100%;border-collapse:collapse;background:#fff}
+.ic-page .ic-matrix th,.ic-page .ic-matrix td{padding:12px 14px;border:1px solid rgba(13,47,56,.15);vertical-align:top;text-align:left}
+.ic-page .ic-matrix th{background:rgba(13,47,56,.06)}
+.ic-page .ic-pill{display:inline-block;padding:3px 8px;border:1px solid rgba(13,47,56,.28);border-radius:999px;font-size:.76rem;font-weight:700}
+.ic-page .ic-note{border-left:4px solid rgba(13,47,56,.45);padding:16px 18px;background:rgba(13,47,56,.04);margin-top:22px}
+.ic-page .ic-foot{padding:28px 0 48px}
+@media(max-width:820px){.ic-page .ic-hero-grid,.ic-page .ic-head{grid-template-columns:1fr}.ic-page .ic-status .ic-shell{grid-template-columns:1fr 1fr}.ic-page .ic-grid,.ic-page .ic-grid.three,.ic-page .ic-flow{grid-template-columns:1fr}.ic-page .ic-status div:nth-child(2){border-right:0}.ic-page .ic-matrix{font-size:.9rem}}
+@media(max-width:520px){.ic-page .ic-shell{width:min(100% - 24px,1180px)}.ic-page .ic-status .ic-shell{grid-template-columns:1fr}.ic-page .ic-status div{border-right:0;border-bottom:1px solid rgba(13,47,56,.12)}}
