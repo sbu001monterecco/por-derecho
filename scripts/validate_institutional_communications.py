@@ -26,9 +26,11 @@ from reconcile_institutional_communications import (
     MAILBOX_EXPECTED,
     PRIVATE_MANIFEST_ROWS,
     PRIVATE_MANIFEST_SHA256,
+    REGAGE_STATUS_EXPORT_EXPECTED,
     RECEIPT_BOUNDARY,
     RECIPIENTS,
     REPO_ROOT,
+    load_regage_status_export_events,
     load_source_rows,
     sha256_file,
     subject_category,
@@ -204,7 +206,8 @@ def validate_register(
     expected_authority_ids = ["PD-SP-EVT-0004", "PD-SP-EVT-0014", *[f"PD-SP-EVT-{number:04d}" for number in range(141, 158)]]
     if [event.get("event_id") for event in authority_events] != expected_authority_ids:
         errors.append("19-event public-authority communication set changed")
-    expected_event_total = BASELINE_EXPECTED + MAILBOX_EXPECTED + len(KEY_EVENTS)
+    expected_status_events, expected_status_control = load_regage_status_export_events()
+    expected_event_total = BASELINE_EXPECTED + MAILBOX_EXPECTED + len(KEY_EVENTS) + len(expected_status_events)
     if denominator.get("event_rows_total") != len(events) or len(events) != expected_event_total:
         errors.append(f"event-row denominator drift: expected {expected_event_total}, found {len(events)}")
     try:
@@ -408,10 +411,29 @@ def validate_register(
         elif not (repo_root / anchor).is_file():
             errors.append(f"{event.get('event_id')} source anchor does not exist: {anchor}")
 
-    curated_expected = {event["event_id"] for event in KEY_EVENTS}
+    curated_expected = {event["event_id"] for event in [*KEY_EVENTS, *expected_status_events]}
     curated_found = {event.get("event_id") for event in events if event.get("cohort") == "CURATED_SOURCE_PROVED_EVENT"}
     if curated_found != curated_expected:
         errors.append(f"curated-event set drift: expected {sorted(curated_expected)}, found {sorted(curated_found)}")
+
+    status_expected_by_id = {event["event_id"]: event for event in expected_status_events}
+    status_found = {
+        event.get("event_id"): event for event in events
+        if str(event.get("source_key", "")).startswith("REGAGE_STATUS_EXPORT_20260921:")
+    }
+    if status_found != status_expected_by_id:
+        errors.append("REGAGE status-export canonical event projection drift")
+    if expected_status_control != {
+        "records": 398,
+        "reused_existing_formal_events": 92,
+        "added_status_events": 306,
+        "preassigned_regage_id_additions": 22,
+        "generic_id_additions": 284,
+        "status_literal_es": {"Recibido": 336, "Enviado": 36, "Rechazado": 26},
+    }:
+        errors.append("REGAGE status-export source-control denominator drift")
+    if any(event.get("record_type") == "REGISTRATION_RECEIPT" for event in status_found.values()):
+        errors.append("REGAGE status-export rows must not be upgraded to receipt proof")
     for event in events:
         for linked_id in event.get("linked_transport_event_ids", []):
             if linked_id not in register_mailbox_ids:
@@ -530,6 +552,18 @@ def validate_register(
     aggregate_checkpoint = checkpoint.get("aggregate_only_control", {})
     if aggregate_checkpoint.get("reported_rows") != 22 or aggregate_checkpoint.get("synthetic_event_rows") != 0:
         errors.append("checkpoint aggregate-only control is incorrect")
+    status_checkpoint = checkpoint.get("regage_status_export_2026_09_21", {})
+    if (
+        status_checkpoint.get("records") != 398
+        or status_checkpoint.get("reused_existing_formal_events") != 92
+        or status_checkpoint.get("added_status_events") != 306
+        or status_checkpoint.get("preassigned_regage_id_additions") != 22
+        or status_checkpoint.get("generic_id_additions") != 284
+        or status_checkpoint.get("status_literal_es") != {"Recibido": 336, "Enviado": 36, "Rechazado": 26}
+        or status_checkpoint.get("raw_source_sha256") != "5cc7eaa867b248b0bff7e9cd19e5093dfe2df494fae8ca84c8f12c15382016a3"
+        or status_checkpoint.get("raw_source_committed") is not False
+    ):
+        errors.append("checkpoint REGAGE status-export control is incorrect")
     mail_control = checkpoint.get("last_month_mail_control", {})
     if mail_control.get("pagination_complete") is not True:
         errors.append("last-month mail control is not marked pagination-complete")
@@ -617,8 +651,9 @@ def main(argv: list[str] | None = None) -> int:
         return 1
     print(
         "OK: 75 detailed receipts + 156 mailbox transports reconciled; "
-        "22 aggregate-only records remain one batch; "
-        f"{len(KEY_EVENTS)} curated events source-anchored; 19 authority events interlinked; public/private boundary enforced"
+        "historical 22-row aggregate retained; 398-row REGAGE status export reconciled (92 reused, 306 added); "
+        f"{len(KEY_EVENTS)} pre-existing curated events + {REGAGE_STATUS_EXPORT_EXPECTED} status events source-anchored; "
+        "19 authority events interlinked; public/private boundary enforced"
     )
     return 0
 
