@@ -1,0 +1,46 @@
+{
+  "status": "REGISTERED_SUBMISSION_08_OF_10_RECEIPT_VERIFIED",
+  "reference": "E.G.745/2026",
+  "registration": "REGAGE26e00082069746",
+  "linked_principal_registration": "REGAGE26e00082068814",
+  "presentation_datetime_literal": "21/09/2026 03:03:37",
+  "registration_datetime_literal": "21/09/2026 03:03:42",
+  "timezone": "Not specified in printed receipt; preserve literal portal time",
+  "recipient_dir3": "J00003992",
+  "recipient": "Fiscalía General del Estado",
+  "attention": "Inspección Fiscal",
+  "receipt_pages": 2,
+  "receipt_sha256": "0eeccbe9bb7f6a96bb54f586b0913e3e8f4e15e4afa8bb260bdc7a34cad009a3",
+  "attachments": [
+    {
+      "filename": "09_EG745_TRAZABILIDAD.pdf",
+      "pages": 138,
+      "bytes": 7791897,
+      "sha256": "2a17431bb8147e54a26c8a710ca6950fab8e0b571b3084f427eaecc71b60c777",
+      "receipt_sha512": "af7e9ed0ad2a989f1e7ce60d6322a2648c44d2ebd0f6a28d8033d7a70fc036162bc6d6682c3ef74985f620a2a442002c2d3aa057b973f417d5dd28645247d0fd",
+      "exact_match": true
+    },
+    {
+      "filename": "EG745_HISTORICO_D16_DECLARACION_AC.pdf",
+      "pages": 12,
+      "bytes": 6108115,
+      "sha256": "55dc0a73f0eb62b2659bca445092044ceefab02c61379a2de79f7a8365664ed1",
+      "receipt_sha512": "3c8a11305c3442b6cd96ddedf215207b97429e3231d54b78fca8a5da9423502a2592222ee79ec9535ead15701c07a91b9ecaaed135bcf347a67dde58f6da3828",
+      "exact_match": true
+    }
+  ],
+  "all_expected_attachments_verified": true,
+  "verified_delivery_count": 8,
+  "planned_delivery_count": 10,
+  "remaining_submission_numbers": [
+    9,
+    10
+  ],
+  "all22_illustrations_registered_across_deliveries1_and2": true,
+  "admission_or_substantive_examination_proved": false,
+  "assistant_filed_or_emailed": false,
+  "scope": "Public-safe receipt metadata and attachment fingerprints only. Native private receipt and private documents are not published.",
+  "canonical_communications_register": "assets/data/institutional-communications-register-v1.json",
+  "canonical_event_allocation": "Pending integration; reuse existing registry identity if already allocated",
+  "main_integration": "Pending held controller; worker preservation only"
+}
