@@ -3524,7 +3524,7 @@ En Las Palmas de Gran Canaria, a 17 de junio de 2026.
 Fdo.:D. GIL MARER - NIE [IDENTIFICADOR PERSONAL OMITIDO]
 Correo electrónico: [CORREO ELECTRÓNICO OMITIDO]​
 Teléfono complementario: [TELÉFONO OMITIDO]​
-Domicilio a efectos de notificaciones: Calle Pozo Cabildo nº 34, La Laguna,38208, S/C de Tenerife
+Domicilio a efectos de notificaciones: [DOMICILIO PERSONAL OMITIDO]
 Denuncia penal contra el Administrador Concursal - LPB / Sun Park  (17 de junio 2026)|  Página 55 de 55
 Gil Marer
 NIE
