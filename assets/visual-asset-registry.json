@@ -1,7 +1,7 @@
 {
-  "registry_version": "1.1.0",
+  "registry_version": "1.2.0",
   "policy_id": "PD-VISUAL-ID-LOCK-2026-08-19",
-  "control_date": "2026-08-19",
+  "control_date": "2026-09-21",
   "purpose": "Canonical identity, provenance and byte-lock registry for named-person and material-asset images used by Por Derecho.",
   "mandatory_rules": {
     "named_person_images_must_be_registered": true,
@@ -293,6 +293,49 @@
         "place.sun-park-mynd-yaiza.aerial-primary",
         "person.francisco-de-borja-rodriguez-batllori.primary"
       ]
+    },
+    "person.gil-marer.official-base": {
+      "subject_type": "person",
+      "canonical_name": "Gil Marer",
+      "caepr_id": "PD-SP-P-0001",
+      "short_label": "Gil Marer / official base portrait",
+      "roles": [
+        "Founder and public voice · Por Derecho",
+        "Principal sponsor · Project Sun Rock / Aweswell"
+      ],
+      "path": "assets/actors/gil-marer--official-base--20260921.webp",
+      "git_blob_sha": "20988c0b79cd114688031eec881c3e78deb2150f",
+      "identity_status": "LOCKED_CANONICAL_REPOSITORY_ASSET",
+      "identity_basis": "User supplied the source self-portrait in the current conversation, expressly stated that it is his own image and that he took it, approved the cleaned/stylised derivative, and on 21 September 2026 instructed that the resulting image be kept as his official base image. Attribution therefore follows explicit first-person user identification and approval; no facial-identification inference was performed.",
+      "approved_contexts": [
+        "official base portrait for future Por Derecho / Project Sun Rock visual work",
+        "editorial and LinkedIn graphics authored or approved by Gil Marer",
+        "document, presentation and poster derivatives where Gil is intentionally depicted",
+        "future profile/about-page use after an explicit publication switch"
+      ],
+      "alt_en": "Gil Marer — official base portrait for Por Derecho and Project Sun Rock visual work",
+      "alt_es": "Gil Marer — retrato base oficial para el trabajo visual de Por Derecho y Project Sun Rock",
+      "source_provenance": {
+        "source_class": "user-supplied self-portrait + user-approved enhancement",
+        "user_source_filename": "6bab33e4-8917-400b-9189-57065b458fca.png",
+        "user_source_sha256": "8452aa05cb85881e537bb7388200eefff228bff4ecafac02a63460c798e4ef04",
+        "user_source_dimensions": "200x200",
+        "user_source_format": "png",
+        "source_ownership_statement": "User stated: this is my image; I took it.",
+        "enhanced_master_sha256": "846164ebe3df80a40d9e153e7b22dfd4a5271738d8c7f44f188b06722ecbb589",
+        "enhanced_master_dimensions": "1254x1254",
+        "enhanced_master_format": "png",
+        "repository_derivative_sha256": "7ba5f8a3640a6669776084c6f373c6a9a21bf9c25b5ef8c036f828250c8b47a5",
+        "repository_derivative_dimensions": "800x800",
+        "repository_derivative_bytes": 50384,
+        "repository_derivative_format": "webp",
+        "enhancement_description": "Cleaned and sharpened portrait with the distracting original background removed/re-stylised into a soft professional backdrop; identity and expression intentionally preserved.",
+        "user_approval_date": "2026-09-21",
+        "legacy_public_asset_path": "assets/gil-marer.webp",
+        "legacy_public_asset_note": "Existing About-page portrait remains unchanged until a separate explicit publication switch."
+      },
+      "storage_mode": "repository-byte-locked",
+      "usage_note": "Use this asset as the official base reference for future visual derivatives of Gil Marer unless the user explicitly designates a newer official base."
     }
   },
   "rejected_or_prohibited_mappings": [
