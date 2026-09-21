@@ -461,3 +461,12 @@ Any future “super-intelligence”, AI, counsel, prosecutor or investigator rev
 9. treat criminal/prosecutorial routing as priority of analysis, not presumption of guilt;
 10. output falsifiable next-evidence requests capable of proving or disproving the thesis.
 
+
+
+## 27. Narrative-propagation rescan — 21 September 2026
+
+The public GitLab Pages and GitHub rescan is controlled in:
+- `archive/PINK_CANARY_NARRATIVE_PROPAGATION_PROSECUTORIAL_RESCAN_21SEP2026.md`
+- `archive/PINK_CANARY_NARRATIVE_PROPAGATION_GRAPH_21SEP2026.json`
+
+Controlling correction: the 17-September-2026 AC opposition expressly relies on Sentencia 163/2023 and the €3,032,010.34 result but does **not** expressly name Pink/rent in the opening result argument. Classify that event as result-reliance / functional Pink dependency, not an express Pink citation.
