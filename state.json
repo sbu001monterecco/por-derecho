@@ -1,13 +1,13 @@
 {
   "schema": "por-derecho.publication-runtime.v1",
-  "fence": 23,
-  "owner": "1684:d068133026ab28d4e689553a461bc29016f08858",
-  "phase": "SUPERSEDED_WITH_OPEN_READBACK",
-  "pr": 1684,
-  "base_sha": "dfbde5ef285da6253158dc2d0806e7ec05242725",
-  "candidate_sha": "d068133026ab28d4e689553a461bc29016f08858",
-  "run_id": 35552174705,
-  "claimed_at": "2026-09-20T23:16:52.010535Z",
+  "fence": 24,
+  "owner": "1686:e8d83c63b52219d4275c178729f94121cff3413f",
+  "phase": "CLAIMED",
+  "pr": 1686,
+  "base_sha": "ba8e83ee69ec48da17d505bf3d832c217da22ce2",
+  "candidate_sha": "e8d83c63b52219d4275c178729f94121cff3413f",
+  "run_id": 35556357504,
+  "claimed_at": "2026-09-21T03:06:43.806234Z",
   "expiry_policy": "Never silently expire into free; recover after inspecting actual merge/deployment.",
   "receipts": [
     {
@@ -1491,88 +1491,5 @@
       "scope": "Changed readable public resources plus ES/EN entrypoints. Browser checks are separate premerge evidence; not a whole-site or legal-proof certificate."
     }
   ],
-  "checkpoints": [
-    {
-      "phase": "ACCEPTED",
-      "at": "2026-09-20T23:16:53.136626Z",
-      "evidence": {
-        "checks": [
-          {
-            "name": "publication-integrity",
-            "id": 106166588528,
-            "conclusion": "success"
-          },
-          {
-            "name": "PD release acceptance",
-            "id": 106166588511,
-            "conclusion": "success"
-          }
-        ]
-      }
-    },
-    {
-      "phase": "MERGE_PENDING",
-      "at": "2026-09-20T23:18:18.648430Z",
-      "evidence": {
-        "pr": 1684
-      }
-    },
-    {
-      "phase": "MERGED",
-      "at": "2026-09-20T23:18:19.868398Z",
-      "evidence": {
-        "merge_sha": "01df48e335d07d0f1068381a294f6b65917f1248"
-      }
-    },
-    {
-      "phase": "DEPLOYED",
-      "at": "2026-09-20T23:18:43.999409Z",
-      "evidence": {
-        "pages_run_id": 35544212416,
-        "merge_sha": "01df48e335d07d0f1068381a294f6b65917f1248"
-      }
-    },
-    {
-      "phase": "RECOVERY_REQUIRED",
-      "at": "2026-09-20T23:18:51.160914Z",
-      "evidence": {
-        "failed_run": "35544214539"
-      }
-    },
-    {
-      "phase": "MERGED",
-      "at": "2026-09-21T00:18:47.398781Z",
-      "evidence": {
-        "merge_sha": "01df48e335d07d0f1068381a294f6b65917f1248"
-      }
-    },
-    {
-      "phase": "DEPLOYED",
-      "at": "2026-09-21T00:18:49.042047Z",
-      "evidence": {
-        "pages_run_id": 35544212416,
-        "merge_sha": "01df48e335d07d0f1068381a294f6b65917f1248"
-      }
-    },
-    {
-      "phase": "RECOVERY_REQUIRED",
-      "at": "2026-09-21T00:18:52.376821Z",
-      "evidence": {
-        "failed_run": "35547289814"
-      }
-    },
-    {
-      "phase": "SUPERSEDED_WITH_OPEN_READBACK",
-      "at": "2026-09-21T01:50:26.733403Z",
-      "evidence": {
-        "prior_merge_sha": "01df48e335d07d0f1068381a294f6b65917f1248",
-        "current_main_sha": "6f00bc1bca4a70b431d77470cf7bc36f805cbf04",
-        "pages_run_id": 35544212416,
-        "readback_verified": false,
-        "verification_gap_preserved": true,
-        "reason": "Later legitimate main superseded the deployed release before exact scoped byte readback completed; no verified receipt is inferred."
-      }
-    }
-  ],
-  "updated_at": "2026-09-21T01:50:26.733403Z"
+  "checkpoints": []
 }
