@@ -372,8 +372,16 @@
         "legacy_about_blob_sha": "5f8fb1013fdce7953a5fdf3cb3083861c9e4576f"
       },
       "storage_mode": "repository-byte-locked",
-      "usage_note": "Website-facing About-page derivative; the official base portrait remains person.gil-marer.official-base.",
-      "variant_of": "person.gil-marer.official-base"
+      "usage_note": "Canonical registered About-page variant lives under assets/actors/. The English and Spanish About pages publish the same bytes through the long-standing assets/gil-marer.webp alias with an explicit cache-buster for deployment reliability.",
+      "variant_of": "person.gil-marer.official-base",
+      "published_aliases": [
+        {
+          "path": "assets/gil-marer.webp",
+          "git_blob_sha": "577b78c9949a45cb41b493c4091c718f2cd64b6a",
+          "purpose": "Stable pre-existing About-page URL used to avoid a broken new-path deployment/cache edge while preserving the canonical registered actor variant.",
+          "cache_buster": "v=20260921c"
+        }
+      ]
     },
     "document.fmmm-shaila-antonio-family-source-20260921": {
       "subject_type": "document",
