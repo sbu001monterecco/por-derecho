@@ -136,7 +136,7 @@
         "pages": 26,
         "sha256": "a7f057fd99d0bdf1a891cf4610f69ed19788d2e40f9f23a6ff66fc6255d97846",
         "text_layer_processed": "26/26 pages",
-        "source_role": "controlled immediate amplification source; filing/ingestion receipt should be kept distinct from source-byte identity",
+        "source_role": "controlled 26-Jun working source; source preserved but filing/ingestion is not proved and must not be described as filed absent primary presentation evidence",
         "public_raw_pdf": false,
         "repository_digitisation_status": "FULL_PAGE_AWARE_DIGITISATION_IN_GIT"
       }
@@ -291,5 +291,17 @@
     "documents": 6,
     "source_pages": 278,
     "status": "FULL_PAGE_AWARE_DIGITISATION_COMPLETE_AND_INTERLINKED"
+  },
+  "dual_version_archive": {
+    "control_date": "2026-09-21",
+    "root": "evidence/judicial/june-2026-three-track/",
+    "frozen_index": "evidence/judicial/june-2026-three-track/FROZEN_INDEX.md",
+    "source_manifest": "evidence/judicial/june-2026-three-track/source-manifest.json",
+    "dynamic": {
+      "REF21": "evidence/judicial/june-2026-three-track/dynamic/ref21-living-dossier.md",
+      "REF22": "evidence/judicial/june-2026-three-track/dynamic/ref22-living-dossier.md",
+      "REF24": "evidence/judicial/june-2026-three-track/dynamic/ref24-living-dossier.md"
+    },
+    "rule": "Frozen source-time text is immutable except privacy/security redaction; dynamic readers may improve and interlink without overwriting frozen wording."
   }
 }
