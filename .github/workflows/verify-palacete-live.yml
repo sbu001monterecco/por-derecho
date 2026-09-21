@@ -1,8 +1,6 @@
 # SCRATCH TRANSPORT ONLY — never merge this branch.
-# The short-lived download capability below contains only the image expressly
-# authorized for public publication; no private legal records are transferred.
-# Final publication keeps neither this workflow nor the temporary URL.
-name: Scratch DP1901 exact image transfer
+# Production verifier remains unchanged on main. No ref/main writes or deploys.
+name: Scratch DP1901 exact image assembly
 on:
   push:
     branches: ['worker/dp1901-image-transfer-20260921']
@@ -16,29 +14,32 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
-      - name: Import exact public illustration as immutable blob only
+      - name: Install pinned image decoder
+        run: python3 -m pip install --quiet Pillow==11.3.0
+      - name: Assemble hash-controlled public image and create immutable delivery blobs
         env:
-          IMAGE_SOURCE: 'https://sdmntprnortheu.oaiusercontent.com/files/00000000-e45c-81f4-a142-8da971bdba2a/raw?se=2026-09-20T23%3A56%3A43Z&sp=r&sv=2026-02-06&sr=b&scid=3b342bc0-b8bf-5b1f-aa7a-394c7e7f8e08&skoid=002823aa-689d-47ca-9347-108c20f4f00d&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-09-20T15%3A42%3A30Z&ske=2026-09-21T15%3A42%3A30Z&sks=b&skv=2026-02-06&sig=z7IKsyWCGqJozaHqdnXEOmZsALno1CH1Gq8TUXMJbfw%3D'
           GH_TOKEN: ${{ github.token }}
         run: |
           python3 - <<'PY'
-          import base64, hashlib, json, os, urllib.parse, urllib.request
-          source = os.environ['IMAGE_SOURCE']
-          print('::add-mask::' + source)
-          p = urllib.parse.urlparse(source)
-          assert p.scheme == 'https' and p.hostname and p.hostname.endswith('.oaiusercontent.com')
-          try:
-              with urllib.request.urlopen(source, timeout=40) as response:
-                  image = response.read(4000000)
-          except Exception:
-              raise SystemExit('IMAGE_TRANSFER_DOWNLOAD_FAILED; source URL withheld')
-          expected = 'ca301b92c670abcaa691bbd5b569dfb971034595c300238369e265f861fe947d'
-          assert len(image) == 2590908 and image.startswith(b'\x89PNG\r\n\x1a\n'), 'Image size/type mismatch'
-          assert hashlib.sha256(image).hexdigest() == expected, 'Image hash mismatch'
-          git_sha = hashlib.sha1(b'blob ' + str(len(image)).encode() + b'\0' + image).hexdigest()
-          request = urllib.request.Request('https://api.github.com/repos/sbu001monterecco/por-derecho/git/blobs', data=json.dumps({'content': base64.b64encode(image).decode(), 'encoding':'base64'}).encode(), method='POST', headers={'Authorization':'Bearer ' + os.environ['GH_TOKEN'], 'Accept':'application/vnd.github+json', 'Content-Type':'application/json', 'X-GitHub-Api-Version':'2022-11-28'})
-          with urllib.request.urlopen(request, timeout=60) as response:
-              result = json.load(response)
-          assert result['sha'] == git_sha, 'Remote blob mismatch'
-          print(json.dumps({'status':'EXACT_IMAGE_BLOB_STORED','bytes':len(image),'sha256':expected,'git_blob_sha':git_sha,'branches_changed':False,'deployment_performed':False}))
+          import base64, hashlib, io, json, os, urllib.request
+          from PIL import Image
+          api='https://api.github.com/repos/sbu001monterecco/por-derecho'
+          headers={'Authorization':'Bearer '+os.environ['GH_TOKEN'],'Accept':'application/vnd.github+json','Content-Type':'application/json','X-GitHub-Api-Version':'2022-11-28'}
+          def request(path, data=None):
+              req=urllib.request.Request(api+path,data=None if data is None else json.dumps(data).encode(),headers=headers,method='GET' if data is None else 'POST')
+              with urllib.request.urlopen(req,timeout=60) as r: return json.load(r)
+          segments=['886eb0f80f4308232c7d0e9d60973d157c11edd8','e6dea9d8700fa5a915b32e9e6c11f24b419088ba','c9a4d1db6af27ddd7ee164915b70ae022f82cfe7','3d81768fd8d6ad8f9c6e4a3de2abd03c7fef20d6','47ed0ef8360bbee9069cd3d624f4a601aac796eb','bd56bf9c03bd6ee93da7456df3ad8fe935f407ac','ee93d6dbeef45dadfa5344548836797b19a3c927','8a5569d87284040c265160552e408c5402739332']
+          image=b''.join(base64.b64decode(request('/git/blobs/'+sha)['content']) for sha in segments)
+          assert len(image)==59248
+          assert hashlib.sha256(image).hexdigest()=='24d6993e0d546903248c83d5da273d26a91817663c6ea3329d1dd332919f4997'
+          decoded=Image.open(io.BytesIO(image)); decoded.load(); assert decoded.size==(1055,1491)
+          def store(data,label):
+              sha=hashlib.sha1(b'blob '+str(len(data)).encode()+b'\0'+data).hexdigest()
+              result=request('/git/blobs',{'content':base64.b64encode(data).decode(),'encoding':'base64'})
+              assert result['sha']==sha
+              print(json.dumps({'asset':label,'git_blob_sha':sha,'sha256':hashlib.sha256(data).hexdigest(),'bytes':len(data),'dimensions':list(decoded.size)}))
+          store(image,'optimized-avif-rendition')
+          jpeg=io.BytesIO(); decoded.convert('RGB').save(jpeg,format='JPEG',quality=94,optimize=True,progressive=True)
+          store(jpeg.getvalue(),'jpeg-share-rendition-from-avif')
+          print('VERIFIED_PUBLIC_IMAGE_BLOBS_CREATED; NO_BRANCH_MUTATION_OR_DEPLOYMENT')
           PY
