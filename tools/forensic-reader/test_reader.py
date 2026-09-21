@@ -26,6 +26,21 @@ def main():
         page.locator('#note').fill('Synthetic knowledge marker, not a finding.')
         page.locator('#save').click()
         assert page.locator('.card').count() == 1
+        page.locator('#truthMode').click()
+        page.locator('#truthClaim').fill('Synthetic atomic claim.')
+        page.locator('#truthStatus').select_option('PARTIAL')
+        page.locator('#truthOmitted').fill('Synthetic omitted context.')
+        page.locator('#truthKnowledge').select_option('NOTICE_PROVED')
+        page.locator('#truthCausation').select_option('UNSUPPORTED_INFERENCE')
+        page.locator('#truthRestatement').fill('Evidence-constrained synthetic restatement.')
+        page.locator('#truthDecision').select_option('ACCEPTED')
+        page.locator('#save').click()
+        assert 'Accepted/edited restatement requires' in page.locator('#status').inner_text()
+        page.locator('#review').select_option('REVIEWED')
+        page.locator('#reviewer').fill('Synthetic reviewer')
+        page.locator('#save').click()
+        assert '1 tested' in page.locator('#truthDelta').inner_text()
+        assert 'PARTIAL' in page.locator('.card').inner_text()
         page.locator('#language').click()
         assert page.locator('html').get_attribute('lang') == 'es'
         page.set_viewport_size({'width': 390, 'height': 844})
@@ -33,7 +48,7 @@ def main():
         assert not errors, errors
         assert not requests, requests
         browser.close()
-    print(json.dumps({'synthetic_smoke': 'PASS', 'scope': 'DOM rendering, selection, contradiction guard, editing, Spanish, mobile; not hosted PDF or legal verification'}))
+    print(json.dumps({'synthetic_smoke': 'PASS', 'scope': 'DOM rendering, selection, contradiction guard, truth-reconstruction review gate, editing, Spanish, mobile; not hosted PDF, AI inference or legal verification'}))
 
 
 if __name__ == '__main__':
