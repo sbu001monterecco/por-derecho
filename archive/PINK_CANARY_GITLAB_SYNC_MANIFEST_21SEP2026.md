@@ -64,3 +64,14 @@ Preserved there:
 - the associated appellate/evidence filings recovered from Javier Sixto's email during this review.
 
 The Drive mirror is preservation/staging for future GitLab reconciliation. Do not treat the mirror as a substitute for primary-source provenance or the GitHub commit history.
+
+
+## Extended machine-ingest / recovery controls
+
+Also preserved:
+- `archive/PINK_CANARY_CONTINUATION_INSTRUCTIONS_21SEP2026.md` — original governing continuation instruction;
+- `archive/PINK_CANARY_SUPERINTELLIGENCE_INGEST_21SEP2026.json` — structured machine-ingest graph/control.
+
+The Drive mirror additionally contains:
+- `PINK_CANARY_DRIVE_MIRROR_COMPLETION_NOTE_21SEP2026.md`;
+- `PINK_CANARY_UNITARY_GITLAB_RECOVERY_BUNDLE_21SEP2026_v3.zip`, which is the preferred current recovery bundle.
