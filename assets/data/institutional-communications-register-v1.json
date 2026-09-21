@@ -43,13 +43,15 @@
     "The caret marker remains identity-only; communication events receive stable IDs and bilingual anchors, never presentation carets.",
     "Criminal relevance may be linked as an open hypothesis, but criminal responsibility never transfers through an ACTA, communication, referral, office or institutional tier."
   ],
-  "control_date": "2026-09-18",
+  "control_date": "2026-09-21",
   "denominator_control": {
     "arithmetic_check": "75 detailed + 22 metadata-only = 97 reported total",
-    "curated_source_proved_events": 104,
+    "curated_source_proved_events": 128,
     "detailed_baseline_receipt_rows_expected": 75,
     "detailed_baseline_receipt_rows_registered": 75,
-    "event_rows_total": 335,
+    "dp1901_completed_registration_events": 14,
+    "eg745_substantive_linked_registration_events": 10,
+    "event_rows_total": 359,
     "mailbox_draft_rows": 3,
     "mailbox_inbound_email_rows": 101,
     "mailbox_outbound_email_rows": 42,
@@ -9083,6 +9085,1779 @@
       "transport_link_state": "SEPARATE_ACT_AND_TRANSPORT_LINKS_IN_CANONICAL_CROSSWALK"
     },
     {
+      "attribution_state": "INSTITUTIONAL_NOTICE_NO_PERSONAL_SIGNATORY_ASSERTED",
+      "canonical_anchor_en": "en/institutional-records/#communication-PD-SP-EVT-0179",
+      "canonical_anchor_es": "es/registros-institucionales/#communication-PD-SP-EVT-0179",
+      "channel": "EMAIL",
+      "cohort": "CURATED_SOURCE_PROVED_EVENT",
+      "criminal_responsibility_transfer": false,
+      "direction": "OUTBOUND_TO_INSTITUTION",
+      "does_not_prove": [
+        "The supplemental submission does not prove substantive reconsideration, board circulation, a conflict finding or any liability conclusion."
+      ],
+      "does_not_prove_es": "La aportación complementaria no prueba reconsideración sustantiva, circulación al Consejo, hallazgo de conflicto ni conclusión de responsabilidad.",
+      "event_date": "2026-09-05",
+      "event_id": "PD-SP-EVT-0179",
+      "event_timestamp": "2026-09-05T21:38:49",
+      "evidence_state": {
+        "delivery": "SOURCE_TRANSMISSION_RETAINED",
+        "destination": "STATED_IN_SOURCE",
+        "filing": "LINKED_TO_COMMUNICATION_6_BY_SENDER_REQUEST",
+        "internal_association": "NOT_ESTABLISHED_BY_THIS_SOURCE",
+        "merits": "NO_MERITS_FINDING_OR_CRIMINAL_ATTRIBUTION",
+        "registration": "REQUESTED_NOT_YET_CONFIRMED_IN_THIS_SOURCE",
+        "substantive_examination": "REQUESTED_NOT_ESTABLISHED_BY_THIS_SOURCE",
+        "transmission": "SOURCE_TRANSMISSION_OR_ACT_RETAINED"
+      },
+      "institution_key": "CAJASIETE",
+      "layer": "OFFICIAL_ACT_OR_CORRESPONDENCE",
+      "linked_transport_event_ids": [],
+      "matter_references": [
+        "Sun Park / MYND Yaiza",
+        "RICPE",
+        "CNMV",
+        "Communication 6",
+        "PD-SP-SRC-0028"
+      ],
+      "office": "Cajasiete",
+      "official_reference": "Communication 6 supplemental submission",
+      "proof_level": "RETAINED_SENT_EMAIL_WITH_OFFICIAL_ATTACHMENTS",
+      "proves": [
+        "Gil sent two official CNMV documents to Cajasiete's Ethics Channel, asked for incorporation into Communication 6, identification of the independent reviewing function, conflict analysis and lawful preservation/anonymisation/deletion traceability."
+      ],
+      "proves_es": "Gil remitió al Canal Ético dos documentos oficiales de CNMV, pidió su incorporación a la comunicación 6, identificación del órgano independiente, análisis de conflictos y trazabilidad lícita de conservación/anonimización/supresión.",
+      "public_derivative_state": "PUBLIC_SAFE_MINIMISED_DERIVATIVE",
+      "public_summary": "Gil sent two official CNMV documents to Cajasiete's Ethics Channel and expressly asked for independent review, conflict analysis and traceability.",
+      "public_summary_es": "Gil remitió dos documentos oficiales de CNMV al Canal Ético de Cajasiete y pidió expresamente revisión independiente, análisis de conflictos y trazabilidad.",
+      "record_type": "OUTBOUND_COMMUNICATION",
+      "source_batch_id": "PD-CAJASIETE-ACCOUNTABILITY-20260918",
+      "source_integrity": {
+        "repository_anchor": "ops/cajasiete-accountability-register-input-20260918.json",
+        "status": "RETAINED_SENT_EMAIL_WITH_OFFICIAL_ATTACHMENTS; PUBLIC_SAFE_REVIEW_DESCRIPTOR"
+      },
+      "source_key": "CAJASIETE-ACCOUNTABILITY:C-20260905",
+      "source_timezone": "NOT_STATED; no timezone conversion inferred",
+      "transport_link_state": "SEPARATE_ACT_AND_TRANSPORT_LINKS_IN_CANONICAL_CROSSWALK"
+    },
+    {
+      "attribution_state": "INSTITUTIONAL_NOTICE_NO_PERSONAL_SIGNATORY_ASSERTED",
+      "canonical_anchor_en": "en/institutional-records/#communication-PD-SP-EVT-0180",
+      "canonical_anchor_es": "es/registros-institucionales/#communication-PD-SP-EVT-0180",
+      "channel": "EMAIL",
+      "cohort": "CURATED_SOURCE_PROVED_EVENT",
+      "criminal_responsibility_transfer": false,
+      "direction": "INBOUND_FROM_INSTITUTION",
+      "does_not_prove": [
+        "The response documents the institution's stated review outcome and registration/confidentiality position; it does not establish who made the decision, what conflict analysis occurred, the complete audit trail, or the legal correctness of the April inadmission."
+      ],
+      "does_not_prove_es": "La respuesta documenta el resultado de revisión declarado por la entidad y su posición sobre registro/confidencialidad; no acredita quién decidió, qué análisis de conflictos se realizó, el audit trail completo ni la corrección jurídica de la inadmisión de abril.",
+      "event_date": "2026-09-18",
+      "event_id": "PD-SP-EVT-0180",
+      "event_timestamp": "2026-09-18T14:50:14",
+      "evidence_state": {
+        "delivery": "INSTITUTIONAL_RESPONSE_RECEIVED",
+        "destination": "STATED_IN_SOURCE",
+        "filing": "INCORPORATION_ASSERTED_BY_INSTITUTION",
+        "internal_association": "NOT_ESTABLISHED_BY_THIS_SOURCE",
+        "merits": "APRIL_DECISION_REAFFIRMED_NO_LIABILITY_FINDING",
+        "registration": "INSTITUTION_ASSERTS_REGISTERED_WITH_CONFIDENTIALITY_AND_RESTRICTED_ACCESS",
+        "substantive_examination": "INSTITUTION_ASSERTS_ADDITIONAL_MATERIAL_CONSIDERED",
+        "transmission": "SOURCE_TRANSMISSION_OR_ACT_RETAINED"
+      },
+      "institution_key": "CAJASIETE",
+      "layer": "OFFICIAL_ACT_OR_CORRESPONDENCE",
+      "linked_transport_event_ids": [],
+      "matter_references": [
+        "Sun Park / MYND Yaiza",
+        "RICPE",
+        "CNMV",
+        "Communication 6",
+        "PD-SP-SRC-0029"
+      ],
+      "office": "Cajasiete",
+      "official_reference": "Communication 6 review response",
+      "proof_level": "RETAINED_RECEIVED_EMAIL",
+      "proves": [
+        "Cajasiete's channel manager acknowledged the supplemental material, stated that it had been incorporated and did not alter the April 2026 decision, and said it remained registered with confidentiality and restricted access."
+      ],
+      "proves_es": "El gestor del canal de Cajasiete acusó recibo del material complementario, afirmó que había sido incorporado y no alteraba la decisión de abril de 2026, y dijo que permanecía registrado con confidencialidad y acceso restringido.",
+      "public_derivative_state": "PUBLIC_SAFE_MINIMISED_DERIVATIVE",
+      "public_summary": "Cajasiete stated on 18 September that the new material was incorporated and did not alter the April decision; the response remained institutionally signed and did not identify the decision owner or answer the requested conflict/audit-trail questions.",
+      "public_summary_es": "Cajasiete afirmó el 18 de septiembre que el nuevo material fue incorporado y no alteraba la decisión de abril; la respuesta siguió firmada institucionalmente y no identificó al decisor ni contestó las preguntas de conflicto/audit trail.",
+      "record_type": "INSTITUTIONAL_REVIEW_RESPONSE",
+      "source_batch_id": "PD-CAJASIETE-ACCOUNTABILITY-20260918",
+      "source_integrity": {
+        "repository_anchor": "ops/cajasiete-accountability-register-input-20260918.json",
+        "status": "RETAINED_RECEIVED_EMAIL; PUBLIC_SAFE_REVIEW_DESCRIPTOR"
+      },
+      "source_key": "CAJASIETE-ACCOUNTABILITY:C-20260918",
+      "source_timezone": "NOT_STATED; no timezone conversion inferred",
+      "transport_link_state": "SEPARATE_ACT_AND_TRANSPORT_LINKS_IN_CANONICAL_CROSSWALK"
+    },
+    {
+      "attribution_state": "NO_PERSON_ATTRIBUTED_IN_PUBLIC_REGISTER",
+      "canonical_anchor_en": "en/institutional-records/#communication-PD-SP-EVT-0181",
+      "canonical_anchor_es": "es/registros-institucionales/#communication-PD-SP-EVT-0181",
+      "channel": "REGAGE",
+      "cohort": "CURATED_SOURCE_PROVED_EVENT",
+      "criminal_responsibility_transfer": false,
+      "direction": "OUTBOUND_TO_INSTITUTION",
+      "does_not_prove": [
+        "Receipt proves registration to the stated recipient; onward delivery, association and institutional action remain unproved.",
+        "Registration does not establish downstream delivery, admission, incorporation, substantive examination, criminal responsibility or the merits of allegations."
+      ],
+      "does_not_prove_es": [
+        "No acredita entrega posterior al Decanato, asociación documental ni actuación institucional.",
+        "El registro no acredita entrega ulterior, admisión, incorporación, examen sustantivo, responsabilidad penal ni el fondo de las alegaciones."
+      ],
+      "event_date": "2026-09-20",
+      "event_id": "PD-SP-EVT-0181",
+      "evidence_state": {
+        "delivery": "NOT_ESTABLISHED_BY_RECEIPT",
+        "destination": "DESTINATION_AS_STATED_ON_RECEIPT",
+        "filing": "FORMALLY_PRESENTED_TO_STATED_REGISTRY",
+        "internal_association": "NOT_ESTABLISHED_BY_RECEIPT",
+        "merits": "NOT_ESTABLISHED_BY_RECEIPT",
+        "registration": "REGISTRATION_RECEIPT_LOCATED",
+        "substantive_examination": "NOT_ESTABLISHED_BY_RECEIPT",
+        "transmission": "OFFICIAL_REGISTRATION_RECEIPT_LOCATED"
+      },
+      "layer": "FORMAL_REGISTRATION",
+      "linked_transport_event_ids": [],
+      "matter_references": [
+        "DP 1901/2026",
+        "A01"
+      ],
+      "office": "Decanato / Registro y Reparto via DGRAJ",
+      "official_reference": "REGAGE26e00082034813",
+      "presented_local": "2026-09-20 13:51:39",
+      "proof_level": "REGISTRATION_RECEIPT_VERIFIED",
+      "proves": [
+        "Registered REGAGE26e00082034813: Onward routing to Decanato / Registro y Reparto for initiating-document, reparto and association traceability.",
+        "The receipt records presentation to the stated registry destination."
+      ],
+      "proves_es": [
+        "Registrado REGAGE26e00082034813: Remisión al Decanato / Registro y Reparto para la trazabilidad del escrito iniciador, reparto y asociación documental.",
+        "El justificante registra la presentación al destino registral indicado."
+      ],
+      "public_derivative_state": "PUBLIC_SAFE_MINIMISED_DERIVATIVE",
+      "public_summary": "Registered REGAGE26e00082034813: Onward routing to Decanato / Registro y Reparto for initiating-document, reparto and association traceability.",
+      "public_summary_es": "Registrado REGAGE26e00082034813: Remisión al Decanato / Registro y Reparto para la trazabilidad del escrito iniciador, reparto y asociación documental.",
+      "recipient_dir3": "A05003250",
+      "record_type": "REGISTRATION_RECEIPT",
+      "registration_datetime_literal": "2026-09-20 13:51:42",
+      "related_route_en": "en/dp-1901-2026/",
+      "related_route_es": "es/dp-1901-2026/",
+      "source_batch_id": "PD-DP1901-EG745-REGISTERED-20260921",
+      "source_integrity": {
+        "repository_anchor": "assets/data/dp1901-direct-action-state-20260920.json",
+        "reviewed_input": "ops/dp1901-eg745-registration-input-20260921.json",
+        "reviewed_input_sha256": "0c5954a3c8bddde6531808dc3a9d648dabec2955d3614e1b9ea482c86f9be9ea",
+        "status": "RECEIPT_VERIFIED_PUBLIC_SAFE_DERIVATIVE"
+      },
+      "source_key": "REGISTERED-20260921:REGAGE26e00082034813",
+      "source_timezone": "NOT_STATED; receipt time preserved literally without conversion",
+      "transport_link_state": "REGISTRATION_RECEIPT_SEPARATE_FROM_ANY_EMAIL_TRANSPORT"
+    },
+    {
+      "annex_count": 1,
+      "attachment_pages": 4,
+      "attribution_state": "NO_PERSON_ATTRIBUTED_IN_PUBLIC_REGISTER",
+      "canonical_anchor_en": "en/institutional-records/#communication-PD-SP-EVT-0182",
+      "canonical_anchor_es": "es/registros-institucionales/#communication-PD-SP-EVT-0182",
+      "channel": "CANARY_JUDICIAL_PORTAL",
+      "cohort": "CURATED_SOURCE_PROVED_EVENT",
+      "criminal_responsibility_transfer": false,
+      "direction": "OUTBOUND_TO_INSTITUTION",
+      "does_not_prove": [
+        "Principal receipt proves a four-page principal filing. The planned annexes were not listed there. A separate supplemental receipt records an eleven-page combined annex PDF, but supplies no document hash; byte identity is therefore not proved by that receipt.",
+        "Registration does not establish downstream delivery, admission, incorporation, substantive examination, criminal responsibility or the merits of allegations."
+      ],
+      "does_not_prove_es": [
+        "El justificante principal acredita el escrito de cuatro páginas; los anexos previstos no figuran en él. La aportación complementaria registra un PDF de once páginas sin huella documental, por lo que ese acuse no prueba identidad binaria.",
+        "El registro no acredita entrega ulterior, admisión, incorporación, examen sustantivo, responsabilidad penal ni el fondo de las alegaciones."
+      ],
+      "event_date": "2026-09-20",
+      "event_id": "PD-SP-EVT-0182",
+      "evidence_state": {
+        "delivery": "NOT_ESTABLISHED_BY_RECEIPT",
+        "destination": "DESTINATION_AS_STATED_ON_RECEIPT",
+        "filing": "FORMALLY_PRESENTED_TO_STATED_REGISTRY",
+        "internal_association": "NOT_ESTABLISHED_BY_RECEIPT",
+        "merits": "NOT_ESTABLISHED_BY_RECEIPT",
+        "registration": "REGISTRATION_RECEIPT_LOCATED",
+        "substantive_examination": "NOT_ESTABLISHED_BY_RECEIPT",
+        "transmission": "OFFICIAL_REGISTRATION_RECEIPT_LOCATED"
+      },
+      "layer": "FORMAL_REGISTRATION",
+      "linked_transport_event_ids": [],
+      "matter_references": [
+        "DP 1901/2026",
+        "A02"
+      ],
+      "office": "Plaza 6 / DP 1901/2026",
+      "official_reference": "S000000000000144968",
+      "presented_local": "2026-09-20 17:52",
+      "proof_level": "REGISTRATION_RECEIPT_VERIFIED",
+      "proves": [
+        "Registered S000000000000144968: Access and production request for docket/index, corpus, signed Fiscal report, native order and service metadata.",
+        "The receipt records presentation to the stated registry destination."
+      ],
+      "proves_es": [
+        "Registrado S000000000000144968: Acceso y obtención del índice y corpus del expediente, informe fiscal firmado, auto nativo y metadatos de notificación.",
+        "El justificante registra la presentación al destino registral indicado."
+      ],
+      "public_derivative_state": "PUBLIC_SAFE_MINIMISED_DERIVATIVE",
+      "public_summary": "Registered S000000000000144968: Access and production request for docket/index, corpus, signed Fiscal report, native order and service metadata.",
+      "public_summary_es": "Registrado S000000000000144968: Acceso y obtención del índice y corpus del expediente, informe fiscal firmado, auto nativo y metadatos de notificación.",
+      "record_type": "REGISTRATION_RECEIPT",
+      "related_route_en": "en/dp-1901-2026/",
+      "related_route_es": "es/dp-1901-2026/",
+      "source_batch_id": "PD-DP1901-EG745-REGISTERED-20260921",
+      "source_integrity": {
+        "repository_anchor": "assets/data/dp1901-direct-action-state-20260920.json",
+        "reviewed_input": "ops/dp1901-eg745-registration-input-20260921.json",
+        "reviewed_input_sha256": "0c5954a3c8bddde6531808dc3a9d648dabec2955d3614e1b9ea482c86f9be9ea",
+        "status": "RECEIPT_VERIFIED_PUBLIC_SAFE_DERIVATIVE"
+      },
+      "source_key": "REGISTERED-20260921:S000000000000144968",
+      "source_timezone": "NOT_STATED; receipt time preserved literally without conversion",
+      "transport_link_state": "REGISTRATION_RECEIPT_SEPARATE_FROM_ANY_EMAIL_TRANSPORT"
+    },
+    {
+      "annex_count": 1,
+      "attachment_pages": 11,
+      "attribution_state": "NO_PERSON_ATTRIBUTED_IN_PUBLIC_REGISTER",
+      "canonical_anchor_en": "en/institutional-records/#communication-PD-SP-EVT-0183",
+      "canonical_anchor_es": "es/registros-institucionales/#communication-PD-SP-EVT-0183",
+      "channel": "CANARY_JUDICIAL_PORTAL",
+      "cohort": "CURATED_SOURCE_PROVED_EVENT",
+      "criminal_responsibility_transfer": false,
+      "direction": "OUTBOUND_TO_INSTITUTION",
+      "does_not_prove": [
+        "Principal receipt proves a four-page principal filing. The planned annexes were not listed there. A separate supplemental receipt records an eleven-page combined annex PDF, but supplies no document hash; byte identity is therefore not proved by that receipt.",
+        "Registration does not establish downstream delivery, admission, incorporation, substantive examination, criminal responsibility or the merits of allegations."
+      ],
+      "does_not_prove_es": [
+        "El justificante principal acredita el escrito de cuatro páginas; los anexos previstos no figuran en él. La aportación complementaria registra un PDF de once páginas sin huella documental, por lo que ese acuse no prueba identidad binaria.",
+        "El registro no acredita entrega ulterior, admisión, incorporación, examen sustantivo, responsabilidad penal ni el fondo de las alegaciones."
+      ],
+      "event_date": "2026-09-20",
+      "event_id": "PD-SP-EVT-0183",
+      "evidence_state": {
+        "delivery": "NOT_ESTABLISHED_BY_RECEIPT",
+        "destination": "DESTINATION_AS_STATED_ON_RECEIPT",
+        "filing": "FORMALLY_PRESENTED_TO_STATED_REGISTRY",
+        "internal_association": "NOT_ESTABLISHED_BY_RECEIPT",
+        "merits": "NOT_ESTABLISHED_BY_RECEIPT",
+        "registration": "REGISTRATION_RECEIPT_LOCATED",
+        "substantive_examination": "NOT_ESTABLISHED_BY_RECEIPT",
+        "transmission": "OFFICIAL_REGISTRATION_RECEIPT_LOCATED"
+      },
+      "layer": "FORMAL_REGISTRATION",
+      "linked_principal_registration": "S000000000000144968",
+      "linked_transport_event_ids": [],
+      "matter_references": [
+        "DP 1901/2026",
+        "A02"
+      ],
+      "office": "Plaza 6 / DP 1901/2026",
+      "official_reference": "S000000000000144972",
+      "presented_local": "2026-09-20 18:07",
+      "proof_level": "REGISTRATION_RECEIPT_VERIFIED",
+      "proves": [
+        "Registered S000000000000144972: Separate supplemental filing of the combined annex PDF for the A02 access and production request.",
+        "The receipt records presentation to the stated registry destination."
+      ],
+      "proves_es": [
+        "Registrado S000000000000144972: Aportación complementaria separada del PDF combinado de anexos de la petición A02 de acceso y obtención documental.",
+        "El justificante registra la presentación al destino registral indicado."
+      ],
+      "public_derivative_state": "PUBLIC_SAFE_MINIMISED_DERIVATIVE",
+      "public_summary": "Registered S000000000000144972: Separate supplemental filing of the combined annex PDF for the A02 access and production request.",
+      "public_summary_es": "Registrado S000000000000144972: Aportación complementaria separada del PDF combinado de anexos de la petición A02 de acceso y obtención documental.",
+      "record_type": "REGISTRATION_RECEIPT",
+      "related_route_en": "en/dp-1901-2026/",
+      "related_route_es": "es/dp-1901-2026/",
+      "source_batch_id": "PD-DP1901-EG745-REGISTERED-20260921",
+      "source_integrity": {
+        "repository_anchor": "assets/data/dp1901-direct-action-state-20260920.json",
+        "reviewed_input": "ops/dp1901-eg745-registration-input-20260921.json",
+        "reviewed_input_sha256": "0c5954a3c8bddde6531808dc3a9d648dabec2955d3614e1b9ea482c86f9be9ea",
+        "status": "RECEIPT_VERIFIED_PUBLIC_SAFE_DERIVATIVE"
+      },
+      "source_key": "REGISTERED-20260921:S000000000000144972",
+      "source_timezone": "NOT_STATED; receipt time preserved literally without conversion",
+      "transport_link_state": "REGISTRATION_RECEIPT_SEPARATE_FROM_ANY_EMAIL_TRANSPORT"
+    },
+    {
+      "attribution_state": "NO_PERSON_ATTRIBUTED_IN_PUBLIC_REGISTER",
+      "canonical_anchor_en": "en/institutional-records/#communication-PD-SP-EVT-0184",
+      "canonical_anchor_es": "es/registros-institucionales/#communication-PD-SP-EVT-0184",
+      "channel": "REGAGE",
+      "cohort": "CURATED_SOURCE_PROVED_EVENT",
+      "criminal_responsibility_transfer": false,
+      "direction": "OUTBOUND_TO_INSTITUTION",
+      "does_not_prove": [
+        "Receipt proves registration; classification, admission, examination and action remain unproved.",
+        "Registration does not establish downstream delivery, admission, incorporation, substantive examination, criminal responsibility or the merits of allegations."
+      ],
+      "does_not_prove_es": [
+        "No acredita clasificación, admisión, examen ni actuación.",
+        "El registro no acredita entrega ulterior, admisión, incorporación, examen sustantivo, responsabilidad penal ni el fondo de las alegaciones."
+      ],
+      "event_date": "2026-09-20",
+      "event_id": "PD-SP-EVT-0184",
+      "evidence_state": {
+        "delivery": "NOT_ESTABLISHED_BY_RECEIPT",
+        "destination": "DESTINATION_AS_STATED_ON_RECEIPT",
+        "filing": "FORMALLY_PRESENTED_TO_STATED_REGISTRY",
+        "internal_association": "NOT_ESTABLISHED_BY_RECEIPT",
+        "merits": "NOT_ESTABLISHED_BY_RECEIPT",
+        "registration": "REGISTRATION_RECEIPT_LOCATED",
+        "substantive_examination": "NOT_ESTABLISHED_BY_RECEIPT",
+        "transmission": "OFFICIAL_REGISTRATION_RECEIPT_LOCATED"
+      },
+      "layer": "FORMAL_REGISTRATION",
+      "linked_transport_event_ids": [],
+      "matter_references": [
+        "DP 1901/2026",
+        "A03"
+      ],
+      "office": "CGPJ — Alzada 286/2026",
+      "official_reference": "REGAGE26e00082030716",
+      "presented_local": "2026-09-20 12:32:17",
+      "proof_level": "REGISTRATION_RECEIPT_VERIFIED",
+      "proves": [
+        "Registered REGAGE26e00082030716: Supervening fact, preservation and functional classification.",
+        "The receipt records presentation to the stated registry destination."
+      ],
+      "proves_es": [
+        "Registrado REGAGE26e00082030716: Hecho sobrevenido, conservación y clasificación funcional en la alzada 286/2026.",
+        "El justificante registra la presentación al destino registral indicado."
+      ],
+      "public_derivative_state": "PUBLIC_SAFE_MINIMISED_DERIVATIVE",
+      "public_summary": "Registered REGAGE26e00082030716: Supervening fact, preservation and functional classification.",
+      "public_summary_es": "Registrado REGAGE26e00082030716: Hecho sobrevenido, conservación y clasificación funcional en la alzada 286/2026.",
+      "recipient_dir3": "I00005220",
+      "record_type": "REGISTRATION_RECEIPT",
+      "registration_datetime_literal": "2026-09-20 12:32:19",
+      "related_route_en": "en/dp-1901-2026/",
+      "related_route_es": "es/dp-1901-2026/",
+      "source_batch_id": "PD-DP1901-EG745-REGISTERED-20260921",
+      "source_integrity": {
+        "repository_anchor": "assets/data/dp1901-direct-action-state-20260920.json",
+        "reviewed_input": "ops/dp1901-eg745-registration-input-20260921.json",
+        "reviewed_input_sha256": "0c5954a3c8bddde6531808dc3a9d648dabec2955d3614e1b9ea482c86f9be9ea",
+        "status": "RECEIPT_VERIFIED_PUBLIC_SAFE_DERIVATIVE"
+      },
+      "source_key": "REGISTERED-20260921:REGAGE26e00082030716",
+      "source_timezone": "NOT_STATED; receipt time preserved literally without conversion",
+      "transport_link_state": "REGISTRATION_RECEIPT_SEPARATE_FROM_ANY_EMAIL_TRANSPORT"
+    },
+    {
+      "attribution_state": "NO_PERSON_ATTRIBUTED_IN_PUBLIC_REGISTER",
+      "canonical_anchor_en": "en/institutional-records/#communication-PD-SP-EVT-0185",
+      "canonical_anchor_es": "es/registros-institucionales/#communication-PD-SP-EVT-0185",
+      "channel": "REGAGE",
+      "cohort": "CURATED_SOURCE_PROVED_EVENT",
+      "criminal_responsibility_transfer": false,
+      "direction": "OUTBOUND_TO_INSTITUTION",
+      "does_not_prove": [
+        "Receipt proves registration; transmission, incorporation, examination and action remain unproved.",
+        "Registration does not establish downstream delivery, admission, incorporation, substantive examination, criminal responsibility or the merits of allegations."
+      ],
+      "does_not_prove_es": [
+        "No acredita transmisión ulterior, incorporación, examen ni actuación.",
+        "El registro no acredita entrega ulterior, admisión, incorporación, examen sustantivo, responsabilidad penal ni el fondo de las alegaciones."
+      ],
+      "event_date": "2026-09-20",
+      "event_id": "PD-SP-EVT-0185",
+      "evidence_state": {
+        "delivery": "NOT_ESTABLISHED_BY_RECEIPT",
+        "destination": "DESTINATION_AS_STATED_ON_RECEIPT",
+        "filing": "FORMALLY_PRESENTED_TO_STATED_REGISTRY",
+        "internal_association": "NOT_ESTABLISHED_BY_RECEIPT",
+        "merits": "NOT_ESTABLISHED_BY_RECEIPT",
+        "registration": "REGISTRATION_RECEIPT_LOCATED",
+        "substantive_examination": "NOT_ESTABLISHED_BY_RECEIPT",
+        "transmission": "OFFICIAL_REGISTRATION_RECEIPT_LOCATED"
+      },
+      "layer": "FORMAL_REGISTRATION",
+      "linked_transport_event_ids": [],
+      "matter_references": [
+        "DP 1901/2026",
+        "A04"
+      ],
+      "office": "Secretaría de Gobierno del TSJC",
+      "official_reference": "REGAGE26e00082039117",
+      "presented_local": "2026-09-20 15:35:50",
+      "proof_level": "REGISTRATION_RECEIPT_VERIFIED",
+      "proves": [
+        "Registered REGAGE26e00082039117: Territorial Office-of-Justice supervision and traceability in Exp.Gub.38/2026.",
+        "The receipt records presentation to the stated registry destination."
+      ],
+      "proves_es": [
+        "Registrado REGAGE26e00082039117: Supervisión territorial de la oficina judicial y trazabilidad en Exp.Gub.38/2026.",
+        "El justificante registra la presentación al destino registral indicado."
+      ],
+      "public_derivative_state": "PUBLIC_SAFE_MINIMISED_DERIVATIVE",
+      "public_summary": "Registered REGAGE26e00082039117: Territorial Office-of-Justice supervision and traceability in Exp.Gub.38/2026.",
+      "public_summary_es": "Registrado REGAGE26e00082039117: Supervisión territorial de la oficina judicial y trazabilidad en Exp.Gub.38/2026.",
+      "recipient_dir3": "J00023418",
+      "record_type": "REGISTRATION_RECEIPT",
+      "registration_datetime_literal": "2026-09-20 15:35:59",
+      "related_route_en": "en/dp-1901-2026/",
+      "related_route_es": "es/dp-1901-2026/",
+      "source_batch_id": "PD-DP1901-EG745-REGISTERED-20260921",
+      "source_integrity": {
+        "repository_anchor": "assets/data/dp1901-direct-action-state-20260920.json",
+        "reviewed_input": "ops/dp1901-eg745-registration-input-20260921.json",
+        "reviewed_input_sha256": "0c5954a3c8bddde6531808dc3a9d648dabec2955d3614e1b9ea482c86f9be9ea",
+        "status": "RECEIPT_VERIFIED_PUBLIC_SAFE_DERIVATIVE"
+      },
+      "source_key": "REGISTERED-20260921:REGAGE26e00082039117",
+      "source_timezone": "NOT_STATED; receipt time preserved literally without conversion",
+      "transport_link_state": "REGISTRATION_RECEIPT_SEPARATE_FROM_ANY_EMAIL_TRANSPORT"
+    },
+    {
+      "attribution_state": "NO_PERSON_ATTRIBUTED_IN_PUBLIC_REGISTER",
+      "canonical_anchor_en": "en/institutional-records/#communication-PD-SP-EVT-0186",
+      "canonical_anchor_es": "es/registros-institucionales/#communication-PD-SP-EVT-0186",
+      "channel": "REGAGE",
+      "cohort": "CURATED_SOURCE_PROVED_EVENT",
+      "criminal_responsibility_transfer": false,
+      "direction": "OUTBOUND_TO_INSTITUTION",
+      "does_not_prove": [
+        "Receipt proves registration; the separately authorised email follow-up is supplementary and does not change filing proof.",
+        "Registration does not establish downstream delivery, admission, incorporation, substantive examination, criminal responsibility or the merits of allegations."
+      ],
+      "does_not_prove_es": [
+        "El seguimiento por correo es complementario y no modifica la prueba registral.",
+        "El registro no acredita entrega ulterior, admisión, incorporación, examen sustantivo, responsabilidad penal ni el fondo de las alegaciones."
+      ],
+      "event_date": "2026-09-20",
+      "event_id": "PD-SP-EVT-0186",
+      "evidence_state": {
+        "delivery": "NOT_ESTABLISHED_BY_RECEIPT",
+        "destination": "DESTINATION_AS_STATED_ON_RECEIPT",
+        "filing": "FORMALLY_PRESENTED_TO_STATED_REGISTRY",
+        "internal_association": "NOT_ESTABLISHED_BY_RECEIPT",
+        "merits": "NOT_ESTABLISHED_BY_RECEIPT",
+        "registration": "REGISTRATION_RECEIPT_LOCATED",
+        "substantive_examination": "NOT_ESTABLISHED_BY_RECEIPT",
+        "transmission": "OFFICIAL_REGISTRATION_RECEIPT_LOCATED"
+      },
+      "layer": "FORMAL_REGISTRATION",
+      "linked_transport_event_ids": [],
+      "matter_references": [
+        "DP 1901/2026",
+        "A05"
+      ],
+      "office": "Coordinación Provincial de LAJ",
+      "official_reference": "REGAGE26e00082040006",
+      "presented_local": "2026-09-20 15:58:54",
+      "proof_level": "REGISTRATION_RECEIPT_VERIFIED",
+      "proves": [
+        "Registered REGAGE26e00082040006: Identification and coordination of services that received, digitised and routed the material.",
+        "The receipt records presentation to the stated registry destination."
+      ],
+      "proves_es": [
+        "Registrado REGAGE26e00082040006: Identificación y coordinación de los servicios que recibieron, digitalizaron y remitieron el material.",
+        "El justificante registra la presentación al destino registral indicado."
+      ],
+      "public_derivative_state": "PUBLIC_SAFE_MINIMISED_DERIVATIVE",
+      "public_summary": "Registered REGAGE26e00082040006: Identification and coordination of services that received, digitised and routed the material.",
+      "public_summary_es": "Registrado REGAGE26e00082040006: Identificación y coordinación de los servicios que recibieron, digitalizaron y remitieron el material.",
+      "recipient_dir3": "J00022837",
+      "record_type": "REGISTRATION_RECEIPT",
+      "registration_datetime_literal": "2026-09-20 15:58:57",
+      "related_route_en": "en/dp-1901-2026/",
+      "related_route_es": "es/dp-1901-2026/",
+      "source_batch_id": "PD-DP1901-EG745-REGISTERED-20260921",
+      "source_integrity": {
+        "repository_anchor": "assets/data/dp1901-direct-action-state-20260920.json",
+        "reviewed_input": "ops/dp1901-eg745-registration-input-20260921.json",
+        "reviewed_input_sha256": "0c5954a3c8bddde6531808dc3a9d648dabec2955d3614e1b9ea482c86f9be9ea",
+        "status": "RECEIPT_VERIFIED_PUBLIC_SAFE_DERIVATIVE"
+      },
+      "source_key": "REGISTERED-20260921:REGAGE26e00082040006",
+      "source_timezone": "NOT_STATED; receipt time preserved literally without conversion",
+      "transport_link_state": "REGISTRATION_RECEIPT_SEPARATE_FROM_ANY_EMAIL_TRANSPORT"
+    },
+    {
+      "annex_count": 4,
+      "attachment_pages": 45,
+      "attribution_state": "NO_PERSON_ATTRIBUTED_IN_PUBLIC_REGISTER",
+      "canonical_anchor_en": "en/institutional-records/#communication-PD-SP-EVT-0187",
+      "canonical_anchor_es": "es/registros-institucionales/#communication-PD-SP-EVT-0187",
+      "channel": "REGAGE",
+      "cohort": "CURATED_SOURCE_PROVED_EVENT",
+      "criminal_responsibility_transfer": false,
+      "direction": "OUTBOUND_TO_INSTITUTION",
+      "does_not_prove": [
+        "Receipt proves registration and all four attachment hashes: forty-five pages. The earlier rejected attempt remains disclosed. Substantive admission, incorporation, preservation and response remain unproved; this receipt does not prove registration of a separate earlier national alzada.",
+        "Registration does not establish downstream delivery, admission, incorporation, substantive examination, criminal responsibility or the merits of allegations."
+      ],
+      "does_not_prove_es": [
+        "El rechazo anterior sigue documentado. No acredita admisión sustantiva, incorporación, conservación, respuesta ni presentación de una alzada nacional anterior distinta.",
+        "El registro no acredita entrega ulterior, admisión, incorporación, examen sustantivo, responsabilidad penal ni el fondo de las alegaciones."
+      ],
+      "event_date": "2026-09-20",
+      "event_id": "PD-SP-EVT-0187",
+      "evidence_state": {
+        "delivery": "NOT_ESTABLISHED_BY_RECEIPT",
+        "destination": "DESTINATION_AS_STATED_ON_RECEIPT",
+        "filing": "FORMALLY_PRESENTED_TO_STATED_REGISTRY",
+        "internal_association": "NOT_ESTABLISHED_BY_RECEIPT",
+        "merits": "NOT_ESTABLISHED_BY_RECEIPT",
+        "registration": "REGISTRATION_RECEIPT_LOCATED",
+        "substantive_examination": "NOT_ESTABLISHED_BY_RECEIPT",
+        "transmission": "OFFICIAL_REGISTRATION_RECEIPT_LOCATED"
+      },
+      "layer": "FORMAL_REGISTRATION",
+      "linked_transport_event_ids": [],
+      "matter_references": [
+        "DP 1901/2026",
+        "A06"
+      ],
+      "office": "Secretaría General para la Innovación y Calidad del Servicio Público de Justicia",
+      "official_reference": "REGAGE26e00082058165",
+      "presented_local": "2026-09-20 21:19:02",
+      "prior_rejected_reference": "REGAGE26e00073341477",
+      "proof_level": "REGISTRATION_RECEIPT_AND_ATTACHMENT_HASHES_VERIFIED",
+      "proves": [
+        "Registered REGAGE26e00082058165: National supervisory incorporation within lawful competence.",
+        "The receipt records presentation to the stated registry destination.",
+        "The listed attachment fingerprints match the retained submitted files."
+      ],
+      "proves_es": [
+        "Registrado REGAGE26e00082058165: Incorporación para supervisión nacional dentro de las competencias legalmente atribuidas; consta el intento previo rechazado.",
+        "El justificante registra la presentación al destino registral indicado.",
+        "Las huellas de los anexos indicados coinciden con los archivos presentados conservados."
+      ],
+      "public_derivative_state": "PUBLIC_SAFE_MINIMISED_DERIVATIVE",
+      "public_summary": "Registered REGAGE26e00082058165: National supervisory incorporation within lawful competence.",
+      "public_summary_es": "Registrado REGAGE26e00082058165: Incorporación para supervisión nacional dentro de las competencias legalmente atribuidas; consta el intento previo rechazado.",
+      "recipient_dir3": "E05077001",
+      "record_type": "REGISTRATION_RECEIPT",
+      "registration_datetime_literal": "2026-09-20 21:19:12",
+      "related_route_en": "en/dp-1901-2026/",
+      "related_route_es": "es/dp-1901-2026/",
+      "source_batch_id": "PD-DP1901-EG745-REGISTERED-20260921",
+      "source_integrity": {
+        "controlling_source_pdf_sha256": "554f1f48ef3d402bdf00836a1e846aafdd930c6518acd2641ebd6c5753ede3cf",
+        "repository_anchor": "assets/data/dp1901-direct-action-state-20260920.json",
+        "reviewed_input": "ops/dp1901-eg745-registration-input-20260921.json",
+        "reviewed_input_sha256": "0c5954a3c8bddde6531808dc3a9d648dabec2955d3614e1b9ea482c86f9be9ea",
+        "status": "RECEIPT_VERIFIED_PUBLIC_SAFE_DERIVATIVE"
+      },
+      "source_key": "REGISTERED-20260921:REGAGE26e00082058165",
+      "source_timezone": "NOT_STATED; receipt time preserved literally without conversion",
+      "transport_link_state": "REGISTRATION_RECEIPT_SEPARATE_FROM_ANY_EMAIL_TRANSPORT"
+    },
+    {
+      "attribution_state": "NO_PERSON_ATTRIBUTED_IN_PUBLIC_REGISTER",
+      "canonical_anchor_en": "en/institutional-records/#communication-PD-SP-EVT-0188",
+      "canonical_anchor_es": "es/registros-institucionales/#communication-PD-SP-EVT-0188",
+      "channel": "REGAGE",
+      "cohort": "CURATED_SOURCE_PROVED_EVENT",
+      "criminal_responsibility_transfer": false,
+      "direction": "OUTBOUND_TO_INSTITUTION",
+      "does_not_prove": [
+        "Receipt proves registration; preservation, production and technical findings remain unproved.",
+        "Registration does not establish downstream delivery, admission, incorporation, substantive examination, criminal responsibility or the merits of allegations."
+      ],
+      "does_not_prove_es": [
+        "No acredita conservación, entrega de documentos ni conclusiones técnicas.",
+        "El registro no acredita entrega ulterior, admisión, incorporación, examen sustantivo, responsabilidad penal ni el fondo de las alegaciones."
+      ],
+      "event_date": "2026-09-20",
+      "event_id": "PD-SP-EVT-0188",
+      "evidence_state": {
+        "delivery": "NOT_ESTABLISHED_BY_RECEIPT",
+        "destination": "DESTINATION_AS_STATED_ON_RECEIPT",
+        "filing": "FORMALLY_PRESENTED_TO_STATED_REGISTRY",
+        "internal_association": "NOT_ESTABLISHED_BY_RECEIPT",
+        "merits": "NOT_ESTABLISHED_BY_RECEIPT",
+        "registration": "REGISTRATION_RECEIPT_LOCATED",
+        "substantive_examination": "NOT_ESTABLISHED_BY_RECEIPT",
+        "transmission": "OFFICIAL_REGISTRATION_RECEIPT_LOCATED"
+      },
+      "layer": "FORMAL_REGISTRATION",
+      "linked_transport_event_ids": [],
+      "matter_references": [
+        "DP 1901/2026",
+        "A07"
+      ],
+      "office": "Canary Justice Administration / ATLANTE",
+      "official_reference": "REGAGE26e00082038176",
+      "presented_local": "2026-09-20 15:13:38",
+      "proof_level": "REGISTRATION_RECEIPT_VERIFIED",
+      "proves": [
+        "Registered REGAGE26e00082038176: Technical custody, log preservation and clarification of documented incidents.",
+        "The receipt records presentation to the stated registry destination."
+      ],
+      "proves_es": [
+        "Registrado REGAGE26e00082038176: Custodia técnica, conservación de registros y aclaración de incidencias documentadas en ATLANTE.",
+        "El justificante registra la presentación al destino registral indicado."
+      ],
+      "public_derivative_state": "PUBLIC_SAFE_MINIMISED_DERIVATIVE",
+      "public_summary": "Registered REGAGE26e00082038176: Technical custody, log preservation and clarification of documented incidents.",
+      "public_summary_es": "Registrado REGAGE26e00082038176: Custodia técnica, conservación de registros y aclaración de incidencias documentadas en ATLANTE.",
+      "recipient_dir3": "A05003250",
+      "record_type": "REGISTRATION_RECEIPT",
+      "registration_datetime_literal": "2026-09-20 15:13:55",
+      "related_route_en": "en/dp-1901-2026/",
+      "related_route_es": "es/dp-1901-2026/",
+      "source_batch_id": "PD-DP1901-EG745-REGISTERED-20260921",
+      "source_integrity": {
+        "repository_anchor": "assets/data/dp1901-direct-action-state-20260920.json",
+        "reviewed_input": "ops/dp1901-eg745-registration-input-20260921.json",
+        "reviewed_input_sha256": "0c5954a3c8bddde6531808dc3a9d648dabec2955d3614e1b9ea482c86f9be9ea",
+        "status": "RECEIPT_VERIFIED_PUBLIC_SAFE_DERIVATIVE"
+      },
+      "source_key": "REGISTERED-20260921:REGAGE26e00082038176",
+      "source_timezone": "NOT_STATED; receipt time preserved literally without conversion",
+      "transport_link_state": "REGISTRATION_RECEIPT_SEPARATE_FROM_ANY_EMAIL_TRANSPORT"
+    },
+    {
+      "annex_count": 4,
+      "attribution_state": "NO_PERSON_ATTRIBUTED_IN_PUBLIC_REGISTER",
+      "canonical_anchor_en": "en/institutional-records/#communication-PD-SP-EVT-0189",
+      "canonical_anchor_es": "es/registros-institucionales/#communication-PD-SP-EVT-0189",
+      "channel": "REGAGE",
+      "cohort": "CURATED_SOURCE_PROVED_EVENT",
+      "criminal_responsibility_transfer": false,
+      "direction": "OUTBOUND_TO_INSTITUTION",
+      "does_not_prove": [
+        "Receipt proves registration and the four attachment hashes. Authorship, allocation, corpus location and institutional action remain unproved.",
+        "Registration does not establish downstream delivery, admission, incorporation, substantive examination, criminal responsibility or the merits of allegations."
+      ],
+      "does_not_prove_es": [
+        "La autoría, asignación, localización del corpus y actuación institucional siguen sin acreditarse.",
+        "El registro no acredita entrega ulterior, admisión, incorporación, examen sustantivo, responsabilidad penal ni el fondo de las alegaciones."
+      ],
+      "event_date": "2026-09-20",
+      "event_id": "PD-SP-EVT-0189",
+      "evidence_state": {
+        "delivery": "NOT_ESTABLISHED_BY_RECEIPT",
+        "destination": "DESTINATION_AS_STATED_ON_RECEIPT",
+        "filing": "FORMALLY_PRESENTED_TO_STATED_REGISTRY",
+        "internal_association": "NOT_ESTABLISHED_BY_RECEIPT",
+        "merits": "NOT_ESTABLISHED_BY_RECEIPT",
+        "registration": "REGISTRATION_RECEIPT_LOCATED",
+        "substantive_examination": "NOT_ESTABLISHED_BY_RECEIPT",
+        "transmission": "OFFICIAL_REGISTRATION_RECEIPT_LOCATED"
+      },
+      "layer": "FORMAL_REGISTRATION",
+      "linked_transport_event_ids": [],
+      "matter_references": [
+        "DP 1901/2026",
+        "A08"
+      ],
+      "office": "Fiscalía Provincial de Las Palmas",
+      "official_reference": "REGAGE26e00082044751",
+      "presented_local": "2026-09-20 17:52:59",
+      "proof_level": "REGISTRATION_RECEIPT_AND_ATTACHMENT_HASHES_VERIFIED",
+      "proves": [
+        "Registered REGAGE26e00082044751: Bounded custody/allocation search for the 29 July report, author, assignment and corpus; no Provincial authorship is presumed.",
+        "The receipt records presentation to the stated registry destination.",
+        "The listed attachment fingerprints match the retained submitted files."
+      ],
+      "proves_es": [
+        "Registrado REGAGE26e00082044751: Búsqueda delimitada de custodia y asignación del informe de 29 de julio, su autor y corpus; no se presume autoría provincial.",
+        "El justificante registra la presentación al destino registral indicado.",
+        "Las huellas de los anexos indicados coinciden con los archivos presentados conservados."
+      ],
+      "public_derivative_state": "PUBLIC_SAFE_MINIMISED_DERIVATIVE",
+      "public_summary": "Registered REGAGE26e00082044751: Bounded custody/allocation search for the 29 July report, author, assignment and corpus; no Provincial authorship is presumed.",
+      "public_summary_es": "Registrado REGAGE26e00082044751: Búsqueda delimitada de custodia y asignación del informe de 29 de julio, su autor y corpus; no se presume autoría provincial.",
+      "recipient_dir3": "J00001657",
+      "record_type": "REGISTRATION_RECEIPT",
+      "registration_datetime_literal": "2026-09-20 17:53:02",
+      "related_route_en": "en/dp-1901-2026/",
+      "related_route_es": "es/dp-1901-2026/",
+      "source_batch_id": "PD-DP1901-EG745-REGISTERED-20260921",
+      "source_integrity": {
+        "repository_anchor": "assets/data/dp1901-direct-action-state-20260920.json",
+        "reviewed_input": "ops/dp1901-eg745-registration-input-20260921.json",
+        "reviewed_input_sha256": "0c5954a3c8bddde6531808dc3a9d648dabec2955d3614e1b9ea482c86f9be9ea",
+        "status": "RECEIPT_VERIFIED_PUBLIC_SAFE_DERIVATIVE"
+      },
+      "source_key": "REGISTERED-20260921:REGAGE26e00082044751",
+      "source_timezone": "NOT_STATED; receipt time preserved literally without conversion",
+      "transport_link_state": "REGISTRATION_RECEIPT_SEPARATE_FROM_ANY_EMAIL_TRANSPORT"
+    },
+    {
+      "attribution_state": "NO_PERSON_ATTRIBUTED_IN_PUBLIC_REGISTER",
+      "canonical_anchor_en": "en/institutional-records/#communication-PD-SP-EVT-0190",
+      "canonical_anchor_es": "es/registros-institucionales/#communication-PD-SP-EVT-0190",
+      "channel": "REGAGE",
+      "cohort": "CURATED_SOURCE_PROVED_EVENT",
+      "criminal_responsibility_transfer": false,
+      "direction": "OUTBOUND_TO_INSTITUTION",
+      "does_not_prove": [
+        "One action only: duplicate private receipt copies do not create a second filing. Registration does not prove examination or action.",
+        "Registration does not establish downstream delivery, admission, incorporation, substantive examination, criminal responsibility or the merits of allegations."
+      ],
+      "does_not_prove_es": [
+        "Una sola actuación; copias privadas duplicadas del acuse no crean una segunda presentación. No acredita examen ni actuación.",
+        "El registro no acredita entrega ulterior, admisión, incorporación, examen sustantivo, responsabilidad penal ni el fondo de las alegaciones."
+      ],
+      "event_date": "2026-09-20",
+      "event_id": "PD-SP-EVT-0190",
+      "evidence_state": {
+        "delivery": "NOT_ESTABLISHED_BY_RECEIPT",
+        "destination": "DESTINATION_AS_STATED_ON_RECEIPT",
+        "filing": "FORMALLY_PRESENTED_TO_STATED_REGISTRY",
+        "internal_association": "NOT_ESTABLISHED_BY_RECEIPT",
+        "merits": "NOT_ESTABLISHED_BY_RECEIPT",
+        "registration": "REGISTRATION_RECEIPT_LOCATED",
+        "substantive_examination": "NOT_ESTABLISHED_BY_RECEIPT",
+        "transmission": "OFFICIAL_REGISTRATION_RECEIPT_LOCATED"
+      },
+      "layer": "FORMAL_REGISTRATION",
+      "linked_transport_event_ids": [],
+      "matter_references": [
+        "DP 1901/2026",
+        "A09"
+      ],
+      "office": "Fiscal Superior de Canarias",
+      "official_reference": "REGAGE26e00082032153",
+      "presented_local": "2026-09-20 13:01:40",
+      "proof_level": "REGISTRATION_RECEIPT_VERIFIED",
+      "proves": [
+        "Registered REGAGE26e00082032153: Territorial competence, attribution, DIP 2/2026 and preservation review.",
+        "The receipt records presentation to the stated registry destination."
+      ],
+      "proves_es": [
+        "Registrado REGAGE26e00082032153: Revisión de competencia territorial, atribución, DIP 2/2026 y conservación.",
+        "El justificante registra la presentación al destino registral indicado."
+      ],
+      "public_derivative_state": "PUBLIC_SAFE_MINIMISED_DERIVATIVE",
+      "public_summary": "Registered REGAGE26e00082032153: Territorial competence, attribution, DIP 2/2026 and preservation review.",
+      "public_summary_es": "Registrado REGAGE26e00082032153: Revisión de competencia territorial, atribución, DIP 2/2026 y conservación.",
+      "recipient_dir3": "J00015401",
+      "record_type": "REGISTRATION_RECEIPT",
+      "registration_datetime_literal": "2026-09-20 13:01:52",
+      "related_route_en": "en/dp-1901-2026/",
+      "related_route_es": "es/dp-1901-2026/",
+      "source_batch_id": "PD-DP1901-EG745-REGISTERED-20260921",
+      "source_integrity": {
+        "repository_anchor": "assets/data/dp1901-direct-action-state-20260920.json",
+        "reviewed_input": "ops/dp1901-eg745-registration-input-20260921.json",
+        "reviewed_input_sha256": "0c5954a3c8bddde6531808dc3a9d648dabec2955d3614e1b9ea482c86f9be9ea",
+        "status": "RECEIPT_VERIFIED_PUBLIC_SAFE_DERIVATIVE"
+      },
+      "source_key": "REGISTERED-20260921:REGAGE26e00082032153",
+      "source_timezone": "NOT_STATED; receipt time preserved literally without conversion",
+      "transport_link_state": "REGISTRATION_RECEIPT_SEPARATE_FROM_ANY_EMAIL_TRANSPORT"
+    },
+    {
+      "attribution_state": "NO_PERSON_ATTRIBUTED_IN_PUBLIC_REGISTER",
+      "canonical_anchor_en": "en/institutional-records/#communication-PD-SP-EVT-0199",
+      "canonical_anchor_es": "es/registros-institucionales/#communication-PD-SP-EVT-0199",
+      "channel": "REGAGE",
+      "cohort": "CURATED_SOURCE_PROVED_EVENT",
+      "criminal_responsibility_transfer": false,
+      "direction": "OUTBOUND_TO_INSTITUTION",
+      "does_not_prove": [
+        "Not the separate substantive E.G.745 response. Receipt proves registration only.",
+        "Registration does not establish downstream delivery, admission, incorporation, substantive examination, criminal responsibility or the merits of allegations."
+      ],
+      "does_not_prove_es": [
+        "No equivale al recurso sustantivo separado de E.G.745; solo acredita registro.",
+        "El registro no acredita entrega ulterior, admisión, incorporación, examen sustantivo, responsabilidad penal ni el fondo de las alegaciones."
+      ],
+      "event_date": "2026-09-20",
+      "event_id": "PD-SP-EVT-0199",
+      "evidence_state": {
+        "delivery": "NOT_ESTABLISHED_BY_RECEIPT",
+        "destination": "DESTINATION_AS_STATED_ON_RECEIPT",
+        "filing": "FORMALLY_PRESENTED_TO_STATED_REGISTRY",
+        "internal_association": "NOT_ESTABLISHED_BY_RECEIPT",
+        "merits": "NOT_ESTABLISHED_BY_RECEIPT",
+        "registration": "REGISTRATION_RECEIPT_LOCATED",
+        "substantive_examination": "NOT_ESTABLISHED_BY_RECEIPT",
+        "transmission": "OFFICIAL_REGISTRATION_RECEIPT_LOCATED"
+      },
+      "layer": "FORMAL_REGISTRATION",
+      "linked_transport_event_ids": [],
+      "matter_references": [
+        "DP 1901/2026",
+        "A10",
+        "E.G.745/2026"
+      ],
+      "office": "FGE / Inspección Fiscal",
+      "official_reference": "REGAGE26e00082033336",
+      "presented_local": "2026-09-20 13:25:00",
+      "proof_level": "REGISTRATION_RECEIPT_VERIFIED",
+      "proves": [
+        "Registered REGAGE26e00082033336: Limited incorporation and preservation of a supervening DP1901 fact in E.G.745.",
+        "The receipt records presentation to the stated registry destination."
+      ],
+      "proves_es": [
+        "Registrado REGAGE26e00082033336: Incorporación limitada y conservación del hecho sobrevenido de DP1901 en E.G.745; distinta del recurso sustantivo de 21 de septiembre.",
+        "El justificante registra la presentación al destino registral indicado."
+      ],
+      "public_derivative_state": "PUBLIC_SAFE_MINIMISED_DERIVATIVE",
+      "public_summary": "Registered REGAGE26e00082033336: Limited incorporation and preservation of a supervening DP1901 fact in E.G.745.",
+      "public_summary_es": "Registrado REGAGE26e00082033336: Incorporación limitada y conservación del hecho sobrevenido de DP1901 en E.G.745; distinta del recurso sustantivo de 21 de septiembre.",
+      "recipient_dir3": "J00003992",
+      "record_type": "REGISTRATION_RECEIPT",
+      "registration_datetime_literal": "2026-09-20 13:25:03",
+      "related_route_en": "en/dp-1901-2026/",
+      "related_route_es": "es/dp-1901-2026/",
+      "source_batch_id": "PD-DP1901-EG745-REGISTERED-20260921",
+      "source_integrity": {
+        "repository_anchor": "assets/data/dp1901-direct-action-state-20260920.json",
+        "reviewed_input": "ops/dp1901-eg745-registration-input-20260921.json",
+        "reviewed_input_sha256": "0c5954a3c8bddde6531808dc3a9d648dabec2955d3614e1b9ea482c86f9be9ea",
+        "status": "RECEIPT_VERIFIED_PUBLIC_SAFE_DERIVATIVE"
+      },
+      "source_key": "REGISTERED-20260921:REGAGE26e00082033336",
+      "source_timezone": "NOT_STATED; receipt time preserved literally without conversion",
+      "transport_link_state": "REGISTRATION_RECEIPT_SEPARATE_FROM_ANY_EMAIL_TRANSPORT"
+    },
+    {
+      "annex_count": 2,
+      "attachment_pages": 15,
+      "attribution_state": "NO_PERSON_ATTRIBUTED_IN_PUBLIC_REGISTER",
+      "canonical_anchor_en": "en/institutional-records/#communication-PD-SP-EVT-0200",
+      "canonical_anchor_es": "es/registros-institucionales/#communication-PD-SP-EVT-0200",
+      "channel": "REGAGE",
+      "cohort": "CURATED_SOURCE_PROVED_EVENT",
+      "criminal_responsibility_transfer": false,
+      "direction": "OUTBOUND_TO_INSTITUTION",
+      "does_not_prove": [
+        "Separate from A04 and not an appeal. Receipt proves registration and matching hashes, not transmission, admission, examination or response.",
+        "Registration does not establish downstream delivery, admission, incorporation, substantive examination, criminal responsibility or the merits of allegations."
+      ],
+      "does_not_prove_es": [
+        "Distinta de A04 y sin carácter de recurso. No acredita transmisión ulterior, admisión, examen ni respuesta.",
+        "El registro no acredita entrega ulterior, admisión, incorporación, examen sustantivo, responsabilidad penal ni el fondo de las alegaciones."
+      ],
+      "event_date": "2026-09-20",
+      "event_id": "PD-SP-EVT-0200",
+      "evidence_state": {
+        "delivery": "NOT_ESTABLISHED_BY_RECEIPT",
+        "destination": "DESTINATION_AS_STATED_ON_RECEIPT",
+        "filing": "FORMALLY_PRESENTED_TO_STATED_REGISTRY",
+        "internal_association": "NOT_ESTABLISHED_BY_RECEIPT",
+        "merits": "NOT_ESTABLISHED_BY_RECEIPT",
+        "registration": "REGISTRATION_RECEIPT_LOCATED",
+        "substantive_examination": "NOT_ESTABLISHED_BY_RECEIPT",
+        "transmission": "OFFICIAL_REGISTRATION_RECEIPT_LOCATED"
+      },
+      "layer": "FORMAL_REGISTRATION",
+      "linked_transport_event_ids": [],
+      "matter_references": [
+        "DP 1901/2026",
+        "A11"
+      ],
+      "office": "Sala de Gobierno via Secretaría de Gobierno del TSJC",
+      "official_reference": "REGAGE26e00082052687",
+      "presented_local": "2026-09-20 19:51:53",
+      "proof_level": "REGISTRATION_RECEIPT_AND_ATTACHMENT_HASHES_VERIFIED",
+      "proves": [
+        "Registered REGAGE26e00082052687: General reparto rules, approval/ratification, exceptions, publicity, Tribunal-de-Instancia mapping and written routing instructions.",
+        "The receipt records presentation to the stated registry destination.",
+        "The listed attachment fingerprints match the retained submitted files."
+      ],
+      "proves_es": [
+        "Registrado REGAGE26e00082052687: Reglas generales de reparto, aprobación, excepciones, publicidad, correspondencia del Tribunal de Instancia e instrucciones escritas de remisión.",
+        "El justificante registra la presentación al destino registral indicado.",
+        "Las huellas de los anexos indicados coinciden con los archivos presentados conservados."
+      ],
+      "public_derivative_state": "PUBLIC_SAFE_MINIMISED_DERIVATIVE",
+      "public_summary": "Registered REGAGE26e00082052687: General reparto rules, approval/ratification, exceptions, publicity, Tribunal-de-Instancia mapping and written routing instructions.",
+      "public_summary_es": "Registrado REGAGE26e00082052687: Reglas generales de reparto, aprobación, excepciones, publicidad, correspondencia del Tribunal de Instancia e instrucciones escritas de remisión.",
+      "recipient_dir3": "J00023418",
+      "record_type": "REGISTRATION_RECEIPT",
+      "registration_datetime_literal": "2026-09-20 19:52:07",
+      "related_route_en": "en/dp-1901-2026/",
+      "related_route_es": "es/dp-1901-2026/",
+      "source_batch_id": "PD-DP1901-EG745-REGISTERED-20260921",
+      "source_integrity": {
+        "repository_anchor": "assets/data/dp1901-direct-action-state-20260920.json",
+        "reviewed_input": "ops/dp1901-eg745-registration-input-20260921.json",
+        "reviewed_input_sha256": "0c5954a3c8bddde6531808dc3a9d648dabec2955d3614e1b9ea482c86f9be9ea",
+        "status": "RECEIPT_VERIFIED_PUBLIC_SAFE_DERIVATIVE"
+      },
+      "source_key": "REGISTERED-20260921:REGAGE26e00082052687",
+      "source_timezone": "NOT_STATED; receipt time preserved literally without conversion",
+      "transport_link_state": "REGISTRATION_RECEIPT_SEPARATE_FROM_ANY_EMAIL_TRANSPORT"
+    },
+    {
+      "annex_count": 4,
+      "attachment_pages": 35,
+      "attribution_state": "NO_PERSON_ATTRIBUTED_IN_PUBLIC_REGISTER",
+      "canonical_anchor_en": "en/institutional-records/#communication-PD-SP-EVT-0201",
+      "canonical_anchor_es": "es/registros-institucionales/#communication-PD-SP-EVT-0201",
+      "channel": "REGAGE",
+      "cohort": "CURATED_SOURCE_PROVED_EVENT",
+      "criminal_responsibility_transfer": false,
+      "direction": "OUTBOUND_TO_INSTITUTION",
+      "does_not_prove": [
+        "Receipt contains the intended requests and all four attachments, but also an extraneous operational-text tail. Legal effect and need for correction are undetermined; no correction is evidenced. Registration is not admission, handling or response.",
+        "Registration does not establish downstream delivery, admission, incorporation, substantive examination, criminal responsibility or the merits of allegations."
+      ],
+      "does_not_prove_es": [
+        "Constan las peticiones y cuatro anexos, pero también un texto operativo ajeno al contenido previsto. No se ha determinado su efecto jurídico ni la necesidad de corrección; no consta subsanación. Registro no equivale a admisión, tramitación ni respuesta.",
+        "El registro no acredita entrega ulterior, admisión, incorporación, examen sustantivo, responsabilidad penal ni el fondo de las alegaciones."
+      ],
+      "event_date": "2026-09-20",
+      "event_id": "PD-SP-EVT-0201",
+      "evidence_state": {
+        "delivery": "NOT_ESTABLISHED_BY_RECEIPT",
+        "destination": "DESTINATION_AS_STATED_ON_RECEIPT",
+        "filing": "FORMALLY_PRESENTED_TO_STATED_REGISTRY",
+        "internal_association": "NOT_ESTABLISHED_BY_RECEIPT",
+        "merits": "NOT_ESTABLISHED_BY_RECEIPT",
+        "registration": "REGISTRATION_RECEIPT_LOCATED",
+        "substantive_examination": "NOT_ESTABLISHED_BY_RECEIPT",
+        "transmission": "OFFICIAL_REGISTRATION_RECEIPT_LOCATED"
+      },
+      "layer": "FORMAL_REGISTRATION",
+      "linked_transport_event_ids": [],
+      "matter_references": [
+        "DP 1901/2026",
+        "A12"
+      ],
+      "office": "Defensor del Pueblo",
+      "official_reference": "REGAGE26e00082055212",
+      "presented_local": "2026-09-20 20:30:22",
+      "proof_level": "REGISTRATION_RECEIPT_AND_ATTACHMENT_HASHES_VERIFIED",
+      "proves": [
+        "Registered REGAGE26e00082055212: General administrative traceability safeguards; judicial merits remain outside this lane.",
+        "The receipt records presentation to the stated registry destination.",
+        "The listed attachment fingerprints match the retained submitted files."
+      ],
+      "proves_es": [
+        "Registrado REGAGE26e00082055212: Garantías generales de trazabilidad administrativa ante el Defensor del Pueblo; el fondo judicial queda fuera de esta vía.",
+        "El justificante registra la presentación al destino registral indicado.",
+        "Las huellas de los anexos indicados coinciden con los archivos presentados conservados."
+      ],
+      "public_derivative_state": "PUBLIC_SAFE_MINIMISED_DERIVATIVE",
+      "public_summary": "Registered REGAGE26e00082055212: General administrative traceability safeguards; judicial merits remain outside this lane.",
+      "public_summary_es": "Registrado REGAGE26e00082055212: Garantías generales de trazabilidad administrativa ante el Defensor del Pueblo; el fondo judicial queda fuera de esta vía.",
+      "recipient_dir3": "I00000001",
+      "record_type": "REGISTRATION_RECEIPT",
+      "registration_datetime_literal": "2026-09-20 20:30:25",
+      "related_route_en": "en/dp-1901-2026/",
+      "related_route_es": "es/dp-1901-2026/",
+      "source_batch_id": "PD-DP1901-EG745-REGISTERED-20260921",
+      "source_integrity": {
+        "repository_anchor": "assets/data/dp1901-direct-action-state-20260920.json",
+        "reviewed_input": "ops/dp1901-eg745-registration-input-20260921.json",
+        "reviewed_input_sha256": "0c5954a3c8bddde6531808dc3a9d648dabec2955d3614e1b9ea482c86f9be9ea",
+        "status": "RECEIPT_VERIFIED_PUBLIC_SAFE_DERIVATIVE"
+      },
+      "source_key": "REGISTERED-20260921:REGAGE26e00082055212",
+      "source_timezone": "NOT_STATED; receipt time preserved literally without conversion",
+      "transport_link_state": "REGISTRATION_RECEIPT_SEPARATE_FROM_ANY_EMAIL_TRANSPORT"
+    },
+    {
+      "annex_count": 5,
+      "attachment_pages": 50,
+      "attribution_state": "NO_PERSON_ATTRIBUTED_IN_PUBLIC_REGISTER",
+      "canonical_anchor_en": "en/institutional-records/#communication-PD-SP-EVT-0202",
+      "canonical_anchor_es": "es/registros-institucionales/#communication-PD-SP-EVT-0202",
+      "channel": "REGAGE",
+      "cohort": "CURATED_SOURCE_PROVED_EVENT",
+      "criminal_responsibility_transfer": false,
+      "direction": "OUTBOUND_TO_INSTITUTION",
+      "does_not_prove": [
+        "Receipt proves registration and all five attachment hashes: fifty pages. Formalisation, admission, onward receipt, incorporation and preservation remain unproved. The existing signature/channel questions continue as post-filing follow-up and do not erase this registration.",
+        "Registration does not establish downstream delivery, admission, incorporation, substantive examination, criminal responsibility or the merits of allegations."
+      ],
+      "does_not_prove_es": [
+        "La formalización, admisión, recepción ulterior, incorporación y conservación siguen sin acreditarse. Las cuestiones de firma y canal permanecen como seguimiento posterior al registro.",
+        "El registro no acredita entrega ulterior, admisión, incorporación, examen sustantivo, responsabilidad penal ni el fondo de las alegaciones."
+      ],
+      "event_date": "2026-09-20",
+      "event_id": "PD-SP-EVT-0202",
+      "evidence_state": {
+        "delivery": "NOT_ESTABLISHED_BY_RECEIPT",
+        "destination": "DESTINATION_AS_STATED_ON_RECEIPT",
+        "filing": "FORMALLY_PRESENTED_TO_STATED_REGISTRY",
+        "internal_association": "NOT_ESTABLISHED_BY_RECEIPT",
+        "merits": "NOT_ESTABLISHED_BY_RECEIPT",
+        "registration": "REGISTRATION_RECEIPT_LOCATED",
+        "substantive_examination": "NOT_ESTABLISHED_BY_RECEIPT",
+        "transmission": "OFFICIAL_REGISTRATION_RECEIPT_LOCATED"
+      },
+      "layer": "FORMAL_REGISTRATION",
+      "linked_transport_event_ids": [],
+      "matter_references": [
+        "DP 1901/2026",
+        "A13"
+      ],
+      "office": "Fiscalía Anticorrupción",
+      "official_reference": "REGAGE26e00082060401",
+      "presented_local": "2026-09-20 22:07:33",
+      "proof_level": "REGISTRATION_RECEIPT_AND_ATTACHMENT_HASHES_VERIFIED",
+      "proves": [
+        "Registered REGAGE26e00082060401: Status/subsanation of the existing communication, competent examination of the economic module and preservation.",
+        "The receipt records presentation to the stated registry destination.",
+        "The listed attachment fingerprints match the retained submitted files."
+      ],
+      "proves_es": [
+        "Registrado REGAGE26e00082060401: Estado y subsanación de la comunicación existente, examen competente del módulo económico y conservación; formalización y admisión pendientes.",
+        "El justificante registra la presentación al destino registral indicado.",
+        "Las huellas de los anexos indicados coinciden con los archivos presentados conservados."
+      ],
+      "public_derivative_state": "PUBLIC_SAFE_MINIMISED_DERIVATIVE",
+      "public_summary": "Registered REGAGE26e00082060401: Status/subsanation of the existing communication, competent examination of the economic module and preservation.",
+      "public_summary_es": "Registrado REGAGE26e00082060401: Estado y subsanación de la comunicación existente, examen competente del módulo económico y conservación; formalización y admisión pendientes.",
+      "recipient_dir3": "J00004991",
+      "record_type": "REGISTRATION_RECEIPT",
+      "registration_datetime_literal": "2026-09-20 22:07:42",
+      "related_route_en": "en/dp-1901-2026/",
+      "related_route_es": "es/dp-1901-2026/",
+      "source_batch_id": "PD-DP1901-EG745-REGISTERED-20260921",
+      "source_integrity": {
+        "controlling_source_pdf_sha256": "2b120710b656d69981db1c632ad22b395d6a8e57288a8a5369f36a6261655d11",
+        "repository_anchor": "assets/data/dp1901-direct-action-state-20260920.json",
+        "reviewed_input": "ops/dp1901-eg745-registration-input-20260921.json",
+        "reviewed_input_sha256": "0c5954a3c8bddde6531808dc3a9d648dabec2955d3614e1b9ea482c86f9be9ea",
+        "status": "RECEIPT_VERIFIED_PUBLIC_SAFE_DERIVATIVE"
+      },
+      "source_key": "REGISTERED-20260921:REGAGE26e00082060401",
+      "source_timezone": "NOT_STATED; receipt time preserved literally without conversion",
+      "transport_link_state": "REGISTRATION_RECEIPT_SEPARATE_FROM_ANY_EMAIL_TRANSPORT"
+    },
+    {
+      "annex_count": 5,
+      "attachment_pages": 103,
+      "attribution_state": "NO_PERSON_ATTRIBUTED_IN_PUBLIC_REGISTER",
+      "canonical_anchor_en": "en/institutional-records/#communication-PD-SP-EVT-0203",
+      "canonical_anchor_es": "es/registros-institucionales/#communication-PD-SP-EVT-0203",
+      "channel": "REGAGE",
+      "cohort": "CURATED_SOURCE_PROVED_EVENT",
+      "criminal_responsibility_transfer": false,
+      "direction": "OUTBOUND_TO_INSTITUTION",
+      "does_not_prove": [
+        "Registration and matching attachment fingerprints do not prove admission, incorporation, onward delivery, preservation or substantive examination. Annex deliveries are linked components of the principal filing, not separate appeals.",
+        "Registration does not establish downstream delivery, admission, incorporation, substantive examination, criminal responsibility or the merits of allegations."
+      ],
+      "does_not_prove_es": [
+        "El registro y las huellas coincidentes de anexos no acreditan admisión, incorporación, entrega ulterior, conservación ni examen sustantivo. Las entregas de anexos son componentes vinculados del escrito principal, no recursos separados.",
+        "El registro no acredita entrega ulterior, admisión, incorporación, examen sustantivo, responsabilidad penal ni el fondo de las alegaciones."
+      ],
+      "event_date": "2026-09-21",
+      "event_id": "PD-SP-EVT-0203",
+      "evidence_state": {
+        "delivery": "NOT_ESTABLISHED_BY_RECEIPT",
+        "destination": "DESTINATION_AS_STATED_ON_RECEIPT",
+        "filing": "FORMALLY_PRESENTED_TO_STATED_REGISTRY",
+        "internal_association": "NOT_ESTABLISHED_BY_RECEIPT",
+        "merits": "NOT_ESTABLISHED_BY_RECEIPT",
+        "registration": "REGISTRATION_RECEIPT_LOCATED",
+        "substantive_examination": "NOT_ESTABLISHED_BY_RECEIPT",
+        "transmission": "OFFICIAL_REGISTRATION_RECEIPT_LOCATED"
+      },
+      "layer": "FORMAL_REGISTRATION",
+      "linked_transport_event_ids": [],
+      "matter_references": [
+        "E.G.745/2026",
+        "IF/MCS",
+        "REGAGE26e00082068814"
+      ],
+      "office": "Fiscalía General del Estado — Inspección Fiscal",
+      "official_reference": "REGAGE26e00082068814",
+      "presented_local": "21/09/2026 01:54:19",
+      "proof_level": "REGISTRATION_RECEIPT_AND_ATTACHMENT_HASHES_VERIFIED",
+      "proves": [
+        "Registered REGAGE26e00082068814: Principal substantive reposición and initial documents for E.G.745/2026.",
+        "The receipt records presentation to the stated registry destination.",
+        "The listed attachment fingerprints match the retained submitted files."
+      ],
+      "proves_es": [
+        "Registrado REGAGE26e00082068814: Recurso sustantivo de reposición y documentación inicial de E.G.745/2026.",
+        "El justificante registra la presentación al destino registral indicado.",
+        "Las huellas de los anexos indicados coinciden con los archivos presentados conservados."
+      ],
+      "public_derivative_state": "PUBLIC_SAFE_MINIMISED_DERIVATIVE",
+      "public_summary": "Registered REGAGE26e00082068814: Principal substantive reposición and initial documents for E.G.745/2026.",
+      "public_summary_es": "Registrado REGAGE26e00082068814: Recurso sustantivo de reposición y documentación inicial de E.G.745/2026.",
+      "recipient_dir3": "J00003992",
+      "record_type": "REGISTRATION_RECEIPT",
+      "registration_datetime_literal": "21/09/2026 01:54:23",
+      "related_route_en": "en/public-prosecution-inspection-exp-gub-745-2026/#filing-completion-20260921",
+      "related_route_es": "es/fiscalia-inspeccion-exp-gub-745-2026/#filing-completion-20260921",
+      "source_batch_id": "PD-DP1901-EG745-REGISTERED-20260921",
+      "source_integrity": {
+        "controlling_source_pdf_sha256": "18dfc06cccd8122008e1aaa3c9a6a797413da375c32f2f111f5662fa9aa69e63",
+        "repository_anchor": "evidence/preservation/eg745-redsara-revision-20260921/receipts/REGAGE26e00082068814.json",
+        "reviewed_input": "ops/dp1901-eg745-registration-input-20260921.json",
+        "reviewed_input_sha256": "0c5954a3c8bddde6531808dc3a9d648dabec2955d3614e1b9ea482c86f9be9ea",
+        "status": "RECEIPT_VERIFIED_PUBLIC_SAFE_DERIVATIVE"
+      },
+      "source_key": "REGISTERED-20260921:REGAGE26e00082068814",
+      "source_timezone": "NOT_STATED; receipt time preserved literally without conversion",
+      "submission_number": 1,
+      "transport_link_state": "REGISTRATION_RECEIPT_SEPARATE_FROM_ANY_EMAIL_TRANSPORT"
+    },
+    {
+      "annex_count": 2,
+      "attachment_pages": 139,
+      "attribution_state": "NO_PERSON_ATTRIBUTED_IN_PUBLIC_REGISTER",
+      "canonical_anchor_en": "en/institutional-records/#communication-PD-SP-EVT-0204",
+      "canonical_anchor_es": "es/registros-institucionales/#communication-PD-SP-EVT-0204",
+      "channel": "REGAGE",
+      "cohort": "CURATED_SOURCE_PROVED_EVENT",
+      "criminal_responsibility_transfer": false,
+      "direction": "OUTBOUND_TO_INSTITUTION",
+      "does_not_prove": [
+        "Registration and matching attachment fingerprints do not prove admission, incorporation, onward delivery, preservation or substantive examination. Annex deliveries are linked components of the principal filing, not separate appeals.",
+        "Registration does not establish downstream delivery, admission, incorporation, substantive examination, criminal responsibility or the merits of allegations."
+      ],
+      "does_not_prove_es": [
+        "El registro y las huellas coincidentes de anexos no acreditan admisión, incorporación, entrega ulterior, conservación ni examen sustantivo. Las entregas de anexos son componentes vinculados del escrito principal, no recursos separados.",
+        "El registro no acredita entrega ulterior, admisión, incorporación, examen sustantivo, responsabilidad penal ni el fondo de las alegaciones."
+      ],
+      "event_date": "2026-09-21",
+      "event_id": "PD-SP-EVT-0204",
+      "evidence_state": {
+        "delivery": "NOT_ESTABLISHED_BY_RECEIPT",
+        "destination": "DESTINATION_AS_STATED_ON_RECEIPT",
+        "filing": "FORMALLY_PRESENTED_TO_STATED_REGISTRY",
+        "internal_association": "NOT_ESTABLISHED_BY_RECEIPT",
+        "merits": "NOT_ESTABLISHED_BY_RECEIPT",
+        "registration": "REGISTRATION_RECEIPT_LOCATED",
+        "substantive_examination": "NOT_ESTABLISHED_BY_RECEIPT",
+        "transmission": "OFFICIAL_REGISTRATION_RECEIPT_LOCATED"
+      },
+      "layer": "FORMAL_REGISTRATION",
+      "linked_principal_registration": "REGAGE26e00082068814",
+      "linked_transport_event_ids": [],
+      "matter_references": [
+        "E.G.745/2026",
+        "IF/MCS",
+        "REGAGE26e00082068814"
+      ],
+      "office": "Fiscalía General del Estado — Inspección Fiscal",
+      "official_reference": "REGAGE26e00082069039",
+      "presented_local": "21/09/2026 02:06:04",
+      "proof_level": "REGISTRATION_RECEIPT_AND_ATTACHMENT_HASHES_VERIFIED",
+      "proves": [
+        "Registered REGAGE26e00082069039: Linked annex delivery 2/10 for the principal E.G.745/2026 reposición registered as REGAGE26e00082068814.",
+        "The receipt records presentation to the stated registry destination.",
+        "The listed attachment fingerprints match the retained submitted files."
+      ],
+      "proves_es": [
+        "Registrado REGAGE26e00082069039: Entrega vinculada 2/10 de anexos del recurso principal E.G.745/2026, registrado con número REGAGE26e00082068814.",
+        "El justificante registra la presentación al destino registral indicado.",
+        "Las huellas de los anexos indicados coinciden con los archivos presentados conservados."
+      ],
+      "public_derivative_state": "PUBLIC_SAFE_MINIMISED_DERIVATIVE",
+      "public_summary": "Registered REGAGE26e00082069039: Linked annex delivery 2/10 for the principal E.G.745/2026 reposición registered as REGAGE26e00082068814.",
+      "public_summary_es": "Registrado REGAGE26e00082069039: Entrega vinculada 2/10 de anexos del recurso principal E.G.745/2026, registrado con número REGAGE26e00082068814.",
+      "recipient_dir3": "J00003992",
+      "record_type": "REGISTRATION_RECEIPT",
+      "registration_datetime_literal": "21/09/2026 02:06:09",
+      "related_route_en": "en/public-prosecution-inspection-exp-gub-745-2026/#filing-completion-20260921",
+      "related_route_es": "es/fiscalia-inspeccion-exp-gub-745-2026/#filing-completion-20260921",
+      "source_batch_id": "PD-DP1901-EG745-REGISTERED-20260921",
+      "source_integrity": {
+        "controlling_source_pdf_sha256": "54b5edb9b5c6779ec14dae2716b50f22bec9c10672904418fe62deb8b2734b28",
+        "repository_anchor": "evidence/preservation/eg745-redsara-revision-20260921/receipts/REGAGE26e00082069039.json",
+        "reviewed_input": "ops/dp1901-eg745-registration-input-20260921.json",
+        "reviewed_input_sha256": "0c5954a3c8bddde6531808dc3a9d648dabec2955d3614e1b9ea482c86f9be9ea",
+        "status": "RECEIPT_VERIFIED_PUBLIC_SAFE_DERIVATIVE"
+      },
+      "source_key": "REGISTERED-20260921:REGAGE26e00082069039",
+      "source_timezone": "NOT_STATED; receipt time preserved literally without conversion",
+      "submission_number": 2,
+      "transport_link_state": "REGISTRATION_RECEIPT_SEPARATE_FROM_ANY_EMAIL_TRANSPORT"
+    },
+    {
+      "annex_count": 2,
+      "attachment_pages": 221,
+      "attribution_state": "NO_PERSON_ATTRIBUTED_IN_PUBLIC_REGISTER",
+      "canonical_anchor_en": "en/institutional-records/#communication-PD-SP-EVT-0205",
+      "canonical_anchor_es": "es/registros-institucionales/#communication-PD-SP-EVT-0205",
+      "channel": "REGAGE",
+      "cohort": "CURATED_SOURCE_PROVED_EVENT",
+      "criminal_responsibility_transfer": false,
+      "direction": "OUTBOUND_TO_INSTITUTION",
+      "does_not_prove": [
+        "Registration and matching attachment fingerprints do not prove admission, incorporation, onward delivery, preservation or substantive examination. Annex deliveries are linked components of the principal filing, not separate appeals.",
+        "Registration does not establish downstream delivery, admission, incorporation, substantive examination, criminal responsibility or the merits of allegations."
+      ],
+      "does_not_prove_es": [
+        "El registro y las huellas coincidentes de anexos no acreditan admisión, incorporación, entrega ulterior, conservación ni examen sustantivo. Las entregas de anexos son componentes vinculados del escrito principal, no recursos separados.",
+        "El registro no acredita entrega ulterior, admisión, incorporación, examen sustantivo, responsabilidad penal ni el fondo de las alegaciones."
+      ],
+      "event_date": "2026-09-21",
+      "event_id": "PD-SP-EVT-0205",
+      "evidence_state": {
+        "delivery": "NOT_ESTABLISHED_BY_RECEIPT",
+        "destination": "DESTINATION_AS_STATED_ON_RECEIPT",
+        "filing": "FORMALLY_PRESENTED_TO_STATED_REGISTRY",
+        "internal_association": "NOT_ESTABLISHED_BY_RECEIPT",
+        "merits": "NOT_ESTABLISHED_BY_RECEIPT",
+        "registration": "REGISTRATION_RECEIPT_LOCATED",
+        "substantive_examination": "NOT_ESTABLISHED_BY_RECEIPT",
+        "transmission": "OFFICIAL_REGISTRATION_RECEIPT_LOCATED"
+      },
+      "layer": "FORMAL_REGISTRATION",
+      "linked_principal_registration": "REGAGE26e00082068814",
+      "linked_transport_event_ids": [],
+      "matter_references": [
+        "E.G.745/2026",
+        "IF/MCS",
+        "REGAGE26e00082068814"
+      ],
+      "office": "Fiscalía General del Estado — Inspección Fiscal",
+      "official_reference": "REGAGE26e00082069185",
+      "presented_local": "21/09/2026 02:14:20",
+      "proof_level": "REGISTRATION_RECEIPT_AND_ATTACHMENT_HASHES_VERIFIED",
+      "proves": [
+        "Registered REGAGE26e00082069185: Linked annex delivery 3/10 for the principal E.G.745/2026 reposición registered as REGAGE26e00082068814.",
+        "The receipt records presentation to the stated registry destination.",
+        "The listed attachment fingerprints match the retained submitted files."
+      ],
+      "proves_es": [
+        "Registrado REGAGE26e00082069185: Entrega vinculada 3/10 de anexos del recurso principal E.G.745/2026, registrado con número REGAGE26e00082068814.",
+        "El justificante registra la presentación al destino registral indicado.",
+        "Las huellas de los anexos indicados coinciden con los archivos presentados conservados."
+      ],
+      "public_derivative_state": "PUBLIC_SAFE_MINIMISED_DERIVATIVE",
+      "public_summary": "Registered REGAGE26e00082069185: Linked annex delivery 3/10 for the principal E.G.745/2026 reposición registered as REGAGE26e00082068814.",
+      "public_summary_es": "Registrado REGAGE26e00082069185: Entrega vinculada 3/10 de anexos del recurso principal E.G.745/2026, registrado con número REGAGE26e00082068814.",
+      "recipient_dir3": "J00003992",
+      "record_type": "REGISTRATION_RECEIPT",
+      "registration_datetime_literal": "21/09/2026 02:14:24",
+      "related_route_en": "en/public-prosecution-inspection-exp-gub-745-2026/#filing-completion-20260921",
+      "related_route_es": "es/fiscalia-inspeccion-exp-gub-745-2026/#filing-completion-20260921",
+      "source_batch_id": "PD-DP1901-EG745-REGISTERED-20260921",
+      "source_integrity": {
+        "controlling_source_pdf_sha256": "c284e5028823a628089fe3b44340b3f442f206f0b9212a6b8e6167cb702ecc85",
+        "repository_anchor": "evidence/preservation/eg745-redsara-revision-20260921/receipts/REGAGE26e00082069185.json",
+        "reviewed_input": "ops/dp1901-eg745-registration-input-20260921.json",
+        "reviewed_input_sha256": "0c5954a3c8bddde6531808dc3a9d648dabec2955d3614e1b9ea482c86f9be9ea",
+        "status": "RECEIPT_VERIFIED_PUBLIC_SAFE_DERIVATIVE"
+      },
+      "source_key": "REGISTERED-20260921:REGAGE26e00082069185",
+      "source_timezone": "NOT_STATED; receipt time preserved literally without conversion",
+      "submission_number": 3,
+      "transport_link_state": "REGISTRATION_RECEIPT_SEPARATE_FROM_ANY_EMAIL_TRANSPORT"
+    },
+    {
+      "annex_count": 5,
+      "attachment_pages": 203,
+      "attribution_state": "NO_PERSON_ATTRIBUTED_IN_PUBLIC_REGISTER",
+      "canonical_anchor_en": "en/institutional-records/#communication-PD-SP-EVT-0206",
+      "canonical_anchor_es": "es/registros-institucionales/#communication-PD-SP-EVT-0206",
+      "channel": "REGAGE",
+      "cohort": "CURATED_SOURCE_PROVED_EVENT",
+      "criminal_responsibility_transfer": false,
+      "direction": "OUTBOUND_TO_INSTITUTION",
+      "does_not_prove": [
+        "Registration and matching attachment fingerprints do not prove admission, incorporation, onward delivery, preservation or substantive examination. Annex deliveries are linked components of the principal filing, not separate appeals.",
+        "Registration does not establish downstream delivery, admission, incorporation, substantive examination, criminal responsibility or the merits of allegations."
+      ],
+      "does_not_prove_es": [
+        "El registro y las huellas coincidentes de anexos no acreditan admisión, incorporación, entrega ulterior, conservación ni examen sustantivo. Las entregas de anexos son componentes vinculados del escrito principal, no recursos separados.",
+        "El registro no acredita entrega ulterior, admisión, incorporación, examen sustantivo, responsabilidad penal ni el fondo de las alegaciones."
+      ],
+      "event_date": "2026-09-21",
+      "event_id": "PD-SP-EVT-0206",
+      "evidence_state": {
+        "delivery": "NOT_ESTABLISHED_BY_RECEIPT",
+        "destination": "DESTINATION_AS_STATED_ON_RECEIPT",
+        "filing": "FORMALLY_PRESENTED_TO_STATED_REGISTRY",
+        "internal_association": "NOT_ESTABLISHED_BY_RECEIPT",
+        "merits": "NOT_ESTABLISHED_BY_RECEIPT",
+        "registration": "REGISTRATION_RECEIPT_LOCATED",
+        "substantive_examination": "NOT_ESTABLISHED_BY_RECEIPT",
+        "transmission": "OFFICIAL_REGISTRATION_RECEIPT_LOCATED"
+      },
+      "layer": "FORMAL_REGISTRATION",
+      "linked_principal_registration": "REGAGE26e00082068814",
+      "linked_transport_event_ids": [],
+      "matter_references": [
+        "E.G.745/2026",
+        "IF/MCS",
+        "REGAGE26e00082068814"
+      ],
+      "office": "Fiscalía General del Estado — Inspección Fiscal",
+      "official_reference": "REGAGE26e00082069355",
+      "presented_local": "21/09/2026 02:29:13",
+      "proof_level": "REGISTRATION_RECEIPT_AND_ATTACHMENT_HASHES_VERIFIED",
+      "proves": [
+        "Registered REGAGE26e00082069355: Linked annex delivery 4/10 for the principal E.G.745/2026 reposición registered as REGAGE26e00082068814.",
+        "The receipt records presentation to the stated registry destination.",
+        "The listed attachment fingerprints match the retained submitted files."
+      ],
+      "proves_es": [
+        "Registrado REGAGE26e00082069355: Entrega vinculada 4/10 de anexos del recurso principal E.G.745/2026, registrado con número REGAGE26e00082068814.",
+        "El justificante registra la presentación al destino registral indicado.",
+        "Las huellas de los anexos indicados coinciden con los archivos presentados conservados."
+      ],
+      "public_derivative_state": "PUBLIC_SAFE_MINIMISED_DERIVATIVE",
+      "public_summary": "Registered REGAGE26e00082069355: Linked annex delivery 4/10 for the principal E.G.745/2026 reposición registered as REGAGE26e00082068814.",
+      "public_summary_es": "Registrado REGAGE26e00082069355: Entrega vinculada 4/10 de anexos del recurso principal E.G.745/2026, registrado con número REGAGE26e00082068814.",
+      "recipient_dir3": "J00003992",
+      "record_type": "REGISTRATION_RECEIPT",
+      "registration_datetime_literal": "21/09/2026 02:29:20",
+      "related_route_en": "en/public-prosecution-inspection-exp-gub-745-2026/#filing-completion-20260921",
+      "related_route_es": "es/fiscalia-inspeccion-exp-gub-745-2026/#filing-completion-20260921",
+      "source_batch_id": "PD-DP1901-EG745-REGISTERED-20260921",
+      "source_integrity": {
+        "controlling_source_pdf_sha256": "da982cc6615307820d2a1318b91a17af1e07402bff7547ea37805846eae2af0b",
+        "repository_anchor": "evidence/preservation/eg745-redsara-revision-20260921/receipts/REGAGE26e00082069355.json",
+        "reviewed_input": "ops/dp1901-eg745-registration-input-20260921.json",
+        "reviewed_input_sha256": "0c5954a3c8bddde6531808dc3a9d648dabec2955d3614e1b9ea482c86f9be9ea",
+        "status": "RECEIPT_VERIFIED_PUBLIC_SAFE_DERIVATIVE"
+      },
+      "source_key": "REGISTERED-20260921:REGAGE26e00082069355",
+      "source_timezone": "NOT_STATED; receipt time preserved literally without conversion",
+      "submission_number": 4,
+      "transport_link_state": "REGISTRATION_RECEIPT_SEPARATE_FROM_ANY_EMAIL_TRANSPORT"
+    },
+    {
+      "annex_count": 5,
+      "attachment_pages": 91,
+      "attribution_state": "NO_PERSON_ATTRIBUTED_IN_PUBLIC_REGISTER",
+      "canonical_anchor_en": "en/institutional-records/#communication-PD-SP-EVT-0207",
+      "canonical_anchor_es": "es/registros-institucionales/#communication-PD-SP-EVT-0207",
+      "channel": "REGAGE",
+      "cohort": "CURATED_SOURCE_PROVED_EVENT",
+      "criminal_responsibility_transfer": false,
+      "direction": "OUTBOUND_TO_INSTITUTION",
+      "does_not_prove": [
+        "Registration and matching attachment fingerprints do not prove admission, incorporation, onward delivery, preservation or substantive examination. Annex deliveries are linked components of the principal filing, not separate appeals.",
+        "Registration does not establish downstream delivery, admission, incorporation, substantive examination, criminal responsibility or the merits of allegations."
+      ],
+      "does_not_prove_es": [
+        "El registro y las huellas coincidentes de anexos no acreditan admisión, incorporación, entrega ulterior, conservación ni examen sustantivo. Las entregas de anexos son componentes vinculados del escrito principal, no recursos separados.",
+        "El registro no acredita entrega ulterior, admisión, incorporación, examen sustantivo, responsabilidad penal ni el fondo de las alegaciones."
+      ],
+      "event_date": "2026-09-21",
+      "event_id": "PD-SP-EVT-0207",
+      "evidence_state": {
+        "delivery": "NOT_ESTABLISHED_BY_RECEIPT",
+        "destination": "DESTINATION_AS_STATED_ON_RECEIPT",
+        "filing": "FORMALLY_PRESENTED_TO_STATED_REGISTRY",
+        "internal_association": "NOT_ESTABLISHED_BY_RECEIPT",
+        "merits": "NOT_ESTABLISHED_BY_RECEIPT",
+        "registration": "REGISTRATION_RECEIPT_LOCATED",
+        "substantive_examination": "NOT_ESTABLISHED_BY_RECEIPT",
+        "transmission": "OFFICIAL_REGISTRATION_RECEIPT_LOCATED"
+      },
+      "layer": "FORMAL_REGISTRATION",
+      "linked_principal_registration": "REGAGE26e00082068814",
+      "linked_transport_event_ids": [],
+      "matter_references": [
+        "E.G.745/2026",
+        "IF/MCS",
+        "REGAGE26e00082068814"
+      ],
+      "office": "Fiscalía General del Estado — Inspección Fiscal",
+      "official_reference": "REGAGE26e00082069484",
+      "presented_local": "21/09/2026 02:40:37",
+      "proof_level": "REGISTRATION_RECEIPT_AND_ATTACHMENT_HASHES_VERIFIED",
+      "proves": [
+        "Registered REGAGE26e00082069484: Linked annex delivery 5/10 for the principal E.G.745/2026 reposición registered as REGAGE26e00082068814.",
+        "The receipt records presentation to the stated registry destination.",
+        "The listed attachment fingerprints match the retained submitted files."
+      ],
+      "proves_es": [
+        "Registrado REGAGE26e00082069484: Entrega vinculada 5/10 de anexos del recurso principal E.G.745/2026, registrado con número REGAGE26e00082068814.",
+        "El justificante registra la presentación al destino registral indicado.",
+        "Las huellas de los anexos indicados coinciden con los archivos presentados conservados."
+      ],
+      "public_derivative_state": "PUBLIC_SAFE_MINIMISED_DERIVATIVE",
+      "public_summary": "Registered REGAGE26e00082069484: Linked annex delivery 5/10 for the principal E.G.745/2026 reposición registered as REGAGE26e00082068814.",
+      "public_summary_es": "Registrado REGAGE26e00082069484: Entrega vinculada 5/10 de anexos del recurso principal E.G.745/2026, registrado con número REGAGE26e00082068814.",
+      "recipient_dir3": "J00003992",
+      "record_type": "REGISTRATION_RECEIPT",
+      "registration_datetime_literal": "21/09/2026 02:40:48",
+      "related_route_en": "en/public-prosecution-inspection-exp-gub-745-2026/#filing-completion-20260921",
+      "related_route_es": "es/fiscalia-inspeccion-exp-gub-745-2026/#filing-completion-20260921",
+      "source_batch_id": "PD-DP1901-EG745-REGISTERED-20260921",
+      "source_integrity": {
+        "controlling_source_pdf_sha256": "b96240f13699c9c03648591ccc2e5a53ea432c1bc6aa41b942a4ac7ac467a302",
+        "repository_anchor": "evidence/preservation/eg745-redsara-revision-20260921/receipts/REGAGE26e00082069484.json",
+        "reviewed_input": "ops/dp1901-eg745-registration-input-20260921.json",
+        "reviewed_input_sha256": "0c5954a3c8bddde6531808dc3a9d648dabec2955d3614e1b9ea482c86f9be9ea",
+        "status": "RECEIPT_VERIFIED_PUBLIC_SAFE_DERIVATIVE"
+      },
+      "source_key": "REGISTERED-20260921:REGAGE26e00082069484",
+      "source_timezone": "NOT_STATED; receipt time preserved literally without conversion",
+      "submission_number": 5,
+      "transport_link_state": "REGISTRATION_RECEIPT_SEPARATE_FROM_ANY_EMAIL_TRANSPORT"
+    },
+    {
+      "annex_count": 3,
+      "attachment_pages": 64,
+      "attribution_state": "NO_PERSON_ATTRIBUTED_IN_PUBLIC_REGISTER",
+      "canonical_anchor_en": "en/institutional-records/#communication-PD-SP-EVT-0208",
+      "canonical_anchor_es": "es/registros-institucionales/#communication-PD-SP-EVT-0208",
+      "channel": "REGAGE",
+      "cohort": "CURATED_SOURCE_PROVED_EVENT",
+      "criminal_responsibility_transfer": false,
+      "direction": "OUTBOUND_TO_INSTITUTION",
+      "does_not_prove": [
+        "Registration and matching attachment fingerprints do not prove admission, incorporation, onward delivery, preservation or substantive examination. Annex deliveries are linked components of the principal filing, not separate appeals.",
+        "Registration does not establish downstream delivery, admission, incorporation, substantive examination, criminal responsibility or the merits of allegations."
+      ],
+      "does_not_prove_es": [
+        "El registro y las huellas coincidentes de anexos no acreditan admisión, incorporación, entrega ulterior, conservación ni examen sustantivo. Las entregas de anexos son componentes vinculados del escrito principal, no recursos separados.",
+        "El registro no acredita entrega ulterior, admisión, incorporación, examen sustantivo, responsabilidad penal ni el fondo de las alegaciones."
+      ],
+      "event_date": "2026-09-21",
+      "event_id": "PD-SP-EVT-0208",
+      "evidence_state": {
+        "delivery": "NOT_ESTABLISHED_BY_RECEIPT",
+        "destination": "DESTINATION_AS_STATED_ON_RECEIPT",
+        "filing": "FORMALLY_PRESENTED_TO_STATED_REGISTRY",
+        "internal_association": "NOT_ESTABLISHED_BY_RECEIPT",
+        "merits": "NOT_ESTABLISHED_BY_RECEIPT",
+        "registration": "REGISTRATION_RECEIPT_LOCATED",
+        "substantive_examination": "NOT_ESTABLISHED_BY_RECEIPT",
+        "transmission": "OFFICIAL_REGISTRATION_RECEIPT_LOCATED"
+      },
+      "layer": "FORMAL_REGISTRATION",
+      "linked_principal_registration": "REGAGE26e00082068814",
+      "linked_transport_event_ids": [],
+      "matter_references": [
+        "E.G.745/2026",
+        "IF/MCS",
+        "REGAGE26e00082068814"
+      ],
+      "office": "Fiscalía General del Estado — Inspección Fiscal",
+      "official_reference": "REGAGE26e00082069581",
+      "presented_local": "21/09/2026 02:49:34",
+      "proof_level": "REGISTRATION_RECEIPT_AND_ATTACHMENT_HASHES_VERIFIED",
+      "proves": [
+        "Registered REGAGE26e00082069581: Linked annex delivery 6/10 for the principal E.G.745/2026 reposición registered as REGAGE26e00082068814.",
+        "The receipt records presentation to the stated registry destination.",
+        "The listed attachment fingerprints match the retained submitted files."
+      ],
+      "proves_es": [
+        "Registrado REGAGE26e00082069581: Entrega vinculada 6/10 de anexos del recurso principal E.G.745/2026, registrado con número REGAGE26e00082068814.",
+        "El justificante registra la presentación al destino registral indicado.",
+        "Las huellas de los anexos indicados coinciden con los archivos presentados conservados."
+      ],
+      "public_derivative_state": "PUBLIC_SAFE_MINIMISED_DERIVATIVE",
+      "public_summary": "Registered REGAGE26e00082069581: Linked annex delivery 6/10 for the principal E.G.745/2026 reposición registered as REGAGE26e00082068814.",
+      "public_summary_es": "Registrado REGAGE26e00082069581: Entrega vinculada 6/10 de anexos del recurso principal E.G.745/2026, registrado con número REGAGE26e00082068814.",
+      "recipient_dir3": "J00003992",
+      "record_type": "REGISTRATION_RECEIPT",
+      "registration_datetime_literal": "21/09/2026 02:49:39",
+      "related_route_en": "en/public-prosecution-inspection-exp-gub-745-2026/#filing-completion-20260921",
+      "related_route_es": "es/fiscalia-inspeccion-exp-gub-745-2026/#filing-completion-20260921",
+      "source_batch_id": "PD-DP1901-EG745-REGISTERED-20260921",
+      "source_integrity": {
+        "controlling_source_pdf_sha256": "6e83c3e5a9ace2348c6c17a768c31865d9589e84e7e9303f43b13e15781422ec",
+        "repository_anchor": "evidence/preservation/eg745-redsara-revision-20260921/receipts/REGAGE26e00082069581.json",
+        "reviewed_input": "ops/dp1901-eg745-registration-input-20260921.json",
+        "reviewed_input_sha256": "0c5954a3c8bddde6531808dc3a9d648dabec2955d3614e1b9ea482c86f9be9ea",
+        "status": "RECEIPT_VERIFIED_PUBLIC_SAFE_DERIVATIVE"
+      },
+      "source_key": "REGISTERED-20260921:REGAGE26e00082069581",
+      "source_timezone": "NOT_STATED; receipt time preserved literally without conversion",
+      "submission_number": 6,
+      "transport_link_state": "REGISTRATION_RECEIPT_SEPARATE_FROM_ANY_EMAIL_TRANSPORT"
+    },
+    {
+      "annex_count": 1,
+      "attachment_pages": 127,
+      "attribution_state": "NO_PERSON_ATTRIBUTED_IN_PUBLIC_REGISTER",
+      "canonical_anchor_en": "en/institutional-records/#communication-PD-SP-EVT-0209",
+      "canonical_anchor_es": "es/registros-institucionales/#communication-PD-SP-EVT-0209",
+      "channel": "REGAGE",
+      "cohort": "CURATED_SOURCE_PROVED_EVENT",
+      "criminal_responsibility_transfer": false,
+      "direction": "OUTBOUND_TO_INSTITUTION",
+      "does_not_prove": [
+        "Registration and matching attachment fingerprints do not prove admission, incorporation, onward delivery, preservation or substantive examination. Annex deliveries are linked components of the principal filing, not separate appeals.",
+        "Registration does not establish downstream delivery, admission, incorporation, substantive examination, criminal responsibility or the merits of allegations."
+      ],
+      "does_not_prove_es": [
+        "El registro y las huellas coincidentes de anexos no acreditan admisión, incorporación, entrega ulterior, conservación ni examen sustantivo. Las entregas de anexos son componentes vinculados del escrito principal, no recursos separados.",
+        "El registro no acredita entrega ulterior, admisión, incorporación, examen sustantivo, responsabilidad penal ni el fondo de las alegaciones."
+      ],
+      "event_date": "2026-09-21",
+      "event_id": "PD-SP-EVT-0209",
+      "evidence_state": {
+        "delivery": "NOT_ESTABLISHED_BY_RECEIPT",
+        "destination": "DESTINATION_AS_STATED_ON_RECEIPT",
+        "filing": "FORMALLY_PRESENTED_TO_STATED_REGISTRY",
+        "internal_association": "NOT_ESTABLISHED_BY_RECEIPT",
+        "merits": "NOT_ESTABLISHED_BY_RECEIPT",
+        "registration": "REGISTRATION_RECEIPT_LOCATED",
+        "substantive_examination": "NOT_ESTABLISHED_BY_RECEIPT",
+        "transmission": "OFFICIAL_REGISTRATION_RECEIPT_LOCATED"
+      },
+      "layer": "FORMAL_REGISTRATION",
+      "linked_principal_registration": "REGAGE26e00082068814",
+      "linked_transport_event_ids": [],
+      "matter_references": [
+        "E.G.745/2026",
+        "IF/MCS",
+        "REGAGE26e00082068814"
+      ],
+      "office": "Fiscalía General del Estado — Inspección Fiscal",
+      "official_reference": "REGAGE26e00082069631",
+      "presented_local": "21/09/2026 02:55:43",
+      "proof_level": "REGISTRATION_RECEIPT_AND_ATTACHMENT_HASHES_VERIFIED",
+      "proves": [
+        "Registered REGAGE26e00082069631: Linked annex delivery 7/10 for the principal E.G.745/2026 reposición registered as REGAGE26e00082068814.",
+        "The receipt records presentation to the stated registry destination.",
+        "The listed attachment fingerprints match the retained submitted files."
+      ],
+      "proves_es": [
+        "Registrado REGAGE26e00082069631: Entrega vinculada 7/10 de anexos del recurso principal E.G.745/2026, registrado con número REGAGE26e00082068814.",
+        "El justificante registra la presentación al destino registral indicado.",
+        "Las huellas de los anexos indicados coinciden con los archivos presentados conservados."
+      ],
+      "public_derivative_state": "PUBLIC_SAFE_MINIMISED_DERIVATIVE",
+      "public_summary": "Registered REGAGE26e00082069631: Linked annex delivery 7/10 for the principal E.G.745/2026 reposición registered as REGAGE26e00082068814.",
+      "public_summary_es": "Registrado REGAGE26e00082069631: Entrega vinculada 7/10 de anexos del recurso principal E.G.745/2026, registrado con número REGAGE26e00082068814.",
+      "recipient_dir3": "J00003992",
+      "record_type": "REGISTRATION_RECEIPT",
+      "registration_datetime_literal": "21/09/2026 02:55:47",
+      "related_route_en": "en/public-prosecution-inspection-exp-gub-745-2026/#filing-completion-20260921",
+      "related_route_es": "es/fiscalia-inspeccion-exp-gub-745-2026/#filing-completion-20260921",
+      "source_batch_id": "PD-DP1901-EG745-REGISTERED-20260921",
+      "source_integrity": {
+        "controlling_source_pdf_sha256": "f4505c39bbc4ab6ca501dad19c1f6cc47749241be685c3d4cb65d23ed610431c",
+        "repository_anchor": "evidence/preservation/eg745-redsara-revision-20260921/receipts/REGAGE26e00082069631.json",
+        "reviewed_input": "ops/dp1901-eg745-registration-input-20260921.json",
+        "reviewed_input_sha256": "0c5954a3c8bddde6531808dc3a9d648dabec2955d3614e1b9ea482c86f9be9ea",
+        "status": "RECEIPT_VERIFIED_PUBLIC_SAFE_DERIVATIVE"
+      },
+      "source_key": "REGISTERED-20260921:REGAGE26e00082069631",
+      "source_timezone": "NOT_STATED; receipt time preserved literally without conversion",
+      "submission_number": 7,
+      "transport_link_state": "REGISTRATION_RECEIPT_SEPARATE_FROM_ANY_EMAIL_TRANSPORT"
+    },
+    {
+      "annex_count": 2,
+      "attachment_pages": 150,
+      "attribution_state": "NO_PERSON_ATTRIBUTED_IN_PUBLIC_REGISTER",
+      "canonical_anchor_en": "en/institutional-records/#communication-PD-SP-EVT-0210",
+      "canonical_anchor_es": "es/registros-institucionales/#communication-PD-SP-EVT-0210",
+      "channel": "REGAGE",
+      "cohort": "CURATED_SOURCE_PROVED_EVENT",
+      "criminal_responsibility_transfer": false,
+      "direction": "OUTBOUND_TO_INSTITUTION",
+      "does_not_prove": [
+        "Registration and matching attachment fingerprints do not prove admission, incorporation, onward delivery, preservation or substantive examination. Annex deliveries are linked components of the principal filing, not separate appeals.",
+        "Registration does not establish downstream delivery, admission, incorporation, substantive examination, criminal responsibility or the merits of allegations."
+      ],
+      "does_not_prove_es": [
+        "El registro y las huellas coincidentes de anexos no acreditan admisión, incorporación, entrega ulterior, conservación ni examen sustantivo. Las entregas de anexos son componentes vinculados del escrito principal, no recursos separados.",
+        "El registro no acredita entrega ulterior, admisión, incorporación, examen sustantivo, responsabilidad penal ni el fondo de las alegaciones."
+      ],
+      "event_date": "2026-09-21",
+      "event_id": "PD-SP-EVT-0210",
+      "evidence_state": {
+        "delivery": "NOT_ESTABLISHED_BY_RECEIPT",
+        "destination": "DESTINATION_AS_STATED_ON_RECEIPT",
+        "filing": "FORMALLY_PRESENTED_TO_STATED_REGISTRY",
+        "internal_association": "NOT_ESTABLISHED_BY_RECEIPT",
+        "merits": "NOT_ESTABLISHED_BY_RECEIPT",
+        "registration": "REGISTRATION_RECEIPT_LOCATED",
+        "substantive_examination": "NOT_ESTABLISHED_BY_RECEIPT",
+        "transmission": "OFFICIAL_REGISTRATION_RECEIPT_LOCATED"
+      },
+      "layer": "FORMAL_REGISTRATION",
+      "linked_principal_registration": "REGAGE26e00082068814",
+      "linked_transport_event_ids": [],
+      "matter_references": [
+        "E.G.745/2026",
+        "IF/MCS",
+        "REGAGE26e00082068814"
+      ],
+      "office": "Fiscalía General del Estado — Inspección Fiscal",
+      "official_reference": "REGAGE26e00082069746",
+      "presented_local": "21/09/2026 03:03:37",
+      "proof_level": "REGISTRATION_RECEIPT_AND_ATTACHMENT_HASHES_VERIFIED",
+      "proves": [
+        "Registered REGAGE26e00082069746: Linked annex delivery 8/10 for the principal E.G.745/2026 reposición registered as REGAGE26e00082068814.",
+        "The receipt records presentation to the stated registry destination.",
+        "The listed attachment fingerprints match the retained submitted files."
+      ],
+      "proves_es": [
+        "Registrado REGAGE26e00082069746: Entrega vinculada 8/10 de anexos del recurso principal E.G.745/2026, registrado con número REGAGE26e00082068814.",
+        "El justificante registra la presentación al destino registral indicado.",
+        "Las huellas de los anexos indicados coinciden con los archivos presentados conservados."
+      ],
+      "public_derivative_state": "PUBLIC_SAFE_MINIMISED_DERIVATIVE",
+      "public_summary": "Registered REGAGE26e00082069746: Linked annex delivery 8/10 for the principal E.G.745/2026 reposición registered as REGAGE26e00082068814.",
+      "public_summary_es": "Registrado REGAGE26e00082069746: Entrega vinculada 8/10 de anexos del recurso principal E.G.745/2026, registrado con número REGAGE26e00082068814.",
+      "recipient_dir3": "J00003992",
+      "record_type": "REGISTRATION_RECEIPT",
+      "registration_datetime_literal": "21/09/2026 03:03:42",
+      "related_route_en": "en/public-prosecution-inspection-exp-gub-745-2026/#filing-completion-20260921",
+      "related_route_es": "es/fiscalia-inspeccion-exp-gub-745-2026/#filing-completion-20260921",
+      "source_batch_id": "PD-DP1901-EG745-REGISTERED-20260921",
+      "source_integrity": {
+        "controlling_source_pdf_sha256": "0eeccbe9bb7f6a96bb54f586b0913e3e8f4e15e4afa8bb260bdc7a34cad009a3",
+        "repository_anchor": "evidence/preservation/eg745-redsara-revision-20260921/receipts/REGAGE26e00082069746.json",
+        "reviewed_input": "ops/dp1901-eg745-registration-input-20260921.json",
+        "reviewed_input_sha256": "0c5954a3c8bddde6531808dc3a9d648dabec2955d3614e1b9ea482c86f9be9ea",
+        "status": "RECEIPT_VERIFIED_PUBLIC_SAFE_DERIVATIVE"
+      },
+      "source_key": "REGISTERED-20260921:REGAGE26e00082069746",
+      "source_timezone": "NOT_STATED; receipt time preserved literally without conversion",
+      "submission_number": 8,
+      "transport_link_state": "REGISTRATION_RECEIPT_SEPARATE_FROM_ANY_EMAIL_TRANSPORT"
+    },
+    {
+      "annex_count": 1,
+      "attachment_pages": 125,
+      "attribution_state": "NO_PERSON_ATTRIBUTED_IN_PUBLIC_REGISTER",
+      "canonical_anchor_en": "en/institutional-records/#communication-PD-SP-EVT-0211",
+      "canonical_anchor_es": "es/registros-institucionales/#communication-PD-SP-EVT-0211",
+      "channel": "REGAGE",
+      "cohort": "CURATED_SOURCE_PROVED_EVENT",
+      "criminal_responsibility_transfer": false,
+      "direction": "OUTBOUND_TO_INSTITUTION",
+      "does_not_prove": [
+        "Registration and matching attachment fingerprints do not prove admission, incorporation, onward delivery, preservation or substantive examination. Annex deliveries are linked components of the principal filing, not separate appeals.",
+        "Registration does not establish downstream delivery, admission, incorporation, substantive examination, criminal responsibility or the merits of allegations."
+      ],
+      "does_not_prove_es": [
+        "El registro y las huellas coincidentes de anexos no acreditan admisión, incorporación, entrega ulterior, conservación ni examen sustantivo. Las entregas de anexos son componentes vinculados del escrito principal, no recursos separados.",
+        "El registro no acredita entrega ulterior, admisión, incorporación, examen sustantivo, responsabilidad penal ni el fondo de las alegaciones."
+      ],
+      "event_date": "2026-09-21",
+      "event_id": "PD-SP-EVT-0211",
+      "evidence_state": {
+        "delivery": "NOT_ESTABLISHED_BY_RECEIPT",
+        "destination": "DESTINATION_AS_STATED_ON_RECEIPT",
+        "filing": "FORMALLY_PRESENTED_TO_STATED_REGISTRY",
+        "internal_association": "NOT_ESTABLISHED_BY_RECEIPT",
+        "merits": "NOT_ESTABLISHED_BY_RECEIPT",
+        "registration": "REGISTRATION_RECEIPT_LOCATED",
+        "substantive_examination": "NOT_ESTABLISHED_BY_RECEIPT",
+        "transmission": "OFFICIAL_REGISTRATION_RECEIPT_LOCATED"
+      },
+      "layer": "FORMAL_REGISTRATION",
+      "linked_principal_registration": "REGAGE26e00082068814",
+      "linked_transport_event_ids": [],
+      "matter_references": [
+        "E.G.745/2026",
+        "IF/MCS",
+        "REGAGE26e00082068814"
+      ],
+      "office": "Fiscalía General del Estado — Inspección Fiscal",
+      "official_reference": "REGAGE26e00082069917",
+      "presented_local": "21/09/2026 03:10:04",
+      "proof_level": "REGISTRATION_RECEIPT_AND_ATTACHMENT_HASHES_VERIFIED",
+      "proves": [
+        "Registered REGAGE26e00082069917: Linked annex delivery 9/10 for the principal E.G.745/2026 reposición registered as REGAGE26e00082068814.",
+        "The receipt records presentation to the stated registry destination.",
+        "The listed attachment fingerprints match the retained submitted files."
+      ],
+      "proves_es": [
+        "Registrado REGAGE26e00082069917: Entrega vinculada 9/10 de anexos del recurso principal E.G.745/2026, registrado con número REGAGE26e00082068814.",
+        "El justificante registra la presentación al destino registral indicado.",
+        "Las huellas de los anexos indicados coinciden con los archivos presentados conservados."
+      ],
+      "public_derivative_state": "PUBLIC_SAFE_MINIMISED_DERIVATIVE",
+      "public_summary": "Registered REGAGE26e00082069917: Linked annex delivery 9/10 for the principal E.G.745/2026 reposición registered as REGAGE26e00082068814.",
+      "public_summary_es": "Registrado REGAGE26e00082069917: Entrega vinculada 9/10 de anexos del recurso principal E.G.745/2026, registrado con número REGAGE26e00082068814.",
+      "recipient_dir3": "J00003992",
+      "record_type": "REGISTRATION_RECEIPT",
+      "registration_datetime_literal": "21/09/2026 03:10:09",
+      "related_route_en": "en/public-prosecution-inspection-exp-gub-745-2026/#filing-completion-20260921",
+      "related_route_es": "es/fiscalia-inspeccion-exp-gub-745-2026/#filing-completion-20260921",
+      "source_batch_id": "PD-DP1901-EG745-REGISTERED-20260921",
+      "source_integrity": {
+        "controlling_source_pdf_sha256": "7b88a34dca2685ce6d618775cd42787c55f773a26b3a404f9f0a67d8edfce73b",
+        "repository_anchor": "evidence/preservation/eg745-redsara-revision-20260921/receipts/REGAGE26e00082069917.json",
+        "reviewed_input": "ops/dp1901-eg745-registration-input-20260921.json",
+        "reviewed_input_sha256": "0c5954a3c8bddde6531808dc3a9d648dabec2955d3614e1b9ea482c86f9be9ea",
+        "status": "RECEIPT_VERIFIED_PUBLIC_SAFE_DERIVATIVE"
+      },
+      "source_key": "REGISTERED-20260921:REGAGE26e00082069917",
+      "source_timezone": "NOT_STATED; receipt time preserved literally without conversion",
+      "submission_number": 9,
+      "transport_link_state": "REGISTRATION_RECEIPT_SEPARATE_FROM_ANY_EMAIL_TRANSPORT"
+    },
+    {
+      "annex_count": 1,
+      "attachment_pages": 49,
+      "attribution_state": "NO_PERSON_ATTRIBUTED_IN_PUBLIC_REGISTER",
+      "canonical_anchor_en": "en/institutional-records/#communication-PD-SP-EVT-0212",
+      "canonical_anchor_es": "es/registros-institucionales/#communication-PD-SP-EVT-0212",
+      "channel": "REGAGE",
+      "cohort": "CURATED_SOURCE_PROVED_EVENT",
+      "criminal_responsibility_transfer": false,
+      "direction": "OUTBOUND_TO_INSTITUTION",
+      "does_not_prove": [
+        "Registration and matching attachment fingerprints do not prove admission, incorporation, onward delivery, preservation or substantive examination. Annex deliveries are linked components of the principal filing, not separate appeals.",
+        "Registration does not establish downstream delivery, admission, incorporation, substantive examination, criminal responsibility or the merits of allegations."
+      ],
+      "does_not_prove_es": [
+        "El registro y las huellas coincidentes de anexos no acreditan admisión, incorporación, entrega ulterior, conservación ni examen sustantivo. Las entregas de anexos son componentes vinculados del escrito principal, no recursos separados.",
+        "El registro no acredita entrega ulterior, admisión, incorporación, examen sustantivo, responsabilidad penal ni el fondo de las alegaciones."
+      ],
+      "event_date": "2026-09-21",
+      "event_id": "PD-SP-EVT-0212",
+      "evidence_state": {
+        "delivery": "NOT_ESTABLISHED_BY_RECEIPT",
+        "destination": "DESTINATION_AS_STATED_ON_RECEIPT",
+        "filing": "FORMALLY_PRESENTED_TO_STATED_REGISTRY",
+        "internal_association": "NOT_ESTABLISHED_BY_RECEIPT",
+        "merits": "NOT_ESTABLISHED_BY_RECEIPT",
+        "registration": "REGISTRATION_RECEIPT_LOCATED",
+        "substantive_examination": "NOT_ESTABLISHED_BY_RECEIPT",
+        "transmission": "OFFICIAL_REGISTRATION_RECEIPT_LOCATED"
+      },
+      "layer": "FORMAL_REGISTRATION",
+      "linked_principal_registration": "REGAGE26e00082068814",
+      "linked_transport_event_ids": [],
+      "matter_references": [
+        "E.G.745/2026",
+        "IF/MCS",
+        "REGAGE26e00082068814"
+      ],
+      "office": "Fiscalía General del Estado — Inspección Fiscal",
+      "official_reference": "REGAGE26e00082070021",
+      "presented_local": "21/09/2026 03:17:11",
+      "proof_level": "REGISTRATION_RECEIPT_AND_ATTACHMENT_HASHES_VERIFIED",
+      "proves": [
+        "Registered REGAGE26e00082070021: Linked annex delivery 10/10 for the principal E.G.745/2026 reposición registered as REGAGE26e00082068814.",
+        "The receipt records presentation to the stated registry destination.",
+        "The listed attachment fingerprints match the retained submitted files."
+      ],
+      "proves_es": [
+        "Registrado REGAGE26e00082070021: Entrega vinculada 10/10 de anexos del recurso principal E.G.745/2026, registrado con número REGAGE26e00082068814.",
+        "El justificante registra la presentación al destino registral indicado.",
+        "Las huellas de los anexos indicados coinciden con los archivos presentados conservados."
+      ],
+      "public_derivative_state": "PUBLIC_SAFE_MINIMISED_DERIVATIVE",
+      "public_summary": "Registered REGAGE26e00082070021: Linked annex delivery 10/10 for the principal E.G.745/2026 reposición registered as REGAGE26e00082068814.",
+      "public_summary_es": "Registrado REGAGE26e00082070021: Entrega vinculada 10/10 de anexos del recurso principal E.G.745/2026, registrado con número REGAGE26e00082068814.",
+      "recipient_dir3": "J00003992",
+      "record_type": "REGISTRATION_RECEIPT",
+      "registration_datetime_literal": "21/09/2026 03:17:18",
+      "related_route_en": "en/public-prosecution-inspection-exp-gub-745-2026/#filing-completion-20260921",
+      "related_route_es": "es/fiscalia-inspeccion-exp-gub-745-2026/#filing-completion-20260921",
+      "source_batch_id": "PD-DP1901-EG745-REGISTERED-20260921",
+      "source_integrity": {
+        "controlling_source_pdf_sha256": "3522ba5a9784d2d936fb5e19157367d446099c88435e609ad95006e72fd6adfa",
+        "repository_anchor": "evidence/preservation/eg745-redsara-revision-20260921/receipts/REGAGE26e00082070021.json",
+        "reviewed_input": "ops/dp1901-eg745-registration-input-20260921.json",
+        "reviewed_input_sha256": "0c5954a3c8bddde6531808dc3a9d648dabec2955d3614e1b9ea482c86f9be9ea",
+        "status": "RECEIPT_VERIFIED_PUBLIC_SAFE_DERIVATIVE"
+      },
+      "source_key": "REGISTERED-20260921:REGAGE26e00082070021",
+      "source_timezone": "NOT_STATED; receipt time preserved literally without conversion",
+      "submission_number": 10,
+      "transport_link_state": "REGISTRATION_RECEIPT_SEPARATE_FROM_ANY_EMAIL_TRANSPORT"
+    },
+    {
       "attachment_count": 0,
       "attachment_count_basis": "NON_INLINE_NATIVE_ATTACHMENTS_COUNTED_PRIVATELY; NAMES_NOT_PUBLISHED",
       "attribution_state": "NO_PERSON_ATTRIBUTED_IN_PUBLIC_REGISTER",
@@ -16858,116 +18633,6 @@
       "subject_text_published": false,
       "transport_link_state": "THIS_ROW_IS_THE_TRANSPORT_LAYER",
       "transport_state": "RECEIVED_EMAIL_LOCATED"
-    },
-    {
-      "attribution_state": "INSTITUTIONAL_NOTICE_NO_PERSONAL_SIGNATORY_ASSERTED",
-      "canonical_anchor_en": "en/institutional-records/#communication-PD-SP-EVT-0179",
-      "canonical_anchor_es": "es/registros-institucionales/#communication-PD-SP-EVT-0179",
-      "channel": "EMAIL",
-      "cohort": "CURATED_SOURCE_PROVED_EVENT",
-      "criminal_responsibility_transfer": false,
-      "direction": "OUTBOUND_TO_INSTITUTION",
-      "does_not_prove": [
-        "The supplemental submission does not prove substantive reconsideration, board circulation, a conflict finding or any liability conclusion."
-      ],
-      "does_not_prove_es": "La aportación complementaria no prueba reconsideración sustantiva, circulación al Consejo, hallazgo de conflicto ni conclusión de responsabilidad.",
-      "event_date": "2026-09-05",
-      "event_id": "PD-SP-EVT-0179",
-      "event_timestamp": "2026-09-05T21:38:49",
-      "evidence_state": {
-        "delivery": "SOURCE_TRANSMISSION_RETAINED",
-        "destination": "STATED_IN_SOURCE",
-        "filing": "LINKED_TO_COMMUNICATION_6_BY_SENDER_REQUEST",
-        "internal_association": "NOT_ESTABLISHED_BY_THIS_SOURCE",
-        "merits": "NO_MERITS_FINDING_OR_CRIMINAL_ATTRIBUTION",
-        "registration": "REQUESTED_NOT_YET_CONFIRMED_IN_THIS_SOURCE",
-        "substantive_examination": "REQUESTED_NOT_ESTABLISHED_BY_THIS_SOURCE",
-        "transmission": "SOURCE_TRANSMISSION_OR_ACT_RETAINED"
-      },
-      "institution_key": "CAJASIETE",
-      "layer": "OFFICIAL_ACT_OR_CORRESPONDENCE",
-      "linked_transport_event_ids": [],
-      "matter_references": [
-        "Sun Park / MYND Yaiza",
-        "RICPE",
-        "CNMV",
-        "Communication 6",
-        "PD-SP-SRC-0028"
-      ],
-      "office": "Cajasiete",
-      "official_reference": "Communication 6 supplemental submission",
-      "proof_level": "RETAINED_SENT_EMAIL_WITH_OFFICIAL_ATTACHMENTS",
-      "proves": [
-        "Gil sent two official CNMV documents to Cajasiete's Ethics Channel, asked for incorporation into Communication 6, identification of the independent reviewing function, conflict analysis and lawful preservation/anonymisation/deletion traceability."
-      ],
-      "proves_es": "Gil remitió al Canal Ético dos documentos oficiales de CNMV, pidió su incorporación a la comunicación 6, identificación del órgano independiente, análisis de conflictos y trazabilidad lícita de conservación/anonimización/supresión.",
-      "public_derivative_state": "PUBLIC_SAFE_MINIMISED_DERIVATIVE",
-      "public_summary": "Gil sent two official CNMV documents to Cajasiete's Ethics Channel and expressly asked for independent review, conflict analysis and traceability.",
-      "public_summary_es": "Gil remitió dos documentos oficiales de CNMV al Canal Ético de Cajasiete y pidió expresamente revisión independiente, análisis de conflictos y trazabilidad.",
-      "record_type": "OUTBOUND_COMMUNICATION",
-      "source_batch_id": "PD-CAJASIETE-ACCOUNTABILITY-20260918",
-      "source_integrity": {
-        "repository_anchor": "ops/cajasiete-accountability-register-input-20260918.json",
-        "status": "RETAINED_SENT_EMAIL_WITH_OFFICIAL_ATTACHMENTS; PUBLIC_SAFE_REVIEW_DESCRIPTOR"
-      },
-      "source_key": "CAJASIETE-ACCOUNTABILITY:C-20260905",
-      "source_timezone": "NOT_STATED; no timezone conversion inferred",
-      "transport_link_state": "SEPARATE_ACT_AND_TRANSPORT_LINKS_IN_CANONICAL_CROSSWALK"
-    },
-    {
-      "attribution_state": "INSTITUTIONAL_NOTICE_NO_PERSONAL_SIGNATORY_ASSERTED",
-      "canonical_anchor_en": "en/institutional-records/#communication-PD-SP-EVT-0180",
-      "canonical_anchor_es": "es/registros-institucionales/#communication-PD-SP-EVT-0180",
-      "channel": "EMAIL",
-      "cohort": "CURATED_SOURCE_PROVED_EVENT",
-      "criminal_responsibility_transfer": false,
-      "direction": "INBOUND_FROM_INSTITUTION",
-      "does_not_prove": [
-        "The response documents the institution's stated review outcome and registration/confidentiality position; it does not establish who made the decision, what conflict analysis occurred, the complete audit trail, or the legal correctness of the April inadmission."
-      ],
-      "does_not_prove_es": "La respuesta documenta el resultado de revisión declarado por la entidad y su posición sobre registro/confidencialidad; no acredita quién decidió, qué análisis de conflictos se realizó, el audit trail completo ni la corrección jurídica de la inadmisión de abril.",
-      "event_date": "2026-09-18",
-      "event_id": "PD-SP-EVT-0180",
-      "event_timestamp": "2026-09-18T14:50:14",
-      "evidence_state": {
-        "delivery": "INSTITUTIONAL_RESPONSE_RECEIVED",
-        "destination": "STATED_IN_SOURCE",
-        "filing": "INCORPORATION_ASSERTED_BY_INSTITUTION",
-        "internal_association": "NOT_ESTABLISHED_BY_THIS_SOURCE",
-        "merits": "APRIL_DECISION_REAFFIRMED_NO_LIABILITY_FINDING",
-        "registration": "INSTITUTION_ASSERTS_REGISTERED_WITH_CONFIDENTIALITY_AND_RESTRICTED_ACCESS",
-        "substantive_examination": "INSTITUTION_ASSERTS_ADDITIONAL_MATERIAL_CONSIDERED",
-        "transmission": "SOURCE_TRANSMISSION_OR_ACT_RETAINED"
-      },
-      "institution_key": "CAJASIETE",
-      "layer": "OFFICIAL_ACT_OR_CORRESPONDENCE",
-      "linked_transport_event_ids": [],
-      "matter_references": [
-        "Sun Park / MYND Yaiza",
-        "RICPE",
-        "CNMV",
-        "Communication 6",
-        "PD-SP-SRC-0029"
-      ],
-      "office": "Cajasiete",
-      "official_reference": "Communication 6 review response",
-      "proof_level": "RETAINED_RECEIVED_EMAIL",
-      "proves": [
-        "Cajasiete's channel manager acknowledged the supplemental material, stated that it had been incorporated and did not alter the April 2026 decision, and said it remained registered with confidentiality and restricted access."
-      ],
-      "proves_es": "El gestor del canal de Cajasiete acusó recibo del material complementario, afirmó que había sido incorporado y no alteraba la decisión de abril de 2026, y dijo que permanecía registrado con confidencialidad y acceso restringido.",
-      "public_derivative_state": "PUBLIC_SAFE_MINIMISED_DERIVATIVE",
-      "public_summary": "Cajasiete stated on 18 September that the new material was incorporated and did not alter the April decision; the response remained institutionally signed and did not identify the decision owner or answer the requested conflict/audit-trail questions.",
-      "public_summary_es": "Cajasiete afirmó el 18 de septiembre que el nuevo material fue incorporado y no alteraba la decisión de abril; la respuesta siguió firmada institucionalmente y no identificó al decisor ni contestó las preguntas de conflicto/audit trail.",
-      "record_type": "INSTITUTIONAL_REVIEW_RESPONSE",
-      "source_batch_id": "PD-CAJASIETE-ACCOUNTABILITY-20260918",
-      "source_integrity": {
-        "repository_anchor": "ops/cajasiete-accountability-register-input-20260918.json",
-        "status": "RETAINED_RECEIVED_EMAIL; PUBLIC_SAFE_REVIEW_DESCRIPTOR"
-      },
-      "source_key": "CAJASIETE-ACCOUNTABILITY:C-20260918",
-      "source_timezone": "NOT_STATED; no timezone conversion inferred",
-      "transport_link_state": "SEPARATE_ACT_AND_TRANSPORT_LINKS_IN_CANONICAL_CROSSWALK"
     }
   ],
   "id_allocation": {
@@ -17014,6 +18679,7 @@
   },
   "source_controls": {
     "annex_listing_count": 126,
+    "completed_filings_input": "ops/dp1901-eg745-registration-input-20260921.json",
     "controlling_154_page_pdf_sha256": "4636b0da487f9150cd8f229d36f9c44f1bd16c9005f6bfa1415bcbc84595e03f",
     "detailed_index": "archive/evidence/mf-redsara-anexo4/MF_REDSARA_REGISTRATION_INDEX_SHORT.csv",
     "detailed_index_sha256": "784b45bb9ef9e5934d4b4dedc7068dfef90b6e19a10d55bfc1170933d097dcc3",

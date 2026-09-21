@@ -1458,6 +1458,13 @@ def build_mailbox_events(index: dict[str, Any], index_sha256: str) -> list[dict[
 from prepare_orion_notice_register_20260905 import load_notice_events
 KEY_EVENTS.extend(load_notice_events(REPO_ROOT))
 
+# Preserve the two already-published Cajasiete rows and append verified filings.
+from load_completed_filings_20260921 import (
+    load_completed_filing_events, load_existing_cajasiete_events,
+)
+KEY_EVENTS.extend(load_existing_cajasiete_events(REPO_ROOT))
+KEY_EVENTS.extend(load_completed_filing_events(REPO_ROOT, RECEIPT_BOUNDARY))
+
 
 def _existing_receipt_ids(register: dict[str, Any] | None) -> dict[str, str]:
     if not register:
@@ -1685,6 +1692,10 @@ def reconcile_register(
     register["denominator_control"]["mailbox_transport_events"] = len(mailbox_events)
     register["denominator_control"]["event_rows_total"] = len(register["events"])
     register["source_controls"]["mailbox_index_sha256"] = mailbox_index_sha256
+    register["control_date"] = "2026-09-21"
+    register["source_controls"]["completed_filings_input"] = "ops/dp1901-eg745-registration-input-20260921.json"
+    register["denominator_control"]["dp1901_completed_registration_events"] = 14
+    register["denominator_control"]["eg745_substantive_linked_registration_events"] = 10
     return register
 
 
@@ -1748,7 +1759,7 @@ def build_checkpoint(register_sha256: str, source_sha256: str, mailbox_index_sha
             "EG 6/2026 underlying act substantive digest remains pending.",
             "Six August-family receipt rows await one-to-one public destination-label normalisation; no destination is guessed.",
             "81 mailbox rows retain ROUTE_NOT_PUBLICLY_ATTESTED pending a primary bridge.",
-            "No post-notification E.G. 745/2026 reposicion receipt was located.",
+            "Historical 31-Aug scan found no post-notification E.G.745 reposición receipt; superseded by the separately verified 21-Sep principal and nine linked annex registrations below.",
         ],
         "last_month_mail_control": {
             "performed_date": "2026-08-31",
@@ -1772,6 +1783,19 @@ def build_checkpoint(register_sha256: str, source_sha256: str, mailbox_index_sha
             "new_filing_proof": False,
             "filing_status_change": False,
             "provider_locators_or_exact_subjects_published": False,
+        },
+        "completed_filings_2026_09_21": {
+            "control_date": "2026-09-21",
+            "source_input": "ops/dp1901-eg745-registration-input-20260921.json",
+            "registration_events_added": 24,
+            "dp1901_actions": 13,
+            "dp1901_registration_events": 14,
+            "eg745_linked_registrations": 10,
+            "eg745_principal_registration": "REGAGE26e00082068814",
+            "eg745_final_registration": "REGAGE26e00082070021",
+            "admission_incorporation_or_examination_proved": False,
+            "historical_mail_scan_results_retained_as_dated_findings": True,
+            "new_mail_scan_performed": False,
         },
         "next_incremental_scan": {
             "overlap_from_date": "2026-08-24",

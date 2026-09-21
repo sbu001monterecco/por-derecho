@@ -193,6 +193,9 @@
   },
   "scope": "Public-safe receipt metadata, attachment fingerprints and complete delivery reconciliation only. Native private receipts and private documents are not published.",
   "canonical_communications_register": "assets/data/institutional-communications-register-v1.json",
-  "canonical_event_allocation": "Pending integration; reuse existing registry identity if already allocated",
-  "main_integration": "Pending held controller; worker preservation only"
+  "canonical_event_allocation": "Allocated in this current-main-based canonical integration candidate; effective on main only after governed merge.",
+  "main_integration": "Pending held controller; worker preservation only",
+  "canonical_event_id": "PD-SP-EVT-0212",
+  "canonical_anchor_en": "en/institutional-records/#communication-PD-SP-EVT-0212",
+  "canonical_anchor_es": "es/registros-institucionales/#communication-PD-SP-EVT-0212"
 }

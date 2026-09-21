@@ -16,6 +16,19 @@
     "unique_regage_references": 75
   },
   "checkpoint_id": "PD-SP-MF-SCAN-CHECKPOINT-001",
+  "completed_filings_2026_09_21": {
+    "admission_incorporation_or_examination_proved": false,
+    "control_date": "2026-09-21",
+    "dp1901_actions": 13,
+    "dp1901_registration_events": 14,
+    "eg745_final_registration": "REGAGE26e00082070021",
+    "eg745_linked_registrations": 10,
+    "eg745_principal_registration": "REGAGE26e00082068814",
+    "historical_mail_scan_results_retained_as_dated_findings": true,
+    "new_mail_scan_performed": false,
+    "registration_events_added": 24,
+    "source_input": "ops/dp1901-eg745-registration-input-20260921.json"
+  },
   "control_date": "2026-09-01",
   "incremental_refresh_2026_08_31": {
     "already_indexed_in_scope_events": 7,
@@ -97,7 +110,7 @@
     "universal_completeness_claim": false
   },
   "register_path": "assets/data/institutional-communications-register-v1.json",
-  "register_sha256": "f397fc256cf21bde25c90945ebb67944762599ee4b02350830aae56fe5e7af82",
+  "register_sha256": "99ecfe185bedf54de4ecb294227053471977c4046e5e3b8572252ff283b80851",
   "schema": "por-derecho.institutional-communications-scan-checkpoint.v1",
   "source_required_and_normalisation_gates": [
     "22 later RedSARA/AGE records remain aggregate-only; no synthetic individual rows were created.",
@@ -106,6 +119,6 @@
     "EG 6/2026 underlying act substantive digest remains pending.",
     "Six August-family receipt rows await one-to-one public destination-label normalisation; no destination is guessed.",
     "81 mailbox rows retain ROUTE_NOT_PUBLICLY_ATTESTED pending a primary bridge.",
-    "No post-notification E.G. 745/2026 reposicion receipt was located."
+    "Historical 31-Aug scan found no post-notification E.G.745 reposición receipt; superseded by the separately verified 21-Sep principal and nine linked annex registrations below."
   ]
 }

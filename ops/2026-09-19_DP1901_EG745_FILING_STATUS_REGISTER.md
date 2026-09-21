@@ -1,6 +1,6 @@
 # DP1901 / E.G.745 / Fiscal Superior — filing-status register
 
-Control date: 20 September 2026  
+Control date: 21 September 2026  
 Control timezone for receipt timestamps: Atlantic/Canary as the working programme timezone; times below are transcribed as printed.  
 Repository state: public-safe receipt reconciliation. Private originals remain outside GitHub.
 
@@ -44,7 +44,7 @@ Repository publication is not filing or service. The private receipt PDFs, addre
 - **A06 — registered, handling pending:** `REGAGE26e00082058165`, presented 20 September 2026 at 21:19:02 and registered at 21:19:12, as printed. Four PDFs, forty-five pages, all receipt SHA-512 values matched. The earlier rejected attempt `REGAGE26e00073341477` remains disclosed. Admission, incorporation, preservation, response and any separate prior national alzada registration remain unproved.
 - **A13 — registered, formalisation/admission pending:** `REGAGE26e00082060401`, presented 20 September 2026 at 22:07:33 and registered at 22:07:42, as printed. Five PDFs, fifty pages, all receipt SHA-512 values matched. The existing Exp.Gub.352/2025 signature/formalisation/admission and channel questions remain post-filing follow-ups. No admission, incorporation, preservation or substantive outcome is inferred.
 - **Counsel-dependent judicial remedy:** separate; excluded from the personal-action count.
-- **Substantive E.G.745 response:** separate from A10 and still pending.
+- **Substantive E.G.745 response:** separate from A10; all ten linked deliveries are now registered, with 27 matching PDF fingerprints. Admission, incorporation and examination remain unverified.
 - **Provincial email follow-up:** supplementary only; sending/delivery and filing are distinct states.
 
 Machine control: `assets/data/dp1901-direct-action-state-20260920.json`.
@@ -52,3 +52,25 @@ Machine control: `assets/data/dp1901-direct-action-state-20260920.json`.
 ## Reconciliation history
 
 PR1679 and PR1680 preserved an eleven-of-thirteen public snapshot. The later A06/A13 official receipts supersede those two unfiled states while retaining their prior rejection/formality history. The thirteen-candidate registration cycle is complete; the wider historical action universe, authority responses, substantive E.G.745 response and counsel-dependent remedies are not thereby complete.
+
+## 21 September 2026 — complete registered delivery
+
+**All ten E.G.745 submissions are registered, with all 27 PDF fingerprints verified: 1,272 page instances and 22 illustrations.** Principal `REGAGE26e00082068814`; final annex delivery `REGAGE26e00082070021`. Destination: J00003992, Fiscalía General del Estado; attention Inspección Fiscal. Each annex delivery expressly references the principal registration. No missing or duplicate PDF attachments were found within this ten-delivery set.
+
+| Delivery | Registration | PDFs | Pages |
+|---|---|---:|---:|
+| 1/10 | `REGAGE26e00082068814` | 5 | 103 |
+| 2/10 | `REGAGE26e00082069039` | 2 | 139 |
+| 3/10 | `REGAGE26e00082069185` | 2 | 221 |
+| 4/10 | `REGAGE26e00082069355` | 5 | 203 |
+| 5/10 | `REGAGE26e00082069484` | 5 | 91 |
+| 6/10 | `REGAGE26e00082069581` | 3 | 64 |
+| 7/10 | `REGAGE26e00082069631` | 1 | 127 |
+| 8/10 | `REGAGE26e00082069746` | 2 | 150 |
+| 9/10 | `REGAGE26e00082069917` | 1 | 125 |
+| 10/10 | `REGAGE26e00082070021` | 1 | 49 |
+
+These are registration and attachment-identity findings only. Onward routing, admission, incorporation, examination, preservation and merits remain unverified. The first two deliveries contain all 22 illustrations, including the grave metaphor and Five Actors image. DP1901 remains a separate 13-action / fourteen-registration programme with its existing qualifications. The next substantive Presidencia communication and subsequent lawyers' package remain pending.
+
+**Español:** diez entregas registradas, 27 PDF con huellas verificadas, 1.272 páginas y 22 ilustraciones. Registro principal `REGAGE26e00082068814`; último `REGAGE26e00082070021`. No se acredita todavía admisión, incorporación, examen, conservación ni resultado de fondo. El programa DP1901 mantiene trece actuaciones y catorce asientos, con sus reservas anteriores.
+

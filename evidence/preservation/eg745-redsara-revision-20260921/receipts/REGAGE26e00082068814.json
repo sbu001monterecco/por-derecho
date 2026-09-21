@@ -80,7 +80,10 @@
   ],
   "scope": "Public-safe registry and attachment fingerprint verification. Native receipt, private PDF bodies and private identifiers remain outside public Git.",
   "canonical_communications_register": "assets/data/institutional-communications-register-v1.json",
-  "canonical_event_allocation": "Pending integration; reuse registry identity if already allocated",
+  "canonical_event_allocation": "Allocated in this current-main-based canonical integration candidate; effective on main only after governed merge.",
   "preparation_revision_commit": "7ec56599dadb67018c363121899e7cc4534a675c",
-  "main_integration": "Pending held publication controller; worker preservation only"
+  "main_integration": "Pending held publication controller; worker preservation only",
+  "canonical_event_id": "PD-SP-EVT-0203",
+  "canonical_anchor_en": "en/institutional-records/#communication-PD-SP-EVT-0203",
+  "canonical_anchor_es": "es/registros-institucionales/#communication-PD-SP-EVT-0203"
 }

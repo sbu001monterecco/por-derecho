@@ -1,7 +1,7 @@
 {
   "schema": "por-derecho.dp1901-eg745-cross-institutional-matrix.v1",
-  "control_date": "2026-09-20",
-  "state": "13_REGISTERED_POST_FILING_FOLLOWUP_OPEN_EG745_SUBSTANTIVE_RESPONSE_PENDING",
+  "control_date": "2026-09-21",
+  "state": "13_DP1901_ACTIONS_AND_10_EG745_DELIVERIES_REGISTERED_POST_FILING_FOLLOWUP_OPEN",
   "rules": {
     "unitary": "one factual spine; separate competences; no jurisdictional dead end",
     "attribution": "actor-specific proof; institution-held identity records should be requested before treating anonymity as terminal",
@@ -77,5 +77,15 @@
       "A06 earlier rejection remains disclosed; substantive handling and separate prior national alzada registration are unproved",
       "A13 formalisation/admission remains a post-filing follow-up despite receipt-controlled registration"
     ]
+  },
+  "eg745_substantive_response": {
+    "state": "ALL_10_LINKED_DELIVERIES_REGISTERED_AND_RECEIPTS_VERIFIED",
+    "principal_registration": "REGAGE26e00082068814",
+    "final_registration": "REGAGE26e00082070021",
+    "registered_pdfs": 27,
+    "page_instances": 1272,
+    "illustrations": 22,
+    "control": "assets/data/eg745-final-delivery-control-20260920.json",
+    "admission_incorporation_examination": "UNVERIFIED"
   }
 }

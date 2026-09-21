@@ -673,5 +673,7 @@
       "save_status": "SUCCEEDED",
       "public_scope": "Fingerprint only unless separately identified as an approved public copy"
     }
-  ]
+  ],
+  "historical_snapshot": "20 September preparation/save accounting; original entries retained unchanged.",
+  "current_registered_delivery_control": "assets/data/eg745-final-delivery-control-20260920.json"
 }
