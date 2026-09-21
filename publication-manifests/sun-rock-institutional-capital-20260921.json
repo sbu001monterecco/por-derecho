@@ -6,12 +6,12 @@
   "current_state": "PR_OPEN",
   "expected_routes": {
     "en": [
-      "/en/institutional-capital/",
-      "/en/capital-relationships/"
+      "en/institutional-capital/index.html",
+      "en/capital-relationships/index.html"
     ],
     "es": [
-      "/es/capital-institucional/",
-      "/es/relaciones-de-capital/"
+      "es/capital-institucional/index.html",
+      "es/relaciones-de-capital/index.html"
     ]
   },
   "control_id": "PD-SR-CAPITAL-20260921-01",
