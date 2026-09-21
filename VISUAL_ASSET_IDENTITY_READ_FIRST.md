@@ -12,6 +12,10 @@ Any task that uses a named person's image on the Por Derecho website, in an info
 
 ## Critical current mapping
 
+- Gil Marer / official base portrait:
+  - `person.gil-marer.official-base`
+  - `assets/actors/gil-marer--official-base--20260921.webp`
+  - User-supplied self-portrait, user-approved cleaned/stylised derivative; use as the official base reference for future visual work unless explicitly superseded.
 - Francisco de Borja Rodríguez-Batllori Laffitte / Administrador Concursal:
   - `person.francisco-de-borja-rodriguez-batllori.primary`
   - `assets/actors/francisco-de-borja-rodriguez-batllori.jpg`
@@ -19,7 +23,7 @@ Any task that uses a named person's image on the Por Derecho website, in an info
   - `person.eduardo-sanchez-san-telmo.primary`
   - `assets/actors/eduardo-sanchez-san-telmo.url` — a byte-locked repository pointer to the first-party RSM profile image corresponding to the user-authorised portrait.
 
-The Eduardo Sánchez and Borja / AC assets are both active and carry reciprocal `do_not_confuse_with` locks. The controlling composite slot map is `assets/composites/san-telmo-ricpe-sun-park-stamp-v1.asset-map.json`.
+Gil's official base portrait is active and byte-locked for future visual derivatives. The Eduardo Sánchez and Borja / AC assets are both active and carry reciprocal `do_not_confuse_with` locks. The controlling composite slot map is `assets/composites/san-telmo-ricpe-sun-park-stamp-v1.asset-map.json`.
 
 Run before merge:
 
