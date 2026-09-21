@@ -1,7 +1,7 @@
 {
-  "registry_version": "1.3.1",
+  "registry_version": "1.4.0",
   "policy_id": "PD-VISUAL-ID-LOCK-2026-08-19",
-  "control_date": "2026-09-21",
+  "control_date": "2026-09-22",
   "purpose": "Canonical identity, provenance and byte-lock registry for named-person and material-asset images used by Por Derecho.",
   "mandatory_rules": {
     "named_person_images_must_be_registered": true,
@@ -346,10 +346,10 @@
         "Founder and public voice · Por Derecho",
         "Principal sponsor · Project Sun Rock / Aweswell"
       ],
-      "path": "assets/actors/gil-marer--about-page--20260921.webp",
-      "git_blob_sha": "577b78c9949a45cb41b493c4091c718f2cd64b6a",
+      "path": "assets/actors/gil-marer--about-page--20260922.png",
+      "git_blob_sha": "3cbcd717b22be4330a335947343c1acc9e72e4b3",
       "identity_status": "LOCKED_CANONICAL_REPOSITORY_ASSET",
-      "identity_basis": "Website derivative of the user-approved official Gil Marer portrait. The user expressly instructed on 21 September 2026 that the stylised version be used on the About page, principally to remove the wine/bar background and make the portrait fit the website better. No facial-identification inference performed.",
+      "identity_basis": "Website derivative of the user-approved Gil Marer portrait. On 22 September 2026 the About-page delivery was corrected to use the exact approved PNG master after the previous WebP presentation rendered as a beige placeholder for the user. No facial-identification inference performed.",
       "approved_contexts": [
         "English About page",
         "Spanish Sobre nosotros page",
@@ -363,23 +363,27 @@
         "source_master_dimensions": "1254x1254",
         "source_master_format": "png",
         "repository_derivative_sha256": "5a11c991401ed1c87a6770439a9e77113e4ff7a2b897c9b674c0d96ceb779ac4",
-        "repository_derivative_dimensions": "800x800",
-        "repository_derivative_bytes": 66140,
-        "repository_derivative_format": "webp",
+        "repository_derivative_dimensions": "1254x1254",
+        "repository_derivative_bytes": 1892953,
+        "repository_derivative_format": "png",
         "background_treatment": "Warm neutral editorial backdrop; no wine bottles, bar shelves or identifiable hospitality-background clutter.",
         "user_approval_date": "2026-09-21",
         "legacy_about_path": "assets/gil-marer.webp",
-        "legacy_about_blob_sha": "5f8fb1013fdce7953a5fdf3cb3083861c9e4576f"
+        "legacy_about_blob_sha": "5f8fb1013fdce7953a5fdf3cb3083861c9e4576f",
+        "drive_master_file_id": "18iuElm27aQUX8z4Ou8WfvfY5Xjac4poC",
+        "drive_master_name": "Gil_Marer_ABOUT_MASTER_20260922_v2.png",
+        "replaced_webp_blob_sha": "577b78c9949a45cb41b493c4091c718f2cd64b6a",
+        "delivery_fix": "Use PNG bytes and long-standing root assets alias with cache-buster because the prior WebP displayed only the beige frame/background in the user's browser."
       },
       "storage_mode": "repository-byte-locked",
-      "usage_note": "Canonical registered About-page variant lives under assets/actors/. The English and Spanish About pages publish the same bytes through the long-standing assets/gil-marer.webp alias with an explicit cache-buster for deployment reliability.",
+      "usage_note": "Canonical registered About-page asset lives under assets/actors/. English and Spanish About pages publish the same exact PNG bytes through assets/gil-marer.png with cache-busting.",
       "variant_of": "person.gil-marer.official-base",
       "published_aliases": [
         {
-          "path": "assets/gil-marer.webp",
-          "git_blob_sha": "577b78c9949a45cb41b493c4091c718f2cd64b6a",
-          "purpose": "Stable pre-existing About-page URL used to avoid a broken new-path deployment/cache edge while preserving the canonical registered actor variant.",
-          "cache_buster": "v=20260921c"
+          "path": "assets/gil-marer.png",
+          "git_blob_sha": "3cbcd717b22be4330a335947343c1acc9e72e4b3",
+          "purpose": "Stable About-page publication alias using exact approved PNG bytes.",
+          "cache_buster": "v=20260922a"
         }
       ]
     },
@@ -413,6 +417,23 @@
       },
       "storage_mode": "repository-byte-locked",
       "publication_boundary": "Identity/relationship aid only. The image does not prove Community authority, corporate mandate, knowledge, coordination, wrongdoing, causation or liability."
+    },
+    "person.gil-marer.about-page-webp-legacy": {
+      "subject_type": "person",
+      "canonical_name": "Gil Marer",
+      "short_label": "Gil Marer / superseded About-page WebP retained for preservation",
+      "path": "assets/actors/gil-marer--about-page--20260921.webp",
+      "git_blob_sha": "577b78c9949a45cb41b493c4091c718f2cd64b6a",
+      "identity_status": "LOCKED_CANONICAL_REPOSITORY_ASSET",
+      "identity_basis": "Superseded user-approved Gil Marer About-page WebP retained solely for repository preservation and provenance after the live delivery was replaced by the PNG variant. No facial-identification inference performed.",
+      "alt_en": "Gil Marer — superseded About-page WebP retained for provenance",
+      "alt_es": "Gil Marer — WebP anterior de la página Sobre nosotros conservado por trazabilidad",
+      "variant_of": "person.gil-marer.official-base",
+      "approved_contexts": [
+        "repository preservation and provenance only"
+      ],
+      "storage_mode": "repository-byte-locked",
+      "publication_rule": "Do not use for current About-page publication; current website variant is person.gil-marer.about-page."
     }
   },
   "rejected_or_prohibited_mappings": [
