@@ -1,6 +1,6 @@
 {
   "schema": "concurso36-autos-fulltext-v1",
-  "cutoff": "2026-09-21",
+  "cutoff": "2026-08-23",
   "language": "es",
   "redaction_policy": "Substantive text retained; administrative/contact/identity/bank/verification/signature data and unnecessary procedural-professional names removed with visible markers.",
   "known_gaps": [
@@ -910,24 +910,6 @@
       "merits_scope": "No aplica: escrito o trámite procesal.",
       "href": "F18-diligencia-que-tiene-por-interpuesta-la-apelacion-y-da-traslado-redacted.md",
       "public_pdf": null
-    },
-    {
-      "id": "R33",
-      "lane": "separacion",
-      "record_class": "party",
-      "date": "2026-09-14",
-      "title": "Oposición del Administrador Concursal a la apelación de LPB",
-      "actor": "Administrador Concursal",
-      "instrument": "Escrito de oposición",
-      "procedure": "RPL 3304/2025",
-      "source_pages_or_units": 22,
-      "source_sha256": "5e0728185cf9b686abd723497d2a53a2656a5e0de4d323a734ed02880eb1d711",
-      "source_anchor": "Counsel copy received 21 September 2026; signed native source preserved in private custody",
-      "copy_status": "Copia fuente localizada y cotejada; derivado público de 22 páginas",
-      "outcome": "",
-      "merits_scope": "Escrito de parte: acredita su contenido y fuentes incorporadas, no la verdad de todas sus caracterizaciones.",
-      "href": "R33-oposicion-ac-apelacion-lpb-septiembre-2026-controlled-extracts.md",
-      "public_pdf": "../pdfs/R33-ac-oposicion-apelacion-lpb-septiembre-2026.pdf"
     }
   ]
 }
