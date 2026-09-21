@@ -1812,7 +1812,7 @@ def build_checkpoint(register_sha256: str, source_sha256: str, mailbox_index_sha
     return {
         "schema": "por-derecho.institutional-communications-scan-checkpoint.v1",
         "checkpoint_id": "PD-SP-MF-SCAN-CHECKPOINT-001",
-        "control_date": "2026-09-01",
+        "control_date": "2026-09-21",
         "register_path": "assets/data/institutional-communications-register-v1.json",
         "register_sha256": register_sha256,
         "private_custody": {
