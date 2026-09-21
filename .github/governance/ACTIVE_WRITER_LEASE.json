@@ -1,34 +1,35 @@
 {
   "schema": "por-derecho.active-writer-lease.v1",
-  "control_id": "PD-AWL-20260921-PHASE1",
+  "control_id": "PD-AWL-20260921-PHASE2",
   "repository": "sbu001monterecco/por-derecho",
-  "branch": "governance/equilibrium-phase1-20260921",
+  "branch": "governance/equilibrium-phase2-pr-census-20260921",
   "lease_state": "ACTIVE_WHILE_CANDIDATE_OPEN",
   "owner": {
     "type": "CHATGPT_WORK_THREAD",
-    "opaque_transaction_id": "PD-EQUILIBRIUM-PHASE1-20260921",
+    "opaque_transaction_id": "PD-EQUILIBRIUM-PHASE2-20260921",
     "human_controller": "Gil Marer"
   },
   "authority": {
-    "granted_at": "2026-09-21T21:02:52Z",
-    "scope": "Begin Phase 1 as one governance-only GitHub transaction",
+    "granted_at": "2026-09-21T21:36:00Z",
+    "scope": "Take the next steps after verified completion of Phase 1",
     "conditions": [
+      "Preserve one-writer discipline",
       "Do not alter public content",
-      "Do not merge unless all applicable gates are green",
+      "Do not merge or close backlog pull requests",
+      "Do not merge this transaction unless all applicable gates are green",
       "Do not start Presidencia publication"
     ]
   },
-  "acquired_at": "2026-09-21T21:06:57Z",
-  "expires_at": "2026-09-22T21:06:57Z",
-  "base_main_sha": "fa81fb53a08a6e191d8ac26cf130c402e31548f4",
+  "acquired_at": "2026-09-21T22:06:15Z",
+  "expires_at": "2026-09-22T22:06:15Z",
+  "base_main_sha": "e6447fbe3639ed78263889221affb316c31960f3",
   "candidate_head_resolution": "Resolve the live branch or pull-request head from GitHub; a checked-in head SHA would be self-referential and must not be trusted.",
   "scope": {
     "classification": "GOVERNANCE_ONLY",
     "allowed_paths": [
       ".github/governance/ACTIVE_WRITER_LEASE.json",
       ".github/governance/EQUILIBRIUM_ACCEPTANCE.json",
-      ".github/governance/EQUILIBRIUM_PHASE1_21SEP2026.md",
-      ".github/governance/validate_agent_governance_compatibility.py"
+      ".github/governance/EQUILIBRIUM_PHASE2_PR_CENSUS.json"
     ],
     "public_runtime_change": false,
     "public_content_change": false,
@@ -37,7 +38,7 @@
     "filing_or_email": false
   },
   "concurrency": {
-    "rule": "While this lease is live, other threads remain read-only for the allowed paths and must not create a competing Phase-1 equilibrium integration lane.",
+    "rule": "While this lease is live, other threads remain read-only for the allowed paths and must not create a competing Phase-2 PR-census integration lane.",
     "substantive_worker_branches": "Preserved as candidate deltas; this lease does not close, merge, rewrite or discard them.",
     "main_advanced_after_base": "STALE_BASE_HARD_STOP_RECONCILE_OR_REBUILD"
   },
