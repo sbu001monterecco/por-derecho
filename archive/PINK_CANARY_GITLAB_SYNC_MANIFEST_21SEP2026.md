@@ -50,3 +50,17 @@ The public site must continue to:
 
 A preservation mirror is to be stored under the Por Derecho private working area in Google Drive together with the principal September-2026 AC opposition and selected associated appellate filings.
 
+
+
+## Google Drive mirror completed
+
+Private preservation path:
+`/Google Drive/Por Derecho Private Workspaces/Pink Canary Unitary Prosecutorial Review 21SEP2026`
+
+Preserved there:
+- the four canonical Markdown controls;
+- `PINK_CANARY_UNITARY_GITLAB_RECOVERY_BUNDLE_21SEP2026.zip`;
+- the 22-page September-2026 AC opposition;
+- the associated appellate/evidence filings recovered from Javier Sixto's email during this review.
+
+The Drive mirror is preservation/staging for future GitLab reconciliation. Do not treat the mirror as a substitute for primary-source provenance or the GitHub commit history.
