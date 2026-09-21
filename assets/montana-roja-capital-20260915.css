@@ -40,10 +40,36 @@
 .mr-stack-controls{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.8rem;margin:1rem 0}
 .mr-stack-controls>div{padding:1rem;border-radius:14px;background:#0d2f38;color:#fff}
 .mr-stack-controls span,.mr-stack-controls small{display:block}.mr-stack-controls span{font-size:.72rem;text-transform:uppercase;letter-spacing:.08em;opacity:.72}.mr-stack-controls strong{display:block;margin:.2rem 0}.mr-stack-controls small{opacity:.82;line-height:1.4}
-.mr-roadmap-grid{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(7,minmax(160px,1fr));gap:.65rem;overflow-x:auto;padding-bottom:.35rem}
+.mr-roadmap-grid{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:.65rem;overflow-x:auto;padding-bottom:.35rem}
 .mr-roadmap-grid li{min-height:180px;padding:1rem;border-radius:14px;border:1px solid rgba(13,47,56,.14);background:linear-gradient(180deg,#fff,#f5f8f7)}
 .mr-roadmap-grid li:first-child{background:#eaf5ef;border-color:#91b9a1}
 .mr-roadmap-grid span{display:block;font-size:.72rem;font-weight:800;letter-spacing:.07em;text-transform:uppercase;color:#4e666e}
 .mr-roadmap-grid strong{display:block;margin:.3rem 0 .45rem;color:#0d2f38}
 .mr-roadmap-grid p{margin:0;font-size:.9rem;line-height:1.45;color:#53656b}
-@media(max-width:900px){.mr-capital-head{grid-template-columns:1fr}.mr-stack-controls{grid-template-columns:1fr}.mr-roadmap-grid{grid-template-columns:repeat(7,220px)}}
+@media(max-width:900px){.mr-capital-head{grid-template-columns:1fr}.mr-stack-controls{grid-template-columns:1fr}.mr-roadmap-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+/* 2026-09-19 · Sponsor support, security perimeter and phase transition */
+.lanzarote-page .site-header{background:#153b43}
+.mr-capital-map,.mr-roadmap,.mr-security-map{scroll-margin-top:8rem}
+.lz-hero-aside p+p{margin-top:.7rem}
+.mr-green-status{color:#c2f5d2!important;border-left:4px solid #8cd7a2;padding-left:.8rem}
+.mr-finance-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:1.5rem;align-items:start}
+.mr-map-label{font-size:.75rem;font-weight:850;letter-spacing:.07em;text-transform:uppercase;color:#28565b;margin:0 0 .6rem}
+.mr-priority-key{display:flex;justify-content:space-between;gap:1rem;font-size:.72rem;color:#4c6267;margin:0 0 .8rem}
+.mr-finance-grid .mr-stack-layer{padding:1.1rem 1.2rem}
+.mr-security-map{min-width:0}.mr-defined-support{padding:1rem;border:2px dashed #ad812e;border-radius:14px;background:#fff9eb}
+.mr-defined-support strong,.mr-defined-support span{display:block}.mr-defined-support span{font-size:.78rem;font-weight:750;color:#79591d;margin:.25rem 0}.mr-defined-support p{margin:0;font-size:.85rem;color:#5c5b51}
+.mr-support-link{text-align:center;padding:.6rem;font-size:.74rem;color:#765820}
+.mr-project-perimeter{border:2px solid #1d6669;border-radius:16px;padding:1.1rem;background:#f3f9f7}
+.mr-project-perimeter h4{font-size:1.15rem;margin:.2rem 0 .75rem;color:#164e54}
+.mr-security-assets{display:grid;grid-template-columns:1fr 1fr;gap:.5rem;list-style:none;padding:0;margin:.85rem 0}
+.mr-security-assets li{padding:.6rem;border:1px solid #b8ceca;border-radius:8px;background:white;font-size:.77rem;color:#30575b}
+.mr-security-lender{border-top:3px solid #1d6669;padding:.7rem;background:#e0eeeb;border-radius:0 0 8px 8px}
+.mr-security-lender span,.mr-security-lender strong{display:block}.mr-security-lender span{font-size:.72rem;color:#30575b}.mr-security-lender strong{font-size:.9rem;color:#174e52}
+.mr-security-seller{border-top:1px solid #80617f;padding:.65rem .1rem 0;margin-top:.75rem;color:#624b67;font-size:.8rem}.mr-security-seller p{margin:.25rem 0 0}
+.mr-outside-perimeter{margin:1.2rem 0;padding:1rem 1.2rem;background:#eef0f1;border:1px solid #c9cfd1;border-radius:14px}.mr-outside-perimeter h4{margin:0;color:#304950;font-size:1.05rem}.mr-outside-perimeter p{font-size:.85rem;margin:.4rem 0}.mr-outside-perimeter ul{display:flex;flex-wrap:wrap;gap:.5rem;list-style:none;padding:0;margin:.7rem 0 0}.mr-outside-perimeter li{padding:.5rem .65rem;border:1px solid #c9cfd1;border-radius:8px;background:#fff;font-size:.77rem;color:#4b5f65}
+.mr-phase-transition{padding:1.2rem;border:1px solid #9ab2bf;border-radius:14px;background:#eaf1f5}.mr-phase-transition span,.mr-phase-transition strong{display:block}.mr-phase-transition span{font-size:.75rem;text-transform:uppercase;font-weight:850;color:#3c5d70}.mr-phase-transition strong{margin:.35rem 0;color:#173c50}.mr-phase-transition p{margin:0;color:#425d6c}
+@media(max-width:1000px){.mr-finance-grid{grid-template-columns:1fr}}
+@media(max-width:600px){.mr-capital-map,.mr-roadmap{padding:1rem}.mr-roadmap-grid{grid-template-columns:1fr}.mr-roadmap-grid li{min-height:0}.mr-security-assets{grid-template-columns:1fr}.mr-priority-key{flex-direction:column;gap:.2rem}}
+
+.lanzarote-page .lz-hero-grid{align-items:start}
