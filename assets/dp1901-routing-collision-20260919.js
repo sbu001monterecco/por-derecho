@@ -14,7 +14,7 @@
     kicker:'TRAZABILIDAD COMÚN · DP 1901/2026',
     title:'Dos escritos autónomos. Un expediente con dos identidades documentadas. Falta el puente.',
     intro:'La separación de Ref. 21 y Ref. 24 está documentada. También lo están la presentación de material privado bajo DP 1901 el 9 de julio, la vinculación oficial con DIP 2 el 12 de julio, el informe Fiscal de 29 de julio y el Auto de 14 de septiembre. Lo que no está producido es el acto o evento que explique la relación entre ambos carriles y DP 1901.',
-    boundary:'Este módulo no atribuye autoría, intención, manipulación ni irregularidad penal. La dirección de la colisión sigue sin certificarse. La afirmación de que Ref. 24 seguía intacta, sin escanear y sin asignar el 25 de junio es la declaración presencial expresa del compareciente; no sustituye la certificación electrónica pendiente.',
+    boundary:'Este módulo no atribuye autoría, intención, manipulación ni irregularidad penal. La cronología Ref. 21 → DP 1901 del compareciente está corroborada contemporáneamente por el correo a la procuradora de 25 de junio y la correspondencia operativa de 9 de julio. Siguen pendientes de certificación el evento electrónico oficial de creación/reparto y el mecanismo posterior de asociación de Ref. 24. La afirmación de que Ref. 24 seguía intacta, sin escanear y sin asignar el 25 de junio es la declaración presencial expresa del compareciente; no sustituye la certificación electrónica pendiente.',
     links:[
       ['Ref. 21 · denuncia autónoma de actores privados','/es/control-21-denuncia-actores-privados-25-junio-2026/'],
       ['DP 1901 · expediente central','/es/dp-1901-2026/'],
