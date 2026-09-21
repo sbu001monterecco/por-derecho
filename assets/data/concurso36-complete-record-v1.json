@@ -1,6 +1,6 @@
 {
   "schema": "concurso36-complete-record-v1",
-  "cutoff": "2026-09-21",
+  "cutoff": "2026-08-23",
   "case": {
     "court": "Juzgado de lo Mercantil n.º 1 de Las Palmas de Gran Canaria",
     "proceeding": "Concurso ordinario 36/2012",
@@ -17,19 +17,19 @@
     "complete_or_all_uploaded_claim_permitted": false
   },
   "counts": {
-    "canonical_records": 128,
+    "canonical_records": 127,
     "historical_forensic_records": 72,
     "historical_complete_copies": 49,
     "historical_missing_complete_copies": 21,
     "historical_copy_status_uncertain": 2,
-    "specialist_records": 51,
+    "specialist_records": 50,
     "specialist_public_full_text_transcripts": 50,
-    "specialist_public_pdfs": 11,
+    "specialist_public_pdfs": 10,
     "supplemental_canonical_records": 5,
     "supplemental_source_copy_entries": 8,
     "supplemental_public_pdfs": 1,
     "supplemental_page_complete_transcripts": 0,
-    "public_safe_pdfs_total": 12,
+    "public_safe_pdfs_total": 11,
     "public_page_complete_source_transcripts_total": 50,
     "record_classes": {
       "implementation_or_notarial_record": 2,
@@ -38,7 +38,7 @@
       "laj_or_court_office_act": 39,
       "other_evidential_record": 2,
       "party_communication": 2,
-      "party_filing": 35,
+      "party_filing": 34,
       "photographic_derivative": 1,
       "registry_record": 4,
       "report_inventory_or_certificate": 2
@@ -3862,37 +3862,6 @@
         "status": "WITHHELD_PENDING SOURCE/PRIVACY REVIEW",
         "page_complete_transcript": false,
         "public_pdf": null
-      }
-    },
-    {
-      "canonical_id": "C36-SPECIALIST-R33",
-      "aliases": [
-        "R33"
-      ],
-      "period": "2024-2026",
-      "date": "2026-09-14",
-      "record_class": "party_filing",
-      "lane": "separacion",
-      "document_type": "Escrito de oposición",
-      "title_or_function": "Oposición del Administrador Concursal a la apelación de LPB",
-      "issuer_or_actor": "Administrador Concursal",
-      "proceeding": "RPL 3304/2025",
-      "source_system": "Controlled source corpus",
-      "source_locator": "Counsel copy received 21 September 2026; native signed source in private custody",
-      "source_sha256": "5e0728185cf9b686abd723497d2a53a2656a5e0de4d323a734ed02880eb1d711",
-      "source_pages_or_units": 22,
-      "complete_copy_status": "yes",
-      "filing_or_copy_status": "Copia fuente localizada y cotejada",
-      "direct_effect_or_proposition": "Records the Insolvency Administrator's opposition, admissions, characterisations and incorporated source material in RPL 3304/2025.",
-      "conditions_or_limits": "Party filing; it proves its content and the sources it reproduces, not the truth of every factual or motivational characterisation.",
-      "evidence_label": "SOURCE COPY LOCATED; PUBLIC-SAFE PDF DERIVATIVE; MERITS NOT ADJUDICATED BY THIS RECORD",
-      "public_derivative": {
-        "status": "PUBLIC_SAFE_SOURCE_PDF_PLUS_CONTROLLED_EXTRACTS",
-        "page_complete_transcript": false,
-        "transcript": "evidence/insolvency-36-2012/concurso-autos/full-text/R33-oposicion-ac-apelacion-lpb-septiembre-2026-controlled-extracts.md",
-        "public_pdf": "evidence/insolvency-36-2012/concurso-autos/pdfs/R33-ac-oposicion-apelacion-lpb-septiembre-2026.pdf",
-        "public_pdf_sha256": "df43ba1d044c59177a85dea18c98f64b0c9c826ec7ba030c332a1e9cfb7abd14",
-        "privacy_note": "Visible 22-page content retained; embedded signature form/certificate and annotations removed from the public derivative."
       }
     }
   ]
