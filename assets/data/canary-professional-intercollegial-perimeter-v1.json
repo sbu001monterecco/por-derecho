@@ -92,10 +92,28 @@
     },
     {
       "name": "Cristo Ayose Suárez Pimentel",
-      "route": "ICATF",
-      "matter": "former Aweswell/LPB counsel; 21-Aug-2026 Tenerife communication and historical custody questions",
-      "classification": "direct_canary_bar_and_matter_nexus",
-      "boundary": "No disciplinary outcome is inferred."
+      "route": "ICATF — protection / traceability / restoration",
+      "matter": "historic Aweswell/LPB project-side counsel; DP 1041/2017; specific LPB mandate terminated by the Insolvency Administrator on 25-Jan-2018 after documented Bar/judicial threats; 21-Aug-2026 Tenerife communication seeks preservation and certification of any Bar action directed at him",
+      "classification": "former_project_counsel_affected_by_documented_ac_pressure__restoration_traceability",
+      "boundary": "Por Derecho/Aweswell makes no allegation of professional misconduct against Cristo. The documented Bar threat and specific mandate termination do not prove that ICATF opened or decided a file, that the IA's conduct was legally unlawful, or that the pressure alone caused the later DP 1041/2017 discontinuance.",
+      "project_side_status": "OUR_FORMER_COUNSEL__SUPPORTIVE_RESTORATION_POSITION",
+      "proved": [
+        "Cristo acted for LPB in DP 1041/2017; the 19-Dec-2017 court order admitted the requested preliminary diligence seeking CAM's complete credit-assignment deed, including price, payment date and transaction costs.",
+        "On 18-Jan-2018 the Insolvency Administrator warned several lawyers including Cristo that unauthorised acts would be reported to Fiscalía and the Bar.",
+        "On 25-Jan-2018 the Insolvency Administrator told Cristo he would report the matter to the Bar for the corresponding purposes, terminated the specific LPB professional relationship, requested venia, required him not to act, warned of judicial action and instructed the procurador not to file without IA authorisation.",
+        "No voluntary resignation by Cristo from that specific LPB mandate has been located.",
+        "Cristo continued broader Sun Park legal work after January 2018.",
+        "On 4-Feb-2023 Cristo recovered the 25-Jan-2018 email and described it as the email relating to the complaint to the Bar and the other threats.",
+        "The 21-Aug-2026 ICATF communication expressly states that it is not a complaint against Cristo and seeks preservation/certification of whether the documented threat became a Bar action."
+      ],
+      "open": [
+        "Whether the Insolvency Administrator actually filed or activated a complaint, preliminary information, hearing, disciplinary file or inter-Bar communication concerning Cristo.",
+        "Any ICATF entry number, complaint, transfer, file, decision, archive/closure record or other institutional record concerning the 2018 threat.",
+        "Any professional, reputational or procedural consequence to Cristo from an actual Bar action, if one existed.",
+        "The original LPB discontinuance filing and complete internal instruction/authority chain for the later withdrawal from DP 1041/2017.",
+        "Legal/ethical assessment of the documented pressure; unlawfulness is not treated as an established fact."
+      ],
+      "restoration_objective": "Recover and certify the record, identify any evidenced professional/procedural effect, and enable Cristo to understand, correct or rehabilitate any record or consequence where the certified evidence warrants it."
     },
     {
       "name": "Juan Tomás Parrilla Suárez",
@@ -174,6 +192,7 @@
     }
   ],
   "open_gaps": [
+    "Certify whether the Insolvency Administrator's January 2018 Bar threat against Cristo Ayose Suárez Pimentel became any ICATF complaint, preliminary information, hearing, file, inter-Bar communication, decision or closure record, and recover any professional consequence for restoration/correction.",
     "Certify whether ICAM actually transmitted 1487/26 to ICATF and whether ICATF assigned a local reference.",
     "Recover the substantive response behind the separate March–June 2026 CGAE ethical-channel track.",
     "Complete individual Colegio verification where the present record establishes a matter nexus but not the exact Bar route.",
