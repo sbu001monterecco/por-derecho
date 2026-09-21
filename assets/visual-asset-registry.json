@@ -1,5 +1,5 @@
 {
-  "registry_version": "1.2.0",
+  "registry_version": "1.3.0",
   "policy_id": "PD-VISUAL-ID-LOCK-2026-08-19",
   "control_date": "2026-09-21",
   "purpose": "Canonical identity, provenance and byte-lock registry for named-person and material-asset images used by Por Derecho.",
@@ -336,6 +336,44 @@
       },
       "storage_mode": "repository-byte-locked",
       "usage_note": "Use this asset as the official base reference for future visual derivatives of Gil Marer unless the user explicitly designates a newer official base."
+    },
+    "person.gil-marer.about-page": {
+      "subject_type": "person",
+      "canonical_name": "Gil Marer",
+      "caepr_id": "PD-SP-P-0001",
+      "short_label": "Gil Marer / About-page portrait",
+      "roles": [
+        "Founder and public voice · Por Derecho",
+        "Principal sponsor · Project Sun Rock / Aweswell"
+      ],
+      "path": "assets/actors/gil-marer--about-page--20260921.webp",
+      "git_blob_sha": "577b78c9949a45cb41b493c4091c718f2cd64b6a",
+      "identity_status": "LOCKED_CANONICAL_REPOSITORY_ASSET",
+      "identity_basis": "Website derivative of the user-approved official Gil Marer portrait. The user expressly instructed on 21 September 2026 that the stylised version be used on the About page, principally to remove the wine/bar background and make the portrait fit the website better. No facial-identification inference performed.",
+      "approved_contexts": [
+        "English About page",
+        "Spanish Sobre nosotros page",
+        "Open Graph preview for the About pages"
+      ],
+      "alt_en": "Portrait of Gil Marer, founder and principal sponsor of Aweswell and Project Sun Rock",
+      "alt_es": "Retrato de Gil Marer, fundador y promotor principal de Aweswell y Project Sun Rock",
+      "source_provenance": {
+        "derived_from_asset_id": "person.gil-marer.official-base",
+        "source_master_sha256": "e843a3c040781b0a2356620854b28839fbcafbc7873b7ef84e1578cce87138a6",
+        "source_master_dimensions": "1254x1254",
+        "source_master_format": "png",
+        "repository_derivative_sha256": "5a11c991401ed1c87a6770439a9e77113e4ff7a2b897c9b674c0d96ceb779ac4",
+        "repository_derivative_dimensions": "800x800",
+        "repository_derivative_bytes": 66140,
+        "repository_derivative_format": "webp",
+        "background_treatment": "Warm neutral editorial backdrop; no wine bottles, bar shelves or identifiable hospitality-background clutter.",
+        "user_approval_date": "2026-09-21",
+        "legacy_about_path": "assets/gil-marer.webp",
+        "legacy_about_blob_sha": "5f8fb1013fdce7953a5fdf3cb3083861c9e4576f"
+      },
+      "storage_mode": "repository-byte-locked",
+      "usage_note": "Website-facing About-page derivative; the official base portrait remains person.gil-marer.official-base.",
+      "variant_of": "person.gil-marer.official-base"
     }
   },
   "rejected_or_prohibited_mappings": [
