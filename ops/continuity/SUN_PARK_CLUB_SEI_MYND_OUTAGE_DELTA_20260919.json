@@ -1,0 +1,31 @@
+{
+  "schema": "por-derecho.github-outage-content-delta.v1",
+  "control_id": "PD-SP-MYND-GH-OUTAGE-20260919-01",
+  "date": "2026-09-19",
+  "repository": "sbu001monterecco/por-derecho",
+  "transport": "github_only",
+  "gitlab_access": "NOT_ATTEMPTED_USER_REPORTED_BLOCKED",
+  "scope": "Sun Park to Lava Verde to Club Sei Lanzarote to MYND Yaiza forward/reverse continuity",
+  "public_routes": [
+    "/en/lava-verde-club-sei-meeting-point/",
+    "/es/lava-verde-club-sei-meeting-point/"
+  ],
+  "source_controls": [
+    "archive/prompts/SUN_PARK_TO_MYND_YAIZA_UNITARY_REVERSE_ENGINEERING_MASTER_PROMPT_19SEP2026.md",
+    "archive/SUN_PARK_CLUB_SEI_MYND_GITHUB_CONTINUITY_UPDATE_19SEP2026.md"
+  ],
+  "evidence_boundaries": [
+    "retail exposure is not proof of bookings, payment or revenue",
+    "material control is not legal title",
+    "later title is not retrospective authority",
+    "professional knowledge is not participation",
+    "institutional receipt or review is not a merits finding"
+  ],
+  "external_actions": {
+    "email_sent": false,
+    "filing_made": false,
+    "social_post_published": false,
+    "gitlab_write_attempted": false
+  },
+  "reconciliation_after_gitlab_restoration": "ADDITIVE_EXACT_OBJECT_COMPARISON_REQUIRED"
+}

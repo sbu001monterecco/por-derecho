@@ -1,0 +1,45 @@
+{
+  "pr": 1680,
+  "merge_sha": "0029415c77035785ea65ecf71655f96843ed4036",
+  "phase": "VERIFIED_FOR_SCOPE",
+  "fence": 19,
+  "verification_receipt": {
+    "pr": 1680,
+    "candidate_sha": "505decedf3793716fabb34bb46bd8081a242d749",
+    "at": "2026-09-20T20:25:03.683040Z",
+    "merge_sha": "0029415c77035785ea65ecf71655f96843ed4036",
+    "pages_run_id": 35535402290,
+    "exact_matches": [
+      {
+        "path": "en/index.html",
+        "sha256": "c048d21d4c94e3cb6896e4c74d69a9ab73f84c3426d40fe815370b40fe1ba109",
+        "bytes": 228197
+      },
+      {
+        "path": "en/presidencia-platform-group-recovery/index.html",
+        "sha256": "84f80123a3f04ff3708c22d70fd6856398087d3855808fd0078d88da52b2e22a",
+        "bytes": 13928
+      },
+      {
+        "path": "es/index.html",
+        "sha256": "48a7ebf0751867525f140cf3e70c34f8fe22a1c6edd7aeb0b3178e788da95dda",
+        "bytes": 237351
+      },
+      {
+        "path": "es/presidencia-plataforma-grupo-recuperacion/index.html",
+        "sha256": "990d1e485e56de1a116eb668e3b1f8f821fd9c3e56dca9150071b5c542da0bba",
+        "bytes": 14670
+      },
+      {
+        "path": "publication-manifests/presidencia-platform-group-thread-20260920.json",
+        "sha256": "1e89f951b2e97e7816387062623c061d398fb0c528aabdd7b4b6d74aef242aa2",
+        "bytes": 4996
+      }
+    ],
+    "pending": [],
+    "scope": "Changed readable public resources plus ES/EN entrypoints. Browser checks are separate premerge evidence; not a whole-site or legal-proof certificate."
+  },
+  "source_workflow_run": 35535410833,
+  "source_artifact": 10612686147,
+  "scope_limit": "Repository/publication verification only; no official filing or merits finding."
+}

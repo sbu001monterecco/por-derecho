@@ -1,6 +1,7 @@
 # DIP 2/2026 official-record publication control
 
-**Date:** 25 August 2026
+**Original publication date:** 25 August 2026
+**Controlling update:** 18 September 2026
 
 **Status:** primary-source gap closure, public-safe digitisation and publication control
 **Scope:** Fiscalía de la Comunidad Autónoma de Canarias, DIP 2/2026, Concurso Ordinario 36/2012 judicial-conduct complaint track.
@@ -104,3 +105,31 @@ than treating absence as proof of nonexistence:
 
 No email was sent, no Gmail draft was created and no LinkedIn post was prepared
 or published during this publication step.
+
+
+## 18 September 2026 superseding source update
+
+The connected mailbox was re-opened and the native sources were re-controlled. The existing two official Fiscalía documents remain fully digitised and their native hashes re-confirm:
+
+- 6-Mar Decree: `7d7be3516fd691de5da0d05081e5d4916b6e3141804891abf5742df82007a452`;
+- 9-Mar notice: `dc4d6d8b5843e0f052cbfd8025466bb1a25ae2d0634c31d6186383263168f261`.
+
+The signed 11-Mar party update is now also fully digitised under `EVID-2026-FISCALIA-DIP2-ACTUALIZACION-11MAR-005`, native SHA-256 `0c3116c35b7dea1976dd39ee043898d0aa6b5b1164c36c9b014b4c3ca70d85b9`.
+
+The prior shorthand “appeal-status premise corrected 11 March” is refined. What is source-proved is that the complainant **communicated the correction on 11 March** and requested incorporation. A substantive institutional correction/reconsideration after receipt has not yet been located.
+
+The 18-Sep audit now classifies:
+1. the appeal/finality premise as factually contradicted by the later certified appeal record;
+2. the move from ATLANTE non-display to substantive non-existence/finality as an alleged analytical overreach;
+3. the tension between the Decree's own summary of the complaint and its later characterisation as unsupported disagreement;
+4. the distinction between allegations being present in the record and being substantively examined;
+5. the absence of a complete source-to-conclusion audit;
+6. post-11-Mar treatment as an open institutional gap;
+7. possible propagation into DP 1901 as an open question only.
+
+The 14-Sep DP 1901 order is separately digitised from three source photographs in:
+`evidence/judicial/dp-1901-2026/full-text/auto-14sep2026-public-transcription.md` (canonical validated path; the earlier `auto-14sep2026-photo-transcription.md` path is retained as a same-source legacy transcription).
+
+No inference of deliberate falsehood, capture, prevaricación, coordination or criminality is created by this update.
+
+The 12-March registry-routing notification is now separately controlled as `EVID-2026-FISCALIA-DIP2-REGAGE-TRAMITACION-007`. It reports passage to the Registro General Fiscalía de la Comunidad Autónoma de Canarias for processing; the email itself says it is informational and has no legal value, so substantive file incorporation/review remains open.

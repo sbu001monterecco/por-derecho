@@ -14,48 +14,52 @@ on:
       - '.github/workflows/outage-backend-parity.yml'
       - '.github/workflows/tech-platform-monitor.yml'
       - '.github/workflows/publication-integrity-gate.yml'
+      - '.github/workflows/verify-unitary-enterprise-attribution-live.yml'
       - '.github/workflows/off-github-preservation.yml'
+      - 'scripts/preservation_snapshot_plan.py'
+      - 'scripts/test_preservation_snapshot_plan.py'
       - 'ops/PUBLICATION_CONTROLLER.md'
+      - 'ops/CURRENT_UNITARY_STATE.json'
       - 'ops/duo/**'
       - 'ops/continuity/**'
       - 'assets/data/matter-identity-registry-v1*.json'
       - 'assets/data/matter-identity-operational-control-v1.json'
+      - 'assets/data/proceedings-interlinkability-v1.json'
       - 'archive/PROCEEDINGS_MASTER_REGISTER.csv'
       - 'research/por-derecho/second-pair-of-eyes/**'
       - 'assets/data/por-derecho-second-pair-applications.json'
       - 'assets/data/proceedings-case-prism-v1.json'
       - 'scripts/build_proceedings_case_prism_v2.py'
+      - 'scripts/build_proceedings_interlinkability_v1.py'
+      - 'scripts/audit_proceedings_interconnectivity_map.py'
+      - 'scripts/validate_unitary_control_plane.py'
       - 'scripts/classify_public_impact_shadow_20260917.py'
       - 'scripts/audit_github_backend_capabilities_20260917.py'
       - 'scripts/validate_continuity_horizon_20260917.py'
       - 'scripts/validate_gitlab_public_surface_recovery_20260918.py'
+      - 'scripts/validate_gitlab_backend_recovery_20260919.py'
+      - 'scripts/validate_github_gitlab_public_gap_closure_20260919.py'
+      - 'scripts/validate_gitlab_specialist_route_bridges_20260919.py'
+      - 'en/gitlab-public-gap-map/**'
+      - 'es/mapa-brechas-publicas-gitlab/**'
+      - 'en/orion-transparency-memorandum/**'
+      - 'en/portfolio-international-nexus/**'
+      - 'en/portfolio-board-open-letter/**'
+      - 'en/canary-presidency-records-coordination/**'
+      - 'en/media-travel-asset-recovery/**'
+      - 'en/new-horizons-source-images/**'
+      - 'en/actua-to-title-documentary-journey/**'
+      - 'en/sun-park-history/**'
+      - 'en/site-index/index.html'
+      - 'es/indice-web/index.html'
+      - 'sitemap-unitary-shell.xml'
+      - 'assets/connected-search-20260919.js'
+      - 'en/search/**'
+      - 'es/buscar/**'
       - 'tests/test_github_outage_backend_20260917.py'
       - 'tests/test_github_backend_hardening_20260917.py'
   pull_request:
-    paths:
-      - 'AGENTS.md'
-      - '.github/copilot-instructions.md'
-      - '.github/evidence-intelligence/**'
-      - '.github/workflows/outage-backend-parity.yml'
-      - '.github/workflows/tech-platform-monitor.yml'
-      - '.github/workflows/publication-integrity-gate.yml'
-      - '.github/workflows/off-github-preservation.yml'
-      - 'ops/PUBLICATION_CONTROLLER.md'
-      - 'ops/duo/**'
-      - 'ops/continuity/**'
-      - 'assets/data/matter-identity-registry-v1*.json'
-      - 'assets/data/matter-identity-operational-control-v1.json'
-      - 'archive/PROCEEDINGS_MASTER_REGISTER.csv'
-      - 'research/por-derecho/second-pair-of-eyes/**'
-      - 'assets/data/por-derecho-second-pair-applications.json'
-      - 'assets/data/proceedings-case-prism-v1.json'
-      - 'scripts/build_proceedings_case_prism_v2.py'
-      - 'scripts/classify_public_impact_shadow_20260917.py'
-      - 'scripts/audit_github_backend_capabilities_20260917.py'
-      - 'scripts/validate_continuity_horizon_20260917.py'
-      - 'scripts/validate_gitlab_public_surface_recovery_20260918.py'
-      - 'tests/test_github_outage_backend_20260917.py'
-      - 'tests/test_github_backend_hardening_20260917.py'
+
 
 permissions:
   contents: read
@@ -66,6 +70,7 @@ concurrency:
 
 jobs:
   validate:
+    name: Outage backend parity / validate
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
@@ -79,12 +84,22 @@ jobs:
         run: python3 -m unittest discover -s tests -p 'test_github_outage_backend_20260917.py' -v
       - name: Validate backend hardening controls
         run: python3 -m unittest discover -s tests -p 'test_github_backend_hardening_20260917.py' -v
+      - name: Verify exact-main preservation reuse and rejection cases
+        run: python3 -m unittest discover -s scripts -p test_preservation_snapshot_plan.py -v
       - name: Audit reconstructible backend capabilities
         run: python3 scripts/audit_github_backend_capabilities_20260917.py
       - name: Validate 48h plus 36h continuity horizon
         run: python3 scripts/validate_continuity_horizon_20260917.py
       - name: Validate public GitLab recovery classifications
         run: python3 scripts/validate_gitlab_public_surface_recovery_20260918.py
+      - name: Validate GitLab backend recovery ledger
+        run: python3 scripts/validate_gitlab_backend_recovery_20260919.py
+      - name: Validate GitHub public gap closure
+        run: python3 scripts/validate_github_gitlab_public_gap_closure_20260919.py
+      - name: Validate specialist GitLab route bridges
+        run: python3 scripts/validate_gitlab_specialist_route_bridges_20260919.py
+      - name: Validate deep-search JavaScript syntax
+        run: node --check assets/connected-search-20260919.js
       - name: Exercise advisory classifier
         run: >-
           python3 scripts/classify_public_impact_shadow_20260917.py
@@ -93,6 +108,9 @@ jobs:
           scripts/audit_github_backend_capabilities_20260917.py
           scripts/validate_continuity_horizon_20260917.py
           scripts/validate_gitlab_public_surface_recovery_20260918.py
+          scripts/validate_gitlab_backend_recovery_20260919.py
+          scripts/validate_github_gitlab_public_gap_closure_20260919.py
+          scripts/validate_gitlab_specialist_route_bridges_20260919.py
           tests/test_github_outage_backend_20260917.py
           tests/test_github_backend_hardening_20260917.py
           .github/copilot-instructions.md
@@ -103,5 +121,8 @@ jobs:
           'ops/continuity/GITHUB_OPERATIONAL_BACKEND_PARITY_20260917.json',
           'ops/continuity/GITLAB_EXACT_RECOVERY_QUEUE_20260917.json',
           'ops/continuity/GITHUB_FIRST_48H_PLUS_36H_CONTINUITY_PLAN_20260917.json',
-          'ops/continuity/GITLAB_PUBLIC_SURFACE_RECOVERY_LEDGER_20260918.json']];
+          'ops/continuity/GITLAB_PUBLIC_SURFACE_RECOVERY_LEDGER_20260918.json',
+          'ops/continuity/GITLAB_BACKEND_RECOVERY_LEDGER_20260919.json',
+          'ops/continuity/GITHUB_GITLAB_PUBLIC_GAP_CLOSURE_20260919.json',
+          'ops/continuity/GITLAB_SPECIALIST_ROUTE_BRIDGES_20260919.json']];
           print('machine controls parse: PASS')"

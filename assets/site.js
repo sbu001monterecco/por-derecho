@@ -70,6 +70,7 @@
     load('joan-cruz-multitrack-crosslinks-20260901.js', 'data-joan-cruz-multitrack-loader', '20260904a');
     load('orion-rental-socimi-interlinks-20260905.js', 'data-orion-rental-socimi-interlinks-loader', '20260905a');
     load('orion-rental-socimi-search-extension-20260905.js', 'data-orion-rental-socimi-search-loader', '20260905a');
+    load('caixabank-obrem-two-branch-visual-20260918.js', 'data-caixabank-obrem-two-branch-visual-loader', '20260918a');
     loadCapitalRelationships();
   };
 
@@ -93,4 +94,21 @@
   legacy.addEventListener('load', loadMatkator8584Release, {once:true});
   legacy.addEventListener('error', loadMatkator8584Release, {once:true});
   document.head.appendChild(legacy);
+})();
+
+/* PD1901_PLATFORM_NEXUS_LOADER: current source remains unchanged above. */
+(() => {
+  'use strict';
+  const source = document.currentScript;
+  if (!source) return;
+  const root = new URL('../', source.src);
+  const route = location.pathname.startsWith(root.pathname)
+    ? location.pathname.slice(root.pathname.length).replace(/index\.html$/, '').replace(/\/?$/, '/') : '';
+  const routes = new Set(["es/dp-1901-2026/", "en/dp-1901-2026/", "es/control-21-denuncia-actores-privados-25-junio-2026/", "en/control-21-private-actors-complaint-25-june-2026/", "es/control-24-denuncia-juez-concurso-36-2012/", "en/control-24-insolvency-judge-complaint-36-2012/", "es/control-22-denuncia-administrador-concursal/", "en/control-22-insolvency-administrator-complaint/", "es/dp-1956-2026/", "en/dp-1956-2026/", "es/dp-1901-2026-auto-14-septiembre-2026/", "en/dp-1901-2026-order-14-september-2026/", "es/dp-1901-eg745-coordinacion-interinstitucional/", "en/dp-1901-eg745-cross-institutional-coordination/", "es/eg-745-respuesta-inminente-matriz-fiscalia/", "en/eg-745-imminent-response-prosecution-matrix/", "es/fiscalia-dip-2-2026/", "en/fiscalia-dip-2-2026/", "es/fiscalia-inspeccion-exp-gub-745-2026/", "en/public-prosecution-inspection-exp-gub-745-2026/", "es/ministerio-fiscal/", "en/ministerio-fiscal/", "es/comunidad-instrumentalizacion/", "en/community-instrumentalisation/", "es/aweswell-limited/", "en/aweswell-limited/", "es/arquitectura-nodo-documental-jdam/", "en/architecture-documentary-node-jdam/", "es/incentivos-regionales-gc836-p06/", "en/regional-incentives-gc836-p06/", "es/mismo-hotel-multiples-vidas-financieras/", "en/same-hotel-multiple-financial-lives/", "es/recuperacion-activos-intervencion-decomiso/", "en/asset-recovery-intervention-confiscation/", "es/ric-private-equity-sun-park/", "en/ric-private-equity-sun-park/", "es/sala-situacion-recuperacion-activos/", "en/recovery-command-center/", "es/identidad-digital-sun-park-google-mynd/", "en/sun-park-digital-identity-google-mynd/"]);
+  if (!routes.has(route) || document.querySelector('script[data-pd1901-platform-nexus-loader]')) return;
+  const s = document.createElement('script');
+  s.src = new URL('assets/dp1901-platform-recovery-nexus-20260920.js?v=20260920a', root).href;
+  s.dataset.pd1901PlatformNexusLoader = '20260920a';
+  s.defer = true;
+  document.head.appendChild(s);
 })();

@@ -1,6 +1,6 @@
 {
   "schema": "por-derecho.sun-rock-capital-relationships.v1",
-  "control_date": "2026-09-16",
+  "control_date": "2026-09-19",
   "status": "PUBLIC_SAFE_GATEWAY_NOT_OFFER_NOT_COMMITMENT",
   "sponsor": "Aweswell Limited",
   "platform": "Sun Rock",
@@ -68,5 +68,10 @@
     "ring-fenced hotel ProjectCos"
   ],
   "repository_rule": "Public Git contains only public-safe architecture. Detailed family balance-sheet information, transaction-specific terms, private memoranda and eligibility decisions remain restricted.",
-  "gitlab_rule": "GitLab remains read-only from the originating GitHub workspace. The separate GitLab congestion workspace must reconcile this release into then-current canonical GitLab before declaring the Sun Rock dependency complete."
+  "gitlab_rule": "GitLab remains read-only from the originating GitHub workspace. The separate GitLab congestion workspace must reconcile this release into then-current canonical GitLab before declaring the Sun Rock dependency complete.",
+  "legal_uk_holdco_sponsor": "Aweswell Limited",
+  "commercial_group_platform": "Sun Rock",
+  "group_platform_legal_status": "Sun Rock is the commercial hospitality and investment group/platform identity; it is not presented as a separate incorporated parent company, issuer or automatic borrower.",
+  "project_structure": "Individual ring-fenced hotel ProjectCos with transaction-specific legal borrowers/issuers, equity, debt, accounts, security and underwriting.",
+  "terminology_rule": "Rights, financing obligations and security attach to the actual legal entity and documents. The Sun Rock brand/platform does not itself create recourse to Aweswell or other ProjectCos."
 }

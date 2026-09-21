@@ -17,7 +17,7 @@
     '/es/cadena-instrumentalizacion-ric-fondos-incentivos/','/en/institutionalisation-chain-ric-eu-incentives/',
     '/es/mismo-hotel-multiples-vidas-financieras/','/en/same-hotel-multiple-financial-lives/',
     '/es/cnmv-ricpe-verificacion/','/en/cnmv-ricpe-verification/',
-    '/es/snca-fondos-europeos-trazabilidad/','/en/snca-european-funds-traceability/'
+    '/es/snca-fondos-europeos-trazabilidad/','/en/snca-eu-funds-traceability/'
   ];
   const professionalRoutes = [
     '/es/pwc-canarias-carlos-saavedra-sun-park/','/en/pwc-canarias-carlos-saavedra-sun-park/',

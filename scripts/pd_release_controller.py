@@ -8,6 +8,7 @@ permit. Exclusive server enforcement requires Administration access separately.
 from __future__ import annotations
 import base64
 from copy import deepcopy
+import hashlib
 import json
 import os
 from pathlib import Path
@@ -121,6 +122,40 @@ def previous_run_stopped(api, state):
             raise ValueError('Previous publication controller is still active')
 
 
+def exact_repository_bytes(api, path, merge):
+    """Resolve exact-commit bytes, including Contents API's large-file omission.
+
+    Blob retrieval remains within the authenticated repository API. Its identity
+    and length must match the exact-commit Contents metadata, and the decoded Git
+    object hash is independently recomputed. No mutable/raw URL fallback or new
+    publication authority is introduced.
+    """
+    value = api.request('contents/'+quote(safe_path(path), safe='/')+'?ref='+merge)
+    if (not isinstance(value, dict) or value.get('type') != 'file'
+            or value.get('target') or value.get('submodule_git_url')):
+        raise ValueError('Expected a regular repository file: '+path)
+    expected_sha = value.get('sha')
+    expected_size = value.get('size')
+    if (not isinstance(expected_sha, str) or not re.fullmatch(r'[a-f0-9]{40}', expected_sha)
+            or type(expected_size) is not int or not 0 <= expected_size <= 100 * 1024 * 1024):
+        raise ValueError('Invalid or unsupported exact-file identity/size: '+path)
+    if value.get('encoding') == 'none':
+        value = api.request('git/blobs/'+expected_sha)
+        if (not isinstance(value, dict) or value.get('sha') != expected_sha
+                or value.get('size') != expected_size):
+            raise ValueError('Git blob metadata mismatch: '+path)
+    if value.get('encoding') != 'base64' or not isinstance(value.get('content'), str):
+        raise ValueError('Exact file bytes unavailable: '+path)
+    try:
+        raw = base64.b64decode(''.join(value['content'].split()), validate=True)
+    except (ValueError, UnicodeError) as error:
+        raise ValueError('Invalid exact-file base64: '+path) from error
+    observed_sha = hashlib.sha1(b'blob '+str(len(raw)).encode('ascii')+b'\x00'+raw).hexdigest()
+    if len(raw) != expected_size or observed_sha != expected_sha:
+        raise ValueError('Exact Git blob byte verification failed: '+path)
+    return raw
+
+
 def verify(api, state, blob, pr):
     if not pr['merged'] or pr['head']['sha'] != state['candidate_sha']:
         raise ValueError('No merge for the claimed exact candidate')
@@ -164,10 +199,7 @@ def verify(api, state, blob, pr):
     # Request expected bytes from exact Git blobs; tokens never go to public host.
     expected={}
     for path in sorted(paths):
-        value=api.request('contents/'+quote(path,safe='/')+'?ref='+merge)
-        if value.get('encoding')!='base64':
-            raise ValueError('Explicit byte-verification capability needed for large file: '+path)
-        expected[path]=base64.b64decode(value['content'])
+        expected[path]=exact_repository_bytes(api,path,merge)
     results=[];pending=set(expected);until=time.monotonic()+300
     while pending and time.monotonic()<until:
         for path in sorted(pending):
@@ -194,6 +226,47 @@ def verify(api, state, blob, pr):
     state.setdefault('receipts',[]).append({'pr':pr['number'],'candidate_sha':state['candidate_sha'],'at':utc_now(),**receipt})
     blob=api.save(state,blob)
     return state,blob
+
+
+def supersede_unverified_recovery(api, state, blob, pr):
+    """Release a stale recovery fence without converting an unverified readback into a receipt.
+
+    This is permitted only when the held PR was merged, its exact Pages deployment
+    previously succeeded, and that merge is an ancestor of a later current main.
+    The unresolved byte-readback gap remains explicit and no VERIFIED receipt is added.
+    """
+    if state.get('phase') != 'RECOVERY_REQUIRED' or not pr.get('merged'):
+        raise ValueError('Superseded recovery requires a merged RECOVERY_REQUIRED release')
+    merge = pr.get('merge_commit_sha')
+    current = api.request('git/ref/heads/main')['object']['sha']
+    if not merge or current == merge:
+        raise ValueError('Current main has not superseded the held merge; normal exact verification remains required')
+    comparison = api.request('compare/'+merge+'...'+current)
+    if comparison.get('merge_base_commit', {}).get('sha') != merge or comparison.get('ahead_by', 0) < 1:
+        raise ValueError('Held merge is not a proved ancestor of current main; do not release the fence')
+    deployed = next((item for item in reversed(state.get('checkpoints', []))
+                     if item.get('phase') == 'DEPLOYED'
+                     and item.get('evidence', {}).get('merge_sha') == merge
+                     and item.get('evidence', {}).get('pages_run_id')), None)
+    if not deployed:
+        raise ValueError('No recorded exact deployment exists for the held merge')
+    pages_run_id = deployed['evidence']['pages_run_id']
+    pages_run = api.request('actions/runs/'+str(pages_run_id))
+    if (pages_run.get('name') != 'pages build and deployment' or pages_run.get('head_sha') != merge
+            or pages_run.get('status') != 'completed' or pages_run.get('conclusion') != 'success'):
+        raise ValueError('Recorded Pages deployment cannot be revalidated as exact-SHA success')
+    evidence = {
+        'prior_merge_sha': merge,
+        'current_main_sha': current,
+        'pages_run_id': pages_run_id,
+        'readback_verified': False,
+        'verification_gap_preserved': True,
+        'reason': 'Later legitimate main superseded the deployed release before exact scoped byte readback completed; no verified receipt is inferred.',
+    }
+    state = advance(state, 'SUPERSEDED_WITH_OPEN_READBACK', state['owner'], state['fence'], evidence)
+    state['run_id'] = int(os.environ['GITHUB_RUN_ID'])
+    blob = api.save(state, blob)
+    return state, blob
 
 
 def main() -> int:
@@ -251,6 +324,9 @@ def main() -> int:
             if state['phase']=='CLAIMED':
                 state=advance(state,'ACCEPTED',task,state['fence'],{'checks':checks,'recovered_before_merge':True})
                 state['run_id']=int(os.environ['GITHUB_RUN_ID']);blob=api.save(state,blob)
+        elif (operation=='recover' and pr['merged'] and state['phase']=='RECOVERY_REQUIRED'
+              and api.request('git/ref/heads/main')['object']['sha'] != pr['merge_commit_sha']):
+            state,blob=supersede_unverified_recovery(api,state,blob,pr)
         elif operation=='abort':
             if pr['merged'] or state['phase'] in {'MERGED','DEPLOYED','VERIFIED_FOR_SCOPE'}:
                 raise ValueError('Merged publication cannot be aborted as unmerged')

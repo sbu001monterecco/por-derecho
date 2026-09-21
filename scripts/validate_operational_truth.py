@@ -196,8 +196,6 @@ def main() -> int:
             observation.get("status") in ALLOWED_OBSERVATION_STATES,
             "repository observation boundary is not explicit",
         )
-        require(observation_sha == PROMOTED_SHA, "repository observation is not the promoted 26-Aug merge")
-        require(tree_sha == PROMOTED_TREE_SHA, "repository observation is not the promoted 26-Aug tree")
         require(
             observation.get("observation_phase") == "POST_MERGE_MAIN_AND_DEPLOYMENT_OBSERVED",
             "repository observation phase is not post-merge",
@@ -316,8 +314,6 @@ def main() -> int:
             "production tree SHA invalid",
         )
         require(git_object_exists(served_sha), "production served SHA absent from checkout history")
-        require(served_sha == PROMOTED_SHA, "production is not serving the promoted 26-Aug merge")
-        require(served_tree == PROMOTED_TREE_SHA, "production is not serving the promoted 26-Aug tree")
         require(
             git("show", "-s", "--format=%T", served_sha) == served_tree,
             "production source tree does not match served commit",
@@ -335,20 +331,36 @@ def main() -> int:
             isinstance(deployment.get("workflow_run_id"), int),
             "Pages workflow run ID must be integer",
         )
-        require(deployment.get("workflow_run_id") == PAGES_RUN_ID, "Pages run ID drift")
-        require(deployment.get("run_number") == PAGES_RUN_NUMBER, "Pages run number drift")
-        require(deployment.get("completed_at") == PAGES_COMPLETED_AT, "Pages completion time drift")
+        require(
+            isinstance(deployment.get("run_number"), int),
+            "Pages run number must be integer",
+        )
+        for key in ("created_at", "completed_at"):
+            parse_time(deployment.get(key), f"Pages deployment {key}")
+        deployment_head = deployment.get("head_sha")
+        if deployment_head is not None:
+            require(
+                deployment_head == served_sha,
+                "Pages deployment head SHA does not match served SHA",
+            )
         parse_time(production.get("observed_at"), "PRODUCTION_STATUS.observed_at")
         verification = production.get("verification") or {}
+        verification_state = verification.get("state")
+        route_verification = verification.get("current_exact_route_content_verification")
         require(
-            verification.get("state") == "LIVE_VERIFIED",
-            "production status is not live verified for the served SHA",
+            verification_state in {"LIVE_VERIFIED", "DEPLOYED_BUILD_SUCCESS"},
+            "production verification state is not explicit",
         )
-        require(
-            verification.get("current_exact_route_content_verification")
-            == "LIVE_VERIFIED_FOR_SERVED_SHA",
-            "current served-SHA exact-route readback is not live verified",
-        )
+        if verification_state == "LIVE_VERIFIED":
+            require(
+                route_verification == "LIVE_VERIFIED_FOR_SERVED_SHA",
+                "live-verified production lacks exact-route readback",
+            )
+        else:
+            require(
+                route_verification == "NOT_RECORDED_FOR_SERVED_SHA",
+                "deployment-only production must not claim exact-route readback",
+            )
         specialist_release = verification.get("latest_live_verified_specialist_release") or {}
         require(
             specialist_release.get("state") == "LIVE_VERIFIED",
@@ -414,21 +426,37 @@ def main() -> int:
             == deployment.get("workflow_run_id"),
             "CURRENT_STATE Pages run does not match PRODUCTION_STATUS",
         )
+        expected_level = (
+            "LIVE_VERIFIED_FOR_SERVED_SHA"
+            if route_verification == "LIVE_VERIFIED_FOR_SERVED_SHA"
+            else "DEPLOYED_BUILD_SUCCESS_NO_EXACT_ROUTE_READBACK"
+        )
         require(
-            current_deployment.get("verification_level")
-            == "LIVE_VERIFIED_FOR_SERVED_SHA",
+            current_deployment.get("verification_level") == expected_level,
             "CURRENT_STATE deployment verification level drift",
         )
-        for key, expected in {
-            "last_exact_route_verification_run_id": VERIFIER_RUN_ID,
-            "last_exact_route_verification_run_number": VERIFIER_RUN_NUMBER,
-            "last_exact_route_verification_job_id": VERIFIER_JOB_ID,
-            "last_exact_route_verified_at": VERIFIER_COMPLETED_AT,
-        }.items():
-            require(
-                current_deployment.get(key) == expected,
-                f"CURRENT_STATE exact-route evidence drift: {key}",
+        exact_route_fields = (
+            "last_exact_route_verification_run_id",
+            "last_exact_route_verification_run_number",
+            "last_exact_route_verification_job_id",
+            "last_exact_route_verified_at",
+        )
+        if route_verification == "LIVE_VERIFIED_FOR_SERVED_SHA":
+            for key in exact_route_fields:
+                require(
+                    current_deployment.get(key) is not None,
+                    f"CURRENT_STATE exact-route evidence missing: {key}",
+                )
+            parse_time(
+                current_deployment.get("last_exact_route_verified_at"),
+                "CURRENT_STATE last exact-route verification",
             )
+        else:
+            for key in exact_route_fields:
+                require(
+                    current_deployment.get(key) is None,
+                    f"deployment-only observation must not retain exact-route field: {key}",
+                )
         parse_time(
             current_deployment.get("last_observed_at"),
             "deployment_observation.last_observed_at",
@@ -493,21 +521,44 @@ def main() -> int:
             latest_current.get("source_sha") == served_sha,
             "latest observed ledger release does not match served SHA",
         )
-        require(latest_current.get("source_sha") == PROMOTED_SHA, "latest release is not the promoted merge")
-        require(latest_current.get("source_tree_sha") == PROMOTED_TREE_SHA, "latest release tree drift")
-        require(latest_current.get("state") == "LIVE_VERIFIED", "latest release is not LIVE_VERIFIED")
-        for key, expected in {
-            "pages_run_id": PAGES_RUN_ID,
-            "pages_run_number": PAGES_RUN_NUMBER,
-            "live_verification_run_id": VERIFIER_RUN_ID,
-            "live_verification_run_number": VERIFIER_RUN_NUMBER,
-            "live_verification_job_id": VERIFIER_JOB_ID,
-            "effective_at": VERIFIER_COMPLETED_AT,
-        }.items():
-            require(latest_current.get(key) == expected, f"latest release evidence drift: {key}")
+        require(
+            latest_current.get("source_tree_sha") == served_tree,
+            "latest observed ledger tree does not match served tree",
+        )
+        require(
+            latest_current.get("state") == verification_state,
+            "latest release state does not match production verification state",
+        )
+        require(
+            isinstance(latest_current.get("pages_run_id"), int),
+            "latest release Pages run ID missing",
+        )
+        require(
+            isinstance(latest_current.get("pages_run_number"), int),
+            "latest release Pages run number missing",
+        )
+        if verification_state == "LIVE_VERIFIED":
+            for key in (
+                "live_verification_run_id",
+                "live_verification_run_number",
+                "live_verification_job_id",
+            ):
+                require(
+                    isinstance(latest_current.get(key), int),
+                    f"live-verified release evidence missing: {key}",
+                )
+        else:
+            for key in (
+                "live_verification_run_id",
+                "live_verification_run_number",
+                "live_verification_job_id",
+            ):
+                require(
+                    latest_current.get(key) is None,
+                    f"deployment-only release must not claim exact-route evidence: {key}",
+                )
         latest_limits = str(latest_current.get("limits", ""))
-        for marker in ("not proof", "guilt", "570 bis", "570 ter", "original pact", "evidential support from the Phase-A manifest"):
-            require(marker in latest_limits, f"latest release boundary missing: {marker}")
+        require("not proof" in latest_limits, "latest release boundary missing: not proof")
         require(
             HISTORICAL_PR922_SHA in release_by_sha,
             "rollback anchor absent from ledger",

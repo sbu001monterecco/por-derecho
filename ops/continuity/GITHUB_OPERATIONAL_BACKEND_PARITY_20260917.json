@@ -14,6 +14,23 @@
     {
       "branch": "continuity/gitlab-block-parity-checkpoint-20260917",
       "sha": "da67c0c2731c550b0866dad1f679c437f2b612f9"
+    },
+    {
+      "branch": "continuity/gitlab-block-checkpoint-20260919-0306utc",
+      "sha": "c2d1f9f605086d05c84363c11df4cc04f7e0dfc1"
+    }
+  ],
+  "checkpoint_ref_provenance": [
+    {
+      "branch": "continuity/gitlab-block-checkpoint-20260917-0920utc",
+      "recorded_snapshot_sha": "9fdda70bb1e4dcc572b776b0a3ba7fa6cffd86fc",
+      "observed_ref_sha_20260919": "d20416284e96bc706044b341b27ce5ba34ecb070",
+      "relationship": "VERIFIED_FAST_FORWARD",
+      "ahead_by_commits": 32,
+      "behind_by_commits": 0,
+      "merge_base_sha": "9fdda70bb1e4dcc572b776b0a3ba7fa6cffd86fc",
+      "verification_source": "GitHub compare commits",
+      "boundary": "The recorded snapshot SHA remains the immutable historical anchor. The current branch ref is a descendant fast-forward and must not be force-moved or rewritten to make the ledger match."
     }
   ],
   "layers": [

@@ -3,7 +3,7 @@
   "dataset": "por-derecho.public-proceedings-projection",
   "canonical_source_id": "PROCEEDINGS_MASTER_REGISTER",
   "derivation": "DETERMINISTIC_ALLOWLIST",
-  "canonical_source_sha256": "13866af39632d5097d8496cf5b7c787437d659fff6d0ee258636f9f5ee81a409",
+  "canonical_source_sha256": "587b419d1a62a01fba85bfe2656ab1ea67be8b580fa34ddb002d935fc9e98296",
   "publication_policy": {
     "eligibility_field": "Public_Treatment",
     "public_treatment_allowlist": [
@@ -1073,15 +1073,15 @@
       "Secondary_Reference": "",
       "NIG": "3501643220260016977",
       "Date_or_Period": "2026",
-      "Connection": "Private-actor/CAM documents; title/accounting; DIP 2 link; finite AC cross-evidence only",
-      "Object_or_Purpose": "Separate criminal/documentary verification and admission-control route",
-      "Status": "Providencia 12 Jul 2026 gave Fiscalía five days on admission; later act not located",
-      "Latest_Known_Event": "",
+      "Connection": "Procedural-identity collision: July private-actor/Control-21 mapping versus DIP2/prevarication treatment; exact intake/reparto bridge open",
+      "Object_or_Purpose": "Criminal proceeding now disposed by 14-Sep order; scope/provenance and autonomous private-actor lane require certification",
+      "Status": "Auto 14 Sep 2026 treats proceeding as alleged prevaricación; records Fiscal report of 29 Jul seeking archive; orders sobreseimiento libre/archive",
+      "Latest_Known_Event": "Full 3-page public transcription created 18 Sep from source photographs",
       "Appeal_or_Review": "",
       "Parent_Master_ID": "",
-      "Linked_Proceedings": "",
-      "Source_Status": "VERIFIED_PRIMARY",
-      "Open_Reference_Gap": "Fiscal report, later order, docket and annex index"
+      "Linked_Proceedings": "GC-FIS-017; NAT-FIS-004",
+      "Source_Status": "VERIFIED_PRIMARY_COPY_PHOTOGRAPH_TRANSCRIPTION",
+      "Open_Reference_Gap": "Signed 29-Jul Fiscal report; native/certified 14-Sep order; legal notification metadata; initiating document; certified docket/index; Control 21/daily-reference-24 reparto and any joinder/reassignment act"
     },
     {
       "Master_ID": "GC-CRI-009",
@@ -1291,13 +1291,13 @@
       "Date_or_Period": "2026",
       "Connection": "Superior-Fiscalía judge-related aforado module linked to DP 1901/2026",
       "Object_or_Purpose": "Fiscalía pre-procedural investigation",
-      "Status": "Opened 11 Feb 2026 as recorded in the 6 Mar decree; archived 6 Mar; notice 9 Mar; appeal-status premise corrected 11 Mar",
-      "Latest_Known_Event": "Registered correction REGAGE26e00026303869 filed 11 Mar 2026",
+      "Status": "Opened 11 Feb 2026 as recorded in 6 Mar decree; archived 6 Mar; notice 9 Mar; appeal-status premise formally corrected by registered 11 Mar filing",
+      "Latest_Known_Event": "14 Sep 2026 DP 1901 order records a 29 Jul Ministerio Fiscal report seeking archive; order fully transcribed from source photographs on 18 Sep",
       "Appeal_or_Review": "",
       "Parent_Master_ID": "",
-      "Linked_Proceedings": "GC-CRI-008; GC-FIS-033",
-      "Source_Status": "VERIFIED_PRIMARY",
-      "Open_Reference_Gap": "Complete certified file, separate 11-Feb opening decree, incorporation/reconsideration after correction and transmission record"
+      "Linked_Proceedings": "GC-CRI-008; GC-FIS-033; NAT-FIS-004",
+      "Source_Status": "VERIFIED_PRIMARY_AVAILABLE_CORPUS_FULL_TEXT",
+      "Open_Reference_Gap": "Separate 11-Feb opening decree; complete certified DIP 2 file/index; post-11-Mar handling/correction record; signed 29-Jul DP1901 Fiscal report and source corpus; transmission/reparto bridge into DP1901"
     },
     {
       "Master_ID": "GC-FIS-018",

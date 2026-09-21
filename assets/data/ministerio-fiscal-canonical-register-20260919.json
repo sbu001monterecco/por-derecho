@@ -1,0 +1,1054 @@
+{
+  "schema": "por-derecho.ministerio-fiscal-canonical-cross-register.v1",
+  "control_date": "2026-09-19",
+  "status": "SOURCE_CONTROLLED_CROSS_REGISTER_WITH_EXPLICIT_GAPS",
+  "purpose": "Canonical cross-register for every Ministerio Fiscal office/entity, named prosecutor, file, event and evidence item currently mentioned or source-controlled in the Sun Park / Por Derecho perimeter. It extends existing identifiers without renumbering them.",
+  "identity_policy": {
+    "offices": "Reuse existing PD-MF-OFF-#### identifiers from assets/data/ministerio-fiscal-directory-v1.json. New offices may append only; never renumber.",
+    "entities": "PD-MF-ENT-#### identifies an institutional/specialist entity or functional delegation in this cross-register; it is not an official Ministerio Fiscal identifier.",
+    "people": "PD-MF-PER-#### is the cross-register identity. existing_caepr_id preserves any controlling PD-SP-P-#### identity already present in the justice-professionals registry.",
+    "files": "Existing Master_ID values remain controlling. PD-MF-FIL-#### is used only when a referenced file lacks a reconciled Master_ID.",
+    "events": "PD-MF-REG-EVT-#### is this register's stable event reference. A global PD-SP-EVT identity, REGAGE, DI, DIP, EG or NIG remains separate.",
+    "evidence": "PD-MF-EVD-#### identifies a source/evidence object. Private-provider locators and Gmail message IDs are never published here."
+  },
+  "proof_boundaries": [
+    "Office membership or hierarchical position does not establish personal knowledge, handling or agreement with another prosecutor's act.",
+    "A registration receipt proves presentation/routing metadata stated on the receipt, not merits review, joinder, admission or investigation.",
+    "A signed decree proves issuance, signatory and stated reasoning/outcome within its scope; it does not prove complete expediente contents, correctness, motive or criminality.",
+    "Complaints, ampliaciones and party statements remain allegations unless independently established.",
+    "Specialist relevance is a competence/coordination map, not a finding that a specialist unit accepted jurisdiction or the allegations."
+  ],
+  "gitlab_mirror_control": {
+    "state": "PENDING_GITLAB_ACCOUNT_RESTORATION",
+    "canonical_repository_rule": "GitLab main remains the controlling repository when access is restored; GitHub changes must be reconciled against the then-current GitLab main before propagation.",
+    "queue_path": "archive/MINISTERIO_FISCAL_GITLAB_RESTORE_MIRROR_QUEUE_19SEP2026.md",
+    "no_blind_overwrite": true
+  },
+  "offices": [
+    {
+      "id": "PD-MF-OFF-0001",
+      "name": "Fiscalía General del Estado",
+      "tier": "STATE_CENTRAL",
+      "status": "EXISTING_CANONICAL_ID"
+    },
+    {
+      "id": "PD-MF-OFF-0002",
+      "name": "Inspección Fiscal de la Fiscalía General del Estado",
+      "tier": "STATE_CENTRAL_SUPERVISION",
+      "status": "EXISTING_CANONICAL_ID"
+    },
+    {
+      "id": "PD-MF-OFF-0003",
+      "name": "Secretaría Técnica de la Fiscalía General del Estado",
+      "tier": "STATE_CENTRAL_TECHNICAL",
+      "status": "EXISTING_CANONICAL_ID"
+    },
+    {
+      "id": "PD-MF-OFF-0004",
+      "name": "Unidad de Delitos contra la Administración Pública — FGE",
+      "tier": "STATE_CENTRAL_SPECIALIST",
+      "status": "EXISTING_CANONICAL_ID"
+    },
+    {
+      "id": "PD-MF-OFF-0005",
+      "name": "Fiscalía Especial contra la Corrupción y la Criminalidad Organizada",
+      "tier": "STATE_SPECIALIST",
+      "status": "EXISTING_CANONICAL_ID"
+    },
+    {
+      "id": "PD-MF-OFF-0006",
+      "name": "Fiscalía de la Audiencia Nacional",
+      "tier": "STATE_SPECIALIST",
+      "status": "EXISTING_CANONICAL_ID"
+    },
+    {
+      "id": "PD-MF-OFF-0007",
+      "name": "Fiscalía de la Sala de lo Penal del Tribunal Supremo",
+      "tier": "STATE_SPECIALIST",
+      "status": "EXISTING_CANONICAL_ID"
+    },
+    {
+      "id": "PD-MF-OFF-0008",
+      "name": "Fiscalía de la Comunidad Autónoma de Canarias",
+      "tier": "AUTONOMOUS_COMMUNITY",
+      "status": "EXISTING_CANONICAL_ID"
+    },
+    {
+      "id": "PD-MF-OFF-0009",
+      "name": "Fiscalía Provincial de Las Palmas",
+      "tier": "PROVINCIAL",
+      "status": "EXISTING_CANONICAL_ID"
+    },
+    {
+      "id": "PD-MF-OFF-0010",
+      "name": "Fiscalía Provincial de Santa Cruz de Tenerife",
+      "tier": "PROVINCIAL",
+      "status": "EXISTING_CANONICAL_ID"
+    },
+    {
+      "id": "PD-MF-OFF-0011",
+      "name": "Fiscalía de Área de Arrecife de Lanzarote–Puerto del Rosario",
+      "tier": "AREA",
+      "status": "EXISTING_CANONICAL_ID"
+    },
+    {
+      "id": "PD-MF-OFF-0012",
+      "name": "Fiscalía Europea",
+      "tier": "EU_SUPRANATIONAL",
+      "status": "EXISTING_CANONICAL_ID_SEPARATE_BRANCH"
+    },
+    {
+      "id": "PD-MF-OFF-0013",
+      "name": "Unidad de Apoyo a la Fiscalía Europea",
+      "tier": "STATE_SUPPORT_TO_EU_ROUTE",
+      "status": "EXISTING_CANONICAL_ID"
+    },
+    {
+      "id": "PD-MF-OFF-0014",
+      "name": "Fiscalía Provincial de Valencia",
+      "tier": "PROVINCIAL_OTHER_TERRITORY",
+      "status": "EXISTING_CANONICAL_ID"
+    },
+    {
+      "id": "PD-MF-OFF-0015",
+      "name": "Unidad de Delitos Económicos — Fiscalía General del Estado",
+      "tier": "STATE_CENTRAL_SPECIALIST",
+      "status": "APPENDED_2026-09-19",
+      "official_source": "https://www.fiscal.es/delitos-economicos"
+    }
+  ],
+  "entities": [
+    {
+      "id": "PD-MF-ENT-0001",
+      "name": "Ministerio Fiscal",
+      "class": "INSTITUTION",
+      "office_ids": [
+        "PD-MF-OFF-0001"
+      ]
+    },
+    {
+      "id": "PD-MF-ENT-0002",
+      "name": "Fiscalía General del Estado",
+      "class": "CENTRAL_INSTITUTION",
+      "office_ids": [
+        "PD-MF-OFF-0001"
+      ]
+    },
+    {
+      "id": "PD-MF-ENT-0003",
+      "name": "Inspección Fiscal",
+      "class": "SUPERVISION",
+      "office_ids": [
+        "PD-MF-OFF-0002"
+      ]
+    },
+    {
+      "id": "PD-MF-ENT-0004",
+      "name": "Unidad de Delitos Económicos",
+      "class": "SPECIALIST_UNIT",
+      "office_ids": [
+        "PD-MF-OFF-0015"
+      ]
+    },
+    {
+      "id": "PD-MF-ENT-0005",
+      "name": "Unidad de Delitos contra la Administración Pública",
+      "class": "SPECIALIST_UNIT",
+      "office_ids": [
+        "PD-MF-OFF-0004"
+      ]
+    },
+    {
+      "id": "PD-MF-ENT-0006",
+      "name": "Fiscalía Especial contra la Corrupción y la Criminalidad Organizada",
+      "class": "SPECIAL_PROSECUTION_OFFICE",
+      "office_ids": [
+        "PD-MF-OFF-0005"
+      ]
+    },
+    {
+      "id": "PD-MF-ENT-0007",
+      "name": "Fiscalía de la Comunidad Autónoma de Canarias",
+      "class": "AUTONOMOUS_PROSECUTION_OFFICE",
+      "office_ids": [
+        "PD-MF-OFF-0008"
+      ]
+    },
+    {
+      "id": "PD-MF-ENT-0008",
+      "name": "Fiscalía Provincial de Las Palmas",
+      "class": "PROVINCIAL_PROSECUTION_OFFICE",
+      "office_ids": [
+        "PD-MF-OFF-0009"
+      ]
+    },
+    {
+      "id": "PD-MF-ENT-0009",
+      "name": "Delegación de Delitos contra la Administración Pública — Las Palmas",
+      "class": "SPECIALIST_DELEGATION",
+      "office_ids": [
+        "PD-MF-OFF-0009"
+      ]
+    },
+    {
+      "id": "PD-MF-ENT-0010",
+      "name": "Delegación de Medio Ambiente y Urbanismo — Las Palmas",
+      "class": "SPECIALIST_DELEGATION",
+      "office_ids": [
+        "PD-MF-OFF-0009"
+      ]
+    },
+    {
+      "id": "PD-MF-ENT-0011",
+      "name": "Delegación territorial de la Fiscalía Anticorrupción — Las Palmas",
+      "class": "SPECIALIST_DELEGATION",
+      "office_ids": [
+        "PD-MF-OFF-0005",
+        "PD-MF-OFF-0009"
+      ]
+    },
+    {
+      "id": "PD-MF-ENT-0012",
+      "name": "Fiscalía de Área Arrecife–Puerto del Rosario",
+      "class": "AREA_PROSECUTION_OFFICE",
+      "office_ids": [
+        "PD-MF-OFF-0011"
+      ]
+    },
+    {
+      "id": "PD-MF-ENT-0013",
+      "name": "Fiscalía Provincial de Santa Cruz de Tenerife",
+      "class": "PROVINCIAL_PROSECUTION_OFFICE",
+      "office_ids": [
+        "PD-MF-OFF-0010"
+      ]
+    },
+    {
+      "id": "PD-MF-ENT-0014",
+      "name": "Fiscalía de la Audiencia Nacional",
+      "class": "STATE_SPECIALIST_ROUTE",
+      "office_ids": [
+        "PD-MF-OFF-0006"
+      ]
+    },
+    {
+      "id": "PD-MF-ENT-0015",
+      "name": "Fiscalía Europea / EPPO",
+      "class": "EU_SUPRANATIONAL_SEPARATE",
+      "office_ids": [
+        "PD-MF-OFF-0012"
+      ]
+    },
+    {
+      "id": "PD-MF-ENT-0016",
+      "name": "Fiscalía Provincial de Valencia",
+      "class": "PROVINCIAL_OTHER_TERRITORY",
+      "office_ids": [
+        "PD-MF-OFF-0014"
+      ]
+    }
+  ],
+  "people": [
+    {
+      "id": "PD-MF-PER-0001",
+      "name": "Teresa Peramato Martín",
+      "existing_caepr_id": "PD-SP-P-0116",
+      "role": "Fiscal General del Estado",
+      "office_ids": [
+        "PD-MF-OFF-0001"
+      ],
+      "case_capacity": "CURRENT_OFFICE_IDENTITY_ONLY_UNLESS_ACT_SPECIFIC_SOURCE",
+      "source": "https://www.fiscal.es/altos-cargos"
+    },
+    {
+      "id": "PD-MF-PER-0002",
+      "name": "María José Osuna Cerezo",
+      "existing_caepr_id": "PD-SP-P-0108",
+      "role": "Fiscal de Sala Jefa Inspectora",
+      "office_ids": [
+        "PD-MF-OFF-0002"
+      ],
+      "file_refs": [
+        "NAT-FIS-004"
+      ],
+      "case_capacity": "SIGNED_EG745_ARCHIVE_DECREE_2026-08-26",
+      "source": "https://www.fiscal.es/la-fiscalia-general-del-estado"
+    },
+    {
+      "id": "PD-MF-PER-0003",
+      "name": "Fernando Rodríguez Rey",
+      "existing_caepr_id": null,
+      "role": "Fiscal de Sala Coordinador de Delitos Económicos",
+      "office_ids": [
+        "PD-MF-OFF-0015"
+      ],
+      "file_refs": [
+        "PD-MF-FIL-0017"
+      ],
+      "case_capacity": "SIGNED_EG58_JOINER_ACT_2026-09-08",
+      "source": "https://www.fiscal.es/delitos-economicos"
+    },
+    {
+      "id": "PD-MF-PER-0004",
+      "name": "Emilio Jesús Sánchez Ulled",
+      "existing_caepr_id": "PD-SP-P-0109",
+      "role": "Fiscal de Sala Coordinador de Delitos contra la Administración Pública",
+      "office_ids": [
+        "PD-MF-OFF-0004"
+      ],
+      "file_refs": [
+        "GC-FIS-018"
+      ],
+      "case_capacity": "SIGNED_IDENTIFIED_EG49_DECISIONS_2026-06-03_AND_2026-06-08",
+      "source": "https://www.fiscal.es/w/emilio-sanchez-ulled"
+    },
+    {
+      "id": "PD-MF-PER-0005",
+      "name": "Alejandro Luzón Cánovas",
+      "existing_caepr_id": "PD-SP-P-0117",
+      "role": "Fiscal de Sala Jefe de Anticorrupción",
+      "office_ids": [
+        "PD-MF-OFF-0005"
+      ],
+      "case_capacity": "CURRENT_OFFICE_IDENTITY_ONLY_UNLESS_ACT_SPECIFIC_SOURCE",
+      "source": "https://www.fiscal.es/fiscalia-especial-contra-la-corrupcion"
+    },
+    {
+      "id": "PD-MF-PER-0006",
+      "name": "Jaime Serrano-Jover González",
+      "existing_caepr_id": "PD-SP-P-0106",
+      "role": "Fiscal Superior de la Comunidad Autónoma de Canarias",
+      "office_ids": [
+        "PD-MF-OFF-0008"
+      ],
+      "file_refs": [
+        "GC-FIS-033"
+      ],
+      "case_capacity": "SIGNED_EG112_CLARIFICATION_2026-08-23; PRIOR_OFFICE_HISTORY_NOT_RETROACTIVE_ATTRIBUTION",
+      "source": "https://www.fiscal.es/w/fiscal-superior-canarias"
+    },
+    {
+      "id": "PD-MF-PER-0007",
+      "name": "Beatriz Sánchez Carreras",
+      "existing_caepr_id": "PD-SP-P-0103",
+      "role": "Fiscal Jefa Provincial de Las Palmas",
+      "office_ids": [
+        "PD-MF-OFF-0009"
+      ],
+      "file_refs": [
+        "GC-FIS-013",
+        "GC-FIS-014",
+        "GC-FIS-016"
+      ],
+      "case_capacity": "SOURCE_CONTROLLED_PERSONAL_ACTS_ONLY; OFFICE_RESPONSIBILITY_NOT_COLLAPSED_TO_PERSON",
+      "source": "https://www.fiscal.es/-/fiscalia-provincial-de-las-palmas"
+    },
+    {
+      "id": "PD-MF-PER-0008",
+      "name": "Antonio López Ojeda",
+      "existing_caepr_id": null,
+      "role": "Teniente Fiscal — Fiscalía Provincial de Las Palmas",
+      "office_ids": [
+        "PD-MF-OFF-0009"
+      ],
+      "case_capacity": "CURRENT_OFFICE_IDENTITY_ONLY; NO SUN_PARK_ACT_ATTRIBUTED_IN_THIS_REGISTER",
+      "source": "https://www.fiscal.es/-/fiscalia-provincial-de-las-palmas"
+    },
+    {
+      "id": "PD-MF-PER-0009",
+      "name": "M.ª Yolanda López Gómez",
+      "existing_caepr_id": "PD-SP-P-0115",
+      "role": "Fiscal Jefa de Área Arrecife de Lanzarote–Puerto del Rosario",
+      "office_ids": [
+        "PD-MF-OFF-0011"
+      ],
+      "file_refs": [
+        "LZ-FIS-007",
+        "LZ-FIS-045",
+        "PD-MF-FIL-0018"
+      ],
+      "case_capacity": "CURRENT_OFFICE_IDENTITY; ASSIGNED_SUN_PARK_PROSECUTOR_NOT_INFERRED",
+      "source": "https://www.fiscal.es/-/fiscalia-provincial-de-las-palmas"
+    },
+    {
+      "id": "PD-MF-PER-0010",
+      "name": "José Luis Sánchez-Jáuregui y Alcaide",
+      "existing_caepr_id": "PD-SP-P-0107",
+      "role": "Fiscal Jefe Provincial de Santa Cruz de Tenerife",
+      "office_ids": [
+        "PD-MF-OFF-0010"
+      ],
+      "file_refs": [
+        "TF-FIS-007",
+        "TF-FIS-008"
+      ],
+      "case_capacity": "SIGNED_DIP20_AND_EG95_ACTS",
+      "source": "https://www.fiscal.es/-/fiscalia-provincial-de-tenerife"
+    },
+    {
+      "id": "PD-MF-PER-0011",
+      "name": "Inmaculada Violán González",
+      "existing_caepr_id": null,
+      "role": "Teniente Fiscal — Fiscalía Provincial de Santa Cruz de Tenerife",
+      "office_ids": [
+        "PD-MF-OFF-0010"
+      ],
+      "case_capacity": "CURRENT_OFFICE_IDENTITY_ONLY; NO SUN_PARK_ACT_ATTRIBUTED_IN_THIS_REGISTER",
+      "source": "https://www.fiscal.es/-/fiscalia-provincial-de-tenerife"
+    },
+    {
+      "id": "PD-MF-PER-0012",
+      "name": "Ricardo de Mosteyrín Sampalo",
+      "existing_caepr_id": "PD-SP-P-0058",
+      "role": "Fiscal; Delegado de Delitos contra la Administración Pública — Las Palmas",
+      "office_ids": [
+        "PD-MF-OFF-0009"
+      ],
+      "entity_ids": [
+        "PD-MF-ENT-0009"
+      ],
+      "file_refs": [
+        "GC-FIS-013"
+      ],
+      "case_capacity": "SIGNED_2019_CALIFICACION_OPINION; 2023_HEARING_IDENTITY_REMAINS_SOURCE_BOUNDED; CURRENT_SPECIALIST_ROLE_SEPARATE",
+      "source": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-1094"
+    },
+    {
+      "id": "PD-MF-PER-0013",
+      "name": "Miguel Ángel Hernández González",
+      "existing_caepr_id": null,
+      "role": "Fiscal Delegado de Medio Ambiente y Urbanismo — Las Palmas",
+      "office_ids": [
+        "PD-MF-OFF-0009"
+      ],
+      "entity_ids": [
+        "PD-MF-ENT-0010"
+      ],
+      "case_capacity": "CURRENT_SPECIALIST_ROLE; NO SUN_PARK_ACT_ATTRIBUTED_IN_THIS_REGISTER",
+      "source": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-16333&lang=es"
+    },
+    {
+      "id": "PD-MF-PER-0014",
+      "name": "Javier Ródenas Molina",
+      "existing_caepr_id": null,
+      "role": "Fiscal Delegado de la Fiscalía Especial Anticorrupción en Las Palmas",
+      "office_ids": [
+        "PD-MF-OFF-0005",
+        "PD-MF-OFF-0009"
+      ],
+      "entity_ids": [
+        "PD-MF-ENT-0011"
+      ],
+      "case_capacity": "CURRENT_ANTICORRUPTION_DELEGATION_CONFIRMED_BY_2026_BOE; NO SUN_PARK_ACT_ATTRIBUTED_IN_THIS_REGISTER",
+      "source": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-8814"
+    },
+    {
+      "id": "PD-MF-PER-0015",
+      "name": "Juan Manuel González-Casanova Ruiz",
+      "existing_caepr_id": "PD-SP-P-0110",
+      "role": "Fiscal — source-stated DIP 2/2026 capacity",
+      "office_ids": [
+        "PD-MF-OFF-0008"
+      ],
+      "file_refs": [
+        "GC-FIS-017"
+      ],
+      "case_capacity": "SIGNED_DIP2_RESOLUTION_AND_ARCHIVE_DECREE_2026-03-06"
+    },
+    {
+      "id": "PD-MF-PER-0016",
+      "name": "Ernesto Vieira Morante",
+      "existing_caepr_id": "PD-SP-P-0111",
+      "role": "Fiscal — source-stated notification capacity",
+      "office_ids": [
+        "PD-MF-OFF-0008"
+      ],
+      "file_refs": [
+        "GC-FIS-017"
+      ],
+      "case_capacity": "SIGNED_DIP2_NOTIFICATION_2026-03-09; SUBSTANTIVE_AUTHORSHIP_NOT_TRANSFERRED"
+    },
+    {
+      "id": "PD-MF-PER-0017",
+      "name": "Olalla Vázquez Moraga",
+      "existing_caepr_id": "PD-SP-P-0112",
+      "role": "Fiscal — source-stated notification capacity",
+      "office_ids": [
+        "PD-MF-OFF-0002"
+      ],
+      "file_refs": [
+        "NAT-FIS-004"
+      ],
+      "case_capacity": "SIGNED_EG745_NOTIFICATION_2026-08-26; SUBSTANTIVE_AUTHORSHIP_NOT_TRANSFERRED"
+    },
+    {
+      "id": "PD-MF-PER-0018",
+      "name": "Vicente Máximo Garrido García",
+      "existing_caepr_id": "PD-SP-P-0113",
+      "role": "Fiscal — source-stated acting capacity",
+      "office_ids": [
+        "PD-MF-OFF-0008"
+      ],
+      "file_refs": [
+        "GC-FIS-032"
+      ],
+      "case_capacity": "SIGNED_EG44_DECREE_2026-03-30"
+    },
+    {
+      "id": "PD-MF-PER-0019",
+      "name": "Ramona Muñoz Casas",
+      "existing_caepr_id": "PD-SP-P-0105",
+      "role": "Fiscal — source-stated Arrecife capacity",
+      "office_ids": [
+        "PD-MF-OFF-0011"
+      ],
+      "file_refs": [
+        "LZ-FIS-045"
+      ],
+      "case_capacity": "SIGNED_DI114_OFFICIAL_NOTICE_2026-01-14"
+    }
+  ],
+  "files": [
+    {
+      "master_id": "GC-FIS-011",
+      "reference": "DI 273/2013",
+      "office_ids": [
+        "PD-MF-OFF-0009"
+      ],
+      "status": "VERIFIED_PROCEDURAL"
+    },
+    {
+      "master_id": "GC-FIS-012",
+      "reference": "Fiscalía 39/2014",
+      "office_ids": [],
+      "status": "OPEN_REFERENCE_OFFICE_OBJECT_DISPOSITION_PENDING"
+    },
+    {
+      "master_id": "GC-FIS-013",
+      "reference": "DI 248/2018",
+      "office_ids": [
+        "PD-MF-OFF-0009"
+      ],
+      "status": "VERIFIED_PRIMARY_COPY"
+    },
+    {
+      "master_id": "GC-FIS-014",
+      "reference": "DI 113/2022",
+      "office_ids": [
+        "PD-MF-OFF-0009"
+      ],
+      "status": "VERIFIED_PRIMARY_COPY"
+    },
+    {
+      "master_id": "GC-FIS-015",
+      "reference": "EG 352/2025",
+      "office_ids": [
+        "PD-MF-OFF-0005"
+      ],
+      "status": "OPEN_REFERENCE_FINAL_HANDLING_PENDING"
+    },
+    {
+      "master_id": "GC-FIS-016",
+      "reference": "DI 22/2026",
+      "office_ids": [
+        "PD-MF-OFF-0009"
+      ],
+      "status": "VERIFIED_PRIMARY_COPY"
+    },
+    {
+      "master_id": "GC-FIS-017",
+      "reference": "DIP 2/2026",
+      "office_ids": [
+        "PD-MF-OFF-0008"
+      ],
+      "status": "AVAILABLE_CORPUS_DIGITISED_WITH_CERTIFIED_FILE_GAPS"
+    },
+    {
+      "master_id": "GC-FIS-018",
+      "reference": "EG 49/2026",
+      "office_ids": [
+        "PD-MF-OFF-0004",
+        "PD-MF-OFF-0001"
+      ],
+      "status": "VERIFIED_PRIMARY"
+    },
+    {
+      "master_id": "LZ-FIS-007",
+      "reference": "EG 86/2026",
+      "office_ids": [
+        "PD-MF-OFF-0006",
+        "PD-MF-OFF-0011"
+      ],
+      "status": "VERIFIED_REFERRAL_DESTINATION_TREATMENT_PENDING"
+    },
+    {
+      "master_id": "LZ-FIS-045",
+      "reference": "DI preprocesal 114/2025",
+      "office_ids": [
+        "PD-MF-OFF-0011"
+      ],
+      "status": "VERIFIED_ARCHIVE_NOTICE_CERTIFIED_FILE_PENDING"
+    },
+    {
+      "master_id": "TF-FIS-007",
+      "reference": "DIP 20/2026",
+      "office_ids": [
+        "PD-MF-OFF-0010",
+        "PD-MF-OFF-0009"
+      ],
+      "status": "VERIFIED_OPENING_AND_TERRITORIAL_REFERRAL"
+    },
+    {
+      "master_id": "GC-FIS-032",
+      "reference": "EG 44/2026",
+      "office_ids": [
+        "PD-MF-OFF-0008"
+      ],
+      "status": "VERIFIED_PRIMARY_COPY"
+    },
+    {
+      "master_id": "TF-FIS-008",
+      "reference": "EG 95/2026",
+      "office_ids": [
+        "PD-MF-OFF-0010"
+      ],
+      "status": "VERIFIED_PRIMARY"
+    },
+    {
+      "master_id": "GC-FIS-033",
+      "reference": "EG 112/2026",
+      "office_ids": [
+        "PD-MF-OFF-0008"
+      ],
+      "status": "VERIFIED_PRIMARY"
+    },
+    {
+      "master_id": "NAT-FIS-004",
+      "reference": "E.G. 745/2026",
+      "office_ids": [
+        "PD-MF-OFF-0002",
+        "PD-MF-OFF-0001"
+      ],
+      "status": "VERIFIED_PRIMARY"
+    },
+    {
+      "master_id": "NAT-FIS-005",
+      "reference": "FGE central correspondence / tracking file",
+      "office_ids": [
+        "PD-MF-OFF-0001"
+      ],
+      "status": "VERIFIED_PROCEDURAL_REFERENCE"
+    },
+    {
+      "master_id": "NAT-FIS-007",
+      "reference": "Secretaría Técnica tracking file",
+      "office_ids": [
+        "PD-MF-OFF-0003"
+      ],
+      "status": "VERIFIED_PROCEDURAL_REFERENCE"
+    },
+    {
+      "register_id": "PD-MF-FIL-0017",
+      "master_id": null,
+      "reference": "E.G. 58/2026",
+      "office_ids": [
+        "PD-MF-OFF-0015"
+      ],
+      "status": "SIGNED_2026-09-08_JOINER_ACT_LOCATED; MASTER_REGISTER_RECONCILIATION_PENDING",
+      "source_path": "evidence/fiscalia/2026/EG58_08SEP2026_JOINER_CONTROL.md"
+    },
+    {
+      "register_id": "PD-MF-FIL-0018",
+      "master_id": null,
+      "reference": "E.G. 19/2026 (Valencia)",
+      "office_ids": [
+        "PD-MF-OFF-0014",
+        "PD-MF-OFF-0011"
+      ],
+      "status": "SIGNED_2026-01-28_VALENCIA_TO_ARRECIFE_INHIBITION_VERIFIED; MASTER_REGISTER_RECONCILIATION_PENDING",
+      "source_path": "archive/CALIFICACION_FISCALIA_SOURCE_GAP_CLOSURE_ADDENDUM_16AUG2026.md"
+    }
+  ],
+  "events": [
+    {
+      "id": "PD-MF-REG-EVT-0001",
+      "date_or_period": "2014",
+      "label": "Fiscalía complaint later preserved in private correspondence",
+      "file_refs": [
+        "GC-FIS-012"
+      ],
+      "evidence_ids": [
+        "PD-MF-EVD-0010"
+      ],
+      "proof": "PRIMARY_ATTACHMENT_LOCATED; exact presentation metadata requires source-specific reconciliation"
+    },
+    {
+      "id": "PD-MF-REG-EVT-0002",
+      "date_or_period": "2016-09",
+      "label": "Personación / Fiscalía declaration coordination",
+      "evidence_ids": [
+        "PD-MF-EVD-0011"
+      ],
+      "proof": "PRIVATE_CORRESPONDENCE_LOCATED"
+    },
+    {
+      "id": "PD-MF-REG-EVT-0003",
+      "date_or_period": "2018-09",
+      "label": "Draft complaint concerning insolvency administrator / CAM perimeter prepared for Las Palmas presentation",
+      "file_refs": [
+        "GC-FIS-013"
+      ],
+      "evidence_ids": [
+        "PD-MF-EVD-0012"
+      ],
+      "proof": "PRIVATE_CORRESPONDENCE_AND_DRAFT_LOCATED; filing identity separately controlled"
+    },
+    {
+      "id": "PD-MF-REG-EVT-0004",
+      "date_or_period": "2018-12",
+      "label": "Complaint package concerning insolvency administrator forwarded in private custody",
+      "file_refs": [
+        "GC-FIS-013"
+      ],
+      "evidence_ids": [
+        "PD-MF-EVD-0013"
+      ],
+      "proof": "PRIVATE_CORRESPONDENCE_AND_ATTACHMENTS_LOCATED"
+    },
+    {
+      "id": "PD-MF-REG-EVT-0005",
+      "date_or_period": "2019-01-14",
+      "label": "Ampliación Denuncia Fiscalía",
+      "file_refs": [
+        "GC-FIS-013"
+      ],
+      "evidence_ids": [
+        "PD-MF-EVD-0014"
+      ],
+      "proof": "SIGNED_ATTACHMENT_LOCATED"
+    },
+    {
+      "id": "PD-MF-REG-EVT-0006",
+      "date_or_period": "2019-03-12",
+      "label": "Fiscal calificación opinion signed by Ricardo de Mosteyrín Sampalo",
+      "person_ids": [
+        "PD-MF-PER-0012"
+      ],
+      "evidence_ids": [
+        "PD-MF-EVD-0019"
+      ],
+      "proof": "SIGNED_SOURCE_CONTROLLED; legal/intent allegations remain disputed"
+    },
+    {
+      "id": "PD-MF-REG-EVT-0007",
+      "date_or_period": "2019-05-07",
+      "label": "DI 248/2018 archive decree",
+      "file_refs": [
+        "GC-FIS-013"
+      ],
+      "evidence_ids": [
+        "PD-MF-EVD-0020"
+      ],
+      "proof": "SIGNED_ARCHIVE_DECREE_LOCATED"
+    },
+    {
+      "id": "PD-MF-REG-EVT-0008",
+      "date_or_period": "2023-07-25",
+      "label": "Concurso 36/2012 calificación hearing",
+      "person_ids": [
+        "PD-MF-PER-0012"
+      ],
+      "evidence_ids": [
+        "PD-MF-EVD-0021"
+      ],
+      "proof": "HEARING_PROCEDURAL_EVENT_PROVED; personal hearing identification source-bounded"
+    },
+    {
+      "id": "PD-MF-REG-EVT-0009",
+      "date_or_period": "2026-01-27/30",
+      "label": "DIP 20/2026 decree and email transmission",
+      "file_refs": [
+        "TF-FIS-007"
+      ],
+      "person_ids": [
+        "PD-MF-PER-0010"
+      ],
+      "evidence_ids": [
+        "PD-MF-EVD-0015"
+      ],
+      "proof": "SIGNED_DECREE_AND_PROVIDER_EMAIL_LOCATED"
+    },
+    {
+      "id": "PD-MF-REG-EVT-0010",
+      "date_or_period": "2026-03-06",
+      "label": "DIP 2/2026 resolution/archive decree",
+      "file_refs": [
+        "GC-FIS-017"
+      ],
+      "person_ids": [
+        "PD-MF-PER-0015"
+      ],
+      "evidence_ids": [
+        "PD-MF-EVD-0022"
+      ],
+      "proof": "SIGNED_PRIMARY_AVAILABLE"
+    },
+    {
+      "id": "PD-MF-REG-EVT-0011",
+      "date_or_period": "2026-08-02/03",
+      "label": "Multi-office RedSARA/REGAGE filing route including FGE, Inspección, Canarias, Anticorrupción and Economic Crimes",
+      "evidence_ids": [
+        "PD-MF-EVD-0016"
+      ],
+      "proof": "REGISTRATION_RECEIPTS_PROVE_PRESENTATION_TO_LISTED_DESTINATIONS_ONLY"
+    },
+    {
+      "id": "PD-MF-REG-EVT-0012",
+      "date_or_period": "2026-08-20",
+      "label": "DI 22/2026 communication requesting separate aforado/source-professional module and Arrecife coordination",
+      "file_refs": [
+        "GC-FIS-016"
+      ],
+      "evidence_ids": [
+        "PD-MF-EVD-0017"
+      ],
+      "proof": "SENT_PROVIDER_RECORD_LOCATED; recipient handling not inferred"
+    },
+    {
+      "id": "PD-MF-REG-EVT-0013",
+      "date_or_period": "2026-08-20",
+      "label": "EG 112/2026 additional traceability communication concerning prior Arrecife/Las Palmas remittals",
+      "file_refs": [
+        "GC-FIS-033"
+      ],
+      "evidence_ids": [
+        "PD-MF-EVD-0018"
+      ],
+      "proof": "SENT_PROVIDER_RECORD_LOCATED; merits treatment not inferred"
+    },
+    {
+      "id": "PD-MF-REG-EVT-0014",
+      "date_or_period": "2026-08-26",
+      "label": "E.G. 745/2026 archive decree",
+      "file_refs": [
+        "NAT-FIS-004"
+      ],
+      "person_ids": [
+        "PD-MF-PER-0002"
+      ],
+      "evidence_ids": [
+        "PD-MF-EVD-0023"
+      ],
+      "proof": "SIGNED_PRIMARY_LOCATED"
+    },
+    {
+      "id": "PD-MF-REG-EVT-0015",
+      "date_or_period": "2026-09-08",
+      "label": "E.G. 58/2026 joinder act — Economic Crimes Unit",
+      "file_refs": [
+        "PD-MF-FIL-0017"
+      ],
+      "person_ids": [
+        "PD-MF-PER-0003"
+      ],
+      "evidence_ids": [
+        "PD-MF-EVD-0024"
+      ],
+      "proof": "SIGNED_ACT_LOCATED; complete joined-document index/merits analysis not inferred"
+    }
+  ],
+  "evidence": [
+    {
+      "id": "PD-MF-EVD-0001",
+      "type": "OFFICIAL_WEB",
+      "label": "Fiscalía Provincial de Las Palmas current office directory",
+      "public": true,
+      "url": "https://www.fiscal.es/-/fiscalia-provincial-de-las-palmas"
+    },
+    {
+      "id": "PD-MF-EVD-0002",
+      "type": "OFFICIAL_WEB",
+      "label": "Fiscalía Provincial de Santa Cruz de Tenerife current office directory",
+      "public": true,
+      "url": "https://www.fiscal.es/-/fiscalia-provincial-de-tenerife"
+    },
+    {
+      "id": "PD-MF-EVD-0003",
+      "type": "OFFICIAL_WEB",
+      "label": "Fiscal Superior de Canarias — Jaime Serrano-Jover González",
+      "public": true,
+      "url": "https://www.fiscal.es/w/fiscal-superior-canarias"
+    },
+    {
+      "id": "PD-MF-EVD-0004",
+      "type": "OFFICIAL_WEB",
+      "label": "Fiscalía General del Estado organisation",
+      "public": true,
+      "url": "https://www.fiscal.es/la-fiscalia-general-del-estado"
+    },
+    {
+      "id": "PD-MF-EVD-0005",
+      "type": "OFFICIAL_WEB",
+      "label": "Unidad de Delitos Económicos",
+      "public": true,
+      "url": "https://www.fiscal.es/delitos-economicos"
+    },
+    {
+      "id": "PD-MF-EVD-0006",
+      "type": "OFFICIAL_WEB",
+      "label": "Fiscalía Especial contra la Corrupción",
+      "public": true,
+      "url": "https://www.fiscal.es/fiscalia-especial-contra-la-corrupcion"
+    },
+    {
+      "id": "PD-MF-EVD-0007",
+      "type": "BOE",
+      "label": "Appointment: Ricardo de Mosteyrín Sampalo — Delitos contra la Administración Pública, Las Palmas",
+      "public": true,
+      "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-1094"
+    },
+    {
+      "id": "PD-MF-EVD-0008",
+      "type": "BOE",
+      "label": "Appointment: Miguel Ángel Hernández González — Medio Ambiente y Urbanismo, Las Palmas",
+      "public": true,
+      "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-16333"
+    },
+    {
+      "id": "PD-MF-EVD-0009",
+      "type": "BOE",
+      "label": "2026 decree recording Javier Ródenas Molina continuing as Anti-Corruption delegate in Las Palmas while ceasing as Environment decano",
+      "public": true,
+      "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-8814"
+    },
+    {
+      "id": "PD-MF-EVD-0010",
+      "type": "PRIVATE_GMAIL_ATTACHMENT",
+      "label": "2014 Fiscalía complaint PDF preserved in Patricia mailbox",
+      "public": false,
+      "custody": "PRIVATE_PROVIDER_CUSTODY_NO_MESSAGE_ID_PUBLIC"
+    },
+    {
+      "id": "PD-MF-EVD-0011",
+      "type": "PRIVATE_GMAIL_THREAD",
+      "label": "September 2016 Fiscalía personación/declaration correspondence",
+      "public": false,
+      "custody": "PRIVATE_PROVIDER_CUSTODY_NO_MESSAGE_ID_PUBLIC"
+    },
+    {
+      "id": "PD-MF-EVD-0012",
+      "type": "PRIVATE_GMAIL_ATTACHMENT",
+      "label": "September 2018 Fiscalía complaint draft concerning AC/CAM perimeter",
+      "public": false,
+      "custody": "PRIVATE_PROVIDER_CUSTODY_NO_MESSAGE_ID_PUBLIC"
+    },
+    {
+      "id": "PD-MF-EVD-0013",
+      "type": "PRIVATE_GMAIL_ATTACHMENT",
+      "label": "December 2018 complaint package concerning insolvency administrator",
+      "public": false,
+      "custody": "PRIVATE_PROVIDER_CUSTODY_NO_MESSAGE_ID_PUBLIC"
+    },
+    {
+      "id": "PD-MF-EVD-0014",
+      "type": "PRIVATE_GMAIL_ATTACHMENT",
+      "label": "14 January 2019 Ampliación Denuncia Fiscalía PDF",
+      "public": false,
+      "custody": "PRIVATE_PROVIDER_CUSTODY_NO_MESSAGE_ID_PUBLIC"
+    },
+    {
+      "id": "PD-MF-EVD-0015",
+      "type": "PRIVATE_GMAIL_OFFICIAL_ATTACHMENT",
+      "label": "27 January 2026 DIP 20/2026 decree and 30 January official Tenerife transmission",
+      "public": false,
+      "custody": "PRIVATE_PROVIDER_CUSTODY; controlled public text exists in repository",
+      "public_path": "archive/public_office_communications/fiscalia_tenerife/2026-01-30_DIP20/2026-01-27_30__FISCALIA_TENERIFE__DIP20_2026__CONTROLLED_RECORD_ES_EN.md"
+    },
+    {
+      "id": "PD-MF-EVD-0016",
+      "type": "REGAGE_RECEIPT_FAMILY",
+      "label": "2–3 August 2026 multi-office RedSARA/REGAGE receipts",
+      "public": "PARTIAL_PUBLIC_SAFE",
+      "public_path": "archive/evidence/mf-redsara-anexo4/MF_REDSARA_ANEXO4_CANONICAL_INGEST_16AUG2026.md"
+    },
+    {
+      "id": "PD-MF-EVD-0017",
+      "type": "PRIVATE_GMAIL_SENT_RECORD",
+      "label": "20 August 2026 DI 22/2026 coordination communication",
+      "public": false,
+      "custody": "PRIVATE_PROVIDER_CUSTODY_NO_MESSAGE_ID_PUBLIC"
+    },
+    {
+      "id": "PD-MF-EVD-0018",
+      "type": "PRIVATE_GMAIL_SENT_RECORD",
+      "label": "20 August 2026 EG 112/2026 traceability communication",
+      "public": false,
+      "custody": "PRIVATE_PROVIDER_CUSTODY_NO_MESSAGE_ID_PUBLIC"
+    },
+    {
+      "id": "PD-MF-EVD-0019",
+      "type": "REPOSITORY_PRIMARY_CONTROL",
+      "label": "12 March 2019 Fiscal calificación opinion — two pages, signed Ricardo de Mosteyrín Sampalo",
+      "public": "CONTROLLED_REPOSITORY_RECORD",
+      "public_path": "archive/CALIFICACION_AC_REPORT_RADICAL_TRANSPARENCY_LEDGER_16AUG2026.md"
+    },
+    {
+      "id": "PD-MF-EVD-0020",
+      "type": "REPOSITORY_PRIMARY_CONTROL",
+      "label": "DI 248/2018 archive/notice source family",
+      "public": "CONTROLLED_REPOSITORY_RECORD",
+      "public_path": "archive/CARTA_ABIERTA_MINISTERIO_FISCAL_ESTADO_DE_DERECHO_15AGO2026.md"
+    },
+    {
+      "id": "PD-MF-EVD-0021",
+      "type": "REPOSITORY_PROCEDURAL_CONTROL",
+      "label": "25 July 2023 calificación hearing source/identity controls",
+      "public": "CONTROLLED_REPOSITORY_RECORD",
+      "public_path": "en/calificacion-rpl-2523-evidence-map/index.html"
+    },
+    {
+      "id": "PD-MF-EVD-0022",
+      "type": "REPOSITORY_PRIMARY_CONTROL",
+      "label": "DIP 2/2026 signed decree/notice corpus",
+      "public": "PUBLIC_SAFE_CORPUS",
+      "public_path": "es/fiscalia-dip-2-2026/"
+    },
+    {
+      "id": "PD-MF-EVD-0023",
+      "type": "REPOSITORY_PRIMARY_CONTROL",
+      "label": "E.G. 745/2026 26 August signed archive decree and notice",
+      "public": "PUBLIC_SAFE_CORPUS",
+      "public_path": "es/fiscalia-inspeccion-exp-gub-745-2026/"
+    },
+    {
+      "id": "PD-MF-EVD-0024",
+      "type": "REPOSITORY_PRIMARY_CONTROL",
+      "label": "E.G. 58/2026 8 September Economic Crimes joinder act",
+      "public": "CONTROLLED_REPOSITORY_RECORD",
+      "public_path": "evidence/fiscalia/2026/EG58_08SEP2026_JOINER_CONTROL.md"
+    },
+    {
+      "id": "PD-MF-EVD-0025",
+      "type": "REPOSITORY_DATASET",
+      "label": "Existing Ministerio Fiscal canonical directory v1",
+      "public": true,
+      "public_path": "assets/data/ministerio-fiscal-directory-v1.json"
+    },
+    {
+      "id": "PD-MF-EVD-0026",
+      "type": "REPOSITORY_DATASET",
+      "label": "Office digitisation control — 19 September 2026",
+      "public": true,
+      "public_path": "assets/data/ministerio-fiscal-office-digitisation-20260919.json"
+    }
+  ],
+  "open_gaps": [
+    "Reconcile E.G. 19/2026 Valencia → Arrecife into the Master Register without inventing a Master_ID.",
+    "Reconcile E.G. 58/2026 Economic Crimes into the Master Register if/when the controlling proceedings registry assigns an ID.",
+    "Identify the assigned Arrecife prosecutor and destination file/outcome for each referral rather than attributing handling to the Area Chief Prosecutor by office alone.",
+    "Close current specialist-delegate identity gaps only from current official sources; do not infer successors from historical appointments.",
+    "Obtain complete certified files/indexes for DI 248/2018, DI 113/2022, DI 22/2026, DIP 2/2026 and referred files where still incomplete.",
+    "Preserve private Gmail custody locators outside the public repository and expose only source-safe labels/derivatives.",
+    "On GitLab restoration, compare GitHub branch/main against the then-current GitLab main and port only the net, source-controlled delta."
+  ]
+}

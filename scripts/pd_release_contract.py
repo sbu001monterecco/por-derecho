@@ -12,7 +12,7 @@ import subprocess
 import unicodedata
 
 SCHEMA = 'por-derecho.release-acceptance.v1'
-TERMINAL = {'VERIFIED_FOR_SCOPE', 'ABORTED_BEFORE_MERGE'}
+TERMINAL = {'VERIFIED_FOR_SCOPE', 'ABORTED_BEFORE_MERGE', 'SUPERSEDED_WITH_OPEN_READBACK'}
 TRANSITIONS = {
     'CLAIMED': {'ACCEPTED', 'BLOCKED', 'ABORTED_BEFORE_MERGE'},
     'ACCEPTED': {'MERGE_PENDING', 'BLOCKED', 'ABORTED_BEFORE_MERGE'},
@@ -20,7 +20,7 @@ TRANSITIONS = {
     'MERGED': {'DEPLOYED', 'RECOVERY_REQUIRED'},
     'DEPLOYED': {'VERIFIED_FOR_SCOPE', 'RECOVERY_REQUIRED'},
     'BLOCKED': {'CLAIMED', 'ABORTED_BEFORE_MERGE'},
-    'RECOVERY_REQUIRED': {'MERGED', 'DEPLOYED', 'VERIFIED_FOR_SCOPE', 'ABORTED_BEFORE_MERGE'},
+    'RECOVERY_REQUIRED': {'MERGED', 'DEPLOYED', 'VERIFIED_FOR_SCOPE', 'ABORTED_BEFORE_MERGE', 'SUPERSEDED_WITH_OPEN_READBACK'},
 }
 
 
@@ -247,6 +247,13 @@ def advance(state: dict, phase: str, owner: str, fence: int, evidence: dict | No
         raise ValueError('Successful exact-SHA Pages evidence required')
     if phase == 'VERIFIED_FOR_SCOPE' and not ((evidence or {}).get('exact_matches') and (evidence or {}).get('pending') == []):
         raise ValueError('Complete live scope evidence required')
+    if phase == 'SUPERSEDED_WITH_OPEN_READBACK':
+        record = evidence or {}
+        if not (record.get('prior_merge_sha') and record.get('current_main_sha')
+                and record.get('pages_run_id') and record.get('readback_verified') is False
+                and record.get('verification_gap_preserved') is True
+                and record.get('prior_merge_sha') != record.get('current_main_sha')):
+            raise ValueError('Superseded recovery requires prior/current SHAs, successful deployment evidence and an explicit open readback gap')
     result = deepcopy(state)
     result['phase'] = phase
     result['updated_at'] = utc_now()

@@ -1,14 +1,16 @@
 {
   "schema": "por-derecho.la-laguna-concurso-public-bridge.v1",
   "control_id": "PD-LALAGUNA-CONCURSO-BRIDGE-20260903",
-  "as_of": "2026-09-03",
-  "status": "PUBLIC_SOURCE_FIRST_INTERCONNECTION_ACTIVE",
+  "as_of": "2026-09-18",
+  "status": "PUBLIC_SOURCE_FIRST_INTERCONNECTION_ACTIVE_CURRENT_TO_18SEP",
   "governance": [
     "ANTI_CONFLATION_IS_NOT_ANTI_CONNECTIVITY",
     "DO_NOT_CONFLATE_DO_CONNECT",
     "ESTAFA_PROCESAL_ALLEGATION_NOT_FINDING",
     "CONCURSAL_EFFECT_HYPOTHESIS_SOURCE_GAP",
-    "FUTURE_UNFILED_ARGUMENTS_NOT_PUBLIC_BEFORE_FILING"
+    "FUTURE_UNFILED_ARGUMENTS_NOT_PUBLIC_BEFORE_FILING",
+    "COUNSEL_WORKING_PACKAGE_IS_NOT_A_FILING",
+    "PRIVATE_NOTIFICATION_WRAPPER_WITHHELD_PUBLIC_HASH_PROVENANCE_ONLY"
   ],
   "public_routes": {
     "es": "/es/la-laguna-concurso-mapa-2026/",
@@ -65,6 +67,47 @@
         "POWER_TO_ASSIGN_REMATE_TO_THIRD_PARTY_REQUESTED"
       ],
       "boundary": "DOES_NOT_PROVE_COMPLETED_ASSIGNMENT_ASSIGNEE_IDENTITY_FRAUD_DECEPTION_OR_CRIMINAL_INTENT"
+    },
+    {
+      "control_id": "DP748-2026-GIL-20260909-IMPULSO-APELACION",
+      "date": "2026-09-09",
+      "public_control": "/assets/data/dp748-2026-appeal-reopening-control-v1.json",
+      "locked_propositions": [
+        "SUBSIDIARY_APPEAL_IMPULSE_FILED",
+        "ARTICLE_766_4_ALLEGATIONS_AD_CAUTELAM_FILED",
+        "03SEP_ETJ_OPPOSITION_CONTRIBUTED_AS_SUPERVENING_DOCUMENT"
+      ],
+      "boundary": "FILED_PLEADING_PROVES_CONTENT_AND_FILING_STATUS_NOT_TRUTH_OF_ALLEGATIONS"
+    },
+    {
+      "control_id": "DP748-SRC-DIOR-APELACION-20260916",
+      "date": "2026-09-16",
+      "public_source_es": "/docs/cuatrecasas/DP748/2026-09-16_diligencia_ordenacion_apelacion_subs_fulltext_source_safe.md",
+      "public_source_en": "/docs/cuatrecasas/DP748/2026-09-16_case_management_order_subsidiary_appeal_en.md",
+      "locked_propositions": [
+        "ORIGIN_COURT_SUBSIDIARY_APPEAL_PROCESSING_VERIFIED",
+        "MINISTERIO_FISCAL_FIVE_DAY_SUBMISSIONS_TRANSFER",
+        "AUDIENCIA_REMITTAL_AND_APPELLATE_ROLL_NOT_PROVED"
+      ]
+    },
+    {
+      "control_id": "ETJ163-SRC-AUTO-REPOSICION-20260917",
+      "date": "2026-09-17",
+      "received": "2026-09-18",
+      "public_source_es": "/docs/cuatrecasas/ETJ163/2026-09-17_auto_reposicion_suspension_fulltext_source_safe.md",
+      "public_source_en": "/docs/cuatrecasas/ETJ163/2026-09-17_order_reposicion_suspension_fulltext_en.md",
+      "sha256": "020b5313c93565cbb536d5eb40feca0e0e7755c20a5e0bada3b91d863a0c6652",
+      "locked_propositions": [
+        "SUSPENSION_RECONSIDERATION_DISMISSED",
+        "ORDER_STATES_NO_APPEAL",
+        "NO_CRIMINAL_MERITS_FINDING",
+        "NO_ASSIGNEE_OR_COMPLETED_DISPOSITION_FINDING"
+      ],
+      "notification_provenance": {
+        "native_cover_sha256": "693999b0e3bf4f3ca681faa2ebb321f0a32773fd6b482dc7336eb107ea916702",
+        "native_summary_sha256": "28e616f984f44728b4a174227f89c1cc399c65126041557e4f87ec42f5777f4a",
+        "raw_publication": "WITHHELD_CONFIDENTIALITY_AND_DATA_PROTECTION"
+      }
     }
   ],
   "procedural_fraud_public_allegation": {
@@ -142,5 +185,11 @@
       "UNFILED_TACTICAL_PRIORITIES",
       "UNPRESENTED_DOCUMENT_DEPLOYMENT_SEQUENCE"
     ]
+  },
+  "current_18sep_state": {
+    "dp748": "Origin-court Article 766.4 processing verified 16-Sep; Ministerio Fiscal five-day submissions step active in the located record; Audiencia remittal/roll not located.",
+    "etj163": "17-Sep suspension reconsideration dismissed; order received 18-Sep; adjudication/cession/registration/possession remain open.",
+    "counsel_handoff": "Working response package delivered to current counsel on 18-Sep; proposed filings/notices remain draft/review states unless primary presentation/service proof is located.",
+    "assignee": "No actual adjudicatee/assignee/ultimate beneficiary is verified in the controlled public record."
   }
 }

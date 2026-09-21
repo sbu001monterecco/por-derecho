@@ -378,6 +378,18 @@
       "sha256": "020b5313c93565cbb536d5eb40feca0e0e7755c20a5e0bada3b91d863a0c6652",
       "source_class": "SIGNED_COURT_ORDER",
       "limited_proposition": "Dismissal of Matkator reposición against refusal to suspend; no appeal stated; no criminal merits or assignee finding."
+    },
+    {
+      "source_id": "ETJ163-SRC-NOTIFICATION-SUMMARY-20260918",
+      "sha256": "28e616f984f44728b4a174227f89c1cc399c65126041557e4f87ec42f5777f4a",
+      "source_class": "PRIVATE_NATIVE_NOTIFICATION_SUMMARY",
+      "limited_proposition": "Native service-summary wrapper preserved; authenticates notification transport metadata and declared document hashes only. Raw copy remains private."
+    },
+    {
+      "source_id": "ETJ163-SRC-NOTIFICATION-COVER-20260918",
+      "sha256": "693999b0e3bf4f3ca681faa2ebb321f0a32773fd6b482dc7336eb107ea916702",
+      "source_class": "PRIVATE_NATIVE_COURT_COMMUNICATION_COVER",
+      "limited_proposition": "Native court communication cover preserved; its SHA-256 matches the hash declared by the service-summary wrapper. Raw copy remains private under the confidentiality/data-protection boundary."
     }
   ],
   "open_gaps": [
@@ -427,5 +439,16 @@
     "event": "Civil court dismisses Matkator's reposición against 19-Jun refusal to suspend; order states no appeal lies",
     "received": "2026-09-18",
     "boundary": "Does not decide DP 748, criminal liability, assignee identity, or completion of adjudication/cession/registration/possession"
+  },
+  "etj_17sep_notification_provenance": {
+    "service_date": "2026-09-18",
+    "native_summary_sha256": "28e616f984f44728b4a174227f89c1cc399c65126041557e4f87ec42f5777f4a",
+    "native_cover_sha256": "693999b0e3bf4f3ca681faa2ebb321f0a32773fd6b482dc7336eb107ea916702",
+    "served_order_sha256": "020b5313c93565cbb536d5eb40feca0e0e7755c20a5e0bada3b91d863a0c6652",
+    "integrity_state": "COVER_AND_ORDER_HASHES_MATCH_NATIVE_NOTIFICATION_SUMMARY",
+    "searchability": "ALL_THREE_NATIVE_PDFS_SEARCHABLE_NO_OCR_REQUIRED",
+    "public_copy_state": "RAW_NOTIFICATION_WRAPPER_AND_COVER_WITHHELD_CONFIDENTIALITY_AND_DATA_PROTECTION_BOUNDARY",
+    "deadline_control": "No final Article 215.2 expiry is calculated in this public control. Counsel must verify the legal computation from the complete notification record.",
+    "limited_proposition": "The native notification bundle proves service transport and byte identity of the served court documents. It does not decide the criminal merits, adjudication/cession status or the legal viability/timeliness of a complement request."
   }
 }

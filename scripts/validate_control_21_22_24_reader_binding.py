@@ -45,6 +45,8 @@ def main() -> None:
 
     if controls["CONTROL-21"].get("bridge_status") != "UNVERIFIED_CANDIDATE_BRIDGE":
         fail("canonical Control 21 -> DP 1901 bridge was upgraded")
+    if controls["CONTROL-21"].get("evidential_state") != "DOCUMENTED":
+        fail("canonical stamped Control 21 filing must remain documented")
     if controls["CONTROL-22"].get("bridge_status") != "UNVERIFIED_CANDIDATE_BRIDGE":
         fail("canonical Control 22 -> DP 1956 bridge was upgraded")
 
@@ -109,6 +111,14 @@ def main() -> None:
         fail("reader layer no longer states that Control 24 formal allocation is unknown")
     if "dependent supplement" not in c24_track.get("supplement", {}).get("relationship", "").casefold():
         fail("reader layer no longer treats the 25 June Control 24 document as dependent")
+    if c24_track.get("supplement", {}).get("pages") != 13:
+        fail("reader layer Control 24 dependent supplement must remain 13 pages")
+    if tracks["DP1901-C21"].get("base_filing", {}).get("pages") != 86:
+        fail("reader layer private-actor base source must remain 86 pages")
+    if tracks["DP1901-C21"].get("immediate_amplification", {}).get("pages") != 26:
+        fail("reader layer immediate private-actor amplification must remain 26 pages")
+    if tracks["DP1901-C21"].get("expansion", {}).get("pages") != 19:
+        fail("reader layer 9-Jul private-actor amplification must remain 19 pages")
 
     aliases = set(canonical.get("aliases", []))
     for alias in ("DP1901-C21", "DP1956-C22", "C24-JUDGE", "PD-THREE-TRACK-DIGITISATION-20260904-01"):

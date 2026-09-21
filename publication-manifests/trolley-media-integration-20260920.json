@@ -1,0 +1,108 @@
+{
+  "schema": "por-derecho.publication-state.v1",
+  "schema_version": "1.0.0",
+  "publication_id": "PD-TROLLEY-MEDIA-INTEGRATION-20260920",
+  "current_state": "PR_OPEN",
+  "owner": "TROLLEY-MEDIA-RESEARCH-20260920",
+  "research_schema": "por-derecho.research-integration.v1",
+  "research_control": "PD-RESEARCH-TROLLEY-MEDIA-20260920",
+  "date": "2026-09-20",
+  "authority": "Gil Marer: Update GitHub fully.",
+  "integration_branch": "integration/trolley-media-research-20260920",
+  "integration_registration": "https://github.com/sbu001monterecco/por-derecho/issues/1428#issuecomment-5752808212",
+  "pull_request": "https://github.com/sbu001monterecco/por-derecho/pull/1682",
+  "base_commit": "a9110f5d2a3de64ae7cf470ae06ca1cfde297f4a",
+  "base_tree": "76a8ba53f1726e4550bd37e923b7bb41e90388d8",
+  "worker_commit": "0f028563eee9dc55103c22a36cf0c5469e4a7d0c",
+  "worker_integrity_manifest": "publication-manifests/trolley-media-research-20260920.json",
+  "scope": "Nine research/data/reader worker files preserved byte-identically; the worker manifest normalised to the existing publication-state schema while retaining its previous research metadata and original-commit provenance; three additive incoming links including paired in-page navigation; this integration record. No existing source prose, image, filing-state object or route removed.",
+  "historical_status_rule": "Worker files retain their preparation-time status, owner and base. Their original manifest is preserved at the immutable worker commit; the current derivative adds publication-state compatibility without changing the nine files it fingerprints. Actual integration, CI, merge and deployment are evidenced by the PR, current main and controller readback, not inferred from a historical source-file label.",
+  "expected_routes": {
+    "es": ["es/acosta-matos-medios-propiedad-remedios/index.html", "es/acosta-matos-plataforma-hotelera/index.html"],
+    "en": ["en/acosta-matos-media-property-remedies/index.html", "en/acosta-matos-hotel-platform/index.html"]
+  },
+  "expected_source_files": [
+    "archive/research/trolley-media-20260920/README.md",
+    "archive/research/trolley-media-20260920/ACOSTA_MATOS_CANARY_MEDIA_2010_2026_SOURCE_REGISTER.md",
+    "archive/research/trolley-media-20260920/TROLLEY_ORIGINS_AND_LEGAL_SCOPE_ES_EN.md",
+    "archive/research/trolley-media-20260920/TROLLEY_PROPERTY_REMEDY_ANALYSIS_ES_EN.md",
+    "archive/research/trolley-media-20260920/MEDIA_CHRONOLOGY_ES_EN.md",
+    "archive/research/trolley-media-20260920/CROSS_SOURCE_SCAN_PUBLIC_ES_EN.md",
+    "assets/data/acosta-matos-media-trolley-research-20260920.json",
+    "publication-manifests/trolley-media-research-20260920.json",
+    "archive/ACOSTA_MATOS_WEALTH_TRAJECTORY_REVIEW_20SEP2026.md"
+  ],
+  "expected_paths": [
+    "archive/research/trolley-media-20260920/README.md",
+    "archive/research/trolley-media-20260920/ACOSTA_MATOS_CANARY_MEDIA_2010_2026_SOURCE_REGISTER.md",
+    "archive/research/trolley-media-20260920/TROLLEY_ORIGINS_AND_LEGAL_SCOPE_ES_EN.md",
+    "archive/research/trolley-media-20260920/TROLLEY_PROPERTY_REMEDY_ANALYSIS_ES_EN.md",
+    "archive/research/trolley-media-20260920/MEDIA_CHRONOLOGY_ES_EN.md",
+    "archive/research/trolley-media-20260920/CROSS_SOURCE_SCAN_PUBLIC_ES_EN.md",
+    "assets/data/acosta-matos-media-trolley-research-20260920.json",
+    "en/acosta-matos-media-property-remedies/index.html",
+    "es/acosta-matos-medios-propiedad-remedios/index.html",
+    "publication-manifests/trolley-media-research-20260920.json",
+    "en/acosta-matos-hotel-platform/index.html",
+    "es/acosta-matos-plataforma-hotelera/index.html",
+    "archive/ACOSTA_MATOS_WEALTH_TRAJECTORY_REVIEW_20SEP2026.md",
+    "publication-manifests/trolley-media-integration-20260920.json"
+  ],
+  "incoming_link_changes": [
+    {
+      "path": "en/acosta-matos-hotel-platform/index.html",
+      "original_blob": "c3ecf4d2ac948210d882e3569c23371d90ef16ff",
+      "candidate_blob": "23c3c99f437bcc7df043f384b4a6dab4ae13d896",
+      "marker": "trolley-media-research-20260920",
+      "target": "../acosta-matos-media-property-remedies/",
+      "preservation_test": "Remove only the added main-nav Media research anchor and the inserted newline/section before main close; remaining bytes must hash to original_blob. Original absence of EOF newline retained."
+    },
+    {
+      "path": "es/acosta-matos-plataforma-hotelera/index.html",
+      "original_blob": "8066b32df260ca2521829100d6b1d428a70e826b",
+      "candidate_blob": "39d13e4a3d421db696d0e106152b6f4eba4e3a5e",
+      "marker": "trolley-media-research-20260920",
+      "target": "../acosta-matos-medios-propiedad-remedios/",
+      "preservation_test": "Remove only the added main-nav Estudio de medios anchor and the inserted newline/section before main close; remaining bytes must hash to original_blob. Original EOF newline restored."
+    },
+    {
+      "path": "archive/ACOSTA_MATOS_WEALTH_TRAJECTORY_REVIEW_20SEP2026.md",
+      "original_blob": "9b6ec65416dcf55769a63eeb13973f2610ae6c3b",
+      "candidate_blob": "94d805fe8db241359a5707ca29c9660a3344e55e",
+      "target": "research/trolley-media-20260920/README.md",
+      "preservation_test": "Remove only the appended section9 and its preceding extra newline; remaining bytes must hash to original_blob."
+    }
+  ],
+  "prior_release_preserved": {
+    "pr": 1681,
+    "merge": "a9110f5d2a3de64ae7cf470ae06ca1cfde297f4a",
+    "substantive_nexus": "archive/DP1901_PLATFORM_RECOVERY_NEXUS_THESIS_20SEP2026.md",
+    "machine_record": "assets/data/dp1901-platform-recovery-nexus-20260920.json"
+  },
+  "verification_at_preparation": {
+    "ten_worker_blob_identities": "Historical initial replay matched all ten worker blobs; after schema correction nine research/data/reader blobs remain unchanged. Original worker manifest remains at 0f028563eee9dc55103c22a36cf0c5469e4a7d0c and its derivative fingerprints the same nine files.",
+    "source_register": "Exact original research-artifact bytes; not publisher-original article bytes",
+    "paired_reader_local_checks": "36 anchors and URLs each; valid JSON and HTML; authored HTML rendered at390/1280 in both languages without document horizontal overflow",
+    "existing_parent_preservation": "Exact parent-file PR patches were reviewed. Only paired navigation/research additions and the appended wealth section remain; Spanish EOF newline is restored. No older source paragraph or image changed.",
+    "initial_ci": "Initial publication-integrity run35539260031 job106153814868 at b7b4a7951f9a22bfc100d2394f308267968e17fb flagged NEW_CONTENT_NOT_ROUTED in the English platform page. Successor adds a functional in-page main-navigation anchor to the research section in both languages; no validator or workflow is weakened.",
+    "manifest_ci": "Run35539721223 job106155091763 at cd21fa991404bfc769915216cf846a47d35dd3ba passed routing and research integrity but rejected the two custom publication-manifest schemas. Both are now expressed under por-derecho.publication-state.v1 / 1.0.0 with actual route, source, owner and bounded state declarations; their original research schema/provenance is retained. No guard was modified.",
+    "full_repository_checks": "Must pass normal exact-head release/publication and applicable gates; not run locally without complete repository",
+    "controller": "Claim only after exact-head checks; normal protected merge; verify exact-SHA Pages and affected public bytes",
+    "live_state": "Not inferred from preparation. Consult actual PR/controller closeout."
+  },
+  "original_integration_manifest_before_format_correction": {
+    "commit": "cd21fa991404bfc769915216cf846a47d35dd3ba",
+    "blob": "284b45346c216244e1f111253c40b6c1dd4c42c2",
+    "schema": "por-derecho.research-integration.v1"
+  },
+  "remaining_research_limits": [
+    "Selected media review with contemporary2010-2017 coverage gaps",
+    "Canonical bibliography identity matching remains explicitly open, no duplicate event/person IDs allocated",
+    "No original Canarias7 article/outcome or completed individual shipping stake presumed",
+    "No direct or non-cash Sun-Park connection inferred without transaction-specific proof",
+    "No common institutional motive, collective guilt or compulsory remedy certified",
+    "No raw private sources, reserved-declarant identity, signatures or private provider locators published",
+    "No inherited Community fingerprint defect certified repaired",
+    "The independent EG745 receipt and courthouse-version workers remain separate, not silently integrated"
+  ]
+}

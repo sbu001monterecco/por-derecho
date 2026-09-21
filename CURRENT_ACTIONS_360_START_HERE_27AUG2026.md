@@ -41,7 +41,7 @@ Use these states:
 
 11. **RPL 2523/2025:** verify current official status; prepare any response/remedy only from a signed act and counsel review.
 12. **AC removal / fees appeals:** maintain the two distinct records, obtain full certified appellate files, and reconcile decision reasoning against the source ledger and fee denominator.
-13. **DP 1901/2026 private-actor route:** obtain current signed status and ensure actor-specific allegations remain tied to act/capacity/knowledge/intent/benefit/causation.
+13. **DP 1901/2026 procedural-identity collision:** use the 18-Sep June/July source closure; private-actor material was physically tendered under DP1901 on 9-Jul, but the 12-Jul DIP2 link and 14-Sep prevaricación Auto leave the originating/reparto direction uncertified. Obtain the initiating document, certified docket/reparto/ingestion history and 29-Jul Fiscal report; keep all actor-specific allegations tied to act/capacity/knowledge/intent/benefit/causation.
 14. **DP 1956/2026 AC-specific route:** verify whether the final 31-page document was actually filed; obtain receipt/status before treating it as pending.
 15. **Matkator DP552→DP711 / ETJ163 lane:** maintain extraconcursal separation; obtain certified procedural bridge and current enforceability/status.
 16. **Valencia ORD 1859/2023-9 / CaixaBank:** preserve the 28-Jan-2027 hearing unless superseded; finish the banking/default/causation ledger and prepare witness/document requests with counsel.

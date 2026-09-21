@@ -102,7 +102,9 @@ def main() -> int:
         p0.get("subsidiary_appeal_admitted") == "VERIFIED_BY_20MAY_PROVIDENCIA_INTERPOSED_IN_TIME_AND_FORM",
         "20-May admission state not locked",
     )
-    require(p0.get("appellant_article_766_4_allegations") == "FILED_AD_CAUTELAM_09SEP2026", "09-Sep appellant allegations not locked")\n    require(p0.get("article_766_4_processing_at_origin") == "VERIFIED_16SEP_DIOR_FIVE_DAY_TRANSFER_TO_MINISTERIO_FISCAL", "16-Sep origin appeal processing not locked")\n    require("NOT_EXPRESSLY_ORDERED" in p0.get("article_766_4_transfer_to_appellant", ""), "16-Sep order must not be misdescribed as appellant transfer")
+    require(p0.get("appellant_article_766_4_allegations") == "FILED_AD_CAUTELAM_09SEP2026", "09-Sep appellant allegations not locked")
+    require(p0.get("article_766_4_processing_at_origin") == "VERIFIED_16SEP_DIOR_FIVE_DAY_TRANSFER_TO_MINISTERIO_FISCAL", "16-Sep origin appeal processing not locked")
+    require("NOT_EXPRESSLY_ORDERED" in p0.get("article_766_4_transfer_to_appellant", ""), "16-Sep order must not be misdescribed as appellant transfer")
     require(p0.get("transmission_to_audiencia") == "NOT_LOCATED", "Audiencia transmission was invented")
     require(p0.get("appellate_roll") == "NOT_LOCATED", "appellate roll was invented")
     require(p0.get("tf_app_004") == "UNVERIFIED_PLACEHOLDER", "TF-APP-004 was over-promoted")
