@@ -138,3 +138,15 @@ The companion source review is `records/PLATFORM_DISPLACEMENT_SOURCE_REVIEW_20SE
 - Public multiple-financial-lives dossier: https://por-derecho-setup-or-gitlab-setup-c2b10f.gitlab.io/por-derecho-setup-or-gitlab-setup/en/same-hotel-multiple-financial-lives/
 
 The project pages are attributed source syntheses, not independent adjudications or substitutes for their native exhibits. Statutes were checked against BOE on 20 September 2026. Apply historical versions to historical acts and recheck current law when a claim is prepared.
+
+## 7. 21 September 2026 — pre-title commercialisation and attributed 100% provenance position
+
+The current source record now requires an explicit intermediate chronology between the 2018 displacement allegation and the 2022 HNT/MYND formalisation:
+
+`2018 material control → Jan-2019 Hotel Lava Verde self-presentation at Calle Janubio 3 → 2019/20 pilots and whole-hotel refurbishment activity → Nov-2020 RICPE investor presentation → 2021 management-platform launch → 2022 HNT/MYND formalisation → later finance/incentives/scale`.
+
+Do not describe 2022 adjudication/formalisation as the beginning of the alleged recipient-side commercial use.
+
+Gil Marer's expressly adopted party allegation is now that **100%** of the later Acosta Matos / RICPE-linked asset, income, relationship, access and economic-advantage position derives directly or indirectly from the displaced platform. Preserve that exact attributed position in relevant drafting while keeping the existing source, causation, independent-input, remedy and no-double-counting disciplines intact.
+
+Controlling detailed record: `archive/ATTRIBUTED_100_PERCENT_PLATFORM_PROVENANCE_CONTROL_21SEP2026.md`.
