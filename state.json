@@ -2,7 +2,7 @@
   "schema": "por-derecho.publication-runtime.v1",
   "fence": 39,
   "owner": "1732:eca867a95e0c26b718b4999b719d93ef10e9f61b",
-  "phase": "DEPLOYED",
+  "phase": "VERIFIED_FOR_SCOPE",
   "pr": 1732,
   "base_sha": "5d537063aa7281c9051897739b00f00f24fdf341",
   "candidate_sha": "eca867a95e0c26b718b4999b719d93ef10e9f61b",
@@ -2174,6 +2174,57 @@
       ],
       "pending": [],
       "scope": "Changed readable public resources plus ES/EN entrypoints. Browser checks are separate premerge evidence; not a whole-site or legal-proof certificate."
+    },
+    {
+      "pr": 1732,
+      "candidate_sha": "eca867a95e0c26b718b4999b719d93ef10e9f61b",
+      "at": "2026-09-21T23:22:59.687864Z",
+      "merge_sha": "96e2e9b1e020ff32779ea35a2c3c7b33cf8c58fd",
+      "pages_run_id": 35667186111,
+      "exact_matches": [
+        {
+          "path": "assets/ac-rpl3304-forensic-sidecar.css",
+          "sha256": "8318bf116cc7eeb91c30f9eb86b8f5d71a1d8ba4b25dda420f190fe9ac9a9804",
+          "bytes": 5297
+        },
+        {
+          "path": "assets/ac-rpl3304-forensic-sidecar.js",
+          "sha256": "5f4da5b6b64e813d83d792f521ce11870656c8a75853aa7e70967ad10ce0bb20",
+          "bytes": 5601
+        },
+        {
+          "path": "assets/data/ac-rpl3304-public-sidecar-v1.js",
+          "sha256": "70cc94c10116c2a1a88120a63388ac71d77b9a8cb84c0db272851ea7bd78cab5",
+          "bytes": 19594
+        },
+        {
+          "path": "en/index.html",
+          "sha256": "c048d21d4c94e3cb6896e4c74d69a9ab73f84c3426d40fe815370b40fe1ba109",
+          "bytes": 228197
+        },
+        {
+          "path": "en/insolvency-36-2012-ac-opposition-lpb-appeal-september-2026/index.html",
+          "sha256": "5bcfbd2b96b10ef526e8e5ff108fd0afc39c04e39ec19da94641324e4410f4f5",
+          "bytes": 21441
+        },
+        {
+          "path": "es/concurso-36-2012-oposicion-ac-apelacion-lpb-septiembre-2026/index.html",
+          "sha256": "f3a412d237a275275971dd1f53a1c41778f366b768371489013a94002d34e8ca",
+          "bytes": 26094
+        },
+        {
+          "path": "es/index.html",
+          "sha256": "48a7ebf0751867525f140cf3e70c34f8fe22a1c6edd7aeb0b3178e788da95dda",
+          "bytes": 237351
+        },
+        {
+          "path": "publication-manifests/ac-rpl3304-r33-opposition-20260921.json",
+          "sha256": "efecb70753d3f6cd0a660e6f83f9a897303da6731f0d8186e2f09c772c137085",
+          "bytes": 4466
+        }
+      ],
+      "pending": [],
+      "scope": "Changed readable public resources plus ES/EN entrypoints. Browser checks are separate premerge evidence; not a whole-site or legal-proof certificate."
     }
   ],
   "checkpoints": [
@@ -2216,7 +2267,59 @@
         "pages_run_id": 35667186111,
         "merge_sha": "96e2e9b1e020ff32779ea35a2c3c7b33cf8c58fd"
       }
+    },
+    {
+      "phase": "VERIFIED_FOR_SCOPE",
+      "at": "2026-09-21T23:22:59.687817Z",
+      "evidence": {
+        "merge_sha": "96e2e9b1e020ff32779ea35a2c3c7b33cf8c58fd",
+        "pages_run_id": 35667186111,
+        "exact_matches": [
+          {
+            "path": "assets/ac-rpl3304-forensic-sidecar.css",
+            "sha256": "8318bf116cc7eeb91c30f9eb86b8f5d71a1d8ba4b25dda420f190fe9ac9a9804",
+            "bytes": 5297
+          },
+          {
+            "path": "assets/ac-rpl3304-forensic-sidecar.js",
+            "sha256": "5f4da5b6b64e813d83d792f521ce11870656c8a75853aa7e70967ad10ce0bb20",
+            "bytes": 5601
+          },
+          {
+            "path": "assets/data/ac-rpl3304-public-sidecar-v1.js",
+            "sha256": "70cc94c10116c2a1a88120a63388ac71d77b9a8cb84c0db272851ea7bd78cab5",
+            "bytes": 19594
+          },
+          {
+            "path": "en/index.html",
+            "sha256": "c048d21d4c94e3cb6896e4c74d69a9ab73f84c3426d40fe815370b40fe1ba109",
+            "bytes": 228197
+          },
+          {
+            "path": "en/insolvency-36-2012-ac-opposition-lpb-appeal-september-2026/index.html",
+            "sha256": "5bcfbd2b96b10ef526e8e5ff108fd0afc39c04e39ec19da94641324e4410f4f5",
+            "bytes": 21441
+          },
+          {
+            "path": "es/concurso-36-2012-oposicion-ac-apelacion-lpb-septiembre-2026/index.html",
+            "sha256": "f3a412d237a275275971dd1f53a1c41778f366b768371489013a94002d34e8ca",
+            "bytes": 26094
+          },
+          {
+            "path": "es/index.html",
+            "sha256": "48a7ebf0751867525f140cf3e70c34f8fe22a1c6edd7aeb0b3178e788da95dda",
+            "bytes": 237351
+          },
+          {
+            "path": "publication-manifests/ac-rpl3304-r33-opposition-20260921.json",
+            "sha256": "efecb70753d3f6cd0a660e6f83f9a897303da6731f0d8186e2f09c772c137085",
+            "bytes": 4466
+          }
+        ],
+        "pending": [],
+        "scope": "Changed readable public resources plus ES/EN entrypoints. Browser checks are separate premerge evidence; not a whole-site or legal-proof certificate."
+      }
     }
   ],
-  "updated_at": "2026-09-21T23:22:56.534414Z"
+  "updated_at": "2026-09-21T23:22:59.687817Z"
 }
