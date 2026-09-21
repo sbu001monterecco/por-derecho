@@ -49,10 +49,10 @@ REQUIRED = {
 }
 
 FORBIDDEN_PATTERNS = (
-    (r"(?<!\\d)9 October 2026(?!\\d)", "9 October 2026"),
-    (r"(?<!\\d)9 de octubre de 2026(?!\\d)", "9 de octubre de 2026"),
-    (r"(?<!\\d)9-Oct-2026(?!\\d)", "9-Oct-2026"),
-    (r"(?<!\\d)9 octubre 2026(?!\\d)", "9 octubre 2026"),
+    (r"(?<!\d)9 October 2026(?!\d)", "9 October 2026"),
+    (r"(?<!\d)9 de octubre de 2026(?!\d)", "9 de octubre de 2026"),
+    (r"(?<!\d)9-Oct-2026(?!\d)", "9-Oct-2026"),
+    (r"(?<!\d)9 octubre 2026(?!\d)", "9 octubre 2026"),
     (r"46250-42-1-2023-0057718", "46250-42-1-2023-0057718"),
     (
         r"Juzgado de Primera Instancia e Instrucción nº 27 de Valencia",
