@@ -1,6 +1,6 @@
 {
   "schema": "por-derecho.june-three-track-dual-version.v1",
-  "control_date": "2026-09-21",
+  "control_date": "2026-09-22",
   "principle": "FROZEN source-time transcription is immutable except privacy/security correction; DYNAMIC dossier may improve, correct, interlink and add later sourced context without rewriting the frozen source.",
   "tracks": {
     "REF21": {
@@ -41,9 +41,19 @@
         "principal_public_transcription": "../../judicial-governance/decanato-reference-24/full-text/denuncia-magistrado-18jun2026-public-transcription.md",
         "supplement_sha256": "04051e33000f830c32ba06e31996ba4e6812c7d54c199ee03696b85e68589679",
         "supplement_pages": 13,
-        "supplement_public_transcription": "../../judicial-governance/decanato-reference-24/full-text/ampliacion-denuncia-magistrado-25jun2026-public-transcription.md"
+        "supplement_public_transcription": "../../judicial-governance/decanato-reference-24/full-text/ampliacion-denuncia-magistrado-25jun2026-public-transcription.md",
+        "judicial_supplement_alias_rule": "The 25-Jun 'APORTACIÓN COMPLEMENTARIA AUTOSUFICIENTE' is the same dependent judicial document later sometimes called the Ref24 ampliación; do not double-count it as two pleadings."
       },
-      "dynamic": "dynamic/ref24-living-dossier.md"
+      "dynamic": "dynamic/ref24-living-dossier.md",
+      "linked_institutional_traceability": {
+        "route": "CGPJ / DI 169/2026",
+        "document_date": "2026-06-25",
+        "label": "Aportación urgente de hecho sobrevenido concerning Ref24 traceability",
+        "sha256": "4c1be5637c4cf58f18dcbea657c2200658394360ffb9c2302a6ef1a0cb34cbe9",
+        "pages": 9,
+        "frozen_transcription": "frozen-linked/di169-ref24-traceability-aportacion-25jun2026.md",
+        "relationship": "SEPARATE_INSTITUTIONAL_ROUTE_NOT_SECOND_REF24_JUDICIAL_PLEADING"
+      }
     }
   },
   "boundaries": [
