@@ -470,3 +470,14 @@ The public GitLab Pages and GitHub rescan is controlled in:
 - `archive/PINK_CANARY_NARRATIVE_PROPAGATION_GRAPH_21SEP2026.json`
 
 Controlling correction: the 17-September-2026 AC opposition expressly relies on Sentencia 163/2023 and the €3,032,010.34 result but does **not** expressly name Pink/rent in the opening result argument. Classify that event as result-reliance / functional Pink dependency, not an express Pink citation.
+
+
+## 28. Full-thread organizational / re-ingest continuation
+
+The complete thread and organization/network methodology are now preserved in:
+- `archive/PINK_CANARY_THREAD_FULL_INTEGRATED_HANDOFF_21SEP2026.md`
+- `archive/PINK_CANARY_ORGANIZATIONAL_NETWORK_PROSECUTORIAL_MODEL_21SEP2026.md`
+- `archive/PINK_CANARY_ORGANIZATIONAL_NETWORK_GRAPH_21SEP2026.json`
+- `archive/PINK_CANARY_REINGEST_PROMPT_21SEP2026.md`
+
+The system is to be analysed both individually and organizationally. “Organization/network” is an investigative structure for proposition, authority, access and benefit flows and must not be upgraded into a criminal-organization or conspiracy finding without element-specific proof.
