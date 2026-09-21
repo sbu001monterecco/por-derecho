@@ -1,0 +1,198 @@
+{
+  "status": "REGISTERED_SUBMISSION_10_OF_10_RECEIPT_VERIFIED",
+  "reference": "E.G.745/2026",
+  "registration": "REGAGE26e00082070021",
+  "linked_principal_registration": "REGAGE26e00082068814",
+  "presentation_datetime_literal": "21/09/2026 03:17:11",
+  "registration_datetime_literal": "21/09/2026 03:17:18",
+  "timezone": "Not specified in printed receipt; preserve literal portal time",
+  "recipient_dir3": "J00003992",
+  "recipient": "Fiscalía General del Estado",
+  "attention": "Inspección Fiscal",
+  "receipt_pages": 2,
+  "receipt_sha256": "3522ba5a9784d2d936fb5e19157367d446099c88435e609ad95006e72fd6adfa",
+  "attachments": [
+    {
+      "filename": "EG745_SUP08_WEBINAR_RICPE.pdf",
+      "pages": 49,
+      "bytes": 7475436,
+      "sha256": "d83746beb978412fb865b6e4bb09b02f01868139a4d2499011bf41828eac1144",
+      "receipt_sha512": "20cc5f637a051e00979da6b977d1056c73ea8d3ba3c0363bac6f2625486ad424cdd70978b41a324632613ab2ba3e4ba5b36b99a35b8a1c20123145b10c7d62c4",
+      "exact_match": true
+    }
+  ],
+  "all_expected_attachments_verified": true,
+  "verified_delivery_count": 10,
+  "planned_delivery_count": 10,
+  "remaining_submission_numbers": [],
+  "all22_illustrations_registered_across_deliveries1_and2": true,
+  "admission_or_substantive_examination_proved": false,
+  "assistant_filed_or_emailed": false,
+  "complete_delivery_reconciliation": {
+    "status": "ALL_10_LINKED_DELIVERIES_REGISTERED_AND_RECEIPTS_VERIFIED",
+    "principal_registration": "REGAGE26e00082068814",
+    "final_registration": "REGAGE26e00082070021",
+    "recipient_dir3": "J00003992",
+    "recipient": "Fiscalía General del Estado",
+    "attention": "Inspección Fiscal; E.G.745/2026 — IF/MCS",
+    "registered_delivery_count": 10,
+    "registered_distinct_pdf_count": 27,
+    "registered_pdf_pages": 1272,
+    "registered_pdf_bytes": 112992926,
+    "illustration_count": 22,
+    "all_illustrations_registered_in_deliveries_1_and_2": true,
+    "all_attachment_fingerprints_verified": true,
+    "all_annex_deliveries_link_principal": true,
+    "missing_attachments": [],
+    "duplicate_attachments": [],
+    "remaining_delivery_numbers": [],
+    "registrations": [
+      {
+        "submission": 1,
+        "registration": "REGAGE26e00082068814",
+        "presentation_datetime_literal": "21/09/2026 01:54:19",
+        "registration_datetime_literal": "21/09/2026 01:54:23",
+        "attachment_count": 5,
+        "attachment_names": [
+          "06_EG745_VISUALES_1.pdf",
+          "01_EG745_RECURSO_REPOSICION.pdf",
+          "02_EG745_ANEXO_ANALITICO.pdf",
+          "03_EG745_INDICE_APORTACION.pdf",
+          "EG745_DOCUMENTOS_NUCLEO_D1_D7_SUP01_05.pdf"
+        ],
+        "pages": 103,
+        "all_attachment_fingerprints_verified": true
+      },
+      {
+        "submission": 2,
+        "registration": "REGAGE26e00082069039",
+        "presentation_datetime_literal": "21/09/2026 02:06:04",
+        "registration_datetime_literal": "21/09/2026 02:06:09",
+        "attachment_count": 2,
+        "attachment_names": [
+          "EG745_DOCUMENTOS_PROFESIONALES_SUP13B_19.pdf",
+          "07_EG745_VISUALES_2.pdf"
+        ],
+        "pages": 139,
+        "all_attachment_fingerprints_verified": true
+      },
+      {
+        "submission": 3,
+        "registration": "REGAGE26e00082069185",
+        "presentation_datetime_literal": "21/09/2026 02:14:20",
+        "registration_datetime_literal": "21/09/2026 02:14:24",
+        "attachment_count": 2,
+        "attachment_names": [
+          "EG745_HISTORICO_D20_PARTE_01.pdf",
+          "EG745_SUP08_ADJUNTOS_RICPE_AAFC.pdf"
+        ],
+        "pages": 221,
+        "all_attachment_fingerprints_verified": true
+      },
+      {
+        "submission": 4,
+        "registration": "REGAGE26e00082069355",
+        "presentation_datetime_literal": "21/09/2026 02:29:13",
+        "registration_datetime_literal": "21/09/2026 02:29:20",
+        "attachment_count": 5,
+        "attachment_names": [
+          "EG745_HISTORICO_D20_PARTE_02.pdf",
+          "EG745_HISTORICO_D25_D30.pdf",
+          "EG745_HISTORICO_D29_EXTRACTOS.pdf",
+          "EG745_ANEXO_CORREOS_INTEGROS_20SEP2026.pdf",
+          "EG745_D47D_PRESUPUESTO_ECI.pdf"
+        ],
+        "pages": 203,
+        "all_attachment_fingerprints_verified": true
+      },
+      {
+        "submission": 5,
+        "registration": "REGAGE26e00082069484",
+        "presentation_datetime_literal": "21/09/2026 02:40:37",
+        "registration_datetime_literal": "21/09/2026 02:40:48",
+        "attachment_count": 5,
+        "attachment_names": [
+          "EG745_HISTORICO_D22_PARTE_01.pdf",
+          "08_EG745_DP1901.pdf",
+          "EG745_D3_ORIGINAL_REGISTRADO.pdf",
+          "EG745_SUP20_FUENTES_PUBLICAS.pdf",
+          "EG745_ANEXO_FUENTES_DIGITALES_Y_TECNICAS_20SEP2026.pdf"
+        ],
+        "pages": 91,
+        "all_attachment_fingerprints_verified": true
+      },
+      {
+        "submission": 6,
+        "registration": "REGAGE26e00082069581",
+        "presentation_datetime_literal": "21/09/2026 02:49:34",
+        "registration_datetime_literal": "21/09/2026 02:49:39",
+        "attachment_count": 3,
+        "attachment_names": [
+          "EG745_HISTORICO_D22_PARTE_02.pdf",
+          "EG745_HISTORICO_D22_PARTE_03.pdf",
+          "EG745_RESOLUCIONES_CONTRASTE_SUP21B_23.pdf"
+        ],
+        "pages": 64,
+        "all_attachment_fingerprints_verified": true
+      },
+      {
+        "submission": 7,
+        "registration": "REGAGE26e00082069631",
+        "presentation_datetime_literal": "21/09/2026 02:55:43",
+        "registration_datetime_literal": "21/09/2026 02:55:47",
+        "attachment_count": 1,
+        "attachment_names": [
+          "EG745_SUP20_GESVALT_COMPLETA.pdf"
+        ],
+        "pages": 127,
+        "all_attachment_fingerprints_verified": true
+      },
+      {
+        "submission": 8,
+        "registration": "REGAGE26e00082069746",
+        "presentation_datetime_literal": "21/09/2026 03:03:37",
+        "registration_datetime_literal": "21/09/2026 03:03:42",
+        "attachment_count": 2,
+        "attachment_names": [
+          "09_EG745_TRAZABILIDAD.pdf",
+          "EG745_HISTORICO_D16_DECLARACION_AC.pdf"
+        ],
+        "pages": 150,
+        "all_attachment_fingerprints_verified": true
+      },
+      {
+        "submission": 9,
+        "registration": "REGAGE26e00082069917",
+        "presentation_datetime_literal": "21/09/2026 03:10:04",
+        "registration_datetime_literal": "21/09/2026 03:10:09",
+        "attachment_count": 1,
+        "attachment_names": [
+          "EG745_HISTORICO_D10_D19_D21_D23_D24.pdf"
+        ],
+        "pages": 125,
+        "all_attachment_fingerprints_verified": true
+      },
+      {
+        "submission": 10,
+        "registration": "REGAGE26e00082070021",
+        "presentation_datetime_literal": "21/09/2026 03:17:11",
+        "registration_datetime_literal": "21/09/2026 03:17:18",
+        "attachment_count": 1,
+        "attachment_names": [
+          "EG745_SUP08_WEBINAR_RICPE.pdf"
+        ],
+        "pages": 49,
+        "all_attachment_fingerprints_verified": true
+      }
+    ],
+    "receipt_total_pages": 21,
+    "admission_incorporation_or_substantive_examination_proved": false,
+    "next_programme_stage": "NEW_SUBSTANTIVE_PRESIDENCIA_COMMUNICATION",
+    "lawyers_package": "After substantive Presidencia; no lawyers email sent by this closeout",
+    "github_main_integration": "Pending held controller; verified public-safe records preserved on worker branch"
+  },
+  "scope": "Public-safe receipt metadata, attachment fingerprints and complete delivery reconciliation only. Native private receipts and private documents are not published.",
+  "canonical_communications_register": "assets/data/institutional-communications-register-v1.json",
+  "canonical_event_allocation": "Pending integration; reuse existing registry identity if already allocated",
+  "main_integration": "Pending held controller; worker preservation only"
+}
