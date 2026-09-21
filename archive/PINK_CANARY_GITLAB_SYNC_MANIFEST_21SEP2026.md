@@ -105,3 +105,23 @@ Add to future GitLab reconciliation:
 - `archive/PINK_CANARY_REINGEST_PROMPT_21SEP2026.md`
 
 These files are canonical private controls for re-running the case through the non-fragmented criminal/prosecutorial-first intelligence model. They are not public guilt findings.
+
+
+## Drive mirror — full-thread organizational re-ingest package
+
+Native Google Docs created and verified in the existing private workspace:
+
+- `PINK_CANARY_THREAD_FULL_INTEGRATED_HANDOFF_21SEP2026`
+  - Drive file ID: `10ptnmGmm8SrTA3EGmVWYVPj6kMjY91UikjfSXMvAU6U`
+- `PINK_CANARY_ORGANIZATIONAL_NETWORK_PROSECUTORIAL_MODEL_21SEP2026`
+  - Drive file ID: `11uiF56yCZP_8oWAhBvHNPgDpACOBnYiF5IDTaw9WWSY`
+- `PINK_CANARY_REINGEST_PROMPT_21SEP2026`
+  - Drive file ID: `15yL34SdlNsn-wLEPwr5-HODJiKoEcj67-c4G3nbf2t0`
+- `PINK_CANARY_ORGANIZATIONAL_NETWORK_GRAPH_21SEP2026`
+  - Drive file ID: `1zC3mHHFp-bcNVxyt0Eyxhm-dgqMgs3dKQhJ2kBKXjEg`
+
+Parent Drive folder:
+`Pink Canary Unitary Prosecutorial Review 21SEP2026`
+(folder ID `10u79S3tMZ8bNzVr1Iln5ycsuJPcWlgfi`)
+
+GitHub remains the canonical raw Markdown/JSON source. Drive is the preservation/review/recovery layer for later GitLab reconciliation.
