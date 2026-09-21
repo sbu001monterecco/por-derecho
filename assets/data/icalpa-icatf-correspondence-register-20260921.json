@@ -4,11 +4,11 @@
   "status": "PUBLIC_SAFE_COMPLETE_MESSAGE_EVENT_CENSUS",
   "source": "Connected SBU Gmail bounded search; raw provider identifiers and unrelated private material excluded from public register.",
   "completeness": {
-    "icalpa_query": "to:(registro@icalpa.org OR deontologia@icalpa.org OR notificaciones_secretaria@icalpa.com OR servicios@redabogacia.org) OR from:(registro@icalpa.org OR deontologia@icalpa.org OR notificaciones_secretaria@icalpa.com OR servicios@redabogacia.org)",
-    "icalpa_message_events": 61,
+    "icalpa_query": "to:(registro@icalpa.org OR deontologia@icalpa.org OR notificaciones_secretaria@icalpa.com OR servicios@redabogacia.org OR informacion@icalpa.com) OR from:(registro@icalpa.org OR deontologia@icalpa.org OR notificaciones_secretaria@icalpa.com OR servicios@redabogacia.org OR informacion@icalpa.com)",
+    "icalpa_message_events": 62,
     "icatf_query": "to:(registro@icatf.es OR secretaria@icatf.es OR informa@icatf.es OR info@icatf.es OR delegacionnorte@icatf.es) OR from:(registro@icatf.es OR secretaria@icatf.es OR informa@icatf.es OR info@icatf.es OR delegacionnorte@icatf.es)",
     "icatf_message_events": 7,
-    "note": "Counts are the complete results returned for the bounded institutional-address queries at scan time. Duplicates, auto-replies and superseded drafts are retained as separate events rather than silently removed.",
+    "note": "Counts are the complete results returned for the bounded institutional-address queries at scan time, including the earlier general route informacion@icalpa.com in the ICALPA historical universe. Duplicates, auto-replies and superseded drafts are retained as separate events rather than silently removed.",
     "direction_note": "Inbound registration receipts and automatic routing/absence replies are classified by event type where the Gmail connector omits a parsed From field."
   },
   "routing": {
@@ -27,9 +27,13 @@
       "delegacionnorte@icatf.es"
     ],
     "icalpa_legacy_observed": [
-      "3077@icalpa.com"
+      "3077@icalpa.com",
+      "icalpa3077@icalpa.com"
     ],
-    "legacy_note": "Legacy/individual ICALPA-domain addresses were also used historically. They are not treated as current official submission channels; 3077@icalpa.com is preserved as a historic lawyer/colegiado-domain address in the source record."
+    "legacy_note": "The 23-Dec-2025 institutional enquiry to informacion@icalpa.com is retained in the historical ICALPA census but is not presented as the current official submission route. 3077@icalpa.com and icalpa3077@icalpa.com are preserved only as historic professional/colegiado-domain addresses associated in the source record with Francisco de Borja Rodríguez-Batllori Laffitte; messages to those addresses are not treated as institutional notice to ICALPA merely because of the domain.",
+    "icalpa_legacy_general": [
+      "informacion@icalpa.com"
+    ]
   },
   "prior_independence_language": {
     "dip80_20aug": "No se pretende ejercer presión impropia sobre el ponente ni exigir una sanción. Se pretende que ... el Colegio ejerza visiblemente su función mediante una decisión motivada o un plan finito, fechado y responsable.",
@@ -37,6 +41,19 @@
     "proposed_regional_extension": "Request a conflict-cleared rapporteur with sufficient independence, institutional mandate and continuity to take the matter to a reasoned outcome; any attempted informal contact, call, representation or pressure outside the file should be logged and routed into the formal record."
   },
   "icalpa": [
+    {
+      "date": "2025-12-23T22:41:10",
+      "direction": "OUTBOUND",
+      "subject": "Solicitud urgente de orientación, competencia y canalización institucional",
+      "to": [
+        "informacion@icalpa.com"
+      ],
+      "cc": [],
+      "classification": "OTHER_INSTITUTIONAL",
+      "attachments": [],
+      "synopsis": "Institutional communication in the identified historical Bar-routing universe; full raw mailbox original retained privately. The general informacion@icalpa.com route is historical and is not presented as the current official submission mailbox.",
+      "raw_mailbox_original": "PRIVATE_NOT_PUBLISHED"
+    },
     {
       "date": "2025-12-26T12:26:39",
       "direction": "INBOUND",
